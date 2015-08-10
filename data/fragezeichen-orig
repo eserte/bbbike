@@ -213,7 +213,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2015-07-19
+#: last_checked: 2015-08-10
 #: next_check: 2015-09-30
 Warschauer Str: Radspuren in Bau	?::inwork 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 # 
@@ -453,7 +453,7 @@ Kreuzung Invalidenstr./Gartenstr.: Auswirkungen der Vollsperrung hier?	? 9383,13
 #: XXX_prog: fehlende Möglichkeit, das Handicap hier auszudrücken!
 #: source_id: IM_025755
 #: XXX bis 2015-10-05
-#: last_checked: 2015-08-05 (So; Bauzäune waren weggeschoben, man konnte die Straße gut überqueren)
+#: last_checked: 2015-08-10
 Friedrichstr./Unter den Linden: Überqueren der Straße Unter den Linden nicht möglich, Radfahrer müssen offiziell auch schieben	? 9343,12464 9358,12351 9369,12253
 # 
 # REMOVED (-> bbbike-temp-blockings.pl) --- #: XXX Realisierung bis September 2015 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5511.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150430.1120.401849.html --- #: XXX betrifft die Einbahnstraßenregelung während der Bauarbeiten auch Radfahrer? --- #: next_check: 2015-05-04 --- Maaßenstr.: welche Auswirkungen wird die neue "Begegnungszone" für Radfahrer haben? Wird der Radweg verschwinden?	?::inwork 7080,10098 7060,10221 7033,10328
@@ -834,7 +834,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,977
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4986 (Stand?)
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
-#: last_checked: 2015-07-21
+#: last_checked: 2015-08-10
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
@@ -977,7 +977,7 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Realisierung ab 2014)
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4757 (Vorschlag: Führungsschienen für den Elsensteg)
 #: osm_watch: way id="182693863" version="1"
-#: last_checked: 2015-07-15
+#: last_checked: 2015-08-10
 #: check_frequency: 180d
 Innstr.: eventuell wird hier asphaltiert, vielleicht auch der Zugang zum Elsensteg erleichtert?	?::projected 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (in Bau, Stand 2012-04)
@@ -1280,7 +1280,8 @@ Mauerweg im Spandauer Forst: Erneuerung	?::projected -3497,20003 -3652,20100 -42
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2015
 #: XXX sieht man schon Schilder? evtl. auch weiter hinten gelegen
 #: XXX fehlt in Berlin.coords.data
-#: last_checked: 2015-06-30 (keine Schilder)
+#: last_checked: 2015-08-10 (keine Schilder)
+#: check_frequency: 60d
 Am Hamburger Bahnhof: Benennung des Platzes	? 8293,13519 8128,13767
 # 
 # REMOVED (ja, und eine Einbahnstraße für Autos) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6320 --- Kyllburger Weg: gibt es hier eine Spielstraße?	? 16418,17311 16549,17394 16645,17449 16670,17454 16779,17521
@@ -1621,7 +1622,7 @@ Alt-Karow: evtl. wird hier ein Schutzstreifen Richtung Süden angelegt	? 15726,23
 Sonnenallee/Ziegrastr.: wird hier eine Ampel entstehen?	?::projected 14174,7505
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14708&options=8 (beschlossen durch BVV)
-#: last_checked: 2015-04-28
+#: last_checked: 2015-08-10
 #: check_frequency: 60d
 Thomasstr./Hermannstr.: sichere Querung, wie wird/könnte die Lösung hier aussehen?	?::projected 12193,7412 12180,7387 12168,7368
 # 
@@ -1880,7 +1881,13 @@ Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1506/nachricht5652.html vvv
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml vvv
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1508/nachricht5703.html
+#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/download/LP_05-1.pdf
+#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/download/LP_04-1.pdf
+#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/download/LP_03.pdf
+#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/download/LP_02.pdf
+#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/download/LP_01.pdf
 #: XXX laut Artikel werden die Jülicher und Malmöer Str. zu Einbahnstraßen vvv
+#: XXX Radfahrer Richtung Osten werden auf zur gegenüberliegenden Seite geführt. Behinderungen vermutlich durch die zusätzlichen Ampelüberquerungen; vermutlich auch ungünstige Schaltzeiten an den Kreuzungen mit der Umleitungsstrecke. Div. Gehwege werden "Radfahrer frei"-Schilder haben (Jülicher Str., Behmstr.)
 #: last_checked: 2015-07-14 vvv
 #: next_check: 2015-08-10 vvv
 Sperrung der Bösebrücke: wie sieht die Wegführung für Radfahrer an der Bösebrücke aus? Gibt es Einschränkungen auf der Umleitungsstrecke?	? 10301,16186 10281,16263 10254,16363 10225,16436 10197,16528 10134,16534 9998,16547 9883,16557 9816,16565 9781,16569 9617,16590 9514,16603 9498,16480 9487,16395 9475,16307 9474,16297 9458,16180 9441,16058

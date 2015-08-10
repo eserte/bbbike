@@ -1004,7 +1004,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 969
 #: XXX Markierungen fehlen in beiden Richtungen
 #: source_id: IM_018997
 #: source_id: IM_023987
-#: last_checked: 2015-07-26
+#: last_checked: 2015-08-10
 Busspur ist immer gültig	RW0;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
@@ -1632,11 +1632,9 @@ Busspur ist immer gültig	RW5; 11160,13492 11216,13451 11270,13412 11276,13408
 	RW3; 7346,13022 7415,13060
 # REMOVED (aufgehoben) --- #: XXX wie sieht es nach den Bauarbeiten aus? --- #: last_checked: 2013-12-27 --- provisorischer Radweg, benutzungspflichtige Radspur auf den letzten 10 Metern	RW1; 7415,13060 7433,13070 7563,13143 7573,13149 7759,13246
 # REMOVED (Bauarbeiten beendet) --- #: XXX während der Bauarbeiten geänderte Radwegführung vvv --- #: last_checked: 2013-10-12 vvv --- #: next_check: 2013-12-31 vvv --- #: source_id: IM_017330 vvv --- #: source_id: INKO_113944 vvv --- # XXX alter Eintrag: RW3;RW4 8450,13599 8337,13541 8293,13519 8098,13419 --- Radweg auf dem Gehweg aufgemalt, eng RW1; 8450,13599 8337,13541 8293,13519 8098,13419 ---	RW0; 8098,13419 8293,13519 8337,13541 8362,13554 8450,13599 --- #: source_id ^^^ --- #: source_id ^^^ --- #: next_check ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5141.html
-#: note: durchgezogene Linien, aber (noch?) keine Radwegschilder
-#: XXX kommen die Radwegschilder noch?
-#: last_checked: 2015-06-30
-	RW3; 8098,13419 8293,13519
+# REMOVED (provisorisches Schild existiert nun) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5141.html --- #: note: durchgezogene Linien, aber (noch?) keine Radwegschilder --- #: XXX kommen die Radwegschilder noch? --- #: last_checked: 2015-06-30
+#: note: provisorisches Radwegschild
+	RW4; 8098,13419 8293,13519
 	RW2; 8293,13519 8337,13541 8362,13554
 	RW3; 8362,13554 8450,13599
 	RW4; 8842,13798 8690,13723 8659,13708 8619,13689 8588,13673 8574,13666 8450,13599 8362,13554 8337,13541

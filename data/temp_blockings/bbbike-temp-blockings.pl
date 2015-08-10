@@ -23664,13 +23664,13 @@ EOF
 userdel	q4::inwork 19676,1577 19704,1621 19766,1796
 EOF
      },
-     { from  => 1410069600, # 2014-09-07 08:00
-       until => 1419001200, # 2014-12-19 16:00
-       text  => 'John-Foster-Dulles-Allee: Baustelle zwischen Zeltenplatz und Große Querallee, Fahrbahn gesperrt, Ausweichen auf Gehweg, 08.09.2014 08:00 Uhr bis 19.12.2014 16:00 Uhr ',
+     { from  => 1439228125, # 1410069600, # 2014-09-07 08:00
+       until => $isodate2epoch->("2015-09-04 15:00:00"), # 1419001200, # 2014-12-19 16:00
+       text  => 'John-Foster-Dulles-Allee: Baustelle zwischen Zeltenplatz und Yitzak-Rabin-Str., Fahrbahn gesperrt, ggfs. auf Gehweg ausweichen, bis 04.09.2015',
        type  => 'handicap',
-       source_id => 'IM_022801',
+       source_id => 'IM_025870',
        data  => <<EOF,
-userdel	q3::inwork 7627,12380 7821,12367 7875,12363 8017,12359
+userdel	q3::inwork 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
 EOF
      },
      { from  => 1414624392, # 2014-10-30 00:13
@@ -24042,13 +24042,11 @@ userdel	q2::inwork; 8935,13844 8842,13798
 EOF
      },
      { from  => 1427752800, # 2015-03-31 00:00
-       until => 1427911510, # -> handicap_s-orig # 1438380000, # 2015-08-01 00:00
-       text  => 'Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, gesperrt Richtung Osten, ab 01.04.2015',
+       until => $isodate2epoch->("2015-08-31 17:00:00"), # 1427911510, # -> handicap_s-orig # 1438380000, # 2015-08-01 00:00
+       text  => 'Zinnowitzer Str.: Baustelle an der Chausseestr., Fahrbahn gesperrt, bis 31.08.2015',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX wann wird die Einbahnstraßenregelung aufgehoben?
-#: next_check: 2015-07-23
-userdel	q4::inwork; 8870,13926 9011,14019
+userdel	q4::inwork 8870,13926 9011,14019
 EOF
      },
      { from  => undef, # 
@@ -24062,11 +24060,11 @@ userdel	q4::inwork; 3807,11859 3666,11855
 EOF
      },
      { from  => undef, # 
-       until => 1438629931, # $isodate2epoch->("2015-12-01 00:00:00"), # undef, # XXX
-       text  => 'Dickhardstr.: Bauarbeiten an der Rheinstr., direkte Durchfahrt gesperrt, Ende der Bauarbeiten im Dezember 2015',
+       until => $isodate2epoch->("2015-10-05 15:00:00"), # undef, # XXX
+       text  => 'Dickhardstr.: Bauarbeiten an der Rheinstr., direkte Durchfahrt gesperrt, voraussichtlich bis 05.10.2015',
+       source_id => 'IM_025361',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX laut Fritz ist die Baustelle an der Rheinstr. bis 2015-08-03 aktuell
 #: next_check: 2015-08-03
 userdel	q3::inwork 5824,6974 5817,7223
 EOF
@@ -24264,16 +24262,18 @@ EOF
 userdel	q3::inwork 11325,12021 11275,12055
 EOF
      },
-     { from  => $isodate2epoch->("2015-07-22 00:00:00"), # 1436738400, # 2015-07-13 00:00
-       until => 1438715522, # XXX hat noch nicht angefangen --- $isodate2epoch->("2017-07-14 00:00:00"),
-       text  => 'Jülicher Str. und Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke, voraussichtlich ab 23. Juli 2015 für ca. zwei Jahre',
+     { from  => 1439228045, # $isodate2epoch->("2015-07-22 00:00:00"), # 1436738400, # 2015-07-13 00:00
+       until => $isodate2epoch->("2017-07-14 00:00:00"),
+       text  => 'Jülicher Str. und Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke, voraussichtlich ab 10. August 2015 für ca. zwei Jahre',
        type  => 'handicap',
        source_id => 'http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml',
        data  => <<EOF,
 #: next_check: 2015-08-10 vvv
 #: priority: #A vvv
+#: source_id: IM_025877	vvv
 	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
 	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
+#: source_id ^^^
 #: priority ^^^
 #: next_check ^^^
 EOF
@@ -24392,6 +24392,17 @@ EOF
        source_id => 'IM_025809',
        data  => <<EOF,
 userdel	2::inwork 2295,20358 2358,20368 2415,20380
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Weg am Moabiter Werder - Clara-Jaschke-Str.: Bauarbeiten, Ausweichen auf sehr engen Gehweg',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX Wann sind die Bauarbeiten fertig?
+#: last_checked: 2015-08-10
+#: check_frequency: 60d
+userdel	q4::inwork 7799,13019 7813,12961
 EOF
      },
     );

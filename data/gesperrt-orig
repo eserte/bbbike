@@ -857,7 +857,7 @@ Pitschener Str.	1s:q3 21769,-432 21719,-397 21637,-381
 #: XXX wird die Einbahnstraßenregelung für Radfahrer aufgehoben?
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4783
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to010.asp?SILFDNR=2578
-#: last_checked: 2015-07-17
+#: last_checked: 2015-08-10
 Herrfurthstr.	1s:q3 11979,8014 11833,7980
 Dankratstr.	1s:q3 21105,9538 20943,9543
 #: note: ansonsten Durchfahrt verboten
@@ -2894,16 +2894,7 @@ am Osthafen: durch Barriere versperrt	2::inwork 14259,10309 14463,10212
 #: check_frequency: 90d
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Durchfahrt verboten	2 8251,14337 8442,14456
 # 
-#: next_check_id: INVALIDEN-2014 vvv
-#: last_checked: 2015-08-05 vvv
-#: next_check: 2015-05-31 vvv
-Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9011,14019 9085,13919 8935,13844
-Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9011,14019 9085,13919 9151,13941
-Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 9151,13941 9085,13919 9011,14019
-Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 8935,13844 9085,13919 9011,14019
-#: next_check ^^^
-#: last_checked ^^^
-#: next_check_id ^^^
+# REMOVED --- #: next_check_id: INVALIDEN-2014 vvv --- #: last_checked: 2015-08-05 vvv --- #: next_check: 2015-05-31 vvv --- Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 19011,14019 9085,13919 8935,13844 --- Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9011,14019 9085,13919 9151,13941 --- Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 9151,13941 9085,13919 9011,14019 --- Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 8935,13844 9085,13919 9011,14019 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
 #: last_checked: 2015-07-18 vvv
@@ -3000,7 +2991,7 @@ Nordufer: Neubau	2:inwork 7427,14648 7212,14738
 # REMOVED (offensichtlich wieder passierbar) --- #: last_checked: 2013-06-04 --- #: next_check: 2013-08-01 --- #: XXX siehe auch Eintrag zur Friedrichsbrücke in handicap_s-orig --- Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,12777 10105,12855
 # 
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)
-#: last_checked: 2015-07-21
+#: last_checked: 2015-08-10
 #: check_frequency: 120d
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
 # 

@@ -56,7 +56,7 @@ Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4
 # 
 # REMOVED --- #: last_checked: 2015-06-10 --- Am Zirkus: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9167,13046 9137,13032 9090,13009
 # 
-#: last_checked: 2015-07-14
+#: last_checked: 2015-08-10
 Schützenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10116,11485 9949,11470
 # 
 #: XXX nach den Bauarbeiten bessere Qualität?
@@ -81,10 +81,7 @@ Wadzeckstr.: Bauarbeiten, auf Gehweg ausweichen, Bordsteine	q4::inwork 11146,133
 # 
 # REMOVED --- #: last_checked: 2015-02-13 --- #: check_frequency: 60d --- Seydelstr.: Bauarbeiten, Einbahnstraße, gesperrt in Richtung Spittelmarkt	q3::inwork; 10446,11470 10320,11627
 # REMOVED (keine Einschränkungen mehr) --- #: last_checked: 2014-06-06 --- Ohmstr.: Bauarbeiten, auf engen Gehweg ausweichen	q3::inwork 11378,11856 11324,11689
-# 
-#: last_checked: 2015-07-02
-Schadowstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 9007,12499 9016,12416
-# 
+# REMOVED (Baustelle so gut wie fertig) --- #: last_checked: 2015-07-02 --- Schadowstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 9007,12499 9016,12416
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
 # REMOVED --- #: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualität -> qualitaet_s-orig-Eintrag revidieren --- #: last_checked: 2013-11-21 --- Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
 #: next_check_id: SCHINKELPLATZ-2014
@@ -118,15 +115,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
-#: source_id: INKO_093369
-#: note: ab Glinkastr. nur ungefähr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3
-# REMOVED (Sperrung existiert noch) --- #: XXX bei VMZ ist dieser Eintrag verschwunden --- wurde die Sperrung aufgehoben?
-#: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0199-palais-behrens-palais-theising.html
-#: XXX siehe auch http://www.deutsches-architektur-forum.de/forum/showthread.php?t=7390&page=7
-#: last_checked: 2015-07-20
-#: check_frequency: 60d
-Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
-# 
+# REMOVED (so gut wie fertig; Radfahrer können recht gut passieren) --- #: source_id: INKO_093369 --- #: note: ab Glinkastr. nur ungefähr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3 --- # REMOVED (Sperrung existiert noch) --- #: XXX bei VMZ ist dieser Eintrag verschwunden --- wurde die Sperrung aufgehoben? --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0199-palais-behrens-palais-theising.html --- #: XXX siehe auch http://www.deutsches-architektur-forum.de/forum/showthread.php?t=7390&page=7 --- #: last_checked: 2015-07-20 --- #: check_frequency: 60d --- Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
 # REMOVED (by osm) --- #: last_checked: 2013-06-10 (wosch) vvv --- #: osm_watch: way id="25185423" version="15"--- Gartenstr.: Einbahnstraße zwischen Invalidenstr. und Tieckstr. (Bauarbeiten)	q4::inwork; 9510,13823 9383,13986 --- #: last_checked ^^^
 # REMOVED (by wosch) --- #: osm_watch: way id="4597205" version="6" --- Tieckstr.: Einbahnstraße zwischen Borsigstr. und Gartenstr. (Bauarbeiten)	q3::inwork; 9376,13765 9510,13823 
 # REMOVED (Fahrbahn wieder befahrbar) --- #: next_check_id: VOSSSTR-2014 vvv --- #: source_id: INKO_113363 vvv --- #: XXX laut INKO_113363 bis Ende September 2014 gesperrt vvv --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0206-quartier-am-leipzigerplatz.html --- #: by: http://www.tagesspiegel.de/berlin/einkaufszentrum-am-leipziger-platz-in-berlin-mitte-mall-of-berlin-eroeffnet-am-25-september/10340428.html --- #: osm_watch: way id="197160274" version="1" vvv --- #: last_checked: 2014-09-13 vvv --- #: next_check: 2014-09-25 vvv --- Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich, eng	q4::inwork 8743,11663 8837,11676 --- Voßstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg möglich	q3::inwork 8837,11676 9000,11727
@@ -142,15 +131,10 @@ Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q4::inwork 
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1507/nachricht5698.html
-#: XXX wird am 3. August geöffnet --- hat sich aber verzögert!
-#: last_check: 2015-08-05
-#: check_frequency: 7d
-#: priority: #A
-Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Caroline-Michaelis-Str. und und Hessische Str. gesperrt	q4::inwork; 9151,13941 9085,13919 8935,13844
+# REMOVED (offen) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1507/nachricht5698.html --- #: XXX wird am 3. August geöffnet --- hat sich aber verzögert! --- #: last_check: 2015-08-05 --- #: check_frequency: 7d --- #: priority: #A --- Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Caroline-Michaelis-Str. und und Hessische Str. gesperrt	q4::inwork; 9151,13941 9085,13919 8935,13844
 # 
 #: next_check_id: INVALIDEN-2014 vvv
-#: last_checked: 2015-08-05 vvv
+#: last_checked: 2015-08-10 vvv
 #: next_check: 2015-08-15 vvv
 #: XXX voraussichtlich gesperrt bis zum 15. August 2015
 #: priority: #A vvv
@@ -161,9 +145,9 @@ Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Caroline-Michaeli
 #: XXX siehe auch temporäre Ampel an der Chausseestr. sowie an der Luisenstr.
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1207/nachricht4724.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1403/nachricht5212.html
-Caroline-Michaelis-Str.: Bauarbeiten, Zufahrt zur Invalidenstr. umständlich	q4::inwork; 9151,13941 9125,13973
+# REMOVED --- Caroline-Michaelis-Str.: Bauarbeiten, Zufahrt zur Invalidenstr. umständlich	q4::inwork; 9151,13941 9125,13973
 #: XXX_prog: evtl. als q4+ eintragen (falls möglich), 9km/h sind eigentlich möglich
-Invalidenstr. (Mitte): Baustelle, Fahrbahn zwischen Eichendorffstr. und Gartenstr. gesperrt	q4::inwork 9383,13986 9285,13965 9274,13963 9203,13953
+Invalidenstr. (Mitte): Baustelle, Fahrbahn zwischen Caroline-Michaelis-Str. und Gartenstr. gesperrt	q4::inwork 9383,13986 9285,13965 9274,13963 9203,13953 9151,13941
 Invalidenstr.: Fahrbahn zwischen Gartenstr. und Bergstr. teilweise gesperrt	q2::inwork 9383,13986 9676,14046
 # REMOVED (mittlerweile besser befahrbar, denke ich) --- Invalidenstr. (Mitte): Baustelle, Fahrbahn in Richtung Gartenstr. zwischen Caroline-Michaelis-Str. und Eichendorffstr. gesperrt	q4::inwork; 9151,13941 9203,13953
 # REMOVED (wieder offen ab 2013-08-29) --- Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 8690,13723 8659,13708 8619,13689
@@ -185,7 +169,7 @@ Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnho
 # REMOVED --- #: valid: -20140428 --- #: next_check: 2014-04-28 (wird wieder befahrbar sein) --- #: priority: #A --- Schwarzer Weg: Sackgasse an der Invalidenstraße, Zugang für Fußgänger und schiebende Radfahrer möglich	q3::inwork 8426,13909 8574,13666
 # REMOVED (bei vmz) --- #: XXX: wann ist die Kreuzung wieder befahrbar? --- #: last_checked: 2014-06-30 --- #: next_check: 2014-07-08 --- #: source_id: IM_021906 --- #: priority: #A --- Scharnhorststr.: Sackgasse an der Invalidenstraße	q2::inwork 8450,13599 8313,13839
 # 
-#: last_checked: 2015-06-30 (Bauarbeiten wegen Neubau)
+#: last_checked: 2015-08-10 (Bauarbeiten wegen Neubau)
 #: check_frequency: 30d
 Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 # 
@@ -231,7 +215,7 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10072,11384 9945,11371 9737,11349
 # REMOVED (das Einfahrt verboten-Schild hängt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9949,11470 9935,11566
 # 
-#: last_checked: 2015-07-15
+#: last_checked: 2015-08-10
 Alte Jakobstr.: Bauarbeiten, teilweise Einbahnstraße	q3::inwork; 10256,11160 10437,11352
 #: last_checked: 2015-07-21
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10624,11548 10640,11564
@@ -288,10 +272,7 @@ Köbisstr.: wegen Bauarbeiten Ausweichen auf Gehweg	q4::inwork 7103,11247 7160,11
 #: check_frequency: 60d
 Dieselstr., Umfahrung: Fußgänger, kurvig, eng	q2-::inwork 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112 14429,8074 14471,8046
 # 
-#: last_checked: 2015-07-29
-#: check_frequency: 7d
-#: priority: #A
-Ganghoferstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12805,8194 12918,8232
+# REMOVED (so gut wie fertig, Schlupflöcher durch die Absperrungen) --- #: last_checked: 2015-07-29 --- #: check_frequency: 7d --- #: priority: #A --- Ganghoferstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12805,8194 12918,8232
 # 
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20140707.1250.398363.html?date=20140722 (Verzögerung)
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20140801.1405.398592.html

@@ -3379,7 +3379,16 @@ userdel	2::inwork -3197,11554 -3075,11510
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	q3::inwork 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
+',
+         'from' => 1439228125,
+         'id' => 2654,
+         'source_id' => 'IM_025870',
+         'text' => 'John-Foster-Dulles-Allee: Baustelle zwischen Zeltenplatz und Yitzak-Rabin-Str., Fahrbahn gesperrt, ggfs. auf Gehweg ausweichen, bis 04.09.2015',
+         'type' => 'handicap',
+         'until' => 1441371600
+       },
        undef,
        undef,
        undef,
@@ -3466,7 +3475,15 @@ userdel	q3::inwork 5780,10542 5627,10637
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	q4::inwork 8870,13926 9011,14019
+',
+         'from' => 1427752800,
+         'id' => 2694,
+         'text' => 'Zinnowitzer Str.: Baustelle an der Chausseestr., Fahrbahn gesperrt, bis 31.08.2015',
+         'type' => 'handicap',
+         'until' => 1441033200
+       },
        {
          'data' => '#: last_checked: 2015-07-03
 #: check_frequency: 90d
@@ -3478,7 +3495,17 @@ userdel	q4::inwork; 3807,11859 3666,11855
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: next_check: 2015-08-03
+userdel	q3::inwork 5824,6974 5817,7223
+',
+         'from' => undef,
+         'id' => 2696,
+         'source_id' => 'IM_025361',
+         'text' => 'Dickhardstr.: Bauarbeiten an der Rheinstr., direkte Durchfahrt gesperrt, voraussichtlich bis 05.10.2015',
+         'type' => 'handicap',
+         'until' => 1444050000
+       },
        {
          'data' => '	2::night 4280,17551 4243,17570 4240,17584 3959,17714 3987,17808
 ',
@@ -3600,7 +3627,23 @@ userdel	q3::inwork 11325,12021 11275,12055
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: next_check: 2015-08-10 vvv
+#: priority: #A vvv
+#: source_id: IM_025877	vvv
+	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
+	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
+#: source_id ^^^
+#: priority ^^^
+#: next_check ^^^
+',
+         'from' => 1439228045,
+         'id' => 2715,
+         'source_id' => 'http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml',
+         'text' => 'Jülicher Str. und Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke, voraussichtlich ab 10. August 2015 für ca. zwei Jahre',
+         'type' => 'handicap',
+         'until' => 1499983200
+       },
        undef,
        undef,
        undef,
@@ -3656,6 +3699,20 @@ userdel	q3::inwork 11325,12021 11275,12055
          'text' => 'Mehringbrücke: Fahrbahn Richtung Wilhelmstr. gesperrt, für Radfahrer umständliche Wegführung über linken Gehweg, bis 28.08.2015',
          'type' => 'handicap',
          'until' => 1440774000
+       },
+       undef,
+       undef,
+       {
+         'data' => '#: XXX Wann sind die Bauarbeiten fertig?
+#: last_checked: 2015-08-10
+#: check_frequency: 60d
+userdel	q4::inwork 7799,13019 7813,12961
+',
+         'from' => undef,
+         'id' => 2728,
+         'text' => 'Weg am Moabiter Werder - Clara-Jaschke-Str.: Bauarbeiten, Ausweichen auf sehr engen Gehweg',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
