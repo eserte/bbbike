@@ -2139,7 +2139,7 @@ Drängelgitter	BNP:3::trailer=10 10062,15927
 #: next_check_id: LORTZING-2014
 #: XXX eventuell temporär wegen der Baustraße
 #: XXX siehe auch in zebrastreifen-orig
-#: last_checked: 2015-04-09
+#: last_checked: 2015-08-11
 #: check_frequency: 120d
 zwei weite Drängelgitter	BNP:4::trailer=12 10038,15418
 Schranke	BNP:3 -7969,-1659
@@ -2654,7 +2654,7 @@ Am Gutspark: Bauarbeiten	2::inwork 15747,12880 15746,12967 15826,12971
 # 
 #: XXX Ende der Bauarbeiten?
 # REMOVED (als es noch in handicap_s-orig war) --- : XXX_prog: zu eng für Anhänger
-#: last_checked: 2015-07-15
+#: last_checked: 2015-08-11
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9559,13087
 # 
 #: last_checked: 2015-08-02 vvv
@@ -2685,10 +2685,7 @@ Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,1
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
-#: next_check_id: GREIFENHAGENER-2015
-#: last_checked: 2015-06-30
-#: check_frequency: 30d
-Greifenhagener Str.: Bauarbeiten, Einbahnstraße	1s:q2 11086,15772 11123,15851
+# REMOVED --- #: next_check_id: GREIFENHAGENER-2015 --- #: last_checked: 2015-06-30 --- #: check_frequency: 30d --- Greifenhagener Str.: Bauarbeiten, Einbahnstraße	1s:q2 11086,15772 11123,15851
 # 
 #: XXX vermutlich werden diese Abschnitte dauerhaft aufgegeben werden
 #: last_checked: 2015-07-04
@@ -2897,7 +2894,7 @@ Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Du
 # REMOVED --- #: next_check_id: INVALIDEN-2014 vvv --- #: last_checked: 2015-08-05 vvv --- #: next_check: 2015-05-31 vvv --- Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 19011,14019 9085,13919 8935,13844 --- Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9011,14019 9085,13919 9151,13941 --- Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 9151,13941 9085,13919 9011,14019 --- Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 8935,13844 9085,13919 9011,14019 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
-#: last_checked: 2015-07-18 vvv
+#: last_checked: 2015-08-11 vvv
 #: check_frequency: 90d vvv
 Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10008,12274 9994,12368
 Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9996,12401 9994,12368 9943,12364 9961,12273

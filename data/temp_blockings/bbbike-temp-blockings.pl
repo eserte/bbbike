@@ -19896,14 +19896,14 @@ EOF
 userdel	2::inwork -13687,-4949 -13723,-6401
 EOF
      },
-     { from  => $isodate2epoch->("2014-09-12 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-09-14 23:59:59"),
+     { from  => $isodate2epoch->("2015-09-11 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-09-13 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 9]],
-       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., Veranstaltung (Fest an der Panke), Straße vollständig gesperrt (13.09.2014 und 14.09.2014)',
+       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., Veranstaltung (Fest an der Panke), Straße vollständig gesperrt (12.09.2015-13.09.2015)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.laubinger.de/termine/44-fest-an-der-panke/
+#: by: http://www.laubinger.de/termine/46-fest-an-der-panke/
 userdel	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345
 EOF
      },
@@ -24263,7 +24263,7 @@ userdel	q3::inwork 11325,12021 11275,12055
 EOF
      },
      { from  => 1439228045, # $isodate2epoch->("2015-07-22 00:00:00"), # 1436738400, # 2015-07-13 00:00
-       until => $isodate2epoch->("2017-07-14 00:00:00"),
+       until => 1439317391, # -> handicap_s-orig --- $isodate2epoch->("2017-07-14 00:00:00"),
        text  => 'Jülicher Str. und Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke, voraussichtlich ab 10. August 2015 für ca. zwei Jahre',
        type  => 'handicap',
        source_id => 'http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml',

@@ -29,7 +29,7 @@ Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6
 # 
 #: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2015-07-05
+#: last_checked: 2015-08-11
 #: check_frequency: 60d
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12407,14470 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
@@ -213,7 +213,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2015-08-10
+#: last_checked: 2015-08-11
 #: next_check: 2015-09-30
 Warschauer Str: Radspuren in Bau	?::inwork 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 # 
@@ -1595,14 +1595,7 @@ Anna-Maria-Müller-Str.: Planstraße 7, genaue Lage, Qualität?	?::projected 17712,
 # 
 # REMOVED (-> strassen+gesperrt) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5696 (Straßenname) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036439860180/439860180/00109962/62-Anlagen/02/LageplanDS1034.pdf (grober Lageplan) --- #: by: http://w6898n4pa.homepage.t-online.de/Lage.pdf (Lageplan) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/17re.pdf/file?y=2014 (Grundstücksnummerierungen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2014 (Benennung) --- #: XXX Baustart: Ende 2013, Bauende: Frühjahr 2015 --- #: XXX Verbundsteinpflaster --- #: last_checked: 2015-05-10 --- #: check_frequency: 60d --- Am Gutspark: neue geplante Privatstraße, Lage, Qualität?	?::inwork 15747,12880 15746,12967 15826,12971
 # REMOVED (abgelehnt, siehe Schlussbericht) --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4458 --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036560602837/560602837/00092292/92-Anlagen/04/B0359SB.pdf (Schlussbericht) --- #: last_checked: 2013-06-22 --- #: check_frequency: 90d --- Brandenburgplatz: wird hier eine Fußgängerampel eingerichtet?	? 23363,5714 23309,5704
-# 
-#: next_check_id: GREIFENHAGENER-2015
-#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=2656
-#: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/helmholtzplatz.php
-#: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/pr__sentation_sanierungsgebiet_helmholtzplatz.pdf?start&ts=1399614747&file=pr__sentation_sanierungsgebiet_helmholtzplatz.pdf
-#: last_checked: 2015-06-30
-#: check_frequency: 30d
-Greifenhagener Str.: hier wird eine Fußgängerzone entstehen sowie asphaltiert werden; außerdem wird es eine Einbahnstraßenregelung für Autofahrer geben	? 11123,15851 11150,15908
+# REMOVED (realisiert) --- #: next_check_id: GREIFENHAGENER-2015 --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=2656 --- #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/helmholtzplatz.php --- #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/pr__sentation_sanierungsgebiet_helmholtzplatz.pdf?start&ts=1399614747&file=pr__sentation_sanierungsgebiet_helmholtzplatz.pdf --- #: last_checked: 2015-06-30 --- #: check_frequency: 30d --- Greifenhagener Str.: hier wird eine Fußgängerzone entstehen sowie asphaltiert werden; außerdem wird es eine Einbahnstraßenregelung für Autofahrer geben	? 11123,15851 11150,15908
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3385
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3385&date=20140201 (noch nichts passiert)
@@ -1867,38 +1860,20 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: XXX_prog ^^^
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20141202.1525.400470.html
-#: last_checked: 2015-07-15
+#: last_checked: 2015-08-11
 #: check_frequency: 90d
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.334355.php
-#: last_checked: 2015-08-05
+#: last_checked: 2015-08-11
 #: check_frequency: 120d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172 10818,11269
 # 
 # REMOVED (zurzeit nur ein nicht eingezeichneter Diagonalweg gesperrt) --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.334347.php --- #: XXX ist es dieser Weg oder ein anderer oder ein nicht eingezeichneter? --- Spreebogenpark: Sperrung wg. Bauarbeiten, danach "provisorische Befestigung", wo genau?	? 8309,12758 8304,12938
-# 
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1506/nachricht5652.html vvv
-#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml vvv
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1508/nachricht5703.html
-#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/download/LP_05-1.pdf
-#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/download/LP_04-1.pdf
-#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/download/LP_03.pdf
-#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/download/LP_02.pdf
-#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/download/LP_01.pdf
-#: XXX laut Artikel werden die Jülicher und Malmöer Str. zu Einbahnstraßen vvv
-#: XXX Radfahrer Richtung Osten werden auf zur gegenüberliegenden Seite geführt. Behinderungen vermutlich durch die zusätzlichen Ampelüberquerungen; vermutlich auch ungünstige Schaltzeiten an den Kreuzungen mit der Umleitungsstrecke. Div. Gehwege werden "Radfahrer frei"-Schilder haben (Jülicher Str., Behmstr.)
-#: last_checked: 2015-07-14 vvv
-#: next_check: 2015-08-10 vvv
-Sperrung der Bösebrücke: wie sieht die Wegführung für Radfahrer an der Bösebrücke aus? Gibt es Einschränkungen auf der Umleitungsstrecke?	? 10301,16186 10281,16263 10254,16363 10225,16436 10197,16528 10134,16534 9998,16547 9883,16557 9816,16565 9781,16569 9617,16590 9514,16603 9498,16480 9487,16395 9475,16307 9474,16297 9458,16180 9441,16058
+# REMOVED (alle Einschränkungen elsewhere eingetragen) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1506/nachricht5652.html vvv --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1508/nachricht5703.html --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/download/LP_05-1.pdf --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/download/LP_04-1.pdf --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/download/LP_03.pdf --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/download/LP_02.pdf --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/download/LP_01.pdf --- #: XXX laut Artikel werden die Jülicher und Malmöer Str. zu Einbahnstraßen vvv --- #: XXX Radfahrer Richtung Osten werden auf zur gegenüberliegenden Seite geführt. Behinderungen vermutlich durch die zusätzlichen Ampelüberquerungen; vermutlich auch ungünstige Schaltzeiten an den Kreuzungen mit der Umleitungsstrecke. Div. Gehwege werden "Radfahrer frei"-Schilder haben (Jülicher Str., Behmstr.) --- #: last_checked: 2015-07-14 vvv --- #: next_check: 2015-08-10 vvv --- Sperrung der Bösebrücke: wie sieht die Wegführung für Radfahrer an der Bösebrücke aus? Gibt es Einschränkungen auf der Umleitungsstrecke?	? 10301,16186 10281,16263 10254,16363 10225,16436 10197,16528 10134,16534 9998,16547 9883,16557 9816,16565 9781,16569 9617,16590 9514,16603 9498,16480 9487,16395 9475,16307 9474,16297 9458,16180 9441,16058
 # REMOVED (aufgenommen) --- Treppe: gibt es hier auch Einschränkungen? (Unterquerung der Brücke wird möglich sein, aber vielleicht wird es eng?)	? 9998,16547 9982,16527 9959,16510
 # REMOVED ("Baustellentunnel" existiert, fast so breit wie der Kolonnenweg) --- Norwegerstr.: gibt es hier auch Einschränkungen? (Unterquerung der Brücke wird möglich sein, aber vielleicht wird es eng?)	? 9959,16510 9955,16578
-Behmstr.: bleiben die Radspuren erhalten?	? 9811,16112 10005,16150 10045,16157 10301,16186
-#: next_check ^^^
-#: last_checked ^^^
-#: XXX ^^^
-#: by ^^^
-#: by ^^^
+# REMOVED --- Behmstr.: bleiben die Radspuren erhalten?	? 9811,16112 10005,16150 10045,16157 10301,16186
 # 
 #: by: http://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20150616 vvv
 #: next_check: 2015-12-13 vvv
@@ -4102,7 +4077,7 @@ Ramin - Löcknitz: Qualität?	? 68046,113269 67358,114392 67323,114468 66755,11511
 Gransee - Altlüdersdorf: Qualität? Nur für Radfahrer? Führt hier die Königin-Luise-Route entlang?	? -7498,66548 -7468,66733 -7508,66846 -7400,66841 -7297,66851 -7283,66889 -7100,66841 -7031,66751 -7010,66917 -6915,66996 -6924,67063 -6890,67109 -6810,67280 -6547,67393 -6330,67512 -6220,67525 -5982,67653 -5765,67712
 Altlüdersdorf - Zabelsdorf: Qualität?	? -5207,70025 -4635,69784 -4394,70577 -2966,71541 -2768,71868
 Kupferhammerweg (Eberswalde): Qualität? Stimmt der Straßenname?	? 36295,48210 36319,48300 36244,48450 36189,48505 36073,48530 35877,48604 35658,48759
-Invalidenstr.: gibt es zwischen Caroline-Michaelis-Str. und Chausseestr. Radspuren?	? 9151,13941 9085,13919 8935,13844
+# REMOVED (ja) --- Invalidenstr.: gibt es zwischen Caroline-Michaelis-Str. und Chausseestr. Radspuren?	? 9151,13941 9085,13919 8935,13844
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20150804
 #: next_check: 2015-09-01

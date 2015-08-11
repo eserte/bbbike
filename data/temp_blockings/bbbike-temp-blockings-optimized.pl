@@ -2653,7 +2653,26 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.laubinger.de/termine/46-fest-an-der-panke/
+userdel	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345
+',
+         'from' => 1441922400,
+         'id' => 2281,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              10,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., Veranstaltung (Fest an der Panke), Straße vollständig gesperrt (12.09.2015-13.09.2015)',
+         'type' => 'gesperrt',
+         'until' => 1442181599
+       },
        undef,
        undef,
        undef,
@@ -3627,23 +3646,7 @@ userdel	q3::inwork 11325,12021 11275,12055
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: next_check: 2015-08-10 vvv
-#: priority: #A vvv
-#: source_id: IM_025877	vvv
-	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
-	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
-#: source_id ^^^
-#: priority ^^^
-#: next_check ^^^
-',
-         'from' => 1439228045,
-         'id' => 2715,
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml',
-         'text' => 'Jülicher Str. und Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke, voraussichtlich ab 10. August 2015 für ca. zwei Jahre',
-         'type' => 'handicap',
-         'until' => 1499983200
-       },
+       undef,
        undef,
        undef,
        undef,
