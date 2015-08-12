@@ -3683,16 +3683,7 @@ userdel	q3::inwork 11325,12021 11275,12055
          'type' => 'handicap',
          'until' => 1441033200
        },
-       {
-         'data' => 'userdel	q4::inwork 9695,1563 9626,1604 9519,1650 9493,1661 9420,1700
-',
-         'from' => 1437282000,
-         'id' => 2724,
-         'source_id' => 'IM_025689',
-         'text' => 'Daimlerstr.: Baustelle, Fahrbahn zwischen Mauserstr. und Säntisstr. gesperrt, 20.07.2015 07:00 Uhr bis 31.08.2015 17:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1441033200
-       },
+       undef,
        {
          'data' => 'userdel	q4::inwork; 9416,10196 9409,10226 9404,10250
 ',
