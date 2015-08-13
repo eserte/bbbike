@@ -62,7 +62,7 @@ usage: $0 [-street file] [-blocked file]
 -street and -blocked may be given multiple times or separated with commas
 -blockedtype may be given multiple times and should be one of
              @allowed_blocked_type
--shorter: just ouput the first street name for a blocking series
+-shorter: just output the first street name for a blocking series
 EOF
 }
 
@@ -106,50 +106,7 @@ $blocked = MultiStrassen->new(@blocked_files);
     $map = $_map if defined $_map;
 }
 
-my %carry_points;
-$blocked->init;
-while(1) {
-    my $r = $blocked->next;
-    last if !@{$r->[Strassen::COORDS]};
-    next if $r->[Strassen::CAT] ne StrassenNetz::BLOCKED_CARRY;
-    $carry_points{$r->[Strassen::COORDS][0]}++;
-}
-
-#old_search();
 new_search();
-
-sub old_search {
-    if (!defined $refpoint) {
-	# otherwise use first coordinate of first street as reference
-	$refpoint = ($s->get(0))->[Strassen::COORDS][0];
-    }
-
-    my $net = StrassenNetz->new($s);
-    $net->make_net(UseCache => $usecache);
-    $net->make_sperre($blocked, %blocked_type);
-
-    # loop over all points
-    my $i = 0;
-    $s->init;
-    while(1) {
-	my $r = $s->next;
-	last if !@{$r->[Strassen::COORDS]};
-	printf STDERR "%3d%%\r", (($i++)/@{$s->{Data}})*100;
-	foreach my $c (@{$r->[Strassen::COORDS]}) {
-	    next if $c eq $refpoint;
-	    my(@r) = $net->search($c, $refpoint, AsObj => 1);
-	    if ($r[0]->is_empty) {
-		print "$r->[Strassen::NAME]\tX $c\n";
-	    } else {
-		# Simple optimization: use this point as the next refpoint
-		# but only if it's not a "carry" point.
-		if (!exists $carry_points{$c}) {
-		    $refpoint = $c;
-		}
-	    }
-	}
-    }
-}
 
 sub new_search {
     my $net = StrassenNetz->new($s);
