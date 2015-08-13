@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: search_inaccessible_points,v 1.11 2008/11/07 22:46:32 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2003,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003,2004,2015 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -284,38 +283,20 @@ sub flood_search {
 
     my %CLOSED;
     my %OPEN;
-    my %PRED;
 
-    my $act_dist = 0;
-    $OPEN{$act_coord} = $act_dist;
-    $PRED{$act_coord} = undef;
+    $OPEN{$act_coord} = undef;
 
     while (1) {
-	$CLOSED{$act_coord} = $act_dist;
+	$CLOSED{$act_coord} = undef;
 	delete $OPEN{$act_coord};
 
-	while (my($neighbor, $dist) = each %{ $net_net->{$act_coord} }) {
-	    next if exists $CLOSED{$neighbor} && $CLOSED{$neighbor} <= $act_dist + $dist;
-	    $OPEN{$neighbor} = $act_dist + $dist;
-	    $PRED{$neighbor} = $act_coord;
+	while (my $neighbor = each %{ $net_net->{$act_coord} }) {
+	    next if exists $CLOSED{$neighbor};
+	    $OPEN{$neighbor} = undef;
 	}
 
-	my $new_act_coord;
-	my $new_act_dist = 99999999;
-	while (my($c, $dist) = each %OPEN) {
-	    if ($dist < $new_act_dist) {
-		$new_act_coord = $c;
-		$new_act_dist = $dist;
-	    }
-	}
-	if (!defined $new_act_coord) {
-	    #warn "Nothing more...";
-	    last;
-	}
-
-	$act_coord = $new_act_coord;
-	$act_dist = $new_act_dist;
-	# warn $act_dist;
+	last if !keys %OPEN; # side-effect: resets iterator
+	$act_coord = each %OPEN;
     }
 
     return \%CLOSED;
