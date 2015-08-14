@@ -3707,6 +3707,22 @@ userdel	q4::inwork 7799,13019 7813,12961
          'text' => 'Weg am Moabiter Werder - Clara-Jaschke-Str.: Bauarbeiten, Ausweichen auf sehr engen Gehweg',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: by: wosch vvv
+#: XXX 30m zu jeder Seite der Kreuzung sind gesperrt; wann sind die Bauarbeiten fertig? vvv
+#: last_checked: 2015-08-13 vvv
+userdel	q3::inwork 12761,9190 12907,9073 13048,8956
+userdel	q3::inwork 12907,9073 12836,8980
+#: last_checked ^^^
+#: XXX ^^^
+#: by ^^^
+',
+         'from' => undef,
+         'id' => 2729,
+         'text' => 'Weichselplatz/Fuldastr./Weigandufer: Bauarbeiten, Ausweichen auf Gehweg',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
