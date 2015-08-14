@@ -1118,8 +1118,8 @@ EOF
      },
      { from  => $isodate2epoch->("2014-09-12 10:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2014-09-14 20:00:00"),
-       periodic => 1,
-       recurrences => [['yearly', days => 13, months => 9]],
+       # XXX findet es 2015 statt? --- periodic => 1,
+       # XXX recurrences => [['yearly', days => 13, months => 9]],
        text  => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Veranstaltung (Herbstfest auf der Hauptstraße), Straße gesperrt (13.9.2014 10:00 - 14.9.2014 20:00)',
        type  => 'handicap',
        data  => <<EOF,
@@ -24253,12 +24253,11 @@ userdel auto	3 5829,10964 5782,10884 5669,10704
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1439573914, # undef, # XXX
        text  => 'Märkisches Ufer: Sperrung der Fahrbahn vor der chinesischen Botschaft, Ausweichen über Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX bis wann ist die Fahrbahn gesperrt?
-#: last_checked: 2015-07-18
+# REMOVED --- #: XXX bis wann ist die Fahrbahn gesperrt? --- #: last_checked: 2015-08-14
 userdel	q3::inwork 11325,12021 11275,12055
 EOF
      },
@@ -24411,12 +24410,14 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: wosch vvv
+#: confirmed_by: srt vvv
 #: XXX 30m zu jeder Seite der Kreuzung sind gesperrt; wann sind die Bauarbeiten fertig? vvv
-#: last_checked: 2015-08-13 vvv
+#: last_checked: 2015-08-14 vvv
 userdel	q3::inwork 12761,9190 12907,9073 13048,8956
 userdel	q3::inwork 12907,9073 12836,8980
 #: last_checked ^^^
 #: XXX ^^^
+#: confirmed_by ^^^
 #: by ^^^
 EOF
      },

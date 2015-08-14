@@ -20,7 +20,7 @@ Dˆringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,112
 #: last_checked ^^^
 # 
 #: XXX laut Schild der Wasserbetriebe bis Oktober 2015, laut Fritz bis November 2015
-#: last_checked: 2015-08-12 vvv
+#: last_checked: 2015-08-14 vvv
 #: next_check: 2015-11-22 vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
@@ -135,8 +135,8 @@ Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q2::inwork 
 # 
 #: next_check_id: INVALIDEN-2014 vvv
 #: last_checked: 2015-08-10 vvv
-#: next_check: 2015-08-15 vvv
-#: XXX voraussichtlich gesperrt bis zum 15. August 2015
+#: next_check: 2015-08-30 vvv
+#: XXX voraussichtlich gesperrt bis zum 30. August 2015
 #: priority: #A vvv
 #: source_id: IM_017330
 #: source_id: INKO_113944
@@ -354,7 +354,7 @@ Blankenburger Str.: Bauarbeiten, Einbahnstraﬂe, gesperrt in Richtung Westen	q4::
 #: source_id: IM_024857
 #: osm_watch: way id="25795962" version="14" 
 #: last_checked: 2015-06-21
-#: next_check: 2016-07-01
+#: next_check: 2016-03-15
 Zimmermannstraﬂenbr¸cke: Bau einer neuen Br¸cke, Radfahrer m¸ssen den Gehweg bzw. Behelfsbr¸cke benutzen	q4::inwork 21351,9066 21365,9059 21385,9049
 # 
 #: temporary ^^^
@@ -951,7 +951,7 @@ Hedwigskirchgasse: Fuﬂg‰nger	q1 9743,12239 9747,12205
 Hedwigskirchgasse: Bordsteine, Fuﬂg‰nger	q3 9747,12205 9756,12139
 #: XXX_prog: BS am Nordende, flach
 Zufahrt Franz-Mehring-Platz: flacher Bordstein	q1 12735,12131 12691,12042
-Am Flutgraben: Fuﬂg‰nger, sechs Bodenschwellen	q3 13535,10184 13371,9974
+Am Flutgraben: Fuﬂg‰nger, sechs Bodenschwellen	q3+ 13535,10184 13371,9974
 Am Flutgraben: Fuﬂg‰nger	q1 13371,9974 13333,9929
 (Uferweg zum Ernst-Heilmann-Steg): sanfte Rampe, Fuﬂg‰nger	q2 13230,9981 13270,10030
 (Ernst-Heilmann-Steg): Fuﬂg‰nger, zwei Bodenschwellen	q3 13270,10030 13306,10006 13371,9974
@@ -1061,9 +1061,9 @@ Spreetunnel: Fuﬂg‰nger	q2 25571,4553 25658,4619
 (entlang der Autobahn, zum hohen Bogen): gemeinsamer Fuﬂ- und Radweg	q1+ 3379,8969 3489,8839 3510,8814 3713,8578 3696,8572 3644,8456 3644,8425
 Gˆrresstr.: enge Straﬂe	q1 5067,7652 5188,7536 5272,7458 5318,7424
 Stendaler Platz: Fuﬂg‰nger, Spielplatz	q2 6394,14085 6489,14071
-Washingtonplatz: querende Fuﬂg‰nger, Taxis	q2; 7937,13126 8106,13130
+Washingtonplatz: querende Fuﬂg‰nger, Taxis	q2; 7937,13126 8011,13128 8106,13130
 #: XXX_prog: eigentlich 1s:q3 in gesperrt-orig, aber Konflikt mit dem handicap_s-Eintrag in die andere Richtung (stimmt das?)
-Washingtonplatz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 8106,13130 7937,13126
+Washingtonplatz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 8106,13130 8011,13128 7937,13126
 s¸dliches Spreeufer: besonders an Wochenenden tags¸ber sehr viele Fuﬂg‰nger	q2 7437,12368 7561,12527 7670,12576
 (Ruwersteig - Kl¸sserather Weg): gemeinsamer Rad- und Gehweg, eng und kurvig	q2 19364,13033 19376,13092 19425,13089
 (Fontanestr. - Kopenhagener Str.): Fuﬂg‰nger	q2 7522,19804 7518,19762 7617,19748
@@ -2210,6 +2210,7 @@ Allee der Kosmonauten [Wohngebietsweg]: einige Fuﬂg‰nger	q1 19859,13765 20038,13
 Einbecker Str.: einige Fuﬂg‰nger	q1 17734,11408 17764,11371
 #: note: Gehweg f¸r Radfahrer frei
 Greifenhagener Str.: einige Fuﬂg‰nger	q1 11150,15908 11176,15958
+Am Landwehrkanal: einige Fuﬂg‰nger	q1 12897,9365 12889,9426 12905,9470 13109,9743 13225,9897 13271,9927 13333,9929
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

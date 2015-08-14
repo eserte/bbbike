@@ -3635,17 +3635,7 @@ userdel	2::inwork 14910,9643 14844,9513
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX bis wann ist die Fahrbahn gesperrt?
-#: last_checked: 2015-07-18
-userdel	q3::inwork 11325,12021 11275,12055
-',
-         'from' => undef,
-         'id' => 2714,
-         'text' => 'Märkisches Ufer: Sperrung der Fahrbahn vor der chinesischen Botschaft, Ausweichen über Gehweg',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3710,12 +3700,14 @@ userdel	q4::inwork 7799,13019 7813,12961
        },
        {
          'data' => '#: by: wosch vvv
+#: confirmed_by: srt vvv
 #: XXX 30m zu jeder Seite der Kreuzung sind gesperrt; wann sind die Bauarbeiten fertig? vvv
-#: last_checked: 2015-08-13 vvv
+#: last_checked: 2015-08-14 vvv
 userdel	q3::inwork 12761,9190 12907,9073 13048,8956
 userdel	q3::inwork 12907,9073 12836,8980
 #: last_checked ^^^
 #: XXX ^^^
+#: confirmed_by ^^^
 #: by ^^^
 ',
          'from' => undef,

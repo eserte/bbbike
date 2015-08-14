@@ -654,7 +654,7 @@ Wehneltsteig	1 1256,14217 1305,14384
 Bernhard-Bästlein-Str.	1 15595,14041 15593,13768
 (Fredersdorfer Str. - Hildegard-Jadamowitz-Str.)	1 12908,12280 12883,12118 12893,12077 12923,12043
 #: XXX_prog: eigentlich 1s:q3, aber Konflikt mit handicap_s-Eintrag für Washingtonplatz
-Washingtonplatz	1s 8106,13130 7937,13126
+Washingtonplatz	1s 8106,13130 8011,13128 7937,13126
 (Vorfahrt HdKdW)	1 7627,12380 7654,12464 7687,12477 7778,12470 7813,12427 7821,12367
 #: by: Bernhard Husch:
 #: note: Einfahrt verboten
@@ -2815,13 +2815,7 @@ Lyonstr.: noch nicht fertiggestellt, zurzeit nur Baustraße	2::inwork 12188,21330
 #: priority: #A
 Luisenstr. Höhe Charité: Straße wegen Bauarbeiten komplett bis zum 30.09.2015 gesperrt, auch für Radfahrer und Fußgänger	2::inwork 8665,13353 8648,13498
 # 
-#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.153649.php
-#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.214040.php
-#: XXX falls es soweit ist -> gesperrt-orig
-#: last_checked: 2015-07-21
-#: check_frequency: 30d
-Lohmühlenplatz: Umgestaltung des Platzes, Weg ist gesperrt	2::inwork 12900,9465 12897,9365
-# 
+# REMOVED --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.153649.php --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.214040.php --- #: XXX falls es soweit ist -> gesperrt-orig --- #: last_checked: 2015-07-21 --- #: check_frequency: 30d --- Lohmühlenplatz: Umgestaltung des Platzes, Weg ist gesperrt	2::inwork 12905,9470 12889,9426 12897,9365
 # REMOVED (wieder überquerbar) --- #: source_id: INKO_104519 --- #: last_checked: 2015-03-28 --- #: check_frequency: 90d --- Bismarckstr.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3nocross 3690,11629 3844,11649 3898,11655
 # REMOVED --- #: next_check_id: INVALIDENFRIEDHOF-2014 --- #: by: Birgit Schroeer --- #: confirmed_by: srt --- #: last_checked: 2015-03-13 --- #: next_check: 2015-03-28 --- #: XXX siehe auch temp_blockings-Eintrag --- #: osm_watch: way id="76212442" version="7" --- Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 28.03.2015	2::inwork 8119,13912 8101,13901 8248,13659 8337,13541
 # 
