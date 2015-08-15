@@ -802,7 +802,7 @@ for my $osm_file (@osm_files) {
 		    push @or, ["orte", $cat];
 		    $place_to_population{$ll} = $population;
 		} else {
-		    if ($place eq 'hamlet' || $place eq 'suburb' || $place eq 'locality') {
+		    if ($place eq 'hamlet' || $place eq 'suburb') {
 			push @or, ["orte", 0];
 		    } elsif ($place eq 'village') {
 			push @or, ["orte", 1];
