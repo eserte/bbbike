@@ -2946,9 +2946,9 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        {
          'data' => '#: next_check_id: KARLSHORSTER-2015 vvv
-#: last_checked: 2015-08-08 vvv
+#: last_checked: 2015-08-15 vvv
 #: next_check: 2015-09-21 vvv
-#: XXX am 2015-08-08 offen für Fußgänger
+#: XXX am 2015-08-15 offen für Fußgänger
 userdel	2::inwork 15272,10790 15279,10862
 userdel	2::inwork 15261,10738 15272,10790
 #: next_check ^^^
