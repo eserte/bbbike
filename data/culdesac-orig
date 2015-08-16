@@ -1111,6 +1111,8 @@ westliches Sackgassenende	culdesac 20281,11341
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo 8092,13467
+	culdesac_pseudo 4755,9154
 	culdesac_pseudo 19921,10499
 	culdesac_pseudo 18931,9629
 	culdesac_pseudo 17764,11371
@@ -1186,7 +1188,7 @@ südliches Sackgassenende	culdesac_pseudo 22478,4659
 	culdesac_pseudo 14994,12064
 #: note: als Radfahrer/Fußgänger kann man über den Gehweg weiterfahren/gehen
 	culdesac_pseudo 11017,12487
-	culdesac_pseudo 3856,9687
+	culdesac_pseudo 3840,9683
 	culdesac_pseudo 7765,15417
 	culdesac_pseudo 7929,15355
 	culdesac_pseudo 10382,19066

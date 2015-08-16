@@ -2197,8 +2197,8 @@ userdel	2 3072,12222 3091,12071
 userdel	2 3034,12502 2786,12473 2745,12467 2717,12463 2643,12453
 userdel	2 3034,12502 3189,12519 3280,12512
 userdel	2 3103,11968 3091,12071
-userdel auto	3 3358,12258 3217,12239 3072,12222 2899,12200 2895,12217
-userdel auto	3 2895,12217 2899,12200 3072,12222 3217,12239 3358,12258
+userdel auto	3 3355,12258 3217,12239 3072,12222 2899,12200 2895,12217
+userdel auto	3 2895,12217 2899,12200 3072,12222 3217,12239 3355,12258
 EOF
      },
      { from  => 1120180333, # undef 2005-07-07 00:00
@@ -6247,7 +6247,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.ms-event-agentur.com/primavera%202013.html', # 2013 in der URL verwirrt nur, die Seite nennt das Jahr 2015
        data  => <<EOF,
-userdel	2::temp 7107,9030 7044,9163 7022,9211 7006,9282
+userdel	2::temp 7107,9030 7044,9163 7022,9211 7006,9292
 userdel	2::temp 6945,9142 7044,9163
 EOF
      },
@@ -6276,7 +6276,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.ms-event-agentur.com/seite22.html?date=20150404
-userdel	2::temp 7006,9282 7022,9211 7044,9163 7107,9030
+userdel	2::temp 7006,9292 7022,9211 7044,9163 7107,9030
 EOF
      },
      { from  => 1160517600, # 2006-10-11 00:00
@@ -16628,7 +16628,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014394',
        data  => <<EOF,
-userdel	q4::temp 7201,8870 7107,9030 7044,9163 7022,9211 7006,9282 7130,9305 7201,9318 7418,9366 7479,9357
+userdel	q4::temp 7201,8870 7107,9030 7044,9163 7022,9211 7006,9292 7130,9316 7202,9329 7418,9366 7479,9357
 EOF
      },
      { from  => 1255644000, # 2009-10-16 00:00
@@ -24105,7 +24105,7 @@ EOF
        source_id => 'wosch',
        data  => <<EOF,
 #: confirmed_by: srt
-#: last_checked: 2015-06-08
+#: last_checked: 2015-08-16
 #: check_frequency: 45d
 userdel	2::inwork 7306,13418 7451,13504 7630,13584
 EOF

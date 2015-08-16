@@ -722,7 +722,7 @@ userdel	2::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 1117
        undef,
        {
          'data' => '#: by: http://www.ms-event-agentur.com/seite22.html?date=20150404
-userdel	2::temp 7006,9282 7022,9211 7044,9163 7107,9030
+userdel	2::temp 7006,9292 7022,9211 7044,9163 7107,9030
 ',
          'from' => 1443823200,
          'id' => 731,
@@ -3557,7 +3557,7 @@ userdel	q3::inwork 5824,6974 5817,7223
        undef,
        {
          'data' => '#: confirmed_by: srt
-#: last_checked: 2015-06-08
+#: last_checked: 2015-08-16
 #: check_frequency: 45d
 userdel	2::inwork 7306,13418 7451,13504 7630,13584
 ',

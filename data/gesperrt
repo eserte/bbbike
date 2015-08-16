@@ -37,7 +37,7 @@ Rasthof Avus	1 1870,10406 1882,10356 1847,10323 1723,10289 1692,10348 1793,10424
 Breitenbachplatz (Westseite)	1 4292,6558 4218,6583 4111,6651 4074,6681 4021,6729 3947,6814
 Breitenbachplatz (Ostseite)	1 3981,6850 4061,6753 4107,6718 4146,6693 4250,6625 4292,6558
 Inselstr. Schwanenwerder	1 -5310,4216 -5393,4211 -5453,4274 -5471,4412 -5442,4526 -5386,4539 -5341,4511 -5358,4404 -5356,4296 -5310,4216
-Bayerischer Platz	1 6063,9106 6053,9224 6084,9242 6131,9241 6161,9128 6152,9091 6118,9078 6083,9082 6063,9106
+Bayerischer Platz	1 6059,9118 6053,9224 6084,9242 6131,9241 6152,9136 6152,9091 6118,9078 6083,9082 6059,9118
 orthodoxe Kirche	1 3952,8980 3831,9052
 U-Bahn Dahlem	1 3216,6393 3123,6318 3023,6246 2950,6141 2898,5947 2823,5672 2797,5624 2746,5537 2523,5114 2469,5043 2313,4901 2190,4823 2079,4769 2027,4792
 U-Bahn Dahlem	1 2027,4792 2095,4805 2169,4854 2217,4884 2288,4932 2454,5067 2499,5144 2717,5578
@@ -694,7 +694,7 @@ A.T.U-Einfahrt: Tor, außerhalb der Öffnungszeiten (Mo-Fr bis 20 Uhr, Sa bis 16 U
 Rubensstr.	1 6429,7876 6307,7893
 Bäumerplan	1 8527,7939 8553,7795
 Bäumerplan	1 8512,7757 8466,7918
-Mierendorffstr.	1 3645,13201 3534,13098
+Mierendorffstr.	1 3645,13206 3534,13098
 Hüttigpfad	1 4810,15000 4887,14931 5057,14824 5095,14792
 (Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1s 11012,13278 11085,13239
 Zwerghuhnweg	1s 15612,416 15561,386
@@ -1591,15 +1591,15 @@ Charlottenstr. -> Alt-Friedrichsfelde: Straßentunnelrampe	3::igndisp 18520,11685
 Alt-Friedrichsfelde -> Charlottenstr.: Straßentunnelrampe	3::igndisp 18626,11742 18520,11707 18520,11685
 abgesperrter Mittelstreifen	3nocross::ignrte 3592,10869 3623,10800 3644,10759
 Lewishamstr. -> Gervinusstr.: abgesperrter Mittelstreifen	3::igndisp 3592,10869 3623,10800 3835,10915
-Straßentunnelrampe	3nocross::ignrte 3644,10759 3739,10576 3771,10511 3813,10435
-Waitzstr. -> Sybelstr.: Straßentunnelrampe	3::igndisp 3764,10580 3739,10576 3712,10566
-Waitzstr. -> Lewishamstr.: Straßentunnelrampe	3::igndisp 3764,10580 3739,10576 3771,10511
-Sybelstr. -> Waitzstr.: Straßentunnelrampe	3::igndisp 3712,10566 3739,10576 3764,10580
-Sybelstr. -> Lewishamstr.: Straßentunnelrampe	3::igndisp 3712,10566 3739,10576 3644,10759
-Lewishamstr. -> Sybelstr.: Straßentunnelrampe	3::igndisp 3771,10511 3739,10576 3712,10566
-Lewishamstr. -> Waitzstr.: Straßentunnelrampe	3::igndisp 3644,10759 3739,10576 3764,10580
-Waitzstr. -> Lewishamstr.: Straßentunnelrampe	3::igndisp 3739,10495 3771,10511 3739,10576
-Lewishamstr. -> Waitzstr.: Straßentunnelrampe	3::igndisp 3813,10435 3771,10511 3739,10495
+Straßentunnelrampe	3nocross::ignrte 3644,10759 3744,10577 3777,10513 3813,10435
+Waitzstr. -> Sybelstr.: Straßentunnelrampe	3::igndisp 3764,10580 3744,10577 3712,10566
+Waitzstr. -> Lewishamstr.: Straßentunnelrampe	3::igndisp 3764,10580 3744,10577 3777,10513
+Sybelstr. -> Waitzstr.: Straßentunnelrampe	3::igndisp 3712,10566 3744,10577 3764,10580
+Sybelstr. -> Lewishamstr.: Straßentunnelrampe	3::igndisp 3712,10566 3744,10577 3644,10759
+Lewishamstr. -> Sybelstr.: Straßentunnelrampe	3::igndisp 3777,10513 3744,10577 3712,10566
+Lewishamstr. -> Waitzstr.: Straßentunnelrampe	3::igndisp 3644,10759 3744,10577 3764,10580
+Waitzstr. -> Lewishamstr.: Straßentunnelrampe	3::igndisp 3739,10495 3777,10513 3744,10577
+Lewishamstr. -> Waitzstr.: Straßentunnelrampe	3::igndisp 3813,10435 3777,10513 3739,10495
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 6825,11486 6851,11346 6880,11110
 Klingelhöferstr. -> Rauchstr.: unbequem passierbarer Mittelstreifen	3::igndisp 6880,11110 6851,11346 6692,11365
 Rauchstr. -> Klingelhöferstr.: unbequem passierbarer Mittelstreifen	3::igndisp 6692,11365 6851,11346 6825,11486
@@ -2882,9 +2882,9 @@ Ahornstr. (Steglitz)	1 4926,6053 4903,6048 4872,6068 4863,6088
 tragen (3 x 10 Stufen)	0:40:-217 4127,5427
 tragen (5 Stufen)	0:10:26 4061,5418
 Iltisstr.	1 2797,5624 2858,5535
-Mittelstreifen unbequem zu überqueren	3nocross::ignrte 5493,9367 5495,9263 5503,8982
+Mittelstreifen unbequem zu überqueren	3nocross::ignrte 5493,9367 5495,9263 5503,8986
 Bundesallee -> Tharandter Str.: Mittelstreifen unbequem zu überqueren	3::igndisp 5493,9367 5495,9263 5527,9263
-Tharandter Str. -> Bundesallee: Mittelstreifen unbequem zu überqueren	3::igndisp 5527,9263 5495,9263 5503,8982
+Tharandter Str. -> Bundesallee: Mittelstreifen unbequem zu überqueren	3::igndisp 5527,9263 5495,9263 5503,8986
 Mittelstreifen schlecht zu überqueren	3nocross::ignrte 6494,10440 6403,10424 6276,10401
 Lietzenburger Str. -> Wormser Str.: Mittelstreifen schlecht zu überqueren	3::igndisp 6276,10401 6403,10424 6377,10434
 Wormser Str. -> Lietzenburger Str.: Mittelstreifen schlecht zu überqueren	3::igndisp 6377,10434 6403,10424 6494,10440
@@ -2894,7 +2894,7 @@ tragen (2 x 10 Stufen)	0:40:18 1666,4637
 tragen (2 x 10 Stufen)	0:40:21 1689,4630
 Sterzinger Str.	1 6096,8600 6123,8546
 Bozener Str.	1 5900,8930 5971,8926 6049,8916
-Bozener Str.	1 5971,8926 5975,9094
+Bozener Str.	1 5971,8926 5974,9100
 schwierig zu querender Mittelstreifen	3nocross::ignrte 6532,10529 6636,10492 6753,10446
 Kleiststr. -> Kalckreuthstr.: schwierig zu querender Mittelstreifen	3::igndisp 6753,10446 6636,10492 6628,10318
 Kalckreuthstr. -> Kleiststr.: schwierig zu querender Mittelstreifen	3::igndisp 6628,10318 6636,10492 6532,10529
@@ -2907,9 +2907,9 @@ Matthäikirchplatz	1 7897,11287 7931,11391 7954,11399
 Matthäikirchplatz	1 7954,11399 7965,11380 7934,11275
 Herkulesufer: wg. Stufen schieben, ggf. auf Wiesenstreifen ausweichen	0:30:69 6920,11064
 schwierig zu überqueren - besser Ampel benutzen	3nocross::ignrte 7912,10945 7968,11048 7980,11070
-queren schlecht möglich	3nocross::ignrte 6709,9234 6863,9254 6923,9266
-Grunewaldstr. -> Klixstr.: queren schlecht möglich	3::igndisp 6923,9266 6863,9254 6885,9132
-Klixstr. -> Grunewaldstr.: queren schlecht möglich	3::igndisp 6885,9132 6863,9254 6709,9234
+queren schlecht möglich	3nocross::ignrte 6709,9234 6861,9263 6917,9274
+Grunewaldstr. -> Klixstr.: queren schlecht möglich	3::igndisp 6917,9274 6861,9263 6885,9132
+Klixstr. -> Grunewaldstr.: queren schlecht möglich	3::igndisp 6885,9132 6861,9263 6709,9234
 Adolf-Scheidt-Platz	1 8731,8050 8765,8050 8783,8020 8769,7994 8731,7990
 Rumeyplan	1 8686,7726 8796,7751 8895,7797 8940,7835
 Rumeyplan	1 8959,7824 8907,7773 8812,7730 8690,7704
@@ -3104,7 +3104,7 @@ Gottfried-Keller-Str.	1 1697,11911 1792,11889
 tragen (5 Stufen)	0:20:-169 3829,13572
 Schranke	BNP:5:-180 3966,13333
 Tor (meist offen, sonst Fußgängerweg nehmen)	BNP:5:75 3822,14195
-Wiebestr.: (Privatweg)	2 4527,13232 4495,13107
+Wiebestr.: (Privatweg)	2 4527,13244 4495,13107
 queren nur mit tragen möglich	3nocross::ignrte 3034,12502 3189,12519 3280,12512
 Spandauer Damm -> Nithackstr.: queren nur mit tragen möglich	3::igndisp 3280,12512 3189,12519 3204,12416
 Nithackstr. -> Spandauer Damm: queren nur mit tragen möglich	3::igndisp 3204,12416 3189,12519 3034,12502

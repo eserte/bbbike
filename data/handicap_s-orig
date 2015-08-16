@@ -20,7 +20,7 @@ Dˆringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,112
 #: last_checked ^^^
 # 
 #: XXX laut Schild der Wasserbetriebe bis Oktober 2015, laut Fritz bis November 2015
-#: last_checked: 2015-08-14 vvv
+#: last_checked: 2015-08-16 vvv
 #: next_check: 2015-11-22 vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
@@ -99,7 +99,7 @@ Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und 
 # REMOVED (aufgehoben) --- #: next_check_id: UDLU5-2014 --- #: source_id: IM_020322 --- #: last_checked: 2015-02-17 --- #: next_check: 2015-02-18 --- Charlottenstr.: Einbahnstraﬂenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
 # REMOVED --- Charlottenstr.: Bauarbeiten, Radfahrer kˆnnen passieren	q2::inwork; 9475,12365 9489,12263
 # 
-#: last_checked: 2015-08-11
+#: last_checked: 2015-08-16
 Universit‰tsstr.: wegen Bauarbeiten Einbahnstraﬂe zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9580,12581
 # 
 #: next_check_id: STABIUDL-2014 vvv
@@ -161,11 +161,7 @@ Invalidenstr.: Fahrbahn zwischen Gartenstr. und Bergstr. teilweise gesperrt	q2::
 # REMOVED (-> temp_blockings) --- #: source_id: IM_021585 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5236.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1406/nachricht5293.html (planm‰ﬂige Fertigstellung) --- #: XXX nach den Bauarbeiten wird es hier einen Radfahrstreifen geben --- #: note: man kann auch auf den Tramgleisen fahren, deshalb nur noch q2 --- #: last_checked: 2015-03-27 --- #: next_check: 2015-04-01 --- #: priority: #A --- Invalidenstr. (Mitte) Richtung Alt-Moabit zwischen Chausseestr. und und Hessische Str.: teilweise noch Bauarbeiten auf der Fahrbahn, auf Gehweg umfahren	q2::inwork; 8935,13844 8842,13798
 # REMOVED --- #: valid: -20140428 --- #: next_check: 2014-04-28 (wird wieder befahrbar sein) --- #: priority: #A --- Schwarzer Weg: Sackgasse an der Invalidenstraﬂe, Zugang f¸r Fuﬂg‰nger und schiebende Radfahrer mˆglich	q3::inwork 8426,13909 8574,13666
 # REMOVED (bei vmz) --- #: XXX: wann ist die Kreuzung wieder befahrbar? --- #: last_checked: 2014-06-30 --- #: next_check: 2014-07-08 --- #: source_id: IM_021906 --- #: priority: #A --- Scharnhorststr.: Sackgasse an der Invalidenstraﬂe	q2::inwork 8450,13599 8313,13839
-# 
-#: last_checked: 2015-08-10 (Bauarbeiten wegen Neubau)
-#: check_frequency: 30d
-Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
-# 
+# REMOVED --- #: last_checked: 2015-08-10 (Bauarbeiten wegen Neubau) --- #: check_frequency: 30d --- Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 # REMOVED --- #: next_check_id: ERNASAMUEL-2014 --- #: last_checked: 2013-11-12 --- #: next_check: 2014-01-15 --- Siemensstr.: Bauarbeiten, Einbahnstraﬂe, Ausweichen auf den linken Gehweg	q4::inwork; 5299,14049 5220,14043
 # REMOVED --- #: last_checked: 2014-10-01 --- #: check_frequency: 60d vvv
 # REMOVED (fertig?) --- Ella-Trebe-Str./Bertha-Benz-Str./Ilse-Schaeffer-Str.: Einbahnstraﬂenregelung wegen Bauarbeiten	q3::inwork; 7937,13109 7939,13026
@@ -176,7 +172,7 @@ Heidestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 8048,13578 8092,13467
 # 
 #: by: http://www.bmbf.de/de/16888.php (Bezug im Herbst 2014)
 #: osm_watch: way id="4592727" version="12"
-#: last_checked: 2015-06-08
+#: last_checked: 2015-08-16
 #: check_frequency: 60d
 Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse!), Ausweichen auf Gehweg	q3::inwork 8315,13181 8406,13127
 # 
@@ -199,7 +195,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2015-07-26
+#: last_checked: 2015-08-16
 #: check_frequency: 30d
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -241,10 +237,7 @@ Alfred-Dˆblin-Platz: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 11162,10919 1
 # 
 ### Moabit ###
 #
-#: XXX was ‰ndert sich nach den Bauarbeiten? Radstreifen? -> zumindest gibt es einige Aufpflasterungen
-#: last_checked: 2015-06-08
-#: check_frequency: 30d
-Siemensstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Geh+Radweg	q2 5708,14077 5787,14102 5956,14168
+# REMOVED --- #: XXX was ‰ndert sich nach den Bauarbeiten? Radstreifen? -> zumindest gibt es einige Aufpflasterungen --- #: last_checked: 2015-06-08 --- #: check_frequency: 30d --- Siemensstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Geh+Radweg	q2 5708,14077 5746,14090 5786,14106 5808,14114 5956,14168
 # 
 ### Tiergarten ###
 # 
@@ -588,13 +581,13 @@ Virchowstr. (Volkspark Friedrichshain): Fuﬂg‰nger	q1 12876,13440 12826,13526 128
 (Buckower Ring - Cecilienstr.): Fuﬂg‰nger, eng, einige Regenablaufrinnen	q2 21879,13515 21894,13514 21920,13680
 (Hohenzollerndamm - Friedrichsruher Str.): enger Gehweg	q2 3379,8969 3333,9026
 Gillweg: enger Gehweg	q2 2585,9653 2484,9671 2394,9714
-Leon-Jessel-Platz: Fuﬂg‰nger	q1 4700,9179 4750,9143
+Leon-Jessel-Platz: Fuﬂg‰nger	q2 4700,9179 4735,9171 4755,9154
 #: XXX_prog BS
 Nikolsburger Platz: Fuﬂg‰nger, Bordsteine	q3 5374,9619 5307,9664
 #: XXX_prog BS (an der Lewishamstr., ansonsten unbekannter qX-Wert)
-zur Sybelstr.: Bordsteine	q4 3712,10566 3739,10576
+zur Sybelstr.: Bordsteine	q4 3712,10566 3744,10577
 #: XXX_prog BS (an der Lewishamstr., ansonsten unbekannter qX-Wert)
-(Waitzstr. - Lewishamstr.): Bordsteine	q4 3764,10580 3739,10576
+(Waitzstr. - Lewishamstr.): Bordsteine	q4 3764,10580 3744,10577
 #: XXX_prog BS
 Rosa-Luxemburg-Str.: Fuﬂg‰nger, Bordsteine	q3 10695,12933 10685,12966
 #: note: ... und Sa 09:00-15:00 Bauernmarkt, aber keine zus‰tzlichen Behinderungen
@@ -1030,7 +1023,7 @@ Uferweg: Fuﬂg‰nger, enge Kurven	q2 3510,12809 3547,12864 3572,12866 3559,12793
 Uferweg: Fuﬂg‰nger	q1 3559,12793 3641,12753 3747,12679
 Uferweg: Fuﬂg‰nger, Biergarten	q3 3747,12679 3862,12675
 Uferweg: Fuﬂg‰nger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
-(Neues Ufer - Kaiserin-Augusta-Allee): Fuﬂg‰nger	q1 4456,12918 4514,12936 4581,13066 4576,13115 4547,13139 4561,13233
+(Neues Ufer - Kaiserin-Augusta-Allee): Fuﬂg‰nger	q1 4456,12918 4514,12936 4581,13066 4576,13115 4547,13139 4561,13244
 # REMOVED (keine Fahrbahn mehr, nur der obere Uferweg) --- Bundesratufer: Fuﬂg‰nger	q4 5938,12848 5922,12765
 Sonntagstr.: Richtung S-Bahnhof viele Fuﬂg‰nger	q3 14845,10954 14798,10985 14752,11041
 #: XXX_prog: f¸r Anh‰nger relevant (q1 oder so)
@@ -2211,6 +2204,13 @@ Einbecker Str.: einige Fuﬂg‰nger	q1 17734,11408 17764,11371
 #: note: Gehweg f¸r Radfahrer frei
 Greifenhagener Str.: einige Fuﬂg‰nger	q1 11150,15908 11176,15958
 Am Landwehrkanal: einige Fuﬂg‰nger	q1 12897,9365 12889,9426 12905,9470 13109,9743 13225,9897 13271,9927 13333,9929
+#: note: sieben Moabiter Kissen
+#: XXX_prog: f¸r Anh‰nger grˆﬂere Behinderung (q1? q2?)
+Knobelsdorffstr.: einige Moabiter Kissen	q0- 3117,11852 2953,11830 2728,11805 2547,11788
+#: XXX_prog: f¸r Anh‰nger grˆﬂere Behinderung (q1?)
+Wegenerstr.: ein Moabiter Kissen	q0- 4477,9176 4619,9200
+#: XXX_prog: f¸r Anh‰nger grˆﬂere Behinderung (q1?)
+Sigmaringer Str.: ein Moabiter Kissen	q0- 4700,9179 4715,8977
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -2607,7 +2607,7 @@ Vereinsweg (Steglitz): Fuﬂg‰nger, Privatstraﬂe, Radfahren nicht erlaubt	q4 5334,
 (Zufahrt zur Kolonie Hohenzollerndamm): Fuﬂg‰nger, Poller	q2 3775,8771 3868,8759
 #: XXX_prog: Bordsteine an beiden Enden, ansonsten w‰re es q1
 Apeldorner Weg: Fuﬂg‰nger, Bordsteine	q2 3848,8689 3868,8759 3952,8980
-M¸nstersche Str.: Fuﬂg‰nger	q2 3856,9687 3698,9624
+M¸nstersche Str.: Fuﬂg‰nger	q2 3840,9683 3698,9624
 (Hoffmannstr. - Puschkinallee): Fuﬂg‰nger	q1 14077,10016 13995,9834
 (Hoffmannstr. - Uferweg an den Treptowers): Fuﬂg‰nger	q1 14077,10016 14116,10149 14126,10176
 August-Lindemann-Str.: Fuﬂg‰nger	q3 14355,12752 14360,12792
@@ -2669,7 +2669,7 @@ Rossitter Weg: Fuﬂg‰nger (nur bei Veranstaltungen ein Problem)	q0 -107,12220 -12
 (Goslarer Ufer - Am Bahnhof Jungfernheide): Fuﬂg‰nger	q1 4187,13704 4156,13914 4151,13961 4076,14203 4011,14245
 (Lise-Meitner-Str. - Goslarer Ufer): Fuﬂg‰nger	q1 4011,14245 3957,14229
 (Verl‰ngerung der Ilsenburger Str. (Charlottenburg)): Fuﬂg‰nger	q2 3966,13333 3969,13487
-(Schwarzer Weg): Fuﬂg‰nger	q2 4237,13224 4167,13375 4093,13429 3969,13487 3823,13540
+(Schwarzer Weg): Fuﬂg‰nger	q2 4237,13231 4167,13375 4093,13429 3969,13487 3823,13540
 (Dahlienweg): Fuﬂg‰nger	q2 3823,13540 3829,13572 3833,13590
 (Lambertstr. - Lise-Meitner-Str.): Fuﬂg‰nger, schmal	q3 3508,13727 3713,13787
 (Bonhoefferufer - Tegeler Weg): Fuﬂg‰nger	q2 3154,12936 3164,13067

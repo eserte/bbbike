@@ -176,7 +176,7 @@ Templiner Str.	1 10716,14195 10739,14228
 Heylstr.	1 6459,8281 6385,8274 6325,8259
 Fritz-Reuter-Str. (Schöneberg)	1 6621,8221 6779,8279
 Gutzkowstr.	1 6785,8194 6636,8157
-Gleditschstr.	1 7137,9216 7130,9305
+Gleditschstr.	1 7137,9216 7130,9316
 Hohenfriedbergstr.	3 7791,8882 7790,8913 7790,9126
 Hohenfriedbergstr.	3 7790,9126 7790,8913 7791,8882
 Hohenfriedbergstr. - Brunhildstr.	3 7790,9126 7790,8913 7707,8915
@@ -556,13 +556,13 @@ Edisonstr. -> Zeppelinstr.: Straßenbahntrasse	3::igndisp 17919,6978 17919,6968 1
 Edisonstr. -> Helmholtzstr.: Straßenbahntrasse	3::igndisp 17962,6674 17919,6968 17845,6986
 Zeppelinstr. -> Helmholtzstr.: Straßenbahntrasse	3::igndisp 18041,6924 17919,6968 17845,6986
 Zeppelinstr. -> Edisonstr.: Straßenbahntrasse	3::igndisp 18041,6924 17919,6968 17962,6674
-Mittelstreifen	3nocross::ignrte 4918,8872 5022,8879 5172,8880 5182,8880 5195,8880 5269,8897
+Mittelstreifen	3nocross::ignrte 4918,8872 5022,8879 5172,8880 5182,8880 5195,8880 5266,8903
 Fechnerstr. -> Berliner Str.: Mittelstreifen	3::igndisp 4958,8981 5022,8879 5172,8880
 Berliner Str. -> Fechnerstr.: Mittelstreifen	3::igndisp 4918,8872 5022,8879 4958,8981
 Mehlitzstr. -> Berliner Str.: Mittelstreifen	3::igndisp 5165,8784 5172,8880 5022,8879
 Berliner Str. -> Mehlitzstr.: Mittelstreifen	3::igndisp 5182,8880 5172,8880 5165,8784
 Berliner Str. -> Nassauische Str.: Mittelstreifen	3::igndisp 5182,8880 5195,8880 5189,8983
-Nassauische Str. -> Berliner Str.: Mittelstreifen	3::igndisp 5189,8983 5195,8880 5269,8897
+Nassauische Str. -> Berliner Str.: Mittelstreifen	3::igndisp 5189,8983 5195,8880 5266,8903
 Mittelstreifen	3nocross::ignrte 6181,8181 6246,8222 6325,8259
 Heylstr. -> Nymphenburger Str.: Mittelstreifen	3::igndisp 6181,8181 6246,8222 6163,8398
 Nymphenburger Str. -> Heylstr.: Mittelstreifen	3::igndisp 6163,8398 6246,8222 6325,8259
@@ -807,13 +807,13 @@ Weddingstr. -> Reinickendorfer Str.: Mittelstreifen	3::igndisp 8053,15598 7962,1
 Reinickendorfer Str. -> Weddingstr.: Mittelstreifen	3::igndisp 7948,15802 7962,15633 8053,15598
 Zeisigweg	1 5178,1499 5153,1534 5148,1559 5145,1611 5132,1672 5087,1807
 Nollendorfplatz	1 7033,10328 6971,10346
-Mittelstreifen	3nocross::ignrte 5895,9083 5975,9094 6063,9106
-Grunewaldstr. -> Bozener Str.: Mittelstreifen	3::igndisp 6063,9106 5975,9094 5971,8926
-Grunewaldstr. -> Stübbenstr.: Mittelstreifen	3::igndisp 5895,9083 5975,9094 5965,9131
-Bozener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 5971,8926 5975,9094 5895,9083
-Bozener Str. -> Stübbenstr.: Mittelstreifen	3::igndisp 5971,8926 5975,9094 5965,9131
-Stübbenstr. -> Grunewaldstr.: Mittelstreifen	3::igndisp 5965,9131 5975,9094 6063,9106
-Stübbenstr. -> Bozener Str.: Mittelstreifen	3::igndisp 5965,9131 5975,9094 5971,8926
+Mittelstreifen	3nocross::ignrte 5895,9083 5974,9100 6059,9118
+Grunewaldstr. -> Bozener Str.: Mittelstreifen	3::igndisp 6059,9118 5974,9100 5971,8926
+Grunewaldstr. -> Stübbenstr.: Mittelstreifen	3::igndisp 5895,9083 5974,9100 5965,9131
+Bozener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 5971,8926 5974,9100 5895,9083
+Bozener Str. -> Stübbenstr.: Mittelstreifen	3::igndisp 5971,8926 5974,9100 5965,9131
+Stübbenstr. -> Grunewaldstr.: Mittelstreifen	3::igndisp 5965,9131 5974,9100 6059,9118
+Stübbenstr. -> Bozener Str.: Mittelstreifen	3::igndisp 5965,9131 5974,9100 5971,8926
 Stavenhagener Str.	1 13534,5111 13632,5126
 Berliner Allee -> Rossinistr.	3 13432,15843 13401,15821 13456,15760
 Straßenbahntrasse	3nocross::ignrte 12010,16774 12017,16734 12045,16574
@@ -966,12 +966,12 @@ Neue Schönholzer Str.	1 10089,18180 10141,18030 10179,17772
 Kleine Kurstr.	1 10230,11839 10189,11773
 Schendelgasse	1 10653,13493 10703,13467 10767,13443
 Leipziger Str. (Potsdam)	1 -12431,-2096 -12534,-2125 -12620,-2174 -12697,-2235 -12708,-2257 -12743,-2387 -12756,-2437 -12779,-2467 -12796,-2488 -12879,-2573 -13003,-2754 -13022,-2776 -13062,-2901
-Mittelstreifen	3nocross::ignrte 6161,9128 6264,9156 6361,9175
+Mittelstreifen	3nocross::ignrte 6152,9136 6264,9156 6361,9175
 Grunewaldstr. -> Münchener Str.: Mittelstreifen	3::igndisp 6361,9175 6264,9156 6276,9042
-Grunewaldstr. -> Münchener Str.: Mittelstreifen	3::igndisp 6161,9128 6264,9156 6255,9194
+Grunewaldstr. -> Münchener Str.: Mittelstreifen	3::igndisp 6152,9136 6264,9156 6255,9194
 Münchener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6255,9194 6264,9156 6361,9175
 Münchener Str. -> Münchener Str.: Mittelstreifen	3::igndisp 6255,9194 6264,9156 6276,9042
-Münchener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6276,9042 6264,9156 6161,9128
+Münchener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6276,9042 6264,9156 6152,9136
 Münchener Str. -> Münchener Str.: Mittelstreifen	3::igndisp 6276,9042 6264,9156 6255,9194
 Viktoria-Luise-Platz: Poller	3 6272,9922 6275,9962 6224,9980
 Viktoria-Luise-Platz: Poller	3 6224,9980 6275,9962 6272,9922
@@ -1637,18 +1637,18 @@ Hasenheide -> Fichtestr.: Mittelstreifen	3::igndisp 10713,9260 11108,9187 11055,
 Fichtestr. -> Hasenheide: Mittelstreifen	3::igndisp 11055,9539 11108,9187 11136,9183
 Rüdesheimer Str.	1 4317,7069 4391,7258
 Deidesheimer Str.	1 4978,7530 4785,7518 4616,7563 4486,7597
-Mittelstreifen	3nocross::ignrte 4473,9154 4609,9027 4701,8941
+Mittelstreifen	3nocross::ignrte 4462,9166 4609,9027 4701,8941
 Gieselerstr. -> Brandenburgische Str.: Mittelstreifen	3::igndisp 4619,9200 4609,9027 4701,8941
 Mittelstreifen	3nocross::ignrte 4783,8557 4772,8599 4777,8731
 Blissestr. -> zur Mannheimer Str./Wilmersdorf: Mittelstreifen	3::igndisp 4783,8557 4772,8599 4456,8598
 zur Mannheimer Str./Wilmersdorf -> Blissestr.: Mittelstreifen	3::igndisp 4456,8598 4772,8599 4777,8731
-Landhausstr.	1 5343,8858 5341,8927
+Landhausstr.	1 5343,8858 5341,8931
 Mittelstreifen	3nocross::ignrte 5647,9022 5725,9041 5783,9060
 Berliner Str. -> Helmstedter Str.: Mittelstreifen	3::igndisp 5647,9022 5725,9041 5711,9357
 Helmstedter Str. -> Berliner Str.: Mittelstreifen	3::igndisp 5711,9357 5725,9041 5783,9060
-Mittelstreifen	3nocross::ignrte 6863,9254 6923,9266 7006,9282
-Grunewaldstr. -> Schwäbische Str.: Mittelstreifen	3::igndisp 6863,9254 6923,9266 6851,9365
-Schwäbische Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6851,9365 6923,9266 7006,9282
+Mittelstreifen	3nocross::ignrte 6861,9263 6917,9274 7006,9292
+Grunewaldstr. -> Schwäbische Str.: Mittelstreifen	3::igndisp 6861,9263 6917,9274 6851,9365
+Schwäbische Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6851,9365 6917,9274 7006,9292
 Herderstr. (Charlottenburg)	1 4452,11570 4434,11360
 Sperrfläche, Abbiegen nicht erlaubt	3nocross::ignrte 17492,6462 17530,6496 17614,6571
 Siemensstr. -> Tabbertstr.: Sperrfläche, Abbiegen nicht erlaubt	3::igndisp 17492,6462 17530,6496 17418,6702
@@ -1751,3 +1751,15 @@ Allee der Kosmonauten	1 20096,14127 20097,14039 20081,13993 20080,13941
 Murtzaner Ring	1 20040,14179 20051,14191 20061,14220 20056,14373
 Kyllburger Weg	1 16779,17521 16670,17454 16645,17449
 Gethsemanestr.	1 11086,15772 11123,15851 11191,15810 11158,15739
+Mittelstreifen	3nocross::ignrte 2609,11503 2764,11519 3069,11551
+Kaiserdamm -> Witzlebenpl.: Mittelstreifen	3::igndisp 3069,11551 2764,11519 2770,11484
+Kaiserdamm -> Wundtstr.: Mittelstreifen	3::igndisp 2609,11503 2764,11519 2905,11653
+Kaiserdamm -> Danckelmannstr.: Mittelstreifen	3::igndisp 2609,11503 2764,11519 2739,11730
+Wundtstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 2905,11653 2764,11519 3069,11551
+Wundtstr. -> Witzlebenpl.: Mittelstreifen	3::igndisp 2905,11653 2764,11519 2770,11484
+Danckelmannstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 2739,11730 2764,11519 3069,11551
+Danckelmannstr. -> Wundtstr.: Mittelstreifen	3::igndisp 2739,11730 2764,11519 2905,11653
+Danckelmannstr. -> Witzlebenpl.: Mittelstreifen	3::igndisp 2739,11730 2764,11519 2770,11484
+Witzlebenpl. -> Kaiserdamm: Mittelstreifen	3::igndisp 2770,11484 2764,11519 2609,11503
+Witzlebenpl. -> Wundtstr.: Mittelstreifen	3::igndisp 2770,11484 2764,11519 2905,11653
+Witzlebenpl. -> Danckelmannstr.: Mittelstreifen	3::igndisp 2770,11484 2764,11519 2739,11730
