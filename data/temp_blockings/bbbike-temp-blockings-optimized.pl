@@ -116,7 +116,32 @@ userdel	2::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 1117
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2 8055,12186 8089,12190 8214,12205
+userdel	2 8214,12205 8303,12216 8344,12221 8538,12245
+userdel	2 8546,12279 8538,12245
+userdel	2 8600,12165 8538,12245
+userdel	2 8538,12245 8610,12254
+userdel	2 8546,12279 8570,12302 8573,12325 8540,12420 
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+',
+         'from' => 1443585600,
+         'id' => 127,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              29,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straße vollständig gesperrt (01.10.2015 bis 06.10.2015)',
+         'type' => 'gesperrt',
+         'until' => 1444168799
+       },
        undef,
        undef,
        undef,
@@ -2811,6 +2836,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: note: geprüft am So, den 2015-06-21, vormittags: offen
 #: note: geprüft am So, den 2015-07-19, nachmittags: offen
 #: note: geprüft am So, den 2015-08-09, nachmittags: offen
+#: note: geprüft am So, den 2015-08-30, vormittags: offen
 userdel	2::night 14838,11410 14792,11391
 ',
          'from' => undef,
@@ -2834,8 +2860,64 @@ userdel	2::night 14838,11410 14792,11391
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+',
+         'from' => 1442894400,
+         'id' => 2387,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              21,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon gesperrt, ab 24.09.2015',
+         'type' => 'gesperrt',
+         'until' => 1443132000
+       },
+       {
+         'data' => 'userdel	2::temp 8573,12325 8540,12420
+userdel	2::temp 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+userdel	2::temp 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+userdel	2::temp 8119,12414 8055,12186
+userdel	2::temp 8538,12245 8522,12239 8466,12197
+userdel	2::temp 8538,12245 8522,12187
+userdel	2::temp 8546,12279 8391,12389 8354,12416
+userdel	2::temp 8119,12414 8354,12416 8400,12417 8540,12420
+userdel	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
+userdel	3 7429,12070 7383,12095 7039,12314
+userdel	3 7039,12314 7383,12095 7429,12070
+userdel	3 7823,12120 7816,12150 7875,12363
+userdel	3 7875,12363 7816,12150 7823,12120
+userdel	2::temp 8119,12414 8122,12603 8207,12606 8306,12609 8348,12609 8399,12610 8485,12612
+userdel	2::temp 8207,12606 8206,12757
+userdel	3 7945,12592 8122,12603 8120,12756
+userdel	3 8120,12756 8122,12603 7945,12592
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+',
+         'from' => 1443132000,
+         'id' => 2388,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              21,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Behrenstr. und Scheidemannstr., Yitzak-Rabin-Str., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, bis 28.09.2015',
+         'type' => 'gesperrt',
+         'until' => 1443456000
+       },
        undef,
        undef,
        undef,
@@ -3306,9 +3388,9 @@ userdel	q4::inwork; 16412,15559 16448,15593 16497,15636 16615,15737 16633,15753 
          'from' => 1436155200,
          'id' => 2596,
          'source_id' => 'IM_025547',
-         'text' => 'Konrad-Wolf-Str.: Bauarbeiten, zwischen Simon-Bolivar-Str. und Werneuchener Str. für Radfahrer komplett gesperrt (für Autofahrer in Richtung Südwesten aber nicht!), zwischen Gärtnerstr. und Schöneicher Str. Einbahnstraße, offen Richtung Südwesten, bis 30.08.2015',
+         'text' => 'Konrad-Wolf-Str.: Bauarbeiten, zwischen Simon-Bolivar-Str. und Werneuchener Str. für Radfahrer komplett gesperrt (für Autofahrer in Richtung Südwesten aber nicht!), zwischen Gärtnerstr. und Schöneicher Str. Einbahnstraße, offen Richtung Südwesten, bis 18.10.2015',
          'type' => 'handicap',
-         'until' => 1440954000
+         'until' => 1445187600
        },
        undef,
        undef,
@@ -3323,26 +3405,7 @@ userdel	q4::inwork; 16412,15559 16448,15593 16497,15636 16615,15737 16633,15753 
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 22133,4644 22111,4562 22093,4499
-userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
-',
-         'from' => 1440072000,
-         'id' => 2610,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              8
-                            ]
-                          ],
-         'text' => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 21.8.2015 bis 23.8.2015',
-         'type' => 'gesperrt',
-         'until' => 1440367199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3518,9 +3581,10 @@ userdel	q3::inwork 5780,10542 5627,10637
 ',
          'from' => 1427752800,
          'id' => 2694,
-         'text' => 'Zinnowitzer Str.: Baustelle an der Chausseestr., Fahrbahn gesperrt, bis 31.08.2015',
+         'source_id' => 'IM_024549',
+         'text' => 'Zinnowitzer Str.: Baustelle an der Chausseestr., Fahrbahn gesperrt, bis 04.09.2015',
          'type' => 'handicap',
-         'until' => 1441033200
+         'until' => 1441378800
        },
        {
          'data' => '#: last_checked: 2015-07-03
@@ -3699,9 +3763,9 @@ userdel	2::inwork 14910,9643 14844,9513
          'from' => 1438198655,
          'id' => 2725,
          'source_id' => 'IM_025719',
-         'text' => 'Mehringbrücke: Fahrbahn Richtung Wilhelmstr. gesperrt, für Radfahrer umständliche Wegführung über linken Gehweg, bis 28.08.2015',
+         'text' => 'Mehringbrücke: Fahrbahn Richtung Wilhelmstr. gesperrt, für Radfahrer umständliche Wegführung über linken Gehweg, bis 18.09.2015',
          'type' => 'handicap',
-         'until' => 1440774000
+         'until' => 1442613599
        },
        undef,
        undef,
@@ -3721,7 +3785,7 @@ userdel	q4::inwork 7799,13019 7813,12961
          'data' => '#: by: wosch vvv
 #: confirmed_by: srt vvv
 #: XXX 30m zu jeder Seite der Kreuzung sind gesperrt; wann sind die Bauarbeiten fertig? vvv
-#: last_checked: 2015-08-14 vvv
+#: last_checked: 2015-08-30 vvv
 userdel	q3::inwork 12761,9190 12907,9073 13048,8956
 userdel	q3::inwork 12907,9073 12836,8980
 #: last_checked ^^^
@@ -3734,6 +3798,37 @@ userdel	q3::inwork 12907,9073 12836,8980
          'text' => 'Weichselplatz/Fuldastr./Weigandufer: Bauarbeiten, Ausweichen auf Gehweg',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: XXX wird der Asphalt nach den Bauarbeiten besser sein? (zurzeit Q1)
+#: next_check: 2015-12-01
+userdel	2::inwork 6851,9365 6771,9458 6727,9497
+',
+         'from' => undef,
+         'id' => 2730,
+         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150820.1015.402368.html',
+         'text' => 'Alice-Salomon-Park (Barbarossaplatz - Schwäbische Str.): Bauarbeiten bis Anfang Dezember 2015, keine Durchfahrt möglich',
+         'type' => 'gesperrt',
+         'until' => 1448924400
+       },
+       {
+         'data' => '#: XXX prüfen!
+userdel	q4::inwork 10530,14452 10511,14418 10426,14262
+',
+         'from' => 1440971943,
+         'id' => 2731,
+         'text' => 'Kastanienallee: zwischen Schwedter Str. und Zionskirchplatz Sperrung der Fahrbahn, Gleisbauarbeiten, bis 04.09.2015',
+         'type' => 'handicap',
+         'until' => 1441396800
+       },
+       {
+         'data' => 'userdel	q4::inwork 7081,1346 6984,1540 6881,1743
+',
+         'from' => 1440972146,
+         'id' => 2732,
+         'text' => 'Tautenburger Str.: zwischen Blankenhainer und Frankenhauser Str. Sperrung der Fahrbahn, bis 04.09.2015 ',
+         'type' => 'handicap',
+         'until' => 1441378800
        }
      
 );

@@ -857,7 +857,7 @@ Pitschener Str.	1s:q3 21769,-432 21719,-397 21637,-381
 #: XXX wird die Einbahnstraßenregelung für Radfahrer aufgehoben?
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4783
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to010.asp?SILFDNR=2578
-#: last_checked: 2015-08-10
+#: last_checked: 2015-08-30
 Herrfurthstr.	1s:q3 11979,8014 11833,7980
 Dankratstr.	1s:q3 21105,9538 20943,9543
 #: note: ansonsten Durchfahrt verboten
@@ -1110,9 +1110,9 @@ Sportfliegerstr.: Betriebsgelände	2 18370,4511 18423,4459
 #: by: olaf skeries
 Schillerhof	1 7069,17204 6928,17154
 #: XXX wird aufgehoben, sobald das einsturzgefährdete Haus abgerissen wird vvv
-#: last_checked: 2015-08-09 vvv
+#: last_checked: 2015-08-30 vvv
 #: check_frequency: 60d vvv
-Wartenbergstr.	1s:q1 15423,11667 15337,11639 15328,11636
+# REMOVED (dieser Abschnitt doch keine Einbahnstraße?) --- Wartenbergstr.	1s:q1 15423,11667 15337,11639 15328,11636
 Wartenbergstr.	1s:q2 15328,11636 15300,11584
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -2730,7 +2730,7 @@ Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr
 Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17610,-330 17651,-393
 # 
 #: XXX kein Endedatum
-#: osm_watch: way id="150301191" version="11"
+#: osm_watch: way id="150301191" version="12"
 #: last_checked: 2015-07-23
 #: check_frequency: 120d
 Teltowkanalbrücke: bis auf Weiteres gesperrt	2::inwork  7769,4315 7795,4242

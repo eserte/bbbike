@@ -422,20 +422,7 @@ Rathaus Wedding: ändert sich was während/nach der Bauarbeiten am Rathausplatz?	?
 # 
 # REMOVED (-> radwege-orig) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150511.1105.401906.html --- #: XXX teilweise schon zurückgebaut, Ende der Bauarbeiten im Herbst 2015 --- Rixdorfer Str.: Umbau der Radwege zu Radstreifen	?::inwork 9953,3806 10181,4181 10185,4187 10221,4245 10288,4354 10412,4552
 # REMOVED (nichts zu sehen) --- #: XXX Hessische Str. (Mitte): Baustelle, Baustellenampel, Zufahrt Hannoversche Str. gesperrt (bis Ende 05/15) in beiden Richtungen in Höhe Hannoversche Str., 11.05.2015 08:00 Uhr bis 29.05.2015 18:00 Uhr	IM_024927 --- #: priority: #A --- Hannoversche Str.: Sperrung relevant für Radfahrer?	? 8674,13593 8775,13606
-# 
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5540.html vvv
-#: source_id: IM_024548 vvv
-#: note: Dauer etwa vier Monate, also bis August 2015? vvv
-#: XXX laut rbbtext bis 15.8.2015
-#: XXX_prog größere Behinderungen eigentlich nur, wenn die Kreuzung in voller Länge befahren wird, aber nicht so sehr beim Rechtsabbiegen vvv
-#: last_checked: 2015-07-20 vvv
-Kreuzung Invalidenstr./Gartenstr.: Auswirkungen der Vollsperrung hier?	? 9224,14169 9383,13986 9514,13826
-Kreuzung Invalidenstr./Gartenstr.: Auswirkungen der Vollsperrung hier?	? 9383,13986 9676,14046
-#: last_checked ^^^
-#: XXX_prog ^^^
-#: note ^^^
-#: source_id ^^^
-#: by ^^^
+# REMOVED (vermutlich, check!) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5540.html vvv --- #: source_id: IM_024548 vvv --- #: note: Dauer etwa vier Monate, also bis August 2015? vvv --- #: XXX laut rbbtext bis 15.8.2015 --- #: XXX_prog größere Behinderungen eigentlich nur, wenn die Kreuzung in voller Länge befahren wird, aber nicht so sehr beim Rechtsabbiegen vvv --- #: last_checked: 2015-07-20 vvv --- Kreuzung Invalidenstr./Gartenstr.: Auswirkungen der Vollsperrung hier?	? 9224,14169 9383,13986 9514,13826 --- Kreuzung Invalidenstr./Gartenstr.: Auswirkungen der Vollsperrung hier?	? 9383,13986 9676,14046
 # 
 #: XXX_prog: fehlende Möglichkeit, das Handicap hier auszudrücken!
 #: source_id: IM_025755
@@ -799,7 +786,7 @@ Reginhardstr.: wird hier ein Zebrastreifen angelegt?	?::projected 8056,17208 805
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130604.1220.385643.html (Vorstellung der Pläne) vvv --- #: by: http://www.berlin.de/imperia/md/content/bareinickendorf/abteilungen/bausport/bauwesen/strassenbau/07_lp_zeltinger_platz_130424.pdf?start&ts=1372161246&file=07_lp_zeltinger_platz_130424.pdf vvv --- #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3533 (Beginn der Baumaßnahmen November 2013) --- #: next_check: 2014-01-01 vvv --- #: priority: #C vvv --- Zeltinger Str. Höhe Einmündung in den Zeltinger Platz: Zebrastreifen ist geplant	?::projected 2441,25278 2464,25267 --- Zeltinger Platz Höhe Reichelt/Post: Zebrastreifen ist geplant	?::projected 2461,25148 2480,25129 --- #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3317 --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130604.1220.385643.html (Vorstellung der Pläne) --- Einmündung der Burgfrauenstraße in den Zeltinger Platz: Zebrastreifen ist geplant	?::projected 2427,25126 2448,25146
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3039&date=20130906 (Ampel ist angeordnet (2012-09), wird aber "nicht zeitnah" umgesetzt werden)
-#: osm_watch: node id="29778885" version="5"
+#: osm_watch: node id="29778885" version="6"
 #: last_checked: 2015-07-19
 #: check_frequency: 150d
 Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgänger-?) entstehen?	?::projected 13708,17453
@@ -958,7 +945,7 @@ Flughafen Berlin-Brandenburg - Business Park Berlin: Schotterweg, bleibt das so?
 #: XXX Radwegesanierung in Neukölln, geplant für 2013 und später vvv
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Asphalt-Radstreifen, Realisierung ab 2013)
 #: osm_watch: way id="155605301" version="5"
-#: last_checked: 2015-07-17
+#: last_checked: 2015-08-30
 #: check_frequency: 90d
 Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Realisierung ab 2014)
@@ -1119,6 +1106,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036475274775/475274775/00091437/37-Anlagen/01/DRS0321VK.pdf
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5134.html (Freigabe voraussichtlich Ende 2016)
 #: by; http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=2965 (Straßenbenennung, Vorschlag)
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1508/nachricht5720.html
 #: last_checked: 2015-08-15
 #: next_check: 2016-12-01
 Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rummelsburger Landstraße und Köpenicker Landstraße	?::inwork 17681,7589 17082,7189 16954,7096 16720,6845
@@ -1226,6 +1214,21 @@ Am Kirchendreieck: Lage der Straße? Qualität?	? 23922,13085 23960,13325
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: fritz
+Voigtstr./Schreinerstr.: Auswirkungen der Sperrungen für Radfahrer?	? 14570,12478 14776,12418 14798,12502
+# 
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1508/nachricht5714.html
+Moritzplatz: anschauen, gibt es relevante Veränderungen?	? 10832,10910 10854,10854 10906,10874 10885,10928 10832,10910
+# 
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.354922.php
+#: XXX Bauarbeiten bis Dezember 2016, zwei Bauabschnitte, durch die Düsseldorfer Str. geteilt
+#: next_check: 2015-08-31
+Konstanzer Str.: geplante Bauarbeiten; Einbahnstraßenregelung offen Richtung Norden, auch für Radfahrer relevant?	? 4057,9648 4067,9686 4099,9820 4126,9932 4152,10033 4183,10144 4219,10279 4239,10358
+# 
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.356806.php
+#: XXX ggfs. in Berlin.coords.data eintragen; osm-Notiz erstellen
+Waltraud-Krause-Weg: wird es hier Straßenschilder geben?	? 17826,6495 17852,6589
+# 
 #: last_checked: 2015-08-16
 #: check_frequency: 60d
 Siemensstr.: werden hier vielleicht auch Radspuren markiert?	? 5746,14090 5708,14077 5647,14067 5628,14063 5443,14028 5322,14044
@@ -1311,7 +1314,9 @@ Paster-Behrens-Str. - Britzer Park: wegen Bordstein muss man zur östlichen Seite
 # REMOVED (keine Bauarbeiten!) --- #: XXX Schiffbauerdamm (Mitte): Bauarbeiten, Vollsperrung (bis auf weiteres) in beiden Richtungen zwischen Luisenstr. und Albrechtstr., 03.11.2014 17:12 Uhr bis 30.04.2015 18:00 Uhr	IM_023614 --- #: XXX laut rbbtext ebenso --- Schiffbauerdamm: ist hier wieder gesperrt?	? 8870,12647 9056,12743
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20150330
-#: next_check: 2015-09-01
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.356730.php
+#: XXX Ende der Bauarbeiten: 16. Oktober 2015
+#: next_check: 2015-09-16
 Miraustr.: Fahrbahninstandsetzung, danach Q0 statt Q0-?	? 3632,19934 3820,19688
 # 
 # REMOVED (osm ist falsch -> Notiz erstellt) --- #: XXX bei osm ist der Übergang etwas weiter nördlich, am Kokosfinkweg, und nicht an der Fafnerstr. --- Heinersdorfer Str./Blankenburger Str.: wo genau hören/fangen die Straßen auf/an?	? 13031,19576 13040,19596 13066,19650

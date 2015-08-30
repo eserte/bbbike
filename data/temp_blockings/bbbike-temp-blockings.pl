@@ -1020,11 +1020,11 @@ userdel	q4 49039,44131 48924,44216 48724,44248 48523,44467
 userdel	q4 49039,44131 49691,43812
 EOF
      },
-     { from  => $isodate2epoch->("2014-09-30 06:00:00"), # 1 Tag Vorlauf # 1096578452, # 2004-09-30 23:07
-       until => $isodate2epoch->("2014-10-06 23:59:59"), # 1096862400, # 2004-10-04 06:00
+     { from  => $isodate2epoch->("2015-09-30 06:00:00"), # 1 Tag Vorlauf # 1096578452, # 2004-09-30 23:07
+       until => $isodate2epoch->("2015-10-06 23:59:59"), # 1096862400, # 2004-10-04 06:00
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 9]],
-       text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straße vollständig gesperrt (01.10.2014 bis 06.10.2014)',
+       text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straße vollständig gesperrt (01.10.2015 bis 06.10.2015)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 8055,12186 8089,12190 8214,12205
@@ -20799,6 +20799,7 @@ EOF
 #: note: geprüft am So, den 2015-06-21, vormittags: offen
 #: note: geprüft am So, den 2015-07-19, nachmittags: offen
 #: note: geprüft am So, den 2015-08-09, nachmittags: offen
+#: note: geprüft am So, den 2015-08-30, vormittags: offen
 userdel	2::night 14838,11410 14792,11391
 EOF
      },
@@ -20930,11 +20931,11 @@ EOF
 userdel	q4::inwork; 9275,4672 9405,4667 9494,4658 9695,4638 10010,4606
 EOF
      },
-     { from  => $isodate2epoch->("2014-09-23 06:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-09-26 00:00:00"), #
+     { from  => $isodate2epoch->("2015-09-22 06:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-09-25 00:00:00"), #
        periodic => 1,
        recurrences => [['yearly', days => 21, months => 9]],
-       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon gesperrt, ab 24.09.2014',
+       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon gesperrt, ab 24.09.2015',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
@@ -20942,11 +20943,11 @@ userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,1224
 	3::temp 8327,12174 8344,12221 8391,12389
 EOF
      },
-     { from  => $isodate2epoch->("2014-09-26 00:00:00"),
-       until => $isodate2epoch->("2014-09-29 18:00:00"),
+     { from  => $isodate2epoch->("2015-09-25 00:00:00"),
+       until => $isodate2epoch->("2015-09-28 18:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 21, months => 9]],
-       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Behrenstr. und Scheidemannstr., Yitzak-Rabin-Str., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, bis 29.09.2014',
+       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Behrenstr. und Scheidemannstr., Yitzak-Rabin-Str., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, bis 28.09.2015',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 8573,12325 8540,12420
@@ -23106,8 +23107,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 EOF
      },
      { from  => $isodate2epoch->("2015-07-06 06:00:00"), # 1405025033, # 2014-07-10 22:43
-       until => $isodate2epoch->("2015-08-30 19:00:00"), # 1408139790, # 1408312800, # 2014-08-18 00:00
-       text  => 'Konrad-Wolf-Str.: Bauarbeiten, zwischen Simon-Bolivar-Str. und Werneuchener Str. für Radfahrer komplett gesperrt (für Autofahrer in Richtung Südwesten aber nicht!), zwischen Gärtnerstr. und Schöneicher Str. Einbahnstraße, offen Richtung Südwesten, bis 30.08.2015',
+       until => $isodate2epoch->("2015-10-18 19:00:00"), # 1408139790, # 1408312800, # 2014-08-18 00:00
+       text  => 'Konrad-Wolf-Str.: Bauarbeiten, zwischen Simon-Bolivar-Str. und Werneuchener Str. für Radfahrer komplett gesperrt (für Autofahrer in Richtung Südwesten aber nicht!), zwischen Gärtnerstr. und Schöneicher Str. Einbahnstraße, offen Richtung Südwesten, bis 18.10.2015',
        type  => 'handicap',
        source_id => 'IM_025547',
        data  => <<EOF,
@@ -24042,9 +24043,10 @@ userdel	q2::inwork; 8935,13844 8842,13798
 EOF
      },
      { from  => 1427752800, # 2015-03-31 00:00
-       until => $isodate2epoch->("2015-08-31 17:00:00"), # 1427911510, # -> handicap_s-orig # 1438380000, # 2015-08-01 00:00
-       text  => 'Zinnowitzer Str.: Baustelle an der Chausseestr., Fahrbahn gesperrt, bis 31.08.2015',
+       until => $isodate2epoch->("2015-09-04 17:00:00"), # 1427911510, # -> handicap_s-orig # 1438380000, # 2015-08-01 00:00
+       text  => 'Zinnowitzer Str.: Baustelle an der Chausseestr., Fahrbahn gesperrt, bis 04.09.2015',
        type  => 'handicap',
+       source_id => 'IM_024549',
        data  => <<EOF,
 userdel	q4::inwork 8870,13926 9011,14019
 EOF
@@ -24368,8 +24370,8 @@ userdel	q4::inwork 9695,1563 9626,1604 9519,1650 9493,1661 9420,1700
 EOF
      },
      { from  => 1438198655, # 2015-07-29 21:37
-       until => 1440774000, # 2015-08-28 17:00
-       text  => 'Mehringbrücke: Fahrbahn Richtung Wilhelmstr. gesperrt, für Radfahrer umständliche Wegführung über linken Gehweg, bis 28.08.2015',
+       until => $isodate2epoch->("2015-09-18 23:59:59"), # 1440774000, # 2015-08-28 17:00
+       text  => 'Mehringbrücke: Fahrbahn Richtung Wilhelmstr. gesperrt, für Radfahrer umständliche Wegführung über linken Gehweg, bis 18.09.2015',
        type  => 'handicap',
        source_id => 'IM_025719',
        data  => <<EOF,
@@ -24412,13 +24414,41 @@ EOF
 #: by: wosch vvv
 #: confirmed_by: srt vvv
 #: XXX 30m zu jeder Seite der Kreuzung sind gesperrt; wann sind die Bauarbeiten fertig? vvv
-#: last_checked: 2015-08-14 vvv
+#: last_checked: 2015-08-30 vvv
 userdel	q3::inwork 12761,9190 12907,9073 13048,8956
 userdel	q3::inwork 12907,9073 12836,8980
 #: last_checked ^^^
 #: XXX ^^^
 #: confirmed_by ^^^
 #: by ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => 1448924400, # 2015-12-01 00:00
+       text  => 'Alice-Salomon-Park (Barbarossaplatz - Schwäbische Str.): Bauarbeiten bis Anfang Dezember 2015, keine Durchfahrt möglich',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150820.1015.402368.html',
+       data  => <<EOF,
+#: XXX wird der Asphalt nach den Bauarbeiten besser sein? (zurzeit Q1)
+#: next_check: 2015-12-01
+userdel	2::inwork 6851,9365 6771,9458 6727,9497
+EOF
+     },
+     { from  => 1440971943, # 2015-08-30 23:59
+       until => $isodate2epoch->("2015-09-04 22:00:00"),
+       text  => 'Kastanienallee: zwischen Schwedter Str. und Zionskirchplatz Sperrung der Fahrbahn, Gleisbauarbeiten, bis 04.09.2015',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX prüfen!
+userdel	q4::inwork 10530,14452 10511,14418 10426,14262
+EOF
+     },
+     { from  => 1440972146, # 2015-08-31 00:02
+       until => $isodate2epoch->("2015-09-04 17:00:00"),
+       text  => 'Tautenburger Str.: zwischen Blankenhainer und Frankenhauser Str. Sperrung der Fahrbahn, bis 04.09.2015 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 7081,1346 6984,1540 6881,1743
 EOF
      },
     );
