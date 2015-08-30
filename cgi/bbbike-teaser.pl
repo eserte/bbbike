@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2005,2006,2008,2009,2010,2011,2012,2013,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2005,2006,2008,2009,2010,2011,2012,2013,2014,2015 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -116,12 +116,12 @@ EOF
 sub teaser_marathon {
     my @l = localtime; $l[4]++;$l[5]+=1900;
     my $today = sprintf "%04d%02d%02d", $l[5], $l[4], $l[3];
-    my $out_of_date = $today lt "20140925" || $today gt "20140928";
+    my $out_of_date = $today lt "20150924" || $today gt "20150927";
     if (!$out_of_date) {
 	my $marathon_map_url = 'http://www.bmw-berlin-marathon.com/veranstaltungswoche/interaktive-karte.html';
 	<<EOF
-<div class="teaser" style="font-weight:bold">Am 27. und 28. September 2014 findet der Marathon statt.<br/>
-<a href="$marathon_map_url">Karte mit den Sperrungen</a></div>
+<div class="teaser" style="font-weight:bold">Am 26. und 27. September 2015 findet der Marathon statt.<br/>
+<a href="$marathon_map_url">Karte mit den Sperrungen</a> (Tab "Berliner")</div>
 EOF
     } else {
 	();
