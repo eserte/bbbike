@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2015-08-04
+#: last_checked: 2015-08-31
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -213,7 +213,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2015-08-11
+#: last_checked: 2015-08-31
 #: next_check: 2015-09-30
 Warschauer Str: Radspuren in Bau	?::inwork 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 # 
@@ -401,15 +401,7 @@ Gaußstr.: Radspuren werden errichtet	?::projected 3739,13563 3833,13590 4098,136
 #: check_frequency: 180d
 Wasserweg: wird hier asphaltiert werden? Was ist mit dem "Schlenker" am Spreepark-Eingang?	?::projected 15680,8914 15873,8884 16023,8860 16161,8852 16201,8860
 # 
-#: next_check_id: INVALIDEN-2014 vvv
-#: last_checked: 2015-08-05 vvv
-#: next_check: 2015-08-15 vvv
-Invalidenstr./Caroline-Michaelis-Str.: wann wird die Ampel eingeschaltet?	?::inwork 9151,13941
-Invalidenstr./Straßenbahnhaltestelle: wann wird die Fußgängerampel eingeschaltet?	?::inwork 9274,13963
-#: next_check ^^^
-#: last_checked ^^^
-#: next_check_id ^^^
-# 
+# REMOVED (done) --- #: next_check_id: INVALIDEN-2014 vvv --- #: last_checked: 2015-08-05 vvv --- #: next_check: 2015-08-15 vvv --- Invalidenstr./Caroline-Michaelis-Str.: wann wird die Ampel eingeschaltet?	?::inwork 9151,13941 --- Invalidenstr./Straßenbahnhaltestelle: wann wird die Fußgängerampel eingeschaltet?	?::inwork 9274,13963
 # REMOVED --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.345241.php vvv --- #: next_check: 2015-08-04 --- Sigmaringer Str.: Moabiter Kissen wird eingebaut; gibt es für Radfahrer danach Beeinträchtigungen?	? 4715,8977 4700,9179 4699,9202
 # REMOVED --- #: next_check: 2015-08-12 --- Wegenerstr.: Moabiter Kissen wird eingebaut; gibt es für Radfahrer danach Beeinträchtigungen?	? 4477,9176 4619,9200
 # REMOVED --- #: next_check: 2015-08-15 --- Knobelsdorffstr.: Einbau von drei Moabiter Kissen; gibt es für Radfahrer danach Beeinträchtigungen?	? 2547,11788 2728,11805 2953,11830
@@ -540,13 +532,7 @@ Am Weingarten: die Fortsetzung des Syringenplatz soll hier benannt werden	? 1376
 Sternbergpromenade: Umgestaltung, Havel-Radweg wird hier offiziell entlanggeführt	?::inwork -2926,14496 -2931,14455 -3059,14230 -3146,14145
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-spandau/presse/archiv/20141105.1045.399992.html --- #: next_check: 2014-11-10 --- Sternbergpromenade: Ist die Sternbergpromenade ausgeschildert?	? -3503,13773 -3385,13937 -3345,13994 -3306,14035 -3300,14039 -3146,14145
-# 
-#: next_check_id: WARSCHAUER-2014
-#: XXX falls realisiert -> gesperrt_s-orig-Eintrag bewegen
-#: last_checked: 2015-08-05
-#: next_check: 2015-09-30
-Revaler Str.: asphaltierter Radweg entgegen der Einbahnstraßenrichtung existiert teilweise, teilweise muss noch gebaut werden	?; 13588,11490 13565,11492 13473,11456
-# 
+# REMOVED (weitgehend realisiert, Radweg kann schon benutzt werden) --- #: next_check_id: WARSCHAUER-2014 --- #: XXX falls realisiert -> gesperrt_s-orig-Eintrag bewegen --- #: last_checked: 2015-08-05 --- #: next_check: 2015-09-30 --- Revaler Str.: asphaltierter Radweg entgegen der Einbahnstraßenrichtung existiert teilweise, teilweise muss noch gebaut werden	?; 13588,11490 13565,11492 13473,11456
 # REMOVED (neu asphaltiert) --- #: last_checked: 2013-11-11 --- Matkowskystr.: Bauarbeiten, danach vielleicht komplett asphaltiert?	? 14530,11137 14513,11075
 # REMOVED (weitgehend realisiert) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20131108.1050.391371.html (bis September 2014) --- #: source_id: IM_020636 --- #: source_id: IM_023589 --- #: last_checked: 2014-09-27 --- #: next_check: 2015-06-30 --- Landsberger Chaussee: Neubau/Sanierung des Radwegs	?::inwork; 22771,16194 22739,16203 22696,16208 22631,16215 22495,16165 22131,16000 21951,15918 21709,15808
 # 
@@ -1217,13 +1203,8 @@ Am Kirchendreieck: Lage der Straße? Qualität?	? 23922,13085 23960,13325
 #: by: fritz
 Voigtstr./Schreinerstr.: Auswirkungen der Sperrungen für Radfahrer?	? 14570,12478 14776,12418 14798,12502
 # 
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1508/nachricht5714.html
-Moritzplatz: anschauen, gibt es relevante Veränderungen?	? 10832,10910 10854,10854 10906,10874 10885,10928 10832,10910
-# 
-#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.354922.php
-#: XXX Bauarbeiten bis Dezember 2016, zwei Bauabschnitte, durch die Düsseldorfer Str. geteilt
-#: next_check: 2015-08-31
-Konstanzer Str.: geplante Bauarbeiten; Einbahnstraßenregelung offen Richtung Norden, auch für Radfahrer relevant?	? 4057,9648 4067,9686 4099,9820 4126,9932 4152,10033 4183,10144 4219,10279 4239,10358
+# REMOVED (keine Verschlechterung) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1508/nachricht5714.html --- Moritzplatz: anschauen, gibt es relevante Veränderungen?	? 10832,10910 10854,10854 10906,10874 10885,10928 10832,10910
+# REMOVED (-> temp blockings) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.354922.php --- #: XXX Bauarbeiten bis Dezember 2016, zwei Bauabschnitte, durch die Düsseldorfer Str. geteilt --- #: next_check: 2015-08-31 --- Konstanzer Str.: geplante Bauarbeiten; Einbahnstraßenregelung offen Richtung Norden, auch für Radfahrer relevant?	? 4057,9648 4067,9686 4099,9820 4126,9932 4152,10033 4183,10144 4219,10279 4239,10358
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.356806.php
 #: XXX ggfs. in Berlin.coords.data eintragen; osm-Notiz erstellen
@@ -1861,7 +1842,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.334355.php
-#: last_checked: 2015-08-11
+#: last_checked: 2015-08-31
 #: check_frequency: 120d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172 10818,11269
 # 

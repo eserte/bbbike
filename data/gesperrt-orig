@@ -151,7 +151,7 @@ Schulze-Delitzsch-Platz	1 11155,11750 11060,11753 11024,11789
 Schulze-Delitzsch-Platz	1 11024,11789 11073,11774 11155,11750
 #: XXX Öffnung der Einbahnstraße für Radfahrer?
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6514
-#: last_checked: 2015-08-05
+#: last_checked: 2015-08-31
 Weydemeyerstr.	1s:q4 11896,13075 11904,13052 12053,12984 12054,12903
 Dorotheenstr.	1 9870,12657 9744,12601 9682,12593 9580,12581 9454,12558
 Dorotheenstr. (Straßenbahn)	1s:q2 9454,12558 9330,12529
@@ -170,7 +170,6 @@ Quickborner Str.	1 8016,21499 8162,21302
 #: by: Jessaï Arakelian
 #: confirmed_by: srt
 Berliner Str. (Blankenfelde)	1 9490,23531 9437,23680 9415,23699
-Revaler Str. (Straßenbahn)	1s:q3 13588,11490 13565,11492 13473,11456
 Molkenmarkt - zur Stralauer Str.	1 10804,12291 10772,12288 10736,12285 10675,12280
 Herrfurthplatz	1 11647,7940 11653,7982 11689,8006 11731,7998 11754,7964 11748,7922 11713,7899 11671,7904 11647,7940
 Grimmstr.	1 11023,9597 11042,9642 11072,9711 11089,9751
@@ -2654,7 +2653,7 @@ Am Gutspark: Bauarbeiten	2::inwork 15747,12880 15746,12967 15826,12971
 # 
 #: XXX Ende der Bauarbeiten?
 # REMOVED (als es noch in handicap_s-orig war) --- : XXX_prog: zu eng für Anhänger
-#: last_checked: 2015-08-11
+#: last_checked: 2015-08-31
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9559,13087
 # 
 #: last_checked: 2015-08-02 vvv
@@ -2810,8 +2809,8 @@ Lyonstr.: noch nicht fertiggestellt, zurzeit nur Baustraße	2::inwork 12188,21330
 #: XXX vmz-Eintrag: Luisenstr. (Mitte) in beiden Richtungen Höhe Charite (Berlin)  Gültig ab: 30.11.2014 12:00  Geplant ab: 01.12.2014 07 Uhr, Baustelle, Straße vollständig gesperrt (bis Ende 09/15)
 #: source_id: IM_023570
 #: source_id: IM_023615
-#: last_checked: 2014-12-01
-#: next_check: 2015-08-20
+#: last_checked: 2015-08-31
+#: next_check: 2015-09-30
 #: priority: #A
 Luisenstr. Höhe Charité: Straße wegen Bauarbeiten komplett bis zum 30.09.2015 gesperrt, auch für Radfahrer und Fußgänger	2::inwork 8665,13353 8648,13498
 # 
@@ -2888,7 +2887,7 @@ Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Du
 # REMOVED --- #: next_check_id: INVALIDEN-2014 vvv --- #: last_checked: 2015-08-05 vvv --- #: next_check: 2015-05-31 vvv --- Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 19011,14019 9085,13919 8935,13844 --- Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9011,14019 9085,13919 9151,13941 --- Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 9151,13941 9085,13919 9011,14019 --- Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 8935,13844 9085,13919 9011,14019 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
-#: last_checked: 2015-08-11 vvv
+#: last_checked: 2015-08-31 vvv
 #: check_frequency: 90d vvv
 Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10008,12274 9994,12368
 Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9996,12401 9994,12368 9943,12364 9961,12273
@@ -2943,7 +2942,7 @@ tragen (2 Stufen)	0:5 8818,13365
 #: XXX siehe auch Busspur in radwege-orig vvv
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html vvv
 #: source_id: INKO_113041 vvv
-#: last_checked: 2015-07-26 vvv
+#: last_checked: 2015-08-31 vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9858,12410
 # REMOVED (nach der Fahrbahn wieder erreichbar) --- Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
 #: last_checked ^^^
@@ -2954,8 +2953,8 @@ Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 99
 #: next_check_id ^^^
 # 
 #: XXX eine Umleitung existiert, ist aber von der Westseite schwierig zu finden und könnte nachts gesperrt sein
-#: last_checked: 2015-04-30
-#: next_check: 2015-08-30
+#: last_checked: 2015-08-31
+#: next_check: 2015-09-30
 An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8833,13440 8846,13412 8835,13376 8818,13365 8808,13377 8764,13372 8665,13353
 # 
 # REMOVED --- #: next_check_id: FLORAGAERTEN-2014 --- #: osm_watch: way id="294423898" version="4" --- #: XXX siehe auch Eintrag in qualitaet_s-orig --- #: last_checked: 2014-09-28 --- #: check_frequency: 30d --- In den Floragärten: Baustelle	2:inwork 9895,17649 9995,17642
@@ -3066,7 +3065,7 @@ Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1761,20539 174
 # REMOVED --- laut http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a115_avus/de/bau.shtml?y=20120731 seit April schon offen! --- #: by: somebody via phone call ---#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a115_avus/de/bau.shtml --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1106/nachricht4396.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1110/nachricht4504.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1201/nachricht4557.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1206/nachricht4691.html---#: by: INKO_109786---#: last_checked: 2012-07-05---#: next_check: 2012-11-15---Hüttenweg: Sperrung wegen Bau an der Autobahn, wahrscheinlich bis Ende November 2012	2:inwork -739,6838 -927,6888
 # 
 #: note: abgeschlossener Zaun
-#: last_checked: 2015-02-18
+#: last_checked: 2015-08-31
 #: check_frequency: 180d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 

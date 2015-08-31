@@ -337,7 +337,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6163 (Stand der Planung?)
 #: by: http://www.berlin.de/ba-mitte/bvv-online/___tmp/tmp/45081036147184117/147184117/00116327/27-Anlagen/02/MA_1534_IV.pdf
 #: note: Anforderungsampel
-#: last_checked: 2015-08-11
+#: last_checked: 2015-08-31
+#: check_frequency: 7d
 	F 10511,14418
 	X 10002,14092
 	X 9800,14722
@@ -2578,7 +2579,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX temporäre Ampel (wegen Arbeiten an der Staatsoper und an der U-Bahn)
 #: XXX_prog Anforderungsampel
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
-#: last_checked: 2015-08-11
+#: last_checked: 2015-08-31
 #: check_frequency: 45d
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
@@ -2604,7 +2605,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #
 #: XXX temporäre Ampel (wegen gesperrten Gehweg?), Ampel ist eigentlich etwas weiter westlich
 #: XXX eigentlich gibt es sogar zwei Fußgängerampeln
-#: last_checked: 2015-08-10
+#: last_checked: 2015-08-31
 #: check_frequency: 60d
 	F::inwork 9812,12145
 # 
@@ -2627,7 +2628,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX wird die Ampel hier nach Öffnung der Invalidenstr. aufgehoben?
 #: last_checked: 2015-05-12
 #: next_check: 2015-08-15
-	X::inwork 8775,13606
+# REMOVED --- X::inwork 8775,13606
 # REMOVED (Antwort: wahrscheinlich ja) --- #: XXX ist diese Ampel permanent?
 	X 8450,13599
 	X 9070,14058
@@ -2843,6 +2844,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id ^^^
 #: note: Anforderung für Radfahrer & Kontaktschleife
 	X 24801,11261
+	F 9274,13963
+	X 9151,13941
 # 
 ################################################################################
 #: note: Potsdam vvv

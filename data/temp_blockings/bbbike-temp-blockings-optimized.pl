@@ -3752,9 +3752,9 @@ userdel	2::inwork 14910,9643 14844,9513
          'from' => 1437289200,
          'id' => 2723,
          'source_id' => 'IM_025684',
-         'text' => 'Bouchéstr.: Baustelle, Fahrbahn zwischen Heidelberger Str. und Jordanstr. gesperrt, auf Gehweg ausweichen, 20.07.2015 09:00 Uhr bis 31.08.2015 17:00 Uhr ',
+         'text' => 'Bouchéstr.: Baustelle, Fahrbahn zwischen Heidelberger Str. und Jordanstr. gesperrt, auf Gehweg ausweichen, 20.07.2015 09:00 Uhr bis 07.09.2015 17:00 Uhr ',
          'type' => 'handicap',
-         'until' => 1441033200
+         'until' => 1441638000
        },
        undef,
        {
@@ -3812,8 +3812,7 @@ userdel	2::inwork 6851,9365 6771,9458 6727,9497
          'until' => 1448924400
        },
        {
-         'data' => '#: XXX prüfen!
-userdel	q4::inwork 10530,14452 10511,14418 10426,14262
+         'data' => 'userdel	q3::inwork 10530,14452 10511,14418 10426,14262
 ',
          'from' => 1440971943,
          'id' => 2731,
@@ -3829,6 +3828,17 @@ userdel	q4::inwork 10530,14452 10511,14418 10426,14262
          'text' => 'Tautenburger Str.: zwischen Blankenhainer und Frankenhauser Str. Sperrung der Fahrbahn, bis 04.09.2015 ',
          'type' => 'handicap',
          'until' => 1441378800
+       },
+       {
+         'data' => '#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.354922.php
+userdel	q4::inwork; 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
+',
+         'from' => 1440910800,
+         'id' => 2733,
+         'source_id' => 'IM_026066',
+         'text' => 'Konstanzer Str.: zwischen Düsseldorfer Str. und Brandenburgische Str. Baustelle, Fahrbahn Richtung Brandenburgische Str. gesperrt, bis Ende Dezember 2016',
+         'type' => 'handicap',
+         'until' => 1482501600
        }
      
 );

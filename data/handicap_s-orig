@@ -13,7 +13,7 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2015-08-30 vvv
+#: last_checked: 2015-08-31 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14286,11186 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraße ausgewiesen	q3::inwork; 14442,11101 14468,11203
 Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
@@ -28,7 +28,7 @@ Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3:
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2015-08-05
+#: last_checked: 2015-08-31
 #: check_frequency: 60d
 Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
 # 
@@ -86,7 +86,7 @@ Wadzeckstr.: Bauarbeiten, auf Gehweg ausweichen, Bordsteine	q4::inwork 11146,133
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
 # REMOVED --- #: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualität -> qualitaet_s-orig-Eintrag revidieren --- #: last_checked: 2013-11-21 --- Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2015-08-11
+#: last_checked: 2015-08-31
 #: check_frequency: 90d
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9984,12426 9996,12401 10058,12290
 # REMOVED --- Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q4::inwork 9996,12401 9994,12368 9943,12364
@@ -124,14 +124,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # REMOVED (fertig) --- #: last_checked: 2015-01-30 --- Saarbrücker Str.: Einbahnstraßenregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11134,13820 11250,13655
 # REMOVED (Bauarbeiten fertig) --- Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10822,14179 10755,14067
 # REMOVED (noch nicht ganz fertig, im Süden noch kurze Baustelle, umgedrehte Einbahnstraßenregelung, lohnt aber nicht) ---  #: last_checked: 2015-04-09 vvv --- Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10688,13963 10639,13864 10599,13775 10569,13719 --- #: last_checked ^^^
-# 
-#: next_check_id: SCHWEDTER-2014 vvv
-#: last_checked: 2015-08-11 vvv
-# REMOVED --- Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q2::inwork 10567,14337 10530,14452
-Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q2::inwork 10530,14452 10506,14521
-#: last_checked ^^^
-#: next_check_id ^^^
-# 
+# REMOVED --- #: next_check_id: SCHWEDTER-2014 vvv --- #: last_checked: 2015-08-11 vvv --- # REMOVED --- Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q2::inwork 10567,14337 10530,14452 --- Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q2::inwork 10530,14452 10506,14521
 # REMOVED (offen) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1507/nachricht5698.html --- #: XXX wird am 3. August geöffnet --- hat sich aber verzögert! --- #: last_check: 2015-08-05 --- #: check_frequency: 7d --- #: priority: #A --- Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Caroline-Michaelis-Str. und und Hessische Str. gesperrt	q4::inwork; 9151,13941 9085,13919 8935,13844
 # 
 #: next_check_id: INVALIDEN-2014 vvv
@@ -205,9 +198,9 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10072,11384 9945,11371 9737,11349
 # REMOVED (das Einfahrt verboten-Schild hängt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9949,11470 9935,11566
 # 
-#: last_checked: 2015-08-10
+#: last_checked: 2015-08-31
 Alte Jakobstr.: Bauarbeiten, teilweise Einbahnstraße	q3::inwork; 10256,11160 10437,11352
-#: last_checked: 2015-08-11
+#: last_checked: 2015-08-31
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10624,11548 10640,11564
 # 
 # REMOVED --- Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10437,11352
@@ -222,7 +215,7 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10624,11548 1
 ### Kreuzberg ###
 # 
 #: next_check_id: DRESDENER-2015
-#: last_checked: 2015-08-11
+#: last_checked: 2015-08-31
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2015-03-01 (Bauzeit 2014-2015)
 Alfred-Döblin-Platz: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 11162,10919 11150,11030

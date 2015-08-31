@@ -24352,8 +24352,8 @@ EOF
 EOF
      },
      { from  => 1437289200, # 2015-07-19 09:00
-       until => 1441033200, # 2015-08-31 17:00
-       text  => 'Bouchéstr.: Baustelle, Fahrbahn zwischen Heidelberger Str. und Jordanstr. gesperrt, auf Gehweg ausweichen, 20.07.2015 09:00 Uhr bis 31.08.2015 17:00 Uhr ',
+       until => $isodate2epoch->("2015-09-07 17:00:00"), # 1441033200, # 2015-08-31 17:00
+       text  => 'Bouchéstr.: Baustelle, Fahrbahn zwischen Heidelberger Str. und Jordanstr. gesperrt, auf Gehweg ausweichen, 20.07.2015 09:00 Uhr bis 07.09.2015 17:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_025684',
        data  => <<EOF,
@@ -24439,8 +24439,7 @@ EOF
        text  => 'Kastanienallee: zwischen Schwedter Str. und Zionskirchplatz Sperrung der Fahrbahn, Gleisbauarbeiten, bis 04.09.2015',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX prüfen!
-userdel	q4::inwork 10530,14452 10511,14418 10426,14262
+userdel	q3::inwork 10530,14452 10511,14418 10426,14262
 EOF
      },
      { from  => 1440972146, # 2015-08-31 00:02
@@ -24449,6 +24448,16 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 7081,1346 6984,1540 6881,1743
+EOF
+     },
+     { from  => 1440910800, # 2015-08-30 07:00
+       until => 1482501600, # 2016-12-23 15:00
+       text  => 'Konstanzer Str.: zwischen Düsseldorfer Str. und Brandenburgische Str. Baustelle, Fahrbahn Richtung Brandenburgische Str. gesperrt, bis Ende Dezember 2016',
+       type  => 'handicap',
+       source_id => 'IM_026066',
+       data  => <<EOF,
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.354922.php
+userdel	q4::inwork; 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
 EOF
      },
     );
