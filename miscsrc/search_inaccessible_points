@@ -238,6 +238,21 @@ sub flood_search {
 
     my($start_x,$start_y) = split /,/, $act_coord;
 
+    # A mysterious bug affecting perls < 5.18.0 in a following
+    # environment:
+    # - Linux, e.g. Debian/wheezy (does not happen on FreeBSD)
+    # - large dataset (i.e. osm derived data, does not happen
+    #   for original bbbike data)
+    # If this is given, then the "last if !keys %OPEN" line causes
+    # a crash if %OPEN has some 2^16 keys (this number could be
+    # coincidence, though):
+    #
+    # *** glibc detected *** perl5.16.3: munmap_chunk(): invalid pointer: 0x0000000005d4ca18 ***
+    #
+    # Workaround: explicitely reset the iterator earlier
+    # for these perls.
+    use constant PERL_HASHMEM_BUG => $] < 5.018;
+
     my %CLOSED;
     my %OPEN;
 
@@ -254,6 +269,7 @@ sub flood_search {
 
 	last if !keys %OPEN; # side-effect: resets iterator
 	$act_coord = each %OPEN;
+	keys %OPEN if PERL_HASHMEM_BUG; # workaround for buggy perls
     }
 
     return \%CLOSED;
