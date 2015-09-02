@@ -749,19 +749,19 @@ userdel	2 8546,12279 8570,12302 8573,12325 8540,12420
          'data' => '#: by: http://www.ms-event-agentur.com/seite22.html?date=20150404
 userdel	2::temp 7006,9292 7022,9211 7044,9163 7107,9030
 ',
-         'from' => 1443823200,
+         'from' => 1443776400,
          'id' => 731,
          'periodic' => 1,
          'recurrences' => [
                             [
                               'yearly',
                               'days',
-                              5,
+                              3,
                               'months',
                               10
                             ]
                           ],
-         'text' => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 3. und 4.10.2015',
+         'text' => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 03.10.2015 bis 04.10.2015',
          'type' => 'gesperrt',
          'until' => 1443995999
        },
@@ -2430,7 +2430,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im August von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im September von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3368,7 +3368,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
        },
        {
          'data' => '#: note: außerdem Ampel an der Kreuzung Werneuchener/Große-Leege, und geänderte Vorfahrtsregelung an der Umleitungsstrecke via Große-Leege-Str.
-userdel	q4::inwork 15774,14992 15867,15073 15937,15134 16028,15218 16119,15302
+userdel	q4::inwork 15272,14691 15345,14736 15383,14759 15562,14869 15580,14880 15774,14992 15867,15073 15937,15134 16028,15218 16119,15302
 # userdel	q4::inwork; 16119,15302 16218,15386 16263,15427 16331,15486 16412,15559
 userdel	q4::inwork; 16412,15559 16448,15593 16497,15636 16615,15737 16633,15753 16819,15912
 # userdel	q4::inwork; 15937,15134 16075,15069 16123,15025
@@ -3388,7 +3388,7 @@ userdel	q4::inwork; 16412,15559 16448,15593 16497,15636 16615,15737 16633,15753 
          'from' => 1436155200,
          'id' => 2596,
          'source_id' => 'IM_025547',
-         'text' => 'Konrad-Wolf-Str.: Bauarbeiten, zwischen Simon-Bolivar-Str. und Werneuchener Str. für Radfahrer komplett gesperrt (für Autofahrer in Richtung Südwesten aber nicht!), zwischen Gärtnerstr. und Schöneicher Str. Einbahnstraße, offen Richtung Südwesten, bis 18.10.2015',
+         'text' => 'Konrad-Wolf-Str.: Bauarbeiten, zwischen Altenhofer Str. und Werneuchener Str. für Radfahrer komplett gesperrt (für Autofahrer in Richtung Südwesten aber nicht!), zwischen Gärtnerstr. und Schöneicher Str. Einbahnstraße, offen Richtung Südwesten, bis 18.10.2015',
          'type' => 'handicap',
          'until' => 1445187600
        },
@@ -3647,30 +3647,8 @@ userdel	2::inwork 7306,13418 7451,13504 7630,13584
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => 'userdel	2::inwork -6474,5144 -6361,5222 -6277,5180 -6037,5371 -5918,5610 -5853,5674 -5828,5739 -5688,5837 -5390,5941 -5264,6001 -5037,6085 -4835,6220 -4774,6514
-',
-         'from' => undef,
-         'id' => 2704,
-         'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.312630.php',
-         'text' => 'Ernst-Liesegang-Ufer: wegen Bauarbeiten gesperrt, bis voraussichtlich Ende August 2015',
-         'type' => 'gesperrt',
-         'until' => 1441058399
-       },
-       {
-         'data' => '#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5511.html
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150430.1120.401849.html
-#: last_checked: 2015-07-14
-#: next_check: 2015-08-31
-	q4::inwork; 7033,10328 7060,10221 7080,10098
-	q4::inwork 7080,10098 7038,10087
-',
-         'from' => undef,
-         'id' => 2705,
-         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150430.1120.401849.html',
-         'text' => 'Maaßenstr.: Bauarbeiten, gesperrt in Richtung Winterfeldplatz, außerdem Sperrungen in der Winterfeldtstr., bis September 2015',
-         'until' => 1441058400
-       },
+       undef,
+       undef,
        {
          'data' => 'userdel	2::inwork 39384,115027 39168,114713 38881,113150
 ',
@@ -3839,6 +3817,16 @@ userdel	q4::inwork; 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
          'text' => 'Konstanzer Str.: zwischen Düsseldorfer Str. und Brandenburgische Str. Baustelle, Fahrbahn Richtung Brandenburgische Str. gesperrt, bis Ende Dezember 2016',
          'type' => 'handicap',
          'until' => 1482501600
+       },
+       {
+         'data' => 'userdel	q4::inwork; 11275,10723 11234,10739 11159,10769 11049,10816
+',
+         'from' => 1441490400,
+         'id' => 2734,
+         'source_id' => 'http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.360026.php',
+         'text' => 'Oranienstr.: Sperrung Richtung Westen wegen Bauarbeiten am Oranienplatz, voraussichtlich 07.09.2015 bis 18.09.2015',
+         'type' => 'handicap',
+         'until' => 1442613600
        }
      
 );

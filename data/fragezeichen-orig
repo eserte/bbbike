@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2015-08-31
+#: last_checked: 2015-09-02
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -178,7 +178,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 #: osm_watch: way id="182782708" version="3"
 #: osm_watch: way id="168307255" version="3"
 #: osm_watch: way id="4687243" version="23"
-#: last_checked: 2015-07-13
+#: last_checked: 2015-09-02
 #: check_frequency: 60d
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
 # 
@@ -414,7 +414,7 @@ Rathaus Wedding: ändert sich was während/nach der Bauarbeiten am Rathausplatz?	?
 # 
 # REMOVED (-> radwege-orig) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150511.1105.401906.html --- #: XXX teilweise schon zurückgebaut, Ende der Bauarbeiten im Herbst 2015 --- Rixdorfer Str.: Umbau der Radwege zu Radstreifen	?::inwork 9953,3806 10181,4181 10185,4187 10221,4245 10288,4354 10412,4552
 # REMOVED (nichts zu sehen) --- #: XXX Hessische Str. (Mitte): Baustelle, Baustellenampel, Zufahrt Hannoversche Str. gesperrt (bis Ende 05/15) in beiden Richtungen in Höhe Hannoversche Str., 11.05.2015 08:00 Uhr bis 29.05.2015 18:00 Uhr	IM_024927 --- #: priority: #A --- Hannoversche Str.: Sperrung relevant für Radfahrer?	? 8674,13593 8775,13606
-# REMOVED (vermutlich, check!) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5540.html vvv --- #: source_id: IM_024548 vvv --- #: note: Dauer etwa vier Monate, also bis August 2015? vvv --- #: XXX laut rbbtext bis 15.8.2015 --- #: XXX_prog größere Behinderungen eigentlich nur, wenn die Kreuzung in voller Länge befahren wird, aber nicht so sehr beim Rechtsabbiegen vvv --- #: last_checked: 2015-07-20 vvv --- Kreuzung Invalidenstr./Gartenstr.: Auswirkungen der Vollsperrung hier?	? 9224,14169 9383,13986 9514,13826 --- Kreuzung Invalidenstr./Gartenstr.: Auswirkungen der Vollsperrung hier?	? 9383,13986 9676,14046
+# REMOVED (vermutlich, check!) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5540.html vvv --- #: source_id: IM_024548 vvv --- #: note: Dauer etwa vier Monate, also bis August 2015? vvv --- #: XXX laut rbbtext bis 15.8.2015 --- #: XXX_prog größere Behinderungen eigentlich nur, wenn die Kreuzung in voller Länge befahren wird, aber nicht so sehr beim Rechtsabbiegen vvv --- #: last_checked: 2015-07-20 vvv --- Kreuzung Invalidenstr./Gartenstr.: Auswirkungen der Vollsperrung hier?	? 9224,14169 9383,13986 9514,13826 --- Kreuzung Invalidenstr./Gartenstr.: Auswirkungen der Vollsperrung hier?	? 9383,13986 9659,14043 9676,14046
 # 
 #: XXX_prog: fehlende Möglichkeit, das Handicap hier auszudrücken!
 #: source_id: IM_025755
@@ -494,20 +494,7 @@ Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualität?
 # REMOVED (keine Besonderheiten) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1403/nachricht5213.html --- #: XXX bis Ende 2014 --- Heidestr.: wie ist die Radverkehrsführung an der Kreuzung Sellerstr.?	? 7589,14359 7597,14417
 # REMOVED (Bauarbeiten laufen bereits, sind aber relativ unproblematisch für Radfahrer) --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20140326.1205.395773.html --- #: next_check: 2014-04-01 --- Thusnelda-Allee: wann genau wird die Sperrung sein?	? 5956,13330 5975,13256
 # REMOVED (kein Fahrradlauf erkennbar; neben der Treppe ist eine "Rampe" "ausgetreten" --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4798 --- #: last_checked: 2014-06-22 --- Am S-Bhf. Wuhlheide: Treppenanlage mit Fahrradlauf? Außerdem die Qualität des Radwegs wieder evaluieren	? 20653,7289 20682,7262
-# 
-#: next_check_id: AMWEINGARTEN-2014
-#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3759 ("Benennungsabsicht")
-#: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036623646371/623646371/00060995/95-Anlagen/02/Benennungsabsichtfuerdiebisherunbenannteoeffen.pdf
-#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3877
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2015 (Wirksamkeit)
-#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2015/pressemitteilung.350909.php ("feierliche Straßenbenennung")
-#: XXX siehe auch strassen-orig
-#: XXX Eintrag in Berlin.coords.data fehlt
-#: last_checked: 2015-05-03
-#: next_check: 2015-08-30
-#: priority: #A
-Am Weingarten: die Fortsetzung des Syringenplatz soll hier benannt werden	? 13765,14665 13867,14507
-# 
+# REMOVED --- #: next_check_id: AMWEINGARTEN-2014 --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3759 ("Benennungsabsicht") --- #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036623646371/623646371/00060995/95-Anlagen/02/Benennungsabsichtfuerdiebisherunbenannteoeffen.pdf --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3877 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2015 (Wirksamkeit) --- #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2015/pressemitteilung.350909.php ("feierliche Straßenbenennung") --- #: XXX siehe auch strassen-orig --- #: XXX Eintrag in Berlin.coords.data fehlt --- #: last_checked: 2015-05-03 --- #: next_check: 2015-08-30 --- #: priority: #A --- Am Weingarten: die Fortsetzung des Syringenplatz soll hier benannt werden	? 13765,14665 13867,14507
 # REMOVED (während der Bauarbeiten an der Karlshorster Str. wird die Ampel höchstwahrscheinlich eingeschaltet werden) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5910 --- #: last_checked: 2014-06-11 (Ampel steht, aber nicht eingeschaltet) --- Kynaststr./Hauptstr.: eine provisorische Ampel wird wieder aufgestellt	? 14906,10820
 # REMOVED (wahrscheinlich wird hier nichts entstehen...) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2014 --- #: XXX Fertigstellung des Radwegs? --- #: last_checked: 2014-09-27 --- #: check_frequency: 120d --- Marzahner Promenade - Landsberger Allee: Bau einer Radwegverbindung	?::projected 20667,15721 20733,15657
 # REMOVED (Radweg realisiert) --- #: source_id: IM_022020 --- # last_checked: 2014-07-12 --- #: next_check: 2014-07-28 ---Konrad-Wolf-Str.: in Richtung Südwesten wird eine Radweganlage gebaut	?::inwork; 15272,14691 15174,14638 15066,14579
@@ -1200,9 +1187,7 @@ Am Kirchendreieck: Lage der Straße? Qualität?	? 23922,13085 23960,13325
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-#: by: fritz
-Voigtstr./Schreinerstr.: Auswirkungen der Sperrungen für Radfahrer?	? 14570,12478 14776,12418 14798,12502
-# 
+# REMOVED (kann vernachlässigt werden) --- #: by: fritz --- Voigtstr./Schreinerstr.: Auswirkungen der Sperrungen für Radfahrer?	? 14570,12478 14776,12418 14798,12502
 # REMOVED (keine Verschlechterung) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1508/nachricht5714.html --- Moritzplatz: anschauen, gibt es relevante Veränderungen?	? 10832,10910 10854,10854 10906,10874 10885,10928 10832,10910
 # REMOVED (-> temp blockings) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.354922.php --- #: XXX Bauarbeiten bis Dezember 2016, zwei Bauabschnitte, durch die Düsseldorfer Str. geteilt --- #: next_check: 2015-08-31 --- Konstanzer Str.: geplante Bauarbeiten; Einbahnstraßenregelung offen Richtung Norden, auch für Radfahrer relevant?	? 4057,9648 4067,9686 4099,9820 4126,9932 4152,10033 4183,10144 4219,10279 4239,10358
 # 
@@ -1216,7 +1201,7 @@ Siemensstr.: werden hier vielleicht auch Radspuren markiert?	? 5746,14090 5708,1
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20150723.1925.402307.html
 #: XXX Endedatum laut fritz 2015-08-28, laut Pressemitteilung: 2015-09-30
-#: next_check: 2015-08-28
+#: next_check: 2015-09-30
 Weißenseer Weg: wird der Radweg nach den Bauarbeiten besser sein?	? 14843,15007 14959,14752
 # 
 Rosa-Luxemburg-Steg: Qualität: Holzbohlen oder was anderes?	? 6297,11449 6247,11390

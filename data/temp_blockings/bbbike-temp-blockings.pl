@@ -6268,11 +6268,11 @@ EOF
 userdel	2::inwork 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589
 EOF
      },
-     { from  => $isodate2epoch->("2015-10-03 00:00:00"), # 1 Tag Vorlauf
+     { from  => $isodate2epoch->("2015-10-02 11:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2015-10-04 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 5, months => 10]],
-       text  => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 3. und 4.10.2015',
+       recurrences => [['yearly', days => 3, months => 10]],
+       text  => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 03.10.2015 bis 04.10.2015',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.ms-event-agentur.com/seite22.html?date=20150404
@@ -22712,7 +22712,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_021515',
        data  => <<EOF,
-userdel	q4::inwork 9383,13986 9676,14046
+userdel	q4::inwork 9383,13986 9659,14043 9676,14046
 EOF
      },
      { from  => undef, # 
@@ -23108,12 +23108,12 @@ EOF
      },
      { from  => $isodate2epoch->("2015-07-06 06:00:00"), # 1405025033, # 2014-07-10 22:43
        until => $isodate2epoch->("2015-10-18 19:00:00"), # 1408139790, # 1408312800, # 2014-08-18 00:00
-       text  => 'Konrad-Wolf-Str.: Bauarbeiten, zwischen Simon-Bolivar-Str. und Werneuchener Str. für Radfahrer komplett gesperrt (für Autofahrer in Richtung Südwesten aber nicht!), zwischen Gärtnerstr. und Schöneicher Str. Einbahnstraße, offen Richtung Südwesten, bis 18.10.2015',
+       text  => 'Konrad-Wolf-Str.: Bauarbeiten, zwischen Altenhofer Str. und Werneuchener Str. für Radfahrer komplett gesperrt (für Autofahrer in Richtung Südwesten aber nicht!), zwischen Gärtnerstr. und Schöneicher Str. Einbahnstraße, offen Richtung Südwesten, bis 18.10.2015',
        type  => 'handicap',
        source_id => 'IM_025547',
        data  => <<EOF,
 #: note: außerdem Ampel an der Kreuzung Werneuchener/Große-Leege, und geänderte Vorfahrtsregelung an der Umleitungsstrecke via Große-Leege-Str.
-userdel	q4::inwork 15774,14992 15867,15073 15937,15134 16028,15218 16119,15302
+userdel	q4::inwork 15272,14691 15345,14736 15383,14759 15562,14869 15580,14880 15774,14992 15867,15073 15937,15134 16028,15218 16119,15302
 # userdel	q4::inwork; 16119,15302 16218,15386 16263,15427 16331,15486 16412,15559
 userdel	q4::inwork; 16412,15559 16448,15593 16497,15636 16615,15737 16633,15753 16819,15912
 # userdel	q4::inwork; 15937,15134 16075,15069 16123,15025
@@ -24458,6 +24458,15 @@ EOF
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.354922.php
 userdel	q4::inwork; 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
+EOF
+     },
+     { from  => 1441490400, # 2015-09-06 00:00
+       until => 1442613600, # 2015-09-19 00:00
+       text  => 'Oranienstr.: Sperrung Richtung Westen wegen Bauarbeiten am Oranienplatz, voraussichtlich 07.09.2015 bis 18.09.2015',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.360026.php',
+       data  => <<EOF,
+userdel	q4::inwork; 11275,10723 11234,10739 11159,10769 11049,10816
 EOF
      },
     );
