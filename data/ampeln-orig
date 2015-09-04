@@ -2747,7 +2747,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id ^^^
 # 
 #: next_check_id: SONNENALLEE-2014 vvv
-#: osm_watch: way id="260062339" version="4"
+#: osm_watch: way id="260062339" version="5"
 #: last_checked: 2015-07-17 vvv
 #: check_frequency: 90d vvv
 #: note: Radfahrer in Richtung Südosten müssen die Seite wechseln, hier Anforderungsampel
@@ -2765,12 +2765,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 14346,16241
 #: note: Anforderungsampel
 	F 5155,3502
-#: next_check_id: BLANKENBURGER-2014
-#: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/blankenburger_stra__e_konzept_beschilderung_umleitung_3_ta.pdf?download.html
-#: last_checked: 2015-07-19
-#: next_check: 2015-12-31
-#: valid: 20140701-20151231
-	X::inwork 11269,20667
+# REMOVED --- #: next_check_id: BLANKENBURGER-2014 --- #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/blankenburger_stra__e_konzept_beschilderung_umleitung_3_ta.pdf?download.html --- #: last_checked: 2015-07-19 --- #: next_check: 2015-12-31 --- #: valid: 20140701-20151231 ---	X::inwork 11269,20667
 #: note: Anforderungsampel
 	F 5357,6943
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3943

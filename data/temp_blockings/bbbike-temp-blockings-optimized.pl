@@ -3420,7 +3420,26 @@ userdel	q4::inwork; 16412,15559 16448,15593 16497,15636 16615,15737 16633,15753 
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 5857,13342 5868,13441 5882,13548
+',
+         'from' => 1441922400,
+         'id' => 2625,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              12,
+                              'months',
+                              9
+                            ]
+                          ],
+         'source_id' => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.361364.php',
+         'text' => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 12. September 2015, 13 bis 21 Uhr ',
+         'type' => 'gesperrt',
+         'until' => 1442095199
+       },
        undef,
        undef,
        undef,
@@ -3486,9 +3505,9 @@ userdel	2::inwork -3197,11554 -3075,11510
          'from' => 1439228125,
          'id' => 2654,
          'source_id' => 'IM_025870',
-         'text' => 'John-Foster-Dulles-Allee: Baustelle zwischen Zeltenplatz und Yitzak-Rabin-Str., Fahrbahn gesperrt, ggfs. auf Gehweg ausweichen, bis 04.09.2015',
+         'text' => 'John-Foster-Dulles-Allee: Baustelle zwischen Zeltenplatz und Yitzak-Rabin-Str., Fahrbahn gesperrt, ggfs. auf Gehweg ausweichen, bis 18.09.2015',
          'type' => 'handicap',
-         'until' => 1441371600
+         'until' => 1442581200
        },
        undef,
        undef,
@@ -3576,16 +3595,7 @@ userdel	q3::inwork 5780,10542 5627,10637
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	q4::inwork 8870,13926 9011,14019
-',
-         'from' => 1427752800,
-         'id' => 2694,
-         'source_id' => 'IM_024549',
-         'text' => 'Zinnowitzer Str.: Baustelle an der Chausseestr., Fahrbahn gesperrt, bis 04.09.2015',
-         'type' => 'handicap',
-         'until' => 1441378800
-       },
+       undef,
        {
          'data' => '#: last_checked: 2015-07-03
 #: check_frequency: 90d
@@ -3794,19 +3804,11 @@ userdel	2::inwork 6851,9365 6771,9458 6727,9497
 ',
          'from' => 1440971943,
          'id' => 2731,
-         'text' => 'Kastanienallee: zwischen Schwedter Str. und Zionskirchplatz Sperrung der Fahrbahn, Gleisbauarbeiten, bis 04.09.2015',
+         'text' => 'Kastanienallee: zwischen Schwedter Str. und Zionskirchplatz Sperrung der Fahrbahn, Gleisbauarbeiten, bis 14.09.2015',
          'type' => 'handicap',
-         'until' => 1441396800
+         'until' => 1442242800
        },
-       {
-         'data' => 'userdel	q4::inwork 7081,1346 6984,1540 6881,1743
-',
-         'from' => 1440972146,
-         'id' => 2732,
-         'text' => 'Tautenburger Str.: zwischen Blankenhainer und Frankenhauser Str. Sperrung der Fahrbahn, bis 04.09.2015 ',
-         'type' => 'handicap',
-         'until' => 1441378800
-       },
+       undef,
        {
          'data' => '#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.354922.php
 userdel	q4::inwork; 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648

@@ -313,7 +313,7 @@ Kaiserstr.: Radspuren bis 2015 geplant	?::projected 9310,4407 9192,4389 9079,437
 Schöneberger Str.: Radspuren bis 2015 geplant	?::projected 8735,6695 8645,6781 8496,6919 8447,6964 8414,6995 8319,7084
 # 
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bvv/mdv_vii_19.pdf?start&ts=1368606374&file=mdv_vii_19.pdf (Seite 79)
-#: osm_watch: way id="28961260" version="11"
+#: osm_watch: way id="28961260" version="12"
 #: last_checked: 2015-07-12
 #: check_frequency: 120d
 Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166,8489
@@ -393,6 +393,12 @@ Gaußstr.: Radspuren werden errichtet	?::projected 3739,13563 3833,13590 4098,136
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2015
+#: XXX im Amtsblatt ohne Bindestriche --- ist das richtig?
+#: XXX fehlt in Berlin.coords.data
+#: note: Privatstraße
+Oskar-Helene-Park: genaue Straßenführung? Qualität? Bereits befahrbar?	?::inwork 1360,4501 1305,4519 1305,4556 1230,4629 1170,4562 1251,4478 1305,4519
 # 
 #: XXX Baumaßnahme GR9.24 (Realisierung nach 2011)
 #: XXX wird hier asphaltiert werden? Was ist mit dem Schlenker am Spreepark?
@@ -1186,6 +1192,12 @@ Am Kirchendreieck: Lage der Straße? Qualität?	? 23922,13085 23960,13325
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2015
+#: note: Privatstraße, aber ausdrücklich "öffentlich zugänglich"
+#: XXX fehlt in Berlin.coords.data
+#: next_check: 2015-10-10 (Wirksamkeit der Benennung)
+EUREF-Campus: Innenfläche wird benannt; genaue Wegführung, Qualität?	? 7250,8223 7137,8206 7281,8485
 # 
 # REMOVED (kann vernachlässigt werden) --- #: by: fritz --- Voigtstr./Schreinerstr.: Auswirkungen der Sperrungen für Radfahrer?	? 14570,12478 14776,12418 14798,12502
 # REMOVED (keine Verschlechterung) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1508/nachricht5714.html --- Moritzplatz: anschauen, gibt es relevante Veränderungen?	? 10832,10910 10854,10854 10906,10874 10885,10928 10832,10910
@@ -1997,7 +2009,7 @@ Planstraßen im Marienhain: Straßennamen? Qualität?	? 22771,3151 22476,3118 22485
 #: last_checked ^^^
 #: XXX ^^^
 # 
-# REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2015 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5051 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2015 (Grundstücksnummerierungen) --- #: last_checked: 2015-05-16 vvv --- #: check_frequency: 100d vvv --- Am Stadtforst: hier entstehen neue Straßen, genaue Lage, Qualität, vermutlich Sackgasse?	? 23623,2392 23624,2275 --- Sommerwiesenweg: hier entstehen neue Straßen, genaue Lage, Qualität (zurzeit Asphalt ohne Deckschicht)?	? 23487,2276 23624,2275
+# REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2015 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5051 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2015 (Grundstücksnummerierungen) --- # by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/35re.pdf/file?y=2015 --- #: last_checked: 2015-05-16 vvv --- #: check_frequency: 100d vvv --- Am Stadtforst: hier entstehen neue Straßen, genaue Lage, Qualität, vermutlich Sackgasse?	? 23623,2392 23624,2275 --- Sommerwiesenweg: hier entstehen neue Straßen, genaue Lage, Qualität (zurzeit Asphalt ohne Deckschicht)?	? 23487,2276 23624,2275
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20140922.1345.399356.html (Erschließung bis Anfang 2015)
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6304

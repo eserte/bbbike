@@ -315,21 +315,8 @@ Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inw
 # 
 ### Pankow ###
 # 
-#: next_check_id: BLANKENBURGER-2014 vvv
-#: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/blankenburger_stra__e_konzept_beschilderung_umleitung_3_ta.pdf?download.html vvv
-#: XXX laut vmz Einbahnstraße bis 31. Dezember 2015
-#: source_id: IM_022288 vvv
-#: last_checked: 2015-07-19 vvv
-#: next_check: 2015-12-31 vvv
-#: valid: 20140701-20151231 vvv
-Blankenburger Str.: Bauarbeiten, Einbahnstraße, gesperrt in Richtung Westen	q4::inwork; 12008,20368 11959,20365 11799,20224 11690,20127 11632,20086 11563,20048
+# REMOVED --- #: next_check_id: BLANKENBURGER-2014 vvv --- #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/blankenburger_stra__e_konzept_beschilderung_umleitung_3_ta.pdf?download.html vvv --- #: XXX laut vmz Einbahnstraße bis 31. Dezember 2015 --- #: source_id: IM_022288 vvv --- #: last_checked: 2015-07-19 vvv --- #: next_check: 2015-12-31 vvv --- #: valid: 20140701-20151231 vvv --- Blankenburger Str.: Bauarbeiten, Einbahnstraße, gesperrt in Richtung Westen	q4::inwork; 12008,20368 11959,20365 11799,20224 11690,20127 11632,20086 11563,20048
 # REMOVED (vermutlich wieder offen, weil die südliche Fahrbahn schon fertig ist) --- Hans-Jürgen-Str.: Bauarbeiten, erschwerter Zugang zur Blankenburger Str.	q4::inwork 11839,20176 11799,20224
-#: valid ^^^
-#: next_check ^^^
-#: last_checked ^^^
-#: source_id ^^^
-#: by ^^^
-#: next_check_id ^^^
 # 
 ### Biesdorf ###
 # 

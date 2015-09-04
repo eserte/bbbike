@@ -23395,13 +23395,14 @@ EOF
 userdel	q4::inwork; 5325,12234 5518,12159 5424,11944
 EOF
      },
-     { from  => 1410519600, # 2014-09-12 13:00
-       until => 1410624000, # 2014-09-13 18:00
-       text  => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 13. September 2014, 13 bis 18 Uhr ',
+     { from  => $isodate2epoch->("2015-09-11 00:00:00"), # 1410519600, # 2014-09-12 13:00
+       until => $isodate2epoch->("2015-09-12 23:59:59"), # 1410624000, # 2014-09-13 18:00
+       periodic => 1,
+       recurrences => [["yearly", days => 12, months => 9]],
+       text  => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 12. September 2015, 13 bis 21 Uhr ',
        type  => 'gesperrt',
-       source_id => 'http://www.turmstrasse.de/aktuelles/veranstaltungen.html',
+       source_id => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.361364.php',
        data  => <<EOF,
-#: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20140905.1415.399114.html
 userdel	2::temp 5857,13342 5868,13441 5882,13548
 EOF
      },
@@ -23666,8 +23667,8 @@ userdel	q4::inwork 19676,1577 19704,1621 19766,1796
 EOF
      },
      { from  => 1439228125, # 1410069600, # 2014-09-07 08:00
-       until => $isodate2epoch->("2015-09-04 15:00:00"), # 1419001200, # 2014-12-19 16:00
-       text  => 'John-Foster-Dulles-Allee: Baustelle zwischen Zeltenplatz und Yitzak-Rabin-Str., Fahrbahn gesperrt, ggfs. auf Gehweg ausweichen, bis 04.09.2015',
+       until => $isodate2epoch->("2015-09-18 15:00:00"), # 1419001200, # 2014-12-19 16:00
+       text  => 'John-Foster-Dulles-Allee: Baustelle zwischen Zeltenplatz und Yitzak-Rabin-Str., Fahrbahn gesperrt, ggfs. auf Gehweg ausweichen, bis 18.09.2015',
        type  => 'handicap',
        source_id => 'IM_025870',
        data  => <<EOF,
@@ -24435,8 +24436,8 @@ userdel	2::inwork 6851,9365 6771,9458 6727,9497
 EOF
      },
      { from  => 1440971943, # 2015-08-30 23:59
-       until => $isodate2epoch->("2015-09-04 22:00:00"),
-       text  => 'Kastanienallee: zwischen Schwedter Str. und Zionskirchplatz Sperrung der Fahrbahn, Gleisbauarbeiten, bis 04.09.2015',
+       until => $isodate2epoch->("2015-09-14 17:00:00"),
+       text  => 'Kastanienallee: zwischen Schwedter Str. und Zionskirchplatz Sperrung der Fahrbahn, Gleisbauarbeiten, bis 14.09.2015',
        type  => 'handicap',
        data  => <<EOF,
 userdel	q3::inwork 10530,14452 10511,14418 10426,14262
