@@ -53,11 +53,19 @@ sub new {
     my $sub_separator = delete $opts{SubSeparator};
     die "Unhandled options: " . join(" ", %opts) if %opts;
 
+    my @entries;
+    if ($sub_separator) {
+	push @entries, sprintf "%04x ; [.%04x]\n", (ord $sub_separator)x2;
+    }
+    if (0) { # TBD XXX
+	push @entries, ("002D  ; [.020D.0020.0002.002D] # HYPHEN-MINUS, made significant\n");
+    }
     my $collator = Unicode::Collate->new
 	(
 	 normalization => undef, # we need the index() method below, so normalization cannot be used
 	 level         => 1,     # be case insensitive
 	 ($sub_separator ? (entry => sprintf "%04x ; [.%04x]\n", (ord $sub_separator)x2) : ()),
+	 entry         => join('', @entries),
 	);
 
     my $self = {
