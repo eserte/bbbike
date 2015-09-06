@@ -430,20 +430,8 @@ EOF
 				  above => $str_layer_level,
 				 ),
 		[Button => $do_compound->("today's geocoded images", $images{camera}), -command => sub { add_todays_geocoded_images() }],
-		layer_checkbutton([$do_compound->('fragezeichen-outdoor-nextcheck')],
-				  'str', "$bbbike_rootdir/tmp/fragezeichen-outdoor-nextcheck.bbd",
-				  below_above_cb => sub {
-				      $main::edit_normal_mode ? (below => $str_layer_level) : (above => $str_layer_level)
-				  },
-				 ),
 		layer_checkbutton([$do_compound->('fragezeichen-outdoor')],
 				  'str', "$bbbike_rootdir/tmp/fragezeichen-outdoor.bbd",
-				  below_above_cb => sub {
-				      $main::edit_normal_mode ? (below => $str_layer_level) : (above => $str_layer_level)
-				  },
-				 ),
-		layer_checkbutton([$do_compound->('fragezeichen-outdoor-nextcheck-categorized')],
-				  'str', "$bbbike_rootdir/tmp/fragezeichen-outdoor-nextcheck-categorized.bbd",
 				  below_above_cb => sub {
 				      $main::edit_normal_mode ? (below => $str_layer_level) : (above => $str_layer_level)
 				  },
@@ -456,8 +444,24 @@ EOF
 				 ),
 		layer_checkbutton([$do_compound->('fragezeichen-indoor-nextcheck')],
 				  'str', "$bbbike_rootdir/tmp/fragezeichen-indoor-nextcheck.bbd"),
-		layer_checkbutton([$do_compound->('fragezeichen-nextcheck')],
-				  'str', "$bbbike_rootdir/tmp/fragezeichen-nextcheck.bbd"),
+		[Cascade => $do_compound->('Rare fragezeichen'), -menuitems =>
+		 [
+		  layer_checkbutton([$do_compound->('fragezeichen-outdoor-nextcheck')],
+				    'str', "$bbbike_rootdir/tmp/fragezeichen-outdoor-nextcheck.bbd",
+				    below_above_cb => sub {
+					$main::edit_normal_mode ? (below => $str_layer_level) : (above => $str_layer_level)
+				    },
+				   ),
+		  layer_checkbutton([$do_compound->('fragezeichen-outdoor-nextcheck-categorized')],
+				    'str', "$bbbike_rootdir/tmp/fragezeichen-outdoor-nextcheck-categorized.bbd",
+				    below_above_cb => sub {
+					$main::edit_normal_mode ? (below => $str_layer_level) : (above => $str_layer_level)
+				    },
+				   ),
+		  layer_checkbutton([$do_compound->('fragezeichen-nextcheck')],
+				    'str', "$bbbike_rootdir/tmp/fragezeichen-nextcheck.bbd"),
+		 ],
+		],
 		layer_checkbutton([$do_compound->('Unique matches')],
 				  'str', "$bbbike_rootdir/tmp/unique-matches.bbd",
 				  above => $str_layer_level,
