@@ -124,6 +124,18 @@ SKIP: {
 	my @results = $geocoder->geocode(location => 'This street does not exist', limit => 10);
 	is_deeply \@results, [], 'no results in list context';
     }
+
+    { # option incomplete
+	my @results = $geocoder->geocode(location => 'Dud', limit => 1000, incomplete => 1);
+	cmp_ok scalar(@results), '>', 10, 'got some results';
+	ok( (grep { $_->{display_name} =~ m{^Dudenstraße} } @results), 'got Dudenstraße with incomplete location' );
+    }
+
+    { # option incomplete, with house number
+	my @results = $geocoder->geocode(location => 'Dudenstraße 1', limit => 1000, incomplete => 1);
+	ok scalar(@results), 'got some results';
+	ok( (grep { $_->{display_name} =~ m{^Dudenstraße 10} } @results), 'got e.g. Dudenstraße 10 with incomplete location (street + hnr)' );
+    }
 }
 
 check_parse_string "Dudenstraße 24", { str => "Dudenstraße", hnr => "24" };

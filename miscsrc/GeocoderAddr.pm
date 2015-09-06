@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package GeocoderAddr;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 # experimental geocoder for "_addr" as created by osm2bbd
 
@@ -63,6 +63,7 @@ sub geocode_fast_lookup {
     my($self, %opts) = @_;
     my $location = delete $opts{location} || die "location is missing";
     my $limit = delete $opts{limit} || 1;
+    my $incomplete = delete $opts{incomplete};
     die "Unhandled options: " . join(" ", %opts) if %opts;
 
     my $search_def = $self->parse_search_string($location);
@@ -74,6 +75,10 @@ sub geocode_fast_lookup {
 	if (defined $val && length $val) {
 	    $search_string .= $val;
 	    if ($i != $#fields) {
+		if ($incomplete && join('',map { defined $_ ? $_ : '' } @{$search_def}{@fields[$i+1..$#fields]}) eq '') {
+		    # we're done, and no separator to be set
+		    last;
+		}
 		$search_string .= '|';
 	    } else {
 		$search_string_delimited = 1;
@@ -117,9 +122,10 @@ sub geocode_linear_scan {
     my($self, %opts) = @_;
     my $location = delete $opts{location} || die "location is missing";
     my $limit = delete $opts{limit} || 1;
+    my $incomplete = delete $opts{incomplete};
     die "Unhandled options: " . join(" ", %opts) if %opts;
 
-    my $search_regexp = $self->build_search_regexp($location);
+    my $search_regexp = $self->build_search_regexp($location, $incomplete);
     $search_regexp = qr{$search_regexp};
     my $glob_dir = Strassen->get_global_directives($self->{File});
     open my $fh, $self->{File}
@@ -209,13 +215,14 @@ sub parse_search_string {
 }
 
 sub build_search_regexp {
-    my($self, $location) = @_;
+    my($self, $location, $incomplete) = @_;
 
     my $search_def = $self->parse_search_string($location);
-    my($str, $hnr, $zip, $city) = @{$search_def}{qw(str hnr zip city)};
+    my @fields = qw(str hnr zip city);
 
     my $search_regexp;
-    for my $val ($str, $hnr, $zip, $city) {
+    for my $i (0 .. $#fields) {
+	my $val = $search_def->{$fields[$i]};
 	if (!defined $search_regexp) {
 	    $search_regexp = '^(?i:';
 	} else {
@@ -223,6 +230,9 @@ sub build_search_regexp {
 	}
 	if (defined $val && length $val) {
 	    $search_regexp .= quotemeta($val);
+	    if ($incomplete && join('',map { defined $_ ? $_ : '' } @{$search_def}{@fields[$i+1..$#fields]}) eq '') {
+		$search_regexp .= '[^|]+';
+	    }
 	} else {
 	    $search_regexp .= '[^|]+';
 	}
