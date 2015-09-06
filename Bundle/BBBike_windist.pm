@@ -85,6 +85,12 @@ Geo::Coder::OSM	- Geocoding mit OpenStreetMap-Daten
 
 Text::Unidecode	- Für das Neu-Erzeugen der .bbd-Dateien in data; Fallback für internationale Texte in PDFs
 
+Tie::Handle::Offset	- Für die schnelle Straßen+Hausnummernsuche
+
+Search::Dict 1.07	- Für die schnelle Straßen+Hausnummernsuche
+
+Unicode::Collate 0.60	- Für die schnelle Straßen+Hausnummernsuche
+
 
 =head1 DESCRIPTION
 

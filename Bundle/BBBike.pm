@@ -231,6 +231,12 @@ Starman	- Ein performanterer PSGI-Server als der Standard-Server bei Plack
 
 HTTP::Date	- Für If-Modified-Since-Handling in BBBikeDataDownloadCompat (mod_perl)
 
+Tie::Handle::Offset	- Für die schnelle Straßen+Hausnummernsuche
+
+Search::Dict 1.07	- Für die schnelle Straßen+Hausnummernsuche
+
+Unicode::Collate 0.60	- Für die schnelle Straßen+Hausnummernsuche
+
 
 =head1 DESCRIPTION
 

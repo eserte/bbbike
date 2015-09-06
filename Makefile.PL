@@ -290,6 +290,13 @@ my @req_table =
   [qw/HTTP::Date	0	all	2	cgi/,
    'Für If-Modified-Since-Handling in BBBikeDataDownloadCompat (mod_perl)'],
 
+  [qw/Tie::Handle::Offset	0	all	2|4	base/,
+   'Für die schnelle Straßen+Hausnummernsuche'],
+  [qw/Search::Dict	1.07	all	2|4	base/,
+   'Für die schnelle Straßen+Hausnummernsuche'],
+  [qw/Unicode::Collate	0.60	all	2|4	base/,
+   'Für die schnelle Straßen+Hausnummernsuche'],
+
   ## Maybe in future:
   # DBD::Pg - Strassen::Pg
   # Text::LevenshteinXS - PLZ::Levenshtein
