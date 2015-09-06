@@ -366,10 +366,8 @@ $VERSION = $BBBike::VERSION;
 
 # OS related
 $progname = basename($0);
-# Note that $ENV{HOST} is not generally available (or sometimes only
-# as a shell variable with the same name), especially in my non-tcsh
-# configurations.
-$devel_host = ($ENV{HOST} && $ENV{HOST} =~ /^(biokovo|biokovo-amd64|mosor|vran|cabulja|cvrsnica|spiff|mom|devpc01|devpc01-debian)(\.|$)/i);
+use Sys::Hostname qw(hostname);
+$devel_host = (eval { hostname } =~ /^(biokovo|biokovo-amd64|mosor|vran|cabulja|cvrsnica|spiff|mom|devpc01|devpc01-debian)(\.|$)/i);
 $os =   $^O eq 'MSWin32' || $^O eq 'os2' || $^O eq 'dos' ? 'win'
       : $^O eq 'MacOS'				    	 ? 'mac'
       : 						   'unix';
@@ -4791,7 +4789,7 @@ MainLoop unless $ENV{BBBIKE_TEST_PERFORMANCE};
 ##### Subs ### RELOADER_START ############################################
 
 sub update_via_internet {
-    if ($devel_host && $ENV{HOST} !~ /^devpc01/) {
+    if ($devel_host) {
 	status_message("Kein Update auf biokovo/cabulja/vran/cvrsnica/spiff möglich!", "die");
 	die;
     }

@@ -2793,7 +2793,8 @@ sub fragezeichen_on_route {
 	$txt->insert("end", $res);
 	my $bf = $t->Frame->pack(-fill => 'x');
 	my $printer_needs_utf8;
-	if ($ENV{HOST} && $ENV{HOST} eq 'cvrsnica') { # here cups is running, maybe this is the case for all cups systems?
+	use Sys::Hostname qw(hostname);
+	if (eval { hostname } =~ m{^cvrsnica(\.|$)}) { # here cups is running, maybe this is the case for all cups systems?
 	    $printer_needs_utf8 = 1;
 	}
 	$bf->Button(-text => "Print",
