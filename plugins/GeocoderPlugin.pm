@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION $geocoder_toplevel);
-$VERSION = 3.03;
+$VERSION = 3.04;
 
 BEGIN {
     if (!eval '
@@ -32,6 +32,8 @@ use Msg qw(frommain);
 	eval 'sub Mfmt { sprintf(shift, @_) }';
     }
 }
+
+use Tk::PathEntry;
 
 use BBBikeUtil qw(bbbike_root);
 use BBBikeTkUtil qw(pack_buttonframe);
@@ -98,7 +100,7 @@ sub geocoder_dialog {
 
 	Tk::grid(
 		 $f->Label(-text => 'Street:'),
-		 ($e = $f->Entry(-textvariable => \$street)),
+		 ($e = $f->PathEntry(-textvariable => \$street, -choicescmd => sub {}, -pathcompl => '<Control-Shift-Tab>')),
 		 -sticky => 'w',
 		);
 	$e->focus;
@@ -286,6 +288,17 @@ sub geocoder_dialog {
 		     my $loc = shift;
 		     ($loc->{lon}, $loc->{lat});
 		 },
+		 'suggest' => sub {
+		     my($geocoder, $street, $city) = @_;
+		     if ($street eq '') {
+			 ();
+		     } elsif ($city =~ m{Berlin}) {
+			 my @results = $geocoder->geocode(location => $street, limit => 10, incomplete => 1);
+			 map { my $details = $_->{details}; $details->{street} . (defined $details->{hnr} && length $details->{hnr} ? ' ' . $details->{hnr} : '') } @results;
+		     } else {
+			 ();
+		     }
+		 },
 		},
 
 		## XXX DEL module and API do not work anymore
@@ -319,9 +332,8 @@ sub geocoder_dialog {
 	       );
     $apis{Google_v3}->{$_} = $apis{My_Google_v3}->{$_} for (qw(extract_loc extract_addr extract_short_addr));
 
-    my $do_geocode = sub {
-	my($gc, $loc) = @_;
-			
+    my $do_geocoder_init = sub {
+	my $gc = shift;
 	if ($gc->{require}) {
 	    eval { $gc->{require}->() };
 	} else {
@@ -331,6 +343,12 @@ sub geocoder_dialog {
 	if ($@) {
 	    main::status_message($@, "die");
 	}
+    };
+
+    my $do_geocode = sub {
+	my($gc, $loc) = @_;
+
+	$do_geocoder_init->($gc);
 
 	my $geocoder = $gc->{new}->();
 	my $location = $geocoder->geocode(location => $loc);
@@ -338,6 +356,13 @@ sub geocoder_dialog {
 	require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$location],[qw()])->Indent(1)->Useqq(1)->Dump; # XXX
 
 	$location;
+    };
+
+    my $do_suggest = sub {
+	my($gc, $street, $city) = @_;
+
+	my $geocoder = $gc->{new}->();
+	$gc->{suggest}->($geocoder, $street, $place);
     };
 
     my $get_short_label = sub {
@@ -349,6 +374,19 @@ sub geocoder_dialog {
     my $get_long_address = sub {
 	my($gc, $location) = @_;
 	join("\n", $gc->{extract_addr}->($location), join(",", $gc->{extract_loc}->($location)));
+    };
+
+    my $change_geocoder = sub {
+	my $gc = $apis{$geocoder_api};
+	if ($gc->{suggest}) {
+	    $do_geocoder_init->($gc);
+	    $e->configure(-choicescmd => sub {
+			      my(undef, $text) = @_;
+			      [ $do_suggest->($gc, $text) ];
+			  });
+	} else {
+	    $e->configure(-choicescmd => sub {});
+	}
     };
 
     for my $_api (sort keys %apis) {
@@ -363,8 +401,10 @@ sub geocoder_dialog {
 			  -value => $_api,
 			  -text => $label,
 			  ($color ? (-foreground => $color) : ()),
+			  -command => $change_geocoder,
 			 )->pack(-anchor => 'w');
     }
+    $change_geocoder->();
 
     my $bf = $geocoder_toplevel->Frame->pack(-fill => 'x');
     my $res = $geocoder_toplevel->Scrolled("ROText", -scrollbars => 'oe', -width => 40, -height => 3
