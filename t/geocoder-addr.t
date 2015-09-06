@@ -100,6 +100,30 @@ SKIP: {
 	}
 	check_geocoding "Bahnhofstraße 1, 12555 Berlin", "Bahnhofstraße 1, 12555 Berlin", $bahnhofstrasse_koepenick_bbox;
     }
+
+    { # multiple results
+	my @results = $geocoder->geocode(location => 'Dudenstraße', limit => 5);
+	is scalar(@results), 5, 'got 5 results';
+	for my $i (0..4) {
+	    is $results[$i]->{display_name}, 'Dudenstraße ' . (10+$i) . ', 10965 Berlin', "multiple results, index $i";
+	}
+    }
+
+    { # multiple results, default limit
+	my @results = $geocoder->geocode(location => 'Dudenstraße');
+	is scalar(@results), 1, 'got one result (default)';
+	is $results[0]->{display_name}, 'Dudenstraße 10, 10965 Berlin', 'multiple results with default limit';
+    }
+
+    { # multiple results, huge limit
+	my @results = $geocoder->geocode(location => 'Dudenstraße', limit => 10000);
+	cmp_ok scalar(@results), '<', 10000, 'got less than requested';
+    }
+
+    { # multiple results, but not results
+	my @results = $geocoder->geocode(location => 'This street does not exist', limit => 10);
+	is_deeply \@results, [], 'no results in list context';
+    }
 }
 
 check_parse_string "Dudenstraße 24", { str => "Dudenstraße", hnr => "24" };

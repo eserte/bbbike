@@ -62,6 +62,7 @@ sub geocode {
 sub geocode_fast_lookup {
     my($self, %opts) = @_;
     my $location = delete $opts{location} || die "location is missing";
+    my $limit = delete $opts{limit} || 1;
     die "Unhandled options: " . join(" ", %opts) if %opts;
 
     my $search_def = $self->parse_search_string($location);
@@ -86,17 +87,38 @@ sub geocode_fast_lookup {
     }
 
     my $s = $self->get_lookup_object;
-    my $rec = $s->search_first($search_string, $search_string_delimited);
-    if ($rec) {
-	my $glob_dir = Strassen->get_global_directives($self->{File});
-	return $self->_prepare_result($rec, $glob_dir);
+    if (wantarray) {
+	my @rec;
+	my $first_result = $s->search_first($search_string, $search_string_delimited);
+	if ($first_result) {
+	    push @rec, $first_result;
+	    while (@rec < $limit) {
+		my $result = $s->search_next;
+		last if !$result;
+		push @rec, $result;
+	    }
+	}
+	if (@rec) {
+	    my $glob_dir = Strassen->get_global_directives($self->{File});
+	    return $self->_prepare_results(\@rec, $glob_dir);
+	} else {
+	    return ();
+	}
+    } else {
+	my $rec = $s->search_first($search_string, $search_string_delimited);
+	if ($rec) {
+	    my $glob_dir = Strassen->get_global_directives($self->{File});
+	    return $self->_prepare_result($rec, $glob_dir);
+	}
     }
 }
 
 sub geocode_linear_scan {
     my($self, %opts) = @_;
     my $location = delete $opts{location} || die "location is missing";
+    my $limit = delete $opts{limit} || 1;
     die "Unhandled options: " . join(" ", %opts) if %opts;
+
     my $search_regexp = $self->build_search_regexp($location);
     $search_regexp = qr{$search_regexp};
     my $glob_dir = Strassen->get_global_directives($self->{File});
@@ -105,13 +127,29 @@ sub geocode_linear_scan {
     if ($glob_dir->{encoding}) {
 	binmode $fh, ':encoding('.$glob_dir->{encoding}[0].')';
     }
+    my @rec;
     while(<$fh>) {
 	next if m{^#};
 	if ($_ =~ $search_regexp) {
 	    my $rec = Strassen::parse($_);
-	    return $self->_prepare_result($rec, $glob_dir);
+	    push @rec, $self->_prepare_result($rec, $glob_dir);
+	    last if @rec >= $limit;
 	}
     }
+    if (wantarray) {
+	@rec;
+    } else {
+	$rec[0];
+    }
+}
+
+sub _prepare_results {
+    my($class, $recref, $glob_dir) = @_;
+    my @result;
+    for my $rec (@$recref) {
+	push @result, $class->_prepare_result($rec, $glob_dir);
+    }
+    @result;
 }
 
 sub _prepare_result {
