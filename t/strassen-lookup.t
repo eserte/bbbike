@@ -163,6 +163,29 @@ EOF
     }
 }
 
+{
+    # unicode levels
+    my($tmpfh,$tmpfile) = tempfile(UNLINK => 1, SUFFIX => ".bbd");
+    binmode $tmpfh, ':utf8';
+    print $tmpfh <<'EOF';
+#: encoding: utf-8
+#: note: this file is not sorted yet
+#:
+Alt-Reinickendorf|1|13407|Berlin	HNR 7171,18718
+Alt-Reinickendorf|4-5|13407|Berlin	HNR 7129,18726
+Alt-Reinickendorf|10|13407|Berlin	HNR 7013,18730
+Alt-Reinickendorf|45|13407|Berlin	HNR 6829,18711
+Alt-Reinickendorf|46|13407|Berlin	HNR 6846,18711
+EOF
+    close $tmpfh;
+
+    my($sortedtmpfh,$sortedtmpfile) = tempfile(UNLINK => 1, SUFFIX => "_sorted.bbd");
+    my $s = Strassen::Lookup->new($tmpfile, SubSeparator => '|');
+    $s->convert_for_lookup($sortedtmpfile);
+    my $rec = $s->search_first("Alt-Reinickendorf|4-5|");
+    is $rec->[Strassen::NAME], 'Alt-Reinickendorf|4-5|13407|Berlin', 'hnr 4-5 vs. 45';
+}
+
 sub check_lookup ($$$) {
     my($s, $in_str, $_checks) = @_;
 
