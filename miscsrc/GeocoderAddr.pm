@@ -67,7 +67,7 @@ sub geocode_fast_lookup {
     die "Unhandled options: " . join(" ", %opts) if %opts;
 
     my $search_def = $self->parse_search_string($location);
-    my @fields = qw(str hnr zip city);
+    my @fields = qw(street hnr zip city);
     my $search_string;
     my $search_string_delimited;
     for my $i (0 .. $#fields) {
@@ -178,7 +178,7 @@ sub _prepare_results {
 
 sub _prepare_result {
     my(undef, $rec, $glob_dir) = @_;
-    my($str,$hnr,$zip,$city) = split /\|/, $rec->[Strassen::NAME];
+    my($street,$hnr,$zip,$city) = split /\|/, $rec->[Strassen::NAME];
     my $coord = $rec->[Strassen::COORDS]->[0];
     my($lon,$lat);
     my $coordsystem = $glob_dir->{map} && $glob_dir->{map}[0] ? $glob_dir->{map}[0] : 'standard';
@@ -189,12 +189,12 @@ sub _prepare_result {
     }
     return {
 	    details => {
-			street => $str,
+			street => $street,
 			hnr    => $hnr,
 			zip    => $zip,
 			city   => $city,
 		       },
-	    display_name => "$str $hnr, $zip $city",
+	    display_name => "$street $hnr, $zip $city",
 	    lon => $lon,
 	    lat => $lat,
 	   };
@@ -215,17 +215,17 @@ sub parse_search_string {
 	    last;
 	}
     }
-    my $str = shift @parts;
-    $str =~ s{(s)tr\.}{$1traße};
+    my $street = shift @parts;
+    $street =~ s{(s)tr\.}{$1traße};
     my $city = pop @parts;
     my $hnr;
-    if (defined $str && $str =~ m{^(.*)\s+(\d\S*)$}) {
-	$str = $1;
+    if (defined $street && $street =~ m{^(.*)\s+(\d\S*)$}) {
+	$street = $1;
 	$hnr = $2;
     }
     return {
 	    location => $location,
-	    str      => $str,
+	    street   => $street,
 	    hnr      => $hnr,
 	    zip      => $zip,
 	    city     => $city,
@@ -236,7 +236,7 @@ sub build_search_regexp {
     my($self, $location, $incomplete) = @_;
 
     my $search_def = $self->parse_search_string($location);
-    my @fields = qw(str hnr zip city);
+    my @fields = qw(street hnr zip city);
 
     my $search_regexp;
     for my $i (0 .. $#fields) {

@@ -51,8 +51,8 @@ SKIP: {
     }
 
     # only street, titlecase and lowercase
-    for my $str ('Dudenstraße', 'dudenstraße') {
-	check_geocoding $str, qr{^Dudenstraße}, '13.370467,52.485352 13.386009,52.484715'
+    for my $street ('Dudenstraße', 'dudenstraße') {
+	check_geocoding $street, qr{^Dudenstraße}, '13.370467,52.485352 13.386009,52.484715'
     }
     {
 	my $dudenstr24_bbox = '13.381574,52.485224 13.382067,52.484818';
@@ -138,11 +138,11 @@ SKIP: {
     }
 }
 
-check_parse_string "Dudenstraße 24", { str => "Dudenstraße", hnr => "24" };
-check_parse_string "Dudenstr. 24", { str => "Dudenstraße", hnr => "24" };
-check_parse_string "Dudenstraße 24, Berlin", { str => "Dudenstraße", hnr => "24", city => "Berlin" };
-check_parse_string "Dudenstraße 24, Berlin, 10965", { str => "Dudenstraße", hnr => "24", city => "Berlin", zip => "10965" };
-check_parse_string "Dudenstraße 24, 10965 Berlin", { str => "Dudenstraße", hnr => "24", city => "Berlin", zip => "10965" };
+check_parse_string "Dudenstraße 24", { street => "Dudenstraße", hnr => "24" };
+check_parse_string "Dudenstr. 24", { street => "Dudenstraße", hnr => "24" };
+check_parse_string "Dudenstraße 24, Berlin", { street => "Dudenstraße", hnr => "24", city => "Berlin" };
+check_parse_string "Dudenstraße 24, Berlin, 10965", { street => "Dudenstraße", hnr => "24", city => "Berlin", zip => "10965" };
+check_parse_string "Dudenstraße 24, 10965 Berlin", { street => "Dudenstraße", hnr => "24", city => "Berlin", zip => "10965" };
 
 sub check_geocoding ($$$;$) {
     my($in_street, $expected_street, $bbox, $testname) = @_;
@@ -206,11 +206,11 @@ sub do_complete_file {
 		next;
 	    }
 	}
-	my($str, $hnr, $plz, $city) = split /\|/, $strname;
+	my($street, $hnr, $plz, $city) = split /\|/, $strname;
 	for my $location (
-			  "$str $hnr, $plz $city",
-			  lc("$str $hnr, $plz $city"),
-			  lc("$str $hnr, $plz"),
+			  "$street $hnr, $plz $city",
+			  lc("$street $hnr, $plz $city"),
+			  lc("$street $hnr, $plz"),
 			 ) {
 	    my $res = $geocoder->geocode(location => $location);
 	    if (!$res) {
