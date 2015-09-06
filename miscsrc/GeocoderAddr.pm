@@ -133,29 +133,47 @@ sub geocode_linear_scan {
     if ($glob_dir->{encoding}) {
 	binmode $fh, ':encoding('.$glob_dir->{encoding}[0].')';
     }
-    my @rec;
+    my @recs;
     while(<$fh>) {
 	next if m{^#};
 	if ($_ =~ $search_regexp) {
 	    my $rec = Strassen::parse($_);
-	    push @rec, $self->_prepare_result($rec, $glob_dir);
-	    last if @rec >= $limit;
+	    push @recs, $rec;
+	    last if @recs >= $limit;
 	}
     }
     if (wantarray) {
-	@rec;
+	$self->_prepare_results(\@recs, $glob_dir);
+    } elsif (@recs) {
+	$self->_prepare_result($recs[0], $glob_dir);
     } else {
-	$rec[0];
+	undef;
     }
 }
 
 sub _prepare_results {
     my($class, $recref, $glob_dir) = @_;
-    my @result;
+    my @results;
     for my $rec (@$recref) {
-	push @result, $class->_prepare_result($rec, $glob_dir);
+	push @results, $class->_prepare_result($rec, $glob_dir);
     }
-    @result;
+
+    # Sort house number numerically
+    @results = map {
+	$_->[0];
+    } sort {
+	my $cmp = $a->[1] cmp $b->[1];
+	if ($cmp == 0) {
+	    no warnings 'numeric';
+	    $cmp = $a->[2] <=> $b->[2];
+	}
+	$cmp;
+    } map {
+	my $details = $_->{details};
+	[$_, $details->{street}, defined $details->{hnr} && length $details->{hnr} ? $details->{hnr} : ''];
+    } @results;
+
+    @results;
 }
 
 sub _prepare_result {
