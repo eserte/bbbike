@@ -59,6 +59,7 @@ use BBBikeTest qw(eq_or_diff);
 	 use_exact_streetchooser    => JSON::XS::true,
 	 use_fragezeichen	    => JSON::XS::true,
 	 use_fragezeichen_routelist => JSON::XS::true,
+	 use_heap                   => JSON::XS::false,
 	 use_select		    => JSON::XS::true,
 	 use_utf8		    => JSON::XS::false,
 	 with_cat_display	    => JSON::XS::false,
