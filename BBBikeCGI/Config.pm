@@ -65,6 +65,7 @@ sub the_config {
       osm_data                   => $bool->($var->('osm_data')),
       bbbike_images              => $var->('bbbike_images'),
       bbbike_html                => $var->('bbbike_html'),
+      use_heap                   => $bool->($var->('StrassenNetz::use_heap')),
      };
 }
 
