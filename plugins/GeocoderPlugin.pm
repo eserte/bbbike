@@ -33,8 +33,6 @@ use Msg qw(frommain);
     }
 }
 
-use Tk::PathEntry;
-
 use BBBikeUtil qw(bbbike_root);
 use BBBikeTkUtil qw(pack_buttonframe);
 
@@ -88,6 +86,8 @@ sub destroy_geocoder_dialog {
 
 
 sub geocoder_dialog {
+    require Tk::PathEntry;
+
     destroy_geocoder_dialog();
     $geocoder_toplevel = $main::top->Toplevel(-title => "Geocode");
     $geocoder_toplevel->transient($main::top) if $main::transient;
