@@ -367,7 +367,7 @@ sub geocoder_dialog {
     }
 
     my $bf = $geocoder_toplevel->Frame->pack(-fill => 'x');
-    my $res = $geocoder_toplevel->Scrolled("Text", -scrollbars => 'oe', -width => 40, -height => 3
+    my $res = $geocoder_toplevel->Scrolled("ROText", -scrollbars => 'oe', -width => 40, -height => 3
 					  )->pack(-expand => 1, -fill => "both");
     my $okb =
 	$bf->Button(Name => "ok",
