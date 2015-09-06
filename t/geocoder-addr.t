@@ -87,6 +87,19 @@ SKIP: {
 	check_geocoding 'Ährenweg 10', 'Ährenweg 10, 12683 Berlin', $aehrenweg10_bbox;
 	check_geocoding 'ährenweg 10', 'Ährenweg 10, 12683 Berlin', $aehrenweg10_bbox;
     }
+
+    {
+	# multiple streets with same name
+	my $bahnhofstrasse_schoeneberg_bbox = '13.338995,52.470488 13.340671,52.469699';
+	my $bahnhofstrasse_koepenick_bbox   = '13.574098,52.453420 13.575258,52.452552';
+	check_geocoding "Bahnhofstraße", "Bahnhofstraße 1, 12159 Berlin", $bahnhofstrasse_schoeneberg_bbox; # first one in list
+	check_geocoding "Bahnhofstraße, 12159 Berlin", "Bahnhofstraße 1, 12159 Berlin", $bahnhofstrasse_schoeneberg_bbox;
+	{
+	    local $TODO = "Wrong result";
+	    check_geocoding "Bahnhofstraße, 12555 Berlin", "Bahnhofstraße 1, 12555 Berlin", $bahnhofstrasse_koepenick_bbox;
+	}
+	check_geocoding "Bahnhofstraße 1, 12555 Berlin", "Bahnhofstraße 1, 12555 Berlin", $bahnhofstrasse_koepenick_bbox;
+    }
 }
 
 check_parse_string "Dudenstraße 24", { str => "Dudenstraße", hnr => "24" };
@@ -97,6 +110,7 @@ check_parse_string "Dudenstraße 24, 10965 Berlin", { str => "Dudenstraße", hnr =
 
 sub check_geocoding ($$$;$) {
     my($in_street, $expected_street, $bbox, $testname) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level + 1;
     $testname = defined $testname ? " ($testname)" : '';
     my $res = $geocoder->geocode(location => $in_street);
     ok $res, "got a result for <$in_street>" . $testname;
