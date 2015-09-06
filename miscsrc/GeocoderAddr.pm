@@ -274,3 +274,107 @@ sub get_lookup_object {
 1;
 
 __END__
+
+=head1 NAME
+
+GeocoderAddr - Geo::Coder::* compatible handling of _addr files
+
+=head1 SYNOPSIS
+
+    use GeocoderAddr;
+    my $gc = GeocoderAddr->new_berlin_addr;
+    my $location = $gc->geocode(location => ...);
+    my @locations = $gc->geocode(location => ..., limit => ...);
+
+=head1 DESCRIPTION
+
+Implements geocoding similar to other CPAN modules like
+L<Geo::Coder::Google> for a L<osm2bbd-postprocess>-created file
+C<_addr>. Normally such files are created during the
+L<osm2bbd>+L<osm2bbd-postprocess> conversion process.
+
+=head2 CONSTRUCTORS
+
+=head3 C<< new(file => ...) >>
+
+Create a C<GeocoderAddr> object. The C<file> parameter is mandatory
+and should point to a C<_addr> file.
+
+=head3 C<< new_berlin_addr() >>
+
+Create a C<GeocoderAddr> object for Berlin OSM data.
+
+=head2 METHODS
+
+=head3 C<< check_availability() >>
+
+Return true if an C<_addr> file for the constructed object is really
+available.
+
+=head3 C<< geocode(location => ..., limit => ..., incomplete => ...) >>
+
+Geocode the given location. The C<location> argument is mandatory and
+should be a string consisting of a street name, and optionally house
+number, zip code, and city name. Parsing is done using the
+L</parse_search_string> method.
+
+In scalar context, return a hash element with the following elements:
+
+=over
+
+=item lat
+
+=item lon
+
+=item display_name
+
+=item details
+
+A hash with the following keys: street, hnr, zip, and city.
+
+=back
+
+In list context, a list of such hash elements is returned.
+
+C<limit> limits the number of result elements in list context. If not
+given, defaults to 1.
+
+If C<incomplete> is set to a true value, then it's assumed that
+C<location> contains an incomplete string, which may be suitable for a
+suggestion functionality.
+
+Internally, C<geocode> is implemented either with the
+C<geocode_fast_lookup> method using a fast binary search, or with
+C<geocode_linear_scan> method using a slow linear search. The binary
+search is picked if all prerequisites are met (i.e.
+L<Tie::Handle::Offset>, L<Search::Dict> in version 1.07 or higher, and
+L<Unicode::Collate> in version 0.60 or higher).
+
+=head3 C<< parse_search_string(I<$location>) >>
+
+Do some heuristics and parse the given location string into a hash
+suitable for further processing.
+
+=head3 C<< convert_for_lookup(I<$dest>) >>
+
+Create a sorted version of the C<_addr> file specified in the
+constructor, and write it to the given destination. Used by
+L<osm2bbd-postprocess> internally.
+
+=head1 EXAMPLES
+
+Quick geocoding on the commandline. Somewhat complicated because of
+dealing with command line arguments encoding:
+
+    perl -MI18N::Langinfo=langinfo,CODESET -MData::Dumper -MEncode=decode -Ilib -Imiscsrc -MGeocoderAddr -e '@ARGV = map { $_ = decode(langinfo(CODESET),$_) } @ARGV; warn Dumper(GeocoderAddr->new_berlin_addr->geocode(location => shift))' "Main street 1"
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<Strassen::Lookup>, L<Geo::Coder::Google>, L<Geo::Coder::Googlev3>,
+L<Search::Dict>.
+
+=cut
