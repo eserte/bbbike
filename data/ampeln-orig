@@ -2579,7 +2579,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX temporäre Ampel (wegen Arbeiten an der Staatsoper und an der U-Bahn)
 #: XXX_prog Anforderungsampel
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
-#: last_checked: 2015-08-31
+#: last_checked: 2015-09-07
 #: check_frequency: 45d
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
@@ -2605,31 +2605,18 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #
 #: XXX temporäre Ampel (wegen gesperrten Gehweg?), Ampel ist eigentlich etwas weiter westlich
 #: XXX eigentlich gibt es sogar zwei Fußgängerampeln
-#: last_checked: 2015-08-31
+#: last_checked: 2015-09-07
 #: check_frequency: 60d
 	F::inwork 9812,12145
 # 
-#: next_check_id: INVALIDEN-2014
-#: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße) vvv
-#: XXX Aufhebung der Umleitungsstrecke ab 6. August --- werden die Ampeln ausgeschaltet?
-#: last_checked: 2015-08-10 vvv
-#: check_frequency: 7d vvv
+# REMOVED --- #: next_check_id: INVALIDEN-2014 --- #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße) vvv --- #: XXX Aufhebung der Umleitungsstrecke ab 6. August --- werden die Ampeln ausgeschaltet? --- #: last_checked: 2015-08-10 vvv --- #: check_frequency: 7d vvv
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) --- X::inwork 8732,14098
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) --- X::inwork 8870,13926
 # REMOVED (existiert nicht mehr) ---	X::inwork 8634,13588
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) --- X::inwork 8426,13909
-	X::inwork 8313,13839
+# REMOVED (ausgeschaltet) --- X::inwork 8313,13839
 # REMOVED (existiert nicht mehr) ---	X::inwork 9085,13919
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-# 
-#: next_check_id: INVALIDEN-2014
-#: XXX wird die Ampel hier nach Öffnung der Invalidenstr. aufgehoben?
-#: last_checked: 2015-05-12
-#: next_check: 2015-08-15
-# REMOVED --- X::inwork 8775,13606
-# REMOVED (Antwort: wahrscheinlich ja) --- #: XXX ist diese Ampel permanent?
+# REMOVED (zwar noch eine Baustellenampel, aber die neue steht schon daneben) --- #: next_check_id: INVALIDEN-2014 --- #: XXX wird die Ampel hier nach Öffnung der Invalidenstr. aufgehoben? --- #: last_checked: 2015-05-12 --- #: next_check: 2015-08-15 --- # REMOVED --- X::inwork 8775,13606 --- # REMOVED (Antwort: wahrscheinlich ja) --- #: XXX ist diese Ampel permanent?
 	X 8450,13599
 	X 9070,14058
 	F 17117,18761

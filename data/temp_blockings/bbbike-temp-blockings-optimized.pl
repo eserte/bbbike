@@ -3740,9 +3740,9 @@ userdel	2::inwork 14910,9643 14844,9513
          'from' => 1437289200,
          'id' => 2723,
          'source_id' => 'IM_025684',
-         'text' => 'Bouchéstr.: Baustelle, Fahrbahn zwischen Heidelberger Str. und Jordanstr. gesperrt, auf Gehweg ausweichen, 20.07.2015 09:00 Uhr bis 07.09.2015 17:00 Uhr ',
+         'text' => 'Bouchéstr.: Baustelle, Fahrbahn zwischen Heidelberger Str. und Jordanstr. gesperrt, auf Gehweg ausweichen, 20.07.2015 09:00 Uhr bis 31.10.2015 17:00 Uhr ',
          'type' => 'handicap',
-         'until' => 1441638000
+         'until' => 1446307200
        },
        undef,
        {
