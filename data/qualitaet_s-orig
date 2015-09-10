@@ -2784,7 +2784,7 @@ Resedenstr.: Kopfsteinpflaster	Q2 4274,4808 4332,4819 4515,4966
 Sennockstr.: Asphalt	Q0 9048,6877 8975,6875
 Sennockstr.: Kopfsteinpflaster	Q2 8975,6875 8945,6873
 Arenholzsteig: kleinteiliges Pflaster	Q2+ 8454,6778 8455,6849 8481,6900
-Eresburgstr.: Beton	Q0 8218,6775 8454,6778 8645,6781
+Eresburgstr.: Beton	Q0 8224,6775 8454,6778 8645,6781
 Magirusstr.: Kopfsteinpflaster	Q2 8199,6583 7985,6598
 Egelingzeile: Asphalt	Q0 8194,6384 7976,6403
 Albrechtstr. - Götzstr.: Verbundsteinpflaster	Q1 9389,6348 9404,6392 9453,6415 9460,6519
@@ -16088,6 +16088,10 @@ Karmeliterweg: Kleinpflastersteine	Q2 1868,24633 1924,24672 2003,24702 2120,2474
 Karmeliterweg: Kleinpflastersteine	Q2 2174,24783 2222,24884 2245,25016
 #: corrected_by: ^^^
 #: corrected_by: Wolfhard Schleese (guter Asphalt Q0 -> schlechter Asphalt, policy: Q2)
+#: XXX Instandsetzung vom 19.10.2015 bis 14.11.2015 geplant, danach neuer Asphalt
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.363335.php
+#: next_check: 2015-10-14 (für temp-blockings-Eintrag, danach next_check: 2015-11-14)
+#: priority: #A
 Karmeliterweg: schlecht befahrbarer Asphalt	Q2 1747,24549 1797,24562 1852,24593 1878,24619
 Alemannenstr. (Frohnau): Asphalt	Q0 1738,25243 1767,25098 1775,25019 1750,24942 1730,24860 1732,24798 1735,24738 1736,24722
 #: by: ^^^
@@ -20481,6 +20485,9 @@ Langenauer Weg: Verbundsteinpflaster	Q1 -1719,23372 -1617,23624
 # 
 #: by: olli (liet): vvv
 #: corrected_by: srt (guter Asphalt -> ...)
+#: XXX Instandsetzung vom 14. September 2015 bis zum 16. Oktober 2015 geplant, danach "Natursteinpflasterung"
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.362889.php
+#: next_check: 2015-10-16
 Dinkelsbühler Steig: Asphalt mit starken Schäden	Q2 2615,25225 2649,25170 2694,25132
 #: corrected_by: srt (guter Asphalt -> ...)
 Dinkelsbühler Steig: Kleinsteinpflaster	Q2+ 2694,25132 2775,25092 2816,25037
@@ -23668,7 +23675,8 @@ Landhausstr.: Kopfsteinpflaster	Q2 5314,9588 5342,9559 5343,9377
 Landhausstr.: Kopfsteinpflaster	Q1 5341,8931 5343,8858
 Gasteiner Str.: grobes Kopfsteinpflaster	Q3 4920,9000 4715,8977
 Schrammstr.: grobes Kopfsteinpflaster	Q3 4960,8440 4958,8355
-Eislebender Str. (Wilmersdorf, Charlottenburg): Kopfsteinpflaster	Q2 5686,10468 5568,10535
+#: confirmed_by: srt
+Eislebender Str. (Wilmersdorf, Charlottenburg): Kopfsteinpflaster	Q2 5654,10485 5568,10535
 Los-Angeles-Platz: Kopfsteinpflaster	Q1 5669,10704 5822,10609
 #: corrected_by: srt ("neues Kopfsteinpflaster" -> )
 Elisabethkirchstr.: Kleinsteinpflaster	Q1- 9936,14085 9901,14197 9856,14204 9769,14175 9750,14132

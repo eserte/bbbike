@@ -23830,11 +23830,13 @@ EOF
      },
      { from  => undef, # 
        until => $isodate2epoch->("2015-12-01 00:00:00"), # laut Schild bis Dezember 2015
-       text  => 'Augsburger Str.: Bauarbeiten, Sackgasse an der Rankestr., Umfahrung über Gehweg',
+       text  => 'Augsburger Str./Rankestr.: Bauarbeiten an der Kreuzung, Umfahrung über Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2015-07-31
-userdel	q3::inwork 5780,10542 5627,10637
+#: last_checked: 2015-09-10 vvv
+	q3::inwork 5497,10719 5627,10637 5780,10542
+	q3::inwork 5568,10535 5627,10637 5669,10704
+#: last_checked ^^^
 EOF
      },
      { from  => $isodate2epoch->("2014-12-12 00:00:00"), # 1 Tag Vorlauf
@@ -24153,16 +24155,16 @@ userdel	2::inwork -6474,5144 -6361,5222 -6277,5180 -6037,5371 -5918,5610 -5853,5
 EOF
      },
      { from  => undef,
-       until => $isodate2epoch->("2015-09-01 00:00:00"),
+       until => $isodate2epoch->("2015-09-30 00:00:00"),
        text  => 'Maaßenstr.: Bauarbeiten, gesperrt in Richtung Winterfeldplatz, außerdem Sperrungen in der Winterfeldtstr., bis September 2015',
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150430.1120.401849.html',
        data  => <<EOF,
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5511.html
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150430.1120.401849.html
-#: last_checked: 2015-07-14
-#: next_check: 2015-08-31
+#: last_checked: 2015-09-09
 	q4::inwork; 7033,10328 7060,10221 7080,10098
-	q4::inwork 7080,10098 7038,10087
+# REMOVED ---	q4::inwork 7080,10098 7038,10087
+	q3::inwork 7080,10098 7167,10074
 EOF
      },
      { from  => 1432706400, # 2015-05-27 08:00
@@ -24467,7 +24469,17 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.360026.php',
        data  => <<EOF,
-userdel	q3::inwork 11275,10723 11234,10739 11159,10769 11049,10816
+	q3::inwork 11275,10723 11234,10739 11159,10769 11049,10816
+	q3::inwork 11189,10831 11159,10769 11133,10704
+EOF
+     },
+     { from  => 1442095200, # 2015-09-13 00:00
+       until => 1445032799, # 2015-10-16 23:59
+       text  => 'Dinkelsbühler Steig: zwischen Edelhofdamm und Hohenheimer Straße Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich vom 14. September 2015 bis zum 16. Oktober 2015',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.362889.php',
+       data  => <<EOF,
+userdel	q4::inwork 2615,25225 2649,25170 2694,25132
 EOF
      },
     );

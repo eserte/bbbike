@@ -79,7 +79,13 @@ asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9242,7286 9242,7325 9242,
 asphaltiert, aber mäßiger Zustand (Wurzelschäden), asphaltierte Nebenfahrbahn existiert	RW1; 9238,8410 9233,8597
 asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9233,8597 9229,8718
 	RW1;RW1 8715,7384 8806,7382 8879,7378 8971,7359 9051,7340 9107,7297 9242,7286
-	RW1;RW1 8715,7384 8716,7323 8718,7095 8717,6965 8750,6779 8735,6695 8722,6656 8707,6537 8697,6455 8680,6322 8661,6169 8641,5998 8622,5867 8613,5745
+	RW1;RW1 8715,7384 8716,7323 8718,7095 8717,6965 8750,6779 8735,6695
+#: XXX Radspuren in Bau, zwischenzeitlich keine Radwege mehr vvv
+#: last_checked: 2015-09-09 vvv
+	RW0;RW1 8735,6695 8722,6656 8707,6537 8697,6455 8680,6322
+	RW1;RW0 8680,6322 8661,6169 8641,5998 8622,5867 8613,5745
+#: last_checked ^^^
+#: XXX ^^^
 	RW1;RW3 8613,5745 8600,5580 8593,5491
 	RW1;RW1 8593,5491 8642,5422
 	RW1; 8642,5422 8667,5372 8674,5357
@@ -1158,7 +1164,7 @@ Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW5; 6460,8688 6449,8807 6449,8845 6445
 	RW1;RW1 7402,8208 7446,8200 7497,8168 7582,8123 7639,8091 7710,8051 7733,8023
 #: XXX Wilhelm-Kabus-Str.: eventuell wird der Gehweg Richtung Süden für Radfahrer freigegeben
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4159&options=4
-#: last_checked: 2015-07-23
+#: last_checked: 2015-09-09
 #: check_frequency: 90d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
 	RW2;RW4 7717,7879 7717,7830 7696,7771

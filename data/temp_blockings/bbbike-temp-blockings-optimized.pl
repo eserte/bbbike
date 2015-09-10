@@ -3527,12 +3527,14 @@ userdel	2::inwork -3197,11554 -3075,11510
        undef,
        undef,
        {
-         'data' => '#: last_checked: 2015-07-31
-userdel	q3::inwork 5780,10542 5627,10637
+         'data' => '#: last_checked: 2015-09-10 vvv
+	q3::inwork 5497,10719 5627,10637 5780,10542
+	q3::inwork 5568,10535 5627,10637 5669,10704
+#: last_checked ^^^
 ',
          'from' => undef,
          'id' => 2672,
-         'text' => 'Augsburger Str.: Bauarbeiten, Sackgasse an der Rankestr., Umfahrung über Gehweg',
+         'text' => 'Augsburger Str./Rankestr.: Bauarbeiten an der Kreuzung, Umfahrung über Gehweg',
          'type' => 'handicap',
          'until' => 1448924400
        },
@@ -3658,7 +3660,20 @@ userdel	2::inwork 7306,13418 7451,13504 7630,13584
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5511.html
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150430.1120.401849.html
+#: last_checked: 2015-09-09
+	q4::inwork; 7033,10328 7060,10221 7080,10098
+# REMOVED ---	q4::inwork 7080,10098 7038,10087
+	q3::inwork 7080,10098 7167,10074
+',
+         'from' => undef,
+         'id' => 2705,
+         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150430.1120.401849.html',
+         'text' => 'Maaßenstr.: Bauarbeiten, gesperrt in Richtung Winterfeldplatz, außerdem Sperrungen in der Winterfeldtstr., bis September 2015',
+         'until' => 1443564000
+       },
        {
          'data' => 'userdel	2::inwork 39384,115027 39168,114713 38881,113150
 ',
@@ -3821,7 +3836,8 @@ userdel	q4::inwork; 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
          'until' => 1482501600
        },
        {
-         'data' => 'userdel	q3::inwork 11275,10723 11234,10739 11159,10769 11049,10816
+         'data' => '	q3::inwork 11275,10723 11234,10739 11159,10769 11049,10816
+	q3::inwork 11189,10831 11159,10769 11133,10704
 ',
          'from' => 1441490400,
          'id' => 2734,
@@ -3829,6 +3845,16 @@ userdel	q4::inwork; 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
          'text' => 'Oranienplatz: Sperrung der Fahrbahn wegen Bauarbeiten, Radfahrer müssen auf den Gehweg ausweichen, 07.09.2015 bis voraussichtlich 18.09.2015',
          'type' => 'handicap',
          'until' => 1442613600
+       },
+       {
+         'data' => 'userdel	q4::inwork 2615,25225 2649,25170 2694,25132
+',
+         'from' => 1442095200,
+         'id' => 2735,
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.362889.php',
+         'text' => 'Dinkelsbühler Steig: zwischen Edelhofdamm und Hohenheimer Straße Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich vom 14. September 2015 bis zum 16. Oktober 2015',
+         'type' => 'handicap',
+         'until' => 1445032799
        }
      
 );
