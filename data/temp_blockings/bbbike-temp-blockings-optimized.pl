@@ -3740,7 +3740,7 @@ userdel	2::inwork 14910,9643 14844,9513
        undef,
        {
          'data' => '#: XXX_prog BNP in temp blockings wird zur Zeit weder im CGI noch in der Perl/Tk-Anwendung behandelt
-	BNP:30::trailer=no 10583,15208
+	BNP:20::trailer=no 10583,15208
 ',
          'from' => undef,
          'id' => 2722,
@@ -3815,7 +3815,7 @@ userdel	2::inwork 6851,9365 6771,9458 6727,9497
          'until' => 1448924400
        },
        {
-         'data' => 'userdel	q3::inwork 10530,14452 10511,14418 10426,14262
+         'data' => 'userdel	q3::inwork 10511,14418 10426,14262
 ',
          'from' => 1440971943,
          'id' => 2731,
@@ -3855,6 +3855,25 @@ userdel	q4::inwork; 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
          'text' => 'Dinkelsbühler Steig: zwischen Edelhofdamm und Hohenheimer Straße Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich vom 14. September 2015 bis zum 16. Oktober 2015',
          'type' => 'handicap',
          'until' => 1445032799
+       },
+       {
+         'data' => 'userdel	q4::inwork; 9727,17804 9835,17797 10053,17777 10179,17772 10311,17764 10459,17754
+',
+         'from' => 1438588200,
+         'id' => 2736,
+         'source_id' => 'IM_025833',
+         'text' => 'Florastr.: Baustelle zwischen Wollankstr. und Mühlenstr., Fahrtbahn in Richtung S- und U-Bahnhof Pankow gesperrt, 04.08.2015 bis 13.11.2015 ',
+         'type' => 'handicap',
+         'until' => 1447430400
+       },
+       {
+         'data' => 'userdel	q4::inwork 4492,20214 4622,20292 4718,20341 4879,20427
+',
+         'from' => 1442080673,
+         'id' => 2737,
+         'text' => 'Am Rathauspark: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis November 2015',
+         'type' => 'handicap',
+         'until' => 1448924400
        }
      
 );

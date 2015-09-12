@@ -337,7 +337,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6163 (Stand der Planung?)
 #: by: http://www.berlin.de/ba-mitte/bvv-online/___tmp/tmp/45081036147184117/147184117/00116327/27-Anlagen/02/MA_1534_IV.pdf
 #: note: Anforderungsampel
-#: last_checked: 2015-08-31
+#: last_checked: 2015-09-12
 #: check_frequency: 7d
 	F 10511,14418
 	X 10002,14092
@@ -979,7 +979,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3570,17938
 	X 3319,18043
 	X 2579,19345
-	X 2497,19503
+	X 2488,19520
 	X 2394,19697
 	X 2169,20095
 	X 2109,20188
@@ -2014,6 +2014,7 @@ Industriebahn	B0 -2410,13746
 	F -6170,6016
 	F -5877,6308
 	F 8831,13973
+	X 8870,13926
 	X 8442,14456
 #: note: Anforderungsampel (2x)
 #: XXX_prog: Ampel ist für Radfahrer, die den Bersarinplatz nicht auf der Fahrbahn umrunden, quasi verpflichtend
@@ -2382,7 +2383,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 11750,16354
 	X 8901,12008
 	X 18198,13816
-#: note: Abends meist (immer?) ausgeschaltet, und auch sonntags (Sa 2014-09-27 15:30 eingeschaltet)
+#: note: Abends meist (immer?) ausgeschaltet, und auch sonntags (Sa 2014-09-27 15:30 eingeschaltet; Sa 2015-09-12 17:30 eingeschaltet)
 #: note: Anforderungsampel
 #: off: night
 #: off: Sunday (seen 2014-09-21 afternoon, 2015-03-15 afternoon, 2015-05-10 afternoon, 2015-08-09 afternoon)
@@ -2505,7 +2506,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: zweifache Anforderungsampel in/aus Richtung Rathausstr.
 #: XXX_prog: in Richtung Osten eigentlich nur eine Fußgängerampel, in Richtung Westen eine richtige Ampel
 	X 15670,12022
-	F 4864,20247
+	F 4854,20252
 	F 16602,25646
 	F -188,22682
 	X -2295,16951
@@ -2829,6 +2830,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id ^^^
 #: note: Anforderung für Radfahrer & Kontaktschleife
 	X 24801,11261
+#: off: weekend (gesehen: Sa 2015-09-12 nachmittags)
 	F 9274,13963
 	X 9151,13941
 # 

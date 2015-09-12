@@ -394,6 +394,7 @@ Steigung 3.5% (Helmstr.)	St; 7444,9148 7490,9116
 Steigung 3.5% (Crusiusstr.)	St; 2198,12178 2112,12187
 Steigung 3.5% (Contessaweg)	St; -7692,4465 -7632,4552
 Steigung 3.5% (Contessaweg)	St; -7632,4552 -7588,4618
+Steigung 3.5% (Bürgersruh)	St; 8118,22809 8032,23000
 Steigung 3.5% ((Rossiner Platz - Rominter Allee))	St; -133,12217 -153,12183
 Steigung 3.5% ((Rossiner Platz - Rominter Allee))	St; -107,12220 -133,12217
 Steigung 3.5% ((Parkweg Reichsstr.))	St; -264,13009 -208,12938
@@ -474,6 +475,7 @@ Steigung 3.2% (Friedenstr. (Wannsee))	St; -7332,662 -7368,794
 Steigung 3.2% (Filandastr.)	St; 5681,5743 5683,5672
 Steigung 3.2% (Feldstr. (Gesundbrunnen))	St; 9048,14681 9108,14777
 Steigung 3.2% (Drössestr.)	St; 21169,1279 21078,1168
+Steigung 3.2% (Bürgersruh)	St; 8032,23000 7930,23227
 Steigung 3.2% (Brentanostr.)	St; 4027,6088 4010,5888
 Steigung 3.2% (Brauhausberg (B2) (Potsdam))	St; -12355,-2263 -12358,-2278
 Steigung 3.2% (Bernauer Str. (Gesundbrunnen, Mitte))	St; 9472,14478 9621,14624
@@ -1294,6 +1296,7 @@ Steigung 1.8% (Akazienstr. (Schöneberg))	St; 7107,9030 7201,8870
 Steigung 1.8% (Ahornallee (Westend))	St; 1806,12289 1795,12247
 Steigung 1.8% ((Parkweg Swinemünder Str.))	St; 10189,14649 10228,14564
 Steigung 1.8% ((Methfesselstr. - Denkmal im Viktoriapark))	St; 8962,9048 8943,9098
+Steigung 1.8% ((Freizeitpark Lübars, östlicher Weg))	St; 7866,23073 7841,23122
 Steigung 1.7% (Zum Alten Windmühlenberg)	St; 19206,1809 19279,1779
 Steigung 1.7% (Wrangelstr. (Steglitz))	St; 4640,5411 4527,5475
 Steigung 1.7% (Weinmeisterhornweg)	St; -4251,11112 -4306,11126
@@ -1366,6 +1369,7 @@ Steigung 1.7% (Friedenstr. (Friedrichshain))	St; 12085,13377 11984,13473
 Steigung 1.7% (Fidicinstr.)	St; 9799,8962 9654,8991
 Steigung 1.7% (Ermanstr.)	St; 4549,6106 4484,5981
 Steigung 1.7% (Ermanstr.)	St; 4484,5981 4419,5842
+Steigung 1.7% (Bürgersruh)	St; 8118,22809 8130,22772
 Steigung 1.7% (Böttgerstr.)	St; 8582,16052 8655,15979
 Steigung 1.7% (Brodauer Str.)	St; 22554,11681 22633,11769
 Steigung 1.7% (Bernau - Ruhlsdorf (- Marienwerder))	St; 22445,31556 22517,31745
@@ -1386,6 +1390,13 @@ Steigung 1.7% ((zur Andreas-Rabe-Siedlung))	St; 6908,23244 6967,23278
 Steigung 1.7% ((Parkweg Reichsstr.))	St; -45,12778 23,12739
 Steigung 1.7% ((Parkweg Reichsstr.))	St; -103,12841 -45,12778
 Steigung 1.7% ((Machandelweg - Reichsstr.))	St; -85,12852 -103,12841
+Steigung 1.7% ((Freizeitpark Lübars, östlicher Weg))	St; 8060,22744 7922,23047
+Steigung 1.7% ((Freizeitpark Lübars, östlicher Weg))	St; 8054,22688 8060,22744
+Steigung 1.7% ((Freizeitpark Lübars, östlicher Weg))	St; 7922,23047 7866,23073
+Steigung 1.7% ((Freizeitpark Lübars))	St; 7866,23073 7833,23081
+Steigung 1.7% ((Freizeitpark Lübars))	St; 7833,23081 7812,23079
+Steigung 1.7% ((Bürgersruh - Freizeitpark Lübars))	St; 8130,22772 8070,22693
+Steigung 1.7% ((Bürgersruh - Freizeitpark Lübars))	St; 8070,22693 8054,22688
 Steigung 1.7% ((Am Niederfeld/Kressenweg - Berliner Balkon))	St; 23788,11042 23928,11038
 Steigung 1.7% ((Am Niederfeld/Kressenweg - Berliner Balkon))	St; 23640,11025 23788,11042
 Steigung 1.7% ((Am Niederfeld/Kressenweg - Berliner Balkon))	St; 23575,10972 23640,11025
@@ -1910,7 +1921,7 @@ Steigung 1.2% (Boelckestr.)	St; 8660,8454 8616,8605
 Steigung 1.2% (Bernauer Str. (Gesundbrunnen, Mitte))	St; 9410,14410 9472,14478
 Steigung 1.2% (Bernauer Str. (Gesundbrunnen, Mitte))	St; 9400,14400 9410,14410
 Steigung 1.2% (Berliner Str. (Wilmersdorf))	St; 4451,8874 4324,8899
-Steigung 1.2% (Benekendorffstr.)	St; 6407,23553 6457,23577
+Steigung 1.2% (Benekendorffstr.)	St; 6407,23553 6454,23582
 Steigung 1.2% (Benekendorffstr.)	St; 6325,23422 6407,23553
 Steigung 1.2% (Belziger Str.)	St; 7107,9030 7308,9163
 Steigung 1.2% (Belforter Str.)	St; 11435,14023 11299,14112
@@ -1927,7 +1938,9 @@ Steigung 1.2% (Am Schonungsberg)	St; 30655,4186 30605,4028
 Steigung 1.2% (Adolfstr. (Kaulsdorf))	St; 22751,11381 22743,11540
 Steigung 1.2% ((Mauerweg Spandau))	St; -7261,12299 -7342,12349
 Steigung 1.2% ((Benekendorffstr - Lübars))	St; 6674,23683 6744,23695
-Steigung 1.2% ((Benekendorffstr - Lübars))	St; 6457,23577 6674,23683
+Steigung 1.2% ((Benekendorffstr - Lübars))	St; 6623,23678 6674,23683
+Steigung 1.2% ((Benekendorffstr - Lübars))	St; 6481,23605 6623,23678
+Steigung 1.2% ((Benekendorffstr - Lübars))	St; 6454,23582 6481,23605
 Steigung 1.1% (Zoppoter Str.)	St; 3346,7369 3314,7269
 Steigung 1.1% (Zabel-Krüger-Damm)	St; 6601,23412 6429,23291
 Steigung 1.1% (Zabel-Krüger-Damm)	St; 4800,22418 4718,22384

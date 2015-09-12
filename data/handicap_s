@@ -6,13 +6,11 @@
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14286,11186 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraße ausgewiesen	q3::inwork; 14442,11101 14468,11203
 Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
-Haasestr.: Einbahnstraße wegen Bauarbeiten	q4::inwork; 14328,11320 14286,11186
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
 Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
 Schützenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10116,11485 9949,11470
 Melchiorstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 11542,11342 11726,11265 11921,11185
-Linienstr.: einige Fußgänger, Baustelle	q2::inwork 10718,13625 10740,13621
 zur Keibelstr.: Baustraße, Durchfahrt für Radfahrer nicht erlaubt	q4::inwork 10976,13229 11045,13183
 Wadzeckstr.: Bauarbeiten, auf Gehweg ausweichen, Bordsteine	q4::inwork 11146,13328 11201,13289
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9984,12426 9996,12401 10058,12290
@@ -132,6 +130,7 @@ Kolonie Albrechtshöhe: einige Fußgänger	q1 10260,5953 10215,5959 9955,5993
 Am Landwehrkanal: Parkweg	q1 12739,9576 12796,9548 12919,9584 12981,9672 13086,9825 13145,9861 13230,9981
 Uferweg an den Treptowers: enger und kurviger Weg	q3 14500,9856 14465,9900 14464,9927 14509,9997 14432,10059 14373,10046
 Denewitzstr.: kombinierter Fuß- und Radweg	q1 8058,10306 7947,10155
+Linienstr.: einige Fußgänger	q1 10718,13625 10740,13621
 Linienstr.: Gehweg	q2 11104,13456 11131,13455
 Böcklerpark: gemeinsamer Fuß- und Radweg	q2 10885,10045 10723,10088 10521,10126
 Böcklerpark: enge Kurven, manchmal Fußgänger auf dem Radweg	q3 10967,10092 10917,10068 10885,10045
@@ -210,7 +209,6 @@ zum Volksparksteg: kombinierter Rad- und Fußweg, enge Kurven	q3 5533,8478 5531,8
 Volksparksteg: kombinierter Rad- und Fußweg	q1 5531,8458 5417,8519
 Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5465,8511 5417,8519 5347,8562
 (zur Thomas-Dehler-Str.): Fußgänger, Bordstein	q4 6657,11467 6716,11439
-Ernststr.: Fußgänger	q2 2497,19503 2700,19527
 (S-Bahnunterführung Wartenberg): Fußgänger	q1 16939,18652 16998,18695
 (S-Bahnunterführung Wartenberg): Rampe	q3 16998,18695 17024,18674 17008,18701
 (S-Bahnunterführung Wartenberg): Fußgänger	q2 17008,18701 17068,18736
@@ -394,10 +392,10 @@ Pankeweg: Fußgänger	q1 8759,16684 8776,16718 8839,16873 8904,17059 8927,17119 90
 Pankeweg: Fußgänger	q1 8839,16873 8823,16877 8804,16881
 Pankeweg: Fußgänger	q1 8721,16689 8804,16881 8866,17075
 Pankeweg: Fußgänger	q1 8303,15298 8260,15226 8266,15134
-Uferweg am Tegeler Hafen: Fußgänger	q1 1259,20303 1349,20345 1534,20421 1572,20412 1617,20393 1655,20388 1756,20405 1858,20431 1863,20478
+Uferweg am Tegeler Hafen: Fußgänger	q1 1259,20303 1349,20345 1534,20421 1572,20412 1610,20385 1655,20388 1756,20405 1858,20431 1863,20478
 (Uferweg am Tegeler Hafen - Berliner Str.): Fußgänger	q1 1863,20478 1929,20501
 (Berliner Str. - Tegeler Hafen): Fußgänger	q1 1872,20683 1741,20571
-(Tegeler Hafen - An der Mühle): Fußgänger, teilweise eng	q2 1756,20405 1736,20441 1742,20464 1762,20505 1761,20539 1741,20571 1721,20603 1697,20623 1687,20645 1668,20670 1630,20731
+(Tegeler Hafen - An der Mühle): Fußgänger, teilweise eng	q2 1756,20405 1736,20441 1733,20470 1753,20511 1761,20539 1741,20571 1721,20603 1697,20623 1687,20645 1668,20670 1630,20731
 (Brücke über den Tegeler Fließ): eng, Fußgänger	q3 2371,21524 2352,21559
 Egidysteg: eng, Fußgänger	q3 3094,22216 3134,22153
 (Egidysteg - Mühlenfeldstr.): Fußgänger	q1 3118,22294 3094,22233 3094,22216
@@ -850,7 +848,7 @@ Papendickstr.: enge Straße	q0 17071,16174 17073,16222 17135,16334 17170,16365
 Am Wiesenweg: Fußgänger	q1 21977,988 21857,989 21708,937 21683,906
 Grasmückenweg: Fußgänger, eng	q2 14877,3475 14822,3409
 (Scharnweberstr. - Berenhorststr.): Fußgänger	q1 4801,17623 4816,17712
-Ernststr.: wendelförmige Rampen	q2 2821,19559 2780,19548 2700,19527
+Ernststr.: wendelförmige Rampen	q4 2821,19559 2780,19548 2700,19527
 An der Kremmener Bahn: Fußgänger	q1 -304,22578 -515,22801 -700,22998
 Straße 366: Bodenschwellen	q2 -3145,22004 -3281,22011
 Verlängerte Fährstr.: enge Straße	q1 -3419,22102 -3412,22058 -3407,22028 -3402,21994 -3397,21946 -3394,21915 -3367,21860
@@ -1493,6 +1491,7 @@ Am Landwehrkanal: einige Fußgänger	q1 12897,9365 12889,9426 12905,9470 13109,974
 Knobelsdorffstr.: einige Moabiter Kissen	q0 3117,11852 2953,11830 2728,11805 2547,11788
 Wegenerstr.: ein Moabiter Kissen	q0 4477,9176 4619,9200
 Sigmaringer Str.: ein Moabiter Kissen	q0 4700,9179 4715,8977
+(Wittenauer Str. - Zabel-Krüger-Damm): einige Fußgänger	q1 6278,22615 6254,22633 6226,22712 6234,22759 6243,22797 6118,22947 6064,23014
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schüler	q2 7242,8586 7288,8635
@@ -1979,7 +1978,7 @@ Kreuzritterstr.: enge Straße	q1 2252,24700 2297,24682 2359,24677 2402,24687 2471
 Askaloner Weg: enge Straße	q1 2402,24687 2407,24657 2384,24603 2311,24546 2262,24505
 Juttastr.: enge Straße	q1 1072,4542 949,4366
 Herbert-Baum-Str.: enge Straße	q0 13826,16026 13869,15912 13904,15818 13939,15723 13964,15656 13989,15589
-Sendener Weg: enge Straße	q0 964,18321 1040,18283 1178,18223 1221,18332 1281,18487 1346,18662
+Sendener Weg: enge Straße	q0 964,18321 1141,18238 1186,18242 1221,18332 1281,18487 1346,18662
 Gilgenburger Str.: enge Straße	q1 24387,5672 24434,5645 24549,5685 24666,5726
 Blochmannstr.: enge Straße	q1 5097,988 5051,959 5036,949 4986,959 4925,961 4862,975 4788,1023 4702,1147 4634,1245
 Schenkestr.: enge Straße	q1 17961,8312 17794,8429
@@ -2300,8 +2299,7 @@ Narzissenpfad: enge Straße	q0 -7387,14951 -7523,14969
 (Am Sandkrug, Entenschnabel - Am Rosenanger): starke Steigung, eine 30cm-Stufe	q4; 3535,24626 3492,24667 3481,24686 3472,24709
 (Lankegrabenpark): langsam befahrbar, eng, Hundebetrieb	q3 7365,3199 7409,3331 7458,3451
 Verlängerte Schulzendorfer Str.: Fußgänger	q1 2150,22464 2015,22435 1834,22421 1583,22376 1505,22368 1411,22365 1266,22401 1094,22504 670,22646 636,22658 587,22646 520,22624 439,22620 289,22618 194,22547
-(Heinz-Brandt-Str./Mauerweg - Uhlandstr.): Trampelpfad, tragen über Schienen der stillgelegten Bahnstrecke	q4 7297,20629 7321,20588
-(Heinz-Brandt-Str./Mauerweg - Uhlandstr.): Trampelpfad, tragen über Schienen der stillgelegten Bahnstrecke	q3 7321,20588 7415,20617
+(Heinz-Brandt-Str./Mauerweg - Uhlandstr.): Trampelpfad	q3 7306,20635 7316,20623 7321,20588 7415,20617
 Eichborndamm: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 4240,19019 4232,18981
 Archibaldweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 15674,10851 15870,10938
 Richterstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 22092,999 22120,886

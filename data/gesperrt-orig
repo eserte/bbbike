@@ -151,7 +151,7 @@ Schulze-Delitzsch-Platz	1 11155,11750 11060,11753 11024,11789
 Schulze-Delitzsch-Platz	1 11024,11789 11073,11774 11155,11750
 #: XXX Öffnung der Einbahnstraße für Radfahrer?
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6514
-#: last_checked: 2015-09-07
+#: last_checked: 2015-09-12
 Weydemeyerstr.	1s:q4 11896,13075 11904,13052 12053,12984 12054,12903
 Dorotheenstr.	1 9870,12657 9744,12601 9682,12593 9580,12581 9454,12558
 Dorotheenstr. (Straßenbahn)	1s:q2 9454,12558 9330,12529
@@ -1760,6 +1760,7 @@ abgeschlossenes Tor	3 * 15835,15092 *
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (Schienen der stillgelegten Heidekrautbahn)	0:20 7316,20623
 tragen	0:15 47027,49988
 tragen	0:15 47004,50002
 tragen (4+3+4 Stufen) bzw. Naturrampe benutzen	0:15 4689,22058
@@ -2070,7 +2071,9 @@ Treppe	0:40 1888,42795
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter	BNP:5::trailer=10 4626,20960
 #: note: Umfahrung auf Gehwegabschnitt
+Drängelgitter	BNP:5::trailer=10 7764,21271
 Schranke	BNP:3::trailer=10 11392,10520
 Drängelgitter (2x)	BNP:5::trailer=10 22187,13304
 #: by: radzeit 2/2015 vvv
@@ -2253,7 +2256,8 @@ Poller, lichte Breite 100cm	BNP:1::trailer=5 -7109,15286
 Schranke	BNP:1::trailer=5 -3300,14039
 weites Drängelgitter	BNP:1::trailer=5 -3437,14029
 Drängelgitter	BNP:3::trailer=10 7928,10094
-# REMOVED (Einschränkung existiert nicht mehr) --- enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark	BNP:30::trailer=no 10583,15208
+# XXX_prog kann entfernt werden, sobald temp_blockings mit BNP umgehen kann, siehe Eintrag dort
+enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark, falls Tor gesperrt ist	BNP:20::trailer=no 10583,15208
 Tor zum Friedrich-Ludwig-Jahn-Sportpark, lichte Breite 85cm	BNP:5::trailer=no 10781,15438
 #: by: Stefan Klinkusch: vvv
 Metallstange	BNP:3::trailer=10 -5070,11199
@@ -2752,7 +2756,7 @@ Uferstr. (Niederschöneweide): abgesperrt	2::inwork 17639,6227 17843,6083
 #: XXX siehe auch aufgehobene Einbahnstraßenregelungen weiter oben vvv
 #: source_id: IM_023816 vvv
 #: XXX vermutlich bis März 2016 andauernd, laut Schild bis Februar 2016
-#: last_checked: 2015-07-24 vvv
+#: last_checked: 2015-09-11 vvv
 #: next_check: 2016-02-01 vvv
 Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081
 Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081
@@ -2880,7 +2884,7 @@ am Osthafen: durch Barriere versperrt	2::inwork 14259,10309 14463,10212
 #: osm_watch: way id="129104626" version="4"
 #: XXX culdesac-orig entfernen, sobald die Verlängerung erfolgt ist
 #: by: http://www.rbb-online.de/politik/beitrag/2014/07/bnd-zentrale-berlin-verzoegerung-vollstaendiger-umzug-bis-2017.html
-#: last_checked: 2015-09-07
+#: last_checked: 2015-09-12
 #: check_frequency: 90d
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Durchfahrt verboten	2 8251,14337 8442,14456
 # 
@@ -3054,13 +3058,13 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: osm_watch: way id="178742651" version="5"
 #: osm_watch: way id="23099024" version="5"
 #: osm_watch: way id="103531998" version="2"
-#: last_checked: 2013-10-24 vvv
-#: next_check: 2014-06-30 vvv
-Tegeler Hafen: Weg über Insel gesperrt	2 1756,20405 1736,20441 1742,20464 1762,20505 1761,20539
+#: last_checked: 2015-09-12 vvv
+#: check_frequency: 90d vvv
+# REMOVED (fertig) --- Tegeler Hafen: Weg über Insel gesperrt	2 1756,20405 1736,20441 1733,20470 1753,20511 1761,20539
 Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603
 # REMOVED (Treppe!) --- #: XXX jetzt werden Häuser hier gebaut; wird später das Durchfahren möglich sein? --- Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1863,20478 1826,20492 1761,20539
-Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1761,20539 1741,20571
-#: next_check: ^^^
+# REMOVED (fertig) --- Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1761,20539 1741,20571
+#: check_frequency: ^^^
 #: last_checked ^^^
 # 
 # REMOVED --- laut http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a115_avus/de/bau.shtml?y=20120731 seit April schon offen! --- #: by: somebody via phone call ---#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a115_avus/de/bau.shtml --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1106/nachricht4396.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1110/nachricht4504.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1201/nachricht4557.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1206/nachricht4691.html---#: by: INKO_109786---#: last_checked: 2012-07-05---#: next_check: 2012-11-15---Hüttenweg: Sperrung wegen Bau an der Autobahn, wahrscheinlich bis Ende November 2012	2:inwork -739,6838 -927,6888

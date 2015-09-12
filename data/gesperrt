@@ -2153,6 +2153,7 @@ abgeschlossenes Tor	3 4898,22459 5083,22149 5086,22145
 abgeschlossenes Tor	3 5086,22145 5083,22149 4898,22459
 abgeschlossenes Tor	3 15313,15393 15835,15092 15867,15073
 abgeschlossenes Tor	3 15867,15073 15835,15092 15313,15393
+tragen (Schienen der stillgelegten Heidekrautbahn)	0:20:-39 7316,20623
 tragen	0:15:-58 47027,49988
 tragen	0:15:-130 47004,50002
 tragen (4+3+4 Stufen) bzw. Naturrampe benutzen	0:15:-38 4689,22058
@@ -2371,6 +2372,8 @@ tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
 tragen (6 Stufen)	0:15:-90 4608,63927
 Treppe	0:40:-131 1888,42795
+Drängelgitter	BNP:5:-65:trailer=10 4626,20960
+Drängelgitter	BNP:5:32:trailer=10 7764,21271
 Schranke	BNP:3:-105:trailer=10 11392,10520
 Drängelgitter (2x)	BNP:5:2:trailer=10 22187,13304
 Drängelgitter	BNP:5:-128:trailer=10 13940,23486
@@ -2526,6 +2529,7 @@ Poller, lichte Breite 100cm	BNP:1:-255:trailer=5 -7109,15286
 Schranke	BNP:1:-123:trailer=5 -3300,14039
 weites Drängelgitter	BNP:1:-237:trailer=5 -3437,14029
 Drängelgitter	BNP:3:-79:trailer=10 7928,10094
+enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark, falls Tor gesperrt ist	BNP:20:-19:trailer=no 10583,15208
 Tor zum Friedrich-Ludwig-Jahn-Sportpark, lichte Breite 85cm	BNP:5:-108:trailer=no 10781,15438
 Metallstange	BNP:3:-72:trailer=10 -5070,11199
 Metallstange	BNP:3:-72:trailer=10 -5082,11155
@@ -2842,9 +2846,7 @@ Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18680,-1506 18798,-1581 18853,-1656 18866,-1674
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
-Tegeler Hafen: Weg über Insel gesperrt	2 1756,20405 1736,20441 1742,20464 1762,20505 1761,20539
 Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603
-Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1761,20539 1741,20571
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 Behrenstr.: Bauarbeiten, vollständig gesperrt	2:inwork 9743,12239 9801,12245
 Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9876,12298

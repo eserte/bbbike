@@ -621,7 +621,7 @@ südwestliches Sackgassenende	culdesac 5615,23625
 nordöstliches Sackgassenende	culdesac 5811,23855
 	culdesac 5839,24014
 #: note: explizit ausgeschildert "Radfahrer frei"
-	culdesac_pseudo 5920,22603
+	culdesac_pseudo 5917,22606
 südöstliches Sackgassenende	culdesac 6175,22803
 nordwestliches Sackgassenende	culdesac 6115,22877
 südwestliches Sackgassenende	culdesac 6254,22546
@@ -884,7 +884,7 @@ Fähranleger	culdesac_pseudo -1989,18378
 	culdesac_pseudo 9132,13187
 #: next_check_id: BND-2014
 #: XXX wird bei der Verlängerung der Ida-von-Arnim-Str. aufgehoben
-#: last_checked: 2015-06-08
+#: last_checked: 2015-09-12
 #: check_frequency: 90d
 	culdesac 8251,14337
 #: next_check_id: SUEDPANKE-2014
@@ -897,10 +897,10 @@ Tor	culdesac 8388,13993
 Flughafengelände	culdesac_pseudo 9300,8027
 #: next_check_id: SCHOENEBERGERSCHLEIFE-2015 vvv
 #: XXX: wird bei der Verlängerung der Schöneberger Schleife aufgehoben vvv
-#: next_check: 2015-09-09 vvv
+#: last_checked: 2015-09-09 vvv
 	culdesac 7998,8317
 	culdesac 8204,9001
-#: next_check ^^^
+#: last_checked ^^^
 #: XXX ^^^
 #: next_check_id ^^^
 Berlinische Galerie, Sackgassenende	culdesac 9966,10874
@@ -1107,10 +1107,17 @@ nördliches Sackgassenende	culdesac 24716,12081
 Sackgassenende, NSG Fauler See	culdesac_pseudo 16381,16969
 westliches Sackgassenende	culdesac 20281,11341
 östliches Sackgassenende	culdesac 20413,11334
+	culdesac 8130,22772
+östliches Sackgassenende	culdesac 6454,23582
+	culdesac 2031,18184
+	culdesac 1375,18209
+	culdesac 2211,18257
 # 
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo 2700,19527
+	culdesac_pseudo 7488,20645
 	culdesac_pseudo 8224,6775
 	culdesac_pseudo 8481,6900
 	culdesac_pseudo 8092,13467
@@ -1357,7 +1364,7 @@ Weiterfahrt in den Friedhof möglich	culdesac_pseudo 2387,10131
 	culdesac_pseudo 2150,22464
 	culdesac_pseudo 6563,21425
 	culdesac_pseudo 30133,-3840
-	culdesac_pseudo 1663,18166
+	culdesac_pseudo 1661,18161
 #: note: von beiden Seiten
 	culdesac_pseudo 1896,19801
 	culdesac_pseudo 2469,20812
