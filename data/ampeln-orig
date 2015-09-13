@@ -2054,7 +2054,8 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	F 10515,15045
 	X 21163,15289
 	X 23565,15993
-	B0 20722,6971
+#: note: hier gibt es Güterverkehr
+	B 20722,6971
 	B0 14895,1842
 	B0 14985,1801
 	B0 15350,1636
@@ -2786,7 +2787,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_prog eigentlich nur für Radfahrer Richtung Südosten relevant vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
 #: source_id: IM_023532 (Gesamtmaßnahme bis Ende Juni 2016) vvv
-#: last_checked: 2015-07-04 vvv
+#: last_checked: 2015-09-13 vvv
 #: check_frequency: 90d vvv
 	F 16886,6665
 	F 16646,6925

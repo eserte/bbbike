@@ -893,7 +893,7 @@ Wuhlewanderweg: guter Asphalt	Q0 22030,6600 22097,6414 22146,6338 22214,6271 222
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22243,6125 22204,6016 22172,5928 22135,5882 22084,5877
 # REMOVED (nein, hier passiert vorerst nichts, siehe 2. URL) --- #: XXX eventuell passiert hier noch was bzgl. Neupflasterung? --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4258&options=4 (Neupflasterung) --- #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/verwaltungbzbm/mdv_vii_12.pdf?start&ts=1347456072&file=mdv_vii_12.pdf --- #: next_check: 2012-09-01
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bvv/mdv_vii_30.pdf?start&ts=1397460445&file=mdv_vii_30.pdf (Sanierung 2015)
-#: last_checked: 2015-06-21
+#: last_checked: 2015-09-13
 #: check_frequency: 90d
 Wuhlewanderweg: Verbundsteine, teilweise etwas uneben	Q1- 22084,5877 21846,5856 21744,5804 21602,5685 21507,5620
 Hämmerlingstr.: Asphalt	Q0 21683,6946 21774,6880 21833,6810 21861,6719 21913,6554 21984,6317 22000,6245 22033,6144 22075,5996 22083,5899 22084,5877 22089,5782 22092,5673 22095,5585
@@ -2809,7 +2809,7 @@ Am Carlsgarten: Asphalt	Q0 18709,8423 18799,8413 18875,8365 18914,8341 18956,832
 Am Carlsgarten: Beton	Q0- 19456,7956
 (Am Carlsgarten - Waldowallee): Asphalt	Q0 19456,7956 19478,7967 19509,7999
 #: XXX Bauarbeiten am angrenzenden Grundstück, evtl. danach bessere Qualität?
-#: last_checked: 2015-06-27
+#: last_checked: 2015-09-13
 #: check_frequency: 180d
 (Am Carlsgarten - Waldowallee): mäßiger Asphalt	Q2+ 19509,7999 19558,8064
 Maria-Matray-Str.: Asphalt	Q0 19208,8142 19195,8125 19176,8098 19157,8070 19133,8038
@@ -15994,9 +15994,12 @@ Friedrich-Wilhelm-Str.: Kopfsteinpflaster	Q2 8385,5907 8622,5867 8801,5844 8988,
 Friedrich-Wilhelm-Str.: Asphalt	Q0 8988,5821 9176,5803 9378,5773 9668,5733
 #: by: ^^^
 # 
-#: by: Thomas Pörs:
+#: by: Thomas Pörs: vvv
+#: corrected_by: srt (guter Asphalt, Q0- -> welliger Asphalt, Q1 -> ...)
+Drachenfelsstr.: guter Asphalt	Q0 18945,8547 18951,8574
 #: corrected_by: srt (guter Asphalt, Q0- -> ...)
-Drachenfelsstr.: welliger Asphalt	Q1 18945,8547 18951,8574 18956,8618 18945,8660 18927,8702 18894,8749 18857,8790
+Drachenfelsstr.: welliger Asphalt	Q1 18951,8574 18956,8618 18945,8660 18927,8702 18894,8749 18857,8790
+#: by ^^^
 # 
 #: by: Andrea Kliche: vvv
 #: note: ein anonymer Eintrag hat einen (diesen?) Mittelweg mit "loser Sandweg" attributiert:

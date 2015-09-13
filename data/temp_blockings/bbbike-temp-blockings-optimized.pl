@@ -3028,7 +3028,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        {
          'data' => '#: next_check_id: KARLSHORSTER-2015 vvv
-#: last_checked: 2015-09-06 vvv
+#: last_checked: 2015-09-13 vvv
 #: next_check: 2015-09-21 vvv
 #: XXX am 2015-09-06 offen für Fußgänger
 userdel	2::inwork 15272,10790 15279,10862
@@ -3420,26 +3420,7 @@ userdel	q4::inwork; 16412,15559 16448,15593 16497,15636 16615,15737 16633,15753 
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 5857,13342 5868,13441 5882,13548
-',
-         'from' => 1441922400,
-         'id' => 2625,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              12,
-                              'months',
-                              9
-                            ]
-                          ],
-         'source_id' => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.361364.php',
-         'text' => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 12. September 2015, 13 bis 21 Uhr ',
-         'type' => 'gesperrt',
-         'until' => 1442095199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3701,7 +3682,7 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
          'data' => '#: XXX die Qualität wird nach den Bauarbeiten vermutlich besser sein vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.297071.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.295591.php
-#: last_checked: 2015-09-06 vvv
+#: last_checked: 2015-09-13 vvv
 #: check_frequency: 10d vvv
 userdel	2::inwork 14318,9688 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
 userdel	2::inwork 14575,9648 14645,9710 14697,9726 14910,9643 15052,9584 15174,9554 15321,9448 15432,9322 15513,9144 15527,9096 15638,9020
