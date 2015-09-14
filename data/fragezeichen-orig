@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaﬂnahmenkatalog ist nur der ˆstliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaﬂnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2015-09-02
+#: last_checked: 2015-09-14
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -127,9 +127,10 @@ Markgrafenstr.: wird hier eine Radwegf¸hrung erstellt?	?::projected 9711,11543 9
 M¸llerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160
 # 
 #: XXX Baumaﬂnahme 1.23 (Realisierung nach 2011)
+#: XXX wenn hier, dann vielleicht auch in der Kongostraﬂe?
 #: osm_watch: way id="4581787" version="7"
 #: last_checked: 2015-09-12
-#: check_frequency: 90d
+#: check_frequency: 120d
 T¸rkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 # 
 #: XXX Baumaﬂnahme 1.45 (Realisierung nach 2011)
@@ -213,7 +214,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2015-09-11
+#: last_checked: 2015-09-14
 #: next_check: 2015-09-30
 Warschauer Str: Radspuren in Bau	?::inwork 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 # 
@@ -663,6 +664,7 @@ Theodorpark - Heribaldstr.: existiert hier schon ein Weg? Qualit‰t (evtl. Verbun
 #: XXX fehlen in Berlin.coords.data; beides Privatstraﬂen
 #: last_checked: 2015-08-02
 #: check_frequency: 180d
+#: XXX PLZ=12623 (beide Straﬂen)
 Laraweg und Ellaweg: genaue Lage? Qualit‰t?	?::projected 24946,11049 25011,10983 25055,11049
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5551&options=4 vvv
@@ -1159,7 +1161,7 @@ Planstraﬂen 1.1 und 1.2	?::projected 9991,15629 9898,15864 9746,15862
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2015 vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file?y=2015 (Grundst¸cksnummerierungen)
-#: XXX fehlen alle in Berlin.coords.data (PLZ?) vvv
+#: XXX fehlen alle in Berlin.coords.data (PLZ=12621) vvv
 #: XXX alles Privatstraﬂen, "Heinrich Wohnpark" (ohne Bindestrich!) vvv
 #: last_checked: 2015-08-01 vvv
 #: check_frequency: 120d vvv
@@ -1361,7 +1363,9 @@ Fanny-Zobel-Str.	? 13975,10187 14049,10164
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2015 vvv
 #: last_checked: 2014-08-07 vvv
 #: XXX ggfs. Sackgassen aufheben
-Biesheimer Ring: genaue Lage? Qualit‰t? Bereits fertiggestellt?	? 2031,3004 2074,3032 1993,3170 1946,3142
+#: XXX PLZ=14167
+#: XXX "Biesheimring" im DPAG-Mitteilungsblatt, im Amtsblatt "Biesheimer Ring"
+Biesheimring: Straﬂenname Biesheimring oder Biesheimer Ring? genaue Lage? Qualit‰t? Bereits fertiggestellt?	? 2031,3004 2074,3032 1993,3170 1946,3142
 Lutterbacher Str.: genaue Lage? Qualit‰t? Bereits fertiggestellt?	? 2183,3101 2074,3032 1993,3170 2094,3231
 #: last_checked ^^^
 #: by: ^^^
@@ -1407,7 +1411,7 @@ Bergmannstr./Heimstr.: wird hier die Vorfahrtsregelung zugunsten des Radwegs ge‰
 #: by: http://www.potsdam.de/cms/dokumente/15582776_1771576/847336e8/Amtsblatt_10_13.pdf
 Kaninchenberg (Potsdam): befindet sich die Straﬂe hier? Qualit‰t?	? -8960,-5817 -9054,-5905
 # 
-#: XXX fehlt wahrscheinlich in Potsdam.coords.data, PLZ=14467
+#: XXX fehlt in Potsdam.coords.data, PLZ=14467
 #: by: http://www.potsdam.de/cms/dokumente/15582776_1771576/847336e8/Amtsblatt_10_13.pdf
 Otto-Braun-Platz (Potsdam): befindet sich hier der Platz? Ist er ausgeschildert?	? -12643,-1694
 # 
@@ -2011,11 +2015,11 @@ Planstraﬂen im Marienhain: Straﬂennamen? Qualit‰t?	? 22771,3151 22476,3118 22485
 #: last_checked: 2015-04-11
 #: next_check: 2015-10-01
 #: XXX Straﬂe ist asphaltiert
-#: XXX fehlt in Berlin.coords.data
+#: XXX fehlt in Berlin.coords.data, PLZ=12681
 Clara-Immerwahr-Haber-Str.: Wann wird die Straﬂe erˆffnet?	?::inwork 19202,17471 19546,17351 19546,17351 19798,17263 19913,17196
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/21re.pdf/file?y=2015
 #: XXX Straﬂe ist asphaltiert
-#: XXX fehlt in Berlin.coords.data
+#: XXX fehlt in Berlin.coords.data, PLZ=12681
 #: XXX Name tats‰chlich ohne Bindestriche? --- auch laut Amtsblatt ohne Bindestriche
 #: last_checked: 2015-08-09
 #: next_check: 2015-10-01
@@ -2144,7 +2148,7 @@ Benno-Kˆnig-Str.: geplante Straﬂe in Johannisthal, genaue Lage, Qualit‰t?	?::pro
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5188 vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036869488524/869488524/00108801/01-Anlagen/01/DRS1087VK.pdf vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file (Straﬂenbenennungen) vvv
-#: XXX fehlen in Berlin.coords.data vvv
+#: XXX fehlen in Berlin.coords.data, PLZ=12524 vvv
 #: next_check: 2015-09-01 vvv
 Alfonsstr.: geplante Straﬂe in Altglienicke, genaue Lage, Qualit‰t?	?::projected 19061,1457 19034,1441 19029,1421 19003,1325 19081,1233 19053,1159
 #: note: Privatstraﬂe:
@@ -3683,7 +3687,7 @@ Am F‰hrgut: neue Privatstraﬂe, schon fertiggestellt, Qualit‰t?	? -13672,3295 -13
 #: by: https://www.potsdam.de/sites/default/files/documents/vb_bp_32.pdf vvv
 #: by: https://www.potsdam.de/content/vorhabenbezogener-bebauungsplan-nr-32-ehemalige-kaserne-eiche-0 vvv
 #: by: http://www.potsdam.de/sites/default/files/documents/final_abl_pdmstadt_08_2015_web_0.pdf (Straﬂennamen) vvv
-#: XXX die ersten beiden Straﬂennamen fehlen in Potsdam.coords.data, PLZ? Genaue Lage?
+#: XXX die ersten beiden Straﬂennamen fehlen in Potsdam.coords.data, PLZ=14469. Genaue Lage?
 Carl-D‰hne-Str.: Planstraﬂe A, schon fertiggestellt, Qualit‰t?	? -16337,-542 -16312,-537 -16309,-435 -16166,-302
 Zum D¸steren Teich: Planstraﬂe B, schon fertiggestellt, Qualit‰t?	? -16079,-394 -16166,-302 -16268,-218
 Amundsenstr.: Rad- und Gehweg, bereits befahrbar, Qualit‰t?	? -15813,-154 -16079,-394 -16222,-521 -16337,-542
@@ -3693,10 +3697,10 @@ Amundsenstr.: Rad- und Gehweg, bereits befahrbar, Qualit‰t?	? -15813,-154 -16079
 # 
 #: XXX in diesem Gebiet (Villenpark Potsdam-Groﬂ Glienicke) befinden sich noch weitere Straﬂen:
 #: by: http://www.potsdam.de/sites/default/files/documents/final_abl_pdmstadt_08_2015_web_0.pdf
-#: XXX Planstraﬂe Q3.1 (Ost-West-Straﬂe) -> Hans-Georg-Straﬂe
-#: XXX Planstraﬂe Q3.2 (MN gem‰ﬂ Quartierplan) -> Margarethe-Gottliebe-Weg
-#: XXX Planstraﬂe Q3.3 (LO gem‰ﬂ Quartierplan) -> Eva-Katharina-Weg
-#: XXX Planstraﬂe Q3.4 (KP gem‰ﬂ Quartierplan) -> Christoph-Friedrich-Weg
+#: XXX Planstraﬂe Q3.1 (Ost-West-Straﬂe) -> Hans-Georg-Straﬂe - PLZ=14476
+#: XXX Planstraﬂe Q3.2 (MN gem‰ﬂ Quartierplan) -> Margarethe-Gottliebe-Weg - PLZ=14476
+#: XXX Planstraﬂe Q3.3 (LO gem‰ﬂ Quartierplan) -> Eva-Katharina-Weg - PLZ=14476
+#: XXX Planstraﬂe Q3.4 (KP gem‰ﬂ Quartierplan) -> Christoph-Friedrich-Weg - PLZ=14476
 #: XXX fehlt in Potsdam.coords.data, PLZ=14476 oder PLZ=14478 (letzteres im Amtsblatt, mˆglicherweise falsch)
 #: by: http://www.potsdam.de/cms/dokumente/10097197_1471008/9e11fd84/Amtsblatt_09_12.pdf
 #: XXX Kleinsteinpflaster, Q1-
@@ -3790,14 +3794,7 @@ Am Kienwerder (Kienwerder): Qualit‰t?	? -4765,-3352 -4694,-3304 -4341,-3227 -420
 # 
 # REMOVED (realisiert) --- #: XXX im s¸dlichen Teil ist die asphaltierte Trasse schon erkennbar, der nˆrdliche Teil wird wahrscheinlich noch gebaut; Zweirichtungsweg auf der nordwestlichen Seite der Straﬂe --- #: source_id: 111100069 --- #: last_checked: 2013-08-16 --- #: next_check: 2013-10-31 --- Lindenberg - Schwanebeck: ist der Radweg fertig gebaut?	?::inwork 18356,22225 18500,22348 18671,22604 19061,23130 19144,23267 19246,23441 19293,23520 19393,23690 19539,23981
 # REMOVED (aufgenommen) --- #: XXX laut 1:5k und pharus ist hier eine Straﬂe. LOR listet auch eine Straﬂe diesen Namens. Google und OSM kennen die Straﬂe (hier) nicht. --- #: XXX falls sie existiert -> f¸r Berlin.coords.data: Straﬂe 84|Karow|13125 --- Straﬂe 84 (Karow): existiert hier tats‰chlich eine Straﬂe?	? 15382,23051 15365,22990
-# 
-#: XXX Baumaﬂnahme 1.23 (Realisierung nach 2011)
-#: XXX laut osm ist die Kongostraﬂe mittlerweile asphaltiert - stimmt aber nicht (korrigiert)!
-#: osm_watch: way id="5117259" version="11"
-#: last_checked: 2015-09-12
-#: check_frequency: 90d
-Kongostr.: ist die Kongostr. mittlerweile asphaltiert?	? 6244,16096 6258,16111 6349,16213 6447,16321
-# 
+# REMOVED (laut Schluﬂbericht passiert hier eher nichts, jedenfalls nicht vom Bezirk her) --- #: XXX Baumaﬂnahme 1.23 (Realisierung nach 2011) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5428 --- #: XXX laut osm ist die Kongostraﬂe mittlerweile asphaltiert - stimmt aber nicht (korrigiert)! --- #: osm_watch: way id="5117259" version="11" --- #: last_checked: 2015-09-12 --- #: check_frequency: 90d --- Kongostr.: ist die Kongostr. mittlerweile asphaltiert?	? 6244,16096 6258,16111 6349,16213 6447,16321
 # REMOVED (eingetragen) --- #: XXX http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2014 --- #: XXX fehlt in Berlin.coords.data --- #: XXX Helen-Keller-Weg|Hakenfelde|13587 --- Helen-Keller-Weg: wo genau liegt die Straﬂe? Qualit‰t? Nachts beleuchtet? Ausgeschildert?	? -3226,17772 -3233,17767 -3243,17763 --- Helen-Keller-Weg: wo genau liegt die Straﬂe? Qualit‰t? Nachts beleuchtet? Ausgeschildert?	? -3243,17763 -3270,17728 -3276,17669 -3325,17629 -3385,17513
 # 
 Hochstr. (Schwanebeck): Qualit‰t?	? 18942,26470 19340,26610
@@ -3873,6 +3870,7 @@ Konrad-Wachsmann-Str. (Potsdam): Qualit‰t? Existiert die Straﬂe schon?	? -14114,
 #: XXX laut osm schon fertig vvv
 #: XXX PLZ fehlt in Potsdam.coords.data vvv
 Hermann-Kasack-Str. (Potsdam): Ist die Straﬂe bereits fertig gestellt? Qualit‰t?	? -13432,782 -13220,728
+#: XXX PLZ=14469
 Reinhold-Schneider-Str. (Potsdam): Ist die Straﬂe bereits fertig gestellt? Qualit‰t?	? -13433,693 -13243,645
 #: XXX ^^^
 #: XXX ^^^
@@ -3948,8 +3946,8 @@ Am Speicher (Potsdam): Qualit‰t der Straﬂe?	? -12783,-2269 -12771,-2220 -12754,-
 Altstadtblick (Potsdam): Qualit‰t der Straﬂe?	? -12697,-2235 -12728,-2227 -12771,-2220 -12803,-2219
 #: XXX weitere Straﬂen, die hier entstehen (http://www.potsdam.de/sites/default/files/documents/final_abl_pdmstadt_08_2015_web_0.pdf)
 #: XXX fehlen in Potsdam.coords.data
-#: XXX - An der Lokremise
-#: XXX - Am Magazin
+#: XXX - An der Lokremise - PLZ=14473
+#: XXX - Am Magazin - PLZ=14473
 #: XXX ^^^
 #: next_check ^^^
 #: last_checked ^^^
@@ -4008,7 +4006,7 @@ Schwarzer Weg (Siemensstadt): Qualit‰t des Wegs? Ist der Weg ausgeschildert und 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6056 (Vorschlag)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/52re.pdf/file?y=2014
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2015 (Grundst¸cksnummerierungen)
-#: XXX fehlt in Berlin.coords.data
+#: XXX fehlt in Berlin.coords.data, PLZ=13059
 Darguner Str.: Qualit‰t?	? 17566,18680 17635,18591
 # 
 # REMOVED --- #: last_checked: 2014-06-09 (Trassierungsarbeiten werden durchgef¸hrt) vvv --- #: next_check: 2014-12-07 vvv --- Gerhard-Sedlmayr-Str.: Gibt es Verbindungswege zum Park?	? 18702,3790 18584,3794 18228,4168 --- #: XXX der nˆrdliche Abschnitt wird anscheinend einen Zweirichtungsradweg haben, in den restlichen Abschnitten wird es wohl keine Radwege geben --- Gerhard-Sedlmayr-Str.: Existiert ein Radweg?	? 18228,4168 18374,4307 --- #: next_check ^^^ --- #: last_checked ^^^

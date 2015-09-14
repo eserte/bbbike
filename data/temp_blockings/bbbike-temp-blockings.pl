@@ -24499,4 +24499,13 @@ EOF
 userdel	q4::inwork 4492,20214 4622,20292 4718,20341 4879,20427
 EOF
      },
+     { from  => 1442120400, # 2015-09-13 07:00
+       until => 1446307200, # 2015-10-31 17:00
+       text  => 'Müggelseedamm: zwischen Bölschetr. und Scharnweberstr. Baustelle, Fahrbahn Richtung Osten gesperrt, 14.09.2015 bis 31.10.2015 ',
+       type  => 'handicap',
+       source_id => 'IM_026222',
+       data  => <<EOF,
+userdel	q4::inwork; 25519,4830 25552,4829 25720,4832
+EOF
+     },
     );
