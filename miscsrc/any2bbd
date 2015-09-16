@@ -89,6 +89,7 @@ for my $download_dir (@download_dirs) {
     push @files, glob("$download_dir/*");
 }
 
+my $has_acc_cat;
 my @s;
 for my $file (@files) {
     my $basename = basename($file);
@@ -127,14 +128,17 @@ for my $file (@files) {
 					      );
 		print $tmpfh ($member->contents)[0];
 		close $tmpfh;
+		my %this_result_info;
 		my $s = run_gpsbabel($tmpfile,
 				     title => routenamefmt($file . "/" . basename($member->fileName)),
 				     info => \%info,
 				     file_info => \%this_file_info,
+				     result_info => \%this_result_info,
 				    );
 		if ($check_s->($s)) {
 		    prepend_info($s, \%info);
 		    push @s, $s;
+		    $has_acc_cat = 1 if $this_result_info{has_acc_cat};
 		}
 	    }
 	} else {
@@ -156,14 +160,17 @@ for my $file (@files) {
 		$work_file = $tmpfile;
 	    }
 	    if (-f $work_file) {
+		my %this_result_info;
 		my $s = run_gpsbabel($work_file,
 				     title => routenamefmt($file),
 				     info => \%info,
 				     file_info => \%this_file_info,
+				     result_info => \%this_result_info,
 				    );
 		if ($check_s->($s)) {
 		    prepend_info($s, \%info);
 		    push @s, $s;
+		    $has_acc_cat = 1 if $this_result_info{has_acc_cat};
 		}
 	    } elsif (-d $work_file) {
 		print STDERR "skipping directory\n";
@@ -184,10 +191,12 @@ my $ms = MultiStrassen->new(@s);
 if ($opt{append}) {
     $ms->append($outfile);
 } else {
-    $ms->set_global_directive("category_dash.AccManually"  => "3,8");
-    $ms->set_global_directive("category_color.AccManually" => "#8080c0");
-    $ms->set_global_directive("category_dash.AccLow"       => "2,4");
-    $ms->set_global_directive("category_color.AccLow"      => "#4040a0");
+    if ($has_acc_cat) {
+	$ms->set_global_directive("category_dash.AccManually"  => "3,8");
+	$ms->set_global_directive("category_color.AccManually" => "#8080c0");
+	$ms->set_global_directive("category_dash.AccLow"       => "2,4");
+	$ms->set_global_directive("category_color.AccLow"      => "#4040a0");
+    }
     $ms->write($outfile);
 }
 
@@ -198,12 +207,15 @@ sub run_gpsbabel {
     my $title = $args{title} || $file;
     my $info = $args{info} || {};
     my $file_info = $args{file_info} || {};
+    my $result_info = $args{result_info} || {};
     my $cat = "#000080";
     if ($file_info->{accuracy}) {
 	if ($file_info->{accuracy} eq 'manually') {
 	    $cat = "AccManually";
+	    $result_info->{has_acc_cat} = 1;
 	} elsif ($file_info->{accuracy} eq 'low') {
 	    $cat = "AccLow";
+	    $result_info->{has_acc_cat} = 1;
 	} elsif ($file_info->{accuracy} eq 'unusable') {
 	    return undef;
 	}
