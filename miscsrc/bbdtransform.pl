@@ -33,6 +33,14 @@ if (!GetOptions
      'oneline' => sub {
 	 $oper = 'oneline';
      },
+     'set-name=s' => sub {
+	 $oper = 'set';
+	 push @oper_args, 'name' => $_[1];
+     },
+     'set-cat=s' => sub {
+	 $oper = 'set';
+	 push @oper_args, 'cat' => $_[1];
+     },
     ),
    ) {
     die "usage?";
@@ -44,6 +52,23 @@ my $s = Strassen->new_stream($file);
 {
     no strict 'refs';
     &$oper(@oper_args);
+}
+
+sub set {
+    my(%args) = @_;
+    my $new_s = Strassen->new;
+    $s->read_stream
+	(sub {
+	     my($r) = @_;
+	     if (defined $args{name}) {
+		 $r->[Strassen::NAME] = $args{name};
+	     }
+	     if (defined $args{name}) {
+		 $r->[Strassen::CAT] = $args{cat};
+	     }
+	     $new_s->push($r);
+	 });
+    $new_s->write('-');
 }
 
 sub oneline {
@@ -99,6 +124,8 @@ bbdtransform.pl - various transformations on bbd files
 
     ./bbdtransform.pl --oneline [file]
 
+    ./bbdtransform.pl --set-name=name --set-cat=cat [file]
+
 =head1 DESCRIPTION
 
 Following transformations are available:
@@ -114,10 +141,21 @@ Translate all coordinates by the given x and y values.
 Combine all lines in the bbd file to a single line. Name and category
 are taken from the first line.
 
+=item set-name
+
+Set the name of lines to the given argument.
+
+=item set-cat
+
+Set the category of lines to the given argument.
+
 =back
 
 Note: currently these transformations lose all global and local
 directives.
+
+Note: except for C<--set-name> and C<--set-cat> it is not possible to
+combine transformation operations. Use operating system pipes instead.
 
 =head1 AUTHOR
 
