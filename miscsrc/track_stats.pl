@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2010,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2010,2012,2015 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -28,7 +28,7 @@ use Tie::IxHash;
 use Statistics::Descriptive;
 use Storable qw(lock_nstore lock_retrieve);
 
-use BBBikeUtil qw(ms2kmh s2hms);
+use BBBikeUtil qw(ms2kmh s2hms m2km);
 use GPS::GpsmanData::Any;
 use Karte::Polar;
 use Strassen::Core;
@@ -394,7 +394,7 @@ sub stage_trackdata {
 	}
 	for my $outbbd_record (@outbbd_records) {
 	    my($result, $coords) = @{$outbbd_record}{qw(result coords)};
-	    print $ofh "$result->{file} difftime=$result->{difftime} length=$result->{length}\tX @$coords\n";
+	    print $ofh "$result->{file} difftime=" . s2hms($result->{difftime}) . " length=" . m2km($result->{length}) . "\tX @$coords\n";
 	}
 	close $ofh
 	    or die "Error while closing $outbbd: $!";
