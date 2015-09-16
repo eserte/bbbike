@@ -48,6 +48,7 @@ my $start_stage;
 my $state_file;
 my $sortby = "difftime";
 my $outbbd;
+my $outbbd_sortby;
 my $detect_pause;
 my @filter_stat;
 my $v;
@@ -65,6 +66,8 @@ GetOptions("stage=s" => \$start_stage,
 	   "sortby=s" => \$sortby,
 
 	   "outbbd=s" => \$outbbd,
+	   "outbbd-sortby=s" => \$outbbd_sortby,
+
 	   "detectpause=i" => \$detect_pause,
 
 	   'filterstat=s@' => \@filter_stat,
@@ -386,6 +389,9 @@ sub stage_trackdata {
     if ($outbbd) {
 	open my $ofh, ">", $outbbd or die "Can't write to $outbbd: $!";
 	print $ofh "#: map: polar\n#:\n";
+	if ($outbbd_sortby) {
+	    _sort_outbbd_records(\@outbbd_records, $outbbd_sortby);
+	}
 	for my $outbbd_record (@outbbd_records) {
 	    my($result, $coords) = @{$outbbd_record}{qw(result coords)};
 	    print $ofh "$result->{file} difftime=$result->{difftime} length=$result->{length}\tX @$coords\n";
@@ -467,12 +473,7 @@ sub stage_output {
 	return;
     }
 
-    die "Invalid -sortby" if !exists $results[0]->{$sortby};
-    if ($is_alpha_col{$sortby}) {
-	@results = sort { $a->{$sortby} cmp $b->{$sortby} } @results;
-    } else {
-	@results = sort { $a->{$sortby} <=> $b->{$sortby} } @results;
-    }
+    _sort_records(\@results, $sortby);
 
     if ($tsv) {
 	for (@results) {
@@ -742,6 +743,28 @@ sub _filter_results {
 	} else {
 	    die "Cannot parse filterstat rule '$filter_stat_rule'";
 	}	
+    }
+}
+
+sub _sort_records {
+    my($results_ref, $sortby) = @_;
+
+    die "Invalid -sortby" if !exists $results_ref->[0]->{$sortby};
+    if ($is_alpha_col{$sortby}) {
+	@$results_ref = sort { $a->{$sortby} cmp $b->{$sortby} } @$results_ref;
+    } else {
+	@$results_ref = sort { $a->{$sortby} <=> $b->{$sortby} } @$results_ref;
+    }
+}
+
+sub _sort_outbbd_records {
+    my($results_ref, $sortby) = @_;
+
+    die "Invalid -sortby" if !exists $results_ref->[0]->{result}->{$sortby};
+    if ($is_alpha_col{$sortby}) {
+	@$results_ref = sort { $a->{result}->{$sortby} cmp $b->{result}->{$sortby} } @$results_ref;
+    } else {
+	@$results_ref = sort { $a->{result}->{$sortby} <=> $b->{result}->{$sortby} } @$results_ref;
     }
 }
 
