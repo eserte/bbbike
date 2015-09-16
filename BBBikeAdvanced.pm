@@ -732,9 +732,14 @@ sub choose_from_additional_layer {
 	 -scb => sub {
 	     my $abk = shift;
 	     my %extra_args;
+	     # XXX instead of the heuristics there should be a better
+	     # solution. Maybe a hint in the bbd as global directive.
+	     #
 	     # heuristic to detect layers created by "GPSMan-Daten zeichnen"
 	     # chronologically sorted works better here
-	     if ($str_file{$abk} =~ m{gpsspeed\.bbd}) {
+	     if ($str_file{$abk} =~ m{gpsspeed\.bbd} ||
+		 $str_file{$abk} =~ m{(^|/)track_stat_.*\.bbd} # another heuristic: outbbd option of track-stat
+		) {
 		 $extra_args{'-unsorted'} = 1;
 	     }
 	     choose_ort('s', $abk, -rebuild => 1, %extra_args);
