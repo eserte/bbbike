@@ -362,7 +362,7 @@ sub sort_german {
 }
 
 BEGIN {
-    if (eval { require Storable; $Storable::VERSION >= 2 }) { # need the ability to clone CODE items XXX determine correct Storable version
+    if (eval q{ use Storable 2; 1 }) { # need the ability to clone CODE items XXX determine correct Storable version
 	*clone = sub ($) {
 	    my $o = shift;
 	    local $Storable::Deparse = $Storable::Deparse = 1;
