@@ -3613,9 +3613,9 @@ userdel	2::inwork 14910,9643 14844,9513
          'from' => 1438198655,
          'id' => 2725,
          'source_id' => 'IM_025719',
-         'text' => 'Mehringbrücke: Fahrbahn Richtung Wilhelmstr. gesperrt, für Radfahrer umständliche Wegführung über linken Gehweg, bis 18.09.2015',
+         'text' => 'Mehringbrücke: Fahrbahn Richtung Wilhelmstr. gesperrt, für Radfahrer umständliche Wegführung über linken Gehweg, bis 21.09.2015',
          'type' => 'handicap',
-         'until' => 1442613599
+         'until' => 1442847600
        },
        undef,
        undef,

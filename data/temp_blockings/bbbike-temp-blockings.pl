@@ -24373,8 +24373,8 @@ userdel	q4::inwork 9695,1563 9626,1604 9519,1650 9493,1661 9420,1700
 EOF
      },
      { from  => 1438198655, # 2015-07-29 21:37
-       until => $isodate2epoch->("2015-09-18 23:59:59"), # 1440774000, # 2015-08-28 17:00
-       text  => 'Mehringbrücke: Fahrbahn Richtung Wilhelmstr. gesperrt, für Radfahrer umständliche Wegführung über linken Gehweg, bis 18.09.2015',
+       until => $isodate2epoch->("2015-09-21 17:00:00"), # 1440774000, # 2015-08-28 17:00
+       text  => 'Mehringbrücke: Fahrbahn Richtung Wilhelmstr. gesperrt, für Radfahrer umständliche Wegführung über linken Gehweg, bis 21.09.2015',
        type  => 'handicap',
        source_id => 'IM_025719',
        data  => <<EOF,
