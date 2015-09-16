@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2003,2006,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2003,2006,2014,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -378,7 +378,7 @@ sub BBBikePrint::view_pdf {
 	Win32Util::start_any_viewer($file);
     } else {
     TRY: {
-	    for my $prog (qw(xpdf nautilus acroread acroread5 acroread4 gv ggv)) {
+	    for my $prog (qw(xpdf nautilus acroread acroread5 acroread4 gv ggv atril)) {
 		if (is_in_path($prog)) {
 		    system("$prog $file &");
 		    last TRY;
