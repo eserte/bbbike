@@ -20,7 +20,6 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
 use Strassen::Core;
-use Object::Iterate 0.05 qw(iterate);
 use Getopt::Long;
 
 my($oper, @oper_args);
@@ -40,7 +39,7 @@ if (!GetOptions
 }
 
 my $file = shift || "-";
-my $s = Strassen->new($file);
+my $s = Strassen->new_stream($file);
 
 {
     no strict 'refs';
@@ -49,20 +48,21 @@ my $s = Strassen->new($file);
 
 sub oneline {
     my($new_name, $new_cat, @new_coords);
-    iterate {
-	my $r = $_;
-	if (!defined $new_name) {
-	    $new_name = $r->[Strassen::NAME];
-	}
-	if (!defined $new_cat) {
-	    $new_cat = $r->[Strassen::CAT];
-	}
-	my @c = @{ $r->[Strassen::COORDS] };
-	if (@new_coords && $new_coords[-1] eq $c[0]) {
-	    shift @c;
-	}
-	push @new_coords, @c;
-    } $s;
+    $s->read_stream
+	(sub {
+	     my($r) = @_;
+	     if (!defined $new_name) {
+		 $new_name = $r->[Strassen::NAME];
+	     }
+	     if (!defined $new_cat) {
+		 $new_cat = $r->[Strassen::CAT];
+	     }
+	     my @c = @{ $r->[Strassen::COORDS] };
+	     if (@new_coords && $new_coords[-1] eq $c[0]) {
+		 shift @c;
+	     }
+	     push @new_coords, @c;
+	 });
 
     my $new_s = Strassen->new;
     $new_s->push([$new_name, \@new_coords, $new_cat]);
@@ -72,17 +72,18 @@ sub oneline {
 sub translate {
     my($dx, $dy) = @_;
     my $new_s = Strassen->new;
-    iterate {
-	my $r = $_;
-	local $_;
-	for (@{ $r->[Strassen::COORDS] }) {
-	    my($x,$y) = split /,/;
-	    $x += $dx;
-	    $y += $dy;
-	    $_ = "$x,$y";
-	}
-	$new_s->push($r);
-    } $s;
+    $s->read_stream
+	(sub {
+	     my($r) = @_;
+	     local $_;
+	     for (@{ $r->[Strassen::COORDS] }) {
+		 my($x,$y) = split /,/;
+		 $x += $dx;
+		 $y += $dy;
+		 $_ = "$x,$y";
+	     }
+	     $new_s->push($r);
+	 });
     $new_s->write("-");
 }
 
