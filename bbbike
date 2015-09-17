@@ -18483,9 +18483,13 @@ sub show_route_strname {
 		 -basename => $base,
 		);
 	} else { # try pdflatex, then postscript, on Windows first Route::PDF
-	    my @try_order = qw(pdflatex postscript routepdf);
-	    if ($os eq 'win') {
+	    my @try_order;
+	    if (@main::print_routelist_order) {
+		@try_order = @main::print_routelist_order;
+	    } elsif ($os eq 'win') {
 		@try_order = qw(routepdf pdflatex postscript);
+	    } else {
+		@try_order = qw(pdflatex postscript routepdf);
 	    }
 	TRY: {
 		for my $try (@try_order) {
