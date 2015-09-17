@@ -18492,14 +18492,14 @@ sub show_route_strname {
 		    if ($try eq 'pdflatex') {
 			last TRY if print_text_pdflatex(route_info_to_latex());
 		    } elsif ($try eq 'postscript') {
-			print_text_postscript
+			last TRY if print_text_postscript
 			    (route_info_to_text(),
 			     -columns => 1,
 			     -header => $header,
 			     -font => $font,
 			    );
 		    } elsif ($try eq 'routepdf') {
-			print_route_pdf();
+			last TRY if print_route_pdf();
 		    }
 		}
 	    }
