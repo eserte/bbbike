@@ -13,7 +13,7 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraﬂe wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2015-09-12 vvv
+#: last_checked: 2015-09-17 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14286,11186 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraﬂe ausgewiesen	q3::inwork; 14442,11101 14468,11203
 Dˆringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
@@ -108,7 +108,7 @@ Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und 
 Universit‰tsstr.: wegen Bauarbeiten Einbahnstraﬂe zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9580,12581
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2015-09-07 vvv
+#: last_checked: 2015-09-17 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="3"
@@ -202,9 +202,9 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10072,11384 9945,11371 9737,11349
 # REMOVED (das Einfahrt verboten-Schild h‰ngt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9949,11470 9935,11566
 # 
-#: last_checked: 2015-09-10
+#: last_checked: 2015-09-17
 Alte Jakobstr.: Bauarbeiten, teilweise Einbahnstraﬂe	q3::inwork; 10256,11160 10437,11352
-#: last_checked: 2015-09-10
+#: last_checked: 2015-09-17
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10624,11548 10640,11564
 # 
 # REMOVED --- Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10437,11352
@@ -235,8 +235,8 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10624,11548 1
 ### Tiergarten ###
 # 
 #: by: http://www.deutsches-architektur-forum.de/forum/showthread.php?t=3245
-#: last_checked: 2015-06-24
-#: check_frequency: 180d
+#: last_checked: 2015-09-17
+#: check_frequency: 45d
 Kˆbisstr.: wegen Bauarbeiten Ausweichen auf Gehweg	q4::inwork 7103,11247 7160,11225
 # 
 ### Charlottenburg ###
@@ -589,7 +589,8 @@ Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 #: next_check_id: SPREERADWEGEINSTEINUFER-2014
 #: XXX Bauarbeiten, wird der Weg sp‰ter breiter sein?
 #: next_check: 2015-10-15
-(Rad- und Wanderweg an Spree und Landwehrkanal): Fuﬂg‰nger, teilweise eng	q2 3358,12718 3396,12741 3476,12735 3582,12704 3654,12672 3763,12624 3837,12618 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491 4829,12357 5045,12243 5147,12164 5261,12004 5361,11910
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fuﬂg‰nger, teilweise eng	q2 3358,12718 3396,12741 3476,12735 3582,12704 3654,12672 3763,12624 3837,12618 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491
+(Rad- und Wanderweg an Spree und Landwehrkanal): einige Fuﬂg‰nger	q1 4642,12491 4817,12366 5045,12243 5147,12164 5261,12004 5361,11910
 #: note: Radfahren erlaubt, Fuﬂg‰nger haben Vorrang
 Spreeufer: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 10166,12777 10105,12855 9977,12912 9944,12921 9930,12947 9900,12942 9724,12992 9716,12971 9707,12974
 Spreeufer: Fuﬂg‰nger	q2 9707,12974 9557,12992 9538,12993 9508,12991 9279,12953
@@ -709,7 +710,7 @@ Fritz-Schiff-Weg: Fuﬂg‰nger	q1 13463,12507 13484,12436 13448,12340
 (Crellestr. - Julius-Leber-Br¸cke): Fuﬂg‰nger	q2 7524,9093 7555,8978 7509,8929 7497,8916
 (Fischerinsel, Spreekanalufer): Fuﬂg‰nger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870
 #: next_check_id: FISCHERINSEL-2015
-#: last_checked: 2015-09-10
+#: last_checked: 2015-09-17
 #: next_check: 2015-12-20
 Spreekanalufer: Umfahrung an der Straﬂe Fischerinsel, Fuﬂg‰nger	q3::inwork 10672,11870 10776,11942
 # REMOVED (danach wieder folgendes aktivieren) --- (Fischerinsel, Spreekanalufer): Fuﬂg‰nger	q1 10672,11870 10776,11942
@@ -1775,7 +1776,7 @@ Waltershauser Str.: gemeinsamer Rad- und Gehweg, einige Fuﬂg‰nger	q1 6534,1702 6
 Schweriner Ring [9-19 ungerade]: enge Straﬂe	q1 17444,19115 17259,19121
 (Weg auf dem L‰rmschutzwall): Rampen, nicht sehr breit	q1 16665,19021 16699,19090 17197,18473 17275,18356 17564,18010 17585,17963
 (entlang der Stadtbahn): Fuﬂg‰nger	q1 10117,12973 10004,12966 9930,12947
-(Durchgang U-Bhf. Bernburger Str.): Fuﬂg‰nger	q3 8476,10884 8399,10923
+# REMOVED --- (Durchgang U-Bhf. Bernburger Str.): Fuﬂg‰nger	q3 8476,10884 8399,10923
 Dievenowstr.: Bordstein, Gehweg	q2 3202,7121 3193,7059
 (Armenische Str. - Schwyzer Str., Schillerpark): Fuﬂg‰nger	q1 7144,16781 7131,16790 7115,16827 7097,16915 7094,16938
 (Armenische Str. - Schwyzer Str., Schillerpark): Fuﬂg‰nger	q1 7097,16915 7064,16943

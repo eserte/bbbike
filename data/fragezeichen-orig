@@ -23,7 +23,7 @@
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: osm_watch: way id="153373879" version="5"
 #: osm_watch: way id="153373877" version="4"
-#: last_checked: 2015-09-10
+#: last_checked: 2015-09-17
 #: check_frequency: 60d
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 # 
@@ -214,7 +214,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2015-09-14
+#: last_checked: 2015-09-17
 #: next_check: 2015-09-30
 Warschauer Str: Radspuren in Bau	?::inwork 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118
 # 
@@ -417,13 +417,7 @@ Rathaus Wedding: ändert sich was während/nach der Bauarbeiten am Rathausplatz?	?
 # REMOVED (-> radwege-orig) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150511.1105.401906.html --- #: XXX teilweise schon zurückgebaut, Ende der Bauarbeiten im Herbst 2015 --- Rixdorfer Str.: Umbau der Radwege zu Radstreifen	?::inwork 9953,3806 10181,4181 10185,4187 10221,4245 10288,4354 10412,4552
 # REMOVED (nichts zu sehen) --- #: XXX Hessische Str. (Mitte): Baustelle, Baustellenampel, Zufahrt Hannoversche Str. gesperrt (bis Ende 05/15) in beiden Richtungen in Höhe Hannoversche Str., 11.05.2015 08:00 Uhr bis 29.05.2015 18:00 Uhr	IM_024927 --- #: priority: #A --- Hannoversche Str.: Sperrung relevant für Radfahrer?	? 8674,13593 8775,13606
 # REMOVED (vermutlich, check!) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5540.html vvv --- #: source_id: IM_024548 vvv --- #: note: Dauer etwa vier Monate, also bis August 2015? vvv --- #: XXX laut rbbtext bis 15.8.2015 --- #: XXX_prog größere Behinderungen eigentlich nur, wenn die Kreuzung in voller Länge befahren wird, aber nicht so sehr beim Rechtsabbiegen vvv --- #: last_checked: 2015-07-20 vvv --- Kreuzung Invalidenstr./Gartenstr.: Auswirkungen der Vollsperrung hier?	? 9224,14169 9383,13986 9514,13826 --- Kreuzung Invalidenstr./Gartenstr.: Auswirkungen der Vollsperrung hier?	? 9383,13986 9659,14043 9676,14046
-# 
-#: XXX_prog: fehlende Möglichkeit, das Handicap hier auszudrücken!
-#: source_id: IM_025755
-#: XXX bis 2015-10-05
-#: last_checked: 2015-08-10
-Friedrichstr./Unter den Linden: Überqueren der Straße Unter den Linden nicht möglich, Radfahrer müssen offiziell auch schieben	? 9343,12464 9358,12351 9369,12253
-# 
+# REMOVED (geändert, -> temp blockings) --- #: XXX_prog: fehlende Möglichkeit, das Handicap hier auszudrücken! --- #: source_id: IM_025755 --- #: XXX bis 2015-10-05 --- #: last_checked: 2015-08-10 --- Friedrichstr./Unter den Linden: Überqueren der Straße Unter den Linden nicht möglich, Radfahrer müssen offiziell auch schieben	? 9343,12464 9358,12351 9369,12253
 # REMOVED (-> bbbike-temp-blockings.pl) --- #: XXX Realisierung bis September 2015 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5511.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150430.1120.401849.html --- #: XXX betrifft die Einbahnstraßenregelung während der Bauarbeiten auch Radfahrer? --- #: next_check: 2015-05-04 --- Maaßenstr.: welche Auswirkungen wird die neue "Begegnungszone" für Radfahrer haben? Wird der Radweg verschwinden?	?::inwork 7080,10098 7060,10221 7033,10328
 # REMOVED (Umleitung geht anders herum) --- #: XXX laut fritz, "für mehrere Monate" --- #: next_check: 2015-02-11 --- Rathausstr. (Lichtenberg): gibt es Änderungen während der Bauarbeiten Frankfurter Allee/Gürtelstr., z.B. wird die Einbahnstraßenrichtung umgedreht?	? 15537,12367 15576,12315 15628,12246 15651,12214 15685,12154 15670,12022
 # REMOVED (-> aufgenommen) --- #: XXX fehlt in Berlin.coords.data --- #: note: Privatstraße, südlicher (jetzt schon bestehender) Abschnitt bleibt öffentlich --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2015 --- Zur alten Börse: Qualität, schon fertig?	? 18736,13080 18712,12853 18682,12599 18649,12371 --- Marzahner Chaussee [Zur alten Börse]: Qualität, schon fertig?	? 18649,12371 18647,12354 18639,12272 18654,12255
@@ -1155,6 +1149,7 @@ Uferweg - Heidestraße: Fußgänger- und Radfahrerbereich	?::projected 8044,13929 7
 #: next_check_id ^^^
 # 
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/1-64a_ve_bebauungsplanentwurf_3-2-bl_1.pdf
+#: by: http://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2015/pressemitteilung.364910.php
 #: XXX Grünflächen teilweise entfernen, culdesac hinzufügen
 #: next_check: 2017-01-01
 Planstraßen 1.1 und 1.2	?::projected 9991,15629 9898,15864 9746,15862
@@ -1192,6 +1187,20 @@ Am Kirchendreieck: Lage der Straße? Qualität?	? 23922,13085 23960,13325
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367062.php
+#: by: http://www.gruen-berlin.de/in-realisation/havelradweg/?L=.htewrap&PHPSESSID=bc0eb92d1c0f3ab3c89fe427b9f45c1a
+#: next_check: 2015-12-15
+Haveluferweg: bessere Qualität nach den Bauarbeiten?	?::inwork -4546,9381 -4506,9395 -4460,9456 -4442,9625 -4536,9800 -4585,9836 -4619,9867 -4631,10046 -4625,10139 -4645,10192 -4592,10184 -4510,10208 -4445,10379 -4387,10496 -4323,10570 -4230,10679 -4254,10810 -4251,11112
+# 
+#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367062.php
+#: by: http://www.gruen-berlin.de/in-realisation/havelradweg/?L=.htewrap&PHPSESSID=bc0eb92d1c0f3ab3c89fe427b9f45c1a
+#: next_check: 2015-12-15
+Schifffahrtsufer an der Havel: bessere Qualität nach den Bauarbeiten?	?::inwork -3339,13106 -3203,12895 -3205,12816 -3180,12719 -3142,12615
+# 
+#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367070.php
+#: next_check: 2016-12-31
+Seegefelder Weg: Bau von Radspuren	?::projected -6507,15007 -6861,15129
+# 
 # REMOVED --- Chausseestr.: wie weit geht hier noch die Radspur?	? 8442,14456 8527,14352
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2015
@@ -1217,8 +1226,6 @@ Siemensstr.: werden hier vielleicht auch Radspuren markiert?	? 5746,14090 5708,1
 #: next_check: 2015-09-30
 Weißenseer Weg: wird der Radweg nach den Bauarbeiten besser sein?	? 14843,15007 14959,14752
 # 
-Rosa-Luxemburg-Steg: Qualität: Holzbohlen oder was anderes?	? 6297,11449 6247,11390
-#
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5207
 #: last_checked: 2015-08-08
 #: next_check: 2015-12-31
@@ -1284,7 +1291,7 @@ Pilgramer Str.: Radfahrstreifen in Planung	?::projected 25149,10695 25149,10731 
 Abbè-Lemire-Weg: Straßenbenennung, wann passiert sie?	? 16296,17114 16229,17217 16146,17304 16141,17325 15939,17412 15839,17431 15814,17454 15821,17510
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.313183.php --- #: next_check: 2015-06-27 --- Grottewitzstr.: wird nach den Bauarbeiten die Qualität hier besser sein?	? 21868,139 21933,152 22145,208
-# REMOVED (es bleibt beim Status Quo) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/15re.pdf/file?y=2015 --- Abbestr.: Einziehung öffentlichen Straßenlandes (was bedeutet das hier? bleibt es beim jetzigen Stand - Radfahrer frei?)	? 4762,12229 4683,12072
+# REMOVED (es bleibt beim Status Quo) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/15re.pdf/file?y=2015 --- Abbestr.: Einziehung öffentlichen Straßenlandes (was bedeutet das hier? bleibt es beim jetzigen Stand - Radfahrer frei?)	? 4755,12236 4683,12072
 # REMOVED (aufgenommen, weiter westlich) --- Zufahrt zum Stadtbad Tiergarten: Qualität? Parkplatzverkehr?	? 7450,13442 7428,13482
 # 
 #: XXX_prog: könnte man mit einer Art Punkt-Handicap ausdrücken
@@ -1836,7 +1843,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.334355.php
-#: last_checked: 2015-09-10
+#: last_checked: 2015-09-17
 #: check_frequency: 120d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172 10818,11269
 # 

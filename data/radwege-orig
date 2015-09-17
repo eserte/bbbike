@@ -960,7 +960,7 @@ neues Verbundsteinpflaster	RW1; 12694,2517 12694,2544 12694,2570 12693,2746 1269
 	RW;RW 12694,2517 12703,2454
 die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 13745,12118 13785,12292
 #: next_check_id: WARSCHAUER-2014 vvv
-#: last_checked: 2015-09-15 vvv
+#: last_checked: 2015-09-17 vvv
 #: check_frequency: 3d vvv
 #: by: http://www.umbau-warschauer-strasse.de/images/bauinfos/Infoblatt_August_15-2.pdf
 #: XXX Radspur (RW4) ist wegen Bauarbeiten aufgehoben, später wahrscheinlich wieder hergestellt
@@ -1024,13 +1024,13 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 969
 #: XXX Markierungen fehlen in beiden Richtungen
 #: source_id: IM_018997
 #: source_id: IM_023987
-#: last_checked: 2015-09-07
+#: last_checked: 2015-09-17
 Busspur ist immer gültig	RW0;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9601,12380 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2015-09-07
+#: last_checked: 2015-09-17
 #: check_frequency: 60d
 Busspur ist immer gültig	RW5; 9475,12365 9601,12380
 # 
@@ -1402,7 +1402,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2015-09-07
+#: last_checked: 2015-09-17
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -4004,7 +4004,7 @@ Busspur gilt Mo-Fr 6-9 Uhr und 15-18 Uhr	RW5; 7368,4342 7410,4373 7450,4397 7482
 	RW3; 5665,5126 5583,5179
 	RW1;RW1 4430,5324 4437,5335 4527,5475 4558,5525
 	RW3;RW3 4520,5793 4419,5842 4312,5889 4172,5918 4010,5888 3931,5825 3850,5801 3707,5758
-	RW6;RW6 4250,12390 4358,12365 4518,12350
+	RW6;RW6 4250,12390 4358,12365 4518,12355
 	RW3;RW3 9858,10350 9873,10285
 	RW1; 17383,16197 17425,16165
 	RW7;RW7 18910,19175 18814,19194 18602,19197 18430,19248 18340,19247 18142,19232 18074,19227

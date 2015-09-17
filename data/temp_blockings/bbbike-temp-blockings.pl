@@ -20556,13 +20556,13 @@ EOF
 userdel	2::temp 11770,10774 11841,10747 11897,10887 11958,11045
 EOF
      },
-     { from  => 1339907400, # 2012-06-17 06:30
-       until => 1342191600, # 2012-07-13 17:00
-       text  => 'Friedrichstr. (Mitte): Baustelle, zwischen Mittelstr. und Unter den Linden Richtung Süden gesperrt (bis Mitte 07/12)',
+     { from  => $isodate2epoch->("2015-07-24 00:00:00"), # 1339907400, # 2012-06-17 06:30
+       until => $isodate2epoch->("2015-10-05 17:00:00"), # 1342191600, # 2012-07-13 17:00
+       text  => 'Friedrichstr. (Mitte): Baustelle, Fahrbahn zwischen Mittelstr. und Unter den Linden Richtung gesperrt (bis 05.10.2015)',
        type  => 'handicap',
-       source_id => 'INKO_113724',
+       source_id => 'IM_025755',
        data  => <<EOF,
-userdel	q4::inwork; 9343,12464 9358,12351
+userdel	q4::inwork 9343,12464 9358,12351
 EOF
      },
      { from  => undef, #
@@ -21333,10 +21333,10 @@ EOF
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130424.1240.383903.html',
        data  => <<EOF,
 #: source_id: IM_019774 vvv
-userdel	q4::inwork; 4367,11996 4441,12185 4518,12350
-# REMOVED (dieser Abschnitt für Anlieger befahrbar) --- userdel	q4::inwork; 4518,12350 4598,12501
-# REMOVED (geraten, wahrscheinlich passierbar) --- userdel auto	3 4601,12310 4518,12350 4358,12365
-# REMOVED (geraten, wahrscheinlich passierbar) --- userdel auto	3 4358,12365 4518,12350 4601,12310
+userdel	q4::inwork; 4367,11996 4441,12185 4518,12355
+# REMOVED (dieser Abschnitt für Anlieger befahrbar) --- userdel	q4::inwork; 4518,12355 4598,12501
+# REMOVED (geraten, wahrscheinlich passierbar) --- userdel auto	3 4602,12313 4518,12355 4358,12365
+# REMOVED (geraten, wahrscheinlich passierbar) --- userdel auto	3 4358,12365 4518,12355 4602,12313
 #: source_id ^^^
 EOF
      },
@@ -24506,6 +24506,53 @@ EOF
        source_id => 'IM_026222',
        data  => <<EOF,
 userdel	q4::inwork; 25519,4830 25552,4829 25720,4832
+EOF
+     },
+     { from  => $isodate2epoch->("2015-09-27 00:00:00"),
+       until => $isodate2epoch->("2015-10-17 23:59:59"),
+       text  => 'Odilostr.: Instandsetzung zwischen Hohefeldstr. und Silvesterweg, Fahrbahn gesperrt, voraussichtlich vom 28.09.2015 bis 17.10.2015',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.366250.php',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::inwork 3216,24135 3311,24150 3483,24186 3632,24214
+EOF
+     },
+     { from  => 1443650400, # 2015-10-01 00:00
+       until => 1483225199, # 2016-12-31 23:59
+       text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 393 und Hackbuschstraße, stadteinwärts gesperrt, voraussichtlich ab Oktober 2015 bis Ende 2016',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367070.php',
+       data  => <<EOF,
+userdel	q4::inwork; -6861,15129 -6507,15007
+EOF
+     },
+     { from  => 1442700000, # 2015-09-20 00:00
+       until => undef, # XXX
+       text  => 'Königsweg: Bauarbeiten zwischen Am Waldhaus und Lindenthaler Allee, zeitweilige Sperrungen möglich, voraussichtlich ab 21. September 2015',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.364590.php',
+       data  => <<EOF,
+#: XXX Bis wann sind die Bauarbeiten fertig?
+#: next_check: 2016-03-01
+userdel	2::inwork -1303,2003 -1592,1852 -2043,1596 -2618,1281
+EOF
+     },
+     { from  => 1442181600, # 2015-09-14 00:00
+       until => 1450220399, # 2015-12-15 23:59
+       text  => 'Haveluferweg: zwischen Am Ortsrand und Scharfe Lanke/Weinmeisterhornweg Bauarbeiten, Weg kann zeitweilig gesperrt sein, voraussichtlich von Mitte September 2015 bis Mitte Dezember 2015',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367062.php',
+       data  => <<EOF,
+userdel	2::inwork -4546,9381 -4506,9395 -4460,9456 -4442,9625 -4536,9800 -4585,9836 -4619,9867 -4631,10046 -4625,10139 -4645,10192 -4592,10184 -4510,10208 -4445,10379 -4387,10496 -4323,10570 -4230,10679 -4254,10810 -4251,11112
+EOF
+     },
+     { from  => 1442786400, # 2015-09-21 00:00
+       until => 1450220399, # 2015-12-15 23:59
+       text  => 'Schifffahrtsufer an der Havel: Bauarbeiten im Abschnitt Burgwall - Halbinsel, Weg gesperrt, vom 22. September 2015 bis voraussichtlich Mitte Dezember 2015 ',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367062.php',
+       data  => <<EOF,
+userdel	2::inwork -3339,13106 -3203,12895 -3205,12816 -3180,12719 -3142,12615
 EOF
      },
     );

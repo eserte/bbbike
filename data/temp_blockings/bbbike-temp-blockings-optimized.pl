@@ -2660,7 +2660,16 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	q4::inwork 9343,12464 9358,12351
+',
+         'from' => 1437688800,
+         'id' => 2348,
+         'source_id' => 'IM_025755',
+         'text' => 'Friedrichstr. (Mitte): Baustelle, Fahrbahn zwischen Mittelstr. und Unter den Linden Richtung gesperrt (bis 05.10.2015)',
+         'type' => 'handicap',
+         'until' => 1444057200
+       },
        {
          'data' => '	q4::temp:clock -3941,12545 -3941,12376
 ',
@@ -3723,6 +3732,58 @@ userdel	q4::inwork; 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
          'text' => 'Müggelseedamm: zwischen Bölschetr. und Scharnweberstr. Baustelle, Fahrbahn Richtung Osten gesperrt, 14.09.2015 bis 31.10.2015 ',
          'type' => 'handicap',
          'until' => 1446307200
+       },
+       {
+         'data' => '	q4::inwork 3216,24135 3311,24150 3483,24186 3632,24214
+',
+         'from' => 1443304800,
+         'id' => 2739,
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.366250.php',
+         'text' => 'Odilostr.: Instandsetzung zwischen Hohefeldstr. und Silvesterweg, Fahrbahn gesperrt, voraussichtlich vom 28.09.2015 bis 17.10.2015',
+         'type' => 'handicap',
+         'until' => 1445119199
+       },
+       {
+         'data' => 'userdel	q4::inwork; -6861,15129 -6507,15007
+',
+         'from' => 1443650400,
+         'id' => 2740,
+         'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367070.php',
+         'text' => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 393 und Hackbuschstraße, stadteinwärts gesperrt, voraussichtlich ab Oktober 2015 bis Ende 2016',
+         'type' => 'handicap',
+         'until' => 1483225199
+       },
+       {
+         'data' => '#: XXX Bis wann sind die Bauarbeiten fertig?
+#: next_check: 2016-03-01
+userdel	2::inwork -1303,2003 -1592,1852 -2043,1596 -2618,1281
+',
+         'from' => 1442700000,
+         'id' => 2741,
+         'source_id' => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.364590.php',
+         'text' => 'Königsweg: Bauarbeiten zwischen Am Waldhaus und Lindenthaler Allee, zeitweilige Sperrungen möglich, voraussichtlich ab 21. September 2015',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => 'userdel	2::inwork -4546,9381 -4506,9395 -4460,9456 -4442,9625 -4536,9800 -4585,9836 -4619,9867 -4631,10046 -4625,10139 -4645,10192 -4592,10184 -4510,10208 -4445,10379 -4387,10496 -4323,10570 -4230,10679 -4254,10810 -4251,11112
+',
+         'from' => 1442181600,
+         'id' => 2742,
+         'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367062.php',
+         'text' => 'Haveluferweg: zwischen Am Ortsrand und Scharfe Lanke/Weinmeisterhornweg Bauarbeiten, Weg kann zeitweilig gesperrt sein, voraussichtlich von Mitte September 2015 bis Mitte Dezember 2015',
+         'type' => 'gesperrt',
+         'until' => 1450220399
+       },
+       {
+         'data' => 'userdel	2::inwork -3339,13106 -3203,12895 -3205,12816 -3180,12719 -3142,12615
+',
+         'from' => 1442786400,
+         'id' => 2743,
+         'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367062.php',
+         'text' => 'Schifffahrtsufer an der Havel: Bauarbeiten im Abschnitt Burgwall - Halbinsel, Weg gesperrt, vom 22. September 2015 bis voraussichtlich Mitte Dezember 2015 ',
+         'type' => 'gesperrt',
+         'until' => 1450220399
        }
      
 );
