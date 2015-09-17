@@ -27,6 +27,9 @@ BEGIN {
 
 @Radwege::bbbike_category_order = @Radwege::bbbike_category_order if 0; # cease -w
 
+@BBBikePrint::route_pdf_modules = ('Route::PDF::Cairo', 'Route::PDF')
+    if !@BBBikePrint::route_pdf_modules;
+
 sub BBBikePrint::create_postscript {
     my($c, %args) = @_;
     if (using_rotated_fonts()) {
@@ -353,11 +356,24 @@ sub BBBikePrint::print_text_pdflatex {
 }
 
 sub BBBikePrint::print_route_pdf {
-    require Route::PDF;
+    my $route_pdf_module;
+    for my $try (@BBBikePrint::route_pdf_modules) {
+	if (eval qq{ require $try; 1 }) {
+	    $route_pdf_module = $try;
+	    warn "Verwende das Modul $try für BBBikePrint::print_route_pdf.\n"
+		if $verbose;
+	    last;
+	}
+    }
+    if (!$route_pdf_module) {
+	status_message("Konnte die Module @BBBikePrint::route_pdf_modules nicht laden", 'err');
+	return;
+    }
+
     my $pdffile = "$tmpdir/$progname" . "_$$.pdf";
     unlink $pdffile;
 
-    my $pdf = Route::PDF->new(-filename => $pdffile);
+    my $pdf = $route_pdf_module->new(-filename => $pdffile);
     $pdf->output(-net => $net,
 		 -route => Route->new_from_realcoords(\@realcoords),
 		);
