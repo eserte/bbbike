@@ -388,6 +388,10 @@ Gaußstr.: Radspuren werden errichtet	?::projected 3739,13563 3833,13590 4098,136
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: last_checked: 2015-09-18
+#: check_frequency: 14d
+Treptower Park, mittlerer Weg: wann ist hier fertig gebaut? wie geht der Weg weiter? Qualität? Beleuchtung?	?::inwork 15119,9397 15169,9380 15247,9388 15325,9354 15453,9259
+# 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2015
 #: XXX im Amtsblatt ohne Bindestriche --- ist das richtig?
 #: XXX fehlt in Berlin.coords.data
@@ -767,13 +771,13 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 # REMOVED (realisiert) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) --- #: last_checked: 2013-09-27 (Markierungsarbeiten haben begonnen) --- #: next_check: 2013-10-04 --- Werbellinstr.: Radstreifen werden erstellt	?::projected; 12698,8175 12650,8164 12541,8140 12426,8115
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf vvv
-#: last_checked: 2015-08-14
-#: check_frequency: 60d
+#: last_checked: 2015-09-18
+#: check_frequency: 14d
 #: priority: #C
-Lohmühlenbrücke: Zebrastreifen wird angelegt	?::projected 12850,9375 12871,9356 12888,9338
+Lohmühlenbrücke: Zebrastreifen wird angelegt	?::inwork 12850,9375 12871,9356 12888,9338
 # 
 #: by: http://www.bwb.de/content/language1/html/10337.php#11671
-#: last_checked: 2015-09-09
+#: last_checked: 2015-09-18
 #: check_frequency: 60d
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,9775 12074,9689 12066,9558
 #: by: ^^^
@@ -781,7 +785,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,977
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=13496&options=4
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4986 (Stand?)
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
-#: last_checked: 2015-09-09
+#: last_checked: 2015-09-18
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
@@ -1187,6 +1191,18 @@ Am Kirchendreieck: Lage der Straße? Qualität?	? 23922,13085 23960,13325
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1509/nachricht5759.html
+#: next_check: 2015-10-05
+Hauptstr.: wie wirkt sich die provisorische Verkehrsführung auf Radfahrer aus (Qualität, Stau?)	? 14906,10820 15261,10738
+# 
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1509/nachricht5761.html vvv
+#: next_check: 2015-10-01 vvv
+Sonnenallee: Verlängerung der Busspur	?; 12772,8612 12742,8635 12630,8722 12483,8834 12438,8859 12320,8927 12242,8972
+Sonnenallee: Verlängerung der Busspur	?; 13010,8422 12925,8494
+Sonnenallee: Verlängerung der Busspur	?; 13616,7949 13474,8060
+#: next_check ^^^
+#: by: ^^^
+# 
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367062.php
 #: by: http://www.gruen-berlin.de/in-realisation/havelradweg/?L=.htewrap&PHPSESSID=bc0eb92d1c0f3ab3c89fe427b9f45c1a
 #: next_check: 2015-12-15
@@ -1564,7 +1580,6 @@ Gerhard-Schulz-Str.: Planstraße 3, genaue Lage, Qualität?	?::projected 17508,163
 Harry-Glaß-Str.: Planstraße 4, genaue Lage, Qualität?	?::projected 17552,16461 17603,16415 17611,16396 17643,16322
 Joachim-Böhmer-Str.: Planstraße 5 (oder ist das die Erich-Hagen-Str.?), genaue Lage, Qualität?	?::projected 17673,16420 17657,16464 17712,16549
 Erich-Hagen-Str.: Planstraße 6 (oder ist das die Joachim-Böhmer-Str.?), genaue Lage, Qualität?	?::projected 17818,16397 17792,16465 17776,16504 17712,16549 17673,16577
-#: XXX fehlt in Berlin.coords.data, PLZ=13053
 Anna-Maria-Müller-Str.: Planstraße 7, genaue Lage, Qualität?	?::projected 17712,16549 17751,16603
 (Fußweg zur Gehrenseestr.): genaue Lage, Qualität?	?::projected 17615,16310 17640,16259
 #: check_frequency ^^^
@@ -2116,7 +2131,7 @@ Hüfnerweg (Groß Glienicke): genaue Lage, Qualität?	? -9801,6988 -9795,7066
 #: by ^^^
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/54re.pdf/file?y=2014 vvv
-#: XXX fehlen alle in Berlin.coords.data vvv
+#: XXX fehlen alle in Berlin.coords.data, Ortsteil Lübars vvv
 #: XXX Am Lübarser Feld PLZ=13469
 #: XXX Zum Klötzbecken PLZ=13469
 #: XXX Zum Klötzhain PLZ=13469
@@ -3566,7 +3581,7 @@ Müllerweg (Potsdam-Fahrland): Qualität? Genauer Verlauf?	? -15503,6422 -15392,63
 # REMOVED (Weg existiert, wassergebundene Decke, unbeleuchtet, Radfahren frei, allerdings Bordstein an beiden Seiten, wenn man nicht via angrenzenden Bordstein kommt, und wahrscheinlich sowieso verkehrlich eher uninteressant) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20120405.1310.368452.html (Radfahren erlaubt) --- Preußenpark: Qualität des Weges? Nachts beleuchtet?	? 4374,9409 4353,9430 4281,9393 4246,9406
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/17re.pdf/file?y=2012
 #: note: siehe auch: http://www.freilandlabor-kaniswall.de/kontakt.htm
-#: XXX fehlt in Berlin.coords.data, PLZ=12559
+#: XXX fehlt in Berlin.coords.data, PLZ=12559, Citypart=Müggelheim
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4248&options=4
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00081630/30-Anlagen/01/DRS0149VK.pdf (mit Lageplan)
 Am Kaniswall: Privatstraße, wo genau? Qualität?	? 32854,-201 32970,320

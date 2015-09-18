@@ -450,7 +450,7 @@ Puschkinallee	H 13535,10184 13579,10146 13711,10022 13789,9949 13829,9905 13884,
 Puschkinallee	HH 14193,9746 14270,9710 14318,9688 14780,9480 14819,9462 14883,9431 15383,9191
 (Puschkinallee - Elsenstr.)	HH 14270,9710 14250,9756 14244,9812
 (Treptower Park)	NN 14529,9141 14601,9201 14748,9420 14780,9480
-(Treptower Park: am Rosengarten)	NN 14819,9462 14844,9513 14910,9643
+(Treptower Park: am Rosengarten)	NN 14819,9462 14844,9513 14871,9567 14910,9643
 (Treptower Park: südl./westl. des Karpfenteichs)	NN 15378,8668 15335,8714 15254,8735 15036,8728 14949,8773 14906,8822 14854,8964
 (Treptower Park: um das Sowjetische Ehrenmal herum)	NN 14614,9052 14854,8964 15057,8910 15110,8912 15159,8934 15181,8967 15187,9038 15154,9106 15025,9171 14950,9307 14898,9364 14883,9431
 (Treptower Park)	NN 15187,9038 15217,9137
@@ -678,6 +678,7 @@ Alte Potsdamer Str.	N 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324 828
 Kulmer Str.	N 7771,9479 7829,9723
 Kulmer Str.	HH 7829,9723 7848,9814 7866,9902
 Bülowstr. (Schöneberg)	NN 7938,9694 7933,9755
+#: note: mittlerweile liegen wohl die Hinterhöfe/-häuser (?) im Ortsteil=Kreuzberg, PLZ=10783
 Bülowstr. (Schöneberg)	N 7933,9755 7889,9901 7866,9902
 Bülowstr. (Schöneberg)	HH 7866,9902 7866,9918 7813,10112
 #: carriageway_width: 44m (12m+medial strip=20m+12m)
@@ -4354,6 +4355,7 @@ Frank-L.-Howley-Weg	N 2345,1283 2233,1528
 (Verlängerung Frank-L.-Howley-Weg)	N 2408,1144 2352,1267
 #: XXX: vielleicht wird das irgendwann der Floyd-L.-Parks-Weg - Floyd-L.-Parks-Weg|Lichterfelde|14167|2408,1144
 #: XXX laut DPAG-Mitteilungsblatt 12/2013 ist der Name "Floyd-L.-Parks-Weg" "entfallen"
+#: XXX aber in LOR Juli 2015 noch immer drinnen
 #: last_checked: 2014-08-07
 #: check_frequency: 360d
 (William-H.-Tunner-Str. - Harry-S.-Truman-Allee)	N 2336,1111 2408,1144 2504,1186
@@ -8326,7 +8328,7 @@ Ideallee	N 11069,23647 10971,23838 10813,24126
 #: next_check_id: IDEHORST-2015
 #: last_checked: 2015-05-03
 #: check_frequency: 60d
-#: XXX später neuer Name: Bambusweg (fehlt in Berlin.coords.data, PLZ=13159)
+#: XXX später neuer Name: Bambusweg (fehlt in Berlin.coords.data, PLZ=13159, Ortsteil=Blankenfelde)
 (Fasanenplan)	N 10667,23684 10687,23684 10708,23696 10747,23718 10785,23740 10842,23773 10887,23796 10927,23816 10971,23838
 #: note ^^^
 Weg A (Blankenfelde)	N 10700,23251 10549,23550
@@ -12602,13 +12604,13 @@ Severingstr.	N 13455,2465 13494,2512 13526,2568 13566,2673 13608,2850 13631,2938
 Bohm-Schuch-Weg	N 13608,2850 13703,2826 13740,2827 13738,2911
 Schlosserweg	N 13168,2931 13129,2999 13048,3134 12726,3684 12724,3746 12663,3762
 (Uferweg, Plänterwald)	NN 16673,7511 16655,7572 16624,7833 16692,8166 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15778,8990
-(Uferweg, Treptower Park)	NN 15778,8990 15638,9020 15527,9096 15513,9144 15432,9322 15321,9448 15174,9554 15052,9584 14910,9643 14697,9726
-(Uferweg - S-Bahnhof Treptower Park/Puschkinallee)	NN 14697,9726 14645,9710 14575,9648 14496,9705 14443,9731
-(Uferweg - S-Bahnhof Treptower Park)	NN 14443,9731 14361,9772
-(Uferweg - Puschkinallee)	NN 14443,9731 14318,9688
-(S-Bahnhof Treptower Park - Rosengarten)	NN 14575,9648 14627,9609 14705,9578
-(S-Bahnhof Treptower Park - Rosengarten)	N 14705,9578 14791,9537
-(S-Bahnhof Treptower Park - Rosengarten)	NN 14791,9537 14823,9523 14844,9513
+(Uferweg, Treptower Park)	NN 15778,8990 15638,9020 15527,9096 15513,9144 15453,9259 15432,9322 15321,9448 15174,9554 15052,9584 14910,9643 14697,9726
+(Uferweg - S-Bahnhof Treptower Park/Puschkinallee)	NN 14697,9726 14645,9710 14575,9648
+(Treptower Park, mittlerer Weg)	NN 15119,9397 15019,9465 14912,9546 14871,9567 14792,9599 14695,9587 14627,9609 14575,9648 14496,9705 14443,9731 14361,9772
+(Treptower Park, Diagonalverbindung)	NN 14443,9731 14318,9688
+(mittlerer Weg - Rosengarten)	NN 14695,9587 14705,9578
+(mittlerer Weg - Rosengarten)	N 14705,9578 14791,9537
+(mittlerer Weg - Rosengarten)	NN 14791,9537 14823,9523 14844,9513
 (Treptower Hafen)	NN 14697,9726 14674,9764 14500,9856
 (S-Bahnhof - Treptower Hafen)	NN 14361,9772 14436,9784 14460,9814 14483,9843
 (Uferweg - Parkweg)	NN 14500,9856 14483,9843 14460,9871 14448,9922

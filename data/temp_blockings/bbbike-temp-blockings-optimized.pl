@@ -2903,7 +2903,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        {
          'data' => '#: next_check_id: KARLSHORSTER-2015 vvv
-#: last_checked: 2015-09-13 vvv
+#: last_checked: 2015-09-18 vvv
 #: next_check: 2015-09-21 vvv
 #: XXX am 2015-09-06 offen für Fußgänger
 userdel	2::inwork 15272,10790 15279,10862
@@ -3355,16 +3355,7 @@ userdel	2::inwork -3197,11554 -3075,11510
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	q3::inwork 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
-',
-         'from' => 1439228125,
-         'id' => 2654,
-         'source_id' => 'IM_025870',
-         'text' => 'John-Foster-Dulles-Allee: Baustelle zwischen Zeltenplatz und Yitzak-Rabin-Str., Fahrbahn gesperrt, ggfs. auf Gehweg ausweichen, bis 18.09.2015',
-         'type' => 'handicap',
-         'until' => 1442581200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3557,13 +3548,14 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
          'data' => '#: XXX die Qualität wird nach den Bauarbeiten vermutlich besser sein vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.297071.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.295591.php
-#: last_checked: 2015-09-13 vvv
+#: last_checked: 2015-09-18 vvv
 #: check_frequency: 10d vvv
-userdel	2::inwork 14318,9688 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
-userdel	2::inwork 14575,9648 14645,9710 14697,9726 14910,9643 15052,9584 15174,9554 15321,9448 15432,9322 15513,9144 15527,9096 15638,9020
-userdel	2::inwork 14443,9731 14361,9772
+userdel	2::inwork 14318,9688 14443,9731
+# REMOVED --- userdel	2::inwork 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
+userdel	2::inwork 14575,9648 14645,9710 14697,9726 14910,9643 15052,9584 15174,9554 15321,9448 15432,9322 15453,9259 15513,9144 15527,9096 15638,9020
+# REMOVED --- userdel	2::inwork 14443,9731 14361,9772
 userdel	2::inwork 15630,8979 15638,9020 15778,8990
-userdel	2::inwork 14910,9643 14844,9513
+# REMOVED --- userdel	2::inwork 14910,9643 14871,9567 14844,9513
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -3683,17 +3675,7 @@ userdel	q4::inwork; 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
          'type' => 'handicap',
          'until' => 1482501600
        },
-       {
-         'data' => '	q3::inwork 11275,10723 11234,10739 11159,10769 11049,10816
-	q3::inwork 11189,10831 11159,10769 11133,10704
-',
-         'from' => 1441490400,
-         'id' => 2734,
-         'source_id' => 'http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.360026.php',
-         'text' => 'Oranienplatz: Sperrung der Fahrbahn wegen Bauarbeiten, Radfahrer müssen auf den Gehweg ausweichen, 07.09.2015 bis voraussichtlich 18.09.2015',
-         'type' => 'handicap',
-         'until' => 1442613600
-       },
+       undef,
        {
          'data' => 'userdel	q4::inwork 2615,25225 2649,25170 2694,25132
 ',

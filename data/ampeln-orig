@@ -2453,13 +2453,14 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: Anforderungsampel
 	F 15356,3759
 #: next_check_id: KARLSHORSTER-2015
-#: last_checked: 2015-09-06
+#: last_checked: 2015-09-18
 #: next_check: 2015-09-21
 #: note: provisorische Ampel
 #: XXX nicht immer eingeschaltet, z.B. 2015-08-08 (Sa) gegen 10 Uhr off
-#: valid: -20150921
+# REMOVED --- : valid: -20150921
 	X::inwork 14805,10518
 #: XXX bleibt die Ampel permanent?
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1509/nachricht5759.html (ja, es wird eine neue Ampel errichtet)
 #: last_checked: 2015-08-08
 #: next_check: 2015-09-21
 # REMOVED --- danach wieder: check_frequency: 30d

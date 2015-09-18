@@ -386,10 +386,10 @@ Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Dircksenstr.: langsame Straßenbahnen, Fußgänger	q2 10970,12822 10849,12944
 Dircksenstr.: Fußgänger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
 Gontardstr.: langsame Straßenbahnen, Fußgänger	q2 10733,12967 10801,12901 10923,12779
-Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 15778,8990 15638,9020 15527,9096 15513,9144 15432,9322 15321,9448 15174,9554 15052,9584 14910,9643 14697,9726 14674,9764 14500,9856 14483,9843 14460,9871 14448,9922
+Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 15778,8990 15638,9020 15527,9096 15513,9144 15453,9259 15432,9322 15321,9448 15174,9554 15052,9584 14910,9643 14697,9726 14674,9764 14500,9856 14483,9843 14460,9871 14448,9922
 (S-Bahnhof - Treptower Hafen): Fußgänger, besonders an schönen Tagen	q2 14361,9772 14436,9784 14460,9814 14483,9843
 (Uferweg - Puschkinallee): Fußgänger	q1 14443,9731 14318,9688
-Treptower Park, am Rosengarten: Fußgänger	q2 14819,9462 14844,9513 14910,9643
+Treptower Park, am Rosengarten: Fußgänger	q2 14819,9462 14844,9513 14871,9567 14910,9643
 Treptower Park: Fußgänger	q1 14697,9726 14645,9710 14575,9648 14496,9705 14443,9731 14361,9772
 Treptower Park: einige Fußgänger	q1+ 15558,8820 15439,8839 15297,8921 15245,8916 15223,8893
 Görlitzer Park: Fußgänger	q2 12671,10042 12686,10045 12690,10062
@@ -1970,7 +1970,7 @@ Lübbener Str.: Fußgänger	q2 12729,10515 12731,10547
 #: note: es war nur einer (2013-10-22), aber der Weg ist so schlecht, dass er auch einen Eintrag in handicap verdient
 Parforceweg: einige umgestürzte Bäume	q4 -643,7252 -728,7310 -1020,7446 -1328,7597 -1643,7828
 (Brockenweg - Blankenburger Pflasterweg): schmaler Pfad	q3+ 15102,20723 15119,20655 15226,20587
-(S-Bahnhof Treptower Park - Rosengarten): Fußgänger	q1 14575,9648 14627,9609 14705,9578
+(S-Bahnhof Treptower Park - Rosengarten): Fußgänger	q1 14575,9648 14627,9609 14695,9587 14792,9599 14871,9567 14912,9546 15019,9465 15119,9397
 (S-Bahnhof Treptower Park - Rosengarten): Parkplatzverkehr	q1 14705,9578 14791,9537
 #: XXX_prog BS am Parkplatz (ansonsten -> q1)
 (S-Bahnhof Treptower Park - Rosengarten): Fußgänger, Bordstein	q2 14791,9537 14823,9523 14844,9513
@@ -2194,6 +2194,7 @@ Wegenerstr.: ein Moabiter Kissen	q0- 4477,9176 4619,9200
 #: XXX_prog: für Anhänger größere Behinderung (q1?)
 Sigmaringer Str.: ein Moabiter Kissen	q0- 4700,9179 4715,8977
 (Wittenauer Str. - Zabel-Krüger-Damm): einige Fußgänger	q1 6278,22615 6254,22633 6226,22712 6234,22759 6243,22797 6118,22947 6064,23014
+(Rummelsburger Ufer - Hauptstr.): einige Fußgänger	q1+ 15249,10564 15307,10701
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
