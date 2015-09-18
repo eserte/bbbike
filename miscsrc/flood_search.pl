@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: flood_search.pl,v 1.16 2007/04/24 18:49:33 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2010,2015 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -26,7 +25,7 @@ use lib ("$FindBin::RealBin/..",
 use vars qw($net_type $show_rings $circle_unit);
 $net_type = "s" if !defined $net_type;
 $show_rings = 0 if !defined $show_rings;
-$circle_unit = "km" if !defined $circle_unit;
+$circle_unit = 'min' if !defined $circle_unit;
 
 use your qw(%main::map_mode_callback $main::Radiobutton $main::net
 	    %main::do_flag %main::penalty_subs);
