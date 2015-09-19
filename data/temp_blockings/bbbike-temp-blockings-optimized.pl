@@ -3302,7 +3302,7 @@ userdel	q4::inwork; 16412,15559 16448,15593 16497,15636 16615,15737 16633,15753 
        undef,
        {
          'data' => '#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2015-07-31
+#: last_checked: 2015-09-19
 #: check_frequency: 90d
 userdel	q3::inwork 4503,10497 4485,10307
 ',

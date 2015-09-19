@@ -23450,7 +23450,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2015-07-31
+#: last_checked: 2015-09-19
 #: check_frequency: 90d
 userdel	q3::inwork 4503,10497 4485,10307
 EOF

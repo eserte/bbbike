@@ -834,7 +834,13 @@ Verbundsteinpflasterradweg	RW1; 7757,834 7867,831
 	RW; 7113,3908 6996,3761
 	RW1;RW 7113,3908 7144,3965 7159,4023 7160,4051
 	RW1;RW1 6214,13225 6228,13324
-Radweg auf der Fahrbahn hinter den parkenden Autos	RW1;RW1 6228,13324 6229,13517 6230,13596 6227,13938
+#: XXX während der Bauarbeiten
+#: XXX wieder herstellen: Radweg auf der Fahrbahn hinter den parkenden Autos	RW1; 6228,13324 6229,13517 6230,13596
+#: last_checked: 2015-09-19
+#: check_frequency: 100d
+provisorische Radspur	RW3; 6228,13324 6229,13517 6230,13596
+Radweg auf der Fahrbahn hinter den parkenden Autos	RW1; 6230,13596 6227,13938
+Radweg auf der Fahrbahn hinter den parkenden Autos	RW1; 6227,13938 6230,13596 6229,13517 6228,13324
 	RW1;RW1 9442,16610 9331,16624 9210,16638 8939,16668 8759,16684
 	RW2;RW1 8759,16684 8721,16689 8503,16716 8467,16718
 	RW2;RW2 21954,5229 22043,5346 22087,5404 22123,5452 22184,5545 22236,5633 22292,5774 22358,5918 22428,6063
@@ -960,7 +966,7 @@ neues Verbundsteinpflaster	RW1; 12694,2517 12694,2544 12694,2570 12693,2746 1269
 	RW;RW 12694,2517 12703,2454
 die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 13745,12118 13785,12292
 #: next_check_id: WARSCHAUER-2014 vvv
-#: last_checked: 2015-09-17 vvv
+#: last_checked: 2015-09-19 vvv
 #: check_frequency: 3d vvv
 #: by: http://www.umbau-warschauer-strasse.de/images/bauinfos/Infoblatt_August_15-2.pdf
 #: XXX Radspur (RW4) ist wegen Bauarbeiten aufgehoben, später wahrscheinlich wieder hergestellt
@@ -1024,7 +1030,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 969
 #: XXX Markierungen fehlen in beiden Richtungen
 #: source_id: IM_018997
 #: source_id: IM_023987
-#: last_checked: 2015-09-17
+#: last_checked: 2015-09-19
 Busspur ist immer gültig	RW0;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
@@ -1476,10 +1482,7 @@ die ersten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	
 # REMOVED --- #: next_check_id: WARSCHAUER-2014 --- #: XXX Gehweg für Radfahrer frei (aber zu voll um benutzbar zu sein) --- #: last_checked: 2015-07-01 --- #: check_frequency: 7d
 	RW3;RW1 13541,11355 13588,11490
 	RW3; 13651,11731 13603,11538
-#: next_check_id: WARSCHAUER-2014
-#: last_checked: 2015-07-11
-#: next_check: 2015-09-30
-	RW0;RW2 13588,11490 13603,11538
+	RW3;RW2 13588,11490 13603,11538
 	RW4;RW4 14026,10869 14024,10861 14011,10812
 	RW1;RW1 14134,11272 14096,11134 14076,11057 14043,10928 14026,10869
 die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
@@ -4472,7 +4475,7 @@ Tempo 10	RW6;RW6 13559,12779 13470,12990
 	RW4;RW3 14096,12827 14066,12836
 #: XXX wegen Bauarbeiten am Hochhaus "Upper West" sind die Radspuren aufgehoben
 #: by: http://www.tagesspiegel.de/berlin/stadtentwicklung-zwillingsturm-soll-2016-in-der-city-west-eroeffnen/7416454.html (geplante Eröffnung Mitte 2016)
-#: last_checked: 2015-06-14
+#: last_checked: 2015-09-19
 #: next_check: 2016-05-01
 #	RW3; 5488,10978 5613,10963 5652,11004
 ##: note: teilweise vor dem Hotel unterbrochen (wegen Ladezone?)
@@ -4622,7 +4625,7 @@ Gehweg für Radfahrer frei	RW1; 22162,1067 22092,999 22044,1018
 Gehweg für Radfahrer frei	RW1; 16855,25792 16635,26118 16580,26154
 	RW6;RW6 19406,7886 19550,7780 19500,7719
 #: note: eigentlich nicht für Radfahrer freigegeben (2015-06)
-#: last_checked: 2015-06-08
+#: last_checked: 2015-09-19
 #: check_frequency: 60d
 Busspur ist immer gültig	RW5;RW5 6105,13328 6115,13328 6228,13324
 	RW3;RW3 5434,13398 5560,13382 5569,13381 5705,13359 5857,13342 5956,13330
