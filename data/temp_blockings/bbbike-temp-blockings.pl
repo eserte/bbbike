@@ -24556,4 +24556,13 @@ EOF
 userdel	2::inwork -3339,13106 -3203,12895 -3205,12816 -3180,12719 -3142,12615
 EOF
      },
+     { from  => 1442786400, # 2015-09-21 00:00
+       until => 1449961200, # 2015-12-13 00:00
+       text  => 'Karmeliterweg: Instandsetzungsarbeiten zwischen Welfenteich und Frohnauer Straße, Fahrbahn gesperrt, vom 22.09.2015 bis 12.12.2015',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.371808.php',
+       data  => <<EOF,
+userdel	q4::inwork 1868,24633 1924,24672 2003,24702 2120,24740
+EOF
+     },
     );

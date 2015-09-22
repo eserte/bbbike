@@ -2059,25 +2059,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,11953
-',
-         'from' => 1442566800,
-         'id' => 1910,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              19,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbst in Westend), Straße vollständig gesperrt (19.09.2015 bis 20.09.2015) ',
-         'type' => 'gesperrt',
-         'until' => 1442772000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2567,26 +2549,7 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	q4::temp 8556,21918 8568,21863 8473,21633 8460,21602
-',
-         'from' => 1442440800,
-         'id' => 2285,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              14,
-                              'months',
-                              9
-                            ]
-                          ],
-         'source_id' => 'http://www.laubinger.de/termine/rosenthaler-herbst/',
-         'text' => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 18.09.2015 bis 20.09.2015',
-         'type' => 'handicap',
-         'until' => 1442786399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2901,24 +2864,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        },
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: KARLSHORSTER-2015 vvv
-#: last_checked: 2015-09-18 vvv
-#: next_check: 2015-09-21 vvv
-#: XXX am 2015-09-06 offen für Fußgänger
-userdel	2::inwork 15272,10790 15279,10862
-userdel	2::inwork 15261,10738 15272,10790
-#: next_check ^^^
-#: last_checked ^^^
-#: next_check_id ^^^
-',
-         'from' => 1430704800,
-         'id' => 2416,
-         'source_id' => 'IM_024846',
-         'text' => 'Karlshorster Str.: Fahrbahn zwischen Türrschmidtstr. und Hauptstr. zeitweise komplett gesperrt, auch für Fußgänger und Radfahrer, 04.05.2015 bis 21.09.2015',
-         'type' => 'handicap',
-         'until' => 1442851200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3608,16 +3554,7 @@ userdel	2::inwork 15630,8979 15638,9020 15778,8990
          'until' => 1446307200
        },
        undef,
-       {
-         'data' => 'userdel	q4::inwork; 9416,10196 9409,10226 9404,10250
-',
-         'from' => 1438198655,
-         'id' => 2725,
-         'source_id' => 'IM_025719',
-         'text' => 'Mehringbrücke: Fahrbahn Richtung Wilhelmstr. gesperrt, für Radfahrer umständliche Wegführung über linken Gehweg, bis 21.09.2015',
-         'type' => 'handicap',
-         'until' => 1442847600
-       },
+       undef,
        undef,
        undef,
        {
@@ -3766,6 +3703,16 @@ userdel	2::inwork -1303,2003 -1592,1852 -2043,1596 -2618,1281
          'text' => 'Schifffahrtsufer an der Havel: Bauarbeiten im Abschnitt Burgwall - Halbinsel, Weg gesperrt, vom 22. September 2015 bis voraussichtlich Mitte Dezember 2015 ',
          'type' => 'gesperrt',
          'until' => 1450220399
+       },
+       {
+         'data' => 'userdel	q4::inwork 1868,24633 1924,24672 2003,24702 2120,24740
+',
+         'from' => 1442786400,
+         'id' => 2744,
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.371808.php',
+         'text' => 'Karmeliterweg: Instandsetzungsarbeiten zwischen Welfenteich und Frohnauer Straße, Fahrbahn gesperrt, vom 22.09.2015 bis 12.12.2015',
+         'type' => 'handicap',
+         'until' => 1449961200
        }
      
 );

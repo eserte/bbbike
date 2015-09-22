@@ -3712,7 +3712,8 @@ Radweg fängt etwas hinter dem Kreisverkehr an	RW1; 12705,16708 12813,16791
 	RW6;RW6 16073,12883 16074,12778
 #: by: osm
 	RW6;RW6 16146,12881 16148,12772 16200,12771 16197,12880
-Gehweg für Radfahrer frei	RW1; 15261,10738 14906,10820
+# REMOVED (nicht mehr) --- Gehweg für Radfahrer frei
+	RW0; 15261,10738 14906,10820
 #: by: anonymous
 asphaltierter Radweg, sehr gute Qualität	RW1;RW -3040,16246 -3631,16224
 	RW6;RW6 10332,11929 10364,11896

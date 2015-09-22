@@ -39,7 +39,7 @@ Markgrafendamm: Asphalt	Q0 14558,10264 14608,10409 14641,10552 14675,10693 14672
 Markgrafendamm/Hauptstr.: asphaltiert	Q0 14674,10811 14717,10855 14794,10844 14906,10820
 Hauptstr.: mäßiges Kopfsteinpflaster, teilweise Betonplatten	Q2+; 14906,10820 15261,10738
 #: note: Asphaltierung während der Bauarbeiten, vielleicht auch permanent; einige kurze Kopfsteinpflasterabschnitte
-Hauptstr.: überwiegend asphaltierter Radweg	Q1+; 15261,10738 14906,10820
+Hauptstr.: überwiegend asphaltierte Fahrbahn	Q1+; 15261,10738 14906,10820
 Karlshorster Str.: Asphalt	Q0 15279,10862 15272,10790 15261,10738
 Cordesstr.: schlechtes Kopfsteinpflaster	Q3 1672,9836 1645,9862 1515,10002 1477,10073 1395,10122 1318,10031
 Werkstättenweg: mäßiges Kopfsteinpflaster	Q2- 2110,10101 1843,9867
@@ -898,8 +898,10 @@ Wuhlewanderweg: guter Asphalt	Q0 22030,6600 22097,6414 22146,6338 22214,6271 222
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22243,6125 22204,6016 22172,5928 22135,5882 22084,5877
 # REMOVED (nein, hier passiert vorerst nichts, siehe 2. URL) --- #: XXX eventuell passiert hier noch was bzgl. Neupflasterung? --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4258&options=4 (Neupflasterung) --- #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/verwaltungbzbm/mdv_vii_12.pdf?start&ts=1347456072&file=mdv_vii_12.pdf --- #: next_check: 2012-09-01
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bvv/mdv_vii_30.pdf?start&ts=1397460445&file=mdv_vii_30.pdf (Sanierung 2015)
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: last_checked: 2015-09-13
-#: check_frequency: 90d
+#: next_check: 2016-05-01
 Wuhlewanderweg: Verbundsteine, teilweise etwas uneben	Q1- 22084,5877 21846,5856 21744,5804 21602,5685 21507,5620
 Hämmerlingstr.: Asphalt	Q0 21683,6946 21774,6880 21833,6810 21861,6719 21913,6554 21984,6317 22000,6245 22033,6144 22075,5996 22083,5899 22084,5877 22089,5782 22092,5673 22095,5585
 Dorfstr.: schlechtes Kopfsteinpflaster, teilweise gut befahrbare Banketten	Q2- 30357,3555 30319,3511 30281,3479 30201,3375 30188,3301 29998,3170 29902,3104 29921,3079 29959,3031
@@ -10218,6 +10220,9 @@ Gersauer Weg: mäßiger Asphalt	Q1 3972,2785 3932,2660
 John-Heartfield-Str.: guter Asphalt	Q0 23319,14069 23337,14165 23381,14194 23416,14219 23495,14273
 Widenhof: gutes Verbundsteinpflaster	Q1 -1843,1852 -1813,1776
 #: corrected_by: srt ("mäßiger" durch "wellig" ersetzt, Q1 -> Q1+)
+#: XXX ist die Qualität hier etwas besser geworden?
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4791
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00100199/99-Anlagen/05/B0691SB.pdf
 Grenzbergeweg: Asphalt, teilweise etwas wellig	Q1+ 32090,3599 32099,3705 32108,3793 32120,3977
 #: corrected_by: srt ("mäßiger" gestrichen, Q1 -> Q0-)
 Schönstr.: Asphalt	Q0- 13391,16436 13630,16629 13789,16775 13861,16836 14006,16961 14136,17170
@@ -16104,7 +16109,11 @@ Alemannenstr. (Frohnau): Asphalt	Q0 1453,25923 1501,25675 1558,25505 1568,25477 
 #: corrected_by: srt (Kleinpflastersteine -> Asphalt)
 Alemannenstr. (Frohnau): Asphalt	Q0 1627,25386 1714,25289 1738,25243
 Karmeliterweg: Kleinpflastersteine	Q2 1458,24561 1634,24527 1742,24526
-Karmeliterweg: Kleinpflastersteine	Q2 1868,24633 1924,24672 2003,24702 2120,24740 2174,24783
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.371808.php
+#: XXX Instandsetzungsarbeiten, wie ist die Qualität danach?
+#: next_check: 2015-12-12
+Karmeliterweg: Kleinpflastersteine	Q2 1868,24633 1924,24672 2003,24702 2120,24740
+Karmeliterweg: Kleinpflastersteine	Q2 2120,24740 2174,24783
 #: XXX nach der Sanierung bessere Qualität?
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.219976.php
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20150330 (Bauende: 30. April 2015)
@@ -24075,7 +24084,7 @@ Gustav-Heinemann-Brücke: Holzbohlen mit Fugen	Q1 8116,12938 8110,13042
 #: by: http://www.charite.de/charite/organisation/baumassnahmen/campus_charite_mitte/ (Dauer: 3 Jahre ab Herbst 2013)
 #: by: http://infocenter.charite.de/
 #: last_checked: 2013-10-15
-#: next_check: 2015-08-30
+#: next_check: 2015-09-30
 (entlang der Baustelle an der Charité): teilweise Schotter	Q2 8833,13440 8846,13412 8835,13376 8818,13365 8808,13377 8764,13372
 (Parkplatz Charité): Asphalt	Q1 8764,13372 8665,13353
 Platz vor dem Neuen Tor: Kopfsteinpflaster	Q2 8674,13593 8668,13645 8662,13688
