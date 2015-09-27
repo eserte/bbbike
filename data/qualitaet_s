@@ -740,7 +740,7 @@ Fritz-König-Weg: Asphalt	Q0 17050,7687 17297,7752 17527,7812
 Weg 7: unbefestigter Weg	Q2 17050,7687 16902,7652
 Elbeweg: Asphalt	Q0 16873,7733 16902,7652 16934,7570
 Elbeweg: unbefestigter Weg, holprig	Q2 16934,7570 16949,7484 17061,7323 17116,7241
-Lahnweg: unbefestigter Weg, holprig	Q2 17135,7377 17061,7323
+Lahnweg: unbefestigter Weg, holprig	Q2 17135,7377 17061,7323 17039,7306
 Spreeschlossstr.: Asphalt	Q0 17052,7738 16901,7739 16873,7733 16796,7715
 Futranplatz: Kopfsteinpflaster	Q2 22377,4836 22439,4838
 Schierker Str.: Kopfsteinpflaster	Q2 12259,7164 12421,7197 12613,7236 12722,7261 12843,7290 12908,7305 13003,7316
@@ -1117,7 +1117,10 @@ Rolandufer: Asphalt	Q0 11278,12185 11155,12184
 Rolandufer: Kopfsteinpflaster, Ausweichen auf Uferweg möglich, dort unbefestigter Weg	Q2 11155,12184 10945,12150
 Rolandufer/Spreeufer: gutes Kopfsteinpflaster	Q1 10945,12150 10837,12158 10660,12176
 Spreeufer: Verbundsteine	Q1 10583,12206 10492,12289 10424,12364 10422,12395
-Treptower Park: Asphalt, einige Wurzelhebungen	Q1 14910,9643 15052,9584 15174,9554 15321,9448 15432,9322 15453,9259 15513,9144 15527,9096 15638,9020
+Treptower Park: Asphalt, einige Wurzelhebungen	Q1 14910,9643 15052,9584 15174,9554 15321,9448 15432,9322 15453,9259
+Treptower Park: Kleinsteinpflaster	Q1 15453,9259 15513,9144 15527,9096
+Treptower Park: Asphalt	Q0 15527,9096 15638,9020
+Treptower Park: Kleinsteinpflaster	Q1 15638,9020 15778,8990
 Treptower Park: Schotterweg, aber relativ glatt	Q2 14854,8964 14614,9052
 Treptower Park: wassergebundene Decke	Q1 14854,8964 15057,8910 15110,8912 15159,8934
 Treptower Park: Schotterweg	Q2 14242,9448 14316,9542
@@ -1499,8 +1502,8 @@ Griebnitzseepromenade: Waldweg	Q1 -7266,-450 -7318,-515 -7358,-605 -7495,-716 -7
 (Frankfurter Allee, Nebenfahrbahn): asphaltiert	Q0 16702,11920 16535,11920
 Nalepastr.: Kopfsteinpflaster	Q2 17052,7738 17059,8097
 Nalepastr.: Asphalt	Q0 17050,7687 17052,7738
-Nalepastr.: Beton, Eisenbahnschienen	Q1 17050,7687 17043,7617
-Nalepastr.: fester enger Sandweg	Q2 17043,7512 17043,7617
+Nalepastr.: Beton, Eisenbahnschienen	Q1 17050,7687 17047,7619
+Nalepastr.: fester enger Sandweg	Q2 17043,7512 17047,7619
 Nalepastr.: Beton, Eisenbahnschienen	Q1 17043,7512 17135,7377 17190,7306 17219,7268
 Nalepastr.: sehr guter Asphalt	Q0 17219,7268 17286,7173 17352,7051 17459,6854 17514,6754 17555,6680 17614,6571
 Ernst-Grube-Str.: Asphalt	Q0 21364,5430 21363,5336 21362,5289 21345,5157 21343,5140 21324,4986
@@ -2723,7 +2726,6 @@ Treskowstr. (Oberschöneweide): kleinteiliges, unebenes Kopfsteinpflaster	Q2 1933
 Verl. Rathenaustr.: Asphalt	Q0 19276,6359 19372,6579 19407,6660
 Fuststr.: kleinteiliges Kopfsteinpflaster	Q2 17934,7029 17823,7203
 Fuststr.: Kopfsteinpflaster	Q2 17823,7203 17743,7328
-Grenzweg: Asphalt	Q0 17445,7434 17295,7330 17219,7268
 Asternplatz: Kopfsteinpflaster	Q2 3710,4728 3775,4632
 Asternplatz: Kopfsteinpflaster	Q2 3815,4657 3754,4755
 Asternplatz: Asphalt	Q0 3754,4755 3740,4766

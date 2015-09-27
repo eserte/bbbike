@@ -450,11 +450,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 7-19 Uhr	RW1;RW1 7929,15006 7527,1
 	RW4;RW4 10601,12521 10431,12709
 	RW3;RW4 11635,12745 11589,12768 11289,12908 11226,12945
 	RW2;RW2 15117,12106 14994,12121 14919,12130
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.363496.php
-#: XXX hier wird asphaltiert
-#: last_checked: 2015-09-12
-#: next_check: 2015-09-18
-	RW2; 14919,12130 14854,12137 14702,12157
+asphaltiert	RW2; 14919,12130 14854,12137 14702,12157
 	RW2; 14702,12157 14854,12137 14919,12130
 	RW2;RW2 14702,12157 14621,12168 14523,12183 14488,12188 14427,12197 14381,12205 14291,12220 14208,12235 14020,12261 13885,12279 13785,12292 13543,12326
 	RW10;RW2 13543,12326 13448,12340
@@ -966,7 +962,7 @@ neues Verbundsteinpflaster	RW1; 12694,2517 12694,2544 12694,2570 12693,2746 1269
 	RW;RW 12694,2517 12703,2454
 die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 13745,12118 13785,12292
 #: next_check_id: WARSCHAUER-2014 vvv
-#: last_checked: 2015-09-19 vvv
+#: last_checked: 2015-09-23 vvv
 #: check_frequency: 3d vvv
 #: by: http://www.umbau-warschauer-strasse.de/images/bauinfos/Infoblatt_August_15-2.pdf
 #: XXX Radspur (RW4) ist wegen Bauarbeiten aufgehoben, später wahrscheinlich wieder hergestellt
@@ -1704,6 +1700,8 @@ Verbundsteinpflasterradweg	RW2;RW1 12010,16774 12017,16734 12045,16574 12051,165
 Gehweg für Radfahrer frei, eng und mäßige Qualität	RW1;RW1 6631,968 6515,1010 6467,1028 6386,1051 6294,1078 6276,1083 6199,1104 6145,1119 6106,1133 6006,1155 5914,1181 5866,1195 5794,1215 5741,1231 5585,1275 5414,1304 5223,1318 5059,1337 4897,1350 4806,1360
 	RW2;RW2 7790,672 7729,691
 	RW2;RW1 7729,691 7599,725 7318,759
+#: XXX_osm meint cycleway=track
+#: add_fragezeichen: existiert zwischen Goethestr. und Grimmstr. Richtung Süden ein Radweg?
 	RW0;RW1 10788,-172 10831,-808
 	RW;RW1 10831,-808 10844,-1335
 	RW1;RW1 10844,-1335 10853,-1475 10870,-1645 10909,-1790 10980,-1919 11073,-2037

@@ -2698,27 +2698,7 @@ userdel	2::night 14838,11410 14792,11391
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-',
-         'from' => 1442894400,
-         'id' => 2387,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              21,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon gesperrt, ab 24.09.2015',
-         'type' => 'gesperrt',
-         'until' => 1443132000
-       },
+       undef,
        {
          'data' => 'userdel	2::temp 8573,12325 8540,12420
 userdel	2::temp 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -3498,9 +3478,10 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
 #: check_frequency: 10d vvv
 userdel	2::inwork 14318,9688 14443,9731
 # REMOVED --- userdel	2::inwork 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
-userdel	2::inwork 14575,9648 14645,9710 14697,9726 14910,9643 15052,9584 15174,9554 15321,9448 15432,9322 15453,9259 15513,9144 15527,9096 15638,9020
+userdel	2::inwork 14575,9648 14645,9710 14697,9726 14910,9643 15052,9584 15174,9554 15321,9448 15432,9322 15453,9259
+# REMOVED --- userdel	2::inwork 15453,9259 15513,9144 15527,9096 15638,9020
 # REMOVED --- userdel	2::inwork 14443,9731 14361,9772
-userdel	2::inwork 15630,8979 15638,9020 15778,8990
+# REMOVED --- userdel	2::inwork 15630,8979 15638,9020 15778,8990
 # REMOVED --- userdel	2::inwork 14910,9643 14871,9567 14844,9513
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3642,16 +3623,7 @@ userdel	q4::inwork; 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
          'type' => 'handicap',
          'until' => 1448924400
        },
-       {
-         'data' => 'userdel	q4::inwork; 25519,4830 25552,4829 25720,4832
-',
-         'from' => 1442120400,
-         'id' => 2738,
-         'source_id' => 'IM_026222',
-         'text' => 'Müggelseedamm: zwischen Bölschetr. und Scharnweberstr. Baustelle, Fahrbahn Richtung Osten gesperrt, 14.09.2015 bis 31.10.2015 ',
-         'type' => 'handicap',
-         'until' => 1446307200
-       },
+       undef,
        {
          'data' => '	q4::inwork 3216,24135 3311,24150 3483,24186 3632,24214
 ',

@@ -24216,9 +24216,10 @@ EOF
 #: check_frequency: 10d vvv
 userdel	2::inwork 14318,9688 14443,9731
 # REMOVED --- userdel	2::inwork 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
-userdel	2::inwork 14575,9648 14645,9710 14697,9726 14910,9643 15052,9584 15174,9554 15321,9448 15432,9322 15453,9259 15513,9144 15527,9096 15638,9020
+userdel	2::inwork 14575,9648 14645,9710 14697,9726 14910,9643 15052,9584 15174,9554 15321,9448 15432,9322 15453,9259
+# REMOVED --- userdel	2::inwork 15453,9259 15513,9144 15527,9096 15638,9020
 # REMOVED --- userdel	2::inwork 14443,9731 14361,9772
-userdel	2::inwork 15630,8979 15638,9020 15778,8990
+# REMOVED --- userdel	2::inwork 15630,8979 15638,9020 15778,8990
 # REMOVED --- userdel	2::inwork 14910,9643 14871,9567 14844,9513
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -24501,7 +24502,7 @@ userdel	q4::inwork 4492,20214 4622,20292 4718,20341 4879,20427
 EOF
      },
      { from  => 1442120400, # 2015-09-13 07:00
-       until => 1446307200, # 2015-10-31 17:00
+       until => 1443207735, # 1446307200, # 2015-10-31 17:00
        text  => 'Müggelseedamm: zwischen Bölschetr. und Scharnweberstr. Baustelle, Fahrbahn Richtung Osten gesperrt, 14.09.2015 bis 31.10.2015 ',
        type  => 'handicap',
        source_id => 'IM_026222',

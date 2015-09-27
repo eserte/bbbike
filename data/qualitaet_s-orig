@@ -696,6 +696,8 @@ Schloßstr.: asphaltiert	Q0 3117,11852 3103,11968
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4745&options=4 --- #: XXX Ist eine Verbesserung in Zukunft in Sicht? --- #: last_checked: 2013-06-27 --- #: next_check: 2013-08-01
 Zillestr.: Asphalt	Q0 3268,11847 3117,11852
 Am Graben: Kopfsteinpflaster	Q2 -4755,7736 -4839,7791
+#: XXX_osm meint asphalt
+#: add_fragezeichen: liegt hier Asphalt?
 Imchenallee: holpriger Weg	Q1 -6879,4775 -6990,4531 -7025,4410 -7102,4246 -7195,4194 -7263,4214 -7561,4191 -7650,4222 -7714,4279
 Tegeler Weg: Kopfsteinpflaster	Q2 7464,14636 7263,14873
 Tegeler Weg: Asphalt	Q0 7263,14873 7223,14914 7192,14976 7182,14998 7131,15109 7085,15226 6996,15319
@@ -884,7 +886,7 @@ Weg 7: unbefestigter Weg	Q2- 17050,7687 16902,7652
 Elbeweg: Asphalt	Q0 16873,7733 16902,7652 16934,7570
 Elbeweg: unbefestigter Weg, holprig	Q2- 16934,7570 16949,7484 17061,7323 17116,7241
 # REMOVED --- Elbeweg: unbefestigter Weg, holprig	Q2- 17135,7223 17219,7268
-Lahnweg: unbefestigter Weg, holprig	Q2- 17135,7377 17061,7323
+Lahnweg: unbefestigter Weg, holprig	Q2- 17135,7377 17061,7323 17039,7306
 Spreeschlossstr.: Asphalt	Q0 17052,7738 16901,7739 16873,7733 16796,7715
 Futranplatz: Kopfsteinpflaster	Q2 22377,4836 22439,4838
 Schierker Str.: Kopfsteinpflaster	Q2 12259,7164 12421,7197 12613,7236 12722,7261 12843,7290 12908,7305 13003,7316
@@ -1344,7 +1346,10 @@ Rolandufer: Asphalt	Q0 11278,12185 11155,12184
 Rolandufer: Kopfsteinpflaster, Ausweichen auf Uferweg möglich, dort unbefestigter Weg	Q2 11155,12184 10945,12150
 Rolandufer/Spreeufer: gutes Kopfsteinpflaster	Q1 10945,12150 10837,12158 10660,12176
 Spreeufer: Verbundsteine	Q1 10583,12206 10492,12289 10424,12364 10422,12395
-Treptower Park: Asphalt, einige Wurzelhebungen	Q1 14910,9643 15052,9584 15174,9554 15321,9448 15432,9322 15453,9259 15513,9144 15527,9096 15638,9020
+Treptower Park: Asphalt, einige Wurzelhebungen	Q1 14910,9643 15052,9584 15174,9554 15321,9448 15432,9322 15453,9259
+Treptower Park: Kleinsteinpflaster	Q1- 15453,9259 15513,9144 15527,9096
+Treptower Park: Asphalt	Q0 15527,9096 15638,9020
+Treptower Park: Kleinsteinpflaster	Q1- 15638,9020 15778,8990
 Treptower Park: Schotterweg, aber relativ glatt	Q2 14854,8964 14614,9052
 Treptower Park: wassergebundene Decke	Q1 14854,8964 15057,8910 15110,8912 15159,8934
 Treptower Park: Schotterweg	Q2 14242,9448 14316,9542
@@ -1743,8 +1748,7 @@ Parkaue: Asphalt	Q0 15535,12420 15457,12449 15406,12444
 #: XXX Bauarbeiten in Gang, siehe handicap_s-orig
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524 (Beginn der Bauarbeiten: Frühjahr 2014)
 #: source_id: IM_025738
-#: last_checked: 2015-07-19
-#: next_check: 2015-09-18
+#: last_checked: 2015-09-23
 Deutschmeisterstr.: mäßiger Asphalt	Q1 15443,12222 15370,12264
 Deutschmeisterstr.: Asphalt	Q0 15370,12264 15353,12280 15320,12375
 Parkaue: Asphalt	Q0 15406,12444 15408,12394 15370,12264
@@ -1777,8 +1781,8 @@ Griebnitzseepromenade: Waldweg	Q1 -7266,-450 -7318,-515 -7358,-605 -7495,-716 -7
 (Frankfurter Allee, Nebenfahrbahn): asphaltiert	Q0 16702,11920 16535,11920
 Nalepastr.: Kopfsteinpflaster	Q2 17052,7738 17059,8097
 Nalepastr.: Asphalt	Q0 17050,7687 17052,7738
-Nalepastr.: Beton, Eisenbahnschienen	Q1+ 17050,7687 17043,7617
-Nalepastr.: fester enger Sandweg	Q2 17043,7512 17043,7617
+Nalepastr.: Beton, Eisenbahnschienen	Q1+ 17050,7687 17047,7619
+Nalepastr.: fester enger Sandweg	Q2 17043,7512 17047,7619
 Nalepastr.: Beton, Eisenbahnschienen	Q1+ 17043,7512 17135,7377 17190,7306 17219,7268
 Nalepastr.: sehr guter Asphalt	Q0 17219,7268 17286,7173 17352,7051 17459,6854 17514,6754 17555,6680 17614,6571
 Ernst-Grube-Str.: Asphalt	Q0 21364,5430 21363,5336 21362,5289 21345,5157 21343,5140 21324,4986
@@ -2454,6 +2458,8 @@ Möwenweg (Biesdorf): Beton	Q0- 22219,11136 22207,11069 22195,10993 22192,10869 2
 Möwenweg (Biesdorf): Beton	Q0- 22100,10976 22195,10993
 Möwenweg (Biesdorf): Beton	Q0- 22219,11136 22054,11091
 Wuhleweg: unbefestigte Straße, Feinschotter	Q2+ 22238,11223 22018,11165
+#: XXX_osm meint: Beton
+#: add_fragezeichen: ist hier mittlerweile betoniert worden?
 Grüne Aue: unbefestigte Straße, Feinschotter	Q2+ 21954,11269 21956,11246 21994,11209 22018,11165 22054,11091
 Grüne Aue: Beton	Q0- 22054,11091 22071,11048 22100,10976 22160,10834
 Mosbacher Str.: teilweise nur mäßiger Beton	Q1 22195,10993 22271,10971 22310,10927 22393,10896
@@ -3203,7 +3209,7 @@ Verl. Rathenaustr.: Asphalt	Q0 19276,6359 19372,6579 19407,6660
 Fuststr.: kleinteiliges Kopfsteinpflaster	Q2 17934,7029 17823,7203
 Fuststr.: Kopfsteinpflaster	Q2 17823,7203 17743,7328
 # REMOVED --- Grenzweg: Kopfsteinpflaster	Q2- 17681,7589 17575,7519 17445,7434
-Grenzweg: Asphalt	Q0- 17445,7434 17295,7330 17219,7268
+# REMOVED --- Grenzweg: Asphalt	Q0- 17445,7434 17295,7330 17219,7268
 Asternplatz: Kopfsteinpflaster	Q2 3710,4728 3775,4632
 Asternplatz: Kopfsteinpflaster	Q2 3815,4657 3754,4755
 Asternplatz: Asphalt	Q0 3754,4755 3740,4766
