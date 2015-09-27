@@ -466,7 +466,6 @@ Privatstr. 14	1s 13159,17196 13103,17280
 Bernkasteler Str.	1s 15208,16939 15015,16908 14923,16901 14923,16914
 Wiedenbrücker Weg	1 4207,1113 4220,1175 4141,1282
 Am Langen Weg:	1 -7033,14984 -7026,14890 -7015,14772 -7011,14693 -7013,14578
-Hans-Sachs-Str.	1 3141,4023 3214,4066
 Wehneltsteig	1 1256,14217 1305,14384
 Bernhard-Bästlein-Str.	1 15595,14041 15593,13768
 (Fredersdorfer Str. - Hildegard-Jadamowitz-Str.)	1 12908,12280 12883,12118 12893,12077 12923,12043
@@ -808,6 +807,7 @@ Bahnhofstr.	1 12166,21208 12202,21158
 Bahnhofstr.	1 12202,21158 12158,21166
 (Bushaltestelle und Straßenbahnwendestelle Schöneweide): Betriebsgelände	2 17675,5521 17588,5573 17578,5566
 Allee der Kosmonauten	1 20172,14141 20111,14140 20096,14127
+Augustaplatz	1 3936,4014 3955,4039 3986,4051 4015,4053 4034,4033 4045,4005 4042,3982 4025,3958 4000,3950 3971,3950 3946,3967 3937,3993 3936,4014
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -1988,7 +1988,7 @@ Potsdamer Chaussee -> Niklasstr.: Mittelstreifen	3::igndisp -870,2737 -739,2793 
 Niklasstr. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -783,2837 -739,2793 -726,2799
 Potsdamer Chaussee -> Zum Oertzenweg: Mittelstreifen	3::igndisp -563,2862 -726,2799 -692,2705
 Zum Oertzenweg -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -692,2705 -726,2799 -739,2793
-Hohentwielst. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -479,2715 -563,2862 -726,2799
+Hohentwielst. -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -491,2717 -563,2862 -726,2799
 Mittelstreifen	3nocross::ignrte -391,2914 -267,2945 -151,2975
 Potsdamer Str. -> Werderstr.: Mittelstreifen	3::igndisp -391,2914 -267,2945 -309,3016
 Werderstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp -309,3016 -267,2945 -151,2975
@@ -2143,6 +2143,9 @@ Altentreptower Str. -> Unfallkrankenhaus Berlin: Mittelstreifen	3::igndisp 21307
 Unfallkrankenhaus Berlin -> Altentreptower Str.: Mittelstreifen	3::igndisp 21401,12155 21400,12135 21573,12140
 Mittelstreifen	3nocross::ignrte 6692,11365 6716,11439 6825,11486
 Stülerstr. -> zur Thomas-Dehler-Str.: Mittelstreifen	3::igndisp 6692,11365 6716,11439 6657,11467
+Mittelstreifen	3nocross::ignrte 1884,4811 1747,4829 1479,4853
+Saargemünder Str. -> Garystr.: Mittelstreifen	3::igndisp 1884,4811 1747,4829 1736,4774
+Garystr. -> Saargemünder Str.: Mittelstreifen	3::igndisp 1736,4774 1747,4829 1479,4853
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
@@ -2777,6 +2780,7 @@ versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
 Drängelgitter	BNP:3:-240 31665,48997
+Fünf Morgen: Bauarbeiten, gesperrt. Wird es eine Anbindung an den Hüttenweg geben?	2::inwork 1437,5015 1483,5161
 Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 Am Theodorpark: noch gesperrt	2::inwork 24905,10955 25053,10959 25143,10961
 Theodorstr.: Bauarbeiten, gesperrt	2::inwork 24897,11083 24905,10955 24913,10884 24919,10818 24922,10785 24923,10774
@@ -2840,8 +2844,6 @@ Nordufer: Neubau	2:inwork 7427,14648 7212,14738
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9898,12161 9882,12259
 Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 17221,14268 17274,14280
-Rudi-Dutschke-Weg	2:inwork 2627,5095 2913,5294
-Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18680,-1506 18798,-1581 18853,-1656 18866,-1674
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910

@@ -938,7 +938,7 @@ Igelkolbensteig: eng	q2 15949,3575 16003,3652
 Melissenweg: Bordsteine, eng	q2 16003,3652 16041,3718
 Simsonweg: Fuﬂg‰nger, Bordsteine	q2 8354,12416 8391,12389 8546,12279
 Varian-Fry-Str.: Fuﬂg‰nger	q2 8374,11479 8389,11378
-Georg-Steger-Weg und Verl‰ngerung: Fuﬂg‰nger	q2 1509,2246 1603,2615 1635,2720 1652,2770 1641,2914
+Georg-Steger-Weg und Verl‰ngerung: Fuﬂg‰nger	q2 1508,2243 1603,2615 1635,2720 1652,2770 1641,2914
 Am Schweizerhof: Bordstein	q2 1177,1940 1191,1944
 Werner-Sylten-Weg: Fuﬂg‰nger	q1 1016,737 1022,738 1129,763 1267,789
 (Heinrich-Laehr-Park - Schˆnower Park): Fuﬂg‰nger	q1 1249,1672 1177,1940 1113,2143 1074,2209
@@ -1359,7 +1359,7 @@ Schalloppstr.: Bordsteine, einige Fuﬂg‰nger	q3 5132,4704 5190,4755
 (zum Teufelsberg): einige Fuﬂg‰nger, eng	q1 -641,9882 -720,9861 -769,9856
 Alfred-Scholz-Platz: Fuﬂg‰nger	q2 12779,8188 12753,8187
 Dahlemer Weg - entlang der S-Bahn: Rampe	q2 2266,3580 2221,3560 2250,3568 2228,3554
-Georg-Steger-Weg: einige Fuﬂg‰nger	q1 1493,2249 1480,2199 1452,2095 1461,2073 1432,1964 1432,1904 1478,1721
+Georg-Steger-Weg: einige Fuﬂg‰nger	q1 1493,2247 1480,2199 1452,2095 1461,2073 1432,1964 1432,1904 1478,1721
 (Ramsteinweg - Sachtlebenstr.): gemeinsamer Rad- und Gehweg	q1 581,670 509,684 497,710 413,757 332,819 247,822
 (Am Seegraben - Sch¸tzenstr.): einige Fuﬂg‰nger	q1 19996,-740 19978,-712
 (an der BMW-Niederlassung): Parkverkehr, Schranke	q1 2102,11307 2180,11318 2219,11324
@@ -1394,7 +1394,7 @@ M¸nchener Str.: Bordstein	q2 6264,9156 6255,9194
 (Promenade - Borstellstr.): einige Fuﬂg‰nger	q2 6392,4312 6390,4335
 Heilbronner Str.: Bordsteine, einige Fuﬂg‰nger	q4 6101,9720 6096,9772
 zur M¸ller-Breslau-Str.: flache Rampe	q2 5756,11618 5725,11644
-Urselweg: flache Bordsteinkante	q1 -802,2914 -775,2854 -783,2837
+Urselweg: flache Bordsteinkanten	q1 -802,2914 -775,2854 -783,2837
 (Hampstedtstr. - Schneckenbr¸cke): einige Fuﬂg‰nger	q1 1641,2914 1642,2937 1575,3054 1557,3086 1682,3168 1689,3189 1755,3229 1802,3235
 Parkplatz Einkaufszentrum: Parkplatzverkehr	q2 -2195,3564 -2173,3513 -2164,3488
 (Warener Str. - Unfallkrankenhaus Berlin): Krankenhausgel‰nde, Fuﬂg‰nger	q3 21388,12785 21401,12773 21520,12741
@@ -1495,6 +1495,8 @@ Wegenerstr.: ein Moabiter Kissen	q0 4477,9176 4619,9200
 Sigmaringer Str.: ein Moabiter Kissen	q0 4700,9179 4715,8977
 (Wittenauer Str. - Zabel-Kr¸ger-Damm): einige Fuﬂg‰nger	q1 6278,22615 6254,22633 6226,22712 6234,22759 6243,22797 6118,22947 6064,23014
 (Rummelsburger Ufer - Hauptstr.): einige Fuﬂg‰nger	q1 15249,10564 15307,10701
+Lepsiusstr.: Bordstein	q2 4913,6538 4901,6505
+(Schubertstr. - Dahlemer Weg): Rampe	q2 2289,3500 2278,3514 2270,3496 2270,3519 2262,3501 2253,3505
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
@@ -1623,7 +1625,6 @@ Spreeweg: eng und un¸bersichtlich	q2 2950,13552 2922,13594 2910,13607 2902,13665
 LefËvrestr.: enge Straﬂe	q1 4987,6902 4993,6812 5014,6752 5040,6706 5137,6651 5215,6643
 (Paul-Lˆbe-Allee - s¸dl. Spreeufer): Biergarten am HDKDW	q4 7741,12586 7710,12585
 (s¸dliches Spreeufer): Biergarten am HDKDW	q4 7745,12603 7710,12585 7670,12576
-Robert-von-Ostertag-Str.: Pferde und Reiter	q1 -613,1949 -745,2320
 Hackerstr.: schmale Straﬂe, schlecht einzusehen	q1 4994,6387 4999,6397 5020,6434 5065,6515 5101,6579 5137,6651 5184,6723
 Grafenwalder Weg: schmale Fahrbahn	q1 -3312,16425 -3319,16572
 (Wuhlewanderweg - Teterower Ring): Fuﬂg‰nger	q1 22196,12961 22279,12938 22308,12940 22357,12956 22419,12975 22443,12998
@@ -2097,7 +2098,7 @@ Treutelstr.: enge Straﬂe	q1 5422,19725 5345,19734 5309,19716
 Jenbacher Weg: enge Straﬂe	q1 6398,590 6411,533 6233,412 6180,376 5987,256 5800,138 5703,74 5415,-113
 (Charlottenstr. - Allee der Kosmonauten/Fuﬂg‰ngerampel): Gehweg, f¸r Radfahrer freigegeben	q3 20505,14350 20474,14442
 (Charlottenstr. - Annenstr.): als Gehweg ausgeschildert, f¸r Radfahrer nicht freigegeben	q3 20647,14341 20631,14221
-Rudi-Dutschke-Weg: viele Fuﬂg‰nger	q2 2627,5095 2913,5294
+Rudi-Dutschke-Weg: viele Fuﬂg‰nger	q2 2627,5095 2851,5251 2913,5294
 Dinkelsb¸hler Steig: enge Straﬂe	q0 2615,25225 2649,25170 2694,25132 2775,25092 2816,25037
 ÷tztaler Str.: enge Straﬂe	q1 10690,17420 10630,17421
 Schlierbacher Weg: enge Straﬂe	q1 10740,1180 10685,1159 10450,1202 10453,1242 10440,1283

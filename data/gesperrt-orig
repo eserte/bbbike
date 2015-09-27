@@ -637,15 +637,6 @@ Wiedenbrücker Weg	1 4207,1113 4220,1175 4141,1282
 #: confirmed_by: srt
 Am Langen Weg:	1 -7033,14984 -7026,14890 -7015,14772 -7011,14693 -7013,14578
 # 
-#: by: Beate Wolter
-#: confirmed_by: sandor
-#: corrected_by: srt (der Sackgassenabschnitt ist natürlich keine Einbahnstraße)
-#: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4183&options=4
-#: XXX: Wird die Einbahnstraßenregelung in der Hans-Sachs-Str. für Radfahrer aufgehoben?
-#: last_checked: 2012-09-05 (by Kay Leonhardt)
-#: next_check: 2012-12-15
-Hans-Sachs-Str.	1 3141,4023 3214,4066
-# 
 #: by: anonymous
 #: confirmed_by: srt
 Wehneltsteig	1 1256,14217 1305,14384
@@ -1120,6 +1111,7 @@ Bahnhofstr.	1 12166,21208 12202,21158
 Bahnhofstr.	1 12202,21158 12158,21166
 (Bushaltestelle und Straßenbahnwendestelle Schöneweide): Betriebsgelände	2 17675,5521 17588,5573 17578,5566
 Allee der Kosmonauten	1 20172,14141 20111,14140 20096,14127
+Augustaplatz	1 3936,4014 3955,4039 3986,4051 4015,4053 4034,4033 4045,4005 4042,3982 4025,3958 4000,3950 3971,3950 3946,3967 3937,3993 3936,4014
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1747,6 +1739,7 @@ Dietzgenstr.: Mittelstreifen	3nocross 10120,21464 10118,21510 10114,21586 10111,
 Rosenthaler Weg: Straßenbahntrasse	3nocross 11693,22482 11812,22523 11940,22587
 Altentreptower Str.: Mittelstreifen	3nocross 21307,12132 21400,12135 21573,12140
 Stülerstr.: Mittelstreifen	3nocross 6692,11365 6716,11439 6825,11486
+Saargemünder Str.: Mittelstreifen	3nocross 1884,4811 1747,4829 1479,4853
 # REMOVED (leicht überquerbar) --- #: XXX Mittelstreifen vielleicht leicht überquerbar, prüfen! --- Straße des 17. Juni: Mittelstreifen	3nocross 8303,12216 8344,12221 8538,12245
 abgeschlossenes Tor	3 * 8237,20098 *
 abgeschlossenes Tor	3 * 8291,20112 *
@@ -2623,6 +2616,10 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2015-09-27
+#: check_frequency: 100d
+Fünf Morgen: Bauarbeiten, gesperrt. Wird es eine Anbindung an den Hüttenweg geben?	2::inwork 1437,5015 1483,5161
+# 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5713
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810369999434/9999434/00071829/29-Anlagen/02/vzb0641_IV-B-Plan_XXI-32d-1_Auswertg_TOeB.pdf
 #: XXX evtl. wird dieses Stück Straße komplett entfernt
@@ -3010,19 +3007,9 @@ Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9898,12161 9882,12259
 #: check_frequency: 360d
 Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 17221,14268 17274,14280
 #
-#: XXX möglicherweise wird es den Weg in Zukunft gar nicht mehr geben
-#: by: Xenia B.
-#: last_checked: 2014-05-10
-#: next_check: 2014-10-15
-#: osm_watch: way id="159457523" version="2"
-Rudi-Dutschke-Weg	2:inwork 2627,5095 2913,5294
-# 
+# REMOVED (Bauarbeiten beendet) --- #: by: Xenia B. --- #: last_checked: 2014-05-10 --- #: next_check: 2014-10-15 --- #: osm_watch: way id="159457523" version="2" --- Rudi-Dutschke-Weg	2:inwork 2627,5095 2851,5251 2913,5294
 # REMOVED (Straße ist nicht (mehr?) gesperrt) --- #: last_checked: 2012-06-08 --- #: next_check: 2013-03-01 --- Zur Monumentenhalle: Straße wird wahrscheinlich neu gebaut	2:inwork 8390,8879 8409,8904 8405,8994
-# 
-#: last_checked: 2014-08-07
-#: check_frequency: 120d
-#: XXX wird auch der Asphalt hier und im südlichen Abschnitt verbessert?
-Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
+# REMOVED (ich konnte durchfahren, Asphalt wie gehabt) --- #: last_checked: 2014-08-07 --- #: check_frequency: 120d --- #: XXX wird auch der Asphalt hier und im südlichen Abschnitt verbessert? --- Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
 # 
 #: last_checked: 2015-06-05
 #: check_frequency: 120d

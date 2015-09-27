@@ -13,7 +13,7 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2015-09-26 vvv
+#: last_checked: 2015-09-27 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14286,11186 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraße ausgewiesen	q3::inwork; 14442,11101 14468,11203
 Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
@@ -1472,7 +1472,7 @@ Melissenweg: Bordsteine, eng	q2 16003,3652 16041,3718
 #: XXX_prog BS (im Norden existiert eine Absenkung, im Süden kann der Bordstein an der Ampel umfahren werden)
 Simsonweg: Fußgänger, Bordsteine	q2 8354,12416 8391,12389 8546,12279
 Varian-Fry-Str.: Fußgänger	q2 8374,11479 8389,11378
-Georg-Steger-Weg und Verlängerung: Fußgänger	q2 1509,2246 1603,2615 1635,2720 1652,2770 1641,2914
+Georg-Steger-Weg und Verlängerung: Fußgänger	q2 1508,2243 1603,2615 1635,2720 1652,2770 1641,2914
 #: XXX_prog BS (am Sackgassenhammer)
 Am Schweizerhof: Bordstein	q2 1177,1940 1191,1944
 Werner-Sylten-Weg: Fußgänger	q1 1016,737 1022,738 1129,763 1267,789
@@ -2031,7 +2031,7 @@ Schalloppstr.: Bordsteine, einige Fußgänger	q3 5132,4704 5190,4755
 (zum Teufelsberg): einige Fußgänger, eng	q1 -641,9882 -720,9861 -769,9856
 Alfred-Scholz-Platz: Fußgänger	q2 12779,8188 12753,8187
 Dahlemer Weg - entlang der S-Bahn: Rampe	q2 2266,3580 2221,3560 2250,3568 2228,3554
-Georg-Steger-Weg: einige Fußgänger	q1 1493,2249 1480,2199 1452,2095 1461,2073 1432,1964 1432,1904 1478,1721
+Georg-Steger-Weg: einige Fußgänger	q1 1493,2247 1480,2199 1452,2095 1461,2073 1432,1964 1432,1904 1478,1721
 (Ramsteinweg - Sachtlebenstr.): gemeinsamer Rad- und Gehweg	q1 581,670 509,684 497,710 413,757 332,819 247,822
 (Am Seegraben - Schützenstr.): einige Fußgänger	q1 19996,-740 19978,-712
 #: note: Schranke ist manchmal offen, kann umfahren werden
@@ -2075,8 +2075,8 @@ Münchener Str.: Bordstein	q2 6264,9156 6255,9194
 #: XXX_prog Bordstein am Wendehammer; sowie Bordsteine (3x) beim Überqueren der Hohenstaufenstr., hier ist auch der Mittelstreifen relativ schmal; ansonsten q2
 Heilbronner Str.: Bordsteine, einige Fußgänger	q4 6101,9720 6096,9772
 zur Müller-Breslau-Str.: flache Rampe	q2 5756,11618 5725,11644
-#: XXX_prog Bordstein auf der Nordseite, ansonsten entfernen
-Urselweg: flache Bordsteinkante	q1 -802,2914 -775,2854 -783,2837
+#: XXX_prog Bordsteine auf beiden Seiten, ansonsten entfernen, oder vielleicht eine milde Form (q0-, q1+) für Fußgänger eintragen
+Urselweg: flache Bordsteinkanten	q1 -802,2914 -775,2854 -783,2837
 (Hampstedtstr. - Schneckenbrücke): einige Fußgänger	q1 1641,2914 1642,2937 1575,3054 1557,3086 1682,3168 1689,3189 1755,3229 1802,3235
 Parkplatz Einkaufszentrum: Parkplatzverkehr	q2 -2195,3564 -2173,3513 -2164,3488
 (Warener Str. - Unfallkrankenhaus Berlin): Krankenhausgelände, Fußgänger	q3- 21388,12785 21401,12773 21520,12741
@@ -2198,6 +2198,9 @@ Wegenerstr.: ein Moabiter Kissen	q0- 4477,9176 4619,9200
 Sigmaringer Str.: ein Moabiter Kissen	q0- 4700,9179 4715,8977
 (Wittenauer Str. - Zabel-Krüger-Damm): einige Fußgänger	q1 6278,22615 6254,22633 6226,22712 6234,22759 6243,22797 6118,22947 6064,23014
 (Rummelsburger Ufer - Hauptstr.): einige Fußgänger	q1+ 15249,10564 15307,10701
+#: XXX_prog BS Bordstein am Wendehammer, ansonsten vielleicht q1 für Fußgänger
+Lepsiusstr.: Bordstein	q2 4913,6538 4901,6505
+(Schubertstr. - Dahlemer Weg): Rampe	q2 2289,3500 2278,3514 2270,3496 2270,3519 2262,3501 2253,3505
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -2479,11 +2482,7 @@ Lefèvrestr.: enge Straße	q1 4987,6902 4993,6812 5014,6752 5040,6706 5137,6651 52
 (südliches Spreeufer): Biergarten am HDKDW	q4 7745,12603 7710,12585 7670,12576
 #: by: ^^^
 # 
-#: next_check_id: ROBERTVONOSTERTAG-2104
-#: by: Michael Heckner:
-#: XXX Reitweg wird separiert
-#: next_check: 2015-09-01
-Robert-von-Ostertag-Str.: Pferde und Reiter	q1 -613,1949 -745,2320
+# REMOVED --- #: next_check_id: ROBERTVONOSTERTAG-2104 --- #: by: Michael Heckner: --- #: XXX Reitweg wird separiert --- #: next_check: 2015-09-01 --- Robert-von-Ostertag-Str.: Pferde und Reiter	q1 -613,1949 -745,2320
 # 
 #: by: Jens Wesendrup:
 Hackerstr.: schmale Straße, schlecht einzusehen	q1 4994,6387 4999,6397 5020,6434 5065,6515 5101,6579 5137,6651 5184,6723
@@ -3422,7 +3421,7 @@ Jenbacher Weg: enge Straße	q1 6398,590 6411,533 6233,412 6180,376 5987,256 5800,
 (Charlottenstr. - Annenstr.): als Gehweg ausgeschildert, für Radfahrer nicht freigegeben	q3 20647,14341 20631,14221
 #: by: ^^^
 #: by: Xenia (cocosnuss...):
-Rudi-Dutschke-Weg: viele Fußgänger	q2 2627,5095 2913,5294
+Rudi-Dutschke-Weg: viele Fußgänger	q2 2627,5095 2851,5251 2913,5294
 #: by: olli (liet):
 #: corrected_by: srt (q1 -> q0-)
 Dinkelsbühler Steig: enge Straße	q0- 2615,25225 2649,25170 2694,25132 2775,25092 2816,25037

@@ -3382,17 +3382,7 @@ userdel	q4::inwork; 3807,11859 3666,11855
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: next_check: 2015-08-03
-userdel	q3::inwork 5824,6974 5817,7223
-',
-         'from' => undef,
-         'id' => 2696,
-         'source_id' => 'IM_025361',
-         'text' => 'Dickhardstr.: Bauarbeiten an der Rheinstr., direkte Durchfahrt gesperrt, voraussichtlich bis 05.10.2015',
-         'type' => 'handicap',
-         'until' => 1444050000
-       },
+       undef,
        {
          'data' => '	2::night 4280,17551 4243,17570 4240,17584 3959,17714 3987,17808
 ',
@@ -3646,8 +3636,10 @@ userdel	q4::inwork; 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
        },
        {
          'data' => '#: XXX Bis wann sind die Bauarbeiten fertig?
-#: next_check: 2016-03-01
-userdel	2::inwork -1303,2003 -1592,1852 -2043,1596 -2618,1281
+#: last_checked: 2015-09-27
+#: check_frequency: 30d
+userdel	2::inwork -1303,2003 -1591,1861
+# REMOVED (weitgehend fertig) --- userdel	2::inwork -1591,1861 -1650,1826 -1724,1785 -1805,1740 -1889,1693 -1950,1659 -2043,1608 -2602,1291
 ',
          'from' => 1442700000,
          'id' => 2741,

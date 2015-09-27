@@ -617,8 +617,8 @@ Zobtener Str.: Durchfahrt gesperrt (Poller)	3 16734,9990 16539,10097 16353,10207
 Zobtener Str.: Durchfahrt gesperrt (Poller)	3 16353,10207 16539,10097 16734,9990
 Waldowallee - Am Carlsgarten: Durchfahrt gesperrt (Betonblöcke)	3 * 19509,7999 *
 #: by: MichaelM vvv
-Klapppfosten	3 -1612,2123 -1590,1985 -1592,1852
-Klapppfosten	3 -1592,1852 -1590,1985 -1612,2123
+Klapppfosten	3 -1612,2123 -1590,1985 -1591,1861
+Klapppfosten	3 -1591,1861 -1590,1985 -1612,2123
 Pflanzenkübel	3 -1604,2324 -1401,2391 -1248,2451
 Pflanzenkübel	3 -1248,2451 -1401,2391 -1604,2324
 Pflanzenkübel	3 -1371,2268 -1401,2391 -1248,2451
@@ -1038,3 +1038,11 @@ Gethsemanestr.	1 11086,15772 11123,15851 11191,15810 11158,15739
 Kaiserdamm: Mittelstreifen	3nocross 2609,11503 2764,11519 3069,11551
 Revaler Str.	1 13588,11490 13565,11492 13473,11456
 IKEA-Parkplatz	1 7834,7131 7924,7185 8020,7185
+Königsweg: Poller	3 -882,2260 -790,2300 -745,2320
+Königsweg: Poller	3 -745,2320 -790,2300 -882,2260
+#: by: Beate Wolter
+#: confirmed_by: sandor
+#: corrected_by: srt (der Sackgassenabschnitt ist natürlich keine Einbahnstraße)
+#: corrected_by: srt (mittlerweile für Radfahrer offen)
+# REMOVED --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4183&options=4 --- #: XXX: Wird die Einbahnstraßenregelung in der Hans-Sachs-Str. für Radfahrer aufgehoben? --- #: last_checked: 2012-09-05 (by Kay Leonhardt) --- #: next_check: 2012-12-15
+Hans-Sachs-Str.	1 3141,4023 3214,4066

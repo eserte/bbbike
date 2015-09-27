@@ -24065,7 +24065,7 @@ userdel	q4::inwork; 3807,11859 3666,11855
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2015-10-05 15:00:00"), # undef, # XXX
+       until => 1443371232, # $isodate2epoch->("2015-10-05 15:00:00"), # undef, # XXX
        text  => 'Dickhardstr.: Bauarbeiten an der Rheinstr., direkte Durchfahrt gesperrt, voraussichtlich bis 05.10.2015',
        source_id => 'IM_025361',
        type  => 'handicap',
@@ -24535,8 +24535,10 @@ EOF
        source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.364590.php',
        data  => <<EOF,
 #: XXX Bis wann sind die Bauarbeiten fertig?
-#: next_check: 2016-03-01
-userdel	2::inwork -1303,2003 -1592,1852 -2043,1596 -2618,1281
+#: last_checked: 2015-09-27
+#: check_frequency: 30d
+userdel	2::inwork -1303,2003 -1591,1861
+# REMOVED (weitgehend fertig) --- userdel	2::inwork -1591,1861 -1650,1826 -1724,1785 -1805,1740 -1889,1693 -1950,1659 -2043,1608 -2602,1291
 EOF
      },
      { from  => 1442181600, # 2015-09-14 00:00

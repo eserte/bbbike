@@ -999,7 +999,6 @@ Tor an der Hiddenseestr.	culdesac 10967,17671
 	culdesac 9410,21535
 	culdesac 9298,21455
 	culdesac 9275,21441
-	culdesac -797,3039
 	culdesac 26183,12670
 	culdesac 26247,12643
 Strandbad Plötzensee	culdesac 5252,15182
@@ -1112,10 +1111,20 @@ westliches Sackgassenende	culdesac 20281,11341
 	culdesac 2031,18184
 	culdesac 1375,18209
 	culdesac 2211,18257
+	culdesac_pseudo 2289,3500
+	culdesac 3049,3966
 # 
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo 853,2560
+	culdesac_pseudo -1967,1702
+	culdesac_pseudo -1892,1732
+	culdesac_pseudo -1813,1776
+	culdesac_pseudo -1734,1806
+	culdesac_pseudo -1655,1847
+	culdesac_pseudo -2602,1291
+	culdesac_pseudo 4913,6538
 	culdesac_pseudo 2700,19527
 	culdesac_pseudo 7488,20645
 	culdesac_pseudo 8224,6775
@@ -1171,7 +1180,7 @@ südliches Sackgassenende	culdesac_pseudo 22478,4659
 	culdesac_pseudo -802,2914
 	culdesac_pseudo 1882,1376
 	culdesac_pseudo 1975,1413
-	culdesac_pseudo 2065,3286
+	culdesac_pseudo 2071,3274
 	culdesac_pseudo -2103,3536
 	culdesac_pseudo 541,5306
 	culdesac_pseudo 5725,11644
