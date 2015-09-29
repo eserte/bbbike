@@ -11,7 +11,7 @@ userdel	2 8546,12279 8570,12302 8573,12325 8540,12420
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
 ',
-         'from' => 1443585600,
+         'from' => 1443499200,
          'id' => 127,
          'periodic' => 1,
          'recurrences' => [
@@ -23,7 +23,7 @@ userdel	2 8546,12279 8570,12302 8573,12325 8540,12420
                               9
                             ]
                           ],
-         'text' => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straße vollständig gesperrt (01.10.2015 bis 06.10.2015)',
+         'text' => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen vollständig gesperrt (bis 06.10.2015)',
          'type' => 'gesperrt',
          'until' => 1444168799
        },
@@ -2699,43 +2699,7 @@ userdel	2::night 14838,11410 14792,11391
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 8573,12325 8540,12420
-userdel	2::temp 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-userdel	2::temp 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-userdel	2::temp 8119,12414 8055,12186
-userdel	2::temp 8538,12245 8522,12239 8466,12197
-userdel	2::temp 8538,12245 8522,12187
-userdel	2::temp 8546,12279 8391,12389 8354,12416
-userdel	2::temp 8119,12414 8354,12416 8400,12417 8540,12420
-userdel	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
-userdel	3 7429,12070 7383,12095 7039,12314
-userdel	3 7039,12314 7383,12095 7429,12070
-userdel	3 7823,12120 7816,12150 7875,12363
-userdel	3 7875,12363 7816,12150 7823,12120
-userdel	2::temp 8119,12414 8122,12603 8207,12606 8306,12609 8348,12609 8399,12610 8485,12612
-userdel	2::temp 8207,12606 8206,12757
-userdel	3 7945,12592 8122,12603 8120,12756
-userdel	3 8120,12756 8122,12603 7945,12592
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-',
-         'from' => 1443132000,
-         'id' => 2388,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              21,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Behrenstr. und Scheidemannstr., Yitzak-Rabin-Str., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, bis 28.09.2015',
-         'type' => 'gesperrt',
-         'until' => 1443456000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3544,9 +3508,11 @@ userdel	q4::inwork 7799,13019 7813,12961
          'data' => '#: by: wosch vvv
 #: confirmed_by: srt vvv
 #: XXX 30m zu jeder Seite der Kreuzung sind gesperrt; wann sind die Bauarbeiten fertig? vvv
-#: last_checked: 2015-08-30 vvv
+#: last_checked: 2015-09-28 vvv
+#: check_frequency: 7d vvv
 userdel	q3::inwork 12761,9190 12907,9073 13048,8956
 userdel	q3::inwork 12907,9073 12836,8980
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 #: confirmed_by ^^^
@@ -3677,6 +3643,16 @@ userdel	2::inwork -1303,2003 -1591,1861
          'text' => 'Karmeliterweg: Instandsetzungsarbeiten zwischen Welfenteich und Frohnauer Straße, Fahrbahn gesperrt, vom 22.09.2015 bis 12.12.2015',
          'type' => 'handicap',
          'until' => 1449961200
+       },
+       {
+         'data' => 'userdel	q4::inwork 4779,24321 4777,24342 4656,24379 4566,24389 4457,24400 4340,24413 4233,24459 4111,24488
+',
+         'from' => 1443564000,
+         'id' => 2745,
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.378909.php',
+         'text' => 'Veltheimstraße: Bauarbeiten zwischen Solquellstraße und Schildower Straße, Fahrbahn gesperrt, voraussichtlich vom 01.10.2015 bis 06.11.2015 ',
+         'type' => 'handicap',
+         'until' => 1446850800
        }
      
 );

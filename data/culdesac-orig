@@ -1113,10 +1113,12 @@ westliches Sackgassenende	culdesac 20281,11341
 	culdesac 2211,18257
 	culdesac_pseudo 2289,3500
 	culdesac 3049,3966
+	culdesac -785,2492
 # 
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo -692,2705
 	culdesac_pseudo 853,2560
 	culdesac_pseudo -1967,1702
 	culdesac_pseudo -1892,1732

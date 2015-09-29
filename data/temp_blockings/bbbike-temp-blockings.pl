@@ -1020,11 +1020,11 @@ userdel	q4 49039,44131 48924,44216 48724,44248 48523,44467
 userdel	q4 49039,44131 49691,43812
 EOF
      },
-     { from  => $isodate2epoch->("2015-09-30 06:00:00"), # 1 Tag Vorlauf # 1096578452, # 2004-09-30 23:07
+     { from  => $isodate2epoch->("2015-09-29 06:00:00"), # 1 Tag Vorlauf # 1096578452, # 2004-09-30 23:07
        until => $isodate2epoch->("2015-10-06 23:59:59"), # 1096862400, # 2004-10-04 06:00
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 9]],
-       text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straße vollständig gesperrt (01.10.2015 bis 06.10.2015)',
+       text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen vollständig gesperrt (bis 06.10.2015)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 8055,12186 8089,12190 8214,12205
@@ -24419,9 +24419,11 @@ EOF
 #: by: wosch vvv
 #: confirmed_by: srt vvv
 #: XXX 30m zu jeder Seite der Kreuzung sind gesperrt; wann sind die Bauarbeiten fertig? vvv
-#: last_checked: 2015-08-30 vvv
+#: last_checked: 2015-09-28 vvv
+#: check_frequency: 7d vvv
 userdel	q3::inwork 12761,9190 12907,9073 13048,8956
 userdel	q3::inwork 12907,9073 12836,8980
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 #: confirmed_by ^^^
@@ -24566,6 +24568,15 @@ EOF
        source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.371808.php',
        data  => <<EOF,
 userdel	q4::inwork 1868,24633 1924,24672 2003,24702 2120,24740
+EOF
+     },
+     { from  => 1443564000, # 2015-09-30 00:00
+       until => 1446850800, # 2015-11-07 00:00
+       text  => 'Veltheimstraße: Bauarbeiten zwischen Solquellstraße und Schildower Straße, Fahrbahn gesperrt, voraussichtlich vom 01.10.2015 bis 06.11.2015 ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.378909.php',
+       data  => <<EOF,
+userdel	q4::inwork 4779,24321 4777,24342 4656,24379 4566,24389 4457,24400 4340,24413 4233,24459 4111,24488
 EOF
      },
     );

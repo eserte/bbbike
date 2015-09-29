@@ -632,9 +632,11 @@ Uferweg: fester Sandweg	Q1 16627,8581 16546,8852 16459,9017 16347,9147 16266,920
 Uferweg: asphaltiert, einige Wurzelschäden	Q0- 16673,7511 16655,7572 16624,7833 16692,8166 16627,8581
 Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: add_fragezeichen: Ist die Tino-Schwierzina-Str. zwischen Aidastr. und Romain-Rolland-Str. mittlerweile komplett asphaltiert?
+#: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
+#: corrected_by: Fil (vorher Q1-)
 #: last_checked: 2015-07-19
 #: check_frequency: 120d
-Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q1- 12736,17998 12467,17814
+Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2- 12736,17998 12467,17814
 #: corrected_by: Hartmut Schröder (Q2 -> Q3)
 #: confirmed_by: srt
 Handjerystr.: schlechtes Kopfsteinpflaster	Q3 20967,3343 20906,3433 20833,3519 20683,3693 20546,3865
@@ -1971,7 +1973,7 @@ Gudrunstr.: Asphalt	Q0 17466,12241 17300,12173 17195,12125 17139,12100 17088,120
 Röntgentaler Weg (durch den Schloßpark): Asphalt	Q0 16166,25767 16222,25829
 Röntgentaler Weg (durch den Schloßpark): fester Waldweg	Q1 16222,25829 16532,26174
 #: note: vom Zug aus gesehen:
-Röntgentaler Weg: schlechtes Kopfsteinpflaster, teilweise mit Asphaltflicken	Q3 16532,26174 17101,26701 17186,26779 17385,26962
+Röntgentaler Weg: schlechtes Kopfsteinpflaster, teilweise mit Asphaltflicken	Q3 16532,26174 17101,26701 17186,26779 17395,26968
 Treseburger Ufer: Kopfsteinpflaster, Umgehen auf dem Uferweg möglich	Q2 12052,5710 12177,5746 12301,5783
 Treseburger Ufer: Verbundsteinpflaster	Q0- 12301,5783 12453,5844 12507,5860
 Treseburger Ufer: wassergebundene Decke	Q1 12507,5860 12636,5896 12699,5909
@@ -5577,7 +5579,7 @@ Straße 4 (Heinersdorf): unbefestigte Straße	Q2 12814,19202 12937,19194 12956,192
 Straße 5 (Heinersdorf): unbefestigte Straße, Schotter	Q2 12674,19188 12631,19169
 Midgardstr.: Asphalt	Q0 12861,19072 12814,19202 12799,19242 12760,19344
 Midgardstr.: unbefestigte Straße, Schotter	Q2 12760,19344 12722,19452 12657,19625
-Frithjofstr.: Beton mit einigen Schäden	Q1+ 12457,19248 12627,19317 12760,19344 12886,19341 13017,19329
+Frithjofstr.: Beton mit einigen Schäden	Q1+ 12457,19248 12627,19317 12696,19334 12760,19344 12886,19341 13017,19329
 Sigurdstr.: unbefestigte Straße, Schotter	Q2 12627,19317 12674,19188 12706,19107
 Ingeborgstr.: Asphalt	Q0 13011,19111 12861,19072 12809,19050
 Mimestr.: Asphalt	Q0 12969,18548 12952,18598
@@ -12861,7 +12863,8 @@ Wolzogenstr.: akzeptables Kopfsteinpflaster	Q2 -870,2737 -928,2900 -987,3163
 # REMOVED (bestätigt) #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/beschreibung_anhaltinerstrasse.pdf
 #: corrected_by: srt (früher schlechtes Kopfsteinpflaster)
 Anhaltinerstr.: Asphaltstreifen	Q0 -155,2658 37,2562
-#: XXX hier wird auch asphaltiert
+#: XXX hier wird auch asphaltiert?
+#: osm_watch: way id="22724003" version="16"
 #: last_checked: 2015-09-27 vvv
 #: check_frequency: 100d vvv
 #: corrected_by: srt (added "Asphaltstreifen")
@@ -23709,6 +23712,10 @@ Prinz-Eitel-Weg: Asphalt	Q1+ -3832,16847 -3972,16826
 # 
 #: by: Sigmount Königsberg
 Verlängerte Schulzendorfer Str.: mäßig bis gut befahrbarer Waldweg, je nach Witterung	Q2+ 2150,22464 2015,22435 1834,22421 1583,22376 1505,22368 1411,22365 1266,22401 1094,22504 670,22646 636,22658 587,22646 520,22624 439,22620 289,22618 194,22547
+# 
+#: by: Fil
+#: XXX Verbindung ausprobieren!
+(Frithjofstr. - Rotkardinalweg): festgefahrener Erdboden	Q2 12696,19334 12543,19760 12552,19765
 # 
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)

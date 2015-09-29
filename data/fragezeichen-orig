@@ -71,7 +71,7 @@ Hubertusallee/Teplitzer Str.: werden hier Radspuren markiert?	?::projected 2320,
 #: check_frequency: 90d
 #: osm_watch: way id="4323788" version="15"
 #: osm_watch: way id="23109081" version="6"
-#: osm_watch: way id="41108858" version="5"
+#: osm_watch: way id="41108858" version="6"
 Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4188,2674 -4280,2539 -4290,2304 -4181,2062 -4164,1993 -4180,1941 -4256,1831 -4368,1731 -4492,1624 -4587,1542 -4644,1514 -4744,1466 -4827,1433 -4944,1298
 # 
 #: XXX Baumaßnahme 7.4 (Realisierung nach 2011)
@@ -214,8 +214,8 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2015-09-23
-#: next_check: 2015-09-30
+#: last_checked: 2015-09-29
+#: check_frequency: 7d
 Warschauer Str: Radspuren in Bau	?::inwork 13603,11538 13651,11731 13696,11920 13745,12118
 # 
 # REMOVED (vermutlich passiert nichts weiter) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: XXX wird auch das letzte Stück im Westen realisiert? --- #: osm_watch: way id="4424794" version="14" --- #: osm_watch: way id="30195541" version="9" --- #: last_checked: 2015-06-08 --- #: check_frequency: 60d --- Turmstr.: evtl. wird die Radspuren-Lücke hier geschlossen	? 5248,13434 5368,13406 5434,13398
@@ -1398,11 +1398,12 @@ Fanny-Zobel-Str.	? 13975,10187 14049,10164
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2015 vvv
 #: last_checked: 2015-09-27 vvv
 #: check_frequency: 90d vvv
+#: osm_watch: way id="4706348" version="16"
 #: XXX ggfs. Sackgassen aufheben
 #: XXX PLZ=14167
-#: XXX "Biesheimring" im DPAG-Mitteilungsblatt, im Amtsblatt "Biesheimer Ring"
-Biesheimring: Straßenname Biesheimring oder Biesheimer Ring? genaue Lage? Straße wird asphaltiert sein.	? 2031,3004 2074,3032 1993,3170 1946,3142
-Lutterbacher Str.: genaue Lage? Qualität? Bereits fertiggestellt?	? 2183,3101 2074,3032 1993,3170 2094,3231
+#: XXX "Biesheimring" im DPAG-Mitteilungsblatt, im Amtsblatt "Biesheimer Ring", auf dem Straßenschild "Biesheimring"
+Biesheimring: genaue Lage? Straße wird asphaltiert sein. Fertigstellung?	? 2031,3004 2074,3032 1993,3170 1946,3142
+Lutterbacher Str.: genaue Lage? Qualität? Fertigstellung?	? 2183,3101 2074,3032 1993,3170 2094,3231
 #: check_frequency ^^^
 #: last_checked ^^^
 #: by: ^^^
@@ -1858,7 +1859,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.334355.php
-#: last_checked: 2015-09-17
+#: last_checked: 2015-09-29
 #: check_frequency: 120d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172 10818,11269
 # 
@@ -2564,7 +2565,7 @@ Spreeradweg - Straße nach Hangelsberg: Qualität?	? 37316,-2196 37458,-2229 37613
 Hangelsberg - A10: Qualität? Für Radfahrer überhaupt benutzbar?	? 37527,-1102 37397,-1192 36991,-1329 36678,-1432
 August-Bebel-Allee (Eichwalde): Qualität? Existieren in beide Richtungen Radwege?	? 24999,-3312 25085,-3477 25320,-4049 25368,-4182
 # REMOVED (am nördlichen Ende habe ich hier keinen Weg gesehen) --- (Spandauer Damm - Fürstenbrunnerweg): Qualität?	? 1459,12475 1601,12908 1551,13377
-Brückenstr.: Qualität?	? 17385,26962 17417,26948
+Brückenstr.: Qualität?	? 17395,26968 17417,26948
 # REMOVED (der Pankeweg führt definitiv nicht hier entlang) --- Pankeweg entlang der S-Bahn: Qualität?	? 17417,26948 17687,27129 17784,27209 18225,27638 18410,27890
 #: note laut http://www.radzeit.de/gallery2/v/Radtouren/Berlin-Usedom/dscf0042.jpg.html sieht das wie ein Schotterweg aus
 Schmarsow - Rollwitz: Feldwege, genaue Wegführung? ist Berlin-Usedom hier schon ausgeschildert?	? 44142,117823 44284,118067 43949,118402 44173,119093 44630,119143 45392,120382 46387,119529 47187,119302
@@ -4067,3 +4068,8 @@ Rainweg: wird hier die Straße neu asphaltiert?	? 25006,-3014 25000,-3001 24978,-
 Florastr.: Baustelle, Fahrtrichtung S-Bhf. Pankow gesperrt	?::inwork; 9727,17804 9835,17797 10053,17777 10179,17772 10311,17764 10459,17754
 # 
 Am Tegeler Hafen - Tegeler Insel: existiert eine Zufahrtsstraße? Qualität?	? 1788,20364 1756,20405
+Steinstr. (Zepernick): Qualität?	? 18619,28283 18634,28409 18693,28474
+Reuterstr. (Zepernick): Qualität?	? 18619,28283 18508,28292
+An der Panke (Bernau): Qualität?	? 19392,29011 19535,29067 19565,29082 19741,29160 19850,29160 19957,29131 20030,29112 20309,29168 20476,29271 20537,29285
+Heinrich-Heine-Str. (Bernau): Qualität zwischen Bergstr. und Torfstr.?	? 19499,29258 19422,29462 19367,29694 19274,30131 19242,30236 19003,30633 18884,30784
+Bergstr. (Bernau): Qualität zwischen Hans-Sachs-Str. und Dossestr.?	? 19847,29385 19961,29430
