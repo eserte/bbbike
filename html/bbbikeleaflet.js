@@ -583,14 +583,58 @@ function doLeaflet() {
     }
 }
 
+function getActualWidth() {
+    return window.innerWidth ||
+           document.documentElement.clientWidth ||
+           document.body.clientWidth ||
+           document.body.offsetWidth;
+}
+
+function getActualHeight() {
+    return window.innerHeight ||
+           document.documentElement.clientHeight ||
+           document.body.clientHeight ||
+           document.body.offsetHeight;
+}
+
 function setFeatureListContent(listHtml) {
-    var listDiv = document.getElementById('list');
+    var windowX = getActualWidth();
+    var arrangement = windowX >= 800 ? 'h' : 'v';
+    var windowY = getActualHeight();
+    var mapDiv = map.getContainer();
+    var listDiv;
+    var otherListDiv;
+    if (arrangement == 'h') {
+	listDiv = document.getElementById('listleft');
+	otherListDiv = document.getElementById('listbelow');
+    } else {
+	listDiv = document.getElementById('listbelow');
+	otherListDiv = document.getElementById('listleft');
+    }
+    otherListDiv.style.visibility = 'hidden';
     listDiv.innerHTML = listHtml;
     listDiv.style.visibility = 'visible';
     listDiv.style.overflowY = 'scroll';
-    listDiv.style.width = '20%';
-    listDiv.style.height = '100%';
     listDiv.style.padding = '3px';
+    if (arrangement == 'h') {
+	listDiv.style.width = '20%';
+	listDiv.style.height = '100%';
+	listDiv.style.position = 'relative';
+	mapDiv.style.position = 'relative';
+	mapDiv.style.height = '100%';
+    } else {
+	var textHeightPercentage = 30;
+	listDiv.style.height = (textHeightPercentage-1).toString() + '%';
+	listDiv.style.bottom = 0;
+	listDiv.style.left = 0;
+	listDiv.style.right = 0;
+	listDiv.style.position = 'absolute';
+	mapDiv.style.position = 'absolute';
+	mapDiv.style.top = 0;
+	mapDiv.style.left = 0;
+	mapDiv.style.height = (100-textHeightPercentage).toString() + '%';
+	mapDiv.style.width = '100%';
+    }
 }
 
 function showMarker(id) {
