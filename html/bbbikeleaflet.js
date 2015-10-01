@@ -279,7 +279,7 @@ function doLeaflet() {
     
     map = new L.Map('map',
 		    {
-			zoomAnimation:false, fadeAnimation:false, // animations may be super-slow, seen on mosor/firefox9
+			zoomAnimation:true, fadeAnimation:false, // animations may be super-slow, seen on mosor/firefox9 - but see https://github.com/Leaflet/Leaflet/issues/1922
 			doubleClickZoom:disable_routing, // used for setting start/goal, see below for click/dblclick event
 			layers: [bbbikeTileLayer]
 		    }
