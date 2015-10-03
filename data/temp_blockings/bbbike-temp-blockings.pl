@@ -1876,7 +1876,7 @@ EOF
        text  => 'L 14; (Großderschau- Bahnhof Zernitz); Brücke über die Neue Jägelitz bei Zernitz Brückensanierung Vollsperrung 19.04.2005-28.10.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -63163,51264 -63375,50856
+userdel	2 -63197,51278 -63388,50865
 EOF
      },
      { from  => 1112652000, # 2005-04-05 00:00
@@ -5913,7 +5913,7 @@ EOF
        text  => 'L 014 Großderschau-Kyritz Brücke über den Graben bei Babe Brückenneubau Vollsperrung 11.07.2006-21.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -64545,43296 -63700,42146
+userdel	2::inwork -64564,43289 -63780,42162
 EOF
      },
      { from  => 1157695483, # 2006-09-08 08:04
@@ -9494,7 +9494,7 @@ EOF
        text  => 'B 102 Brücken über den Mühlenrhin u. Büttgraben nördl.Rhinow Brückenbauarbeiten Vollsperrung 13.08.2007-25.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -60904,38644 -60907,38811
+userdel	2::inwork -60904,38644 -60889,38876
 EOF
      },
      { from  => 1188246966, # 
@@ -10160,7 +10160,7 @@ EOF
        text  => 'L 141 Havelberger Str. OD Breddin Kanal- u. Straßenbauarbeiten Vollsperrung 04.10.2007-20.12.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -70922,51604 -70980,51154 -71053,49770
+userdel	q4::inwork -70922,51604 -70999,51147 -71005,50627 -70992,50438 -71070,50042
 EOF
      },
      { from  => 1191362400, # 2007-10-03 00:00
@@ -11027,7 +11027,7 @@ EOF
        text  => 'L 141 Havelberger Str. OD Breddin Kanal- u. Straßenbauarbeiten Vollsperrung * 11.02.2008-31.05.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -70922,51604 -70980,51154 -71053,49770
+userdel	q4::inwork -70922,51604 -70999,51147 -71005,50627 -70992,50438 -71070,50042
 EOF
      },
      { from  => 1204412400, # 2008-03-02 00:00
@@ -12013,7 +12013,7 @@ EOF
        text  => 'L 141 Breddin - Kümmernitz OD Breddin Straßenneubau Wintersicherung 18.12.2008-30.04.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -70100,51862 -70753,51862 -70922,51604
+userdel	q4::inwork -70100,51862 -70780,51875 -70922,51604
 EOF
      },
      { from  => 1216405440, # 2008-07-18 20:24
@@ -14119,7 +14119,7 @@ EOF
        text  => 'B 102 Wildberg - Neustadt-Dosse zw. Bückwitz u. Neustadt-Dosse Straßenbau Vollsperrung 11.05.2009-22.07.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -53139,50022 -54295,49682 -54769,49740 -54942,49716
+userdel	2::inwork -53139,50022 -54295,49682 -54821,49758 -54924,49750
 EOF
      },
      { from  => 1241906400, # 2009-05-10 00:00
