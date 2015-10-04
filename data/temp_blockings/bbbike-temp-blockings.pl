@@ -1157,7 +1157,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_82',
        data  => <<EOF,
-userdel	1 12442,20805 12222,20637 12118,20557 12030,20490
+userdel	1 12442,20805 12222,20637 12116,20559 12070,20526 12037,20524
 EOF
      },
      { from  => 1098309600, # 2004-10-21 00:00
@@ -2007,7 +2007,7 @@ EOF
        text  => 'Rosenfelder Straße Richtung Frankfurter Allee zwischen Skandinavische Straße und Frankfurter Allee Baustelle, Straße gesperrt, Dauer: 09.05.2005, 09.00 Uhr bis 09.06.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 17338,11969 17358,11943 17306,11866 17240,11791
+userdel	q4; 17338,11969 17358,11943 17306,11866 17251,11789
 EOF
      },
      { from  => 1116280800, # 2005-05-17 00:00
@@ -14423,7 +14423,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_017116',
        data  => <<EOF,
-userdel	q4::inwork; 12095,20832 12076,20731 12039,20538 12030,20490 12008,20368 12000,20327 11984,20246 11963,20136 11931,19965 11907,19838 11907,19749
+userdel	q4::inwork; 12095,20832 12076,20731 12039,20538 12037,20524 12008,20368 12000,20327 11984,20246 11963,20136 11931,19965 11907,19838 11907,19749
 userdel	q4::inwork; 11883,19739 11730,19684
 EOF
      },
@@ -17044,12 +17044,12 @@ userdel	2::temp 11209,12430 11273,12301
 userdel	2::temp 11273,12301 11355,12331
 EOF
      },
-     { from  => $isodate2epoch->("2014-11-23 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-12-31 23:59:59"),
+     { from  => $isodate2epoch->("2015-11-22 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-12-31 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 24, months => 11]],
-       source_id => 'http://www.berlin.de/tickets/suche/detail.php?id=962691',
-       text  => 'Gendarmenmarkt: Weihnachtsmarkt vom 24.11.2014 bis 31.12.2014, Durchfahrt nicht möglich (Eintritt!)',
+       recurrences => [['yearly', days => 23, months => 11]],
+       source_id => 'http://www.berlin.de/tickets/suche/detail.php?id=1090035',
+       text  => 'Gendarmenmarkt: Weihnachtsmarkt vom 23.11.2015 bis 31.12.2015, Durchfahrt nicht möglich (Eintritt!)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 9536,11922 9666,11935
@@ -18385,7 +18385,7 @@ EOF
        type  => 'handicap',
        source_id => '106000506',
        data  => <<EOF,
-userdel	q4::inwork; 20537,29285 20704,29485 21037,29913
+userdel	q4::inwork; 20537,29285 20569,29323 20704,29485 21037,29913
 EOF
      },
      { from  => 1283457600, # 2010-09-02 22:00
@@ -23113,9 +23113,11 @@ EOF
        source_id => 'IM_025547',
        data  => <<EOF,
 #: note: außerdem Ampel an der Kreuzung Werneuchener/Große-Leege, und geänderte Vorfahrtsregelung an der Umleitungsstrecke via Große-Leege-Str.
-userdel	q4::inwork 15272,14691 15345,14736 15383,14759 15562,14869 15580,14880 15774,14992 15867,15073 15937,15134 16028,15218 16119,15302
+userdel	q4::inwork 15272,14691 15345,14736 15383,14759 15562,14869 15580,14880 15774,14992
+# userdel	q4::inwork 15774,14992 15867,15073 15937,15134 16028,15218 16119,15302
 # userdel	q4::inwork; 16119,15302 16218,15386 16263,15427 16331,15486 16412,15559
-userdel	q4::inwork; 16412,15559 16448,15593 16497,15636 16615,15737 16633,15753 16819,15912
+# userdel	q4::inwork; 16412,15559 16448,15593 16497,15636 16615,15737 16633,15753
+userdel	q4::inwork; 16633,15753 16819,15912 16941,16021
 # userdel	q4::inwork; 15937,15134 16075,15069 16123,15025
 #	3 16475,15659 16497,15636 16615,15737
 #	3 16615,15737 16497,15636 16475,15659

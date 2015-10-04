@@ -808,6 +808,7 @@ Bahnhofstr.	1 12202,21158 12158,21166
 (Bushaltestelle und Straßenbahnwendestelle Schöneweide): Betriebsgelände	2 17675,5521 17588,5573 17578,5566
 Allee der Kosmonauten	1 20172,14141 20111,14140 20096,14127
 Augustaplatz	1 3936,4014 3955,4039 3986,4051 4015,4053 4034,4033 4045,4005 4042,3982 4025,3958 4000,3950 3971,3950 3946,3967 3937,3993 3936,4014
+Paul-Koenig-Str.	1 17268,16526 17312,16498 17304,16485 17293,16469 17251,16497 17268,16526
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -1551,8 +1552,8 @@ Wisbyer Str. -> Baumbachstr.: Straßenbahn	3::igndisp 11397,16405 11448,16398 114
 Baumbachstr. -> Wisbyer Str.: Straßenbahn	3::igndisp 11447,16507 11448,16398 11470,16394
 Lewaldstr. -> Wisbyer Str.: Straßenbahn	3::igndisp 11401,16265 11470,16394 11448,16398
 Wisbyer Str. -> Lewaldstr.: Straßenbahn	3::igndisp 11542,16384 11470,16394 11401,16265
-nicht passierbarer Mittelstreifen	3nocross::ignrte 17240,11791 17440,11774 17497,11769 17746,11748 17963,11723 18098,11706 18215,11690
-Alt-Friedrichsfelde -> Löwenberger Str.: nicht passierbarer Mittelstreifen	3::igndisp 17240,11791 17440,11774 17477,11893
+nicht passierbarer Mittelstreifen	3nocross::ignrte 17251,11789 17440,11774 17497,11769 17746,11748 17963,11723 18098,11706 18215,11690
+Alt-Friedrichsfelde -> Löwenberger Str.: nicht passierbarer Mittelstreifen	3::igndisp 17251,11789 17440,11774 17477,11893
 Löwenberger Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 17477,11893 17440,11774 17497,11769
 Alt-Friedrichsfelde -> Paul-Gesche-Str.: nicht passierbarer Mittelstreifen	3::igndisp 17746,11748 17497,11769 17495,11724
 Paul-Gesche-Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 17495,11724 17497,11769 17440,11774
@@ -2817,9 +2818,9 @@ Unterführung Gertraudenbrücke - Wallstr.: wegen Bauarbeiten beim U-Bhf. Spittelm
 Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, ggfs. dauerhaft	2::inwork 17670,7512 17681,7589
 (Baustraße an der Freybrücke)	2::inwork -3075,11510 -3197,11554
 (Treppe an der Freybrücke)	2::inwork -3181,11496 -3177,11507 -3173,11520
-Grenobler Ring: teilweise noch nicht fertiggestellt bzw. durch Bauzaun abgesperrt	2::inwork 12360,21303 12441,21341 12483,21255 12404,21217
-Grenobler Ring: teilweise noch nicht fertiggestellt bzw. durch Bauzaun abgesperrt	2::inwork 12483,21255 12493,21212
-Lyonstr.: noch nicht fertiggestellt, zurzeit nur Baustraße	2::inwork 12188,21330 12204,21327 12322,21378 12443,21439
+Lyonstr.: noch nicht geöffnet	2::inwork 12188,21330 12204,21327 12322,21378 12443,21439
+Marseillestr.: noch nicht geöffnet	2::inwork 12402,21537 12404,21532 12411,21515 12443,21439
+Toulonstr.: noch nicht geöffnet	2::inwork 12404,21532 12480,21560
 Luisenstr. Höhe Charité: Straße wegen Bauarbeiten komplett bis zum 31.10.2015 gesperrt, auch für Radfahrer und Fußgänger	2::inwork 8665,13353 8648,13498
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
@@ -2832,7 +2833,7 @@ BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 am Osthafen: durch Barriere versperrt	2::inwork 14259,10309 14463,10212
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Durchfahrt verboten	2 8251,14337 8442,14456
 Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10008,12274 9994,12368
-Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s 9996,12401 9994,12368 9943,12364 9961,12273
+Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s 9996,12401 9994,12368 9943,12364
 Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,6895 14153,6795
 tragen (2 Stufen)	0:5:57 8818,13365
 wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::ignrte 9984,12426 9934,12420 9858,12410

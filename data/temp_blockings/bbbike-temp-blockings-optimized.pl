@@ -2175,7 +2175,27 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geˆffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 9536,11922 9666,11935
+userdel	2::temp 9524,12010 9656,12021
+',
+         'from' => 1448146800,
+         'id' => 1989,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              23,
+                              'months',
+                              11
+                            ]
+                          ],
+         'source_id' => 'http://www.berlin.de/tickets/suche/detail.php?id=1090035',
+         'text' => 'Gendarmenmarkt: Weihnachtsmarkt vom 23.11.2015 bis 31.12.2015, Durchfahrt nicht mˆglich (Eintritt!)',
+         'type' => 'gesperrt',
+         'until' => 1451602799
+       },
        undef,
        undef,
        undef,
@@ -3133,9 +3153,11 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
        },
        {
          'data' => '#: note: auﬂerdem Ampel an der Kreuzung Werneuchener/Groﬂe-Leege, und ge‰nderte Vorfahrtsregelung an der Umleitungsstrecke via Groﬂe-Leege-Str.
-userdel	q4::inwork 15272,14691 15345,14736 15383,14759 15562,14869 15580,14880 15774,14992 15867,15073 15937,15134 16028,15218 16119,15302
+userdel	q4::inwork 15272,14691 15345,14736 15383,14759 15562,14869 15580,14880 15774,14992
+# userdel	q4::inwork 15774,14992 15867,15073 15937,15134 16028,15218 16119,15302
 # userdel	q4::inwork; 16119,15302 16218,15386 16263,15427 16331,15486 16412,15559
-userdel	q4::inwork; 16412,15559 16448,15593 16497,15636 16615,15737 16633,15753 16819,15912
+# userdel	q4::inwork; 16412,15559 16448,15593 16497,15636 16615,15737 16633,15753
+userdel	q4::inwork; 16633,15753 16819,15912 16941,16021
 # userdel	q4::inwork; 15937,15134 16075,15069 16123,15025
 #	3 16475,15659 16497,15636 16615,15737
 #	3 16615,15737 16497,15636 16475,15659

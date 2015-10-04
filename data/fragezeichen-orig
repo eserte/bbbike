@@ -29,7 +29,7 @@ Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6
 # 
 #: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
-#: last_checked: 2015-09-19
+#: last_checked: 2015-10-04
 #: check_frequency: 60d
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12407,14470 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
@@ -214,7 +214,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2015-09-30
+#: last_checked: 2015-10-04
 #: check_frequency: 7d
 Warschauer Str: Radspuren in Bau	?::inwork 13603,11538 13651,11731 13696,11920 13745,12118
 # 
@@ -246,12 +246,7 @@ Stromstr., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,1
 # REMOVED (realisiert) --- #: last_checked: 2013-10-25 --- #: next_check: 2013-11-25 --- Dietzgenstr.: wird auch in Richtung Süden markiert? wird auch zwischen Heinrich-Böll-Str. und Schillerstr. markiert?	? 10063,20493 10066,20323 10068,20188 10102,20092 10112,20063 10127,19992 10167,19797 10195,19703
 # REMOVED (realisiert) --- #: last_checked: 2014-04-06 vvv --- #: check_frequency: 100d vvv --- Heinrich-Mann-Str.: Radspuren bis 2015 geplant	?::projected 9881,18354 9821,18392 9565,18555 9567,18599 9542,18634 9495,18639 9457,18612 9366,18669 9279,18724 --- Heinrich-Mann-Str.: Radspuren bis 2015 geplant	?::projected 9457,18612 9454,18570 9480,18539 9524,18531 9565,18555 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (realisiert) --- #: last_checked: 2014-07-10 --- #: check_frequency: 14d --- Blankenburger Str.: hier müssen noch die Radspuren Richtung Westen markiert werden	?::projected; 11563,20048 11425,19978 11312,19920 11162,19844
-# 
-#: by: http://www.berlin.de/ba-pankow/presse/archiv/20140627.1145.398202.html (Bauarbeiten, letzter Abschnitt)
-#: next_check_id: BLANKENBURGER-2014
-#: last_checked: 2015-07-19
-#: next_check: 2015-12-31
-Blankenburger Str.: Radspuren bis 2015 geplant	?::projected 11563,20048 11632,20086 11690,20127 11799,20224 11959,20365 12008,20368
+# REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20140627.1145.398202.html (Bauarbeiten, letzter Abschnitt) --- #: next_check_id: BLANKENBURGER-2014 --- #: last_checked: 2015-07-19 --- #: next_check: 2015-12-31 --- Blankenburger Str.: Radspuren bis 2015 geplant	?::projected 11563,20048 11632,20086 11690,20127 11799,20224 11959,20365 12008,20368
 # 
 #: osm_watch: way id="33836252" version="12"
 #: last_checked: 2015-07-19
@@ -432,7 +427,7 @@ Rathaus Wedding: ändert sich was während/nach der Bauarbeiten am Rathausplatz?	?
 # REMOVED (teilweise offiziell für Radfahrer offen) --- #: XXX Zimmerstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis Ende 01/15) Richtung Friedrichstr. zwischen Wilhelmstr. und Friedrichstr., 04.11.2014 14:58 Uhr bis 31.01.2015 16:00 Uhr --- #: XXX wahrscheinlich für Radfahrer offen --- #: source_id: IM_023356 --- #: next_check: 2014-11-10 --- Zimmerstr.: Bauarbeiten für Radfahrer relevant?	?::inwork 9155,11283 9478,11317
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5602 (Baubeginn "in Kürze")
-#: last_checked: 2015-08-15
+#: last_checked: 2015-10-04
 #: check_frequency: 60d
 Rummelsburger/Zacherstr.: Ampel wird verlegt (auf die Ostseite)	?::projected 17834,11192 17848,11204
 # 
@@ -449,7 +444,7 @@ Rummelsburger/Zacherstr.: Ampel wird verlegt (auf die Ostseite)	?::projected 178
 #: XXX fehlen alle in Berlin.coords.data, 13159 Berlin, alles Privatwege vvv
 #: XXX einige culdesac-Einträge fehlen
 #: note: überwiegend mit Straßenbeleuchtung
-#: last_checked: 2015-05-03 vvv
+#: last_checked: 2015-10-04 vvv
 #: check_frequency: 60d vvv
 # REMOVED (aufgenommen, bereits provisorisch ausgeschildert --- Ideallee: Qualität: unbefestigte Straße (Q2); Straßenbenennung?	? 11069,23647 10971,23838 10813,24126
 Kirschlorbeerweg: Qualität: unbefestigte Straße (Q2); Straßenbenennung?	? 11069,23647 11028,23624 10927,23816
@@ -533,19 +528,21 @@ Sternbergpromenade: Umgestaltung, Havel-Radweg wird hier offiziell entlanggeführ
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2014/mdb-bapankow-pressestelle-ba-beschluesse-2014-13.05.14_genehmigung_von_20_bauvorhaben_gem________33_abs_1_baugb_im_geltungsbereich_des_bebauungsplanentwurfs_xix_48b_f__r_das_gel__nde_zwischen_dr_markus_stra__e__pankgaben_...pdf
 #: XXX Öffentliche Straßen:
 #: next_check_id: NIZZASTR-2014 vvv
-#: last_checked: 2015-07-19 vvv
+#: last_checked: 2015-10-04 vvv
 #: check_frequency: 60d vvv
 #: XXX Planstraße A -> Marseillestraße
-Marseillestr.: Qualität? wann ist die Fertigstellung? wird die Anbindung an die Dr.-Markus-Str. nur ein Fußweg sein?	?::inwork 12364,21623 12402,21537 12404,21532 12411,21515 12443,21439 12547,21372
+Marseillestr. - Dr.-Markus-Str.: Qualität? wann ist die Fertigstellung? wird hier nur ein Fußweg sein?	?::inwork 12364,21623 12402,21537
+# REMOVED --- Marseillestr.: Qualität? wann ist die Fertigstellung? wird die Anbindung an die Dr.-Markus-Str. nur ein Fußweg sein?	?::inwork 12402,21537 12404,21532 12411,21515 12443,21439
+Marseillestr. - Straße 160: Qualität? wann ist die Fertigstellung?	?::inwork 12443,21439 12547,21372
 # REMOVED --- : XXX Planstraße B -> Lyonstraße -> Lyonstr.|Französisch Buchholz|13127
 # REMOVED --- : XXX Planstraße C und D -> Nizzastraße -> Nizzastr.|Französisch Buchholz|13127
 #: XXX Privatstraßen:
 # REMOVED --- : XXX Privatstraße III und IV -> Brester Ring -> Brester Ring|Französisch Buchholz|13127
 # REMOVED --- : XXX Privatstraßen V, VI, VII -> Grenobler Ring -> Grenobler Ring|Französisch Buchholz|13127
 #: XXX Privatstraße X -> Bordeauxstraße
-Bordeauxstr.: genaue Lage? Qualität? Verkehrsberuhigt? Sackgasse? wann ist die Fertigstellung?	?::inwork 12323,21479 12411,21515
+Bordeauxstr.: genaue Lage? Qualität (vermutlich Verbundsteinpflaster)? Verkehrsberuhigt? Sackgasse? wann ist die Fertigstellung?	?::inwork 12323,21479 12411,21515
 #: XXX Privatstraße XIV -> Toulonstraße
-Toulonstr.: genaue Lage? Qualität? Verkehrsberuhigt? Sackgasse? wann ist die Fertigstellung?	?::inwork 12404,21532 12480,21560
+Toulonstr.: Verkehrsberuhigt?	?::inwork 12404,21532 12480,21560
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4111
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036978486193/978486193/00069082/82-Anlagen/02/BenennungsabsichtfuereinenPrivatweggemaessBeba.pdf
 Rennesstr.: Benennungsabsicht; genaue Lage, Qualität?	?::projected 12411,21515 12422,21492 12469,21507
@@ -586,7 +583,7 @@ Mauerweg Rudow: wann wird der fehlende Abschnitt gebaut?	?::projected 16997,-663
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3437
 #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45-181-136478427199/478427199/00053086/86-Anlagen/03/3_Version_vom_13_08_2013.doc (angeordnet, aber keine finanziellen Mittel)
-#: last_checked: 2015-05-03
+#: last_checked: 2015-10-04
 #: check_frequency: 120d
 Bahnhofstr./Blankenburger Weg/Pankstr.: Ampel geplant	?::projected 12442,20805
 # 
@@ -1042,7 +1039,7 @@ Wolzenseeweg: Qualität? Straße bereits fertiggestellt? Wird es eine Überquerungs
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 # 
 #: next_check_id: OBERWALL-2014 vvv
-#: last_checked: 2015-07-15 vvv
+#: last_checked: 2015-10-02 vvv
 #: check_frequency: 90d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: XXX siehe auch gesperrt-orig-Eintrag zur Oberwallstr.
@@ -1213,8 +1210,6 @@ Schulzendorfer Str.: Radverkehrsanlangen? (vermutlich asphaltiert, vermutlich nu
 #: next_check: 2015-10-31
 Waldstr.: Umgestaltung, wird sich hier etwas ändern?	? 5443,14028 5417,13817 5390,13616 5384,13555
 # 
-Volkradstr.: hier existieren ein paar Meter Radweg, genauer anschauen	? 17621,10994 17569,10801
-# 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1509/nachricht5759.html
 #: last_checked: 2015-09-26
 #: next_check: 2015-10-05
@@ -1275,7 +1270,7 @@ Parkweg: Umbenennung in Bernhard-Langwaldt-Weg?	? 14652,10201 14626,10162 14597,
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036390936422/390936422/00068591/91-Anlagen/01/Anlage1u2NEU.pdf
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4115
 #: XXX Amtsblatt abwarten...
-#: next_check: 2015-10-19
+#: last_checked: 2015-10-04
 Minna-Flake-Platz: Benennung eines Platzes	? 11673,16003
 # 
 #: XXX "Straßen in der Hahnebergsiedlung asphaltieren" vvv
@@ -1328,7 +1323,7 @@ Pilgramer Str.: Radfahrstreifen in Planung	?::projected 25149,10695 25149,10731 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6273 (Empfehlung)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036102169813/102169813/00119753/53-Anlagen/02/AnlageBE.pdf (Karte)
 #: XXX fehlt in Berlin.coords.data
-#: last_checked: 2015-08-09
+#: last_checked: 2015-10-04
 #: check_frequency: 60d
 Abbè-Lemire-Weg: Straßenbenennung, wann passiert sie?	? 16296,17114 16229,17217 16146,17304 16141,17325 15939,17412 15839,17431 15814,17454 15821,17510
 # 
@@ -1555,39 +1550,9 @@ Berliner Str: existiert hier ein Zebrastreifen?	? 3901,24137 3922,24161 3948,241
 # REMOVED --- #: XXX siehe auch: gesperrt-orig, handicap_s-orig --- #: last_checked: 2013-06-06 --- #: next_check: 2013-06-14 --- #: priority: #A --- Grimmstr.: Einbahnstraße wiederherstellen!	? 11023,9597 11042,9642 11072,9711 11089,9751
 # REMOVED (zumindest an der Rathausstr. nichts gesehen) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4429 --- Am Teltowkanal: gibt es durch die Bauarbeiten hier Einschränkungen? Wird die Qualität danach besser werden?	? 8784,5095 8881,5143 9171,5263 9192,5272
 # REMOVED (keine Vorfahrt!) --- # Linkstr.: hier auch Vorfahrt?	? 8392,11077 8370,11010 8342,10916
-# 
-#: next_check_id: ANLAGEBUCHHOLZ-2015 vvv
-#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3954
-#: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036832083234/832083234/00064924/24-Anlagen/02/Benennungsabsichtfuer7PrivatwegeinderAnlageBuc.pdf
-#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4003
-#: XXX Benennungsabsicht für 7 Privatwege in der Anlage Buchholz, PLZ=13127, Ortsteil Französisch Buchholz (fehlen alle in Berlin.coords.data)
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/12re.pdf/file?y=2015 (Straßenbenennung)
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2015 (Grundstücksnummerierungen)
-#: note: so gut wie alle Wege hier sind beleuchtet
-#: last_checked: 2015-07-19 vvv
-#: check_frequency: 60d vvv
+# REMOVED --- : next_check_id: ANLAGEBUCHHOLZ-2015 vvv --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3954 --- #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036832083234/832083234/00064924/24-Anlagen/02/Benennungsabsichtfuer7PrivatwegeinderAnlageBuc.pdf --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4003 --- #: XXX Benennungsabsicht für 7 Privatwege in der Anlage Buchholz, PLZ=13127, Ortsteil Französisch Buchholz (fehlen alle in Berlin.coords.data) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/12re.pdf/file?y=2015 (Straßenbenennung) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2015 (Grundstücksnummerierungen) --- #: note: so gut wie alle Wege hier sind beleuchtet --- #: last_checked: 2015-07-19 vvv --- #: check_frequency: 60d vvv
 # REMOVED (-> strassen-orig) --- Fliederblütenweg: dieser Abschnitt des Wegs am Nordgraben wird umbenannt	? 11714,21130 11534,21229 11437,21283 11389,21310 11370,21320 11295,21392 11249,21463 11175,21571 11073,21680
-#: XXX Eintrag in str_cont_ausnahme
-Mirabellenblütenweg: Qualität: unbefestigte Schotterstraße (Q2); bereits umbenannt?	? 11308,21550 11296,21456
-Mirabellenblütenweg: Qualität: unbefestigte Schotterstraße (Q2); bereits umbenannt?	? 11249,21463 11296,21456 11397,21440
-Mirabellenblütenweg: Qualität: unbefestigte Schotterstraße (Q2); einige Bodenschwellen (q2); bereits umbenannt?	? 11399,21450 11509,21439
-Apfelblütenweg: Qualität: unbefestigte Schotterstraße (Q2); bereits umbenannt?	? 11408,21537 11399,21450 11397,21440
-Apfelblütenweg: Qualität: unbefestigte Schotterstraße (Q2); einige Bodenschwellen (q2); bereits umbenannt?	? 11397,21440 11387,21361
-Apfelblütenweg: Qualität: unbefestigte Schotterstraße (Q2); bereits umbenannt?	? 11387,21361 11389,21310
-#: XXX Eintrag in str_cont_ausnahme
-Pflaumenblütenweg: Qualität: unbefestigte Schotterstraße (Q2); bereits umbenannt?	? 11387,21361 11497,21361 11650,21342 11656,21309
-Pflaumenblütenweg: Qualität: unbefestigte Schotterstraße (Q2); bereits umbenannt?	? 11503,21406 11497,21361 11502,21292
-Birnenblütenweg: Qualität: unbefestigte Schotterstraße (Q2); bereits umbenannt?	? 11437,21283 11502,21292
-Birnenblütenweg: Qualität: überwiegend Verbundsteinpflaster (Q1-); bereits umbenannt?	? 11502,21292 11656,21309
-Birnenblütenweg: Qualität: unbefestigte Schotterstraße (Q2); bereits umbenannt?	? 11656,21309 11783,21324
-#: XXX Eintrag in str_cont_ausnahme
-Veilchenblütenweg: Qualität: unbefestigte Schotterstraße (Q2); bereits umbenannt?	? 11534,21229 11664,21246
-Veilchenblütenweg: Qualität: unbefestigte Schotterstraße und Verbundsteinpflaster (Q2); bereits umbenannt?	? 11664,21246 11757,21253
-Veilchenblütenweg: Qualität: unbefestigte Schotterstraße (Q2); bereits umbenannt?	? 11664,21246 11656,21309
 # REMOVED (-> strassen-orig) --- Pfirsichblütenweg: dieser Abschnitt des Wegs am Nordgraben wird umbenannt	? 11253,21364 11373,21271 11703,21097
-#: check_frequency ^^^
-#: last_checked ^^^
-#: next_check_id ^^^
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5437
 #: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/bplan1135.pdf?start&ts=1363256158&file=bplan1135.pdf
@@ -1600,7 +1565,7 @@ Veilchenblütenweg: Qualität: unbefestigte Schotterstraße (Q2); bereits umbenannt
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/02re.pdf/file?y=2015 ("Anna-Maria-Müller-Str.")
 #: XXX Bebauungsplan 11-35, teilweise verkehrsberuhigt, "Olympiaviertel" vvv
-#: last_checked: 2015-06-20 (nur einige unbefestigte Baustraßen) vvv
+#: last_checked: 2015-10-04 (nur einige unbefestigte Baustraßen) vvv
 #: check_frequency: 60d vvv
 Helga-Haase-Str.: Planstraße 1, genaue Lage, Qualität?	?::projected 17465,16340 17508,16356 17611,16396 17673,16420 17792,16465
 Jutta-Langenau-Str.: Planstraße 2, genaue Lage, Qualität?	?::projected 17615,16310 17643,16322 17818,16397 17877,16423
@@ -1873,7 +1838,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.334355.php
-#: last_checked: 2015-09-29
+#: last_checked: 2015-10-02
 #: check_frequency: 120d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172 10818,11269
 # 
@@ -4087,9 +4052,9 @@ Florastr.: Baustelle, Fahrtrichtung S-Bhf. Pankow gesperrt	?::inwork; 9727,17804
 Am Tegeler Hafen - Tegeler Insel: existiert eine Zufahrtsstraße? Qualität?	? 1788,20364 1756,20405
 Steinstr. (Zepernick): Qualität?	? 18619,28283 18634,28409 18693,28474
 Reuterstr. (Zepernick): Qualität?	? 18619,28283 18508,28292
-An der Panke (Bernau): Qualität?	? 19392,29011 19535,29067 19565,29082 19741,29160 19850,29160 19957,29131 20030,29112 20309,29168 20476,29271 20537,29285
 Heinrich-Heine-Str. (Bernau): Qualität zwischen Bergstr. und Torfstr.?	? 19499,29258 19422,29462 19367,29694 19274,30131 19242,30236 19003,30633 18884,30784
-Bergstr. (Bernau): Qualität zwischen Hans-Sachs-Str. und Dossestr.?	? 19847,29385 19961,29430
+Mainstr. (Bernau): Qualität zwischen Newastr. und Mittelstr.?	? 20618,29809 20378,29844 20269,29852 19860,29818 19780,29807
+Newastr. (Bernau): Qualität zwischen Bugstr. und Mainstr.?	? 20513,29787 20618,29809
 Sieversdorf: Qualität? Ist hier auch asphaltiert?	? -58947,45483 -58977,45352 -58961,45254 -58863,44893 -58804,44826
 Kümmernitz - Vehlgast: Qualität?	? -70888,48135 -70878,48009 -70842,47863 -70849,47706 -70765,47295 -70648,47092 -70583,46902 -70364,46767 -70283,46513 -70155,46272 -70149,46133 -70566,45706 -70547,45421 -70926,44836
 Kümmernitz - Vehlgast: Qualität?	? -71278,44309 -71319,43569 -71325,43158 -71550,42961 -71639,42831 -71698,42657 -71991,42370

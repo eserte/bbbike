@@ -196,7 +196,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2015-09-07
+#: last_checked: 2015-10-02
 #: check_frequency: 30d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -205,9 +205,9 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10072,11384 9945,11371 9737,11349
 # REMOVED (das Einfahrt verboten-Schild hängt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9949,11470 9935,11566
 # 
-#: last_checked: 2015-09-29
+#: last_checked: 2015-10-02
 Alte Jakobstr.: Bauarbeiten, teilweise Einbahnstraße	q3::inwork; 10256,11160 10437,11352
-#: last_checked: 2015-09-29
+#: last_checked: 2015-10-02
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10624,11548 10640,11564
 # 
 # REMOVED --- Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10437,11352
@@ -559,7 +559,8 @@ Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5465,8511 5417,8519 5347,
 (S-Bahnunterführung Wartenberg): Rampe	q3 17068,18736 17086,18719 17077,18744
 (S-Bahnunterführung Wartenberg): Fußgänger	q1 17077,18744 17109,18772
 (Weg zwischen S-Hohenschönhausen und S-Wartenberg): eng und teilweise kurvenreich	q1 17557,17999 17267,18343 17235,18352 17159,18375 17102,18490 17040,18571 17002,18578 16939,18652
-(Weg zwischen S-Hohenschönhausen und S-Wartenberg): eng und teilweise kurvenreich	q1 17159,18375 17209,18335
+(Weg zwischen S-Hohenschönhausen und S-Wartenberg): eng und teilweise kurvenreich	q1 17159,18375 17206,18332
+(Weg im Wustrower Park): eng und teilweise kurvenreich	q1 17235,18352 17206,18332
 #: note: jeweils zwei Serpentinen pro Seite, großer Zeitverlust
 Bernburger Treppe: Rampen	q4 8536,11063 8512,11069 8516,11086 8484,11097 8478,11080 8454,11086
 Virchowstr. (Volkspark Friedrichshain): Fußgänger	q1 12876,13440 12826,13526 12802,13584 12784,13610 12766,13621 12743,13634 12709,13691 12707,13706
@@ -787,7 +788,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20140603.1435.397678.html (Vorlage 096/2014)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
-#: last_checked: 2015-08-09
+#: last_checked: 2015-10-04
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268
@@ -2065,7 +2066,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
 Insel-Rügen-Weg: eng	q2 10967,17671 10978,17589 11064,17599
-(Weg im Wustrower Park): einige Fußgänger, eng	q2+ 17235,18352 17209,18335 17162,18304 17087,18434 17102,18490 17021,18663
+(Weg im Wustrower Park): einige Fußgänger, eng	q2+ 17206,18332 17162,18304 17087,18434 17102,18490 17021,18663
 (an den Schönhauser Allee Arcaden): Fußgänger	q3 11150,15908 11070,15944 11086,15984
 (an den Schönhauser Allee Arcaden): Fußgänger	q4 11086,15984 10975,16010
 #: XXX_prog falls man die Umfahrung auf dem Gehweg wählt, auf der südlichen Seite, ansonsten wegfallen lassen
@@ -2202,6 +2203,19 @@ Sigmaringer Str.: ein Moabiter Kissen	q0- 4700,9179 4715,8977
 #: XXX_prog BS Bordstein am Wendehammer, ansonsten vielleicht q1 für Fußgänger
 Lepsiusstr.: Bordstein	q2 4913,6538 4901,6505
 (Schubertstr. - Dahlemer Weg): Rampe	q2 2289,3500 2278,3514 2270,3496 2270,3519 2262,3501 2253,3505
+Mirabellenblütenweg: schmale Straße	q1 11308,21550 11296,21456
+Mirabellenblütenweg: schmale Straße	q1 11249,21463 11296,21456 11397,21440
+Mirabellenblütenweg: einige Bodenschwellen, schmale Straße	q2 11399,21450 11509,21439
+Apfelblütenweg: schmale Straße	q1 11408,21537 11399,21450 11397,21440
+Apfelblütenweg: einige Bodenschwellen, schmale Straße	q2 11397,21440 11387,21361
+Apfelblütenweg: schmale Straße	q1 11387,21361 11389,21310
+Pflaumenblütenweg: schmale Straße	q1 11387,21361 11497,21361 11650,21342 11656,21309
+Pflaumenblütenweg: schmale Straße	q1 11503,21406 11497,21361 11502,21292
+Birnenblütenweg: schmale Straße	q1 11437,21283 11502,21292 11656,21309 11783,21324
+Veilchenblütenweg: schmale Straße	q1 11534,21229 11664,21246 11757,21253
+Veilchenblütenweg: schmale Straße	q1 11664,21246 11656,21309
+#: note: teilweise nur einspurig
+(Am Marderberg): eng	q1 14977,19129 14328,19527 13477,20064
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -3922,4 +3936,5 @@ Verlängerte Schulzendorfer Str.: Fußgänger	q1 2150,22464 2015,22435 1834,22421 1
 (Heinz-Brandt-Str./Mauerweg - Uhlandstr.): Trampelpfad	q3 7306,20635 7316,20623 7321,20588 7415,20617
 # 
 #: by: Fil
-(Frithjofstr. - Rotkardinalweg): schmal, selten Fußgänger	q2 12696,19334 12543,19760 12552,19765
+#: confirmed_by: srt (bis auf den südlichen Teil, der breit genug ist)
+(Frithjofstr. - Rotkardinalweg): schmal, selten Fußgänger	q2 12650,19462 12543,19760 12552,19765

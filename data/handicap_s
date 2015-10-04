@@ -217,7 +217,8 @@ Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5465,8511 5417,8519 5347,
 (S-Bahnunterführung Wartenberg): Rampe	q3 17068,18736 17086,18719 17077,18744
 (S-Bahnunterführung Wartenberg): Fußgänger	q1 17077,18744 17109,18772
 (Weg zwischen S-Hohenschönhausen und S-Wartenberg): eng und teilweise kurvenreich	q1 17557,17999 17267,18343 17235,18352 17159,18375 17102,18490 17040,18571 17002,18578 16939,18652
-(Weg zwischen S-Hohenschönhausen und S-Wartenberg): eng und teilweise kurvenreich	q1 17159,18375 17209,18335
+(Weg zwischen S-Hohenschönhausen und S-Wartenberg): eng und teilweise kurvenreich	q1 17159,18375 17206,18332
+(Weg im Wustrower Park): eng und teilweise kurvenreich	q1 17235,18352 17206,18332
 Bernburger Treppe: Rampen	q4 8536,11063 8512,11069 8516,11086 8484,11097 8478,11080 8454,11086
 Virchowstr. (Volkspark Friedrichshain): Fußgänger	q1 12876,13440 12826,13526 12802,13584 12784,13610 12766,13621 12743,13634 12709,13691 12707,13706
 (Buckower Ring - Cecilienstr.): Fußgänger, eng, einige Regenablaufrinnen	q2 21879,13515 21894,13514 21920,13680
@@ -1386,7 +1387,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
 Insel-Rügen-Weg: eng	q2 10967,17671 10978,17589 11064,17599
-(Weg im Wustrower Park): einige Fußgänger, eng	q2 17235,18352 17209,18335 17162,18304 17087,18434 17102,18490 17021,18663
+(Weg im Wustrower Park): einige Fußgänger, eng	q2 17206,18332 17162,18304 17087,18434 17102,18490 17021,18663
 (an den Schönhauser Allee Arcaden): Fußgänger	q3 11150,15908 11070,15944 11086,15984
 (an den Schönhauser Allee Arcaden): Fußgänger	q4 11086,15984 10975,16010
 Neue Steinmetzstr.: Bordstein	q2 7625,9376 7628,9365
@@ -1497,6 +1498,18 @@ Sigmaringer Str.: ein Moabiter Kissen	q0 4700,9179 4715,8977
 (Rummelsburger Ufer - Hauptstr.): einige Fußgänger	q1 15249,10564 15307,10701
 Lepsiusstr.: Bordstein	q2 4913,6538 4901,6505
 (Schubertstr. - Dahlemer Weg): Rampe	q2 2289,3500 2278,3514 2270,3496 2270,3519 2262,3501 2253,3505
+Mirabellenblütenweg: schmale Straße	q1 11308,21550 11296,21456
+Mirabellenblütenweg: schmale Straße	q1 11249,21463 11296,21456 11397,21440
+Mirabellenblütenweg: einige Bodenschwellen, schmale Straße	q2 11399,21450 11509,21439
+Apfelblütenweg: schmale Straße	q1 11408,21537 11399,21450 11397,21440
+Apfelblütenweg: einige Bodenschwellen, schmale Straße	q2 11397,21440 11387,21361
+Apfelblütenweg: schmale Straße	q1 11387,21361 11389,21310
+Pflaumenblütenweg: schmale Straße	q1 11387,21361 11497,21361 11650,21342 11656,21309
+Pflaumenblütenweg: schmale Straße	q1 11503,21406 11497,21361 11502,21292
+Birnenblütenweg: schmale Straße	q1 11437,21283 11502,21292 11656,21309 11783,21324
+Veilchenblütenweg: schmale Straße	q1 11534,21229 11664,21246 11757,21253
+Veilchenblütenweg: schmale Straße	q1 11664,21246 11656,21309
+(Am Marderberg): eng	q1 14977,19129 14328,19527 13477,20064
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schüler	q2 7242,8586 7288,8635
@@ -2304,7 +2317,7 @@ Narzissenpfad: enge Straße	q0 -7387,14951 -7523,14969
 (Lankegrabenpark): langsam befahrbar, eng, Hundebetrieb	q3 7365,3199 7409,3331 7458,3451
 Verlängerte Schulzendorfer Str.: Fußgänger	q1 2150,22464 2015,22435 1834,22421 1583,22376 1505,22368 1411,22365 1266,22401 1094,22504 670,22646 636,22658 587,22646 520,22624 439,22620 289,22618 194,22547
 (Heinz-Brandt-Str./Mauerweg - Uhlandstr.): Trampelpfad	q3 7306,20635 7316,20623 7321,20588 7415,20617
-(Frithjofstr. - Rotkardinalweg): schmal, selten Fußgänger	q2 12696,19334 12543,19760 12552,19765
+(Frithjofstr. - Rotkardinalweg): schmal, selten Fußgänger	q2 12650,19462 12543,19760 12552,19765
 Eichborndamm: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 4240,19019 4232,18981
 Archibaldweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 15674,10851 15870,10938
 Richterstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 22092,999 22120,886
@@ -2416,7 +2429,7 @@ Ludolfinger Platz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp;
 Sewanstr. - Balatonstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich): gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 18377,9366 18490,9387
 Neue Bahnhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
-Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9996,12401 9994,12368 9943,12364 9961,12273
+Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9996,12401 9994,12368 9943,12364
 (Los-Angeles-Platz): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 5669,10704 5822,10609
 Westendallee: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 461,11455 425,11455 395,11486 329,11696 323,11801
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8376,6579 -8354,6590
