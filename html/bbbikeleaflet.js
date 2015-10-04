@@ -635,6 +635,7 @@ function setFeatureListContent(listHtml) {
 	mapDiv.style.height = (100-textHeightPercentage).toString() + '%';
 	mapDiv.style.width = '100%';
     }
+    map.invalidateSize(true);
 }
 
 function showMarker(id) {
