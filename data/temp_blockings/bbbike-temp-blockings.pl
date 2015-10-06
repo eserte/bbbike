@@ -20557,8 +20557,8 @@ userdel	2::temp 11770,10774 11841,10747 11897,10887 11958,11045
 EOF
      },
      { from  => $isodate2epoch->("2015-07-24 00:00:00"), # 1339907400, # 2012-06-17 06:30
-       until => $isodate2epoch->("2015-10-05 17:00:00"), # 1342191600, # 2012-07-13 17:00
-       text  => 'Friedrichstr. (Mitte): Baustelle, Fahrbahn zwischen Mittelstr. und Unter den Linden Richtung gesperrt (bis 05.10.2015)',
+       until => $isodate2epoch->("2015-10-26 17:00:00"), # 1342191600, # 2012-07-13 17:00
+       text  => 'Friedrichstr. (Mitte): Baustelle, Fahrbahn zwischen Mittelstr. und Unter den Linden Richtung gesperrt (bis 26.10.2015)',
        type  => 'handicap',
        source_id => 'IM_025755',
        data  => <<EOF,
@@ -24579,6 +24579,15 @@ EOF
        source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.378909.php',
        data  => <<EOF,
 userdel	q4::inwork 4779,24321 4777,24342 4656,24379 4566,24389 4457,24400 4340,24413 4233,24459 4111,24488
+EOF
+     },
+     { from  => 1444032000, # 2015-10-05 10:00
+       until => 1447430400, # 2015-11-13 17:00
+       text  => 'Albrechtstr.: Baustelle zwischen Filandastr. und Schützenstr., Fahrbahn Richtung Schloßstr. gesperrt, 06.10.2015 10:00 Uhr bis 13.11.2015 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_026452',
+       data  => <<EOF,
+userdel	q4::inwork; 5527,5217 5416,5289 5397,5302 5382,5312 5268,5386 5183,5437
 EOF
      },
     );

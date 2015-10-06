@@ -2590,7 +2590,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: last_checked ^^^
 #: XXX ^^^
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (südlicher Bereich) vvv
-#: last_checked: 2015-09-19 vvv
+#: last_checked: 2015-10-06 vvv
 #: check_frequency: 30d vvv
 # REMOVED (aufgehoben) ---	F::inwork 9063,12051
 	F::inwork 9270,12086
@@ -2601,7 +2601,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #
 #: XXX temporäre Ampel (wegen gesperrten Gehweg?), Ampel ist eigentlich etwas weiter westlich
 #: XXX eigentlich gibt es sogar zwei Fußgängerampeln
-#: last_checked: 2015-10-02
+#: last_checked: 2015-10-06
 #: check_frequency: 60d
 	F::inwork 9812,12145
 # 
@@ -2731,7 +2731,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: SONNENALLEE-2014 vvv
 #: osm_watch: way id="260062339" version="5"
-#: last_checked: 2015-07-17 vvv
+#: last_checked: 2015-10-05 vvv
 #: check_frequency: 90d vvv
 #: note: Radfahrer in Richtung Südosten müssen die Seite wechseln, hier Anforderungsampel
 	X::inwork 14174,7505
@@ -2794,7 +2794,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: FISCHERINSEL-2015 vvv
 #: source_id: IM_024012 vvv
-#: last_checked: 2015-09-19 vvv
+#: last_checked: 2015-10-06 vvv
 #: next_check: 2015-12-20 vvv
 	F 10703,11837
 	F 10656,11887
@@ -2963,7 +2963,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -12655,-1714
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
 #: next_check_id: KIEFHOLZ-2015
-#: last_checked: 2015-09-06
+#: last_checked: 2015-10-05
 #: check_frequency: 60d
 	X::inwork 14151,8967
 ################################################################################

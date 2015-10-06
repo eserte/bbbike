@@ -630,26 +630,7 @@ userdel	2 8546,12279 8570,12302 8573,12325 8540,12420
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.ms-event-agentur.com/seite22.html?date=20150404
-userdel	2::temp 7006,9292 7022,9211 7044,9163 7107,9030
-',
-         'from' => 1443776400,
-         'id' => 731,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              3,
-                              'months',
-                              10
-                            ]
-                          ],
-         'text' => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 03.10.2015 bis 04.10.2015',
-         'type' => 'gesperrt',
-         'until' => 1443995999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2649,9 +2630,9 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'from' => 1437688800,
          'id' => 2348,
          'source_id' => 'IM_025755',
-         'text' => 'Friedrichstr. (Mitte): Baustelle, Fahrbahn zwischen Mittelstr. und Unter den Linden Richtung gesperrt (bis 05.10.2015)',
+         'text' => 'Friedrichstr. (Mitte): Baustelle, Fahrbahn zwischen Mittelstr. und Unter den Linden Richtung gesperrt (bis 26.10.2015)',
          'type' => 'handicap',
-         'until' => 1444057200
+         'until' => 1445875200
        },
        {
          'data' => '	q4::temp:clock -3941,12545 -3941,12376
@@ -3653,6 +3634,16 @@ userdel	2::inwork -1303,2003 -1591,1861
          'text' => 'Veltheimstraße: Bauarbeiten zwischen Solquellstraße und Schildower Straße, Fahrbahn gesperrt, voraussichtlich vom 01.10.2015 bis 06.11.2015 ',
          'type' => 'handicap',
          'until' => 1446850800
+       },
+       {
+         'data' => 'userdel	q4::inwork; 5527,5217 5416,5289 5397,5302 5382,5312 5268,5386 5183,5437
+',
+         'from' => 1444032000,
+         'id' => 2746,
+         'source_id' => 'IM_026452',
+         'text' => 'Albrechtstr.: Baustelle zwischen Filandastr. und Schützenstr., Fahrbahn Richtung Schloßstr. gesperrt, 06.10.2015 10:00 Uhr bis 13.11.2015 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1447430400
        }
      
 );
