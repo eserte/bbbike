@@ -225,7 +225,7 @@ my %file_needs_splitlonglines = map { ($_,1) } qw(strassen landstrassen landstra
     );
 
 # see http://www.mail-archive.com/talk@openstreetmap.org/msg06041.html
-# XXX does not match very well with the tracks around Baska Voda --- maybe grade1 should match Q1 at most?
+# and http://wiki.openstreetmap.org/wiki/Key:tracktype
 my %grade_to_Q = (1 => "Q0",
 		  2 => "Q1",
 		  3 => "Q2",
