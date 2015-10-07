@@ -177,7 +177,8 @@ for my $cgiurl (@urls) {
 	my $qs = get_qs($from, $to);
 	my $url = "$cgiurl?$qs";
 	my $res = $ua->get($url);
-	ok($res->is_success, "Index $inx, $from - $to");
+	ok($res->is_success, "Index $inx, $from - $to")
+	    or diag $res->as_string;
 	my $got = Load($res->decoded_content);
 	my $comments = [ map {
 	    +{ map { ($_,1) } split /;\s+/, $_->{Comment} };
