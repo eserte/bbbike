@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Berlin_DE.pm,v 1.30 2008/10/06 19:07:34 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000,2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2006,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -249,6 +248,9 @@ sub parse_street_type_nr {
     } elsif ($strname =~ m{^R1($|\s)}) {
 	$type = 'R1';
 	$image = 'R1.png';
+    } elsif ($strname =~ m{dahme.*radweg}i) {
+	$type = 'Dhm';
+	$image = 'dahme_radweg.png';
     }
     if (defined $type) {
 	$do_round = 1;
