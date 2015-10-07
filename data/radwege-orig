@@ -963,7 +963,7 @@ neues Verbundsteinpflaster	RW1; 12694,2517 12694,2544 12694,2570 12693,2746 1269
 	RW;RW 12694,2517 12703,2454
 die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 13745,12118 13785,12292
 #: next_check_id: WARSCHAUER-2014 vvv
-#: last_checked: 2015-10-04 vvv
+#: last_checked: 2015-10-07 vvv
 #: check_frequency: 3d vvv
 #: by: http://www.umbau-warschauer-strasse.de/images/bauinfos/Infoblatt_August_15-2.pdf
 #: XXX Radspur (RW4) ist wegen Bauarbeiten aufgehoben, später wahrscheinlich wieder hergestellt
@@ -4669,3 +4669,4 @@ asphaltiert	RW1; 13565,11492 13588,11490
 	RW6;RW6 7930,23227 8032,23000 8118,22809 8130,22772
 Radweg nur aufgemalt	RW1;RW1 1248,2600 1327,2401 1373,2285 1423,2264 1493,2247 1508,2243 1603,2220 1710,2189 1812,2160 1945,2127
 Radweg ist angedeutet	RW0; 638,2637 272,2548
+Busspur gilt Mo-Fr 7-19 Uhr	RW5; 13521,8023 13474,8060

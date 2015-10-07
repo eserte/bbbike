@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2015-09-30
+#: last_checked: 2015-10-07
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -215,7 +215,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2015-10-06
+#: last_checked: 2015-10-07
 #: check_frequency: 7d
 Warschauer Str: Radspuren in Bau	?::inwork 13603,11538 13651,11731 13696,11920 13745,12118
 # 
@@ -1217,11 +1217,10 @@ Waldstr.: Umgestaltung, wird sich hier etwas ändern?	? 5443,14028 5417,13817 539
 Hauptstr.: wie wirkt sich die provisorische Verkehrsführung auf Radfahrer aus (Qualität, Stau?)	? 14906,10820 15261,10738
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1509/nachricht5761.html vvv
-#: last_checked: 2015-10-01 (Markierung existiert, Schilder noch nicht) vvv
-#: check_frequency: 3d vvv
+#: last_checked: 2015-10-07 (Markierungen existieren, Schilder noch nicht) vvv
+#: check_frequency: 4d vvv
 Sonnenallee: Verlängerung der Busspur	?; 12742,8635 12630,8722 12483,8834 12438,8859 12320,8927 12242,8972
 Sonnenallee: Verlängerung der Busspur	?; 13010,8422 12925,8494
-Sonnenallee: Verlängerung der Busspur	?; 13521,8023 13474,8060
 #: check_frequency ^^^
 #: last_checked ^^^
 #: by: ^^^
