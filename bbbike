@@ -22354,10 +22354,12 @@ sub balloon_info_from_all_tags {
 		$major_item_seen++;
 	    } else {
 		if (($tags[2]||'') =~ m{^e-(CS|img)$}) { # comm-ferry
+		    # XXX This regexp should be named or a function
 		    if ($label =~ m{^(?:.*)?:\s*(.*)}) {
 			$label = $1;
 		    }
 		} elsif ($tags[0] =~ m{^(qs|ql|hs|hl)$}) {
+		    # XXX This regexp should be named or a function
 		    if ($label =~ m{^(?:.*)?:\s*(.*)}) {
 			$label = $1;
 		    }
