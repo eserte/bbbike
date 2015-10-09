@@ -66,13 +66,28 @@ for my $_url (@urls) {
 	like(scalar <$sock>, qr/200 OK/, "single GET okay ($_url)");
     }
 
-    {
+    TRY: for my $try (1..2) {
 	my $sock = $get_sock->();
 	print $sock "GET $path HTTP/1.1\r\n$ua_string\r\nHost: $host:$port\r\n\r\nGET $path HTTP/1.1\r\n$ua_string\r\nHost: $host:$port\r\nConnection: close\r\n\r\n";
 
 	my $rest;
 	read $sock,$rest,15000; # 15000 is enough to get first request and header of second...
-	like($rest, qr/200 OK.*200 OK/s, "double GET okay (http pipelining, $_url)");
+
+	my $two_responses_qr = qr/200 OK.*200 OK/s;
+	if ($rest =~ $two_responses_qr || $try == 2) {
+	    like($rest, $two_responses_qr, "double GET okay (http pipelining, $_url)");
+	    last TRY;
+	} else {
+	    # http://www-archive.mozilla.org/projects/netlib/http/pipelining-faq.html
+	    # says: "If a connection fails or is dropped by the server
+	    # partway into downloading a pipelined response, the web
+	    # browser must be capable of restarting the lost
+	    # requests." A lost connection may happen if an Apache is
+	    # gracefully restarted (e.g. due to logrotation). So we
+	    # immediately retry the request.
+	    diag("First pipeline request (partially) failed, retry once");
+	    sleep 1;
+	}
     }
 }
 
