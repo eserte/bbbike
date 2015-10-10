@@ -1270,6 +1270,7 @@ Berliner Chaussee	1 19282,-3928 19460,-3818 19539,-3810 19601,-3714
 Mehrow - Trappenfelde	1 24743,18606 24709,18578
 Mehrow - Trappenfelde	1 24696,18606 24743,18606
 Ohmstr. (Schwanebeck-West)	1 18039,24940 18127,25162
+Sankt Petri	1s:q3 -46334,-150 -46304,-19
 ######################################################################
 # elsewhere not in Brandenburg
 B104: Mittelstreifen nicht überquerbar	3nocross -974,128015 -724,127995 6,127935 298,127911
@@ -2617,6 +2618,10 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: SCHOENEBERGERSCHLEIFE-2015
+#: XXX schon eröffnet?
+(Bautzener Str. - Südkreuz): in Bau	2::inwork 8204,9001 8200,8920 7998,8317
+# 
 #: next_check_id: STEGLITZPARK-2015 vvv
 #: last_checked: 2015-09-27 vvv
 #: check_frequency: 180d vvv
@@ -3000,7 +3005,7 @@ Nordufer: Neubau	2:inwork 7427,14648 7212,14738
 # REMOVED (offensichtlich wieder passierbar) --- #: last_checked: 2013-06-04 --- #: next_check: 2013-08-01 --- #: XXX siehe auch Eintrag zur Friedrichsbrücke in handicap_s-orig --- Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,12777 10105,12855
 # 
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)
-#: last_checked: 2015-08-10
+#: last_checked: 2015-10-10
 #: check_frequency: 120d
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
 # 
@@ -3109,7 +3114,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2015-09-17
+#: last_checked: 2015-10-10
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

@@ -941,6 +941,7 @@ Berliner Chaussee	1 19282,-3928 19460,-3818 19539,-3810 19601,-3714
 Mehrow - Trappenfelde	1 24743,18606 24709,18578
 Mehrow - Trappenfelde	1 24696,18606 24743,18606
 Ohmstr. (Schwanebeck-West)	1 18039,24940 18127,25162
+Sankt Petri	1s -46334,-150 -46304,-19
 Mittelstreifen nicht überquerbar	3nocross::ignrte -974,128015 -724,127995 6,127935 298,127911
 B104: Neubrandenburg -> Feldstr.: Mittelstreifen nicht überquerbar	3::igndisp -974,128015 -724,127995 -719,128043
 Feldstr. -> Pasewalk: Mittelstreifen nicht überquerbar	3::igndisp -719,128043 -724,127995 6,127935
@@ -2781,6 +2782,7 @@ versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
 Drängelgitter	BNP:3:-240 31665,48997
+(Bautzener Str. - Südkreuz): in Bau	2::inwork 8204,9001 8200,8920 7998,8317
 SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2408,1144 2352,1267
 SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2336,1111 2408,1144 2504,1186
 Fünf Morgen: Bauarbeiten, gesperrt. Wird es eine Anbindung an den Hüttenweg geben?	2::inwork 1437,5015 1483,5161
