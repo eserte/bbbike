@@ -296,8 +296,8 @@ bbbikemap-for-garmin-transfer:
 	@echo "Set the garmin device into USB mass storage mode."
 	@echo -n "Type y to copy the files to /mnt/garmin: "
 	@read yn && [ "$$yn" = "y" ]
-	@echo "Waiting max. 30s for /dev/da1 to appear"
-	for i in `seq 30`; do test -e /dev/da1 && break; sleep 1; done
+	@echo "Waiting max. 30s for /dev/da1s1 to appear"
+	for i in `seq 30`; do test -e /dev/da1s1 && break; sleep 1; done
 	@echo "Ready to mount and sync"
 	mount /mnt/garmin && rsync -vP ${BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES} /mnt/garmin/garmin/ && umount /mnt/garmin
 
