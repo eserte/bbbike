@@ -24214,11 +24214,12 @@ EOF
 #: XXX die Qualität wird nach den Bauarbeiten vermutlich besser sein vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.297071.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.295591.php
-#: last_checked: 2015-09-18 vvv
+#: last_checked: 2015-10-09 vvv
 #: check_frequency: 10d vvv
 userdel	2::inwork 14318,9688 14443,9731
 # REMOVED --- userdel	2::inwork 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
-userdel	2::inwork 14575,9648 14645,9710 14697,9726 14910,9643 15052,9584 15174,9554 15321,9448 15432,9322 15453,9259
+userdel	2::inwork 14575,9648 14645,9710 14697,9726
+userdel	2::inwork 14674,9764 14697,9726 14910,9643 15052,9584 15174,9554 15321,9448 15432,9322 15453,9259
 # REMOVED --- userdel	2::inwork 15453,9259 15513,9144 15527,9096 15638,9020
 # REMOVED --- userdel	2::inwork 14443,9731 14361,9772
 # REMOVED --- userdel	2::inwork 15630,8979 15638,9020 15778,8990
@@ -24421,7 +24422,7 @@ EOF
 #: by: wosch vvv
 #: confirmed_by: srt vvv
 #: XXX 30m zu jeder Seite der Kreuzung sind gesperrt; wann sind die Bauarbeiten fertig? vvv
-#: last_checked: 2015-09-28 vvv
+#: last_checked: 2015-10-09 vvv
 #: check_frequency: 7d vvv
 userdel	q3::inwork 12761,9190 12907,9073 13048,8956
 userdel	q3::inwork 12907,9073 12836,8980

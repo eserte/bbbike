@@ -222,7 +222,7 @@ Harzer Str.: Kopfsteinpflaster	Q2 12871,9356 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2015-07-21
+#: last_checked: 2015-10-09
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13606,9578 13455,9711 13251,9829
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15021,11152 15102,11120
@@ -3317,6 +3317,9 @@ Joseph-Schmidt-Str.: Asphalt	Q0 15260,6310 15255,6531 15275,6554
 #: note: Stefan (moehres) meint Asphalt, Q1
 Johanna-Tesch-Str.: Beton	Q0- 19715,5185 19743,5271 19756,5313 19928,5365 20030,5334 19998,5226 19930,5247 19919,5214 19743,5271
 Müggelpark: Kleinpflastersteine	Q1 25658,4619 25695,4714
+#: XXX wird hier vielleicht saniert?
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20151009
+#: next_check: 2015-09-30
 (Müggelturm - Müggelheim): Asphalt, teilweise mit Wurzelschäden	Q1+ 24973,1690 25626,1314 26287,1034 26425,942 26682,769 26783,721 27021,721 27151,729 27202,770
 Ludwigshöheweg: Asphalt	Q0 27202,770 27263,839 27428,1026 27514,1129 27568,1188 27615,1245 27741,1394
 Grünstadter Weg: Asphalt	Q0 27074,863 27202,770 27410,590 27667,368
@@ -12057,6 +12060,9 @@ Mörikestr.: guter Asphalt	Q0 16060,6850 15946,6722 15830,6579
 #: corrected_by: srt (Q2 -> Q0-)
 Heidekampweg: Asphalt mit leichten Wellen	Q0- 15724,6229 15740,6261 15715,6394 15696,6507
 #: corrected_by: srt (Q2 -> Q1-)
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20151009
+#: XXX Deckenerneuerung schon erfolgt?
+#: add_fragezeichen: ist die Qualität nach den Bauarbeiten besser geworden?
 Heidekampweg: holpriger Asphalt	Q1- 15696,6507 15672,6663
 #: by: ^^^
 # 
@@ -12896,7 +12902,8 @@ Wolzogenstr.: akzeptables Kopfsteinpflaster	Q2 -870,2737 -928,2900 -987,3163
 # REMOVED (bestätigt) #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/beschreibung_anhaltinerstrasse.pdf
 #: corrected_by: srt (früher schlechtes Kopfsteinpflaster)
 Anhaltinerstr.: Asphaltstreifen	Q0 -155,2658 37,2562
-#: XXX hier wird auch asphaltiert?
+#: XXX hier wird auch asphaltiert? -> ja, Planungen existieren
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/beschreibung_anhaltinerstrasse.pdf
 #: osm_watch: way id="22724003" version="16"
 #: last_checked: 2015-09-27 vvv
 #: check_frequency: 100d vvv
@@ -13840,7 +13847,7 @@ Tile-Brügge-Weg: Asphalt/Beton mit Schäden	Q2+ 2380,20465 2473,20486 2595,20514
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20121218.0805.379437.html (Bauarbeiten bis Mitte 2015)
 #: by: http://www.berlin.de/ba-reinickendorf/org/strassenbau/baumassnahmen.html?date=20130816 (Bauarbeiten bis Ende 2015)
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129969.php
-#: next_check: 2015-12-01
+#: next_check: 2015-12-18
 Tile-Brügge-Weg: Asphalt/Beton mit Schäden	Q2+ 2595,20514 2793,20550 2968,20584 2982,20587 3119,20612 3196,20627 3214,20629 3287,20739 3306,20773
 #: confirmed_by ^^^
 Eschachstr.: Verbundsteinpflaster	Q1 2380,20465 2415,20380 2440,20294
@@ -17191,12 +17198,14 @@ Erieseering: guter Asphalt	Q0 18184,10065 18220,10051 18287,10045 18296,10027
 #: by: Kerstin Post: vvv
 #: XXX Neugestaltung der Mittelbruchzeile (mit Radweg und Mischverkehrsfläche, evtl. bessere Qualität) bis voraussichtlich Ende 2015 vvv
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129488.php vvv
-#: next_check: 2015-12-31 vvv
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20151009 vvv
+#: next_check: 2015-12-15 vvv
 #: confirmed_by: srt
 Mittelbruchzeile: Kopfsteinpflaster	Q2 7491,17793 7557,17809
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
 Mittelbruchzeile: Asphalt mit Schäden	Q1 7557,17809 7659,17826 7789,17853
 #: next_check ^^^
+#: by: ^^^
 #: by: ^^^
 #: XXX ^^^
 #: corrected_by: srt (extrem schlechter Asphalt -> Asphalt, nach den Bauarbeiten)
@@ -17961,6 +17970,9 @@ Im Vogtland: gutes Verbundsteinpflaster	Q1+ 6727,23287 6684,23308 6657,23334 660
 #: note: anonymer Eintrag meint "gutes Kopfsteinpflaster", aber die Straße erscheint auf dem Luftbild anders
 #: note: annette.kretschmer meint "schlechtes Kopfsteinpflaster Q3" von Waldstr. bis Genossenschaftsstr., aber sie führt nur bis zur Hackenbergstr.?
 #: corrected_by: srt (Q2 -> Q2-)
+#: XXX wird hier saniert werden (oder ein anderer Teil der Friedlander Str.?)
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20151009 (Sanierung?)
+#: next_check: 2015-11-30
 Friedlander Str.: Kopfsteinpflaster	Q2- 20253,4034 20305,4096 20312,4123 20410,4192 20540,4285
 #: corrected_by: srt (mäßiger Asphalt, Q1 -> Asphalt, Q0)
 Friedlander Str.: Asphalt	Q0 20540,4285 20574,4317 20594,4342 20614,4381 20684,4596 20716,4691 20765,4839 20852,5106
@@ -20219,6 +20231,9 @@ Steigerwaldstr.: Beton	Q0 -4710,15530 -4701,15563 -4639,15726 -4655,15803 -4656,
 #: confirmed_by: srt
 Frauenlobstr.: guter Asphalt	Q0 15697,6688 15830,6579 15954,6481 16043,6414
 #: corrected_by: srt (guter Asphalt -> )
+#: XXX wird hier die Fahrbahn saniert? Sind die Schäden dann weg?
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20151009
+#: next_check: 2015-11-30
 Frauenlobstr.: guter Asphalt, einige leichte Schäden	Q0- 16043,6414 16220,6277
 #: by ^^^
 # 
@@ -20596,7 +20611,8 @@ Langenauer Weg: Verbundsteinpflaster	Q1 -1719,23372 -1617,23624
 #: corrected_by: srt (guter Asphalt -> ...)
 #: XXX Instandsetzung vom 14. September 2015 bis zum 16. Oktober 2015 geplant, danach "Natursteinpflasterung"
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.362889.php
-#: next_check: 2015-10-16
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20151009
+#: next_check: 2015-10-23
 Dinkelsbühler Steig: Asphalt mit starken Schäden	Q2 2615,25225 2649,25170 2694,25132
 #: corrected_by: srt (guter Asphalt -> ...)
 Dinkelsbühler Steig: Kleinsteinpflaster	Q2+ 2694,25132 2775,25092 2816,25037
@@ -22779,6 +22795,9 @@ Pansfelder Weg: guter Asphalt	Q0 7297,-519 7384,-387 7536,-139
 #: by: Wilfried Spang:
 #: note: "enge Straße", aber q0
 #: confirmed_by: srt
+#: XXX Instandsetzungsarbeiten Fahrbahn
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20151009
+#: next_check: 2016-06-30
 Beyschlagstr.: mäßiger Asphalt	Q1- 408,22184 184,22257 5,22384 21,22545
 # 
 #: by: epha: vvv

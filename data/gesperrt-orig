@@ -2901,6 +2901,7 @@ Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Du
 # REMOVED --- #: next_check_id: INVALIDEN-2014 vvv --- #: last_checked: 2015-08-05 vvv --- #: next_check: 2015-05-31 vvv --- Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 19011,14019 9085,13919 8935,13844 --- Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9011,14019 9085,13919 9151,13941 --- Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 9151,13941 9085,13919 9011,14019 --- Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 8935,13844 9085,13919 9011,14019 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
+#: osm_watch: way id="305153174" version="1"
 #: last_checked: 2015-10-02 vvv
 #: check_frequency: 90d vvv
 Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10008,12274 9994,12368
@@ -3012,6 +3013,7 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in handicap_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0194-oberwallstrae-werderscher-markt.html
+#: osm_watch: way id="66071370" version="4"
 #: last_checked: 2015-07-15
 #: check_frequency: 100d
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9898,12161 9882,12259
