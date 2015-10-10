@@ -14187,6 +14187,8 @@ sub show_info {
 		$name =~ s{\[.*\]}{}g; # remove special [...] parts
 		$name =~ s{:\s+.*}{}g; # also remove everything after ":"
 		($name, my @cityparts) = Strasse::split_street_citypart($name);
+		# XXX instead using the $outside_berlin hack it's probably
+		# better to use something like outside_berlin() in bbbike.cgi
 		my $common_q = ($outside_berlin ? '' : qq{Berliner }) .
 		    qq{"$name"} . (@cityparts ? " ".join(" ",@cityparts) : "");
 		$url        = $google_url . CGI->new({ 'q' => qq{site:de.wikipedia.org $common_q} })->query_string;
