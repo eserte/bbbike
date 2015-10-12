@@ -21,7 +21,7 @@ Dˆringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,112
 #: last_checked ^^^
 # 
 #: XXX laut Schild der Wasserbetriebe bis Oktober 2015, laut Fritz bis November 2015
-#: last_checked: 2015-10-06 vvv
+#: last_checked: 2015-10-12 vvv
 #: next_check: 2015-11-22 vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
@@ -1892,7 +1892,8 @@ Springpfuhlpark: Fuﬂg‰nger	q2 19524,14474 19534,14459 19535,14448 19545,14290 19
 (Geiﬂenweide - Blenheimstr./B‰rensteinstr.): Fuﬂg‰nger	q1 21143,14803 21211,15009 21261,15153 21260,15209
 (Geiﬂenweide - Blenheimstr./B‰rensteinstr.): Fuﬂg‰nger, Einkaufszeile	q2 21260,15209 21263,15291
 (Am Rosengarten - L¸tztalweg): sehr eng	q4 18834,12228 18867,12265 18917,12271
-D¸rerplatz: einige Fuﬂg‰nger	q1 6243,7033 6275,7004
+#: XXX_prog BS an der Ostseite (oder gab es hier irgendwo eine Absenkung), ansonsten q1
+D¸rerplatz: einige Fuﬂg‰nger, Bordstein	q2 6243,7033 6275,7004
 Straﬂe 17: kurze Rampe	q3 7307,7425 7307,7457
 #: note: es gibt an der Baustraﬂe (?) noch zwei sehr weite Dr‰ngelgitter, die kaum eine Beeintr‰chtigung darstellen
 (Lortzingstr. - Mauerpark): einige Fuﬂg‰nger	q1 10038,15418 10185,15487
@@ -2434,8 +2435,8 @@ Gritznerstr.: enge Straﬂe	q1 4312,5889 4370,6052 4414,6134 4430,6165 4472,6242 4
 #: by: Angela
 Im Jagen: Fuﬂg‰nger, Hundeauslaufgebiet	q1 905,6631 909,6584 1057,6461 1375,6138
 #: by: Patrik Marschalik vvv
-Worpsweder Str.: eng mit ein- und ausparkenden Autos	q1 6191,4923 6202,5163
-Wilseder Str.: eng mit ein- und ausparkenden Autos	q1 6295,5158 6288,4906
+Worpsweder Str.: eng mit ein- und ausparkenden Autos	q1 6182,4931 6202,5163
+Wilseder Str.: eng mit ein- und ausparkenden Autos	q1 6295,5158 6276,4915
 H¸nensteig: Fuﬂg‰nger	q2 6395,5154 6405,5238 6108,5253
 #: by: ^^^
 #: by: Thomas (dobr@...) vvv
@@ -3295,7 +3296,7 @@ Simpsonweg: enge Straﬂe	q1 10092,-669 9937,-693 9913,-705 9899,-732 9907,-812 98
 #: by: where_are_you_between:
 (Weg am Heidekampgraben - Kiefholzstr., entlang der S-Bahn): teilweise eng/un¸bersichtlich	q1 15388,7228 15422,7265 15468,7291 15579,7316 15609,7347
 #: by: Norbert Rupsch
-Immenweg: eng (einspurig)	q1 6744,4983 6419,5048 6383,4890
+Immenweg: eng (einspurig)	q1 6744,4983 6419,5048 6385,4896
 #: by: Ralf Pilgrim:
 #: corrected_by: srt/policy (q2 -> q1)
 Albtalweg: enge Straﬂe	q1 5368,22669 5338,22753 5297,22830 5243,22896

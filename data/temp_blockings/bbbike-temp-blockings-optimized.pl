@@ -632,7 +632,27 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 11329,12497 11209,12430
+userdel	2::temp 11209,12430 11273,12301
+userdel	2::temp 11273,12301 11355,12331
+',
+         'from' => 1447110000,
+         'id' => 1988,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              10,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr. und Dircksenstr.), von Mitte November 2015 bis Ende Dezember 2015',
+         'type' => 'gesperrt',
+         'until' => 1451516399
+       },
        {
          'data' => 'userdel	2::temp 9536,11922 9666,11935
 userdel	2::temp 9524,12010 9656,12021
@@ -2114,14 +2134,37 @@ userdel	2::inwork -1303,2003 -1591,1861
          'until' => 1446850800
        },
        {
-         'data' => 'userdel	q4::inwork; 5527,5217 5416,5289 5397,5302 5382,5312 5268,5386 5183,5437
+         'data' => '# REMOVED (hier keine Sperrung) --- userdel	q4::inwork; 5527,5217 5416,5289 5397,5302 5382,5312
+userdel	q4::inwork; 5382,5312 5268,5386 5183,5437 5088,5495
 ',
          'from' => 1444032000,
          'id' => 2746,
          'source_id' => 'IM_026452',
-         'text' => 'Albrechtstr.: Baustelle zwischen Filandastr. und Schützenstr., Fahrbahn Richtung Schloßstr. gesperrt, 06.10.2015 10:00 Uhr bis 13.11.2015 17:00 Uhr ',
+         'text' => 'Albrechtstr.: Baustelle zwischen Filandastr. und Schützenstr., Fahrbahn Richtung Schloßstr. gesperrt, für Radfahrer umständliche Führung über Gehweg, 06.10.2015 10:00 Uhr bis 13.11.2015 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1447430400
+       },
+       {
+         'data' => '#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2015-10-12
+#: check_frequency: 7d
+userdel	q4::inwork 13369,7307 13322,7294 13150,7254 13043,7234
+',
+         'from' => undef,
+         'id' => 2747,
+         'text' => 'Braunschweiger Str.: Bauarbeiten, Fahrbahn gesperrt, Ende unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => 'userdel	2::inwork 37162,121204 38900,120605
+',
+         'from' => 1444543200,
+         'id' => 2748,
+         'source_id' => 'LS/721-E/15/102',
+         'text' => 'Uckerland: B104: Brückenneubau zwischen Milow und Wilsickow, Straße gesperrt, 12.10.2015 08:00 Uhr bis 30.09.2016 ',
+         'type' => 'gesperrt',
+         'until' => 1475272800
        }
      
 );

@@ -82,7 +82,7 @@ asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9233,8597 9229,8718
 	RW1;RW1 8715,7384 8716,7323 8718,7095 8717,6965 8750,6779 8735,6695
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/sbl_stand_2015_08_24.pdf?start&ts=1440409042&file=sbl_stand_2015_08_24.pdf
 #: XXX Radspuren in Bau, zwischenzeitlich keine Radwege mehr vvv
-#: last_checked: 2015-09-09 vvv
+#: last_checked: 2015-10-12 vvv
 #: next_check: 2015-11-30 vvv
 	RW0;RW1 8735,6695 8722,6656 8707,6537 8697,6455 8680,6322
 	RW1;RW0 8680,6322 8661,6169 8641,5998 8622,5867 8613,5745
@@ -174,7 +174,7 @@ der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflich
 Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430
 gemeinsamer Rad- und Gehweg, einige Schäden im Asphalt	RW2; 14222,10430 14405,10340 14558,10264
 	RW2; 13986,10549 13919,10583 13779,10642 13678,10685 13596,10722
-	RW3; 14103,10489 13986,10549
+	RW4; 14103,10489 13986,10549
 das Radwegschild steht etwa 50 Meter nach der Bossestr.	RW3; 14222,10430 14103,10489
 	RW1; 14558,10264 14405,10340 14222,10430
 	RW1;RW2 13332,10832 13409,11004 13454,11119
@@ -747,9 +747,7 @@ Gehweg für Radfahrer frei	RW1;RW1 5352,7428 5364,7330 5397,7205
 	RW1;RW1 6112,6173 6116,6130
 	RW1;RW 6116,6130 6134,5986
 	RW;RW1 6134,5986 6134,5894
-	RW1;RW1 6134,5894 6134,5800 6115,5302 6114,5284
-	RW1;RW 6114,5284 6108,5253
-	RW;RW1 6108,5253 6094,5171
+	RW1;RW1 6134,5894 6134,5800 6115,5302 6114,5284 6108,5253 6094,5171
 	RW1;RW 6094,5171 6089,5145 6070,5044
 	RW;RW1 6070,5044 6055,4950
 hier in beide Richtungen für Radfahrer aus dem Stadtpark befahrbar	RW2; 6055,4950 6034,4893 6006,4852
@@ -1091,7 +1089,7 @@ die letzten 50 Meter sind benutzungspflichtig	RW1; 18225,7004 18010,7133
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 sind die Radspuren weitgehend aufgehoben (früher RW4;RW4)
-#: last_checked: 2015-10-05
+#: last_checked: 2015-10-12
 #: check_frequency: 60d
 	RW0;RW0 14151,8967 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 15053,7966
@@ -1177,7 +1175,7 @@ Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW5; 6460,8688 6449,8807 6449,8845 6445
 	RW1;RW1 7402,8208 7446,8200 7497,8168 7582,8123 7639,8091 7710,8051 7733,8023
 #: XXX Wilhelm-Kabus-Str.: eventuell wird der Gehweg Richtung Süden für Radfahrer freigegeben
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4159&options=4
-#: last_checked: 2015-09-09
+#: last_checked: 2015-10-12
 #: check_frequency: 90d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
 	RW2;RW4 7717,7879 7717,7830 7696,7771
@@ -1909,8 +1907,8 @@ Busspur gilt immer; Radweg auf den letzten 50 Metern	RW5; 18554,10354 18585,1027
 Radweg endet etwa 60 Meter vor der Kreuzung	RW1; 6651,4843 6827,4806 6847,4802
 	RW1;RW1 6651,4843 6579,4856
 	RW10;RW1 6579,4856 6531,4865
-	RW10;RW0 6531,4865 6383,4890
-# REMOVED (Hinweis von Jörg Feler) ---	RW;RW0 6383,4890 6353,4895 6288,4906 6191,4923 6184,4924 6055,4950
+	RW10;RW0 6531,4865 6385,4896
+# REMOVED (Hinweis von Jörg Feler) ---	RW;RW0 6385,4896 6353,4895 6288,4906 6215,4926 6191,4923 6184,4924 6055,4950
 	RW; 4348,2619 4317,2638 4233,2675 4164,2717
 	RW; 4224,2671 4313,2630 4348,2619
 #: by: rjoop (Busspur Richtung Westen)
@@ -3476,6 +3474,9 @@ Gehweg für Radfahrer frei	RW1; 1345,184 1368,-1 1375,-27 1402,-52 1453,-306
 die letzten 100 Meter sind benutzungspflichtig	RW3; 11289,16423 11019,16465
 #: by: Axel Stojenthin:
 	RW9;RW1 -1538,22800 -2024,22899 -2131,22810 -2165,22794 -2176,22789
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3743
+#: XXX Dürfen Radfahrer auch in der Gegenrichtung auf dem Gehweg fahren?
+Gehweg für Radfahrer frei	RW1; -2504,22626 -2377,22689 -2348,22704 -2263,22748 -2176,22789
 Verbundsteinpflaster	RW1;RW1 7184,19663 7481,19400
 #: by: Philipp Grau:
 	RW6;RW6 10962,103 10903,263 10895,284 10866,364 10827,467 10782,587 10777,605 10726,739 10718,760 10674,882
@@ -4279,8 +4280,7 @@ Verbundsteinpflaster	RW1;RW2 19875,18182 20136,18291 20160,18301
 	RW3; 11338,5992 11257,6015 11160,5990
 	RW4; 11160,5990 11257,6015 11338,5992
 	RW3;RW3 11160,5990 11068,6006 10792,6036 10624,6042 10526,6008
-	RW3;RW4 10526,6008 10404,5969 10339,5948
-	RW3;RW3? 10339,5948 10254,5921
+	RW3;RW4 10526,6008 10404,5969 10339,5948 10254,5921
 	RW6;RW6 15016,1562 15055,1562 15225,1553
 	RW6;RW6 15049,1455 15055,1562
 	RW6;RW6 15245,1459 15217,1463 15117,1456 15049,1455 15033,1455

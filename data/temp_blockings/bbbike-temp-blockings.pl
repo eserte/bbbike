@@ -13488,7 +13488,7 @@ EOF
        text  => 'B 104 Pasewalk - Strasburg zw. Wilsickow und Louisfelde Dammsanierung Vollsperrung 16.03.2009-24.04.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 35808,121116 37210,121086 38889,120566 39344,120804
+userdel	2::inwork 35858,121175 37162,121204 38900,120605 39344,120804
 EOF
      },
      { from  => 1237849200, # 2009-03-24 00:00
@@ -13857,7 +13857,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012235',
        data  => <<EOF,
-userdel	q4::inwork; 6055,4950 6184,4924 6191,4923
+userdel	q4::inwork; 6055,4950 6182,4931 6187,4930
 EOF
      },
      { from  => 1240092000, # 2009-04-19 00:00
@@ -17031,12 +17031,12 @@ EOF
 userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998 24927,-87720
 EOF
      },
-     { from  => $isodate2epoch->("2014-11-11 00:00:00"), # Beginn am 24.11. (voraussichtlich), Aufbauzeit... # 1384350862, # 1352934000, # 1321311600, # PERIODISCH! # früher: 1258045387, # 2009-11-12 18:03
-       until => $isodate2epoch->("2014-12-31 23:59:59"), # Ende am 28.12. (voraussichtlich), Abbauzeit... # 1384350812, # 1352934000, # 1321311600, # PERIODISCH! # früher: 1258045387, # 2009-11-12 18:03
+     { from  => $isodate2epoch->("2015-11-10 00:00:00"), # Beginn am 23.11. (voraussichtlich), Aufbauzeit 13 Tage?... # 1384350862, # 1352934000, # 1321311600, # PERIODISCH! # früher: 1258045387, # 2009-11-12 18:03
+       until => $isodate2epoch->("2015-12-30 23:59:59"), # Ende am 27.12. (voraussichtlich), Abbauzeit 3 Tage?... # 1384350812, # 1352934000, # 1321311600, # PERIODISCH! # früher: 1258045387, # 2009-11-12 18:03
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 11]],
        # außerdem ist der Nordteil der Dircksenstr. Einbahnstraße offen Richtung Süden, aber nicht relevant für das Routing
-       text  => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr. und Dircksenstr.), bis Ende Dezember 2014',
+       text  => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr. und Dircksenstr.), von Mitte November 2015 bis Ende Dezember 2015',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 11329,12497 11209,12430
@@ -24584,11 +24584,32 @@ EOF
      },
      { from  => 1444032000, # 2015-10-05 10:00
        until => 1447430400, # 2015-11-13 17:00
-       text  => 'Albrechtstr.: Baustelle zwischen Filandastr. und Schützenstr., Fahrbahn Richtung Schloßstr. gesperrt, 06.10.2015 10:00 Uhr bis 13.11.2015 17:00 Uhr ',
+       text  => 'Albrechtstr.: Baustelle zwischen Filandastr. und Schützenstr., Fahrbahn Richtung Schloßstr. gesperrt, für Radfahrer umständliche Führung über Gehweg, 06.10.2015 10:00 Uhr bis 13.11.2015 17:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_026452',
        data  => <<EOF,
-userdel	q4::inwork; 5527,5217 5416,5289 5397,5302 5382,5312 5268,5386 5183,5437
+# REMOVED (hier keine Sperrung) --- userdel	q4::inwork; 5527,5217 5416,5289 5397,5302 5382,5312
+userdel	q4::inwork; 5382,5312 5268,5386 5183,5437 5088,5495
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Braunschweiger Str.: Bauarbeiten, Fahrbahn gesperrt, Ende unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2015-10-12
+#: check_frequency: 7d
+userdel	q4::inwork 13369,7307 13322,7294 13150,7254 13043,7234
+EOF
+     },
+     { from  => 1444543200, # 2015-10-11 08:00
+       until => 1475272800, # 2016-10-01 00:00
+       text  => 'Uckerland: B104: Brückenneubau zwischen Milow und Wilsickow, Straße gesperrt, 12.10.2015 08:00 Uhr bis 30.09.2016 ',
+       type  => 'gesperrt',
+       source_id => 'LS/721-E/15/102',
+       data  => <<EOF,
+userdel	2::inwork 37162,121204 38900,120605
 EOF
      },
     );

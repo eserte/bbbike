@@ -618,7 +618,8 @@ Südliche Monbijoubrücke: Kopfsteinpflaster	Q2 9683,12913 9654,12882
 Lüneburger Str.: Kopfsteinpflaster	Q2 7595,12980 7365,12775 7343,12758 7322,12735 7175,12630
 Lüneburger Str.: Asphalt	Q0 7175,12630 7131,12615 7092,12614
 Flensburger Str.: Kopfsteinpflaster	Q2 6309,12678 6400,12662 6516,12650
-Braunschweiger Str.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 13043,7234 13150,7254 13322,7294 13369,7307 13487,7337 13519,7345
+Braunschweiger Str.: Asphalt	Q0 13043,7234 13150,7254 13322,7294 13369,7307
+Braunschweiger Str.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 13369,7307 13487,7337 13519,7345
 Braunschweiger Str.: Kopfsteinpflaster	Q2 13702,7418 13781,7524 13854,7620 13919,7707
 Siegfried-Aufhäuser-Platz: gutes Kopfsteinpflaster	Q1 13952,7497 13941,7522 13953,7548 13980,7548
 Brusendorfer Str.: Asphalt	Q0 13953,7548 13854,7620 13742,7708
@@ -1206,8 +1207,8 @@ Schaperstr.: Asphalt	Q0 5700,10226 5597,10299 5450,10338
 Bleibtreustr.: Kopfsteinpflaster	Q2 4728,11195 4722,11030 4714,10950 4701,10837 4685,10689
 Wilhelmsaue: Kopfsteinpflaster	Q2 5164,8740 5206,8731 5228,8729 5346,8720 5510,8709
 Werderstr.: unebenes Kleinsteinpflaster	Q2- 8968,5554 8981,5692
-Werderstr.: asphaltiert	Q0 8981,5692 8988,5821
-Werderstr.: Kopfsteinpflaster	Q2 8988,5821 8990,5950
+Werderstr.: asphaltiert	Q0 8981,5692 8996,5823
+Werderstr.: Kopfsteinpflaster	Q2 8996,5823 8990,5950
 Wikingerufer: Kopfsteinpflaster	Q2 5354,12552 5376,12661 5376,12781 5341,12875 5350,12906
 Wullenweberstr.: eher unangenehmes Kopfsteinpflaster	Q2- 5354,12552 5372,12538 5427,12495 5497,12448 5524,12430 5657,12339
 (Gemeindewäldchen): Parkweg	Q1 452,3133 71,3179
@@ -1894,8 +1895,11 @@ Eiselenweg - Uferweg: etwas sandig	Q2 21447,5414 21487,5425
 #: XXX Umbau in Asphaltwege
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110922.0700.359578.html
 #: osm_watch: way id="152046369" version="5"
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3240
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036544636457/544636457/00064312/12-Anlagen/10/B1072ZB7.pdf
+#: XXX "Die Herstellung des Uferweges ist zum 31.12.2016 in Planung."
 #: last_checked: 2015-08-15
-#: check_frequency: 90d
+#: next_check: 2016-12-31
 (Uferweg, Mentzelpark): Schotterweg	Q1- 21487,5425 21512,5404 21600,5221 21696,5053
 (Uferweg, Mentzelpark): Asphalt	Q0 21696,5053 21740,5004 21761,4979
 (Uferweg, Mentzelpark): hauptsächlich feiner Schotter	Q1 21761,4979 21821,4918 21834,4889
@@ -10787,7 +10791,7 @@ Dorotheenstr.: Asphalt	Q0 22643,4058 22831,4070 22965,4124
 #: corrected_by: srt (Asphalt, Q0 -> ...)
 Loreleystr.: Asphalt mit Unebenheiten	Q1 19171,8280 19228,8350 19275,8419 19321,8486
 Görresstr.: Asphalt	Q0 5318,7424 5272,7458 5188,7536 5067,7652
-Presselstr.: schlechtes Kopfsteinpflaster	Q3 6107,4718 6183,4785 6185,4839 6191,4923
+Presselstr.: schlechtes Kopfsteinpflaster	Q3 6107,4718 6183,4785 6200,4836 6215,4926
 #: confirmed_by: srt
 Kunkelstr.: Beton	Q0- 8219,14897 8227,15075
 #: corrected_by: srt (Q0 -> Q1)
@@ -11583,11 +11587,11 @@ Rue Georges Vallerey: guter Beton	Q0- 4650,21466 4741,21523 4775,21522
 #: by: ^^^
 # 
 #: by: Patrik Marschalik: vvv
-#: add_fragezeichen: liegt hier Asphalt oder Beton?
-Worpsweder Str.: gute Qualität	Q0 6191,4923 6202,5163
-Wilseder Str.: Asphalt	Q0 6295,5158 6288,4906
+#: confirmed_by: srt (verfeinert: "gute Qualität" -> ...)
+Worpsweder Str.: Asphalt mit leichten Schäden	Q0- 6182,4931 6202,5163
+Wilseder Str.: Asphalt	Q0 6295,5158 6276,4915
 #: confirmed_by: Norbert Rupsch ("asphaltiert")
-Immenweg: Asphalt	Q0 6744,4983 6419,5048 6383,4890
+Immenweg: Asphalt	Q0 6744,4983 6419,5048 6385,4896
 Hünensteig: Verbundsteinpflaster	Q1 6419,5048 6387,5057 6395,5154 6405,5238 6108,5253
 #: by: ^^^
 # 
@@ -15544,7 +15548,7 @@ Glockenstr.: guter Asphalt	Q0 -107,3194 -268,3441 -364,3584
 Colomierstr.: guter Asphalt	Q0 -5719,2323 -5577,2242
 # 
 #: by: Achim Stenzel: vvv
-Kellerstr.: mäßiger Asphalt	Q1 6317,4804 6383,4890
+Kellerstr.: mäßiger Asphalt	Q1 6317,4804 6385,4896
 Theklastr.: mäßiger Asphalt, unebener Belag	Q1 3738,2821 3737,2671 3732,2461
 (Weg an der Markuskirche): guter Asphalt	Q0 6342,4783 6288,4704
 Alt-Schönow: schlechtes Kopfsteinpflaster	Q3 1375,-27 1147,-72
@@ -16079,9 +16083,9 @@ Blunckstr.: guter Beton	Q0 5429,19165 5502,19162 5571,19178 5601,19204 5609,1923
 #: confirmed_by: srt
 Friedrich-Wilhelm-Str.: Asphalt	Q0 8266,5911 8385,5907
 #: corrected_by: srt (schlecht -> mäßig, zumindest der westliche Abschnitt)
-Friedrich-Wilhelm-Str.: Kopfsteinpflaster	Q2 8385,5907 8622,5867 8801,5844 8988,5821
+Friedrich-Wilhelm-Str.: Kopfsteinpflaster	Q2 8385,5907 8622,5867 8801,5844 8996,5823
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
-Friedrich-Wilhelm-Str.: Asphalt	Q0 8988,5821 9176,5803 9378,5773 9668,5733
+Friedrich-Wilhelm-Str.: Asphalt	Q0 8996,5823 9176,5803 9378,5773 9668,5733
 #: by: ^^^
 # 
 #: by: Thomas Pörs: vvv
@@ -25176,7 +25180,7 @@ Groscurthstr.: Asphalt	Q0- 16369,25230 16458,25193 16428,25107
 # 
 #: by: anonymous [AM] vvv
 Dinnendahlstr.: Kopfsteinpflaster	Q2 9123,-1321 9282,-1442 9445,-1460
-Karl-Stieler-Str.: Asphalt	Q1 6034,4893 6097,4858 6185,4839 6267,4825 6317,4804 6342,4783 6414,4723
+Karl-Stieler-Str.: Asphalt	Q1 6034,4893 6097,4858 6200,4836 6267,4825 6317,4804 6342,4783 6414,4723
 Michael-Bohnen-Ring: Asphalt	Q0 15229,6602 15251,6635 15251,6745 15284,6783 15350,6781 15453,6784 15453,6434 15429,6403
 Otzenstr.: Asphalt	Q1 6410,7722 6429,7532 6352,7523
 #: corrected_by: srt (Asphalt, Q1 -> ...)

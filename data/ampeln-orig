@@ -1400,7 +1400,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 9731,3889
 	X 7203,4737
 #: note: Anforderungsampel
-	F 6184,4924
+	F 6187,4930
 #: note: Anforderungsampel
 	F 5689,5109
 	X 5583,5179
@@ -2143,7 +2143,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 #: by: Achim Stenzel:
 #: confirmed_by: srt
 #: note: Anforderungsampel
-	F 6353,4895
+	F 6354,4901
 #: note: Anforderungsampel
 	F 17425,18997
 	X 13867,9864
@@ -2963,11 +2963,12 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -12655,-1714
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
 #: next_check_id: KIEFHOLZ-2015
-#: last_checked: 2015-10-07
+#: last_checked: 2015-10-12
 #: check_frequency: 60d
 	X::inwork 14151,8967
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	B 19316,50384
 	F -46340,-168
 	F -46334,-1506
 	X -46132,-1377
