@@ -1071,16 +1071,19 @@ for my $osm_file (@osm_files) {
 		    } elsif ($surface eq 'concrete') {
 			$quality_cat = 'Q0';
 			@quality_name = 'Beton';
-		    } elsif ($surface eq 'concrete_plates') {
+		    } elsif ($surface eq 'concrete_plates' || $surface eq 'concrete:plates' || $surface eq 'concrete:lanes') {
 			$quality_cat = 'Q2+';
 			@quality_name = 'Plattenweg';
-		    } elsif ($surface eq 'cobblestone') {
+		    } elsif ($surface eq 'cobblestone' || $surface eq 'cobblestone:flattened' || $surface eq 'sett') { # XXX evtl. könnten die beiden anderen Varianten besser kategorisiert werden, Q2+?
 			$quality_cat = 'Q2';
 			@quality_name = 'Kopfsteinpflaster';
 		    } elsif ($surface eq 'gravel') {
+			$quality_cat = 'Q2+';
+			@quality_name = 'Schotter';
+		    } elsif ($surface eq 'fine_gravel') {
 			$quality_cat = 'Q1-';
-			@quality_name = 'Schotter'; # fein oder grob?
-		    } elsif ($surface eq 'unpaved') {
+			@quality_name = 'Feinschotter';
+		    } elsif ($surface eq 'unpaved' || $surface eq 'dirt' || $surface eq 'earth' || $surface eq 'ground') {
 			$quality_cat = 'Q2';
 			@quality_name = 'unbefestigt';
 		    } elsif ($surface eq 'sand') {
