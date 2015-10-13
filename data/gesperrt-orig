@@ -2066,6 +2066,15 @@ Treppe	0:40 1888,42795
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+#: next_check_id: DIESEL-2015 vvv
+#: last_checked: 2015-10-13 vvv
+#: check_frequency: 60d vvv
+Drängelgitter	BNP:5::trailer=10 14364,8096
+Drängelgitter	BNP:5::trailer=10 14405,8115
+#: check_frequency ^^^
+#: last_checked ^^^
+#: next_check_id ^^^
+# 
 Drängelgitter	BNP:5::trailer=10 4626,20960
 #: note: Umfahrung auf Gehwegabschnitt
 Drängelgitter	BNP:5::trailer=10 7764,21271
@@ -2709,7 +2718,7 @@ Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,1
 Matthesstr., Beermannstr.: wegen Autobahnbaustelle gesperrt	2::inwork 14119,9368 14157,9345 14162,9381
 # 
 #: next_check_id: DIESEL-2015
-#: last_checked: 2015-09-06
+#: last_checked: 2015-10-13
 #: check_frequency: 60d
 Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 14471,8046
 # 
@@ -2838,11 +2847,11 @@ Luisenstr. Höhe Charité: Straße wegen Bauarbeiten komplett bis zum 31.10.2015 ge
 # REMOVED (wieder überquerbar) --- #: source_id: INKO_104519 --- #: last_checked: 2015-03-28 --- #: check_frequency: 90d --- Bismarckstr.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3nocross 3690,11629 3844,11649 3898,11655
 # REMOVED --- #: next_check_id: INVALIDENFRIEDHOF-2014 --- #: by: Birgit Schroeer --- #: confirmed_by: srt --- #: last_checked: 2015-03-13 --- #: next_check: 2015-03-28 --- #: XXX siehe auch temp_blockings-Eintrag --- #: osm_watch: way id="76212442" version="7" --- Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 28.03.2015	2::inwork 8119,13912 8101,13901 8248,13659 8337,13541
 # 
-#: last_checked: 2015-09-24
+#: last_checked: 2015-10-13
 #: check_frequency: 120d
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 # 
-#: last_checked: 2015-09-24
+#: last_checked: 2015-10-13
 #: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 

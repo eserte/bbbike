@@ -27,10 +27,13 @@ Friedrichstr.	Jam; 9255,13164 9246,13235 9225,13389
 # 
 Warschauer Str. Richtung Norden, Ausweichen auf Mittelstreifen möglich	Jam; 13603,11538 13651,11731 13696,11920
 # 
-Warschauer Str. Richtung Süden, Ausweichen auf Mittelstreifen möglich	Jam; 13785,12292 13745,12118 13696,11920 13651,11731
+Warschauer Str. Richtung Süden, Ausweichen auf Mittelstreifen möglich	Jam; 13745,12118 13696,11920 13651,11731
 #: next_check_id ^^^
 # 
+#: note: Stau eher morgens
 Modersohnstr. Richtung Süden	Jam; 14011,10812 13919,10583
+#: note: Stau eher abends
+Modersohnstr. Richtung Norden	Jam; 13919,10583 14011,10812
 # 
 Torstr. vor Schönhauser Tor	Jam; 10898,13632 10746,13673
 # 
@@ -45,3 +48,14 @@ Dorotheenstr.	Jam; 8775,12457 8540,12420
 Unter den Linden	Jam; 9601,12380 9475,12365
 # 
 Marktstr./Karlshorster Str.	Jam; 15144,10905 15279,10862 15272,10790 15261,10738
+# 
+#: next_check_id: HAUPTSTR-2015 vvv
+#: last_checked: 2015-10-13 vvv
+#: check_frequency: 60d vvv
+#: note: Stau eher abends
+Hauptstr.	Jam; 14717,10855 14794,10844 14906,10820 15261,10738
+#: note: Stau eher morgens
+Hauptstr.	Jam; 15261,10738 14906,10820 14794,10844 14717,10855
+#: check_frequency ^^^
+#: last_checked ^^^
+#: next_check_id ^^^

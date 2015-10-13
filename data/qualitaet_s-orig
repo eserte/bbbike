@@ -10,8 +10,9 @@
 # REMOVED (Bauarbeiten beendet) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5898 --- #: note: oder man fährt auf dem mit zahlreichen Engstellen zugestellten Radweg, muss dann aber ggfs. warten --- #: last_checked: 2014-03-21 --- #: valid: -20140523 --- Bergmannstr.: während der Bauarbeiten zwischen Heim- und Friesenstr. Umleitung über gepflasterte Fahrbahn	Q2 9973,9232 9880,9233 9793,9241
 # 
 #: next_check_id: DIESEL-2015 vvv
-#: last_checked: 2015-09-06 vvv
+#: last_checked: 2015-10-13 vvv
 #: check_frequency: 60d vvv
+#: note: könnte auch Asphalt mit hartnäckigem Rollsplit sein, nicht zu erkennen
 Dieselstr., Umfahrung: Feinschotter	Q1 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112
 Dieselstr., Umfahrung: Asphalt	Q0 14419,8112 14429,8074
 #: XXX_osm laut osm Asphalt, hier aber nicht!
@@ -37,9 +38,19 @@ Eiswerderstr.: Asphalt	Q0 -2883,15571 -2783,15538 -2702,15517 -2675,15513
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7191,-1023 -7271,-1102 -7376,-1226 -7498,-1355 -7592,-1402
 Markgrafendamm: Asphalt	Q0 14558,10264 14608,10409 14641,10552 14675,10693 14672,10760 14674,10811
 Markgrafendamm/Hauptstr.: asphaltiert	Q0 14674,10811 14717,10855 14794,10844 14906,10820
-Hauptstr.: mäßiges Kopfsteinpflaster, teilweise Betonplatten	Q2+; 14906,10820 15261,10738
+# 
+#: next_check_id: HAUPTSTR-2015 vvv
+#: XXX nach den Bauarbeiten vermutlich asphaltiert mit Radwegen oder -spuren vvv
+#: last_checked: 2015-10-13 vvv
+#: check_frequency: 60d vvv
+Hauptstr.: Betonplatten, alte Straßenbahnschienen	Q2+; 14906,10820 15261,10738
 #: note: Asphaltierung während der Bauarbeiten, vielleicht auch permanent; einige kurze Kopfsteinpflasterabschnitte
 Hauptstr.: überwiegend asphaltierte Fahrbahn	Q1+; 15261,10738 14906,10820
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+#: next_check_id ^^^
+# 
 Karlshorster Str.: Asphalt	Q0 15279,10862 15272,10790 15261,10738
 Cordesstr.: schlechtes Kopfsteinpflaster	Q3 1672,9836 1645,9862 1515,10002 1477,10073 1395,10122 1318,10031
 Werkstättenweg: mäßiges Kopfsteinpflaster	Q2- 2110,10101 1843,9867

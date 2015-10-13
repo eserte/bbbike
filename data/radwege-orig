@@ -855,7 +855,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736 20755,5750
 	RW2;RW1 14193,9746 14270,9710 14318,9688 14780,9480 14819,9462 14883,9431 15383,9191 15442,9095 15452,9079 15561,8903 15591,8848
 	RW1; 13919,7707 14015,7631
 #: next_check_id: SONNENALLEE-2014 vvv
-#: last_checked: 2015-07-17 vvv
+#: last_checked: 2015-10-13 vvv
 #: check_frequency: 90d vvv
 	RW2; 14015,7631 14095,7568 14174,7505
 # REMOVED, siehe unten ---	RW1; 14174,7505 14302,7429 14357,7450 14405,7435 14424,7401 14432,7353 14451,7340
@@ -964,7 +964,7 @@ neues Verbundsteinpflaster	RW1; 12694,2517 12694,2544 12694,2570 12693,2746 1269
 	RW;RW 12694,2517 12703,2454
 die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 13745,12118 13785,12292
 #: next_check_id: WARSCHAUER-2014 vvv
-#: last_checked: 2015-10-07 vvv
+#: last_checked: 2015-10-13 vvv
 #: check_frequency: 3d vvv
 #: by: http://www.umbau-warschauer-strasse.de/images/bauinfos/Infoblatt_August_15-2.pdf
 #: XXX Radspur (RW4) ist wegen Bauarbeiten aufgehoben, später wahrscheinlich wieder hergestellt
@@ -4673,3 +4673,7 @@ asphaltiert	RW1; 13565,11492 13588,11490
 Radweg nur aufgemalt	RW1;RW1 1248,2600 1327,2401 1373,2285 1423,2264 1493,2247 1508,2243 1603,2220 1710,2189 1812,2160 1945,2127
 Radweg ist angedeutet	RW0; 638,2637 272,2548
 Busspur gilt Mo-Fr 7-19 Uhr	RW5; 13521,8023 13474,8060
+#: note: auf den letzten 50 Metern ist die Busspur immer gültig
+Busspur gilt Mo-Fr 7-19 Uhr	RW5; 13010,8422 12925,8494
+#: note: es wird spannend werden, wie gut die Busspur respektiert wird
+Busspur gilt Mo-Fr 6-19 Uhr	RW5; 12742,8635 12630,8722 12483,8834 12438,8859 12320,8927 12242,8972

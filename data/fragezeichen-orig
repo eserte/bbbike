@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2015-10-07
+#: last_checked: 2015-10-13
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -102,7 +102,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6183 (Baubeginn erst 2015)
 #: XXX Baubeginn des ersten Abschnitts: 3. Quartal 2014
-#: last_checked: 2015-09-27
+#: last_checked: 2015-10-13
 #: check_frequency: 60d
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -215,7 +215,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2015-10-07
+#: last_checked: 2015-10-13
 #: check_frequency: 7d
 Warschauer Str: Radspuren in Bau	?::inwork 13603,11538 13651,11731 13696,11920 13745,12118
 # 
@@ -856,7 +856,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,977
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="13"
-#: last_checked: 2015-10-09
+#: last_checked: 2015-10-13
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
@@ -1300,19 +1300,8 @@ Schulzendorfer Str.: Radverkehrsanlangen? (vermutlich asphaltiert, vermutlich nu
 #: next_check: 2015-10-31
 Waldstr.: Umgestaltung, wird sich hier etwas ändern?	? 5443,14028 5417,13817 5390,13616 5384,13555
 # 
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1509/nachricht5759.html
-#: last_checked: 2015-10-09
-#: next_check: 2015-10-12
-Hauptstr.: wie wirkt sich die provisorische Verkehrsführung auf Radfahrer aus (Qualität, Stau?)	? 14906,10820 15261,10738
-# 
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1509/nachricht5761.html vvv
-#: last_checked: 2015-10-07 (Markierungen existieren, Schilder noch nicht) vvv
-#: check_frequency: 4d vvv
-Sonnenallee: Verlängerung der Busspur	?; 12742,8635 12630,8722 12483,8834 12438,8859 12320,8927 12242,8972
-Sonnenallee: Verlängerung der Busspur	?; 13010,8422 12925,8494
-#: check_frequency ^^^
-#: last_checked ^^^
-#: by: ^^^
+# REMOVED (-> comments_trafficjam-orig) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1509/nachricht5759.html --- #: last_checked: 2015-10-09 --- #: next_check: 2015-10-12 --- Hauptstr.: wie wirkt sich die provisorische Verkehrsführung auf Radfahrer aus (Qualität, Stau?)	? 14906,10820 15261,10738
+# REMOVED (Schilder stehen mittlerweile) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1509/nachricht5761.html vvv --- #: last_checked: 2015-10-07 (Markierungen existieren, Schilder noch nicht) vvv --- #: check_frequency: 4d vvv --- Sonnenallee: Verlängerung der Busspur	?; 12742,8635 12630,8722 12483,8834 12438,8859 12320,8927 12242,8972 --- Sonnenallee: Verlängerung der Busspur	?; 13010,8422 12925,8494
 # 
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367062.php
 #: by: http://www.gruen-berlin.de/in-realisation/havelradweg/?L=.htewrap&PHPSESSID=bc0eb92d1c0f3ab3c89fe427b9f45c1a
@@ -1699,7 +1688,7 @@ Thomasstr./Hermannstr.: sichere Querung, wie wird/könnte die Lösung hier aussehe
 # REMOVED (realisiert) --- #: XXX wird eine andere Ampel dafür ausgeschaltet? --- #: by: http://www.berliner-zeitung.de/verkehr/bvg-sanierung--die-u-8-faehrt-wieder-bis-zur-hermannstrasse,10809298,28209860.html (Fertigstellung im Dezember) --- #: last_checked: 2014-11-22 --- #: next_check: 2015-02-15 --- Hermannstr.: Fußgängerampel in Bau	?::inwork 12123,7549 12137,7506
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14706&options=8
-#: last_checked: 2015-08-01
+#: last_checked: 2015-10-13
 #: check_frequency: 150d
 #: priority: #C
 Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,7623 14614,7614
@@ -1923,7 +1912,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: XXX_prog ^^^
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20141202.1525.400470.html
-#: last_checked: 2015-08-11
+#: last_checked: 2015-10-13
 #: check_frequency: 90d
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 
