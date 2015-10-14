@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2008,2012,2013,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2008,2012,2013,2014,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -2263,6 +2263,59 @@ sub penalty_menu {
 	    foreach my $koeff (@koeffs) {
 		$c_bpcm->radiobutton(-label => $koeff,
 				     -variable => \$penalty_trafficjam_koeff,
+				     -value => $koeff);
+	    }
+	}
+	$pen_m->separator;
+    }
+
+    ######################################################################
+
+    {
+	my $penalty_unpaved = 0;
+	my $penalty_unpaved_koeff = 2;
+	$pen_m->checkbutton
+	    (-label => M"Penalty für unbefestigte Straßen",
+	     -variable => \$penalty_unpaved,
+	     -command => sub {
+		 if ($penalty_unpaved) {
+		     require BBBikeUtil;
+		     require BBBikeBuildUtil;
+		     {
+			 my $pwd = BBBikeUtil::save_pwd2();
+			 chdir $datadir
+			     or main::status_message("Can't chdir to $datadir: $!", 'die');
+			 system(BBBikeBuildUtil::get_pmake(), '../tmp/unpaved.bbd');
+		     }
+		     my $unpaved_bbd = "$datadir/../tmp/unpaved.bbd";
+		     if (!-e $unpaved_bbd) {
+			 main::status_message("Cannot create $unpaved_bbd", 'die');
+		     }
+
+		     my $s = Strassen->new($unpaved_bbd);
+		     main::status_message("Can't get $unpaved_bbd", 'die') if !$s;
+		     my $net = StrassenNetz->new($s);
+		     $net->make_net_cat;
+
+		     $penalty_subs{'unpavedpenalty'} = sub {
+			 my($p, $next_node, $last_node) = @_;
+			 if ($net->{Net}{$next_node}{$last_node} ||
+			     $net->{Net}{$last_node}{$next_node}) {
+			     $p *= $penalty_unpaved_koeff;
+			 }
+			 $p;
+		     };
+		 } else {
+		     delete $penalty_subs{'unpavedpenalty'};
+		 }
+	     });
+	$pen_m->cascade(-label => M("Penalty-Koeffizient")." ...");
+	{
+	    my $c_bpcm = $pen_m->Menu(-title => M("Penalty-Koeffizient")." ...");
+	    $pen_m->entryconfigure("last", -menu => $c_bpcm);
+	    foreach my $koeff (@koeffs) {
+		$c_bpcm->radiobutton(-label => $koeff,
+				     -variable => \$penalty_unpaved_koeff,
 				     -value => $koeff);
 	    }
 	}
