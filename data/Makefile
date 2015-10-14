@@ -199,6 +199,7 @@ rare-persistent-tmp:	\
 		${PERSISTENTTMPDIR}/my-upload-fragezeichen.wpt \
 		${PERSISTENTTMPDIR}/strassen_in_planung.bbd \
 		${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd \
+		${PERSISTENTTMPDIR}/unpaved.bbd \
 		data-bbbgeojsonp
 
 # popular targets
@@ -1024,6 +1025,10 @@ ${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd:	fragezeichen-orig
 
 ${PERSISTENTTMPDIR}/strassen_in_planung.bbd:	fragezeichen-orig
 	cat fragezeichen-orig | ${GREPSTRASSEN} -sectionrx "Straßen in Planung" | ${CONVERT2HAFAS} -basefile fragezeichen-orig > $@
+
+${PERSISTENTTMPDIR}/unpaved.bbd:	qualitaet_s
+	${PERL} -I../lib -I.. -MStrassen::QualityDE -MStrassen::Core -e '$$new_s=Strassen->new; Strassen->new_stream("qualitaet_s")->read_stream(sub{my($$r)=@_;(my $$q = $$r->[Strassen::NAME]) =~ s{^[^:]+:\s+}{}; if (!Strassen::QualityDE::is_paved($$q)) { $$new_s->push($$r) } }); $$new_s->write(shift)' $@~
+	mv $@~ $@
 
 # XXX Hmmm, die "temporary"-Einträge könnten eigentlich nach fragezeichen wandern,
 # aber nur, wenn sie nicht zusätzlich mit einer next_check/last_checked-Direktive
