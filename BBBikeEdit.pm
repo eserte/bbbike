@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeEdit.pm,v 1.128 2009/02/14 13:39:57 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2002,2003,2004,2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2002,2003,2004,2009,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -2067,6 +2066,7 @@ sub click {
 
     $t->transient($top) unless defined $main::transient && !$main::transient;
     my($name, $cat, $coords);
+    my($initial_name, $initial_cat, $initial_coords);
 
     my $e1 = $t->LabEntry(-label => M("Name"),
 			  -labelPack => [-side => "left"],
@@ -2096,25 +2096,32 @@ sub click {
 		  )->pack(-side => "left");
 	$f->Button(-text => $main::texteditor || "Editor",
 		   -command => sub {
-		       if ($click_info->filetype eq "temp_blockings") {
-			   $o->edit_temp_blockings($click_info);
-		       } else {
-			   # XXX don't duplicate code, see below
-			   # XXX ufff... this is also in  BBBikeAdvanced::find_canvas_item_file for the F9 key :-(
-			   my $count = 0;
-			   my $rec_count = 0;
-			   foreach (@rec) {
-			       if (!/^\#/) {
-				   if ($count == $click_info->line) {
-				       start_editor($file, $rec_count+1);
-				       return;
+		       my $do_popdown = ($name eq $initial_name &&
+					 $cat eq $initial_cat &&
+					 $coords eq $initial_coords);
+		   SEARCH: {
+			   if ($click_info->filetype eq "temp_blockings") {
+			       $o->edit_temp_blockings($click_info);
+			       last SEARCH;
+			   } else {
+			       # XXX don't duplicate code, see below
+			       # XXX ufff... this is also in  BBBikeAdvanced::find_canvas_item_file for the F9 key :-(
+			       my $count = 0;
+			       my $rec_count = 0;
+			       foreach (@rec) {
+				   if (!/^\#/) {
+				       if ($count == $click_info->line) {
+					   start_editor($file, $rec_count+1);
+					   last SEARCH;
+				       }
+				       $count++;
 				   }
-				   $count++;
+				   $rec_count++;
 			       }
-			       $rec_count++;
+			       main::status_message("Cannot find line " . $click_info->line, "die");
 			   }
-			   main::status_message("Cannot find line " . $click_info->line, "die");
 		       }
+		       $t->destroy if $do_popdown;
 		   })->pack(-side => "left");
     }
 
@@ -2160,9 +2167,9 @@ sub click {
 	    if (!/^\#/) {
 		if ($count == $click_info->line) {
 		    my $l = Strassen::parse($_);
-		    $name = $l->[Strassen::NAME];
-		    $cat  = $l->[Strassen::CAT];
-		    $coords = join(" ", @{$l->[Strassen::COORDS]});
+		    $name = $initial_name = $l->[Strassen::NAME];
+		    $cat  = $initial_cat = $l->[Strassen::CAT];
+		    $coords = $initial_coords = join(" ", @{$l->[Strassen::COORDS]});
 
 		    my $coordsys = $o->coord_system->coordsys;
 		    my $base = $o->file2base->{basename $file};
