@@ -24106,15 +24106,13 @@ userdel	2::temp 11049,10816 11159,10769 11133,10704
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1444844659, # undef, # XXX
        text  => 'Döberitzer Verbindung: wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        source_id => 'wosch',
        data  => <<EOF,
-#: confirmed_by: srt
-#: last_checked: 2015-08-16
-#: check_frequency: 45d
-userdel	2::inwork 7306,13418 7451,13504 7630,13584
+# REMOVED (offen) --- #: confirmed_by: srt --- #: last_checked: 2015-08-16 --- #: check_frequency: 45d
+userdel	2::inwork 7306,13418 7402,13475 7451,13504 7630,13584
 EOF
      },
      { from  => 1429736139, # 2015-04-22 22:55
@@ -24406,13 +24404,11 @@ userdel	2::inwork 2295,20358 2358,20368 2415,20380
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1444844556, # undef, # XXX
        text  => 'Weg am Moabiter Werder - Clara-Jaschke-Str.: Bauarbeiten, Ausweichen auf sehr engen Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX Wann sind die Bauarbeiten fertig?
-#: last_checked: 2015-08-10
-#: check_frequency: 60d
+# REMOVED (man kann weitgehend ungestört vorbei) --- #: XXX Wann sind die Bauarbeiten fertig? --- #: last_checked: 2015-08-10 --- #: check_frequency: 60d
 userdel	q4::inwork 7799,13019 7813,12961
 EOF
      },
@@ -24612,6 +24608,33 @@ EOF
        source_id => 'LS/721-E/15/102',
        data  => <<EOF,
 userdel	2::inwork 37162,121204 38900,120605
+EOF
+     },
+     { from  => 1445119200, # 2015-10-18 00:00
+       until => 1446505199, # 2015-11-02 23:59
+       text  => 'Blankenfelder Chaussee: Bauarbeiten, Vollsperrung, vom 19. Oktober 2015 bis 2. November 2015',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.385612.php',
+       data  => <<EOF,
+userdel	2::inwork 8141,23477 7185,23749
+EOF
+     },
+     { from  => 1444849734, # 2015-10-14 21:08
+       until => 1447455599, # 2015-11-13 23:59
+       text  => 'Seebadstr.: Bauarbeiten, Sperrung der Fahrbahn von Lotosweg bis Am Ried, bis 13. November 2015',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.385612.php',
+       data  => <<EOF,
+userdel	q4::inwork 4681,23273 4704,23278 4744,23289 4910,23490 5006,23575
+EOF
+     },
+     { from  => 1445119200, # 2015-10-18 00:00
+       until => 1447542000, # 2015-11-15 00:00
+       text  => 'Karmeliterweg: Bauarbeiten zwischen Frohnauer Str. und Alemannenstr., vom 19.10.2015 bis 14.11.2015',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.363335.php',
+       data  => <<EOF,
+userdel	q4::inwork 1878,24619 1852,24593 1797,24562 1747,24549
 EOF
      },
     );

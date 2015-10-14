@@ -1849,19 +1849,7 @@ userdel	q4::inwork; 3807,11859 3666,11855
        },
        undef,
        undef,
-       {
-         'data' => '#: confirmed_by: srt
-#: last_checked: 2015-08-16
-#: check_frequency: 45d
-userdel	2::inwork 7306,13418 7451,13504 7630,13584
-',
-         'from' => undef,
-         'id' => 2700,
-         'source_id' => 'wosch',
-         'text' => 'Döberitzer Verbindung: wegen Bauarbeiten gesperrt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -1973,18 +1961,7 @@ userdel	2::inwork 14674,9764 14697,9726 14910,9643 15052,9584 15174,9554 15321,9
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX Wann sind die Bauarbeiten fertig?
-#: last_checked: 2015-08-10
-#: check_frequency: 60d
-userdel	q4::inwork 7799,13019 7813,12961
-',
-         'from' => undef,
-         'id' => 2728,
-         'text' => 'Weg am Moabiter Werder - Clara-Jaschke-Str.: Bauarbeiten, Ausweichen auf sehr engen Gehweg',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: by: wosch vvv
 #: confirmed_by: srt vvv
@@ -2167,6 +2144,36 @@ userdel	q4::inwork 13369,7307 13322,7294 13150,7254 13043,7234
          'text' => 'Uckerland: B104: Brückenneubau zwischen Milow und Wilsickow, Straße gesperrt, 12.10.2015 08:00 Uhr bis 30.09.2016 ',
          'type' => 'gesperrt',
          'until' => 1475272800
+       },
+       {
+         'data' => 'userdel	2::inwork 8141,23477 7185,23749
+',
+         'from' => 1445119200,
+         'id' => 2749,
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.385612.php',
+         'text' => 'Blankenfelder Chaussee: Bauarbeiten, Vollsperrung, vom 19. Oktober 2015 bis 2. November 2015',
+         'type' => 'gesperrt',
+         'until' => 1446505199
+       },
+       {
+         'data' => 'userdel	q4::inwork 4681,23273 4704,23278 4744,23289 4910,23490 5006,23575
+',
+         'from' => 1444849734,
+         'id' => 2750,
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.385612.php',
+         'text' => 'Seebadstr.: Bauarbeiten, Sperrung der Fahrbahn von Lotosweg bis Am Ried, bis 13. November 2015',
+         'type' => 'handicap',
+         'until' => 1447455599
+       },
+       {
+         'data' => 'userdel	q4::inwork 1878,24619 1852,24593 1797,24562 1747,24549
+',
+         'from' => 1445119200,
+         'id' => 2751,
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.363335.php',
+         'text' => 'Karmeliterweg: Bauarbeiten zwischen Frohnauer Str. und Alemannenstr., vom 19.10.2015 bis 14.11.2015',
+         'type' => 'handicap',
+         'until' => 1447542000
        }
      
 );
