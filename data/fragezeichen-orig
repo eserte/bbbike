@@ -385,6 +385,11 @@ Gaußstr.: Radspuren werden errichtet	?::inwork 3739,13563 3833,13590 4098,13664 
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2015/pressemitteilung.385888.php
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.205751.php
+#: next_check: 2016-08-31
+Pappelallee: Radspuren entstehen	?::projected 10881,15047 11119,15385 11183,15485 11301,15668
+# 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php
 #: XXX ab Frühjahr 2017 für vier Jahre
 #: XXX evtl. gibt es Einschränkungen wegen der Bauarbeiten
@@ -1214,12 +1219,7 @@ L792: Ausbau, danach wahrscheinlich mit Radweg, Fahrbahn wahrscheinlich nicht me
 Soldiner Str.: grundhafte Erneuerung, evtl. verschwindet das Kopfsteinpflaster dabei	?::projected 8449,17196 8539,17197 8561,17198 8677,17154 8866,17075 8904,17059 9082,16982
 # 
 # REMOVED (explizit für Radfahrer frei) --- #: source_id: IM_023298 --- #: XXX: Buschallee (Weißensee) In Richtung Suermondtstr. zwischen Berliner Allee und Hansastr. (Berlin)  Gültig ab: 29.10.2014 07:00  Geplant ab: 30.10.2014 07 Uhr, Baustelle, Fahrtrichtung gesperrt, eine Umleitung über Hansastr. ist eingerichtet (bis Ende 12/14, danach weitere Arbeiten) --- Buschallee: Bauarbeiten, auch für Radfahrer relevant?	?::inwork; 14619,16551 14809,16525 15134,16499 15142,16499 15437,16491
-# 
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1502/nachricht5481.html
-#: by: http://www.pressestelle.tu-berlin.de/medieninformationen/2014/oktober_2014/hertzallee_medieninformation_6102014/fotogalerie/?showp=2&uid=622255#622255
-#: by: http://www.pressestelle.tu-berlin.de/fileadmin/a70100710/Medieninformationen/2014/WB_Hertzallee_1Preis_Lageplan_500_A4_300DPI.jpg
-# REMOVED (eigentlich jetzt schon befahrbar, mal ausprobieren) --- : next_check: 2016-06-01
-Verlängerte Hertzallee: wie sieht der Stand jetzt aus, ist es für Radfahrer befahrbar? Was wird die Zukunft bringen?	?::projected 5352,11502 4917,11696 4905,11785
+# REMOVED (-> qualitaet_s-orig) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1502/nachricht5481.html --- #: by: http://www.pressestelle.tu-berlin.de/medieninformationen/2014/oktober_2014/hertzallee_medieninformation_6102014/fotogalerie/?showp=2&uid=622255#622255 --- #: by: http://www.pressestelle.tu-berlin.de/fileadmin/a70100710/Medieninformationen/2014/WB_Hertzallee_1Preis_Lageplan_500_A4_300DPI.jpg --- Verlängerte Hertzallee: wie sieht der Stand jetzt aus, ist es für Radfahrer befahrbar? Was wird die Zukunft bringen?	?::projected 5352,11502 5296,11529 4950,11696 4905,11785
 # 
 #: next_check_id: EUROPACITY-2015 vvv
 #: XXX Europacity, neue Straßen und Wege vvv
@@ -1282,6 +1282,8 @@ Am Kirchendreieck: Lage der Straße? Qualität?	? 23922,13085 23960,13325
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+Joachimsthaler Str.: ist hier eine Busspur? Geltungszeiten?	?; 5475,10808 5488,10978 5542,11075
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file?y=2015
 #: XXX str_cont_ausnahme-Eintrag für die Zwieseler Str. dann notwendig
@@ -1383,7 +1385,8 @@ Am Hamburger Bahnhof: Benennung des Platzes	? 8293,13519 8128,13767
 # REMOVED (ja, und eine Einbahnstraße für Autos) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6320 --- Kyllburger Weg: gibt es hier eine Spielstraße?	? 16418,17311 16549,17394 16645,17449 16670,17454 16779,17521
 # 
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2015/pressemitteilung.331578.php
-#: XXX Wiltbergstr. (Buch): Baustelle, Fahrtrichtung gesperrt (Gesamtmaßnahme bis 2018) Richtung Schönerlinder Chaussee zwischen Alt-Buch und Hobrechtsfelder Chaussee, 06.07.2015 06:00 Uhr bis 30.09.2015 18:00 Uhr	IM_025572
+#: XXX Wiltbergstr. (Buch): Baustelle, Fahrtrichtung gesperrt (Gesamtmaßnahme bis 2018) Richtung Schönerlinder Chaussee zwischen Alt-Buch und Hobrechtsfelder Chaussee, 06.07.2015 06:00 Uhr bis 30.09.2015 18:00 Uhr
+#: source_id: IM_025572
 #: XXX "Die geplante Bauzeit beträgt vier Jahre"
 #: next_check: 2015-07-10
 Wiltbergstr.: wird es für Radfahrer Einschränkungen während der Bauarbeiten geben?	? 16669,25373 16583,25440 16475,25526 16414,25575 16294,25683 16220,25716 16166,25767 16121,25818 16045,25907 16037,25915 16017,25938

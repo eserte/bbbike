@@ -857,6 +857,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736 20755,5750
 	RW2;RW1 14193,9746 14270,9710 14318,9688 14780,9480 14819,9462 14883,9431 15383,9191 15442,9095 15452,9079 15561,8903 15591,8848
 	RW1; 13919,7707 14015,7631
 #: next_check_id: SONNENALLEE-2014 vvv
+#: source_id: IM_023718
 #: last_checked: 2015-10-13 vvv
 #: check_frequency: 90d vvv
 	RW2; 14015,7631 14095,7568 14174,7505
@@ -1030,6 +1031,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 969
 #: XXX Markierungen fehlen in beiden Richtungen
 #: source_id: IM_018997
 #: source_id: IM_023987
+#: source_id: IM_025933
 #: last_checked: 2015-10-06
 Busspur ist immer gültig	RW0;RW0 9475,12365 9358,12351 9141,12320
 # 
@@ -4488,7 +4490,7 @@ Tempo 10	RW6;RW6 13559,12779 13470,12990
 	RW4;RW3 14096,12827 14066,12836
 #: XXX wegen Bauarbeiten am Hochhaus "Upper West" sind die Radspuren aufgehoben
 #: by: http://www.tagesspiegel.de/berlin/stadtentwicklung-zwillingsturm-soll-2016-in-der-city-west-eroeffnen/7416454.html (geplante Eröffnung Mitte 2016)
-#: last_checked: 2015-10-10
+#: last_checked: 2015-10-15
 #: next_check: 2016-05-01
 #	RW3; 5488,10978 5613,10963 5652,11004
 ##: note: teilweise vor dem Hotel unterbrochen (wegen Ladezone?)

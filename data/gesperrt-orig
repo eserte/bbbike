@@ -2066,6 +2066,8 @@ Treppe	0:40 1888,42795
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke	BNP:3::trailer=10 5296,11529
+# 
 #: next_check_id: DIESEL-2015 vvv
 #: last_checked: 2015-10-13 vvv
 #: check_frequency: 60d vvv
@@ -2835,7 +2837,6 @@ Toulonstr.: noch nicht geöffnet	2::inwork 12404,21532 12480,21560
 #: next_check_id ^^^
 # 
 #: next_check_id: CHARITE-2014
-#: XXX vmz-Eintrag: Luisenstr. (Mitte) in beiden Richtungen Höhe Charite (Berlin)  Gültig ab: 30.11.2014 12:00  Geplant ab: 01.12.2014 07 Uhr, Baustelle, Straße vollständig gesperrt (bis Ende 09/15)
 #: source_id: IM_023570
 #: source_id: IM_023615
 #: last_checked: 2015-09-30

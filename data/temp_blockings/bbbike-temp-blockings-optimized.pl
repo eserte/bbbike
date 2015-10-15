@@ -1315,8 +1315,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        {
          'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
-#: note: laut VMZ um zwei Jahre verlängert, laut fritz/rbbtext beendet
-#: last_checked: 2015-07-31
+#: last_checked: 2015-10-15
 #: check_frequency: 90d
 userdel	q2::inwork 5258,11285 5236,10994
 ',
@@ -1365,7 +1364,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'from' => undef,
          'id' => 2454,
          'recurring' => 1,
-         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Sommer: 21.00 bis 6.00 Uhr',
+         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Winter: 18.00 bis 6.00 Uhr',
          'until' => undef
        },
        {
@@ -1763,18 +1762,7 @@ userdel	2::inwork -3197,11554 -3075,11510
        undef,
        undef,
        undef,
-       {
-         'data' => '#: last_checked: 2015-09-10 vvv
-	q3::inwork 5497,10719 5627,10637 5780,10542
-	q3::inwork 5568,10535 5627,10637 5669,10704
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 2672,
-         'text' => 'Augsburger Str./Rankestr.: Bauarbeiten an der Kreuzung, Umfahrung über Gehweg',
-         'type' => 'handicap',
-         'until' => 1448924400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2049,7 +2037,8 @@ userdel	q4::inwork; 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
          'until' => 1445119199
        },
        {
-         'data' => 'userdel	q4::inwork; -6861,15129 -6507,15007
+         'data' => '#: source_id: IM_026411
+userdel	q4::inwork; -6861,15129 -6507,15007
 ',
          'from' => 1443650400,
          'id' => 2740,
@@ -2174,6 +2163,16 @@ userdel	q4::inwork 13369,7307 13322,7294 13150,7254 13043,7234
          'text' => 'Karmeliterweg: Bauarbeiten zwischen Frohnauer Str. und Alemannenstr., vom 19.10.2015 bis 14.11.2015',
          'type' => 'handicap',
          'until' => 1447542000
+       },
+       {
+         'data' => 'userdel	q4::inwork 20782,5206 20774,5131 20852,5106 20765,4839
+',
+         'from' => 1446332400,
+         'id' => 2752,
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.386101.php',
+         'text' => 'Friedlander Str., Bernstadter Weg, Ostritzer Str.: Asphaltarbeiten, Sperrung der Fahrbahn, voraussichtlich vom 02.11.2015 bis 16.11.2015 ',
+         'type' => 'handicap',
+         'until' => 1447714800
        }
      
 );

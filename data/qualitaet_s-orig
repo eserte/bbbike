@@ -264,7 +264,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX wird hier vielleicht asphaltiert werden?
 #: XXX Baumaßnahme 2.22 (Realisierung nach 2011)
-#: last_checked: 2015-10-14
+#: last_checked: 2015-10-15
 #: check_frequency: 120d
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9053,16029 8923,15850
@@ -9964,6 +9964,14 @@ Birnenblütenweg: unbefestigte Schotterstraße	Q2 11656,21309 11783,21324
 Veilchenblütenweg: unbefestigte Schotterstraße	Q2 11534,21229 11664,21246
 Veilchenblütenweg: unbefestigte Schotterstraße und Verbundsteinpflaster	Q2 11664,21246 11757,21253
 Veilchenblütenweg: unbefestigte Schotterstraße	Q2 11664,21246 11656,21309
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1502/nachricht5481.html
+#: by: http://www.pressestelle.tu-berlin.de/medieninformationen/2014/oktober_2014/hertzallee_medieninformation_6102014/fotogalerie/?showp=2&uid=622255#622255
+#: by: http://www.pressestelle.tu-berlin.de/fileadmin/a70100710/Medieninformationen/2014/WB_Hertzallee_1Preis_Lageplan_500_A4_300DPI.jpg
+#: XXX ändert sich bei der Umgestaltung etwas an der Qualität?
+#: last_checked: 2015-10-15
+#: next_check: 2016-06-01
+#: note: zusätzlich mit einigen "Pflasterschwellen"
+(Verlängerte Hertzallee): Kopfsteinpflaster	Q2- 5352,11502 5296,11529 4950,11696 4905,11785
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -17988,9 +17996,6 @@ Im Vogtland: gutes Verbundsteinpflaster	Q1+ 6727,23287 6684,23308 6657,23334 660
 #: note: anonymer Eintrag meint "gutes Kopfsteinpflaster", aber die Straße erscheint auf dem Luftbild anders
 #: note: annette.kretschmer meint "schlechtes Kopfsteinpflaster Q3" von Waldstr. bis Genossenschaftsstr., aber sie führt nur bis zur Hackenbergstr.?
 #: corrected_by: srt (Q2 -> Q2-)
-#: XXX wird hier saniert werden (oder ein anderer Teil der Friedlander Str.?)
-#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20151009 (Sanierung?)
-#: next_check: 2015-11-30
 Friedlander Str.: Kopfsteinpflaster	Q2- 20253,4034 20305,4096 20312,4123 20410,4192 20540,4285
 #: corrected_by: srt (mäßiger Asphalt, Q1 -> Asphalt, Q0)
 Friedlander Str.: Asphalt	Q0 20540,4285 20574,4317 20594,4342 20614,4381 20684,4596 20716,4691 20765,4839 20852,5106
@@ -20249,9 +20254,11 @@ Steigerwaldstr.: Beton	Q0 -4710,15530 -4701,15563 -4639,15726 -4655,15803 -4656,
 #: confirmed_by: srt
 Frauenlobstr.: guter Asphalt	Q0 15697,6688 15830,6579 15954,6481 16043,6414
 #: corrected_by: srt (guter Asphalt -> )
-#: XXX wird hier die Fahrbahn saniert? Sind die Schäden dann weg?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20151009
-#: next_check: 2015-11-30
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.386100.php
+#: XXX Asphaltdecke wird erneuert, danach wohl Q0
+#: next_check: 2015-10-30
+#: priority: #A
 Frauenlobstr.: guter Asphalt, einige leichte Schäden	Q0- 16043,6414 16220,6277
 #: by ^^^
 # 
@@ -23827,7 +23834,8 @@ Hüninger Str.: Kopfsteinpflaster	Q2 2019,4027 2039,4128 2047,4162 2054,4190 2079
 Mörchinger Str.: Kopfsteinpflaster	Q1 1453,3085 1393,3183 1499,3251
 Mörchinger Str.: Verbundsteine	Q0 1918,3511 2091,3597
 Am Mühlenberg: Gehwegplatten	Q0 6096,8600 6135,8674 6133,8709
-Kalckreuthstr.: Asphalt mit Löchern	Q1 6636,10492 6628,10318 6626,10155
+#: confirmed_by: srt
+Kalckreuthstr.: Asphalt mit Löchern	Q1+ 6636,10492 6628,10318 6626,10155
 Landhausstr.: Kopfsteinpflaster	Q2 5314,9588 5342,9559 5343,9377
 Landhausstr.: Kopfsteinpflaster	Q1 5341,8931 5343,8858
 Gasteiner Str.: grobes Kopfsteinpflaster	Q3 4920,9000 4715,8977

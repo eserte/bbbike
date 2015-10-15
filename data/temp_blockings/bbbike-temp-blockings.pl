@@ -21320,8 +21320,7 @@ EOF
        data  => <<EOF,
 #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
-#: note: laut VMZ um zwei Jahre verlängert, laut fritz/rbbtext beendet
-#: last_checked: 2015-07-31
+#: last_checked: 2015-10-15
 #: check_frequency: 90d
 userdel	q2::inwork 5258,11285 5236,10994
 EOF
@@ -23831,14 +23830,13 @@ userdel	q4::inwork; 9559,11715 9692,11732
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2015-12-01 00:00:00"), # laut Schild bis Dezember 2015
+       until => 1444929671, # $isodate2epoch->("2015-12-01 00:00:00"), # laut Schild bis Dezember 2015
        text  => 'Augsburger Str./Rankestr.: Bauarbeiten an der Kreuzung, Umfahrung über Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2015-09-10 vvv
+# REMOVED (weitgehend fertig, bis auf die südliche Ausfahrt Rankestr.) --- #: last_checked: 2015-09-10 vvv
 	q3::inwork 5497,10719 5627,10637 5780,10542
 	q3::inwork 5568,10535 5627,10637 5669,10704
-#: last_checked ^^^
 EOF
      },
      { from  => $isodate2epoch->("2014-12-12 00:00:00"), # 1 Tag Vorlauf
@@ -24528,6 +24526,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367070.php',
        data  => <<EOF,
+#: source_id: IM_026411
 userdel	q4::inwork; -6861,15129 -6507,15007
 EOF
      },
@@ -24635,6 +24634,15 @@ EOF
        source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.363335.php',
        data  => <<EOF,
 userdel	q4::inwork 1878,24619 1852,24593 1797,24562 1747,24549
+EOF
+     },
+     { from  => 1446332400, # 2015-11-01 00:00
+       until => 1447714800, # 2015-11-17 00:00
+       text  => 'Friedlander Str., Bernstadter Weg, Ostritzer Str.: Asphaltarbeiten, Sperrung der Fahrbahn, voraussichtlich vom 02.11.2015 bis 16.11.2015 ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.386101.php',
+       data  => <<EOF,
+userdel	q4::inwork 20782,5206 20774,5131 20852,5106 20765,4839
 EOF
      },
     );
