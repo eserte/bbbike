@@ -1996,16 +1996,7 @@ userdel	q4::inwork; 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
          'until' => 1482501600
        },
        undef,
-       {
-         'data' => 'userdel	q4::inwork 2615,25225 2649,25170 2694,25132
-',
-         'from' => 1442095200,
-         'id' => 2735,
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.362889.php',
-         'text' => 'Dinkelsbühler Steig: zwischen Edelhofdamm und Hohenheimer Straße Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich vom 14. September 2015 bis zum 16. Oktober 2015',
-         'type' => 'handicap',
-         'until' => 1445032799
-       },
+       undef,
        {
          'data' => 'userdel	q4::inwork; 9727,17804 9835,17797 10053,17777 10179,17772 10311,17764 10459,17754
 ',
