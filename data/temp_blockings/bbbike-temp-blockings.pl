@@ -290,13 +290,13 @@ EOF
      #   #file  => 'rixdorfer_weihnachtsmarkt.bbd', # XXX do not use anymore!!!
      #   data => '', # dummy
      # },
-     { from  => $isodate2epoch->("2014-11-24 00:00:00"), # 1353884400, # 2012-11-26 00:00, # 1290962654, # PERIODISCH! # früher: 1102672800, # 2004-12-10 11:00
-       until => $isodate2epoch->("2014-12-23 23:59:59"), # 1356303599, # 2012-12-23 23:59, # 1293145199, # PERIODISCH! # früher: 1102805999, # 2004-12-11 23:59
+     { from  => $isodate2epoch->("2015-11-25 00:00:00"), # 1353884400, # 2012-11-26 00:00, # 1290962654, # PERIODISCH! # früher: 1102672800, # 2004-12-10 11:00
+       until => $isodate2epoch->("2015-12-23 23:59:59"), # 1356303599, # 2012-12-23 23:59, # 1293145199, # PERIODISCH! # früher: 1102805999, # 2004-12-11 23:59
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 11]],
-       text  => 'Spandauer Weihnachtsmarkt, vom 25.11.2014 bis 23.12.2014',
+       text  => 'Spandauer Weihnachtsmarkt, vom 26.11.2015 bis 23.12.2015',
        type  => 'gesperrt',
-       source_id => 'http://partner-fuer-spandau.de/Weihnachtsmarkt-2013_604_0.html',
+       source_id => 'http://www.partner-fuer-spandau.de/Weihnachtsmarkt-2014_683_0.html',
        data  => <<EOF,
 userdel	2::temp -3275,14407 -3231,14383 -3204,14368 -3155,14340
 userdel	2::temp -3275,14407 -3338,14333
@@ -3352,13 +3352,13 @@ EOF
 userdel	1 -1661,-1714 -1715,-1767 -1921,-1931 -2049,-2165
 EOF
      },
-     { from  => $isodate2epoch->("2014-11-23 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-01-04 23:59:59"), # 1357513199, # 2013-01-06 23:59 # 1325458800, # 2012-01-02 00:00 # PERIODISCH!
+     { from  => $isodate2epoch->("2015-11-22 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-01-03 23:59:59"), # 1357513199, # 2013-01-06 23:59 # 1325458800, # 2012-01-02 00:00 # PERIODISCH!
        periodic => 1,
-       recurrences => [['yearly', days => 26, months => 11]],
-       text  => 'Weihnachtsmarkt an der Gedächtniskirche, vom 24. November 2014 bis 04. Januar 2015',
+       recurrences => [['yearly', days => 23, months => 11]],
+       text  => 'Weihnachtsmarkt an der Gedächtniskirche, vom 23. November 2015 bis 03. Januar 2016',
        type  => 'gesperrt',
-       source_id => 'http://www.berlin.de/tickets/suche/detail.php?id=944291',
+       source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/charlottenburg-wilmersdorf/971524-1323017-weihnachtsmarktanderged%C3%A4chtniskirche.html',
        data  => <<EOF,
 # sowieso schon mit q4 markiert, deshalb -> 2
 userdel	2::temp 5829,10964 5782,10884
@@ -17115,16 +17115,15 @@ EOF
 userdel	q4::inwork -4614,-35852 -4603,-35730
 EOF
      },
-     { from  => $isodate2epoch->("2014-11-23 00:00:00"), # 1 Tag Vorlauf # 1353279600, # 2012-11-19 00:00, # 1290380400, # PERIODISCH! # undef, # 
-       until => $isodate2epoch->("2014-12-26 23:59:59"), # 1356562799, # 2012-12-26 23:59, # 1293404400, # PERIODISCH! # früher: 1262300399, # 2009-12-31 23:59
+     { from  => $isodate2epoch->("2015-11-22 00:00:00"), # 1 Tag Vorlauf # 1353279600, # 2012-11-19 00:00, # 1290380400, # PERIODISCH! # undef, # 
+       until => $isodate2epoch->("2015-12-27 23:59:59"), # 1356562799, # 2012-12-26 23:59, # 1293404400, # PERIODISCH! # früher: 1262300399, # 2009-12-31 23:59
        periodic => 1,
        recurrences => [['yearly', days => 19, months => 11]],
-       text  => 'Winterwelt am Potsdamer Platz, Alte Potsdamer Str. gesperrt, bis 26. Dezember 2014',
+       text  => 'Winterwelt am Potsdamer Platz, Alte Potsdamer Str. gesperrt, 23. November 2015 bis 27. Dezember 2015',
        type  => 'gesperrt',
-       source_id => 'http://www.winterwelt-berlin.de/',
+       source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971680-955635-winterweltampotsdamerplatz.html',
        data  => <<EOF,
 #: note: Winterwelt bereits ab 2.11.2014 (bis 4.1.2015), Weihnachtsmarkt erst ab dem 24.11.2014
-#: by: http://www.berlin.de/tickets/suche/detail.php?id=962671
 userdel	2::temp 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324
 #userdel	2::temp 8318,11324 8280,11296 8278,11257
 #: XXX_prog "3::temp" geht nicht?
@@ -21371,15 +21370,15 @@ userdel	q4::inwork 13150,7845 13103,7889
 userdel	q4::inwork 13085,7904 13117,7939 13151,7914
 EOF
      },
-     { from  => $isodate2epoch->("2014-11-28 06:00:00"), # 1385679600, # 2013-11-29 00:00 - 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-11-30 23:59:59"), # 1385938799, # 2013-12-01 23:59
+     { from  => $isodate2epoch->("2015-11-27 06:00:00"), # 1385679600, # 2013-11-29 00:00 - 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-11-29 23:59:59"), # 1385938799, # 2013-12-01 23:59
        periodic => 1,
        recurrences => [['yearly', days => 28, months => 11]], # zwei Termine, 1. und 3. Advent
-       text  => 'Bahnhofstr. (Lichtenrade): Weihnachtsmarkt zwischen Riedingerstr. und Goltzstr, Straße gesperrt, 29.11.2014 und 30.11.2014',
+       text  => 'Bahnhofstr. (Lichtenrade): Weihnachtsmarkt zwischen Riedingerstr. und Goltzstr, Straße gesperrt, 28.11.2015 und 29.11.2015',
        type  => 'gesperrt',
        source_id => 'IM_020815',
        data  => <<EOF,
-#: by: http://www.weihnachteninberlin.de/weihnachtsmaerkte/tempelhof-schoeneberg/1001683-1328179-30weihnachtsmarktinderbahnhofstra%C3%9Felich.html ("genauer Termin steht noch nicht fest")
+#: by: http://www.weihnachteninberlin.de/weihnachtsmaerkte/tempelhof-schoeneberg/1001683-1328179-weihnachtsmarktinderbahnhofstra%C3%9Felichte.html
 userdel	2::temp 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
 EOF
      },
@@ -22407,17 +22406,14 @@ EOF
 	2::night 7811,13344 7784,13392 7767,13431 7732,13484 7696,13470
 EOF
      },
-     { from  => $isodate2epoch->("2014-11-23 00:00:00"), # 1385334000, # 2013-11-25 00:00
-       until => $isodate2epoch->("2014-12-28 23:59:59"), # 1388357999, # 2013-12-29 23:59
+     { from  => $isodate2epoch->("2015-11-22 00:00:00"), # 1385334000, # 2013-11-25 00:00
+       until => $isodate2epoch->("2015-12-27 23:59:59"), # 1388357999, # 2013-12-29 23:59
        periodic => 1,
-       recurrences => [['yearly', days => 24, months => 11]],
-       text  => 'Weihnachtsmarkt am Luisenplatz: geänderte Radverkehrsführung, 24.11.2014 - 28.12.2014',
+       recurrences => [['yearly', days => 23, months => 11]],
+       text  => 'Weihnachtsmarkt am Luisenplatz: geänderte Radverkehrsführung, 23.11.2015 - 27.12.2015',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.potsdam.de/cms/beitrag/10046424/302934/
-#: by: http://www.potsdam.de/cms/dokumente/10050614_996205/91842041/Radverkehrsfuehrung_Gro%C3%9Fveranstaltungen.pdf
-#: by: http://www.potsdam.de/cms/ziel/302934/DE
-#: by: http://www.mobil-potsdam.de/fileadmin/user_upload/Pdf/Radverkehrsfuehrung_Grossveranstaltungen.pdf
+#: by: https://www.potsdam.de/content/weihnachtliches-potsdam-1
 userdel	1::temp -13556,-1182 -13643,-1220
 EOF
      },
@@ -24643,6 +24639,15 @@ EOF
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.386101.php',
        data  => <<EOF,
 userdel	q4::inwork 20782,5206 20774,5131 20852,5106 20765,4839
+EOF
+     },
+     { from  => undef, # 
+       until => $isodate2epoch->("2015-12-07 04:00:00"), # undef, # XXX
+       text  => 'Wühlischstr.: Fahrbahn zwischen Libauer Str. und Seumestr. in Richtung Osten gesperrt, bis 07.12.2015',
+       type  => 'handicap',
+       source_id => 'IM_026644',
+       data  => <<EOF,
+userdel	q4::inwork; 13895,11663 13954,11647 13996,11631 14065,11605 14211,11552 14305,11514
 EOF
      },
     );

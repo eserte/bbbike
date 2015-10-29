@@ -102,7 +102,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6183 (Baubeginn erst 2015)
 #: XXX Baubeginn des ersten Abschnitts: 3. Quartal 2014
-#: last_checked: 2015-10-13
+#: last_checked: 2015-10-29
 #: check_frequency: 60d
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -137,10 +137,10 @@ Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 #: XXX Baumaßnahme 1.45 (Realisierung nach 2011)
 #: XXX_osm: laut osm existieren bereits zumindest zwischen Schulstr. und Nettelbeckplatz Radwege (track), was aber definitiv nicht der Fall ist und niemals der Fall sein wird
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: osm_watch: way id="120633717" version="11"
-#: osm_watch: way id="162964323" version="9"
-#: osm_watch: way id="4541085" version="20"
-#: osm_watch: way id="4638315" version="16"
+#: osm_watch: way id="120633717" version="12"
+#: osm_watch: way id="162964323" version="11"
+#: osm_watch: way id="4541085" version="21"
+#: osm_watch: way id="4638315" version="17"
 #: XXX laut rbbtext und fritz Bauarbeiten
 #: last_checked: 2015-04-09 vvv
 #: next_check: 2015-10-19 vvv
@@ -237,8 +237,8 @@ Gartenfelder Str.: Radspur wird gebaut, Realisierung bis April 2015	?::inwork; -
 #: by: ^^^
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) vvv
-#: osm_watch: way id="25219757" version="9"
-#: osm_watch: way id="4600236" version="11"
+#: osm_watch: way id="25219757" version="11"
+#: osm_watch: way id="4600236" version="13"
 #: last_checked: 2015-09-19
 #: check_frequency: 120d
 Stromstr., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,13517 6228,13324
@@ -564,7 +564,7 @@ Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualität?
 #: XXX Asphaltierung
 #: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7644 (Benennungsvorschlag)
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20150407.1145.401632.html (Bauarbeiten bis September 2015)
-#: osm_watch: way id="24974528" version="10"
+#: osm_watch: way id="24974528" version="11"
 #: last_checked: 2014-09-13
 #: next_check: 2015-09-01
 Sternbergpromenade: Umgestaltung, Havel-Radweg wird hier offiziell entlanggeführt	?::inwork -2926,14496 -2931,14455 -3059,14230 -3146,14145
@@ -1283,6 +1283,31 @@ Am Kirchendreieck: Lage der Straße? Qualität?	? 23922,13085 23960,13325
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#
+#: by: fritz
+Hertzallee: Sperrung zwischen Jebensstr. und Fasanenstr. bis 2015-11-06, gibt es Einschränkungen für Radfahrer?	? 5587,11397 5352,11502
+# 
+#: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.390615.php
+Neues Ufer: Straßenbauarbeiten, Einschränkungen für Radfahrer? Gibt es nach den Bauarbeiten Änderungen (z.B. Schutzstreifen Richtung Norden)?	? 4295,13653 4363,13336
+# 
+#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.391294.php
+#: XXX Berlin.coords.data-Eintrag fehlt
+#: next_check: 2015-11-12
+Peter-Herzog-Weg: Benennung eines Wegs am Fort Hahneberg --- ist das hier? Werden Schilder existieren?	? -7606,12624 -7375,12577 -7294,12560
+# 
+#: XXX NEW	Suermondtstr. (Alt-Hohenschönhausen): Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Anfang 12/15) Richtung Rhinstr. zwischen Elsastr. und Klarastr., 22.10.2015 08:00 Uhr bis 03.12.2015 17:00 Uhr	IM_026596
+Suermondtstr.: Sperrung auch für Radfahrer relevant?	? 15918,16383 16099,16339 16263,16288
+# 
+Elsastr. oder Augustastr.?	? 15918,16383 15929,16342
+# 
+#: XXX NEW	Sterndamm (Johannisthal): Bauarbeiten, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Anfang 11/15) Richtung Michael-Brückner-Str. zwischen Königsheideweg und Groß-Berliner Damm, 22.10.2015 07:30 Uhr bis 07.11.2015 17:00 Uhr	IM_026599
+#: XXX NEW	Sterndamm (Johannisthal): Bauarbeiten, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Ende 11/15) Richtung Michael-Brückner-Str. zwischen Megedestr. und Königsheideweg, 29.10.2015 08:00 Uhr bis 29.11.2015 17:00 Uhr	IM_026668
+#: XXX NEW	Sterndamm (Johannisthal): Bauarbeiten, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Mitte 12/15) Richtung Michael-Brückner-Str. zwischen Lindhorstweg und Megedestr., 21.10.2015 08:00 Uhr bis 18.12.2015 17:00 Uhr	IM_026600
+Sterndamm: Sperrungen auch für Radfahrer relevant?	? 17108,4049 17244,4242 17261,4267 17290,4308 17387,4446 17428,4503 17471,4570 17520,4649 17542,4772 17601,5090 17648,5338
+# 
+#: XXX NEW	Kleine Präsidentenstr./Burgstr. (Mitte): Baustelle, Vollsperrung (bis Anfang 11/15) in beiden Richtungen zwischen Monbijouplatz und Anna-Louisa-Karsch-Str., 19.10.2015 08:00 Uhr bis 01.11.2015 17:00 Uhr	IM_026545
+Burgstr.: Sperrung auch für Radfahrer relevant?	? 10105,13004 10117,12973 10132,12941 10166,12777
+# 
 Weg zum Hangkantenpark: Qualität? Drängelgitter? Nachts beleuchtet? Steigung?	? 19279,1779 19317,1768 19373,1930 19266,1968
 # 
 Joachimsthaler Str.: ist hier eine Busspur? Geltungszeiten?	?; 5475,10808 5488,10978 5542,11075
@@ -1491,7 +1516,7 @@ Fanny-Zobel-Str.	? 13975,10187 14049,10164
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2015 vvv
 #: last_checked: 2015-09-27 vvv
 #: check_frequency: 90d vvv
-#: osm_watch: way id="4706348" version="16"
+#: osm_watch: way id="4706348" version="17"
 #: XXX ggfs. Sackgassen aufheben
 #: XXX PLZ=14167
 #: XXX "Biesheimring" im DPAG-Mitteilungsblatt, im Amtsblatt "Biesheimer Ring", auf dem Straßenschild "Biesheimring"
@@ -1613,7 +1638,7 @@ Kunersdorfer Str. (Potsdam): Kann die Heinrich-Mann-Allee in Höhe Kunersdorfer S
 (Alter Tornow - Fähre): Qualität (vielleicht Verbundsteinpflaster?)? Tatsächlich NN?	? -13980,-2690 -14045,-2595
 # 
 #: next_check_id: SUEDPANKE-2014
-#: osm_watch: way id="327596403" version="1"
+#: osm_watch: way id="327596411" version="1"
 #: XXX culdesac-orig entfernen, sobald die Verlängerung erfolgt ist
 #: last_checked: 2015-05-12
 #: check_frequency: 360d
