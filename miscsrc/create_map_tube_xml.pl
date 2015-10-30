@@ -213,6 +213,7 @@ if ($output_format eq 'Map::Tube') {
     $doc->addChild($doc->createComment('Created by ' . basename(__FILE__) . ' (part of BBBike)'));
     my $tube = $doc->createElement('tube');
     $doc->setDocumentElement($tube);
+    $tube->setAttribute(name => 'Berlin Metro');
     if ($include_lines_file) {
  	my $include_lines_contents = do { local $/; open my $fh, $include_lines_file or die $!; <$fh> };
  	my $fragment = XML::LibXML->new->parse_balanced_chunk($include_lines_contents);
