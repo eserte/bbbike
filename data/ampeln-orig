@@ -850,7 +850,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX_prog: zurzeit eine Fußgängerampel mit Anforderung, östlich versetzt, lange Wartezeiten
 #: source_id: INKO_117292
 #: source_id: INKO_104519
-#: last_checked: 2015-07-03
+#: last_checked: 2015-10-31
 #: check_frequency: 90d
 	X 4507,11728
 	X 3807,11859
@@ -1375,7 +1375,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 16837,17440
 	X 15662,16656
 	X 15437,16491
-	X 14045,16120
+	X 14056,16120
 	X 13788,16240
 	X 13104,16522
 # REMOVED (Ampel wurde ca. 2008-05-20 außer Betrieb genommen und abgebaut, by: Gordon Charles; http://www.berlin.de/ba-pankow/presse/archiv/20080508.0705.100069.html) --- X 12693,16700
@@ -1613,7 +1613,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 13747,13110
 	X 13844,12900
 	X 13073,13329
-	X 14770,14048
+	X 14771,14048
 	X 15912,13153
 	X 15850,14308
 	X 16314,14361
@@ -2575,12 +2575,12 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX temporäre Ampel (wegen Arbeiten an der Staatsoper und an der U-Bahn)
 #: XXX_prog Anforderungsampel
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
-#: last_checked: 2015-10-02
+#: last_checked: 2015-10-31
 #: check_frequency: 45d
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2015-10-15 vvv
+#: last_checked: 2015-10-31 vvv
 #: check_frequency: 30d vvv
 	X::inwork 9122,12509
 	X::inwork 9286,12886
@@ -2828,6 +2828,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: off: weekend (gesehen: Sa 2015-09-12 nachmittags)
 	F 9274,13963
 	X 9151,13941
+	F 10461,3757
 # 
 ################################################################################
 #: note: Potsdam vvv

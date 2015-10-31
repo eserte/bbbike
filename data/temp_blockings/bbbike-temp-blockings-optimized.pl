@@ -159,7 +159,26 @@ userdel	2::temp -3231,14383 -3293,14304
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 9986,13412 10317,13248
+',
+         'from' => 1448578800,
+         'id' => 166,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              28,
+                              'months',
+                              11
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (28.11.2015 - 29.11.2015)',
+         'type' => 'gesperrt',
+         'until' => 1448837999
+       },
        undef,
        undef,
        undef,
@@ -431,7 +450,26 @@ userdel	2::temp 5656,10876 5652,11004
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.weihnachtsmarkt-deutschland.de/berlin-lichtenrade-lichtermarkt.html
+userdel	q4::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
+',
+         'from' => 1448665200,
+         'id' => 417,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              29,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 29. November 2015 von 13 bis 18 Uhr)',
+         'type' => 'gesperrt',
+         'until' => 1448823600
+       },
        undef,
        undef,
        undef,
@@ -3116,7 +3154,16 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: fritz
+userdel	1::inwork 17886,5587 17736,5441
+',
+         'from' => undef,
+         'id' => 2469,
+         'text' => 'Sterndamm: Eisenbahnunterführung in Richtung Groß-Berliner Damm/Südostallee gesperrt',
+         'type' => 'gesperrt',
+         'until' => 1464040799
+       },
        undef,
        undef,
        undef,
@@ -3184,13 +3231,146 @@ userdel	2::night 17671,13132 17684,13133
        undef,
        undef,
        undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 9986,13412 10317,13248
+',
+         'from' => 1449270000,
+         'id' => 2515,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              6,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (5.12.2015 - 6.12.2015)',
+         'type' => 'gesperrt',
+         'until' => 1449442799
+       },
+       {
+         'data' => 'userdel	2::temp 9986,13412 10317,13248
+',
+         'from' => 1449788400,
+         'id' => 2516,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              13,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (12.12.2015 - 13.12.2015)',
+         'type' => 'gesperrt',
+         'until' => 1450047599
+       },
+       {
+         'data' => 'userdel	2::temp 9986,13412 10317,13248
+',
+         'from' => 1450393200,
+         'id' => 2517,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (19.12.2015 - 20.12.2015)',
+         'type' => 'gesperrt',
+         'until' => 1450652399
+       },
+       {
+         'data' => 'userdel	2::temp 11317,14564 11255,14572 11155,14554
+',
+         'from' => 1448708400,
+         'id' => 2518,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              29,
+                              'months',
+                              11
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 29. November 2015, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1448820000
+       },
+       {
+         'data' => 'userdel	2::temp 11317,14564 11255,14572 11155,14554
+',
+         'from' => 1449313200,
+         'id' => 2519,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              6,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 6. Dezember 2015, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1449424800
+       },
+       {
+         'data' => 'userdel	2::temp 11317,14564 11255,14572 11155,14554
+',
+         'from' => 1449918000,
+         'id' => 2520,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              13,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 13. Dezember 2015, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1450029600
+       },
+       {
+         'data' => 'userdel	2::temp 11317,14564 11255,14572 11155,14554
+',
+         'from' => 1450522800,
+         'id' => 2521,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 20. Dezember 2015, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1450634400
+       },
        undef,
        undef,
        undef,
@@ -3356,7 +3536,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
        undef,
        {
          'data' => '#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2015-09-19
+#: last_checked: 2015-10-31
 #: check_frequency: 90d
 userdel	q3::inwork 4503,10497 4485,10307
 ',
@@ -3606,35 +3786,16 @@ userdel	2::inwork 14674,9764 14697,9726 14910,9643 15052,9584 15174,9554 15321,9
          'from' => 1437289200,
          'id' => 2723,
          'source_id' => 'IM_025684',
-         'text' => 'Bouchéstr.: Baustelle, Fahrbahn zwischen Heidelberger Str. und Jordanstr. gesperrt, auf Gehweg ausweichen, 20.07.2015 09:00 Uhr bis 31.10.2015 17:00 Uhr ',
+         'text' => 'Bouchéstr.: Baustelle, Fahrbahn zwischen Heidelberger Str. und Jordanstr. gesperrt, auf Gehweg ausweichen, 20.07.2015 09:00 Uhr bis 21.11.2015 17:00 Uhr ',
          'type' => 'handicap',
-         'until' => 1446307200
+         'until' => 1448121600
        },
        undef,
        undef,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: wosch vvv
-#: confirmed_by: srt vvv
-#: XXX 30m zu jeder Seite der Kreuzung sind gesperrt; wann sind die Bauarbeiten fertig? vvv
-#: last_checked: 2015-10-09 vvv
-#: check_frequency: 7d vvv
-userdel	q3::inwork 12761,9190 12907,9073 13048,8956
-userdel	q3::inwork 12907,9073 12836,8980
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-#: confirmed_by ^^^
-#: by ^^^
-',
-         'from' => undef,
-         'id' => 2729,
-         'text' => 'Weichselplatz/Fuldastr./Weigandufer: Bauarbeiten, Ausweichen auf Gehweg',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: XXX wird der Asphalt nach den Bauarbeiten besser sein? (zurzeit Q1)
 #: next_check: 2015-12-01
@@ -3822,14 +3983,49 @@ userdel	q4::inwork 13369,7307 13322,7294 13150,7254 13043,7234
          'until' => 1447714800
        },
        {
-         'data' => 'userdel	q4::inwork; 13895,11663 13954,11647 13996,11631 14065,11605 14211,11552 14305,11514
+         'data' => '	q4::inwork; 13895,11663 13954,11647 13996,11631 14065,11605 14211,11552 14305,11514
+	q3::inwork 13954,11647 13981,11746
+	q3::inwork 14065,11605 14102,11715
 ',
          'from' => undef,
          'id' => 2753,
          'source_id' => 'IM_026644',
-         'text' => 'Wühlischstr.: Fahrbahn zwischen Libauer Str. und Seumestr. in Richtung Osten gesperrt, bis 07.12.2015',
+         'text' => 'Wühlischstr.: Fahrbahn zwischen Libauer Str. und Seumestr. in Richtung Osten gesperrt, auch ist das Überqueren der Fahrbahn teilweise nicht möglich, bis 07.12.2015',
          'type' => 'handicap',
          'until' => 1449457200
+       },
+       {
+         'data' => 'userdel	2::inwork 10220,13098 10105,13004
+userdel	q4::inwork 10105,13004 10117,12973 10132,12941
+userdel	q3::inwork 9932,13109 10105,13004
+',
+         'from' => 1445148000,
+         'id' => 2754,
+         'source_id' => 'IM_026545',
+         'text' => 'Kleine Präsidentenstr./Burgstr.: Sperrung der Fahrbahn, Ausweichen auf Gehweg, außerdem ist die Große Präsidentenstr. komplett gesperrt, 19.10.2015 08:00 Uhr bis 01.11.2015 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1446393600
+       },
+       {
+         'data' => '	q4::inwork; 14887,11929 14835,11840 14802,11784 14794,11770 14710,11626 14639,11512
+	q3::inwork 14645,11670 14710,11626
+	q3::inwork 14708,11820 14794,11770
+',
+         'from' => 1446303841,
+         'id' => 2755,
+         'text' => 'Weichselstr./Holteistr.: Bauarbeiten, Fahrbahn Richtung Süden gesperrt, auch ist das Überqueren der Fahrbahn teilweise nicht möglich, bis 07.12.2015',
+         'type' => 'handicap',
+         'until' => 1449457200
+       },
+       {
+         'data' => 'userdel	q4::inwork; 19904,3464 20012,3532
+',
+         'from' => 1445320800,
+         'id' => 2756,
+         'source_id' => 'IM_026593',
+         'text' => 'Dörpfeldstr.: zwischen Adlergestell und Anna-Seghers-Str. Richtung Köpenick Bauarbeiten, Fahrbahn gesperrt, 21.10.2015 08:00 Uhr bis 02.11.2015 09:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1446451200
        }
      
 );

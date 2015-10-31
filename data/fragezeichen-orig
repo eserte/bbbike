@@ -23,7 +23,7 @@
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: osm_watch: way id="153373879" version="5"
 #: osm_watch: way id="153373877" version="4"
-#: last_checked: 2015-10-08
+#: last_checked: 2015-10-31
 #: check_frequency: 60d
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 # 
@@ -87,7 +87,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 # 
 #: XXX Baumaßnahme 2.29 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Realisierung anscheinend ungewiss)
-#: last_checked: 2015-09-30
+#: last_checked: 2015-10-31
 #: check_frequency: 180d
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
@@ -180,9 +180,9 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 #: osm_watch: way id="182782708" version="3"
 #: osm_watch: way id="168307255" version="3"
 #: osm_watch: way id="4687243" version="23"
-#: last_checked: 2015-09-02
+#: last_checked: 2015-10-31
 #: check_frequency: 60d
-Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14650,14322 14358,14155 14298,14015 14261,13932 14218,13834
+Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14658,14328 14464,14216 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
 #: last_checked: 2015-09-23
@@ -215,8 +215,8 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2015-10-13
-#: check_frequency: 7d
+#: last_checked: 2015-10-31
+#: next_check: 2015-12-19
 Warschauer Str: Radspuren in Bau	?::inwork 13603,11538 13651,11731 13696,11920 13745,12118
 # 
 # REMOVED (vermutlich passiert nichts weiter) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: XXX wird auch das letzte Stück im Westen realisiert? --- #: osm_watch: way id="4424794" version="14" --- #: osm_watch: way id="30195541" version="9" --- #: last_checked: 2015-06-08 --- #: check_frequency: 60d --- Turmstr.: evtl. wird die Radspuren-Lücke hier geschlossen	? 5248,13434 5368,13406 5434,13398
@@ -301,7 +301,7 @@ Feuerbachstr.: Radspuren bis 2015 geplant	?::inwork 5582,6360 5702,6381 5781,640
 # REMOVED (realisiert) --- #: last_checked: 2013-07-06 --- #: next_check: 2013-10-13 --- Kamenzer Damm: Radspuren bis 2015 geplant	?::projected; 7487,3089 7115,3003
 # 
 #: osm_watch: way id="151617776" version="9"
-#: last_checked: 2015-07-23
+#: last_checked: 2015-10-31
 #: check_frequency: 90d
 Kaiserstr.: Radspuren bis 2015 geplant	?::projected 9310,4407 9192,4389 9079,4376
 # 
@@ -395,7 +395,7 @@ Pappelallee: Radspuren entstehen	?::projected 10881,15047 11119,15385 11183,1548
 #: XXX evtl. gibt es Einschränkungen wegen der Bauarbeiten
 #: XXX qualitaet: -> Q0 vermutlich
 #: next_check: 2017-03-01
-Schönstr.: Neubau geplant	?::projected 13391,16436 13630,16629 13789,16775 13861,16836 14006,16961 14136,17170
+Schönstr.: Neubau geplant	?::projected 13391,16436 13630,16629 13789,16775 13861,16836 13998,16956 14136,17170
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/beschreibung_konigsweg.pdf
 #: XXX wird auch der Parallelweg zur Wohngebietsstraße ausgebaut?
@@ -1295,18 +1295,14 @@ Neues Ufer: Straßenbauarbeiten, Einschränkungen für Radfahrer? Gibt es nach den 
 #: next_check: 2015-11-12
 Peter-Herzog-Weg: Benennung eines Wegs am Fort Hahneberg --- ist das hier? Werden Schilder existieren?	? -7606,12624 -7375,12577 -7294,12560
 # 
-#: XXX NEW	Suermondtstr. (Alt-Hohenschönhausen): Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Anfang 12/15) Richtung Rhinstr. zwischen Elsastr. und Klarastr., 22.10.2015 08:00 Uhr bis 03.12.2015 17:00 Uhr	IM_026596
-Suermondtstr.: Sperrung auch für Radfahrer relevant?	? 15918,16383 16099,16339 16263,16288
-# 
-Elsastr. oder Augustastr.?	? 15918,16383 15929,16342
+# REMOVED (Radfahrer dürfen auf dem Gehweg fahren, 18-20km/h möglich) --- #: XXX NEW	Suermondtstr. (Alt-Hohenschönhausen): Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Anfang 12/15) Richtung Rhinstr. zwischen Elsastr. und Klarastr., 22.10.2015 08:00 Uhr bis 03.12.2015 17:00 Uhr	IM_026596 --- Suermondtstr.: Sperrung auch für Radfahrer relevant?	? 15918,16383 16099,16339 16263,16288
 # 
 #: XXX NEW	Sterndamm (Johannisthal): Bauarbeiten, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Anfang 11/15) Richtung Michael-Brückner-Str. zwischen Königsheideweg und Groß-Berliner Damm, 22.10.2015 07:30 Uhr bis 07.11.2015 17:00 Uhr	IM_026599
 #: XXX NEW	Sterndamm (Johannisthal): Bauarbeiten, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Ende 11/15) Richtung Michael-Brückner-Str. zwischen Megedestr. und Königsheideweg, 29.10.2015 08:00 Uhr bis 29.11.2015 17:00 Uhr	IM_026668
 #: XXX NEW	Sterndamm (Johannisthal): Bauarbeiten, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Mitte 12/15) Richtung Michael-Brückner-Str. zwischen Lindhorstweg und Megedestr., 21.10.2015 08:00 Uhr bis 18.12.2015 17:00 Uhr	IM_026600
 Sterndamm: Sperrungen auch für Radfahrer relevant?	? 17108,4049 17244,4242 17261,4267 17290,4308 17387,4446 17428,4503 17471,4570 17520,4649 17542,4772 17601,5090 17648,5338
 # 
-#: XXX NEW	Kleine Präsidentenstr./Burgstr. (Mitte): Baustelle, Vollsperrung (bis Anfang 11/15) in beiden Richtungen zwischen Monbijouplatz und Anna-Louisa-Karsch-Str., 19.10.2015 08:00 Uhr bis 01.11.2015 17:00 Uhr	IM_026545
-Burgstr.: Sperrung auch für Radfahrer relevant?	? 10105,13004 10117,12973 10132,12941 10166,12777
+# REMOVED (-> temp_blocking) --- #: XXX NEW	Kleine Präsidentenstr./Burgstr. (Mitte): Baustelle, Vollsperrung (bis Anfang 11/15) in beiden Richtungen zwischen Monbijouplatz und Anna-Louisa-Karsch-Str., 19.10.2015 08:00 Uhr bis 01.11.2015 17:00 Uhr	IM_026545 --- Burgstr.: Sperrung auch für Radfahrer relevant?	? 10105,13004 10117,12973 10132,12941 10166,12777
 # 
 Weg zum Hangkantenpark: Qualität? Drängelgitter? Nachts beleuchtet? Steigung?	? 19279,1779 19317,1768 19373,1930 19266,1968
 # 
@@ -1363,10 +1359,7 @@ EUREF-Campus: Innenfläche wird benannt; genaue Wegführung, Qualität?	? 7250,8223
 #: check_frequency: 60d
 Siemensstr.: werden hier vielleicht auch Radspuren markiert?	? 5746,14090 5708,14077 5647,14067 5628,14063 5443,14028 5322,14044
 # 
-#: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20150723.1925.402307.html
-#: XXX Endedatum laut fritz 2015-08-28, laut Pressemitteilung: 2015-09-30
-#: next_check: 2015-09-30
-Weißenseer Weg: wird der Radweg nach den Bauarbeiten besser sein?	? 14843,15007 14959,14752
+# REMOVED (nein) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20150723.1925.402307.html --- #: XXX Endedatum laut fritz 2015-08-28, laut Pressemitteilung: 2015-09-30 --- #: next_check: 2015-09-30 --- Weißenseer Weg: wird der Radweg nach den Bauarbeiten besser sein?	? 14843,15007 14959,14752
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5207
 #: last_checked: 2015-10-09
@@ -1711,7 +1704,7 @@ Alt-Karow: evtl. wird hier ein Schutzstreifen Richtung Süden angelegt	? 15726,23
 Sonnenallee/Ziegrastr.: wird hier eine Ampel entstehen?	?::projected 14174,7505
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14708&options=8 (beschlossen durch BVV)
-#: last_checked: 2015-09-05
+#: last_checked: 2015-10-31
 #: check_frequency: 60d
 Thomasstr./Hermannstr.: sichere Querung, wie wird/könnte die Lösung hier aussehen?	?::projected 12193,7412 12180,7387 12168,7368
 # 
@@ -2145,7 +2138,7 @@ Am Cleantech Business Park: Weg in Bau: wann wird der Weg eröffnet?	?::inwork 19
 #: by: http://www.berlin.de/imperia/md/content/baneukoelln/b-plan/auslegung/planzeichnungen/8_9bab_pl.pdf?start&ts=1393408069&file=8_9bab_pl.pdf
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4570
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/45081036990958011/990958011/00040576/76-Anlagen/06/8-9bab_pl.pdf
-#: last_checked: 2015-04-07
+#: last_checked: 2015-10-31
 #: check_frequency: 180d
 neue Straßen im Zuge des Bebauungsplanes 8-9bab: genaue Lage, Qualität, Straßennamen?	?::projected 11304,3764 11320,3733 11395,3753 11464,3662
 # 

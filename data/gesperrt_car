@@ -642,9 +642,9 @@ Neumannstr. -> Jenny-Lind-Str.: Mittelstreifen	3::igndisp 11508,17315 11522,1724
 Jenny-Lind-Str. -> Neumannstr.: Mittelstreifen	3::igndisp 11645,17271 11522,17248 11541,17153
 Neumannstr. -> Greta-Garbo-Str.: Mittelstreifen	3::igndisp 11522,17248 11508,17315 11353,17288
 Greta-Garbo-Str. -> Neumannstr.: Mittelstreifen	3::igndisp 11353,17288 11508,17315 11482,17459
-Straﬂenbahn	3nocross::ignrte 14045,16120 14248,16202 14346,16241
+Straﬂenbahn	3nocross::ignrte 14056,16120 14248,16202 14346,16241
 Berliner Allee -> Lindenallee: Straﬂenbahn	3::igndisp 14346,16241 14248,16202 14293,16073
-Lindenallee -> Berliner Allee: Straﬂenbahn	3::igndisp 14293,16073 14248,16202 14045,16120
+Lindenallee -> Berliner Allee: Straﬂenbahn	3::igndisp 14293,16073 14248,16202 14056,16120
 Straﬂenbahn	3nocross::ignrte 13401,15821 13432,15843 13487,15888 13512,15909
 Berliner Allee -> Streustr.: Straﬂenbahn	3::igndisp 13401,15821 13432,15843 13263,15930
 Streustr. -> Berliner Allee: Straﬂenbahn	3::igndisp 13263,15930 13432,15843 13487,15888
@@ -1076,8 +1076,8 @@ Adlergestell -> Steinbachstr.: Mittelstreifen	3::igndisp 19472,3922 19587,3801 1
 Landsberger Allee -> Alte Rhinstr.: ‹berqueren des Mittelstreifens verboten	3::igndisp 18365,14607 18183,14573 18225,14398
 Alte Rhinstr. -> Landsberger Allee: ‹berqueren des Mittelstreifens verboten	3::igndisp 18225,14398 18183,14573 18057,14549
 Straﬂenbahntrasse	3nocross::ignrte 14609,15921 14597,15970 14595,15980 14576,16069 14552,16171
-Indira-Gandhi-Str. -> Gounodstr.: Straﬂenbahntrasse	3::igndisp 14609,15921 14597,15970 14520,15937
-Gounodstr. -> Indira-Gandhi-Str.: Straﬂenbahntrasse	3::igndisp 14520,15937 14597,15970 14595,15980
+Indira-Gandhi-Str. -> Gounodstr.: Straﬂenbahntrasse	3::igndisp 14609,15921 14597,15970 14516,15943
+Gounodstr. -> Indira-Gandhi-Str.: Straﬂenbahntrasse	3::igndisp 14516,15943 14597,15970 14595,15980
 Indira-Gandhi-Str. -> Meyerbeerstr.: Straﬂenbahntrasse	3::igndisp 14595,15980 14576,16069 14484,16035
 Meyerbeerstr. -> Indira-Gandhi-Str.: Straﬂenbahntrasse	3::igndisp 14484,16035 14576,16069 14552,16171
 Lenther Steig	1 1022,14898 1037,14814 1042,14721
@@ -1251,9 +1251,9 @@ Douglasienweg: Poller	3 11567,4085 11563,4099 11633,4117
 Goldenes Horn: Poller	3 10561,3748 10563,3767 10586,4039
 Goldenes Horn: Poller	3 10586,4039 10563,3767 10561,3748
 Brusaer Weg: Poller	3 10248,3897 10236,3777 10047,3794
-Brusaer Weg: Poller	3 10248,3897 10236,3777 10561,3748
+Brusaer Weg: Poller	3 10248,3897 10236,3777 10461,3757
 Brusaer Weg: Poller	3 10047,3794 10236,3777 10248,3897
-Brusaer Weg: Poller	3 10561,3748 10236,3777 10248,3897
+Brusaer Weg: Poller	3 10461,3757 10236,3777 10248,3897
 Teikeweg: Poller	3 9519,4537 9412,4537 9408,4568
 Teikeweg: Poller	3 9519,4537 9412,4537 9428,4419
 Teikeweg: Poller	3 9408,4568 9412,4537 9519,4537

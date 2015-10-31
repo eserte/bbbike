@@ -15,9 +15,11 @@ Weichsel/Scharnweberstr.: Tram auf Fahrbahn	CS 14639,11512 14710,11626 14794,117
 #: XXX_prog: allerdings existieren Radwege, sollte also bei Optimierungen ignoriert werden
 Wendenschloßstr.: Tram auf Fahrbahn	CS 22674,4309 22641,4095 22640,4081 22643,4058 22668,3884 22714,3558 22742,3382 22811,3037 22831,2915 22849,2856 22904,2675 22982,2418 23064,2147 23099,2031 23185,1649
 Degnerstr.: Tram auf Fahrbahn	CS; 16448,15593 16475,15659 16537,15827
-# REMOVED (hier gibt es Radverkehrsanlagen) --- Herzbergstr.: Tram auf Fahrbahn	CS 15513,13539 15626,13541 15653,13542 15724,13544
-Herzbergstr.: Tram auf Fahrbahn	CS 15724,13544 15896,13547 16629,13532 16866,13532 17201,13519 17232,13518
-Karl-Lade-Str.: Tram auf Fahrbahn	CS 14218,13834 14425,13780 14635,13725 14821,13674
+# REMOVED (hier gibt es Radverkehrsanlagen) --- Herzbergstr.: Tram auf Fahrbahn	CS 15513,13539 15626,13541 15653,13542 15724,13544 15896,13547
+Herzbergstr.: Tram auf Fahrbahn	CS 15896,13547 16629,13532 16866,13532 17201,13519 17232,13518
+# REMOVED (Radweg existiert) --- Karl-Lade-Str.: Tram auf Fahrbahn	CS 14218,13834 14425,13780
+Karl-Lade-Str.: Tram auf Fahrbahn	CS 14425,13780 14635,13725 14751,13693
+# REMOVED (Radweg existiert) --- Karl-Lade-Str.: Tram auf Fahrbahn	CS 14751,13693 14821,13674
 Brücken/Edisonstr.: Tram auf Fahrbahn	CS; 17962,6674 17992,6436
 # Radweg ist aber benutzungspflichtig --- Brücken/Edisonstr.: Tram auf Fahrbahn	CS; 17992,6436 17952,6246 17930,6175 17900,6072
 Wilhelminenhofstr.: Tram auf Fahrbahn	CS; 19024,5830 18932,5926 18861,6000 18843,6013 18766,6067 18670,6132 18574,6197 18473,6265 18423,6285 18343,6318 18191,6363 17992,6436
@@ -84,7 +86,7 @@ Quickborner Str.: Tram auf der Fahrbahn	CS 8162,21302 8016,21499
 Alexanderplatz - Wadzekstr.: Tram auf der Fahrbahn	CS 11139,13008 11191,13080 11235,13143 11291,13218
 Bernkasteler Str.: Tram auf der Fahrbahn	CS 14558,16907 14673,16895 14739,16891
 #: XXX Bleiben die Straßenbahngleise in Richtung Südwesten nach den Bauarbeiten bestehen?
-#: next_check: 2015-10-31
+#: next_check: 2016-03-31
 Sterndamm: inaktive Straßenbahngleise	CS; 17886,5587 17736,5441
 ######################################################################
 # Potsdam

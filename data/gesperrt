@@ -415,7 +415,8 @@ Begonienplatz	1 4193,4897 4132,4988
 Begonienplatz	1 4173,5013 4231,4922
 Asternplatz	1 3775,4632 3710,4728 3707,4752 3716,4764 3740,4766 3754,4755 3815,4657
 Kammgasse	1 1992,24354 2213,24393 2264,24414 2302,24451 2325,24486
-Herbert-Tschäpe-Str.	1 14358,14155 14481,14095 14510,14104 14710,14185
+Herbert-Tschäpe-Str.	1 14358,14155 14481,14095 14510,14104 14717,14188
+Herbert-Tschäpe-Str.	1 14464,14216 14510,14104
 Strausberger Platz	1 11976,12595 12005,12619 12050,12616 12099,12580 12114,12546 12083,12518 12028,12519 11988,12546 11976,12595
 Magirusstr.	1 8199,6583 7985,6598
 Egelingzeile	1 7976,6403 8194,6384
@@ -1378,8 +1379,8 @@ Straßenbahntrasse	3nocross::ignrte 10897,17274 10892,17330 10886,17396
 Berliner Str. -> Max-Lingner-Str.: Straßenbahntrasse	3::igndisp 10886,17396 10892,17330 11094,17339
 Max-Lingner-Str. -> Berliner Str.: Straßenbahntrasse	3::igndisp 11094,17339 10892,17330 10897,17274
 Straßenbahntrasse	3nocross::ignrte 10886,17396 10880,17469 10878,17490
-Straßenbahntrasse	3nocross::ignrte 13737,15994 13826,16026 14014,16106
-Berliner Allee -> Herbert-Baum-Str.: Straßenbahntrasse	3::igndisp 14014,16106 13826,16026 13869,15912
+Straßenbahntrasse	3nocross::ignrte 13737,15994 13826,16026 14015,16103
+Berliner Allee -> Herbert-Baum-Str.: Straßenbahntrasse	3::igndisp 14015,16103 13826,16026 13869,15912
 Herbert-Baum-Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13869,15912 13826,16026 13737,15994
 Straßenbahntrasse	3nocross::ignrte 12166,21208 12188,21330 12209,21448
 Straßenbahntrasse	3nocross::ignrte 10923,13156 10976,13229 11012,13278
@@ -2794,7 +2795,6 @@ Am Theodorpark: noch gesperrt	2::inwork 24905,10955 25053,10959 25143,10961
 Theodorstr.: Bauarbeiten, gesperrt	2::inwork 24897,11083 24905,10955 24913,10884 24919,10818 24922,10785 24923,10774
 (Weg im Theodorpark)	2::inwork 24922,10785 24954,10770 25021,10768 25062,10762 25148,10769
 Pfarrhufenanger: noch in Bau, gesperrt	2::inwork 25599,13069 25441,12838 25266,12622
-Am Gutspark: Bauarbeiten	2::inwork 15747,12880 15746,12967 15826,12971
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076 9559,13087
 Schwarzer Weg: wegen Straßenbau gesperrt	2::inwork 17295,7323 17295,7330 17296,7396
 Schleuse - Lindenufer: wegen Bauarbeiten gesperrt	2::inwork -2944,14652 -2922,14642 -2907,14534 -2926,14496 -2964,14478
@@ -2826,7 +2826,6 @@ Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, gg
 Lyonstr.: noch nicht geöffnet	2::inwork 12188,21330 12204,21327 12322,21378 12443,21439
 Marseillestr.: noch nicht geöffnet	2::inwork 12402,21537 12404,21532 12411,21515 12443,21439
 Toulonstr.: noch nicht geöffnet	2::inwork 12404,21532 12480,21560
-Luisenstr. Höhe Charité: Straße wegen Bauarbeiten komplett bis zum 31.10.2015 gesperrt, auch für Radfahrer und Fußgänger	2::inwork 8665,13353 8648,13498
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352
