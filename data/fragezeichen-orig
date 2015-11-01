@@ -137,8 +137,7 @@ Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 #: XXX Baumaßnahme 1.45 (Realisierung nach 2011)
 #: XXX_osm: laut osm existieren bereits zumindest zwischen Schulstr. und Nettelbeckplatz Radwege (track), was aber definitiv nicht der Fall ist und niemals der Fall sein wird
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: osm_watch: way id="120633717" version="12"
-#: osm_watch: way id="162964323" version="11"
+#: osm_watch: way id="162964323" version="12"
 #: osm_watch: way id="4541085" version="21"
 #: osm_watch: way id="4638315" version="17"
 #: XXX laut rbbtext und fritz Bauarbeiten
@@ -195,8 +194,8 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753
 # 
 #: XXX Baumaßnahme 9.16 (Realisierung nach 2011) (auch im Maßnahmenkatalog Treptow-Köpenick, Bsw.7)
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5154
-#: last_checked: 2015-07-22
-#: next_check: 2015-10-20
+#: last_checked: 2015-11-01
+#: check_frequency: 90d
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15553,7408 15560,7400 15609,7347 15695,7254 15928,6996 15977,6942 16060,6850 16146,6755 16273,6609 16280,6601 16333,6544 16425,6445
 # 
 # REMOVED (teilweise realisiert) --- #: XXX Baumaßnahme 9.19 (Realisierung nach 2011) --- #: XXX vielleicht werden im Zuge der Bauarbeiten in der Oberspreestr. auch Radverkehrsanlagen angelegt? --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php --- #: source_id: IM_022377 --- #: last_checked: 2014-08-08 --- #: next_check: 2014-12-17 --- Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)	?::projected; 20949,4775 20765,4839 20689,4862 20383,4963 19965,5101 19737,5176 19715,5185 19632,5211 19534,5242
@@ -436,8 +435,7 @@ Rosestr.: Ist hier jetzt vielleicht asphaltiert?	? 21329,832 21497,1042
 #: next_check: 2016-08-01
 Keltensteig - Teutonenstr.: wird nach der Fahrbahninstandsetzung die Qualität besser werden?	?::projected 20302,1613 20369,1476 20405,1460 20580,1406
 # 
-#: last_checked: 2015-09-18
-#: check_frequency: 14d
+#: last_checked: 2015-11-01
 Treptower Park, mittlerer Weg: wann ist hier fertig gebaut? wie geht der Weg weiter? Qualität? Beleuchtung?	?::inwork 15119,9397 15169,9380 15247,9388 15325,9354 15453,9259
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2015
@@ -453,7 +451,7 @@ Oskar-Helene-Park: Wann sind die Bauarbeiten beendet? genaue Straßenführung? Qua
 #: XXX Baumaßnahme GR9.24 (Realisierung nach 2011)
 #: XXX wird hier asphaltiert werden? Was ist mit dem Schlenker am Spreepark?
 #: osm_watch: way id="207761374" version="2"
-#: last_checked: 2015-08-08
+#: last_checked: 2015-11-01
 #: check_frequency: 180d
 Wasserweg: wird hier asphaltiert werden? Was ist mit dem "Schlenker" am Spreepark-Eingang?	?::projected 15680,8914 15873,8884 16023,8860 16161,8852 16201,8860
 # 
@@ -790,7 +788,7 @@ Straße 6 (Mariendorf): wird in Zukunft vielleicht entstehen	? 9099,4204 9079,437
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=2690
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00054831/31-Anlagen/06/B0522ZB3.pdf
 #: osm_watch: way id="199532117" version="1"
-#: last_checked: 2015-09-26
+#: last_checked: 2015-11-01
 #: check_frequency: 180d
 Uferweg: wird verlängert, wann?	?::projected 18650,5707 18604,5898 18420,6009
 # 
@@ -883,7 +881,7 @@ Tempelhofer Damm: wird der Radweg Richtung Norden erneuert?	?::projected; 9242,7
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/35re.pdf/file?y=2014
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20141007.1540.399597.html
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2015 (Grundstücksnummerierungen)
-#: last_checked: 2015-08-15 vvv
+#: last_checked: 2015-11-01 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straßenname)
 #: osm_watch: way id="290255259" version="2"
@@ -1296,12 +1294,7 @@ Neues Ufer: Straßenbauarbeiten, Einschränkungen für Radfahrer? Gibt es nach den 
 Peter-Herzog-Weg: Benennung eines Wegs am Fort Hahneberg --- ist das hier? Werden Schilder existieren?	? -7606,12624 -7375,12577 -7294,12560
 # 
 # REMOVED (Radfahrer dürfen auf dem Gehweg fahren, 18-20km/h möglich) --- #: XXX NEW	Suermondtstr. (Alt-Hohenschönhausen): Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Anfang 12/15) Richtung Rhinstr. zwischen Elsastr. und Klarastr., 22.10.2015 08:00 Uhr bis 03.12.2015 17:00 Uhr	IM_026596 --- Suermondtstr.: Sperrung auch für Radfahrer relevant?	? 15918,16383 16099,16339 16263,16288
-# 
-#: XXX NEW	Sterndamm (Johannisthal): Bauarbeiten, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Anfang 11/15) Richtung Michael-Brückner-Str. zwischen Königsheideweg und Groß-Berliner Damm, 22.10.2015 07:30 Uhr bis 07.11.2015 17:00 Uhr	IM_026599
-#: XXX NEW	Sterndamm (Johannisthal): Bauarbeiten, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Ende 11/15) Richtung Michael-Brückner-Str. zwischen Megedestr. und Königsheideweg, 29.10.2015 08:00 Uhr bis 29.11.2015 17:00 Uhr	IM_026668
-#: XXX NEW	Sterndamm (Johannisthal): Bauarbeiten, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Mitte 12/15) Richtung Michael-Brückner-Str. zwischen Lindhorstweg und Megedestr., 21.10.2015 08:00 Uhr bis 18.12.2015 17:00 Uhr	IM_026600
-Sterndamm: Sperrungen auch für Radfahrer relevant?	? 17108,4049 17244,4242 17261,4267 17290,4308 17387,4446 17428,4503 17471,4570 17520,4649 17542,4772 17601,5090 17648,5338
-# 
+# REMOVED (-> temp blockings) --- #: XXX NEW	Sterndamm (Johannisthal): Bauarbeiten, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Anfang 11/15) Richtung Michael-Brückner-Str. zwischen Königsheideweg und Groß-Berliner Damm, 22.10.2015 07:30 Uhr bis 07.11.2015 17:00 Uhr	IM_026599 --- #: XXX NEW	Sterndamm (Johannisthal): Bauarbeiten, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Ende 11/15) Richtung Michael-Brückner-Str. zwischen Megedestr. und Königsheideweg, 29.10.2015 08:00 Uhr bis 29.11.2015 17:00 Uhr	IM_026668 --- #: XXX NEW	Sterndamm (Johannisthal): Bauarbeiten, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis Mitte 12/15) Richtung Michael-Brückner-Str. zwischen Lindhorstweg und Megedestr., 21.10.2015 08:00 Uhr bis 18.12.2015 17:00 Uhr	IM_026600 --- Sterndamm: Sperrungen auch für Radfahrer relevant?	? 17110,4055 17244,4242 17261,4267 17290,4308 17387,4446 17428,4503 17471,4570 17520,4649 17542,4772 17601,5090 17648,5338
 # REMOVED (-> temp_blocking) --- #: XXX NEW	Kleine Präsidentenstr./Burgstr. (Mitte): Baustelle, Vollsperrung (bis Anfang 11/15) in beiden Richtungen zwischen Monbijouplatz und Anna-Louisa-Karsch-Str., 19.10.2015 08:00 Uhr bis 01.11.2015 17:00 Uhr	IM_026545 --- Burgstr.: Sperrung auch für Radfahrer relevant?	? 10105,13004 10117,12973 10132,12941 10166,12777
 # 
 Weg zum Hangkantenpark: Qualität? Drängelgitter? Nachts beleuchtet? Steigung?	? 19279,1779 19317,1768 19373,1930 19266,1968
@@ -1310,7 +1303,7 @@ Joachimsthaler Str.: ist hier eine Busspur? Geltungszeiten?	?; 5475,10808 5488,1
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file?y=2015
 #: XXX str_cont_ausnahme-Eintrag für die Zwieseler Str. dann notwendig
-#: next_check: 2015-10-23
+#: last_checked: 2015-11-01
 Römerweg (Teilstück): Umbenennung in "Zwieseler Str."	? 19599,9747 19663,9757
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.380773.php vvv
@@ -1362,7 +1355,7 @@ Siemensstr.: werden hier vielleicht auch Radspuren markiert?	? 5746,14090 5708,1
 # REMOVED (nein) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20150723.1925.402307.html --- #: XXX Endedatum laut fritz 2015-08-28, laut Pressemitteilung: 2015-09-30 --- #: next_check: 2015-09-30 --- Weißenseer Weg: wird der Radweg nach den Bauarbeiten besser sein?	? 14843,15007 14959,14752
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5207
-#: last_checked: 2015-10-09
+#: last_checked: 2015-11-01
 #: next_check: 2015-12-31
 Parkweg: Umbenennung in Bernhard-Langwaldt-Weg?	? 14652,10201 14626,10162 14597,10129 14558,10082 14453,9929 14448,9922 14404,9847 14361,9772 14318,9688
 # 

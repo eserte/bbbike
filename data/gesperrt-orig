@@ -1085,7 +1085,7 @@ DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615
 Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 #: note implizit?
-Firlstr.	1 18643,6540 18645,6511
+Firlstr.	1 18640,6542 18645,6511
 Malchower Str.	1 12838,18155 12785,18128
 Carpinusweg	1 715,5209 715,5129 825,5130 827,5201
 Fellbacher Platz	1 3627,23246 3610,23242 3588,23256 3581,23282 3593,23297
@@ -2656,7 +2656,7 @@ Fünf Morgen: Bauarbeiten, gesperrt. Wird es eine Anbindung an den Hüttenweg gebe
 Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 # 
 #: XXX wann wird die Straße eröffnet?
-#: osm_watch: way id="266854579" version="4"
+#: osm_watch: way id="266854579" version="5"
 #: last_checked: 2015-08-02
 Am Theodorpark: noch gesperrt	2::inwork 24905,10955 25053,10959 25143,10961
 # 
@@ -2864,12 +2864,12 @@ Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::
 # 
 #: XXX Qualität nach den Bauarbeiten?
 #: osm_watch: way id="24845189" version="12"
-#: last_checked: 2015-06-27
+#: last_checked: 2015-11-01
 #: check_frequency: 60d
 Viechtacher Str.: Straße fertig, aber noch gesperrt	2::inwork 19801,9680 19871,9680 19923,9682
 # REMOVED (offen) --- Eisensteiner Str.: Bauarbeiten, Straße noch gesperrt	2::inwork 19727,9672 19722,9483
 # 
-#: last_checked: 2015-08-15 vvv
+#: last_checked: 2015-11-01 vvv
 #: check_frequency: 60d vvv
 #: XXX man kann aber über die provisorische Baustraße von Süden aus in die gesperrten Straßen gelangen
 #: osm_watch: way id="287119368" version="8"

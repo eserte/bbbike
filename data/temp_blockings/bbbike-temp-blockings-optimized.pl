@@ -2495,7 +2495,7 @@ userdel	3 8374,11479 8389,11378 8427,11365
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Oktober von 7.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im November von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3156,6 +3156,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        {
          'data' => '#: by: fritz
+#: confirmed_by: srt
 userdel	1::inwork 17886,5587 17736,5441
 ',
          'from' => undef,
@@ -3727,8 +3728,7 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
          'data' => '#: XXX die Qualität wird nach den Bauarbeiten vermutlich besser sein vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.297071.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.295591.php
-#: last_checked: 2015-10-13 vvv
-#: check_frequency: 10d vvv
+#: last_checked: 2015-11-01 vvv
 userdel	2::inwork 14318,9688 14443,9731
 # REMOVED --- userdel	2::inwork 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
 userdel	2::inwork 14575,9648 14645,9710 14697,9726
@@ -3739,7 +3739,6 @@ userdel	2::inwork 14674,9764 14697,9726 14910,9643 15052,9584 15174,9554 15321,9
 # REMOVED --- userdel	2::inwork 14443,9731 14361,9772
 # REMOVED --- userdel	2::inwork 15630,8979 15638,9020 15778,8990
 # REMOVED --- userdel	2::inwork 14910,9643 14871,9567 14844,9513
-#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 ',
@@ -3994,18 +3993,7 @@ userdel	q4::inwork 13369,7307 13322,7294 13150,7254 13043,7234
          'type' => 'handicap',
          'until' => 1449457200
        },
-       {
-         'data' => 'userdel	2::inwork 10220,13098 10105,13004
-userdel	q4::inwork 10105,13004 10117,12973 10132,12941
-userdel	q3::inwork 9932,13109 10105,13004
-',
-         'from' => 1445148000,
-         'id' => 2754,
-         'source_id' => 'IM_026545',
-         'text' => 'Kleine Präsidentenstr./Burgstr.: Sperrung der Fahrbahn, Ausweichen auf Gehweg, außerdem ist die Große Präsidentenstr. komplett gesperrt, 19.10.2015 08:00 Uhr bis 01.11.2015 17:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1446393600
-       },
+       undef,
        {
          'data' => '	q4::inwork; 14887,11929 14835,11840 14802,11784 14794,11770 14710,11626 14639,11512
 	q3::inwork 14645,11670 14710,11626
@@ -4026,6 +4014,36 @@ userdel	q3::inwork 9932,13109 10105,13004
          'text' => 'Dörpfeldstr.: zwischen Adlergestell und Anna-Seghers-Str. Richtung Köpenick Bauarbeiten, Fahrbahn gesperrt, 21.10.2015 08:00 Uhr bis 02.11.2015 09:00 Uhr',
          'type' => 'handicap',
          'until' => 1446451200
+       },
+       {
+         'data' => 'userdel	q2::inwork; 17520,4649 17542,4772 17601,5090 17648,5338
+',
+         'from' => 1445405400,
+         'id' => 2757,
+         'source_id' => 'IM_026599',
+         'text' => 'Sterndamm: zwischen Königsheideweg und Groß-Berliner Damm Bauarbeiten, Fahrbahn in Richtung S-Bhf. Schöneweide gesperrt, Radfahrer dürfen den Gehweg benutzen, 22.10.2015 07:30 Uhr bis 07.11.2015 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1446912000
+       },
+       {
+         'data' => 'userdel	q2::inwork; 17244,4242 17261,4267 17290,4308 17387,4446 17428,4503 17471,4570 17520,4649
+',
+         'from' => 1446015600,
+         'id' => 2758,
+         'source_id' => 'IM_026668',
+         'text' => 'Sterndamm: zwischen Megedestr. und Königsheideweg Bauarbeiten, Fahrbahn in Richtung S-Bhf. Schöneweide gesperrt, Radfahrer dürfen den Gehweg benutzen, 29.10.2015 08:00 Uhr bis 29.11.2015 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1448812800
+       },
+       {
+         'data' => 'userdel	q2::inwork; 17110,4055 17244,4242
+',
+         'from' => 1445320800,
+         'id' => 2759,
+         'source_id' => 'IM_026600',
+         'text' => 'Sterndamm: zwischen Lindhorstweg und Megedestr. Bauarbeiten, Fahrbahn in Richtung S-Bhf. Schöneweide gesperrt, Radfahrer dürfen den Gehweg benutzen, 21.10.2015 08:00 Uhr bis 18.12.2015 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1450454400
        }
      
 );

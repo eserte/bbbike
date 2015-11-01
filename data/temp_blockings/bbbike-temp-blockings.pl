@@ -9983,7 +9983,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006663',
        data  => <<EOF,
-userdel	1::inwork 17053,3971 17108,4049 17244,4242 17261,4267 17290,4308 17387,4446 17428,4503
+userdel	1::inwork 17053,3971 17110,4055 17244,4242 17261,4267 17290,4308 17387,4446 17428,4503
 EOF
      },
      { from  => 1190067732, # 2007-09-18 00:22
@@ -10902,7 +10902,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007543',
        data  => <<EOF,
-userdel	1::inwork 17053,3971 17108,4049 17244,4242 17261,4267 17290,4308 17387,4446
+userdel	1::inwork 17053,3971 17110,4055 17244,4242 17261,4267 17290,4308 17387,4446
 EOF
      },
      { from  => undef, # 
@@ -15678,7 +15678,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013892',
        data  => <<EOF,
-userdel	q4::inwork; 17364,3565 17219,3795 17053,3971 17108,4049
+userdel	q4::inwork; 17364,3565 17219,3795 17053,3971 17110,4055
 EOF
      },
      { from  => 1249768800, # 2009-08-09 00:00
@@ -21865,6 +21865,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: fritz
+#: confirmed_by: srt
 userdel	1::inwork 17886,5587 17736,5441
 EOF
      },
@@ -24206,8 +24207,7 @@ EOF
 #: XXX die Qualität wird nach den Bauarbeiten vermutlich besser sein vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.297071.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.295591.php
-#: last_checked: 2015-10-13 vvv
-#: check_frequency: 10d vvv
+#: last_checked: 2015-11-01 vvv
 userdel	2::inwork 14318,9688 14443,9731
 # REMOVED --- userdel	2::inwork 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
 userdel	2::inwork 14575,9648 14645,9710 14697,9726
@@ -24218,7 +24218,6 @@ userdel	2::inwork 14674,9764 14697,9726 14910,9643 15052,9584 15174,9554 15321,9
 # REMOVED --- userdel	2::inwork 14443,9731 14361,9772
 # REMOVED --- userdel	2::inwork 15630,8979 15638,9020 15778,8990
 # REMOVED --- userdel	2::inwork 14910,9643 14871,9567 14844,9513
-#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 EOF
@@ -24671,6 +24670,33 @@ EOF
        source_id => 'IM_026593',
        data  => <<EOF,
 userdel	q4::inwork; 19904,3464 20012,3532
+EOF
+     },
+     { from  => 1445405400, # 2015-10-21 07:30
+       until => 1446912000, # 2015-11-07 17:00
+       text  => 'Sterndamm: zwischen Königsheideweg und Groß-Berliner Damm Bauarbeiten, Fahrbahn in Richtung S-Bhf. Schöneweide gesperrt, Radfahrer dürfen den Gehweg benutzen, 22.10.2015 07:30 Uhr bis 07.11.2015 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_026599',
+       data  => <<EOF,
+userdel	q2::inwork; 17520,4649 17542,4772 17601,5090 17648,5338
+EOF
+     },
+     { from  => 1446015600, # 2015-10-28 08:00
+       until => 1448812800, # 2015-11-29 17:00
+       text  => 'Sterndamm: zwischen Megedestr. und Königsheideweg Bauarbeiten, Fahrbahn in Richtung S-Bhf. Schöneweide gesperrt, Radfahrer dürfen den Gehweg benutzen, 29.10.2015 08:00 Uhr bis 29.11.2015 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_026668',
+       data  => <<EOF,
+userdel	q2::inwork; 17244,4242 17261,4267 17290,4308 17387,4446 17428,4503 17471,4570 17520,4649
+EOF
+     },
+     { from  => 1445320800, # 2015-10-20 08:00
+       until => 1450454400, # 2015-12-18 17:00
+       text  => 'Sterndamm: zwischen Lindhorstweg und Megedestr. Bauarbeiten, Fahrbahn in Richtung S-Bhf. Schöneweide gesperrt, Radfahrer dürfen den Gehweg benutzen, 21.10.2015 08:00 Uhr bis 18.12.2015 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_026600',
+       data  => <<EOF,
+userdel	q2::inwork; 17110,4055 17244,4242
 EOF
      },
     );
