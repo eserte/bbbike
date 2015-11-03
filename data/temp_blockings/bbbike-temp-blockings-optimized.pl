@@ -3161,6 +3161,7 @@ userdel	1::inwork 17886,5587 17736,5441
 ',
          'from' => undef,
          'id' => 2469,
+         'source_id' => 'IM_026665',
          'text' => 'Sterndamm: Eisenbahnunterführung in Richtung Groß-Berliner Damm/Südostallee gesperrt',
          'type' => 'gesperrt',
          'until' => 1464040799
@@ -3919,18 +3920,7 @@ userdel	q4::inwork; 5382,5312 5268,5386 5183,5437 5088,5495
          'type' => 'handicap',
          'until' => 1447430400
        },
-       {
-         'data' => '#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2015-10-12
-#: check_frequency: 7d
-userdel	q4::inwork 13369,7307 13322,7294 13150,7254 13043,7234
-',
-         'from' => undef,
-         'id' => 2747,
-         'text' => 'Braunschweiger Str.: Bauarbeiten, Fahrbahn gesperrt, Ende unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => 'userdel	2::inwork 37162,121204 38900,120605
 ',
@@ -3941,16 +3931,7 @@ userdel	q4::inwork 13369,7307 13322,7294 13150,7254 13043,7234
          'type' => 'gesperrt',
          'until' => 1475272800
        },
-       {
-         'data' => 'userdel	2::inwork 8141,23477 7185,23749
-',
-         'from' => 1445119200,
-         'id' => 2749,
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.385612.php',
-         'text' => 'Blankenfelder Chaussee: Bauarbeiten, Vollsperrung, vom 19. Oktober 2015 bis 2. November 2015',
-         'type' => 'gesperrt',
-         'until' => 1446505199
-       },
+       undef,
        {
          'data' => 'userdel	q4::inwork 4681,23273 4704,23278 4744,23289 4910,23490 5006,23575
 ',
@@ -4005,16 +3986,7 @@ userdel	q4::inwork 13369,7307 13322,7294 13150,7254 13043,7234
          'type' => 'handicap',
          'until' => 1449457200
        },
-       {
-         'data' => 'userdel	q4::inwork; 19904,3464 20012,3532
-',
-         'from' => 1445320800,
-         'id' => 2756,
-         'source_id' => 'IM_026593',
-         'text' => 'Dörpfeldstr.: zwischen Adlergestell und Anna-Seghers-Str. Richtung Köpenick Bauarbeiten, Fahrbahn gesperrt, 21.10.2015 08:00 Uhr bis 02.11.2015 09:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1446451200
-       },
+       undef,
        {
          'data' => 'userdel	q2::inwork; 17520,4649 17542,4772 17601,5090 17648,5338
 ',

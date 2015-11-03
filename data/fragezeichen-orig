@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2015-10-13
+#: last_checked: 2015-11-03
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -859,7 +859,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,977
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="13"
-#: last_checked: 2015-10-13
+#: last_checked: 2015-11-03
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
@@ -1142,15 +1142,7 @@ Prinzengasse: Genaue Lage? Qualität?	?::inwork 9973,12292 9997,12295
 # REMOVED (realisiert) --- #: osm_watch: way id="8094229" version="12" --- #: last_checked: 2013-11-01 (Markierungen sind schon vorbereitet; evtl. wird noch die Ampelanlage an der Hardenbergstr. erweitert werden müssen) --- #: next_check: 2013-12-01 --- Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	?::inwork 5258,11285 5236,10994
 # REMOVED (realisiert) --- #: XXX laut osm schon eröffnet, aber das ist hier definitiv zum Zeitpunkt der Datensatzänderung nicht passiert --- #: add_fragezeichen: Ist die Fasanenstr. zwischen Kurfürstendamm und Kantstr. für Radfahrer entgegen der Einbahnstraßenrichtung befahrbar? --- #: last_checked: 2013-11-12 (Schilder sind schon verbereitet) --- #: next_check: 2013-12-01 --- Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	?::inwork 5236,10994 5230,10919 5215,10711
 # REMOVED (realisiert) --- Fasanenstr.: Öffnung der Einbahnstraße für Radfahrer	?::projected 5215,10711 5207,10399
-# 
-#: by: MoPo 2009-08-01, soll 2010 realisiert werden
-#: XXX Baumaßnahmen 8.12 (Realisierung in 2011)
-#: osm_watch: way id="155594919" version="4"
-#: last_checked: 2015-10-12
-#: check_frequency: 14d
-# REMOVED (wird gerade realisiert) --- Braunschweiger Str.: Asphaltierung	?::projected 13043,7234 13150,7254 13322,7294 13369,7307
-Braunschweiger Str.: wird hier auch asphaltiert?	?::projected 13369,7307 13487,7337 13519,7345
-# 
+# REMOVED (realisiert) --- #: by: MoPo 2009-08-01, soll 2010 realisiert werden --- #: XXX Baumaßnahmen 8.12 (Realisierung in 2011) --- #: osm_watch: way id="155594919" version="4" --- #: last_checked: 2015-10-12 --- #: check_frequency: 14d --- # REMOVED (wird gerade realisiert) --- Braunschweiger Str.: Asphaltierung	?::projected 13043,7234 13150,7254 13322,7294 13369,7307 --- Braunschweiger Str.: wird hier auch asphaltiert?	?::projected 13369,7307 13487,7337 13519,7345
 # REMOVED (so gut wie fertig, am 2013-06-24 hat noch ein kleines Stück gefehlt) --- #: last_checked: 2013-06-05 vvv --- #: next_check: 2013-06-19 vvv --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120625.1405.371942.html (Ende der Bauarbeiten: Ende 2012) vvv --- #: source_id: INKO_117706 vvv --- Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radweg wird auf dem Gehweg geführt	?::inwork 14960,14746 15066,14579 --- #: XXX Richtung Süden wird es wohl ein Gehwegradweg fehlen (fehlt nur noch der Asphalt), Richtung Norden ist fertig --- Radverkehrsanlagen um den Knotenpunkt Weißenseer Weg/Konrad-Wolf-Str.: Radspuren werden markiert (wahrscheinlich bis zur Landsberger Allee)	?::inwork 15066,14579 15110,14486 15164,14392 --- #: source_id ^^^ --- #: by: ^^^ --- #: by: ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (weitgehend realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html --- #: XXX Baumaßnahme 11.46 (Realisierung in 2011) --- #: XXX in http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf ist der Radstreifen erwähnt --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4521&options=4 (geplanter Baubeginn August 2012) --- #: osm_watch: way id="22044872" version="10" --- #: osm_watch: way id="22045147" version="18" --- #: last_checked: 2014-02-14 --- Suermondtstr./Buschallee: Schaffung von Radverkehrsanlagen, auch in Richtung Westen	?::inwork; 15866,16393 15843,16399 15771,16417 15432,16500
 # REMOVED (realisiert) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html --- #: last_checked: 2014-06-13 --- #: check_frequency: 90d --- Hansastr.: Schaffung von Radverkehrsanlagen bis 2015 geplant	?::projected 14653,15738 14808,15788 14936,15857 14967,15885 15124,16104 15187,16185 15294,16323 15432,16500
@@ -1928,12 +1920,12 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: XXX_prog ^^^
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20141202.1525.400470.html
-#: last_checked: 2015-10-13
+#: last_checked: 2015-11-03
 #: check_frequency: 90d
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.334355.php
-#: last_checked: 2015-10-14
+#: last_checked: 2015-11-02
 #: check_frequency: 120d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172 10818,11269
 # 

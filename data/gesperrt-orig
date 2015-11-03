@@ -848,7 +848,7 @@ Pitschener Str.	1s:q3 21769,-432 21719,-397 21637,-381
 #: XXX wird die Einbahnstraßenregelung für Radfahrer aufgehoben?
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4783
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to010.asp?SILFDNR=2578
-#: last_checked: 2015-10-31
+#: last_checked: 2015-11-03
 Herrfurthstr.	1s:q3 11979,8014 11833,7980
 Dankratstr.	1s:q3 21105,9538 20943,9543
 #: note: ansonsten Durchfahrt verboten
@@ -1101,10 +1101,10 @@ Sportfliegerstr.: Betriebsgelände	2 18370,4511 18423,4459
 #: by: olaf skeries
 Schillerhof	1 7069,17204 6928,17154
 #: XXX wird aufgehoben, sobald das einsturzgefährdete Haus abgerissen wird vvv
-#: last_checked: 2015-08-30 vvv
+#: last_checked: 2015-11-01 vvv
 #: check_frequency: 60d vvv
 # REMOVED (dieser Abschnitt doch keine Einbahnstraße?) --- Wartenbergstr.	1s:q1 15423,11667 15337,11639 15328,11636
-Wartenbergstr.	1s:q2 15328,11636 15300,11584
+Wartenbergstr.	1s:q2 15423,11667 15337,11639 15328,11636 15300,11584
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -2680,7 +2680,7 @@ Pfarrhufenanger: noch in Bau, gesperrt	2::inwork 25599,13069 25441,12838 25266,1
 # 
 #: XXX Ende der Bauarbeiten?
 # REMOVED (als es noch in handicap_s-orig war) --- : XXX_prog: zu eng für Anhänger
-#: last_checked: 2015-10-02
+#: last_checked: 2015-11-02
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076 9559,13087
 # 
 #: last_checked: 2015-09-26 vvv
@@ -2798,7 +2798,7 @@ Zufahrt zum Uferweg: gesperrt	2::inwork 7703,14582 7696,14577 7662,14579 7653,14
 # 
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6433 (Anfrage)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136136549415/136549415/00119959/59-Anlagen/02/GA_1805_IV.pdf (mindestens bis Ende 2016)
-#: last_checked: 2015-10-06
+#: last_checked: 2015-11-02
 #: check_frequency: 180d
 Unterführung Gertraudenbrücke - Wallstr.: wegen Bauarbeiten beim U-Bhf. Spittelmarkt ist die Verbindung gesperrt	2::inwork 10308,11833 10374,11734
 # 
@@ -2953,8 +2953,8 @@ Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,689
 # REMOVED (offen) --- #: last_checked: 2014-12-13 --- #: check_frequency: 30d --- (Antonplatz - Bizetstr.): Bauarbeiten, gesperrt	2::inwork 13487,15888 13525,15784
 # 
 #: next_check_id: CHARITE-2014
-#: last_checked: 2013-10-15
-#: next_check: 2015-10-31
+#: last_checked: 2015-11-02
+#: check_frequency: 90d
 tragen (2 Stufen)	0:5 8818,13365
 # 
 # REMOVED (habe Leute hier langlaufen/fahren sehen) --- #: osm_watch: way id="182562157" version="2" --- #: last_checked: 2013-11-04 --- #: next_check: 2013-11-11 --- (Bautzener Str. - Südkreuz): Bauzaun, Zugang noch nicht erlaubt	2:inwork 8185,9338 8207,9324 8204,9046
@@ -2980,8 +2980,8 @@ Niederlagstr. - Unter den Linden: wegen Bauarbeiten ist das Abbiegen nicht mögli
 # 
 #: next_check_id: CHARITE-2014
 #: XXX eine Umleitung existiert, ist aber von der Westseite schwierig zu finden und könnte nachts gesperrt sein
-#: last_checked: 2015-08-31
-#: next_check: 2015-10-31
+#: last_checked: 2015-11-02
+#: check_frequency: 90d
 An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8833,13440 8846,13412 8835,13376 8818,13365 8808,13377 8764,13372 8665,13353
 # 
 # REMOVED --- #: next_check_id: FLORAGAERTEN-2014 --- #: osm_watch: way id="294423898" version="4" --- #: XXX siehe auch Eintrag in qualitaet_s-orig --- #: last_checked: 2014-09-28 --- #: check_frequency: 30d --- In den Floragärten: Baustelle	2:inwork 9895,17649 9995,17642

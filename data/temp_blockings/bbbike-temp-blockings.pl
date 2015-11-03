@@ -21863,6 +21863,7 @@ EOF
        until => $isodate2epoch->("2016-05-23 23:59:59"),
        text  => 'Sterndamm: Eisenbahnunterführung in Richtung Groß-Berliner Damm/Südostallee gesperrt',
        type  => 'gesperrt',
+       source_id => 'IM_026665',
        data  => <<EOF,
 #: by: fritz
 #: confirmed_by: srt
@@ -24576,13 +24577,11 @@ userdel	q4::inwork; 5382,5312 5268,5386 5183,5437 5088,5495
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1446584355, # undef, # XXX
        text  => 'Braunschweiger Str.: Bauarbeiten, Fahrbahn gesperrt, Ende unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2015-10-12
-#: check_frequency: 7d
+# REMOVED (weitgehend fertig, ein paar umfahrbare Absperrungen zu den Nebenstraßen existieren noch) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2015-10-12 --- #: check_frequency: 7d
 userdel	q4::inwork 13369,7307 13322,7294 13150,7254 13043,7234
 EOF
      },

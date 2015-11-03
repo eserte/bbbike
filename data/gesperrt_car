@@ -1771,3 +1771,6 @@ Königsweg: Poller	3 -745,2320 -790,2300 -882,2260
 Hans-Sachs-Str.	1 3141,4023 3214,4066
 Anhaltinerstr.	1 682,2660 725,2702
 Askanischer Platz -> Stresemannstr.	3 8865,10974 8901,11011 8747,11194
+Mittelinsel	3nocross::ignrte 13034,7319 13043,7234 13051,7157
+Karl-Marx-Str. -> Braunschweiger Str.: Mittelinsel	3::igndisp 13034,7319 13043,7234 13150,7254
+Braunschweiger Str. -> Karl-Marx-Str.: Mittelinsel	3::igndisp 13150,7254 13043,7234 13051,7157
