@@ -22,7 +22,7 @@
 #: XXX laut Tagesspiegel vom 2013-01-03 für 2013 geplant
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: osm_watch: way id="153373879" version="5"
-#: osm_watch: way id="153373877" version="4"
+#: osm_watch: way id="153373877" version="5"
 #: last_checked: 2015-10-31
 #: check_frequency: 60d
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
@@ -129,7 +129,7 @@ Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 69
 # 
 #: XXX Baumaßnahme 1.23 (Realisierung nach 2011)
 #: XXX wenn hier, dann vielleicht auch in der Kongostraße?
-#: osm_watch: way id="4581787" version="7"
+#: osm_watch: way id="4581787" version="8"
 #: last_checked: 2015-09-12
 #: check_frequency: 120d
 Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
@@ -139,7 +139,7 @@ Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: osm_watch: way id="162964323" version="12"
 #: osm_watch: way id="4541085" version="21"
-#: osm_watch: way id="4638315" version="17"
+#: osm_watch: way id="4638315" version="18"
 #: XXX laut rbbtext und fritz Bauarbeiten
 #: last_checked: 2015-04-09 vvv
 #: next_check: 2015-10-19 vvv
@@ -384,6 +384,16 @@ Gaußstr.: Radspuren werden errichtet	?::inwork 3739,13563 3833,13590 4098,13664 
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3712
+#: XXX ab Mitte 2016
+#: next_check: 2016-09-01
+Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::projected 5476,19450 5495,19571 5533,19811 5545,19909 5517,20120 5506,20197 5475,20381 5463,20461 5441,20613 5421,20748 5410,20822 5401,20882 5395,20915 5382,21001 5356,21146 5349,21198 5343,21250 5341,21266 5333,21332 5320,21432 5311,21495 5210,21636 5136,21738
+# 
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6401
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036322976038/322976038/00081169/69-Anlagen/02/vzb1092_IV_Auswertung_B_Plan_XXIII_38.pdf
+#: next_check: 2016-09-01
+Wuhlewanderweg: wird hier ein Weg auf der östlichen Uferseite errichtet?	?::projected 21654,10390 21691,10485 21810,10595 21912,10717 22154,10769 22245,10863 22271,10971
+# 
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2015/pressemitteilung.385888.php
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.205751.php
 #: next_check: 2016-08-31
@@ -415,7 +425,6 @@ Dahlemer Weg: Radwege werden durch Radspuren ersetzt	?::projected 2152,2912 2198
 #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/tiefbau-und-landschaftsplanung/tief/pdf/entwurfsplanung_bohnsdorfer_kreisel_geschuetzt.pdf
 #: XXX außerdem: zwei Zebrastreifen werden eingerichtet, an der Kreuzung Richterstr. wird eine Ampel eingerichtet (statt des jetzigen Zebrastreifens)
 #: XXX komplettes Bauende 2018
-#: osm_watch: way id="255433733" version="2"
 #: osm_watch: way id="147717029" version="6"
 #: osm_watch: way id="151627031" version="8"
 #: next_check: 2016-07-01 vvv
@@ -599,8 +608,9 @@ Bordeauxstr.: genaue Lage? Qualität (vermutlich Verbundsteinpflaster)? Verkehrsb
 Toulonstr.: Verkehrsberuhigt?	?::inwork 12404,21532 12480,21560
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4111
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036978486193/978486193/00069082/82-Anlagen/02/BenennungsabsichtfuereinenPrivatweggemaessBeba.pdf
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4130
 #: osm_watch: way id="344108078" version="1"
-Rennesstr.: Benennungsabsicht; genaue Lage, Qualität?	?::projected 12411,21515 12422,21492 12469,21507
+Rennesstr.: genaue Lage, Qualität?	?::projected 12411,21515 12422,21492 12469,21507
 # REMOVED (einzelne Straßen aufgeführt) --- Bebauungsplan XIX-48b: neue Plan- und Privatstraßen werden erstellt	?::inwork 12337,20954 12459,21010 12562,21055 12547,21372 12495,21670 12172,21545 12209,21448 12189,21337 12168,21218 12255,21083 12337,20954
 # REMOVED (realisiert) --- Nizzastr.: bereits fertiggestellt? Qualität? Genaue Lage?	?::inwork 12257,21079 12434,21160 12404,21217 12384,21256 12360,21303 12322,21378
 # REMOVED (realisiert) --- Brester Ring: bereits fertiggestellt? Qualität? Genaue Lage?	?::inwork 12384,21256 12326,21226 12302,21275 12360,21303
@@ -1051,8 +1061,9 @@ Fritz-Rumpf-Str. (Potsdam): Qualität nach Fertigstellung?	?::projected -11307,13
 # 
 #: XXX diese Straßen existieren noch nicht
 #: XXX teilweise fehlen sie auch in Berlin.coords.data
+#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6425
 #: last_checked: 2015-04-11 vvv
-#: check_frequency: 360d vvv
+#: next_check: 2016-09-01 vvv
 An den Auen: Qualität?	?::projected 21194,19054 21248,19007 21285,18950 21310,18889
 Markus-Herz-Weg: Qualität?	?::projected 20701,18634 20910,18719 21123,18813
 David-Friedländer-Weg: Qualität?	?::projected 20727,18726 20901,18793 21038,18851 21024,18915 20995,18988
@@ -1067,7 +1078,7 @@ Labkrautweg: Qualität?	?::projected 21068,18934 21248,19007 21282,19019
 Schwanenblumenweg: Qualität? Wird es eine Verbindung zum Parkweg geben?	?::projected 21035,19005 21106,19026 21194,19054 21251,19080
 Schilfanger: Qualität?	?::projected 21106,19026 21098,19043 21089,19062 21109,19071 21118,19055 21098,19043
 Weidenanger: Qualität?	?::projected 21194,19054 21175,19076 21157,19087 21140,19081 21147,19064 21175,19076
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 # 
 # REMOVED (survey done) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20110908.0920.357891.html --- #: next_check: 2011-11-30 --- Mierendorffplatz: asphaltiert? Gibt es hier einen Zebrastreifen?	?::inwork 3534,13098 3559,13177
@@ -2101,11 +2112,13 @@ Planstraßen im Marienhain: Straßennamen? Qualität?	? 22771,3151 22476,3118 22485
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6304
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036218583297/218583297/00079580/80-Anlagen/02/vzb1011_IV_Benennung_Strassen_B_Plan_10_56.pdf (Straßenname)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2015
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6407 (Korrektur der Benennung, vorher Clara-Immerwahr-Haber-Str.)
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036322976038/322976038/00081362/62-Anlagen/02/vzb1095_IV_Korrektur_Benennung_Clara_Immerwahr.pdf
 #: last_checked: 2015-04-11
 #: next_check: 2015-10-01
 #: XXX Straße ist asphaltiert
 #: XXX fehlt in Berlin.coords.data, PLZ=12681
-Clara-Immerwahr-Haber-Str.: Wann wird die Straße eröffnet?	?::inwork 19202,17471 19546,17351 19546,17351 19798,17263 19913,17196
+Clara-Immerwahr-Str.: Wann wird die Straße eröffnet?	?::inwork 19202,17471 19546,17351 19546,17351 19798,17263 19913,17196
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/21re.pdf/file?y=2015
 #: XXX Straße ist asphaltiert
 #: XXX fehlt in Berlin.coords.data, PLZ=12681
@@ -2258,6 +2271,28 @@ Bebauungsplan 10-77: werden hier neue Straßen entstehen?	?::projected 21483,1652
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2015
 Altes Gaswerk Mariendorf & Im Marienpark: Straßenbenennungen - wo liegen die Straßen? Qualität?	? 8640,3506 8958,3763 8697,4017
+# 
+#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6436
+#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036284949883/284949883/00122677/77-Anlagen/02/Anlage1775.pdf
+#: XXX geplante neue Straßen im Komplex ArendsCarrée, noch nicht bestätigt, fehlen in Berlin.coords.data, genaue Lage? vvv
+#: next_check: 2016-09-01 vvv
+Agnethaweg	?::projected 17221,15181 17245,15182 17314,15186 17336,15187
+Anni-Frid-Weg	?::projected 17234,15053 17258,15053 17323,15054 17346,15055
+Bennyweg	?::projected 17245,15182 17258,15053
+Björnweg	?::projected 17314,15186 17323,15054
+#: next_check ^^^
+#: XXX ^^^
+# 
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6406
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036322976038/322976038/00081306/06-Anlagen/02/vzb1096_IV_Benennung_Hanoier_Str.pdf
+#: XXX fehlt in Berlin.coords.data, genaue Lage?
+#: next_check: 2016-09-01
+Hanoier Str.	?::projected 20730,11462 20723,11374
+#
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6402
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036322976038/322976038/00081173/73-Anlagen/02/vzb1094_IV_Aenderung_Planungsziele_B_Plan_XXI_.pdf
+#: next_check: 2016-09-01
+Bebauungsplan XXI-34a: evtl. entstehen hier neue Straßen	?::projected 20649,11628 20641,11496 21099,11478 21091,11601 20650,11627
 # 
 #: ignore ^^^
 #: section ^^^
@@ -4090,6 +4125,7 @@ Darguner Str.: Qualität?	? 17566,18680 17635,18591
 # REMOVED --- #: last_checked: 2014-06-09 (Trassierungsarbeiten werden durchgeführt) vvv --- #: next_check: 2014-12-07 vvv --- Gerhard-Sedlmayr-Str.: Gibt es Verbindungswege zum Park?	? 18702,3790 18584,3794 18228,4168 --- #: XXX der nördliche Abschnitt wird anscheinend einen Zweirichtungsradweg haben, in den restlichen Abschnitten wird es wohl keine Radwege geben --- Gerhard-Sedlmayr-Str.: Existiert ein Radweg?	? 18228,4168 18374,4307 --- #: next_check ^^^ --- #: last_checked ^^^
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4073 (Asphaltierung gewünscht)
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4073&date=20151104
 Im Brachfeldwinkel: existiert eine für Radfahrer befahrbare Verbindung zum Erholungsweg? Qualität? Beleuchtung? Ausschilderung?	? 3024,21286 3068,21150 3032,21143
 #: by: https://www.facebook.com/benno.koch.berlin/posts/763398590416461?notif_t=like vvv
 Warsin - Rieth: mittlerweile fast vollständig asphaltiert, bis auf 2km Kiesstrecke --- wo sind genau die asphaltierten und Kies-Abschnitte?	? 61080,147233 61159,147126 61212,146969 61436,146668 61529,146496 61748,146197 61701,146118 61660,145978 61680,145900 62088,145749 62271,145636 62327,145481 62336,145361 62390,145266 62423,145178 62547,145035 62595,144932 62674,144822
