@@ -17131,12 +17131,12 @@ userdel	3 8427,11365 8389,11378 8374,11479
 userdel	3 8374,11479 8389,11378 8427,11365
 EOF
      },
-     { from  => $isodate2epoch->("2014-12-04 00:00:00"), # 1354809600, # 2012-12-06 17:00, # 1322780400, # PERIODISCH! # früher: 1259959719, # 2009-12-04 21:48
-       until => $isodate2epoch->("2014-12-07 23:59:59"), # 1355079600, # 2012-12-09 20:00, # 1323039600, # PERIODISCH! # früher: 1260140400, # 2009-12-07 00:00
+     { from  => $isodate2epoch->("2015-12-03 00:00:00"), # 1354809600, # 2012-12-06 17:00, # 1322780400, # PERIODISCH! # früher: 1259959719, # 2009-12-04 21:48
+       until => $isodate2epoch->("2015-12-06 23:59:59"), # 1355079600, # 2012-12-09 20:00, # 1323039600, # PERIODISCH! # früher: 1260140400, # 2009-12-07 00:00
        periodic => 1,
-       recurrences => [['yearly', days => 5, months => 12]],
+       recurrences => [['yearly', days => 4, months => 12]],
        source_id => 'http://www.weihnachtsmarkt-deutschland.de/weihnachtsmarkt-berlin-alt-rixdorf.html',
-       text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (05.12.2014 - 07.12.2014)',
+       text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (04.12.2015 - 06.12.2015)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 13416,7712 13426,7674
@@ -24355,11 +24355,13 @@ EOF
      },
      { from  => 1437289200, # 2015-07-19 09:00
        until => $isodate2epoch->("2015-11-21 17:00:00"), # 1441033200, # 2015-08-31 17:00
-       text  => 'Bouchéstr.: Baustelle, Fahrbahn zwischen Heidelberger Str. und Jordanstr. gesperrt, auf Gehweg ausweichen, 20.07.2015 09:00 Uhr bis 21.11.2015 17:00 Uhr ',
+       text  => 'Bouchéstr.: Baustelle, Fahrbahn zwischen Heidelberger Str. und Kiefholzstr. gesperrt, auf Gehweg ausweichen, 20.07.2015 09:00 Uhr bis 21.11.2015 17:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_025684',
        data  => <<EOF,
-userdel	q3::inwork 13357,9313 13489,9456 13606,9578 13645,9621
+userdel	q3::inwork 13357,9313 13489,9456
+userdel	q2::inwork 13489,9456 13606,9578
+# REMOVED (fertig) --- userdel	q3::inwork 13606,9578 13645,9621
 EOF
      },
      { from  => 1437282000, # 2015-07-19 07:00
@@ -24696,6 +24698,15 @@ EOF
        source_id => 'IM_026600',
        data  => <<EOF,
 userdel	q2::inwork; 17110,4055 17244,4242
+EOF
+     },
+     { from  => 1446678000, # 2015-11-05 00:00
+       until => 1451602800, # 2016-01-01 00:00
+       text  => 'Flottwellstraße: Bauarbeiten, Fahrbahn zwischen Schöneberger Ufer und Lützowstr. in Richtung Süden gesperrt, vom 06.11.2015 bis 31.12.2015 ',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.396336.php',
+       data  => <<EOF,
+userdel	q4::inwork; 8336,10829 8300,10823 8281,10791 8199,10634
 EOF
      },
     );

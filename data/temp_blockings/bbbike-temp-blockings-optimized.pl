@@ -2382,7 +2382,34 @@ userdel	3 8374,11479 8389,11378 8427,11365
          'type' => 'gesperrt',
          'until' => 1451257199
        },
-       undef,
+       {
+         'data' => 'userdel	2::temp 13416,7712 13426,7674
+userdel	2::temp 13416,7712 13378,7695 13288,7653
+userdel	2::temp 13426,7674 13400,7642 13303,7622
+userdel	2::temp 12969,7610 13100,7626 13177,7644
+userdel	2::temp 13188,7590 13177,7644
+userdel	2::temp 13188,7590 13303,7622
+userdel	2::temp 13288,7653 13303,7622
+userdel	2::temp 13288,7653 13177,7644
+userdel	2::temp 13288,7653 13278,7673 13245,7742
+',
+         'from' => 1449097200,
+         'id' => 1998,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              4,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-deutschland.de/weihnachtsmarkt-berlin-alt-rixdorf.html',
+         'text' => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (04.12.2015 - 06.12.2015)',
+         'type' => 'gesperrt',
+         'until' => 1449442799
+       },
        undef,
        undef,
        undef,
@@ -3781,12 +3808,14 @@ userdel	2::inwork 14674,9764 14697,9726 14910,9643 15052,9584 15174,9554 15321,9
          'until' => undef
        },
        {
-         'data' => 'userdel	q3::inwork 13357,9313 13489,9456 13606,9578 13645,9621
+         'data' => 'userdel	q3::inwork 13357,9313 13489,9456
+userdel	q2::inwork 13489,9456 13606,9578
+# REMOVED (fertig) --- userdel	q3::inwork 13606,9578 13645,9621
 ',
          'from' => 1437289200,
          'id' => 2723,
          'source_id' => 'IM_025684',
-         'text' => 'Bouchéstr.: Baustelle, Fahrbahn zwischen Heidelberger Str. und Jordanstr. gesperrt, auf Gehweg ausweichen, 20.07.2015 09:00 Uhr bis 21.11.2015 17:00 Uhr ',
+         'text' => 'Bouchéstr.: Baustelle, Fahrbahn zwischen Heidelberger Str. und Kiefholzstr. gesperrt, auf Gehweg ausweichen, 20.07.2015 09:00 Uhr bis 21.11.2015 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1448121600
        },
@@ -4016,6 +4045,16 @@ userdel	q4::inwork; 5382,5312 5268,5386 5183,5437 5088,5495
          'text' => 'Sterndamm: zwischen Lindhorstweg und Megedestr. Bauarbeiten, Fahrbahn in Richtung S-Bhf. Schöneweide gesperrt, Radfahrer dürfen den Gehweg benutzen, 21.10.2015 08:00 Uhr bis 18.12.2015 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1450454400
+       },
+       {
+         'data' => 'userdel	q4::inwork; 8336,10829 8300,10823 8281,10791 8199,10634
+',
+         'from' => 1446678000,
+         'id' => 2760,
+         'source_id' => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.396336.php',
+         'text' => 'Flottwellstraße: Bauarbeiten, Fahrbahn zwischen Schöneberger Ufer und Lützowstr. in Richtung Süden gesperrt, vom 06.11.2015 bis 31.12.2015 ',
+         'type' => 'handicap',
+         'until' => 1451602800
        }
      
 );
