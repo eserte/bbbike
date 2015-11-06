@@ -2313,14 +2313,14 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
 userdel	2::temp 11209,12430 11273,12301
 userdel	2::temp 11273,12301 11355,12331
 ',
-         'from' => 1447110000,
+         'from' => 1446764400,
          'id' => 1988,
          'periodic' => 1,
          'recurrences' => [
                             [
                               'yearly',
                               'days',
-                              10,
+                              6,
                               'months',
                               11
                             ]
@@ -4022,9 +4022,9 @@ userdel	q4::inwork; 5382,5312 5268,5386 5183,5437 5088,5495
          'from' => 1445405400,
          'id' => 2757,
          'source_id' => 'IM_026599',
-         'text' => 'Sterndamm: zwischen Königsheideweg und Groß-Berliner Damm Bauarbeiten, Fahrbahn in Richtung S-Bhf. Schöneweide gesperrt, Radfahrer dürfen den Gehweg benutzen, 22.10.2015 07:30 Uhr bis 07.11.2015 17:00 Uhr ',
+         'text' => 'Sterndamm: zwischen Königsheideweg und Groß-Berliner Damm Bauarbeiten, Fahrbahn in Richtung S-Bhf. Schöneweide gesperrt, Radfahrer dürfen den Gehweg benutzen, 22.10.2015 07:30 Uhr bis 09.11.2015 08:30 Uhr ',
          'type' => 'handicap',
-         'until' => 1446912000
+         'until' => 1447054200
        },
        {
          'data' => 'userdel	q2::inwork; 17244,4242 17261,4267 17290,4308 17387,4446 17428,4503 17471,4570 17520,4649
@@ -4055,6 +4055,23 @@ userdel	q4::inwork; 5382,5312 5268,5386 5183,5437 5088,5495
          'text' => 'Flottwellstraße: Bauarbeiten, Fahrbahn zwischen Schöneberger Ufer und Lützowstr. in Richtung Süden gesperrt, vom 06.11.2015 bis 31.12.2015 ',
          'type' => 'handicap',
          'until' => 1451602800
+       },
+       {
+         'data' => '	3 8783,10166 9108,10101 9277,10057
+	3 9277,10057 9108,10101 8783,10166
+	3 9277,10057 9108,10101 9073,9915
+	3 8783,10166 9108,10101 9145,10290
+	3 9073,9915 9108,10101 8783,10166
+	3 9145,10290 9108,10101 9277,10057
+	3 9044,9753 9073,9915 8780,9968
+	3 8780,9968 9073,9915 9108,10101
+',
+         'from' => 1446332400,
+         'id' => 2761,
+         'source_id' => 'http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.394109.php',
+         'text' => 'Großbeerenstr.: Bauarbeiten, Überqueren der Straße an der Wartenbergstr. und Obentrautstr. nicht möglich, voraussichtlich vom 02.11.2015 bis 31.01.2016 ',
+         'type' => 'gesperrt',
+         'until' => 1454281200
        }
      
 );

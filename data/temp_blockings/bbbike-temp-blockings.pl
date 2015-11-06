@@ -17031,10 +17031,10 @@ EOF
 userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998 24927,-87720
 EOF
      },
-     { from  => $isodate2epoch->("2015-11-10 00:00:00"), # Beginn am 23.11. (voraussichtlich), Aufbauzeit 13 Tage?... # 1384350862, # 1352934000, # 1321311600, # PERIODISCH! # früher: 1258045387, # 2009-11-12 18:03
-       until => $isodate2epoch->("2015-12-30 23:59:59"), # Ende am 27.12. (voraussichtlich), Abbauzeit 3 Tage?... # 1384350812, # 1352934000, # 1321311600, # PERIODISCH! # früher: 1258045387, # 2009-11-12 18:03
+     { from  => $isodate2epoch->("2015-11-06 00:00:00"), # Beginn am 23.11. (voraussichtlich), Aufbauzeit mindestens 17 Tage... (am Anfang ist nur die Fahrbahn der Voltairestr. gesperrt, später auch die Gehwege, die Schicklerstr. ist schon früher komplett gesperrt)
+       until => $isodate2epoch->("2015-12-30 23:59:59"), # Ende am 27.12. (voraussichtlich), Abbauzeit 3 Tage?...
        periodic => 1,
-       recurrences => [['yearly', days => 10, months => 11]],
+       recurrences => [['yearly', days => 6, months => 11]],
        # außerdem ist der Nordteil der Dircksenstr. Einbahnstraße offen Richtung Süden, aber nicht relevant für das Routing
        text  => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr. und Dircksenstr.), von Mitte November 2015 bis Ende Dezember 2015',
        type  => 'gesperrt',
@@ -24674,8 +24674,8 @@ userdel	q4::inwork; 19904,3464 20012,3532
 EOF
      },
      { from  => 1445405400, # 2015-10-21 07:30
-       until => 1446912000, # 2015-11-07 17:00
-       text  => 'Sterndamm: zwischen Königsheideweg und Groß-Berliner Damm Bauarbeiten, Fahrbahn in Richtung S-Bhf. Schöneweide gesperrt, Radfahrer dürfen den Gehweg benutzen, 22.10.2015 07:30 Uhr bis 07.11.2015 17:00 Uhr ',
+       until => $isodate2epoch->("2015-11-09 08:30:00"), # 1446912000, # 2015-11-07 17:00
+       text  => 'Sterndamm: zwischen Königsheideweg und Groß-Berliner Damm Bauarbeiten, Fahrbahn in Richtung S-Bhf. Schöneweide gesperrt, Radfahrer dürfen den Gehweg benutzen, 22.10.2015 07:30 Uhr bis 09.11.2015 08:30 Uhr ',
        type  => 'handicap',
        source_id => 'IM_026599',
        data  => <<EOF,
@@ -24707,6 +24707,22 @@ EOF
        source_id => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.396336.php',
        data  => <<EOF,
 userdel	q4::inwork; 8336,10829 8300,10823 8281,10791 8199,10634
+EOF
+     },
+     { from  => 1446332400, # 2015-11-01 00:00
+       until => 1454281200, # 2016-02-01 00:00
+       text  => 'Großbeerenstr.: Bauarbeiten, Überqueren der Straße an der Wartenbergstr. und Obentrautstr. nicht möglich, voraussichtlich vom 02.11.2015 bis 31.01.2016 ',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.394109.php',
+       data  => <<EOF,
+	3 8783,10166 9108,10101 9277,10057
+	3 9277,10057 9108,10101 8783,10166
+	3 9277,10057 9108,10101 9073,9915
+	3 8783,10166 9108,10101 9145,10290
+	3 9073,9915 9108,10101 8783,10166
+	3 9145,10290 9108,10101 9277,10057
+	3 9044,9753 9073,9915 8780,9968
+	3 8780,9968 9073,9915 9108,10101
 EOF
      },
     );
