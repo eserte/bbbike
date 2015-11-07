@@ -1774,3 +1774,7 @@ Askanischer Platz -> Stresemannstr.	3 8865,10974 8901,11011 8747,11194
 Mittelinsel	3nocross::ignrte 13034,7319 13043,7234 13051,7157
 Karl-Marx-Str. -> Braunschweiger Str.: Mittelinsel	3::igndisp 13034,7319 13043,7234 13150,7254
 Braunschweiger Str. -> Karl-Marx-Str.: Mittelinsel	3::igndisp 13150,7254 13043,7234 13051,7157
+Berliner Str - Bernstorffstr.: nur für BVG-Busse erlaubt	3 1955,20435 2020,20327 2131,20406
+Waidmannsluster Damm	3nocross::ignrte 3216,21431 3238,21448 3280,21477
+Waidmannsluster Damm -> Schollenhof: Waidmannsluster Damm	3::igndisp 3216,21431 3238,21448 3155,21572
+Schollenhof -> Waidmannsluster Damm: Waidmannsluster Damm	3::igndisp 3155,21572 3238,21448 3280,21477

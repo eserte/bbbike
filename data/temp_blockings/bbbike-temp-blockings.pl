@@ -17418,7 +17418,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_015285',
        data  => <<EOF,
-userdel	q4::inwork; 7855,18697 7758,18535 7676,18492
+userdel	q4::inwork; 7843,18705 7753,18542 7676,18492
 EOF
      },
      { from  => 1269727200, # 2010-03-27 23:00
@@ -17554,7 +17554,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_015512',
        data  => <<EOF,
-userdel	q4::inwork; 8182,18761 8066,18754 7886,18742 7855,18697
+userdel	q4::inwork; 8182,18761 8066,18754 7886,18742 7843,18705
 EOF
      },
      { from  => 1270987200, # 2010-04-11 14:00
@@ -18681,7 +18681,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20101105.1400.317649.html',
        data  => <<EOF,
-userdel	q4::inwork; 7855,18697 7785,18730 7676,18713 7599,18705 7520,18701 7492,18699 7434,18695 7217,18681
+userdel	q4::inwork; 7843,18705 7785,18730 7676,18713 7599,18705 7520,18701 7492,18699 7434,18695 7217,18681
 EOF
      },
      { from  => 1289156455, # 2010-11-07 20:00
@@ -22173,7 +22173,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20140411.1410.396295.html',
        data  => <<EOF,
-userdel	q4::inwork; 6792,19733 6516,19775 6460,19734 6334,19507 6247,19454
+userdel	q4::inwork; 6792,19733 6516,19775 6460,19734 6334,19507 6238,19450
 EOF
      },
      { from  => 1380101700, # 2013-09-25 11:35
@@ -24480,7 +24480,8 @@ EOF
        type  => 'handicap',
        source_id => 'IM_025833',
        data  => <<EOF,
-userdel	q4::inwork; 9727,17804 9835,17797 10053,17777 10179,17772 10311,17764 10459,17754
+userdel	q4::inwork; 9727,17804 9835,17797 10053,17777 10179,17772
+#userdel	q4::inwork; 10179,17772 10311,17764 10459,17754
 EOF
      },
      { from  => 1442080673, # 2015-09-12 19:57
@@ -24615,12 +24616,12 @@ userdel	q4::inwork 4681,23273 4704,23278 4744,23289 4910,23490 5006,23575
 EOF
      },
      { from  => 1445119200, # 2015-10-18 00:00
-       until => 1447542000, # 2015-11-15 00:00
+       until => 1446926697, # 1447542000, # 2015-11-15 00:00
        text  => 'Karmeliterweg: Bauarbeiten zwischen Frohnauer Str. und Alemannenstr., vom 19.10.2015 bis 14.11.2015',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.363335.php',
        data  => <<EOF,
-userdel	q4::inwork 1878,24619 1852,24593 1797,24562 1747,24549
+userdel	q4::inwork 1878,24619 1852,24593 1797,24562 1745,24546
 EOF
      },
      { from  => 1446332400, # 2015-11-01 00:00

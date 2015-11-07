@@ -13,7 +13,7 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraﬂe wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2015-11-06 vvv
+#: last_checked: 2015-11-07 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14286,11186 14357,11148 14442,11101
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraﬂe ausgewiesen	q3::inwork; 14442,11101 14468,11203
 Dˆringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
@@ -21,7 +21,7 @@ Dˆringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,112
 #: last_checked ^^^
 # 
 #: XXX laut Schild der Wasserbetriebe bis Oktober 2015, laut Fritz bis November 2015
-#: last_checked: 2015-11-06 vvv
+#: last_checked: 2015-11-07 vvv
 #: next_check: 2015-11-22 vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
@@ -816,7 +816,7 @@ Egidysteg: eng, Fuﬂg‰nger	q3 3094,22216 3134,22153
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 3772,22482 3715,22399 3674,22396 3631,22417 3556,22404 3498,22333 3390,22264 3355,22230 3271,22321
 (Tegeler Flieﬂ - M¸hlenfeldstr.): Fuﬂg‰nger	q1 3740,22520 3772,22482
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger, unterhalb der S-Bahnbr¸cke eng	q2 4222,22854 4176,22764 4117,22722 4106,22731 4022,22691
-(Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 5621,23966 5409,23816 5350,23717 5316,23661 5214,23420 5242,23156 5232,23139 5206,23103 5100,23045 5037,23036 4993,23020 4944,22978 4876,22955 4824,22907 4731,22904 4693,22897 4613,22928
+(Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 5621,23966 5409,23816 5350,23717 5316,23661 5214,23420 5242,23156 5232,23139 5206,23103 5100,23045 5037,23036 4993,23020 4944,22978 4876,22955 4824,22907 4750,22915 4697,22901 4613,22928
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 4596,22955 4543,22964 4459,22931 4407,22897 4332,22916 4309,22922 4158,22896
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger, eng	q2 5860,24067 5693,24037 5632,23992 5621,23966
 (Schildower Weg): Fuﬂg‰nger	q1 7877,24037 7675,23968 7615,23884 7571,23885 7339,23782 7312,23775 7185,23749
@@ -1616,8 +1616,9 @@ Ronnebypromenade: Fuﬂg‰nger	q2 -4905,1514 -4943,1439 -5002,1382 -5067,1400
 (Paul-Krause-Str. - Borussenstr.): steil, eng	q3 -3983,2280 -3966,2291 -3972,2265 -3955,2283 -3938,2287
 Rehsprung: Fuﬂg‰nger	q1 -3521,1681 -3300,1663 -3236,1776 -3126,1858 -3098,1922 -3112,2106 -3156,2134 -3177,2205 -3284,2323 -3290,2420
 #: note: offiziell nur ein Gehweg
-(Weg an der Kolonie am Nordgraben): eng, Fuﬂg‰nger	q4 5846,20279 5912,20308 5977,20337 6040,20364 6097,20398 6152,20452 6176,20482 6165,20517 6176,20545
-Am Lehnshof: enge Straﬂe	q1 4202,23034 4264,22992 4291,22986 4336,22984 4403,22981 4444,22989
+(Weg an der Kolonie am Nordgraben): eng, Fuﬂg‰nger	q4 5833,20273 5912,20308 5977,20337 6040,20364 6097,20398 6152,20452 6176,20482 6165,20517 6176,20545
+Am Lehnshof: enge Straﬂe	q1; 4202,23034 4264,22992 4291,22986
+Am Lehnshof: enge Straﬂe	q1 4291,22986 4336,22984 4403,22981 4444,22989
 Rundlingsteig: enge Straﬂe	q1 4403,22981 4398,23026 4332,23059 4292,23005 4291,22986
 Bornepfad: enge Straﬂe	q1 4332,23059 4312,23157
 #: XXX_prog BS nur am Wendehammer
@@ -1655,11 +1656,11 @@ Marthashof: Fuﬂg‰nger, spielende Kinder	q3 10448,14707 10483,14720 10561,14746 1
 (R¸tlistr. - Baseler Str.): einige Fuﬂg‰nger	q1 7062,17500 7042,17562 6897,17616
 #: XXX_prog BS zur Roedernallee, nur relevant, wenn man von der Fahrbahn oder von S¸den kommt
 #: XXX_prog BS (low) zum Wendehammer
-Weinbrennerweg: einige Fuﬂg‰nger	q1 6200,19554 6106,19510
+Weinbrennerweg: einige Fuﬂg‰nger	q1 6190,19551 6106,19510
 #: XXX_prog BS an der Wendestelle
 (Flieﬂtalstr. - Weg am Tegeler Flieﬂ): Bordstein	q2 3381,22273 3390,22264
 (Lotosweg - Alt-Hermsdorf): Gehweg, eng	q2 4613,23060 4564,23048
-(Wolfacher Pfad - Weg am Tegeler Flieﬂ): eng	q2 4681,22861 4693,22897
+(Wolfacher Pfad - Weg am Tegeler Flieﬂ): eng	q2 4681,22861 4697,22901
 (Alt-Hermsdorf - Zehntwerderweg): Fuﬂg‰nger, eng	q2 4564,23048 4596,22955
 An der Nordbahn: eng	q2 6447,20305 6349,20396
 #: XXX_prog BS an der S¸dseite, ist aber relativ flach, ansonsten w‰re es nur q1 oder so
@@ -1707,6 +1708,9 @@ Straupitzer Steig: Fuﬂg‰ngerzone	q4 6765,21364 6766,21341
 (am Fasaneriegraben - Senftenberger Ring West): einige Fuﬂg‰nger	q1 6841,21615 6826,21587 6808,21565 6748,21565
 (Senftenberger Ring West - Senftenberger Ring Ost): einige Fuﬂg‰nger	q1 6826,21587 6856,21588
 (am Fasaneriegraben): teilweise eng	q2- 7331,22037 7375,22146 7439,22138 7516,22178
+(Senftenberger Ring Nord - Mittelfeldbecken): einige Fuﬂg‰nger	q1 6977,22118 6989,21975 6999,21908
+(M‰rkische Zeile - Fasaneriegraben): Rampe	q3 6847,21509 6847,21524 6835,21530
+(M‰rkische Zeile - Fasaneriegraben): einige Fuﬂg‰nger	q2 6835,21530 6828,21541 6818,21554 6808,21565
 Schneefinkweg: enger Pfad	q3 12812,20239 12808,20233 12782,20191 12778,20184 12750,20128 12719,20065
 Schneefinkweg: enger Pfad	q3 12675,19974 12651,19928 12622,19874
 #: XXX_prog: BS (s¸dliche Seite)
@@ -2089,7 +2093,7 @@ Parkplatz Einkaufszentrum: Parkplatzverkehr	q2 -2195,3564 -2173,3513 -2164,3488
 (Am Gr¸ng¸rtel - Weg zwischen Triftstr. und Eichborndamm): einige Fuﬂg‰nger	q1 4597,20508 4626,20577
 (Weg am Packereigraben - Schluchseestr.): Fuﬂg‰nger	q1- 5471,22092 5470,22101 5469,22114 5443,22210
 (Alt-Hermsdorf - Zehntwerderweg): Fuﬂg‰nger, kurze Rampe	q2 4613,22928 4698,22778
-(Wanderweg an den Eichwerder Moorwiesen): einige Fuﬂg‰nger	q1 4256,23288 4288,23301 4338,23382 4373,23466 4444,23553 4466,23608 4455,23679 4436,23714 4495,23822 4498,23876 4535,23922 4754,23998 4807,24011 5023,23954 5050,23984 5081,24019 5106,24105 5101,24150 5136,24201
+(Wanderweg an den Eichwerder Moorwiesen): einige Fuﬂg‰nger	q1 4268,23292 4288,23301 4338,23382 4373,23466 4444,23553 4466,23608 4455,23679 4436,23714 4495,23822 4498,23876 4535,23922 4647,23973 4754,23998 4807,24011 5023,23954 5050,23984 5081,24019 5106,24105 5101,24150 5136,24201
 (Am Ried - Wanderweg an den Eichwerder Moorwiesen): einige Fuﬂg‰nger	q1 4593,23355 4588,23362 4529,23441
 #: note: von S¸den her steht hier ein Schild mit durchgestrichenem Rad
 (Am Ried - Wanderweg an den Eichwerder Moorwiesen): absch¸ssige Strecke, ggfs. schieben, einige Fuﬂg‰nger	q4 4529,23441 4500,23476
@@ -2215,6 +2219,9 @@ Veilchenbl¸tenweg: schmale Straﬂe	q1 11664,21246 11656,21309
 #: note: teilweise nur einspurig
 (Am Marderberg): eng	q1 14977,19129 14328,19527 13477,20064
 (Verl‰ngerte Hertzallee): Fuﬂg‰nger	q2 5352,11502 5296,11529 4950,11696 4905,11785
+(Welzower Steig - Senftenberger Ring): eng, kurvenreich	q2 6511,21649 6526,21682 6633,21633 6676,21647 6722,21722
+(Gertrudstr. - Wanderweg): eng	q3 4749,24020 4754,23998
+Im Brachfeldwinkel: einige Fuﬂg‰nger	q1 3024,21286 3068,21150
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

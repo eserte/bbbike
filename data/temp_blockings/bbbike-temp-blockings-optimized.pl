@@ -3853,7 +3853,8 @@ userdel	q4::inwork; 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
        undef,
        undef,
        {
-         'data' => 'userdel	q4::inwork; 9727,17804 9835,17797 10053,17777 10179,17772 10311,17764 10459,17754
+         'data' => 'userdel	q4::inwork; 9727,17804 9835,17797 10053,17777 10179,17772
+#userdel	q4::inwork; 10179,17772 10311,17764 10459,17754
 ',
          'from' => 1438588200,
          'id' => 2736,
@@ -3928,16 +3929,7 @@ userdel	2::inwork -1303,2003 -1591,1861
          'type' => 'handicap',
          'until' => 1449961200
        },
-       {
-         'data' => 'userdel	q4::inwork 4779,24321 4777,24342 4656,24379 4566,24389 4457,24400 4340,24413 4233,24459 4111,24488
-',
-         'from' => 1443564000,
-         'id' => 2745,
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.378909.php',
-         'text' => 'Veltheimstraße: Bauarbeiten zwischen Solquellstraße und Schildower Straße, Fahrbahn gesperrt, voraussichtlich vom 01.10.2015 bis 06.11.2015 ',
-         'type' => 'handicap',
-         'until' => 1446850800
-       },
+       undef,
        {
          'data' => '# REMOVED (hier keine Sperrung) --- userdel	q4::inwork; 5527,5217 5416,5289 5397,5302 5382,5312
 userdel	q4::inwork; 5382,5312 5268,5386 5183,5437 5088,5495
@@ -3971,16 +3963,7 @@ userdel	q4::inwork; 5382,5312 5268,5386 5183,5437 5088,5495
          'type' => 'handicap',
          'until' => 1447455599
        },
-       {
-         'data' => 'userdel	q4::inwork 1878,24619 1852,24593 1797,24562 1747,24549
-',
-         'from' => 1445119200,
-         'id' => 2751,
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.363335.php',
-         'text' => 'Karmeliterweg: Bauarbeiten zwischen Frohnauer Str. und Alemannenstr., vom 19.10.2015 bis 14.11.2015',
-         'type' => 'handicap',
-         'until' => 1447542000
-       },
+       undef,
        {
          'data' => 'userdel	q4::inwork 20782,5206 20774,5131 20852,5106 20765,4839
 ',

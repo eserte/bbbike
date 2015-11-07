@@ -69,7 +69,7 @@ Alt-Blankenburg	1 13576,20849 13562,20913 13909,20928
 Alt-Blankenburg	1 13909,20928 13576,20849
 Seestr.	1 5049,14675 5233,14753 5440,14840
 Seestr.	1 5440,14840 5264,14671 5057,14607
-Waidmannsluster Damm	1 2144,20870 1835,21427 1882,21468 2195,20898
+Waidmannsluster Damm	1 2144,20870 1843,21440 1870,21491 2195,20898
 Flughafen Tegel	1 2819,16141 2757,16194 2713,16286 2756,16344 2832,16343 2863,16280 2819,16141
 Jakob-Kaiser-Platz	1 2795,14161 2811,14196 2831,14219 2857,14222 2896,14187 2892,14149 2860,14118 2825,14128 2795,14161
 Kurt-Schumacher-Damm (Süd)	1 2831,14219 2803,14288 2793,14374 2905,14754
@@ -809,6 +809,7 @@ Bahnhofstr.	1 12202,21158 12158,21166
 Allee der Kosmonauten	1 20172,14141 20111,14140 20096,14127
 Augustaplatz	1 3936,4014 3955,4039 3986,4051 4015,4053 4034,4033 4045,4005 4042,3982 4025,3958 4000,3950 3971,3950 3946,3967 3937,3993 3936,4014
 Paul-Koenig-Str.	1 17268,16526 17312,16498 17304,16485 17293,16469 17251,16497 17268,16526
+Am Lehnshof	1s 4291,22986 4264,22992 4202,23034
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -1035,10 +1036,10 @@ Warnemünder Str. -> Hammersteinstr.: Mittelstreifen	3::igndisp 2744,7397 2750,74
 Hammersteinstr. -> Warnemünder Str.: Mittelstreifen	3::igndisp 2719,7415 2750,7444 2767,7592
 Gitter auf dem Mittelstreifen	3nocross::ignrte 8057,14876 8091,14895 8219,14897
 Reinickendorfer Str. -> Schulzendorfer Str.: Gitter auf dem Mittelstreifen	3::igndisp 8037,14958 8091,14895 8219,14897
-Abbiegen nicht möglich	3nocross::ignrte 7602,17399 7684,17435 7902,17166
-Holländerstr. -> Fahlandgasse: Abbiegen nicht möglich	3::igndisp 7602,17399 7684,17435 7681,17475
-Fahlandgasse -> Residenzstr.: Abbiegen nicht möglich	3::igndisp 7681,17475 7684,17435 7902,17166
-Fahlandgasse -> Letteallee: Abbiegen nicht möglich	3::igndisp 7681,17475 7684,17435 7707,17445
+Abbiegen nicht möglich	3nocross::ignrte 7602,17399 7675,17430 7902,17166
+Holländerstr. -> Fahlandgasse: Abbiegen nicht möglich	3::igndisp 7602,17399 7675,17430 7675,17475
+Fahlandgasse -> Residenzstr.: Abbiegen nicht möglich	3::igndisp 7675,17475 7675,17430 7902,17166
+Fahlandgasse -> Letteallee: Abbiegen nicht möglich	3::igndisp 7675,17475 7675,17430 7707,17445
 Mittelstreifen	3nocross::ignrte 7579,17532 7572,17558 7540,17675
 Am Schäfersee -> Residenzstr.: Mittelstreifen	3::igndisp 7477,17544 7572,17558 7540,17675
 Mittelstreifen	3nocross::ignrte 5550,18775 5635,18776 5713,18777
@@ -2377,6 +2378,7 @@ tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
 tragen (6 Stufen)	0:15:-90 4608,63927
 Treppe	0:40:-131 1888,42795
+Schranke, kann auf Bürgersteig umfahren werden	BNP:3:-217:trailer=5 1778,20377
 Schranke	BNP:3:-244:trailer=10 5296,11529
 Drängelgitter	BNP:5:-167:trailer=10 14364,8096
 Drängelgitter	BNP:5:-114:trailer=10 14405,8115
@@ -3234,7 +3236,7 @@ Straßenbahn	3nocross::ignrte 16837,17440 16947,17506 17159,17631
 Falkenberger Chaussee -> Rüdickenstr.: Straßenbahn	3::igndisp 17159,17631 16947,17506 16992,17472
 Rüdickenstr. -> Falkenberger Chaussee: Straßenbahn	3::igndisp 16992,17472 16947,17506 16837,17440
 Rudolf-Reusch-Str. [Wohngebiet]	1 15732,12562 15657,12562 15657,12648 15732,12650
-Letteallee	1 8226,17479 8110,17470 8014,17468 7845,17455 7707,17445 7684,17435
+Letteallee	1 8226,17479 8110,17470 8014,17468 7845,17455 7707,17445 7675,17430
 Mickestr.	1 8185,17352 8134,17398 8110,17470
 Kühleweinstr.	1 8014,17468 8043,17282 8088,17218
 Seekorso	1 -8828,6418 -8776,6425 -8682,6435 -8578,6462 -8470,6515 -8376,6579

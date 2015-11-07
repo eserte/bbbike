@@ -84,7 +84,7 @@ Alt-Blankenburg	1 13576,20849 13562,20913 13909,20928
 Alt-Blankenburg	1 13909,20928 13576,20849
 Seestr.	1 5049,14675 5233,14753 5440,14840
 Seestr.	1 5440,14840 5264,14671 5057,14607
-Waidmannsluster Damm	1 2144,20870 1835,21427 1882,21468 2195,20898
+Waidmannsluster Damm	1 2144,20870 1843,21440 1870,21491 2195,20898
 Flughafen Tegel	1 2819,16141 2757,16194 2713,16286 2756,16344 2832,16343 2863,16280 2819,16141
 Jakob-Kaiser-Platz	1 2795,14161 2811,14196 2831,14219 2857,14222 2896,14187 2892,14149 2860,14118 2825,14128 2795,14161
 Kurt-Schumacher-Damm (Süd)	1 2831,14219 2803,14288 2793,14374 2905,14754
@@ -1114,6 +1114,7 @@ Bahnhofstr.	1 12202,21158 12158,21166
 Allee der Kosmonauten	1 20172,14141 20111,14140 20096,14127
 Augustaplatz	1 3936,4014 3955,4039 3986,4051 4015,4053 4034,4033 4045,4005 4042,3982 4025,3958 4000,3950 3971,3950 3946,3967 3937,3993 3936,4014
 Paul-Koenig-Str.	1 17268,16526 17312,16498 17304,16485 17293,16469 17251,16497 17268,16526
+Am Lehnshof	1s:q3 4291,22986 4264,22992 4202,23034
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1377,7 +1378,7 @@ Cecilienstr.: Mittelstreifen	3nocross 21831,13801 21853,13784 21918,13720
 Warnemünder Str.: Mittelstreifen	3nocross 2767,7592 2750,7444 2744,7397
 Schulzendorfer Str.: Gitter auf dem Mittelstreifen	3nocross 8057,14876 8091,14895 8219,14897
 #: note: auf dem Radweg gibt es noch zusätzlich Absperrgitter
-Residenzstr.: Abbiegen nicht möglich	3nocross 7602,17399 7684,17435 7902,17166
+Residenzstr.: Abbiegen nicht möglich	3nocross 7602,17399 7675,17430 7902,17166
 Residenzstr.: Mittelstreifen	3nocross 7579,17532 7572,17558 7540,17675
 Lindauer Allee: Mittelstreifen	3nocross 5550,18775 5635,18776 5713,18777
 Lindauer Allee: Mittelstreifen	3nocross 5713,18777 5791,18778 5869,18779
@@ -2067,6 +2068,7 @@ Treppe	0:40 1888,42795
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke, kann auf Bürgersteig umfahren werden	BNP:3::trailer=5 1778,20377
 Schranke	BNP:3::trailer=10 5296,11529
 # 
 #: next_check_id: DIESEL-2015 vvv
@@ -3073,7 +3075,7 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: osm_watch: way id="23099023" version="9"
 #: osm_watch: way id="23099024" version="6"
 #: osm_watch: way id="103531998" version="2"
-#: last_checked: 2015-09-12 vvv
+#: last_checked: 2015-11-07 vvv
 #: check_frequency: 90d vvv
 # REMOVED (fertig) --- Tegeler Hafen: Weg über Insel gesperrt	2 1756,20405 1736,20441 1733,20470 1753,20511 1761,20539
 Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603
@@ -3433,7 +3435,7 @@ Drängelgitter	BNP:5 5684,773
 Straßenbahn	3nocross 16837,17440 16947,17506 17159,17631
 Rudolf-Reusch-Str. [Wohngebiet]	1 15732,12562 15657,12562 15657,12648 15732,12650
 #: confirmed_by: srt
-Letteallee	1 8226,17479 8110,17470 8014,17468 7845,17455 7707,17445 7684,17435
+Letteallee	1 8226,17479 8110,17470 8014,17468 7845,17455 7707,17445 7675,17430
 #: confirmed_by: srt
 Mickestr.	1 8185,17352 8134,17398 8110,17470
 Kühleweinstr.	1 8014,17468 8043,17282 8088,17218
