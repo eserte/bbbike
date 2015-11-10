@@ -23293,14 +23293,13 @@ EOF
 userdel	2::inwork 7103,11247 6851,11346
 EOF
      },
-     { from  => 1408173960, # 2014-08-16 09:26
-       until => 1408469794, # 1411017000, # 2014-09-18 07:10
-       text  => 'Unter den Linden: Straße zwischen Schadowstr. und Wilhelmstr. Richtung Brandenburger Tor gesperrt, 17.08.2014 bis 18.09.2014',
-       type  => 'gesperrt',
-       source_id => 'IM_022629',
+     { from  => 1446937200, # 2015-11-08 00:00
+       until => 1448319599, # 2015-11-23 23:59
+       text  => 'Unter den Linden: zwischen Schadowstraße und Wilhelmstraße Baustelle, Fahrbahn gesperrt, vom 09.11.2015 08:00 bis voraussichtlich 23.11.2015 ',
+       type  => 'handicap',
+       source_id => '2147339441',
        data  => <<EOF,
-#: by: http://www.morgenpost.de/berlin/article131305310/Panne-beim-U-Bahnbau-Unter-den-Linden-gesperrt.html
-userdel	1::inwork 9028,12307 8804,12280
+userdel	q4::inwork; 9028,12307 8804,12280
 EOF
      },
      { from  => undef, # 
@@ -24724,6 +24723,15 @@ EOF
 	3 9145,10290 9108,10101 9277,10057
 	3 9044,9753 9073,9915 8780,9968
 	3 8780,9968 9073,9915 9108,10101
+EOF
+     },
+     { from  => 1446953400, # 2015-11-08 04:30
+       until => 1448854200, # 2015-11-30 04:30
+       text  => 'Hohenschönhauser Str./Oderbruchstr.: Baustelle, zwischen Landsberger Allee und Weißenseer Weg gesperrt, Radfahrer dürfen den Gehweg benutzen, 09.11.2015 04:30 Uhr bis 30.11.2015 04:30 Uhr ',
+       type  => 'handicap',
+       source_id => 'IM_026700',
+       data  => <<EOF,
+userdel	q3::inwork; 14218,13834 14261,13932 14298,14015 14358,14155 14464,14216 14658,14328 14667,14336 14721,14379 14754,14406 14990,14537 15066,14579
 EOF
      },
     );

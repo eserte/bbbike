@@ -3547,7 +3547,16 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	q4::inwork; 9028,12307 8804,12280
+',
+         'from' => 1446937200,
+         'id' => 2614,
+         'source_id' => '2147339441',
+         'text' => 'Unter den Linden: zwischen Schadowstraße und Wilhelmstraße Baustelle, Fahrbahn gesperrt, vom 09.11.2015 08:00 bis voraussichtlich 23.11.2015 ',
+         'type' => 'handicap',
+         'until' => 1448319599
+       },
        undef,
        undef,
        undef,
@@ -3999,16 +4008,7 @@ userdel	q4::inwork; 5382,5312 5268,5386 5183,5437 5088,5495
          'until' => 1449457200
        },
        undef,
-       {
-         'data' => 'userdel	q2::inwork; 17520,4649 17542,4772 17601,5090 17648,5338
-',
-         'from' => 1445405400,
-         'id' => 2757,
-         'source_id' => 'IM_026599',
-         'text' => 'Sterndamm: zwischen Königsheideweg und Groß-Berliner Damm Bauarbeiten, Fahrbahn in Richtung S-Bhf. Schöneweide gesperrt, Radfahrer dürfen den Gehweg benutzen, 22.10.2015 07:30 Uhr bis 09.11.2015 08:30 Uhr ',
-         'type' => 'handicap',
-         'until' => 1447054200
-       },
+       undef,
        {
          'data' => 'userdel	q2::inwork; 17244,4242 17261,4267 17290,4308 17387,4446 17428,4503 17471,4570 17520,4649
 ',
@@ -4055,6 +4055,16 @@ userdel	q4::inwork; 5382,5312 5268,5386 5183,5437 5088,5495
          'text' => 'Großbeerenstr.: Bauarbeiten, Überqueren der Straße an der Wartenbergstr. und Obentrautstr. nicht möglich, voraussichtlich vom 02.11.2015 bis 31.01.2016 ',
          'type' => 'gesperrt',
          'until' => 1454281200
+       },
+       {
+         'data' => 'userdel	q3::inwork; 14218,13834 14261,13932 14298,14015 14358,14155 14464,14216 14658,14328 14667,14336 14721,14379 14754,14406 14990,14537 15066,14579
+',
+         'from' => 1446953400,
+         'id' => 2762,
+         'source_id' => 'IM_026700',
+         'text' => 'Hohenschönhauser Str./Oderbruchstr.: Baustelle, zwischen Landsberger Allee und Weißenseer Weg gesperrt, Radfahrer dürfen den Gehweg benutzen, 09.11.2015 04:30 Uhr bis 30.11.2015 04:30 Uhr ',
+         'type' => 'handicap',
+         'until' => 1448854200
        }
      
 );
