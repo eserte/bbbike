@@ -17182,11 +17182,11 @@ EOF
 userdel	2::inwork -2513,3631 -2464,3631 -2396,3666 -2174,3718 -2042,3838 -2015,3873 -2012,3949 -2030,4089 -1944,4140 -1760,4001 -1701,3980 -1621,3972 -1516,3993 -1488,4009
 EOF
      },
-     { from  => $isodate2epoch->("2014-12-11 00:00:00"), # 1354748400, # 2012-12-06 00:00, # 1291330800, # PERIODISCH! # früher: 1259794800, # 2009-12-03 00:00
-       until => $isodate2epoch->("2014-12-14 23:59:59"), # 1355698799, # 2012-12-16 23:59, # 1292194799, # PERIODISCH! # früher: 1260745199, # 2009-12-13 23:59
+     { from  => $isodate2epoch->("2015-12-10 00:00:00"), # 1354748400, # 2012-12-06 00:00, # 1291330800, # PERIODISCH! # früher: 1259794800, # 2009-12-03 00:00
+       until => $isodate2epoch->("2015-12-13 23:59:59"), # 1355698799, # 2012-12-16 23:59, # 1292194799, # PERIODISCH! # früher: 1260745199, # 2009-12-13 23:59
        periodic => 1,
        recurrences => [['yearly', days => 11, months => 12]],
-       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 12.12.2014 bis zum 14.12.2014',
+       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 11.12.2015 bis zum 13.12.2015',
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-deutschland.de/berlin-koepenick-weihnachtsmarkt.html',
        data  => <<EOF,
@@ -24474,8 +24474,8 @@ userdel	q4::inwork 2615,25225 2649,25170 2694,25132
 EOF
      },
      { from  => 1438588200, # 2015-08-03 09:50
-       until => 1447430400, # 2015-11-13 17:00
-       text  => 'Florastr.: Baustelle zwischen Wollankstr. und Mühlenstr., Fahrtbahn in Richtung S- und U-Bahnhof Pankow gesperrt, 04.08.2015 bis 13.11.2015 ',
+       until => $isodate2epoch->("2015-11-30 17:00:00"), # 1447430400, # 2015-11-13 17:00
+       text  => 'Florastr.: Baustelle zwischen Wollankstr. und Mühlenstr., Fahrtbahn in Richtung S- und U-Bahnhof Pankow gesperrt, 04.08.2015 bis 30.11.2015 ',
        type  => 'handicap',
        source_id => 'IM_025833',
        data  => <<EOF,

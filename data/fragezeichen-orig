@@ -1332,6 +1332,7 @@ Seegefelder Weg: Bau von Radspuren	?::projected -6507,15007 -6861,15129
 # REMOVED --- Chausseestr.: wie weit geht hier noch die Radspur?	? 8442,14456 8527,14352
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2015
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/46re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: note: Privatstraße, aber ausdrücklich "öffentlich zugänglich"
 #: XXX fehlt in Berlin.coords.data
 #: next_check: 2015-10-10 (Wirksamkeit der Benennung)
@@ -1488,6 +1489,7 @@ Kastanienallee (Potsdam): teilweise Entwidmung für den Kfzverkehr (wo genau? wan
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4892 (Neueinleitung des Planaufstellungsverfahrens)
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036406312569/406312569/00102389/89-Anlagen/01/DRS0792VK.pdf
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2015
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.401555.php
 #: last_checked: 2015-05-06
 #: check_frequency: 360d
 Fanny-Zobel-Str.	? 13975,10187 14049,10164
@@ -1736,8 +1738,9 @@ Kolonnenstr.: werden hier Radstreifen errichtet?	?::projected; 7709,8777 7795,87
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4744
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20140610.1005.397765.html
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=5027
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20151113.1355.402692.html
 #: last_checked: 2015-09-27
-#: next_check: 2016-09-28
+#: next_check: 2016-01-01
 Lauterstr.: wird die Straße am Breslauer Platz komplett für Autofahrer/Radfahrer gesperrt?	?::projected 5810,7337 5817,7223
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810361057749620/1057749620/00056359/59-Anlagen/04/vzbbvv01814_-_Fussgaengerueberweg_Alte_Hellers.pdf --- #: priority: #C --- Alte Hellersdorfer Str.: wird hier ein Zebrastreifen entstehen	? 23079,15855 23134,15883
@@ -2101,6 +2104,7 @@ Planstraßen im Marienhain: Straßennamen? Qualität?	? 22771,3151 22476,3118 22485
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2015
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6407 (Korrektur der Benennung, vorher Clara-Immerwahr-Haber-Str.)
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036322976038/322976038/00081362/62-Anlagen/02/vzb1095_IV_Korrektur_Benennung_Clara_Immerwahr.pdf
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/46re.pdf/file?y=2015 (Korrektur)
 #: last_checked: 2015-04-11
 #: next_check: 2015-10-01
 #: XXX Straße ist asphaltiert
@@ -2251,9 +2255,6 @@ Traudelstr.: geplante Straße in Altglienicke, genaue Lage, Qualität?	?::projecte
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2015
 #: next_check: 2016-08-01
 Bebauungsplan 10-77: werden hier neue Straßen entstehen?	?::projected 21483,16527 21548,16338
-# 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2015
-Altes Gaswerk Mariendorf & Im Marienpark: Straßenbenennungen - wo liegen die Straßen? Qualität?	? 8640,3506 8958,3763 8697,4017
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6436
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036284949883/284949883/00122677/77-Anlagen/02/Anlage1775.pdf
@@ -4153,3 +4154,10 @@ Birkenweg (Havelberg): Qualität?	? -78908,46280 -79030,46209 -79197,46187 -79505
 #: next_check: 2015-09-21
 (Am Wuhlebogen - Kaulsdorfer Str.): ist die Verbindung schon fertiggestellt? Straßenname? Qualität?	?::inwork 21639,8105 21686,8110
 Domstrengbrücke und Verbindung zum Grillendamm: Qualität?	? -46302,103 -46305,130 -46339,191 -46379,281
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2015
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/46re.pdf/file?y=2015 (Grundstücksnummerierungen, Lage)
+#: XXX fehlen in Berlin.coords.data vvv
+Altes Gaswerk Mariendorf: Qualität?	? 8295,4303 8266,4221 8404,3648 8461,3410
+Im Marienpark: Qualität? Gibt es eine Verbindung zum Weg am Bahndamm?	? 8404,3648 8070,3563
+#: XXX ^^^

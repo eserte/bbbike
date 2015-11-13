@@ -2414,7 +2414,26 @@ userdel	2::temp 13288,7653 13278,7673 13245,7742
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 22111,4562 22162,4546 22214,4548
+',
+         'from' => 1449702000,
+         'id' => 2003,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              11,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-deutschland.de/berlin-koepenick-weihnachtsmarkt.html',
+         'text' => 'Alt-Köpenicker Weihnachtsmarkt vom 11.12.2015 bis zum 13.12.2015',
+         'type' => 'gesperrt',
+         'until' => 1450047599
+       },
        undef,
        undef,
        undef,
@@ -3868,9 +3887,9 @@ userdel	q4::inwork; 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
          'from' => 1438588200,
          'id' => 2736,
          'source_id' => 'IM_025833',
-         'text' => 'Florastr.: Baustelle zwischen Wollankstr. und Mühlenstr., Fahrtbahn in Richtung S- und U-Bahnhof Pankow gesperrt, 04.08.2015 bis 13.11.2015 ',
+         'text' => 'Florastr.: Baustelle zwischen Wollankstr. und Mühlenstr., Fahrtbahn in Richtung S- und U-Bahnhof Pankow gesperrt, 04.08.2015 bis 30.11.2015 ',
          'type' => 'handicap',
-         'until' => 1447430400
+         'until' => 1448899200
        },
        {
          'data' => 'userdel	q4::inwork 4492,20214 4622,20292 4718,20341 4879,20427
@@ -3939,17 +3958,7 @@ userdel	2::inwork -1303,2003 -1591,1861
          'until' => 1449961200
        },
        undef,
-       {
-         'data' => '# REMOVED (hier keine Sperrung) --- userdel	q4::inwork; 5527,5217 5416,5289 5397,5302 5382,5312
-userdel	q4::inwork; 5382,5312 5268,5386 5183,5437 5088,5495
-',
-         'from' => 1444032000,
-         'id' => 2746,
-         'source_id' => 'IM_026452',
-         'text' => 'Albrechtstr.: Baustelle zwischen Filandastr. und Schützenstr., Fahrbahn Richtung Schloßstr. gesperrt, für Radfahrer umständliche Führung über Gehweg, 06.10.2015 10:00 Uhr bis 13.11.2015 17:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1447430400
-       },
+       undef,
        undef,
        {
          'data' => 'userdel	2::inwork 37162,121204 38900,120605
