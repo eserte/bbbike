@@ -259,7 +259,7 @@ Dieselstr., Umfahrung: Fuﬂg‰nger, kurvig, eng	q2-::inwork 14326,8062 14344,8072 
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20140707.1250.398363.html?date=20140722 (Verzˆgerung)
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20140801.1405.398592.html
 #: source_id: IM_022515
-#: last_checked: 2015-11-03
+#: last_checked: 2015-11-14
 Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung S¸den auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12898,7832 12914,7785 12969,7610
 # REMOVED (fertig) --- Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung S¸den auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12969,7610 12991,7549 12992,7545 13015,7471 13018,7441
 # REMOVED (fertig) --- #: XXX laut Schild bis Herbst 2014 --- #: XXX wird sich nach den Bauarbeiten hier etwas ‰ndern? Zus‰tzliche Asphaltierung der Delbr¸ckstr.? Sperrung der Walterstr. f¸r den Kfz-Verkehr? Bleibt die Einbahnstraﬂe in der Walterstr. (ggfs. den Eintrag in gesperrt-orig wieder aktivieren) --- #: last_checked: 2014-08-26 --- #: next_check: 2014-10-15 --- Delbr¸ckstr./Walterstr.: Bauarbeiten, Fahrbahn nicht benutzbar	q4::inwork 13122,6717 13099,6712 13126,6687
@@ -688,7 +688,8 @@ Barsekowstr.: Fuﬂg‰nger	q1 5336,4676 5406,4631 5465,4606 5521,4605 5588,4629
 #: XXX_prog: f¸r Anh‰nger q1
 #: note: nur drei Schwellen sind ¸brig geblieben, kˆnnen mit Normalrad umfahren werden
 Dieffenbachstr.: Bodenschwellen	q0- 11141,9732 11346,9655
-# REMOVED (hier ist nur eine einzige Bodenschwelle ¸brig geblieben) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5624 --- #: XXX_prog: f¸r Anh‰nger evtl. q1 --- Dieffenbachstr.: Bodenschwellen, kˆnnen gut umfahren werden	q0- 11346,9655 11541,9576
+#: XXX_prog: f¸r Anh‰nger evtl. q1
+Dieffenbachstr.: Bodenschwellen, kˆnnen gut umfahren werden	q0- 11346,9655 11541,9576
 # REMOVED (alle Bodenschwellen wurden entfernt) --- Schˆnleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
 Hoffmannstr.: Bodenschwellen (2x)	q1 14289,9870 14077,10016
 Lausitzer Platz: einige Bodenschwellen	q2 12197,10494 12172,10585
@@ -2222,6 +2223,8 @@ Veilchenbl¸tenweg: schmale Straﬂe	q1 11664,21246 11656,21309
 (Welzower Steig - Senftenberger Ring): eng, kurvenreich	q2 6511,21649 6526,21682 6633,21633 6676,21647 6722,21722
 (Gertrudstr. - Wanderweg): eng	q3 4749,24020 4754,23998
 Im Brachfeldwinkel: einige Fuﬂg‰nger	q1 3024,21286 3068,21150
+#: XXX_prog mit Anh‰nger aber ggfs. q1
+Stelzenweg, Straﬂe 26a: zahlreiche Bodenschwellen, mit Normalrad gut umfahrbar	q0- 15464,3936 15362,4023 15183,4157 15028,4272 14967,4317 14805,4440 14651,4554 14616,4581
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -3070,7 +3073,7 @@ Telramundweg: enge Straﬂe	q1 5206,4432 5284,4390
 # 
 #: by: Patrick Walter:
 #: corrected_by: Roland Mohrbacher (bei gutem Wetter)
-(Weg entlang der U-Bahn-Betriebswerkstatt): einige Fuﬂg‰nger, bei gutem Wetter viele Fuﬂg‰nger	q1 13162,3576 13384,3426 13478,3365 13552,3317 13624,3355 13740,3252
+(Weg entlang der U-Bahn-Betriebswerkstatt): einige Fuﬂg‰nger, bei gutem Wetter viele Fuﬂg‰nger	q1 13217,3557 13207,3531 13384,3426 13478,3365 13552,3317 13624,3355 13740,3252
 # 
 #: by: antje weiss dorn:
 #: corrected_by: srt (q3 -> q2)
@@ -3312,7 +3315,7 @@ Franckepark: einige Fuﬂg‰nger	q1 9381,6277 9426,6239 9463,6232 9683,6199
 Straﬂe 78: enge Straﬂe	q2 7715,19408 7797,19580
 #: by: Chris (razorbacky):
 #: corrected_by: srt/policy (q2 -> q1)
-Tankredstr.: enge Straﬂe	q1 8264,5383 8328,5417 8365,5418 8394,5412 8484,5347
+Tankredstr.: enge Straﬂe	q1 8264,5383 8328,5417 8365,5418 8394,5412 8480,5350
 #: by: Thomas Penski:
 Battenheimer Weg: enge Straﬂe	q1 11762,1040 11681,1031 11393,1243
 #: by: MaPo: vvv
@@ -3494,7 +3497,8 @@ Rhenser Weg: Fuﬂweg	q1 19083,9062 19133,9087
 Altenescher Weg: enge Straﬂe	q1 14051,14822 13856,14944 13744,15018
 #: by: Alexandra (kaffeeschluerfer):
 #: corrected_by: srt/policy (q4 -> q1)
-(Rudower Str. - Girlitzweg): gemeinsamer Fuﬂ- und Radweg	q1 15176,3136 15273,3269
+#: XXX_prog Bordstein am Distelfinkweg, ansonsten q1
+(Rudower Str. - Girlitzweg): gemeinsamer Fuﬂ- und Radweg, Bordstein	q2 15176,3136 15273,3269
 #: by: Sybille Koppermann
 #: note: Olaf (zioerjen) meint nur q2, ohne weitere Angaben
 #: corrected_by: srt/policy (q1 -> q0-)
@@ -3632,7 +3636,7 @@ Lachtaubenweg: enge Straﬂe	q1 -1827,20216 -1823,20298 -1838,20471
 Elstergasse: enge Straﬂe, rechts und links versetzt parkende Autos	q1 -1596,20184 -1827,20216 -1971,20231
 #: by: ^^^
 #: by: Manfred Br¸hl
-Wesenberger Ring: enge Straﬂe	q1 13162,3576 13206,3674 13238,3794 13229,3836 13206,3854 13165,3850 13129,3809 13030,3664
+Wesenberger Ring: enge Straﬂe	q1 13163,3582 13206,3674 13238,3794 13229,3836 13206,3854 13165,3850 13129,3809 13030,3664
 #: by: PS (peter.sch...):
 Schmale Gasse: enge Straﬂe	q1 23883,4328 24055,4348 24075,4417
 #: by: Thomas (theo...)

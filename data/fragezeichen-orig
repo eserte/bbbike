@@ -201,9 +201,9 @@ Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15553,7408
 # REMOVED (teilweise realisiert) --- #: XXX Baumaßnahme 9.19 (Realisierung nach 2011) --- #: XXX vielleicht werden im Zuge der Bauarbeiten in der Oberspreestr. auch Radverkehrsanlagen angelegt? --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php --- #: source_id: IM_022377 --- #: last_checked: 2014-08-08 --- #: next_check: 2014-12-17 --- Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)	?::projected; 20949,4775 20765,4839 20689,4862 20383,4963 19965,5101 19737,5176 19715,5185 19632,5211 19534,5242
 # 
 #: XXX Baumaßnahme 8.14 (Realisierung nach 2011)
-#: last_checked: 2015-07-23
+#: last_checked: 2015-11-14
 #: check_frequency: 120d
-Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projected 13809,5257 13607,5241 13594,5240 13327,5234 13250,5234 13112,5253 13046,5267
+Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projected; 13046,5267 13112,5253 13250,5234 13327,5234 13594,5240 13607,5241 13809,5257
 # 
 # REMOVED (realisiert, im Wald) --- #: XXX Baumaßnahme 9.10 (Realisierung nach 2011), 9.2 (Realisierung bis 2010) --- #: last_checked: 2013-08-03 (keine Anzeichen) --- #: check_frequency: 100d --- Müggelseedamm: entstehen hier Radwege/spuren, insbesondere Richtung Westen?	?::projected 25010,4807 24936,4838 24798,4895 24681,4943 24074,5279 23950,5342
 # 
@@ -304,7 +304,7 @@ Feuerbachstr.: Radspuren bis 2015 geplant	?::inwork 5582,6360 5702,6381 5781,640
 #: check_frequency: 90d
 Kaiserstr.: Radspuren bis 2015 geplant	?::projected 9310,4407 9192,4389 9079,4376
 # 
-#: last_checked: 2015-09-09
+#: last_checked: 2015-11-14
 #: check_frequency: 90d
 Schöneberger Str.: Radspuren bis 2015 geplant	?::projected 8735,6695 8645,6781 8496,6919 8447,6964 8414,6995 8319,7084
 # 
@@ -845,14 +845,14 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 # REMOVED (realisiert) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) --- #: last_checked: 2013-09-27 (Markierungsarbeiten haben begonnen) --- #: next_check: 2013-10-04 --- Werbellinstr.: Radstreifen werden erstellt	?::projected; 12698,8175 12650,8164 12541,8140 12426,8115
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf vvv
-#: last_checked: 2015-11-05
+#: last_checked: 2015-11-14
 #: check_frequency: 14d
 #: priority: #C
 Lohmühlenbrücke: Zebrastreifen wird angelegt (oder nur eine Mittelinsel?)	?::inwork 12850,9375 12871,9356 12888,9338
 # 
 #: by: http://www.bwb.de/content/language1/html/10337.php#11671
 #: osm_watch: way id="75509950" version="11"
-#: last_checked: 2015-11-06
+#: last_checked: 2015-11-14
 #: check_frequency: 60d
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,9775 12074,9689 12066,9558
 #: by: ^^^
@@ -862,12 +862,12 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,977
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="13"
-#: last_checked: 2015-11-06
+#: last_checked: 2015-11-14
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
 #: XXX laut Tsp vom 2010-03-26 wird der Radweg gerade erneuert (Richtung Norden)
-#: last_checked: 2015-09-09
+#: last_checked: 2015-11-14
 #: check_frequency: 120d
 #: priority: #C
 Tempelhofer Damm: wird der Radweg Richtung Norden erneuert?	?::projected; 9242,7286 9242,7325 9242,7658 9240,7811 9240,7991 9240,8028 9239,8099 9238,8253 9238,8410 9233,8597 9229,8718
@@ -1009,10 +1009,7 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: check_frequency: 180d
 Innstr.: eventuell wird hier asphaltiert, vielleicht auch der Zugang zum Elsensteg erleichtert?	?::projected 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (in Bau, Stand 2012-04)
-# REMOVED --- : source_id: IM_020353	
-#: last_checked: 2015-02-21
-#: check_frequency: 120d
-Buckower Damm: eventuell werden die Radwege hier asphaltiert oder neues Verbundsteinpflaster verlegt?	?; 12564,4308 12637,4014 12655,3882 12663,3762 12673,3627 12673,3619 12684,3406 12687,3319 12701,2955 12695,2789 12693,2746 12694,2570 12694,2544 12694,2517
+Buckower Damm: eventuell werden die Radwege hier asphaltiert oder neues Verbundsteinpflaster verlegt?	? 12673,3619 12684,3406 12687,3319 12701,2955 12695,2789 12693,2746 12694,2570 12694,2544 12694,2517
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (in Planung, Stand 2012-04) --- #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20130429.1340.384123.html (Beginn: 2013-05-06) --- #: last_checked: 2013-08-26 --- #: next_check: 2013-11-01 --- Marienfelder Chaussee: eventuell werden die Radwege hier asphaltiert oder neues Verbundsteinpflaster verlegt?	?::projected; 12207,1704 11865,1564 11765,1522 11476,1398 11216,1293 11157,1269 11012,1210 10829,1135 10769,1111 10664,1068 10425,971
 #: XXX ^^^
 #: by: ^^^
@@ -1726,7 +1723,7 @@ Zossener Str.: wird die Vorfahrtsregelung hier aufgehoben?	? 9827,10051 9837,985
 # REMOVED (das sah nicht öffentlich aus...) --- #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20121129.1435.378795.html vvv --- Privatstraße der Berlin-Chemie: befahrbar für Radfahrer? Qualität?	? 21211,3474 21270,3407 20867,3018 --- Privatstraße der Berlin-Chemie: befahrbar für Radfahrer? Qualität?	? 21046,3188 20927,3292 --- #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=3934&options=4
-#: last_checked: 2015-09-09
+#: last_checked: 2015-11-14
 #: check_frequency: 90d
 Schöneberger Str.: eventuell wird hier eine (Fußgänger-)Ampel entstehen	?::projected 8640,6770 8645,6781 8655,6796
 # 
@@ -3691,15 +3688,15 @@ Alter Fischerweg (Gosen): Qualität?	? 32778,-1044 33013,-790 33117,-767 33140,-7
 #: XXX Radwegesanierung in Neukölln vvv
 # REMOVED (realisiert) --- #: XXX Baumaßnahme 8.18 (Realisierung bis 2010) --- #: XXX_osm laut osm existieren bereits Radwege (track), aber stimmt das? --- Buckower Damm: existieren am Buckower Damm zwischen Gerlinger Str. und Stadtgrenze Radwege oder Radspuren?	? 12938,1348 12941,1256 12984,1011
 # REMOVED (realisiert) --- Gutschmidtstraße: sind die Radwege asphaltiert oder saniert?	? 12655,3882 12711,3881 12726,3870 12796,3821 12913,3743 13030,3664 13162,3576
-# REMOVED (realisiert) --- Gutschmidtstraße: sind die Radwege asphaltiert oder saniert?	? 13162,3576 13387,3513 13526,3519
+# REMOVED (realisiert) --- Gutschmidtstraße: sind die Radwege asphaltiert oder saniert?	? 13162,3576 13217,3557 13387,3513 13526,3519
 #: XXX Fahrbahn wird ab Kormoranweg saniert, wird in Zuge der Sanierung auch der Radweg neu gemacht?
-#: source_id: IM_023411
-#: last_checked: 2015-02-21
-#: next_check: 2015-04-29
+# REMOVED --- : source_id: IM_023411
+#: last_checked: 2015-11-14
+#: check_frequency: 180d
 Fritz-Erler-Allee: werden die Radwege asphaltiert oder saniert?	? 14392,2979 14274,3129 14205,3187 14126,3225 14023,3276 13906,3340 13775,3500
 # REMOVED --- : source_id: IM_020569
-#: last_checked: 2015-02-21
-#: next_check: 2015-04-29
+#: last_checked: 2015-11-14
+#: check_frequency: 180d
 Gutschmidtstr.: werden die Radwege asphaltiert oder saniert?	? 13775,3500 13710,3522 13623,3523 13526,3519
 #: XXX ^^^
 #: by: ^^^
@@ -4155,9 +4152,4 @@ Birkenweg (Havelberg): Qualität?	? -78908,46280 -79030,46209 -79197,46187 -79505
 (Am Wuhlebogen - Kaulsdorfer Str.): ist die Verbindung schon fertiggestellt? Straßenname? Qualität?	?::inwork 21639,8105 21686,8110
 Domstrengbrücke und Verbindung zum Grillendamm: Qualität?	? -46302,103 -46305,130 -46339,191 -46379,281
 # 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2015
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/46re.pdf/file?y=2015 (Grundstücksnummerierungen, Lage)
-#: XXX fehlen in Berlin.coords.data vvv
-Altes Gaswerk Mariendorf: Qualität?	? 8295,4303 8266,4221 8404,3648 8461,3410
-Im Marienpark: Qualität? Gibt es eine Verbindung zum Weg am Bahndamm?	? 8404,3648 8070,3563
-#: XXX ^^^
+# REMOVED (aufgenommen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2015 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/46re.pdf/file?y=2015 (Grundstücksnummerierungen, Lage) --- #: XXX fehlen in Berlin.coords.data vvv --- Altes Gaswerk Mariendorf: Qualität?	? 8295,4303 8266,4221 8404,3648 8461,3410 --- Im Marienpark: Qualität? Gibt es eine Verbindung zum Weg am Bahndamm?	? 8404,3648 8346,3633 8178,3591 8070,3563

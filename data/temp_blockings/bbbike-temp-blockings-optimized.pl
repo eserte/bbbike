@@ -3971,16 +3971,7 @@ userdel	2::inwork -1303,2003 -1591,1861
          'until' => 1475272800
        },
        undef,
-       {
-         'data' => 'userdel	q4::inwork 4681,23273 4704,23278 4744,23289 4910,23490 5006,23575
-',
-         'from' => 1444849734,
-         'id' => 2750,
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.385612.php',
-         'text' => 'Seebadstr.: Bauarbeiten, Sperrung der Fahrbahn von Lotosweg bis Am Ried, bis 13. November 2015',
-         'type' => 'handicap',
-         'until' => 1447455599
-       },
+       undef,
        undef,
        {
          'data' => 'userdel	q4::inwork 20782,5206 20774,5131 20852,5106 20765,4839

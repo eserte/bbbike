@@ -306,6 +306,7 @@ Barsekowstr.: Fuﬂg‰nger	q1 5336,4676 5406,4631 5465,4606 5521,4605 5588,4629
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5509,4773 5453,4665 5406,4631
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5797,4846 5806,4840 5909,4798 5947,4791 6022,4746 6026,4744
 Dieffenbachstr.: Bodenschwellen	q0 11141,9732 11346,9655
+Dieffenbachstr.: Bodenschwellen, kˆnnen gut umfahren werden	q0 11346,9655 11541,9576
 Hoffmannstr.: Bodenschwellen (2x)	q1 14289,9870 14077,10016
 Lausitzer Platz: einige Bodenschwellen	q2 12197,10494 12172,10585
 Lausitzer Platz: einige Bodenschwellen	q2 12274,10612 12172,10585
@@ -1517,6 +1518,7 @@ Veilchenbl¸tenweg: schmale Straﬂe	q1 11664,21246 11656,21309
 (Welzower Steig - Senftenberger Ring): eng, kurvenreich	q2 6511,21649 6526,21682 6633,21633 6676,21647 6722,21722
 (Gertrudstr. - Wanderweg): eng	q3 4749,24020 4754,23998
 Im Brachfeldwinkel: einige Fuﬂg‰nger	q1 3024,21286 3068,21150
+Stelzenweg, Straﬂe 26a: zahlreiche Bodenschwellen, mit Normalrad gut umfahrbar	q0 15464,3936 15362,4023 15183,4157 15028,4272 14967,4317 14805,4440 14651,4554 14616,4581
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
@@ -1978,7 +1980,7 @@ Starkenburger Str.: enge Straﬂe	q1 -575,4319 -548,4326 -441,4354 -380,4376 -324,
 Jean-Paul-Weg: enge Straﬂe	q1 9652,196 9762,155
 Helene-von-M¸linen-Weg: enge Straﬂe	q1 3382,2216 3385,2341 3387,2473
 Telramundweg: enge Straﬂe	q1 5206,4432 5284,4390
-(Weg entlang der U-Bahn-Betriebswerkstatt): einige Fuﬂg‰nger, bei gutem Wetter viele Fuﬂg‰nger	q1 13162,3576 13384,3426 13478,3365 13552,3317 13624,3355 13740,3252
+(Weg entlang der U-Bahn-Betriebswerkstatt): einige Fuﬂg‰nger, bei gutem Wetter viele Fuﬂg‰nger	q1 13217,3557 13207,3531 13384,3426 13478,3365 13552,3317 13624,3355 13740,3252
 Drosselbartweg: enger Weg	q2 13899,18833 13909,18835 13953,18842 13967,18842 13993,18833 14061,18791 14206,18700 14218,18674 14222,18666
 (Heidenheimer Str. - Friedrichsthaler Weg): schmaler Radweg	q1 3048,23254 2870,23360
 (Helweg - Mauerweg): etwas schmaler Weg	q1 648,24589 575,24601
@@ -2067,7 +2069,7 @@ Immenweg: eng (einspurig)	q1 6744,4983 6419,5048 6385,4896
 Albtalweg: enge Straﬂe	q1 5368,22669 5338,22753 5297,22830 5243,22896
 Franckepark: einige Fuﬂg‰nger	q1 9381,6277 9426,6239 9463,6232 9683,6199
 Straﬂe 78: enge Straﬂe	q2 7715,19408 7797,19580
-Tankredstr.: enge Straﬂe	q1 8264,5383 8328,5417 8365,5418 8394,5412 8484,5347
+Tankredstr.: enge Straﬂe	q1 8264,5383 8328,5417 8365,5418 8394,5412 8480,5350
 Battenheimer Weg: enge Straﬂe	q1 11762,1040 11681,1031 11393,1243
 Birnbaumring: enge Straﬂe	q0 8661,24952 8751,24988 8785,25014 8825,25052 8871,25109 8922,25212 8856,25267 8776,25332 8735,25366 8673,25418 8584,25371 8501,25358
 Stavenhagener Str.: enge Straﬂe	q1 13632,5126 13534,5111 13444,5097 13359,5086
@@ -2137,7 +2139,7 @@ Roseggerstr. (Mahlsdorf): enge Straﬂe	q1 23661,8597 23860,8480
 Unionstr.: breiter Fuﬂweg, einige Fuﬂg‰nger	q2 5708,14077 5782,14067
 Rhenser Weg: Fuﬂweg	q1 19083,9062 19133,9087
 Altenescher Weg: enge Straﬂe	q1 14051,14822 13856,14944 13744,15018
-(Rudower Str. - Girlitzweg): gemeinsamer Fuﬂ- und Radweg	q1 15176,3136 15273,3269
+(Rudower Str. - Girlitzweg): gemeinsamer Fuﬂ- und Radweg, Bordstein	q2 15176,3136 15273,3269
 Bernhard-B‰stlein-Str.: enge Straﬂe	q0 15354,13998 15487,14047 15595,14041 15593,13768 15661,13764 15653,13542
 Kulmseestr.: einige Fuﬂg‰nger	q1 20001,12368 20062,12353 20156,12311
 Kulmseestr.: einige Fuﬂg‰nger	q1 20252,12262 20303,12230
@@ -2192,7 +2194,7 @@ Seepromenade: enge Straﬂe	q1 -4582,7213 -4559,7216 -4549,7243
 M¸nchener Str. (Lichtenrade): enge Straﬂe	q1 11384,-1983 11380,-2100 11388,-2202 11433,-2320 11496,-2484 11523,-2617 11545,-2724
 Lachtaubenweg: enge Straﬂe	q1 -1827,20216 -1823,20298 -1838,20471
 Elstergasse: enge Straﬂe, rechts und links versetzt parkende Autos	q1 -1596,20184 -1827,20216 -1971,20231
-Wesenberger Ring: enge Straﬂe	q1 13162,3576 13206,3674 13238,3794 13229,3836 13206,3854 13165,3850 13129,3809 13030,3664
+Wesenberger Ring: enge Straﬂe	q1 13163,3582 13206,3674 13238,3794 13229,3836 13206,3854 13165,3850 13129,3809 13030,3664
 Schmale Gasse: enge Straﬂe	q1 23883,4328 24055,4348 24075,4417
 Albrechtshofer Weg: enge Straﬂe	q1 -7517,15858 -7642,15840 -7747,15842 -7865,15867 -7975,15904
 Faucherweg: enge Straﬂe	q1 -1307,14801 -1251,14772 -1207,14781 -1141,14814 -896,14888
