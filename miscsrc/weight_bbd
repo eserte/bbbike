@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2003,2012,2013,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003,2012,2013,2014,2015 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -172,7 +172,7 @@ while(my($k,$v) = each %net) {
 		($max_val, $max_count != $count ? int(100*$max_count/$count) : 100);
 	    };
 
-	    # First output the count, for easier sorting (e.g. within emacs buffer, or with sort -n)
+	    # fragezeichen2org expects the count as the first field.
 	    my $name = $count . ':';
 	    # Output the "meta" properties date and ip.
 	    # Show 100% is there's only one different value here, otherwise no percentage.
@@ -227,7 +227,13 @@ while(my($k,$v) = each %net) {
     }
     print $OUT "#:\n"; # end of global directives
 
-    while(my($k,$v) = each %net) {
+    for my $k (map  { $_->[1] }
+	       sort { $a->[0] <=> $b->[0] }
+	       map  {
+		   my($count) = $name{$_} =~ m{^(\d+)};
+		   $count = 0 if !defined $count;
+		   [$count, $_]
+	       } keys %name) {
 	my($c1,$c2) = split /;/, $k;
 	my $cat = $net2cat{$k};
 	print $OUT $name{$k} . "\t" . $cat . ($do_distinguish_dir ? ';' : '') . " " . $c1 . " " . $c2 . "\n";
