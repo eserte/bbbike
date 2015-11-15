@@ -144,11 +144,13 @@ while(1) {
 
 my %net2cat;
 my %cat;
+my $max_count = 0;
 # Calculate %net2cat (the mapping line -> category)
 # Calculate %cat (existence hash of used categories)
-# Modify %name:
-#  prepend $count before name
-#  or (with -coordssession-data): build name from the most common prop values
+# Modify %name: make the values into a two-element array with
+#  $count
+#  $name
+# (with -coordssession-data): build name from the most common prop values
 while(my($k,$v) = each %net) {
     my $count = $v;
     if (defined $logarithmic) {
@@ -173,7 +175,7 @@ while(my($k,$v) = each %net) {
 	    };
 
 	    # fragezeichen2org expects the count as the first field.
-	    my $name = $count . ':';
+	    my @name;
 	    # Output the "meta" properties date and ip.
 	    # Show 100% is there's only one different value here, otherwise no percentage.
 	    # No key ("date"/"ip") is output here, the value looks nonambiguous.
@@ -181,7 +183,7 @@ while(my($k,$v) = each %net) {
 				    [$prop2out->($props->{'_date'})],
 				    [$prop2out->($props->{'_ip'})],
 				   ) {
-		$name .= ' ' . $meta_props_def->[0] . ($meta_props_def->[1] == 100 ? '(100%)' : '');
+		push @name, $meta_props_def->[0] . ($meta_props_def->[1] == 100 ? '(100%)' : '');
 	    }
 	    # Output the normal properties like speed, quality etc.
 	    # Here output is different: show a percentage only if it's not 100%
@@ -192,17 +194,18 @@ while(my($k,$v) = each %net) {
 		push @props_out, [$key, $prop2out->($props_key)];
 	    }
 	    for my $props_def (sort { $b->[2] <=> $a->[2] } @props_out) {
-		$name .= ' ' . $props_def->[0] . ':' . $props_def->[1] . ($props_def->[2] < 100 ? '('.$props_def->[2].'%)' : '');
+		push @name, ' ' . $props_def->[0] . ':' . $props_def->[1] . ($props_def->[2] < 100 ? '('.$props_def->[2].'%)' : '');
 	    }
-	    # We have the name, finally.
-	    $name{$k} = $name;
+	    # We have the count and the name, finally.
+	    $name{$k} = [$count, join(' ', @name)];
 	} else {
-	    $name{$k} = '???'; # because this should never happen
+	    $name{$k} = [0, '???']; # because this should never happen
 	}
     } else {
-	$name{$k} = "$count: $name{$k}";
+	$name{$k} = [$count, $name{$k}];
     }
     $cat{$v}++;
+    $max_count = $count if $count > $max_count;
 }
 
 {
@@ -227,16 +230,25 @@ while(my($k,$v) = each %net) {
     }
     print $OUT "#:\n"; # end of global directives
 
-    for my $k (map  { $_->[1] }
-	       sort { $a->[0] <=> $b->[0] }
-	       map  {
-		   my($count) = $name{$_} =~ m{^(\d+)};
-		   $count = 0 if !defined $count;
-		   [$count, $_]
-	       } keys %name) {
+    my $rank_i = 0;
+    for my $k (sort { $name{$a}->[0] <=> $name{$b}->[0] } keys %name) {
+	my($count, $name) = @{ $name{$k} };
 	my($c1,$c2) = split /;/, $k;
 	my $cat = $net2cat{$k};
-	print $OUT $name{$k} . "\t" . $cat . ($do_distinguish_dir ? ';' : '') . " " . $c1 . " " . $c2 . "\n";
+
+	my $percentage_string = '';
+	if (1) { # percentage by $count/$max_count
+	    if ($max_count) {
+		$percentage_string = ' ' . sprintf('%3d%%', $count/$max_count*100);
+	    } else {
+		$percentage_string = '';
+	    }
+	} else { # percentage by rank XXX should it be possible to enable this by option?
+	    $rank_i++;
+	    $percentage_string = ' ' . sprintf('%3d%%', $rank_i/scalar(keys %name)*100);
+	}
+
+	print $OUT $count . ':' . $percentage_string . ' ' . $name . "\t" . $cat . ($do_distinguish_dir ? ';' : '') . " " . $c1 . " " . $c2 . "\n";
     }
     close $OUT;
 }
@@ -249,6 +261,9 @@ weight_bbd - create weighted bbd files
 
 =head1 DESCRIPTION
 
+Creates bbd files with frequency of route search results rendered for
+streets on the map.
+
 =head2 OPTIONS
 
   -logarithmic <real>: 1.5 seems a nice choise: 100 => 11, 500 => 15
@@ -256,6 +271,29 @@ weight_bbd - create weighted bbd files
   -o outfile: bbd file for output
   -[no]scalewidths: scale widths (default: true)
   -[no]distinguish-dir: distinguish between both directions (default: false)
+
+=head1 BBD OUTPUT
+
+The names in the bbd records have currently following information
+included:
+
+=over
+
+=item * number of searches
+
+=item * percentage of the maximum search count
+
+=item * ISO date+time of a sample search
+
+=item * IP address of a sample search
+
+=item * following key:value pairs with most frequent search settings
+
+=back
+
+A sample entry:
+
+    363:  75% 2015-10-07T22:10:07 127.0.0.1 speed:20    6; 11393,10390 11291,10438
 
 =head2 EXAMPLES
 
