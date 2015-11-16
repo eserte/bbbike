@@ -24734,4 +24734,16 @@ EOF
 userdel	q3::inwork; 14218,13834 14261,13932 14298,14015 14358,14155 14464,14216 14658,14328 14667,14336 14721,14379 14754,14406 14990,14537 15066,14579
 EOF
      },
+     { from  => 1448146800, # 2015-11-22 00:00
+       until => 1451257199, # 2015-12-27 23:59
+       periodic => 1,
+       recurrences => [['yearly', days => 23, months => 11]],
+       text  => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 23. November 2015 bis 27. Dezember 2015',
+       type  => 'handicap',
+       source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/1304487-1328132-weihnachtsmarktaufdemalexanderplatz.html',
+       data  => <<EOF,
+userdel	q3::temp 11139,13008 11064,12910 10970,12822
+userdel	q4::temp 11064,12910 11134,12793
+EOF
+     },
     );

@@ -1275,6 +1275,10 @@ Am Kirchendreieck: Lage der Straße? Qualität?	? 23922,13085 23960,13325
 # - XXX_prog- und XXX_indoor-Einträge
 # 
 # 
+#: by: fritz
+#: XXX was bedeutet das hier? kann die Straße auf N zurückgestuft werden? bleibt die Fußgängerampel bestehen?
+Humboldtring: Rückbau der Anschlussstelle	? -11386,-1313 -11395,-1331 -11461,-1424
+# 
 # REMOVED (aufgenommen) --- #: XXX NEW	Unter den Linden zwischen Schadowstraße und Wilhelmstraße Mitte (Berlin)  Gültig ab: 09.11.2015 08:00  Baustelle, gesperrt (bis Ende 11/15)	2147339441	 --- #: XXX laut fritz bis 23.11.2015 --- #: next_check: 2015-11-09 --- UdL: zwischen Schadowstr. und Wilhelmstr. gesperrt, auch für Radfahrer relevant?	?; 9028,12307 8804,12280
 # REMOVED (aufgenommen) --- #: XXX NEW	Hohenschönhauser Str./Oderbruchstr. (Fennpfuhl): Baustelle, Fahrtrichtung gesperrt (bis Ende 11/15) Richtung Konrad-Wolf-Str. zwischen Landsberger Allee und Weißenseer Weg, 09.11.2015 04:30 Uhr bis 30.11.2015 04:30 Uhr	IM_026700	 --- #: next_check: 2015-11-09 --- Hohenschönhausener Str./Oderbruchstr.: Sperrung für Radfahrer relevant?	?; 14218,13834 14261,13932 14298,14015 14358,14155 14464,14216 14658,14328 14667,14336 14721,14379 14754,14406 14990,14537 15066,14579
 # REMOVED (kurzes Stück, umfahrbar, Ampel ist dafür ausgeschaltet) --- #: XXX NEW	Am Weidendamm (Mitte): Baustelle, Ein- und Ausfahrt Am Weidendamm gesperrt (bis Anfang 12/15) Kreuzung Friedrichstr., 09.11.2015 07:00 Uhr bis 05.12.2015 12:00 Uhr	IM_026703	 --- #: next_check: 2015-11-09 --- Weidendamm: Sperrung für Radfahrer relevant?	? 9286,12886 9323,12895
@@ -1487,8 +1491,9 @@ Kastanienallee (Potsdam): teilweise Entwidmung für den Kfzverkehr (wo genau? wan
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036406312569/406312569/00102389/89-Anlagen/01/DRS0792VK.pdf
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2015
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.401555.php
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/buergerbeteiligung/xv-30b-ve-353886.php
 #: last_checked: 2015-05-06
-#: check_frequency: 360d
+#: next_check: 2016-08-01
 Fanny-Zobel-Str.	? 13975,10187 14049,10164
 # 
 # REMOVED (realisiert) --- #: XXX wahrscheinlich nach den Bauarbeiten? --- #: osm_watch: way id="4687118" version="11" --- #: last_checked: 2013-12-20 --- Parkaue: wann wird hier die Einbahnstraße ausgeschildert, wird sie tatsächlich für Radfahrer nicht offen sein?	? 15406,12444 15408,12394 15370,12264

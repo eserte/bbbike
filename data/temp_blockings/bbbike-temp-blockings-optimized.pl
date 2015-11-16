@@ -4065,6 +4065,27 @@ userdel	2::inwork -1303,2003 -1591,1861
          'text' => 'Hohenschönhauser Str./Oderbruchstr.: Baustelle, zwischen Landsberger Allee und Weißenseer Weg gesperrt, Radfahrer dürfen den Gehweg benutzen, 09.11.2015 04:30 Uhr bis 30.11.2015 04:30 Uhr ',
          'type' => 'handicap',
          'until' => 1448854200
+       },
+       {
+         'data' => 'userdel	q3::temp 11139,13008 11064,12910 10970,12822
+userdel	q4::temp 11064,12910 11134,12793
+',
+         'from' => 1448146800,
+         'id' => 2763,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              23,
+                              'months',
+                              11
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/1304487-1328132-weihnachtsmarktaufdemalexanderplatz.html',
+         'text' => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 23. November 2015 bis 27. Dezember 2015',
+         'type' => 'handicap',
+         'until' => 1451257199
        }
      
 );
