@@ -1094,7 +1094,7 @@ die letzten 50 Meter sind benutzungspflichtig	RW1; 18225,7004 18010,7133
 #: last_checked: 2015-11-14
 #: check_frequency: 60d
 	RW0;RW0 14151,8967 14363,8738
-	RW4;RW4 14363,8738 14560,8528 14700,8368 15053,7966
+	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
 	RW4;RW3 15053,7966 15221,7778
 	RW1;RW1 8049,15470 7975,15500 7966,15571
 	RW1;RW3 7966,15571 7962,15633
@@ -4683,3 +4683,6 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 13010,8422 12925,8494
 #: note: es wird spannend werden, wie gut die Busspur respektiert wird
 Busspur gilt Mo-Fr 6-19 Uhr	RW5; 12742,8635 12630,8722 12483,8834 12438,8859 12320,8927 12242,8972
 Tempo 10	RW6;RW6 8389,9087 8389,9017
+#: XXX sind hier Radspuren oder Suggestivstreifen?
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1511/nachricht5839.html
+	RW4?;RW4? 3739,13563 3833,13590 4098,13664 4187,13704

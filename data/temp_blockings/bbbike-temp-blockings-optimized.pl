@@ -3627,13 +3627,14 @@ userdel	2::inwork -3197,11554 -3075,11510
        },
        undef,
        {
-         'data' => '	3::night 14563,8243 14425,8116 14419,8112
+         'data' => '#: note: am Di, den 2015-11-17 gegen 18:30: geschlossen
+	3::night 14563,8243 14425,8116 14419,8112
 	3::night 14419,8112 14425,8116 14563,8243
 ',
          'from' => undef,
          'id' => 2643,
          'recurring' => 1,
-         'text' => 'Mergenthalerring: Tor kann nachts versperrt sein',
+         'text' => 'Mergenthalerring: Tor kann abends und nachts versperrt sein',
          'until' => undef
        },
        undef,
@@ -3781,10 +3782,10 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
          'until' => undef
        },
        {
-         'data' => '#: XXX die Qualität wird nach den Bauarbeiten vermutlich besser sein vvv
+         'data' => '#: XXX die Qualität wird nach den Bauarbeiten vermutlich besser sein, teilweise auch schlechter (wassergebundene Decke statt Asphalt) vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.297071.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.295591.php
-#: last_checked: 2015-11-01 vvv
+#: last_checked: 2015-11-17 vvv
 userdel	2::inwork 14318,9688 14443,9731
 # REMOVED --- userdel	2::inwork 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
 userdel	2::inwork 14575,9648 14645,9710 14697,9726
@@ -3973,16 +3974,7 @@ userdel	2::inwork -1303,2003 -1591,1861
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	q4::inwork 20782,5206 20774,5131 20852,5106 20765,4839
-',
-         'from' => 1446332400,
-         'id' => 2752,
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.386101.php',
-         'text' => 'Friedlander Str., Bernstadter Weg, Ostritzer Str.: Asphaltarbeiten, Sperrung der Fahrbahn, voraussichtlich vom 02.11.2015 bis 16.11.2015 ',
-         'type' => 'handicap',
-         'until' => 1447714800
-       },
+       undef,
        {
          'data' => '	q4::inwork; 13895,11663 13954,11647 13996,11631 14065,11605 14211,11552 14305,11514
 	q3::inwork 13954,11647 13981,11746
@@ -4086,6 +4078,17 @@ userdel	q4::temp 11064,12910 11134,12793
          'text' => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 23. November 2015 bis 27. Dezember 2015',
          'type' => 'handicap',
          'until' => 1451257199
+       },
+       {
+         'data' => '#: XXX Wann sind die Bauarbeiten beendet? Wie weit geht die Sperrung Richtung Süden?
+#: last_checked: 2015-11-17
+userdel	q3::inwork 12620,9293 12565,9200
+',
+         'from' => undef,
+         'id' => 2764,
+         'text' => 'Rütlistr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
