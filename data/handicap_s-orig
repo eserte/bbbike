@@ -20,9 +20,9 @@ Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,112
 # REMOVED --- Haasestr.: Einbahnstraße wegen Bauarbeiten	q4::inwork; 14328,11320 14286,11186
 #: last_checked ^^^
 # 
-#: XXX laut Schild der Wasserbetriebe bis Oktober 2015, laut Fritz bis November 2015
+#: XXX laut Schild der Wasserbetriebe bis Oktober 2015, laut Fritz bis Ende März 2016
 #: last_checked: 2015-11-13 vvv
-#: next_check: 2015-11-22 vvv
+#: next_check: 2016-03-31 vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
 #: next_check ^^^
@@ -1972,8 +1972,7 @@ Heerstr. - Tiefenwerder: teilweise recht eng	q2 -3217,11570 -3179,11763 -3116,12
 (Landschaftspark Herzberge, Weg am ehemaligen Zeltlager): einige Fußgänger, kurvenreich	q2 17187,13609 17185,13765 17204,13800 17209,13856 17178,13896 17190,13903 17213,13931 17210,14054 17164,14067 17152,14084
 (Hellweg-Parkplatz): Parkplatzverkehr	q1 8243,9766 8242,9699 8201,9647 8192,9619
 (Langensalzaer Str. - Gräfentaler Str.): Fußgänger, eng, kurvig	q3 6188,1542 6182,1536 6199,1486 6212,1483 6231,1442
-#: XXX_prog Steigung -> eigentlich comments_mount
-Am Lokdepot: starke Steigung	q4; 8390,8879 8389,8775
+# REMOVED (existiert nicht mehr) --- #: XXX_prog Steigung -> eigentlich comments_mount --- Am Lokdepot: starke Steigung	q4; 8390,8879 8389,8775
 #: note: und wenn man Pech hat, ist der bordsteinlose Zugang zugeparkt
 Lübbener Str.: Fußgänger	q2 12729,10515 12731,10547
 #: note: es war nur einer (2013-10-22), aber der Weg ist so schlecht, dass er auch einen Eintrag in handicap verdient

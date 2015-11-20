@@ -766,11 +766,12 @@ XXIII-4a: hier wird eine Straße entstehen, Straßenname, Qualität?	?::projected 2
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4531
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file?y=2013 (Eröffnungstermin)
 #: XXX evtl. den Kopfsteinpflasterabschnitt entfernen? Oder bleibt dieser auch bestehen?
+#: XXX ggfs. culdesac eintragen/entfernen
 #: XXX gehört zu Tempelhof-Schöneberg
-#: last_checked: 2015-10-05
+#: last_checked: 2015-11-20
 #: check_frequency: 90d
 #: priority: #A
-Am Lokdepot: werden die beiden Teilstücke miteinander verbunden?	?::inwork 8390,8879 8389,9017
+Am Lokdepot: wie wird die Wegeverbindung hier nach den Bauarbeiten aussehen?	?::inwork 8405,8994 8409,8904 8390,8879 8389,9017
 # 
 # REMOVED (keine interessante Radverbindung --- wassergebundene Decke, unbeleuchtet) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1306/nachricht4997.html (fertiggestellt) --- #: last_checked: 2013-05-29 --- #: next_check: 2013-06-26 --- Grünanlage an der Teilestr.: Parkwege entstehen, evtl. eine lohnende Abkürzung, Qualität, nachts beleuchtet?	?::inwork 11068,6006 11056,5861 11146,5851 11277,5988
 # REMOVED --- #: by: http://www.berlin.de/ba-spandau/presse/archiv/20130410.1200.383317.html --- Schönwalder Allee: Radweg wird saniert, danach asphaltiert	?::inwork; -3811,17218 -3842,17280 -3980,17486
@@ -1118,6 +1119,7 @@ Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg
 #: last_checked: 2015-11-08 vvv
 #: check_frequency: 90d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: XXX siehe auch gesperrt-orig-Eintrag zur Oberwallstr.
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
 #: XXX_osm: fehlt bei osm als "planned"/"proposed"
@@ -1272,6 +1274,11 @@ Am Kirchendreieck: Lage der Straße? Qualität?	? 23922,13085 23960,13325
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2015
+#: XXX "Verkehrsfreigabe vorrausichtlich in KW 49"
+#: next_check: 2015-11-30
+Alex-Wedding-Str.: ändert sich durch die Widmung hier etwas?	? 11146,13328 11085,13239 11045,13183
 # 
 #: by: fritz
 #: XXX was bedeutet das hier? kann die Straße auf N zurückgestuft werden? bleibt die Fußgängerampel bestehen?
@@ -1528,7 +1535,7 @@ Hildburghauser Str.: Ausbau der Straße, bessere Qualität des Asphalts?	? 4806,13
 # 
 #: by: http://gruene-xhain.de/news/single-view/artikel/vorfahrt-fuer-den-radverkehr.html
 #: by: http://www.berlin.de/imperia/md/content/bafriedrichshain-kreuzberg/abtstadtpg/bzbm-buero/bezirksamtssitzungen/02-07-13/beschluss_265_13.pdf?start&ts=1372853813&file=beschluss_265_13.pdf
-#: last_checked: 2015-11-06
+#: last_checked: 2015-11-20
 #: check_frequency: 120d
 #: priority: #C
 Bergmannstr./Heimstr.: wird hier die Vorfahrtsregelung zugunsten des Radwegs geändert?	? 9880,9233 9973,9232 10001,9234

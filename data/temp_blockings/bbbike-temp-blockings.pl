@@ -24354,8 +24354,8 @@ EOF
 EOF
      },
      { from  => 1437289200, # 2015-07-19 09:00
-       until => $isodate2epoch->("2015-11-21 17:00:00"), # 1441033200, # 2015-08-31 17:00
-       text  => 'Bouchéstr.: Baustelle, Fahrbahn zwischen Heidelberger Str. und Kiefholzstr. gesperrt, auf Gehweg ausweichen, 20.07.2015 09:00 Uhr bis 21.11.2015 17:00 Uhr ',
+       until => $isodate2epoch->("2015-12-18 17:00:00"), # 1441033200, # 2015-08-31 17:00
+       text  => 'Bouchéstr.: Baustelle, Fahrbahn zwischen Heidelberger Str. und Kiefholzstr. gesperrt, auf Gehweg ausweichen, 20.07.2015 09:00 Uhr bis 18.12.2015 17:00 Uhr ',
        type  => 'handicap',
        source_id => 'IM_025684',
        data  => <<EOF,
