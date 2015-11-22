@@ -15,13 +15,13 @@
 # 
 #: last_checked: 2015-11-07 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14286,11186 14357,11148 14442,11101
-Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraﬂe ausgewiesen	q3::inwork; 14442,11101 14468,11203
+# REMOVED (gibt's nicht mehr?) --- Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraﬂe ausgewiesen	q3::inwork; 14442,11101 14468,11203
 Dˆringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
 # REMOVED --- Haasestr.: Einbahnstraﬂe wegen Bauarbeiten	q4::inwork; 14328,11320 14286,11186
 #: last_checked ^^^
 # 
 #: XXX laut Schild der Wasserbetriebe bis Oktober 2015, laut Fritz bis Ende M‰rz 2016
-#: last_checked: 2015-11-13 vvv
+#: last_checked: 2015-11-21 vvv
 #: next_check: 2016-03-31 vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
@@ -61,6 +61,7 @@ Sch¸tzenstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10116,11485 9949,11470
 # 
 #: XXX bis wann dauert die Sperrung an? vvv
 #: XXX wird die Straﬂe danach asphaltiert sein?
+#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6992 (Frage nach Ende der Bauarbeiten)
 #: last_checked: 2015-11-09 vvv
 Legiendamm: Sperrung der Fahrbahn am Engelbecken	q4::inwork 11323,11164 11337,11197 11349,11227
 Michaelkirchplatz: Sperrung der Fahrbahn am Engelbecken	q2::inwork 11415,11392 11349,11227

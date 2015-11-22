@@ -3566,16 +3566,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	q4::inwork; 9028,12307 8804,12280
-',
-         'from' => 1446937200,
-         'id' => 2614,
-         'source_id' => '2147339441',
-         'text' => 'Unter den Linden: zwischen Schadowstraße und Wilhelmstraße Baustelle, Fahrbahn gesperrt, vom 09.11.2015 08:00 bis voraussichtlich 23.11.2015 ',
-         'type' => 'handicap',
-         'until' => 1448319599
-       },
+       undef,
        undef,
        undef,
        undef,
