@@ -24475,8 +24475,8 @@ userdel	q4::inwork 2615,25225 2649,25170 2694,25132
 EOF
      },
      { from  => 1438588200, # 2015-08-03 09:50
-       until => $isodate2epoch->("2015-11-30 17:00:00"), # 1447430400, # 2015-11-13 17:00
-       text  => 'Florastr.: Baustelle zwischen Wollankstr. und Mühlenstr., Fahrtbahn in Richtung S- und U-Bahnhof Pankow gesperrt, 04.08.2015 bis 30.11.2015 ',
+       until => $isodate2epoch->("2015-12-01 17:00:00"), # 1447430400, # 2015-11-13 17:00
+       text  => 'Florastr.: Baustelle zwischen Wollankstr. und Mühlenstr., Fahrtbahn in Richtung S- und U-Bahnhof Pankow gesperrt, 04.08.2015 bis 01.12.2015 ',
        type  => 'handicap',
        source_id => 'IM_025833',
        data  => <<EOF,
@@ -24757,6 +24757,16 @@ EOF
 #: XXX Wann sind die Bauarbeiten beendet? Wie weit geht die Sperrung Richtung Süden?
 #: last_checked: 2015-11-17
 userdel	q3::inwork 12620,9293 12565,9200
+EOF
+     },
+     { from  => 1448168400, # 2015-11-22 06:00
+       until => 1449158400, # 2015-12-03 17:00
+       text  => 'Verlängerte Waldowallee: Baustelle, Fahrbahn in Richtung Rudolf-Rühl-Allee zwischen Birkenallee und Anemonensteig gesperrt, 23.11.2015 06:00 Uhr bis 03.12.2015 17:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'IM_026719',
+       data  => <<EOF,
+#: note: kein Gehweg, deshalb nicht q4;
+userdel	1::inwork 19843,7866 19927,7813 20031,7794 20077,7786
 EOF
      },
     );
