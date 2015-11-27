@@ -731,7 +731,7 @@ $self->{UseFlags} = 0; # XXX don't use this because of missing transparency info
 	    $$s = join("/", @s);
 	}
 	my @s = (patch_string($start) . ' ',
-		 chr(174), # left arrow
+		 chr(174), # one could also use \x{2192} (RIGHTWARDS ARROW) and encode into the adobeSymbol encoding
 		 ' ' . patch_string($ziel)
 		);
 
