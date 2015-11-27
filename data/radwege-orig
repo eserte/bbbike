@@ -455,6 +455,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 7-19 Uhr	RW1;RW1 7929,15006 7527,1
 	RW1;RW 8577,11896 8595,12066
 	RW4;RW4 10601,12521 10431,12709
 	RW3;RW4 11635,12745 11589,12768 11289,12908 11226,12945
+#: XXX hier ist vermutlich Richtung Westen auch neu asphaltiert
 	RW2;RW2 15117,12106 14994,12121 14919,12130
 asphaltiert	RW2; 14919,12130 14854,12137 14702,12157
 	RW2; 14702,12157 14854,12137 14919,12130
@@ -967,15 +968,12 @@ neues Verbundsteinpflaster	RW1; 12694,2517 12694,2544 12694,2570 12693,2746 1269
 	RW;RW 12694,2517 12703,2454
 die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 13745,12118 13785,12292
 	RW3; 13785,12292 13745,12118
-#: next_check_id: WARSCHAUER-2014 vvv
-#: last_checked: 2015-11-09 vvv
-#: check_frequency: 7d vvv
+#: next_check_id: WARSCHAUER-2014
+#: last_checked: 2015-11-24
+#: next_check: 2015-12-19
 #: by: http://www.umbau-warschauer-strasse.de/images/bauinfos/Infoblatt_August_15-2.pdf
 #: XXX Radweg wegen Bauarbeiten aufgehoben
 	RW0; 13745,12118 13696,11920 13651,11731
-#: check_frequency ^^^
-#: last_checked ^^^
-#: next_check_id ^^^
 	RW1;RW1 17427,10259 17605,10199 17905,10122 17958,10012 17997,9929
 	RW3;RW1 17997,9929 18045,9917
 	RW1;RW1 18045,9917 18210,9989 18296,10027 18339,10048 18387,10070
@@ -1031,7 +1029,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 969
 #: source_id: IM_018997
 #: source_id: IM_023987
 #: source_id: IM_025933
-#: last_checked: 2015-10-31
+#: last_checked: 2015-11-27
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
@@ -1401,17 +1399,15 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 	RW3;RW3 11159,10769 11234,10739 11275,10723
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW4;RW4
-#: last_checked: 2015-09-07
+#: last_checked: 2015-11-27
 #: check_frequency: 90d
 	RW0;RW0 8804,12280 8775,12457
 	RW4;RW4 8775,12457 8766,12541
 	RW3;RW3 8766,12541 8760,12585 8756,12608 8754,12622
-	RW3;RW4? 8715,12956 8726,12861
-	RW3;RW3 8726,12861 8732,12804
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2015-10-10
+#: last_checked: 2015-11-27
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -1486,7 +1482,7 @@ die ersten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	
 	RW3;RW1 13541,11355 13588,11490
 #: next_check_id: WARSCHAUER-2014
 #: XXX für kurze Zeit hat eine Markierung existiert, ist aber wieder weg
-#: last_checked: 2015-10-31
+#: last_checked: 2015-11-27
 	RW0; 13651,11731 13603,11538
 	RW3;RW2 13588,11490 13603,11538
 	RW4;RW4 14026,10869 14024,10861 14011,10812
@@ -1637,7 +1633,7 @@ Berliner Gehwegplatten, ca. 1,50m breit	RW2;RW2 9272,14208 9400,14400 9410,14410
 #: next_check_id: OTTOBRAUN-2015
 #: note: Wobei es so aussieht, als ob das Zusatzschild einfach nur fehlt
 #: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5; 
-#: last_checked: 2015-11-16
+#: last_checked: 2015-11-27
 #: check_frequency: 90d
 	RW3; 11451,13301 11368,13170
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 11451,13301 11486,13350
@@ -1675,6 +1671,8 @@ Busspur ist immer gültig	RW5; 11160,13492 11216,13451 11270,13412 11276,13408
 	RW4; 8574,13666 8588,13673 8619,13689 8659,13708 8690,13723 8842,13798
 	RW2; 8842,13798 8935,13844
 # REMOVED --- #: next_check_id: INVALIDEN-2014 vvv --- #: XXX kommen hier noch Radwegschilder hin? vvv --- #: last_checked: 2015-09-12 vvv
+	RW3; 8831,13973 8870,13926 8935,13844
+	RW3; 8935,13844 8870,13926
 	RW4;RW4 8935,13844 9085,13919
 	RW3;RW3 9085,13919 9151,13941 9203,13953 9274,13963
 	RW1;RW1 9274,13963 9285,13965 9383,13986
@@ -4530,6 +4528,7 @@ Gehweg für Radfahrer frei	RW1; -7484,13770 -7522,13651 -7550,13528 -7584,13421
 an der Straßenbahnhaltestelle einige Meter mit Radverkehrsanlage	RW3;RW3 10838,14962 10723,14772
 an der Straßenbahnhaltestelle 50 Meter mit benutzungspflichtiger Radverkehrsanlage	RW3; 10530,14452 10723,14772
 an der Straßenbahnhaltestelle 50 Meter mit benutzungspflichtiger Radverkehrsanlage	RW3; 10723,14772 10530,14452
+	RW3;RW3 10530,14452 10497,14391
 	RW6;RW6 22872,5018 22856,5245 22851,5321
 	RW6;RW6 22856,5245 22803,5241
 	RW6;RW6 22803,5278 22737,5278

@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2015-11-09
+#: last_checked: 2015-11-27
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -506,7 +506,7 @@ Rummelsburger/Zacherstr.: Ampel wird verlegt (auf die Ostseite)	?::projected 178
 #: XXX einige culdesac-Einträge fehlen
 #: note: überwiegend mit Straßenbeleuchtung
 #: last_checked: 2015-10-04 vvv
-#: check_frequency: 60d vvv
+#: check_frequency: 30d vvv
 # REMOVED (aufgenommen, bereits provisorisch ausgeschildert --- Ideallee: Qualität: unbefestigte Straße (Q2); Straßenbenennung?	? 11069,23647 10971,23838 10813,24126
 Kirschlorbeerweg: Qualität: unbefestigte Straße (Q2); Straßenbenennung?	? 11069,23647 11028,23624 10927,23816
 Feuerdornweg: Qualität: unbefestigte Straße (Q2); Straßenbenennung?	? 11008,23572 10887,23796
@@ -515,7 +515,8 @@ Fingerstrauchweg: Qualität: unbefestigte Straße (Q2); Straßenbenennung?	? 10785,
 Mispelweg: Qualität: unbefestigte Straße (Q2); Straßenbenennung	? 10747,23718 10797,23620
 Lebensbaumweg: Qualität: unbefestigte Straße (Q2); Straßenbenennung	? 10708,23696 10759,23597
 # REMOVED (-> strassen) --- #: oldname: Fasanenplan --- Bambusweg: Qualität: unbefestigte Straße (Q2); Straßenbenennung	? 10667,23684 10687,23684 10708,23696 10747,23718 10785,23740 10842,23773 10887,23796 10927,23816 10971,23838
-#: osm_watch: way id="29311549" version="3"
+#: osm_watch: way id="29311549" version="4"
+#: XXX laut osm schon unbenannt
 Zypressenweg: Qualität: unbefestigte Straße (Q2); Straßenbenennung	? 10685,23707 10603,23870
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -590,7 +591,8 @@ Sternbergpromenade: Umgestaltung, Havel-Radweg wird hier offiziell entlanggeführ
 #: next_check_id: NIZZASTR-2014 vvv
 #: last_checked: 2015-10-04 vvv
 #: check_frequency: 60d vvv
-#: osm_watch: way id="344108072" version="2"
+#: osm_watch: way id="344108072" version="3"
+#: XXX laut osm schon fertig gestellt
 #: XXX Planstraße A -> Marseillestraße
 Marseillestr. - Dr.-Markus-Str.: Qualität? wann ist die Fertigstellung? wird hier nur ein Fußweg sein?	?::inwork 12364,21623 12402,21537
 # REMOVED --- Marseillestr.: Qualität? wann ist die Fertigstellung? wird die Anbindung an die Dr.-Markus-Str. nur ein Fußweg sein?	?::inwork 12402,21537 12404,21532 12411,21515 12443,21439
@@ -609,6 +611,7 @@ Toulonstr.: Verkehrsberuhigt?	?::inwork 12404,21532 12480,21560
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4111
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036978486193/978486193/00069082/82-Anlagen/02/BenennungsabsichtfuereinenPrivatweggemaessBeba.pdf
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4130
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file?y=2015
 #: osm_watch: way id="344108078" version="1"
 Rennesstr.: genaue Lage, Qualität?	?::projected 12411,21515 12422,21492 12469,21507
 # REMOVED (einzelne Straßen aufgeführt) --- Bebauungsplan XIX-48b: neue Plan- und Privatstraßen werden erstellt	?::inwork 12337,20954 12459,21010 12562,21055 12547,21372 12495,21670 12172,21545 12209,21448 12189,21337 12168,21218 12255,21083 12337,20954
@@ -1286,9 +1289,7 @@ Am Kirchendreieck: Lage der Straße? Qualität?	? 23922,13085 23960,13325
 # - XXX_prog- und XXX_indoor-Einträge
 # 
 # 
-#: by: fritz
-#: XXX bis 31.12.2016
-Grolmanstr.: Einbahnstraße wegen Bauarbeiten, auch für Radfahrer relevant?	? 4920,10933 4954,10876 5054,10706 5079,10701
+# REMOVED (am nächsten Tag bei fritz entfernt) --- #: by: fritz --- #: XXX bis 31.12.2016 --- Grolmanstr.: Einbahnstraße wegen Bauarbeiten, auch für Radfahrer relevant?	? 4920,10933 4954,10876 5054,10706 5079,10701
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2015
 #: XXX "Verkehrsfreigabe vorrausichtlich in KW 49"
@@ -1945,12 +1946,12 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: XXX_prog ^^^
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20141202.1525.400470.html
-#: last_checked: 2015-11-03
+#: last_checked: 2015-11-27
 #: check_frequency: 90d
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.334355.php
-#: last_checked: 2015-11-10
+#: last_checked: 2015-11-27
 #: check_frequency: 120d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172 10818,11269
 # 
@@ -2111,6 +2112,7 @@ neue Planstraßen in Fahrland: Lage, Qualität?	? -16174,7006 -15929,6894
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140131.0900.393992.html
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/stadtplverm/auslegung9-57ve.html
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/9_57ve_v41_ve_a1_2014_01_14.pdf?start&ts=1390830629&file=9_57ve_v41_ve_a1_2014_01_14.pdf
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.411427.php
 #: XXX wird zukünftig entstehen, evtl. entsteht noch ein Uferweg vvv
 #: last_checked: 2015-09-13 vvv
 #: check_frequency: 360d vvv
@@ -2263,11 +2265,13 @@ Benno-König-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::pro
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036869488524/869488524/00108801/01-Anlagen/01/DRS1087VK.pdf vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file (Straßenbenennungen) vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00111140/40-Anlagen/01/DRS1127VK.pdf
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: XXX fehlen in Berlin.coords.data, PLZ=12524 vvv
 #: next_check: 2015-09-01 vvv
 Alfonsstr.: geplante Straße in Altglienicke, genaue Lage, Qualität?	?::projected 19061,1457 19034,1441 19029,1421 19003,1325 19081,1233 19053,1159
 #: note: Privatstraße:
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5229
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file?y=2015 (Grundstücksnummerierungen)
 Traudelstr.: geplante Straße in Altglienicke, genaue Lage, Qualität?	?::projected 19029,1421 19169,1249 19143,1147
 #: next_check ^^^
 #: XXX ^^^

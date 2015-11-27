@@ -1483,7 +1483,7 @@ Demminer Str. (Gesundbrunnen)	NN 9887,15153 9929,15174 9969,15191
 Demminer Str. (Gesundbrunnen)	N 9969,15191 10018,15211
 Kastanienallee (Prenzlauer Berg, Mitte)	N 10370,14158 10426,14262
 #: note: Kuriosum: aufgemalte Fahrradpiktogramme zwischen den Straßenbahngleisen
-Kastanienallee (Prenzlauer Berg, Mitte)	H 10426,14262 10511,14418 10530,14452
+Kastanienallee (Prenzlauer Berg, Mitte)	H 10426,14262 10497,14391 10530,14452
 Kastanienallee (Prenzlauer Berg, Mitte)	H 10530,14452 10723,14772 10838,14962 10881,15047
 (Kastanienallee - Schönhauser Allee)	N 10838,14962 10884,14952
 Oderberger Str.	N 10366,14992 10379,14963
@@ -8359,9 +8359,10 @@ Kapellenweg (Blankenfelde)	N 10279,23278 10373,23353 10418,23396 10456,23441 104
 Ideallee	N 11069,23647 10971,23838 10813,24126
 #: next_check_id: IDEHORST-2015
 #: last_checked: 2015-10-04
-#: check_frequency: 60d
+#: check_frequency: 30d
 #: XXX später neuer Name: Bambusweg (fehlt in Berlin.coords.data, PLZ=13159, Ortsteil=Blankenfelde)
-#: osm_watch: way id="26876702" version="8"
+#: osm_watch: way id="26876702" version="9"
+#: XXX laut osm schon umbenannt
 (Fasanenplan)	N 10667,23684 10687,23684 10708,23696 10747,23718 10785,23740 10842,23773 10887,23796 10927,23816 10971,23838
 #: note ^^^
 Weg A (Blankenfelde)	N 10700,23251 10549,23550
@@ -9720,7 +9721,7 @@ Lindower Str.	N 7754,15160 7929,15355
 #: XXX dieser Straßenabschnitt wird für die S21 in der Mitte unterbrochen, nachdem das neue Nordufer fertiggestellt ist
 #: by: http://weddingweiser.wordpress.com/2012/10/16/die-s-21-wird-gebaut-weddinger-strasen-werden-neu-gefuhrt/ (Projektplan)
 #: osm_watch: way id="220648313" version="2"
-#: last_checked: 2015-10-03
+#: last_checked: 2015-11-27
 #: check_frequency: 120d
 Tegeler Str. (Wedding)	N 7464,14636 7263,14873
 Tegeler Str. (Wedding)	N 7263,14873 7223,14914 7192,14976 7182,14998 7131,15109 7085,15226 6996,15319
@@ -11612,9 +11613,13 @@ Mergenthalerring	N 14419,8112 14425,8116 14563,8243 14422,8407 14469,8455
 (Dieselstr. - Kiefholzstr.)	N 14642,8022 14832,8199
 (Dieselstr. - Kiefholzstr.)	NN 14832,8199 14841,8207
 Falckensteinstr. (Kreuzberg)	N 12905,10143 13032,10355 13136,10535 13178,10623
+#: XXX Straße wird zurückgebaut
+#: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.256386.php
+#: next_check: 2016-01-01
 Am Nordhafen	N 7741,14560 7703,14582 7527,14684
 (Am Nordhafen - Uferweg am Nordhafen)	NN 7703,14582 7696,14577 7662,14579 7653,14570
-(Uferweg am Nordhafen)	NN 7753,14528 7695,14545 7653,14570 7527,14644 7486,14652
+(Uferweg am Nordhafen - Am Nordhafen/Fennstr.)	NN 7605,14600 7589,14627 7527,14684
+(Uferweg am Nordhafen)	NN 7753,14528 7695,14545 7653,14570 7605,14600 7527,14644 7486,14652
 Torfstraßensteg	NN 6824,14821 6847,14735
 Puchanstr.	N 22513,5747 22375,5613 22204,5447
 Kanalstr. (Hessenwinkel)	N 32335,2046 32332,2118 32334,2224 32364,2352 32467,2582

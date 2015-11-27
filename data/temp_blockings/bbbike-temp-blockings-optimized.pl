@@ -2440,7 +2440,30 @@ userdel	2::temp 13288,7653 13278,7673 13245,7742
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 8731,12270 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+userdel	2::temp 8055,12186 8119,12414
+userdel	2::temp 8522,12239 8466,12197
+userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+',
+         'from' => 1451019600,
+         'id' => 2010,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              12
+                            ]
+                          ],
+         'text' => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., voraussichtlich vom 26.12.2015 bis 02.01.2016',
+         'type' => 'gesperrt',
+         'until' => 1451775599
+       },
        undef,
        undef,
        undef,
@@ -3967,9 +3990,13 @@ userdel	2::inwork -1303,2003 -1591,1861
        undef,
        undef,
        {
-         'data' => '	q4::inwork; 13895,11663 13954,11647 13996,11631 14065,11605 14211,11552 14305,11514
-	q3::inwork 13954,11647 13981,11746
-	q3::inwork 14065,11605 14102,11715
+         'data' => '	q4::inwork; 13895,11663 13954,11647 13996,11631 14065,11605 14211,11552
+# REMOVED ---	q4::inwork; 14211,11552 14305,11514
+# REMOVED ---	q3::inwork 13954,11647 13981,11746
+# REMOVED ---	q3::inwork 14065,11605 14102,11715
+	q4::inwork 14065,11605 14049,11553
+	q4::inwork 13996,11631 13992,11605 14031,11569
+	q3::inwork 13954,11647 13888,11405
 ',
          'from' => undef,
          'id' => 2753,
@@ -4000,9 +4027,9 @@ userdel	2::inwork -1303,2003 -1591,1861
          'from' => 1446015600,
          'id' => 2758,
          'source_id' => 'IM_026668',
-         'text' => 'Sterndamm: zwischen Megedestr. und Königsheideweg Bauarbeiten, Fahrbahn in Richtung S-Bhf. Schöneweide gesperrt, Radfahrer dürfen den Gehweg benutzen, 29.10.2015 08:00 Uhr bis 29.11.2015 17:00 Uhr ',
+         'text' => 'Sterndamm: zwischen Megedestr. und Königsheideweg Bauarbeiten, Fahrbahn in Richtung S-Bhf. Schöneweide gesperrt, Radfahrer dürfen den Gehweg benutzen, 29.10.2015 bis 04.12.2015',
          'type' => 'handicap',
-         'until' => 1448812800
+         'until' => 1449248400
        },
        {
          'data' => 'userdel	q2::inwork; 17110,4055 17244,4242
@@ -4047,9 +4074,9 @@ userdel	2::inwork -1303,2003 -1591,1861
          'from' => 1446953400,
          'id' => 2762,
          'source_id' => 'IM_026700',
-         'text' => 'Hohenschönhauser Str./Oderbruchstr.: Baustelle, zwischen Landsberger Allee und Weißenseer Weg gesperrt, Radfahrer dürfen den Gehweg benutzen, 09.11.2015 04:30 Uhr bis 30.11.2015 04:30 Uhr ',
+         'text' => 'Hohenschönhauser Str./Oderbruchstr.: Baustelle, zwischen Landsberger Allee und Weißenseer Weg gesperrt, Radfahrer dürfen den Gehweg benutzen, 09.11.2015 04:30 Uhr bis 07.12.2015 04:30 Uhr ',
          'type' => 'handicap',
-         'until' => 1448854200
+         'until' => 1449459000
        },
        {
          'data' => 'userdel	q3::temp 11139,13008 11064,12910 10970,12822

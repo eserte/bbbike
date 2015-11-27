@@ -8,7 +8,7 @@ Oranienburger Str.: Tram auf Fahrbahn	CS 10264,13097 10220,13098 10077,13100 993
 Rosenthaler Str.: Tram auf Fahrbahn	CS 10264,13097 10310,13227 10317,13248 10350,13376
 #: note: seit 2007-05-30 nicht mehr befahren
 Alte/Neue Schönhauser Str.: Schienen auf Fahrbahn, Tram fährt aber nicht mehr	CS 10310,13227 10423,13215 10527,13257 10603,13395 10640,13471 10653,13493 10718,13625 10746,13673
-Kastanienallee: Tram auf Fahrbahn	CS 10177,13766 10193,13816 10263,13977 10370,14158 10426,14262 10511,14418 10530,14452
+Kastanienallee: Tram auf Fahrbahn	CS 10177,13766 10193,13816 10263,13977 10370,14158 10426,14262 10497,14391
 # REMOVED (mittlerweile gibt es genug Platz zwischen Parkstreifen und Schienen) --- Kastanienallee: Tram auf Fahrbahn	CS 10530,14452 10723,14772 10838,14962 10881,15047
 Wühlisch/Kopernikusstr.: Tram auf Fahrbahn	CS 13651,11731 13895,11663 13954,11647 13996,11631 14065,11605 14211,11552 14305,11514 14369,11489 14434,11465 14575,11407
 Weichsel/Scharnweberstr.: Tram auf Fahrbahn	CS 14639,11512 14710,11626 14794,11770 14802,11784 14835,11840 14887,11929 14965,11921 15080,11905 15121,11899 15248,11880
@@ -88,6 +88,9 @@ Bernkasteler Str.: Tram auf der Fahrbahn	CS 14558,16907 14673,16895 14739,16891
 #: XXX Bleiben die Straßenbahngleise in Richtung Südwesten nach den Bauarbeiten bestehen?
 #: next_check: 2016-03-31
 Sterndamm: inaktive Straßenbahngleise	CS; 17886,5587 17736,5441
+Invalidenstr.: Tram auf Fahrbahn	CS 9383,13986 9659,14043 9676,14046 9804,14071 9821,14073 9936,14085 10002,14092
+Veteranenstr.: Tram auf Fahrbahn	CS 10002,14092 10282,14212 10304,14254
+Zionskirchplatz: Tram auf Fahrbahn	CS; 10304,14254 10391,14280 10426,14262
 ######################################################################
 # Potsdam
 Puschkinallee: Tram auf Fahrbahn	CS -12840,-69 -12862,-27 -12812,271 -12812,371
