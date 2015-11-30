@@ -159,26 +159,7 @@ userdel	2::temp -3231,14383 -3293,14304
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 9986,13412 10317,13248
-',
-         'from' => 1448578800,
-         'id' => 166,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              28,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (28.11.2015 - 29.11.2015)',
-         'type' => 'gesperrt',
-         'until' => 1448837999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -450,26 +431,7 @@ userdel	2::temp 5656,10876 5652,11004
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.weihnachtsmarkt-deutschland.de/berlin-lichtenrade-lichtermarkt.html
-userdel	q4::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
-',
-         'from' => 1448665200,
-         'id' => 417,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              29,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 29. November 2015 von 13 bis 18 Uhr)',
-         'type' => 'gesperrt',
-         'until' => 1448823600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3089,27 +3051,7 @@ userdel	q2::inwork 5258,11285 5236,10994
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.weihnachteninberlin.de/weihnachtsmaerkte/tempelhof-schoeneberg/1001683-1328179-weihnachtsmarktinderbahnhofstra%C3%9Felichte.html
-userdel	2::temp 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
-',
-         'from' => 1448600400,
-         'id' => 2426,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              28,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'IM_020815',
-         'text' => 'Bahnhofstr. (Lichtenrade): Weihnachtsmarkt zwischen Riedingerstr. und Goltzstr, Straße gesperrt, 28.11.2015 und 29.11.2015',
-         'type' => 'gesperrt',
-         'until' => 1448837999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3362,26 +3304,7 @@ userdel	2::night 17671,13132 17684,13133
          'type' => 'gesperrt',
          'until' => 1450652399
        },
-       {
-         'data' => 'userdel	2::temp 11317,14564 11255,14572 11155,14554
-',
-         'from' => 1448708400,
-         'id' => 2518,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              29,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 29. November 2015, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1448820000
-       },
+       undef,
        {
          'data' => 'userdel	2::temp 11317,14564 11255,14572 11155,14554
 ',
