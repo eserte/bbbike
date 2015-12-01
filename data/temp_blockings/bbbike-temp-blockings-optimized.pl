@@ -2310,7 +2310,7 @@ userdel	2::temp 9524,12010 9656,12021
          'source_id' => 'http://www.berlin.de/tickets/suche/detail.php?id=1090035',
          'text' => 'Gendarmenmarkt: Weihnachtsmarkt vom 23.11.2015 bis 31.12.2015, Durchfahrt nicht möglich (Eintritt!)',
          'type' => 'gesperrt',
-         'until' => 1451602799
+         'until' => 1451689199
        },
        undef,
        undef,
@@ -2526,7 +2526,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im November von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Dezember von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3791,18 +3791,7 @@ userdel	q2::inwork 13489,9456 13606,9578
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX wird der Asphalt nach den Bauarbeiten besser sein? (zurzeit Q1)
-#: next_check: 2015-12-01
-userdel	2::inwork 6851,9365 6771,9458 6727,9497
-',
-         'from' => undef,
-         'id' => 2730,
-         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150820.1015.402368.html',
-         'text' => 'Alice-Salomon-Park (Barbarossaplatz - Schwäbische Str.): Bauarbeiten bis Anfang Dezember 2015, keine Durchfahrt möglich',
-         'type' => 'gesperrt',
-         'until' => 1448924400
-       },
+       undef,
        undef,
        undef,
        {
@@ -3818,26 +3807,8 @@ userdel	q4::inwork; 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
        },
        undef,
        undef,
-       {
-         'data' => 'userdel	q4::inwork; 9727,17804 9835,17797 10053,17777 10179,17772
-#userdel	q4::inwork; 10179,17772 10311,17764 10459,17754
-',
-         'from' => 1438588200,
-         'id' => 2736,
-         'source_id' => 'IM_025833',
-         'text' => 'Florastr.: Baustelle zwischen Wollankstr. und Mühlenstr., Fahrtbahn in Richtung S- und U-Bahnhof Pankow gesperrt, 04.08.2015 bis 01.12.2015 ',
-         'type' => 'handicap',
-         'until' => 1448985600
-       },
-       {
-         'data' => 'userdel	q4::inwork 4492,20214 4622,20292 4718,20341 4879,20427
-',
-         'from' => 1442080673,
-         'id' => 2737,
-         'text' => 'Am Rathauspark: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis November 2015',
-         'type' => 'handicap',
-         'until' => 1448924400
-       },
+       undef,
+       undef,
        undef,
        undef,
        {

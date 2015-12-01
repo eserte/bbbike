@@ -17045,7 +17045,7 @@ userdel	2::temp 11273,12301 11355,12331
 EOF
      },
      { from  => $isodate2epoch->("2015-11-22 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-12-31 23:59:59"),
+       until => $isodate2epoch->("2016-01-01 23:59:59"), # 1 Tag (mindestens) für den Abbau
        periodic => 1,
        recurrences => [['yearly', days => 23, months => 11]],
        source_id => 'http://www.berlin.de/tickets/suche/detail.php?id=1090035',

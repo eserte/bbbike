@@ -1519,7 +1519,8 @@ Allee der Kosmonauten: Straßenbahntrasse	3nocross 19628,13517 19726,13524 19807,
 Bornhomer Str.: Straßenbahntrasse	3nocross 10778,16485 10699,16492 10620,16497
 Bornhomer Str.: Straßenbahntrasse	3nocross 10620,16497 10533,16505 10458,16509
 Bornhomer Str.: Straßenbahntrasse	3nocross 10458,16509 10370,16516 10282,16522 10197,16528
-Karl-Liebknecht-Str./Rosenstr.: Straßenbahntrasse	3nocross 10431,12709 10525,12789 10695,12933 10733,12967
+# REMOVED (Fußgängerampel existiert) --- Karl-Liebknecht-Str./Rosenstr.: Straßenbahntrasse	3nocross 10431,12709 10515,12780 10525,12789
+Karl-Liebknecht-Str./Rosenstr.: Straßenbahntrasse	3nocross 10525,12789 10695,12933 10733,12967
 Martin-Luther-Str.: Mittelstreifen	3nocross 6502,9782 6447,9661 6445,9538
 Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3nocross 10997,16280 10989,16197 10982,16121
 #: XXX_prog: wobei die Fußgängerampel nur ca. 20 Meter weiter östlich entfernt ist, ggfs. aufnehmen, wenn handicaps für Fahrtrichtungen implementiert sind
@@ -2798,7 +2799,7 @@ Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081
 # 
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6433 (Anfrage)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136136549415/136549415/00119959/59-Anlagen/02/GA_1805_IV.pdf (mindestens bis Ende 2016)
-#: last_checked: 2015-11-27
+#: last_checked: 2015-12-01
 #: check_frequency: 30d
 Unterführung Gertraudenbrücke - Wallstr.: wegen Bauarbeiten beim U-Bhf. Spittelmarkt ist die Verbindung gesperrt	2::inwork 10308,11833 10374,11734
 # 
@@ -2910,7 +2911,7 @@ Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Du
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
 #: osm_watch: way id="305153174" version="1"
-#: last_checked: 2015-11-08 vvv
+#: last_checked: 2015-12-01 vvv
 #: check_frequency: 90d vvv
 Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10008,12274 9994,12368
 Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9996,12401 9994,12368 9943,12364
@@ -2967,7 +2968,7 @@ tragen (2 Stufen)	0:5 8818,13365
 #: XXX siehe auch Busspur in radwege-orig vvv
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html vvv
 #: source_id: INKO_113041 vvv
-#: last_checked: 2015-10-31 vvv
+#: last_checked: 2015-12-01 vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9858,12410
 # REMOVED --- Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
 # REMOVED --- Niederlagstr. - Unter den Linden: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9943,12364 9934,12420 9984,12426

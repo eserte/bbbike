@@ -1432,9 +1432,7 @@ Bornholmer Str. -> Bergener Str.: Straßenbahntrasse	3::igndisp 10282,16522 10370
 Bergener Str. -> Bornholmer Str.: Straßenbahntrasse	3::igndisp 10382,16661 10370,16516 10458,16509
 Bornholmer Str. -> Andersenstr.: Straßenbahntrasse	3::igndisp 10197,16528 10282,16522 10295,16667
 Andersenstr. -> Bornholmer Str.: Straßenbahntrasse	3::igndisp 10295,16667 10282,16522 10370,16516
-Straßenbahntrasse	3nocross::ignrte 10431,12709 10525,12789 10695,12933 10733,12967
-Karl-Liebknecht-Str. -> Rosenstr.: Straßenbahntrasse	3::igndisp 10431,12709 10525,12789 10476,12829
-Rosenstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 10476,12829 10525,12789 10695,12933
+Straßenbahntrasse	3nocross::ignrte 10525,12789 10695,12933 10733,12967
 Karl-Liebknecht-Str. -> Rosa-Luxemburg-Str.: Straßenbahntrasse	3::igndisp 10525,12789 10695,12933 10685,12966
 Rosa-Luxemburg-Str. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 10685,12966 10695,12933 10733,12967
 Mittelstreifen	3nocross::ignrte 6502,9782 6447,9661 6445,9538

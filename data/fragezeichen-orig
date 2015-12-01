@@ -214,7 +214,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2015-11-06
+#: last_checked: 2015-12-01
 #: next_check: 2015-12-19
 Warschauer Str: Radspuren in Bau	?::inwork 13603,11538 13651,11731 13696,11920 13745,12118
 # 
@@ -1289,12 +1289,19 @@ Am Kirchendreieck: Lage der Straße? Qualität?	? 23922,13085 23960,13325
 # - XXX_prog- und XXX_indoor-Einträge
 # 
 # 
-# REMOVED (am nächsten Tag bei fritz entfernt) --- #: by: fritz --- #: XXX bis 31.12.2016 --- Grolmanstr.: Einbahnstraße wegen Bauarbeiten, auch für Radfahrer relevant?	? 4920,10933 4954,10876 5054,10706 5079,10701
+#: XXX Wird sich durch die Baumaßnahmen was ändern? Ende der Bauarbeiten: 30.04.2016 vvv
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.415646.php
+Görlitzer Park: Baumaßnahmen	?::inwork 12608,10294 12580,10252
+Görlitzer Park: Baumaßnahmen	?::inwork 12767,10216 12763,10207 12757,10197
+Görlitzer Park: Baumaßnahmen	?::inwork 12905,10143 12901,10134 12869,10071
+#: XXX ^^^
 # 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2015
-#: XXX "Verkehrsfreigabe vorrausichtlich in KW 49"
-#: next_check: 2015-11-30
-Alex-Wedding-Str.: ändert sich durch die Widmung hier etwas?	? 11146,13328 11085,13239 11045,13183
+#: last_checked: 2015-11-29
+#: check_frequency: 7d
+Kiefholzstr.: Umfahrungsstraße in Vorbereitung	? 14151,8967 14363,8738
+# 
+# REMOVED (am nächsten Tag bei fritz entfernt) --- #: by: fritz --- #: XXX bis 31.12.2016 --- Grolmanstr.: Einbahnstraße wegen Bauarbeiten, auch für Radfahrer relevant?	? 4920,10933 4954,10876 5054,10706 5079,10701
+# REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2015 --- #: XXX "Verkehrsfreigabe vorrausichtlich in KW 49" --- #: next_check: 2015-11-30 --- Alex-Wedding-Str.: ändert sich durch die Widmung hier etwas?	? 11146,13328 11085,13239 11045,13183
 # 
 #: by: fritz
 #: XXX was bedeutet das hier? kann die Straße auf N zurückgestuft werden? bleibt die Fußgängerampel bestehen?
@@ -1952,7 +1959,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.334355.php
-#: last_checked: 2015-11-27
+#: last_checked: 2015-12-01
 #: check_frequency: 120d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172 10818,11269
 # 

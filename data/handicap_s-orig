@@ -28,7 +28,7 @@ Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3:
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2015-11-27
+#: last_checked: 2015-12-01
 Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
 # 
 # REMOVED (fertig) --- #: XXX nach den Bauarbeiten nur das kleine St¸ck an der Boxhagener noch mit handicap versehen (weil Durchfahrt verboten + umst‰ndliche Ampelf¸hrung) --- #: last_checked: 2014-05-26 --- #: next_check: 2014-06-01 (wahrscheinlich abgeschlossen) --- Neue Bahnhofstr.: Einbahnstraﬂe wegen Bauarbeiten	q3::inwork; 14752,11041 14811,11067 14879,11182 14908,11231 14918,11249
@@ -79,12 +79,12 @@ Melchiorstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 11542,11342 11726,11265 119
 # REMOVED (nicht mehr gesperrt f¸r Radfahrer) --- #: XXX nochmal genauer anschauen... --- #: last_checked: 2014-11-10 --- Gipsstr.: Bauarbeiten zwischen Rosenthaler Str. und Joachimstr., Einbahnstraﬂe	q2::inwork; 10350,13376 10199,13446
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2014-08-22 --- #: check_frequency: 14d --- Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11487,11390 11542,11342 11415,11392 11487,11390
 # 
-#: last_checked: 2015-11-06
+#: last_checked: 2015-12-01
 #: check_frequency: 60d
 zur Keibelstr.: Baustraﬂe, Durchfahrt f¸r Radfahrer nicht erlaubt	q4::inwork 10976,13229 11045,13183
 # 
 #: XXX auf beiden Seiten Bordsteine
-#: last_checked: 2015-11-06
+#: last_checked: 2015-12-01
 #: check_frequency: 60d
 Wadzeckstr.: Bauarbeiten, auf Gehweg ausweichen, Bordsteine	q4::inwork 11146,13328 11201,13289
 # 
@@ -94,7 +94,7 @@ Wadzeckstr.: Bauarbeiten, auf Gehweg ausweichen, Bordsteine	q4::inwork 11146,133
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
 # REMOVED --- #: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualit‰t -> qualitaet_s-orig-Eintrag revidieren --- #: last_checked: 2013-11-21 --- Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2015-08-31
+#: last_checked: 2015-12-01
 #: check_frequency: 90d
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9984,12426 9996,12401 10058,12290
 # REMOVED --- Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q4::inwork 9996,12401 9994,12368 9943,12364
@@ -206,9 +206,9 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10072,11384 9945,11371 9737,11349
 # REMOVED (das Einfahrt verboten-Schild h‰ngt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9949,11470 9935,11566
 # 
-#: last_checked: 2015-11-27
+#: last_checked: 2015-12-01
 Alte Jakobstr.: Bauarbeiten, teilweise Einbahnstraﬂe	q3::inwork; 10256,11160 10437,11352
-#: last_checked: 2015-11-27
+#: last_checked: 2015-12-01
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10624,11548 10640,11564
 # 
 # REMOVED --- Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10437,11352
@@ -259,6 +259,7 @@ Dieselstr., Umfahrung: Fuﬂg‰nger, kurvig, eng	q2-::inwork 14326,8062 14344,8072 
 # 
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20140707.1250.398363.html?date=20140722 (Verzˆgerung)
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20140801.1405.398592.html
+#: XXX laut fritz bis 2015-12-31
 #: source_id: IM_022515
 #: source_id: 2147338550
 #: last_checked: 2015-11-14
@@ -1607,8 +1608,7 @@ Rampe	q2 10503,19371 10489,19406
 Schillingweg: eng, parkende Autos	q1 11259,23928 11224,23879 11190,23832 11165,23796 11134,23753 11105,23704 11069,23647 11051,23620 11008,23572 10974,23534 10855,23403 10717,23258 10700,23251 10629,23222 10396,23128
 (Tomatenweg - Straﬂe 175): sehr eng	q3 12500,22895 12515,22898 12532,22902
 (Schloﬂpark Schˆnhausen): Fuﬂg‰nger	q1 10600,19225 10638,19149
-#: note: nachts sind die Ketten schlecht sichtbar
-Alex-Wedding-Str.: Fahrbahn durch Ketten gesperrt, Ausweichen auf Gehweg	q4 11085,13239 11045,13183
+# REMOVED --- #: note: nachts sind die Ketten schlecht sichtbar --- Alex-Wedding-Str.: Fahrbahn durch Ketten gesperrt, Ausweichen auf Gehweg	q4 11085,13239 11045,13183
 (Braunlager Str. - Tempelhofer Weg): Fuﬂg‰nger	q2 12062,5779 12017,5747
 Am Vierling: Fuﬂg‰nger	q1 -472,4185 -444,4126
 #: note: der nˆrdliche Abschnitt hat getrennte Wege f¸r Fuﬂg‰nger und Radfahrer

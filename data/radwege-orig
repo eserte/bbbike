@@ -562,6 +562,7 @@ altes Verbundsteinpflaster	RW1;RW1 9953,3806 10047,3794 10236,3777 10461,3757 10
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2015_07_10.pdf?start&ts=1436508425&file=stra__enbauliste_stand_2015_07_10.pdf (Ende)
 #: last_checked: 2015-11-14 (noch Bauarbeiten, Richtung Süden noch keine Markierungen)
 #: next_check: 2015-11-27
+#: add_fragezeichen: Existieren bereits Radspuren in der Rixdorfer Str.?
 	RW1;RW0 9953,3806 10181,4181 10185,4187 10221,4245 10288,4354 10412,4552
 	RW1;RW1 10412,4552 10505,4713 10755,5129
 	RW2;RW1 10755,5129 10800,5203
@@ -969,7 +970,7 @@ neues Verbundsteinpflaster	RW1; 12694,2517 12694,2544 12694,2570 12693,2746 1269
 die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 13745,12118 13785,12292
 	RW3; 13785,12292 13745,12118
 #: next_check_id: WARSCHAUER-2014
-#: last_checked: 2015-11-24
+#: last_checked: 2015-12-01
 #: next_check: 2015-12-19
 #: by: http://www.umbau-warschauer-strasse.de/images/bauinfos/Infoblatt_August_15-2.pdf
 #: XXX Radweg wegen Bauarbeiten aufgehoben
@@ -1011,7 +1012,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Sa 7-20.30 Uhr	RW1;RW8 7866,9902 7866
 Busspur ist immer gültig	RW5;RW0 7848,9814 7829,9723
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5542,11075 5459,11135 5258,11285 5166,11343 5091,11406 5085,11413 4919,11605 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
-#: last_checked: 2015-11-08
+#: last_checked: 2015-12-01
 #: check_frequency: 60d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1019,7 +1020,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 #: XXX siehe auch 3nocross in gesperrt-orig
 #: source_id: INKO_113041
-#: last_checked: 2015-11-08
+#: last_checked: 2015-12-01
 #: check_frequency: 60d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 9695,12390 9656,12386 9601,12380
@@ -1043,10 +1044,10 @@ Busspur ist immer gültig	RW5;RW5 9141,12320 9028,12307 8804,12280
 Busspur ist immer gültig	RW5; 10176,12506 10243,12546 10300,12587
 	RW2; 10300,12587 10243,12546 10176,12506
 Busspur ist immer gültig	RW5;RW5 10300,12587 10352,12627 10431,12709
-Busspur gilt Mo-Fr 14-19 Uhr	RW5; 10431,12709 10525,12789 10695,12933 10733,12967
+Busspur gilt Mo-Fr 14-19 Uhr	RW5; 10431,12709 10515,12780 10525,12789 10695,12933 10733,12967
 Busspur ist immer gültig	RW5; 10733,12967 10776,13005
 Busspur gilt Mo-Sa 7-19 Uhr	RW5; 10776,13005 10733,12967 10695,12933 10525,12789
-	RW3; 10525,12789 10431,12709
+	RW3; 10525,12789 10515,12780 10431,12709
 Busspur ist immer gültig	RW5; 10776,13005 10923,13156
 Busspur ist immer gültig	RW5; 10923,13156 10776,13005
 Busspur in Mittellage ist immer gültig	RW5; 10213,11728 10128,11714 9987,11690 9981,11689 9898,11679 9701,11656 9569,11631
@@ -1482,7 +1483,7 @@ die ersten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	
 	RW3;RW1 13541,11355 13588,11490
 #: next_check_id: WARSCHAUER-2014
 #: XXX für kurze Zeit hat eine Markierung existiert, ist aber wieder weg
-#: last_checked: 2015-11-27
+#: last_checked: 2015-12-01
 	RW0; 13651,11731 13603,11538
 	RW3;RW2 13588,11490 13603,11538
 	RW4;RW4 14026,10869 14024,10861 14011,10812
@@ -1633,7 +1634,7 @@ Berliner Gehwegplatten, ca. 1,50m breit	RW2;RW2 9272,14208 9400,14400 9410,14410
 #: next_check_id: OTTOBRAUN-2015
 #: note: Wobei es so aussieht, als ob das Zusatzschild einfach nur fehlt
 #: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5; 
-#: last_checked: 2015-11-27
+#: last_checked: 2015-12-01
 #: check_frequency: 90d
 	RW3; 11451,13301 11368,13170
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 11451,13301 11486,13350
