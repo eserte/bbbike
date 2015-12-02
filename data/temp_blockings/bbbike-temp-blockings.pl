@@ -21319,6 +21319,7 @@ EOF
        data  => <<EOF,
 #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
+#: source_id: 2147339529
 #: last_checked: 2015-10-15
 #: check_frequency: 90d
 userdel	q2::inwork 5258,11285 5236,10994
@@ -24452,6 +24453,7 @@ EOF
        source_id => 'IM_026066',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.354922.php
+#: source_id: 2147339555
 userdel	q4::inwork; 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
 EOF
      },
@@ -24517,6 +24519,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367070.php',
        data  => <<EOF,
 #: source_id: IM_026411
+#: source_id: 2147339562
 userdel	q4::inwork; -6861,15129 -6507,15007
 EOF
      },

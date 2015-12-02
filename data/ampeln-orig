@@ -2777,6 +2777,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_prog eigentlich nur für Radfahrer Richtung Südosten relevant vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
 #: source_id: IM_023532 (Gesamtmaßnahme bis Ende Juni 2016) vvv
+#: source_id: 2147339539 vvv
 #: last_checked: 2015-09-26 vvv
 #: check_frequency: 90d vvv
 	F 16886,6665
@@ -2784,12 +2785,14 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: check_frequency ^^^
 #: last_checked ^^^
 #: source_id ^^^
+#: source_id ^^^
 #: by: ^^^
 #: XXX_prog ^^^
 #: note ^^^
 # 
 #: next_check_id: FISCHERINSEL-2015 vvv
 #: source_id: IM_024012 vvv
+#: source_id: 2147339543 vvv
 #: last_checked: 2015-11-08 vvv
 #: next_check: 2015-12-20 vvv
 	F 10703,11837
@@ -2797,9 +2800,11 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check ^^^
 #: last_checked ^^^
 #: source_id ^^^
+#: source_id ^^^
 #: next_check_id ^^^
 # 
 #: next_check_id: AMNORDHAFEN-2015
+#: source_id: 2147339542
 #: last_checked: 2015-11-27
 	F::inwork 7741,14560
 #: note: Anforderungsampel
