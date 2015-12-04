@@ -5236,7 +5236,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003395',
        data  => <<EOF,
-userdel	2::inwork 7002,11034 7010,11002 6966,10931 6918,10854
+userdel	2::inwork 7002,11034 7010,11002 6966,10931 6929,10852
 EOF
      },
      { from  => 1153739453, # 2006-07-24 13:10
@@ -11880,7 +11880,7 @@ userdel auto	3 6540,11754 6778,11742 6980,11790 7058,11809
 userdel auto	3 7275,10418 7238,10299 7209,10205
 userdel auto	3 9489,12263 9475,12365 9462,12481
 userdel auto	3 7534,10850 7820,10768 7963,10716
-userdel auto	3 6681,10959 6824,10904 6918,10854
+userdel auto	3 6681,10959 6824,10904 6918,10858 6929,10852
 userdel auto	3 6869,11567 6809,11570 6512,11608
 userdel auto	3 7209,10205 7238,10299 7275,10418
 userdel auto	3 7963,10716 7820,10768 7534,10850
@@ -11913,7 +11913,7 @@ userdel auto	3 6745,10619 6753,10446 6719,10347
 userdel auto	3 9373,12197 9164,12172 9183,12076
 userdel auto	3 6468,10550 6532,10529 6494,10440
 userdel auto	3 7747,11075 7980,11070 8104,11037 8205,10979
-userdel auto	3 6918,10854 6824,10904 6681,10959
+userdel auto	3 6929,10852 6918,10858 6824,10904 6681,10959
 userdel auto	3 9462,12481 9475,12365 9489,12263
 userdel auto	3 7115,11220 6880,11110 6841,11114
 userdel auto	3 6841,11114 6880,11110 7115,11220
@@ -17969,7 +17969,7 @@ EOF
        data  => <<EOF,
 #: by: http://www.visitberlin.de/de/event/27-06-2015/37-csd-berlin-christopher-street-day-2015
 #: by: http://csd-berlin.de/csd-demo-2015-route-und-faqs/
-userdel	2::temp 6851,10416 6937,10363 6971,10346 7033,10328 7033,10396 7003,10513 6985,10597 6972,10665 6918,10854 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6685,11954 6642,12010 6653,12067 6690,12104 6725,12113 6754,12108 6787,12099 6828,12031 6809,11979 6744,11936
+userdel	2::temp 6851,10416 6937,10363 6971,10346 7033,10328 7033,10396 7003,10513 6985,10597 6972,10665 6929,10852 6918,10858 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6685,11954 6642,12010 6653,12067 6690,12104 6725,12113 6754,12108 6787,12099 6828,12031 6809,11979 6744,11936
 userdel	2::temp 6353,10583 6292,10627 6228,10646 6171,10657
 userdel	2::temp 7033,10396 6851,10416 6753,10446 6636,10492 6532,10529 6468,10550 6353,10583 6268,10588 6216,10614 6171,10657 6133,10679 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5351,10760 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435 4157,10418
 userdel auto	3 6380,10704 6353,10583 6302,10462
@@ -21204,11 +21204,11 @@ EOF
 userdel	q3::inwork; 13474,8060 13444,7879
 EOF
      },
-     { from  => $isodate2epoch->("2015-01-06 10:00:00"), # 1 Tag Vorlauf --- 1357040979, # 2013-01-01 12:49
-       until => $isodate2epoch->("2015-01-28 22:00:00"), # 1358981999, # 2013-01-23 23:59
+     { from  => $isodate2epoch->("2016-01-17 00:00:00"), # 1 Tag Vorlauf --- 1357040979, # 2013-01-01 12:49
+       until => $isodate2epoch->("2016-01-22 23:58:59"), # 1358981999, # 2013-01-23 23:59
        periodic => 1,
        recurrences => [['yearly', days => 3, months => 1]],
-       text  => 'Straße des 17. Juni: wegen der Fashion Week gesperrt, 07.01.2015 bis 28.01.2015',
+       text  => 'Straße des 17. Juni: voraussichtlich wegen der Fashion Week gesperrt, 18.01.2016 bis 22.01.2016',
        type  => 'gesperrt',
        source_id => 'IM_019489',
        data  => <<EOF,
@@ -21320,7 +21320,7 @@ EOF
 #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
 #: source_id: 2147339529
-#: last_checked: 2015-10-15
+#: last_checked: 2015-12-04
 #: check_frequency: 90d
 userdel	q2::inwork 5258,11285 5236,10994
 EOF
@@ -21867,6 +21867,7 @@ EOF
        source_id => 'IM_026665',
        data  => <<EOF,
 #: by: fritz
+#: source_id: 2147339574
 #: confirmed_by: srt
 userdel	1::inwork 17886,5587 17736,5441
 EOF
@@ -24058,7 +24059,7 @@ EOF
        text  => 'Zillestr.: zwischen Richard-Wagner-Str. und Wilmersdorfer Str. Bauarbeiten, Einbahnstraßenregelung, offen Richtung Osten, Ende der Sperrung unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2015-07-03
+#: last_checked: 2015-12-04
 #: check_frequency: 90d
 userdel	q4::inwork; 3807,11859 3666,11855
 EOF
@@ -24707,6 +24708,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_026600',
        data  => <<EOF,
+#: source_id: 2147339571
 userdel	q2::inwork; 17110,4055 17244,4242
 EOF
      },
@@ -24716,6 +24718,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.396336.php',
        data  => <<EOF,
+#: source_id: 2147339576
 userdel	q4::inwork; 8336,10829 8300,10823 8281,10791 8199,10634
 EOF
      },
@@ -24725,6 +24728,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.394109.php',
        data  => <<EOF,
+#: source_id: 2147339588
 	3 8783,10166 9108,10101 9277,10057
 	3 9277,10057 9108,10101 8783,10166
 	3 9277,10057 9108,10101 9073,9915
@@ -24741,6 +24745,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_026700',
        data  => <<EOF,
+#: source_id: 2147339577
 userdel	q3::inwork; 14218,13834 14261,13932 14298,14015 14358,14155 14464,14216 14658,14328 14667,14336 14721,14379 14754,14406 14990,14537 15066,14579
 EOF
      },
@@ -24774,6 +24779,15 @@ EOF
        data  => <<EOF,
 #: note: kein Gehweg, deshalb nicht q4;
 userdel	1::inwork 19843,7866 19927,7813 20031,7794 20077,7786
+EOF
+     },
+     { from  => 1449097200, # 2015-12-03 00:00
+       until => 1451602799, # 2015-12-31 23:59
+       text  => 'Rudolf-Rühl-Allee: zwischen An der Wuhlheide und Köpenicker Straße am Bahnübergang wegen Bauarbeiten gesperrt, bis Ende Dezember 2015',
+       type  => 'gesperrt',
+       source_id => '128113',
+       data  => <<EOF,
+userdel	2::inwork 20635,7119 20722,6971
 EOF
      },
     );

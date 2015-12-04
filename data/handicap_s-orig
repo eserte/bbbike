@@ -202,7 +202,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2015-12-02
+#: last_checked: 2015-12-04
 #: check_frequency: 30d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -227,6 +227,9 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10624,11548 1
 # 
 ### Kreuzberg ###
 # 
+#: last_checked: 2015-12-03
+Ritterstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 9935,11067 10103,10989
+# 
 # REMOVED (Bauarbeiten beendet) --- #: next_check_id: DRESDENER-2015 --- #: last_checked: 2015-09-02 --- #: check_frequency: 7d -- # REMOVED --- #: next_check: 2015-03-01 (Bauzeit 2014-2015) --- Alfred-Döblin-Platz: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 11162,10919 11150,11030
 # REMOVED (eigentlich kann man schon durch...) --- #: next_check_id: DRESDENER-2015 --- #: last_checked: 2015-07-15 --- #: check_frequency: 7d --- #: priority: #A --- Dresdener Str.: Bauarbeiten wegen Tunnelzuschüttung, teilweise Ausweichen auf Gehweg	q3::inwork 11189,10831 11162,10919
 # REMOVED --- #: next_check_id: MONUMENTENPLATZ-2014 --- #: XXX während der Bauarbeiten --- #: last_checked: 2014-09-02 --- #: check_frequency: 60d --- Am Monumentenplatz: eng	q3::inwork 8338,9099 8344,9085 8358,9068
@@ -243,10 +246,7 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10624,11548 1
 # 
 ### Tiergarten ###
 # 
-#: by: http://www.deutsches-architektur-forum.de/forum/showthread.php?t=3245
-#: last_checked: 2015-09-17
-#: check_frequency: 45d
-Köbisstr.: wegen Bauarbeiten Ausweichen auf Gehweg	q4::inwork 7103,11247 7160,11225
+# REMOVED --- #: by: http://www.deutsches-architektur-forum.de/forum/showthread.php?t=3245 --- #: last_checked: 2015-09-17 --- #: check_frequency: 45d --- Köbisstr.: wegen Bauarbeiten Ausweichen auf Gehweg	q4::inwork 7103,11247 7160,11225
 # 
 ### Charlottenburg ###
 # 
@@ -2033,8 +2033,7 @@ Schwarzwurzel-Park: Bordstein, Fußgänger, Spielplatz	q3 20698,18359 20814,18341 
 (Flaschenhalspark, Zugang): Rampe	q2 8358,9068 8367,9006 8374,9074
 #: XXX_prog BS, zumindest an der Borsigstr., ansonsten trotzdem q3
 (Invalidenstr. - Borsigstr.): Fußgänger, Spielplatz, Bordsteine	q3 9285,13965 9321,13882 9316,13870
-#: note: das Tor an der Fahrbahn kann aber offen sein, in diesem Fall kein Handicap (gesehen: 2014-10-01 (Mi) abends gegen 19 Uhr)
-Virchowstr.: schmale Toreinfahrt, Fußgänger	q3 8548,13577 8503,13553
+# REMOVED (kann man hier immer gut vorbeifahren?) --- #: note: das Tor an der Fahrbahn kann aber offen sein, in diesem Fall kein Handicap (gesehen: 2014-10-01 (Mi) abends gegen 19 Uhr) --- Virchowstr.: schmale Toreinfahrt, Fußgänger	q3 8548,13577 8503,13553
 #: XXX_prog BS, Bordstein zum asphaltierten Nebenweg, ansonsten entfernen
 Calandrellistr. - Gärtnerstr.: Bordstein	q2 5547,3684 5362,3612
 #: XXX_prog BS (2x), ansonsten q1

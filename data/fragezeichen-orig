@@ -44,7 +44,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10892,11555 10815,11662
 # 
 # REMOVED (realisiert) --- #: XXX Baumaßnahme 4.15 (Realisierung nach 2011) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 (Baubeginn 2012) --- #: XXX laut Tagesspiegel vom 2013-01-03 für 2013 geplant --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) --- #: osm_watch: way id="4410417" version="11" --- #: osm_watch: way id="4410418" version="13" --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130517.0940.384950.html (bis Herbst 2013) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130802.1020.387484.html --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=5161 (Verzögerungen) --- #: last_checked: 2013-11-12 (Richtung Norden fehlt noch) --- #: next_check: 2014-12-12 (bei osm ist cycleway=lane schon eingetragen) --- Sömmeringstr.: Radspuren werden hier 2013 markiert	?::inwork; 3734,12715 3716,12925 3714,12949 3711,13098 3711,13202
-# REMOVED (realisiert) --- #: XXX Baumaßnahme 4.12 (Realisierung nach 2011) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 (Baubeginn noch nicht 2012) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) --- #: osm_watch: way id="38523780" version="4" --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130517.0940.384950.html (bis Herbst 2013) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130802.1020.387484.html --- #: last_checked: 2013-06-12 --- #: next_check: 2013-09-23 --- Lise-Meitner-Str.: Radspuren werden hier 2013 markiert	?::inwork 3711,13202 3721,13274 3732,13346 3742,13416 3741,13495 3739,13563 3724,13702 3713,13787 3702,13865 3695,13902
+# REMOVED (realisiert) --- #: XXX Baumaßnahme 4.12 (Realisierung nach 2011) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 (Baubeginn noch nicht 2012) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) --- #: osm_watch: way id="38523780" version="4" --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130517.0940.384950.html (bis Herbst 2013) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130802.1020.387484.html --- #: last_checked: 2013-06-12 --- #: next_check: 2013-09-23 --- Lise-Meitner-Str.: Radspuren werden hier 2013 markiert	?::inwork 3711,13202 3721,13274 3725,13346 3742,13416 3741,13495 3739,13563 3724,13702 3713,13787 3702,13865 3695,13902
 # 
 #: XXX Baumaßnahme 5.11 (Realisierung nach 2011)
 #: osm_watch: way id="4609212"  version="8"
@@ -238,8 +238,7 @@ Gartenfelder Str.: Radspur wird gebaut, Realisierung bis April 2015	?::inwork; -
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) vvv
 #: osm_watch: way id="25219757" version="11"
 #: osm_watch: way id="4600236" version="13"
-#: last_checked: 2015-09-19
-#: check_frequency: 120d
+#: last_checked: 2015-12-04
 Stromstr., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,13517 6228,13324
 # 
 # REMOVED (-> radwege-orig) --- #: XXX Markierungsarbeiten haben wohl angefangen, genauer anschauen --- #: last_checked: 2013-10-18 --- #: next_check: 2013-10-18 --- Prinzenstr.: Radspuren bis 2015 geplant	?::projected 10605,10312 10580,10256 10521,10126 10500,10081
@@ -551,6 +550,7 @@ Hennigsdorfer Str.: nach den Bauarbeiten durchgängig asphaltiert mit Radstreifen
 #: XXX eine Straße könnte nach Henriette Lustig ("Mutter Lustig") benannt werden
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4916
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036544636457/544636457/00103447/47-Anlagen/04/B0815ZB2.pdf
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/49re.pdf/file?y=2015 (Bebauungsplan 9-22)
 #: last_checked: 2015-08-15
 #: check_frequency: 360d
 Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualität? Anbindund zum Uferweg?	?::projected 21447,5414 21482,5388 21555,5214 21415,5157 21498,5023
@@ -1288,9 +1288,13 @@ Am Kirchendreieck: Lage der Straße? Qualität?	? 23922,13085 23960,13325
 # 
 #: XXX Wird sich durch die Baumaßnahmen was ändern? Ende der Bauarbeiten: 30.04.2016 vvv
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.415646.php
+#: last_checked: 2015-12-03 vvv
+#: check_frequency: 14d vvv
 Görlitzer Park: Baumaßnahmen	?::inwork 12608,10294 12580,10252
 Görlitzer Park: Baumaßnahmen	?::inwork 12767,10216 12763,10207 12757,10197
 Görlitzer Park: Baumaßnahmen	?::inwork 12905,10143 12901,10134 12869,10071
+#: check_frequency ^^^
+#: last_checked ^^^
 #: XXX ^^^
 # 
 #: last_checked: 2015-11-29
@@ -1309,6 +1313,7 @@ Humboldtring: Rückbau der Anschlussstelle	? -11386,-1313 -11395,-1331 -11461,-14
 # REMOVED (kurzes Stück, umfahrbar, Ampel ist dafür ausgeschaltet) --- #: XXX NEW	Am Weidendamm (Mitte): Baustelle, Ein- und Ausfahrt Am Weidendamm gesperrt (bis Anfang 12/15) Kreuzung Friedrichstr., 09.11.2015 07:00 Uhr bis 05.12.2015 12:00 Uhr	IM_026703	 --- #: next_check: 2015-11-09 --- Weidendamm: Sperrung für Radfahrer relevant?	? 9286,12886 9323,12895
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.390615.php
+#: last_checked: 2015-12-04 (keine Bauarbeiten zu erkennen)
 Neues Ufer: Straßenbauarbeiten, Einschränkungen für Radfahrer? Gibt es nach den Bauarbeiten Änderungen (z.B. Schutzstreifen Richtung Norden)?	? 4295,13653 4363,13336
 # 
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.391294.php
@@ -1322,7 +1327,7 @@ Peter-Herzog-Weg: Benennung eines Wegs am Fort Hahneberg --- ist das hier? Werde
 # 
 Weg zum Hangkantenpark: Qualität? Drängelgitter? Nachts beleuchtet? Steigung?	? 19279,1779 19317,1768 19373,1930 19266,1968
 # 
-Joachimsthaler Str.: ist hier eine Busspur? Geltungszeiten?	?; 5475,10808 5488,10978 5542,11075
+# REMOVED (ja) --- Joachimsthaler Str.: ist hier eine Busspur? Geltungszeiten?	?; 5475,10808 5488,10978 5542,11075
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file?y=2015
 #: XXX str_cont_ausnahme-Eintrag für die Zwieseler Str. dann notwendig
@@ -1368,11 +1373,7 @@ EUREF-Campus: Innenfläche wird benannt; genaue Wegführung, Qualität?	? 7250,8223
 # REMOVED (keine Verschlechterung) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1508/nachricht5714.html --- Moritzplatz: anschauen, gibt es relevante Veränderungen?	? 10832,10910 10854,10854 10906,10874 10885,10928 10832,10910
 # REMOVED (-> temp blockings) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.354922.php --- #: XXX Bauarbeiten bis Dezember 2016, zwei Bauabschnitte, durch die Düsseldorfer Str. geteilt --- #: next_check: 2015-08-31 --- Konstanzer Str.: geplante Bauarbeiten; Einbahnstraßenregelung offen Richtung Norden, auch für Radfahrer relevant?	? 4057,9648 4067,9686 4099,9820 4126,9932 4152,10033 4183,10144 4219,10279 4239,10358
 # REMOVED (aufgenommen) --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.356806.php --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5228 --- #: XXX ggfs. in Berlin.coords.data eintragen; osm-Notiz erstellen --- Waltraud-Krause-Weg: wird es hier Straßenschilder geben?	? 17826,6495 17852,6589
-# 
-#: last_checked: 2015-08-16
-#: check_frequency: 60d
-Siemensstr.: werden hier vielleicht auch Radspuren markiert?	? 5746,14090 5708,14077 5647,14067 5628,14063 5443,14028 5322,14044
-# 
+# REMOVED --- #: last_checked: 2015-08-16 --- #: check_frequency: 60d --- Siemensstr.: werden hier vielleicht auch Radspuren markiert?	? 5746,14090 5708,14077 5647,14067 5443,14028 5322,14044
 # REMOVED (nein) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20150723.1925.402307.html --- #: XXX Endedatum laut fritz 2015-08-28, laut Pressemitteilung: 2015-09-30 --- #: next_check: 2015-09-30 --- Weißenseer Weg: wird der Radweg nach den Bauarbeiten besser sein?	? 14843,15007 14959,14752
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5207
@@ -1413,7 +1414,7 @@ Mauerweg im Spandauer Forst: Erneuerung	?::projected -3497,20003 -3652,20100 -42
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2015
 #: XXX sieht man schon Schilder? evtl. auch weiter hinten gelegen
 #: XXX fehlt in Berlin.coords.data
-#: last_checked: 2015-08-16 (keine Schilder)
+#: last_checked: 2015-12-04 (keine Schilder)
 #: check_frequency: 60d
 Am Hamburger Bahnhof: Benennung des Platzes	? 8293,13519 8128,13767
 # 
@@ -1484,7 +1485,7 @@ Nennhauser Damm/Finkenkruger Weg: neue Vorfahrtsregelung?	?::projected -7484,137
 # REMOVED (fast nichts passiert) --- #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2014_02_21.pdf?start&ts=1392978416&file=stra__enbauliste_stand_2014_02_21.pdf --- #: last_checked: 2014-07-17 --- #: check_frequency: 60d --- Friedrich-Wilhelm-Platz: Umbau der Radverkehrsanlagen	?::inwork 5314,7217 5333,7201 5352,7184 5397,7205 5364,7330 5352,7428
 # REMOVED --- #: XXX hat das irgendwelche Konsequenzen (e.g. Radwegführung?) --- #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/tiefbauamt/__bersicht_stra__enbaustellen_neubau_14_06_17.xls?download.html --- #: next_check: 2014-09-30 --- Ottomar-Geschke-Str.: Neubau einer Nebenfahrbahn	?::inwork 21289,4563 21206,4387
 # REMOVED (aufgenommen) --- #: by: Albin Kessel --- #: XXX vor Ort anschauen? --- verlängerte Grolmanstr.: Qualität ("Kopfsteinpflaster")? Fußgängerfrequenz ("einige Fußgänger")? Nachts beleuchtet?	? 4651,11368 4648,11445 4616,11507 4574,11587
-# REMOVED (siehe handicap-s-Eintrag) --- #: last_checked: 2015-01-28 --- #: check_frequency: 60d --- Quitzowstr./Siemensstr.: werden hier auch Radstreifen realisiert?	? 6074,14194 6047,14188 5956,14168 5787,14102 5708,14077 5647,14067 5628,14063 5443,14028 5336,14044 5306,14061
+# REMOVED (siehe handicap-s-Eintrag) --- #: last_checked: 2015-01-28 --- #: check_frequency: 60d --- Quitzowstr./Siemensstr.: werden hier auch Radstreifen realisiert?	? 6074,14194 6047,14188 5956,14168 5787,14102 5708,14077 5647,14067 5443,14028 5336,14044 5306,14061
 # 
 #: XXX_prog sollte mit einer Punkt-Richtungs-Penalty versehen werden, oder eine andere Lösung
 Alexander-Meißner-Str.: Überqueren nicht möglich, Schlenker nach Norden notwendig	? 20770,-1315 20394,-1397 20038,-1474
@@ -1778,8 +1779,8 @@ Lauterstr.: wird die Straße am Breslauer Platz komplett für Autofahrer/Radfahrer
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4550&options=4 vvv
 # REMOVED (realisiert) --- #: last_checked: 2014-08-07 (keine Bauarbeiten zu erkennen) --- #: check_frequency: 180d --- #: priority: #C --- Uhlandstr./Ludwigkirchstr.: Planung eines Zebrastreifens für 2012	?::projected 5026,10166 5023,10140
 # 
-#: last_checked: 2015-08-16
-#: check_frequency: 120d
+#: last_checked: 2015-12-04
+#: XXX Peitschenmasten stehen schon, die Zebrastreifen selbst sind noch nicht gemalt
 #: priority: #C
 Sömmeringstraße/Quedlinburger Straße: Planung eines Zebrastreifens für 2013	?::projected 3714,12949
 # 

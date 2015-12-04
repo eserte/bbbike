@@ -3015,7 +3015,28 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+',
+         'from' => 1452985200,
+         'id' => 2412,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              3,
+                              'months',
+                              1
+                            ]
+                          ],
+         'source_id' => 'IM_019489',
+         'text' => 'Straße des 17. Juni: voraussichtlich wegen der Fashion Week gesperrt, 18.01.2016 bis 22.01.2016',
+         'type' => 'gesperrt',
+         'until' => 1453503539
+       },
        {
          'data' => '	2::night 12851,12602 13108,12859 13046,12956 12878,13229
 	2::night 12773,12683 13046,12956
@@ -3038,7 +3059,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
 #: source_id: 2147339529
-#: last_checked: 2015-10-15
+#: last_checked: 2015-12-04
 #: check_frequency: 90d
 userdel	q2::inwork 5258,11285 5236,10994
 ',
@@ -3168,6 +3189,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        {
          'data' => '#: by: fritz
+#: source_id: 2147339574
 #: confirmed_by: srt
 userdel	1::inwork 17886,5587 17736,5441
 ',
@@ -3656,7 +3678,7 @@ userdel	2::inwork -3197,11554 -3075,11510
        undef,
        undef,
        {
-         'data' => '#: last_checked: 2015-07-03
+         'data' => '#: last_checked: 2015-12-04
 #: check_frequency: 90d
 userdel	q4::inwork; 3807,11859 3666,11855
 ',
@@ -3918,18 +3940,10 @@ userdel	2::inwork -1303,2003 -1591,1861
        },
        undef,
        undef,
+       undef,
        {
-         'data' => 'userdel	q2::inwork; 17244,4242 17261,4267 17290,4308 17387,4446 17428,4503 17471,4570 17520,4649
-',
-         'from' => 1446015600,
-         'id' => 2758,
-         'source_id' => 'IM_026668',
-         'text' => 'Sterndamm: zwischen Megedestr. und Königsheideweg Bauarbeiten, Fahrbahn in Richtung S-Bhf. Schöneweide gesperrt, Radfahrer dürfen den Gehweg benutzen, 29.10.2015 bis 04.12.2015',
-         'type' => 'handicap',
-         'until' => 1449248400
-       },
-       {
-         'data' => 'userdel	q2::inwork; 17110,4055 17244,4242
+         'data' => '#: source_id: 2147339571
+userdel	q2::inwork; 17110,4055 17244,4242
 ',
          'from' => 1445320800,
          'id' => 2759,
@@ -3939,7 +3953,8 @@ userdel	2::inwork -1303,2003 -1591,1861
          'until' => 1450454400
        },
        {
-         'data' => 'userdel	q4::inwork; 8336,10829 8300,10823 8281,10791 8199,10634
+         'data' => '#: source_id: 2147339576
+userdel	q4::inwork; 8336,10829 8300,10823 8281,10791 8199,10634
 ',
          'from' => 1446678000,
          'id' => 2760,
@@ -3949,7 +3964,8 @@ userdel	2::inwork -1303,2003 -1591,1861
          'until' => 1451602800
        },
        {
-         'data' => '	3 8783,10166 9108,10101 9277,10057
+         'data' => '#: source_id: 2147339588
+	3 8783,10166 9108,10101 9277,10057
 	3 9277,10057 9108,10101 8783,10166
 	3 9277,10057 9108,10101 9073,9915
 	3 8783,10166 9108,10101 9145,10290
@@ -3966,7 +3982,8 @@ userdel	2::inwork -1303,2003 -1591,1861
          'until' => 1454281200
        },
        {
-         'data' => 'userdel	q3::inwork; 14218,13834 14261,13932 14298,14015 14358,14155 14464,14216 14658,14328 14667,14336 14721,14379 14754,14406 14990,14537 15066,14579
+         'data' => '#: source_id: 2147339577
+userdel	q3::inwork; 14218,13834 14261,13932 14298,14015 14358,14155 14464,14216 14658,14328 14667,14336 14721,14379 14754,14406 14990,14537 15066,14579
 ',
          'from' => 1446953400,
          'id' => 2762,
@@ -4007,16 +4024,16 @@ userdel	q3::inwork 12620,9293 12565,9200
          'type' => 'handicap',
          'until' => undef
        },
+       undef,
        {
-         'data' => '#: note: kein Gehweg, deshalb nicht q4;
-userdel	1::inwork 19843,7866 19927,7813 20031,7794 20077,7786
+         'data' => 'userdel	2::inwork 20635,7119 20722,6971
 ',
-         'from' => 1448168400,
-         'id' => 2765,
-         'source_id' => 'IM_026719',
-         'text' => 'Verlängerte Waldowallee: Baustelle, Fahrbahn in Richtung Rudolf-Rühl-Allee zwischen Birkenallee und Anemonensteig gesperrt, 23.11.2015 06:00 Uhr bis 03.12.2015 17:00 Uhr ',
+         'from' => 1449097200,
+         'id' => 2766,
+         'source_id' => '128113',
+         'text' => 'Rudolf-Rühl-Allee: zwischen An der Wuhlheide und Köpenicker Straße am Bahnübergang wegen Bauarbeiten gesperrt, bis Ende Dezember 2015',
          'type' => 'gesperrt',
-         'until' => 1449158400
+         'until' => 1451602799
        }
      
 );

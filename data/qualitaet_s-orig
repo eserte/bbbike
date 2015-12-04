@@ -1420,7 +1420,7 @@ Wilhelm-Kuhr-Str.: Asphalt	Q0- 9460,18053 9590,18082
 (Am Bürgerpark - Wilhelm-Kuhr-Str.): Kopfsteinpflaster	Q2 9365,18062 9366,17997
 Cantianstr.: mäßiges Kopfsteinpflaster	Q2 10713,15746 10733,15638 10768,15534 10804,15447 10886,15251
 Rosenthaler Str.: teilweise mäßiger Asphalt	Q1+ 12166,21208 12096,21224 11982,21392 11889,21543 11870,21574
-Lise-Meitner-Str.: Beton	Q0 3721,13274 3732,13346 3742,13416 3741,13495 3739,13563
+Lise-Meitner-Str.: Beton	Q0 3712,13275 3725,13346 3742,13416 3741,13495 3739,13563
 Lise-Meitner-Str.: Verbundsteine	Q1 3739,13563 3724,13702
 Lise-Meitner-Str.: Beton	Q0 3724,13702 3713,13787 3702,13865 3695,13902 3663,14137
 Georg-Wilhelm-Str.: Kopfsteinpflaster, OK	Q1 2702,10006 2691,10047
@@ -13870,12 +13870,13 @@ Hieronymusweg: Beton	Q0 2556,21070 2691,21136
 #: by: Jörn Busch: vvv
 #: confirmed_by: srt (but changed wording, was "schlechter Asphalt") vvv
 Tile-Brügge-Weg: Asphalt/Beton mit Schäden	Q2+ 2380,20465 2473,20486 2595,20514
-#: XXX wird hier die Fahrbahndecke nach den Bauarbeiten besser sein?
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20121218.0805.379437.html (Bauarbeiten bis Mitte 2015)
 #: by: http://www.berlin.de/ba-reinickendorf/org/strassenbau/baumassnahmen.html?date=20130816 (Bauarbeiten bis Ende 2015)
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129969.php
-#: next_check: 2015-12-18
-Tile-Brügge-Weg: Asphalt/Beton mit Schäden	Q2+ 2595,20514 2793,20550 2968,20584 2982,20587 3119,20612 3196,20627 3214,20629 3287,20739 3306,20773
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.416569.php
+#: XXX früher: Asphalt/Beton mit Schäden, Q2+
+#: XXX ist hier asphaltiert?
+Tile-Brügge-Weg: neuer Belag	Q0 2595,20514 2793,20550 2968,20584 2982,20587 3119,20612 3196,20627 3214,20629 3287,20739 3306,20773
 #: confirmed_by ^^^
 Eschachstr.: Verbundsteinpflaster	Q1 2380,20465 2415,20380 2440,20294
 (Waidmannsluster Damm - Eschachstr./Gorkistr.): Verbundsteinpflaster	Q1 2195,20898 2231,20790 2237,20769 2273,20682 2295,20664 2296,20626 2339,20559 2380,20465
@@ -24489,7 +24490,7 @@ Wiebestr.: Kopfsteinpflaster	Q2 4605,13525 4649,13652 4587,13837
 Klarenbachstr.: Asphalt	Q0 4553,13294 4363,13336
 Rostocker Str. (Tiergarten): Kopfsteinpflaster mit Bodewellen	Q2 5102,14005 5109,13823 5116,13457
 Wittstocker Str.: Kopfsteinpflaster mit Bodewellen	Q2 4972,13804 5109,13823 5231,13843
-Mierendorffplatz: Parkweg	Q2 3721,13274 3583,13313
+Mierendorffplatz: Parkweg	Q2 3712,13275 3583,13313
 Brahestr.: Asphalt	Q0 3583,13313 3459,13350 3349,13406 3239,13461 3159,13492 3066,13514
 Tauroggener Str.: Asphalt	Q0 3459,13350 3429,13227 3400,13107 3337,12855
 Fabriciusstr.: Asphalt	Q0 3159,13492 3194,13554 3262,13547 3371,13501
