@@ -1430,12 +1430,13 @@ Louis-Nathan-Allee	N -10097,200 -10002,157 -9968,106 -9926,114 -9698,-19
 Mövenstr.	NN -10252,414 -10185,280 -10120,234
 Mövenstr.	N -10120,234 -10097,200
 Waldmüllerstr.	N -10097,200 -10095,137 -9942,21 -9766,-85
-Wannseestr.	N -9766,-85 -9727,-54 -9698,-19 -9656,41 -9568,56 -9437,35 -9313,54
+Wannseestr.	N -9766,-85 -9727,-54 -9698,-19 -9656,41 -9565,62 -9437,35 -9313,54
 Tannenstr.	N -9346,176 -9389,170 -9434,164 -9539,147
-Am Böttcherberg	N -9527,485 -9544,463 -9539,434 -9526,336 -9539,147 -9541,97 -9568,56
+Am Böttcherberg	N -9527,485 -9544,463 -9539,434 -9526,336 -9539,147 -9541,97 -9565,62
+Am Böttcherberg	N -9565,62 -9481,85
 Am Waldrand	N -9313,54 -9346,176 -9400,439
 Griebnitzstr.	N -9698,-19 -9627,-27
-Griebnitzstr.	NN -9627,-27 -9432,-57 -9399,-139
+Griebnitzstr.	NN -9627,-27 -9433,-64 -9375,-117
 Lankestr.	N -9942,21 -9965,-105 -9878,-137
 Allee nach Glienicke	N -9878,-137 -9883,-161 -9956,-242 -10005,-385 -9984,-563 -9984,-608 -10001,-675 -10051,-756 -10108,-796 -10154,-828
 Wasserstr.	N -9883,-161 -9795,-230
@@ -2323,8 +2324,7 @@ Am Alten Mörtelwerk	N -17127,-559 -17141,-496 -17186,-451 -17211,-356 -17254,-25
 #: note ^^^
 #: note: Privatstraße
 Leonardo-da-Vinci-Str.	N -11390,72 -11609,400
-#: XXX genaue Lage der Straße?
-Fritz-Rumpf-Str.	N -11307,133 -11388,270
+Fritz-Rumpf-Str.	N -11307,133 -11418,334
 (Zufahrt zum Filmpark Babelsberg)	N -8862,-2729 -8846,-2629
 #: note: Google+ADAC-Karte schreiben falsch ("Georg" statt "George")
 Heinrich-George-Str.	N -9075,-2664 -9054,-2632 -9013,-2614
@@ -2338,8 +2338,10 @@ Walter-Klausch-Str.	N -9982,-2371 -10009,-2467 -10022,-2522 -10080,-2632 -10123,
 #: add_fragezeichen: Ist der Mittelteil parallel zur Nuthestr. für Autos gesperrt?
 Walter-Klausch-Str.	NN -10133,-2903 -10046,-2974 -9963,-2980
 Walter-Klausch-Str.	N -9963,-2980 -9845,-2990
+#: XXX_prog "service" vvv
 (Ernst-von-Bergmann-Klinikum)	N -12168,-965 -12303,-867 -12351,-828 -12360,-772 -12365,-752
 (Ernst-von-Bergmann-Klinikum)	N -12418,-764 -12413,-789 -12402,-829 -12374,-849 -12351,-828
+#: XXX_prog ^^^
 (Parkplatz am Bahnhof)	N -12210,-1858 -12199,-1812 -12170,-1820 -12133,-1760
 (Potsdam Hbf. - Uferweg)	NN -12133,-1760 -12122,-1737 -12103,-1679 -12059,-1617
 #: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

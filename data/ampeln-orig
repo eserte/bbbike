@@ -837,7 +837,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 22162,1067
 	X 18010,7133
 	X 17962,6674
-	X 2712,4091
+	X 2713,4087
 	X 3425,4541
 	X 8077,1259
 	X 9128,3580
@@ -1734,9 +1734,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Anforderungsampel
 	F 4848,6401
 	X 4010,5888
-	X 3187,4893
+	X 3185,4894
 	X 4423,6477
 	X 4786,6717
+#: note: Anforderungsampel
+#: note: gilt nicht beim Abbiegen von NO (Gritznerstr.) -> NW (Schildhornstr.)
 	X 4555,6403
 	X 2407,4280
 	X 1861,4564
@@ -2406,7 +2408,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 14842,8809
 	F -3011,1761
 	F -2671,1988
-	X 6480,7992
+	F 6480,7992
+	F 6443,7971
 	F 4862,10881
 #: note: Anforderungsampel
 	F 30037,4176
@@ -2528,7 +2531,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 16669,25373
 	F 16606,25141
 	X 17879,4910
-	F 730,2734
+	F 718,2735
 	X 8206,12757
 	F 13999,2727
 	B0 17953,15221
@@ -2954,6 +2957,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 18417,10738
 #: note: Anforderungsampel
 	F -12531,-781
+#: note: Anforderungsampel
+#: XXX_prog Ampel gilt auch für Radfahrer beim Linksabbiegen in die Gutenbergstr. (O -> W)
 	F -12235,-713
 	B -8429,-2860
 	B -9996,-5596

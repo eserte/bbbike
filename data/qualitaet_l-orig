@@ -260,7 +260,7 @@ Wesendahler Weg: nicht befestigt	Q2 38300,15320 38325,15906 38397,17019
 #: corrected_by: Gonsolo (war früher "nicht befestigt")
 Wesendahler Weg: Asphalt	Q0 38397,17019 38386,17143 38480,17478
 Lankestr.: Kopfsteinpflaster	Q2 -9942,21 -9965,-105
-Wannseestr.: schlechtes Kopfsteinpflaster	Q3 -9766,-85 -9727,-54 -9698,-19 -9656,41 -9568,56 -9437,35 -9313,54
+Wannseestr.: schlechtes Kopfsteinpflaster	Q3 -9766,-85 -9727,-54 -9698,-19 -9656,41 -9565,62 -9437,35 -9313,54
 Waldmüllerstr.: Kopfsteinpflaster	Q2 -10097,200 -10095,137 -9942,21 -9766,-85
 #: by: osm
 Bergstr. (Saarmund): Asphalt	Q0 -7950,-10126 -8068,-10108 -8376,-10230 -8591,-10278
@@ -569,8 +569,8 @@ Lindstedter Chaussee: Asphalt	Q0 -16694,1310 -16742,1387
 Otto-Nagel-Str. (Potsdam): Kopfsteinpflaster	Q2 -11877,-478 -11978,-348 -12054,-274
 Helmholtzstr. (Potsdam): Kopfsteinpflaster	Q2 -11825,-61 -11978,-348
 Griebnitzstr. (Potsdam): asphaltiert	Q0 -9698,-19 -9627,-27
-Griebnitzstr. (Potsdam): Kopfsteinpflaster	Q2 -9627,-27 -9432,-57
-Griebnitzstr. (Potsdam): Waldweg	Q1 -9432,-57 -9399,-139
+Griebnitzstr. (Potsdam): Kopfsteinpflaster	Q2 -9627,-27 -9433,-64
+Griebnitzstr. (Potsdam): Waldweg	Q1 -9433,-64 -9375,-117
 Albert-Einstein-Str. (Potsdam): Kopfsteinpflaster	Q2+ -12358,-2278 -12330,-2297
 Albert-Einstein-Str. (Potsdam): asphaltiert, im Wohngebiet teils mäßige Stellen, im Wald sehr gut	Q0- -12330,-2297 -12335,-2571 -12317,-2637 -12219,-2760 -12222,-2932
 Schloßstr. (Potsdam): Kopfsteinpflaster	Q2 -12923,-1558 -12882,-1565 -12776,-1575
@@ -3597,9 +3597,10 @@ Platz der Befreiung: Betonplatten	Q0- 68960,73751 69121,73868
 Am Palais Lichtenau: noch unbefestigt, teilweise ist die Fahrbahn wegen Bauarbeiten gesperrt	Q2 -12514,-340 -12488,-451
 #: by: Benno Koch & osm
 Rieth - Warsin: Asphalt	Q0 62674,144822 62975,144800 63254,144654 63777,144581 63921,144506
-#: XXX wie sieht die endgültige Fahrbahnbeschaffenheit aus?
-#: last_checked: 2015-03-07
-Fritz-Rumpf-Str. (Potsdam): provisorischer Asphalt	Q1 -11307,133 -11388,270
+#: XXX wie sieht die endgültige Fahrbahnbeschaffenheit aus? (vermutlich Betonpflastersteine)
+#: last_checked: 2015-12-05
+#: check_frequency: 90d
+Fritz-Rumpf-Str. (Potsdam): provisorischer Asphalt	Q1 -11307,133 -11418,334
 Neu Hartmannsdorf - Hartmannsdorf: asphaltiert	Q0 40652,-4743 40568,-4760 40522,-4829 40476,-4853 40457,-4917 40592,-4990 40612,-5025 40647,-5264 40560,-5319 40482,-5386 40346,-5396 40346,-5451 40351,-5535 40061,-5668 39787,-5750
 Dunkerplatz (Rathenow): Asphalt	Q0 -61292,20298 -61206,20341
 Klosterwalde - Kreuzkrug: Asphalt	Q0 21572,83791 21990,83613
@@ -5104,9 +5105,10 @@ Am Nuthetal: guter Beton	Q1+ -9752,-3958 -9647,-3958 -9544,-3913
 #: by: ^^^
 #: by: Ulrike Orlowski vvv
 Tannenstr.: schlechtes Kopfsteinpflaster	Q3 -9346,176 -9389,170 -9434,164 -9539,147
-Am Böttcherberg: schlechtes Kopfsteinpflaster	Q3 -9527,485 -9544,463 -9539,434 -9526,336 -9539,147 -9541,97 -9568,56
+Am Böttcherberg: schlechtes Kopfsteinpflaster	Q3 -9527,485 -9544,463 -9539,434 -9526,336 -9539,147 -9541,97 -9565,62
 Louis-Nathan-Allee: fester Sandweg	Q2 -9698,-19 -9926,114 -9968,106 -10002,157 -10097,200
 #: by: ^^^
+Am Böttcherberg: Beton	Q0- -9565,62 -9481,85
 #: by: Lydia Weitmann:
 Kleinziethen - Pechsteinstr. (Lichtenrade): mäßiger fester Sandweg	Q2 13506,-2809 12268,-2294
 #: by: Fiedler Katja:

@@ -87,8 +87,8 @@ userdel	3 10123,9233 10198,9405 10306,9640
 userdel	3 10306,9640 10198,9405 10123,9233
 userdel	3 10547,9233 10564,9292 10580,9361
 userdel	3 10580,9361 10564,9292 10547,9233
-userdel	3 10705,9234 10713,9260 10747,9326
-userdel	3 10747,9326 10713,9260 10705,9234
+userdel	3 10705,9234 10713,9260 10749,9342
+userdel	3 10749,9342 10713,9260 10705,9234
 userdel	3 11141,9107 11136,9183 11208,9345 11274,9492
 userdel	3 11274,9492 11208,9345 11136,9183 11141,9107
 userdel	3 11998,8872 11880,8955 11831,8989 11830,8917 11845,8824 11879,8672 11882,8527
@@ -10883,7 +10883,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_007458',
        data  => <<EOF,
-userdel	q4::inwork 10747,9326 10713,9260
+userdel	q4::inwork 10749,9342 10713,9260
 EOF
      },
      { from  => 1198881536, # 2007-12-28 23:38
@@ -16150,7 +16150,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-# REMOVED (hier wird neu gebaut) ---	q4::temp:clock 5897,7337 5810,7337
+	q4::temp:clock 5897,7337 5810,7337
 	q4::temp:clock 5810,7337 5817,7223
 EOF
      },
@@ -18744,7 +18744,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_104132',
        data  => <<EOF,
-userdel	2::inwork 749,2616 725,2702
+userdel	2::inwork 749,2616 720,2718
 EOF
      },
      { from  => 1289800800, # 2010-11-15 07:00
@@ -22596,7 +22596,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
-#: last_checked: 2014-12-06
+#: last_checked: 2015-12-05
 #: check_frequency: 90d
 userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
 EOF
@@ -24526,14 +24526,14 @@ EOF
      },
      { from  => 1442700000, # 2015-09-20 00:00
        until => undef, # XXX
-       text  => 'Königsweg: Bauarbeiten zwischen Am Waldhaus und Lindenthaler Allee, zeitweilige Sperrungen möglich, voraussichtlich ab 21. September 2015',
+       text  => 'Königsweg: Bauarbeiten zwischen Lindenthaler Allee und Clauertstr., zeitweilige Sperrungen möglich',
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.364590.php',
        data  => <<EOF,
 #: XXX Bis wann sind die Bauarbeiten fertig?
-#: last_checked: 2015-09-27
+#: last_checked: 2015-12-05
 #: check_frequency: 30d
-userdel	2::inwork -1303,2003 -1591,1861
+userdel	2::inwork -1298,2017 -1082,2140
 # REMOVED (weitgehend fertig) --- userdel	2::inwork -1591,1861 -1650,1826 -1724,1785 -1805,1740 -1889,1693 -1950,1659 -2043,1608 -2602,1291
 EOF
      },
@@ -24782,8 +24782,8 @@ userdel	1::inwork 19843,7866 19927,7813 20031,7794 20077,7786
 EOF
      },
      { from  => 1449097200, # 2015-12-03 00:00
-       until => 1451602799, # 2015-12-31 23:59
-       text  => 'Rudolf-Rühl-Allee: zwischen An der Wuhlheide und Köpenicker Straße am Bahnübergang wegen Bauarbeiten gesperrt, bis Ende Dezember 2015',
+       until => $isodate2epoch->("2015-12-21 12:00:00"),
+       text  => 'Rudolf-Rühl-Allee: zwischen An der Wuhlheide und Köpenicker Straße am Bahnübergang wegen Bauarbeiten gesperrt, bis 21. Dezember 2015',
        type  => 'gesperrt',
        source_id => '128113',
        data  => <<EOF,

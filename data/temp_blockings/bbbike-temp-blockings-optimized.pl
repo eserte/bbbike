@@ -2101,7 +2101,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        {
-         'data' => '# REMOVED (hier wird neu gebaut) ---	q4::temp:clock 5897,7337 5810,7337
+         'data' => '	q4::temp:clock 5897,7337 5810,7337
 	q4::temp:clock 5810,7337 5817,7223
 ',
          'from' => undef,
@@ -3448,7 +3448,7 @@ userdel	1::temp -13556,-1182 -13643,-1220
        undef,
        {
          'data' => '#: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
-#: last_checked: 2014-12-06
+#: last_checked: 2015-12-05
 #: check_frequency: 90d
 userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
 ',
@@ -3849,15 +3849,15 @@ userdel	q4::inwork; -6861,15129 -6507,15007
        },
        {
          'data' => '#: XXX Bis wann sind die Bauarbeiten fertig?
-#: last_checked: 2015-09-27
+#: last_checked: 2015-12-05
 #: check_frequency: 30d
-userdel	2::inwork -1303,2003 -1591,1861
+userdel	2::inwork -1298,2017 -1082,2140
 # REMOVED (weitgehend fertig) --- userdel	2::inwork -1591,1861 -1650,1826 -1724,1785 -1805,1740 -1889,1693 -1950,1659 -2043,1608 -2602,1291
 ',
          'from' => 1442700000,
          'id' => 2741,
          'source_id' => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.364590.php',
-         'text' => 'Königsweg: Bauarbeiten zwischen Am Waldhaus und Lindenthaler Allee, zeitweilige Sperrungen möglich, voraussichtlich ab 21. September 2015',
+         'text' => 'Königsweg: Bauarbeiten zwischen Lindenthaler Allee und Clauertstr., zeitweilige Sperrungen möglich',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -4031,9 +4031,9 @@ userdel	q3::inwork 12620,9293 12565,9200
          'from' => 1449097200,
          'id' => 2766,
          'source_id' => '128113',
-         'text' => 'Rudolf-Rühl-Allee: zwischen An der Wuhlheide und Köpenicker Straße am Bahnübergang wegen Bauarbeiten gesperrt, bis Ende Dezember 2015',
+         'text' => 'Rudolf-Rühl-Allee: zwischen An der Wuhlheide und Köpenicker Straße am Bahnübergang wegen Bauarbeiten gesperrt, bis 21. Dezember 2015',
          'type' => 'gesperrt',
-         'until' => 1451602799
+         'until' => 1450695600
        }
      
 );
