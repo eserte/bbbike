@@ -1447,7 +1447,7 @@ EOF
 </form>
 
 <!-- should come before commentform to be lower in the layer stack -->
-<div id="editbox" class="boxed" style="position:fixed; top:15px; left:85px; background:white; visibility:hidden; font-size:smaller; ">
+<div id="editbox" class="boxed" style="border-radius:2px; padding:2px; position:fixed; top:18px; right:85px; background:white; visibility:hidden; font-size:smaller; ">
   <a href="javascript:deleteLastPoint()">Letzten Punkt löschen</a>
   <a href="javascript:resetOrUndoRoute()" id="routedellink">Route löschen</a><br/>
   <div id="commentlink" style="display:none;">
