@@ -1067,7 +1067,7 @@ sub build_search_code {
 '; } $code .= '
                 if ($remaining_dist < $nearest_node_dist) {
                     $nearest_node_dist = $remaining_dist;
-                    $nearest_node = $min_node;
+                    $nearest_node = $successor;
                 }
             } else {
                 if ($f < $NODES{$successor}->[HEURISTIC_DIST]) {
