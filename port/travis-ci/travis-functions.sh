@@ -75,7 +75,11 @@ install_perl_58_dependencies() {
     if [ "$PERLBREW_PERL" = "5.8" -a ! "$USE_SYSTEM_PERL" = "1" ]
     then
 	# DBD::XBase versions between 1.00..1.05 explicitely want Perl 5.10.0 as a minimum. See https://rt.cpan.org/Ticket/Display.html?id=88873
-	cpanm --quiet --notest DBD::XBase~"!=1.00, !=1.01, !=1.02, !=1.03, !=1.04, !=1.05"
+	#
+	# Until cpanminus 1.7032 (approx.) it was possible to specify
+	# DBD::XBase~"!=1.00, !=1.01, !=1.02, !=1.03, !=1.04, !=1.05"
+	# but now one has to use exact version matches to load something from BackPAN
+	cpanm --quiet --notest DBD::XBase~"==0.234"
 	# Perl 5.8.9's File::Path has a version with underscores, and this is causing warnings and failures in the test suite
 	cpanm --quiet --notest File::Path
 	# Wrong version specification in DB_File's Makefile.PL, see https://rt.cpan.org/Ticket/Display.html?id=100844
