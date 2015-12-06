@@ -203,6 +203,8 @@ WWW::Mechanize	- Für Testen des CGI-Interfaces
 
 WWW::Mechanize::FormFiller	- Für Testen des CGI-Interfaces
 
+LWP::Protocol::https	- Zum Testen von https-URLs (z.B. Download-URLs)
+
 Devel::Leak	- Für Memory-Leak-Tests
 
 Text::Table

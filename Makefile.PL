@@ -254,6 +254,8 @@ my @req_table =
    'Für Testen des CGI-Interfaces'],
   [qw/WWW::Mechanize::FormFiller	0	all	2	test/,
    'Für Testen des CGI-Interfaces'],
+  [qw/LWP::Protocol::https	0	all	0	test/,
+   'Zum Testen von https-URLs (z.B. Download-URLs)'],
   [qw/Devel::Leak	0	all	0	test/,
    'Für Memory-Leak-Tests'],
   [qw/Text::Table	0	all	0	devel/],
