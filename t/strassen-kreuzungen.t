@@ -216,11 +216,11 @@ for my $kr ($kr1, $kr2) {
     # Südstern, Fußgänger
     if ($kr == $kr2) {
 	{
-	    my %situation = situation_at_point_inorder($kr, qw(10903,9475 10747,9326 10710,9309));
+	    my %situation = situation_at_point_inorder($kr, qw(10905,9472 10749,9342 10741,9344));
 	    is($situation{handicap_cat}, 'q3', 'Suedstern: q3 begins');
 	}
 	{
-	    my %situation = situation_at_point_inorder($kr, qw(10710,9309 10747,9326 10903,9475));
+	    my %situation = situation_at_point_inorder($kr, qw(10741,9344 10749,9342 10905,9472));
 	    is($situation{handicap_cat}, 'q0', 'Suedstern: q3 ends, q0 begins');
 	}
     }
@@ -262,7 +262,7 @@ for my $kr ($kr1, $kr2) {
 
     {
 	# Körtestr./Südstern
-	my %situation = situation_at_point_inorder($kr, qw(10903,9475 10747,9326 10713,9260));
+	my %situation = situation_at_point_inorder($kr, qw(10905,9472 10749,9342 10713,9260));
 	is($situation{action}, '', q{Should be "straight", because it's the main street});
     }
 
