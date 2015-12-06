@@ -21,6 +21,8 @@ before_script:
  - wrapper start_xserver
  - wrapper init_webserver_environment
  - wrapper init_data
+script:
+ - perl Makefile.PL && make test HARNESS_OPTIONS=j4
 language: perl
 matrix:
   include:
