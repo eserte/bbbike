@@ -1103,10 +1103,10 @@ die letzten 50 Meter sind benutzungspflichtig	RW1; 18225,7004 18010,7133
 	RW3;RW3 13819,9333 13849,9310
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
-#: XXX wegen Bauarbeiten an der BAB100 sind die Radspuren weitgehend aufgehoben (früher RW4;RW4)
-#: last_checked: 2015-11-14
-#: check_frequency: 60d
-	RW0;RW0 14151,8967 14363,8738
+#: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
+#: last_checked: 2015-12-07
+#: check_frequency: 90d
+	RW8;RW2 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
 	RW4;RW3 15053,7966 15221,7778
 	RW1;RW1 8049,15470 7975,15500 7966,15571
@@ -1498,6 +1498,8 @@ die ersten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	
 #: last_checked: 2015-12-01
 	RW0; 13651,11731 13603,11538
 	RW3;RW2 13588,11490 13603,11538
+#: note: provisorischer Radstreifen
+	RW3; 13603,11538 13651,11731
 	RW4;RW4 14026,10869 14024,10861 14011,10812
 	RW1;RW1 14134,11272 14096,11134 14076,11057 14043,10928 14026,10869
 die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409

@@ -10,6 +10,7 @@ Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3:
 Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
 Schützenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10116,11485 9949,11470
 Kommandantenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10330,11422 10136,11529
+Beuthstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10201,11631 10235,11610 10330,11422
 Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9935,11566 9990,11571
 Legiendamm: Sperrung der Fahrbahn am Engelbecken	q4::inwork 11323,11164 11337,11197 11349,11227
 Michaelkirchplatz: Sperrung der Fahrbahn am Engelbecken	q2::inwork 11415,11392 11349,11227
@@ -1155,7 +1156,7 @@ Grimmstr. [ehemaliges Urbankrankenhaus]: Wohngebiet	q2 11072,9711 11040,9724 110
 Selkestr.: Fußgänger, Bordsteine	q3 12722,7261 12741,7224
 (Schildhornstr. - Treitschkestr./Hackerstr.): einige Fußgänger	q1 4937,6205 4997,6331 5015,6363 4999,6397
 Eyke-von-Repkow-Platz: einige Fußgänger, Bordsteine	q3 5556,12536 5531,12501
-(Alexandrinenstr. - Wassertorstr.): Fußgänger	q1 10293,10645 10401,10601 10431,10606 10492,10582
+(Alexandrinenstr. - Wassertorstr.): Fußgänger, Kurven	q1 10293,10645 10401,10601 10431,10606 10492,10582
 (Weg an der Südpanke): einige Fußgänger	q1 8478,13941 8447,13983 8380,14024 8344,14133 8307,14175 8294,14194
 (Weg an der Südpanke - Am Pankepark): einige Fußgänger, Rampe	q2 8307,14175 8323,14142
 (Weg an der Südpanke - Am Pankepark): einige Fußgänger	q1 8323,14142 8282,14116
@@ -2368,7 +2369,6 @@ Fuchsbergeweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 205
 (Marchlewskistr. - Gubener Str.): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13168,12219 13173,12202 13097,12166
 Boppstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 11785,9437 11560,9524
 Pitschener Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 21769,-432 21719,-397 21637,-381
-Herrfurthstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 11979,8014 11833,7980
 Dankratstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 21105,9538 20943,9543
 Havermannstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13803,4932 13892,4955
 Rambowstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13853,4759 13825,4850 13803,4932

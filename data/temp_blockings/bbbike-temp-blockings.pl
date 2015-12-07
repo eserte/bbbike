@@ -24210,7 +24210,7 @@ EOF
 #: XXX die Qualität wird nach den Bauarbeiten vermutlich besser sein, teilweise auch schlechter (wassergebundene Decke statt Asphalt) vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.297071.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.295591.php
-#: last_checked: 2015-11-17 vvv
+#: last_checked: 2015-12-07 vvv
 userdel	2::inwork 14318,9688 14443,9731
 # REMOVED --- userdel	2::inwork 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
 userdel	2::inwork 14575,9648 14645,9710 14697,9726

@@ -2797,7 +2797,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id: FISCHERINSEL-2015 vvv
 #: source_id: IM_024012 vvv
 #: source_id: 2147339543 vvv
-#: last_checked: 2015-11-08 vvv
+#: last_checked: 2015-12-07 vvv
 #: next_check: 2015-12-20 vvv
 	F 10703,11837
 	F 10656,11887
@@ -2970,10 +2970,14 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -9942,21
 	X -12655,-1714
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
-#: next_check_id: KIEFHOLZ-2015
-#: last_checked: 2015-11-14
-#: check_frequency: 60d
+#: next_check_id: KIEFHOLZ-2015 vvv
+#: last_checked: 2015-12-07 vvv
+#: check_frequency: 90d vvv
 	X::inwork 14151,8967
+	X::inwork 14363,8738
+#: check_frequency ^^^
+#: last_checked ^^^
+#: next_check_id ^^^
 ################################################################################
 #: note: Ampeln elsewhere vvv
 	B 19316,50384

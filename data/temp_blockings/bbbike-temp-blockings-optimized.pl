@@ -2344,34 +2344,7 @@ userdel	3 8374,11479 8389,11378 8427,11365
          'type' => 'gesperrt',
          'until' => 1451257199
        },
-       {
-         'data' => 'userdel	2::temp 13416,7712 13426,7674
-userdel	2::temp 13416,7712 13378,7695 13288,7653
-userdel	2::temp 13426,7674 13400,7642 13303,7622
-userdel	2::temp 12969,7610 13100,7626 13177,7644
-userdel	2::temp 13188,7590 13177,7644
-userdel	2::temp 13188,7590 13303,7622
-userdel	2::temp 13288,7653 13303,7622
-userdel	2::temp 13288,7653 13177,7644
-userdel	2::temp 13288,7653 13278,7673 13245,7742
-',
-         'from' => 1449097200,
-         'id' => 1998,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              4,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachtsmarkt-deutschland.de/weihnachtsmarkt-berlin-alt-rixdorf.html',
-         'text' => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (04.12.2015 - 06.12.2015)',
-         'type' => 'gesperrt',
-         'until' => 1449442799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3267,26 +3240,7 @@ userdel	2::night 17671,13132 17684,13133
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 9986,13412 10317,13248
-',
-         'from' => 1449270000,
-         'id' => 2515,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              6,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (5.12.2015 - 6.12.2015)',
-         'type' => 'gesperrt',
-         'until' => 1449442799
-       },
+       undef,
        {
          'data' => 'userdel	2::temp 9986,13412 10317,13248
 ',
@@ -3328,26 +3282,7 @@ userdel	2::night 17671,13132 17684,13133
          'until' => 1450652399
        },
        undef,
-       {
-         'data' => 'userdel	2::temp 11317,14564 11255,14572 11155,14554
-',
-         'from' => 1449313200,
-         'id' => 2519,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              6,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 6. Dezember 2015, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1449424800
-       },
+       undef,
        {
          'data' => 'userdel	2::temp 11317,14564 11255,14572 11155,14554
 ',
@@ -3745,7 +3680,7 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
          'data' => '#: XXX die Qualität wird nach den Bauarbeiten vermutlich besser sein, teilweise auch schlechter (wassergebundene Decke statt Asphalt) vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.297071.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.295591.php
-#: last_checked: 2015-11-17 vvv
+#: last_checked: 2015-12-07 vvv
 userdel	2::inwork 14318,9688 14443,9731
 # REMOVED --- userdel	2::inwork 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
 userdel	2::inwork 14575,9648 14645,9710 14697,9726
@@ -3908,36 +3843,9 @@ userdel	2::inwork -1298,2017 -1082,2140
        undef,
        undef,
        undef,
-       {
-         'data' => '	q4::inwork; 13895,11663 13954,11647 13996,11631 14065,11605 14211,11552
-# REMOVED ---	q4::inwork; 14211,11552 14305,11514
-# REMOVED ---	q3::inwork 13954,11647 13981,11746
-# REMOVED ---	q3::inwork 14065,11605 14102,11715
-	q4::inwork 14065,11605 14049,11553
-	q4::inwork 13996,11631 13992,11605 14031,11569
-	q3::inwork 13954,11647 13888,11405
-',
-         'from' => undef,
-         'id' => 2753,
-         'source_id' => 'IM_026644',
-         'text' => 'Wühlischstr.: Fahrbahn zwischen Libauer Str. und Seumestr. in Richtung Osten gesperrt, auch ist das Überqueren der Fahrbahn teilweise nicht möglich, bis 07.12.2015',
-         'type' => 'handicap',
-         'until' => 1449457200
-       },
        undef,
-       {
-         'data' => '	q4::inwork; 14887,11929 14835,11840 14802,11784 14794,11770 14710,11626 14639,11512
-# REMOVED ---	q3::inwork 14645,11670 14710,11626
-	q3::inwork 14710,11626 14764,11591
-# REMOVED ---	q3::inwork 14708,11820 14794,11770
-	q3::inwork 14794,11770 14856,11740
-',
-         'from' => 1446303841,
-         'id' => 2755,
-         'text' => 'Weichselstr./Holteistr.: Bauarbeiten, Fahrbahn Richtung Süden gesperrt, auch ist das Überqueren der Fahrbahn teilweise nicht möglich, bis 07.12.2015',
-         'type' => 'handicap',
-         'until' => 1449457200
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -3981,17 +3889,7 @@ userdel	q4::inwork; 8336,10829 8300,10823 8281,10791 8199,10634
          'type' => 'gesperrt',
          'until' => 1454281200
        },
-       {
-         'data' => '#: source_id: 2147339577
-userdel	q3::inwork; 14218,13834 14261,13932 14298,14015 14358,14155 14464,14216 14658,14328 14667,14336 14721,14379 14754,14406 14990,14537 15066,14579
-',
-         'from' => 1446953400,
-         'id' => 2762,
-         'source_id' => 'IM_026700',
-         'text' => 'Hohenschönhauser Str./Oderbruchstr.: Baustelle, zwischen Landsberger Allee und Weißenseer Weg gesperrt, Radfahrer dürfen den Gehweg benutzen, 09.11.2015 04:30 Uhr bis 07.12.2015 04:30 Uhr ',
-         'type' => 'handicap',
-         'until' => 1449459000
-       },
+       undef,
        {
          'data' => 'userdel	q3::temp 11139,13008 11064,12910 10970,12822
 userdel	q4::temp 11064,12910 11134,12793
