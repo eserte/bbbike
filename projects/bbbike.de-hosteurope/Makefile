@@ -820,16 +820,6 @@ post-deploy-info:
 .endif
 .endif
 
-post-automatic-deploy-info:
-	@echo "**********************************************************************"
-	@echo "Consider to do the following things now:"
-	@echo "* Push BBBike git repo to github"
-	@echo "    git push"
-	@echo "* Send all messages in GNUS' drafts folder"
-	@echo "* Set tags:"
-	@echo "    ${MAKE} after-deployment-set-tags"
-	@echo ""
-
 # XXX This target only supports two tags per day...
 after-deployment-set-tags:
 	@[ `git tag -l deployment/bbbikede/${TODAY} | wc -l` = 0 ] && \
@@ -837,7 +827,9 @@ after-deployment-set-tags:
 	    (echo "Create git tag deployment/bbbikede/${TODAY}_2 ..."; git tag -a -m "automatic deployment" deployment/bbbikede/${TODAY}_2)
 	git tag -f deployment/bbbikede/current
 
-automatic-deployment: automatic-deployment--check-prerequisites
+automatic-deployment: automatic-deployment--check-prerequisites automatic-deployment--run after-deployment-set-tags
+
+automatic-deployment--run:
 	-@${XTERM_CONF_TITLE} "BBBike pre-deployment git update"
 	$(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -update
 	-@perl -MTerm::ANSIColor=colored -e 'print colored("Automatic deployment continues...", "black on_green"), "\n"'
@@ -849,9 +841,7 @@ automatic-deployment: automatic-deployment--check-prerequisites
 	cd ${BBBIKE_ROOT_DIR}/misc && slaymake rsync-fragezeichen-list BBBIKE_HOSTEUROPE_HOST=${BBBIKE_HOSTEUROPE_HOST} BBBIKE_HOSTEUROPE_USER=${BBBIKE_HOSTEUROPE_USER}
 	-( tkmessage -center "BBBike deployment finished, possibly interactive stuff follows..." &)
 	-@${XTERM_CONF_TITLE} "BBBike post-deployment git update"
-	$(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -after-sync
-# XXX for some reason TARGET=${TARGET} does not work here...
-	-@${MAKE} post-automatic-deploy-info TARGET=${TARGET_LIVE}
+	$(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -after-sync -unconfirmed
 	-@${XTERM_CONF_TITLE} "BBBike deployment finished"
 
 automatic-deployment-temp-blockings:
@@ -860,7 +850,7 @@ automatic-deployment-temp-blockings:
 	-@${XTERM_CONF_TITLE} "BBBike temp-blockings deployment"
 	${MAKE} deploy-temp-blockings
 	-@${XTERM_CONF_TITLE} "BBBike post-deployment git update"
-	$(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -after-sync
+	$(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -after-sync -unconfirmed
 	-@${XTERM_CONF_TITLE} "BBBike temp-blockings deployment finished"
 
 automatic-deployment--check-prerequisites:
