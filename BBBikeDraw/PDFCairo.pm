@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2011,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2011,2014,2015 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -952,3 +952,32 @@ sub get_text_dimensions {
 }
 
 1;
+
+__END__
+
+=head1 NAME
+
+BBBikeDraw::PDFCairo - a BBBike renderer for PDF files using Cairo
+
+=head1 DESCRIPTION
+
+A L<BBBikeDraw> implementation for generating BBBike maps as PDF files
+using L<Cairo> and L<Pango>.
+
+=head2 GLOBAL VARIABLES
+
+=over
+
+=item C<$DO_COMPRESS>
+
+If set to true, then the PDF file is additionally compressed using
+L<BBBikeDraw::PDFUtil>. Please read L<BBBikeDraw::PDFUtil/COMPRESSION>
+about byte savings and performance losses doing so.
+
+=back
+
+=head1 SEE ALSO
+
+L<BBBikeDraw::PDF>
+
+=cut
