@@ -338,7 +338,7 @@ DEB_DEVEL=	git-core bison byacc flex g++ apt-show-versions freebsd-buildutils gc
 DEB_TEST=	libimage-info-perl libwww-mechanize-perl libemail-mime-perl
 # Note: libpango-perl not available in lenny, only squeeze
 DEB_DRAW=	libgd2-xpm libgd2-xpm-dev \
-		pdftk netpbm libgd-gd2-perl ttf-bitstream-vera ttf-dejavu \
+		netpbm libgd-gd2-perl ttf-bitstream-vera ttf-dejavu \
 		libpdf-create-perl libcairo-perl libpango-perl libfont-afm-perl \
 		libtest-number-delta-perl
 DEB_DRAW_OPTIONAL= perlmagick libimager-perl imagemagick libsvg-perl
@@ -404,7 +404,7 @@ DEB_ALL=	libalgorithm-diff-perl libapache-session-perl libarchive-zip-perl \
 		libxml-parser-perl libxml-sax-perl libxml-simple-perl libxml-twig-perl \
 		libyaml-perl libyaml-syck-perl perl perl-modules perl-tk perlmagick \
 		libhtml-format-perl libmath-round-perl libgdal-perl ttf-dejavu \
-		libcairo-perl libpango-perl pdftk mapserver-bin cgi-mapserver \
+		libcairo-perl libpango-perl mapserver-bin cgi-mapserver \
 		libdigest-md5-perl libmodule-metadata-perl
 
 # XXX Does not work, see below
