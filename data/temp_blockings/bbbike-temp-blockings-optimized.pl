@@ -3707,7 +3707,35 @@ userdel	2::inwork 14674,9764 14697,9726 14910,9643 15052,9584 15174,9554 15321,9
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: laut fritz _Vollsperrung_ bis einschließlich _Samstag_ 
+userdel	q4::inwork; 8634,10426 8384,10507 8525,10626
+userdel	q4::inwork; 8348,10636 8335,10518 8350,10499
+',
+         'from' => 1453071600,
+         'id' => 2718,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              8,
+                              'months',
+                              1
+                            ],
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              7
+                            ]
+                          ],
+         'source_id' => 'https://www.berlin.de/events/fashion-week/modemessen/2255617-2251352-modemesse-premium.html',
+         'text' => 'Schöneberger Str. und Luckenwalder Str.: voraussichtlich wegen der Premium Berlin Einbahnstraßen, 19.01.2016-21.01.2016',
+         'type' => 'handicap',
+         'until' => 1453417199
+       },
        {
          'data' => '	2::inwork 9998,16547 9982,16527 9959,16510
 ',

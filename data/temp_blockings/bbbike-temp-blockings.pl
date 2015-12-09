@@ -24303,12 +24303,12 @@ EOF
 userdel	2::inwork 15261,10738 15272,10790
 EOF
      },
-     { from  => 1436220000, # 2015-07-07 00:00
-       until => $isodate2epoch->("2015-07-11 23:59:59"),
+     { from  => $isodate2epoch->("2016-01-18 00:00:00"),
+       until => $isodate2epoch->("2016-01-21 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 1],
                        ['yearly', days => 1, months => 7]],
-       text  => 'Schöneberger Str. und Luckenwalder Str.: wegen der Premium Berlin Einbahnstraßen, 08.07.2015-11.07.2015',
+       text  => 'Schöneberger Str. und Luckenwalder Str.: voraussichtlich wegen der Premium Berlin Einbahnstraßen, 19.01.2016-21.01.2016',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/events/fashion-week/modemessen/2255617-2251352-modemesse-premium.html',
        data  => <<EOF,
