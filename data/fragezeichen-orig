@@ -591,12 +591,13 @@ Sternbergpromenade: Umgestaltung, Havel-Radweg wird hier offiziell entlanggeführ
 #: next_check_id: NIZZASTR-2014 vvv
 #: last_checked: 2015-10-04 vvv
 #: check_frequency: 60d vvv
-#: osm_watch: way id="344108072" version="3"
+#: osm_watch: way id="344108072" version="4"
 #: XXX laut osm schon fertig gestellt
 #: XXX Planstraße A -> Marseillestraße
 Marseillestr. - Dr.-Markus-Str.: Qualität? wann ist die Fertigstellung? wird hier nur ein Fußweg sein?	?::inwork 12364,21623 12402,21537
 # REMOVED --- Marseillestr.: Qualität? wann ist die Fertigstellung? wird die Anbindung an die Dr.-Markus-Str. nur ein Fußweg sein?	?::inwork 12402,21537 12404,21532 12411,21515 12443,21439
-#: osm_watch: way id="344144856" version="1"
+#: osm_watch: way id="344144856" version="2"
+#: XXX_osm laut osm offen
 Marseillestr. - Straße 160: Qualität? wann ist die Fertigstellung?	?::inwork 12443,21439 12547,21372
 # REMOVED --- : XXX Planstraße B -> Lyonstraße -> Lyonstr.|Französisch Buchholz|13127
 # REMOVED --- : XXX Planstraße C und D -> Nizzastraße -> Nizzastr.|Französisch Buchholz|13127
@@ -1359,7 +1360,7 @@ Seegefelder Weg: Bau von Radspuren	?::projected -6507,15007 -6861,15129
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2015
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/46re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: note: Privatstraße, aber ausdrücklich "öffentlich zugänglich"
-#: XXX fehlt in Berlin.coords.data
+#: XXX fehlt in Berlin.coords.data, PLZ=10829
 #: XXX Wirksamkeit der Benennung: 2015-10-10
 #: last_checked: 2015-12-05 (sieht noch privat aus)
 EUREF-Campus: Innenfläche wird benannt; genaue Wegführung, Qualität?	? 7250,8223 7137,8206 7281,8485
