@@ -1010,6 +1010,47 @@ sub ampel_display {
 sub ampel_open {
     my $base = "ampelschaltung-orig";
     require Ampelschaltung;
+
+    # XXX temporary hack to merge old manual ampelschaltung-orig and
+    # new automatic file from wpt files. See
+    # ~/src/bbbike-aux/misc/do-ampelschaltung.pl for instructions.
+    my $add_ampelschaltung_file = '/tmp/ampelschaltung-add-orig';
+    if (-r $add_ampelschaltung_file) {
+	main::status_message("Merge $add_ampelschaltung_file into $base", 'info');
+	my %coord2data;
+	for my $file ("$main::datadir/$base", $add_ampelschaltung_file) {
+	    open my $fh, $file or die "Can't open file $file: $!";
+	    while(<$fh>) {
+		chomp;
+		my($coord, $crossing, @fields) = split /\t/, $_;
+		if (!exists $coord2data{$coord}) {
+		    $coord2data{$coord} = [$crossing, @fields];
+		} else {
+		    push @{ $coord2data{$coord} }, @fields;
+		}
+	    }
+	}
+	my $new_file = '/tmp/ampelschaltung-merged-orig';
+	open my $ofh, '>', $new_file
+	    or die "Can't write $new_file: $!";
+	for my $coord (sort keys %coord2data) {
+	    print $ofh join("\t", $coord,
+			    map  { $_->[1] } 
+			    sort { $a->[0] cmp $b->[0] }
+			    map  {
+				my @f = split /,/, $_;
+				[$f[8]||'', $_]
+			    } @{ $coord2data{$coord} }), "\n";
+	}
+	close $ofh
+	    or die "Error while writing $new_file: $!";
+	require File::Basename;
+	$base = File::Basename::basename($new_file);
+    }
+
+    local @Strassen::datadirs = @Strassen::datadirs;
+    push @Strassen::datadirs, '/tmp'; # XXX ugly hack to accept the merged file --- used at least twice, in the ->open call and for setting $ampelschaltung_file
+
     $ampelschaltung_obj = new Ampelschaltung;
     $ampelschaltung_obj->open($base, UpdateCycle => 1);
 
