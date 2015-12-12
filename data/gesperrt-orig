@@ -26,7 +26,7 @@ am Hackeschen Markt (Nord)	1 9932,13109 10077,13100 10220,13098 10264,13097
 Dennewitzplatz	1 7866,9918 7813,10112
 Dennewitzplatz	1 7813,10112 7906,10098
 # REMOVED (weitgehend realisiert, nur die Verknüpfung an der Dennewitzstr. fehlt noch) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20131011.1230.390248.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4679 --- #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_07_17.pdf?start&ts=1405676729&file=strassenbauliste_stand_2014_07_17.pdf (Ende der Bauarbeiten) --- #: XXX Einrichtung eines offiziellen Zweirichtungradwegs, dann wird "q3" wegfallen -> gesperrt_car ---#: last_checked: 2014-08-30 (asphaltierte Radwege existieren bis auf die Verknüpfung zur Dennewitzstr.) --- #: check_frequency: 7d --- Dennewitzplatz	1s:q3 7906,10098 7866,9918
-Winterfeldtplatz	1 7049,9833 7038,10087
+Winterfeldtplatz	1 7049,9833 7038,10088
 Winterfeldtplatz	1 7080,10098 7126,9825
 Moritzplatz	1 10854,10854 10832,10910 10885,10928 10906,10874 10854,10854
 Segitzdamm etc.	1 10923,10113 10988,10268 10975,10334
@@ -2637,7 +2637,7 @@ Drängelgitter	BNP:3 31665,48997
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
 # 
 #: next_check_id: SCHOENEBERGERSCHLEIFE-2015
-#: last_checked: 2015-12-05
+#: last_checked: 2015-12-11
 #: check_frequency: 14d
 (Bautzener Str. - Südkreuz): in Bau	2::inwork 8204,9001 8200,8920 7998,8317
 # 
@@ -2788,7 +2788,7 @@ Uferstr. (Niederschöneweide): abgesperrt	2::inwork 17639,6227 17843,6083
 #: source_id: IM_023816 vvv
 #: source_id: 2147339541 vvv
 #: XXX vermutlich bis März 2016 andauernd, laut Schild bis Februar 2016
-#: last_checked: 2015-11-22 vvv
+#: last_checked: 2015-12-11 vvv
 #: next_check: 2016-02-01 vvv
 Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081
 Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081

@@ -24161,7 +24161,7 @@ EOF
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150430.1120.401849.html
 #: last_checked: 2015-09-09
 	q4::inwork; 7033,10328 7060,10221 7080,10098
-# REMOVED ---	q4::inwork 7080,10098 7038,10087
+# REMOVED ---	q4::inwork 7080,10098 7038,10088
 	q3::inwork 7080,10098 7167,10074
 EOF
      },
@@ -24724,7 +24724,7 @@ EOF
      },
      { from  => 1446332400, # 2015-11-01 00:00
        until => 1454281200, # 2016-02-01 00:00
-       text  => 'Großbeerenstr.: Bauarbeiten, Überqueren der Straße an der Wartenbergstr. und Obentrautstr. nicht möglich, voraussichtlich vom 02.11.2015 bis 31.01.2016 ',
+       text  => 'Großbeerenstr.: Bauarbeiten, Überqueren der Straße an der Obentrautstr. nicht möglich, voraussichtlich vom 02.11.2015 bis 31.01.2016 ',
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.394109.php',
        data  => <<EOF,
@@ -24732,11 +24732,13 @@ EOF
 	3 8783,10166 9108,10101 9277,10057
 	3 9277,10057 9108,10101 8783,10166
 	3 9277,10057 9108,10101 9073,9915
-	3 8783,10166 9108,10101 9145,10290
-	3 9073,9915 9108,10101 8783,10166
-	3 9145,10290 9108,10101 9277,10057
-	3 9044,9753 9073,9915 8780,9968
-	3 8780,9968 9073,9915 9108,10101
+	3 9277,10057 9108,10101 9145,10290
+	3 9073,9915 9108,10101 9277,10057
+# REMOVED ---	3 8783,10166 9108,10101 9145,10290
+# REMOVED ---	3 9073,9915 9108,10101 8783,10166
+# REMOVED ---	3 9145,10290 9108,10101 9277,10057
+# REMOVED ---	3 9044,9753 9073,9915 8780,9968
+# REMOVED ---	3 8780,9968 9073,9915 9108,10101
 EOF
      },
      { from  => 1446953400, # 2015-11-08 04:30
@@ -24787,6 +24789,7 @@ EOF
        type  => 'gesperrt',
        source_id => '128113',
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.421075.php
 userdel	2::inwork 20635,7119 20722,6971
 EOF
      },

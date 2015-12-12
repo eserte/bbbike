@@ -91,7 +91,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
 #: XXX Baumaßnahme 2.28 (Realisierung nach 2011) 
-#: last_checked: 2015-10-12
+#: last_checked: 2015-12-11
 #: check_frequency: 90d
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
@@ -613,6 +613,7 @@ Toulonstr.: Verkehrsberuhigt?	?::inwork 12404,21532 12480,21560
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036978486193/978486193/00069082/82-Anlagen/02/BenennungsabsichtfuereinenPrivatweggemaessBeba.pdf
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4130
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file?y=2015
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: osm_watch: way id="344108078" version="1"
 Rennesstr.: genaue Lage, Qualität?	?::projected 12411,21515 12422,21492 12469,21507
 # REMOVED (einzelne Straßen aufgeführt) --- Bebauungsplan XIX-48b: neue Plan- und Privatstraßen werden erstellt	?::inwork 12337,20954 12459,21010 12562,21055 12547,21372 12495,21670 12172,21545 12209,21448 12189,21337 12168,21218 12255,21083 12337,20954
@@ -777,7 +778,7 @@ XXIII-4a: hier wird eine Straße entstehen, Straßenname, Qualität?	?::projected 2
 #: XXX evtl. den Kopfsteinpflasterabschnitt entfernen? Oder bleibt dieser auch bestehen?
 #: XXX ggfs. culdesac eintragen/entfernen
 #: XXX gehört zu Tempelhof-Schöneberg
-#: last_checked: 2015-11-20
+#: last_checked: 2015-12-11
 #: check_frequency: 90d
 #: priority: #A
 Am Lokdepot: wie wird die Wegeverbindung hier nach den Bauarbeiten aussehen?	?::inwork 8405,8994 8409,8904 8390,8879 8389,9017
@@ -857,7 +858,7 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 # 
 #: by: http://www.bwb.de/content/language1/html/10337.php#11671
 #: osm_watch: way id="75509950" version="11"
-#: last_checked: 2015-12-05
+#: last_checked: 2015-12-11
 #: check_frequency: 60d
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,9775 12074,9689 12066,9558
 #: by: ^^^
@@ -867,7 +868,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,977
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="13"
-#: last_checked: 2015-12-07
+#: last_checked: 2015-12-11
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
@@ -1041,7 +1042,7 @@ Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Brücke 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150119.0945.400904.html (Fertigstellung ist im Herbst 2015 geplant)
 #: XXX es wird noch einen parallelen Weg zwischen Monumentenstr. und Kolonnenstr. auf der Hangoberkante geben
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file?y=2015 (Widmung als Grünanlage)
-#: last_checked: 2015-12-05 (bereits asphaltiert)
+#: last_checked: 2015-12-11 (bereits asphaltiert)
 #: check_frequency: 14d
 #: priority: #A
 Radweg Berlin-Leipzig, Abschnitt Monumentenstr. - Alfred-Lion-Steg: Realisierung bis Herbst 2015	?::projected 8204,9001 8200,8920 7998,8317
@@ -1284,10 +1285,12 @@ Am Kirchendreieck: Lage der Straße? Qualität?	? 23922,13085 23960,13325
 # - XXX_prog- und XXX_indoor-Einträge
 # 
 # 
+Am CleanTech Business Park: existiert hier ein Parkweg? Qualität? Nachts beleuchtet? Führt der Weg Richtung Norden noch weiter?	? 19647,16633 19601,16679 19631,16704 19757,17037 19780,17053 19845,17235 19907,17429
+# 
 #: XXX Wird sich durch die Baumaßnahmen was ändern? Ende der Bauarbeiten: 30.04.2016 vvv
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.415646.php
-#: last_checked: 2015-12-05 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2015-12-11 vvv
+#: check_frequency: 30d vvv
 Görlitzer Park: Baumaßnahmen	?::inwork 12608,10294 12580,10252
 Görlitzer Park: Baumaßnahmen	?::inwork 12767,10216 12763,10207 12757,10197
 Görlitzer Park: Baumaßnahmen	?::inwork 12905,10143 12901,10134 12869,10071
@@ -1373,8 +1376,9 @@ EUREF-Campus: Innenfläche wird benannt; genaue Wegführung, Qualität?	? 7250,8223
 # REMOVED (nein) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20150723.1925.402307.html --- #: XXX Endedatum laut fritz 2015-08-28, laut Pressemitteilung: 2015-09-30 --- #: next_check: 2015-09-30 --- Weißenseer Weg: wird der Radweg nach den Bauarbeiten besser sein?	? 14843,15007 14959,14752
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5207
+#: XXX angestrebt zum 2016-07-05
 #: last_checked: 2015-11-01
-#: next_check: 2015-12-31
+#: next_check: 2016-07-05
 Parkweg: Umbenennung in Bernhard-Langwaldt-Weg?	? 14652,10201 14626,10162 14597,10129 14558,10082 14453,9929 14448,9922 14404,9847 14361,9772 14318,9688
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4094
@@ -1408,6 +1412,7 @@ Mauerweg im Spandauer Forst: Erneuerung	?::projected -3497,20003 -3652,20100 -42
 # 
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6817
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2015
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: XXX sieht man schon Schilder? evtl. auch weiter hinten gelegen
 #: XXX fehlt in Berlin.coords.data
 #: last_checked: 2015-12-04 (keine Schilder)
@@ -2136,7 +2141,7 @@ Planstraßen im Marienhain: Straßennamen? Qualität?	? 22771,3151 22476,3118 22485
 #: next_check: 2015-10-01
 #: XXX Straße ist asphaltiert
 #: XXX fehlt in Berlin.coords.data, PLZ=12681
-Clara-Immerwahr-Str.: Wann wird die Straße eröffnet?	?::inwork 19202,17471 19546,17351 19546,17351 19798,17263 19913,17196
+Clara-Immerwahr-Str.: Wann wird die Straße eröffnet?	?::inwork 19202,17471 19546,17351 19546,17351 19798,17263 19845,17235 19913,17196
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/21re.pdf/file?y=2015
 #: XXX Straße ist asphaltiert
 #: XXX fehlt in Berlin.coords.data, PLZ=12681
