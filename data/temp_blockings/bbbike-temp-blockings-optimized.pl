@@ -3877,17 +3877,7 @@ userdel	2::inwork -1298,2017 -1082,2140
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147339571
-userdel	q2::inwork; 17110,4055 17244,4242
-',
-         'from' => 1445320800,
-         'id' => 2759,
-         'source_id' => 'IM_026600',
-         'text' => 'Sterndamm: zwischen Lindhorstweg und Megedestr. Bauarbeiten, Fahrbahn in Richtung S-Bhf. Schöneweide gesperrt, Radfahrer dürfen den Gehweg benutzen, 21.10.2015 08:00 Uhr bis 18.12.2015 17:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1450454400
-       },
+       undef,
        {
          'data' => '#: source_id: 2147339576
 userdel	q4::inwork; 8336,10829 8300,10823 8281,10791 8199,10634
