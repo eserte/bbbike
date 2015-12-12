@@ -387,14 +387,14 @@ sub _process {
 	    # Format von radwege
 	    #@{$check_files[T_OLD_RADWEGE]} = qw(radwege);
 
-	    # Besonderer Code für die Die Drei-Punkte-Form von comments bei
+	    # Besonderer Code für die Drei-Punkte-Form von comments bei
 	    # insert_points.
-	    # XXX ist für vorfahrt implementiert, für andere auch notwendig?
+	    # ist für vorfahrt und ampelschaltung_rules.bbd implementiert, XXX für andere auch notwendig?
 	    # XXX for now use the normal insert ... the additional points have to
 	    # be put out manually (but this is easier than do nothing)
 	    push @{$check_files[T_NORMAL]}, @comments_part_files;
 
-	    @{$check_files[T_VORFAHRT]} = qw(vorfahrt);
+	    @{$check_files[T_VORFAHRT]} = qw(vorfahrt ../misc/ampelschaltung_rules.bbd);
 
 	    # radwege is "normal" now
  	    @{$check_files[T_RADWEGE]} = ();
@@ -469,6 +469,7 @@ sub _process {
 
 	# user defined files
 	%noorig_files = ();
+	$noorig_files{'../misc/ampelschaltung_rules.bbd'} = 1;
 
 	if ($operation =~ /^(change|grep)$/) {
 #XXX	    @{$check_files[T_NORMAL]} = grep { !$ignore_files{$_} } keys %file2base;
