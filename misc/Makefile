@@ -11,6 +11,7 @@ BBBIKEMKGMAPDIR?=	${BBBIKEMISCDIR}/mkgmap
 MISCSRCDIR?=		${BBBIKEDIR}/miscsrc
 DATADIR?=		${BBBIKEDIR}/data
 CONVERT2HAFAS=		${MISCSRCDIR}/convert2hafas
+CHECK_NEIGHBOUR=	${PERL} ${MISCSRCDIR}/check_neighbour
 CHECK_POINTS=		${PERL} ${MISCSRCDIR}/check_points
 GREPSTRASSEN=		${MISCSRCDIR}/grepstrassen
 OSM2BBD=		${PERL} ${MISCSRCDIR}/osm2bbd
@@ -43,7 +44,7 @@ abdeckung.bbd: abdeckung.bbd-orig ../data/berlin_ortsteile
 	-@$(READONLY) $@
 
 # checks
-check:	.check_ampelschaltung2
+check:	.check_ampelschaltung2 .check_ampelschaltung_rules
 
 validate:	${BBBIKETMPDIR}/.validate_garmin_devcap
 
@@ -55,6 +56,13 @@ ${BBBIKETMPDIR}/.validate_garmin_devcap: garmin_devcap.kwalify garmin_devcap.yam
 	$(CHECK_POINTS) -ampelschaltung2 -warn \
 		ampelschaltung-orig.txt ${DATADIR}/ampeln-orig
 	@touch .check_ampelschaltung2
+
+.check_ampelschaltung_rules:	ampelschaltung_rules.bbd \
+				${DATADIR}/strassen ${DATADIR}/landstrassen ${DATADIR}/landstrassen2 ${DATADIR}/fragezeichen
+	$(CHECK_NEIGHBOUR) -type standard -data ampelschaltung_rules.bbd \
+		-against ${DATADIR}/strassen -against ${DATADIR}/landstrassen -against ${DATADIR}/landstrassen2 \
+		-against ${DATADIR}/fragezeichen
+	@touch $@
 
 tkbabybike-screenshot:
 	cd screenshots && $(MAKE) tkbabybike-screenshot
