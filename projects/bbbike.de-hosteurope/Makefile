@@ -839,10 +839,10 @@ automatic-deployment--run:
 	${MAKE} deploy
 	-@${XTERM_CONF_TITLE} "BBBike post deployment stuff"
 	cd ${BBBIKE_ROOT_DIR}/misc && slaymake rsync-fragezeichen-list BBBIKE_HOSTEUROPE_HOST=${BBBIKE_HOSTEUROPE_HOST} BBBIKE_HOSTEUROPE_USER=${BBBIKE_HOSTEUROPE_USER}
-	-( tkmessage -center "BBBike deployment finished, possibly interactive stuff follows..." &)
 	-@${XTERM_CONF_TITLE} "BBBike post-deployment git update"
 	$(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -after-sync -unconfirmed
 	-@${XTERM_CONF_TITLE} "BBBike deployment finished"
+	-( tkmessage -center "BBBike deployment finished" &)
 
 automatic-deployment-temp-blockings:
 	-@${XTERM_CONF_TITLE} "BBBike pre-deployment git update"
