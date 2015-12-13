@@ -3283,26 +3283,7 @@ userdel	2::night 17671,13132 17684,13133
        },
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 11317,14564 11255,14572 11155,14554
-',
-         'from' => 1449918000,
-         'id' => 2520,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              13,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 13. Dezember 2015, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1450029600
-       },
+       undef,
        {
          'data' => 'userdel	2::temp 11317,14564 11255,14572 11155,14554
 ',
@@ -3844,16 +3825,7 @@ userdel	2::inwork -1298,2017 -1082,2140
          'type' => 'gesperrt',
          'until' => 1450220399
        },
-       {
-         'data' => 'userdel	q4::inwork 1868,24633 1924,24672 2003,24702 2120,24740
-',
-         'from' => 1442786400,
-         'id' => 2744,
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.371808.php',
-         'text' => 'Karmeliterweg: Instandsetzungsarbeiten zwischen Welfenteich und Frohnauer Straße, Fahrbahn gesperrt, vom 22.09.2015 bis 12.12.2015',
-         'type' => 'handicap',
-         'until' => 1449961200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3890,7 +3862,8 @@ userdel	q4::inwork; 8336,10829 8300,10823 8281,10791 8199,10634
          'until' => 1451602800
        },
        {
-         'data' => '#: source_id: 2147339588
+         'data' => '#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7120
+#: source_id: 2147339588
 	3 8783,10166 9108,10101 9277,10057
 	3 9277,10057 9108,10101 8783,10166
 	3 9277,10057 9108,10101 9073,9915

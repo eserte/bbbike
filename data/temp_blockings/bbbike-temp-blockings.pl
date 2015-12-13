@@ -24728,6 +24728,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.394109.php',
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7120
 #: source_id: 2147339588
 	3 8783,10166 9108,10101 9277,10057
 	3 9277,10057 9108,10101 8783,10166

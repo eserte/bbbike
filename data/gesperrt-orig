@@ -620,6 +620,9 @@ Ingridpfad	1 6359,2875 6304,2825 6182,2737
 Georgenstr. (Mitte)	1 9242,12652 9108,12635
 Georgenstr. (Mitte)	1 9117,12705 9242,12652
 #: by: Uwe Majewski
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3655 (Freigabe noch 2015)
+#: priority: #A
+#: next_check: 2015-12-31
 Schulstr. (Tegel)	1 1953,20149 1794,20110
 Natalissteig	1 1200,14943 1223,14824 1226,14714
 Alt-Biesdorf	1 20375,11694 20435,11698 20575,11698 21108,11628
@@ -1411,6 +1414,9 @@ Kaiser-Wilhelm-Str.: Mittelstreifen	3nocross 6996,3761 6957,3699 6782,3491
 Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3nocross 11329,12497 11340,12443 11355,12331
 Yorckstr.: Mittelstreifen	3nocross 8777,9601 8679,9544 8595,9495
 Klemkestr.: Mittelstreifen	3nocross 7434,18695 7492,18699 7520,18701
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4017 (ein querender Fußweg ... im Jahr 2015 angelegt)
+#: XXX wird die Überquerungsmöglichkeit auch für Radfahrer nutzbar sein?
+#: next_check: 2015-12-31
 Klemkestr.: Mittelstreifen	3nocross 7520,18701 7599,18705 7676,18713
 Berliner Allee: Straßenbahntrasse	3nocross 14619,16682 14608,16772 14558,16907
 #: by: jan (...matrix):
@@ -2860,7 +2866,9 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 # REMOVED (keine Bauzäune mehr) --- #: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dreinplan.pdf?start&ts=1350454320&file=xxii6dreinplan.pdf --- #: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf --- #: XXX evtl. ist hiermit die Position des Zebrastreifens in der Degnerstr. festgelegt? --- #: XXX vielleicht wird es auch eine Verbindung bis auf der ehem. Bahnlinie zur Hansastr. geben? --- #: XXX Fertigstellung der Mehrfamilienhäuser im Süden: Dezember 2014 --- #: last_checked: 2014-09-12 (Durchfahrt möglich, man muss an Bauzäunen vorbei) --- #: check_frequency: 21d --- Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	2::inwork 16476,16216 16458,16104 16493,15983 16559,15896
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6003 (Forderung nach Wiederherstellung)
+#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6003&date=20151213 (Abriss der Brücke)
 #: XXX: Umfahrung existiert mittlerweile --- bleibt die Sperrung permanent?
+#: XXX: sobald die Brücke abgerissen wurde -> aus den Daten entfernen
 #: last_checked: 2015-10-04
 #: check_frequency: 180d
 Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352
