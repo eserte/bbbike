@@ -442,6 +442,7 @@ sub get_nearest {
 	for my $line_i ($LIMIT_LB .. $#res) {
 	    my $line = $res[$line_i];
 	    my $station_type = $get_station_type->($line);
+	    no warnings 'uninitialized'; # $need_stations{$station_type} may yet be empty
 	    if (defined $station_type && $need_stations{$station_type} > 0) {
 		push @add_stations, $line;
 		$need_stations{$station_type}--;
