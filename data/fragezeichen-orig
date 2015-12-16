@@ -213,7 +213,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2015-12-13
+#: last_checked: 2015-12-15
 Warschauer Str: Radspuren in Bau	?::inwork 13603,11538 13651,11731 13696,11920 13745,12118
 # 
 # REMOVED (vermutlich passiert nichts weiter) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: XXX wird auch das letzte Stück im Westen realisiert? --- #: osm_watch: way id="4424794" version="14" --- #: osm_watch: way id="30195541" version="9" --- #: last_checked: 2015-06-08 --- #: check_frequency: 60d --- Turmstr.: evtl. wird die Radspuren-Lücke hier geschlossen	? 5248,13434 5368,13406 5434,13398
@@ -550,9 +550,15 @@ Hennigsdorfer Str.: nach den Bauarbeiten durchgängig asphaltiert mit Radstreifen
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4916
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036544636457/544636457/00103447/47-Anlagen/04/B0815ZB2.pdf
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/49re.pdf/file?y=2015 (Bebauungsplan 9-22)
-#: last_checked: 2015-08-15
-#: check_frequency: 360d
-Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualität? Anbindund zum Uferweg?	?::projected 21447,5414 21482,5388 21555,5214 21415,5157 21498,5023
+#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/9-22-bebauungsplanentwurf.pdf (9-22 Bebauungsplanentwurf)
+#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/9-22-gutachten-verkehr.pdf
+#: XXX vermutlich wird die Ottomar-Geschke-Str. komplett asphaltiert werden
+#: last_checked: 2015-08-15 vvv
+#: check_frequency: 360d vvv
+Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Lage der kreuzenden Privatstraßen? Straßenname? Qualität? Anbindung zum Uferweg?	?::projected 21447,5414 21482,5388 21555,5214 21415,5157 21345,5157
+Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Lage der kreuzenden Privatstraßen? Straßenname? Qualität? Anbindung zum Uferweg?	?::projected 21415,5157 21498,5023
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 # REMOVED (oberhalb) --- #: last_checked: 2014-05-06 --- #: check_frequency: 14d --- Paul-und-Paula-Ufer: wird der Radweg am Ufer oder oberhalb entlang geführt?	?::inwork 15200,10600 15145,10636 15101,10640
 # REMOVED (Änderungen aufgenommen) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5225.html --- #: XXX für Fußgänger wird nur die südliche Fahrbahnseite zur Verfügung stehen? --- #: next_check: 2014-05-10 --- Sonnenallee: Bauarbeiten, bleiben die Radwege erhalten? Außerdem Bau einer provisorischen Ampel an der Ziegrastr.	?::projected 14519,7301 14451,7340 14432,7353 14424,7401 14405,7435 14357,7450 14302,7429 14174,7505
@@ -4189,3 +4195,5 @@ Birkenweg (Havelberg): Qualität?	? -78908,46280 -79030,46209 -79197,46187 -79505
 Domstrengbrücke und Verbindung zum Grillendamm: Qualität?	? -46302,103 -46305,130 -46339,191 -46379,281
 # 
 # REMOVED (aufgenommen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2015 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/46re.pdf/file?y=2015 (Grundstücksnummerierungen, Lage) --- #: XXX fehlen in Berlin.coords.data vvv --- Altes Gaswerk Mariendorf: Qualität?	? 8295,4303 8266,4221 8404,3648 8461,3410 --- Im Marienpark: Qualität? Gibt es eine Verbindung zum Weg am Bahndamm?	? 8404,3648 8346,3633 8178,3591 8070,3563
+# 
+Rehwiese/Rehsprung - Potsdamer Chaussee: existiert hier eine Verbindung für Radfahrer? Qualität? Nachts beleuchtet?	? -3395,1668 -3325,1665 -3310,1628 -3252,1644 -3042,1763 -3022,1754 -3011,1761

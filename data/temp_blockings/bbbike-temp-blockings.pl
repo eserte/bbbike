@@ -24713,7 +24713,7 @@ userdel	q2::inwork; 17110,4055 17244,4242
 EOF
      },
      { from  => 1446678000, # 2015-11-05 00:00
-       until => 1451602800, # 2016-01-01 00:00
+       until => 1450132811, # für Radfahrer frei --- 1451602800, # 2016-01-01 00:00
        text  => 'Flottwellstraße: Bauarbeiten, Fahrbahn zwischen Schöneberger Ufer und Lützowstr. in Richtung Süden gesperrt, vom 06.11.2015 bis 31.12.2015 ',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.396336.php',
