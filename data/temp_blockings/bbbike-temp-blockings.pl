@@ -24723,7 +24723,7 @@ userdel	q4::inwork; 8336,10829 8300,10823 8281,10791 8199,10634
 EOF
      },
      { from  => 1446332400, # 2015-11-01 00:00
-       until => 1454281200, # 2016-02-01 00:00
+       until => 1450384671, # vorzeitig aufgehoben? 1454281200, # 2016-02-01 00:00
        text  => 'Großbeerenstr.: Bauarbeiten, Überqueren der Straße an der Obentrautstr. nicht möglich, voraussichtlich vom 02.11.2015 bis 31.01.2016 ',
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.394109.php',
@@ -24770,7 +24770,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann sind die Bauarbeiten beendet? Wie weit geht die Sperrung Richtung Süden?
-#: last_checked: 2015-11-17
+#: last_checked: 2015-12-17
 userdel	q3::inwork 12620,9293 12565,9200
 EOF
      },
@@ -24785,7 +24785,7 @@ userdel	1::inwork 19843,7866 19927,7813 20031,7794 20077,7786
 EOF
      },
      { from  => 1449097200, # 2015-12-03 00:00
-       until => $isodate2epoch->("2015-12-21 12:00:00"),
+       until => 1450384844, # vorzeitig aufgehobe laut fritz! $isodate2epoch->("2015-12-21 12:00:00"),
        text  => 'Rudolf-Rühl-Allee: zwischen An der Wuhlheide und Köpenicker Straße am Bahnübergang wegen Bauarbeiten gesperrt, bis 21. Dezember 2015',
        type  => 'gesperrt',
        source_id => '128113',

@@ -2541,9 +2541,7 @@ Drängelgitter	BNP:5::trailer=10 14453,9929
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14558,10082
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14597,10129
 # XXX während der Bauarbeiten entfernt (2010-10) --- wird es jemals wieder eingesetzt? --- Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14626,10162
-#: note: 90cm Öffnung, 90cm zum versetzten Gitter -> 63cm lichte Breite
-#: note: hmmm, heute (2012-10-16) habe ich einen Radfahrer mit Croozer da durchfahren gesehen -> trailer=no -> trailer=15
-Drängelgitter	BNP:3::trailer=15 12901,10134
+# REMOVED (entfernt) --- #: note: 90cm Öffnung, 90cm zum versetzten Gitter -> 63cm lichte Breite --- #: note: hmmm, heute (2012-10-16) habe ich einen Radfahrer mit Croozer da durchfahren gesehen -> trailer=no -> trailer=15 --- Drängelgitter	BNP:3::trailer=15 12901,10134
 #: note: relativ großzügige Öffnung
 Drängelgitter	BNP:1::trailer=3 12833,9998
 Schranke (Privatstr.)	BNP:5 25039,5304
@@ -2576,8 +2574,13 @@ Schranke, schwer passierbar	BNP:10 7625,9376
 Schranke	BNP:5 7612,9446
 Barriere	BNP:0::trailer=3 3268,11847
 Drängelgitter	BNP:5 -5890,25875
-# REMOVED (keine Behinderungen) --- #: note: Anhänger sollten vielleicht den Gehweg benutzen --- Schranke, eine Seite eventuell offen	BNP:3::trailer=10 12490,9056
-# REMOVED (eine Hälfte der Schranke nicht mehr vorhanden) --- #: note: Anhänger sollten vielleicht den Gehweg benutzen --- Schranke, eine Seite eventuell offen	BNP:3::trailer=10 12565,9200
+#: note: abends beide Seiten zu (seen 2015-12-17 gegen 18:30)
+Schranke, eine Seite eventuell offen	BNP:3::trailer=10 12490,9056
+#: note: abends beide Seiten zu (seen 2015-12-17 gegen 18:30)
+#: note: Anhänger sollten vielleicht den Gehweg benutzen
+Schranke, eine Seite eventuell offen	BNP:3::trailer=10 12565,9200
+weites Drängelgitter	BNP:0::trailer=3 12552,9165
+Barriere, Umfahrung über Gehweg mit Bordsteinen	BNP:5::trailer=15 12615,9132
 #: note: ansonsten kann man ein paar Meter östlich die Bordsteinabsenkung benutzen
 Schranke, meistens offen	BNP:3::trailer=6 7843,16524
 # REMOVED (hmmm, hier keine Schranke?) --- Schranke, meistens offen	BNP:3::trailer=6 7707,16543

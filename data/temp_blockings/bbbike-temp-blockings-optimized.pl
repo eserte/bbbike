@@ -3795,27 +3795,7 @@ userdel	2::inwork -1298,2017 -1082,2140
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7120
-#: source_id: 2147339588
-	3 8783,10166 9108,10101 9277,10057
-	3 9277,10057 9108,10101 8783,10166
-	3 9277,10057 9108,10101 9073,9915
-	3 9277,10057 9108,10101 9145,10290
-	3 9073,9915 9108,10101 9277,10057
-# REMOVED ---	3 8783,10166 9108,10101 9145,10290
-# REMOVED ---	3 9073,9915 9108,10101 8783,10166
-# REMOVED ---	3 9145,10290 9108,10101 9277,10057
-# REMOVED ---	3 9044,9753 9073,9915 8780,9968
-# REMOVED ---	3 8780,9968 9073,9915 9108,10101
-',
-         'from' => 1446332400,
-         'id' => 2761,
-         'source_id' => 'http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.394109.php',
-         'text' => 'Großbeerenstr.: Bauarbeiten, Überqueren der Straße an der Obentrautstr. nicht möglich, voraussichtlich vom 02.11.2015 bis 31.01.2016 ',
-         'type' => 'gesperrt',
-         'until' => 1454281200
-       },
+       undef,
        undef,
        {
          'data' => 'userdel	q3::temp 11139,13008 11064,12910 10970,12822
@@ -3840,7 +3820,7 @@ userdel	q4::temp 11064,12910 11134,12793
        },
        {
          'data' => '#: XXX Wann sind die Bauarbeiten beendet? Wie weit geht die Sperrung Richtung Süden?
-#: last_checked: 2015-11-17
+#: last_checked: 2015-12-17
 userdel	q3::inwork 12620,9293 12565,9200
 ',
          'from' => undef,
@@ -3848,18 +3828,6 @@ userdel	q3::inwork 12620,9293 12565,9200
          'text' => 'Rütlistr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg',
          'type' => 'handicap',
          'until' => undef
-       },
-       undef,
-       {
-         'data' => '#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.421075.php
-userdel	2::inwork 20635,7119 20722,6971
-',
-         'from' => 1449097200,
-         'id' => 2766,
-         'source_id' => '128113',
-         'text' => 'Rudolf-Rühl-Allee: zwischen An der Wuhlheide und Köpenicker Straße am Bahnübergang wegen Bauarbeiten gesperrt, bis 21. Dezember 2015',
-         'type' => 'gesperrt',
-         'until' => 1450695600
        }
      
 );
