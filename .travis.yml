@@ -3,8 +3,6 @@ before_install:
  - init_travis
  - wrapper init_env_vars
  - wrapper init_perl
- # for agrep package:
- - echo "deb http://de.archive.ubuntu.com/ubuntu/ precise multiverse" | sudo tee -a /etc/apt/sources.list
  - wrapper init_apt
  - wrapper install_non_perl_dependencies
  - wrapper install_perl_testonly_dependencies
