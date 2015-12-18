@@ -28,8 +28,7 @@ matrix:
   include:
     - perl: "5.14"
       env: USE_MODPERL=1 USE_SYSTEM_PERL=1
-# perl 5.20 is currently broken (see https://github.com/travis-ci/travis-ci/issues/5226)
-    - perl: "5.20-extras"
+    - perl: "5.20"
       env: BBBIKE_TEST_SKIP_MODPERL=1
     - perl: "5.18"
       env: BBBIKE_TEST_SKIP_MODPERL=1 BBBIKE_TEST_GUI=1
