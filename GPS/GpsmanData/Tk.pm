@@ -205,6 +205,7 @@ sub associate_object {
     }
     $w->_clear_data_view;
     $w->_fill_data_view;
+    $w->_select_entry;
 }
 
 sub get_associated_object {
@@ -223,6 +224,17 @@ sub reload {
     $w->{GpsmanData}->reload;
     $w->_clear_data_view;
     $w->_fill_data_view;
+}
+
+sub _select_entry {
+    my($w, $entry) = @_;
+    # 0th entry is typically the track separator ---, so default to 1st entry
+    $entry = 1 if !defined $entry;
+    my $dv = $w->Subwidget('data');
+    $dv->anchorSet($entry);
+    $dv->see($entry);
+    $dv->KeyboardActivate;
+    $dv->cget('-selectentry')->Call($entry);
 }
 
 sub _clear_data_view {
