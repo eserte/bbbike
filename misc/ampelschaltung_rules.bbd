@@ -16,6 +16,10 @@ cycle=irregular	X 14174,11406
 #   "Nacht" ist bereits um 20:15
 #   "Tag" ist noch um 19:30
 #   Der Zyklus kann um +/-2s variieren
+#
+#   Neue Erkenntnisse:
+#   - Revaler: 15+45=60 oder 18+52=70, keine Regelmäßigkeiten bei den Uhrzeiten zu erkennen
+#   - Modersohn: Richtung Süden red=36s, keine weiteren Daten
 time=night cycle=70s	X 14139,11269
 time=* cycle=90s	X 14139,11269
 time=night red=52s green=18s	X 13970,11366 14134,11272 14211,11229
@@ -23,11 +27,13 @@ time=* red=46s green=44s	X 14096,11134 14134,11272 14181,11434
 # Modersohn/Rudolfplatz
 #   XXX Verhältnis ausmessen!
 XXX connected	X 14024,10861 14011,10812
+time=? green=24s red=46s	X 13919,10583 14011,10812 14024,10861
+time=? green=16s red=54s	X 14170,10675 14011,10812 13896,10851
 # Stralauer/Modersohn
 #   Zyklus könnte 70s oder 90s sein (Tag/Nacht?)
 #   note: separate Linksabbiegerampeln
 #   Anforderung für Radfahrerlinksabbiegeampel
-XXX no data	X 13919,10583
+time=? green=11s	X 14011,10812 13919,10583 *
 # Stralauer/Ehrenberg
 #   XXX prüfen, Daten von 1999
 #   XXX Zyhlus kann auch 90s sein (rush-hour?)
@@ -160,3 +166,34 @@ red=35s green=15s	X 8620,8095 8632,8174 8666,8305
 cycle=50s	X 8642,7876
 red=36s green=14s	X 8627,7941 8642,7876 8686,7726
 red=39s green=11s	X 8553,7795 8642,7876 8731,7956
+# Stralauer/Oberbaum/Warschauer
+#   Radfahrer in der Relation Oberbaum-Warschauer haben viel früher rot
+#   keine Radfahrerampel (mehr) in der Relation Warschauer-Oberbaum
+time=? green=17s red=43s	X 13409,11004 13332,10832 13305,10789
+time=? green=20s red=60s	X 13305,10789 13332,10832 13409,11004
+# Skalitzer/Schlesische
+#   keine Radfahrerampel (mehr) in der Relation Oberbaum - Skalitzer
+time=? red=49s	X 13015,10659 12985,10665 12899,10595
+# Skalitzer/Wrangel
+# Radfahrerampel mit früherem Rot in der Relation Skalitzer, beide Richtungen
+time=? red=46s	X 12899,10595 12731,10547 12621,10516
+time=? red=46s	X 12621,10516 12731,10547 12899,10595
+# Adalbertstr./Waldemar
+time=? green=21s red=29s	X 11589,10947 11556,10869 11505,10744
+time=? green=21s red=29s	X 11505,10744 11556,10869 11589,10947
+# Adalbertstr./Oranienstr.
+time=? green=13s red=37s	X 11505,10744 11463,10642 11411,10515
+# Heinrichplatz
+time=? green=19s red=31s	X 11463,10642 11722,10533 11949,10414
+time=? green=20s red=30s	X 11949,10414 11722,10533 11463,10642
+# Straße der Pariser Kommune/Rüdersdorfer
+time=* green=20s red=70s	X 12891,12008 12822,12067 12735,12131
+time=* green=20s red=70s	X 12735,12131 12822,12067 12891,12008
+# Andreas/Singer
+#: XXX_prog beide Richtungen in der Relation Singerstr. scheinen die gleichen Zeiten zu haben, könnte man das effizienter ausdrücken?
+time=rush-hour green=18s red=52s	X 12525,12151 12295,12197 12084,12235
+time=day green=18s red=42s	X 12525,12151 12295,12197 12084,12235
+time=night green=12s red=38s	X 12525,12151 12295,12197 12084,12235
+time=rush-hour green=18s red=52s	X 12084,12235 12295,12197 12525,12151
+time=day green=18s red=42s	X 12084,12235 12295,12197 12525,12151
+time=night green=12s red=38s	X 12084,12235 12295,12197 12525,12151
