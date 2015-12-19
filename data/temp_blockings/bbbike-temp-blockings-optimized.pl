@@ -3702,18 +3702,7 @@ userdel	q4::inwork; 8348,10636 8335,10518 8350,10499
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => 'userdel	q3::inwork 13357,9313 13489,9456
-userdel	q2::inwork 13489,9456 13606,9578
-# REMOVED (fertig) --- userdel	q3::inwork 13606,9578 13645,9621
-',
-         'from' => 1437289200,
-         'id' => 2723,
-         'source_id' => 'IM_025684',
-         'text' => 'Bouchéstr.: Baustelle, Fahrbahn zwischen Heidelberger Str. und Kiefholzstr. gesperrt, auf Gehweg ausweichen, 20.07.2015 09:00 Uhr bis 18.12.2015 17:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1450454400
-       },
+       undef,
        undef,
        undef,
        undef,
