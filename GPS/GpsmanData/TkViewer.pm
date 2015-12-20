@@ -211,6 +211,15 @@ sub gps_data_viewer {
 		       $edit->set_accuracies(\@lines, $new_accuracy);
 		       $gps_view->reload;
 		   })->pack(-side => "left");
+	$f->Button(-text => 'Select max. velocity',
+		   -command => sub {
+		       my $item = $gps_view->find_item_with_max_velocity;
+		       if (defined $item) {
+			   $gps_view->show_item($item);
+		       } else {
+			   $t->messageBox(-message => 'No item with maximum velocity found', -type => 'Ok');
+		       }
+		   })->pack(-side => 'left');
 	$f->Button(-text => 'Statistics',
 		   -command => sub {
 		       require GPS::GpsmanData::Stats;
@@ -225,7 +234,7 @@ sub gps_data_viewer {
 		       my $txt = $tt->Scrolled('ROText', -width => 30, -scrollbars => 'osoe')->pack(qw(-fill both -expand 1));
 		       $txt->insert('end', BBBikeYAML::Dump($stats->human_readable));
 		       $tt->Button(-text => 'Close', -command => sub { $tt->destroy })->pack;
-		   })->pack(-side => 'left');
+		   })->pack(-side => 'right');
     }
 
     if (defined $gps_file) {
