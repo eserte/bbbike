@@ -205,7 +205,7 @@ sub associate_object {
     }
     $w->_clear_data_view;
     $w->_fill_data_view;
-    $w->_select_entry;
+    $w->show_item;
 }
 
 sub get_associated_object {
@@ -226,15 +226,15 @@ sub reload {
     $w->_fill_data_view;
 }
 
-sub _select_entry {
-    my($w, $entry) = @_;
-    # 0th entry is typically the track separator ---, so default to 1st entry
-    $entry = 1 if !defined $entry;
+sub show_item {
+    my($w, $item) = @_;
+    # 0th item is typically the track separator ---, so default to 1st item
+    $item = 1 if !defined $item;
     my $dv = $w->Subwidget('data');
-    $dv->anchorSet($entry);
-    $dv->see($entry);
+    $dv->anchorSet($item);
+    $dv->see($item);
     $dv->KeyboardActivate;
-    $dv->cget('-selectentry')->Call($entry);
+    $dv->cget('-selectentry')->Call($item);
 }
 
 sub _clear_data_view {
@@ -729,6 +729,36 @@ sub find_items_by_lat_lon {
     @res;
 }
 
+sub find_item_with_max_velocity {
+    my($self) = @_;
+    my $dv = $self->Subwidget("data");
+    my $gpsmandata = $self->{GpsmanData};
+    my($max_velocity, $max_item);
+    my $prev_wpt;
+    for my $item ($dv->info('children')) {
+	my $data = $dv->info('data', $item);
+	if (!exists $data->{Wpt}) {
+	    undef $prev_wpt;
+	} else {
+	    my $chunk = $gpsmandata->Chunks->[$data->{Chunk}];
+	    my $wpt = $chunk->Track->[$data->{Wpt}];
+	    if ($wpt && $wpt->Accuracy == 0) {
+		if ($prev_wpt) {
+		    my $this_velocity = $chunk->wpt_velocity($prev_wpt, $wpt);
+		    if (!defined $max_velocity || $this_velocity > $max_velocity) {
+			$max_velocity = $this_velocity;
+			$max_item = $item;
+		    }
+		}
+		$prev_wpt = $wpt;
+	    } else {
+		$prev_wpt = undef;
+	    }
+	}
+    }
+    $max_item;
+}
+
 sub find_items_by_wpts {
     my($self, @wpts) = @_;
 
@@ -874,6 +904,11 @@ meters far from the point I<$lat>,I<$lon>. Note that C<-around> is
 optional, but because of floating point inaccuracies it is recommended
 to use it with a small values (a meter or less).
 
+=item $w->find_item_with_max_velocity
+
+Return the item with maximum velocity in the track. Inaccurate items
+are skipped.
+
 =item $w->wpt_by_item($item)
 
 For a given (internal) I<$item> (for example, the result from the
@@ -885,6 +920,11 @@ B<GPS::Gpsman::Waypoint> object, or undef.
 For a given (internal) I<$item> (for example, the result from the
 L</find_items_by_lat_lon> call), return the associated
 L<GPS::GpsmanData> object, or undef.
+
+=item $w->show_item([$item])
+
+Make sure the given (internal) I<$item> is visible in the viewport and
+selected. If I<$item> is not given, then the first item is chosen.
 
 =item $w->select_items($item, ...)
 
