@@ -25,6 +25,7 @@ my $diff_file;
 my $add_file_label;
 my $add_fixed_label;
 my $diff_color = '#000080';
+my $preserve_areas; # otherwise areas are at least turned into closed unfilled polygons
 my $with_date;
 my $with_date_time;
 GetOptions(
@@ -33,6 +34,7 @@ GetOptions(
 	   "include-orig!" => \$include_orig,
 	   "diff-file=s"   => \$diff_file,
 	   'diff-color=s'  => \$diff_color,
+	   'preserve-areas' => \$preserve_areas,
 	   'with-date!'    => \$with_date,
 	   'with-date-time!' => \$with_date_time,
 	   "help|?" => sub { show_usage() },
@@ -169,14 +171,26 @@ for my $line (`@cmd`) {
 	} elsif ($line =~ m{$bbdrx}o) {
 	    my $diffdir = $+{diffdir};
 	    $diffdir = '+' if !defined $diffdir;
-	    my $name = $+{name};
+	    my($name, $cat, $coords) = ($+{name}, $+{cat}, $+{coords});
 	    if (defined $current_date) {
 		$name .= ' ' . $current_date;
 	    }
 	    if (!exists $diffdir_records{$diffdir}) {
 		tie %{ $diffdir_records{$diffdir} }, 'Tie::IxHash';
 	    }
-	    push @{ $diffdir_records{$diffdir}->{$name} }, [$diff_color, $+{coords}];
+	    my $this_diff_color = $diff_color;
+	    if ($cat =~ m{^F:}) {
+		if ($preserve_areas) {
+		    $this_diff_color = 'F:' . $diff_color;
+		} else {
+		    # make a closed polygon
+		    my @c = split / /, $coords;
+		    if ($c[0] ne $c[-1]) {
+			$coords .= ' ' . $c[0];
+		    }
+		}
+	    }
+	    push @{ $diffdir_records{$diffdir}->{$name} }, [$this_diff_color, $coords];
 	}
     }
 }
