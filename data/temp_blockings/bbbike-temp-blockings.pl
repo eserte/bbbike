@@ -8634,7 +8634,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.berliner-zeitung.de/berlin/volksfest--treptow-in-flammen--organisiertes-besaeufnis-im-treptower-park-faellt-aus,10809148,26239080.html (fällt 2014 aus)
-userdel	2::temp 14464,9927 14465,9900 14500,9856 14674,9764 14697,9726 14910,9643
+userdel	2::temp 14464,9927 14465,9900 14500,9856 14635,9786 14840,9692 14889,9660 14909,9649
 userdel	2::temp 14500,9856 14483,9843
 EOF
      },
@@ -17244,13 +17244,14 @@ EOF
 userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998
 EOF
      },
-     { from  => $isodate2epoch->("2015-12-25 06:00:00"),
+     { from  => $isodate2epoch->("2015-12-27 06:00:00"),
        until => $isodate2epoch->("2016-01-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 12]],
-       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., voraussichtlich vom 26.12.2015 bis 02.01.2016',
+       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., vom 28.12.2015 bis 02.01.2016',
        type  => 'gesperrt',
        data  => <<EOF,
+#: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
 userdel	2::temp 8731,12270 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 userdel	2::temp 8055,12186 8119,12414
 userdel	2::temp 8522,12239 8466,12197
@@ -19270,7 +19271,7 @@ EOF
        source_id => 'IM_017318',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110530.1300.346009.html
-userdel	2::inwork 15383,9191 14883,9431 14819,9462 14780,9480 14318,9688
+userdel	2::inwork 15383,9191 14883,9431 14809,9466 14556,9581 14318,9688
 EOF
      },
      { from  => undef, # 
@@ -24210,18 +24211,17 @@ EOF
 #: XXX die Qualität wird nach den Bauarbeiten vermutlich besser sein, teilweise auch schlechter (wassergebundene Decke statt Asphalt) vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.297071.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.295591.php
-#: last_checked: 2015-12-07 vvv
+#: next_check: 2015-12-22
 userdel	2::inwork 14318,9688 14443,9731
 # REMOVED --- userdel	2::inwork 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
-userdel	2::inwork 14575,9648 14645,9710 14697,9726
-userdel	2::inwork 14674,9764 14697,9726 14910,9643 15052,9584 15174,9554 15321,9448 15432,9322 15453,9259
-	2::inwork 14529,9141 14601,9201 14748,9420
-	2::inwork 14398,9373 14485,9271 14601,9201
+# REMOVED --- userdel	2::inwork 14575,9648 14645,9710 14697,9726 14889,9660
+# REMOVED --- userdel	2::inwork 14635,9786 14840,9692 14889,9660 14909,9649 15052,9584 15186,9550 15304,9464 15432,9322 15453,9259
+# REMOVED ---	2::inwork 14475,9199 14531,9244 14655,9311
+# REMOVED ---	2::inwork 14398,9373 14485,9271 14531,9244
 # REMOVED --- userdel	2::inwork 15453,9259 15513,9144 15527,9096 15638,9020
 # REMOVED --- userdel	2::inwork 14443,9731 14361,9772
 # REMOVED --- userdel	2::inwork 15630,8979 15638,9020 15778,8990
-# REMOVED --- userdel	2::inwork 14910,9643 14871,9567 14844,9513
-#: last_checked ^^^
+# REMOVED --- userdel	2::inwork 14909,9649 14866,9571 14837,9517
 #: XXX ^^^
 EOF
      },

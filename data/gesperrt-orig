@@ -2645,12 +2645,7 @@ Drängelgitter	BNP:3 31665,48997
 #: check_frequency: 60d
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
 # 
-#: next_check_id: SCHOENEBERGERSCHLEIFE-2015
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2015/pressemitteilung.424946.php
-#: last_checked: 2015-12-11
-#: next_check: 2015-12-22
-#: priority: #A
-(Bautzener Str. - Südkreuz): in Bau	2::inwork 8204,9001 8200,8920 7998,8317
+# REMOVED --- #: next_check_id: SCHOENEBERGERSCHLEIFE-2015 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2015/pressemitteilung.424946.php --- #: last_checked: 2015-12-11 --- #: next_check: 2015-12-22 --- #: priority: #A --- (Bautzener Str. - Südkreuz): in Bau	2::inwork 8204,9001 8200,8920 7998,8317
 # 
 #: next_check_id: STEGLITZPARK-2015 vvv
 #: last_checked: 2015-09-27 vvv
@@ -2720,8 +2715,8 @@ Kleiner Tiergarten: wegen Bauarbeiten gesperrt	2::inwork 6561,13151 6556,13240 6
 #: next_check_id: FISCHERINSEL-2015 vvv
 #: source_id: 2147339543 vvv
 #: XXX vermutlich bis 31.07.2016 (laut fritz)
-#: last_checked: 2015-12-07 vvv
-#: next_check: 2015-12-20 vvv
+#: last_checked: 2015-12-22 vvv
+#: next_check: 2016-07-31 vvv
 Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10703,11837
 Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10703,11837 10687,11853 10869,11949
 Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10672,11870

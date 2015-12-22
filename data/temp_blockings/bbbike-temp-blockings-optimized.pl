@@ -2357,14 +2357,15 @@ userdel	3 8374,11479 8389,11378 8427,11365
        undef,
        undef,
        {
-         'data' => 'userdel	2::temp 8731,12270 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+         'data' => '#: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
+userdel	2::temp 8731,12270 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 userdel	2::temp 8055,12186 8119,12414
 userdel	2::temp 8522,12239 8466,12197
 userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
 ',
-         'from' => 1451019600,
+         'from' => 1451192400,
          'id' => 2010,
          'periodic' => 1,
          'recurrences' => [
@@ -2376,7 +2377,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
                               12
                             ]
                           ],
-         'text' => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., voraussichtlich vom 26.12.2015 bis 02.01.2016',
+         'text' => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., vom 28.12.2015 bis 02.01.2016',
          'type' => 'gesperrt',
          'until' => 1451775599
        },
@@ -3223,49 +3224,11 @@ userdel	2::night 17671,13132 17684,13133
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 9986,13412 10317,13248
-',
-         'from' => 1450393200,
-         'id' => 2517,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (19.12.2015 - 20.12.2015)',
-         'type' => 'gesperrt',
-         'until' => 1450652399
-       },
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 11317,14564 11255,14572 11155,14554
-',
-         'from' => 1450522800,
-         'id' => 2521,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 20. Dezember 2015, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1450634400
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -3623,18 +3586,17 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
          'data' => '#: XXX die Qualität wird nach den Bauarbeiten vermutlich besser sein, teilweise auch schlechter (wassergebundene Decke statt Asphalt) vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.297071.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.295591.php
-#: last_checked: 2015-12-07 vvv
+#: next_check: 2015-12-22
 userdel	2::inwork 14318,9688 14443,9731
 # REMOVED --- userdel	2::inwork 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
-userdel	2::inwork 14575,9648 14645,9710 14697,9726
-userdel	2::inwork 14674,9764 14697,9726 14910,9643 15052,9584 15174,9554 15321,9448 15432,9322 15453,9259
-	2::inwork 14529,9141 14601,9201 14748,9420
-	2::inwork 14398,9373 14485,9271 14601,9201
+# REMOVED --- userdel	2::inwork 14575,9648 14645,9710 14697,9726 14889,9660
+# REMOVED --- userdel	2::inwork 14635,9786 14840,9692 14889,9660 14909,9649 15052,9584 15186,9550 15304,9464 15432,9322 15453,9259
+# REMOVED ---	2::inwork 14475,9199 14531,9244 14655,9311
+# REMOVED ---	2::inwork 14398,9373 14485,9271 14531,9244
 # REMOVED --- userdel	2::inwork 15453,9259 15513,9144 15527,9096 15638,9020
 # REMOVED --- userdel	2::inwork 14443,9731 14361,9772
 # REMOVED --- userdel	2::inwork 15630,8979 15638,9020 15778,8990
-# REMOVED --- userdel	2::inwork 14910,9643 14871,9567 14844,9513
-#: last_checked ^^^
+# REMOVED --- userdel	2::inwork 14909,9649 14866,9571 14837,9517
 #: XXX ^^^
 ',
          'from' => undef,
