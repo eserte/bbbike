@@ -2125,7 +2125,7 @@ Drängelgitter	BNP:5::trailer=10 6030,4743
 Drängelgitter	BNP:5::trailer=10 6022,4746
 Drängelgitter (lichte Breite 80cm)	BNP:5::trailer=no 10585,21759
 Drängelgitter (lichte Breite 70cm)	BNP:7::trailer=no 10752,21727
-Schranke (lichte Breite ca. 100cm)	BNP:3::trailer=10 8377,10503
+# REMOVED (gibt's nicht mehr?) --- Schranke (lichte Breite ca. 100cm)	BNP:3::trailer=10 8377,10503
 Drängelgitter	BNP:3::trailer=10 15727,1525
 Drängelgitter	BNP:3::trailer=10 15977,1422
 Schranke (Umfahrung auf dem Gehweg falls geschlossen)	BNP:5::trailer=15 17879,11378
@@ -2642,10 +2642,10 @@ Drängelgitter	BNP:3 31665,48997
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: last_checked: 2015-12-07
-#: check_frequency: 60d
+#: next_check: 2015-12-23
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
 # 
-# REMOVED --- #: next_check_id: SCHOENEBERGERSCHLEIFE-2015 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2015/pressemitteilung.424946.php --- #: last_checked: 2015-12-11 --- #: next_check: 2015-12-22 --- #: priority: #A --- (Bautzener Str. - Südkreuz): in Bau	2::inwork 8204,9001 8200,8920 7998,8317
+# REMOVED --- #: next_check_id: SCHOENEBERGERSCHLEIFE-2015 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2015/pressemitteilung.424946.php --- #: last_checked: 2015-12-11 --- #: next_check: 2015-12-22 --- #: priority: #A --- (Bautzener Str. - Südkreuz): in Bau	2::inwork 8204,9001 8198,8893 8175,8815 7998,8317
 # 
 #: next_check_id: STEGLITZPARK-2015 vvv
 #: last_checked: 2015-09-27 vvv

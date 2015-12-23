@@ -338,6 +338,10 @@
 36.0	X 9334,9670
 33.5	X 8192,9619
 38.7	X 8186,9380
+#: note: Nachbarpunkte + gleichmäßige Steigung
+39.8	X 8185,9338
+#: note: grobe Abschätzung mit Barometer + Nachbarpunkten
+40.0	X 8175,8815
 45.9	X 8180,9099
 47.3	X 8081,9120
 48.9	X 8014,9126
@@ -2265,6 +2269,11 @@
 #: note ^^^
 ######################################################################
 # manuell aus 1:5k bw (resp. bbpl fk):
+45.6	X 8078,8772
+#: note: Nachbarpunkte
+45.6	X 8145,8773
+#: XXX Nachbarpunkt + Barometer + grobe Abschätzung wg. widersprüchlicher Daten
+44.6	X 8184,8902
 50.2	X 2287,3702
 43.7	X 2203,3213
 44.0	X 2328,3482
