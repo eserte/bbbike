@@ -1969,16 +1969,16 @@ Michael-Brückner-Str. -> Spreestr.: Mittelstreifen	3::igndisp 17728,5756 17782,5
 Michael-Brückner-Str. -> Cajamarcapl.: Mittelstreifen	3::igndisp 17829,5648 17782,5698 17730,5698
 Cajamarcapl. -> Michael-Brückner-Str.: Mittelstreifen	3::igndisp 17730,5698 17782,5698 17728,5756
 Cajamarcapl. -> Spreestr.: Mittelstreifen	3::igndisp 17730,5698 17782,5698 17807,5730
-Straßenbahngleise	3nocross::ignrte 17488,15766 17532,15645 17569,15561 17626,15433 17829,15015
+Straßenbahngleise	3nocross::ignrte 17488,15766 17532,15645 17569,15561 17626,15433 17706,15269 17829,15015
 Rhinstr. -> Str. 156: Straßenbahngleise	3::igndisp 17488,15766 17532,15645 17570,15658
 Str. 156 -> Rhinstr.: Straßenbahngleise	3::igndisp 17570,15658 17532,15645 17569,15561
 Rhinstr. -> Str. 150: Straßenbahngleise	3::igndisp 17532,15645 17569,15561 17640,15583
 Str. 150 -> Rhinstr.: Straßenbahngleise	3::igndisp 17640,15583 17569,15561 17626,15433
-Rhinstr. -> Str. 155: Straßenbahngleise	3::igndisp 17829,15015 17626,15433 17599,15435
+Rhinstr. -> Str. 155: Straßenbahngleise	3::igndisp 17706,15269 17626,15433 17599,15435
 Rhinstr. -> Str. 155: Straßenbahngleise	3::igndisp 17569,15561 17626,15433 17657,15427
 Str. 155 -> Rhinstr.: Straßenbahngleise	3::igndisp 17599,15435 17626,15433 17569,15561
 Str. 155 -> Str. 155: Straßenbahngleise	3::igndisp 17599,15435 17626,15433 17657,15427
-Str. 155 -> Rhinstr.: Straßenbahngleise	3::igndisp 17657,15427 17626,15433 17829,15015
+Str. 155 -> Rhinstr.: Straßenbahngleise	3::igndisp 17657,15427 17626,15433 17706,15269
 Str. 155 -> Str. 155: Straßenbahngleise	3::igndisp 17657,15427 17626,15433 17599,15435
 Mittelstreifen	3nocross::ignrte -1249,2590 -1085,2653 -984,2692 -870,2737
 Potsdamer Chaussee -> Gilgestr.: Mittelstreifen	3::igndisp -1249,2590 -1085,2653 -1100,2697
@@ -2789,6 +2789,7 @@ versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
 Drängelgitter	BNP:3:-240 31665,48997
+Clara-Immerwahr-Str.: Bauzäune	2::inwork 19202,17471 19546,17351 19798,17263 19845,17235 19914,17203
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
 SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2408,1144 2352,1267
 SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2336,1111 2408,1144 2504,1186

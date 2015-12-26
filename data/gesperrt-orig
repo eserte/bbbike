@@ -1095,9 +1095,8 @@ Sportfliegerstr.: Betriebsgelände	2 18370,4511 18423,4459
 #: by: olaf skeries
 Schillerhof	1 7069,17204 6928,17154
 #: XXX wird aufgehoben, sobald das einsturzgefährdete Haus abgerissen wird vvv
-#: last_checked: 2015-11-01 vvv
+#: last_checked: 2015-12-26 vvv
 #: check_frequency: 60d vvv
-# REMOVED (dieser Abschnitt doch keine Einbahnstraße?) --- Wartenbergstr.	1s:q1 15423,11667 15337,11639 15328,11636
 Wartenbergstr.	1s:q2 15423,11667 15337,11639 15328,11636 15300,11584
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -1680,7 +1679,7 @@ Silberberger -> Adlergestell: Abbiegen verboten	3 19804,3697 19735,3643 19812,35
 Michael-Brückner-Str.: Mittelstreifen	3nocross 18457,5000 18425,5032 18080,5376
 Michael-Brückner-Str.: Mittelstreifen	3nocross 17728,5756 17782,5698 17829,5648
 #: by: Thomas Pörs & srt:
-Rhinstr.: Straßenbahngleise	3nocross 17488,15766 17532,15645 17569,15561 17626,15433 17829,15015
+Rhinstr.: Straßenbahngleise	3nocross 17488,15766 17532,15645 17569,15561 17626,15433 17706,15269 17829,15015
 Potsdamer Chaussee: Mittelstreifen	3nocross -1249,2590 -1085,2653 -984,2692 -870,2737
 #: note: in Höhe Niklasstr. kann man den Mittelstreifen zur Not überqueren (Bordsteine & Trampelpfad)
 Potsdamer Chaussee: Mittelstreifen	3nocross -870,2737 -739,2793 -726,2799 -563,2862 -512,2883 -391,2914
@@ -2641,6 +2640,9 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2015-12-26
+Clara-Immerwahr-Str.: Bauzäune	2::inwork 19202,17471 19546,17351 19798,17263 19845,17235 19914,17203
+# 
 #: last_checked: 2015-12-07
 #: next_check: 2015-12-23
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
@@ -2683,7 +2685,7 @@ Theodorstr.: Bauarbeiten, gesperrt	2::inwork 24897,11083 24905,10955 24913,10884
 (Weg im Theodorpark)	2::inwork 24922,10785 24954,10770 25021,10768 25062,10762 25148,10769
 # 
 #: XXX Wann wird die Straße eröffnet? Wird die Straße verkehrsberuhigt sein?
-#: osm_watch: way id="338546087" version="1"
+#: osm_watch: way id="338546087" version="2"
 #: last_checked: 2015-08-02
 #: next_check: 2015-11-02 (public)
 Pfarrhufenanger: noch in Bau, gesperrt	2::inwork 25599,13069 25441,12838 25266,12622
@@ -3039,7 +3041,7 @@ Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9898,12161 9882,12259
 #: by: Kai Wagner
 #: confirmed_by: srt
 #: XXX hier entsteht wohl eine neue Filiale von Möbel Kraft
-#: last_checked: 2015-06-20
+#: last_checked: 2015-12-26
 #: check_frequency: 360d
 Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 17221,14268 17274,14280
 #

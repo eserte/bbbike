@@ -6239,13 +6239,13 @@ EOF
 userdel	1::inwork 4367,11996 4345,11710
 EOF
      },
-     { from  => $isodate2epoch->("2015-05-01 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-05-03 23:59:59"),
+     { from  => $isodate2epoch->("2015-05-06 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2015-05-08 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 24, months => 1]],
-       text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (2.5.2015 und 3.5.2015)',
+       recurrences => [['yearly', days => 24, months => 4]],
+       text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (7.5.2016 und 8.5.2016)',
        type  => 'gesperrt',
-       source_id => 'http://www.ms-event-agentur.com/primavera%202013.html', # 2013 in der URL verwirrt nur, die Seite nennt das Jahr 2015
+       source_id => 'http://www.popula.de/veranstaltung/12105833_primavera-2016-akazienstrasse-berlin',
        data  => <<EOF,
 userdel	2::temp 7107,9030 7044,9163 7022,9211 7006,9292
 userdel	2::temp 6945,9142 7044,9163
@@ -10094,7 +10094,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006787',
        data  => <<EOF,
-userdel	2::inwork 17902,17074 17839,16987 17796,16926 17634,16681 17512,16495 17446,16393
+userdel	2::inwork 17902,17074 17839,16987 17796,16926 17638,16686 17512,16495 17446,16393
 EOF
      },
      { from  => 1186524000, # 2007-08-08 00:00

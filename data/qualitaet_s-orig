@@ -6602,7 +6602,7 @@ Wernerstr.: Asphalt mit einigen Kopfsteinpflasterabschnitten	Q1- 24230,12733 243
 Hirtschulzstr.: schlechtes Kopfsteinpflaster	Q3 24316,12566 24195,12558 24077,12544 24018,12541
 Dahlwitzer Landstr.: Kopfsteinpflaster	Q2; 25598,6158 25584,6029
 Biesterfelder Str.: Asphalt	Q0 16942,16174 17010,16349 17102,16464
-Klettwitzer Str.: Asphalt	Q0 18871,16864 18782,16597
+Klettwitzer Str.: Asphalt	Q0 18875,16872 18782,16597
 (Klettwitzer Str. - Georg-Knorr-Str./Landsberger Allee): Asphalt	Q0 18782,16597 18757,16561
 (Klettwitzer Str. - Georg-Knorr-Str./Landsberger Allee): Beton mit Unkraut	Q1- 18757,16561 18822,16417
 (Klettwitzer Str. - Georg-Knorr-Str./Landsberger Allee): Asphalt	Q0 18822,16417 18953,16105 19035,15639 19018,15608 19041,15458 19019,15416 19012,15376 19063,15183 19113,15056
@@ -6612,7 +6612,7 @@ zur Georg-Knorr-Str.: Asphalt	Q0 19169,15015 19150,15009 19133,15004
 (Weg am Marzahn-Hohenschönhauser Grenzgraben): Kleinsteinpflaster	Q1- 19313,16130 19361,16145
 (Weg am Marzahn-Hohenschönhauser Grenzgraben): wassergebundene Decke	Q1 19361,16145 19427,16179 19460,16208 19525,16234
 Otto-Rosenberg-Str.: Beton	Q0 19896,16611 19803,16424 19991,16322
-Schkopauer Ring: Asphalt	Q0 20137,17087 19913,17196 19827,17032 20047,16910
+Schkopauer Ring: Asphalt	Q0 20137,17087 19914,17203 19827,17032 20047,16910
 (Eichhorster Str. - Klandorfer Str.): Asphalt	Q0- 21828,18701 21826,18727 21785,18861
 (Wuhlewanderweg): unbefestigter Weg	Q2+ 22329,17644 22093,17505
 Trusetaler Str.: Asphalt/Beton, teilweise schadhaft	Q1 21390,16903 21435,17097 21451,17189 21352,17210 21360,17261 21285,17276 21225,17286 21154,17296 21081,17329 21012,17360 20911,17414
@@ -9975,6 +9975,10 @@ Wasgensteig: unbefestigt	Q2 -2053,1632 -2043,1608
 (Bautzener Str. - Kolonnenstr.): Asphalt	Q0 8180,9099 8185,9083 8184,8902 8145,8773
 (zum Bahnhof Südkreuz): Asphalt	Q0 7837,7899 7838,7848
 (oberer Weg - Weg an der Bahnstrecke): Asphalt	Q0 8184,8902 8188,8895 8175,8815
+Clara-Immerwahr-Str.: Asphalt	Q0 19202,17471 19546,17351 19798,17263 19845,17235 19914,17203
+Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408,16824 19384,16863 19486,17170 19546,17351
+#: note gelbe Farbe, kein Asphalt oder Beton
+(Weg am CleanTech Business Park): fester Belag	Q0 19647,16633 19601,16679 19631,16704 19749,17028 19788,17076 19845,17235 19907,17429
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -11377,7 +11381,8 @@ Görschstr.: Kopfsteinpflaster	Q3+ 10053,17777 9870,17971
 Neue Schönholzer Str.: guter Asphalt	Q0 10089,18180 10141,18030 10179,17772
 # 
 #: by: arndt westphal:
-Guntherstr.: Kopfsteinpflaster	Q2 17020,12309 16994,12122 16975,12000
+#: confirmed_by: srt (Q2 -> Q2-)
+Guntherstr.: Kopfsteinpflaster	Q2- 17020,12309 16994,12122 16975,12000
 # 
 #: by: D.Mahlow: vvv
 Cheruskerstr.: Asphalt	Q0 7446,8200 7412,8253 7412,8273 7412,8351 7410,8593 7408,8648 7439,8716
@@ -24875,7 +24880,7 @@ Kehler Weg: asphaltiert	Q0 2027,4792 2025,4935
 Bitscher Str.: asphaltiert	Q0 1884,4811 1939,4949 1969,4978
 #: corrected_by: srt (Q1 -> Q0-)
 Darßer Str.: Beton	Q0- 15238,18015 15505,17967 15567,17956 15715,17930 15783,17915 15881,17899 16277,17830 16468,17792 16487,17785 16563,17759 16671,17672 16751,17560 16779,17521 16837,17440
-Gehrenseestr.: Beton	Q0 18316,16636 18490,16761 18587,16834 18738,16957
+Gehrenseestr.: Beton	Q0 18316,16636 18484,16757 18490,16761 18527,16789 18587,16834 18738,16957
 # 
 #: by: Jens Velten [AM] vvv
 Heubergerweg: Beton	Q1 17387,4446 17276,4539 17225,4568 17171,4575 17125,4565 17075,4525 17025,4462
@@ -24994,16 +24999,14 @@ Paul-Koenig-Str.: Asphalt	Q0 17152,16605 17268,16526 17312,16498 17304,16485
 #: corrected_by: srt (added Schäden)
 Paul-Koenig-Str.: Asphalt mit einigen Schäden	Q1 17304,16485 17385,16432
 #: corrected_by: srt (Asphalt -> ...)
-Paul-Koenig-Str.: schlechtes Kopfsteinpflaster	Q3 17385,16432 17446,16393
+Paul-Koenig-Str.: schlechtes Kopfsteinpflaster	Q3 17385,16432 17424,16407 17446,16393
 Paul-Koenig-Str.: Asphalt	Q0 17268,16526 17251,16497 17293,16469 17304,16485
 #: confirmed_by: srt
 Titastr.: schlechtes Kopfsteinpflaster	Q3 17271,16280 17385,16432
 #: confirmed_by: srt
 (Rüdickenstr. - Wartenberger Str.): wassergebundene Decke	Q1 17486,17266 17790,17126 17861,17105
-#: XXX hier vielleicht auch "wassergebundene Decke" oder "Verbundsteinpflaster"?
-(Entlang der Straßenbahn Wartenberger Str.): fester Kiesweg	Q1 17861,17105 17882,17078 17781,16941 17617,16691
 #: corrected_by: srt (fester Kiesweg -> ...)
-(Entlang der Straßenbahn Wartenberger Str.): Verbundsteinpflaster	Q1 17617,16691 17440,16407 17446,16393
+(Entlang der Straßenbahn Wartenberger Str.): Verbundsteinpflaster und Beton	Q1 17861,17105 17882,17078 17781,16941 17625,16695 17497,16506 17424,16407
 #: note: katrin Keppler ist unspezifischer und bescheinigt der gesamten Straße "mäßiger Asphalt"
 #: corrected_by: srt (guter Asphalt -> )
 Arnimstr.: rauer Asphalt	Q1 17902,17074 18073,17007 18282,16920
@@ -25027,7 +25030,7 @@ Christophstr.: Schotter	Q1 17965,16674 17938,16672 17923,16686 17903,16792
 Dietrichstr.: Asphalt	Q0 18416,16867 18246,16720
 #: corrected_by: srt (Asphalt -> ...)
 Dietrichstr.: unbefestigte Straße	Q2 18246,16720 18172,16664
-Anna-Ebermann-Str.: Beton	Q0 17634,16681 17751,16603 17825,16554 17836,16522 17877,16423 17895,16373
+Anna-Ebermann-Str.: Beton	Q0 17638,16686 17753,16604 17825,16554 17836,16522 17877,16423 17895,16373
 Anna-Ebermann-Str.: Beton	Q0 17836,16522 17907,16611
 Anna-Ebermann-Str.: Beton	Q0 17907,16611 17938,16654
 Joseph-Höhn-Str.: Beton	Q0 18096,16523 18076,16559 17938,16654 17886,16690 17832,16727 17870,16782 17884,16849 17796,16926
