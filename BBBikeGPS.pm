@@ -1554,7 +1554,7 @@ sub tk_interface {
     my $gps_route_info = $args{-gpsrouteinfo} or die "-gpsrouteinfo arg is missing";
     my $oklabel = $args{-oklabel};
     my $file = delete $args{-file}; # only set if saving into a file
-    my $uniquewpts = exists $args{-uniquewpts} ? delete $args{-uniquewpts} : 1;
+    my $uniquewpts = exists $args{-uniquewpts} ? delete $args{-uniquewpts} : 0;
 
     if (!defined $gps_route_info->{Name} || $gps_route_info->{Name} eq '') {
 	# use filename, if existing
@@ -1746,7 +1746,7 @@ sub tk_interface {
 
     sub tk_interface {
 	my($self, %args) = @_;
-	BBBikeGPS::tk_interface($self, %args, -uniquewpts => 0);
+	BBBikeGPS::tk_interface($self, %args);
     }
 
     sub convert_from_route {
@@ -1761,10 +1761,7 @@ sub tk_interface {
 	require Route::Simplify;
 	require Strassen::Core;
 	require Strassen::GPX;
-	my $simplified_route = $route->simplify_for_gps(%args, -uniquewpts => 0,
-							-leftrightpair  => ['<- ', ' ->'],
-							-leftrightpair2 => ['<\\ ',' />'],
-						       );
+	my $simplified_route = $route->simplify_for_gps(%args, -uniquewpts => 0);
 	my $s = Strassen::GPX->new;
 	$s->set_global_directives({ map => ["polar"] });
 	for my $wpt (@{ $simplified_route->{wpt} }) {

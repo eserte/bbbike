@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2003,2004,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003,2004,2012,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -195,7 +195,7 @@ sub dump {
 sub tk_interface {
     my($self, %args) = @_;
     require BBBikeGPS;
-    BBBikeGPS::tk_interface($self, %args);
+    BBBikeGPS::tk_interface($self, -uniquewpts => 1, %args);
 }
 
 sub reset_waypoint_cache {
@@ -253,7 +253,11 @@ sub simplify_route {
 
     require Route::Simplify;
 
-    my $simplified_route = $route->simplify_for_gps(%args, waypointscache => \%waypoints);
+    my $simplified_route = $route->simplify_for_gps(%args, waypointscache => \%waypoints,
+						    -leftrightpair  => ['(- ', ' -)'],
+						    -leftrightpair2 => ['(\\ ',' /)'],
+						    -uniquewpts => 1,
+						   );
 
     $self->{'origpath'} = $route->path;
     $self->{'used_idents'} = $simplified_route->{'idents'};

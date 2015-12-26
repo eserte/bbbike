@@ -28,7 +28,7 @@
 
     sub tk_interface {
 	my($self, %args) = @_;
-	BBBikeGPS::tk_interface($self, %args, -uniquewpts => 0);
+	BBBikeGPS::tk_interface($self, %args);
     }
 
     sub convert_from_route {
@@ -42,10 +42,7 @@
 	require Route::Simplify;
 	require Strassen::Core;
 	require Strassen::GPX;
-	my $simplified_route = $route->simplify_for_gps(%args, -uniquewpts => 0,
-							-leftrightpair  => ['<- ', ' ->'],
-							-leftrightpair2 => ['<\\ ',' />'],
-						       );
+	my $simplified_route = $route->simplify_for_gps(%args);
 	my $s = Strassen::GPX->new;
 	$s->set_global_directives({ map => ["polar"] });
 	for my $wpt (@{ $simplified_route->{wpt} }) {

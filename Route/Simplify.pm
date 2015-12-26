@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2009,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2009,2012,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package Route::Simplify;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.08;
+$VERSION = 1.09;
 
 use GPS::Util qw(eliminate_umlauts);
 
@@ -82,10 +82,18 @@ use GPS::Util qw(eliminate_umlauts);
 #  - punkte für straßennamenswechsel
 #  - evtl. minuspunkte für kleine entfernungen vom vorherigen+nächsten punkt
 #
-# -leftrightpair: defaults to '(-' and '-)' (but should be set to '<-' and '->'
-# for suitable tools): used for "hard" turns (more than 60°)
-# -leftrightpair2: defaults to '(\' and '/)', used for "soft" turns between
+# -leftrightpair: defaults to '<-' and '->', used for "hard" turns
+# (more than 60°)
+# -leftrightpair2: defaults to '<\' and '/>', used for "soft" turns between
 # 30° and 60°
+#
+# Note that in the past the default for -leftrightpair* was different:
+# '(-', '(\', '/)', and '-)' --- mainly because of a bug (?) in the ancient
+# Garmin transport protocol regarding the handling of '\' and '/' characters
+#
+# -uniquewpts: set to a true value (1) if waypoint names have to be unique ---
+# this is usually not needed for "modern" gpx outputs, but may be required
+# for the old Garmin transport protocol
 #
 sub Route::simplify_for_gps {
     my($route, %args) = @_;
@@ -112,12 +120,11 @@ sub Route::simplify_for_gps {
     my $waypointscache = $args{-waypointscache} || {};
     my $routenamelength = $args{-routenamelength} || 13;
     my $showcrossings = exists $args{-showcrossings} ? $args{-showcrossings} : 1;
-    # "<" and ">" somehow does not work when used with perl-GPS, so
-    # fallback to "(- " and " -)". But gpsbabel may use "<" and ">" or
-    # so.
-    my $leftrightpair  = $args{-leftrightpair}  || ["(- ", " -)"];
-    my $leftrightpair2 = $args{-leftrightpair2} || ["(\\ ", " /)"];
-    my $uniquewpts = exists $args{-uniquewpts} ? $args{-uniquewpts} : 1;
+    # "<" and ">" somehow does not work when used with perl-GPS ---
+    # in this case use "(-" and "-)" or so in -leftrightpair
+    my $leftrightpair  = $args{-leftrightpair}  || ["<- ", " ->"];
+    my $leftrightpair2 = $args{-leftrightpair2} || ["<\\ ", " />"];
+    my $uniquewpts = exists $args{-uniquewpts} ? $args{-uniquewpts} : 0;
     my $debug = $args{-debug};
 
     my %crossings;
