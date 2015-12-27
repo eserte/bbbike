@@ -3196,29 +3196,7 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: XXX die Qualität wird nach den Bauarbeiten vermutlich besser sein, teilweise auch schlechter (wassergebundene Decke statt Asphalt) vvv
-#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.297071.php
-#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.295591.php
-#: next_check: 2015-12-22
-userdel	2::inwork 14318,9688 14443,9731
-# REMOVED --- userdel	2::inwork 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
-# REMOVED --- userdel	2::inwork 14575,9648 14645,9710 14697,9726 14889,9660
-# REMOVED --- userdel	2::inwork 14635,9786 14840,9692 14889,9660 14909,9649 15052,9584 15186,9550 15304,9464 15432,9322 15453,9259
-# REMOVED ---	2::inwork 14475,9199 14531,9244 14655,9311
-# REMOVED ---	2::inwork 14398,9373 14485,9271 14531,9244
-# REMOVED --- userdel	2::inwork 15453,9259 15513,9144 15527,9096 15638,9020
-# REMOVED --- userdel	2::inwork 14443,9731 14361,9772
-# REMOVED --- userdel	2::inwork 15630,8979 15638,9020 15778,8990
-# REMOVED --- userdel	2::inwork 14909,9649 14866,9571 14837,9517
-#: XXX ^^^
-',
-         'from' => undef,
-         'id' => 2710,
-         'text' => 'Treptower Park: einige Wege im nördlichen und südlichen Teil des Parks werden instand gesetzt und können gesperrt sein',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,

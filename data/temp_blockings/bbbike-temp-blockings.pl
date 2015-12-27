@@ -24204,7 +24204,7 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1451249158, # undef, # XXX
        text  => 'Treptower Park: einige Wege im nördlichen und südlichen Teil des Parks werden instand gesetzt und können gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
