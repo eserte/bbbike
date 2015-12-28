@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: MyPage.pm,v 1.5 2008/10/06 22:02:59 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004,2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2009,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +15,7 @@ package PDF::Create::MyPage;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.06';
 
 ######################################################################
 # Additional PDF::Create methods
@@ -29,6 +28,10 @@ if (!defined &PI) {
 }
 
 if (!defined &set_stroke_color) {
+    # In newer PDF::Create versions, setrgbcolorstroke exists.
+    # However, setrgbcolorstroke does not remember the current stroke
+    # color, and would generate too many RG instructions if called
+    # repeatedly with the same values.
     *set_stroke_color = sub {
 	my($page, $r, $g, $b) = @_;
 	return if (defined $page->{'current_stroke_color'} &&
@@ -40,6 +43,8 @@ if (!defined &set_stroke_color) {
 }
 
 if (!defined &set_fill_color) {
+    # Counterpart in PDF::Create is setrgbcolor. Same comment as for
+    # setrgbcolorstroke is true here, too.
     *set_fill_color = sub {
 	my($page, $r, $g, $b) = @_;
 	return if (defined $page->{'current_fill_color'} &&
@@ -51,6 +56,8 @@ if (!defined &set_fill_color) {
 }
 
 if (!defined &set_line_width) {
+    # Counterpart in PDF::Create is set_width. Same comment as for
+    # setrgbcolorstroke is true here, too.
     *set_line_width = sub {
 	my($page, $w) = @_;
 	return if (defined $page->{'current_line_width'} &&
@@ -62,6 +69,7 @@ if (!defined &set_line_width) {
 }
 
 if (!defined &set_dash_pattern) {
+    # Missing in PDF::Create 1.24
     *set_dash_pattern = sub {
 	my($page, $array, $phase) = @_;
 	$phase = 0 if !defined $phase;
@@ -72,6 +80,7 @@ if (!defined &set_dash_pattern) {
 }
 
 if (!defined &circle) {
+    # Missing in PDF::Create 1.24
     *circle = sub {
 	my($page, $x, $y, $r) = @_;
 
@@ -92,7 +101,8 @@ if (!defined &circle) {
 }
 
 # Override the original string_width method, because it uses wrong
-# width tables (maybe based on a non-iso-8859-1 font?)
+# width tables (maybe based on a non-iso-8859-1 font?). See also
+# https://rt.cpan.org/Ticket/Display.html?id=110723
 my $font_widths = {};
 sub my_string_width {
     my $self   = shift;
@@ -106,8 +116,14 @@ sub my_string_width {
 	my @wx = eval qq{ require $modname; \@${modname}::wx };
 	if (@wx) {
 	    $font_widths->{$fname} = [ map { int($_*1000) } @wx ];
-	    # hyphen-minus-confusion in Font::AFM:
-	    # XXX report in rt
+	    # Font::AFM uses ISOLatin1Encoding, whereas PDF::Create
+	    # typically sets WinAnsiEncoding. These two are almost the
+	    # same, except for hyphen vs. minus and some other diffs,
+	    # try:
+	    #
+	    #    perl -MPostScript::WinANSIEncoding -MFont::AFM -e '@w=PostScript::WinANSIEncoding->array; @l= @Font::AFM::ISOLatin1Encoding; for my $ch (0..255) { if ($w[$ch] ne $l[$ch]) { print "$ch $w[$ch] $l[$ch]\n"}}'
+	    #
+	    # Fix only the most problematic one, hyphen vs. minus:
 	    $font_widths->{$fname}[ord("-")] = $font_widths->{$fname}[173];
 	} else {
 	    # fallback to original
