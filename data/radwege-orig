@@ -1100,7 +1100,7 @@ die letzten 50 Meter sind benutzungspflichtig	RW1; 18225,7004 18010,7133
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
-#: last_checked: 2015-12-27
+#: last_checked: 2015-12-28
 #: check_frequency: 90d
 	RW8;RW2 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
@@ -1504,7 +1504,7 @@ die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
 	RW3;RW2 14672,10760 14674,10811
 #: next_check_id: HAUPTSTR-2015
 #: XXX wegen Bauarbeiten aufgehoben, früher RW4;RW4
-#: last_checked: 2015-12-15
+#: last_checked: 2015-12-28
 #: check_frequency: 30d
 	RW0;RW0 14674,10811 14717,10855
 	RW1;RW1 14652,10201 14688,10167 14705,10149 14747,10108 14817,10031
@@ -4697,3 +4697,7 @@ Busspur gilt Mo-Fr 6-19 Uhr	RW5; 12742,8635 12630,8722 12483,8834 12438,8859 123
 Tempo 10	RW6;RW6 8389,9087 8389,9017
 # REMOVED (geklärt) --- #: XXX sind hier Radspuren oder Suggestivstreifen? --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1511/nachricht5839.html
 	RW3;RW3 3739,13563 3833,13590 4098,13664 4187,13704
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5891.html
+#: XXX: Siegfriedstr.: existieren hier Radspuren oder Suggestivstreifen?
+#: XXX ggfs. kann der comments_tram-Eintrag entfernt werden
+	RW4?;RW4? 16866,13532 17201,13519

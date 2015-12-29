@@ -20919,7 +20919,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20120921.1525.375622.html',
        data  => <<EOF,
-userdel	q4::inwork 18988,8791 19073,8828 19116,8846 19163,8867 19299,8946 19500,9043 19621,9097
+userdel	q4::inwork 18988,8792 19073,8828 19116,8846 19163,8867 19299,8946 19500,9043 19621,9097
 EOF
      },
      { from  => 1348376400, # 2012-09-23 07:00
@@ -23148,7 +23148,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.149073.php',
        data  => <<EOF,
-userdel	q4::inwork 16068,6216 16105,6193 16220,6277 16304,6358 16304,6374 16192,6503
+userdel	q4::inwork 16068,6216 16105,6193 16220,6277 16304,6358 16304,6374 16195,6506
 EOF
      },
      { from  => 1407354971, # 2014-08-06 21:56

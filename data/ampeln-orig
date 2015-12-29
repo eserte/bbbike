@@ -2455,7 +2455,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # REMOVED --- #: next_check_id: KARLSHORSTER-2015 --- #: last_checked: 2015-09-18 --- #: next_check: 2015-09-21 --- #: note: provisorische Ampel --- #: XXX nicht immer eingeschaltet, z.B. 2015-08-08 (Sa) gegen 10 Uhr off --- valid: -20150921 ---	X::inwork 14805,10518
 #: XXX bleibt die Ampel permanent?
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1509/nachricht5759.html (ja, es wird eine neue Ampel errichtet)
-#: last_checked: 2015-12-19
+#: last_checked: 2015-12-28
 #: check_frequency: 60d
 	X::inwork 14906,10820
 	F 8667,5372
@@ -2765,7 +2765,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_prog eigentlich nur für Radfahrer Richtung Südosten relevant vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
 #: source_id: IM_023548 (bis Ende April 2016) vvv
-#: last_checked: 2015-08-15 vvv
+#: last_checked: 2015-12-28 vvv
 #: check_frequency: 120d vvv
 	F 17568,7753
 	F 17769,7465
@@ -2782,7 +2782,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
 #: source_id: IM_023532 (Gesamtmaßnahme bis Ende Juni 2016) vvv
 #: source_id: 2147339539 vvv
-#: last_checked: 2015-09-26 vvv
+#: last_checked: 2015-12-28 vvv
 #: check_frequency: 90d vvv
 	F 16886,6665
 	F 16646,6925
@@ -2971,7 +2971,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -12655,-1714
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
 #: next_check_id: KIEFHOLZ-2015 vvv
-#: last_checked: 2015-12-27 vvv
+#: last_checked: 2015-12-28 vvv
 #: check_frequency: 90d vvv
 	X::inwork 14151,8967
 	X::inwork 14363,8738
@@ -3442,7 +3442,7 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	X 18423,-843
 #: next_check_id: BER-20XX vvv
 #: XXX: Ampel am 2012-05-06 noch ausgeschaltet, wird wahrscheinlich mit BER in Betrieb gehen vvv
-#: next_check: 2016-01-01 vvv
+#: next_check: 2017-01-01 vvv
 	X0 19909,-2863
 	F0 18861,-3921
 #: XXX ^^^

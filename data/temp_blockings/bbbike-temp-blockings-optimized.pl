@@ -1933,31 +1933,7 @@ userdel	2::temp 9524,12010 9656,12021
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: Winterwelt bereits ab 2.11.2014 (bis 4.1.2015), Weihnachtsmarkt erst ab dem 24.11.2014
-userdel	2::temp 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324
-#userdel	2::temp 8318,11324 8280,11296 8278,11257
-#: XXX_prog "3::temp" geht nicht?
-userdel	3 8427,11365 8389,11378 8374,11479
-userdel	3 8374,11479 8389,11378 8427,11365
-',
-         'from' => 1448146800,
-         'id' => 1997,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              19,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971680-955635-winterweltampotsdamerplatz.html',
-         'text' => 'Winterwelt am Potsdamer Platz, Alte Potsdamer Str. gesperrt, 23. November 2015 bis 27. Dezember 2015',
-         'type' => 'gesperrt',
-         'until' => 1451257199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2856,26 +2832,7 @@ userdel	2::night 17671,13132 17684,13133
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.potsdam.de/content/weihnachtliches-potsdam-1
-userdel	1::temp -13556,-1182 -13643,-1220
-',
-         'from' => 1448146800,
-         'id' => 2526,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              23,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Weihnachtsmarkt am Luisenplatz: geänderte Radverkehrsführung, 23.11.2015 - 27.12.2015',
-         'type' => 'gesperrt',
-         'until' => 1451257199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3340,27 +3297,7 @@ userdel	2::inwork -1298,2017 -1082,2140
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	q3::temp 11139,13008 11064,12910 10970,12822
-userdel	q4::temp 11064,12910 11134,12793
-',
-         'from' => 1448146800,
-         'id' => 2763,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              23,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/1304487-1328132-weihnachtsmarktaufdemalexanderplatz.html',
-         'text' => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 23. November 2015 bis 27. Dezember 2015',
-         'type' => 'handicap',
-         'until' => 1451257199
-       },
+       undef,
        {
          'data' => '#: XXX Wann sind die Bauarbeiten beendet? Wie weit geht die Sperrung Richtung Süden?
 #: last_checked: 2015-12-17

@@ -422,7 +422,7 @@ Ceciliengärten	1 6256,7428 6241,7428 6238,7645 6257,7646 6272,7645 6289,7472 629
 Ingelheimer Str.	1 18891,8586 18951,8574 19030,8559
 Andernacher Str.	1 19030,8559 19000,8509
 Andernacher Str.	1 18949,8437 19000,8509
-Gleyeweg	1 17565,8197 17532,8125 17529,8073 17613,7989 17651,7973 17683,7958 17762,7931
+Gleyeweg	1 17566,8199 17532,8125 17529,8073 17613,7989 17651,7973 17683,7958 17762,7931
 Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 19599,14273 19595,14348 19593,14405 19593,14452
 Murtzaner Ring	1 19818,14064 19843,14064 19921,14064 19951,14083 20040,14179
 Rosenstr.	1 22284,4653 22212,4655 22138,4661
@@ -511,7 +511,7 @@ Bösensteinweg	1 9943,1543 9847,1571 9771,1641
 Wesenberger Ring	1 13030,3664 13129,3809 13165,3850 13206,3854 13229,3836 13238,3794 13206,3674 13163,3582
 Anna-Mackenroth-Weg	1 3633,2210 3641,2464
 Fuchsbau	1 17590,7828 17651,7973
-Drosselstieg	1 17683,7958 17747,8107
+Drosselstieg	1 17683,7958 17748,8109
 Blaurackenweg	1 17532,8125 17647,8071 17613,7989
 Harzburger Str. (Pankow), Klaustaler Str...	1s 11442,18736 11419,18801 11463,18817 11469,18799 11483,18753 11462,18743 11442,18736
 Faucherweg	1 -1307,14801 -1251,14772 -1207,14781 -1141,14814 -896,14888
@@ -1401,8 +1401,8 @@ Schönewalder Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24974,14355 2493
 Riesaer Str. -> Mittweidaer Str.: Straßenbahntrasse	3::igndisp 25095,14171 24983,14208 24918,14008
 Mittweidaer Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24918,14008 24983,14208 24930,14225
 wegen Überführung nicht überquerbar	3nocross::ignrte 17527,7812 17568,7753 17681,7589 17769,7465 17839,7365 18010,7133
-Mentelinstr. -> Rummelsburger Str.: wegen Überführung nicht überquerbar	3::igndisp 17743,7328 17839,7365 17769,7465
-Rummelsburger Str. -> Mentelinstr.: wegen Überführung nicht überquerbar	3::igndisp 18010,7133 17839,7365 17743,7328
+Mentelinstr. -> Rummelsburger Str.: wegen Überführung nicht überquerbar	3::igndisp 17747,7322 17839,7365 17769,7465
+Rummelsburger Str. -> Mentelinstr.: wegen Überführung nicht überquerbar	3::igndisp 18010,7133 17839,7365 17747,7322
 Mittelstreifen nicht passierbar	3nocross::ignrte 4469,8037 4659,7982 4793,8005
 Detmolder Str. -> Aachener Str.: Mittelstreifen nicht passierbar	3::igndisp 4572,7936 4659,7982 4609,8013
 Aachener Str. -> Detmolder Str.: Mittelstreifen nicht passierbar	3::igndisp 4609,8013 4659,7982 4793,8005
@@ -2789,6 +2789,7 @@ versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
 Drängelgitter	BNP:3:-240 31665,48997
+Treptower Park: Bauarbeiten, Weg noch nicht fertiggestellt	2::inwork 14318,9688 14443,9731
 Clara-Immerwahr-Str.: Bauzäune	2::inwork 19202,17471 19546,17351 19798,17263 19845,17235 19914,17203
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
 SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2408,1144 2352,1267

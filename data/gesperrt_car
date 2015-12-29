@@ -870,10 +870,10 @@ Streitstr. -> Chamissostr.: Mittelstreifen	3::igndisp -3009,17090 -3017,16984 -2
 Chamissostr. -> Streitstr.: Mittelstreifen	3::igndisp -2838,16951 -3017,16984 -3018,16974
 Straßenbahntrasse	3nocross::ignrte 18770,8898 18737,8686 18733,8650
 Treskowallee -> Ehrenfelsstr.: Straßenbahntrasse	3::igndisp 18770,8898 18737,8686 18778,8663
-Treskowallee -> Rheinsteinstr.: Straßenbahntrasse	3::igndisp 18770,8898 18737,8686 18866,8738
+Treskowallee -> Rheinsteinstr.: Straßenbahntrasse	3::igndisp 18770,8898 18737,8686 18865,8740
 Ehrenfelsstr. -> Treskowallee: Straßenbahntrasse	3::igndisp 18778,8663 18737,8686 18733,8650
-Rheinsteinstr. -> Treskowallee: Straßenbahntrasse	3::igndisp 18866,8738 18737,8686 18733,8650
-Rheinsteinstr. -> Ehrenfelsstr.: Straßenbahntrasse	3::igndisp 18866,8738 18737,8686 18778,8663
+Rheinsteinstr. -> Treskowallee: Straßenbahntrasse	3::igndisp 18865,8740 18737,8686 18733,8650
+Rheinsteinstr. -> Ehrenfelsstr.: Straßenbahntrasse	3::igndisp 18865,8740 18737,8686 18778,8663
 Lötzener Allee	1 564,10584 452,10669 475,10882 495,11090
 keine Abbiegemöglichkeit	3nocross::ignrte 20064,3278 20010,3340 20002,3349 19904,3464
 Adlergestell -> Weerthstr.: keine Abbiegemöglichkeit	3::igndisp 20002,3349 20010,3340 20038,3357
@@ -1718,7 +1718,7 @@ Möllendorffstr. [Wohngebiet]	1 15470,13509 15479,13273 15347,13268
 Berliner Allee -> Falkenberger Str.: nur für BVG frei	3 14608,16772 14619,16682 14723,16691
 Dennewitzplatz	1 7906,10098 7866,9918
 Buolstr.	1 559,15342 429,15284
-Liepnitzstr.: nur für Anlieger und Radfahrer	2:Anlieger 17852,8155 17803,8079
+Liepnitzstr.: nur für Anlieger und Radfahrer	2:Anlieger 17856,8162 17803,8079
 Behlertstr.	1 -12370,-354 -12514,-340 -12621,-359 -12821,-417
 Schadowstr. - Unter den Linden	3 9016,12416 9028,12307 9141,12320
 Richardstr.	1 13103,7889 13085,7904 13045,7938
