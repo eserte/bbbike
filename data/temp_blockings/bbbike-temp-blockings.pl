@@ -17244,7 +17244,7 @@ EOF
 userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998
 EOF
      },
-     { from  => $isodate2epoch->("2015-12-27 06:00:00"),
+     { from  => $isodate2epoch->("2015-12-27 06:00:00"), # siehe auch anderen Eintrag mit weiteren Sperrungen am 31. und 1.
        until => $isodate2epoch->("2016-01-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 12]],
@@ -24448,7 +24448,7 @@ userdel	q4::inwork 7081,1346 6984,1540 6881,1743
 EOF
      },
      { from  => 1440910800, # 2015-08-30 07:00
-       until => 1482501600, # 2016-12-23 15:00
+       until => 1482501600, # 2016-12-23 15:00 # laut rbbtext bis 30.12.2016, laut fritz nur bis 31.12.2015
        text  => 'Konstanzer Str.: zwischen Düsseldorfer Str. und Brandenburgische Str. Baustelle, Fahrbahn Richtung Brandenburgische Str. gesperrt, bis Ende Dezember 2016',
        type  => 'handicap',
        source_id => 'IM_026066',
@@ -24792,6 +24792,25 @@ EOF
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.421075.php
 userdel	2::inwork 20635,7119 20722,6971
+EOF
+     },
+     { from  => 1451473200, # 2015-12-30 12:00 # siehe auch anderen Eintrag mit früheren Sperrungen
+       until => 1451646000, # 2016-01-01 12:00
+       periodic => 1,
+       recurrences => [['yearly', days => 31, months => 12]],
+       text  => 'Regierungsviertel u.a. Dorotheenstr., Scheidemannstr., Heinrich-von-Gagern-Str. und Paul-Löbe-Allee: wegen Silvesterparty gesperrt, vom 31.12.2015 12:00 Uhr bis 01.01.2016 12:00 Uhr',
+       type  => 'gesperrt',
+       source_id => '2147339665',
+       data  => <<EOF,
+userdel	2::temp 8485,12612 8399,12610 8348,12609 8306,12609 8207,12606 8122,12603 8119,12414 8354,12416 8400,12417 8540,12420
+userdel	2::temp 8348,12609 8354,12416
+	2::temp 8207,12606 8206,12757
+userdel auto	3 7945,12592 8122,12603 8120,12756
+userdel auto	3 8391,12389 8400,12417 8399,12610
+userdel auto	3 8070,12409 8119,12414 8055,12186
+userdel auto	3 8399,12610 8400,12417 8391,12389
+userdel auto	3 8120,12756 8122,12603 7945,12592
+userdel auto	3 8055,12186 8119,12414 8070,12409
 EOF
      },
     );

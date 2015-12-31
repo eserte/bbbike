@@ -1884,27 +1884,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 11329,12497 11209,12430
-userdel	2::temp 11209,12430 11273,12301
-userdel	2::temp 11273,12301 11355,12331
-',
-         'from' => 1446764400,
-         'id' => 1988,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              6,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr. und Dircksenstr.), von Mitte November 2015 bis Ende Dezember 2015',
-         'type' => 'gesperrt',
-         'until' => 1451516399
-       },
+       undef,
        {
          'data' => 'userdel	2::temp 9536,11922 9666,11935
 userdel	2::temp 9524,12010 9656,12021
@@ -2985,18 +2965,7 @@ userdel	q3::inwork 4503,10497 4485,10307
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX siehe auch gesperrt-orig-Eintrag
-userdel	2::inwork -3181,11496 -3177,11507 -3173,11520
-userdel	2::inwork -3197,11554 -3075,11510
-',
-         'from' => undef,
-         'id' => 2641,
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/bauen/strassenbau/freybruecke/de/bau.shtml',
-         'text' => 'Freybrücke: die Baustraße und die Treppe sind während der Bauarbeiten an der Freybrücke nicht benutzbar, bis Dezember 2015',
-         'type' => 'gesperrt',
-         'until' => 1451487600
-       },
+       undef,
        undef,
        {
          'data' => '#: note: am Di, den 2015-11-17 gegen 18:30: geschlossen
@@ -3308,6 +3277,36 @@ userdel	q3::inwork 12620,9293 12565,9200
          'text' => 'Rütlistr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg',
          'type' => 'handicap',
          'until' => undef
+       },
+       undef,
+       undef,
+       {
+         'data' => 'userdel	2::temp 8485,12612 8399,12610 8348,12609 8306,12609 8207,12606 8122,12603 8119,12414 8354,12416 8400,12417 8540,12420
+userdel	2::temp 8348,12609 8354,12416
+	2::temp 8207,12606 8206,12757
+userdel auto	3 7945,12592 8122,12603 8120,12756
+userdel auto	3 8391,12389 8400,12417 8399,12610
+userdel auto	3 8070,12409 8119,12414 8055,12186
+userdel auto	3 8399,12610 8400,12417 8391,12389
+userdel auto	3 8120,12756 8122,12603 7945,12592
+userdel auto	3 8055,12186 8119,12414 8070,12409
+',
+         'from' => 1451473200,
+         'id' => 2767,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              31,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => '2147339665',
+         'text' => 'Regierungsviertel u.a. Dorotheenstr., Scheidemannstr., Heinrich-von-Gagern-Str. und Paul-Löbe-Allee: wegen Silvesterparty gesperrt, vom 31.12.2015 12:00 Uhr bis 01.01.2016 12:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1451646000
        }
      
 );

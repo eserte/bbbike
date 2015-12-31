@@ -12208,8 +12208,10 @@ Leykestr.	N 12335,7770 12075,7696
 Kronprinzenbrücke	N 8503,12895 8424,12853
 Konrad-Adenauer-Str.	N 8424,12853 8309,12758 8306,12609
 Otto-von-Bismarck-Allee	N 8415,12749 8309,12758 8206,12757 8120,12756
+#: XXX laut osm "Willy-Brandt-Str." --- gibt es hier Straßenschilder? vvv
 (Umfahrung Kanzleramt)	H 8207,12606 8206,12757
 (Umfahrung an der Schweizer Botschaft)	H 8206,12757 8204,12816 8168,12848 8124,12840 8030,12824
+#: XXX ^^^
 Monbijoubrücke	NN 9654,12882 9683,12913 9707,12974
 Monbijoustr.	N 9707,12974 9714,12995 9736,13061 9771,13182
 Ziegelstr. (Mitte)	N 9269,13060 9413,13071 9559,13087 9636,13076 9736,13061
@@ -13010,7 +13012,7 @@ Ginsterweg	N 26175,14088 26173,14154
 Wildrosengehölz	N 25977,13624 25922,13657 25846,13685 25784,13698 25666,13725 25649,13728 25571,13752 25515,13769 25365,13845
 Hermelinweg	N 25515,13769 25591,14042
 Taxusweg	N 25649,13728 25671,13840 25681,13943 25681,14049
-Stralsunder Str. (Mahlsdorf)	N 26231,13115 26350,13068 26444,13031 26540,12993 26651,12941 26696,12924
+Stralsunder Str. (Mahlsdorf)	N 26231,13115 26350,13068 26444,13031 26468,13021 26540,12993 26651,12941 26696,12924
 Tizianstr.	N 26444,13031 26605,13217 26792,13441
 Schongauerstr.	N 26540,12993 26676,13155 26825,13331
 #: note: Privatstraße ohne Bürgersteig
@@ -13046,6 +13048,10 @@ Spitzmausweg	N 26096,12563 26183,12670
 #: note: laut LOR "Waschbärenweg", laut Amtsblatt und Straßenschild "Waschbärweg"
 #: note: Privatstraße
 Waschbärweg	N 26160,12538 26247,12643
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/53re.pdf/file?y=2015 (Bisamstr. am 27. November 2015 freigegeben)
+#: add_fragezeichen: wie ist die Fahrbahnbeschaffenheit der Bisamstr.? Kann man von Spitzmausweg und Waschbärweg direkt zur Bisamstr. gelangen?
+#: XXX ggfs. die culdesac-Einträge entfernen
+Bisamstr.	N 26468,13021 26427,12967 26394,12927 26362,12887 26328,12845 26195,12682 26315,12618 26201,12499
 Rubensstr. (Mahlsdorf)	N 26009,12407 26066,12570
 Florastr. (Mahlsdorf)	NN 24851,12204 24861,12226
 Florastr. (Mahlsdorf)	N 24861,12226 24847,12306 24862,12362 24878,12385 24907,12425 24975,12518 25055,12609 25126,12710 25233,12828 25332,12922 25376,12981 25408,13023 25471,13148 25491,13259 25487,13444 25489,13497 25571,13752
