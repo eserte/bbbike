@@ -116,6 +116,8 @@ if (defined param("mapserver")) {
     show_html();
 }
 
+1; # for CGI::Compile - see https://github.com/miyagawa/CGI-Compile/issues/18
+
 sub show_html {
     my(%args) = @_;
     my $css = <<'EOF';
