@@ -186,6 +186,15 @@ sub gps_data_viewer {
 		       }
 		   })->pack(-side => "left");
         }
+	$f->Button(-text => 'Select max. velocity',
+		   -command => sub {
+		       my $item = $gps_view->find_item_with_max_velocity;
+		       if (defined $item) {
+			   $gps_view->show_item($item);
+		       } else {
+			   $t->messageBox(-message => 'No item with maximum velocity found', -type => 'Ok');
+		       }
+		   })->pack(-side => 'left');
 	$f->Button(-text => "Set accuracy for selection",
 		   -command => sub {
 		       my @sel_items = $gps_view->get_selected_items;
@@ -215,15 +224,6 @@ sub gps_data_viewer {
 		       $edit->set_accuracies(\@lines, $new_accuracy);
 		       $gps_view->reload;
 		   })->pack(-side => "left");
-	$f->Button(-text => 'Select max. velocity',
-		   -command => sub {
-		       my $item = $gps_view->find_item_with_max_velocity;
-		       if (defined $item) {
-			   $gps_view->show_item($item);
-		       } else {
-			   $t->messageBox(-message => 'No item with maximum velocity found', -type => 'Ok');
-		       }
-		   })->pack(-side => 'left');
 	$f->Button(-text => 'Statistics',
 		   -command => sub {
 		       require GPS::GpsmanData::Stats;
