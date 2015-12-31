@@ -192,8 +192,13 @@ sub OnDestroy {
 
 # $gpsman_obj may be a GPS::GpsmanData or GPS::GpsmanMultiData
 # $wpt_gpsman_obj is optional; currently only GPS::GpsmanData is supported (because get_sorted_waypoints_by_time is not available in the other)
+# Additional options:
+#   -keeplistposition => 1: if not set, then set list position to first entry, otherwise keep position
 sub associate_object {
-    my($w, $gpsman_obj, $wpt_gpsman_obj) = @_;
+    my($w, $gpsman_obj, $wpt_gpsman_obj, %args) = @_;
+    my $keep_list_position = delete $args{-keeplistposition};
+    die "Unhandled arguments: " . join(' ', %args) if %args;
+
     $w->{GpsmanData} = $gpsman_obj;
     if ($wpt_gpsman_obj) {
 	$w->{WptGpsmanData} = $wpt_gpsman_obj;
@@ -205,7 +210,9 @@ sub associate_object {
     }
     $w->_clear_data_view;
     $w->_fill_data_view;
-    $w->show_item;
+    unless ($keep_list_position) {
+	$w->show_item;
+    }
 }
 
 sub get_associated_object {

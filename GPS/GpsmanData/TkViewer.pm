@@ -26,7 +26,7 @@ use Karte::Polar;
 use Tk::PathEntry;
 
 # These are global and intentionally shared within a process.
-our($gps_data_viewer_file, $gps_data_dir, $include_associated_wpt_file);
+our($gps_data_viewer_file, $last_loaded_gps_data_viewer_file, $gps_data_dir, $include_associated_wpt_file);
 
 sub gps_data_viewer {
     my($class, $parent, %opts) = @_;
@@ -60,7 +60,9 @@ sub gps_data_viewer {
 		    $wpt_gps->load($wpt_file);
 		}
 	    }
-	    $gps_view->associate_object($gps, $wpt_gps);
+	    my $keep_list_position = defined $last_loaded_gps_data_viewer_file && $last_loaded_gps_data_viewer_file eq $gps_data_viewer_file;
+	    $gps_view->associate_object($gps, $wpt_gps, -keeplistposition => $keep_list_position);
+	    $last_loaded_gps_data_viewer_file = $gps_data_viewer_file;
 	}
     };
     my $unplot_file = sub {
