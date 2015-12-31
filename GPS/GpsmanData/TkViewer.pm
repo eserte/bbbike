@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2015 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,7 +14,7 @@
 package GPS::GpsmanData::TkViewer;
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.02';
+$VERSION = '1.03';
 
 use FindBin;
 
@@ -150,6 +150,7 @@ sub gps_data_viewer {
 
     {
 	my $f = $t->Frame->pack(qw(-fill x));
+	if (0) {
 	$f->Button(-text => "Select premature points",
 		   -command => sub {
 		       require GPS::GpsmanData::Analyzer;
@@ -184,6 +185,7 @@ sub gps_data_viewer {
 			   }
 		       }
 		   })->pack(-side => "left");
+        }
 	$f->Button(-text => "Set accuracy for selection",
 		   -command => sub {
 		       my @sel_items = $gps_view->get_selected_items;
