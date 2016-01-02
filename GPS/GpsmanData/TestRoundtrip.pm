@@ -150,3 +150,54 @@ sub strip_unhandled_gpx_stuff {
 1;
 
 __END__
+
+=head1 NAME
+
+GPS::GpsmanData::TestRoundtrip - roundtrip check for gpx -> gpsman conversion
+
+=head1 SYNOPSIS
+
+    use GPS::GpsmanData::TestRoundtrip;
+    $success = GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($gpxfile, timeoffset => ...);
+
+=head1 DESCRIPTION
+
+Provides a function for checking the data consistency of a gpx ->
+gpsman -> gpx roundtrip when using L<GPS::GpsmanData::Any>. The
+roundtrip check is using a normalization step, because some data is
+known to not be preserved or needs to be normalized:
+
+=over
+
+=item * C<creator> may contain the name of a creating program or the
+name of the creating GPS device. If nothing is set, then
+L<GPS::GpsmanData> would fill in its own name in the creation process.
+
+=item * The default for C<standalone> or the capitalization of the
+C<encoding> attribute may be different.
+
+=item * The GPSMan format cannot handle newlines in comments.
+
+=item * Unused XML namespace declarations may be stripped in the
+conversion process.
+
+=item * The GPSMan format does not handle the <metadata> element.
+
+=item * The GPSMan format does not handle the <number> element in <trk>
+elements.
+
+=back
+
+The C<timeoffset> argument is optional.
+
+If the roundtrip was successful, then a true value is returned.
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<GPS::GpsmanData::Any>, L<xmllint(1)>, L<diff(1)>.
+
+=cut
