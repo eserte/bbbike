@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2014,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package GPS::GpsmanData::Any;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.09';
+$VERSION = '1.10';
 
 use GPS::GpsmanData;
 
@@ -152,7 +152,14 @@ sub load_gpx {
 
     my $creator = $twig->root->{att}->{'creator'};
     my $gps_device;
-    if (defined $creator && $creator =~ m{^etrex}i) { # heuristics: looks like a GPS device
+    if (defined $creator && $creator =~ m{^( etrex
+					  |  montana
+					  |  oregon
+					  |  monterra
+					  |  dakota
+					  |  colorado
+					  |  gpsmap
+					  )}ix) { # heuristics: looks like a GPS device (see also: https://en.wikipedia.org/wiki/List_of_Garmin_products)
 	$gps_device = $creator;
     }
 
