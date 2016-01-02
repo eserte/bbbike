@@ -204,7 +204,10 @@ sub load_gpx {
 	    $wpt->Longitude($lon);
 	    $wpt->Altitude($ele) if defined $ele;
 	    $wpt->unixtime_to_DateTime($epoch, $timeoffset) if $epoch;
-	    $wpt->Comment($comment) if defined $comment;
+	    if (defined $comment) {
+		$comment =~ s{\n}{ }g;
+		$wpt->Comment($comment);
+	    }
 	    $wpt->Symbol($gpsman_symbol) if defined $gpsman_symbol;
 	    push @wpts, $wpt;
 	} elsif ($wpt_or_trk->name eq 'trk') {

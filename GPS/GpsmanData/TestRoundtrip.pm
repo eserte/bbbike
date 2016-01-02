@@ -15,7 +15,7 @@ package GPS::GpsmanData::TestRoundtrip;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 use File::Temp qw(tempfile);
 use XML::LibXML;
@@ -59,9 +59,19 @@ sub gpx2gpsman2gpx {
 	$_->documentElement->removeAttribute('creator') for ($doc_before, $doc_after);
     }
 
+    # normalize xml attributes
     for ($doc_before, $doc_after) {
 	$_->setStandalone(-1) if $_->standalone == 0;
 	$_->setEncoding('UTF-8') if $_->encoding eq 'utf-8';
+    }
+
+    # Newlines are preserved in gpsman files
+    for my $node ($doc_before->findnodes('//*[local-name(.)="cmt"]/text()')) {
+	my $node_value = $node->getData;
+	if ($node_value =~ m{\n}) {
+	    $node_value =~ s{\n}{ }g;
+	    $node->setData($node_value);
+	}
     }
 
     ######################################################################

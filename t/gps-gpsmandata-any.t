@@ -28,7 +28,7 @@ use File::Temp qw(tempfile);
 
 use BBBikeTest qw(eq_or_diff xmllint_string);
 
-plan tests => 66;
+plan tests => 70;
 
 use GPS::GpsmanData::Any;
 
@@ -278,6 +278,27 @@ EOF
 	}
 
 	ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile), 'Roundtrip check for gpx file with waypoint';
+    }
+}
+
+{
+    my $sample_wpt_gpx = <<'EOF';
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?><gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:wptx1="http://www.garmin.com/xmlschemas/WaypointExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" creator="Montana 650" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www8.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackStatsExtension/v1 http://www8.garmin.com/xmlschemas/TrackStatsExtension.xsd http://www.garmin.com/xmlschemas/WaypointExtension/v1 http://www8.garmin.com/xmlschemas/WaypointExtensionv1.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtens"><metadata><link href="http://www.garmin.com"><text>Garmin International</text></link><time>2015-01-01T00:00:00Z</time></metadata><wpt lat="0.040801" lon="0.073325"><ele>0.175386</ele><time>2015-01-01T00:00:00Z</time><name>230</name><cmt>Vbspfl
+gem g u radw</cmt><sym>Golf Course</sym></wpt></gpx>
+EOF
+
+    my $tmpfile = _create_temporary_gpx($sample_wpt_gpx);
+    {
+	my $gps = GPS::GpsmanData::Any->load($tmpfile);
+	isa_ok $gps, 'GPS::GpsmanMultiData';
+
+	my $first_chunk = $gps->Chunks->[0];
+	is $first_chunk->TrackAttrs->{'srt:device'}, 'Montana 650', 'preserve creator into srt:device';
+
+	my $first_wpt = $first_chunk->Waypoints->[0];
+	is $first_wpt->Comment, q{Vbspfl gem g u radw}, 'newline converted to space';
+
+	ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile), 'Roundtrip check for gpx file';
     }
 }
 
