@@ -43,6 +43,7 @@ GetOptions(
     or die usage;
 my $file = shift
     or usage "Please specify gpx file";
+@ARGV and usage "Please specify only one gpx file";
 
 my @gps_gpsmandata_any_options;
 if (defined $timeoffset) {
