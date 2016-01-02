@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2014,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2014,2015,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package GPS::Symbols::Garmin;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.04';
+$VERSION = '0.05';
 
 use File::Glob qw();
 use File::Temp qw();
@@ -74,15 +74,29 @@ sub get_symbol_to_img {
     }
     # Now the user-defined symbols. Here's room for different "userdef
     # symbol sets", which may be per-vehicle, per-user, per-year etc.
-    #my $userdef_symbol_dir = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/bike2008";
-    my $userdef_symbol_dir = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/bike2014";
-    if (!-d $userdef_symbol_dir) {
-	warn "NOTE: directory <$userdef_symbol_dir> with userdefined garmin symbols not found.\n";
-    } else {
-	for my $f (File::Glob::bsd_glob("$userdef_symbol_dir/*.bmp")) {
-	    my($inx) = $f =~ m{(\d+)\.bmp$};
-	    next if !defined $inx; # non parsable bmp filename
-	    $symbol_to_img->{"user:" . (7680 + $inx)} = $f;
+    {
+	#my $userdef_symbol_dir = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/bike2008";
+	my $userdef_symbol_dir = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/bike2014";
+	if (!-d $userdef_symbol_dir) {
+	    warn "NOTE: directory <$userdef_symbol_dir> with userdefined garmin symbols not found.\n";
+	} else {
+	    for my $f (File::Glob::bsd_glob("$userdef_symbol_dir/*.bmp")) {
+		my($inx) = $f =~ m{(\d+)\.bmp$};
+		next if !defined $inx; # non parsable bmp filename
+		$symbol_to_img->{"user:" . (7680 + $inx)} = $f;
+	    }
+	}
+    }
+    {
+	my $userdef_symbol_dir = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/bike2015";
+	if (!-d $userdef_symbol_dir) {
+	    # XXX don't warn, this is not (yet) public
+	} else {
+	    for my $f (File::Glob::bsd_glob("$userdef_symbol_dir/*.bmp")) {
+		my($inx) = $f =~ m{/(\d+).*\.bmp$};
+		next if !defined $inx; # non parsable bmp filename
+		$symbol_to_img->{"user:" . (7745 + $inx)} = $f;
+	    }
 	}
     }
 
