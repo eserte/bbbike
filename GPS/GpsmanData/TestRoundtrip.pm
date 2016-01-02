@@ -15,7 +15,7 @@ package GPS::GpsmanData::TestRoundtrip;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 use File::Temp qw(tempfile);
 use XML::LibXML;
@@ -103,13 +103,16 @@ sub gpx2gpsman2gpx {
 }
 
 # Normalize following things:
-# - missing (unnecessary) namespace declarations
-# - schemaLocation incomplete
+# - in root element:
+#   - missing (unnecessary) namespace declarations
+#   - schemaLocation incomplete
 # - <metadata> not handled
+# - <trk><number> not handled
 sub strip_unhandled_gpx_stuff {
     my $doc = shift;
     my $root = $doc->documentElement;
 
+    # namespace normalizations
     my $new_root = $doc->createElementNS($root->namespaceURI, $root->nodeName);
 
     my @new_attributes;
@@ -121,17 +124,27 @@ sub strip_unhandled_gpx_stuff {
 	    }
 	}
     }
+
+    # sort root attributes
     for my $new_attribute (sort { $a->[0] cmp $b->[0] } @new_attributes) {
 	$new_root->setAttribute($new_attribute->[0], $new_attribute->[1]);
     }
 
+    # remove <metadata>
     for my $elem ($root->childNodes) {
 	if ($elem->nodeName ne 'metadata') {
 	    $new_root->appendChild($elem);
 	}
     }
 
+    # we're finish with root element manipulations
     $doc->setDocumentElement($new_root);
+
+    # remove <trk><number>
+    for my $node ($doc->findnodes('//*[local-name(.)="trk"]/*[local-name(.)="number"]')) {
+	$node->parentNode->removeChild($node);
+    }
+
 }
 
 1;

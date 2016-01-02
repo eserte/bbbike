@@ -28,7 +28,7 @@ use File::Temp qw(tempfile);
 
 use BBBikeTest qw(eq_or_diff xmllint_string);
 
-plan tests => 70;
+plan tests => 74;
 
 use GPS::GpsmanData::Any;
 
@@ -282,6 +282,9 @@ EOF
 }
 
 {
+    # Two test cases here:
+    # * a different gps device (Montana)
+    # * newline in <cmt> element (should be removed when converting to gpsman)
     my $sample_wpt_gpx = <<'EOF';
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?><gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:wptx1="http://www.garmin.com/xmlschemas/WaypointExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" creator="Montana 650" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www8.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackStatsExtension/v1 http://www8.garmin.com/xmlschemas/TrackStatsExtension.xsd http://www.garmin.com/xmlschemas/WaypointExtension/v1 http://www8.garmin.com/xmlschemas/WaypointExtensionv1.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtens"><metadata><link href="http://www.garmin.com"><text>Garmin International</text></link><time>2015-01-01T00:00:00Z</time></metadata><wpt lat="0.040801" lon="0.073325"><ele>0.175386</ele><time>2015-01-01T00:00:00Z</time><name>230</name><cmt>Vbspfl
 gem g u radw</cmt><sym>Golf Course</sym></wpt></gpx>
@@ -297,6 +300,39 @@ EOF
 
 	my $first_wpt = $first_chunk->Waypoints->[0];
 	is $first_wpt->Comment, q{Vbspfl gem g u radw}, 'newline converted to space';
+
+	ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile), 'Roundtrip check for gpx file';
+    }
+}
+
+{
+    # Test case here:
+    # * <trk><number> (should be removed when coverting to gpsman)
+    my $sample_trk_gpx = <<'EOF';
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1" xmlns:wptx1="http://www.garmin.com/xmlschemas/WaypointExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" creator="Montana 650" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www8.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackStatsExtension/v1 http://www8.garmin.com/xmlschemas/TrackStatsExtension.xsd http://www.garmin.com/xmlschemas/WaypointExtension/v1 http://www8.garmin.com/xmlschemas/WaypointExtensionv1.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtens">
+        <metadata>
+                <name>2016-01-01</name>
+                <desc>Export from GpsPrune</desc>
+        </metadata>
+        <trk>
+                <name>2016-01-01</name>
+                <number>1</number>
+                <trkseg>
+<trkpt lat="0.0494003553" lon="0.0092164190"><ele>0.74</ele><time>2016-01-01T09:54:03Z</time></trkpt>
+                </trkseg>
+        </trk>
+</gpx>
+EOF
+
+    my $tmpfile = _create_temporary_gpx($sample_trk_gpx);
+    {
+	my $gps = GPS::GpsmanData::Any->load($tmpfile);
+	isa_ok $gps, 'GPS::GpsmanMultiData';
+
+	my $first_chunk = $gps->Chunks->[0];
+	is $first_chunk->TrackAttrs->{'srt:device'}, 'Montana 650', 'preserve creator into srt:device';
+	is $first_chunk->Name, '2016-01-01', 'name of trk';
 
 	ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile), 'Roundtrip check for gpx file';
     }
