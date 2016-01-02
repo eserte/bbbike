@@ -388,6 +388,25 @@ formats are recognized:
 
 Other files are treated as GPSMan files.
 
+=head2 GPX FILES
+
+GPX files can also be converted directly (without checking the
+filename suffix) using the C<load_gpx> method:
+
+    $gps = GPS::GpsmanData::Any->load_gpx($gpx_file);
+
+Optional argument is C<timeoffset>, which may be set to a number for
+the time offset to UTC in hours, or to C<automatic>, for automatically
+determining the time offset using L<Time::Zone::By4D>.
+
+Currently there's support for waypoint (C<< <wpt> >>), track (C<<
+<trk> >>), and route (C<< <rte> >>) elements.
+
+The C<creator> attribute is handled specially: if the creator is
+recognized as a GPS device (currently there's a hardcoded list of
+Garmin devices), then this one is transformed into a pseudo GPSMan
+attribute C<srt:device>.
+
 =head1 AUTHOR
 
 Slaven Rezic
