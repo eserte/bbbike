@@ -1885,27 +1885,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 9536,11922 9666,11935
-userdel	2::temp 9524,12010 9656,12021
-',
-         'from' => 1448146800,
-         'id' => 1989,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              23,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'http://www.berlin.de/tickets/suche/detail.php?id=1090035',
-         'text' => 'Gendarmenmarkt: Weihnachtsmarkt vom 23.11.2015 bis 31.12.2015, Durchfahrt nicht möglich (Eintritt!)',
-         'type' => 'gesperrt',
-         'until' => 1451689199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2051,7 +2031,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Dezember von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Januar von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3277,36 +3257,6 @@ userdel	q3::inwork 12620,9293 12565,9200
          'text' => 'Rütlistr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg',
          'type' => 'handicap',
          'until' => undef
-       },
-       undef,
-       undef,
-       {
-         'data' => 'userdel	2::temp 8485,12612 8399,12610 8348,12609 8306,12609 8207,12606 8122,12603 8119,12414 8354,12416 8400,12417 8540,12420
-userdel	2::temp 8348,12609 8354,12416
-	2::temp 8207,12606 8206,12757
-userdel auto	3 7945,12592 8122,12603 8120,12756
-userdel auto	3 8391,12389 8400,12417 8399,12610
-userdel auto	3 8070,12409 8119,12414 8055,12186
-userdel auto	3 8399,12610 8400,12417 8391,12389
-userdel auto	3 8120,12756 8122,12603 7945,12592
-userdel auto	3 8055,12186 8119,12414 8070,12409
-',
-         'from' => 1451473200,
-         'id' => 2767,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              31,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => '2147339665',
-         'text' => 'Regierungsviertel u.a. Dorotheenstr., Scheidemannstr., Heinrich-von-Gagern-Str. und Paul-Löbe-Allee: wegen Silvesterparty gesperrt, vom 31.12.2015 12:00 Uhr bis 01.01.2016 12:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1451646000
        }
      
 );
