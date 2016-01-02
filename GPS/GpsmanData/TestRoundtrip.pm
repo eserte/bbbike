@@ -18,6 +18,7 @@ use vars qw($VERSION);
 $VERSION = '0.04';
 
 use File::Temp qw(tempfile);
+use IPC::Run qw(run);
 use XML::LibXML;
 
 use GPS::GpsmanData;
@@ -82,20 +83,31 @@ sub gpx2gpsman2gpx {
     if ($before_string ne $after_string) {
 	# Maybe just whitespace diffs? Do additional
 	# normalization using xmllint (hopefully installed)
-	my($before_fh,$before_file) = tempfile(SUFFIX => '_before.gpx', UNLINK => 1);
-	my($after_fh, $after_file)  = tempfile(SUFFIX => '_after.gpx',  UNLINK => 1);
-	print $before_fh $before_string;
-	print $after_fh  $after_string;
-	close $before_fh or die $!;
-	close $after_fh or die $!;
-	system('zsh', '-c', "diff -u =(xmllint -format $before_file) =(xmllint -format $after_file) 1>&2");
-	my $st = $?;
-	unlink $before_file;
-	unlink $after_file;
-	if ($st == 0) {
+	my($formatted_before_string, $formatted_after_string);
+	if (!run ['xmllint', '-format', '-'], '<', \$before_string, '>', \$formatted_before_string) {
+	    die "Error running xmllint: $!";
+	}
+	if (!run ['xmllint', '-format', '-'], '<', \$after_string, '>', \$formatted_after_string) {
+	    die "Error running xmllint: $!";
+	}
+	if ($formatted_before_string eq $formatted_after_string) {
 	    return 1;
 	} else {
-	    return 0;
+	    my($before_fh,$before_file) = tempfile(SUFFIX => '_before.gpx', UNLINK => 1);
+	    my($after_fh, $after_file)  = tempfile(SUFFIX => '_after.gpx',  UNLINK => 1);
+	    print $before_fh $formatted_before_string;
+	    print $after_fh  $formatted_after_string;
+	    close $before_fh or die $!;
+	    close $after_fh or die $!;
+	    system("diff -u $before_file $after_file 1>&2");
+	    my $st = $?;
+	    unlink $before_file;
+	    unlink $after_file;
+	    if ($st == 0) {
+		return 1;
+	    } else {
+		return 0;
+	    }
 	}
     } else {
 	return 1;
