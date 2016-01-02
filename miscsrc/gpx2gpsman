@@ -84,3 +84,66 @@ sub check_roundtrip {
 }
 
 __END__
+
+=head1 NAME
+
+gpx2gpsman - convert GPX files to GPSMan files
+
+=head1 SYNOPSIS
+
+Convert without a roundtrip check:
+
+    gpx2gpsman [-timeoffset hours|automatic] source.gpx -o target.trk
+
+Convert only if a roundtrip check was successful:
+
+    gpx2gpsman [-timeoffset hours|automatic] -if-roundtrip-ok source.gpx -o target.trk
+
+Just do a roundtrip check:
+
+    gpx2gpsman [-timeoffset hours|automatic] -check-roundtrip source.gpx
+
+=head1 DESCRIPTION
+
+Convert GPX files to GPSMan files. The conversion is done using the
+module L<GPS::GpsmanData::Any>.
+
+=head1 OPTIONS
+
+=over
+
+=item C<-timeoffset ...>
+
+Set the time offset in the generated files to the given amount in
+hours. If C<automatic> is used as the option value, then heuristics is
+used to get to the time offset by date and location (see
+L<Time::Zone::By4D>). If none is set, then Zulu time is used.
+
+=item C<-o ...>
+
+Define a output file for the converted GPSMan data. If C<-o> is not
+set, then the output is written to stdout.
+
+=item C<-if-roundtrip-ok>
+
+Do the conversion only if a roundtrip check (see
+L<GPS::GpsmanData::TestRoundtrip>) was successful. If the roundtrip
+check was not successful, then the program exits with a non-zero
+value.
+
+=item C<-check-roundtrip>
+
+Do just a roundtrip check without any conversions. If the roundtrip
+check was not succesful, then the program exits with a non-zero value.
+
+=back
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<GPS::GpsmanData::Any>, L<GPS::GpsmanData::TestRoundtrip>.
+
+=cut
