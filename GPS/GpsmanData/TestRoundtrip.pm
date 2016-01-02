@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package GPS::GpsmanData::TestRoundtrip;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 use File::Temp qw(tempfile);
 use XML::LibXML;
@@ -46,19 +46,28 @@ sub gpx2gpsman2gpx {
 
     unlink $tmpfile;
 
-    my $normalized_root_before = strip_unhandled_gpx_stuff($doc_before);
-    my $normalized_root_after  = strip_unhandled_gpx_stuff($doc_after);
+    ######################################################################
+    # Strip and normalize
+    strip_unhandled_gpx_stuff($doc_before);
+    strip_unhandled_gpx_stuff($doc_after);
 
     # If the creator was empty before, or the string "GPSMan", then
     # it's OK to have it filled afterwards; normalize this difference
     # away.
-    if ($normalized_root_before->getAttribute('creator') =~ m{^(|GPSMan)$} &&
-	$normalized_root_after->getAttribute('creator') =~ m{^GPS::GpsmanData}) {
-	$_->removeAttribute('creator') for ($normalized_root_before, $normalized_root_after);
+    if ($doc_before->documentElement->getAttribute('creator') =~ m{^(|GPSMan)$} &&
+	$doc_after->documentElement->getAttribute('creator') =~ m{^GPS::GpsmanData}) {
+	$_->documentElement->removeAttribute('creator') for ($doc_before, $doc_after);
     }
 
-    my $before_string = $normalized_root_before->serialize(1);
-    my $after_string  = $normalized_root_after ->serialize(1);
+    for ($doc_before, $doc_after) {
+	$_->setStandalone(-1) if $_->standalone == 0;
+	$_->setEncoding('UTF-8') if $_->encoding eq 'utf-8';
+    }
+
+    ######################################################################
+    # Compare
+    my $before_string = $doc_before->serialize(1);
+    my $after_string  = $doc_after ->serialize(1);
 
     if ($before_string ne $after_string) {
 	# Maybe just whitespace diffs? Do additional
@@ -91,7 +100,7 @@ sub strip_unhandled_gpx_stuff {
     my $doc = shift;
     my $root = $doc->documentElement;
 
-    my $new_root = $doc->createElementNS($root->namespaceURI, 'gpx');
+    my $new_root = $doc->createElementNS($root->namespaceURI, $root->nodeName);
 
     my @new_attributes;
     for my $attr ($root->attributes) {
@@ -108,11 +117,11 @@ sub strip_unhandled_gpx_stuff {
 
     for my $elem ($root->childNodes) {
 	if ($elem->nodeName ne 'metadata') {
-	    $new_root->addChild($elem);
+	    $new_root->appendChild($elem);
 	}
     }
 
-    $new_root;
+    $doc->setDocumentElement($new_root);
 }
 
 1;
