@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: winter_optimization.pl,v 1.4 2005/03/15 20:49:53 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004,2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2010,2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -433,6 +432,31 @@ To create a bbd file with the calculated penalties, which then may be
 displayed in the Perl/Tk version:
 
    winter_optimization.pl -winter-hardness ... -display > wi.bbd
+
+=head1 BUGS
+
+This comment is not completely true:
+
+    $do_cyclepath_opt   = 0; # Bei Winterwetter können Radwege komplett ignoriert werden
+
+Because of the exceptions:
+
+=over
+
+=item oneway streets with a cyclepath in opposite direction 
+
+Should probably be treated as a NN way.
+
+=item a side street along a main street (e.g. Heerstr., Straße des 17. Juni)
+
+In this case the street has to be treated as a N street, maybe even with an additional kfz_adjustment of -1 or -2
+
+=item cycle lanes
+
+Often cycle lanes have to get a penalty, as snow patches are often still on the cycle lane.
+This may be problematic for secondary and higher-grade streets.
+
+=back
 
 =head1 AUTHOR
 
