@@ -119,7 +119,8 @@ Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11290,10972
 Waldemarstr.: Kopfsteinpflaster	Q2+ 11290,10972 11150,11030
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136 11473,11180
-Legiendamm: Kopfsteinpflaster	Q2 11349,11227 11337,11197 11323,11164
+#: XXX vor Ort nochmal genauer prüfen
+Legiendamm: asphaltiert	Q0 11349,11227 11337,11197 11323,11164
 Legiendamm: asphaltiert	Q0 11323,11164 11307,11125 11329,11065 11290,10972
 Legiendamm: Kopfsteinpflaster	Q2 11290,10972 11227,10821 11189,10831
 Legiendamm: asphaltiert	Q0 11189,10831 11159,10769
@@ -6067,6 +6068,8 @@ Hilchenbacher Weg: Beton	Q0 2416,18598 2419,18572 2426,18544
 Hilchenbacher Weg: Gehwegplatten	Q1 2426,18544 2444,18487
 Erndtebrücker Weg: Beton	Q0 2419,18572 2501,18594 2498,18657
 Dessinstr.: Kopfsteinpflaster	Q2 2947,18570 2997,18632
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.432036.php
+#: add_fragezeichen: Liegt hier noch immer Verbundsteinpflaster oder ist hier mittlerweile asphaltiert?
 (entlang der Autobahn): Verbundsteinpflaster	Q1 3267,18767 3106,18868 2994,18979
 Otisstr.: Beton	Q0 3213,18115 3420,18470 3526,18653 3562,18712 3680,18913 3700,18965
 Quäkerstr.: Beton	Q0 3733,18376 3738,18573 3731,18601 3713,18621 3562,18712
@@ -8185,6 +8188,7 @@ Almutstr.: Asphalt	Q0 4259,23149 4312,23157 4389,23168
 Alt-Hermsdorf: Asphalt	Q0 4389,23168 4437,23148
 Seebadstr.: Asphalt	Q0 4437,23148 4471,23147 4619,23235 4634,23244 4681,23273
 #: XXX nach den Bauarbeiten vermutlich bessere Qualität
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.432036.php
 #: add_fragezeichen: Ist die Qualität des Asphalts in der Seebadstraße nach den Bauarbeiten besser geworden?
 #: next_check: 2015-11-13
 Seebadstr.: Asphalt mit einigen Schäden	Q1+ 4681,23273 4704,23278 4744,23289 4910,23490 5006,23575
@@ -13903,8 +13907,9 @@ Tile-Brügge-Weg: Asphalt/Beton mit Schäden	Q2+ 2380,20465 2473,20486 2595,20514
 #: by: http://www.berlin.de/ba-reinickendorf/org/strassenbau/baumassnahmen.html?date=20130816 (Bauarbeiten bis Ende 2015)
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129969.php
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.416569.php
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.432036.php
 #: XXX früher: Asphalt/Beton mit Schäden, Q2+
-#: XXX ist hier asphaltiert?
+#: add_fragezeichen: Liegt hier mittlerweile sehr guter Asphalt?
 Tile-Brügge-Weg: neuer Belag	Q0 2595,20514 2793,20550 2968,20584 2982,20587 3119,20612 3196,20627 3214,20629 3287,20739 3306,20773
 #: confirmed_by ^^^
 Eschachstr.: Verbundsteinpflaster	Q1 2380,20465 2415,20380 2440,20294
@@ -16245,9 +16250,11 @@ Alemannenstr. (Frohnau): Asphalt	Q0 1453,25923 1501,25675 1558,25505 1568,25477 
 Alemannenstr. (Frohnau): Asphalt	Q0 1627,25386 1714,25289 1738,25243
 Karmeliterweg: Kleinpflastersteine	Q2 1458,24561 1634,24527 1742,24526
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.371808.php
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.432036.php (fertig?)
 #: XXX Instandsetzungsarbeiten, wie ist die Qualität danach?
 #: last_checked: 2015-11-07
 #: next_check: 2015-12-12
+#: add_fragezeichen: Ist die Qualität nach den Bauarbeiten gleich geblieben? Liegen hier noch immer Kleinpflastersteine?
 Karmeliterweg: Kleinpflastersteine	Q2 1868,24633 1924,24672 2003,24702 2120,24740
 Karmeliterweg: Kleinpflastersteine	Q2 2120,24740 2174,24783
 # REMOVED (keine Änderung) --- #: XXX nach der Sanierung bessere Qualität? --- #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.219976.php --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20150330 (Bauende: 30. April 2015) --- #: next_check: 2015-04-30
@@ -22847,7 +22854,8 @@ Pansfelder Weg: guter Asphalt	Q0 7297,-519 7384,-387 7536,-139
 #: confirmed_by: srt
 #: XXX Instandsetzungsarbeiten Fahrbahn
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20151009
-#: next_check: 2016-06-30
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.432036.php (erster Bauabschnitt (fertig?))
+#: next_check: 2016-01-01
 Beyschlagstr.: mäßiger Asphalt	Q1- 408,22184 184,22257 5,22384 21,22545
 # 
 #: by: epha: vvv

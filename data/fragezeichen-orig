@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2016-01-04
+#: last_checked: 2016-01-08
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11091,11379 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -213,7 +213,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2015-12-25
+#: last_checked: 2016-01-08
 Warschauer Str: Radspuren in Bau	?::inwork 13603,11538 13651,11731 13696,11920 13745,12118
 # 
 # REMOVED (vermutlich passiert nichts weiter) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: XXX wird auch das letzte Stück im Westen realisiert? --- #: osm_watch: way id="4424794" version="14" --- #: osm_watch: way id="30195541" version="9" --- #: last_checked: 2015-06-08 --- #: check_frequency: 60d --- Turmstr.: evtl. wird die Radspuren-Lücke hier geschlossen	? 5248,13434 5368,13406 5434,13398
@@ -336,6 +336,7 @@ Ernststr.: Verbesserung für den Radverkehr, evtl. Entfernung des Kopfsteinpflast
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.168550.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.227911.php ("1. Quartal 2015")
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.430800.php (existiert schon?)
 #: last_checked: 2015-09-13
 #: check_frequency: 90d
 Wendenschloßstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 22668,3884 22714,3558 22742,3382 22811,3037 22831,2915 22849,2856 22904,2675 22982,2418 23064,2147 23099,2031
@@ -614,6 +615,7 @@ Toulonstr.: Verkehrsberuhigt?	?::inwork 12404,21532 12480,21560
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4130
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file?y=2015
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2015 (Grundstücksnummerierungen)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: osm_watch: way id="344108078" version="1"
 Rennesstr.: genaue Lage, Qualität?	?::projected 12411,21515 12422,21492 12469,21507
 # REMOVED (einzelne Straßen aufgeführt) --- Bebauungsplan XIX-48b: neue Plan- und Privatstraßen werden erstellt	?::inwork 12337,20954 12459,21010 12562,21055 12547,21372 12495,21670 12172,21545 12209,21448 12189,21337 12168,21218 12255,21083 12337,20954
@@ -1316,6 +1318,7 @@ Weg zum Hangkantenpark: Qualität? Drängelgitter? Nachts beleuchtet? Steigung?	? 
 # REMOVED (ja) --- #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.380773.php vvv --- Am Nordgraben: Radwege in beiden Richtungen nun asphaltiert?	? 6281,20369 6089,20290 5868,20198 --- Am Nordgraben: Radweg nun asphaltiert?	?; 5517,20120 5744,20155 5868,20198 --- #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.380505.php
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.432036.php
 Schulzendorfer Str.: Radverkehrsanlangen? (vermutlich asphaltiert, vermutlich nur Gehweg für Radfahrer frei)	? -2504,22626 -2377,22689 -2348,22704 -2263,22748 -2176,22789 -2165,22794 -2131,22810 -2024,22899
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.380162.php
