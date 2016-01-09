@@ -148,8 +148,8 @@ Helmstr.: gutes Kopfsteinpflaster	Q1 7524,9093 7490,9116 7444,9148 7387,9184
 Belziger Str.: Asphalt	Q0 7308,9163 7107,9030
 Suadicanistr.: Asphalt	Q0 7859,7486 7858,7506
 Suadicanistr.: glatt gepflastert	Q0 7858,7506 7854,7572
-Lilienthalstr.: Asphalt	Q0 10675,8940 10640,8832 10627,8706
-Lilienthalstr.: Asphalt, etwas rau	Q0 10627,8706 10615,8558
+Lilienthalstr.: Asphalt	Q0 10675,8940 10640,8832 10633,8705
+Lilienthalstr.: Asphalt, etwas rau	Q0 10633,8705 10615,8558
 Weichselstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 12330,8636 12394,8729 12434,8776 12483,8834 12590,8977 12681,9083 12761,9190
 Weichselstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 12761,9190 12851,9309
 Weichselstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 12851,9309 12844,9351
@@ -614,7 +614,7 @@ Wismarplatz: Kopfsteinpflaster	Q2 14395,11753 14416,11815
 Mainzer Str.: Asphalt	Q0 14306,11889 14354,12012 14427,12197
 Colbestr.: Asphalt	Q0 14416,11815 14468,11992
 Kinzigstr.: mäßiger Asphalt	Q1 14589,11975 14471,11782
-Waldeyerstr.: Kopfsteinpflaster	Q2 15054,12323 14997,12243
+Waldeyerstr.: Kopfsteinpflaster	Q2 15054,12323 15003,12241
 Am Heidekampgraben: asphaltiert	Q0 15053,7966 15030,7928 15025,7860 14975,7665 14989,7574 15042,7513 15054,7474 15132,7402 15176,7315 15168,7256 15200,7233 15272,7151 15327,7065 15367,7031 15416,6944 15470,6886 15489,6839 15532,6794 15615,6610 15595,6569 15582,6493 15578,6471 15562,6461 15516,6357 15505,6342 15496,6314 15437,6227 15403,6145 15396,6125 15393,6112 15358,6022
 An der Güterbahn: grobes Verbundsteinpflaster	Q2 15351,1653 15205,1670
 An der Güterbahn: Parkweg	Q1 15205,1670 15110,1732 14986,1820
@@ -649,7 +649,7 @@ Biesdorfer Promenade: teilweise mäßiger Asphalt	Q1 20975,12620 20851,12669 20780
 Luise-Zietz-Str.: Asphalt	Q1 20062,12353 20079,12479
 Luise-Zietz-Str.: Kopfsteinpflaster	Q2 20079,12479 20103,12698 20137,13016 20141,13071
 Rigaer Str.: Kopfsteinpflaster	Q2 14266,12446 14133,12482 14091,12494
-Rigaer Str.: Asphalt mit einigen Aufpflasterungen	Q0 14266,12446 14451,12396 14538,12371 14748,12314 14997,12243 15098,12213
+Rigaer Str.: Asphalt mit einigen Aufpflasterungen	Q0 14266,12446 14451,12396 14538,12371 14748,12314 15003,12241 15098,12213
 Rigaer Str.: Asphalt	Q0 15098,12213 15175,12180
 Thaerstr.: Kopfsteinpflaster	Q2 13761,12690 13844,12900
 Diesterwegstr.: Kopfsteinpflaster	Q2 12061,15156 11964,14962 11864,14781
@@ -1590,7 +1590,7 @@ Steinstr.: Kopfsteinpflaster	Q2 -7909,-2375 -7996,-2293
 (Anhalter Steg - Anhalter Bahnhof): Parkweg, wassergebundene Decke	Q1 8854,10712 8912,10846 8938,10872
 Erich-Lodemann-Str.: Betonstraße	Q1 15763,7569 15425,7953
 Erich-Lodemann-Str.: Betonstraße	Q1 15444,7969 15288,8134
-Kleine Parkstr.: schlechtes Kopfsteinpflaster	Q3 9154,9345 9124,9262
+Kleine Parkstr.: schlechtes Kopfsteinpflaster	Q3 9154,9347 9124,9262
 Flemmingstr. (Köpenick): Kopfsteinpflaster	Q2 21848,4882 21726,4537
 Flemmingstr. (Köpenick): Asphalt	Q0 21848,4882 21856,4910
 Gutenbergstr.: Asphalt	Q0 21789,4520 21903,4848 21848,4882
@@ -2331,7 +2331,7 @@ Preußstr.: Asphalt	Q0 12327,15333 12367,15396
 Wisbyer Str. 9-11: Asphalt	Q0 11289,16423 11255,16313
 Niederlagstr.: Asphalt	Q0 9943,12364 9961,12273 9972,12184
 Werdersche Rosenstr.: Asphalt	Q0 9882,12259 9961,12273
-Müncheberger Str.: mäßiger Asphalt, Bodenschwellen	Q1 12446,11983 12617,11888
+Müncheberger Str.: mäßiger Asphalt, Bodenschwellen	Q1 12450,11980 12617,11888
 Theodorstr. (Tempelhof): Asphalt	Q0 9321,6079 9291,5908
 Kolonie Albrechtshöhe: wassergebundene Decke	Q1 10260,5953 10215,5959 9955,5993
 Wussowstr.: Asphalt	Q0 12798,5580 12702,5553
@@ -5050,7 +5050,7 @@ Straße 54: Verbundsteinpflaster	Q0 12918,17736 12908,17807
 Straße 46 (Heinersdorf): unbefestigter Weg	Q2 12630,17636 12587,17603
 Straße 46 (Heinersdorf): unbefestigter Weg	Q2 12587,17603 12505,17469 12500,17460
 Straße 56 (Heinersdorf): Asphalt	Q0 12436,17682 12587,17603
-Dresdener Str.: Asphalt	Q0 11034,11249 11021,11287
+Dresdener Str.: Asphalt	Q0 11039,11254 11021,11287
 Dresdener Str.: Verbundsteinpflaster	Q1 11021,11287 11000,11327
 Dresdener Str.: Asphalt	Q1 11000,11327 11039,11425
 Marconistr.: guter Beton	Q1 9125,3435 9032,3447
@@ -6437,7 +6437,7 @@ Lorcher Str.: unebener Asphalt	Q1 4273,7002 4206,7040
 Lorcher Str.: unbefestigter Weg	Q1 4206,7040 4184,7053 4160,7043
 Lorcher Str.: Asphalt	Q0 4160,7043 4059,7038
 (General-Pape-Str. - Gontermannstr.): Asphalt	Q0 8100,8288 8210,8291 8234,8303 8265,8305 8276,8295
-(Leuthener Platz - Wilhelm-Kabus-Str.): Asphalt	Q0 7716,8356 7807,8354 7893,8327
+(Leuthener Platz - Wilhelm-Kabus-Str.): Asphalt	Q0 7716,8356 7792,8357 7899,8332
 (Altonaer Str. - Händelallee): Gehwegplatten und wassergebundene Decke	Q1 6348,12272 6280,12222
 Joseph-Haydn-Str.: Kopfsteinpflaster	Q2 5825,12023 5790,12026
 (S-Bhf. Südkreuz - IKEA): Asphalt	Q0 7921,7288 7920,7224
@@ -6613,7 +6613,7 @@ Wettersternweg: Verbundsteinpflaster	Q0 20710,11234 20713,11263
 Nossener Str.: Beton	Q0 24217,14041 24298,14267 24345,14403
 Mark-Twain-Str.: Beton	Q0 24345,14403 24363,14453 24349,14500
 Mark-Twain-Str.: Beton	Q0 24368,14570 24362,14542 24349,14500 24321,14410
-(ATU-Einfahrt - ALDI-Parkplatz): Asphalt	Q0 8595,9495 8561,9482 8546,9468 8514,9470 8487,9405 8500,9245
+(ATU-Einfahrt - ALDI-Parkplatz): Asphalt	Q0 8595,9495 8561,9482 8546,9468 8514,9470 8487,9405 8499,9253
 Imbuschweg: Beton	Q0 14017,2985 14137,2934 14212,2865 14234,2829 14244,2759
 (Imbuschweg - Karsenzeile): Verbundsteinpflaster	Q1 14244,2759 14245,2704
 Karsenzeile: Gehwegplatten	Q1 14682,2532 14597,2607 14582,2595 14458,2709 14408,2708 14245,2704
@@ -6694,8 +6694,8 @@ Sebnitzer Weg: Kopfsteinpflaster	Q2 16282,1052 16227,997
 (Kanzlerweg - Schreiberring): unbefestigter Weg	Q1 8830,8148 8839,8168 8861,8242
 (Rumeyplan, Grünanlage): unbefestigter Weg	Q1 8907,7773 8895,7797
 (Rumeyplan - Kanzlerweg): unbefestigter Weg	Q1 8895,7797 8839,7904
-Mussehlstr.: Gehwegplatten	Q0 8842,8561 8756,8453
-Mussehlstr.: Verbundsteinpflaster	Q1 8756,8453 8711,8371
+Mussehlstr.: Gehwegplatten	Q0 8842,8561 8759,8458
+Mussehlstr.: Verbundsteinpflaster	Q1 8759,8458 8720,8373
 Varian-Fry-Str.: Kleinsteinpflaster	Q1 8374,11479 8389,11378
 (Erfurter Str. - Wexstr.): Kopfsteinpflaster	Q2 6261,8058 6260,8011
 Wiesenschlag: Asphalt	Q0 -2074,2258 -2036,2150
@@ -8074,7 +8074,7 @@ Edith-Kiss-Str.: Asphalt	Q0 12793,11132 12866,11256
 (Wilhelm-Kabus-Str. - Bhf. Südkreuz): Asphalt	Q0 7713,8001 7837,7899
 Rampe zum Alfred-Lion-Steg: Asphalt	Q0 8088,8254 8078,8256 8086,8289
 Alfred-Lion-Steg: Beton	Q0 8086,8289 7992,8312
-Rampe/Zufahrt zum Alfred-Lion-Steg: Asphalt	Q0 7992,8312 7932,8325 7893,8327
+Rampe/Zufahrt zum Alfred-Lion-Steg: Asphalt	Q0 7992,8312 7932,8325 7899,8332
 (Radweg an der Bahnstrecke - Alfred-Lion-Steg): Asphalt	Q0 7996,8298 7932,8325
 Göhrener Str.: Kopfsteinpflaster, OK	Q1 11514,15041 11505,15065
 Heinrich-Heine-Platz: Asphalt mit leichten Schäden	Q1; 11337,11197 11241,11247

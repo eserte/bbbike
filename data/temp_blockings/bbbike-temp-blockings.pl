@@ -795,7 +795,7 @@ EOF
        text  => 'Die Naumannstraße ist zwischen Torgauer Straße und Tempelhofer Weg von 27.08.04, 07.00 Uhr bis 28.08.04, 20.00 Uhr gesperrt. Grund Bauarbeiten.',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 7733,8023 7713,8001 7717,7879 7717,7830 7696,7771
+userdel	2 7733,8023 7713,8001 7717,7879 7718,7820 7696,7771
 EOF
      },
      { from  => 1093730400, # 2004-08-29 00:00
@@ -1140,7 +1140,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002432',
        data  => <<EOF,
-userdel	q4 7696,7771 7717,7830 7717,7879 7713,8001 7733,8023
+userdel	q4 7696,7771 7718,7820 7717,7879 7713,8001 7733,8023
 EOF
      },
      { from  => 1097964000, # 2004-10-17 00:00
@@ -2687,8 +2687,8 @@ EOF
        text  => 'Luckauer Str. (Kreuzberg) in beiden Richtungen zwischen Oranienstr. und Waldemarstr. Baustelle, Straße vollständig gesperrt (bis02.09.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 11150,11030 11110,10946
-userdel	2 11110,10946 11049,10816
+userdel	2 11150,11030 11113,10943
+userdel	2 11113,10943 11049,10816
 EOF
      },
      { from  => 1124742735, # 2005-08-22 22:32
@@ -16491,7 +16491,7 @@ EOF
        type  => 'handicap',
        source_id => 'LMS_157063303',
        data  => <<EOF,
-userdel	q4::inwork 7709,8777 7713,8600 7716,8370 7716,8356 7715,8308 7710,8051 7733,8023 7713,8001 7717,7879 7717,7830 7696,7771
+userdel	q4::inwork 7709,8777 7713,8600 7716,8370 7716,8356 7715,8308 7710,8051 7733,8023 7713,8001 7717,7879 7718,7820 7696,7771
 EOF
      },
      { from  => 1255816800, # 2009-10-18 00:00
@@ -18436,7 +18436,7 @@ EOF
        text  => 'Die Wilhelm-Kabus-Str. ist noch nicht komplett fertig gestellt. Unter Umständen ist die Durchfahrt nicht möglich!',
        type  => 'handicap',
        data  => <<EOF,
-	2::inwork 7733,8023 7783,8035 7824,8056 7838,8085 7859,8252 7893,8327 7942,8380 8078,8772
+	2::inwork 7733,8023 7783,8035 7824,8056 7838,8085 7859,8252 7899,8332 7956,8408 8078,8772
 EOF
      },
      { from  => $isodate2epoch->("2015-07-03 00:00:00"), # 1 Tag Vorlauf
@@ -21938,7 +21938,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130827.1005.388421.html',
        data  => <<EOF,
 #: source_id: IM_020294
-userdel	q4::inwork; 9099,8670 9006,8602 8919,8508 8851,8424 8807,8353 8776,8285
+userdel	q4::inwork; 9099,8670 9011,8605 8916,8511 8854,8429 8807,8353 8776,8285
 EOF
      },
      { from  => 1378591200, # 2013-09-08 00:00

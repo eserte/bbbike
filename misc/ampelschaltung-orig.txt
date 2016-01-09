@@ -4,7 +4,7 @@
 Do, 22.10.1998
 8594,8777     Dudenstr./Katzbachstr.             O->W       11:24:12
 8598,9074     Katzbachstr./Monumentenstr.        S->N       11:25:10  11:24:45
-8598,9264     Katzbachstr./Kreuzbergstr.         S->N                 11:25:45
+8598,9269     Katzbachstr./Kreuzbergstr.         S->N                 11:25:45
 8595,9495     Katzbachstr./Yorckstr.             S->N   60  11:26:00  11:26:10
 7829,9723     Goebenstr./Kulmer Str.             O->W       11:28:32
 7938,9694     Goebenstr./Mansteinstr.            O->W                 11:28:52
@@ -49,7 +49,7 @@ Sa, 24.10.1998
                                                             18:18:12
 8298,8774     Dudenstr./Loewenhardtdamm          O->W   60  18:22:53  18:22:20
 8594,8777     Dudenstr./Katzbachstr.             O->W   70  18:22:25  18:22:53
-8598,9264     Katzbachstr./Kreuzbergstr.         S->N   70  18:25:46  18:25:06
+8598,9269     Katzbachstr./Kreuzbergstr.         S->N   70  18:25:46  18:25:06
 8598,9074     Katzbachstr./Monumentenstr.        S->N   70  18:25:42  18:25:15
 8595,9495     Katzbachstr./Yorckstr.             S->N   60  18:27:00  18:27:10
 8595,9495     Yorckstr./Katzbachstr.             NO->NW 60  18:32:20  18:29:55
@@ -87,8 +87,8 @@ Sa, 24.10.1998
 9753,9252     Bergmannstr./Zossener Str.         W->O   70  19:28:20  19:27:46
 9489,9309     Bergmannstr./Nostitzstr.           W->O       19:29:10  19:28:42
 9248,9350     Kreuzbergstr./Mehringdamm          O->W   70  19:32:20  19:32:38
-8969,9320     Kreuzbergstr./Großbeerenstr.       O->W   70  19:34:08  19:33:34
-8598,9264     Kreuzbergstr./Katzbachstr.         O->W   70  19:34:07  19:34:27
+8970,9323     Kreuzbergstr./Großbeerenstr.       O->W   70  19:34:08  19:33:34
+8598,9269     Kreuzbergstr./Katzbachstr.         O->W   70  19:34:07  19:34:27
 9000,9509     Großbeerenstr./Hagelberger Str.    S->N   50  19:36:50  19:37:07
 9044,9753     Großbeerenstr./Yorckstr.           S->N   60  19:38:18  19:38:28
 
@@ -148,7 +148,7 @@ Mo, 26.10.1998
 8192,9619     Yorckstr./Bautzener Str.           W->O   70  16:56:16  16:55:46
 8595,9495     Yorckstr./Katzbachstr. (Auto)      NW->NO 70  16:57:50  16:57:18
 8595,9495     Yorckstr./Katzbachstr. (Rad)       NW->NO 70            16:58:02
-8598,9264     Katzbachstr./Kreuzbergstr.         N->S   70  16:59:10  16:59:33
+8598,9269     Katzbachstr./Kreuzbergstr.         N->S   70  16:59:10  16:59:33
 8598,9074     Katzbachstr./Monumentenstr.        N->S       17:00:26  17:01:03
 8594,8777     Katzbachstr./Dudenstr.             N->S   70  17:02:39  17:01:54
 
@@ -966,7 +966,7 @@ Mo, 26.04.1999
 7938,9694     Yorckstr./Goebenstr./Bülowstr.     N->S   70  18:23:54? 18:22:57?
 8192,9619     Yorckstr./Bautzener Str.           W->O       18:24:37
 8595,9495     Katzbachstr./Yorckstr.             NW->NO     18:26:12  18:25:41
-8598,9264     Katzbachstr./Kreuzbergstr.         N->S   70  18:26:21  18:26:45
+8598,9269     Katzbachstr./Kreuzbergstr.         N->S   70  18:26:21  18:26:45
 8598,9074     Katzbachstr./Monumentenstr.        N->S       18:27:39  18:27:05
 8594,8777     Dudenstr./Katzbachstr./Boelckestr  N->S   70  18:28:41  18:29:05
 8982,8781     Dudenstr./Methfesselstr./Mussehls  W->O   70  18:29:41  18:30:29
@@ -977,7 +977,7 @@ Mo, 26.04.1999
 Di, 27.04.1999
 8594,8777     Dudenstr./Katzbachstr./Boelckestr  O->W   70? 14:24:14  14:24:43
 8598,9074     Katzbachstr./Monumentenstr.        S->N       14:26:22  14:25:56
-8598,9264     Katzbachstr./Kreuzbergstr.         S->N                 14:25:45
+8598,9269     Katzbachstr./Kreuzbergstr.         S->N                 14:25:45
 8595,9495     Katzbachstr./Yorckstr.             S->N       14:27:20?
 7579,10183    Potsdamer Str./Bülowstr.           O->W   60  14:30:32  14:30:51
 7413,10244    Bülowstr./Frobenstr.               O->W       14:31:55  14:31:20
@@ -1970,11 +1970,11 @@ Mi, 24.02.2010
 # ----------------------------------------------------------------------------
 Mi, 24.02.2010
 #WPT: 249 F	24-FEB-10 12:52:36	52.4891666666667	13.3828333333333	buoy_white_red
-8969,9320     (Methfesselstr. - Kreuzberg (Fuß)  S->N                 12:52:36
+8970,9323     (Methfesselstr. - Kreuzberg (Fuß)  S->N                 12:52:36
 #WPT: 249	24-FEB-10 12:53:36	52.4896666666667	13.3824444444444	buoy_white_green
-8969,9320     (Methfesselstr. - Kreuzberg (Fuß)  S->N       12:53:36
+8970,9323     (Methfesselstr. - Kreuzberg (Fuß)  S->N       12:53:36
 #WPT: 250	24-FEB-10 12:53:46	52.4898611111111	13.3823611111111	buoy_white_red
-8969,9320     (Methfesselstr. - Kreuzberg (Fuß)  S->N                 12:53:46
+8970,9323     (Methfesselstr. - Kreuzberg (Fuß)  S->N                 12:53:46
 #WPT: 251	24-FEB-10 12:54:18	52.4902777777778	13.3821111111111	buoy_white_green
 9000,9509     Großbeerenstr./Hagelberger Str.    S->N       12:54:18
 #WPT: 252	24-FEB-10 12:54:34	52.4905	13.3820277777778	buoy_white_red
@@ -2175,7 +2175,7 @@ Fr, 26.02.2010
 #WPT: 335	26-FEB-10 14:15:06	52.47675	13.3767777777778	buoy_white_green
 8642,7876     Werner-Voß-Damm/Boelckestr.        SW->NO     14:15:06
 #WPT: 336	26-FEB-10 14:16:57	52.4821111111111	13.3806111111111	buoy_white_green
-8919,8508     Manfred-von-Richthofen-Str./Bayer  S->N       14:16:57
+8916,8511     Manfred-von-Richthofen-Str./Bayer  S->N       14:16:57
 #WPT: 337	26-FEB-10 14:18:19	52.4847777777778	13.3821666666667	buoy_white_green
 8982,8781     Dudenstr./Methfesselstr./Mussehls  SW->NO     14:18:19
 #WPT: 338	26-FEB-10 19:27:00	52.4900277777778	13.3860555555556	buoy_white_green
@@ -2433,9 +2433,9 @@ Do, 12.04.2012
 #WPT: 132	12-APR-12 9:34:17	52.4766944444444	13.3767222222222	buoy_white_green
 8642,7876     Werner-Voß-Damm/Boelckestr.        SW->NO     09:34:17
 #WPT: 133	12-APR-12 9:36:14	52.4813888888889	13.3798888888889	buoy_white_red
-8919,8508     Manfred-von-Richthofen-Str./Bayer  SW->NO               09:36:14
+8916,8511     Manfred-von-Richthofen-Str./Bayer  SW->NO               09:36:14
 #WPT: 134	12-APR-12 9:36:47	52.4823611111111	13.381	buoy_white_green
-8919,8508     Manfred-von-Richthofen-Str./Bayer  SW->NO     09:36:47
+8916,8511     Manfred-von-Richthofen-Str./Bayer  SW->NO     09:36:47
 #WPT: 135	12-APR-12 9:38:43	52.48425	13.3855833333333	buoy_white_green
 9229,8718     Tempelhofer Damm/Manfred-von-Rich  W->O       09:38:43
 #WPT: 136	12-APR-12 9:39:10	52.48475	13.3861666666667	buoy_white_green
