@@ -227,7 +227,7 @@ for my $kr ($kr1, $kr2) {
 
     {
 	# Viktoriapark -> Groﬂbeerenstr.
-	my %situation = situation_at_point_inorder($kr, qw(9007,9264 8969,9320 9000,9509));
+	my %situation = situation_at_point_inorder($kr, qw(9007,9264 8970,9323 9000,9509));
 	is($situation{action}, '', q{This is not straight, not right}); # it would be right with HALF_ANGLE=30
     }
 
