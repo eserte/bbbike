@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2008,2013,2014,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2008,2013,2014,2015,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -240,7 +240,7 @@ sub BBBikeGPS::draw_gpsman_data {
 
     #my @colordef = ('#000000', {len => 320}, '#ffffff');
 
-    my $cfc_top = $top->Toplevel(-title => M"Gpsman-Daten zeichnen");
+    my $cfc_top = $top->Toplevel(-title => M"GPS-Daten zeichnen");
     $cfc_top->transient($top) if $main::transient;
     $main::toplevel{'BBBikeGPS.pm'} = $cfc_top;
 
@@ -268,7 +268,7 @@ sub BBBikeGPS::draw_gpsman_data {
     my $file = $gpsman_last_dir || Cwd::getcwd();
     my $weiter = 0;
 
-    $cfc_top->Label(-text => M("Gpsman-Datei").":")->pack(-anchor => "w");
+    $cfc_top->Label(-text => M("GPX/GPSMan-Datei").":")->pack(-anchor => "w");
     my $f = $cfc_top->Frame->pack(-fill => "x", -expand => 1);
     my $pe = $f->PathEntry
 	(-textvariable => \$file,
@@ -293,7 +293,7 @@ sub BBBikeGPS::draw_gpsman_data {
 	    } else {
 		$columnspan = 2;
 	    }
-	    $ff->Button(-text => M"Gpsman-Datenverzeichnis",
+	    $ff->Button(-text => M"GPX/GPSMan-Datenverzeichnis",
 			-command => sub { $file = $gpsman_data_dir }
 		       )->grid(-row => $row, -column => 0, -sticky => "ew",
 			       (defined $columnspan ? (-columnspan => $columnspan) : ()),

@@ -2949,7 +2949,7 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 			   -command => \&set_map_mode,
 			  );
 	$cusm->separator;
-	$cusm->command(-label => M"Gpsman-Daten zeichnen",
+	$cusm->command(-label => M"GPS-Daten zeichnen",
 		       -command => sub {
 			   draw_gpsman_data($top);
 		       });
