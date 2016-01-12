@@ -2724,6 +2724,7 @@ sub do_winter_optimization {
 		if ($try == 2) {
 		    die "Can't find winter_optimization.$winter_hardness.json in @Strassen::datadirs and cannot build...";
 		} else {
+		    main::status_message("Rebuilding winter optimization files for $winter_hardness...", "info");
 		    my @cmd = ($^X, "$bbbike_rootdir/miscsrc/winter_optimization.pl", "-as-json", "-winter-hardness", $winter_hardness, "-one-instance");
 		    main::IncBusy($main::top);
 		    eval {
@@ -2739,6 +2740,8 @@ sub do_winter_optimization {
 			delete $main::penalty_subs{'winteroptimization'};
 			$want_winter_optimization = '';
 			main::status_message($err, "die");
+		    } else {
+			main::status_message("... done", "info");
 		    }
 		}
 	    } else {
