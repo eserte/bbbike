@@ -119,9 +119,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11290,10972
 Waldemarstr.: Kopfsteinpflaster	Q2+ 11290,10972 11150,11030
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136 11473,11180
-#: XXX vor Ort nochmal genauer prüfen
-Legiendamm: asphaltiert	Q0 11349,11227 11337,11197 11323,11164
-Legiendamm: asphaltiert	Q0 11323,11164 11307,11125 11329,11065 11290,10972
+Legiendamm: asphaltiert	Q0 11349,11227 11337,11197 11323,11164 11307,11125 11329,11065 11290,10972
 Legiendamm: Kopfsteinpflaster	Q2 11290,10972 11227,10821 11189,10831
 Legiendamm: asphaltiert	Q0 11189,10831 11159,10769
 Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
@@ -309,8 +307,10 @@ Revaler Str.: Asphalt	Q0 14442,11101 14513,11075
 Revaler Str.: Kopfsteinpflaster, einzelne Stellen mit unebenen Asphalt	Q2; 14286,11186 14357,11148 14442,11101
 Revaler Str.: Kopfsteinpflaster	Q2; 14442,11101 14357,11148 14286,11186
 Revaler Str.: Kopfsteinpflaster	Q2 14134,11272 14211,11229 14286,11186
-Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
-Revaler Str.: Asphalt/Kopfsteinpflaster, Straßenbahn	Q1-; 13473,11456 13565,11492 13588,11490
+#: note: asphaltierter Radweg
+Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
+#: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
+Revaler Str.: Asphalt/Kopfsteinpflaster oder Verbundsteinpflaster	Q1; 13473,11456 13565,11492 13588,11490
 Prenzlauer Berg: Asphalt	Q0 11706,13635 11545,13690 11282,13661 11251,13667
 Alte Jakobstr.: Kopfsteinpflaster	Q2 10256,11160 10437,11352
 Ackerstr.: Kopfsteinpflaster	Q2 9439,14368 9400,14400
@@ -9714,7 +9714,7 @@ Fellbacher Str.: Kopfsteinpflaster	Q2 3610,23272 3653,23305
 (Weg zum großen Bunkerberg): kleinteiliges Kopfsteinpflaster	Q1- 12307,13329 12355,13366 12391,13416 12386,13452 12305,13514 12232,13523 12197,13488 12196,13453 12235,13383 12274,13372 12327,13394 12344,13424 12307,13491 12254,13495 12232,13477 12246,13440 12278,13418 12287,13443
 Torstr. - Weydingerstr.: Verbundsteinpflaster	Q1+ 11079,13492 11111,13518
 #: XXX Wird die Fahrbahn nochmal geändert? Wird bei der Erstellung der Straße auch eine Beleuchtung eingebaut (-> nolighting-orig)?
-#: last_checked: 2015-11-13
+#: last_checked: 2016-01-11
 #: check_frequency: 60d
 Wilhelmine-Gemberg-Weg: (provisorischer?) Asphalt	Q0 11715,11522 11762,11665
 Wilhelmine-Gemberg-Weg: Feinschotter	Q1 11762,11665 11829,11727

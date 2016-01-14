@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2016-01-08
+#: last_checked: 2016-01-11
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -1277,7 +1277,7 @@ Berlin-Schöneweide: Kategorie RB	?::inwork 17722,5573
 # 
 #: XXX Wird sich durch die Baumaßnahmen was ändern? Ende der Bauarbeiten: 30.04.2016 vvv
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.415646.php
-#: last_checked: 2015-12-17 vvv
+#: last_checked: 2016-01-12 vvv
 #: check_frequency: 30d vvv
 Görlitzer Park: Baumaßnahmen	?::inwork 12608,10294 12580,10252
 Görlitzer Park: Baumaßnahmen	?::inwork 12767,10216 12763,10207 12757,10197
@@ -1285,6 +1285,7 @@ Görlitzer Park: Baumaßnahmen	?::inwork 12905,10143 12901,10134 12869,10071
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
+Görlitzer Park: Drängelgitter?	? 12767,10216 12763,10207 12757,10197
 # 
 # REMOVED --- #: last_checked: 2015-11-29 --- #: check_frequency: 7d --- Kiefholzstr.: Umfahrungsstraße in Vorbereitung	? 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 # REMOVED (am nächsten Tag bei fritz entfernt) --- #: by: fritz --- #: XXX bis 31.12.2016 --- Grolmanstr.: Einbahnstraße wegen Bauarbeiten, auch für Radfahrer relevant?	? 4920,10933 4954,10876 5054,10706 5079,10701
