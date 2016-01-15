@@ -2575,12 +2575,12 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX temporäre Ampel (wegen Arbeiten an der Staatsoper und an der U-Bahn)
 #: XXX_prog Anforderungsampel
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
-#: last_checked: 2015-12-01
+#: last_checked: 2016-01-15
 #: check_frequency: 45d
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2015-12-16 vvv
+#: last_checked: 2016-01-14 vvv
 #: check_frequency: 30d vvv
 	X::inwork 9122,12509
 	X::inwork 9286,12886
@@ -2589,16 +2589,16 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
-#: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (südlicher Bereich) vvv
-#: last_checked: 2015-12-16 vvv
+#: next_check_id ^^^
+#
+#: XXX temporäre Ampel vvv
+#: last_checked: 2016-01-15 vvv
 #: check_frequency: 30d vvv
-# REMOVED (aufgehoben) ---	F::inwork 9063,12051
 	F::inwork 9270,12086
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
-#: next_check_id ^^^
-#
+# 
 #: XXX temporäre Ampel (wegen gesperrten Gehweg?), Ampel ist eigentlich etwas weiter westlich
 #: XXX eigentlich gibt es sogar zwei Fußgängerampeln
 #: last_checked: 2015-12-16
@@ -2799,7 +2799,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: source_id: 2147339543 vvv
 #: XXX laut rbbtext bis 30.06.2016
 #: XXX laut fritz bis 31.07.2016
-#: last_checked: 2016-01-07 vvv
+#: last_checked: 2016-01-14 vvv
 #: next_check: 2016-06-30 vvv
 	F 10703,11837
 	F 10656,11887
