@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2015,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -19,7 +19,7 @@ use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
 
 use strict;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use LWP::UserAgent ();
 use JSON::XS qw(decode_json);
@@ -73,7 +73,7 @@ sub refresh_owm_layer {
 	my($minx,$miny,$maxx,$maxy) = main::get_visible_map_bbox_polar();
 	my $cx = ($maxx-$minx)/2 + $minx;
 	my $cy = ($maxy-$miny)/2 + $miny;
-	my $url = "http://api.openweathermap.org/data/2.5/station/find?lat=$cy&lon=$cx=cnt=10";
+	my $url = "http://api.openweathermap.org/data/2.5/station/find?lat=$cy&lon=$cx&cnt=10";
 	if (defined $appid) {
 	    warn "INFO: using API key (appid): $appid\n";
 	    $url .= "&APPID=$appid";
