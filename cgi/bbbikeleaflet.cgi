@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012,2013,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2013,2015,2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -24,9 +24,6 @@ use CGI ();
 use BBBikeLeaflet::Template ();
 use BBBikeCGI::Config ();
 use BBBikeCGI::Util ();
-
-my $htmldir = "$FindBin::RealBin/../html";
-my $htmlfile = "$htmldir/bbbikeleaflet.html";
 
 my $cgi_config = BBBikeCGI::Config->load_config("$FindBin::RealBin/bbbike.cgi.config", 'perl');
 
