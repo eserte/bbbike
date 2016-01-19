@@ -24303,18 +24303,17 @@ EOF
 userdel	2::inwork 15261,10738 15272,10790
 EOF
      },
-     { from  => $isodate2epoch->("2016-01-18 00:00:00"),
-       until => $isodate2epoch->("2016-01-21 23:59:59"),
+     { from  => $isodate2epoch->("2016-01-17 00:00:00"),
+       until => $isodate2epoch->("2016-01-22 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 1],
                        ['yearly', days => 1, months => 7]],
-       text  => 'Schöneberger Str. und Luckenwalder Str.: voraussichtlich wegen der Premium Berlin Einbahnstraßen, 19.01.2016-21.01.2016',
+       text  => 'Schöneberger Str. und Luckenwalder Str.: Sperrungen wegen der Fashion Week, 18.01.2016-22.01.2016',
        type  => 'handicap',
-       source_id => 'https://www.berlin.de/events/fashion-week/modemessen/2255617-2251352-modemesse-premium.html',
+       source_id => '2147339708',
        data  => <<EOF,
-#: note: laut fritz _Vollsperrung_ bis einschließlich _Samstag_ 
-userdel	q4::inwork; 8634,10426 8384,10507 8525,10626
-userdel	q4::inwork; 8348,10636 8335,10518 8350,10499
+userdel	q4::inwork 8634,10426 8384,10507 8525,10626
+userdel	q4::inwork 8348,10636 8335,10518 8350,10499
 EOF
      },
      { from  => 1436738400, # 2015-07-13 00:00
