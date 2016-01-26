@@ -1262,9 +1262,9 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
                             ]
                           ],
          'source_id' => 'IM_019489',
-         'text' => 'Straße des 17. Juni: voraussichtlich wegen der Fashion Week gesperrt, 06.01.2016 bis 27.01.2016',
+         'text' => 'Straße des 17. Juni: wegen der Fashion Week gesperrt, 06.01.2016 bis 29.01.2016',
          'type' => 'gesperrt',
-         'until' => 1454014800
+         'until' => 1454101200
        },
        {
          'data' => '	2::night 12851,12602 13108,12859 13046,12956 12878,13229
@@ -1418,6 +1418,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        {
          'data' => '#: by: fritz
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160124
 #: source_id: 2147339574
 #: confirmed_by: srt
 userdel	1::inwork 17886,5587 17736,5441
@@ -1834,34 +1835,7 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	q4::inwork 8634,10426 8384,10507 8525,10626
-userdel	q4::inwork 8348,10636 8335,10518 8350,10499
-',
-         'from' => 1452985200,
-         'id' => 2718,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              8,
-                              'months',
-                              1
-                            ],
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              7
-                            ]
-                          ],
-         'source_id' => '2147339708',
-         'text' => 'Schöneberger Str. und Luckenwalder Str.: Sperrungen wegen der Fashion Week, 18.01.2016-22.01.2016',
-         'type' => 'handicap',
-         'until' => 1453503599
-       },
+       undef,
        {
          'data' => '	2::inwork 9998,16547 9982,16527 9959,16510
 ',
