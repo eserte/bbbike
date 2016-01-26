@@ -230,6 +230,9 @@ sub check_url {
 	    # XXX One of the sourceforge mirrors uses text/plain as content-type
 	    like($content_type, qr{^application/(octet-stream|x-debian-package)$}, "Expected type (debian package), got $content_type")
 		or diag("For URL $url$redir_text");
+	} elsif ($url =~ m{\.deb$}) { # direct download
+	    like($content_type, qr{^application/x-debian-package$}, "Expected type (debian package), got $content_type")
+		or diag("For URL $url$redir_text");
 	} else {
 	    like($content_type, qr{^text/html}, "Expected type (html)") or diag("For URL $url$redir_text");
 	}
