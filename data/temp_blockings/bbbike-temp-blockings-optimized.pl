@@ -1946,13 +1946,13 @@ userdel	2::inwork -1298,2017 -1082,2140
        undef,
        {
          'data' => '#: XXX Wann sind die Bauarbeiten beendet? Wie weit geht die Sperrung Richtung Süden?
-#: last_checked: 2015-12-17
-userdel	q3::inwork 12620,9293 12565,9200
+#: last_checked: 2016-01-26
+userdel	2::inwork 12620,9293 12565,9200 12548,9167
 ',
          'from' => undef,
          'id' => 2764,
-         'text' => 'Rütlistr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg',
-         'type' => 'handicap',
+         'text' => 'Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt',
+         'type' => 'gesperrt',
          'until' => undef
        }
      

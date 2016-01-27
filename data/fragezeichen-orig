@@ -101,7 +101,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6183 (Baubeginn erst 2015)
 #: XXX Baubeginn des ersten Abschnitts: 3. Quartal 2014
-#: last_checked: 2016-01-24
+#: last_checked: 2016-01-26
 #: check_frequency: 60d
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -1281,6 +1281,8 @@ Am Kirchendreieck: Lage der Straße? Qualität?	? 23922,13085 23960,13325
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+Wassertorplatz: gibt es hier eine Vorfahrtsregelung?	? 10975,10334 10987,10360 11017,10435
+# 
 # REMOVED --- #: XXX ggfs. müssen einige der comments_path-Kommentare angepasst werden --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6482 --- Frankfurter Allee/Buchberger Str.: derzeitigen Stand der Ampelanlage überprüfen	? 16368,11912 16413,11906
 # 
 #: by: http://www.vbb.de/de/article/verkehrshinweise/fahrplanwechsel-am-13-dezember-2015/293890.html
@@ -1293,7 +1295,7 @@ Berlin-Schöneweide: Kategorie RB	?::inwork 17722,5573
 # 
 #: XXX Wird sich durch die Baumaßnahmen was ändern? Ende der Bauarbeiten: 30.04.2016 vvv
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.415646.php
-#: last_checked: 2016-01-12 vvv
+#: last_checked: 2016-01-26 vvv
 #: check_frequency: 30d vvv
 Görlitzer Park: Baumaßnahmen	?::inwork 12608,10294 12580,10252
 Görlitzer Park: Baumaßnahmen	?::inwork 12767,10216 12763,10207 12757,10197
@@ -1301,7 +1303,7 @@ Görlitzer Park: Baumaßnahmen	?::inwork 12905,10143 12901,10134 12869,10071
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
-Görlitzer Park: Drängelgitter?	? 12767,10216 12763,10207 12757,10197
+# REMOVED (keine Einschränkung durch die existierenden Umlaufsperren) --- Görlitzer Park: Drängelgitter?	? 12767,10216 12763,10207 12757,10197
 # 
 # REMOVED --- #: last_checked: 2015-11-29 --- #: check_frequency: 7d --- Kiefholzstr.: Umfahrungsstraße in Vorbereitung	? 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 # REMOVED (am nächsten Tag bei fritz entfernt) --- #: by: fritz --- #: XXX bis 31.12.2016 --- Grolmanstr.: Einbahnstraße wegen Bauarbeiten, auch für Radfahrer relevant?	? 4920,10933 4954,10876 5054,10706 5079,10701
