@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000-2010,2012,2013,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000-2010,2012,2013,2015,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@
 
 package BBBike;
 
-my $use_bbbike_sourceforge_net_fallback = 1;
+my $use_bbbike_sourceforge_net_fallback = 1; # for the html pages, not for downloads
 
 $VERSION	   = '3.19-DEVEL'; # remove "-DEVEL" for releases
 $STABLE_VERSION	   = '3.18';
@@ -77,8 +77,8 @@ $SF_DISTFILE_SOURCE   = "$SF_DISTDIR/$STABLE_VERSION/BBBike-$STABLE_VERSION.tar.
 # In this case use the following URL.
 $SF_DISTFILE_SOURCE_ALT = "http://heanet.dl.sourceforge.net/project/bbbike/BBBike/$STABLE_VERSION/BBBike-$STABLE_VERSION.tar.gz";
 $SF_DISTFILE_WINDOWS  = "$SF_DISTDIR/$WINDOWS_VERSION/BBBike-$WINDOWS_VERSION-Windows.exe/download";
-$SF_DISTFILE_DEBIAN_I386  = $use_bbbike_sourceforge_net_fallback ? "$BBBIKE_SF_WWW/downloads/bbbike_${DEBIAN_I386_VERSION}_i386.deb" : "$SF_DISTDIR/" . join('', $DEBIAN_I386_VERSION =~ m{(^[^-]+)}) . "/bbbike_${DEBIAN_I386_VERSION}_i386.deb/download";
-$SF_DISTFILE_DEBIAN_AMD64 = $use_bbbike_sourceforge_net_fallback ? "$BBBIKE_SF_WWW/downloads/bbbike_${DEBIAN_AMD64_VERSION}_amd64.deb" : "$SF_DISTDIR/" . join('', $DEBIAN_AMD64_VERSION =~ m{(^[^-]+)}) . "/bbbike_${DEBIAN_AMD64_VERSION}_amd64.deb/download";
+$SF_DISTFILE_DEBIAN_I386  = 0&&$use_bbbike_sourceforge_net_fallback ? "$BBBIKE_SF_WWW/downloads/bbbike_${DEBIAN_I386_VERSION}_i386.deb" : "$SF_DISTDIR/" . join('', $DEBIAN_I386_VERSION =~ m{(^[^-]+)}) . "/bbbike_${DEBIAN_I386_VERSION}_i386.deb/download";
+$SF_DISTFILE_DEBIAN_AMD64 = 0&&$use_bbbike_sourceforge_net_fallback ? "$BBBIKE_SF_WWW/downloads/bbbike_${DEBIAN_AMD64_VERSION}_amd64.deb" : "$SF_DISTDIR/" . join('', $DEBIAN_AMD64_VERSION =~ m{(^[^-]+)}) . "/bbbike_${DEBIAN_AMD64_VERSION}_amd64.deb/download";
 *SF_DISTFILE_DEBIAN = \$SF_DISTFILE_DEBIAN_I386; # compatibility
 $DISTFILE_FREEBSD_I386 = "http://pkg.freebsd.org/freebsd:10:x86:32/latest/All/de-BBBike-3.18_4.txz";
 *DISTFILE_FREEBSD = \$DISTFILE_FREEBSD_I386; # compatibility
