@@ -1244,28 +1244,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'until' => undef
        },
        undef,
-       {
-         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-',
-         'from' => 1451970000,
-         'id' => 2412,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              3,
-                              'months',
-                              1
-                            ]
-                          ],
-         'source_id' => 'IM_019489',
-         'text' => 'Straße des 17. Juni: wegen der Fashion Week gesperrt, 06.01.2016 bis 29.01.2016',
-         'type' => 'gesperrt',
-         'until' => 1454101200
-       },
+       undef,
        {
          'data' => '	2::night 12851,12602 13108,12859 13046,12956 12878,13229
 	2::night 12773,12683 13046,12956
@@ -1954,6 +1933,38 @@ userdel	2::inwork 12620,9293 12565,9200 12548,9167
          'text' => 'Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       undef,
+       undef,
+       undef,
+       {
+         'data' => 'userdel	2::temp 3835,10352 3971,10381 4157,10418 4245,10435 4371,10465 4503,10497 4676,10541 4847,10589 5076,10658 5215,10711 5351,10760 5475,10808 5656,10876 5725,10892 5782,10884 5907,10821
+userdel auto	3 4172,10406 4157,10418 4153,10453
+userdel auto	3 4685,10689 4676,10541 4659,10335
+userdel auto	3 4485,10307 4503,10497 4513,10702
+userdel auto	3 4239,10358 4245,10435 4256,10583
+userdel auto	3 4381,10583 4371,10465 4360,10320
+userdel auto	3 5230,10919 5215,10711 5196,10398
+userdel auto	3 4828,10356 4847,10589 4847,10677
+userdel auto	3 5196,10398 5215,10711 5230,10919
+userdel auto	3 5079,10701 5076,10658 5047,10381
+userdel auto	3 4256,10583 4245,10435 4239,10358
+userdel auto	3 5829,10964 5782,10884 5669,10704
+userdel auto	3 4513,10702 4503,10497 4485,10307
+userdel auto	3 4847,10677 4847,10589 4828,10356
+userdel auto	3 4360,10320 4371,10465 4381,10583
+userdel auto	3 4659,10335 4676,10541 4685,10689
+userdel auto	3 5047,10381 5076,10658 5079,10701
+userdel auto	3 5471,10719 5475,10808 5488,10978
+userdel auto	3 4153,10453 4157,10418 4172,10406
+userdel auto	3 5669,10704 5782,10884 5829,10964
+userdel auto	3 5488,10978 5475,10808 5471,10719
+',
+         'from' => 1454148000,
+         'id' => 2768,
+         'text' => 'Kurfürstendamm: Faschingsumzug zwischen Adenauerplatz und Breitscheidplatz, 31. Januar 2016',
+         'type' => 'gesperrt',
+         'until' => 1454281199
        }
      
 );

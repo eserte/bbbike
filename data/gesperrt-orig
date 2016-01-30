@@ -2745,7 +2745,7 @@ Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 144
 # REMOVED --- #: XXX vermutlich müssen auch Radfahrer die Umleitung nehmen --- #: source_id: IM_024686 --- #: next_check: 2015-05-29 --- #: priority: #A --- Rummelsburger Landstraße: zwischen Nalepastr. und Poggendorffweg wegen Baustelle gesperrt	1::inwork 17143,8565 17202,8391
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5561.html
-#: last_checked: 2016-01-14
+#: last_checked: 2016-01-28
 #: next_check: 2017-04-01
 Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,12669 6765,12680
 # 
@@ -2838,7 +2838,9 @@ Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, gg
 #: check_frequency: 60d vvv
 # REMOVED --- Grenobler Ring: teilweise noch nicht fertiggestellt bzw. durch Bauzaun abgesperrt	2::inwork 12360,21303 12441,21341 12483,21255 12404,21217
 # REMOVED --- Grenobler Ring: teilweise noch nicht fertiggestellt bzw. durch Bauzaun abgesperrt	2::inwork 12483,21255 12493,21212
+#: XXX vermutlich schon offen
 Lyonstr.: noch nicht geöffnet	2::inwork 12188,21330 12204,21327 12322,21378 12443,21439
+#: XXX vermutlich schon offen
 Marseillestr.: noch nicht geöffnet	2::inwork 12402,21537 12404,21532 12411,21515 12443,21439
 Toulonstr.: noch nicht geöffnet	2::inwork 12404,21532 12480,21560
 #: check_frequency ^^^
@@ -3130,7 +3132,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2016-01-14
+#: last_checked: 2016-01-28
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
