@@ -1,0 +1,19 @@
+branches:
+  except:
+    - /travis/
+skip_tags: true
+shallow_clone: true
+
+cache:
+  - C:\strawberry
+
+install:
+  - if not exist "C:\strawberry" cinst strawberryperl
+  - set PATH=C:\strawberry\perl\bin;C:\strawberry\perl\site\bin;C:\strawberry\c\bin;%PATH%
+  - cd C:\projects\%APPVEYOR_PROJECT_NAME%\Task\BBBike\windist
+  - cpanm --installdeps .
+  - cd C:\projects\%APPVEYOR_PROJECT_NAME%
+
+build_script:
+  - perl Makefile.PL
+  - dmake test

@@ -1,3 +1,6 @@
+branches:
+ except:
+  - /appveyor/
 before_install:
  - . port/travis-ci/travis-functions.sh
  - init_travis
