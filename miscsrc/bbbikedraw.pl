@@ -300,6 +300,7 @@ usage: $0 [options]
 -layers type1,type2,..     Alias for drawtypes
 -routefile file		   Draw the specified bbr file (some other GPS file
 			   formats are also supported)
+-routelist                 Add also a route list page if supported (e.g. PDF)
 -markerpoint x,y           Draw a marker
 -restrict cat1,cat2,...    Restrict to the specified categories.
 -o outfile                 Use the specified file for the output. Otherwise
