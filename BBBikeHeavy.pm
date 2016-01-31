@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeHeavy.pm,v 1.41 2009/01/21 21:39:25 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,7 +13,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.41 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.42';
 
 package main;
 use strict;
@@ -1175,10 +1174,11 @@ sub BBBikeHeavy::any_bbbikedraw_export {
     my $geometry = $args{-geometry} || "auto";
     return unless defined $file;
     require BBBikeDraw;
-    open(OUT, ">$file") or
+    open my $OUT, '>', $file or
 	status_message
 	    (Mfmt("Kann auf %s nicht schreiben: %s",
 		  $file, $!));
+    binmode $OUT;
 
     my $scope = 'city';
     if ($str_file{'l'}) {
@@ -1213,7 +1213,7 @@ sub BBBikeHeavy::any_bbbikedraw_export {
 	    (ImageType => $args{-imagetype},
 	     Module => $args{-module},
 	     Coords => [map { join ",", @$_ } @realcoords],
-	     Fh => \*OUT,
+	     Fh => $OUT,
 	     Scope => $scope,
 	     Geometry => $geometry, # landscape or portrait
 	     Draw => [@draw],
@@ -1241,10 +1241,11 @@ sub BBBikeHeavy::any_bbbikedraw_export {
 	    }
 	}
 	$draw->flush;
+	close $OUT
+	    or die M('Fehler beim Schlieﬂen der Datei: ') . $!;
     };
     my $err = $@;
     DecBusy($top);
-    close OUT;
     if ($err) {
 	unlink $file;
 	status_message(Mfmt("Die %s-Datei konnte nicht erstellt werden. Grund: %s", $args{-imagetype}, $err), "err");
