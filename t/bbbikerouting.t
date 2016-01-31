@@ -137,14 +137,18 @@ plan tests => $num_tests * @runs;
 for my $rundef (@runs) {
     ($usexs, $usenetserver, $usecache, $cachetype, $algorithm)
 	= @$rundef;
-    if ($bench) {
-	my $t = timeit(1, 'do_tests()');
-	$times{$token} += $t->[$_] for (1..4);
-    } else {
-	if (@runs > 1) {
-	    print "# xs=$usexs netserver=$usenetserver cache=$usecache cachetype=$cachetype algorithm=$algorithm\n";
+ SKIP: {
+	skip "C-A*-2 does not work on Windows (because of mmap)", $num_tests
+	    if $algorithm eq 'C-A*-2' && $^O eq 'MSWin32';
+	if ($bench) {
+	    my $t = timeit(1, 'do_tests()');
+	    $times{$token} += $t->[$_] for (1..4);
+	} else {
+	    if (@runs > 1) {
+		print "# xs=$usexs netserver=$usenetserver cache=$usecache cachetype=$cachetype algorithm=$algorithm\n";
+	    }
+	    do_tests();
 	}
-	do_tests();
     }
 }
 

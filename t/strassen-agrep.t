@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: strassen-agrep.t,v 1.1 2009/02/15 20:49:41 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -32,7 +31,11 @@ Unkeallee (B)	X 1,1
 Weiﬂenseer Weg	X 1,1
 EOF
 
-my @search_types = ("agrep", "String::Approx", "perl");
+my @search_types = (
+		    ($^O ne 'MSWin32' ? "agrep" : ()), # usually no agrep available on Windows systems
+		    "String::Approx",
+		    "perl",
+		   );
 my $non_approx_tests = 7;
 my $approx_tests     = 2;
 my $tests_per_type = $non_approx_tests + $approx_tests;

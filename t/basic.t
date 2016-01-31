@@ -70,6 +70,9 @@ for my $f (@files) {
  			)$}x && !eval { require Tk };
 	myskip "$f needs Inline", $tests_per_file
 	    if $f =~ m{ext/(Strassen-Inline|StrassenNetz-CNetFile).*} && !eval { require Inline::MakeMaker };
+	myskip "$f does not exist on Win32", $tests_per_file
+	    if $f =~ m{^( ext/Strassen-Inline2/Inline2Dist.pm
+		       )$}x && $^O eq 'MSWin32';
 	myskip "$f needs 5.8.0 or better", $tests_per_file
 	    if $f eq 'BBBikeDebug.pm' && $] < 5.008;;
 	myskip "$f needs Imager", $tests_per_file

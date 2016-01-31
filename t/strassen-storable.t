@@ -35,12 +35,11 @@ BEGIN {
 }
 
 use BBBikeTest qw(get_pmake);
+use BBBikeUtil qw(is_in_path);
 
 # results with perl 5.20.1, Debian/wheezy, Xen VM:
 # Strassen::Storable: 0.07
 # Strassen: 0.08
-
-plan tests => 10;
 
 my $skip_build;
 my $bench;
@@ -53,10 +52,15 @@ if (!GetOptions(
 
 if (!$skip_build) {
     my $make = get_pmake;
+    if ($^O eq 'MSWin32' && !is_in_path($make)) { # XXX no pmake or similar availabl on Windows
+	plan skip_all => 'Cannot build Storable files, a suitable pmake is not available';
+    }
     diag "Regenerating storable files in data, please be patient...\n";
     local $ENV{MAKEFLAGS}; # protect from gnu make brain damage (MAKEFLAGS is set to "w" in recursive calls)
     system("cd $FindBin::RealBin/../data && $make storable >/dev/null 2>&1");
 }
+
+plan tests => 10;
 
 my %times;
 for my $def (

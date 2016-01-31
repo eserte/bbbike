@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004, 2010, 2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004, 2010, 2015, 2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -249,26 +249,7 @@ sub look {
 	    unshift @grep_args, "-$args{Agrep}";
 	}
 	my @cmd = ($grep_type, @grep_args);
-	warn "About to call <@cmd>" if $VERBOSE;
-	CORE::open(PLZ, "-|") or do {
-	    $ENV{LANG} = $ENV{LC_ALL} = $ENV{LC_CTYPE} = 'C';
-	    # agrep emits some warnings "using working-directory '...'
-	    # to locate dictionaries" if it does not have a $ENV{HOME}
-	    # (which is probably a bug, because dictionaries are not
-	    # used at all)
-	    $ENV{HOME} = "/something";
-	    exec @cmd;
-	    warn "While doing @cmd: $!";
-	    require POSIX;
-	    POSIX::_exit(1); # avoid running any END blocks
-	};
-	my %res;
-	binmode PLZ;
-	while(<PLZ>) {
-	    chomp;
-	    $push_sub->($_);
-	}
-	close PLZ;
+	_call_ext_cmd(\@cmd, $push_sub);
     } else {
 	CORE::open(PLZ, $file)
 	  or die "Die Datei $file kann nicht geöffnet werden: $!";
@@ -905,6 +886,52 @@ sub make_result {
     my($self, $res) = @_;
     require PLZ::Result;
     PLZ::Result->new($self, $res);
+}
+
+sub _call_ext_cmd {
+    my($cmdref, $collector) = @_;
+    warn "About to call <@$cmdref>" if $VERBOSE;
+    if ($^O eq 'MSWin32') {
+	# no pipe open available
+	_call_ext_cmd_windows($cmdref, $collector);
+    } else {
+	_call_ext_cmd_unix($cmdref, $collector);
+    }
+}
+
+sub _call_ext_cmd_unix {
+    my($cmdref, $collector) = @_;
+    CORE::open(my $PLZ, "-|") or do {
+	# Most of the times a good idea:
+	$ENV{LANG} = $ENV{LC_ALL} = $ENV{LC_CTYPE} = 'C';
+	# agrep emits some warnings "using working-directory '...'
+	# to locate dictionaries" if it does not have a $ENV{HOME}
+	# (which is probably a bug, because dictionaries are not
+	# used at all)
+	$ENV{HOME} = "/something";
+	exec @$cmdref;
+	warn "While doing @$cmdref: $!";
+	require POSIX;
+	POSIX::_exit(1); # avoid running any END blocks
+    };
+    binmode $PLZ;
+    while(<$PLZ>) {
+	chomp;
+	$collector->($_);
+    }
+    close $PLZ;
+}
+
+sub _call_ext_cmd_windows {
+    my($cmdref, $collector) = @_;
+    require IPC::Run;
+    my $out;
+    local $ENV{LANG} = local $ENV{LC_ALL} = local $ENV{LC_CTYPE} = 'C';
+    local $ENV{HOME} = "/something";
+    IPC::Run::run($cmdref, '>', \$out);
+    for my $line (split /\n/, $out) {
+	$collector->($line);
+    }
 }
 
 return 1 if caller();

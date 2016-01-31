@@ -12,27 +12,27 @@ use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../data",
 	 "$FindBin::RealBin/../lib");
-use Config;
-use Strassen;
-use Strassen::Build;
-use Strassen::Util;
-use StrassenNetz::CNetFile;
-use Storable;
-eval 'use BBBikeXS';
 
 BEGIN {
-    if (!eval q{
-	use Test;
-	1;
-    }) {
-	print "# tests only work with installed Test module\n";
-	print "1..1\n";
-	print "ok 1\n";
+    if (!eval q{ use Test; 1; }) {
+	print "1..0 # skip Tests only work with installed Test module\n";
+	exit;
+    }
+
+    if ($^O eq 'MSWin32' && !eval q{ use StrassenNetz::CNetFile; 1; }) {
+	print "1..0 # skip Tests only work with installed StrassenNetz::CNetFile module, which is not available under Windows\n";
 	exit;
     }
 
     $tests = 12;
 }
+
+use Config;
+use Strassen;
+use Strassen::Build;
+use Strassen::Util;
+use Storable;
+eval 'use BBBikeXS';
 
 BEGIN { plan tests => $tests }
 

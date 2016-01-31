@@ -1,0 +1,19 @@
+# XXX Duplication of some rules found in Makefile, should really use Makefile.PL or so
+
+PERL=perl
+.USESHELL:
+
+# VirtArray and StrassenNetz::CNetFile do not work on Windows (mmap...)
+# Strassen-Inline2 requires StrassenNetz::CNetFile
+ext:	do-bbbikexs \
+	do-strassen-inline \
+	do-vectorutil-inline
+
+do-bbbikexs:
+	cd BBBikeXS              && ${PERL} Makefile.PL && ${MAKE} all test install
+
+do-strassen-inline:
+	cd Strassen-Inline       && ${PERL} Makefile.PL && ${MAKE} all test install
+
+do-vectorutil-inline:
+	cd VectorUtil-Inline     && ${PERL} Makefile.PL && ${MAKE} all test install BATCH=yes
