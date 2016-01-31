@@ -891,6 +891,16 @@ sub make_result {
 sub _call_ext_cmd {
     my($cmdref, $collector) = @_;
     warn "About to call <@$cmdref>" if $VERBOSE;
+    if ($^O eq 'MSWin32') {
+	# no pipe open available
+	_call_ext_cmd_windows($cmdref, $collector);
+    } else {
+	_call_ext_cmd_unix($cmdref, $collector);
+    }
+}
+
+sub _call_ext_cmd_unix {
+    my($cmdref, $collector) = @_;
     CORE::open(my $PLZ, "-|") or do {
 	# Most of the times a good idea:
 	$ENV{LANG} = $ENV{LC_ALL} = $ENV{LC_CTYPE} = 'C';
@@ -910,6 +920,18 @@ sub _call_ext_cmd {
 	$collector->($_);
     }
     close $PLZ;
+}
+
+sub _call_ext_cmd_windows {
+    my($cmdref, $collector) = @_;
+    require IPC::Run;
+    my $out;
+    local $ENV{LANG} = local $ENV{LC_ALL} = local $ENV{LC_CTYPE} = 'C';
+    local $ENV{HOME} = "/something";
+    IPC::Run::run($cmdref, '>', \$out);
+    for my $line (split /\n/, $out) {
+	$collector->($line);
+    }
 }
 
 return 1 if caller();
