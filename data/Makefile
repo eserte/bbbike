@@ -1276,7 +1276,7 @@ ${BBBGEOJSONPDIR}/index.html:	${BBBGEOJSONP_TARGETS}
 
 # allow one error, and fail if the 2nd one is encountered
 FOREVER_INTERVAL?=	30
-FOREVER_TWO_ERRORS=	perl -MFcntl=:flock -e  '@cmd=@ARGV; while() { { open my $$LOCK, ">", ".check_forever.lck" or die $$!; flock $$LOCK, LOCK_EX|LOCK_NB or die $$!; print STDERR "\rrun... "; system(@cmd); exit 2 if $$? == 2; $$count = $$? == 0 ? 0 : $$count+1; exit 1 if $$count >= 2; } unlink ".check_forever.lck"; print STDERR "\rwait..."; sleep $(FOREVER_INTERVAL) }'
+FOREVER_TWO_ERRORS=	perl -MFcntl=:flock -e  '@cmd=@ARGV; while() { next if get_current_branch() ne "master"; { open my $$LOCK, ">", ".check_forever.lck" or die $$!; flock $$LOCK, LOCK_EX|LOCK_NB or die $$!; print STDERR "\rrun... "; system(@cmd); exit 2 if $$? == 2; $$count = $$? == 0 ? 0 : $$count+1; exit 1 if $$count >= 2; } } continue { unlink ".check_forever.lck"; print STDERR "\rwait..."; sleep $(FOREVER_INTERVAL) } sub get_current_branch { my $$fh; open $$fh, "<", "../.git/HEAD" and $$_ = <$$fh> and m{refs/heads/(\S+)} and return $$1 }'
 .if exists($(HOME)/bin/sh/cron-wrapper)
 CRON_WRAPPER=$(HOME)/bin/sh/cron-wrapper
 .else
