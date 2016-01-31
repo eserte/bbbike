@@ -32,6 +32,7 @@ patch\.gz$
 (^|/)MYMETA\.yml$
 (^|/)MYMETA\.json$
 \.travis\.yml$
+^appveyor\.yml$
 # private common files
 \.ok2cgi$
 \.copynewer.SKIP$
