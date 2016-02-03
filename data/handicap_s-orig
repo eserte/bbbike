@@ -60,41 +60,43 @@ Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4
 #: last_checked: 2016-01-14
 Sch¸tzenstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10116,11485 9949,11470
 # 
-#: last_checked: 2016-01-14
+#: last_checked: 2016-02-03
 Kommandantenstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10330,11422 10136,11529
 # 
-#: last_checked: 2016-01-14
+#: last_checked: 2016-02-03
 Beuthstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10201,11631 10235,11610 10330,11422
 # 
+#: XXX gibt es hier noch Einschr‰nkungen?
 #: last_checked: 2016-01-14
+#: next_check: 2016-02-03
 Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9935,11566 9990,11571
 # 
 #: XXX bis wann dauert die Sperrung an? vvv
 #: XXX wird die Straﬂe danach asphaltiert sein?
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6992 (Frage nach Ende der Bauarbeiten)
-#: last_checked: 2016-01-20 vvv
+#: last_checked: 2016-02-02 vvv
 # REMOVED (fertig) --- Legiendamm: Sperrung der Fahrbahn am Engelbecken	q4::inwork 11323,11164 11337,11197 11349,11227
 Michaelkirchplatz: Sperrung der Fahrbahn am Engelbecken	q2::inwork 11415,11392 11349,11227
 #: last_checked ^^^
 #: XXX ^^^
 # 
 #: XXX bis wann dauert die Sperrung an?
-#: last_checked: 2016-01-20
+#: last_checked: 2016-02-02
 Leuschnerdamm: Sperrung der Fahrbahn Richtung Michaelkirchplatz	q4::inwork; 11458,11136 11473,11180
 # 
 #: XXX nach den Bauarbeiten bessere Qualit‰t?
-#: last_checked: 2016-01-19
+#: last_checked: 2016-02-02
 Melchiorstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 11542,11342 11726,11265 11921,11185
 # 
 # REMOVED (nicht mehr gesperrt f¸r Radfahrer) --- #: XXX nochmal genauer anschauen... --- #: last_checked: 2014-11-10 --- Gipsstr.: Bauarbeiten zwischen Rosenthaler Str. und Joachimstr., Einbahnstraﬂe	q2::inwork; 10350,13376 10199,13446
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2014-08-22 --- #: check_frequency: 14d --- Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11487,11390 11542,11342 11415,11392 11487,11390
 # 
-#: last_checked: 2015-12-01
+#: last_checked: 2016-02-03
 #: check_frequency: 60d
-zur Keibelstr.: Baustraﬂe, Durchfahrt f¸r Radfahrer nicht erlaubt	q4::inwork 10976,13229 11045,13183
+zur Keibelstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 10976,13229 11045,13183
 # 
 #: XXX auf beiden Seiten Bordsteine
-#: last_checked: 2015-12-01
+#: last_checked: 2016-02-03
 #: check_frequency: 60d
 Wadzeckstr.: Bauarbeiten, auf Gehweg ausweichen, Bordsteine	q4::inwork 11146,13328 11201,13289
 # 
@@ -215,10 +217,10 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED (das Einfahrt verboten-Schild h‰ngt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9949,11470 9935,11566
 # 
 #: XXX laut fritz bis 29.06.2016
-#: last_checked: 2016-01-15
+#: last_checked: 2016-02-03
 #: next_check: 2016-06-15
 Alte Jakobstr.: Bauarbeiten, teilweise Einbahnstraﬂe	q3::inwork; 10256,11160 10437,11352
-#: last_checked: 2016-01-15
+#: last_checked: 2016-02-03
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10624,11548 10640,11564
 # 
 # REMOVED --- Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10437,11352
@@ -261,7 +263,7 @@ Ritterstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9935,11067 10103,10989
 ### Neukˆlln ###
 # 
 #: next_check_id: DIESEL-2015
-#: last_checked: 2015-11-17
+#: last_checked: 2016-02-03
 #: check_frequency: 60d
 Dieselstr., Umfahrung: Fuﬂg‰nger, kurvig, eng	q2-::inwork 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112 14429,8074 14471,8046
 # 
@@ -272,7 +274,7 @@ Dieselstr., Umfahrung: Fuﬂg‰nger, kurvig, eng	q2-::inwork 14326,8062 14344,8072 
 #: XXX laut fritz bis 2015-12-31, mittlerweile verl‰ngert bis Juli 2017 (!)
 #: source_id: IM_022515
 #: source_id: 2147338550
-#: last_checked: 2016-01-26
+#: last_checked: 2016-02-03
 #: check_frequency: 60d
 Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung S¸den auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12898,7832 12914,7785 12969,7610
 # REMOVED (fertig) --- Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung S¸den auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12969,7610 12991,7549 12992,7545 13015,7471 13018,7441
@@ -405,11 +407,11 @@ Rathausstr.: Fuﬂg‰nger	q1- 10923,12779 10704,12595
 Dircksenstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10970,12822 10849,12944
 Dircksenstr.: Fuﬂg‰nger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
 Gontardstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10733,12967 10801,12901 10923,12779
-Uferweg im Treptower Park: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 15778,8990 15638,9020 15527,9096 15513,9144 15453,9259 15432,9322 15304,9464 15186,9550 15052,9584 14909,9649 14889,9660 14840,9692 14635,9786 14500,9856 14483,9843 14460,9871 14448,9922
+Uferweg im Treptower Park: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 15778,8990 15638,9020 15527,9096 15513,9144 15453,9259 15432,9322 15304,9464 15186,9550 15052,9584 14909,9649 14889,9660 14807,9704 14635,9786 14500,9856 14483,9843 14460,9871 14448,9922
 (S-Bahnhof - Treptower Hafen): Fuﬂg‰nger, besonders an schˆnen Tagen	q2 14361,9772 14436,9784 14460,9814 14483,9843
 (Uferweg - Puschkinallee): Fuﬂg‰nger	q1 14443,9731 14318,9688
 Treptower Park, am Rosengarten: Fuﬂg‰nger	q2 14809,9466 14837,9517 14866,9571 14909,9649
-Treptower Park: Fuﬂg‰nger	q1 14889,9660 14697,9726 14645,9710 14575,9648 14496,9705 14443,9731 14361,9772
+Treptower Park: Fuﬂg‰nger	q1 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674 14575,9648 14496,9705 14443,9731 14361,9772
 Treptower Park: einige Fuﬂg‰nger	q1+ 15558,8820 15439,8839 15297,8921 15245,8916 15223,8893
 Treptower Park: einige Fuﬂg‰nger	q1+ 14588,9473 14556,9581
 Gˆrlitzer Park: Fuﬂg‰nger	q2 12671,10042 12686,10045 12690,10062

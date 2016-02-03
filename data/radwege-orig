@@ -191,9 +191,9 @@ unklare Ausschilderung, teilweise ist das Zeichen 241 missverständlich aufgestel
 besonders schlechter Zustand des Radwegs (durch Wurzeln)	RW1;RW1 9827,10051 9922,10010 10006,9942
 besonders schlechter Zustand des Radwegs (durch Wurzeln)	RW1; 10006,9942 10134,9860
 asphaltierter Radweg	RW1; 10134,9860 10006,9942
-	RW1;RW1 10134,9860 10164,9853 10357,9813 10408,9800 10558,9763
-unklare Ausschilderung, Zeichen 237 ist nur zur Geibelstr. hin gerichtet	RW1; 10558,9763 10781,9697
-	RW1; 10781,9697 10558,9763
+	RW1;RW1 10134,9860 10164,9853 10357,9807 10405,9795 10564,9755
+unklare Ausschilderung, Zeichen 237 ist nur zur Geibelstr. hin gerichtet	RW1; 10564,9755 10781,9697
+	RW1; 10781,9697 10564,9755
 unklare Ausschilderung, Zeichen 237 auf halber Strecke ist durchgekreuzt (offiziell oder nicht?)	RW1; 10781,9697 11023,9597
 	RW1; 11023,9597 10781,9697
 	RW1;RW1 11023,9597 11075,9576 11274,9492
@@ -288,8 +288,8 @@ eine Busspur existiert hier auch (gilt Mo-Fr 7-18 Uhr), ist aber nicht für Radfa
 	RW1;RW1 10633,10369 10685,10483 10689,10491 10776,10682 10856,10856
 	RW3;RW3 10500,10081 10521,10126 10580,10256
 	RW2;RW1 10580,10256 10605,10312
-altes Verbundsteinpflaster	RW1; 10500,10081 10467,10051 10424,9958 10357,9813 10361,9755
-altes Verbundsteinpflaster	RW1; 10361,9755 10408,9800 10480,9949 10513,10038 10500,10081
+altes Verbundsteinpflaster	RW1; 10500,10081 10467,10051 10424,9958 10357,9807 10361,9755
+altes Verbundsteinpflaster	RW1; 10361,9755 10405,9795 10480,9949 10513,10038 10500,10081
 altes Verbundsteinpflaster	RW1;RW1 10198,9405 10306,9640 10361,9755
 	RW3; 11136,9851 11089,9751
 die letzten 10 Meter sind als benutzungspflichtige Radspur geführt	RW0; 11089,9751 11072,9711 11042,9642 11023,9597
@@ -974,7 +974,7 @@ die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg gefü
 #: next_check_id: WARSCHAUER-2014
 #: source_id: 2147339535
 #: source_id: 2147339551
-#: last_checked: 2016-01-19
+#: last_checked: 2016-02-03
 #: by: http://www.umbau-warschauer-strasse.de/images/bauinfos/Infoblatt_August_15-2.pdf
 #: XXX Radweg wegen Bauarbeiten aufgehoben
 	RW0; 13745,12118 13696,11920 13651,11731
@@ -1024,7 +1024,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5542,11075 5459,11135
 	RW0;RW0  5459,11135 5258,11285 5166,11343 5091,11406 5085,11413 4919,11605
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4919,11605 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
-#: last_checked: 2015-12-01
+#: last_checked: 2016-02-03
 #: check_frequency: 60d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1033,7 +1033,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX siehe auch 3nocross in gesperrt-orig
 #: XXX laut rbbtext bis 31.05.2016
 #: source_id: INKO_113041
-#: last_checked: 2015-12-01
+#: last_checked: 2016-02-03
 #: check_frequency: 60d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 9695,12390 9656,12386 9601,12380
@@ -1104,7 +1104,7 @@ die letzten 50 Meter sind benutzungspflichtig	RW1; 18225,7004 18010,7133
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
-#: last_checked: 2016-01-24
+#: last_checked: 2016-02-03
 #: check_frequency: 90d
 	RW8;RW2 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
@@ -1495,7 +1495,7 @@ die ersten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	
 	RW3;RW1 13541,11355 13588,11490
 #: next_check_id: WARSCHAUER-2014
 #: XXX für kurze Zeit hat eine Markierung existiert, ist aber wieder weg
-#: last_checked: 2016-01-19
+#: last_checked: 2016-02-03
 	RW0; 13651,11731 13603,11538
 	RW3;RW2 13588,11490 13603,11538
 #: note: provisorischer Radstreifen
@@ -1508,7 +1508,7 @@ die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
 	RW3;RW2 14672,10760 14674,10811
 #: next_check_id: HAUPTSTR-2015
 #: XXX wegen Bauarbeiten aufgehoben, früher RW4;RW4
-#: last_checked: 2015-12-28
+#: last_checked: 2016-02-03
 #: check_frequency: 30d
 	RW0;RW0 14674,10811 14717,10855
 	RW1;RW1 14652,10201 14688,10167 14705,10149 14747,10108 14817,10031
@@ -4460,7 +4460,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1239
 	RW6;RW6 15347,22275 15411,22369 15445,22352
 	RW6;RW6 7109,22919 7000,23095 6956,23166 6908,23244
 	RW3; 10838,14962 10884,14952
-	RW3;RW3 12969,7610 12991,7549 12992,7545 13015,7471
+	RW3;RW3 12969,7610 12991,7549 13015,7471
 	RW3;RW4 13015,7471 13018,7441 13029,7353
 	RW4;RW4 13029,7353 13030,7346 13034,7319
 	RW4;RW3 13034,7319 13043,7234

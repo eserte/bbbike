@@ -8634,7 +8634,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.berliner-zeitung.de/berlin/volksfest--treptow-in-flammen--organisiertes-besaeufnis-im-treptower-park-faellt-aus,10809148,26239080.html (fällt 2014 aus)
-userdel	2::temp 14464,9927 14465,9900 14500,9856 14635,9786 14840,9692 14889,9660 14909,9649
+userdel	2::temp 14464,9927 14465,9900 14500,9856 14635,9786 14807,9704 14889,9660 14909,9649
 userdel	2::temp 14500,9856 14483,9843
 EOF
      },
@@ -13889,7 +13889,7 @@ EOF
        text  => 'L 085 Linthe - Brück zw. AS zur A 9 und Einmündg. Gewerbegebiet ADAC StartUp Day Vollsperrung 19.04.2009-19.04.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -32763,-26409 -31197,-28211
+userdel	2::inwork -32764,-26283 -31197,-28211
 EOF
      },
      { from  => undef, # 
@@ -19923,8 +19923,8 @@ EOF
        data  => <<EOF,
 userdel	3 12925,7425 13018,7441 13029,7353
 userdel	3 13029,7353 13018,7441 12925,7425
-userdel	3 12925,7425 13018,7441 13015,7471 12992,7545
-userdel	3 12992,7545 13015,7471 13018,7441 12925,7425
+userdel	3 12925,7425 13018,7441 13015,7471
+userdel	3 13015,7471 13018,7441 12925,7425
 EOF
      },
      { from  => 1318507200, # 2011-10-13 14:00
@@ -23083,7 +23083,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-neukoelln/presse/archiv/20140707.1250.398363.html',
        data  => <<EOF,
-	q4::inwork; 12914,7785 12969,7610 12991,7549 12992,7545 13015,7471
+	q4::inwork; 12914,7785 12969,7610 12991,7549 13015,7471
 EOF
      },
      { from  => $isodate2epoch->("2014-07-20 06:30:00"),
@@ -23574,6 +23574,7 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: note: am Di, den 2015-11-17 gegen 18:30: geschlossen
+#: note: am Mi, den 2016-02-03 gegen 19:30: geschlossen
 	3::night 14563,8243 14425,8116 14419,8112
 	3::night 14419,8112 14425,8116 14563,8243
 EOF
@@ -24212,11 +24213,11 @@ EOF
 #: XXX die Qualität wird nach den Bauarbeiten vermutlich besser sein, teilweise auch schlechter (wassergebundene Decke statt Asphalt) vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.297071.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.295591.php
-#: next_check: 2016-01-24
+#: XXX WIRD NICHT MEHR VERWENDET -> gesperrt-orig!
 userdel	2::inwork 14318,9688 14443,9731
 # REMOVED --- userdel	2::inwork 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
-# REMOVED --- userdel	2::inwork 14575,9648 14645,9710 14697,9726 14889,9660
-# REMOVED --- userdel	2::inwork 14635,9786 14840,9692 14889,9660 14909,9649 15052,9584 15186,9550 15304,9464 15432,9322 15453,9259
+# REMOVED --- userdel	2::inwork 14575,9648 14604,9674 14645,9710 14697,9726 14853,9655 14909,9649
+# REMOVED --- userdel	2::inwork 14635,9786 14807,9704 14889,9660 14909,9649 15052,9584 15186,9550 15304,9464 15432,9322 15453,9259
 # REMOVED ---	2::inwork 14475,9199 14531,9244 14655,9311
 # REMOVED ---	2::inwork 14398,9373 14485,9271 14531,9244
 # REMOVED --- userdel	2::inwork 15453,9259 15513,9144 15527,9096 15638,9020

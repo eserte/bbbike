@@ -755,7 +755,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Januar von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Februar von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -1653,6 +1653,7 @@ userdel	q3::inwork 4503,10497 4485,10307
        undef,
        {
          'data' => '#: note: am Di, den 2015-11-17 gegen 18:30: geschlossen
+#: note: am Mi, den 2016-02-03 gegen 19:30: geschlossen
 	3::night 14563,8243 14425,8116 14419,8112
 	3::night 14419,8112 14425,8116 14563,8243
 ',
@@ -1933,38 +1934,6 @@ userdel	2::inwork 12620,9293 12565,9200 12548,9167
          'text' => 'Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt',
          'type' => 'gesperrt',
          'until' => undef
-       },
-       undef,
-       undef,
-       undef,
-       {
-         'data' => 'userdel	2::temp 3835,10352 3971,10381 4157,10418 4245,10435 4371,10465 4503,10497 4676,10541 4847,10589 5076,10658 5215,10711 5351,10760 5475,10808 5656,10876 5725,10892 5782,10884 5907,10821
-userdel auto	3 4172,10406 4157,10418 4153,10453
-userdel auto	3 4685,10689 4676,10541 4659,10335
-userdel auto	3 4485,10307 4503,10497 4513,10702
-userdel auto	3 4239,10358 4245,10435 4256,10583
-userdel auto	3 4381,10583 4371,10465 4360,10320
-userdel auto	3 5230,10919 5215,10711 5196,10398
-userdel auto	3 4828,10356 4847,10589 4847,10677
-userdel auto	3 5196,10398 5215,10711 5230,10919
-userdel auto	3 5079,10701 5076,10658 5047,10381
-userdel auto	3 4256,10583 4245,10435 4239,10358
-userdel auto	3 5829,10964 5782,10884 5669,10704
-userdel auto	3 4513,10702 4503,10497 4485,10307
-userdel auto	3 4847,10677 4847,10589 4828,10356
-userdel auto	3 4360,10320 4371,10465 4381,10583
-userdel auto	3 4659,10335 4676,10541 4685,10689
-userdel auto	3 5047,10381 5076,10658 5079,10701
-userdel auto	3 5471,10719 5475,10808 5488,10978
-userdel auto	3 4153,10453 4157,10418 4172,10406
-userdel auto	3 5669,10704 5782,10884 5829,10964
-userdel auto	3 5488,10978 5475,10808 5471,10719
-',
-         'from' => 1454148000,
-         'id' => 2768,
-         'text' => 'Kurfürstendamm: Faschingsumzug zwischen Adenauerplatz und Breitscheidplatz, 31. Januar 2016',
-         'type' => 'gesperrt',
-         'until' => 1454281199
        }
      
 );

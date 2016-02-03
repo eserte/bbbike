@@ -10,7 +10,7 @@
 # REMOVED (Bauarbeiten beendet) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5898 --- #: note: oder man fährt auf dem mit zahlreichen Engstellen zugestellten Radweg, muss dann aber ggfs. warten --- #: last_checked: 2014-03-21 --- #: valid: -20140523 --- Bergmannstr.: während der Bauarbeiten zwischen Heim- und Friesenstr. Umleitung über gepflasterte Fahrbahn	Q2 9973,9232 9880,9233 9793,9241
 # 
 #: next_check_id: DIESEL-2015 vvv
-#: last_checked: 2015-11-17 vvv
+#: last_checked: 2016-02-03 vvv
 #: check_frequency: 60d vvv
 #: note: könnte auch Asphalt mit hartnäckigem Rollsplit sein, nicht zu erkennen
 Dieselstr., Umfahrung: Feinschotter	Q1 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112
@@ -709,7 +709,7 @@ Parkweg: Verbundsteinpflaster	Q1 14448,9922 14453,9929 14558,10082 14597,10129 1
 Uferweg an den Treptowers: Parkweg (fester Sandweg)	Q1+ 14373,10046 14202,10152 14126,10176 13918,10240
 Hasenheide: asphaltiert	Q0 11266,8336 11275,8387 11282,8428 11279,8489 11255,8591 11182,8983 11141,9107 11136,9183
 Hasenheide, zur Lilienthalstr.: Parkweg	Q1 10709,9192 11141,9107
-Carl-Herz-Ufer: Kopfsteinpflaster (kann auf Uferweg umgangen werden)	Q2 10619,9914 10602,9957 10500,10081
+Carl-Herz-Ufer: Kopfsteinpflaster (kann auf Uferweg umgangen werden)	Q2 10627,9912 10602,9957 10500,10081
 Carl-Herz-Ufer: Kopfsteinpflaster (kann auf breitem asphaltierten Uferweg umgangen werden)	Q1 10168,10085 10313,10084 10469,10081 10500,10081
 Schloßstr.: asphaltiert	Q0 3117,11852 3103,11968
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4745&options=4 --- #: XXX Ist eine Verbesserung in Zukunft in Sicht? --- #: last_checked: 2013-06-27 --- #: next_check: 2013-08-01
@@ -1125,7 +1125,7 @@ Hildegard-Jadamowitz-Str.: Kopfsteinpflaster	Q2 13592,12254 13657,12167
 Am Karlsbad: gutes Kopfsteinpflaster	Q1 7968,11048 8011,11014 8027,11000
 Stallschreiberstr.: Beton/Asphalt	Q0 10678,11172 10620,11244
 Stallschreiberstr.: Kopfsteinpflaster, OK	Q1 10620,11244 10489,11405
-Am Urban-Krankenhaus: Kopfsteinpflaster, OK	Q1 10619,9914 10695,9922
+Am Urban-Krankenhaus: Kopfsteinpflaster, OK	Q1 10627,9912 10695,9922
 Dieffenbachstr.: Kopfsteinpflaster	Q2 11089,9751 11141,9732
 Am Volkspark: Parkweg	Q1 5611,8252 5438,8402 5433,8407
 Am Volkspark: mäßiges Kopfsteinpflaster mit großen Ritzen	Q2 5745,8194 5718,8197 5651,8218
@@ -1366,7 +1366,7 @@ Rolandufer: Asphalt	Q0 11278,12185 11155,12184
 Rolandufer: Kopfsteinpflaster, Ausweichen auf Uferweg möglich, dort unbefestigter Weg	Q2 11155,12184 10945,12150
 Rolandufer/Spreeufer: gutes Kopfsteinpflaster	Q1 10945,12150 10837,12158 10660,12176
 Spreeufer: Verbundsteine	Q1 10583,12206 10492,12289 10424,12364 10422,12395
-Treptower Park: Asphalt	Q0 14635,9786 14840,9692 14889,9660 14909,9649 15052,9584 15186,9550 15304,9464 15432,9322 15453,9259
+Treptower Park: Asphalt	Q0 14635,9786 14807,9704 14889,9660 14909,9649 15052,9584 15186,9550 15304,9464 15432,9322 15453,9259
 Treptower Park: Kleinsteinpflaster	Q1- 15453,9259 15513,9144 15527,9096
 Treptower Park: Asphalt	Q0 15527,9096 15638,9020
 Treptower Park: Kleinsteinpflaster	Q1- 15638,9020 15778,8990
@@ -1374,7 +1374,8 @@ Treptower Park: Schotterweg, aber relativ glatt	Q2 14854,8964 14614,9052
 Treptower Park: wassergebundene Decke	Q1 14854,8964 15057,8910 15110,8912 15159,8934
 Treptower Park: wassergebundene Decke	Q1 14588,9473 14556,9581
 Treptower Park: Schotterweg	Q2 14242,9448 14316,9542
-Treptower Park: wassergebundene Decke und Kleinsteinpflaster	Q1 14889,9660 14697,9726 14645,9710 14575,9648
+Treptower Park: wassergebundene Decke	Q1 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674
+Treptower Park: Kopfsteinpflaster	Q2 14604,9674 14575,9648
 Treptower Park: wassergebundene Decke und Kleinsteinpflaster	Q1 14695,9587 14627,9609 14575,9648 14496,9705 14443,9731 14361,9772
 Am Rosengarten: Parkweg	Q1 14909,9649 14866,9571 14837,9517 14809,9466
 Am Köllnischen Park: Kopfsteinpflaster	Q2 11197,11882 11155,11750
