@@ -666,6 +666,7 @@ Etwa 40 Meter nˆrdlich in der Straﬂe der Pariser Kommune eine weitere Fuﬂg‰ngera
 	X 8024,15401
 	X 8016,15085
 	X 8919,16154
+#: XXX existiert diese Ampel noch?
 	X 7527,14684
 	X -3251,14741
 	X -3295,14777
@@ -2809,10 +2810,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: source_id ^^^
 #: next_check_id ^^^
 # 
-#: next_check_id: AMNORDHAFEN-2015
-#: source_id: 2147339542
-#: last_checked: 2015-11-27
-	F::inwork 7741,14560
+# REMOVED --- #: next_check_id: AMNORDHAFEN-2015 --- #: source_id: 2147339542 --- #: last_checked: 2015-11-27 ---	F::inwork 7741,14560
 #: note: Anforderungsampel
 	F 7292,17316
 #: note: Radfahrer- und Fuﬂg‰ngerampel
