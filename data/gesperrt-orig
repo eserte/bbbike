@@ -2742,7 +2742,7 @@ Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,1
 # REMOVED --- #: next_check_id: GREIFENHAGENER-2015 --- #: last_checked: 2015-06-30 --- #: check_frequency: 30d --- Greifenhagener Str.: Bauarbeiten, Einbahnstraße	1s:q2 11086,15772 11123,15851
 # 
 #: XXX vermutlich werden diese Abschnitte dauerhaft aufgegeben werden
-#: last_checked: 2016-02-03
+#: last_checked: 2016-02-07
 #: check_frequency: 60d
 Matthesstr., Beermannstr.: wegen Autobahnbaustelle gesperrt	2::inwork 14119,9368 14157,9345 14162,9381 14172,9457
 # 
@@ -2783,11 +2783,7 @@ Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr
 #: check_frequency: 100d
 Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17651,-393
 # 
-#: XXX kein Endedatum
-#: osm_watch: way id="150301191" version="12"
-#: last_checked: 2015-11-14
-#: check_frequency: 120d
-Teltowkanalbrücke: bis auf Weiteres gesperrt	2::inwork  7769,4315 7795,4242
+# REMOVED (laut osm & Abendschau wieder offen) --- #: osm_watch: way id="150301191" version="14" --- #: last_checked: 2015-11-14 --- #: next_check: 2016-02-07 --- #: by: http://www.rbb-online.de/abendschau/archiv/20160204_1930/Nachrichten2.html --- Teltowkanalbrücke: bis auf Weiteres gesperrt	2::inwork  7769,4315 7795,4242
 # 
 #: next_check_id: EUROPACITY-2015
 #: last_checked: 2015-03-13
