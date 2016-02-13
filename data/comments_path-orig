@@ -68,10 +68,8 @@ Fußgängerampel auf der linken Seite zum Überqueren der Torstr. benutzen	CP; 9927
 Fußgängerampel auf der rechten Seite zum Überqueren der Torstr. benutzen	CP; 9873,13872 9917,13741 9927,13666
 #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
 Fußgängerampel auf der rechten Seite benutzen	CP; 9873,13872 9917,13741 10177,13766
-#: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
-Kopernikusstr./Warschauer Str.: Fußgängerampel auf der linken Seite zum Überqueren der Warschauer Str. benutzen	CP; 13467,11778 13651,11731 13895,11663
-#: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
-Kopernikusstr./Warschauer Str.: Fußgängerampel auf der linken Seite benutzen	CP; 13467,11778 13651,11731 13696,11920
+# REMOVED (überqueren der Warschauer nun möglich) --- #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert) --- Kopernikusstr./Warschauer Str.: Fußgängerampel auf der linken Seite zum Überqueren der Warschauer Str. benutzen	CP; 13467,11778 13651,11731 13895,11663
+# REMOVED (überqueren der Warschauer nun möglich) --- #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert) --- Kopernikusstr./Warschauer Str.: Fußgängerampel auf der linken Seite benutzen	CP; 13467,11778 13651,11731 13696,11920
 #: XXX_prog: RL:ja, GPS:nein (in der Realität kann man nicht anders fahren, aber vielleicht einen kleinen Hint wert)
 Boxhagener Str. - Warschauer Str.: Fußgängerampel auf der linken Seite zum Überquerung der Warschauer Str. benutzen	CP; 14045,11965 13745,12118 13696,11920
 # REMOVED --- #: next_check_id: WARSCHAUER-2014 --- #: last_checked: 2015-02-24 --- #: next_check: 2015-09-30 --- Warschauer Str. - Boxhagener Str.: bereits am Frankfurter Tor auf den Mittelstreifen wechseln	PI; 13785,12292 13745,12118 14045,11965
@@ -83,7 +81,7 @@ Neue Bahnhofstr./Boxhagener Str.: Fußgängerampel auf der linken Seite benutzen	C
 #: XXX eventuell wird es hier in Zukunft Verbesserungen geben, siehe BVV-Beschluss
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3277&options=4
 #: source_id: IM_022413
-#: last_checked: 2015-10-31
+#: last_checked: 2016-02-13
 #: check_frequency: 90d
 Rennbahnstr./Bernkasteler Str.: Fußgängerampel auf der linken Seite zum Überqueren der Berliner Allee benutzen	CP; 14528,16910 14558,16907 14673,16895
 Wisbyer Str. Richtung Dunckerstr.: bereits an der Prenzlauer Allee den linken Gehweg benutzen	PI; 12090,16199 12012,16250 11926,16088
@@ -454,7 +452,7 @@ Clayallee - Biesalskistr.: bereits an der Ampel Schützallee auf die linke Straße
 # REMOVED (Kommentar nicht wirklich notwendig) --- #: by: christian (...chrisb...): --- Schäferstege - Parkanlage: schräg links über Spielplatz	CP2; 13366,20897 13332,20898
 #: note: Radweg Richtung Süden ist tiefer gelegen als die Fahrbahn
 Schönefelder Chaussee - Venusstr.: Linksabbiegen in die Venusstr. nur von der Fahrbahn oder vom linken Gehweg aus möglich, aber nicht vom Radweg aus	PI; 18892,330 18860,248 19138,141
-Str. 106 - Indira-Gandhi-Str.: Abbigemöglichkeit zur rechten Hand an der Einmündung Fritz-Lesch-Str.	CP; 14666,14845 14828,15050 14686,15608
+Str. 106 - Indira-Gandhi-Str.: Abbiegemöglichkeit zur rechten Hand an der Einmündung Fritz-Lesch-Str.	CP; 14666,14845 14828,15050 14686,15608
 Weißenseer Weg - Str. 106: bereits an der Fritz-Lesch-Str. die Straßenseite wechseln	PI; 14843,15007 14828,15050 14666,14845
 Groß-Berliner Damm - Landschaftspark Johannisthal: bereits an der Hermann-Dorner-Allee die Straßenseite wechseln	PI; 18930,3703 18884,3752 18592,3743
 Groß-Berliner Damm - Landschaftspark Johannisthal: bereits an der Hermann-Dorner-Allee die Straßenseite wechseln	PI; 18930,3703 18884,3752 18856,3783 18833,3781

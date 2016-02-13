@@ -833,7 +833,7 @@ Zum Großen Herzberg (Potsdam-Golm): Qualität?	? -18042,219 -18017,316 -18026,357
 Nördlich in der Feldmark: Planstraßen, genauer Verlauf, Qualität?	? -18037,307 -18063,509 -18623,422 -18584,217 -18037,307 -18026,357
 Zum Bahnhof Pirschheide (Potsdam): Qualität?	? -16151,-3770 -16050,-3982 -15982,-4032
 Am Küssel (Potsdam-Grube): Qualität?	? -19233,2251 -19505,2798
-Zum Mühlenteich (Potsdam-Golm): Qualität? Bereits fertig gebaut?	?::inwork -19022,109 -19192,166
+Zum Mühlenteich (Potsdam-Golm): Qualität? Bereits fertig gebaut? Ist die Straße verkehrsberuhigt?	?::inwork -19022,109 -19192,166
 Schwalbenhof (Potsdam-Golm): Qualität?	? -19279,-106 -19186,-132
 Kossätenweg (Potsdam-Golm) (PLZ=14476): Qualität?	? -19247,-20 -18785,-77
 Thomas-Müntzer-Str. (Potsdam-Golm): Qualität?	? -18889,-591 -18882,-573 -18833,-562 -18822,-430 -18804,-345 -18785,-247 -18785,-77
@@ -923,7 +923,6 @@ Niederfelde: ist die gesamte Straße gepflastert?	? 66126,84243 66092,84252 66062
 Auguststr. (Schwedt): Qualität des westlichen Abschnitts?	? 68135,73168 68517,73160 68591,73201 68777,73351
 Theodor-Fontane-Str.: Sackgasse oder Einbahnstraßenregelung?	? -9835,6841 -9854,6890
 Waldweg zum Campingplatz: Qualität der Straße?	? 29208,71 29512,-619 29297,-717 28915,-1147 28565,-1339 28248,-1473 28162,-1294 28033,-1259 27845,-1324 27758,-1358
-Am Orangeriepark: Ist die Straße bereits fertiggestellt? Qualität? Wo befindet sich die Straße (möglichst mit GPS-Track)?	?::inwork 10228,19480 10293,19390 10419,19423
 ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchgängig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	? 16377,90072 15782,90862 15728,90935 15398,92093 15661,93732 15688,93829 15748,93928 15841,94009 16435,94298 17677,94900 17796,95008 17912,95192
 ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchgängig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	? 17912,95192 18005,95449
 ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchgängig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	? 18029,95408 18507,96268 18676,96867 18954,97944 19022,98128 19442,99078 19582,99411
@@ -1090,7 +1089,6 @@ Delbrückstr. (Friedrichsfelde, Rummelsburg): gibt es hier Bordsteine?	? 17123,10
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
 # added from strassen
-Straße 28 (Französisch Buchholz) (Wurde diese Straße in "Pflaumenblütenweg" umbenannt?)	? 11522,21519 11509,21439 11503,21406
 Abtweiler Str. (heißt die Straße "Abtweilerstraße" oder "Abtweiler Str."?)	? 29188,1086 29098,1148 29060,1179
 Bisamstr. (wie ist die Fahrbahnbeschaffenheit der Bisamstr.? Kann man von Spitzmausweg und Waschbärweg direkt zur Bisamstr. gelangen?)	? 26468,13021 26427,12967 26394,12927 26362,12887 26328,12845 26195,12682 26315,12618 26201,12499
 # added from landstrassen
@@ -1157,14 +1155,12 @@ Imchenallee: holpriger Weg (liegt hier Asphalt?)	? -6879,4775 -6990,4531 -7025,4
 (Bucher Teiche - Schönerlinder Chaussee): vermutlich unbefestigter Weg (wie ist die Qualität hier? vermutlich unbefestigter Weg?)	? 14017,25491 14141,25659 14216,25760 14302,26021 14352,26100 14366,26234 14538,26558 14497,26727
 Grüne Aue: unbefestigte Straße, Feinschotter (ist hier mittlerweile betoniert worden?)	? 21954,11269 21956,11246 21994,11209 22018,11165 22054,11091
 Rosestr.: Asphalt (wurde hier tatsächlich asphaltiert?)	? 21329,832 21497,1042
-Karower Str. (Niederschönhausen): Kopfsteinpflaster (liegt hier Kopfsteinpflaster oder Asphalt?)	? 11695,19760 11652,19743 11437,19664 11278,19607
 (entlang der Autobahn): Verbundsteinpflaster (Liegt hier noch immer Verbundsteinpflaster oder ist hier mittlerweile asphaltiert?)	? 3267,18767 3106,18868 2994,18979
 Seebadstr.: Asphalt mit einigen Schäden (Ist die Qualität des Asphalts in der Seebadstraße nach den Bauarbeiten besser geworden?)	? 4681,23273 4704,23278 4744,23289 4910,23490 5006,23575
 (Wichernstr. - Johannesstift): Kleinsteinpflaster (im nordwestlichen Abschnitt auch gepflastert?)	? -3568,18093 -3655,18177 -3699,18222 -3835,18357
 (Beetzseeweg - Zeuthener-See-Weg): Verbundsteinpflaster (liegt hier tatsächlich Verbundsteinpflaster?)	? -1689,16584 -1685,16583 -1647,16573
 (Heerstr. - Tiefwerder): vermutlich Waldweg (Qualität des Waldwegs?)	? -3075,11510 -3042,11550 -3054,11621 -3037,11680 -3087,11728 -3179,11763
 Bamihlstr.: sehr gute Qualität (liegt hier Asphalt oder Beton?)	? -2602,16809 -2585,16900 -2563,17004
-Lindenberger Str.: gut geeignet (liegt hier Beton oder Asphalt?)	? 11278,19607 11229,19706 11162,19844
 Badeweg: guter Belag (liegt hier Asphalt oder Beton?)	? -4188,2674 -4292,2762
 Badeweg: guter Belag (liegt hier Asphalt oder Beton?)	? -4292,2762 -4471,2917
 Eberbacher Str.: sehr gute Qualität (liegt hier Asphalt oder Beton?)	? 4397,7375 4330,7375 4162,7375 4059,7375 3961,7375

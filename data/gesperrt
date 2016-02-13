@@ -1384,6 +1384,8 @@ Straßenbahntrasse	3nocross::ignrte 13737,15994 13826,16026 14015,16103
 Berliner Allee -> Herbert-Baum-Str.: Straßenbahntrasse	3::igndisp 14015,16103 13826,16026 13869,15912
 Herbert-Baum-Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13869,15912 13826,16026 13737,15994
 Straßenbahntrasse	3nocross::ignrte 12166,21208 12188,21330 12209,21448
+Berliner Str. -> Lyonstr.: Straßenbahntrasse	3::igndisp 12209,21448 12188,21330 12204,21327
+Lyonstr. -> Berliner Str.: Straßenbahntrasse	3::igndisp 12204,21327 12188,21330 12166,21208
 Straßenbahntrasse	3nocross::ignrte 10923,13156 10976,13229 11012,13278
 Karl-Liebknecht-Str. -> Keibelstr.: Straßenbahntrasse	3::igndisp 11012,13278 10976,13229 11045,13183
 Keibelstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 11045,13183 10976,13229 10923,13156
@@ -2827,9 +2829,6 @@ Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081
 Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, ggfs. dauerhaft	2::inwork 17670,7512 17681,7589
 (Baustraße an der Freybrücke)	2::inwork -3075,11510 -3197,11554
 (Treppe an der Freybrücke)	2::inwork -3181,11496 -3177,11507 -3173,11520
-Lyonstr.: noch nicht geöffnet	2::inwork 12188,21330 12204,21327 12322,21378 12443,21439
-Marseillestr.: noch nicht geöffnet	2::inwork 12402,21537 12404,21532 12411,21515 12443,21439
-Toulonstr.: noch nicht geöffnet	2::inwork 12404,21532 12480,21560
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352

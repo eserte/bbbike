@@ -70,7 +70,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11290,10972
 Waldemarstr.: Kopfsteinpflaster	Q2 11290,10972 11150,11030
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136 11473,11180
-Legiendamm: asphaltiert	Q0 11349,11227 11337,11197 11323,11164 11307,11125 11329,11065 11290,10972
+Legiendamm: asphaltiert	Q0 11349,11227 11337,11197 11307,11125 11329,11065 11290,10972
 Legiendamm: Kopfsteinpflaster	Q2 11290,10972 11227,10821 11189,10831
 Legiendamm: asphaltiert	Q0 11189,10831 11159,10769
 Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
@@ -833,7 +833,7 @@ Bürgerpark: Asphalt mit Schäden	Q1 9460,18053 9462,18234
 Bürgerpark: Parkweg	Q1 9462,18234 9701,18256 9716,18290
 Ossietzkystr.: Kopfsteinpflaster, OK	Q1 10382,19066 10434,18907 10474,18785 10485,18746
 Ossietzkystr.: Asphalt, Parkstreifen mit Kopfsteinpflaster	Q0 10485,18746 10496,18704 10532,18601 10562,18506 10602,18382
-Dietzgenstr.: schlechtes Kopfsteinpflaster	Q3 10228,19480 10294,19298
+Dietzgenstr.: schlechtes Kopfsteinpflaster	Q3 10228,19480 10271,19361 10294,19298
 Schönerlinder Weg: Asphalt	Q0 15130,24012 14982,24192 14923,24264 14869,24387
 zum Schönerlinder Weg: Waldweg, OK	Q1 14869,24387 14462,24862
 zum Schönerlinder Weg: Feldweg	Q2 14462,24862 14389,24879 14231,24922 14023,24756
@@ -4518,7 +4518,7 @@ Rolandstr.: schadhafter Beton	Q2 10630,19429 10806,19490 11018,19597 11134,19655
 Rolandstr.: Beton	Q0 11380,19783 11229,19706 11134,19655
 Rolandstr.: Asphalt	Q0 11380,19783 11627,19907
 (Karower Str. - Klothildestr.): Beton	Q0 11278,19607 11118,19552 11048,19531
-Karower Str. (Niederschönhausen): Kopfsteinpflaster	Q0 11695,19760 11652,19743 11437,19664 11278,19607
+Karower Str. (Niederschönhausen): Asphalt	Q0 11695,19760 11652,19743 11437,19664 11278,19607
 Dechertstr.: schlechter Asphalt	Q2 11429,19682 11475,19749 11626,19806
 (Dechertstr. - Karower Str.): Beton	Q0 11626,19806 11652,19743
 Pankower Str.: Beton	Q0 11627,19907 11798,19989 11839,19982 11910,19968 11931,19965
@@ -9014,8 +9014,10 @@ Brester Ring: Verbundsteinpflaster	Q1 12384,21256 12326,21226 12302,21275 12360,
 Grenobler Ring: Verbundsteinpflaster	Q1 12404,21217 12483,21255
 Grenobler Ring: Verbundsteinpflaster	Q1 12493,21212 12483,21255 12441,21341 12360,21303
 Toulonstr.: Verbundsteinpflaster	Q1 12404,21532 12480,21560
+Bordeauxstr.: Verbundsteinpflaster	Q1 12323,21479 12411,21515
 Lyonstr.: Asphalt	Q0 12188,21330 12204,21327 12322,21378 12443,21439
 Marseillestr.: Asphalt	Q0 12402,21537 12404,21532 12411,21515 12443,21439
+(Marseillestr. - Straße 160): Verbundsteinpflaster	Q1 12443,21439 12495,21397
 (Heerstr. - Tiefwerder): vermutlich Waldweg	Q2 -3075,11510 -3042,11550 -3054,11621 -3037,11680 -3087,11728 -3179,11763
 Alter Fischerweg: unbefestigte Straße	Q2 29960,5467 30001,5460
 Alter Fischerweg: Kopfsteinpflaster	Q2 30001,5460 30090,5446
@@ -9175,6 +9177,8 @@ Clara-Immerwahr-Str.: Asphalt	Q0 19202,17471 19546,17351 19798,17263 19845,17235
 Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408,16824 19384,16863 19486,17170 19546,17351
 (Weg am CleanTech Business Park): fester Belag	Q0 19647,16633 19601,16679 19631,16704 19749,17028 19788,17076 19845,17235 19907,17429
 (Kleiner Tiergarten): Mosaikpflaster und wassergebundene Decke	Q1 6390,13187 6377,13321
+Holteistr.: Asphalt mit Schäden	Q0; 14710,11626 14639,11512
+Holteistr.: Asphalt mit Schäden	Q0 14639,11512 14575,11407
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -9524,7 +9528,7 @@ Trützschlerstr.: guter Asphalt	Q0 17471,4570 17612,4460 17745,4351
 Werbergstr.: Asphalt	Q0 9719,6492 9735,6636
 Horst-Caspar-Steig: guter Beton	Q0 15923,2129 15912,2100 15836,2113 15767,2097 15705,2085 15467,2073 15466,2049 15313,2041
 Lindenberger Str.: Beton	Q0 11312,19537 11278,19607
-Lindenberger Str.: gut geeignet	Q0 11278,19607 11229,19706 11162,19844
+Lindenberger Str.: Beton	Q0 11278,19607 11229,19706 11162,19844
 Halbauer Weg: Beton	Q0 7755,3376 7734,3290 7719,3219 7720,3148
 Halbauer Weg: Beton	Q1 7720,3148 7748,3037 7758,2973
 Wuhlestr.: Beton	Q0 21562,13424 21580,13583 21593,13705 21615,13892
@@ -13048,7 +13052,8 @@ Janitzkystr.: Asphalt mit einigen Unebenheiten	Q1 22763,6398 22889,6428 23002,64
 (Weg entlang der Bahnstrecke): fester, holpriger Sandweg	Q2 17866,9639 18224,9795
 (Weg entlang der Bahnstrecke): Asphalt	Q0 18224,9795 18278,9818
 (Weg entlang der Bahnstrecke): fester, holpriger Sandweg	Q2 18278,9818 18445,9887 18703,9997
-Elisabeth-Christinen-Str.: guter Asphalt	Q1 11312,19920 11380,19783 11429,19682 11437,19664
+Elisabeth-Christinen-Str.: Asphalt	Q0 11312,19920 11380,19783
+Elisabeth-Christinen-Str.: guter Asphalt	Q1 11380,19783 11429,19682 11437,19664
 Elisabeth-Christinen-Str.: Asphalt mit Schäden und Kopfsteinpflaster	Q2 11437,19664 11472,19593
 Moosstr.: betoniert	Q0 18918,4971 18924,5057 18945,5082 19173,5139
 Moosstr.: guter Asphalt	Q0 19173,5139 19210,5150 19255,5164 19328,5188 19424,5217 19445,5271
@@ -13687,7 +13692,8 @@ Oberdorfer Steig: guter Asphalt	Q0 -8316,14460 -8289,14664 -8281,14739
 Oberdorfer Steig: Holperstrecke	Q2 -8281,14739 -8270,14782
 Oberdorfer Steig: Parkweg, bei Regenwetter riesige Pfützen	Q1 -8270,14782 -8213,14837
 Kandertaler Weg: glatter Asphalt	Q0 13352,18360 13459,18310 13585,18312 13704,18364
-Ossietzkyplatz: Asphalt	Q0 10257,19542 10215,19532 10228,19480
+Ossietzkyplatz: Asphalt	Q0 10257,19542 10215,19532
+Ossietzkyplatz: Beton	Q0 10215,19532 10228,19480
 Réaumurstr.: mäßiger Asphalt	Q1 4948,562 4748,453 4505,465 4279,459
 Taldorfer Weg: Beton	Q0 5506,20197 5259,20186 5170,20182 5093,20192 4950,20299 4877,20314
 Jathoweg: guter Asphalt	Q0 5307,20437 5266,20299 5259,20186

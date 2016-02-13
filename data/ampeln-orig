@@ -543,6 +543,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Anforderungsampel für Radfahrer und Fußgänger aus Richtung Neue Schönholzer Str.
 	X 10089,18180
 	X 9881,18354
+#: note: Anforderungsampel
 	F 9891,18444
 	X 11709,14856
 	X 12317,14535
@@ -2311,6 +2312,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 4775,21522
 	X 4074,6681
 	X 4107,6718
+#: note: Anforderungsampel
 	F 11148,19838
 	F 14633,2145
 	X 9267,15790
@@ -2384,7 +2386,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 11750,16354
 	X 8901,12008
 	X 18198,13816
-#: note: Abends meist (immer?) ausgeschaltet, und auch sonntags (Sa 2014-09-27 15:30 eingeschaltet; Sa 2015-09-12 17:30 eingeschaltet)
+#: note: Abends meist (immer?) ausgeschaltet, und auch sonntags (Sa 2014-09-27 15:30 eingeschaltet; Sa 2015-09-12 17:30 eingeschaltet; Sa 2016-02-13 14 und 16 Uhr eingeschaltet)
 #: note: Anforderungsampel
 #: off: night
 #: off: Sunday (seen 2014-09-21 afternoon, 2015-03-15 afternoon, 2015-05-10 afternoon, 2015-08-09 afternoon)
@@ -2576,7 +2578,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX temporäre Ampel (wegen Arbeiten an der Staatsoper und an der U-Bahn)
 #: XXX_prog Anforderungsampel
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
-#: last_checked: 2016-02-03
+#: last_checked: 2016-02-08
 #: check_frequency: 45d
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
@@ -2800,7 +2802,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: source_id: 2147339543 vvv
 #: XXX laut rbbtext bis 30.06.2016
 #: XXX laut fritz bis 31.07.2016
-#: last_checked: 2016-01-14 vvv
+#: last_checked: 2016-02-08 vvv
 #: next_check: 2016-06-30 vvv
 	F 10703,11837
 	F 10656,11887

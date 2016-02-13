@@ -1093,7 +1093,7 @@ Alexanderstr.	HH 11134,12793 11226,12945
 Alexanderstr.	HH 11226,12945 11139,13008 11033,13086 10923,13156
 Leuschnerdamm	N 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
 Leuschnerdamm	NH 11458,11136 11473,11180
-Legiendamm	N 11159,10769 11189,10831 11227,10821 11290,10972 11329,11065 11307,11125 11323,11164 11337,11197 11349,11227
+Legiendamm	N 11159,10769 11189,10831 11227,10821 11290,10972 11329,11065 11307,11125 11337,11197 11349,11227
 Bethaniendamm	NH 11458,11136 11640,11067 11750,11065 11845,11095 11950,11157 12012,11235 12060,11323 12061,11406
 Engeldamm	NH 11473,11180 11656,11106 11800,11118 11921,11185 11985,11261 12025,11346 12061,11406 12092,11475
 An der Schillingbrücke	NH 12092,11475 12143,11574 12180,11657
@@ -2359,7 +2359,7 @@ Straße 56 (Heinersdorf)	N 12436,17682 12587,17603
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3835 (Vorlange zur Kenntnisnahme)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2014 (Widerspruch)
 #: osm_watch: way id="45904921" version="4"
-#: last_checked: 2015-10-31
+#: last_checked: 2016-02-13
 #: check_frequency: 90d
 Straße 16 (Heinersdorf)	N 13031,17775 13034,17895
 (Parkplatz Kaufland)	N 13031,17775 12981,17557
@@ -2508,7 +2508,7 @@ Herzbergstr. [Wohngebiet]	N 15851,13511 15896,13512
 (Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.)	NN 17698,13124 17739,13146 17871,13145 17906,13141 17978,13328 18054,13477 18094,13505
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5116&options=4 (Forderung eines Lückenschlusses, auch zur Siegfriedstr. -> wird aber erst einmal nicht realisiert)
 #: XXX evtl. entsteht hier auch eine offizielle Verbindung?
-#: last_checked: 2015-12-26
+#: last_checked: 2016-02-10
 #: check_frequency: 180d
 (Landschaftspark Herzberge - Arendsweg/Zufahrt IKEA)	NN 17266,14144 17316,14151 17330,14163
 (Landschaftspark Herzberge, Weg am ehemaligen Zeltlager)	NN 17187,13609 17185,13765 17204,13800 17209,13856 17178,13896 17190,13903 17213,13931 17210,14054 17164,14067 17152,14084
@@ -8114,7 +8114,7 @@ Bismarckplatz (Spandau)	N -3216,15155 -3241,15118 -3258,15100
 Groenerstr.	NN -3470,14836 -3447,14863
 Groenerstr.	N -3447,14863 -3360,14974 -3258,15100
 Ossietzkyplatz	N 10257,19542 10215,19532 10228,19480
-Dietzgenstr.	N 10294,19298 10228,19480
+Dietzgenstr.	N 10294,19298 10271,19361 10228,19480
 Dietzgenstr.	HH 10228,19480 10250,19504 10257,19542 10224,19628 10195,19703 10167,19797 10127,19992 10112,20063 10102,20092 10068,20188 10066,20323 10063,20493
 #: oldname: -20061101: Blankenfelder Str. (Rosenthal)
 Dietzgenstr.	HH 10063,20493 10115,20714 10119,20731 10138,20840 10145,21017 10140,21107 10135,21171 10129,21251 10126,21314 10120,21464 10118,21510 10114,21586 10111,21661 10111,21673 10106,21784 10097,21809 10083,21848 10060,21916
@@ -8277,7 +8277,6 @@ Veilchenblütenweg	N 11534,21229 11664,21246 11757,21253
 Veilchenblütenweg	N 11664,21246 11656,21309
 #: note ^^^
 #: note ^^^
-#: add_fragezeichen: Wurde diese Straße in "Pflaumenblütenweg" umbenannt?
 Straße 28 (Französisch Buchholz)	N 11522,21519 11509,21439 11503,21406
 Straße 30 (Französisch Buchholz)	N 11696,21493 11764,21593
 Straße 18a	N 11217,21565 11297,21593 11347,21589
@@ -8449,6 +8448,7 @@ Eweststr.	N 12298,21015 12227,20966 12189,20959 12121,20969
 Nizzastr.	N 12257,21079 12434,21160 12404,21217 12384,21256 12360,21303 12322,21378
 Lyonstr.	N 12188,21330 12204,21327 12322,21378 12443,21439
 Marseillestr.	N 12402,21537 12404,21532 12411,21515 12443,21439
+(Marseillestr. - Straße 160)	N 12443,21439 12495,21397
 Toulonstr.	N 12404,21532 12480,21560
 #: note: Privatstraße
 #: note: Straßenschild: grüne Schrift auf weißem Grund
@@ -8457,6 +8457,8 @@ Brester Ring	N 12384,21256 12326,21226 12302,21275 12360,21303
 #: note: Straßenschild: grüne Schrift auf weißem Grund
 Grenobler Ring	N 12404,21217 12483,21255
 Grenobler Ring	N 12493,21212 12483,21255 12441,21341 12360,21303
+#: note: Privatstraße
+Bordeauxstr.	N 12323,21479 12411,21515
 Bahnhofstr. (Blankenburg, Französisch Buchholz)	NH 13590,20705 13403,20686 13269,20660 13089,20626 12909,20592 12880,20610 12835,20637 12821,20646 12814,20648 12723,20691 12672,20720 12600,20742 12578,20749 12553,20757 12462,20785 12442,20805 12337,20954 12298,21015 12257,21079 12202,21158 12166,21208
 Bahnhofstr. (Blankenburg, Französisch Buchholz)	NH 12158,21166 12202,21158
 #: oldname: -20071220: Straße 49
@@ -9731,7 +9733,7 @@ Lindower Str.	N 7754,15160 7929,15355
 #: next_check_id: NORDUFER-2014
 #: XXX dieser Straßenabschnitt wird für die S21 in der Mitte unterbrochen, nachdem das neue Nordufer fertiggestellt ist
 #: by: http://weddingweiser.wordpress.com/2012/10/16/die-s-21-wird-gebaut-weddinger-strasen-werden-neu-gefuhrt/ (Projektplan)
-#: osm_watch: way id="220648313" version="2"
+#: osm_watch: way id="220648313" version="3"
 #: last_checked: 2016-02-05
 #: check_frequency: 120d
 Tegeler Str. (Wedding)	N 7464,14636 7263,14873
@@ -12371,8 +12373,9 @@ Möwenweg (Biesdorf)	N 22242,11269 22238,11223 22236,11208 22219,11136 22207,1106
 #: XXX Bebauungsplan XXI-2-2; einige (alle?) Abschnitte des Möwenwegs werden wahrscheinlich verschwinden bzw. zu einem Rad/Gehweg umgewidmet
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5598
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036148197986/148197986/00070438/38-Anlagen/02/vzb0642_IV-B-Pla_XXI-2-2_Aufstellung.pdf
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/auslegungen/b-planentwurf-xxi-2-2.pdf
 #: last_checked: 2015-06-21
-#: check_frequency: 180d
+#: next_check: 2017-03-01
 Möwenweg (Biesdorf)	N 22100,10976 22195,10993
 Möwenweg (Biesdorf)	N 22219,11136 22054,11091
 Wuhleweg	N 22238,11223 22018,11165

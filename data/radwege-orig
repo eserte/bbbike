@@ -479,12 +479,10 @@ die letzten Meter sind benutzungspflichtig	RW1; 10975,16010 10982,16121
 	RW1; 10982,16121 10975,16010
 	RW1;RW1 10982,16121 10989,16197 10997,16280 11004,16360
 	RW2;RW1 11004,16360 11019,16465
-	RW1;RW2 11019,16465 11027,16553 11021,16605
-#: by: http://www.berlin.de/ba-pankow/presse/archiv/20050823.1055.29114.html
-#: by: Igor Smikalla (Richtung Norden, Benutzungspflicht):
-#: by: Karin Hoffmann (Richtung Norden, keine Benutzungspflicht (korrigiert!), go with her):
-	RW1;RW2 11021,16605 11008,16729 10992,16829
-	RW2;RW2 10992,16829 10975,16896 10927,17022
+	RW1;RW2 11019,16465 11027,16553
+	RW1;RW1 11027,16553 11021,16605 11008,16729 10992,16829
+	RW2;RW1 10992,16829 10975,16896
+	RW2;RW2 10975,16896 10927,17022
 	RW9;RW1 5900,11913 5898,12017 5917,12079 5961,12134 6082,12273 6178,12387 6276,12506 6314,12518 6444,12536 6491,12607 6516,12650 6522,12662 6580,12775 6608,12858
 	RW0;RW1 6608,12858 6661,13130
 	RW2;RW2 -2317,11254 -2413,11283 -2476,11301 -2851,11417 -3069,11487 -3173,11520 -3381,11583 -3404,11589 -3677,11685 -3707,11693 -4031,11796 -4076,11810
@@ -974,7 +972,7 @@ die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg gefü
 #: next_check_id: WARSCHAUER-2014
 #: source_id: 2147339535
 #: source_id: 2147339551
-#: last_checked: 2016-02-05
+#: last_checked: 2016-02-13
 #: by: http://www.umbau-warschauer-strasse.de/images/bauinfos/Infoblatt_August_15-2.pdf
 #: XXX Radweg wegen Bauarbeiten aufgehoben
 	RW0; 13745,12118 13696,11920 13651,11731
@@ -1024,7 +1022,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5542,11075 5459,11135
 	RW0;RW0  5459,11135 5258,11285 5166,11343 5091,11406 5085,11413 4919,11605
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4919,11605 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
-#: last_checked: 2016-02-03
+#: last_checked: 2016-02-08
 #: check_frequency: 60d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1033,7 +1031,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX siehe auch 3nocross in gesperrt-orig
 #: XXX laut rbbtext bis 31.05.2016
 #: source_id: INKO_113041
-#: last_checked: 2016-02-03
+#: last_checked: 2016-02-08
 #: check_frequency: 60d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 9695,12390 9656,12386 9601,12380
@@ -1493,13 +1491,8 @@ die ersten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	
 	RW3;RW1 13493,11217 13541,11355
 # REMOVED --- #: next_check_id: WARSCHAUER-2014 --- #: XXX Gehweg für Radfahrer frei (aber zu voll um benutzbar zu sein) --- #: last_checked: 2015-07-01 --- #: check_frequency: 7d
 	RW3;RW1 13541,11355 13588,11490
-#: next_check_id: WARSCHAUER-2014
-#: XXX für kurze Zeit hat eine Markierung existiert, ist aber wieder weg
-#: last_checked: 2016-02-05
-	RW0; 13651,11731 13603,11538
 	RW3;RW2 13588,11490 13603,11538
-#: note: provisorischer Radstreifen
-	RW3; 13603,11538 13651,11731
+	RW3;RW3 13603,11538 13651,11731
 	RW4;RW4 14026,10869 14024,10861 14011,10812
 	RW1;RW1 14134,11272 14096,11134 14076,11057 14043,10928 14026,10869
 die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
@@ -1522,7 +1515,9 @@ relativ schmale Radspuren	RW3;RW3 14918,11249 15016,11431 15055,11505 15106,1159
 asphaltiert	RW2; 15066,14579 15116,14489 15168,14395
 	RW4; 15168,14395 15256,14237
 die ersten Meter mit benutzungspflichtigen Radweg, dann Radspur	RW4; 15256,14237 15168,14395 15116,14489 15066,14579
-gemeinsamer Rad- und Gehweg, asphaltiert mit einigen Wellungen	RW2;RW2 15256,14237 15354,13998 15436,13780 15468,13700 15513,13539
+gemeinsamer Rad- und Gehweg, asphaltiert mit einigen Wellungen	RW2;RW2 15256,14237 15354,13998 15436,13780 15468,13700
+gemeinsamer Rad- und Gehweg, asphaltiert mit einigen Wellungen	RW2; 15468,13700 15513,13539
+	RW1; 15513,13539 15468,13700
 	RW2;RW1 15513,13539 15515,13134
 	RW4; 15515,13134 15516,12838
 	RW1; 15563,12860 15561,12950
@@ -4701,8 +4696,9 @@ Busspur gilt Mo-Fr 6-19 Uhr	RW5; 12742,8635 12630,8722 12483,8834 12438,8859 123
 Tempo 10	RW6;RW6 8389,9087 8389,9017
 # REMOVED (geklärt) --- #: XXX sind hier Radspuren oder Suggestivstreifen? --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1511/nachricht5839.html
 	RW3;RW3 3739,13563 3833,13590 4098,13664 4187,13704
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5891.html
-#: XXX: Siegfriedstr.: existieren hier Radspuren oder Suggestivstreifen?
-#: XXX ggfs. kann der comments_tram-Eintrag entfernt werden
-	RW4?;RW4? 16866,13532 17201,13519
+# REMOVED (geklärt) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5891.html --- #: XXX: Siegfriedstr.: existieren hier Radspuren oder Suggestivstreifen? --- #: XXX ggfs. kann der comments_tram-Eintrag entfernt werden
+	RW3; 16866,13532 17201,13519 17232,13518
+die letzten Meter ohne Radspur	RW3; 17201,13519 16866,13532
 	RW6;RW6 5817,7223 5810,7337
+	RW6;RW6 12384,21256 12326,21226 12302,21275 12360,21303
+	RW6;RW6 11725,21162 11831,21104 11937,21043 11944,21220 11876,21218 11831,21104

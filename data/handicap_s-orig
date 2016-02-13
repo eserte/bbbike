@@ -13,7 +13,7 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2016-01-28 vvv
+#: last_checked: 2016-02-13 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14286,11186 14357,11148
 # REMOVED (keine Behinderungen mehr) --- Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 # REMOVED (gibt's nicht mehr?) --- Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraße ausgewiesen	q3::inwork; 14442,11101 14468,11203
@@ -22,7 +22,7 @@ Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,112
 #: last_checked ^^^
 # 
 #: XXX laut Fritz bis Ende März 2016
-#: last_checked: 2016-02-07 vvv
+#: last_checked: 2016-02-13 vvv
 #: next_check: 2016-03-31 vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
@@ -57,13 +57,13 @@ Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4
 # 
 # REMOVED --- #: last_checked: 2015-06-10 --- Am Zirkus: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9167,13046 9137,13032 9090,13009
 # 
-#: last_checked: 2016-01-14
+#: last_checked: 2016-02-09
 Schützenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10116,11485 9949,11470
 # 
-#: last_checked: 2016-02-05
+#: last_checked: 2016-02-09
 Kommandantenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10330,11422 10136,11529
 # 
-#: last_checked: 2016-02-05
+#: last_checked: 2016-02-09
 Beuthstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10201,11631 10235,11610 10330,11422
 # 
 # REMOVED (wieder offen) --- #: XXX gibt es hier noch Einschränkungen? --- #: last_checked: 2016-01-14 --- #: next_check: 2016-02-03 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9935,11566 9990,11571
@@ -71,18 +71,18 @@ Beuthstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10201,11631 10235,11610 10330,
 #: XXX bis wann dauert die Sperrung an? vvv
 #: XXX wird die Straße danach asphaltiert sein?
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6992 (Frage nach Ende der Bauarbeiten)
-#: last_checked: 2016-02-02 vvv
-# REMOVED (fertig) --- Legiendamm: Sperrung der Fahrbahn am Engelbecken	q4::inwork 11323,11164 11337,11197 11349,11227
+#: last_checked: 2016-02-12 vvv
+# REMOVED (fertig) --- Legiendamm: Sperrung der Fahrbahn am Engelbecken	q4::inwork 11337,11197 11349,11227
 Michaelkirchplatz: Sperrung der Fahrbahn am Engelbecken	q2::inwork 11415,11392 11349,11227
 #: last_checked ^^^
 #: XXX ^^^
 # 
 #: XXX bis wann dauert die Sperrung an?
-#: last_checked: 2016-02-02
+#: last_checked: 2016-02-12
 Leuschnerdamm: Sperrung der Fahrbahn Richtung Michaelkirchplatz	q4::inwork; 11458,11136 11473,11180
 # 
 #: XXX nach den Bauarbeiten bessere Qualität?
-#: last_checked: 2016-02-02
+#: last_checked: 2016-02-12
 Melchiorstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 11542,11342 11726,11265 11921,11185
 # 
 # REMOVED (nicht mehr gesperrt für Radfahrer) --- #: XXX nochmal genauer anschauen... --- #: last_checked: 2014-11-10 --- Gipsstr.: Bauarbeiten zwischen Rosenthaler Str. und Joachimstr., Einbahnstraße	q2::inwork; 10350,13376 10199,13446
@@ -103,7 +103,7 @@ Wadzeckstr.: Bauarbeiten, auf Gehweg ausweichen, Bordsteine	q4::inwork 11146,133
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
 # REMOVED --- #: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualität -> qualitaet_s-orig-Eintrag revidieren --- #: last_checked: 2013-11-21 --- Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2015-12-01
+#: last_checked: 2016-02-08
 #: check_frequency: 90d
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9984,12426 9996,12401 10058,12290
 # REMOVED --- Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q4::inwork 9996,12401 9994,12368 9943,12364
@@ -204,7 +204,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2016-01-15
+#: last_checked: 2016-02-08
 #: check_frequency: 30d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -213,11 +213,12 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10072,11384 9945,11371 9737,11349
 # REMOVED (das Einfahrt verboten-Schild hängt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9949,11470 9935,11566
 # 
-#: XXX laut fritz bis 29.06.2016
-#: last_checked: 2016-02-05
-#: next_check: 2016-06-15
+#: XXX laut fritz bis 12.02.2016
+#: last_checked: 2016-02-09
+#: next_check: 2016-02-12
+#: priority: #A
 Alte Jakobstr.: Bauarbeiten, teilweise Einbahnstraße	q3::inwork; 10256,11160 10437,11352
-#: last_checked: 2016-02-03
+#: last_checked: 2016-02-09
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10624,11548 10640,11564
 # 
 # REMOVED --- Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10437,11352
@@ -231,17 +232,9 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10624,11548 1
 # 
 ### Kreuzberg ###
 # 
-#: last_checked: 2016-02-26
-#: next_check: 2016-03-30
-Wassertorstr.: Wasserrohrbruch, kurzes Stück auf Gehweg ausweichen	q2::inwork 10857,10411 10987,10360
-# 
-#: last_checked: 2016-01-12
-#: next_check: 2016-02-26
-Oppelner Str.: Bauarbeiten, kurzes Stück auf Gehweg ausweichen	q2::inwork 12978,10581 12897,10439
-# 
-#: last_checked: 2016-01-14
-Ritterstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 9935,11067 10103,10989
-# 
+# REMOVED (kaum noch Beeinträchtigungen) --- #: last_checked: 2016-02-26 --- #: next_check: 2016-03-30 --- Wassertorstr.: Wasserrohrbruch, kurzes Stück auf Gehweg ausweichen	q2::inwork 10857,10411 10987,10360
+# REMOVED (laut vmz) --- #: last_checked: 2016-02-09 --- #: next_check: 2016-02-26 --- Oppelner Str.: Bauarbeiten, kurzes Stück auf Gehweg ausweichen	q2::inwork 12978,10581 12897,10439
+# REMOVED --- #: last_checked: 2016-01-14 --- Ritterstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 9935,11067 10103,10989
 # REMOVED (Bauarbeiten beendet) --- #: next_check_id: DRESDENER-2015 --- #: last_checked: 2015-09-02 --- #: check_frequency: 7d -- # REMOVED --- #: next_check: 2015-03-01 (Bauzeit 2014-2015) --- Alfred-Döblin-Platz: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 11162,10919 11150,11030
 # REMOVED (eigentlich kann man schon durch...) --- #: next_check_id: DRESDENER-2015 --- #: last_checked: 2015-07-15 --- #: check_frequency: 7d --- #: priority: #A --- Dresdener Str.: Bauarbeiten wegen Tunnelzuschüttung, teilweise Ausweichen auf Gehweg	q3::inwork 11189,10831 11162,10919
 # REMOVED --- #: next_check_id: MONUMENTENPLATZ-2014 --- #: XXX während der Bauarbeiten --- #: last_checked: 2014-09-02 --- #: check_frequency: 60d --- Am Monumentenplatz: eng	q3::inwork 8338,9099 8344,9085 8358,9068
@@ -337,6 +330,10 @@ Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inw
 #: by ^^^
 # 
 ### Pankow ###
+# 
+#: last_checked: 2016-02-13
+#: check_frequency: 60d
+Prenzlauer Promenade: Engstelle, Fußgänger und entgegenkommende Radfahrer	q2::inwork; 11950,18529 11934,18576 11980,18900
 # 
 # REMOVED --- #: next_check_id: BLANKENBURGER-2014 vvv --- #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/blankenburger_stra__e_konzept_beschilderung_umleitung_3_ta.pdf?download.html vvv --- #: XXX laut vmz Einbahnstraße bis 31. Dezember 2015 --- #: source_id: IM_022288 vvv --- #: last_checked: 2015-07-19 vvv --- #: next_check: 2015-12-31 vvv --- #: valid: 20140701-20151231 vvv --- Blankenburger Str.: Bauarbeiten, Einbahnstraße, gesperrt in Richtung Westen	q4::inwork; 12008,20368 11959,20365 11799,20224 11690,20127 11632,20086 11563,20048
 # REMOVED (vermutlich wieder offen, weil die südliche Fahrbahn schon fertig ist) --- Hans-Jürgen-Str.: Bauarbeiten, erschwerter Zugang zur Blankenburger Str.	q4::inwork 11839,20176 11799,20224
@@ -739,7 +736,7 @@ Fritz-Schiff-Weg: Fußgänger	q1 13463,12507 13484,12436 13448,12340
 (Crellestr. - Julius-Leber-Brücke): Fußgänger	q2 7524,9093 7555,8978 7509,8929 7497,8916
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870
 #: next_check_id: FISCHERINSEL-2015
-#: last_checked: 2016-01-14
+#: last_checked: 2016-02-08
 #: next_check: 2016-06-30
 Spreekanalufer: Umfahrung an der Straße Fischerinsel, Fußgänger	q3::inwork 10672,11870 10776,11942
 # REMOVED (danach wieder folgendes aktivieren) --- (Fischerinsel, Spreekanalufer): Fußgänger	q1 10672,11870 10776,11942

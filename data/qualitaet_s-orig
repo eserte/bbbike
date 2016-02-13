@@ -119,7 +119,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11290,10972
 Waldemarstr.: Kopfsteinpflaster	Q2+ 11290,10972 11150,11030
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136 11473,11180
-Legiendamm: asphaltiert	Q0 11349,11227 11337,11197 11323,11164 11307,11125 11329,11065 11290,10972
+Legiendamm: asphaltiert	Q0 11349,11227 11337,11197 11307,11125 11329,11065 11290,10972
 Legiendamm: Kopfsteinpflaster	Q2 11290,10972 11227,10821 11189,10831
 Legiendamm: asphaltiert	Q0 11189,10831 11159,10769
 Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
@@ -156,6 +156,9 @@ Winterfeldtplatz: Kopfsteinpflaster, OK	Q1 7038,10088 7049,9833
 Corneliusstr.: m‰ﬂiges Kopfsteinpflaster	Q2 6880,11110 6841,11114 6630,11247 6476,11325
 Kopernikusstr.: m‰ﬂiges Kopfsteinpflaster	Q2 13467,11778 13651,11731
 Torellstr.: m‰ﬂiges Kopfsteinpflaster	Q2 13295,11792 13467,11778
+#: XXX Bauarbeiten, danach vielleicht teilweise bessere Qualit‰t?
+#: last_checked: 2016-02-12
+#: check_frequency: 60d
 R¸dersdorfer Str.: Asphalt mit Sch‰den	Q1- 13295,11792 13173,11788 13066,11854
 Kaskelstr.: relative glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
 Spittastr.: m‰ﬂiges Kopfsteinpflaster	Q2 15447,10883 15509,11058 15578,11241
@@ -647,7 +650,7 @@ Bˆcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: add_fragezeichen: Ist die Tino-Schwierzina-Str. zwischen Aidastr. und Romain-Rolland-Str. mittlerweile komplett asphaltiert?
 #: note: bei regem Kfz-Verkehr ist es nicht mˆglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
-#: last_checked: 2015-10-04
+#: last_checked: 2016-02-13
 #: check_frequency: 120d
 Tino-Schwierzina-Str.: auﬂen Kopfsteinpflaster, Straﬂenbahntrasse asphaltiert	Q2- 12736,17998 12467,17814
 #: corrected_by: Hartmut Schrˆder (Q2 -> Q3)
@@ -1016,7 +1019,7 @@ B¸rgerpark: Asphalt mit Sch‰den	Q1 9460,18053 9462,18234
 B¸rgerpark: Parkweg	Q1 9462,18234 9701,18256 9716,18290
 Ossietzkystr.: Kopfsteinpflaster, OK	Q1 10382,19066 10434,18907 10474,18785 10485,18746
 Ossietzkystr.: Asphalt, Parkstreifen mit Kopfsteinpflaster	Q0 10485,18746 10496,18704 10532,18601 10562,18506 10602,18382
-Dietzgenstr.: schlechtes Kopfsteinpflaster	Q3 10228,19480 10294,19298
+Dietzgenstr.: schlechtes Kopfsteinpflaster	Q3 10228,19480 10271,19361 10294,19298
 Schˆnerlinder Weg: Asphalt	Q0 15130,24012 14982,24192 14923,24264 14869,24387
 zum Schˆnerlinder Weg: Waldweg, OK	Q1 14869,24387 14462,24862
 zum Schˆnerlinder Weg: Feldweg	Q2 14462,24862 14389,24879 14231,24922 14023,24756
@@ -5107,8 +5110,7 @@ Rolandstr.: schadhafter Beton	Q2 10630,19429 10806,19490 11018,19597 11134,19655
 Rolandstr.: Beton	Q0 11380,19783 11229,19706 11134,19655
 Rolandstr.: Asphalt	Q0 11380,19783 11627,19907
 (Karower Str. - Klothildestr.): Beton	Q0 11278,19607 11118,19552 11048,19531
-#: add_fragezeichen: liegt hier Kopfsteinpflaster oder Asphalt?
-Karower Str. (Niederschˆnhausen): Kopfsteinpflaster	Q0 11695,19760 11652,19743 11437,19664 11278,19607
+Karower Str. (Niederschˆnhausen): Asphalt	Q0 11695,19760 11652,19743 11437,19664 11278,19607
 Dechertstr.: schlechter Asphalt	Q2 11429,19682 11475,19749 11626,19806
 (Dechertstr. - Karower Str.): Beton	Q0 11626,19806 11652,19743
 Pankower Str.: Beton	Q0- 11627,19907 11798,19989 11839,19982 11910,19968 11931,19965
@@ -9802,8 +9804,10 @@ Brester Ring: Verbundsteinpflaster	Q1 12384,21256 12326,21226 12302,21275 12360,
 Grenobler Ring: Verbundsteinpflaster	Q1 12404,21217 12483,21255
 Grenobler Ring: Verbundsteinpflaster	Q1 12493,21212 12483,21255 12441,21341 12360,21303
 Toulonstr.: Verbundsteinpflaster	Q1 12404,21532 12480,21560
+Bordeauxstr.: Verbundsteinpflaster	Q1 12323,21479 12411,21515
 Lyonstr.: Asphalt	Q0 12188,21330 12204,21327 12322,21378 12443,21439
 Marseillestr.: Asphalt	Q0 12402,21537 12404,21532 12411,21515 12443,21439
+(Marseillestr. - Straﬂe 160): Verbundsteinpflaster	Q1 12443,21439 12495,21397
 #: add_fragezeichen: Qualit‰t des Waldwegs?
 (Heerstr. - Tiefwerder): vermutlich Waldweg	Q2 -3075,11510 -3042,11550 -3054,11621 -3037,11680 -3087,11728 -3179,11763
 Alter Fischerweg: unbefestigte Straﬂe	Q2 29960,5467 30001,5460
@@ -9986,6 +9990,10 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 #: note gelbe Farbe, kein Asphalt oder Beton
 (Weg am CleanTech Business Park): fester Belag	Q0 19647,16633 19601,16679 19631,16704 19749,17028 19788,17076 19845,17235 19907,17429
 (Kleiner Tiergarten): Mosaikpflaster und wassergebundene Decke	Q1- 6390,13187 6377,13321
+#: note: in der N‰he der Straﬂenbahnschienen aber keine Sch‰den mehr vvv
+Holteistr.: Asphalt mit Sch‰den	Q0-; 14710,11626 14639,11512
+Holteistr.: Asphalt mit Sch‰den	Q0- 14639,11512 14575,11407
+#: note ^^^
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -10591,8 +10599,9 @@ Horst-Caspar-Steig: guter Beton	Q0 15923,2129 15912,2100 15836,2113 15767,2097 1
 #: note: laut ADFC-Karte "gut geeignet", und laut anonymen Kommentar vvv
 #: corrected_by: srt (gut geeignet -> )
 Lindenberger Str.: Beton	Q0 11312,19537 11278,19607
-#: add_fragezeichen: liegt hier Beton oder Asphalt?
-Lindenberger Str.: gut geeignet	Q0 11278,19607 11229,19706 11162,19844
+#: corrected_by: srt (gut geeignet -> ...)
+#: note: wobei die Fahrbahnh‰lfte Richtung S¸den nicht ganz eindeutig ist, kˆnnte auch eine d¸nne Asphaltdecke ¸ber Beton sein
+Lindenberger Str.: Beton	Q0 11278,19607 11229,19706 11162,19844
 #: note ^^^
 #: corrected_by: srt (Asphalt -> Beton)
 Halbauer Weg: Beton	Q0 7755,3376 7734,3290 7719,3219 7720,3148
@@ -12488,7 +12497,7 @@ Marienstr. (Franzˆsisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20131119.1100.391816.html (BA-Beschluss 277/2013)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: osm_watch: way id="42689070" version="5"
-#: last_checked: 2015-10-31
+#: last_checked: 2016-02-13
 #: check_frequency: 60d
 Orankeweg: Sandweg im Gr¸nzug, m‰ﬂig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -20177,7 +20186,10 @@ Janitzkystr.: Asphalt mit einigen Unebenheiten	Q1+ 22763,6398 22889,6428 23002,6
 # 
 #: by: Dirk (iknidi): vvv
 #: note: "einige Fuﬂg‰nger, q1" ignoriert
-Elisabeth-Christinen-Str.: guter Asphalt	Q1 11312,19920 11380,19783 11429,19682 11437,19664
+#: confirmed_by: srt (clarified: Q0)
+Elisabeth-Christinen-Str.: Asphalt	Q0 11312,19920 11380,19783
+#: confirmed_by: srt (clarified: Q1)
+Elisabeth-Christinen-Str.: guter Asphalt	Q1 11380,19783 11429,19682 11437,19664
 #: corrected_by: srt (guter Asphalt -> )
 Elisabeth-Christinen-Str.: Asphalt mit Sch‰den und Kopfsteinpflaster	Q2 11437,19664 11472,19593
 #: by ^^^
@@ -20302,7 +20314,7 @@ K¸striner Str.: Asphalt	Q0 16123,15025 16211,15105
 #: corrected_by: srt (m‰ﬂiges Kopfsteinpflaster -> ...)
 K¸striner Str.: Asphalt	Q0 16211,15105 16314,15223
 #: XXX wird hier die Straﬂe verbessert werden? - laut Drucksache wird hier ein "Neubau" erfolgen vvv
-#: last_checked: 2015-10-04 vvv
+#: last_checked: 2016-02-10 vvv
 #: check_frequency: 120d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524
 #: confirmed_by: srt
@@ -22222,8 +22234,13 @@ Oberdorfer Steig: Parkweg, bei Regenwetter riesige Pf¸tzen	Q1- -8270,14782 -8213
 #: confirmed_by: srt
 Kandertaler Weg: glatter Asphalt	Q0 13352,18360 13459,18310 13585,18312 13704,18364
 # 
-#: by: Sabine Bernsmann-...:
-Ossietzkyplatz: Asphalt	Q0 10257,19542 10215,19532 10228,19480
+#: by: Sabine Bernsmann-...: vvv
+#: confirmed_by: srt
+Ossietzkyplatz: Asphalt	Q0 10257,19542 10215,19532
+#: corrected_by: srt (Asphalt -> ...)
+Ossietzkyplatz: Beton	Q0 10215,19532 10228,19480
+#: by ^^^
+# 
 #: by: J. Bluhm:
 RÈaumurstr.: m‰ﬂiger Asphalt	Q1 4948,562 4748,453 4505,465 4279,459
 # 

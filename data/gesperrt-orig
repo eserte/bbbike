@@ -2656,7 +2656,7 @@ Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14575,9648 14604,9674
 #: last_checked: 2015-12-26
 Clara-Immerwahr-Str.: Bauzäune	2::inwork 19202,17471 19546,17351 19798,17263 19845,17235 19914,17203
 # 
-#: last_checked: 2016-01-14
+#: last_checked: 2016-02-09
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
 # 
 # REMOVED --- #: next_check_id: SCHOENEBERGERSCHLEIFE-2015 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2015/pressemitteilung.424946.php --- #: last_checked: 2015-12-11 --- #: next_check: 2015-12-22 --- #: priority: #A --- (Bautzener Str. - Südkreuz): in Bau	2::inwork 8204,9001 8198,8893 8175,8815 7998,8317
@@ -2676,9 +2676,11 @@ Fünf Morgen: Bauarbeiten, gesperrt. Wird es eine Anbindung an den Hüttenweg gebe
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5713
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810369999434/9999434/00071829/29-Anlagen/02/vzb0641_IV-B-Plan_XXI-32d-1_Auswertg_TOeB.pdf
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/artikel.434654.php
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/auslegungen/b-planentwurf_xxi-32d-1.pdf
 #: XXX evtl. wird dieses Stück Straße komplett entfernt
 #: last_checked: 2015-08-09
-#: check_frequency: 180d
+#: next_check: 2016-09-01
 Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 # 
 #: XXX wann wird die Straße eröffnet?
@@ -2728,7 +2730,7 @@ Kleiner Tiergarten: wegen Bauarbeiten gesperrt	2::inwork 6561,13151 6556,13240 6
 # 
 #: next_check_id: FISCHERINSEL-2015 vvv
 #: source_id: 2147339543 vvv
-#: last_checked: 2016-01-14 vvv
+#: last_checked: 2016-02-08 vvv
 #: next_check: 2016-06-30 vvv
 Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10703,11837
 Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10703,11837 10687,11853 10869,11949
@@ -2783,7 +2785,7 @@ Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr
 #: check_frequency: 100d
 Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17651,-393
 # 
-# REMOVED (laut osm & Abendschau wieder offen) --- #: osm_watch: way id="150301191" version="14" --- #: last_checked: 2015-11-14 --- #: next_check: 2016-02-07 --- #: by: http://www.rbb-online.de/abendschau/archiv/20160204_1930/Nachrichten2.html --- Teltowkanalbrücke: bis auf Weiteres gesperrt	2::inwork  7769,4315 7795,4242
+# REMOVED (laut osm & Abendschau wieder offen) --- #: osm_watch: way id="150301191" version="14" --- #: last_checked: 2015-11-14 --- #: next_check: 2016-02-07 --- #: by: http://www.rbb-online.de/abendschau/archiv/20160204_1930/Nachrichten2.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.442520.php --- Teltowkanalbrücke: bis auf Weiteres gesperrt	2::inwork  7769,4315 7795,4242
 # 
 #: next_check_id: EUROPACITY-2015
 #: last_checked: 2015-03-13
@@ -2838,20 +2840,13 @@ Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, gg
 #: by ^^^
 #: XXX ^^^
 # 
-#: next_check_id: NIZZASTR-2014 vvv
-#: last_checked: 2015-10-04 vvv
-#: check_frequency: 60d vvv
+# REMOVED --- #: next_check_id: NIZZASTR-2014 vvv --- #: last_checked: 2016-02-13 vvv --- #: check_frequency: 60d vvv
 # REMOVED --- Grenobler Ring: teilweise noch nicht fertiggestellt bzw. durch Bauzaun abgesperrt	2::inwork 12360,21303 12441,21341 12483,21255 12404,21217
 # REMOVED --- Grenobler Ring: teilweise noch nicht fertiggestellt bzw. durch Bauzaun abgesperrt	2::inwork 12483,21255 12493,21212
-#: XXX vermutlich schon offen
-Lyonstr.: noch nicht geöffnet	2::inwork 12188,21330 12204,21327 12322,21378 12443,21439
-#: XXX vermutlich schon offen
-Marseillestr.: noch nicht geöffnet	2::inwork 12402,21537 12404,21532 12411,21515 12443,21439
-Toulonstr.: noch nicht geöffnet	2::inwork 12404,21532 12480,21560
-#: check_frequency ^^^
-#: last_checked ^^^
-#: next_check_id ^^^
-# 
+# REMOVED --- #: XXX vermutlich schon offen --- Lyonstr.: noch nicht geöffnet	2::inwork 12188,21330 12204,21327 12322,21378 12443,21439
+# REMOVED --- #: XXX vermutlich schon offen --- Marseillestr.: noch nicht geöffnet	2::inwork 12402,21537 12404,21532 12411,21515 12443,21439
+# REMOVED --- Toulonstr.: noch nicht geöffnet	2::inwork 12404,21532 12480,21560
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
 # REMOVED --- #: next_check_id: CHARITE-2014 --- #: source_id: IM_023570 --- #: source_id: IM_023615 --- #: last_checked: 2015-09-30 --- #: next_check: 2015-10-31 --- #: priority: #A --- Luisenstr. Höhe Charité: Straße wegen Bauarbeiten komplett bis zum 31.10.2015 gesperrt, auch für Radfahrer und Fußgänger	2::inwork 8665,13353 8648,13498
 # REMOVED --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.153649.php --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.214040.php --- #: XXX falls es soweit ist -> gesperrt-orig --- #: last_checked: 2015-07-21 --- #: check_frequency: 30d --- Lohmühlenplatz: Umgestaltung des Platzes, Weg ist gesperrt	2::inwork 12905,9470 12889,9426 12897,9365
 # REMOVED (wieder überquerbar) --- #: source_id: INKO_104519 --- #: last_checked: 2015-03-28 --- #: check_frequency: 90d --- Bismarckstr.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3nocross 3690,11629 3844,11649 3898,11655
@@ -2928,7 +2923,7 @@ Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Du
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
 #: osm_watch: way id="305153174" version="1"
-#: last_checked: 2016-02-03 vvv
+#: last_checked: 2016-02-08 vvv
 #: check_frequency: 90d vvv
 Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10008,12274 9994,12368
 Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9996,12401 9994,12368 9943,12364
@@ -2986,7 +2981,7 @@ tragen (2 Stufen)	0:5 8818,13365
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html vvv
 #: source_id: INKO_113041 vvv
 #: source_id: 2147339528 vvv
-#: last_checked: 2016-02-03 vvv
+#: last_checked: 2016-02-08 vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9858,12410
 # REMOVED --- Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
 # REMOVED --- Niederlagstr. - Unter den Linden: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9943,12364 9934,12420 9984,12426
@@ -3042,14 +3037,14 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 #: XXX siehe auch Eintrag in handicap_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0194-oberwallstrae-werderscher-markt.html
 #: osm_watch: way id="66071370" version="4"
-#: last_checked: 2015-11-08
+#: last_checked: 2016-02-08
 #: check_frequency: 100d
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9898,12161 9882,12259
 # 
 #: by: Kai Wagner
 #: confirmed_by: srt
 #: XXX hier entsteht wohl eine neue Filiale von Möbel Kraft
-#: last_checked: 2015-12-26
+#: last_checked: 2016-02-10
 #: check_frequency: 360d
 Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 17221,14268 17274,14280
 #
@@ -3057,7 +3052,7 @@ Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 
 # REMOVED (Straße ist nicht (mehr?) gesperrt) --- #: last_checked: 2012-06-08 --- #: next_check: 2013-03-01 --- Zur Monumentenhalle: Straße wird wahrscheinlich neu gebaut	2:inwork 8390,8879 8409,8904 8405,8994
 # REMOVED (ich konnte durchfahren, Asphalt wie gehabt) --- #: last_checked: 2014-08-07 --- #: check_frequency: 120d --- #: XXX wird auch der Asphalt hier und im südlichen Abschnitt verbessert? --- Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
 # 
-#: last_checked: 2016-02-03
+#: last_checked: 2016-02-08
 #: check_frequency: 120d
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 # 
@@ -3125,7 +3120,7 @@ Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12
 #: next_check_id: ^^^
 # 
 #: XXX Eröffnung 2019 geplant
-#: last_checked: 2016-02-03
+#: last_checked: 2016-02-08
 #: check_frequency: 120d
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
