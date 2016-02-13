@@ -1,6 +1,6 @@
 ;;; bbbike.el --- editing BBBike .bbd files in GNU Emacs
 
-;; Copyright (C) 1997-2013 Slaven Rezic
+;; Copyright (C) 1997-2014,2016 Slaven Rezic
 
 ;; To use this major mode, put something like:
 ;;
@@ -142,9 +142,7 @@
 
 (defun bbbike-search-x-selection ()
   (interactive)
-  (let* ((sel (if (fboundp 'w32-get-clipboard-data)
-		  (w32-get-clipboard-data)
-		(x-selection)))
+  (let* ((sel (bbbike--get-x-selection))
 	 (rx  sel))
     (if sel
 	(let ((search-state 'begin)
@@ -177,6 +175,11 @@
 	    ))
       (error "No X selection"))))
 
+(defun bbbike--get-x-selection ()
+  (if (fboundp 'w32-get-clipboard-data)
+      (w32-get-clipboard-data)
+    (x-selection)))
+
 (defun bbbike-toggle-tabular-view ()
   (interactive)
   (if truncate-lines
@@ -200,9 +203,7 @@
       (search-backward-regexp " ")
       (setq begin-coord-pos (1+ (match-beginning 0))))
     (setq coord (buffer-substring begin-coord-pos end-coord-pos))
-    (string-match "^\\(.*\\)/[^/]+/[^/]+$" bbbike-el-file-name)
-    (setq bbbikeclient-path (concat (substring bbbike-el-file-name (match-beginning 1) (match-end 1))
-				    "/bbbikeclient"))
+    (setq bbbikeclient-path (concat (bbbike-rootdir) "/bbbikeclient"))
     (setq bbbikeclient-command (concat bbbikeclient-path
 				       "  -centerc "
 				       coord
@@ -210,6 +211,11 @@
     (message bbbikeclient-command)
     (shell-command bbbikeclient-command nil nil)
     ))
+
+(defun bbbike-rootdir ()
+  (string-match "^\\(.*\\)/[^/]+/[^/]+$" bbbike-el-file-name)
+  (substring bbbike-el-file-name (match-beginning 1) (match-end 1))
+  )
 
 (defvar bbbike-mode-map nil "Keymap for BBBike bbd mode.")
 (if bbbike-mode-map
