@@ -2089,7 +2089,7 @@ sub unhandled_stats {
 ## ... by count
 #
 EOF
-    for my $key (sort { $unhandled{$b} <=> $unhandled{$a} } keys %unhandled) {
+    for my $key (sort { $unhandled{$b} <=> $unhandled{$a} || $a cmp $b } keys %unhandled) {
 	$stats .= sprintf "# %-${max_key_len}s: %d\n", $key, $unhandled{$key};
     }
     $stats .= <<'EOF';
