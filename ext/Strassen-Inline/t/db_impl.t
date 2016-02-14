@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: db_impl.t,v 1.15 2007/05/09 20:37:09 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001, 2002, 2003, 2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001, 2002, 2003, 2006, 2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -148,11 +147,13 @@ my @arr;
 
 @arr = Strassen::Inline2::search_c($net, $start_coord, $goal1_coord);
 ok(@arr, "Path between $start_coord and $goal1_coord");
-is(ref $arr[0], 'ARRAY', "Path elements correct");
+is(ref $arr[0], 'ARRAY', "Path elements correct")
+    or diag "start_coord=$start_coord goal1_coord=$goal1_coord";
 
 @arr = Strassen::Inline2::search_c($net, $start_coord, $goal2_coord);
 ok(@arr, "Path between $start_coord and $goal2_coord");
-is(ref $arr[0], 'ARRAY', "Path elements correct");
+is(ref $arr[0], 'ARRAY', "Path elements correct")
+    or diag "start_coord=$start_coord goal2_coord=$goal2_coord";
 
 my $handle;
 
