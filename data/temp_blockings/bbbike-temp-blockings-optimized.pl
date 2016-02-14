@@ -1934,6 +1934,23 @@ userdel	2::inwork 12620,9293 12565,9200 12548,9167
          'text' => 'Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       {
+         'data' => 'userdel	2::temp 5459,11135 5542,11075 5652,11004 5613,10963 5488,10978 5475,10808
+userdel	2::temp 5652,11004 5716,10978
+userdel	2::temp 5373,10981 5488,10978 5542,11075
+userdel auto	3 5600,11114 5542,11075 5565,11147
+userdel auto	3 5565,11147 5542,11075 5600,11114
+',
+         'from' => 1455447600,
+         'id' => 2769,
+         'text' => 'Hardenbergstr., Joachimsthaler Str., Kantstr.: Staatsbesuch, Sperrungen möglich, von 15.02.2016 12:00 Uhr bis 16.02.2016 18:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1455642000
        }
      
 );

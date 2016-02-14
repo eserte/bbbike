@@ -24842,4 +24842,16 @@ userdel auto	3 5669,10704 5782,10884 5829,10964
 userdel auto	3 5488,10978 5475,10808 5471,10719
 EOF
      },
+     { from  => 1455447600, # 2016-02-14 12:00
+       until => 1455642000, # 2016-02-16 18:00
+       text  => 'Hardenbergstr., Joachimsthaler Str., Kantstr.: Staatsbesuch, Sperrungen möglich, von 15.02.2016 12:00 Uhr bis 16.02.2016 18:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 5459,11135 5542,11075 5652,11004 5613,10963 5488,10978 5475,10808
+userdel	2::temp 5652,11004 5716,10978
+userdel	2::temp 5373,10981 5488,10978 5542,11075
+userdel auto	3 5600,11114 5542,11075 5565,11147
+userdel auto	3 5565,11147 5542,11075 5600,11114
+EOF
+     },
     );

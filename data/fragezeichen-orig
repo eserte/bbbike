@@ -1173,9 +1173,19 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5134.html (Freigabe voraussichtlich Ende 2016)
 #: by; http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=2965 (Straßenbenennung, Vorschlag)
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1508/nachricht5720.html
+#: XXX die Brücke selbst könnte "Mathilde-Rathenau-Brücke" heißen
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5323 (Brückenbenennung)
 #: last_checked: 2015-12-28
 #: next_check: 2016-12-01
 Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rummelsburger Landstraße und Köpenicker Landstraße	?::inwork 17681,7589 17082,7189 16954,7096 16720,6845
+# 
+#: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/oepnv/treskowallee/Band_1/UL_3_Lageplaene/
+#: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/oepnv/treskowallee/Band_1/UL_3_Lageplaene/8BA_T68_P03_PFV-LP01.pdf
+#: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/oepnv/treskowallee/Band_1/UL_3_Lageplaene/8BA_T68_P03_PFV-LP02.pdf
+#: XXX laut ersten Plänen wird der nach Norden führende Radweg schon an der Stolzenfelsstr. aufhören
+#: XXX Gestaltung der Ampelanlagen wird sich ebenfalls ändern (Godesberger Str., Ehrenfelsstr., Dönhoffstr.)
+#: next_check: 2017-03-01
+Treskowallee: Bau von Radwegen	?::projected 18733,8633 18731,8577 18709,8423
 # 
 # REMOVED (laut http://www.berlin.lsvd.de/cms/index.php?option=com_content&task=view&id=184&Itemid=175 (URL existiert nicht mehr) sowie laut http://de.wikipedia.org/wiki/Kanzleramtssteg nicht mehr in Planung) --- Magnus-Hirschfeld-Steg: laut Tsp geplant	? 7360,12430 7437,12368
 # 
@@ -1256,13 +1266,17 @@ Planstraßen 1.1 und 1.2	?::projected 9991,15629 9898,15864 9746,15862
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2015 vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file?y=2015 (Grundstücksnummerierungen)
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6520
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103651141239/51141239/00083028/28-Anlagen/02/vzb1159_IV_Festsetzg_B_Plan_10_39.pdf
 #: XXX fehlen alle in Berlin.coords.data (PLZ=12621) vvv
 #: XXX alles Privatstraßen, "Heinrich Wohnpark" (ohne Bindestrich!) vvv
-#: XXX_osm: fehlen bei osm als "planned"/"proposed"
 #: last_checked: 2015-08-01 vvv
 #: check_frequency: 120d vvv
+#: osm_watch: way id="387215886" version="1"
 Erich-Knauf-Weg: Lage der Straße? Qualität?	? 23754,13165 23844,13120 23922,13085 23960,13068
+#: osm_watch: way id="387215889" version="1"
 Franz-Jägerstätter-Weg: Lage der Straße? Qualität?	? 23844,13120 23865,13239
+#: osm_watch: way id="387215884" version="1"
 Am Kirchendreieck: Lage der Straße? Qualität?	? 23922,13085 23960,13325
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -1296,6 +1310,9 @@ Wolfener Str.: Gründurchwegung geplant (oder existiert sie schon?)	?::projected 
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5616&options=4
+Finckensteinallee: gibt es hier Bordsteine oder Handicaps durch Fußgängerverkehr?	? 4105,2720 4164,2717
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2016
 #: XXX ggfs. culdesac- und str_cont_ausnahme-Einträge erstellen
@@ -2318,6 +2335,13 @@ Wedding/Prenzlauer Berg: Bezirksgrenzen werden verändert	?::projected 10271,1495
 #: note: category RB
 #: next_check: 2016-04-01
 Berlin-Schöneweide	? 17722,5573
+# 
+#: XXX im Zuge des Bebauungsplans 1-67VE
+#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7205
+#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/450810361070618957/1070618957/00129770/70-Anlagen/08/1482-2016-Anlage-7-1-67_VE_FEST_02_Abzeichnung.pdf
+#: next_check: 2017-03-01
+Rad- und Gehweg geplant: Qualität, genaue Lage?	?::projected 7459,13912 7562,13968
+# 
 #: ignore ^^^
 #: section ^^^
 #
