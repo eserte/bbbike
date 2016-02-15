@@ -796,9 +796,9 @@ Bundesallee (Richtungsfahrbahn)	1::igndisp 5505,8832 5515,8709 5508,8598 5472,85
 Nonnendammallee (Richtungsfahrbahn)	1::igndisp -278,14532 -457,14536 -914,14602
 Nonnendammallee (Richtungsfahrbahn)	1::igndisp -925,14631 -278,14532
 #: note: Mittelstreifen vvv
-Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4348,2619 4313,2630 4224,2671 4164,2717
-Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4164,2717 4233,2675 4317,2638 4348,2619
-Königsberger Str. (Mittelstreifen)	3nocross::ignrte 4348,2619 4317,2638 4233,2675 4164,2717
+Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4348,2619 4313,2630 4224,2671 4170,2727
+Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4170,2727 4233,2675 4317,2638 4348,2619
+Königsberger Str. (Mittelstreifen)	3nocross::ignrte 4348,2619 4317,2638 4233,2675 4170,2727
 #: note ^^^
 Lötschbergstr.	1s:q3 20161,11715 20150,11512
 #: by: Ulrike Hoffmann:
@@ -3133,7 +3133,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2016-01-28
+#: last_checked: 2016-02-11
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

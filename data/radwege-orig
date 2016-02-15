@@ -82,6 +82,8 @@ asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9233,8597 9229,8718
 	RW1;RW1 8715,7384 8716,7323 8718,7095 8717,6965 8750,6779 8735,6695
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/sbl_stand_2015_08_24.pdf?start&ts=1440409042&file=sbl_stand_2015_08_24.pdf
 #: XXX Radspuren in Bau, zwischenzeitlich keine Radwege mehr vvv
+#: osm_watch: way id="30709741" version="11"
+#: osm_watch: way id="354645896" version="1"
 #: last_checked: 2015-11-14 vvv
 #: check_frequency: 30d vvv
 	RW0;RW1 8735,6695 8722,6656
@@ -141,12 +143,10 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1;RW1 7633
 	RW2;RW2 7980,11070 8000,11137 8031,11249 8065,11349 8083,11381 8145,11438 8226,11458
 	RW2; 8443,10777 8380,10865
 hier wurde wahrscheinlich das Radwegschild vergessen	RW1; 8380,10865 8342,10916
-	RW2; 8342,10916 8261,11015 8241,11024 8102,11099 8000,11137 7828,11133 7690,11108
-hier wurde wahrscheinlich das Radwegschild vergessen	RW1; 7690,11108 7595,11086
-	RW2; 7595,11086 7492,11111
+	RW2; 8342,10916 8261,11015 8241,11024 8102,11099 8000,11137
+	RW1; 8000,11137 7828,11133 7690,11108 7595,11086 7492,11111
 Gehweg für Radfahrer frei	RW1; 7492,11111 7419,11137
-	RW1; 7419,11137 7322,11177
-	RW2; 7322,11177 7253,11208 7160,11225 7115,11220 6880,11110
+	RW1; 7419,11137 7322,11177 7253,11208 7160,11225 7115,11220 6880,11110
 	RW1;RW1 9404,10250 9388,10393
 	RW6;RW6 9554,10695 9679,10710
 	RW1;RW1 9388,10393 9250,10563 9210,10614 9131,10716 9022,10857
@@ -555,6 +555,8 @@ altes Verbundsteinpflaster	RW1;RW1 9953,3806 10047,3794 10236,3777 10461,3757 10
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150511.1105.401906.html
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150703.0950.402227.html
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2015_07_10.pdf?start&ts=1436508425&file=stra__enbauliste_stand_2015_07_10.pdf (Ende)
+#: osm_watch: way id="30701044" version="9"
+#: osm_watch: way id="29890799" version="11"
 #: last_checked: 2015-11-14 (noch Bauarbeiten, Richtung Süden noch keine Markierungen)
 #: next_check: 2015-11-27
 #: add_fragezeichen: Existieren bereits Radspuren in der Rixdorfer Str.?
@@ -933,6 +935,7 @@ asphaltiert	RW1;RW1 931,14268 984,14086
 	RW2; 4555,6403 4423,6477
 #: XXX was passiert hier bzgl. der Radwege?
 #: XXX Baumaßnahme GL6.17 (Realisierung nach 2011)
+#: osm_watch: way id="85468589" version="10"
 #: last_checked: 2015-07-23
 #: next_check: 2015-08-28 (Ende der Bauarbeiten)
 	RW2;RW8 6722,2444 6711,2496 6679,2701 6677,2718 6665,2836
@@ -1418,7 +1421,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2016-01-28
+#: last_checked: 2016-02-11
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -1919,7 +1922,7 @@ Radweg endet etwa 60 Meter vor der Kreuzung	RW1; 6651,4843 6827,4806 6847,4802
 	RW10;RW1 6579,4856 6531,4865
 	RW10;RW0 6531,4865 6385,4896
 # REMOVED (Hinweis von Jörg Feler) ---	RW;RW0 6385,4896 6353,4895 6288,4906 6215,4926 6191,4923 6184,4924 6055,4950
-	RW; 4348,2619 4317,2638 4233,2675 4164,2717
+	RW; 4348,2619 4317,2638 4233,2675 4170,2727
 	RW; 4224,2671 4313,2630 4348,2619
 #: by: rjoop (Busspur Richtung Westen)
 Für Radfahrer freigegebene Busspur ist Mo-Fr, Uhrzeit unbekannt	RW1;RW 4348,2619 4383,2613 4526,2635 4700,2662 4934,2546 4962,2532 5056,2481 5226,2390 5248,2376
@@ -1934,10 +1937,10 @@ Gehweg für Radfahrer frei	RW1;RW1 4596,3738 4601,3704 4611,3657 4585,3575
 Gehweg für Radfahrer frei	;RW1 4585,3575 4580,3514 4564,3457 4514,3329 4454,3260
 Gehweg für Radfahrer frei	RW1; 4585,3575 4546,3527 4523,3482 4467,3332 4454,3260
 Gehweg für Radfahrer frei	RW1;RW1 4454,3260 4411,3180
-	RW1;RW1 4411,3180 4164,2717
-	RW1; 4011,2942 4164,2717
-asphaltierter Radweg, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr	RW1; 4164,2717 4011,2942
-	RW2; 4164,2717 4224,2671
+	RW1;RW1 4411,3180 4170,2727
+	RW1; 4011,2942 4170,2727
+asphaltierter Radweg, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr	RW1; 4170,2727 4011,2942
+	RW2; 4170,2727 4224,2671
 	RW1;RW 4011,2942 3833,2815
 	RW;RW 3833,2815 3738,2821 3641,2827 3456,2835 3313,2842 3171,2848
 # REMOVED (auf http://www.panoramio.com/photo/19638055 nicht zu erkennen) ---	RW;RW 3507,3635 3626,3465 3733,3317 3743,3303 3861,3134 3949,3018
@@ -2758,7 +2761,7 @@ Radweg auf der Fahrbahn hinter den parkenden Autos	RW1; 11563,501 11459,225
 	RW;RW1 9215,3599 9177,3322
 	RW1;RW1 9177,3322 9174,3280
 	RW1;RW 9174,3280 9146,3101
-	RW1;RW0 4164,2717 4065,2576 3983,2454
+	RW1;RW0 4170,2727 4065,2576 3983,2454
 	RW1;RW0 3983,2454 3805,2196
 	RW1;RW4 3805,2196 3746,2108 3716,2063 3640,1959 3584,1877 3526,1792
 	RW1;RW1 3526,1792 3435,1660

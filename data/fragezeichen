@@ -542,8 +542,6 @@ Uckermärkischer Radrundweg zwischen Parlow und Friedrichswalde: Qualität? Wegfüh
 Karlsberg - Lätzlow: existiert eine Verbindung? Qualität?	? 58717,91843 58572,92110 58472,92325 58458,92403 58372,92542 58288,92536 58080,92626 57691,92618 57555,92694 57449,92832 57428,92954 57332,93130 57245,93216 56841,93207 56264,93180 56036,93217 55651,93267 54983,93657 54828,93661 54701,93788 54535,93879 54129,94020 53783,94031 52726,94026 52611,94062 52500,93800 52350,93856
 Kerkow - Görlsdorf: nach den Bauarbeiten (2008-11-08) besserer Asphalt?	? 45864,72724 46253,72339 46555,72293 46770,72248 47266,71628 48092,70962 48147,70935 48237,70892 48672,70933
 Am Mönchberg: gesperrt (gesehen am 2008-10-25), scheint ein unbefestigter Weg zu sein	? 1887,31658 1837,31725
-Gartenallee: Qualität (wahrscheinlich Kopfsteinpflaster)?	? 1887,31658 2027,31518
-Erich-Mühsam-Str.: Qualität?	? 1762,31318 1787,31375 1851,31451 1878,31471 1916,31483 2027,31518 2082,31535
 (Eberswalde): Straßennamen, Qualität?	? 36020,48283 35838,47830 35428,47961
 Malergarten: Qualität?	? -7831,-2230 -7859,-2304
 Margarete-Buber-Neumann-Str. (Potsdam): Qualität?	? -7784,-4963 -7689,-5039
@@ -1167,7 +1165,6 @@ Eberbacher Str.: sehr gute Qualität (liegt hier Asphalt oder Beton?)	? 4397,7375
 Marchwitzastr.: gute Qualität (liegt hier Asphalt oder Beton?)	? 20141,13071 20072,13070 19940,13128 19934,13318 20163,13318
 Basdorfer Str.: keine Geschwindigkeitsbegrenzung (liegt hier Asphalt oder Beton?)	? 19880,15818 20150,15678
 Straße 442: Asphalt oder Beton (liegt hier Asphalt oder Beton?)	? 4891,17289 4997,17241
-Straße 462: Asphalt oder Beton (liegt hier Asphalt oder Beton?)	? 5068,17384 4914,17399
 Dörfelweg: Asphalt oder Beton (liegt hier Asphalt oder Beton?)	? 9730,-33 9578,-92 9500,-115
 Am Hirschsprung: vermutlich Kopfsteinpflaster (liegt hier tatsächlich Kopfsteinpflaster?)	? 2219,6231 2229,6203 2295,6131 2316,6065 2333,5888
 Tile-Brügge-Weg: neuer Belag (Liegt hier mittlerweile sehr guter Asphalt?)	? 2595,20514 2793,20550 2968,20584 2982,20587 3119,20612 3196,20627 3214,20629 3287,20739 3306,20773
@@ -1238,6 +1235,9 @@ Lindenstr. (Teltow): Kopfsteinpflaster (ist das Kopfsteinpflaster mäßig oder sch
 Waldpromenade (Erkner): Beton (ist der nordöstliche Abschnitt auch betoniert?)	? 34536,3716 34568,3746 34585,3820
 Fuchssteig (Erkner): Asphalt (ist der nördliche Abschnitt auch asphaltiert?)	? 34459,3734 34483,3839
 Grünow - Heiseshof: schlechtes Kopfsteinpflaster (liegt hier auch Kopfsteinpflaster?)	? 46442,102960 46965,103352 47168,103502 47247,103537 47371,103685 47385,103791
+Erich-Mühsam-Str.: Asphalt (ist hier tatsächlich asphaltiert?)	? 1762,31318 1787,31375
+Erich-Mühsam-Str.: Kopfsteinpflaster (liegt hier tatsächlich Kopfsteinpflaster? Wenn ja, wie gut/schlecht ist die Pflasterung?)	? 1787,31375 1851,31451 1878,31471 1916,31483 2027,31518 2082,31535
+Gartenallee: Kopfsteinpflaster (liegt hier tatsächlich Kopfsteinpflaster? Wenn ja, wie gut/schlecht ist die Pflasterung?)	? 1887,31658 2027,31518
 (Steinstr. - Tschaikowskiweg): Waldweg (ist der Verbindungsweg mittlerweile asphaltiert?)	? -7996,-2293 -8024,-2468
 Reichenberg: grobes Kopfsteinpflaster (genauer Abschnitt fehlt)	? 58453,24209 58390,23910 58422,23806 58340,23653
 Rollwitz - Damerow: Kopfsteinpflaster/Feldweg (genauere Qualitätsbeschreibung fehlt)	? 46872,118656 46914,117945 47156,116507 47087,115725

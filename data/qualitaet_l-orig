@@ -3730,6 +3730,15 @@ Burgweg: Kopfsteinpflaster	Q2 -46304,-19 -46209,-1
 Burghof: Kopfsteinpflaster	Q2 -46304,-19 -46303,3
 Burghof: Pflasterung	Q1- -46303,3 -46298,88 -46302,103
 Sankt Petri: Kleinsteinpflaster	Q2+ -46304,-19 -46334,-150
+#: by: osm
+#: add_fragezeichen: ist hier tatsächlich asphaltiert?
+Erich-Mühsam-Str.: Asphalt	Q0 1762,31318 1787,31375
+#: by: osm
+#: add_fragezeichen: liegt hier tatsächlich Kopfsteinpflaster? Wenn ja, wie gut/schlecht ist die Pflasterung?
+Erich-Mühsam-Str.: Kopfsteinpflaster	Q2 1787,31375 1851,31451 1878,31471 1916,31483 2027,31518 2082,31535
+#: by: osm
+#: add_fragezeichen: liegt hier tatsächlich Kopfsteinpflaster? Wenn ja, wie gut/schlecht ist die Pflasterung?
+Gartenallee: Kopfsteinpflaster	Q2 1887,31658 2027,31518
 ######################### User Contributions #################################
 #: by: mopedfahrerrr:
 #: confirmed_by: anonymous:
@@ -4032,6 +4041,7 @@ Steinstr.: Kopfsteinpflaster	Q2 -7751,-2420 -7870,-2400 -7909,-2375
 #: XXX 2m breit, beleuchtet
 #: add_fragezeichen: ist der Verbindungsweg mittlerweile asphaltiert?
 #: by: http://www.potsdam.de/cms/dokumente/10976370_1771576/2496339f/ENDFASSUNG.%20PdmStadt%2007_13.pdf
+#: osm_watch: way id="24956654" version="7"
 (Steinstr. - Tschaikowskiweg): Waldweg	Q1- -7996,-2293 -8024,-2468
 Tschaikowskiweg: Asphalt mit Schäden	Q1 -8024,-2468 -8018,-2585
 Tschaikowskiweg: Asphalt	Q0 -7999,-2585 -7993,-2678 -7976,-2772
