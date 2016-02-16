@@ -14552,11 +14552,11 @@ EOF
 userdel	2::inwork 26001,-6257 26057,-6241 26146,-6218
 EOF
      },
-     { from  => $isodate2epoch->("2015-06-18 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-06-21 23:59:59"),
+     { from  => $isodate2epoch->("2016-06-16 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-06-19 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6]],
-       text  => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain (19.6.2015 - 21.6.2015)',
+       text  => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain (17.06.2016 - 19.06.2016)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 22111,4562 22093,4499 22076,4422
@@ -17182,11 +17182,11 @@ EOF
 userdel	2::inwork -2513,3631 -2464,3631 -2396,3666 -2174,3718 -2042,3838 -2015,3873 -2012,3949 -2030,4089 -1944,4140 -1760,4001 -1701,3980 -1621,3972 -1516,3993 -1488,4009
 EOF
      },
-     { from  => $isodate2epoch->("2015-12-10 00:00:00"), # 1354748400, # 2012-12-06 00:00, # 1291330800, # PERIODISCH! # früher: 1259794800, # 2009-12-03 00:00
-       until => $isodate2epoch->("2015-12-13 23:59:59"), # 1355698799, # 2012-12-16 23:59, # 1292194799, # PERIODISCH! # früher: 1260745199, # 2009-12-13 23:59
+     { from  => $isodate2epoch->("2016-12-08 00:00:00"), # 1354748400, # 2012-12-06 00:00, # 1291330800, # PERIODISCH! # früher: 1259794800, # 2009-12-03 00:00
+       until => $isodate2epoch->("2016-12-11 23:59:59"), # 1355698799, # 2012-12-16 23:59, # 1292194799, # PERIODISCH! # früher: 1260745199, # 2009-12-13 23:59
        periodic => 1,
-       recurrences => [['yearly', days => 11, months => 12]],
-       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 11.12.2015 bis zum 13.12.2015',
+       recurrences => [['yearly', days => 8, months => 12]],
+       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 09.12.2016 bis zum 11.12.2016',
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-deutschland.de/berlin-koepenick-weihnachtsmarkt.html',
        data  => <<EOF,
@@ -23256,11 +23256,11 @@ EOF
 userdel	q4::inwork; 16514,15092 16430,15168
 EOF
      },
-     { from  => $isodate2epoch->("2015-08-20 14:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-08-23 23:59:59"),
+     { from  => $isodate2epoch->("2016-08-18 14:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-08-21 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 20, months => 8]],
-       text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 21.8.2015 bis 23.8.2015',
+       recurrences => [['yearly', days => 18, months => 8]],
+       text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 19.8.2016 bis 21.8.2016',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 22133,4644 22111,4562 22093,4499
@@ -24455,6 +24455,7 @@ EOF
        source_id => 'IM_026066',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.354922.php
+#: note: 2147339555 nur bis August 2016
 #: source_id: 2147339555
 userdel	q4::inwork; 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
 EOF

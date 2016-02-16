@@ -87,7 +87,28 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 22111,4562 22093,4499 22076,4422
+userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22175,4730 22138,4661 22133,4644 22111,4562
+userdel	2::temp 22133,4644 22074,4664
+# REMOVED --- userdel	2::temp 22111,4562 22162,4546 22214,4548 22324,4586 22314,4604 22355,4660 22365,4676 22395,4678
+',
+         'from' => 1466028000,
+         'id' => 1702,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              14,
+                              'months',
+                              6
+                            ]
+                          ],
+         'text' => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain (17.06.2016 - 19.06.2016)',
+         'type' => 'gesperrt',
+         'until' => 1466373599
+       },
        undef,
        undef,
        undef,
@@ -647,7 +668,26 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 22111,4562 22162,4546 22214,4548
+',
+         'from' => 1481151600,
+         'id' => 2003,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              8,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-deutschland.de/berlin-koepenick-weihnachtsmarkt.html',
+         'text' => 'Alt-Köpenicker Weihnachtsmarkt vom 09.12.2016 bis zum 11.12.2016',
+         'type' => 'gesperrt',
+         'until' => 1481497199
+       },
        undef,
        undef,
        undef,
@@ -1607,7 +1647,26 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 22133,4644 22111,4562 22093,4499
+userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
+',
+         'from' => 1471521600,
+         'id' => 2610,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              18,
+                              'months',
+                              8
+                            ]
+                          ],
+         'text' => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 19.8.2016 bis 21.8.2016',
+         'type' => 'gesperrt',
+         'until' => 1471816799
+       },
        undef,
        undef,
        undef,
@@ -1851,6 +1910,7 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
        undef,
        {
          'data' => '#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.354922.php
+#: note: 2147339555 nur bis August 2016
 #: source_id: 2147339555
 userdel	q4::inwork; 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
 ',
@@ -1934,23 +1994,6 @@ userdel	2::inwork 12620,9293 12565,9200 12548,9167
          'text' => 'Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt',
          'type' => 'gesperrt',
          'until' => undef
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       {
-         'data' => 'userdel	2::temp 5459,11135 5542,11075 5652,11004 5613,10963 5488,10978 5475,10808
-userdel	2::temp 5652,11004 5716,10978
-userdel	2::temp 5373,10981 5488,10978 5542,11075
-userdel auto	3 5600,11114 5542,11075 5565,11147
-userdel auto	3 5565,11147 5542,11075 5600,11114
-',
-         'from' => 1455447600,
-         'id' => 2769,
-         'text' => 'Hardenbergstr., Joachimsthaler Str., Kantstr.: Staatsbesuch, Sperrungen möglich, von 15.02.2016 12:00 Uhr bis 16.02.2016 18:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1455642000
        }
      
 );

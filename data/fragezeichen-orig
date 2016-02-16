@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2016-02-12
+#: last_checked: 2016-02-16
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -1336,6 +1336,8 @@ Finckensteinallee: gibt es hier Bordsteine oder Handicaps durch Fußgängerverkehr
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2016
 #: XXX ggfs. culdesac- und str_cont_ausnahme-Einträge erstellen
+#: last_checked: 2016-02-15
+#: check_frequency: 90d
 Mehlbeerenweg: Teilstück wird eingezogen	? 11940,11982 11923,11881
 # 
 # REMOVED (wenig Beeinträchtigungen) --- #: XXX laut fritz, bis 31.03.2016, Beeinträchtigungen für Radfahrer prüfen --- Neuenburger: zwischen Alter Jakobstr. und Alexandrinenstr. gesperrt	? 9955,10501 10178,10411
@@ -1711,7 +1713,7 @@ Eduard-Claudius-Str. (Potsdam): Qualität (auch Beton?)?	? -10542,-4204 -10615,-4
 # 
 Tiroler Damm (Potsdam): Qualität (auch Beton?)?	? -10362,-4158 -10304,-4090 -10267,-4025 -10165,-3954 -10140,-3918
 # 
-#: osm_watch: way id="4783066" version="6"
+#: osm_watch: way id="4783066" version="6" brb
 #: last_checked: 2013-05-09
 #: next_check: 2013-08-09
 Am Brunnen (Potsdam): Bauarbeiten, danach vielleicht etwas bessere Qualität (Asphalt?)?	?::inwork; -11789,-3212 -11672,-3345
@@ -2323,7 +2325,7 @@ Charles-Boutard-Straße: geplante Straße in Johannisthal, genaue Lage, Qualität?	
 #: osm_watch: way id="206889091" version="3"
 #: last_checked: 2015-07-12
 #: check_frequency: 180d
-Benno-König-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18369,4337 18501,4457
+Benno-König-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18369,4337 18578,4516
 #: XXX ^^^
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5188 vvv
@@ -2388,6 +2390,18 @@ Berlin-Schöneweide	? 17722,5573
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/450810361070618957/1070618957/00129770/70-Anlagen/08/1482-2016-Anlage-7-1-67_VE_FEST_02_Abzeichnung.pdf
 #: next_check: 2017-03-01
 Rad- und Gehweg geplant: Qualität, genaue Lage?	?::projected 7459,13912 7562,13968
+# 
+#: by: http://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2016/pressemitteilung.445338.php
+#: XXX Gleislinse in Adlershof: Bebauungsplan 9-60
+#: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-60/index.shtml
+#: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-60/download/Bebauungsplan_9-60_oeA.pdf
+#: next_check: 2017-09-01 vvv
+Gustav-Hertz-Platz: geplant, verkehrsberuhigt	?::projected 18578,4516 18688,4611 18645,4664
+Wagner-Régeny-Str.: Verlängerung geplant	?::projected 19162,3935 18578,4516 18264,4830
+Fuß- und Radwegbrücke: Rampe geplant, eigentlich Brücke "in Aussicht genommen"	?::projected 19162,3935 19387,4160
+Weg entlang der Bahnanlagen: evtl. entsteht hier eine Grünanlage mit Wegen	?::projected 19667,3578 19232,4047 18688,4611
+Fuß- und Radweg: geplant	?::projected 18264,4830 18236,4807
+#: next_check ^^^
 # 
 #: ignore ^^^
 #: section ^^^
