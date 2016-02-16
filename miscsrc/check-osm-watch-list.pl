@@ -158,7 +158,7 @@ my $changed_count = 0;
 my $deleted_count = 0;
 while(my($k,$v) = each %id_to_record) {
     if (!$consumed{$k}) {
-	warn "DELETED: could not find $k in osm data. Removed?\n";
+	warn "DELETED: could not find $k in osm data. Removed? Forgotten brb marker?\n";
 	$deleted_count++;
 	if ($show_diffs) {
 	    my($type, $id, $old_version) = @{$v}{qw(type id version)};
