@@ -393,7 +393,8 @@
 	       (grepcmd (concat "cd " bbbike-datadir " && grep -ns '^#: osm_watch: " elemtype " id=\"" elemid "\"' *-orig temp_blockings/bbbike-temp-blockings.pl"))
 	       (tempbuf "*bbbike update osm watch*"))
 	  (condition-case nil
-	      (kill-buffer tempbuf))
+	      (kill-buffer tempbuf)
+	    (error ""))
 	  (if (> (call-process "/bin/sh" nil tempbuf nil "-c" grepcmd) 0)
 	      (error "Command %s failed" grepcmd)
 	    (set-buffer tempbuf)
