@@ -56,8 +56,8 @@ $ssh_cmd = "ssh"
     if !defined $ssh_cmd;
 $session_dir_prefix = "/tmp/bbbike-sessions-1000-"
     if !defined $session_dir_prefix;
-$coordssession_dir = '/tmp/coordssession';
-#$coordssession_dir = '/var/tmp/coordssession';
+#$coordssession_dir = '/tmp/coordssession';
+$coordssession_dir = '/var/tmp/coordssession';
 
 @types = qw(routes mapserver);
 
