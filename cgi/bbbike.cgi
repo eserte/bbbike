@@ -5266,7 +5266,7 @@ EOF
 		$sess->{routestringrep} = $string_rep;
 		$sess->{route} = \@out_route;
 		print "<input type=hidden name=coordssession value=\"$sess->{_session_id}\">";
-		my $sessdir = "/tmp/coordssession";
+		my $sessdir = "/var/tmp/coordssession";
 		mkdir $sessdir if !-d $sessdir;
 		chmod 0777, $sessdir;
 		if (open(SESS, ">> $sessdir/" . $sess->{_session_id})) {

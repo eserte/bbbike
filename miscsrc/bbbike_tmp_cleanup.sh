@@ -61,7 +61,10 @@ rm /tmp/bbbikems-xxx-*
 # Sessions for bbbike, precious on the live www machine
 rm -r /tmp/bbbike-sessions-*
 rm /tmp/bbbike-counter-*
+# old location for sessions (XXX may be deleted one day)
 rm -r /tmp/coordssession
+# new location for sessions
+rm -r /var/tmp/coordssession
 # Temporary files for uploads for the cgi implementation
 rm /tmp/bbbike.cgi.upload.*
 # Sessions for wapbbbike
