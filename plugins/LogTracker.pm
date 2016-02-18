@@ -6,7 +6,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2013,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -1013,7 +1013,7 @@ $SETUP_NEW_ONLINE_TRACKING_TEST=0;
 
 sub setup_new_online_tracking {
     if ($LOG_TRACKER_SSH) {
-	stop_online_tracking();
+	stop_new_online_tracking();
     }
     if (!eval {
 	require Net::OpenSSH;
@@ -1021,9 +1021,10 @@ sub setup_new_online_tracking {
 					     $SETUP_NEW_ONLINE_TRACKING_TEST ? 'localhost' : 'live-bbbike',
 					     master_stdout_discard => 1, # does not work together with ptksh
 					     master_stderr_discard => 1,
+					     batch_mode => 1,
 					    );
 	$LOG_TRACKER_SSH->error
-	    and die "Couldn't establish SSH connection: " . $LOG_TRACKER_SSH->error;
+	    and die "Couldn't establish SSH connection (maybe ssh config is missing the live-bbbike entry? maybe ssh agent is not running?): " . $LOG_TRACKER_SSH->error;
 	($LOG_TRACKER_FH, my($pid)) = $LOG_TRACKER_SSH->pipe_out($SETUP_NEW_ONLINE_TRACKING_TEST
 								 ? 'echo "/tmp/coordssession/ CLOSE_WRITE,CLOSE 01000000_0aa6e7661e8cfe43"'
 								 : 'inotifywait -m -e close_write /tmp/coordssession'
