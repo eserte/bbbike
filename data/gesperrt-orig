@@ -2156,8 +2156,8 @@ Poller	BNP:1::trailer=6 8350,10662
 Dr‰ngelgitter	BNP:3::trailer=10 10062,15927
 #: next_check_id: LORTZING-2014
 #: XXX eventuell tempor‰r wegen der Baustraﬂe
-#: XXX siehe auch in zebrastreifen-orig
-#: last_checked: 2015-08-11
+#: XXX siehe auch in zebrastreifen
+#: last_checked: 2016-02-19
 #: check_frequency: 120d
 zwei weite Dr‰ngelgitter	BNP:4::trailer=12 10038,15418
 Schranke	BNP:3 -7969,-1659
@@ -2273,6 +2273,7 @@ Schranke	BNP:1::trailer=5 -3300,14039
 weites Dr‰ngelgitter	BNP:1::trailer=5 -3437,14029
 Dr‰ngelgitter	BNP:3::trailer=10 7928,10094
 # XXX_prog kann entfernt werden, sobald temp_blockings mit BNP umgehen kann, siehe Eintrag dort
+#: note: Tor war offen: 19. Februar 2016, abends gegen 19 Uhr
 enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark, falls Tor gesperrt ist	BNP:20::trailer=no 10583,15208
 Tor zum Friedrich-Ludwig-Jahn-Sportpark, lichte Breite 85cm	BNP:5::trailer=no 10781,15438
 #: by: Stefan Klinkusch: vvv
