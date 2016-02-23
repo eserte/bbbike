@@ -43,7 +43,7 @@ Markgrafendamm/Hauptstr.: asphaltiert	Q0 14674,10811 14717,10855 14794,10844 149
 #: next_check_id: HAUPTSTR-2015 vvv
 #: XXX nach den Bauarbeiten vermutlich asphaltiert mit Radwegen oder -spuren vvv
 #: source_id: 2147339565 vvv
-#: last_checked: 2015-12-28 vvv
+#: last_checked: 2016-02-20 vvv
 #: check_frequency: 60d vvv
 Hauptstr.: Kopfsteinpflaster, Betonplatten, alte Straßenbahnschienen	Q2; 14906,10820 15261,10738
 #: note: Asphaltierung während der Bauarbeiten, vielleicht auch permanent; einige kurze Kopfsteinpflasterabschnitte
@@ -270,7 +270,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX wird hier vielleicht asphaltiert werden?
 #: XXX Baumaßnahme 2.22 (Realisierung nach 2011)
-#: last_checked: 2016-02-04
+#: last_checked: 2016-02-22
 #: check_frequency: 120d
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9053,16029 8923,15850
@@ -2463,8 +2463,8 @@ Sachtlebenstr.: mäßige Radwege, Fahrbahn asphaltiert	Q0 255,152 264,227 286,452 
 #: by: ^^^
 (Parkweg Möllendorffstr. - Rathausstr.): Gehwegschäden, teils asphaltiert	Q1- 15420,12178 15520,12160 15628,12246
 (Vorfahrt am Rathaus Lichtenberg): Asphalt	Q0 15480,12306 15531,12300 15576,12315
-Bleckmannweg: kleinteiliges Kopfsteinpflaster	Q1 15656,12235 15746,12209
-Hoenerweg: kleinteiliges Kopfsteinpflaster	Q1 15670,12298 15790,12289 15896,12273
+Bleckmannweg: kleinteiliges Kopfsteinpflaster	Q1 15658,12231 15756,12212
+Hoenerweg: kleinteiliges Kopfsteinpflaster	Q1 15668,12304 15790,12289 15896,12273
 (Verlängerte Borkheider Str.): Verbundsteinpflaster	Q1 21555,17546 21571,17587 21607,17663 21663,17795
 Alfred-Döblin-Str.: Beton	Q0 20487,16392 20286,16494 20219,16523
 (S-Bhf. Raoul-Wallenberg-Str. - Alfred-Döblin-Str.): Beton	Q0 20198,16322 20286,16494
@@ -12945,7 +12945,7 @@ Isländische Str.: sehr guter Asphalt	Q0 10022,16237 10030,16238 10281,16263
 # 
 #: by: Diana Stark: vvv
 #: note: auch laut ADFC-Karte gut geeignet:
-Rudolf-Reusch-Str.: Asphalt	Q0 15651,12214 15656,12235 15670,12298 15710,12365 15733,12528 15732,12562 15732,12650 15731,12687
+Rudolf-Reusch-Str.: Asphalt	Q0 15651,12214 15658,12231 15668,12304 15710,12365 15733,12528 15732,12562 15732,12650 15731,12687
 Rudolf-Reusch-Str. [Wohngebiet]: Asphalt	Q0 15571,12648 15657,12648 15732,12650
 Rudolf-Reusch-Str. [Wohngebiet]: Asphalt	Q0 15732,12562 15657,12562 15657,12648
 #: by: ^^^

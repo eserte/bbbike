@@ -2643,12 +2643,18 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX Bauarbeiten (Erweiterung des Rütli-Campus?)
+#: XXX Wann sind die Bauarbeiten beendet?
+#: last_checked: 2016-02-23
+#: check_frequency: 60d
+Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,9200 12548,9167
+# 
 #: XXX Straße wird zurückgebaut
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.256386.php
 #: last_checked: 2016-02-05
 Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7703,14582 7527,14684
 # 
-#: last_checked: 2016-02-03 vvv
+#: last_checked: 2016-02-23 vvv
 Treptower Park: Bauarbeiten, Weg noch nicht fertiggestellt	2::inwork 14318,9688 14443,9731
 Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14361,9772 14436,9784
 Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14575,9648 14604,9674

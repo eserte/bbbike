@@ -1968,32 +1968,6 @@ userdel	2::inwork -1298,2017 -1082,2140
          'text' => 'Uckerland: B104: Brückenneubau zwischen Milow und Wilsickow, Straße gesperrt, 12.10.2015 08:00 Uhr bis 30.09.2016 ',
          'type' => 'gesperrt',
          'until' => 1475272800
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       {
-         'data' => '#: XXX Wann sind die Bauarbeiten beendet? Wie weit geht die Sperrung Richtung Süden?
-#: last_checked: 2016-01-26
-userdel	2::inwork 12620,9293 12565,9200 12548,9167
-',
-         'from' => undef,
-         'id' => 2764,
-         'text' => 'Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt',
-         'type' => 'gesperrt',
-         'until' => undef
        }
      
 );

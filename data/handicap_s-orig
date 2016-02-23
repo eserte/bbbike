@@ -13,7 +13,7 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2016-02-20 vvv
+#: last_checked: 2016-02-21 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14286,11186 14357,11148
 # REMOVED (keine Behinderungen mehr) --- Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 # REMOVED (gibt's nicht mehr?) --- Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraße ausgewiesen	q3::inwork; 14442,11101 14468,11203
@@ -21,12 +21,12 @@ Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,112
 # REMOVED --- Haasestr.: Einbahnstraße wegen Bauarbeiten	q4::inwork; 14328,11320 14286,11186
 #: last_checked ^^^
 # 
-#: last_checked: 2016-02-16
+#: last_checked: 2016-02-22
 #: check_frequency: 7d
 Revaler Str.: Bauarbeiten an der Kreuzung Warschauer Str.	q3::inwork 13588,11490 13711,11458
 # 
 #: XXX laut Fritz bis Ende März 2016
-#: last_checked: 2016-02-19 vvv
+#: last_checked: 2016-02-23 vvv
 #: next_check: 2016-03-31 vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
@@ -239,11 +239,7 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10624,11548 1
 ### Kreuzberg ###
 # 
 # REMOVED (kaum noch Beeinträchtigungen) --- #: last_checked: 2016-02-26 --- #: next_check: 2016-03-30 --- Wassertorstr.: Wasserrohrbruch, kurzes Stück auf Gehweg ausweichen	q2::inwork 10857,10411 10987,10360
-# 
-#: last_checked: 2016-02-18
-#: next_check: 2016-02-26
-Oppelner Str.: Bauarbeiten, kurzes Stück auf Gehweg ausweichen	q2::inwork 12978,10581 12897,10439
-#
+# REMOVED (aufgehoben) --- #: last_checked: 2016-02-18 --- #: next_check: 2016-02-26 --- Oppelner Str.: Bauarbeiten, kurzes Stück auf Gehweg ausweichen	q2::inwork 12978,10581 12897,10439
 # REMOVED --- #: last_checked: 2016-01-14 --- Ritterstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 9935,11067 10103,10989
 # REMOVED (Bauarbeiten beendet) --- #: next_check_id: DRESDENER-2015 --- #: last_checked: 2015-09-02 --- #: check_frequency: 7d -- # REMOVED --- #: next_check: 2015-03-01 (Bauzeit 2014-2015) --- Alfred-Döblin-Platz: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 11162,10919 11150,11030
 # REMOVED (eigentlich kann man schon durch...) --- #: next_check_id: DRESDENER-2015 --- #: last_checked: 2015-07-15 --- #: check_frequency: 7d --- #: priority: #A --- Dresdener Str.: Bauarbeiten wegen Tunnelzuschüttung, teilweise Ausweichen auf Gehweg	q3::inwork 11189,10831 11162,10919
@@ -269,6 +265,10 @@ Oppelner Str.: Bauarbeiten, kurzes Stück auf Gehweg ausweichen	q2::inwork 12978,
 # REMOVED (scheint in beide Richtungen befahrbar zu sein) --- #: last_checked: 2012-09-22 --- #: next_check: 2012-10-15 --- #: by: IM_008926 --- #: XXX wahrscheinlich bis Ende Oktober 2012 --- #: XXX wahrscheinlich wird es teilweise oder sogar komplett Radspuren geben --- Kantstr.: Bauarbeiten am Zoofenster, Fahrbahn Richtung Westen gesperrt	q2::inwork; 5652,11004 5613,10963 5488,10978
 # 
 ### Neukölln ###
+# 
+#: last_checked: 2016-02-23
+#: check_frequency: 14d
+Weichselplatz: Bauarbeiten, Gehweg benutzen	q4::inwork 12761,9190 12851,9309
 # 
 #: next_check_id: DIESEL-2015
 #: last_checked: 2016-02-03
@@ -893,8 +893,8 @@ Viktoriapark: starke Steigung, Fußgänger	q4; 8970,9323 9007,9264
 Viktoriapark: starkes Gefälle, Fußgänger	q3; 9007,9264 8970,9323
 Viktoriapark: Fußgänger	q1+ 9007,9264 8982,9198 8990,9166 9020,9150 9080,9163 9150,9152
 (Parkweg Möllendorffstr. - Rathausstr.): Fußgänger	q2 15420,12178 15520,12160 15628,12246
-Bleckmannweg: Fußgänger, eng	q1 15656,12235 15746,12209
-Hoenerweg: Fußgänger, eng	q1 15670,12298 15790,12289 15896,12273
+Bleckmannweg: Fußgänger, eng	q1 15658,12231 15756,12212
+Hoenerweg: Fußgänger, eng	q1 15668,12304 15790,12289 15896,12273
 S-Bhf. Raoul-Wallenberg-Str.: lange Rampe	q3 20109,16264 20116,16303
 #: XXX wo genau sind die Bordsteine, auf beiden Seiten?
 (S-Bhf. Raoul-Wallenberg-Str. - Alfred-Döblin-Str.): Fußgänger, Bordsteine	q2 20116,16303 20198,16322

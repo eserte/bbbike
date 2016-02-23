@@ -24767,12 +24767,12 @@ userdel	q4::temp 11064,12910 11134,12793
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1456263063, # undef, # XXX -> gesperrt_orig
        text  => 'Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX Wann sind die Bauarbeiten beendet? Wie weit geht die Sperrung Richtung Süden?
-#: last_checked: 2016-01-26
+# REMOVED --- : XXX Wann sind die Bauarbeiten beendet? Wie weit geht die Sperrung Richtung Süden?
+# REMOVED --- : last_checked: 2016-02-23
 userdel	2::inwork 12620,9293 12565,9200 12548,9167
 EOF
      },
