@@ -23984,7 +23984,7 @@ EOF
      { from  => $isodate2epoch->("2015-04-03 10:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2015-04-06 23:59:59"),
        periodic => 1,
-       recurrences => [['easter', -2]], # Karfreitag
+# findet es 2016 überhaupt statt? #       recurrences => [['easter', -2]], # Karfreitag
        text  => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Veranstaltung (Osterfest Hauptstraße), Straße gesperrt (04.04.2015 - 06.04.2015)',
        type  => 'handicap',
        data  => <<EOF,
