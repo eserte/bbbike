@@ -2654,10 +2654,13 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,
 #: last_checked: 2016-02-05
 Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7703,14582 7527,14684
 # 
-#: last_checked: 2016-02-23 vvv
+#: last_checked: 2016-02-27 vvv
 Treptower Park: Bauarbeiten, Weg noch nicht fertiggestellt	2::inwork 14318,9688 14443,9731
 Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14361,9772 14436,9784
 Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14575,9648 14604,9674
+#: XXX evtl. kann man hier als Fußgänger irgendwie vorbei
+#: check_frequency: 7d
+Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14448,9922 14460,9871 14483,9843
 #: last_checked ^^^
 # 
 #: last_checked: 2015-12-26
@@ -2737,7 +2740,7 @@ Kleiner Tiergarten: wegen Bauarbeiten gesperrt	2::inwork 6561,13151 6556,13240 6
 # 
 #: next_check_id: FISCHERINSEL-2015 vvv
 #: source_id: 2147339543 vvv
-#: last_checked: 2016-02-08 vvv
+#: last_checked: 2016-02-26 vvv
 #: next_check: 2016-06-30 vvv
 Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10703,11837
 Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10703,11837 10687,11853 10869,11949
@@ -2751,7 +2754,7 @@ Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,1
 # REMOVED --- #: next_check_id: GREIFENHAGENER-2015 --- #: last_checked: 2015-06-30 --- #: check_frequency: 30d --- Greifenhagener Str.: Bauarbeiten, Einbahnstraße	1s:q2 11086,15772 11123,15851
 # 
 #: XXX vermutlich werden diese Abschnitte dauerhaft aufgegeben werden
-#: last_checked: 2016-02-07
+#: last_checked: 2016-02-27
 #: check_frequency: 60d
 Matthesstr., Beermannstr.: wegen Autobahnbaustelle gesperrt	2::inwork 14119,9368 14157,9345 14162,9381 14172,9457
 # 
@@ -2813,11 +2816,11 @@ Uferstr. (Niederschöneweide): abgesperrt	2::inwork 17639,6227 17843,6083
 #: source_id: IM_023816 vvv
 #: source_id: 2147339541 vvv
 #: XXX vermutlich bis März 2016 andauernd, laut Schild bis Februar 2016
-#: last_checked: 2016-02-03 vvv
-#: next_check: 2016-02-28 vvv
+#: last_checked: 2016-02-25 vvv
+#: check_frequency: 14d vvv
 Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081
 Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: source_id ^^^
 #: source_id ^^^

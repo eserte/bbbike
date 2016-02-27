@@ -23,7 +23,7 @@
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: osm_watch: way id="153373879" version="5"
 #: osm_watch: way id="153373877" version="5"
-#: last_checked: 2016-01-28
+#: last_checked: 2016-02-26
 #: check_frequency: 60d
 Stülerstr.	?::projected 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222
 # 
@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2016-02-16
+#: last_checked: 2016-02-25
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -225,8 +225,8 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2016-02-05
-Warschauer Str: Radspuren in Bau	?::inwork 13603,11538 13651,11731 13696,11920 13745,12118
+#: last_checked: 2016-02-25
+Warschauer Str: Radspuren in Bau	?::inwork 13651,11731 13696,11920 13745,12118
 # 
 # REMOVED (vermutlich passiert nichts weiter) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: XXX wird auch das letzte Stück im Westen realisiert? --- #: osm_watch: way id="4424794" version="14" --- #: osm_watch: way id="30195541" version="9" --- #: last_checked: 2015-06-08 --- #: check_frequency: 60d --- Turmstr.: evtl. wird die Radspuren-Lücke hier geschlossen	? 5248,13434 5368,13406 5434,13398
 # REMOVED (realisiert) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: osm_watch: way id="4884674" version="8" --- #: osm_watch: way id="8023415" version="6" --- #: last_checked: 2013-07-13 --- #: check_frequency: 180d --- Klosterbuschweg: Radspuren für 2013 geplant	?::projected -6442,14535 -6438,14609 -6438,14770 -6439,14837 -6429,14879 -6405,14971
@@ -246,6 +246,8 @@ Gartenfelder Str.: Radspur wird gebaut, Realisierung bis April 2015	?::inwork; -
 #: by: ^^^
 # 
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) vvv
+#: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2016/pressemitteilung.449384.php (Baumfällungen)
+#: XXX werden die Baumfällungen hier oder in anderen Abschnitten der Stromstr. passieren? Gibt es danach Änderungen bei den Radwegen?
 #: osm_watch: way id="25219757" version="11"
 #: osm_watch: way id="4600236" version="13"
 #: last_checked: 2015-12-04
@@ -836,6 +838,7 @@ Straße 6 (Mariendorf): wird in Zukunft vielleicht entstehen	? 9099,4204 9079,437
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/stadtplverm/auslegungxvi-65und9-47.html
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=2690
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00054831/31-Anlagen/06/B0522ZB3.pdf
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5308 (Namensvorschlag: Jan Czochralski)
 #: osm_watch: way id="199532117" version="1"
 #: last_checked: 2015-11-01
 #: check_frequency: 180d
@@ -1441,7 +1444,7 @@ Seegefelder Weg: Bau von Radspuren	?::projected -6507,15007 -6861,15129
 #: note: Privatstraße, aber ausdrücklich "öffentlich zugänglich"
 #: XXX fehlt in Berlin.coords.data, PLZ=10829
 #: XXX Wirksamkeit der Benennung: 2015-10-10
-#: last_checked: 2015-12-05 (sieht noch privat aus)
+#: last_checked: 2016-02-25 (sieht noch privat aus)
 EUREF-Campus: Innenfläche wird benannt; genaue Wegführung, Qualität?	? 7250,8223 7137,8206 7281,8485
 # 
 # REMOVED (kann vernachlässigt werden) --- #: by: fritz --- Voigtstr./Schreinerstr.: Auswirkungen der Sperrungen für Radfahrer?	? 14570,12478 14776,12418 14798,12502
@@ -1633,7 +1636,7 @@ Hildburghauser Str.: Ausbau der Straße, bessere Qualität des Asphalts?	? 4806,13
 # 
 #: by: http://gruene-xhain.de/news/single-view/artikel/vorfahrt-fuer-den-radverkehr.html
 #: by: http://www.berlin.de/imperia/md/content/bafriedrichshain-kreuzberg/abtstadtpg/bzbm-buero/bezirksamtssitzungen/02-07-13/beschluss_265_13.pdf?start&ts=1372853813&file=beschluss_265_13.pdf
-#: last_checked: 2015-12-23
+#: last_checked: 2016-02-25
 #: check_frequency: 120d
 #: priority: #C
 Bergmannstr./Heimstr.: wird hier die Vorfahrtsregelung zugunsten des Radwegs geändert?	? 9880,9233 9973,9232 10001,9234
@@ -1792,7 +1795,7 @@ Alt-Karow: evtl. wird hier ein Schutzstreifen Richtung Süden angelegt	? 15726,23
 # 
 #: next_check_id: SONNENALLEE-2014
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14709&options=8 (beschlossen durch BVV, Realisierung steht noch aus)
-#: last_checked: 2016-02-23 (zurzeit eine Baustellenampel, wird eine permanente Ampel nach den Bauarbeiten aufgestellt?)
+#: last_checked: 2016-02-27 (zurzeit eine Baustellenampel, wird eine permanente Ampel nach den Bauarbeiten aufgestellt?)
 #: check_frequency: 90d
 Sonnenallee/Ziegrastr.: wird hier eine permanente Ampel entstehen?	?::projected 14174,7505
 # 
@@ -1850,7 +1853,7 @@ Kolonnenstr.: werden hier Radstreifen errichtet?	?::projected; 7709,8777 7795,87
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20151113.1355.402692.html
 #: XXX mittlerweile schon als verkehrsberuhigte Zone gekennzeichnet
 #: osm_watch: way id="25396414" version="7"
-#: last_checked: 2016-01-09
+#: last_checked: 2016-02-26
 #: check_frequency: 90d
 Lauterstr.: wird die Straße am Breslauer Platz komplett für Autofahrer/Radfahrer gesperrt?	?::projected 5810,7337 5817,7223
 # 
@@ -2366,6 +2369,8 @@ Björnweg	?::projected 17314,15186 17323,15054
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6406
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036322976038/322976038/00081306/06-Anlagen/02/vzb1096_IV_Benennung_Hanoier_Str.pdf
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/auslegungen/b-planentwurf-xxi-31a-1.pdf
+#: XXX Bebauungsplan XXI-31a-1
 #: XXX fehlt in Berlin.coords.data, genaue Lage?
 #: next_check: 2016-09-01
 Hanoier Str.	?::projected 20730,11462 20723,11374
@@ -2404,6 +2409,20 @@ Weg entlang der Bahnanlagen: evtl. entsteht hier eine Grünanlage mit Wegen	?::pr
 Fuß- und Radweg: geplant	?::projected 18264,4830 18236,4807
 #: next_check ^^^
 # 
+#: by: https://www.potsdam.de/sites/default/files/documents/final_amtsblatt_nr._3_2016_zur_druckfreigabe.pdf
+#: XXX Privatstraße, 14471 Potsdam
+Olympischer Weg (Potsdam): genaue Lage? Qualität? Existiert die Straße schon?	?::projected -15584,-3564 -15589,-3626 -15535,-3619
+# 
+#: by: https://www.potsdam.de/sites/default/files/documents/final_amtsblatt_nr._3_2016_zur_druckfreigabe.pdf vvv
+#: XXX Planstraßen 1 und 2 in 14478 Potsdam vvv
+Sophie-Alberti-Str. (Potsdam):genaue Lage? Qualität? Existiert die Straße schon?	?::projected -10025,-5205 -10002,-5353
+Brunnenallee (Potsdam):genaue Lage? Qualität? Existiert die Straße schon?	?::projected -10002,-5353 -9896,-5219
+#: XXX ^^^
+#: by ^^^
+# 
+#: by: https://www.potsdam.de/sites/default/files/documents/final_amtsblatt_nr._3_2016_zur_druckfreigabe.pdf
+#: XXX Bebauungsplan Nr. 146
+Uferweg (Potsdam): wird es hier Änderungen/Verbesserung geben, z.B. hinsichtlich der Qualität?	?::projected -13375,2950 -13287,2924 -13227,2920 -13194,2909 -13192,2897 -13112,2825 -13076,2703 -12992,2595 -12897,2508 -12819,2465 -12743,2388 -12671,2354 -12637,2348 -12609,2364 -12586,2373 -12460,2288
 #: ignore ^^^
 #: section ^^^
 #
