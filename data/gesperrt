@@ -484,7 +484,7 @@ Enckevortweg	1 18530,10887 18570,10768 18587,10716 18596,10675
 Schulze-Boysen-Str./Frankfurter Allee	1 15597,11957 15592,11881 15710,11857 15738,11851
 Rübezahlstr.	1 15136,7106 15222,7162
 Wegastr	1 15222,7162 15175,7221
-Möllendorffstr.	1 15515,13134 15531,13022 15561,12950 15563,12860 15546,12690
+Möllendorffstr.	1 15515,13134 15531,13022 15561,12950 15563,12870 15546,12690
 Möllendorffstr.	1 15546,12690 15516,12838 15515,13134
 Joachimsthaler Str. (Hohenschönhausen)	1 17117,14885 17129,14804 17063,14797 16943,14785
 Otto-Brahm-Str.	1 14440,15682 14400,15787 14365,15778 14282,15746 14321,15636
@@ -1402,9 +1402,9 @@ Riesaer Str. -> Schönewalder Str.: Straßenbahntrasse	3::igndisp 24870,14244 2493
 Schönewalder Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24974,14355 24930,14225 24983,14208
 Riesaer Str. -> Mittweidaer Str.: Straßenbahntrasse	3::igndisp 25095,14171 24983,14208 24918,14008
 Mittweidaer Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24918,14008 24983,14208 24930,14225
-wegen Überführung nicht überquerbar	3nocross::ignrte 17527,7812 17568,7753 17681,7589 17769,7465 17839,7365 18010,7133
-Mentelinstr. -> Rummelsburger Str.: wegen Überführung nicht überquerbar	3::igndisp 17747,7322 17839,7365 17769,7465
-Rummelsburger Str. -> Mentelinstr.: wegen Überführung nicht überquerbar	3::igndisp 18010,7133 17839,7365 17747,7322
+wegen Überführung nicht überquerbar	3nocross::ignrte 17769,7465 17847,7356 18010,7133
+Mentelinstr. -> Rummelsburger Str.: wegen Überführung nicht überquerbar	3::igndisp 17747,7322 17847,7356 17769,7465
+Rummelsburger Str. -> Mentelinstr.: wegen Überführung nicht überquerbar	3::igndisp 18010,7133 17847,7356 17747,7322
 Mittelstreifen nicht passierbar	3nocross::ignrte 4469,8037 4659,7982 4793,8005
 Detmolder Str. -> Aachener Str.: Mittelstreifen nicht passierbar	3::igndisp 4572,7936 4659,7982 4609,8013
 Aachener Str. -> Detmolder Str.: Mittelstreifen nicht passierbar	3::igndisp 4609,8013 4659,7982 4793,8005

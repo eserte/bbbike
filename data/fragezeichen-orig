@@ -191,7 +191,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14658,14328 14464,14216 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2015-12-26
+#: last_checked: 2016-02-28
 #: check_frequency: 60d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
@@ -936,7 +936,7 @@ Tempelhofer Damm: wird der Radweg Richtung Norden erneuert?	?::projected; 9242,7
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/35re.pdf/file?y=2014
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20141007.1540.399597.html
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2015 (Grundstücksnummerierungen)
-#: last_checked: 2015-12-28 vvv
+#: last_checked: 2016-02-28 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straßenname)
 #: osm_watch: way id="290255259" version="2"
@@ -1199,7 +1199,8 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1508/nachricht5720.html
 #: XXX die Brücke selbst könnte "Mathilde-Rathenau-Brücke" heißen
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5323 (Brückenbenennung)
-#: last_checked: 2015-12-28
+#: XXX an der Rummelsburger Landstr. sind schon einige Meter fertig
+#: last_checked: 2016-02-28
 #: next_check: 2016-12-01
 Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rummelsburger Landstraße und Köpenicker Landstraße	?::inwork 17681,7589 17082,7189 16954,7096 16720,6845
 # 
@@ -1208,6 +1209,7 @@ Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rumm
 #: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/oepnv/treskowallee/Band_1/UL_3_Lageplaene/8BA_T68_P03_PFV-LP02.pdf
 #: XXX laut ersten Plänen wird der nach Norden führende Radweg schon an der Stolzenfelsstr. aufhören
 #: XXX Gestaltung der Ampelanlagen wird sich ebenfalls ändern (Godesberger Str., Ehrenfelsstr., Dönhoffstr.)
+#: last_checked: 2016-02-28
 #: next_check: 2017-03-01
 Treskowallee: Bau von Radwegen	?::projected 18733,8633 18731,8577 18709,8423
 # 
@@ -1758,7 +1760,7 @@ Südpankeweg, Fortsetzung zur Ida-von-Arnim-Str.: wann wird sie gebaut? Qualität?
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/02re.pdf/file?y=2015 ("Anna-Maria-Müller-Str.")
 #: XXX Bebauungsplan 11-35, teilweise verkehrsberuhigt, "Olympiaviertel" vvv
-#: last_checked: 2015-12-26 (nur einige unbefestigte Baustraßen) vvv
+#: last_checked: 2016-02-28 (nur unbefestigte Baustraßen) vvv
 #: check_frequency: 60d vvv
 Helga-Haase-Str.: Planstraße 1, genaue Lage, Qualität?	?::projected 17465,16340 17508,16356 17611,16396 17673,16420 17792,16465
 #: osm_watch: way id="354078625" version="2"
@@ -1773,7 +1775,7 @@ Joachim-Böhmer-Str.: Planstraße 5 (Straßenname --- oder ist das die Erich-Hagen-
 #: osm_watch: way id="354078419" version="1"
 Erich-Hagen-Str.: Planstraße 6 (Straßenname --- oder ist das die Joachim-Böhmer-Str.?), genaue Lage, Qualität?	?::projected 17818,16397 17792,16465 17776,16504 17712,16549 17673,16577
 Anna-Maria-Müller-Str.: Planstraße 7, genaue Lage, Qualität?	?::projected 17712,16549 17753,16604
-(Fußweg zur Gehrenseestr.): genaue Lage, Qualität?	?::projected 17615,16310 17640,16259
+(Fußweg zur Gehrenseestr.): Qualität?	?::projected 17615,16310 17640,16259
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -2359,12 +2361,14 @@ Bebauungsplan 10-77: werden hier neue Straßen entstehen?	?::projected 21483,1652
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6436
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036284949883/284949883/00122677/77-Anlagen/02/Anlage1775.pdf
 #: XXX geplante neue Straßen im Komplex ArendsCarrée, noch nicht bestätigt, fehlen in Berlin.coords.data, genaue Lage? vvv
-#: next_check: 2016-09-01 vvv
+#: last_checked: 2016-02-28 vvv
+#: check_frequency: 360d vvv
 Agnethaweg	?::projected 17221,15181 17245,15182 17314,15186 17336,15187
 Anni-Frid-Weg	?::projected 17234,15053 17258,15053 17323,15054 17346,15055
 Bennyweg	?::projected 17245,15182 17258,15053
 Björnweg	?::projected 17314,15186 17323,15054
-#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 #: XXX ^^^
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6406

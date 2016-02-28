@@ -1606,11 +1606,12 @@ Hebbelstr.: Gehwegpflasterung	Q1- 3117,11852 3251,12025 3258,12035 3295,12068
 Hebbelstr.: Kopfsteinpflaster	Q2 3295,12068 3367,12156
 Am Comeniusplatz: Kopfsteinpflaster	Q2 13275,11830 13406,11896
 Josef-Orlopp-Str.: Asphalt	Q0 15912,13153 16426,13145 16863,13138
+Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1 16852,14412 17254,14451 17533,14484
 #: XXX Asphalt oder Beton?
-Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1 16852,14412 17254,14451 17533,14484 17848,14523 18057,14549
+Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1 17533,14484 17848,14523 18057,14549
 #: note: In Richtung Westen ist der Radweg nicht benutzungspflichtig, allerdings ist die Fahrbahn sehr stark befahren.
 #: XXX Asphalt oder Beton?
-Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1 18057,14549 18183,14573 18365,14607 18410,14614 18558,14680 18798,14808
+Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1 18183,14573 18365,14607 18410,14614 18558,14680 18798,14808
 # 
 #: XXX werden auch die restlichen Radwege demnächst instandgesetzt oder zu Radspuren umgewandelt? vvv
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20120913.1335.375172.html vvv
@@ -2606,7 +2607,7 @@ Firlstr.: Asphalt	Q0 18640,6542 18645,6511 18574,6401 18473,6265
 Lauffener Str.: glattes Pflaster	Q1; 18473,6265 18428,6123
 #: note: bei wenig Verkehr kann man u.U. auf dem glatteren Pflaster auf der linken Seite fahren
 Lauffener Str.: Kopfsteinpflaster	Q2+; 18428,6123 18473,6265
-Mentelinstr.: akzeptables Kopfsteinpflaster	Q1- 17839,7365 17747,7322 17647,7280 17620,7260 17453,7136 17352,7051
+Mentelinstr.: akzeptables Kopfsteinpflaster	Q1- 17847,7356 17747,7322 17647,7280 17620,7260 17453,7136 17352,7051
 Mentelinstr.: Asphalt	Q0 17352,7051
 Stahnsdorfer Str.: Asphalt	Q0 -7821,-1890 -7984,-1899
 Bona-Peiser-Weg: einige Bodenschwellen	Q1 12010,11545 11947,11398
@@ -3583,16 +3584,16 @@ Reglinstr.: Asphalt mit Schäden	Q1 7785,5722 7817,5719
 Jochemplatz: Kopfsteinpflaster	Q2 5351,6109 5367,6054
 Düppelstr. (Steglitz): Asphalt	Q0 5141,5744 5197,5822 5254,5900 5268,5920 5367,6054 5416,6119
 Reinhardsbrunner Str.: Asphalt	Q0 16681,14044 16881,14063
-Heldburger Str.: Asphalt	Q0 17247,14581 17389,14599 17514,14613 17629,14627
+Heldburger Str.: Asphalt	Q0 17249,14575 17392,14591 17517,14606 17629,14627
 Sollstedter Str.: Asphalt	Q0 17242,14664 17377,14678 17507,14693 17600,14713
 Hofheimer Str.: Asphalt	Q0 17579,14777 17600,14713
 Plauener Str. [zur Küllstedter Str.]: Asphalt	Q0 17340,14898 17352,14827
 (Plauener Str. - Küllstedter Str.): Gehwegplatten, Kleinkopfsteinpflaster	Q1 17352,14827 17363,14760
-Küllstedter Str.: Asphalt	Q0 17363,14760 17377,14678 17389,14599 17400,14511
+Küllstedter Str.: Asphalt	Q0 17363,14760 17377,14678 17392,14591 17400,14511
 Joachimsthaler Str. (Alt-Hohenschönhausen): Asphalt	Q0 16918,14901 16943,14785 17063,14797
 Joachimsthaler Str. (Alt-Hohenschönhausen): Beton	Q1 17063,14797 17129,14804 17117,14885
-Schleizer Str.: Verbundsteinpflaster	Q1 16799,15007 17240,14978
-Schleizer Str.: Asphalt	Q0 17240,14978 17613,15003
+Schleizer Str.: Verbundsteinpflaster	Q1 16799,15007 17231,14979
+Schleizer Str.: Asphalt	Q0 17231,14979 17613,15003
 Lichtenauer Str.: Verbundsteinpflaster	Q1 16835,15188 17062,15184
 Lichtenauer Str.: Beton	Q1 17062,15184 17221,15181
 Lindenweg (Alt-Hohenschönhausen): Asphalt	Q0- 16251,15629 16297,15737 16360,15889
@@ -15043,7 +15044,7 @@ Dammsmühler Str.: asphaltiert	Q0 10140,21107 9897,21035 9620,20952
 Emma-Ihrer-Str.: asphaltiert	Q0 15496,10277 15513,10298 15550,10361 15583,10399 15623,10449 15639,10469
 # 
 #: by: jörg (schalkau):
-Schalkauer Str.: guter Asphalt	Q0 17475,14912 17507,14693 17514,14613 17533,14484
+Schalkauer Str.: guter Asphalt	Q0 17475,14912 17507,14693 17517,14606 17526,14531 17533,14484
 # 
 #: by: peter (ph2607): vvv
 #: confirmed_by: srt
@@ -20641,7 +20642,7 @@ Pirmasenser Str.: mäßiger Asphalt	Q1- -4442,15675 -4568,15708 -4639,15726
 # 
 #: by: diana (no email):
 #: note: "enge Straße", aber q0
-Lössauer Str.: guter Asphalt	Q0 16816,15092 17230,15083
+Lössauer Str.: guter Asphalt	Q0 16816,15092 17226,15083
 # 
 #: by: Jessica (prusseit):
 Ingridpfad: guter Asphalt	Q0 6182,2737 6304,2825 6359,2875
@@ -22576,7 +22577,7 @@ Alter Radelander Weg: fester Sandweg im Wald, lässt sich gut befahren, im Winter
 #: confirmed_by: srt
 Rabindranath-Tagore-Str.: Asphalt, teilweise brüchig, trotzdem gut befahrbar	Q0- 23252,792 23469,640 23540,591 23457,35
 #: note: "besonders an der Ecke Straße 133"
-Straße 109: sehr schlechter Asphalt, viele Schlaglöcher, teilweise guckt Kopfsteinpflaster hervor	Q2- 17342,15386 17435,15379 17533,15363 17588,15355
+Straße 109: sehr schlechter Asphalt, viele Schlaglöcher, teilweise guckt Kopfsteinpflaster hervor	Q2- 17342,15386 17434,15379 17533,15363 17588,15355
 #: note: "sehr schmale Straße"
 #: confirmed_by: srt
 Straße 133 (Alt-Hohenschönhausen): guter Asphalt	Q0 17588,15355 17762,14993

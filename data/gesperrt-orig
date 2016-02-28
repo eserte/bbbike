@@ -186,7 +186,7 @@ Anzengruberstr.	1 12865,8346 12689,8289
 #: XXX Nalepastr. wird in Zukunft wieder geöffnet (Sackgasse für Autos, Durchfahrtmöglichkeit für Radfahrer)
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00081950/50-Anlagen/01/DRS0182VB.pdf (Pläne)
 #: osm_watch: way id="24869862" version="12"
-#: last_checked: 2015-07-22
+#: last_checked: 2016-02-28
 #: check_frequency: 180d
 Nalepastr. am Rundfunkgebäude	2 17065,8396 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
@@ -668,7 +668,7 @@ Enckevortweg	1 18530,10887 18570,10768 18587,10716 18596,10675
 Schulze-Boysen-Str./Frankfurter Allee	1 15597,11957 15592,11881 15710,11857 15738,11851
 Rübezahlstr.	1 15136,7106 15222,7162
 Wegastr	1 15222,7162 15175,7221
-Möllendorffstr.	1 15515,13134 15531,13022 15561,12950 15563,12860 15546,12690
+Möllendorffstr.	1 15515,13134 15531,13022 15561,12950 15563,12870 15546,12690
 Möllendorffstr.	1 15546,12690 15516,12838 15515,13134
 Joachimsthaler Str. (Hohenschönhausen)	1 17117,14885 17129,14804 17063,14797 16943,14785
 Otto-Brahm-Str.	1 14440,15682 14400,15787 14365,15778 14282,15746 14321,15636
@@ -1513,7 +1513,8 @@ Riesaer Str.: Straßenbahntrasse	3nocross 24120,14526 24097,14575 24030,14717
 #: note: Luftbild:
 Riesaer Str.: Straßenbahntrasse	3nocross 24198,14454 24162,14487 24120,14526
 Riesaer Str.: Straßenbahntrasse	3nocross 24721,14293 24870,14244 24930,14225 24983,14208 25095,14171
-Rummelsburger Str.: wegen Überführung nicht überquerbar	3nocross 17527,7812 17568,7753 17681,7589 17769,7465 17839,7365 18010,7133
+# REMOVED --- Rummelsburger Str.: wegen Überführung nicht überquerbar	3nocross 17527,7812 17568,7753 17681,7589 17769,7465
+Rummelsburger Str.: wegen Überführung nicht überquerbar	3nocross 17769,7465 17847,7356 18010,7133
 Detmolder Str.: Mittelstreifen nicht passierbar	3nocross 4469,8037 4659,7982 4793,8005
 Rhinstr.: Straßenbahntrasse	3nocross 18215,12123 18216,12239 18216,12262 18220,12450
 Rhinstr.: Straßenbahntrasse	3nocross 18181,14110 18184,14078 18187,14039 18198,13816
@@ -2714,14 +2715,14 @@ Theodorstr.: Bauarbeiten, gesperrt	2::inwork 24897,11083 24905,10955 24913,10884
 #: next_check: 2015-11-02 (public)
 Pfarrhufenanger: noch in Bau, gesperrt	2::inwork 25599,13069 25441,12838 25266,12622
 # 
-# REMOVED (Schild ist noch da, allerdings kann man hier fahren, wenn man muss) --- #: osm_watch: way id="24686030" version="4" --- #: last_checked: 2015-09-23 --- Am Gutspark: Bauarbeiten	2::inwork 15747,12880 15746,12967 15826,12971
+# REMOVED --- #: osm_watch: way id="24686030" version="4" --- #: last_checked: 2015-09-23 --- Am Gutspark: Bauarbeiten	2::inwork 15747,12880 15746,12967 15826,12971
 # 
 #: XXX Ende der Bauarbeiten?
 # REMOVED (als es noch in handicap_s-orig war) --- : XXX_prog: zu eng für Anhänger
 #: last_checked: 2016-02-05
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076 9559,13087
 # 
-#: last_checked: 2015-12-28 vvv
+#: last_checked: 2016-02-28 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- Grenzweg: wegen Straßenbau gesperrt, ggfs. dauerhaft	2::inwork 17219,7268 17295,7330 17445,7434
 Schwarzer Weg: wegen Straßenbau gesperrt	2::inwork 17295,7323 17295,7330 17296,7396
@@ -2833,7 +2834,7 @@ Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081
 #: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/strassen_kfz/SOV-Beschluss-27022012.pdf
 #: XXX hier wird es für Autofahrer dauerhaft keine Zufahrt zur Minna-Todenhagen-Str. geben, aber vielleicht wird es für Radfahrer/Fußgänger einen Zugang geben?
 #: source_id: 2147339538
-#: last_checked: 2015-12-28
+#: last_checked: 2016-02-28
 #: check_frequency: 120d
 Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, ggfs. dauerhaft	2::inwork 17670,7512 17681,7589
 # 
@@ -2887,12 +2888,12 @@ Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::
 # REMOVED --- #: XXX hier steht noch ein Bauzaun --- #: last_checked: 2014-09-21 --- Viechtacher Str.: Bauarbeiten, Zufahrt zur Zwieseler Str. noch gesperrt	2::inwork 19657,9666 19727,9672
 # 
 #: osm_watch: way id="24845189" version="12"
-#: last_checked: 2015-12-28
+#: last_checked: 2016-02-28
 #: check_frequency: 60d
 Viechtacher Str.: Straße fertig, aber noch gesperrt	2::inwork 19801,9680 19871,9680 19923,9682
 # REMOVED (offen) --- Eisensteiner Str.: Bauarbeiten, Straße noch gesperrt	2::inwork 19727,9672 19722,9483
 # 
-#: last_checked: 2015-12-28 vvv
+#: last_checked: 2016-02-28 vvv
 #: check_frequency: 60d vvv
 #: XXX man kann aber über die provisorische Baustraße von Süden aus in die gesperrten Straßen gelangen
 #: osm_watch: way id="287119368" version="8"

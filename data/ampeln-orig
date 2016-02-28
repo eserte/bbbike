@@ -181,7 +181,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 12497,11459
 	X 15361,12071
 #: XXX_prog: zusammenhängende Ampelanlage vvv
-	X 15563,12860
+#: note: Anforderung für Radfahrer aus der Bornitzstr.
+	X 15563,12870
 	X 15516,12838
 #: XXX_prog: ^^^
 	F 15367,12815
@@ -2766,10 +2767,10 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: Anforderungsampel
 	F 7563,13143
 #: note: Anforderungsampel vvv
-#: XXX_prog eigentlich nur für Radfahrer Richtung Südosten relevant vvv
+#: XXX_prog eigentlich nur für Radfahrer Richtung Nordwesten relevant vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
 #: source_id: IM_023548 (bis Ende April 2016) vvv
-#: last_checked: 2015-12-28 vvv
+#: last_checked: 2016-02-28 vvv
 #: check_frequency: 120d vvv
 	F 17568,7753
 	F 17769,7465
