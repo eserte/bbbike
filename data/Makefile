@@ -1805,8 +1805,7 @@ ${PERSISTENTTMPDIR}/crossings_gewaesser_ignore.bbd:	\
 check-urls: ${PERSISTENTTMPDIR}/url_checks.log
 
 ${PERSISTENTTMPDIR}/url_checks.log:	comments_route-orig comments_ferry-orig
-	${PERL} ${MISCSRCDIR}/url_checker.pl -v -log ${PERSISTENTTMPDIR}/url_checks.log~ $>
-	mv ${PERSISTENTTMPDIR}/url_checks.log~ ${PERSISTENTTMPDIR}/url_checks.log
+	${PERL} ${MISCSRCDIR}/url_checker.pl -v -log ${PERSISTENTTMPDIR}/url_checks.log $>
 
 ######################################################################
 # Checks for unhandled streets

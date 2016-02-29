@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2014,2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -27,7 +27,7 @@ sub usage () {
     die "usage: $0 [-frequency days] [-n] [-v] -log file bbdfile ...";
 }
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 my $check_frequency = 30; # days
 my $log_file;
@@ -58,8 +58,8 @@ if (open my $fh, "+<", $log_file) {
 
 my $ofh;
 if (!$dry_run) {
-    open $ofh, ">>", $log_file
-	or die "Cannot write to file $log_file: $!";
+    open $ofh, ">>", "$log_file~"
+	or die "Cannot write to file $log_file~: $!";
 }
 
 my $ua = LWP::UserAgent->new;
@@ -105,7 +105,9 @@ for my $file (@files) {
 
 if ($ofh) {
     close $ofh
-	or die "Error while closing $log_file: $!";
+	or die "Error while closing $log_file~: $!";
+    rename "$log_file~", $log_file
+	or die "Error while renaming $log_file~ to $log_file: $!";
 }
 
 if (@errors) {
