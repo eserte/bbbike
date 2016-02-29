@@ -24855,4 +24855,14 @@ userdel auto	3 5600,11114 5542,11075 5565,11147
 userdel auto	3 5565,11147 5542,11075 5600,11114
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Robert-Lück-Str.: Fahrbahn zwischen Albrechtstr. und Bergstr. gesperrt ',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX wann werden die Bauarbeiten beendet?
+#: next_check: 2016-03-29
+userdel	q4::inwork 5223,5704 5115,5551 5076,5500
+EOF
+     },
     );

@@ -1968,6 +1968,38 @@ userdel	2::inwork -1298,2017 -1082,2140
          'text' => 'Uckerland: B104: Brückenneubau zwischen Milow und Wilsickow, Straße gesperrt, 12.10.2015 08:00 Uhr bis 30.09.2016 ',
          'type' => 'gesperrt',
          'until' => 1475272800
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       {
+         'data' => '#: XXX wann werden die Bauarbeiten beendet?
+#: next_check: 2016-03-29
+userdel	q4::inwork 5223,5704 5115,5551 5076,5500
+',
+         'from' => undef,
+         'id' => 2770,
+         'text' => 'Robert-Lück-Str.: Fahrbahn zwischen Albrechtstr. und Bergstr. gesperrt ',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
