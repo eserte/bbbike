@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2013,2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -35,6 +35,7 @@ use StrassenNextCheck;
 use constant ORG_MODE_HEADLINE_LENGTH => 77; # used for tag alignment
 
 my $with_dist = 1;
+my $max_dist_km;
 my $dist_dbfile;
 my $centerc;
 my $center2c;
@@ -44,6 +45,7 @@ my $with_nextcheckless_records = 1;
 my $debug;
 GetOptions(
 	   "with-dist!" => \$with_dist,
+	   'max-dist=f' => \$max_dist_km,
 	   "dist-dbfile=s" => \$dist_dbfile,
 	   "centerc=s" => \$centerc,
 	   "center2c=s" => \$center2c,
@@ -52,7 +54,7 @@ GetOptions(
 	   "with-nextcheckless-records!" => \$with_nextcheckless_records,
 	   "debug" => \$debug,
 	  )
-    or die "usage: $0 [--nowith-dist] [--dist-dbfile dist.db] [--centerc X,Y [--center2c X,Y]] [--plan-dir directory] [--with-searches-weight] [--nowith-nextcheckless-records] bbdfile ...";
+    or die "usage: $0 [--nowith-dist] [--max-dist km] [--dist-dbfile dist.db] [--centerc X,Y [--center2c X,Y]] [--plan-dir directory] [--with-searches-weight] [--nowith-nextcheckless-records] bbdfile ...";
 
 # --with-dist requires one or two reference positions. Use from
 # cmdline arguments, or look into the user's bbbike config.
@@ -366,7 +368,14 @@ my @all_records_by_date = sort {
 my $today = strftime "%Y-%m-%d", localtime;
 
 my @expired_sort_by_dist_records;
+my $cropped_because_of_max_dist;
 if ($centerc) {
+    if (defined $max_dist_km) {
+	@expired_sort_by_dist_records = grep { defined $_->{dist} && $_->{dist}/1000 <= $max_dist_km } @records;
+	$cropped_because_of_max_dist = 1;
+    } else {
+	@expired_sort_by_dist_records = @records;
+    }
     @expired_sort_by_dist_records = sort {
 	my $cmp = 0;
 	if (defined $a->{dist} && defined $b->{dist}) {
@@ -378,7 +387,7 @@ if ($centerc) {
 	} else {
 	    return 0;
 	}
-    } grep { !defined $_->{date} || $_->{date} le $today } @records;
+    } grep { !defined $_->{date} || $_->{date} le $today } @expired_sort_by_dist_records;
 }
 
 my @expired_searches_weight_records;
@@ -453,6 +462,9 @@ if (@expired_sort_by_dist_records) {
     print "* expired " . ($with_nextcheckless_records ? "and open " : "") . "records, sort by dist\n";
     for my $expired_record (@expired_sort_by_dist_records) {
 	print $expired_record->{body};
+    }
+    if ($cropped_because_of_max_dist) {
+	print "** ...cropped because of --max-dist=$max_dist_km...\n";
     }
 }
 
@@ -618,6 +630,12 @@ fragezeichen record.
 =item C<--nowith-dist>
 
 Disable the generation of distance tags.
+
+=item C<--max-dist I<kilometers>>
+
+In the "expired and open records, sort by dist" section, show only
+entries up to the given maximum distance. If not given, show all
+entries.
 
 =item C<--dist-dbfile >I</path/to/dist.db>
 
