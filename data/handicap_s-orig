@@ -21,7 +21,7 @@ Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,112
 # REMOVED --- Haasestr.: Einbahnstraße wegen Bauarbeiten	q4::inwork; 14328,11320 14286,11186
 #: last_checked ^^^
 # 
-#: last_checked: 2016-02-29
+#: last_checked: 2016-03-01
 #: check_frequency: 7d
 Revaler Str.: Bauarbeiten an der Kreuzung Warschauer Str.	q3::inwork 13588,11490 13711,11458
 # 
@@ -33,7 +33,7 @@ Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3:
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2016-02-29
+#: last_checked: 2016-03-01
 Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
 # 
 #: last_checked: 2016-02-15
@@ -276,7 +276,7 @@ Dieselstr., Umfahrung: Fußgänger, kurvig, eng	q2-::inwork 14326,8062 14344,8072 
 #: XXX laut fritz bis 2015-12-31, mittlerweile verlängert bis Juli 2017 (!)
 #: source_id: IM_022515
 #: source_id: 2147338550
-#: last_checked: 2016-02-03
+#: last_checked: 2016-03-01
 #: check_frequency: 60d
 Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung Süden auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12898,7832 12914,7785 12969,7610
 # REMOVED (fertig) --- Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung Süden auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12969,7610 12991,7549 12992,7545 13015,7471 13018,7441
@@ -350,6 +350,7 @@ Prenzlauer Promenade: Engstelle, Fußgänger und entgegenkommende Radfahrer	q2::in
 #: XXX Radfahrer können weiterhin passieren, zunächst über den nördlichen Gehweg, später über eine Behelfsbrücke (Breite 2,50m)
 #: XXX nach den Bauarbeiten (bis 2016-08?) wird es hier Radspuren geben
 #: XXX laut rbbtext bis 31.03.2016
+#: XXX laut vmz bis Ende September 2016, laut fritz bis 15.09.2016
 #: source_id: IM_024857
 #: source_id: 2147339545
 #: osm_watch: way id="25795962" version="14" 

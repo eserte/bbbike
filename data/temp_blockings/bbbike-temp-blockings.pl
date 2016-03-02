@@ -24527,14 +24527,12 @@ userdel	q4::inwork; -6861,15129 -6507,15007
 EOF
      },
      { from  => 1442700000, # 2015-09-20 00:00
-       until => undef, # XXX
+       until => 1456863971, # undef, # XXX
        text  => 'Königsweg: Bauarbeiten zwischen Lindenthaler Allee und Clauertstr., zeitweilige Sperrungen möglich',
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.364590.php',
        data  => <<EOF,
-#: XXX Bis wann sind die Bauarbeiten fertig?
-#: last_checked: 2015-12-05
-#: check_frequency: 30d
+# REMOVED (laut osm fertig) --- #: XXX Bis wann sind die Bauarbeiten fertig? --- #: last_checked: 2015-12-05 --- #: check_frequency: 30d
 userdel	2::inwork -1298,2017 -1082,2140
 # REMOVED (weitgehend fertig) --- userdel	2::inwork -1591,1861 -1650,1826 -1724,1785 -1805,1740 -1889,1693 -1950,1659 -2043,1608 -2602,1291
 EOF

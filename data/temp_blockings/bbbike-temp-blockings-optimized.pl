@@ -795,7 +795,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Februar von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im März von 6.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -1843,16 +1843,7 @@ userdel	q4::inwork; 3807,11859 3666,11855
        },
        undef,
        undef,
-       {
-         'data' => 'userdel	2::inwork 39384,115027 39168,114713 38881,113150
-',
-         'from' => 1432706400,
-         'id' => 2706,
-         'source_id' => 'LS/721-E/15/036',
-         'text' => 'L258: Brückenneubau bei Trebenow (Brücke über den Köhntop), Vollsperrung ab 28.05.15 bis 01.03.2016 ',
-         'type' => 'gesperrt',
-         'until' => 1456873200
-       },
+       undef,
        undef,
        undef,
        {
@@ -1939,20 +1930,7 @@ userdel	q4::inwork; -6861,15129 -6507,15007
          'type' => 'handicap',
          'until' => 1483225199
        },
-       {
-         'data' => '#: XXX Bis wann sind die Bauarbeiten fertig?
-#: last_checked: 2015-12-05
-#: check_frequency: 30d
-userdel	2::inwork -1298,2017 -1082,2140
-# REMOVED (weitgehend fertig) --- userdel	2::inwork -1591,1861 -1650,1826 -1724,1785 -1805,1740 -1889,1693 -1950,1659 -2043,1608 -2602,1291
-',
-         'from' => 1442700000,
-         'id' => 2741,
-         'source_id' => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.364590.php',
-         'text' => 'Königsweg: Bauarbeiten zwischen Lindenthaler Allee und Clauertstr., zeitweilige Sperrungen möglich',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
