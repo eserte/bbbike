@@ -94,7 +94,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
 #: XXX Baumaßnahme 2.28 (Realisierung nach 2011) 
-#: last_checked: 2016-01-28
+#: last_checked: 2016-03-02
 #: check_frequency: 90d
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
@@ -104,7 +104,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6183 (Baubeginn erst 2015)
 #: XXX Baubeginn des ersten Abschnitts: 3. Quartal 2014
-#: last_checked: 2016-01-28
+#: last_checked: 2016-03-02
 #: check_frequency: 60d
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -1342,6 +1342,11 @@ Brunsbütteler Damm: Radweg wird asphaltiert	?::projected; -4290,14025 -4759,1399
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX dieses Jahr (2016) vom 20.05.2016 bis zum 12.06.2016
+#: next_check: 2016-05-19
+#: priority: #A
+Steglitzer Festwoche im Bäkepark: gibt es während der Festwoche Einschränkungen für Radfahrer? Wenn ja, wo genau?	? 4742,4885 4760,4843 4795,4801 4848,4668 4870,4609 4957,4448 5015,4339 5090,4291 5129,4262 5246,4240 5320,4217 5337,4192
+# 
 #: by: fritz
 #: source_id: 2147339783
 Sellerstr.: Bauarbeiten zwischen Nordhafen und Müllerstr., gibt es für Radfahrer Einschränkungen?	? 7741,14560 8057,14876
@@ -1360,8 +1365,7 @@ Mehlbeerenweg: Teilstück wird eingezogen	? 11940,11982 11923,11881
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/auslegungen/b-planentwurf-xxi-4-blatt-3.pdf
 Schkopauer Ring oder Clara-Immerwahr-Str.: wie ist der richtige Straßenname hier?	? 19914,17203 19845,17235
 # 
-#: priority: #A
-(Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): kann man hier noch durchfahren? Oder geht es wegen der Brückenteile nicht mehr?	? 8276,10079 8289,9988
+# REMOVED (keine Behinderungen) --- #: priority: #A --- (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): kann man hier noch durchfahren? Oder geht es wegen der Brückenteile nicht mehr?	? 8276,10079 8289,9988
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2016
 #: XXX Ausschilderung vor Ort?

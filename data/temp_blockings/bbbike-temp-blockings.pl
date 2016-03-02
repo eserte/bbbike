@@ -32,11 +32,11 @@ my $isodate2epoch = sub {
        text  => "Gesperrte Straßen am 28.5. zwischen 14 Und 24 Uhr während des Kirchentages (im Bereich Pariser Platz - Unter den Linden - Friedrichstr. - Gendarmenmarkt)",
        type  => "handicap",
      },
-     { from  => $isodate2epoch->("2015-05-21 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-05-25 23:59:59"),
+     { from  => $isodate2epoch->("2016-05-12 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-05-16 23:59:59"),
        periodic => 1,
        recurrences => [['easter', 47]], # zwei Tage vor Pfingsten
-       text  => 'Straßenfest rund um den Blücherplatz, 22.5.2015 bis 25.5.2015',
+       text  => 'Straßenfest rund um den Blücherplatz, 13.5.2016 bis 16.5.2016',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.berlin.de/tickets/suche/detail.php?id=810735
@@ -56,12 +56,12 @@ userdel	3 9922,10010 9827,10051 9837,9856
 userdel	3 9837,9856 9827,10051 9922,10010
 EOF
      },
-     { from  => $isodate2epoch->("2015-05-23 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-05-24 23:59:59"),
+     { from  => $isodate2epoch->("2016-05-14 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-05-15 23:59:59"),
        periodic => 1,
        recurrences => [['easter', 49]], # Pfingstsonntag
        source_id => 'http://www.karneval-berlin.de/de/',
-       text  => 'Karneval der Kulturen, 24.5.2015',
+       text  => 'Karneval der Kulturen, 15.05.2016',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670 9243,9696 9044,9753
@@ -14038,11 +14038,11 @@ EOF
 userdel	q4::inwork 9098,42254 9043,42165 9032,42153
 EOF
      },
-     { from  => $isodate2epoch->("2015-05-08 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-05-10 23:59:59"),
+     { from  => $isodate2epoch->("2016-05-27 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-05-29 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 9, months => 5]],
-       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (09. und 10. Mai 2015)',
+       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (28. und 29. Mai 2016)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.family-and-friends-ev.de/2.html
@@ -22792,13 +22792,13 @@ EOF
 userdel	2::inwork 48229,74776 48296,74641
 EOF
      },
-     { from  => $isodate2epoch->("2015-04-28 00:00:00"), # 1398636000, # 2014-04-28 00:00
-       until => $isodate2epoch->("2015-05-02 02:00:00"), # 1398988800, # 2014-05-02 02:00
+     { from  => $isodate2epoch->("2016-04-28 00:00:00"), # 1398636000, # 2014-04-28 00:00
+       until => $isodate2epoch->("2016-05-02 02:00:00"), # 1398988800, # 2014-05-02 02:00
        periodic => 1,
        recurrences => [['yearly', days => 30, months => 4]],
-       text  => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung und Kinderfest des DGB), am 1. Mai 2015',
+       text  => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung und Kinderfest des DGB), am 1. Mai 2016',
        type  => 'gesperrt',
-       source_id => 'http://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html',
+       source_id => 'http://www.berlin.de/tickets/suche/detail.php?id=1240577',
        data  => <<EOF,
 userdel	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
 userdel	2::inwork 8573,12325 8540,12420
