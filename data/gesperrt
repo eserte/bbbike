@@ -2508,6 +2508,7 @@ Drängelgitter, kann umfahren werden	BNP:3:-152:trailer=10 14969,10138
 Schwingtor	BNP:3:-252:trailer=10 14146,12921
 Schwingtor	BNP:5:-2:trailer=10 17490,13133
 Schwingtor	BNP:5:-94:trailer=10 17684,13133
+Schwingtor	BNP:5:-255:trailer=10 8369,13465
 Schranke	BNP:3:-36:trailer=10 8623,13049
 Drängelgitter	BNP:3:-216:trailer=10 18788,27989
 Schranke	BNP:3:-228:trailer=10 -2162,17924
@@ -2794,8 +2795,7 @@ Drängelgitter	BNP:3:-240 31665,48997
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,9200 12548,9167
 Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7703,14582 7527,14684
 Treptower Park: Bauarbeiten, Weg noch nicht fertiggestellt	2::inwork 14318,9688 14443,9731
-Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14460,9814 14483,9843 14500,9856
-Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14575,9648 14604,9674
+Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14361,9772 14436,9784 14460,9814 14483,9843 14500,9856
 Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14448,9922 14460,9871 14483,9843
 Clara-Immerwahr-Str.: Bauzäune	2::inwork 19202,17471 19546,17351 19798,17263 19845,17235 19914,17203
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
@@ -2842,12 +2842,9 @@ BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 am Osthafen: durch Barriere versperrt	2::inwork 14259,10309 14463,10212
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Durchfahrt verboten	2 8251,14337 8442,14456
 Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10008,12274 9994,12368
+Niederlagstr.: Bauarbeiten, keine Zufahrt von Unter den Linden möglich	2::inwork 9943,12364 9934,12420
 Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s 9996,12401 9994,12368 9943,12364
-Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1::inwork 9943,12364 9934,12420
 Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,6895 14153,6795
-tragen (2 Stufen)	0:5:57 8818,13365
-wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::ignrte 9984,12426 9934,12420 9858,12410
-Unter den Linden -> Niederlagstr.: wegen Bauarbeiten ist das Überqueren nicht möglich	3::igndisp 9984,12426 9934,12420 9943,12364
 An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8833,13440 8846,13412 8835,13376 8818,13365 8808,13377 8764,13372 8665,13353
 Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?) gesperrt	2:inwork -11407,-1086 -11460,-1098 -11538,-1138 -11615,-1094
 Nordufer: Neubau	2:inwork 7427,14648 7212,14738

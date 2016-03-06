@@ -709,7 +709,7 @@ Karl-Heinrich-Ulrichs-Str.	H 7033,10396 7003,10513 6985,10597 6972,10665
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20131018.0910.390488.html (Verschiebung?)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2013 (Verschiebung, kein neuer Termin)
 #: osm_watch: way id="150519560" version="6"
-#: last_checked: 2015-12-04
+#: last_checked: 2016-03-03
 #: check_frequency: 150d
 #: priority: #A
 Einemstr.	H 6972,10665 6929,10852
@@ -1213,6 +1213,7 @@ Schadowstr.	N 9028,12307 9016,12416 9007,12499
 (Marx-Engels-Forum)	NN 10300,12587 10355,12551 10411,12471 10422,12395
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6643
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/33re.pdf/file?y=2015
+#: note: blaue Zierstraﬂenschilder seit Februar 2016
 Vera-Brittain-Ufer	NN 10300,12587 10249,12658 10219,12701 10166,12777
 #: note: auf dem Straﬂenschild steht ebenfalls "St. Wolfgang-Str."
 St. Wolfgang-Str.	NN 10219,12701 10285,12744 10360,12793
@@ -1460,7 +1461,7 @@ Heidestr. (Moabit)	H 7597,14417 7373,14566
 #: note: Privatstraﬂe
 Jean-Monnet-Str.	N 7995,13537 8048,13578
 Luisenstr. (Mitte)	H 8619,13689 8626,13641 8634,13588 8648,13498 8665,13353 8701,13058 8711,12986 8715,12956 8726,12861 8732,12804 8737,12757 8752,12647 8754,12622 8756,12608 8760,12585
-Hannoversche Str.	H 9212,13471 9047,13446 8892,13498 8824,13569 8775,13606
+Hannoversche Str.	H 9212,13471 9047,13446 8892,13498 8853,13539 8824,13569 8775,13606
 Hannoversche Str.	N 8775,13606 8674,13593 8634,13588 8601,13584 8548,13577
 Chausseestr. (Mitte, Wedding, Gesundbrunnen)	H 9212,13471 9207,13493 9094,13641 9042,13707 8935,13844 8870,13926 8831,13973 8732,14098 8654,14194 8607,14253 8527,14352 8442,14456 8406,14507 8346,14576 8286,14635 8246,14675 8232,14689 8153,14769
 Reinhardtstr. (Mitte)	NH 9262,13111 9118,13070 9001,13039 8985,13034 8715,12956 8693,12951 8559,12912 8503,12895
@@ -8827,7 +8828,9 @@ Straﬂe 42 (Blankenburg)	N 14559,20889 14751,20876
 Straﬂe 24	N 14538,20819 14484,20832
 Straﬂe 27	N 14747,21472 14617,21490 14541,21360 14509,21337
 Straﬂe 26	N 14977,21194 14771,21253 14684,21284 14509,21337
-#: XXX_osm bei osm falsch (Mittelstr. statt Str. 46)?
+#: XXX Benennungsabsicht: Marie-Gr¸nberg-Str."
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4204
+#: next_check: 2016-05-01
 Straﬂe 46 (Blankenburg)	N 14482,20547 14685,20504
 Mittelstr. (Blankenburg)	N 13912,20650 14320,20580 14482,20547
 Treseburger Str. (Blankenburg)	N 14509,21337 14461,21372 14304,21399 14157,21442 14069,21471 13978,21496 13884,21524
@@ -16329,7 +16332,7 @@ Platz vor dem Neuen Tor	N 8668,13645 8626,13641
 Platz vor dem Neuen Tor	N 8601,13584 8590,13653
 Platz vor dem Neuen Tor	NN 8590,13653 8588,13673
 (Virchowweg - Alexanderufer)	NN 8371,13399 8356,13404
-(Virchowweg - Alexanderufer)	NN 8377,13463 8362,13466
+(Virchowweg - Alexanderufer)	NN 8377,13463 8369,13465 8362,13466
 Virchowweg	N 8548,13577 8503,13553 8377,13463 8371,13399 8434,13310 8603,13076 8623,13049 8632,13037
 Hufelandweg	N 8503,13553 8554,13476 8504,13441 8538,13388 8582,13355 8618,13306 8630,13172 8632,13133 8603,13076
 Rahel-Hirsch-Weg	NN 8582,13355 8595,13375 8587,13436 8586,13440

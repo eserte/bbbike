@@ -2240,6 +2240,8 @@ Schwingtor	BNP:3::trailer=10 14146,12921
 #: note: am 2013-08-15 war das Tor offen, am 2013-08-21 gegen 10 Uhr ebenso, am 2013-09-14 mittags geschlossen, am 2014-08-08 mittags offen, am 2015-02-14 mittags geschlossen
 Schwingtor	BNP:5::trailer=10 17490,13133
 Schwingtor	BNP:5::trailer=10 17684,13133
+#: note: am 2016-03-03 morgens war das Tor offen, ansonsten habe ich es nie vorher geschlossen gesehen (allerdings bin ich meistens nur abends vorbei)
+Schwingtor	BNP:5::trailer=10 8369,13465
 Schranke	BNP:3::trailer=10 8623,13049
 Drängelgitter	BNP:3::trailer=10 18788,27989
 Schranke	BNP:3::trailer=10 -2162,17924
@@ -2646,7 +2648,7 @@ Drängelgitter	BNP:3 31665,48997
 # 
 #: XXX Bauarbeiten (Erweiterung des Rütli-Campus?)
 #: XXX Wann sind die Bauarbeiten beendet?
-#: last_checked: 2016-02-23
+#: last_checked: 2016-03-04
 #: check_frequency: 60d
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,9200 12548,9167
 # 
@@ -2655,11 +2657,11 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,
 #: last_checked: 2016-02-05
 Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7703,14582 7527,14684
 # 
-#: last_checked: 2016-03-01 vvv
+#: last_checked: 2016-03-04 vvv
 Treptower Park: Bauarbeiten, Weg noch nicht fertiggestellt	2::inwork 14318,9688 14443,9731
 # REMOVED --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14361,9772 14436,9784
-Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14460,9814 14483,9843 14500,9856
-Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14575,9648 14604,9674
+Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14361,9772 14436,9784 14460,9814 14483,9843 14500,9856
+# REMOVED --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14575,9648 14604,9674
 #: XXX evtl. kann man hier als Fußgänger irgendwie vorbei
 #: check_frequency: 7d
 Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14448,9922 14460,9871 14483,9843
@@ -2756,7 +2758,7 @@ Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,1
 # REMOVED --- #: next_check_id: GREIFENHAGENER-2015 --- #: last_checked: 2015-06-30 --- #: check_frequency: 30d --- Greifenhagener Str.: Bauarbeiten, Einbahnstraße	1s:q2 11086,15772 11123,15851
 # 
 #: XXX vermutlich werden diese Abschnitte dauerhaft aufgegeben werden
-#: last_checked: 2016-02-27
+#: last_checked: 2016-03-05
 #: check_frequency: 60d
 Matthesstr., Beermannstr.: wegen Autobahnbaustelle gesperrt	2::inwork 14119,9368 14157,9345 14162,9381 14172,9457
 # 
@@ -2817,9 +2819,9 @@ Uferstr. (Niederschöneweide): abgesperrt	2::inwork 17639,6227 17843,6083
 #: XXX siehe auch aufgehobene Einbahnstraßenregelungen weiter oben vvv
 #: source_id: IM_023816 vvv
 #: source_id: 2147339541 vvv
-#: XXX vermutlich bis März 2016 andauernd, laut Schild bis Februar 2016
+#: XXX vermutlich bis März 2016 andauernd, laut Schild bis Februar 2016, laut fritz bis 29.04.2016
 #: last_checked: 2016-03-02 vvv
-#: check_frequency: 14d vvv
+#: check_frequency: 30d vvv
 Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081
 Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081
 #: check_frequency ^^^
@@ -2916,7 +2918,7 @@ Teisnacher Str.: fertiggestellt, aber noch gesperrt	2::inwork 19871,9680 19859,9
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 # 
 #: note: allerdings könnte man sein Fahrrad über den Betonpfeiler rübertragen
-#: last_checked: 2015-11-04
+#: last_checked: 2016-03-04
 #: check_frequency: 120d
 am Osthafen: durch Barriere versperrt	2::inwork 14259,10309 14463,10212
 # 
@@ -2935,15 +2937,17 @@ Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Du
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
 #: osm_watch: way id="305153174" version="1"
-#: last_checked: 2016-02-08 vvv
+#: last_checked: 2016-03-03 vvv
 #: check_frequency: 90d vvv
 Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10008,12274 9994,12368
-Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9996,12401 9994,12368 9943,12364
 # ReMOVED (hier aufgehobe) --- Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9943,12364 9961,12273
-Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1::inwork 9943,12364 9934,12420
+Niederlagstr.: Bauarbeiten, keine Zufahrt von Unter den Linden möglich	2::inwork 9943,12364 9934,12420
 #: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
+# 
+#: XXX prüfen, ob das noch gilt!
+Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9996,12401 9994,12368 9943,12364
 # 
 # REMOVED --- #: XXX t/cgi-mechanize.t (ca. Zeile 673) anpassen!
 # REMOVED --- #: next_check_id: STERNDAMM-2014
@@ -2976,12 +2980,7 @@ Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,689
 # REMOVED (realisiert) --- #: next_check_id: GLEISDREIECKBUELOW-2014 --- #: last_checked: 2014-02-28 --- #: next_check: 2014-03-14 --- Zufahrt zum Gleisdreieck-Park: Bauarbeiten, komplett gesperrt	2::inwork 7906,10098 7928,10094 8011,10085 8013,10055
 # REMOVED (offen) --- #: last_checked: 2014-10-05 --- #: check_frequency: 60d --- Rumoldstr.: Bauarbeiten, gesperrt	2::inwork 17454,12348 17368,12365
 # REMOVED (offen) --- #: last_checked: 2014-12-13 --- #: check_frequency: 30d --- (Antonplatz - Bizetstr.): Bauarbeiten, gesperrt	2::inwork 13487,15888 13525,15784
-# 
-#: next_check_id: CHARITE-2014
-#: last_checked: 2015-11-27
-#: check_frequency: 90d
-tragen (2 Stufen)	0:5 8818,13365
-# 
+# REMOVED (erstmal entfernen; vielleicht wird nach den Bauarbeiten alles ganz anders aussehen) --- #: next_check_id: CHARITE-2014 --- #: last_checked: 2015-11-27 --- #: check_frequency: 90d --- tragen (2 Stufen)	0:5 8818,13365
 # REMOVED (habe Leute hier langlaufen/fahren sehen) --- #: osm_watch: way id="182562157" version="2" --- #: last_checked: 2013-11-04 --- #: next_check: 2013-11-11 --- (Bautzener Str. - Südkreuz): Bauzaun, Zugang noch nicht erlaubt	2:inwork 8185,9338 8207,9324 8204,9046
 # REMOVED (offen, aber handicap!) --- #: next_check_id: EMILSCHULZ-2014 --- #: source_id: INKO_095722_COPY_1 --- #: XXX siehe auch routing_helper addition --- #: XXX bei VMZ wurde der Eintrag entfernt (2014-03-31) --- ist aber immer noch aktiv! --- #: by: http://www.berliner-woche.de/nachrichten/bezirk-steglitz-zehlendorf/lichterfelde/artikel/36485-fertigstellung-der-emil-schulz-bruecke-verzoegert-sich/ (Verzögerung bis August 2014) --- #: by: http://www.berliner-woche.de/nachrichten/bezirk-steglitz-zehlendorf/lichterfelde/artikel/45172-emil-schulz-bruecke-im-oktober-soll-auch-die-zweite-fahrbahn-fertig-sein/ (Verzögerung bis Oktober 2014) --- #: priority: #A --- #: last_checked: 2014-04-27 --- #: next_check: 2014-10-01 --- Promenade am Teltowkanal: während der Bauarbeiten an der Emil-Schulz-Brücke gesperrt	2:inwork 4261,2703 4258,2693 4247,2652 4202,2622 4193,2616
 # REMOVED (Bauarbeiten beendet) --- #: XXX siehe auch die Umleitungsstrecke --- #: XXX nach den Bauarbeiten asphaltiert --- #: by: http://www.strassenbauportal.de/oeffentliche_ausschreibung_vobvol_details_10317_Berlin_Strassenbauarbeiten__607379.html (Asphaltierung) --- #: by: http://www.rubu.de/verkehr-planungen.html (Dauer) --- #: by: http://www.rubu.de/mediapool/115/1150729/data/Paul_u_Paula_UL3-Uebersicht-BA.pdf (Übersichtsplan) --- #: last_checked: 2013-08-19 --- #: next_check: 2013-10-03 (geplantes Bauende ist Ende September) --- Paul-und-Paula-Ufer: Sanierungsarbeiten, komplett gesperrt	2:inwork 15056,10625 14990,10581 14937,10598 14911,10587
@@ -2994,7 +2993,7 @@ tragen (2 Stufen)	0:5 8818,13365
 #: source_id: INKO_113041 vvv
 #: source_id: 2147339528 vvv
 #: last_checked: 2016-02-08 vvv
-Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9858,12410
+# REMOVED (Einfahrt in Niederlagstr. nun komplett als gesperrt markiert) --- Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9858,12410
 # REMOVED --- Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
 # REMOVED --- Niederlagstr. - Unter den Linden: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9943,12364 9934,12420 9984,12426
 #: last_checked ^^^
@@ -3007,7 +3006,7 @@ Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 99
 # 
 #: next_check_id: CHARITE-2014
 #: XXX eine Umleitung existiert, ist aber von der Westseite schwierig zu finden und könnte nachts gesperrt sein
-#: last_checked: 2016-02-05
+#: last_checked: 2016-03-03
 #: check_frequency: 90d
 An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8833,13440 8846,13412 8835,13376 8818,13365 8808,13377 8764,13372 8665,13353
 # 
@@ -3119,15 +3118,16 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # REMOVED --- #: last_checked: 2011-04-08 --- Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9702,12307 9708,12235
 # 
 #: next_check_id: STAATSOPER-2014 vvv
-#: last_checked: 2016-02-03 vvv
-#: next_check: 2016-06-01 (voraussichtliche Eröffnung 2017) vvv
+#: last_checked: 2016-03-03 vvv
+#: check_frequency: 90d vvv
 #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung)
+#: XXX voraussichtliche Eröffnung 2017
 #: XXX siehe auch aufgehobene Einbahnstraßenregelung oben (Behrenstr./Bebelplatz)
 Behrenstr.: Bauarbeiten, vollständig gesperrt	2:inwork 9743,12239 9801,12245
 Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9876,12298
 Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9808,12182 9801,12245 9795,12293 9780,12401
 Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12395
-#: next_check: ^^^
+#: check_frequency: ^^^
 #: last_checked: ^^^
 #: next_check_id: ^^^
 # 
@@ -3145,7 +3145,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2016-02-11
+#: last_checked: 2016-03-03
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

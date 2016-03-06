@@ -122,10 +122,11 @@ asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9233,8597 9229,8718
 	RW1;RW0 6740,10755 6607,10801 6484,10847
 	RW1;RW1 6484,10847 6378,10887 6277,10924 6272,10926
 	RW2;RW1 6272,10926 6145,10975
-	RW4?; 5652,11004 5716,10978 5829,10964 5986,10976
+	RW4; 5652,11004 5716,10978 5829,10964 5986,10976
 # REMOVED (alter Zustand ist wieder hergestellt) --- #: XXX während der Bauarbeiten am Bikinihaus ist die Busspur aufgehoben, stattdessen gibt es einen schmalen Radfahrstreifen --- #: by: http://www.tagesspiegel.de/berlin/richtfest-in-der-city-west-bikini-party-im-spaetsommer/7099082.html (Eröffnung im Herbst 2013) --- #: last_checked: 2013-12-22 --- #: check_frequency: 14d ---	RW4; 5986,10976 5829,10964 5716,10978 5652,11004
-Busspur gilt 7-22 Uhr	RW5; 5986,10976 5829,10964 5716,10978 5652,11004
-	RW4?;RW1 5986,10976 6058,10988
+#: note: eigentlich nicht für Radfahrer freigegeben (gesehen 2016-03)
+Busspur ist immer gültig	RW5; 5986,10976 5829,10964 5716,10978 5652,11004
+	RW4;RW1 5986,10976 6058,10988
 	RW2;RW1 6058,10988 6145,10975
 #: note: eigentlich nicht für Radfahrer freigegeben (2013-01)
 Busspur ist immer gültig	RW5; 5652,11004 5542,11075
@@ -261,7 +262,8 @@ die letzten Meter sind benutzungspflichtig	RW1; 5468,13067 5328,13019
 	RW10;RW10 4905,11785 5141,11816 5381,11847
 	RW4;RW4 5381,11847 5478,11860
 	RW2;RW2 5478,11860 5565,11871 5758,11895 5900,11913 6642,12010
-	RW2;RW2 5258,11285 5352,11502 5356,11512 5456,11742
+#: XXX gibt es eine Radwegbenutzungspflicht Richtung Süden?
+	RW1;RW2 5258,11285 5352,11502 5356,11512 5456,11742
 	RW1;RW2 5456,11742 5381,11847
 	RW2;RW1 4239,10358 4245,10435
 	RW1;RW1 4245,10435 4256,10583 4267,10724 4276,10867 4289,11060 4302,11232 4312,11354 4331,11554 4345,11710 4367,11996
@@ -316,15 +318,18 @@ asphaltiert, Wurzelschäden	RW2;RW2 -7139,1010 -7402,948 -7622,881 -8045,788 -816
 	RW1;RW1 -3736,2849 -3861,2837 -3932,2828 -4001,2858
 teilweise sehr eng, mäßiges Verbundsteinpflaster, Wurzeln	RW1;RW1 -3736,2849 -3648,2881 -3450,3006 -3378,2936 -3360,2917 -3225,2902 -3139,2900 -2847,2893 -2761,2895 -2656,2897 -2481,2900 -2269,2825 -2249,2818 -2026,2742 -1908,2677 -1646,2434
 	RW1;RW1 -4803,1240 -4892,1267 -4944,1298
-	RW2;RW1 -2550,2068 -2621,2022 -2671,1988 -2912,1829 -3011,1761 -3113,1692
+	RW2;RW1 -3011,1761 -3113,1692
 	RW2;RW2 -3113,1692 -3184,1643 -3353,1526 -3729,1297 -3890,1249 -4003,1234
 	RW1;RW1 -4003,1234 -4497,1165 -4578,1185 -4803,1240
-	RW1;RW1 534,3149 452,3133 255,3085 161,3062 50,3031 -49,3003 -151,2975 -267,2945 -391,2914 -512,2883 -563,2862 -726,2799 -739,2793 -870,2737 -984,2692 -1085,2653 -1249,2590 -1340,2554 -1626,2441 -1646,2434 -1959,2305 -2023,2279 -2074,2258 -2280,2177 -2550,2068
+	RW1;RW1 534,3149 452,3133 255,3085 161,3062 50,3031 -49,3003 -151,2975 -267,2945 -391,2914 -512,2883 -563,2862 -726,2799 -739,2793 -870,2737 -984,2692 -1085,2653 -1249,2590 -1340,2554 -1626,2441 -1646,2434 -1959,2305 -2023,2279 -2074,2258 -2280,2177 -2550,2068 -2621,2022 -2671,1988 -2912,1829 -3011,1761
 	RW1;RW1 3048,4305 2944,4241
 	RW1;RW10 2944,4241 2817,4158 2713,4087
 	RW1;RW1 2713,4087 2599,4018 2308,3862
 	RW1;RW2 2308,3862 2230,3823
-	RW1;RW1 2230,3823 1847,3620 1552,3460 1415,3362 1338,3300 1214,3198 1125,3139 1072,3112 1038,3094 945,3061 820,3081 669,3119 534,3149
+	RW1;RW1 2230,3823 1847,3620 1552,3460 1415,3362 1338,3300 1214,3198 1125,3139
+für Radfahrer freigegebene Busspur hat eingeschränkte Geltungszeiten	RW1; 1125,3139 1072,3112 1038,3094 945,3061 820,3081
+	RW1; 820,3081 945,3061 1038,3094 1072,3112 1125,3139
+	RW1;RW1 820,3081 669,3119 534,3149
 	RW1;RW10 3425,4541 3344,4488 3264,4439 3048,4305
 	RW1;RW1 3710,4728 3637,4680 3527,4608 3425,4541
 	RW2;RW10 4343,5112 4173,5013 4153,5001 4132,4988 3929,4863 3826,4800 3754,4755 3710,4728
@@ -861,9 +866,10 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736 20755,5750
 	RW2;RW1 14193,9746 14270,9710 14318,9688 14556,9581 14809,9466 14883,9431 15383,9191 15442,9095 15452,9079 15561,8903 15591,8848
 	RW1; 13919,7707 14015,7631
 #: next_check_id: SONNENALLEE-2014 vvv
+#: XXX laut fritz "geänderte Straßenführung" bis 31.12.2016
 #: source_id: IM_023718
 #: source_id: 2147339540
-#: last_checked: 2016-02-27 vvv
+#: last_checked: 2016-03-04 vvv
 #: check_frequency: 90d vvv
 	RW2; 14015,7631 14095,7568 14174,7505
 # REMOVED, siehe unten ---	RW1; 14174,7505 14302,7429 14357,7450 14405,7435 14424,7401 14432,7353 14451,7340
@@ -974,7 +980,8 @@ die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg gefü
 #: next_check_id: WARSCHAUER-2014
 #: source_id: 2147339535
 #: source_id: 2147339551
-#: last_checked: 2016-02-19
+#: last_checked: 2016-03-03
+#: check_frequency: 7d
 #: by: http://www.umbau-warschauer-strasse.de/images/bauinfos/Infoblatt_August_15-2.pdf
 #: XXX Radweg wegen Bauarbeiten aufgehoben
 	RW0; 13696,11920 13651,11731
@@ -1019,12 +1026,12 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5542,11075 5459,11135
 #: XXX früher: Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5
 #: XXX bis Ende 2016, laut rbbtext bis 16.12.2016
 #: source_id: 2147339533
-#: last_checked: 2015-12-04
+#: last_checked: 2016-03-03
 #: next_check: 2016-06-01
 	RW0;RW0  5459,11135 5258,11285 5166,11343 5091,11406 5085,11413 4919,11605
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4919,11605 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
-#: last_checked: 2016-02-08
+#: last_checked: 2016-03-03
 #: check_frequency: 60d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1033,7 +1040,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX siehe auch 3nocross in gesperrt-orig
 #: XXX laut rbbtext bis 31.05.2016
 #: source_id: INKO_113041
-#: last_checked: 2016-02-08
+#: last_checked: 2016-03-03
 #: check_frequency: 60d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 9695,12390 9656,12386 9601,12380
@@ -1049,7 +1056,7 @@ Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 #: next_check_id: STABIUDL-2014
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9601,12380 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2016-01-15
+#: last_checked: 2016-03-03
 #: check_frequency: 60d
 Busspur ist immer gültig	RW5; 9475,12365 9601,12380
 # 
@@ -1193,7 +1200,7 @@ Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW5; 6460,8688 6449,8807 6449,8845 6445
 	RW1;RW1 7402,8208 7446,8200 7497,8168 7582,8123 7639,8091 7710,8051 7733,8023
 #: XXX Wilhelm-Kabus-Str.: eventuell wird der Gehweg Richtung Süden für Radfahrer freigegeben
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4159&options=4
-#: last_checked: 2016-02-25
+#: last_checked: 2016-03-05
 #: check_frequency: 90d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
 	RW2;RW4 7717,7879 7718,7820 7696,7771
@@ -1307,7 +1314,7 @@ Radweg teilweise nur aufgemalt	RW1;RW1 6935,13645 6760,13714
 	RW1;RW1 7069,13381 6988,13539 6976,13563 6935,13645 6817,13862 6730,14021
 #: note: alter Radweg soll nicht mehr verwendet werden
 Busspur gilt Mo-Fr 6-19 Uhr	RW5; 6730,14021 6818,14102 6992,14251 7123,14367
-Busspur gilt immer	RW5; 7123,14367 7180,14419
+Busspur ist immer gültig	RW5; 7123,14367 7180,14419
 	RW3; 7180,14419 7123,14367 6992,14251 6818,14102 6730,14021
 	RW3;RW3 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021
 	RW3;RW4 7104,14403 7123,14367
@@ -1415,7 +1422,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 	RW3;RW3 11159,10769 11234,10739 11275,10723
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW4;RW4
-#: last_checked: 2016-02-26
+#: last_checked: 2016-03-03
 #: check_frequency: 90d
 	RW0;RW0 8804,12280 8775,12457
 	RW4;RW4 8775,12457 8766,12541
@@ -1423,7 +1430,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2016-02-11
+#: last_checked: 2016-03-03
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -1496,7 +1503,7 @@ die ersten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	
 	RW3;RW1 13493,11217 13541,11355
 # REMOVED --- #: next_check_id: WARSCHAUER-2014 --- #: XXX Gehweg für Radfahrer frei (aber zu voll um benutzbar zu sein) --- #: last_checked: 2015-07-01 --- #: check_frequency: 7d
 #: XXX Bauarbeiten an der Revaler Str., Radspuren zeitweise wieder aufgehoben
-#: last_checked: 2016-03-02
+#: last_checked: 2016-03-04
 #: check_frequency:7d
 #	RW3; 13541,11355 13588,11490 13603,11538
 	RW0; 13541,11355 13588,11490 13603,11538
@@ -1653,9 +1660,9 @@ Berliner Gehwegplatten, ca. 1,50m breit	RW2;RW2 9272,14208 9400,14400 9410,14410
 #: next_check_id: OTTOBRAUN-2015
 #: note: Wobei es so aussieht, als ob das Zusatzschild einfach nur fehlt
 #: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5; 
-#: last_checked: 2015-12-01
+#: last_checked: 2016-03-03
 #: check_frequency: 90d
-	RW3; 11451,13301 11368,13170
+	RW4; 11451,13301 11368,13170
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 11451,13301 11486,13350
 Busspur ist immer gültig	RW5; 11486,13350 11539,13425 11561,13451 11652,13564
 	RW1; 11486,13350 11451,13301
@@ -1918,7 +1925,7 @@ Busspur gilt Mo-Fr 6-19 Uhr	RW5; 21131,10848 21132,10923 21133,10948
 	RW4; 18875,9570 18878,9517
 	RW2;RW1 18742,9903 18703,9997 18694,10018 18631,10167
 	RW4;RW4 18417,10738 18446,10620 18554,10354
-Busspur gilt immer; Radweg auf den letzten 50 Metern	RW5; 18554,10354 18585,10278 18631,10167
+Busspur ist immer gültig; Radweg auf den letzten 50 Metern	RW5; 18554,10354 18585,10278 18631,10167
 	RW1; 18631,10167 18585,10278
 	RW4; 18585,10278 18554,10354
 	RW0;RW2 6145,10975 6168,11042
@@ -3248,7 +3255,7 @@ Verbundsteinpflaster	RW1;RW1 17832,3740 17593,3748
 #: by: daniel pahl:
 	RW6;RW6 -7931,-2146 -7878,-2164 -7831,-2230 -7780,-2279 -7720,-2300
 	RW6;RW6 13886,13668 13858,13719 13824,13771
-Busspur gilt immer	RW5; 2615,20421 2515,20399
+Busspur ist immer gültig	RW5; 2615,20421 2515,20399
 	RW5?; 2515,20399 2415,20380 2358,20368 2295,20358
 asphaltiert	RW1; 16977,11769 17020,11748
 asphaltiert	RW1;RW1 17020,11748 17169,11677
@@ -4523,7 +4530,7 @@ Tempo 10	RW6;RW6 13559,12779 13470,12990
 	RW4;RW3 14096,12827 14066,12836
 #: XXX wegen Bauarbeiten am Hochhaus "Upper West" sind die Radspuren aufgehoben
 #: by: http://www.tagesspiegel.de/berlin/stadtentwicklung-zwillingsturm-soll-2016-in-der-city-west-eroeffnen/7416454.html (geplante Eröffnung Mitte 2016)
-#: last_checked: 2015-12-04
+#: last_checked: 2016-03-03
 #: next_check: 2016-05-01
 #	RW3; 5488,10978 5613,10963 5652,11004
 ##: note: teilweise vor dem Hotel unterbrochen (wegen Ladezone?)

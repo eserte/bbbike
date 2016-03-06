@@ -2283,8 +2283,8 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	F 2580,24028
 	X 13401,15821
 	F 6440,6707
-#: XXX_prog: Richtung Osten reguläre Ampel, Richtung Westen nur Fußgängerampel
-	X 7310,7818
+# REMOVED (nö, in beiden Richtungen nur Fußgängerampel) --- #: XXX_prog: Richtung Osten reguläre Ampel, Richtung Westen nur Fußgängerampel
+	F 7310,7818
 # REMOVED (temporäre Ampel existiert nicht mehr und wird auch nicht mehr eingerichtet) --- #: XXX existiert diese Ampel noch? --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5227&options=4 ---	F 18413,7774
 # REMOVED (existiert nicht mehr) ---	X 16187,10033
 #: by: Wolfhard Schleese vvv
@@ -2580,12 +2580,12 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX temporäre Ampel (wegen Arbeiten an der Staatsoper und an der U-Bahn)
 #: XXX_prog Anforderungsampel
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
-#: last_checked: 2016-02-08
+#: last_checked: 2016-03-03
 #: check_frequency: 45d
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2016-02-26 vvv
+#: last_checked: 2016-03-03 vvv
 #: check_frequency: 30d vvv
 	X::inwork 9122,12509
 	X::inwork 9286,12886
@@ -2597,7 +2597,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id ^^^
 #
 #: XXX temporäre Ampel vvv
-#: last_checked: 2016-01-15 vvv
+#: last_checked: 2016-03-03 vvv
 #: check_frequency: 30d vvv
 	F::inwork 9270,12086
 #: check_frequency ^^^
@@ -2736,7 +2736,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: SONNENALLEE-2014 vvv
 #: osm_watch: way id="260062339" version="5"
-#: last_checked: 2016-02-27 vvv
+#: last_checked: 2016-03-04 vvv
 #: check_frequency: 90d vvv
 #: note: Radfahrer in Richtung Südosten müssen die Seite wechseln, hier Anforderungsampel
 	X::inwork 14174,7505
@@ -2838,6 +2838,10 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 9274,13963
 	X 9151,13941
 	F 10461,3757
+#: XXX Baustellenampel
+#: last_checked: 2016-03-03
+#: check_frequency: 60d
+	F::inwork 8853,13539
 # 
 ################################################################################
 #: note: Potsdam vvv

@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2016-02-29
+#: last_checked: 2016-03-04
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -104,7 +104,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6183 (Baubeginn erst 2015)
 #: XXX Baubeginn des ersten Abschnitts: 3. Quartal 2014
-#: last_checked: 2016-03-02
+#: last_checked: 2016-03-05
 #: check_frequency: 60d
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -205,7 +205,7 @@ Karl-Marx-Str.: Bauarbeiten geplant, danach gibt es Radspuren; wie sieht es währ
 # 
 #: XXX Baumaßnahme 9.16 (Realisierung nach 2011) (auch im Maßnahmenkatalog Treptow-Köpenick, Bsw.7)
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5154
-#: last_checked: 2015-12-28
+#: last_checked: 2016-03-04
 #: check_frequency: 90d
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15553,7408 15560,7400 15609,7347 15695,7254 15928,6996 15977,6942 16060,6850 16146,6755 16273,6609 16280,6601 16333,6544 16425,6445
 # 
@@ -326,7 +326,7 @@ Schöneberger Str.: Radspuren bis 2015 geplant	?::projected 8735,6695 8645,6781 8
 # 
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bvv/mdv_vii_19.pdf?start&ts=1368606374&file=mdv_vii_19.pdf (Seite 79)
 #: osm_watch: way id="28961260" version="12"
-#: last_checked: 2015-11-17
+#: last_checked: 2016-03-04
 #: check_frequency: 120d
 Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166,8489
 #: by: ^^^
@@ -400,6 +400,11 @@ Wendenschloßstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 2266
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: XXX während der Bauarbeiten Einbahnstraßenregelungen -> siehe temp_blockings
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.450655.php
+#: next_check: 2016-05-30
+Köllnische Str.: Bauarbeiten, danach vermutlich asphaltiert	?::inwork 18659,5330 18820,5275 18942,5236 18999,5237 19031,5316
+# 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.386693.php
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/rosenthaler-weg_blatt-5.pdf
 #: XXX Bauzeit: Frühjahr 2016 + drei Jahre
@@ -432,7 +437,7 @@ Schönstr.: Neubau geplant	?::projected 13391,16436 13630,16629 13789,16775 13861
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/beschreibung_konigsweg.pdf
 #: XXX wird auch der Parallelweg zur Wohngebietsstraße ausgebaut?
-#: osm_watch: way id="51382248" version="7"
+#: osm_watch: way id="51382248" version="8"
 #: last_checked: 2015-12-05
 #: check_frequency: 60d
 Königsweg: geplante Asphaltierung	?::projected -1082,2140 -987,2203 -882,2260 -790,2300 -745,2320 -670,2361 -505,2456 -409,2510
@@ -444,7 +449,8 @@ Jungfernstieg: in der Fahrbahnmitte ein 3m breiter Asphaltstreifen geplant	?::pr
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/beschreibung-dahlemer-weg.pdf
 #: osm_watch: way id="14477524" version="42"
-#: last_checked: 2015-12-05
+#: last_checked: 2016-03-05 (nördliches Ende)
+#: check_frequency: 60d
 Dahlemer Weg: Radwege werden durch Radspuren ersetzt	?::projected 2152,2912 2198,3169 2203,3213 2253,3505 2287,3702
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20151009
@@ -467,7 +473,7 @@ Bohnsdorfer Kreisel: Einbahnstraße wird aufgehoben	?::projected 21977,988 21894,
 #: next_check: 2016-08-01
 Keltensteig - Teutonenstr.: wird nach der Fahrbahninstandsetzung die Qualität besser werden?	?::projected 20302,1613 20369,1476 20405,1460 20580,1406
 # 
-#: last_checked: 2016-02-03
+#: last_checked: 2016-03-04
 Treptower Park, mittlerer Weg: wann ist hier fertig gebaut? wie geht der Weg weiter? Qualität? Beleuchtung?	?::inwork 15133,9396 15169,9380 15247,9388 15325,9354 15453,9259
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2015
@@ -904,7 +910,7 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 # 
 #: by: http://www.bwb.de/content/language1/html/10337.php#11671
 #: osm_watch: way id="75509950" version="11"
-#: last_checked: 2016-02-23
+#: last_checked: 2016-03-04
 #: check_frequency: 60d
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,9775 12074,9689 12066,9558
 #: by: ^^^
@@ -914,7 +920,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12088,977
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="13"
-#: last_checked: 2016-03-01
+#: last_checked: 2016-03-04
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12088,9775
 # 
@@ -976,7 +982,7 @@ Zachenberger Str.: (Planstraße 11) Qualität?	?::projected 19889,9400 19780,9409
 # REMOVED (weitgehend realisiert) --- #: by: http://www.moz.de/artikel-ansicht/dg/0/1/288137 --- #: by: http://de.wikipedia.org/wiki/Autobahndreieck_Schwanebeck --- #: by: http://upload.wikimedia.org/wikipedia/commons/4/4c/Map_Comparision_AD_Schwanebeck_AK_Barnim.svg --- #: by: http://www.ls.brandenburg.de/sixcms/detail.php/bb1.c.257283.de?template=ls_artikel_special_nav_d&nav_level=3 --- #: next_check: 2013-09-01 --- Umbau zum Kreuz Barnim: damit auch Verschenkung der B2 direkt zur Autobahn; die jetzige B2 durch Schwanebeck wird wahrscheinlich zur Landesstraße	?::inwork 20788,23350 20281,23156 19363,23247 19043,23084
 # 
 #: osm_watch: way id="168928174" version="7"
-#: last_checked: 2015-10-14
+#: last_checked: 2016-03-03
 #: check_frequency: 120d
 Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verlängert?	? 8632,11912 8783,11959
 # 
@@ -1052,7 +1058,7 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Realisierung ab 2014)
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4757 (Vorschlag: Führungsschienen für den Elsensteg)
 #: osm_watch: way id="182693863" version="1"
-#: last_checked: 2015-11-17
+#: last_checked: 2016-03-04
 #: check_frequency: 180d
 Innstr.: eventuell wird hier asphaltiert, vielleicht auch der Zugang zum Elsensteg erleichtert?	?::projected 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (in Bau, Stand 2012-04)
@@ -1342,6 +1348,21 @@ Brunsbütteler Damm: Radweg wird asphaltiert	?::projected; -4290,14025 -4759,1399
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8362&options=4
+#: XXX kein rechts-vor-links?
+Maulbeerallee: Vorfahrtsregelung?	? -6093,12801 -5975,12827 -5878,12845 -5784,12858 -5706,12869 -5594,12832 -5480,12793 -5307,12737 -5282,12730
+# 
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4203
+#: XXX ggfs. auch als Grünfläche in flaechen-orig eintragen
+#: next_check: 2016-05-01
+Selma- und Paul-Latte-Platz: Benennungsabsicht eines Platzes	? 10843,20301 10786,20272 10802,20240 10843,20301
+# 
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036470336375/470336375/00071821/21-Anlagen/02/_15-BenennungsabsichtfuerdieoeffentlicheStrass.pdf
+Straße 46: ist hier bereits die Mittelstr.?	? 14320,20580 14482,20547
+# 
+Robert-Koch-Platz: genaue Ausschilderung anschauen	? 8648,13498 8634,13588 8626,13641 8619,13689
+Robert-Koch-Platz: genaue Ausschilderung anschauen	? 8601,13584 8634,13588 8674,13593
+# 
 #: XXX dieses Jahr (2016) vom 20.05.2016 bis zum 12.06.2016
 #: next_check: 2016-05-19
 #: priority: #A
@@ -1502,7 +1523,7 @@ Mauerweg im Spandauer Forst: Erneuerung	?::projected -3497,20003 -3652,20100 -42
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: XXX sieht man schon Schilder? evtl. auch weiter hinten gelegen
 #: XXX fehlt in Berlin.coords.data
-#: last_checked: 2015-12-25 (keine Schilder)
+#: last_checked: 2016-03-03 (keine Schilder)
 #: check_frequency: 60d
 Am Hamburger Bahnhof: Benennung des Platzes	? 8293,13519 8128,13767
 # 
@@ -1681,6 +1702,7 @@ Otto-Braun-Platz (Potsdam): befindet sich hier der Platz? Ist er ausgeschildert?
 # 
 #: XXX fehlt wahrscheinlich in Potsdam.coords.data, PLZ=14467
 #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_2014_16.pdf
+#: last_checked: 2016-03-05
 Steubenplatz (Potsdam): wo wird er sich befinden? ist er schon offiziell benannt?	? -12747,-1596 -12728,-1539 -12706,-1515
 # 
 #: XXX fehlt wahrscheinlich in Potsdam.coords.data, PLZ=14467
@@ -1810,7 +1832,7 @@ Alt-Karow: evtl. wird hier ein Schutzstreifen Richtung Süden angelegt	? 15726,23
 # 
 #: next_check_id: SONNENALLEE-2014
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14709&options=8 (beschlossen durch BVV, Realisierung steht noch aus)
-#: last_checked: 2016-02-27 (zurzeit eine Baustellenampel, wird eine permanente Ampel nach den Bauarbeiten aufgestellt?)
+#: last_checked: 2016-03-04 (zurzeit eine Baustellenampel, wird eine permanente Ampel nach den Bauarbeiten aufgestellt?)
 #: check_frequency: 90d
 Sonnenallee/Ziegrastr.: wird hier eine permanente Ampel entstehen?	?::projected 14174,7505
 # 
@@ -1822,7 +1844,7 @@ Thomasstr./Hermannstr.: sichere Querung, wie wird/könnte die Lösung hier aussehe
 # REMOVED (realisiert) --- #: XXX wird eine andere Ampel dafür ausgeschaltet? --- #: by: http://www.berliner-zeitung.de/verkehr/bvg-sanierung--die-u-8-faehrt-wieder-bis-zur-hermannstrasse,10809298,28209860.html (Fertigstellung im Dezember) --- #: last_checked: 2014-11-22 --- #: next_check: 2015-02-15 --- Hermannstr.: Fußgängerampel in Bau	?::inwork 12123,7549 12137,7506
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14706&options=8
-#: last_checked: 2016-02-03
+#: last_checked: 2016-03-04
 #: check_frequency: 150d
 #: priority: #C
 Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,7623 14614,7614
@@ -1832,7 +1854,7 @@ Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14705&options=8
 #: osm_watch: way id="47155976" version="10"
-#: last_checked: 2016-02-23
+#: last_checked: 2016-03-04
 #: check_frequency: 14d
 Weichselplatz: vielleicht wird hier asphaltiert?	?::inwork 12851,9309 12761,9190
 # 
@@ -1858,7 +1880,7 @@ Schöneberger Str.: eventuell wird hier eine (Fußgänger-)Ampel entstehen	?::proje
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4106&options=4 (Konzeptphase)
 #: osm_watch: way id="338316875" version="2"
-#: last_checked: 2015-11-06
+#: last_checked: 2016-03-05
 #: check_frequency: 100d
 Kolonnenstr.: werden hier Radstreifen errichtet?	?::projected; 7709,8777 7795,8765 8008,8771 8014,8771 8078,8772
 # 
@@ -2066,7 +2088,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.334355.php
-#: last_checked: 2016-02-19
+#: last_checked: 2016-03-03
 #: check_frequency: 120d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172 10818,11269
 # 
@@ -2243,9 +2265,22 @@ Planstraßen im Marienhain: Straßennamen? Qualität?	? 22771,3151 22476,3118 22485
 neue Straßen im Zuge des Bebauungsplanes 8-9bab: genaue Lage, Qualität, Straßennamen?	?::projected 11304,3764 11320,3733 11395,3753 11464,3662
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20140507.1055.396976.html
-#: XXX wird bis 2017 realisiert
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6562
+#: XXX Bebauungsplan XXI-24
+#: XXX wird bis 2017 realisiert; mit Bahnübergang
 #: next_check: 2017-01-01
-Verbindung zwischen Beilsteiner Str. und Pyramidenring: genaue Lage, Qualität, Straßenname?	?::projected 18859,14048 18710,14212
+Verbindung zwischen Beilsteiner Str. und Pyramidenring: genaue Lage, Qualität, Straßenname?	?::projected 18859,14048 18804,14239 18710,14212
+# 
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6562 vvv
+#: XXX Bebauungsplan 10-80 vvv
+#: next_check: 2017-03-03 vvv
+Parlerstr.: Änderung der Verkehrsführung	?::projected 24369,10393 24333,10317
+geplante Planstraße	?::projected 24370,10198 24404,10387
+weitere Straßen geplant	?::projected 24179,10396 24282,10286
+weitere Straßen geplant	?::projected 24437,10337 24476,10248
+#: next_check ^^^
+#: XXX ^^^
+#: by ^^^
 # 
 #: by: http://www.potsdam.de/sites/default/files/documents/endfassung_nr.7_abl_pdmstadt_07_2014_h.pdf
 Verlängerung der Straße "In der Feldmark": Qualität, existiert dieser Abschnitt schon?	? -18428,189 -18625,129 -18630,101

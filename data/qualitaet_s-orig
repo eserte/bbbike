@@ -120,7 +120,8 @@ Waldemarstr.: Kopfsteinpflaster	Q2+ 11556,10869 11328,10957
 Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11290,10972
 Waldemarstr.: Kopfsteinpflaster	Q2+ 11290,10972 11150,11030
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
-Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136 11473,11180
+Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
+Leuschnerdamm: provisorischer Asphalt	Q1 11458,11136 11473,11180
 Legiendamm: asphaltiert	Q0 11349,11227 11337,11197 11307,11125 11329,11065 11290,10972
 Legiendamm: Kopfsteinpflaster	Q2 11290,10972 11227,10821 11189,10831
 Legiendamm: asphaltiert	Q0 11189,10831 11159,10769
@@ -159,7 +160,7 @@ Corneliusstr.: mäßiges Kopfsteinpflaster	Q2 6880,11110 6841,11114 6630,11247 647
 Kopernikusstr.: mäßiges Kopfsteinpflaster	Q2 13467,11778 13651,11731
 Torellstr.: mäßiges Kopfsteinpflaster	Q2 13295,11792 13467,11778
 #: XXX Bauarbeiten, danach vielleicht teilweise bessere Qualität?
-#: last_checked: 2016-02-29
+#: last_checked: 2016-03-04
 #: check_frequency: 60d
 Rüdersdorfer Str.: Asphalt mit Schäden	Q1- 13295,11792 13173,11788 13066,11854
 Kaskelstr.: relative glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
@@ -2127,6 +2128,8 @@ Götzestr.: gutes Kopfsteinpflaster	Q1- 3896,22718 3738,22652
 (Weg am Tegeler Fließ): asphaltiert	Q0- 5350,23717 5316,23661
 (Weg am Tegeler Fließ): wassergebundene Decke	Q1+ 5232,23139 5206,23103 5100,23045 5037,23036 4993,23020 4944,22978 4876,22955 4824,22907 4750,22915 4697,22901 4613,22928
 (Weg am Tegeler Fließ): wassergebundene Decke	Q1+ 4596,22955 4543,22964 4459,22931 4407,22897 4332,22916 4309,22922 4158,22896
+#: XXX evtl. ist die Qualität jetzt besser
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.454227.php
 (Weg am Tegeler Fließ): Holzbohlenweg	Q2 5860,24067 5693,24037 5632,23992
 (Weg am Tegeler Fließ): Waldweg	Q2+ 5632,23992 5621,23966
 (Weg am Tegeler Fließ): Feldweg, teilweise nur einspurig, matschige Stellen	Q3 5860,24067 5965,24047 6084,24073 6259,23947
@@ -9637,6 +9640,7 @@ Viechtacher Str.: Asphalt	Q0 19657,9666 19727,9672 19801,9680 19871,9680 19923,9
 Gensinger Str. [Wohngebiet]: Asphalt	Q0- 18927,12135 18913,11907 18910,11838
 Marzahner Chaussee [Wohngebiet]: Asphalt	Q0 18417,11854 18500,11847 18580,11874
 (Marzahner Chaussee - Gensinger Str.): Asphalt	Q0- 18580,11874 18698,11914 18913,11907
+Treptower Park: Kleinsteinpflaster	Q1 15638,9020 15630,8979 15561,8903
 Abteibrücke: Kleinsteinpflaster	Q1 15630,8979 15658,9007
 Abteibrücke: asphaltiert	Q0 15658,9007 15674,9095
 (Uferweg Insel der Jugend): Parkweg	Q1 15674,9095 15683,9136 15693,9194 15604,9215 15580,9181 15631,9114 15668,9140 15683,9136
@@ -24283,13 +24287,7 @@ Am Zirkus: Asphalt	Q0 9090,13009 9137,13032 9167,13046 9212,12969 9239,12923
 Gustav-Heinemann-Brücke: Holzbohlen mit Fugen	Q1 8116,12938 8110,13042
 # REMOVED (hier asphaltiert) --- #: XXX Qualität der wassergebundenen Decke prüfen --- #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6285
 (Willy-Brandt-Str. - Rahel-Hirsch-Str.): Asphalt	Q0 8120,12756 8124,12840 8116,12938
-#: next_check_id: CHARITE-2014
-#: XXX wie wird die Situation nach den Bauarbeiten aussehen?
-#: by: http://www.charite.de/charite/organisation/baumassnahmen/campus_charite_mitte/ (Dauer: 3 Jahre ab Herbst 2013)
-#: by: http://infocenter.charite.de/
-#: last_checked: 2015-11-27
-#: check_frequency: 90d
-(entlang der Baustelle an der Charité): teilweise Schotter	Q2 8833,13440 8846,13412 8835,13376 8818,13365 8808,13377 8764,13372
+# REMOVED (erstmal komplett entfernt; nach den Bauarbeiten wird es vermutlich ganz anders aussehen) --- #: next_check_id: CHARITE-2014 --- #: XXX wie wird die Situation nach den Bauarbeiten aussehen? --- #: by: http://www.charite.de/charite/organisation/baumassnahmen/campus_charite_mitte/ (Dauer: 3 Jahre ab Herbst 2013) --- #: by: http://infocenter.charite.de/ --- #: last_checked: 2015-11-27 --- #: check_frequency: 90d --- (entlang der Baustelle an der Charité): teilweise Schotter	Q2 8833,13440 8846,13412 8835,13376 8818,13365 8808,13377 8764,13372
 (Parkplatz Charité): Asphalt	Q1 8764,13372 8665,13353
 Platz vor dem Neuen Tor: Kopfsteinpflaster	Q2 8674,13593 8668,13645 8662,13688
 Platz vor dem Neuen Tor: Kopfsteinpflaster	Q2 8668,13645 8626,13641

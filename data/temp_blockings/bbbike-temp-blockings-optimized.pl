@@ -3022,7 +3022,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
 #: source_id: 2147339529
-#: last_checked: 2015-12-04
+#: last_checked: 2016-03-03
 #: check_frequency: 90d
 userdel	q2::inwork 5258,11285 5236,10994
 ',
@@ -3279,7 +3279,7 @@ userdel	2::night 17671,13132 17684,13133
        undef,
        {
          'data' => '#: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
-#: last_checked: 2015-12-05
+#: last_checked: 2016-03-05
 #: check_frequency: 90d
 userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
 ',
@@ -3717,6 +3717,16 @@ userdel	q4::inwork 5223,5704 5115,5551 5076,5500
          'text' => 'Robert-Lück-Str.: Fahrbahn zwischen Albrechtstr. und Bergstr. gesperrt ',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => 'userdel	q4::inwork 19031,5316 18999,5237 18942,5236 18820,5275 18659,5330
+',
+         'from' => 1458428400,
+         'id' => 2771,
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.450655.php',
+         'text' => 'Köllnischen Str.: zwischen Rudower Str. und Schnellerstr. Bauarbeiten, Einbahnstraßenregelung, vom 21.03.2016 bis 30.05.2016 ',
+         'type' => 'handicap',
+         'until' => 1464645600
        }
      
 );
