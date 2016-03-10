@@ -279,11 +279,74 @@ function doLeaflet() {
     
     map = new L.Map('map',
 		    {
+			zoomControl:false,
 			zoomAnimation:true, fadeAnimation:false, // animations may be super-slow, seen on mosor/firefox9 - but see https://github.com/Leaflet/Leaflet/issues/1922
 			doubleClickZoom:disable_routing, // used for setting start/goal, see below for click/dblclick event
 			layers: [bbbikeTileLayer]
 		    }
 		   );
+
+    var speedControl;
+    if (show_speedometer) {
+	var SpeedoMeter = L.Control.extend({
+	    options: {
+		position: 'topleft'
+	    },
+
+	    onAdd: function(map) {
+		var container = L.DomUtil.create('div', 'my-speedometer');
+		container.innerHTML = "0.0";
+		container.align = 'right';
+		container.style.background = 'white';
+		container.style.padding = '3px';
+		container.style.margin = '10px';
+		container.style.border = '3px black solid ';
+		container.style.borderRadius = '5px';
+		container.style.font = '48px sans';
+		container.style.width = '2.5em';
+		return container;
+	    }
+	});
+	speedControl = new SpeedoMeter();
+	map.addControl(speedControl);
+    }
+
+    var clockControl;
+    if (show_speedometer) {
+	var Clock = L.Control.extend({
+	    options: {
+		position: 'topright'
+	    },
+
+	    onAdd: function(map) {
+		var container = L.DomUtil.create('div', 'my-clock');
+		container.innerHTML = '&nbsp;';
+		container.align = 'center';
+		container.style.background = 'white';
+		container.style.padding = '3px';
+		container.style.margin = '10px';
+		container.style.border = '3px black solid ';
+		container.style.borderRadius = '5px';
+		container.style.font = '48px sans';
+		container.style.width = '4.8em';
+		window.setInterval(function() {
+		    var pad = function(number) {
+			if (number < 10) {
+			    return '0' + number;
+			}
+			return number;
+		    }
+		    var now = new Date();
+		    container.innerHTML = pad(now.getHours()) + ':' + pad(now.getMinutes()) + ':' + pad(now.getSeconds());
+		}, 1000);
+		return container;
+	    }
+	});
+	clockControl = new Clock();
+	map.addControl(clockControl);
+    }
+
+    map.addControl(new L.control.zoom());
 
     var overlayDefs = [
 	{label:M("Qualit\u00e4t"),   layer:bbbikeSmoothnessTileLayer, abbrev:'Q'},
@@ -453,6 +516,14 @@ function doLeaflet() {
 		    map.removeLayer(trackPolyline);
 		}
 		trackPolyline = L.multiPolyline(trackSegs.polyline, {color:'#f00', weight:2, opacity:0.7}).addTo(map);
+		if (speedControl) {
+		    var kmh = trackSegs.lastKmH();
+		    if (kmh == null) {
+			speedControl.getContainer().innerHTML = '0.0';
+		    } else {
+			speedControl.getContainer().innerHTML = kmh.toString();
+		    }
+		}
 	    }
 	} else {
 	    removeLocation();
@@ -878,4 +949,24 @@ TrackSegs.prototype.addGap = function(e) {
 };
 TrackSegs.prototype._trimDigits = function(num,digits) {
     return num.toString().replace(new RegExp("(\\.\\d{" + digits + "}).*"), "$1");
+};
+TrackSegs.prototype.lastKmH = function(e) {
+    // XXX this.upload is only available with enable_upload!!!
+    if (this.upload.length >= 1) {
+	var lastSeg = this.upload[this.upload.length-1];
+	if (lastSeg.length >= 2) {
+	    var prelastUpl = lastSeg[lastSeg.length-2];
+	    var lastUpl    = lastSeg[lastSeg.length-1];
+	    var timedelta = lastUpl.time - prelastUpl.time;
+	    if (timedelta <= 0) {
+		return null;
+	    }
+	    var lastPolySeg = this.polyline[this.polyline.length-1];
+	    var prelastPoly = lastPolySeg[lastPolySeg.length-2];
+	    var lastPoly    = lastPolySeg[lastPolySeg.length-1];
+	    var metersdelta = lastPoly.distanceTo(prelastPoly);
+	    return 3.6 * metersdelta / (timedelta / 1000); // m/s -> km/h
+	}
+    }
+    return null;
 };

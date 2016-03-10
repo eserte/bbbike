@@ -57,8 +57,9 @@ if ($q->param('coordssession')) {
 }
 
 my $show_feature_list;
+my $show_speedometer;
 if ($devel) {
-    $enable_upload = $show_feature_list = 1;
+    $enable_upload = $show_feature_list = $show_speedometer = 1;
     # $enable_accel = 1; # XXX not yet
     $leaflet_ver = '0.7.3' if !defined $leaflet_ver;
 }
@@ -72,6 +73,7 @@ my $tpl = BBBikeLeaflet::Template->new
      cgi_config               => $cgi_config,
      show_expired_session_msg => $show_expired_session_msg,
      show_feature_list        => $show_feature_list,
+     show_speedometer         => $show_speedometer,
      coords                   => $coords,
      route_title              => $route_title,
     );
