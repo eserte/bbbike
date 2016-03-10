@@ -160,7 +160,7 @@ Corneliusstr.: mäßiges Kopfsteinpflaster	Q2 6880,11110 6841,11114 6630,11247 647
 Kopernikusstr.: mäßiges Kopfsteinpflaster	Q2 13467,11778 13651,11731
 Torellstr.: mäßiges Kopfsteinpflaster	Q2 13295,11792 13467,11778
 #: XXX Bauarbeiten, danach vielleicht teilweise bessere Qualität?
-#: last_checked: 2016-03-04
+#: last_checked: 2016-03-09
 #: check_frequency: 60d
 Rüdersdorfer Str.: Asphalt mit Schäden	Q1- 13295,11792 13173,11788 13066,11854
 Kaskelstr.: relative glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
@@ -207,7 +207,9 @@ Trakehner Allee: gutes Kopfsteinpflaster	Q1 -157,11943 -278,11843 -496,11720
 Trakehner Allee: Asphalt	Q0 -496,11720 -722,11598
 Crellestr.: gutes Kopfsteinpflaster	Q1 7307,8945 7484,9066 7524,9093 7570,9124 7647,9196
 Crellestr.: Kopfsteinpflaster	Q2 7647,9196 7770,9336
+Crellestr.: Asphalt	Q0 7882,9490 7836,9413 7770,9336
 Neue Kulmer Str.: Kopfsteinpflaster	Q2 7770,9336 7771,9389 7771,9479
+Willmanndamm: Verbundsteinpflaster	Q1 7836,9413 7771,9389
 Helmstr.: gutes Kopfsteinpflaster	Q1 7524,9093 7490,9116 7444,9148 7387,9184
 Belziger Str.: Asphalt	Q0 7308,9163 7107,9030
 Suadicanistr.: Asphalt	Q0 7859,7486 7858,7506
@@ -271,7 +273,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX wird hier vielleicht asphaltiert werden?
 #: XXX Baumaßnahme 2.22 (Realisierung nach 2011)
-#: last_checked: 2016-03-01
+#: last_checked: 2016-03-10
 #: check_frequency: 120d
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9053,16029 8923,15850
@@ -1437,7 +1439,7 @@ Goslarer Ufer: Kopfsteinpflaster, kann auf Gehweg umfahren werden	Q2 4295,13234 
 Malmöer Str.: Asphalt	Q0 10225,16436 10254,16363 10281,16263 10301,16186
 Malmöer Str.: mäßiges Kopfsteinpflaster	Q2 10301,16186 10343,16015
 Sonnenburger Str.: Kopfsteinpflaster	Q2 10564,15721 10550,15610
-Charlottenstr.: mäßiger Asphalt	Q1 9454,12558 9462,12481 9475,12365
+Charlottenstr.: mäßiger Asphalt	Q1+ 9454,12558 9462,12481 9475,12365
 Mohrenstr.: Asphalt	Q0 9220,11781 9418,11804
 Jägerstr.: Asphalt	Q0 9108,11961 9195,11972
 Jägerstr.: Asphalt	Q0 9195,11972 9394,11996
@@ -9308,9 +9310,8 @@ Ellen-Widmann-Pfad [Nebenweg]: Verbundsteinpflaster	Q1 3813,2368 3894,2368
 Koloniestr.: Verbundsteinpflaster	Q1 5097,988 5051,959
 Scheelestr.: Asphalt	Q0 5139,696 5242,776 5342,845
 Lichterfelder Ring: Asphalt mit einigen Schäden	Q0- 5061,409 5448,455 5486,461 5584,475
-#: XXX ist der Asphalt jetzt besser geworden (Q0)?
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/pressemitteilung.420100.php
-Schwäbische Str.: etwas welliger Asphalt	Q1+ 6728,9457 6771,9458 6851,9365
+# REMOVED (ja!) --- #: XXX ist der Asphalt jetzt besser geworden (Q0)? --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/pressemitteilung.420100.php
+Schwäbische Str.: Asphalt	Q0 6728,9457 6771,9458 6851,9365
 Schwäbische Str.: neuer Asphalt	Q0 6727,9497 6771,9458
 Krügerstr.: Kopfsteinpflaster	Q2 12013,16120 12075,16144
 Krügerstr.: Beton und Asphalt	Q0- 12013,16120 11926,16088 11852,16061 11714,16015 11694,16034
@@ -9734,7 +9735,7 @@ Fellbacher Str.: Kopfsteinpflaster	Q2 3610,23272 3653,23305
 Torstr. - Weydingerstr.: Verbundsteinpflaster	Q1+ 11079,13492 11111,13518
 #: XXX Wird die Fahrbahn nochmal geändert? Wird bei der Erstellung der Straße auch eine Beleuchtung eingebaut (-> nolighting-orig)?
 #: last_checked: 2016-01-11
-#: check_frequency: 60d
+#: next_check: 2016-05-08
 Wilhelmine-Gemberg-Weg: (provisorischer?) Asphalt	Q0 11715,11522 11762,11665
 Wilhelmine-Gemberg-Weg: Feinschotter	Q1 11762,11665 11829,11727
 Alexanderplatz: Pflasterung mit Schäden	Q1- 11055,12717 11030,12741 11007,12773 10970,12822
@@ -9978,8 +9979,8 @@ Veilchenblütenweg: unbefestigte Schotterstraße	Q2 11664,21246 11656,21309
 #: by: http://www.pressestelle.tu-berlin.de/medieninformationen/2014/oktober_2014/hertzallee_medieninformation_6102014/fotogalerie/?showp=2&uid=622255#622255
 #: by: http://www.pressestelle.tu-berlin.de/fileadmin/a70100710/Medieninformationen/2014/WB_Hertzallee_1Preis_Lageplan_500_A4_300DPI.jpg
 #: XXX ändert sich bei der Umgestaltung etwas an der Qualität?
-#: last_checked: 2015-10-15
-#: next_check: 2016-06-01
+#: last_checked: 2016-03-10
+#: check_frequency: 90d
 #: note: zusätzlich mit einigen "Pflasterschwellen"
 (Verlängerte Hertzallee): Kopfsteinpflaster	Q2- 5352,11502 5296,11529 4950,11696 4905,11785
 (Welzower Steig - Senftenberger Ring): Gehwegplatten	Q1- 6511,21649 6526,21682 6633,21633 6676,21647 6722,21722
@@ -10011,6 +10012,7 @@ Holteistr.: Asphalt mit Schäden	Q0-; 14710,11626 14639,11512
 Holteistr.: Asphalt mit Schäden	Q0- 14639,11512 14575,11407
 #: note ^^^
 (Einsteinufer - TU-Mathegebäude): Kopfsteinpflaster	Q2 5128,12149 5106,12129 5141,11816
+Fuggerstr.: Kleinsteinpflaster und Gehwegplatten	Q1 6128,10319 6020,10351
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv

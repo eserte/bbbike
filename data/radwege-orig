@@ -40,7 +40,7 @@ wobei das Radwegschild parallel zur Fahrtrichung steht	RW4; 8970,9323 9154,9347 
 Busspur gilt Mo-Fr 6-19 Uhr	RW1; 8777,9601 8679,9544 8595,9495
 	RW1; 8595,9495 8679,9544 8777,9601
 alte Gehwegplatten	RW1; 7938,9694 8097,9650 8192,9619 8358,9567 8595,9495
-alte Gehwegplatten	RW1; 8595,9495 8358,9568 8192,9619
+Gehwegplatten	RW1; 8595,9495 8358,9568 8192,9619
 neu asphaltiert	RW1; 8192,9619 8097,9650
 alte Gehwegplatten	RW1; 8097,9650 7938,9694
 	RW1;RW1 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634
@@ -262,8 +262,8 @@ die letzten Meter sind benutzungspflichtig	RW1; 5468,13067 5328,13019
 	RW10;RW10 4905,11785 5141,11816 5381,11847
 	RW4;RW4 5381,11847 5478,11860
 	RW2;RW2 5478,11860 5565,11871 5758,11895 5900,11913 6642,12010
-#: XXX gibt es eine Radwegbenutzungspflicht Richtung Süden?
-	RW1;RW2 5258,11285 5352,11502 5356,11512 5456,11742
+	RW1; 5258,11285 5352,11502 5356,11512 5456,11742
+nur die letzten Meter sind benutzungspflichtig	RW1; 5456,11742 5356,11512 5352,11502 5258,11285
 	RW1;RW2 5456,11742 5381,11847
 	RW2;RW1 4239,10358 4245,10435
 	RW1;RW1 4245,10435 4256,10583 4267,10724 4276,10867 4289,11060 4302,11232 4312,11354 4331,11554 4345,11710 4367,11996
@@ -286,8 +286,8 @@ für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,1097
 # REMOVED --- #: XXX wegen Bauarbeiten (Erweiterung AUFBAU) ist der Radweg hier aufgehoben (danach den alten Eintrag wieder herstellen + join machen) --- #: last_checked: 2014-11-21 --- #: check_frequency: 60d
 eine Busspur existiert hier auch (gilt Mo-Fr 7-18 Uhr), ist aber nicht für Radfahrer freigegeben	RW1; 10779,10934 10794,10927 10839,10907
 	RW1; 10839,10907 10794,10927 10779,10934 10684,10975
-	RW1;RW2 10605,10312 10633,10369
-	RW1;RW1 10633,10369 10685,10483 10689,10491 10776,10682 10856,10856
+altes Verbundsteinpflaster, einige Wurzelhebungen	RW1;RW2 10605,10312 10633,10369
+altes Verbundsteinpflaster, einige Wurzelhebungen	RW1;RW1 10633,10369 10685,10483 10689,10491 10776,10682 10856,10856
 	RW3;RW3 10500,10081 10521,10126 10580,10256
 	RW2;RW1 10580,10256 10605,10312
 altes Verbundsteinpflaster	RW1; 10500,10081 10467,10051 10424,9958 10357,9807 10361,9755
@@ -980,7 +980,7 @@ die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg gefü
 #: next_check_id: WARSCHAUER-2014
 #: source_id: 2147339535
 #: source_id: 2147339551
-#: last_checked: 2016-03-03
+#: last_checked: 2016-03-08
 #: check_frequency: 7d
 #: by: http://www.umbau-warschauer-strasse.de/images/bauinfos/Infoblatt_August_15-2.pdf
 #: XXX Radweg wegen Bauarbeiten aufgehoben
@@ -1026,12 +1026,12 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5542,11075 5459,11135
 #: XXX früher: Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5
 #: XXX bis Ende 2016, laut rbbtext bis 16.12.2016
 #: source_id: 2147339533
-#: last_checked: 2016-03-03
+#: last_checked: 2016-03-10
 #: next_check: 2016-06-01
 	RW0;RW0  5459,11135 5258,11285 5166,11343 5091,11406 5085,11413 4919,11605
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4919,11605 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
-#: last_checked: 2016-03-03
+#: last_checked: 2016-03-07
 #: check_frequency: 60d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1040,7 +1040,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX siehe auch 3nocross in gesperrt-orig
 #: XXX laut rbbtext bis 31.05.2016
 #: source_id: INKO_113041
-#: last_checked: 2016-03-03
+#: last_checked: 2016-03-07
 #: check_frequency: 60d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 9695,12390 9656,12386 9601,12380
@@ -1084,7 +1084,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10738,12364 10723,12346 10700,12315 10675,12280
 asphaltierter Radweg	RW1;RW2 11134,12793 11226,12945
 Busspur gilt Mo-Fr 7-14 Uhr	RW5; 10876,12563 10803,12470
 # REMOVED (zu weit entfernt von der anderen Seite) --- : next_check_id: VOSSSTR-2014
-#: last_checked: 2016-02-05
+#: last_checked: 2016-03-09
 #: XXX provisorischer Radstreifen, aber mittlerweile Richtung Westen (früher vor den Bauarbeiten war es Richtung Osten), evtl. wird später der alte Zustand wieder hergestellt: RW3;RW0
 	RW0;RW3 8740,11524 8834,11536 9058,11564
 	RW3; 9058,11564 9268,11590
@@ -1422,7 +1422,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 	RW3;RW3 11159,10769 11234,10739 11275,10723
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW4;RW4
-#: last_checked: 2016-03-03
+#: last_checked: 2016-03-09
 #: check_frequency: 90d
 	RW0;RW0 8804,12280 8775,12457
 	RW4;RW4 8775,12457 8766,12541
@@ -1430,7 +1430,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2016-03-03
+#: last_checked: 2016-03-09
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -1502,11 +1502,8 @@ die ersten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	
 	RW4;RW4 12126,13088 12163,13295
 	RW3;RW1 13493,11217 13541,11355
 # REMOVED --- #: next_check_id: WARSCHAUER-2014 --- #: XXX Gehweg für Radfahrer frei (aber zu voll um benutzbar zu sein) --- #: last_checked: 2015-07-01 --- #: check_frequency: 7d
-#: XXX Bauarbeiten an der Revaler Str., Radspuren zeitweise wieder aufgehoben
-#: last_checked: 2016-03-04
-#: check_frequency:7d
-#	RW3; 13541,11355 13588,11490 13603,11538
-	RW0; 13541,11355 13588,11490 13603,11538
+# REMOVED --- #: XXX Bauarbeiten an der Revaler Str., Radspuren zeitweise wieder aufgehoben --- #: last_checked: 2016-03-07 --- #: check_frequency:7d
+	RW3; 13541,11355 13588,11490 13603,11538
 	RW2; 13603,11538 13588,11490
 	RW1; 13588,11490 13541,11355
 	RW3;RW3 13603,11538 13651,11731
@@ -4530,7 +4527,7 @@ Tempo 10	RW6;RW6 13559,12779 13470,12990
 	RW4;RW3 14096,12827 14066,12836
 #: XXX wegen Bauarbeiten am Hochhaus "Upper West" sind die Radspuren aufgehoben
 #: by: http://www.tagesspiegel.de/berlin/stadtentwicklung-zwillingsturm-soll-2016-in-der-city-west-eroeffnen/7416454.html (geplante Eröffnung Mitte 2016)
-#: last_checked: 2016-03-03
+#: last_checked: 2016-03-10
 #: next_check: 2016-05-01
 #	RW3; 5488,10978 5613,10963 5652,11004
 ##: note: teilweise vor dem Hotel unterbrochen (wegen Ladezone?)

@@ -2324,6 +2324,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 9218,11793
 	X 9183,12076
 #: by: rjoop
+#: note: Anforderungsampel
+#: XXX_prog nicht relevant für Radwege
 	F 5356,11512
 	F 13800,7801
 #: note: Anforderungsampel
@@ -2580,7 +2582,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX temporäre Ampel (wegen Arbeiten an der Staatsoper und an der U-Bahn)
 #: XXX_prog Anforderungsampel
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
-#: last_checked: 2016-03-03
+#: last_checked: 2016-03-07
 #: check_frequency: 45d
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
@@ -2606,7 +2608,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: XXX temporäre Ampel (wegen gesperrten Gehweg?), Ampel ist eigentlich etwas weiter westlich
 #: XXX eigentlich gibt es sogar zwei Fußgängerampeln
-#: last_checked: 2016-02-08
+#: last_checked: 2016-03-09
 #: check_frequency: 60d
 	F::inwork 9812,12145
 # 

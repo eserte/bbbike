@@ -2240,8 +2240,11 @@ Schwingtor	BNP:3::trailer=10 14146,12921
 #: note: am 2013-08-15 war das Tor offen, am 2013-08-21 gegen 10 Uhr ebenso, am 2013-09-14 mittags geschlossen, am 2014-08-08 mittags offen, am 2015-02-14 mittags geschlossen
 Schwingtor	BNP:5::trailer=10 17490,13133
 Schwingtor	BNP:5::trailer=10 17684,13133
-#: note: am 2016-03-03 morgens war das Tor offen, ansonsten habe ich es nie vorher geschlossen gesehen (allerdings bin ich meistens nur abends vorbei)
+#: note: am 2016-03-03 morgens war das Tor zu, ansonsten habe ich es nie vorher geschlossen gesehen (allerdings bin ich meistens nur abends vorbei)
+#: note: am 2016-03-09 abends war das Tor zu
 Schwingtor	BNP:5::trailer=10 8369,13465
+#: note: am 2016-03-09 abends war das Tor zu
+Schwingtor	BNP:5::trailer=10 8363,13402
 Schranke	BNP:3::trailer=10 8623,13049
 Drängelgitter	BNP:3::trailer=10 18788,27989
 Schranke	BNP:3::trailer=10 -2162,17924
@@ -2722,7 +2725,7 @@ Pfarrhufenanger: noch in Bau, gesperrt	2::inwork 25599,13069 25441,12838 25266,1
 # 
 #: XXX Ende der Bauarbeiten?
 # REMOVED (als es noch in handicap_s-orig war) --- : XXX_prog: zu eng für Anhänger
-#: last_checked: 2016-02-05
+#: last_checked: 2016-03-09
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076 9559,13087
 # 
 #: last_checked: 2016-02-28 vvv
@@ -2770,7 +2773,7 @@ Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 144
 # REMOVED --- #: XXX vermutlich müssen auch Radfahrer die Umleitung nehmen --- #: source_id: IM_024686 --- #: next_check: 2015-05-29 --- #: priority: #A --- Rummelsburger Landstraße: zwischen Nalepastr. und Poggendorffweg wegen Baustelle gesperrt	1::inwork 17143,8565 17202,8391
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5561.html
-#: last_checked: 2016-01-28
+#: last_checked: 2016-03-10
 #: next_check: 2017-04-01
 Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,12669 6765,12680
 # 
@@ -2937,17 +2940,16 @@ Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Du
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
 #: osm_watch: way id="305153174" version="1"
-#: last_checked: 2016-03-03 vvv
+#: last_checked: 2016-03-07 vvv
 #: check_frequency: 90d vvv
+Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9996,12401 9994,12368 9943,12364
 Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10008,12274 9994,12368
-# ReMOVED (hier aufgehobe) --- Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9943,12364 9961,12273
+# REMOVED (hier aufgehobe) --- Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9943,12364 9961,12273
+#: XXX eigentlich für Fußgänger passierbar, aber UdL nur in Richtung Osten
 Niederlagstr.: Bauarbeiten, keine Zufahrt von Unter den Linden möglich	2::inwork 9943,12364 9934,12420
 #: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
-# 
-#: XXX prüfen, ob das noch gilt!
-Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9996,12401 9994,12368 9943,12364
 # 
 # REMOVED --- #: XXX t/cgi-mechanize.t (ca. Zeile 673) anpassen!
 # REMOVED --- #: next_check_id: STERNDAMM-2014
@@ -3006,7 +3008,7 @@ Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,689
 # 
 #: next_check_id: CHARITE-2014
 #: XXX eine Umleitung existiert, ist aber von der Westseite schwierig zu finden und könnte nachts gesperrt sein
-#: last_checked: 2016-03-03
+#: last_checked: 2016-03-09
 #: check_frequency: 90d
 An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8833,13440 8846,13412 8835,13376 8818,13365 8808,13377 8764,13372 8665,13353
 # 
@@ -3048,7 +3050,7 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 #: XXX siehe auch Eintrag in handicap_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0194-oberwallstrae-werderscher-markt.html
 #: osm_watch: way id="66071370" version="4"
-#: last_checked: 2016-02-08
+#: last_checked: 2016-03-09
 #: check_frequency: 100d
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9898,12161 9882,12259
 # 
@@ -3132,7 +3134,7 @@ Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12
 #: next_check_id: ^^^
 # 
 #: XXX Eröffnung 2019 geplant
-#: last_checked: 2016-02-08
+#: last_checked: 2016-03-09
 #: check_frequency: 120d
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
@@ -3145,7 +3147,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2016-03-03
+#: last_checked: 2016-03-09
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

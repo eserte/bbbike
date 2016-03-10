@@ -5,7 +5,6 @@
 #:
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14286,11186 14357,11148
 Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
-Revaler Str.: Bauarbeiten an der Kreuzung Warschauer Str.	q3::inwork 13588,11490 13711,11458
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
 Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
@@ -238,7 +237,7 @@ Brücke Schönfließer Str.: Fußgänger	q3 10593,16037 10592,15968 10575,15968
 Rolandufer: Gehweg, viele Fußgänger	q3 10837,12158 10660,12176 10591,12203 10583,12206
 Spreeufer: Gehweg, viele Fußgänger, im Sommer Straßencafe	q4 10583,12206 10492,12289 10424,12364 10422,12395
 Herthastr.: Gehweg, Bordsteine	q4 1935,9239 1932,9263
-Fuggerstr.: Gehweg	q2 6128,10319 6020,10351
+Fuggerstr.: einige Fußgänger	q1 6128,10319 6020,10351
 Pfalzburger Str.: Gehweg	q2 4905,10069 4910,10135
 Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 (Tilla-Durieux-Park): Fußgänger	q2 8467,11125 8410,11143
@@ -1694,7 +1693,8 @@ Brüder-Grimm-Gasse: Fußgänger	q2 8351,11163 8343,11133
 Fontaneplatz: Fußgänger, Bordsteinkante	q3 8474,11350 8427,11365
 (Fontaneplatz - Alte Potsdamer Str.): Fußgänger, schmal	q4 8427,11365 8389,11378
 Voxstr.: Fußgänger	q3 8309,11390 8375,11368
-Alice-Salomon-Park: getrennte Wege für Radfahrer und Fußgänger, Bordsteine	q2 6851,9365 6771,9458 6728,9457
+Alice-Salomon-Park: Fußgänger, Umfahrung an der Rosenheimer Str.	q1 6851,9365 6771,9458 6727,9497
+Alice-Salomon-Park: Fußgänger	q1 6771,9458 6728,9457
 (Geßlerstr. - Monumentenstr.): Fußgänger, Kinder	q2 7970,8886 7964,9060 8009,9063
 (Loewenhardtdamm - Höhndorfstr.): Fußgänger, Bordsteine, Schranken	q2 8334,8655 8438,8676
 (Weg d. Kol. Papestr.): Fußgänger	q1 8215,8631 8259,8628 8265,8305
