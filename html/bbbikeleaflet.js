@@ -511,7 +511,7 @@ function doLeaflet() {
 		}
 		trackPolyline = L.multiPolyline(trackSegs.polyline, {color:'#f00', weight:2, opacity:0.7}).addTo(map);
 		if (speedControl) {
-		    var kmh = trackSegs.lastKmH();
+		    var kmh = trackSegs.lastKmH(5);
 		    if (kmh == null) {
 			speedControl.getContainer().innerHTML = '0.0';
 		    } else {
@@ -972,19 +972,22 @@ TrackSegs.prototype.addGap = function(e) {
 TrackSegs.prototype._trimDigits = function(num,digits) {
     return num.toString().replace(new RegExp("(\\.\\d{" + digits + "}).*"), "$1");
 };
-TrackSegs.prototype.lastKmH = function(e) {
+TrackSegs.prototype.lastKmH = function(smooth) {
+    if (!smooth || smooth < 2) {
+	smooth = 2;
+    }
     // XXX this.upload is only available with enable_upload!!!
     if (this.upload.length >= 1) {
 	var lastSeg = this.upload[this.upload.length-1];
-	if (lastSeg.length >= 2) {
-	    var prelastUpl = lastSeg[lastSeg.length-2];
+	if (lastSeg.length >= smooth) {
+	    var prelastUpl = lastSeg[lastSeg.length-smooth];
 	    var lastUpl    = lastSeg[lastSeg.length-1];
 	    var timedelta = lastUpl.time - prelastUpl.time;
 	    if (timedelta <= 0) {
 		return null;
 	    }
 	    var lastPolySeg = this.polyline[this.polyline.length-1];
-	    var prelastPoly = lastPolySeg[lastPolySeg.length-2];
+	    var prelastPoly = lastPolySeg[lastPolySeg.length-smooth];
 	    var lastPoly    = lastPolySeg[lastPolySeg.length-1];
 	    var metersdelta = lastPoly.distanceTo(prelastPoly);
 	    return 3.6 * metersdelta / (timedelta / 1000); // m/s -> km/h
