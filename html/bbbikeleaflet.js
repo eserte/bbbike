@@ -295,15 +295,15 @@ function doLeaflet() {
 
 	    onAdd: function(map) {
 		var container = L.DomUtil.create('div', 'my-speedometer');
-		container.innerHTML = "0.0";
+		container.innerHTML = "&#8199;&#8199;.&#8199;"; // figure space
 		container.align = 'right';
 		container.style.background = 'white';
 		container.style.padding = '3px';
 		container.style.margin = '10px';
 		container.style.border = '3px black solid ';
 		container.style.borderRadius = '5px';
-		container.style.font = '48px sans';
-		container.style.width = '2.5em';
+		container.style.font = '42px sans-serif';
+		//container.style.width = '2.5em';
 		return container;
 	    }
 	});
@@ -320,15 +320,14 @@ function doLeaflet() {
 
 	    onAdd: function(map) {
 		var container = L.DomUtil.create('div', 'my-clock');
-		container.innerHTML = '&nbsp;';
+		container.innerHTML = '&#8199;&#8199;:&#8199;&#8199;:&#8199;&#8199;';
 		container.align = 'center';
 		container.style.background = 'white';
 		container.style.padding = '3px';
 		container.style.margin = '10px';
 		container.style.border = '3px black solid ';
 		container.style.borderRadius = '5px';
-		container.style.font = '48px sans';
-		container.style.width = '4.8em';
+		container.style.font = '42px sans-serif';
 		window.setInterval(function() {
 		    var now = new Date();
 		    container.innerHTML = sprintf("%02d:%02d:%02d", now.getHours(), now.getMinutes(), now.getSeconds());
@@ -513,9 +512,17 @@ function doLeaflet() {
 		if (speedControl) {
 		    var kmh = trackSegs.lastKmH(5);
 		    if (kmh == null) {
-			speedControl.getContainer().innerHTML = '0.0';
+			speedControl.getContainer().innerHTML = '\u20070.0';
 		    } else {
-			speedControl.getContainer().innerHTML = sprintf("%.1f", kmh);
+			var before = Math.floor(kmh);
+			var after = Math.floor(10*(kmh-before));
+			var pad = function(number) {
+			    if (number < 10) {
+				return "\u2007" + number;
+			    }
+			    return number;
+			}
+			speedControl.getContainer().innerHTML = pad(before) + "." + after;
 		    }
 		}
 	    }
