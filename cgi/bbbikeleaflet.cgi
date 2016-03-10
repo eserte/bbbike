@@ -36,6 +36,7 @@ my $enable_accel       = $q->param('accel') || 0;
 my $use_osm_de_map     = $q->param('osmdemap') || 0;
 my $devel              = $q->param('devel') || 0;
 my $route_title        = $q->param('routetitle');
+my $replay_trk         = $q->param('replaytrk');
 my $show_expired_session_msg;
 my $coords;
 if ($q->param('coordssession')) {
@@ -76,6 +77,7 @@ my $tpl = BBBikeLeaflet::Template->new
      show_speedometer         => $show_speedometer,
      coords                   => $coords,
      route_title              => $route_title,
+     replay_trk               => $replay_trk,
     );
 $tpl->process(\*STDOUT);
 

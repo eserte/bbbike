@@ -652,6 +652,34 @@ function doLeaflet() {
 
 	setFeatureListContent(listHtml);
     }
+
+    if (replayTrkJson) {
+	// XXX hack, so TrackSegs.lastKmH works XXX
+	enable_upload = true;
+
+	var replayTrkSegIndex = 0;
+	var replayTrkWptIndex = 0;
+	var showNextWpt = function() {
+	    var wpt = replayTrkJson.trackSegs[replayTrkSegIndex][replayTrkWptIndex];
+	    var latlng = L.latLng(Number.parseFloat(wpt.lat), Number.parseFloat(wpt.lng));
+	    var thisTime = Number.parseInt(wpt.time);
+	    var e = {"latlng":latlng, "pos":{"timestamp":thisTime,"coords":{"accuracy":Number.parseFloat(wpt.acc)}}};
+	    locationFoundOrNot('locationfound', e);
+	    replayTrkWptIndex++;
+	    if (replayTrkWptIndex >= replayTrkJson.trackSegs[replayTrkSegIndex].length) {
+		replayTrkSegIndex++;
+		replayTrkWptIndex = 0;
+		if (replayTrkSegIndex >= replayTrkJson.trackSegs.length) {
+		    // we're done
+		    return;
+		}
+	    }
+	    var nextWpt = replayTrkJson.trackSegs[replayTrkSegIndex][replayTrkWptIndex];
+	    var nextTime = Number.parseInt(nextWpt.time);
+	    window.setTimeout(function() { showNextWpt() }, nextTime - thisTime);
+	};
+	showNextWpt();
+    }
 }
 
 function getActualWidth() {

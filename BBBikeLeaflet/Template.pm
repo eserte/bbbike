@@ -36,6 +36,7 @@ sub new {
     my $show_expired_session_msg = delete $args{show_expired_session_msg};
     my $geojson_file             = delete $args{geojson_file};
     my $geojsonp_url             = delete $args{geojsonp_url};
+    my $replay_trk               = delete $args{replay_trk};
     my $show_feature_list        = delete $args{show_feature_list};
     my $show_speedometer	 = delete $args{show_speedometer};
     my $root_url                 = delete $args{root_url};
@@ -62,6 +63,7 @@ sub new {
 	   show_expired_session_msg => $show_expired_session_msg,
 	   geojson_file             => $geojson_file,
 	   geojsonp_url             => $geojsonp_url,
+	   replay_trk               => $replay_trk,
 	   show_feature_list        => $show_feature_list,
 	   show_speedometer         => $show_speedometer,
 	   root_url                 => $root_url,
@@ -85,6 +87,7 @@ sub process {
     my $show_expired_session_msg = $self->{show_expired_session_msg};
     my $geojson_file             = $self->{geojson_file};
     my $geojsonp_url             = $self->{geojsonp_url};
+    my $replay_trk               = $self->{replay_trk};
     my $show_feature_list        = $self->{show_feature_list};
     my $show_speedometer         = $self->{show_speedometer};
     my $root_url                 = $self->{root_url};
@@ -174,6 +177,10 @@ sub process {
 	    if ($geojsonp_url) {
 		print qq{<script>function geoJsonResponse(geoJson) { initialGeojson = geoJson }</script>\n};
 		print qq{<script type="application/javascript" src="$geojsonp_url"></script>\n};
+	    }
+	    if ($replay_trk) {
+		print qq{<script>function getReplayTrkJsonResponse(json) { replayTrkJson = json }</script>\n};
+		print qq{<script type="application/javascript" src="$replay_trk"></script>\n};
 	    }
 	    next;
 	}
