@@ -330,14 +330,8 @@ function doLeaflet() {
 		container.style.font = '48px sans';
 		container.style.width = '4.8em';
 		window.setInterval(function() {
-		    var pad = function(number) {
-			if (number < 10) {
-			    return '0' + number;
-			}
-			return number;
-		    }
 		    var now = new Date();
-		    container.innerHTML = pad(now.getHours()) + ':' + pad(now.getMinutes()) + ':' + pad(now.getSeconds());
+		    container.innerHTML = sprintf("%02d:%02d:%02d", now.getHours(), now.getMinutes(), now.getSeconds());
 		}, 1000);
 		return container;
 	    }
@@ -521,7 +515,7 @@ function doLeaflet() {
 		    if (kmh == null) {
 			speedControl.getContainer().innerHTML = '0.0';
 		    } else {
-			speedControl.getContainer().innerHTML = kmh.toString();
+			speedControl.getContainer().innerHTML = sprintf("%.1f", kmh);
 		    }
 		}
 	    }
