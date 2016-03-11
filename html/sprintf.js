@@ -47,7 +47,24 @@ function sprintf()
 	    else if (pType == 'c') subst = String.fromCharCode(parseInt(param));
 	    else if (pType == 'd') subst = parseInt(param) ? parseInt(param) : 0;
 	    else if (pType == 'u') subst = Math.abs(param);
-	    else if (pType == 'f') subst = (precision > -1) ? Math.round(parseFloat(param) * Math.pow(10, precision)) / Math.pow(10, precision): parseFloat(param);
+	    else if (pType == 'f')
+	    {
+		if (precision > -1) {
+		    subst = Math.round(parseFloat(param) * Math.pow(10, precision)) / Math.pow(10, precision);
+		    if ((subst+'').match(/.*\.(.*)$/)) {
+			var needToPad = precision - RegExp.$1.length;
+			if (needToPad > 0) {
+			    subst += new Array(needToPad+1).join('0'); // the x operator hack --- http://milan.adamovsky.com/2012/03/repetition-operator-in-javascript.html
+			}
+		    } else {
+			subst += '.' + new Array(precision+1).join('0');
+		    }
+		}
+		else
+		{
+		    subst = parseFloat(param);
+		}
+	    }
 	    else if (pType == 'o') subst = parseInt(param).toString(8);
 	    else if (pType == 's') subst = param;
 	    else if (pType == 'x') subst = ('' + parseInt(param).toString(16)).toLowerCase();
