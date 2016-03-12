@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: FahrinfoRealtime.pm,v 1.4 2008/01/15 21:02:20 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2010,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +19,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.05';
 
 use vars qw($icon);
 
@@ -122,134 +121,5 @@ sub start_browser {
     require WWWBrowser;
     WWWBrowser::start_browser($url);
 }
-
-__END__
-
-# Following the old code, not working anymore
-
-sub get_and_show_result {
-    my($haltestelle) = @_;
-    eval {
-	require LWP::UserAgent;
-	require XML::LibXML;
-	require CGI;
-	require Encode;
-
-	my $q = CGI->new({mstnr => $haltestelle,
-			  language => "d",
-			  client => "wap"});
-	CGI->import('-oldstyle_urls');
-	my $url = "http://www.fahrinfo-berlin.de/realtime/query?" . $q->query_string;
-	#XXX my $url = "file:/tmp/bla.wml";
-	main::status_message(M("Lade URL $url"), "info");
-	warn $url;
-	my $ua = LWP::UserAgent->new;
-	my $resp = $ua->get($url);
-	if (!$resp->is_success) {
-	    die M("Fehler beim Lesen der URL $url\n");
-	}
-	my $p = XML::LibXML->new;
-	$p->recover(1);
-	my $xml = $resp->content;
-	$xml =~ s{^[\s\r\n]*}{}gm;
-	Encode::from_to($xml, "iso-8859-1", "utf-8");
-
-	my $root = $p->parse_string($xml);
-	my $doc = $root->documentElement;
-
-warn "[$xml]";
-
-	if ($xml =~ /Ihre Eingabe konnte nicht interpretiert werden/i) {
-	    my($new_haltestelle) = $haltestelle =~ m{^(.*)\s+\S+$};
-	    if ($new_haltestelle && length($new_haltestelle) < length($haltestelle)) {
-		return get_and_show_result($new_haltestelle);
-	    }
-	    # else fall through...
-	}
-	if ($doc->findnodes("//option")) {
-	    my(@haltestellen) = map { $_->textContent } $doc->findnodes('//option/@value');
-	    show_haltestellen_selection(\@haltestellen);
-	} else {
-	    my $res = "";
-	    my $node_nr = 1;
-	    for my $node ($doc->findnodes("/wml/card/p")) {
-		if ($node_nr == 1) {
-		    $res .= $node->textContent . "\n"; # title
-		} elsif ($node->findnodes(".//a")) {
-		    # link, ignore
-		} else {
-		    my $text = $node->textContent;
-		    $res .= $text;
-		}
-		$node_nr++;
-	    }
-	    show_result($res);
-	}
-    };
-    if ($@) {
-	main::status_message($@, "err");
-    }
-}
-
-sub show_result {
-    my($res) = @_;
-    if ($Tk::VERSION < 804) {
-	$res = Encode::encode("iso-8859-1", $res);
-    }
-    my $txt = get_textwidget();
-    $txt->insert("1.0", $res);
-    
-}
-
-sub show_haltestellen_selection {
-    my($haltestellen) = @_;
-    if ($Tk::VERSION < 804) {
-	$haltestellen = [ map { Encode::encode("iso-8859-1", $_) } @$haltestellen ];
-    }
-    my $txt = get_textwidget();
-
-    my $linkcount = 0;
-    for my $haltestelle (@$haltestellen) {
-	$txt->insert("end", $haltestelle . "\n", "link$linkcount");
-	$txt->tagBind("link$linkcount", "<ButtonRelease-1>" =>
-		      [ sub {
-			    get_and_show_result($_[1]);
-			}, $haltestelle ]
-		     );
-	$linkcount++;
-    }
-
-    for (0 .. $linkcount-1) {
-	$txt->tagConfigure("link$_", -underline => 1, -foreground => "blue3");
-	$txt->tagBind("link$_", "<Enter>" => sub {
-			  $txt->configure(-cursor => "hand2");
-		      });
-	$txt->tagBind("link$_", "<Leave>" => sub {
-			  $txt->configure(-cursor => undef);
-		      });
-    }
-}
-
-sub get_textwidget {
-    my $t = main::redisplay_top($main::top, __PACKAGE__,
-				-title => M"Ist-Abfahrtszeiten",
-				-class => "BbbikePassive",
-			       );
-    if (defined $t) {
-	my $txt = $t->Scrolled("ROText", -scrollbars => "oe",
-			       -width => 40, -height => 20,
-			       -font => $main::font{fixed},
-			       -wrap => "word",
-			      )->pack(qw(-fill both -expand 1));
-	$t->Advertise(Text => $txt);
-    } else {
-	$t = $main::toplevel{__PACKAGE__ . ""};
-    }
-    my $txt = $t->Subwidget("Text");
-    $txt->delete("1.0", "end");
-    $txt;
-}
-
-1;
 
 __END__
