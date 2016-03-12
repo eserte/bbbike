@@ -14548,9 +14548,8 @@ sub show_info {
 	    $info_text->insert("end", "Google Maps (Original)",
 			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
 	    $show_url->($linkcount, sub {
-			    require CGI;
-			    my $q2 = CGI->new({ ll => "$py,$px" });
-			    my $url = "http://www.google.com/maps?" . $q2->query_string;
+			    my $scale = int(17 - log(($mapscale_scale)/2907)/log(2) + 0.5);
+			    my $url = "http://www.google.com/maps/\@$py,$px,${scale}z";
 			    $url;
 			});
 	    $info_text->insert("end", "\n");
