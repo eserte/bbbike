@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2007,2010,2011,2012,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2007,2010,2011,2012,2014,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.23;
+$VERSION = 1.24;
 
 use vars qw(%images);
 
@@ -32,10 +32,16 @@ sub register {
     my $is_berlin = $main::city_obj && $main::city_obj->cityname eq 'Berlin';
     # this order will be reflected in show_info
     if ($is_berlin) {
-	$main::info_plugins{__PACKAGE__ . "_DeinPlan"} =
-	    { name => "Pharus (dein-plan)",
-	      callback => sub { showmap_deinplan(@_) },
-	      callback_3_std => sub { showmap_url_deinplan(@_) },
+	$main::info_plugins{__PACKAGE__ . "_DeinPlan_Dynamic"} =
+	    { name => "Pharus (dein-plan, dynamisch)",
+	      callback => sub { showmap_deinplan_dynamic(@_) },
+	      callback_3_std => sub { showmap_url_deinplan_dynamic(@_) },
+	      ($images{Pharus} ? (icon => $images{Pharus}) : ()),
+	    };
+	$main::info_plugins{__PACKAGE__ . "_DeinPlan_Static"} =
+	    { name => "Pharus (dein-plan, statisch)",
+	      callback => sub { showmap_deinplan_static(@_) },
+	      callback_3_std => sub { showmap_url_deinplan_static(@_) },
 	      ($images{Pharus} ? (icon => $images{Pharus}) : ()),
 	    };
     }
@@ -684,7 +690,14 @@ sub showmap_livecom {
 ######################################################################
 # dein-plan, Pharus
 
-sub showmap_url_deinplan {
+sub showmap_url_deinplan_dynamic {
+    my(%args) = @_;
+    my $scale = int(17 - log(($args{mapscale_scale})/2863)/log(2) + 0.5);
+    if ($scale > 17) { $scale = 17 }
+    'http://m.deinplan.de/map.php#' . $scale . '/' . $args{py} . '/' . $args{px};
+}
+
+sub showmap_url_deinplan_static {
     my(%args) = @_;
     if (1) {
 	require Karte::Deinplan;
@@ -713,9 +726,15 @@ sub showmap_url_deinplan {
     }
 }
     
-sub showmap_deinplan {
+sub showmap_deinplan_dynamic {
     my(%args) = @_;
-    my $url = showmap_url_deinplan(%args);
+    my $url = showmap_url_deinplan_dynamic(%args);
+    start_browser($url);
+}
+
+sub showmap_deinplan_static {
+    my(%args) = @_;
+    my $url = showmap_url_deinplan_static(%args);
     start_browser($url);
 }
 
