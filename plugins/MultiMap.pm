@@ -79,16 +79,6 @@ sub register {
      	      ($images{BvgStadtplan} ? (icon => $images{BvgStadtplan}) : ()),
      	    };
     }
-    if (0) {
-	# Does not work anymore: URL gets redirected to
-	# http://intl.local.live.com/ page.
-	$main::info_plugins{__PACKAGE__ . "_LiveCom"} =
-	    { name => "maps.live.com",
-	      callback => sub { showmap_livecom(@_) },
-	      callback_3_std => sub { showmap_url_livecom(@_) },
-	      ($images{LiveCom} ? (icon => $images{LiveCom}) : ()),
-	    };
-    }
     $main::info_plugins{__PACKAGE__ . "_BikeMapNet"} =
 	{ name => "bikemap.net",
 	  callback => sub { showmap_bikemapnet(@_) },
@@ -216,8 +206,6 @@ DDQELSkBDPjgQMFIhBL5SAyYoGCHDgASlMQwQMFADCtPgJwwgUPKEhg0rCyRIUKFEitTSuVL
 SerUsieNAgEAOw==
 EOF
 	}
-
-    # XXX missing: LiveCom image
 
     if (!defined $images{Pharus}) {
 	# Fetched http://www.pharus-plan.de/px/head_kopf.jpg
@@ -571,29 +559,6 @@ sub showmap_bvgstadtplan {
     my(%args) = @_;
     my $url = showmap_url_bvgstadtplan(%args);
     start_browser($url);
-}
-
-######################################################################
-# maps.live.com
-# Seems to not work on seamonkey, but linux-firefox is OK
-
-sub showmap_url_livecom {
-    my(%args) = @_;
-
-    my $px = $args{px};
-    my $py = $args{py};
-    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    if ($scale > 13) {
-	$scale = 13; # schlechte Auflösung in Berlin und Umgebung
-    }
-    sprintf "http://maps.live.com/default.aspx?v=2&cp=%f~%f&style=h&lvl=%d&tilt=-90&dir=0&alt=-1000&encType=1",
-	$py, $px, $scale;
-}
-
-sub showmap_livecom {
-    my(%args) = @_;
-    my $url = showmap_url_livecom(%args);
-    start_browser_no_mozilla($url);
 }
 
 ######################################################################
