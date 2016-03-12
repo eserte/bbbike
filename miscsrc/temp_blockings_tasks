@@ -172,7 +172,6 @@ sub check_recurrences {
     } else {
 	$now_dt = DateTime->now;
     }
-    $now_dt = $now_dt->add(days => $prewarn_days);
 
     my @candidates;
     my $id = -1;
@@ -197,6 +196,12 @@ sub check_recurrences {
 	    if ($set) {
 		my $dt_last = DateTime->from_epoch(epoch => $record->{until});
 		my $dt_next = $set->can('next') ? $set->next($dt_last) : $set->following($dt_last); # next for ::Recurrence, ->following for ::Easter
+		my $this_prewarn_days = (
+					 defined $record->{recurrence_prewarn_days} && $record->{recurrence_prewarn_days} < $prewarn_days
+					 ? $record->{recurrence_prewarn_days}
+					 : $prewarn_days
+					);
+		$dt_next = $dt_next->subtract(days => $this_prewarn_days);
 		if ($dt_next <= $now_dt) {
 		    push @candidates, { record => $record, id => $id, date => $dt_next };
 		}
