@@ -14484,9 +14484,6 @@ sub show_info {
 	if (!$bbbike_google_photo) {
 	    $bbbike_google_photo = load_photo($top, 'bbbike_google');
 	}
-	if (!$google_streetview_photo) {
-	    $google_streetview_photo = load_photo($top, 'google_streetview');
-	}
 
 	{
 	    my @bbbike_google_map_defs = (($devel_host
@@ -14550,25 +14547,6 @@ sub show_info {
 	    $show_url->($linkcount, sub {
 			    my $scale = int(17 - log(($mapscale_scale)/2907)/log(2) + 0.5);
 			    my $url = "http://www.google.com/maps/\@$py,$px,${scale}z";
-			    $url;
-			});
-	    $info_text->insert("end", "\n");
-	    $linkcount++;
-
-	    if ($google_streetview_photo) {
-		$info_text->imageCreate("end", -image => $google_streetview_photo,
-					-align => "bottom", -padx => 2, -pady => 1);
-	    }
-
-	    $info_text->insert("end", "Google Maps (StreetView)",
-			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
-	    $show_url->($linkcount, sub {
-			    require CGI;
-			    my $q2 = CGI->new({ cbll => "$py,$px",
-						layer => 'c',
-						cbp => '0,0,,0,0', # whatever is the meaning of these params
-					      });
-			    my $url = "http://www.google.com/maps?" . $q2->query_string;
 			    $url;
 			});
 	    $info_text->insert("end", "\n");
