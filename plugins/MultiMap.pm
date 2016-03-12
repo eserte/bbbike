@@ -449,12 +449,7 @@ sub showmap_openstreetmap_sautter {
 sub show_openstreetmap_menu {
     my(%args) = @_;
     my $lang = $Msg::lang || 'de';
-    # XXX the sautter map seems to be defect since 2012 (only googlemap visible,
-    #     no transparency effect)
-    #     see discussions in http://forum.openstreetmap.org/viewtopic.php?id=15653
-    #     the replacement mentioned in
-    #     http://forum.openstreetmap.org/viewtopic.php?id=18081 also does not work
-    use constant USE_SAUTTER_MAP => 0;
+    use constant USE_SAUTTER_MAP => 1;
     my $w = $args{widget};
     my $menu_name = __PACKAGE__ . '_OpenStreetMap_Menu';
     if (Tk::Exists($w->{$menu_name})) {
