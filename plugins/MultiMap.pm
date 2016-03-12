@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.24;
+$VERSION = 1.25;
 
 use vars qw(%images);
 
@@ -94,15 +94,14 @@ sub register {
 	      ($images{Geofabrik} ? (icon => $images{Geofabrik}) : ()),
 	    };
     }
-    ## Not permalinkable anymore
-    # if ($is_berlin) {
-    # 	$main::info_plugins{__PACKAGE__ . "_BvgStadtplan"} =
-    # 	    { name => "BVG-Stadtplan",
-    # 	      callback => sub { showmap_bvgstadtplan(@_) },
-    # 	      callback_3_std => sub { showmap_url_bvgstadtplan(@_) },
-    # 	      ($images{BvgStadtplan} ? (icon => $images{BvgStadtplan}) : ()),
-    # 	    };
-    # }
+    if ($is_berlin) {
+     	$main::info_plugins{__PACKAGE__ . "_BvgStadtplan"} =
+     	    { name => "BVG-Stadtplan",
+     	      callback => sub { showmap_bvgstadtplan(@_) },
+     	      callback_3_std => sub { showmap_url_bvgstadtplan(@_) },
+     	      ($images{BvgStadtplan} ? (icon => $images{BvgStadtplan}) : ()),
+     	    };
+    }
     if (0) {
 	# Does not work anymore: URL gets redirected to
 	# http://intl.local.live.com/ page.
@@ -640,29 +639,23 @@ sub showmap_url_mapcompare {
 
 sub showmap_mapcompare { start_browser(showmap_url_mapcompare(@_)) }
 
-## XXX del? not permalinkable anymore...
-#######################################################################
-## BVG-Stadtplan
-#
-#sub showmap_url_bvgstadtplan {
-#    my(%args) = @_;
-#
-#    my $px = $args{px};
-#    my $py = $args{py};
-#    my $scale = $args{mapscale_scale};
-#
-#    my $map_zoom;
-#    if    ($scale < 18000) { $map_zoom = 4 } # best is 12000
-#    elsif ($scale > 37000) { $map_zoom = 3 } # best is 50000
-#    else                   { $map_zoom = 2 } # best is 25000
-#    sprintf "http://www.fahrinfo-berlin.de/Stadtplan/index?language=d&client=fahrinfo&mode=show&zoom=%d&ld=0.1&seqnr=1&location=,,WGS84,%s,%s&label=", $map_zoom, $px, $py
-#}
-#
-#sub showmap_bvgstadtplan {
-#    my(%args) = @_;
-#    my $url = showmap_url_bvgstadtplan(%args);
-#    start_browser($url);
-#}
+######################################################################
+# BVG-Stadtplan (via mc.bbbike.org)
+
+sub showmap_url_bvgstadtplan {
+    my(%args) = @_;
+
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = int(17 - log(($args{mapscale_scale})/3000)/log(2) + 0.5);
+    sprintf "http://mc.bbbike.org/mc/?lon=%s&lat=%s&zoom=%d&num=1&mt0=bvg", $px, $py, $scale;
+}
+
+sub showmap_bvgstadtplan {
+    my(%args) = @_;
+    my $url = showmap_url_bvgstadtplan(%args);
+    start_browser($url);
+}
 
 ######################################################################
 # maps.live.com
