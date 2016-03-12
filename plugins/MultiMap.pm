@@ -45,16 +45,6 @@ sub register {
 	      ($images{Pharus} ? (icon => $images{Pharus}) : ()),
 	    };
     }
-    if (0) {
-	# 2010-09-30: website still exists, but map does not work with
-	# three browsers (Seamonkey 1, Firefox 3, Chrome)
-	$main::info_plugins{__PACKAGE__ . "_GoYellow"} =
-	    { name => "GoYellow",
-	      callback => sub { showmap_goyellow(@_) },
-	      callback_3_std => sub { showmap_url_goyellow(@_) },
-	      ($images{GoYellow} ? (icon => $images{GoYellow}) : ()),
-	    };
-    }
     $main::info_plugins{__PACKAGE__ . "_WikiMapia"} =
 	{ name => "WikiMapia",
 	  callback => sub { showmap_wikimapia(@_) },
@@ -155,26 +145,6 @@ sub register {
 }
 
 sub _create_images {
-    if (!defined $images{GoYellow}) {
-	# Got from: http://www.goyellow.de/favicon.ico
-	$images{GoYellow} = $main::top->Photo
-	    (-format => 'gif',
-	     -data => <<EOF);
-R0lGODlhEAAQAPYAAAAASgAAWgAEWgAMUgAIWgAMWggMUggMWggQUggQWggUWhAUUhAUWhAY
-WhAcWhgcWgAQYwgQYxAcYxgcYxggWhggYxggcxgocyEkUiEgWikoUikoWiksWjEsUjEwUjk0
-Ujk4UiEkYyEoYyksYykwazE0azk8a0I8QkI4SkI8a2tZOUpBQkpBSlJFQlJJQlJNWkJBY1pR
-Y1pVY1JRe1pVc1pZc2NVQmtdWmthUmtha2Nhc3Ntc3ttc3txYzE4hFJZjFphjHtxhHN1lGNp
-pYxtKYxxKZR1KbV5AIx5UoR5c5R9a62GGLWKGLWOGL2OGL2SGL2WKYyCe7WWQqWSY6WWa62a
-a6WSc7Wie9aWAMaeKd6mCN6qCOeuAOeqCO+yAPe6AMaue86yc9a+e966c+fLc+fPe+/Pe+/T
-e/fXc/fXe/fbc/fbe//Xc/rUeP/Xe//bc//fe4yOrbWutda+hN7HhN7TpffXhP/7nPfnrf/n
-rc7P3ufjzv//1v//58zMzAAAACH5BAEAAH4ALAAAAAAQABAAAAfVgG6Cg4SFR3ltiG1ZKigg
-LkZbX5OHiHlICBUTDhQUHU+UljgSP0IzIZ0UGaCVUgBAe3x4URINCQ0dW4dtDBR1fXpyQRAD
-GLdGh1AAPXdxQz4RD1RpVRQrh0UGY3MWF0kyU2ApcDkYh0QObFYBAmdKZCIAbzvmeUsJYWgL
-L2sxahs37JA4cUiLAhhpyojhkeCKGTo1CiDL84VIghE0ShAoUEGHiQIanBz6wqVFgo0NHigg
-cOCByJFfuqhIlYpDkyMiKU7ywsTGBw8sioh8mQeL0aNIkwYCADs=
-EOF
-    }
-
     if (!defined $images{WikiMapia}) {
 	# Got from: http://wikimapia.org/favicon.ico
 	# and used only 32 colors
@@ -426,25 +396,6 @@ IzFSJgKlwg8hUkJNiYdDpHg0UIefyPAblgK+r4ihNZAIbAdLFED8HIuF78GYkwQGCnkLRzKG
 hyMhADs=
 EOF
     }
-}
-
-######################################################################
-# GoYellow
-
-sub showmap_url_goyellow {
-    my(%args) = @_;
-
-    my $px = $args{px};
-    my $py = $args{py};
-    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    sprintf "http://www.goyellow.de/map?lat=%f&lon=%f&z=%d&mt=1",
-	$py, $px, $scale;
-}
-
-sub showmap_goyellow {
-    my(%args) = @_;
-    my $url = showmap_url_goyellow(%args);
-    start_browser($url);
 }
 
 ######################################################################
