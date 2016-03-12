@@ -32,16 +32,16 @@ sub register {
     my $is_berlin = $main::city_obj && $main::city_obj->cityname eq 'Berlin';
     # this order will be reflected in show_info
     if ($is_berlin) {
-	$main::info_plugins{__PACKAGE__ . "_DeinPlan_Dynamic"} =
-	    { name => "Pharus (dein-plan, dynamisch)",
-	      callback => sub { showmap_deinplan_dynamic(@_) },
-	      callback_3_std => sub { showmap_url_deinplan_dynamic(@_) },
+	$main::info_plugins{__PACKAGE__ . "_DeinPlan_Leaflet"} =
+	    { name => "Pharus (dein-plan, Leaflet)",
+	      callback => sub { showmap_deinplan_leaflet(@_) },
+	      callback_3_std => sub { showmap_url_deinplan_leaflet(@_) },
 	      ($images{Pharus} ? (icon => $images{Pharus}) : ()),
 	    };
-	$main::info_plugins{__PACKAGE__ . "_DeinPlan_Static"} =
-	    { name => "Pharus (dein-plan, statisch)",
-	      callback => sub { showmap_deinplan_static(@_) },
-	      callback_3_std => sub { showmap_url_deinplan_static(@_) },
+	$main::info_plugins{__PACKAGE__ . "_DeinPlan_Web"} =
+	    { name => "Pharus (dein-plan, Web)",
+	      callback => sub { showmap_deinplan_web(@_) },
+	      callback_3_std => sub { showmap_url_deinplan_web(@_) },
 	      ($images{Pharus} ? (icon => $images{Pharus}) : ()),
 	    };
     }
@@ -559,14 +559,14 @@ sub showmap_bvgstadtplan {
 ######################################################################
 # dein-plan, Pharus
 
-sub showmap_url_deinplan_dynamic {
+sub showmap_url_deinplan_leaflet {
     my(%args) = @_;
     my $scale = int(17 - log(($args{mapscale_scale})/2863)/log(2) + 0.5);
     if ($scale > 17) { $scale = 17 }
     'http://m.deinplan.de/map.php#' . $scale . '/' . $args{py} . '/' . $args{px};
 }
 
-sub showmap_url_deinplan_static {
+sub showmap_url_deinplan_web {
     my(%args) = @_;
     if (1) {
 	require Karte::Deinplan;
@@ -595,15 +595,15 @@ sub showmap_url_deinplan_static {
     }
 }
     
-sub showmap_deinplan_dynamic {
+sub showmap_deinplan_leaflet {
     my(%args) = @_;
-    my $url = showmap_url_deinplan_dynamic(%args);
+    my $url = showmap_url_deinplan_leaflet(%args);
     start_browser($url);
 }
 
-sub showmap_deinplan_static {
+sub showmap_deinplan_web {
     my(%args) = @_;
-    my $url = showmap_url_deinplan_static(%args);
+    my $url = showmap_url_deinplan_web(%args);
     start_browser($url);
 }
 
