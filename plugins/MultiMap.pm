@@ -51,19 +51,6 @@ sub register {
 	  callback_3_std => sub { showmap_url_wikimapia(@_) },
 	  ($images{WikiMapia} ? (icon => $images{WikiMapia}) : ()),
 	};
-    if (0) {
-	# From the homepage (2010-09-30):
-	# "2010-02-05
-	# Sorry, because of a hardware failure, this site is currently disabled.
-	# As soon as i have time i will bring it back to live. For further questions, use the feedback form."
-	# So probably permanently down
-	$main::info_plugins{__PACKAGE__ . "_ClickRoute"} =
-	    { name => "ClickRoute",
-	      callback => sub { showmap_clickroute(@_) },
-	      callback_3_std => sub { showmap_url_clickroute(@_) },
-	      ($images{ClickRoute} ? (icon => $images{ClickRoute}) : ()),
-	    };
-    }
     $main::info_plugins{__PACKAGE__ . '_OpenStreetMap'} =
 	{ name => 'OpenStreetMap',
 	  callback => sub { showmap_openstreetmap(osmmarker => 0, @_) },
@@ -173,8 +160,6 @@ jbVTav81AGEEw9W3wYU1jMABeuoxoyJ5t4S3Ez5tjHjhDRwoKByF0W3YABsYynhECTYKJ6SQ
 VNCA4YUhAAA7
 EOF
     }
-
-    # XXX no image for clickroute.de yet
 
     if (!defined $images{OpenStreetMap}) {
 	# Fetched http://www.openstreetmap.org/images/mag_map.svg
@@ -423,26 +408,6 @@ sub showmap_url_wikimapia {
 sub showmap_wikimapia {
     my(%args) = @_;
     my $url = showmap_url_wikimapia(%args);
-    start_browser($url);
-}
-
-######################################################################
-# ClickRoute
-
-sub showmap_url_clickroute {
-    my(%args) = @_;
-
-    my $px = $args{px};
-    my $py = $args{py};
-
-    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    sprintf "http://clickroute.de/?center_lat=%s&center_lng=%s&zoom=%d&maptype=hybrid",
-	$py, $px, $scale;
-}
-
-sub showmap_clickroute {
-    my(%args) = @_;
-    my $url = showmap_url_clickroute(%args);
     start_browser($url);
 }
 
