@@ -130,6 +130,7 @@ EOF
        until => $isodate2epoch->("2015-05-10 20:00:00"),
        periodic => 1, # erster Termin im Jahr
        recurrences => [["yearly", days => 11, months => 4]],
+       recurrence_prewarn_days => 21,
        text  => "Rheinstraßenfest in der Rheinstraße zwischen Kaisereiche und Walther-Schreiber-Platz, am 09.05.2015 und 10.05.2015",
        data  => <<EOF,
 userdel	2::temp 5644,6936 5533,6753 5424,6584 5370,6486
@@ -6414,7 +6415,7 @@ EOF
        text  => 'Ringbahnstraße zwischen Manteuffelstraße und Schöneberger Straße gesperrt, Fahrbahnarbeiten bis 31.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 8717,6965 8447,6964
+userdel	2::inwork 8723,6958 8460,6959
 EOF
      },
      { from  => 1161036000, # 2006-10-17 00:00
@@ -11379,7 +11380,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_008378',
        data  => <<EOF,
-userdel	q4::inwork 7497,5610 7599,5553 7669,5536 7816,5519 7857,5519 8038,5521
+userdel	q4::inwork 7497,5610 7599,5553 7669,5536 7816,5519 7857,5519 8038,5514
 EOF
      },
      { from  => 1208546801, # 2008-04-18 21:26
@@ -11640,7 +11641,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_008845',
        data  => <<EOF,
-userdel	1::inwork 8496,4331 8618,4187 8615,4151
+userdel	1::inwork 8511,4336 8631,4183 8615,4151
 EOF
      },
      { from  => 1212098400, # 2008-05-30 00:00
@@ -11691,7 +11692,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009134',
        data  => <<EOF,
-userdel	2::inwork 8318,4558 8418,4432 8496,4331
+userdel	2::inwork 8318,4566 8427,4435 8511,4336
 EOF
      },
      { from  => 1215452791, # 
@@ -23984,7 +23985,8 @@ EOF
      { from  => $isodate2epoch->("2015-04-03 10:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2015-04-06 23:59:59"),
        periodic => 1,
-# findet es 2016 überhaupt statt? #       recurrences => [['easter', -2]], # Karfreitag
+       recurrences => [['easter', -2]], # Karfreitag
+       recurrence_prewarn_days => 10, # # findet es 2016 überhaupt statt?
        text  => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Veranstaltung (Osterfest Hauptstraße), Straße gesperrt (04.04.2015 - 06.04.2015)',
        type  => 'handicap',
        data  => <<EOF,

@@ -469,7 +469,7 @@ Sandgrasweg	1 2840,21141 2866,21103
 Max-Eyth-Str.	1 2506,6606 2566,6531 2611,6495
 (IKEA-Zufahrt)	1 8211,7034 8222,7053 8224,7148
 #: by: anonymous:
-Neumarkplan	1 12483,3929 12569,3764 12572,3731 12560,3697 12530,3669 12485,3658 12445,3674 12420,3707 12415,3743 12421,3767 12483,3929
+Neumarkplan	1 12485,3933 12572,3764 12578,3728 12560,3697 12530,3669 12485,3658 12445,3674 12420,3707 12415,3743 12421,3767 12485,3933
 #: confirmed_by: srt
 Mudrastr.	1 7370,2400 7324,2559 7289,2699 7308,2734 7384,2763 7489,2787
 #: by: Ansgar Petters:
@@ -589,7 +589,7 @@ Kleine Markusstr. - Krautstr.	1 11958,12112 11962,12034 12002,12008
 Schönstedtstr.	1 12540,8458 12649,8535
 # REMOVED (verkürzt) --- Eckertstr.	1 13608,12547 13522,12748
 Erkelenzdamm	1s:q3 11117,10326 11094,10261
-Alt-Tempelhof	1 8776,6661 8722,6656
+Alt-Tempelhof	1 8787,6660 8722,6656
 #: by: Steini (immerlocker)
 Langkofelweg	1 6845,3403 6940,3498 7018,3572
 Dornbrunner Str.	1 15954,6297 16043,6414
@@ -1312,7 +1312,7 @@ Sophie-Taeuber-Arp-Weg	1s:q1 3302,2476 3293,2218
 Johanna-Spyri-Weg	1s:q1 3211,2221 3221,2479
 # 
 #: note: nach Anmerkungen von Sandra Franz mit "q3" versehen:
-Seelbuschring	1s:q3 8485,4619 8432,4712 8242,4648
+Seelbuschring	1s:q3 8485,4619 8432,4712 8309,4700 8244,4649
 #: note: die Straßenbahn fährt hier auch lang
 Zionskirchstr.	1s:q1 10391,14280 10426,14262
 Walsroder Str.	1s:q3 6395,5154 6295,5158 6202,5163 6094,5171
@@ -1320,7 +1320,7 @@ Walsroder Str.	1s:q3 6395,5154 6295,5158 6202,5163 6094,5171
 Hünensteig	1s:q4 6419,5048 6387,5057
 Hünensteig	1s:q3 6387,5057 6395,5154
 #: note: Radfahren auf dem Uferweg ist wohl Sitte
-Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen	1s:q2 12119,9823 11946,9913 11735,10022 11512,10105
+Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen	1s:q2 12116,9825 11946,9913 11735,10022 11512,10105
 # REMOVED (wahrscheinlich alles nur ein Versehen) --- #: XXX Wie ist der Status der Einbahnstraße? Zurzeit ist das Einbahnstraßenschild überklebt, aber das Einfahrt-verboten-Schild nicht --- #: last_checked: 2014-12-04
 Stallschreiberstr.	1s:q1 10489,11405 10620,11244 10678,11172
 Jahnstr.	1s:q3 11500,9116 11509,9392
@@ -2716,6 +2716,7 @@ Theodorstr.: Bauarbeiten, gesperrt	2::inwork 24897,11083 24905,10955 24913,10884
 (Weg im Theodorpark)	2::inwork 24922,10785 24954,10770 25021,10768 25062,10762 25148,10769
 # 
 #: XXX Wann wird die Straße eröffnet? Wird die Straße verkehrsberuhigt sein?
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: osm_watch: way id="338546087" version="2"
 #: last_checked: 2015-08-02
 #: next_check: 2015-11-02 (public)
@@ -2761,7 +2762,7 @@ Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,1
 # REMOVED --- #: next_check_id: GREIFENHAGENER-2015 --- #: last_checked: 2015-06-30 --- #: check_frequency: 30d --- Greifenhagener Str.: Bauarbeiten, Einbahnstraße	1s:q2 11086,15772 11123,15851
 # 
 #: XXX vermutlich werden diese Abschnitte dauerhaft aufgegeben werden
-#: last_checked: 2016-03-05
+#: last_checked: 2016-03-13
 #: check_frequency: 60d
 Matthesstr., Beermannstr.: wegen Autobahnbaustelle gesperrt	2::inwork 14119,9368 14157,9345 14162,9381 14172,9457
 # 
@@ -2921,7 +2922,7 @@ Teisnacher Str.: fertiggestellt, aber noch gesperrt	2::inwork 19871,9680 19859,9
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 # 
 #: note: allerdings könnte man sein Fahrrad über den Betonpfeiler rübertragen
-#: last_checked: 2016-03-04
+#: last_checked: 2016-03-13
 #: check_frequency: 120d
 am Osthafen: durch Barriere versperrt	2::inwork 14259,10309 14463,10212
 # 

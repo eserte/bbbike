@@ -364,11 +364,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 9240,8028
 	X 8715,7384
 	X 9242,6962
-	X 8717,6965
-	X 8447,6964
+	X 8723,6958
+	X 8460,6959
 	X 9242,7145
 	X 9242,7044
-	X 8735,6695
+	X 8739,6701
 	X 9249,6642
 	X 9247,6687
 	X 9254,6542
@@ -552,6 +552,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 14006,13761
 	X 9426,3797
 	X 9455,3671
+#: XXX_prog: für rechtsabbiegende Radfahrer auf dem Radweg aus der Rixdorfer Str. nach Alt-Mariendorf nicht relevant (Radweg wird vor der Ampel nach rechts geführt)
 	X 9953,3806
 	X 10294,6440
 #: note: Richtung Süden in geringer Entfernung noch eine zusätzliche Fußgängerampel
@@ -1409,8 +1410,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 5482,4965
 	F 6115,5302
 	X 6134,5800
-	X 8318,4558
-	X 8496,4331
+	X 8318,4566
+	X 8511,4336
 	X 8615,4151
 #: note: Anforderungsampel
 	F 6102,4726
@@ -2040,6 +2041,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 7696,7562
 	X 12588,6337
 	X 12597,6293
+#: note: Anforderungsampel
 	F 12694,2544
 #: note: Anforderungsampel
 	F 17834,11192
@@ -2981,7 +2983,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -12655,-1714
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
 #: next_check_id: KIEFHOLZ-2015 vvv
-#: last_checked: 2016-02-27 vvv
+#: last_checked: 2016-03-13 vvv
 #: check_frequency: 90d vvv
 	X::inwork 14151,8967
 	X::inwork 14363,8738

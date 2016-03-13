@@ -260,7 +260,7 @@ Bus 334	busroute_N -7330,7878 -7070,7984 -6986,8074 -6869,8150 -6669,8207 -6460,
 Bus 334	busroute_N -5454,6896 -5349,6836 -5123,6701 -5064,6853
 Bus 697	busroute_N -6480,5713 -6319,5606
 Bus 184, Bus 248	busroute_N 7949,7607 8263,7611
-Bus 184	busroute_N 8263,7611 8267,7572 8302,7508 8376,7440 8386,7430 8429,7403 8479,7389 8604,7381 8715,7384 8806,7382 8879,7378 8971,7359 9051,7340 9107,7297 9242,7286
+Bus 184	busroute_N 8263,7611 8267,7572 8302,7508 8376,7440 8386,7430 8429,7403 8479,7389 8604,7381 8715,7384 8806,7382 8886,7377 8971,7359 9051,7340 9107,7297 9242,7286
 Bus 106	busroute_N 8061,5939 7980,5944 7832,5955 7730,5958 7692,5960 7607,5944
 Bus 106, Bus 204	busroute_N 7578,8358 7494,8354 7497,8168
 Bus M46, Bus 106	busroute_N 7696,7771 7774,7724
@@ -425,7 +425,7 @@ Bus M77, ...	busroute_N 8495,2080 8565,2003 8607,1898
 Bus 179	busroute_N 9106,3703 9128,3580
 Bus 179	busroute_N 11791,834 11794,550
 Bus M77	busroute_N 9731,3889 9751,3769
-Bus 282	busroute_N 10185,4187 10269,4136 10355,4085 10409,4060 10586,4039 10756,4018 10978,4075 11014,4347 10879,4360 10802,4367 10715,4296 10613,4308 10526,4319 10462,4326 10371,4337 10288,4354
+Bus 282	busroute_N 10185,4187 10269,4136 10355,4085 10409,4060 10586,4039 10756,4018 10978,4075 11014,4347 10879,4360 10802,4367 10731,4302 10614,4314 10550,4320 10462,4328 10371,4337 10288,4354
 Bus 181	busroute_N 14023,4475 14295,4462 14299,4383 14239,4367 14164,4271 14119,4153
 Bus M46	busroute_N 14290,3908 14238,3857 14185,3734 14141,3614 14056,3374 14023,3276
 Bus 172, ...	busroute_N 15301,3038 15254,2926 15174,2773 15078,2647 14946,2519
@@ -716,7 +716,7 @@ ausgeschildert als Darßer Str.	CP2; 16277,17830 16269,17759
 Straße geht rechts von Siemes Schuhcenter ab	CP2; 12908,17807 12918,17736
 Rehauer Pfad: Anlieger frei	CS 7587,3411 7626,3554
 Ausgeschildert als "Durchgang zum Döhlauer Pfad"	CP2; 7790,3369 7800,3435
-Ausgeschildert als "Zum Neumarkplan"	CP2; 12673,3619 12621,3659
+Ausgeschildert als "Zum Neumarkplan"	CP2; 12673,3619 12624,3659
 (Schönefelder Chaussee - Mauerweg): über den Altglienicker Tunnel	CS 18760,-8 18574,68 18568,28 18560,75 18544,86
 Augusta-Ufer: nicht ausgeschildert	CS -3501,14365 -3440,14498 -3331,14628 -3255,14685
 #: note: früher möglicherweise "Straße 606 a"
@@ -1110,7 +1110,9 @@ Albrechtstr. - Selerweg: an der Kreuzung Klingsorstr./Neue Filandastr. abbiegen	
 (Verlängerte Hertzallee): TU-Gelände	CS 5352,11502 5296,11529 4950,11696 4905,11785
 Im Brachfeldwinkel: ausgeschildert zum "Schwedenhaus"	CP2; 3024,21286 3068,21150
 Im Brachfeldwinkel: ausgeschildert zum "Schwedenhaus"	CP2; 3068,21150 3024,21286
-Altes Gaswerk Mariendorf: ausgeschildert "Marienpark" und "Kaiser's"	CP2; 8295,4303 8266,4221
+# REMOVED (mittlerweile existiert ein Straßenschild) --- Altes Gaswerk Mariendorf: ausgeschildert "Marienpark" und "Kaiser's"	CP2; 8295,4303 8266,4221
+#: XXX sind die Straßen mittlerweile ausgeschildert? vvv
 Altes Gaswerk Mariendorf: ausgeschildert "Marienpark"	CP2; 8461,3410 8404,3648
 Im Marienpark: nicht ausgeschildert	CP2; 8404,3648 8346,3633
+#: XXX ^^^
 Str. 156: nicht ausgeschildert	CP2; 17532,15645 17570,15658
