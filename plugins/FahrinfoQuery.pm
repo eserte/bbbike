@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2013,2014,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013,2014,2015,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ package FahrinfoQuery;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.14';
+$VERSION = '0.15';
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
@@ -69,12 +69,12 @@ my $bbbike_root = bbbike_root;
 #my $openvbb_2013_year = 2015;
 #my $openvbb_2013_bbd_file = "$bbbike_root/tmp/vbb_${openvbb_2013_year}_3.bbd";
 
-my $openvbb_2013_download_size = '28MB';
-my $openvbb_2013_data_url = 'http://www.vbb.de/de/download/GTFS_VBB_Nov2015_Dez2016.zip';
+my $openvbb_2013_download_size = '24MB';
+my $openvbb_2013_data_url = 'http://www.vbb.de/de/download/GTFS_VBB_Feb_Dez2016.zip';
 my $openvbb_2013_archive_file = "$bbbike_root/tmp/" . basename($openvbb_2013_data_url);
 my $openvbb_2013_local_file = "$bbbike_root/tmp/" . basename($openvbb_2013_data_url, '.zip') . '_stops.txt';
-my $openvbb_2013_year = 2015;
-my $openvbb_2013_bbd_file = "$bbbike_root/tmp/vbb_${openvbb_2013_year}_4.bbd";
+my $openvbb_2013_year = 2016;
+my $openvbb_2013_bbd_file = "$bbbike_root/tmp/vbb_${openvbb_2013_year}_1.bbd";
 
 my $search_net;
 
@@ -585,7 +585,11 @@ sub _download_vbb_2013_stops () {
 
 sub _extract_vbb_2013_stops () {
     require Archive::Zip;
-    my $zip = Archive::Zip->new($openvbb_2013_archive_file);
+    if (!-e $openvbb_2013_archive_file) {
+	die "The file $openvbb_2013_archive_file does not exist";
+    }
+    my $zip = Archive::Zip->new($openvbb_2013_archive_file)
+	or die "Can't read zip file $openvbb_2013_archive_file";
     $zip->extractMember('stops.txt', $openvbb_2013_local_file) == Archive::Zip::AZ_OK()
 	or die "Failure while extracting 'stops.txt' from '$openvbb_2013_archive_file'";
 }
