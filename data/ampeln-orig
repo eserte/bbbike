@@ -669,8 +669,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 8024,15401
 	X 8016,15085
 	X 8919,16154
-#: XXX existiert diese Ampel noch?
+#: next_check_id: AMNORDHAFEN-2016
+#: XXX bleibt diese Ampel noch bestehen?
 #: osm_watch: node id="3777205508" version="1"
+#: last_checked: 2016-03-16
+#: check_frequency: 60d
 	X 7527,14684
 	X -3251,14741
 	X -3295,14777
@@ -2808,7 +2811,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: source_id: 2147339543 vvv
 #: XXX laut rbbtext bis 30.06.2016
 #: XXX laut fritz bis 31.07.2016
-#: last_checked: 2016-02-26 vvv
+#: last_checked: 2016-03-15 vvv
 #: next_check: 2016-06-30 vvv
 	F 10703,11837
 	F 10656,11887

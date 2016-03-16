@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2016-03-11
+#: last_checked: 2016-03-16
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -914,7 +914,7 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 # 
 #: by: http://www.bwb.de/content/language1/html/10337.php#11671
 #: osm_watch: way id="75509950" version="11"
-#: last_checked: 2016-03-13
+#: last_checked: 2016-03-15
 #: check_frequency: 60d
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12085,9778 12074,9689 12066,9558
 #: by: ^^^
@@ -924,7 +924,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12085,977
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="13"
-#: last_checked: 2016-03-13
+#: last_checked: 2016-03-15
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -1002,7 +1002,7 @@ Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbi
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012
-#: last_checked: 2016-02-04
+#: last_checked: 2016-03-15
 #: check_frequency: 180d
 Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
 # 
@@ -1274,7 +1274,7 @@ Soldiner Str.: grundhafte Erneuerung, evtl. verschwindet das Kopfsteinpflaster d
 #: XXX Ziffer 1 - George-Stephenson-Str.
 #: XXX Ziffer 5 - Lydia-Rabinowitsch-Kempner-Str.
 #: XXX Ziffer 6 - Annemarie-Renger-Str.
-#: last_checked: 2015-03-13 vvv
+#: last_checked: 2016-03-16 vvv
 #: next_check: 2016-12-31 vvv
 Kieler Brücke - Heidestraße, Rad/Gehweg	?::projected 7740,14409 7621,14341
 #: osm_watch: way id="237716440" version="3"
@@ -1376,9 +1376,7 @@ Straße 46: ist hier bereits die Mittelstr.?	? 14320,20580 14482,20547
 #: priority: #A
 Steglitzer Festwoche im Bäkepark: gibt es während der Festwoche Einschränkungen für Radfahrer? Wenn ja, wo genau?	? 4742,4885 4760,4843 4795,4801 4848,4668 4870,4609 4957,4448 5015,4339 5090,4291 5129,4262 5246,4240 5320,4217 5337,4192
 # 
-#: by: fritz
-#: source_id: 2147339783
-Sellerstr.: Bauarbeiten zwischen Nordhafen und Müllerstr., gibt es für Radfahrer Einschränkungen?	? 7741,14560 8057,14876
+# REMOVED (keine Einschränkungen) --- #: by: fritz --- #: source_id: 2147339783 --- Sellerstr.: Bauarbeiten zwischen Nordhafen und Müllerstr., gibt es für Radfahrer Einschränkungen?	? 7741,14560 7968,14787 8057,14876
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5616&options=4
 Finckensteinallee: gibt es hier Bordsteine oder Handicaps durch Fußgängerverkehr?	? 4115,2739 4170,2727
@@ -1493,7 +1491,7 @@ EUREF-Campus: Innenfläche wird benannt; genaue Wegführung, Qualität?	? 7250,8223
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5207
 #: XXX angestrebt zum 2016-07-05
-#: last_checked: 2016-03-01
+#: last_checked: 2016-03-15
 #: next_check: 2016-07-05
 Parkweg: Umbenennung in Bernhard-Langwaldt-Weg?	? 14652,10201 14626,10162 14597,10129 14558,10082 14453,9929 14448,9922 14404,9847 14361,9772 14318,9688
 # 
@@ -1648,7 +1646,8 @@ Fanny-Zobel-Str.	? 13975,10187 14049,10164
 #: XXX ggfs. Sackgassen aufheben
 #: XXX PLZ=14167
 #: XXX "Biesheimring" im DPAG-Mitteilungsblatt, im Amtsblatt "Biesheimer Ring", auf dem Straßenschild "Biesheimring"
-#: osm_watch: way id="4706348" version="17"
+#: XXX laut osm kein access=no mehr --- also fertig?
+#: osm_watch: way id="4706348" version="18"
 Biesheimring: genaue Lage? Straße wird asphaltiert sein. Fertigstellung?	? 2031,3004 2074,3032 1993,3170 1946,3142
 #: osm_watch: way id="156817982" version="10"
 Lutterbacher Str.: genaue Lage? Qualität? Fertigstellung?	? 2183,3101 2074,3032 1993,3170 2094,3231
@@ -1855,7 +1854,7 @@ Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14705&options=8
 #: osm_watch: way id="47155976" version="10"
-#: last_checked: 2016-03-04
+#: last_checked: 2016-03-15
 #: check_frequency: 14d
 Weichselplatz: vielleicht wird hier asphaltiert?	?::inwork 12851,9309 12761,9190
 # 
@@ -2084,7 +2083,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: XXX_prog ^^^
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20141202.1525.400470.html
-#: last_checked: 2016-03-11
+#: last_checked: 2016-03-15
 #: check_frequency: 90d
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 
@@ -2592,7 +2591,7 @@ Stangenhagen - Hennickendorf: Qualität? genaue Wegführung?	? -9710,-22155 -9815,
 Kammerode - Elisabethhöhe: laut "Berliner Umland" witterungsabhängige Strecke	? -24174,-8751 -24541,-7940
 Glindow - Pertzow: laut "Berliner Umland" witterungsabhängige Strecke	? -22862,-5171 -22559,-5382 -22122,-5981 -21798,-6293 -21476,-6491 -21086,-7142 -20740,-7375
 Werder - zum Plessower See: genaue Wegführung? Qualität?	? -22042,-2060 -22734,-2249 -22933,-2411 -23320,-2574
-Alt-Brieselang - Brieselang: Qualität? genaue Wegführung?	? -16914,22393 -18103,22064 -17978,21602 -18415,21465 -18378,20766 -18817,19637
+Alt-Brieselang - Brieselang: Qualität? genaue Wegführung?	? -16837,22432 -18103,22064 -17978,21602 -18415,21465 -18378,20766 -18817,19637
 Marquardt, Hauptstr.: Laut mobil-potsdam.de: Asphaltiert	? -18811,4782
 # REMOVED (keine Einbahnstraßenregelung gesehen) --- Schornsteinfegergasse (Potsdam): Ist die Straße eine Einbahnstraße, und wenn ja, gilt das auch für Radfahrer?	? -10535,-1809 -10440,-1836 -10425,-1773
 Hermann-Maaß-Str.: Qualität?	? -9421,-1103 -9390,-1145 -9353,-1194 -9204,-1194 -9176,-1188

@@ -10292,7 +10292,7 @@ EOF
        text  => 'L 161 B 5 Bredow - Paaren Kreisverkehr westl. AS Falkensee in Ri. Paaren Straaßenbau, Umbau KVK Vollsperrung 16.10.2007-08.11.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -18577,24383 -19282,23081
+userdel	q4::inwork -18577,24383 -19320,23087
 EOF
      },
      { from  => 1192310001, # 2007-10-13 23:13
@@ -18253,7 +18253,7 @@ EOF
        type  => 'gesperrt',
        source_id => '101100060',
        data  => <<EOF,
-userdel	2::inwork -19282,23081 -17931,23152
+userdel	2::inwork -19320,23087 -18020,23180
 EOF
      },
      { from  => 1280677738, # 2010-08-01 17:48
@@ -23986,7 +23986,7 @@ EOF
        until => $isodate2epoch->("2015-04-06 23:59:59"),
        periodic => 1,
        recurrences => [['easter', -2]], # Karfreitag
-       recurrence_prewarn_days => 10, # # findet es 2016 überhaupt statt?
+       recurrence_prewarn_days => 3, # # findet es 2016 überhaupt statt?
        text  => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Veranstaltung (Osterfest Hauptstraße), Straße gesperrt (04.04.2015 - 06.04.2015)',
        type  => 'handicap',
        data  => <<EOF,
