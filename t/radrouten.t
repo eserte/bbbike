@@ -91,6 +91,9 @@ for my $test_def (@test_defs) {
     my $resp_map = $ua->post($url, \@inputs);
     ok $resp_map->is_success, "$name ... map"
 	or diag "POSTing to $url failed: " . $resp_map->status_line;
+    my $map_content = $resp_map->decoded_content(charset => 'none');
+    unlike $map_content, qr{<HEAD><TITLE>MapServer Message</TITLE></HEAD>}, "MapServer Message (error?) detected for $name ... map";
+    unlike $map_content, qr{(Unknown identifier|Parsing error near)}, "MapServer error detected for $name ... map";
 
     for my $i (0 .. $#inputs) {
 	if ($inputs[$i] eq 'showroutelist') {
