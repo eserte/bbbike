@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2005,2012,2013,2014,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2005,2012,2013,2014,2015,2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -238,8 +238,7 @@ EOF
 		my $label_html = "&#xa0;&#xa0;&#xa0;" . CGI::escapeHTML($label);
 		my @coords_with_directions = lines_to_coords_with_directions(@{ $current_alternatives{$alt}->{coords_with_directions} });
 		push @html, generate_single_html(coords_with_directions => \@coords_with_directions,
-						 # XXX should also find_nearest_to_center()
-						 center => $coords_with_directions[0]->[0],
+						 center => find_nearest_to_center([ map { $_->[1] } @{ $current_alternatives{$alt}->{coords_with_directions} }], $center),
 						 label => $label,
 						 label_html => $label_html,
 						 @common_html_args,
