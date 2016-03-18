@@ -1137,6 +1137,8 @@ Tor	culdesac 10162,15349
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+#: note: als Radfahrer/Fußgänger kann man über den Gehweg weiterfahren/gehen
+	culdesac_pseudo 17837,10425
 	culdesac_pseudo 17526,14531
 	culdesac_pseudo 10097,15856
 	culdesac_pseudo 10118,15754

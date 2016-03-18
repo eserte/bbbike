@@ -13,7 +13,7 @@
 #: source_id: 2147339819	
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.415646.php
 #: XXX laut vmz bis Mitte Mai 2016, laut fritz bis 13.05.2016
-#: last_checked: 2016-03-13 vvv
+#: last_checked: 2016-03-17 vvv
 W¸hlischstr.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 14575,11407 14674,11370
 W¸hlischstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14674,11370 14737,11347 14759,11339 14771,11345
 #: last_checked ^^^
@@ -83,11 +83,11 @@ Beuthstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10201,11631 10235,11610 10330,
 # 
 #: XXX bis wann dauert die Sperrung an?
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6992 (Frage nach Ende der Bauarbeiten)
-#: last_checked: 2016-03-16
+#: last_checked: 2016-03-17
 Michaelkirchplatz: Sperrung der Fahrbahn am Engelbecken	q2::inwork 11415,11392 11349,11227
 # 
 #: XXX bis wann dauert die Sperrung an? Wird die Straﬂe dann asphaltiert sein? (siehe auch ƒnderung in qualitaet_s-orig, "provisorischer Asphalt")
-#: last_checked: 2016-03-16
+#: last_checked: 2016-03-17
 Leuschnerdamm: Sperrung der Fahrbahn Richtung Michaelkirchplatz	q4::inwork; 11458,11136 11473,11180
 # 
 #: XXX nach den Bauarbeiten bessere Qualit‰t?
@@ -753,8 +753,8 @@ Spreekanalufer: Umfahrung an der Straﬂe Fischerinsel, Fuﬂg‰nger	q3::inwork 10672
 # REMOVED (danach wieder folgendes aktivieren) --- (Fischerinsel, Spreekanalufer): Fuﬂg‰nger	q1 10672,11870 10776,11942
 (Fischerinsel, Spreekanalufer): Fuﬂg‰nger	q1 10776,11942 10824,11992
 (Baikalstr. - Rummelsburger Str.): Fuﬂg‰nger	q1 17281,10598 17249,10666
-(Baikalstr. - Rummelsburger Str.): Fuﬂg‰nger	q1 17249,10702 17247,10755 17261,10827 17258,10870
-(Tr‰nkegraben - Eggersdorfer Str./Rummelsburger Str.): Fuﬂg‰nger	q1 17261,10827 17228,10860
+(Baikalstr. - Rummelsburger Str.): Fuﬂg‰nger	q1 17249,10702 17247,10755 17261,10827 17257,10875
+(Tr‰nkegraben - Eggersdorfer Str./Rummelsburger Str.): Fuﬂg‰nger	q1 17261,10827 17226,10865
 Verl. P¸cklerstr.: Fuﬂg‰nger, Hundeauslaufgebiet	q1 1553,6741 1348,6701 1152,6659 967,6620 905,6631 880,6645 832,6607 778,6603 698,6592 640,6576 546,6583 369,6594 340,6598 218,6571
 Weimarer Str.: Fuﬂg‰nger	q1 4101,11347 4101,11233
 Norwegerstr. - Behmstr.: Rampe	q2 10022,16237 10026,16165 10055,16104 10065,16110 10045,16157
@@ -2264,6 +2264,8 @@ Stelzenweg, Straﬂe 26a: zahlreiche Bodenschwellen, mit Normalrad gut umfahrbar	q
 (Kleiner Tiergarten): Fuﬂg‰nger	q2 6390,13187 6377,13321
 (Einsteinufer - TU-Mathegeb‰ude): Fuﬂg‰nger	q2 5128,12149 5106,12129 5141,11816
 (Mauerpark, ¸ber den Gleimtunnel): Fuﬂg‰nger, einige enge Kurven	q2 10081,15853 10046,15844 10061,15775 10045,15754 10079,15661 10091,15630 10070,15624
+#: XXX_prog BS, ansonsten q1 (was aber bei der kurzen Strecke eh' nicht erreicht werden kann)
+Delbr¸ckstr.: flacher Bordstein, Fuﬂg‰nger	q2 17123,10844 17141,10838
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

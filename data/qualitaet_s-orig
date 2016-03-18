@@ -160,7 +160,7 @@ Corneliusstr.: mäßiges Kopfsteinpflaster	Q2 6880,11110 6841,11114 6630,11247 647
 Kopernikusstr.: mäßiges Kopfsteinpflaster	Q2 13467,11778 13651,11731
 Torellstr.: mäßiges Kopfsteinpflaster	Q2 13295,11792 13467,11778
 #: XXX Bauarbeiten, danach vielleicht teilweise bessere Qualität?
-#: last_checked: 2016-03-16
+#: last_checked: 2016-03-17
 #: check_frequency: 60d
 Rüdersdorfer Str.: Asphalt mit Schäden	Q1- 13295,11792 13173,11788 13066,11854
 Kaskelstr.: relative glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
@@ -182,8 +182,12 @@ Fischerstr.: Asphaltstreifen in der Mitte	Q0- 16080,10743 16181,10609
 Fischerstr.: glattes Kopfsteinpflaster	Q1- 16181,10609 16193,10593 16220,10555
 Fischerstr.: Asphalt	Q0 16038,10818 16080,10743
 Fischerstr.: Kopfsteinpflaster	Q2 15982,10765 16080,10743
-Wallensteinstr./Neuer Feldweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 17365,9654 17360,9629 17425,9605 17456,9594 17549,9529 18037,9195
-Wallensteinstr.: Asphalt mit einigen Schäden	Q1+ 18037,9195 18092,9141 18134,9080
+Wallensteinstr./Neuer Feldweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 17365,9654 17360,9629
+#: note: mindestens eine Ausfahrt besteht aus groben Kopfsteinpflaster mit großen Fugen, deshalb nur Q2+
+Wallensteinstr./Neuer Feldweg: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg Verbundsteinpflaster	Q2+; 17360,9629 17425,9605 17456,9594 17549,9529 18037,9195
+#: note: aber teilweise keine abgesenkten Bordsteine, deshalb nur Q2
+Wallensteinstr./Neuer Feldweg: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg Verbundsteinpflaster/Mosaikpflaster	Q2; 18037,9195 17549,9529 17456,9594 17425,9605 17360,9629
+Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
 Dönhoffstr.: Asphalt	Q0 18134,9080 18161,9029 18221,8978 18299,8925 18375,8874 18451,8823 18518,8778 18609,8717 18733,8633
 #: confirmed_by: Sabine Plagens vvv
 Halker Zeile: schlechtes Kopfsteinpflaster	Q3 9940,559 10063,251 10156,13 10214,-142 10266,-284
@@ -766,7 +770,7 @@ An der Güterbahn: Asphalt	Q0 14898,1834 14676,1777
 (Matthäusweg - Friedrich-Kayßler-Weg): Kleinpflaster	Q1 14962,1667 14982,1714 14985,1801 14986,1820 14988,1860 14993,2029
 (Sollmannweg - Matthäusweg): Parkweg	Q1 14962,1667 14898,1834 14895,1842 14888,1869 14865,1952
 Falkensteinstr.: etwas besseres Kopfsteinpflaster	Q2+ 12905,10143 13032,10355 13136,10535
-Görlitzer Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1; 13216,9983 13035,10076 12905,10143 12767,10216 12682,10258 12608,10294 12328,10442
+Görlitzer Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg Verbundsteinpflaster	Q1; 13216,9983 13035,10076 12905,10143 12767,10216 12682,10258 12608,10294 12328,10442
 Görlitzer Str.: Kopfsteinpflaster	Q2; 12328,10442 12608,10294 12682,10258 12767,10216 12905,10143
 Görlitzer Str.: Kopfsteinpflaster; Schwellen an der Kreuzung Cuvrystr.	Q2; 12905,10143 13035,10076 13216,9983
 Alter Markt: Asphalt	Q0 22495,4523 22458,4565
@@ -2555,10 +2559,10 @@ Ribbecker Str.: Kopfsteinpflaster	Q2 17582,11240 17574,11141 17560,10973
 Zornstr.: Kopfsteinpflaster	Q2 17574,11141 17626,11131
 Kraetkestr. (Friedrichsfelde): Kopfsteinpflaster	Q2 17466,10941 17458,10986 17500,11252
 Eggersdorfer Str.: Kopfsteinpflaster	Q2 17322,11296 17259,11093
-Eggersdorfer Str.: Beton	Q1 17259,11093 17222,10936 17228,10860
+Eggersdorfer Str.: Beton	Q1 17259,11093 17222,10936 17226,10865
 Bietzkestr.: Kopfsteinpflaster	Q2 17259,11093 17172,11101 17062,11130
 Bietzkestr.: Asphalt	Q0 17062,11130 16967,11162 16918,11176
-Lincolnstr.: Kopfsteinpflaster	Q2 17341,11595 17248,11317 17172,11101 17085,10855 17081,10806
+Lincolnstr.: Kopfsteinpflaster	Q2 17341,11595 17248,11317 17172,11101 17085,10855 17077,10832 17083,10814
 Margaretenstr.: Kopfsteinpflaster	Q2+ 16649,11497 16730,11480
 Margaretenstr.: Asphalt	Q0 16730,11480 16856,11438 16948,11409 17006,11391 17037,11383 17070,11375
 Metastr.: Asphalt	Q0- 17006,11391 17056,11497 17096,11585
@@ -8471,7 +8475,7 @@ Frankfurter Allee [Wohngebiet]/Schulze-Boysen-Str.: Beton	Q0- 15597,11957 15592,
 Frankfurter Allee [Wohngebiet]: Beton	Q0- 15836,11840 15856,11835 15871,11832 15930,11843 15941,11855 15952,11905 16128,11881 16190,11872 16207,11937
 Elsterwerdaer Platz: Gehwegplatten	Q0 20818,11293 20829,11275 20839,11300 21055,11284 21095,11315 21110,11326 21134,11331
 Haltoner Str.: Verbundsteinpflaster	Q1+ 20968,11203 21010,11223 21055,11284
-(Tränkegraben - Eggersdorfer Str./Rummelsburger Str.): Gehwegplatten	Q1+ 17261,10827 17228,10860
+(Tränkegraben - Eggersdorfer Str./Rummelsburger Str.): Gehwegplatten	Q1+ 17261,10827 17226,10865
 Reinickendorfer Str.: Beton	Q0 8091,14895 8037,14958 7998,15068
 (Parkplatz Residenzstr. - Kopenhagener Str.): Verbundsteinpflaster	Q1+ 7233,18562 7204,18634
 Straße 189 (Lübars): Asphalt	Q0 6361,22511 6301,22581
@@ -10013,6 +10017,7 @@ Holteistr.: Asphalt mit Schäden	Q0- 14639,11512 14575,11407
 #: note ^^^
 (Einsteinufer - TU-Mathegebäude): Kopfsteinpflaster	Q2 5128,12149 5106,12129 5141,11816
 Fuggerstr.: Kleinsteinpflaster und Gehwegplatten	Q1 6128,10319 6020,10351
+Moldaustr.: Beton	Q0- 17856,10508 17837,10425
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -11580,7 +11585,7 @@ Baikalstr.: mäßiger Beton	Q1 17479,10452 17255,10510
 Baikalstr.: mäßiger Beton	Q1 17210,10350 17255,10510 17281,10598
 Rüdickenstr.: gute Betonplattenstraße	Q0 17159,17631 17186,17593 17264,17489 17397,17310 17422,17288 17486,17266 17582,17335 17729,17448
 #: corrected_by: srt (Parkweg mit Unebenheiten -> ...)
-(Tränkegraben - Rummelsburger Str.): Beton	Q0- 17249,10702 17247,10755 17261,10827 17258,10870
+(Tränkegraben - Rummelsburger Str.): Beton	Q0- 17249,10702 17247,10755 17261,10827 17257,10875
 #: by: ^^^
 # 
 #: by: Torsten Nowak
@@ -24157,7 +24162,7 @@ Lesser-Ury-Weg: Asphalt und Kopfsteinpflasterabschnitte	Q1+ 7573,13149 7500,1328
 Claire-Waldoff-Promenade: Asphalt und Kopfsteinpflasterabschnitte	Q1+ 7433,13070 7356,13213 7287,13342
 Bahrfeldtstr.: Kopfsteinpflaster	Q2 14844,10088 14921,10047 14956,10028 14974,10018 15071,9967 15142,9931
 #: confirmed_by: srt vvv
-Fanny-Zobel-Str.: Asphalt	Q0 13936,10062 13975,10187 14049,10164 14016,10038
+Fanny-Zobel-Str.: Asphalt	Q0 13936,10062 13975,10187 14049,10164 14008,10040
 Fanny-Zobel-Str.: Asphalt	Q0 13975,10187 13899,10214
 #: confirmed_by ^^^
 (Hoffmannstr. - Puschkinallee): Verbundsteine	Q1 14077,10016 13995,9834
@@ -24961,7 +24966,8 @@ Bekassinenweg: Beton	Q0 -1452,21978 -1368,22091 -1359,22126 -1340,22219
 #: XXX Neubau entsteht von voraussichtlich Mitte 2015 bis Ende 2016, die Qualität wird dann wahrscheinlich besser sein
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129468.php
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.404058.php
-#: next_check: 2016-12-31
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.459717.php ("ab Anfang April", kein Endedatum)
+#: next_check: 2016-08-31
 Bekassinenweg: schlechter Asphalt	Q2 -1340,22219 -1301,22347 -1267,22480
 #: by: ^^^
 # 

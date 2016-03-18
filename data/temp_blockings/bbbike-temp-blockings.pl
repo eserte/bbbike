@@ -19506,7 +19506,7 @@ EOF
        source_id => 'IM_017436',
        data  => <<EOF,
 userdel	2::inwork 13829,9905 13884,9882 13995,9834 14193,9746
-	q4::inwork; 13842,10095 13936,10062 14016,10038 14077,10016 14289,9870
+	q4::inwork; 13842,10095 13936,10062 14008,10040 14077,10016 14289,9870
 EOF
      },
      { from  => 1309644000, # 2011-07-03 00:00
@@ -24451,15 +24451,15 @@ userdel	q4::inwork 7081,1346 6984,1540 6881,1743
 EOF
      },
      { from  => 1440910800, # 2015-08-30 07:00
-       until => 1482501600, # 2016-12-23 15:00 # laut rbbtext bis 30.12.2016, laut fritz nur bis 31.12.2015
-       text  => 'Konstanzer Str.: zwischen Düsseldorfer Str. und Brandenburgische Str. Baustelle, Fahrbahn Richtung Brandenburgische Str. gesperrt, bis Ende Dezember 2016',
+       until => $isodate2epoch->("2016-08-01 00:00:00"), # 1482501600, # 2016-12-23 15:00 # laut rbbtext bis 30.12.2016, laut fritz nur 31.07.2016, laut vmz bis August 2016
+       text  => 'Konstanzer Str.: zwischen Olivaer Platz und Düsseldorfer Str. und Baustelle, Fahrbahn Richtung Brandenburgische Str. gesperrt, bis August 2016',
        type  => 'handicap',
        source_id => 'IM_026066',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.354922.php
-#: note: 2147339555 nur bis August 2016
 #: source_id: 2147339555
-userdel	q4::inwork; 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
+userdel	q4::inwork; 4239,10358 4219,10279 4183,10144 4152,10033
+# REMOVED was: 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
 EOF
      },
      { from  => 1441490400, # 2015-09-06 00:00

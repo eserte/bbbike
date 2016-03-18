@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2016-03-16
+#: last_checked: 2016-03-17
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -523,7 +523,7 @@ Rathaus Wedding: ändert sich was während/nach der Bauarbeiten am Rathausplatz?	?
 # REMOVED (teilweise offiziell für Radfahrer offen) --- #: XXX Zimmerstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis Ende 01/15) Richtung Friedrichstr. zwischen Wilhelmstr. und Friedrichstr., 04.11.2014 14:58 Uhr bis 31.01.2015 16:00 Uhr --- #: XXX wahrscheinlich für Radfahrer offen --- #: source_id: IM_023356 --- #: next_check: 2014-11-10 --- Zimmerstr.: Bauarbeiten für Radfahrer relevant?	?::inwork 9155,11283 9478,11317
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5602 (Baubeginn "in Kürze")
-#: last_checked: 2015-12-28
+#: last_checked: 2016-03-17
 #: check_frequency: 60d
 Rummelsburger/Zacherstr.: Ampel wird verlegt (auf die Ostseite)	?::projected 17834,11192 17848,11204
 # 
@@ -707,10 +707,11 @@ Bahnhofstr./Blankenburger Weg/Pankstr.: Ampel geplant	?::projected 12442,20805
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3129
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4353
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3906 (Umsetzung 2016)
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.459697.php
 #: last_checked: 2015-11-07
 #: check_frequency: 90d
 #: priority: #C
-Jean-Jaurés-Straße/Nimrodstraße: entsteht hier ein Zebrastreifen?	?::projected 4575,22089 4581,22106 4582,22122
+Jean-Jaurés-Straße/Nimrodstraße: befindet sich hier der Zebrastreifen?	? 4575,22089 4581,22106 4582,22122
 # 
 # REMOVED (aufgenommen) --- #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2015/pressemitteilung.263369.php --- #: next_check: 2015-02-12 --- Hadlichstraße: gibt es hier einen Zebrastreifen?	? 11087,18344 11123,18343 11147,18333
 # REMOVED (aufgenommen, Radweg) --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130730.0800.387345.html --- #: source_id: INKO_120069 (hier aber nur bis Ende September) --- #: next_check: 2013-10-05 --- Ruppiner Chaussee: Fahrradstreifen nach den Bauarbeiten?	?::inwork -1872,24336 -1953,24435 -1982,24514
@@ -874,29 +875,34 @@ Dahlemer Weg: wird hier eine Fußgängerampel realisiert?	?::projected 1763,1288 1
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3250&options=4 vvv
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3250&options=4&date=20130125 vvv
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.459697.php vvv
 #: priority: #C vvv
-#: check_frequency: 90d vvv
 #: last_checked: 2015-11-07
+#: check_frequency: 90d
 Frohnauer Str.: wird hier ein Zebrastreifen angelegt?	?::projected 2437,24435 2469,24391 2437,24393
 #: last_checked: 2015-09-12
-Alt-Wittenau: wird hier ein Zebrastreifen angelegt?	?::projected 5250,20482 5219,20467 5235,20439
+#: next_check: 2016-05-17
+Alt-Wittenau/Techowpromenade: wird hier ein Zebrastreifen angelegt?	?::projected 5250,20482 5219,20467 5235,20439
 # REALISIERT (http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3906) --- Waidmannsluster Damm/Am Leitbruch: wird hier ein Zebrastreifen angelegt?	?::projected 4052,22089 4094,22065
 #: last_checked: 2015-11-07
+#: check_frequency: 90d
 Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::projected 3621,23223 3627,23246 3655,23244
 #: last_checked: 2015-09-12
-Eichborndamm: wird hier ein Zebrastreifen angelegt?	?::projected 4631,19745 4611,19769 4580,19756
-#: check_frequency: ^^^
+#: next_check: 2016-05-17
+Eichborndamm/Rotbuchenweg: wird hier ein Zebrastreifen angelegt?	?::projected 4631,19745 4611,19769 4580,19756
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3906 (Umsetzung 2016)
 #: last_checked: 2015-11-07
-#: check_frequency: 120d
+#: next_check: 2016-05-17
 Reginhardstr.: wird hier ein Zebrastreifen angelegt?	?::projected 8056,17208 8055,17179 8091,17194
 #: priority ^^^
+#: by: ^^^
 #: by: ^^^
 #: by: ^^^
 # 
 #: priority: #C
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3906
-#: next_check: 2016-04-01
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.459697.php
+#: next_check: 2016-05-17
 Sigismundkorso: Zebrastreifen entsteht hier 2016, wo genau?	?::projected 1807,24845 1732,24798 1818,24795
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130604.1220.385643.html (Vorstellung der Pläne) vvv --- #: by: http://www.berlin.de/imperia/md/content/bareinickendorf/abteilungen/bausport/bauwesen/strassenbau/07_lp_zeltinger_platz_130424.pdf?start&ts=1372161246&file=07_lp_zeltinger_platz_130424.pdf vvv --- #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3533 (Beginn der Baumaßnahmen November 2013) --- #: next_check: 2014-01-01 vvv --- #: priority: #C vvv --- Zeltinger Str. Höhe Einmündung in den Zeltinger Platz: Zebrastreifen ist geplant	?::projected 2441,25278 2464,25267 --- Zeltinger Platz Höhe Reichelt/Post: Zebrastreifen ist geplant	?::projected 2461,25148 2480,25129 --- #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3317 --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130604.1220.385643.html (Vorstellung der Pläne) --- Einmündung der Burgfrauenstraße in den Zeltinger Platz: Zebrastreifen ist geplant	?::projected 2427,25126 2448,25146
@@ -1351,11 +1357,17 @@ Brunsbütteler Damm: Radweg wird asphaltiert	?::projected; -4290,14025 -4759,1399
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: source_id: 2147339823
+#: next_check: 2016-06-15
+Dietzgenstr.: Bauarbeiten zwischen Kräuter- und Wiesenkräuterweg, danach vielleicht Änderungen für Radfahrer?	? 10083,21848 10097,21809 10106,21784 10111,21673
+# 
 # REMOVED (aufgenommen) --- #: source_id 2147339819 --- #: laut vmz bis Mitte Mai 2016, laut fritz bis 13.05.2016 --- Wühischstr.: zwischen Böcklinstr. und Boxhagener Str. Bauarbeiten, auch für Radfahrer relevant?	?; 14674,11370 14737,11347 14759,11339 14771,11345
 # 
 #: source_id: 129871
-#: XXX vielleicht gibt es hier Qualitätsverbesserungen? Bauarbeiten bis 30.05.2016
-Wallensteinstr.: Bauarbeiten --- Einschränkungen für Radfahrer?	?; 17549,9529 18037,9195
+#: XXX Bauarbeiten bis 30.05.2016
+#: last_checked: 2016-03-17
+#: next_check: 2016-05-30
+Wallensteinstr.: Bauarbeiten --- gibt es hier Qualitätsverbesserungen?	?::inwork 17549,9529 18037,9195
 # 
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8362&options=4
 #: XXX kein rechts-vor-links?
@@ -1401,7 +1413,7 @@ Schkopauer Ring oder Clara-Immerwahr-Str.: wie ist der richtige Straßenname hier
 # 
 #: XXX Wird sich durch die Baumaßnahmen was ändern? Ende der Bauarbeiten: 30.04.2016 vvv
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.415646.php
-#: last_checked: 2016-03-13 vvv
+#: last_checked: 2016-03-17 vvv
 #: check_frequency: 30d vvv
 Görlitzer Park: Baumaßnahmen	?::inwork 12608,10294 12580,10252
 Görlitzer Park: Baumaßnahmen	?::inwork 12767,10216 12763,10207 12757,10197
@@ -2479,6 +2491,14 @@ Uferweg (Potsdam): wird es hier Änderungen/Verbesserung geben, z.B. hinsichtlich
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2016 (Benennung einer Straße)
 #: XXX fehlt in Berlin.coords.data
 Zur Lübarser Bahn: genaue Lage? Qualität? Nachts beleuchtet?	? 6250,22401 6325,22281
+# 
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplan-7-68-457761.php
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-68/b-plan7-68_karte.pdf
+#: next_check: 2017-09-01 vvv
+Güterbahnhof Wilmersdorf, Bebauungsplan 7-68: neue Wege werden entstehen	?::projected 6307,7893 5807,7876 5806,7796
+Güterbahnhof Wilmersdorf, Bebauungsplan 7-68: neue Wege werden entstehen	?::projected 5710,7820 5648,7818
+Güterbahnhof Wilmersdorf: vermutlich wird die Straße während der Bauarbeiten gesperrt und später eine andere Qualität haben	?::projected 6273,7849 5710,7820
+#: next_check ^^^
 # 
 #: ignore ^^^
 #: section ^^^
@@ -4356,4 +4376,3 @@ Domstrengbrücke und Verbindung zum Grillendamm: Qualität?	? -46302,103 -46305,13
 # 
 Rehwiese/Rehsprung - Potsdamer Chaussee: existiert hier eine Verbindung für Radfahrer? Qualität? Nachts beleuchtet?	? -3395,1668 -3325,1665 -3310,1628 -3252,1644 -3042,1763 -3022,1754 -3011,1761
 # 
-Delbrückstr. (Friedrichsfelde, Rummelsburg): gibt es hier Bordsteine?	? 17123,10844 17152,10835

@@ -3640,16 +3640,16 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
        undef,
        {
          'data' => '#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.354922.php
-#: note: 2147339555 nur bis August 2016
 #: source_id: 2147339555
-userdel	q4::inwork; 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
+userdel	q4::inwork; 4239,10358 4219,10279 4183,10144 4152,10033
+# REMOVED was: 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
 ',
          'from' => 1440910800,
          'id' => 2733,
          'source_id' => 'IM_026066',
-         'text' => 'Konstanzer Str.: zwischen Düsseldorfer Str. und Brandenburgische Str. Baustelle, Fahrbahn Richtung Brandenburgische Str. gesperrt, bis Ende Dezember 2016',
+         'text' => 'Konstanzer Str.: zwischen Olivaer Platz und Düsseldorfer Str. und Baustelle, Fahrbahn Richtung Brandenburgische Str. gesperrt, bis August 2016',
          'type' => 'handicap',
-         'until' => 1482501600
+         'until' => 1470002400
        },
        undef,
        undef,
