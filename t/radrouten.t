@@ -34,7 +34,7 @@ if ($ENV{BBBIKE_TEST_SKIP_MAPSERVER}) {
 
 use Getopt::Long;
 
-use BBBikeTest qw(check_cgi_testing);
+use BBBikeTest qw(check_cgi_testing like_html);
 
 check_cgi_testing;
 
@@ -92,8 +92,11 @@ for my $test_def (@test_defs) {
     ok $resp_map->is_success, "$name ... map"
 	or diag "POSTing to $url failed: " . $resp_map->status_line;
     my $map_content = $resp_map->decoded_content(charset => 'none');
-    unlike $map_content, qr{<HEAD><TITLE>MapServer Message</TITLE></HEAD>}, "MapServer Message (error?) detected for $name ... map";
-    unlike $map_content, qr{(Unknown identifier|Parsing error near)}, "MapServer error detected for $name ... map";
+    unlike $map_content, qr{<HEAD><TITLE>MapServer Message</TITLE></HEAD>}, "No MapServer (error) message title detected for $name ... map";
+    unlike $map_content, qr{(Unknown identifier|Parsing error near)}, "No MapServer parsing error detected for $name ... map";
+    unlike $map_content, qr{(Image handling error|Failed to draw layer named|DBASE file error|Invalid record number)}, "No MapServer rendering error detected for $name ... map";
+    like_html $map_content, qr{<head><title>Berlin/Brandenburg - BBBike - Mapserver</title>}i, 'correct html title';
+    like_html $map_content, qr{Letzte Aktualisierung der Daten:}, 'expected text pretty at the end';
 
     for my $i (0 .. $#inputs) {
 	if ($inputs[$i] eq 'showroutelist') {
