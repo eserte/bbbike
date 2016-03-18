@@ -39,8 +39,19 @@ use BBBikeTest qw(check_cgi_testing like_html);
 check_cgi_testing;
 
 my $test_all = !!$ENV{BBBIKE_LONG_TESTS};
-GetOptions("test-all!" => \$test_all)
-    or die "usage: $0 [-test-all]";
+my $test_matching;
+GetOptions(
+	   'test-all!'       => \$test_all,
+	   'test-matching=s' => \$test_matching,
+	  )
+    or die "usage: $0 [-test-all | -test-matching rx]";
+
+if ($test_all && $test_matching) {
+    die "Can't specify -test-all and -test-matching together";
+}
+if ($test_matching) {
+    $test_matching = qr{$test_matching};
+}
 
 plan 'no_plan';
 
@@ -67,7 +78,16 @@ for my $form_node ($p->findnodes('//form')) {
     my $name = $form_node->findvalue('.');
     $name =~ s{^[\xa0\s]+}{}; $name =~ s{[\xa0\s]+$}{};
 
-    my @inputs = map { ($_->findvalue('./@name') => $_->findvalue('./@value')) } $form_node->findnodes('.//input');
+    my @inputs = map {
+	my($name, $value) = ($_->findvalue('./@name'), $_->findvalue('./@value'));
+	if ($name =~ m{^(coords_forw|coords_rev)$}) { # simulate js function transform_coords_forw_rev
+	    ('coords' => $value);
+	} elsif ($name ne '') { # filter out submit buttons
+	    ($name => $value);
+	} else {
+	    ();
+	}
+    } $form_node->findnodes('.//input');
 
     push @test_defs, {
 		      name   => $name,
@@ -76,7 +96,9 @@ for my $form_node ($p->findnodes('//form')) {
 		     };
 }
 
-if (!$test_all) {
+if ($test_matching) {
+    @test_defs = grep { $_->{name} =~ $test_matching } @test_defs;
+} elsif (!$test_all) {
     @test_defs = $test_defs[rand($#test_defs)];
     if (defined &note) {
 	note("Without -test-all or BBBIKE_LONG_TESTS picking only one random test case...");
