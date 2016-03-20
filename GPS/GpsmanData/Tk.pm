@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2013,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2013,2015,2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package GPS::GpsmanData::Tk;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.22';
+$VERSION = '1.23';
 
 use base qw(Tk::Frame);
 Construct Tk::Widget 'GpsmanData';
@@ -48,8 +48,16 @@ my %wpt_col_label = map {
 	$class->SUPER::ClassInit($mw);
 	my $scroll_cb = sub {
 	    my($w, $howmany) = @_;
+	    my($y_before) = $w->yview;
 	    $w->yview('scroll', $howmany, 'pages');
-	    my $y = ($w->header('size', 0))[1] + 10;
+	    my($y_after) = $w->yview;
+	    my $y;
+	    if ($howmany > 0 && $y_after == $y_before) {
+		# we reached the end
+		$y = $w->height;
+	    } else {
+		$y = ($w->header('size', 0))[1] + 10;
+	    }
 	    my $entry = $w->nearest($y); # anchor top element
 	    $w->anchorSet($entry);
 	    $w->KeyboardActivate;
