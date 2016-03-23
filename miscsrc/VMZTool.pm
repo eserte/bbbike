@@ -574,6 +574,15 @@ see the appropriate targets in data/Makefile):
     mv ~/cache/misc/newvmz.yaml ~/cache/misc/newvmz.yaml.old
     mv ~/cache/misc/newvmz.yaml.new ~/cache/misc/newvmz.yaml
 
+Revert (if current download is broken and may be fixed later;
+minimizes diffs):
+
+    cd ~/cache/misc
+    mv diffnewvmz.bbd newvmz.new.yaml ~/trash
+    mv newvmz.yaml newvmz.new.yaml
+    mv diffnewvmz.old.bbd diffnewvmz.bbd
+    mv newvmz.old.yaml newvmz.yaml
+
 =head1 DESCRIPTION
 
  * process
