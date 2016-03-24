@@ -13500,9 +13500,11 @@ Tellstr.	N 12320,8927 12402,9080
 Ossastr.	N 12615,9132 12681,9083 12836,8980 12910,8929
 (Ossastr. - Rütlistr.)	NN 12615,9132 12552,9165 12548,9167
 Hüttenroder Weg	N 13274,8945 13456,8809
-Beermannstr.	N 13973,9465 14119,9368 14157,9345
+Beermannstr.	N 13973,9465 14119,9368
+# REMOVED (wg. Autobahnbau verkürzt) --- Beermannstr.	N 14119,9368 14157,9345
 # REMOVED (existiert nicht mehr) --- #: XXX temporäre Hilfsstraße --- #: last_checked: 2015-11-22 --- #: check_frequency: 60d --- (Beermannstr. - Matthesstr.)	N 14119,9368 14162,9381
-Matthesstr.	N 14157,9345 14162,9381 14172,9457 14185,9509
+# REMOVED (wg. Autobahnbau verkürzt) --- Matthesstr.	N 14157,9345 14162,9381 14172,9457
+Matthesstr.	N 14172,9457 14185,9509
 Elbestr.	N 12772,8612 12822,8675 12881,8750 12954,8840 13048,8956
 Schandauer Str.	N 13102,8724 12954,8840
 Laubestr.	N 12980,8566 12822,8675

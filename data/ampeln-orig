@@ -2468,7 +2468,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # REMOVED --- #: next_check_id: KARLSHORSTER-2015 --- #: last_checked: 2015-09-18 --- #: next_check: 2015-09-21 --- #: note: provisorische Ampel --- #: XXX nicht immer eingeschaltet, z.B. 2015-08-08 (Sa) gegen 10 Uhr off --- valid: -20150921 ---	X::inwork 14805,10518
 #: XXX bleibt die Ampel permanent?
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1509/nachricht5759.html (ja, es wird eine neue Ampel errichtet)
-#: last_checked: 2016-03-01
+#: last_checked: 2016-03-23
 #: check_frequency: 60d
 	X::inwork 14906,10820
 	F 8667,5372
@@ -2743,7 +2743,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id ^^^
 # 
 #: next_check_id: SONNENALLEE-2014 vvv
-#: osm_watch: way id="260062339" version="5"
+#: osm_watch: way id="260062339" version="6"
 #: last_checked: 2016-03-04 vvv
 #: check_frequency: 90d vvv
 #: note: Radfahrer in Richtung Südosten müssen die Seite wechseln, hier Anforderungsampel
@@ -2987,7 +2987,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -12655,-1714
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
 #: next_check_id: KIEFHOLZ-2015 vvv
-#: last_checked: 2016-03-13 vvv
+#: last_checked: 2016-03-21 vvv
 #: check_frequency: 90d vvv
 	X::inwork 14151,8967
 	X::inwork 14363,8738

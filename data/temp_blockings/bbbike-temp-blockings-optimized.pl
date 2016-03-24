@@ -81,7 +81,26 @@ userdel	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 1199
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 5644,6936 5533,6753 5424,6584 5370,6486
+',
+         'from' => 1460707200,
+         'id' => 10,
+         'periodic' => 1,
+         'recurrence_prewarn_days' => 21,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              11,
+                              'months',
+                              4
+                            ]
+                          ],
+         'source_id' => 'http://nareyka.events/news-events/mehr/artikel/44-fruehlingsfest-rheinstrasse.html',
+         'text' => 'Rheinstraßenfest in der Rheinstraße zwischen Kaisereiche und Walther-Schreiber-Platz, am 16.04.2016 und 17.04.2016',
+         'until' => 1460916000
+       },
        undef,
        undef,
        undef,
@@ -3015,7 +3034,27 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 22133,4644 22111,4562 22093,4499
+userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
+',
+         'from' => 1461189600,
+         'id' => 2419,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              21,
+                              'months',
+                              4
+                            ]
+                          ],
+         'source_id' => 'http://www.weinfeste-in-deutschland.de/winzerfest-in-berlin-koepenick.html',
+         'text' => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 22.4.2016 bis 24.4.2016',
+         'type' => 'gesperrt',
+         'until' => 1461535199
+       },
        undef,
        undef,
        {
@@ -3402,6 +3441,7 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,464
                               8
                             ]
                           ],
+         'source_id' => 'http://www.weinfeste-in-deutschland.de/winzerfest-in-berlin-koepenick.html',
          'text' => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 19.8.2016 bis 21.8.2016',
          'type' => 'gesperrt',
          'until' => 1471816799
@@ -3582,7 +3622,16 @@ userdel	q4::inwork; 3807,11859 3666,11855
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::inwork 39384,115027 39168,114713 38881,113150
+',
+         'from' => 1432706400,
+         'id' => 2706,
+         'source_id' => 'LS/721-E/15/036',
+         'text' => 'L258: Brückenneubau bei Trebenow (Brücke über den Köhntop), Vollsperrung ab 28.05.15 bis 03.04.2016 ',
+         'type' => 'gesperrt',
+         'until' => 1459720799
+       },
        undef,
        undef,
        {

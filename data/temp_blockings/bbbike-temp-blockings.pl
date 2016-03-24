@@ -126,12 +126,13 @@ userdel	2 8986,16092 9053,16029
 userdel	2 9123,15963 9053,16029
 EOF
      },
-     { from  => $isodate2epoch->("2015-05-08 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-05-10 20:00:00"),
+     { from  => $isodate2epoch->("2016-04-15 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-04-17 20:00:00"),
        periodic => 1, # erster Termin im Jahr
        recurrences => [["yearly", days => 11, months => 4]],
        recurrence_prewarn_days => 21,
-       text  => "Rheinstraßenfest in der Rheinstraße zwischen Kaisereiche und Walther-Schreiber-Platz, am 09.05.2015 und 10.05.2015",
+       source_id => 'http://nareyka.events/news-events/mehr/artikel/44-fruehlingsfest-rheinstrasse.html',
+       text  => "Rheinstraßenfest in der Rheinstraße zwischen Kaisereiche und Walther-Schreiber-Platz, am 16.04.2016 und 17.04.2016",
        data  => <<EOF,
 userdel	2::temp 5644,6936 5533,6753 5424,6584 5370,6486
 EOF
@@ -21281,13 +21282,13 @@ EOF
 userdel	2::inwork -739,6838 -927,6888
 EOF
      },
-     { from  => $isodate2epoch->("2015-04-23 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-04-26 23:59:59"),
+     { from  => $isodate2epoch->("2016-04-21 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-04-24 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 23, months => 4]],
-       text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 24.4.2015 bis 26.4.2015 ',
+       recurrences => [['yearly', days => 21, months => 4]],
+       text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 22.4.2016 bis 24.4.2016',
        type  => 'gesperrt',
-       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.287680.php',
+       source_id => 'http://www.weinfeste-in-deutschland.de/winzerfest-in-berlin-koepenick.html',
        data  => <<EOF,
 userdel	2::temp 22133,4644 22111,4562 22093,4499
 userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
@@ -23263,6 +23264,7 @@ EOF
        recurrences => [['yearly', days => 18, months => 8]],
        text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 19.8.2016 bis 21.8.2016',
        type  => 'gesperrt',
+       source_id => 'http://www.weinfeste-in-deutschland.de/winzerfest-in-berlin-koepenick.html',
        data  => <<EOF,
 userdel	2::temp 22133,4644 22111,4562 22093,4499
 userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
@@ -23984,9 +23986,9 @@ EOF
      },
      { from  => $isodate2epoch->("2015-04-03 10:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2015-04-06 23:59:59"),
-       periodic => 1,
-       recurrences => [['easter', -2]], # Karfreitag
-       recurrence_prewarn_days => 3, # # findet es 2016 überhaupt statt?
+       #periodic => 1,
+       #recurrences => [['easter', -2]], # Karfreitag
+       #recurrence_prewarn_days => 1, # # findet es 2016 überhaupt statt?
        text  => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Veranstaltung (Osterfest Hauptstraße), Straße gesperrt (04.04.2015 - 06.04.2015)',
        type  => 'handicap',
        data  => <<EOF,
@@ -24171,8 +24173,8 @@ EOF
 EOF
      },
      { from  => 1432706400, # 2015-05-27 08:00
-       until => 1456873200, # 2016-03-02 00:00
-       text  => 'L258: Brückenneubau bei Trebenow (Brücke über den Köhntop), Vollsperrung ab 28.05.15 bis 01.03.2016 ',
+       until => $isodate2epoch->("2016-04-03 23:59:59"), # 1456873200, # 2016-03-02 00:00
+       text  => 'L258: Brückenneubau bei Trebenow (Brücke über den Köhntop), Vollsperrung ab 28.05.15 bis 03.04.2016 ',
        type  => 'gesperrt',
        source_id => 'LS/721-E/15/036',
        data  => <<EOF,
