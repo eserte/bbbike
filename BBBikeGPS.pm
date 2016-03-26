@@ -324,6 +324,7 @@ sub BBBikeGPS::draw_gpsman_data {
 		    (-dateformat => 2,
 		     -todaybackground => "yellow",
 		     -weekstart => 1,
+		     -daynames => 'locale',
 		     -textvariable => \$date,
 		     -formatcmd => sub {
 			 my($year,$month,$day) = @_;

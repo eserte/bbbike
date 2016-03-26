@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2008,2012,2013,2014,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2008,2012,2013,2014,2015,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -4289,6 +4289,7 @@ sub active_temp_blockings_for_date_dialog {
 		 $f->DateEntry
 		 (-dateformat => 2,
 		  -weekstart => 1,
+		  -daynames => 'locale',
 		  -textvariable => \$date,
 		  -configcmd => sub {
 		      my(%args) = @_;
