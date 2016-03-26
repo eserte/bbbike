@@ -818,7 +818,27 @@ userdel	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 1199
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 7107,9030 7044,9163 7022,9211 7006,9292
+userdel	2::temp 6945,9142 7044,9163
+',
+         'from' => 1462485600,
+         'id' => 728,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              24,
+                              'months',
+                              4
+                            ]
+                          ],
+         'source_id' => 'http://www.popula.de/veranstaltung/12105833_primavera-2016-akazienstrasse-berlin',
+         'text' => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (7.5.2016 und 8.5.2016)',
+         'type' => 'gesperrt',
+         'until' => 1462744799
+       },
        undef,
        undef,
        undef,
@@ -3467,7 +3487,7 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,464
        undef,
        {
          'data' => '#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2015-10-31
+#: last_checked: 2016-03-26
 #: check_frequency: 90d
 userdel	q3::inwork 4503,10497 4485,10307
 ',
@@ -3582,7 +3602,7 @@ userdel	q3::inwork 4503,10497 4485,10307
        undef,
        undef,
        {
-         'data' => '#: last_checked: 2015-12-04
+         'data' => '#: last_checked: 2016-03-26
 #: check_frequency: 90d
 userdel	q4::inwork; 3807,11859 3666,11855
 ',

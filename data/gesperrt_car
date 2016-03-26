@@ -616,13 +616,13 @@ Seestr. -> Groninger Str.: Straßenbahntrasse	3::igndisp 7417,16587 7403,16575 74
 Groninger Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7439,16350 7403,16575 7295,16477
 Seestr. -> Syrische Str.: Straßenbahntrasse	3::igndisp 7231,16418 7295,16477 7263,16508
 Syrische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7263,16508 7295,16477 7403,16575
-Mittelstreifen	3nocross::ignrte 3690,11629 3844,11649 3898,11655
-Bismarckstr. -> Richard-Wagner-Str.: Mittelstreifen	3::igndisp 3690,11629 3844,11649 3837,11760
-Bismarckstr. -> Sesenheimer Str.: Mittelstreifen	3::igndisp 3898,11655 3844,11649 3866,11473
-Richard-Wagner-Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 3837,11760 3844,11649 3898,11655
-Richard-Wagner-Str. -> Sesenheimer Str.: Mittelstreifen	3::igndisp 3837,11760 3844,11649 3866,11473
-Sesenheimer Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 3866,11473 3844,11649 3690,11629
-Sesenheimer Str. -> Richard-Wagner-Str.: Mittelstreifen	3::igndisp 3866,11473 3844,11649 3837,11760
+Mittelstreifen	3nocross::ignrte 3689,11637 3843,11659 3897,11666
+Bismarckstr. -> Richard-Wagner-Str.: Mittelstreifen	3::igndisp 3689,11637 3843,11659 3837,11760
+Bismarckstr. -> Sesenheimer Str.: Mittelstreifen	3::igndisp 3897,11666 3843,11659 3866,11473
+Richard-Wagner-Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 3837,11760 3843,11659 3897,11666
+Richard-Wagner-Str. -> Sesenheimer Str.: Mittelstreifen	3::igndisp 3837,11760 3843,11659 3866,11473
+Sesenheimer Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 3866,11473 3843,11659 3689,11637
+Sesenheimer Str. -> Richard-Wagner-Str.: Mittelstreifen	3::igndisp 3866,11473 3843,11659 3837,11760
 Lenbachstr.: Einbahnstraße (genau genommen nur das östlichste Stück)	1 5888,6520 6071,6559
 Augustenburger Platz: nur für Taxen und Anlieger	2:Anlieger 6561,15041 6537,15156 6562,15177
 Zinnowitzer Str. - Friedrichstr.:	3 9011,14019 8870,13926 8935,13844
@@ -1170,12 +1170,12 @@ Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15458,11306 15484,11292
 Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15279,10862 15144,10905
 Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15279,10862 15272,10790
 Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15279,10862 15355,10875
-Mittelinsel	3nocross::ignrte 4345,11710 4331,11554 4312,11354
+Mittelinsel	3nocross::ignrte 4337,11721 4331,11554 4312,11354
 Leibnizstr. -> Schillerstr.: Mittelinsel	3::igndisp 4312,11354 4331,11554 4156,11522
-Leibnizstr. -> Schillerstr.: Mittelinsel	3::igndisp 4345,11710 4331,11554 4452,11570
+Leibnizstr. -> Schillerstr.: Mittelinsel	3::igndisp 4337,11721 4331,11554 4452,11570
 Schillerstr. -> Leibnizstr.: Mittelinsel	3::igndisp 4452,11570 4331,11554 4312,11354
 Schillerstr. -> Schillerstr.: Mittelinsel	3::igndisp 4452,11570 4331,11554 4156,11522
-Schillerstr. -> Leibnizstr.: Mittelinsel	3::igndisp 4156,11522 4331,11554 4345,11710
+Schillerstr. -> Leibnizstr.: Mittelinsel	3::igndisp 4156,11522 4331,11554 4337,11721
 Schillerstr. -> Schillerstr.: Mittelinsel	3::igndisp 4156,11522 4331,11554 4452,11570
 Sybelstr.	1 4017,10585 4256,10583
 Hüttendorfer Weg	1 21409,-109 21463,-280
@@ -1434,8 +1434,8 @@ Teutonenstr. (Nikolassee)	1 -3519,2180 -3610,2237 -3689,2267 -3742,2287
 Goltzstr. (Spandau)	1 -2946,16869 -3031,16807
 Lindenufer	1 -3275,14114 -3135,14183
 Mauerstr.	1 -3316,14169 -3275,14114
-Simmelstr.: keine Durchfahrt für Autos	3 7540,17675 7615,17684 7669,17691
-Simmelstr.: keine Durchfahrt für Autos	3 7669,17691 7615,17684 7540,17675
+Simmelstr.: keine Durchfahrt für Autos	3 7533,17673 7615,17684 7669,17691
+Simmelstr.: keine Durchfahrt für Autos	3 7669,17691 7615,17684 7533,17673
 Mittelstreifen	3nocross::ignrte 7198,18575 7119,18582 6924,18599
 Lindauer Allee -> Ragazer Str.: Mittelstreifen	3::igndisp 7198,18575 7119,18582 7035,18413
 Ragazer Str. -> Lindauer Allee: Mittelstreifen	3::igndisp 7035,18413 7119,18582 6924,18599
@@ -1471,13 +1471,13 @@ Mittelstreifen	3nocross::ignrte 5635,18776 5713,18777 5791,18778
 Lindauer Allee -> Rundpfuhlweg: Mittelstreifen	3::igndisp 5791,18778 5713,18777 5713,18739
 Rundpfuhlweg -> Lindauer Allee: Mittelstreifen	3::igndisp 5713,18739 5713,18777 5635,18776
 Eisbärenweg: Schranken an beiden Einfahrten	2 6950,17669 6909,17796
-Mittelstreifen	3nocross::ignrte 4345,11710 4507,11728 4737,11768
-Am Schillertheater -> Marie-Elisabeth-Lüders-Str.: Mittelstreifen	3::igndisp 4574,11587 4507,11728 4476,11811
-Am Schillertheater -> Bismarckstr.: Mittelstreifen	3::igndisp 4574,11587 4507,11728 4345,11710
-Marie-Elisabeth-Lüders-Str. -> Am Schillertheater: Mittelstreifen	3::igndisp 4476,11811 4507,11728 4574,11587
-Marie-Elisabeth-Lüders-Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 4476,11811 4507,11728 4737,11768
-Bismarckstr. -> Marie-Elisabeth-Lüders-Str.: Mittelstreifen	3::igndisp 4345,11710 4507,11728 4476,11811
-Bismarckstr. -> Am Schillertheater: Mittelstreifen	3::igndisp 4737,11768 4507,11728 4574,11587
+Mittelstreifen	3nocross::ignrte 4337,11721 4502,11740 4737,11768
+Am Schillertheater -> Marie-Elisabeth-Lüders-Str.: Mittelstreifen	3::igndisp 4574,11587 4502,11740 4476,11811
+Am Schillertheater -> Bismarckstr.: Mittelstreifen	3::igndisp 4574,11587 4502,11740 4337,11721
+Marie-Elisabeth-Lüders-Str. -> Am Schillertheater: Mittelstreifen	3::igndisp 4476,11811 4502,11740 4574,11587
+Marie-Elisabeth-Lüders-Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 4476,11811 4502,11740 4737,11768
+Bismarckstr. -> Marie-Elisabeth-Lüders-Str.: Mittelstreifen	3::igndisp 4337,11721 4502,11740 4476,11811
+Bismarckstr. -> Am Schillertheater: Mittelstreifen	3::igndisp 4737,11768 4502,11740 4574,11587
 Stadtgärten - Saupéweg: Poller	3 11518,21727 11551,21720 11589,21713
 Stadtgärten - Saupéweg: Poller	3 11589,21713 11551,21720 11518,21727
 Mittelstreifen	3nocross::ignrte 11872,17522 11893,17397 11920,17245
@@ -1596,12 +1596,12 @@ Triftstr.	1 6715,15152 6743,15102
 Straßenbahntrasse	3nocross::ignrte 23818,5394 23849,5380 23942,5338
 Fürstenwalder Damm -> Jastrower Weg: Straßenbahntrasse	3::igndisp 23818,5394 23849,5380 23877,5503
 Jastrower Weg -> Fürstenwalder Damm: Straßenbahntrasse	3::igndisp 23877,5503 23849,5380 23942,5338
-Mittelstreifen	3nocross::ignrte 3159,11562 3320,11583 3441,11598
+Mittelstreifen	3nocross::ignrte 3159,11562 3320,11583 3441,11601
 Bismarckstr. -> Fritschestr.: Mittelstreifen	3::igndisp 3159,11562 3320,11583 3287,11846
-Bismarckstr. -> Fritschestr.: Mittelstreifen	3::igndisp 3441,11598 3320,11583 3339,11433
+Bismarckstr. -> Fritschestr.: Mittelstreifen	3::igndisp 3441,11601 3320,11583 3339,11433
 Fritschestr. -> Bismarckstr.: Mittelstreifen	3::igndisp 3339,11433 3320,11583 3159,11562
 Fritschestr. -> Fritschestr.: Mittelstreifen	3::igndisp 3339,11433 3320,11583 3287,11846
-Fritschestr. -> Bismarckstr.: Mittelstreifen	3::igndisp 3287,11846 3320,11583 3441,11598
+Fritschestr. -> Bismarckstr.: Mittelstreifen	3::igndisp 3287,11846 3320,11583 3441,11601
 Fritschestr. -> Fritschestr.: Mittelstreifen	3::igndisp 3287,11846 3320,11583 3339,11433
 Mittelstreifen	3nocross::ignrte 4485,10307 4360,10320 4239,10358
 Lietzenburger Str. -> Bayerische Str.: Mittelstreifen	3::igndisp 4485,10307 4360,10320 4352,10260
@@ -1785,3 +1785,20 @@ Ossietzkyplatz - ...: Abbiegen verboten	3 10215,19532 10228,19480 10250,19504
 Ossietzkyplatz - ...: Geradeausfahren verboten	3 10215,19532 10228,19480 10271,19361 10294,19298
 Friedrich-Ebert-Str.: Einfahrt verboten	3 -12882,-1565 -12776,-1575 -12786,-1556
 Siefertstr.: Einbahnstraße	1 -12913,-1451 -12975,-1363 -12976,-1356
+Siemensstr./Erna-Samuel-Str.	3nocross::ignrte 5279,14047 5306,14061 5321,14088
+Siemensstr. -> Siemensstr.: Siemensstr./Erna-Samuel-Str.	3::igndisp 5322,14044 5306,14061 5279,14047
+Erna-Samuel-Str. -> Siemensstr.: Siemensstr./Erna-Samuel-Str.	3::igndisp 5321,14088 5306,14061 5322,14044
+Mierendorffstr.	3nocross::ignrte 3337,12855 3327,12818 3300,12751
+Mierendorffstr. -> Bonhoefferufer: Mierendorffstr.	3::igndisp 3300,12751 3327,12818 3193,12857
+Mierendorffstr. -> Bonhoefferufer: Mierendorffstr.	3::igndisp 3337,12855 3327,12818 3398,12809
+Bonhoefferufer -> Mierendorffstr.: Mierendorffstr.	3::igndisp 3398,12809 3327,12818 3300,12751
+Bonhoefferufer -> Bonhoefferufer: Mierendorffstr.	3::igndisp 3398,12809 3327,12818 3193,12857
+Bonhoefferufer -> Mierendorffstr.: Mierendorffstr.	3::igndisp 3193,12857 3327,12818 3337,12855
+Bonhoefferufer -> Bonhoefferufer: Mierendorffstr.	3::igndisp 3193,12857 3327,12818 3398,12809
+Lietzenburger Str./Sächsische Str.	3nocross::ignrte 4485,10307 4659,10335 4764,10350
+Lietzenburger Str. -> Sächsische Str.: Lietzenburger Str./Sächsische Str.	3::igndisp 4764,10350 4659,10335 4638,10162
+Lietzenburger Str. -> Bleibtreustr.: Lietzenburger Str./Sächsische Str.	3::igndisp 4485,10307 4659,10335 4676,10541
+Bleibtreustr. -> Lietzenburger Str.: Lietzenburger Str./Sächsische Str.	3::igndisp 4676,10541 4659,10335 4764,10350
+Bleibtreustr. -> Sächsische Str.: Lietzenburger Str./Sächsische Str.	3::igndisp 4676,10541 4659,10335 4638,10162
+Sächsische Str. -> Lietzenburger Str.: Lietzenburger Str./Sächsische Str.	3::igndisp 4638,10162 4659,10335 4485,10307
+Sächsische Str. -> Bleibtreustr.: Lietzenburger Str./Sächsische Str.	3::igndisp 4638,10162 4659,10335 4676,10541

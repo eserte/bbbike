@@ -342,7 +342,7 @@ Jägerallee/Hegelallee: Durchfahrt verboten	3 -13236,-797 -13231,-763 -13221,-718
 Osloer Str.: Straßenbahntrasse	3nocross 9442,16610 9331,16624 9210,16638 8939,16668
 Osloer Str.: Straßenbahntrasse	3nocross 8249,16741 8161,16752 8144,16754 7852,16790 7763,16779
 Seestr.: Straßenbahntrasse	3nocross 7606,16746 7447,16613 7417,16587 7403,16575 7295,16477 7231,16418
-Bismarckstr.: Mittelstreifen	3nocross 3690,11629 3844,11649 3898,11655
+Bismarckstr.: Mittelstreifen	3nocross 3689,11637 3843,11659 3897,11666
 Lenbachstr.: Einbahnstraße (genau genommen nur das östlichste Stück)	1 5888,6520 6071,6559
 Augustenburger Platz: nur für Taxen und Anlieger	2:Anlieger 6561,15041 6537,15156 6562,15177
 Zinnowitzer Str. - Friedrichstr.:	3 9011,14019 8870,13926 8935,13844
@@ -641,7 +641,7 @@ Poller	3 * 8590,13653 *
 Mittelstreifen	3nocross 11888,9189 11803,9390 11785,9437
 Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15458,11306 *
 Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15279,10862 *
-Mittelinsel	3nocross 4345,11710 4331,11554 4312,11354
+Mittelinsel	3nocross 4337,11721 4331,11554 4312,11354
 Sybelstr.	1 4017,10585 4256,10583
 Hüttendorfer Weg	1 21409,-109 21463,-280
 Brückenstr.: Anlieger frei	1:Anlieger 17728,5756 17900,6072
@@ -844,7 +844,7 @@ Scharnhorststr.: Poller	3 7883,14508 7801,14450 *
 Lindauer Allee: Mittelstreifen	3nocross 5635,18776 5713,18777 5791,18778
 #: note: genug lichte Breite für Radfahrer
 Eisbärenweg: Schranken an beiden Einfahrten	2 6950,17669 6909,17796
-Bismarckstr.: Mittelstreifen	3nocross 4345,11710 4507,11728 4737,11768
+Bismarckstr.: Mittelstreifen	3nocross 4337,11721 4502,11740 4737,11768
 Stadtgärten - Saupéweg: Poller	3 * 11551,21720 *
 #: note: Radfahrer können explizit den Mittelstreifen überqueren
 Prenzlauer Promenade: Mittelstreifen	3nocross 11872,17522 11893,17397 11920,17245
@@ -921,7 +921,7 @@ Triftstr.	1 6715,15152 6743,15102
 #: note: Überquerungsmöglichkeit für Fußgänger/Radfahrer wenige Meter östlich von der Kreuzung
 Fürstenwalder Damm/Jastrower Weg: Straßenbahntrasse	3nocross 23818,5394 23849,5380 23942,5338
 #: XXX_indoor: unbequemes Überqueren, parkende Autos --- eventuell auch für Radfahrer mit 3nocross markieren? Oder die Jüdenstr.-Lösung wählen?
-Bismarckstr.: Mittelstreifen	3nocross 3159,11562 3320,11583 3441,11598
+Bismarckstr.: Mittelstreifen	3nocross 3159,11562 3320,11583 3441,11601
 Lietzenburger Str./Olivaer Platz: Mittelstreifen	3nocross 4485,10307 4360,10320 4239,10358
 Suarezstr.	1 2845,10840 2921,10928
 Temporäre Umleitungsstrecke: eigentlich nur für Versorgung und Taxis offen	2 18768,-1350 18666,-1397 18617,-1486 18578,-1538
@@ -1063,3 +1063,6 @@ Ossietzkyplatz - ...: Abbiegen verboten	3 10215,19532 10228,19480 10250,19504
 Ossietzkyplatz - ...: Geradeausfahren verboten	3 10215,19532 10228,19480 10271,19361 10294,19298
 Friedrich-Ebert-Str.: Einfahrt verboten	3 -12882,-1565 -12776,-1575 -12786,-1556
 Siefertstr.: Einbahnstraße	1 -12913,-1451 -12975,-1363 -12976,-1356
+Siemensstr./Erna-Samuel-Str.	3nocross 5279,14047 5306,14061 5321,14088
+Mierendorffstr.	3nocross 3337,12855 3327,12818 3300,12751
+Lietzenburger Str./Sächsische Str.	3nocross 4485,10307 4659,10335 4764,10350

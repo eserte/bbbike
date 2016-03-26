@@ -588,7 +588,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7277,15586
 	X 6626,15104
 	X 6781,16026
-	X 7687,16770
+	X 7681,16769
 	X 7346,13022
 #: XXX_prog beim Rechtsabbiegen von Alt-Moabit in die Emma-Herwegh-Str. gibt es keine Ampel; Radfahrer aus der Lüneburger Str. Richtung Emma-Herwegh-Str. haben zumindest eine Anforderungsampel auf dem Mittelstreifen
 	X 7595,12980
@@ -628,8 +628,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -580,3912
 	X 6055,4950
 	X 4367,11996
-	X 4345,11710
-	X 3690,11629
+	X 4337,11721
+	X 3689,11637
 	X 3159,11562
 	X 3280,12512
 	X 3034,12502
@@ -640,7 +640,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 2857,14222
 	X 2831,14219
 	X 2795,14161
-	X 3441,11598
+	X 3441,11601
 	X 2609,11503
 	X 2547,11788
 	X 2071,11752
@@ -672,7 +672,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: next_check_id: AMNORDHAFEN-2016
 #: XXX bleibt diese Ampel noch bestehen?
 #: osm_watch: node id="3777205508" version="1"
-#: last_checked: 2016-03-16
+#: last_checked: 2016-03-26
 #: check_frequency: 60d
 	X 7527,14684
 	X -3251,14741
@@ -852,12 +852,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 21108,11628
 	X 24654,11265
 	X 19994,12484
-#: XXX_prog: zurzeit eine Fußgängerampel mit Anforderung, östlich versetzt, lange Wartezeiten
-#: source_id: INKO_117292
-#: source_id: INKO_104519
-#: last_checked: 2015-10-31
-#: check_frequency: 90d
-	X 4507,11728
+# REMOVED (wieder "normal") --- #: XXX_prog: zurzeit eine Fußgängerampel mit Anforderung, östlich versetzt, lange Wartezeiten --- #: source_id: INKO_117292 --- #: source_id: INKO_104519 --- #: last_checked: 2015-10-31 --- #: check_frequency: 90d
+	X 4502,11740
 	X 3807,11859
 	X 3408,11849
 	X 1747,11719
@@ -1809,7 +1805,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3927,9935
 	F 3974,9774
 	X 4513,10702
-	X 3970,11664
+	X 3969,11675
 	X 3460,11441
 	X 3479,11238
 	F 2865,11086
@@ -2223,7 +2219,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
 #: XXX_prog Radfahrer Richtung Heinz-Galinski-Str. müssen auch die Fußgängerampel benutzen; insgesamt drei Ampeln, unabhängig voneinander geschaltet
 #: note: Anforderungsampel
 	F 8144,16754
-	F 4123,11683
+	F 4122,11694
 	F 10943,6498
 	X 4991,5531
 	X 21251,12767
@@ -2797,8 +2793,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: source_id: 2147339539 vvv
 #: last_checked: 2015-12-28 vvv
 #: check_frequency: 90d vvv
-	F 16886,6665
-	F 16646,6925
+	F::inwork 16886,6665
+	F::inwork 16646,6925
 #: check_frequency ^^^
 #: last_checked ^^^
 #: source_id ^^^
@@ -2814,8 +2810,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX laut fritz bis 31.07.2016
 #: last_checked: 2016-03-15 vvv
 #: next_check: 2016-06-30 vvv
-	F 10703,11837
-	F 10656,11887
+	F::inwork 10703,11837
+	F::inwork 10656,11887
 #: next_check ^^^
 #: last_checked ^^^
 #: source_id ^^^

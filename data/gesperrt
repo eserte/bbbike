@@ -37,7 +37,7 @@ Rasthof Avus	1 1870,10406 1882,10356 1847,10323 1723,10289 1692,10348 1793,10424
 Breitenbachplatz (Westseite)	1 4292,6558 4218,6583 4111,6651 4074,6681 4021,6729 3947,6814
 Breitenbachplatz (Ostseite)	1 3981,6850 4061,6753 4107,6718 4146,6693 4250,6625 4292,6558
 Inselstr. Schwanenwerder	1 -5310,4216 -5393,4211 -5453,4274 -5471,4412 -5442,4526 -5386,4539 -5341,4511 -5358,4404 -5356,4296 -5310,4216
-Bayerischer Platz	1 6059,9118 6053,9224 6084,9242 6131,9241 6152,9136 6152,9091 6118,9078 6083,9082 6059,9118
+Bayerischer Platz	1 6059,9118 6044,9223 6084,9242 6131,9241 6152,9136 6147,9100 6115,9088 6076,9091 6059,9118
 orthodoxe Kirche	1 3952,8980 3831,9052
 U-Bahn Dahlem	1 3216,6393 3123,6318 3023,6246 2950,6141 2898,5947 2823,5672 2797,5624 2746,5537 2523,5114 2469,5043 2313,4901 2190,4823 2079,4769 2027,4792
 U-Bahn Dahlem	1 2027,4792 2095,4805 2169,4854 2217,4884 2288,4932 2454,5067 2499,5144 2717,5578
@@ -1041,8 +1041,8 @@ Abbiegen nicht möglich	3nocross::ignrte 7602,17399 7675,17430 7902,17166
 Holländerstr. -> Fahlandgasse: Abbiegen nicht möglich	3::igndisp 7602,17399 7675,17430 7675,17475
 Fahlandgasse -> Residenzstr.: Abbiegen nicht möglich	3::igndisp 7675,17475 7675,17430 7902,17166
 Fahlandgasse -> Letteallee: Abbiegen nicht möglich	3::igndisp 7675,17475 7675,17430 7707,17445
-Mittelstreifen	3nocross::ignrte 7579,17532 7572,17558 7540,17675
-Am Schäfersee -> Residenzstr.: Mittelstreifen	3::igndisp 7477,17544 7572,17558 7540,17675
+Mittelstreifen	3nocross::ignrte 7579,17532 7572,17558 7533,17673
+Am Schäfersee -> Residenzstr.: Mittelstreifen	3::igndisp 7477,17544 7572,17558 7533,17673
 Mittelstreifen	3nocross::ignrte 5550,18775 5635,18776 5713,18777
 Lindauer Allee -> Pfifferlingweg: Mittelstreifen	3::igndisp 5713,18777 5635,18776 5635,18736
 Pfifferlingweg -> Lindauer Allee: Mittelstreifen	3::igndisp 5635,18736 5635,18776 5550,18775
@@ -1620,8 +1620,8 @@ Treppe zum Kolonnenweg -> Treppe zum Kolonnenweg: Straßenbahn auf Mittelstreifen
 Straßenbahn auf Mittelstreifen	3nocross::ignrte 9514,16603 9617,16590 9781,16569 9816,16565
 Bornholmer Str. -> Sonderburger Str.: Straßenbahn auf Mittelstreifen	3::igndisp 9781,16569 9617,16590 9603,16468
 Sonderburger Str. -> Bornholmer Str.: Straßenbahn auf Mittelstreifen	3::igndisp 9603,16468 9617,16590 9514,16603
-Straßenbahntrasse	3nocross::ignrte 7687,16770 7763,16779 7852,16790
-Osloer Str. -> Louise-Schroeder-Pl.: Straßenbahntrasse	3::igndisp 7687,16770 7763,16779 7745,16889
+Straßenbahntrasse	3nocross::ignrte 7681,16769 7763,16779 7852,16790
+Osloer Str. -> Louise-Schroeder-Pl.: Straßenbahntrasse	3::igndisp 7681,16769 7763,16779 7745,16889
 Louise-Schroeder-Pl. -> Osloer Str.: Straßenbahntrasse	3::igndisp 7745,16889 7763,16779 7852,16790
 Straßenbahntrasse	3nocross::ignrte 7417,16587 7447,16613 7606,16746
 Seestr. -> Iranische Str.: Straßenbahntrasse	3::igndisp 7606,16746 7447,16613 7713,16557
@@ -1917,7 +1917,7 @@ Brook-Taylor-Str. -> Rudower Chaussee: Mittelstreifen, zukünftig Straßenbahntras
 Mittelstreifen, zukünftig Straßenbahntrasse	3nocross::ignrte 19581,3184 19603,3207 19732,3340
 Karl-Otto-Reinsch-Str. -> Rudower Chaussee: Mittelstreifen, zukünftig Straßenbahntrasse	3::igndisp 19524,3286 19603,3207 19732,3340
 Mittelstreifen mit Geländer	3nocross::ignrte 6935,8208 7001,8161 7073,8081
-Torgauer Str. -> Sachsendamm: Mittelstreifen mit Geländer	3::igndisp 7250,8223 7001,8161 7073,8081
+Torgauer Str. -> Sachsendamm: Mittelstreifen mit Geländer	3::igndisp 7158,8208 7001,8161 7073,8081
 Mittelstreifen	3nocross::ignrte 11963,11813 11916,11846 11764,12001
 Holzmarktstr. -> Mehlbeerenweg: Mittelstreifen	3::igndisp 11764,12001 11916,11846 11923,11881
 Mehlbeerenweg -> Holzmarktstr.: Mittelstreifen	3::igndisp 11923,11881 11916,11846 11963,11813
@@ -2338,7 +2338,7 @@ tragen (41 Stufen)	0:45:-226 9983,16561
 tragen (Treppe)	0:45:38 9982,16527
 tragen (Treppe, 6+7 Stufen)	0:30:-69 3762,12599
 tragen (Treppe, 3 Stufen)	0:10:-91 3810,12600
-tragen (Treppe)	0:30:-267 4334,12551
+tragen (Treppe)	0:30:87 4334,12551
 tragen (Jungfernbrücke, 10 Stufen)	0:15:53 10212,12002
 tragen (Jungfernbrücke, 4 Stufen)	0:10:53 10223,12010
 tragen (Treppe, 26 Stufen)	0:30:-248 10591,12203
@@ -2380,6 +2380,8 @@ tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
 tragen (6 Stufen)	0:15:-90 4608,63927
 Treppe	0:40:-131 1888,42795
+Drängelgitter	BNP:3:-76:trailer=10 7886,8335
+Drängelgitter	BNP:3:-75:trailer=10 7911,8329
 Schranke, kann auf Bürgersteig umfahren werden	BNP:3:-217:trailer=5 1778,20377
 Schranke	BNP:3:-244:trailer=10 5296,11529
 Drängelgitter	BNP:5:-167:trailer=10 14364,8096
@@ -3131,9 +3133,9 @@ Saldernstr. -> Kaiserdamm: queren schlecht möglich	3::igndisp 2405,11587 2391,11
 Saldernstr. -> Riehlstr.: queren schlecht möglich	3::igndisp 2405,11587 2391,11478 2393,11381
 Riehlstr. -> Kaiserdamm: queren schlecht möglich	3::igndisp 2393,11381 2391,11478 2282,11463
 Riehlstr. -> Saldernstr.: queren schlecht möglich	3::igndisp 2393,11381 2391,11478 2405,11587
-unbequemes Überqueren des Mittelstreifens, parkende Autos	3nocross::ignrte 3441,11598 3555,11612 3690,11629
-Bismarckstr. -> Rückertstr.: unbequemes Überqueren des Mittelstreifens, parkende Autos	3::igndisp 3690,11629 3555,11612 3571,11451
-Rückertstr. -> Bismarckstr.: unbequemes Überqueren des Mittelstreifens, parkende Autos	3::igndisp 3571,11451 3555,11612 3441,11598
+unbequemes Überqueren des Mittelstreifens, parkende Autos	3nocross::ignrte 3441,11601 3554,11617 3689,11637
+Bismarckstr. -> Rückertstr.: unbequemes Überqueren des Mittelstreifens, parkende Autos	3::igndisp 3689,11637 3554,11617 3571,11451
+Rückertstr. -> Bismarckstr.: unbequemes Überqueren des Mittelstreifens, parkende Autos	3::igndisp 3571,11451 3554,11617 3441,11601
 Mittelstreifen, unbequemes Überqueren	3nocross::ignrte 3479,11238 3467,11373 3460,11441
 tragen, schieben (3 x 9 Stufen, schmale Rampe)	0:30:-263 6190,12978
 tragen (30 Stufen)	0:45:26 5890,12602
@@ -3157,7 +3159,6 @@ tragen (2 x 7 Stufen)	0:30:-178 2316,8469
 Mittelstr.	1 9462,12481 9343,12464
 Bauhofstr.	1 9815,12705 9673,12661
 Hollmannstr.	2 9995,10637 9869,10672 9777,10719
-Nordsternstr.	1s 6268,8884 6292,8899
 tragen	0:60:-139 -9371,-618
 tragen (ca. 60 Stufen)	0:80:-213 -8120,-1500
 tragen	0:60:-128 -8451,-1418

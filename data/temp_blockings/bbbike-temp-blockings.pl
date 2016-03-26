@@ -856,7 +856,7 @@ EOF
        text  => 'Leibnizstraße (Charlottenburg) zwischen Bismarckstr. und Otto-Suhr-Allee in Richtung Kantstr. Baustelle, Fahrtrichtung gesperrt bis 5.9.2004, 20:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 4367,11996 4345,11710
+userdel	1 4367,11996 4337,11721
 EOF
      },
      { from  => 1094508000, # 2004-09-07 00:00
@@ -5716,7 +5716,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003108',
        data  => <<EOF,
-userdel	1::inwork 4367,11996 4345,11710
+userdel	1::inwork 4367,11996 4337,11721
 EOF
      },
      { from  => 1156793020, # 2006-08-28 21:23
@@ -6109,7 +6109,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003701',
        data  => <<EOF,
-userdel	2::temp 7579,17532 7572,17558 7540,17675 7491,17793 7477,17832 7453,17899 7432,17964 7426,17981 7405,18047 7335,18257 7291,18392 7269,18460 7233,18562 7198,18575
+userdel	2::temp 7579,17532 7572,17558 7533,17673 7491,17793 7477,17832 7453,17899 7432,17964 7426,17981 7405,18047 7335,18257 7291,18392 7269,18460 7233,18562 7198,18575
 EOF
      },
      { from  => 1221024854, #  undef
@@ -6238,11 +6238,11 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003744',
        data  => <<EOF,
-userdel	1::inwork 4367,11996 4345,11710
+userdel	1::inwork 4367,11996 4337,11721
 EOF
      },
-     { from  => $isodate2epoch->("2015-05-06 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-05-08 23:59:59"),
+     { from  => $isodate2epoch->("2016-05-06 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-05-08 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 4]],
        text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (7.5.2016 und 8.5.2016)',
@@ -6867,7 +6867,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004242',
        data  => <<EOF,
-userdel	1::inwork 8211,17585 8095,17574 7998,17564 7915,17557 7841,17551 7828,17550 7675,17538 7579,17532
+userdel	1::inwork 8211,17585 8095,17574 7998,17564 7915,17557 7841,17551 7820,17549 7675,17538 7579,17532
 EOF
      },
      { from  => 1165266184, # 2006-12-04 22:03
@@ -9040,7 +9040,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004242',
        data  => <<EOF,
-userdel	1::inwork 8211,17585 8095,17574 7998,17564 7915,17557 7841,17551 7828,17550 7675,17538 7579,17532
+userdel	1::inwork 8211,17585 8095,17574 7998,17564 7915,17557 7841,17551 7820,17549 7675,17538 7579,17532
 EOF
      },
      { from  => undef, # 
@@ -10311,7 +10311,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006852',
        data  => <<EOF,
-userdel	2::temp 7335,18257 7405,18047 7426,17981 7432,17964 7453,17899 7477,17832 7491,17793 7540,17675 7572,17558 7579,17532
+userdel	2::temp 7335,18257 7405,18047 7426,17981 7432,17964 7453,17899 7477,17832 7491,17793 7533,17673 7572,17558 7579,17532
 EOF
      },
      { from  => 1192489272, # 2007-10-16 01:01
@@ -14786,7 +14786,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_013407',
        data  => <<EOF,
-userdel	2::temp 7579,17532 7572,17558 7540,17675 7491,17793 7477,17832 7453,17899 7432,17964 7426,17981 7405,18047 7335,18257
+userdel	2::temp 7579,17532 7572,17558 7533,17673 7491,17793 7477,17832 7453,17899 7432,17964 7426,17981 7405,18047 7335,18257
 EOF
      },
      { from  => 1246831200, # 2009-07-06 00:00
@@ -22078,7 +22078,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (beendet) --- #: XXX bis wann gehen die Bauarbeiten? --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4579 (eventuell Einschränkungen bis 2018?) --- #: last_checked: 2013-10-16 --- #: check_frequency: 30d --- #: priority: #A
-userdel	q4::inwork 7001,8161 7250,8223
+userdel	q4::inwork 7001,8161 7158,8208 7250,8223
 EOF
      },
      { from  => 1379328680, # 2013-09-16 12:51
@@ -23455,7 +23455,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2015-10-31
+#: last_checked: 2016-03-26
 #: check_frequency: 90d
 userdel	q3::inwork 4503,10497 4485,10307
 EOF
@@ -24066,7 +24066,7 @@ EOF
        text  => 'Zillestr.: zwischen Richard-Wagner-Str. und Wilmersdorfer Str. Bauarbeiten, Einbahnstraßenregelung, offen Richtung Osten, Ende der Sperrung unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2015-12-04
+#: last_checked: 2016-03-26
 #: check_frequency: 90d
 userdel	q4::inwork; 3807,11859 3666,11855
 EOF

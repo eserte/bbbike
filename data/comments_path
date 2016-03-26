@@ -8,7 +8,7 @@ bereits bei der Fußgängerampel am Lützowplatz die Straßenseite wechseln	PI; 6824
 bereits bei der Ampel an der Corneliusstr. die Straßenseite wechseln	PI; 6880,11110 6882,11061 6873,11011 7002,11034
 auf linken Gehweg fahren, Straßenseite an der Corneliusstr. wechseln	CP; 6742,11099 6873,11011 6882,11061
 bereits an der Kreuzung An der Urania/Kurfürstenstr. die Straßenseite wechseln	PI; 6740,10755 6685,10690 6745,10619
-bereits an der Kreuzung Sachsendamm/Dominicusstr./Ebersstr. die Straßenseite wechseln	PI; 6935,8208 7001,8161 7250,8223
+bereits an der Kreuzung Sachsendamm/Dominicusstr./Ebersstr. die Straßenseite wechseln	PI; 6935,8208 7001,8161 7158,8208 7250,8223
 am Domäne-Markt Richtung Hochbahnhof Hallesches Tor abbiegen	CP; 9536,10064 9579,10122 9599,10175
 auf linken Gehweg fahren, Straßenseite an der Fußgängerampel Yorckstr./Katzbachstr. wechseln	CP; 8774,9534 8679,9544 8595,9495
 von der Brandenburgischen in die Paderborner: bereits an der Ampel Zähringerstr. auf den linken Gehweg wechseln	PI; 3927,9935 3902,10043 3719,10004
@@ -336,7 +336,7 @@ Holzungsweg - Argentinische Allee: linken Gehweg bis zur Straße "Am Waldfriedhof
 Mutter-Mochow-Weg - Potsdamer Chaussee: linken Gehweg bis zur Kurstr. benutzen	CP; -1849,2043 -1959,2305 -2023,2279
 Potsdamer Chaussee - Wiesenschlag: bereits an der Kurstr. auf den linken Gehweg wechseln	PI; -2023,2279 -2074,2258 -2036,2150
 Seestr./Groninger Str. - Weg am Kombibad: die Seestr. an der Fußgängerampel überqueren	PI; 7403,16575 7417,16587 7298,16725
-Friedenstr. - Schulweg: bereits an der Pufendorfstr. auf den linken Gehweg wechseln	PI; 12616,12844 12594,12866 12483,12682
+Friedenstr. - Schulweg: bereits am Zebrastreifen Pufendorfstr. auf den linken Gehweg wechseln	PI; 12616,12844 12594,12866 12483,12682
 Brunsbütteler Damm - Weg zur Staakener Feldstr.: bereits an der Fußgängerampel auf den linken Gehweg wechseln	PI; -7762,14067 -7716,14031 -7647,13985
 Winzerstr. - Heerstr.: auf den rechten Weg einbiegen	CP2; -4687,11885 -4637,11982
 Residenzstr. - Am Schäfersee: bereits an der Ampel Pankower Allee auf den linken Gehweg wechseln	PI; 7579,17532 7572,17558 7477,17544
@@ -422,3 +422,6 @@ Weg unterhalb der Spindlersfelder Str.: beim Überqueren der Ottomar-Geschke-Str.
 Kolonnenstr. - Weg zur Bautzener Str.: ggfs. schon an der Ampel Wilhelm-Kabus-Str./Kolonnenstr. auf den linken Gehweg wechseln	PI; 8078,8772 8145,8773 8184,8902
 Kolonnenstr. - Weg zur Bautzener Str.: bei Renault König abbiegen	CP; 8209,8773 8145,8773 8184,8902
 Treskowallee - Rheinsteinstr.: rechts in die Ehrenfelsstr. abbiegen und dann diagonal weiter	CP; 18733,8650 18737,8686 18865,8740
+Bonhoefferufer: ggfs. zum Überqueren der Mierendorffstr. die Ampel rechts benutzen	CP; 3398,12809 3327,12818 3193,12857
+Bonhoefferufer - Mierendorffstr.: ggfs. zum Überqueren der Mierendorffstr. die Ampel rechts benutzen	CP; 3398,12809 3327,12818 3300,12751
+Mierendorffstr. - Bonhoefferufer: ggfs. schon an der Ampel Tegeler Weg auf die linke Seite wechseln	PI; 3337,12855 3327,12818 3398,12809
