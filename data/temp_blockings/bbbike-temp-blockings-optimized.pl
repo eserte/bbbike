@@ -2723,7 +2723,29 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
+userdel	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
+userdel	q4::temp 11275,8387 11230,8402
+userdel	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
+',
+         'from' => 1461794400,
+         'id' => 2207,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              4
+                            ]
+                          ],
+         'source_id' => 'http://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2983315-2970764-48-neukoellner-maientage.html',
+         'text' => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 29.04.2016 bis 25.05.2016',
+         'type' => 'handicap',
+         'until' => 1464299999
+       },
        undef,
        undef,
        undef,
@@ -3776,17 +3798,7 @@ userdel	q4::inwork; -6861,15129 -6507,15007
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX wann werden die Bauarbeiten beendet?
-#: next_check: 2016-03-29
-userdel	q4::inwork 5223,5704 5115,5551 5076,5500
-',
-         'from' => undef,
-         'id' => 2770,
-         'text' => 'Robert-Lück-Str.: Fahrbahn zwischen Albrechtstr. und Bergstr. gesperrt ',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => 'userdel	q4::inwork 19031,5316 18999,5237 18942,5236 18820,5275 18659,5330
 ',

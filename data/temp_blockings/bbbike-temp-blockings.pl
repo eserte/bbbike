@@ -19181,12 +19181,13 @@ EOF
 userdel	q4::temp 13178,10623 13206,10651 13305,10789 13332,10832
 EOF
      },
-     { from  => $isodate2epoch->("2015-04-28 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-05-26 23:59:59"), # 1 Tag Nachlauf
+     { from  => $isodate2epoch->("2016-04-28 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-05-26 23:59:59"), # 1 Tag Nachlauf
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 4]],
-       text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 29.04.2015 bis 25.05.2015',
+       text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 29.04.2016 bis 25.05.2016',
        type  => 'handicap',
+       source_id => 'http://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2983315-2970764-48-neukoellner-maientage.html',
        data  => <<EOF,
 userdel	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
 userdel	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
@@ -24858,12 +24859,11 @@ userdel auto	3 5565,11147 5542,11075 5600,11114
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1459111015, # undef, # XXX --- seit 2016-03-01 nicht mehr bei fritz gelistet...
        text  => 'Robert-Lück-Str.: Fahrbahn zwischen Albrechtstr. und Bergstr. gesperrt ',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX wann werden die Bauarbeiten beendet?
-#: next_check: 2016-03-29
+# REMOVED --- #: XXX wann werden die Bauarbeiten beendet? --- #: next_check: 2016-03-29
 userdel	q4::inwork 5223,5704 5115,5551 5076,5500
 EOF
      },
