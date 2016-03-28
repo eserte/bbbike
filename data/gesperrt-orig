@@ -60,7 +60,7 @@ Am Großen Wannsee	1 -5869,1261 -5848,1379 -5867,1449 -5901,1562 -5929,1649 -5961
 Wilhelplatz	1 -7232,445 -7219,454 -7064,584
 Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
-Alt-Mariendorf (Nord)	1 9731,3889 9953,3806
+Alt-Mariendorf (Nord)	1 9732,3883 9831,3876 9953,3806
 Alt-Mariendorf (Süd)	1 9953,3806 9751,3769 9584,3713 9455,3671 9391,3651 9215,3599 9128,3580 8964,3539
 Knoten Märkische Allee	1 19726,11743 19785,11760 19849,11779 19890,11830 19918,11891
 Knoten Märkische Allee	1 19918,11891 19979,11774
@@ -181,7 +181,7 @@ Baerwaldstr.	1 10361,9755 10357,9807 10424,9958
 # XXX vorrübergehend keine Einbahnstraße (wg. Umleitung) --- Baerwaldstr.	1 10500,10081 10513,10038 10480,9949
 #: next_check_id ^^^
 Baerwaldstr.	1 10480,9949 10405,9795 10361,9755
-Dittersbacher Weg	1 7865,3354 7852,3183
+Dittersbacher Weg	1 7855,3355 7852,3183
 Anzengruberstr.	1 12865,8346 12689,8289
 #: XXX Nalepastr. wird in Zukunft wieder geöffnet (Sackgasse für Autos, Durchfahrtmöglichkeit für Radfahrer)
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00081950/50-Anlagen/01/DRS0182VB.pdf (Pläne)
@@ -591,7 +591,7 @@ Schönstedtstr.	1 12540,8458 12649,8535
 Erkelenzdamm	1s:q3 11117,10326 11094,10261
 Alt-Tempelhof	1 8787,6660 8722,6656
 #: by: Steini (immerlocker)
-Langkofelweg	1 6845,3403 6940,3498 7018,3572
+Langkofelweg	1 6845,3403 7023,3570
 Dornbrunner Str.	1 15954,6297 16043,6414
 #: by: Cornelia (cvpapen...)
 #: confirmed_by: srt
@@ -847,7 +847,7 @@ Pitschener Str.	1s:q3 21769,-432 21719,-397 21637,-381
 Dankratstr.	1s:q3 21105,9538 20943,9543
 #: note: ansonsten Durchfahrt verboten
 Helen-Ernst-Str., hinter der Mercedes-Benz Arena: bei Veranstaltungen gesperrt	2 13240,11279 13056,11329
-Bruno-Taut-Ring	1 13833,3665 13682,3718 13628,3781 13626,3867 13673,3915 13726,3928 13909,3845
+Bruno-Taut-Ring	1 13833,3665 13682,3718 13628,3781 13632,3875 13673,3915 13726,3928 13909,3845
 Havermannstr.	1s:q3 13803,4932 13892,4955
 Rambowstr.	1s:q3 13853,4759 13825,4850 13803,4932
 Arabisweg	1s:q3 17721,2232 17772,2331
@@ -1934,7 +1934,7 @@ tragen (ca. 35 Stufen)	0:30 7655,7096
 #: note: eine inoffizielle Umfahrung unter der Brücke existiert, ist aber teilweise nur ein enger, steiler Trampelpfad
 tragen (30 Stufen)	0:30 15571,4168
 tragen (26 Stufen, steile Treppe)	0:30 15156,6034
-tragen (Treppe)	0:30 4803,3409
+tragen (Treppe)	0:30 4808,3406
 tragen (zwei Treppen, je ca. 10 Stufen)	0:30 8823,16877
 tragen (Treppe)	0:30 14390,5443
 tragen (Treppe)	0:30 14325,5409
@@ -2071,6 +2071,8 @@ Treppe	0:40 1888,42795
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+#: note: etwas weiter als üblich
+Drängelgitter	BNP:2::trailer=8 4140,2706
 Drängelgitter	BNP:3::trailer=10 7886,8335
 Drängelgitter	BNP:3::trailer=10 7911,8329
 Schranke, kann auf Bürgersteig umfahren werden	BNP:3::trailer=5 1778,20377
@@ -2652,6 +2654,12 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2015
+#: osm_watch: way id="156817982" version="10"
+#: last_checked: 2016-03-28
+#: check_frequency: 60d
+Lutterbacher Str.: noch Baustelle	2::inwork 2094,3231 1993,3170 2072,3034 2163,3092
+# 
 #: XXX Bauarbeiten (Erweiterung des Rütli-Campus?)
 #: XXX Wann sind die Bauarbeiten beendet?
 #: last_checked: 2016-03-04
@@ -2665,11 +2673,12 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,
 #: check_frequency: 60d
 Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7703,14582 7527,14684
 # 
-#: last_checked: 2016-03-23 vvv
+#: last_checked: 2016-03-28 vvv
 Treptower Park: Bauarbeiten, Weg noch nicht fertiggestellt	2::inwork 14318,9688 14443,9731
 # REMOVED --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14361,9772 14436,9784
 Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14361,9772 14436,9784 14460,9814 14483,9843 14500,9856
 # REMOVED --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14575,9648 14604,9674
+Treptower Park: Bauarbeiten	2::inwork 14695,9587 14705,9578 14791,9537
 #: XXX evtl. kann man hier als Fußgänger irgendwie vorbei
 #: check_frequency: 7d
 Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14448,9922 14460,9871 14483,9843
@@ -2692,8 +2701,8 @@ SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2336,1111 2408,1144 2504,1
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
-#: last_checked: 2015-09-27
-#: check_frequency: 100d
+#: last_checked: 2016-03-28
+#: check_frequency: 120d
 Fünf Morgen: Bauarbeiten, gesperrt. Wird es eine Anbindung an den Hüttenweg geben?	2::inwork 1437,5015 1483,5161
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5713
@@ -2812,12 +2821,7 @@ Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17651,-393
 #: next_check: 2016-12-31
 (Planstraßen 2.1, 2.2, 2.3): noch gesperrt	2 7818,13993 7917,14051 7962,13977 7866,13916
 # 
-#: last_checked: 2015-09-26 vvv
-#: next_check: 2016-03-01 (Eröffnung des Möbelmarkts im Frühjahr 2016) vvv
-Wasserstr. (Niederschöneweide): abgesperrt	2::inwork 17477,6031 17639,6227
-Uferstr. (Niederschöneweide): abgesperrt	2::inwork 17639,6227 17843,6083
-#: next_check ^^^
-#: last_checked ^^^
+# REMOVED (offen) --- #: last_checked: 2015-09-26 vvv --- #: next_check: 2016-03-01 (Eröffnung des Möbelmarkts im Frühjahr 2016) vvv --- Wasserstr. (Niederschöneweide): abgesperrt	2::inwork 17483,6024 17681,6212 --- Uferstr. (Niederschöneweide): abgesperrt	2::inwork 17681,6212 17843,6083
 # 
 #: next_check_id: BAERWALD-2015
 #: XXX siehe auch aufgehobene Einbahnstraßenregelungen weiter oben vvv
@@ -2952,15 +2956,14 @@ Niederlagstr.: Bauarbeiten, keine Zufahrt von Unter den Linden möglich	2::inwork
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
-# REMOVED --- #: XXX t/cgi-mechanize.t (ca. Zeile 673) anpassen!
-# REMOVED --- #: next_check_id: STERNDAMM-2014
-# REMOVED --- #: source_id: IM_020145
-# REMOVED --- #: by: http://www.tagesspiegel.de/berlin/sperrung-am-bahnhof-schoeneweide-zwangsgeld-drohung-gegen-die-bahn/9923866.html
-# REMOVED --- #: last_checked: 2014-06-10
-# REMOVED --- #: next_check: 2017-02-28
-# REMOVED --- #: XXX VMZ-Eintrag wurde entfernt, laut Fritz bis 2014-12-08 aktiv in beiden Richtungen
-# REMOVED --- #: priority: #A
-# REMOVED --- Sterndamm: Brückenarbeiten, Einbahnstraße	1::inwork 17886,5587 17736,5441
+#: by: fritz
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160124
+#: source_id: 2147339574
+#: source_id: IM_026665
+#: last_checked: 2016-03-28
+#: next_check: 2016-05-23
+#: valid: -20160523
+Sterndamm: Eisenbahnunterführung in Richtung Groß-Berliner Damm/Südostallee gesperrt	1::inwork 17886,5587 17736,5441
 # 
 #: next_check_id: GRENZALLEE-2014
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/de/bau.shtml
@@ -3206,8 +3209,8 @@ Am Lappjagen	1 622,5192 625,5004
 Schranke	BNP:5 -45,10096
 Pfähle	BNP:1::trailer=6 467,9516
 Bernadottestr.	1 2711,6698 2793,6593 2875,6485 2935,6448 3020,6450
-Vogelsang	1 2229,6203 2170,5939 2137,5798
-Vogelsang	1 2106,5808 2141,5948 2195,6184 2193,6214
+Vogelsang	1 2224,6191 2170,5939 2137,5798
+Vogelsang	1 2106,5808 2141,5948 2195,6184 2191,6217
 Ahornstr. (Steglitz)	1 4863,6088 4888,6093 4923,6073 4926,6053
 Ahornstr. (Steglitz)	1 4926,6053 4903,6048 4872,6068 4863,6088
 # REMOVED (seit der Eröffnung des Boulevards Berlin nicht mehr) --- Treitschkestr.	1 4854,6413 4971,6345 4997,6331 5062,6295

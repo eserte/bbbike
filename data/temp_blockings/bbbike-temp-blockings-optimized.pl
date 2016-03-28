@@ -3231,20 +3231,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: fritz
-#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160124
-#: source_id: 2147339574
-#: confirmed_by: srt
-userdel	1::inwork 17886,5587 17736,5441
-',
-         'from' => undef,
-         'id' => 2469,
-         'source_id' => 'IM_026665',
-         'text' => 'Sterndamm: Eisenbahnunterführung in Richtung Groß-Berliner Damm/Südostallee gesperrt',
-         'type' => 'gesperrt',
-         'until' => 1464040799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3733,12 +3720,14 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
          'data' => '#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.354922.php
 #: source_id: 2147339555
 userdel	q4::inwork; 4239,10358 4219,10279 4183,10144 4152,10033
+	3 4279,10270 4219,10279 3852,10236
+	3 3852,10236 4219,10279 4279,10270
 # REMOVED was: 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
 ',
          'from' => 1440910800,
          'id' => 2733,
          'source_id' => 'IM_026066',
-         'text' => 'Konstanzer Str.: zwischen Olivaer Platz und Düsseldorfer Str. und Baustelle, Fahrbahn Richtung Brandenburgische Str. gesperrt, bis August 2016',
+         'text' => 'Konstanzer Str.: zwischen Olivaer Platz und Düsseldorfer Str. und Baustelle, Fahrbahn Richtung Brandenburgische Str. gesperrt, Überqueren im Zuge der Xantener Str. nicht möglich, bis August 2016',
          'type' => 'handicap',
          'until' => 1470002400
        },
@@ -3808,6 +3797,30 @@ userdel	q4::inwork; -6861,15129 -6507,15007
          'text' => 'Köllnischen Str.: zwischen Rudower Str. und Schnellerstr. Bauarbeiten, Einbahnstraßenregelung, vom 21.03.2016 bis 30.05.2016 ',
          'type' => 'handicap',
          'until' => 1464645600
+       },
+       {
+         'data' => '#: last_checked: 2016-03-28
+#: priority: #A
+userdel	2::inwork 16066,3799 15892,3932
+',
+         'from' => undef,
+         'id' => 2772,
+         'text' => 'Am Teltowkanal: Bauarbeiten zwischen Fenchelweg und Trollblumenweg, Durchfahrt nicht möglich',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '	3 8186,9380 8192,9619 8201,9647
+	3 8201,9647 8192,9619 8186,9380
+	3 8186,9380 8192,9619 8097,9650
+	3 8097,9650 8192,9619 8201,9647
+',
+         'from' => 1458194400,
+         'id' => 2773,
+         'source_id' => 'INKO_2147339838',
+         'text' => 'Yorckstr./Bautzener Str.: Bauarbeiten, Überqueren der Yorckstr. nicht möglich (Ersatzampel steht 100m weiter), bis zum 11.04.2016 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1460412000
        }
      
 );

@@ -419,12 +419,12 @@ Bus M85	busroute_N 4136,505 4122,421 4068,406 3912,362 3898,466 3834,502 3655,75
 Bus M85	busroute_N 7873,12927 7872,13022 7939,13026 7937,13109 7867,13106 7872,13022
 Bus M77, Bus M82	busroute_N 6977,870 6941,690 6937,671 6959,509 7007,333 7014,203 6982,88
 Bus 283	busroute_N 7234,2548 7324,2559 7517,2574 7602,2522 7667,2501 7704,2482 7777,2447 7899,2391 7923,2319 7987,2337 7983,2348 7983,2348 7899,2391
-Bus 187	busroute_N 7852,3183 7865,3354 7790,3369 7755,3376 7705,3386 7587,3411 7501,3432 7483,3440 7458,3451 7407,3473 7183,3570 7109,3635 7012,3743 6996,3761
+Bus 187	busroute_N 7852,3183 7855,3355 7784,3369 7755,3376 7705,3386 7587,3411 7501,3432 7483,3440 7458,3451 7407,3473 7183,3570 7109,3635 7012,3743 6996,3761
 Bus 187	busroute_N 7755,3376 7734,3290 7719,3219 7720,3148
 Bus M77, ...	busroute_N 8495,2080 8565,2003 8607,1898
 Bus 179	busroute_N 9106,3703 9128,3580
 Bus 179	busroute_N 11791,834 11794,550
-Bus M77	busroute_N 9731,3889 9751,3769
+Bus M77	busroute_N 9732,3883 9751,3769
 Bus 282	busroute_N 10185,4187 10269,4136 10355,4085 10409,4060 10586,4039 10756,4018 10978,4075 11014,4347 10879,4360 10802,4367 10731,4302 10614,4314 10550,4320 10462,4328 10371,4337 10288,4354
 Bus 181	busroute_N 14023,4475 14295,4462 14299,4383 14239,4367 14164,4271 14119,4153
 Bus M46	busroute_N 14290,3908 14238,3857 14185,3734 14141,3614 14056,3374 14023,3276
@@ -715,7 +715,7 @@ Weiter Blick: Anlieger frei	CS -4680,8340 -5093,8398 -5266,8424
 ausgeschildert als Darßer Str.	CP2; 16277,17830 16269,17759
 Straße geht rechts von Siemes Schuhcenter ab	CP2; 12908,17807 12918,17736
 Rehauer Pfad: Anlieger frei	CS 7587,3411 7626,3554
-Ausgeschildert als "Durchgang zum Döhlauer Pfad"	CP2; 7790,3369 7800,3435
+Ausgeschildert als "Durchgang zum Döhlauer Pfad"	CP2; 7784,3369 7800,3435
 Ausgeschildert als "Zum Neumarkplan"	CP2; 12673,3619 12624,3659
 (Schönefelder Chaussee - Mauerweg): über den Altglienicker Tunnel	CS 18760,-8 18574,68 18568,28 18560,75 18544,86
 Augusta-Ufer: nicht ausgeschildert	CS -3501,14365 -3440,14498 -3331,14628 -3255,14685
@@ -955,7 +955,7 @@ Heidenelkenweg: Privatstraße	CS 16095,12685 16098,12743
 Freesienweg: Privatstraße	CS 16000,12625 15997,12743
 # REMOVED (paralleler Weg existiert) --- #: XXX parallel existiert nun ein neuer asphaltierter Weg, vermutlich als öffentlicher Weg, noch nicht ganz angebunden --- #: last_checked: 2015-10-12 --- Wilhelm-Kabus-Str. - Südkreuz: Privatstraße der DB	CP2; 7713,8001 7837,7899
 (Prühßstr. - Rixdorfer Str.): entlang Sportplatz und Schwimmbad	CS 9869,4271 9965,4299 10051,4295 10140,4280 10221,4245
-Alt-Lankwitz: nur für Anlieger	CS 7407,3473 7419,3500 7249,3598 7012,3743
+Alt-Lankwitz: nur für Anlieger	CS 7407,3473 7419,3500 7236,3605 7012,3743
 Dennewitzplatz: über Parkplatz fahren	CP; 7906,10098 7813,10112 7866,9918
 Lentzeallee [Stichstraße]: Privatstraße	CS 3165,6939 3190,7047
 Fliederweg: Privatstraße	CS -14731,644 -14769,582 -14776,560 -14732,528
@@ -1111,8 +1111,7 @@ Albrechtstr. - Selerweg: an der Kreuzung Klingsorstr./Neue Filandastr. abbiegen	
 Im Brachfeldwinkel: ausgeschildert zum "Schwedenhaus"	CP2; 3024,21286 3068,21150
 Im Brachfeldwinkel: ausgeschildert zum "Schwedenhaus"	CP2; 3068,21150 3024,21286
 # REMOVED (mittlerweile existiert ein Straßenschild) --- Altes Gaswerk Mariendorf: ausgeschildert "Marienpark" und "Kaiser's"	CP2; 8295,4303 8266,4221
-#: XXX sind die Straßen mittlerweile ausgeschildert? vvv
-Altes Gaswerk Mariendorf: ausgeschildert "Marienpark"	CP2; 8461,3410 8404,3648
-Im Marienpark: nicht ausgeschildert	CP2; 8404,3648 8346,3633
-#: XXX ^^^
+# REMOVED (mittlerweile existieren Staßenschilder) --- #: XXX sind die Straßen mittlerweile ausgeschildert? vvv --- Altes Gaswerk Mariendorf: ausgeschildert "Marienpark"	CP2; 8461,3410 8404,3648 --- Im Marienpark: nicht ausgeschildert	CP2; 8404,3648 8346,3633
 Str. 156: nicht ausgeschildert	CP2; 17532,15645 17570,15658
+#: last_checked: 2016-03-28
+Wasserstr. und Uferstr.: noch nicht ausgeschildert	CS 17483,6024 17681,6212 17843,6083

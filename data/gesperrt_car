@@ -110,7 +110,7 @@ Koserstr.	1 2950,6141 3112,6090 3118,6140 3209,6206 3309,6270
 Offenbacher Str.	1 4506,7734 4559,7672 4785,7609 5045,7623
 Wassergasse	1 11034,11895 11024,11789
 Kienitzer Str.	1 12830,8031 12692,7996 12583,7974 12466,7946
-Alt-Mariendorf (Nord)	1 9065,3693 9106,3703 9275,3753 9426,3797 9731,3889
+Alt-Mariendorf (Nord)	1 9065,3693 9106,3703 9275,3753 9426,3797 9732,3883
 Almstadtstr.	1 10797,13575 10767,13443 10757,13401 10699,13173
 Schendelgasse	1 10653,13493 10703,13467 10767,13443
 Mulackstr.	1 10308,13575 10406,13543 10535,13509 10640,13471
@@ -1308,7 +1308,7 @@ Süderholmer Steig	1 -2239,21904 -2245,21544
 Billerbecker Weg	1 1230,18698 1229,18750
 Mescheder Weg	1 2602,18737 2604,18660
 Bauerwitzer Weg	1 22917,12239 23000,12160
-Melanchthonstr.	1 6788,3181 6918,3341
+Melanchthonstr.	1 6788,3181 6926,3337
 Pößnecker Str.	1 5934,1310 5863,1453
 Aarberger Str.: Poller	3 3577,2000 3581,2105 3581,2125
 Aarberger Str.: Poller	3 3581,2125 3581,2105 3577,2000
@@ -1802,3 +1802,5 @@ Bleibtreustr. -> Lietzenburger Str.: Lietzenburger Str./Sächsische Str.	3::igndi
 Bleibtreustr. -> Sächsische Str.: Lietzenburger Str./Sächsische Str.	3::igndisp 4676,10541 4659,10335 4638,10162
 Sächsische Str. -> Lietzenburger Str.: Lietzenburger Str./Sächsische Str.	3::igndisp 4638,10162 4659,10335 4485,10307
 Sächsische Str. -> Bleibtreustr.: Lietzenburger Str./Sächsische Str.	3::igndisp 4638,10162 4659,10335 4676,10541
+Biesheimring - Brittendorfer Weg: Poller	3 1987,3166 1946,3142 1884,3106
+Brittendorfer Weg - Biesheimring: Poller	3 1884,3106 1946,3142 1987,3166

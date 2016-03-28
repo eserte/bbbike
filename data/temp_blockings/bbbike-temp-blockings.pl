@@ -1630,7 +1630,7 @@ EOF
        text  => 'Ringstr. (Steglitz) Richtung Finkensteinallee zwischen Drakestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis 12.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 3507,3635 3375,3544 3228,3455 3184,3427 3050,3333 3011,3303 2781,3122 2701,3064 2661,3021 2637,2973 2638,2843
+userdel	q4; 3507,3635 3375,3544 3228,3455 3184,3427 3050,3333 3011,3303 2781,3122 2701,3064 2661,3021 2637,2973 2626,2844
 EOF
      },
      { from  => 1110917391, # 2005-03-15 21:09
@@ -5313,7 +5313,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003129',
        data  => <<EOF,
-userdel	1::inwork 2661,3021 2637,2973 2638,2843
+userdel	1::inwork 2661,3021 2637,2973 2626,2844
 EOF
      },
      { from  => 1160591740, # 2006-10-11 20:35
@@ -21865,7 +21865,7 @@ userdel	2::temp 5047,10381 5076,10658
 EOF
      },
      { from  => undef, # $isodate2epoch->("2014-12-06 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-05-23 23:59:59"),
+       until => 1459176633, # -> gesperrt-orig - $isodate2epoch->("2016-05-23 23:59:59"),
        text  => 'Sterndamm: Eisenbahnunterführung in Richtung Groß-Berliner Damm/Südostallee gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_026665',
@@ -24455,13 +24455,15 @@ EOF
      },
      { from  => 1440910800, # 2015-08-30 07:00
        until => $isodate2epoch->("2016-08-01 00:00:00"), # 1482501600, # 2016-12-23 15:00 # laut rbbtext bis 30.12.2016, laut fritz nur 31.07.2016, laut vmz bis August 2016
-       text  => 'Konstanzer Str.: zwischen Olivaer Platz und Düsseldorfer Str. und Baustelle, Fahrbahn Richtung Brandenburgische Str. gesperrt, bis August 2016',
+       text  => 'Konstanzer Str.: zwischen Olivaer Platz und Düsseldorfer Str. und Baustelle, Fahrbahn Richtung Brandenburgische Str. gesperrt, Überqueren im Zuge der Xantener Str. nicht möglich, bis August 2016',
        type  => 'handicap',
        source_id => 'IM_026066',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.354922.php
 #: source_id: 2147339555
 userdel	q4::inwork; 4239,10358 4219,10279 4183,10144 4152,10033
+	3 4279,10270 4219,10279 3852,10236
+	3 3852,10236 4219,10279 4279,10270
 # REMOVED was: 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
 EOF
      },
@@ -24874,6 +24876,28 @@ EOF
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.450655.php',
        data  => <<EOF,
 userdel	q4::inwork 19031,5316 18999,5237 18942,5236 18820,5275 18659,5330
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Am Teltowkanal: Bauarbeiten zwischen Fenchelweg und Trollblumenweg, Durchfahrt nicht möglich',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: last_checked: 2016-03-28
+#: priority: #A
+userdel	2::inwork 16066,3799 15892,3932
+EOF
+     },
+     { from  => 1458194400, # 2016-03-17 07:00
+       until => 1460412000, # 2016-04-12 00:00
+       text  => 'Yorckstr./Bautzener Str.: Bauarbeiten, Überqueren der Yorckstr. nicht möglich (Ersatzampel steht 100m weiter), bis zum 11.04.2016 17:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'INKO_2147339838',
+       data  => <<EOF,
+	3 8186,9380 8192,9619 8201,9647
+	3 8201,9647 8192,9619 8186,9380
+	3 8186,9380 8192,9619 8097,9650
+	3 8097,9650 8192,9619 8201,9647
 EOF
      },
     );

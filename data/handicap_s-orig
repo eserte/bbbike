@@ -23,7 +23,7 @@ W¸hlischstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14674,11370 14737,
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraﬂe wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2016-03-26 vvv
+#: last_checked: 2016-03-28 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14286,11186 14357,11148
 # REMOVED (keine Behinderungen mehr) --- Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 # REMOVED (gibt's nicht mehr?) --- Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraﬂe ausgewiesen	q3::inwork; 14442,11101 14468,11203
@@ -41,7 +41,7 @@ Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3:
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2016-03-22
+#: last_checked: 2016-03-28
 Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
 # 
 #: last_checked: 2016-03-22
@@ -623,8 +623,8 @@ Br¸cke Schˆnflieﬂer Str.: Fuﬂg‰nger	q3 10593,16037 10592,15968 10575,15968
 (zum Rolandufer): Gehweg	q2 11351,12221 11278,12185
 Rolandufer: Gehweg, viele Fuﬂg‰nger	q3 10837,12158 10660,12176 10591,12203 10583,12206
 Spreeufer: Gehweg, viele Fuﬂg‰nger, im Sommer Straﬂencafe	q4 10583,12206 10492,12289 10424,12364 10422,12395
-#: XXX wo genau sind die Bordsteine?
-Herthastr.: Gehweg, Bordsteine	q4 1935,9239 1932,9263
+#: XXX_prog BS an der Lynar/Herthastr., sowie an der Koenigsallee, wenn man nach links abbiegen mˆchte (ansonsten q2 oder q3)
+Herthastr.: Gehweg, Bordsteine	q4 1937,9253 1932,9263
 Fuggerstr.: einige Fuﬂg‰nger	q1 6128,10319 6020,10351
 Pfalzburger Str.: Gehweg	q2 4905,10069 4910,10135
 Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
@@ -885,8 +885,8 @@ Tasdorfer Str. - Wilhelm-Guddorf-Str.: Fuﬂg‰nger	q1 15393,11590 15423,11667
 Am Bahndamm: Radfahren offiziell nicht erlaubt	q2 7662,4529 7769,4315
 Am Bahndamm: Fuﬂg‰nger	q1 7769,4315 7795,4242 8106,3410
 Edenkobener Steg: Fuﬂg‰nger	q1 6618,4191 6633,4272
-#: XXX bleibt es bei steilen Abschnitt?
-#: last_checked: 2015-07-23
+#: XXX bleibt es bei dem steilen Abschnitt?
+#: last_checked: 2016-03-28
 #: check_frequency: 90d
 Teltowkanalpromenade: enge und kurvige Unterf¸hrung, steile Abschnitte	q4 4261,2703 4258,2693 4247,2652 4202,2622 4193,2616
 Heinrich-Laehr-Park: Fuﬂg‰nger	q1 1525,581 1372,1208 1328,1387 1249,1672
@@ -1258,7 +1258,8 @@ Wirsitzer Weg: Bodenschwelle	q0 22448,6957 22641,6918
 (Valeska-Gert-Str. - Am Postbahnhof): Fuﬂg‰nger	q1 12807,11287 12713,11372
 #: XXX_prog: 2x Bordsteine
 Fritzi-Massary-Str: Bordsteine	q3 15428,6355 15452,6384
-(Rotkehlchenweg - Kormoranweg): eng, Fuﬂg‰nger	q2 14090,3776 14185,3734
+#: XXX_prog: 2x Bordsteine (ansonsten q2)
+(Rotkehlchenweg - Kormoranweg): eng, einige Fuﬂg‰nger, Bordsteine	q3 14099,3772 14185,3734
 D¸rtenstr.: Fuﬂg‰nger	q2 13785,4839 13825,4850 13874,4867 13914,4877
 Angelikaweg: Fuﬂg‰nger	q1 15459,2921 15537,3026
 Primelweg: Fuﬂg‰nger, eng	q1 15804,2512 15862,2588
@@ -1405,7 +1406,7 @@ Sch‰ﬂburger Weg: enge Straﬂe	q1+ 6963,-82 6983,-123 7040,-188 7090,-225 7127,-24
 (Halbauer Weg - Parkweg): Fuﬂg‰nger, Radfahren erlaubt	q1- 7758,2973 7795,2963 7807,2961
 (Hanielweg - Parkweg): Spielplatz, Fuﬂg‰nger, teilweise eng	q3 7562,1796 7565,1806 7592,1892
 #: note: kein explizites Radfahrverbot
-(Kamenzer Damm - Wunsiedeler Weg): Fuﬂg‰nger	q1 7776,3163 7769,3264 7790,3369 7800,3435 7788,3551 7737,3598 7694,3623 7555,3632
+(Kamenzer Damm - Wunsiedeler Weg): Fuﬂg‰nger	q1 7776,3163 7769,3264 7784,3369 7800,3435 7788,3551 7737,3598 7694,3623 7555,3632
 Rehauer Pfad: enge Straﬂe	q1 7587,3411 7626,3554
 # REMOVED (Wege anders eingezeichnet) --- (zum Hafen Wannsee): Fuﬂg‰nger	q2 -4827,1433 -4791,1561 -4870,1464 -4905,1514
 Appelbacher Weg: Rampe	q2 27780,893 27804,878
@@ -2064,7 +2065,7 @@ Schwarzwurzel-Park: Bordstein, Fuﬂg‰nger, Spielplatz	q3 20698,18359 20814,18341 
 (Invalidenstr. - Borsigstr.): Fuﬂg‰nger, Spielplatz, Bordsteine	q3 9285,13965 9321,13882 9316,13870
 # REMOVED (kann man hier immer gut vorbeifahren?) --- #: note: das Tor an der Fahrbahn kann aber offen sein, in diesem Fall kein Handicap (gesehen: 2014-10-01 (Mi) abends gegen 19 Uhr) --- Virchowstr.: schmale Toreinfahrt, Fuﬂg‰nger	q3 8548,13577 8503,13553
 #: XXX_prog BS, Bordstein zum asphaltierten Nebenweg, ansonsten entfernen
-Calandrellistr. - G‰rtnerstr.: Bordstein	q2 5547,3684 5362,3612
+Calandrellistr. - G‰rtnerstr.: Bordstein	q2 5549,3679 5364,3605
 #: XXX_prog BS (2x), ansonsten q1
 Schalloppstr.: Bordsteine, einige Fuﬂg‰nger	q3 5132,4704 5190,4755
 #: XXX_prog BS (an der Kniprodestr.), ansonsten trotzdem q4
@@ -2277,6 +2278,12 @@ Delbr¸ckstr.: flacher Bordstein, Fuﬂg‰nger	q2 17123,10844 17141,10838
 Semkensteig: Fuﬂg‰nger, eng	q2 7844,17504 7845,17455
 (Uferweg - Sˆmmeringstr.): Fuﬂg‰nger	q1 3572,12866 3574,12916 3716,12925
 Nordsternstr.: Feuerwehrzufahrt	q2 6268,8884 6292,8899
+#: XXX_prog BS
+#: XXX bleibt es dabei, oder wird hier nachgebessert?
+#: last_checked: 2016-03-28
+(Silberdistelweg - Am Teltowkanal): Stufe	q3 16285,3616 16292,3626
+#: XXX_prog BS am Wendehammer, ansonsten q2
+Finckensteinallee: Fuﬂg‰nger, Bordstein	q3 4115,2726 4140,2706 4170,2727
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -2888,8 +2895,8 @@ Altenburger Str.: Fuﬂg‰nger, Bordsteine	q2 6651,1063 6631,968
 Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 7864,2018 7975,2275 8071,2248
 #: by: Karin Toedtloff vvv
 (Gielower Str - Buschkrugallee): Fuﬂg‰nger	q1 14012,4184 14053,4173 14119,4153
-(Parkweg Buschkrugallee - Bruno-Taut-Ring): Fuﬂg‰nger	q1 14053,4173 14045,4164 14009,4148 13910,4090 13873,4067 13798,4037 13721,4023 13656,3989 13601,3895 13626,3867
-(Parkweg Fritz-Reuter-Alle - Bruno-Taut-Ring): Fuﬂg‰nger	q1 13463,3854 13489,3857 13601,3895
+(Parkweg Buschkrugallee - Bruno-Taut-Ring): Fuﬂg‰nger	q1 14053,4173 14045,4164 14009,4148 13910,4090 13873,4067 13798,4037 13721,4023 13656,3989 13601,3895 13632,3875
+(Parkweg Fritz-Reuter-Alle - Bruno-Taut-Ring): Fuﬂg‰nger	q1 13463,3854 13489,3857 13573,3885 13601,3895
 (Parkweg Fritz-Reuter-Allee - Britzer-Park):Fuﬂg‰nger	q1 13463,3854 13302,3837
 #: corrected_by: rjoop ("Radfahren nicht erlaubt")
 #: confirmed_by: srt
@@ -3675,7 +3682,7 @@ Charles-H.-King-Str.: enge Straﬂe	q1 -1248,2451 -1401,2391 -1604,2324
 #: corrected_by: srt/policy (q2 -> q0-)
 Rohrweihstr.: enge Straﬂe	q0- -2141,19681 -2103,19833 -2073,19990 -2052,20120 -2019,20297 -1991,20312
 #: by: Nina Bohlmann
-Kolkrabenweg: enge Straﬂe	q1 14655,3687 14885,3891
+Kolkrabenweg: enge Straﬂe	q1 14645,3691 14885,3891
 #: by: ruth mantei: vvv
 Teterower Str.: enge Straﬂe	q1 13824,5204 13717,5175 13626,5153
 K¸striner Str.: enge Straﬂe	q1 11232,309 11343,405 11488,531
@@ -3767,7 +3774,7 @@ Sprungschanzenweg: relativ enge Straﬂe	q1 563,5265 175,5126 144,5102
 Altenauer Weg: Bordsteinkante	q2 5406,1400 5435,1390
 Ladenstr.: Einkaufsstraﬂe, viele Fuﬂg‰nger, Radfahren verboten	q4 374,4779 169,4676
 #: note: "Angabe zur eingeschr‰nkten Geschwindigkeit ist meine Empfehlung, man KANN auch schneller, aber es ist dann nicht toll (parkende Autos, Seitenstraﬂen, bisschen wellig, bisschen eng). F¸r PKW ist hier Tempo 30."
-Gelfertstr.	q0- 2030,5833 1980,5663 1933,5483 1965,5337 1964,5196 1964,5070 1969,4978 1995,4947 2025,4935 2081,4940 2109,4929 2135,4903 2169,4854
+Gelfertstr.	q0- 2030,5833 1980,5663 1933,5483 1954,5328 1964,5196 1964,5070 1969,4978 1995,4947 2025,4935 2081,4940 2109,4929 2135,4903 2169,4854
 #: by: ^^^
 #: by: Christin (...quast)::
 (Maxie-Wander-Str. - Kastanienallee): Fuﬂg‰ngerweg	q1 23826,14292 23877,14315

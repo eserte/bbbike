@@ -878,7 +878,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 18934,2703
 	X 16699,10611
 	X 17067,8725
-	X 1471,3909
+	X 1462,3906
 	X 1136,3878
 	X 458,3697
 	X -266,3648
@@ -1306,7 +1306,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 4411,3180
 	X 4170,2727
 	X 4011,2942
-	X 2638,2843
+	X 2626,2844
 	X 2123,2803
 	X 2000,2748
 	X 1248,2600
@@ -1397,7 +1397,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 8150,7200
 	X 8224,7148
 	F 12081,7679
-	X 9731,3889
+	X 9732,3883
 	X 7203,4737
 #: note: Anforderungsampel
 	F 6187,4930
@@ -1926,7 +1926,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 11723,13139
 	F 5569,7022
 	F 6241,9772
-	F 2334,5739
+	F 2320,5743
 	F 4437,5335
 #: by: mfuss75:
 	X 7092,12614
@@ -2092,6 +2092,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 13144,10921
 #: note: laut Luftbild
 	F 4717,21223
+#: note: Anforderungsampel
 	F 1724,3187
 	X 22785,6984
 	X 8634,18787
@@ -2265,7 +2266,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 #: XXX_prog: für linksabbiegende Radfahrer Anforderungsampel
 	X 13919,10583
 	X 21115,271
-	X 17477,6031
+	X 17483,6024
 	F 13737,14204
 	X 9510,12113
 #: note: Anforderungsampel, ist aber manchmal (tagsüber? oder immer?) automatisch aktiviert
@@ -2504,6 +2505,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 7602,305
 	F 7404,-110
 	F 7535,3101
+#: note: Anforderungsampel
 	F 7483,3440
 	B -5882,14210
 	X 14028,5325
@@ -2791,7 +2793,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
 #: source_id: IM_023532 (Gesamtmaßnahme bis Ende Juni 2016) vvv
 #: source_id: 2147339539 vvv
-#: last_checked: 2015-12-28 vvv
+#: last_checked: 2016-03-28 vvv
 #: check_frequency: 90d vvv
 	F::inwork 16886,6665
 	F::inwork 16646,6925
