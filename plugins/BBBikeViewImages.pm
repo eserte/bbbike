@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2007,2008,2009,2011,2012,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2007,2008,2009,2011,2012,2013,2016 Slaven Rezic. All rights reserved.
 #
 
 # Description (en): View images in bbd files
@@ -15,7 +15,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $viewer_cursor $viewer $original_image_viewer $original_image_editor $geometry $viewer_menu $viewer_sizes_menu $exiftool_path);
-$VERSION = 1.26;
+$VERSION = 1.27;
 
 use BBBikeProcUtil qw(double_forked_exec);
 use BBBikeUtil qw(file_name_is_absolute is_in_path);
@@ -424,6 +424,13 @@ sub show_image_viewer {
 		if (!defined $image_viewer_toplevel) {
 		    $image_viewer_toplevel = $main::toplevel{"BBBikeViewImages_Viewer"};
 		} else {
+		    # If transient is not set (see above), then some
+		    # (modern) window managers like metacity or marco
+		    # demand to specify the group dependency of the
+		    # new toplevel; otherwise a programmatic raise()
+		    # won't work.
+		    $image_viewer_toplevel->group($main::top);
+
 		    # Button bar is unusually at the top. This is to
 		    # have the button controls always in the same
 		    # place.
