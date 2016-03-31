@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2016-03-23
+#: last_checked: 2016-03-30
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -187,7 +187,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14658,14328 14464,14216 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2016-02-28
+#: last_checked: 2016-03-31
 #: check_frequency: 60d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
@@ -222,7 +222,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2016-03-28
+#: last_checked: 2016-03-31
 Warschauer Str: Radspuren in Bau	?::inwork 13651,11731 13696,11920 13745,12118
 # 
 # REMOVED (vermutlich passiert nichts weiter) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: XXX wird auch das letzte Stück im Westen realisiert? --- #: osm_watch: way id="4424794" version="14" --- #: osm_watch: way id="30195541" version="9" --- #: last_checked: 2015-06-08 --- #: check_frequency: 60d --- Turmstr.: evtl. wird die Radspuren-Lücke hier geschlossen	? 5248,13434 5368,13406 5434,13398
@@ -1361,7 +1361,8 @@ Am Kiesberg: Fahrbahnerneuerung in Planung	?::projected 18839,1715 18919,1888 18
 Mehldornpfad, Teichrohrweg: Fahrbahnerneuerung in Planung	?::projected 18941,1934 19016,1895 18925,1681 18888,1658
 #: next_check ^^^
 # 
-#: next_check: 2016-04-29
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.463942.php
+#: next_check: 2016-04-30
 Buntzelstr./Advokatensteig: Zebrastreifen (?) in Planung	?::projected 22156,433 22171,459 22181,482
 # 
 #: next_check: 2016-08-01
@@ -1394,6 +1395,16 @@ Schwarzer Weg (Schmöckwitz): Fahrbahnerneuerung in Planung	?::projected 27892,-3
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.463961.php
+#: next_check: 2016-04-30
+Monumentenbrücke: Radstreifen werden markiert	? 8180,9099 8389,9087
+# 
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.463953.php
+#: next_check: 2016-07-29
+Friedrich-Wilhelm-Platz: Ampelumbau und Radweganpassungen, ändert sich dabei etwas?	? 5429,7220 5397,7205 5352,7184
+# 
+# REMOVED (Abschnitt ist kürzer, anders) --- #: source_id: 2147339877 --- #: XXX gültig bis Mitte 07/2016, laut fritz bis 16.07.2016 --- Lindenstr.: Fahrbahnverschwenkung genauer anschauen, ggfs. Radspur bis zum Ende der Bauarbeiten entfernen	?; 9935,11067 9829,10830 9805,10791 9797,10771 9777,10719
+# 
 Buschkrugallee - Britzer Park: ist der Weg unbeleuchtet?	? 14053,4173 14045,4164 14009,4148 13910,4090 13873,4067 13798,4037 13721,4023 13656,3989 13601,3895 13573,3885 13489,3857 13463,3854 13302,3837
 # 
 (Uferweg - Sömmeringstr.): ist der Weg unbeleuchtet?	? 3572,12866 3574,12916 3716,12925
@@ -1401,6 +1412,8 @@ Buschkrugallee - Britzer Park: ist der Weg unbeleuchtet?	? 14053,4173 14045,4164
 Landjägerstr. oder Alter Markt: wie ist hier ausgeschildert?	? 22458,4565 22495,4523
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.463140.php
+#: source_id: 2147339879
+#: XXX laut fritz bis 22.04.2016
 #: next_check: 2016-05-10
 Falkenberger Chaussee: Radfahrstreifen werden entstehen, wo genau?	?; 17843,18078 18078,18224 18205,18256 18601,18342 18657,18358 18737,18380
 # 
@@ -2483,11 +2496,7 @@ Bebauungsplan XXI-34a: evtl. entstehen hier neue Straßen	?::projected 20649,1162
 #: next_check: 2016-07-31
 Wedding/Prenzlauer Berg: Bezirksgrenzen werden verändert	?::projected 10271,14950 10208,14922 10053,15214 10031,15395 9976,15546 9941,15627 10042,15640
 # 
-#: XXX wird erst im April eröffnet
-#: by: http://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20160213
-#: note: category RB
-#: next_check: 2016-04-01
-Berlin-Schöneweide	? 17722,5573
+# REMOVED --- #: XXX wird erst im April eröffnet --- #: by: http://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20160213 --- #: note: category RB --- #: next_check: 2016-04-01 --- Berlin-Schöneweide	? 17722,5573
 # 
 #: XXX im Zuge des Bebauungsplans 1-67VE
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7205

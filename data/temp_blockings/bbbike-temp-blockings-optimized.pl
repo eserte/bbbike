@@ -3774,7 +3774,16 @@ userdel	q4::inwork; -6861,15129 -6507,15007
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	q3::inwork; 17648,5338 17601,5090 17542,4772 17520,4649
+',
+         'from' => 1459634400,
+         'id' => 2757,
+         'source_id' => 'IM_026599',
+         'text' => 'Sterndamm: zwischen Südostallee und Königsheideweg Richtung Süden Bauarbeiten, Fahrbahn gesperrt, ggfs. Gehweg benutzen, 04.04.2016 bis 06.05.2016',
+         'type' => 'handicap',
+         'until' => 1462571999
+       },
        undef,
        undef,
        undef,

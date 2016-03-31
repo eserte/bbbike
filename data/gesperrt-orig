@@ -2654,6 +2654,13 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2016-03-31 vvv
+#: check_frequency: 60d vvv
+Keibelstr.: Bauarbeiten, Durchfahrt nicht möglich	3 11201,13289 11108,13142 *
+Keibelstr.: Bauarbeiten, Durchfahrt nicht möglich	3 * 11108,13142 11201,13289
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2015
 #: osm_watch: way id="156817982" version="10"
 #: last_checked: 2016-03-28
@@ -2687,7 +2694,7 @@ Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14448,9922 14460,9871 1448
 #: last_checked: 2015-12-26
 Clara-Immerwahr-Str.: Bauzäune	2::inwork 19202,17471 19546,17351 19798,17263 19845,17235 19914,17203
 # 
-#: last_checked: 2016-03-15
+#: last_checked: 2016-03-31
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
 # 
 # REMOVED --- #: next_check_id: SCHOENEBERGERSCHLEIFE-2015 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2015/pressemitteilung.424946.php --- #: last_checked: 2015-12-11 --- #: next_check: 2015-12-22 --- #: priority: #A --- (Bautzener Str. - Südkreuz): in Bau	2::inwork 8204,9001 8198,8893 8175,8815 7998,8317
@@ -2945,7 +2952,7 @@ Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Du
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
 #: osm_watch: way id="305153174" version="1"
-#: last_checked: 2016-03-07 vvv
+#: last_checked: 2016-03-31 vvv
 #: check_frequency: 90d vvv
 Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9996,12401 9994,12368 9943,12364
 Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10008,12274 9994,12368
@@ -3124,10 +3131,10 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # REMOVED --- #: last_checked: 2011-04-08 --- Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9702,12307 9708,12235
 # 
 #: next_check_id: STAATSOPER-2014 vvv
-#: last_checked: 2016-03-03 vvv
+#: last_checked: 2016-03-31 vvv
 #: check_frequency: 90d vvv
 #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung)
-#: XXX voraussichtliche Eröffnung 2017
+#: XXX voraussichtliche Eröffnung 2017-10-03 (laut Tsp vom 2016-03-31)
 #: XXX siehe auch aufgehobene Einbahnstraßenregelung oben (Behrenstr./Bebelplatz)
 Behrenstr.: Bauarbeiten, vollständig gesperrt	2:inwork 9743,12239 9801,12245
 Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9876,12298
@@ -3138,7 +3145,7 @@ Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12
 #: next_check_id: ^^^
 # 
 #: XXX Eröffnung 2019 geplant
-#: last_checked: 2016-03-09
+#: last_checked: 2016-03-31
 #: check_frequency: 120d
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 

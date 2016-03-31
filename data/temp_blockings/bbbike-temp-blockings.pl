@@ -24691,13 +24691,13 @@ EOF
 userdel	q4::inwork; 19904,3464 20012,3532
 EOF
      },
-     { from  => 1445405400, # 2015-10-21 07:30
-       until => $isodate2epoch->("2015-11-09 08:30:00"), # 1446912000, # 2015-11-07 17:00
-       text  => 'Sterndamm: zwischen Königsheideweg und Groß-Berliner Damm Bauarbeiten, Fahrbahn in Richtung S-Bhf. Schöneweide gesperrt, Radfahrer dürfen den Gehweg benutzen, 22.10.2015 07:30 Uhr bis 09.11.2015 08:30 Uhr ',
+     { from  => $isodate2epoch->("2016-04-03 00:00:00"), # 1 Tag Vorlauf # 1445405400, # 2015-10-21 07:30
+       until => $isodate2epoch->("2016-05-06 23:59:59"), # 1446912000, # 2015-11-07 17:00
+       text  => 'Sterndamm: zwischen Südostallee und Königsheideweg Richtung Süden Bauarbeiten, Fahrbahn gesperrt, ggfs. Gehweg benutzen, 04.04.2016 bis 06.05.2016',
        type  => 'handicap',
-       source_id => 'IM_026599',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.463657.php',
        data  => <<EOF,
-userdel	q2::inwork; 17520,4649 17542,4772 17601,5090 17648,5338
+userdel	q3::inwork; 17648,5338 17601,5090 17542,4772 17520,4649
 EOF
      },
      { from  => 1446015600, # 2015-10-28 08:00
