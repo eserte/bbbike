@@ -85,7 +85,7 @@ $DISTFILE_FREEBSD_I386 = "http://pkg.freebsd.org/freebsd:10:x86:32/latest/All/de
 $DISTFILE_FREEBSD_ALL  = "http://portsmon.freebsd.org/portoverview.py?category=german&portname=BBBike";
 
 # URL auf die Diplomarbeit
-$DIPLOM_URL        = 'http://user.cs.tu-berlin.de/~eserte/diplom/';
+$DIPLOM_URL        = 'http://eserte.rezic.de/diplom/';
 
 # The URL of the mapserver CGI
 $BBBIKE_MAPSERVER_URL  = 'http://bbbike.de/cgi-bin/mapserv';
