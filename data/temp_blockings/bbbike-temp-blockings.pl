@@ -367,11 +367,11 @@ EOF
 userdel	2 6228,13324 6115,13328 6105,13328 6011,13330 5956,13330 5857,13342 5705,13359 5569,13381 5560,13382 5434,13398 5368,13406 5248,13434
 EOF
      },
-     { from  => $isodate2epoch->("2015-04-30 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-05-01 23:59:59"),
+     { from  => $isodate2epoch->("2016-04-30 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-05-01 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 5]],
-       text  => 'MyFest: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2015',
+       text  => 'MyFest: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2016',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.myfest36.de/
@@ -21440,14 +21440,14 @@ EOF
 userdel	q4::inwork; 7085,15226 7131,15109
 EOF
      },
-     { from  => $isodate2epoch->("2015-04-30 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-05-03 23:59:59"),
-       text  => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz), Straße rund um den Dorfteich vermutlich gesperrt (01.05.2015 bis 03.05.2015)',
+     { from  => $isodate2epoch->("2016-04-28 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-05-01 23:59:59"),
+       text  => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz, Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (29.04.2016 bis 01.05.2016)',
        periodic => 1,
-       recurrences => [['yearly', days => 1, months => 5]],
+       recurrences => [['yearly', days => 29, months => 4]],
        type  => 'handicap',
        data  => <<EOF,
-#: by: http://www.ag-bahnhofstrasse.de/maientanz.html?y=2014
+#: by: http://www.ag-bahnhofstrasse.de/maientanz.html?y=2016
 #: by: http://www.berlin.de/tickets/suche/detail.php?id=954647
 userdel	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
 EOF
@@ -24898,6 +24898,15 @@ EOF
 	3 8201,9647 8192,9619 8186,9380
 	3 8186,9380 8192,9619 8097,9650
 	3 8097,9650 8192,9619 8201,9647
+EOF
+     },
+     { from  => 1459634400, # 2016-04-03 00:00
+       until => 1460757600, # 2016-04-16 00:00
+       text  => 'Einsteinufer: Bauarbeiten zwischen Marchbrücke und Straße des 17. Juni, Einbahnstraßenregelung, vom 04.04.2016 bis 15.04.2016',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.464628.php',
+       data  => <<EOF,
+userdel	q4::inwork; 4981,12252 5128,12149 5229,12001 5361,11910
 EOF
      },
     );
