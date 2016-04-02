@@ -247,9 +247,13 @@ if ($^O eq 'MSWin32') {
     }
 }
 
+my $mapserver_with_cairo;
 if (!is_in_path("shp2img") || do {
     my $shp_img_v_output = `shp2img -v`;
-    $shp_img_v_output !~ m{\bOUTPUT=PDF\b} && $shp_img_v_output !~ m{\bSUPPORTS=CAIRO\b}
+    if ($shp_img_v_output =~ m{\bSUPPORTS=CAIRO\b}) {
+	$mapserver_with_cairo = 1;
+    }
+    $shp_img_v_output !~ m{\bOUTPUT=PDF\b} && !$mapserver_with_cairo
 }) {
     my $module_def = find_mod 'MapServer/pdf';
     $module_def->{skip} = 'Skipping MapServer/pdf tests, Mapserver was built without pdflib';
@@ -489,7 +493,7 @@ sub draw_map {
 
 	{
 	    local $TODO;
-	    if ($module eq 'PDFCairo') {
+	    if ($module eq 'PDFCairo' || ($module eq 'MapServer' && $mapserver_with_cairo)) {
 		$TODO = 'Cairo has no support for Create, Author... in pdfs';
 	    }
 	    ok($pdf_content =~ m{Creator.*(BBBikeDraw|MapServer)}i, "Found Creator");
