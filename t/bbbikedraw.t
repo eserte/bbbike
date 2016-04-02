@@ -247,7 +247,10 @@ if ($^O eq 'MSWin32') {
     }
 }
 
-if (!is_in_path("shp2img") || `shp2img -v` !~ m{\bOUTPUT=PDF\b}) {
+if (!is_in_path("shp2img") || do {
+    my $shp_img_v_output = `shp2img -v`;
+    $shp_img_v_output !~ m{\bOUTPUT=PDF\b} && $shp_img_v_output !~ m{\bSUPPORTS=CAIRO\b}
+}) {
     my $module_def = find_mod 'MapServer/pdf';
     $module_def->{skip} = 'Skipping MapServer/pdf tests, Mapserver was built without pdflib';
     # pdflib is considered non-free in Debian; and I deliberately
