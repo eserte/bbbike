@@ -196,6 +196,33 @@ SYMBOL
   FILLED TRUE
 END
 
+[%# mapserver 5 compat -%]
+[% IF MAPSERVER_VERSION < 6 -%]
+SYMBOL
+  NAME 'circle_12'
+  TYPE ELLIPSE
+  POINTS 1 1 END
+  FILLED TRUE
+  STYLE 1 12 END
+END
+
+SYMBOL
+  NAME 'circle_25'
+  TYPE ELLIPSE
+  POINTS 1 1 END
+  FILLED TRUE
+  STYLE 1 25 END
+END
+
+SYMBOL
+  NAME 'circle_25_transposed'
+  TYPE ELLIPSE
+  POINTS 1 1 END
+  FILLED TRUE
+  STYLE 0 12 1 13 0 END
+END
+[% END -%]
+
 SYMBOL
   NAME 'ring'
   TYPE ELLIPSE
@@ -215,6 +242,9 @@ SYMBOL
   TYPE VECTOR
   POINTS 0 2 2 0 4 2 2 4 0 2 END
   FILLED TRUE
+[% IF MAPSERVER_VERSION < 6 -%]
+  STYLE 4 4 END
+[% END -%]
 END
 
 SYMBOL
@@ -261,6 +291,24 @@ SYMBOL
   FILLED TRUE
 END
 
+[% IF MAPSERVER_VERSION < 6 -%]
+SYMBOL
+  NAME 'blocked_32'
+  TYPE VECTOR
+  POINTS 0 1 1 0 4 3 7 0 8 1 5 4 8 7 7 8 4 5 1 8 0 7 3 4 0 1 END # cross
+  FILLED TRUE
+  STYLE 1 32 END
+END
+
+SYMBOL
+  NAME 'blocked_40'
+  TYPE VECTOR
+  POINTS 0 1 1 0 4 3 7 0 8 1 5 4 8 7 7 8 4 5 1 8 0 7 3 4 0 1 END # cross
+  FILLED TRUE
+  STYLE 1 40 END
+END
+[% END -%]
+
 SYMBOL
   NAME 'oneway_arrow'
   TYPE VECTOR
@@ -268,6 +316,89 @@ SYMBOL
   POINTS 7 2 3 2 3 0 0 3 3 6 3 4 7 4 7 2 END
   FILLED TRUE
 END
+
+[% IF MAPSERVER_VERSION < 6 -%]
+SYMBOL
+  NAME 'oneway_arrow_10'
+  TYPE TRUETYPE
+  FONT 'lucida'
+  FILLED true
+  GAP -10
+  ANTIALIAS true
+  CHARACTER "[% LEFTARROW %]"
+END
+
+SYMBOL
+  NAME 'oneway_arrow_20'
+  TYPE TRUETYPE
+  FONT 'lucida'
+  FILLED true
+  GAP -20
+  ANTIALIAS true
+  CHARACTER "[% LEFTARROW %]"
+END
+
+SYMBOL
+  NAME 'dashed1'
+[% IF MAPSERVER_DRIVER == "AGG" -%]
+  TYPE SIMPLE
+  PATTERN 2 4 END
+[% ELSE -%]
+  TYPE VECTOR
+  POINTS 0 2 2 0 4 2 2 4 0 2 END
+  FILLED true
+  STYLE 1 8 END
+[% END -%]
+END
+
+SYMBOL
+  NAME 'point'
+  TYPE ELLIPSE
+  POINTS
+    1 1
+  END
+  FILLED TRUE
+END
+
+SYMBOL
+  NAME 'rectangle-train'
+  TYPE VECTOR
+  POINTS
+    0 0
+    0 0.6
+    1 0.6
+    1 0
+    0 0
+  END
+  FILLED TRUE
+  STYLE
+    8 12 8 12
+  END
+END
+
+[% IF MAPSERVER_DRIVER == "AGG" -%]
+SYMBOL
+  NAME 'train-dashed'
+  TYPE SIMPLE
+  PATTERN 8 12 END
+END
+[% END -%]
+
+SYMBOL
+  NAME 'dotted12'
+  TYPE ELLIPSE
+[% IF MAPSERVER_DRIVER == "AGG" -%]
+  POINTS 12 12 END
+  FILLED TRUE
+  GAP 12
+[% ELSE -%]
+  POINTS 1 1 END
+  FILLED TRUE
+  STYLE 1 12 END
+[% END -%]
+END
+
+[% END -%]
 
 #
 # Start of layer definitions
@@ -944,9 +1075,14 @@ LAYER
     NAME "Busspur"
     STYLE
       COLOR 128 128 255
+[% IF MAPSERVER_VERSION < 6 -%]
+      SYMBOL 'dashed1'
+      SIZE [% width %]
+[% ELSE -%]
       WIDTH [% width %]
       LINECAP BUTT
       PATTERN 3 6 END
+[% END -%]
     END
   END
   METADATA
@@ -1293,6 +1429,56 @@ END
 ### BEGIN AFTER UBAHN
 ### END AFTER UBAHN
 
+[% IF MAPSERVER_VERSION < 6 -%]
+LAYER
+  NAME "Regionalbahn"
+  GROUP bahn
+  TYPE LINE
+  STATUS [% ON_R_BAHN %]
+  DATA rbahn
+  
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION /^R[ABC]?$/
+    COLOR 0 128 0
+    MINSCALE 20000
+  END
+  CLASS
+    EXPRESSION /^R[ABC]?$/
+    MAXSCALE 20000
+[% IF MAPSERVER_DRIVER == "AGG" -%]
+    STYLE
+      COLOR 0 128 0
+      WIDTH 4
+    END
+    STYLE
+      COLOR 255 255 255
+      SYMBOL 'train-dashed'
+      WIDTH 2
+    END
+[% ELSE -%]
+    STYLE
+      COLOR 0 128 0
+      SYMBOL 'point'
+      SIZE 4
+    END
+    STYLE
+      COLOR 255 255 255
+      SYMBOL 'rectangle-train'
+      SIZE 2
+    END
+[% END -%]
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "Regionalbahnlinien"
+    WMS_ABSTRACT "Regionalbahnlinien"
+    WMS_SRS "EPSG:4326"
+  END
+END
+[% ELSE -%]
 LAYER
   NAME "Regionalbahn"
   GROUP bahn
@@ -1329,6 +1515,7 @@ LAYER
     WMS_SRS "EPSG:4326"
   END
 END
+[% END -%]
 
 ### BEGIN AFTER REGIONALBAHN
 ### END AFTER REGIONALBAHN
@@ -1383,9 +1570,15 @@ LAYER
     Name "Ausgeschilderte Radroute"
     STYLE
       COLOR [% COLOR_GREEN %]
-      SYMBOL 'circle'
       SIZE 10
+[% IF MAPSERVER_VERSION < 6 AND MAPSERVER_DRIVER == "AGG" -%]
+      SYMBOL 'dotted12'
+[% ELSE -%]
+      SYMBOL 'circle[% IF MAPSERVER_VERSION < 6 %]_12[% END %]'
+[% IF MAPSERVER_VERSION >= 6  -%]
       GAP 12
+[% END -%]
+[% END -%]
     END
   END
   TEMPLATE "query.html"
@@ -1407,47 +1600,42 @@ LAYER
   MAXSCALE 550000
 
   DUMP TRUE # allow GML export
-  
+
   CLASSITEM 'CAT'
-  CLASS
-    EXPRESSION 'Q0'
-    NAME "Sehr gute Fahrbahnqualit‰t (nur auﬂerhalb Berlins)"
+
+[% BLOCK STYLE_QUALITY -%]
     STYLE
-      COLOR 0 160 0
+      COLOR [% color %]
+[% IF MAPSERVER_VERSION < 6 -%]
+      SYMBOL "raute"
+      SIZE 4
+[% ELSE -%]
       WIDTH 4
       LINECAP BUTT
       PATTERN 1.5 3 END
+[% END -%]
     END
+[% END -%]
+
+  CLASS
+    EXPRESSION 'Q0'
+    NAME "Sehr gute Fahrbahnqualit‰t (nur auﬂerhalb Berlins)"
+[% PROCESS STYLE_QUALITY color="0 160 0" -%]
   END
   CLASS
     EXPRESSION 'Q1'
     NAME "Gute Fahrbahnqualit‰t"
-    STYLE
-      COLOR 0 255 0
-      WIDTH 4
-      LINECAP BUTT
-      PATTERN 1.5 3 END
-    END
+[% PROCESS STYLE_QUALITY color="0 255 0" -%]
   END
   CLASS
     EXPRESSION 'Q2'
     NAME "M‰ﬂige Fahrbahnqualit‰t"
-    STYLE
-      COLOR 255 200 0
-      WIDTH 4
-      LINECAP BUTT
-      PATTERN 1.5 3 END
-    END
+[% PROCESS STYLE_QUALITY color="255 200 0" -%]
   END
   CLASS
     EXPRESSION 'Q3'
     NAME "Schlechte Fahrbahnqualit‰t"
-    STYLE
-      COLOR 255 0 0
-      WIDTH 4
-      LINECAP BUTT
-      PATTERN 1.5 3 END
-    END
+[% PROCESS STYLE_QUALITY color="255 0 0" -%]
   END
   CLASS # should not happen
     EXPRESSION /./ 
@@ -1474,55 +1662,45 @@ LAYER
   DUMP TRUE # allow GML export
   
   CLASSITEM 'CAT'
+
+[% BLOCK STYLE_HANDICAP -%]
+    STYLE
+      COLOR [% color %]
+[% IF MAPSERVER_VERSION < 6 -%]
+      SYMBOL "raute"
+      SIZE 4
+[% ELSE -%]
+      WIDTH 4
+      LINECAP BUTT
+      PATTERN 1 4 END
+[% END -%]
+    END
+[% END -%]
+
 # CLASS
 #   EXPRESSION 'q0'
 #   NAME "Keine sonstigen Behinderungen"
-#   STYLE
-#     COLOR 0 160 0
-#     WIDTH 4
-#     LINECAP BUTT
-#     PATTERN 1 4 END
-#   END
+#[%# PROCESS STYLE_HANDICAP color="0 160 0" -%]
 # END
   CLASS
     EXPRESSION 'q1'
 #    NAME "auf 25 km/h" # not here, too avoid confusion in legend
-    STYLE
-      COLOR 0 255 0
-      WIDTH 4
-      LINECAP BUTT
-      PATTERN 1 4 END
-    END
+[% PROCESS STYLE_HANDICAP color="0 255 0" -%]
   END
   CLASS
     EXPRESSION 'q2'
 #    NAME "auf 18 km/h" # not here, too avoid confusion in legend
-    STYLE
-      COLOR 255 200 0
-      WIDTH 4
-      LINECAP BUTT
-      PATTERN 1 4 END
-    END
+[% PROCESS STYLE_HANDICAP color="255 200 0" -%]
   END
   CLASS
     EXPRESSION 'q3'
 #    NAME "auf 13 km/h" # not here, too avoid confusion in legend
-    STYLE
-      COLOR 255 0 0
-      WIDTH 4
-      LINECAP BUTT
-      PATTERN 1 4 END
-    END
+[% PROCESS STYLE_HANDICAP color="255 0 0" -%]
   END
   CLASS
     EXPRESSION 'q4'
     NAME "Schrittgeschwindigkeit"
-    STYLE
-      COLOR 200 0 0
-      WIDTH 4
-      LINECAP BUTT
-      PATTERN 1 4 END
-    END
+[% PROCESS STYLE_HANDICAP color="200 0 0" -%]
   END
   CLASS # should not happen
     EXPRESSION /./ 
@@ -1552,8 +1730,10 @@ LAYER
     STYLE
       COLOR 200 0 0
       SIZE 10
-      SYMBOL 'blocked'
+      SYMBOL 'blocked[% IF MAPSERVER_VERSION < 6 %]_40[% END %]'
+[% IF MAPSERVER_VERSION >= 6  -%]
       GAP 40
+[% END -%]
     END
     MAXSCALE 30000
   END
@@ -1562,8 +1742,10 @@ LAYER
     STYLE
       COLOR 200 0 0
       SIZE 7
-      SYMBOL 'blocked'
+      SYMBOL 'blocked[% IF MAPSERVER_VERSION < 6 %]_32[% END %]'
+[% IF MAPSERVER_VERSION >= 6  -%]
       GAP 32
+[% END -%]
     END
     MINSCALE 30000
   END
@@ -1583,9 +1765,11 @@ LAYER
     NAME "Einbahnstraﬂe"
     STYLE
       COLOR 0 0 200
-      SYMBOL 'oneway_arrow'
       SIZE 10
+      SYMBOL 'oneway_arrow[% IF MAPSERVER_VERSION < 6 %]_20[% END %]'
+[% IF MAPSERVER_VERSION >= 6  -%]
       GAP -20
+[% END -%]
     END
     MAXSCALE 30000
   END
@@ -1593,9 +1777,11 @@ LAYER
     EXPRESSION /^1(_(right|left))?$/
     STYLE
       COLOR 0 0 200
-      SYMBOL 'oneway_arrow'
       SIZE 7
+      SYMBOL 'oneway_arrow[% IF MAPSERVER_VERSION < 6 %]_10[% END %]'
+[% IF MAPSERVER_VERSION >= 6  -%]
       GAP -10
+[% END -%]
     END
     MINSCALE 30000
     MAXSCALE 60000
@@ -2212,6 +2398,12 @@ TRANSPARENCY 50 ##XXX Wie am geschicktesten verwenden?
 
   CLASS
     NAME "Route"
+[% IF MAPSERVER_VERSION < 6 && MAPSERVER_DRIVER == "AGG" -%]
+    COLOR 150 0 0
+    SIZE 11
+    SYMBOL 'dotted12'
+[%# Currently there's no way to get the alternate blue/red dots plotted with the AGG driver... -%]
+[% ELSE -%]
     STYLE
       COLOR 255 255 255
       # XXX hack to make line invisible --- can it be done differently?
@@ -2219,20 +2411,23 @@ TRANSPARENCY 50 ##XXX Wie am geschicktesten verwenden?
     END
     STYLE
       COLOR 150 0 0
-      SYMBOL "circle"
+      SYMBOL 'circle[% IF MAPSERVER_VERSION < 6 %]_25[% END %]'
       SIZE 11
 [% IF MAPSERVER_VERSION >= 6 -%]
       INITIALGAP 0
-[% END -%][% # XXX alternative for 5? -%]
       GAP 25
+[% END -%]
     END
     STYLE
       COLOR 0 0 150
-      SYMBOL "circle"
+      SYMBOL 'circle[% IF MAPSERVER_VERSION < 6 %]_25_transposed[% END %]'
       SIZE 11
+[% IF MAPSERVER_VERSION >= 6 -%]
       GAP 25
+[% END -%]
     END
   END
+[% END -%]
   METADATA
     WMS_TITLE "Route"
     WMS_ABSTRACT "Berechnete Route"
