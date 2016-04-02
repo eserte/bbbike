@@ -68,6 +68,7 @@ WWW_HOST?=		localhost
 BBBIKE_CGI_RELURL?=	/bbbike/cgi
 BBBIKE_HTML_RELURL?=	/bbbike/html
 MAPSERVER_RELURL?=	/bbbike/mapserver/brb
+MAPSERVER_VERSION!=	perl -e '`shp2img -v` =~ m/mapserver version (\S+)/i and print $$1'
 BBBIKE_URL?=		http://$(WWW_HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
 MAPSERVER_URL?=		http://$(WWW_HOST)$(MAPSERVER_RELURL)
 BBBIKE_IMAGES_RELURL?=	/bbbike/images
