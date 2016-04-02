@@ -14,6 +14,9 @@ REALPATH_CMD=		perl -MCwd=realpath -le 'print realpath shift'
 ROOT_DIR!=		$(REALPATH_CMD) ..
 .endif
 HTTPD_CONF?=		httpd.conf
+.ifndef APACHE_VERSION
+APACHE_VERSION!=	perl -e '$$apache = $$^O eq "freebsd" ? "httpd" : "apache2"; if (qx{$$apache -v} =~ m{Apache/(\d+\.\d+)}) { print $$1 } else { print "???" }'
+.endif
 
 all:	rights symlinks
 	@echo "You may run $(MAKE) httpd.conf to create a default apache configuration for inclusion"
@@ -43,6 +46,7 @@ $(HTTPD_CONF): httpd.conf.tpl Makefile
 	      --define LOCATION_STYLE="$(LOCATION_STYLE)" \
 	      --define OS_STYLE="$(OS_STYLE)" \
 	      --define FS_STYLE="$(FS_STYLE)" \
+	      --define APACHE_VERSION="$(APACHE_VERSION)" \
 	      httpd.conf.tpl > $(HTTPD_CONF)~
 	chmod 644 $(HTTPD_CONF)~
 	mv $(HTTPD_CONF)~ $(HTTPD_CONF)

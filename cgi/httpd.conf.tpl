@@ -96,6 +96,11 @@
     <Location [% ROOT_URL %]>
         Options -Indexes
     </Location>
+[% IF APACHE_VERSION >= 2.4 -%]
+    <Location [% ROOT_URL %]>
+        Require all granted
+    </Location>
+[% END -%]
 
 [% IF LOCATION_STYLE == "bbbike" -%]
     # Redirect for root URL
