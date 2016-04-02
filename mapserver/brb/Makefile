@@ -74,7 +74,7 @@ MAPSERVER_URL?=		http://$(WWW_HOST)$(MAPSERVER_RELURL)
 BBBIKE_IMAGES_RELURL?=	/bbbike/images
 MAPSERVER_DIR=		$(LOCAL_BBBIKE_DIR)/mapserver/brb
 IMAGE_DIR=		$(LOCAL_BBBIKE_DIR)/images
-IMAGE_SUFFIX=		gif
+IMAGE_SUFFIX=		png
 .if exists(/etc/debian_version)
 FONTS_LIST?=		fonts-debian.list
 .else
