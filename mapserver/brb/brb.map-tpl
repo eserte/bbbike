@@ -3,6 +3,15 @@
 #
 # Start of map file
 #
+# Generated for
+#   MAPSERVER_VERSION=      [% MAPSERVER_VERSION %]
+#   NEED_PNG_NOALPHA_HACK=  [% NEED_PNG_NOALPHA_HACK %]
+#   IMAGE_TYPE=             [% IMAGE_TYPE %]
+#   IMAGE_SUFFIX=           [% IMAGE_SUFFIX %]
+#   MAPSERVER_DRIVER=       [% MAPSERVER_DRIVER %]
+#   TRANSPARENT=            [% TRANSPARENT %]
+#   NEED_ONEWAY_RIGHT_HACK= [% NEED_ONEWAY_RIGHT_HACK %]
+#
 MAP
 
 NAME [% MAPNAME %]
