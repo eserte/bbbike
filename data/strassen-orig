@@ -6028,7 +6028,7 @@ Gembitzer Str.	N 16815,16214 16889,16378 16948,16482 17059,16560
 Amtsstr.	N 22419,4457 22495,4523
 #: note Gebiet um den Alten Markt, Lüdersstr., Katzengraben, Freiheit ist Tempo-10-Zone
 Alter Markt	N 22395,4678 22470,4691
-Alter Markt	N 22495,4523 22458,4565 22426,4609 22395,4678 22390,4702
+Alter Markt	N 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702
 Lüdersstr.	N 22390,4702 22388,4737 22377,4836
 Jägerstr. (Köpenick)	N 22314,4604 22355,4660 22365,4676 22395,4678
 Futranplatz	N 22451,4749 22388,4737
@@ -6039,7 +6039,9 @@ Spindlergasse	N 22472,4681 22496,4689
 Spindlergasse	NN 22496,4689 22522,4695
 # REMOVED --- #: XXX erster Namensvorschlag "Henriette-Lustig-Straße" --- #: XXX Benennung zu Claus-Dieter-Sprink-Weg --- #: XXX Eintrag in Berlin.coords.data fehlt --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4753 (Vorschlag) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/43re.pdf/file?y=2014 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2014 --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.228677.php --- #: last_checked: 2014-05-25 --- #: next_check: 2014-11-27 (Wirksamkeit) --- #: priority: #A
 #: oldname: -20141127: <namenslos>
-Claus-Dieter-Sprink-Weg	NN 22478,4659 22486,4661 22500,4623
+Claus-Dieter-Sprink-Weg	NN 22478,4659 22486,4661 22501,4628 22514,4632
+#: note: am 2016-03-31 freigegeben
+Kietzgrabensteg	NN 22514,4632 22531,4605
 Katzengraben	N 22478,4659 22472,4681 22470,4691 22451,4749 22439,4838
 Katzengraben	NN 22439,4838 22433,4887
 #: alias: Katzengrabenbrücke
@@ -6063,13 +6065,13 @@ Kietzer Str.	N 22383,4470 22372,4496 22358,4521 22324,4586 22314,4604
 #: XXX_osm: in osm als highway=service eingetragen
 (Am Stichkanal)	NN 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
 (Wendenschloßstr. - Am Stichkanal)	NN 22759,4430 22797,4518
-(Am Kietzer Graben)	N 22585,4634 22458,4565
+(Am Kietzer Graben)	N 22585,4634 22531,4605 22458,4565
 Kirchstr. (Köpenick)	N 22314,4604 22284,4653 22246,4711 22240,4768 22196,4847
 Rosenstr. (Köpenick)	N 22138,4661 22212,4655 22284,4653
 Schüßlerplatz	N 22284,4653 22355,4660
 Böttcherstr.	N 22214,4548 22212,4655
 Laurenzstr.	N 22246,4711 22175,4730
-Landjägerstr.	N 22495,4523 22542,4485 22740,4415
+Landjägerstr.	N 22458,4565 22495,4523 22542,4485 22740,4415
 Allendeweg	N 23001,4382 22963,4435 22893,4532
 Am Amtsgraben	N 22806,4331 22866,4352
 Am Amtsgraben	NN 22866,4352 22927,4400

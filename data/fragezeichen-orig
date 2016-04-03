@@ -407,6 +407,7 @@ Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::projected
 # 
 #: XXX während der Bauarbeiten Einbahnstraßenregelungen -> siehe temp_blockings
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.450655.php
+#: last_checked: 2016-04-30
 #: next_check: 2016-05-30
 Köllnische Str.: Bauarbeiten, danach vermutlich asphaltiert	?::inwork 18659,5330 18820,5275 18942,5236 18999,5237 19031,5316
 # 
@@ -478,7 +479,7 @@ Bohnsdorfer Kreisel: Einbahnstraße wird aufgehoben	?::projected 21977,988 21894,
 #: next_check: 2016-08-01
 Keltensteig - Teutonenstr.: wird nach der Fahrbahninstandsetzung die Qualität besser werden?	?::projected 20302,1613 20369,1476 20405,1460 20580,1406
 # 
-#: last_checked: 2016-04-01
+#: last_checked: 2016-04-03
 Treptower Park, mittlerer Weg: wann ist hier fertig gebaut? wie geht der Weg weiter? Qualität? Beleuchtung?	?::inwork 15133,9396 15169,9380 15247,9388 15325,9354 15453,9259
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2015
@@ -675,19 +676,7 @@ Nizzastr. - Dr.-Markus-Str.: Gehweg, für Radfahrer frei ausgeschildert, der Weg 
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file?y=2013
-#: last_checked: 2015-05-16
-#: next_check: 2016-03-31
-#: XXX außerdem sind schon die Zugänge als Straßenland gewidmet
-#: XXX alter Namensvorschlag "Claus-Dieter-Sprink-Brücke"
-#: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4751 (in der BVV beschlossen)
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file?y=2014
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1603/nachricht5958.html (Freigabe)
-#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/kietzgrabensteg/index.shtml
-#: XXX Name: Kietzgrabensteg (fehlt in Berlin.coords.data)
-#: XXX_osm: fehlt bei osm als "planned"/"proposed"
-Kietzgrabensteg: wann wird er errichtet, wird er auch für Radfahrer befahrbar sein?	?::inwork 22500,4623 22509,4595
-# 
+# REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file?y=2013 --- #: last_checked: 2015-05-16 --- #: next_check: 2016-03-31 --- #: XXX außerdem sind schon die Zugänge als Straßenland gewidmet --- #: XXX alter Namensvorschlag "Claus-Dieter-Sprink-Brücke" --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4751 (in der BVV beschlossen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file?y=2014 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1603/nachricht5958.html (Freigabe) --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/kietzgrabensteg/index.shtml --- #: XXX Name: Kietzgrabensteg (fehlt in Berlin.coords.data) --- #: XXX_osm: fehlt bei osm als "planned"/"proposed" --- Kietzgrabensteg: wann wird er errichtet, wird er auch für Radfahrer befahrbar sein?	?::inwork 22514,4632 22531,4605
 # REMOVED (nein, nur Poller, keine Beeinträchtigung) --- #: last_checked: 2013-11-17 --- #: next_check: 2014-03-15 --- Siegfriedstr. - Landschaftspark Herzberge: wird es hier noch Drängelgitter geben?	?::inwork 17110,14187
 # REMOVED (aufgenommen) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20131004.1210.390027.html --- #: last_checked: 2013-11-01 --- #: next_check: 2014-01-01 --- Spreeuferweg: wie sieht dieser Abschnitt nach der Sanierung aus? Wird es eine Rampe neben der Treppe geben?	?::inwork 5128,13012 5243,12903
 # 
@@ -1213,7 +1202,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: XXX die Brücke selbst könnte "Mathilde-Rathenau-Brücke" heißen
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5323 (Brückenbenennung)
 #: XXX an der Rummelsburger Landstr. sind schon einige Meter fertig
-#: last_checked: 2016-02-28
+#: last_checked: 2016-04-03
 #: next_check: 2016-12-01
 Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rummelsburger Landstraße und Köpenicker Landstraße	?::inwork 17681,7589 17082,7189 16954,7096 16720,6845
 # 
@@ -1415,7 +1404,7 @@ Buschkrugallee - Britzer Park: ist der Weg unbeleuchtet?	? 14053,4173 14045,4164
 # 
 (Uferweg - Sömmeringstr.): ist der Weg unbeleuchtet?	? 3572,12866 3574,12916 3716,12925
 # 
-Landjägerstr. oder Alter Markt: wie ist hier ausgeschildert?	? 22458,4565 22495,4523
+# REMOVED --- Landjägerstr. oder Alter Markt: wie ist hier ausgeschildert?	? 22458,4565 22495,4523
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.463140.php
 #: source_id: 2147339879

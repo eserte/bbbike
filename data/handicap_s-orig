@@ -13,7 +13,7 @@
 #: source_id: 2147339819	
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.415646.php
 #: XXX laut vmz bis Mitte Mai 2016, laut fritz bis 13.05.2016
-#: last_checked: 2016-03-23 vvv
+#: last_checked: 2016-04-03 vvv
 #: valid: -20160513 vvv
 Wühlischstr.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 14575,11407 14674,11370
 Wühlischstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14674,11370 14737,11347 14759,11339 14771,11345
@@ -23,7 +23,7 @@ Wühlischstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14674,11370 14737,
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2016-03-28 vvv
+#: last_checked: 2016-04-03 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14286,11186 14357,11148
 # REMOVED (keine Behinderungen mehr) --- Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 # REMOVED (gibt's nicht mehr?) --- Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraße ausgewiesen	q3::inwork; 14442,11101 14468,11203
@@ -34,7 +34,7 @@ Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,112
 # REMOVED --- #: last_checked: 2016-03-07 --- #: check_frequency: 7d --- Revaler Str.: Bauarbeiten an der Kreuzung Warschauer Str.	q3::inwork 13588,11490 13711,11458
 # 
 #: XXX laut Fritz bis Ende März 2016 (sieht aber schlecht aus für diesen Termin)
-#: last_checked: 2016-04-01 vvv
+#: last_checked: 2016-04-03 vvv
 #: check_frequency: 30d vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
@@ -2288,6 +2288,7 @@ Nordsternstr.: Feuerwehrzufahrt	q2 6268,8884 6292,8899
 (Silberdistelweg - Am Teltowkanal): Stufe	q3 16285,3616 16292,3626
 #: XXX_prog BS am Wendehammer, ansonsten q2
 Finckensteinallee: Fußgänger, Bordstein	q3 4115,2726 4140,2706 4170,2727
+Kietzgrabensteg: einige Fußgänger	q1 22514,4632 22531,4605
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
