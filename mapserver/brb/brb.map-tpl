@@ -10,7 +10,6 @@
 #   IMAGE_SUFFIX=           [% IMAGE_SUFFIX %]
 #   MAPSERVER_DRIVER=       [% MAPSERVER_DRIVER %]
 #   TRANSPARENT=            [% TRANSPARENT %]
-#   NEED_ONEWAY_RIGHT_HACK= [% NEED_ONEWAY_RIGHT_HACK %]
 #
 MAP
 
@@ -57,21 +56,6 @@ IMAGETYPE png
 [% SET TRANSPARENCY_ALPHA = "TRANSPARENCY ALPHA" -%]
 
 [% END %]
-
-#
-# Projection definition, consult the PROJ.4 documentation for parameter discussion
-#
-#PROJECTION
-#  "proj=utm"
-#  "ellps=GRS80"
-#  "zone=15"
-#  "north"
-#  "no_defs"
-#
-#  OR: 
-#
-#  "init=epsg:26915"
-#END
 
 #
 # Start of web interface definition (including WMS enabling metadata)
@@ -173,9 +157,6 @@ END
 LEGEND
   KEYSIZE 18 12
   LABEL
-#    TYPE BITMAP
-#    SIZE MEDIUM
-#    COLOR 0 0 89
     TYPE truetype
     FONT "lucida"
     SIZE 10
@@ -191,11 +172,13 @@ END
 SCALEBAR
   IMAGECOLOR 255 255 255
   LABEL
+    TYPE truetype
+    FONT "lucida"
+    SIZE 8
     COLOR 255 255 255
-    SIZE tiny    
   END
   STYLE 1
-  SIZE 80 2
+  SIZE 120 2
   COLOR 255 255 255
   UNITS KILOMETERS
   INTERVALS 1
@@ -204,7 +187,7 @@ SCALEBAR
 END
 
 #
-# Start of symbol definitions (we're only using a few)
+# Start of symbol definitions
 #
 SYMBOL
   NAME 'circle'
@@ -213,8 +196,18 @@ SYMBOL
   FILLED TRUE
 END
 
+[%# mapserver 5 compat -%]
+[% IF MAPSERVER_VERSION < 6 -%]
 SYMBOL
-  NAME 'dotted'
+  NAME 'circle_12'
+  TYPE ELLIPSE
+  POINTS 1 1 END
+  FILLED TRUE
+  STYLE 1 12 END
+END
+
+SYMBOL
+  NAME 'circle_25'
   TYPE ELLIPSE
   POINTS 1 1 END
   FILLED TRUE
@@ -222,63 +215,20 @@ SYMBOL
 END
 
 SYMBOL
-  NAME 'dotted12'
-  TYPE ELLIPSE
-[% IF MAPSERVER_DRIVER == "AGG" -%]
-  POINTS 12 12 END
-  FILLED TRUE
-  GAP 12
-[% ELSE -%]
-  POINTS 1 1 END
-  FILLED TRUE
-  STYLE 1 12 END
-[% END -%]
-END
-
-SYMBOL
-  NAME 'dotted5'
-  TYPE ELLIPSE
-[% IF MAPSERVER_DRIVER == "AGG" -%]
-  POINTS 5 5 END
-  FILLED TRUE
-  GAP 5
-[% ELSE -%]
-  POINTS 1 1 END
-  FILLED TRUE
-  STYLE 1 5 END
-[% END -%]
-END
-
-SYMBOL
-  NAME 'dottedtransposed'
+  NAME 'circle_25_transposed'
   TYPE ELLIPSE
   POINTS 1 1 END
   FILLED TRUE
-[% IF IMAGE_TYPE == "PDF" -%]
-[% # with "0" in the style shp2img emits an error:
-   # fatal exception: [1416] PDF_setdashpattern: Value 0 for option 'dasharray' is too small (minimum 1e-06)
--%]
-  STYLE 1 12 1 13 1 END
-[% ELSE -%]
   STYLE 0 12 1 13 0 END
+END
 [% END -%]
-END
 
-[% IF 0 && IMAGE_SUFFIX == "png" %]
-SYMBOL
-  NAME 'ring'
-  TYPE PIXMAP
-  IMAGE "[% IMAGE_DIR %]/hatched_ring.[% IMAGE_SUFFIX %]"
-  FILLED FALSE
-END
-[% ELSE %]
 SYMBOL
   NAME 'ring'
   TYPE ELLIPSE
   POINTS 5 5 END
   FILLED FALSE
 END
-[% END %]
 
 SYMBOL
   NAME 'square'
@@ -288,39 +238,13 @@ SYMBOL
 END
 
 SYMBOL
-  NAME 'width'
-  TYPE VECTOR
-  POINTS 0 0 0 1 1 1 1 0 0 0 END
-  FILLED TRUE
-END
-
-SYMBOL
-  NAME 'dashed1'
-[% IF MAPSERVER_DRIVER == "AGG" -%]
-  TYPE SIMPLE
-  PATTERN 2 4 END
-[% ELSE -%]
-  TYPE VECTOR
-  POINTS 0 0 2 2 END
-  FILLED true
-  STYLE 4 4 END
-[% END -%]
-END
-
-SYMBOL
-  NAME 'border'
-  TYPE VECTOR
-  POINTS 0 0 2 2 END
-  FILLED true
-  STYLE 5 4 1 4 END
-END
-
-SYMBOL
   NAME raute
   TYPE VECTOR
   POINTS 0 2 2 0 4 2 2 4 0 2 END
-  STYLE 4 4 END
   FILLED TRUE
+[% IF MAPSERVER_VERSION < 6 -%]
+  STYLE 4 4 END
+[% END -%]
 END
 
 SYMBOL
@@ -364,67 +288,38 @@ SYMBOL
   NAME 'blocked'
   TYPE VECTOR
   POINTS 0 1 1 0 4 3 7 0 8 1 5 4 8 7 7 8 4 5 1 8 0 7 3 4 0 1 END # cross
-  STYLE 1 20 END
-[% IF MAPSERVER_DRIVER == "AGG" -%]
-  GAP 20
-[% END -%]
+  FILLED TRUE
 END
 
+[% IF MAPSERVER_VERSION < 6 -%]
 SYMBOL
-  NAME 'cross'
+  NAME 'blocked_32'
   TYPE VECTOR
   POINTS 0 1 1 0 4 3 7 0 8 1 5 4 8 7 7 8 4 5 1 8 0 7 3 4 0 1 END # cross
   FILLED TRUE
-  STYLE 1 20 END
+  STYLE 1 32 END
 END
 
-[% IF 0 %]
+SYMBOL
+  NAME 'blocked_40'
+  TYPE VECTOR
+  POINTS 0 1 1 0 4 3 7 0 8 1 5 4 8 7 7 8 4 5 1 8 0 7 3 4 0 1 END # cross
+  FILLED TRUE
+  STYLE 1 40 END
+END
+[% END -%]
+
 SYMBOL
   NAME 'oneway_arrow'
   TYPE VECTOR
-#  POINTS 2 0 4 2 3 2 3 6 1 6 1 2 0 2 2 0 END
-  POINTS 3 0 6 3 4 3 4 7 2 7 2 3 0 3 3 0 END
+  # leftwards arrow
+  POINTS 7 2 3 2 3 0 0 3 3 6 3 4 7 4 7 2 END
   FILLED TRUE
-  STYLE 1 20 END
-  GAP 20
-END
-[% END %]
-
-## Does not work with mapserver-3.6.6, but with mapserver-4.01-tobe
-SYMBOL
-  NAME 'oneway_left'
-  TYPE TRUETYPE
-  FONT 'lucida'
-  FILLED true
-  GAP -20
-  ANTIALIAS true
-  CHARACTER "[% LEFTARROW %]"
 END
 
-## Experiment for the wrong drawing...
-#SYMBOL
-#  NAME 'oneway_left'
-#  TYPE VECTOR
-#  POINTS 0 3 5 3 4 1 7 3 7 4 4 6 5 4 0 4 0 3 END # left arrow
-#  FILLED false
-#  STYLE 1 20 END
-#END
-
-[% IF NEED_ONEWAY_RIGHT_HACK -%]
-## Does not work with mapserver-3.6.6, but with mapserver-4.01-tobe
+[% IF MAPSERVER_VERSION < 6 -%]
 SYMBOL
-  NAME 'oneway_right'
-  TYPE TRUETYPE
-  FONT 'lucida'
-  FILLED true
-  GAP -20
-  ANTIALIAS true
-  CHARACTER "[% RIGHTARROW %]"
-END
-[% END -%]
-
-SYMBOL
-  NAME 'oneway_left_small'
+  NAME 'oneway_arrow_10'
   TYPE TRUETYPE
   FONT 'lucida'
   FILLED true
@@ -433,18 +328,28 @@ SYMBOL
   CHARACTER "[% LEFTARROW %]"
 END
 
-[% IF NEED_ONEWAY_RIGHT_HACK -%]
-## XXX geht nicht in mapserver-3.6.6!
 SYMBOL
-  NAME 'oneway_right_small'
+  NAME 'oneway_arrow_20'
   TYPE TRUETYPE
   FONT 'lucida'
   FILLED true
-  GAP -10
+  GAP -20
   ANTIALIAS true
-  CHARACTER "[% RIGHTARROW %]"
+  CHARACTER "[% LEFTARROW %]"
 END
+
+SYMBOL
+  NAME 'dashed1'
+[% IF MAPSERVER_DRIVER == "AGG" -%]
+  TYPE SIMPLE
+  PATTERN 2 4 END
+[% ELSE -%]
+  TYPE VECTOR
+  POINTS 0 2 2 0 4 2 2 4 0 2 END
+  FILLED true
+  STYLE 1 8 END
 [% END -%]
+END
 
 SYMBOL
   NAME 'point'
@@ -471,11 +376,6 @@ SYMBOL
   END
 END
 
-[%# NOTE: it's not clear if this needs to be done with the AGG driver,
-  # or with Mapserver 5.6.3, or if combining both. Anyway, the
-  # above rectangle-train solution does not work, neither does
-  # two line styles with patterns
--%]
 [% IF MAPSERVER_DRIVER == "AGG" -%]
 SYMBOL
   NAME 'train-dashed'
@@ -484,19 +384,27 @@ SYMBOL
 END
 [% END -%]
 
-SYMBOL   
-  NAME "cartoline_round"
-  TYPE cartoline
-  LINECAP round
-  LINEJOIN miter
-  LINEJOINMAXSIZE 3
+SYMBOL
+  NAME 'dotted12'
+  TYPE ELLIPSE
+[% IF MAPSERVER_DRIVER == "AGG" -%]
+  POINTS 12 12 END
+  FILLED TRUE
+  GAP 12
+[% ELSE -%]
+  POINTS 1 1 END
+  FILLED TRUE
+  STYLE 1 12 END
+[% END -%]
 END
+
+[% END -%]
 
 #
 # Start of layer definitions
 #
-
 LAYER
+## XXX what's the intention of this layer? provide information in detail view?
   NAME Kommentare
   TYPE QUERY
   STATUS DEFAULT
@@ -526,9 +434,9 @@ LAYER
   GROUP flaechen
   DATA flaechen
 
-  LABELITEM "NAME"
-  
+  LABELITEM 'NAME'
   CLASSITEM 'CAT'
+
   CLASS
     EXPRESSION "F:Forest"
     NAME "Wald"
@@ -572,11 +480,13 @@ LAYER
     NAME "Flughafen"
     COLOR [% COLOR_WHITE %]
   END
+[% IF 0 -%][%# currently no items -%]
   CLASS
     EXPRESSION "F:ex-Ae"
     NAME "ehemaliger Flughafen"
     COLOR [% COLOR_WHITE %]
   END
+[% END -%]
   CLASS
     EXPRESSION "F:Industrial"
     NAME "Industriegebiete"
@@ -622,8 +532,7 @@ LAYER
   STATUS [% ON_GEWAESSER %]
   DATA wasserstrassen
   
-  LABELITEM "NAME"
-
+  LABELITEM 'NAME'
   CLASSITEM 'CAT'
 
 [% BLOCK CLASS_W_ANY -%]
@@ -688,14 +597,13 @@ LAYER
   TOLERANCE 3
   DUMP TRUE # allow GML export
 
-  LABELITEM "NAME"
-  
+  LABELITEM 'NAME'
   CLASSITEM 'CAT'
+
   CLASS
     EXPRESSION /^W/ 
     NAME "Gew‰sser"
     LABEL
-#      MINFEATURESIZE 40
       MINDISTANCE 150
       POSITION auto
       TYPE truetype
@@ -726,9 +634,9 @@ LAYER
   STATUS [% ON_GEWAESSER %]
   DATA wasserstrassen_polygon
 
-  LABELITEM "NAME"
-  
+  LABELITEM 'NAME'
   CLASSITEM 'CAT'
+
   CLASS
     EXPRESSION "I" 
     COLOR 225 225 225
@@ -754,12 +662,11 @@ LAYER
   GROUP flaechen
   DATA flaechen
 
-  LABELITEM "NAME"
-  
+  LABELITEM 'NAME'
   CLASSITEM 'CAT'
+
   CLASS
     EXPRESSION /^F:.*above$/
-#    NAME "Park, Wald"
     COLOR 0 225 0
   END
   TEMPLATE "query.html"
@@ -782,13 +689,15 @@ LAYER
   GROUP faehren
   DATA faehren
 
-  LABELITEM "NAME"
+  LABELITEM 'NAME'
 
 [% BLOCK CLASS_FAEHREN -%]  
   CLASS
-    COLOR [% COLOR_WHITE %]
-    SYMBOL "raute"
-    SIZE [% size %]
+    STYLE
+      COLOR [% COLOR_WHITE %]
+      SYMBOL 'raute'
+      SIZE [% size %]
+    END
     [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
     [% IF minscale %]MINSCALE [% minscale %][% END %]
   END
@@ -814,12 +723,11 @@ END
 LAYER
   NAME "F‰hren (Annotations)"
   GROUP faehren
-#  MAXSCALE 75000
   STATUS [% ON_FAEHREN %]
   DATA faehren
   TYPE ANNOTATION
 
-  LABELITEM "STRNR" # dummy ... should be invisible i.e. one space
+  LABELITEM 'STRNR' # dummy ... should be invisible i.e. one space
 [% BLOCK CLASS_FERRY -%]
   CLASS
 [% IF legend -%]
@@ -849,23 +757,32 @@ END
 ### BEGIN AFTER FAEHREN_ANNOTATIONS
 ### END AFTER FAEHREN_ANNOTATIONS
 
-LAYER
-  NAME "Grenzen von Berlin"
+[% BLOCK LAYERFRAG_BORDERS -%]
   GROUP grenzen
   TYPE LINE
   STATUS [% ON_GRENZEN %]
-  DATA berlin
   CLASSITEM 'CAT'
   CLASS
-    EXPRESSION /./ 
+    EXPRESSION /./
+[%# Specify only once, to avoid duplication in legend -%]
+[% IF with_name -%]
     NAME "Grenze"
-    COLOR 128 128 128
-    SYMBOL "border"
-    SIZE 2
+[% END -%]
+    STYLE
+      COLOR 250 0 100
+      PATTERN 5 4 1 4 END
+      WIDTH 2
+    END
   END
   TEMPLATE "query.html"
   HEADER "query_header2.html"
   FOOTER "query_footer2.html"
+[% END -%]
+
+LAYER
+  NAME "Grenzen von Berlin"
+  DATA berlin
+[% PROCESS LAYERFRAG_BORDERS with_name=1 -%]
   METADATA
     WMS_TITLE "Grenzen von Berlin"
     WMS_ABSTRACT "Grenzen von Berlin"
@@ -878,21 +795,8 @@ END
 
 LAYER
   NAME "Grenzen von Potsdam"
-  GROUP grenzen
-  TYPE LINE
-  STATUS [% ON_GRENZEN %]
   DATA potsdam
-  CLASSITEM 'CAT'
-  CLASS
-    EXPRESSION /./ 
-#    NAME "Grenze" # not here, too avoid duplication in legend
-    COLOR 128 128 128
-    SYMBOL "border"
-    SIZE 2
-  END
-  TEMPLATE "query.html"
-  HEADER "query_header2.html"
-  FOOTER "query_footer2.html"
+[% PROCESS LAYERFRAG_BORDERS with_name=0 -%]
   METADATA
     WMS_TITLE "Grenzen von Potsdam"
     WMS_ABSTRACT "Grenzen von Potsdam"
@@ -910,13 +814,11 @@ LAYER
   GROUP sehenswuerdigkeit
   DATA sehenswuerdigkeit_polygon
  
-  LABELITEM "NAME"
-
+  LABELITEM 'NAME'
   CLASSITEM 'CAT'
+
   CLASS
     EXPRESSION /./
-#XXX core dump with symbol?!
-#    SYMBOL '[% IMAGE_DIR %]/star.[% IMAGE_SUFFIX %]'
     COLOR 150 150 150
   END
 
@@ -984,7 +886,6 @@ END
    ];
 -%]
 
-[% IF MAPSERVER_VERSION >= 5 -%]
 LAYER
   NAME "Autobahnen"
   TYPE LINE
@@ -994,7 +895,7 @@ LAYER
 
   DUMP TRUE # allow GML export
 
-  LABELITEM "NAME"
+  LABELITEM 'NAME'
   CLASSITEM 'CAT'
 
 [% BLOCK CLASS_BAB -%]
@@ -1015,25 +916,13 @@ LAYER
       ANGLE AUTO
     END
     STYLE
-      SYMBOL "cartoline_round"
-      COLOR 255 255 255
-      SIZE [% p.size + 4 %] # was 8
-      ANTIALIAS TRUE
+      COLOR 220 20 0
+      WIDTH [% p.size + 4 %]
     END
     STYLE
-      SYMBOL "cartoline_round"
-      COLOR 0 0 128
-      SIZE [% p.size + 2 %] # was 6
-      ANTIALIAS TRUE
+      COLOR 255 205 114
+      WIDTH [% (p.size + 4) div 2 %]
     END
-    STYLE
-      SYMBOL "cartoline_round"
-      COLOR 255 255 255
-      SIZE 1
-    END
-#    COLOR 0 0 128
-#    SYMBOL 'width'
-#    SIZE [% p.size %]
     [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
     [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
@@ -1056,7 +945,6 @@ LAYER
     WMS_SRS "EPSG:4326"
   END
 END
-[% END -%]
 
 LAYER
   NAME "Straﬂen (Outline)"
@@ -1072,17 +960,19 @@ LAYER
 [% IF p.outline -%]
   CLASS
     EXPRESSION 'NN'
-    COLOR 210 210 210
-    SYMBOL 'width'
-    SIZE [% p.size + 2 %]
+    STYLE
+      COLOR 210 210 210
+      WIDTH [% p.size + 2 %]
+    END
     [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
     [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
   CLASS
     EXPRESSION 'N'
-    COLOR 210 210 210
-    SYMBOL 'width'
-    SIZE [% p.size + 2 %]
+    STYLE
+      COLOR 210 210 210
+      WIDTH [% p.size + 2 %]
+    END
     [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
     [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
@@ -1097,9 +987,10 @@ LAYER
 [% IF p.outline -%]
   CLASS
     EXPRESSION 'H'
-    COLOR 210 210 210
-    SYMBOL 'width'
-    SIZE [% p.size + 2 %]
+    STYLE
+      COLOR 210 210 210
+      WIDTH [% p.size + 2 %]
+    END
     [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
     [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
@@ -1115,9 +1006,10 @@ LAYER
   # sligtly darker outline
   CLASS
     EXPRESSION 'HH'
-    COLOR 180 180 180
-    SYMBOL 'width'
-    SIZE [% p.size + 2 %]
+    STYLE
+      COLOR 180 180 180
+      WIDTH [% p.size + 2 %]
+    END
     [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
     [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
@@ -1132,9 +1024,10 @@ LAYER
 [% IF p.outline -%]
   CLASS
     EXPRESSION 'B'
-    COLOR 180 180 180
-    SYMBOL 'width'
-    SIZE [% p.size + 2 %]
+    STYLE
+      COLOR 180 180 180
+      WIDTH [% p.size + 2 %]
+    END
     [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
     [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
@@ -1152,14 +1045,16 @@ LAYER
   END
 END
 
+[% BLOCK LAYER_RADWEGE -%]
 LAYER
   NAME Radwege
   GROUP radwege
   TYPE LINE
   STATUS [% ON_RADWEGE %]
-  DATA radwege20
+  DATA [% data %]
 
-  MINSCALE 5000
+  [% IF maxscale %]MAXSCALE [% maxscale %][% END %]
+  [% IF minscale %]MINSCALE [% minscale %][% END %]
   TOLERANCE 3
 
   TEMPLATE "query.html"
@@ -1170,16 +1065,25 @@ LAYER
   CLASS
     EXPRESSION /^RW[1234789\?]?$/
     NAME "Radweg oder -streifen"
-    COLOR 100 100 200
-    SYMBOL 'width'
-    SIZE 4
+    STYLE
+      COLOR 100 100 200
+      WIDTH [% width %]
+    END
   END
   CLASS
     EXPRESSION "RW5"
     NAME "Busspur"
-    COLOR 128 128 255
-    SYMBOL 'dashed1'
-    SIZE 4
+    STYLE
+      COLOR 128 128 255
+[% IF MAPSERVER_VERSION < 6 -%]
+      SYMBOL 'dashed1'
+      SIZE [% width %]
+[% ELSE -%]
+      WIDTH [% width %]
+      LINECAP BUTT
+      PATTERN 3 6 END
+[% END -%]
+    END
   END
   METADATA
     WMS_TITLE "Radwege"
@@ -1187,79 +1091,11 @@ LAYER
     WMS_SRS "EPSG:4326"
   END
 END
+[% END -%]
 
-LAYER
-  NAME "Radwege"
-  GROUP radwege
-  TYPE LINE
-  STATUS [% ON_RADWEGE %]
-  DATA radwege10
-
-  MINSCALE 2000
-  MAXSCALE 5000
-  TOLERANCE 3
-
-  TEMPLATE "query.html"
-  HEADER "query_header2.html"
-  FOOTER "query_footer2.html"
-
-  CLASSITEM 'CAT'
-  CLASS
-    EXPRESSION /^RW[1234789\?]?$/
-    NAME "Radweg oder -streifen"
-    COLOR 100 100 200
-    SYMBOL 'width'
-    SIZE 6
-  END
-  CLASS
-    EXPRESSION "RW5"
-    NAME "Busspur"
-    COLOR 128 128 255
-    SYMBOL 'dashed1'
-    SIZE 6
-  END
-  METADATA
-    WMS_TITLE "Radwege"
-    WMS_ABSTRACT "Radwege, verkehrsberuhigte Bereiche und Busspuren (Version f¸r kleine Maﬂst‰be)"
-    WMS_SRS "EPSG:4326"
-  END
-END
-
-LAYER
-  NAME Radwege
-  GROUP radwege
-  TYPE LINE
-  STATUS [% ON_RADWEGE %]
-  DATA radwege5
-
-  MAXSCALE 2000
-  TOLERANCE 3
-
-  TEMPLATE "query.html"
-  HEADER "query_header2.html"
-  FOOTER "query_footer2.html"
-
-  CLASSITEM 'CAT'
-  CLASS
-    EXPRESSION /^RW[1234789\?]?$/
-    NAME "Radweg oder -streifen"
-    COLOR 100 100 200
-    SYMBOL 'width'
-    SIZE 8
-  END
-  CLASS
-    EXPRESSION "RW5"
-    NAME "Busspur"
-    COLOR 128 128 255
-    SYMBOL 'dashed1'
-    SIZE 8
-  END
-  METADATA
-    WMS_TITLE "Radwege"
-    WMS_ABSTRACT "Radwege, verkehrsberuhigte Bereiche und Busspuren (Version f¸r sehr kleine Maﬂst‰be)"
-    WMS_SRS "EPSG:4326"
-  END
-END
+[% PROCESS LAYER_RADWEGE data="radwege20" minscale=5000  maxscale=undef width=4 %]
+[% PROCESS LAYER_RADWEGE data="radwege10" minscale=2000  maxscale=5000  width=6 %]
+[% PROCESS LAYER_RADWEGE data="radwege5"  minscale=undef maxscale=2000  width=8 %]
 
 ### BEGIN AFTER RADWEGE
 ### END AFTER RADWEGE
@@ -1273,8 +1109,7 @@ LAYER
   
   DUMP TRUE # allow GML export
 
-  LABELITEM "NAME"
-
+  LABELITEM 'NAME'
   CLASSITEM 'CAT'
 
 [%# This is a workaround for a strange bug on radzeit.de.
@@ -1289,7 +1124,6 @@ LAYER
     NAME "Nebenstraﬂe, f¸r Kfz gesperrt"
 [% END -%]
     LABEL
-#      MINFEATURESIZE 200
       MINFEATURESIZE AUTO
       MINDISTANCE 50
       POSITION auto
@@ -1301,9 +1135,10 @@ LAYER
       ANGLE AUTO
       PARTIALS FALSE
     END
-    COLOR 200 255 200
-    SYMBOL 'width'
-    SIZE [% p.size %]
+    STYLE
+      COLOR 200 255 200
+      WIDTH [% p.size %]
+    END
     [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
     [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
@@ -1316,7 +1151,6 @@ LAYER
     NAME "Nebenstraﬂe"
 [% END -%]
     LABEL
-#      MINFEATURESIZE 200
       MINFEATURESIZE AUTO
       MINDISTANCE 50
       POSITION auto
@@ -1328,9 +1162,10 @@ LAYER
       ANGLE AUTO
       PARTIALS FALSE
     END
-    COLOR [% COLOR_WHITE %]
-    SYMBOL 'width'
-    SIZE [% p.size %]
+    STYLE
+      COLOR [% COLOR_WHITE %]
+      WIDTH [% p.size %]
+    END
     [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
     [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
@@ -1347,7 +1182,6 @@ LAYER
     NAME "wichtige Nebenstraﬂe"
 [% END -%]
     LABEL
-#      MINFEATURESIZE 200
       MINFEATURESIZE AUTO
       MINDISTANCE 50
       POSITION auto
@@ -1359,9 +1193,10 @@ LAYER
       ANGLE AUTO
       PARTIALS FALSE
     END
-    COLOR [% COLOR_PALE_YELLOW %]
-    SYMBOL 'width'
-    SIZE [% p.size %]
+    STYLE
+      COLOR [% COLOR_PALE_YELLOW %]
+      WIDTH [% p.size %]
+    END
     [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
     [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
@@ -1378,7 +1213,6 @@ LAYER
     NAME "Hauptstraﬂe"
 [% END -%]
     LABEL
-#      MINFEATURESIZE 200
       MINFEATURESIZE AUTO
       MINDISTANCE 50
       POSITION auto
@@ -1390,9 +1224,10 @@ LAYER
       ANGLE AUTO
       PARTIALS FALSE
     END
-    COLOR [% COLOR_LIGHT_YELLOW %]
-    SYMBOL 'width'
-    SIZE [% p.size %]
+    STYLE
+      COLOR [% COLOR_LIGHT_YELLOW %]
+      WIDTH [% p.size %]
+    END
     [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
     [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
@@ -1420,9 +1255,10 @@ LAYER
       ANGLE AUTO
       PARTIALS FALSE
     END
-    COLOR 255 255 0
-    SYMBOL 'width'
-    SIZE [% p.size %]
+    STYLE
+      COLOR 255 255 0
+      WIDTH [% p.size %]
+    END
     [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
     [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
@@ -1450,9 +1286,10 @@ LAYER
       ANGLE AUTO
       PARTIALS FALSE
     END
-    COLOR 255 130 130
-    SYMBOL 'width'
-    SIZE [% p.size %]
+    STYLE
+      COLOR 255 130 130
+      WIDTH [% p.size %]
+    END
     [% IF p.maxscale %]MAXSCALE [% p.maxscale %][% END %]
     [% IF p.minscale %]MINSCALE [% p.minscale %][% END %]
   END
@@ -1479,18 +1316,10 @@ END
 ### BEGIN AFTER STRASSEN
 ### END AFTER STRASSEN
 
-LAYER
-  NAME "Straﬂen (Annotations)"
-  GROUP strassen
-#  MAXSCALE 600000
-  STATUS [% ON_STRASSEN %]
-  DATA strassen
-  TYPE ANNOTATION
-  LABELITEM "STRNR"
-  CLASSITEM "CAT"
+[% BLOCK CLASS_STRNR -%]
   CLASS
-    EXPRESSION /^B/
-    COLOR [% COLOR_YELLOW %]
+    EXPRESSION [% expression %]
+    COLOR [% color %]
     SYMBOL 'strnrbox'
     SIZE 10
     LABEL
@@ -1503,9 +1332,41 @@ LAYER
       COLOR 0 0 0
     END
   END
+[% END -%]
+
+LAYER
+  NAME "Straﬂen (Annotations)"
+  GROUP strassen
+  STATUS [% ON_STRASSEN %]
+  DATA strassen
+  TYPE ANNOTATION
+
+  CLASSITEM 'CAT'
+  LABELITEM 'STRNR'
+
+[% PROCESS CLASS_STRNR expression="/^B/" color=COLOR_YELLOW -%]
   METADATA
     WMS_TITLE "Straﬂennummern"
-    WMS_ABSTRACT "Straﬂennummern und Nummerierung von ausgeschilderten Radrouten"
+    WMS_ABSTRACT "Straﬂennummern"
+    WMS_SRS "EPSG:4326"
+  END
+END
+
+# XXX not yet working, STRNR is missing in dbf
+LAYER
+  NAME "Autobahnen (Annotations)"
+  GROUP strassen_bab
+  STATUS [% ON_STRASSEN_BAB %]
+  DATA strassen_bab
+  TYPE ANNOTATION
+
+  CLASSITEM 'CAT'
+  LABELITEM 'STRNR'
+
+[% PROCESS CLASS_STRNR expression="/^BAB/" color=COLOR_BLUE -%]
+  METADATA
+    WMS_TITLE "Autobahnnummern"
+    WMS_ABSTRACT "Autobahnnummern"
     WMS_SRS "EPSG:4326"
   END
 END
@@ -1513,32 +1374,17 @@ END
 LAYER
   NAME "Radrouten (Annotations)"
   GROUP comments_route
-#  MAXSCALE 600000
   STATUS [% ON_RADROUTEN %]
   DATA comments_route
   TYPE ANNOTATION
-  LABELITEM "STRNR"
-  CLASSITEM "CAT"
-  CLASS
-# XXX warum geht /^F/ nicht???
-#    EXPRESSION /^F/
-    EXPRESSION /^.+/
-    COLOR [% COLOR_GREEN %]
-    SYMBOL 'strnrbox'
-    SIZE 10
-    LABEL
-      MINFEATURESIZE 50
-      MINDISTANCE 100
-      POSITION CC
-      TYPE truetype
-      FONT "lucida"
-      SIZE 6
-      COLOR 0 0 0
-    END
-  END
+
+  CLASSITEM 'CAT'
+  LABELITEM 'STRNR'
+
+[% PROCESS CLASS_STRNR expression="/^.+/" color=COLOR_GREEN -%]
   METADATA
-    WMS_TITLE "Straﬂennummern"
-    WMS_ABSTRACT "Straﬂennummern und Nummerierung von ausgeschilderten Radrouten"
+    WMS_TITLE "Radroutennummern"
+    WMS_ABSTRACT "Nummerierung von ausgeschilderten Radrouten"
     WMS_SRS "EPSG:4326"
   END
 END
@@ -1564,10 +1410,11 @@ LAYER
   END
   CLASS
     EXPRESSION /^U[ABC]?$/
-    COLOR 0 0 128
     MAXSCALE 20000
-    SYMBOL 'width'
-    SIZE 2
+    STYLE
+      COLOR 0 0 128
+      WIDTH 2
+    END
   END
   TEMPLATE "query.html"
   HEADER "query_header2.html"
@@ -1582,6 +1429,7 @@ END
 ### BEGIN AFTER UBAHN
 ### END AFTER UBAHN
 
+[% IF MAPSERVER_VERSION < 6 -%]
 LAYER
   NAME "Regionalbahn"
   GROUP bahn
@@ -1608,13 +1456,8 @@ LAYER
       SYMBOL 'train-dashed'
       WIDTH 2
     END
-[% ELSIF MAPSERVER_VERSION < 5 -%]
-    COLOR 0 128 0
-    SYMBOL 'width'
-    SIZE 2
 [% ELSE -%]
     STYLE
-#      COLOR 102 102 102
       COLOR 0 128 0
       SYMBOL 'point'
       SIZE 4
@@ -1635,6 +1478,44 @@ LAYER
     WMS_SRS "EPSG:4326"
   END
 END
+[% ELSE -%]
+LAYER
+  NAME "Regionalbahn"
+  GROUP bahn
+  TYPE LINE
+  STATUS [% ON_R_BAHN %]
+  DATA rbahn
+  
+  CLASSITEM 'CAT'
+  CLASS
+    EXPRESSION /^R[ABC]?$/
+    COLOR 0 128 0
+    MINSCALE 20000
+  END
+  CLASS
+    EXPRESSION /^R[ABC]?$/
+    MAXSCALE 20000
+    STYLE
+      COLOR 0 128 0
+      WIDTH 4.0
+    END
+    STYLE
+      COLOR 255 255 255
+      WIDTH 2.0
+      LINECAP BUTT
+      PATTERN 8 12 END
+    END
+  END
+  TEMPLATE "query.html"
+  HEADER "query_header2.html"
+  FOOTER "query_footer2.html"
+  METADATA
+    WMS_TITLE "Regionalbahnlinien"
+    WMS_ABSTRACT "Regionalbahnlinien"
+    WMS_SRS "EPSG:4326"
+  END
+END
+[% END -%]
 
 ### BEGIN AFTER REGIONALBAHN
 ### END AFTER REGIONALBAHN
@@ -1649,15 +1530,18 @@ LAYER
   CLASSITEM 'CAT'
   CLASS
     EXPRESSION /^S[ABC]?$/
-    COLOR 0 128 0
+    STYLE
+      COLOR 0 128 0
+    END
     MINSCALE 20000
   END
   CLASS
     EXPRESSION /^S[ABC]?$/
-    COLOR 0 128 0
     MAXSCALE 20000
-    SYMBOL 'width'
-    SIZE 2
+    STYLE
+      COLOR 0 128 0
+      WIDTH 2
+    END
   END
   TEMPLATE "query.html"
   HEADER "query_header2.html"
@@ -1675,17 +1559,27 @@ END
 LAYER
   NAME "Radrouten"
   GROUP comments_route
-#  MAXSCALE 600000
   STATUS [% ON_RADROUTEN %]
   DATA comments_route
   TYPE LINE
-  LABELITEM "STRNR"
-  CLASSITEM "CAT"
+
+  LABELITEM 'STRNR'
+  CLASSITEM 'CAT'
+
   CLASS
     Name "Ausgeschilderte Radroute"
-    COLOR [% COLOR_GREEN %]
-    SYMBOL 'dotted12'
-    SIZE 10
+    STYLE
+      COLOR [% COLOR_GREEN %]
+      SIZE 10
+[% IF MAPSERVER_VERSION < 6 AND MAPSERVER_DRIVER == "AGG" -%]
+      SYMBOL 'dotted12'
+[% ELSE -%]
+      SYMBOL 'circle[% IF MAPSERVER_VERSION < 6 %]_12[% END %]'
+[% IF MAPSERVER_VERSION >= 6  -%]
+      GAP 12
+[% END -%]
+[% END -%]
+    END
   END
   TEMPLATE "query.html"
   HEADER "query_header2.html"
@@ -1706,35 +1600,42 @@ LAYER
   MAXSCALE 550000
 
   DUMP TRUE # allow GML export
-  
+
   CLASSITEM 'CAT'
+
+[% BLOCK STYLE_QUALITY -%]
+    STYLE
+      COLOR [% color %]
+[% IF MAPSERVER_VERSION < 6 -%]
+      SYMBOL "raute"
+      SIZE 4
+[% ELSE -%]
+      WIDTH 4
+      LINECAP BUTT
+      PATTERN 1.5 3 END
+[% END -%]
+    END
+[% END -%]
+
   CLASS
     EXPRESSION 'Q0'
     NAME "Sehr gute Fahrbahnqualit‰t (nur auﬂerhalb Berlins)"
-    SYMBOL "raute"
-    SIZE 4
-    COLOR 0 160 0
+[% PROCESS STYLE_QUALITY color="0 160 0" -%]
   END
   CLASS
     EXPRESSION 'Q1'
     NAME "Gute Fahrbahnqualit‰t"
-    SYMBOL "raute"
-    SIZE 4
-    COLOR 0 255 0
+[% PROCESS STYLE_QUALITY color="0 255 0" -%]
   END
   CLASS
     EXPRESSION 'Q2'
     NAME "M‰ﬂige Fahrbahnqualit‰t"
-    SYMBOL "raute"
-    SIZE 4
-    COLOR 255 200 0
+[% PROCESS STYLE_QUALITY color="255 200 0" -%]
   END
   CLASS
     EXPRESSION 'Q3'
     NAME "Schlechte Fahrbahnqualit‰t"
-    SYMBOL "raute"
-    SIZE 4
-    COLOR 255 0 0
+[% PROCESS STYLE_QUALITY color="255 0 0" -%]
   END
   CLASS # should not happen
     EXPRESSION /./ 
@@ -1761,40 +1662,45 @@ LAYER
   DUMP TRUE # allow GML export
   
   CLASSITEM 'CAT'
+
+[% BLOCK STYLE_HANDICAP -%]
+    STYLE
+      COLOR [% color %]
+[% IF MAPSERVER_VERSION < 6 -%]
+      SYMBOL "raute"
+      SIZE 4
+[% ELSE -%]
+      WIDTH 4
+      LINECAP BUTT
+      PATTERN 1 4 END
+[% END -%]
+    END
+[% END -%]
+
 # CLASS
 #   EXPRESSION 'q0'
 #   NAME "Keine sonstigen Behinderungen"
-#   SYMBOL "raute"
-#   SIZE 4
-#   COLOR 0 160 0
+#[%# PROCESS STYLE_HANDICAP color="0 160 0" -%]
 # END
   CLASS
     EXPRESSION 'q1'
 #    NAME "auf 25 km/h" # not here, too avoid confusion in legend
-    SYMBOL "raute"
-    SIZE 4
-    COLOR 0 255 0
+[% PROCESS STYLE_HANDICAP color="0 255 0" -%]
   END
   CLASS
     EXPRESSION 'q2'
 #    NAME "auf 18 km/h" # not here, too avoid confusion in legend
-    SYMBOL "raute"
-    SIZE 4
-    COLOR 255 200 0
+[% PROCESS STYLE_HANDICAP color="255 200 0" -%]
   END
   CLASS
     EXPRESSION 'q3'
 #    NAME "auf 13 km/h" # not here, too avoid confusion in legend
-    SYMBOL "raute"
-    SIZE 4
-    COLOR 255 0 0
+[% PROCESS STYLE_HANDICAP color="255 0 0" -%]
   END
   CLASS
     EXPRESSION 'q4'
     NAME "Schrittgeschwindigkeit"
-    SYMBOL "raute"
-    SIZE 4
-    COLOR 200 0 0
+[% PROCESS STYLE_HANDICAP color="200 0 0" -%]
   END
   CLASS # should not happen
     EXPRESSION /./ 
@@ -1821,22 +1727,30 @@ LAYER
   CLASS
     EXPRESSION '2'
     NAME "f¸r Radfahrer gesperrte Straﬂe"
-    COLOR 200 0 0
-    SIZE 10
-    SYMBOL 'blocked'
+    STYLE
+      COLOR 200 0 0
+      SIZE 10
+      SYMBOL 'blocked[% IF MAPSERVER_VERSION < 6 %]_40[% END %]'
+[% IF MAPSERVER_VERSION >= 6  -%]
+      GAP 40
+[% END -%]
+    END
     MAXSCALE 30000
   END
   CLASS
     EXPRESSION '2'
-    COLOR 200 0 0
-    SIZE 7
-    SYMBOL 'blocked'
+    STYLE
+      COLOR 200 0 0
+      SIZE 7
+      SYMBOL 'blocked[% IF MAPSERVER_VERSION < 6 %]_32[% END %]'
+[% IF MAPSERVER_VERSION >= 6  -%]
+      GAP 32
+[% END -%]
+    END
     MINSCALE 30000
   END
 END
 
-## XXX geht nicht in mapserver-3.6.6!
-[% IF !MAPSERVER_VERSION.defined || MAPSERVER_VERSION != "3.6.6" -%]
 LAYER
   NAME "Einbahnstraﬂen"
   TYPE LINE
@@ -1847,41 +1761,28 @@ LAYER
   CLASSITEM 'CAT'
 ## Hack 1_left/1_right notwendig, siehe -onewayhack in .../miscsrc/bbd2esri
   CLASS
-    EXPRESSION '1_left'
+    EXPRESSION /^1(_(right|left))?$/
     NAME "Einbahnstraﬂe"
-    COLOR 0 0 200
-    SYMBOL 'oneway_left'
-    SIZE 10
+    STYLE
+      COLOR 0 0 200
+      SIZE 10
+      SYMBOL 'oneway_arrow[% IF MAPSERVER_VERSION < 6 %]_20[% END %]'
+[% IF MAPSERVER_VERSION >= 6  -%]
+      GAP -20
+[% END -%]
+    END
     MAXSCALE 30000
   END
   CLASS
-    EXPRESSION '1_right'
-    COLOR 0 0 200
-[% IF NEED_ONEWAY_RIGHT_HACK -%]
-    SYMBOL 'oneway_right'
-[% ELSE -%]
-    SYMBOL 'oneway_left'
+    EXPRESSION /^1(_(right|left))?$/
+    STYLE
+      COLOR 0 0 200
+      SIZE 7
+      SYMBOL 'oneway_arrow[% IF MAPSERVER_VERSION < 6 %]_10[% END %]'
+[% IF MAPSERVER_VERSION >= 6  -%]
+      GAP -10
 [% END -%]
-    SIZE 10
-    MAXSCALE 30000
-  END
-  CLASS
-    EXPRESSION '1_left'
-    COLOR 0 0 200
-    SYMBOL 'oneway_left_small'
-    SIZE 7
-    MINSCALE 30000
-    MAXSCALE 60000
-  END
-  CLASS
-    EXPRESSION '1_right'
-    COLOR 0 0 200
-[% IF NEED_ONEWAY_RIGHT_HACK -%]
-    SYMBOL 'oneway_right_small'
-[% ELSE -%]
-    SYMBOL 'oneway_left_small'
-[% END -%]
-    SIZE 7
+    END
     MINSCALE 30000
     MAXSCALE 60000
   END
@@ -1894,7 +1795,6 @@ LAYER
     WMS_SRS "EPSG:4326"
   END
 END
-[% END -%]
 
 LAYER
   NAME "Punktuelle Einschr‰nkungen"
@@ -1909,27 +1809,19 @@ LAYER
     EXPRESSION 'BNP'
     NAME "Dr‰ngelgitter, Schranken (bis 1:8000)"
     MAXSCALE 8000
-[% IF MAPSERVER_VERSION >= 5 -%]
     STYLE
       SYMBOL '[% IMAGE_DIR %]/legend_narrowpassage.[% IMAGE_SUFFIX %]'
       ANGLE [ANGLE]
     END
-[% ELSE -%]
-    SYMBOL '[% IMAGE_DIR %]/legend_narrowpassage.[% IMAGE_SUFFIX %]'
-[% END -%]
   END
   CLASS
     EXPRESSION '0'
     NAME "Tragen erforderlich (bis 1:8000)"
     MAXSCALE 8000
-[% IF MAPSERVER_VERSION >= 5 -%]
     STYLE
       SYMBOL '[% IMAGE_DIR %]/legend_carry.[% IMAGE_SUFFIX %]'
       ANGLE [ANGLE]
     END
-[% ELSE -%]
-    SYMBOL '[% IMAGE_DIR %]/legend_carry.[% IMAGE_SUFFIX %]'
-[% END -%]
   END
 
   TEMPLATE "query.html"
@@ -1952,7 +1844,7 @@ LAYER
   GROUP mount
   DATA mount
 
-  LABELITEM "NAME"
+  LABELITEM 'NAME'
   
   CLASS
     COLOR 255 255 255
@@ -1978,7 +1870,8 @@ LAYER
   DATA mount
   TYPE ANNOTATION
 
-  LABELITEM "STRNR" # dummy ... should be invisible i.e. one space
+  LABELITEM 'STRNR' # dummy ... should be invisible i.e. one space
+
   CLASS
     NAME "mount"
     COLOR 0 255 0
@@ -2001,8 +1894,8 @@ LAYER
   DATA fragezeichen
   
   LABELITEM 'CAT'
-
   CLASSITEM 'CAT'
+
   CLASS
     NAME "Fragezeichen"
     SYMBOL 'raute'
@@ -2038,9 +1931,9 @@ LAYER
   MAXSCALE 300000
   TOLERANCE 5
 
-  LABELITEM "NAME"
-
+  LABELITEM 'NAME'
   CLASSITEM 'CAT'
+
   CLASS
     EXPRESSION /^U[ABC]?$/
     COLOR 0 0 128
@@ -2096,9 +1989,9 @@ LAYER
   MAXSCALE 300000
   TOLERANCE 3
   
-  LABELITEM "NAME"
-
+  LABELITEM 'NAME'
   CLASSITEM 'CAT'
+
   CLASS
     EXPRESSION /^R[ABC]?$/
     COLOR 0 128 0
@@ -2122,11 +2015,6 @@ LAYER
     EXPRESSION /^R[ABC]?$/
     SYMBOL '[% IMAGE_DIR %]/eisenbahn.[% IMAGE_SUFFIX %]'
     MAXSCALE 15000
-    ## XXX The next LABEL section seems to produce crashes with newer
-    ## Mapservers (4.x). Probably also the LABEL in ubahnhof.
-    ## Or maybe it's the regexp in EXPRESSION? If I leave LABEL as is
-    ## and replace the EXPRESSION with a string EXPRESSION or a much
-    ## simpler regexp, then it also works.
     LABEL
       POSITION auto
       TYPE truetype
@@ -2160,8 +2048,8 @@ LAYER
   TOLERANCE 5
  
   LABELITEM 'NAME'
-
   CLASSITEM 'CAT'
+
   CLASS
     EXPRESSION /^S[ABC]?$/
     COLOR 0 128 0
@@ -2185,11 +2073,6 @@ LAYER
     EXPRESSION /^S[ABC]?$/
     SYMBOL '[% IMAGE_DIR %]/sbahn.[% IMAGE_SUFFIX %]'
     MAXSCALE 15000
-    ## XXX The next LABEL section seems to produce crashes with newer
-    ## Mapservers (4.x). Probably also the LABEL in ubahnhof.
-    ## Or maybe it's the regexp in EXPRESSION? If I leave LABEL as is
-    ## and replace the EXPRESSION with a string EXPRESSION or a much
-    ## simpler regexp, then it also works.
     LABEL
       POSITION auto
       TYPE truetype
@@ -2219,9 +2102,9 @@ LAYER
   GROUP orte
   DATA orte
   
-  LABELITEM "NAME"
-
+  LABELITEM 'NAME'
   CLASSITEM 'CAT'
+
 [% BLOCK CLASS_ORT -%]
   CLASS
     EXPRESSION "[% cat %]"
@@ -2370,9 +2253,8 @@ LAYER
   MAXSCALE 30000
   
 [% TRANSPARENCY_ALPHA %] 
-  LABELITEM "NAME"
-
-  CLASSITEM "CAT"
+  LABELITEM 'NAME'
+  CLASSITEM 'CAT'
 [% FOR symbol = [
 		 ["church", "Kirche"],
 		 ["synagogue", "Synagoge"],
@@ -2516,18 +2398,36 @@ TRANSPARENCY 50 ##XXX Wie am geschicktesten verwenden?
 
   CLASS
     NAME "Route"
+[% IF MAPSERVER_VERSION < 6 && MAPSERVER_DRIVER == "AGG" -%]
     COLOR 150 0 0
     SIZE 11
-[% IF MAPSERVER_DRIVER == "AGG" -%]
     SYMBOL 'dotted12'
 [%# Currently there's no way to get the alternate blue/red dots plotted with the AGG driver... -%]
 [% ELSE -%]
-    SYMBOL 'dotted'
-    OVERLAYCOLOR 0 0 150
-    OVERLAYSYMBOL dottedtransposed
-    OVERLAYSIZE 11
+    STYLE
+      COLOR 255 255 255
+      # XXX hack to make line invisible --- can it be done differently?
+      WIDTH 0.001
+    END
+    STYLE
+      COLOR 150 0 0
+      SYMBOL 'circle[% IF MAPSERVER_VERSION < 6 %]_25[% END %]'
+      SIZE 11
+[% IF MAPSERVER_VERSION >= 6 -%]
+      INITIALGAP 0
+      GAP 25
 [% END -%]
+    END
+    STYLE
+      COLOR 0 0 150
+      SYMBOL 'circle[% IF MAPSERVER_VERSION < 6 %]_25_transposed[% END %]'
+      SIZE 11
+[% IF MAPSERVER_VERSION >= 6 -%]
+      GAP 25
+[% END -%]
+    END
   END
+[% END -%]
   METADATA
     WMS_TITLE "Route"
     WMS_ABSTRACT "Berechnete Route"
@@ -2636,9 +2536,12 @@ LAYER
 
   CLASS
     NAME "Markierung"
-    COLOR 255 180 200
-    SYMBOL 'ring'
-    SIZE 20
+    STYLE
+      COLOR 180 50 50
+      SYMBOL 'ring'
+      SIZE 20
+      WIDTH 3
+    END
   END
   METADATA
     WMS_TITLE "Markierung"
@@ -2658,21 +2561,8 @@ END
 # Staatsgrenzen sind "undurchdringlich", deshalb ganz oben gezeichnet
 LAYER
   NAME "Grenzen von Deutschland"
-  GROUP grenzen
-  TYPE LINE
-  STATUS [% ON_GRENZEN %]
   DATA deutschland
-  CLASSITEM 'CAT'
-  CLASS
-    EXPRESSION /./ 
-#    NAME "Grenze" # not here, too avoid duplication in legend
-    COLOR 128 128 128
-    SYMBOL "border"
-    SIZE 2
-  END
-  TEMPLATE "query.html"
-  HEADER "query_header2.html"
-  FOOTER "query_footer2.html"
+[% PROCESS LAYERFRAG_BORDERS with_name=0 -%]
   METADATA
     WMS_TITLE "Grenzen von Deutschland"
     WMS_ABSTRACT "Grenzen von Deutschland"
