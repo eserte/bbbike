@@ -286,6 +286,7 @@ cgi/GNUmakefile$
 ^mapserver/brb-spiff/
 ^mapserver/brb-test/
 ^mapserver/brb-test$
+^mapserver/brb/brb.map-localinc$
 # ignore whole hierarchy for now...
 ^mapserver/brb/
 ^mapserver/touren/
