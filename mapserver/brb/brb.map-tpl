@@ -2426,8 +2426,8 @@ TRANSPARENCY 50 ##XXX Wie am geschicktesten verwenden?
       GAP 25
 [% END -%]
     END
-  END
 [% END -%]
+  END
   METADATA
     WMS_TITLE "Route"
     WMS_ABSTRACT "Berechnete Route"
