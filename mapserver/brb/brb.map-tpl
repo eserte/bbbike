@@ -904,17 +904,6 @@ LAYER
 [% IF p.legend -%]
     NAME "Autobahn/Kfz-Straﬂe"
 [% END -%]
-    LABEL
-      MINFEATURESIZE 40
-      MINDISTANCE 50
-      POSITION auto
-      TYPE truetype
-      FONT "street"
-      MINSIZE [% p.lblsize %]
-      COLOR 0 0 0
-      OUTLINECOLOR 225 225 225
-      ANGLE AUTO
-    END
     STYLE
       COLOR 220 20 0
       WIDTH [% p.size + 4 %]
@@ -1329,7 +1318,7 @@ END
       TYPE truetype
       FONT "lucida"
       SIZE 6
-      COLOR 0 0 0
+      COLOR [% textcolor %]
     END
   END
 [% END -%]
@@ -1344,7 +1333,7 @@ LAYER
   CLASSITEM 'CAT'
   LABELITEM 'STRNR'
 
-[% PROCESS CLASS_STRNR expression="/^B/" color=COLOR_YELLOW -%]
+[% PROCESS CLASS_STRNR expression="/^B/" color=COLOR_YELLOW textcolor=COLOR_BLACK -%]
   METADATA
     WMS_TITLE "Straﬂennummern"
     WMS_ABSTRACT "Straﬂennummern"
@@ -1352,7 +1341,6 @@ LAYER
   END
 END
 
-# XXX not yet working, STRNR is missing in dbf
 LAYER
   NAME "Autobahnen (Annotations)"
   GROUP strassen_bab
@@ -1360,10 +1348,12 @@ LAYER
   DATA strassen_bab
   TYPE ANNOTATION
 
-  CLASSITEM 'CAT'
+  CLASSITEM 'FULLNAME'
   LABELITEM 'STRNR'
 
-[% PROCESS CLASS_STRNR expression="/^BAB/" color=COLOR_BLUE -%]
+[% PROCESS CLASS_STRNR expression="/^BAB/" color=COLOR_BLUE   textcolor=COLOR_WHITE -%]
+[% PROCESS CLASS_STRNR expression="/^B/"   color=COLOR_YELLOW textcolor=COLOR_BLACK -%]
+[% PROCESS CLASS_STRNR expression="/^L/"   color=COLOR_WHITE  textcolor=COLOR_BLACK -%]
   METADATA
     WMS_TITLE "Autobahnnummern"
     WMS_ABSTRACT "Autobahnnummern"
@@ -1381,7 +1371,7 @@ LAYER
   CLASSITEM 'CAT'
   LABELITEM 'STRNR'
 
-[% PROCESS CLASS_STRNR expression="/^.+/" color=COLOR_GREEN -%]
+[% PROCESS CLASS_STRNR expression="/^.+/" color=COLOR_GREEN  textcolor=COLOR_BLACK -%]
   METADATA
     WMS_TITLE "Radroutennummern"
     WMS_ABSTRACT "Nummerierung von ausgeschilderten Radrouten"
