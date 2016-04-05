@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2016-03-30
+#: last_checked: 2016-04-05
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -102,7 +102,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6183 (Baubeginn erst 2015)
 #: XXX Baubeginn des ersten Abschnitts: 3. Quartal 2014
-#: last_checked: 2016-03-10
+#: last_checked: 2016-04-04
 #: check_frequency: 60d
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -203,7 +203,7 @@ Karl-Marx-Str.: Bauarbeiten geplant, danach gibt es Radspuren; wie sieht es währ
 # 
 #: XXX Baumaßnahme 9.16 (Realisierung nach 2011) (auch im Maßnahmenkatalog Treptow-Köpenick, Bsw.7)
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5154
-#: last_checked: 2016-04-01
+#: last_checked: 2016-04-05
 #: check_frequency: 90d
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15553,7408 15560,7400 15609,7347 15695,7254 15928,6996 15977,6942 16060,6850 16146,6755 16273,6609 16280,6601 16333,6544 16425,6445
 # 
@@ -223,7 +223,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2016-03-31
+#: last_checked: 2016-04-05
 Warschauer Str: Radspuren in Bau	?::inwork 13651,11731 13696,11920 13745,12118
 # 
 # REMOVED (vermutlich passiert nichts weiter) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: XXX wird auch das letzte Stück im Westen realisiert? --- #: osm_watch: way id="4424794" version="14" --- #: osm_watch: way id="30195541" version="9" --- #: last_checked: 2015-06-08 --- #: check_frequency: 60d --- Turmstr.: evtl. wird die Radspuren-Lücke hier geschlossen	? 5248,13434 5368,13406 5434,13398
@@ -922,7 +922,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12085,977
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
 #: XXX laut Tsp vom 2010-03-26 wird der Radweg gerade erneuert (Richtung Norden)
-#: last_checked: 2016-03-13
+#: last_checked: 2016-04-04
 #: check_frequency: 120d
 #: priority: #C
 Tempelhofer Damm: wird der Radweg Richtung Norden erneuert?	?::projected; 9242,7286 9242,7325 9242,7658 9240,7811 9240,7991 9240,8028 9239,8099 9238,8253 9238,8410 9233,8597 9229,8718
@@ -1186,9 +1186,21 @@ Prinzengasse: Genaue Lage? Qualität?	?::inwork 9973,12292 9997,12295
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060109.1050.33932.html
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.95087.php (Beginn im Jahr 2014)
 #: osm_watch: way id="148035923" version="5"
+#: source_id: 2147339913
+#: XXX zurzeit Bauarbeiten (laut fritz bis 13.01.2017), gibt es Einschränkungen für Radfahrer?
 #: last_checked: 2015-07-23
-#: check_frequency: 300d
 Blanckertzweg: Radfahrstreifen in Planung (ebenso östlicher Teil der Hildburghauser Str.)	?::projected 4806,1360 4706,1293 4634,1245 4542,1188
+# 
+#: XXX nach dem Straßenausbau besserer Asphalt, Radwege wird es nur bis zur Zerbster Str. in Westrichtung und ab Stadtilmer Weg in Ostrichtung geben
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20131129.0640.392180.html (Straßenausbau geplant)
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.95087.php?date=20160124 (Beginn im Jahr 2016)
+#: source_id: 2147339913
+#: XXX zurzeit Bauarbeiten (laut fritz bis bis 13.01.2017), gibt es Einschränkungen für Radfahrer?
+#: last_checked: 2015-07-23
+Hildburghauser Str.: Ausbau der Straße, bessere Qualität des Asphalts?	? 4806,1360 4897,1350 5059,1337
+#: last_checked: 2015-07-23
+#: check_frequency: 360d
+Hildburghauser Str.: Ausbau der Straße, bessere Qualität des Asphalts?	? 5059,1337 5223,1318 5414,1304 5585,1275 5741,1231 5794,1215 5866,1195 5914,1181 6006,1155 6106,1133 6145,1119 6199,1104 6276,1083 6294,1078 6386,1051 6467,1028 6515,1010 6631,968
 # 
 #: XXX_osm weitgehend fertiggestellt
 Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-10630 29088,-10386 29021,-10333 28918,-10301 28723,-10326 28656,-10329 28539,-10255 28499,-10164
@@ -1352,6 +1364,7 @@ Mehldornpfad, Teichrohrweg: Fahrbahnerneuerung in Planung	?::projected 18941,193
 #: next_check ^^^
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.463942.php
+#: source_id: 2147339904
 #: next_check: 2016-04-30
 Buntzelstr./Advokatensteig: Zebrastreifen (?) in Planung	?::projected 22156,433 22171,459 22181,482
 # 
@@ -1466,12 +1479,12 @@ Schkopauer Ring oder Clara-Immerwahr-Str.: wie ist der richtige Straßenname hier
 # 
 #: XXX Wird sich durch die Baumaßnahmen was ändern? Ende der Bauarbeiten: 30.04.2016 vvv
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.415646.php
-#: last_checked: 2016-03-17 vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2016-04-05 vvv
+#: next_check: 2016-04-30 vvv
 Görlitzer Park: Baumaßnahmen	?::inwork 12608,10294 12580,10252
 Görlitzer Park: Baumaßnahmen	?::inwork 12767,10216 12763,10207 12757,10197
 Görlitzer Park: Baumaßnahmen	?::inwork 12905,10143 12901,10134 12869,10071
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
 # REMOVED (keine Einschränkung durch die existierenden Umlaufsperren) --- Görlitzer Park: Drängelgitter?	? 12767,10216 12763,10207 12757,10197
@@ -1710,14 +1723,6 @@ Fanny-Zobel-Str.	? 13975,10187 14049,10164
 # REMOVED (existiert) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/53re.pdf/file?y=2013 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2014 (Grundstücksnummerierungen) --- #: XXX Privatstraße --- #: last_checked: 2014-04-27 --- #: next_check: 2015-03-15 --- In den Leonorengärten: existiert die Straße schon? Genaue Lage? Qualität?	?::inwork 6294,4021 6493,4105
 # REMOVED (aufgenommen) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20131024.1605.390772.html --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/53re.pdf/file?y=2013 --- #: XXX fehlt in Berlin.coords.data --- #: next_check: 2014-01-08 (Wirksamkeit der Benennung laut Amtsblatt) --- Schindler-Platz: ist irgendwo hier der Schindler-Platz ausgeschildert?	? 8766,4038 8780,3983
 # REMOVED (nein, kein öffentlicher Weg, hier ist eine Kita+Spielplatz) --- #: XXX Frage: kann es zu unerwünschten Routing gemeinsam mit dem comments_path-Eintrag für diese Straße geben? --- Tegnerstr.: gibt es hier einen Weg durch einen Spielplatz oder Grünfläche?	? 10708,16579 10713,16635 10793,16636
-# 
-#: XXX nach dem Straßenausbau besserer Asphalt, Radwege wird es nur bis zur Zerbster Str. in Westrichtung und ab Stadtilmer Weg in Ostrichtung geben
-#: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20131129.0640.392180.html (Straßenausbau geplant)
-#: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.95087.php?date=20160124 (Beginn im Jahr 2016)
-#: last_checked: 2015-07-23
-#: check_frequency: 360d
-Hildburghauser Str.: Ausbau der Straße, bessere Qualität des Asphalts?	? 4806,1360 4897,1350 5059,1337 5223,1318 5414,1304 5585,1275 5741,1231 5794,1215 5866,1195 5914,1181 6006,1155 6106,1133 6145,1119 6199,1104 6276,1083 6294,1078 6386,1051 6467,1028 6515,1010 6631,968
-# 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5569 --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20140121.1245.393675.html --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/05re.pdf/file?y=2014 --- #: XXX Benennung am 05. Februar 2014 --- #: last_checked: 2013-11-17 --- #: next_check: 2014-02-05 --- Johannes-Fest-Platz: hier wird ein Platz benannt	? 18791,8597 18846,8616
 # 
 #: by: http://gruene-xhain.de/news/single-view/artikel/vorfahrt-fuer-den-radverkehr.html
@@ -1916,7 +1921,7 @@ Weichselplatz: vielleicht wird hier asphaltiert?	?::inwork 12851,9309 12761,9190
 # REMOVED --- #: XXX früher: "Albrechtsche Erben (Kolonie)", evtl. auch in Berlin.coords.data umbenennen --- #: note: aus dem DPAG-Mitteilungsblatt Dez 2012, PLZ=13629 --- Alter Wiesenweg: Qualität? Ausgeschildert?	? 1739,15958 1581,15919
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5192&options=4 (BVV-Beschluss)
-#: last_checked: 2016-01-24
+#: last_checked: 2016-04-04
 #: check_frequency: 100d
 #: priority: #C
 Zossener Str.: wird die Vorfahrtsregelung hier aufgehoben?	? 9827,10051 9837,9856 9820,9718 9790,9528
@@ -2417,8 +2422,8 @@ Karower Damm, Treseburger Straße: neues Wohngebiet und Grünanlage entsteht, und 
 # 
 #: XXX fehlen in Berlin.coords.data (PLZ vermutlich 12487) vvv
 #: by: http://www.stadtentwicklung.berlin.de/umwelt/umweltatlas/karten/pdf/e07_01_2009_mit_strname.pdf (teilweise)
-#: last_checked: 2016-03-28 vvv
-#: next_check: 2016-06-01 vvv
+#: last_checked: 2016-04-05 vvv
+#: check_frequency: 180d vvv
 Abramowitschallee: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18169,4159 17898,4434
 Gorissenstr.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 17952,3975 17636,4082
 Henry-Farman-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18734,4077 18670,4013
@@ -2427,10 +2432,10 @@ Hubert-Latham-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::p
 Pierre-de-Caters-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18455,3958 18548,3964
 #: XXX bei osm eingetragen
 Charles-Boutard-Straße: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18602,4220 18532,4162
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: osm_watch: way id="206889091" version="3"
-#: last_checked: 2016-03-28
+#: last_checked: 2016-04-05
 #: check_frequency: 180d
 Benno-König-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18369,4337 18578,4516
 #: XXX ^^^
@@ -2503,6 +2508,7 @@ Rad- und Gehweg geplant: Qualität, genaue Lage?	?::projected 7459,13912 7562,139
 #: XXX Gleislinse in Adlershof: Bebauungsplan 9-60
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-60/index.shtml
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-60/download/Bebauungsplan_9-60_oeA.pdf
+#: last_checked: 2016-05-04 vvv
 #: next_check: 2017-09-01 vvv
 Gustav-Hertz-Platz: geplant, verkehrsberuhigt	?::projected 18578,4516 18688,4611 18645,4664
 Wagner-Régeny-Str.: Verlängerung geplant	?::projected 19162,3935 18578,4516 18264,4830
@@ -2510,6 +2516,7 @@ Fuß- und Radwegbrücke: Rampe geplant, eigentlich Brücke "in Aussicht genommen"	?
 Weg entlang der Bahnanlagen: evtl. entsteht hier eine Grünanlage mit Wegen	?::projected 19667,3578 19232,4047 18688,4611
 Fuß- und Radweg: geplant	?::projected 18264,4830 18236,4807
 #: next_check ^^^
+#: last_checked ^^^
 # 
 #: by: https://www.potsdam.de/sites/default/files/documents/final_amtsblatt_nr._3_2016_zur_druckfreigabe.pdf
 #: XXX Privatstraße, 14471 Potsdam

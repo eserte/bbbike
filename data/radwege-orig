@@ -186,7 +186,7 @@ am Anfang gibt es einen Radweg von 10 Metern Länge	RW0; 11949,10414 12169,10310
 die letzten Meter sind benutzungspflichtig	RW1; 12169,10310 11949,10414
 	RW1;RW1 12169,10310 12243,10274 12341,10218
 	RW1; 12341,10218 12464,10153 12507,10130 12671,10042 12814,9966 12932,9900
-unklare Ausschilderung, teilweise ist das Zeichen 241 missverständlich aufgestellt (könnten auch die Parkwege durch den Görlitzer Park gemeint sein); kurz vor dem Spreewaldplatz gibt es das Zeichen 237 ohne Auffahrmöglichkeit	RW1; 12932,9900 12814,9966 12671,10042 12507,10130 12464,10153 12341,10218
+Asphalt mit Wurzelschäden; unklare Ausschilderung, teilweise ist das Zeichen 241 missverständlich aufgestellt (könnten auch die Parkwege durch den Görlitzer Park gemeint sein); kurz vor dem Spreewaldplatz gibt es das Zeichen 237 ohne Auffahrmöglichkeit	RW1; 12932,9900 12814,9966 12671,10042 12507,10130 12464,10153 12341,10218
 	RW1;RW1 12932,9900 13026,9854 13086,9825
 	RW1;RW1 12341,10218 12229,10014
 besonders schlechter Zustand des Radwegs (durch Wurzeln)	RW1;RW1 9827,10051 9922,10010 10006,9942
@@ -872,7 +872,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736 20755,5750
 #: XXX laut fritz "geänderte Straßenführung" bis 31.12.2016
 #: source_id: IM_023718
 #: source_id: 2147339540
-#: last_checked: 2016-03-04 vvv
+#: last_checked: 2016-04-04 vvv
 #: check_frequency: 90d vvv
 	RW2; 14015,7631 14095,7568 14174,7505
 # REMOVED, siehe unten ---	RW1; 14174,7505 14302,7429 14357,7450 14405,7435 14424,7401 14432,7353 14451,7340
@@ -1106,7 +1106,7 @@ die letzten 50 Meter sind benutzungspflichtig	RW1; 18225,7004 18010,7133
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
-#: last_checked: 2016-04-01
+#: last_checked: 2016-04-05
 #: check_frequency: 90d
 	RW8;RW2 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966

@@ -2551,6 +2551,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 25451,14018
 #: by: ossi vvv
 	X 19732,3340
+#: note: Anforderungsampel für linksabbiegende Radfahrer, ansonsten Kontaktschleifen in Newtonstr. und Gottfried-Leibniz-Str.
 	X 19324,2939
 #: note: wahrscheinlich mit der Ampel am Adlergestell synchronisiert
 #: note: südliche Ampel dient auch als Straßenbahnampel
@@ -2586,8 +2587,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX temporäre Ampel (wegen Arbeiten an der Staatsoper und an der U-Bahn)
 #: XXX_prog Anforderungsampel
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
+#: XXX laut fritz bis 05.05.2016
+#: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
 #: last_checked: 2016-03-31
-#: check_frequency: 45d
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
@@ -2742,7 +2744,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: SONNENALLEE-2014 vvv
 #: osm_watch: way id="260062339" version="7"
-#: last_checked: 2016-03-04 vvv
+#: last_checked: 2016-04-04 vvv
 #: check_frequency: 90d vvv
 #: note: Radfahrer in Richtung Südosten müssen die Seite wechseln, hier Anforderungsampel
 	X::inwork 14174,7505
@@ -2985,7 +2987,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -12655,-1714
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
 #: next_check_id: KIEFHOLZ-2015 vvv
-#: last_checked: 2016-04-01 vvv
+#: last_checked: 2016-04-05 vvv
 #: check_frequency: 90d vvv
 	X::inwork 14151,8967
 	X::inwork 14363,8738

@@ -1346,7 +1346,7 @@ Fuchsienweg -> Stubenrauchstr.: Bahntrasse	3::igndisp 16376,2862 16573,2715 1663
 Mittelstreifen	3nocross::ignrte 16135,2135 16028,2261 15980,2318
 Neuköllner Str. -> Ampferweg: Mittelstreifen	3::igndisp 15980,2318 16028,2261 16042,2280
 Ampferweg -> Neuköllner Str.: Mittelstreifen	3::igndisp 16042,2280 16028,2261 16135,2135
-Rudower Chaussee: Mittelstreifen	3 19498,3054 19475,3074 19426,3024
+Rudower Chaussee: Straßenbahntrasse	3 19498,3054 19475,3074 19426,3024
 Straßenbahntrasse	3nocross::ignrte 17601,5090 17542,4772 17520,4649
 Ellernweg -> Sterndamm: Straßenbahntrasse	3::igndisp 17428,4792 17542,4772 17601,5090
 Ellernweg -> Waldstr.: Straßenbahntrasse	3::igndisp 17428,4792 17542,4772 17580,4761
@@ -1911,11 +1911,11 @@ Krummenseer Str. -> Blumberger Damm: Mittelstreifen	3::igndisp 21657,15352 21623
 Mittelstreifen	3nocross::ignrte 21150,11925 21135,11799 21108,11628
 Blumberger Damm -> Dingolfinger Str.: Mittelstreifen	3::igndisp 21150,11925 21135,11799 21233,11781
 Dingolfinger Str. -> Blumberger Damm: Mittelstreifen	3::igndisp 21233,11781 21135,11799 21108,11628
-Mittelstreifen, zukünftig Straßenbahntrasse	3nocross::ignrte 19206,2848 19242,2876 19324,2939
-Rudower Chaussee -> Brook-Taylor-Str.: Mittelstreifen, zukünftig Straßenbahntrasse	3::igndisp 19206,2848 19242,2876 19215,2906
-Brook-Taylor-Str. -> Rudower Chaussee: Mittelstreifen, zukünftig Straßenbahntrasse	3::igndisp 19215,2906 19242,2876 19324,2939
-Mittelstreifen, zukünftig Straßenbahntrasse	3nocross::ignrte 19581,3184 19603,3207 19732,3340
-Karl-Otto-Reinsch-Str. -> Rudower Chaussee: Mittelstreifen, zukünftig Straßenbahntrasse	3::igndisp 19524,3286 19603,3207 19732,3340
+Straßenbahntrasse	3nocross::ignrte 19206,2848 19242,2876 19324,2939
+Rudower Chaussee -> Brook-Taylor-Str.: Straßenbahntrasse	3::igndisp 19206,2848 19242,2876 19215,2906
+Brook-Taylor-Str. -> Rudower Chaussee: Straßenbahntrasse	3::igndisp 19215,2906 19242,2876 19324,2939
+Straßenbahntrasse	3nocross::ignrte 19581,3184 19603,3207 19732,3340
+Karl-Otto-Reinsch-Str. -> Rudower Chaussee: Straßenbahntrasse	3::igndisp 19524,3286 19603,3207 19732,3340
 Mittelstreifen mit Geländer	3nocross::ignrte 6935,8208 7001,8161 7073,8081
 Torgauer Str. -> Sachsendamm: Mittelstreifen mit Geländer	3::igndisp 7158,8208 7001,8161 7073,8081
 Mittelstreifen	3nocross::ignrte 11963,11813 11916,11846 11764,12001
@@ -2668,6 +2668,7 @@ Drängelgitter	BNP:2:-88:trailer=5 18018,3276
 Schranke, ggfs. auf Gehweg ausweichen	BNP:2:82:trailer=6 16368,7425
 Drängelgitter	BNP:3:-101:trailer=10 23012,3598
 Tor	BNP:3:-123:trailer=5 14425,8116
+Tor	BNP:3:42:trailer=5 14688,8355
 Drängelgitter	BNP:5:-164 4258,2693
 Drängelgitter (2x), für Anhänger nicht passierbar	BNP:10:-206:trailer=no 2009,3362
 Drängelgitter (2x)	BNP:10:-211:trailer=20 1980,3409
@@ -2831,6 +2832,7 @@ IGA 2017-Gelände: Wege gesperrt	2 22455,14815 22417,14837 22380,14831 22331,1479
 IGA 2017-Gelände: Wege gesperrt	2 22414,14144 22407,14111 22404,13984
 Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 19015,3129 18892,3256 18689,3465
 Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 18689,3465 18892,3256 19015,3129
+Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2 18892,3256 18953,3318
 Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17651,-393
 (Planstraßen 2.1, 2.2, 2.3): noch gesperrt	2 7818,13993 7917,14051 7962,13977 7866,13916
 Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081
