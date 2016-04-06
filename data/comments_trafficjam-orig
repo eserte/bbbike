@@ -23,11 +23,9 @@ Friedrichstr.	Jam; 9444,11616 9432,11702 9418,11804 9405,11903 9394,11996 9385,1
 Friedrichstr.	Jam; 9255,13164 9246,13235 9225,13389
 # 
 #: next_check_id: WARSCHAUER-2014 vvv
-# REMOVED (Radspur existiert) --- Warschauer Str. Richtung Norden	Jam; 13493,11217 13541,11355 13588,11490 13603,11538
-# 
 Warschauer Str. Richtung Norden, Ausweichen auf Mittelstreifen möglich	Jam; 13651,11731 13696,11920 13745,12118
-# 
-Warschauer Str. Richtung Süden, Ausweichen auf Mittelstreifen möglich	Jam; 13696,11920 13651,11731
+# REMOVED (Radspur existiert) --- Warschauer Str. Richtung Norden	Jam; 13493,11217 13541,11355 13588,11490 13603,11538
+# REMOVED (Radspur existiert) --- Warschauer Str. Richtung Süden, Ausweichen auf Mittelstreifen möglich	Jam; 13696,11920 13651,11731
 #: next_check_id ^^^
 # 
 #: note: Stau eher morgens
@@ -59,3 +57,7 @@ Hauptstr.	Jam; 15261,10738 14906,10820 14794,10844 14717,10855
 #: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
+# 
+#: last_checked: 2016-04-06
+#: check_frequency: 90d
+Karl-Marx-Str.	Jam; 12914,7785 12898,7832 12865,7923 12830,8031 12794,8103 12753,8187
