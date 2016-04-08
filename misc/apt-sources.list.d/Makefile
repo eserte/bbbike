@@ -13,7 +13,7 @@ all:
 ######################################################################
 
 MYDEBS_BBBIKE_LIST_PATH=	/etc/apt/sources.list.d/mydebs.bbbike.list
-SUPPORTED_DISTS=		squeeze|wheezy|precise
+SUPPORTED_DISTS=		squeeze|wheezy|jessie|precise
 PERL=				perl
 
 add:	install-repo add-repo-key
