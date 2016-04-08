@@ -93,12 +93,14 @@ if (!run ["git", "status"]) {
 }
 
 {
-    my $current_branch;
-    if (!run ['git', 'branch', '--quiet', '--color=never', '--contains=HEAD'], ">", \$current_branch) {
+    my $branches;
+    if (!run ['git', 'branch', '--quiet', '--color=never', '--contains=HEAD'], ">", \$branches) {
 	error "running git-branch failed";
     }
-    $current_branch =~ s{^\* }{};
-    chomp $current_branch;
+    my($current_branch) = $branches =~ m{^\* (.*)}m;
+    if (!defined $current_branch) {
+	error "cannot get current branches in staging directory, got '$branches' from git-branch call";
+    }
     if ($current_branch ne $online_branch) {
 	error "staging directory is not on expected branch '$online_branch', but on '$current_branch'";
     }
@@ -316,8 +318,11 @@ __END__
 
 # XXX first run missing, initial directories and git clones have to be created manually
 # Approximately like this:
+#     sudo aptitude install libipc-run-perl freebsd-buildutils
 #     mkdir -p /root/work/bbbike-webserver-red
 #     mkdir -p /root/work/bbbike-webserver-blue
-#     (cd /root/work/bbbike-webserver-red && git clone git://github.com/eserte/bbbike BBBike && git checkout -b online)
-#     (cd /root/work/bbbike-webserver-blue && git clone git://github.com/eserte/bbbike BBBike && git checkout -b online)
+#     (cd /root/work/bbbike-webserver-red  && git clone --depth=1 git://github.com/eserte/bbbike BBBike && cd BBBike && git checkout -b online)
+#     (cd /root/work/bbbike-webserver-blue && git clone --depth=1 git://github.com/eserte/bbbike BBBike && cd BBBike && git checkout -b online)
+#     (cd /root/work && ln -s bbbike-webserver-blue bbbike-webserver)
+#     (cd /root/work && ln -s bbbike-webserver-red bbbike-webserver-staging)
 # Maybe do some changes to the online branch (html/newstreetform* changes, ignoring t/.prove)
