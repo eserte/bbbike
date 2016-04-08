@@ -1023,7 +1023,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5542,11075 5459,11135
 	RW0;RW0  5459,11135 5258,11285 5166,11343 5091,11406 5085,11413 4919,11605
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4919,11605 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
-#: last_checked: 2016-03-31
+#: last_checked: 2016-04-07
 #: check_frequency: 60d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1650,7 +1650,7 @@ Berliner Gehwegplatten, ca. 1,50m breit	RW2;RW2 9272,14208 9400,14400 9410,14410
 #: next_check_id: OTTOBRAUN-2015
 #: note: Wobei es so aussieht, als ob das Zusatzschild einfach nur fehlt
 #: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5; 
-#: last_checked: 2016-03-31
+#: last_checked: 2016-04-08
 #: check_frequency: 90d
 	RW4; 11451,13301 11368,13170
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 11451,13301 11486,13350
@@ -2998,7 +2998,7 @@ Gehweg für Radfahrer frei (in der Praxis als Zweirichtungsweg genutzt)	RW1; 3083
 	RW;RW 22146,-1183 22107,-1304 22068,-1422 22027,-1548 22003,-1625
 breiter Gehweg für Radfahrer frei	RW1; 22162,1067 22208,1103 22287,1165 22367,1230 22453,1294 22493,1325 22560,1377 22655,1450
 Gehweg für Radfahrer frei	RW1; 22655,1450 22560,1377 22493,1325 22453,1294 22367,1230 22287,1165 22208,1103 22162,1067
-gemeinsamer Rad- und Gehweg, Verbundsteinpflaster	RW2;RW2 22655,1450 22570,1607 22549,1644 22455,1812 22448,1824 22421,1872 22388,1947 22378,1970 22328,2084 22205,2367 22074,2656 22058,2700 22050,2736 22004,2904 21967,3102
+gemeinsamer Rad- und Gehweg, Verbundsteinpflaster	RW2;RW2 22655,1450 22570,1607 22549,1644 22455,1812 22448,1824 22421,1872 22388,1947 22378,1970 22328,2084 22271,2214 22246,2272 22205,2367 22195,2390 22153,2482 22118,2559 22074,2656 22058,2700 22050,2736 22004,2904 21967,3102
 gemeinsamer Rad- und Gehweg, Verbundsteinpflaster	RW2; 21967,3102 21958,3166 21964,3592 21970,3759 21966,3827
 Gehweg für Radfahrer frei	RW1; 21966,3827 21970,3759 21964,3592 21958,3166 21967,3102
 #: XXX vielleicht ändert sich hier etwas bzgl. der Benutzungspflicht?

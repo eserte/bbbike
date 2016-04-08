@@ -2669,6 +2669,7 @@ Lutterbacher Str.: noch Baustelle	2::inwork 2094,3231 1993,3170 2072,3034 2163,3
 # 
 #: XXX Bauarbeiten (Erweiterung des Rütli-Campus?)
 #: XXX Wann sind die Bauarbeiten beendet?
+#: osm_watch: way id="137084083" version="6"
 #: last_checked: 2016-03-04
 #: check_frequency: 60d
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,9200 12548,9167
@@ -2676,6 +2677,7 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,
 #: next_check_id: AMNORDHAFEN-2016
 #: XXX Straße wird zurückgebaut
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.256386.php
+#: osm_watch: way id="343786626" version="2"
 #: last_checked: 2016-03-26
 #: check_frequency: 60d
 Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7703,14582 7527,14684
@@ -2692,22 +2694,25 @@ Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14448,9922 14460,9871 1448
 #: last_checked ^^^
 # 
 #: last_checked: 2015-12-26
+#: osm_watch: way id="311371554" version="3"
 Clara-Immerwahr-Str.: Bauzäune	2::inwork 19202,17471 19546,17351 19798,17263 19845,17235 19914,17203
 # 
 #: last_checked: 2016-03-31
+#: osm_watch: way id="57852078" version="4"
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
-# 
-# REMOVED --- #: next_check_id: SCHOENEBERGERSCHLEIFE-2015 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2015/pressemitteilung.424946.php --- #: last_checked: 2015-12-11 --- #: next_check: 2015-12-22 --- #: priority: #A --- (Bautzener Str. - Südkreuz): in Bau	2::inwork 8204,9001 8198,8893 8175,8815 7998,8317
 # 
 #: next_check_id: STEGLITZPARK-2015 vvv
 #: last_checked: 2015-09-27 vvv
 #: check_frequency: 180d vvv
+#: osm_watch: way id="306238980" version="1"
 SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2408,1144 2352,1267
+#: osm_watch: way id="148434465" version="3"
 SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2336,1111 2408,1144 2504,1186
 #: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
+#: osm_watch: way id="318581438" version="3"
 #: last_checked: 2016-03-28
 #: check_frequency: 120d
 Fünf Morgen: Bauarbeiten, gesperrt. Wird es eine Anbindung an den Hüttenweg geben?	2::inwork 1437,5015 1483,5161
@@ -2717,11 +2722,13 @@ Fünf Morgen: Bauarbeiten, gesperrt. Wird es eine Anbindung an den Hüttenweg gebe
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/artikel.434654.php
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/auslegungen/b-planentwurf_xxi-32d-1.pdf
 #: XXX evtl. wird dieses Stück Straße komplett entfernt
+#: osm_watch: way id="24216753" version="12"
 #: last_checked: 2015-08-09
 #: next_check: 2016-09-01
 Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 # 
 #: XXX wann wird die Straße eröffnet?
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2016 (Widmung von Straßenland)
 #: osm_watch: way id="266854579" version="6"
 #: last_checked: 2015-08-02
 Am Theodorpark: noch gesperrt	2::inwork 24905,10955 25053,10959 25143,10961
@@ -2743,11 +2750,8 @@ Theodorstr.: Bauarbeiten, gesperrt	2::inwork 24897,11083 24905,10955 24913,10884
 #: next_check: 2015-11-02 (public)
 Pfarrhufenanger: noch in Bau, gesperrt	2::inwork 25599,13069 25441,12838 25266,12622
 # 
-# REMOVED --- #: osm_watch: way id="24686030" version="4" --- #: last_checked: 2015-09-23 --- Am Gutspark: Bauarbeiten	2::inwork 15747,12880 15746,12967 15826,12971
-# 
 #: XXX Ende der Bauarbeiten?
-# REMOVED (als es noch in handicap_s-orig war) --- : XXX_prog: zu eng für Anhänger
-#: last_checked: 2016-03-09
+#: last_checked: 2016-04-07
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076 9559,13087
 # 
 #: last_checked: 2016-02-28 vvv
@@ -2756,11 +2760,6 @@ Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,
 Schwarzer Weg: wegen Straßenbau gesperrt	2::inwork 17295,7323 17295,7330 17296,7396
 #: check_frequency ^^^
 #: last_checked ^^^
-# 
-#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.331148.php
-#: XXX bis voraussichtlich Ende Oktober 2015, danach wird eventuell auch der Havelradweg über diesen Weg geführt
-#: next_check: 2015-10-25
-Schleuse - Lindenufer: wegen Bauarbeiten gesperrt	2::inwork -2944,14652 -2922,14642 -2907,14534 -2926,14496 -2964,14478
 # 
 #: XXX Bauarbeiten im Park dauern bis 2016
 #: last_checked: 2016-02-05
@@ -2780,18 +2779,14 @@ Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,1
 #: source_id ^^^
 #: next_check_id ^^^
 # 
-# REMOVED --- #: next_check_id: GREIFENHAGENER-2015 --- #: last_checked: 2015-06-30 --- #: check_frequency: 30d --- Greifenhagener Str.: Bauarbeiten, Einbahnstraße	1s:q2 11086,15772 11123,15851
-# REMOVED (dauerhaft, ja) --- #: XXX vermutlich werden diese Abschnitte dauerhaft aufgegeben werden --- #: last_checked: 2016-03-13 --- #: check_frequency: 60d --- Matthesstr., Beermannstr.: wegen Autobahnbaustelle gesperrt	2::inwork 14119,9368 14157,9345 14162,9381 14172,9457
-# 
 #: next_check_id: DIESEL-2015
 #: last_checked: 2016-04-05
 #: check_frequency: 60d
 Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 14471,8046
 # 
-# REMOVED --- #: XXX vermutlich müssen auch Radfahrer die Umleitung nehmen --- #: source_id: IM_024686 --- #: next_check: 2015-05-29 --- #: priority: #A --- Rummelsburger Landstraße: zwischen Nalepastr. und Poggendorffweg wegen Baustelle gesperrt	1::inwork 17143,8565 17202,8391
-# 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5561.html
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/gerickesteg/index.shtml (20 Monate Bauzeit)
+#: osm_watch: way id="27250334" version="6"
 #: last_checked: 2016-03-10
 #: next_check: 2017-01-01
 Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,12669 6765,12680
@@ -2800,6 +2795,7 @@ Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,126
 #: last_checked: 2015-04-11 vvv
 #: next_check: 2017-06-01 vvv
 IGA 2017-Gelände: Wege gesperrt	2 22455,14815 22417,14837 22380,14831 22331,14793 22254,14793 22199,14744 22164,14722 22108,14710 22090,14704 22071,14630 22051,14604 22026,14601 22012,14556 21985,14513 22026,14501 22061,14471 22172,14287 22414,14144 22462,14172 22639,14384 22679,14450 22670,14520
+#: osm_watch: way id="338582727" version="2"
 IGA 2017-Gelände: Wege gesperrt	2 22414,14144 22407,14111 22404,13984
 #: next_check ^^^
 #: last_checked ^^^
@@ -2814,6 +2810,7 @@ Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr
 #: last_checked ^^^
 #: XXX ^^^
 # 
+#: osm_watch: way id="257072322" version="6"
 #: last_checked: 2016-04-05
 #: check_frequency: 100d
 Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 18892,3256 18953,3318
@@ -2825,14 +2822,10 @@ Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::in
 #: check_frequency: 100d
 Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17651,-393
 # 
-# REMOVED (laut osm & Abendschau wieder offen) --- #: osm_watch: way id="150301191" version="14" --- #: last_checked: 2015-11-14 --- #: next_check: 2016-02-07 --- #: by: http://www.rbb-online.de/abendschau/archiv/20160204_1930/Nachrichten2.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.442520.php --- Teltowkanalbrücke: bis auf Weiteres gesperrt	2::inwork  7769,4315 7795,4242
-# 
 #: next_check_id: EUROPACITY-2015
 #: last_checked: 2015-03-13
 #: next_check: 2016-12-31
 (Planstraßen 2.1, 2.2, 2.3): noch gesperrt	2 7818,13993 7917,14051 7962,13977 7866,13916
-# 
-# REMOVED (offen) --- #: last_checked: 2015-09-26 vvv --- #: next_check: 2016-03-01 (Eröffnung des Möbelmarkts im Frühjahr 2016) vvv --- Wasserstr. (Niederschöneweide): abgesperrt	2::inwork 17483,6024 17681,6212 --- Uferstr. (Niederschöneweide): abgesperrt	2::inwork 17681,6212 17843,6083
 # 
 #: next_check_id: BAERWALD-2015
 #: XXX siehe auch aufgehobene Einbahnstraßenregelungen weiter oben vvv
@@ -2848,10 +2841,6 @@ Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081
 #: source_id ^^^
 #: source_id ^^^
 #: XXX ^^^
-# 
-# REMOVED (fertig) --- #: next_check_id: AMNORDHAFEN-2015 --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.256386.php --- #: last_checked: 2015-10-14 vvv --- #: XXX sieht schon relativ fertig aus --- vielleicht wird früher eröffnet? Aber laut Baustellenschild gehen die Bauarbeiten bis Mai 2016 --- Am Nordhafen: Sperrung des Uferwegs zwischen Fennstr. und Sellerstr., vom 1. Februar 2015 bis voraussichtlich Oktober 2015	2::inwork 7753,14528 7695,14545 7653,14570 7605,14600 7527,14644 7486,14652 --- Zufahrt zum Uferweg: gesperrt	2::inwork 7703,14582 7696,14577 7662,14579 7653,14570 --- #: last_checked ^^^
-# REMOVED (offen) --- #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6433 (Anfrage) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136136549415/136549415/00119959/59-Anlagen/02/GA_1805_IV.pdf (mindestens bis Ende 2016) --- #: last_checked: 2015-12-07 --- #: check_frequency: 14d --- Unterführung Gertraudenbrücke - Wallstr.: wegen Bauarbeiten beim U-Bhf. Spittelmarkt ist die Verbindung gesperrt	2::inwork 10308,11833 10374,11734
-# REMOVED (Straße entfernt) --- #: last_checked: 2015-04-04 --- #: check_frequency: 120d --- Grenzweg: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, ggfs. dauerhaft	2::inwork 17445,7434 17575,7519
 # 
 #: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/strassen_kfz/SOV-Beschluss-27022012.pdf
 #: XXX hier wird es für Autofahrer dauerhaft keine Zufahrt zur Minna-Todenhagen-Str. geben, aber vielleicht wird es für Radfahrer/Fußgänger einen Zugang geben?
@@ -2873,18 +2862,6 @@ Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, gg
 #: by ^^^
 #: XXX ^^^
 # 
-# REMOVED --- #: next_check_id: NIZZASTR-2014 vvv --- #: last_checked: 2016-02-13 vvv --- #: check_frequency: 60d vvv
-# REMOVED --- Grenobler Ring: teilweise noch nicht fertiggestellt bzw. durch Bauzaun abgesperrt	2::inwork 12360,21303 12441,21341 12483,21255 12404,21217
-# REMOVED --- Grenobler Ring: teilweise noch nicht fertiggestellt bzw. durch Bauzaun abgesperrt	2::inwork 12483,21255 12493,21212
-# REMOVED --- #: XXX vermutlich schon offen --- Lyonstr.: noch nicht geöffnet	2::inwork 12188,21330 12204,21327 12322,21378 12443,21439
-# REMOVED --- #: XXX vermutlich schon offen --- Marseillestr.: noch nicht geöffnet	2::inwork 12402,21537 12404,21532 12411,21515 12443,21439
-# REMOVED --- Toulonstr.: noch nicht geöffnet	2::inwork 12404,21532 12480,21560
-# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
-# REMOVED --- #: next_check_id: CHARITE-2014 --- #: source_id: IM_023570 --- #: source_id: IM_023615 --- #: last_checked: 2015-09-30 --- #: next_check: 2015-10-31 --- #: priority: #A --- Luisenstr. Höhe Charité: Straße wegen Bauarbeiten komplett bis zum 31.10.2015 gesperrt, auch für Radfahrer und Fußgänger	2::inwork 8665,13353 8648,13498
-# REMOVED --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.153649.php --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.214040.php --- #: XXX falls es soweit ist -> gesperrt-orig --- #: last_checked: 2015-07-21 --- #: check_frequency: 30d --- Lohmühlenplatz: Umgestaltung des Platzes, Weg ist gesperrt	2::inwork 12905,9470 12889,9426 12897,9365
-# REMOVED (wieder überquerbar) --- #: source_id: INKO_104519 --- #: last_checked: 2015-03-28 --- #: check_frequency: 90d --- Bismarckstr.: Mittelstreifen während der Bauarbeiten nicht überquerbar	3nocross 3689,11637 3844,11649 3898,11655
-# REMOVED --- #: next_check_id: INVALIDENFRIEDHOF-2014 --- #: by: Birgit Schroeer --- #: confirmed_by: srt --- #: last_checked: 2015-03-13 --- #: next_check: 2015-03-28 --- #: XXX siehe auch temp_blockings-Eintrag --- #: osm_watch: way id="76212442" version="7" --- Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 28.03.2015	2::inwork 8119,13912 8101,13901 8248,13659 8337,13541
-# 
 #: last_checked: 2016-03-15
 #: check_frequency: 120d
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
@@ -2892,12 +2869,6 @@ Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwo
 #: last_checked: 2016-03-15
 #: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
-# 
-# REMOVED (weitgehend fertig) --- #: XXX werden hier die Bordsteine abgeflacht? --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/25re.pdf/file?y=2014 --- #: last_checked: 2014-10-28 --- Dresdener Str.: Bauarbeiten, komplett gesperrt	2::inwork 11034,11249 11021,11287 11000,11327
-# REMOVED --- #: last_checked: 2014-10-01 --- Am Postbahnhof: Bauarbeiten, Straße gesperrt	2::inwork 12641,11288 12664,11310 12713,11372
-# REMOVED --- #: XXX theoretisch ist ein Trampelpfad vorbei vorhanden --- #: last_checked: 2015-01-19 (von der Mollstr. aus) --- Berolinastr., Weg zum Spielplatz: wegen Bauarbeiten der Wasserbetriebe vollständig gesperrt	2::inwork 11719,13088 11815,13045
-# REMOVED (vorzeitig fertig) --- #: XXX laut Schild bis Dezember 2014 gesperrt --- #: last_checked: 2014-11-20 --- #: next_check: 2014-12-15 --- Diestelmeyerstr.: wegen Bauarbeiten der Wasserbetriebe vollständig gesperrt, auch für Fußgänger	2::inwork 12690,12769 12833,12920
-# REMOVED (keine Bauzäune mehr) --- #: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dreinplan.pdf?start&ts=1350454320&file=xxii6dreinplan.pdf --- #: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/xxii6dbegruendung.pdf?start&ts=1350454241&file=xxii6dbegruendung.pdf --- #: XXX evtl. ist hiermit die Position des Zebrastreifens in der Degnerstr. festgelegt? --- #: XXX vielleicht wird es auch eine Verbindung bis auf der ehem. Bahnlinie zur Hansastr. geben? --- #: XXX Fertigstellung der Mehrfamilienhäuser im Süden: Dezember 2014 --- #: last_checked: 2014-09-12 (Durchfahrt möglich, man muss an Bauzäunen vorbei) --- #: check_frequency: 21d --- Rad- und Gehwegverbindung Suermondtstr. - Degnerstr.	2::inwork 16476,16216 16458,16104 16493,15983 16559,15896
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6003 (Forderung nach Wiederherstellung)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6003&date=20151213 (Abriss der Brücke)
@@ -2907,13 +2878,10 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 #: check_frequency: 180d
 Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352
 # 
-# REMOVED --- #: XXX hier steht noch ein Bauzaun --- #: last_checked: 2014-09-21 --- Viechtacher Str.: Bauarbeiten, Zufahrt zur Zwieseler Str. noch gesperrt	2::inwork 19657,9666 19727,9672
-# 
 #: osm_watch: way id="24845189" version="12"
 #: last_checked: 2016-02-28
 #: check_frequency: 60d
 Viechtacher Str.: Straße fertig, aber noch gesperrt	2::inwork 19801,9680 19871,9680 19923,9682
-# REMOVED (offen) --- Eisensteiner Str.: Bauarbeiten, Straße noch gesperrt	2::inwork 19727,9672 19722,9483
 # 
 #: last_checked: 2016-02-28 vvv
 #: check_frequency: 60d vvv
@@ -2930,8 +2898,6 @@ Teisnacher Str.: fertiggestellt, aber noch gesperrt	2::inwork 19871,9680 19859,9
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-# REMOVED (die Nicht-Existenz sollte auch durch Nicht-Existenz auf der Karte reflektiert werden) --- #: by: http://www.tagesspiegel.de/berlin/grossbaustelle-in-berlin-bauarbeiten-am-ostkreuz-verzoegern-sich-bis-2017/8210208.html (Termin Wiederaufbau) --- #: next_check: 2018-01-01 --- Fußgängerbrücke S-Ostkreuz: Abriss und Neubau	2::inwork 14794,10844 14764,10877 14787,10972 14798,10985
-# 
 #: last_checked: 2015-08-01
 #: check_frequency: 360d
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
@@ -2940,8 +2906,6 @@ BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 #: last_checked: 2016-03-13
 #: check_frequency: 120d
 am Osthafen: durch Barriere versperrt	2::inwork 14259,10309 14463,10212
-# 
-# REMOVED --- #: last_checked: 2014-04-17 --- #: check_frequency: 14d --- Edith-Stein-Str.: Bauarbeiten könnten noch möglich sein	2::inwork 14089,13247 14035,13104
 # 
 #: next_check_id: BND-2014
 #: osm_watch: way id="327596395" version="1"
@@ -2952,15 +2916,13 @@ am Osthafen: durch Barriere versperrt	2::inwork 14259,10309 14463,10212
 #: check_frequency: 90d
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Durchfahrt verboten	2 8251,14337 8442,14456
 # 
-# REMOVED --- #: next_check_id: INVALIDEN-2014 vvv --- #: last_checked: 2015-08-05 vvv --- #: next_check: 2015-05-31 vvv --- Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 19011,14019 9085,13919 8935,13844 --- Am Nordbahnhof: Abbiegen in die Invalidenstr. nicht möglich	3 9011,14019 9085,13919 9151,13941 --- Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 9151,13941 9085,13919 9011,14019 --- Am Nordbahnhof: Abbiegen aus der Invalidenstr. nicht möglich	3 8935,13844 9085,13919 9011,14019 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
-# 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
 #: osm_watch: way id="305153174" version="1"
 #: last_checked: 2016-03-31 vvv
 #: check_frequency: 90d vvv
 Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9996,12401 9994,12368 9943,12364
 Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10008,12274 9994,12368
-# REMOVED (hier aufgehobe) --- Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9943,12364 9961,12273
+# REMOVED (hier aufgehoben, temporär?) --- Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9943,12364 9961,12273
 #: XXX eigentlich für Fußgänger passierbar, aber UdL nur in Richtung Osten
 Niederlagstr.: Bauarbeiten, keine Zufahrt von Unter den Linden möglich	2::inwork 9943,12364 9934,12420
 #: check_frequency ^^^
@@ -2984,24 +2946,6 @@ Sterndamm: Eisenbahnunterführung in Richtung Groß-Berliner Damm/Südostallee gesp
 #: valid: 20140224-20180630
 #: next_check: 2018-06-30
 Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,6895 14153,6795
-# 
-# REMOVED (wahrscheinlich dauerhaft) --- #: last_checked: 2014-02-25 --- Wadzeckstr. - Mollstr.: Baustelle, möglicherweise wird es diese Verbindung in Zukunft nicht mehr geben	2::inwork 11326,13196 11379,13279 11409,13327
-# REMOVED (beendet) --- #: next_check_id: ZIMMERMANNSTRBR-2014 --- #: last_checked: 2014-02-08 --- #: next_check: 2014-06-30 --- #: priority: #A --- #: add_fragezeichen: Sind die Bauarbeiten auf der Zimmermannstraßenbrücke und am Wuhlewanderweg mittlerweile beendet? --- Wuhlewanderweg an der Zimmermannstraßenbrücke: wegen Bauarbeiten gesperrt	2::inwork 21385,9049 21471,9246
-# REMOVED --- #: last_checked: 2014-06-09 --- Wilhelm-Hoff-Str.: asphaltierter Weg noch abgesperrt	2::inwork 19033,3397 19057,3422
-# REMOVED (by wosch) --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0186-neubau-eines-boardingwohn-und.html --- #: XXX_prog 1s:q3:inwork geht als Kategorie nicht, falsche Übersetzung! --- #: last_checked: 2014-12-15 --- #: check_frequency: 180d --- Große Hamburger Str.: Einbahnstraße wegen Bauarbeiten	1s:q3 10077,13100 10018,13299
-# REMOVED (anscheinend ist ein Viertel der Treppe zugänglich, siehe http://berlinerbaustellen.blogspot.de/2014/01/0246-gastbaustelle-potsdam-potsdamer.html) --- : last_checked: 2014-01-11 --- Alter Markt - Uferweg: Zugang höchstwahrscheinlich gesperrt	2::inwork -12608,-1715 -12625,-1703 -12643,-1694
-# REMOVED (Einbahnstraße in "Am Zirkus" bleibt wohl permanent, Schild sieht nicht temporär aus) #: next_check_id: AMZIRKUS-2014 --- #: XXX oder bleibt die Einbahnstraßenregelung permanent? --- #: XXX_prog 1s:q4:inwork geht als Kategorie nicht, falsche Übersetzung! --- #: last_checked: 2014-03-07
-# REMOVED (offen) --- #: next_check_id: STADTGARTENMOABIT-2014 --- #: last_checked: 2014-05-24 (noch gesperrt) --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20140505.1005.396906.html --- (Weg am Stadtgarten Moabit): Bauarbeiten	2::inwork 5708,14077 5685,14215
-# REMOVED --- #: next_check_id: ERNASAMUEL-2014 --- #: last_checked: 2014-03-07 --- Erna-Samuel-Str.: gesperrt bis zur kompletten Fertigstellung	2::inwork 5299,14049 5321,14088 5474,14168 5685,14215 6052,14304 6118,14289
-# REMOVED (Weg ist offen) --- #: next_check_id: HELLWEG-2014 --- #: XXX: vom Hellweg-Parkplatz kann man einige Meter Richtung Norden passieren --- #: XXX: "inwork" ist ein Euphemismus --- es sind keinerlei Anzeichen von Bauarbeiten zu sehen --- #: last_checked: 2014-06-27 --- #: check_frequency: 100d --- (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): Zugang durch Bauzäune versperrt	2::inwork 8243,9766 8233,9863 8208,9856 8206,9867 8289,9988
-# REMOVED (realisiert) --- #: next_check_id: GLEISDREIECKBUELOW-2014 --- #: last_checked: 2014-02-28 --- #: next_check: 2014-03-14 --- Zufahrt zum Gleisdreieck-Park: Bauarbeiten, komplett gesperrt	2::inwork 7906,10098 7928,10094 8011,10085 8013,10055
-# REMOVED (offen) --- #: last_checked: 2014-10-05 --- #: check_frequency: 60d --- Rumoldstr.: Bauarbeiten, gesperrt	2::inwork 17454,12348 17368,12365
-# REMOVED (offen) --- #: last_checked: 2014-12-13 --- #: check_frequency: 30d --- (Antonplatz - Bizetstr.): Bauarbeiten, gesperrt	2::inwork 13487,15888 13525,15784
-# REMOVED (erstmal entfernen; vielleicht wird nach den Bauarbeiten alles ganz anders aussehen) --- #: next_check_id: CHARITE-2014 --- #: last_checked: 2015-11-27 --- #: check_frequency: 90d --- tragen (2 Stufen)	0:5 8818,13365
-# REMOVED (habe Leute hier langlaufen/fahren sehen) --- #: osm_watch: way id="182562157" version="2" --- #: last_checked: 2013-11-04 --- #: next_check: 2013-11-11 --- (Bautzener Str. - Südkreuz): Bauzaun, Zugang noch nicht erlaubt	2:inwork 8185,9338 8207,9324 8204,9046
-# REMOVED (offen, aber handicap!) --- #: next_check_id: EMILSCHULZ-2014 --- #: source_id: INKO_095722_COPY_1 --- #: XXX siehe auch routing_helper addition --- #: XXX bei VMZ wurde der Eintrag entfernt (2014-03-31) --- ist aber immer noch aktiv! --- #: by: http://www.berliner-woche.de/nachrichten/bezirk-steglitz-zehlendorf/lichterfelde/artikel/36485-fertigstellung-der-emil-schulz-bruecke-verzoegert-sich/ (Verzögerung bis August 2014) --- #: by: http://www.berliner-woche.de/nachrichten/bezirk-steglitz-zehlendorf/lichterfelde/artikel/45172-emil-schulz-bruecke-im-oktober-soll-auch-die-zweite-fahrbahn-fertig-sein/ (Verzögerung bis Oktober 2014) --- #: priority: #A --- #: last_checked: 2014-04-27 --- #: next_check: 2014-10-01 --- Promenade am Teltowkanal: während der Bauarbeiten an der Emil-Schulz-Brücke gesperrt	2:inwork 4261,2703 4258,2693 4247,2652 4202,2622 4193,2616
-# REMOVED (Bauarbeiten beendet) --- #: XXX siehe auch die Umleitungsstrecke --- #: XXX nach den Bauarbeiten asphaltiert --- #: by: http://www.strassenbauportal.de/oeffentliche_ausschreibung_vobvol_details_10317_Berlin_Strassenbauarbeiten__607379.html (Asphaltierung) --- #: by: http://www.rubu.de/verkehr-planungen.html (Dauer) --- #: by: http://www.rubu.de/mediapool/115/1150729/data/Paul_u_Paula_UL3-Uebersicht-BA.pdf (Übersichtsplan) --- #: last_checked: 2013-08-19 --- #: next_check: 2013-10-03 (geplantes Bauende ist Ende September) --- Paul-und-Paula-Ufer: Sanierungsarbeiten, komplett gesperrt	2:inwork 15056,10625 14990,10581 14937,10598 14911,10587
-# REMOVED (Bauarbeiten beendet) --- #: last_checked: 2013-07-13 --- #: check_frequency: 100d --- Schiffahrtsufer, Burgwall: Bauarbeiten, komplett gesperrt	2:inwork -3451,13300 -3441,13270 -3462,13256 -3467,13240 -3526,13196
 # 
 #: next_check_id: ZEUGHAUS-2014 vvv
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
@@ -3027,15 +2971,9 @@ Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,689
 #: check_frequency: 90d
 An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8833,13440 8846,13412 8835,13376 8818,13365 8808,13377 8764,13372 8665,13353
 # 
-# REMOVED --- #: next_check_id: FLORAGAERTEN-2014 --- #: osm_watch: way id="294423898" version="4" --- #: XXX siehe auch Eintrag in qualitaet_s-orig --- #: last_checked: 2014-09-28 --- #: check_frequency: 30d --- In den Floragärten: Baustelle	2:inwork 9895,17649 9995,17642
-# REMOVED (LAGA läuft langsam aus) --- #: next_check: 2013-10-06 vvv --- #: priority: #A vvv --- Stadtpark Prenzlau: wegen LAGA gesperrt (bis Oktober 2013)	2 39867,101104 39923,101339 39884,101572 --- Uckerpromenade: wegen LAGA gesperrt (bis Oktober 2013)	2 39671,100750 39474,100982 39275,101193 --- Seepark: wegen LAGA gesperrt (bis Oktober 2013)	2 39754,100955 39474,100982 --- #: prio ^^^ --- #: next_check ^^^
-# REMOVED --- #: last_checked: 2013-09-11 --- #: check_frequency: 60d --- Sokratesweg: Bauarbeiten, gesperrt	2:inwork 18527,9623 18520,9585
-# REMOVED (wieder passierbar, die Unterführung nur langsam) --- #: by: http://www.potsdam.de/cms/ziel/996205/DE/?date=20130419 --- #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/a6add3f2/NeueRadfuehrungen.pdf --- #: next_check: 2014-06-01 --- An der Nuthestr.: wegen Bauarbeiten bis Mitte 2014 gesperrt	2:inwork -11395,-1331 -11235,-1465 -11137,-1680 -11094,-1748 -10973,-1764
 #: last_checked: 2014-03-01
 #: check_frequency: 100d
 Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?) gesperrt	2:inwork -11407,-1086 -11460,-1098 -11538,-1138 -11615,-1094
-# 
-# REMOVED (Termin abgelaufen) --- #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/36a4bfda/Radverkehrsfuehrung_Potsdamer_Mitte_08_04k.pdf vvv --- #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/9f652b1a/Radverkehrsfuehrung_Potsdamer_Mitte_22_04k.pdf vvv --- #: priority: #A vvv --- #: next_check: 2013-09-05 vvv --- Sperrung am zukünftigen Landtag: Bereich vor der Straßenbahnhaltestelle Richtung Norden gesperrt (8. April 2013 - 6. September 2013)	1:inwork -12758,-1654 -12772,-1577 --- Sperrung am zukünftigen Landtag: Radweg Richtung Westen gesperrt (22. April 2013 - 6. September 2013)	1::inwork -12655,-1714 -12730,-1681 -12758,-1654 --- #: next_check ^^^ --- #: prio ^^^ --- #: by ^^^ --- #: by ^^^
 # 
 #: next_check_id: NORDUFER-2014
 #: by: Torben Müllers
@@ -3048,17 +2986,10 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 #: check_frequency: 120d
 Nordufer: Neubau	2:inwork 7427,14648 7212,14738
 # 
-# REMOVED (offensichtlich wieder passierbar) --- #: last_checked: 2013-06-04 --- #: next_check: 2013-08-01 --- #: XXX siehe auch Eintrag zur Friedrichsbrücke in handicap_s-orig --- Spreeufer: wegen Bauarbeiten an der Friedrichsbrücke gesperrt	2:inwork 10166,12777 10105,12855
-# 
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)
 #: last_checked: 2015-12-04
 #: check_frequency: 120d
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
-# 
-# REMOVED (wieder offen) --- #: last_checked: 2013-02-04 --- #: XXX Bauzäune waren im Dezember 2012 weg, aber im Februar 2013 wurde wieder gebaut --- Am Sudhaus: Bauarbeiten, manchmal noch gesperrt	2:inwork 12134,8172 12282,8204
-# REMOVED (obwohl, Bauzäune stehen noch bereit) --- #: by: rjoop --- #: last_checked: 2012-11 --- #: next_check: 2013-03-15 --- #: osm_watch: way id="35326794" version="7" --- Am Teltowkanal: gesperrt	2:inwork 16503,3464 15892,3932
-# 
-# REMOVED (fertig asphaltiert) --- #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20121026.1415.377154.html --- #: next_check: 2013-03-31 --- #: XXX nach den Bauarbeiten bessere Qualität? Zurzeit nur Q1-, siehe qualitaet_s-orig --- (Bellevuepark): Asphaltbauarbeiten	2:inwork 22787,5582 22855,5554 22835,5452 22851,5321
 # 
 #: next_check_id: OBERWALL-2014
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
@@ -3076,10 +3007,6 @@ Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9898,12161 9882,12259
 #: check_frequency: 360d
 Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 17221,14268 17274,14280
 #
-# REMOVED (Bauarbeiten beendet) --- #: by: Xenia B. --- #: last_checked: 2014-05-10 --- #: next_check: 2014-10-15 --- #: osm_watch: way id="159457523" version="2" --- Rudi-Dutschke-Weg	2:inwork 2627,5095 2851,5251 2913,5294
-# REMOVED (Straße ist nicht (mehr?) gesperrt) --- #: last_checked: 2012-06-08 --- #: next_check: 2013-03-01 --- Zur Monumentenhalle: Straße wird wahrscheinlich neu gebaut	2:inwork 8390,8879 8409,8904 8405,8994
-# REMOVED (ich konnte durchfahren, Asphalt wie gehabt) --- #: last_checked: 2014-08-07 --- #: check_frequency: 120d --- #: XXX wird auch der Asphalt hier und im südlichen Abschnitt verbessert? --- Billy-Wilder-Promenade: wegen Bauarbeiten an umliegenden Wohnhäusern gesperrt	2:inwork 2528,1501 2584,1376
-# 
 #: last_checked: 2016-02-08
 #: check_frequency: 120d
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
@@ -3091,11 +3018,6 @@ Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht mögl
 #: osm_watch: way id="54500456" version="11" brb
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18680,-1506 18798,-1581 18853,-1656 18866,-1674
 # 
-# REMOVED (wahrscheinlich sind Sperrungen hier selten) --- #: last_checked: 2013-11-12 --- #: check_frequency: 90d --- Am Pankepark: Bauarbeiten, (manchmal) gesperrt	2:inwork 8152,14130 8186,14150 8238,14181
-# REMOVED (Baustelle aufgehoben) --- #: last_checked: 2012-08-30 --- #: next_check: 2012-10-15 --- Scharrenstr.: wegen Bauarbeiten komplett gesperrt	2:inwork 10418,12016 10480,12077
-# REMOVED (Baustelle aufgehoben) --- #: last_checked: 2012-05-01 --- #: next_check: 2012-07-15 --- Paul-und-Paula-Ufer: wegen Bodensanierungsarbeiten komplett gesperrt	2:inwork 14884,10508 14906,10587
-# REMOVED (now in handicap_l-orig) --- #: last_checked: 2011-11-27 --- #: next_check: 2012-03-01 --- Am Alten Markt: wegen Bauarbeiten (Wiederaufbau des Schlosses) gesperrt	2:inwork -12643,-1694 -12624,-1598
-# 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20111122.1040.362894.html
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=5878
 #: XXX Sanierungstermin steht noch nicht fest
@@ -3103,36 +3025,18 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: check_frequency: 360d
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 # 
-# REMOVED --- #: last_checked: 2012-03-23 --- #: next_check: 2012-04-25 --- Spreeufer: wegen Bauarbeiten gesperrt	2:inwork 8596,12576 8495,12651 8473,12753
-# REMOVED (fertig!) --- #: last_checked: 2011-12-17 --- #: next_check: 2012-01-15 --- (Leuthener Platz - Wilhelm-Kabus-Str.): Bauzäune	2:inwork 7716,8356 7807,8354 7893,8327
-# REMOVED (fertig!) --- #: last_checked: 2011-09-27 --- #: next_check: 2011-10-15 --- (General-Pape-Str. - Gontermannstr.): Bauzäune	2:inwork 8106,8290 8202,8293 8265,8305 8276,8295
-# REMOVED (fertig!) --- #: last_checked: 2011-08-02 --- #: next_check: 2012-01-01 --- Sonnenkieker: Bauarbeiten	2:inwork 22600,13812 22668,13849 22692,13836
-# REMOVED (fertig, erfasst) --- #: last_checked: 2011-06-26 --- #: XXX hier muss noch der genaue Wegverlauf ermittelt werden --- Uferweg am Salzhof: ein Teilabschnitt ist noch nicht freigegeben	2:inwork -1942,16105 -1979,15994 -1923,15684
-# 
 #: osm_watch: way id="27178371" version="10"
 #: osm_watch: way id="23099023" version="9"
 #: osm_watch: way id="23099024" version="6"
 #: osm_watch: way id="103531998" version="2"
-#: last_checked: 2015-11-07 vvv
-#: check_frequency: 90d vvv
-# REMOVED (fertig) --- Tegeler Hafen: Weg über Insel gesperrt	2 1756,20405 1736,20441 1733,20470 1753,20511 1761,20539
+#: last_checked: 2015-11-07
+#: check_frequency: 90d
 Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603
-# REMOVED (Treppe!) --- #: XXX jetzt werden Häuser hier gebaut; wird später das Durchfahren möglich sein? --- Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1863,20478 1826,20492 1761,20539
-# REMOVED (fertig) --- Uferweg am Tegeler Hafen: Weg wegen Bauarbeiten gesperrt	2:inwork 1761,20539 1741,20571
-#: check_frequency: ^^^
-#: last_checked ^^^
-# 
-# REMOVED --- laut http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a115_avus/de/bau.shtml?y=20120731 seit April schon offen! --- #: by: somebody via phone call ---#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a115_avus/de/bau.shtml --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1106/nachricht4396.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1110/nachricht4504.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1201/nachricht4557.html---#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1206/nachricht4691.html---#: by: INKO_109786---#: last_checked: 2012-07-05---#: next_check: 2012-11-15---Hüttenweg: Sperrung wegen Bau an der Autobahn, wahrscheinlich bis Ende November 2012	2:inwork -739,6838 -927,6888
 # 
 #: note: abgeschlossener Zaun
 #: last_checked: 2016-02-05
 #: check_frequency: 180d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
-# 
-# REMOVED (offen) --- #: last_checked: 2014-04-04 --- #: check_frequency: 7d --- #: XXX wird man nach den Bauarbeiten direkt zur Eldenaer Str. fahren können (Kfz/Rad)? --- #: XXX Qualität im östlichen Abschnitt? --- #: osm_watch: way id="137941886" version="5" --- An den Eldenaer Höfen: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14509,12819 14560,12808
-# REMOVED (nicht mehr gesperrt) --- #: XXX dieser Abschnitt wird wahrscheinlich offiziell eine Einbahnstraße, offen Richtung Westen sein --- #: XXX mittlerweile manchmal (oder immer?) passierbar --- Am Langen Jammer: westlicher Abschnitt wegen Bauarbeiten gesperrt	2:inwork 14536,12916 14588,12901 14682,12874
-# REMOVED --- #: last_checked: 2011-04-30 --- Tiergartenufer: Bauarbeiten, gesperrt	2:inwork 5711,11841 5543,11837 5478,11860
-# REMOVED --- #: last_checked: 2011-04-08 --- Bebelplatz: Bauarbeiten, gesperrt	2:inwork 9679,12388 9702,12307 9708,12235
 # 
 #: next_check_id: STAATSOPER-2014 vvv
 #: last_checked: 2016-03-31 vvv
@@ -3153,26 +3057,11 @@ Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12
 #: check_frequency: 120d
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
-# REMOVED (Boulevard Berlin!) --- #: last_checked: 2011-12-25 --- #: next_check: 2012-01-01 --- #: XXX evenuell bleibt dieser Teil dauerhaft gesperrt, weil hier ein Einkaufszentrum entsteht? --- #: XXX auch die Ampel an der Kreuzung prüfen --- Treitschkestr.: Bauarbeiten am Kaufhaus, bis 2012	2:inwork 5219,6215 5062,6295 4997,6331 4971,6345
-# REMOVED --- #: next_check_id: INVALIDEN-2014 --- #: last_checked: 2014-02-10 --- #: next_check: 2014-03-31 --- #: XXX "die Ausfahrt über Invalidenstraße zur Caroline-Michaelis-Straße ist aber möglich" --- wenn das stimmt, dann entfernen, oder wird das hier eine Einbahnstraße werden? --- #: priority: #A --- #: valid: -20140331 --- Caroline-Michaelis-Str.: Bauarbeiten	2:inwork 9151,13941 9125,13973
-# REMOVED --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4106.html --- #: next_check: 2011-09-01 --- Ella-Trebe-Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 7937,13109 7941,13014 7948,12918
-# REMOVED --- #: last_checked: 2011-03-04 --- #: next_check: 2011-05-15 --- Brüderstr.: Bauarbeiten, gesperrt	2:inwork 10385,11985 10284,12113
-# REMOVED --- #: last_checked: 2011-05-20 --- #: next_check: 2011-08-01 --- Alex-Wedding-Str.: Bauarbeiten, komplett gesperrt	2:inwork 11085,13239 11045,13183
-# REMOVED (für Radfahrer ist das Abbiegen möglich) --- #: next_check: 2012-06-01 vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4088.html --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9054,12154 --- Mauerstr.: Einbiegen in die Behrenstr. nicht möglich	3:inwork 9076,12054 9064,12156 9164,12172 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9054,12154 9064,12156 9076,12054 --- Behrenstr.: Einbiegen in die Mauerstr. nicht möglich	3:inwork 9164,12172 9064,12156 9076,12054 --- #: next_check: ^^^
-# 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
 #: last_checked: 2016-03-16
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
-# 
-# REMOVED --- siehe http://www.flickr.com/photos/h-e-n-r-y/5260386593/ #: last_checked: 2010-11-05 --- #: next_check: 2010-12-01 --- #: note: Eröffnung des Hotels im Dezember 2010 --- #: XXX Neubewertung für handicap_s notwendig! --- Spittelmarkt: wegen Bauarbeiten gesperrt	2:inwork 10166,11592 10153,11666 10213,11728
-# REMOVED --- #: by: http://www.kondorwessels.com/index.php?id=356 (Fertigstellung) --- #: last_checked: 2011-11-11 --- #: next_check: 2011-11-21 --- Elisabeth-Mara-Str.: Bauarbeiten bis zum Frühjahr 2011	2:inwork 10506,11567 10320,11627
-# REMOVED --- #: last_checked: 2010-09-05 --- #: next_check: 2011-09-01 --- Rhinstr.: neues Wohngebiet, Weg gesperrt	2:inwork 18015,13846 17300,14133
-# REMOVED --- Hinweis by Monika W-J, Radweg wieder existent seit Sommer 2012: --- #: by: Ulrike Orlowski --- #: by: http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true&x=52.53578&y=13.31063&zoom=13&meldungId=IM_014510 --- #: next_check: 2011-06-30 --- Radweg parallel zur Autobahn ist wegen Bauarbeiten am BAB gesperrt	2:inwork 5049,14675 4676,14534 3705,14290 3595,14277
-# REMOVED --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1002/nachricht3772.html --- #: next_check: 2010-10-01 --- Brücke über A10: Sperrung vom 15.02.2010 bis 01.10.2010	2:inwork 15337,24593 15490,24848
-# REMOVED --- #: last_checked: 2010-09-11 --- #: next_check: 2010-12-31 --- #: XXX der Neubau wird "N" oder "NH" sein und Radwege haben --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0907/nachricht3563.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1005/nachricht3870.html --- #: by: http://www.altglienicke.de/aktuell.php : Sperrung aufgehoben (20.05.11) --- Wegedornbrücke: Vollsperrung, Neubau	2:inwork 20385,593 20442,564 20510,530 20534,501
-# REMOVED (für Radfahrer befahrbar) --- #: last_checked: 2013-04-16 --- #: check_frequency: 7d --- #: XXX abhängiger Eintrag in vorfahrt-orig sowie in ampeln-orig (auskommentierte Ampel) --- Kynaststraße: Bauarbeiten im südlichen Abschnitt	2:inwork 14652,10201 14724,10297 14766,10372 14797,10476 14805,10518
 # 
 #: by: http://www.tagesspiegel.de/berlin/haengepartie-fuer-die-loewenbruecke/4572208.html
 #: note: früher bei osm, jetzt komplett entfernt: osm_watch: way id="22792488" version="5"
@@ -3184,9 +3073,6 @@ Löwenbrücke: gesperrt	2:inwork 6406,11784 6452,11778
 #: next_check: 2015-03-01
 Dahlemer Feld: zur Zeit eine Ziegenweide, keine Durchfahrt möglich	2:temp -1643,7828 -1787,7932 -1846,8129
 # 
-# REMOVED --- #: last_checked: 2012-08-03 --- #: next_check: 2012-09-10 --- Queralleebrücke: wegen Bauarbeiten gesperrt, voraussichtlich bis September 2012	2:inwork 7621,11620 7649,11717
-# REMOVED --- #: by: tobias wirnsberger, Matthias Stief --- #: last_checked: 2011-08-24 (srt, von der Bahn aus) --- #: next_check: 2011-12-01 --- Unterführung unter Adlergestell und Bahn: wegen Brückenerneuerung gesperrt	2:inwork 20810,2398 20939,2413
-#
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # REMOVED --- #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	1:inwork -12655,-1714 -12730,-1681 -12758,-1654 -12755,-1585 -12786,-1556

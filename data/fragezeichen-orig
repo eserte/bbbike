@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaﬂnahmenkatalog ist nur der ˆstliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaﬂnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2016-04-05
+#: last_checked: 2016-04-07
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -218,7 +218,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2016-04-05
+#: last_checked: 2016-04-08
 Warschauer Str: Radspuren in Bau	?::inwork 13651,11731 13696,11920 13745,12118
 # 
 # REMOVED (vermutlich passiert nichts weiter) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: XXX wird auch das letzte St¸ck im Westen realisiert? --- #: osm_watch: way id="4424794" version="14" --- #: osm_watch: way id="30195541" version="9" --- #: last_checked: 2015-06-08 --- #: check_frequency: 60d --- Turmstr.: evtl. wird die Radspuren-L¸cke hier geschlossen	? 5248,13434 5368,13406 5434,13398
@@ -388,6 +388,11 @@ Wendenschloﬂstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 2266
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   f¸r Radfahrer eher uninteressante Dinge (-> private)
+# 
+#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.466174.php
+#: by: http://www.berlin.de/ba-spandau/_assets/ueber-den-bezirk/16-04-07-havel-radweg-schifffahrtsufer-umleitung.jpg
+#: next_check: 2016-09-30
+Schifffahrtsufer: wird dieser Abschnitt nach den Bauarbeiten asphaltiert sein?	?::inwork -3529,13452 -3546,13503 -3556,13582 -3543,13691 -3503,13773 -3385,13937 -3345,13994
 # 
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamtes/artikel.434089.php
 #: XXX Bezirksamtsbeschluss 48/16
@@ -1399,6 +1404,11 @@ Schwarzer Weg (Schmˆckwitz): Fahrbahnerneuerung in Planung	?::projected 27892,-3
 # - Fragen nach genauen Routenverl‰ufen
 # - XXX_prog- und XXX_indoor-Eintr‰ge
 # 
+#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.331148.php
+#: XXX bis voraussichtlich Ende Oktober 2015 war hier gesperrt, danach wird eventuell auch der Havelradweg ¸ber diesen Weg gef¸hrt
+#: next_check: 2015-10-25
+Schleuse - Lindenufer: f¸hrt der Havelradweg hier entlang?	? -2944,14652 -2922,14642 -2907,14534 -2926,14496 -2964,14478
+# 
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.464638.php
 #: next_check: 2016-04-10
 #: priority: #C
@@ -1461,6 +1471,7 @@ Steglitzer Festwoche im B‰kepark: gibt es w‰hrend der Festwoche Einschr‰nkungen 
 # REMOVED (ja, ja) --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5616&options=4 --- Finckensteinallee: gibt es hier Bordsteine oder Handicaps durch Fuﬂg‰ngerverkehr?	? 4115,2726 4140,2706 4170,2727
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2016
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2016
 #: XXX ggfs. culdesac- und str_cont_ausnahme-Eintr‰ge erstellen
 #: last_checked: 2016-02-15
 #: check_frequency: 90d
@@ -1967,7 +1978,7 @@ Sˆmmeringstraﬂe/Quedlinburger Straﬂe: Planung eines Zebrastreifens f¸r 2013	?::p
 # REMOVED (-> strassen-orig) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2012 --- Weg im Harry-Bresslau-Park: wo genau liegt der Weg? Qualit‰t? Nachts beleuchtet?	? 4997,6331 4937,6205
 # REMOVED (lohnt nicht, von der Bernauer Str. schlecht erkennbar) --- Sendener Str. - Bernauer Str.: Qualit‰t des Waldweges?	? 915,18352 625,18518 560,18494
 # 
-#: osm_watch: way id="23006209" version="22"
+#: osm_watch: way id="23006209" version="23"
 #: XXX laut osm living_street, k.A. zur Qualit‰t
 Johannesstift: Qualit‰t der Straﬂen? ‹berall verkehrsberuhigt?	? -3655,18177 -3847,17978 -3914,17913 -3953,17941 -4038,18030 -3898,18187
 # 
@@ -2134,12 +2145,12 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: XXX_prog ^^^
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20141202.1525.400470.html
-#: last_checked: 2016-03-21
+#: last_checked: 2016-04-08
 #: check_frequency: 90d
 Sebastianstr.: Straﬂenumgestaltungsmaﬂnahme Sebastianstraﬂe - gibt es ƒnderungen f¸r Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.334355.php
-#: last_checked: 2016-03-07
+#: last_checked: 2016-04-08
 #: check_frequency: 120d
 Stallschreiberstr./Kolonnenweg: Straﬂenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172 10818,11269
 # 
@@ -2376,14 +2387,27 @@ Lindenallee: wo befindet sich die Straﬂe genau?	? -784,16574 -945,16725 -781,167
 # REMOVED --- : XXX_prog "AEG-Str." sieht nicht schˆn aus. Ausnahmsweise "AEG-Straﬂe" verwenden? W¸rde aber programmtechnisch nicht funktionieren... und in den Leitdaten steht auch AEG-Str.
 # REMOVED (aufgenommen) --- #: XXX old_name: AEG-Siedlung (bis ca. Anfang 2015) --- AEG-Str.: wo genau liegt die Straﬂe? Ist sie ausgeschildert?	? 6037,22830 6083,22772 6153,22828
 # 
+# REMOVED ---: XXX eine der Straﬂen kˆnnte nach Lucie Groﬂer benannt werden
+# REMOVED ---: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5199
+# REMOVED ---: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036760758214/760758214/00109569/69-Anlagen/03/B1097ZB1.pdf (oder auch nicht...)
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/b-plan-9-34-152996.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/entwurf_des_bebauungsplans_9-34__.pdf
-#: XXX eine der Straﬂen kˆnnte nach Lucie Groﬂer benannt werden
-#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5199
-#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036760758214/760758214/00109569/69-Anlagen/03/B1097ZB1.pdf (oder auch nicht...)
-#: last_checked: 2015-08-01
-#: check_frequency: 360d
-Bebauungsplan 9-34: Planstraﬂen, Uferweg und Br¸cke werden entstehen	?::projected 22290,2172 22509,2330 22377,2489 22226,2633 22133,2666 22074,2656 22290,2172
+#: XXX Straﬂennamen fehlen alle in Berlin.coords.data vvv
+#: last_checked: 2015-08-01 vvv
+#: check_frequency: 360d vvv
+Planstraﬂe 1     -> Ankerweg	?::projected 22118,2559 22153,2582 22195,2610
+Planstraﬂe 2     -> Am Ruderverein	?::projected 22153,2482 22208,2514 22270,2549
+Planstraﬂe 3     -> Relingstr.	?::projected 22195,2390 22276,2426 22358,2460
+Planstraﬂe 4,5,7 -> Teichmummelring	?::projected 22246,2272 22418,2390 22454,2342 22271,2214
+#: XXX im Plan "Privatstraﬂe", im Amtsblatt "Planstraﬂe"
+Planstraﬂe 6     -> An der Dahme	?::projected 22195,2610 22270,2549 22358,2460
+Privatstraﬂe 1   -> An der Br¸cke (evtl. mit Gehweg zur Regattastr.)	?::projected 22195,2610 22109,2636
+Privatstraﬂe 2,3 -> Gaffelsteig	?::projected 22153,2582 22208,2514 22276,2426
+Br¸cke: entsteht hier eine Br¸cke; wird diese f¸r Radfahrer befahrbar sein?	?::projected 22358,2460 22418,2390
+Bebauungsplan 9-34: Planstraﬂen, _Uferweg_, Br¸cke und private Wasserfl‰che werden entstehen	?::projected 22290,2172 22509,2330 22377,2489 22226,2633 22133,2666 22074,2656 22290,2172
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
 # 
 # REMOVED (Betriebsgel‰nde) --- EUREF-Campus: existieren hier schon Straﬂen? Genaue Lage, Ausschilderung, Qualit‰t?	? 7178,8226 7263,8483
 # 
@@ -3652,7 +3676,7 @@ Altdˆbern - Calau: Qualit‰t?	? 55259,-83091 55388,-83077 55768,-82862 54521,-794
 #: XXX fehlen alle in Berlin.coords.data, PLZ=12623 vvv
 #: last_checked: 2015-08-02 vvv
 #: check_frequency: 180d vvv
-#: osm_watch: way id="338546084" version="3"
+#: osm_watch: way id="338546084" version="4"
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__21_vom_28__Mai_2010.pdf
 # REMOVED (-> strassen-orig) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/15re.pdf/file?y=2013 --- Bisamstr.: Qualit‰t? Wo wird die Straﬂe genau liegen?	?::projected 26463,13011 26427,12967 26394,12927 26362,12887 26328,12845 26195,12682 26315,12618 26201,12499
 Seidenschwanzstr.: Qualit‰t? Wo wird die Straﬂe genau liegen?	?::projected 26651,12941 26576,12848 26540,12804 26511,12768 26472,12720 26328,12845
