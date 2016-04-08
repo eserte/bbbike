@@ -415,6 +415,8 @@ sub showmap_url_openstreetmap {
     } elsif ($variant eq 'sautter') {
 	$with_marker = 0; # not implemented on sautter.com
 	$layers_spec = '&layers=B000000FTFFFFTFF';
+    } elsif (defined $args{layers}) {
+	$layers_spec = "&layers=$args{layers}";
     }
     my $mpfx = $with_marker ? 'm' : ''; # "marker prefix"
     my $base_url = (  $variant eq 'de'      ? 'http://www.openstreetmap.de/karte.html'
@@ -460,6 +462,10 @@ sub show_openstreetmap_menu {
     $link_menu->command
 	(-label => 'OpenStreetMap.org ' . ($lang eq 'de' ? '(mit Marker)' : '(with marker)'),
 	 -command => sub { showmap_openstreetmap(osmmarker => 1, %args) },
+	);
+    $link_menu->command
+	(-label => 'Cyclemap ' . ($lang eq 'de' ? '(mit Marker)' : '(with marker)'),
+	 -command => sub { showmap_openstreetmap(osmmarker => 1, layers => 'C', %args) },
 	);
     $link_menu->command
 	(-label => 'OpenStreetMap.de',
