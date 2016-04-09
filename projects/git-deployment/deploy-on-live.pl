@@ -45,6 +45,7 @@ my $do_switch = 1;
 my $do_init;
 my $test_jobs;
 my $skip_tests;
+my $log_dir;
 
 GetOptions(
 	   'root-deploy-dir=s' => \$root_deploy_dir,
@@ -53,8 +54,16 @@ GetOptions(
 	   'switch!'           => \$do_switch,
 	   'skip-tests'        => \$skip_tests,
 	   'init'              => \$do_init,
+	   'log-dir=s'         => \$log_dir,
 	  )
     or error "usage: $0 [--root-deploy-dir /path/to/dir] [--dry-run] [--test-jobs ...] [--skip-tests] [--no-switch]";
+
+if ($log_dir) {
+    my $log_file = $log_dir . '/bbbike_deploy_' . strftime('%FT%T', localtime) . '.log';
+    require File::Tee;
+    File::Tee::tee(\*STDOUT, '>>', $log_file);
+    File::Tee::tee(\*STDERR, '>>', $log_file);
+}
 
 print STDERR colored("Hopefully everything's already pushed to github", "yellow on_black"), "\n";
 print STDERR colored('Prerequisite checks, please stand by...', 'white on_red'), "\n";
