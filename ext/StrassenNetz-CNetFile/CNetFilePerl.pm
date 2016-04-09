@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001, 2002, 2007, 2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001, 2002, 2007, 2015, 2016 Slaven Rezic. All rights reserved.
 #
 # Mail: slaven@rezic.de
 # WWW:  http://bbbike.de
@@ -59,7 +59,7 @@ sub make_net {
     my $coord2ptr_cache_file = $cachefile . "_coord2ptr";
     $self->{CNetCoord2Ptr} = Strassen::Util::get_from_cache
 	($coord2ptr_cache_file, [$mmap_filename])
-	    or die "Should not happen: Cachefile " . Strassen::Util::get_cachefile($coord2ptr_cache_file) . " is not current and/or cannot be created";
+	    or die "Should not happen: Cachefile " . Strassen::Util::get_cachefile($coord2ptr_cache_file) . " is not current and/or cannot be created (maybe CDB_File is not installed?)";
     my $net2name_cache_file = $cachefile . "_net2name";
     $self->{Net2Name} = Strassen::Util::get_from_cache
 	($net2name_cache_file, [$mmap_filename])
