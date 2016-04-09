@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2013,2014,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2013,2014,2015,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ package BBBikeCGI::API;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.04';
+$VERSION = '0.05';
 
 use JSON::XS qw();
 
@@ -55,11 +55,11 @@ sub action_revgeocode {
 	$cr = join("/", @cr);
     }
     print $q->header(-type => 'text/plain', -access_control_allow_origin => '*');
-    print JSON::XS->new->ascii->encode({ crossing => $cr,
-					 bbbikepos => $xy,
-					 origlon => $lon,
-					 origlat => $lat,
-				       });
+    print JSON::XS->new->canonical->ascii->encode({ crossing => $cr,
+						    bbbikepos => $xy,
+						    origlon => $lon,
+						    origlat => $lat,
+						  });
 }
 
 sub action_config {
@@ -79,7 +79,7 @@ sub action_config {
     }
 
     $r->{modules_info} = \%modules_info;
-    print JSON::XS->new->ascii->encode($r);
+    print JSON::XS->new->canonical->ascii->encode($r);
 }
 
 # Module info can contain:
