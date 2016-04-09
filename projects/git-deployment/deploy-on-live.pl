@@ -28,7 +28,9 @@ sub sudo (@);
 sub error        ($) {  die colored($_[0], 'white on_red'), "\n" }
 sub error_no_die ($) { warn colored($_[0], 'white on_red'), "\n" }
 
-sub checked_chdir ($) { chdir $_[0] or error "Can't chdir to $_[0]: $!" }
+sub checked_chdir ($)  { chdir $_[0] or error "Can't chdir to $_[0]: $!" }
+sub mkdir_root    ($)  { if (!-d $_[0]) { sudo 'mkdir', $_[0] } }
+sub symlink_root  ($$) { if (!-l $_[1]) { sudo 'ln', '-snf', $_[0], $_[1] } }
 
 my $root_deploy_dir = '/root/work';
 my $live_symlink    = 'bbbike-webserver';
@@ -43,6 +45,8 @@ my $live_host     = 'localhost';
 my $dry_run;
 my $do_switch = 1;
 my $do_init;
+my $do_init_ext;
+my $do_init_other;
 my $test_jobs;
 my $skip_tests;
 my $log_dir;
@@ -54,6 +58,8 @@ GetOptions(
 	   'switch!'           => \$do_switch,
 	   'skip-tests'        => \$skip_tests,
 	   'init'              => \$do_init,
+	   'init-ext'          => \$do_init_ext,
+	   'init-other'        => \$do_init_other,
 	   'log-dir=s'         => \$log_dir,
 	  )
     or error "usage: $0 [--root-deploy-dir /path/to/dir] [--dry-run] [--test-jobs ...] [--skip-tests] [--no-switch]";
@@ -76,13 +82,9 @@ my $staging_dir = "$root_deploy_dir/$staging_symlink";
 my $red_dir     = "$root_deploy_dir/$red_basedir";
 my $blue_dir    = "$root_deploy_dir/$blue_basedir";
 
-if ($do_init) {
-    if ($dry_run) {
-	warn "NOTE: would run a series of initialization steps...\n";
-    } else {
-	init();
-    }
-}
+if ($do_init)       { init() }
+if ($do_init_ext)   { init_ext() } # XXX this should be done automatically, and be more efficient than now (i.e. only do something on changes)
+if ($do_init_other) { init_other() } # XXX this should be done automatically
 
 error "The 'red' directory '$red_dir' does not exist or is not a directory, please re-run with --init" if !-d $red_dir;
 error "The 'blue' directory '$blue_dir' does not exist or is not a directory, please re-run with --init" if !-d $blue_dir;
@@ -273,6 +275,10 @@ END {
 }
 
 sub init {
+    if ($dry_run) {
+	warn "NOTE: would run a series of initialization steps...\n";
+	return;
+    }
     if (!-d $root_deploy_dir) {
 	while() {
 	    print STDERR colored("Should the root directory be created? (y/n) ", 'white on_red');
@@ -287,10 +293,10 @@ sub init {
 	}
 	sudo 'mkdir', '-p', $root_deploy_dir;
     }
-    if (!-d $red_dir)     { sudo 'mkdir', $red_dir }
-    if (!-d $blue_dir)    { sudo 'mkdir', $blue_dir }
-    if (!-l $live_dir)    { sudo 'ln', '-snf', $red_basedir, $live_dir }
-    if (!-l $staging_dir) { sudo 'ln', '-snf', $blue_basedir, $staging_dir }
+    mkdir_root $red_dir;
+    mkdir_root $blue_dir;
+    symlink_root $red_basedir, $live_dir;
+    symlink_root $blue_basedir, $staging_dir;
     for ($red_dir, $blue_dir) {
 	sudo 'chgrp', 'adm', $_;
 	sudo 'chmod', 'g+rwx', $_;
@@ -319,6 +325,68 @@ sub init {
 		error "Not on expected branches master or online, but '$current_branch' (in $dir/BBBike)";
 	    }
 	}
+    }
+}
+
+sub init_ext {
+    if ($dry_run) {
+	warn "NOTE: would run initialization of ext modules...\n";
+	return;
+    }
+    for my $dir ($red_dir, $blue_dir) {
+	my $save_pw = save_pwd2();
+	checked_chdir "$dir/BBBike/ext";
+	run ['make', 'all']
+	    or die "Error while building ext modules";
+	run ['make', 'install']
+	    or die "Error while installing ext modules";
+    }
+}
+
+sub init_other {
+    if ($dry_run) {
+	warn "NOTE: would run initialization for cgi-bin, tmp, public...\n";
+	return;
+    }
+
+    for my $dir ($red_dir, $blue_dir) {
+	my $cgi_bin = "$dir/cgi-bin";
+	mkdir_root $cgi_bin;
+	my $save_pwd = save_pwd2();
+	checked_chdir $cgi_bin;
+	for my $file (qw(
+			    bbbike.cgi.config bbbike2.cgi.config bbbike-test.cgi.config
+			    bbbike-snapshot.cgi bbbike-data.cgi bbbike-teaser.pl
+			    mapserver_address.cgi mapserver_comment.cgi wapbbbike.cgi
+		       )) {
+	    symlink_root "../BBBike/cgi/$file", $file;
+	}
+	for my $file (qw(bbbike.cgi bbbike.en.cgi bbbike2.cgi bbbike2.en.cgi bbbike-test.cgi bbbike-test.en.cgi)) {
+	    symlink_root '../BBBike/cgi/bbbike.cgi', $file;
+	}
+	for my $file (qw(bbbikegooglemap.cgi bbbikegooglemap2.cgi)) {
+	    symlink_root '../BBBike/cgi/bbbikegooglemap.cgi', $file;
+	}
+	for my $file (qw(bbbikeleaflet.cgi bbbikeleaflet.en.cgi)) {
+	    symlink_root '../BBBike/cgi/bbbikeleaflet.cgi', $file;
+	}
+
+	mkdir_root "$dir/BBBike/tmp";
+	chmod 0777, "$dir/BBBike/tmp";
+
+	mkdir_root "$dir/BBBike/tmp/www";
+	chmod 0777, "$dir/BBBike/tmp/www";
+
+	mkdir_root "$root_deploy_dir/bbbike-persistent-data";
+	chmod 0755, "$root_deploy_dir/bbbike-persistent-data";
+
+	mkdir_root "$root_deploy_dir/bbbike-persistent-data/uaprof";
+	chmod 0777, "$root_deploy_dir/bbbike-persistent-data/uaprof";
+
+	symlink_root "$root_deploy_dir/bbbike-persistent-data/uaprof", "$dir/BBBike/tmp/uaprof";
+
+	mkdir_root "$dir/public";
+	symlink_root '../BBBike', "$dir/public/BBBike";
     }
 }
 
@@ -405,4 +473,3 @@ __END__
 # messages will tell so otherwise)
 #
 # XXX Maybe do some changes to the online branch (html/newstreetform* changes, ignoring t/.prove)
-# XXX "cd ext && make all install" is not done automatically, but probably should.
