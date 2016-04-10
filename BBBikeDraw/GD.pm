@@ -721,22 +721,19 @@ sub draw_map {
 			my $ort = $s->[Strassen::NAME];
 			# Anhängsel löschen (z.B. "b. Berlin")
 			$ort =~ s/\|.*$//;
+			my @pos_args;
 			if ($type eq 'oc') {
-			    $self->outline_text
-				($ort_font{$cat} || $self->{GD_Font}->Small,
-				 $x, $y,
-				 $self->patch_string($ort), $black, $grey_bg,
-				 -anchor => "c",
-				);
+			    @pos_args = (-anchor => "c");
 			} else {
 			    $im->arc($x, $y, 3, 3, 0, 360, $black);
-			    $self->outline_text
-				($ort_font{$cat} || $self->{GD_Font}->Small,
-				 $x, $y,
-				 $self->patch_string($ort), $black, $grey_bg,
-				 -padx => 4, -pady => 4,
-				);
+			    @pos_args = (-padx => 4, -pady => 4);
 			}
+			$self->outline_text
+			    ($ort_font{$cat} || $self->{GD_Font}->Small,
+			     $x, $y,
+			     $self->patch_string($ort), $black, $grey_bg,
+			     @pos_args,
+			    );
 		    }
 		}
 	    }
