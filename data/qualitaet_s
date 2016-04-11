@@ -2,7 +2,7 @@
 #: title: Qualität der Straßen in Berlin
 #: note: XXX_* categorization done 2008-01-26
 #:
-Dieselstr., Umfahrung: Feinschotter	Q1 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112
+Dieselstr., Umfahrung: Asphalt mit Rollsplit	Q1 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112
 Dieselstr., Umfahrung: Asphalt	Q0 14419,8112 14429,8074
 Dieselstr., Umfahrung: unbefestigt	Q2 14429,8074 14471,8046
 Mozartstr.: Kopfsteinpflaster	Q3 10257,-2654 10392,-2980 10462,-3149
@@ -97,7 +97,7 @@ Herrfurthplatz: mäßiges Kopfsteinpflaster	Q2 11647,7940 11671,7904 11713,7899 11
 Feurigstr.: mäßiges Kopfsteinpflaster	Q2 7497,8916 7467,8863 7389,8837
 Feurigstr.: mäßiges Kopfsteinpflaster	Q2 7086,8579 7012,8511 6807,8309
 Herbertstr.: Kopfsteinpflaster	Q2 7360,8918 7389,8837 7402,8783
-Ebersstr.: Kopfsteinpflaster	Q2 7395,8761 7313,8661 7288,8635
+Ebersstr.: Fahrbahn Kopfsteinpflaster, Radweg asphaltiert	Q0 7395,8761 7313,8661 7288,8635
 Ebersstr.: Kopfsteinpflaster	Q2 7242,8586 7166,8487
 Gleditschstr.: Kopfsteinpflaster, OK	Q1 7126,9825 7080,10098
 Gleditschstr.: mäßiges Kopfsteinpflaster, mäßige Radwege	Q1 7126,9825 7128,9512 7130,9316
@@ -732,7 +732,7 @@ Sangerhauser Weg: Verbundsteine	Q1 10748,2412 10933,2606 10939,2642 11005,2726 1
 Alt-Britz: schlechtes Kopfsteinpflaster	Q3 12564,4308 12594,4324 12678,4389 12836,4649 12905,4761 13018,5071
 Bendastr.: asphaltiert	Q0 12689,6905 12702,6846
 Bendastr.: asphaltiert	Q0 12702,6846 12715,6775 12722,6748 12726,6727 12743,6645
-Bendastr.: asphaltiert	Q0 12743,6645 12759,6563 12782,6462 12793,6407 12804,6377
+Bendastr.: asphaltiert	Q0 12743,6645 12759,6563 12782,6462 12794,6407 12801,6377
 Ilsestr.: Asphalt	Q0 12664,7013 12645,7087 12632,7137 12613,7236 12601,7284 12585,7357 12561,7472
 Ilsenhof: kleinteiliges Kopfsteinpflaster	Q1 12601,7284 12465,7250
 Jonasstr.: Kopfsteinpflaster	Q2 12221,7271 12396,7312 12585,7357
@@ -1714,7 +1714,7 @@ Wattstr. (Oberschöneweide): sehr schlechtes Kopfsteinpflaster	Q3 17620,7260 1764
 Wattstr. (Oberschöneweide): mit Teer verfugtes Kopfsteinpflaster	Q2 17632,6930 17652,6828 17766,6616
 Karl-Elsasser-Str.: Asphalt	Q0 11943,5825 12063,5927 12160,5997 12271,6025
 Andreasberger Str.: Kopfsteinpflaster	Q2 12053,6185 12053,6042 12063,5927
-Ellricher Str.: Kopfsteinpflaster	Q2 12246,6227 12128,6201 12053,6185
+Ellricher Str.: Kopfsteinpflaster	Q2 12242,6234 12127,6204 12053,6185
 Sangeallee: Asphalt	Q0 18457,9343 18319,9218 18247,9158
 Sangeallee: mäßiger Asphalt	Q2 18247,9158 18134,9080
 Dorotheastr.: schlechtes Kopfsteinpflaster	Q3 18319,9218 18347,9145 18406,9052 18471,8957 18548,8942 18653,8922 18770,8898
@@ -9203,6 +9203,8 @@ Lutterbacher Str.: Asphalt	Q0 2094,3231 1993,3170 2072,3034 2163,3092
 Lynarstr.: Asphalt	Q0 2074,9225 1937,9253
 Johannaplatz: Asphalt	Q0 2132,9267 2074,9225 2098,9173 2165,9155 2193,9195
 Kietzgrabensteg: Asphalt/Beton	Q0 22514,4632 22531,4605
+Weg über Autobahntunnel: Gehwegplatten & wassergebundene Decke	Q0 11818,6201 12040,6239 12235,6276
+Mergenthalerring: schlechtes Kopfsteinpflaster	Q3 14121,8147 14210,8227 14219,8260
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -11106,7 +11108,7 @@ Symeonstr.: Asphalt	Q0 7630,1297 7501,1246
 Illstr.: Asphalt	Q0 5674,6834 5644,6936
 Lauterberger Str.: schlechtes Kopfsteinpflaster	Q3 12177,5746 12168,5855 12160,5997
 Lauterberger Str.: Asphalt	Q0 12160,5997 12154,6063
-Lauterberger Str.: Kopfsteinpflaster	Q2 12154,6063 12128,6201
+Lauterberger Str.: Kopfsteinpflaster	Q2 12154,6063 12127,6204
 Waldkraiburger Str.: Asphalt	Q0 12626,5057 12492,4995 12283,4971
 Illerzeile: mäßiger Asphalt	Q1 2704,20031 2659,20080 2567,20239 2541,20313 2530,20345 2515,20399
 Büdnerring: guter Beton	Q0 7861,18333 7997,18524 8066,18632 8063,18659 8037,18673 7926,18665 7892,18603 7902,18575 7997,18524
@@ -15515,7 +15517,7 @@ Schirnerstr.: Beton	Q1 20751,566 20846,681 20960,819
 Schirnerstr.: schlechtes Kopfsteinpflaster	Q3 20960,819 21047,927 21278,1205
 Preußenstr.: Asphalt	Q0 21202,727 21136,815 21047,927
 Germaniapromenade: guter Asphalt	Q0 12154,6063 12263,6086 12388,6114 12503,6139 12628,6166
-Friedrichsbrunner Str.: schlechtes Kopfsteinpflaster	Q3 12246,6227 12263,6086
+Friedrichsbrunner Str.: schlechtes Kopfsteinpflaster	Q3 12242,6234 12263,6086
 Friedrichsbrunner Str.: Asphalt	Q0 12263,6086 12271,6025
 Friedrichsbrunner Str.: schlechtes Kopfsteinpflaster	Q3 12271,6025 12284,5929 12301,5783
 Braunlager Str.: mäßiges Kopfsteinpflaster	Q2 12062,5779 12168,5855

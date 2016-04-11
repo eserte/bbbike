@@ -1110,6 +1110,8 @@ Paul-Koenig-Str.	1 17268,16526 17312,16498 17304,16485 17293,16469 17251,16497 1
 Am Lehnshof	1s:q3 4291,22986 4264,22992 4202,23034
 (Ebersstr./Autobahnauffahrt)	1 6443,7971 6388,7999
 (Ebersstr./Autobahnabfahrt)	1 6409,8026 6480,7992
+#: note: beim Pförtner anmelden
+EUREF-Campus: Privatgelände	2 7158,8208 7149,8249 7316,8509
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1269,6 +1271,8 @@ Mehrow - Trappenfelde	1 24743,18606 24709,18578
 Mehrow - Trappenfelde	1 24696,18606 24743,18606
 Ohmstr. (Schwanebeck-West)	1 18039,24940 18127,25162
 Sankt Petri	1s:q3 -46334,-150 -46304,-19
+#: by: osm
+B1: für Radfahrer gesperrt	2 -56115,-457 -56519,-664 -56682,-676 -56922,-672 -57133,-779 -57283,-993 -57410,-1097
 ######################################################################
 # elsewhere not in Brandenburg
 B104: Mittelstreifen nicht überquerbar	3nocross -974,128015 -724,127995 6,127935 298,127911
@@ -2070,6 +2074,7 @@ Treppe	0:40 1888,42795
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke, gut umfahrbar	BNP:0::trailer=3 8243,9766
 #: note: etwas weiter als üblich
 Drängelgitter	BNP:2::trailer=8 4140,2706
 Drängelgitter	BNP:3::trailer=10 7886,8335
@@ -2079,7 +2084,7 @@ Schranke	BNP:3::trailer=10 5296,11529
 # 
 #: next_check_id: DIESEL-2015 vvv
 #: note: mittlerweile gibt es hier auch zwei Baustellenampeln mit Anforderung, allerdings wird relativ schnell auf grün geschaltet vvv
-#: last_checked: 2016-04-05 vvv
+#: last_checked: 2016-04-11 vvv
 #: check_frequency: 60d vvv
 Drängelgitter	BNP:5::trailer=10 14364,8096
 Drängelgitter	BNP:5::trailer=10 14405,8115
@@ -2780,7 +2785,7 @@ Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,1
 #: next_check_id ^^^
 # 
 #: next_check_id: DIESEL-2015
-#: last_checked: 2016-04-05
+#: last_checked: 2016-04-11
 #: check_frequency: 60d
 Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 14471,8046
 # 
@@ -2832,7 +2837,7 @@ Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17651,-393
 #: source_id: IM_023816 vvv
 #: source_id: 2147339541 vvv
 #: XXX vermutlich bis März 2016 andauernd, laut Schild bis Februar 2016, laut fritz bis 29.04.2016
-#: last_checked: 2016-04-04 vvv
+#: last_checked: 2016-04-11 vvv
 #: check_frequency: 30d vvv
 Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081
 Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081

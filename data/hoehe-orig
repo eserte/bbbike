@@ -338,8 +338,6 @@
 36.0	X 9334,9670
 33.5	X 8192,9619
 38.7	X 8186,9380
-#: note: Nachbarpunkte + gleichmäßige Steigung
-39.8	X 8185,9338
 #: note: grobe Abschätzung mit Barometer + Nachbarpunkten
 40.0	X 8175,8815
 45.9	X 8180,9099
@@ -767,7 +765,7 @@
 32.0	X -1621,3972
 # unsicher, da ein vier Meter niedrigerer Höhenpunkt gleich daneben liegt, aber MichaelM meinte zum Abschnitt des Röthewegs "steil"
 45.1	X -1488,3750
-47.2	X 12128,6201
+47.2	X 12127,6204
 45.7	X 12154,6063
 44.5	X 12063,5927
 42.6	X 11943,5825
@@ -1731,7 +1729,7 @@
 47.4	X 12510,6508
 44.7	X 12759,6563
 44.5	X 12782,6462
-44.1	X 12793,6407
+44.1	X 12794,6407
 43.5	X 12921,6424
 #: note: per Barometer, Referenz ist 12921,6424 vvv
 44.0	X 12904,6488
@@ -2266,6 +2264,9 @@
 #: note ^^^
 ######################################################################
 # manuell aus 1:5k bw (resp. bbpl fk):
+39.4	X 8207,9324
+#: note: Nachbarpunkte
+39.4	X 8185,9338
 40.8	X 11868,13646
 #: note: geschätzt:
 40	X 11785,13625

@@ -810,6 +810,7 @@ Paul-Koenig-Str.	1 17268,16526 17312,16498 17304,16485 17293,16469 17251,16497 1
 Am Lehnshof	1s 4291,22986 4264,22992 4202,23034
 (Ebersstr./Autobahnauffahrt)	1 6443,7971 6388,7999
 (Ebersstr./Autobahnabfahrt)	1 6409,8026 6480,7992
+EUREF-Campus: Privatgelände	2 7158,8208 7149,8249 7316,8509
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -944,6 +945,7 @@ Mehrow - Trappenfelde	1 24743,18606 24709,18578
 Mehrow - Trappenfelde	1 24696,18606 24743,18606
 Ohmstr. (Schwanebeck-West)	1 18039,24940 18127,25162
 Sankt Petri	1s -46334,-150 -46304,-19
+B1: für Radfahrer gesperrt	2 -56115,-457 -56519,-664 -56682,-676 -56922,-672 -57133,-779 -57283,-993 -57410,-1097
 Mittelstreifen nicht überquerbar	3nocross::ignrte -974,128015 -724,127995 6,127935 298,127911
 B104: Neubrandenburg -> Feldstr.: Mittelstreifen nicht überquerbar	3::igndisp -974,128015 -724,127995 -719,128043
 Feldstr. -> Pasewalk: Mittelstreifen nicht überquerbar	3::igndisp -719,128043 -724,127995 6,127935
@@ -2380,6 +2382,7 @@ tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
 tragen (6 Stufen)	0:15:-90 4608,63927
 Treppe	0:40:-131 1888,42795
+Schranke, gut umfahrbar	BNP:0:-160:trailer=3 8243,9766
 Drängelgitter	BNP:2:-51:trailer=8 4140,2706
 Drängelgitter	BNP:3:-76:trailer=10 7886,8335
 Drängelgitter	BNP:3:-75:trailer=10 7911,8329

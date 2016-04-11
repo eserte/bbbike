@@ -13,7 +13,7 @@
 #: source_id: 2147339819	
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.415646.php
 #: XXX laut vmz bis Mitte Mai 2016, laut fritz bis 13.05.2016
-#: last_checked: 2016-04-03 vvv
+#: last_checked: 2016-04-11 vvv
 #: valid: -20160513 vvv
 Wühlischstr.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 14575,11407 14674,11370
 Wühlischstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14674,11370 14737,11347 14759,11339 14771,11345
@@ -91,7 +91,7 @@ Michaelkirchplatz: direkte Durchfahrt am Engeldamm gesperrt, Umweg erforderlich	
 # REMOVED (zwar noch Einbahnstraße, aber man kann mittlerweile relativ gut vorbei) --- #: XXX bis wann dauert die Sperrung an? Wird die Straße dann asphaltiert sein? (siehe auch Änderung in qualitaet_s-orig, "provisorischer Asphalt") --- #: last_checked: 2016-03-17 --- Leuschnerdamm: Sperrung der Fahrbahn Richtung Michaelkirchplatz	q4::inwork; 11458,11136 11473,11180
 # 
 #: XXX nach den Bauarbeiten bessere Qualität?
-#: last_checked: 2016-04-06
+#: last_checked: 2016-04-11
 Melchiorstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 11542,11342 11726,11265 11921,11185
 # 
 # REMOVED (nicht mehr gesperrt für Radfahrer) --- #: XXX nochmal genauer anschauen... --- #: last_checked: 2014-11-10 --- Gipsstr.: Bauarbeiten zwischen Rosenthaler Str. und Joachimstr., Einbahnstraße	q2::inwork; 10350,13376 10199,13446
@@ -2204,8 +2204,7 @@ Kelheimer Str.: einige Fußgänger	q2 5894,10287 5898,10318
 #: XXX_prog BS am Wendehammer, ansonsten q2
 Würzburger Str.: einige Fußgänger, Bordstein	q3 5898,10318 5907,10347
 Wilhelm-Hoff-Str.: einige Fußgänger, kurvig	q1 19057,3422 19033,3397
-Bürgerstr. - Bendastr.: einige Fußgänger	q1 12830,6254 12813,6334 12812,6343
-Bürgerstr. - Bendastr.: einige Fußgänger, Umfahrung Treppe	q2 12812,6343 12804,6377
+Bürgerstr. - Bendastr.: einige Fußgänger	q1 12830,6254 12813,6334 12812,6343 12810,6348 12792,6358 12801,6377
 (Uranusweg - U-Bhf. Scharnweberstr.): Fußgänger	q2 4280,17551 4243,17570 4240,17584 3959,17714 3987,17808
 (U-Bhf. Scharnweberstr. - Scharnweberstr.): U-Bahnhof, Türen	q4 3987,17808 3997,17840
 (U-Bhf. Scharnweberstr. - Scharnweberstr.): Fußgänger	q2 3997,17840 4015,17912
@@ -2286,6 +2285,7 @@ Nordsternstr.: Feuerwehrzufahrt	q2 6268,8884 6292,8899
 #: XXX_prog BS am Wendehammer, ansonsten q2
 Finckensteinallee: Fußgänger, Bordstein	q3 4115,2726 4140,2706 4170,2727
 Kietzgrabensteg: einige Fußgänger	q1 22514,4632 22531,4605
+Brücke über den Britzer Damm: Rampe, enge Kurven	q2 12637,6309 12630,6326 12605,6322 12619,6310
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

@@ -10,10 +10,9 @@
 # REMOVED (Bauarbeiten beendet) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5898 --- #: note: oder man fährt auf dem mit zahlreichen Engstellen zugestellten Radweg, muss dann aber ggfs. warten --- #: last_checked: 2014-03-21 --- #: valid: -20140523 --- Bergmannstr.: während der Bauarbeiten zwischen Heim- und Friesenstr. Umleitung über gepflasterte Fahrbahn	Q2 9973,9232 9880,9233 9793,9241
 # 
 #: next_check_id: DIESEL-2015 vvv
-#: last_checked: 2016-02-03 vvv
+#: last_checked: 2016-04-11 vvv
 #: check_frequency: 60d vvv
-#: note: könnte auch Asphalt mit hartnäckigem Rollsplit sein, nicht zu erkennen
-Dieselstr., Umfahrung: Feinschotter	Q1 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112
+Dieselstr., Umfahrung: Asphalt mit Rollsplit	Q1 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112
 Dieselstr., Umfahrung: Asphalt	Q0 14419,8112 14429,8074
 #: XXX_osm laut osm Asphalt, hier aber nicht!
 Dieselstr., Umfahrung: unbefestigt	Q2 14429,8074 14471,8046
@@ -150,8 +149,9 @@ Herrfurthstr.: Asphalt	Q0 11647,7940 11573,7924 11472,7899
 Herrfurthplatz: mäßiges Kopfsteinpflaster	Q2 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
 Feurigstr.: mäßiges Kopfsteinpflaster	Q2 7497,8916 7467,8863 7389,8837
 Feurigstr.: mäßiges Kopfsteinpflaster	Q2 7086,8579 7012,8511 6807,8309
+#: XXX liegt hier noch Kopfsteinpflaster?
 Herbertstr.: Kopfsteinpflaster	Q2 7360,8918 7389,8837 7402,8783
-Ebersstr.: Kopfsteinpflaster	Q2 7395,8761 7313,8661 7288,8635
+Ebersstr.: Fahrbahn Kopfsteinpflaster, Radweg asphaltiert	Q0 7395,8761 7313,8661 7288,8635
 Ebersstr.: Kopfsteinpflaster	Q2 7242,8586 7166,8487
 Gleditschstr.: Kopfsteinpflaster, OK	Q1 7126,9825 7080,10098
 Gleditschstr.: mäßiges Kopfsteinpflaster, mäßige Radwege	Q1 7126,9825 7128,9512 7130,9316
@@ -160,7 +160,7 @@ Corneliusstr.: mäßiges Kopfsteinpflaster	Q2 6880,11110 6841,11114 6630,11247 647
 Kopernikusstr.: mäßiges Kopfsteinpflaster	Q2 13467,11778 13651,11731
 Torellstr.: mäßiges Kopfsteinpflaster	Q2 13295,11792 13467,11778
 #: XXX Bauarbeiten, danach vielleicht teilweise bessere Qualität?
-#: last_checked: 2016-04-07
+#: last_checked: 2016-04-11
 #: check_frequency: 60d
 Rüdersdorfer Str.: Asphalt mit Schäden	Q1- 13295,11792 13173,11788 13066,11854
 Kaskelstr.: relative glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
@@ -902,7 +902,7 @@ Alt-Britz: schlechtes Kopfsteinpflaster	Q3 12564,4308 12594,4324 12678,4389 1283
 Bendastr.: asphaltiert	Q0 12689,6905 12702,6846
 #: by: Gabi Sieber (confirmed):
 Bendastr.: asphaltiert	Q0 12702,6846 12715,6775 12722,6748 12726,6727 12743,6645
-Bendastr.: asphaltiert	Q0 12743,6645 12759,6563 12782,6462 12793,6407 12804,6377
+Bendastr.: asphaltiert	Q0 12743,6645 12759,6563 12782,6462 12794,6407 12801,6377
 Ilsestr.: Asphalt	Q0 12664,7013 12645,7087 12632,7137 12613,7236 12601,7284 12585,7357 12561,7472
 Ilsenhof: kleinteiliges Kopfsteinpflaster	Q1 12601,7284 12465,7250
 Jonasstr.: Kopfsteinpflaster	Q2 12221,7271 12396,7312 12585,7357
@@ -2049,7 +2049,7 @@ Wattstr. (Oberschöneweide): mit Teer verfugtes Kopfsteinpflaster	Q2- 17632,6930 
 #: confirmed_by: srt
 Karl-Elsasser-Str.: Asphalt	Q0 11943,5825 12063,5927 12160,5997 12271,6025
 Andreasberger Str.: Kopfsteinpflaster	Q2 12053,6185 12053,6042 12063,5927
-Ellricher Str.: Kopfsteinpflaster	Q2 12246,6227 12128,6201 12053,6185
+Ellricher Str.: Kopfsteinpflaster	Q2 12242,6234 12127,6204 12053,6185
 #: corrected_by: srt (Asphalt, mit einigen schadhaften Stellen -> Richtung Südwesten unangenehmes Kopfsteinpflaster -> neu gemachter Asphalt)
 Sangeallee: Asphalt	Q0 18457,9343 18319,9218 18247,9158
 Sangeallee: mäßiger Asphalt	Q2+ 18247,9158 18134,9080
@@ -6975,7 +6975,7 @@ Bebelplatz: gepflastert	Q1 9674,12231 9702,12307 9734,12395
 (Park am Gleisdreieck, Eingang Kurfürstenstr.): Beton	Q0 8058,10306 8180,10282 8253,10265
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): wassergebundene Decke	Q1 8263,10187 8276,10079
 #: next_check_id: HELLWEG-2014 vvv
-#: last_checked: 2016-03-02 vvv
+#: last_checked: 2016-04-11 vvv
 #: check_frequency: 100d vvv
 #: XXX wird hier noch eine wassergebundene Decke erstellt?
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): unbefestigt	Q2 8276,10079 8289,9988
@@ -10024,6 +10024,8 @@ Lutterbacher Str.: Asphalt	Q0 2094,3231 1993,3170 2072,3034 2163,3092
 Lynarstr.: Asphalt	Q0 2074,9225 1937,9253
 Johannaplatz: Asphalt	Q0 2132,9267 2074,9225 2098,9173 2165,9155 2193,9195
 Kietzgrabensteg: Asphalt/Beton	Q0 22514,4632 22531,4605
+Weg über Autobahntunnel: Gehwegplatten & wassergebundene Decke	Q0- 11818,6201 12040,6239 12235,6276
+Mergenthalerring: schlechtes Kopfsteinpflaster	Q3+ 14121,8147 14210,8227 14219,8260
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -14453,7 +14455,7 @@ Illstr.: Asphalt	Q0 5674,6834 5644,6936
 Lauterberger Str.: schlechtes Kopfsteinpflaster	Q3 12177,5746 12168,5855 12160,5997
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Lauterberger Str.: Asphalt	Q0 12160,5997 12154,6063
-Lauterberger Str.: Kopfsteinpflaster	Q2 12154,6063 12128,6201
+Lauterberger Str.: Kopfsteinpflaster	Q2 12154,6063 12127,6204
 #: by: ^^^
 # 
 #: by: Sven Voss:
@@ -25595,7 +25597,7 @@ Germaniapromenade: guter Asphalt	Q0 12154,6063 12263,6086 12388,6114 12503,6139 
 # 
 #: by: Anke Busse vvv
 #: confirmed_by: srt
-Friedrichsbrunner Str.: schlechtes Kopfsteinpflaster	Q3 12246,6227 12263,6086
+Friedrichsbrunner Str.: schlechtes Kopfsteinpflaster	Q3 12242,6234 12263,6086
 #: confirmed_by: srt
 Friedrichsbrunner Str.: Asphalt	Q0 12263,6086 12271,6025
 #: confirmed_by: srt
