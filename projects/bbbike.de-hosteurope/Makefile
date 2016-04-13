@@ -238,10 +238,6 @@ BBBIKECGI=		bbbike.cgi
 BBBIKECGI=		bbbike2.cgi
 .endif
 
-.ifndef TARGET_OS_DIST
-TARGET_OS_DIST=		unknown
-.endif
-
 .ifdef TARGET
 .include "${BBBIKE_ROOT_DIR}/mapserver/brb/Makefile.${TARGET}.inc"
 .endif
@@ -615,10 +611,6 @@ prepare-mapserver-dist-main:
 	cd ${BBBIKE_ROOT_DIR}/mapserver/brb && \
 	    ${MAKE} dist-any TARGET=${MAPSERVER_TARGET}
 	rm -f ${BBBIKE_ROOT_DIR}/mapserver/brb/brb.map-localinc
-.if ${TARGET_OS_DIST} == "linux-debian"
-	perl -i -pe 's{^(\S+\s+)(.*)}{$$1/usr/share/fonts/truetype/ttf-bitstream-vera/Vera.ttf}' \
-	    /tmp/radzeit_mapserver_dist/fonts-radzeit.list
-.endif
 	cp -Rpf /tmp/radzeit_mapserver_dist/* ${CURDIR}/$(HTDOCS)/mapserver/brb/
 	rm -f ${CURDIR}/.not_rsyncable
 

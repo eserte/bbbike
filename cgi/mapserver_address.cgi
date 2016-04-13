@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2014,2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -24,11 +24,7 @@ use FindBin;
 use vars qw($BBBIKE_ROOT $BBBIKE_URL);
 BEGIN { # XXX do not hardcode
     $ENV{SERVER_NAME} ||= "";
-    if ($ENV{SERVER_NAME} eq 'radzeit.herceg.de') {
-	$BBBIKE_ROOT = "/home/e/eserte/src/bbbike/projects/www.radzeit.de/BBBike";
-	$BBBIKE_URL = "/BBBike";
-	@Strassen::datadirs = "$BBBIKE_ROOT/data";
-    } elsif ($ENV{SERVER_NAME} eq 'bbbike.hosteurope.herceg.de') {
+    if ($ENV{SERVER_NAME} eq 'bbbike.hosteurope.herceg.de') {
 	$BBBIKE_ROOT = "/home/e/eserte/src/bbbike/projects/bbbike.de-hosteurope/BBBike";
 	$BBBIKE_URL = "/BBBike";
 	@Strassen::datadirs = "$BBBIKE_ROOT/data";
@@ -39,14 +35,6 @@ BEGIN { # XXX do not hardcode
 	    ) {
 	$BBBIKE_ROOT = "/root/work/bbbike-webserver/BBBike";
 	$BBBIKE_URL = "/BBBike";
-    } elsif ($ENV{SERVER_NAME} =~ /radzeit/i) {
-	if (-d "/var/www/domains/radzeit.de/www/BBBike") {
-	    $BBBIKE_ROOT = "/var/www/domains/radzeit.de/www/BBBike";
-	} else {
-	    $BBBIKE_ROOT = "/usr/local/apache/radzeit/BBBike";
-	}
-	$BBBIKE_URL = "/BBBike";
-	#$BBBIKE_ROOT = "/usr/local/apache/radzeit/BBBike2";
     } else {
 	$BBBIKE_ROOT = "$FindBin::RealBin/..";
 	$BBBIKE_URL = "/bbbike";
