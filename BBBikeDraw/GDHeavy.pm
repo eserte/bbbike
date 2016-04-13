@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: GDHeavy.pm,v 1.6 2005/02/25 01:35:43 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2004,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +16,7 @@ package BBBikeDraw::GDHeavy;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.07';
 
 package BBBikeDraw::GD;
 use Strassen::Core;
@@ -223,13 +222,13 @@ sub draw_custom_places {
     while(1) {
 	my $s = $p->next_obj;
 	last if $s->is_empty;
-	my $cat = $s->category;
-	my($x0,$y0) = @{$s->coord_as_list(0)};
-	my($x, $y) = &$transpose(@{$s->coord_as_list(0)});
 	my $ort = $s->name;
 	# Anhängsel löschen (z.B. "b. Berlin")
 	$ort =~ s/\|.*$//;
 	next if !exists $mapping{$ort};
+	my $cat = $s->category;
+	my($x0,$y0) = @{$s->coord_as_list(0)};
+	my($x, $y) = &$transpose(@{$s->coord_as_list(0)});
 	$im->arc($x, $y, 3, 3, 0, 360, $BBBikeDraw::GD::black);
 	$self->outline_text
 	    ($ort_font{$cat} || &GD::Font::Small,
