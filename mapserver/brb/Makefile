@@ -128,7 +128,7 @@ BBBIKECGI_CONFIG=	$(ABS_LOCAL_BBBIKE_DIR)/cgi/bbbike.cgi.config
 BBBIKECGI_CONFIG_LOCAL=	$(BBBIKECGI_CONFIG)
 BBBIKE_URL=		http://$(HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
 # Which kind of images should be generated:
-IMAGE_SUFFIX=		gif # was: png					# ***
+IMAGE_SUFFIX=		png						# ***
 # File with the font mapping for this host:
 .if exists(/etc/debian_version)
 FONTS_LIST?=		fonts-debian.list
