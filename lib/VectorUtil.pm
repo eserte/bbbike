@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2001,2004,2008,2010,2011,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2001,2004,2008,2010,2011,2014,2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,13 +15,13 @@ package VectorUtil;
 
 use strict;
 use vars qw($VERSION $VERBOSE @ISA @EXPORT_OK);
-$VERSION = 1.24;
+$VERSION = 1.25;
 
 require Exporter;
 @ISA = 'Exporter';
 
 @EXPORT_OK = qw(vector_in_grid project_point_on_line distance_point_line
-		get_polygon_center
+		distance_point_rectangle get_polygon_center
 		point_in_grid point_in_polygon move_point_orthogonal
 		intersect_rectangles enclosed_rectangle normalize_rectangle
 		azimuth offset_line bbox_of_polygon combine_bboxes
@@ -170,6 +170,26 @@ sub distance_point_line {
 	    $dist1;
 	}
     }
+}
+
+# in: point ($px,$py)
+#     rectangle ($left,$top,$right,$bottom)
+# out: minimum distance from point to rectangle outline
+sub distance_point_rectangle {
+    my($px,$py,$left,$top,$right,$bottom) = @_;
+    my $dist;
+    for my $line_def (
+		      [$left,$top,$right,$top],
+		      [$right,$top,$right,$bottom],
+		      [$right,$bottom,$left,$bottom],
+		      [$left,$bottom,$left,$top],
+		     ) {
+	my $this_dist = distance_point_line($px,$py,@$line_def);
+	if (!defined $dist || $this_dist < $dist) {
+	    $dist = $this_dist;
+	}
+    }
+    $dist;
 }
 
 # Return the approximated center of an polygon.

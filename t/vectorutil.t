@@ -24,7 +24,7 @@ use Getopt::Long;
 use BBBikeTest qw(is_float);
 use Strassen::Util qw();
 
-plan tests => 27;
+plan tests => 31;
 
 my $do_bench;
 my $do_xxx;
@@ -37,7 +37,7 @@ GetOptions(
 # note: additional tests in ext/VectorUtil-Inline/t
 use VectorUtil qw(intersect_rectangles normalize_rectangle
 		  enclosed_rectangle bbox_of_polygon combine_bboxes
-		  distance_point_line project_point_on_line
+		  distance_point_line distance_point_rectangle project_point_on_line
 		  offset_line triangle_area triangle_area_by_lengths);
 
 goto XXX if $do_xxx;
@@ -127,6 +127,13 @@ goto XXX if $do_xxx;
 	# project_point_on_line + distance  86993/s                               --                -31%
 	# distance_point_line              125604/s                              44%                  --
     }
+}
+
+{
+    is_float distance_point_rectangle(0,0, 2,0,4,2), 2, 'distance_point_rectangle check, point to the left';
+    is_float distance_point_rectangle(6,0, 2,0,4,2), 2, 'distance_point_rectangle check, point to the right';
+    is_float distance_point_rectangle(3,-2, 2,0,4,2), 2, 'distance_point_rectangle check, point to the bottom';
+    is_float distance_point_rectangle(1,3, 2,0,4,2), sqrt(2), 'distance_point_rectangle check, diagonal';
 }
 
 {
