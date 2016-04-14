@@ -28,6 +28,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 Alte Jakobstr.: Bauarbeiten, teilweise Einbahnstraﬂe	q3::inwork; 10256,11160 10437,11352
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10624,11548 10640,11564
+Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10437,11352 10489,11405
 Weichselplatz: Bauarbeiten, Gehweg benutzen	q4::inwork 12761,9190 12851,9309 12844,9351
 Dieselstr., Umfahrung: Fuﬂg‰nger, kurvig, eng	q2::inwork 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112 14429,8074 14471,8046
 Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung S¸den auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12753,8187 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785 12969,7610
@@ -119,7 +120,8 @@ Tiergarten: einige Fuﬂg‰nger	q1 8571,11846 8501,11815 8244,11878 8221,11885 8132
 Tiergarten: einige Fuﬂg‰nger	q1 8172,11679 8210,11775 8244,11878 8327,12174 8344,12221 8391,12389 8400,12417
 (Bremer Weg - Fasanerieallee): Parkweg	q1 6337,11887 6379,11843 6406,11784 6452,11778 6540,11754
 (zum Rosengarten): einige Fuﬂg‰nger	q1 7026,12054 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
-Parkweg: enge Br¸cke, Fuﬂweg	q2 14318,9688 14361,9772 14404,9847 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
+Parkweg: w‰hrend der Bauarbeiten relativ eng	q3::inwork 14318,9688 14361,9772 14404,9847 14448,9922
+Parkweg: enge Br¸cke, Fuﬂweg	q2 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
 Hasenheide: Fuﬂg‰nger	q1 11266,8336 11275,8387 11282,8428 11279,8489 11255,8591 11182,8983 11141,9107 11136,9183
 Hasenheide: Fuﬂg‰nger	q1 11141,9107 11115,9100 11098,9046 11100,8974 11137,8738 11193,8568 11235,8454 11230,8402 11225,8350
 Hasenheide: Fuﬂg‰nger	q1 11182,8983 11137,8979 11100,8974

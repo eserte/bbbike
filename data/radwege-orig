@@ -1513,7 +1513,8 @@ die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
 #: check_frequency: 30d
 	RW0;RW0 14674,10811 14717,10855
 	RW1;RW1 14652,10201 14688,10167 14705,10149 14747,10108 14817,10031
-	RW1;RW1 13829,9905 13884,9882 13995,9834 14193,9746
+	RW0;RW1 13829,9905 13884,9882
+	RW1;RW1 13884,9882 13995,9834 14193,9746
 Busspur gilt Mo-Fr 6-20 Uhr und Sa 8-14 Uhr	RW5; 13923,9405 13973,9465
 Busspur gilt Mo-Fr 6-20 Uhr und Sa 8-14 Uhr; die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW5; 13973,9465 14089,9610
 Radwegauffahrt abgesperrt (dahinter kommt auch nichts)	RW0; 14089,9610 13973,9465

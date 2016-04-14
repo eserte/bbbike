@@ -13,7 +13,7 @@
 #: source_id: 2147339819	
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.415646.php
 #: XXX laut vmz bis Mitte Mai 2016, laut fritz bis 13.05.2016
-#: last_checked: 2016-04-11 vvv
+#: last_checked: 2016-04-13 vvv
 #: valid: -20160513 vvv
 Wühlischstr.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 14575,11407 14674,11370
 Wühlischstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14674,11370 14737,11347 14759,11339 14771,11345
@@ -23,7 +23,7 @@ Wühlischstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14674,11370 14737,
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2016-04-05 vvv
+#: last_checked: 2016-04-13 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14286,11186 14357,11148
 # REMOVED (keine Behinderungen mehr) --- Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 # REMOVED (gibt's nicht mehr?) --- Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraße ausgewiesen	q3::inwork; 14442,11101 14468,11203
@@ -73,13 +73,13 @@ Rigaer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 14133,12482 14266,12446
 # 
 # REMOVED --- #: last_checked: 2015-06-10 --- Am Zirkus: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9167,13046 9137,13032 9090,13009
 # 
-#: last_checked: 2016-03-15
+#: last_checked: 2016-04-12
 Schützenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10116,11485 9949,11470
 # 
-#: last_checked: 2016-03-15
+#: last_checked: 2016-04-12
 Kommandantenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10330,11422 10136,11529
 # 
-#: last_checked: 2016-03-15
+#: last_checked: 2016-04-12
 Beuthstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10201,11631 10235,11610 10330,11422
 # 
 # REMOVED (wieder offen) --- #: XXX gibt es hier noch Einschränkungen? --- #: last_checked: 2016-01-14 --- #: next_check: 2016-02-03 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9935,11566 9990,11571
@@ -227,10 +227,12 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED (das Einfahrt verboten-Schild hängt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9949,11470 9935,11566
 # 
 #: XXX laut fritz bis 12.02.2016, geht aber länger
-#: last_checked: 2016-04-08
+#: last_checked: 2016-04-12
 Alte Jakobstr.: Bauarbeiten, teilweise Einbahnstraße	q3::inwork; 10256,11160 10437,11352
-#: last_checked: 2016-04-08
+#: last_checked: 2016-04-12 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10624,11548 10640,11564
+Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10437,11352 10489,11405
+#: last_checked ^^^
 # 
 # REMOVED --- Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10437,11352
 # REMOVED (Anlieger frei, eigentlich kaum noch Behinderungen) --- #: last_checked: 2013-11-25 (Fahrbahn inoffiziell befahrbar) --- Neue Grünstr.: Bauarbeiten, Fahrbahn könnte gesperrt sein	q3::inwork 10389,11390 10446,11470
@@ -478,7 +480,11 @@ Tiergarten: einige Fußgänger	q1 8571,11846 8501,11815 8244,11878 8221,11885 8132
 Tiergarten: einige Fußgänger	q1 8172,11679 8210,11775 8244,11878 8327,12174 8344,12221 8391,12389 8400,12417
 (Bremer Weg - Fasanerieallee): Parkweg	q1 6337,11887 6379,11843 6406,11784 6452,11778 6540,11754
 (zum Rosengarten): einige Fußgänger	q1 7026,12054 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
-Parkweg: enge Brücke, Fußweg	q2 14318,9688 14361,9772 14404,9847 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
+#: last_checked: 2016-04-13
+#: check_frequency: 7d
+# XXX später wieder einsetzen: Parkweg: enge Brücke, Fußweg	q2 14318,9688 14361,9772 14404,9847 14448,9922
+Parkweg: während der Bauarbeiten relativ eng	q3::inwork 14318,9688 14361,9772 14404,9847 14448,9922
+Parkweg: enge Brücke, Fußweg	q2 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
 # REMOVED (nun ein offizieller markierter Radweg) --- Spittelmarkt: Gehweg	q1 10369,11728 10274,11737 10240,11740
 Hasenheide: Fußgänger	q1 11266,8336 11275,8387 11282,8428 11279,8489 11255,8591 11182,8983 11141,9107 11136,9183
 Hasenheide: Fußgänger	q1 11141,9107 11115,9100 11098,9046 11100,8974 11137,8738 11193,8568 11235,8454 11230,8402 11225,8350
@@ -756,7 +762,7 @@ Fritz-Schiff-Weg: Fußgänger	q1 13463,12507 13484,12436 13448,12340
 (Crellestr. - Julius-Leber-Brücke): Fußgänger	q2 7524,9093 7555,8978 7509,8929 7497,8916
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870
 #: next_check_id: FISCHERINSEL-2015
-#: last_checked: 2016-02-26
+#: last_checked: 2016-04-12
 #: next_check: 2016-06-30
 Spreekanalufer: Umfahrung an der Straße Fischerinsel, Fußgänger	q3::inwork 10672,11870 10776,11942
 # REMOVED (danach wieder folgendes aktivieren) --- (Fischerinsel, Spreekanalufer): Fußgänger	q1 10672,11870 10776,11942
