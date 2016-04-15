@@ -127,10 +127,10 @@ userdel	2 9123,15963 9053,16029
 EOF
      },
      { from  => $isodate2epoch->("2016-04-15 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-04-17 20:00:00"),
+       until => $isodate2epoch->("2016-04-17 23:59:59"),
        periodic => 1, # erster Termin im Jahr
        recurrences => [["yearly", days => 11, months => 4]],
-       recurrence_prewarn_days => 21,
+       recurrence_prewarn_days => 21, # weil der Termin ggfs. erst sehr spät feststeht
        source_id => 'http://nareyka.events/news-events/mehr/artikel/44-fruehlingsfest-rheinstrasse.html',
        text  => "Rheinstraßenfest in der Rheinstraße zwischen Kaisereiche und Walther-Schreiber-Platz, am 16.04.2016 und 17.04.2016",
        data  => <<EOF,
@@ -17915,12 +17915,12 @@ EOF
 userdel	q4::inwork 18586,9172 18511,9185 18430,9199 18319,9218
 EOF
      },
-     { from  => $isodate2epoch->("2015-06-04 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-06-07 23:59:59"),
+     { from  => $isodate2epoch->("2016-06-02 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-06-05 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 15, months => 5]], # kann auch erst im September stattfinden
-       source_id => 'http://www.erkner.de/271.html',
-       text  => 'Erkner: Heimatfest, 5.6.2015 bis 7.6.2015',
+       source_id => 'http://www.erkner.de/271.html?date=20160415',
+       text  => 'Erkner: Heimatfest, 3.6.2016 bis 5.6.2016',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 34421,1950 34359,2165 34250,2546
@@ -23991,7 +23991,7 @@ EOF
        until => $isodate2epoch->("2015-04-06 23:59:59"),
        #periodic => 1,
        #recurrences => [['easter', -2]], # Karfreitag
-       #recurrence_prewarn_days => 1, # # findet es 2016 überhaupt statt?
+       #recurrence_prewarn_days => 1, # # findet es 2016 überhaupt statt? -> Antwort: nein
        text  => 'Hauptstraße, zwischen Kreuzung Dominicusstr. und Kreuzung Kaiser-Wilhelm-Platz Veranstaltung (Osterfest Hauptstraße), Straße gesperrt (04.04.2015 - 06.04.2015)',
        type  => 'handicap',
        data  => <<EOF,
@@ -24905,7 +24905,7 @@ EOF
      },
      { from  => 1459634400, # 2016-04-03 00:00
        until => 1460757600, # 2016-04-16 00:00
-       text  => 'Einsteinufer: Bauarbeiten zwischen Marchbrücke und Straße des 17. Juni, Einbahnstraßenregelung, vom 04.04.2016 bis 15.04.2016 (vielleicht bereits schon aufgehoben)',
+       text  => 'Einsteinufer: Bauarbeiten zwischen Marchbrücke und Straße des 17. Juni, Einbahnstraßenregelung, vom 04.04.2016 bis 15.04.2016',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.464628.php',
        data  => <<EOF,

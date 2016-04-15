@@ -99,7 +99,7 @@ userdel	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 1199
                           ],
          'source_id' => 'http://nareyka.events/news-events/mehr/artikel/44-fruehlingsfest-rheinstrasse.html',
          'text' => 'Rheinstraßenfest in der Rheinstraße zwischen Kaisereiche und Walther-Schreiber-Platz, am 16.04.2016 und 17.04.2016',
-         'until' => 1460916000
+         'until' => 1460930399
        },
        undef,
        undef,
@@ -2607,7 +2607,26 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 34421,1950 34359,2165 34250,2546
+',
+         'from' => 1464818400,
+         'id' => 2078,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              15,
+                              'months',
+                              5
+                            ]
+                          ],
+         'source_id' => 'http://www.erkner.de/271.html?date=20160415',
+         'text' => 'Erkner: Heimatfest, 3.6.2016 bis 5.6.2016',
+         'type' => 'gesperrt',
+         'until' => 1465163999
+       },
        undef,
        undef,
        undef,
@@ -3955,7 +3974,7 @@ userdel	2::inwork 16066,3799 15892,3932
          'from' => 1459634400,
          'id' => 2774,
          'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.464628.php',
-         'text' => 'Einsteinufer: Bauarbeiten zwischen Marchbrücke und Straße des 17. Juni, Einbahnstraßenregelung, vom 04.04.2016 bis 15.04.2016 (vielleicht bereits schon aufgehoben)',
+         'text' => 'Einsteinufer: Bauarbeiten zwischen Marchbrücke und Straße des 17. Juni, Einbahnstraßenregelung, vom 04.04.2016 bis 15.04.2016',
          'type' => 'handicap',
          'until' => 1460757600
        },
