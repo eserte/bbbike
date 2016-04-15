@@ -51,6 +51,30 @@ my $test_jobs;
 my $skip_tests;
 my $log_dir;
 
+# prepend extra options from rc file
+# stolen from cpan_smoke_modules
+my $rc_file = "$ENV{HOME}/.bbbikedeployrc";
+if (-r $rc_file) {
+    # Quick'n'dirty check if the rc file should be skipped
+    if (grep { m{^--?skiprcfile$} } @ARGV) {
+	@ARGV = grep { !m{^--?skiprcfile$} } @ARGV;
+    } else {
+	require Text::ParseWords;
+	print STDERR "INFO: Reading extra options from $rc_file... ";
+	open my $rcfh, $rc_file
+	    or die "$rc_file exists and is readable, but cannot be opened?! Error: $!";
+	my @file_ARGV;
+	while(<$rcfh>) {
+	    chomp;
+	    next if /^\s*#/;
+	    next if /^\s*$/;
+	    push @file_ARGV, Text::ParseWords::shellwords($_);
+	}
+	print STDERR "extra options: " . (@file_ARGV ? "@file_ARGV" : '<none>') . "\n";
+	unshift @ARGV, @file_ARGV;
+    }
+}
+
 GetOptions(
 	   'root-deploy-dir=s' => \$root_deploy_dir,
 	   'n|dry-run'         => \$dry_run,
