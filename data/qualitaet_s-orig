@@ -1010,11 +1010,11 @@ Pankeweg: feiner Schotter	Q1 13953,23497 13940,23486 13833,23400 13559,23116
 Pankeweg: mäßiger Asphalt, Wurzelschäden	Q1- 13206,22290 13078,21754
 Pankeweg: wassergebundene Decke	Q1- 13078,21754 13031,21538 12807,20944 12753,20884 12553,20757
 Pankeweg: unbefestigter Weg	Q2+ 13365,22743 13321,22586 13295,22545 13290,22377 13354,22327
-Weinapfelweg: unbefestigte Straße, relativ gut befahrbar	Q2+ 13139,22401 13122,22336 13115,22311
-Weinapfelweg: unbefestigter Weg	Q2- 12940,21738 12963,21835 12968,21848 12996,21953 13025,21984 13050,21994 13060,22043 13075,22130 13091,22220 13115,22311
-Weinapfelweg: unbefestigter Weg	Q2- 13139,22401 13162,22480 13180,22539 13202,22605 13221,22667
+Weinapfelweg: unbefestigte Straße, relativ gut befahrbar	Q2+ 13136,22397 13117,22337 13110,22313
+Weinapfelweg: unbefestigter Weg	Q2- 12940,21738 12963,21835 12968,21848 12996,21953 13025,21984 13050,21994 13060,22043 13075,22130 13091,22220 13110,22313
+Weinapfelweg: unbefestigter Weg	Q2- 13136,22397 13162,22480 13180,22539 13202,22605 13221,22667
 Weinapfelweg: Asphalt mit Schäden	Q1- 13221,22667 13219,22689 13200,22766 13183,22817 13156,22889
-Pankeweg: unbefestigte Straße, relativ gut befahrbar	Q2+ 13115,22311 13206,22290
+Pankeweg: unbefestigte Straße, relativ gut befahrbar	Q2+ 13110,22313 13206,22290
 Pankeweg: Kopfsteinpflaster	Q0 12578,20749 12500,20705
 Pankeweg: asphaltiert	Q0 12500,20705 12377,20636 12359,20587 12310,20523 12266,20467 12235,20380 12207,20351 12154,20325 11995,19759 11907,19749
 Schloßallee: Asphalt, teilweise mit leichten Schäden	Q0- 11883,19739 11730,19684 11472,19593 11312,19537 11273,19521 11236,19509
@@ -1423,7 +1423,7 @@ Spreeufer: wassergebundene Decke	Q1 9707,12974 9557,12992
 (NSG Fauler See - Tamseler Str.): Waldweg	Q2+ 16488,16668 16556,16673
 #: note ^^^
 (Stadion Buschallee): unbefestigter Weg	Q2+ 15735,16698 15759,16671 15846,16530 15904,16540 15915,16526 15965,16482
-(Am Fließgraben): Feldweg, OK	Q1- 15413,18626 15180,18687 15098,19112 15064,19280 14777,19666 14714,19841 14423,20163 14429,20192
+(Am Fließgraben): Feldweg, OK	Q1- 15413,18626 15180,18687 15098,19112 15064,19280 14777,19666 14714,19841 14417,20171 14432,20188
 (Am Marderberg): Feldweg, OK	Q1- 14977,19129 14328,19527 13477,20064
 Märchenweg: rauer Asphalt	Q1 15640,19060 15412,19082 15098,19112 14977,19129 14830,19143
 Märchenweg: leicht rauer Asphalt	Q0- 14830,19143 14743,19174 14546,19286 14284,19451
@@ -4600,7 +4600,7 @@ Moriz-Seeler-Str.: Asphalt	Q0 19767,3307 19669,3200
 Steffenstr.: Beton	Q1 15580,14880 15568,14901 15536,14956 15425,15080
 Hohenschönhauser Str.: Asphalt	Q0 14754,14406 14682,14572
 Hohenschönhauser Str.: Beton	Q1 14682,14572 14580,14636
-Piesporter Str.: Beton/wassergebundene Decke	Q1- 15437,16491 15381,16548
+Piesporter Str.: Beton/wassergebundene Decke	Q1- 15437,16491 15397,16510 15381,16548
 Piesporter Str.: Beton	Q0- 15381,16548 15333,16776
 Wittlicher Str.: welliger Asphalt	Q1 15178,17134 15188,17055 15208,16939 15235,16761
 Neumagener Str.: Asphalt	Q0 14910,17010 15188,17055
@@ -5538,13 +5538,12 @@ Nienhagener Str.: Beton	Q0- 16365,18335 16469,18409 16534,18457
 Reriker Str.: Asphalt	Q1 16144,18521 16268,18551
 Reriker Str.: Beton	Q1+ 16268,18551 16350,18575 16385,18524 16469,18409
 Doberaner Str.: Beton	Q0 16358,18687 16233,18643
-Doberaner Str.: Asphalt	Q1 16233,18643 16164,18611 16144,18521 16167,18427 16184,18382
-Doberaner Str.: Beton	Q1 16184,18382 16335,18197
+Doberaner Str.: Asphalt	Q1 16233,18643 16164,18611 16144,18521 16167,18427 16196,18364
+Doberaner Str.: Beton	Q1 16196,18364 16315,18208 16335,18197
 An der Oskar-Schindler-Schule: Beton	Q0- 16256,17651 16269,17759 16277,17830
 (Perler Str. - Darßer Str.): wassergebundene Decke	Q1 15851,17722 16256,17651 16358,17627 16751,17560
-(entlang der ehemaligen NEB-Trasse): Asphalt	Q0 15821,17510 15814,17454 15839,17431 15939,17412 16141,17325 16146,17304
-#: note: einige Stellen haben eine etwas schlechtere Qualität
-(entlang der ehemaligen NEB-Trasse): Asphalt	Q0 16146,17304 16229,17217 16296,17114
+#: note: die Qualität des Asphalts lässt schon nach...
+(entlang der ehemaligen NEB-Trasse): Asphalt	Q0- 15821,17510 15814,17454 15839,17431 15939,17412 16141,17325 16146,17304 16229,17217 16296,17114
 (entlang der ehemaligen NEB-Trasse): Beton	Q0 16318,17128 16369,17042
 (entlang der ehemaligen NEB-Trasse): Asphalt	Q0 16369,17042 16402,16990
 Haakonweg: Asphalt	Q0 14124,18069 14282,18041 14397,18018
@@ -6936,15 +6935,15 @@ Straße 40 (Karow): Asphalt	Q0 14597,22038 14661,21987
 Straße 36 (Karow): Asphalt	Q0 14720,22062 14661,21987 14625,21927 14563,21817
 Straße 38 (Karow): unbefestigte Straße	Q2 14511,21847 14563,21817
 Straße 39 (Karow): Asphalt	Q0 14625,21927 14742,21843
-Villacher Str.: Asphalt	Q0 14734,21109 14634,21135
-Villacher Str.: unbefestigte Straße	Q2 14634,21135 14580,21146
-Mühlenstr. (Blankenburg): rauer Asphalt	Q1 14386,20237 14402,20250 14455,20388 14466,20455 14482,20547 14499,20649 14515,20727 14536,20805 14538,20819 14559,20889 14582,20969
-Straße 42 (Blankenburg): unbefestigte Straße	Q2 14559,20889 14751,20876
-Straße 24: unbefestigte Straße	Q2 14538,20819 14484,20832
+Villacher Str.: Asphalt	Q0 14734,21109 14631,21136
+Villacher Str.: unbefestigte Straße	Q2 14631,21136 14580,21146
+Mühlenstr. (Blankenburg): rauer Asphalt	Q1 14386,20237 14402,20250 14455,20388 14466,20455 14482,20547 14499,20649 14509,20728 14529,20807 14532,20820 14554,20891 14577,20966
+Straße 42 (Blankenburg): unbefestigte Straße	Q2 14554,20891 14751,20876
+Straße 24: unbefestigte Straße	Q2 14532,20820 14484,20832
 Straße 46 (Blankenburg): Asphalt	Q0 14482,20547 14685,20504
-Mittelstr. (Blankenburg): unbefestigte Straße	Q2 14320,20580 14482,20547
+Straße 46 (Blankenburg): unbefestigte Straße	Q2 14320,20580 14482,20547
 Mittelstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 13912,20650 14320,20580
-Am Fließ: Asphalt	Q0 13938,20548 13955,20452 13991,20425 14128,20410 14263,20352 14386,20237 14429,20192
+Am Fließ: Asphalt	Q0 13938,20548 13955,20452 13991,20425 14128,20410 14263,20352 14386,20237 14432,20188
 Bebelplatz: gepflastert	Q1 9708,12235 9702,12307 9695,12390
 Bebelplatz: gepflastert	Q1 9743,12239 9702,12307 9656,12386
 Bebelplatz: gepflastert	Q1 9674,12231 9702,12307 9734,12395
@@ -7186,7 +7185,7 @@ Fritz-Lesch-Str.: Verbundsteinpflaster	Q0- 15143,15431 15176,15473
 Fritz-Lesch-Str.: Beton	Q0- 15176,15473 15178,15502 15311,15679 15313,15848 15313,15858
 Hansastr. [Wohngebiet]: Beton	Q0- 15341,15912 15413,16007 15435,16063 15292,16167
 Zum Orankestrand: Schotterweg	Q1- 15435,16063 15479,16060
-Zum Hechtgraben: etwas unebener Asphalt	Q1 16210,18706 16163,18780 16158,19049 16104,19165
+Zum Hechtgraben: etwas unebener Asphalt	Q1 16210,18706 16198,18753 16163,18780 16158,19049 16104,19165
 (Darßer Str. - Malchower See): wassergebundene Decke	Q1- 15505,17967 15825,18385 15949,18555
 Am Malchower See: grobes Verbundsteinpflaster	Q1- 15611,18627 15732,18666 15774,18656 15873,18561 15949,18555 16161,18687 16210,18706
 (Wartenberger Str. - Margaretenhöhe): Verbundsteinpflaster	Q1 16216,19183 16314,19210 16349,19442 16343,19470 16309,19542
@@ -7577,7 +7576,7 @@ Fuchsammerweg: unbefestigter Weg	Q2+ 13491,20266 13475,20276 13360,20350 13237,2
 Morgenammerweg: unbefestigter Weg	Q2+ 13566,20540 13440,20485 13396,20409 13360,20350 13334,20308 13329,20299 13301,20254 13293,20241 13264,20196
 Meisengimpelweg: unbefestigter Weg	Q2+ 13586,20649 13519,20640 13416,20595 13299,20542
 (Weg durch die Spiel- und Parkanlage am Bahnhof Blankenburg): Asphalt	Q0 13298,20917 13289,21001
-Ilsenburgstr.: Asphalt	Q0 13729,21779 13659,21804 13642,21793 13489,21548
+Ilsenburgstr.: Asphalt	Q0 13727,21780 13659,21804 13642,21793 13489,21548
 Ilsenburgstr.: unbefestigte Schotterstraße	Q2 13489,21548 13478,21532 13415,21442 13287,21224 13215,21077 13218,21008
 Sulzer Str.: Asphalt	Q0 13720,21761 13825,21730 13887,21714 13938,21700 14017,21673
 #: note: teilweise mit Sandbankette
@@ -7706,7 +7705,7 @@ Prinzenapfelweg: unbefestigte Straße	Q2 12982,22703 13088,22646 13202,22605
 Karower Weg: unbefestigte Straße	Q2- 12821,22437 12825,22486 12938,22513 12942,22521 13021,22589 13088,22646 13127,22716 13160,22776 13183,22817
 Edelapfelweg: unbefestigte Straße	Q2 12942,22521 12920,22597
 Straße 76a: Asphalt	Q0 12777,22679 12883,22615 12920,22597
-Straße 73 (Französisch Buchholz): unbefestigte Straße	Q2 12568,22421 12597,22372 12852,22337 13115,22311
+Straße 73 (Französisch Buchholz): unbefestigte Straße	Q2 12568,22421 12597,22372 12852,22337 13110,22313
 Eddastr.: unbefestigte Straße	Q2 12476,22423 12473,22801
 Eddastr.: schlechtes Kopfsteinpflaster	Q3 12364,21623 12418,21727 12433,21880 12450,21984 12467,22147 12488,22305 12489,22420
 Parkstr. (Französisch Buchholz): schlechtes Kopfsteinpflaster	Q3 12630,22277 12488,22305 12393,22332
@@ -7735,8 +7734,8 @@ Straße 164: Schotterstraße	Q2 12666,22036 12687,22200
 Straße 167 (Französisch Buchholz): unbefestigte Straße	Q2 12850,22177 12771,22189 12687,22200 12621,22210
 Straße 165: unbefestigte Straße	Q2 12757,22021 12771,22189
 Straße 72 (Französisch Buchholz): unbefestigte Straße	Q2 12852,22262 12636,22290
-Straße 74: Asphalt	Q0- 12592,22427 12700,22451 12821,22437 12855,22431 13139,22401
-Autobahnbrücke: Asphalt	Q0 13139,22401 13404,22384
+Straße 74: Asphalt	Q0- 12592,22427 12700,22451 12821,22437 12855,22431 13136,22397
+Autobahnbrücke: Asphalt	Q0 13136,22397 13148,22396 13385,22383 13404,22384
 Straße 86: Asphalt	Q0 13805,22935 13726,22860
 Straße 86: unbefestigt	Q2 13726,22860 13699,22834
 Straße 101 (Karow): Asphalt	Q0 13610,22949 13726,22860
@@ -9518,7 +9517,7 @@ Paradiesapfelweg: unbefestigter Weg mit Verbundsteinpflasterstreifen	Q2+ 12996,2
 Petersapfelweg: unbefestigter Weg	Q2- 13060,22043 12846,22070
 Pfaffenapfelweg: unbefestigter Weg mit Verbundsteinpflasterstreifen	Q2+ 13075,22130 12849,22161
 Mönchsapfelweg: unbefestigter Weg	Q2- 13091,22220 12852,22250
-Nelkenapfelweg: unbefestigter Weg	Q2- 13122,22336 12853,22368
+Nelkenapfelweg: unbefestigter Weg	Q2- 13117,22337 12853,22368
 Edelapfelweg: unbefestigter Weg mit Verbundsteinpflasterstreifen	Q2+ 13162,22480 12946,22509 12938,22513
 Glasapfelweg: unbefestigter Weg	Q2- 12883,22615 12820,22518 12825,22486
 Kantapfelweg: unbefestigter Weg mit Verbundsteinpflasterstreifen	Q2+ 13180,22539 13021,22589
@@ -10026,6 +10025,16 @@ Johannaplatz: Asphalt	Q0 2132,9267 2074,9225 2098,9173 2165,9155 2193,9195
 Kietzgrabensteg: Asphalt/Beton	Q0 22514,4632 22531,4605
 Weg über Autobahntunnel: Gehwegplatten & wassergebundene Decke	Q0- 11818,6201 12040,6239 12235,6276
 Mergenthalerring: schlechtes Kopfsteinpflaster	Q3+ 14121,8147 14210,8227 14219,8260
+#: XXX wie wird die Qualität nach der Fertigstellung sein? Beleuchtung?
+#: osm_watch: way id="344108079" version="3"
+#: last_checked: 2016-04-17
+#: check_frequency: 60d
+(Marseillestr. - Straße 160): unbefestigte Baustraße	Q2- 12495,21397 12507,21391 12547,21372
+(Weinapfelweg - Pankeweg): Asphalt mit Unebenheiten	Q1- 13221,22667 13223,22558 13207,22498 13220,22387 13206,22290
+Treseburger Str. (Blankenburg) [20-24G]: Verbundsteinpflaster	Q1+ 14226,21419 14165,21226 14139,21140 14185,21126
+Treseburger Str. (Blankenburg) [22N-S,24-24D]: Verbundsteinpflaster	Q1+ 14185,21126 14210,21200
+Treseburger Str. (Blankenburg) [24G-24E,20X-20T]: Verbundsteinpflaster	Q1+ 14185,21126 14166,21072
+(Harzburger Str. - Treseburger Str. [Wohngebiet]): unbefestigte Straße	Q2 14138,21233 14165,21226
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -10271,7 +10280,7 @@ Taubnesselweg: mäßiger fester Sandweg	Q2 20793,2247 20836,2150 20872,2112
 #: confirmed_by: srt (zumindest der östliche Abschnitt)
 Harzburger Str. (Blankenburg): guter Asphalt	Q0 13709,21334 13817,21304 13910,21280 14005,21262
 #: corrected_by: srt (Asphalt -> ...)
-Harzburger Str. (Blankenburg): unbefestigte Straße	Q2 14005,21262 14096,21243 14134,21235
+Harzburger Str. (Blankenburg): unbefestigte Straße	Q2 14005,21262 14096,21243 14138,21233
 #: note: "enge Straße", aber ohne Kategorisierung
 #: corrected_by: srt (guter Asphalt -> ...)
 Holunderweg (Spandau): Asphalt/Beton	Q0 -3010,17885 -3064,17678 -3093,17647
@@ -12541,7 +12550,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20131119.1100.391816.html (BA-Beschluss 277/2013)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: osm_watch: way id="42689070" version="5"
-#: last_checked: 2016-02-13
+#: last_checked: 2016-04-17
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -13636,7 +13645,7 @@ Marinesteig: Asphalt	Q0 -3053,3298 -2776,3512 -2700,3554
 #: confirmed_by: srt
 Schollenweg: Asphalt	Q0 3236,21601 3211,21678 3156,21832 3081,22048
 #: corrected_by: srt (Asphalt -> rauer Asphalt)
-Straße 56 (Blankenburg): rauer Asphalt	Q1+ 14582,20969 14634,21135 14684,21284 14747,21472
+Straße 56 (Blankenburg): rauer Asphalt	Q1+ 14577,20966 14631,21136 14679,21285 14747,21472
 #: by: ^^^
 # 
 #: by: sven draband: vvv
@@ -14537,7 +14546,7 @@ Schickstr.: Verbundsteinpflaster	Q1 1203,20553 1137,20712
 # 
 #: by: mikebike:
 #: confirmed_by: srt
-Straße 26: guter Asphalt	Q0 14977,21194 14771,21253 14684,21284 14509,21337
+Straße 26: guter Asphalt	Q0 14977,21194 14771,21253 14679,21285 14509,21337
 # 
 #: by: Tim (rascher):
 #: confirmed_by: srt
@@ -19330,9 +19339,7 @@ Albtalweg: mäßiger Asphalt/Beton	Q1- 5368,22669 5338,22753 5297,22830 5243,22896
 # 
 #: by: Heike Ludwig: vvv
 #: corrected_by: srt (mäßiges Kopfsteinpflaster -> Kleinsteinpflaster)
-Treseburger Str. (Blankenburg): Kleinsteinpflaster	Q2+ 14509,21337 14461,21372 14304,21399
-#: confirmed_by: srt
-Treseburger Str. (Blankenburg): mäßiges Kopfsteinpflaster	Q2 14304,21399 14157,21442
+Treseburger Str. (Blankenburg): Kleinsteinpflaster	Q2+ 14509,21337 14461,21372 14304,21399 14226,21419 14157,21442
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Treseburger Str. (Blankenburg): Asphalt	Q0- 14157,21442 14069,21471 13978,21496 13884,21524
 #: by: ^^^
@@ -20466,7 +20473,7 @@ Schwarzwaldstr.: schlechtes Kopfsteinpflaster	Q3 13478,21532 13622,21464
 #: note: hier viele parkende Autos
 Triftstr. (Blankenburg): asphaltiert	Q0 13524,21053 13573,21256
 #: confirmed_by: srt
-Triftstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 13573,21256 13580,21286 13598,21360 13622,21464 13720,21761 13729,21779 13779,21920 13853,22006
+Triftstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 13573,21256 13580,21286 13598,21360 13622,21464 13720,21761 13727,21780 13779,21920 13853,22006
 #: by: ^^^
 # 
 #: by: Ed (wittig):
@@ -21173,7 +21180,7 @@ Buchsteinweg - Säntisstr.: Parkweg	Q1 9978,1854 9922,1896
 #: by: michael stoffers:
 #: note: "q1" ohne weitere Angaben
 #: confirmed_by: srt (westliches Ende)
-Brockenweg: mäßiges Kopfsteinpflaster	Q2 14536,20805 14721,20776 14799,20786 14847,20776 14945,20748 14995,20731 15052,20725 15102,20723
+Brockenweg: mäßiges Kopfsteinpflaster	Q2 14529,20807 14721,20776 14799,20786 14847,20776 14945,20748 14995,20731 15052,20725 15102,20723
 # 
 #: by: franziska (...ringleb...):
 #: note: Q1, because no street in the surrounding has Q0
@@ -21990,8 +21997,11 @@ Schmale Gasse: Asphalt	Q0 23883,4328 24055,4348 24075,4417
 #: by: chris (wierte...): vvv
 #: note: "Straße durch Einfamilienhaussiedlung, bei Gegenverkehr mit LKW´s kann es manchmal etwas eng werden, rechts und links neben dem Asphalt ist ausgefahrender Sand-/Schotterbelag"
 #: corrected_by: srt (mäßig -> gut bis mäßig)
-Bitburger Str.: guter bis mäßiger Asphalt	Q1+ 16645,17449 16595,17508 16522,17541 16346,17561 15839,17634 15548,17684
+Bitburger Str.: guter bis mäßiger Asphalt	Q1+ 16645,17449 16595,17508 16522,17541 16346,17561 15839,17634
+#: corrected_by: srt (mittlerweile (?) einwandfreier Asphalt)
+Bitburger Str.: Asphalt	Q0 15839,17634 15548,17684
 Bitburger Str.: Waldweg, kann an feuchten Tagen etwas schlammig werden	Q2 15548,17684 15515,17717 15478,17724 15439,17698
+#: XXX ist die Qualität hier vielleicht auch Q0?
 Bitburger Str.: guter bis mäßiger Asphalt	Q1 15439,17698 15220,17729
 #: by: ^^^
 # 
@@ -23162,7 +23172,7 @@ Straße 166: fester Sandweg in sehr schlechtem Zustand, sehr viele Löcher	Q2- 128
 # 
 #: by: Thomas Müller (mue_...):
 #: confirmed_by: srt
-Kirchstr. (Blankenburg): mäßiges Kopfsteinpflaster	Q2 14721,20690 14515,20727 14236,20773
+Kirchstr. (Blankenburg): mäßiges Kopfsteinpflaster	Q2 14721,20690 14509,20728 14236,20773
 # 
 #: by: Stefanie (...roko...): vvv
 #: corrected_by: srt (fester Sandweg -> ...)
@@ -24135,7 +24145,7 @@ Weisbachstr.: Asphalt	Q1+ 13557,13290 13610,13169
 Otto-Ostrowski-Str.: Kopfsteinpflaster	Q2+ 13702,13634 13769,13487 13805,13394 13819,13356 13862,13262 13930,13100
 Kurt-Exner-Str.: Kopfsteinpflaster	Q2 13976,13309 13862,13262
 Agnes-Wabnitz-Str.: Kopfsteinpflaster	Q2 13934,13403 13819,13356
-Agnes-Wabnitz-Str.: Kopfsteinpflaster	Q2 13915,13443 13805,13394
+Agnes-Wabnitz-Str.: Kopfsteinpflaster	Q2 13916,13443 13805,13394
 #: confirmed_by: srt
 Wilhelm-Stolze-Str.: Kopfsteinpflaster	Q2 13267,13167 13368,12943
 Fritz-Schiff-Weg: Kleinpflaster	Q1 13448,12340 13484,12436 13463,12507

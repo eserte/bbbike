@@ -3968,16 +3968,7 @@ userdel	2::inwork 16066,3799 15892,3932
          'until' => undef
        },
        undef,
-       {
-         'data' => 'userdel	q4::inwork; 4981,12252 5128,12149 5229,12001 5361,11910
-',
-         'from' => 1459634400,
-         'id' => 2774,
-         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.464628.php',
-         'text' => 'Einsteinufer: Bauarbeiten zwischen Marchbrücke und Straße des 17. Juni, Einbahnstraßenregelung, vom 04.04.2016 bis 15.04.2016',
-         'type' => 'handicap',
-         'until' => 1460757600
-       },
+       undef,
        {
          'data' => '#: note: am Di, den 2016-04-05 gegen 08:45: geschlossen
 	3::night 14700,8368 14688,8355 14563,8243
@@ -4018,6 +4009,17 @@ userdel	2::inwork 16066,3799 15892,3932
          'text' => 'Wassersportallee: Richtung Dahme zwischen Walchenseestr. und Regattastr. Baustelle, Fahrtrichtung gesperrt, vom 08.04.2016 bis 30.05.2016',
          'type' => 'handicap',
          'until' => 1464645599
+       },
+       {
+         'data' => '#: note: am So 2016-04-17 gegen 15 Uhr offen
+userdel	2::night 16196,18364 16315,18208
+',
+         'from' => undef,
+         'id' => 2779,
+         'recurring' => 1,
+         'text' => 'Doberaner Str.: Durchfahrt unter Umständen nicht möglich',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

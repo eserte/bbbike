@@ -1024,7 +1024,7 @@ Konrad-Wolf-Str. - Große-Leege-Str.: Radweg auf der linken Seite der Konrad-Wolf
 Dahmeweg: zur Unterführung S-Bhf. Poelchaustr.	CP2; 19395,14477 19290,14503
 links halten	CP2; -728,7310 -1020,7446
 ausgeschildert Richtung Saugstelle	CP2; 636,22658 667,22755
-Piesporter Str. [Wohngebietsstraße]: nicht ausgeschildert	CS 15437,16491 15381,16548 15333,16776
+Piesporter Str. [Wohngebietsstraße]: nicht ausgeschildert	CS 15437,16491 15397,16510 15381,16548 15333,16776
 #: note: Straßenname kommt in der Datei https://www.statistik-berlin-brandenburg.de/produkte/verzeichnisse/Strassenumbenennungen.xls vor
 Verlängerte Friedrich-Wilhelm-Str.: nicht ausgeschildert	CS 8266,5911 8385,5907
 Leonardo-da-Vinci-Str. (Potsdam): Privatstraße	CS -11390,72 -11609,400
@@ -1067,7 +1067,7 @@ ausgeschildert Zur Wiltbergstr. 29, 29A, 29G	CP2; 16121,25818 16094,25776
 #: XXX_prog: sollte eine Art handicap sein
 Tauernallee - Hochspannungsweg: Bordstein	CP; 11323,1986 11343,1937 11373,1925
 #: next_check_id: WARSCHAUER-2014
-#: last_checked: 2016-04-11
+#: last_checked: 2016-04-17
 Warschauer Str.: während der Bauarbeiten darf der Mittelstreifen zwischen Gubener Str. und Frankfurter Tor von Radfahrern benutzt werden	CS 13651,11731 13696,11920 13745,12118 13785,12292
 zum Freibad Plötzensee: Kassenhäuschen, Schranke	CS 5321,14978 5323,15030
 nicht den Friedhofsweg auf der rechten Seiten benutzen	CP2; 4963,15259 4624,15671
@@ -1078,22 +1078,14 @@ Gutsmuthsweg ist teilweise nicht ausgeschildert	CS -746,12432 -671,12311 -583,12
 Prinz-Friedrich-Karl-Weg ist nicht ausgeschildert	CS -1132,12268 -1172,12336 -824,12557 -646,12658
 ausgeschildert nach Heinersdorf	CP2; 63464,78555 63559,78397
 # REMOVED (ausgeschildert) --- #: XXX wann wird ausgeschildert? --- #: last_checked: 2015-01-01 --- Am Bremsenwerk: noch als Kaskelstr. ausgeschildert	CS 15245,11178 15090,11237 15058,11250
-#: next_check_id: NIZZASTR-2014 vvv
-#: XXX wann wird ausgeschildert? vvv
-#: last_checked: 2015-10-04 vvv
-#: check_frequency: 60d vvv
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2015 ("Verkehrsübergabe")
+# REMOVED --- #: next_check_id: NIZZASTR-2014 vvv --- #: XXX wann wird ausgeschildert? vvv --- #: last_checked: 2015-10-04 vvv --- #: check_frequency: 60d vvv --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2015 ("Verkehrsübergabe")
 # REMOVED --- Nizzastr.: noch nicht ausgeschildert	CS 12257,21079 12434,21160 12404,21217 12384,21256 12360,21303 12322,21378
 # REMOVED --- Brester Ring: noch nicht ausgeschildert	CS 12384,21256 12326,21226 12302,21275 12360,21303
 # REMOVED --- Grenobler Ring: noch nicht ausgeschildert	CS 12404,21217 12483,21255
 # REMOVED --- Grenobler Ring: noch nicht ausgeschildert	CS 12493,21212 12483,21255 12441,21341 12360,21303
 # REMOVED --- Lyonstr.: noch nicht ausgeschildert	CS 12188,21330 12204,21327 12322,21378 12443,21439
 # REMOVED --- Marseillestr.: noch nicht ausgeschildert	CS 12402,21537 12404,21532 12411,21515 12443,21439
-Toulonstr.: noch nicht ausgeschildert	CS 12404,21532 12480,21560
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-#: next_check_id ^^^
+# REMOVED --- Toulonstr.: noch nicht ausgeschildert	CS 12404,21532 12480,21560
 Kleine Querallee: nicht ausgeschildert	CS 8172,11679 8210,11775 8244,11878 8327,12174 8344,12221
 # REMOVED (Schild existiert) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2015 --- #: XXX kommen hier offizielle Straßenschilder? Eventuell auch im südlichen Abschnitt? --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20150320.1240.401484.html (feierliche Benennung) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20150325.1600.401546.html --- #: last_checked: 2015-02-15 --- #: next_check: 2015-03-25 --- Zur alten Börse: nicht ausgeschildert	CS 18736,13080 18712,12853 18682,12599 18649,12371
 (Hermann-Piper-Str./Olbendorfer Weg - Rathauspromenade): durch die Wohnanlage	CS 4997,19849 4992,19891 5029,19945 5151,19960 5220,19982
@@ -1117,3 +1109,7 @@ Im Brachfeldwinkel: ausgeschildert zum "Schwedenhaus"	CP2; 3068,21150 3024,21286
 Str. 156: nicht ausgeschildert	CP2; 17532,15645 17570,15658
 #: last_checked: 2016-04-03
 Wasserstr. und Uferstr.: noch nicht ausgeschildert	CS 17483,6024 17681,6212 17843,6083
+#: by: Max Mütze
+#: confirmed_by: srt
+Unterführung kann unter Wasser stehen	CS 13617,21819 13644,21808
+nicht ausgeschildert	CP2; 16104,19165 16158,19049

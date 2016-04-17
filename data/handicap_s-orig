@@ -23,20 +23,20 @@ Wühlischstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14674,11370 14737,
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2016-04-14 vvv
+#: last_checked: 2016-04-17 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14286,11186 14357,11148
 # REMOVED (keine Behinderungen mehr) --- Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 # REMOVED (gibt's nicht mehr?) --- Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraße ausgewiesen	q3::inwork; 14442,11101 14468,11203
 Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
-Haasestr.: wegen Bauarbeiten ist die Fahrbahn teilweise gesperrt	q3::inwork 14286,11186 14328,11320
+# REMOVED --- Haasestr.: wegen Bauarbeiten ist die Fahrbahn teilweise gesperrt	q3::inwork 14286,11186 14328,11320
 # REMOVED --- Haasestr.: Einbahnstraße wegen Bauarbeiten	q4::inwork; 14328,11320 14286,11186
 #: last_checked ^^^
 # 
 # REMOVED --- #: last_checked: 2016-03-07 --- #: check_frequency: 7d --- Revaler Str.: Bauarbeiten an der Kreuzung Warschauer Str.	q3::inwork 13588,11490 13711,11458
 # 
 #: XXX laut Fritz bis Ende März 2016 (sieht aber schlecht aus für diesen Termin)
-#: last_checked: 2016-04-08 vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2016-04-16 vvv
+#: check_frequency: 7d vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
 #: check_frequency ^^^
@@ -45,7 +45,7 @@ Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3:
 #: last_checked: 2016-03-30
 Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
 # 
-#: last_checked: 2016-03-30
+#: last_checked: 2016-04-17
 #: check_frequency: 45d
 Rigaer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 14133,12482 14266,12446
 # 
@@ -355,10 +355,7 @@ Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inw
 # 
 ### Pankow ###
 # 
-#: last_checked: 2016-02-13
-#: check_frequency: 60d
-Prenzlauer Promenade: Engstelle, Fußgänger und entgegenkommende Radfahrer	q2::inwork; 11950,18529 11934,18576 11980,18900
-# 
+# REMOVED --- #: last_checked: 2016-02-13 --- #: check_frequency: 60d --- Prenzlauer Promenade: Engstelle, Fußgänger und entgegenkommende Radfahrer	q2::inwork; 11950,18529 11934,18576 11980,18900
 # REMOVED --- #: next_check_id: BLANKENBURGER-2014 vvv --- #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/blankenburger_stra__e_konzept_beschilderung_umleitung_3_ta.pdf?download.html vvv --- #: XXX laut vmz Einbahnstraße bis 31. Dezember 2015 --- #: source_id: IM_022288 vvv --- #: last_checked: 2015-07-19 vvv --- #: next_check: 2015-12-31 vvv --- #: valid: 20140701-20151231 vvv --- Blankenburger Str.: Bauarbeiten, Einbahnstraße, gesperrt in Richtung Westen	q4::inwork; 12008,20368 11959,20365 11799,20224 11690,20127 11632,20086 11563,20048
 # REMOVED (vermutlich wieder offen, weil die südliche Fahrbahn schon fertig ist) --- Hans-Jürgen-Str.: Bauarbeiten, erschwerter Zugang zur Blankenburger Str.	q4::inwork 11839,20176 11799,20224
 # 
@@ -2296,6 +2293,8 @@ Nordsternstr.: Feuerwehrzufahrt	q2 6268,8884 6292,8899
 Finckensteinallee: Fußgänger, Bordstein	q3 4115,2726 4140,2706 4170,2727
 Kietzgrabensteg: einige Fußgänger	q1 22514,4632 22531,4605
 Brücke über den Britzer Damm: Rampe, enge Kurven	q2 12637,6309 12630,6326 12605,6322 12619,6310
+#: XXX_prog BS am Wendehammer, ansonsten vielleicht q1 wg. Fußgängern
+Falkenberger Str.: Bordstein	q3 15819,16857 15892,16834
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

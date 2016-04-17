@@ -21698,6 +21698,9 @@ EOF
        recurrences => [['yearly', days => 22, months => 6]],
        type  => 'gesperrt',
        data  => <<EOF,
+#: note: wird das Fest 2016 stattfinden? siehe:
+#: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5207
+#: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036422794595/422794595/00058741/41-Anlagen/01/1588_XIX_Britzer_Rosenfest.pdf
 userdel	2::temp 12819,4780 12836,4649
 EOF
      },
@@ -24947,6 +24950,16 @@ EOF
        source_id => '2147339935',
        data  => <<EOF,
 userdel	q4::inwork; 22453,1294 22493,1325 22560,1377 22655,1450
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Doberaner Str.: Durchfahrt unter Umständen nicht möglich',
+       recurring => 1,
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: note: am So 2016-04-17 gegen 15 Uhr offen
+userdel	2::night 16196,18364 16315,18208
 EOF
      },
     );

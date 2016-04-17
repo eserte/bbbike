@@ -970,7 +970,7 @@ Grunerstr. - Gustav-Böß-Str.	1 10772,12515 10953,12638
 Grumbkowstr.	1 11563,20048 11627,19907 11695,19760
 Hardangerstr.	1 11725,16630 11720,16752
 #: note: Radfahren explizit verboten
-(Weg)	2 14429,20192 14463,20160
+(Weg)	2 14432,20188 14463,20160
 Caseler Str.	1s:q3 14732,16770 14700,16790 14608,16772
 Ottmachauer Steig	1 -519,4737 -496,4718 -435,4687 -369,4631 -354,4603 -319,4550 -283,4495 -274,4474 -277,4442
 Salemer Steig	1 -581,4662 -558,4639 -531,4599 -493,4529 -472,4476 -459,4422 -441,4354
@@ -1675,7 +1675,7 @@ Heylstr.: breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bo
 Große-Leege-Str.: Mittelstreifen mit Bordsteinen und parkenden Autos	3nocross 15899,14598 15972,14681 16035,14748
 Köpenicker Landstraße: Mittelstreifen mit Bordsteienen	3nocross 16353,7226 16195,7398 15920,7697
 Max-Born-Str.: Straßenbahntrasse	3nocross 19053,2890 19021,2946 18946,3077
-Ostseestr.: Mittelstreifen	3nocross 12090,16199 12232,16110 12347,16039
+Ostseestr.: Mittelstreifen	3nocross 12216,16120 12232,16110 12347,16039
 Schildhornstreifen: Mittelstreifen vor dem Autobahnanschluss	3nocross 4292,6558 4338,6528 4423,6477
 Adlergestell: Mittelstreifen	3nocross 19735,3643 19812,3561 19857,3514 19904,3464
 Adlergestell: Mittelstreifen	3nocross 19735,3643 19676,3705 19633,3751 19587,3801
@@ -1734,7 +1734,7 @@ Invalidenstr.: Mittelstreifen	3nocross 7880,13315 8003,13374 8098,13419
 Alt-Moabit: Mittelstreifen, hohe Bordsteine und parkende Autos	3nocross 7822,12937 7776,12945 7595,12980
 Köpenicker Str.: Mittelstreifen	3nocross 21137,11294 21134,11331 21124,11462
 Märkische Allee/Alt-Friedrichsfelde	3 20018,11698 20026,11663 20064,11687
-Hansastr.: Mittelstreifen	3nocross 15662,16656 15735,16698 15776,16721
+Hansastr.: Straßenbahntrasse	3nocross 15662,16656 15735,16698 15776,16721
 Am Juliusturm: Mittelstreifen	3nocross -3255,14685 -3209,14662 -3150,14631
 Hellersdorfer Str.: Mittelstreifen	3nocross 22883,13013 22924,12833 22967,12647
 Buckower Damm: Mittelstreifen	3nocross 12564,4308 12637,4014 12655,3882
@@ -2074,6 +2074,15 @@ Treppe	0:40 1888,42795
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+#: note: am So, 2016-04-17 gegen 15 Uhr offen vvv
+Tor, kann geschlossen sein	BNP:2::trailer=5 16315,18208
+Tor, kann geschlossen sein	BNP:2::trailer=5 16196,18364
+#: note ^^^
+Schranke	BNP:3::trailer=10 14138,21233
+#: note: Anordnung wie bei Drängelgittern vvv
+Barriere	BNP:2::trailer=8 13148,22396
+Barriere	BNP:2::trailer=8 13385,22383
+#: note ^^^
 Schranke, gut umfahrbar	BNP:0::trailer=3 8243,9766
 #: note: etwas weiter als üblich
 Drängelgitter	BNP:2::trailer=8 4140,2706

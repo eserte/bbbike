@@ -702,7 +702,7 @@ Dorfstr. (Rahnsdorf)	1 29998,3170 29921,3079 29902,3104 29998,3170
 Grunerstr. - Gustav-Böß-Str.	1 10772,12515 10953,12638
 Grumbkowstr.	1 11563,20048 11627,19907 11695,19760
 Hardangerstr.	1 11725,16630 11720,16752
-(Weg)	2 14429,20192 14463,20160
+(Weg)	2 14432,20188 14463,20160
 Caseler Str.	1s 14732,16770 14700,16790 14608,16772
 Ottmachauer Steig	1 -519,4737 -496,4718 -435,4687 -369,4631 -354,4603 -319,4550 -283,4495 -274,4474 -277,4442
 Salemer Steig	1 -581,4662 -558,4639 -531,4599 -493,4529 -472,4476 -459,4422 -441,4354
@@ -1950,8 +1950,8 @@ Lakegrund -> Köpenicker Landstr.: Mittelstreifen mit Bordsteienen	3::igndisp 163
 Straßenbahntrasse	3nocross::ignrte 19053,2890 19021,2946 18946,3077
 Zum Trudelturm -> Max-Born-Str.: Straßenbahntrasse	3::igndisp 19101,3028 19021,2946 19053,2890
 Max-Born-Str. -> Zum Trudelturm: Straßenbahntrasse	3::igndisp 18946,3077 19021,2946 19101,3028
-Mittelstreifen	3nocross::ignrte 12090,16199 12232,16110 12347,16039
-Prenzlauer Allee -> Ostseestr.: Mittelstreifen	3::igndisp 12198,15999 12232,16110 12090,16199
+Mittelstreifen	3nocross::ignrte 12216,16120 12232,16110 12347,16039
+Prenzlauer Allee -> Ostseestr.: Mittelstreifen	3::igndisp 12198,15999 12232,16110 12216,16120
 Mittelstreifen vor dem Autobahnanschluss	3nocross::ignrte 4292,6558 4338,6528 4423,6477
 Schildhornstr. -> Björnsonstr.: Mittelstreifen vor dem Autobahnanschluss	3::igndisp 4423,6477 4338,6528 4290,6445
 Björnsonstr. -> Schildhornstr.: Mittelstreifen vor dem Autobahnanschluss	3::igndisp 4290,6445 4338,6528 4292,6558
@@ -2110,9 +2110,9 @@ Mittelstreifen	3nocross::ignrte 21137,11294 21134,11331 21124,11462
 Elsterwerdaer Pl. -> Köpenicker Str.: Mittelstreifen	3::igndisp 21110,11326 21134,11331 21124,11462
 Köpenicker Str. -> Elsterwerdaer Pl.: Mittelstreifen	3::igndisp 21137,11294 21134,11331 21110,11326
 Märkische Allee/Alt-Friedrichsfelde	3 20018,11698 20026,11663 20064,11687
-Mittelstreifen	3nocross::ignrte 15662,16656 15735,16698 15776,16721
-Hansastr. -> Stadion Buschallee: Mittelstreifen	3::igndisp 15776,16721 15735,16698 15759,16671
-Stadion Buschallee -> Hansastr.: Mittelstreifen	3::igndisp 15759,16671 15735,16698 15662,16656
+Straßenbahntrasse	3nocross::ignrte 15662,16656 15735,16698 15776,16721
+Hansastr. -> Stadion Buschallee: Straßenbahntrasse	3::igndisp 15776,16721 15735,16698 15759,16671
+Stadion Buschallee -> Hansastr.: Straßenbahntrasse	3::igndisp 15759,16671 15735,16698 15662,16656
 Mittelstreifen	3nocross::ignrte -3255,14685 -3209,14662 -3150,14631
 Mittelstreifen	3nocross::ignrte 22883,13013 22924,12833 22967,12647
 Hellersdorfer Str. -> Bansiner Str.: Mittelstreifen	3::igndisp 22967,12647 22924,12833 22896,12827
@@ -2382,6 +2382,11 @@ tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
 tragen (6 Stufen)	0:15:-90 4608,63927
 Treppe	0:40:-131 1888,42795
+Tor, kann geschlossen sein	BNP:2:-241:trailer=5 16315,18208
+Tor, kann geschlossen sein	BNP:2:-217:trailer=5 16196,18364
+Schranke	BNP:3:-76:trailer=10 14138,21233
+Barriere	BNP:2:-85:trailer=8 13148,22396
+Barriere	BNP:2:-86:trailer=8 13385,22383
 Schranke, gut umfahrbar	BNP:0:-160:trailer=3 8243,9766
 Drängelgitter	BNP:2:-51:trailer=8 4140,2706
 Drängelgitter	BNP:3:-76:trailer=10 7886,8335
