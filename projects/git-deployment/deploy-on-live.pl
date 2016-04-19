@@ -88,7 +88,7 @@ GetOptions(
 	  )
     or error "usage: $0 [--root-deploy-dir /path/to/dir] [--dry-run] [--test-jobs ...] [--skip-tests] [--no-switch]";
 
-if ($log_dir) {
+if ($log_dir && !$dry_run) {
     my $log_file = $log_dir . '/bbbike_deploy_' . strftime('%FT%T', localtime) . '.log';
     require File::Tee;
     File::Tee::tee(\*STDOUT, '>>', $log_file);
