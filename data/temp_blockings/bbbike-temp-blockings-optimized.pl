@@ -81,26 +81,7 @@ userdel	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 1199
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 5644,6936 5533,6753 5424,6584 5370,6486
-',
-         'from' => 1460707200,
-         'id' => 10,
-         'periodic' => 1,
-         'recurrence_prewarn_days' => 21,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              11,
-                              'months',
-                              4
-                            ]
-                          ],
-         'source_id' => 'http://nareyka.events/news-events/mehr/artikel/44-fruehlingsfest-rheinstrasse.html',
-         'text' => 'Rheinstraßenfest in der Rheinstraße zwischen Kaisereiche und Walther-Schreiber-Platz, am 16.04.2016 und 17.04.2016',
-         'until' => 1460930399
-       },
+       undef,
        undef,
        undef,
        undef,

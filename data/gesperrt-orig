@@ -2670,6 +2670,15 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: WEICHSELPLATZ-2016 vvv
+#: last_checked: 2016-04-19 vvv
+#: check_frequency: 14d vvv
+Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12844,9351 12851,9309 12907,9073
+Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12907,9073 12851,9309 12844,9351
+#: check_frequency ^^^
+#: last_checked ^^^
+#: next_check_id ^^^
+# 
 #: last_checked: 2016-03-31 vvv
 #: check_frequency: 60d vvv
 Keibelstr.: Bauarbeiten, Durchfahrt nicht möglich	3 11201,13289 11108,13142 *
@@ -2698,7 +2707,7 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,
 #: check_frequency: 60d
 Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7703,14582 7527,14684
 # 
-#: last_checked: 2016-04-13 vvv
+#: last_checked: 2016-04-19 vvv
 Treptower Park: Bauarbeiten, Weg noch nicht fertiggestellt	2::inwork 14318,9688 14443,9731
 # REMOVED --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14361,9772 14436,9784
 Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14361,9772 14436,9784 14460,9814 14483,9843 14500,9856
@@ -2878,11 +2887,11 @@ Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, gg
 #: by ^^^
 #: XXX ^^^
 # 
-#: last_checked: 2016-03-15
+#: last_checked: 2016-04-19
 #: check_frequency: 120d
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 # 
-#: last_checked: 2016-03-15
+#: last_checked: 2016-04-19
 #: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 
