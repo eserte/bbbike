@@ -3122,27 +3122,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 22133,4644 22111,4562 22093,4499
-userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
-',
-         'from' => 1461189600,
-         'id' => 2419,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              21,
-                              'months',
-                              4
-                            ]
-                          ],
-         'source_id' => 'http://www.weinfeste-in-deutschland.de/winzerfest-in-berlin-koepenick.html',
-         'text' => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 22.4.2016 bis 24.4.2016',
-         'type' => 'gesperrt',
-         'until' => 1461535199
-       },
+       undef,
        undef,
        undef,
        {
@@ -4001,6 +3981,29 @@ userdel	2::night 16196,18364 16315,18208
          'text' => 'Doberaner Str.: Durchfahrt unter Umständen nicht möglich',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: XXX Gesamtmaßnahme bis 14. Mai 2016, Sperrungen werden sich ändern
+#: next_check: 2016-05-01
+#: priority: #A
+userdel	q4::inwork; 8642,7876 8553,7795 8512,7757 8465,7699
+',
+         'from' => 1461535200,
+         'id' => 2780,
+         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.471198.php',
+         'text' => 'Werner-Voß-Damm: Bauarbeiten, Sperrung zwischen Boelckestr. bis Hessenring, 25. bis 30. April 2016',
+         'type' => 'handicap',
+         'until' => 1462053599
+       },
+       {
+         'data' => 'userdel	q4::inwork; 25010,4807 25171,4757 25228,4745 25248,4752 25369,4790 25434,4825 25477,4832 25519,4830
+',
+         'from' => 1462053600,
+         'id' => 2781,
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.469998.php',
+         'text' => 'Müggelseedamm: Bauarbeiten zwischen Charlotte-E.-Pauly-Str. und Bölschestr., Fahrbahn in Richtung Osten gesperrt, 2. Mai 2016 bis November 2016',
+         'type' => 'handicap',
+         'until' => 1480546799
        }
      
 );

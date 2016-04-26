@@ -35,7 +35,7 @@ Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,112
 # REMOVED --- #: last_checked: 2016-03-07 --- #: check_frequency: 7d --- Revaler Str.: Bauarbeiten an der Kreuzung Warschauer Str.	q3::inwork 13588,11490 13711,11458
 # 
 #: XXX laut Fritz bis Ende März 2016 (sieht aber schlecht aus für diesen Termin)
-#: last_checked: 2016-04-19 vvv
+#: last_checked: 2016-04-26 vvv
 #: check_frequency: 7d vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
@@ -88,14 +88,11 @@ Schützenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10116,11485 9949,11470
 # 
 # REMOVED (wieder offen) --- #: XXX gibt es hier noch Einschränkungen? --- #: last_checked: 2016-01-14 --- #: next_check: 2016-02-03 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9935,11566 9990,11571
 # REMOVED (wieder offen, allerdings offiziell Einbahnstraße) --- #: XXX bis wann dauert die Sperrung an? --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6992 (Frage nach Ende der Bauarbeiten) --- #: last_checked: 2016-03-17 --- Michaelkirchplatz: Sperrung der Fahrbahn am Engelbecken	q2::inwork 11415,11392 11349,11227
-# 
-#: last_checked: 2016-04-19
-Michaelkirchplatz: direkte Durchfahrt am Engeldamm gesperrt, Umweg erforderlich	q2::inwork 11542,11342 11473,11180
-# 
+# REMOVED (Passage wieder möglich) --- #: last_checked: 2016-04-19 --- Michaelkirchplatz: direkte Durchfahrt am Engeldamm gesperrt, Umweg erforderlich	q2::inwork 11542,11342 11473,11180
 # REMOVED (zwar noch Einbahnstraße, aber man kann mittlerweile relativ gut vorbei) --- #: XXX bis wann dauert die Sperrung an? Wird die Straße dann asphaltiert sein? (siehe auch Änderung in qualitaet_s-orig, "provisorischer Asphalt") --- #: last_checked: 2016-03-17 --- Leuschnerdamm: Sperrung der Fahrbahn Richtung Michaelkirchplatz	q4::inwork; 11458,11136 11473,11180
 # 
 #: XXX nach den Bauarbeiten bessere Qualität?
-#: last_checked: 2016-04-19
+#: last_checked: 2016-04-26
 Melchiorstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 11542,11342 11726,11265 11921,11185
 # 
 # REMOVED (nicht mehr gesperrt für Radfahrer) --- #: XXX nochmal genauer anschauen... --- #: last_checked: 2014-11-10 --- Gipsstr.: Bauarbeiten zwischen Rosenthaler Str. und Joachimstr., Einbahnstraße	q2::inwork; 10350,13376 10199,13446
@@ -231,9 +228,10 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED (das Einfahrt verboten-Schild hängt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9949,11470 9935,11566
 # 
 #: XXX laut fritz bis 12.02.2016, geht aber länger; laut vmz bis Ende Juni 2016
+#: source_id: 2147339998
 #: last_checked: 2016-04-15
 #: next_check: 2016-06-30
-Alte Jakobstr.: Bauarbeiten, teilweise Einbahnstraße	q3::inwork; 10256,11160 10437,11352
+Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10256,11160 10437,11352
 #: last_checked: 2016-04-15 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10624,11548 10640,11564
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10437,11352 10489,11405
@@ -282,7 +280,7 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10437,11352 10489,11405
 ### Neukölln ###
 # 
 #: next_check_id: WEICHSELPLATZ-2016
-#: last_checked: 2016-04-19
+#: last_checked: 2016-04-26
 #: check_frequency: 14d
 Weichselplatz: Bauarbeiten, Gehweg benutzen	q4::inwork 12761,9190 12851,9309 12844,9351
 # 
@@ -315,6 +313,16 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süde
 # REMOVED (fertig, noch immer KS) --- #: next_check_id: FRIEDEL-2014 --- #: XXX: eventuell wird mit den Bauarbeiten an den Wasserleitungen auch die Fahrbahn neu gemacht? --- #: last_checked: 2014-12-12 --- #: check_frequency: 60d --- Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12074,9689 12088,9775
 # 
 ### Lichtenberg ###
+# 
+#: next_check_id: HAUPTSTR-2015
+#: source_id: 2147339565
+#: source_id: LMS-BR_r_LMS-BR_65986
+#: XXX laut vmz bis Ende August 2016, laut fritz bis 31.07.2016
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1604/nachricht5997.html
+#: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.470764.php
+#: last_checked: 2016-04-26
+#: next_check: 2016-07-31
+Kynaststr./Hauptstr.: Bauarbeiten, Gehweg benutzen	q3::inwork 14882,10732 14906,10820
 # 
 # REMOVED --- #: last_checked: 2015-12-02 --- #: check_frequency: 14d --- Wiesenweg: Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q3::inwork 15303,11412 15477,11338
 # REMOVED (laut osm beendet) --- #: osm_watch: way id="4782474" version="12" --- #: next_check_id: DEUTSCHMEISTER-2015 --- #: last_checked: 2015-09-23 --- Deutschmeisterstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 15370,12264 15443,12222
@@ -483,7 +491,7 @@ Tiergarten: einige Fußgänger	q1 8571,11846 8501,11815 8244,11878 8221,11885 8132
 Tiergarten: einige Fußgänger	q1 8172,11679 8210,11775 8244,11878 8327,12174 8344,12221 8391,12389 8400,12417
 (Bremer Weg - Fasanerieallee): Parkweg	q1 6337,11887 6379,11843 6406,11784 6452,11778 6540,11754
 (zum Rosengarten): einige Fußgänger	q1 7026,12054 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
-#: last_checked: 2016-04-19
+#: last_checked: 2016-04-26
 #: check_frequency: 7d
 # XXX später wieder einsetzen: Parkweg: enge Brücke, Fußweg	q2 14318,9688 14361,9772 14404,9847 14448,9922
 Parkweg: während der Bauarbeiten relativ eng	q3::inwork 14318,9688 14361,9772 14404,9847 14448,9922

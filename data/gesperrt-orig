@@ -2670,8 +2670,11 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2016-04-25
+Haasestr.: Bauarbeiten, keine Durchfahrt möglich	2::inwork 14328,11320 14286,11186
+# 
 #: next_check_id: WEICHSELPLATZ-2016 vvv
-#: last_checked: 2016-04-19 vvv
+#: last_checked: 2016-04-26 vvv
 #: check_frequency: 14d vvv
 Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12844,9351 12851,9309 12907,9073
 Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12907,9073 12851,9309 12844,9351
@@ -2707,8 +2710,9 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,
 #: check_frequency: 60d
 Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7703,14582 7527,14684
 # 
-#: last_checked: 2016-04-19 vvv
-Treptower Park: Bauarbeiten, Weg noch nicht fertiggestellt	2::inwork 14318,9688 14443,9731
+#: last_checked: 2016-04-26 vvv
+# REMOVED --- Treptower Park: Bauarbeiten, Weg noch nicht fertiggestellt	2::inwork 14318,9688 14443,9731
+Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14443,9731 14361,9772
 # REMOVED --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14361,9772 14436,9784
 Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14361,9772 14436,9784 14460,9814 14483,9843 14500,9856
 # REMOVED --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14575,9648 14604,9674
@@ -3007,7 +3011,7 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 #: XXX geplante Fertigstellung (als Autostraße) im Dezember 2013
 #: XXX wrote Mail about current status (2013-11-05), no response
 # REMOVED --- osm_watch: way id="183406331" version="3"
-#: last_checked: 2016-03-26
+#: last_checked: 2016-04-20
 #: check_frequency: 120d
 Nordufer: Neubau	2:inwork 7427,14648 7212,14738
 # 

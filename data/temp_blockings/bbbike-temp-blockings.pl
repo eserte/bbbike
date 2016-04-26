@@ -24962,4 +24962,25 @@ EOF
 userdel	2::night 16196,18364 16315,18208
 EOF
      },
+     { from  => 1461535200, # 2016-04-25 00:00
+       until => 1462053599, # 2016-04-30 23:59
+       text  => 'Werner-Voß-Damm: Bauarbeiten, Sperrung zwischen Boelckestr. bis Hessenring, 25. bis 30. April 2016',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.471198.php',
+       data  => <<EOF,
+#: XXX Gesamtmaßnahme bis 14. Mai 2016, Sperrungen werden sich ändern
+#: next_check: 2016-05-01
+#: priority: #A
+userdel	q4::inwork; 8642,7876 8553,7795 8512,7757 8465,7699
+EOF
+     },
+     { from  => 1462053600, # 2016-05-01 00:00
+       until => 1480546799, # 2016-11-30 23:59
+       text  => 'Müggelseedamm: Bauarbeiten zwischen Charlotte-E.-Pauly-Str. und Bölschestr., Fahrbahn in Richtung Osten gesperrt, 2. Mai 2016 bis November 2016',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.469998.php',
+       data  => <<EOF,
+userdel	q4::inwork; 25010,4807 25171,4757 25228,4745 25248,4752 25369,4790 25434,4825 25477,4832 25519,4830
+EOF
+     },
     );
