@@ -26,8 +26,17 @@ for my $def (
     is Time::Zone::By4D::get_timeoffset($lon,$lat,1387287410), 3600, "time offset in $place (without DST)";
 }
 
+for my $def (
+	     [-0.127233,51.507474,'London'],
+	    ) {
+    my($lon,$lat,$place) = @$def;
+    is Time::Zone::By4D::get_timezone($lon,$lat,time), 'Europe/London', "in $place";
+    is Time::Zone::By4D::get_timeoffset($lon,$lat,1402839390), 3600, "time offset in $place (with DST)";
+    is Time::Zone::By4D::get_timeoffset($lon,$lat,1387287410),    0, "time offset in $place (without DST)";
+}
+
 {
-    eval { Time::Zone::By4D::get_timezone(0,51.5,time) };
+    eval { Time::Zone::By4D::get_timezone(-30,51.5,time) };
     like $@, qr{No support for location};
 }
 
