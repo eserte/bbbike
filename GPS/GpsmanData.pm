@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2005,2007,2010,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2005,2007,2010,2014,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -44,7 +44,7 @@ BEGIN {
 }
 
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = 1.71;
+$VERSION = 1.72;
 
 use constant TYPE_UNKNOWN  => -1;
 use constant TYPE_WAYPOINT => 0;
@@ -121,9 +121,12 @@ use GPS::Util; # for eliminate_umlauts
 	my($wpt, $container) = @_;
 	if ($container->PositionFormat eq 'DDD') {
 	    if (defined $wpt->Latitude) {
-		my $lat_prefix = $wpt->Latitude  < 0 ? 'S' : 'N';
-		my $lon_prefix = $wpt->Longitude < 0 ? 'W' : 'E';
-		($lat_prefix . $wpt->Latitude, $lon_prefix . $wpt->Longitude);
+		my($lat, $lon) = ($wpt->Latitude, $wpt->Longitude);
+		# Yes, do a string operation, so the number does not loose any
+		# precision or trailing zeroes.
+		my $lat_prefix = $lat =~ s{^-}{} ? 'S' : 'N';
+		my $lon_prefix = $lon =~ s{^-}{} ? 'W' : 'E';
+		($lat_prefix . $lat, $lon_prefix . $lon);
 	    } else {
 		(undef, undef);
 	    }
@@ -783,7 +786,9 @@ sub convert_DDD_to_DDD {
     if ($in =~ /^([NESW]?)(\d+\.?\d*)$/) {
 	my($dir,$ddd) = ($1,$2);
 	if (defined $dir && $dir =~ /[SW]/) {
-	    $ddd *= -1;
+	    # Do a string operation instead of *= -1, to preserve
+	    # trailing zeroes.
+	    $ddd =~ s{^}{-};
 	}
 	return $ddd;
     } else {

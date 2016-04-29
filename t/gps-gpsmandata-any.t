@@ -28,7 +28,7 @@ use File::Temp qw(tempfile);
 
 use BBBikeTest qw(eq_or_diff xmllint_string);
 
-plan tests => 74;
+plan tests => 78;
 
 use GPS::GpsmanData::Any;
 
@@ -333,6 +333,24 @@ EOF
 	my $first_chunk = $gps->Chunks->[0];
 	is $first_chunk->TrackAttrs->{'srt:device'}, 'Montana 650', 'preserve creator into srt:device';
 	is $first_chunk->Name, '2016-01-01', 'name of trk';
+
+	ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile), 'Roundtrip check for gpx file';
+    }
+}
+
+{
+    # Test case here: negative lon/lat
+    my $sample_wpt_gpx = <<'EOF';
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?><gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:wptx1="http://www.garmin.com/xmlschemas/WaypointExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" creator="eTrex 30" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www8.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/WaypointExtension/v1 http://www8.garmin.com/xmlschemas/WaypointExtensionv1.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd"><metadata><link href="http://www.garmin.com"><text>Garmin International</text></link><time>2000-01-01T12:34:56Z</time></metadata><wpt lat="-52.450380" lon="-1.726790"><ele>114.034470</ele><time>2000-01-01T13:17:10Z</time><name>225</name><sym>BBBike23</sym></wpt></gpx>
+EOF
+    my $tmpfile = _create_temporary_gpx($sample_wpt_gpx);
+    {
+	my $gps = GPS::GpsmanData::Any->load($tmpfile);
+	isa_ok $gps, 'GPS::GpsmanMultiData';
+
+	my($wpt) = @{ $gps->Chunks->[0]->Waypoints };
+	is $wpt->Longitude, '-1.726790';
+	is $wpt->Latitude, '-52.450380';
 
 	ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile), 'Roundtrip check for gpx file';
     }
