@@ -124,12 +124,10 @@ asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9233,8597 9229,8718
 	RW2;RW1 6272,10926 6145,10975
 	RW4; 5652,11004 5716,10978 5829,10964 5986,10976
 # REMOVED (alter Zustand ist wieder hergestellt) --- #: XXX während der Bauarbeiten am Bikinihaus ist die Busspur aufgehoben, stattdessen gibt es einen schmalen Radfahrstreifen --- #: by: http://www.tagesspiegel.de/berlin/richtfest-in-der-city-west-bikini-party-im-spaetsommer/7099082.html (Eröffnung im Herbst 2013) --- #: last_checked: 2013-12-22 --- #: check_frequency: 14d ---	RW4; 5986,10976 5829,10964 5716,10978 5652,11004
-#: note: eigentlich nicht für Radfahrer freigegeben (gesehen 2016-03)
-Busspur ist immer gültig	RW5; 5986,10976 5829,10964 5716,10978 5652,11004
+Busspur gilt 7-22 Uhr	RW5; 5986,10976 5829,10964 5716,10978 5652,11004
 	RW4;RW1 5986,10976 6058,10988
 	RW2;RW1 6058,10988 6145,10975
-#: note: eigentlich nicht für Radfahrer freigegeben (2013-01)
-Busspur ist immer gültig	RW5; 5652,11004 5542,11075
+Busspur gilt 7-22 Uhr	RW5; 5652,11004 5542,11075
 Busspur ist immer gültig	RW5; 5542,11075 5652,11004
 	RW1;RW8 6873,11011 6742,11099 6626,11178 6582,11202
 	RW10;RW10 6880,11110 6851,11346
@@ -568,7 +566,8 @@ altes Verbundsteinpflaster	RW1;RW1 10047,3794 10236,3777 10461,3757 10561,3748 1
 #: osm_watch: way id="29890799" version="11"
 #: last_checked: 2016-03-28 (noch Bauarbeiten, Richtung Süden noch keine Markierungen)
 #: check_frequency: 30d
-nur teilweise provisorische Radspuren	RW0;RW0 9953,3806 10181,4181 10185,4187 10221,4245 10288,4354
+#: by: Susan Richter
+	RW4?;RW4? 9953,3806 10181,4181 10185,4187 10221,4245 10288,4354
 provisorische Radspuren	RW3;RW3 10288,4354 10412,4552
 	RW1;RW1 10412,4552 10505,4713 10755,5129
 	RW2;RW1 10755,5129 10800,5203
@@ -1019,7 +1018,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5542,11075 5459,11135
 #: XXX früher: Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5
 #: XXX bis Ende 2016, laut rbbtext bis 16.12.2016
 #: source_id: 2147339533
-#: last_checked: 2016-03-10
+#: last_checked: 2016-04-29
 #: next_check: 2016-06-01
 	RW0;RW0  5459,11135 5258,11285 5166,11343 5091,11406 5085,11413 4919,11605
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4919,11605 4900,11626 4838,11697
@@ -1107,7 +1106,7 @@ die letzten 50 Meter sind benutzungspflichtig	RW1; 18225,7004 18010,7133
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
-#: last_checked: 2016-04-11
+#: last_checked: 2016-04-27
 #: check_frequency: 90d
 	RW8;RW2 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
@@ -1423,7 +1422,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2016-04-14
+#: last_checked: 2016-04-28
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -4545,8 +4544,8 @@ Tempo 10	RW6;RW6 13559,12779 13470,12990
 	RW4;RW3 14096,12827 14066,12836
 #: XXX wegen Bauarbeiten am Hochhaus "Upper West" sind die Radspuren aufgehoben
 #: by: http://www.tagesspiegel.de/berlin/stadtentwicklung-zwillingsturm-soll-2016-in-der-city-west-eroeffnen/7416454.html (geplante Eröffnung Mitte 2016)
-#: last_checked: 2016-03-10
-#: next_check: 2016-05-01
+#: last_checked: 2016-04-28
+#: next_check: 2016-06-01
 #	RW3; 5488,10978 5613,10963 5652,11004
 ##: note: teilweise vor dem Hotel unterbrochen (wegen Ladezone?)
 #	RW3; 5652,11004 5613,10963 5488,10978

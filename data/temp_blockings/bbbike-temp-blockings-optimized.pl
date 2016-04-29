@@ -3129,7 +3129,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
 #: source_id: 2147339529
-#: last_checked: 2016-03-10
+#: last_checked: 2016-04-29
 #: check_frequency: 90d
 userdel	q2::inwork 5258,11285 5236,10994
 ',
@@ -4004,6 +4004,16 @@ userdel	q4::inwork; 8642,7876 8553,7795 8512,7757 8465,7699
          'text' => 'Müggelseedamm: Bauarbeiten zwischen Charlotte-E.-Pauly-Str. und Bölschestr., Fahrbahn in Richtung Osten gesperrt, 2. Mai 2016 bis November 2016',
          'type' => 'handicap',
          'until' => 1480546799
+       },
+       {
+         'data' => 'userdel	q4::inwork 15904,12340 15928,12483 15947,12626
+',
+         'from' => 1462399200,
+         'id' => 2782,
+         'source_id' => 'http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.473610.php',
+         'text' => 'Ruschestr.: Bauarbeiten, Sperrung der Fahrbahn zwischen Normannenstr. und Gotlindestr., 6. Mai 2016 bis 8. Mai 2016',
+         'type' => 'handicap',
+         'until' => 1462744799
        }
      
 );

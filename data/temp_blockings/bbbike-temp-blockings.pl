@@ -21324,7 +21324,7 @@ EOF
 #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
 #: source_id: 2147339529
-#: last_checked: 2016-03-10
+#: last_checked: 2016-04-29
 #: check_frequency: 90d
 userdel	q2::inwork 5258,11285 5236,10994
 EOF
@@ -24981,6 +24981,15 @@ EOF
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.469998.php',
        data  => <<EOF,
 userdel	q4::inwork; 25010,4807 25171,4757 25228,4745 25248,4752 25369,4790 25434,4825 25477,4832 25519,4830
+EOF
+     },
+     { from  => 1462399200, # 2016-05-05 00:00
+       until => 1462744799, # 2016-05-08 23:59
+       text  => 'Ruschestr.: Bauarbeiten, Sperrung der Fahrbahn zwischen Normannenstr. und Gotlindestr., 6. Mai 2016 bis 8. Mai 2016',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.473610.php',
+       data  => <<EOF,
+userdel	q4::inwork 15904,12340 15928,12483 15947,12626
 EOF
      },
     );
