@@ -9464,14 +9464,14 @@ EOF
 userdel	2::temp 12891,12549 12869,12425
 EOF
      },
-     { from  => $isodate2epoch->("2015-06-06 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-06-07 22:00:00"),
+     { from  => $isodate2epoch->("2016-06-04 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-06-05 22:00:00"),
        periodic => 1, # erster Termin im Sommer
        recurrences => [['yearly', days => 31, months => 5]], # kann aber auch erst im Juli stattfinden
-       text  => 'Open Air Gallery am 7. Juni 2015 auf der Oberbaumbrücke (10:00 - 22:00)',
+       text  => 'Open Air Gallery am 5. Juni 2016 auf der Oberbaumbrücke (10:00 - 20:00)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.openairgallery.de/
+#: by: http://www.openairgallery.de/index.html?y=2016
 userdel	2::temp 13178,10623 13206,10651 13305,10789 13332,10832
 EOF
      },
@@ -18107,11 +18107,11 @@ userdel	2::temp 8018,12135 7823,12120 7775,12114 7429,12070 7658,11947 7634,1192
 userdel	2::temp 7429,12070 7031,12024 6884,12006
 EOF
      },
-     { from  => $isodate2epoch->("2015-06-25 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-06-28 23:59:59"),
+     { from  => $isodate2epoch->("2016-06-23 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-06-26 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 6]],
-       text  => 'Bergmannstraße (Kreuzberg): Veranstaltung (Bergmannstraßenfest), Straße vollständig zwischen Mehringdamm und Zossener Str. gesperrt (26. bis 28. Juni 2015)',
+       text  => 'Bergmannstraße (Kreuzberg): Veranstaltung (Bergmannstraßenfest), Straße vollständig zwischen Mehringdamm und Zossener Str. gesperrt (24. bis 26. Juni 2016)',
        type  => 'gesperrt',
        source_id => 'http://www.kiez-und-kultur.de/bergmannstrassenfest/',
        data  => <<EOF,
@@ -19171,11 +19171,11 @@ EOF
 userdel	1::temp 1574,11379 1625,11380 1834,11408 1960,11426 2109,11441
 EOF
      },
-     { from  => $isodate2epoch->("2015-07-04 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-07-05 22:00:00"),
+     { from  => $isodate2epoch->("2016-07-02 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-07-03 22:00:00"),
        periodic => 1, # zweiter Termin im Sommer
        recurrences => [['yearly', days => 5, months => 7]], # kann aber auch erst im August stattfinden
-       text  => 'Open Air Gallery am 5. Juli 2015 auf der Oberbaumbrücke (10:00 - 22:00)',
+       text  => 'Open Air Gallery am 3. Juli 2016 auf der Oberbaumbrücke (10:00 - 20:00)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	q4::temp 13178,10623 13206,10651 13305,10789 13332,10832
@@ -21499,13 +21499,13 @@ EOF
 userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 11162,19844 11312,19920 11425,19978 11563,20048
 EOF
      },
-     { from  => $isodate2epoch->("2015-05-29 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-06-01 23:59:59"),
-       text  => 'Internationaler Kindertag im FEZ, Veranstaltung, einige Wege und Straßen sind gesperrt, 30. Mai 2015 bis 1. Juni 2015',
+     { from  => $isodate2epoch->("2016-05-30 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-06-01 23:59:59"),
+       text  => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 1. Juni 2016',
        periodic => 1,
        recurrences => [["yearly", "days" => 30, "months" => 5]],
        type  => 'gesperrt',
-       source_id => 'http://www.kindertag-berlin.de/?date=20150503',
+       source_id => 'http://fez-berlin.de/nc/programm/detailansicht/internationales-kindertagsfest-303/',
        data  => <<EOF,
 userdel	2::temp 20755,5750 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
 userdel	2::temp 19976,6087 20015,6069 20293,6278 20200,6321 20106,6357
@@ -22923,9 +22923,9 @@ userdel	2::inwork 5993,5422 6007,5785 6007,5882 6001,5974 6134,5986 6116,6130
 userdel	2::inwork 5935,5874 6007,5882 6134,5894
 EOF
      },
-     { from  => 1402264800, # 2014-06-09 00:00
-       until => $isodate2epoch->("2014-07-18 00:00:00"), # 1405461600, # 2014-07-16 00:00
-       text  => 'Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Dorotheenstr. und Behrenstr.: Sperrungen wegen der Fußball-WM-Fanmeile, vom 11.06.2014 06 Uhr bis zum 18.07.14',
+     { from  => $isodate2epoch->("2016-06-09 00:00:00"), # ein Tag Vorlauf (zu wenig?)
+       until => $isodate2epoch->("2016-07-11 23:59:59"), # ein Tag Nachlauf (zu wenig?)
+       text  => 'Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Dorotheenstr. und Behrenstr.: Sperrungen wegen der Fußball-EM-Fanmeile, vom 10.06.2016 bis zum 10.07.2016',
        type  => 'gesperrt',
        source_id => 'IM_022090',
        data  => <<EOF,
@@ -24980,6 +24980,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.469998.php',
        data  => <<EOF,
+#: source_id: 2147340012
 userdel	q4::inwork; 25010,4807 25171,4757 25228,4745 25248,4752 25369,4790 25434,4825 25477,4832 25519,4830
 EOF
      },

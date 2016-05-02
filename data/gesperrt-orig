@@ -2670,7 +2670,7 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: last_checked: 2016-04-25
+#: last_checked: 2016-04-30
 Haasestr.: Bauarbeiten, keine Durchfahrt möglich	2::inwork 14328,11320 14286,11186
 # 
 #: next_check_id: WEICHSELPLATZ-2016 vvv
@@ -2723,7 +2723,8 @@ Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14448,9922 14460,9871 1448
 #: last_checked ^^^
 # 
 #: last_checked: 2015-12-26
-#: osm_watch: way id="311371554" version="3"
+#: XXX laut osm mittlerweile offen ("unclassified")
+#: osm_watch: way id="311371554" version="4"
 Clara-Immerwahr-Str.: Bauzäune	2::inwork 19202,17471 19546,17351 19798,17263 19845,17235 19914,17203
 # 
 #: last_checked: 2016-03-31
@@ -2774,7 +2775,8 @@ Theodorstr.: Bauarbeiten, gesperrt	2::inwork 24897,11083 24905,10955 24913,10884
 # 
 #: XXX Wann wird die Straße eröffnet? Wird die Straße verkehrsberuhigt sein?
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2016 (Grundstücksnummerierungen)
-#: osm_watch: way id="338546087" version="2"
+#: XXX laut osm offen ("residential")
+#: osm_watch: way id="338546087" version="3"
 #: last_checked: 2015-08-02
 #: next_check: 2015-11-02 (public)
 Pfarrhufenanger: noch in Bau, gesperrt	2::inwork 25599,13069 25441,12838 25266,12622
@@ -2839,7 +2841,7 @@ Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr
 #: last_checked ^^^
 #: XXX ^^^
 # 
-#: osm_watch: way id="257072322" version="6"
+#: osm_watch: way id="257072322" version="7"
 #: last_checked: 2016-04-05
 #: check_frequency: 100d
 Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 18892,3256 18953,3318
@@ -2861,7 +2863,7 @@ Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17651,-393
 #: source_id: IM_023816 vvv
 #: source_id: 2147339541 vvv
 #: XXX vermutlich bis Mitte Mai 2016 andauernd; laut fritz bis Mitte Juni
-#: last_checked: 2016-04-11 vvv
+#: last_checked: 2016-05-02 vvv
 #: next_check: 2016-06-17 vvv
 Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081
 Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081

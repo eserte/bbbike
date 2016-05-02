@@ -149,7 +149,6 @@ Herrfurthstr.: Asphalt	Q0 11647,7940 11573,7924 11472,7899
 Herrfurthplatz: mäßiges Kopfsteinpflaster	Q2 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
 Feurigstr.: mäßiges Kopfsteinpflaster	Q2 7497,8916 7467,8863 7389,8837
 Feurigstr.: mäßiges Kopfsteinpflaster	Q2 7086,8579 7012,8511 6807,8309
-#: XXX liegt hier noch Kopfsteinpflaster?
 Herbertstr.: Kopfsteinpflaster	Q2 7360,8918 7389,8837 7402,8783
 Ebersstr.: Fahrbahn Kopfsteinpflaster, Radweg asphaltiert	Q0 7395,8761 7313,8661 7288,8635
 Ebersstr.: Kopfsteinpflaster	Q2 7242,8586 7166,8487
@@ -11033,6 +11032,7 @@ Paracelsusstr.: schlechter Asphalt	Q2+ 11671,19204 11613,19312 11575,19296
 # 
 #: by: Henry Könner vvv
 Honnefer Str.: Asphalt	Q0 19299,8946 19195,9122
+#: confirmed_by: srt
 Voltastr.: Kopfsteinpflaster	Q2 9034,14910 9201,14997 9355,15078 9566,15188
 #: by: ^^^
 # 
@@ -24413,7 +24413,9 @@ Theodor-Heuss-Weg: Kleinpflaster	Q2 9081,14363 9128,14461 9197,14562
 Theodor-Heuss-Weg: Gehwegplatten, Sandweg	Q1 9250,14658 9223,14608 9197,14562
 #: confirmed_by: srt
 Wilhelm-Zermin-Weg: Verbundsteine	Q1 9279,14495 9338,14587
+#: confirmed_by: srt
 Max-Urich-Str.: Kopfsteinpflaster	Q2 9034,14910 8953,14758
+#: confirmed_by: srt
 Gartenplatz: Asphalt	Q0 8870,14637 8953,14758
 Ravenéstr.: Kopfsteinpflaster	Q2 8232,15220 8001,15205
 (Schulzendorfer - Schönwalder Str.): Verbundsteine	Q1 8264,14902 8245,15004 8266,15134

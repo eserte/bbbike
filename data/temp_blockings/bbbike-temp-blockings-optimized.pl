@@ -116,34 +116,7 @@ userdel	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 1199
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.myfest36.de/
-userdel	2::temp 11763,10635 11722,10533 11949,10414
-userdel	2::temp 11556,10869 11770,10774 11760,10732 11781,10696 11763,10635 11505,10744 11556,10869 11589,10947 11640,11067
-userdel	2::temp 11958,11045 11897,10887 11841,10747 11824,10708 11781,10696
-userdel	2::temp 11805,10899 11803,10857
-userdel	2::temp 11275,10723 11301,10783 11329,10785 11365,10791 11403,10782 11505,10744 11463,10642 11722,10533
-userdel	2::temp 11841,10747 11770,10774 11799,10848
-userdel	2::temp 11463,10642 11275,10723 11234,10739 11159,10769
-userdel auto	3 11258,10682 11275,10723 11253,10778
-userdel auto	3 11253,10778 11275,10723 11258,10682
-',
-         'from' => 1462010400,
-         'id' => 45,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'MyFest: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2016',
-         'type' => 'gesperrt',
-         'until' => 1462139999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1244,7 +1217,26 @@ userdel	2::temp 6945,9142 7044,9163
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.openairgallery.de/index.html?y=2016
+userdel	2::temp 13178,10623 13206,10651 13305,10789 13332,10832
+',
+         'from' => 1465027200,
+         'id' => 1107,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              31,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Open Air Gallery am 5. Juni 2016 auf der Oberbaumbrücke (10:00 - 20:00)',
+         'type' => 'gesperrt',
+         'until' => 1465156800
+       },
        undef,
        undef,
        undef,
@@ -2576,7 +2568,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im April von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Mai von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2618,7 +2610,28 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 9248,9350 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
+userdel auto	3 9487,9209 9505,9306 9524,9426
+userdel auto	3 9524,9426 9505,9306 9487,9209
+',
+         'from' => 1466632800,
+         'id' => 2089,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              8,
+                              'months',
+                              6
+                            ]
+                          ],
+         'source_id' => 'http://www.kiez-und-kultur.de/bergmannstrassenfest/',
+         'text' => 'Bergmannstraße (Kreuzberg): Veranstaltung (Bergmannstraßenfest), Straße vollständig zwischen Mehringdamm und Zossener Str. gesperrt (24. bis 26. Juni 2016)',
+         'type' => 'gesperrt',
+         'until' => 1466978399
+       },
        undef,
        undef,
        undef,
@@ -2768,7 +2781,25 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	q4::temp 13178,10623 13206,10651 13305,10789 13332,10832
+',
+         'from' => 1467446400,
+         'id' => 2206,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              5,
+                              'months',
+                              7
+                            ]
+                          ],
+         'text' => 'Open Air Gallery am 3. Juli 2016 auf der Oberbaumbrücke (10:00 - 20:00)',
+         'type' => 'gesperrt',
+         'until' => 1467576000
+       },
        {
          'data' => 'userdel	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
 userdel	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
@@ -3199,32 +3230,35 @@ userdel auto	3 7823,12120 7816,12150 7875,12363
        },
        undef,
        undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
-         'data' => '#: by: http://www.ag-bahnhofstrasse.de/maientanz.html?y=2016
-#: by: http://www.berlin.de/tickets/suche/detail.php?id=954647
-userdel	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
+         'data' => 'userdel	2::temp 20755,5750 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
+userdel	2::temp 19976,6087 20015,6069 20293,6278 20200,6321 20106,6357
+userdel	2::temp 20200,6321 20262,6493 20225,6631
+userdel	2::temp 20716,6029 20593,6082 20428,6157 20453,6211 20293,6278
+userdel	2::temp 19976,6087 20064,6290 20106,6357
 ',
-         'from' => 1461794400,
-         'id' => 2431,
+         'from' => 1464559200,
+         'id' => 2436,
          'periodic' => 1,
          'recurrences' => [
                             [
                               'yearly',
                               'days',
-                              29,
+                              30,
                               'months',
-                              4
+                              5
                             ]
                           ],
-         'text' => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz, Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (29.04.2016 bis 01.05.2016)',
-         'type' => 'handicap',
-         'until' => 1462139999
+         'source_id' => 'http://fez-berlin.de/nc/programm/detailansicht/internationales-kindertagsfest-303/',
+         'text' => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 1. Juni 2016',
+         'type' => 'gesperrt',
+         'until' => 1464818399
        },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        undef,
        undef,
        undef,
@@ -3493,43 +3527,37 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
        undef,
        undef,
        undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
-         'data' => 'userdel	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
-userdel	2::inwork 8573,12325 8540,12420
-userdel	2::inwork 8303,12216 8344,12221 8538,12245 8610,12254
-userdel	2::inwork 8089,12190 8214,12205
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
+         'data' => 'userdel	2::temp 7429,12070 7383,12095 7816,12150 7823,12120 8018,12135 8049,12140
+userdel	2::temp 7816,12150 8055,12186 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197 8522,12239
+userdel	2::temp 7383,12095 7026,12054 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120
+userdel	2::temp 8055,12186 8089,12190 8214,12205
+userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8215,12156
+userdel	2::temp 8610,12254 8538,12245 8522,12187
+userdel	2::temp 8538,12245 8600,12165 8595,12066
+userdel	2::temp 8055,12186 8119,12414
+userdel auto	3 7026,12054 7031,12024 7059,11978
+userdel auto	3 7059,11978 7031,12024 7026,12054
 ',
-         'from' => 1461794400,
-         'id' => 2565,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              30,
-                              'months',
-                              4
-                            ]
-                          ],
-         'source_id' => 'http://www.berlin.de/tickets/suche/detail.php?id=1240577',
-         'text' => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung und Kinderfest des DGB), am 1. Mai 2016',
+         'from' => 1465423200,
+         'id' => 2577,
+         'source_id' => 'IM_022090',
+         'text' => 'Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Dorotheenstr. und Behrenstr.: Sperrungen wegen der Fußball-EM-Fanmeile, vom 10.06.2016 bis zum 10.07.2016',
          'type' => 'gesperrt',
-         'until' => 1462147200
+         'until' => 1468274399
        },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        undef,
        undef,
        undef,
@@ -3982,21 +4010,10 @@ userdel	2::night 16196,18364 16315,18208
          'type' => 'gesperrt',
          'until' => undef
        },
+       undef,
        {
-         'data' => '#: XXX Gesamtmaßnahme bis 14. Mai 2016, Sperrungen werden sich ändern
-#: next_check: 2016-05-01
-#: priority: #A
-userdel	q4::inwork; 8642,7876 8553,7795 8512,7757 8465,7699
-',
-         'from' => 1461535200,
-         'id' => 2780,
-         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.471198.php',
-         'text' => 'Werner-Voß-Damm: Bauarbeiten, Sperrung zwischen Boelckestr. bis Hessenring, 25. bis 30. April 2016',
-         'type' => 'handicap',
-         'until' => 1462053599
-       },
-       {
-         'data' => 'userdel	q4::inwork; 25010,4807 25171,4757 25228,4745 25248,4752 25369,4790 25434,4825 25477,4832 25519,4830
+         'data' => '#: source_id: 2147340012
+userdel	q4::inwork; 25010,4807 25171,4757 25228,4745 25248,4752 25369,4790 25434,4825 25477,4832 25519,4830
 ',
          'from' => 1462053600,
          'id' => 2781,
