@@ -248,6 +248,9 @@ sub look {
 	if ($grep_type eq 'agrep' && $args{Agrep}) {
 	    unshift @grep_args, "-$args{Agrep}";
 	}
+	if ($grep_type eq 'grep' && _grep_needs_a()) {
+	    unshift @grep_args, '-a';
+	}
 	my @cmd = ($grep_type, @grep_args);
 	_call_ext_cmd(\@cmd, $push_sub);
     } else {
@@ -931,6 +934,20 @@ sub _call_ext_cmd_windows {
     IPC::Run::run($cmdref, '>', \$out);
     for my $line (split /\n/, $out) {
 	$collector->($line);
+    }
+}
+
+{
+    my $grep_needs_a;
+    sub _grep_needs_a {
+	return $grep_needs_a if defined $grep_needs_a;
+	if (open my $fh, '-|', 'grep', '-V') {
+	    my $version = <$fh>;
+	    if ($version =~ m{^\Qgrep (GNU grep) 2.\E(?:23|24)$}) { # as found in Ubuntu 16.04, see also https://bugs.launchpad.net/ubuntu/+source/grep/+bug/1547466
+		return $grep_needs_a = 1;
+	    }
+	}
+	$grep_needs_a = 0;
     }
 }
 
