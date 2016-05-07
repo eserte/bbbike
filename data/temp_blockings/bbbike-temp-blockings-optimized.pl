@@ -3918,9 +3918,9 @@ userdel	q3::inwork; 17648,5338 17601,5090 17542,4772 17520,4649
          'from' => 1459634400,
          'id' => 2757,
          'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.463657.php',
-         'text' => 'Sterndamm: zwischen Südostallee und Königsheideweg Richtung Süden Bauarbeiten, Fahrbahn vermutlich gesperrt, ggfs. Gehweg benutzen, 04.04.2016 bis 06.05.2016',
+         'text' => 'Sterndamm: zwischen Südostallee und Königsheideweg Richtung Süden Bauarbeiten, Fahrbahn vermutlich gesperrt, ggfs. Gehweg benutzen, 04.04.2016 bis Ende Mai 2016',
          'type' => 'handicap',
-         'until' => 1462571999
+         'until' => 1464731999
        },
        undef,
        undef,

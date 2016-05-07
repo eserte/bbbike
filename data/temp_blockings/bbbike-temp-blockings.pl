@@ -24697,8 +24697,8 @@ userdel	q4::inwork; 19904,3464 20012,3532
 EOF
      },
      { from  => $isodate2epoch->("2016-04-03 00:00:00"), # 1 Tag Vorlauf # 1445405400, # 2015-10-21 07:30
-       until => $isodate2epoch->("2016-05-06 23:59:59"), # 1446912000, # 2015-11-07 17:00
-       text  => 'Sterndamm: zwischen Südostallee und Königsheideweg Richtung Süden Bauarbeiten, Fahrbahn vermutlich gesperrt, ggfs. Gehweg benutzen, 04.04.2016 bis 06.05.2016',
+       until => $isodate2epoch->("2016-05-31 23:59:59"), # 1446912000, # 2015-11-07 17:00
+       text  => 'Sterndamm: zwischen Südostallee und Königsheideweg Richtung Süden Bauarbeiten, Fahrbahn vermutlich gesperrt, ggfs. Gehweg benutzen, 04.04.2016 bis Ende Mai 2016',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.463657.php',
        data  => <<EOF,
