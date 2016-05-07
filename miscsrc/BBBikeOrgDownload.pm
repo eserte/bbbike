@@ -15,7 +15,7 @@ package BBBikeOrgDownload;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 use File::Basename qw(basename);
 use File::Temp qw(tempdir);
@@ -48,15 +48,21 @@ sub new {
 
 sub listing {
     my($self) = @_;
+
     my $url = $self->{root_url} . '/';
+    my $debug = $self->{debug};
+    my $ua = $self->{ua};
 
     require XML::LibXML;
     my $p = XML::LibXML->new;
 
-    my $ua = $self->{ua};
+    print STDERR "Downloading listing from $url...\n" if $debug;
+
     my $resp = $ua->get($url);
     die "Can't get $url: " . $resp->status_line
 	if !$resp->is_success;
+
+    print STDERR "Parsing listing using XML::LibXML...\n" if $debug;
 
     my $root = $p->parse_html_string($resp->decoded_content)->documentElement;
 
@@ -67,6 +73,8 @@ sub listing {
 	$href =~ s{\.tbz$}{};
 	push @cities, $href;
     }
+
+    print STDERR "Parsing done, found " . scalar(@cities) . " cities.\n" if $debug;
 
     @cities;
 }
