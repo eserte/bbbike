@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package BBBikeOrgDownload;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 use File::Basename qw(basename);
 use File::Temp qw(tempdir);
@@ -42,7 +42,7 @@ sub new {
 	   ua           => $ua,
 	   download_dir => $download_dir,
 	   root_url     => $root_url,
-	   debug        => 0,
+	   debug        => $debug,
 	  }, $class;
 }
 
