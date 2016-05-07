@@ -48,9 +48,13 @@ my $download_script = "$FindBin::RealBin/../miscsrc/bbbike.org_download.pl";
 
 ok -e $download_script, 'Download script exists';
 
+# Enable debugging only on Windows, because of download problems
+# seen in appveyor environment.
+my @debug_opts = $^O eq 'MSWin32' ? ('-debug'): ();
+
 my @listing;
 {
-    chomp(@listing = `$^X $download_script`);
+    chomp(@listing = `$^X $download_script @debug_opts`);
     # 2012-03-16: there are 231 cities available + original bbbike data
     cmp_ok scalar(@listing), ">=", 100, 'More than 100 cities found';
     
@@ -63,7 +67,7 @@ my @listing;
     my($dir) = tempdir("bbbike.org_download_XXXXXXXX", CLEANUP => 1, TMPDIR => 1)
 	or die "Cannot create temporary directory: $!";
     my $city = $random ? $listing[rand(@listing)] : 'UlanBator'; # size of Ulan Bator dataset on 2016-04-03: 311.9K
-    system($^X, $download_script, "-city", $city, "-o", $dir, "-agentsuffix", " (testing)");
+    system($^X, $download_script, @debug_opts, "-city", $city, "-o", $dir, "-agentsuffix", " (testing)");
     is $?, 0, "Downloading city '$city'";
     ok -d "$dir/$city", "Directory $dir/$city exists";
     ok -f "$dir/$city/strassen", "strassen found for $city";
