@@ -941,7 +941,8 @@ sub _call_ext_cmd_windows {
     my $grep_needs_a;
     sub _grep_needs_a {
 	return $grep_needs_a if defined $grep_needs_a;
-	if (open my $fh, '-|', 'grep', '-V') {
+	my @cmd = $^O eq 'MSWin32' ? 'grep -V' : ('grep', '-V'); # list form of pipe open not implemented in Windows perl
+	if (open my $fh, '-|', @cmd) {
 	    my $version = <$fh>;
 	    if ($version =~ m{^\Qgrep (GNU grep) 2.\E(?:23|24)$}) { # as found in Ubuntu 16.04, see also https://bugs.launchpad.net/ubuntu/+source/grep/+bug/1547466
 		return $grep_needs_a = 1;
