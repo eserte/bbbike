@@ -218,7 +218,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2016-05-03
+#: last_checked: 2016-05-09
 Warschauer Str: Radspuren in Bau	?::inwork 13651,11731 13696,11920 13745,12118
 # 
 # REMOVED (vermutlich passiert nichts weiter) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: XXX wird auch das letzte Stück im Westen realisiert? --- #: osm_watch: way id="4424794" version="14" --- #: osm_watch: way id="30195541" version="9" --- #: last_checked: 2015-06-08 --- #: check_frequency: 60d --- Turmstr.: evtl. wird die Radspuren-Lücke hier geschlossen	? 5248,13434 5368,13406 5434,13398
@@ -868,6 +868,12 @@ Uferweg: wird verlängert, wann?	?::projected 18650,5707 18604,5898 18420,6009
 #: check_frequency: 120d
 Dahlemer Weg: wird hier eine Fußgängerampel realisiert?	?::projected 1763,1288 1786,1254
 # 
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5691&options=4
+Lindenthaler Allee/Königsweg: gibt es hier einen Zebrastreifen?	? -1306,2057 -1298,2017 -1268,2058
+# 
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5691&options=4
+Lindenthaler Allee/Königsweg: hier werden Drängelgitter eingerichtet	?::projected -1328,1984 -1298,2017 -1247,2015
+# 
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3250&options=4 vvv
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3250&options=4&date=20130125 vvv
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.459697.php vvv
@@ -915,7 +921,7 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 # 
 #: by: http://www.bwb.de/content/language1/html/10337.php#11671
 #: osm_watch: way id="75509950" version="11"
-#: last_checked: 2016-04-29
+#: last_checked: 2016-05-09
 #: check_frequency: 60d
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12085,9778 12074,9689 12066,9558
 #: by: ^^^
@@ -925,7 +931,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12085,977
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="13"
-#: last_checked: 2016-04-29
+#: last_checked: 2016-05-09
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -1157,7 +1163,7 @@ Wolzenseeweg: Qualität? Straße bereits fertiggestellt? Wird es eine Überquerungs
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -8799,3778 -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 # 
 #: next_check_id: OBERWALL-2014 vvv
-#: last_checked: 2016-05-03 vvv
+#: last_checked: 2016-05-09 vvv
 #: check_frequency: 90d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2015 (Grundstücksnummerierungen)
@@ -1427,6 +1433,37 @@ Bebauungsplan 7-65: Weg in Planung	?::projected 7960,6059 7697,6059 7630,6016 76
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6661
+Treskowallee: Gehweg für Radfahrer freigegeben?	?; 18733,8633 18731,8577 18709,8423
+# 
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7438
+Waldemarstr.: existieren hier Tempo-10-Schilder?	? 11150,11030 11290,10972
+# 
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7470
+#: XXX "in den Sommerferien"
+#: next_check: 2016-08-01
+Mehringdamm: Verbesserung der Fahrradinfrastruktur? Wo genau?	?::projected 9229,8785 9227,8890 9225,9038 9224,9053 9225,9111 9248,9350 9280,9476 9334,9670 9387,9804 9444,9919 9448,10014 9416,10196
+# 
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7478
+#: XXX "noch 2016"
+#: next_check: 2016-07-01 vvv
+#: priority: #C vvv
+Waldemar/Dresdener: Zebrastreifen geplant	?::projected 11170,11048 11150,11030 11121,11021
+Sebastian/Luckauer: Zebrastreifen geplant	?::projected 11105,10969 11113,10943 11122,10908
+#: priority ^^^
+#: next_check ^^^
+# 
+#: XXX +       Mitte, Schillingstraße Zwischen Magazinstraße und Karl-Marx-Allee Vollsperrung bis 28.05.2016, 20 Uhr. Dort finden die Vorbereitung zum Elektroauto Formel 1-Rennen statt.
+Schillingstr.: Vorbereitungen zum Elektroauto Formel 1-Rennen, gibt es Einschränkungen für Radfahrer?	? 11558,12588 11596,12668 11635,12745
+# 
+#: XXX NEW	Wilhelmstr. (Mitte) Richtung Luisenstr. zwischen Unter den Linden und Reichstagufer (Berlin)  Gültig ab: 09.05.2016 14:32  Baustelle, Fahrtrichtung gesperrt (bis Ende 05/16)	2147340042	
+#: XXX laut fritz bis 27.05.2016
+Wilhelmstr.: Baustelle, gibt es Einschränkungen für Radfahrer?	?; 8804,12280 8775,12457 8766,12541
+# 
+#: XXX +Kiefholzstra<DF>e: (Treptow): Vollsperrung zwischen Eichbuschallee und Baumschulenstra<DF>e, bis 6.6.
+#: XXX laut fritz bis 10. Juni, in beiden Richtungen
+Kiefholzstr.: Baustelle, gibt es Einschränkungen für Radfahrer?	? 15560,7400 15609,7347 15695,7254 15928,6996 15977,6942 16060,6850 16146,6755
+# 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4129
 #: next_check: 2016-06-01
 #: priority: #C
@@ -1510,7 +1547,7 @@ Steglitzer Festwoche im Bäkepark: gibt es während der Festwoche Einschränkungen 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2016
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2016
 #: XXX ggfs. culdesac- und str_cont_ausnahme-Einträge erstellen
-#: last_checked: 2016-02-15
+#: last_checked: 2016-05-09
 #: check_frequency: 90d
 Mehlbeerenweg: Teilstück wird eingezogen	? 11940,11982 11923,11881
 # 
@@ -1940,7 +1977,7 @@ Vinetastr.: befindet sich hier ein Zebrastreifen?	? 11293,17040 11267,17027 1129
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14705&options=8
 #: osm_watch: way id="47155976" version="10"
-#: last_checked: 2016-04-29
+#: last_checked: 2016-05-09
 #: check_frequency: 14d
 Weichselplatz: vielleicht wird hier asphaltiert?	?::inwork 12851,9309 12761,9190
 # 
@@ -2169,7 +2206,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.334355.php
-#: last_checked: 2016-04-15
+#: last_checked: 2016-05-09
 #: check_frequency: 120d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172 10818,11269
 # 
@@ -2178,6 +2215,8 @@ Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11
 Koeltzepark: entsteht hier vielleicht eine Beleuchtung?	?::projected -3077,15367 -3138,15259
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2016
+#: last_checked: 2016-05-09
+#: check_frequency: 60d
 Sülzhayner Str.: Einziehung von Straßenland, ändert sich hier etwas?	? 13267,9077 13403,9236 13420,9259
 # 
 # REMOVED (zurzeit nur ein nicht eingezeichneter Diagonalweg gesperrt) --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.334347.php --- #: XXX ist es dieser Weg oder ein anderer oder ein nicht eingezeichneter? --- Spreebogenpark: Sperrung wg. Bauarbeiten, danach "provisorische Befestigung", wo genau?	? 8309,12758 8304,12938
@@ -2194,6 +2233,9 @@ Sülzhayner Str.: Einziehung von Straßenland, ändert sich hier etwas?	? 13267,907
 #
 #: section isolated entries vvv
 #: ignore vvv
+# 
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6622
+Wohnviertel Habichtshorst: hat sich die Qualität des Asphalts verschlechtert (Rissbildungen)?	? 21273,10995 21637,11148 21804,10780 21430,10602 21273,10995
 # 
 #: by: anonymous:
 Fischerstieg (Bindow): guter Asphalt, Q0	? 34954,-14689 34843,-14689 34717,-14742 34639,-14721

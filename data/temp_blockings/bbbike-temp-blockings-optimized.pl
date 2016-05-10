@@ -799,27 +799,6 @@ userdel	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 1199
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 7107,9030 7044,9163 7022,9211 7006,9292
-userdel	2::temp 6945,9142 7044,9163
-',
-         'from' => 1462485600,
-         'id' => 728,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              24,
-                              'months',
-                              4
-                            ]
-                          ],
-         'source_id' => 'http://www.popula.de/veranstaltung/12105833_primavera-2016-akazienstrasse-berlin',
-         'text' => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (7.5.2016 und 8.5.2016)',
-         'type' => 'gesperrt',
-         'until' => 1462744799
-       },
        undef,
        undef,
        undef,
@@ -1055,26 +1034,8 @@ userdel	2::temp 6945,9142 7044,9163
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
-',
-         'from' => 1462485600,
-         'id' => 964,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              7,
-                              'months',
-                              5
-                            ]
-                          ],
-         'source_id' => 'http://www.laubinger.de/termine/22-boelschefest-friedrichshagen/?date=20160407',
-         'text' => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (7. und 8. Mai 2016)',
-         'type' => 'gesperrt',
-         'until' => 1462744799
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -4022,16 +3983,7 @@ userdel	q4::inwork; 25010,4807 25171,4757 25228,4745 25248,4752 25369,4790 25434
          'type' => 'handicap',
          'until' => 1480546799
        },
-       {
-         'data' => 'userdel	q4::inwork 15904,12340 15928,12483 15947,12626
-',
-         'from' => 1462399200,
-         'id' => 2782,
-         'source_id' => 'http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.473610.php',
-         'text' => 'Ruschestr.: Bauarbeiten, Sperrung der Fahrbahn zwischen Normannenstr. und Gotlindestr., 6. Mai 2016 bis 8. Mai 2016',
-         'type' => 'handicap',
-         'until' => 1462744799
-       },
+       undef,
        {
          'data' => 'userdel	2::temp 11226,12945 11289,12908 11589,12768 11635,12745 11683,12725 11976,12595 11988,12546 12028,12519
 userdel	2::temp 11920,12266 12006,12464 12028,12519 12083,12518 12114,12546 12134,12540
