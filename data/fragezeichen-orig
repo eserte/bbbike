@@ -113,7 +113,7 @@ Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10
 # REMOVED (realisiert) --- #: XXX Baumaßnahme 1.39 (Realisierung in 2011) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: last_checked: 2013-06-28 --- #: check_frequency: 60d --- Schulze-Delitzsch-Platz: werden hier Radspuren markiert?	?::projected 11242,11720 11155,11750
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2016-03-09
+#: last_checked: 2016-05-11
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9701,11656
 # 
@@ -993,7 +993,7 @@ Zachenberger Str.: (Planstraße 11) Qualität?	?::projected 19889,9400 19780,9409
 # REMOVED (weitgehend realisiert) --- #: by: http://www.moz.de/artikel-ansicht/dg/0/1/288137 --- #: by: http://de.wikipedia.org/wiki/Autobahndreieck_Schwanebeck --- #: by: http://upload.wikimedia.org/wikipedia/commons/4/4c/Map_Comparision_AD_Schwanebeck_AK_Barnim.svg --- #: by: http://www.ls.brandenburg.de/sixcms/detail.php/bb1.c.257283.de?template=ls_artikel_special_nav_d&nav_level=3 --- #: next_check: 2013-09-01 --- Umbau zum Kreuz Barnim: damit auch Verschenkung der B2 direkt zur Autobahn; die jetzige B2 durch Schwanebeck wird wahrscheinlich zur Landesstraße	?::inwork 20788,23350 20281,23156 19363,23247 19043,23084
 # 
 #: osm_watch: way id="168928174" version="7"
-#: last_checked: 2016-03-03
+#: last_checked: 2016-05-11
 #: check_frequency: 120d
 Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verlängert?	? 8632,11912 8783,11959
 # 
@@ -1299,7 +1299,7 @@ Soldiner Str.: grundhafte Erneuerung, evtl. verschwindet das Kopfsteinpflaster d
 #: next_check: 2016-12-31 vvv
 Kieler Brücke - Heidestraße, Rad/Gehweg	?::projected 7740,14409 7621,14341
 #: osm_watch: way id="237716440" version="3"
-geplanter Uferweg	?::projected 8293,13519 8128,13767 8044,13929 7989,14035 7912,14160 7843,14275 7824,14305 7740,14409
+geplanter Uferweg	?::projected 8171,13703 8128,13767 8044,13929 7989,14035 7912,14160 7843,14275 7824,14305 7740,14409
 #: XXX wird es auch eine Brücke zur Kieler Str. geben?
 Fußgängerbereich zur Heidestraße	?::projected 7912,14160 7783,14085
 #: osm_watch: way id="237716438" version="3"
@@ -1433,11 +1433,12 @@ Bebauungsplan 7-65: Weg in Planung	?::projected 7960,6059 7697,6059 7630,6016 76
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+# REMOVED --- #: XXX B1, B5 Berlin, Karl-Marx-Allee zwischen Alexanderstraße und Kreisverkehr Strausberger Platz Gültig ab: 11.05.2016 20:00  gesperrt	LMS-BR_r_LMS-BR_67424 --- #: XXX Karl-Marx-Allee (Mitte) stadtauswärts zwischen Otto-Braun-Straße und Petersburger Platz (Berlin)  Gültig ab: 11.05.2016 20:00  Vollsperrung, Aufbauarbeiten zur Formula-E (bis ca. 24:00 Uhr)	2147340063 --- #: priority: #A --- Karl-Marx-Allee: bereits wegen der Vorbereitungen für das Rennen gesperrt, auch für Radfahrer?	?; 11226,12945 11289,12908 11589,12768 11635,12745 11683,12725 11976,12595
+# 
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6661
 Treskowallee: Gehweg für Radfahrer freigegeben?	?; 18733,8633 18731,8577 18709,8423
 # 
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7438
-Waldemarstr.: existieren hier Tempo-10-Schilder?	? 11150,11030 11290,10972
+# REMOVED (ja, wegen Straßenschäden; RW6-Eintrag lohnt aber nicht, denke ich) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7438 --- Waldemarstr.: existieren hier Tempo-10-Schilder?	? 11150,11030 11290,10972
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7470
 #: XXX "in den Sommerferien"
@@ -1447,18 +1448,20 @@ Mehringdamm: Verbesserung der Fahrradinfrastruktur? Wo genau?	?::projected 9229,
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7478
 #: XXX "noch 2016"
 #: next_check: 2016-07-01 vvv
+#: last_checked: 2016-05-10 vvv
 #: priority: #C vvv
 Waldemar/Dresdener: Zebrastreifen geplant	?::projected 11170,11048 11150,11030 11121,11021
 Sebastian/Luckauer: Zebrastreifen geplant	?::projected 11105,10969 11113,10943 11122,10908
 #: priority ^^^
+#: last_checked ^^^
 #: next_check ^^^
 # 
 #: XXX +       Mitte, Schillingstraße Zwischen Magazinstraße und Karl-Marx-Allee Vollsperrung bis 28.05.2016, 20 Uhr. Dort finden die Vorbereitung zum Elektroauto Formel 1-Rennen statt.
-Schillingstr.: Vorbereitungen zum Elektroauto Formel 1-Rennen, gibt es Einschränkungen für Radfahrer?	? 11558,12588 11596,12668 11635,12745
+#: last_checked: 2016-05-11
+#: next_check: 2016-05-15
+Schillingstr.: Vorbereitungen zum Elektroauto Formel 1-Rennen, gibt es Einschränkungen für Radfahrer?	? 11596,12668 11635,12745
 # 
-#: XXX NEW	Wilhelmstr. (Mitte) Richtung Luisenstr. zwischen Unter den Linden und Reichstagufer (Berlin)  Gültig ab: 09.05.2016 14:32  Baustelle, Fahrtrichtung gesperrt (bis Ende 05/16)	2147340042	
-#: XXX laut fritz bis 27.05.2016
-Wilhelmstr.: Baustelle, gibt es Einschränkungen für Radfahrer?	?; 8804,12280 8775,12457 8766,12541
+# REMOVED (für Radfahrer gibt es eine Spur) --- #: XXX NEW	Wilhelmstr. (Mitte) Richtung Luisenstr. zwischen Unter den Linden und Reichstagufer (Berlin)  Gültig ab: 09.05.2016 14:32  Baustelle, Fahrtrichtung gesperrt (bis Ende 05/16)	2147340042	 --- #: XXX laut fritz bis 27.05.2016 --- Wilhelmstr.: Baustelle, gibt es Einschränkungen für Radfahrer?	?; 8804,12280 8775,12457 8766,12541
 # 
 #: XXX +Kiefholzstra<DF>e: (Treptow): Vollsperrung zwischen Eichbuschallee und Baumschulenstra<DF>e, bis 6.6.
 #: XXX laut fritz bis 10. Juni, in beiden Richtungen
@@ -1666,9 +1669,9 @@ Mauerweg im Spandauer Forst: Erneuerung	?::projected -3497,20003 -3652,20100 -42
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: XXX sieht man schon Schilder? evtl. auch weiter hinten gelegen
 #: XXX fehlt in Berlin.coords.data, laut LOR PLZ=10557
-#: last_checked: 2016-03-03 (keine Schilder)
+#: last_checked: 2016-05-11 (keine Schilder)
 #: check_frequency: 60d
-Am Hamburger Bahnhof: Benennung des Platzes	? 8293,13519 8128,13767
+Am Hamburger Bahnhof: Benennung des Platzes	? 8293,13519 8282,13535 8171,13703 8128,13767
 # 
 # REMOVED (ja, und eine Einbahnstraße für Autos) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6320 --- Kyllburger Weg: gibt es hier eine Spielstraße?	? 16418,17311 16549,17394 16645,17449 16670,17454 16779,17521
 # 
@@ -2206,7 +2209,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.334355.php
-#: last_checked: 2016-05-09
+#: last_checked: 2016-05-11
 #: check_frequency: 120d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172 10818,11269
 # 

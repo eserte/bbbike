@@ -1727,6 +1727,7 @@ Klosterstr.: Mittelstreifen	3nocross -3621,13884 -3662,13797 -3677,13769 -3701,1
 Wilhelmstr.: Mittelstreifen	3nocross -4239,12626 -4180,12690 -4116,12761 -4058,12838
 Wilhelmstr.: Mittelstreifen	3nocross -3999,12912 -3962,12973 -3913,13054
 Spandauer Str.: Straﬂenbahntrasse	3nocross 10431,12709 10387,12760 10360,12793
+Invalidenstr.: Straﬂenbahntrasse	3nocross 8337,13541 8293,13519 8098,13419
 Invalidenstr.: Mittelstreifen	3nocross 7816,13276 7842,13292 7880,13315
 #: XXX_prog hack f¸r das bekannte 3nocross-Problem
 Invalidenstr.: Mittelstreifen	3::igndisp 7822,13323 7842,13292
@@ -2714,6 +2715,8 @@ Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14443,9731 14361,9772
 Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14361,9772 14436,9784 14460,9814 14488,9848
 # REMOVED --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14488,9848 14500,9856
 # REMOVED --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14575,9648 14604,9674
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.476901.php
+#: next_check: 2016-05-14
 Treptower Park: Bauarbeiten	2::inwork 14695,9587 14705,9578 14791,9537
 #: XXX evtl. kann man hier als Fuﬂg‰nger irgendwie vorbei
 #: check_frequency: 7d
@@ -3063,8 +3066,8 @@ Wikingerufer: wegen Besch‰digungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: check_frequency: 90d
 Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603
 # 
-#: note: abgeschlossener Zaun
-#: last_checked: 2016-02-05
+#: note: Baugel‰nde
+#: last_checked: 2016-05-11
 #: check_frequency: 180d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
@@ -3089,7 +3092,7 @@ Schloﬂplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2016-04-28
+#: last_checked: 2016-05-11
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

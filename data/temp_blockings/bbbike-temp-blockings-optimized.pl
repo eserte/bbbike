@@ -4010,6 +4010,27 @@ userdel auto	3 11709,12601 12006,12464 12118,12462
          'text' => 'Karl-Marx-Allee, Lichtenberger Str.: Autorennen, Straßen gesperrt, am 21.05.2016',
          'type' => 'gesperrt',
          'until' => 1463867999
+       },
+       {
+         'data' => 'userdel	2::temp 11601,12858 11589,12768
+',
+         'from' => 1462992861,
+         'id' => 2784,
+         'text' => 'Karl-Marx-Allee - Berolinastr.: Zugang wegen Vorbereitungen zum Formel-E-Rennen nicht möglich, bis mindestens 21.05.2016',
+         'type' => 'gesperrt',
+         'until' => 1463954399
+       },
+       {
+         'data' => '#: note: gesehen 2016-05-11 gegen 9 Uhr
+userdel	2::temp 8362,13466 8369,13465 8377,13463
+userdel	2::temp 8371,13399 8363,13402 8356,13404
+',
+         'from' => undef,
+         'id' => 2785,
+         'recurring' => 1,
+         'text' => 'Alexanderufer - Charité: Tor kann verschlossen sein',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

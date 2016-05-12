@@ -2096,6 +2096,9 @@ Zimmerstr. -> Wilhelmstr.: Mittelstreifen	3::igndisp -3942,12957 -3962,12973 -39
 Straßenbahntrasse	3nocross::ignrte 10431,12709 10387,12760 10360,12793
 Spandauer Str. -> Spreegasse: Straßenbahntrasse	3::igndisp 10431,12709 10387,12760 10309,12700
 Spreegasse -> Spandauer Str.: Straßenbahntrasse	3::igndisp 10309,12700 10387,12760 10360,12793
+Straßenbahntrasse	3nocross::ignrte 8337,13541 8293,13519 8098,13419
+Invalidenstr. -> am Hamburger Bhf.: Straßenbahntrasse	3::igndisp 8098,13419 8293,13519 8282,13535
+am Hamburger Bhf. -> Invalidenstr.: Straßenbahntrasse	3::igndisp 8282,13535 8293,13519 8337,13541
 Mittelstreifen	3nocross::ignrte 7816,13276 7842,13292 7880,13315
 Invalidenstr. -> Weg durch den Geschichtspark: Mittelstreifen	3::igndisp 7816,13276 7842,13292 7822,13323
 Weg durch den Geschichtspark -> Invalidenstr.: Mittelstreifen	3::igndisp 7822,13323 7842,13292 7880,13315
@@ -3452,3 +3455,4 @@ Altentreptower Str., linker Gehweg	1::igndisp 21573,12140 21401,12155
 Wilhelmsruher Damm, linker Geh/Radweg bis zur Fußgängerampel	1::igndisp 5525,21022 5599,21025
 Frankfurter Allee, linker Gehweg bis zur Ampel	1::igndisp 15670,12022 15717,12010
 Otto-Braun-Str., linker Gehweg	1::igndisp 11451,13301 11352,13180
+Invalidenstr., linker Gehweg	1::igndisp 8337,13541 8282,13535
