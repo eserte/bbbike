@@ -1480,7 +1480,9 @@ Reiterweg (B2)	B -13111,-136 -13039,-127
 Reiterweg	NN -12961,-136 -12846,-164
 Pappelallee	H -13091,-8 -13240,32 -13367,66 -13453,88 -13553,115 -13794,178 -13811,182 -13884,201 -13945,217 -14098,260 -14235,298 -14435,357 -14547,388 -14676,418
 Ruinenbergstr.	N -13794,178 -13918,-164 -13881,-185
-An der Einsiedelei	N -13645,-266 -13715,-214 -13807,-208 -13881,-185
+#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_nr._5_2016_zur_druckfreigabe_0.pdf (Vereinheitlichung der Schreibweise)
+#: oldname: -20160302: An der Einsiedelei
+Einsiedelei	N -13645,-266 -13715,-214 -13807,-208 -13881,-185
 #: note: in der "Natur" mit "v." geschrieben, im PLZ-Verzeichnis mit "von"
 #: alias: Kurt-von-Plettenberg-Str.
 Kurt-v.-Plettenberg-Str.	N -13520,-28 -13581,-10 -13662,12 -13744,35
@@ -1780,8 +1782,9 @@ Nuthestr.	B -12045,-757 -11869,-907 -11613,-1125 -11386,-1313 -11226,-1445 -1114
 #: XXX_indoor: eigentlich ist es inkonsequent, dass einige Kfz-Straßen in strassen_bab sind und einige nur mit gesperrt gekennzeichnet sind. Wie ist die Regel?
 Nuthestr.	HH -11116,-1681 -11070,-2123 -10898,-2375 -10547,-2606 -10321,-2800 -9021,-3865 -8407,-4066 -8128,-4073 -7426,-4035 -7187,-4049 -6787,-4026 -6426,-4014 -6119,-3907 -5722,-3669 -5490,-3666 -5324,-3716
 (Rudolf-Moos-Str. - Nuthestr.)	H -10281,-2690 -10321,-2800
-(Am Babelsberger Park - Humboldtbrücke)	NN -11407,-1086 -11460,-1098 -11538,-1138
-Am Babelsberger Park	NN -11056,-1726 -11098,-1616 -11099,-1573 -11090,-1506 -11084,-1396 -11407,-1086 -11494,-1014
+(Park Babelsberg - Humboldtbrücke)	NN -11407,-1086 -11460,-1098 -11538,-1138
+#: oldname: -20160302: Am Babelsberger Park
+Park Babelsberg	NN -11056,-1726 -11098,-1616 -11099,-1573 -11090,-1506 -11084,-1396 -11407,-1086 -11494,-1014
 #: note: Radfahren erlaubt
 Park Babelsberg	NN -10505,-1166 -10519,-1123 -10583,-1072 -10650,-1057 -10713,-1072 -10793,-1139 -10910,-1271 -10994,-1307 -11081,-1303 -11225,-1225 -11332,-1071 -11359,-1069 -11425,-1001
 Park Babelsberg	NN -10583,-1072 -10495,-1069 -10451,-1042
@@ -1958,6 +1961,7 @@ Alter Markt	NN -12583,-1552 -12619,-1549 -12677,-1536 -12728,-1539 -12786,-1556
 #: XXX PLZ=14467
 #: by: http://www.potsdam.de/cms/dokumente/29389519_2027173/10818367/Amtsb_01_14.pdf
 #: by: http://www.potsdam.de/cms/dokumente/10100646_480745/b8156544/Anl_2-BP-San-P13.pdf
+#: by: https://www.potsdam.de/sites/default/files/documents/final_amtsblatt_nr._4_2016_onlineausgabe.pdf (straßenrechtliche Widmung)
 #: next_check: 2015-02-06
 (Alter Markt - Uferweg)	NN -12583,-1552 -12485,-1482
 #: note: frühere Adresse "Im Staudenhof" (laut DPAG-Mitteilungsblatt 3/2013)
@@ -2190,6 +2194,7 @@ Johanna-Just-Str.	N -7871,-5055 -7844,-5026 -7784,-4963 -7725,-4890
 Nelly-Sachs-Str.	N -7745,-5148 -7747,-5102 -7689,-5039 -7652,-4993 -7657,-4888
 Dorothea-Schneider-Str.	N -7624,-5411 -7580,-5366 -7568,-5348 -7567,-5326 -7568,-5269 -7569,-5240 -7570,-5186 -7572,-5141 -7574,-5057 -7564,-5023 -7552,-4987 -7502,-4930
 #: by: http://www.potsdam.de/cms/dokumente/10062742_974248/6a4a3d9e/abl04_10.pdf
+#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_nr._5_2016_zur_druckfreigabe_0.pdf
 Heiner-Carow-Platz	Pl -7570,-5186
 Maxie-Wander-Str.	N -7652,-4993 -7564,-5023 -7487,-5048 -7445,-5002
 Maxie-Wander-Str.	NN -7445,-5002 -7436,-4991

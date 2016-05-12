@@ -23,7 +23,7 @@ Wühlischstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14674,11370 14737,
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2016-05-06 vvv
+#: last_checked: 2016-05-12 vvv
 Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14286,11186 14357,11148
 # REMOVED (keine Behinderungen mehr) --- Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 # REMOVED (gibt's nicht mehr?) --- Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraße ausgewiesen	q3::inwork; 14442,11101 14468,11203
@@ -133,7 +133,7 @@ Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und 
 # REMOVED (Einbahnstraßenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universitätsstr.: wegen Bauarbeiten Einbahnstraße zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9580,12581
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2016-05-03 vvv
+#: last_checked: 2016-05-12 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="3"
@@ -229,7 +229,7 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # 
 #: XXX laut fritz bis 12.02.2016, geht aber länger; laut vmz bis Ende Juni 2016
 #: source_id: 2147339998
-#: last_checked: 2016-05-11
+#: last_checked: 2016-05-12
 #: next_check: 2016-06-30
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10256,11160 10437,11352
 #: last_checked: 2016-05-11 vvv
@@ -438,7 +438,7 @@ Dresdener Str. - NKZ: Bordsteine	q3 11344,10507 11334,10527
 Alexanderplatz: langsame Straßenbahnen, Fußgängerverkehr	q2 11139,13008 11064,12910 10970,12822 10923,12779
 Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q2 11134,12793 11064,12910
 #: XXX nach den Bauarbeiten den alten Eintrag wiederherstellen
-#: last_checked: 2016-05-03
+#: last_checked: 2016-05-12
 #: check_frequency: 60d
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Rathausstr.: Fußgänger, Bauarbeiten	q2 10923,12779 10704,12595

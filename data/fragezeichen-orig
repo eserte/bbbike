@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2016-05-03
+#: last_checked: 2016-05-12
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -218,7 +218,8 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2016-05-09
+#: last_checked: 2016-05-12
+#: check_frequency: 14d
 Warschauer Str: Radspuren in Bau	?::inwork 13651,11731 13696,11920 13745,12118
 # 
 # REMOVED (vermutlich passiert nichts weiter) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: XXX wird auch das letzte Stück im Westen realisiert? --- #: osm_watch: way id="4424794" version="14" --- #: osm_watch: way id="30195541" version="9" --- #: last_checked: 2015-06-08 --- #: check_frequency: 60d --- Turmstr.: evtl. wird die Radspuren-Lücke hier geschlossen	? 5248,13434 5368,13406 5434,13398
@@ -1457,8 +1458,8 @@ Sebastian/Luckauer: Zebrastreifen geplant	?::projected 11105,10969 11113,10943 1
 #: next_check ^^^
 # 
 #: XXX +       Mitte, Schillingstraße Zwischen Magazinstraße und Karl-Marx-Allee Vollsperrung bis 28.05.2016, 20 Uhr. Dort finden die Vorbereitung zum Elektroauto Formel 1-Rennen statt.
-#: last_checked: 2016-05-11
-#: next_check: 2016-05-15
+#: last_checked: 2016-05-12
+#: next_check: 2016-05-16
 Schillingstr.: Vorbereitungen zum Elektroauto Formel 1-Rennen, gibt es Einschränkungen für Radfahrer?	? 11596,12668 11635,12745
 # 
 # REMOVED (für Radfahrer gibt es eine Spur) --- #: XXX NEW	Wilhelmstr. (Mitte) Richtung Luisenstr. zwischen Unter den Linden und Reichstagufer (Berlin)  Gültig ab: 09.05.2016 14:32  Baustelle, Fahrtrichtung gesperrt (bis Ende 05/16)	2147340042	 --- #: XXX laut fritz bis 27.05.2016 --- Wilhelmstr.: Baustelle, gibt es Einschränkungen für Radfahrer?	?; 8804,12280 8775,12457 8766,12541
@@ -1825,10 +1826,11 @@ Kaninchenberg (Potsdam): befindet sich die Straße hier? Qualität?	? -8960,-5817 
 #: by: http://www.potsdam.de/cms/dokumente/15582776_1771576/847336e8/Amtsblatt_10_13.pdf
 Otto-Braun-Platz (Potsdam): befindet sich hier der Platz? Ist er ausgeschildert?	? -12643,-1694
 # 
-#: XXX fehlt wahrscheinlich in Potsdam.coords.data, PLZ=14467
+#: XXX fehlt in Potsdam.coords.data, PLZ=14467
 #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_2014_16.pdf
+#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_nr._5_2016_zur_druckfreigabe_0.pdf (Straßenneubenennung)
 #: last_checked: 2016-03-05
-Steubenplatz (Potsdam): wo wird er sich befinden? ist er schon offiziell benannt?	? -12747,-1596 -12728,-1539 -12706,-1515
+Steubenplatz (Potsdam): befindet er sich vor dem Landtag? ist er ausgeschildert?	? -12747,-1596 -12728,-1539 -12706,-1515
 # 
 #: XXX fehlt wahrscheinlich in Potsdam.coords.data, PLZ=14467
 #: by: http://www.potsdam.de/cms/dokumente/15582776_1771576/847336e8/Amtsblatt_10_13.pdf

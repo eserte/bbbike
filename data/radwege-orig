@@ -979,7 +979,11 @@ asphaltiert	RW1; 11308,-2535 11360,-2648 11579,-3093 11663,-3266
 breiter Gehweg für Radfahrer frei, asphaltiert	RW1; 11663,-3266 11579,-3093 11360,-2648 11308,-2535
 neues Verbundsteinpflaster	RW1; 12564,4308 12637,4014 12655,3882 12663,3762 12673,3627 12673,3619 12684,3406 12687,3319 12701,2955 12695,2789 12693,2746 12694,2570 12694,2544 12694,2517 12703,2454 12712,2378
 neues Verbundsteinpflaster, allerdings schon erste leichte Wurzelhebungen sichtbar	RW1; 12712,2378 12703,2454 12694,2517 12694,2544 12694,2570 12693,2746 12695,2789 12701,2955 12687,3319 12684,3406 12673,3619 12673,3627 12663,3762 12655,3882 12637,4014 12564,4308
-die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 13745,12118 13785,12292
+#: XXX Radspur ist zurzeit aufgehoben
+#: last_checked: 2016-05-12
+#: check_frequency: 14d
+#: XXX danach anpassen -> die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 13745,12118 13785,12292
+	RW0; 13745,12118 13785,12292
 	RW3; 13785,12292 13745,12118 13696,11920 13651,11731
 	RW1;RW1 17427,10259 17605,10199 17905,10122 17958,10012 17997,9929
 	RW3;RW1 17997,9929 18045,9917
@@ -1022,7 +1026,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5542,11075 5459,11135
 #: XXX früher: Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5
 #: XXX bis Ende 2016, laut rbbtext bis 16.12.2016
 #: source_id: 2147339533
-#: last_checked: 2016-04-29
+#: last_checked: 2016-05-12
 #: next_check: 2016-06-01
 	RW0;RW0  5459,11135 5258,11285 5166,11343 5091,11406 5085,11413 4919,11605
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4919,11605 4900,11626 4838,11697
@@ -1426,7 +1430,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2016-05-11
+#: last_checked: 2016-05-12
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -4546,8 +4550,7 @@ Tempo 10	RW6;RW6 13559,12779 13470,12990
 	RW4;RW3 14096,12827 14066,12836
 #: XXX wegen Bauarbeiten am Hochhaus "Upper West" sind die Radspuren aufgehoben
 #: by: http://www.tagesspiegel.de/berlin/stadtentwicklung-zwillingsturm-soll-2016-in-der-city-west-eroeffnen/7416454.html (geplante Eröffnung Mitte 2016)
-#: last_checked: 2016-04-28
-#: next_check: 2016-06-01
+#: last_checked: 2016-05-12
 #	RW3; 5488,10978 5613,10963 5652,11004
 ##: note: teilweise vor dem Hotel unterbrochen (wegen Ladezone?)
 #	RW3; 5652,11004 5613,10963 5488,10978
