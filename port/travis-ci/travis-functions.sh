@@ -50,14 +50,14 @@ init_apt() {
 # - freebsd-buildutils:     provides freebsd-make resp. fmake
 # - libproj-dev + proj-bin: prerequisites for Geo::Proj4
 # - libdb-dev:              prerequisite for DB_File
-# - agrep:                  needed as String::Approx alternative
+# - agrep + tre-agrep:      needed as String::Approx alternative
 # - libgd2-xpm-dev:         prerequisite for GD
 # - ttf-bitstream-vera + ttf-dejavu: fonts e.g. for BBBikeDraw::GD
 # - xvfb + fvwm:            some optional tests require an X server
 # - rhino:                  javascript tests
 # - imagemagick:            typ2legend test
 install_non_perl_dependencies() {
-    sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep libgd2-xpm-dev ttf-bitstream-vera ttf-dejavu gpsbabel xvfb fvwm rhino imagemagick
+    sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep tre-agrep libgd2-xpm-dev ttf-bitstream-vera ttf-dejavu gpsbabel xvfb fvwm rhino imagemagick
 }
 
 # Some CPAN modules not mentioned in Makefile.PL, usually for testing only
