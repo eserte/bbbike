@@ -7,11 +7,14 @@
 
 use strict;
 use FindBin;
-use lib ("$FindBin::RealBin/..",
+use lib (
+	 "$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
 
 use File::Temp qw(tempfile);
+
+use BBBikeUtil qw(is_in_path);
 
 BEGIN {
     if (!eval q{
@@ -33,6 +36,7 @@ EOF
 
 my @search_types = (
 		    ($^O ne 'MSWin32' ? "agrep" : ()), # usually no agrep available on Windows systems
+		    (is_in_path('tre-agrep') ? 'tre-agrep' : ()),
 		    "String::Approx",
 		    "perl",
 		   );
@@ -78,6 +82,8 @@ for my $search_def (@search_types) {
     my %args;
     if ($search_def eq 'agrep') {
 	# OK
+    } elsif ($search_def eq 'tre-agrep') {
+	%args = (UseTreAgrep => 1);
     } else {
 	$Strassen::OLD_AGREP = 1;
 	if ($search_def eq 'String::Approx') {
