@@ -245,7 +245,7 @@ Lohmühlenbrücke: Asphalt	Q0 12871,9356 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2016-04-29
+#: last_checked: 2016-05-13
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13606,9578 13455,9711 13251,9829
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15021,11152 15102,11120
@@ -276,7 +276,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX wird hier vielleicht asphaltiert werden?
 #: XXX Baumaßnahme 2.22 (Realisierung nach 2011)
-#: last_checked: 2016-05-09
+#: last_checked: 2016-05-13
 #: check_frequency: 120d
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9053,16029 8923,15850
@@ -4973,7 +4973,7 @@ Worbiser Str.: unbefestigt	Q2 17907,14904 17958,14920
 Zadekstr.: Kopfsteinpflaster	Q2 14550,3625 14468,3484
 Sprosserweg: Beton	Q0- 14865,3068 14933,3158
 Angelikaweg: Gehwegplatten	Q1 15459,2921 15537,3026
-Glockenblumenweg: Asphalt/Beton	Q0- 15212,3542 15373,3403 15500,3299 15660,3177 15808,3063 15883,3006 15989,2923 16164,2790 16260,2717 16461,2569
+Glockenblumenweg: Asphalt/Beton	Q0- 15213,3541 15373,3403 15500,3299 15660,3177 15808,3063 15883,3006 15989,2923 16164,2790 16260,2717 16461,2569
 Schneeballenweg: Beton	Q0- 16043,3374 15983,3290 15921,3215 15808,3063
 Petunienweg: Beton	Q0- 15363,3770 15452,3700 15674,3528 15983,3290 16057,3235 16155,3160 16541,2866
 Arnikaweg: Beton	Q0- 16057,3235 15883,3006
@@ -8965,17 +8965,15 @@ Inselstr. (Hessenwinkel): unbefestigte Straße	Q2 32101,2216 32067,2178
 (Zufahrt zum Gewerbegebiet): Beton	Q0 13875,15142 14073,15018
 Paul-Junius-Str.: Fahrbahnschäden	Q1- 15040,13602 15225,13543
 Trollblumenweg: Verbundsteinpflaster	Q1 16020,3732 16044,3763 16101,3727
-#: last_checked: 2016-03-28
+#: last_checked: 2016-05-13
 #: XXX bleibt dieser Weg erhalten?
 (Trollblumenweg - Teltowkanal): unbefestigter Weg	Q2 16044,3763 16066,3799
-#: last_checked: 2016-03-28 vvv
-#: XXX welche Qualität werden die Straßen im fertigen Zustand haben (vermutlich Verbundsteinpflaster)? Wird es einen Zugang zum Teltowkanal geben (vermutlich ja)?
-#: osm_watch: way id="149488399" version="2"
-Geißbartweg: unbefestigte Straße	Q2 16097,3595 16167,3702
-#: last_checked ^^^
+Geißbartweg: Verbundsteinpflaster	Q1 16097,3595 16167,3702
 Sternliebweg: Verbundsteinpflaster	Q1 16152,3562 16227,3660
 Silberdistelweg: Verbundsteinpflaster	Q1 16208,3527 16285,3616
 Zwergasternweg: Verbundsteinpflaster	Q1 16254,3489 16338,3578 16344,3586
+(Sternliebweg - Am Teltowkanal): Verbundsteinpflaster	Q1 16227,3660 16233,3671
+(Geißbartweg - Am Teltowkanal): Verbundsteinpflaster	Q1 16167,3702 16175,3715
 (Mauerweg im Landschaftspark - Ostburger Weg): Betonpflaster	Q0- 18608,232 18305,660
 (Mauerweg im Landschaftspark - Ostburger Weg): Asphalt	Q0- 18305,660 18200,809
 (Mauerweg im Landschaftspark - Ostburger Weg): Asphalt mit vielen Wurzelschäden	Q2 18200,809 18128,910
@@ -10809,7 +10807,6 @@ Nikolaus-Groß-Weg: Beton	Q0 2087,14078 2038,13870
 Nikolaus-Groß-Weg: guter Asphalt	Q0 2038,13870 2025,13815
 Bansiner Str.: guter Asphalt	Q0 22723,12631 22722,12710 22692,12747 22597,12751 22595,12856 22619,12885 22679,12888 22785,12840 22807,12782 22906,12766
 #: corrected_by: srt (mäßiger Asphalt -> ...)
-#: XXX oder liegt hier Beton?
 Bruno-Taut-Ring: Asphalt	Q0 13833,3665 13682,3718 13628,3781 13632,3875 13673,3915 13726,3928 13909,3845
 Pfeilstr.: mäßiges Kopfsteinpflaster	Q2 9897,18496 9568,18682
 #: confirmed_by: srt
@@ -12177,13 +12174,9 @@ Im Eck: Kopfsteinpflaster	Q2 10014,1123 10160,1049
 Mörikestr.: guter Asphalt	Q0 16060,6850 15946,6722 15830,6579
 #: corrected_by: srt (Q2 -> Q0-)
 Heidekampweg: Asphalt mit leichten Wellen	Q0- 15724,6229 15740,6261 15715,6394 15696,6507
-#: corrected_by: srt (Q2 -> Q1-)
-#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20151009
-#: XXX voraussichtliche Dauer: Mai 2016
-#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.467494.php
-#: last_checked: 2016-04-01
-#: next_check: 2016-04-18
-Heidekampweg: holpriger Asphalt	Q1- 15696,6507 15672,6663
+#: corrected_by: srt (Q2 -> Q1-), später auf Q0
+# REMOVED --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20151009 --- #: XXX voraussichtliche Dauer: Mai 2016 --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.467494.php --- #: last_checked: 2016-04-01 --- #: next_check: 2016-04-18
+Heidekampweg: Asphalt	Q0 15696,6507 15672,6663
 #: by: ^^^
 # 
 #: by: Kristine:
@@ -16183,7 +16176,8 @@ Solferinostr.: guter Asphalt	Q0 5537,18309 5415,18316 5423,18438
 Amfortasweg: guter Asphalt	Q0 5150,4345 5067,4434 5144,4498 5173,4471 5214,4445
 # 
 #: by: Wolfgang Baumann: vvv
-Grünlingweg: Asphalt	Q0 14140,3921 14012,4002 13927,4044
+#: corrected_by: srt (Asphalt -> ...)
+Grünlingweg: Beton	Q0- 14140,3921 14012,4002 13927,4044
 (Grünlingweg - Parkweg): unbefestigter Weg	Q1 13927,4044 13910,4090
 #: by: ^^^
 # 
@@ -25478,11 +25472,14 @@ Gielower Str.: Beton mit asphaltierten Ausbesserungen	Q2+ 13825,4240 14012,4184
 #: note: die Parkwege sind gemäß Karin alle beleuchtet
 #: corrected_by: srt (Q0 -> Q0-)
 (Gielower Str - Buschkrugallee): Asphalt	Q0- 14012,4184 14053,4173 14119,4153
-(Parkweg Buschkrugallee - Bruno-Taut-Ring): wassergebundene Decke	Q1 14053,4173 14045,4164 14009,4148 13910,4090 13873,4067 13798,4037 13721,4023 13656,3989 13601,3895
+#: confirmed_by: srt (added Schotter, Wasserrinnen)
+(Parkweg Buschkrugallee - Bruno-Taut-Ring): wassergebundene Decke, etwas Schotter und Regenablaufrinnen	Q1- 14053,4173 14045,4164 14009,4148 13910,4090 13873,4067 13798,4037 13721,4023 13656,3989 13601,3895
 #: corrected_by: srt (Verbundsteine, wassergebundene Decke -> ...)
 (Parkweg Fritz-Reuter-Allee - Bruno-Taut-Ring): unebener Asphalt	Q1- 13463,3854 13489,3857 13573,3885
 #: corrected_by: srt (wassergebundene Decke -> ...)
-(Parkweg Fritz-Reuter-Allee - Britzer-Park): Asphalt	Q0 13463,3854 13302,3837
+(Parkweg Fritz-Reuter-Allee - Britzer-Park): Verbundsteinpflaster	Q1 13463,3854 13356,3843
+#: corrected_by: srt (wassergebundene Decke -> ...)
+(Parkweg Fritz-Reuter-Allee - Britzer-Park): Asphalt	Q0 13356,3843 13302,3837
 #: corrected_by: srt (wassergebundene Decke -> ...)
 (Parkweg Fritz-Reuter-Allee - Gutschmidtstr.): unbefestigter Weg	Q1- 13489,3857 13531,3768 13562,3688
 (Parkweg Fritz-Reuter-Allee - Gutschmidtstr.): Mosaikpflaster	Q1 13562,3688 13623,3523

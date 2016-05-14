@@ -10,16 +10,7 @@
 # 
 ### Friedrichshain ###
 # 
-#: source_id: 2147339819	
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.415646.php
-#: XXX laut vmz bis Mitte Mai 2016, laut fritz bis 13.05.2016
-#: last_checked: 2016-05-08 vvv
-#: valid: -20160513 vvv
-Wühlischstr.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 14575,11407 14674,11370
-Wühlischstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14674,11370 14737,11347 14759,11339 14771,11345
-#: valid ^^^
-#: last_checked ^^^
-# 
+# REMOVED --- #: source_id: 2147339819 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.415646.php --- #: XXX laut vmz bis Mitte Mai 2016, laut fritz bis 13.05.2016 --- #: last_checked: 2016-05-08 vvv --- #: valid: -20160513 vvv --- Wühlischstr.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 14575,11407 14674,11370 --- Wühlischstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14674,11370 14737,11347 14759,11339 14771,11345 --- #: valid ^^^ --- #: last_checked ^^^
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
@@ -280,7 +271,7 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10437,11352 10489,11405
 ### Neukölln ###
 # 
 #: next_check_id: WEICHSELPLATZ-2016
-#: last_checked: 2016-05-09
+#: last_checked: 2016-05-13
 #: check_frequency: 14d
 Weichselplatz: Bauarbeiten, Gehweg benutzen	q4::inwork 12761,9190 12851,9309 12844,9351
 # 
@@ -317,6 +308,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süde
 #: next_check_id: HAUPTSTR-2015
 #: source_id: 2147339565
 #: source_id: LMS-BR_r_LMS-BR_65986
+#: source_id: 2147340080
 #: XXX laut vmz bis Ende August 2016, laut fritz bis 31.07.2016
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1604/nachricht5997.html
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.470764.php
@@ -497,7 +489,7 @@ Tiergarten: einige Fußgänger	q1 8571,11846 8501,11815 8244,11878 8221,11885 8132
 Tiergarten: einige Fußgänger	q1 8172,11679 8210,11775 8244,11878 8327,12174 8344,12221 8391,12389 8400,12417
 (Bremer Weg - Fasanerieallee): Parkweg	q1 6337,11887 6379,11843 6406,11784 6452,11778 6540,11754
 (zum Rosengarten): einige Fußgänger	q1 7026,12054 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
-#: last_checked: 2016-05-09
+#: last_checked: 2016-05-13
 #: check_frequency: 7d
 # XXX später wieder einsetzen: Parkweg: enge Brücke, Fußweg	q2 14318,9688 14361,9772 14404,9847 14448,9922
 Parkweg: während der Bauarbeiten relativ eng	q3::inwork 14318,9688 14361,9772 14404,9847 14448,9922
@@ -2301,10 +2293,7 @@ Delbrückstr.: flacher Bordstein, Fußgänger	q2 17123,10844 17141,10838
 Semkensteig: Fußgänger, eng	q2 7844,17504 7845,17455
 (Uferweg - Sömmeringstr.): Fußgänger	q1 3572,12866 3574,12916 3716,12925
 Nordsternstr.: Feuerwehrzufahrt	q2 6268,8884 6292,8899
-#: XXX_prog BS
-#: XXX bleibt es dabei, oder wird hier nachgebessert?
-#: last_checked: 2016-03-28
-(Silberdistelweg - Am Teltowkanal): Stufe	q3 16285,3616 16292,3626
+# REMOVED (mittlerweile etwas besser) --- #: XXX_prog BS --- #: XXX bleibt es dabei, oder wird hier nachgebessert? --- #: last_checked: 2016-03-28 --- (Silberdistelweg - Am Teltowkanal): Stufe	q3 16285,3616 16292,3626
 #: XXX_prog BS am Wendehammer, ansonsten q2
 Finckensteinallee: Fußgänger, Bordstein	q3 4115,2726 4140,2706 4170,2727
 Kietzgrabensteg: einige Fußgänger	q1 22514,4632 22531,4605
@@ -2922,9 +2911,11 @@ Altenburger Str.: Fußgänger, Bordsteine	q2 6651,1063 6631,968
 Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 7864,2018 7975,2275 8071,2248
 #: by: Karin Toedtloff vvv
 (Gielower Str - Buschkrugallee): Fußgänger	q1 14012,4184 14053,4173 14119,4153
+#: confirmed_by: srt vvv
 (Parkweg Buschkrugallee - Bruno-Taut-Ring): Fußgänger	q1 14053,4173 14045,4164 14009,4148 13910,4090 13873,4067 13798,4037 13721,4023 13656,3989 13601,3895 13632,3875
 (Parkweg Fritz-Reuter-Alle - Bruno-Taut-Ring): Fußgänger	q1 13463,3854 13489,3857 13573,3885 13601,3895
-(Parkweg Fritz-Reuter-Allee - Britzer-Park):Fußgänger	q1 13463,3854 13302,3837
+(Parkweg Fritz-Reuter-Allee - Britzer-Park): Fußgänger	q1 13463,3854 13356,3843 13302,3837
+#: confirmed_by ^^^
 #: corrected_by: rjoop ("Radfahren nicht erlaubt")
 #: confirmed_by: srt
 (Parkweg Fritz-Reuter-Allee - Gutschmidtstr.): Fußgänger, Radfahren nicht erlaubt	q3 13489,3857 13531,3768 13562,3688 13623,3523

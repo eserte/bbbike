@@ -86,7 +86,7 @@ asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9233,8597 9229,8718
 #: XXX Radspuren in Bau, zwischenzeitlich keine Radwege mehr vvv
 #: osm_watch: way id="30709741" version="11"
 #: osm_watch: way id="354645896" version="1"
-#: last_checked: 2016-04-11 vvv
+#: last_checked: 2016-05-13 vvv
 #: check_frequency: 30d vvv
 	RW0;RW3 8680,6322 8661,6169 8641,5998
 	RW3;RW0 8641,5998 8622,5867 8613,5745
@@ -348,11 +348,8 @@ Busspur gilt Mo-Fr 6-9 Uhr und 14-18 Uhr	RW4; 7193,7950 7147,8000 7073,8081 7001
 Busspur gilt Mo-Fr 14-18 Uhr	RW1; 6687,8385 6807,8309 6935,8208 7001,8161 7073,8081
 	RW2; 7073,8081 7147,8000
 	RW4; 7147,8000 7193,7950
-#: XXX besteht die Radwegbenutzungspflicht noch immer?
-	RW2;RW2 7600,7605 7696,7562 7859,7486
-#: XXX besteht die Radwegbenutzungspflicht noch immer?
-	RW2; 7859,7486 7946,7411
-	RW1; 7946,7411 7859,7486
+	RW2;RW2 7600,7605 7696,7562
+	RW1;RW1 7696,7562 7859,7486 7946,7411
 	RW1; 7946,7411 8069,7288 8150,7200 8224,7148 8319,7084
 	RW1; 8319,7084 8229,7154 8176,7194 8074,7295 7946,7411
 	RW1;RW1 7480,7683 7496,7716 7499,7880 7497,8168
@@ -561,18 +558,12 @@ Busspur ist immer gültig	RW5; 9215,3599 9391,3651 9455,3671
 altes Verbundsteinpflaster	RW1; 9953,3806 10047,3794
 altes Verbundsteinpflaster	RW2; 10047,3794 9953,3806
 altes Verbundsteinpflaster	RW1;RW1 10047,3794 10236,3777 10461,3757 10561,3748 10985,3707 11048,3700 11084,3702
-#: XXX Radweg Richtung Südwesten aufgehoben, später werden hier Radspuren eingerichtet
-#: source_id: IM_026105
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150511.1105.401906.html
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150703.0950.402227.html
-#: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2015_07_10.pdf?start&ts=1436508425&file=stra__enbauliste_stand_2015_07_10.pdf (Ende)
-#: osm_watch: way id="30701044" version="9"
-#: osm_watch: way id="29890799" version="11"
-#: last_checked: 2016-03-28 (noch Bauarbeiten, Richtung Süden noch keine Markierungen)
-#: check_frequency: 30d
+# REMOVED --- #: XXX Radweg Richtung Südwesten aufgehoben, später werden hier Radspuren eingerichtet --- #: source_id: IM_026105 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150511.1105.401906.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150703.0950.402227.html --- #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2015_07_10.pdf?start&ts=1436508425&file=stra__enbauliste_stand_2015_07_10.pdf (Ende) --- #: osm_watch: way id="30701044" version="9" --- #: osm_watch: way id="29890799" version="11" --- #: last_checked: 2016-03-28 (noch Bauarbeiten, Richtung Süden noch keine Markierungen) --- #: check_frequency: 30d
 #: by: Susan Richter
-	RW4?;RW4? 9953,3806 10181,4181 10185,4187 10221,4245 10288,4354
-provisorische Radspuren	RW3;RW3 10288,4354 10412,4552
+#: confirmed_by: srt
+	RW3;RW3 10181,4181 10185,4187 10221,4245 10288,4354 10412,4552
+	RW3; 9953,3806 10181,4181
+die letzten 70 Meter werden auf dem Gehweg geführt	RW3; 10181,4181 9953,3806
 	RW1;RW1 10412,4552 10505,4713 10755,5129
 	RW2;RW1 10755,5129 10800,5203
 	RW1;RW1 10800,5203 10862,5356 10927,5517 10976,5628 11128,5782 11196,5851 11338,5992
@@ -1114,7 +1105,7 @@ die letzten 50 Meter sind benutzungspflichtig	RW1; 18225,7004 18010,7133
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
-#: last_checked: 2016-04-27
+#: last_checked: 2016-05-13
 #: check_frequency: 90d
 	RW8;RW2 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
@@ -1200,7 +1191,7 @@ Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW5; 6460,8688 6449,8807 6449,8845 6445
 	RW1;RW1 7402,8208 7446,8200 7497,8168 7582,8123 7639,8091 7710,8051 7733,8023
 #: XXX Wilhelm-Kabus-Str.: eventuell wird der Gehweg Richtung Süden für Radfahrer freigegeben
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4159&options=4
-#: last_checked: 2016-03-05
+#: last_checked: 2016-05-13
 #: check_frequency: 90d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
 	RW2;RW4 7717,7879 7718,7820 7696,7771
@@ -2669,8 +2660,8 @@ sehr schmale prähistorische Radwege	RW1;RW1 21055,8374 21072,8742 21079,8931 210
 	RW2;RW4 13200,6550 13236,6489
 Gehweg für Radfahrer frei	RW9;RW1 8839,18504 9229,18178 9310,18108 9343,18080 9365,18062 9410,18021
 asphaltiert	RW1;RW1 13775,3500 13818,3623 13833,3665 13852,3721 13909,3845 14012,4002 14119,4153
-	RW1;RW2 14994,3245 15027,3288
-	RW1;RW3 15027,3288 15162,3462 15212,3542 15263,3617 15307,3683 15350,3749 15356,3759 15363,3770 15464,3936 15585,4139
+	RW1;RW2 14994,3245 15030,3286
+	RW1;RW3 15030,3286 15162,3462 15213,3541 15263,3617 15307,3683 15350,3749 15356,3759 15363,3770 15464,3936 15585,4139
 die letzten Meter werden auf dem Gehweg geführt	RW3; 14653,15738 14808,15788
 	RW3; 14808,15788 14936,15857 14967,15885 15130,16098 15194,16186 15297,16321
 die Nebenstraße ist gepflastert, die letzten Meter werden auf dem Gehweg (für Radfahrer frei) geführt	RW10; 15297,16321 15437,16491
@@ -4763,3 +4754,6 @@ asphaltiert	RW1; 17681,6212 17843,6083
 	RW6;RW6 14185,21126 14166,21072
 	RW6;RW6 16163,18780 16198,18753 16210,18706 16233,18643
 	RW3;RW3 8180,9099 8389,9087
+#: by: a.joerns
+#: confirmed_by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.477564.php
+	RW7;RW7 5557,4294 5630,4476 5656,4543 5668,4584 5691,4636 5709,4674 5748,4754 5797,4846 5870,4992 5905,5088 5927,5182 5962,5296 5993,5422 6007,5785 6007,5882 6001,5974 6008,6067

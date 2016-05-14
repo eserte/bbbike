@@ -24889,9 +24889,11 @@ EOF
        text  => 'Am Teltowkanal: Bauarbeiten zwischen Fenchelweg und Trollblumenweg, Durchfahrt nicht möglich',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2016-03-28
+#: last_checked: 2016-05-13 vvv
 #: priority: #A
-userdel	2::inwork 16066,3799 15892,3932
+	2::inwork 16066,3799 15892,3932 15861,3942 15678,4083 15594,4152
+	2::inwork 15892,3932 15872,3888
+#: last_checked ^^^
 EOF
      },
      { from  => 1458194400, # 2016-03-17 07:00
@@ -25036,6 +25038,15 @@ EOF
 #: note: gesehen 2016-05-11 gegen 9 Uhr
 userdel	2::temp 8362,13466 8369,13465 8377,13463
 userdel	2::temp 8371,13399 8363,13402 8356,13404
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Melissenweg: Bauarbeiten, Weg komplett gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: last_checked: 2016-05-13
+	2::inwork 16041,3718 16003,3652
 EOF
      },
     );

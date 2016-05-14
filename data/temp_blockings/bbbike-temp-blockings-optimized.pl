@@ -3907,9 +3907,11 @@ userdel	q3::inwork; 17648,5338 17601,5090 17542,4772 17520,4649
          'until' => 1464645600
        },
        {
-         'data' => '#: last_checked: 2016-03-28
+         'data' => '#: last_checked: 2016-05-13 vvv
 #: priority: #A
-userdel	2::inwork 16066,3799 15892,3932
+	2::inwork 16066,3799 15892,3932 15861,3942 15678,4083 15594,4152
+	2::inwork 15892,3932 15872,3888
+#: last_checked ^^^
 ',
          'from' => undef,
          'id' => 2772,
@@ -4029,6 +4031,16 @@ userdel	2::temp 8371,13399 8363,13402 8356,13404
          'id' => 2785,
          'recurring' => 1,
          'text' => 'Alexanderufer - Charité: Tor kann verschlossen sein',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: last_checked: 2016-05-13
+	2::inwork 16041,3718 16003,3652
+',
+         'from' => undef,
+         'id' => 2786,
+         'text' => 'Melissenweg: Bauarbeiten, Weg komplett gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        }
