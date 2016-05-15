@@ -39,7 +39,7 @@ use File::Basename qw(dirname);
 use File::Spec     qw();
 
 use BBBikeBuildUtil qw(get_pmake);
-use BBBikeUtil qw(is_in_path);
+use BBBikeUtil qw(bbbike_root is_in_path);
 
 @EXPORT = (qw(get_std_opts set_user_agent do_display tidy_check
 	      libxml_parse_html libxml_parse_html_or_skip
@@ -765,7 +765,7 @@ sub _update_bbbike_test_data () {
     my $make = get_pmake;
     local $ENV{MAKEFLAGS}; # protect from gnu make brain damage (MAKEFLAGS is set to "w" in recursive calls)
     # -f BSDmakefile needed for old pmake (which may be found in Debian)
-    my $cmd = "cd $testdir/data-test && $make -f BSDmakefile";
+    my $cmd = "cd $testdir/data-test && $make -f BSDmakefile PERL=$^X MISCSRCDIR=" . bbbike_root . "/miscsrc";
     system $cmd;
     Test::More::diag("Error running '$cmd', expect test failures...") if $? != 0;
 }

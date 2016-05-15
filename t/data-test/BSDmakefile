@@ -8,7 +8,15 @@ EMPTY_FILES=	Potsdam.coords.data gesperrt \
 		inaccessible_strassen inaccessible_landstrassen
 NON_EMPTY_FILES=	strassen gesperrt
 
-all:	Berlin.coords.data oldnames berlin ${EMPTY_FILES}
+CREATE_COOKED_BBD=	${PERL} ${MISCSRCDIR}/create_cooked_bbd
+COOKED_TARGETS=		strassen-cooked landstrassen-cooked landstrassen2-cooked
+
+all:	${COOKED_TARGETS} Berlin.coords.data oldnames berlin ${EMPTY_FILES}
+
+.for target in ${COOKED_TARGETS:S/-cooked$//}
+${target}-cooked: ${target} inaccessible_landstrassen
+	${CREATE_COOKED_BBD} -o $@ ${target} inaccessible_landstrassen
+.endfor
 
 Berlin.coords.data:	strassen BSDmakefile
 	perl -I../.. -I../../lib -MStrassen::Core -MStrassen::Strasse -e '\
