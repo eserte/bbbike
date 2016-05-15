@@ -572,14 +572,14 @@ EOF
        source_id => 'IM_015896',
        file  => 'badstr.bbd',
      },
-     { from  => $isodate2epoch->("2015-06-19 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-06-21 23:59:59"),
+     { from  => $isodate2epoch->("2016-07-15 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-07-17 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6]],
-       text  => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (20.6.2015 bis 21.6.2015',
+       text  => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (16.7.2016 bis 17.7.2016)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.berlin.de/tickets/suche/detail.php?id=1045407
+#: by: http://www.stadtfest.berlin/de/index.html
 userdel	2::temp 6514,10088 6609,10147 6626,10155 6729,10212
 userdel	2::temp 6729,10212 6971,10346
 userdel	2::temp 6628,10318 6626,10155
@@ -20803,6 +20803,7 @@ EOF
 #: note: geprüft am So, den 2015-07-19, nachmittags: offen
 #: note: geprüft am So, den 2015-08-09, nachmittags: offen
 #: note: geprüft am So, den 2015-08-30, vormittags: offen
+#: note: geprüft am So, den 2016-05-15, vormittags: offen
 userdel	2::night 14838,11410 14792,11391
 EOF
      },
