@@ -1543,7 +1543,7 @@ sub trim ($) {
 }
 # REPO END
 
-return 1 if ((caller() and (caller())[0] ne 'Apache::Registry')
+return 1 if ((caller() and (caller())[0] ne 'Apache::Registry' and (caller())[1] !~ m{/Plack/App/WrapCGI.pm$})
 	     or keys %Devel::Trace::); # XXX Tracer bug
 
 my $o = BBBikeGooglemap->new;
