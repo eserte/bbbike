@@ -24,6 +24,70 @@ BEGIN {
 use lib $root;
 use BBBikeDataDownloadCompatPlack ();
 
+use constant USE_FORK_NOEXEC => $ENV{USE_FORK_NOEXEC};
+BEGIN {
+    if (USE_FORK_NOEXEC) {
+	warn "Preloading...\n";
+	eval q<
+	# Preloading
+	use FindBin;
+	use lib ("$FindBin::RealBin/../lib", "$FindBin::RealBin/..");
+	use Apache::Session::Counted ();
+	use Array::Heap ();
+	use BBBikeApacheSessionCounted ();
+	use BBBikeCGI::Util ();
+	use BBBikeCalc ();
+	use BBBikeDraw ();
+	use BBBikeDraw::GD ();
+	use BBBikeDraw::GDHeavy ();
+	use BBBikeDraw::MapServer ();
+	use BBBikeDraw::PDF ();
+	use BBBikeDraw::PDFCairo ();
+	use BBBikeDraw::PDFUtil ();
+	use BBBikeDraw::SVG ();
+	use BBBikeRouting ();
+	use BBBikeUtil ();
+	use BBBikeVar ();
+	use BBBikeXS ();
+	use BBBikeYAML ();
+	use BikePower::HTML ();
+	use BrowserInfo ();
+	use CDB_File ();
+	use CGI ();
+	use CGI::Carp ();
+	use CGI::Cookie ();
+	use Digest::MD5 ();
+	use File::Basename ();
+	use File::Copy ();
+	use Geography::Berlin_DE ();
+	use HTML::Parser ();
+	use MLDBM ();
+	use MLDBM::Serializer::Storable ();
+	use Met::Wind ();
+	use PLZ ();
+	use PLZ::Multi ();
+	use PLZ::Result ();
+	use Route ();
+	use Strassen ();
+	use Strassen::CoreHeavy ();
+	use Strassen::Dataset ();
+	use Strassen::GPX ();
+	use Strassen::Heavy ();
+	use Strassen::KML ();
+	use Strassen::StrassenNetz ();
+	use Strassen::StrassenNetzHeavy ();
+	use String::Approx ();
+	use Sys::Hostname ();
+	use Tie::IxHash ();
+	use VirtArray ();
+	use XML::LibXML ();
+	use XML::Simple ();
+        >;
+	die $@ if $@;
+	warn "Preloading done...\n";
+    }
+}
+
 my $cgidir = catpath $root, 'cgi';
 
 # Force the current perl's path as first entry in PATH,
@@ -70,7 +134,7 @@ builder {
 	    my $fs_file = catfile($root, 'cgi', $cgi);
 	    $app = mount "/bbbike/cgi/$cgi" => Plack::App::WrapCGI->new(
                 script  => $fs_file,
-	        execute => 1,
+	        execute => USE_FORK_NOEXEC ? 'noexec' : 1,
 	    )->to_app;
 	}
     }
@@ -89,7 +153,7 @@ builder {
 	if ($mapserv_cgibin) {
 	    $app = mount '/cgi-bin/mapserv' => Plack::App::WrapCGI->new(
 		script => $mapserv_cgibin,
-		execute => 1,
+		execute => USE_FORK_NOEXEC ? 'noexec' : 1,
 	    )->to_app;
 	} else {
 	    warn "WARN: Don't know how to run mapserver cgi";
