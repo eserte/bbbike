@@ -1110,7 +1110,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -3150,14631
 	X -3937,15299
 	X -5911,15877
-	X -6719,16111
+	X -6722,16112
 	X 2295,20358
 	B 2358,20368
 	X 2615,20421
@@ -1973,7 +1973,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	F 7310,7818
 	X 3754,24946
 	X 3767,24887
-	X 1398,10201
+	F 1398,10201
 	F 7110,10613
 provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 13520,6583
@@ -2279,6 +2279,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 9151,13941
 	F 10461,3757
 	F::inwork 8853,13539
+	X::inwork -3069,11487
 	F -12868,-502
 	X -12940,-1625
 	X -12549,-1277
@@ -2402,6 +2403,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -12655,-1714
 	X::inwork 14151,8967
 	X::inwork 14363,8738
+	F -7554,13514
 	B 19316,50384
 	F -46340,-168
 	F -46334,-1506

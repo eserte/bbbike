@@ -1054,7 +1054,6 @@ Schwarzwälder Str. (Schwanebeck): Qualität?	? 19144,26066 19000,26147 18960,2617
 Steiermärker Str. (Schwanebeck): Qualität?	? 18958,26234 18942,26470
 Genfer Platz (Schwanebeck): Qualität? Gibt es eine Verbindung zur Zillertaler Str.?	? 18389,26038 18395,26020
 Hohenstein - Strausberg: gibt es zwischen Hohenstein und Strausberg mittlerweile einen Radweg? Ist es ein Zweirichtungsradweg? Asphaltiert?	? 48635,18552 47672,18859 46386,18523 44085,19049 43857,19113 43686,19241
-Hermann-Oxfort-Promenade: Ist die Hermann-Oxfort-Promenade ausgeschildert?	? -3503,13773 -3543,13691 -3556,13582 -3546,13503 -3529,13452 -3451,13300 -3441,13270 -3352,13135 -3339,13106 -3203,12895 -3202,12891
 Heinersdorf: Qualität? Liegt hier auch Verbundsteinpflaster?	? 63261,76791 63225,76949 63279,77202 63342,77286 63390,77441 63293,77739
 Umfahrung B5 bei Karstädt: ist das eine Kraftfahrzeugstraße?	? -102187,80033 -102492,80202 -102824,80211 -103579,80166 -104020,80374 -104246,80597 -104370,80854 -104406,81222 -104370,81603 -104546,81975
 Schwarzer Weg (Siemensstadt): Qualität des Wegs? Ist der Weg ausgeschildert und beleuchtet?	? 1423,14679 1384,14598 1235,14609
@@ -1083,6 +1082,7 @@ Birkenweg (Havelberg): Qualität?	? -78908,46280 -79030,46209 -79197,46187 -79505
 (Am Wuhlebogen - Kaulsdorfer Str.): ist die Verbindung schon fertiggestellt? Straßenname? Qualität?	?::inwork 21639,8105 21686,8110
 Domstrengbrücke und Verbindung zum Grillendamm: Qualität?	? -46302,103 -46305,130 -46339,191 -46379,281
 Rehwiese/Rehsprung - Potsdamer Chaussee: existiert hier eine Verbindung für Radfahrer? Qualität? Nachts beleuchtet?	? -3395,1668 -3325,1665 -3310,1628 -3252,1644 -3042,1763 -3022,1754 -3011,1761
+Am Kiesteich - Spektewiesen: Qualität? Liegt hier Kleinsteinpflaster?	? -6256,15169 -6252,15228
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
@@ -1142,8 +1142,6 @@ Marienstr. (Einbahnstraße?)	? -14166,105632 -13960,105679
 # added from sehenswuerdigkeit
 Müncheberg, Turm (genaue Bezeichnung?)	? 60803,11559
 Müncheberg, Turm (genaue Bezeichnung?)	? 60306,11906
-# added from radwege
-(gibt es in der Stadtrandstr. Radspuren? wo genau?)	? -6719,16111 -6700,16178 -6664,16314 -6624,16466 -6577,16609 -6547,16704
 # added from qualitaet_s
 Hobrechtsfelder Chaussee (bis Kurve): OK (ist hier asphaltiert oder betoniert?)	? 15589,27116 15230,26560 14859,26029 14472,25449 14434,25388 14308,25196 14217,24999
 Hobrechtsfelder Chaussee (ab Kurve): OK (ist hier asphaltiert oder betoniert?)	? 15589,27116 15711,27928 15777,28037
@@ -1156,7 +1154,6 @@ Rosestr.: Asphalt (wurde hier tatsächlich asphaltiert?)	? 21329,832 21497,1042
 Seebadstr.: Asphalt mit einigen Schäden (Ist die Qualität des Asphalts in der Seebadstraße nach den Bauarbeiten besser geworden?)	? 4681,23273 4704,23278 4744,23289 4910,23490 5006,23575
 (Wichernstr. - Johannesstift): Kleinsteinpflaster (im nordwestlichen Abschnitt auch gepflastert?)	? -3568,18093 -3655,18177 -3699,18222 -3835,18357
 (Beetzseeweg - Zeuthener-See-Weg): Verbundsteinpflaster (liegt hier tatsächlich Verbundsteinpflaster?)	? -1689,16584 -1685,16583 -1647,16573
-(Heerstr. - Tiefwerder): vermutlich Waldweg (Qualität des Waldwegs?)	? -3075,11510 -3042,11550 -3054,11621 -3037,11680 -3087,11728 -3179,11763
 Bamihlstr.: sehr gute Qualität (liegt hier Asphalt oder Beton?)	? -2602,16809 -2585,16900 -2563,17004
 Badeweg: guter Belag (liegt hier Asphalt oder Beton?)	? -4188,2674 -4292,2762
 Badeweg: guter Belag (liegt hier Asphalt oder Beton?)	? -4292,2762 -4471,2917
@@ -1165,10 +1162,12 @@ Marchwitzastr.: gute Qualität (liegt hier Asphalt oder Beton?)	? 20141,13071 200
 Basdorfer Str.: keine Geschwindigkeitsbegrenzung (liegt hier Asphalt oder Beton?)	? 19880,15818 20150,15678
 Dörfelweg: Asphalt oder Beton (liegt hier Asphalt oder Beton?)	? 9730,-33 9578,-92 9500,-115
 (Mauerweg am Eiskeller): asphaltiert (ist dieser Abschnitt tatsächlich asphaltiert?)	? -7990,19888 -8266,19811 -8469,19845 -8494,19713 -8448,19710 -8521,19390 -8372,19402 -8272,19086 -8206,19007 -8011,19059
+Baluschekweg: Asphalt (Qualität? Asphalt oder Verbundsteinpflaster oder etwas anderes?)	? -5877,13375 -5860,13283 -5859,13270 -5822,13088 -5784,12858
 Karmeliterweg: Kleinpflastersteine (Ist die Qualität nach den Bauarbeiten gleich geblieben? Liegen hier noch immer Kleinpflastersteine?)	? 1868,24633 1924,24672 2003,24702 2120,24740
 Rustweg: OK (ist hier asphaltiert oder betoniert?)	? -2827,18639 -2673,18634 -2594,18630 -2523,18627 -2454,18624
-Neuhausweg: guter Belag (liegt hier Asphalt oder Beton?)	? -4049,14419 -3974,14495
 Finsterberger Str.: fester Sandweg (Ist die Finsterberger Str. mittlerweile asphaltiert? Existiert eine Einbahnstraßenregelung für Radfahrer?)	? 23233,12406 23129,12496 23084,12573
+Am Bogen: Asphalt (Qualität? Liegt hier Asphalt oder Beton?)	? -6607,15816 -6510,15804 -6497,15817 -6485,15915 -6476,15944 -6449,15965 -6419,15965 -6322,15936
+(Falkenseer Chaussee - Am Bogen): Asphalt (Qualität? Liegt hier Asphalt oder Beton?)	? -6313,15996 -6322,15936
 (Verlängerte Waldallee): vermutlich Asphalt (liegt hier tatsächlich Asphalt?)	? -8917,5986 -8929,5984 -9031,5984 -9054,5984
 # added from qualitaet_l
 Jühnsdorf: Asphalt (existiert durch Jühnsdorf ein Radweg?)	? 9792,-12090 9345,-11425 9472,-11297 9578,-10891
@@ -1240,8 +1239,6 @@ Schmalkaldener Str.: Sandweg (zumindest ein Teil ist asphaltiert!)	? -1773,36707
 Asphalt (gut oder mäßig?)	? 36994,147794 36978,147650 36831,147400
 In der Aue: Kopfsteinpflaster (Sind Teilabschnitte der Straße "In der Aue" asphaltiert?)	? -8189,-2569 -8107,-2600 -8099,-2590 -8018,-2585 -7999,-2585 -7782,-2572 -7373,-2539
 Bahnhofstr. (Altdöbern): Asphalt (Wo genau sind die Radstreifen?)	? 53571,-83335 54112,-83500 54378,-83571 54973,-83435 55102,-83320 55116,-83084 55259,-83091
-# added from nolighting
-Tiefwerder - Heerstr. (der Waldweg ist sehr wahrscheinlich unbeleuchtet, stimmt das?)	? -3179,11763 -3087,11728 -3037,11680 -3054,11621 -3042,11550 -3075,11510
 # added from brunnels
 B404 (was ist hier oben?)	? -197853,130794 -197527,130848
 # added from gesperrt

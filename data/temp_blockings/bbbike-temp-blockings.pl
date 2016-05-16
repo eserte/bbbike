@@ -52,6 +52,9 @@ userdel	2::temp 9599,10175 9579,10122
 userdel	2::temp 9702,10129 9827,10051
 userdel	2::temp 9702,10129 9816,10119
 userdel	2::temp 9599,10175 9631,10142 9687,10180
+	2::temp 9825,10206 9865,10227 9948,10280
+	2::temp 9873,10285 9865,10227 9858,10199
+	2::temp 9825,10206 9858,10199
 userdel	3 9922,10010 9827,10051 9837,9856
 userdel	3 9837,9856 9827,10051 9922,10010
 EOF
@@ -4668,7 +4671,7 @@ EOF
      },
      { from  => 1149230977, # 2006-06-02 08:49
        until => 1149544800, # 2006-06-06 00:00
-       text  => 'Blücherstr., Zossnerstr., Waterlooufer rund um den Blücherplatz Veranstaltung, Straßen vollständig gesperrt (bis 05.06.06)',
+       text  => 'Blücherstr., Zossener Str., Waterlooufer rund um den Blücherplatz Veranstaltung, Straßen vollständig gesperrt (bis 05.06.06)',
        type  => 'gesperrt',
        source_id => 'IM_002848',
        data  => <<EOF,
@@ -5733,7 +5736,7 @@ EOF
        text  => 'B 097 Dresdener Str. Brücke ober DB im OT Schwarze Pumpe Brückenneubau Vollsperrung 17.10.2006-30.09.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 75459,-98456 75933,-97371
+userdel	2::inwork 75458,-98311 75816,-97268
 EOF
      },
      { from  => 1156975200, # 2006-08-31 00:00
@@ -18245,7 +18248,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016077',
        data  => <<EOF,
-userdel	q4::inwork; -5030,13017 -4725,12883 -4494,12776 -4277,12675 -4239,12626
+userdel	q4::inwork; -5030,13017 -4721,12891 -4323,12728 -4239,12626
 EOF
      },
      { from  => 1273993200, # 2010-05-16 09:00
@@ -20574,7 +20577,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-	q4::temp:clock -3941,12545 -3941,12376
+	q4::temp:clock -3942,12559 -3941,12376
 EOF
      },
      { from  => 1341525600, # 2012-07-06 00:00
@@ -21607,7 +21610,7 @@ EOF
 #: XXX zurzeit (2013-07-13) existiert keine Fahrbahn und keine Bürgersteige mehr, man muss auf den Parkweg ausweichen
 #: last_checked: 2013-07-13
 #: next_check: 2013-12-01
-userdel	q4::inwork -3942,12559 -3941,12545 -3941,12376
+userdel	q4::inwork -3942,12559 -3941,12376
 EOF
      },
      { from  => $isodate2epoch->("2014-07-07 00:00:00"),
@@ -23455,13 +23458,11 @@ userdel	q4::inwork 1200,14943 1343,14972 1334,14862 1282,14710
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1463415567, # undef, # XXX
        text  => 'Schlüterstr.: zwischen Kurfürstendamm und Lietzenburger Str. Bauarbeiten, Fahrbahn teilweise gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2016-03-26
-#: check_frequency: 90d
+# REMOVED (Einschränkungen weitgehend aufgehoben) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2016-03-26 --- #: check_frequency: 90d
 userdel	q3::inwork 4503,10497 4485,10307
 EOF
      },
@@ -24530,13 +24531,13 @@ EOF
      },
      { from  => 1443650400, # 2015-10-01 00:00
        until => 1483225199, # 2016-12-31 23:59
-       text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 393 und Hackbuschstraße, stadteinwärts gesperrt, voraussichtlich ab Oktober 2015 bis Ende 2016',
+       text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Klosterbuschweg und Finkenkruger Weg, stadteinwärts gesperrt, voraussichtlich ab Oktober 2015 bis Ende 2016',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367070.php',
        data  => <<EOF,
 #: source_id: IM_026411
 #: source_id: 2147339562
-userdel	q4::inwork; -6861,15129 -6507,15007
+userdel	q4::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129 -6507,15007
 EOF
      },
      { from  => 1442700000, # 2015-09-20 00:00
@@ -24565,7 +24566,8 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367062.php',
        data  => <<EOF,
-userdel	2::inwork -3339,13106 -3203,12895 -3205,12816 -3180,12719 -3142,12615
+userdel	2::inwork -3337,13111 -3230,12938 -3228,12920 -3208,12889 -3211,12868 -3211,12784 -3170,12603
+userdel	2::inwork -3221,12925 -3199,12888 -3205,12816 -3180,12719 -3142,12615
 EOF
      },
      { from  => 1442786400, # 2015-09-21 00:00
@@ -24943,7 +24945,10 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.466174.php',
        data  => <<EOF,
-userdel	2::inwork -3529,13452 -3546,13503 -3556,13582 -3543,13691 -3503,13773 -3385,13937 -3345,13994
+#: note: hier zurzeit (2016-05-16) nicht gesperrt
+userdel	2::inwork -3529,13452 -3546,13503 -3556,13582 -3543,13691 -3503,13773
+#: note: hier zurzeit (2016-05-16) komplett gesperrt
+userdel	2::inwork -3503,13773 -3385,13937 -3345,13994
 EOF
      },
      { from  => 1459980000, # 2016-04-07 00:00

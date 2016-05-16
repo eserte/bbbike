@@ -15,6 +15,9 @@ userdel	2::temp 9599,10175 9579,10122
 userdel	2::temp 9702,10129 9827,10051
 userdel	2::temp 9702,10129 9816,10119
 userdel	2::temp 9599,10175 9631,10142 9687,10180
+	2::temp 9825,10206 9865,10227 9948,10280
+	2::temp 9873,10285 9865,10227 9858,10199
+	2::temp 9825,10206 9858,10199
 userdel	3 9922,10010 9827,10051 9837,9856
 userdel	3 9837,9856 9827,10051 9922,10010
 ',
@@ -31,51 +34,7 @@ userdel	3 9837,9856 9827,10051 9922,10010
          'type' => 'gesperrt',
          'until' => 1463435999
        },
-       {
-         'data' => 'userdel	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670 9243,9696 9044,9753
-# REMOVED --- userdel	2::temp 9044,9753 9002,9731 8777,9601 8679,9544 8595,9495 8358,9568 8192,9619
-userdel	2::temp 10713,9260 10670,9286 10639,9304 10564,9292
-# REMOVED --- userdel	3 8774,9534 8777,9601 8779,9812
-# REMOVED --- userdel	3 8779,9812 8777,9601 8774,9534
-# REMOVED --- userdel	3 9000,9509 9044,9753 9073,9915
-# REMOVED --- userdel	3 9073,9915 9044,9753 9000,9509
-userdel	3 9280,9476 9334,9670 9387,9804
-userdel	3 9387,9804 9334,9670 9280,9476
-userdel	3 9524,9426 9552,9602 9588,9827
-userdel	3 9588,9827 9552,9602 9524,9426
-userdel	3 9650,9404 9676,9564 9705,9732
-userdel	3 9705,9732 9676,9564 9650,9404
-userdel	3 9767,9386 9790,9528 9820,9718
-userdel	3 9820,9718 9790,9528 9767,9386
-userdel	3 9892,9286 9927,9487 9957,9692
-userdel	3 9957,9692 9927,9487 9892,9286
-userdel	3 10004,9268 10032,9456 10067,9667
-userdel	3 10067,9667 10032,9456 10004,9268
-userdel	3 10123,9233 10198,9405 10306,9640
-userdel	3 10306,9640 10198,9405 10123,9233
-userdel	3 10547,9233 10564,9292 10580,9361
-userdel	3 10580,9361 10564,9292 10547,9233
-userdel	3 10705,9234 10713,9260 10749,9342
-userdel	3 10749,9342 10713,9260 10705,9234
-userdel	3 11141,9107 11136,9183 11208,9345 11274,9492
-userdel	3 11274,9492 11208,9345 11136,9183 11141,9107
-userdel	3 11998,8872 11880,8955 11831,8989 11830,8917 11845,8824 11879,8672 11882,8527
-userdel	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 11998,8872
-',
-         'from' => 1463176800,
-         'id' => 4,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'easter',
-                              49
-                            ]
-                          ],
-         'source_id' => 'http://www.karneval-berlin.de/de/',
-         'text' => 'Karneval der Kulturen, 15.05.2016',
-         'type' => 'gesperrt',
-         'until' => 1463349599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2960,7 +2919,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        {
-         'data' => '	q4::temp:clock -3941,12545 -3941,12376
+         'data' => '	q4::temp:clock -3942,12559 -3941,12376
 ',
          'from' => undef,
          'id' => 2349,
@@ -3623,18 +3582,7 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,464
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2016-03-26
-#: check_frequency: 90d
-userdel	q3::inwork 4503,10497 4485,10307
-',
-         'from' => undef,
-         'id' => 2630,
-         'text' => 'Schlüterstr.: zwischen Kurfürstendamm und Lietzenburger Str. Bauarbeiten, Fahrbahn teilweise gesperrt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3862,12 +3810,12 @@ userdel	q4::inwork; 4239,10358 4219,10279 4183,10144 4152,10033
        {
          'data' => '#: source_id: IM_026411
 #: source_id: 2147339562
-userdel	q4::inwork; -6861,15129 -6507,15007
+userdel	q4::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129 -6507,15007
 ',
          'from' => 1443650400,
          'id' => 2740,
          'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367070.php',
-         'text' => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 393 und Hackbuschstraße, stadteinwärts gesperrt, voraussichtlich ab Oktober 2015 bis Ende 2016',
+         'text' => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Klosterbuschweg und Finkenkruger Weg, stadteinwärts gesperrt, voraussichtlich ab Oktober 2015 bis Ende 2016',
          'type' => 'handicap',
          'until' => 1483225199
        },
@@ -3967,7 +3915,10 @@ userdel	q3::inwork; 17648,5338 17601,5090 17542,4772 17520,4649
          'until' => 1484348400
        },
        {
-         'data' => 'userdel	2::inwork -3529,13452 -3546,13503 -3556,13582 -3543,13691 -3503,13773 -3385,13937 -3345,13994
+         'data' => '#: note: hier zurzeit (2016-05-16) nicht gesperrt
+userdel	2::inwork -3529,13452 -3546,13503 -3556,13582 -3543,13691 -3503,13773
+#: note: hier zurzeit (2016-05-16) komplett gesperrt
+userdel	2::inwork -3503,13773 -3385,13937 -3345,13994
 ',
          'from' => 1460584800,
          'id' => 2777,

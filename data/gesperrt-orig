@@ -44,7 +44,7 @@ Theodor-Heuss-Platz	1 1381,11335 1403,11428 1574,11379 1532,11280 1450,11309 138
 Halenseestr.	1 2218,10067 2268,9976 2300,9883 2369,9779 2415,9765
 # zwischen Trabener Steg und Zufahrt zum Rasthof Avus ausgelassen
 # südöstlicher Teil
-Halenseestr.	1 2394,9714 2360,9754 2297,9827
+Halenseestr.	1 2394,9714 2360,9754 2297,9827 2163,10024
 # nordwestlicher Teil
 Halenseestr.	1 1939,10446 1901,10566 1928,10728
 Rasthof Avus	1 1870,10406 1882,10356 1847,10323 1723,10289 1692,10348 1793,10424 1833,10427 1870,10406
@@ -297,7 +297,7 @@ Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
 # REMOVED (Einbahnstraßenregelung ist hier zweifelhaft) --- #: XXX Wird die Einbahnstraßenregelung hier aufgehoben? --- #: last_checked: 2012-03-06 --- #: next_check: 2012-04-20 --- Niederlagstr.	1:q3 9972,12184 9961,12273
 # REMOVED (wie sieht's nach den Bauarbeiten aus?) --- Niederlagstr.	1 9943,12364 9934,12420
-Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3028,14640 -2951,14617 -2944,14652 -2942,14666 -3027,14689 -3042,14682
+Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3025,14644 -2950,14624 -2944,14652 -2942,14666 -3027,14689 -3042,14682
 Hertelstr.	1 4893,6900 4787,6899
 Karl-Marx-Platz	1 12969,7610 13100,7626
 Karl-Marx-Platz	1 13100,7626 12991,7549
@@ -719,7 +719,7 @@ Von-der-Gablentz-Str.	1 5151,17658 4946,17701 4872,17703 4816,17712
 #: XXX_osm ^^^
 #: by: ^^^
 #: by: Christian (i8pp):
-Kemmannweg	1 -4207,14473 -4117,14458 -4049,14419 -3937,14340 -3911,14331 -3819,14302
+Kemmannweg	1 -4207,14473 -4117,14458 -4053,14428 -3937,14340 -3911,14331 -3819,14302
 #: by: jan (...matrix): vvv
 Privatstr. 13	1 13171,17335 13103,17280 13018,17264
 #: XXX_osm: Einbahnstraße fehlt bei osm
@@ -893,9 +893,9 @@ Hossauerweg	1s:q3 9056,1288 9022,1220 9083,1017 9129,986
 Manntzstr.: durch Tore gesperrt	2 8064,1460 8147,1663
 Bernecker Weg	1 7886,3801 7839,3714 7778,3644
 #: by: Juliane (alberts...) vvv
-Viktoria-Ufer	1 -3393,14470 -3360,14525 -3285,14615 -3259,14625 -3249,14621
+Viktoria-Ufer	1 -3393,14470 -3369,14532 -3282,14626 -3262,14636 -3243,14633
 Viktoria-Ufer	1 -3444,14310 -3446,14386 -3410,14479
-Jüdenstr. (Spandau)	1 -3249,14621 -3316,14504 -3350,14446
+Jüdenstr. (Spandau)	1 -3243,14633 -3316,14504 -3350,14446
 #: by: ^^^
 #: by: HEK:
 Hochbergplatz	1 4818,2279 4824,2266 4813,2256 4803,2257 4796,2271 4803,2280 4818,2279
@@ -1353,13 +1353,13 @@ Am Poetensteig, Gramzow	1s:q1 50043,90187 50107,89717
 #: by: Juliane Bölker:
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s:q3 16485,12384 16509,12518 16564,12513
 # REMOVED (wegen der Bauarbeiten an der Staatsoper ist die Einbahnstraßenregelung aufgehoben) --- Behrenstr./Bebelplatz	1s:q3 9801,12245 9743,12239 9708,12235 9674,12231 9631,12227
-Halenseestr.	1s:q2 2297,9827 2163,10024 2110,10101 2030,10253 1988,10328 1939,10446
+Halenseestr.	1s:q2 2163,10024 2110,10101 2030,10253 1988,10328 1939,10446
 Zeltinger Platz	1s:q4 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
 Ludolfinger Platz	1s:q4 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277,25094 2285,25059 2277,25033
 Sewanstr. - Balatonstr.	1s:q3 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s:q2 18377,9366 18490,9387
 Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
-Ritterstr.	1 -3360,14525 -3316,14504
+Ritterstr.	1 -3369,14532 -3316,14504
 Neue Bahnhofstr.	1s:q3 14908,11231 14918,11249
 #
 ####################################################################
@@ -1762,6 +1762,9 @@ abgeschlossenes Tor	3 * 15835,15092 *
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (8 weite Stufen) bzw. Naturrampe benutzen	0:15 -6004,15050
+#: XXX wie viele Stufen?
+tragen	0:30 -3138,14171
 #: note: es existiert auch eine enge und steile Rampe, nur zum Schieben geeignet
 tragen (5 Stufen)	0:10 14832,8199
 tragen (Schienen der stillgelegten Heidekrautbahn)	0:20 7316,20623
@@ -2119,11 +2122,10 @@ Drängelgitter	BNP:3::trailer=10 5029,19945
 Drängelgitter	BNP:3::trailer=10 -12262,-393
 Drängelgitter	BNP:3::trailer=10 -4139,1976
 enges Drängelgitter	BNP:5::trailer=no 17295,7323
-#: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7933
-#: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036689837317/689837317/00101684/84-Anlagen/03/3_Version_vom_15_01_2016.pdf
-#: XXX wird hier verbessert werden?
-#: next_check: 2016-07-01
-Drängelgitter	BNP:3::trailer=no -6276,13469
+# REMOVED (mittlerweile hat sich auch ein Trampelweg neben dem Drängelgitter gebildet) --- #: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7933 --- #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036689837317/689837317/00101684/84-Anlagen/03/3_Version_vom_15_01_2016.pdf --- #: XXX wird hier verbessert werden? --- #: next_check: 2016-07-01
+Drängelgitter	BNP:2::trailer=5 -6287,13472
+#: note: relativ weit
+Drängelgitter	BNP:2::trailer=5 -6265,13475
 Schranke, eventuell auf Gehweg umfahren	BNP:3::trailer=5 -1291,12098
 Schranke, eventuell auf Gehweg umfahren	BNP:3::trailer=5 -1390,11880
 Schranke, eventuell auf Gehweg umfahren	BNP:3::trailer=5 -480,12428
@@ -2307,7 +2309,7 @@ Metallstange	BNP:3::trailer=10 -5070,11199
 Metallstange	BNP:3::trailer=10 -5082,11155
 #: confirmed_by: srt
 Schranke, kann umfahren werden	BNP:2::trailer=5 -8113,13467
-Schranke	BNP:3::trailer=10 -3451,13300
+# REMOVED (existiert nicht mehr) --- Schranke	BNP:3::trailer=10 -3451,13300
 Drängelgitter	BNP:3::trailer=10 -4760,13980
 #: by: ^^^
 # REMOVED (Parkplatz existiert nicht mehr) --- #: note: explizite "Radfahren verboten"-Schilder --- Schranke	BNP:3::trailer=10 8828,13434
@@ -2671,7 +2673,7 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: last_checked: 2016-05-12
+#: last_checked: 2016-05-16
 Haasestr.: Bauarbeiten, keine Durchfahrt möglich	2::inwork 14328,11320 14286,11186
 # 
 #: next_check_id: WEICHSELPLATZ-2016 vvv
@@ -2885,10 +2887,13 @@ Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, gg
 #: by: Stefan Klinkusch: "gesperrt" vvv
 #: source_id: INKO_118000 vvv
 #: osm_watch: way id="25115001" version="8" vvv
-#: next_check: 2015-12-20 vvv
-(Baustraße an der Freybrücke)	2::inwork -3075,11510 -3197,11554
+#: last_checked: 2016-05-16 vvv
+#: check_frequency: 90d vvv
+# REMOVED (doch benutzbar) --- (Baustraße an der Freybrücke)	2::inwork -3075,11510 -3197,11554
 (Treppe an der Freybrücke)	2::inwork -3181,11496 -3177,11507 -3173,11520
-#: next_check ^^^
+Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3217,11570
+#: check_frequency ^^^
+#: last_checked ^^^
 #: osm_watch ^^^
 #: source_id ^^^
 #: by ^^^
@@ -3092,7 +3097,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2016-05-12
+#: last_checked: 2016-05-16
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

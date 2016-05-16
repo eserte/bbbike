@@ -1239,7 +1239,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -3150,14631
 	X -3937,15299
 	X -5911,15877
-	X -6719,16111
+	X -6722,16112
 	X 2295,20358
 	B 2358,20368
 	X 2615,20421
@@ -2295,7 +2295,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	X 3754,24946
 	X 3767,24887
 #: by: ^^^
-	X 1398,10201
+	F 1398,10201
 #: note: Anforderungsampel
 	F 7110,10613
 provisorische Ampel, die es schon ewig gibt	F 12414,8112
@@ -2855,6 +2855,11 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: last_checked: 2016-05-11
 #: check_frequency: 60d
 	F::inwork 8853,13539
+#: next_check_id: HEERSTR-2016
+#: XXX Baustellenampel; eigentlich sind hier zwei Ampeln: einmal für die Straße runter zur Havel, und dann etwas weiter für die Radfahrer zum Wechseln auf die andere Straßenseite
+#: last_checked: 2016-05-16
+#: check_frequency: 90d
+	X::inwork -3069,11487
 # 
 ################################################################################
 #: note: Potsdam vvv
@@ -2999,6 +3004,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
+#: off: Pfingstmontag 2016-05-16 gegen 13 Uhr
+	F -7554,13514
 ################################################################################
 #: note: Ampeln elsewhere vvv
 	B 19316,50384

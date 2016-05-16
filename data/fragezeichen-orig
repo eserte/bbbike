@@ -53,9 +53,9 @@ Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11094,11377 
 #: osm_watch: way id="4752743"  version="10"
 #: osm_watch: way id="8049679"  version="10"
 #: osm_watch: way id="8049678"  version="7"
-#: last_checked: 2014-09-13
+#: last_checked: 2016-05-16
 #: check_frequency: 180d
-Schulenburgstr./Weißenburger Str.: werden hier Radspuren markiert?	?::projected -2725,13287 -2798,13257 -2940,13221 -2974,13188 -3159,12962 -3210,12913 -3301,12864 -3448,12834 -3650,12762
+Schulenburgstr./Weißenburger Str.: werden hier Radspuren markiert?	?::projected -2725,13287 -2798,13257 -2940,13221 -2974,13188 -3159,12962 -3210,12913 -3246,12890 -3301,12864 -3448,12834 -3650,12762
 # 
 #: XXX Baumaßnahme 4.18 (Realisierung nach 2011)
 #: osm_watch: way id="47266663" version="4"
@@ -92,7 +92,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
 #: XXX Baumaßnahme 2.28 (Realisierung nach 2011) 
-#: last_checked: 2016-05-01
+#: last_checked: 2016-05-16
 #: check_frequency: 90d
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
@@ -102,7 +102,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6183 (Baubeginn erst 2015)
 #: XXX Baubeginn des ersten Abschnitts: 3. Quartal 2014
-#: last_checked: 2016-05-02
+#: last_checked: 2016-05-16
 #: check_frequency: 60d
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -218,7 +218,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2016-05-12
+#: last_checked: 2016-05-16
 #: check_frequency: 14d
 Warschauer Str: Radspuren in Bau	?::inwork 13651,11731 13696,11920 13745,12118
 # 
@@ -280,12 +280,12 @@ Kladower Damm: Radpuren bis 2015 geplant	?::projected; -5097,7361 -5046,7442 -49
 Kladower Damm: Radpuren bis 2015 geplant	?::projected; -4578,8336 -4540,8449 -4540,8535 -4590,8666
 # 
 #: osm_watch: way id="23968027" version="10"
-#: last_checked: 2014-09-13 (am nördlichen Ende)
+#: last_checked: 2016-05-16
 #: check_frequency: 90d
 Nauener Str.: Radspuren bis 2015 geplant	?::projected -4748,14237 -4757,14303 -4755,14393 -4724,14482
 # 
 #: osm_watch: way id="5000366" version="12" vvv
-#: last_checked: 2014-09-13 vvv
+#: last_checked: 2016-05-16 vvv
 #: check_frequency: 90d vvv
 Zeppelinstr.: Radspuren bis 2015 geplant	?::projected; -4724,14482 -4704,14571 -4670,14637
 Zeppelinstr.: Radspuren bis 2015 geplant	?::projected -4670,14637 -4667,14712 -4671,14818
@@ -633,11 +633,11 @@ Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Lage der kreuzenden Pr
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20150407.1145.401632.html (Bauarbeiten bis September 2015)
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.474302.php
 #: osm_watch: way id="24974528" version="13"
-#: last_checked: 2014-09-13
-#: next_check: 2015-09-01
-Sternbergpromenade: Umgestaltung, Havel-Radweg wird hier offiziell entlanggeführt	?::inwork -2926,14496 -2931,14455 -3059,14230 -3146,14145
+#: last_checked: 2016-05-16
+#: check_frequency: 60d
+Sternbergpromenade: der Havel-Radweg wird hier offiziell entlanggeführt	?::projected -3146,14145 -3090,14198 -3059,14230 -3042,14255 -3019,14286 -2923,14465 -2918,14496
 # 
-# REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-spandau/presse/archiv/20141105.1045.399992.html --- #: next_check: 2014-11-10 --- Sternbergpromenade: Ist die Sternbergpromenade ausgeschildert?	? -3503,13773 -3385,13937 -3345,13994 -3306,14035 -3300,14039 -3146,14145
+# REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-spandau/presse/archiv/20141105.1045.399992.html --- #: next_check: 2014-11-10 --- Sternbergpromenade: Ist die Sternbergpromenade ausgeschildert?	? -3503,13773 -3385,13937 -3345,13994 -3306,14035 -3300,14039 -3187,14116 -3146,14145
 # REMOVED (weitgehend realisiert, Radweg kann schon benutzt werden) --- #: next_check_id: WARSCHAUER-2014 --- #: XXX falls realisiert -> gesperrt_s-orig-Eintrag bewegen --- #: last_checked: 2015-08-05 --- #: next_check: 2015-09-30 --- Revaler Str.: asphaltierter Radweg entgegen der Einbahnstraßenrichtung existiert teilweise, teilweise muss noch gebaut werden	?; 13588,11490 13565,11492 13473,11456
 # REMOVED (neu asphaltiert) --- #: last_checked: 2013-11-11 --- Matkowskystr.: Bauarbeiten, danach vielleicht komplett asphaltiert?	? 14530,11137 14513,11075
 # REMOVED (weitgehend realisiert) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20131108.1050.391371.html (bis September 2014) --- #: source_id: IM_020636 --- #: source_id: IM_023589 --- #: last_checked: 2014-09-27 --- #: next_check: 2015-06-30 --- Landsberger Chaussee: Neubau/Sanierung des Radwegs	?::inwork; 22771,16194 22739,16203 22696,16208 22631,16215 22495,16165 22131,16000 21951,15918 21709,15808
@@ -1488,8 +1488,9 @@ Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 1
 # 
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.331148.php
 #: XXX bis voraussichtlich Ende Oktober 2015 war hier gesperrt, danach wird eventuell auch der Havelradweg über diesen Weg geführt
-#: next_check: 2015-10-25
-Schleuse - Lindenufer: führt der Havelradweg hier entlang?	? -2944,14652 -2922,14642 -2907,14534 -2926,14496 -2964,14478
+#: last_checked: 2016-05-16
+#: check_frequency: 60d
+Schleuse - Lindenufer: führt der Havelradweg hier entlang?	? -2942,14666 -2928,14666 -2913,14628 -2910,14534 -2918,14496 -2964,14478
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.464638.php
 #: next_check: 2016-04-10
@@ -1529,10 +1530,7 @@ Dietzgenstr.: Bauarbeiten zwischen Kräuter- und Wiesenkräuterweg, danach viellei
 #: next_check: 2016-05-30
 Wallensteinstr.: Bauarbeiten --- gibt es hier Qualitätsverbesserungen?	?::inwork 17549,9529 18037,9195
 # 
-#: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8362&options=4
-#: XXX kein rechts-vor-links?
-Maulbeerallee: Vorfahrtsregelung?	? -6093,12801 -5975,12827 -5878,12845 -5784,12858 -5706,12869 -5594,12832 -5480,12793 -5307,12737 -5282,12730
-# 
+# REMOVED --- #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8362&options=4 --- #: XXX kein rechts-vor-links? --- Maulbeerallee: Vorfahrtsregelung?	? -6093,12801 -5975,12827 -5878,12845 -5784,12858 -5706,12869 -5594,12832 -5480,12793 -5307,12737 -5282,12730
 # REMOVED (bereits aufgenommen) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4203 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/15re.pdf/file?y=2016 --- #: XXX ggfs. auch als Grünfläche in flaechen-orig eintragen --- #: next_check: 2016-05-01 --- Selma- und Paul-Latte-Platz: Benennungsabsicht eines Platzes	? 10843,20301 10786,20272 10802,20240 10843,20301
 # REMOVED --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036470336375/470336375/00071821/21-Anlagen/02/_15-BenennungsabsichtfuerdieoeffentlicheStrass.pdf --- Straße 46: ist hier bereits die Mittelstr.?	? 14320,20580 14482,20547
 # REMOVED --- Robert-Koch-Platz: genaue Ausschilderung anschauen	? 8648,13498 8634,13588 8626,13641 8619,13689 --- Robert-Koch-Platz: genaue Ausschilderung anschauen	? 8601,13584 8634,13588 8674,13593
@@ -1615,10 +1613,7 @@ Waldstr.: Umgestaltung, wird sich hier etwas ändern?	? 5443,14028 5417,13817 539
 #: next_check: 2015-12-15
 Haveluferweg: bessere Qualität nach den Bauarbeiten?	?::inwork -4546,9381 -4506,9395 -4460,9456 -4442,9625 -4536,9800 -4585,9836 -4619,9867 -4631,10046 -4625,10139 -4645,10192 -4592,10184 -4510,10208 -4445,10379 -4387,10496 -4323,10570 -4230,10679 -4254,10810 -4251,11112
 # 
-#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367062.php
-#: by: http://www.gruen-berlin.de/in-realisation/havelradweg/?L=.htewrap&PHPSESSID=bc0eb92d1c0f3ab3c89fe427b9f45c1a
-#: next_check: 2015-12-15
-Schifffahrtsufer an der Havel: bessere Qualität nach den Bauarbeiten?	?::inwork -3339,13106 -3203,12895 -3205,12816 -3180,12719 -3142,12615
+# REMOVED --- #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367062.php --- #: by: http://www.gruen-berlin.de/in-realisation/havelradweg/?L=.htewrap&PHPSESSID=bc0eb92d1c0f3ab3c89fe427b9f45c1a --- #: next_check: 2015-12-15 --- Schifffahrtsufer an der Havel: bessere Qualität nach den Bauarbeiten?	?::inwork -3337,13111 -3230,12938 -3228,12920 -3208,12889 -3211,12868 -3211,12784 -3170,12603 --- Schifffahrtsufer an der Havel: bessere Qualität nach den Bauarbeiten?	?::inwork -3221,12925 -3199,12888 -3205,12816 -3180,12719 -3142,12615
 # 
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367070.php
 #: next_check: 2016-12-31
@@ -1715,10 +1710,7 @@ Paster-Behrens-Str. - Britzer Park: wegen Bordstein muss man zur östlichen Seite
 # REMOVED (keine Einschränkungen) --- #: XXX laut fritz bis  01.08.2015, 12:00 Uhr --- Holzmarktstr.: Bauarbeiten, auch Auswirkungen auf Radfahrer?	? 11764,12001 11619,12084 11513,12138 11388,12202 11351,12221
 # REMOVED (-> gesperrt-orig) --- #: source_id: IM_023816 --- #: XXX Bauarbeiten bis 06.03.2016 (laut anderen Quellen nur bis 6.3.2015) --- Baerwaldstr.: gibt es für Radfahrer Veränderungen?	? 10500,10081 10513,10038 10480,9949 10408,9800 10361,9755
 # REMOVED (-> temp blockings) --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.256386.php --- #: XXX Sperrung bis Oktober 2015 --- #: XXX Umleitung über die Straße "Am Nordhafen", dazu wird sie für Autos gesperrt --- evtl. wird auch asphaltiert? --- #: XXX nach den Bauarbeiten wird die Straße "Am Nordhafen" zurückgebaut --- bleibt der Straßenname erhalten, bleibt ein Weg für Radfahrer übrig? --- #: next_check: 2015-02-01 --- #: priority: #A --- Am Nordhafen: geplante Sperrung	? 7753,14528 7695,14545 7527,14644 7486,14652
-# 
-#: XXX laut osm asphaltiert und unbeleuchtet
-Am Bullengraben: Qualität? Unbeleuchtet?	? -6269,13472 -6197,13504 -6086,13578 -6020,13598 -5949,13600
-# 
+# REMOVED --- #: XXX laut osm asphaltiert und unbeleuchtet --- Am Bullengraben: Qualität? Unbeleuchtet?	? -6272,13472 -6265,13475 -6209,13499 -6076,13583 -6020,13598 -5963,13593
 # REMOVED (eingetragen) --- Neubrandenburger Str.: Qualität?	? 17401,18409 17580,18548 17635,18591 17667,18617 17676,18701
 # REMOVED (-> gesperrt-orig) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20141127.1230.400389.html --- #: priority: #A --- Am Kienberg: sind die Wege bereits gesperrt?	? 22670,14520 22679,14450 22639,14384 22462,14172 22414,14144 22172,14287 22061,14471 22026,14501 21985,14513
 # REMOVED (-> ampeln-orig) --- #: XXX gibt es während der Bauarbeiten Einschränkungen bzgl. der Radwege? vvv --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv --- #: XXX -> Köpenicker Landstr. (Baumschulenweg): Baustelle, linker Fahrstreifen in jeder Richtung gesperrt (bis Anfang 12/14, Gesamtmaßnahme bis 2016) in beiden Richtungen zwischen Neue Krugallee und Schnellerstr., 25.11.2014 13:08 Uhr bis 03.12.2014 16:00 Uhr	IM_023532 --- #: last_checked: 2014-11-15 vvv --- #: check_frequency: 7d vvv
@@ -1729,13 +1721,7 @@ Am Bullengraben: Qualität? Unbeleuchtet?	? -6269,13472 -6197,13504 -6086,13578 -
 # REMOVED (nein) --- Bornholmer/Kolonnenweg: unbeleuchtet?	? 10134,16534 10118,16561 10108,16576 9954,16590
 # REMOVED (keine Änderung) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file?y=2014 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2014 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2015 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file?y=2015 --- #: osm_watch: way id="9829824" version="11" --- #: next_check: 2014-12-01 --- Brebacher Str./Dillinger Weg: hat die "Einziehung" von Straßenflächen hier Konsequenzen?	? 21550,12038 21562,12088
 # REMOVED (ja -> radwege-orig) --- #: by: http://www.deutsches-architektur-forum.de/forum/showthread.php?t=4314&page=28 --- Wilhelmstr.: sind die Radspuren temporär aufgehoben?	?::inwork 8775,12457 8804,12280
-# 
-#: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7315
-#: by: http://www.berlin.de/ba-spandau/bvv-online/___tmp/tmp/45081036188291447/188291447/00093246/46-Anlagen/04/Drs-Nr0711-XIX_sb_Anlage.pdf
-#: last_checked: 2014-09-13 (noch immer rechts-vor-links)
-#: check_frequency: 180d
-Nennhauser Damm/Finkenkruger Weg: neue Vorfahrtsregelung?	?::projected -7484,13770 -7464,13904 -7457,13957 -7456,14073 -7455,14144 -7457,14317 -7445,14392 -7420,14520 -7418,14564 -7391,14857 -7390,14881 -7387,14951 -7373,15154 -7371,15201 -7365,15306
-# 
+# REMOVED (ist nur temporär wegen der Bauarbeiten im Seegefelder Weg) --- #: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7315 --- #: by: http://www.berlin.de/ba-spandau/bvv-online/___tmp/tmp/45081036188291447/188291447/00093246/46-Anlagen/04/Drs-Nr0711-XIX_sb_Anlage.pdf --- #: last_checked: 2014-09-13 (noch immer rechts-vor-links) --- #: check_frequency: 180d --- Finkenkruger Weg: neue Vorfahrtsregelung?	?::projected -7418,14564 -7391,14857 -7390,14881 -7387,14951 -7373,15154 -7371,15201 -7365,15306
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4612 --- Stubenrauchstr.: gibt es hier neue Fahrbahnmarkierungen z.B. Radspuren?	? 16182,2200 16135,2135
 # REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2014 --- #: last_checked: 2014-09-21 --- Sewanstr.: dieser Abschnitt wird zur Lückstr.	? 16647,10632 16699,10611
 # REMOVED (fast nichts passiert) --- #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2014_02_21.pdf?start&ts=1392978416&file=stra__enbauliste_stand_2014_02_21.pdf --- #: last_checked: 2014-07-17 --- #: check_frequency: 60d --- Friedrich-Wilhelm-Platz: Umbau der Radverkehrsanlagen	?::inwork 5314,7217 5333,7201 5352,7184 5397,7205 5364,7330 5352,7428
@@ -2180,7 +2166,7 @@ Landsberger/Virchowstr.	? 12979,13280
 # 
 B87 (Umfahrung Müllrose): Ist die Straße eine Kfz-Straße?	? 78295,-17575 78445,-17324 78503,-16995 78474,-16794 78366,-16150 78445,-15684 78732,-15297 79126,-15047 79949,-14674 80501,-14338 81246,-13757 81362,-13667
 # 
-# REMOVED (aufgenommen) --- #: next_check: 2006-06-01 --- #: XXX oder vielleicht dieser Weg hier? --- #: by: http://www.berlin.de/ba-spandau/presse/archiv/20101109.1255.318039.html --- #: by: http://www.berlin.de/ba-spandau/presse/archiv/20120314.1050.367483.html --- (am Burgwallgraben): neuer Weg wg. Renaturisierung durch DB - fertig Sommer 2006. Qualität? Nachts beleuchtet?	? -3654,13293 -3644,13232 -3570,13116 -3457,13028 -3401,13013 -3371,13020 -3348,13055 -3339,13106
+# REMOVED (aufgenommen) --- #: next_check: 2006-06-01 --- #: XXX oder vielleicht dieser Weg hier? --- #: by: http://www.berlin.de/ba-spandau/presse/archiv/20101109.1255.318039.html --- #: by: http://www.berlin.de/ba-spandau/presse/archiv/20120314.1050.367483.html --- (am Burgwallgraben): neuer Weg wg. Renaturisierung durch DB - fertig Sommer 2006. Qualität? Nachts beleuchtet?	? -3654,13293 -3644,13232 -3570,13116 -3457,13028 -3401,13013 -3371,13020 -3348,13055 -3337,13111
 # 
 #: XXX laut Detlef Hoge:
 auf der östlichen Seite der B101n: wo genau ist der Radweg hier?	? 6173,-2344 6062,-2292 5883,-2508 5540,-2771
@@ -4439,14 +4425,7 @@ Steiermärker Str. (Schwanebeck): Qualität?	? 18958,26234 18942,26470
 Genfer Platz (Schwanebeck): Qualität? Gibt es eine Verbindung zur Zillertaler Str.?	? 18389,26038 18395,26020
 #: source_id: 146400332	
 Hohenstein - Strausberg: gibt es zwischen Hohenstein und Strausberg mittlerweile einen Radweg? Ist es ein Zweirichtungsradweg? Asphaltiert?	? 48635,18552 47672,18859 46386,18523 44085,19049 43857,19113 43686,19241
-#: by: http://www.berlin.de/ba-spandau/presse/archiv/20141013.1250.399643.html
-#: XXX ggfs. in Berlin.coords.data aufnehmen
-#: XXX außerdem: ist der südliche Teil bis zur Schulenburgbrücke mittlerweile gepflastert/asphaltiert?
-#: osm_watch: way id="24975319" version="8"
-#: osm_watch: way id="325928221" version="1"
-#: next_check: 2014-10-21
-Hermann-Oxfort-Promenade: Ist die Hermann-Oxfort-Promenade ausgeschildert?	? -3503,13773 -3543,13691 -3556,13582 -3546,13503 -3529,13452 -3451,13300 -3441,13270 -3352,13135 -3339,13106 -3203,12895 -3202,12891
-# 
+# REMOVED --- #: by: http://www.berlin.de/ba-spandau/presse/archiv/20141013.1250.399643.html --- #: XXX ggfs. in Berlin.coords.data aufnehmen --- #: XXX außerdem: ist der südliche Teil bis zur Schulenburgbrücke mittlerweile gepflastert/asphaltiert? --- #: osm_watch: way id="24975319" version="8" --- #: osm_watch: way id="325928221" version="1" --- #: next_check: 2014-10-21 --- Hermann-Oxfort-Promenade: Ist die Hermann-Oxfort-Promenade ausgeschildert?	? -3503,13773 -3543,13691 -3556,13582 -3546,13503 -3529,13452 -3451,13300 -3441,13270 -3352,13135 -3337,13111 -3221,12925 -3199,12888 -3202,12891
 # REMOVED --- #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.210019.php --- #: next_check: 2014-11-21 --- Olafstr.: Ist die Fahrbahn nach den Bauarbeiten besser geworden? Liegt nun Asphalt?	? 3561,23817 3512,24049 3483,24186 3457,24321 3425,24469
 # 
 Heinersdorf: Qualität? Liegt hier auch Verbundsteinpflaster?	? 63261,76791 63225,76949 63279,77202 63342,77286 63390,77441 63293,77739
@@ -4525,3 +4504,4 @@ Domstrengbrücke und Verbindung zum Grillendamm: Qualität?	? -46302,103 -46305,13
 # 
 Rehwiese/Rehsprung - Potsdamer Chaussee: existiert hier eine Verbindung für Radfahrer? Qualität? Nachts beleuchtet?	? -3395,1668 -3325,1665 -3310,1628 -3252,1644 -3042,1763 -3022,1754 -3011,1761
 # 
+Am Kiesteich - Spektewiesen: Qualität? Liegt hier Kleinsteinpflaster?	? -6256,15169 -6252,15228

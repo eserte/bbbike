@@ -31,7 +31,7 @@ Erkelenzdamm etc.	1 11094,10261 11038,10247 10967,10092
 Ernst-Reuter-Platz	1 4763,11834 4854,11843 4905,11785 4885,11735 4838,11697 4781,11708 4737,11768 4763,11834
 Theodor-Heuss-Platz	1 1381,11335 1403,11428 1574,11379 1532,11280 1450,11309 1381,11335
 Halenseestr.	1 2218,10067 2268,9976 2300,9883 2369,9779 2415,9765
-Halenseestr.	1 2394,9714 2360,9754 2297,9827
+Halenseestr.	1 2394,9714 2360,9754 2297,9827 2163,10024
 Halenseestr.	1 1939,10446 1901,10566 1928,10728
 Rasthof Avus	1 1870,10406 1882,10356 1847,10323 1723,10289 1692,10348 1793,10424 1833,10427 1870,10406
 Breitenbachplatz (Westseite)	1 4292,6558 4218,6583 4111,6651 4074,6681 4021,6729 3947,6814
@@ -246,7 +246,7 @@ Mudrackzeile	1 6985,17812 7020,17690
 Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
-Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3028,14640 -2951,14617 -2944,14652 -2942,14666 -3027,14689 -3042,14682
+Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3025,14644 -2950,14624 -2944,14652 -2942,14666 -3027,14689 -3042,14682
 Hertelstr.	1 4893,6900 4787,6899
 Karl-Marx-Platz	1 12969,7610 13100,7626
 Karl-Marx-Platz	1 13100,7626 12991,7549
@@ -520,7 +520,7 @@ Michaelkirchplatz	1 11415,11392 11487,11390 11542,11342
 Berenhorststr.	1 4816,17712 4862,17934
 Berenhorststr.	1 4905,18142 4862,17934
 Von-der-Gablentz-Str.	1 5151,17658 4946,17701 4872,17703 4816,17712
-Kemmannweg	1 -4207,14473 -4117,14458 -4049,14419 -3937,14340 -3911,14331 -3819,14302
+Kemmannweg	1 -4207,14473 -4117,14458 -4053,14428 -3937,14340 -3911,14331 -3819,14302
 Privatstr. 13	1 13171,17335 13103,17280 13018,17264
 Preunelstr.	1 13012,17332 12965,17324 12930,17302 12865,17381
 Karl-Liebknecht-Str. (Richtungsfahrbahn)	1::igndisp 11160,13492 11135,13452 11107,13410 11081,13372 11070,13357
@@ -635,9 +635,9 @@ Fritz-Werner-Str.: Werksgelände, Durchfahrt nicht möglich	2 9052,2357 8955,2004
 Hossauerweg	1s 9056,1288 9022,1220 9083,1017 9129,986
 Manntzstr.: durch Tore gesperrt	2 8064,1460 8147,1663
 Bernecker Weg	1 7886,3801 7839,3714 7778,3644
-Viktoria-Ufer	1 -3393,14470 -3360,14525 -3285,14615 -3259,14625 -3249,14621
+Viktoria-Ufer	1 -3393,14470 -3369,14532 -3282,14626 -3262,14636 -3243,14633
 Viktoria-Ufer	1 -3444,14310 -3446,14386 -3410,14479
-Jüdenstr. (Spandau)	1 -3249,14621 -3316,14504 -3350,14446
+Jüdenstr. (Spandau)	1 -3243,14633 -3316,14504 -3350,14446
 Hochbergplatz	1 4818,2279 4824,2266 4813,2256 4803,2257 4796,2271 4803,2280 4818,2279
 Jathoweg	1 5259,20186 5266,20299 5307,20437
 Taldorfer Weg	1 5170,20182 5259,20186 5506,20197
@@ -1002,13 +1002,13 @@ Spitzmühlenweg	1s 41728,17918 41668,17984 41556,18146
 Stephanstr.	1s 6523,4491 6360,4504
 Am Poetensteig, Gramzow	1s 50043,90187 50107,89717
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s 16485,12384 16509,12518 16564,12513
-Halenseestr.	1s 2297,9827 2163,10024 2110,10101 2030,10253 1988,10328 1939,10446
+Halenseestr.	1s 2163,10024 2110,10101 2030,10253 1988,10328 1939,10446
 Zeltinger Platz	1s 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
 Ludolfinger Platz	1s 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277,25094 2285,25059 2277,25033
 Sewanstr. - Balatonstr.	1s 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18490,9387
 Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
-Ritterstr.	1 -3360,14525 -3316,14504
+Ritterstr.	1 -3369,14532 -3316,14504
 Neue Bahnhofstr.	1s 14908,11231 14918,11249
 Straßenbahnhaltestelle	3nocross::ignrte 9246,13235 9255,13164 9262,13111
 Friedrichstr. -> Johannisstr.: Straßenbahnhaltestelle	3::igndisp 9246,13235 9255,13164 9385,13174
@@ -2078,13 +2078,13 @@ Mittelstreifen	3nocross::ignrte -4882,12061 -4637,11982 -4500,11937
 Heerstr. -> Winzerstr.: Mittelstreifen	3::igndisp -4500,11937 -4637,11982 -4687,11885
 Winzerstr. -> Heerstr.: Mittelstreifen	3::igndisp -4687,11885 -4637,11982 -4882,12061
 Mittelstreifen	3nocross::ignrte -3803,13464 -3789,13519 -3746,13622
-Klosterstr. -> Ziegelhof, Grünanlage: Mittelstreifen	3::igndisp -3746,13622 -3789,13519 -3680,13512
-Ziegelhof, Grünanlage -> Klosterstr.: Mittelstreifen	3::igndisp -3680,13512 -3789,13519 -3803,13464
+Klosterstr. -> Ziegelhof, Grünanlage: Mittelstreifen	3::igndisp -3746,13622 -3789,13519 -3689,13513
+Ziegelhof, Grünanlage -> Klosterstr.: Mittelstreifen	3::igndisp -3689,13513 -3789,13519 -3803,13464
 Mittelstreifen	3nocross::ignrte -3621,13884 -3662,13797 -3677,13769 -3701,13719
 Klosterstr. -> Borkumer Str.: Mittelstreifen	3::igndisp -3677,13769 -3662,13797 -3849,13848
 Borkumer Str. -> Klosterstr.: Mittelstreifen	3::igndisp -3849,13848 -3662,13797 -3621,13884
-Klosterstr. -> Sedanstr.: Mittelstreifen	3::igndisp -3662,13797 -3677,13769 -3595,13729
-Sedanstr. -> Klosterstr.: Mittelstreifen	3::igndisp -3595,13729 -3677,13769 -3701,13719
+Klosterstr. -> Sedanstr.: Mittelstreifen	3::igndisp -3662,13797 -3677,13769 -3614,13724
+Sedanstr. -> Klosterstr.: Mittelstreifen	3::igndisp -3614,13724 -3677,13769 -3701,13719
 Mittelstreifen	3nocross::ignrte -4239,12626 -4180,12690 -4116,12761 -4058,12838
 Wilhelmstr. -> Ulmenstr.: Mittelstreifen	3::igndisp -4116,12761 -4180,12690 -4053,12632
 Ulmenstr. -> Wilhelmstr.: Mittelstreifen	3::igndisp -4053,12632 -4180,12690 -4239,12626
@@ -2165,6 +2165,8 @@ abgeschlossenes Tor	3 4898,22459 5083,22149 5086,22145
 abgeschlossenes Tor	3 5086,22145 5083,22149 4898,22459
 abgeschlossenes Tor	3 15313,15393 15835,15092 15867,15073
 abgeschlossenes Tor	3 15867,15073 15835,15092 15313,15393
+tragen (8 weite Stufen) bzw. Naturrampe benutzen	0:15:-175 -6004,15050
+tragen	0:30:-162 -3138,14171
 tragen (5 Stufen)	0:10:-132 14832,8199
 tragen (Schienen der stillgelegten Heidekrautbahn)	0:20:-39 7316,20623
 tragen	0:15:-58 47027,49988
@@ -2266,7 +2268,7 @@ tragen (ca. 30 Stufen)	0:30:-175 -2397,3647
 tragen (36 Stufen)	0:30:-2 -3189,3147
 tragen (6 Stufen)	0:15:-18 -3176,3081
 tragen (drei Stufen)	0:10:57 -3368,2942
-tragen (12 Stufen):	0:20:40 -2993,14568
+tragen (12 Stufen):	0:20:37 -2993,14568
 tragen (drei flache Stufen)	0:10:-137 -7445,-5002
 tragen (zwei Stufen)	0:10:-27 5970,20353
 tragen (ca. 45 Stufen, Aufzug ist vorhanden)	0:30:20 13503,11179
@@ -2411,7 +2413,8 @@ Drängelgitter	BNP:3:-145:trailer=10 5029,19945
 Drängelgitter	BNP:3:-174:trailer=10 -12262,-393
 Drängelgitter	BNP:3:32:trailer=10 -4139,1976
 enges Drängelgitter	BNP:5:0:trailer=no 17295,7323
-Drängelgitter	BNP:3:66:trailer=no -6276,13469
+Drängelgitter	BNP:2:90:trailer=5 -6287,13472
+Drängelgitter	BNP:2:66:trailer=5 -6265,13475
 Schranke, eventuell auf Gehweg umfahren	BNP:3:-131:trailer=5 -1291,12098
 Schranke, eventuell auf Gehweg umfahren	BNP:3:-169:trailer=5 -1390,11880
 Schranke, eventuell auf Gehweg umfahren	BNP:3:56:trailer=5 -480,12428
@@ -2561,7 +2564,6 @@ Tor zum Friedrich-Ludwig-Jahn-Sportpark, lichte Breite 85cm	BNP:5:-108:trailer=n
 Metallstange	BNP:3:-72:trailer=10 -5070,11199
 Metallstange	BNP:3:-72:trailer=10 -5082,11155
 Schranke, kann umfahren werden	BNP:2:-192:trailer=5 -8113,13467
-Schranke	BNP:3:-27:trailer=10 -3451,13300
 Drängelgitter	BNP:3:4:trailer=10 -4760,13980
 Schranke	BNP:3:-96:trailer=10 8262,17361
 Schranke, enge Umfahrung	BNP:5:-6:trailer=15 8352,17285
@@ -2848,8 +2850,8 @@ Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17651,-393
 Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081
 Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081
 Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, ggfs. dauerhaft	2::inwork 17670,7512 17681,7589
-(Baustraße an der Freybrücke)	2::inwork -3075,11510 -3197,11554
 (Treppe an der Freybrücke)	2::inwork -3181,11496 -3177,11507 -3173,11520
+Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3217,11570
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352

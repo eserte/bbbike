@@ -883,7 +883,7 @@ Gladiolenstr.: enge Straﬂe	q1 23536,4543 23541,4439
 (Steffenshagener Str. - Lidl-Parkplatz): Fuﬂg‰nger	q1 22991,11133 22982,11157
 Hamsterstr.: eng, Fuﬂg‰nger	q2 23928,11620 23917,11600 23799,11646 23694,11678 23588,11720 23495,11753 23390,11792
 Wieselstr.: eng, Fuﬂg‰nger	q2 24068,11577 23954,11615 23940,11592
-(Lindenufer - Behnitz): Fuﬂg‰nger	q1 -2964,14478 -2926,14496 -2907,14534 -2922,14642 -2944,14652
+(Lindenufer - Behnitz): Fuﬂg‰nger	q1 -2964,14478 -2918,14496 -2910,14534 -2913,14628 -2928,14666 -2942,14666
 Tegelorter Promenade: Fuﬂg‰nger	q1 -1478,17889 -1604,17851 -1694,17839 -1686,17918 -1660,18035 -1659,18076
 Tegelorter Promenade: Fuﬂg‰nger	q1 -1659,18104 -1660,18114 -1661,18132 -1717,18237 -1835,18417 -1877,18495 -2050,18643
 (Uferweg am Tegeler See): Fuﬂg‰nger, Restaurantbetrieb	q1 -1197,17860 -1102,17869 -1085,17878 -997,18069 -984,18136 -934,18284 -930,18337
@@ -1069,7 +1069,10 @@ Havelbr¸cke: Rampe, Fuﬂg‰nger	q3 -3204,13913 -3159,13886 -3285,13947
 Havelbr¸cke: Fuﬂg‰nger	q2 -3371,13987 -3437,14029 -3445,14033
 (Stabholzgarten - Uferweg): Fuﬂg‰nger	q1 -3445,14033 -3345,13994
 (Weg am M¸hlengraben): Fuﬂg‰nger	q1 -3306,14035 -3370,14115
-(Weg an der Havel): Fuﬂg‰nger; Radfahrer sollten den Weg am M¸hlengraben nehmen	q3 -3300,14039 -3146,14145 -3135,14183
+(Weg an der Havel): Fuﬂg‰nger; Radfahrer sollten den Weg am M¸hlengraben nehmen	q3 -3300,14039 -3187,14116
+Sternbergpromenade: Fuﬂg‰nger	q1 -3187,14116 -3146,14145 -3090,14198 -3059,14230 -3042,14255 -3019,14286 -2923,14465 -2918,14496
+(Lindenufer - Sternbergpromenade): Fuﬂg‰nger, Bordstein	q2 -3091,14220 -3042,14255
+(Wasserstr. - Sternbergpromenade): Fuﬂg‰nger	q1 -3054,14305 -3019,14286
 (Glacisweg - Ramin-Park): eng, Fuﬂg‰nger	q2 -3887,14405 -3855,14399 -3841,14436
 Reckeweg: eng	q3 -7109,15286 -7133,15287
 Am Krummen Weg: offiziell nur f¸r Fuﬂg‰nger	q2 -6891,14891 -7026,14890
@@ -1244,11 +1247,11 @@ Am Spektesee: einige Fuﬂg‰nger	q1 -5732,15319 -5861,15342 -5936,15352 -5989,1539
 (Spektefeld): einige Fuﬂg‰nger	q1 -5674,15609 -5743,15634 -5845,15653 -5882,15644 -5936,15620 -5983,15572 -6011,15481 -5989,15390
 (Spektefeld): einige Fuﬂg‰nger	q1 -6011,15481 -6018,15481 -6018,15394 -6008,15338 -6084,15276 -6120,15249 -6147,15204 -6176,15168
 (Wolfshorst - Spektewiesen): einige Fuﬂg‰nger, eng	q2 -6573,15254 -6584,15311
-(am Burgwallgraben): einige Fuﬂg‰nger, eng	q2 -3654,13293 -3644,13232 -3570,13116 -3457,13028 -3401,13013 -3371,13020 -3348,13055 -3339,13106
+(am Burgwallgraben): einige Fuﬂg‰nger, eng	q2 -3654,13293 -3644,13232 -3570,13116 -3457,13028 -3401,13013 -3371,13020 -3348,13055 -3337,13111
 (Ziegelhof - Burgwallgraben): Fuﬂg‰nger	q2 -3651,13476 -3654,13293
 (Burgwallgraben - Krowelstr.): einige Fuﬂg‰nger, Rampe	q2 -3457,13028 -3458,13006 -3461,12962
 Kerstenweg: Fuﬂg‰nger, Bordsteine	q2 -3707,13377 -3813,13404
-(Ziegelhof, Gr¸nanlage): Fuﬂg‰nger	q1 -3546,13503 -3680,13512 -3789,13519
+(Ziegelhof, Gr¸nanlage): Fuﬂg‰nger	q1 -3546,13503 -3689,13513 -3789,13519
 entlang der Havel: Fuﬂg‰nger	q1 -3306,14035 -3345,13994 -3385,13937 -3503,13773 -3543,13691 -3556,13582 -3546,13503 -3529,13452 -3451,13300 -3441,13270
 Landschaftspark Herzberge: Bordstein, Schwingtor	q2 17671,13132 17684,13133 17698,13134
 (Allee der Kosmonauten - Langhoffstr.): einige Fuﬂg‰nger	q1 19856,13794 19847,14019 19843,14064
@@ -1304,6 +1307,7 @@ Gersdorfstr. - Wulfila-Ufer: Bordstein, einige Fuﬂg‰nger	q2 8255,4791 8184,4716
 Geitnerweg: Bordstein, einige Fuﬂg‰nger	q2 5420,511 5448,455
 Seydlitzstr.: einige Fuﬂg‰nger	q1 6511,2284 6459,2364
 Trabener Steg: abgeflachte Treppenstufen, Fuﬂg‰nger	q2 2142,10027 2131,10014 2128,9999
+Trabener Steg: abgeflachte Treppenstufen, Fuﬂg‰nger	q2 2224,10083 2245,10092
 Wilhelm-Stolze-Str.: Fuﬂg‰nger	q1 13267,13167 13233,13242
 Regatta-Ufer: Fuﬂg‰nger, Radfahren nicht erlaubt	q4 15682,9472 15632,9430 15741,9326 15778,9311 15793,9334
 Am Schwanenberg: einige Fuﬂg‰nger	q1 15752,9385 15793,9334
@@ -1319,7 +1323,8 @@ Bootshausweg: einige Fuﬂg‰nger	q1 -1016,16585 -1058,16611 -1096,16597
 Ackerstr.: einige Fuﬂg‰nger, Bordstein	q2 -3937,15299 -3869,15333
 (Spektegr¸nzug): Fuﬂg‰nger	q1 -4945,14883 -5053,14926 -5168,14943 -5383,14984 -5564,15039 -5610,15079 -5641,15109
 (Spektegr¸nzug - Unnaer Str.): Fuﬂg‰nger	q1 -5610,15079 -5608,15105
-(Schulzenstr. - Spekteweg): Fuﬂg‰nger	q1 -4947,14873 -4945,14883 -4932,14968
+(Schulzenstr. - Spekteweg): Fuﬂg‰nger	q1 -4961,14828 -4945,14883
+(Schulzenstr. - Spekteweg): nur f¸r Fuﬂg‰nger erlaubt	q4 -4945,14883 -4932,14968
 Heerstr. - Tiefenwerder: teilweise recht eng	q2 -3217,11570 -3179,11763 -3116,12012
 (Sonnenallee - Aronsstr.): einige Fuﬂg‰nger	q1 14519,7301 14571,7427
 (Landschaftspark Herzberge, Weg am ehemaligen Zeltlager): einige Fuﬂg‰nger, kurvenreich	q2 17187,13609 17185,13765 17204,13800 17209,13856 17178,13896 17190,13903 17213,13931 17210,14054 17164,14067 17152,14084
@@ -1537,6 +1542,9 @@ Finckensteinallee: Fuﬂg‰nger, Bordstein	q3 4115,2726 4140,2706 4170,2727
 Kietzgrabensteg: einige Fuﬂg‰nger	q1 22514,4632 22531,4605
 Br¸cke ¸ber den Britzer Damm: Rampe, enge Kurven	q2 12637,6309 12630,6326 12605,6322 12619,6310
 Falkenberger Str.: Bordstein	q3 15819,16857 15892,16834
+(Mauerstr. - Sternbergpromenade): Fuﬂg‰nger	q1 -3275,14114 -3187,14116
+(Neuhausweg - Ramin-Park): einige Fuﬂg‰nger, Bordstein	q2 -3964,14507 -3950,14519
+Fˆlderichplatz: Fuﬂg‰ngerzone	q3 -3942,12559 -3941,12376
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
@@ -2315,7 +2323,8 @@ Lee-Parry-Weg: schwieriges Befahren durch Steigung, in beiden Richtungen	q3 -509
 (Strittweg - Straﬂe 270): teilweise durch hereinragende Pflanzen wie Brennnesseln eingeengt	q2 -5256,11142 -5312,10948
 Litta-von-Stauffenberg-Weg: schmaler Rad- und Gehweg (1,5m-2m)	q1 -7009,5211 -7174,5307
 Scharfe Lanke: enge Straﬂe	q0 -4251,11112 -4254,10810 -4230,10679 -4323,10570 -4387,10496 -4445,10379
-(Schiffahrtsufer - Betckestr.): einige Fuﬂg‰nger	q1 -3441,13270 -3352,13135 -3339,13106 -3203,12895 -3205,12816 -3180,12719 -3142,12615
+(Schiffahrtsufer - Betckestr.): einige Fuﬂg‰nger	q1 -3441,13270 -3352,13135 -3337,13111 -3230,12938 -3228,12920 -3208,12889 -3211,12868 -3211,12784 -3170,12603
+(Schiffahrtsufer - Betckestr.): einige Fuﬂg‰nger	q1 -3221,12925 -3199,12888 -3205,12816 -3180,12719 -3142,12615
 (zum R‰cknitzer Steig): einige Fuﬂg‰nger	q1 -5535,12631 -5559,12557
 (Magistratsweg - Blasewitzer Ring/Reclamweg): einige Fuﬂg‰nger	q1 -5830,12712 -5808,12631 -5559,12557 -5400,12509
 (Magistratsweg - Blasewitzer Ring/Reclamweg): einige Fuﬂg‰nger, hohe Bordsteinkante	q2 -5400,12509 -5196,12452
@@ -2337,7 +2346,6 @@ Straﬂe Z: enge Straﬂe	q0 -638,16459 -671,16488 -708,16516
 (Am Bullengraben - Lutoner Str.): eng, einige Fuﬂg‰nger	q2 -5785,13606 -5790,13458
 (Am Bullengraben - Lutoner Str.): einige Fuﬂg‰nger	q1 -5790,13458 -5789,13398 -5788,13291 -5790,13097
 Reformationsplatz: Fuﬂg‰ngerzone	q4 -3107,14535 -3134,14513 -3150,14478 -3174,14438
-Fˆlderichplatz: mehrere Betonpoller, Bordstein	q4 -3941,12545 -3942,12559
 Narzissenpfad: enge Straﬂe	q0 -7387,14951 -7523,14969
 (Pankeweg zwischen Pankstr. und Wiesenstr.): einige Fuﬂg‰nger	q1 8140,15859 8129,15701 8156,15614
 (Am Rosenanger - Am Sandkrug, Entenschnabel): stark absch¸ssig, eine 30cm-Stufe	q4; 3481,24686 3492,24667 3535,24626
@@ -2450,7 +2458,7 @@ Alt-Tegel: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 1668,20
 Alt-Tegel: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 1668,20156 1529,20131 1543,20060 1630,20097 1668,20156
 May-Ayim-Ufer: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q1::igndisp; 13206,10651 13077,10747
 Atzpodienstr. (Umgehung auf Gehweg mˆglich): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 16485,12384 16509,12518 16564,12513
-Halenseestr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 2297,9827 2163,10024 2110,10101 2030,10253 1988,10328 1939,10446
+Halenseestr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 2163,10024 2110,10101 2030,10253 1988,10328 1939,10446
 Zeltinger Platz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
 Ludolfinger Platz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277,25094 2285,25059 2277,25033
 Sewanstr. - Balatonstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 17705,10232 17741,10386
