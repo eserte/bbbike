@@ -1324,7 +1324,8 @@ sub show_lbvs_diff {
 sub show_new_vmz_diff {
     my($version) = @_;
     unless ($main::str_draw{l}) {
-	main::plot("str",'l', -draw => 1);
+	main::plot('str','l', -draw => 1);
+	main::plot('str','sBAB', -draw => 1);
 	main::make_net();
     }
     if (defined $version) { $version = ".$version" }
