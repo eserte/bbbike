@@ -25029,10 +25029,12 @@ EOF
      },
      { from  => 1462992861, # 2016-05-11 20:54
        until => 1463954399, # 2016-05-22 23:59
-       text  => 'Karl-Marx-Allee - Berolinastr.: Zugang wegen Vorbereitungen zum Formel-E-Rennen nicht möglich, bis mindestens 21.05.2016',
+       text  => 'Karl-Marx-Allee - umliegende Straßen: Zugang wegen Vorbereitungen zum Formel-E-Rennen u.U. nicht möglich, bis mindestens 21.05.2016',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 11601,12858 11589,12768
+	2::temp 11601,12858 11589,12768
+	2::temp 11635,12745 11596,12668
+	2::temp 11683,12725 11721,12801
 EOF
      },
      { from  => undef, # 

@@ -1,109 +1,6 @@
-$#temp_blocking = 2;
+$#temp_blocking = 73;
 push @temp_blocking,
 (
-       {
-         'data' => '#: by: http://www.berlin.de/tickets/suche/detail.php?id=810735
-userdel	2::temp 9521,10010 9827,10051
-userdel	2::temp 9521,10010 9448,10014
-userdel	2::temp 9599,10175 9687,10180 9825,10206
-userdel	2::temp 9416,10196 9599,10175
-userdel	2::temp 9579,10122 9536,10064
-userdel	2::temp 9579,10122 9631,10142 9702,10129
-userdel	2::temp 9837,10117 9827,10051
-userdel	2::temp 9837,10117 9858,10199
-userdel	2::temp 9599,10175 9579,10122
-userdel	2::temp 9702,10129 9827,10051
-userdel	2::temp 9702,10129 9816,10119
-userdel	2::temp 9599,10175 9631,10142 9687,10180
-	2::temp 9825,10206 9865,10227 9948,10280
-	2::temp 9873,10285 9865,10227 9858,10199
-	2::temp 9825,10206 9858,10199
-userdel	3 9922,10010 9827,10051 9837,9856
-userdel	3 9837,9856 9827,10051 9922,10010
-',
-         'from' => 1463004000,
-         'id' => 3,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'easter',
-                              47
-                            ]
-                          ],
-         'text' => 'Straßenfest rund um den Blücherplatz, 13.5.2016 bis 16.5.2016',
-         'type' => 'gesperrt',
-         'until' => 1463435999
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'data' => '#: by: http://www.stadtfest.berlin/de/index.html
 userdel	2::temp 6514,10088 6609,10147 6626,10155 6729,10212
@@ -3989,11 +3886,13 @@ userdel auto	3 11709,12601 12006,12464 12118,12462
          'until' => 1463867999
        },
        {
-         'data' => 'userdel	2::temp 11601,12858 11589,12768
+         'data' => '	2::temp 11601,12858 11589,12768
+	2::temp 11635,12745 11596,12668
+	2::temp 11683,12725 11721,12801
 ',
          'from' => 1462992861,
          'id' => 2784,
-         'text' => 'Karl-Marx-Allee - Berolinastr.: Zugang wegen Vorbereitungen zum Formel-E-Rennen nicht möglich, bis mindestens 21.05.2016',
+         'text' => 'Karl-Marx-Allee - umliegende Straßen: Zugang wegen Vorbereitungen zum Formel-E-Rennen u.U. nicht möglich, bis mindestens 21.05.2016',
          'type' => 'gesperrt',
          'until' => 1463954399
        },
