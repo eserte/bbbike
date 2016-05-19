@@ -22,9 +22,7 @@ BBD2ESRI=		${MISCSRCDIR}/bbd2esri -igndisp -dbfencoding iso-8859-1
 
 CONVERT_RADWEGE?=	${MISCSRCDIR}/convert_radwege
 
-.if ${HOSTNAME} == "biokovo-amd64.herceg.de"
-MAPSERVER_BIN_DIR?=	/usr/local/src/work/mapserver-amd64
-.elif exists(/usr/local/bin/shptree)
+.if exists(/usr/local/bin/shptree)
 # e.g. FreeBSD
 MAPSERVER_BIN_DIR?=	/usr/local/bin
 .else

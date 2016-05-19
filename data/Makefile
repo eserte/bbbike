@@ -10,10 +10,6 @@
 # Debian users may use freebsd-make resp. fmake from the freebsd-buildutils
 # package.
 
-.ifndef HOSTNAME
-HOSTNAME	!= hostname
-.endif
-
 BBBIKEDIR=		..
 MISCDIR=		$(BBBIKEDIR)/misc
 MISCSRCDIR=		$(BBBIKEDIR)/miscsrc
@@ -1099,9 +1095,7 @@ ${PERSISTENTTMPDIR}/Potsdam.coords.bbd: Potsdam.coords.data
 
 OPENGEODB_D_ORTE_FILE=		DE.tab
 OPENGEODB_D_ORTE_DISTURL=	http://fa-technik.adfc.de/Codierung/opengeodb/DE.tab
-.if ${HOSTNAME} == "mom.herceg.de"
-OPENGEODB_DIR=		/amd/vran/root/usr/ports/distfiles/opengeodb
-.elif exists(/usr/ports/distfiles/opengeodb)
+.if exists(/usr/ports/distfiles/opengeodb)
 OPENGEODB_DIR=		/usr/ports/distfiles/opengeodb
 .else
 OPENGEODB_DIR=		${PERSISTENTTMPDIR}
