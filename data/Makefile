@@ -10,6 +10,8 @@
 # Debian users may use freebsd-make resp. fmake from the freebsd-buildutils
 # package.
 
+UNAME!=	uname
+
 BBBIKEDIR=		..
 MISCDIR=		$(BBBIKEDIR)/misc
 MISCSRCDIR=		$(BBBIKEDIR)/miscsrc
@@ -118,7 +120,7 @@ READABLE=	chmod ugo+r
 
 # The locale was named de_DE.ISO_8859-1 in FreeBSD 4.x, but now with
 # an underline less.
-.ifdef .FreeBSD
+.if ${UNAME} == FreeBSD
 GERMAN_LOCALE=de_DE.ISO8859-1
 .else
 # e.g. debian
@@ -1832,7 +1834,7 @@ ${PERSISTENTTMPDIR}/unhandled_streets_$(plz)XXX.bbd:	${PERSISTENTTMPDIR}/Berlin$
 
 ######################################################################
 
-.ifdef .FreeBSD
+.if ${UNAME} == FreeBSD
 check-coords.data:	check-Berlin.coords.data check-Potsdam.coords.data
 .else
 check-coords.data:
