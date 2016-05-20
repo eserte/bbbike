@@ -25002,8 +25002,8 @@ userdel	q4::inwork 15904,12340 15928,12483 15947,12626
 EOF
      },
      { from  => 1463695200, # 2016-05-20 00:00
-       until => 1463867999, # 2016-05-21 23:59
-       text  => 'Karl-Marx-Allee, Lichtenberger Str.: Autorennen, Straßen gesperrt, am 21.05.2016',
+       until => $isodate2epoch->("2016-05-21 20:30:00"), # 1463867999, # 2016-05-21 23:59
+       text  => 'Karl-Marx-Allee, Lichtenberger Str.: Autorennen, Straßen vollständig gesperrt, am 21.05.2016 bis 20:30 Uhr',
        type  => 'gesperrt',
        source_id => 'http://www.formel-electric.de/stadtportrait/id/1/name/Berlin.html',
        data  => <<EOF,
@@ -25028,8 +25028,8 @@ userdel auto	3 11709,12601 12006,12464 12118,12462
 EOF
      },
      { from  => 1462992861, # 2016-05-11 20:54
-       until => 1463954399, # 2016-05-22 23:59
-       text  => 'Karl-Marx-Allee - umliegende Straßen: Zugang wegen Vorbereitungen zum Formel-E-Rennen u.U. nicht möglich, bis mindestens 21.05.2016',
+       until => $isodate2epoch->("2016-05-28 00:00:00"), # 1463954399, # 2016-05-22 23:59
+       text  => 'Karl-Marx-Allee - umliegende Straßen: Zugang wegen Vorbereitungen zum Formel-E-Rennen u.U. nicht möglich, voraussichtlich bis 28.05.2016',
        type  => 'gesperrt',
        data  => <<EOF,
 	2::temp 11601,12858 11589,12768
@@ -25055,6 +25055,15 @@ EOF
        data  => <<EOF,
 #: last_checked: 2016-05-13
 	2::inwork 16041,3718 16003,3652
+EOF
+     },
+     { from  => 1463868000, # 2016-05-22 00:00
+       until => 1472680799, # 2016-08-31 23:59
+       text  => 'Darßer Brücke: Bauarbeiten, Radfahrer Richtung Osten können die Brücke schiebend passieren, vom 23.05.2016 bis Ende August 2016 ',
+       type  => 'handicap',
+       source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1605/nachricht6033.html',
+       data  => <<EOF,
+	q4::inwork; 15000,18056 15034,18051 15105,18040 15238,18015
 EOF
      },
     );

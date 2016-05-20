@@ -3881,9 +3881,9 @@ userdel auto	3 11709,12601 12006,12464 12118,12462
          'from' => 1463695200,
          'id' => 2783,
          'source_id' => 'http://www.formel-electric.de/stadtportrait/id/1/name/Berlin.html',
-         'text' => 'Karl-Marx-Allee, Lichtenberger Str.: Autorennen, Straßen gesperrt, am 21.05.2016',
+         'text' => 'Karl-Marx-Allee, Lichtenberger Str.: Autorennen, Straßen vollständig gesperrt, am 21.05.2016 bis 20:30 Uhr',
          'type' => 'gesperrt',
-         'until' => 1463867999
+         'until' => 1463855400
        },
        {
          'data' => '	2::temp 11601,12858 11589,12768
@@ -3892,9 +3892,9 @@ userdel auto	3 11709,12601 12006,12464 12118,12462
 ',
          'from' => 1462992861,
          'id' => 2784,
-         'text' => 'Karl-Marx-Allee - umliegende Straßen: Zugang wegen Vorbereitungen zum Formel-E-Rennen u.U. nicht möglich, bis mindestens 21.05.2016',
+         'text' => 'Karl-Marx-Allee - umliegende Straßen: Zugang wegen Vorbereitungen zum Formel-E-Rennen u.U. nicht möglich, voraussichtlich bis 28.05.2016',
          'type' => 'gesperrt',
-         'until' => 1463954399
+         'until' => 1464386400
        },
        {
          'data' => '#: note: gesehen 2016-05-11 gegen 9 Uhr
@@ -3917,6 +3917,16 @@ userdel	2::temp 8371,13399 8363,13402 8356,13404
          'text' => 'Melissenweg: Bauarbeiten, Weg komplett gesperrt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '	q4::inwork; 15000,18056 15034,18051 15105,18040 15238,18015
+',
+         'from' => 1463868000,
+         'id' => 2787,
+         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1605/nachricht6033.html',
+         'text' => 'Darßer Brücke: Bauarbeiten, Radfahrer Richtung Osten können die Brücke schiebend passieren, vom 23.05.2016 bis Ende August 2016 ',
+         'type' => 'handicap',
+         'until' => 1472680799
        }
      
 );
