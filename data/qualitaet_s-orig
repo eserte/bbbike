@@ -229,7 +229,7 @@ Schulze-Boysen-Str: Asphalt	Q0 15738,11851 15660,11695 15639,11653 15572,11533 1
 Schulze-Boysen-Str: sehr guter Asphalt	Q0 15477,11338 15498,11380
 (Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.): Beton	Q0- 15639,11653 15482,11729 15413,11690
 # REMOVED (nach den Bauarbeiten Richtung Süden besser) --- #: XXX Bauarbeiten in Gange, danach vielleicht Q0? --- #: last_checked: 2013-07-14 --- #: next_check: 2013-08-05
-Buchberger Str.: teilweise kleinere Schäden an den Betonplatten	Q1+; 16242,11533 16368,11912
+# REMOVED (ist vermutlich besser) --- Buchberger Str.: teilweise kleinere Schäden an den Betonplatten	Q1+; 16242,11533 16368,11912
 Torgauer Str.: Asphalt	Q0 7446,8200 7402,8208
 Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7250,8223 7158,8208 7001,8161
@@ -2230,7 +2230,7 @@ Mayschweg: Asphalt	Q0 23368,3894 23316,3778 23227,3724
 #: by: Johannes (behrens)
 #: corrected_by: srt (Q1 -> Q0)
 Köpenzeile: Beton	Q0 23174,3791 23227,3724 23319,3528 23436,3212 23467,3110 23541,2841 23567,2739 23550,2528
-Feldblumenweg: Asphalt	Q0 23550,2528 23484,2360
+Köpenzeile: Asphalt	Q0 23550,2528 23484,2360
 Feldblumenweg: Asphalt	Q0 23479,2398 23484,2360 23487,2276 23526,2112
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-spandau/presse/archiv/20060801.0810.44858.html
 Dörbeckweg: asphaltiert	Q0 -6251,13396 -6425,13347
@@ -2441,7 +2441,7 @@ Melchiorstr. - Mariannenplatz: Gehwegplatten	Q0- 11921,11185 11950,11157
 Wasserweg: Kopfsteinpflaster	Q2 15680,8914 15873,8884
 Wasserweg: fester Sandweg	Q2 15873,8884 16023,8860 16161,8852 16201,8860
 Wasserweg: Asphalt	Q0 16201,8860 16358,8841 16388,8821
-Umfahrung Spreepark: fester Sandweg	Q2 16023,8860 16084,8833 16161,8852
+Umfahrung Spreepark: fester Sandweg, Baumstümpfe	Q2 16023,8860 16084,8833 16161,8852
 Kiehnwerderallee: asphaltiert	Q0 16388,8821 16436,8687 16534,8182 16602,7810 16620,7574 16633,7434
 (Uferweg - Kiehnwerderallee): Waldweg	Q2+ 16627,8581 16577,8581 16436,8687
 (Fähre - Kiehnwerderallee): asphaltiert	Q0 16655,7572 16620,7574
@@ -2854,7 +2854,7 @@ Am Carlsgarten: Asphalt	Q0 18709,8423 18799,8413 18875,8365 18914,8341 18956,832
 Am Carlsgarten: Beton	Q0- 19456,7956
 (Am Carlsgarten - Waldowallee): Asphalt	Q0 19456,7956 19478,7967 19509,7999
 #: XXX Bauarbeiten am angrenzenden Grundstück, evtl. danach bessere Qualität?
-#: last_checked: 2015-11-01
+#: last_checked: 2016-05-21
 #: check_frequency: 180d
 (Am Carlsgarten - Waldowallee): mäßiger Asphalt	Q2+ 19509,7999 19558,8064
 Maria-Matray-Str.: Asphalt	Q0 19208,8142 19195,8125 19176,8098 19157,8070 19133,8038
@@ -3332,10 +3332,9 @@ Joseph-Schmidt-Str.: Asphalt	Q0 15260,6310 15255,6531 15275,6554
 #: note: Stefan (moehres) meint Asphalt, Q1
 Johanna-Tesch-Str.: Beton	Q0- 19715,5185 19743,5271 19756,5313 19928,5365 20030,5334 19998,5226 19930,5247 19919,5214 19743,5271
 Müggelpark: Kleinpflastersteine	Q1 25658,4619 25695,4714
-#: XXX wird hier vielleicht saniert?
-#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20151009
-#: next_check: 2015-09-30
-(Müggelturm - Müggelheim): Asphalt, teilweise mit Wurzelschäden	Q1+ 24973,1690 25626,1314 26287,1034 26425,942 26682,769 26783,721 27021,721 27151,729 27202,770
+# REMOVED --- #: XXX wird hier vielleicht saniert? --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20151009 --- #: next_check: 2015-09-30
+(Müggelturm - Müggelheim): Asphalt	Q0 24973,1690 25626,1314
+(Müggelturm - Müggelheim): Asphalt, teilweise mit Wurzelschäden	Q1+ 25626,1314 26287,1034 26425,942 26682,769 26783,721 27021,721 27151,729 27202,770
 Ludwigshöheweg: Asphalt	Q0 27202,770 27263,839 27428,1026 27514,1129 27568,1188 27615,1245 27741,1394
 Grünstadter Weg: Asphalt	Q0 27074,863 27202,770 27410,590 27667,368
 Pfalz-Zweibrücker Weg: Asphalt	Q0 27170,1149 27280,1119 27356,1086 27428,1026
@@ -5838,11 +5837,11 @@ Alice-Archenhold-Weg: Beton	Q1 19696,5456 19715,5403
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19456,7956 19468,7918 19495,7874 19540,7842 19602,7753
 #: osm_watch: way id="156650954" version="5"
 #: XXX wird hier auch eine wassergebundene Decke entstehen?
-#: last_checked: 2015-11-01
+#: last_checked: 2016-05-21
 #: check_frequency: 180d
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: sandiger Weg, als Reitweg benutzt	Q3- 19602,7753 19559,7679 19529,7617 19348,7393 19321,7360
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: unbefestigter Weg	Q2- 19559,7679 19437,7517 19349,7429 19340,7400 19321,7360
-Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: Plattenweg (Längsplatten)	Q2- 19321,7360 19223,7231 19223,7189
+Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: Schotterweg	Q2+ 19321,7360 19223,7231 19223,7189
 (Georg-Stern-Str. - Wasserwerk Wuhlheide): Verbundsteinpflaster	Q1 19500,7719 19530,7697
 (Georg-Stern-Str. - Wasserwerk Wuhlheide): wassergebundene Decke	Q1 19530,7697 19559,7679
 Maria-Matray-Str.: Asphalt	Q0 19456,7956 19443,7937 19406,7886 19353,7819
@@ -8786,8 +8785,8 @@ Mendelssohnstr.: Verbundsteinpflaster	Q1 11598,13598 11652,13564
 (zum Friedhof): Asphalt	Q0 17906,13141 17923,13134
 (Königsheideweg - Weststr.): wassergebundene Decke	Q1+ 17115,4757 17129,4837 17173,4902
 Fennstr.: Asphalt	Q0 18080,5376 18245,5551
-Fennstr.: Beton	Q0-; 18245,5551 18268,5739
-Fennstr.: Asphalt	Q0; 18268,5739 18245,5551
+Fennstr.: Beton	Q0-; 18245,5551 18260,5746
+Fennstr.: Asphalt	Q0; 18260,5746 18245,5551
 (Wuhlewanderweg - Bahnhofstr.): Verbundsteinpflaster, teilweise mit großen Fugen	Q2+ 22204,6016 22332,5949 22358,5918
 Ehrenfelsstr.: Verbundsteinpflaster	Q0- 18846,8616 18778,8663
 (Weg 1 im KGA Hochspannung): Asphalt	Q0 18224,9795 18182,9623 18165,9627 18164,9623
@@ -9411,7 +9410,7 @@ Giselhersteig: Verbundsteinpflaster	Q1+ 17438,12448 17433,12414
 (Giselhersteig - Hadburgpfad): Verbundsteinpflaster	Q1+ 17491,12439 17486,12407
 (Siegfriedstr. [Autowaschcenter] - Landschaftspark Herzberge): Asphalt	Q0 17110,14187 17224,14151 17236,14140
 Treptower Park: wassergebundene Decke	Q1 14695,9587 14792,9599 14866,9571 14912,9546 15019,9465 15133,9396
-(S-Bahnhof Treptower Park - Rosengarten): Beton, teilweise mit großen Fugen	Q1- 14705,9578 14791,9537
+(S-Bahnhof Treptower Park - Rosengarten): Gehwegplatten	Q0 14705,9578 14791,9537
 (S-Bahnhof Treptower Park - Rosengarten): Gehwegplatten	Q0- 14791,9537 14823,9523 14837,9517
 (Uferweg - Puschkinallee): wassergebundene Decke und Kleinsteinpflaster	Q1 14443,9731 14318,9688
 (Spreeuferweg - Wintersteinstr.): Asphalt mit Regenablaufrinnen	Q1- 3654,12672 3741,12607
@@ -9930,10 +9929,12 @@ Allee der Kosmonauten [Wohngebietsweg]: Asphalt	Q0- 19859,13765 20038,13771 2007
 #: check_frequency: 90d vvv
 #: XXX wie wird die Qualität nach den Bauarbeiten?
 Am Stadtforst: unbefestigte Baustraße	Q2- 23623,2392 23624,2275
-#: XXX ggfs. nur temporär?
-Sommerwiesenweg: Asphalt	Q0 23487,2276 23624,2275
 #: check_frequency ^^^
 #: last_checked ^^^
+#: XXX ggfs. nur temporär?
+#: last_checked: 2016-05-22
+#: check_frequency: 90d
+Sommerwiesenweg: Asphalt	Q0 23487,2276 23624,2275
 Siemensstr.: Betonpflastersteine	Q0- 5808,14114 5786,14106 5746,14090
 (Kolonie Wiesengrund II): unbefestigt, etwas sandig	Q2- 5966,22781 6063,22675
 (Weg am Klötzbecken, nördlicher Weg): Verbundsteinpflaster	Q1- 5851,22538 5883,22565
@@ -10038,6 +10039,7 @@ Sternbergpromenade: Asphalt	Q0 -3090,14198 -3059,14230 -3042,14255 -3019,14286 -
 (Am Kiesteich - Spektewiesen): Kleinsteinpflaster	Q1- -6256,15169 -6233,15157 -6207,15166 -6176,15168
 Am Bullengraben: sehr guter Asphalt	Q0 -6272,13472 -6265,13475 -6209,13499 -6076,13583 -6020,13598 -5963,13593
 Kerrweg: unbefestigte Straße	Q2 -6269,13464 -6189,13497 -6125,13540 -6010,13586 -5962,13584 -5917,13582
+Straße zum Müggelturm: Asphalt/Beton	Q0- 25008,2889 25010,2794 24978,2634 24981,2580 24982,2519 24641,2074 24630,2034 24634,1974 24673,1888 24726,1837 24889,1743 24973,1690
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv

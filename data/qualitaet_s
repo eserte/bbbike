@@ -163,7 +163,6 @@ Pfarrstr.: sehr guter Asphalt	Q0 15458,11306 15477,11338
 Schulze-Boysen-Str: Asphalt	Q0 15738,11851 15660,11695 15639,11653 15572,11533 15515,11416 15498,11380
 Schulze-Boysen-Str: sehr guter Asphalt	Q0 15477,11338 15498,11380
 (Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.): Beton	Q0 15639,11653 15482,11729 15413,11690
-Buchberger Str.: teilweise kleinere Schäden an den Betonplatten	Q1; 16242,11533 16368,11912
 Torgauer Str.: Asphalt	Q0 7446,8200 7402,8208
 Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3; 7250,8223 7158,8208 7001,8161
@@ -1862,7 +1861,7 @@ Semliner Str.: Waldweg, möglicherweise sandig	Q2 22303,7361 22353,7562
 Gelnitzstr.: schlechtes Kopfsteinpflaster	Q3 22897,5740 22882,5834
 Mayschweg: Asphalt	Q0 23368,3894 23316,3778 23227,3724
 Köpenzeile: Beton	Q0 23174,3791 23227,3724 23319,3528 23436,3212 23467,3110 23541,2841 23567,2739 23550,2528
-Feldblumenweg: Asphalt	Q0 23550,2528 23484,2360
+Köpenzeile: Asphalt	Q0 23550,2528 23484,2360
 Feldblumenweg: Asphalt	Q0 23479,2398 23484,2360 23487,2276 23526,2112
 Dörbeckweg: asphaltiert	Q0 -6251,13396 -6425,13347
 Moritzstr.: Asphalt	Q0 -3637,14628 -3598,14587 -3481,14523
@@ -2024,7 +2023,7 @@ Melchiorstr. - Mariannenplatz: Gehwegplatten	Q0 11921,11185 11950,11157
 Wasserweg: Kopfsteinpflaster	Q2 15680,8914 15873,8884
 Wasserweg: fester Sandweg	Q2 15873,8884 16023,8860 16161,8852 16201,8860
 Wasserweg: Asphalt	Q0 16201,8860 16358,8841 16388,8821
-Umfahrung Spreepark: fester Sandweg	Q2 16023,8860 16084,8833 16161,8852
+Umfahrung Spreepark: fester Sandweg, Baumstümpfe	Q2 16023,8860 16084,8833 16161,8852
 Kiehnwerderallee: asphaltiert	Q0 16388,8821 16436,8687 16534,8182 16602,7810 16620,7574 16633,7434
 (Uferweg - Kiehnwerderallee): Waldweg	Q2 16627,8581 16577,8581 16436,8687
 (Fähre - Kiehnwerderallee): asphaltiert	Q0 16655,7572 16620,7574
@@ -2820,7 +2819,8 @@ Heinrich-Schlusnus-Str.: Asphalt	Q0 15026,6391 15056,6431 15054,6526 15054,6589 
 Joseph-Schmidt-Str.: Asphalt	Q0 15260,6310 15255,6531 15275,6554
 Johanna-Tesch-Str.: Beton	Q0 19715,5185 19743,5271 19756,5313 19928,5365 20030,5334 19998,5226 19930,5247 19919,5214 19743,5271
 Müggelpark: Kleinpflastersteine	Q1 25658,4619 25695,4714
-(Müggelturm - Müggelheim): Asphalt, teilweise mit Wurzelschäden	Q1 24973,1690 25626,1314 26287,1034 26425,942 26682,769 26783,721 27021,721 27151,729 27202,770
+(Müggelturm - Müggelheim): Asphalt	Q0 24973,1690 25626,1314
+(Müggelturm - Müggelheim): Asphalt, teilweise mit Wurzelschäden	Q1 25626,1314 26287,1034 26425,942 26682,769 26783,721 27021,721 27151,729 27202,770
 Ludwigshöheweg: Asphalt	Q0 27202,770 27263,839 27428,1026 27514,1129 27568,1188 27615,1245 27741,1394
 Grünstadter Weg: Asphalt	Q0 27074,863 27202,770 27410,590 27667,368
 Pfalz-Zweibrücker Weg: Asphalt	Q0 27170,1149 27280,1119 27356,1086 27428,1026
@@ -5224,7 +5224,7 @@ Alice-Archenhold-Weg: Beton	Q1 19696,5456 19715,5403
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19456,7956 19468,7918 19495,7874 19540,7842 19602,7753
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: sandiger Weg, als Reitweg benutzt	Q3 19602,7753 19559,7679 19529,7617 19348,7393 19321,7360
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: unbefestigter Weg	Q2 19559,7679 19437,7517 19349,7429 19340,7400 19321,7360
-Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: Plattenweg (Längsplatten)	Q2 19321,7360 19223,7231 19223,7189
+Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: Schotterweg	Q2 19321,7360 19223,7231 19223,7189
 (Georg-Stern-Str. - Wasserwerk Wuhlheide): Verbundsteinpflaster	Q1 19500,7719 19530,7697
 (Georg-Stern-Str. - Wasserwerk Wuhlheide): wassergebundene Decke	Q1 19530,7697 19559,7679
 Maria-Matray-Str.: Asphalt	Q0 19456,7956 19443,7937 19406,7886 19353,7819
@@ -8067,8 +8067,8 @@ Mendelssohnstr.: Verbundsteinpflaster	Q1 11598,13598 11652,13564
 (zum Friedhof): Asphalt	Q0 17906,13141 17923,13134
 (Königsheideweg - Weststr.): wassergebundene Decke	Q1 17115,4757 17129,4837 17173,4902
 Fennstr.: Asphalt	Q0 18080,5376 18245,5551
-Fennstr.: Beton	Q0; 18245,5551 18268,5739
-Fennstr.: Asphalt	Q0; 18268,5739 18245,5551
+Fennstr.: Beton	Q0; 18245,5551 18260,5746
+Fennstr.: Asphalt	Q0; 18260,5746 18245,5551
 (Wuhlewanderweg - Bahnhofstr.): Verbundsteinpflaster, teilweise mit großen Fugen	Q2 22204,6016 22332,5949 22358,5918
 Ehrenfelsstr.: Verbundsteinpflaster	Q0 18846,8616 18778,8663
 (Weg 1 im KGA Hochspannung): Asphalt	Q0 18224,9795 18182,9623 18165,9627 18164,9623
@@ -8649,7 +8649,7 @@ Giselhersteig: Verbundsteinpflaster	Q1 17438,12448 17433,12414
 (Giselhersteig - Hadburgpfad): Verbundsteinpflaster	Q1 17491,12439 17486,12407
 (Siegfriedstr. [Autowaschcenter] - Landschaftspark Herzberge): Asphalt	Q0 17110,14187 17224,14151 17236,14140
 Treptower Park: wassergebundene Decke	Q1 14695,9587 14792,9599 14866,9571 14912,9546 15019,9465 15133,9396
-(S-Bahnhof Treptower Park - Rosengarten): Beton, teilweise mit großen Fugen	Q1 14705,9578 14791,9537
+(S-Bahnhof Treptower Park - Rosengarten): Gehwegplatten	Q0 14705,9578 14791,9537
 (S-Bahnhof Treptower Park - Rosengarten): Gehwegplatten	Q0 14791,9537 14823,9523 14837,9517
 (Uferweg - Puschkinallee): wassergebundene Decke und Kleinsteinpflaster	Q1 14443,9731 14318,9688
 (Spreeuferweg - Wintersteinstr.): Asphalt mit Regenablaufrinnen	Q1 3654,12672 3741,12607
@@ -9223,6 +9223,7 @@ Sternbergpromenade: Asphalt	Q0 -3090,14198 -3059,14230 -3042,14255 -3019,14286 -
 (Am Kiesteich - Spektewiesen): Kleinsteinpflaster	Q1 -6256,15169 -6233,15157 -6207,15166 -6176,15168
 Am Bullengraben: sehr guter Asphalt	Q0 -6272,13472 -6265,13475 -6209,13499 -6076,13583 -6020,13598 -5963,13593
 Kerrweg: unbefestigte Straße	Q2 -6269,13464 -6189,13497 -6125,13540 -6010,13586 -5962,13584 -5917,13582
+Straße zum Müggelturm: Asphalt/Beton	Q0 25008,2889 25010,2794 24978,2634 24981,2580 24982,2519 24641,2074 24630,2034 24634,1974 24673,1888 24726,1837 24889,1743 24973,1690
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972

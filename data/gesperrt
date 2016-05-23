@@ -421,7 +421,6 @@ Egelingzeile	1 7976,6403 8194,6384
 Ceciliengärten	1 6256,7428 6241,7428 6238,7645 6257,7646 6272,7645 6289,7472 6291,7429 6256,7428
 Ingelheimer Str.	1 18891,8586 18951,8574 19030,8559
 Andernacher Str.	1 19030,8559 19000,8509
-Andernacher Str.	1 18949,8437 19000,8509
 Gleyeweg	1 17566,8199 17532,8125 17529,8073 17613,7989 17651,7973 17683,7958 17762,7931
 Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 19599,14273 19595,14348 19593,14405 19593,14452
 Murtzaner Ring	1 19818,14064 19843,14064 19921,14064 19951,14083 20040,14179
@@ -979,7 +978,7 @@ Walsroder Str.	1s 6395,5154 6295,5158 6202,5163 6094,5171
 Hünensteig	1s 6419,5048 6387,5057
 Hünensteig	1s 6387,5057 6395,5154
 Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen	1s 12116,9825 11946,9913 11735,10022 11512,10105
-Stallschreiberstr.	1s 10489,11405 10620,11244 10678,11172
+Stallschreiberstr.	1s 10678,11172 10620,11244 10489,11405
 Jahnstr.	1s 11500,9116 11509,9392
 Waldweg	1s 25496,2429 24981,2580
 Schulenburgring	1s 9030,8431 9028,8584 9011,8605
@@ -2773,7 +2772,6 @@ weites Drängelgitter	BNP:0:-242:trailer=3 12552,9165
 Barriere, Umfahrung über Gehweg mit Bordsteinen	BNP:5:-235:trailer=15 12615,9132
 Schranke, meistens offen	BNP:3:-260:trailer=6 7843,16524
 Barriere	BNP:10:-12 12178,7985
-Drängelgitter	BNP:0:52:trailer=3 10535,13006
 Drängelgitter	BNP:10:-84 7158,9509
 Drängelgitter	BNP:5:-51 -6162,16287
 Drängelgitter	BNP:5:-193 38562,100725
@@ -2813,13 +2811,13 @@ Drängelgitter	BNP:3:-240 31665,48997
 Haasestr.: Bauarbeiten, keine Durchfahrt möglich	2::inwork 14328,11320 14286,11186
 Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12844,9351 12851,9309 12907,9073
 Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12907,9073 12851,9309 12844,9351
-Keibelstr.: Bauarbeiten, Durchfahrt nicht möglich	2::inwork 11108,13142 11201,13289
+Keibelstr.: Bauarbeiten, Fahrbahn wird neu gemacht, Durchfahrt nicht möglich	2::inwork 11108,13142 11201,13289
 Lutterbacher Str.: noch Baustelle	2::inwork 2094,3231 1993,3170 2072,3034 2163,3092
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,9200 12548,9167
 Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7703,14582 7527,14684
 Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14443,9731 14361,9772
 Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14361,9772 14436,9784 14460,9814 14488,9848
-Treptower Park: Bauarbeiten	2::inwork 14695,9587 14705,9578 14791,9537
+Treptower Park: Bauarbeiten	2::inwork 15561,8903 15630,8979
 Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14448,9922 14460,9871 14466,9861
 Clara-Immerwahr-Str.: Bauzäune	2::inwork 19202,17471 19546,17351 19798,17263 19845,17235 19914,17203
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719

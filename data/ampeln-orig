@@ -837,7 +837,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX eventuell wird diese Einschränkung aufgehoben:
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4237&options=4
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036190429651/190429651/00081409/09-Anlagen/04/B0138SB.pdf (nach Komplettumbau)
-#: last_checked: 2015-07-22
+#: last_checked: 2016-05-21
 #: check_frequency: 180d
 	X 18080,5376
 	X 19904,3464
@@ -2044,6 +2044,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 #: note: Anforderungsampel
 	F 12694,2544
 #: note: Anforderungsampel
+#: off: weekend (seen Sat 2016-05-21 17:00)
 	F 17834,11192
 	X 22724,6608
 	X 20277,2463
@@ -2593,7 +2594,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
 #: XXX laut fritz bis 05.05.2016
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
-#: last_checked: 2016-05-09
+#: last_checked: 2016-05-23
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
@@ -2782,7 +2783,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_prog eigentlich nur für Radfahrer Richtung Nordwesten relevant vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
 #: source_id: IM_023548 (bis Ende April 2016) vvv
-#: last_checked: 2016-02-28 vvv
+#: last_checked: 2016-05-22 vvv
 #: check_frequency: 120d vvv
 	F 17568,7753
 	F 17769,7465
@@ -2799,7 +2800,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
 #: source_id: IM_023532 (Gesamtmaßnahme bis Ende Juni 2016) vvv
 #: source_id: 2147339539 vvv
-#: last_checked: 2016-04-03 vvv
+#: last_checked: 2016-05-21 vvv
 #: check_frequency: 90d vvv
 	F::inwork 16886,6665
 	F::inwork 16646,6925

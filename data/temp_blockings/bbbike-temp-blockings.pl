@@ -17965,16 +17965,16 @@ EOF
 userdel	2::inwork -50068,51237 -51018,51135
 EOF
      },
-     { from  => $isodate2epoch->("2015-06-26 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-06-27 23:59:59"),
+     { from  => $isodate2epoch->("2016-07-22 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-07-23 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 6]],
        source_id => 'http://www.csd-berlin.de/',
-       text  => 'CSD am 27.6.2015',
+       text  => 'CSD am 23.7.2016',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.visitberlin.de/de/event/27-06-2015/37-csd-berlin-christopher-street-day-2015
-#: by: http://csd-berlin.de/csd-demo-2015-route-und-faqs/
+#: by: http://csd-berlin.de/event-info-en/
+#: by: https://www.berlin.de/en/events/2096878-2842498-csd-christopher-street-day.en.html
 userdel	2::temp 6851,10416 6937,10363 6971,10346 7033,10328 7033,10396 7003,10513 6985,10597 6972,10665 6929,10852 6918,10858 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6685,11954 6642,12010 6653,12067 6690,12104 6725,12113 6754,12108 6787,12099 6828,12031 6809,11979 6744,11936
 userdel	2::temp 6353,10583 6292,10627 6228,10646 6171,10657
 userdel	2::temp 7033,10396 6851,10416 6753,10446 6636,10492 6532,10529 6468,10550 6353,10583 6268,10588 6216,10614 6171,10657 6133,10679 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5351,10760 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435 4157,10418
@@ -21700,6 +21700,7 @@ EOF
        text  => 'Britzer Rosenfest an der Britzer Dorfkirche, Backbergstr. ist gesperrt, 4. und 5. Juli 2015',
        periodic => 1,
        recurrences => [['yearly', days => 22, months => 6]],
+       recurrence_prewarn_days => 7, # später nochmal prüfen
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: wird das Fest 2016 stattfinden? siehe:
@@ -25058,12 +25059,25 @@ EOF
 EOF
      },
      { from  => 1463868000, # 2016-05-22 00:00
-       until => 1472680799, # 2016-08-31 23:59
+       until => $isodate2epoch->("2016-08-23 23:59:59"), # 1472680799, # 2016-08-31 23:59
        text  => 'Darßer Brücke: Bauarbeiten, Radfahrer Richtung Osten können die Brücke schiebend passieren, vom 23.05.2016 bis Ende August 2016 ',
        type  => 'handicap',
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1605/nachricht6033.html',
        data  => <<EOF,
+#: source_id: 2147340107
+#: note: laut fritz bis 23. August
 	q4::inwork; 15000,18056 15034,18051 15105,18040 15238,18015
+EOF
+     },
+     { from  => 1464645600, # 2016-05-31 00:00
+       until => 1475272799, # 2016-09-30 23:59
+       text  => 'Keltensteig, Germanenplatz, Teutonenstr.: Bauarbeiten, Juni 2016 bis September 2016',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.480057.php',
+       data  => <<EOF,
+userdel	q4::inwork 20302,1613 20369,1476 20347,1398
+userdel	q4::inwork 20580,1406 20405,1460 20369,1476
+userdel	q4::inwork 20381,1390 20405,1460
 EOF
      },
     );
