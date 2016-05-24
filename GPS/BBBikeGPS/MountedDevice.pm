@@ -18,7 +18,7 @@
 
     use strict;
     use vars qw($VERSION);
-    $VERSION = '0.04';
+    $VERSION = '0.05';
 
     sub has_gps_settings { 1 }
 
@@ -112,12 +112,19 @@
 		_status_message("The Garmin device is not mounted --- is the device in USB mass storage mode?", 'error');
 		return;
 	    }
-	} else { # e.g. linux, assume device is already mounted
-	    my @mount_point_candidates = (
-					  '/media/' . eval { scalar getpwuid $< } . '/GARMIN',     # e.g. Ubuntu 13.10, Mint 17
-					  '/media/GARMIN',                                         # e.g. Mint 13
-					  '/run/media/' . eval { scalar getpwuid $< } . '/GARMIN', # e.g. Fedora 20
-					 );
+	} else {
+	    my @mount_point_candidates;
+	    if ($^O eq 'darwin') {
+		@mount_point_candidates = (
+					   '/Volume/GARMIN',
+					  );
+	    } else { # e.g. linux, assume device is already mounted
+		my @mount_point_candidates = (
+					      '/media/' . eval { scalar getpwuid $< } . '/GARMIN',     # e.g. Ubuntu 13.10, Mint 17
+					      '/media/GARMIN',                                         # e.g. Mint 13
+					      '/run/media/' . eval { scalar getpwuid $< } . '/GARMIN', # e.g. Fedora 20
+					     );
+	    }
 	    for my $mount_point_candidate (@mount_point_candidates) {
 		if (_is_mounted($mount_point_candidate)) {
 		    $mount_point = $mount_point_candidate;
@@ -340,6 +347,11 @@ F</media/GARMIN> or F</run/media/$USER/GARMIN>.
 
 It is assumed that the device is already mounted. The mounted drive is
 detected automatically by inspecting the drive's volume name.
+
+=head2 Mac OS X
+
+It is assumed that the device is mounted in the directory
+F</Volume/GARMIN>.
 
 =head2 FreeBSD
 
