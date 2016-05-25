@@ -34,7 +34,7 @@ Dˆringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,112
 # REMOVED --- #: last_checked: 2016-03-07 --- #: check_frequency: 7d --- Revaler Str.: Bauarbeiten an der Kreuzung Warschauer Str.	q3::inwork 13588,11490 13711,11458
 # 
 #: XXX laut Fritz bis Ende M‰rz 2016 (sieht aber schlecht aus f¸r diesen Termin)
-#: last_checked: 2016-05-21 vvv
+#: last_checked: 2016-05-24 vvv
 #: check_frequency: 7d vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
@@ -142,7 +142,7 @@ Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und 
 # REMOVED (Einbahnstraﬂenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universit‰tsstr.: wegen Bauarbeiten Einbahnstraﬂe zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9580,12581
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2016-05-12 vvv
+#: last_checked: 2016-05-24 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="3"
@@ -227,7 +227,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2016-05-03
+#: last_checked: 2016-05-24
 #: check_frequency: 30d
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -258,7 +258,7 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10437,11352 10489,11405
 # 
 #: next_check_id: ALEXANDRINENSTR-2016
 #: XXX Endedatum laut fritz
-#: last_checked: 2016-05-23
+#: last_checked: 2016-05-24
 #: next_check: 2016-09-16
 Stallschreiberstr., Alexandrinenstr.: Einbahnstraﬂenregelung	q4::inwork; 10794,10927 10824,11010 10678,11172 10593,11120 10501,11056
 # 

@@ -1623,6 +1623,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        {
          'data' => '#: by: http://www.family-and-friends-ev.de/2.html
 #: by: http://www.berlin.de/tickets/suche/detail.php?id=859853
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.480355.php
 userdel	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
 ',
          'from' => 1464300000,
@@ -3088,7 +3089,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
 #: source_id: 2147339529
-#: last_checked: 2016-04-29
+#: last_checked: 2016-05-24
 #: check_frequency: 90d
 userdel	q2::inwork 5258,11285 5236,10994
 ',
@@ -3786,7 +3787,7 @@ userdel	q3::inwork; 17648,5338 17601,5090 17542,4772 17520,4649
          'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.463657.php',
          'text' => 'Sterndamm: zwischen Südostallee und Königsheideweg Richtung Süden Bauarbeiten, Fahrbahn vermutlich gesperrt, ggfs. Gehweg benutzen, 04.04.2016 bis Ende Mai 2016',
          'type' => 'handicap',
-         'until' => 1464731999
+         'until' => 1464400800
        },
        undef,
        undef,

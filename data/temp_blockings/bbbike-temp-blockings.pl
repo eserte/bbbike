@@ -14052,6 +14052,7 @@ EOF
        data  => <<EOF,
 #: by: http://www.family-and-friends-ev.de/2.html
 #: by: http://www.berlin.de/tickets/suche/detail.php?id=859853
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.480355.php
 userdel	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
 EOF
      },
@@ -21328,7 +21329,7 @@ EOF
 #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
 #: source_id: 2147339529
-#: last_checked: 2016-04-29
+#: last_checked: 2016-05-24
 #: check_frequency: 90d
 userdel	q2::inwork 5258,11285 5236,10994
 EOF
@@ -24701,7 +24702,7 @@ userdel	q4::inwork; 19904,3464 20012,3532
 EOF
      },
      { from  => $isodate2epoch->("2016-04-03 00:00:00"), # 1 Tag Vorlauf # 1445405400, # 2015-10-21 07:30
-       until => $isodate2epoch->("2016-05-31 23:59:59"), # 1446912000, # 2015-11-07 17:00
+       until => $isodate2epoch->("2016-05-28 04:00:00"), # Endedatum laut fritz
        text  => 'Sterndamm: zwischen Südostallee und Königsheideweg Richtung Süden Bauarbeiten, Fahrbahn vermutlich gesperrt, ggfs. Gehweg benutzen, 04.04.2016 bis Ende Mai 2016',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.463657.php',
