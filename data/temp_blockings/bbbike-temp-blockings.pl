@@ -25081,4 +25081,12 @@ userdel	q4::inwork 20580,1406 20405,1460 20369,1476
 userdel	q4::inwork 20381,1390 20405,1460
 EOF
      },
+     { from  => 1464298923, # 2016-05-26 23:42
+       until => 1464559200, # 2016-05-30 00:00
+       text  => 'Warschauer Str.: Fahrbahn zwischen Warschauer Brücke und Kopernikusstr. wegen Bauarbeiten gesperrt, 27.05.2016 bis 29.05.2016',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; 13541,11355 13588,11490 13603,11538 13651,11731 13696,11920
+EOF
+     },
     );

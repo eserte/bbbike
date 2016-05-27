@@ -3952,6 +3952,15 @@ userdel	q4::inwork 20381,1390 20405,1460
          'text' => 'Keltensteig, Germanenplatz, Teutonenstr.: Bauarbeiten, Juni 2016 bis September 2016',
          'type' => 'handicap',
          'until' => 1475272799
+       },
+       {
+         'data' => 'userdel	q4::inwork; 13541,11355 13588,11490 13603,11538 13651,11731 13696,11920
+',
+         'from' => 1464298923,
+         'id' => 2789,
+         'text' => 'Warschauer Str.: Fahrbahn zwischen Warschauer Brücke und Kopernikusstr. wegen Bauarbeiten gesperrt, 27.05.2016 bis 29.05.2016',
+         'type' => 'handicap',
+         'until' => 1464559200
        }
      
 );
