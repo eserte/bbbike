@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -13,7 +13,6 @@
 #
 
 use strict;
-use FindBin;
 use Getopt::Long;
 use IPC::Run qw(run);
 
@@ -35,8 +34,8 @@ use IPC::Run qw(run);
 
 our $VERSION = '0.02';
 
-my $osm_watch_list = "$FindBin::RealBin/../data/osm_watch_list";
-my $bbbike_rootdir = "/home/e/eserte/src/bbbike"; # cannot use $FindBin::RealBin here, because of symlinking problems
+my $bbbike_rootdir = "$ENV{HOME}/src/bbbike"; # cannot use $FindBin::RealBin here, because of symlinking problems
+my $osm_watch_list = "$bbbike_rootdir/tmp/osm_watch_list";
 my $osm_file = "$bbbike_rootdir/misc/download/osm/berlin.osm.bz2";
 
 my $show_unchanged;
@@ -86,7 +85,8 @@ my @osm_watch_list_data;
 my %id_to_record;
 my @file_lines;
 {
-    open my $fh, $osm_watch_list or die $!;
+    open my $fh, $osm_watch_list
+	or die "Can't open $osm_watch_list: $!";
     binmode $fh, ':encoding(utf-8)';
     while(<$fh>) {
 	push @file_lines, $_;
