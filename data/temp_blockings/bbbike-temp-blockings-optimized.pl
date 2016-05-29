@@ -2728,29 +2728,7 @@ userdel	2::temp 18870,5833 18932,5926
          'type' => 'gesperrt',
          'until' => 1467576000
        },
-       {
-         'data' => 'userdel	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
-userdel	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
-userdel	q4::temp 11275,8387 11230,8402
-userdel	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
-',
-         'from' => 1461794400,
-         'id' => 2207,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              26,
-                              'months',
-                              4
-                            ]
-                          ],
-         'source_id' => 'http://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2983315-2970764-48-neukoellner-maientage.html',
-         'text' => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 29.04.2016 bis 25.05.2016',
-         'type' => 'handicap',
-         'until' => 1464299999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3089,7 +3067,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
 #: source_id: 2147339529
-#: last_checked: 2016-05-24
+#: last_checked: 2016-05-27
 #: check_frequency: 90d
 userdel	q2::inwork 5258,11285 5236,10994
 ',
@@ -3778,17 +3756,7 @@ userdel	q4::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129 -6507,15007
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147339908
-userdel	q3::inwork; 17648,5338 17601,5090 17542,4772 17520,4649
-',
-         'from' => 1459634400,
-         'id' => 2757,
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.463657.php',
-         'text' => 'Sterndamm: zwischen Südostallee und Königsheideweg Richtung Süden Bauarbeiten, Fahrbahn vermutlich gesperrt, ggfs. Gehweg benutzen, 04.04.2016 bis Ende Mai 2016',
-         'type' => 'handicap',
-         'until' => 1464400800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3896,17 +3864,7 @@ userdel	q4::inwork; 25010,4807 25171,4757 25228,4745 25248,4752 25369,4790 25434
        },
        undef,
        undef,
-       {
-         'data' => '	2::temp 11601,12858 11589,12768
-	2::temp 11635,12745 11596,12668
-	2::temp 11683,12725 11721,12801
-',
-         'from' => 1462992861,
-         'id' => 2784,
-         'text' => 'Karl-Marx-Allee - umliegende Straßen: Zugang wegen Vorbereitungen zum Formel-E-Rennen u.U. nicht möglich, voraussichtlich bis 28.05.2016',
-         'type' => 'gesperrt',
-         'until' => 1464386400
-       },
+       undef,
        {
          'data' => '#: note: gesehen 2016-05-11 gegen 9 Uhr
 userdel	2::temp 8362,13466 8369,13465 8377,13463
