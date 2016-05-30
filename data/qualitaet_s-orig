@@ -159,7 +159,7 @@ Corneliusstr.: mäßiges Kopfsteinpflaster	Q2 6880,11110 6841,11114 6630,11247 647
 Kopernikusstr.: mäßiges Kopfsteinpflaster	Q2 13467,11778 13651,11731
 Torellstr.: mäßiges Kopfsteinpflaster	Q2 13295,11792 13467,11778
 #: XXX Bauarbeiten, danach vielleicht teilweise bessere Qualität?
-#: last_checked: 2016-05-27
+#: last_checked: 2016-05-30
 #: check_frequency: 60d
 Rüdersdorfer Str.: Asphalt mit Schäden	Q1- 13295,11792 13173,11788 13066,11854
 Kaskelstr.: relative glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
@@ -245,7 +245,7 @@ Lohmühlenbrücke: Asphalt	Q0 12871,9356 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2016-05-20
+#: last_checked: 2016-05-30
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13606,9578 13455,9711 13251,9829
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15021,11152 15102,11120
@@ -1612,22 +1612,20 @@ Hebbelstr.: Gehwegpflasterung	Q1- 3117,11852 3251,12025 3258,12035 3295,12068
 Hebbelstr.: Kopfsteinpflaster	Q2 3295,12068 3367,12156
 Am Comeniusplatz: Kopfsteinpflaster	Q2 13275,11830 13406,11896
 Josef-Orlopp-Str.: Asphalt	Q0 15912,13153 16426,13145 16863,13138
-Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1 16852,14412 17254,14451 17533,14484
-#: XXX Asphalt oder Beton?
-Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1 17533,14484 17848,14523 18057,14549
-#: note: In Richtung Westen ist der Radweg nicht benutzungspflichtig, allerdings ist die Fahrbahn sehr stark befahren.
-#: XXX Asphalt oder Beton?
-Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1 18183,14573 18365,14607 18410,14614 18558,14680 18798,14808
+Landsberger Allee: Betonradweg	Q1 16852,14412 17254,14451 17533,14484 17848,14523 18057,14549
+#: note: In Richtung Westen ist der Radweg nicht benutzungspflichtig, allerdings ist die Fahrbahn sehr stark befahren. vvv
+Landsberger Allee: Betonradweg	Q1 18183,14573 18365,14607
+Landsberger Allee: Asphaltradweg nur mit mäßiger Qualität	Q1 18365,14607 18410,14614 18558,14680 18798,14808
+#: note ^^^
 # 
 #: XXX werden auch die restlichen Radwege demnächst instandgesetzt oder zu Radspuren umgewandelt? vvv
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20120913.1335.375172.html vvv
-#: last_checked: 2015-04-11 vvv
+#: last_checked: 2016-05-29 vvv
 #: check_frequency: 180d vvv
 #: XXX Asphalt oder Beton?
 Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1; 20260,15434 20532,15564 20580,15586 20733,15657
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden	Q0-; 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633
-#: XXX Asphalt oder Beton?
-Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1 21239,15633 21398,15671 21475,15705 21584,15753 21709,15808
+Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden, Bordsteinkanten	Q1 21239,15633 21398,15671 21475,15705 21584,15753 21709,15808
 #: check_frequency ^^^
 #: last_checked ^^^
 #: by: ^^^
@@ -3452,7 +3450,7 @@ Bernhard-Bästlein-Str.: Asphalt	Q0 15595,14041 15600,14077 15704,14077 15758,140
 Vulkanstr. [Wohngebiet]: Asphalt	Q0 15871,14106 15758,14088
 Landsberger Allee - Große-Leege-Str.: Verbundsteinpflaster	Q1+ 15920,14357 15902,14498
 Landsberger Allee - Große-Leege-Str.: Asphalt	Q0 15902,14498 15896,14548 15899,14598
-Verdener Gasse: mäßiger Asphalt	Q0 15878,14761 15946,14702
+Verdener Gasse: Asphalt	Q0- 15878,14761 15946,14702
 Berkenbrücker Steig: schlechtes Kopfsteinpflaster	Q3 15647,14693 15544,14714
 Berkenbrücker Steig: unebenes kleinteiliges Kopfsteinpflaster	Q2 15544,14714 15383,14759
 (Landsberger Allee - Anton-Saefkow-Platz): Gehwegplatten	Q1 14871,14087 14903,14003
@@ -3669,7 +3667,7 @@ Cheruskerpark: Asphalt	Q0 7368,8595 7352,8391 7352,8390 7329,8329 7283,8265 7282
 Rhinstr. [Wohngebiet]: Beton	Q0- 18008,13507 17995,13675 17994,13750 18024,13843 18050,13835 18134,13811 18198,13816
 Arendsweg: Beton	Q0- 17254,14451 17262,14384 17274,14280
 (Zufahrt IKEA): Asphalt	Q0 18166,14277 18055,14276 17976,14251 17808,14231 17668,14208 17330,14163 17289,14195 17274,14280
-(Zufahrt ehem. Einkaufszentrum): Asphalt	Q0 16965,14235 17010,14269 17060,14255 17221,14268 17274,14280
+# REMOVED --- (Zufahrt ehem. Einkaufszentrum): Asphalt	Q0 16965,14235 17010,14269 17060,14255 17221,14268 17274,14280
 # REMOVED --- (Rhinstr. - Arendsweg/Landsberger Allee): unbefestigter Weg	Q2+ 18024,13843 17266,14144
 # REMOVED --- (Rhinstr. - Arendsweg/Landsberger Allee): ehem. Eisenbahngleise	Q3- 17266,14144 17319,14159
 # REMOVED --- (Rhinstr. - Arendsweg/Landsberger Allee): unbefestigter Weg, Schotter, Beton	Q2 17319,14159 17230,14206 17221,14268
@@ -5081,7 +5079,9 @@ Waldkauzstr.: Verbundsteinpflaster	Q1 -1202,19877 -1364,19982 -1521,20041 -1630,
 Bidenswinkel: Verbundsteinpflaster	Q1+ 16242,12878 16242,12814 16255,12769
 Bornitzstr. [Wohngebiet]: Verbundsteinpflaster	Q1+ 16312,12876 16313,12762
 Bornitzstr. [Wohngebiet] (Silberweidenweg?): Verbundsteinpflaster	Q1+ 16376,12874 16377,12791
-(Radweg nördl. des Krankenhauses Herzberge): Asphalt	Q0 17201,13519 17200,13530 17187,13609 17167,13655 17111,13792 17098,13969 17117,14036 17152,14084 17196,14120 17236,14140 17266,14144 18024,13843
+(Radweg nördl. des Krankenhauses Herzberge): Asphalt	Q0 17201,13519 17200,13530 17187,13609 17167,13655
+(Radweg nördl. des Krankenhauses Herzberge): Asphalt, erste Wurzelhebungen	Q0- 17167,13655 17111,13792 17098,13969 17117,14036 17152,14084
+(Radweg nördl. des Krankenhauses Herzberge): Asphalt	Q0 17152,14084 17196,14120 17236,14140 17266,14144 18024,13843
 (Herzbergstr. - Siegfriedstr.): Asphalt	Q0 17167,13655 17073,13765 16978,13819 16875,13834
 Allendorfer Weg: Verbundsteinpflaster	Q1+ 17791,14639 17879,14659
 Allendorfer Weg: Beton	Q1+ 17879,14659 17991,14684
@@ -6652,7 +6652,9 @@ Blumberger Damm [Wohngebiet]: Beton	Q0 21824,16506 21574,16547
 Grohsteig: welliger Asphalt	Q1+ 21426,15979 21416,16027 21400,16117 21400,16207 21407,16257
 Oppermannstr.: Beton	Q0 21617,16061 21598,16055 21426,15979 21232,15894 21191,15914
 Oppermannstr.: Asphalt	Q0 21191,15914 21108,15955
-Marzahner Promenade - Mühlenbecker Weg: Gehwegplatten	Q1 20222,15519 20181,15658 20150,15678
+Marzahner Promenade - Mühlenbecker Weg: Gehwegplatten	Q1 20222,15519 20202,15587
+Marzahner Promenade - Mühlenbecker Weg: Gehwegplatten	Q0 20202,15587 20202,15630 20181,15658
+Marzahner Promenade - Mühlenbecker Weg: Gehwegplatten	Q1 20181,15658 20150,15678
 Pekrunstr.: Asphalt	Q0 20944,14840 20887,14847 20745,14840 20710,14840 20609,14842 20559,14847 20480,14874 20406,14899 20337,14933 20322,14940 20245,14985 20222,14998 20116,15057 20010,15142
 Parkerweg: unebener Asphalt	Q1 20116,14808 20222,14998
 Harbertssteg: Asphalt	Q0- 20009,14867 20116,14808 20231,14745
@@ -9124,9 +9126,10 @@ Sella-Hasse-Str.: Beton	Q0 20840,16777 20734,16819
 (Max-Herrmann-Str. - Ludwig-Renn-Str.): Verbundsteinpflaster	Q1 21077,16710 21019,16698 21000,16706
 Walter-Felsenstein-Str.: Asphalt	Q0 20792,16951 20770,16901 20734,16819 20617,16614
 (Walter-Felsenstein-Str. - Raoul-Wallenberg-Str.): Beton	Q0 20617,16614 20547,16485 20523,16469 20487,16392 20474,16363 20456,16356 20372,16173
-Marzahner Promenade: Beton	Q0 20610,15993 20628,15981 20644,16002 20761,15940 20731,15864 20693,15758 20667,15721 20526,15657 20222,15519
+Marzahner Promenade: Beton	Q0 20610,15993 20628,15981 20644,16002 20761,15940 20732,15868 20693,15758 20667,15721 20526,15657 20222,15519
 (Raoul-Wallenberg-Str. - Marzahner Promenade): Beton	Q0 20832,15981 20788,15968 20761,15940
-(Marzahner Promenade - Landsberger Allee): Verbundsteinpflaster/Betonplatten	Q1 20693,15758 20703,15755 20714,15749 20729,15743 20733,15657
+(Marzahner Promenade - Landsberger Allee): Verbundsteinpflaster/Betonplatten	Q1 20693,15758 20703,15755 20715,15751 20719,15749
+(Raoul-Wallenberg-Str. - Landsberger Allee): Asphalt	Q0 20731,15742 20733,15657
 Helene-Weigel-Platz: Beton	Q0 19463,13636 19482,13572 19602,13575 19625,13576 19697,13576
 Helene-Weigel-Platz: Asphalt	Q0 19439,13633 19463,13636
 Helene-Weigel-Platz [zum Springpfuhlpark]: Gehwegplatten/Beton	Q0 19602,13575 19593,13702 19573,13742 19570,13833
@@ -9481,7 +9484,7 @@ Orankeweg - Hansastr.: Asphalt	Q0 15395,15852 15381,15873
 Wörther Str.: Asphalt mit einigen Aufpflasterungen	Q1+ 11155,14554 10910,14488
 (Kleiner Tiergarten): leicht schadhafter Asphalt	Q1 6561,13151 6556,13240 6526,13327
 Schwarzwurzel-Park: Gehwegplatten	Q0- 20698,18359 20814,18341 20823,18329
-(Raoul-Wallenberg-Str. - Landsberger Allee): Betonplatten	Q1 20774,15850 20758,15851 20719,15755 20729,15743
+(Raoul-Wallenberg-Str. - Landsberger Allee): Asphalt	Q0 20761,15856 20719,15749 20731,15742
 (Pasewalker Str. - Vesaliusstr.): Beton	Q0 11913,19144 11904,19153 11918,19185 11896,19162 11884,19169
 (Pasewalker Str. - Vesaliusstr.): Gehwegplatten	Q0- 11884,19169 11841,19188 11763,19191
 (Bleicheroder Str. - Pasewalker Str.): Gehwegplatten	Q1 11845,19121 11884,19169 11895,19183 11912,19279 11927,19308
@@ -10041,6 +10044,28 @@ Am Bullengraben: sehr guter Asphalt	Q0 -6272,13472 -6265,13475 -6209,13499 -6076
 Kerrweg: unbefestigte Straße	Q2 -6269,13464 -6189,13497 -6125,13540 -6010,13586 -5962,13584 -5917,13582
 Straße zum Müggelturm: Asphalt/Beton	Q0- 25008,2889 25010,2794 24978,2634 24981,2580 24982,2519 24641,2074 24630,2034 24634,1974 24673,1888 24726,1837 24889,1743 24973,1690
 Lohmeyerstr.: Kopfsteinpflaster	Q2 3348,12314 3409,12451
+#: add_fragezeichen: Wann werden die Straßen im Olympiaviertel ausgebaut? vvv
+#: XXX wird hier auch verkehrsberuhigt, zumindest teilweise? vvv
+#: last_checked: 2016-05-29 vvv
+Helga-Haase-Str.: unbefestigte Baustraße	Q2- 17465,16340 17508,16356 17611,16396 17673,16420 17792,16465
+#: osm_watch: way id="354078625" version="4"
+Jutta-Langenau-Str.: unbefestigte Baustraße	Q2- 17615,16310 17643,16322 17818,16397 17857,16414 17877,16423
+#: osm_watch: way id="354078420" version="3"
+Gerhard-Schulz-Str.: unbefestigte Baustraße	Q2- 17508,16356 17497,16385 17552,16461
+#: osm_watch: way id="354078421" version="3"
+Harry-Glaß-Str.: unbefestigte Baustraße	Q2- 17552,16461 17603,16415 17611,16396 17643,16322
+#: osm_watch: way id="354078422" version="3"
+Erich-Hagen-Str.: unbefestigte Baustraße	Q2- 17673,16420 17657,16464 17712,16549
+#: osm_watch: way id="354078419" version="2"
+Joachim-Böhmer-Str.: unbefestigte Baustraße	Q2- 17818,16397 17792,16465 17776,16504 17712,16549 17673,16577
+Anna-Maria-Müller-Str.: unbefestigte Baustraße	Q2- 17857,16414 17814,16534 17734,16587 17704,16607
+Anna-Maria-Müller-Str.: unbefestigte Baustraße	Q2- 17734,16587 17712,16549
+(Fußweg zur Gehrenseestr.): unbefestigter Weg	Q2- 17615,16310 17640,16259
+#: last_checked ^^^
+#: XXX ^^^
+#: add_fragezeichen ^^^
+(Marzahner Promenade - Landsberger Allee [Wohngebiet]): Asphalt	Q0 20731,15742 20759,15740
+(Marzahner Promenade - Landsberger Allee [Wohngebiet]): Beton	Q1 20759,15740 20789,15736
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -10233,7 +10258,7 @@ Zescher Str.: guter Beton	Q0 10513,-2397 10509,-2131
 Wehneltsteig: mäßiger Asphalt	Q0 1256,14217 1305,14384
 #: confirmed_by: srt
 Ohserring: Asphalt	Q0 23676,12820 23678,12878 23724,12917 23785,12908 23812,12863 23806,12804
-Scheibenbergstr.: guter Asphalt	Q0 20609,14842 20607,14953 20632,14975 20675,14980 20676,15022 20696,15039 20693,15144
+Scheibenbergstr.: guter Asphalt	Q0 20609,14842 20607,14953 20632,14975 20675,14980 20677,15038 20696,15039 20693,15144
 #: corrected_by: srt (Beton -> Asphalt)
 Sieboldstr.: Asphalt	Q0 19707,46 19844,162 19906,217 19938,244 19971,272 20035,348
 #: confirmed_by: srt
@@ -11621,8 +11646,8 @@ Kirchstr.: Asphalt	Q0 589,2925 751,2860
 # 
 #: by: Philipp Kaufmann vvv
 Max-Lingner-Str.: Asphalt	Q0 11069,17562 11073,17526 11088,17395 11094,17339 11116,17140
-#: add_fragezeichen: liegt hier Asphalt oder Beton?
-Basdorfer Str.: keine Geschwindigkeitsbegrenzung	Q0 19880,15818 20150,15678
+#: corrected_by: srt (clarified to "Asphalt")
+Basdorfer Str.: Asphalt	Q0 19880,15818 20150,15678
 Mühlenbecker Weg: Beton	Q0 20150,15678 20334,16043
 #: by: ^^^
 # 
@@ -20380,7 +20405,7 @@ Küstriner Str.: Asphalt	Q0 16123,15025 16211,15105
 #: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...)
 Küstriner Str.: Asphalt	Q0 16211,15105 16314,15223
 #: XXX wird hier die Straße verbessert werden? - laut Drucksache wird hier ein "Neubau" erfolgen vvv
-#: last_checked: 2016-02-10 vvv
+#: last_checked: 2016-05-29 vvv
 #: check_frequency: 120d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524
 #: confirmed_by: srt
@@ -25489,11 +25514,11 @@ Döllner Str.: fester Sandweg mit Löchern	Q2 22313,18595 22071,18593
 (Parkweg an der neuen Wuhle): wassergebundene Decke	Q1 21555,17546 21751,17511 21875,17533 21925,17542 22022,17519
 (Parkweg an der neuen Wuhle): Kopfsteinpflaster	Q2 22022,17519 22071,17509
 (Parkweg an der neuen Wuhle): wassergebundene Decke	Q1 22071,17509 22093,17505 22121,17495 22364,17323
-(Parkweg südlich der Ahrensfelder Berge): wassergebundene Decke	Q1 22657,16287 22562,16304 22533,16366 22581,16411 22596,16435 22512,16542 22378,16657 22299,16730 22232,16793 22158,16855 22139,16912 22137,16965 22167,17103 22160,17132 22126,17171 22071,17208 22050,17230 22038,17264 22039,17350 22027,17432 22004,17470 21992,17479
-(Parkweg südlich der Ahrensfelder Berge): wassergebundene Decke	Q1 22596,16435 22666,16412
+(Parkweg südlich der Ahrensfelder Berge): wassergebundene Decke	Q1 22657,16287 22562,16304 22533,16366 22581,16411 22590,16432 22582,16455 22512,16542 22378,16657 22299,16730 22238,16799 22162,16861 22139,16912 22137,16965 22167,17103 22160,17132 22126,17171 22071,17208 22050,17230 22038,17264 22039,17350 22027,17432 22004,17470 21992,17479
+(Parkweg südlich der Ahrensfelder Berge): wassergebundene Decke	Q1 22590,16432 22666,16412
 (Verbindungsweg Ahrensfelder Berge): wassergebundene Decke	Q1 21962,17152 21999,17179 22071,17208
-(Verbindungsweg Ahrensfelder Berge): wassergebundene Decke	Q1 22050,16781 22158,16855
-(Verbindungsweg Ahrensfelder Berge): wassergebundene Decke	Q1 22110,16867 22158,16855
+(Verbindungsweg Ahrensfelder Berge): wassergebundene Decke	Q1 22050,16781 22162,16861
+(Verbindungsweg Ahrensfelder Berge): wassergebundene Decke	Q1 22110,16867 22162,16861
 (Verbindungsweg Ahrensfelder Berge): wassergebundene Decke	Q1 22220,16637 22299,16730
 (Verbindungsweg Ahrensfelder Berge): wassergebundene Decke	Q1 22378,16657 22311,16582
 (Verbindungsweg Ahrensfelder Berge): wassergebundene Decke	Q1 22512,16542 22432,16467

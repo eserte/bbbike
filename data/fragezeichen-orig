@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaﬂnahmenkatalog ist nur der ˆstliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaﬂnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2016-05-27
+#: last_checked: 2016-05-30
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -171,7 +171,7 @@ Schˆnerlinder Str.: entstehen hier bessere Radwege oder Radspuren?	?::projected 
 #: XXX Baumaﬂnahme 10.11 (Realisierung nach 2011)
 #: osm_watch: way id="387676294" version="2"
 #: osm_watch: way id="10041007" version="18"
-#: last_checked: 2015-06-21
+#: last_checked: 2016-05-29
 #: check_frequency: 180d
 Wuhletalstr.: werden hier die Radspuren fortgef¸hrt?	?::projected 20895,17594 20769,17650 20728,17670 20485,17784
 # 
@@ -187,7 +187,7 @@ Wuhletalstr.: werden hier die Radspuren fortgef¸hrt?	?::projected 20895,17594 20
 Oderbruchstr./Hohenschˆnhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14658,14328 14464,14216 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaﬂnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2016-03-31
+#: last_checked: 2016-05-29
 #: check_frequency: 60d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
@@ -383,6 +383,10 @@ Ernststr.: Verbesserung f¸r den Radverkehr, evtl. Entfernung des Kopfsteinpflast
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   f¸r Radfahrer eher uninteressante Dinge (-> private)
+# 
+#: last_checked: 2016-05-29
+#: check_frequency: 100d
+Baumarkt (?) wird gebaut: wird es eine Durchfahrmˆglichkeit geben?	?::inwork 17010,14269 17060,14255 17221,14268 17274,14280
 # 
 #: last_checked: 2016-04-17
 #: next_check: 2016-07-03
@@ -632,7 +636,7 @@ Sternbergpromenade: der Havel-Radweg wird hier offiziell entlanggef¸hrt	?::proje
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-spandau/presse/archiv/20141105.1045.399992.html --- #: next_check: 2014-11-10 --- Sternbergpromenade: Ist die Sternbergpromenade ausgeschildert?	? -3503,13773 -3385,13937 -3345,13994 -3306,14035 -3300,14039 -3187,14116 -3146,14145
 # REMOVED (weitgehend realisiert, Radweg kann schon benutzt werden) --- #: next_check_id: WARSCHAUER-2014 --- #: XXX falls realisiert -> gesperrt_s-orig-Eintrag bewegen --- #: last_checked: 2015-08-05 --- #: next_check: 2015-09-30 --- Revaler Str.: asphaltierter Radweg entgegen der Einbahnstraﬂenrichtung existiert teilweise, teilweise muss noch gebaut werden	?; 13588,11490 13565,11492 13473,11456
 # REMOVED (neu asphaltiert) --- #: last_checked: 2013-11-11 --- Matkowskystr.: Bauarbeiten, danach vielleicht komplett asphaltiert?	? 14530,11137 14513,11075
-# REMOVED (weitgehend realisiert) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20131108.1050.391371.html (bis September 2014) --- #: source_id: IM_020636 --- #: source_id: IM_023589 --- #: last_checked: 2014-09-27 --- #: next_check: 2015-06-30 --- Landsberger Chaussee: Neubau/Sanierung des Radwegs	?::inwork; 22771,16194 22739,16203 22696,16208 22631,16215 22495,16165 22131,16000 21951,15918 21709,15808
+# REMOVED (weitgehend realisiert) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20131108.1050.391371.html (bis September 2014) --- #: source_id: IM_020636 --- #: source_id: IM_023589 --- #: last_checked: 2014-09-27 --- #: next_check: 2015-06-30 --- Landsberger Chaussee: Neubau/Sanierung des Radwegs	?::inwork; 22771,16194 22739,16203 22696,16208 22631,16215 22495,16165 22131,16000 22109,15990 21951,15918 21709,15808
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3629
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2014
@@ -1399,9 +1403,13 @@ Bautzener Brache - Groﬂgˆrschenstr.: Weg in Planung	?::projected 8240,9364 8186,
 #: last_checked ^^^
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4222
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4281
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036380423042/380423042/00072293/93-Anlagen/02/VorhabenbezogenerB-Plan3-48VE-AenderungderGelt.pdf
-#: next_check: 2017-04-01
-Bebauungsplan 3-48 VE: Planstraﬂen in Planung	?::projected 12969,18548 12957,18518 13178,18460 13368,18674 13222,18797
+#: by: www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036471085040/471085040/00073235/35-Anlagen/02/HerstellungvonoeffentlichenErschliessungsanlag.pdf 
+#: next_check: 2017-11-01 vvv
+Bebauungsplan 3-48 VE: Planstraﬂe A in Planung	?::projected 12969,18548 12957,18518 13178,18460 13368,18674 13410,18735
+Bebauungsplan 3-48 VE: Planstraﬂe B in Planung	?::projected 13368,18674 13222,18797
+#: next_check ^^^
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/artikel.472246.php
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-65ve/vorhabenbezogener_bebauungsplan.pdf
@@ -1425,6 +1433,11 @@ Bebauungsplan 7-65: Weg in Planung	?::projected 7960,6059 7697,6059 7630,6016 76
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverl‰ufen
 # - XXX_prog- und XXX_indoor-Eintr‰ge
+# 
+# by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8452&options=4
+Potsdamer Chaussee/Engelsfelder Chaussee: entsteht hier eine Ampel?	? -5883,10866 -5870,10847 -5851,10822
+# 
+Auersbergstr.: Qualit‰t?	? 20696,15039 20743,15039 20809,15046 20894,15045 20915,15001
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/21re.pdf/file?y=2016
 Kollwitzstr.: hat die Einziehung von Straﬂenland hier Auswirkungen?	? 11229,14422 11285,14515 11317,14564
@@ -1913,22 +1926,17 @@ S¸dpankeweg, Fortsetzung zur Ida-von-Arnim-Str.: wann wird sie gebaut? Qualit‰t?
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2015 (Grundst¸cksnummerierungen)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/02re.pdf/file?y=2015 ("Anna-Maria-M¸ller-Str.")
 #: XXX Bebauungsplan 11-35, teilweise verkehrsberuhigt, "Olympiaviertel" vvv
-#: last_checked: 2016-02-28 (nur unbefestigte Baustraﬂen) vvv
+#: last_checked: 2016-05-29 vvv
 #: check_frequency: 30d vvv
-Helga-Haase-Str.: Planstraﬂe 1, genaue Lage, Qualit‰t?	?::projected 17465,16340 17508,16356 17611,16396 17673,16420 17792,16465
-#: osm_watch: way id="354078625" version="4"
-Jutta-Langenau-Str.: Planstraﬂe 2, genaue Lage, Qualit‰t?	?::projected 17615,16310 17643,16322 17818,16397 17877,16423
-#: osm_watch: way id="354078420" version="3"
-Gerhard-Schulz-Str.: Planstraﬂe 3, genaue Lage, Qualit‰t?	?::projected 17508,16356 17497,16385 17552,16461
+# REMOVED (-> strassen) --- Helga-Haase-Str.: Planstraﬂe 1, genaue Lage, Qualit‰t?	?::projected 17465,16340 17508,16356 17611,16396 17673,16420 17792,16465
+# REMOVED --- : osm_watch: way id="354078625" version="4" --- Jutta-Langenau-Str.: Planstraﬂe 2, genaue Lage, Qualit‰t?	?::projected 17615,16310 17643,16322 17818,16397 17857,16414 17877,16423
+# REMOVED --- : osm_watch: way id="354078420" version="3" --- Gerhard-Schulz-Str.: Planstraﬂe 3, genaue Lage, Qualit‰t?	?::projected 17508,16356 17497,16385 17552,16461
 (Fuﬂweg zur Wartenberger Str.): genaue Lage, Qualit‰t?	?::projected 17512,16495 17552,16461
-#: osm_watch: way id="354078421" version="3"
-Harry-Glaﬂ-Str.: Planstraﬂe 4, genaue Lage, Qualit‰t?	?::projected 17552,16461 17603,16415 17611,16396 17643,16322
-#: osm_watch: way id="354078422" version="3"
-Joachim-Bˆhmer-Str.: Planstraﬂe 5 (Straﬂenname --- oder ist das die Erich-Hagen-Str.?), genaue Lage, Qualit‰t?	?::projected 17673,16420 17657,16464 17712,16549
-#: osm_watch: way id="354078419" version="2"
-Erich-Hagen-Str.: Planstraﬂe 6 (Straﬂenname --- oder ist das die Joachim-Bˆhmer-Str.?), genaue Lage, Qualit‰t?	?::projected 17818,16397 17792,16465 17776,16504 17712,16549 17673,16577
-Anna-Maria-M¸ller-Str.: Planstraﬂe 7, genaue Lage, Qualit‰t?	?::projected 17712,16549 17753,16604
-(Fuﬂweg zur Gehrenseestr.): Qualit‰t?	?::projected 17615,16310 17640,16259
+# REMOVED --- : osm_watch: way id="354078421" version="3" --- Harry-Glaﬂ-Str.: Planstraﬂe 4, genaue Lage, Qualit‰t?	?::projected 17552,16461 17603,16415 17611,16396 17643,16322
+# REMOVED --- : osm_watch: way id="354078422" version="3" --- Erich-Hagen-Str.: Planstraﬂe 5, genaue Lage, Qualit‰t?	?::projected 17673,16420 17657,16464 17712,16549
+# REMOVED --- : osm_watch: way id="354078419" version="2" --- Joachim-Bˆhmer-Str.: Planstraﬂe 6, genaue Lage, Qualit‰t?	?::projected 17818,16397 17792,16465 17776,16504 17712,16549 17673,16577
+# REMOVED --- Anna-Maria-M¸ller-Str.: Planstraﬂe 7, genaue Lage, Qualit‰t?	?::projected 17712,16549 17753,16604
+# REMOVED --- (Fuﬂweg zur Gehrenseestr.): Qualit‰t?	?::projected 17615,16310 17640,16259
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -2629,6 +2637,11 @@ G¸terbahnhof Wilmersdorf: vermutlich wird die Straﬂe w‰hrend der Bauarbeiten ges
 #: next_check: 2016-05-01 (Wirksamkeit der Benennung)
 Johannes-Guthmann-Weg: neue Straﬂe entsteht, vermutlich hier? Qualit‰t?	?::inwork -6464,5749 -6613,5849 -6669,5847
 # 
+#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7387
+#: by: http://www.lehrter-strasse-berlin.net/dateien/Humboldthafen/BPlan_II-201_da/B_Plan_Humboldthafen_suedl_Bereich_Verkehrstechnische_Untersuchung_2008.pdf
+#: XXX eventuell entstehen hier weitere Straﬂen/Wege
+#: next_check: 2016-10-01
+Am Humboldthafen: Straﬂe soll nach Hilda Geiringer benannt werden --- wo genau wird die Straﬂe liegen?	?::projected 8243,13469 8245,13396
 #: ignore ^^^
 #: section ^^^
 #

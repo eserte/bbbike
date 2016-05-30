@@ -1620,28 +1620,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.family-and-friends-ev.de/2.html
-#: by: http://www.berlin.de/tickets/suche/detail.php?id=859853
-#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.480355.php
-userdel	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
-',
-         'from' => 1464300000,
-         'id' => 1642,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              9,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (28. und 29. Mai 2016)',
-         'type' => 'gesperrt',
-         'until' => 1464559199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3910,15 +3889,6 @@ userdel	q4::inwork 20381,1390 20405,1460
          'text' => 'Keltensteig, Germanenplatz, Teutonenstr.: Bauarbeiten, Juni 2016 bis September 2016',
          'type' => 'handicap',
          'until' => 1475272799
-       },
-       {
-         'data' => 'userdel	q4::inwork; 13541,11355 13588,11490 13603,11538 13651,11731 13696,11920
-',
-         'from' => 1464298923,
-         'id' => 2789,
-         'text' => 'Warschauer Str.: Fahrbahn zwischen Warschauer Brücke und Kopernikusstr. wegen Bauarbeiten gesperrt, 27.05.2016 bis 29.05.2016',
-         'type' => 'handicap',
-         'until' => 1464559200
        }
      
 );

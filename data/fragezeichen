@@ -1089,6 +1089,7 @@ S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
 # added from strassen
 Abtweiler Str. (heißt die Straße "Abtweilerstraße" oder "Abtweiler Str."?)	? 29188,1086 29098,1148 29060,1179
 Bisamstr. (wie ist die Fahrbahnbeschaffenheit der Bisamstr.? Kann man von Spitzmausweg und Waschbärweg direkt zur Bisamstr. gelangen?)	? 26468,13021 26427,12967 26394,12927 26362,12887 26328,12845 26195,12682 26315,12618 26201,12499
+Harry-Glaß-Str. (Ist der Straßenname "Harry-Glas-Str." oder "Harry-Glaß-Str."?)	? 17552,16461 17603,16415 17611,16396 17643,16322
 # added from landstrassen
 B5 (Umfahrung Nauen) (ist die Umfahrung Nauen auch für Radfahrer benutzbar?)	? -24421,19803 -24681,20018 -24904,20093 -25871,20229 -26745,20437 -27095,20987 -27689,21958 -28075,22250
 Kerzendorf - B101 (ist diese Strecke asphaltiert?)	? 2406,-15008 2327,-14968 2188,-14926 2073,-14964 1915,-14960 1811,-14965 1704,-14954 1640,-14947 1541,-14947 1529,-15164 1566,-15226 1577,-15749 1448,-15955 1513,-16010
@@ -1154,12 +1155,20 @@ Rosestr.: Asphalt (wurde hier tatsächlich asphaltiert?)	? 21329,832 21497,1042
 Seebadstr.: Asphalt mit einigen Schäden (Ist die Qualität des Asphalts in der Seebadstraße nach den Bauarbeiten besser geworden?)	? 4681,23273 4704,23278 4744,23289 4910,23490 5006,23575
 (Wichernstr. - Johannesstift): Kleinsteinpflaster (im nordwestlichen Abschnitt auch gepflastert?)	? -3568,18093 -3655,18177 -3699,18222 -3835,18357
 (Beetzseeweg - Zeuthener-See-Weg): Verbundsteinpflaster (liegt hier tatsächlich Verbundsteinpflaster?)	? -1689,16584 -1685,16583 -1647,16573
+Helga-Haase-Str.: unbefestigte Baustraße (Wann werden die Straßen im Olympiaviertel ausgebaut?)	? 17465,16340 17508,16356 17611,16396 17673,16420 17792,16465
+Jutta-Langenau-Str.: unbefestigte Baustraße (Wann werden die Straßen im Olympiaviertel ausgebaut?)	? 17615,16310 17643,16322 17818,16397 17857,16414 17877,16423
+Gerhard-Schulz-Str.: unbefestigte Baustraße (Wann werden die Straßen im Olympiaviertel ausgebaut?)	? 17508,16356 17497,16385 17552,16461
+Harry-Glaß-Str.: unbefestigte Baustraße (Wann werden die Straßen im Olympiaviertel ausgebaut?)	? 17552,16461 17603,16415 17611,16396 17643,16322
+Erich-Hagen-Str.: unbefestigte Baustraße (Wann werden die Straßen im Olympiaviertel ausgebaut?)	? 17673,16420 17657,16464 17712,16549
+Joachim-Böhmer-Str.: unbefestigte Baustraße (Wann werden die Straßen im Olympiaviertel ausgebaut?)	? 17818,16397 17792,16465 17776,16504 17712,16549 17673,16577
+Anna-Maria-Müller-Str.: unbefestigte Baustraße (Wann werden die Straßen im Olympiaviertel ausgebaut?)	? 17857,16414 17814,16534 17734,16587 17704,16607
+Anna-Maria-Müller-Str.: unbefestigte Baustraße (Wann werden die Straßen im Olympiaviertel ausgebaut?)	? 17734,16587 17712,16549
+(Fußweg zur Gehrenseestr.): unbefestigter Weg (Wann werden die Straßen im Olympiaviertel ausgebaut?)	? 17615,16310 17640,16259
 Bamihlstr.: sehr gute Qualität (liegt hier Asphalt oder Beton?)	? -2602,16809 -2585,16900 -2563,17004
 Badeweg: guter Belag (liegt hier Asphalt oder Beton?)	? -4188,2674 -4292,2762
 Badeweg: guter Belag (liegt hier Asphalt oder Beton?)	? -4292,2762 -4471,2917
 Eberbacher Str.: sehr gute Qualität (liegt hier Asphalt oder Beton?)	? 4397,7375 4330,7375 4162,7375 4059,7375 3961,7375
 Marchwitzastr.: gute Qualität (liegt hier Asphalt oder Beton?)	? 20141,13071 20072,13070 19940,13128 19934,13318 20163,13318
-Basdorfer Str.: keine Geschwindigkeitsbegrenzung (liegt hier Asphalt oder Beton?)	? 19880,15818 20150,15678
 Dörfelweg: Asphalt oder Beton (liegt hier Asphalt oder Beton?)	? 9730,-33 9578,-92 9500,-115
 (Mauerweg am Eiskeller): asphaltiert (ist dieser Abschnitt tatsächlich asphaltiert?)	? -7990,19888 -8266,19811 -8469,19845 -8494,19713 -8448,19710 -8521,19390 -8372,19402 -8272,19086 -8206,19007 -8011,19059
 Baluschekweg: Asphalt (Qualität? Asphalt oder Verbundsteinpflaster oder etwas anderes?)	? -5877,13375 -5860,13283 -5859,13270 -5822,13088 -5784,12858
@@ -1257,6 +1266,14 @@ asphaltiert (geht der Radweg in Richtung Südwesten weiter?)	? 10744,-25036 9478,
 # added from comments_misc
 Tor (Sperrung möglich?) (Ist das Tor permanent geöffnet?)	? 58041,164268 58324,164202 59544,164184
 Ausschilderung nach Luisenthal (?) folgen (Heißt es tatsächlich "Luisenthal"?)	? 41134,76881 41143,76365
+Helga-Haase-Str.: nicht ausgeschildert (Wann werden die Straßen im Olympiaviertel ausgeschildert?)	? 17465,16340 17508,16356 17611,16396 17673,16420 17792,16465
+Jutta-Langenau-Str.: nicht ausgeschildert (Wann werden die Straßen im Olympiaviertel ausgeschildert?)	? 17615,16310 17643,16322 17818,16397 17857,16414 17877,16423
+Gerhard-Schulz-Str.: nicht ausgeschildert (Wann werden die Straßen im Olympiaviertel ausgeschildert?)	? 17508,16356 17497,16385 17552,16461
+Harry-Glaß-Str.: nicht ausgeschildert (Wann werden die Straßen im Olympiaviertel ausgeschildert?)	? 17552,16461 17603,16415 17611,16396 17643,16322
+Erich-Hagen-Str.: nicht ausgeschildert (Wann werden die Straßen im Olympiaviertel ausgeschildert?)	? 17673,16420 17657,16464 17712,16549
+Joachim-Böhmer-Str.: nicht ausgeschildert (Wann werden die Straßen im Olympiaviertel ausgeschildert?)	? 17818,16397 17792,16465 17776,16504 17712,16549 17673,16577
+Anna-Maria-Müller-Str.: nicht ausgeschildert (Wann werden die Straßen im Olympiaviertel ausgeschildert?)	? 17857,16414 17814,16534 17734,16587 17704,16607
+Anna-Maria-Müller-Str.: nicht ausgeschildert (Wann werden die Straßen im Olympiaviertel ausgeschildert?)	? 17734,16587 17712,16549
 # added from comments_route
 F3 (Potsdam) (Wie ist der genaue Verlauf der F3?)	? -26785,5851 -26783,5891 -26689,6111 -26525,6519 -26170,6459 -25898,6447 -25719,6581 -25537,6616 -25318,6593 -25213,6477
 F3 (Potsdam) (Wie ist der genaue Verlauf der F3?)	? -18701,4578 -19392,4605 -19309,4359

@@ -1056,6 +1056,9 @@ Querweg durch die Dauerkolonie Togo -> Togostr.: Mittelstreifen	3::igndisp 5894,
 Mittelstreifen	3nocross::ignrte 21251,18508 21163,18347 21009,18055
 Märkische Allee -> Flämingstr.: Mittelstreifen	3::igndisp 21251,18508 21163,18347 21220,18323
 Flämingstr. -> Märkische Allee: Mittelstreifen	3::igndisp 21220,18323 21163,18347 21009,18055
+Mittelstreifen	3nocross::ignrte 19809,15676 19880,15818 19988,16039
+Märkische Allee -> Basdorfer Str.: Mittelstreifen	3::igndisp 19988,16039 19880,15818 20150,15678
+Basdorfer Str. -> Märkische Allee: Mittelstreifen	3::igndisp 20150,15678 19880,15818 19809,15676
 Mittelstreifen	3nocross::ignrte 21108,11628 21251,11560 21311,11528
 Alt-Biesdorf -> Walsheimer Str.: Mittelstreifen	3::igndisp 21108,11628 21251,11560 21352,11701
 Mittelstreifen	3nocross::ignrte 4704,17101 4931,17174 4997,17241
@@ -2465,7 +2468,7 @@ Drängelgitter	BNP:3:-50:trailer=10 27115,11335
 Schranke	BNP:3:-211:trailer=10 22004,17470
 zwei Drängelgitter an der Straßenbahntrasse	BNP:5:-117:trailer=15 21860,18718
 Drängelgitter	BNP:3:-73:trailer=10 20703,15755
-Drängelgitter	BNP:3:-61:trailer=10 20714,15749
+Drängelgitter	BNP:3:-71:trailer=10 20715,15751
 2x Drängelgitter	BNP:4:-63:trailer=15 21305,16705
 Drängelgitter	BNP:5:-264:trailer=20 -5681,15113
 Drängelgitter	BNP:5:-251:trailer=20 -5689,15114
@@ -2870,7 +2873,6 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 Nordufer: Neubau	2:inwork 7427,14648 7212,14738
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9898,12161 9882,12259
-Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 17221,14268 17274,14280
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18680,-1506 18798,-1581 18853,-1656 18866,-1674
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910

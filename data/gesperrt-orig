@@ -1088,15 +1088,17 @@ Fellbacher Platz	1 3627,23246 3610,23242 3588,23256 3581,23282 3593,23297
 Walterstr.	1 13121,6689 13099,6712
 Gretel-Bergmann-Weg	1s:q1 -1132,12268 -1288,12178
 # REMOVED (dauerhaft) --- #: XXX wo gibt es Informationen hierzu? --- #: by: Kai Wagner (permanente Sperrung) --- #: XXX laut osm seit 2014-04-12 ohne access=private - falsch! --- #: confirmed_by: srt --- #: osm_watch: way id="4402045" version="10" --- #: last_checked: 2014-07-23 --- #: check_frequency: 180d
+#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7345 (kann der Platz wieder zugänglich gemacht werden?)
 Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8554,12593 8540,12420
 # REMOVED (dauerhaft) --- #: last_checked: 2014-07-23 --- #: check_frequency: 180d --- #: XXX evtl. permanent
 Vorfahrt Reichstagsgebäude: Absperrgitter, keine Durchfahrt mehr möglich	2 8400,12417 8399,12610
+#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5554
 Kriemhildstr.	1s:q3 17300,12173 17314,12265
 Sportfliegerstr.: Betriebsgelände	2 18370,4511 18423,4459
 #: by: olaf skeries
 Schillerhof	1 7069,17204 6928,17154
 #: XXX wird aufgehoben, sobald das einsturzgefährdete Haus abgerissen wird vvv
-#: last_checked: 2016-05-15 vvv
+#: last_checked: 2016-05-29 vvv
 #: check_frequency: 60d vvv
 Wartenbergstr.	1s:q2 15423,11667 15337,11639 15328,11636 15300,11584
 #: check_frequency ^^^
@@ -1391,6 +1393,7 @@ Lindauer Allee: Mittelstreifen	3nocross 5550,18775 5635,18776 5713,18777
 Lindauer Allee: Mittelstreifen	3nocross 5713,18777 5791,18778 5869,18779
 Togostr.: Mittelstreifen	3nocross 5906,16403 5700,16584 5596,16662
 Märkische Allee: Mittelstreifen	3nocross 21251,18508 21163,18347 21009,18055
+Märkische Allee: Mittelstreifen	3nocross 19809,15676 19880,15818 19988,16039
 Alt-Biesdorf: Mittelstreifen	3nocross 21108,11628 21251,11560 21311,11528
 Kurt-Schumacher-Damm: Mittelstreifen	3nocross 4704,17101 4931,17174 4997,17241
 Rudower Str.: Mittelstreifen	3nocross 14788,3441 14822,3409 14994,3245
@@ -2194,7 +2197,7 @@ Drängelgitter	BNP:3::trailer=10 27115,11335
 Schranke	BNP:3::trailer=10 22004,17470
 zwei Drängelgitter an der Straßenbahntrasse	BNP:5::trailer=15 21860,18718
 Drängelgitter	BNP:3::trailer=10 20703,15755
-Drängelgitter	BNP:3::trailer=10 20714,15749
+Drängelgitter	BNP:3::trailer=10 20715,15751
 #: note: relativ gut passierbar
 2x Drängelgitter	BNP:4::trailer=15 21305,16705
 #: note: doppeltes Drängelgitter vvv
@@ -2679,7 +2682,7 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: last_checked: 2016-05-22
+#: last_checked: 2016-05-29
 Haasestr.: Bauarbeiten, keine Durchfahrt möglich	2::inwork 14328,11320 14286,11186
 # 
 #: next_check_id: WEICHSELPLATZ-2016 vvv
@@ -2716,7 +2719,7 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,
 #: check_frequency: 60d
 Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7703,14582 7527,14684
 # 
-#: last_checked: 2016-05-21 vvv
+#: last_checked: 2016-05-30 vvv
 # REMOVED --- Treptower Park: Bauarbeiten, Weg noch nicht fertiggestellt	2::inwork 14318,9688 14443,9731
 Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14443,9731 14361,9772
 # REMOVED --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14361,9772 14436,9784
@@ -2730,8 +2733,8 @@ Treptower Park: Bauarbeiten	2::inwork 15561,8903 15630,8979
 Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14448,9922 14460,9871 14466,9861
 #: last_checked ^^^
 # 
-#: last_checked: 2015-12-26
-#: XXX laut osm mittlerweile offen ("unclassified")
+#: last_checked: 2016-05-29
+#: XXX laut osm mittlerweile offen ("unclassified") (stimmt aber nicht)
 #: osm_watch: way id="311371554" version="4"
 Clara-Immerwahr-Str.: Bauzäune	2::inwork 19202,17471 19546,17351 19798,17263 19845,17235 19914,17203
 # 
@@ -2979,10 +2982,10 @@ Niederlagstr.: Bauarbeiten, keine Zufahrt von Unter den Linden möglich	2::inwork
 #: source_id: 2147340122
 #: source_id: LMS-BR_r_LMS-BR_68908
 #: last_checked: 2016-05-21
-#: next_check: 2016-06-14
+#: next_check: 2016-06-11
 #: priority: #A
 #: XXX Gesamtmaßnahme bis 2018
-#: XXX Vollsperrung laut fritz bis Mitte Juni
+#: XXX Vollsperrung laut fritz bis 11.06.2016
 #: valid: -20180101
 #Sterndamm: Eisenbahnunterführung in Richtung Groß-Berliner Damm/Südostallee gesperrt	1::inwork 17886,5587 17736,5441
 Sterndamm: Eisenbahnunterführung voll gesperrt	2::inwork 17886,5587 17736,5441
@@ -3049,13 +3052,7 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 #: check_frequency: 100d
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9898,12161 9882,12259
 # 
-#: by: Kai Wagner
-#: confirmed_by: srt
-#: XXX hier entsteht wohl eine neue Filiale von Möbel Kraft
-#: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.474190.php
-#: last_checked: 2016-02-10
-#: check_frequency: 360d
-Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 17221,14268 17274,14280
+# REMOVED --- #: by: Kai Wagner --- #: confirmed_by: srt --- #: XXX hier entsteht wohl eine neue Filiale von Möbel Kraft --- #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.474190.php --- #: last_checked: 2016-02-10 --- #: check_frequency: 360d --- Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 17221,14268 17274,14280
 # 
 #: last_checked: 2016-05-03
 #: check_frequency: 120d

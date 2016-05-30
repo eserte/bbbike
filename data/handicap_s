@@ -339,7 +339,7 @@ Spreekanalufer: Umfahrung an der Straﬂe Fischerinsel, Fuﬂg‰nger	q3::inwork 10672
 Verl. P¸cklerstr.: Fuﬂg‰nger, Hundeauslaufgebiet	q1 1553,6741 1348,6701 1152,6659 967,6620 905,6631 880,6645 832,6607 778,6603 698,6592 640,6576 546,6583 369,6594 340,6598 218,6571
 Weimarer Str.: Fuﬂg‰nger	q1 4101,11347 4101,11233
 Norwegerstr. - Behmstr.: Rampe	q2 10022,16237 10026,16165 10055,16104 10065,16110 10045,16157
-Marzahner Promenade - M¸hlenbecker Weg: Fuﬂg‰nger	q1 20222,15519 20181,15658 20150,15678
+Marzahner Promenade - M¸hlenbecker Weg: Fuﬂg‰nger	q1 20222,15519 20202,15587 20202,15630 20181,15658 20150,15678
 Rosemeyerweg: Fuﬂg‰nger	q1 -3758,2678 -3852,2730 -3956,2787 -4001,2858
 Moorlake - Krughorn: Fuﬂg‰nger, aber breite Straﬂe	q0 -9606,1389 -9734,1394 -9746,1408 -9770,1482 -9818,1530 -9900,1573 -9975,1564 -10044,1567 -10078,1551
 Krughorn - Volkspark Klein-Glienicke: Fuﬂg‰nger, besonders an schˆnen Tagen	q1 -10078,1551 -10163,1288 -10190,1185 -10198,1173 -10273,1088 -10430,848 -10512,683 -10573,564 -10593,476
@@ -1110,7 +1110,7 @@ Alt-Tegel: Fuﬂg‰nger	q3 1462,20133 1457,20159
 (Am Rosensteg - An der Heide): eng	q3 3065,20646 3101,20649 3109,20650
 (Rosentreterpromenade - Ziekowstr.): schmal	q2 4156,21175 4060,21147 3649,21102 3456,21071 2911,20953 2571,20886
 (Oskar-Ziethen-Krankenhaus): Krankenhausgel‰nde, Fuﬂg‰nger	q2 16541,12071 16556,12180
-(U-Bahnunterf¸hrung Elsterwerdaer Platz): Fuﬂg‰nger, ggfs. schieben	q3 21137,11294 21095,11315
+(U-Bahnunterf¸hrung Elsterwerdaer Platz): Fuﬂg‰nger, ggfs. schieben	q4 21137,11294 21095,11315
 Frankfurter Allee/Harnackstr.: hoher abgeschr‰gter Bordstein	q2 15941,11855 15989,11834
 Alter Bernauer Heerweg: eng, Bordstein zur Wittenauer Str.	q3 6641,22756 6770,22801
 Kolonie Dreieck - Klemkepark: Hunde, Stufe zur Klemkestr.	q3 8260,18765 8188,18819
@@ -1259,7 +1259,7 @@ Landschaftspark Herzberge: Bordstein, Schwingtor	q2 17671,13132 17684,13133 1769
 (Allee der Kosmonauten - Langhoffstr.): einige Fuﬂg‰nger	q1 19856,13794 19847,14019 19843,14064
 (Langhansstr. - Allee der Kosmonauten): einige Fuﬂg‰nger	q1 19818,14064 19847,14019
 Ahrensfelder Berge: Fuﬂg‰nger	q1 22672,16341 22666,16412 22670,16562 22661,16639 22559,16855 22524,16889 22486,16889 22396,16846 22375,16836 22352,16846 22271,16934 22265,16978 22290,17028 22309,17035 22367,17000 22382,16961
-Ahrensfelder Berge: Fuﬂg‰nger	q1 22666,16412 22596,16435 22512,16542 22378,16657 22299,16730 22232,16793 22158,16855 22050,16781
+Ahrensfelder Berge: Fuﬂg‰nger	q1 22666,16412 22590,16432 22582,16455 22512,16542 22378,16657 22299,16730 22238,16799 22162,16861 22050,16781
 Ahrensfelder Berge: Fuﬂg‰nger	q1 22512,16542 22432,16467
 (Glambecker Ring - Parsteiner Ring): ¸ber Gehweg fahren	q2 22293,16577 22311,16582 22311,16562
 (Blumberger Damm - Karl-Holtz-Str.): Fuﬂg‰nger, parkende Autos an der Karl-Holtz-Str.	q3 21574,16547 21460,16572
@@ -1547,6 +1547,7 @@ Falkenberger Str.: Bordstein	q3 15819,16857 15892,16834
 (Mauerstr. - Sternbergpromenade): Fuﬂg‰nger	q1 -3275,14114 -3187,14116
 (Neuhausweg - Ramin-Park): einige Fuﬂg‰nger, Bordstein	q2 -3964,14507 -3950,14519
 Fˆlderichplatz: Fuﬂg‰ngerzone	q3 -3942,12559 -3941,12376
+(Marzahner Promenade - Landsberger Allee [Wohngebiet]): Fuﬂg‰nger	q1 20759,15740 20789,15736
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
