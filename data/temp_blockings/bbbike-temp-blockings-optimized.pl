@@ -2418,7 +2418,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'source_id' => 'http://www.erkner.de/271.html?date=20160415',
          'text' => 'Erkner: Heimatfest, 3.6.2016 bis 5.6.2016',
          'type' => 'gesperrt',
-         'until' => 1465163999
+         'until' => 1465178400
        },
        undef,
        undef,
@@ -3749,16 +3749,7 @@ userdel	q4::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129 -6507,15007
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	q4::inwork 19031,5316 18999,5237 18942,5236 18820,5275 18659,5330
-',
-         'from' => 1458428400,
-         'id' => 2771,
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.450655.php',
-         'text' => 'Köllnischen Str.: zwischen Rudower Str. und Schnellerstr. Bauarbeiten, Einbahnstraßenregelung, vom 21.03.2016 bis 30.05.2016 ',
-         'type' => 'handicap',
-         'until' => 1464645600
-       },
+       undef,
        {
          'data' => '#: last_checked: 2016-05-13 vvv
 #: priority: #A
@@ -3808,16 +3799,7 @@ userdel	2::inwork -3503,13773 -3385,13937 -3345,13994
          'type' => 'gesperrt',
          'until' => 1475272799
        },
-       {
-         'data' => 'userdel	q4::inwork; 22453,1294 22493,1325 22560,1377 22655,1450
-',
-         'from' => 1459980000,
-         'id' => 2778,
-         'source_id' => '2147339935',
-         'text' => 'Wassersportallee: Richtung Dahme zwischen Walchenseestr. und Regattastr. Baustelle, Fahrtrichtung gesperrt, vom 08.04.2016 bis 30.05.2016',
-         'type' => 'handicap',
-         'until' => 1464645599
-       },
+       undef,
        {
          'data' => '#: note: am So 2016-04-17 gegen 15 Uhr offen
 userdel	2::night 16196,18364 16315,18208

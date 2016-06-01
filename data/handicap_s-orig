@@ -34,14 +34,14 @@ Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,112
 # REMOVED --- #: last_checked: 2016-03-07 --- #: check_frequency: 7d --- Revaler Str.: Bauarbeiten an der Kreuzung Warschauer Str.	q3::inwork 13588,11490 13711,11458
 # 
 #: XXX laut Fritz bis Ende März 2016 (sieht aber schlecht aus für diesen Termin)
-#: last_checked: 2016-05-30 vvv
+#: last_checked: 2016-06-01 vvv
 #: check_frequency: 7d vvv
 Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2016-05-25
+#: last_checked: 2016-05-31
 Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
 # 
 # REMOVED (hier nicht) --- #: XXX laut fritz nun vollständig gesperrt, bis 21.06.2016
@@ -102,21 +102,19 @@ Melchiorstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 11542,11342 11726,11265 119
 # REMOVED (nicht mehr gesperrt für Radfahrer) --- #: XXX nochmal genauer anschauen... --- #: last_checked: 2014-11-10 --- Gipsstr.: Bauarbeiten zwischen Rosenthaler Str. und Joachimstr., Einbahnstraße	q2::inwork; 10350,13376 10199,13446
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2014-08-22 --- #: check_frequency: 14d --- Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11487,11390 11542,11342 11415,11392 11487,11390
 # 
-#: last_checked: 2016-05-23
+#: last_checked: 2016-06-01
 #: check_frequency: 60d
 zur Keibelstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 10976,13229 11045,13183
 # 
-#: last_checked: 2016-03-31
-#: check_frequency: 60d
-Alex-Wedding-Str.: temporäre Einbahnstraßenregelung	q4::inwork; 11085,13239 11146,13328
+# REMOVED --- #: last_checked: 2016-03-31 --- #: check_frequency: 60d --- Alex-Wedding-Str.: temporäre Einbahnstraßenregelung	q4::inwork; 11085,13239 11146,13328
 # 
 #: XXX_prog BS auf beiden Seiten Bordsteine
-#: last_checked: 2016-05-23
+#: last_checked: 2016-06-01
 #: check_frequency: 60d
 Wadzeckstr.: Bauarbeiten, auf Gehweg ausweichen, Bordsteine	q4::inwork 11146,13328 11201,13289
 # 
 #: XXX_prog BS auf beiden Seiten Bordstein
-#: last_checked: 2016-05-23
+#: last_checked: 2016-06-01
 #: check_frequency: 30d
 Wadzeckstr.: Bauarbeiten, auf Gehweg ausweichen, Bordsteine	q3::inwork 11201,13289 11291,13218
 # 
@@ -214,10 +212,10 @@ Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html
 #: last_checked: 2016-05-26 vvv
-#: next_check: 2016-06-01 vvv
+#: check_frequency: 60d vvv
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9882,12259 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
 # 

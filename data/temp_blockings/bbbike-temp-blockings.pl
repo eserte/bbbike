@@ -17920,7 +17920,7 @@ userdel	q4::inwork 18586,9172 18511,9185 18430,9199 18319,9218
 EOF
      },
      { from  => $isodate2epoch->("2016-06-02 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-06-05 23:59:59"),
+       until => $isodate2epoch->("2016-06-06 04:00:00"), # bis in die Nacht hinein
        periodic => 1,
        recurrences => [['yearly', days => 15, months => 5]], # kann auch erst im September stattfinden
        source_id => 'http://www.erkner.de/271.html?date=20160415',
