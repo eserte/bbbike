@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2014,2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -39,7 +39,7 @@ sub AUTOLOAD {
 }
 
 $DEBUG = 0;
-$VERSION = '1.67';
+$VERSION = '1.68';
 
 my $use_truecolor = 0; # XXX with 1 segfaults (still with 2.0.33, seen on amd64-freebsd).
 
@@ -162,7 +162,8 @@ sub init {
 	      '/usr/X11R6/lib/X11/fonts/bitstream-vera/Vera.ttf',
 	      '/usr/local/lib/X11/fonts/TTF/luxisr.ttf',
 	      '/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf',
-	      '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed.ttf', # found on Debian
+	      '/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf', # Debian/jessie
+	      '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed.ttf', # Debian/wheezy and older
 	      @windows_fonts,
 	     ]);
 
@@ -174,7 +175,8 @@ sub init {
 	      '/usr/X11R6/lib/X11/fonts/bitstream-vera/Vera.ttf',
 	      '/usr/local/lib/X11/fonts/TTF/luxisr.ttf',
 	      '/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf',
-	      '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed.ttf', # found on Debian
+	      '/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf', # Debian/jessie
+	      '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed.ttf', # Debian/wheezy and older
 	      @windows_fonts,
 	     ]);
 
@@ -184,7 +186,8 @@ sub init {
 	      '/usr/X11R6/lib/X11/fonts/TTF/luxisb.ttf',
 	      '/usr/local/lib/X11/fonts/bitstream-vera/VeraBd.ttf',
 	      '/usr/X11R6/lib/X11/fonts/bitstream-vera/VeraBd.ttf',
-	      '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed-Bold.ttf', # found on Debian
+	      '/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf', # Debian/jessie
+	      '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed.ttf', # Debian/wheezy and older
 	      @windows_bold_fonts,
 	      (defined $TTF_CITY ? $TTF_CITY : ()),
 	     ]);
