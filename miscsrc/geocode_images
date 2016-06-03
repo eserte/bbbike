@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 #
-# Copyright (C) 2005-2008,2010,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005-2008,2010,2012,2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -9,7 +9,7 @@
 #
 
 use strict;
-our $VERSION = 1.32;
+our $VERSION = 1.33;
 
 use Cwd qw(realpath);
 use File::Spec;
@@ -51,6 +51,7 @@ my $relative_paths;
 my $out_file;
 my $max_delta = 180;
 my $for_person;
+my $gps_track_sync_grace_time = 14; # in days; means that GPS track syncs may happen that number of days after making the photos
 
 my $lax_iso_date_qr = qr{^(\d{4})\D*(\d{2})\D*(\d{2})T(\d{2})\D(\d{2})\D(\d{2})};
 my $clock_qr        = qr{^\d{1,2}:\d{2}(:\d{2})?};
@@ -434,15 +435,24 @@ if ($do_update) {
     }
     require Strassen::Core;
     my $s = Strassen->new_stream($out_file);
+    my $image_qr = qr{^Image: "([^"]+)"};
     $s->read_stream
 	(sub {
 	     my($r) = @_;
-	     if ($r->[Strassen::NAME()] =~ m{^Image: "([^"]+)"}) {
+	     if (UNIVERSAL::isa($r, 'HASH')) {
+		 (my $line = $r->{line}) =~ s{^\#\s+}{};
+		 $line =~ s{\n$}{};
+		 if ($line =~ $image_qr) {
+		     $seen_image{$1} = "# $line";
+		 }
+	     } elsif ($r->[Strassen::NAME()] =~ $image_qr) {
 		 $seen_image{$1} = Strassen::arr2line2($r);
 	     } else {
 		 warn "Cannot parse line '$r->[Strassen::NAME()]', skipping...\n";
 	     }
-	 });
+	 },
+	 PreserveComments => 1,
+	);
 }
 
 my $ofh;
@@ -522,6 +532,13 @@ sub handle_file {
 		    print qq{|ANCHOR:$anchor};
 		}
 		print qq{ $x,$y\n};
+	    }
+	} else {
+	    if (-M $file < $gps_track_sync_grace_time) {
+		# make sure this text does not match /Image: "..."/
+		print qq{# $file is too fresh, maybe it can be geocoded later\n};
+	    } else {
+		print qq{# Image: "$file_in_bbd" (not geocodable)\n};
 	    }
 	}
     }
@@ -957,7 +974,6 @@ version
  * GPX support
  * document options!
    * -person: use only GPS tracks with no srt:person tag or a matching srt:person tag
- * -update is not efficient if many images are not geocodable
 
 =head1 SEE ALSO
 
