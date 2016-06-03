@@ -14628,11 +14628,11 @@ EOF
 userdel	2::inwork 7160,11225 7103,11247 6851,11346
 EOF
      },
-     { from  => $isodate2epoch->("2015-06-30 00:00:00"), # mindestens 1 Tag Vorlauf, besser zwei, oder sogar drei
-       until => $isodate2epoch->("2015-07-08 22:00:00"), # einen Tag für den Abbau --- es wurden aber tatsächlich mindestens zwei Tage benötigt; am 10. Juli 2013 war die Fahrbahn noch gesperrt
-       prewarn_days => 2,
+     { from  => $isodate2epoch->("2016-07-18 00:00:00"), # mindestens 1 Tag Vorlauf, besser zwei, oder sogar drei
+       until => $isodate2epoch->("2016-07-27 22:00:00"), # einen Tag für den Abbau --- es wurden aber tatsächlich mindestens zwei Tage benötigt; am 10. Juli 2013 war die Fahrbahn noch gesperrt
+       prewarn_days => 3,
        postwarn_days => 2,
-       text  => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (2.7.2015 - 6.7.2015; Sperrungen fangen schon früher an und dauern länger)',
+       text  => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (21.7.2016 - 25.7.2016; Sperrungen fangen schon früher an und dauern länger)',
        periodic => 1,
        recurrences => [['yearly', days => 2, months => 7]],
        type  => 'gesperrt',
@@ -21471,13 +21471,13 @@ userdel	2::temp 14011,10812 13896,10851
 userdel	2::temp 13886,10939 13856,10864
 EOF
      },
-     { from  => $isodate2epoch->("2015-07-09 13:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-07-12 23:59:59"), 
-       text  => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, vom 10.07.2015 bis 12.07.2015',
+     { from  => $isodate2epoch->("2016-06-03 13:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-06-04 23:59:59"), 
+       text  => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am 04.06.2016',
        periodic => 1,
-       recurrences => [['yearly', days => 1, months => 7]], # kann Anfang Juli oder Ende August passieren
+       recurrences => [['yearly', days => 3, months => 6]], # kann Anfang Juni oder Anfang Juli oder Ende August passieren
        type  => 'gesperrt',
-       source_id => 'http://www.xhain.info/termine/fiesta-kreutziga.htm?y=2015',
+       source_id => 'http://www.xhain.info/termine/fiesta-kreutziga.htm',
        data  => <<EOF,
 userdel	2::temp 14161,11930 14285,12190
 EOF
@@ -21536,9 +21536,11 @@ EOF
 userdel	2::temp 3976,11869 3807,11859
 EOF
      },
-     { from  => $isodate2epoch->("2015-06-11 04:00:00"), # 1370556000, # 2013-06-07 00:00
-       until => $isodate2epoch->("2015-06-15 04:00:00"), # 1370815199, # 2013-06-09 23:59
-       text  => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, vom 11.06.2015 04 Uhr bis 15.06.2015 04 Uhr',
+     { from  => $isodate2epoch->("2016-06-02 04:00:00"), # ein Tag Vorlauf
+       until => $isodate2epoch->("2016-06-06 04:00:00"), #
+       periodic => 1,
+       recurrences => [['yearly', days => 2, months => 6]],
+       text  => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, vom 03.06.2016 bis 06.06.2016 früh',
        type  => 'handicap',
        source_id => 'IM_025248',
        data  => <<EOF,
@@ -24319,12 +24321,12 @@ EOF
 userdel	2::inwork 15261,10738 15272,10790
 EOF
      },
-     { from  => $isodate2epoch->("2016-01-17 00:00:00"),
-       until => $isodate2epoch->("2016-01-22 23:59:59"),
+     { from  => $isodate2epoch->("2016-06-27 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-06-30 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 1],
-                       ['yearly', days => 1, months => 7]],
-       text  => 'Schöneberger Str. und Luckenwalder Str.: Sperrungen wegen der Fashion Week, 18.01.2016-22.01.2016',
+                       ['yearly', days => 27, months => 6]],
+       text  => 'Schöneberger Str. und Luckenwalder Str.: Sperrungen wegen der Fashion Week, 28.06.2016-30.06.2016',
        type  => 'handicap',
        source_id => '2147339708',
        data  => <<EOF,
