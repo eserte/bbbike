@@ -156,6 +156,7 @@ sub init {
 	}
 	$TTF_STREET ||= $self->search_ttf_font
 	    ([
+	      @windows_fonts,
 	      '/usr/local/lib/X11/fonts/ttf/LucidaSansRegular.ttf',
 	      '/usr/X11R6/lib/X11/fonts/ttf/LucidaSansRegular.ttf',
 	      '/usr/local/lib/X11/fonts/bitstream-vera/Vera.ttf',
@@ -164,11 +165,11 @@ sub init {
 	      '/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf',
 	      '/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf', # Debian/jessie
 	      '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed.ttf', # Debian/wheezy and older
-	      @windows_fonts,
 	     ]);
 
 	$TTF_CITY ||= $self->search_ttf_font
 	    ([
+	      @windows_fonts,
 	      '/usr/local/lib/X11/fonts/Type1/lcdxsr.pfa',
 	      '/usr/X11R6/lib/X11/fonts/Type1/lcdxsr.pfa',
 	      '/usr/local/lib/X11/fonts/bitstream-vera/Vera.ttf',
@@ -177,18 +178,17 @@ sub init {
 	      '/usr/X11R6/lib/X11/fonts/TTF/luxisr.ttf',
 	      '/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf', # Debian/jessie
 	      '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed.ttf', # Debian/wheezy and older
-	      @windows_fonts,
 	     ]);
 
 	$TTF_TITLE ||= $self->search_ttf_font
 	    ([
+	      @windows_bold_fonts,
 	      '/usr/local/lib/X11/fonts/TTF/luxisb.ttf',
 	      '/usr/X11R6/lib/X11/fonts/TTF/luxisb.ttf',
 	      '/usr/local/lib/X11/fonts/bitstream-vera/VeraBd.ttf',
 	      '/usr/X11R6/lib/X11/fonts/bitstream-vera/VeraBd.ttf',
 	      '/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf', # Debian/jessie
 	      '/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansCondensed.ttf', # Debian/wheezy and older
-	      @windows_bold_fonts,
 	      (defined $TTF_CITY ? $TTF_CITY : ()),
 	     ]);
 
