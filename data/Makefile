@@ -666,43 +666,47 @@ ${PERSISTENTTMPDIR}/radwege-orig-valid:	radwege-orig .check_daily
 qualitaet_s:	qualitaet_s-orig
 	-@$(WRITEABLE) $@
 	$(CONVERT_ORIG) -keep-directive valid -strip-tendencies qualitaet_s-orig |\
-	    ${GREPSTRASSEN_VALID} > qualitaet_s~
-	mv qualitaet_s~ qualitaet_s
+	    ${GREPSTRASSEN_VALID} > $@~
+	[ -s $@~ ]
+	mv $@~ $@
 	-@$(READONLY) $@
 
 qualitaet_l:	qualitaet_l-orig
 	-@$(WRITEABLE) $@
 	$(CONVERT_ORIG) -keep-directive valid -strip-tendencies qualitaet_l-orig  |\
-	    ${GREPSTRASSEN_VALID} > qualitaet_l~
-	mv qualitaet_l~ qualitaet_l
+	    ${GREPSTRASSEN_VALID} > $@~
+	[ -s $@~ ]
+	mv $@~ $@
 	-@$(READONLY) $@
 
 handicap_s:	handicap_s-orig berlin ${PERSISTENTTMPDIR}/gesperrt-with-handicaps routing_helper-orig
 	-@$(WRITEABLE) $@
 	$(CONVERT_ORIG) -keep-directive valid -strip-tendencies handicap_s-orig |\
-	    ${GREPSTRASSEN_VALID} > handicap_s~
+	    ${GREPSTRASSEN_VALID} > $@~
+	[ -s $@~ ]
 	$(GREPSTRASSEN) -catrx ':q\d' < ${PERSISTENTTMPDIR}/gesperrt-with-handicaps |\
 	    $(GREPSTRASSEN) -inner berlin |\
 	    $(REPLACESTRASSEN) -noglobaldirectives \
 		-catexpr 's/.*:(q\d)/$$1::igndisp;/' \
 		-nameexpr 's/(.*)/$$1: gegen die Einbahnstraßenrichtung, ggfs. schieben/' \
-		>> handicap_s~
+		>> $@~
 	${GREPSTRASSEN} -ignoreglobaldirectives -ignorelocaldirectives -catrx '^q\d+;$$' routing_helper-orig |\
-	    ${REPLACESTRASSEN} -catexpr 's/;/::igndisp;/' >> handicap_s~
-	mv handicap_s~ handicap_s
+	    ${REPLACESTRASSEN} -catexpr 's/;/::igndisp;/' >> $@~
+	mv $@~ $@
 	-@$(READONLY) $@
 
 handicap_l:	handicap_l-orig berlin ${PERSISTENTTMPDIR}/gesperrt-with-handicaps
 	-@$(WRITEABLE) $@
 	$(CONVERT_ORIG) -keep-directive valid -strip-tendencies handicap_l-orig |\
-	    ${GREPSTRASSEN_VALID} > handicap_l~
+	    ${GREPSTRASSEN_VALID} > $@~
+	[ -s $@~ ]
 	$(GREPSTRASSEN) -catrx ':q\d' < ${PERSISTENTTMPDIR}/gesperrt-with-handicaps |\
 	    $(GREPSTRASSEN) -outer berlin |\
 	    $(REPLACESTRASSEN) -noglobaldirectives \
 		-catexpr 's/.*:(q\d)/$$1::igndisp;/' \
 		-nameexpr 's/(.*)/$$1: gegen die Einbahnstraßenrichtung, ggfs. schieben/' \
-		>> handicap_l~
-	mv handicap_l~ handicap_l
+		>> $@~
+	mv $@~ $@
 	-@$(READONLY) $@
 
 vorfahrt:	vorfahrt-orig .check_daily
