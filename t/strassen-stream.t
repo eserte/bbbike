@@ -27,7 +27,31 @@ BEGIN {
     }
 }
 
-plan tests => 28 * 2;
+plan tests => 28 * 2 + 3;
+
+my $complex_data = <<'EOF';
+#: title: Testing global directives
+#: complex.key: Testing complex global directives
+#:
+#: section projektierte Radstreifen der Verkehrsverwaltung vvv
+#: by http://www.berlinonline.de/berliner-zeitung/berlin/327989.html?2004-03-26 vvv
+Heinrich-Heine	? 10885,10928 10939,11045 11034,11249 11095,11389 11242,11720
+Leipziger Straße zwischen Leipziger Platz und Wilhelmstraße (entweder beidseitig oder nur auf der Südseite)	? 8733,11524 9046,11558
+Pacelliallee	? 2585,5696 2609,6348 2659,6499 2711,6698 2733,7039
+#: by ^^^
+#: by Tagesspiegel 2004-07-25 (obige waren auch dabei) vvv
+# Just a comment.
+
+Reichsstr.	H 1391,11434 1239,11567 1053,11735 836,11935 653,12109 504,12293 448,12361 269,12576 147,12640 50,12695 -112,12866 -120,12915
+#: by ^^^
+#: section ^^^
+#
+#: section Straßen in Planung vvv
+Magnus-Hirschfeld-Steg: laut Tsp geplant	? 7360,12430 7477,12374
+Uferweg an der Kongreßhalle: laut Tsp im Frühjahr 2005 fertig	?::inwork 7684,12543 7753,12578
+#: section ^^^
+EOF
+my $complex_data_line_number = 19;
 
 for my $mode ('file', 'data_string') {
     {
@@ -56,26 +80,7 @@ EOF
     }
 
     {
-	my $data = <<'EOF';
-#: title: Testing global directives
-#: complex.key: Testing complex global directives
-#:
-#: section projektierte Radstreifen der Verkehrsverwaltung vvv
-#: by http://www.berlinonline.de/berliner-zeitung/berlin/327989.html?2004-03-26 vvv
-Heinrich-Heine	? 10885,10928 10939,11045 11034,11249 11095,11389 11242,11720
-Leipziger Straße zwischen Leipziger Platz und Wilhelmstraße (entweder beidseitig oder nur auf der Südseite)	? 8733,11524 9046,11558
-Pacelliallee	? 2585,5696 2609,6348 2659,6499 2711,6698 2733,7039
-#: by ^^^
-#: by Tagesspiegel 2004-07-25 (obige waren auch dabei) vvv
-Reichsstr.	H 1391,11434 1239,11567 1053,11735 836,11935 653,12109 504,12293 448,12361 269,12576 147,12640 50,12695 -112,12866 -120,12915
-#: by ^^^
-#: section ^^^
-#
-#: section Straßen in Planung vvv
-Magnus-Hirschfeld-Steg: laut Tsp geplant	? 7360,12430 7477,12374
-Uferweg an der Kongreßhalle: laut Tsp im Frühjahr 2005 fertig	?::inwork 7684,12543 7753,12578
-#: section ^^^
-EOF
+	my $data = $complex_data;
 	my $s = $mode eq 'file' ? Strassen->new_stream(makebbd($data)) : Strassen->new_data_string_stream($data);
 	isa_ok($s, "Strassen");
 	my @data;
@@ -99,8 +104,38 @@ EOF
 	is($data[-1][1]{section}[0], "Straßen in Planung", "Block directive")
 	    or diag(Dumper($data[0]));
 	ok(!exists $data[-1][1]{by}, "This directive is missing here");
-	is($data[-1][2], 17, "Line number");
+	is($data[-1][2], $complex_data_line_number, "Line number of last line");
     }
+}
+
+{
+    my $s = Strassen->new_data_string_stream($complex_data);
+    isa_ok($s, 'Strassen');
+    my @data;
+    my @comment_records;
+    $s->read_stream(sub {
+			if (UNIVERSAL::isa($_[0], 'HASH')) {
+			    push @comment_records, $_[0];
+			} else {
+			    push @data, [@_];
+			}
+		    }, PreserveComments => 1);
+    is($data[-1][2], $complex_data_line_number, "Line number of last line");
+    is_deeply(\@comment_records, [
+				  {
+				   line => "# Just a comment.\n",
+				   type => 'comment',
+				  },
+				  {
+				   line => "\n",
+				   type => 'emptyline',
+				  },
+				  {
+				   line => "#\n",
+				   type => 'comment',
+				  },
+				 ])
+	or diag explain(\@comment_records);
 }
 
 sub makebbd {

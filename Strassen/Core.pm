@@ -396,7 +396,15 @@ sub read_from_fh {
 		$self->{LineInfo}[$data_pos] = $.;
 	    }
 	} else {
-	    $callback->(parse($_), $this_directives, $.);
+	    my $res;
+	    if ($preserve_comments && m{^\#}) {
+		$res = { line => $_, type => 'comment' };
+	    } elsif ($preserve_comments && m{^\s*$}) {
+		$res = { line => $_, type => 'emptyline' };
+	    } else {
+		$res = parse($_);
+	    }
+	    $callback->($res, $this_directives, $.);
 	}
 
     }
