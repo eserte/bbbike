@@ -2621,7 +2621,25 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 5370,6486 5424,6584 5533,6753 5644,6936
+',
+         'from' => 1467928800,
+         'id' => 2126,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              4,
+                              'months',
+                              7
+                            ]
+                          ],
+         'text' => 'Rheinstraße (Friedenau): Veranstaltung (Jazzfest auf der Rheinstraße), Straße vollständig zwischen Walther-Schreiber-Platz und Kaisereiche gesperrt (09.07.2016 bis 10.07.2016)',
+         'type' => 'gesperrt',
+         'until' => 1468187999
+       },
        undef,
        undef,
        undef,

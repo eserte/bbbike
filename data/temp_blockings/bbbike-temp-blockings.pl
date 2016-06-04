@@ -18445,11 +18445,11 @@ EOF
 	2::inwork 7733,8023 7783,8035 7824,8056 7838,8085 7859,8252 7899,8332 7956,8408 8078,8772
 EOF
      },
-     { from  => $isodate2epoch->("2015-07-03 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-07-05 23:59:59"),
+     { from  => $isodate2epoch->("2016-07-08 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-07-10 23:59:59"),
        periodic => 1, # zweiter Termin im Jahr
        recurrences => [['yearly', days => 4, months => 7]], # kann auch erst im September stattfinden
-       text  => 'Rheinstraße (Friedenau): Veranstaltung (Jazzfest auf der Rheinstraße), Straße vollständig zwischen Walther-Schreiber-Platz und Kaisereiche gesperrt (04.07.2015 bis 05.07.2015)',
+       text  => 'Rheinstraße (Friedenau): Veranstaltung (Jazzfest auf der Rheinstraße), Straße vollständig zwischen Walther-Schreiber-Platz und Kaisereiche gesperrt (09.07.2016 bis 10.07.2016)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 5370,6486 5424,6584 5533,6753 5644,6936

@@ -1,7 +1,3 @@
-#: #: -*- coding: iso-8859-1 -*-
-#: title: Einbahnstraßen und gesperrte Straßen
-#: note: XXX_* categorization done 2008-01-26
-#:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9865,10227 9825,10206 9687,10180 9599,10175 9416,10196
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9145,10290 8804,10303 8724,10327 8661,10377 8634,10426 8525,10626 8430,10710
 Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8336,10829 8205,10979 8104,11037 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034
@@ -647,7 +643,7 @@ Krumpuhler Weg: nur Mo-Do von 8-16 Uhr und Fr von 8-14 Uhr geöffnet	2 1377,18602
 Krumpuhler Weg	1 1405,18749 1390,18651
 Steffenshagener Str.	1s 23159,11097 22983,11098
 Pestalozzistr.	1s 24652,11794 24706,11838 24769,11819
-Finsterberger Str.	1s 23084,12573 23129,12496 23233,12406
+Finsterberger Str.	1s 23131,12509 23233,12406
 Bauerwitzer Weg	1 22917,12239 22814,12353 22861,12390 22994,12496
 Heinrich-Grüber-Platz	1 22877,11940 22858,11937 22843,11999 22856,12003 22870,12000 22883,11956 22877,11940
 Boraweg	1s 6763,2879 6710,2909 6658,2907
@@ -1766,7 +1762,7 @@ Wuhletalstr. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20912,17678 2
 Märkische Allee -> Parkweg an der Neuen Wuhle: Linksabbiegen verboten	3::igndisp 20912,17872 20889,17838 20983,17846
 Parkweg an der Neuen Wuhle -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20983,17846 20889,17838 20843,17745
 Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3::igndisp 20889,17838 20912,17872 20855,17807
-Mittelstreifen	3nocross::ignrte 19896,11688 19918,11891 19940,12076 19944,12115 19947,12140 19953,12177 19960,12222 19967,12270 19982,12405 19994,12484
+Mittelstreifen	3nocross::ignrte 19896,11688 19918,11891 19928,11978 19940,12076 19944,12115 19947,12140 19953,12177 19960,12222 19967,12270 19982,12405 19994,12484
 Alt-Biesdorf -> Alt-Friedrichsfelde: Mittelstreifen	3::igndisp 19979,11774 19918,11891 19890,11830
 Haydnstr. -> Märkische Allee: Mittelstreifen	3::igndisp 20006,12128 19947,12140 19944,12115
 Märkische Allee -> Haydnstr.: Mittelstreifen	3::igndisp 19953,12177 19947,12140 20006,12128
@@ -1826,10 +1822,10 @@ Straßenbahntrasse	3nocross::ignrte 14552,16171 14522,16260 14499,16341
 Gartenstr. -> Indira-Gandhi-Str.: Straßenbahntrasse	3::igndisp 14628,16249 14522,16260 14552,16171
 Indira-Gandhi-Str. -> Gartenstr.: Straßenbahntrasse	3::igndisp 14499,16341 14522,16260 14628,16249
 unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3nocross::ignrte 16737,11866 16803,11859 16962,11833 17037,11820 17121,11806 17151,11801
-Frankfurter Allee -> Gudrunstr.: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3::igndisp 16737,11866 16803,11859 16833,11897
-Gudrunstr. -> Frankfurter Allee: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3::igndisp 16833,11897 16803,11859 16962,11833
-Frankfurter Allee -> Monimbópl.: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3::igndisp 16803,11859 16962,11833 16988,11865
-Monimbópl. -> Frankfurter Allee: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3::igndisp 16988,11865 16962,11833 17037,11820
+Frankfurter Allee -> Gudrunstr.: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3::igndisp 16737,11866 16803,11859 16818,11878
+Gudrunstr. -> Frankfurter Allee: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3::igndisp 16818,11878 16803,11859 16962,11833
+Frankfurter Allee -> Monimbópl.: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3::igndisp 16803,11859 16962,11833 16978,11852
+Monimbópl. -> Frankfurter Allee: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3::igndisp 16978,11852 16962,11833 17037,11820
 Frankfurter Allee -> Weitlingstr.: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3::igndisp 17121,11806 17037,11820 17026,11810
 Weitlingstr. -> Frankfurter Allee: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3::igndisp 17026,11810 17037,11820 16962,11833
 Mittelinsel mit Geländer	3nocross::ignrte 7709,8777 7642,8815 7563,8871
@@ -2167,6 +2163,7 @@ abgeschlossenes Tor	3 4898,22459 5083,22149 5086,22145
 abgeschlossenes Tor	3 5086,22145 5083,22149 4898,22459
 abgeschlossenes Tor	3 15313,15393 15835,15092 15867,15073
 abgeschlossenes Tor	3 15867,15073 15835,15092 15313,15393
+tragen (20 Stufen)	0:30:-90 22624,13901
 tragen (8 weite Stufen) bzw. Naturrampe benutzen	0:15:-175 -6004,15050
 tragen	0:30:-162 -3138,14171
 tragen (5 Stufen)	0:10:-132 14832,8199
@@ -2389,6 +2386,8 @@ tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
 tragen (6 Stufen)	0:15:-90 4608,63927
 Treppe	0:40:-131 1888,42795
+Drängelgitter	BNP:3:-141:trailer=10 26246,12648
+Drängelgitter	BNP:3:-142:trailer=10 26183,12676
 Tor, kann geschlossen sein	BNP:2:-241:trailer=5 16315,18208
 Tor, kann geschlossen sein	BNP:2:-217:trailer=5 16196,18364
 Schranke	BNP:3:-76:trailer=10 14138,21233
@@ -2616,7 +2615,6 @@ Drängelgitter	BNP:1:-153:trailer=3 17313,12609
 Tor	BNP:5:-87 2959,2608
 Drängelgitter (lichte Breite ca. 90cm)	BNP:4:-121:trailer=15 6455,2924
 Hanstedter Weg: Geländer	BNP:3:-108:trailer=10 6908,5053
-Lichte Breite ca. 110cm	BNP:0:-74 25218,12653
 Drängelgitter am Restaurant Igel	BNP:3:-180 -1659,18104
 Drängelgitter am Restaurant Igel	BNP:3:-178 -1659,18076
 Drängelgitter (lichte Breite ca. 110cm)	BNP:3:-80:trailer=10 26116,12292
@@ -2831,7 +2829,6 @@ Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 Am Theodorpark: noch gesperrt	2::inwork 24905,10955 25053,10959 25143,10961
 Theodorstr.: Bauarbeiten, gesperrt	2::inwork 24897,11083 24905,10955 24913,10884 24919,10818 24922,10785 24923,10774
 (Weg im Theodorpark)	2::inwork 24922,10785 24954,10770 25021,10768 25062,10762 25148,10769
-Pfarrhufenanger: noch in Bau, gesperrt	2::inwork 25599,13069 25441,12838 25266,12622
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076 9559,13087
 Schwarzer Weg: wegen Straßenbau gesperrt	2::inwork 17295,7323 17295,7330 17296,7396
 Kleiner Tiergarten: wegen Bauarbeiten gesperrt	2::inwork 6561,13151 6556,13240 6526,13327
@@ -3458,3 +3455,4 @@ Wilhelmsruher Damm, linker Geh/Radweg bis zur Fußgängerampel	1::igndisp 5525,210
 Frankfurter Allee, linker Gehweg bis zur Ampel	1::igndisp 15670,12022 15717,12010
 Otto-Braun-Str., linker Gehweg	1::igndisp 11451,13301 11352,13180
 Invalidenstr., linker Gehweg	1::igndisp 8337,13541 8282,13535
+Lichtenberger Brücke, linker Gehweg	1::igndisp 16978,11852 16818,11878

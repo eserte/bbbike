@@ -420,7 +420,9 @@ Kˆllnische Str.: Bauarbeiten, danach vermutlich asphaltiert	?::inwork 18659,5330
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.386693.php
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/rosenthaler-weg_blatt-5.pdf
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2016/pressemitteilung.482469.php (Fertigstellung Mitte 2019)
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6053.html (Elisabeth-Aue)
 #: XXX Bauzeit: Fr¸hjahr 2016 + drei Jahre
+#: XXX nˆrdlich entsteht ein neues Stadtviertel (Elisabeth-Aue)
 #: next_check: 2019-01-01
 Rosenthaler Weg: Neubau der Straﬂe, danach existieren Radspuren	?::projected 10997,22203 10933,22179 10892,22165 10828,22142 10769,22122 10709,22102 10673,22090 10613,22070 10554,22050 10493,22029 10436,22010 10377,21991 10312,21969 10228,21940 10060,21916
 # 
@@ -1320,25 +1322,7 @@ Uferweg - Heidestraﬂe: Fuﬂg‰nger- und Radfahrerbereich	?::projected 8044,13929 7
 #: next_check: 2017-01-01
 Planstraﬂen 1.1 und 1.2	?::projected 9991,15629 9898,15864 9746,15862
 # 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2015 vvv
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file?y=2015 (Grundst¸cksnummerierungen)
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6520
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103651141239/51141239/00083028/28-Anlagen/02/vzb1159_IV_Festsetzg_B_Plan_10_39.pdf
-#: XXX fehlen alle in Berlin.coords.data (PLZ=12621) vvv
-#: XXX alles Privatstraﬂen, "Heinrich Wohnpark" (ohne Bindestrich!) vvv
-#: last_checked: 2015-08-01 vvv
-#: check_frequency: 120d vvv
-#: osm_watch: way id="387215886" version="1"
-Erich-Knauf-Weg: Lage der Straﬂe? Qualit‰t?	? 23754,13165 23844,13120 23922,13085 23960,13068
-#: osm_watch: way id="387215889" version="1"
-Franz-J‰gerst‰tter-Weg: Lage der Straﬂe? Qualit‰t?	? 23844,13120 23865,13239
-#: osm_watch: way id="387215884" version="1"
-Am Kirchendreieck: Lage der Straﬂe? Qualit‰t?	? 23922,13085 23960,13325
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-#: XXX ^^^
-#: by: ^^^
+# REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2015 vvv --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file?y=2015 (Grundst¸cksnummerierungen) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6520 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103651141239/51141239/00083028/28-Anlagen/02/vzb1159_IV_Festsetzg_B_Plan_10_39.pdf --- #: XXX fehlen alle in Berlin.coords.data (PLZ=12621) vvv --- #: XXX alles Privatstraﬂen, "Heinrich Wohnpark" (ohne Bindestrich!) vvv --- #: last_checked: 2015-08-01 vvv --- #: check_frequency: 120d vvv --- #: osm_watch: way id="387215886" version="1" --- Erich-Knauf-Weg: Lage der Straﬂe? Qualit‰t?	? 23742,13155 23833,13099 23905,13064 23962,13053 --- #: osm_watch: way id="387215889" version="1" --- Franz-J‰gerst‰tter-Weg: Lage der Straﬂe? Qualit‰t?	? 23833,13099 23853,13212 23841,13238 --- #: osm_watch: way id="387215884" version="1" --- Am Kirchendreieck: Lage der Straﬂe? Qualit‰t?	? 23905,13064 23948,13307 23942,13321
 #
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.441037.php
 #: next_check: 2016-10-01
@@ -1351,8 +1335,13 @@ Hessenwinkel: Bau einer Gr¸nanlage + Geh/Radweg, wo genau?	?::projected 31689,31
 Wolfener Str.: Gr¸ndurchwegung geplant (oder existiert sie schon?)	?::projected 20467,17151 20216,17285 19907,17429
 #
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.450414.php
-#: next_check: 2016-08-15
-Brunsb¸tteler Damm: Radweg wird asphaltiert	?::projected; -4290,14025 -4759,13992
+#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.484353.php (Fertigstellung Juni 2016?)
+#: next_check: 2016-06-15
+Brunsb¸tteler Damm: Radweg wird asphaltiert	?::inwork; -4290,14025 -4759,13992
+# 
+#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.484353.php (Fertigstellung Juni 2016?)
+#: next_check: 2016-09-15
+Brunsb¸tteler Damm: Radweg wird asphaltiert	?::projected; -3892,13960 -3937,13975 -4190,14036 -4290,14025
 #
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.104719.php
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/fussgaengerueberweg-bismarckstrasse.pdf
@@ -1434,6 +1423,8 @@ Bebauungsplan 7-65: Weg in Planung	?::projected 7960,6059 7697,6059 7630,6016 76
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverl‰ufen
 # - XXX_prog- und XXX_indoor-Eintr‰ge
+# 
+RR8: wird die Fahrradroute auf den oberen Wuhlewanderweg gef¸hrt?	? 22295,13530 22317,13521 22472,13698
 # 
 # by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8452&options=4
 Potsdamer Chaussee/Engelsfelder Chaussee: entsteht hier eine Ampel?	? -5883,10866 -5870,10847 -5851,10822
@@ -2634,16 +2625,23 @@ G¸terbahnhof Wilmersdorf: vermutlich wird die Straﬂe w‰hrend der Bauarbeiten ges
 #: next_check ^^^
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/11re.pdf/file?y=2016
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2016 (Widerspruch)
 #: XXX Berlin.coords.data-Eintrag fehlt
 #: osm_watch: way id="377485132" version="1"
-#: next_check: 2016-05-01 (Wirksamkeit der Benennung)
+#: next_check: 2016-07-04
 Johannes-Guthmann-Weg: neue Straﬂe entsteht, vermutlich hier? Qualit‰t?	?::inwork -6464,5749 -6613,5849 -6669,5847
 # 
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7387
 #: by: http://www.lehrter-strasse-berlin.net/dateien/Humboldthafen/BPlan_II-201_da/B_Plan_Humboldthafen_suedl_Bereich_Verkehrstechnische_Untersuchung_2008.pdf
 #: XXX eventuell entstehen hier weitere Straﬂen/Wege
 #: next_check: 2016-10-01
-Am Humboldthafen: Straﬂe soll nach Hilda Geiringer benannt werden --- wo genau wird die Straﬂe liegen?	?::projected 8243,13469 8245,13396
+(Am Humboldthafen): Straﬂe soll nach Hilda Geiringer benannt werden --- wo genau wird die Straﬂe liegen?	?::projected 8243,13469 8245,13396
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2016
+#: XXX fehlen in Berlin.coords.data
+#: last_checked: 2016-06-04
+#: check_frequency: 120d
+Lili-Gr¸n-Weg und Lin-Jaldati-Weg: wo genau werden die Straﬂen liegen? Qualit‰t?	?::projected 23646,14007 23744,13960 23753,14050
 #: ignore ^^^
 #: section ^^^
 #
@@ -3748,16 +3746,18 @@ Striewitzweg (Teltow): Qualit‰t im nˆrdlichen Abschnitt? Ist die Straﬂe hier ver
 Altdˆbern - Calau: Qualit‰t?	? 55259,-83091 55388,-83077 55768,-82862 54521,-79452 54572,-78865 54600,-77483 53827,-76082
 # 
 #: XXX fehlen alle in Berlin.coords.data, PLZ=12623 vvv
-#: last_checked: 2015-08-02 vvv
+#: last_checked: 2016-06-04 vvv
 #: check_frequency: 180d vvv
 #: osm_watch: way id="338546084" version="5"
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__21_vom_28__Mai_2010.pdf
-# REMOVED (-> strassen-orig) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/15re.pdf/file?y=2013 --- Bisamstr.: Qualit‰t? Wo wird die Straﬂe genau liegen?	?::projected 26463,13011 26427,12967 26394,12927 26362,12887 26328,12845 26195,12682 26315,12618 26201,12499
-Seidenschwanzstr.: Qualit‰t? Wo wird die Straﬂe genau liegen?	?::projected 26651,12941 26576,12848 26540,12804 26511,12768 26472,12720 26328,12845
+#: by: https://www.google.de/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0ahUKEwjn5uqLgY_NAhVHsBQKHcfIAEEQFggvMAE&url=https%3A%2F%2Fwww.berlin.de%2Fba-marzahn-hellersdorf%2Fpolitik-und-verwaltung%2Faemter%2Fstadtentwicklungsamt%2Fstadtplanung%2Fmdb-bamarzahnhellersdorf-stadtplanung-festgesetb-xxiii_15b_1_abzeichnung.pdf&usg=AFQjCNHD5t6sh5hLTtunUdcS4SG222H6xw&cad=rja
+# REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2016 (Grundst¸cksnummerierungen)
+# REMOVED (-> strassen-orig) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/15re.pdf/file?y=2013 --- Bisamstr.: Qualit‰t? Wo wird die Straﬂe genau liegen?	?::projected 26463,13011 26424,12964 26379,12909 26334,12854 26334,12854 26195,12682 26315,12618 26201,12499
+Seidenschwanzstr.: Qualit‰t? Wo wird die Straﬂe genau liegen?	?::projected 26651,12941 26576,12848 26527,12789 26481,12732 26434,12674 26285,12796
 #: XXX folgendes sind Privatstraﬂen vvv
-Wildkatzenweg: Qualit‰t? Wo wird die Straﬂe genau liegen?	?::projected 26511,12768 26362,12887
-Ringeltaubenweg: Qualit‰t? Wo wird die Straﬂe genau liegen?	?::projected 26540,12804 26394,12927
-Mauswieselweg: Qualit‰t? Wo wird die Straﬂe genau liegen?	?::projected 26576,12848 26427,12967
+Wildkatzenweg: Qualit‰t? Wo wird die Straﬂe genau liegen?	?::projected 26481,12732 26334,12854
+Ringeltaubenweg: Qualit‰t? Wo wird die Straﬂe genau liegen?	?::projected 26527,12789 26379,12909
+Mauswieselweg: Qualit‰t? Wo wird die Straﬂe genau liegen?	?::projected 26576,12848 26424,12964
 #: XXX ^^^
 #: check_frequency ^^^
 #: last_checked ^^^

@@ -372,8 +372,8 @@ Berliner Allee -> Falkenberger Str.: Straßenbahntrasse	3::igndisp 14608,16772 14
 Falkenberger Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14723,16691 14619,16682 14619,16672
 Berliner Allee -> Caseler Str.: Straßenbahntrasse	3::igndisp 14558,16907 14608,16772 14700,16790
 Caseler Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14700,16790 14608,16772 14619,16682
-Bahnübergang nur für Fußgänger/Radfahrer	3 20610,12050 20624,12133 20627,12162
-Bahnübergang nur für Fußgänger/Radfahrer	3 20627,12162 20624,12133 20610,12050
+Bahnübergang nur für Fußgänger/Radfahrer	3 20620,12108 20624,12133 20627,12162
+Bahnübergang nur für Fußgänger/Radfahrer	3 20627,12162 20624,12133 20620,12108
 Straßenbahntrasse	3nocross::ignrte 23080,15700 23218,15671 23411,15632 23568,15603 23617,15594
 Zossener Str. -> Klausdorfer Str.: Straßenbahntrasse	3::igndisp 23080,15700 23218,15671 23243,15820
 Klausdorfer Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23243,15820 23218,15671 23411,15632
@@ -1805,3 +1805,4 @@ Sächsische Str. -> Bleibtreustr.: Lietzenburger Str./Sächsische Str.	3::igndisp 
 Biesheimring - Brittendorfer Weg: Poller	3 1987,3166 1946,3142 1884,3106
 Brittendorfer Weg - Biesheimring: Poller	3 1884,3106 1946,3142 1987,3166
 Andernacher Str.	1 18949,8437 19000,8509
+Pfarrhufenweg	1 25599,13069 25684,13172

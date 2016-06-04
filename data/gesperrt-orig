@@ -1,4 +1,4 @@
-#: #: -*- coding: iso-8859-1 -*-
+	#: #: -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
 #: note: XXX_* categorization done 2008-01-26
 #:
@@ -911,7 +911,7 @@ Krumpuhler Weg: nur Mo-Do von 8-16 Uhr und Fr von 8-14 Uhr geöffnet	2 1377,18602
 Krumpuhler Weg	1 1405,18749 1390,18651
 Steffenshagener Str.	1s 23159,11097 22983,11098
 Pestalozzistr.	1s:q3 24652,11794 24706,11838 24769,11819
-Finsterberger Str.	1s:q3 23084,12573 23129,12496 23233,12406
+Finsterberger Str.	1s:q3 23131,12509 23233,12406
 Bauerwitzer Weg	1 22917,12239 22814,12353 22861,12390 22994,12496
 Heinrich-Grüber-Platz	1 22877,11940 22858,11937 22843,11999 22856,12003 22870,12000 22883,11956 22877,11940
 Boraweg	1s:q4 6763,2879 6710,2909 6658,2907
@@ -1613,7 +1613,7 @@ Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross 11632
 Stromstr.: unpassierbarer Mittelstreifen	3nocross 6183,13083 6164,12980 6157,12933 6150,12875
 Märkische Allee: Linksabbiegen verboten	3nocross 20116,16303 20219,16523 20318,16710
 Märkische Allee: Linksabbiegen verboten	3nocross 20512,17101 20691,17463 20717,17516 20843,17745 20889,17838 20912,17872 21009,18055
-Märkische Allee: Mittelstreifen	3nocross 19896,11688 19918,11891 19940,12076 19944,12115 19947,12140 19953,12177 19960,12222 19967,12270 19982,12405 19994,12484
+Märkische Allee: Mittelstreifen	3nocross 19896,11688 19918,11891 19928,11978 19940,12076 19944,12115 19947,12140 19953,12177 19960,12222 19967,12270 19982,12405 19994,12484
 # REMOVED (neue Ampeln) --- Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3nocross 17400,17790 17482,17844 17601,17922 17675,17971 17744,18016 17843,18078
 Stralauer Allee: unbequemes Abbiegen	3nocross 13332,10832 13389,10808 13496,10763 13596,10722
 Stralauer Allee: unbequemes Abbiegen	3nocross 13596,10722 13678,10685 13779,10642
@@ -1772,6 +1772,7 @@ abgeschlossenes Tor	3 * 15835,15092 *
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (20 Stufen)	0:30 22624,13901
 tragen (8 weite Stufen) bzw. Naturrampe benutzen	0:15 -6004,15050
 #: XXX wie viele Stufen?
 tragen	0:30 -3138,14171
@@ -2088,6 +2089,8 @@ Treppe	0:40 1888,42795
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter	BNP:3::trailer=10 26246,12648
+Drängelgitter	BNP:3::trailer=10 26183,12676
 #: note: am So, 2016-04-17 gegen 15 Uhr offen vvv
 Tor, kann geschlossen sein	BNP:2::trailer=5 16315,18208
 Tor, kann geschlossen sein	BNP:2::trailer=5 16196,18364
@@ -2382,7 +2385,7 @@ Drängelgitter	BNP:1::trailer=3 17313,12609
 Tor	BNP:5 2959,2608
 Drängelgitter (lichte Breite ca. 90cm)	BNP:4::trailer=15 6455,2924
 Hanstedter Weg: Geländer	BNP:3::trailer=10 6908,5053
-Lichte Breite ca. 110cm	BNP:0 25218,12653
+# REMOVED --- Lichte Breite ca. 110cm	BNP:0 25261,12615
 #: note: kurios: Drängelgitter sind relativ hoch, so dass ein Fahrrad durchpasst vvv
 Drängelgitter am Restaurant Igel	BNP:3 -1659,18104
 Drängelgitter am Restaurant Igel	BNP:3 -1659,18076
@@ -2784,13 +2787,7 @@ Theodorstr.: Bauarbeiten, gesperrt	2::inwork 24897,11083 24905,10955 24913,10884
 #: check_frequency: 90d
 (Weg im Theodorpark)	2::inwork 24922,10785 24954,10770 25021,10768 25062,10762 25148,10769
 # 
-#: XXX Wann wird die Straße eröffnet? Wird die Straße verkehrsberuhigt sein?
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2016 (Grundstücksnummerierungen)
-#: XXX laut osm offen ("residential")
-#: osm_watch: way id="338546087" version="3"
-#: last_checked: 2015-08-02
-#: next_check: 2015-11-02 (public)
-Pfarrhufenanger: noch in Bau, gesperrt	2::inwork 25599,13069 25441,12838 25266,12622
+# REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2016 (Grundstücksnummerierungen) --- #: XXX laut osm offen ("residential") --- #: osm_watch: way id="338546087" version="3" --- #: last_checked: 2015-08-02 --- #: next_check: 2015-11-02 (public) --- Pfarrhufenanger: noch in Bau, gesperrt	2::inwork 25599,13069 25441,12838 25272,12629
 # 
 #: XXX Ende der Bauarbeiten?
 #: last_checked: 2016-05-09
@@ -2834,7 +2831,7 @@ Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 144
 Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,12669 6765,12680
 # 
 #: XXX Sperrungen wegen Bauarbeiten für die IGA 2017 vvv
-#: last_checked: 2015-04-11 vvv
+#: last_checked: 2016-06-04 vvv
 #: next_check: 2017-06-01 vvv
 IGA 2017-Gelände: Wege gesperrt	2 22455,14815 22417,14837 22380,14831 22331,14793 22254,14793 22199,14744 22164,14722 22108,14710 22090,14704 22071,14630 22051,14604 22026,14601 22012,14556 21985,14513 22026,14501 22061,14471 22172,14287 22414,14144 22462,14172 22639,14384 22679,14450 22670,14520
 #: osm_watch: way id="338582727" version="2"
