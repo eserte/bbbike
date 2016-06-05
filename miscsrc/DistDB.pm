@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package DistDB;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 use DB_File;
 use Fcntl qw(O_CREAT O_RDWR);
@@ -26,6 +26,7 @@ use Strassen::Util qw();
 sub new {
     my($class, $dbfile) = @_;
     die "dbfile not given" if !$dbfile;
+    $dbfile .= ($DB_File::db_version eq '' || $DB_File::db_version <= 1 ? '' : int($DB_File::db_version));
     tie my %db, 'DB_File', $dbfile, O_RDWR|O_CREAT
 	or die "Cannot tie $dbfile: $!";
     bless { db => \%db }, $class;
@@ -103,6 +104,11 @@ significantly changed, then the dist db needs to be recalculated again
 
 Note also that only default settings can be used ("bike" vehicle,
 standard search options, Berlin street data).
+
+Note that the Berkeley DB version will be added to the given filename
+if it's not 1. This means that on current linux systems (as of 2016)
+usually "5" will be added, while on standard freebsd systems nothing
+will be added.
 
 =head1 EXAMPLES
 
