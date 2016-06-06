@@ -218,7 +218,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2016-05-16
+#: last_checked: 2016-06-05
 #: check_frequency: 14d
 Warschauer Str: Radspuren in Bau	?::inwork 13651,11731 13696,11920 13745,12118
 # 
@@ -293,9 +293,7 @@ Zeppelinstr.: Radspuren bis 2015 geplant	?::projected -4670,14637 -4667,14712 -4
 #: last_checked ^^^
 #: osm_watch ^^^
 # 
-#: by: http://www.berlin.de/ba-spandau/presse/archiv/20130529.1355.385411.html (Bauarbeiten in der Wilhelmstraße, existieren dann die Radspuren?)
-#: osm_watch: way id="24406521" version="15"
-Wilhelmstr.: Radspuren bis 2015 geplant	?::projected; -5501,11251 -5455,11321 -5392,11421
+# REMOVED --- #: by: http://www.berlin.de/ba-spandau/presse/archiv/20130529.1355.385411.html (Bauarbeiten in der Wilhelmstraße, existieren dann die Radspuren?) --- #: osm_watch: way id="24406521" version="15" --- Wilhelmstr.: Radspuren bis 2015 geplant	?::projected; -5501,11251 -5455,11321 -5392,11421
 # 
 #: XXX zurzeit Bauarbeiten bis Mitte Dezember 2015 (laut vmz) bzw. Mitte Juni 2016 (laut Stadtentwicklungsseite), danach existieren Radspuren
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5508.html
@@ -1427,6 +1425,8 @@ Bebauungsplan 7-65: Weg in Planung	?::projected 7960,6059 7697,6059 7630,6016 76
 RR8: wird die Fahrradroute auf den oberen Wuhlewanderweg geführt?	? 22295,13530 22317,13521 22472,13698
 # 
 # by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8452&options=4
+#: last_checked: 2016-06-05
+#: check_frequency: 90d
 Potsdamer Chaussee/Engelsfelder Chaussee: entsteht hier eine Ampel?	? -5883,10866 -5870,10847 -5851,10822
 # 
 Auersbergstr.: Qualität?	? 20696,15039 20743,15039 20809,15046 20894,15045 20915,15001
@@ -2687,7 +2687,7 @@ Lübbenau - Lübben durch den Spreewald: Wegführung? Qualität (wahrscheinlich Asph
 Lübbenau - Lübben durch den Spreewald: Wegführung? Qualität?	? 49325,-59250 49125,-58625 49223,-58598 49216,-58360 49253,-58348 49226,-58180 49354,-58046 49274,-57748 49265,-57617 49076,-57489 49003,-57346 48826,-57257 48732,-57245 48714,-57160 48479,-56870 48379,-56651
 Unterspreewald, Schlepzig - Lübben: genaue Wegführung? Qualität?	? 44543,-41337 44549,-41553 44478,-41627 44463,-41919 44241,-42026 44299,-42288 44223,-42592 44125,-42711 44265,-42973 43927,-43336 43735,-43272 43528,-43308 43534,-43510 43762,-43625 43823,-43912 43759,-44076 43808,-44341 43988,-44549 44046,-44875 44165,-45353 44235,-45399 44475,-45429 44619,-45304 44741,-45521 44646,-45597 44609,-45743 44658,-45767 44896,-45719 44945,-45810 44887,-46121 44936,-46310 44914,-46465 44619,-46815 44832,-47117 45201,-47690 45347,-47562 45560,-47531 45557,-47760 45676,-47888 45490,-48220 45304,-48339 45353,-48714 45429,-48884 45368,-49110 45499,-49582 45475,-49759 45420,-50118 45642,-50359 45874,-50837 45914,-51087
 Zachow - Trebelsee: Qualität (Betonplatten?)?	? -31583,7939 -31087,7275
-Gutenpaaren - Trebelsee: Qualität?	? -32804,7332 -32587,6112 -32200,5825
+# REMOVED (wird erstmal nicht aufgenommen) --- Gutenpaaren - Trebelsee: Qualität?	? -32804,7332 -32587,6112 -32200,5825
 Am Trebelsee: Deich, Qualität?	? -32200,5825 -31812,6387 -31525,6962 -31087,7275
 #: XXX zumindest in Ringenwalde schlechtes Kopfsteinpflaster
 Steinhöfel - Poratz - Ringenwalde: Qualität?	? 37482,74476 37025,74400 36800,74137 36612,74162 35775,73750 35469,73594 35097,73563 33687,73037 33018,72768 32782,72789 32556,73083 31981,73174 30883,72827 30731,72711 30287,72823
@@ -3347,7 +3347,7 @@ Garz - Korswandt: Qualität? Sind Teile der Strecke für Autos gesperrt?	? 59381,1
 Trassenheide - Zinnowitz: Qualität? Für Autos befahrbar? Straßennamen?	? 38457,187932 38487,187914 38526,187844 39424,187218 39495,187106 39521,187015 39609,186946 39753,186914 39896,186840 39981,186689 40036,186630 40207,186576 40254,186586 40249,186550 40243,186524 40204,186453 40262,186387 40489,186067 40530,185990 40621,185903 40685,185758 40751,185719
 Döberitzer Str., Fahrland: Qualität?	? -16182,6673 -16165,6692 -16244,7050 -16270,7417 -16400,7733
 #: XXX fehlt in Potsdam.coords.data, PLZ=14476 vvv
-Kietzer Str. (Potsdam-Fahrland): Qualität?	? -16101,6287 -16196,6572 -16147,6611
+Kietzer Str. (Potsdam-Fahrland): Qualität?	? -16104,6299 -16196,6572 -16147,6611
 Gartenstr. (Potsdam-Fahrland): Qualität?	? -15472,6477 -15533,6563 -15562,6678 -15603,6771 -15712,6866 -15853,6997 -15924,7041 -16009,7063 -16107,7073 -16244,7050
 #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_14-2014.pdf vvv
 Von-Stechow-Str. (Potsdam-Fahrland): Qualität?	? -15594,6231 -15503,6422 -15472,6477 -15442,6529 -15390,6584 -15336,6619 -15285,6630 -15180,6622 -15088,6612 -14999,6624 -14959,6643 -14930,6668 -14916,6699 -14913,6732
@@ -3869,7 +3869,8 @@ Falknerstr. (Potsdam-Golm): Qualität?	? -18889,-591 -18889,-641 -18939,-739
 # 
 #: XXX laut osm "paved"
 #: XXX fehlt in Potsdam.coords.data
-Paarener Dorfstraße (Potsdam-Uetz-Paaren): Qualität?	? -21443,8306 -21412,8481 -21390,8578 -21226,8822 -20996,8861 -20405,9004
+#: XXX an der B273 asphaltiert
+Paarener Dorfstraße (Potsdam-Uetz-Paaren): Qualität?	? -21464,8331 -21412,8481 -21390,8578 -21226,8822 -20996,8861 -20405,9004
 #: XXX fehlt in Potsdam.coords.data, PLZ=14476, Ortsteil=Paaren
 #: by: http://www.potsdam.de/cms/dokumente/10069999_974248/967a6114/Amtsblatt12-2010.pdf (Lage der Straße)
 Paarener Mühlenweg (Potsdam-Uetz-Paaren): Qualität?	? -21412,8481 -21200,8474 -20914,8535 -20337,8664 -20176,8678 -20040,8625 -19994,8571 -19854,8696 -19818,8664 -19686,8675 -19635,8657 -19549,8761 -19202,8786 -19186,8685

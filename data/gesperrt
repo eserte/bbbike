@@ -2072,25 +2072,25 @@ Johannes-Lepsius-Str. -> Kiepenheuerallee: Straßenbahntrasse	3::igndisp -13244,2
 Mittelstreifen	3nocross::ignrte -3824,13350 -3813,13404 -3803,13464
 Wilhelmstr. -> Kerstenweg: Mittelstreifen	3::igndisp -3803,13464 -3813,13404 -3707,13377
 Kerstenweg -> Wilhelmstr.: Mittelstreifen	3::igndisp -3707,13377 -3813,13404 -3824,13350
-Mittelstreifen	3nocross::ignrte -4882,12061 -4637,11982 -4500,11937
+Mittelstreifen	3nocross::ignrte -4895,12066 -4637,11982 -4500,11937
 Heerstr. -> Winzerstr.: Mittelstreifen	3::igndisp -4500,11937 -4637,11982 -4687,11885
-Winzerstr. -> Heerstr.: Mittelstreifen	3::igndisp -4687,11885 -4637,11982 -4882,12061
-Mittelstreifen	3nocross::ignrte -3803,13464 -3789,13519 -3746,13622
-Klosterstr. -> Ziegelhof, Grünanlage: Mittelstreifen	3::igndisp -3746,13622 -3789,13519 -3689,13513
+Winzerstr. -> Heerstr.: Mittelstreifen	3::igndisp -4687,11885 -4637,11982 -4895,12066
+Mittelstreifen	3nocross::ignrte -3803,13464 -3789,13519 -3761,13625
+Klosterstr. -> Ziegelhof, Grünanlage: Mittelstreifen	3::igndisp -3761,13625 -3789,13519 -3689,13513
 Ziegelhof, Grünanlage -> Klosterstr.: Mittelstreifen	3::igndisp -3689,13513 -3789,13519 -3803,13464
-Mittelstreifen	3nocross::ignrte -3621,13884 -3662,13797 -3677,13769 -3701,13719
-Klosterstr. -> Borkumer Str.: Mittelstreifen	3::igndisp -3677,13769 -3662,13797 -3849,13848
-Borkumer Str. -> Klosterstr.: Mittelstreifen	3::igndisp -3849,13848 -3662,13797 -3621,13884
-Klosterstr. -> Sedanstr.: Mittelstreifen	3::igndisp -3662,13797 -3677,13769 -3614,13724
-Sedanstr. -> Klosterstr.: Mittelstreifen	3::igndisp -3614,13724 -3677,13769 -3701,13719
-Mittelstreifen	3nocross::ignrte -4239,12626 -4180,12690 -4116,12761 -4058,12838
-Wilhelmstr. -> Ulmenstr.: Mittelstreifen	3::igndisp -4116,12761 -4180,12690 -4053,12632
+Mittelstreifen	3nocross::ignrte -3625,13889 -3678,13801 -3690,13776 -3716,13724
+Klosterstr. -> Borkumer Str.: Mittelstreifen	3::igndisp -3690,13776 -3678,13801 -3849,13848
+Borkumer Str. -> Klosterstr.: Mittelstreifen	3::igndisp -3849,13848 -3678,13801 -3625,13889
+Klosterstr. -> Sedanstr.: Mittelstreifen	3::igndisp -3678,13801 -3690,13776 -3614,13724
+Sedanstr. -> Klosterstr.: Mittelstreifen	3::igndisp -3614,13724 -3690,13776 -3716,13724
+Mittelstreifen	3nocross::ignrte -4239,12626 -4180,12690 -4119,12763 -4063,12842
+Wilhelmstr. -> Ulmenstr.: Mittelstreifen	3::igndisp -4119,12763 -4180,12690 -4053,12632
 Ulmenstr. -> Wilhelmstr.: Mittelstreifen	3::igndisp -4053,12632 -4180,12690 -4239,12626
-Wilhelmstr. -> Sprengelstr.: Mittelstreifen	3::igndisp -4058,12838 -4116,12761 -4026,12720
-Sprengelstr. -> Wilhelmstr.: Mittelstreifen	3::igndisp -4026,12720 -4116,12761 -4180,12690
-Mittelstreifen	3nocross::ignrte -3999,12912 -3962,12973 -3913,13054
-Wilhelmstr. -> Zimmerstr.: Mittelstreifen	3::igndisp -3913,13054 -3962,12973 -3942,12957
-Zimmerstr. -> Wilhelmstr.: Mittelstreifen	3::igndisp -3942,12957 -3962,12973 -3999,12912
+Wilhelmstr. -> Sprengelstr.: Mittelstreifen	3::igndisp -4063,12842 -4119,12763 -4026,12720
+Sprengelstr. -> Wilhelmstr.: Mittelstreifen	3::igndisp -4026,12720 -4119,12763 -4180,12690
+Mittelstreifen	3nocross::ignrte -4008,12916 -3967,12976 -3923,13060
+Wilhelmstr. -> Zimmerstr.: Mittelstreifen	3::igndisp -3923,13060 -3967,12976 -3942,12957
+Zimmerstr. -> Wilhelmstr.: Mittelstreifen	3::igndisp -3942,12957 -3967,12976 -4008,12916
 Straßenbahntrasse	3nocross::ignrte 10431,12709 10387,12760 10360,12793
 Spandauer Str. -> Spreegasse: Straßenbahntrasse	3::igndisp 10431,12709 10387,12760 10309,12700
 Spreegasse -> Spandauer Str.: Straßenbahntrasse	3::igndisp 10309,12700 10387,12760 10360,12793
@@ -2184,7 +2184,7 @@ tragen (4 Stufen)	0:10:-233 21326,11122
 tragen (8+8 Stufen)	0:25:-185 19534,14459
 tragen (5 x 5 Stufen) bzw. steile Rampe zum Schieben benutzen	0:35:-181 19570,13833
 tragen bzw. steile Rampe benutzen	0:30:90 1523,13377
-tragen (7+9 Stufen)	0:25:-52 -3513,13800
+tragen (7+9 Stufen)	0:25:-51 -3513,13800
 tragen (7 Stufen)	0:14:-84 -4744,14392
 tragen (2 Stufen)	0:5:-78 12572,14836
 tragen (3+5 Stufen)	0:15:5 9366,6150

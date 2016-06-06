@@ -1806,9 +1806,9 @@ EOF
        text  => 'Wilhelmstraße, Straße gesperrt bis 03.04.2005 23:00 Uhr (Frühlingsfest zwischen Pichelsdorfer Straße und Adamstraße). ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -3913,13054 -3886,13120 -3824,13350
-userdel	2 -3913,13054 -3962,12973 -3999,12912 -4058,12838
-userdel	2 -4058,12838 -4116,12761 -4180,12690
+userdel	2 -3923,13060 -3896,13124 -3824,13350
+userdel	2 -3923,13060 -3967,12976 -4008,12916 -4063,12842
+userdel	2 -4063,12842 -4119,12763 -4180,12690
 EOF
      },
      { from  => 1111960800, # 2005-03-28 00:00
@@ -4478,7 +4478,7 @@ EOF
        text  => 'Wilhelmstraße Richtung Pichelsdorf zwischen Einmündung Pichelsdorfer Straße und Einmündung Gatower Straße Baustelle, gesperrt bis 08.05.2006 13:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 -3824,13350 -3886,13120 -3913,13054 -3962,12973 -3999,12912 -4058,12838 -4116,12761 -4180,12690 -4239,12626 -4300,12571 -4351,12460
+userdel	1 -3824,13350 -3896,13124 -3923,13060 -3967,12976 -4008,12916 -4063,12842 -4119,12763 -4180,12690 -4239,12626 -4300,12571 -4351,12460
 EOF
      },
      { from  => 1146801600, # 2006-05-05 06:00
@@ -4886,7 +4886,7 @@ EOF
        text  => 'Bis 31.08.2006 Vollsperrung der L 862 zwischen Falkenrehde und Ketzin. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -22215,9500 -22510,9372 -23467,9217 -23807,9279 -24319,9296 -24594,9168 -25265,9000 -25456,8850 -25658,8777 -26243,8485 -26774,7951 -27468,7711
+userdel	2::inwork -22215,9500 -22369,9423 -22456,9379 -23470,9204 -23807,9279 -24267,9300 -24358,9272 -24460,9219 -24594,9168 -24719,9170 -25227,9010 -25378,8890 -25658,8777 -26144,8525 -26767,8029 -26899,7966 -27476,7691
 EOF
      },
      { from  => 1150916248, # 2006-06-21 20:57
@@ -19178,7 +19178,7 @@ EOF
      { from  => $isodate2epoch->("2016-07-02 10:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2016-07-03 22:00:00"),
        periodic => 1, # zweiter Termin im Sommer
-       recurrences => [['yearly', days => 5, months => 7]], # kann aber auch erst im August stattfinden
+       recurrences => [['yearly', days => 2, months => 7]], # kann aber auch erst im August stattfinden
        text  => 'Open Air Gallery am 3. Juli 2016 auf der Oberbaumbrücke (10:00 - 20:00)',
        type  => 'gesperrt',
        data  => <<EOF,

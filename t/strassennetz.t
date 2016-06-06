@@ -349,7 +349,7 @@ XXX:
 
     # Twice the same coord in the route, use to cause a division by
     # zero error somewhere
-    my $path = [[-3011,10103],[-2761,10323],[-2761,10323],[-2766,10325]];
+    my $path = [[-3025,10116],[-2774,10345],[-2774,10345],[-2766,10325]];
     my(@route) = eval { $s_net->route_to_name($path) };
     is $@, '', 'No division by zero error';
 }
