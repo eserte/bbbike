@@ -2403,26 +2403,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 34421,1950 34359,2165 34250,2546
-',
-         'from' => 1464818400,
-         'id' => 2078,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              15,
-                              'months',
-                              5
-                            ]
-                          ],
-         'source_id' => 'http://www.erkner.de/271.html?date=20160415',
-         'text' => 'Erkner: Heimatfest, 3.6.2016 bis 5.6.2016',
-         'type' => 'gesperrt',
-         'until' => 1465178400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3094,26 +3075,7 @@ userdel	q2::inwork 5258,11285 5236,10994
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	q4::temp 5475,10808 5351,10760 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435
-',
-         'from' => 1464832800,
-         'id' => 2439,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              2,
-                              'months',
-                              6
-                            ]
-                          ],
-         'source_id' => 'IM_025248',
-         'text' => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, vom 03.06.2016 bis 06.06.2016 früh',
-         'type' => 'handicap',
-         'until' => 1465178400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3915,6 +3877,38 @@ userdel	q4::inwork 20381,1390 20405,1460
          'text' => 'Keltensteig, Germanenplatz, Teutonenstr.: Bauarbeiten, Juni 2016 bis September 2016',
          'type' => 'handicap',
          'until' => 1475272799
+       },
+       undef,
+       {
+         'data' => 'userdel	2::inwork 63500,89978 63789,89450 63797,89389 63814,89247 63826,89135 63928,88223 64007,87773 64113,87461
+',
+         'from' => 1465106400,
+         'id' => 2790,
+         'source_id' => 'LS/721-E/16/052',
+         'text' => 'Woltersdorf - Caeskow: Baustelle, Straße vermutlich gesperrt, 06.06.2016 08:00 Uhr bis 30.06.2016',
+         'type' => 'gesperrt',
+         'until' => 1467324000
+       },
+       {
+         'data' => '#: note: laut fritz sogar Vollsperrung
+userdel	q4::inwork; 17003,19035 17068,19016 17183,19007 17256,19002 17343,19000 17425,18997 17440,18997 17600,18994 17697,18989
+',
+         'from' => 1465077600,
+         'id' => 2791,
+         'source_id' => '2147340170',
+         'text' => 'Wartenberger Weg: Richtung Dorfstraße zwischen Egon-Erwin-Kisch-Straße und Dorfstraße Baustelle, Fahrtrichtung gesperrt, ab 06.06.2016 06:00 bis zum 11.06.2016',
+         'type' => 'handicap',
+         'until' => 1465682399
+       },
+       {
+         'data' => 'userdel	q4::inwork; 14211,11552 14305,11514 14369,11489
+',
+         'from' => 1465077600,
+         'id' => 2792,
+         'source_id' => '2147340169',
+         'text' => 'Wühlischstr.: Richtung Boxhagener Str. zwischen Gärtnerstr. und Knorrpromenade Baustelle, Fahrtrichtung gesperrt, bis zum 27.06.2016',
+         'type' => 'handicap',
+         'until' => 1467064799
        }
      
 );

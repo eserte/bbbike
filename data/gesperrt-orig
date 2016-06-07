@@ -2688,14 +2688,7 @@ Drängelgitter	BNP:3 31665,48997
 #: last_checked: 2016-05-29
 Haasestr.: Bauarbeiten, keine Durchfahrt möglich	2::inwork 14328,11320 14286,11186
 # 
-#: next_check_id: WEICHSELPLATZ-2016 vvv
-#: last_checked: 2016-05-20 vvv
-#: check_frequency: 14d vvv
-Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12844,9351 12851,9309 12907,9073
-Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12907,9073 12851,9309 12844,9351
-#: check_frequency ^^^
-#: last_checked ^^^
-#: next_check_id ^^^
+# REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 vvv --- #: last_checked: 2016-06-02 vvv --- #: check_frequency: 14d vvv --- Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12844,9351 12851,9309 12907,9073 --- Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12907,9073 12851,9309 12844,9351
 # 
 #: last_checked: 2016-06-01
 #: check_frequency: 30d
@@ -2722,7 +2715,8 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,
 #: check_frequency: 60d
 Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7703,14582 7527,14684
 # 
-#: last_checked: 2016-06-02 vvv
+#: last_checked: 2016-06-07 vvv
+#: check_frequency: 7d
 # REMOVED --- Treptower Park: Bauarbeiten, Weg noch nicht fertiggestellt	2::inwork 14318,9688 14443,9731
 Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14443,9731 14361,9772
 # REMOVED --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14361,9772 14436,9784
@@ -2741,7 +2735,7 @@ Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14448,9922 14460,9871 1446
 #: osm_watch: way id="311371554" version="4"
 Clara-Immerwahr-Str.: Bauzäune	2::inwork 19202,17471 19546,17351 19798,17263 19845,17235 19914,17203
 # 
-#: last_checked: 2016-05-03
+#: last_checked: 2016-06-01
 #: osm_watch: way id="57852078" version="4"
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
 # 

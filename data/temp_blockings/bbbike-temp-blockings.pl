@@ -25091,4 +25091,32 @@ EOF
 userdel	q4::inwork; 13541,11355 13588,11490 13603,11538 13651,11731 13696,11920
 EOF
      },
+     { from  => 1465106400, # 2016-06-05 08:00
+       until => 1467324000, # 2016-07-01 00:00
+       text  => 'Woltersdorf - Caeskow: Baustelle, Straße vermutlich gesperrt, 06.06.2016 08:00 Uhr bis 30.06.2016',
+       type  => 'gesperrt',
+       source_id => 'LS/721-E/16/052',
+       data  => <<EOF,
+userdel	2::inwork 63500,89978 63789,89450 63797,89389 63814,89247 63826,89135 63928,88223 64007,87773 64113,87461
+EOF
+     },
+     { from  => 1465077600, # 2016-06-05 00:00
+       until => $isodate2epoch->("2016-06-11 23:59:59"),
+       text  => 'Wartenberger Weg: Richtung Dorfstraße zwischen Egon-Erwin-Kisch-Straße und Dorfstraße Baustelle, Fahrtrichtung gesperrt, ab 06.06.2016 06:00 bis zum 11.06.2016',
+       type  => 'handicap',
+       source_id => '2147340170',
+       data  => <<EOF,
+#: note: laut fritz sogar Vollsperrung
+userdel	q4::inwork; 17003,19035 17068,19016 17183,19007 17256,19002 17343,19000 17425,18997 17440,18997 17600,18994 17697,18989
+EOF
+     },
+     { from  => 1465077600, # 2016-06-05 00:00
+       until => $isodate2epoch->("2016-06-27 23:59:59"),
+       text  => 'Wühlischstr.: Richtung Boxhagener Str. zwischen Gärtnerstr. und Knorrpromenade Baustelle, Fahrtrichtung gesperrt, bis zum 27.06.2016',
+       type  => 'handicap',
+       source_id => '2147340169',
+       data  => <<EOF,
+userdel	q4::inwork; 14211,11552 14305,11514 14369,11489
+EOF
+     },
     );
