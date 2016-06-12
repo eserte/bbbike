@@ -19847,11 +19847,11 @@ EOF
 userdel	q4::inwork 10881,15047 10838,14962 10723,14772
 EOF
      },
-     { from  => $isodate2epoch->("2015-07-09 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-07-12 23:59:59"),
+     { from  => $isodate2epoch->("2016-07-14 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-07-17 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 9, months => 7]], # kann auch erst im August stattfinden
-       text  => 'Berliner Allee (Weißensee): Veranstaltung (Weißenseer Blumenfest), Fahrtrichtung gesperrt stadteinwärts vom Weißen See bis zum Antonplatz, 10.7.2015 bis 12.7.2015',
+       text  => 'Berliner Allee (Weißensee): Veranstaltung (Weißenseer Blumenfest), Fahrtrichtung gesperrt stadteinwärts vom Weißen See bis zum Antonplatz, 15.7.2016 bis 17.7.2016',
        type  => 'handicap',
        source_id => 'http://www.weissenseer-blumenfest.de/',
        data  => <<EOF,
@@ -22931,11 +22931,11 @@ userdel	2::inwork 5993,5422 6007,5785 6007,5882 6001,5974 6134,5986 6116,6130
 userdel	2::inwork 5935,5874 6007,5882 6134,5894
 EOF
      },
-     { from  => $isodate2epoch->("2016-06-09 00:00:00"), # ein Tag Vorlauf (zu wenig?)
-       until => $isodate2epoch->("2016-07-11 23:59:59"), # ein Tag Nachlauf (zu wenig?)
-       text  => 'Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Dorotheenstr. und Behrenstr.: Sperrungen wegen der Fußball-EM-Fanmeile, vom 10.06.2016 bis zum 10.07.2016',
+     { from  => $isodate2epoch->("2016-06-08 00:00:00"), # ein Tag Vorlauf (zu wenig?)
+       until => $isodate2epoch->("2016-07-12 23:59:59"), # ein Tag Nachlauf (zu wenig?)
+       text  => 'Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Dorotheenstr. und Behrenstr.: Sperrungen wegen der Fußball-EM-Fanmeile, Radfahrer dürfen den Bereich in der spielfreien Zeit passieren, vom 09.06.2016 bis zum 12.07.2016',
        type  => 'gesperrt',
-       source_id => 'IM_022090',
+       source_id => '2147340174',
        data  => <<EOF,
 userdel	2::temp 7429,12070 7383,12095 7816,12150 7823,12120 8018,12135 8049,12140
 userdel	2::temp 7816,12150 8055,12186 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197 8522,12239
@@ -23590,6 +23590,7 @@ EOF
 #: note: am Mi, den 2016-02-03 gegen 19:30: geschlossen
 #: note: am Di, den 2016-04-05 gegen 08:45: geschlossen
 #: note: am Mo, den 2016-04-11 gegen 18:20: geschlossen
+#: note: am So, den 2016-06-12 gegen 12:30: offen
 	3::night 14563,8243 14425,8116 14419,8112
 	3::night 14419,8112 14425,8116 14563,8243
 EOF
@@ -24406,7 +24407,7 @@ EOF
        # wegen Maccabi Games
        text  => 'Ziegrastr.: Durchfahrt komplett gesperrt, auch für Fußgänger und Radfahrer, bis zum 6.8.2015',
        data  => <<EOF,
-	2::temp 14233,8072 14174,7505
+	2::temp 14236,8077 14174,7505
 EOF
      },
      { from  => 1438145220, # 2015-07-29 06:47
@@ -25112,11 +25113,38 @@ EOF
      },
      { from  => 1465077600, # 2016-06-05 00:00
        until => $isodate2epoch->("2016-06-27 23:59:59"),
-       text  => 'Wühlischstr.: Richtung Boxhagener Str. zwischen Gärtnerstr. und Knorrpromenade Baustelle, Fahrtrichtung gesperrt, bis zum 27.06.2016',
+       text  => 'Wühlischstr.: Richtung Boxhagener Str. zwischen Gärtnerstr. und Knorrpromenade Baustelle, Fahrtrichtung gesperrt, ggfs. auf Gehweg ausweichen, bis zum 27.06.2016',
        type  => 'handicap',
        source_id => '2147340169',
        data  => <<EOF,
-userdel	q4::inwork; 14211,11552 14305,11514 14369,11489
+#: note: Gehweg ist offiziell für Radfahrer befahrbar
+	q4::inwork; 14211,11552 14305,11514 14369,11489
+	3 14254,11377 14305,11514 14211,11552
+	3 14254,11377 14305,11514 14358,11656
+	3 14358,11656 14305,11514 14254,11377
+	3 14369,11489 14305,11514 14254,11377
+EOF
+     },
+     { from  => 1465682400, # 2016-06-12 00:00
+       until => 1468015200, # 2016-07-09 00:00
+       text  => 'Martin-Luther-Str.: Bauarbeiten zwischen Freiherr-vom-Stein-Str. und Heylstr., 13.6.2016 bis 8.7.2016',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.485790.php',
+       data  => <<EOF,
+	q4::inwork; 6454,8653 6461,8463 6459,8281
+	3 6534,8467 6461,8463 6377,8460
+	3 6377,8460 6461,8463 6534,8467
+EOF
+     },
+     { from  => $isodate2epoch->("2016-07-10 00:00:00"),
+       until => $isodate2epoch->("2016-08-08 23:59:59"),
+       text  => 'Martin-Luther-Str.: Bauarbeiten zwischen Heylstr. und Freiherr-vom-Stein-Str., 11.7.2016 bis 8.8.2016',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.485790.php',
+       data  => <<EOF,
+	q4::inwork; 6459,8281 6461,8463 6454,8653
+	3 6534,8467 6461,8463 6377,8460
+	3 6377,8460 6461,8463 6534,8467
 EOF
      },
     );

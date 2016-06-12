@@ -565,10 +565,7 @@ Strausberger Platz	1 11976,12595 12005,12619 12050,12616 12099,12580 12114,12546
 Magirusstr.	1 8199,6583 7985,6598
 Egelingzeile	1 7976,6403 8194,6384
 Ceciliengärten	1 6256,7428 6241,7428 6238,7645 6257,7646 6272,7645 6289,7472 6291,7429 6256,7428
-#: XXX Einbahnstraßenregelung für Radfahrer? vvv
 Ingelheimer Str.	1 18891,8586 18951,8574 19030,8559
-Andernacher Str.	1 19030,8559 19000,8509
-#: XXX ^^^
 Gleyeweg	1 17566,8199 17532,8125 17529,8073 17613,7989 17651,7973 17683,7958 17762,7931
 Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 19599,14273 19595,14348 19593,14405 19593,14452
 Murtzaner Ring	1 19818,14064 19843,14064 19921,14064 19951,14083 20040,14179
@@ -2110,7 +2107,7 @@ Schranke	BNP:3::trailer=10 5296,11529
 # 
 #: next_check_id: DIESEL-2015 vvv
 #: note: mittlerweile gibt es hier auch zwei Baustellenampeln mit Anforderung, allerdings wird relativ schnell auf grün geschaltet vvv
-#: last_checked: 2016-04-11 vvv
+#: last_checked: 2016-06-12 vvv
 #: check_frequency: 60d vvv
 Drängelgitter	BNP:5::trailer=10 14364,8096
 Drängelgitter	BNP:5::trailer=10 14405,8115
@@ -2585,8 +2582,8 @@ Drängelgitter	BNP:5::trailer=10 14453,9929
 #: note: Breite der Vorbeifahrmöglichkeit >90cm
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14558,10082
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14597,10129
-# XXX während der Bauarbeiten entfernt (2010-10) --- wird es jemals wieder eingesetzt? --- Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14626,10162
-# REMOVED (entfernt) --- #: note: 90cm Öffnung, 90cm zum versetzten Gitter -> 63cm lichte Breite --- #: note: hmmm, heute (2012-10-16) habe ich einen Radfahrer mit Croozer da durchfahren gesehen -> trailer=no -> trailer=15 --- Drängelgitter	BNP:3::trailer=15 12901,10134
+# REMOVED während der Bauarbeiten entfernt (2010-10) --- wird es jemals wieder eingesetzt? --- Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14626,10162
+# REMOVED (entfernt) --- #: note: 90cm Öffnung, 90cm zum versetzten Gitter -> 63cm lichte Breite --- #: note: hmmm, heute (2012-10-16) habe ich einen Radfahrer mit Croozer da durchfahren gesehen -> trailer=no -> trailer=15 --- Drängelgitter --- mittlerweile gibt es eine Pollerreihe	BNP:3::trailer=15 12901,10134
 #: note: relativ großzügige Öffnung
 Drängelgitter	BNP:1::trailer=3 12833,9998
 Schranke (Privatstr.)	BNP:5 25039,5304
@@ -2813,7 +2810,7 @@ Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,1
 #: next_check_id ^^^
 # 
 #: next_check_id: DIESEL-2015
-#: last_checked: 2016-04-11
+#: last_checked: 2016-06-12
 #: check_frequency: 60d
 Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 14471,8046
 # 
@@ -2973,13 +2970,12 @@ Niederlagstr.: Bauarbeiten, keine Zufahrt von Unter den Linden möglich	2::inwork
 #: source_id: 2147340122
 #: source_id: LMS-BR_r_LMS-BR_68908
 #: last_checked: 2016-05-21
-#: next_check: 2016-06-11
+#: check_frequency: 90d
 #: priority: #A
-#: XXX Gesamtmaßnahme bis 2018
-#: XXX Vollsperrung laut fritz bis 11.06.2016
+#: XXX Gesamtmaßnahme bis 2018 (oder 2017?)
 #: valid: -20180101
-#Sterndamm: Eisenbahnunterführung in Richtung Groß-Berliner Damm/Südostallee gesperrt	1::inwork 17886,5587 17736,5441
-Sterndamm: Eisenbahnunterführung voll gesperrt	2::inwork 17886,5587 17736,5441
+Sterndamm: Eisenbahnunterführung in Richtung Groß-Berliner Damm/Südostallee gesperrt	1::inwork 17886,5587 17736,5441
+#Sterndamm: Eisenbahnunterführung voll gesperrt	2::inwork 17886,5587 17736,5441
 # 
 #: next_check_id: GRENZALLEE-2014
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/de/bau.shtml

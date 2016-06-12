@@ -224,7 +224,7 @@ Gutenbergstr.	1 -12045,-757 -12227,-724
 Langhoffstr.	1 19817,14371 19818,14064
 #: by: Thomas Hallmann:
 Lintruper Str.	1 10307,922 10380,757
-Edison-/Siemensstr.	3 17992,6436 17962,6674 17860,6644 17842,6639 17766,6616
+Edison-/Siemensstr.	3 17992,6436 17962,6674 17860,6644
 Edisonstr.	1 17962,6674 17992,6436
 Brückenstr./Edisonstr.	1 17992,6436 17952,6246 17930,6175 17900,6072
 Müggelheimer Str.	3nocross 22674,4309 22556,4386 22451,4441 22419,4457 22383,4470
@@ -613,8 +613,10 @@ Methfesselstr.: Durchfahrt gesperrt (Schranke)	3 * 9125,9078 *
 #: note: Luftbild
 Neue Filandastr./Filandatr.	3nocross 5687,5486 5671,5389 5659,5313
 Müllerstr.: Mittelstreifen	3nocross 6013,16705 5931,16777 5894,16810 5772,16919
+#: note: die Poller stehen mittlerweile etwas weiter westlich: vvv
 Zobtener Str.: Durchfahrt gesperrt (Poller)	3 16734,9990 16539,10097 16353,10207
 Zobtener Str.: Durchfahrt gesperrt (Poller)	3 16353,10207 16539,10097 16734,9990
+#: note ^^^
 Waldowallee - Am Carlsgarten: Durchfahrt gesperrt (Betonblöcke)	3 * 19509,7999 *
 #: by: MichaelM vvv
 Klapppfosten	3 -1612,2123 -1590,1985 -1591,1861
@@ -952,7 +954,7 @@ Berliner Str.: Mittelstreifen	3nocross 5647,9022 5725,9041 5783,9060
 #: note: Überquerungsmöglichkeit für Fußgänger, allerdings keine abgesenkten Bordsteine
 Grunewaldstr.: Mittelstreifen	3nocross 6861,9263 6917,9274 7006,9292
 Herderstr. (Charlottenburg)	1 4452,11570 4434,11360
-Siemensstr.: Sperrfläche, Abbiegen nicht erlaubt	3nocross 17492,6462 17530,6496 17614,6571
+Siemensstr.: Sperrfläche, Abbiegen nicht erlaubt	3nocross 17492,6462 17528,6502 17614,6571
 Fasanenstr. (Ahrensfelde): Poller	3 * 22031,19261 *
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3391&date=20131021 (für Radverkehr freigegeben) vvv
 Oelder Weg	1 1967,18743 1965,18686
@@ -1051,6 +1053,7 @@ Hans-Sachs-Str.	1 3141,4023 3214,4066
 Anhaltinerstr.	1 682,2660 720,2718
 Askanischer Platz -> Stresemannstr.	3 8865,10974 8901,11011 8747,11194
 Karl-Marx-Str./Braunschweiger Str.: Mittelinsel	3nocross 13034,7319 13043,7234 13051,7157
+Karl-Marx-Str./Karl-Marx-Platz: Mittelinsel	3nocross 12969,7610 12991,7549 13015,7471
 Berliner Str - Bernstorffstr.: nur für BVG-Busse erlaubt	3 1955,20435 2020,20327 2131,20406
 Waidmannsluster Damm	3nocross 3216,21431 3238,21448 3280,21477
 # REMOVED (ein "Radfahrer frei"-Schild existiert schon, zwei müssen noch folgen) --- #: XXX Öffnung der Einbahnstraße für Radfahrer? --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6514 --- #: last_checked: 2015-11-16
@@ -1070,3 +1073,4 @@ Biesheimring - Brittendorfer Weg: Poller	3 1987,3166 1946,3142 1884,3106
 Brittendorfer Weg - Biesheimring: Poller	3 1884,3106 1946,3142 1987,3166
 Andernacher Str.	1 18949,8437 19000,8509
 Pfarrhufenweg	1 25599,13069 25684,13172
+Andernacher Str.	1 19030,8559 19000,8509

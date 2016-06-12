@@ -2777,7 +2777,26 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	q4::temp; 14499,16341 14346,16241 14248,16202 14056,16120 14015,16103 13826,16026 13737,15994 13623,15954 13512,15909
+',
+         'from' => 1468447200,
+         'id' => 2275,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              9,
+                              'months',
+                              7
+                            ]
+                          ],
+         'source_id' => 'http://www.weissenseer-blumenfest.de/',
+         'text' => 'Berliner Allee (Weißensee): Veranstaltung (Weißenseer Blumenfest), Fahrtrichtung gesperrt stadteinwärts vom Weißen See bis zum Antonplatz, 15.7.2016 bis 17.7.2016',
+         'type' => 'handicap',
+         'until' => 1468792799
+       },
        undef,
        undef,
        undef,
@@ -3365,12 +3384,12 @@ userdel	2::temp 8055,12186 8119,12414
 userdel auto	3 7026,12054 7031,12024 7059,11978
 userdel auto	3 7059,11978 7031,12024 7026,12054
 ',
-         'from' => 1465423200,
+         'from' => 1465336800,
          'id' => 2577,
-         'source_id' => 'IM_022090',
-         'text' => 'Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Dorotheenstr. und Behrenstr.: Sperrungen wegen der Fußball-EM-Fanmeile, vom 10.06.2016 bis zum 10.07.2016',
+         'source_id' => '2147340174',
+         'text' => 'Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Dorotheenstr. und Behrenstr.: Sperrungen wegen der Fußball-EM-Fanmeile, Radfahrer dürfen den Bereich in der spielfreien Zeit passieren, vom 09.06.2016 bis zum 12.07.2016',
          'type' => 'gesperrt',
-         'until' => 1468274399
+         'until' => 1468360799
        },
        undef,
        undef,
@@ -3470,6 +3489,7 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,464
 #: note: am Mi, den 2016-02-03 gegen 19:30: geschlossen
 #: note: am Di, den 2016-04-05 gegen 08:45: geschlossen
 #: note: am Mo, den 2016-04-11 gegen 18:20: geschlossen
+#: note: am So, den 2016-06-12 gegen 12:30: offen
 	3::night 14563,8243 14425,8116 14419,8112
 	3::night 14419,8112 14425,8116 14563,8243
 ',
@@ -3889,26 +3909,45 @@ userdel	q4::inwork 20381,1390 20405,1460
          'type' => 'gesperrt',
          'until' => 1467324000
        },
+       undef,
        {
-         'data' => '#: note: laut fritz sogar Vollsperrung
-userdel	q4::inwork; 17003,19035 17068,19016 17183,19007 17256,19002 17343,19000 17425,18997 17440,18997 17600,18994 17697,18989
-',
-         'from' => 1465077600,
-         'id' => 2791,
-         'source_id' => '2147340170',
-         'text' => 'Wartenberger Weg: Richtung Dorfstraße zwischen Egon-Erwin-Kisch-Straße und Dorfstraße Baustelle, Fahrtrichtung gesperrt, ab 06.06.2016 06:00 bis zum 11.06.2016',
-         'type' => 'handicap',
-         'until' => 1465682399
-       },
-       {
-         'data' => 'userdel	q4::inwork; 14211,11552 14305,11514 14369,11489
+         'data' => '#: note: Gehweg ist offiziell für Radfahrer befahrbar
+	q4::inwork; 14211,11552 14305,11514 14369,11489
+	3 14254,11377 14305,11514 14211,11552
+	3 14254,11377 14305,11514 14358,11656
+	3 14358,11656 14305,11514 14254,11377
+	3 14369,11489 14305,11514 14254,11377
 ',
          'from' => 1465077600,
          'id' => 2792,
          'source_id' => '2147340169',
-         'text' => 'Wühlischstr.: Richtung Boxhagener Str. zwischen Gärtnerstr. und Knorrpromenade Baustelle, Fahrtrichtung gesperrt, bis zum 27.06.2016',
+         'text' => 'Wühlischstr.: Richtung Boxhagener Str. zwischen Gärtnerstr. und Knorrpromenade Baustelle, Fahrtrichtung gesperrt, ggfs. auf Gehweg ausweichen, bis zum 27.06.2016',
          'type' => 'handicap',
          'until' => 1467064799
+       },
+       {
+         'data' => '	q4::inwork; 6454,8653 6461,8463 6459,8281
+	3 6534,8467 6461,8463 6377,8460
+	3 6377,8460 6461,8463 6534,8467
+',
+         'from' => 1465682400,
+         'id' => 2793,
+         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.485790.php',
+         'text' => 'Martin-Luther-Str.: Bauarbeiten zwischen Freiherr-vom-Stein-Str. und Heylstr., 13.6.2016 bis 8.7.2016',
+         'type' => 'handicap',
+         'until' => 1468015200
+       },
+       {
+         'data' => '	q4::inwork; 6459,8281 6461,8463 6454,8653
+	3 6534,8467 6461,8463 6377,8460
+	3 6377,8460 6461,8463 6534,8467
+',
+         'from' => 1468101600,
+         'id' => 2794,
+         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.485790.php',
+         'text' => 'Martin-Luther-Str.: Bauarbeiten zwischen Heylstr. und Freiherr-vom-Stein-Str., 11.7.2016 bis 8.8.2016',
+         'type' => 'handicap',
+         'until' => 1470693599
        }
      
 );

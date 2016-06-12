@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2016-06-02
+#: last_checked: 2016-06-10
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -218,7 +218,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2016-06-05
+#: last_checked: 2016-06-10
 #: check_frequency: 14d
 Warschauer Str: Radspuren in Bau	?::inwork 13651,11731 13696,11920 13745,12118
 # 
@@ -332,7 +332,7 @@ Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,1
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3233 vvv
 #: XXX "Durchführung der Maßnahme in 2015"
 #: osm_watch: way id="205989870" version="6"
-#: osm_watch: way id="205989877" version="10"
+#: osm_watch: way id="205989877" version="11"
 #: last_checked: 2015-09-12
 #: check_frequency: 90d
 Eichborndamm: Ersetzung der vorhandenen Radwege durch Radstreifen?	?::projected 4780,20116 4766,20084 4728,20003 4611,19769 4497,19539 4357,19261 4284,19106 4240,19019
@@ -1061,8 +1061,8 @@ Flughafen Berlin-Brandenburg - Business Park Berlin: Schotterweg, bleibt das so?
 #: XXX Radwegesanierung in Neukölln, geplant für 2013 und später vvv
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Asphalt-Radstreifen, Realisierung ab 2013)
 #: osm_watch: way id="155605301" version="7"
-#: last_checked: 2016-02-03
-#: next_check: 2016-06-03
+#: last_checked: 2016-06-12
+#: check_frequency: 120d
 Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Realisierung ab 2014)
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4757 (Vorschlag: Führungsschienen für den Elsensteg)
@@ -1236,7 +1236,7 @@ Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rumm
 #: XXX laut ersten Plänen wird der nach Norden führende Radweg schon an der Stolzenfelsstr. aufhören
 #: XXX Gestaltung der Ampelanlagen wird sich ebenfalls ändern (Godesberger Str., Ehrenfelsstr., Dönhoffstr.)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5758 (Bauarbeiten beginnen erst 2019)
-#: last_checked: 2016-02-28
+#: last_checked: 2016-06-12
 #: next_check: 2019-03-01
 Treskowallee: Bau von Radwegen	?::projected 18733,8633 18731,8577 18709,8423
 # 
@@ -1422,6 +1422,9 @@ Bebauungsplan 7-65: Weg in Planung	?::projected 7960,6059 7697,6059 7630,6016 76
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/23re.pdf/file?y=2016
+Gatower Str. - Havel: existiert hier ein für Radfahrer befahrbarer Weg? Beleuchtung? Ausschilderung? Qualität?	? -4755,9120 -4605,9093 -4611,9122
+# 
 RR8: wird die Fahrradroute auf den oberen Wuhlewanderweg geführt?	? 22295,13530 22317,13521 22472,13698
 # 
 # by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8452&options=4
@@ -1453,7 +1456,7 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	?::inwork 4815,33
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6661
 #: XXX bei der letzten Überprüfung nicht zu erkennen
-#: last_checked: 2016-05-21
+#: last_checked: 2016-06-12
 #: check_frequency: 60d
 Treskowallee: Gehweg für Radfahrer freigegeben?	?; 18733,8633 18731,8577 18709,8423
 # 
@@ -1497,6 +1500,7 @@ Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 1
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6636
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.470764.php
 #: XXX Bauzeit Ende August 2016 bis vsl. Sommer 2017
+#: last_checked: 2016-06-12
 #: next_check: 2016-08-28
 (Unterführung S-Bhf. Rummelsburg): wird während der Bauarbeiten hier komplett gesperrt sein?	? 15379,10651 15419,10706 15433,10765
 # 
@@ -1539,9 +1543,11 @@ Dietzgenstr.: Bauarbeiten zwischen Kräuter- und Wiesenkräuterweg, danach viellei
 # REMOVED (aufgenommen) --- #: source_id 2147339819 --- #: laut vmz bis Mitte Mai 2016, laut fritz bis 13.05.2016 --- Wühischstr.: zwischen Böcklinstr. und Boxhagener Str. Bauarbeiten, auch für Radfahrer relevant?	?; 14674,11370 14737,11347 14759,11339 14771,11345
 # 
 #: source_id: 129871
-#: XXX Bauarbeiten bis 30.05.2016
-#: last_checked: 2016-03-17
-#: next_check: 2016-05-30
+#: source_id: LMS-BR_r_LMS-BR_62186
+#: XXX Bauarbeiten bis 30.05.2016 (am 12.06.2016 war hier noch immer Baustelle, kein Ende in Sicht)
+#: XXX ggfs. wird es Richtung Südosten einige asphaltierte Abschnitte geben
+#: last_checked: 2016-06-12
+#: check_frequency: 60d
 Wallensteinstr.: Bauarbeiten --- gibt es hier Qualitätsverbesserungen?	?::inwork 17549,9529 18037,9195
 # 
 # REMOVED --- #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8362&options=4 --- #: XXX kein rechts-vor-links? --- Maulbeerallee: Vorfahrtsregelung?	? -6093,12801 -5975,12827 -5878,12845 -5784,12858 -5706,12869 -5594,12832 -5480,12793 -5307,12737 -5282,12730
@@ -1704,6 +1710,7 @@ Pilgramer Str.: Radfahrstreifen in Planung	?::projected 25149,10695 25149,10731 
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6273 (Empfehlung)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036102169813/102169813/00119753/53-Anlagen/02/AnlageBE.pdf (Karte)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/23re.pdf/file?y=2016 (Benennung)
 #: XXX fehlt in Berlin.coords.data
 #: osm_watch: way id="378441391" version="1"
 #: last_checked: 2016-04-17
@@ -1956,7 +1963,7 @@ Alt-Karow: evtl. wird hier ein Schutzstreifen Richtung Süden angelegt	? 15726,23
 Sonnenallee/Ziegrastr.: wird hier eine permanente Ampel entstehen?	?::projected 14174,7505
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14708&options=8 (beschlossen durch BVV)
-#: last_checked: 2016-04-06
+#: last_checked: 2016-06-12
 #: check_frequency: 60d
 Thomasstr./Hermannstr.: sichere Querung, wie wird/könnte die Lösung hier aussehen?	?::projected 12193,7412 12180,7387 12168,7368
 # 
@@ -2192,7 +2199,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: XXX_prog ^^^
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20141202.1525.400470.html
-#: last_checked: 2016-06-02
+#: last_checked: 2016-06-09
 #: check_frequency: 90d
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 
@@ -2456,14 +2463,14 @@ Lindenallee: wo befindet sich die Straße genau?	? -784,16574 -945,16725 -781,167
 #: XXX Straßennamen fehlen alle in Berlin.coords.data vvv
 #: last_checked: 2015-08-01 vvv
 #: check_frequency: 360d vvv
-Planstraße 1     -> Ankerweg	?::projected 22118,2559 22153,2582 22195,2610
-Planstraße 2     -> Am Ruderverein	?::projected 22153,2482 22208,2514 22270,2549
-Planstraße 3     -> Relingstr.	?::projected 22195,2390 22276,2426 22358,2460
-Planstraße 4,5,7 -> Teichmummelring	?::projected 22246,2272 22418,2390 22454,2342 22271,2214
+Planstraße 1     -> Ankerweg, PLZ=12527	?::projected 22118,2559 22153,2582 22195,2610
+Planstraße 2     -> Am Ruderverein, PLZ=12527	?::projected 22153,2482 22208,2514 22270,2549
+Planstraße 3     -> Relingstr., PLZ=12527	?::projected 22195,2390 22276,2426 22358,2460
+Planstraße 4,5,7 -> Teichmummelring, PLZ=12527	?::projected 22246,2272 22418,2390 22454,2342 22271,2214
 #: XXX im Plan "Privatstraße", im Amtsblatt "Planstraße"
-Planstraße 6     -> An der Dahme	?::projected 22195,2610 22270,2549 22358,2460
-Privatstraße 1   -> An der Brücke (evtl. mit Gehweg zur Regattastr.)	?::projected 22195,2610 22109,2636
-Privatstraße 2,3 -> Gaffelsteig	?::projected 22153,2582 22208,2514 22276,2426
+Planstraße 6     -> An der Dahme, PLZ=12527	?::projected 22195,2610 22270,2549 22358,2460
+Privatstraße 1   -> An der Brücke (evtl. mit Gehweg zur Regattastr.), PLZ=12527	?::projected 22195,2610 22109,2636
+Privatstraße 2,3 -> Gaffelsteig, PLZ=12527	?::projected 22153,2582 22208,2514 22276,2426
 Brücke: entsteht hier eine Brücke; wird diese für Radfahrer befahrbar sein?	?::projected 22358,2460 22418,2390
 Bebauungsplan 9-34: Planstraßen, _Uferweg_, Brücke und private Wasserfläche werden entstehen	?::projected 22290,2172 22509,2330 22377,2489 22226,2633 22133,2666 22074,2656 22290,2172
 #: check_frequency ^^^
@@ -2599,6 +2606,7 @@ Fuß- und Radweg: geplant	?::projected 18264,4830 18236,4807
 # 
 #: by: https://www.potsdam.de/sites/default/files/documents/final_amtsblatt_nr._3_2016_zur_druckfreigabe.pdf
 #: XXX Privatstraße, 14471 Potsdam
+#: XXX laut Mitteilungsblatt alter Name "Am Luftschiffhafen"
 Olympischer Weg (Potsdam): genaue Lage? Qualität? Existiert die Straße schon?	?::projected -15584,-3564 -15589,-3626 -15535,-3619
 # 
 #: by: https://www.potsdam.de/sites/default/files/documents/final_amtsblatt_nr._3_2016_zur_druckfreigabe.pdf vvv

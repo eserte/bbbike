@@ -2709,6 +2709,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -3892,13960
 	X 3005,13728
 	X 23657,5467
+#: note: Anforderungsampel
+#: XXX_prog gilt (vermutlich) nicht für Radfahrer auf dem Radweg
 	F 18165,7371
 #: off: night (seen 2013-08-25 22:30)
 	F 11579,-3093
@@ -2735,8 +2737,10 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: valid: 20140224-20180630 vvv
 #: next_check: 2018-06-30 vvv
 #: note: Ampel befindet sich nordwestlich der Kreuzung
+#: last_checked: 2016-06-12
 	F::inwork 14567,6810
-#: note: Extra-Umweg für Radfahrer in Richtung Südosten
+#: note: Extra-Umweg für Radfahrer in Richtung Südosten, Anforderungsampel in dieser Richtung
+#: last_checked: 2016-06-12
 	X::inwork 14724,6668
 	X::inwork 14366,6337
 	X::inwork 14193,6556
@@ -2751,7 +2755,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: SONNENALLEE-2014 vvv
 #: osm_watch: way id="260062339" version="7"
-#: last_checked: 2016-04-11 vvv
+#: last_checked: 2016-06-12 vvv
 #: check_frequency: 90d vvv
 #: note: Radfahrer in Richtung Südosten müssen die Seite wechseln, hier Anforderungsampel
 	X::inwork 14174,7505
