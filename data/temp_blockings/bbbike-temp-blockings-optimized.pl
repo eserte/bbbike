@@ -2472,8 +2472,8 @@ userdel auto	3 6228,10646 6216,10614 6192,10542
 	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 	3 7039,12314 7383,12095 7429,12070
 	3 7429,12070 7383,12095 7039,12314
-	3 7875,12363 7816,12150 7823,12120
-	3 7823,12120 7816,12150 7875,12363
+	3 7875,12363 7822,12201 7816,12150 7823,12120
+	3 7823,12120 7816,12150 7822,12201 7875,12363
 	3 8119,12414 8055,12186 8049,12140
 	3 8049,12140 8055,12186 8119,12414
 	3 8391,12389 8344,12221 8327,12174
@@ -3948,6 +3948,28 @@ userdel	q4::inwork 20381,1390 20405,1460
          'text' => 'Martin-Luther-Str.: Bauarbeiten zwischen Heylstr. und Freiherr-vom-Stein-Str., 11.7.2016 bis 8.8.2016',
          'type' => 'handicap',
          'until' => 1470693599
+       },
+       {
+         'data' => 'userdel	q4::inwork; 16314,15223 16119,15302
+',
+         'from' => 1465682400,
+         'id' => 2795,
+         'source_id' => '2147340189',
+         'text' => 'Werneuchener Str.: Richtung Konrad-Wolf-Str. ab Küstriner Str. Baustelle, Fahrtrichtung gesperrt, 13.06.2016 bis 02.09.2016',
+         'type' => 'handicap',
+         'until' => 1472853599
+       },
+       {
+         'data' => '#: by: Kai Pauldrach
+#: XXX Bis wann sind die Bauarbeiten beendet? Ändert sich danach etwas an der Qualität?
+#: next_check: 2016-07-13
+userdel	2::inwork 3472,24709 3481,24686 3492,24667 3535,24626
+',
+         'from' => undef,
+         'id' => 2796,
+         'text' => 'Am Rosenanger - Am Sandkrug, Entenschnabel: wegen Bauarbeiten komplett gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

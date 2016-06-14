@@ -916,7 +916,6 @@ Niederfelde: ist die gesamte Straﬂe gepflastert?	? 66126,84243 66092,84252 66062
 Auguststr. (Schwedt): Qualit‰t des westlichen Abschnitts?	? 68135,73168 68517,73160 68591,73201 68777,73351
 Theodor-Fontane-Str.: Sackgasse oder Einbahnstraﬂenregelung?	? -9835,6841 -9854,6890
 Waldweg zum Campingplatz: Qualit‰t der Straﬂe?	? 29208,71 29512,-619 29297,-717 28915,-1147 28565,-1339 28248,-1473 28162,-1294 28033,-1259 27845,-1324 27758,-1358
-Lauenburger Str.: ist die Lauenburger Str. zwischen Feuerbachstr. und Lauenburger Platz als Fahrradstraﬂe ausgewiesen?	?::projected 6008,6067 6019,6087 6014,6160 5984,6233 5918,6301 5829,6397 5823,6413
 ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchg‰ngig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	? 16377,90072 15782,90862 15728,90935 15398,92093 15661,93732 15688,93829 15748,93928 15841,94009 16435,94298 17677,94900 17796,95008 17912,95192
 ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchg‰ngig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	? 17912,95192 18005,95449
 ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchg‰ngig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	? 18029,95408 18507,96268 18676,96867 18954,97944 19022,98128 19442,99078 19582,99411
@@ -1145,7 +1144,6 @@ Imchenallee: holpriger Weg (liegt hier Asphalt?)	? -6879,4775 -6990,4531 -7025,4
 (Bucher Teiche - Schˆnerlinder Chaussee): vermutlich unbefestigter Weg (wie ist die Qualit‰t hier? vermutlich unbefestigter Weg?)	? 14017,25491 14141,25659 14216,25760 14302,26021 14352,26100 14366,26234 14538,26558 14497,26727
 Gr¸ne Aue: unbefestigte Straﬂe, Feinschotter (ist hier mittlerweile betoniert worden?)	? 21954,11269 21956,11246 21994,11209 22018,11165 22054,11091
 Rosestr.: Asphalt (wurde hier tats‰chlich asphaltiert?)	? 21329,832 21497,1042
-(entlang der Autobahn): Verbundsteinpflaster (Liegt hier noch immer Verbundsteinpflaster oder ist hier mittlerweile asphaltiert?)	? 3267,18767 3106,18868 2994,18979
 Seebadstr.: Asphalt mit einigen Sch‰den (Ist die Qualit‰t des Asphalts in der Seebadstraﬂe nach den Bauarbeiten besser geworden?)	? 4681,23273 4704,23278 4744,23289 4910,23490 5006,23575
 (Wichernstr. - Johannesstift): Kleinsteinpflaster (im nordwestlichen Abschnitt auch gepflastert?)	? -3568,18093 -3655,18177 -3699,18222 -3835,18357
 (Beetzseeweg - Zeuthener-See-Weg): Verbundsteinpflaster (liegt hier tats‰chlich Verbundsteinpflaster?)	? -1689,16584 -1685,16583 -1647,16573
@@ -1240,6 +1238,11 @@ Schmalkaldener Str.: Sandweg (zumindest ein Teil ist asphaltiert!)	? -1773,36707
 Asphalt (gut oder m‰ﬂig?)	? 36994,147794 36978,147650 36831,147400
 In der Aue: Kopfsteinpflaster (Sind Teilabschnitte der Straﬂe "In der Aue" asphaltiert?)	? -8189,-2569 -8107,-2600 -8099,-2590 -8018,-2585 -7999,-2585 -7782,-2572 -7373,-2539
 Bahnhofstr. (Altdˆbern): Asphalt (Wo genau sind die Radstreifen?)	? 53571,-83335 54112,-83500 54378,-83571 54973,-83435 55102,-83320 55116,-83084 55259,-83091
+# added from nolighting
+(Gollanczstr. - Oranienburger Chaussee) (ist hier tats‰chlich unbeleuchtet?)	? 2111,26668 2366,26842 2666,27009
+(Verl‰ngerung Senheimer Str.) (ist hier tats‰chlich unbeleuchtet?)	? 2564,26462 2493,26665 2421,26793 2366,26842 2303,26913
+(Ludwig-Lesser-Park, mittlerer Weg) (ist hier tats‰chlich unbeleuchtet?)	? 2312,25673 2293,26111
+(Senheimer Str. - Oranienburger Chaussee/Schwarzkittelweg) (ist hier tats‰chlich unbeleuchtet?)	? 2540,26280 3013,26458
 # added from brunnels
 B404 (was ist hier oben?)	? -197853,130794 -197527,130848
 # added from gesperrt

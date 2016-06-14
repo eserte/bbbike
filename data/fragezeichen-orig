@@ -39,7 +39,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
-#: last_checked: 2016-06-10
+#: last_checked: 2016-06-14
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -218,7 +218,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2016-06-10
+#: last_checked: 2016-06-14
 #: check_frequency: 14d
 Warschauer Str: Radspuren in Bau	?::inwork 13651,11731 13696,11920 13745,12118
 # 
@@ -1522,8 +1522,7 @@ Conradstr.: gibt es nach den Bauarbeiten Änderungen beim aufgemalten Radweg?	? 3
 Friedrich-Wilhelm-Platz: Ampelumbau und Radweganpassungen, ändert sich dabei etwas?	? 5429,7220 5397,7205 5352,7184
 # 
 # REMOVED (Abschnitt ist kürzer, anders) --- #: source_id: 2147339877 --- #: XXX gültig bis Mitte 07/2016, laut fritz bis 16.07.2016 --- Lindenstr.: Fahrbahnverschwenkung genauer anschauen, ggfs. Radspur bis zum Ende der Bauarbeiten entfernen	?; 9935,11067 9829,10830 9805,10791 9797,10771 9777,10719
-# 
-Buschkrugallee - Britzer Park: ist der Weg unbeleuchtet?	? 14053,4173 14045,4164 14009,4148 13910,4090 13873,4067 13798,4037 13721,4023 13656,3989 13601,3895 13573,3885 13489,3857 13463,3854 13356,3843 13302,3837
+# REMOVED --- Buschkrugallee - Britzer Park: ist der Weg unbeleuchtet?	? 14053,4173 14045,4164 14009,4148 13910,4090 13873,4067 13798,4037 13721,4023 13656,3989 13601,3895 13573,3885 13489,3857 13463,3854 13356,3843 13302,3837
 # 
 (Uferweg - Sömmeringstr.): ist der Weg unbeleuchtet?	? 3572,12866 3574,12916 3716,12925
 # 
@@ -1554,12 +1553,7 @@ Wallensteinstr.: Bauarbeiten --- gibt es hier Qualitätsverbesserungen?	?::inwork
 # REMOVED (bereits aufgenommen) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4203 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/15re.pdf/file?y=2016 --- #: XXX ggfs. auch als Grünfläche in flaechen-orig eintragen --- #: next_check: 2016-05-01 --- Selma- und Paul-Latte-Platz: Benennungsabsicht eines Platzes	? 10843,20301 10786,20272 10802,20240 10843,20301
 # REMOVED --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036470336375/470336375/00071821/21-Anlagen/02/_15-BenennungsabsichtfuerdieoeffentlicheStrass.pdf --- Straße 46: ist hier bereits die Mittelstr.?	? 14320,20580 14482,20547
 # REMOVED --- Robert-Koch-Platz: genaue Ausschilderung anschauen	? 8648,13498 8634,13588 8626,13641 8619,13689 --- Robert-Koch-Platz: genaue Ausschilderung anschauen	? 8601,13584 8634,13588 8674,13593
-# 
-#: XXX dieses Jahr (2016) vom 27.05.2016 bis zum 12.06.2016
-#: next_check: 2016-05-27
-#: priority: #A
-Steglitzer Festwoche im Bäkepark: gibt es während der Festwoche Einschränkungen für Radfahrer? Wenn ja, wo genau?	? 4742,4885 4760,4843 4795,4801 4848,4668 4870,4609 4957,4448 5015,4339 5090,4291 5129,4262 5246,4240 5320,4217 5337,4192
-# 
+# REMOVED (dieses Jahr nicht geschafft) --- #: XXX dieses Jahr (2016) vom 27.05.2016 bis zum 12.06.2016 --- #: next_check: 2016-05-27 --- #: priority: #A --- Steglitzer Festwoche im Bäkepark: gibt es während der Festwoche Einschränkungen für Radfahrer? Wenn ja, wo genau?	? 4742,4885 4760,4843 4795,4801 4848,4668 4870,4609 4957,4448 5015,4339 5090,4291 5129,4262 5246,4240 5320,4217 5337,4192
 # REMOVED (keine Einschränkungen) --- #: by: fritz --- #: source_id: 2147339783 --- Sellerstr.: Bauarbeiten zwischen Nordhafen und Müllerstr., gibt es für Radfahrer Einschränkungen?	? 7741,14560 7968,14787 8057,14876
 # REMOVED (ja, ja) --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5616&options=4 --- Finckensteinallee: gibt es hier Bordsteine oder Handicaps durch Fußgängerverkehr?	? 4115,2726 4140,2706 4170,2727
 # 
@@ -1651,7 +1645,7 @@ Seegefelder Weg: Bau von Radspuren	?::projected -6507,15007 -6861,15129
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5207
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036190348500/190348500/00109616/16-Anlagen/04/B1105ZB1.pdf
 #: XXX angestrebt zum 2016-07-05
-#: last_checked: 2016-04-26
+#: last_checked: 2016-06-13
 #: next_check: 2016-07-05
 Parkweg: Umbenennung in Bernhard-Langwaldt-Weg?	? 14652,10201 14626,10162 14597,10129 14558,10082 14453,9929 14448,9922 14404,9847 14361,9772 14318,9688
 # 
@@ -1958,7 +1952,7 @@ Alt-Karow: evtl. wird hier ein Schutzstreifen Richtung Süden angelegt	? 15726,23
 # 
 #: next_check_id: SONNENALLEE-2014
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14709&options=8 (beschlossen durch BVV, Realisierung steht noch aus)
-#: last_checked: 2016-03-04 (zurzeit eine Baustellenampel, wird eine permanente Ampel nach den Bauarbeiten aufgestellt?)
+#: last_checked: 2016-06-12 (zurzeit eine Baustellenampel, wird eine permanente Ampel nach den Bauarbeiten aufgestellt?)
 #: check_frequency: 90d
 Sonnenallee/Ziegrastr.: wird hier eine permanente Ampel entstehen?	?::projected 14174,7505
 # 
@@ -4104,18 +4098,7 @@ Waldweg zum Campingplatz: Qualität der Straße?	? 29208,71 29512,-619 29297,-717 
 # REMOVED (existiert) --- #: by: http://www.berlin.de/ba-spandau/presse/archiv/20100803.1545.305011.html --- #: XXX Baumaßnahme 5.8, Realisierung nach 2011 --- #: last_checked: 2010-03-18 (Teile auch 2010-06-26) --- #: next_check: 2010-12-01 --- Neuendorfer Str.: existieren Radspuren in der Neuendorfer Str., und wenn ja, von wo bis wo?	?::inwork -2883,15571 -2856,15687 -2869,15782 -2886,15867 -2915,15994 -3040,16246
 # REMOVED (realisiert; der südliche Abschnitt wird wahrscheinlich gar nicht realisiert) --- #: by: MoPo 2009-08-01, soll 2010 realisiert werden vvv --- #: XXX Baumaßnahme 4.22, Realisierung in 2011 vvv --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 (Realisierung noch nicht erfolgt, Mitte 2012) vvv --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) --- #: osm_watch: way id="4389511" version="13" --- #: osm_watch: way id="4495273" version="17" --- #: last_checked: 2013-12-22 vvv --- #: check_frequency: 100d vvv --- Joachim-Friedrich-Str.: existieren Radspuren in der Joachim-Friedrich-Str. südlich des Kurfürstendamms?	?::projected 3067,9592 3069,9622 3083,9796 3092,9886 3108,10069 3111,10116
 # REMOVED (teilweise realisiert, siehe radwege-orig für den Rest) --- Joachim-Friedrich-Str.: existieren Radspuren in der Joachim-Friedrich-Str.?	?::projected 3111,10116 3132,10499 3114,10550 3093,10594
-# 
-#: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=2867
-#: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=2867 (neue URL)
-#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.477564.php
-#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.481667.php (Eröffnung 1. Juni)
-#: osm_watch: way id="34822334" version="13"
-#: osm_watch: way id="69126601" version="5"
-#: osm_watch: way id="150397570" version="3"
-#: by: a.joerns ("in den nächsten Tagen")
-#: last_checked: 2016-01-09
-#: next_check: 2016-05-13
-Lauenburger Str.: ist die Lauenburger Str. zwischen Feuerbachstr. und Lauenburger Platz als Fahrradstraße ausgewiesen?	?::projected 6008,6067 6019,6087 6014,6160 5984,6233 5918,6301 5829,6397 5823,6413
+# REMOVED --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=2867 --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=2867 (neue URL) --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.477564.php --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.481667.php (Eröffnung 1. Juni) --- #: osm_watch: way id="34822334" version="13" --- #: osm_watch: way id="69126601" version="5" --- #: osm_watch: way id="150397570" version="3" --- #: by: a.joerns ("in den nächsten Tagen") --- #: last_checked: 2016-01-09 --- #: next_check: 2016-05-13 --- Lauenburger Str.: ist die Lauenburger Str. zwischen Feuerbachstr. und Lauenburger Platz als Fahrradstraße ausgewiesen?	?::projected 6008,6067 6019,6087 6014,6160 --- Lauenburger Str.: ist die Lauenburger Str. zwischen Feuerbachstr. und Lauenburger Platz als Fahrradstraße ausgewiesen?	?::projected 6014,6160 5984,6233 5918,6301 5829,6397 5823,6413
 # REMOVED (realisiert) --- Lauenburger Str.: wird die gesamte Lauenburger Str. (oder Teile davon) als Fahrradstraße ausgewiesen?	?::projected 5870,4992 5905,5088 5927,5182 5962,5296 5993,5422 6007,5785 6007,5882 6001,5974 6008,6067
 # REMOVED (Gewerbegelände, Befahren nicht erlaubt, auf der anderen Seite war das Tor zu) --- Windthorststr.: Qualität der Verlängerung? Ausschilderung?	? 22552,11029 22554,11049 22490,11133 22469,11138
 # REMOVED (eingetragen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file vvv --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2012 vvv --- #: by: http://www.berlin.de/imperia/md/content/baneukoelln/b-plan/auslegung/planzeichnungen/xiv274aa_pl_ern_oeff.pdf?start&ts=1361439967&file=xiv274aa_pl_ern_oeff.pdf vvv --- #: XXX Privatstraßen vvv --- #: last_checked: 2012-04-14 (noch in Bau) vvv --- #: next_check: 2012-12-15 vvv --- #: XXX laut osm existieren die Straßen schon --- Seeadlerweg	? 16477,-160 16519,-265 16600,-475 16648,-596 16665,-641 --- Fischadlerweg	? 16519,-265 16478,-399 16513,-510 16572,-666 --- Eulenweg	? 16600,-475 16513,-510 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: XXX ^^^ --- #: by: ^^^ --- #: by: ^^^ --- #: by: ^^^
