@@ -26,6 +26,9 @@ WRITEABLE=	chmod u+w,ugo+r
 READONLY=	chmod ugo+r,ugo-w
 
 TODAY_DATE!=	date +'%Y%m%d'
+UNAME!=		uname
+OS=		${UNAME:tl}
+USER!=		id -n -u
 
 all:	check validate targets
 
@@ -296,11 +299,11 @@ BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/trafficlightmap20.img
 BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES+=	${BBBIKETMPDIR}/trafficlightmap25.img
 .endif
 
-bbbikemap-for-garmin:	bbbikemap-for-garmin-create bbbikemap-for-garmin-transfer
+bbbikemap-for-garmin:	bbbikemap-for-garmin-create bbbikemap-for-garmin-transfer-${OS}
 
 bbbikemap-for-garmin-create: ${BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES}
 
-bbbikemap-for-garmin-transfer:
+bbbikemap-for-garmin-transfer-freebsd:
 	@echo "Set the garmin device into USB mass storage mode."
 	@echo -n "Type y to copy the files to /mnt/garmin: "
 	@read yn && [ "$$yn" = "y" ]
@@ -308,6 +311,17 @@ bbbikemap-for-garmin-transfer:
 	for i in `seq 30`; do test -e /dev/da1s1 && break; sleep 1; done
 	@echo "Ready to mount and sync"
 	mount /mnt/garmin && rsync -vP ${BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES} /mnt/garmin/garmin/ && umount /mnt/garmin
+
+bbbikemap-for-garmin-transfer-linux:
+	@echo "Set the garmin device into USB mass storage mode and mount device (e.g. with nautilus)."
+	@echo "Waiting max. 30s for /media/${USER}/*/garmin to appear"
+	for i in `seq 30`; do [ $$(ls /media/${USER}/*/garmin | wc -l) -gt 0 ] && break; sleep 1; done
+	@echo "Type y to do the following: "
+	rsync --dry-run -vP ${BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES} /media/${USER}/*/garmin/
+	@echo -n "(y/N) "
+	@read yn && [ "$$yn" = "y" ]
+	rsync -vP ${BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES} /media/${USER}/*/garmin/
+	@echo "Please unmount manually"
 
 .PHONY: ${BBBIKETMPDIR}/bbbike_routable.osm
 ${BBBIKETMPDIR}/bbbike_routable.osm:
