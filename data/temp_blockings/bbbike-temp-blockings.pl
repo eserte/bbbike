@@ -21300,12 +21300,12 @@ userdel	2::temp 22133,4644 22111,4562 22093,4499
 userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
 EOF
      },
-     { from  => $isodate2epoch->("2015-07-15 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-07-19 23:59:59"),
+     { from  => $isodate2epoch->("2016-07-13 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-07-17 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 16, months => 7]],
-       source_id => 'http://heyevent.de/event/6yi4pyoxrrtxca/tegeler-hafenfest-2015-jetzt-freunde-einladen',
-       text  => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (16.07.2015 bis 19.07.2015)',
+       recurrences => [['yearly', days => 13, months => 7]],
+       source_id => 'http://www.gratis-in-berlin.de/festivals/item/2024942-hafenfest-tegel-2016-mit-programm-und-feuerwerk',
+       text  => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (14.07.2016 bis 17.07.2016)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
@@ -21701,9 +21701,10 @@ EOF
      { from  => $isodate2epoch->("2015-07-03 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2015-07-05 23:59:59"),
        text  => 'Britzer Rosenfest an der Britzer Dorfkirche, Backbergstr. ist gesperrt, 4. und 5. Juli 2015',
-       periodic => 1,
-       recurrences => [['yearly', days => 22, months => 6]],
-       recurrence_prewarn_days => 7, # später nochmal prüfen
+       ## findet 2016 anscheinend nicht statt
+       #periodic => 1,
+       #recurrences => [['yearly', days => 22, months => 6]],
+       #recurrence_prewarn_days => 7, # später nochmal prüfen
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: wird das Fest 2016 stattfinden? siehe:
@@ -25049,7 +25050,9 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: gesehen 2016-05-11 gegen 9 Uhr
+#: note: offen am 2016-06-16 gegen 9:30 Uhr
 userdel	2::temp 8362,13466 8369,13465 8377,13463
+#: note: geschlossen am 2016-06-16 gegen 9:30 Uhr
 userdel	2::temp 8371,13399 8363,13402 8356,13404
 EOF
      },
@@ -25112,7 +25115,7 @@ userdel	q4::inwork; 17003,19035 17068,19016 17183,19007 17256,19002 17343,19000 
 EOF
      },
      { from  => 1465077600, # 2016-06-05 00:00
-       until => $isodate2epoch->("2016-06-27 23:59:59"),
+       until => 1466016161, # Fahrbahn mittlerweile wieder befahrbar --- $isodate2epoch->("2016-06-27 23:59:59"),
        text  => 'Wühlischstr.: Richtung Boxhagener Str. zwischen Gärtnerstr. und Knorrpromenade Baustelle, Fahrtrichtung gesperrt, ggfs. auf Gehweg ausweichen, bis zum 27.06.2016',
        type  => 'handicap',
        source_id => '2147340169',
@@ -25165,6 +25168,24 @@ EOF
 #: XXX Bis wann sind die Bauarbeiten beendet? Ändert sich danach etwas an der Qualität?
 #: next_check: 2016-07-13
 userdel	2::inwork 3472,24709 3481,24686 3492,24667 3535,24626
+EOF
+     },
+     { from  => 1466015432, # 2016-06-15 20:30
+       until => 1467755999, # 2016-07-05 23:59
+       text  => 'Rathausstr. (Lichtenberg): Bauarbeiten, Fahrbahn vor dem Rathaus gesperrt, bis zum 5. Juli 2016',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.488270.php',
+       data  => <<EOF,
+userdel	q4::inwork 15576,12315 15537,12367
+EOF
+     },
+     { from  => 1467583200, # 2016-07-04 00:00
+       until => 1469915999, # 2016-07-30 23:59
+       text  => 'Rathausstr. (Lichtenberg): Bauarbeiten in Höhe Rudolf-Reusch-Str., Fahrbahn gesperrt, 5. Juli 2016 bis 30. Juli 2016',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.488270.php',
+       data  => <<EOF,
+userdel	q4::inwork 15628,12246 15651,12214 15685,12154
 EOF
      },
     );

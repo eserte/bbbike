@@ -3061,7 +3061,26 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
+',
+         'from' => 1468360800,
+         'id' => 2420,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              13,
+                              'months',
+                              7
+                            ]
+                          ],
+         'source_id' => 'http://www.gratis-in-berlin.de/festivals/item/2024942-hafenfest-tegel-2016-mit-programm-und-feuerwerk',
+         'text' => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (14.07.2016 bis 17.07.2016)',
+         'type' => 'gesperrt',
+         'until' => 1468792799
+       },
        undef,
        {
          'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
@@ -3854,7 +3873,9 @@ userdel	q4::inwork; 25010,4807 25171,4757 25228,4745 25248,4752 25369,4790 25434
        undef,
        {
          'data' => '#: note: gesehen 2016-05-11 gegen 9 Uhr
+#: note: offen am 2016-06-16 gegen 9:30 Uhr
 userdel	2::temp 8362,13466 8369,13465 8377,13463
+#: note: geschlossen am 2016-06-16 gegen 9:30 Uhr
 userdel	2::temp 8371,13399 8363,13402 8356,13404
 ',
          'from' => undef,
@@ -3910,21 +3931,7 @@ userdel	q4::inwork 20381,1390 20405,1460
          'until' => 1467324000
        },
        undef,
-       {
-         'data' => '#: note: Gehweg ist offiziell für Radfahrer befahrbar
-	q4::inwork; 14211,11552 14305,11514 14369,11489
-	3 14254,11377 14305,11514 14211,11552
-	3 14254,11377 14305,11514 14358,11656
-	3 14358,11656 14305,11514 14254,11377
-	3 14369,11489 14305,11514 14254,11377
-',
-         'from' => 1465077600,
-         'id' => 2792,
-         'source_id' => '2147340169',
-         'text' => 'Wühlischstr.: Richtung Boxhagener Str. zwischen Gärtnerstr. und Knorrpromenade Baustelle, Fahrtrichtung gesperrt, ggfs. auf Gehweg ausweichen, bis zum 27.06.2016',
-         'type' => 'handicap',
-         'until' => 1467064799
-       },
+       undef,
        {
          'data' => '	q4::inwork; 6454,8653 6461,8463 6459,8281
 	3 6534,8467 6461,8463 6377,8460
@@ -3970,6 +3977,26 @@ userdel	2::inwork 3472,24709 3481,24686 3492,24667 3535,24626
          'text' => 'Am Rosenanger - Am Sandkrug, Entenschnabel: wegen Bauarbeiten komplett gesperrt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => 'userdel	q4::inwork 15576,12315 15537,12367
+',
+         'from' => 1466015432,
+         'id' => 2797,
+         'source_id' => 'http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.488270.php',
+         'text' => 'Rathausstr. (Lichtenberg): Bauarbeiten, Fahrbahn vor dem Rathaus gesperrt, bis zum 5. Juli 2016',
+         'type' => 'handicap',
+         'until' => 1467755999
+       },
+       {
+         'data' => 'userdel	q4::inwork 15628,12246 15651,12214 15685,12154
+',
+         'from' => 1467583200,
+         'id' => 2798,
+         'source_id' => 'http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.488270.php',
+         'text' => 'Rathausstr. (Lichtenberg): Bauarbeiten in Höhe Rudolf-Reusch-Str., Fahrbahn gesperrt, 5. Juli 2016 bis 30. Juli 2016',
+         'type' => 'handicap',
+         'until' => 1469915999
        }
      
 );
