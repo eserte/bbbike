@@ -2772,8 +2772,9 @@ sub do_winter_optimization {
     }
 }
 
-use vars qw($fragezeichen_on_route_nextcheck_only);
+use vars qw($fragezeichen_on_route_nextcheck_only $fragezeichen_on_route_printer_needs_utf8);
 $fragezeichen_on_route_nextcheck_only = 1;
+$fragezeichen_on_route_printer_needs_utf8 = 1;
 sub fragezeichen_on_route {
     eval {
 	require File::Temp;
@@ -2810,15 +2811,10 @@ sub fragezeichen_on_route {
 	my $txt = $t->Scrolled('ROText', -font => $main::font{'fixed'}, -scrollbars => "ose")->pack(qw(-fill both -expand 1));
 	$txt->insert("end", $res);
 	my $bf = $t->Frame->pack(-fill => 'x');
-	my $printer_needs_utf8;
-	use Sys::Hostname qw(hostname);
-	if (eval { hostname } =~ m{^cvrsnica(\.|$)}) { # here cups is running, maybe this is the case for all cups systems?
-	    $printer_needs_utf8 = 1;
-	}
 	$bf->Button(-text => "Print",
 		    -command => sub {
 			open my $ofh, "|-", "lpr" or die $!;
-			if ($printer_needs_utf8) {
+			if ($fragezeichen_on_route_printer_needs_utf8) {
 			    binmode $ofh, ':utf8';
 			}
 			print $ofh $res;
@@ -2830,7 +2826,7 @@ sub fragezeichen_on_route {
 			 -command => sub { fragezeichen_on_route() },
 			)->pack(-side => 'left');
 	$bf->Checkbutton(-text => 'printer needs utf-8',
-			 -variable => \$printer_needs_utf8,
+			 -variable => \$fragezeichen_on_route_printer_needs_utf8,
 			)->pack(-side => 'left');
     };
     if ($@) {
