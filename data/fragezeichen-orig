@@ -1314,8 +1314,9 @@ Uferweg - Heidestraﬂe: Fuﬂg‰nger- und Radfahrerbereich	?::projected 8044,13929 7
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/1-64a_ve_bebauungsplanentwurf_3-2-bl_1.pdf
 #: by: http://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2015/pressemitteilung.364910.php
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/abwaegung/1-64a_ve/index.shtml
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2016 (Straﬂenbenennung)
 #: XXX Gr¸nfl‰chen teilweise entfernen, culdesac hinzuf¸gen
-#: XXX vorgeschlagene Straﬂennamen: B‰rbel-Bohley-Ring (groﬂer Straﬂenring, C, D, E) und Lichtburgring (A, B)
+#: XXX vorgeschlagene Straﬂennamen: B‰rbel-Bohley-Ring (groﬂer Straﬂenring, C, D, E) und Lichtburgring (A, B); teilweise Privatstraﬂen
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7285
 #: next_check: 2017-01-01
 Planstraﬂen 1.1 und 1.2	?::projected 9991,15629 9898,15864 9746,15862
@@ -1422,8 +1423,10 @@ Bebauungsplan 7-65: Weg in Planung	?::projected 7960,6059 7697,6059 7630,6016 76
 # - Fragen nach genauen Routenverl‰ufen
 # - XXX_prog- und XXX_indoor-Eintr‰ge
 # 
+#: XXX laut rbbtext bis Ende Juni 2016 g¸ltig
 #: last_checked: 2016-06-16
-Fennstr./Tegeler Str.: wann wird die Fuﬂg‰ngerampel eingeschaltet?	? 7464,14636
+#: next_check: 2016-06-17
+Fennstr./Tegeler Str.: wann wird die Fuﬂg‰nger- oder Baustellenampel eingeschaltet?	? 7464,14636
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/23re.pdf/file?y=2016
 Gatower Str. - Havel: existiert hier ein f¸r Radfahrer befahrbarer Weg? Beleuchtung? Ausschilderung? Qualit‰t?	? -4755,9120 -4605,9093 -4611,9122
@@ -2586,6 +2589,12 @@ Wedding/Prenzlauer Berg: Bezirksgrenzen werden ver‰ndert	?::projected 10271,1495
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/450810361070618957/1070618957/00129770/70-Anlagen/08/1482-2016-Anlage-7-1-67_VE_FEST_02_Abzeichnung.pdf
 #: next_check: 2017-03-01
 Rad- und Gehweg geplant: Qualit‰t, genaue Lage?	?::projected 7459,13912 7562,13968
+# 
+#: XXX im Zuge des Bebauungsplans 1-67VE
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2016
+#: XXX Privatstraﬂe, Eintrag in Berlin.coords.data fehlt
+#: next_check: 2017-03-01
+Klara-Franke-Str.: geplant	?::projected 7377,14080 7464,14133 7562,13968 7662,13784 7564,13735
 # 
 #: by: http://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2016/pressemitteilung.445338.php
 #: XXX Gleislinse in Adlershof: Bebauungsplan 9-60
