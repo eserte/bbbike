@@ -18,7 +18,7 @@
 
     use strict;
     use vars qw($VERSION);
-    $VERSION = '0.05';
+    $VERSION = '0.06';
 
     sub has_gps_settings { 1 }
 
@@ -89,10 +89,11 @@
 	# do the mount (maybe)
 
 	my($mount_point, $mount_device, @mount_opts);
-	# XXX configuration stuff vvv
+	my @mount_point_candidates;
+	my $udisksctl; # will be set if Linux' DeviceKit is available
 	if ($^O eq 'freebsd') {
 	    my $garmin_disk_type = 'flash';
-	    $mount_point = '/mnt/garmin-internal';
+	    $mount_point = '/mnt/garmin-internal'; # *** configuration ***
 	    $mount_device = _guess_garmin_mount_device_via_hal($garmin_disk_type);
 	    if (!defined $mount_device) {
 		warn "Cannot get garmin $garmin_disk_type via hal, try fallback via log...\n";
@@ -112,34 +113,110 @@
 		_status_message("The Garmin device is not mounted --- is the device in USB mass storage mode?", 'error');
 		return;
 	    }
-	} else {
-	    my @mount_point_candidates;
-	    if ($^O eq 'darwin') {
-		@mount_point_candidates = (
-					   '/Volume/GARMIN',
-					  );
-	    } else { # e.g. linux, assume device is already mounted
+	} elsif ($^O eq 'linux') {
+	    my $check_udisksctl = '/usr/bin/udisksctl';
+	    if (-x $check_udisksctl) {
+		$udisksctl = $check_udisksctl;
+		my $info_dialog_active;
+		my $max_wait = 60; # wait max. 60s
+		my $check_mount_device = '/dev/disk/by-label/GARMIN';
+		require IPC::Open3;
+		for (1..$max_wait) {
+		    my($stdinfh,$stdoutfh,$stderrfh);
+		    my $pid = IPC::Open3::open3(
+						$stdinfh, $stdoutfh, $stderrfh,
+						$udisksctl, 'info', '-b', $check_mount_device,
+					       );
+		    waitpid $pid, 0;
+		    if ($? == 0) {
+			$mount_device = $check_mount_device;
+			last;
+		    }
+		    if (!$info_dialog_active) {
+			_status_message("Wait for Garmin device (max $max_wait seconds)...", "infoauto");
+			$info_dialog_active = 1;
+		    }
+		    sleep 1;
+		}
+		if ($info_dialog_active) {
+		    _info_auto_popdown();
+		}
+		if (!$mount_device) {
+		    die "No Garmin device appeared in $max_wait seconds";
+		}
+	    } else {
+		_status_message("udisksctl (from packages udisks2) not available, assume that device is already mounted", "info");
 		@mount_point_candidates = (
 					   '/media/' . eval { scalar getpwuid $< } . '/GARMIN',     # e.g. Ubuntu 13.10, Mint 17, Debian/jessie
 					   '/media/GARMIN',                                         # e.g. Mint 13
 					   '/run/media/' . eval { scalar getpwuid $< } . '/GARMIN', # e.g. Fedora 20
 					  );
+		# try mounting later
 	    }
-	    for my $mount_point_candidate (@mount_point_candidates) {
-		if (_is_mounted($mount_point_candidate)) {
-		    $mount_point = $mount_point_candidate;
-		    last;
+	} elsif ($^O eq 'darwin') {
+	    @mount_point_candidates = (
+				       '/Volume/GARMIN',
+				      );
+	} else {
+	    _status_message("Don't know how to handle Garmin device under operating system '$^O'", "info");
+	}
+
+	# At this point we have either
+	# * $udiskctl defined (and $mount_device)
+	# * $mount_point defined
+	# * @mount_point_candidates maybe defined
+
+	if (!$mount_point && !$udisksctl) {
+	    if (@mount_point_candidates) {
+		for my $mount_point_candidate (@mount_point_candidates) {
+		    if (_is_mounted($mount_point_candidate)) {
+			$mount_point = $mount_point_candidate;
+			last;
+		    }
 		}
-	    }
-	    if (!$mount_point) {
-		_status_message("The Garmin device is not mounted in the expected mount points (tried @mount_point_candidates)", 'error');
-		return;
+		if (!$mount_point) {
+		    _status_message("The Garmin device is not mounted in the expected mount points (tried @mount_point_candidates)", 'error');
+		    return;
+		}
+	    } else {
+		_status_message("We don't have any mount point candidates to check, so we don't know if the Garmin device is already mounted", 'error');
 	    }
 	}
-	# XXX configuration stuff ^^^
 
 	my $need_umount;
-	if (!_is_mounted($mount_point)) {
+	if ($udisksctl) {
+	    my @info_cmd = ($udisksctl, 'info', '-b', $mount_device);
+	    open my $fh, '-|', @info_cmd
+		or die "Command @info_cmd failed: $!";
+	    while(<$fh>) {
+		if (/^\s*MountPoints:\s+(.*)$/) {
+		    if (length $1) {
+			$mount_point = $1;
+			last;
+		    }
+		}
+	    }
+	    close $fh;
+
+	    if (!defined $mount_point) {
+		my @mount_cmd = ($udisksctl, 'mount', '-b', $mount_device);
+		open my $fh, '-|', @mount_cmd
+		    or die "Command @mount_cmd failed: $!";
+		my $res = <$fh>;
+		close $fh;
+		if ($? != 0) {
+		    die "Running '@mount_cmd' failed";
+		}
+		if ($res =~ m{^Mounted \S+ at (.*)\.$}) {
+		    $mount_point = $1;
+		    $need_umount = 1;
+		} else {
+		    die "Cannot parse result line '$res'";
+		}
+	    }
+
+	    die "ASSERTION FAILED: no mount point" if !defined $mount_point;
+	} elsif (!_is_mounted($mount_point)) {
 	    if ($mount_device) {
 		my @mount_cmd = ('mount', @mount_opts, $mount_device, $mount_point);
 		system @mount_cmd;
@@ -171,7 +248,7 @@
 		return;
 	    }
 	}
-
+	
 	######################################################################
 	# call the callback
 
@@ -181,9 +258,43 @@
 	# do the unmount (maybe)
 
 	if ($need_umount) {
-	    system("umount", $mount_point);
-	    if ($? != 0) {
-		die "Umounting $mount_point failed";
+	    require IPC::Open3;
+	    require Symbol;
+	    my $max_wait = 10;
+	    my $wait_start = time;
+	    my $wait_until = time + $max_wait;
+	    my $info_dialog_active;
+	    while () {
+		my($stdinfh,$stdoutfh,$stderrfh);
+		$stderrfh = Symbol::gensym(); # we create a symbol for the errfh because open3 will not do that for us 
+		my $pid = IPC::Open3::open3(
+					    $stdinfh, $stdoutfh, $stderrfh,
+					    'umount', $mount_point,
+					   );
+		my $stderr = join '', <$stderrfh>;
+		waitpid $pid, 0;
+		if ($? == 0) {
+		    last;
+		}
+		if ($stderr =~ /target is busy/) {
+		    if (time > $wait_until) {
+			die "$mount_point is still busy, cannot unmount";
+		    }
+		    if (!$info_dialog_active) {
+			_status_message("Target is busy while running 'umount $mount_point', wait max. $max_wait seconds...", "infoauto");
+			$info_dialog_active = 1;
+		    }
+		    if (time - $wait_start <= 1) {
+			select undef, undef, undef, 0.1;
+		    } else {
+			sleep 1;
+		    }
+		} else {
+		    die $stderr;
+		}
+	    }
+	    if ($info_dialog_active) {
+		_info_auto_popdown();
 	    }
 	    if (_is_mounted($mount_point)) {
 		die "$mount_point is still mounted, despite of umount call";
@@ -340,8 +451,11 @@ etrex 30).
 
 =head2 Linux desktops
 
-It is assumed that the device is mounted in a directory like
-F</media/GARMIN> or F</run/media/$USER/GARMIN>.
+If the C<udisks2> package is installed, then detection and mounting of
+the Garmin flash card is done automatically.
+
+Otherwise it is assumed that the device is manually mounted in a
+directory like F</media/GARMIN> or F</run/media/$USER/GARMIN>.
 
 =head2 Windows
 
