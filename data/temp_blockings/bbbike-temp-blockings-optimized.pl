@@ -3303,7 +3303,18 @@ userdel	2::night 17671,13132 17684,13133
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: ZIMMERMANNSTRBR-2015
+# REMOVED (keine Bauarbeiten mehr) --- #: next_check_id: ZIMMERMANNSTRBR-2014 --- #: last_checked: 2014-02-08 --- #: next_check: 2014-06-30 (bei VMZ entfernt!) --- #: add_fragezeichen: Sind die Bauarbeiten auf der Zimmermannstraßenbrücke und am Wuhlewanderweg mittlerweile beendet?
+# REMOVED userdel	2::inwork 21385,9049 21365,9059 21351,9066
+	2::inwork 21467,9236 21385,9049
+',
+         'from' => undef,
+         'id' => 2527,
+         'text' => 'Wuhlewanderweg: an der Zimmermannstraßenbrücke wegen Bauarbeiten gesperrt',
+         'type' => 'gesperrt',
+         'until' => 1473890400
+       },
        undef,
        undef,
        undef,
@@ -3997,6 +4008,28 @@ userdel	2::inwork 3472,24709 3481,24686 3492,24667 3535,24626
          'text' => 'Rathausstr. (Lichtenberg): Bauarbeiten in Höhe Rudolf-Reusch-Str., Fahrbahn gesperrt, 5. Juli 2016 bis 30. Juli 2016',
          'type' => 'handicap',
          'until' => 1469915999
+       },
+       {
+         'data' => '#: by: http://www.friedrichshagen.net/baustelle-friedrichshagen/
+#: last_checked: 2016-06-19
+#: check_frequency: 60d
+userdel	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
+',
+         'from' => undef,
+         'id' => 2799,
+         'text' => 'Bahnbrücke an der Erpe: wegen Bauarbeiten ist der Weg unter Umständen nicht passierbar',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: last_checked: 2016-06-19
+	2::inwork 24897,11083 24899,11044 24905,10955 24913,10884 24919,10818 24922,10785 24923,10774
+',
+         'from' => undef,
+         'id' => 2800,
+         'text' => 'Theodorstr.: Bauarbeiten, Straße kann gesperrt sein',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

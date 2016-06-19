@@ -48,8 +48,8 @@ Halenseestr.	1 2394,9714 2360,9754 2297,9827 2163,10024
 # nordwestlicher Teil
 Halenseestr.	1 1939,10446 1901,10566 1928,10728
 Rasthof Avus	1 1870,10406 1882,10356 1847,10323 1723,10289 1692,10348 1793,10424 1833,10427 1870,10406
-Breitenbachplatz (Westseite)	1 4292,6558 4218,6583 4111,6651 4074,6681 4021,6729 3947,6814
-Breitenbachplatz (Ostseite)	1 3981,6850 4061,6753 4107,6718 4146,6693 4250,6625 4292,6558
+Breitenbachplatz (Westseite)	1 4423,6477 4335,6523 4218,6583 4111,6651 4074,6681 4021,6729 3947,6814
+Breitenbachplatz (Ostseite)	1 3981,6850 4061,6753 4103,6716 4141,6688 4248,6620 4347,6551 4423,6477
 Inselstr. Schwanenwerder	1 -5310,4216 -5393,4211 -5453,4274 -5471,4412 -5442,4526 -5386,4539 -5341,4511 -5358,4404 -5356,4296 -5310,4216
 Bayerischer Platz	1 6059,9118 6044,9223 6084,9242 6131,9241 6152,9136 6147,9100 6115,9088 6076,9091 6059,9118
 #: confirmed_by: osm
@@ -579,9 +579,9 @@ Neuendorfer Str.	1 -3228,14794 -3251,14741
 Büdnerring	1 7997,18524 7902,18575 7892,18603 7926,18665 8037,18673 8063,18659 8066,18632 7997,18524
 Steilpfad	1s:q3 3375,21230 3280,21477
 Jebensstr.	1 5587,11397 5459,11135
-Breitenbachplatz	1 4107,6718 4074,6681 4034,6642 3983,6599 3925,6604 3938,6651 4021,6729 4061,6753
+Breitenbachplatz	1 4103,6716 4074,6681 4034,6642 3983,6599 3925,6604 3938,6651 4021,6729 4061,6753
 Südwestkorso	1 4061,6753 4206,6820
-Südwestkorso	1 4206,6820 4125,6763 4107,6718
+Südwestkorso	1 4206,6820 4125,6763 4103,6716
 Kleine Markusstr. - Krautstr.	1 12021,12066 11958,12112
 Kleine Markusstr. - Krautstr.	1 11958,12112 11962,12034 12002,12008
 Schönstedtstr.	1 12540,8458 12649,8535
@@ -933,7 +933,7 @@ Wuhletalstr. (Richtungsfahrbahn)	1::igndisp 21066,17503 20891,17572 20769,17650
 Trusetaler Str.	1s:q3 21285,17276 21360,17261 21352,17210 21451,17189 21435,17097
 Blumberger Damm	1s:q4 21733,15755 21719,15666
 Landhausring	1 21710,12798 21866,12763 21893,12783 21900,12820 21880,12858 21729,12894
-Kaulsdorfer Str.	1 22539,6258 22324,6397
+Kaulsdorfer Str.	1 22539,6258 22325,6385
 Kreisverkehr Brebacher Weg	1 21655,12521 21642,12538 21651,12569 21666,12577 21674,12565 21671,12532 21655,12521
 Kreisverkehr Brebacher Weg	1 21581,12182 21570,12191 21575,12212 21589,12217 21602,12208 21598,12185 21581,12182
 Hirteplatz: Kreisverkehr	1 23766,5281 23775,5271 23775,5258 23765,5248 23751,5248 23744,5262 23743,5268 23746,5276 23756,5280 23766,5281
@@ -1198,6 +1198,7 @@ Bernhard-Kellermann-Str.	1 -10183,-4402 -10277,-4471 -10399,-4335 -10360,-4236
 Ernst-von-Bergmann-Klinikum	1 -12365,-752 -12360,-772 -12351,-828
 Ernst-von-Bergmann-Klinikum	1 -12351,-828 -12374,-849 -12402,-829 -12413,-789 -12418,-764
 Am Böttcherberg	1s:q2 -9565,62 -9541,97 -9539,147
+Ahornallee [Privatstraße] (Mahlsdorf)	1 24637,9828 24527,9850 24513,9796
 ###################################################################### 
 # elsewhere in Brandenburg
 #: by: rjoop
@@ -1458,7 +1459,7 @@ Falkenseer Chaussee: Mittelstreifen	3nocross -5039,15618 -5153,15658 -5370,15721
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20822,14594 20868,14698 20944,14840
 Landsberger Allee: Mittelstreifen	3nocross 20260,15434 20532,15564 20580,15586
 Landsberger Allee: Mittelstreifen	3nocross 15256,14237 15430,14262 15850,14308
-Alt-Kaulsdorf: Mittelstreifen	3nocross 22484,11270 22756,11268 22937,11265
+Alt-Kaulsdorf: Mittelstreifen	3nocross 22483,11261 22756,11261 22937,11265
 Alt-Kaulsdorf: Mittelstreifen	3nocross 23101,11261 23362,11263 23447,11264 23648,11265
 Alt-Mahlsdorf: Mittelstreifen	3nocross 24175,11265 24019,11264 23848,11264 23648,11265
 Marienfelder Chaussee: Mittelstreifen	3nocross 11012,1210 11157,1269 11216,1293
@@ -1687,7 +1688,7 @@ Große-Leege-Str.: Mittelstreifen mit Bordsteinen und parkenden Autos	3nocross 15
 Köpenicker Landstraße: Mittelstreifen mit Bordsteienen	3nocross 16353,7226 16195,7398 15920,7697
 Max-Born-Str.: Straßenbahntrasse	3nocross 19053,2890 19021,2946 18946,3077
 Ostseestr.: Mittelstreifen	3nocross 12216,16120 12232,16110 12347,16039
-Schildhornstreifen: Mittelstreifen vor dem Autobahnanschluss	3nocross 4292,6558 4338,6528 4423,6477
+# REMOVED (Fahrbahnen getrennt) --- Schildhornstreifen: Mittelstreifen vor dem Autobahnanschluss	3nocross 4338,6528 4423,6477
 Adlergestell: Mittelstreifen	3nocross 19735,3643 19812,3561 19857,3514 19904,3464
 Adlergestell: Mittelstreifen	3nocross 19735,3643 19676,3705 19633,3751 19587,3801
 Silberberger -> Adlergestell: Abbiegen verboten	3 19804,3697 19735,3643 19812,3561
@@ -2090,6 +2091,7 @@ Treppe	0:40 1888,42795
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+weites Drängelgitter	BNP:2::trailer=7 21917,10991
 Drängelgitter	BNP:3::trailer=10 26246,12648
 Drängelgitter	BNP:3::trailer=10 26183,12676
 #: note: am So, 2016-04-17 gegen 15 Uhr offen vvv
@@ -2686,7 +2688,7 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: last_checked: 2016-06-13
+#: last_checked: 2016-06-19
 Haasestr.: Bauarbeiten, keine Durchfahrt möglich	2::inwork 14328,11320 14286,11186
 # 
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 vvv --- #: last_checked: 2016-06-02 vvv --- #: check_frequency: 14d vvv --- Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12844,9351 12851,9309 12907,9073 --- Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12907,9073 12851,9309 12844,9351
@@ -2766,22 +2768,9 @@ Fünf Morgen: Bauarbeiten, gesperrt. Wird es eine Anbindung an den Hüttenweg gebe
 #: next_check: 2016-09-01
 Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 # 
-#: XXX wann wird die Straße eröffnet?
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2016 (Widmung von Straßenland)
-#: osm_watch: way id="266854579" version="6"
-#: last_checked: 2015-08-02
-Am Theodorpark: noch gesperrt	2::inwork 24905,10955 25053,10959 25143,10961
-# 
-#: XXX wann wird die Straße eröffnet?
-#: last_checked: 2015-08-02
-#: check_frequency: 90d
-Theodorstr.: Bauarbeiten, gesperrt	2::inwork 24897,11083 24905,10955 24913,10884 24919,10818 24922,10785 24923,10774
-# 
-#: XXX wann wird der Weg eröffnet?
-#: last_checked: 2015-08-02
-#: check_frequency: 90d
-(Weg im Theodorpark)	2::inwork 24922,10785 24954,10770 25021,10768 25062,10762 25148,10769
-# 
+# REMOVED --- #: XXX wann wird die Straße eröffnet? --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2016 (Widmung von Straßenland) --- #: osm_watch: way id="266854579" version="6" --- #: last_checked: 2015-08-02 --- Am Theodorpark: noch gesperrt	2::inwork 24905,10955 24949,10956 25055,10959 25143,10961
+# REMOVED -> temp-blockings --- #: XXX wann wird die Straße eröffnet? --- #: last_checked: 2015-08-02 --- #: check_frequency: 90d --- Theodorstr.: Bauarbeiten, gesperrt	2::inwork 24897,11083 24899,11044 24905,10955 24913,10884 24919,10818 24922,10785 24923,10774
+# REMOVED (offen) --- #: XXX wann wird der Weg eröffnet? --- #: last_checked: 2015-08-02 --- #: check_frequency: 90d --- (Weg im Theodorpark)	2::inwork 24922,10785 24954,10770 25021,10768 25062,10762 25148,10769
 # REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2016 (Grundstücksnummerierungen) --- #: XXX laut osm offen ("residential") --- #: osm_watch: way id="338546087" version="3" --- #: last_checked: 2015-08-02 --- #: next_check: 2015-11-02 (public) --- Pfarrhufenanger: noch in Bau, gesperrt	2::inwork 25599,13069 25441,12838 25272,12629
 # 
 #: XXX Ende der Bauarbeiten?
@@ -2915,6 +2904,12 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 #: check_frequency: 180d
 Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352
 # 
+#: last_checked: 2016-07-19
+Frauenauer Str.: Straße fertig, aber noch gesperrt	2::inwork 19663,9757 19858,9775
+# 
+#: last_checked: 2016-07-19
+Kirchdorfer Str.: Straße fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9775 19871,9680
+# 
 #: osm_watch: way id="24845189" version="12"
 #: last_checked: 2016-05-22
 #: check_frequency: 60d
@@ -2949,8 +2944,9 @@ am Osthafen: durch Barriere versperrt	2::inwork 14259,10309 14463,10212
 #: osm_watch: way id="129104626" version="4"
 #: XXX culdesac-orig entfernen, sobald die Verlängerung erfolgt ist
 #: by: http://www.rbb-online.de/politik/beitrag/2014/07/bnd-zentrale-berlin-verzoegerung-vollstaendiger-umzug-bis-2017.html
+#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7441
 #: last_checked: 2016-06-16
-#: check_frequency: 90d
+#: check_frequency: 60d
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Durchfahrt verboten	2 8251,14337 8442,14456
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv

@@ -13,7 +13,7 @@
 #: source_id: 2147339819
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.415646.php
 #: XXX laut vmz bis Mitte Mai 2016, laut fritz bis 13.05.2016, tats‰chlich aber noch l‰nger g¸ltig --- bis wann?
-#: last_checked: 2016-06-12 vvv
+#: last_checked: 2016-06-19 vvv
 #: valid: -20160813 vvv
 W¸hlischstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14575,11407 14674,11370 14737,11347 14759,11339 14771,11345
 #: valid ^^^
@@ -22,7 +22,7 @@ W¸hlischstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14575,11407 14674,
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraﬂe wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2016-06-15 vvv
+#: last_checked: 2016-06-19 vvv
 Revaler Str.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14357,11148 14286,11186
 # REMOVED (keine Behinderungen mehr) --- Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 # REMOVED (gibt's nicht mehr?) --- Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraﬂe ausgewiesen	q3::inwork; 14442,11101 14468,11203
@@ -32,14 +32,8 @@ Dˆringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,112
 #: last_checked ^^^
 # 
 # REMOVED --- #: last_checked: 2016-03-07 --- #: check_frequency: 7d --- Revaler Str.: Bauarbeiten an der Kreuzung Warschauer Str.	q3::inwork 13588,11490 13711,11458
-# 
-#: XXX laut Fritz bis Ende M‰rz 2016 (sieht aber schlecht aus f¸r diesen Termin)
-#: last_checked: 2016-06-13 vvv
-#: check_frequency: 7d vvv
-Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
-# REMOVED --- Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED (beendet) --- #: XXX laut Fritz bis Ende M‰rz 2016 (sieht aber schlecht aus f¸r diesen Termin) --- #: last_checked: 2016-06-13 vvv --- #: check_frequency: 7d vvv --- Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
+# REMOVED --- Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: last_checked: 2016-06-15
 Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
@@ -343,7 +337,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung S¸de
 #: XXX laut vmz bis Ende August 2016, laut fritz bis 31.07.2016
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1604/nachricht5997.html
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.470764.php
-#: last_checked: 2016-05-29
+#: last_checked: 2016-06-19
 #: next_check: 2016-07-31
 Kynaststr./Hauptstr.: Bauarbeiten, Gehweg benutzen	q3::inwork 14882,10732 14906,10820
 # 
@@ -404,9 +398,9 @@ Malmˆer Str.: Einbahnstraﬂenregelung wegen Bauarbeiten an der Bˆsebr¸cke	q4::inw
 #: source_id: IM_024857
 #: source_id: 2147339545
 #: osm_watch: way id="25795962" version="14" 
-#: last_checked: 2015-06-21
-#: next_check: 2016-03-15
-Zimmermannstraﬂenbr¸cke: Bau einer neuen Br¸cke, Radfahrer m¸ssen den Gehweg bzw. Behelfsbr¸cke benutzen	q4::inwork 21351,9066 21365,9059 21385,9049
+#: last_checked: 2016-06-19
+#: next_check_id: 2016-09-15
+Zimmermannstraﬂenbr¸cke: Bau einer neuen Br¸cke, Radfahrer m¸ssen den Gehweg bzw. Behelfsbr¸cke benutzen	q4::inwork 21430,9026 21385,9049 21365,9059 21351,9066 21314,9083
 # 
 #: temporary ^^^
 ######################################################################
@@ -420,7 +414,7 @@ Wuhlewanderweg: steiles Gef‰lle, Fuﬂg‰nger	q4; 21970,12153 21998,12204
 #: last_checked ^^^
 #: XXX ^^^
 #: next_check_id ^^^
-(An der Wuhle, ˆstliches Ufer): Fuﬂg‰nger	q1 21323,8481 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
+(An der Wuhle, ˆstliches Ufer): Fuﬂg‰nger	q1 21316,8487 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
 Pappelplatz (Mitte): gemeinsamer Fuﬂ- und Radweg	q2 9750,14132 9676,14046
 (Frankfurter Allee - Liebigstr.): Fuﬂg‰nger	q2 13885,12279 13927,12370
 Otto-Ludwig-Str.: Fuﬂg‰ngerzone	q2 4862,10881 4954,10876
@@ -823,8 +817,9 @@ Karl-Marx-Allee - Kadiner Str.: Fuﬂg‰nger	q1 13543,12326 13556,12302 13555,12259
 Spreeuferweg - Elisabeth-Abegg-Str.: Rampe	q3 7923,12872 7885,12821
 (s¸dliche Fahrbahn des Sachsendamms - Naturpark Schˆneberg): Rampe	q2 7696,7562 7739,7531 7708,7539 7747,7521
 Heidenfeldstr.: Gehweg	q1 13433,13346 13393,13326
-#: XXX_prog BS an der Lichtenberger Br¸cke, Absenkung auf der anderen Seite, ansonsten q1; kein Bordstein bei der Fahrt in entgegengesetzter Richtung
-(Gudrunstr. - Lichtenberger Br¸cke): Gehweg, Bordsteine	q2 16837,11920 16833,11897 16818,11878 16803,11859
+(Gudrunstr. - Lichtenberger Br¸cke): Gehweg	q1 16837,11920 16833,11897 16818,11878
+#: XXX_prog BS an der Lichtenberger Br¸cke, ansonsten q1; man kˆnnte aber auch am MonimbÛplatz legal auf den Gehweg ohne Bordstein wechseln
+(Gudrunstr. - Lichtenberger Br¸cke): Gehweg, Bordstein	q3 16818,11878 16803,11859
 Gr¸nstr.: Fuﬂg‰ngerzone, Radfahren erlaubt	q2 22111,4562 22162,4546 22214,4548 22324,4586
 Schloﬂplatz Kˆpenick: Fuﬂg‰nger, Straﬂenbahn, Lieferverkehr	q2 22111,4562 22093,4499
 (Karlsgartenstr. - Hasenheide): Parkweg, Fuﬂg‰nger	q1 11627,8485 11560,8480 11508,8491 11333,8582 11255,8591
@@ -1639,8 +1634,7 @@ Zur Kreutzigerstr.: enger Hausdurchgang	q3 14291,12220 14285,12190
 #: XXX_prog BS Bordstein an der Fischerstr.
 (Zobtener Str. - Fischerstr.): Fuﬂg‰nger, Rampe, Bordstein	q2 16353,10207 16404,10286
 (Fischerstr. - L¸ckstr.): Fuﬂg‰nger, teilweise recht eng	q2 16404,10286 16488,10381 16516,10448 16501,10460 16572,10613 16587,10613
-#: XXX_prog BS Bordstein am MonimbÛplatz, ansonsten entfernen
-(Skandinavische Str. - Lichtenberger Br¸cke/MonimbÛplatz): Bordstein	q2 17023,11908 17026,11888
+# REMOVED (BS existiert nicht mehr) --- #: XXX_prog BS Bordstein am MonimbÛplatz, ansonsten entfernen --- (Skandinavische Str. - Lichtenberger Br¸cke/MonimbÛplatz): Bordstein	q2 17023,11908 17026,11888
 #: note: abgesenkter Bordstein zur Wallstr.
 M‰rkischer Platz: Fuﬂg‰nger	q2 11034,12038 11084,12070 11111,12027
 #: XXX_prog BS zur Gr¸nstraﬂenbr¸cke
@@ -2153,7 +2147,7 @@ Georg-Steger-Weg: einige Fuﬂg‰nger	q1 1493,2247 1480,2199 1452,2095 1461,2073 14
 Kˆnigsheideweg - S¸dostallee: Kleingartengel‰nde	q1 15784,5865 15788,5898 15793,5945 15863,5956 15934,5972 15964,5940 16091,6003 16113,6027 16125,6059
 Kˆnigsheideweg - S¸dostallee: Kleingartengel‰nde	q1 15788,5898 15881,5901 15967,5924 15964,5940
 Engelwurzweg: teilweise recht eng	q3 25059,6554 24738,6418
-(Marzahner Chaussee - Gensinger Str.): gemeinsamer Rad- und Gehweg	q1 18580,11874 18698,11914 18913,11907
+(Marzahner Chaussee - Gensinger Str.): gemeinsamer Rad- und Gehweg	q1 18580,11874 18698,11914 18888,11907 18913,11907
 #: XXX_prog BS auf beiden Seiten, ansonsten q3 (zu kurze Strecke f¸r q2) vvv
 Platz vor dem Neuen Tor: Bordsteine, Fuﬂg‰nger	q4 8588,13673 8590,13653
 Platz vor dem Neuen Tor: Bordsteine, Fuﬂg‰nger	q4 8659,13708 8662,13688
@@ -2163,6 +2157,9 @@ Borretschweg: eng	q2 24300,6142 24275,6156
 Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 (Britzer Str. - Uferweg): Radfahren verboten	q4 18470,5600 18506,5596
 (Britzer Str. - Uferweg): Radfahren verboten	q4 18470,5600 18473,5645
+#: XXX wird das Radfahren hier erlaubt werden?
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
+#: next_check: 2016-09-01
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
 Insel-R¸gen-Weg: eng	q2 10967,17671 10978,17589 11064,17599
@@ -2344,6 +2341,8 @@ Falkenberger Str.: Bordstein	q3 15819,16857 15892,16834
 (Neuhausweg - Ramin-Park): einige Fuﬂg‰nger, Bordstein	q2 -3964,14507 -3950,14519
 Fˆlderichplatz: Fuﬂg‰ngerzone	q3 -3942,12559 -3941,12376
 (Marzahner Promenade - Landsberger Allee [Wohngebiet]): Fuﬂg‰nger	q1 20759,15740 20789,15736
+#: note: an der Schlichtallee, Abbremsen notwendig; die Pollerreihe an der eigentlichen Fischerstr. ist unterbrochen und gut umfahrbar
+Fischerstr.: Pollerreihe	q2; 15982,10765 16080,10743
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -2608,7 +2607,7 @@ Hechtgraben: eng, Fuﬂg‰nger, Treppen oder Rampen	q3 3105,5594 3173,5493
 (Weg in d. Kolonie Norderney): Fuﬂg‰nger	q3 3596,6828 3607,6952 3582,6964
 #: note: s¸dlicher Teil von Ulrike Orlowski:
 Franz-Cornelsen-Weg: Fuﬂg‰nger, Radfahren offiziell nicht erlaubt, schmaler Fuﬂweg am Spielplatz	q3 3593,7176 3597,7192 3612,7335 3634,7601
-Bjˆrnsonstr.: Fuﬂg‰nger, eng	q3 4290,6445 4338,6528
+Bjˆrnsonstr.: Fuﬂg‰nger, eng	q3 4290,6445 4335,6523
 (Gustav-Mahler-Platz - R¸ckertstr.): Fuﬂweg durch Wohngebiet	q3 3878,6110 3943,6107 3976,6094 4027,6088
 Spinozastr.: eng u. un¸bersichtlich	q2 3926,6409 3930,6481 3974,6511 4050,6506
 (Parkweg): mit Stufen	q3 2214,4992 2288,4932
@@ -3697,9 +3696,11 @@ Weinbrennerweg: enge Straﬂe	q0- 6003,19461 6106,19510
 #: by: tobi (...kiermeier)
 Grammestr.: enge Straﬂe	q1 1057,14389 1023,14259
 #: by: K. Wieker: vvv
-#: corrected_by: srt/policy (q3 -> q2)
-Hirschsprung: enge Straﬂe	q2 23837,5978 23874,5870
-Wiesenpromenade: enge Straﬂe	q1 23660,5819 23675,5823 23758,5846 23874,5870 23912,5883 23919,5908 23951,5923 23931,5992
+# REMOVED (hier nicht so eng) --- #: corrected_by: srt/policy (q3 -> q2) --- Hirschsprung: enge Straﬂe	q2 23837,5978 23865,5895
+#: confirmed_by: srt
+Hirschsprung: enger Weg	q2 23865,5895 23874,5876
+#: confirmed_by: srt
+Wiesenpromenade: enge Straﬂe	q1 23660,5819 23675,5823 23758,5846 23874,5876 23910,5884 23919,5908 23951,5923 23931,5992
 #: by: ^^^
 #: by: Burkard dau:
 Lenther Steig: enge Straﬂe	q1 1022,14898 1037,14814 1042,14721 1037,14515

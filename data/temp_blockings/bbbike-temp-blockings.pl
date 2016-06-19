@@ -6888,7 +6888,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004267',
        data  => <<EOF,
-userdel	1::inwork 22436,11054 22484,11270
+userdel	1::inwork 22436,11054 22483,11261
 EOF
      },
      { from  => 1165532400, # 2006-12-08 00:00
@@ -12466,7 +12466,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009721',
        data  => <<EOF,
-userdel	2::inwork 4146,6693 4174,6711 4224,6718 4309,6716 4372,6714
+userdel	2::inwork 4141,6688 4174,6711 4224,6718 4309,6716 4372,6714
 EOF
      },
      { from  => 1219523565, # 2008-08-23 22:32
@@ -19532,7 +19532,7 @@ EOF
 userdel	2::inwork 22365,6149 22467,6135 22539,6258
 userdel	2::inwork 22358,5918 22428,6063 22467,6135 22603,6141
 userdel	2::inwork 22478,6041 22544,6037
-userdel	2::inwork 22324,6397 22365,6149 22296,6170
+userdel	2::inwork 22325,6385 22365,6149 22296,6170
 userdel	2::inwork 22513,5747 22531,5871 22358,5918 22292,5774
 userdel	2::inwork 22777,6151 22603,6141
 userdel	2::inwork 22608,5732 22631,5866 22531,5871 22539,5956 22730,5944
@@ -20751,7 +20751,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_113817',
        data  => <<EOF,
-userdel	q4::inwork 22484,11270 22436,11054
+userdel	q4::inwork 22483,11261 22436,11054
 EOF
      },
      { from  => 1344142800, # 2012-08-05 07:00
@@ -22438,14 +22438,15 @@ EOF
 userdel	1::temp -13556,-1182 -13643,-1220
 EOF
      },
-     { from  => 1385766000, # 2013-11-30 00:00
-       until => 1404667175, # $isodate2epoch->("2015-12-31 23:59:59"), # 1401458400, # 2014-05-30 16:00
-       text  => 'Zimmermannstraßenbrücke über die Wuhle: Baustelle, Fahrbahn gesperrt, Fußgänger und Radfahrer können passieren, bis Ende 2015',
+     { from  => undef, # 1385766000, # 2013-11-30 00:00
+       until => $isodate2epoch->("2016-09-15 00:00:00"), # 1404667175, # $isodate2epoch->("2015-12-31 23:59:59"), # 1401458400, # 2014-05-30 16:00
+       text  => 'Wuhlewanderweg: an der Zimmermannstraßenbrücke wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
-       source_id => 'IM_020820',
        data  => <<EOF,
+#: next_check_id: ZIMMERMANNSTRBR-2015
 # REMOVED (keine Bauarbeiten mehr) --- #: next_check_id: ZIMMERMANNSTRBR-2014 --- #: last_checked: 2014-02-08 --- #: next_check: 2014-06-30 (bei VMZ entfernt!) --- #: add_fragezeichen: Sind die Bauarbeiten auf der Zimmermannstraßenbrücke und am Wuhlewanderweg mittlerweile beendet?
-userdel	2::inwork 21385,9049 21365,9059 21351,9066
+# REMOVED userdel	2::inwork 21385,9049 21365,9059 21351,9066
+	2::inwork 21467,9236 21385,9049
 EOF
      },
      { from  => $isodate2epoch->("2014-07-16 00:00:00"), # 1386257400, # 2013-12-05 16:30
@@ -25186,6 +25187,26 @@ EOF
        source_id => 'http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.488270.php',
        data  => <<EOF,
 userdel	q4::inwork 15628,12246 15651,12214 15685,12154
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Bahnbrücke an der Erpe: wegen Bauarbeiten ist der Weg unter Umständen nicht passierbar',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: http://www.friedrichshagen.net/baustelle-friedrichshagen/
+#: last_checked: 2016-06-19
+#: check_frequency: 60d
+userdel	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Theodorstr.: Bauarbeiten, Straße kann gesperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: last_checked: 2016-06-19
+	2::inwork 24897,11083 24899,11044 24905,10955 24913,10884 24919,10818 24922,10785 24923,10774
 EOF
      },
     );

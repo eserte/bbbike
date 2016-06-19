@@ -30,8 +30,8 @@ Halenseestr.	1 2218,10067 2268,9976 2300,9883 2369,9779 2415,9765
 Halenseestr.	1 2394,9714 2360,9754 2297,9827 2163,10024
 Halenseestr.	1 1939,10446 1901,10566 1928,10728
 Rasthof Avus	1 1870,10406 1882,10356 1847,10323 1723,10289 1692,10348 1793,10424 1833,10427 1870,10406
-Breitenbachplatz (Westseite)	1 4292,6558 4218,6583 4111,6651 4074,6681 4021,6729 3947,6814
-Breitenbachplatz (Ostseite)	1 3981,6850 4061,6753 4107,6718 4146,6693 4250,6625 4292,6558
+Breitenbachplatz (Westseite)	1 4423,6477 4335,6523 4218,6583 4111,6651 4074,6681 4021,6729 3947,6814
+Breitenbachplatz (Ostseite)	1 3981,6850 4061,6753 4103,6716 4141,6688 4248,6620 4347,6551 4423,6477
 Inselstr. Schwanenwerder	1 -5310,4216 -5393,4211 -5453,4274 -5471,4412 -5442,4526 -5386,4539 -5341,4511 -5358,4404 -5356,4296 -5310,4216
 Bayerischer Platz	1 6059,9118 6044,9223 6084,9242 6131,9241 6152,9136 6147,9100 6115,9088 6076,9091 6059,9118
 orthodoxe Kirche	1 3952,8980 3831,9052
@@ -427,9 +427,9 @@ Neuendorfer Str.	1 -3228,14794 -3251,14741
 Büdnerring	1 7997,18524 7902,18575 7892,18603 7926,18665 8037,18673 8063,18659 8066,18632 7997,18524
 Steilpfad	1s 3375,21230 3280,21477
 Jebensstr.	1 5587,11397 5459,11135
-Breitenbachplatz	1 4107,6718 4074,6681 4034,6642 3983,6599 3925,6604 3938,6651 4021,6729 4061,6753
+Breitenbachplatz	1 4103,6716 4074,6681 4034,6642 3983,6599 3925,6604 3938,6651 4021,6729 4061,6753
 Südwestkorso	1 4061,6753 4206,6820
-Südwestkorso	1 4206,6820 4125,6763 4107,6718
+Südwestkorso	1 4206,6820 4125,6763 4103,6716
 Kleine Markusstr. - Krautstr.	1 12021,12066 11958,12112
 Kleine Markusstr. - Krautstr.	1 11958,12112 11962,12034 12002,12008
 Schönstedtstr.	1 12540,8458 12649,8535
@@ -665,7 +665,7 @@ Wuhletalstr. (Richtungsfahrbahn)	1::igndisp 21066,17503 20891,17572 20769,17650
 Trusetaler Str.	1s 21285,17276 21360,17261 21352,17210 21451,17189 21435,17097
 Blumberger Damm	1s 21733,15755 21719,15666
 Landhausring	1 21710,12798 21866,12763 21893,12783 21900,12820 21880,12858 21729,12894
-Kaulsdorfer Str.	1 22539,6258 22324,6397
+Kaulsdorfer Str.	1 22539,6258 22325,6385
 Kreisverkehr Brebacher Weg	1 21655,12521 21642,12538 21651,12569 21666,12577 21674,12565 21671,12532 21655,12521
 Kreisverkehr Brebacher Weg	1 21581,12182 21570,12191 21575,12212 21589,12217 21602,12208 21598,12185 21581,12182
 Hirteplatz: Kreisverkehr	1 23766,5281 23775,5271 23775,5258 23765,5248 23751,5248 23744,5262 23743,5268 23746,5276 23756,5280 23766,5281
@@ -878,6 +878,7 @@ Bernhard-Kellermann-Str.	1 -10183,-4402 -10277,-4471 -10399,-4335 -10360,-4236
 Ernst-von-Bergmann-Klinikum	1 -12365,-752 -12360,-772 -12351,-828
 Ernst-von-Bergmann-Klinikum	1 -12351,-828 -12374,-849 -12402,-829 -12413,-789 -12418,-764
 Am Böttcherberg	1s -9565,62 -9541,97 -9539,147
+Ahornallee [Privatstraße] (Mahlsdorf)	1 24637,9828 24527,9850 24513,9796
 Poststr. (Hennigsdorf)	1 -3495,25739 -3438,25572
 B1/B5	2 30678,10923 29752,10895 29194,10899 27817,10875
 Hanns-Eisler-Weg	1 68794,73965 68643,73843 68594,73737 68608,73622 68694,73474
@@ -1206,9 +1207,9 @@ Rebhuhnweg -> Landsberger Allee: Mittelstreifen	3::igndisp 20550,15551 20532,155
 Mittelstreifen	3nocross::ignrte 15256,14237 15430,14262 15850,14308
 Landsberger Allee -> Mittelstr./Altenhofer Str.: Mittelstreifen	3::igndisp 15256,14237 15430,14262 15430,14272
 Mittelstr./Altenhofer Str. -> Landsberger Allee: Mittelstreifen	3::igndisp 15430,14272 15430,14262 15850,14308
-Mittelstreifen	3nocross::ignrte 22484,11270 22756,11268 22937,11265
-Alt-Kaulsdorf -> Adolfstr.: Mittelstreifen	3::igndisp 22484,11270 22756,11268 22751,11381
-Adolfstr. -> Alt-Kaulsdorf: Mittelstreifen	3::igndisp 22751,11381 22756,11268 22937,11265
+Mittelstreifen	3nocross::ignrte 22483,11261 22756,11261 22937,11265
+Alt-Kaulsdorf -> Adolfstr.: Mittelstreifen	3::igndisp 22483,11261 22756,11261 22751,11381
+Adolfstr. -> Alt-Kaulsdorf: Mittelstreifen	3::igndisp 22751,11381 22756,11261 22937,11265
 Mittelstreifen	3nocross::ignrte 23101,11261 23362,11263 23447,11264 23648,11265
 Alt-Kaulsdorf -> Alt-Kaulsdorf [Nebenfahrbahn]: Mittelstreifen	3::igndisp 23101,11261 23362,11263 23382,11279
 Alt-Kaulsdorf [Nebenfahrbahn] -> Alt-Kaulsdorf: Mittelstreifen	3::igndisp 23382,11279 23362,11263 23447,11264
@@ -1951,9 +1952,6 @@ Zum Trudelturm -> Max-Born-Str.: Straßenbahntrasse	3::igndisp 19101,3028 19021,2
 Max-Born-Str. -> Zum Trudelturm: Straßenbahntrasse	3::igndisp 18946,3077 19021,2946 19101,3028
 Mittelstreifen	3nocross::ignrte 12216,16120 12232,16110 12347,16039
 Prenzlauer Allee -> Ostseestr.: Mittelstreifen	3::igndisp 12198,15999 12232,16110 12216,16120
-Mittelstreifen vor dem Autobahnanschluss	3nocross::ignrte 4292,6558 4338,6528 4423,6477
-Schildhornstr. -> Björnsonstr.: Mittelstreifen vor dem Autobahnanschluss	3::igndisp 4423,6477 4338,6528 4290,6445
-Björnsonstr. -> Schildhornstr.: Mittelstreifen vor dem Autobahnanschluss	3::igndisp 4290,6445 4338,6528 4292,6558
 Mittelstreifen	3nocross::ignrte 19735,3643 19812,3561 19857,3514 19904,3464
 Adlergestell -> Altheider Str.: Mittelstreifen	3::igndisp 19735,3643 19812,3561 19871,3600
 Altheider Str. -> Adlergestell: Mittelstreifen	3::igndisp 19871,3600 19812,3561 19857,3514
@@ -2387,6 +2385,7 @@ tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
 tragen (6 Stufen)	0:15:-90 4608,63927
 Treppe	0:40:-131 1888,42795
+weites Drängelgitter	BNP:2:-109:trailer=7 21917,10991
 Drängelgitter	BNP:3:-141:trailer=10 26246,12648
 Drängelgitter	BNP:3:-142:trailer=10 26183,12676
 Tor, kann geschlossen sein	BNP:2:-241:trailer=5 16315,18208
@@ -2825,9 +2824,6 @@ SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2408,1144 2352,1267
 SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2336,1111 2408,1144 2504,1186
 Fünf Morgen: Bauarbeiten, gesperrt. Wird es eine Anbindung an den Hüttenweg geben?	2::inwork 1437,5015 1483,5161
 Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
-Am Theodorpark: noch gesperrt	2::inwork 24905,10955 25053,10959 25143,10961
-Theodorstr.: Bauarbeiten, gesperrt	2::inwork 24897,11083 24905,10955 24913,10884 24919,10818 24922,10785 24923,10774
-(Weg im Theodorpark)	2::inwork 24922,10785 24954,10770 25021,10768 25062,10762 25148,10769
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076 9559,13087
 Schwarzer Weg: wegen Straßenbau gesperrt	2::inwork 17295,7323 17295,7330 17296,7396
 Kleiner Tiergarten: wegen Bauarbeiten gesperrt	2::inwork 6561,13151 6556,13240 6526,13327
@@ -2852,6 +2848,8 @@ Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352
+Frauenauer Str.: Straße fertig, aber noch gesperrt	2::inwork 19663,9757 19858,9775
+Kirchdorfer Str.: Straße fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9775 19871,9680
 Viechtacher Str.: Straße fertig, aber noch gesperrt	2::inwork 19801,9680 19871,9680 19923,9682
 Regener Str.: fertiggestellt, aber noch gesperrt	2::inwork 19790,9478 19859,9473 19894,9470 19889,9400 19874,9151
 Patersdorfer Str.: fertiggestellt, aber noch gesperrt	2::inwork 19626,9171 19764,9160 19874,9151

@@ -6,7 +6,6 @@
 Wühlischstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14575,11407 14674,11370 14737,11347 14759,11339 14771,11345
 Revaler Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14357,11148 14286,11186
 Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
-Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
 Rigaer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 14133,12482 14266,12446
 Rigaer Str.: Bauarbeiten, Fahrbahn zwischen Zellestr. und Liebigstr. gesperrt	q3::inwork 14000,12519 14091,12494
@@ -37,10 +36,10 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süde
 Kynaststr./Hauptstr.: Bauarbeiten, Gehweg benutzen	q3::inwork 14882,10732 14906,10820
 Jülicher Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
 Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
-Zimmermannstraßenbrücke: Bau einer neuen Brücke, Radfahrer müssen den Gehweg bzw. Behelfsbrücke benutzen	q4::inwork 21351,9066 21365,9059 21385,9049
+Zimmermannstraßenbrücke: Bau einer neuen Brücke, Radfahrer müssen den Gehweg bzw. Behelfsbrücke benutzen	q4::inwork 21430,9026 21385,9049 21365,9059 21351,9066 21314,9083
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gefälle, Fußgänger	q4; 21970,12153 21998,12204
-(An der Wuhle, östliches Ufer): Fußgänger	q1 21323,8481 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
+(An der Wuhle, östliches Ufer): Fußgänger	q1 21316,8487 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
 Pappelplatz (Mitte): gemeinsamer Fuß- und Radweg	q2 9750,14132 9676,14046
 (Frankfurter Allee - Liebigstr.): Fußgänger	q2 13885,12279 13927,12370
 Otto-Ludwig-Str.: Fußgängerzone	q2 4862,10881 4954,10876
@@ -349,7 +348,8 @@ Karl-Marx-Allee - Kadiner Str.: Fußgänger	q1 13543,12326 13556,12302 13555,12259
 Spreeuferweg - Elisabeth-Abegg-Str.: Rampe	q3 7923,12872 7885,12821
 (südliche Fahrbahn des Sachsendamms - Naturpark Schöneberg): Rampe	q2 7696,7562 7739,7531 7708,7539 7747,7521
 Heidenfeldstr.: Gehweg	q1 13433,13346 13393,13326
-(Gudrunstr. - Lichtenberger Brücke): Gehweg, Bordsteine	q2 16837,11920 16833,11897 16818,11878 16803,11859
+(Gudrunstr. - Lichtenberger Brücke): Gehweg	q1 16837,11920 16833,11897 16818,11878
+(Gudrunstr. - Lichtenberger Brücke): Gehweg, Bordstein	q3 16818,11878 16803,11859
 Grünstr.: Fußgängerzone, Radfahren erlaubt	q2 22111,4562 22162,4546 22214,4548 22324,4586
 Schloßplatz Köpenick: Fußgänger, Straßenbahn, Lieferverkehr	q2 22111,4562 22093,4499
 (Karlsgartenstr. - Hasenheide): Parkweg, Fußgänger	q1 11627,8485 11560,8480 11508,8491 11333,8582 11255,8591
@@ -1003,7 +1003,6 @@ Idealpassage: Fußgänger, eng, Schrittgeschwindigkeit	q3 12434,8776 12578,8654
 Zur Kreutzigerstr.: enger Hausdurchgang	q3 14291,12220 14285,12190
 (Zobtener Str. - Fischerstr.): Fußgänger, Rampe, Bordstein	q2 16353,10207 16404,10286
 (Fischerstr. - Lückstr.): Fußgänger, teilweise recht eng	q2 16404,10286 16488,10381 16516,10448 16501,10460 16572,10613 16587,10613
-(Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Bordstein	q2 17023,11908 17026,11888
 Märkischer Platz: Fußgänger	q2 11034,12038 11084,12070 11111,12027
 (Fischerinsel - Grünstraßenbrücke): Fußgänger, niedriger Bordstein	q2 10474,11843 10515,11785
 (Rampe Wriezener Park): Fußgänger, Bordstein	q3 13427,11431 13421,11423
@@ -1391,7 +1390,7 @@ Georg-Steger-Weg: einige Fußgänger	q1 1493,2247 1480,2199 1452,2095 1461,2073 14
 Königsheideweg - Südostallee: Kleingartengelände	q1 15784,5865 15788,5898 15793,5945 15863,5956 15934,5972 15964,5940 16091,6003 16113,6027 16125,6059
 Königsheideweg - Südostallee: Kleingartengelände	q1 15788,5898 15881,5901 15967,5924 15964,5940
 Engelwurzweg: teilweise recht eng	q3 25059,6554 24738,6418
-(Marzahner Chaussee - Gensinger Str.): gemeinsamer Rad- und Gehweg	q1 18580,11874 18698,11914 18913,11907
+(Marzahner Chaussee - Gensinger Str.): gemeinsamer Rad- und Gehweg	q1 18580,11874 18698,11914 18888,11907 18913,11907
 Platz vor dem Neuen Tor: Bordsteine, Fußgänger	q4 8588,13673 8590,13653
 Platz vor dem Neuen Tor: Bordsteine, Fußgänger	q4 8659,13708 8662,13688
 Abteibrücke, Insel der Jugend: einige Fußgänger	q2 15630,8979 15658,9007 15674,9095 15683,9136 15693,9194 15604,9215 15580,9181 15631,9114 15668,9140 15683,9136
@@ -1547,6 +1546,7 @@ Falkenberger Str.: Bordstein	q3 15819,16857 15892,16834
 (Neuhausweg - Ramin-Park): einige Fußgänger, Bordstein	q2 -3964,14507 -3950,14519
 Földerichplatz: Fußgängerzone	q3 -3942,12559 -3941,12376
 (Marzahner Promenade - Landsberger Allee [Wohngebiet]): Fußgänger	q1 20759,15740 20789,15736
+Fischerstr.: Pollerreihe	q2; 15982,10765 16080,10743
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schüler	q2 7242,8586 7288,8635
@@ -1660,7 +1660,7 @@ Friedrichshaller Str.: Bodenschwellen	q2 2774,7655 2786,7721 2911,7686 3083,7587
 Hechtgraben: eng, Fußgänger, Treppen oder Rampen	q3 3105,5594 3173,5493
 (Weg in d. Kolonie Norderney): Fußgänger	q3 3596,6828 3607,6952 3582,6964
 Franz-Cornelsen-Weg: Fußgänger, Radfahren offiziell nicht erlaubt, schmaler Fußweg am Spielplatz	q3 3593,7176 3597,7192 3612,7335 3634,7601
-Björnsonstr.: Fußgänger, eng	q3 4290,6445 4338,6528
+Björnsonstr.: Fußgänger, eng	q3 4290,6445 4335,6523
 (Gustav-Mahler-Platz - Rückertstr.): Fußweg durch Wohngebiet	q3 3878,6110 3943,6107 3976,6094 4027,6088
 Spinozastr.: eng u. unübersichtlich	q2 3926,6409 3930,6481 3974,6511 4050,6506
 (Parkweg): mit Stufen	q3 2214,4992 2288,4932
@@ -2197,8 +2197,8 @@ Renatenweg: enge Straße	q1 6372,2856 6376,2809 6423,2774 6463,2724
 Renatenweg: Fußgänger	q2 6463,2724 6529,2642
 Weinbrennerweg: enge Straße	q0 6003,19461 6106,19510
 Grammestr.: enge Straße	q1 1057,14389 1023,14259
-Hirschsprung: enge Straße	q2 23837,5978 23874,5870
-Wiesenpromenade: enge Straße	q1 23660,5819 23675,5823 23758,5846 23874,5870 23912,5883 23919,5908 23951,5923 23931,5992
+Hirschsprung: enger Weg	q2 23865,5895 23874,5876
+Wiesenpromenade: enge Straße	q1 23660,5819 23675,5823 23758,5846 23874,5876 23910,5884 23919,5908 23951,5923 23931,5992
 Lenther Steig: enge Straße	q1 1022,14898 1037,14814 1042,14721 1037,14515
 (Klothildestr - Schloßallee): Fußgänger	q1 11068,19494 11081,19456
 Eschenallee (Rosenthal): enge Straße	q0 9460,20644 9479,20535 9498,20435
