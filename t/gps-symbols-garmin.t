@@ -29,4 +29,8 @@ SKIP: {
 
 like $mapping->{'user:7681'}, qr{misc/garmin_userdef_symbols/(bike2014/BBBike01|bike2008/001)\.bmp$}, 'private garmin icon';
 
+my $portable_mapping = GPS::Symbols::Garmin::get_symbol_to_img(portable => 1);
+isa_ok $portable_mapping, 'HASH';
+like $portable_mapping->{'user:7681'}, qr{\$BBBIKEDIR/misc/garmin_userdef_symbols/(bike2014/BBBike01|bike2008/001)\.bmp$}, 'use variable $BBBIKEDIR';
+
 __END__

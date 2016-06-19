@@ -193,7 +193,7 @@ EOF
     my $symbol_to_img;
     if ($use_symcat) {
 	require GPS::Symbols::Garmin;
-	$symbol_to_img = GPS::Symbols::Garmin::get_cached_symbol_to_img();
+	$symbol_to_img = GPS::Symbols::Garmin::get_cached_symbol_to_img(portable => 1);
 	if (!$symbol_to_img || !%$symbol_to_img) {
 	    warn "WARN: the symbol to image mapping is empty!\n";
 	}

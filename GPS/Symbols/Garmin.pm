@@ -22,15 +22,19 @@ use File::Temp qw();
 
 use BBBikeUtil qw();
 
-my $cached_symbol_to_img;
+my %cached_symbol_to_img;
 
 # This is returning a cached singleton hashref, which is normally not
 # recreated.
 sub get_cached_symbol_to_img {
+    my %opts = @_;
+    my $portable = delete $opts{portable} ? 1 : 0;
+    die "Unhandled options: " . join(" ", %opts) if %opts;
+
     my $must_recreate = 1;
-    if ($cached_symbol_to_img) {
+    if ($cached_symbol_to_img{$portable}) {
 	$must_recreate = 0;
-	for my $file (values %$cached_symbol_to_img) {
+	for my $file (values %{ $cached_symbol_to_img{$portable} }) {
 	    if (!-f $file) {
 		$must_recreate = 1;
 		last;
@@ -39,14 +43,18 @@ sub get_cached_symbol_to_img {
     }
 
     if ($must_recreate) {
-	$cached_symbol_to_img = get_symbol_to_img();
+	$cached_symbol_to_img{$portable} = get_symbol_to_img(portable => $portable);
     }
 
-    $cached_symbol_to_img;
+    $cached_symbol_to_img{$portable};
 }
 
 # This is returning a fresh hashref
 sub get_symbol_to_img {
+    my %opts = @_;
+    my $portable = delete $opts{portable};
+    die "Unhandled options: " . join(" ", %opts) if %opts;
+
     my $symbol_to_img = {};
     # Try to find a gpsman gmicons directory for "official" Garmin
     # symbols
@@ -74,6 +82,13 @@ sub get_symbol_to_img {
     }
     # Now the user-defined symbols. Here's room for different "userdef
     # symbol sets", which may be per-vehicle, per-user, per-year etc.
+    my $make_filename = sub ($) {
+	my $f = shift;
+	if ($portable) {
+	    substr($f, 0, length(BBBikeUtil::bbbike_root()), '$BBBIKEDIR');
+	}
+	$f;
+    };
     {
 	#my $userdef_symbol_dir = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/bike2008";
 	my $userdef_symbol_dir = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/bike2014";
@@ -83,7 +98,7 @@ sub get_symbol_to_img {
 	    for my $f (File::Glob::bsd_glob("$userdef_symbol_dir/*.bmp")) {
 		my($inx) = $f =~ m{(\d+)\.bmp$};
 		next if !defined $inx; # non parsable bmp filename
-		$symbol_to_img->{"user:" . (7680 + $inx)} = $f;
+		$symbol_to_img->{"user:" . (7680 + $inx)} = $make_filename->($f);
 	    }
 	}
     }
@@ -95,7 +110,7 @@ sub get_symbol_to_img {
 	    for my $f (File::Glob::bsd_glob("$userdef_symbol_dir/*.bmp")) {
 		my($inx) = $f =~ m{/(\d+).*\.bmp$};
 		next if !defined $inx; # non parsable bmp filename
-		$symbol_to_img->{"user:" . (7745 + $inx)} = $f;
+		$symbol_to_img->{"user:" . (7745 + $inx)} = $make_filename->($f);
 	    }
 	}
     }
