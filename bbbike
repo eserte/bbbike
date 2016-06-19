@@ -7464,6 +7464,7 @@ EOF
 
 sub maybe_expand_image_file {
     my($imgfile, $datafile, $subdir) = @_;
+    $imgfile =~ s{\$BBBIKEDIR}{$FindBin::RealBin}g;
     if (file_name_is_absolute($imgfile)) {
 	return try_image_suffix($imgfile);
     }
@@ -22193,6 +22194,7 @@ sub get_image_for_any {
     if (!$p) {
 	eval {
 	    my $abs_realfile;
+	    $realfile =~ s{\$BBBIKEDIR}{$FindBin::RealBin}g;
 	    if ($realfile =~ m{^/}) {
 		$abs_realfile = $realfile;
 	    } else {
