@@ -60,57 +60,59 @@ sub get_symbol_to_img {
     # symbols
     {
 	my @gmicons;
-	for my $candidate ("/usr/share/gpsman/gmicons", # Debian default
-			   "/usr/local/lib/gpsman/gmsrc/gmicons", # new FreeBSD location (since 2014)
-			   "/usr/local/share/gpsman/gmsrc/gmicons", # old FreeBSD location (until 2014)
-			  ) {
-	    if (-d $candidate) {
-		@gmicons = File::Glob::bsd_glob("$candidate/*15x15.gif");
-		last if @gmicons;
-	    }
-	}
-	if (!@gmicons) {
+	my $gpsman_rc_directory = gpsman_rc_directory(\@gmicons);
+	if (!$gpsman_rc_directory) {
 	    warn "NOTE: no gpsman/gmicons directory found, no support for Garmin symbols.\n";
 	} else {
+	    my $make_filename = sub ($) {
+		my $f = shift;
+		if ($portable) {
+		    substr($f, 0, length($gpsman_rc_directory), '$GPSMANDIR');
+		}
+		$f;
+	    };
 	    require File::Basename;
 	    for my $gmicon (@gmicons) {
 		my $iconname = File::Basename::basename($gmicon);
 		$iconname =~ s{15x15.gif$}{};
-		$symbol_to_img->{$iconname} = $gmicon;
+		$symbol_to_img->{$iconname} = $make_filename->($gmicon);
 	    }
 	}
     }
-    # Now the user-defined symbols. Here's room for different "userdef
-    # symbol sets", which may be per-vehicle, per-user, per-year etc.
-    my $make_filename = sub ($) {
-	my $f = shift;
-	if ($portable) {
-	    substr($f, 0, length(BBBikeUtil::bbbike_root()), '$BBBIKEDIR');
-	}
-	$f;
-    };
+
     {
-	#my $userdef_symbol_dir = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/bike2008";
-	my $userdef_symbol_dir = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/bike2014";
-	if (!-d $userdef_symbol_dir) {
-	    warn "NOTE: directory <$userdef_symbol_dir> with userdefined garmin symbols not found.\n";
-	} else {
-	    for my $f (File::Glob::bsd_glob("$userdef_symbol_dir/*.bmp")) {
-		my($inx) = $f =~ m{(\d+)\.bmp$};
-		next if !defined $inx; # non parsable bmp filename
-		$symbol_to_img->{"user:" . (7680 + $inx)} = $make_filename->($f);
+	# Now the user-defined symbols. Here's room for different "userdef
+	# symbol sets", which may be per-vehicle, per-user, per-year etc.
+	my $make_filename = sub ($) {
+	    my $f = shift;
+	    if ($portable) {
+		substr($f, 0, length(BBBikeUtil::bbbike_root()), '$BBBIKEDIR');
+	    }
+	    $f;
+	};
+	{
+	    #my $userdef_symbol_dir = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/bike2008";
+	    my $userdef_symbol_dir = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/bike2014";
+	    if (!-d $userdef_symbol_dir) {
+		warn "NOTE: directory <$userdef_symbol_dir> with userdefined garmin symbols not found.\n";
+	    } else {
+		for my $f (File::Glob::bsd_glob("$userdef_symbol_dir/*.bmp")) {
+		    my($inx) = $f =~ m{(\d+)\.bmp$};
+		    next if !defined $inx; # non parsable bmp filename
+		    $symbol_to_img->{"user:" . (7680 + $inx)} = $make_filename->($f);
+		}
 	    }
 	}
-    }
-    {
-	my $userdef_symbol_dir = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/bike2015";
-	if (!-d $userdef_symbol_dir) {
-	    # XXX don't warn, this is not (yet) public
-	} else {
-	    for my $f (File::Glob::bsd_glob("$userdef_symbol_dir/*.bmp")) {
-		my($inx) = $f =~ m{/(\d+).*\.bmp$};
-		next if !defined $inx; # non parsable bmp filename
-		$symbol_to_img->{"user:" . (7745 + $inx)} = $make_filename->($f);
+	{
+	    my $userdef_symbol_dir = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/bike2015";
+	    if (!-d $userdef_symbol_dir) {
+		# XXX don't warn, this is not (yet) public
+	    } else {
+		for my $f (File::Glob::bsd_glob("$userdef_symbol_dir/*.bmp")) {
+		    my($inx) = $f =~ m{/(\d+).*\.bmp$};
+		    next if !defined $inx; # non parsable bmp filename
+		    $symbol_to_img->{"user:" . (7745 + $inx)} = $make_filename->($f);
+		}
 	    }
 	}
     }
@@ -128,6 +130,29 @@ sub get_symbol_to_img {
 	}
     }
     $symbol_to_img;
+}
+
+sub gpsman_rc_directory {
+    my($gmicons_ref) = @_;
+
+    my @gmicons;
+    my $gpsman_rc_directory;
+    for my $candidate ("/usr/share/gpsman", # Debian default
+		       "/usr/local/lib/gpsman/gmsrc", # new FreeBSD location (since 2014)
+		       "/usr/local/share/gpsman/gmsrc", # old FreeBSD location (until 2014)
+		      ) {
+	if (-d $candidate) {
+	    @gmicons = File::Glob::bsd_glob("$candidate/gmicons/*15x15.gif");
+	    if (@gmicons) {
+		if ($gmicons_ref) {
+		    @$gmicons_ref = @gmicons;
+		}
+		return $candidate;
+	    }
+	}
+    }
+
+    undef;
 }
 
 1;

@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (c) 1995-2015 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2016 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -7464,7 +7464,7 @@ EOF
 
 sub maybe_expand_image_file {
     my($imgfile, $datafile, $subdir) = @_;
-    $imgfile =~ s{\$BBBIKEDIR}{$FindBin::RealBin}g;
+    expand_variables_in_image_filenames $imgfile;
     if (file_name_is_absolute($imgfile)) {
 	return try_image_suffix($imgfile);
     }
@@ -7474,6 +7474,24 @@ sub maybe_expand_image_file {
     }
     # relative to this file
     return try_image_suffix(dirname($datafile) . "/" . $imgfile);
+}
+
+# operates on argument
+{
+    my $gpsman_rc_directory;
+    sub expand_variables_in_image_filenames {
+	$_[0] =~ s{\$BBBIKEDIR}{$FindBin::RealBin}g;
+	$_[0] =~ s{\$GPSMANDIR}{
+	    if (!defined $gpsman_rc_directory) {
+	        require GPS::Symbols::Garmin;
+	        $gpsman_rc_directory = GPS::Symbols::Garmin::gpsman_rc_directory();
+		if (!defined $gpsman_rc_directory) {
+		    $gpsman_rc_directory = '$GPSMANDIR'; # will fail later
+		}
+	    }
+	    $gpsman_rc_directory;
+	}eg;
+    }
 }
 
 # For an absolute image path without suffix try to find an existing
@@ -22194,7 +22212,7 @@ sub get_image_for_any {
     if (!$p) {
 	eval {
 	    my $abs_realfile;
-	    $realfile =~ s{\$BBBIKEDIR}{$FindBin::RealBin}g;
+	    expand_variables_in_image_filenames $realfile;
 	    if ($realfile =~ m{^/}) {
 		$abs_realfile = $realfile;
 	    } else {
