@@ -1661,28 +1661,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 22111,4562 22093,4499 22076,4422
-userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22175,4730 22138,4661 22133,4644 22111,4562
-userdel	2::temp 22133,4644 22074,4664
-# REMOVED --- userdel	2::temp 22111,4562 22162,4546 22214,4548 22324,4586 22314,4604 22355,4660 22365,4676 22395,4678
-',
-         'from' => 1466028000,
-         'id' => 1702,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              14,
-                              'months',
-                              6
-                            ]
-                          ],
-         'text' => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain (17.06.2016 - 19.06.2016)',
-         'type' => 'gesperrt',
-         'until' => 1466373599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4030,6 +4009,27 @@ userdel	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
          'text' => 'Theodorstr.: Bauarbeiten, Straße kann gesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => 'userdel	q4::inwork; 16629,13532 16866,13532
+',
+         'from' => 1466287200,
+         'id' => 2801,
+         'source_id' => '2147340236',
+         'text' => 'Herzbergstr. Richtung Krankenhaus: zwischen Am Wasserwerk und Siegfriedstr. Baustelle, Fahrtrichtung gesperrt, bis Anfang Juli 2016 ',
+         'type' => 'handicap',
+         'until' => 1467410399
+       },
+       {
+         'data' => '#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6081.html (Radfahrer _dürfen_ passieren)
+userdel	q4::inwork 8389,9087 8180,9099
+',
+         'from' => 1466444819,
+         'id' => 2802,
+         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.489591.php',
+         'text' => 'Monumentenbrücke: Bauarbeiten bis zum 6. August 2016, Radfahrer dürfen unter Umständen nicht passieren',
+         'type' => 'handicap',
+         'until' => 1470520799
        }
      
 );

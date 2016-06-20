@@ -1116,6 +1116,20 @@ EUREF-Campus: Privatgelände	2 7158,8208 7149,8249 7316,8509
 Wiltinger Str.	1 2375,25607 2312,25673
 Wiltinger Str.	1 2384,25679 2375,25607
 #: by ^^^
+# 
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5732 vvv
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.489468.php
+#: XXX (wann) wird die Einbahnstraßenregelung für Radfahrer aufgehoben? -> nach gesperrt_car-orig überführen vvv
+#: last_checked: 2016-06-20 vvv
+Leonhardyweg	1s 9033,8029 9035,7810 9040,7648
+Leonhardyweg	1s 9033,8029 9032,8254
+Kleineweg	1s 9130,7810 9132,7661
+Kleineweg	1s 9130,7810 9130,8029
+Kleineweg	1s 9128,8251 9130,8029
+#: last_checked ^^^
+#: XXX ^^^
+#: by: ^^^
+# 
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -2688,6 +2702,9 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check: 2016-09-20
+Sonntagstr./Ostkreuz: wegen Bauarbeiten gesperrt	2::inwork 14752,11041 14798,10985
+# 
 #: last_checked: 2016-06-19
 Haasestr.: Bauarbeiten, keine Durchfahrt möglich	2::inwork 14328,11320 14286,11186
 # 
@@ -2714,16 +2731,16 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,
 #: XXX Straße wird zurückgebaut
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.256386.php
 #: osm_watch: way id="343786626" version="2"
-#: last_checked: 2016-03-26
+#: last_checked: 2016-06-16
 #: check_frequency: 60d
 Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7703,14582 7527,14684
 # 
-#: last_checked: 2016-06-13 vvv
+#: last_checked: 2016-06-20 vvv
 #: check_frequency: 7d
 # REMOVED --- Treptower Park: Bauarbeiten, Weg noch nicht fertiggestellt	2::inwork 14318,9688 14443,9731
-Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14443,9731 14361,9772
+# REMOVED --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14443,9731 14361,9772
 # REMOVED --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14361,9772 14436,9784
-Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14361,9772 14436,9784 14460,9814 14488,9848
+# REMOVED --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14361,9772 14436,9784 14460,9814 14488,9848
 # REMOVED --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14488,9848 14500,9856
 # REMOVED --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14575,9648 14604,9674
 # REMOVED (fertig) --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.476901.php --- #: next_check: 2016-05-14 --- Treptower Park: Bauarbeiten	2::inwork 14695,9587 14705,9578 14791,9537
@@ -2774,7 +2791,8 @@ Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 # REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2016 (Grundstücksnummerierungen) --- #: XXX laut osm offen ("residential") --- #: osm_watch: way id="338546087" version="3" --- #: last_checked: 2015-08-02 --- #: next_check: 2015-11-02 (public) --- Pfarrhufenanger: noch in Bau, gesperrt	2::inwork 25599,13069 25441,12838 25272,12629
 # 
 #: XXX Ende der Bauarbeiten?
-#: last_checked: 2016-05-09
+#: last_checked: 2016-06-20
+#: check_frequency: 14d
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076 9559,13087
 # 
 #: last_checked: 2016-05-21 vvv

@@ -25209,4 +25209,23 @@ EOF
 	2::inwork 24897,11083 24899,11044 24905,10955 24913,10884 24919,10818 24922,10785 24923,10774
 EOF
      },
+     { from  => 1466287200, # 2016-06-19 00:00
+       until => 1467410399, # 2016-07-01 23:59
+       text  => 'Herzbergstr. Richtung Krankenhaus: zwischen Am Wasserwerk und Siegfriedstr. Baustelle, Fahrtrichtung gesperrt, bis Anfang Juli 2016 ',
+       type  => 'handicap',
+       source_id => '2147340236',
+       data  => <<EOF,
+userdel	q4::inwork; 16629,13532 16866,13532
+EOF
+     },
+     { from  => 1466444819, # 2016-06-20 19:46
+       until => 1470520799, # 2016-08-06 23:59
+       text  => 'Monumentenbrücke: Bauarbeiten bis zum 6. August 2016, Radfahrer dürfen unter Umständen nicht passieren',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.489591.php',
+       data  => <<EOF,
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6081.html (Radfahrer _dürfen_ passieren)
+userdel	q4::inwork 8389,9087 8180,9099
+EOF
+     },
     );
