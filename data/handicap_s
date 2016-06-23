@@ -8,7 +8,8 @@ Revaler Str.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14357,11148 14286,
 Dˆringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
 Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
 Rigaer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 14133,12482 14266,12446
-Rigaer Str.: Bauarbeiten, Fahrbahn zwischen Zellestr. und Liebigstr. gesperrt	q3::inwork 14000,12519 14091,12494
+Rigaer Str./Liebigstr.: Bauarbeiten, Kreuzung gesperrt	q2::inwork 13761,12578 14000,12519 14091,12494
+Rigaer Str./Liebigstr.: Bauarbeiten, Kreuzung gesperrt	q2::inwork 13905,12374 14000,12519 14058,12709
 BouchÈstr.: Bauarbeiten, Radfahrer m¸ssen auf dem Gehweg fahren	q2::inwork 13645,9621 13867,9864 13884,9882
 Kommandantenstr.: Bauarbeiten, Einbahnstraﬂe	q2::inwork; 10437,11352 10389,11390
 Kommandantenstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10330,11422 10136,11529
@@ -75,10 +76,10 @@ Dircksenstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10970,12822 10849,12944
 Dircksenstr.: Fuﬂg‰nger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
 Gontardstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10733,12967 10801,12901 10923,12779
 Uferweg im Treptower Park: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 15778,8990 15638,9020 15527,9096 15513,9144 15453,9259 15432,9322 15304,9464 15186,9550 15052,9584 14909,9649 14889,9660 14807,9704 14635,9786 14500,9856 14488,9848
-Uferweg im Treptower Park: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 14466,9861 14460,9871 14448,9922
+Uferweg im Treptower Park: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 14500,9856 14467,9880 14448,9922
 (S-Bahnhof - Treptower Hafen): Fuﬂg‰nger, besonders an schˆnen Tagen	q2 14361,9772 14436,9784 14460,9814 14488,9848
 (S-Bahnhof - Treptower Hafen): Fuﬂg‰nger, besonders an schˆnen Tagen	q2 14404,9847 14466,9861 14488,9848
-(Uferweg - Puschkinallee): Fuﬂg‰nger	q1 14443,9731 14318,9688
+(Uferweg - Puschkinallee): Fuﬂg‰nger	q1 14443,9731 14371,9726 14318,9688
 Treptower Park, am Rosengarten: Fuﬂg‰nger	q2 14809,9466 14837,9517 14866,9571 14909,9649
 Treptower Park: Fuﬂg‰nger	q1 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674 14575,9648 14496,9705 14443,9731 14361,9772
 Treptower Park: einige Fuﬂg‰nger	q1 15558,8820 15439,8839 15297,8921 15245,8916 15223,8893
@@ -123,8 +124,7 @@ Tiergarten: einige Fuﬂg‰nger	q1 8571,11846 8501,11815 8244,11878 8221,11885 8132
 Tiergarten: einige Fuﬂg‰nger	q1 8172,11679 8210,11775 8244,11878 8327,12174 8344,12221 8391,12389 8400,12417
 (Bremer Weg - Fasanerieallee): Parkweg	q1 6337,11887 6379,11843 6406,11784 6452,11778 6540,11754
 (zum Rosengarten): einige Fuﬂg‰nger	q1 7026,12054 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
-Parkweg: w‰hrend der Bauarbeiten relativ eng	q3::inwork 14318,9688 14361,9772 14404,9847 14448,9922
-Parkweg: enge Br¸cke, Fuﬂweg	q2 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
+Parkweg: enge Br¸cke, Fuﬂweg	q2 14318,9688 14361,9772 14404,9847 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
 Hasenheide: Fuﬂg‰nger	q1 11266,8336 11275,8387 11282,8428 11279,8489 11255,8591 11182,8983 11141,9107 11136,9183
 Hasenheide: Fuﬂg‰nger	q1 11141,9107 11115,9100 11098,9046 11100,8974 11137,8738 11193,8568 11235,8454 11230,8402 11225,8350
 Hasenheide: Fuﬂg‰nger	q1 11182,8983 11137,8979 11100,8974
@@ -1334,9 +1334,10 @@ Heerstr. - Tiefenwerder: teilweise recht eng	q2 -3217,11570 -3179,11763 -3116,12
 L¸bbener Str.: Fuﬂg‰nger	q2 12729,10515 12731,10547
 Parforceweg: einige umgest¸rzte B‰ume	q4 -643,7252 -728,7310 -1020,7446 -1328,7597 -1643,7828
 (Brockenweg - Blankenburger Pflasterweg): schmaler Pfad	q3 15102,20723 15119,20655 15226,20587
-(S-Bahnhof Treptower Park - Rosengarten): Fuﬂg‰nger	q1 14575,9648 14627,9609 14695,9587 14792,9599 14866,9571 14912,9546 15019,9465 15133,9396
+(S-Bahnhof Treptower Park - Rosengarten): Fuﬂg‰nger	q1 14575,9648 14627,9609 14695,9587 14792,9599 14866,9571 14912,9546 15019,9465 15133,9396 15184,9373 15268,9374 15325,9354 15453,9259
 (S-Bahnhof Treptower Park - Rosengarten): Parkplatzverkehr	q1 14705,9578 14791,9537
 (S-Bahnhof Treptower Park - Rosengarten): Fuﬂg‰nger	q1 14791,9537 14823,9523 14837,9517
+(Treptower Park, mittlerer Weg): Fuﬂg‰nger	q1 15184,9373 15249,9337
 (Spreeuferweg - Wintersteinstr.): Fuﬂg‰nger, Bordstein	q3 3654,12672 3741,12607
 (Bornholmer Str. - Kolonnenweg): einige Fuﬂg‰nger	q1 10134,16534 10118,16561 10108,16576 9954,16590
 (Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str.): Fuﬂg‰nger	q2 14871,13135 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276

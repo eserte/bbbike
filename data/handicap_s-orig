@@ -22,7 +22,7 @@ W¸hlischstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14575,11407 14674,
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraﬂe wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2016-06-19 vvv
+#: last_checked: 2016-06-23 vvv
 Revaler Str.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14357,11148 14286,11186
 # REMOVED (keine Behinderungen mehr) --- Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 # REMOVED (gibt's nicht mehr?) --- Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraﬂe ausgewiesen	q3::inwork; 14442,11101 14468,11203
@@ -35,17 +35,21 @@ Dˆringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,112
 # REMOVED (beendet) --- #: XXX laut Fritz bis Ende M‰rz 2016 (sieht aber schlecht aus f¸r diesen Termin) --- #: last_checked: 2016-06-13 vvv --- #: check_frequency: 7d vvv --- Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 # REMOVED --- Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
-#: last_checked: 2016-06-15
+#: last_checked: 2016-06-23
 Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
 # 
 # REMOVED (hier nicht) --- #: XXX laut fritz nun vollst‰ndig gesperrt, bis 21.06.2016
-#: last_checked: 2016-05-23
+#: last_checked: 2016-06-21
 # REMOVED --- : check_frequency: 45d
 Rigaer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 14133,12482 14266,12446
 # 
-#: last_checked: 2016-05-23
-#: next_check: 2016-06-21
-Rigaer Str.: Bauarbeiten, Fahrbahn zwischen Zellestr. und Liebigstr. gesperrt	q3::inwork 14000,12519 14091,12494
+#: last_checked: 2016-06-21 vvv
+#: next_check: 2016-06-26 vvv
+#: XXX Ende laut fritz
+Rigaer Str./Liebigstr.: Bauarbeiten, Kreuzung gesperrt	q2::inwork 13761,12578 14000,12519 14091,12494
+Rigaer Str./Liebigstr.: Bauarbeiten, Kreuzung gesperrt	q2::inwork 13905,12374 14000,12519 14058,12709
+#: next_check ^^^
+#: last_checked ^^^
 # 
 # REMOVED (fertig) --- #: XXX nach den Bauarbeiten nur das kleine St¸ck an der Boxhagener noch mit handicap versehen (weil Durchfahrt verboten + umst‰ndliche Ampelf¸hrung) --- #: last_checked: 2014-05-26 --- #: next_check: 2014-06-01 (wahrscheinlich abgeschlossen) --- Neue Bahnhofstr.: Einbahnstraﬂe wegen Bauarbeiten	q3::inwork; 14752,11041 14811,11067 14879,11182 14908,11231 14918,11249
 # REMOVED --- #: last_checked: 2013-02-15 --- #: next_check: 2013-02-21 --- #: source_id: INKO_113418 --- Oberbaumbr¸cke: Umfahrung wegen Baustelle, etwas Zeitverlust	q3::inwork; 14442,11101 14468,11203
@@ -68,7 +72,7 @@ Rigaer Str.: Bauarbeiten, Fahrbahn zwischen Zellestr. und Liebigstr. gesperrt	q3
 #
 #: XXX siehe auch valid-Eintrag weiter unten
 #: source_id: 2147340178
-#: last_checked: 2016-06-13
+#: last_checked: 2016-06-22
 #: valid: -20161115
 BouchÈstr.: Bauarbeiten, Radfahrer m¸ssen auf dem Gehweg fahren	q2::inwork 13645,9621 13867,9864 13884,9882
 # REMOVED (wahrscheinlich aufgehoben) --- #: last_checked: 2013-11-22 --- #: check_frequency: 60d --- Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 13973,9465 14157,9345
@@ -95,7 +99,7 @@ Sch¸tzenstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10116,11485 9949,11470
 # REMOVED (zwar noch Einbahnstraﬂe, aber man kann mittlerweile relativ gut vorbei) --- #: XXX bis wann dauert die Sperrung an? Wird die Straﬂe dann asphaltiert sein? (siehe auch ƒnderung in qualitaet_s-orig, "provisorischer Asphalt") --- #: last_checked: 2016-03-17 --- Leuschnerdamm: Sperrung der Fahrbahn Richtung Michaelkirchplatz	q4::inwork; 11458,11136 11473,11180
 # 
 #: XXX nach den Bauarbeiten bessere Qualit‰t?
-#: last_checked: 2016-06-15
+#: last_checked: 2016-06-21
 Melchiorstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 11542,11342 11726,11265 11921,11185
 # 
 # REMOVED (nicht mehr gesperrt f¸r Radfahrer) --- #: XXX nochmal genauer anschauen... --- #: last_checked: 2014-11-10 --- Gipsstr.: Bauarbeiten zwischen Rosenthaler Str. und Joachimstr., Einbahnstraﬂe	q2::inwork; 10350,13376 10199,13446
@@ -224,7 +228,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2016-05-24
+#: last_checked: 2016-06-21
 #: check_frequency: 30d
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -292,7 +296,7 @@ Stallschreiberstr., Alexandrinenstr.: Einbahnstraﬂenregelung	q4::inwork; 10794,1
 ### Neukˆlln ###
 # 
 #: next_check_id: WEICHSELPLATZ-2016
-#: last_checked: 2016-06-20 vvv
+#: last_checked: 2016-06-23 vvv
 #: check_frequency: 14d vvv
 Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12761,9190 12851,9309 12844,9351
 Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12907,9073 12761,9190
@@ -454,7 +458,7 @@ Dresdener Str. - NKZ: Bordsteine	q3 11344,10507 11334,10527
 Alexanderplatz: langsame Straﬂenbahnen, Fuﬂg‰ngerverkehr	q2 11139,13008 11064,12910 10970,12822 10923,12779
 Alexanderplatz [Richtung Alexa]: Fuﬂg‰ngerverkehr	q2 11134,12793 11064,12910
 #: XXX nach den Bauarbeiten den alten Eintrag wiederherstellen
-#: last_checked: 2016-05-12
+#: last_checked: 2016-06-21
 #: check_frequency: 60d
 #Rathausstr.: Fuﬂg‰nger	q1- 10923,12779 10704,12595
 Rathausstr.: Fuﬂg‰nger, Bauarbeiten	q2 10923,12779 10704,12595
@@ -462,10 +466,10 @@ Dircksenstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10970,12822 10849,12944
 Dircksenstr.: Fuﬂg‰nger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
 Gontardstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10733,12967 10801,12901 10923,12779
 Uferweg im Treptower Park: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 15778,8990 15638,9020 15527,9096 15513,9144 15453,9259 15432,9322 15304,9464 15186,9550 15052,9584 14909,9649 14889,9660 14807,9704 14635,9786 14500,9856 14488,9848
-Uferweg im Treptower Park: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 14466,9861 14460,9871 14448,9922
+Uferweg im Treptower Park: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 14500,9856 14467,9880 14448,9922
 (S-Bahnhof - Treptower Hafen): Fuﬂg‰nger, besonders an schˆnen Tagen	q2 14361,9772 14436,9784 14460,9814 14488,9848
 (S-Bahnhof - Treptower Hafen): Fuﬂg‰nger, besonders an schˆnen Tagen	q2 14404,9847 14466,9861 14488,9848
-(Uferweg - Puschkinallee): Fuﬂg‰nger	q1 14443,9731 14318,9688
+(Uferweg - Puschkinallee): Fuﬂg‰nger	q1 14443,9731 14371,9726 14318,9688
 Treptower Park, am Rosengarten: Fuﬂg‰nger	q2 14809,9466 14837,9517 14866,9571 14909,9649
 Treptower Park: Fuﬂg‰nger	q1 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674 14575,9648 14496,9705 14443,9731 14361,9772
 Treptower Park: einige Fuﬂg‰nger	q1+ 15558,8820 15439,8839 15297,8921 15245,8916 15223,8893
@@ -513,11 +517,7 @@ Tiergarten: einige Fuﬂg‰nger	q1 8571,11846 8501,11815 8244,11878 8221,11885 8132
 Tiergarten: einige Fuﬂg‰nger	q1 8172,11679 8210,11775 8244,11878 8327,12174 8344,12221 8391,12389 8400,12417
 (Bremer Weg - Fasanerieallee): Parkweg	q1 6337,11887 6379,11843 6406,11784 6452,11778 6540,11754
 (zum Rosengarten): einige Fuﬂg‰nger	q1 7026,12054 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
-#: last_checked: 2016-06-20
-#: check_frequency: 7d
-# XXX sp‰ter wieder einsetzen: Parkweg: enge Br¸cke, Fuﬂweg	q2 14318,9688 14361,9772 14404,9847 14448,9922
-Parkweg: w‰hrend der Bauarbeiten relativ eng	q3::inwork 14318,9688 14361,9772 14404,9847 14448,9922
-Parkweg: enge Br¸cke, Fuﬂweg	q2 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
+Parkweg: enge Br¸cke, Fuﬂweg	q2 14318,9688 14361,9772 14404,9847 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
 # REMOVED (nun ein offizieller markierter Radweg) --- Spittelmarkt: Gehweg	q1 10369,11728 10274,11737 10240,11740
 Hasenheide: Fuﬂg‰nger	q1 11266,8336 11275,8387 11282,8428 11279,8489 11255,8591 11182,8983 11141,9107 11136,9183
 Hasenheide: Fuﬂg‰nger	q1 11141,9107 11115,9100 11098,9046 11100,8974 11137,8738 11193,8568 11235,8454 11230,8402 11225,8350
@@ -795,8 +795,8 @@ Fritz-Schiff-Weg: Fuﬂg‰nger	q1 13463,12507 13484,12436 13448,12340
 (Crellestr. - Julius-Leber-Br¸cke): Fuﬂg‰nger	q2 7524,9093 7555,8978 7509,8929 7497,8916
 (Fischerinsel, Spreekanalufer): Fuﬂg‰nger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870
 #: next_check_id: FISCHERINSEL-2015
-#: last_checked: 2016-04-12
-#: next_check: 2016-06-30
+#: last_checked: 2016-06-21
+#: next_check: 2016-07-30
 Spreekanalufer: Umfahrung an der Straﬂe Fischerinsel, Fuﬂg‰nger	q3::inwork 10672,11870 10776,11942
 # REMOVED (danach wieder folgendes aktivieren) --- (Fischerinsel, Spreekanalufer): Fuﬂg‰nger	q1 10672,11870 10776,11942
 (Fischerinsel, Spreekanalufer): Fuﬂg‰nger	q1 10776,11942 10824,11992
@@ -2070,10 +2070,11 @@ L¸bbener Str.: Fuﬂg‰nger	q2 12729,10515 12731,10547
 #: note: es war nur einer (2013-10-22), aber der Weg ist so schlecht, dass er auch einen Eintrag in handicap verdient
 Parforceweg: einige umgest¸rzte B‰ume	q4 -643,7252 -728,7310 -1020,7446 -1328,7597 -1643,7828
 (Brockenweg - Blankenburger Pflasterweg): schmaler Pfad	q3+ 15102,20723 15119,20655 15226,20587
-(S-Bahnhof Treptower Park - Rosengarten): Fuﬂg‰nger	q1 14575,9648 14627,9609 14695,9587 14792,9599 14866,9571 14912,9546 15019,9465 15133,9396
+(S-Bahnhof Treptower Park - Rosengarten): Fuﬂg‰nger	q1 14575,9648 14627,9609 14695,9587 14792,9599 14866,9571 14912,9546 15019,9465 15133,9396 15184,9373 15268,9374 15325,9354 15453,9259
 (S-Bahnhof Treptower Park - Rosengarten): Parkplatzverkehr	q1 14705,9578 14791,9537
 # REMOVED --- #: XXX_prog BS am Parkplatz (ansonsten -> q1)
 (S-Bahnhof Treptower Park - Rosengarten): Fuﬂg‰nger	q1 14791,9537 14823,9523 14837,9517
+(Treptower Park, mittlerer Weg): Fuﬂg‰nger	q1 15184,9373 15249,9337
 #: XXX_prog BS an der Wintersteinstr (ansonsten -> q2)
 #: note: offizieller gemeinsamer Rad- und Gehweg
 (Spreeuferweg - Wintersteinstr.): Fuﬂg‰nger, Bordstein	q3 3654,12672 3741,12607

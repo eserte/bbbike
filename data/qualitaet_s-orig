@@ -159,7 +159,7 @@ Corneliusstr.: mäßiges Kopfsteinpflaster	Q2 6880,11110 6841,11114 6630,11247 647
 Kopernikusstr.: mäßiges Kopfsteinpflaster	Q2 13467,11778 13651,11731
 Torellstr.: mäßiges Kopfsteinpflaster	Q2 13295,11792 13467,11778
 #: XXX Bauarbeiten, danach vielleicht teilweise bessere Qualität?
-#: last_checked: 2016-06-15
+#: last_checked: 2016-06-21
 #: check_frequency: 60d
 Rüdersdorfer Str.: Asphalt mit Schäden	Q1- 13295,11792 13173,11788 13066,11854
 Kaskelstr.: relative glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
@@ -244,7 +244,7 @@ Lohmühlenbrücke: Asphalt	Q0 12871,9356 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2016-06-07
+#: last_checked: 2016-06-23
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13606,9578 13455,9711 13251,9829
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15021,11152 15102,11120
@@ -258,7 +258,7 @@ Planufer: Kopfsteinpflaster, OK	Q1- 11543,10015 11507,10004 11485,10029
 Planufer: Kopfsteinpflaster, OK	Q1- 11177,9935 11160,9932 10929,9897 10914,9887
 Admiralstr.: Kopfsteinpflaster	Q2+ 11177,9935 11199,9993 11244,10111
 Admiralstr.: Verbundsteinpflaster	Q1 11244,10111 11274,10184
-Fränkelufer: Kopfsteinpflaster	Q2 11464,10102 11310,10021 11199,9993 10979,10017 10967,10092
+Fränkelufer: Kopfsteinpflaster	Q2 11464,10102 11310,10021 11199,9993 11082,9992 10979,10017 10967,10092
 Mittenwalder Str.: Kopfsteinpflaster	Q2 9927,9487 9957,9692 9982,9847 10006,9942
 Tiergartenufer: mäßiges Kopfsteinpflaster	Q2 6476,11325 6436,11343
 Tiergartenufer: Parkweg/Kleinsteinpflaster	Q1 6436,11343 6358,11394 6262,11426 6186,11466
@@ -2159,7 +2159,7 @@ Hubertusdamm: Asphalt	Q0 14632,23257 14761,23453 14845,23565 14902,23655 15029,2
 Straße 70: guter bis mäßiger Asphalt	Q1- 15595,22693 15723,22611 15837,22535 15959,22454 16085,22373 16208,22289 16332,22204
 Straße 70 - Lindenberger Weg: Feldweg	Q2 16332,22204 16339,22199 16423,22141 16459,22118 16528,22074 16390,21828 16502,21751 16576,21165
 # REMOVED --- Lindenberger Weg - Am Luchgraben, entlang der B2: Trampelpfad	Q3
-(Am Luchgraben - Siedlung Wartenberg): glatter Feldweg	Q1 17073,21329 17274,20851 17281,20834 17946,20889 18026,20847 18083,20782 18061,20715
+(Am Luchgraben - Siedlung Wartenberg): glatter Feldweg	Q1 17073,21329 17274,20851 17281,20834 17471,20850 17946,20889 18026,20847 18083,20782 18061,20715
 (Am Luchgraben - Siedlung Wartenberg): schlechtes Kopfsteinpflaster	Q3 18061,20715 18383,20623 18515,20587
 Straße 2: schlechtes Kopfsteinpflaster	Q3 18515,20587 18869,20484 18911,20471
 Straße 2: Asphalt	Q0- 18911,20471 18999,20442 19079,20414 19167,20380 19261,20344
@@ -2171,7 +2171,7 @@ Straße 8: Asphalt	Q0 19227,20270 19261,20344 19354,20607
 (Siedlung Wartenberg - Tierheim): mäßiger Feldweg	Q2 19279,19517 19381,19830
 (Siedlung Wartenberg - Tierheim): schlechter Feldweg	Q3 19381,19830 19691,19748 19819,19602
 (Siedlung Wartenberg - Tierheim): mäßiger Feldweg	Q2+ 19819,19602 19579,18933
-(nördlich des Tierheims): Feldweg	Q2+ 19819,19602 20240,19393 20256,19374 20374,19250 20380,19206 20508,19100 20561,19084 20503,18903 20461,18796 20454,18778
+(nördlich des Tierheims): Feldweg	Q2+ 19819,19602 20240,19393 20262,19367 20374,19250 20380,19206 20508,19100 20561,19084 20503,18903 20461,18796 20454,18778
 (Am Tierheim): glatte wassergebundene Decke	Q1+ 19579,18933 19974,18799
 (Dorfstr. - Köthener Str.): Parkweg	Q1 19875,18182 19968,18144 20542,17911 20746,17848 20804,17848
 (Hohenschönhauser Str. - Eichenallee): wassergebundene Decke	Q1 19845,18120 19868,18107 19968,18144
@@ -7202,7 +7202,7 @@ Sigrunstr.: Asphalt	Q0 16393,19940 16459,19946 16517,19953 16537,19954 16621,199
 Ricardastr.: Asphalt	Q0 16459,19946 16472,19818
 Helminestr.: Asphalt	Q0 16537,19954 16550,19829
 Ellistr.: Asphalt	Q0 16496,20157 16517,19953
-(entlang des Hechtgrabens): Asphalt	Q0 17679,19532 17015,19287 16768,19191 16736,19193
+(entlang des Hechtgrabens): Asphalt	Q0 17679,19532 17351,19411 17015,19287 16768,19191 16736,19193
 (entlang des Hechtgrabens): mäßiger Beton	Q2+ 16325,18796 16426,18812 16616,18969 16665,19021
 (Hagenower Ring - Schweriner Ring): Verbundsteinpflaster	Q1 17260,19192 17447,19197
 Genossenschaftsweg: Kopfsteinpflaster	Q2- 17900,18972 17956,19139
@@ -8083,12 +8083,12 @@ Jülicher Str.: Asphalt	Q0 9514,16603 9498,16480 9487,16395 9475,16307 9474,16297
 (Treptower Park): wassergebundene Decke	Q1- 15187,9038 15154,9106 15025,9171 14950,9307
 (Treptower Park): Asphalt	Q0 14950,9307 14898,9364 14883,9431
 (Treptower Park): Asphalt	Q0 15159,8934 15223,8893 15235,8841 15298,8781 15335,8714 15378,8668
-(Treptower Park): Asphalt	Q0 15335,8714 15254,8735 15036,8728 14949,8773 14906,8822 14854,8964
+(Treptower Park): Asphalt	Q0 15335,8714 15254,8735 15036,8728 14949,8773 14918,8813 14854,8964
 (Treptower Park): Asphalt	Q0 15181,8967 15245,8916
 (Florentinestr., Verlängerung): Schotterweg	Q2+ 16633,20174 16728,20189
 (Florentinestr., Verlängerung): wassergebundene Decke	Q1 16728,20189 17055,20300
 #: laut osm "asphalt", westliches Ende bestätig
-(Weg): Asphalt	Q0 17064,20455 17130,20436 17641,20141 17844,20055 18178,19972
+(Weg): Asphalt	Q0 17064,20455 17130,20436 17422,20268 17641,20141 17844,20055 18178,19972
 (Azaleenstr. - Uferweg): unbefestigte Straße	Q2+ 23874,4929 23901,4982 23962,5031
 (Azaleenstr. - Uferweg): unbefestigte Straße	Q2+ 23850,4933 23852,5036
 Däumlingsweg: Kopfsteinpflaster	Q2- 23593,6663 23598,6718
@@ -9412,10 +9412,11 @@ Giselhersteig: Verbundsteinpflaster	Q1+ 17438,12448 17433,12414
 (Giselhersteig - Nibelungenring): Verbundsteinpflaster	Q1+ 17386,12456 17382,12421
 (Giselhersteig - Hadburgpfad): Verbundsteinpflaster	Q1+ 17491,12439 17486,12407
 (Siegfriedstr. [Autowaschcenter] - Landschaftspark Herzberge): Asphalt	Q0 17110,14187 17224,14151 17236,14140
-Treptower Park: wassergebundene Decke	Q1 14695,9587 14792,9599 14866,9571 14912,9546 15019,9465 15133,9396
+Treptower Park: wassergebundene Decke	Q1 14695,9587 14792,9599 14866,9571 14912,9546 15019,9465 15133,9396 15184,9373 15268,9374 15325,9354 15453,9259
+(Treptower Park, mittlerer Weg): wassergebundene Decke	Q1 15184,9373 15249,9337
 (S-Bahnhof Treptower Park - Rosengarten): Gehwegplatten	Q0 14705,9578 14791,9537
 (S-Bahnhof Treptower Park - Rosengarten): Gehwegplatten	Q0- 14791,9537 14823,9523 14837,9517
-(Uferweg - Puschkinallee): wassergebundene Decke und Kleinsteinpflaster	Q1 14443,9731 14318,9688
+(Uferweg - Puschkinallee): wassergebundene Decke und Kleinsteinpflaster	Q1 14443,9731 14371,9726 14318,9688
 (Spreeuferweg - Wintersteinstr.): Asphalt mit Regenablaufrinnen	Q1- 3654,12672 3741,12607
 (Weg am Stadtgarten Moabit): asphaltiert	Q0 5708,14077 5685,14215
 Helsingforser Platz: Betonpflaster	Q0- 13473,11456 13427,11431
@@ -9637,7 +9638,11 @@ Viechtacher Str.: Asphalt	Q0 19657,9666 19727,9672 19801,9680 19871,9680 19923,9
 Gensinger Str. [Wohngebiet]: Asphalt	Q0- 18927,12135 18913,11907 18910,11838
 Marzahner Chaussee [Wohngebiet]: Asphalt	Q0 18417,11854 18500,11847 18580,11874
 (Marzahner Chaussee - Gensinger Str.): Asphalt	Q0- 18580,11874 18698,11914 18888,11907 18913,11907
-Treptower Park: Kleinsteinpflaster	Q1 15638,9020 15630,8979 15561,8903
+Treptower Park: Kleinsteinpflaster	Q1 15638,9020 15630,8979 15623,8949
+Treptower Park: wassergebundene Decke	Q1 15623,8949 15617,8924 15608,8882 15591,8848
+(Treptower Park - Karpfenteichstr.): Asphalt	Q1 14918,8813 14883,8823
+(Treptower Park - Karpfenteichstr.): Kopfsteinpflaster	Q2 14883,8823 14852,8799
+(Wasserweg - Treptower Park): wassergebundene Decke	Q1 15680,8914 15617,8924
 (S-Bahnhof - Treptower Hafen): Mosaikpflaster	Q1 14404,9847 14466,9861 14488,9848
 Abteibrücke: Kleinsteinpflaster	Q1 15630,8979 15658,9007
 Abteibrücke: asphaltiert	Q0 15658,9007 15674,9095
@@ -10342,7 +10347,7 @@ Kurstr. (Spandau): Asphalt	Q0 -3077,15367 -3041,15434 -3006,15534
 #: corrected_by: srt (Q2 -> Q2-)
 Kurstr. (Spandau): Kopfsteinpflaster	Q2- -3006,15534 -2980,15675
 #: corrected_by: srt (mäßiger Asphalt, viele Straßenschäden, Q2+ -> ...)
-An der Margaretenhöhe: Asphalt	Q0- 16736,19193 16681,19382 16634,19839 16621,19961
+An der Margaretenhöhe: Asphalt	Q0- 16736,19193 16681,19382 16648,19704 16634,19839 16621,19961
 #: confirmed_by: srt
 An der Margaretenhöhe: mäßiger Asphalt, viele Straßenschäden	Q2+ 16621,19961 16597,20170
 #: note: laut ADFC-Karte gut geeignet

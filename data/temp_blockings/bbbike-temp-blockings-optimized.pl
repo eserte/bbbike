@@ -3909,7 +3909,16 @@ userdel	q4::inwork 20381,1390 20405,1460
          'type' => 'handicap',
          'until' => 1475272799
        },
-       undef,
+       {
+         'data' => '#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.490470.php
+userdel	q4::inwork; 13651,11731 13696,11920 13745,12118 13785,12292
+',
+         'from' => 1466632800,
+         'id' => 2789,
+         'text' => 'Warschauer Str.: Fahrbahn zwischen Kopernikusstr. und Frankfurter Allee wegen Bauarbeiten gesperrt, 24.06.2016 bis 26.06.2016',
+         'type' => 'handicap',
+         'until' => 1466978399
+       },
        {
          'data' => 'userdel	2::inwork 63500,89978 63789,89450 63797,89389 63814,89247 63826,89135 63928,88223 64007,87773 64113,87461
 ',
@@ -4030,6 +4039,16 @@ userdel	q4::inwork 8389,9087 8180,9099
          'text' => 'Monumentenbrücke: Bauarbeiten bis zum 6. August 2016, Radfahrer dürfen unter Umständen nicht passieren',
          'type' => 'handicap',
          'until' => 1470520799
+       },
+       {
+         'data' => 'userdel	2::inwork -2955,15129 -2929,15082 -2965,15053 -3008,14992 -3008,14910 -2998,14879 -3030,14844 -3066,14718
+',
+         'from' => 1467151200,
+         'id' => 2803,
+         'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.490082.php',
+         'text' => 'Wröhmännerpark: Bauarbeiten, Weg für Fußgänger und Radfahrer gesperrt, von Ende Juni 2016 bis voraussichtlich Ende September 2016',
+         'type' => 'gesperrt',
+         'until' => 1475272799
        }
      
 );

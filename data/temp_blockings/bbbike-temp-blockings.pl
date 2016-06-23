@@ -24233,7 +24233,7 @@ EOF
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.297071.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.295591.php
 #: XXX WIRD NICHT MEHR VERWENDET -> gesperrt-orig!
-userdel	2::inwork 14318,9688 14443,9731
+userdel	2::inwork 14318,9688 14371,9726 14443,9731
 # REMOVED --- userdel	2::inwork 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
 # REMOVED --- userdel	2::inwork 14575,9648 14604,9674 14645,9710 14697,9726 14853,9655 14909,9649
 # REMOVED --- userdel	2::inwork 14635,9786 14807,9704 14889,9660 14909,9649 15052,9584 15186,9550 15304,9464 15432,9322 15453,9259
@@ -25088,12 +25088,13 @@ userdel	q4::inwork 20580,1406 20405,1460 20369,1476
 userdel	q4::inwork 20381,1390 20405,1460
 EOF
      },
-     { from  => 1464298923, # 2016-05-26 23:42
-       until => 1464559200, # 2016-05-30 00:00
-       text  => 'Warschauer Str.: Fahrbahn zwischen Warschauer Brücke und Kopernikusstr. wegen Bauarbeiten gesperrt, 27.05.2016 bis 29.05.2016',
+     { from  => $isodate2epoch->("2016-06-23 00:00:00"), # 1464298923, # 2016-05-26 23:42
+       until => $isodate2epoch->("2016-06-26 23:59:59"), # 1464559200, # 2016-05-30 00:00
+       text  => 'Warschauer Str.: Fahrbahn zwischen Kopernikusstr. und Frankfurter Allee wegen Bauarbeiten gesperrt, 24.06.2016 bis 26.06.2016',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork; 13541,11355 13588,11490 13603,11538 13651,11731 13696,11920
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.490470.php
+userdel	q4::inwork; 13651,11731 13696,11920 13745,12118 13785,12292
 EOF
      },
      { from  => 1465106400, # 2016-06-05 08:00
@@ -25226,6 +25227,15 @@ EOF
        data  => <<EOF,
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6081.html (Radfahrer _dürfen_ passieren)
 userdel	q4::inwork 8389,9087 8180,9099
+EOF
+     },
+     { from  => 1467151200, # 2016-06-29 00:00
+       until => 1475272799, # 2016-09-30 23:59
+       text  => 'Wröhmännerpark: Bauarbeiten, Weg für Fußgänger und Radfahrer gesperrt, von Ende Juni 2016 bis voraussichtlich Ende September 2016',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.490082.php',
+       data  => <<EOF,
+userdel	2::inwork -2955,15129 -2929,15082 -2965,15053 -3008,14992 -3008,14910 -2998,14879 -3030,14844 -3066,14718
 EOF
      },
     );

@@ -40,7 +40,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2016-06-15
+#: last_checked: 2016-06-21
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11349,11227 11249,11268 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -66,8 +66,8 @@ Schulenburgstr./Weißenburger Str.: werden hier Radspuren markiert?	?::projected 
 Hubertusallee/Teplitzer Str.: werden hier Radspuren markiert?	?::projected 2320,8722 2295,8678 2273,8640 2190,8528 2126,8426 2120,8335 2106,8075 2087,7811 2114,7742
 # 
 #: XXX Baumaßnahmen GR6.20, GR6.19 (Realisierung nach 2011)
-#: osm_watch: way id="4323788" version="16"
-#: osm_watch: way id="23109081" version="7"
+#: osm_watch: way id="4323788" version="17"
+#: osm_watch: way id="23109081" version="8"
 #: osm_watch: way id="41108858" version="6"
 #: source_id: IM_026443	
 #: last_checked: 2015-12-05
@@ -219,7 +219,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140728.0940.398545.html (Baubeginn 1.9.2014)
 #: by: http://www.umbau-warschauer-strasse.de/
-#: last_checked: 2016-06-20
+#: last_checked: 2016-06-21
 #: check_frequency: 14d
 Warschauer Str: Radspuren in Bau	?::inwork 13651,11731 13696,11920 13745,12118
 # 
@@ -385,8 +385,7 @@ Ernststr.: Verbesserung für den Radverkehr, evtl. Entfernung des Kopfsteinpflast
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
-#: XXX Zwischen Bosse- und Bödikerstraße Sperrung stadtauswärts. (Bis 08.09.2016 17:00 Uhr)
-Corinthstr.: Bauarbeiten auch für Radfahrer relevant?	?::inwork; 14312,10657 14490,10610
+# REMOVED (noch keine Bauarbeiten) --- #: XXX Zwischen Bosse- und Bödikerstraße Sperrung stadtauswärts. (Bis 08.09.2016 17:00 Uhr) --- Corinthstr.: Bauarbeiten auch für Radfahrer relevant?	?::inwork; 14312,10657 14490,10610
 # 
 #: last_checked: 2016-05-29
 #: check_frequency: 100d
@@ -494,8 +493,7 @@ Bohnsdorfer Kreisel: Einbahnstraße wird aufgehoben	?::projected 21977,988 21894,
 #: next_check: 2016-09-01
 Keltensteig - Germanenplatz - Teutonenstr.: Wird nach der Fahrbahninstandsetzung die Qualität besser werden? Wird der gesamte Germanenplatz instand gesetzt?	?::projected 20302,1613 20369,1476 20405,1460 20580,1406
 # 
-#: last_checked: 2016-05-21
-Treptower Park, mittlerer Weg: wann ist hier fertig gebaut? wie geht der Weg weiter? Qualität? Beleuchtung?	?::inwork 15133,9396 15169,9380 15247,9388 15325,9354 15453,9259
+# REMOVED --- #: last_checked: 2016-05-21 --- Treptower Park, mittlerer Weg: wann ist hier fertig gebaut? wie geht der Weg weiter? Qualität? Beleuchtung?	?::inwork 15133,9396 15184,9373 15268,9374 15325,9354 15453,9259
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2015
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/07re.pdf/file?y=2016 (Grundstücksnummerierungen)
@@ -1428,6 +1426,15 @@ Bebauungsplan 7-65: Weg in Planung	?::projected 7960,6059 7697,6059 7630,6016 76
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.490082.php
+#: XXX Führung der Radrouten (Havel-Radweg u.a.) anpassen
+#: next_check: 2016-09-30
+Wröhmännerpark: nach den Bauarbeiten "gelber Farbasphalt", vermutlich für Radfahrer legal befahrbar	2::inwork -2955,15129 -2929,15082 -2965,15053 -3008,14992 -3008,14910 -2998,14879 -3030,14844 -3066,14718
+# 
+Treptower Park/Wasserweg: Bordsteine?	? 15617,8924 15680,8914
+# 
+Plauener Str. (Verlängerung): Qualität? Kann man über die Grünanlage zur Hofheimer Str. gelangen?	? 17531,14923 17558,14840
+# 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5460
 Wilhelminenhofstr./Firlstr.: wo genau befindet sich die Ampel?	? 18464,6299 18473,6265 18486,6230
 # 
@@ -2236,7 +2243,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: XXX_prog ^^^
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20141202.1525.400470.html
-#: last_checked: 2016-06-09
+#: last_checked: 2016-06-21
 #: check_frequency: 90d
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 
@@ -2696,6 +2703,35 @@ Johannes-Guthmann-Weg: neue Straße entsteht, vermutlich hier? Qualität?	?::inwor
 Lili-Grün-Weg und Lin-Jaldati-Weg: wo genau werden die Straßen liegen? Qualität?	?::projected 23646,14007 23744,13960 23753,14050
 #: ignore ^^^
 #: section ^^^
+# 
+#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6704 vvv
+#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036827265989/827265989/00127188/88-Anlagen/02/AnlageDS2043VIIWege.pdf vvv
+#: XXX Namensvorschläge
+Zum Hechtgraben und Verlängerung: Benennung zu Malchower Teichweg; wie ist die Qualität des nördlichen Teils?	? 16163,18780 16158,19049 16104,19165 16074,19162 16082,19754 15620,19775 15620,19809
+Feldmarkweg: Benennung? Wie ist Qualität? Vermutlich unbeleuchtet?	? 17351,19411 17396,19919 17422,20268 17471,20850
+Tümpelweg: Benennung? Wie ist Qualität? Vermutlich unbeleuchtet?	? 17422,20268 18024,20630 18061,20715
+Falkenberger Fußsteig: Benennung? Wie ist die Qualität im noch nicht erfassten östlichen Abschnitt?	? 19820,18091 19635,18115 19251,18252 19212,18205 18969,18448
+Krugwiesensteig: Benennung? Wie ist die Qualität im noch nicht erfassten südlichen Abschnitt?	? 19291,18456 19265,18400 19249,18351 19251,18252 19212,18205 19127,18091 19110,18015 19102,17879 18986,17786 18937,17738 18831,17663 18784,17525 18756,17498 18708,17415 18646,17345
+Wiesenweg: Benennung? Wie ist Qualität? Vermutlich unbeleuchtet?	? 17015,19587 17396,19919 17641,20141
+Luchweg: Benennung? Wie ist Qualität? Vermutlich unbeleuchtet?	? 17015,19587 16648,19704
+Schälingsweg: Benennung? Qualität des fehlenden Stücks zur Lindenberger Str.?	? 16647,21038 16711,20942 16762,20895 16771,20740 16748,20586 16787,20515 17064,20455 17130,20436 17422,20268 17641,20141 17844,20055 18178,19972 18294,19935
+Pappelweg: Benennung? Qualität des fehlenden Stücks im Norden?	? 17626,19367 17679,19532 17844,20055 18061,20715
+In der Falkenberger Feldmark: Benennung? Qualität? Vermutlich unbeleuchtet?	? 20044,18774 20262,19367 20388,19721 20435,19869 20536,20006
+Marie-Elisabeth-von-Humboldt-Weg: Benennung? Qualität des fehlenden westlichen Stücks?	? 21328,19049 21169,19146 21154,19159 21089,19215 21003,19272 20966,19282 20904,19284 20855,19299 20800,19322 20719,19433 20442,19698 20388,19721
+#: next_check: 2016-08-31 vvv
+#: note "zur Erinnerung an Stille Helden"
+Max-und-Herta-Naujocks-Weg: Benennung?	? 15611,18627 15732,18666 15774,18656 15873,18561 15949,18555 16161,18687 16210,18706 16198,18753 16163,18780 16325,18796 16216,19183 16314,19210 16349,19442 16343,19470 16309,19542 16359,19590 16384,19678
+Schnitterinnenweg: Benennung?	? 16736,19193 16768,19191 17015,19287 17351,19411 17679,19532
+Am Alten Malchower Graben: Benennung?	? 15424,19861 15393,19671 15383,19610 15386,19485 15426,19216 15412,19082 15407,19024 15376,18908 15400,18840 15399,18782 15434,18731 15413,18626
+wird benannt, Name ist noch offen	? 18515,20587 18383,20623 18061,20715 18083,20782 18026,20847 17946,20889 17471,20850 17281,20834 17274,20851 17073,21329
+Grenzweg: Benennung?	? 21369,18935 21344,19008 21328,19049 21289,19147 21101,19448
+Falkenberger Fußsteig: Benennung? (siehe auch oben)	? 18922,18436 18761,18480 18503,18535 18215,18629 18185,18641
+Ahornallee: Benennung?	? 17015,19287 17015,19587 17055,20300 17060,20381 17064,20455 17079,20716 17281,20834
+Florentinenweg: Benennung?	? 17055,20300 16728,20189 16633,20174
+Zehnrutenweg: Benennung?	? 20347,18667 20377,18753 20454,18778 20461,18796 20503,18903 20561,19084 20508,19100 20380,19206 20374,19250 20262,19367 20240,19393 19819,19602 19691,19748 19381,19830
+#: next_check ^^^
+#: by ^^^
+#: by ^^^
 #
 ######################################################################
 #
