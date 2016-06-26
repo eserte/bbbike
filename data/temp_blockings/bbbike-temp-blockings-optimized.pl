@@ -2390,7 +2390,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'data' => '#: by: http://csd-berlin.de/event-info-en/
 #: by: https://www.berlin.de/en/events/2096878-2842498-csd-christopher-street-day.en.html
-userdel	2::temp 6851,10416 6937,10363 6971,10346 7033,10328 7033,10396 7003,10513 6985,10597 6972,10665 6929,10852 6918,10858 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6685,11954 6642,12010 6653,12067 6690,12104 6725,12113 6754,12108 6787,12099 6828,12031 6809,11979 6744,11936
+userdel	2::temp 6851,10416 6937,10363 6971,10346 7033,10328 7033,10396 7003,10513 6985,10597 6972,10665 6929,10852 6918,10858 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6685,11954 6642,12010 6656,12075 6690,12104 6725,12113 6754,12108 6787,12099 6828,12031 6809,11979 6744,11936
 userdel	2::temp 6353,10583 6292,10627 6228,10646 6171,10657
 userdel	2::temp 7033,10396 6851,10416 6753,10446 6636,10492 6532,10529 6468,10550 6353,10583 6268,10588 6216,10614 6171,10657 6133,10679 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5351,10760 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435 4157,10418
 userdel auto	3 6380,10704 6353,10583 6302,10462
@@ -3786,15 +3786,16 @@ userdel	q4::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129 -6507,15007
        undef,
        undef,
        {
-         'data' => '#: last_checked: 2016-05-13 vvv
-#: priority: #A
-	2::inwork 16066,3799 15892,3932 15861,3942 15678,4083 15594,4152
-	2::inwork 15892,3932 15872,3888
+         'data' => '#: last_checked: 2016-06-26 vvv
+#: priority: #B
+# REMOVED ---	2::inwork 16066,3799 15878,3936
+	2::inwork 15878,3936 15861,3942 15678,4083 15594,4152
+# REMOVED ---	2::inwork 15878,3936 15859,3924
 #: last_checked ^^^
 ',
          'from' => undef,
          'id' => 2772,
-         'text' => 'Am Teltowkanal: Bauarbeiten zwischen Fenchelweg und Trollblumenweg, Durchfahrt nicht möglich',
+         'text' => 'Am Teltowkanal: Bauarbeiten am Uferweg',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -3876,7 +3877,7 @@ userdel	2::temp 8371,13399 8363,13402 8356,13404
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2016-05-13
+         'data' => '#: last_checked: 2016-06-26
 	2::inwork 16041,3718 16003,3652
 ',
          'from' => undef,
@@ -3909,16 +3910,7 @@ userdel	q4::inwork 20381,1390 20405,1460
          'type' => 'handicap',
          'until' => 1475272799
        },
-       {
-         'data' => '#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.490470.php
-userdel	q4::inwork; 13651,11731 13696,11920 13745,12118 13785,12292
-',
-         'from' => 1466632800,
-         'id' => 2789,
-         'text' => 'Warschauer Str.: Fahrbahn zwischen Kopernikusstr. und Frankfurter Allee wegen Bauarbeiten gesperrt, 24.06.2016 bis 26.06.2016',
-         'type' => 'handicap',
-         'until' => 1466978399
-       },
+       undef,
        {
          'data' => 'userdel	2::inwork 63500,89978 63789,89450 63797,89389 63814,89247 63826,89135 63928,88223 64007,87773 64113,87461
 ',
@@ -4031,12 +4023,12 @@ userdel	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
        },
        {
          'data' => '#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6081.html (Radfahrer _dürfen_ passieren)
-userdel	q4::inwork 8389,9087 8180,9099
+userdel	q3::inwork 8389,9087 8180,9099
 ',
          'from' => 1466444819,
          'id' => 2802,
          'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.489591.php',
-         'text' => 'Monumentenbrücke: Bauarbeiten bis zum 6. August 2016, Radfahrer dürfen unter Umständen nicht passieren',
+         'text' => 'Monumentenbrücke: Bauarbeiten bis zum 6. August 2016, langsameres Passieren möglich',
          'type' => 'handicap',
          'until' => 1470520799
        },
@@ -4049,6 +4041,36 @@ userdel	q4::inwork 8389,9087 8180,9099
          'text' => 'Wröhmännerpark: Bauarbeiten, Weg für Fußgänger und Radfahrer gesperrt, von Ende Juni 2016 bis voraussichtlich Ende September 2016',
          'type' => 'gesperrt',
          'until' => 1475272799
+       },
+       {
+         'data' => '#: XXX danach enthält der Weg einen "Bitumenbelag"
+#: next_check: 2016-10-01
+userdel	2::inwork 16532,26174 16222,25829
+',
+         'from' => 1467237600,
+         'id' => 2804,
+         'source_id' => 'http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2016/pressemitteilung.491050.php',
+         'text' => 'Röntgentaler Weg: Bauarbeiten, Weg wird für Radfahrer und Fußgänger gesperrt sein, voraussichtlich Anfang Juli 2016 bis Anfang Oktober 2016',
+         'type' => 'gesperrt',
+         'until' => 1475359199
+       },
+       {
+         'data' => '#: by: http://lolp2.de.c3cdn.com/wp/wp-content/uploads/2016/02/Lollapalooza2016_Treptower-Park_Festivalmap_2000x1414_RZ.png
+userdel	2::temp 15383,9191 14879,9433 14809,9466
+userdel	2::temp 14909,9649 14867,9573 14837,9517 14809,9466
+userdel	2::temp 14577,9641 14627,9609 14695,9587 14792,9599 14867,9573 14918,9545 15025,9461 15133,9396 15184,9373 15268,9374
+userdel	2::temp 14695,9587 14705,9578 14791,9537
+userdel	2::temp 14879,9433 14898,9364 14955,9294
+userdel	2::temp 15133,9396 15184,9373 15268,9374
+userdel	2::temp 14316,9542 14384,9565
+userdel	2::temp 14809,9466 14556,9581
+userdel	2::temp 14588,9473 14635,9441
+',
+         'from' => 1473372000,
+         'id' => 2805,
+         'text' => 'Lollapalooza 2016 im Treptower Park: gesperrte Wege und Straßen, 10.09.2016 und 11.09.2016',
+         'type' => 'gesperrt',
+         'until' => 1473631200
        }
      
 );

@@ -91,7 +91,7 @@ Archibaldweg	1s 15674,10851 15870,10938
 Nöldnerplatz	1 15870,10938 15903,10906 16049,10844
 Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
 Richterstr.	1s 22092,999 22120,886
-Richterstr.	1s 22075,779 22007,711
+Richterstr.	1s 22062,773 22007,711
 Grünau/B179	1 22007,711 21861,802 21894,881 21977,988 22044,1018 22092,999
 Dorfplatz	1 21074,-475 20986,-529 20890,-546 20827,-537 20999,-489 21074,-475
 B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532 21819,1595 21541,1739
@@ -107,7 +107,7 @@ Detmolder Str. (Süd)	1 4659,7982 4572,7936 4371,8018 4342,8093 4280,8188
 Detmolder Str. (Nord)	2 4349,8118 4469,8037 4659,7982
 Detmolder Str. (Nord)	1 4280,8188 4349,8118
 Steinplatz	1 5166,11343 5122,11300 5088,11322 5053,11343 5091,11406
-Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1 14089,9610 13867,9864 13829,9905
+Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1 14089,9610 13865,9866 13795,9941
 Amtsgerichtsplatz	1 2987,11055 3049,11015 3033,10980 2981,10892 2921,10928 2987,11055
 Bethaniendamm	1 12060,11323 12012,11235 11950,11157 11845,11095 11750,11065 11640,11067 11458,11136
 Engeldamm	1 11473,11180 11656,11106 11800,11118 11921,11185 11985,11261 12025,11346
@@ -188,7 +188,7 @@ Fanningerstr.	1s 16890,12135 16794,12144
 Gierkeplatz	1 3447,12269 3456,12296 3478,12306 3510,12301 3528,12276 3521,12243 3493,12228 3463,12237 3447,12269
 Hagenplatz	1 1167,8556 1094,8398
 Branitzer Platz	1 1346,12053 1311,12084 1311,12122 1334,12152 1374,12164 1407,12134 1414,12091 1386,12058 1346,12053
-Reutlinger Str.	1 7676,4216 7601,4485
+Reutlinger Str.	1 7676,4216 7597,4499
 Sybel-/Waitzstr.	1 3883,10585 3764,10580 3731,10640 3726,10757
 Aßmannstr.	1 25012,5729 25048,5727 25039,5304 25039,5295
 Schönblicker Str.	1 31670,3604 31661,3665 31695,3690 31745,3679 31756,3620 31724,3592 31670,3604
@@ -775,7 +775,7 @@ Garzauer Str.	1 21830,13688 21722,13708
 Flankenschanze	1 -3507,15341 -3534,15219
 Berliner Str. (Pankow, Prenzlauer Berg) [zur Tiroler Str.]	1 10862,17087 10891,17088 10917,17088
 Alt-Moabit - Invalidenstr.	1 7415,13060 7422,13012
-(Puschkinallee - Elsenstr.)	1 14244,9812 14250,9756 14270,9710
+(Puschkinallee - Elsenstr.)	1 14244,9812 14250,9756 14271,9712
 Parkaue	1s 15406,12444 15408,12394 15370,12264
 Stahlheimer Str.	1 11727,16358 11698,16311
 Am Zirkus	1s 9239,12923 9212,12969 9167,13046 9137,13032
@@ -948,6 +948,11 @@ Mehrow - Trappenfelde	1 24696,18606 24743,18606
 Ohmstr. (Schwanebeck-West)	1 18039,24940 18127,25162
 Sankt Petri	1s -46334,-150 -46304,-19
 B1: für Radfahrer gesperrt	2 -56115,-457 -56519,-664 -56682,-676 -56922,-672 -57133,-779 -57283,-993 -57410,-1097
+August-Bebel-Str. (Eichwalde)	1s 25322,-4042 25269,-3906
+Waldstr. [Wohngebiet] (Eichwalde)	1 25461,-2744 25562,-2902 25606,-2880
+Humboldtstr. (Eichwalde)	1 25290,-3350 25186,-3196
+Paul-Merker-Str.	1 25464,-3027 25567,-3189
+Wilhelm-Busch-Str.	1 25206,-4014 25119,-4096
 Mittelstreifen nicht überquerbar	3nocross::ignrte -974,128015 -724,127995 6,127935 298,127911
 B104: Neubrandenburg -> Feldstr.: Mittelstreifen nicht überquerbar	3::igndisp -974,128015 -724,127995 -719,128043
 Feldstr. -> Pasewalk: Mittelstreifen nicht überquerbar	3::igndisp -719,128043 -724,127995 6,127935
@@ -1079,9 +1084,9 @@ Weygerweg -> Malteserstr.: Mittelstreifen	3::igndisp 7514,1930 7423,1905 7437,18
 Marienfelder/Daimler: Abbiegen nicht erlaubt	3 8602,2377 8579,2265 8639,2212
 Mittelstreifen	3nocross::ignrte 6771,5273 6767,5233 6747,5010
 Kottest. -> Munsterdamm: Mittelstreifen	3::igndisp 6806,5230 6767,5233 6747,5010
-Hecken	3nocross::ignrte 13789,9949 13711,10022 13579,10146
-Puschkinallee -> durch den Schlesischen Busch: Hecken	3::igndisp 13789,9949 13711,10022 13669,9994
-durch den Schlesischen Busch -> Puschkinallee: Hecken	3::igndisp 13669,9994 13711,10022 13579,10146
+Hecken	3nocross::ignrte 13782,9954 13711,10022 13579,10146
+Puschkinallee -> durch den Schlesischen Busch: Hecken	3::igndisp 13782,9954 13711,10022 13657,9983
+durch den Schlesischen Busch -> Puschkinallee: Hecken	3::igndisp 13657,9983 13711,10022 13579,10146
 unbequem passierbarer Mittelstreifen (hohe Kanten)	3nocross::ignrte 11274,9492 11383,9446 11509,9392
 Urbanstr. -> Werner-Düttmann-Pl.: unbequem passierbarer Mittelstreifen (hohe Kanten)	3::igndisp 11509,9392 11383,9446 11378,9305
 Werner-Düttmann-Pl. -> Urbanstr.: unbequem passierbarer Mittelstreifen (hohe Kanten)	3::igndisp 11378,9305 11383,9446 11274,9492
@@ -2023,9 +2028,6 @@ Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18
 Mittelstreifen	3nocross::ignrte 18826,3816 18779,3866 18541,4125
 Gerhard-Sedlmayr-Str. -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18702,3790 18779,3866 18541,4125
 Groß-Berliner Damm -> Gerhard-Sedlmayr-Str.: Mittelstreifen	3::igndisp 18826,3816 18779,3866 18702,3790
-Mittelstreifen	3nocross::ignrte 18541,4125 18374,4307 18239,4453
-Gerhard-Sedlmayr-Str. -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18228,4168 18374,4307 18239,4453
-Groß-Berliner Damm -> Gerhard-Sedlmayr-Str.: Mittelstreifen	3::igndisp 18541,4125 18374,4307 18228,4168
 Mittelstreifen	3nocross::ignrte 18930,3703 19029,3595 19125,3491
 Groß-Berliner Damm -> Konrad-Zuse-Str.: Mittelstreifen	3::igndisp 19125,3491 19029,3595 18943,3508
 Konrad-Zuse-Str. -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18943,3508 19029,3595 18930,3703
@@ -2235,7 +2237,7 @@ tragen (5 Stufen)	0:10:62 6820,5237
 tragen (4 Stufen)	0:10:-109 13874,4867
 tragen (22 Stufen)	0:30:-84 17599,15435
 tragen (22 Stufen)	0:30:-79 17657,15427
-tragen, mehrere Treppen à 3 Stufen	0:30:-191 8002,4903
+tragen, mehrere Treppen à 3 Stufen	0:30:-189 8002,4903
 tragen, enge Treppe (11 Stufen)	0:20:-259 7132,4028
 tragen (64 Stufen)	0:100:-158 -1720,3940
 tragen (2 Stufen)	0:5:-204 -1550,3883
@@ -2334,7 +2336,7 @@ tragen (41 Stufen) oder Aufzug (Storkower Str.)	0:40:-107 14481,13143
 tragen (zum Uferweg an den Treptowers, 24 Stufen)	0:35:-45 14383,10036
 tragen (1+3 Stufen)	0:30:-114 13232,12628
 tragen oder Aufzug benutzen	0:40:-101 14839,10853
-tragen oder Aufzug benutzen	0:40:-46 14845,10954
+tragen oder Aufzug benutzen	0:40:-56 14845,10954
 tragen (Durchgang unter der U-Bahn zur Warschauer Str., 15 Stufen)	0:20:-255 13437,10992
 tragen (Treppe, 12 Stufen)	0:20:-87 7370,6451
 tragen (Bahnübergang ehem. Bhf. Satzkorn)	0:60:89 -19150,7320
@@ -2390,6 +2392,7 @@ tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
 tragen (6 Stufen)	0:15:-90 4608,63927
 Treppe	0:40:-131 1888,42795
+Drängelgitter	BNP:3:-26:trailer=10 21688,312
 weites Drängelgitter	BNP:2:-109:trailer=7 21917,10991
 Drängelgitter	BNP:3:-141:trailer=10 26246,12648
 Drängelgitter	BNP:3:-142:trailer=10 26183,12676
@@ -2814,13 +2817,14 @@ versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
 Drängelgitter	BNP:3:-240 31665,48997
+Alfonsstr.: Bauzäune	2::inwork 19027,1427 19034,1441 19061,1457
 Sonntagstr./Ostkreuz: wegen Bauarbeiten gesperrt	2::inwork 14752,11041 14798,10985
 Haasestr.: Bauarbeiten, keine Durchfahrt möglich	2::inwork 14328,11320 14286,11186
 Keibelstr.: Bauarbeiten, Fahrbahn wird neu gemacht, Durchfahrt nicht möglich	2::inwork 11108,13142 11201,13289
 Lutterbacher Str.: noch Baustelle	2::inwork 2094,3231 1993,3170 2072,3034 2163,3092
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,9200 12548,9167
 Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7703,14582 7527,14684
-Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14448,9922 14467,9880 14500,9856
+Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14448,9922 14467,9880 14500,9863
 Clara-Immerwahr-Str.: Bauzäune	2::inwork 19202,17471 19546,17351 19798,17263 19845,17235 19914,17203
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
 SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2408,1144 2352,1267
@@ -3033,11 +3037,11 @@ Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (B
 Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13266,14541 13295,14521 13362,14593
 (Treppe zur Putlitzbrücke): tragen, ca. 35 Stufen	0:40:90 6253,14184
 (Treppe zur Putlitzbrücke): tragen, 35 Stufen	0:40:-168 6209,14245
-Mittelstreifen schlecht zu überqueren	3nocross::ignrte 6226,13951 6228,14077 6230,14184 6234,14247 6237,14309
-An der Putlitzbrücke -> Treppe zur Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3::igndisp 6234,14247 6230,14184 6253,14184
+Mittelstreifen schlecht zu überqueren	3nocross::ignrte 6226,13951 6228,14077 6230,14184 6230,14246 6231,14308
+An der Putlitzbrücke -> Treppe zur Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3::igndisp 6230,14246 6230,14184 6253,14184
 Treppe zur Putlitzbrücke -> An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3::igndisp 6253,14184 6230,14184 6228,14077
-An der Putlitzbrücke -> Treppe zur Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3::igndisp 6230,14184 6234,14247 6209,14245
-Treppe zur Putlitzbrücke -> An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3::igndisp 6209,14245 6234,14247 6237,14309
+An der Putlitzbrücke -> Treppe zur Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3::igndisp 6230,14184 6230,14246 6209,14245
+Treppe zur Putlitzbrücke -> An der Putlitzbrücke: Mittelstreifen schlecht zu überqueren	3::igndisp 6209,14245 6230,14246 6231,14308
 schwierig zu querender Mittelstreifen (parkende Autos und Bordsteine)	3nocross::ignrte 7172,13051 7187,13126 7161,13190
 Rathenower Str. -> Otto-Dix-Str.: schwierig zu querender Mittelstreifen (parkende Autos und Bordsteine)	3::igndisp 7161,13190 7187,13126 7356,13213
 Otto-Dix-Str. -> Rathenower Str.: schwierig zu querender Mittelstreifen (parkende Autos und Bordsteine)	3::igndisp 7356,13213 7187,13126 7172,13051
@@ -3088,9 +3092,9 @@ Joachim-Karnatz-Allee	1 7142,12584 7131,12615
 Joachim-Karnatz-Allee	1 7175,12630 7187,12598
 Ingeborg-Drewitz-Allee	1 7365,12775 7388,12746 7539,12754 7538,12729 7418,12725 7367,12729 7343,12758
 tragen (Treppe)	0:30:-180 5714,12279
-Mittelstreifen schlecht zu queren	3nocross::ignrte 6020,12492 6086,12446 6178,12387
-Altonaer Str. -> Cuxhavener Str.: Mittelstreifen schlecht zu queren	3::igndisp 6178,12387 6086,12446 5999,12280
-Cuxhavener Str. -> Altonaer Str.: Mittelstreifen schlecht zu queren	3::igndisp 5999,12280 6086,12446 6020,12492
+Mittelstreifen schlecht zu queren	3nocross::ignrte 6025,12494 6090,12451 6173,12396
+Altonaer Str. -> Cuxhavener Str.: Mittelstreifen schlecht zu queren	3::igndisp 6173,12396 6090,12451 5999,12280
+Cuxhavener Str. -> Altonaer Str.: Mittelstreifen schlecht zu queren	3::igndisp 5999,12280 6090,12451 6025,12494
 tragen (Treppe)	0:30:5 8159,13042
 tragen (Treppe)	0:30:-186 8276,13041
 Hanseatenweg	1 6444,12536 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518

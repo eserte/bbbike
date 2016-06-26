@@ -747,7 +747,7 @@ EOF
        text  => 'Bachstraße: In beiden Richtungen Störungen durch Rohrbruch, gesperrt bis Do 12:00 ',
        type  => 'handicap',
       data  => <<EOF,
-userdel	q4 6020,12492 5951,12353 5938,12281 5870,12179 5807,12070 5790,12026
+userdel	q4 6025,12494 5951,12353 5938,12281 5870,12179 5807,12070 5790,12026
 userdel	q4 5758,11895 5775,11975 5790,12026
 EOF
      },
@@ -1478,7 +1478,7 @@ EOF
        data  => <<EOF,
 userdel	q4 8214,12205 8089,12190 8055,12186
 userdel	q4 8214,12205 8303,12216 8344,12221 8538,12245
-userdel	q4 6653,12067 6642,12010
+userdel	q4 6656,12075 6642,12010
 userdel	q4 6685,11954 6744,11936
 userdel	q4 8610,12254 8538,12245
 userdel	q4 7816,12150 8055,12186
@@ -1497,7 +1497,7 @@ userdel	q4 6642,12010 6685,11954
 userdel	q4 8595,12066 8600,12165
 userdel	q4 8540,12420 8573,12325
 userdel	q4 8538,12245 8600,12165
-userdel	q4 6725,12113 6690,12104 6653,12067
+userdel	q4 6725,12113 6690,12104 6656,12075
 userdel	q4 6787,12099 6754,12108 6725,12113
 EOF
      },
@@ -1530,7 +1530,7 @@ EOF
        text  => 'K 6161; (Ernst-Thälmann-Str.); OD Schulzendorf, Kanal- und Straßenbau Vollsperrung 30.06.2005-30.11.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 25173,-3957 25056,-3989 24941,-4025 23408,-4513
+userdel	q4 25173,-3957 25150,-3949 25052,-3980 24933,-4017 24797,-4060 23408,-4513
 EOF
      },
      { from  => 1107475200, # 2005-02-04 01:00
@@ -2119,7 +2119,7 @@ EOF
        text  => 'Bouchéstraße (Treptow) in beiden Richtungen zwischen Kiefholzstraße und Am Treptower Park Fahrbahnerneuerung, Straße vollständig gesperrt (bis Ende 2005)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 13867,9864 13645,9621 13606,9578
+userdel	2 13865,9866 13642,9624 13602,9581
 EOF
      },
      { from  => 1119391200, # 2005-06-22 00:00
@@ -5052,7 +5052,7 @@ EOF
        text  => 'Der große Stern wird zu den Halbfinalspielen am 4.7.2006 von 11.00 Uhr bis zum 5.7.2006 03.00 Uhr gesperrt. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 6653,12067 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104
+userdel	2::temp 6656,12075 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104
 EOF
      },
      { from  => 1152234000, # 2006-07-07 03:00
@@ -5060,10 +5060,10 @@ EOF
        text  => 'Der große Stern wird zu den Finalspielen am 8.7.2006 von 03.00 Uhr bis zum 10.7.2006 06.00 Uhr gesperrt. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 6653,12067 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104
+userdel	2::temp 6656,12075 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104
 userdel	2::temp 6540,11754 6685,11954
 userdel	2::temp 6825,11486 6809,11570 6778,11742 6744,11936
-userdel	2::temp 6653,12067 6348,12272 6178,12387
+userdel	2::temp 6656,12075 6354,12278 6173,12396
 userdel	2::temp 5900,11913 6642,12010
 userdel	2::temp 7039,12314 6787,12099
 EOF
@@ -6954,7 +6954,7 @@ EOF
        text  => 'K 6161 Friedensstr. Bahnübergang in der OD Eichwalde Gleisbauarbeiten Vollsperrung 15.12.2006-19.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 25173,-3957 25212,-4025 25269,-4041 25320,-4049
+userdel	2::inwork 25173,-3957 25206,-4014 25212,-4025 25269,-4041 25322,-4042
 EOF
      },
      { from  => 1166050800, # 2006-12-14 00:00
@@ -8228,7 +8228,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_005439',
        data  => <<EOF,
-userdel	q4::temp 6178,12387 6276,12506 6314,12518 6444,12536
+userdel	q4::temp 6173,12396 6276,12506 6314,12518 6444,12536
 EOF
      },
      { from  => $isodate2epoch->("2016-05-06 00:00:00"), # 1 Tag Vorlauf
@@ -8639,8 +8639,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.berliner-zeitung.de/berlin/volksfest--treptow-in-flammen--organisiertes-besaeufnis-im-treptower-park-faellt-aus,10809148,26239080.html (fällt 2014 aus)
-userdel	2::temp 14464,9927 14465,9900 14500,9856 14635,9786 14807,9704 14889,9660 14909,9649
-userdel	2::temp 14500,9856 14488,9848
+userdel	2::temp 14464,9927 14465,9900 14500,9863 14635,9786 14807,9704 14889,9660 14909,9649
+userdel	2::temp 14500,9863 14488,9848
 EOF
      },
      { from  => 1189968907, # 
@@ -10541,7 +10541,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007023',
        data  => <<EOF,
-userdel	1::inwork 6878,17315 6995,17322 7031,17323 7104,17326 7282,17318 7292,17316 7384,17303 7602,17399
+userdel	1::inwork 6878,17315 6995,17322 7031,17323 7104,17326 7282,17318 7292,17316 7381,17317 7602,17399
 EOF
      },
      { from  => 1194130800, # 2007-11-04 00:00
@@ -12228,8 +12228,8 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009465',
        data  => <<EOF,
-userdel	2::temp 6787,12099 6754,12108 6725,12113 6690,12104 6653,12067
-userdel	2::temp 6178,12387 6348,12272 6653,12067 6642,12010 5900,11913
+userdel	2::temp 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075
+userdel	2::temp 6173,12396 6354,12278 6656,12075 6642,12010 5900,11913
 userdel	2::temp 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 userdel	2::temp 6744,11936 6778,11742
 userdel	2::temp 6828,12031 6787,12099 7039,12314
@@ -13403,7 +13403,7 @@ EOF
        text  => 'K 6161 Friedenstr. Bahnübergang in Eichwalde Gleisbauarbeiten Vollsperrung 02.03.2009-16.03.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 25173,-3957 25212,-4025 25269,-4041 25320,-4049
+userdel	2::inwork 25173,-3957 25206,-4014 25212,-4025 25269,-4041 25322,-4042
 EOF
      },
      { from  => 1234652400, # 2009-02-15 00:00
@@ -14957,7 +14957,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013591',
        data  => <<EOF,
-userdel	q4::inwork; 7532,4605 7544,4587 7601,4485
+userdel	q4::inwork; 7532,4605 7544,4587 7597,4499
 EOF
      },
      { from  => 1249972560, # 2009-08-11 08:36
@@ -17976,7 +17976,7 @@ EOF
        data  => <<EOF,
 #: by: http://csd-berlin.de/event-info-en/
 #: by: https://www.berlin.de/en/events/2096878-2842498-csd-christopher-street-day.en.html
-userdel	2::temp 6851,10416 6937,10363 6971,10346 7033,10328 7033,10396 7003,10513 6985,10597 6972,10665 6929,10852 6918,10858 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6685,11954 6642,12010 6653,12067 6690,12104 6725,12113 6754,12108 6787,12099 6828,12031 6809,11979 6744,11936
+userdel	2::temp 6851,10416 6937,10363 6971,10346 7033,10328 7033,10396 7003,10513 6985,10597 6972,10665 6929,10852 6918,10858 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6685,11954 6642,12010 6656,12075 6690,12104 6725,12113 6754,12108 6787,12099 6828,12031 6809,11979 6744,11936
 userdel	2::temp 6353,10583 6292,10627 6228,10646 6171,10657
 userdel	2::temp 7033,10396 6851,10416 6753,10446 6636,10492 6532,10529 6468,10550 6353,10583 6268,10588 6216,10614 6171,10657 6133,10679 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5351,10760 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435 4157,10418
 userdel auto	3 6380,10704 6353,10583 6302,10462
@@ -18952,7 +18952,7 @@ EOF
        type  => 'gesperrt',
        source_id => '116100155',
        data  => <<EOF,
-userdel	2::inwork 25212,-4025 25269,-4041 25320,-4049
+userdel	2::inwork 25212,-4025 25269,-4041 25322,-4042
 EOF
      },
      { from  => 1335462672, # 
@@ -19278,7 +19278,7 @@ EOF
        source_id => 'IM_017318',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110530.1300.346009.html
-userdel	2::inwork 15383,9191 14883,9431 14809,9466 14556,9581 14318,9688
+userdel	2::inwork 15383,9191 14879,9433 14809,9466 14556,9581 14495,9609 14318,9688
 EOF
      },
      { from  => undef, # 
@@ -19511,7 +19511,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_017436',
        data  => <<EOF,
-userdel	2::inwork 13829,9905 13884,9882 13995,9834 14193,9746
+userdel	2::inwork 13795,9941 13890,9894 13999,9842 14196,9749
 	q4::inwork; 13842,10095 13936,10062 14008,10040 14077,10016 14289,9870
 EOF
      },
@@ -21572,7 +21572,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_115299',
        data  => <<EOF,
-userdel	q2::inwork; 6572,14639 6299,14660
+userdel	q2::inwork; 6572,14639 6288,14661
 EOF
      },
      { from  => 1371160800, # 2013-06-14 00:00
@@ -23112,7 +23112,7 @@ EOF
 #: note: Gehweg ist hier relativ breit
 	q3::inwork; 14089,9610 13973,9465 13923,9405
 	q4::inwork; 13923,9405 13849,9310 13760,9188
-	q4::inwork; 13489,9456 13606,9578 13645,9621 13867,9864
+	q4::inwork; 13489,9456 13602,9581 13642,9624 13865,9866
 EOF
      },
      { from  => undef,
@@ -24234,15 +24234,15 @@ EOF
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/artikel.295591.php
 #: XXX WIRD NICHT MEHR VERWENDET -> gesperrt-orig!
 userdel	2::inwork 14318,9688 14371,9726 14443,9731
-# REMOVED --- userdel	2::inwork 14443,9731 14496,9705 14575,9648 14627,9609 14705,9578
-# REMOVED --- userdel	2::inwork 14575,9648 14604,9674 14645,9710 14697,9726 14853,9655 14909,9649
+# REMOVED --- userdel	2::inwork 14443,9731 14495,9710 14577,9641 14627,9609 14705,9578
+# REMOVED --- userdel	2::inwork 14577,9641 14604,9674 14645,9710 14697,9726 14853,9655 14909,9649
 # REMOVED --- userdel	2::inwork 14635,9786 14807,9704 14889,9660 14909,9649 15052,9584 15186,9550 15304,9464 15432,9322 15453,9259
 # REMOVED ---	2::inwork 14475,9199 14531,9244 14655,9311
 # REMOVED ---	2::inwork 14398,9373 14485,9271 14531,9244
-# REMOVED --- userdel	2::inwork 15453,9259 15513,9144 15527,9096 15638,9020
+# REMOVED --- userdel	2::inwork 15453,9259 15513,9144 15527,9096 15623,9028
 # REMOVED --- userdel	2::inwork 14443,9731 14361,9772
-# REMOVED --- userdel	2::inwork 15630,8979 15638,9020 15778,8990
-# REMOVED --- userdel	2::inwork 14909,9649 14866,9571 14837,9517
+# REMOVED --- userdel	2::inwork 15630,8979 15633,9007 15623,9028 15778,8990
+# REMOVED --- userdel	2::inwork 14909,9649 14867,9573 14837,9517
 #: XXX ^^^
 EOF
      },
@@ -24382,8 +24382,8 @@ EOF
        source_id => 'IM_025684',
        data  => <<EOF,
 userdel	q3::inwork 13357,9313 13489,9456
-userdel	q2::inwork 13489,9456 13606,9578
-# REMOVED (fertig) --- userdel	q3::inwork 13606,9578 13645,9621
+userdel	q2::inwork 13489,9456 13602,9581
+# REMOVED (fertig) --- userdel	q3::inwork 13602,9581 13642,9624
 EOF
      },
      { from  => 1437282000, # 2015-07-19 07:00
@@ -24891,18 +24891,19 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.450655.php',
        data  => <<EOF,
-userdel	q4::inwork 19031,5316 18999,5237 18942,5236 18820,5275 18659,5330
+userdel	q4::inwork 19037,5316 18999,5237 18940,5243 18824,5280 18659,5330
 EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Am Teltowkanal: Bauarbeiten zwischen Fenchelweg und Trollblumenweg, Durchfahrt nicht möglich',
+       text  => 'Am Teltowkanal: Bauarbeiten am Uferweg',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2016-05-13 vvv
-#: priority: #A
-	2::inwork 16066,3799 15892,3932 15861,3942 15678,4083 15594,4152
-	2::inwork 15892,3932 15872,3888
+#: last_checked: 2016-06-26 vvv
+#: priority: #B
+# REMOVED ---	2::inwork 16066,3799 15878,3936
+	2::inwork 15878,3936 15861,3942 15678,4083 15594,4152
+# REMOVED ---	2::inwork 15878,3936 15859,3924
 #: last_checked ^^^
 EOF
      },
@@ -25062,7 +25063,7 @@ EOF
        text  => 'Melissenweg: Bauarbeiten, Weg komplett gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2016-05-13
+#: last_checked: 2016-06-26
 	2::inwork 16041,3718 16003,3652
 EOF
      },
@@ -25089,8 +25090,8 @@ userdel	q4::inwork 20381,1390 20405,1460
 EOF
      },
      { from  => $isodate2epoch->("2016-06-23 00:00:00"), # 1464298923, # 2016-05-26 23:42
-       until => $isodate2epoch->("2016-06-26 23:59:59"), # 1464559200, # 2016-05-30 00:00
-       text  => 'Warschauer Str.: Fahrbahn zwischen Kopernikusstr. und Frankfurter Allee wegen Bauarbeiten gesperrt, 24.06.2016 bis 26.06.2016',
+       until => $isodate2epoch->("2016-06-26 18:00:00"), # 1464559200, # 2016-05-30 00:00
+       text  => 'Warschauer Str.: Fahrbahn zwischen Kopernikusstr. und Frankfurter Allee wegen Bauarbeiten gesperrt, 24.06.2016 bis 26.06.2016 18 Uhr',
        type  => 'handicap',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.490470.php
@@ -25221,12 +25222,12 @@ EOF
      },
      { from  => 1466444819, # 2016-06-20 19:46
        until => 1470520799, # 2016-08-06 23:59
-       text  => 'Monumentenbrücke: Bauarbeiten bis zum 6. August 2016, Radfahrer dürfen unter Umständen nicht passieren',
+       text  => 'Monumentenbrücke: Bauarbeiten bis zum 6. August 2016, langsameres Passieren möglich',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.489591.php',
        data  => <<EOF,
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6081.html (Radfahrer _dürfen_ passieren)
-userdel	q4::inwork 8389,9087 8180,9099
+userdel	q3::inwork 8389,9087 8180,9099
 EOF
      },
      { from  => 1467151200, # 2016-06-29 00:00
@@ -25236,6 +25237,34 @@ EOF
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.490082.php',
        data  => <<EOF,
 userdel	2::inwork -2955,15129 -2929,15082 -2965,15053 -3008,14992 -3008,14910 -2998,14879 -3030,14844 -3066,14718
+EOF
+     },
+     { from  => 1467237600, # 2016-06-30 00:00
+       until => 1475359199, # 2016-10-01 23:59
+       text  => 'Röntgentaler Weg: Bauarbeiten, Weg wird für Radfahrer und Fußgänger gesperrt sein, voraussichtlich Anfang Juli 2016 bis Anfang Oktober 2016',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2016/pressemitteilung.491050.php',
+       data  => <<EOF,
+#: XXX danach enthält der Weg einen "Bitumenbelag"
+#: next_check: 2016-10-01
+userdel	2::inwork 16532,26174 16222,25829
+EOF
+     },
+     { from  => 1473372000, # 2016-09-09 00:00
+       until => 1473631200, # 2016-09-12 00:00
+       text  => 'Lollapalooza 2016 im Treptower Park: gesperrte Wege und Straßen, 10.09.2016 und 11.09.2016',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: http://lolp2.de.c3cdn.com/wp/wp-content/uploads/2016/02/Lollapalooza2016_Treptower-Park_Festivalmap_2000x1414_RZ.png
+userdel	2::temp 15383,9191 14879,9433 14809,9466
+userdel	2::temp 14909,9649 14867,9573 14837,9517 14809,9466
+userdel	2::temp 14577,9641 14627,9609 14695,9587 14792,9599 14867,9573 14918,9545 15025,9461 15133,9396 15184,9373 15268,9374
+userdel	2::temp 14695,9587 14705,9578 14791,9537
+userdel	2::temp 14879,9433 14898,9364 14955,9294
+userdel	2::temp 15133,9396 15184,9373 15268,9374
+userdel	2::temp 14316,9542 14384,9565
+userdel	2::temp 14809,9466 14556,9581
+userdel	2::temp 14588,9473 14635,9441
 EOF
      },
     );

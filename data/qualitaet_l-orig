@@ -602,7 +602,7 @@ Am Zwiebusch: Asphalt	Q1 30411,-1704 30361,-1756
 Pätz: Kopfsteinpflaster	Q2 28615,-19431 28251,-19639 28164,-19771 28071,-19862
 Groß-Köris - Motzen: schlechte Betonplattenstraße, teilweise Kopfsteinpflaster	Q2 27894,-25021 27629,-24247 27357,-24122 26315,-23321 26145,-23192 26102,-23166 26070,-23160 25871,-23127 23485,-22730
 #: by: René (refan): vvv
-Grünau - Zeuthen: gepflastert	Q1- 26931,-2871 26634,-3587 26556,-3781 26548,-3813 26228,-5150 26259,-5681 26085,-5839 25996,-5921
+Grünau - Zeuthen: gepflastert	Q1- 26931,-2871 26875,-2993 26634,-3587 26556,-3781 26548,-3813 26228,-5150 26259,-5681 26085,-5839 25996,-5921
 Zeuthen - KW: Asphalt	Q0 25996,-5921 26146,-6218 26506,-6931 26609,-7136 26700,-7334 26790,-7918 26786,-7968 26775,-8117 26749,-8475 26727,-8668 26679,-8825 26381,-9753 26365,-9875 26391,-9997 26432,-10043
 #: by: ^^^
 Bestensee: Asphalt	Q0 26204,-17794 26276,-17489
@@ -2755,15 +2755,58 @@ Margaretenstr. (Hönow): Asphalt	Q0- 25418,14835 25503,14842
 Sophienstr. (Hönow): welliger Asphalt	Q1 25503,14842 25527,14696 25555,14657
 Fichtengrund: Asphalt	Q0 25776,14149 25772,14191 25790,14277
 Karl-Marx-Str.: Beton	Q0 24437,-3333 24343,-3387
-Triftstr.: Asphalt	Q0 24455,-3325 24665,-3678
-Fontaneallee: schlechtes Kopfsteinpflaster	Q3 24542,-3288 24632,-3458
-Gerhart-Hauptmann-Allee: schlechtes Kopfsteinpflaster	Q3 24715,-3184 24803,-3385
+Triftstr.: Asphalt	Q0 24455,-3325 24661,-3673
+Fontaneallee (Eichwalde): schlechtes Kopfsteinpflaster	Q3 24542,-3288 24626,-3448 24681,-3548 24731,-3644 24788,-3752 24836,-3840 24933,-4017 25022,-4180
+Gerhart-Hauptmann-Allee (Eichwalde): schlechtes Kopfsteinpflaster	Q3 24715,-3184 24801,-3379
+#: by: osm
+Gerhart-Hauptmann-Allee (Eichwalde): schlechtes Kopfsteinpflaster	Q3 24801,-3379 24842,-3485 24886,-3587 24928,-3688 24971,-3788
+Gerhart-Hauptmann-Allee (Eichwalde): schlechtes Kopfsteinpflaster	Q3 24971,-3788 25052,-3980
+Gerhart-Hauptmann-Allee (Eichwalde): Asphalt	Q0 25052,-3980 25119,-4096
 Heinrich-Heine-Allee (Eichwalde): schlechtes Kopfsteinpflaster	Q3 24853,-3105 24943,-3325 24987,-3426 25032,-3529 25058,-3595
 August-Bebel-Allee (Eichwalde): Fahrbahn schlechtes Kopfsteinpflaster, Verbundsteinpflasterradweg existiert	Q1-; 24999,-3312 24901,-3076
 August-Bebel-Allee (Eichwalde): Fahrbahn schlechtes Kopfsteinpflaster	Q3; 24901,-3076 24999,-3312
-Humboldtstr.: schlechtes Kopfsteinpflaster	Q3 25060,-2982 25189,-3202
+Walther-Rathenau-Str. (Eichwalde): schlechtes Kopfsteinpflaster	Q3 24626,-3448 24801,-3379
+#: add_fragezeichen: liegt auch im östlichen Teil schlechtes Kopfsteinpflaster?
+Walther-Rathenau-Str. (Eichwalde): schlechtes Kopfsteinpflaster	Q3 24801,-3379 24943,-3325
+Leistikowstr.: Kopfsteinpflaster	Q2+ 24681,-3548 24842,-3485
+#: add_fragezeichen: liegt auch im östlichen Teil Kopfsteinpflaster?
+Leistikowstr.: Kopfsteinpflaster	Q2+ 24842,-3485 24987,-3426
+Schulzendorfer Str.: Asphalt	Q0 24606,-3698 24661,-3673 24731,-3644 24886,-3587
+#: add_fragezeichen: liegt auch im östlichen Teil Asphalt?
+Schulzendorfer Str.: Asphalt	Q0 24886,-3587 25032,-3529
+Käthe-Kollwitz-Str.: Kopfsteinpflaster	Q2+ 24836,-3840 24971,-3788
+#: add_fragezeichen: liegt auch im östlichen Teil Kopfsteinpflaster?
+Käthe-Kollwitz-Str.: Kopfsteinpflaster	Q2+ 24971,-3788 25119,-3735
+Stadionstr.: Asphalt	Q0 24797,-4060 24933,-4017 25052,-3980 25150,-3949 25173,-3957
+Heinrich-Heine-Allee (Eichwalde): wassergebundene Decke	Q1- 25119,-3735 25191,-3903
+Heinrich-Heine-Allee (Eichwalde): schlechtes Kopfsteinpflaster	Q3 25191,-3903 25173,-3957
+Heinrich-Heine-Allee: Asphalt	Q0 25173,-3957 25206,-4014 25212,-4025
+Friedenstr.: Asphalt	Q0 25212,-4025 25269,-4041
+Friedenstr.: Kopfsteinpflaster	Q2 25269,-4041 25322,-4042
+#: add_fragezeichen: liegt hier Kopfsteinpflaster? Wie ist die Qualität des Kopfsteinpflasters?
+#: by: osm
+Friedenstr.: Kopfsteinpflaster	Q2 26556,-3781 26860,-3805 26977,-3814
+August-Bebel-Allee (Eichwalde): schlechtes Kopfsteinpflaster	Q3 24999,-3312 25044,-3412 25088,-3470 25163,-3652 25199,-3743 25269,-3906 25322,-4042 25368,-4182
+Mozartstr. (Eichwalde): Asphalt	Q0 25269,-3906 25365,-3880
+Schmöckwitzer Str. [August-Bebel-Platz] (Eichwalde): Kopfsteinpflaster	Q2+ 25199,-3743 25220,-3725 25227,-3704 25226,-3680 25209,-3657 25185,-3649 25163,-3652
+Schmöckwitzer Str.: Kopfsteinpflaster	Q2+ 25226,-3680 25278,-3661
+Waldstr. [Wohngebiet]: Beton	Q0 25606,-2880 25562,-2902 25461,-2744
+Stubenrauchstr. [Händelplatz]: schlechtes Kopfsteinpflaster	Q3 25245,-3160 25273,-3176 25320,-3153 25367,-3124 25364,-3087 25347,-3077 25295,-3103 25254,-3124 25245,-3160
+Stubenrauchstr. [Platz der Republik]: schlechtes Kopfsteinpflaster	Q3 25711,-2886 25745,-2898 25771,-2884 25778,-2855 25764,-2832 25735,-2826 25705,-2855 25711,-2886
+Stubenrauchstr. (Eichwalde): schlechtes Kopfsteinpflaster	Q3 25836,-2749 25764,-2832
+Stubenrauchstr. (Eichwalde): schlechtes Kopfsteinpflaster	Q3 25711,-2886 25635,-2931 25464,-3027 25364,-3087
+Stubenrauchstr. (Eichwalde): schlechtes Kopfsteinpflaster	Q3 25245,-3160 25186,-3196 24999,-3312
+Beethovenstr.: schlechtes Kopfsteinpflaster	Q3 25771,-2884 25849,-2926
+#: by: osm
+Beethovenstr.: schlechtes Kopfsteinpflaster	Q3 25849,-2926 25912,-2958 26146,-3088 26242,-3135
+Heinrich-Zille-Str.: schlechtes Kopfsteinpflaster	Q3 24788,-3752 24928,-3688
+Humboldtstr. (Eichwalde): schlechtes Kopfsteinpflaster	Q3 25060,-2982 25186,-3196
+Humboldtstr. (Eichwalde): Asphalt	Q0 25186,-3196 25290,-3350
+Paul-Merker-Str. (Eichwalde): Kopfsteinpflaster	Q2 25464,-3027 25567,-3189
 Waldstr.: Verbundsteinpflaster	Q1+ 25345,-2813 25403,-2911
-Uhlandallee: Beton	Q0 25509,-2715 25635,-2931
+Uhlandallee (Eichwalde): Beton	Q0 25509,-2715 25606,-2880 25635,-2931
+Uhlandallee (Eichwalde): Kleinsteinpflaster	Q2 25635,-2931 25730,-3091
+Wilhelm-Busch-Str.: Asphalt	Q0 25206,-4014 25119,-4096
 Stubenrauchstr.: schlechtes Kopfsteinpflaster	Q3 26028,-2572 26023,-2576 25836,-2749
 Godbersenstr.: schlechtes Kopfsteinpflaster, Verbundsteinpflastergehweg auf der südlichen Seite kann zum Ausweichen benutzt werden	Q2+ 26192,-2847 26201,-2845
 Rüsternallee (Waldesruh): Kopfsteinpflaster	Q2 24813,8594 24857,8567 24905,8533
@@ -5394,8 +5437,8 @@ Am Stinthorn (Neu Fahrland): mäßiger Asphalt	Q2 -13779,4233 -13763,4232 -13735,4
 #: confirmed_by: srt
 Gosener Str. (Eichwalde): Fahrbahn grobes Kopfsteinpflaster, Gehweg besser	Q3 26192,-2847 26102,-2822 25836,-2749 25579,-2680 25570,-2679
 #: note: "Gehweg gepflastertert im schlechten Zustand, wird aber häufig von Radfaherer genutzt, da noch besser als die Fahrbahn"
-Bahnhofstr. (Eichwalde): Fahrbahn sehr grobes Kopfsteinpflaster, Gehweg besser	Q3 26102,-2822 25730,-3091 25567,-3189 25400,-3285
-Bahnhofstr. (Eichwalde): Asphalt	Q0 25400,-3285 25290,-3350 25179,-3418 25085,-3477
+Bahnhofstr. (Eichwalde): Fahrbahn sehr grobes Kopfsteinpflaster, Gehweg besser	Q3 26102,-2822 25912,-2958 25730,-3091 25567,-3189 25400,-3285
+Bahnhofstr. (Eichwalde): Asphalt	Q0 25400,-3285 25290,-3350 25179,-3418 25088,-3470
 #: by: ^^^
 # 
 #: by: papst leo...
@@ -5423,9 +5466,9 @@ Freiligrathstr.: mäßiger Asphalt	Q1- -9130,-1676 -9131,-1465
 # 
 #: by: Roland Krause: vvv
 #: corrected_by: srt (mäßiges Kopfsteinpflaster -> schlechtes Kopfsteinpflaster; added Radwege) (zumindest im Norden)
-Grünauer Str.: Fahrbahn schlechtes Kopfsteinpflaster, Gehweg für Radfahrer freigegeben	Q2+ 25182,-2915 25223,-2974 25295,-3103
+Grünauer Str.: Fahrbahn schlechtes Kopfsteinpflaster, Gehweg für Radfahrer freigegeben	Q2+ 25182,-2915 25223,-2974 25295,-3103 25320,-3153 25400,-3285
 #: XXX aber Eva Meurer meint: "ein Fahrradweg los, auf dem man über Zeuthen, Wildau bequem nach Königs Wusterhausen kommt"
-Grünauer Str.: Fahrbahn schlechtes Kopfsteinpflaster, schmale Verbundsteinpflastergehwege	Q2+ 25295,-3103 25320,-3153 25400,-3285 25456,-3375 25506,-3465 25556,-3547 25610,-3647 25635,-3723
+Grünauer Str.: Fahrbahn schlechtes Kopfsteinpflaster, schmale Verbundsteinpflastergehwege	Q2+ 25400,-3285 25456,-3375 25506,-3465 25556,-3547 25610,-3647 25635,-3723
 #: by: ^^^
 # 
 #: by: Thomas Vieweg
