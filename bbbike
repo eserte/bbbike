@@ -7462,24 +7462,10 @@ EOF
     ;
 }
 
-sub maybe_expand_image_file {
-    my($imgfile, $datafile, $subdir) = @_;
-    expand_variables_in_image_filenames $imgfile;
-    if (file_name_is_absolute($imgfile)) {
-	return try_image_suffix($imgfile);
-    }
-    my $abs_img = try_image_suffix("$FindBin::RealBin/$subdir/$imgfile");
-    if (defined $abs_img && -r $abs_img) {
-	return $abs_img;
-    }
-    # relative to this file
-    return try_image_suffix(dirname($datafile) . "/" . $imgfile);
-}
-
 # operates on argument
 {
     my $gpsman_rc_directory;
-    sub expand_variables_in_image_filenames {
+    sub expand_variables_in_image_filenames ($) {
 	$_[0] =~ s{\$BBBIKEDIR}{$FindBin::RealBin}g;
 	$_[0] =~ s{\$GPSMANDIR}{
 	    if (!defined $gpsman_rc_directory) {
@@ -7492,6 +7478,20 @@ sub maybe_expand_image_file {
 	    $gpsman_rc_directory;
 	}eg;
     }
+}
+
+sub maybe_expand_image_file {
+    my($imgfile, $datafile, $subdir) = @_;
+    expand_variables_in_image_filenames $imgfile;
+    if (file_name_is_absolute($imgfile)) {
+	return try_image_suffix($imgfile);
+    }
+    my $abs_img = try_image_suffix("$FindBin::RealBin/$subdir/$imgfile");
+    if (defined $abs_img && -r $abs_img) {
+	return $abs_img;
+    }
+    # relative to this file
+    return try_image_suffix(dirname($datafile) . "/" . $imgfile);
 }
 
 # For an absolute image path without suffix try to find an existing
