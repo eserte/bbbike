@@ -18,6 +18,9 @@ $VERSION = '1.03';
 
 use FindBin;
 
+use File::Basename qw(dirname);
+use File::Glob qw(bsd_glob);
+
 use BBBikeEdit;
 use BBBikeUtil;
 use GPS::GpsmanData::Any;
@@ -85,6 +88,22 @@ sub gps_data_viewer {
 	    }
 	}
     };
+    my $prev_or_next_file = sub ($) {
+	my $inc = shift;
+	return if !defined $gps_data_viewer_file;
+	my $dir = dirname $gps_data_viewer_file;
+	my @files = grep { /\.trk$/ } bsd_glob "$dir/*"; # XXX what about .gpx files?
+	return if !@files;
+	for(my $i = 0; $i<=$#files; $i++) {
+	    if ($gps_data_viewer_file eq $files[$i]) {
+		if ($i+$inc >= 0 && $i+$inc <= $#files) {
+		    $gps_data_viewer_file = $files[$i+$inc];
+		    $show_and_plot_file->();
+		} # else first or last file
+		return;
+	    }
+	}
+    };
     
     {
 	my $f = $t->Frame->pack(qw(-fill x));
@@ -96,6 +115,16 @@ sub gps_data_viewer {
 		 -height => 20,
 		)->pack(-fill => "x", -expand => 1, -side => "left");
 	$pe->focus;
+	$f->Button(-text => '<',
+		   -padx => 0, -pady => 0,
+		   -command => sub {
+		       $prev_or_next_file->(-1);
+		   })->pack(-side => 'left');
+	$f->Button(-text => '>',
+		   -padx => 0, -pady => 0,
+		   -command => sub {
+		       $prev_or_next_file->(+1);
+		   })->pack(-side => 'left');
 	$f->Checkbutton(-text => 'Inc .wpt',
 			-variable => \$include_associated_wpt_file,
 		       )->pack(-side => 'left');
