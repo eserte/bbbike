@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2015,2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,7 +14,7 @@
 package GPS::GpsmanData::TkViewer;
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.03';
+$VERSION = '1.04';
 
 use FindBin;
 
@@ -29,7 +29,7 @@ use Karte::Polar;
 use Tk::PathEntry;
 
 # These are global and intentionally shared within a process.
-our($gps_data_viewer_file, $last_loaded_gps_data_viewer_file, $gps_data_dir, $include_associated_wpt_file);
+our($gps_data_viewer_file, $last_loaded_gps_data_viewer_file, $gps_data_dir, $include_associated_wpt_file, $tk_stats);
 
 sub gps_data_viewer {
     my($class, $parent, %opts) = @_;
@@ -78,6 +78,11 @@ sub gps_data_viewer {
 	    undef $BBBikeEdit::recent_gps_street_layer;
 	}
     };
+    my $maybe_update_stats = sub {
+	if ($tk_stats && Tk::Exists($tk_stats)) {
+	    $tk_stats->update($gps, $stats_args_cb);
+	}
+    };
     my $show_and_plot_file = sub {
 	if (defined $gps_data_viewer_file) {
 	    $show_file->();
@@ -86,6 +91,7 @@ sub gps_data_viewer {
 	    if (defined $BBBikeEdit::recent_gps_street_layer) {
 		main::mark_layer($BBBikeEdit::recent_gps_street_layer);
 	    }
+	    $maybe_update_stats->();
 	}
     };
     my $prev_or_next_file = sub ($) {
@@ -255,18 +261,11 @@ sub gps_data_viewer {
 		   })->pack(-side => "left");
 	$f->Button(-text => 'Statistics',
 		   -command => sub {
-		       require GPS::GpsmanData::Stats;
-		       require BBBikeYAML;
-		       my %stats_args;
-		       if ($stats_args_cb) {
-			   %stats_args = $stats_args_cb->();
+		       if (!$tk_stats || !Tk::Exists($tk_stats)) {
+			   $tk_stats = $t->GpsmanDataStats;
 		       }
-		       my $stats = GPS::GpsmanData::Stats->new($gps, %stats_args);
-		       $stats->run_stats;
-		       my $tt = $t->Toplevel(-title => 'GPS data statistics');
-		       my $txt = $tt->Scrolled('ROText', -width => 30, -scrollbars => 'osoe')->pack(qw(-fill both -expand 1));
-		       $txt->insert('end', BBBikeYAML::Dump($stats->human_readable));
-		       $tt->Button(-text => 'Close', -command => sub { $tt->destroy })->pack;
+		       $maybe_update_stats->();
+		       $tk_stats->raise;
 		   })->pack(-side => 'right');
     }
 
@@ -276,6 +275,37 @@ sub gps_data_viewer {
     }
 
     $t;
+}
+
+{
+    package GPS::GpsmanData::TkViewer::Stats;
+    use base qw(Tk::Toplevel);
+    Construct Tk::Widget 'GpsmanDataStats';
+
+    sub Populate {
+	my($w, $args) = @_;
+	$args->{'-title'} = 'GPS data statistics' if !exists $args->{'-title'};
+	$w->SUPER::Populate($args);
+	my $txt = $w->Scrolled('ROText', -width => 30, -scrollbars => 'osoe')->pack(qw(-fill both -expand 1));
+	$w->Advertise(Txt => $txt);
+	$w->Button(-text => 'Close', -command => sub { $w->destroy })->pack;
+    }
+
+    sub update {
+	my($w, $gps, $stats_args_cb) = @_;
+
+	require GPS::GpsmanData::Stats;
+	require BBBikeYAML;
+	my %stats_args;
+	if ($stats_args_cb) {
+	    %stats_args = $stats_args_cb->();
+	}
+	my $stats = GPS::GpsmanData::Stats->new($gps, %stats_args);
+	$stats->run_stats;
+	my $txt = $w->Subwidget('Txt');
+	$txt->delete('1.0', 'end');
+	$txt->insert('end', BBBikeYAML::Dump($stats->human_readable));
+    }
 }
 
 1;
