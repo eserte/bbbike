@@ -2480,28 +2480,7 @@ userdel auto	3 6228,10646 6216,10614 6192,10542
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 9248,9350 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
-userdel auto	3 9487,9209 9505,9306 9524,9426
-userdel auto	3 9524,9426 9505,9306 9487,9209
-',
-         'from' => 1466632800,
-         'id' => 2089,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              8,
-                              'months',
-                              6
-                            ]
-                          ],
-         'source_id' => 'http://www.kiez-und-kultur.de/bergmannstrassenfest/',
-         'text' => 'Bergmannstraße (Kreuzberg): Veranstaltung (Bergmannstraßenfest), Straße vollständig zwischen Mehringdamm und Zossener Str. gesperrt (24. bis 26. Juni 2016)',
-         'type' => 'gesperrt',
-         'until' => 1466978399
-       },
+       undef,
        undef,
        undef,
        undef,
