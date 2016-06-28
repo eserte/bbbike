@@ -591,6 +591,8 @@ gesperrt_car:	gesperrt_car-orig strassen landstrassen landstrassen2 ${PERSISTENT
 	mv gesperrt_car~ gesperrt_car
 	-@$(READONLY) $@
 
+# prevent parallel build of multiple targets by using .ORDER
+.ORDER:	plz berlin
 plz berlin:	plz-orig
 	-@$(WRITEABLE) plz berlin
 	cat plz-orig | \
