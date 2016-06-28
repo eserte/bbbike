@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,7 +14,7 @@
 package Strassen::SimpleSearch;
 
 use strict;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use base 'Exporter';
 our @EXPORT_OK = 'simple_search';
@@ -92,8 +92,21 @@ sub simple_search {
 	    last;
 	}
 
-	$callback->($new_act_coord, $new_act_dist, $act_coord, \%PRED, \%CLOSED, \%OPEN)
-	    if $callback;
+	if ($callback) {
+	    my $keep_running;
+	    $callback->($new_act_coord, $new_act_dist, $act_coord, \%PRED, \%CLOSED, \%OPEN, \$keep_running);
+	    if (defined $keep_running) {
+		if ($keep_running eq 'found') {
+		    $found_goal = $new_act_coord;
+		    $found_dist = $new_act_dist;
+		    last FLOOD_SEARCH;
+		} elsif ($keep_running eq 'abort') {
+		    last FLOOD_SEARCH;
+		} else {
+		    die "keep_running parameter should be set to either 'found' or 'abort', or left undefined";
+		}
+	    }
+	}
 
 	$act_coord = $new_act_coord;
 	$act_dist = $new_act_dist;

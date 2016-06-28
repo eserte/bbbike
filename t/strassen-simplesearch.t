@@ -33,7 +33,7 @@ use BBBikeTest qw(using_bbbike_test_data);
 
 using_bbbike_test_data;
 
-plan tests => 17;
+plan tests => 19;
 
 my $do_bbd;
 GetOptions("bbd" => \$do_bbd)
@@ -91,6 +91,34 @@ $net->make_net;
 	      [qw(8969,9320 9133,9343 9211,9354)],
 	      $name);
     is_approx($res->{dist}, 244, 1);
+}
+
+{
+    my $name = 'callback-found';
+    my $res = simple_search_and_dump
+	($name, '8969,9320', ['9211,9354'],
+	 callback => sub {
+	     my($new_act_coord, $new_act_dist, $act_coord, $PRED, $CLOSED, $OPEN, $keep_running_ref) = @_;
+	     if ($new_act_coord eq '9133,9343') {
+		 $$keep_running_ref = 'found';
+	     }
+	 });
+    is_deeply($res->{route},
+	      [qw(8969,9320 9133,9343)],
+	      $name);
+}
+
+{
+    my $name = 'callback-abort';
+    my $res = simple_search_and_dump
+	($name, '8969,9320', ['9211,9354'],
+	 callback => sub {
+	     my($new_act_coord, $new_act_dist, $act_coord, $PRED, $CLOSED, $OPEN, $keep_running_ref) = @_;
+	     if ($new_act_coord eq '9133,9343') {
+		 $$keep_running_ref = 'abort';
+	     }
+	 });
+    is($res->{route}, undef, $name);
 }
 
 {
