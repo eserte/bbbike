@@ -132,7 +132,7 @@ GERMAN_LOCALE=de_DE.ISO8859-1
 GERMAN_LOCALE=de_DE.ISO-8859-1
 .endif
 SORT_GERMAN_LOCALE=	env LANG=${GERMAN_LOCALE} LC_CTYPE=${GERMAN_LOCALE} LC_ALL=${GERMAN_LOCALE} sort
-SORT_NO_LOCALE=		env ${NO_LOCALE} sort
+SORT_NO_LOCALE=		${NO_LOCALE} sort
 
 ## This seems to generate better results:
 COORDS_DATA_SORT_OPTS=	-f -t "|" -k 1,3
@@ -890,6 +890,7 @@ fragezeichen-cooked:	fragezeichen strassen landstrassen landstrassen2
 	        ${GREPSTRASSEN} -v -directive 'ignore=' |\
 	        ${GREPSTRASSEN} -special filternextcheck |\
 	    ${CONVERT_ORIG} > $@~
+	[ -s $@~ ]
 	@echo "# added from ampeln-orig" >> $@~
 	grep '?' ${DATADIR}/ampeln-orig | \
 	    $(SED) -e 's/	\([^ ]*\)/ (\1)	?/' | \
