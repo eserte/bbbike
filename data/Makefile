@@ -1967,17 +1967,23 @@ show-used-directives:
 
 sort-coords.data:	sort-Berlin.coords.data sort-Potsdam.coords.data
 
-# XXX It is considered to use a platform-independent approach to
-# do the sorting. A favorite approach is using Unicode::Collate, a
-# core perl module. But some problems:
-# - the diff is huge, mainly due to a bug in FreeBSD's "sort -f" implementation
-# - Unicode::Collate is significantly slower
+# The sort result is the same like running this with FreeBSD's sort
+# with a German locale --- with the bug that "ß" is not handled correctly.
+# This is reflected in the perl script below (no substitution for "ß").
+#
+# Maybe in future this could be reimplemented to use Unicode::Collate,
+# but Unicode::Collate is significantly slower
 .for city in Berlin Potsdam
 sort-$(city).coords.data:
-	[ "`uname`" = FreeBSD ] && true || (echo "Sorting probably not correct on `uname`"; false)
 	-@$(WRITEABLE) $(city).coords.data~
 	mv $(city).coords.data $(city).coords.data~
-	$(SORT_GERMAN_LOCALE) ${COORDS_DATA_SORT_OPTS} < $(city).coords.data~ > $(city).coords.data
+	${PERL} -F'\|' -nale '\
+	    $$srtkey = lc join("|", @F[0..2]);\
+	    $$srtkey =~ tr/äöüÄÖÜáéè/aouaouaee/;\
+	    push @data, [$$srtkey, $$_];\
+	    END {\
+		print join("\n", map { $$_->[1] } sort { $$a->[0] cmp $$b->[0] } @data);\
+	    }' < $(city).coords.data~ > $(city).coords.data
 	@$(READABLE) $(city).coords.data
 	touch .check_$(city)_coords_data
 .endfor
