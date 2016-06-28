@@ -983,8 +983,10 @@ breiter Gehweg für Radfahrer frei, asphaltiert	RW1; 11663,-3266 11579,-3093 1136
 neues Verbundsteinpflaster	RW1; 12564,4308 12637,4014 12655,3882 12663,3762 12673,3627 12673,3619 12684,3406 12687,3319 12701,2955 12695,2789 12693,2746 12694,2570 12694,2544 12694,2517 12703,2454 12712,2378
 neues Verbundsteinpflaster, allerdings schon erste leichte Wurzelhebungen sichtbar	RW1; 12712,2378 12703,2454 12694,2517 12694,2544 12694,2570 12693,2746 12695,2789 12701,2955 12687,3319 12684,3406 12673,3619 12673,3627 12663,3762 12655,3882 12637,4014 12564,4308
 #: XXX Radspur ist zurzeit aufgehoben
-#: last_checked: 2016-06-21
-#: check_frequency: 14d
+#: source_id: 2147340256
+#: XXX Ende der Bauarbeiten laut fritz & rbbtext
+#: last_checked: 2016-06-28
+#: next_check: 2016-07-22
 #: XXX danach anpassen -> die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 13745,12118 13785,12292
 	RW0; 13745,12118 13785,12292
 	RW3; 13785,12292 13745,12118 13696,11920 13651,11731
@@ -4766,7 +4768,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 13521,8023 13474,8060
 Busspur gilt Mo-Fr 7-19 Uhr	RW5; 13010,8422 12925,8494
 #: note: es wird spannend werden, wie gut die Busspur respektiert wird
 Busspur gilt Mo-Fr 6-19 Uhr	RW5; 12742,8635 12630,8722 12483,8834 12438,8859 12320,8927 12242,8972
-Tempo 10	RW6;RW6 8389,9087 8389,9017
+Tempo 10	RW6;RW6 8389,9087 8385,8923 8383,8862
 # REMOVED (geklärt) --- #: XXX sind hier Radspuren oder Suggestivstreifen? --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1511/nachricht5839.html
 	RW3;RW3 3739,13563 3833,13590 4098,13664 4187,13704
 # REMOVED (geklärt) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5891.html --- #: XXX: Siegfriedstr.: existieren hier Radspuren oder Suggestivstreifen? --- #: XXX ggfs. kann der comments_tram-Eintrag entfernt werden
@@ -4790,7 +4792,8 @@ asphaltiert	RW1; 17681,6212 17843,6083
 	RW6;RW6 16163,18780 16198,18753 16210,18706 16233,18643
 #: XXX ggfs. nach den Bauarbeiten gibt es in einer Richtung ein RW4
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6081.html
-#: next_check: 2016-08-31
+#: last_checked: 2016-06-28
+#: next_check: 2016-08-05
 	RW3;RW3 8180,9099 8389,9087
 #: by: a.joerns
 #: confirmed_by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.477564.php

@@ -4050,6 +4050,16 @@ userdel	2::temp 14588,9473 14635,9441
          'text' => 'Lollapalooza 2016 im Treptower Park: gesperrte Wege und Straßen, 10.09.2016 und 11.09.2016',
          'type' => 'gesperrt',
          'until' => 1473631200
+       },
+       {
+         'data' => '#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.491926.php
+userdel	q4::inwork; 5866,10492 6025,10746
+',
+         'from' => 1467496800,
+         'id' => 2806,
+         'text' => 'Nürnberger Str.: Einbahnstraßenregelung zwischen Tauentzienstr. und Augsburger Str., offen Richtung Lietzenburger Str., vom 04.07.2016 bis voraussichtlich Mitte August 2016',
+         'type' => 'handicap',
+         'until' => 1471298399
        }
      
 );

@@ -93,7 +93,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
 #: XXX Baumaßnahme 2.28 (Realisierung nach 2011) 
-#: last_checked: 2016-05-24
+#: last_checked: 2016-06-28
 #: check_frequency: 90d
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
@@ -103,7 +103,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6183 (Baubeginn erst 2015)
 #: XXX Baubeginn des ersten Abschnitts: 3. Quartal 2014
-#: last_checked: 2016-06-25
+#: last_checked: 2016-06-28
 #: check_frequency: 60d
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -350,6 +350,13 @@ Ernststr.: Verbesserung für den Radverkehr, evtl. Entfernung des Kopfsteinpflast
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.168550.php --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.227911.php ("1. Quartal 2015") --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.430800.php (existiert schon?) --- #: by: http://forum.koepenick.net/viewtopic.php?f=2&t=1004 (Suggestivstreifen) --- #: last_checked: 2015-09-13 --- #: check_frequency: 90d --- Wendenschloßstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 22668,3884 22714,3558 22742,3382 22811,3037 22831,2915 22849,2856 22904,2675 22982,2418 23064,2147 23099,2031
 # REMOVED (hier vermutlich nicht) --- Wendenschloßstr.: Radstreifen auf der westlichen Fahrbahnseite	?::projected 23099,2031 23185,1649
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.328462.php --- #: XXX_osm meint schon cycleway=lane, aber bezieht sich nur auf die Pressemitteilung --- #: next_check: 2015-10-16 --- Gaußstr.: Radspuren werden errichtet	?::inwork 3739,13563 3833,13590 4098,13664 4187,13704
+# 
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.491926.php vvv
+#: next_check: 2016-10-01 vvv
+Nürnberger Str.: Radspuren entstehen	?::projected 5764,10322 5808,10396 5866,10492
+Nürnberger Str.: Radspuren entstehen	?::projected 6025,10746 6122,10925 6145,10975
+#: next_check ^^^
+#: by ^^^
 # 
 #: section ^^^
 #: ignore ^^^
@@ -829,17 +836,7 @@ XXIII-3-1VE: hier könnte eine/mehrere Straßen entstehen	?::projected 24672,11522
 #: check_frequency: 360d
 XXIII-4a: hier wird eine Straße entstehen, Straßenname, Qualität?	?::projected 24782,11526 25140,11446
 # 
-#: next_check_id: AMLOKDEPOT-2014
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/___tmp/tmp/45081036234258287/234258287/00057951/51-Anlagen/03/Anlage1zumDV_130510_-DUD-VHB-001-LP.PDF
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4531
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file?y=2013 (Eröffnungstermin)
-#: XXX evtl. den Kopfsteinpflasterabschnitt entfernen? Oder bleibt dieser auch bestehen?
-#: XXX ggfs. culdesac eintragen/entfernen
-#: XXX gehört zu Tempelhof-Schöneberg
-#: last_checked: 2016-03-26
-#: check_frequency: 90d
-Am Lokdepot: wie wird die Wegeverbindung hier nach den Bauarbeiten aussehen?	?::inwork 8405,8994 8409,8904 8390,8879 8389,9017
-# 
+# REMOVED --- #: next_check_id: AMLOKDEPOT-2014 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/___tmp/tmp/45081036234258287/234258287/00057951/51-Anlagen/03/Anlage1zumDV_130510_-DUD-VHB-001-LP.PDF --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4531 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file?y=2013 (Eröffnungstermin) --- #: XXX evtl. den Kopfsteinpflasterabschnitt entfernen? Oder bleibt dieser auch bestehen? --- #: XXX ggfs. culdesac eintragen/entfernen --- #: XXX gehört zu Tempelhof-Schöneberg --- #: last_checked: 2016-03-26 --- #: check_frequency: 90d --- Am Lokdepot: wie wird die Wegeverbindung hier nach den Bauarbeiten aussehen?	?::inwork 8405,8994 8409,8904 8390,8879 8383,8862
 # REMOVED (keine interessante Radverbindung --- wassergebundene Decke, unbeleuchtet) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1306/nachricht4997.html (fertiggestellt) --- #: last_checked: 2013-05-29 --- #: next_check: 2013-06-26 --- Grünanlage an der Teilestr.: Parkwege entstehen, evtl. eine lohnende Abkürzung, Qualität, nachts beleuchtet?	?::inwork 11068,6006 11056,5861 11146,5851 11277,5988
 # REMOVED --- #: by: http://www.berlin.de/ba-spandau/presse/archiv/20130410.1200.383317.html --- Schönwalder Allee: Radweg wird saniert, danach asphaltiert	?::inwork; -3811,17218 -3842,17280 -3980,17486
 # REMOVED (nein) --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4461 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036564034713/564034713/00092298/98-Anlagen/05/B0362SB.pdf --- #: last_checked: 2014-06-09 --- #: check_frequency: 180d --- Wassersportallee: wird hier eine Fußgängerampel eingerichtet?	? 22506,1379 22488,1282
@@ -1506,7 +1503,7 @@ Treskowallee: Gehweg für Radfahrer freigegeben?	?; 18733,8633 18731,8577 18709,8
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7470
 #: XXX "in den Sommerferien"
-#: last_checked: 2016-06-20
+#: last_checked: 2016-06-28
 #: next_check: 2016-08-01
 Mehringdamm: Verbesserung der Fahrradinfrastruktur? Wo genau?	?::projected 9229,8785 9227,8890 9225,9038 9224,9053 9225,9111 9248,9350 9280,9476 9334,9670 9387,9804 9444,9919 9448,10014 9416,10196
 # 
@@ -3057,7 +3054,7 @@ Dewitz - Rosenhagen: laut Aktiv Regional viele Steigungen und Gefälle	? 6502,121
 Brieselang - Finkenkrug: Ist der Weg neu asphaltiert?	? -14277,18001 -14603,18132
 # REMOVED (del, warum eigentlich?) --- Radweg B-K: Asphalt sieht nicht so gut aus	? -1508,28767 -1262,28964
 Löwenberg: gibt es hier einen Radweg?	? -4424,54552 -4170,54557
-Wustow - B96: nur mäßiger Asphalt westlich des Bahnübergangs?	? -11974,93207 -11585,93051 -11187,92928
+Wustow - B96: nur mäßiger Asphalt westlich des Bahnübergangs?	? -11974,93207 -11689,93030 -11196,92819
 #: XXX ^^^
 Häsen - Gutengermendorf: Qualität? Westlich/nördlich der Bahnstrecke anscheinend asphaltiert	? -3471,59514 -3683,59088 -3978,58956 -4323,58169 -4490,58124 -5280,58092 -5659,58239 -5792,58185 -5905,58188 -5948,58458 -6170,59042
 Gutengermendorf - Häsen: Qualität? am Bahnübergang anscheinend Feldweg (Q2)	? -6390,59554 -6070,59687 -5227,60124 -5044,59890 -4597,59799 -4313,59921 -3764,59657 -3537,59727

@@ -275,7 +275,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX wird hier vielleicht asphaltiert werden?
 #: XXX Baumaﬂnahme 2.22 (Realisierung nach 2011)
-#: last_checked: 2016-06-15
+#: last_checked: 2016-06-28
 #: check_frequency: 120d
 Mariannenstr: m‰ﬂiges bis gutes Kopfsteinpflaster, 25 km/h mˆglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9053,16029 8923,15850
@@ -9496,7 +9496,9 @@ Schwarzwurzel-Park: Gehwegplatten	Q0- 20698,18359 20814,18341 20823,18329
 # REMOVED --- #: next_check_id: MONUMENTENPLATZ-2014 --- #: XXX w‰hrend der Bauarbeiten --- #: XXX sp‰ter wahrscheinlich groﬂe Pflastersteine --- #: last_checked: 2014-09-02 --- #: check_frequency: 60d
 (Flaschenhalspark, Berlin-Leipzig): gepflastert	Q2+ 8344,9085 8358,9068
 (Flaschenhalspark, Berlin-Leipzig): Asphalt	Q0 8358,9068 8367,9006 8374,9074 8389,9087
-Am Lokdepot: Asphalt	Q0 8389,9017 8389,9087
+#: note: zwischenzeitlich teilweise asphaltiert gewesen
+Am Lokdepot: Kopfsteinpflaster	Q2 8383,8862 8385,8923 8389,9087
+Monumentenplatz: gepflastert	Q2 8385,8923 8362,9007 8358,9068
 Sewanstr. [Wohngebiet]: Beton	Q1+ 18266,9853 18210,9989
 Sewanstr. [Wohngebiet]: Asphalt	Q0 18066,9770 17997,9929
 Hardenbergplatz: Asphalt und Beton mit Rissen	Q1+ 5542,11075 5600,11114 5698,11333

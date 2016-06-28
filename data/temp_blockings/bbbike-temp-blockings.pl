@@ -25267,4 +25267,13 @@ userdel	2::temp 14809,9466 14556,9581
 userdel	2::temp 14588,9473 14635,9441
 EOF
      },
+     { from  => 1467496800, # 2016-07-03 00:00
+       until => 1471298399, # 2016-08-15 23:59
+       text  => 'Nürnberger Str.: Einbahnstraßenregelung zwischen Tauentzienstr. und Augsburger Str., offen Richtung Lietzenburger Str., vom 04.07.2016 bis voraussichtlich Mitte August 2016',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.491926.php
+userdel	q4::inwork; 5866,10492 6025,10746
+EOF
+     },
     );
