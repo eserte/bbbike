@@ -1,14 +1,17 @@
 #
 # This Makefile is only usable with a modern version of BSD make (also known
-# as "pmake"). The source for pmake can be found at
+# as "pmake").
+#
+# Debian users may use fmake from the freebsd-buildutils package. On
+# older Debian versions (wheezy?) the executable is named
+# freebsd-make.
+#
+# For other systems: the source for pmake can be found at
 #
 #   http://www.sourceforge.net/projects/srezic
 #
 # (This is a slightly modified version of the original pmake as found in
 # the FreeBSD sources)
-#
-# Debian users may use freebsd-make resp. fmake from the freebsd-buildutils
-# package.
 
 UNAME!=	uname
 
