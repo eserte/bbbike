@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2007,2009,2011,2012,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2007,2009,2011,2012,2015,2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -24,11 +24,16 @@ my $project = "bbbike.de-hosteurope";
 my $graph_stage;
 my $show;
 my $plotter = 'Chart::Gnuplot';
+my $width = 1000;
+my $height = 700;
 GetOptions("skipwrong!" => \$skip_wrong,
 	   "project=s" => \$project,
 	   "graph=s" => \$graph_stage,
 	   'show' => \$show,
-	   'plotter' => \$plotter,
+	   'plotter=s' => \$plotter,
+	   'geometry|geom=s' => sub {
+	       ($width,$height) = split /x/, $_[1];
+	   },
 	  ) 
     or die "usage: $0 [-[no]skipwrong] [-project bbbike.de-hosteurope|www.radzeit.de] [-graph test-from-local|do-rsync|test-on-remote] [-show] [-plotter Chart::Gnuplot|Chart::Clicker]";
 
@@ -96,7 +101,7 @@ if ($graph_stage) {
     if ($plotter eq 'Chart::Clicker') {
 	require Chart::Clicker;
 	require Chart::Clicker::Axis::DateTime;
-	my $cc = Chart::Clicker->new(width=>1000,height=>700);
+	my $cc = Chart::Clicker->new(width=>$width,height=>$height);
 	$cc->add_data('Time-based', \%graph_data);
 	$cc->contexts->{default}->domain_axis(Chart::Clicker::Axis::DateTime->new(position => 'bottom', orientation => 'horizontal'));
 	$cc->write_output("/tmp/graph.png");
@@ -109,7 +114,8 @@ if ($graph_stage) {
     } elsif ($plotter eq 'Chart::Gnuplot') {
 	require Chart::Gnuplot;
 	my $chart = Chart::Gnuplot->new(
-					terminal => "wxt size 1000,700",
+					terminal => "wxt size $width,$height",
+					#terminal => "qt size $width,$height",
 					title => "analyze_deploy_timestamps: $graph_stage",
 					timeaxis => "x",
 				       );
