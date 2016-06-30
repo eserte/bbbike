@@ -1050,8 +1050,8 @@ Merseburger Str.: Kopfsteinpflaster	Q2 6975,8944 6962,9035 6945,9142
 Kopenhagener Str.: Kopfsteinpflaster	Q2 10097,15856 10365,15902
 Kopenhagener Str.: Kopfsteinpflaster	Q2 10571,15933 10722,15921 10964,15896
 Ystader Str.: Kopfsteinpflaster	Q2 10365,15902 10355,15946
-Esplanade: asphaltiert	Q3 10975,16896 10905,16893
-Esplanade: schlechtes Kopfsteinpflaster	Q3 10905,16893 10655,16904
+Esplanade: asphaltiert	Q0 10975,16896 10886,16893
+Esplanade: schlechtes Kopfsteinpflaster	Q3 10886,16893 10655,16904
 Glinkastr.: Asphalt	Q0 9183,12076 9195,11972 9207,11880 9218,11793 9220,11781
 Ettaler Str.: Kopfsteinpflaster	Q2 5997,10286 5948,10152
 Fasanenplatz, zur Schaperstr.: gutes Kopfsteinpflaster	Q1 5224,10253 5192,10234
@@ -1299,7 +1299,7 @@ Mainzer Str.: schlechtes bis m‰ﬂiges Kopfsteinpflaster (auch bergab nur 15 km/h)
 Mainzer Str.: m‰ﬂiges Kopfsteinpflaster	Q2 12104,8299 12116,8247 12134,8172 12147,8117
 Mainzer Str.: Asphalt	Q0 12147,8117 12162,8055
 Wissmannstr.: schlechtes Kopfsteinpflaster	Q3 11767,9026 11768,8739 11769,8515
-Liebigstr.: Kopfsteinpflaster	Q2 13905,12374 14000,12519 14058,12709
+Liebigstr.: Kopfsteinpflaster	Q2 13905,12374 13991,12522 14058,12709
 Liselotte-Herrmann-Str.: Kopfsteinpflaster	Q2 12701,13873 12542,13984 12423,14066 12281,14164
 Esmarchstr.: Kopfsteinpflaster	Q2 12335,14246 12281,14164 12228,14083 12148,13961
 Chodowieckistr.: Kopfsteinpflaster	Q2 12266,14460 11982,14614 11682,14777
@@ -11149,7 +11149,8 @@ B¸rgipfad: schlechtes Kopfsteinpflaster	Q3 5486,461 5495,390 5591,240
 Prettauer Pfad: guter Asphalt	Q0 3384,1297 3577,1541
 Prettauer Pfad: guter Asphalt	Q0 3358,1331 3384,1297 3437,1218
 Prettauer Pfad: fester Sandweg	Q1 3437,1218 3476,1169
-Gotlandstr.: m‰ﬂiges Kopfsteinpflaster	Q2 10778,16485 10793,16636 10799,16759
+Gotlandstr.: m‰ﬂiges Kopfsteinpflaster	Q2 10778,16485 10793,16636
+Gotlandstr.: Asphalt	Q0 10793,16636 10798,16769
 Glaﬂbrennerstr.: Kopfsteinpflaster	Q2 11543,16207 11632,16373
 Grabertstr.: Asphalt	Q0 7091,4760 7058,4890 7052,4911 7030,4937 6923,5057
 Tulpenstr.: Kopfsteinpflaster	Q2 3587,4514 3775,4632 3795,4644 3815,4657 3991,4773 4116,4850 4193,4897 4209,4908

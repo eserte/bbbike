@@ -636,8 +636,9 @@ Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 16699,10611 16725,10662 16
 #: source_id: IM_021506 vvv
 #: source_id: 2147339530 vvv
 #: last_checked: 2015-02-18 vvv
-#: next_check: 2016-12-31 vvv
+#: next_check: 2016-07-01 vvv
 #: XXX nach dem Ende der Bauarbeiten vermutlich Radspuren:
+#: XXX die Bauarbeiten sind laut fritz beendet
 gemeinsamer Rad- und Gehweg, relativ breit	RW2; 8019,13650 7979,13733 7943,13794 7866,13916 7818,13993 7589,14359 7597,14417
 #: XXX nach dem Ende der Bauarbeiten vermutlich weiterhin Radspuren, RW3 oder RW4?
 	RW3; 7597,14417 7589,14359 7818,13993 7866,13916 7943,13794 7979,13733 8019,13650
@@ -985,8 +986,7 @@ neues Verbundsteinpflaster, allerdings schon erste leichte Wurzelhebungen sichtb
 #: XXX Radspur ist zurzeit aufgehoben
 #: source_id: 2147340256
 #: XXX Ende der Bauarbeiten laut fritz & rbbtext
-#: last_checked: 2016-06-28
-#: next_check: 2016-07-22
+#: last_checked: 2016-06-29
 #: XXX danach anpassen -> die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 13745,12118 13785,12292
 	RW0; 13745,12118 13785,12292
 	RW3; 13785,12292 13745,12118 13696,11920 13651,11731
@@ -1429,7 +1429,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 	RW3;RW3 11159,10769 11234,10739 11275,10723
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW4;RW4
-#: last_checked: 2016-06-16
+#: last_checked: 2016-06-29
 #: check_frequency: 90d
 	RW0;RW0 8804,12280 8775,12457
 	RW4;RW4 8775,12457 8766,12541
@@ -1437,7 +1437,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2016-06-16
+#: last_checked: 2016-06-29
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -1523,7 +1523,7 @@ die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
 	RW3;RW2 14672,10760 14674,10811
 #: next_check_id: HAUPTSTR-2015
 #: XXX wegen Bauarbeiten aufgehoben, früher RW4;RW4
-#: last_checked: 2016-06-19
+#: last_checked: 2016-06-30
 #: check_frequency: 30d
 	RW0;RW0 14674,10811 14717,10855
 	RW1;RW1 14652,10201 14688,10167 14705,10149 14747,10108 14817,10031
