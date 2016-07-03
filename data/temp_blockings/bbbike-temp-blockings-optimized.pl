@@ -2370,7 +2370,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juni von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juli von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2722,7 +2722,31 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.bierfestival-berlin.de/landkarte.html
+userdel	2::temp 12360,12505 12362,12540 12364,12589
+userdel	2::temp 12891,12549 12869,12425
+userdel	2::temp 12632,12630 12596,12472
+userdel	2::temp 13448,12340 13484,12436
+userdel	2::temp 13552,12435 13543,12326
+#zukünftig, wenn dieser Weg eingetragen ist: userdel	2::temp 13163,12382 13176,12500
+',
+         'from' => 1470297600,
+         'id' => 2262,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              31,
+                              'months',
+                              7
+                            ]
+                          ],
+         'text' => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung (Internationales Berliner Bierfestival), Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (5.8.2016 bis 7.8.2016)',
+         'type' => 'gesperrt',
+         'until' => 1470528000
+       },
        undef,
        undef,
        undef,
@@ -3630,34 +3654,7 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	q4::inwork 8634,10426 8384,10507 8525,10626
-userdel	q4::inwork 8348,10636 8335,10518 8350,10499
-',
-         'from' => 1466978400,
-         'id' => 2718,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              8,
-                              'months',
-                              1
-                            ],
-                            [
-                              'yearly',
-                              'days',
-                              27,
-                              'months',
-                              6
-                            ]
-                          ],
-         'source_id' => '2147339708',
-         'text' => 'Schöneberger Str. und Luckenwalder Str.: Sperrungen wegen der Fashion Week, 28.06.2016-30.06.2016',
-         'type' => 'handicap',
-         'until' => 1467323999
-       },
+       undef,
        {
          'data' => '	2::inwork 9998,16547 9982,16527 9959,16510
 ',
@@ -3844,8 +3841,10 @@ userdel	q4::inwork; 25010,4807 25171,4757 25228,4745 25248,4752 25369,4790 25434
        {
          'data' => '#: note: gesehen 2016-05-11 gegen 9 Uhr
 #: note: offen am 2016-06-16 gegen 9:30 Uhr
+#: note: offen am 2016-07-01 gegen 18:15 Uhr
 userdel	2::temp 8362,13466 8369,13465 8377,13463
 #: note: geschlossen am 2016-06-16 gegen 9:30 Uhr
+#: note: geschlossen am 2016-07-01 gegen 18:15 Uhr
 userdel	2::temp 8371,13399 8363,13402 8356,13404
 ',
          'from' => undef,
@@ -3890,16 +3889,7 @@ userdel	q4::inwork 20381,1390 20405,1460
          'until' => 1475272799
        },
        undef,
-       {
-         'data' => 'userdel	2::inwork 63500,89978 63789,89450 63797,89389 63814,89247 63826,89135 63928,88223 64007,87773 64113,87461
-',
-         'from' => 1465106400,
-         'id' => 2790,
-         'source_id' => 'LS/721-E/16/052',
-         'text' => 'Woltersdorf - Caeskow: Baustelle, Straße vermutlich gesperrt, 06.06.2016 08:00 Uhr bis 30.06.2016',
-         'type' => 'gesperrt',
-         'until' => 1467324000
-       },
+       undef,
        undef,
        undef,
        {
@@ -3990,16 +3980,7 @@ userdel	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => 'userdel	q4::inwork; 16629,13532 16866,13532
-',
-         'from' => 1466287200,
-         'id' => 2801,
-         'source_id' => '2147340236',
-         'text' => 'Herzbergstr. Richtung Krankenhaus: zwischen Am Wasserwerk und Siegfriedstr. Baustelle, Fahrtrichtung gesperrt, bis Anfang Juli 2016 ',
-         'type' => 'handicap',
-         'until' => 1467410399
-       },
+       undef,
        {
          'data' => '#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6081.html (Radfahrer _dürfen_ passieren)
 userdel	q3::inwork 8389,9087 8180,9099
@@ -4060,6 +4041,16 @@ userdel	q4::inwork; 5866,10492 6025,10746
          'text' => 'Nürnberger Str.: Einbahnstraßenregelung zwischen Tauentzienstr. und Augsburger Str., offen Richtung Lietzenburger Str., vom 04.07.2016 bis voraussichtlich Mitte August 2016',
          'type' => 'handicap',
          'until' => 1471298399
+       },
+       {
+         'data' => 'userdel	q4::inwork 19676,1577 19704,1621 19766,1796
+',
+         'from' => 1468101600,
+         'id' => 2807,
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.493537.php',
+         'text' => 'Köpenicker Str.: Bauarbeiten zwischen Rudower Str. und Schönefelder Chaussee, Fahrbahn voraussichtlich gesperrt, vom 11.07.2016 bis zum 21.08.2016',
+         'type' => 'handicap',
+         'until' => 1471816800
        }
      
 );

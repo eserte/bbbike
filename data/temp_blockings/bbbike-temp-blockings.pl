@@ -19720,11 +19720,11 @@ EOF
 userdel	2::inwork 3045,19032 2994,18979
 EOF
      },
-     { from  => $isodate2epoch->("2015-08-06 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-08-09 02:00:00"),
+     { from  => $isodate2epoch->("2016-08-04 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-08-07 02:00:00"),
        periodic => 1, # Internationales Berliner Bierfestival
        recurrences => [['yearly', days => 31, months => 7]],
-       text  => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung (Internationales Berliner Bierfestival), Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (7.8.2015 bis 9.8.2015)',
+       text  => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung (Internationales Berliner Bierfestival), Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (5.8.2016 bis 7.8.2016)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.bierfestival-berlin.de/landkarte.html
@@ -23233,11 +23233,12 @@ EOF
      },
      { from  => $isodate2epoch->("2015-08-07 00:00:00"), # 1407438000, # 2014-08-07 21:00
        until => $isodate2epoch->("2015-08-09 08:00:00"), # 1407650400, # 2014-08-10 08:00
-       periodic => 1,
-       recurrences => [["yearly", days => 1, months => 8]], # Termin meist Anfang August, wechselnde Orte
+       ## geänderte Route, keine längere Sperrung auf der Str. des 17. Juni mehr
+       #periodic => 1,
+       #recurrences => [["yearly", days => 1, months => 8]], # Termin meist Anfang August, wechselnde Orte
        text  => 'Str. des 17. Juni: zwischen Yitzak-Rabin-Str. und Ebertstr.: Veranstaltung (Hanfparade), Straße gesperrt, ab 07.08.2015 21 Uhr bis 09.08.2015 morgens ',
        type  => 'gesperrt',
-       source_id => 'http://www.hanfparade.de/',
+       source_id => 'https://www.hanfparade.de/programm-route/route.html',
        data  => <<EOF,
 userdel	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 	3::temp 8391,12389 8344,12221 8327,12174
@@ -25053,8 +25054,10 @@ EOF
        data  => <<EOF,
 #: note: gesehen 2016-05-11 gegen 9 Uhr
 #: note: offen am 2016-06-16 gegen 9:30 Uhr
+#: note: offen am 2016-07-01 gegen 18:15 Uhr
 userdel	2::temp 8362,13466 8369,13465 8377,13463
 #: note: geschlossen am 2016-06-16 gegen 9:30 Uhr
+#: note: geschlossen am 2016-07-01 gegen 18:15 Uhr
 userdel	2::temp 8371,13399 8363,13402 8356,13404
 EOF
      },
@@ -25274,6 +25277,15 @@ EOF
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.491926.php
 userdel	q4::inwork; 5866,10492 6025,10746
+EOF
+     },
+     { from  => 1468101600, # 2016-07-10 00:00
+       until => 1471816800, # 2016-08-22 00:00
+       text  => 'Köpenicker Str.: Bauarbeiten zwischen Rudower Str. und Schönefelder Chaussee, Fahrbahn voraussichtlich gesperrt, vom 11.07.2016 bis zum 21.08.2016',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.493537.php',
+       data  => <<EOF,
+userdel	q4::inwork 19676,1577 19704,1621 19766,1796
 EOF
      },
     );
