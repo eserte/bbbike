@@ -261,8 +261,9 @@
 	    require IPC::Open3;
 	    require Symbol;
 	    my $max_wait = 10;
-	    my $wait_start = time;
-	    my $wait_until = time + $max_wait;
+	    my $wait_start     = time;
+	    my $wait_invisible = time + 1;
+	    my $wait_until     = time + $max_wait;
 	    my $info_dialog_active;
 	    while () {
 		my($stdinfh,$stdoutfh,$stderrfh);
@@ -280,7 +281,7 @@
 		    if (time > $wait_until) {
 			die "$mount_point is still busy, cannot unmount";
 		    }
-		    if (!$info_dialog_active) {
+		    if (!$info_dialog_active && time > $wait_invisible) {
 			_status_message("Target is busy while running 'umount $mount_point', wait max. $max_wait seconds...", "infoauto");
 			$info_dialog_active = 1;
 		    }
