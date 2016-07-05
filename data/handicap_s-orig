@@ -10,6 +10,10 @@
 # 
 ### Friedrichshain ###
 # 
+#: last_checked: 2016-07-05
+#: check_frequency: 14d
+Koppenstr.: Wasserrohrbruch, Fahrbahn gesperrt	q2::inwork 12409,11902 12366,11808
+# 
 #: source_id: 2147339819
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.415646.php
 #: XXX laut vmz bis Mitte Mai 2016, laut fritz bis 13.05.2016, tatsächlich aber noch länger gültig --- bis wann?
@@ -22,7 +26,7 @@ Wühlischstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14575,11407 14674,
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2016-06-26 vvv
+#: last_checked: 2016-07-03 vvv
 Revaler Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14357,11148 14286,11186
 Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
 # REMOVED (keine Behinderungen mehr) --- Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
@@ -65,7 +69,7 @@ Rigaer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 14133,12482 14266,12446
 #
 #: XXX siehe auch valid-Eintrag weiter unten
 #: source_id: 2147340178
-#: last_checked: 2016-06-22
+#: last_checked: 2016-07-05
 #: valid: -20161115
 Bouchéstr.: Bauarbeiten, Radfahrer müssen auf dem Gehweg fahren	q2::inwork 13642,9624 13865,9866 13890,9894
 # REMOVED (wahrscheinlich aufgehoben) --- #: last_checked: 2013-11-22 --- #: check_frequency: 60d --- Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 13973,9465 14157,9345
@@ -75,13 +79,13 @@ Bouchéstr.: Bauarbeiten, Radfahrer müssen auf dem Gehweg fahren	q2::inwork 13642
 # REMOVED --- #: last_checked: 2015-06-10 --- Am Zirkus: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9167,13046 9137,13032 9090,13009
 # REMOVED --- #: last_checked: 2016-06-01 --- Kommandantenstr.: Bauarbeiten, Einbahnstraße	q2::inwork; 10437,11352 10389,11390
 # 
-#: last_checked: 2016-07-01
+#: last_checked: 2016-07-05
 Kommandantenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10330,11422 10136,11529
 # 
-#: last_checked: 2016-07-01
+#: last_checked: 2016-07-05
 Beuthstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10201,11631 10235,11610 10330,11422
 # 
-#: last_checked: 2016-06-01
+#: last_checked: 2016-07-05
 Schützenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10116,11485 9949,11470
 # 
 # REMOVED (wieder offen) --- #: XXX gibt es hier noch Einschränkungen? --- #: last_checked: 2016-01-14 --- #: next_check: 2016-02-03 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9935,11566 9990,11571
@@ -134,7 +138,7 @@ Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und 
 # REMOVED (Einbahnstraßenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universitätsstr.: wegen Bauarbeiten Einbahnstraße zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9580,12581
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2016-05-26 vvv
+#: last_checked: 2016-07-05 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="3"
@@ -219,7 +223,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 # 
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2016-06-30
+#: last_checked: 2016-07-05
 #: check_frequency: 30d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -228,11 +232,12 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10072,11384 9945,11371 9737,11349
 # REMOVED (das Einfahrt verboten-Schild hängt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9949,11470 9935,11566
 # 
-#: XXX laut fritz bis 12.02.2016, geht aber länger; laut vmz bis Ende Juni 2016
+#: XXX laut fritz bis 29.07.2016
 #: source_id: 2147339998
-#: last_checked: 2016-07-01
+#: last_checked: 2016-07-05
+#: next_check: 2016-07-29
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10256,11160 10437,11352
-#: last_checked: 2016-07-01 vvv
+#: last_checked: 2016-07-05 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10624,11548 10640,11564
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10437,11352 10489,11405
 #: last_checked ^^^
@@ -250,7 +255,7 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10437,11352 10489,11405
 #: next_check_id: ALEXANDRINENSTR-2016
 #: source_id: LMS-BR_r_LMS-BR_68468
 #: XXX Endedatum laut fritz
-#: last_checked: 2016-07-01
+#: last_checked: 2016-07-05
 #: next_check: 2016-09-16
 Stallschreiberstr., Alexandrinenstr.: Einbahnstraßenregelung	q4::inwork; 10794,10927 10824,11010 10678,11172 10593,11120 10501,11056
 # 
@@ -291,7 +296,7 @@ S-Bhf. Friedrichshagen: Bauarbeiten, Fahrbahn gesperrt, Gehweg benutzen	q4::inwo
 ### Neukölln ###
 # 
 #: next_check_id: WEICHSELPLATZ-2016
-#: last_checked: 2016-06-30 vvv
+#: last_checked: 2016-07-05 vvv
 #: check_frequency: 14d vvv
 Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12761,9190 12851,9309 12844,9351
 Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12907,9073 12761,9190
@@ -1043,7 +1048,7 @@ Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 (Aldi/Getränke-Hoffmann-Parkplatz): Parkplatz	q1 13208,11658 13186,11692 13173,11788
 #: XXX_prog BS am östlichen Ende, am westlichen ist abgesenkt, ansonsten q2
 (Schmidstr. - Heinrich-Heine-Str.): Bordsteine, Fußgänger	q3 11236,11508 11170,11558
-#: XXX_prog BS am westlichen Ende, östliches ist leicht abgesenkt und eigentlich kein Problem
+#: XXX_prog BS am westlichen Ende, östliches ist leicht abgesenkt und eigentlich kein Problem (wenn es nicht zugeparkt ist)
 (Entlang des Stadtbahnviadukts): Bordsteine, Fußgänger	q2 11966,11832 12132,11788
 (Maybachufer - Weigandufer): Radfahren nicht erlaubt, ggfs. schieben	q3 12851,9309 12907,9073
 (Parkplatz Charité): Fußgänger	q3 8833,13440 8846,13412 8835,13376 8818,13365 8808,13377 8764,13372
@@ -2342,6 +2347,8 @@ Fischerstr.: Pollerreihe	q2; 15982,10765 16080,10743
 #: XXX_prog BS, ansonsten q2
 (Wasserweg - Treptower Park): einige Fußgänger, Bordstein, Zugang kann zugeparkt sein	q3 15680,8914 15617,8924
 Monumentenplatz: einige Fußgänger, Spielplatz	q2 8385,8923 8362,9007 8358,9068
+(Minna-Cauer-Str. - Lehrter Str.): Fußgänger, Radfahren offiziell verboten	q4 7879,13438 7837,13499 7775,13540
+(Minna-Cauer-Str. - Lehrter Str.): einige Fußgänger, schmale Straße	q1 7775,13540 7666,13479 7653,13480
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

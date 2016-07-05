@@ -18346,7 +18346,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016121',
        data  => <<EOF,
-userdel	q4::inwork 7759,13246 7651,13447 7643,13461 7660,13506 7655,13539
+userdel	q4::inwork 7759,13246 7651,13447 7647,13461 7653,13480 7660,13506 7655,13539
 EOF
      },
      { from  => 1280985970, # 2010-08-05 07:26
@@ -25276,6 +25276,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.491926.php
+#: source_id: 2147340266
 userdel	q4::inwork; 5866,10492 6025,10746
 EOF
      },
@@ -25286,6 +25287,26 @@ EOF
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.493537.php',
        data  => <<EOF,
 userdel	q4::inwork 19676,1577 19704,1621 19766,1796
+EOF
+     },
+     { from  => 1467661160, # 2016-07-04 21:39
+       until => 1487977200, # 2017-02-25 00:00
+       text  => 'Buckower Damm: Baustelle zwischen Alt-Buckow und Ringslebenstr., evtl. auch Einschränkungen für Radfahrer, bis 24.02.2017',
+       type  => 'handicap',
+       source_id => '2147340272',
+       data  => <<EOF,
+userdel	q4::inwork 12938,1348 12940,1547 12911,1815 12817,2031
+EOF
+     },
+     { from  => 1466978400, # 2016-06-27 00:00
+       until => 1470002399, # 2016-07-31 23:59
+       text  => 'Wuhleweg: Bauarbeiten zwischen Lindenstr. und Hämmerlingstr., für Radfahrer und Fußgänger gesperrt, bis voraussichtlich Ende Juli 2016',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php',
+       data  => <<EOF,
+#: XXX zweiter Bauabschnitt ab Ende August bis ca. 23.09.
+#: next_check: 2016-07-31
+userdel	2::inwork 22084,5877 21846,5856 21744,5804 21602,5685
 EOF
      },
     );

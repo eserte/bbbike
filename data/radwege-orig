@@ -86,7 +86,7 @@ asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9233,8597 9229,8718
 #: XXX Radspuren in Bau, zwischenzeitlich keine Radwege mehr vvv
 #: osm_watch: way id="30709741" version="11"
 #: osm_watch: way id="354645896" version="1"
-#: last_checked: 2016-05-13 vvv
+#: last_checked: 2016-07-04 vvv
 #: check_frequency: 30d vvv
 	RW0;RW3 8680,6322 8661,6169 8641,5998
 	RW3;RW0 8641,5998 8622,5867 8613,5745
@@ -630,21 +630,24 @@ Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 16699,10611 16725,10662 16
 	RW1;RW1 11740,14950 11776,15060 11801,15132 11828,15210 11852,15281 11860,15309 11877,15366 11891,15413 11905,15462 11913,15490 11941,15586 11967,15700 11995,15827
 	RW2;RW1 11995,15827 12030,15968 12075,16144 12090,16199
 # REMOVED --- #: by: rudolf kionke: ---	RW0;RW0 8092,13467 8048,13578 8019,13650
+#: next_check_id: HEIDESTR-2016 vvv
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1309/nachricht5067.html (Gesamtfertigstellung Ende 2016) vvv
 #: source_id: IM_020408 vvv
 #: source_id: IM_021506 vvv
 #: source_id: 2147339530 vvv
-#: last_checked: 2016-07-01 vvv
-#: next_check: 2016-07-04 vvv
+#: last_checked: 2016-07-05 vvv
+#: check_frequency: 7d vvv
 #: XXX nach dem Ende der Bauarbeiten vermutlich Radspuren:
-gemeinsamer Rad- und Gehweg, relativ breit	RW2; 8019,13650 7979,13733 7973,13743 7866,13916 7818,13993 7732,14131 7697,14187 7651,14260 7570,14392
+gemeinsamer Rad- und Gehweg, relativ breit	RW2; 7979,13733 7973,13743 7866,13916 7818,13993 7732,14131 7697,14187 7651,14260 7570,14392
+	RW3; 8019,13650 7979,13733
 	RW3; 7570,14392 7651,14260 7697,14187 7732,14131 7818,13993 7866,13916 7973,13743 7979,13733 8019,13650
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: source_id ^^^
 #: source_id ^^^
 #: source_id ^^^
 #: by: ^^^
+#: next_check_id ^^^
 Gehweg für Radfahrer frei	RW1; 7741,14560 7570,14392
 	RW1; 7570,14392 7741,14560
 	RW1; 8057,14876 7968,14787 7741,14560
@@ -984,7 +987,7 @@ neues Verbundsteinpflaster, allerdings schon erste leichte Wurzelhebungen sichtb
 #: XXX Radspur ist zurzeit aufgehoben
 #: source_id: 2147340256
 #: XXX Ende der Bauarbeiten laut fritz & rbbtext
-#: last_checked: 2016-07-01
+#: last_checked: 2016-07-05
 #: XXX danach anpassen -> die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 13745,12118 13785,12292
 	RW0; 13745,12118 13785,12292
 	RW3; 13785,12292 13745,12118 13696,11920 13651,11731
@@ -1035,7 +1038,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5542,11075 5459,11135
 	RW0;RW0  5459,11135 5258,11285 5166,11343 5091,11406 5085,11413 4919,11605
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4919,11605 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
-#: last_checked: 2016-05-09
+#: last_checked: 2016-07-05
 #: check_frequency: 60d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1055,13 +1058,13 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 969
 #: source_id: IM_018997
 #: source_id: IM_023987
 #: source_id: IM_025933
-#: last_checked: 2016-07-01
+#: last_checked: 2016-07-05
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9601,12380 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2016-05-24
+#: last_checked: 2016-07-05
 #: check_frequency: 60d
 Busspur ist immer gültig	RW5; 9475,12365 9601,12380
 # 
@@ -1089,7 +1092,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10738,12364 10723,12346 10700,12315 10675,12280
 asphaltierter Radweg	RW1;RW2 11134,12793 11226,12945
 Busspur gilt Mo-Fr 7-14 Uhr	RW5; 10876,12563 10803,12470
 # REMOVED (zu weit entfernt von der anderen Seite) --- : next_check_id: VOSSSTR-2014
-#: last_checked: 2016-06-16
+#: last_checked: 2016-07-05
 #: XXX provisorischer Radstreifen, aber mittlerweile Richtung Westen (früher vor den Bauarbeiten war es Richtung Osten), evtl. wird später der alte Zustand wieder hergestellt: RW3;RW0
 	RW0;RW3 8740,11524 8834,11536 9058,11564
 	RW3; 9058,11564 9268,11590
@@ -1205,7 +1208,7 @@ Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW5; 6460,8688 6449,8807 6449,8845 6445
 	RW1;RW1 7402,8208 7446,8200 7497,8168 7582,8123 7639,8091 7710,8051 7733,8023
 #: XXX Wilhelm-Kabus-Str.: eventuell wird der Gehweg Richtung Süden für Radfahrer freigegeben
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4159&options=4
-#: last_checked: 2016-05-13
+#: last_checked: 2016-07-04
 #: check_frequency: 90d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
 	RW2;RW4 7717,7879 7718,7820 7696,7771
@@ -1427,7 +1430,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 	RW3;RW3 11159,10769 11234,10739 11275,10723
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW4;RW4
-#: last_checked: 2016-07-01
+#: last_checked: 2016-07-05
 #: check_frequency: 90d
 	RW0;RW0 8804,12280 8775,12457
 	RW4;RW4 8775,12457 8766,12541
@@ -2306,7 +2309,7 @@ die letzten Meter mit benutzungspflichtiger Radspur	RW0; 9383,13986 9224,14169
 	RW3;RW4 8953,14528 8870,14637
 die letzten Meter mit benutzungspflichtiger Radspur	RW3; 8870,14637 8692,14923
 	RW3; 8692,14923 8870,14637
-	RW2;RW2 8019,13650 7930,13578 7880,13494 7880,13315
+	RW1;RW2 8019,13650 7930,13578 7890,13515 7879,13438 7880,13315
 	RW6;RW6 12064,12171 11958,12195 11937,12127
 	RW6;RW6 -2646,14525 -2652,14559 -2656,14582 -2668,14635 -2682,14681 -2688,14703 -2704,14748 -2735,14848 -2622,14876 -2591,14783 -2704,14748
 	RW;RW0 2654,5678 2717,5578
@@ -2607,7 +2610,7 @@ die letzten Meter sind benutzungspflichtig	RW3; 10395,12908 10348,12879 10309,12
 #: by: Axel Schumacher:
 	RW5?; -3135,14183 -3173,14216 -3227,14260
 sehr eng	RW1;RW1 13116,5689 13394,5754 13566,5792
-	RW6;RW6 7595,12980 7791,13166
+	RW6;RW6 7595,12980 7795,13168
 	RW3;RW3 5424,11944 5286,12043 5231,12122 5181,12195 5133,12240 5018,12322
 	RW6;RW6 5922,12765 5914,12845
 	RW6;RW6 5914,12845 5938,12848
@@ -3668,7 +3671,7 @@ asphaltiert	RW1; 20689,4862 20765,4839 20949,4775
 	RW6;RW6 6060,8334 6181,8181
 	RW3;RW3 6074,14194 6074,14215 6084,14251 6118,14289 6230,14316 6301,14345 6607,14403
 	RW4;RW4 6607,14403 6747,14436 6803,14459 6857,14488 6869,14494 6917,14504 6983,14508 7050,14501 7085,14482 7099,14461 7104,14432 7104,14403
-	RW4; 7759,13246 7788,13202 7791,13166
+	RW4; 7759,13246 7785,13226 7795,13168
 #: by: Andreas Kadgien:
 #: note: der restliche Abschnitt der Münchehagenstr. ist Tempo-30-Zone
 #: confirmed_by: srt

@@ -1132,6 +1132,7 @@ Treptower Park: Schotterweg	Q2 14242,9448 14316,9542
 Treptower Park: wassergebundene Decke	Q1 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674
 Treptower Park: Kopfsteinpflaster	Q2 14604,9674 14577,9641
 Treptower Park: wassergebundene Decke und Kleinsteinpflaster	Q1 14695,9587 14627,9609 14577,9641 14495,9710 14443,9731 14361,9772
+Treptower Park: Verbundsteinpflaster	Q1 14448,9922 14467,9880 14500,9863
 Am Rosengarten: Parkweg	Q1 14909,9649 14867,9573 14837,9517 14809,9466
 Am Kˆllnischen Park: Kopfsteinpflaster	Q2 11197,11882 11155,11750
 Lichtensteinallee: wassergebundene Decke	Q1 6378,11553 6297,11449
@@ -4652,7 +4653,7 @@ Tiriotstr.: Asphalt	Q0 11484,22406 11235,22590
 Mittelstr. (Rosenthal): Beton	Q0 9917,20658 10115,20714
 Tiefenseer Str.: Beton	Q0 7425,21219 7450,21018
 (Georgenkirchstr. - Mollstr.): Kleinsteinpflaster	Q1 11589,13305 11526,13252
-(durch den Schlesischen Busch): Parkweg	Q1 13418,9944 13657,9983 13711,10022
+(durch den Schlesischen Busch): Parkweg, teilweise grober Schotter	Q1 13418,9944 13657,9983 13711,10022
 Gajusstr.: betoniert	Q0 10929,4442 10931,4521
 Tacitusstr.: betoniert	Q0 11092,4433 11115,4430 11215,4521
 Straﬂe 7 (Mariendorf): m‰ﬂiger Asphalt	Q1 9208,4215 9197,4315
@@ -7645,7 +7646,7 @@ Fritz-Schloﬂ-Park: Asphalt mit Wurzelsch‰den	Q1 6988,13539 7021,13560 7056,13584
 (Weg am Moabiter Werder): Asphalt	Q0 7649,12758 7707,12813 7787,12918 7813,12961 7799,13019
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Parkweg	Q1 7837,12860 7838,12870 7827,12880 7812,12884 7809,12901 7801,12910
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Metallrampe	Q3 7801,12910 7788,12907 7787,12918
-Emma-Herwegh-Str.: Verbundsteinpflaster	Q0 7791,13166 7595,12980
+Emma-Herwegh-Str.: Verbundsteinpflaster	Q0 7795,13168 7595,12980
 Fritz-Schloﬂ-Park: wassergebundene Decke	Q1 7263,13331 7241,13361
 Feldzeugmeisterstr.: Asphalt	Q0 6917,13917 6818,14102
 Deportationsweg: Kopfsteinpflaster	Q2 6920,14365 6857,14488
@@ -8774,7 +8775,7 @@ B‰kepark: wassergebundene Decke	Q1 5131,4207 5282,4145
 (am ehem. Osthafen): Kopfsteinpflaster	Q2 13679,10589 13756,10554
 (am ehem. Osthafen): Beton	Q0 13756,10554 13805,10528
 (am ehem. Osthafen): Kopfsteinpflaster	Q2 13805,10528 13824,10521
-(am ehem. Osthafen): Beton	Q0 13824,10521 13944,10464 14207,10338 14259,10309 14463,10212
+(am ehem. Osthafen): Beton	Q0 13824,10521 13944,10464 14207,10338 14348,10266 14463,10212
 (Bossestr. - ehem. Osthafen): Kopfsteinpflaster	Q2 14222,10430 14204,10397 14226,10387
 (Bossestr. - ehem. Osthafen): Beton mit Schienen	Q2 14226,10387 14207,10338
 (KGA Neu Berlin): Gehwegplatten	Q1 13633,14904 13699,14801 13704,14780 13759,14723 13759,14706 13776,14675 13765,14665
@@ -9263,6 +9264,8 @@ Alfonsstr.: Asphalt, letzte Deckschicht fehlt noch	Q1 19083,1243 18998,1349 1902
 Rainweg [Stichstraﬂe]: Verbundsteinpflaster	Q1 25028,-2846 24977,-2753
 Rainweg: schlechtes Kopfsteinpflaster	Q3 25006,-3014 25000,-3001 24970,-2945 25012,-2857 25028,-2846
 Rainweg: Verbundsteinpflaster	Q1 25028,-2846 25113,-2797
+(Minna-Cauer-Str. - Lehrter Str.): Asphalt	Q0 7879,13438 7837,13499 7775,13540
+(Minna-Cauer-Str. - Lehrter Str.): Asphalt	Q0 7775,13540 7666,13479 7653,13480
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straﬂe 77 (Franzˆsisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straﬂe 77 (Franzˆsisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -14860,7 +14863,7 @@ Sesenheimer Str.: Asphalt	Q0 3843,11659 3866,11473
 Sesenheimer Str.: Asphalt	Q0 3866,11473 3874,11380
 Sesenheimer Str.: Kopfsteinpflaster	Q2 3874,11380 3877,11347
 Herderstr. (Charlottenburg): Asphalt	Q0 4452,11570 4434,11360
-Clara-Jaschke-Str.: Asphalt	Q0 7759,13246 7788,13202 7791,13166 7795,13093 7799,13019
+Clara-Jaschke-Str.: Asphalt	Q0 7759,13246 7785,13226 7795,13168 7795,13093 7799,13019
 Bertha-Benz-Str.: Asphalt	Q0 7799,13019 7872,13022 7939,13026
 Katharina-Paulus-Str.: Asphalt	Q0 7867,13106 7872,13022 7873,12927
 Flemingstr.: Verbundsteine	Q1 7317,12751 7322,12735

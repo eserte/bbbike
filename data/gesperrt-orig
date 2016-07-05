@@ -1353,7 +1353,7 @@ Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus
 #: next_check_id: ALEXANDRINENSTR-2016
 #: XXX Einbahnstraßenrichtung umgedreht, vermutlich wegen der Einbahnstraße in der Alexandrinenstr.?
 #: XXX alter Eintrag: Stallschreiberstr.	1s:q1 10489,11405 10620,11244 10678,11172
-#: last_checked: 2016-05-24
+#: last_checked: 2016-07-05
 #: next_check: 2016-09-16
 #: priority: #A
 Stallschreiberstr.	1s:q2 10678,11172 10620,11244 10489,11405
@@ -2125,8 +2125,10 @@ Barriere	BNP:2::trailer=8 13385,22383
 Schranke, gut umfahrbar	BNP:0::trailer=3 8243,9766
 #: note: etwas weiter als üblich
 Drängelgitter	BNP:2::trailer=8 4140,2706
-Drängelgitter	BNP:3::trailer=10 7886,8335
-Drängelgitter	BNP:3::trailer=10 7911,8329
+#: note: mittlerweile gut umfahrbar vvv
+Drängelgitter	BNP:2::trailer=6 7886,8335
+Drängelgitter	BNP:2::trailer=6 7911,8329
+#: note ^^^
 Schranke, kann auf Bürgersteig umfahren werden	BNP:3::trailer=5 1778,20377
 Schranke	BNP:3::trailer=10 5296,11529
 # 
@@ -2213,9 +2215,9 @@ Drängelgitter	BNP:3::trailer=10 10062,15927
 #: next_check_id: LORTZING-2014
 #: XXX eventuell temporär wegen der Baustraße
 #: XXX siehe auch in zebrastreifen
-#: last_checked: 2016-02-19
+#: last_checked: 2016-07-04
 #: check_frequency: 120d
-zwei weite Drängelgitter	BNP:4::trailer=12 10038,15418
+zwei Drängelgitter	BNP:6::trailer=15 10038,15418
 Schranke	BNP:3 -7969,-1659
 Drängelgitter	BNP:3::trailer=10 18126,9075
 Drängelgitter	BNP:3::trailer=10 27115,11335
@@ -2714,7 +2716,7 @@ Alfonsstr.: Bauzäune	2::inwork 19027,1427 19034,1441 19061,1457
 #: next_check: 2016-09-20
 Sonntagstr./Ostkreuz: wegen Bauarbeiten gesperrt	2::inwork 14752,11041 14798,10985
 # 
-#: last_checked: 2016-06-26
+#: last_checked: 2016-07-03
 Haasestr.: Bauarbeiten, keine Durchfahrt möglich	2::inwork 14328,11320 14286,11186
 # 
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 vvv --- #: last_checked: 2016-06-02 vvv --- #: check_frequency: 14d vvv --- Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12844,9351 12851,9309 12907,9073 --- Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12907,9073 12851,9309 12844,9351
@@ -2753,7 +2755,7 @@ Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7703,14582 7527,14
 # REMOVED (fertig) --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.476901.php --- #: next_check: 2016-05-14 --- Treptower Park: Bauarbeiten	2::inwork 14695,9587 14705,9578 14791,9537
 # REMOVED (fertig) --- Treptower Park: Bauarbeiten	2::inwork 15591,8848 15608,8882 15617,8924 15623,8949 15630,8979
 #: XXX evtl. kann man hier als Fußgänger irgendwie vorbei
-#: last_checked: 2016-06-30 vvv
+#: last_checked: 2016-07-05 vvv
 #: check_frequency: 7d
 Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14448,9922 14467,9880 14500,9863
 #: last_checked ^^^
@@ -2964,10 +2966,9 @@ Teisnacher Str.: fertiggestellt, aber noch gesperrt	2::inwork 19871,9680 19859,9
 #: check_frequency: 360d
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 # 
-#: note: allerdings könnte man sein Fahrrad über den Betonpfeiler rübertragen
-#: last_checked: 2016-03-13
+#: last_checked: 2016-07-05
 #: check_frequency: 120d
-am Osthafen: durch Barriere versperrt	2::inwork 14259,10309 14463,10212
+am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14463,10212
 # 
 #: next_check_id: BND-2014
 #: osm_watch: way id="327596395" version="1"
@@ -2981,7 +2982,7 @@ Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Du
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
 #: osm_watch: way id="305153174" version="1"
-#: last_checked: 2016-05-23 vvv
+#: last_checked: 2016-07-05 vvv
 #: check_frequency: 90d vvv
 Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9996,12401 9994,12368 9943,12364
 Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10008,12274 9994,12368
@@ -3036,7 +3037,7 @@ Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,689
 # 
 #: next_check_id: CHARITE-2014
 #: XXX eine Umleitung existiert, ist aber von der Westseite schwierig zu finden und könnte nachts gesperrt sein
-#: last_checked: 2016-04-15
+#: last_checked: 2016-07-05
 #: check_frequency: 90d
 An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8833,13440 8846,13412 8835,13376 8818,13365 8808,13377 8764,13372 8665,13353
 # 
@@ -3103,7 +3104,7 @@ Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,2
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
 #: next_check_id: STAATSOPER-2014 vvv
-#: last_checked: 2016-07-01 vvv
+#: last_checked: 2016-07-05 vvv
 #: check_frequency: 90d vvv
 #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung)
 #: XXX voraussichtliche Eröffnung 2017-10-03 (laut Tsp vom 2016-03-31)

@@ -2403,8 +2403,8 @@ Barriere	BNP:2:-85:trailer=8 13148,22396
 Barriere	BNP:2:-86:trailer=8 13385,22383
 Schranke, gut umfahrbar	BNP:0:-160:trailer=3 8243,9766
 Drängelgitter	BNP:2:-51:trailer=8 4140,2706
-Drängelgitter	BNP:3:-76:trailer=10 7886,8335
-Drängelgitter	BNP:3:-75:trailer=10 7911,8329
+Drängelgitter	BNP:2:-76:trailer=6 7886,8335
+Drängelgitter	BNP:2:-75:trailer=6 7911,8329
 Schranke, kann auf Bürgersteig umfahren werden	BNP:3:-217:trailer=5 1778,20377
 Schranke	BNP:3:-244:trailer=10 5296,11529
 Drängelgitter	BNP:5:-167:trailer=10 14364,8096
@@ -2468,7 +2468,7 @@ Baumstamm als Barriere	BNP:0:-129:trailer=5 -1527,18645
 mehrere Poller	BNP:1:-139:trailer=6 12299,19143
 Poller	BNP:1:11:trailer=6 8350,10662
 Drängelgitter	BNP:3:-194:trailer=10 10062,15927
-zwei weite Drängelgitter	BNP:4:64:trailer=12 10038,15418
+zwei Drängelgitter	BNP:6:64:trailer=15 10038,15418
 Schranke	BNP:3:-93 -7969,-1659
 Drängelgitter	BNP:3:-124:trailer=10 18126,9075
 Drängelgitter	BNP:3:-50:trailer=10 27115,11335
@@ -2862,7 +2862,7 @@ Regener Str.: fertiggestellt, aber noch gesperrt	2::inwork 19790,9478 19859,9473
 Patersdorfer Str.: fertiggestellt, aber noch gesperrt	2::inwork 19626,9171 19764,9160 19874,9151
 Teisnacher Str.: fertiggestellt, aber noch gesperrt	2::inwork 19871,9680 19859,9473
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
-am Osthafen: durch Barriere versperrt	2::inwork 14259,10309 14463,10212
+am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14463,10212
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Durchfahrt verboten	2 8251,14337 8442,14456
 Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s 9996,12401 9994,12368 9943,12364
 Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10008,12274 9994,12368

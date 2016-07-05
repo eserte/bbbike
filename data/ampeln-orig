@@ -2592,11 +2592,11 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
 #: XXX laut fritz bis 05.05.2016
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
-#: last_checked: 2016-05-24
+#: last_checked: 2016-07-05
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2016-07-01 vvv
+#: last_checked: 2016-07-05 vvv
 #: check_frequency: 30d vvv
 	X::inwork 9122,12509
 	X::inwork 9286,12886
@@ -2850,7 +2850,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: Anforderungsampel
 	F 10461,3757
 #: XXX Baustellenampel
-#: last_checked: 2016-07-01
+#: last_checked: 2016-07-05
 #: check_frequency: 60d
 	F::inwork 8853,13539
 #: next_check_id: HEERSTR-2016
@@ -2860,6 +2860,11 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X::inwork -3069,11487
 #: note: Zufahrt zu Obi
 	X 24426,11265
+# 
+#: next_check_id: LORTZING-2014
+#: last_checked: 2016-07-04
+#: check_frequency: 120d
+	F::inwork 10038,15418
 # 
 ################################################################################
 #: note: Potsdam vvv

@@ -2648,25 +2648,7 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	q4::temp 13178,10623 13206,10651 13305,10789 13332,10832
-',
-         'from' => 1467446400,
-         'id' => 2206,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              2,
-                              'months',
-                              7
-                            ]
-                          ],
-         'text' => 'Open Air Gallery am 3. Juli 2016 auf der Oberbaumbrücke (10:00 - 20:00)',
-         'type' => 'gesperrt',
-         'until' => 1467576000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4034,6 +4016,7 @@ userdel	2::temp 14588,9473 14635,9441
        },
        {
          'data' => '#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.491926.php
+#: source_id: 2147340266
 userdel	q4::inwork; 5866,10492 6025,10746
 ',
          'from' => 1467496800,
@@ -4051,6 +4034,28 @@ userdel	q4::inwork; 5866,10492 6025,10746
          'text' => 'Köpenicker Str.: Bauarbeiten zwischen Rudower Str. und Schönefelder Chaussee, Fahrbahn voraussichtlich gesperrt, vom 11.07.2016 bis zum 21.08.2016',
          'type' => 'handicap',
          'until' => 1471816800
+       },
+       {
+         'data' => 'userdel	q4::inwork 12938,1348 12940,1547 12911,1815 12817,2031
+',
+         'from' => 1467661160,
+         'id' => 2808,
+         'source_id' => '2147340272',
+         'text' => 'Buckower Damm: Baustelle zwischen Alt-Buckow und Ringslebenstr., evtl. auch Einschränkungen für Radfahrer, bis 24.02.2017',
+         'type' => 'handicap',
+         'until' => 1487977200
+       },
+       {
+         'data' => '#: XXX zweiter Bauabschnitt ab Ende August bis ca. 23.09.
+#: next_check: 2016-07-31
+userdel	2::inwork 22084,5877 21846,5856 21744,5804 21602,5685
+',
+         'from' => 1466978400,
+         'id' => 2809,
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php',
+         'text' => 'Wuhleweg: Bauarbeiten zwischen Lindenstr. und Hämmerlingstr., für Radfahrer und Fußgänger gesperrt, bis voraussichtlich Ende Juli 2016',
+         'type' => 'gesperrt',
+         'until' => 1470002399
        }
      
 );
