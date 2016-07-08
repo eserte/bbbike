@@ -126,6 +126,9 @@ install_perl_dependencies() {
 	# so make sure to install Tk early. See
 	# https://rt.cpan.org/Ticket/Display.html?id=102434
 	cpanm --quiet --notest Tk
+	# XXX DBD-mysql-4.034 fails to specify DBI::DBD as a prereq
+	# https://rt.cpan.org/Ticket/Display.html?id=115167
+	cpanm --quiet --notest DBI::DBD
 	cpanm --quiet --installdeps --notest .
     fi
 }
