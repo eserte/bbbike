@@ -1129,6 +1129,9 @@ Kleineweg	1s 9128,8251 9130,8029
 #: last_checked ^^^
 #: XXX ^^^
 #: by: ^^^
+Gartenstr.	1s:q3 720,2718 835,2715
+Gartenstr.	1 835,2715 912,2965
+Kilstetter Str.	1 1532,2921 1536,3029 1575,3054 1689,3125 1835,2898
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -2109,6 +2112,8 @@ Treppe	0:40 1888,42795
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter	BNP:2::trailer=8 -1309,2017
+Drängelgitter	BNP:2::trailer=8 -1278,2034
 Drängelgitter	BNP:3::trailer=10 21688,312
 weites Drängelgitter	BNP:2::trailer=7 21917,10991
 Drängelgitter	BNP:3::trailer=10 26246,12648
@@ -2499,7 +2504,7 @@ Tor	BNP:3::trailer=5 14425,8116
 Tor	BNP:3::trailer=5 14688,8355
 # REMOVE (man fährt jetzt via neuen Gehweg) --- Schranke	BNP:0::trailer=3
 #: by: http://www.benno-koch.de/article09575_dumm_gelaufen_schifffahrtsamt_sperrt_teltow-route2 vvv
-Drängelgitter	BNP:5 4258,2693
+Drängelgitter	BNP:5 4272,2704
 # REMOVED (gibt's mittlerweile nicht mehr) --- Drängelgitter	BNP:5 4202,2622
 #: by: ^^^
 #: by: Kerstin Klemann: vvv
@@ -2727,7 +2732,7 @@ Keibelstr.: Bauarbeiten, Fahrbahn wird neu gemacht, Durchfahrt nicht möglich	2::
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2015
 #: osm_watch: way id="156817982" version="10"
-#: last_checked: 2016-03-28
+#: last_checked: 2016-07-07
 #: check_frequency: 60d
 Lutterbacher Str.: noch Baustelle	2::inwork 2094,3231 1993,3170 2072,3034 2163,3092
 # 
@@ -2783,7 +2788,7 @@ SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2336,1111 2408,1144 2504,1
 #: next_check_id ^^^
 # 
 #: osm_watch: way id="318581438" version="3"
-#: last_checked: 2016-03-28
+#: last_checked: 2016-07-07
 #: check_frequency: 120d
 Fünf Morgen: Bauarbeiten, gesperrt. Wird es eine Anbindung an den Hüttenweg geben?	2::inwork 1437,5015 1483,5161
 # 

@@ -10,7 +10,7 @@
 # 
 ### Friedrichshain ###
 # 
-#: last_checked: 2016-07-05
+#: last_checked: 2016-07-06
 #: check_frequency: 14d
 Koppenstr.: Wasserrohrbruch, Fahrbahn gesperrt	q2::inwork 12409,11902 12366,11808
 # 
@@ -26,7 +26,7 @@ Wühlischstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14575,11407 14674,
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2016-07-03 vvv
+#: last_checked: 2016-07-06 vvv
 Revaler Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14357,11148 14286,11186
 Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
 # REMOVED (keine Behinderungen mehr) --- Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
@@ -94,7 +94,7 @@ Schützenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10116,11485 9949,11470
 # REMOVED (zwar noch Einbahnstraße, aber man kann mittlerweile relativ gut vorbei) --- #: XXX bis wann dauert die Sperrung an? Wird die Straße dann asphaltiert sein? (siehe auch Änderung in qualitaet_s-orig, "provisorischer Asphalt") --- #: last_checked: 2016-03-17 --- Leuschnerdamm: Sperrung der Fahrbahn Richtung Michaelkirchplatz	q4::inwork; 11458,11136 11473,11180
 # 
 #: XXX nach den Bauarbeiten bessere Qualität?
-#: last_checked: 2016-07-01
+#: last_checked: 2016-07-06
 Melchiorstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 11542,11342 11726,11265 11921,11185
 # 
 # REMOVED (nicht mehr gesperrt für Radfahrer) --- #: XXX nochmal genauer anschauen... --- #: last_checked: 2014-11-10 --- Gipsstr.: Bauarbeiten zwischen Rosenthaler Str. und Joachimstr., Einbahnstraße	q2::inwork; 10350,13376 10199,13446
@@ -927,9 +927,9 @@ Am Bahndamm: Radfahren offiziell nicht erlaubt	q2 7667,4549 7769,4315
 Am Bahndamm: Fußgänger	q1 7769,4315 7795,4242 8106,3410
 Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 #: XXX bleibt es bei dem steilen Abschnitt?
-#: last_checked: 2016-03-28
+#: last_checked: 2016-07-07
 #: check_frequency: 90d
-Teltowkanalpromenade: enge und kurvige Unterführung, steile Abschnitte	q4 4261,2703 4258,2693 4247,2652 4202,2622 4193,2616
+Teltowkanalpromenade: enge und kurvige Unterführung, steile Abschnitte	q4 4274,2717 4272,2704 4247,2652 4209,2641
 Heinrich-Laehr-Park: Fußgänger	q1 1525,581 1372,1208 1328,1387 1249,1672
 #: note: Luftbild
 (Unterführung): Rampen	q2 -8334,14461 -8251,14440 -8256,14418 -8227,14408 -8287,14411
@@ -2596,7 +2596,7 @@ Konradinstr.: eng	q1 8575,5202 8557,5226 8674,5357 8872,5484 8887,5564
 (Livländische Str. - Schoelerpark): Fußgänger, für Radfahrer freigegeben	q1 5170,8449 5212,8602
 #: by: Katharina Hoffmann:
 #: confirmed_by: srt
-(Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Fußgänger	q1 835,2715 1017,2823 1093,2866 1126,2885 1145,2898 1262,2975
+(Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Fußgänger	q1 835,2715 1017,2823 1093,2866 1112,2880 1145,2898 1262,2975
 (Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Fußgänger	q1 1453,3085 1659,3226 1687,3244 1715,3257 1977,3414 2228,3554
 #: by: Carroll Haak:
 Uferpromenade: Restaurantbetrieb	q3 -1659,18104 -1659,18076

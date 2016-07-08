@@ -812,6 +812,9 @@ Leonhardyweg	1s 9033,8029 9032,8254
 Kleineweg	1s 9130,7810 9132,7661
 Kleineweg	1s 9130,7810 9130,8029
 Kleineweg	1s 9128,8251 9130,8029
+Gartenstr.	1s 720,2718 835,2715
+Gartenstr.	1 835,2715 912,2965
+Kilstetter Str.	1 1532,2921 1536,3029 1575,3054 1689,3125 1835,2898
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -2392,6 +2395,8 @@ tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
 tragen (6 Stufen)	0:15:-90 4608,63927
 Treppe	0:40:-131 1888,42795
+Drängelgitter	BNP:2:-118:trailer=8 -1309,2017
+Drängelgitter	BNP:2:-116:trailer=8 -1278,2034
 Drängelgitter	BNP:3:-26:trailer=10 21688,312
 weites Drängelgitter	BNP:2:-109:trailer=7 21917,10991
 Drängelgitter	BNP:3:-141:trailer=10 26246,12648
@@ -2690,7 +2695,7 @@ Schranke, ggfs. auf Gehweg ausweichen	BNP:2:82:trailer=6 16368,7425
 Drängelgitter	BNP:3:-101:trailer=10 23012,3598
 Tor	BNP:3:-123:trailer=5 14425,8116
 Tor	BNP:3:42:trailer=5 14688,8355
-Drängelgitter	BNP:5:-164 4258,2693
+Drängelgitter	BNP:5:-154 4272,2704
 Drängelgitter (2x), für Anhänger nicht passierbar	BNP:10:-206:trailer=no 2009,3362
 Drängelgitter (2x)	BNP:10:-211:trailer=20 1980,3409
 Schwingtor	BNP:5:-153:trailer=10 15054,10168

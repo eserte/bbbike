@@ -385,7 +385,7 @@
 (defun bbbike-update-osm-watch ()
   (interactive)
   (let ((sel (bbbike--get-x-selection)))
-    (if (string-match "\\(way\\|node\\|relation\\).* id=\"\\([0-9]+\\)\".* version=\"\\([0-9]+\\)\"" sel)
+    (if (string-match "\\+<\\(way\\|node\\|relation\\).* id=\"\\([0-9]+\\)\".* version=\"\\([0-9]+\\)\"" sel)
 	(let* ((elemtype (substring sel (match-beginning 1) (match-end 1)))
 	       (elemid (substring sel (match-beginning 2) (match-end 2)))
 	       (elemversion (substring sel (match-beginning 3) (match-end 3)))

@@ -1633,7 +1633,7 @@ EOF
        text  => 'Ringstr. (Steglitz) Richtung Finkensteinallee zwischen Drakestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis 12.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 3507,3635 3375,3544 3228,3455 3184,3427 3050,3333 3011,3303 2781,3122 2701,3064 2661,3021 2637,2973 2626,2844
+userdel	q4; 3507,3635 3375,3544 3228,3455 3184,3427 3050,3333 3011,3303 2781,3122 2701,3064 2661,3021 2637,2973 2625,2850
 EOF
      },
      { from  => 1110917391, # 2005-03-15 21:09
@@ -5316,7 +5316,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003129',
        data  => <<EOF,
-userdel	1::inwork 2661,3021 2637,2973 2626,2844
+userdel	1::inwork 2661,3021 2637,2973 2625,2850
 EOF
      },
      { from  => 1160591740, # 2006-10-11 20:35
@@ -22929,7 +22929,7 @@ userdel	2::inwork 6134,5800 6115,5302
 userdel	2::inwork 5699,5949 5847,5961 5845,6049 5748,6051 5699,5949 5674,5901 5677,5868 5679,5853 5681,5768 5681,5743 5683,5672 5687,5586 5840,5588 5840,5679 5683,5672
 userdel	2::inwork 5681,5743 5850,5765 5851,5863 5694,5845
 userdel	2::inwork 5845,6049 6008,6067 6001,5974 5847,5961 5851,5863 5935,5874 5942,5775 5850,5765 5840,5679
-userdel	2::inwork 5993,5422 6007,5785 6007,5882 6001,5974 6134,5986 6116,6130
+userdel	2::inwork 5993,5422 6009,5691 6007,5785 6007,5882 6001,5974 6134,5986 6116,6130
 userdel	2::inwork 5935,5874 6007,5882 6134,5894
 EOF
      },
@@ -24555,7 +24555,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.364590.php',
        data  => <<EOF,
 # REMOVED (laut osm fertig) --- #: XXX Bis wann sind die Bauarbeiten fertig? --- #: last_checked: 2015-12-05 --- #: check_frequency: 30d
-userdel	2::inwork -1298,2017 -1082,2140
+userdel	2::inwork -1296,2025 -1278,2034 -1082,2140
 # REMOVED (weitgehend fertig) --- userdel	2::inwork -1591,1861 -1650,1826 -1724,1785 -1805,1740 -1889,1693 -1950,1659 -2043,1608 -2602,1291
 EOF
      },
@@ -25147,11 +25147,11 @@ EOF
      },
      { from  => $isodate2epoch->("2016-07-10 00:00:00"),
        until => $isodate2epoch->("2016-08-08 23:59:59"),
-       text  => 'Martin-Luther-Str.: Bauarbeiten zwischen Heylstr. und Freiherr-vom-Stein-Str., 11.7.2016 bis 8.8.2016',
+       text  => 'Martin-Luther-Str.: Bauarbeiten zwischen Heylstr. und Freiherr-vom-Stein-Str., Gehweg für Radfahrer frei, 11.7.2016 bis 8.8.2016',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.485790.php',
        data  => <<EOF,
-	q4::inwork; 6459,8281 6461,8463 6454,8653
+	q3::inwork; 6459,8281 6461,8463 6454,8653
 	3 6534,8467 6461,8463 6377,8460
 	3 6377,8460 6461,8463 6534,8467
 EOF

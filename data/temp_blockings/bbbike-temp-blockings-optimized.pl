@@ -3887,14 +3887,14 @@ userdel	q4::inwork 20381,1390 20405,1460
          'until' => 1468015200
        },
        {
-         'data' => '	q4::inwork; 6459,8281 6461,8463 6454,8653
+         'data' => '	q3::inwork; 6459,8281 6461,8463 6454,8653
 	3 6534,8467 6461,8463 6377,8460
 	3 6377,8460 6461,8463 6534,8467
 ',
          'from' => 1468101600,
          'id' => 2794,
          'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.485790.php',
-         'text' => 'Martin-Luther-Str.: Bauarbeiten zwischen Heylstr. und Freiherr-vom-Stein-Str., 11.7.2016 bis 8.8.2016',
+         'text' => 'Martin-Luther-Str.: Bauarbeiten zwischen Heylstr. und Freiherr-vom-Stein-Str., Gehweg für Radfahrer frei, 11.7.2016 bis 8.8.2016',
          'type' => 'handicap',
          'until' => 1470693599
        },
@@ -3920,16 +3920,7 @@ userdel	2::inwork 3472,24709 3481,24686 3492,24667 3535,24626
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => 'userdel	q4::inwork 15576,12315 15537,12367
-',
-         'from' => 1466015432,
-         'id' => 2797,
-         'source_id' => 'http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.488270.php',
-         'text' => 'Rathausstr. (Lichtenberg): Bauarbeiten, Fahrbahn vor dem Rathaus gesperrt, bis zum 5. Juli 2016',
-         'type' => 'handicap',
-         'until' => 1467755999
-       },
+       undef,
        {
          'data' => 'userdel	q4::inwork 15628,12246 15651,12214 15685,12154
 ',
