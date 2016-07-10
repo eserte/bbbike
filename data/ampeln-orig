@@ -3173,9 +3173,9 @@ UBB, halbst¸ndlich	B 51270,179246
 	B 26568,178286
 	B 18326,173768
 	B 16716,174712
-#: XXX_prog: Strecke ist auﬂer Betrieb! B0 oder was?
+#: note: Strecke ist auﬂer Betrieb
 	B0 32187,64661
-#: XXX_prog: Strecke ist auﬂer Betrieb! B0 oder was?
+#: note: Strecke ist auﬂer Betrieb
 	B0 19029,81437
 #: note: Schranke noch in Betrieb; Z¸ge werden hinter der Straﬂe gewendet
 	B 16196,79268
@@ -3275,10 +3275,8 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	B 42804,-13910
 #: note: Luftbild
 	B 36666,14172
-#: note: Luftbild
 	B -14667,54977
-#: note: Luftbild
-	B -15335,54980
+# REMOVED (wg. Entfernung des fragezeichen-Eintrags) ---	B -15335,54980
 #: note: Luftbild
 	B 48692,-75633
 #: note: Luftbild
@@ -3334,24 +3332,24 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	B 40249,186550
 	B -216,128147
 	B 5401,128721
-#: XXX_prog: Strecke ist auﬂer Betrieb! B0 oder was?
+#: note: Strecke ist auﬂer Betrieb
 	B0 24754,77507
 	B -54891,-35326
 	B 24165,-103467
-#: note: Luftbild vvv
-	B -21066,67757
 	B -19695,59899
+	B -21066,67757
+#: note: Luftbild vvv
 	B -19996,46176
 	B -14975,40027
 	B -11386,36243
 	B -9783,34896
 	B -7346,32440
 	B -24804,49561
-	B -20907,55639
-	B -27809,58912
+	B0 -20907,55639
+	B0 -27809,58912
 	B -7352,54661
 	B 3476,63906
-#: XXX_prog: Strecke ist auﬂer Betrieb! B0 oder was?
+#: note: Strecke ist auﬂer Betrieb
 	B0 29542,69987
 	B -62229,18971
 #: note ^^^
@@ -3371,7 +3369,7 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	B 33705,152843
 	B 32741,155086
 	B 21792,169304
-#: XXX_prog: Strecke ist auﬂer Betrieb! B0 oder was?
+#: note: Strecke ist auﬂer Betrieb
 	B0 26090,86927
 	B -83391,-71794
 	B -79430,-70051
@@ -3498,6 +3496,13 @@ Doppelte Bettelampel (beim ‹berqueren der Pudagla-Straﬂe)	X 52868,176203
 #: note: Anforderungsampel
 	F 39280,1505
 	B0 70973,75028
+	B 5359,28848
+	B -19552,55097
+	B -23007,72916
+	X -25508,76444
+#: note: Anforderungsampel
+	F -25355,76171
+	B -19408,63188
 # 
 #: note: ^^^
 ################################################################################
@@ -3536,7 +3541,7 @@ S-Bf Lehnitz	F 329,37254
 #: append_comment Oranienburg-Sachsenhausen vvvvvvvvvvvvvvvvvvvvvvvvv
 Chausseestr. / Zum Bahnhof	X -882,40723
 Granseer Str. Hˆhe Post	F -1235,41150
-Zum Bahnhof / Nordbahn	B -521,40612
+Zum Bahnhof / Nordbahn	B -533,40617
 #: append_comment ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: append_comment Oranienburg-Schmachtenhagen vvvvvvvvvvvvvvvvvvvvvvv
 # REMOVED (Bahn¸bergang wird r¸ckgebaut, siehe LSBB-Meldung 136502343) --- Bauernmarktchaussee / nGAR	B0 5150,41018

@@ -3874,18 +3874,7 @@ userdel	q4::inwork 20381,1390 20405,1460
        undef,
        undef,
        undef,
-       {
-         'data' => '	q4::inwork; 6454,8653 6461,8463 6459,8281
-	3 6534,8467 6461,8463 6377,8460
-	3 6377,8460 6461,8463 6534,8467
-',
-         'from' => 1465682400,
-         'id' => 2793,
-         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.485790.php',
-         'text' => 'Martin-Luther-Str.: Bauarbeiten zwischen Freiherr-vom-Stein-Str. und Heylstr., 13.6.2016 bis 8.7.2016',
-         'type' => 'handicap',
-         'until' => 1468015200
-       },
+       undef,
        {
          'data' => '	q3::inwork; 6459,8281 6461,8463 6454,8653
 	3 6534,8467 6461,8463 6377,8460
@@ -4027,12 +4016,13 @@ userdel	q4::inwork; 5866,10492 6025,10746
          'until' => 1471816800
        },
        {
-         'data' => 'userdel	q4::inwork 12938,1348 12940,1547 12911,1815 12817,2031
+         'data' => '# REMOVED ("Verkürzung" laut fritz) --- userdel	q4::inwork 12938,1348 12940,1547 12911,1815
+userdel	q4::inwork 12911,1815 12817,2031
 ',
          'from' => 1467661160,
          'id' => 2808,
          'source_id' => '2147340272',
-         'text' => 'Buckower Damm: Baustelle zwischen Alt-Buckow und Ringslebenstr., evtl. auch Einschränkungen für Radfahrer, bis 24.02.2017',
+         'text' => 'Buckower Damm: Baustelle zwischen Alt-Buckow und An den Achterhöfen, evtl. auch Einschränkungen für Radfahrer, bis 24.02.2017',
          'type' => 'handicap',
          'until' => 1487977200
        },

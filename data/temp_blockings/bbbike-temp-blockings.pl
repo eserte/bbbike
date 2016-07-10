@@ -14497,7 +14497,7 @@ EOF
        text  => 'B 167 Löwenberg - Grieben OD Löwenberg Deckeneinbau Vollsperrung 06.06.2009-06.06.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -7665,54237 -7918,54138 -8307,53883
+userdel	q4::inwork -7665,54237 -7918,54138 -8018,54024 -8370,53873
 EOF
      },
      { from  => 1244584599, # 2009-06-09 23:56
@@ -15273,7 +15273,7 @@ EOF
        text  => 'L 015 Schloßstr., Menzer Str. OD Rheinsberg, zw. Berliner Str. u. Kiefernweg Straßenbauarbeiten Vollsperrung 27.07.2009-18.12.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -25211,76393 -25508,76444
+userdel	q4::inwork -25211,76393 -25376,76422 -25508,76444
 EOF
      },
      { from  => 1249164000, # 2009-08-02 00:00
@@ -25291,11 +25291,12 @@ EOF
      },
      { from  => 1467661160, # 2016-07-04 21:39
        until => 1487977200, # 2017-02-25 00:00
-       text  => 'Buckower Damm: Baustelle zwischen Alt-Buckow und Ringslebenstr., evtl. auch Einschränkungen für Radfahrer, bis 24.02.2017',
+       text  => 'Buckower Damm: Baustelle zwischen Alt-Buckow und An den Achterhöfen, evtl. auch Einschränkungen für Radfahrer, bis 24.02.2017',
        type  => 'handicap',
        source_id => '2147340272',
        data  => <<EOF,
-userdel	q4::inwork 12938,1348 12940,1547 12911,1815 12817,2031
+# REMOVED ("Verkürzung" laut fritz) --- userdel	q4::inwork 12938,1348 12940,1547 12911,1815
+userdel	q4::inwork 12911,1815 12817,2031
 EOF
      },
      { from  => 1466978400, # 2016-06-27 00:00
