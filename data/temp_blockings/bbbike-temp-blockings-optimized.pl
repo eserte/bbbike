@@ -2541,25 +2541,7 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 5370,6486 5424,6584 5533,6753 5644,6936
-',
-         'from' => 1467928800,
-         'id' => 2126,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              4,
-                              'months',
-                              7
-                            ]
-                          ],
-         'text' => 'Rheinstraße (Friedenau): Veranstaltung (Jazzfest auf der Rheinstraße), Straße vollständig zwischen Walther-Schreiber-Platz und Kaisereiche gesperrt (09.07.2016 bis 10.07.2016)',
-         'type' => 'gesperrt',
-         'until' => 1468187999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3821,12 +3803,14 @@ userdel	q4::inwork; 25010,4807 25171,4757 25228,4745 25248,4752 25369,4790 25434
        undef,
        undef,
        {
-         'data' => '#: note: gesehen 2016-05-11 gegen 9 Uhr
+         'data' => '#: note: verschlossen 2016-05-11 gegen 9 Uhr
 #: note: offen am 2016-06-16 gegen 9:30 Uhr
 #: note: offen am 2016-07-01 gegen 18:15 Uhr
+#: note: geschlossen am 2016-07-11 gegen 18:00 Uhr
 userdel	2::temp 8362,13466 8369,13465 8377,13463
-#: note: geschlossen am 2016-06-16 gegen 9:30 Uhr
-#: note: geschlossen am 2016-07-01 gegen 18:15 Uhr
+#: note: verschlossen am 2016-06-16 gegen 9:30 Uhr
+#: note: verschlossen am 2016-07-01 gegen 18:15 Uhr
+#: note: verschlossen am 2016-07-11 gegen 18:00 Uhr
 userdel	2::temp 8371,13399 8363,13402 8356,13404
 ',
          'from' => undef,
@@ -4006,7 +3990,8 @@ userdel	q4::inwork; 5866,10492 6025,10746
          'until' => 1471298399
        },
        {
-         'data' => 'userdel	q4::inwork 19676,1577 19704,1621 19766,1796
+         'data' => '#: source_id: 2147340278
+userdel	q4::inwork 19676,1577 19704,1621 19766,1796
 ',
          'from' => 1468101600,
          'id' => 2807,

@@ -670,7 +670,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 8016,15085
 	X 8919,16154
 # REMOVED --- #: next_check_id: AMNORDHAFEN-2016 --- #: XXX bleibt diese Ampel noch bestehen? --- #: osm_watch: node id="3777205508" version="1" --- #: last_checked: 2016-03-26 --- #: check_frequency: 60d
-	X 7527,14684
+# REMOVED (existiert nicht mehr) --- X 7527,14684
 	X -3251,14741
 	X -3295,14777
 	X -3255,14685
@@ -1178,6 +1178,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 13292,13931
 	X 13100,13803
 #: off: Sunday (seen 2013-11-17 15:30)
+#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6605
+#: note: neue Betriebszeiten: montags bis sonntags, jeweils von 6:00 bis 22:00 Uhr
 	F 15080,13117
 	X 15420,12178
 # REMOVED (permanent abgeschaltet) ---	F 10720,11805
@@ -1470,7 +1472,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: für Radfahrer von Ost nach West mit Anforderung 
 	X 8277,21257
 	X 5533,19811
-	X 10063,20493
+	X 10066,20494
 	X 10257,19542
 	X 10018,19429
 	X 9859,19283
@@ -2584,7 +2586,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 8514,17634
 #: note: Anforderungsampel
 	F 8631,18441
-	X 10127,19992
+	X 10132,19993
 # REMOVED (existiert nicht mehr) --- F 5628,14063
 #: next_check_id: ZEUGHAUS-2014
 #: XXX temporäre Ampel (wegen Arbeiten an der Staatsoper und an der U-Bahn)
@@ -2746,7 +2748,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: SONNENALLEE-2014 vvv
 #: osm_watch: way id="260062339" version="7"
-#: last_checked: 2016-06-12 vvv
+#: last_checked: 2016-07-11 vvv
 #: check_frequency: 90d vvv
 #: note: Radfahrer in Richtung Südosten müssen die Seite wechseln, hier Anforderungsampel
 	X::inwork 14174,7505
@@ -2850,7 +2852,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: Anforderungsampel
 	F 10461,3757
 #: XXX Baustellenampel
-#: last_checked: 2016-07-05
+#: last_checked: 2016-07-11
 #: check_frequency: 60d
 	F::inwork 8853,13539
 #: next_check_id: HEERSTR-2016
@@ -3002,7 +3004,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -12655,-1714
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
 #: next_check_id: KIEFHOLZ-2015 vvv
-#: last_checked: 2016-06-26 vvv
+#: last_checked: 2016-07-11 vvv
 #: check_frequency: 90d vvv
 	X::inwork 14151,8967
 	X::inwork 14363,8738

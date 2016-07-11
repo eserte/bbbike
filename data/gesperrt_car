@@ -434,8 +434,8 @@ Claire-Waldoff-Str. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 913
 Friedrichstr. -> Johannisstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9246,13235 9255,13164 9385,13174
 Johannisstr. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9385,13174 9255,13164 9262,13111
 Friedrichstr. (Straßenbahn)	3nocross::ignrte 9262,13111 9269,13060 9279,12953
-Friedrichstr. -> Ziegelstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9262,13111 9269,13060 9413,13071
-Ziegelstr. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9413,13071 9269,13060 9279,12953
+Friedrichstr. -> Ziegelstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9262,13111 9269,13060 9401,13072
+Ziegelstr. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9401,13072 9269,13060 9279,12953
 Oranienburger Str. (Straßenbahnhaltestelle)	3nocross::ignrte 9225,13389 9293,13366 9415,13315
 Oranienburger Str. -> Linienstr.: Oranienburger Str. (Straßenbahnhaltestelle)	3::igndisp 9225,13389 9293,13366 9312,13388
 Linienstr. -> Oranienburger Str.: Oranienburger Str. (Straßenbahnhaltestelle)	3::igndisp 9312,13388 9293,13366 9415,13315
@@ -1194,14 +1194,17 @@ Lietzenburger Str.	3nocross::ignrte 5047,10381 5196,10398 5329,10422
 Lietzenburger Str. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5329,10422 5196,10398 5192,10234
 Fasanenstr. -> Lietzenburger Str.: Lietzenburger Str.	3::igndisp 5215,10711 5196,10398 5329,10422
 Fasanenstr. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5215,10711 5196,10398 5192,10234
+Sybelstr.	1 3981,10590 3883,10585
+Giesebrechtstr.	1 3912,10699 3997,10607 4017,10585 4030,10575 4153,10453 4157,10418
+Clausewitzstr.	1 3971,10381 4007,10559
 Straßenbahntrasse	3nocross::ignrte 12228,14404 12188,14350 12177,14335 12077,14186
 Greifswalder Str. -> Pasteurstr.: Straßenbahntrasse	3::igndisp 12228,14404 12188,14350 12335,14246
 Pasteurstr. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 12335,14246 12188,14350 12177,14335
 Greifswalder Str. -> Christburger Str.: Straßenbahntrasse	3::igndisp 12077,14186 12177,14335 11912,14486
 Christburger Str. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 11912,14486 12177,14335 12188,14350
-Sybelstr.	1 3981,10590 3883,10585
-Giesebrechtstr.	1 3912,10699 3997,10607 4017,10585 4030,10575 4153,10453 4157,10418
-Clausewitzstr.	1 3971,10381 4007,10559
+Straßenbahntrasse	3nocross::ignrte 11706,13635 11820,13804 11946,13993
+Heinrich-Roller-Str. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 11607,13928 11820,13804 11946,13993
+Greifswalder Str. -> Heinrich-Roller-Str.: Straßenbahntrasse	3::igndisp 11706,13635 11820,13804 11607,13928
 Bayerische Str.	1 4297,10008 4352,10260
 Ferdinand-Schultze-Str - Landsberger Allee	3 17791,14639 17848,14523 18057,14549
 Michelangelostr./Kniprodestr.	3 13854,15129 13816,15137 13823,15111
@@ -1671,6 +1674,13 @@ Fasanenstr.	1 5196,10398 5215,10711 5230,10919 5236,10994 5258,11285
 Straßenbahntrasse	3nocross::ignrte 12030,15968 12075,16144 12090,16199
 Prenzlauer Allee -> Krügerstr.: Straßenbahntrasse	3::igndisp 12030,15968 12075,16144 12013,16120
 Krügerstr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 12013,16120 12075,16144 12090,16199
+Straßenbahntrasse	3nocross::ignrte 11471,14143 11498,14234 11572,14452
+Prenzlauer Allee -> Knaackstr.: Straßenbahntrasse	3::igndisp 11471,14143 11498,14234 11418,14290
+Prenzlauer Allee -> Immanuelkirchstr.: Straßenbahntrasse	3::igndisp 11572,14452 11498,14234 11713,14118
+Knaackstr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 11418,14290 11498,14234 11572,14452
+Knaackstr. -> Immanuelkirchstr.: Straßenbahntrasse	3::igndisp 11418,14290 11498,14234 11713,14118
+Immanuelkirchstr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 11713,14118 11498,14234 11471,14143
+Immanuelkirchstr. -> Knaackstr.: Straßenbahntrasse	3::igndisp 11713,14118 11498,14234 11418,14290
 B2 - Piesporter Str.: Linksabbiegen verboten	3 15569,18492 15181,18137 15239,18063
 Ruschestr. - Schulze-Boysen-Str.: Geradeausfahren verboten	3 15879,12131 15863,11992 15836,11840
 Bizetstr. - Indira-Gandhi-Str.: nur Rechtsabbiegen erlaubt	3 14293,16073 14552,16171 14522,16260
@@ -1814,7 +1824,7 @@ Mittelstreifen	3nocross::ignrte 18541,4125 18374,4307 18239,4453
 Gerhard-Sedlmayr-Str. -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18228,4168 18374,4307 18239,4453
 Groß-Berliner Damm -> Gerhard-Sedlmayr-Str.: Mittelstreifen	3::igndisp 18541,4125 18374,4307 18228,4168
 Fahlandgasse	1 7675,17430 7675,17475 7675,17538
-Mittelstreifen	3nocross::ignrte 7818,13993 7866,13916 7973,13743
-Heidestr. -> Planstr.n 2.1, 2.2, 2.3: Mittelstreifen	3::igndisp 7818,13993 7866,13916 7962,13977
-Planstr.n 2.1, 2.2, 2.3 -> Heidestr.: Mittelstreifen	3::igndisp 7962,13977 7866,13916 7973,13743
+Mittelstreifen	3nocross::ignrte 7818,13993 7866,13916 7904,13854 7973,13743
+Heidestr. -> Lydia-Rabinowitsch-Kempner-Str.; Planstr.n 2.1, 2.2, 2.3: Mittelstreifen	3::igndisp 7818,13993 7866,13916 7962,13977
+Lydia-Rabinowitsch-Kempner-Str.; Planstr.n 2.1, 2.2, 2.3 -> Heidestr.: Mittelstreifen	3::igndisp 7962,13977 7866,13916 7904,13854
 Mittelstreifen	3nocross::ignrte 7651,14260 7697,14187 7732,14131

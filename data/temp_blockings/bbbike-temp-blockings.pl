@@ -9335,7 +9335,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006194',
        data  => <<EOF,
-userdel	1::inwork 10138,20840 10119,20731 10115,20714 10063,20493
+userdel	1::inwork 10138,20840 10118,20731 10115,20714 10088,20570 10066,20494
 EOF
      },
      { from  => 1185833817, # 2007-07-31 00:16
@@ -17716,7 +17716,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_015565',
        data  => <<EOF,
-userdel	2::temp 9269,13060 9413,13071 9559,13087
+userdel	2::temp 9269,13060 9401,13072 9559,13087
 EOF
      },
      { from  => 1272607309, # 2010-04-30 08:01
@@ -24363,7 +24363,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_025047',
        data  => <<EOF,
-	q4::inwork; 10127,19992 10167,19797 10195,19703 10224,19628 10257,19542
+	q4::inwork; 10132,19993 10167,19797 10195,19703 10224,19628 10257,19542
 EOF
      },
      { from  => undef,
@@ -25052,12 +25052,14 @@ EOF
        recurring => 1,
        type  => 'gesperrt',
        data  => <<EOF,
-#: note: gesehen 2016-05-11 gegen 9 Uhr
+#: note: verschlossen 2016-05-11 gegen 9 Uhr
 #: note: offen am 2016-06-16 gegen 9:30 Uhr
 #: note: offen am 2016-07-01 gegen 18:15 Uhr
+#: note: geschlossen am 2016-07-11 gegen 18:00 Uhr
 userdel	2::temp 8362,13466 8369,13465 8377,13463
-#: note: geschlossen am 2016-06-16 gegen 9:30 Uhr
-#: note: geschlossen am 2016-07-01 gegen 18:15 Uhr
+#: note: verschlossen am 2016-06-16 gegen 9:30 Uhr
+#: note: verschlossen am 2016-07-01 gegen 18:15 Uhr
+#: note: verschlossen am 2016-07-11 gegen 18:00 Uhr
 userdel	2::temp 8371,13399 8363,13402 8356,13404
 EOF
      },
@@ -25286,6 +25288,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.493537.php',
        data  => <<EOF,
+#: source_id: 2147340278
 userdel	q4::inwork 19676,1577 19704,1621 19766,1796
 EOF
      },
