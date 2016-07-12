@@ -2306,15 +2306,14 @@ sub edit_temp_blockings {
 	$click_info = $o->click_info;
     }
 
-    open TEMP_BLOCKINGS, $click_info->basefile
+    open my $TEMP_BLOCKINGS, $click_info->basefile
 	or main::status_message("Can't open " . $click_info->basefile . ": $!", "die");
     my $line = $main::temp_blocking_inx_mapping{ $click_info->line };
     my $record = 0;
     my $linenumber = 1;
-    while(<TEMP_BLOCKINGS>) {
+    while(<$TEMP_BLOCKINGS>) {
 	if (m<^\s*\{>) {
 	    if ($record == $line) {
-		close TEMP_BLOCKINGS;
 		start_editor($click_info->basefile, $linenumber);
 		return;
 	    }
@@ -2322,7 +2321,6 @@ sub edit_temp_blockings {
 	}
 	$linenumber++;
     }
-    close TEMP_BLOCKINGS;
     main::status_message("Can't find record number " . $click_info->line . " in " . $click_info->basefile, "die");
 }
 
