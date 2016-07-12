@@ -2312,7 +2312,7 @@ sub edit_temp_blockings {
     my $record = 0;
     my $linenumber = 1;
     while(<$TEMP_BLOCKINGS>) {
-	if (m<^\s*\{>) {
+	if (m<^\s*\{> || m<^\s*undef,>) {
 	    if ($record == $line) {
 		start_editor($click_info->basefile, $linenumber);
 		return;
