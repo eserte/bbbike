@@ -599,6 +599,19 @@ May be used for check purposes. Currently only utilized in
 F<ortsschilder-orig>, where the linked name is to be used to do checks
 against F<orte-orig>/F<orte2-orig>.
 
+=item C<source_file: I<filename>>
+
+For generated files: the generated lines originate from the specified
+I<filename>. This is usually specified as a non-block directive;
+another C<source_file> directive would switch to a different source
+file.
+
+=item C<source_line: I<number>>
+
+For generated files: the generated lines originate at the specified
+line number. This directive has to be specified together with
+L</source_file>.
+
 =back
 
 =head3 Obsolete and to-be-decided directives
