@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2002,2003,2004,2009,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2002,2003,2004,2009,2015,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -2149,10 +2149,35 @@ sub click {
 			       # XXX ufff... this is also in  BBBikeAdvanced::find_canvas_item_file for the F9 key :-(
 			       my $count = 0;
 			       my $rec_count = 0;
+			       my $source_file;
+			       my $source_line;
 			       foreach (@rec) {
-				   if (!/^\#/) {
+				   if (m{^#:\s*source_(line|file):?\s*(.*)}) {
+				       my($type, $val) = ($1, $2);
+				       if ($type eq 'line') {
+					   $source_line = $val;
+				       } else {
+					   $source_file = $val;
+				       }
+				   } elsif (!/^\#/) {
 				       if ($count == $click_info->line) {
-					   start_editor($file, $rec_count+1);
+					   if (defined $source_file && defined $source_line) {
+					       my $abs_source_file;
+					       if ($source_file !~ m{^/}) {
+						   for (@Strassen::datadirs) {
+						       if (-f "$_/$source_file") {
+							   $abs_source_file = "$_/$source_file";
+							   last;
+						       }
+						   }
+					       }
+					       if (!defined $abs_source_file) {
+						   main::status_message("Cannot find '$source_file' in @Strassen::datadirs", 'die');
+					       }
+					       start_editor($abs_source_file, $source_line);
+					   } else {
+					       start_editor($file, $rec_count+1);
+					   }
 					   last SEARCH;
 				       }
 				       $count++;
