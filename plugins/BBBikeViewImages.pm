@@ -329,11 +329,15 @@ sub button {
 	my($date) = "@tags" =~ $iso_date_rx;
 	[$date, $_];
     } grep {
-	my(@tags) = $c->gettags($_);
-	# Could be tag inx 1 or 2
-	grep { /^Image(URL)?:/ } @tags;
-	#my $name = $tags[1];
-	#$name =~ /^Image:/;
+	if ($c->type($_) eq 'image') {
+	    my(@tags) = $c->gettags($_);
+	    # Could be tag inx 1 or 2
+	    grep { /^Image(URL)?:/ } @tags;
+	    #my $name = $tags[1];
+	    #$name =~ /^Image:/;
+	} else {
+	    0;
+	}
     } $c->find("overlapping",
 	       $img_x-10, $img_y-10,
 	       $img_x+10, $img_y+10);
