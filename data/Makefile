@@ -966,6 +966,7 @@ ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd:	\
 	    --outdoor-mode \
 	    --fragezeichen-mode fragezeichen-orig \
 	    --no-fragezeichen-mode \
+	    --emit-source-directives \
 	    ${SOURCE_TARGETS_SOURCES:S|fragezeichen-orig||} \
 	    ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd \
 		> ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~

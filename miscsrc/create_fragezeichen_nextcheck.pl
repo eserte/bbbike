@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012,2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -30,6 +30,7 @@ my $today = strftime "%Y-%m-%d", localtime;
 my $do_preamble;
 my $coloring;
 my $verbose;
+my $emit_source_directives;
 
 my @actions;
 
@@ -38,6 +39,7 @@ GetOptions(
 	   "verbose" => \$verbose,
 	   "preamble" => \$do_preamble,
 	   "coloring=s" => \$coloring,
+	   "emit-source-directives" => \$emit_source_directives,
 	   "fragezeichen-mode"    => sub { push @actions, sub { $fragezeichen_mode = 1 } },
 	   "no-fragezeichen-mode" => sub { push @actions, sub { $fragezeichen_mode = 0 } },
 	   "indoor-mode"          => sub { push @actions, sub { $door_mode = 'in' } },
@@ -104,9 +106,11 @@ sub handle_file {
     if ($verbose) { print STDERR "$file... " }
     my $s = StrassenNextCheck->new_stream($file);
 
+    my $emitted_file;
+
     $s->read_stream_nextcheck_records
 	(sub {
-	     my($r, $dir) = @_;
+	     my($r, $dir, $linenumber) = @_;
 
 	     my $check_now; # undef: not given, 0: given and not now, 1: given and now
 	     my $add_name;
@@ -186,6 +190,13 @@ sub handle_file {
 		 }
 	     }
 
+	     if ($emit_source_directives) {
+		 if (!$emitted_file) {
+		     print "#: source_file: $file\n";
+		     $emitted_file = 1;
+		 }
+		 print "#: source_line: $linenumber\n";
+	     }
 	     # XXX better!!!
 	     $add_name =~ s{[\t\r\n]}{ }g if defined $add_name;
 	     print $r->[Strassen::NAME] . (defined $add_name ? (length $r->[Strassen::NAME] ? ' ' : '') . $add_name : '') . "\t$cat " . join(" ", @{ $r->[Strassen::COORDS] }) . "\n";

@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2013,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -33,12 +33,12 @@ sub read_stream_nextcheck_records {
 
     $self->read_stream
 	(sub {
-	     my($r, $dir) = @_;
+	     my($r, $dir, $linenumber) = @_;
 
 	     $self->process_nextcheck_record($r, $dir, check_frequency_days => $check_frequency_days);
 
 	     if ($passthru_without_nextcheck || ($dir->{_nextcheck_date} && $dir->{_nextcheck_date}[0])) {
-		 return $cb->($r, $dir);
+		 return $cb->($r, $dir, $linenumber);
 	     }
 	 }, %args
 	);
