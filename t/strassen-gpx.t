@@ -27,6 +27,10 @@ BEGIN {
     }
 }
 
+if (!eval { require Encode; 1 }) {
+    diag "Encode is not available, some failures are expected";
+}
+
 use BBBikeTest qw(gpxlint_string eq_or_diff);
 
 use Route;
@@ -38,7 +42,7 @@ sub xpath_checks ($$&);
 my $v;
 my @variants = ("XML::LibXML", "XML::Twig");
 my $new_strassen_gpx_tests = 5;
-my $tests_per_variant = 151 + $new_strassen_gpx_tests;
+my $tests_per_variant = 159 + $new_strassen_gpx_tests;
 my $do_long_tests = !!$ENV{BBBIKE_LONG_TESTS};
 my $bbdfile;
 my $bbdfile_with_lines = "comments_scenic";
@@ -331,11 +335,7 @@ EOF
 #: encoding: utf-8
 foo\x{20ac}\x{0107}	X 1,1 2,2
 EOF
-	    if (eval { require Encode; 1 }) {
-		$data = Encode::encode("utf-8", $data);
-	    } else {
-		diag "Following failures are expected, because Encode is not available";
-	    }
+	    $data = Encode::encode("utf-8", $data);
 	    my $s0 = Strassen->new_from_data_string($data);
 	    my $s = Strassen::GPX->new($s0);
 	    isa_ok($s, "Strassen::GPX");
@@ -496,25 +496,29 @@ EOF
 		};
 	}
 
-	# Name from global directive -title
-	{
+	# Name from global directive -title (latin1 and utf8)
+	for my $utf8 (0, 1) {
 	    my $route_data = <<EOF;
-#: title: Global directive title
+#: title: Global directive title with הצü
 #:
 Start	X 100,100
 Goal	X 300,300
 EOF
+	    if ($utf8) {
+		$route_data = "#: encoding: utf-8\n" . Encode::encode("utf-8", $route_data);
+	    }
+
 	    my $s0 = Strassen->new_from_data_string($route_data);
 	    my $s = Strassen::GPX->new($s0);
 	    {
 		my $xml_res = $s->Strassen::GPX::bbd2gpx(-as => 'route');
-		gpxlint_string($xml_res, 'xmllint for bbd2gpx on bbd with global directive');
+		gpxlint_string($xml_res, "xmllint for bbd2gpx on bbd with global directive, utf8=$utf8");
 		xpath_checks $xml_res, 2,
 		    sub {
 			my $doc = shift;
 			my @nodes = $doc->findnodes('//*[local-name(.)="rte"]/*[local-name(.)="name"]');
 			is scalar(@nodes), 1, 'exactly one rte/name node';
-			is $nodes[0]->textContent, 'Global directive title', 'route name from global directive in bbd file';
+			is $nodes[0]->textContent, 'Global directive title with הצü', 'route name from global directive in bbd file';
 		    };
 	    }
 	    {

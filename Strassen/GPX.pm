@@ -65,6 +65,8 @@ my @COMMON_META_ATTRS = qw(name cmt desc src link number type); # common for rte
 
 use constant TRIP_EXT_NS => 'http://www.garmin.com/xmlschemas/TripExtensions/v1';
 
+use constant HAS_UTF8_UPGRADE => $] >= 5.008;
+
 sub new {
     my($class, $filename_or_object, %args) = @_;
     if (UNIVERSAL::isa($filename_or_object, "Strassen")) {
@@ -346,7 +348,6 @@ sub _bbd2gpx_libxml {
     if (!$has_encode) {
 	warn "WARN: No Encode.pm module available, non-ascii characters may be broken...\n";
     }
-    my $has_utf8_upgrade = $] >= 5.008;
 
 
     $self->init;
@@ -356,7 +357,7 @@ sub _bbd2gpx_libxml {
 	my $r = $self->next;
 	last if !@{ $r->[Strassen::COORDS] };
 	my $name = $r->[Strassen::NAME];
-	if ($has_utf8_upgrade) {
+	if (HAS_UTF8_UPGRADE) {
 	    utf8::upgrade($name); # This smells like an XML::LibXML bug
 	}
 	if (@{ $r->[Strassen::COORDS] } == 1) {
@@ -635,7 +636,11 @@ sub _add_meta_attrs_libxml {
 		$linknode->appendTextChild("type", $meta->{link}{type}) if defined $meta->{link}{type};
 		$linknode->setAttribute("href", $meta->{link}{href});
 	    } else {
-		$node->appendTextChild($attr, $meta->{$attr});
+		my $val = $meta->{$attr};
+		if (HAS_UTF8_UPGRADE && defined $val) {
+		    utf8::upgrade($val); # This smells like an XML::LibXML bug
+		}
+		$node->appendTextChild($attr, $val);
 	    }
 	}
     }
