@@ -5,7 +5,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2016 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -4594,10 +4594,13 @@ sub display_route {
 		);
 	    http_header(@headers);
 	    my @data;
-	    for my $pt (@out_route) {
-		push @data, $pt->{Strname} . "\tX " . $pt->{Coord} . "\n";
-	    }
-	    my $s = Strassen->new_from_data(@data);
+	    my $gps_routenamelength = 36; # good for modern devices XXX should this be configurable?
+	    my $gps_routename = $zielname . ' ' . ($lang eq 'en' ? 'from' : 'von') . ' ' . $startname; # XXX Msg
+	    $gps_routename = substr($gps_routename, 0, $gps_routenamelength-3).'...' if length $gps_routename > $gps_routenamelength;
+	    my $s = Strassen->new_from_data_string(
+						   "#: title: $gps_routename\n\n" .
+						   join('', map { $_->{Strname} . "\tX " . $_->{Coord} . "\n" } @out_route)
+						  );
 	    my $s_gpx = Strassen::GPX->new($s);
 	    $s_gpx->{"GlobalDirectives"}->{"map"}[0] = "polar" if $data_is_wgs84;
 	    my $gpx_output = $s_gpx->bbd2gpx(-as => "route");
@@ -8130,7 +8133,7 @@ Slaven Rezic <slaven@rezic.de>
 
 =head1 COPYRIGHT
 
-Copyright (C) 1998-2015 Slaven Rezic. All rights reserved.
+Copyright (C) 1998-2016 Slaven Rezic. All rights reserved.
 This is free software; you can redistribute it and/or modify it under the
 terms of the GNU General Public License, see the file COPYING.
 

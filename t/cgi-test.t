@@ -52,7 +52,7 @@ my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
 my $yaml_syck_tests = 5;
 #plan 'no_plan';
-plan tests => 142 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
+plan tests => 147 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
 
 if (!GetOptions(get_std_opts("cgidir", "simulate-skips"),
 	       )) {
@@ -382,6 +382,19 @@ SKIP: {
 	xmllint_string($content, 'Well-formedness of XML output');
 	validate_bbbikecgires_xml_string($content, 'Validation of XML output');
     }
+
+    {
+	my $p = XML::LibXML->new;
+	my $resp = bbbike_cgi_search +{%route_params, output_as => 'gpx-route'}, 'GPX route';
+	my $content = $resp->decoded_content(charset => "none");
+	my $doc = $p->parse_string($content);
+	$doc->documentElement->setNamespaceDeclURI(undef, undef);
+	my $routename = $doc->findvalue('/gpx/rte/name');
+	is($routename, 'Methfesselstr. von Dudenstr.', 'expected route name');
+	my $startname = $doc->findvalue('/gpx/rte/rtept[1]/name');
+	is($startname, 'Dudenstr.', 'Expected startname in right encoding');
+	gpxlint_string($content);
+    }
 }
 
 SKIP: {
@@ -410,6 +423,8 @@ SKIP: {
 	my $content = $resp->decoded_content(charset => "none");
 	my $doc = $p->parse_string($content);
 	$doc->documentElement->setNamespaceDeclURI(undef, undef);
+	my $routename = $doc->findvalue('/gpx/rte/name');
+	is($routename, 'Wilhelmshöhe von Wilhelmshöhe', 'expected route name');
 	my $startname = $doc->findvalue('/gpx/rte/rtept[1]/name');
 	is($startname, 'Wilhelmshöhe', 'Expected startname in right encoding');
 	gpxlint_string($content);
