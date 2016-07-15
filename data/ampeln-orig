@@ -2748,7 +2748,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: SONNENALLEE-2014 vvv
 #: osm_watch: way id="260062339" version="7"
-#: last_checked: 2016-07-11 vvv
+#: last_checked: 2016-07-13 vvv
 #: check_frequency: 90d vvv
 #: note: Radfahrer in Richtung Südosten müssen die Seite wechseln, hier Anforderungsampel
 	X::inwork 14174,7505
@@ -2867,6 +2867,11 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: last_checked: 2016-07-04
 #: check_frequency: 120d
 	F::inwork 10038,15418
+# 
+#: XXX wie wird die Situation nach dem Abbau der Baustellenampel sein?
+#: source_id: 2147340304
+#: last_checked: 2016-11-15
+	X::inwork 12442,20805
 # 
 ################################################################################
 #: note: Potsdam vvv
