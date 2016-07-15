@@ -131,7 +131,7 @@ WWW_GROUP?=	www-data
 TODAY!=		date +%Y%m%d
 
 OSNAME!=	uname
-.if ${OSNAME} == "linux"
+.if ${OSNAME} == "Linux"
 OS_LINUX=	yes
 .else
 OS_LINUX=
