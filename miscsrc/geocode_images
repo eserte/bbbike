@@ -228,6 +228,7 @@ sub get_image_location {
 		my $lat = Karte::Polar::dms2ddd($lat_deg, $lat_min, $lat_sec);
 		my $lon = Karte::Polar::dms2ddd($lon_deg, $lon_min, $lon_sec);
 		my $iso_date = $exif->{DateTimeOriginal} || $exif->{CreateDate}; # XXX GPSDateTime is nonsense in the N95
+		$iso_date =~ s{^(\d+):(\d+):(\d+)}{$1-$2-$3};
 		$iso_date =~ s{ }{T}; # -> iso date sep
 		my $ret = { Longitude => $lon,
 			    Latitude  => $lat,

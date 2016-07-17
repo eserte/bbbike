@@ -111,10 +111,7 @@ if ($debug) {
 	    my $relabspathqr = $check_relpath ? qr{} : qr{.+/};
 
 	    like $bbd_data, qr{^Image: "$relabspathqr\Qi/test-without-gpspos.jpg" (2016-01-02T13:34:45) (delta=0:00) (51/13)	IMG:\E$relabspathqr\Qt/\E.*\Q.jpg -13609,-156840\E$}m, 'bbd line generated from tracks';
-	    {
-		local $TODO = "YYYY-MM-DD vs. YYYY:MM:DD";
-		like $bbd_data, qr{^Image: "$relabspathqr\Qi/test-with-gpspos.jpg" (2016-01-01T13:34:45) (delta=0:00) (53.5/13.5)	IMG:\E$relabspathqr\Qt/\E.*\Q.jpg 14665,121811\E$}m, 'bbd line generated from gps info in photo';
-	    }
+	    like $bbd_data, qr{^Image: "$relabspathqr\Qi/test-with-gpspos.jpg" (2016-01-01T13:34:45) (delta=0:00) (53.5/13.5)	IMG:\E$relabspathqr\Qt/\E.*\Q.jpg 14665,121811\E$}m, 'bbd line generated from gps info in photo';
 	    like $bbd_data, qr{^Image: "$relabspathqr\Qi/n7650.jpg" (2003-09-24T12:38:55) (delta=0:00) (51.2/13.2)	IMG:\E$relabspathqr\Qt/\E.*\Q.jpg -471,-134354\E$}m, 'bbd line generated for ancient N7650';
 	    like $bbd_data, qr{^# Image: "$relabspathqr\Qi/image-without-date.jpg" (not geocodable)}m, 'not geocodable (no date)';
 	    like $bbd_data, qr{^# Image: "$relabspathqr\Qi/unmappable-image.jpg" (not geocodable)}m, 'not geocodable (no matching tracks)';
@@ -145,10 +142,7 @@ if ($debug) {
 
 	my $new_bbd_data = do { open my $fh, "$rootdir/out1.bbd" or die $!; local $/; <$fh> };
 	$check_bbd_data_contents->($new_bbd_data);
-	{
-	    local $TODO = "YYYY-MM-DD vs. YYYY:MM:DD";
-	    like $new_bbd_data, qr{^Image: ".*\Q/i/newtest-with-gpspos.jpg" (2016-01-03T13:34:45) (delta=0:00) (52.5/12.5)	IMG:\E.*/t/.*\Q.jpg -51027,9379\E$}m, 'bbd line generated with -update';
-	}
+	like $new_bbd_data, qr{^Image: ".*\Q/i/newtest-with-gpspos.jpg" (2016-01-03T13:34:45) (delta=0:00) (52.5/12.5)	IMG:\E.*/t/.*\Q.jpg -51027,9379\E$}m, 'bbd line generated with -update';
     }
 
     ## Test -relativepaths option
