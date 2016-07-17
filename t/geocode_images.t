@@ -10,6 +10,7 @@ use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 
 use Digest::MD5 qw();
+use File::Basename 'basename';
 use File::Glob 'bsd_glob';
 use File::Temp 'tempdir';
 use Getopt::Long;
@@ -21,7 +22,7 @@ BEGIN {
     }
 }
 
-use BBBikeUtil 'is_in_path';
+use BBBikeUtil 'is_in_path', 'save_pwd2';
 
 if (!eval { require Image::ExifTool; 1 }) {
     plan skip_all => q{Image::ExifTool required for geocode_images and for generating test images};
@@ -64,7 +65,7 @@ if ($debug) {
 }
 
 {
-    my $rootdir = tempdir("geocode_images_test_XXXXXXXX", CLEANUP => 1, TMPDIR => 1);
+    my $rootdir = tempdir("geocode_images_test_1_XXXXXXXX", CLEANUP => 1, TMPDIR => 1);
     mkdir "$rootdir/t"; # thumbnails
     mkdir "$rootdir/i"; # images
     mkdir "$rootdir/g"; # gpstracks
@@ -120,7 +121,7 @@ if ($debug) {
 
 	{
 	    my @thumbnails = bsd_glob("$rootdir/t/*");
-	    is scalar(@thumbnails), 3, 'two thumbnails generated';
+	    is scalar(@thumbnails), 3, 'expected number of thumbnails generated';
 	    for my $thumbnail (@thumbnails) {
 		my $exiftool = Image::ExifTool->new;
 		$exiftool->ExtractInfo($thumbnail);
@@ -157,7 +158,69 @@ if ($debug) {
 	my $bbd_data = do { open my $fh, "$rootdir/out-rel.bbd" or die $!; local $/; <$fh> };
 	$check_bbd_data_contents->($bbd_data, check_relpath => 1);
     }
+}
 
+my $jpegtran_available = is_in_path('jpegtran');
+if (!$jpegtran_available) {
+    diag "jpegtran not available, thumbnails won't be rotated";
+}
+
+for my $converter (qw(Image::GD::Thumbnail ImageMagick ImageMagick+exiftool)) {
+ SKIP: {
+	skip "Image::GD::Thumbnail not available", 1
+	    if $converter eq 'Image::GD::Thumbnail' && !eval { require Image::GD::Thumbnail; 1 };
+	skip "exiftool not available", 1
+	    if $converter eq 'ImageMagick+exiftool' && !is_in_path('exiftool');
+
+	my $rootdir = tempdir("geocode_images_test_2_XXXXXXXX", CLEANUP => 1, TMPDIR => 1);
+	mkdir "$rootdir/t";
+	mkdir "$rootdir/i";
+
+	generate_photo "$rootdir/i/normal-orient.jpg", ['Orientation#' => 1, 'GPSLongitude#' => '13.5', 'GPSLongitudeRef' => 'E', 'GPSLatitude#' => '53.5', 'GPSLatitudeRef' => 'N', DateTimeOriginal => '2016:01:01 13:34:45'];
+	generate_photo "$rootdir/i/90deg-cw.jpg", ['Orientation#' => 6, 'GPSLongitude#' => '13.5', 'GPSLongitudeRef' => 'E', 'GPSLatitude#' => '53.5', 'GPSLatitudeRef' => 'N', DateTimeOriginal => '2016:01:01 13:34:45'];
+	generate_photo "$rootdir/i/180deg.jpg", ['Orientation#' => 3, 'GPSLongitude#' => '13.5', 'GPSLongitudeRef' => 'E', 'GPSLatitude#' => '53.5', 'GPSLatitudeRef' => 'N', DateTimeOriginal => '2016:01:01 13:34:45'];
+	generate_photo "$rootdir/i/270deg-cw.jpg", ['Orientation#' => 8, 'GPSLongitude#' => '13.5', 'GPSLongitudeRef' => 'E', 'GPSLatitude#' => '53.5', 'GPSLatitudeRef' => 'N', DateTimeOriginal => '2016:01:01 13:34:45'];
+
+	my @cmd = (@geocode_images, '-nogpsdatadir', '-converter', $converter, '-rel', '-thumbnaildir', "$rootdir/t", "-o", "$rootdir/out1.bbd", "$rootdir/i");
+	my $success = run [@cmd], '2>', \my $stderr;
+	ok $success, "Running '@cmd'";
+	if ($debug) {
+	    diag $stderr;
+	}
+
+	my %thumbnail_to_image;
+	{
+	    open my $fh, "$rootdir/out1.bbd" or die $!;
+	    while(<$fh>) {
+		if (my($image, $thumbnail) = $_ =~ m{Image: "(.*?)".*IMG:(\S+)}) {
+		    $thumbnail_to_image{$2} = $1;
+		} else {
+		    warn "Unexpected: cannot parse $_";
+		}
+	    }
+	}
+
+	{
+	    my $save_pwd2 = save_pwd2;
+	    chdir $rootdir;
+	    my @thumbnails = bsd_glob("t/*");
+	    is scalar(@thumbnails), 4, 'four thumbnails generated';
+	    local $TODO; $TODO = "rotation not done with Image::GD::Thumbnail" if $converter eq 'Image::GD::Thumbnail';
+	    for my $thumbnail (@thumbnails) {
+		my $exiftool = Image::ExifTool->new;
+		$exiftool->ExtractInfo($thumbnail);
+		if      (!$jpegtran_available || $thumbnail_to_image{$thumbnail} =~ m{(normal-orient.jpg|180deg.jpg)}) {
+		    is $exiftool->GetValue('ImageWidth'), 50, "expected width of $thumbnail";
+		    is $exiftool->GetValue('ImageHeight'), 33, "expected height of $thumbnail";
+		} elsif ($thumbnail_to_image{$thumbnail} =~ m{(90deg-cw.jpg|270deg-cw.jpg)}) {
+		    is $exiftool->GetValue('ImageWidth'), 33, "expected width of $thumbnail";
+		    is $exiftool->GetValue('ImageHeight'), 50, "expected height of $thumbnail";
+		} else {
+		    die "Unexpected thumbnail $thumbnail ($thumbnail_to_image{$thumbnail}).\nMapping: " . join("\n", explain(\%thumbnail_to_image)) . "\nThumbnails: " . join("\n", explain(\@thumbnails));
+		}
+	    }
+	}
+    }
 }
 
 if ($keep) {
