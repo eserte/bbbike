@@ -703,24 +703,16 @@ sub maybe_correct_orientation {
 
 sub _run_jpegtran {
     my($args, $file) = @_;
-    my @cmd = ("jpegtran", @$args, $file);
-    warn "Running @cmd...\n" if $v;
-    open my $ifh, "-|", @cmd
-	or die "While running @cmd: $!";
-    binmode $ifh;
     my $dest = "$file.$$";
-    open my $ofh, ">", $dest
-	or die "While writing $dest: $!";
-    binmode $ofh;
-    local $/ = \4096;
-    while(<$ifh>) {
-	print $ofh $_;
+    my @cmd = ("jpegtran", @$args, '-outfile', $dest, $file);
+    warn "Running @cmd...\n" if $v;
+    system @cmd;
+    if ($? != 0) {
+	die "Running '@cmd' failed";
     }
-    close $ofh
-	or die "While writing to $dest: $!";
-    close $ifh
-	or die "While running @cmd: $!";
-
+    if (-z $dest) {
+	die "Destination file $dest is empty";
+    }
     $dest;
 }
 
