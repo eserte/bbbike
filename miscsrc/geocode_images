@@ -140,7 +140,9 @@ if ($converter eq 'best') {
     push @converter, 'Image::GD::Thumbnail', 'ImageMagick+exiftool', 'ImageMagick';
 } else {
     @converter = $converter;
+    undef $converter;
 }
+
 for my $try_converter (@converter) {
     if ($try_converter eq 'Image::GD::Thumbnail') {
 	if (eval { require Image::GD::Thumbnail; 1 }) {
@@ -148,12 +150,12 @@ for my $try_converter (@converter) {
 	    last;
 	}
     } elsif ($try_converter eq 'ImageMagick') {
-	if (is_in_path("convert")) {
+	if (is_in_path("convert") && $^O ne 'MSWin32') {
 	    $converter = $try_converter;
 	    last;
 	}
     } elsif ($try_converter eq 'ImageMagick+exiftool') {
-	if (is_in_path("convert") && is_in_path("exiftool")) {
+	if (is_in_path("convert") && $^O ne 'MSWin32' && is_in_path("exiftool")) {
 	    $converter = $try_converter;
 	    last;
 	}

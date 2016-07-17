@@ -24,6 +24,9 @@ BEGIN {
 
 use BBBikeUtil 'is_in_path', 'save_pwd2';
 
+if ($^O eq 'MSWin32') {
+    plan skip_all => q{Windows' convert is not ImageMagick};
+}
 if (!eval { require Image::ExifTool; 1 }) {
     plan skip_all => q{Image::ExifTool required for geocode_images and for generating test images};
 }
