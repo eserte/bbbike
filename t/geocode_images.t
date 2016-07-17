@@ -205,7 +205,6 @@ for my $converter (qw(Image::GD::Thumbnail ImageMagick ImageMagick+exiftool)) {
 	    chdir $rootdir;
 	    my @thumbnails = bsd_glob("t/*");
 	    is scalar(@thumbnails), 4, 'four thumbnails generated';
-	    local $TODO; $TODO = "rotation not done with Image::GD::Thumbnail" if $converter eq 'Image::GD::Thumbnail';
 	    for my $thumbnail (@thumbnails) {
 		my $exiftool = Image::ExifTool->new;
 		$exiftool->ExtractInfo($thumbnail);

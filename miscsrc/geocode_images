@@ -579,14 +579,20 @@ sub create_thumbnail {
     warn "Create thumbnail for $file...\n" if $v;
 
     if ($converter eq 'Image::GD::Thumbnail') {
-	return create_thumbnail_Image_GD_Thumbnail($file, $dest);
+	$dest = create_thumbnail_Image_GD_Thumbnail($file, $dest);
     } elsif ($converter eq 'ImageMagick') {
-	return create_thumbnail_ImageMagick($file, $dest);
+	$dest = create_thumbnail_ImageMagick($file, $dest);
     } elsif ($converter eq 'ImageMagick+exiftool') {
-	return create_thumbnail_ImageMagick_exiftool($file, $dest);
+	$dest = create_thumbnail_ImageMagick_exiftool($file, $dest);
     } else {
 	die "Unknown converter $converter";
     }
+
+    if (defined $dest) {
+	maybe_correct_orientation($file, $dest);
+    }
+
+    $dest;
 }
 
 sub create_thumbnail_Image_GD_Thumbnail {
@@ -617,28 +623,35 @@ sub create_thumbnail_Image_GD_Thumbnail {
 sub create_thumbnail_ImageMagick_exiftool {
     my($file, $dest) = @_;
     require File::Temp;
-    my(undef,$smallfile) = File::Temp::tempfile(SUFFIX => "_geocode_images.jpg", UNLINK => 1);
+    my(undef,$tmpfile) = File::Temp::tempfile(SUFFIX => "_geocode_images.jpg", UNLINK => 1);
     for my $cmd (["exiftool", "-ThumbnailImage", "-b", $file],
 		 ["exiftool", "-PreviewImage",   "-b", $file],
 		) {
 	my @cmd = @$cmd;
-	warn "@$cmd > $smallfile\n" if $v;
+	warn "@$cmd > $tmpfile\n" if $v;
 	open my $fh, "-|", @cmd
 	    or die "Cannot execute @cmd: $!";
-	open my $ofh, ">", $smallfile
-	    or die "Cannot write to $smallfile: $!";
+	open my $ofh, ">", $tmpfile
+	    or die "Cannot write to $tmpfile: $!";
 	local $/ = \8192;
 	while(<$fh>) {
 	    print $ofh $_;
 	}
 	close $ofh;
 	close $fh;
-	last if (!-z $smallfile);
+	last if (!-z $tmpfile);
     }
-    if (-z $smallfile) {
+    my $smallfile;
+    if (-s $tmpfile) {
+	$smallfile = $tmpfile
+    } else {
 	$smallfile = $file;
     }
-    create_thumbnail_ImageMagick($smallfile, $dest);
+    $dest = create_thumbnail_ImageMagick($smallfile, $dest);
+    if (defined $tmpfile) {
+	unlink $tmpfile; # delete as soon as possible
+    }
+    $dest;
 }
 
 sub create_thumbnail_ImageMagick {
@@ -652,14 +665,20 @@ sub create_thumbnail_ImageMagick {
 	warn "@cmd failed: $?";
 	return undef;
     } else {
-	maybe_correct_orientation($file, $dest);
 	return $dest;
     }
 }
 
+{
+my $no_jpegtran_warned;
 sub maybe_correct_orientation {
     my($orig, $thumbnail) = @_;
-    return if !is_in_path('jpegtran'); # XXX should fallback to Image::JpegTran if available
+    if (!is_in_path('jpegtran')) { # XXX should fallback to Image::JpegTran if available
+	if (!$no_jpegtran_warned++) {
+	    warn "jpegtran not available, cannot correct orientation...\n";
+	}
+	return;
+    }
     my $info = ImageInfo($orig, ["Orientation"],{PrintConv => 1});
     if ($info && defined $info->{Orientation}) {
 	my $rotated_file;
@@ -680,6 +699,7 @@ sub maybe_correct_orientation {
 		or die "Cannot rename $rotated_file to $thumbnail: $!";
 	}
     }
+}
 }
 
 sub _run_jpegtran {
