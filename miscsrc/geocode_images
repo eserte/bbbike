@@ -272,7 +272,7 @@ sub get_image_location {
 	    }
 	    ($y,$m,$d) = ($3,$2,$1);
 
-	    if (!defined $date || $time !~ m{^(\d+)[:\.](\d+)[:\.](\d+)$}) {
+	    if (!defined $time || $time !~ m{^(\d+)[:\.](\d+)[:\.](\d+)$}) {
 		local $^W = 0;
 		warn "Can't parse time <$time> in file <$file>, cannot geolocate, skipping...\n";
 		return;
