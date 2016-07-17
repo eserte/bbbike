@@ -64,8 +64,10 @@ if ($debug) {
     like $stderr, qr{Please specify at least one image.*usage}s;
 }
 
+my $rootdir_i = 1;
+
 {
-    my $rootdir = tempdir("geocode_images_test_1_XXXXXXXX", CLEANUP => 1, TMPDIR => 1);
+    my $rootdir = tempdir("geocode_images_test_".($rootdir_i++)."_XXXXXXXX", CLEANUP => 1, TMPDIR => 1);
     mkdir "$rootdir/t"; # thumbnails
     mkdir "$rootdir/i"; # images
     mkdir "$rootdir/g"; # gpstracks
@@ -164,6 +166,10 @@ my $jpegtran_available = is_in_path('jpegtran');
 if (!$jpegtran_available) {
     diag "jpegtran not available, thumbnails won't be rotated";
 }
+my $exiv2_available = is_in_path('exiv2');
+if (!$exiv2_available) {
+    diag "exiv2 not available, cannot create embedded thumbnail images";
+}
 
 for my $converter (qw(Image::GD::Thumbnail ImageMagick ImageMagick+exiftool)) {
  SKIP: {
@@ -172,7 +178,7 @@ for my $converter (qw(Image::GD::Thumbnail ImageMagick ImageMagick+exiftool)) {
 	skip "exiftool not available", 1
 	    if $converter eq 'ImageMagick+exiftool' && !is_in_path('exiftool');
 
-	my $rootdir = tempdir("geocode_images_test_2_XXXXXXXX", CLEANUP => 1, TMPDIR => 1);
+	my $rootdir = tempdir("geocode_images_test_".($rootdir_i++)."_XXXXXXXX", CLEANUP => 1, TMPDIR => 1);
 	mkdir "$rootdir/t";
 	mkdir "$rootdir/i";
 
@@ -180,6 +186,11 @@ for my $converter (qw(Image::GD::Thumbnail ImageMagick ImageMagick+exiftool)) {
 	generate_photo "$rootdir/i/90deg-cw.jpg", ['Orientation#' => 6, 'GPSLongitude#' => '13.5', 'GPSLongitudeRef' => 'E', 'GPSLatitude#' => '53.5', 'GPSLatitudeRef' => 'N', DateTimeOriginal => '2016:01:01 13:34:45'];
 	generate_photo "$rootdir/i/180deg.jpg", ['Orientation#' => 3, 'GPSLongitude#' => '13.5', 'GPSLongitudeRef' => 'E', 'GPSLatitude#' => '53.5', 'GPSLatitudeRef' => 'N', DateTimeOriginal => '2016:01:01 13:34:45'];
 	generate_photo "$rootdir/i/270deg-cw.jpg", ['Orientation#' => 8, 'GPSLongitude#' => '13.5', 'GPSLongitudeRef' => 'E', 'GPSLatitude#' => '53.5', 'GPSLatitudeRef' => 'N', DateTimeOriginal => '2016:01:01 13:34:45'];
+	if ($exiv2_available) {
+	    generate_photo "$rootdir/i/with-thumbnail-normal-orient.jpg", ['Orientation#' => 1, 'GPSLongitude#' => '13.5', 'GPSLongitudeRef' => 'E', 'GPSLatitude#' => '53.5', 'GPSLatitudeRef' => 'N', DateTimeOriginal => '2016:01:01 13:34:45'], add_thumbnail_image => 1;
+	    generate_photo "$rootdir/i/with-thumbnail-90deg-cw.jpg", ['Orientation#' => 6, 'GPSLongitude#' => '13.5', 'GPSLongitudeRef' => 'E', 'GPSLatitude#' => '53.5', 'GPSLatitudeRef' => 'N', DateTimeOriginal => '2016:01:01 13:34:45'], add_thumbnail_image => 1;
+	    generate_photo "$rootdir/i/with-thumbnail-180deg.jpg", ['Orientation#' => 3, 'GPSLongitude#' => '13.5', 'GPSLongitudeRef' => 'E', 'GPSLatitude#' => '53.5', 'GPSLatitudeRef' => 'N', DateTimeOriginal => '2016:01:01 13:34:45'], add_thumbnail_image => 1;
+	}
 
 	my @cmd = (@geocode_images, '-nogpsdatadir', '-converter', $converter, '-rel', '-thumbnaildir', "$rootdir/t", "-o", "$rootdir/out1.bbd", "$rootdir/i");
 	my $success = run [@cmd], '2>', \my $stderr;
@@ -204,16 +215,17 @@ for my $converter (qw(Image::GD::Thumbnail ImageMagick ImageMagick+exiftool)) {
 	    my $save_pwd2 = save_pwd2;
 	    chdir $rootdir;
 	    my @thumbnails = bsd_glob("t/*");
-	    is scalar(@thumbnails), 4, 'four thumbnails generated';
+	    is scalar(@thumbnails), ($exiv2_available ? 7 : 4), 'expected number of thumbnails generated';
 	    for my $thumbnail (@thumbnails) {
 		my $exiftool = Image::ExifTool->new;
 		$exiftool->ExtractInfo($thumbnail);
-		if      (!$jpegtran_available || $thumbnail_to_image{$thumbnail} =~ m{(normal-orient.jpg|180deg.jpg)}) {
-		    is $exiftool->GetValue('ImageWidth'), 50, "expected width of $thumbnail";
-		    is $exiftool->GetValue('ImageHeight'), 33, "expected height of $thumbnail";
+		my $original = $thumbnail_to_image{$thumbnail};
+		if      (!$jpegtran_available || $original =~ m{(normal-orient.jpg|180deg.jpg)}) {
+		    is $exiftool->GetValue('ImageWidth'), 50, "expected width of thumbnail for $original";
+		    is $exiftool->GetValue('ImageHeight'), 33, "expected height of thumbnail for $original";
 		} elsif ($thumbnail_to_image{$thumbnail} =~ m{(90deg-cw.jpg|270deg-cw.jpg)}) {
-		    is $exiftool->GetValue('ImageWidth'), 33, "expected width of $thumbnail";
-		    is $exiftool->GetValue('ImageHeight'), 50, "expected height of $thumbnail";
+		    is $exiftool->GetValue('ImageWidth'), 33, "expected width of thumbnail for $original";
+		    is $exiftool->GetValue('ImageHeight'), 50, "expected height of thumbnail for $original";
 		} else {
 		    die "Unexpected thumbnail $thumbnail ($thumbnail_to_image{$thumbnail}).\nMapping: " . join("\n", explain(\%thumbnail_to_image)) . "\nThumbnails: " . join("\n", explain(\@thumbnails));
 		}
@@ -261,6 +273,7 @@ sub generate_photo ($$;@) {
     if (!defined $image_mtime) {
 	$image_mtime = time - 15*86400; # larger than $gps_track_sync_grace_time in geocode_images
     }
+    my $add_thumbnail_image = delete $opts{add_thumbnail_image};
     die "Unhandled options: " . join(" ", %opts) if %opts;
     
     {
@@ -276,6 +289,28 @@ sub generate_photo ($$;@) {
 	    $exiftool->SetNewValue($k => $v);
 	}
 	$exiftool->WriteInfo($filename);
+    }
+    if ($add_thumbnail_image) {
+	# exiftool cannot create preview/thumbnail images (see
+	# http://u88.n24.queensu.ca/exiftool/forum/index.php?topic=5245.0 )
+	# so use exiv2 instead
+	if (!$exiv2_available) {
+	    die "No exiv2 available, cannot create thumbnail images (should not happen!)";
+	}
+	my $size = '60x40';
+	my $key  = 'ThumbnailImage';
+	(my $thumb_filename = $filename) =~ s{(\.jpe?g)$}{-thumb$1};
+	{
+	    my @cmd = ('convert', '-size', $size, 'xc:white', $thumb_filename);
+	    system @cmd;
+	    die "Running @cmd failed" if $? != 0;
+	}
+	{
+	    my @cmd = ('exiv2', 'in', '-i', 't', $filename);
+	    system @cmd;
+	    die "Running @cmd failed" if $? != 0;
+	}
+	unlink $thumb_filename;
     }
     utime $image_mtime, $image_mtime, $filename;
 }
