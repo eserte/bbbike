@@ -61,6 +61,9 @@ if ($debug) {
     push @geocode_images, '-debug', '-v';
 }
 
+# XXX should not be necessary --- make some research about timezones in exif data
+$ENV{TZ} = "Europe/Berlin";
+
 {
     my $success = run [@geocode_images], '2>', \my $stderr;
     ok !$success;
