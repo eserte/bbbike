@@ -40,7 +40,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2016-07-13
+#: last_checked: 2016-07-15
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11249,11268 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -590,7 +590,7 @@ Hennigsdorfer Str.: nach den Bauarbeiten durchgängig asphaltiert mit Radstreifen
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/9-22-bebauungsplanentwurf.pdf (9-22 Bebauungsplanentwurf)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/9-22-gutachten-verkehr.pdf
 #: XXX vermutlich wird die Ottomar-Geschke-Str. komplett asphaltiert werden
-#: last_checked: 2015-08-15 vvv
+#: last_checked: 2016-07-16 vvv
 #: check_frequency: 360d vvv
 Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Lage der kreuzenden Privatstraßen? Straßenname? Qualität? Anbindung zum Uferweg?	?::projected 21447,5414 21482,5388 21555,5214 21415,5157 21345,5157
 Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Lage der kreuzenden Privatstraßen? Straßenname? Qualität? Anbindung zum Uferweg?	?::projected 21415,5157 21498,5023
@@ -1191,6 +1191,7 @@ Hildburghauser Str.: Ausbau der Straße, bessere Qualität des Asphalts?	? 5059,13
 #: XXX_osm weitgehend fertiggestellt
 Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-10630 29088,-10386 29021,-10333 28918,-10301 28723,-10326 28656,-10329 28539,-10255 28499,-10164
 # 
+#: next_check_id: MINNATODENHAGENSTR-2016
 #: by: http://www.berlinonline.de/berliner-kurier/archiv/.bin/dump.fcgi/2005/1110/berlin/0033/index.html
 #: by: http://www.berliner-woche.de/fileadmin/Wochenblatt-Ausgaben/2012/1213_KOE.pdf
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036475274775/475274775/00091437/37-Anlagen/01/DRS0321VK.pdf
@@ -1201,9 +1202,10 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5323 (Brückenbenennung)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/25re.pdf/file?y=2016 (Brückenbenennung)
 #: XXX Asphaltierung der Fahrbahn von Rummelsburger Landstr. bis Schwarzer Weg fertig
-#: last_checked: 2016-06-26
+#: XXX Radwege werden vermutlich asphaltiert sein
+#: last_checked: 2016-07-16
 #: next_check: 2016-12-01
-Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rummelsburger Landstraße und Köpenicker Landstraße	?::inwork 17681,7589 17082,7189 16954,7096 16720,6845
+Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rummelsburger Landstraße und Köpenicker Landstraße	?::inwork 17681,7589 17585,7525 17082,7189 16954,7096 16720,6845
 # 
 #: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/oepnv/treskowallee/Band_1/UL_3_Lageplaene/
 #: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/oepnv/treskowallee/Band_1/UL_3_Lageplaene/8BA_T68_P03_PFV-LP01.pdf
@@ -1211,7 +1213,7 @@ Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rumm
 #: XXX laut ersten Plänen wird der nach Norden führende Radweg schon an der Stolzenfelsstr. aufhören
 #: XXX Gestaltung der Ampelanlagen wird sich ebenfalls ändern (Godesberger Str., Ehrenfelsstr., Dönhoffstr.)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5758 (Bauarbeiten beginnen erst 2019)
-#: last_checked: 2016-06-12
+#: last_checked: 2016-07-16
 #: next_check: 2019-03-01
 Treskowallee: Bau von Radwegen	?::projected 18733,8633 18731,8577 18709,8423
 # 
@@ -1277,6 +1279,8 @@ Kieler Brücke - Heidestraße, Rad/Gehweg	?::projected 7740,14409 7621,14341
 #: osm_watch: way id="237716440" version="3"
 geplanter Uferweg	?::projected 8171,13703 8128,13767 8044,13929 7989,14035 7912,14160 7843,14275 7824,14305 7740,14409
 #: XXX wird es auch eine Brücke zur Kieler Str. geben?
+#: XXX vermutlich diese Brücke wird "Golda-Meir-Steg" heißen (Berlin.coords.data-Eintrag fehlt)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2016
 Otto-Weidt-Platz: Fußgängerbereich zur Heidestraße, Qualität?	?::projected 7912,14160 7766,14076
 #: osm_watch: way id="237716438" version="4"
 Ziffer 4; Planstraßen 1.1, 1.2, 1.3: asphaltiert; wie wird der Straßenname lauten?	?::inwork 7651,14260 7762,14319 7802,14250 7697,14187
@@ -1403,11 +1407,10 @@ Bebauungsplan 7-65: Weg in Planung	?::projected 7960,6059 7697,6059 7630,6016 76
 # - XXX_prog- und XXX_indoor-Einträge
 # 
 #: XXX NEW	Lückstr. (Rummelsburg) in beiden Richtungen zwischen Weitlingstr. und Rummelsburger Str. (Berlin)  Gültig ab: 14.07.2016 15:00  Baustelle, für beide Richtungen abwechselnd nur ein Fahrstreifen / Baustellenampel (bis Mitte 09/16)	2147340309
+#: XXX laut fritz bis 09.09.2016
 Lückstr.: abwechselnd freie Fahrspur, Behinderungen für Radfahrer?	? 16601,10650 16647,10632
 # 
-#: XXX NEW	Straße der Pariser Kommune (Friedrichshain) in beiden Richtungen zwischen Stralauer Platz und An der Ostbahn (Berlin)  Gültig ab: 14.07.2016 05:23  Wasserrohrbruch, Vollsperrung (bis vsl. Ende 07/16)	LMS-BR_r_LMS-BR_73434
-#: XXX laut fritz bis 28.07.
-Straße der Pariser Kommune: Wasserrohrbruch, Behinderungen für Radfahrer?	? 12497,11459 12551,11515 12645,11673
+# REMOVED (-> handicap) --- #: XXX NEW	Straße der Pariser Kommune (Friedrichshain) in beiden Richtungen zwischen Stralauer Platz und An der Ostbahn (Berlin)  Gültig ab: 14.07.2016 05:23  Wasserrohrbruch, Vollsperrung (bis vsl. Ende 07/16)	LMS-BR_r_LMS-BR_73434 --- #: XXX laut fritz bis 28.07. --- Straße der Pariser Kommune: Wasserrohrbruch, Behinderungen für Radfahrer?	? 12497,11459 12551,11515 12645,11673
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.496419.php
 #: next_check: 2016-10-31
@@ -1465,7 +1468,8 @@ Maienwerderweg: wie sieht die Qualität zurzeit aus?	? 127,17176 660,17352 1270,1
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6703 vvv
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036827265989/827265989/00127185/85-Anlagen/02/Koggebrunnen.pdf vvv
-Im Achterkastell (oder nur "Achterkastell"?): neue Straße	?::projected 18730,11833 18732,11885 18887,11880 18888,11907
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2016
+Im Achterkastell: neue Straße	?::projected 18730,11833 18732,11885 18887,11880 18888,11907
 Alt-Friedrichsfelde [Wohngebiet]: neue Straße	?::projected 18730,11833 18730,11833 18899,11824
 #: by ^^^
 #: by ^^^
@@ -1521,7 +1525,7 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	?::inwork 4815,33
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6661
 #: XXX bei der letzten Überprüfung nicht zu erkennen
-#: last_checked: 2016-06-12
+#: last_checked: 2016-07-16
 #: check_frequency: 60d
 Treskowallee: Gehweg für Radfahrer freigegeben?	?; 18733,8633 18731,8577 18709,8423
 # 
@@ -1583,7 +1587,7 @@ Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 1
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6636
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.470764.php
 #: XXX Bauzeit Ende August 2016 bis vsl. Sommer 2017
-#: last_checked: 2016-06-12
+#: last_checked: 2016-07-16
 #: next_check: 2016-08-28
 (Unterführung S-Bhf. Rummelsburg): wird während der Bauarbeiten hier komplett gesperrt sein?	? 15379,10651 15419,10706 15433,10765
 # 
@@ -1622,10 +1626,10 @@ Falkenberger Chaussee: Radfahrstreifen werden entstehen, wo genau?	?; 17843,1807
 # 
 #: source_id: 129871
 #: source_id: LMS-BR_r_LMS-BR_62186
-#: XXX Bauarbeiten bis 30.05.2016 (am 12.06.2016 war hier noch immer Baustelle, kein Ende in Sicht)
-#: XXX ggfs. wird es Richtung Südosten einige asphaltierte Abschnitte geben
-#: last_checked: 2016-06-12
-#: check_frequency: 60d
+#: XXX Bauarbeiten bis 30.05.2016 (am 16.07.2016 war hier noch immer Baustelle)
+#: XXX Richtung Südosten wird die Fahrbahn asphaltiert sein
+#: last_checked: 2016-07-16
+#: check_frequency: 14d
 Wallensteinstr.: Bauarbeiten --- gibt es hier Qualitätsverbesserungen?	?::inwork 17549,9529 18037,9195
 # 
 # REMOVED --- #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8362&options=4 --- #: XXX kein rechts-vor-links? --- Maulbeerallee: Vorfahrtsregelung?	? -6093,12801 -5975,12827 -5878,12845 -5784,12858 -5706,12869 -5594,12832 -5480,12793 -5307,12737 -5282,12730
@@ -2124,7 +2128,7 @@ Weg H: Steigung müsste in die andere Richtung verlaufen!	? 27961,699 28083,592
 #: check_frequency: 360d
 Parchwitzer Str.: wurden die Kopfsteinpflasterabschnitte verbessert?	?::projected 22047,-1042 21945,-1031 21828,-1015 21734,-1002 21654,-992 21615,-979 21487,-912 21403,-859
 #: osm_watch: way id="9702843" version="14"
-#: last_checked: 2015-08-15
+#: last_checked: 2016-07-16
 #: check_frequency: 100d
 Josef-Nawrocki-Str.: Einbahnstraße soll freigegeben werden	?::projected 25552,4829 25554,4758 25695,4714 25724,4706 25802,4681
 #: osm_watch: way id="39356752" version="5"

@@ -1582,7 +1582,7 @@ EOF
        text  => 'Fürstenwalder Damm zwischen Bölschestr. und Stillerzeile Baustelle, Straße stadteinwärts gesperrt (bis Ende 07.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q3; 25579,5958 25179,5819 25121,5799
+userdel	q3; 25579,5958 25179,5815 25121,5795
 EOF
      },
      { from  => 1108681200, # 2005-02-18 00:00
@@ -3948,9 +3948,9 @@ EOF
        type  => 'handicap',
        source_id => 'LMS_1142967727545',
        data  => <<EOF,
-userdel	q4 25012,5754 24871,5699 24700,5633 24471,5544 24366,5504 24285,5472 24162,5424 24049,5380 23942,5338
-userdel	q4 25012,5754 25018,5756 25121,5799
-userdel	q4 25579,5958 25179,5819 25121,5799
+userdel	q4 25015,5751 24871,5699 24700,5633 24471,5544 24366,5504 24285,5472 24162,5424 24049,5380 23942,5338
+userdel	q4 25015,5751 25028,5756 25121,5795
+userdel	q4 25579,5958 25179,5815 25121,5795
 EOF
      },
      { from  => 1146520800, # 2006-05-02 00:00
@@ -7249,7 +7249,7 @@ EOF
        text  => 'Fürstenwalder Damm, für beide Richtungen nur ein Fahrstreifen abwechselnd frei, Baustelle bis 30.03.2007 (im Bereich Einmündung Mühlweg) ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 25012,5754 24871,5699 24700,5633 24471,5544 24366,5504 24285,5472 24162,5424 24049,5380 23942,5338
+userdel	q4::inwork 25015,5751 24871,5699 24700,5633 24471,5544 24366,5504 24285,5472 24162,5424 24049,5380 23942,5338
 EOF
      },
      { from  => 1172530621, # 2007-02-26 23:57
@@ -10855,7 +10855,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007457',
        data  => <<EOF,
-userdel	1::inwork 25579,5958 25179,5819 25121,5799
+userdel	1::inwork 25579,5958 25179,5815 25121,5795
 EOF
      },
      { from  => 1200178800, # 2008-01-13 00:00
@@ -15306,7 +15306,7 @@ EOF
        text  => 'Bellevuestraße und Seelenbinderstraße von Bahnhofstraße bis Bellevuestraße: Einbahnstraße in Richtung Fürstenwalder Damm vom 27.7. bis zum 10.8.2009',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22897,5740 23092,5762 23333,5710 23402,5483
+userdel	q4::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22897,5740 23106,5758 23333,5710 23402,5483
 EOF
      },
      { from  => 1249768800, # 2009-08-09 00:00
@@ -15315,7 +15315,7 @@ EOF
        type  => 'handicap',
        # XXX URL existiert nicht mehr: source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/',
        data  => <<EOF,
-userdel	q4::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22897,5740 23092,5762 23333,5710 23402,5483
+userdel	q4::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22897,5740 23106,5758 23333,5710 23402,5483
 EOF
      },
      { from  => 1252879200, # 2009-09-14 00:00
@@ -20808,6 +20808,7 @@ EOF
 #: note: geprüft am So, den 2015-08-09, nachmittags: offen
 #: note: geprüft am So, den 2015-08-30, vormittags: offen
 #: note: geprüft am So, den 2016-05-15, vormittags: offen
+#: note: geprüft am So, den 2016-07-17, vormittags und mittags: offen
 userdel	2::night 14838,11410 14792,11391
 EOF
      },
@@ -21164,7 +21165,7 @@ EOF
        data  => <<EOF,
 #: XXX_prog temporäre Lösung für saisonale Fähren vvv
 	2::temp -12149,1436 -12057,1530 -11789,1502 -11323,1330 -10320,1494 -10098,1745 -10086,1886
-	2::temp -10086,1886 -10055,1628
+	2::temp -10086,1886 -10053,1640
 #: XXX_prog ^^^
 EOF
      },
@@ -25202,7 +25203,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.friedrichshagen.net/baustelle-friedrichshagen/
-#: last_checked: 2016-06-19
+#: last_checked: 2016-07-16
 #: check_frequency: 60d
 userdel	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
 EOF

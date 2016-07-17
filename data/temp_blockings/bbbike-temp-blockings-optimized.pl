@@ -2870,6 +2870,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: note: geprüft am So, den 2015-08-09, nachmittags: offen
 #: note: geprüft am So, den 2015-08-30, vormittags: offen
 #: note: geprüft am So, den 2016-05-15, vormittags: offen
+#: note: geprüft am So, den 2016-07-17, vormittags und mittags: offen
 userdel	2::night 14838,11410 14792,11391
 ',
          'from' => undef,
@@ -2939,7 +2940,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        {
          'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
 	2::temp -12149,1436 -12057,1530 -11789,1502 -11323,1330 -10320,1494 -10098,1745 -10086,1886
-	2::temp -10086,1886 -10055,1628
+	2::temp -10086,1886 -10053,1640
 #: XXX_prog ^^^
 ',
          'from' => undef,
@@ -3888,7 +3889,7 @@ userdel	2::inwork 3472,24709 3481,24686 3492,24667 3535,24626
        },
        {
          'data' => '#: by: http://www.friedrichshagen.net/baustelle-friedrichshagen/
-#: last_checked: 2016-06-19
+#: last_checked: 2016-07-16
 #: check_frequency: 60d
 userdel	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
 ',
