@@ -22,7 +22,7 @@ then
 fi
 
 case "`hostname`" in
-    biokovo.herceg.de | biokovo.rezic.de |biokovo-amd64.herceg.de | biokovo-amd64.rezic.de | mosor | devpc01-debian | cvrsnica.herceg.de | cvrsnica.rezic.de )
+    biokovo.herceg.de | biokovo.rezic.de |biokovo-amd64.herceg.de | biokovo-amd64.rezic.de | mosor | devpc01-debian | cvrsnica.herceg.de | cvrsnica.rezic.de | cabulja )
         ;;
     *)
         echo "Should only run on biokovo, cvrsnica, or mosor"
