@@ -15,7 +15,6 @@ use Cwd qw(realpath);
 use File::Spec;
 use File::Basename;
 use Getopt::Long;
-eval 'use Image::Info qw(image_info);';
 use Image::ExifTool qw(ImageInfo);
 eval 'use Digest::MD5 qw(md5_hex);';
 use Time::Local qw(timelocal);
@@ -249,10 +248,10 @@ sub get_image_location {
 
     return if !defined $gps_data_dir;
 
-    if (!defined $y && defined &image_info) {
+    if (!defined $y) {
 	# Nokia 7650 hack
-	my $info = image_info($file);
-	if (my $error = $info->{error}) {
+	my $info = ImageInfo($file);
+	if (my $error = $info->{Error}) {
 	    if ($file =~ m{(?:^|/)\.(?:xvpics|thumbs)/}) {
 		# expected error, be quiet
 	    } else {

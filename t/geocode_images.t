@@ -94,7 +94,7 @@ if ($debug) {
 	if ($debug) {
 	    diag $stderr;
 	}
-	like $stderr, qr{^Can't parse image info from .*/i/nonphoto.txt: Unrecognized file format}m, 'warning for non-photo';
+	like $stderr, qr{^Can't parse image info from .*/i/nonphoto.txt: (Unrecognized file format|Unknown file type)}m, 'warning for non-photo'; # accept Image::Info and Image::ExifTool error messages, but currently only exiftool is used
 	if ($debug) { # printed only with -v
 	    like $stderr, qr{^Cannot get date from image <.*/i/image-without-date.jpg>, skipping...$}m, 'warning for photo without date';
 	}
