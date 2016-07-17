@@ -2048,7 +2048,12 @@ sub click {
 	$file = $o->datadir . "/" . $click_info->basefile . "-orig";
     }
     if (!$main::edit_mode_flag || !-e $file) {
-	warn "Fallback to non-orig file";
+	if ($file !~ m{(   # The following files do not have "-orig" counterparts (so don't warn):
+			   /tmp/fragezeichen.*\.bbd-orig
+		       |   /data/temp_blockings/bbbike-temp-blockings.pl-orig
+		       )$}x) {
+	    warn "$file does not exist, fallback to non-orig file";
+	}
 	$file =~ s{-orig$}{};
     }
     if (!-r $file) {
