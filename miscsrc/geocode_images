@@ -433,6 +433,11 @@ if ($do_update) {
     if (!defined $out_file) {
 	die "-update switch only works together with -o\n";
     }
+    if (!-e $out_file) {
+	# assume first-time operation, touch the output file
+	open my $fh, '>', $out_file
+	    or die "Can't touch $out_file: $!";
+    }
     require Strassen::Core;
     my $s = Strassen->new_stream($out_file);
     my $image_qr = qr{^Image: "([^"]+)"};
