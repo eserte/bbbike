@@ -9,7 +9,7 @@
 #
 
 use strict;
-our $VERSION = 1.33;
+our $VERSION = 1.34;
 
 use Cwd qw(realpath);
 use File::Spec;
@@ -18,7 +18,6 @@ use Getopt::Long;
 use Image::ExifTool qw(ImageInfo);
 eval 'use Digest::MD5 qw(md5_hex);';
 use Time::Local qw(timelocal);
-use GD;
 use DB_File;
 use FindBin;
 
@@ -145,7 +144,7 @@ if ($converter eq 'best') {
 
 for my $try_converter (@converter) {
     if ($try_converter eq 'Image::GD::Thumbnail') {
-	if (eval { require Image::GD::Thumbnail; 1 }) {
+	if (eval { require GD; require Image::GD::Thumbnail; 1 }) {
 	    $converter = $try_converter;
 	    last;
 	}
