@@ -120,12 +120,9 @@ my $rootdir_i = 1;
 	    my $relabspathqr = $check_relpath ? qr{} : qr{.+/};
 	    
 	SKIP: {
-		skip "mysterious test failures (regexp problems) with 5.8.8", 1 if $] < 5.008009 && $check_relpath;
+		skip "mysterious test failures (regexp problems) with 5.8.8", 3 if $] < 5.008009 && $check_relpath;
 		like $bbd_data, qr{^Image: "$relabspathqr\Qi/test-without-gpspos.jpg" (2016-01-02T13:34:45) (delta=0:00) (51/13)	IMG:\E$relabspathqr\Qt/\E.*\Q.jpg -13609,-156840\E$}m, 'bbd line generated from tracks';
-	    }
-	    like $bbd_data, qr{^Image: "$relabspathqr\Qi/test-with-gpspos.jpg" (2016-01-01T13:34:45) (delta=0:00) (53.5/13.5)	IMG:\E$relabspathqr\Qt/\E.*\Q.jpg 14665,121811\E$}m, 'bbd line generated from gps info in photo';
-	SKIP: {
-		skip "mysterious test failures (regexp problems) with 5.8.8", 1 if $] < 5.008009 && $check_relpath;
+		like $bbd_data, qr{^Image: "$relabspathqr\Qi/test-with-gpspos.jpg" (2016-01-01T13:34:45) (delta=0:00) (53.5/13.5)	IMG:\E$relabspathqr\Qt/\E.*\Q.jpg 14665,121811\E$}m, 'bbd line generated from gps info in photo';
 		like $bbd_data, qr{^Image: "$relabspathqr\Qi/n7650.jpg" (2003-09-24T12:38:55) (delta=0:00) (51.2/13.2)	IMG:\E$relabspathqr\Qt/\E.*\Q.jpg -471,-134354\E$}m, 'bbd line generated for ancient N7650';
 	    }
 	    like $bbd_data, qr{^# Image: "$relabspathqr\Qi/image-without-date.jpg" (not geocodable)}m, 'not geocodable (no date)';
