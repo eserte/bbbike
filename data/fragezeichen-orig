@@ -2103,7 +2103,7 @@ Maulbeerallee: Planung eines Zebrastreifens	?::projected -5544,12837 -5594,12832
 # REMOVED (-> strassen-orig) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2012 --- Weg im Harry-Bresslau-Park: wo genau liegt der Weg? Qualit‰t? Nachts beleuchtet?	? 4997,6331 4937,6205
 # REMOVED (lohnt nicht, von der Bernauer Str. schlecht erkennbar) --- Sendener Str. - Bernauer Str.: Qualit‰t des Waldweges?	? 915,18352 625,18518 560,18494
 # 
-#: osm_watch: way id="23006209" version="24"
+#: osm_watch: way id="23006209" version="25"
 #: XXX laut osm living_street, k.A. zur Qualit‰t
 Johannesstift: Qualit‰t der Straﬂen? ‹berall verkehrsberuhigt?	? -3655,18177 -3847,17978 -3914,17913 -3953,17941 -4038,18030 -3898,18187
 # 
@@ -4206,9 +4206,13 @@ Alter Fischerweg (Gosen): Qualit‰t?	? 32778,-1044 33013,-790 33117,-767 33140,-7
 # REMOVED (realisiert) --- Gutschmidtstraﬂe: sind die Radwege asphaltiert oder saniert?	? 13162,3576 13217,3557 13387,3513 13526,3519
 #: XXX Fahrbahn wird ab Kormoranweg saniert, wird in Zuge der Sanierung auch der Radweg neu gemacht?
 # REMOVED --- : source_id: IM_023411
-#: last_checked: 2016-05-13
-#: check_frequency: 180d
-Fritz-Erler-Allee: werden die Radwege asphaltiert oder saniert?	? 14392,2979 14274,3129 14205,3187 14126,3225 14023,3276 13906,3340 13775,3500
+#: last_checked: 2016-05-13 vvv
+#: check_frequency: 180d vvv
+#: next_check: 2016-08-20
+Fritz-Erler-Allee: werden die Radwege asphaltiert oder saniert?	? 14392,2979 14274,3129 14205,3187 14126,3225
+Fritz-Erler-Allee: werden die Radwege asphaltiert oder saniert?	? 14126,3225 14023,3276 13906,3340 13775,3500
+#: check_frequency ^^^
+#: last_checked ^^^
 # REMOVED --- : source_id: IM_020569
 #: last_checked: 2016-05-13
 #: check_frequency: 180d
