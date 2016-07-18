@@ -312,7 +312,7 @@ sub generate_photo ($$;@) {
 	    die "Running @cmd failed" if $? != 0;
 	}
 	{
-	    my @cmd = ('exiv2', 'in', '-i', 't', $filename);
+	    my @cmd = ('exiv2', '-i', 't', 'insert', $filename);
 	    system @cmd;
 	    die "Running @cmd failed" if $? != 0;
 	}
