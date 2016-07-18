@@ -148,13 +148,13 @@ for my $try_converter (@converter) {
 	    $converter = $try_converter;
 	    last;
 	}
-    } elsif ($try_converter eq 'ImageMagick') {
+    } elsif ($try_converter eq 'ImageMagick+exiftool') {
 	if (is_in_path("convert") && $^O ne 'MSWin32') {
 	    $converter = $try_converter;
 	    last;
 	}
-    } elsif ($try_converter eq 'ImageMagick+exiftool') {
-	if (is_in_path("convert") && $^O ne 'MSWin32' && is_in_path("exiftool")) {
+    } elsif ($try_converter eq 'ImageMagick') {
+	if (is_in_path("convert") && $^O ne 'MSWin32') {
 	    $converter = $try_converter;
 	    last;
 	}
@@ -622,29 +622,27 @@ sub create_thumbnail_Image_GD_Thumbnail {
 
 sub create_thumbnail_ImageMagick_exiftool {
     my($file, $dest) = @_;
-    require File::Temp;
-    my(undef,$tmpfile) = File::Temp::tempfile(SUFFIX => "_geocode_images.jpg", UNLINK => 1);
-    for my $cmd (["exiftool", "-ThumbnailImage", "-b", $file],
-		 ["exiftool", "-PreviewImage",   "-b", $file],
-		) {
-	my @cmd = @$cmd;
-	warn "@$cmd > $tmpfile\n" if $v;
-	open my $fh, "-|", @cmd
-	    or die "Cannot execute @cmd: $!";
-	open my $ofh, ">", $tmpfile
-	    or die "Cannot write to $tmpfile: $!";
-	local $/ = \8192;
-	while(<$fh>) {
-	    print $ofh $_;
+    my $exiftool = Image::ExifTool->new;
+    $exiftool->ExtractInfo($file);
+    my $tmpfile;
+    for my $tag (qw(ThumbnailImage PreviewImage)) {
+	warn "Try tag $tag in $file...\n" if $debug;
+	my $val = $exiftool->GetValue($tag);
+	if ($val) {
+	    warn "Got $tag, write now to temporary file...\n" if $debug;
+	    require File::Temp;
+	    (my($tmpfh),$tmpfile) = File::Temp::tempfile(SUFFIX => "_geocode_images.jpg", UNLINK => 1);
+	    print $tmpfh $$val;
+	    close $tmpfh
+		or die "Cannot write to $tmpfile: $!";
+	    last;
 	}
-	close $ofh;
-	close $fh;
-	last if (!-z $tmpfile);
     }
     my $smallfile;
-    if (-s $tmpfile) {
-	$smallfile = $tmpfile
+    if (defined $tmpfile) {
+	$smallfile = $tmpfile;
     } else {
+	warn "No Thumbnail/PreviewImage found in $file, convert from original file...\n" if $debug;
 	$smallfile = $file;
     }
     $dest = create_thumbnail_ImageMagick($smallfile, $dest);
