@@ -25057,10 +25057,12 @@ EOF
 #: note: offen am 2016-06-16 gegen 9:30 Uhr
 #: note: offen am 2016-07-01 gegen 18:15 Uhr
 #: note: geschlossen am 2016-07-11 gegen 18:00 Uhr
+#: note: geschlossen am 2016-07-21 gegen 19:30 Uhr
 userdel	2::temp 8362,13466 8369,13465 8377,13463
 #: note: verschlossen am 2016-06-16 gegen 9:30 Uhr
 #: note: verschlossen am 2016-07-01 gegen 18:15 Uhr
 #: note: verschlossen am 2016-07-11 gegen 18:00 Uhr
+#: note: verschlossen am 2016-07-21 gegen 19:30 Uhr
 userdel	2::temp 8371,13399 8363,13402 8356,13404
 EOF
      },
