@@ -52,7 +52,7 @@ Altstadt Köpenick	1 22451,4749 22439,4838
 Landjägerstr.	1 22740,4415 22542,4485 22495,4523
 Alter Markt	1 22470,4691 22395,4678
 Futranplatz	1 22388,4737 22451,4749
-Alt-Köpenick	1 22138,4661 22175,4730 22196,4847
+Alt-Köpenick	1 22144,4660 22175,4730 22198,4800 22196,4847
 (Am S-Bahnhof Plänterwald): Asphalt	1 15357,8286 15284,8214 15256,8247 15242,8263 15303,8343
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 Knoten Märkische/Landsberger Allee	1 19013,14905 19175,14968 19364,15045 19507,15095 19563,15113 19694,15141 19852,15201
@@ -92,7 +92,7 @@ Nöldnerplatz	1 15870,10938 15903,10906 16049,10844
 Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
 Richterstr.	1s 22092,999 22120,886
 Richterstr.	1s 22062,773 22007,711
-Grünau/B179	1 22007,711 21861,802 21894,881 21977,988 22044,1018 22092,999
+Grünau/B179	1 22007,711 21862,807 21894,881 21977,988 22044,1018 22092,999
 Dorfplatz	1 21074,-475 20986,-529 20890,-546 20827,-537 20999,-489 21074,-475
 B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532 21819,1595 21541,1739
 Zufahrt zur B96a	2 20288,-511 20272,-501
@@ -419,7 +419,7 @@ Ingelheimer Str.	1 18891,8586 18951,8574 19030,8559
 Gleyeweg	1 17566,8199 17532,8125 17529,8073 17613,7989 17651,7973 17683,7958 17762,7931
 Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 19599,14273 19595,14348 19593,14405 19593,14452
 Murtzaner Ring	1 19818,14064 19843,14064 19921,14064 19951,14083 20040,14179
-Rosenstr.	1 22284,4653 22212,4655 22138,4661
+Rosenstr.	1 22284,4653 22212,4655 22144,4660
 Laurenzstr.	1 22246,4711 22175,4730
 Werrastr.: Firmengelände	2 13802,8195 13697,8279
 Neuendorfer Str.	1 -3295,14777 -3228,14794
@@ -815,6 +815,7 @@ Kleineweg	1s 9128,8251 9130,8029
 Gartenstr.	1s 720,2718 835,2715
 Gartenstr.	1 835,2715 912,2965
 Kilstetter Str.	1 1532,2921 1536,3029 1575,3054 1689,3125 1835,2898
+Belßstr.	1s 7899,2391 7983,2348 7987,2337
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -2626,7 +2627,7 @@ offenes Tor	BNP:3:-265 24790,15447
 Drängelgitter (lichte Breite ca. 100cm)	BNP:3:-98:trailer=10 23914,15453
 Drängelgitter	BNP:1:-153:trailer=3 17313,12609
 Tor	BNP:5:-87 2959,2608
-Drängelgitter (lichte Breite ca. 90cm)	BNP:4:-121:trailer=15 6455,2924
+Drängelgitter (lichte Breite ca. 90cm)	BNP:4:-126:trailer=15 6455,2924
 Hanstedter Weg: Geländer	BNP:3:-108:trailer=10 6908,5053
 Drängelgitter am Restaurant Igel	BNP:3:-180 -1659,18104
 Drängelgitter am Restaurant Igel	BNP:3:-178 -1659,18076
@@ -2867,8 +2868,6 @@ Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::
 Frauenauer Str.: Straße fertig, aber noch gesperrt	2::inwork 19663,9757 19858,9775
 Kirchdorfer Str.: Straße fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9775 19871,9680
 Viechtacher Str.: Straße fertig, aber noch gesperrt	2::inwork 19801,9680 19871,9680 19923,9682
-Regener Str.: fertiggestellt, aber noch gesperrt	2::inwork 19790,9478 19859,9473 19894,9470 19889,9400 19874,9151
-Patersdorfer Str.: fertiggestellt, aber noch gesperrt	2::inwork 19626,9171 19764,9160 19874,9151
 Teisnacher Str.: fertiggestellt, aber noch gesperrt	2::inwork 19871,9680 19859,9473
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14463,10212
@@ -3194,7 +3193,7 @@ tragen	0:60:-139 -9371,-618
 tragen (ca. 60 Stufen)	0:80:-213 -8120,-1500
 tragen	0:60:-128 -8451,-1418
 Hausotterpl.	1 8319,18190 8345,18182 8355,18165 8355,18142 8333,18132 8310,18132 8296,18154 8299,18172 8319,18190
-Brauerstr.	1 5167,2160 5317,2345
+Brauerstr.	1 5159,2176 5317,2345
 Grußdorfstr.	1 2356,20216 2323,20214 2109,20188
 Am Buddeplatz	1 2323,20214 2336,20117
 Karl-Pokern-Str.	1 25860,5067 25860,5159 25857,5184 26026,5179 26028,5153 26034,5056
@@ -3212,10 +3211,10 @@ Straßenbahntrasse	3nocross::ignrte 18631,10167 18694,10018 18703,9997 18742,9903
 Treskowallee -> Ontarioseestr.: Straßenbahntrasse	3::igndisp 18703,9997 18694,10018 18577,10023
 Ontarioseestr. -> Am Tierpark: Straßenbahntrasse	3::igndisp 18577,10023 18694,10018 18631,10167
 Treskowallee -> Weg entlang der Bahnstrecke: Straßenbahntrasse	3::igndisp 18742,9903 18703,9997 18445,9887
-Treskowallee -> Richard-Kolkwitz-Weg: Straßenbahntrasse	3::igndisp 18694,10018 18703,9997 18715,10003
+Treskowallee -> Richard-Kolkwitz-Weg: Straßenbahntrasse	3::igndisp 18694,10018 18703,9997 18708,10000
 Weg entlang der Bahnstrecke -> Treskowallee: Straßenbahntrasse	3::igndisp 18445,9887 18703,9997 18694,10018
-Weg entlang der Bahnstrecke -> Richard-Kolkwitz-Weg: Straßenbahntrasse	3::igndisp 18445,9887 18703,9997 18715,10003
-Richard-Kolkwitz-Weg -> Weg entlang der Bahnstrecke: Straßenbahntrasse	3::igndisp 18715,10003 18703,9997 18445,9887
+Weg entlang der Bahnstrecke -> Richard-Kolkwitz-Weg: Straßenbahntrasse	3::igndisp 18445,9887 18703,9997 18708,10000
+Richard-Kolkwitz-Weg -> Weg entlang der Bahnstrecke: Straßenbahntrasse	3::igndisp 18708,10000 18703,9997 18445,9887
 Straßenbahn	3nocross::ignrte 18878,9517 18875,9570 18865,9608 18823,9708
 Hönower Str. -> Treskowallee: Straßenbahn	3::igndisp 18765,9426 18875,9570 18865,9608
 Treskowallee -> Hönower Str.: Straßenbahn	3::igndisp 18878,9517 18875,9570 18765,9426

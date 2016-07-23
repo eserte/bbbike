@@ -1779,8 +1779,8 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
        undef,
        undef,
        {
-         'data' => 'userdel	2::temp 22133,4644 22111,4562 22093,4499
-userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
+         'data' => 'userdel	2::temp 22138,4642 22111,4562 22093,4499
+userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
 ',
          'from' => 1471521600,
          'id' => 2610,
@@ -2023,21 +2023,7 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.354922.php
-#: source_id: 2147339555
-userdel	q4::inwork; 4239,10358 4219,10279 4183,10144 4152,10033
-	3 4279,10270 4219,10279 3852,10236
-	3 3852,10236 4219,10279 4279,10270
-# REMOVED was: 4152,10033 4126,9932 4099,9820 4067,9686 4057,9648
-',
-         'from' => 1440910800,
-         'id' => 2733,
-         'source_id' => 'IM_026066',
-         'text' => 'Konstanzer Str.: zwischen Olivaer Platz und Düsseldorfer Str. und Baustelle, Fahrbahn Richtung Brandenburgische Str. gesperrt, Überqueren im Zuge der Xantener Str. nicht möglich, bis August 2016',
-         'type' => 'handicap',
-         'until' => 1470002400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2124,12 +2110,12 @@ userdel	q4::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129 -6507,15007
          'until' => undef
        },
        {
-         'data' => 'userdel	q4::inwork 4542,1188 4634,1245 4706,1293 4806,1360 4897,1350 5059,1337
+         'data' => 'userdel	q3::inwork 4542,1188 4634,1245 4706,1293 4806,1360 4897,1350 5059,1337
 ',
          'from' => 1459720800,
          'id' => 2776,
          'source_id' => '2147339913',
-         'text' => 'Hildburghauser Straße/Blankertzweg: Bauarbeiten zwischen Am Pfarracker und Osdorfer Str., ggfs. auch Behinderungen für den Radverkehr, 04.04.2016 bis 13.01.2017 ',
+         'text' => 'Hildburghauser Straße/Blankertzweg: Bauarbeiten zwischen Am Pfarracker und Osdorfer Str., Radfahrer können auf dem schmalen Gehweg fahren, 04.04.2016 bis 13.01.2017 ',
          'type' => 'handicap',
          'until' => 1484348400
        },
@@ -2395,6 +2381,16 @@ userdel	2::inwork 22084,5877 21846,5856 21744,5804 21602,5685
          'text' => 'Wuhleweg: Bauarbeiten zwischen Lindenstr. und Hämmerlingstr., für Radfahrer und Fußgänger gesperrt, bis voraussichtlich Ende Juli 2016',
          'type' => 'gesperrt',
          'until' => 1470002399
+       },
+       {
+         'data' => 'userdel	q3::inwork 6984,1540 6881,1743
+',
+         'from' => 1469052000,
+         'id' => 2810,
+         'source_id' => '2147340348',
+         'text' => 'Tautenburger Str.: zwischen Blankenhainer Str. und Brotteroder Str. Baustelle, Sperrung der Fahrbahn, Radfahrer dürfen den Gehweg benutzen, bis Ende August 2016',
+         'type' => 'handicap',
+         'until' => 1472680799
        }
      
 );

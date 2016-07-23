@@ -4,7 +4,6 @@
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
 Koppenstr.: Wasserrohrbruch, Fahrbahn gesperrt	q2::inwork 12409,11902 12366,11808
-Straﬂe der Pariser Kommune: Wasserrohrbruch, Fahrbahn gesperrt	q2::inwork 12497,11459 12551,11515 12645,11673
 Revaler Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordsteine	q3::inwork 14211,11229 14286,11186
 Dˆringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
 Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
@@ -169,7 +168,7 @@ Volkspark Friedrichshain: Fuﬂg‰nger	q1 12141,13341 12131,13333
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12038,13685 12145,13628 12169,13609
 (Weg zum groﬂen Bunkerberg): Fuﬂg‰nger, Steigung	q2 12307,13329 12355,13366 12391,13416 12386,13452 12305,13514 12232,13523 12197,13488 12196,13453 12235,13383 12274,13372 12327,13394 12344,13424 12307,13491 12254,13495 12232,13477 12246,13440 12278,13418 12287,13443
 Luisenhain: Radfahren erlaubt, Fuﬂg‰nger haben Vorrang	q2 22196,4847 22153,4840 22074,4664 22057,4618 22043,4562 22057,4531 22071,4501
-(Rathaus Kˆpenick - Luisenhain): Fuﬂg‰nger	q2 22133,4644 22074,4664
+(Rathaus Kˆpenick - Luisenhain): Fuﬂg‰nger	q2 22138,4642 22074,4664
 (Uferweg): Fuﬂg‰nger, teilweise eng	q2 22433,4887 22326,4940 22310,4935 22241,4911 22204,4910 22180,4938 22146,4934 22131,4914 22153,4861 22153,4840
 (Freiheit/Lindenstr. - Uferweg): Fuﬂg‰nger	q2 22196,4847 22204,4910
 (S-Bahnhof - Schlachtensee): Radfahren erlaubt, Fuﬂg‰nger haben Vorrang	q2 -2365,3582 -2398,3633 -2397,3647 -2396,3666
@@ -858,7 +857,7 @@ Appelbacher Weg: Rampe	q2 27780,893 27804,878
 Hallgarter Steig: eng und kurvig	q1 27890,373 27961,321 28042,304 28046,268 28058,155 28068,148 28071,112 28086,101 28070,22 28083,-34 28065,-114 28042,-152
 Grottewitzwanderweg: eng, kurvig	q2 28042,-152 27852,-279 27825,-371 27703,-406 27624,-480 27605,-661 27573,-757 27603,-906 27562,-1043 27578,-1153 27539,-1337
 Papendickstr.: enge Straﬂe	q0 17071,16174 17073,16222 17135,16334 17170,16365
-Am Wiesenweg: Fuﬂg‰nger	q1 21977,988 21857,989 21708,937 21683,906
+Am Wiesenweg: Fuﬂg‰nger	q1 21977,988 21857,989 21708,937 21685,916
 Grasm¸ckenweg: Fuﬂg‰nger, eng	q2 14877,3475 14822,3409
 (Scharnweberstr. - Berenhorststr.): Fuﬂg‰nger	q1 4801,17623 4816,17712
 Ernststr.: wendelfˆrmige Rampen	q4 2821,19559 2780,19548 2700,19527
@@ -1181,7 +1180,7 @@ M¸ggelstr., Hausdurchfahrt: einige Fuﬂg‰nger	q1 14837,11706 14856,11740
 (Richterstr. - Rathausstr.): Fuﬂg‰nger	q1 9277,3993 9294,3921 9217,3906 9117,3898 9021,3878
 (Upstallweg - Richterstr.): Fuﬂg‰nger	q1 9264,3874 9244,3872 9226,3870 9217,3906
 Waltershauser Str.: gemeinsamer Rad- und Gehweg, einige Fuﬂg‰nger	q1 6534,1702 6673,1748 6844,1813
-(Gallwitzallee - Geraerstr./Trippsteinstr.): einige Fuﬂg‰nger	q1 6768,2143 6722,2096 6695,2037 6534,1702 6526,1688
+(Gallwitzallee - Geraerstr./Trippsteinstr.): einige Fuﬂg‰nger	q1 6759,2137 6722,2096 6695,2037 6534,1702 6526,1688
 (Seydlitzstr., Verl‰ngerung): einige Fuﬂg‰nger	q1 6597,2157 6695,2037
 (Hospitalgrabenpark): Fuﬂg‰nger, Radfahren offiziell verboten	q4 7105,3040 7127,3077 7184,3142 7264,3122 7365,3199
 (Landschaftspark Herzberge - Arendsweg): Trampelpfad, Bordstein	q4 17266,14144 17316,14151 17330,14163
@@ -2447,6 +2446,7 @@ Kriemhildstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 173
 Wartenbergstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 15423,11667 15337,11639 15328,11636 15300,11584
 Am Lehnshof: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 4291,22986 4264,22992 4202,23034
 Gartenstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 720,2718 835,2715
+Belﬂstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 7899,2391 7983,2348 7987,2337
 Am Krusenick: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22751,4970 22652,4966 22667,4912 22705,4874
 Josef-Nawrocki-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25802,4681 25802,4823
 Josef-Nawrocki-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25695,4714 25554,4758 25552,4829

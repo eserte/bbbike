@@ -2227,8 +2227,8 @@ EOF
        text  => '"Köpenicker Sommer", im Bereich Altstadt Straßen gesperrt bis 20.06.2005, 06:00 Uhr (Schloßplatz, Grünstraße, Rosenstraße, Alt-Köpenick, Schüßlerplatz, Jägerstraße, Luisenhain, Schloßinsel) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 22138,4661 22133,4644 22111,4562
-userdel	2 22138,4661 22175,4730 22196,4847
+userdel	2 22144,4660 22138,4642 22111,4562
+userdel	2 22144,4660 22175,4730 22198,4800 22196,4847
 userdel	2 22111,4562 22162,4546
 userdel	2 22111,4562 22093,4499
 userdel	2 22153,4840 22074,4664 22057,4618 22043,4562
@@ -4848,10 +4848,10 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/koepenickersommerbuehnen.html',
        data  => <<EOF,
-userdel	q4::temp 22196,4847 22175,4730 22138,4661 22133,4644 22111,4562 22093,4499
+userdel	q4::temp 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562 22093,4499
 userdel	q4::temp 22196,4847 22153,4840 22074,4664 22057,4618 22043,4562 22057,4531 22071,4501
 userdel	q4::temp 22111,4562 22162,4546 22214,4548 22324,4586 22314,4604 22355,4660
-userdel	q4::temp 22138,4661 22212,4655 22284,4653 22355,4660
+userdel	q4::temp 22144,4660 22212,4655 22284,4653 22355,4660
 userdel	q4::temp 22214,4548 22212,4655
 userdel	q4::temp 22175,4730 22246,4711
 userdel	q4::temp 22314,4604 22284,4653 22246,4711 22240,4768 22196,4847
@@ -6879,7 +6879,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004266',
        data  => <<EOF,
-userdel	2::inwork 21861,802 22007,711
+userdel	2::inwork 21862,807 22007,711
 EOF
      },
      { from  => 1165266208, # 2006-12-04 22:03
@@ -8095,9 +8095,9 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005385',
        data  => <<EOF,
-userdel	2::temp 22284,4653 22212,4655 22138,4661 22133,4644 22111,4562 22162,4546 22214,4548 22324,4586
+userdel	2::temp 22284,4653 22212,4655 22144,4660 22138,4642 22111,4562 22162,4546 22214,4548 22324,4586
 userdel	2::temp 22093,4499 22111,4562
-userdel	2::temp 22196,4847 22175,4730 22138,4661
+userdel	2::temp 22196,4847 22198,4800 22175,4730 22144,4660
 EOF
      },
      { from  => 1178402400, # 2007-05-06 00:00
@@ -8823,9 +8823,9 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005778',
        data  => <<EOF,
-userdel	2::temp 22284,4653 22212,4655 22138,4661 22133,4644 22111,4562 22093,4499
+userdel	2::temp 22284,4653 22212,4655 22144,4660 22138,4642 22111,4562 22093,4499
 userdel	2::temp 22111,4562 22162,4546
-userdel	2::temp 22196,4847 22175,4730 22138,4661
+userdel	2::temp 22196,4847 22198,4800 22175,4730 22144,4660
 EOF
      },
      { from  => 1182000409, # 2007-06-16 15:26
@@ -8970,9 +8970,9 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005925',
        data  => <<EOF,
-userdel	2::temp 22284,4653 22212,4655 22138,4661 22133,4644 22111,4562 22093,4499
+userdel	2::temp 22284,4653 22212,4655 22144,4660 22138,4642 22111,4562 22093,4499
 userdel	2::temp 22324,4586 22214,4548 22162,4546 22111,4562
-userdel	2::temp 22196,4847 22175,4730 22138,4661
+userdel	2::temp 22196,4847 22198,4800 22175,4730 22144,4660
 EOF
      },
      { from  => 1183193708, # 2007-06-30 10:55
@@ -13912,7 +13912,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012333',
        data  => <<EOF,
-userdel	q4::temp 22196,4847 22175,4730 22138,4661 22133,4644 22111,4562 22093,4499
+userdel	q4::temp 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562 22093,4499
 EOF
      },
      { from  => 1242770815, # 2009-05-20 00:06
@@ -14566,8 +14566,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 22111,4562 22093,4499 22076,4422
-userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22175,4730 22138,4661 22133,4644 22111,4562
-userdel	2::temp 22133,4644 22074,4664
+userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
+userdel	2::temp 22138,4642 22074,4664
 # REMOVED --- userdel	2::temp 22111,4562 22162,4546 22214,4548 22324,4586 22314,4604 22355,4660 22365,4676 22395,4678
 EOF
      },
@@ -18860,7 +18860,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016766',
        data  => <<EOF,
-userdel	q4::inwork 21233,6096 20722,6971
+userdel	q4::inwork 21239,6063 20722,6971
 EOF
      },
      { from  => 1254641760, # 2009-10-04 09:36
@@ -21297,8 +21297,8 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weinfeste-in-deutschland.de/winzerfest-in-berlin-koepenick.html',
        data  => <<EOF,
-userdel	2::temp 22133,4644 22111,4562 22093,4499
-userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
+userdel	2::temp 22138,4642 22111,4562 22093,4499
+userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
 EOF
      },
      { from  => $isodate2epoch->("2016-07-13 00:00:00"), # 1 Tag Vorlauf
@@ -22457,7 +22457,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140618.0830.397974.html',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.145619.php
-userdel	2::inwork 20653,7289 20609,7200 20635,7119 20722,6971 21233,6096 21303,5826
+userdel	2::inwork 20653,7289 20603,7189 20640,7122 20722,6971 21239,6063 21303,5826
 EOF
      },
      { from  => 1386198000, # 2013-12-05 00:00
@@ -23282,8 +23282,8 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weinfeste-in-deutschland.de/winzerfest-in-berlin-koepenick.html',
        data  => <<EOF,
-userdel	2::temp 22133,4644 22111,4562 22093,4499
-userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22133,4644 22138,4661 22175,4730 22196,4847 22153,4840 22074,4664
+userdel	2::temp 22138,4642 22111,4562 22093,4499
+userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
 EOF
      },
      { from  => 1409436000, # 2014-08-31 00:00
@@ -24470,7 +24470,7 @@ userdel	q4::inwork 7081,1346 6984,1540 6881,1743
 EOF
      },
      { from  => 1440910800, # 2015-08-30 07:00
-       until => $isodate2epoch->("2016-08-01 00:00:00"), # 1482501600, # 2016-12-23 15:00 # laut rbbtext bis 30.12.2016, laut fritz nur 31.07.2016, laut vmz bis August 2016
+       until => 1469210440, # $isodate2epoch->("2016-08-01 00:00:00"), # 1482501600, # 2016-12-23 15:00 # laut rbbtext bis 30.12.2016, laut fritz nur 31.07.2016, laut vmz bis August 2016
        text  => 'Konstanzer Str.: zwischen Olivaer Platz und Düsseldorfer Str. und Baustelle, Fahrbahn Richtung Brandenburgische Str. gesperrt, Überqueren im Zuge der Xantener Str. nicht möglich, bis August 2016',
        type  => 'handicap',
        source_id => 'IM_026066',
@@ -24816,7 +24816,7 @@ EOF
        source_id => '128113',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.421075.php
-userdel	2::inwork 20635,7119 20722,6971
+userdel	2::inwork 20640,7122 20722,6971
 EOF
      },
      { from  => 1451473200, # 2015-12-30 12:00 # siehe auch anderen Eintrag mit früheren Sperrungen
@@ -24942,11 +24942,11 @@ EOF
      },
      { from  => 1459720800, # 2016-04-04 00:00
        until => 1484348400, # 2017-01-14 00:00
-       text  => 'Hildburghauser Straße/Blankertzweg: Bauarbeiten zwischen Am Pfarracker und Osdorfer Str., ggfs. auch Behinderungen für den Radverkehr, 04.04.2016 bis 13.01.2017 ',
+       text  => 'Hildburghauser Straße/Blankertzweg: Bauarbeiten zwischen Am Pfarracker und Osdorfer Str., Radfahrer können auf dem schmalen Gehweg fahren, 04.04.2016 bis 13.01.2017 ',
        type  => 'handicap',
        source_id => '2147339913',
        data  => <<EOF,
-userdel	q4::inwork 4542,1188 4634,1245 4706,1293 4806,1360 4897,1350 5059,1337
+userdel	q3::inwork 4542,1188 4634,1245 4706,1293 4806,1360 4897,1350 5059,1337
 EOF
      },
      { from  => 1460584800, # 2016-04-14 00:00
@@ -25314,6 +25314,15 @@ EOF
 #: XXX zweiter Bauabschnitt ab Ende August bis ca. 23.09.
 #: next_check: 2016-07-31
 userdel	2::inwork 22084,5877 21846,5856 21744,5804 21602,5685
+EOF
+     },
+     { from  => 1469052000, # 2016-07-21 00:00
+       until => 1472680799, # 2016-08-31 23:59
+       text  => 'Tautenburger Str.: zwischen Blankenhainer Str. und Brotteroder Str. Baustelle, Sperrung der Fahrbahn, Radfahrer dürfen den Gehweg benutzen, bis Ende August 2016',
+       type  => 'handicap',
+       source_id => '2147340348',
+       data  => <<EOF,
+userdel	q3::inwork 6984,1540 6881,1743
 EOF
      },
     );

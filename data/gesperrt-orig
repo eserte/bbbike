@@ -74,7 +74,7 @@ Altstadt Köpenick	1 22451,4749 22439,4838
 Landjägerstr.	1 22740,4415 22542,4485 22495,4523
 Alter Markt	1 22470,4691 22395,4678
 Futranplatz	1 22388,4737 22451,4749
-Alt-Köpenick	1 22138,4661 22175,4730 22196,4847
+Alt-Köpenick	1 22144,4660 22175,4730 22198,4800 22196,4847
 (Am S-Bahnhof Plänterwald): Asphalt	1 15357,8286 15284,8214 15256,8247 15242,8263 15303,8343
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 Knoten Märkische/Landsberger Allee	1 19013,14905 19175,14968 19364,15045 19507,15095 19563,15113 19694,15141 19852,15201
@@ -116,7 +116,7 @@ Nöldnerplatz	1 15870,10938 15903,10906 16049,10844
 Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
 Richterstr.	1s:q3 22092,999 22120,886
 Richterstr.	1s:q3 22062,773 22007,711
-Grünau/B179	1 22007,711 21861,802 21894,881 21977,988 22044,1018 22092,999
+Grünau/B179	1 22007,711 21862,807 21894,881 21977,988 22044,1018 22092,999
 Dorfplatz	1 21074,-475 20986,-529 20890,-546 20827,-537 20999,-489 21074,-475
 B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532 21819,1595 21541,1739
 Zufahrt zur B96a	2 20288,-511 20272,-501
@@ -324,7 +324,7 @@ Saltykowstr.	1 12726,7887 12865,7923
 (Drorystr. - Braunschweiger Str., Schulhof)	2 13518,7477 13601,7366
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4360&options=4 ("alltägliche Praxis")
 #: XXX evtl. wird die Einbahnstraßenregelung aufgehoben oder geändert
-#: last_checked: 2015-07-23
+#: last_checked: 2016-07-23
 #: check_frequency: 300d
 Barbarastr.	1s:q3 6456,3038 6372,2959 6329,2916 6359,2875 6372,2856
 Leipziger Platz	1 8596,11508 8599,11474 8639,11441 8713,11448 8743,11489 8740,11524
@@ -572,7 +572,7 @@ Ingelheimer Str.	1 18891,8586 18951,8574 19030,8559
 Gleyeweg	1 17566,8199 17532,8125 17529,8073 17613,7989 17651,7973 17683,7958 17762,7931
 Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 19599,14273 19595,14348 19593,14405 19593,14452
 Murtzaner Ring	1 19818,14064 19843,14064 19921,14064 19951,14083 20040,14179
-Rosenstr.	1 22284,4653 22212,4655 22138,4661
+Rosenstr.	1 22284,4653 22212,4655 22144,4660
 Laurenzstr.	1 22246,4711 22175,4730
 # REMOVED --- Gotenburger Str.	1 9000,16803 8844,16863
 Werrastr.: Firmengelände	2 13802,8195 13697,8279
@@ -1123,7 +1123,7 @@ Wiltinger Str.	1 2384,25679 2375,25607
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5732 vvv
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.489468.php
 #: XXX (wann) wird die Einbahnstraßenregelung für Radfahrer aufgehoben? -> nach gesperrt_car-orig überführen vvv
-#: last_checked: 2016-06-20 vvv
+#: last_checked: 2016-07-23 vvv
 Leonhardyweg	1s 9033,8029 9035,7810 9040,7648
 Leonhardyweg	1s 9033,8029 9032,8254
 Kleineweg	1s 9130,7810 9132,7661
@@ -1135,6 +1135,7 @@ Kleineweg	1s 9128,8251 9130,8029
 Gartenstr.	1s:q3 720,2718 835,2715
 Gartenstr.	1 835,2715 912,2965
 Kilstetter Str.	1 1532,2921 1536,3029 1575,3054 1689,3125 1835,2898
+Belßstr.	1s:q2 7899,2391 7983,2348 7987,2337
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -2720,14 +2721,16 @@ Drängelgitter	BNP:3 31665,48997
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: source_id: INKO_2147340291_COPY_1 vvv
-#: last_checked: 2016-07-21 vvv
-#: next_check: 2016-09-15 vvv
-#: valid: -20160915 vvv
+#: source_id: 2147340291 vvv
+#: last_checked: 2016-07-22 vvv
+#: next_check: 2016-09-01 vvv
+#: valid: -20160901 vvv
 Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11512,10105 11616,10288
 Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11671,10402 11616,10288
 #: valid ^^^
 #: next_check ^^^
 #: last_checked ^^^
+#: source_id ^^^
 #: source_id ^^^
 # 
 #: next_check_id: MINNATODENHAGENSTR-2016
@@ -2735,7 +2738,7 @@ Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11671,10402 11616,10288
 #: next_check: 2016-12-01
 Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17082,7189 16954,7096 16720,6845
 # 
-#: last_checked: 2016-06-26
+#: last_checked: 2016-07-23
 Alfonsstr.: Bauzäune	2::inwork 19027,1427 19034,1441 19061,1457
 # 
 #: last_checked: 2016-07-15
@@ -2849,13 +2852,11 @@ Kleiner Tiergarten: wegen Bauarbeiten gesperrt	2::inwork 6561,13151 6556,13240 6
 # 
 #: next_check_id: FISCHERINSEL-2015 vvv
 #: source_id: 2147339543 vvv
-#: last_checked: 2016-06-21 vvv
-#: next_check: 2016-07-30 vvv
+#: last_checked: 2016-07-20 vvv
 Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10703,11837
 Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10703,11837 10687,11853 10869,11949
 Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10672,11870
 Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,11853 10869,11949
-#: next_check ^^^
 #: last_checked ^^^
 #: source_id ^^^
 #: next_check_id ^^^
@@ -2914,7 +2915,7 @@ Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17651,-393
 #: source_id: IM_023816 vvv
 #: source_id: 2147339541 vvv
 #: XXX vermutlich bis Mitte Mai 2016 andauernd; laut fritz und vmz bis Ende Oktober
-#: last_checked: 2016-06-23 vvv
+#: last_checked: 2016-07-22 vvv
 #: next_check: 2016-10-28 vvv
 Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081
 Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081
@@ -2964,27 +2965,25 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 #: check_frequency: 180d
 Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352
 # 
-#: last_checked: 2016-07-19
+#: osm_watch: way id="193373934" version="4"
+#: last_checked: 2016-07-23
+#: check_frequency: 60d
 Frauenauer Str.: Straße fertig, aber noch gesperrt	2::inwork 19663,9757 19858,9775
 # 
-#: last_checked: 2016-07-19
+#: osm_watch: way id="290255259" version="2"
+#: last_checked: 2016-07-23
+#: check_frequency: 60d
 Kirchdorfer Str.: Straße fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9775 19871,9680
 # 
 #: osm_watch: way id="24845189" version="12"
-#: last_checked: 2016-05-22
+#: last_checked: 2016-07-23
 #: check_frequency: 60d
 Viechtacher Str.: Straße fertig, aber noch gesperrt	2::inwork 19801,9680 19871,9680 19923,9682
 # 
-#: last_checked: 2016-05-21 vvv
+#: last_checked: 2016-07-23 vvv
 #: check_frequency: 60d vvv
-#: XXX man kann aber über die provisorische Baustraße von Süden aus in die gesperrten Straßen gelangen
-#: osm_watch: way id="287119368" version="8"
-#: XXX_osm laut osm (teilweise) nicht mehr gesperrt (stimmt aber nicht)
-#: osm_watch: way id="290220612" version="3"
-Regener Str.: fertiggestellt, aber noch gesperrt	2::inwork 19790,9478 19859,9473 19894,9470 19889,9400 19874,9151
-#: XXX_osm laut osm nicht mehr gesperrt (stimmt aber nicht)
-#: osm_watch: way id="193373966" version="6"
-Patersdorfer Str.: fertiggestellt, aber noch gesperrt	2::inwork 19626,9171 19764,9160 19874,9151
+# REMOVED --- #: XXX man kann aber über die provisorische Baustraße von Süden aus in die gesperrten Straßen gelangen --- #: osm_watch: way id="287119368" version="8" --- #: XXX_osm laut osm (teilweise) nicht mehr gesperrt (stimmt aber nicht) --- #: osm_watch: way id="290220612" version="3" --- Regener Str.: fertiggestellt, aber noch gesperrt	2::inwork 19790,9478 19859,9473 19894,9470 19889,9400 19874,9151
+# REMOVED --- #: XXX_osm laut osm nicht mehr gesperrt (stimmt aber nicht) --- #: osm_watch: way id="193373966" version="6" --- Patersdorfer Str.: fertiggestellt, aber noch gesperrt	2::inwork 19626,9171 19764,9160 19874,9151
 #: osm_watch: way id="193373957" version="5"
 Teisnacher Str.: fertiggestellt, aber noch gesperrt	2::inwork 19871,9680 19859,9473
 #: check_frequency ^^^
@@ -3382,7 +3381,7 @@ tragen (ca. 60 Stufen)	0:80 -8120,-1500
 tragen	0:60 -8451,-1418
 Hausotterpl.	1 8319,18190 8345,18182 8355,18165 8355,18142 8333,18132 8310,18132 8296,18154 8299,18172 8319,18190
 #: by: Holger Buechner [AM]
-Brauerstr.	1 5167,2160 5317,2345
+Brauerstr.	1 5159,2176 5317,2345
 #: by: rene carmosin [AM]
 #: confirmed_by: srt
 Grußdorfstr.	1 2356,20216 2323,20214 2109,20188
