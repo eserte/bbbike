@@ -362,7 +362,7 @@ Bus M27	busroute_N 10830,17985 10705,17931 10548,17817 10459,17754 10311,17764 1
 Bus M27, Bus 250	busroute_N 10179,17772 10053,17777 9835,17797 9727,17804
 Bus 250	busroute_N 9549,17625 9383,17757 9358,17798 9236,17907 9190,17932 9171,17937 9147,17941 8944,17971 8746,17827 8536,17786
 Bus 155	busroute_N 9501,18902 9876,19026
-Bus 155	busroute_N 15280,17352 15267,17349 15217,17284
+Bus 155	busroute_N 15278,17352 15267,17349 15217,17284
 Bus 250	busroute_N 11162,19844 11229,19706 11278,19607 11437,19664 11652,19743 11695,19760 11627,19907 11563,20048 11419,20327 11269,20667
 Bus 251	busroute_N 16390,26315 16045,25907
 Bus M27	busroute_N 10815,18074 10900,18113 10970,18164 10993,18203
@@ -672,7 +672,7 @@ Kirchhofweg: nicht ausgeschildert	CS 11608,7267 11687,7284 12180,7387
 Weidenweg (Altglienicke) [21B-21K]: Privatweg	CS 19879,-378 20050,-386 20248,-397 20300,-416
 Steffenstr.: nicht ausgeschildert, Zufahrt zum Sportforum	CP2; 15580,14880 15568,14901
 Hohenschönhauser Str.: ausgeschildert "Zu den Sport- und Tennisplätzen"	CP2; 14754,14406 14682,14572
-An den Feldtmanngärten: Privatstraße	CS 15810,17512 15802,17446 15537,17484 15271,17439
+An den Feldtmanngärten: Privatstraße	CS 15810,17512 15802,17446 15537,17484 15264,17438
 Segitzdamm: als Oranienplatz ausgeschildert	CP2; 11159,10769 11133,10704
 Legiendamm: als Oranienplatz ausgeschildert	CP2; 11275,10723 11301,10783
 #: by: guylian
@@ -1116,7 +1116,7 @@ Unterführung kann unter Wasser stehen	CS 13617,21819 13644,21808
 nicht ausgeschildert	CP2; 16104,19165 16158,19049
 nicht ausgeschildert	CP2; 16633,7434 16620,7574
 #: add_fragezeichen: Wann werden die Straßen im Olympiaviertel ausgeschildert? vvv
-#: last_checked: 2016-05-29 vvv
+#: last_checked: 2016-07-24 vvv
 Helga-Haase-Str.: nicht ausgeschildert	CS 17465,16340 17508,16356 17611,16396 17673,16420 17792,16465
 Jutta-Langenau-Str.: nicht ausgeschildert	CS 17615,16310 17643,16322 17818,16397 17857,16414 17877,16423
 Gerhard-Schulz-Str.: nicht ausgeschildert	CS 17508,16356 17497,16385 17552,16461

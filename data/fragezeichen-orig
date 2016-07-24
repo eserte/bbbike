@@ -184,7 +184,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 #: osm_watch: way id="182782708" version="4"
 #: osm_watch: way id="168307255" version="3"
 #: osm_watch: way id="4687243" version="23"
-#: last_checked: 2016-06-29
+#: last_checked: 2016-07-24
 #: check_frequency: 60d
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14658,14328 14464,14216 14358,14155 14298,14015 14261,13932 14218,13834
 # 
@@ -392,16 +392,17 @@ Karlinekenweg: neue Straße, existiert sie schon, Qualität, genaue Lage?	?::proje
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5550
 #: XXX Umsetzung bis 2017
+#: last_checked: 2016-07-24
 #: next_check: 2017-01-01
-Landsberger Allee: Ausbau der Radwege	? 18057,14549 17848,14523 17533,14484 17254,14451 16852,14412 16632,14390 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308 15430,14262 15256,14237 14964,14123 14954,14119 14871,14087 14771,14048 14218,13834
+Landsberger Allee: Ausbau der Radwege	? 18057,14549 17848,14523 17533,14484 17254,14451 17055,14432 16852,14412 16632,14390 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308 15430,14262 15256,14237 14964,14123 14954,14119 14871,14087 14771,14048 14218,13834
 # 
-#: last_checked: 2016-05-29
+#: last_checked: 2016-07-24
 #: check_frequency: 100d
 Baumarkt (?) wird gebaut: wird es eine Durchfahrmöglichkeit geben?	?::inwork 17010,14269 17060,14255 17221,14268 17274,14280
 # 
 #: last_checked: 2016-04-17
 #: next_check: 2016-07-03
-Buschallee: wird der Radstreifen nach den Bauarbeiten verlängert?	?::inwork; 15572,16463 15437,16491
+Buschallee: wird der Radstreifen nach den Bauarbeiten verlängert?	?::inwork; 15541,16479 15437,16491
 # 
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.466174.php
 #: by: http://www.berlin.de/ba-spandau/_assets/ueber-den-bezirk/16-04-07-havel-radweg-schifffahrtsufer-umleitung.jpg
@@ -1471,7 +1472,7 @@ Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?
 #: next_check: 2016-09-30
 Wröhmännerpark: nach den Bauarbeiten "gelber Farbasphalt", vermutlich für Radfahrer legal befahrbar	2::inwork -2955,15129 -2929,15082 -2965,15053 -3008,14992 -3008,14910 -2998,14879 -3030,14844 -3066,14718
 # 
-Plauener Str. (Verlängerung): Qualität? Kann man über die Grünanlage zur Hofheimer Str. gelangen?	? 17531,14923 17558,14840
+# REMOVED (ja, lohnt aber nicht) --- Plauener Str. (Verlängerung): Qualität? Kann man über die Grünanlage zur Hofheimer Str. gelangen?	? 17558,14840 17558,14840
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5460
 Wilhelminenhofstr./Firlstr.: wo genau befindet sich die Ampel?	? 18464,6299 18473,6265 18486,6230
@@ -1796,7 +1797,7 @@ Pilgramer Str.: Radfahrstreifen in Planung	?::projected 25149,10695 25149,10731 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/23re.pdf/file?y=2016 (Benennung)
 #: XXX fehlt in Berlin.coords.data
 #: osm_watch: way id="378441391" version="1"
-#: last_checked: 2016-04-17
+#: last_checked: 2016-07-24
 #: check_frequency: 90d
 Abbè-Lemire-Weg: Straßenbenennung, wann passiert sie?	? 16296,17114 16229,17217 16146,17304 16141,17325 15939,17412 15839,17431 15814,17454 15821,17510
 # 
@@ -2645,8 +2646,8 @@ Bebauungsplan 10-77: werden hier neue Straßen entstehen?	?::projected 21483,1652
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6436
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036284949883/284949883/00122677/77-Anlagen/02/Anlage1775.pdf
 #: XXX geplante neue Straßen im Komplex ArendsCarrée (Bebauungsplan 11-24 VE), noch nicht bestätigt, fehlen in Berlin.coords.data, genaue Lage? vvv
-#: last_checked: 2016-02-28 vvv
-#: check_frequency: 360d vvv
+#: last_checked: 2016-07-24 vvv
+#: check_frequency: 2700d vvv
 Agnethaweg	?::projected 17221,15181 17245,15182 17314,15186 17336,15187
 Anni-Frid-Weg	?::projected 17234,15053 17258,15053 17323,15054 17346,15055
 Bennyweg	?::projected 17245,15182 17258,15053

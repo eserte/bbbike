@@ -1186,8 +1186,9 @@ Am Walde: Asphalt	Q0 17771,7880 17678,7850 17590,7828 17527,7812
 Prager Platz: gutes Kopfsteinpflaster	Q1 5661,9630 5657,9600 5630,9592 5602,9606 5595,9626
 Normannenstr.: Kopfsteinpflaster	Q2 16159,12301 16227,12280 16276,12273
 Rüdigerstr. (Lichtenberg): Asphaltstreifen	Q1; 17466,12241 17375,12255
+#: add_fragezeichen: ist hier das Kopfsteinpflaster geblieben?
 Rüdigerstr. (Lichtenberg): Kopfsteinpflaster	Q2; 17375,12255 17466,12241
-Rüdigerstr. (Lichtenberg): Kopfsteinpflaster	Q2- 17375,12255 17314,12265 17218,12281 17184,12288 17122,12295 17056,12304 17020,12309 16918,12325 16820,12339
+Rüdigerstr. (Lichtenberg): Asphalt	Q0 17375,12255 17314,12265 17218,12281 17184,12288 17122,12295 17056,12304 17020,12309 16918,12325 16820,12339
 Barbarossastr.: Kopfsteinpflaster	Q2 7128,9512 7007,9522
 Prühßstr.: Beton	Q0- 8780,4054 8962,4096
 Prühßstr.: Kopfsteinpflaster	Q2 8962,4096 9106,4114 9346,4144
@@ -1619,7 +1620,7 @@ Hebbelstr.: Gehwegpflasterung	Q1- 3117,11852 3251,12025 3258,12035 3295,12068
 Hebbelstr.: Kopfsteinpflaster	Q2 3295,12068 3367,12156
 Am Comeniusplatz: Kopfsteinpflaster	Q2 13275,11830 13406,11896
 Josef-Orlopp-Str.: Asphalt	Q0 15912,13153 16426,13145 16863,13138
-Landsberger Allee: Betonradweg	Q1 16852,14412 17254,14451 17533,14484 17848,14523 18057,14549
+Landsberger Allee: Betonradweg	Q1 16852,14412 17055,14432 17254,14451 17533,14484 17848,14523 18057,14549
 #: note: In Richtung Westen ist der Radweg nicht benutzungspflichtig, allerdings ist die Fahrbahn sehr stark befahren. vvv
 Landsberger Allee: Betonradweg	Q1 18183,14573 18365,14607
 Landsberger Allee: Asphaltradweg nur mit mäßiger Qualität	Q1 18365,14607 18410,14614 18558,14680 18798,14808
@@ -3613,7 +3614,7 @@ Küllstedter Str.: Asphalt	Q0 17363,14760 17377,14678 17392,14591 17400,14511
 Joachimsthaler Str. (Alt-Hohenschönhausen): Asphalt	Q0 16918,14901 16943,14785 17063,14797
 Joachimsthaler Str. (Alt-Hohenschönhausen): Beton	Q1 17063,14797 17129,14804 17117,14885
 Schleizer Str.: Verbundsteinpflaster	Q1 16799,15007 17231,14979
-Schleizer Str.: Asphalt	Q0 17231,14979 17613,15003
+Schleizer Str.: Asphalt	Q0 17231,14979 17562,14992 17608,15010
 Lichtenauer Str.: Verbundsteinpflaster	Q1 16835,15188 17062,15184
 Lichtenauer Str.: Beton	Q1 17062,15184 17221,15181
 Lindenweg (Alt-Hohenschönhausen): Asphalt	Q0- 16251,15629 16297,15737 16360,15889
@@ -4616,7 +4617,7 @@ Piesporter Str.: Beton	Q0- 15381,16548 15333,16776
 Wittlicher Str.: welliger Asphalt	Q1 15178,17134 15188,17055 15208,16939 15235,16761
 Neumagener Str.: Asphalt	Q0 14910,17010 15188,17055
 Brodenbacher Weg: Gehwegplatten	Q1+ 15278,17152 15308,17166
-Piesporter Str. - Liebermannstr.: Asphalt/Beton	Q1+ 15280,17352 15267,17349 15217,17284
+Piesporter Str. - Liebermannstr.: Asphalt/Beton	Q1+ 15278,17352 15267,17349 15217,17284
 Liebermannstr.: Asphalt	Q1+ 15286,17300 15397,17325 15467,17340 15544,17350 15623,17343 15785,17303
 Liebermannstr.: unbefestigte Straße	Q2+ 15960,17220 16023,17175
 Liebermannstr.: Asphalt	Q0 16023,17175 16083,17111 16139,17017
@@ -10079,7 +10080,7 @@ Straße zum Müggelturm: Asphalt/Beton	Q0- 25008,2889 25010,2794 24978,2634 24981,
 Lohmeyerstr.: Kopfsteinpflaster	Q2 3348,12314 3409,12451
 #: add_fragezeichen: Wann werden die Straßen im Olympiaviertel ausgebaut? vvv
 #: XXX wird hier auch verkehrsberuhigt, zumindest teilweise? vvv
-#: last_checked: 2016-05-29 vvv
+#: last_checked: 2016-07-24 vvv
 Helga-Haase-Str.: unbefestigte Baustraße	Q2- 17465,16340 17508,16356 17611,16396 17673,16420 17792,16465
 #: osm_watch: way id="354078625" version="4"
 Jutta-Langenau-Str.: unbefestigte Baustraße	Q2- 17615,16310 17643,16322 17818,16397 17857,16414 17877,16423
@@ -10746,7 +10747,7 @@ Wuhlestr.: Beton	Q0 21562,13424 21580,13583 21593,13705 21615,13892
 #: confirmed_by: srt
 Grimbartsteig: Verbundsteinpflaster	Q1 -1368,22091 -1166,22037 -1136,22029 -990,21992 -918,21975 -667,21881 -562,21846 -464,21828
 #: corrected_by: srt (gut -> sehr gut)
-An den Feldtmanngärten: sehr guter Asphalt	Q0+ 15810,17512 15802,17446 15537,17484 15271,17439
+An den Feldtmanngärten: sehr guter Asphalt	Q0+ 15810,17512 15802,17446 15537,17484 15264,17438
 Föttingerzeile: guter Asphalt	Q0 10228,1194 10041,1328 9908,1416
 #: confirmed_by: srt
 Rue Ambroise Paré: guter Asphalt	Q0 3643,16437 3624,16445 3606,16453 3481,16480 3375,16558
@@ -22115,9 +22116,10 @@ Schmale Gasse: Asphalt	Q0 23883,4328 24055,4348 24075,4417
 Bitburger Str.: guter bis mäßiger Asphalt	Q1+ 16645,17449 16595,17508 16522,17541 16346,17561 15839,17634
 #: corrected_by: srt (mittlerweile (?) einwandfreier Asphalt)
 Bitburger Str.: Asphalt	Q0 15839,17634 15548,17684
-Bitburger Str.: Waldweg, kann an feuchten Tagen etwas schlammig werden	Q2 15548,17684 15515,17717 15478,17724 15439,17698
-#: XXX ist die Qualität hier vielleicht auch Q0?
-Bitburger Str.: guter bis mäßiger Asphalt	Q1 15439,17698 15220,17729
+#: confirmed_by: srt
+Bitburger Str.: Waldweg, kann an feuchten Tagen etwas schlammig werden	Q2 15548,17684 15515,17717 15478,17724 15441,17705 15367,17713
+#: confirmed_by: srt (klargestellt: "rauer")
+Bitburger Str.: rauer Asphalt	Q1 15367,17713 15220,17729
 #: by: ^^^
 # 
 #: by: Thomas (theo...)
@@ -22749,8 +22751,10 @@ Privatstr. 4: mäßiger Asphalt, unebene Fahrbahn, diverse kleine Schlaglöcher	Q1-
 Privatstr. 6: schlechter Asphalt, unebene Fahrbahn, diverse Schlaglöcher	Q2 16966,16978 17134,16988 17290,16957
 #: corrected_by: srt (mäßiger Asphalt -> ..., neu gemacht?)
 Privatstr. 8: Asphalt	Q0 16992,16840 17120,16849 17237,16825
+#: corrected_by: srt (hier besser)
+Privatstr. 9: Asphalt	Q0 17004,16778 17117,16785
 #: confirmed_by: srt
-Privatstr. 9: mäßiger Asphalt, unebene Fahrbahn, diverse kleine Schlaglöcher	Q1 17004,16778 17117,16785 17212,16760
+Privatstr. 9: mäßiger Asphalt, unebene Fahrbahn, diverse kleine Schlaglöcher	Q1 17117,16785 17212,16760
 Privatstr. 12: schlechter Asphalt, unebene Fahrbahn, diverse Schlaglöcher	Q2 17182,17375 17418,17277
 #: note: "mäßig von Fußgängern frequentiert, da der Weg gut 2 m breit ist, hatte ich da auch noch nie Probleme mit den Fußgängern beim Vorbeifahren"
 #: confirmed_by: srt
@@ -25263,7 +25267,7 @@ Marzahner Str.: Beton	Q0 17488,15766 17624,15767 17651,15766 17940,15771
 Marzahner Str.: Beton	Q0 17940,15771 18173,15778 18576,15788 18623,15587 18422,15583 18177,15579 18173,15778
 Schöneicher Str. (Alt-Hohenschönhausen): Kopfsteinpflaster	Q2 16694,15658 16658,15627 16628,15532 16584,15489
 Schöneicher Str. (Alt-Hohenschönhausen): Kopfsteinpflaster	Q2 16675,15688 16628,15642 16597,15552 16550,15503
-#: note: [SRT]
+#: confirmed_by: srt
 Hauptstr. (Alt-Hohenschönhausen): teils asphaltiert, teils Kopfsteinpflaster	Q2 17418,16014 17474,15988 17495,15949 17516,15850 17510,15789
 #: by: ^^^
 # 
@@ -25914,10 +25918,8 @@ Dietlindestr.: Asphalt	Q0 17056,12304 17087,12501
 #: corrected_by: srt (Q0 -> )
 Dietlindestr.: Asphalt mit leichten Schäden	Q1+ 17087,12501 17088,12617
 Ortliebstr.: Asphalt	Q0 17087,12501 17210,12486 17249,12478
-#: corrected_by: srt (added "schlechtes")
-Kriemhildstr.: schlechtes Kopfsteinpflaster	Q3; 17300,12173 17314,12265
-#: corrected_by: srt (added "schlechtes" and Asphaltstreifen)
-Kriemhildstr.: schlechtes Kopfsteinpflaster, schmaler Asphaltstreifen am Rand	Q2-; 17314,12265 17300,12173
+#: corrected_by: srt (früher Kopfsteinpflaster, jetzt neu gemacht)
+Kriemhildstr.: Asphalt	Q0 17300,12173 17314,12265
 #: confirmed_by: srt
 Kriemhildstr.: Asphalt	Q0 17314,12265 17320,12308 17337,12428 17346,12490 17357,12566
 #: corrected_by: srt (Asphalt -> )
@@ -25927,7 +25929,9 @@ Hagenstr. (Lichtenberg): Kopfsteinpflaster	Q2 16933,12432 16918,12325
 #: confirmed_by: srt
 Hagenstr. (Lichtenberg): Asphalt	Q0 16918,12325 16890,12135 16865,11931
 #: note: ähnlich von Jill Laukat bestätigt "Kopfsteinpfalster, schlechte Radbedingungen, jedoch breiter Fußweg und kaum Fußgänger"
-Gernotstr. (Lichtenberg): Kopfsteinpflaster	Q3 17122,12295 17092,12107 17088,12069
+Gernotstr. (Lichtenberg): Kopfsteinpflaster	Q3 17122,12295 17092,12107
+#: XXX liegt hier zwischen den Schienen Asphalt?
+Gernotstr. (Lichtenberg): Kopfsteinpflaster	Q3 17092,12107 17088,12069
 Volkerstr.: Kopfsteinpflaster	Q3 17218,12281 17195,12125
 #: confirmed_by: srt (schlechter Asphalt, Q2 -> ...)
 (Am Städt. Zentralfriedhof - Rhinstr.): unebener Asphalt	Q1- 17785,12257 17835,12282 18037,12362 18098,12376
