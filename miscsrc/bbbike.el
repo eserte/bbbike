@@ -331,7 +331,8 @@
   (interactive)
   (let ((now-iso-date (format-time-string "%Y-%m-%d" (current-time)))
 	begin-iso-date-pos
-	end-iso-date-pos)
+	end-iso-date-pos
+	(currpos (point)))
     (save-excursion
       (search-backward-regexp "\\(^\\| \\)")
       (setq begin-iso-date-pos (1+ (match-beginning 0)))
@@ -346,6 +347,8 @@
       (goto-char begin-iso-date-pos)
       (delete-region begin-iso-date-pos end-iso-date-pos)
       (insert now-iso-date))
+
+    (goto-char currpos) ; this works because the length of a ISO date is constant (at least for a long time ;-)
     )
   )
 
