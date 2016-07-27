@@ -2305,6 +2305,27 @@ userdel	2::inwork 22084,5877 21846,5856 21744,5804 21602,5685
          'text' => 'Tautenburger Str.: zwischen Blankenhainer Str. und Brotteroder Str. Baustelle, Sperrung der Fahrbahn, Radfahrer dürfen den Gehweg benutzen, bis Ende August 2016',
          'type' => 'handicap',
          'until' => 1472680799
+       },
+       {
+         'data' => 'userdel	2::inwork 23792,10926 24203,10848 24229,10843
+',
+         'from' => 1469311200,
+         'id' => 2811,
+         'source_id' => '2147340370',
+         'text' => 'Elsenstr.: Baustelle zwischen Kressenweg und Hultschiner Damm, Fahrbahn gesperrt, bis Ende August 2016 ',
+         'type' => 'gesperrt',
+         'until' => 1472248799
+       },
+       {
+         'data' => 'userdel	2::inwork 25571,4553 25658,4619
+',
+         'dont_check_date' => 1,
+         'from' => 1469570400,
+         'id' => 2812,
+         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1607/nachricht6127.html',
+         'text' => 'Spreetunnel: Vollsperrung an den folgenden Tagen jeweils von 20.00 Uhr bis 04.00 Uhr: 28.07.2016 - 29.07.2016, 01.08.2016 - 02.08.2016, 02.08.2016 - 03.08.2016',
+         'type' => 'gesperrt',
+         'until' => 1470189600
        }
      
 );

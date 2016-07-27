@@ -1360,7 +1360,7 @@ Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus
 #: next_check_id: ALEXANDRINENSTR-2016
 #: XXX Einbahnstraßenrichtung umgedreht, vermutlich wegen der Einbahnstraße in der Alexandrinenstr.?
 #: XXX alter Eintrag: Stallschreiberstr.	1s:q1 10489,11405 10620,11244 10678,11172
-#: last_checked: 2016-07-05
+#: last_checked: 2016-07-25
 #: next_check: 2016-09-16
 #: priority: #A
 Stallschreiberstr.	1s:q2 10678,11172 10620,11244 10489,11405
@@ -2722,7 +2722,7 @@ Drängelgitter	BNP:3 31665,48997
 # 
 #: source_id: INKO_2147340291_COPY_1 vvv
 #: source_id: 2147340291 vvv
-#: last_checked: 2016-07-22 vvv
+#: last_checked: 2016-07-26 vvv
 #: next_check: 2016-09-01 vvv
 #: valid: -20160901 vvv
 Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11512,10105 11616,10288
@@ -2750,8 +2750,8 @@ Haasestr.: Bauarbeiten, keine Durchfahrt möglich	2::inwork 14328,11320 14286,111
 # 
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 vvv --- #: last_checked: 2016-06-02 vvv --- #: check_frequency: 14d vvv --- Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12844,9351 12851,9309 12907,9073 --- Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12907,9073 12851,9309 12844,9351
 # 
-#: last_checked: 2016-06-16
-#: check_frequency: 30d
+#: last_checked: 2016-07-25
+#: check_frequency: 14d
 Keibelstr.: Bauarbeiten, Fahrbahn wird neu gemacht, Durchfahrt nicht möglich	2::inwork 11108,13142 11201,13289
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2015
@@ -2763,7 +2763,7 @@ Lutterbacher Str.: noch Baustelle	2::inwork 2094,3231 1993,3170 2072,3034 2163,3
 #: XXX Bauarbeiten (Erweiterung des Rütli-Campus?)
 #: XXX Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="137084083" version="6"
-#: last_checked: 2016-06-30
+#: last_checked: 2016-07-26
 #: check_frequency: 60d
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,9200 12548,9167
 # 
@@ -2784,8 +2784,8 @@ Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7741,14560 7527,14
 # REMOVED (fertig) --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.476901.php --- #: next_check: 2016-05-14 --- Treptower Park: Bauarbeiten	2::inwork 14695,9587 14705,9578 14791,9537
 # REMOVED (fertig) --- Treptower Park: Bauarbeiten	2::inwork 15591,8848 15608,8882 15617,8924 15623,8949 15630,8979
 #: XXX evtl. kann man hier als Fußgänger irgendwie vorbei
-#: last_checked: 2016-07-20 vvv
-#: check_frequency: 7d
+#: last_checked: 2016-07-26 vvv
+#: check_frequency: 3d
 Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14448,9922 14467,9880 14500,9863
 #: last_checked ^^^
 # 
@@ -2852,11 +2852,13 @@ Kleiner Tiergarten: wegen Bauarbeiten gesperrt	2::inwork 6561,13151 6556,13240 6
 # 
 #: next_check_id: FISCHERINSEL-2015 vvv
 #: source_id: 2147339543 vvv
-#: last_checked: 2016-07-20 vvv
+#: last_checked: 2016-07-25 vvv
+#: check_frequency: 60d vvv
 Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10703,11837
 Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10703,11837 10687,11853 10869,11949
 Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10672,11870
 Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,11853 10869,11949
+#: check_frequency ^^^
 #: last_checked ^^^
 #: source_id ^^^
 #: next_check_id ^^^
@@ -2915,7 +2917,7 @@ Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17651,-393
 #: source_id: IM_023816 vvv
 #: source_id: 2147339541 vvv
 #: XXX vermutlich bis Mitte Mai 2016 andauernd; laut fritz und vmz bis Ende Oktober
-#: last_checked: 2016-07-22 vvv
+#: last_checked: 2016-07-25 vvv
 #: next_check: 2016-10-28 vvv
 Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081
 Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081

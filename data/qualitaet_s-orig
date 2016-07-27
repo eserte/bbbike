@@ -159,7 +159,7 @@ Corneliusstr.: mäßiges Kopfsteinpflaster	Q2 6880,11110 6841,11114 6630,11247 647
 Kopernikusstr.: mäßiges Kopfsteinpflaster	Q2 13467,11778 13651,11731
 Torellstr.: mäßiges Kopfsteinpflaster	Q2 13295,11792 13467,11778
 #: XXX Bauarbeiten, danach vielleicht teilweise bessere Qualität?
-#: last_checked: 2016-07-22
+#: last_checked: 2016-07-26
 #: check_frequency: 60d
 Rüdersdorfer Str.: Asphalt mit Schäden	Q1- 13295,11792 13173,11788 13066,11854
 Kaskelstr.: relative glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
@@ -2020,6 +2020,8 @@ Treseburger Ufer: Kopfsteinpflaster, Umgehen auf dem Uferweg möglich	Q2 12052,57
 Treseburger Ufer: Verbundsteinpflaster	Q0- 12301,5783 12453,5844 12507,5860
 Treseburger Ufer: wassergebundene Decke	Q1 12507,5860 12636,5896 12699,5909
 (Treseburger Ufer - Rungiusstr.): Kopfsteinpflaster	Q2 12699,5909 12736,5913
+#: XXX Asphalt durch Betonpflaster ersetzt
+#: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2016/pressemitteilung.502417.php
 (Treseburger Ufer - Rungiusstr.): asphaltiert	Q0 12736,5913 13064,5953
 Delfter Ufer: überwiegend guter Asphalt, einige Stellen mit Baumwurzeln	Q0 13532,5987 13646,6019 13766,6019 14002,5936 14138,5818 14223,5658 14221,5626 14238,5596 14270,5572 14323,5455 14340,5406
 (Delfter Ufer - Späthstr., Rampe): grobes Verbundsteinpflaster	Q2 14323,5395 14236,5393
@@ -6991,7 +6993,7 @@ Bebelplatz: gepflastert	Q1 9674,12231 9702,12307 9734,12395
 (Park am Gleisdreieck, Eingang Kurfürstenstr.): Beton	Q0 8058,10306 8180,10282 8253,10265
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): wassergebundene Decke	Q1 8263,10187 8276,10079
 #: next_check_id: HELLWEG-2014 vvv
-#: last_checked: 2016-04-11 vvv
+#: last_checked: 2016-07-25 vvv
 #: check_frequency: 100d vvv
 #: XXX wird hier noch eine wassergebundene Decke erstellt?
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): unbefestigt	Q2 8276,10079 8289,9988

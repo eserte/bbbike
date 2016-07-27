@@ -25326,4 +25326,23 @@ EOF
 userdel	q3::inwork 6984,1540 6881,1743
 EOF
      },
+     { from  => 1469311200, # 2016-07-24 00:00
+       until => $isodate2epoch->("2016-08-26 23:59:59"), # 1472680799, # 2016-08-31 23:59
+       text  => 'Elsenstr.: Baustelle zwischen Kressenweg und Hultschiner Damm, Fahrbahn gesperrt, bis Ende August 2016 ',
+       type  => 'gesperrt',
+       source_id => '2147340370',
+       data  => <<EOF,
+userdel	2::inwork 23792,10926 24203,10848 24229,10843
+EOF
+     },
+     { from  => 1469570400, # 2016-07-27 00:00
+       until => 1470189600, # 2016-08-03 04:00
+       dont_check_date => 1,
+       text  => 'Spreetunnel: Vollsperrung an den folgenden Tagen jeweils von 20.00 Uhr bis 04.00 Uhr: 28.07.2016 - 29.07.2016, 01.08.2016 - 02.08.2016, 02.08.2016 - 03.08.2016',
+       type  => 'gesperrt',
+       source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1607/nachricht6127.html',
+       data  => <<EOF,
+userdel	2::inwork 25571,4553 25658,4619
+EOF
+     },
     );

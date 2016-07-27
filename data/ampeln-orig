@@ -2817,11 +2817,11 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: source_id: 2147339543 vvv
 #: XXX laut rbbtext bis 30.06.2016
 #: XXX laut fritz bis 31.07.2016
-#: last_checked: 2016-06-21 vvv
-#: next_check: 2016-07-30 vvv
+#: last_checked: 2016-07-25 vvv
+#: check_frequency: 60d vvv
 	F::inwork 10703,11837
 	F::inwork 10656,11887
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: source_id ^^^
 #: source_id ^^^

@@ -4097,7 +4097,8 @@ asphaltiert	RW8;RW2 21165,18715 21137,18782
 	RW4;RW3 9388,10393 9384,10536 9375,10616 9368,10641
 	RW3;RW3 9368,10641 9323,10791 9275,10932
 	RW3; 9234,11056 9275,10932
-	RW3;RW3 9234,11056 9196,11165
+	RW4; 9234,11056 9196,11165
+	RW3; 9196,11165 9234,11056
 Radstreifen hört etwa 50 Meter vor der Ampel auf	RW3; 9275,10932 9234,11056
 asphaltiert	RW1;RW1 8182,18761 8066,18754 7886,18742
 	RW3;RW3 7886,18742 7843,18705
@@ -4728,6 +4729,7 @@ asphaltiert	RW1;RW9 18738,16957 19108,17347 19183,17444 19202,17471 19529,17902 
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.312664.php
 	RW6;RW6 -1755,22975 -1633,22950 -1506,22923
 einige Meter vor der Ampel mit Radspur	RW0; 6716,11439 6825,11486
+#: note: wobei die Radspur Richtung Osten nur am Anfang und am Ende eine durchgängige Linie hat
 	RW4;RW3 8947,10956 9234,11056
 	RW6;RW6 19871,9680 19859,9473
 	RW6;RW6 18497,9459 18505,9500 18514,9552 18520,9585 18527,9623
@@ -4775,7 +4777,7 @@ asphaltiert	RW1; 17681,6212 17843,6083
 	RW6;RW6 16163,18780 16198,18753 16210,18706 16233,18643
 #: XXX ggfs. nach den Bauarbeiten gibt es in einer Richtung ein RW4
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6081.html
-#: last_checked: 2016-06-28
+#: last_checked: 2016-07-25
 #: next_check: 2016-08-05
 	RW3;RW3 8180,9099 8389,9087
 #: by: a.joerns
