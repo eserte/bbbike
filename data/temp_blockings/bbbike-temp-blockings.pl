@@ -1774,7 +1774,7 @@ EOF
        text  => 'L 291; (Oderberger Str.); OD Eberswalde, Einm. Breite Str. Straßenbauarbeiten Vollsperrung 24.03.2005-30.04.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 38022,49097 37914,48720 37906,48495 37898,48413 37900,48350 37909,48248
+userdel	q4 38022,49097 38018,49083 37914,48720 37906,48495 37898,48413 37900,48350 37909,48248
 EOF
      },
      { from  => 1111960800, # 2005-03-28 00:00
@@ -16553,7 +16553,7 @@ EOF
        text  => 'L 085 Treuenbrietzen - Brück zw. Treuenbrietzen und Nichel Straßenbau am BÜ Vollsperrung 09.10.2009-10.10.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -25920,-35115 -26873,-34493 -27632,-34000
+userdel	q4::inwork -25920,-35115 -26879,-34486 -27632,-34000
 EOF
      },
      { from  => 1255212000, # 2009-10-11 00:00

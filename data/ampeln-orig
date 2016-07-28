@@ -2595,7 +2595,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
 #: XXX laut fritz bis 05.05.2016
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
-#: last_checked: 2016-07-05
+#: last_checked: 2016-07-27
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
@@ -2817,7 +2817,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: source_id: 2147339543 vvv
 #: XXX laut rbbtext bis 30.06.2016
 #: XXX laut fritz bis 31.07.2016
-#: last_checked: 2016-07-25 vvv
+#: last_checked: 2016-07-27 vvv
 #: check_frequency: 60d vvv
 	F::inwork 10703,11837
 	F::inwork 10656,11887
@@ -3105,7 +3105,7 @@ Umgehung mit Treppen existiert	Zbr 4611,63946
 	B 45740,14260
 	B 27647,-11196
 	B 26359,-12549
-	B -26873,-34493
+	B -26879,-34486
 	B 62486,-4480
 	B 58135,-5057
 	B 45836,-8
@@ -3511,6 +3511,8 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 #: note: Anforderungsampel
 	F -25355,76171
 	B -19408,63188
+	B -26879,-35350
+	B 38018,49083
 # 
 #: note: ^^^
 ################################################################################

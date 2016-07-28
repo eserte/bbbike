@@ -103,6 +103,8 @@ Tiergarten: Parkweg, Fuﬂg‰nger	q2 5666,11362 5727,11573 5756,11618 5790,11643 58
 Fasanerieallee: Parkweg	q1 6428,11610 6450,11641 6540,11754 6685,11954
 Groﬂe Sternallee: Parkweg	q1 6809,11979 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566 7504,11512
 (Hiroshimastr. - Groﬂe Sternallee): Parkweg	q1 7356,11517 7362,11561 7373,11594
+Am S-Bhf. Bellevue: einige Fuﬂg‰nger	q1 6694,12627 6516,12650
+Bellevue-Ufer: Parkweg	q1 7039,12314 6694,12627
 Bellevueallee: Parkweg	q1 7039,12314 7383,12095 7429,12070 7658,11947 7717,11918 7801,11875 8016,11770 8026,11764 8172,11679
 Ahornsteig: Parkweg	q1 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753 8026,11764 8140,11850 8167,11865 8221,11876 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
 Tiergarten: Parkweg	q1 8167,11865 8132,11910
@@ -261,7 +263,7 @@ F¸rther Str.: Gehweg	q2 5764,10322 5808,10284
 Goerdelersteg: enge wendelfˆrmige Rampen	q3 3663,14137 3634,14187 3625,14230 3601,14284 3595,14267
 Goerdelersteg: enge wendelfˆrmige Rampen	q3 3655,14237 3610,14219 3625,14230
 Schneckenbr¸cke: Rampe	q3 2012,3356 2009,3362 1980,3409 1977,3414
-Radweg eng und bewachsen	q1 5057,14607 5264,14671 5440,14840
+Radweg eng und bewachsen	q1 5057,14607 5264,14671 5293,14699 5331,14735 5440,14840
 zum Tunnel S-Bhf. Grunewald: Fuﬂg‰nger	q1 693,9129 731,9103
 Tunnel S-Bhf. Grunewald: Fuﬂg‰nger, Radfahren nicht erlaubt, ggfs. absteigen	q3 731,9103 884,8954
 enge Kurven	q2 33531,2772 33419,2765 33406,2738
@@ -877,7 +879,7 @@ Kirchgasse (Tegel): Fuﬂg‰nger	q1 1630,20097 1669,19982
 Hilchenbacher Weg: Fuﬂg‰nger, eng	q2 2413,18655 2416,18598
 Hilchenbacher Weg: Fuﬂg‰nger, eng	q2 2426,18544 2444,18487
 Straﬂe 455: Bordstein	q2 4916,17201 4931,17174
-(Uferweg Plˆtzensee): Fuﬂg‰nger	q1 5618,14981 5455,15245 5391,15331 5306,15387 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415 5075,15354 5005,15213
+(Uferweg Plˆtzensee): Fuﬂg‰nger	q1 5618,14981 5455,15245 5391,15331 5306,15387 5134,15565 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415 5075,15354 5005,15213
 (Br¸cke ¸ber den Maselakekanal): Steigung 14%	q2 -2152,17108 -2140,17171 -2165,17176
 Kleingartenstr.: enge Straﬂe	q1 24118,4404 24075,4417 24022,4442 23978,4484
 Gladiolenstr.: enge Straﬂe	q1 23536,4543 23541,4439
@@ -1355,7 +1357,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: einige Fuﬂg‰nger	q1 18200,11269 18202,1125
 Duftgeranienweg: Bodenschwellen, die leicht umfahren werden kˆnnen	q0 24329,6089 24344,6117 24368,6159 24423,6206 24497,6243 24596,6292 24756,6364 25176,6544 25187,6549 25212,6560
 Friedenstr. - Parkplatz: Fuﬂg‰nger	q2 12131,13333 12152,13294 12141,13256 12107,13264 12066,13237
 Am Treptower Park: Bordstein	q2; 15166,8489 15079,8575
-(Kleiner Tiergarten): Fuﬂg‰nger	q2 6561,13151 6556,13240 6526,13327
+(Kleiner Tiergarten): Fuﬂg‰nger, Spielplatz	q2 6573,13149 6564,13260 6535,13327
 Gleisdreieckpark: Rampe	q2 8011,10085 8013,10055 8027,10074 8042,10084
 Schwarzwurzel-Park: Bordstein, Fuﬂg‰nger, Spielplatz	q3 20698,18359 20814,18341 20823,18329
 (Pasewalker Str. - Vesaliusstr.): Rampe, Straﬂenbahnquerung	q3 11913,19144 11904,19153 11918,19185 11896,19162 11884,19169
@@ -1558,6 +1560,7 @@ Schlosspark Schˆnhausen: einige Fuﬂg‰nger	q1 10600,19225 10589,19275 10575,19327
 Schlosspark Schˆnhausen: einige Fuﬂg‰nger	q1 10600,19225 10636,19289 10575,19327 10503,19371
 Schlosspark Schˆnhausen: einige Fuﬂg‰nger	q1 10589,19275 10636,19289 10857,19379 11081,19456 11236,19509
 Bitburger Str. teilweise relativ eng	q2 15548,17684 15515,17717 15478,17724 15441,17705
+(Dohnagestell - Plˆtzensee): eng	q2 5086,15664 5113,15596 5134,15565
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
@@ -1814,7 +1817,6 @@ Sesenheimer Str.: Fuﬂg‰nger, Bordsteine	q2 3866,11473 3874,11380
 (Carnotstr. - s¸dliches Spreeufer): Fuﬂg‰nger	q2 4655,12953 4619,12975
 Schleswiger Ufer: schmal, Fuﬂg‰nger	q2 5858,12425 5894,12480 5944,12548
 Cuxhavener Str.: Wohngebiet, Fuﬂg‰nger	q2 5894,12480 5919,12423
-Holsteiner Ufer: schmal, Fuﬂg‰nger	q2 6580,12775 6469,12867 6449,12865
 (Zufahrt Parkpl‰tze Bartningallee): schmal, un¸bersichtlich, Fuﬂg‰nger	q3 6179,12513 6149,12454
 (Altonaer Str. - Flensburger Str.): Einkaufszentrum, Fuﬂg‰nger	q2 6173,12396 6149,12454 6137,12532 6160,12681
 (Cuxhavener Str. - Altonaer Str.): schmal, Fuﬂg‰nger	q2 5999,12280 6090,12451

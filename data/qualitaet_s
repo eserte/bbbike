@@ -453,7 +453,7 @@ Verbindungschaussee: Waldweg, OK, 22 km/h möglich	Q1 -426,9473 -360,9193 -310,89
 Verbindungschaussee: asphaltiert	Q0 -426,9473 -471,9647
 Lenbachstr.: Kopfsteinpflaster	Q2 14799,11330 14669,11152 14605,11078
 Garnisonkirchplatz: Kopfsteinpflaster, OK	Q1 10309,12854 10255,12959
-Am Schwarzen Graben: Querrillen	Q1 4849,15875 4833,15916 5005,16824 5007,16861 4996,16990 4994,17023 4973,17042
+Am Schwarzen Graben: Querrillen, Parkweg, teilweise Schotter	Q1 4849,15875 4833,15916 5005,16824 5007,16861 4996,16990 4994,17023 4973,17042
 Holteistr.: Asphalt	Q0 14535,11327 14506,11275 14468,11203
 Holteistr.: Asphalt	Q0 14575,11407 14535,11327
 Brehmestr.: Kopfsteinpflaster	Q2 9904,17347 9975,17359 10085,17379 10214,17401
@@ -738,7 +738,7 @@ Mittelbuschweg: Kopfsteinpflaster	Q2 13500,7018 13484,7140 13575,7200 13693,7228
 Mittelbuschweg: Beton	Q0 13797,7267 13693,7228
 Welserstr.: Kopfsteinpflaster	Q2 6217,10099 6256,10309 6265,10359
 Kieler Str. (Mitte): Kopfsteinpflaster	Q2 8054,14257 7973,14195
-(Uferweg Plötzensee): Parkweg	Q1 5618,14981 5455,15245 5391,15331 5306,15387 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415 5075,15354 5005,15213
+(Uferweg Plötzensee): Parkweg	Q1 5618,14981 5455,15245 5391,15331 5306,15387 5134,15565 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415 5075,15354 5005,15213
 Kruppstr.: Kopfsteinpflaster	Q2 7327,14130 6917,13917 6890,13900 6817,13862 6746,13826
 Fritz-König-Weg: Asphalt	Q0 17050,7687 17297,7752 17527,7812
 Weg 7: unbefestigter Weg	Q2 17050,7687 16902,7652
@@ -5478,7 +5478,9 @@ Straße 455: Beton	Q0 4879,17246 4902,17234 4916,17201 4931,17174
 (Zufahrt zur Julius-Leber-Kaserne): Asphalt	Q0 4952,17122 4929,17069 4897,17040
 Charles-Corcelle-Ring: Beton	Q0 3676,16497 3711,16481 3895,16381 4263,16166
 Charles-Corcelle-Ring: Asphalt	Q0 4263,16166 4724,15925 4775,15929 4804,15966 4973,16847 4982,16984 4973,17042 4952,17122 4988,17172 5014,17212 4997,17241
-(Dohnagestell - Plötzensee): Parkweg	Q1 5130,15692 5086,15664 5073,15611
+(Dohnagestell - Plötzensee): Kleinsteinpflaster	Q1 5130,15692 5086,15664
+(Dohnagestell - Plötzensee): unbefestigter Pfad	Q2 5086,15664 5113,15596
+(Dohnagestell - Plötzensee): Verbundsteinpflaster	Q1 5113,15596 5134,15565
 Viktoriaplatz: Kopfsteinpflaster	Q2 3489,4115 3518,4106 3528,4118 3523,4139 3500,4146 3485,4137 3489,4115
 An der Spreeschanze: asphaltiert	Q0 -2623,14396 -2600,14436 -2597,14532
 Zitadelle: Kopfsteinpflaster	Q2 -2646,14525 -2652,14559 -2656,14582 -2668,14635 -2682,14681 -2688,14703 -2704,14748 -2735,14848 -2622,14876 -2591,14783 -2704,14748
@@ -8720,7 +8722,7 @@ Straße 84 (Karow): Gras	Q3 15382,23051 15365,22990
 Kurpark: Parkweg	Q1 25584,6029 25529,6058 25382,6056 25260,6038 24964,6046
 Orankeweg - Hansastr.: Asphalt	Q0 15395,15852 15381,15873
 Wörther Str.: Asphalt mit einigen Aufpflasterungen	Q1 11155,14554 10910,14488
-(Kleiner Tiergarten): leicht schadhafter Asphalt	Q1 6561,13151 6556,13240 6526,13327
+(Kleiner Tiergarten): asphaltähnlicher Belag	Q0 6573,13149 6564,13260 6535,13327
 Schwarzwurzel-Park: Gehwegplatten	Q0 20698,18359 20814,18341 20823,18329
 (Raoul-Wallenberg-Str. - Landsberger Allee): Asphalt	Q0 20761,15856 20719,15749 20731,15742
 (Pasewalker Str. - Vesaliusstr.): Beton	Q0 11913,19144 11904,19153 11918,19185 11896,19162 11884,19169
@@ -9281,6 +9283,9 @@ Gallwitzallee: schadhafter Radweg sowie Asphalt auf Fahrbahn mit Schäden	Q1 6844
 (Parkplatz S-Bhf. Buckower Chaussee): Asphalt	Q0 9178,556 9218,458 9249,434 9296,335 9271,323
 (Eisnerstr. - S-Bhf. Buckower Chaussee): Asphalt	Q0 9271,323 9253,370 9218,458
 Zachenberger Str.: Verbundsteinpflaster	Q1 19889,9400 19780,9409
+Am S-Bhf. Bellevue: Gehwegplatten	Q1 6694,12627 6516,12650
+Gerichtstr.: Verbundsteinpflaster	Q1 7817,15418 7765,15417
+Nettelbeckplatz: teilweise gepflastert	Q1 7891,15417 7974,15418 8024,15401
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -9933,7 +9938,8 @@ Offenbacher Str.: Asphalt	Q0 5045,7623 4785,7609 4559,7672 4506,7734
 Schlangenbader Str.: Asphalt	Q0 3981,6850 3958,7040 3961,7288 3961,7375 3963,7534 3964,7742 3968,7906
 Nauheimer Str.: Asphalt	Q0 3964,7742 4061,7727 4162,7721 4343,7732
 Homburger Str.: Asphalt	Q0 3963,7534 4061,7513 4162,7510 4330,7507 4400,7508 4599,7474 4785,7438
-Claudiusstr.: Asphalt	Q0 6361,12617 6400,12662 6347,12901
+Claudiusstr.: Asphalt	Q0 6361,12617 6400,12662
+Claudiusstr.: Asphalt, einige Aufplasterungen	Q0 6400,12662 6347,12901
 Walzelstr.: Beton	Q1 -5559,13438 -5333,13515 -5254,13542
 Hortensienstr.: schlechtes (welliges) Kopfsteinpflaster	Q3 3597,4494 3629,4465 3665,4463 3839,4577 4031,4707 4156,4784 4274,4808
 Enzianstr.: mäßiges Kopfsteinpflaster	Q2 3859,4531 3839,4577 3806,4628 3815,4657
@@ -9960,7 +9966,7 @@ Canovastr.: Asphalt	Q0 6104,6258 6198,6270 6305,6287 6323,6270
 Wiclefstr.: Kopfsteinpflaster	Q2 5231,13843 5417,13817 5609,13790 5743,13772 5907,13746 6005,13734 6095,13724
 Buchstr.: Asphalt	Q0 6596,14740 6445,14893
 Stephanstr. (Tiergarten): Kopfsteinpflaster	Q2 6226,13951 6394,14085 6487,14156 6677,14219 6956,14288 6992,14251
-Holsteiner Ufer: Kopfsteinpflaster, OK	Q1 6182,12900 6347,12901 6449,12865 6580,12775
+Holsteiner Ufer: Kopfsteinpflaster	Q2 6182,12900 6347,12901 6449,12865 6580,12775
 Holsteiner Ufer: mäßiges Kopfsteinpflaster	Q2 6580,12775 6694,12627
 Rathenower Str.: Asphalt	Q0 6730,14021 6719,14047
 Rathenower Str.: Asphalt mit gepflasterten Bodenschwellen	Q1 6719,14047 6677,14219 6656,14311
@@ -14920,7 +14926,6 @@ Hannah-Karminski-Str.: Asphalt	Q0 5231,12122 5270,12138 5325,12234 5364,12327
 Schleswiger Ufer: Kopfsteinpflaster	Q2 5714,12266 5803,12356 5858,12425
 Schleswiger Ufer: Kopfsteinpflaster	Q1 5858,12425 5894,12480 5944,12548
 Cuxhavener Str.: Asphalt	Q1 5894,12480 5919,12423
-Holsteiner Ufer: Verbundsteine	Q1 6580,12775 6469,12867 6449,12865
 (Zufahrt Parkplätze Bartningallee): Kopfsteinpflaster	Q2 6491,12607 6361,12617 6304,12603 6188,12553 6179,12513
 (Zufahrt Parkplätze Bartningallee): Gehwegplatten	Q1 6179,12513 6149,12454
 (Altonaer Str. - Flensburger Str.): Gehwegplatten	Q1 6173,12396 6149,12454 6137,12532 6160,12681
