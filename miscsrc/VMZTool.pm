@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2013,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013,2014,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,7 +14,7 @@
 package VMZTool;
 
 use strict;
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 use File::Basename qw(basename);
 use HTML::FormatText 2;
@@ -282,13 +282,18 @@ sub parse_berlin_summary {
 	(my $id = $record->{pointId}) =~ s{^News_id_}{};
 	next if $id =~ m{^Airport_id_}; # e.g. Airport_id_SXF, Airport_id_TXL
 
-	my $htmltb = HTML::TreeBuilder->new;
-	my $tree = $htmltb->parse($rss_data->{$id}->{description_html});
+	my @text_lines;
+	if ($rss_data->{$id} && defined $rss_data->{$id}->{description_html}) {
+	    my $htmltb = HTML::TreeBuilder->new;
+	    my $tree = $htmltb->parse($rss_data->{$id}->{description_html});
+	    my $text = $self->{formatter}->format($htmltb);
+	    @text_lines = split /\n/, $text;
+	    @text_lines = @text_lines[6..$#text_lines];
+	} else {
+	    @text_lines = $record->{name} . ' (!no rss text!)';
+	}
 	my $strasse = $rss_data->{$id}->{title};
-	my $text = $self->{formatter}->format($htmltb);
-	my @text_lines = split /\n/, $text;
-	@text_lines = @text_lines[6..$#text_lines];
-	$text = join("\n", $strasse, @text_lines);
+	my $text = join("\n", $strasse, @text_lines);
 	$text =~ s{^\n+}{}; $text =~ s{\n+$}{};
 	$text =~ s{^\s*Abschnitt:\s+}{}m;
 	$text =~ s{^\s*Stand:\s+\d+\.\d+\.\d+\s+\d+:\d+\s+}{}sm;
@@ -494,7 +499,7 @@ if ($do_test) {
 	$file       = "$samples_dir/Meldungsliste.jsp?back=true";
 	$mapfile    = "$samples_dir/Meldungskarte.jsp?back=true&map=true";
     }
-    $berlinsummaryfile = "$samples_dir/vmz-2015.json";
+    $berlinsummaryfile = "$samples_dir/vmz-2016.json";
     $vmzrssfile        = "$samples_dir/vmz-2015.rss";
 } elsif ($do_fetch) {
     ($tmpfh,$file)     = tempfile(UNLINK => 1) or die $!;
