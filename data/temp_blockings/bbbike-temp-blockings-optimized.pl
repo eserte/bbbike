@@ -2180,6 +2180,7 @@ userdel	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
        undef,
        {
          'data' => '#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6081.html (Radfahrer _dürfen_ passieren)
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1607/nachricht6133.html
 userdel	q3::inwork 8389,9087 8180,9099
 ',
          'from' => 1466444819,
@@ -2187,7 +2188,7 @@ userdel	q3::inwork 8389,9087 8180,9099
          'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.489591.php',
          'text' => 'Monumentenbrücke: Bauarbeiten bis zum 6. August 2016, langsameres Passieren möglich',
          'type' => 'handicap',
-         'until' => 1470520799
+         'until' => 1470456000
        },
        {
          'data' => 'userdel	2::inwork -2955,15129 -2929,15082 -2965,15053 -3008,14992 -3008,14910 -2998,14879 -3030,14844 -3066,14718
@@ -2304,6 +2305,26 @@ userdel	2::inwork 22084,5877 21846,5856 21744,5804 21602,5685
          'text' => 'Spreetunnel: Vollsperrung an den folgenden Tagen jeweils von 20.00 Uhr bis 04.00 Uhr: 28.07.2016 - 29.07.2016, 01.08.2016 - 02.08.2016, 02.08.2016 - 03.08.2016',
          'type' => 'gesperrt',
          'until' => 1470189600
+       },
+       {
+         'data' => 'userdel	2::inwork 10130,15647 9991,15629 9907,15618
+',
+         'from' => undef,
+         'id' => 2813,
+         'text' => 'Gleimtunnel: Sperrung, unter Umständen können auch Radfahrer und Fußgänger nicht passieren',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => 'userdel	q4::inwork 2380,20465 2473,20486 2595,20514
+userdel	q4::inwork 2473,20486 2448,20592
+',
+         'from' => 1470175200,
+         'id' => 2814,
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.504154.php',
+         'text' => 'Tile-Brügge-Weg und An der Oberrealschule: Fahrbahn gesperrt, Bauarbeiten, vom 04.08.2016 bis zum 02.09.2016 ',
+         'type' => 'handicap',
+         'until' => 1472853600
        }
      
 );

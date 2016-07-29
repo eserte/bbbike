@@ -10,9 +10,7 @@
 # 
 ### Friedrichshain ###
 # 
-#: last_checked: 2016-07-27
-#: check_frequency: 14d
-Koppenstr.: Wasserrohrbruch, Fahrbahn gesperrt	q2::inwork 12409,11902 12366,11808
+# REMOVED (by fritz) --- #: last_checked: 2016-07-27 --- #: check_frequency: 14d --- Koppenstr.: Wasserrohrbruch, Fahrbahn gesperrt	q2::inwork 12409,11902 12366,11808
 # 
 #: source_id: LMS-BR_r_LMS-BR_73434
 #: source_id: 2147340364
@@ -27,7 +25,7 @@ Straﬂe der Pariser Kommune: Wasserrohrbruch, Fahrbahn gesperrt	q2::inwork 12497,
 # 
 #: last_checked: 2016-07-25 vvv
 # REMOVED --- Revaler Str.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14357,11148 14286,11186
-Revaler Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordsteine	q3::inwork 14211,11229 14286,11186
+Revaler Str.: Bauarbeiten, evtl. Ausweichen auf Gehweg nˆtig, Bordsteine	q3::inwork 14211,11229 14286,11186
 Dˆringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
 # REMOVED (keine Behinderungen mehr) --- Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 # REMOVED (gibt's nicht mehr?) --- Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraﬂe ausgewiesen	q3::inwork; 14442,11101 14468,11203
@@ -68,7 +66,7 @@ Rigaer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 14133,12482 14266,12446
 #
 #: XXX siehe auch valid-Eintrag weiter unten
 #: source_id: 2147340178
-#: last_checked: 2016-07-26
+#: last_checked: 2016-07-29
 #: valid: -20161115
 BouchÈstr.: Bauarbeiten, Radfahrer m¸ssen auf dem Gehweg fahren	q2::inwork 13642,9624 13865,9866 13890,9894
 # REMOVED (wahrscheinlich aufgehoben) --- #: last_checked: 2013-11-22 --- #: check_frequency: 60d --- Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 13973,9465 14157,9345
@@ -234,6 +232,7 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 #: XXX laut fritz bis 29.07.2016
 #: source_id: 2147339998
 #: last_checked: 2016-07-28
+#: next_check: 2016-07-30
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10256,11160 10437,11352
 #: last_checked: 2016-07-25 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10624,11548 10640,11564
@@ -269,6 +268,9 @@ Stallschreiberstr., Alexandrinenstr.: Einbahnstraﬂenregelung	q4::inwork; 10794,1
 ### Kˆpenick ###
 # 
 # REMOVED --- #: last_checked: 2012-10-21 --- #: next_check: 2012-11-01 --- Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 22478,6041 22544,6037 22539,5956
+# 
+#: last_checked: 2016-07-29
+Nalepastr.: Bauarbeiten	q3::inwork 17190,7306 17219,7268
 # 
 ### Friedrichshagen ###
 # 
@@ -340,7 +342,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung S¸de
 #: XXX laut vmz bis Ende August 2016, laut fritz bis 31.07.2016
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1604/nachricht5997.html
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.470764.php
-#: last_checked: 2016-07-14
+#: last_checked: 2016-07-29
 #: next_check: 2016-07-31
 Kynaststr./Hauptstr.: Bauarbeiten, Gehweg benutzen	q3::inwork 14882,10732 14906,10820
 # 
@@ -707,7 +709,7 @@ Ruhlsdorfer Str.: Bordstein	q3 9350,10176 9368,10211
 (Olivaer Platz, Wielandstr. - Bayerische Str.): Fuﬂg‰nger	q2 4360,10320 4352,10260
 (G¸ntzelstr. - Pommersche Str.): Fuﬂg‰nger	q3 4708,9498 4550,9539
 Naunynstr.: Fuﬂg‰nger	q1 11365,10791 11329,10785
-Hermannplatz: oft Fuﬂg‰nger auf dem Radweg	q1 11831,8989 11909,9155
+# REMOVED (Fahrbahn darf jetzt benutzt werden) --- Hermannplatz: oft Fuﬂg‰nger auf dem Radweg	q1 11831,8989 11909,9155
 #: XXX_prog: im Sommer an schˆnen Tagen q4
 Spreepromenade am DomAquarÈe: Fuﬂg‰nger, CafÈs	q3 10300,12587 10249,12658 10219,12701 10166,12777
 St.-Wolfgang-Str.: Fuﬂg‰nger, CafÈs	q3 10219,12701 10285,12744 10360,12793
@@ -798,7 +800,7 @@ Fritz-Schiff-Weg: Fuﬂg‰nger	q1 13463,12507 13484,12436 13448,12340
 (Fischerinsel, Spreekanalufer): Fuﬂg‰nger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870
 #: next_check_id: FISCHERINSEL-2015
 #: last_checked: 2016-07-25
-#: check_frequency: 60d
+#: next_check: 2016-10-31
 Spreekanalufer: Umfahrung an der Straﬂe Fischerinsel, Fuﬂg‰nger	q3::inwork 10672,11870 10776,11942
 # REMOVED (danach wieder folgendes aktivieren) --- (Fischerinsel, Spreekanalufer): Fuﬂg‰nger	q1 10672,11870 10776,11942
 (Fischerinsel, Spreekanalufer): Fuﬂg‰nger	q1 10776,11942 10824,11992
@@ -876,8 +878,8 @@ Langhoffstr.: enge Straﬂe, Gegenverkehr	q1 19817,14371 19818,14064
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der groﬂen Steigung/Gef‰lles nur Schrittgeschwindigkeit mˆglich	q4 -1663,4218 -1592,4268
-#: XXX_prog BS (an der Rungiusstr., ansonsten weiterhin q4)
-(Treseburger Ufer - Rungiusstr.): nur f¸r Fuﬂg‰nger erlaubt, Bordstein	q4 12736,5913 13064,5953
+# REMOVED (BS wurde abgesenkt) --- #: XXX_prog BS (an der Rungiusstr., ansonsten weiterhin q4)
+(Treseburger Ufer - Rungiusstr.): nur f¸r Fuﬂg‰nger erlaubt	q4 12736,5913 13064,5953
 Treseburger Ufer: einige Fuﬂg‰nger	q1 12301,5783 12453,5844 12507,5860 12636,5896 12699,5909
 (Bellevuepark): einige Fuﬂg‰nger	q1 22798,5731 22796,5640 22796,5631 22787,5582 22855,5554 22835,5452 22851,5321
 (Bellevuepark): nur f¸r Fuﬂg‰nger erlaubt	q4 22787,5582 22733,5569 22701,5428 22628,5340

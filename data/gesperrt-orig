@@ -2720,9 +2720,12 @@ Dr‰ngelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2016-07-29
+Corinthstr.: Baustelle, Einbahnstraﬂenregelung	1s:q2 14447,10491 14270,10584
+# 
 #: source_id: INKO_2147340291_COPY_1 vvv
 #: source_id: 2147340291 vvv
-#: last_checked: 2016-07-28 vvv
+#: last_checked: 2016-07-29 vvv
 #: next_check: 2016-09-01 vvv
 #: valid: -20160901 vvv
 Mariannenstr.: Baustelle, Einbahnstraﬂenregelung	1s:q2 11512,10105 11616,10288
@@ -2783,11 +2786,7 @@ Am Nordhafen: Bauarbeiten, Straﬂe wird zur¸ckgebaut	2::inwork 7741,14560 7527,14
 # REMOVED --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14575,9648 14604,9674
 # REMOVED (fertig) --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.476901.php --- #: next_check: 2016-05-14 --- Treptower Park: Bauarbeiten	2::inwork 14695,9587 14705,9578 14791,9537
 # REMOVED (fertig) --- Treptower Park: Bauarbeiten	2::inwork 15591,8848 15608,8882 15617,8924 15623,8949 15630,8979
-#: XXX evtl. kann man hier als Fuﬂg‰nger irgendwie vorbei
-#: last_checked: 2016-07-26 vvv
-#: check_frequency: 3d
-Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14448,9922 14467,9880 14500,9863
-#: last_checked ^^^
+# REMOVED --- #: XXX evtl. kann man hier als Fuﬂg‰nger irgendwie vorbei --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 3d --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14448,9922 14467,9880 14500,9863 --- #: last_checked ^^^
 # 
 #: last_checked: 2016-05-29
 #: XXX laut osm mittlerweile offen ("unclassified") (stimmt aber nicht)
@@ -2838,7 +2837,7 @@ Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076 9559,13087
 # 
 #: next_check_id: MINNATODENHAGENSTR-2016
-#: last_checked: 2016-05-21 vvv
+#: last_checked: 2016-07-29 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- Grenzweg: wegen Straﬂenbau gesperrt, ggfs. dauerhaft	2::inwork 17219,7268 17295,7330 17445,7434
 Schwarzer Weg: wegen Straﬂenbau gesperrt	2::inwork 17295,7323 17295,7330 17296,7396
@@ -2850,12 +2849,12 @@ Schwarzer Weg: wegen Straﬂenbau gesperrt	2::inwork 17295,7323 17295,7330 17296,7
 #: next_check_id: FISCHERINSEL-2015 vvv
 #: source_id: 2147339543 vvv
 #: last_checked: 2016-07-27 vvv
-#: check_frequency: 60d vvv
+#: next_check: 2016-10-31 vvv
 M‰rkisches Ufer - Neue Roﬂstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10703,11837
 Neue Roﬂstr. - M‰rkisches Ufer: wegen Bauarbeiten gesperrt	3 10703,11837 10687,11853 10869,11949
 M‰rkisches Ufer - Neue Roﬂstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10672,11870
 Neue Roﬂstr. - M‰rkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,11853 10869,11949
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: source_id ^^^
 #: next_check_id ^^^

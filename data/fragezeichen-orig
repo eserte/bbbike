@@ -208,7 +208,7 @@ Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15553,7408
 # REMOVED (teilweise realisiert) --- #: XXX Baumaßnahme 9.19 (Realisierung nach 2011) --- #: XXX vielleicht werden im Zuge der Bauarbeiten in der Oberspreestr. auch Radverkehrsanlagen angelegt? --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php --- #: source_id: IM_022377 --- #: last_checked: 2014-08-08 --- #: next_check: 2014-12-17 --- Oberspreestr.: hier entstehen wahrscheinlich Radverkehrsanlagen (Radwege/spuren)	?::projected; 20949,4775 20765,4839 20689,4862 20383,4963 19965,5101 19737,5176 19715,5185 19632,5211 19534,5242
 # 
 #: XXX Baumaßnahme 8.14 (Realisierung nach 2011)
-#: last_checked: 2016-03-13
+#: last_checked: 2016-07-29
 #: check_frequency: 120d
 Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projected; 13046,5267 13112,5253 13250,5234 13327,5234 13594,5240 13607,5241 13809,5257
 # 
@@ -382,6 +382,12 @@ Nürnberger Str.: Radspuren entstehen	?::projected 6025,10746 6122,10925 6145,109
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2016
+#: XXX Berlin.coods.data-Eintrag fehlt
+#: XXX Privatstraße
+#: next_check: 2016-09-19
+Am Carolinenhof: existiert die Straße schon? Qualität? Genaue Lage?	? -8100,3994 -8146,3916 -8154,3863
 # 
 #: XXX http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4316
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036209836611/209836611/00129192/92-Anlagen/02/BenennungsabsichtfuereineneueprivateErschliess.pdf
@@ -934,7 +940,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12085,977
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="13"
-#: last_checked: 2016-07-26
+#: last_checked: 2016-07-29
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -1222,7 +1228,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/25re.pdf/file?y=2016 (Brückenbenennung)
 #: XXX Asphaltierung der Fahrbahn von Rummelsburger Landstr. bis Schwarzer Weg fertig
 #: XXX Radwege werden vermutlich asphaltiert sein
-#: last_checked: 2016-07-16
+#: last_checked: 2016-07-29
 #: next_check: 2016-12-01
 Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rummelsburger Landstraße und Köpenicker Landstraße	?::inwork 17681,7589 17585,7525 17082,7189 16954,7096 16720,6845
 # 
@@ -1426,6 +1432,10 @@ Bebauungsplan 7-65: Weg in Planung	?::projected 7960,6059 7697,6059 7630,6016 76
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: XXX prüfen!
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2016
+Monumentenstr. 13d: wird hier ein verkehrsberuhigter Bereich ausgewiesen?	? 8014,9126 8009,9063
 # 
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/tunnel-adenauerplatz/
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/tunnel-adenauerplatz/download/bauphase2.pdf
@@ -1650,10 +1660,9 @@ Falkenberger Chaussee: Radfahrstreifen werden entstehen, wo genau?	?; 17843,1807
 # 
 #: source_id: 129871
 #: source_id: LMS-BR_r_LMS-BR_62186
-#: XXX Bauarbeiten bis 30.05.2016 (am 16.07.2016 war hier noch immer Baustelle)
-#: XXX Richtung Südosten wird die Fahrbahn asphaltiert sein
-#: last_checked: 2016-07-16
-#: check_frequency: 14d
+#: XXX Bauarbeiten bis 30.05.2016 (am 29.07.2016 war hier noch immer Baustelle)
+#: XXX Richtung Südosten wird die Fahrbahn asphaltiert sein (aber ist es noch breit genug, wenn dort Autos parken sollten?)
+#: last_checked: 2016-07-29
 Wallensteinstr.: Bauarbeiten --- gibt es hier Qualitätsverbesserungen?	?::inwork 17549,9529 18037,9195
 # 
 # REMOVED --- #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8362&options=4 --- #: XXX kein rechts-vor-links? --- Maulbeerallee: Vorfahrtsregelung?	? -6093,12801 -5975,12827 -5878,12845 -5784,12858 -5706,12869 -5594,12832 -5480,12793 -5307,12737 -5282,12730
@@ -2048,7 +2057,7 @@ Alt-Karow: evtl. wird hier ein Schutzstreifen Richtung Süden angelegt	? 15726,23
 Sonnenallee/Ziegrastr.: wird hier eine permanente Ampel entstehen?	?::projected 14174,7505
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14708&options=8 (beschlossen durch BVV)
-#: last_checked: 2016-06-12
+#: last_checked: 2016-07-29
 #: check_frequency: 60d
 Thomasstr./Hermannstr.: sichere Querung, wie wird/könnte die Lösung hier aussehen?	?::projected 12193,7412 12180,7387 12168,7368
 # 
