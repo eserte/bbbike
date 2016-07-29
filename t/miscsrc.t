@@ -7,6 +7,7 @@
 
 use strict;
 use FindBin;
+use Cwd qw(getcwd);
 use File::Glob qw(bsd_glob);
 use File::Spec qw();
 use Getopt::Long;
@@ -26,6 +27,7 @@ GetOptions("skip!" => \$do_skip)
     or die "usage: $0 [-noskip]";
 
 chdir "$FindBin::RealBin/.." or die $!;
+my $cwd = getcwd;
 
 my @files = grep { -f $_ && !m{\.el$} && !m{\.sh$} && !m{\.xslt$} } bsd_glob("miscsrc/*");
 
@@ -75,7 +77,7 @@ for my $f (@files) {
 	
 	my @add_opts;
 	if ($f =~ m{\.pm$}) {
-	    push @add_opts, "-Ilib", "-Imiscsrc";
+	    push @add_opts, "-I$cwd", "-I$cwd/lib", "-I$cwd/miscsrc";
 	}
 
 	*OLDERR = *OLDERR; # cease -w
@@ -93,7 +95,8 @@ for my $f (@files) {
 	}
 	$can_w = 0 if $] < 5.006; # too many additional warnings
 
-	system($^X, ($can_w ? "-w" : ()), "-c", @add_opts, "./$f");
+	my @cmd = ($^X, ($can_w ? "-w" : ()), "-c", @add_opts, "./$f");
+	system(@cmd);
 	close STDERR;
 	open(STDERR, ">&OLDERR") or die;
 	die "Signal caught" if $? & 0xff;
@@ -108,7 +111,7 @@ for my $f (@files) {
 	is($?, 0, "Check $f")
 	    or do {
 		require Text::Wrap;
-		print Text::Wrap::wrap("# ", "# ", $diag), "\n";
+		diag("While running '@cmd':\n" . Text::Wrap::wrap("# ", "# ", $diag));
 	    };
 
 	if (defined $diag && $diag ne "") {

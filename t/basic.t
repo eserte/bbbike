@@ -7,6 +7,7 @@
 
 use strict;
 use FindBin;
+use Cwd qw(getcwd);
 use ExtUtils::Manifest;
 use Getopt::Long;
 use File::Spec qw();
@@ -26,6 +27,7 @@ GetOptions("skip!" => \$do_skip)
     or die "usage: $0 [-noskip]";
 
 chdir "$FindBin::RealBin/.." or die $!;
+my $cwd = getcwd;
 
 my $manifest = ExtUtils::Manifest::maniread();
 
@@ -176,7 +178,7 @@ for my $f (@files) {
 	    }
 	}
 	if ($f =~ m{miscsrc/BBBikeOrgDownload.pm$}) {
-	    push @add_opt, "-Imiscsrc"; # because of BBBikeDir.pm
+	    push @add_opt, "-I$cwd/miscsrc"; # because of BBBikeDir.pm
 	}
 
 	*OLDERR = *OLDERR; # cease -w
@@ -243,7 +245,8 @@ for my $f (@files) {
 
 	$can_w = 0 if $] < 5.006; # too many additional warnings
 
-	system($^X, ($can_w ? "-w" : ()), "-c", "-Ilib", @add_opt, "./$f");
+	my @cmd = ($^X, ($can_w ? "-w" : ()), "-c", "-I$cwd", "-I$cwd/lib", @add_opt, "./$f");
+	system(@cmd);
 	close STDERR;
 	open(STDERR, ">&OLDERR") or die;
 	die "Signal caught" if $? & 0xff;
@@ -265,7 +268,7 @@ for my $f (@files) {
 	is($?, 0, "Check $f")
 	    or do {
 		require Text::Wrap;
-		print Text::Wrap::wrap("# ", "# ", $diag), "\n";
+		diag("While running '@cmd':\n" . Text::Wrap::wrap("# ", "# ", $diag));
 	    };
 
 	if (defined $diag && $diag ne "") {
