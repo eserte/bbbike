@@ -2145,16 +2145,7 @@ userdel	2::inwork 3472,24709 3481,24686 3492,24667 3535,24626
          'until' => undef
        },
        undef,
-       {
-         'data' => 'userdel	q4::inwork 15628,12246 15651,12214 15685,12154
-',
-         'from' => 1467583200,
-         'id' => 2798,
-         'source_id' => 'http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.488270.php',
-         'text' => 'Rathausstr. (Lichtenberg): Bauarbeiten in Höhe Rudolf-Reusch-Str., Fahrbahn gesperrt, 5. Juli 2016 bis 30. Juli 2016',
-         'type' => 'handicap',
-         'until' => 1469915999
-       },
+       undef,
        {
          'data' => '#: by: http://www.friedrichshagen.net/baustelle-friedrichshagen/
 #: last_checked: 2016-07-16

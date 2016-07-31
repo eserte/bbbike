@@ -23,7 +23,7 @@ Oderberg - Brodowin: hier auch schlechtes Kopfsteinpflaster?	? 49981,54421 50245
 Neuendorf - Sandkrug: Qualität?	? 47100,53337 46649,53269 46521,53312 46084,53267 45373,53443 45019,53618 44728,53639 44504,53792 43991,53805 43522,54001 43307,53854 43047,53809 42554,53801 42125,53934 41654,53939
 Sandkrug - Neuendorf: Qualität?	? 49981,54421 51183,55005 51506,55009 51873,55078 52067,55167 52177,55296 52348,55277 52693,55282 53013,55094 53292,55124 53634,55048 53937,54875
 Elisenau - Börnicke: Privatgelände, ist die Durchfahrt uneingeschränkt möglich?	? 24360,26503 24427,26841
-Potzlow - Fergitz: ist die gesamte Straße asphaltiert worden?	? 38226,90609 37937,90365 37674,90025
+Potzlow - Fergitz: ist die gesamte Straße asphaltiert worden?	? 38226,90609 38140,90535 37901,90258 37760,90005
 Basdorf - Bernauer Heide: Ist der Weg wegen der Bahnstrecke überhaupt passierbar? Qualität? Dürfen hier Autos fahren?	? 12854,36464 13740,36119
 Leipe - Lübbenau: Waldweg, teilweise muss getragen werden (wie oft und wo genau?)	? 55335,-60336 55150,-60225 54925,-60300 54337,-60275 53208,-60124 52537,-60162 52137,-60387 51162,-59762 50725,-59237 50575,-59287
 Leipe - Burg, nördliche Strecke: Qualität?	? 55850,-60475 56425,-59960 57291,-59826 57848,-59878 57989,-59765 58120,-59786 58010,-60210 58351,-60356 58665,-60426 58659,-60530 58845,-60667 58915,-60655 59466,-60914 59518,-60816 59850,-60929 59987,-60862 60417,-61057 60545,-61185 60600,-61166 61066,-61334 61416,-61334 61355,-61459 61581,-61648 61645,-61855 61889,-61953 61998,-62056 62017,-62175 61953,-62212
@@ -72,7 +72,7 @@ Frauenhagen - Schönermark: Qualität? laut "Regio-Cart" gut geeignet	? 53312,7658
 Schönermark - Biesenbrow: Qualität (höchstwahrscheinlich asphaltiert)?	? 54542,78720 54366,78714 54283,78677 54146,78628 54113,78631 53982,78634 53872,78613 53765,78628 53692,78714 53647,78765 52663,79186 52611,79156 52032,78610
 Biesenbrow - Grünow: laut "Regio-Cart" gut geeignet	? 52611,79156 52632,79235 52720,79323 52830,79396 53973,80374 54000,80457 54061,80499 54119,80499
 Passow, Mittelstr.: Qualität im westlichen Abschnitt? Hier auch Beton?	? 56975,82627 57185,82724
-Altkünkendorf - Wolletz: laut "Regio-Cart" gut geeignet	? 41260,67587 41437,68012 40775,68125 40750,69175 40999,69391
+Altkünkendorf - Wolletz: laut "Regio-Cart" gut geeignet, laut osm Kopfsteinpflaster	? 41260,67587 41437,68012 40775,68125 40750,69175 40999,69391
 Wolletz Richtung Norden: laut "Regio-Cart" gut geeignet (zumindest in Wolletz Verbundsteinpflaster)	? 43101,69564 43250,71500 42941,72180
 Dargen - Katschow: Fahrradroute laut Kompass-Karte	? 51034,165181 50994,165390 50715,166093 50464,166650 50472,166804 50661,166901 50993,167239 51565,167859
 Oberjägerweg außerhalb Spandaus: Qualität?	? -4053,20594 -3947,21008 -3794,21804
@@ -228,7 +228,7 @@ Melzow - Gramzow, Autobahnbrücke: wegen Bauarbeiten gesperrt, Qualität könnte mä
 Melzow - Meichow: Qualität? Ist die Straße durchgängig asphaltiert?	? 44323,87544 45024,87474 45751,87363 46178,87310 46360,87391 46483,87364 47128,87233 47671,87099 48195,87137
 Neumeichow: Qualität?	? 46617,88457 46886,88320 47675,88141 47917,88155
 Wolletz - Kerkow (südliche Strecke): Qualität?	? 44673,70082 45614,70316 45652,70216 46917,69881 47172,70534
-Britz - Chorin: Qualität?	? 37225,54056 38412,55353 38528,55402 38516,55481 38774,55675 38987,55637 39726,55645 40450,55770
+Britz - Chorin: Qualität?	? 37225,54056 37527,54354
 Liepe - Chorin: Qualität?	? 46938,50961 46757,50998 46391,51303
 Liepe - Chorin: Qualität?	? 46391,51303 45805,51471 45089,51592 44952,51669 44167,52651 43047,53809 42697,54060 42231,54671
 Herzsprung - Schmargendorf: Qualität?	? 47863,64274 47267,64435 47123,64587 46955,64641 47045,64773
@@ -417,7 +417,7 @@ Klein Sperrenwalde - Gollmitz: Qualität (zumindest das Gollmitzer Ende ist aspha
 Ellingen - Uckerfeld: Qualität (wahrscheinlich asphaltiert?)?	? 37521,105452 37934,105127
 Wublitzbrücke - Töplitz: Qualität (wahrscheinlich Feld- oder Waldweg)?	? -21681,702 -22045,765 -22525,1230 -22911,1634 -23105,2016 -23207,2284
 Nattwerder - Golm: Qualität (wahrscheinlich Feldweg)?	? -21043,1586 -20807,1383 -20955,978 -21221,764
-Althüttendorf - Joachimsthal: Qualität?	? 33939,63348 33732,63567 33592,63860 33592,64079 33500,64073 33421,64098 33080,63939
+Althüttendorf - Joachimsthal: Qualität?	? 33939,63348 33732,63567
 Nördlich des Grimnitzsees: Qualität?	? 33689,65780 34018,65700 34347,65737 35176,65603 35786,65517 36377,65481 36681,65304 36864,64841 37193,64609 37266,64603 37608,64317 38095,64055 38327,63933
 Neugrimnitz - Ziethen: Qualität?	? 38272,63836 38577,63641 38759,63647 39131,63537 39637,63244 39741,63220 39832,63263
 Neugrimnitz - B198: Qualität?	? 39637,63244 39576,63074 39521,62861 39503,62647 39375,62148 39180,61605 39156,61459 39003,61246
@@ -876,7 +876,7 @@ Bargischow - Woserow: Qualität?	? 30470,158170 30090,158105 30026,158088 30022,1
 Klein Bünzow - B109: Qualität?	? 22283,169408 23239,169494
 Bettina-von-Arnim-Str. (Potsdam): Qualität?	? -7689,-5039 -7628,-5142
 Romanusplatz (Eichwalde): Qualität?	? 25651,-3855 25636,-3813 25622,-3761 25635,-3723 25668,-3739 25712,-3836
-Hohenwalde: Qualität?	? 31267,74825 32398,74953 32778,75006 33102,75735 33729,75869 33897,76255
+Hohenwalde: Qualität?	? 31267,74825 32476,75001 32778,75006 33102,75735 33729,75869 33897,76255
 Altenhofer Waldstr. (Altenhof): Qualität?	? 30725,57076 30623,57197
 Burgwall - Neuhof: Qualität?	? 2001,71016 2314,71167 2396,71244 2817,71074 3184,71083 3599,70845
 Kleinmutz - B109: Qualität?	? 2129,61503 2224,61408 3649,60611 3763,60337
@@ -1078,6 +1078,8 @@ Schmöckwitzer Str.: Qualität?	? 26048,-3334 26232,-3205 26249,-3190
 Schmöckwitzer Str.: Qualität?	? 26875,-2993 26831,-2990 26669,-3030 26565,-3054 26469,-3073 26337,-3101 26242,-3135 26237,-3164 26249,-3190 26268,-3195 26302,-3188 26359,-3177 26436,-3155 26463,-3119 26469,-3073
 Lindow - Banzendorf: Qualität?	? -19626,66497 -18685,66767 -18418,67087 -18287,67361
 Banzendorf - Hindenberg: Qualität?	? -18287,67361 -18101,67745 -18267,68226 -18260,68442 -17866,69551 -17808,69926 -17941,70276 -18048,70542 -17823,70759
+Golzow - Senftenhütte: Qualität der Straße?	? 36621,56807 37029,56698 37471,56609 37735,56749 38224,57167
+Golzow - Senftenhütte: Qualität der Straße?	? 38597,57514 38956,57644 39237,58124 39783,58604 39940,58908 40109,58965 40362,59162
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
@@ -1226,10 +1228,13 @@ Petersdorf: Asphalt (ist auch im westlichen Abschnitt asphaltiert?)	? 23256,7673
 Lindenstr. (Teltow): Kopfsteinpflaster (ist das Kopfsteinpflaster mäßig oder schlecht?)	? 1235,-714 1273,-626 1279,-608 1304,-540
 Waldpromenade (Erkner): Beton (ist der nordöstliche Abschnitt auch betoniert?)	? 34536,3716 34568,3746 34585,3820
 Fuchssteig (Erkner): Asphalt (ist der nördliche Abschnitt auch asphaltiert?)	? 34459,3734 34483,3839
+Temmen - Hohenwalde: unbefestigte Straße (ist die Straße hier auch unbefestigt?)	? 32827,76442 32840,76223 32698,76024 32686,75814 32730,75704 32611,75472 32510,75370 32529,75201 32490,75084 32460,75060 32476,75001
 Grünow - Heiseshof: schlechtes Kopfsteinpflaster (liegt hier auch Kopfsteinpflaster?)	? 46442,102960 46965,103352 47168,103502 47247,103537 47371,103685 47385,103791
 Erich-Mühsam-Str.: Asphalt (ist hier tatsächlich asphaltiert?)	? 1762,31318 1787,31375
 Erich-Mühsam-Str.: Kopfsteinpflaster (liegt hier tatsächlich Kopfsteinpflaster? Wenn ja, wie gut/schlecht ist die Pflasterung?)	? 1787,31375 1851,31451 1878,31471 1916,31483 2027,31518 2082,31535
 Gartenallee: Kopfsteinpflaster (liegt hier tatsächlich Kopfsteinpflaster? Wenn ja, wie gut/schlecht ist die Pflasterung?)	? 1887,31658 2027,31518
+Britz - Chorin: Kopfsteinpflaster (ist das Kopfsteinpflaster eher mäßig oder schlecht?)	? 38774,55675 38987,55637 39284,55620 39474,55669
+Britz - Chorin: sandiger Weg (ist der Sand eher fest oder lose?)	? 39474,55669 40500,55749
 (Steinstr. - Tschaikowskiweg): Waldweg (ist der Verbindungsweg mittlerweile asphaltiert?)	? -7996,-2293 -8024,-2468
 Reichenberg: grobes Kopfsteinpflaster (genauer Abschnitt fehlt)	? 58453,24209 58390,23910 58422,23806 58340,23653
 Rollwitz - Damerow: Kopfsteinpflaster/Feldweg (genauere Qualitätsbeschreibung fehlt)	? 46872,118656 46914,117945 47156,116507 47087,115725

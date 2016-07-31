@@ -7784,7 +7784,7 @@ EOF
        text  => 'L 024 AS Pfingstberg-Gerswalde OD Suckow grundhafter Straßenbau Vollsperrung 10.04.2007-30.11.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 39125,83492 38986,84365
+userdel	q4::inwork 39173,83496 39152,83627 39140,83699 39078,84352 38974,84352
 EOF
      },
      { from  => 1176069600, # 2007-04-09 00:00
@@ -12889,7 +12889,7 @@ EOF
        text  => 'L 025 Schmölln - LG - Penkun zw. Landesgrenze und Schmölln grundhafter Straßenbau Vollsperrung 29.09.2008-23.12.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 55977,100103 56188,99924 56268,99856 56856,99683 57042,99574 57516,99296
+userdel	2::inwork 55977,100103 56030,100076 56188,99924 56268,99856 56856,99683 57042,99574 57512,99290
 EOF
      },
      { from  => 1223416800, # 2008-10-08 00:00
@@ -16561,7 +16561,7 @@ EOF
        text  => 'B 166 zw. Heinersdorf und Abzw. Passow Deckenerneuerung Vollsperrung 12.10.2009-30.10.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 64611,77283 64465,77438 64031,77926 63701,78311 63634,78433 63559,78397 63464,78555 63418,78608 62952,79144 62465,79695 61847,80407 61748,80578 61512,80671 61325,80709 60922,80653 60487,80748 60070,81164 59776,81358 59018,81801 58771,82019
+userdel	2::inwork 64611,77283 64465,77438 64031,77926 63701,78311 63634,78433 63559,78397 63464,78555 63418,78608 62952,79144 62465,79695 61847,80407 61748,80578 61512,80671 61325,80709 60922,80653 60487,80748 60064,81168 59776,81358 59018,81801 58771,82019
 EOF
      },
      { from  => 1254607200, # 2009-10-04 00:00
@@ -19205,7 +19205,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LS/O-SG33-E/11/044',
        data  => <<EOF,
-userdel	2::inwork 35887,85385 34920,85944
+userdel	2::inwork 36134,85376 34920,85944
 EOF
      },
      { from  => 1304796386, # 2011-05-07 21:26
@@ -20416,7 +20416,7 @@ EOF
        text  => 'Ersatzneubau Brücke über den Stierngraben Brücke über den Stierngraben bei Kaakstedt, Vollsperrung zw. Suckow und Gerswalde und umgekehrt 07.05.2012 bis 20.05.2012',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 35887,85385 34920,85944
+userdel	2::inwork 36134,85376 34920,85944
 EOF
      },
      { from  => 1349635594, # 2012-10-07 20:46

@@ -443,7 +443,9 @@ Verbundsteinpflaster	RW; 847,18738 560,18494 255,17528 127,17176
 #: note: Radweg befindet sich in "Auflösung", hinterer Teil besteht nur noch aus Kleinsteinpflaster
 	RW1; 7929,15006 8057,14876
 #: note: eigentlich existiert nur eine Auffahrt und Abfahrt, ein Radweg zwischendurch ist eigentlich nicht markiert
-	RW1; 7929,15006 7819,15103
+#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7526
+#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036752285719/752285719/00134149/49-Anlagen/02/MA_2901_IV.pdf
+	RW0; 7929,15006 7819,15103
 #: note: frühere Markierung scheint verschwunden zu sein
 	RW0; 7819,15103 7929,15006
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-19 Uhr	RW1;RW1 7929,15006 7527,14684

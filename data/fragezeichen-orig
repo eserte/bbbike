@@ -127,7 +127,7 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9
 #: osm_watch: way id="42732291" version="14"
 #: last_checked: 2016-07-28
 #: check_frequency: 90d
-Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160
+Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586 7396,15479 7474,15408 7611,15286 7754,15160 7819,15103 7929,15006
 # 
 #: XXX Baumaßnahme 1.23 (Realisierung nach 2011)
 #: XXX wenn hier, dann vielleicht auch in der Kongostraße?
@@ -1293,10 +1293,12 @@ Soldiner Str.: grundhafte Erneuerung, evtl. verschwindet das Kopfsteinpflaster d
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7009 (Straßenbenennungen)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036209738161/209738161/00127231/31-Anlagen/03/KartemitdenBenennungspunkten-Heidestrasse.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7515 (Benennungsvorschläge, Anlage fehlt)
+#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036752285719/752285719/00134104/04-Anlagen/02/Drs_2889_Anlage_Karte_Heidestrasse.pdf
+#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036752285719/752285719/00134104/04-Anlagen/01/1_Version_vom_11_07_2016.doc
 #: XXX vorgeschlagene Straßenbenennungen (fehlen in Berlin.coords.data):
 #: XXX Ziffer 0 - Otto-Weidt-Platz
 #: XXX Ziffer 1 - George-Stephenson-Str.
-#: XXX Ziffer 5 - Lydia-Rabinowitsch-Kempner-Str.
+#: XXX Ziffer 5 - Lydia-Rabinowitsch-Kempner-Str. --- abgelehnt, neuer Namensvorschlag: Lydia-Rabinowitsch-Str.
 #: XXX Ziffer 6 - Annemarie-Renger-Str.
 #: last_checked: 2016-07-21 vvv
 #: next_check: 2016-12-31 vvv
@@ -1308,14 +1310,14 @@ geplanter Uferweg	?::projected 8171,13703 8128,13767 8044,13929 7989,14035 7912,
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2016
 Otto-Weidt-Platz: Fußgängerbereich zur Heidestraße, Qualität?	?::projected 7912,14160 7767,14077
 #: osm_watch: way id="237716438" version="6"
-Ziffer 4; Planstraßen 1.1, 1.2, 1.3: asphaltiert; wie wird der Straßenname lauten?	?::inwork 7651,14260 7762,14319 7802,14250 7697,14187
+Clara-von-Simson-Str. (Ziffer 4); Planstraßen 1.1, 1.2, 1.3: asphaltiert; wird der Straßenname stimmen?	?::inwork 7651,14260 7762,14319 7802,14250 7697,14187
 Planstraße 1.3 - Uferweg: Fußgängerbereich	?::projected 7802,14250 7843,14275
 #: XXX wird es auch eine Brücke zum Invalidenfriedhof geben?
 #: osm_watch: way id="237716430" version="6"
 Annemarie-Renger-Str.: Fußgänger- und Radfahrerbereich	?::projected 8044,13929 7906,13855
 George-Stephenson-Str.: Qualität? Genaue Lage?	?::projected 7487,14472 7452,14415 7502,14334 7573,14219 7740,13950 7820,13994
-Ziffer 2: Qualität? Straßenname?	?::projected 7573,14219 7651,14260
-Ziffer 3 (platzähnlich): Qualität? Straßenname?	?::projected 7502,14334 7570,14392
+Lisa-Fittko-Str. (Ziffer 2): Qualität? Wird der Straßenname stimmen?	?::projected 7573,14219 7651,14260
+Clara-Mleinek-Platz (Ziffer 3; platzähnlich): Qualität? Wird der Straßenname stimmen?	?::projected 7502,14334 7570,14392
 #: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -1415,6 +1417,17 @@ Bebauungsplan 3-48 VE: Planstraße B in Planung	?::projected 13368,18674 13222,18
 #: next_check: 2017-05-01
 Bebauungsplan 7-65: Weg in Planung	?::projected 7960,6059 7697,6059 7630,6016 7607,5944
 # 
+#: XXX Bebauungsplan 10-86 im Bezirk Marzahn-Hellersdorf
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6761 vvv
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036848223381/848223381/00086218/18-Anlagen/02/vzb1234_IV_Aufstellg_B_Plan_10_68.pdf vvv
+#: next_check: 2017-06-01 vvv
+Planstraße B: Straßenname? Qualität?	?::projected 22310,10927 22343,11072 22372,11191
+Planstraße B: Straßenname? Qualität?	?::projected 22343,11072 22436,11054
+Planstraße A: Straßenname? Qualität? Wird es eine Verbindung (für Fußgänger/Radfahrer) zur Chemnitzer Str. geben?	?::projected 22338,11197 22372,11191 22400,11188
+#: next_check ^^^
+#: by: ^^^
+#: by: ^^^
+# 
 #: section ^^^
 #: ignore ^^^
 #
@@ -1432,6 +1445,19 @@ Bebauungsplan 7-65: Weg in Planung	?::projected 7960,6059 7697,6059 7630,6016 76
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5759
+Alice-Salomon-Park: Zufahrt nochmal prüfen	? 6771,9458 6851,9365
+# 
+#: XXX Umbenennung von Bahnhöfen vvv
+#: by: http://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20160731 vvv
+#: by: http://www.berliner-linienchronik.de/fahrplanaenderungen.html?date=20160731 vvv
+Betriebsbahnhof Schöneweide --> Adlershof-Johannisthal	X 18682,4714
+Thielplatz --> Freie Universität	X 2265,4892
+Neue Grottkauer Straße --> Kienberg-Gärten der Welt	X 23042,13880
+#: by: ^^^
+#: by: ^^^
+#: XXX ^^^
 # 
 #: XXX prüfen!
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2016
@@ -2855,7 +2881,7 @@ Oderberg - Brodowin: hier auch schlechtes Kopfsteinpflaster?	? 49981,54421 50245
 Neuendorf - Sandkrug: Qualität?	? 47100,53337 46649,53269 46521,53312 46084,53267 45373,53443 45019,53618 44728,53639 44504,53792 43991,53805 43522,54001 43307,53854 43047,53809 42554,53801 42125,53934 41654,53939
 Sandkrug - Neuendorf: Qualität?	? 49981,54421 51183,55005 51506,55009 51873,55078 52067,55167 52177,55296 52348,55277 52693,55282 53013,55094 53292,55124 53634,55048 53937,54875
 Elisenau - Börnicke: Privatgelände, ist die Durchfahrt uneingeschränkt möglich?	? 24360,26503 24427,26841
-Potzlow - Fergitz: ist die gesamte Straße asphaltiert worden?	? 38226,90609 37937,90365 37674,90025
+Potzlow - Fergitz: ist die gesamte Straße asphaltiert worden?	? 38226,90609 38140,90535 37901,90258 37760,90005
 # REMOVED (laut osm track, grade4 -> uninteressant!) --- Weg zwischen Tierpark und Bahntrasse: Qualität des Weges (Am westlichen Ende Beton, dann Feldweg Q2?), geht es weiter in Richtung Norden/Osten, vielleicht bis zur B1? Schranke am westlichen Ende	? 18690,10016 19641,10476 19734,10690 19713,10880
 # REMOVED --- Potsdamer Str., Wilhelm-Külz-Str., Bäkedamm, Potsdamer Allee: wo gibt es überall Radwege?	? -2477,-1717 -2276,-1621 -2073,-1525 -1668,-1709 -1453,-1715 -1303,-1758 -1143,-1759 -705,-1564 -248,-1160 -71,-1037 -39,-1014 154,-876 212,-834 351,-738 465,-662 590,-618 709,-582 723,-580 758,-582 791,-598 950,-680 1067,-699 1212,-706 1235,-714 1329,-753
 Basdorf - Bernauer Heide: Ist der Weg wegen der Bahnstrecke überhaupt passierbar? Qualität? Dürfen hier Autos fahren?	? 12854,36464 13740,36119
@@ -2913,7 +2939,7 @@ Frauenhagen - Schönermark: Qualität? laut "Regio-Cart" gut geeignet	? 53312,7658
 Schönermark - Biesenbrow: Qualität (höchstwahrscheinlich asphaltiert)?	? 54542,78720 54366,78714 54283,78677 54146,78628 54113,78631 53982,78634 53872,78613 53765,78628 53692,78714 53647,78765 52663,79186 52611,79156 52032,78610
 Biesenbrow - Grünow: laut "Regio-Cart" gut geeignet	? 52611,79156 52632,79235 52720,79323 52830,79396 53973,80374 54000,80457 54061,80499 54119,80499
 Passow, Mittelstr.: Qualität im westlichen Abschnitt? Hier auch Beton?	? 56975,82627 57185,82724
-Altkünkendorf - Wolletz: laut "Regio-Cart" gut geeignet	? 41260,67587 41437,68012 40775,68125 40750,69175 40999,69391
+Altkünkendorf - Wolletz: laut "Regio-Cart" gut geeignet, laut osm Kopfsteinpflaster	? 41260,67587 41437,68012 40775,68125 40750,69175 40999,69391
 Wolletz Richtung Norden: laut "Regio-Cart" gut geeignet (zumindest in Wolletz Verbundsteinpflaster)	? 43101,69564 43250,71500 42941,72180
 #: XXX zumindest an der Bundesstraße Feldwege
 Dargen - Katschow: Fahrradroute laut Kompass-Karte	? 51034,165181 50994,165390 50715,166093 50464,166650 50472,166804 50661,166901 50993,167239 51565,167859
@@ -3119,8 +3145,7 @@ Melzow - Meichow: Qualität? Ist die Straße durchgängig asphaltiert?	? 44323,8754
 Neumeichow: Qualität?	? 46617,88457 46886,88320 47675,88141 47917,88155
 #: note: zumindest am östlichen und westlichen Ende Feldweg
 Wolletz - Kerkow (südliche Strecke): Qualität?	? 44673,70082 45614,70316 45652,70216 46917,69881 47172,70534
-#: XXX laut osm unterschiedliche Qualität: sand, cobblestone, unpaved
-Britz - Chorin: Qualität?	? 37225,54056 38412,55353 38528,55402 38516,55481 38774,55675 38987,55637 39726,55645 40450,55770
+Britz - Chorin: Qualität?	? 37225,54056 37527,54354
 Liepe - Chorin: Qualität?	? 46938,50961 46757,50998 46391,51303
 #: XXX laut osm track, teilweise gravel, teilweise cobblestone, teilweise nicht klassifiziert
 Liepe - Chorin: Qualität?	? 46391,51303 45805,51471 45089,51592 44952,51669 44167,52651 43047,53809 42697,54060 42231,54671
@@ -3432,7 +3457,7 @@ Klein Sperrenwalde - Gollmitz: Qualität (zumindest das Gollmitzer Ende ist aspha
 Ellingen - Uckerfeld: Qualität (wahrscheinlich asphaltiert?)?	? 37521,105452 37934,105127
 Wublitzbrücke - Töplitz: Qualität (wahrscheinlich Feld- oder Waldweg)?	? -21681,702 -22045,765 -22525,1230 -22911,1634 -23105,2016 -23207,2284
 Nattwerder - Golm: Qualität (wahrscheinlich Feldweg)?	? -21043,1586 -20807,1383 -20955,978 -21221,764
-Althüttendorf - Joachimsthal: Qualität?	? 33939,63348 33732,63567 33592,63860 33592,64079 33500,64073 33421,64098 33080,63939
+Althüttendorf - Joachimsthal: Qualität?	? 33939,63348 33732,63567
 Nördlich des Grimnitzsees: Qualität?	? 33689,65780 34018,65700 34347,65737 35176,65603 35786,65517 36377,65481 36681,65304 36864,64841 37193,64609 37266,64603 37608,64317 38095,64055 38327,63933
 Neugrimnitz - Ziethen: Qualität?	? 38272,63836 38577,63641 38759,63647 39131,63537 39637,63244 39741,63220 39832,63263
 Neugrimnitz - B198: Qualität?	? 39637,63244 39576,63074 39521,62861 39503,62647 39375,62148 39180,61605 39156,61459 39003,61246
@@ -4141,7 +4166,7 @@ Klein Bünzow - B109: Qualität?	? 22283,169408 23239,169494
 # REMOVED (aufgehoben, gesehen 2012) --- #: XXX so sah es am 2011-05-01 aus, war aber vielleicht eine temporäre Regelung --- Idunastr.: ist der westliche Abschnitt eine Einbahnstraße?	? 12190,19009 12522,18813
 Bettina-von-Arnim-Str. (Potsdam): Qualität?	? -7689,-5039 -7628,-5142
 Romanusplatz (Eichwalde): Qualität?	? 25651,-3855 25636,-3813 25622,-3761 25635,-3723 25668,-3739 25712,-3836
-Hohenwalde: Qualität?	? 31267,74825 32398,74953 32778,75006 33102,75735 33729,75869 33897,76255
+Hohenwalde: Qualität?	? 31267,74825 32476,75001 32778,75006 33102,75735 33729,75869 33897,76255
 Altenhofer Waldstr. (Altenhof): Qualität?	? 30725,57076 30623,57197
 Burgwall - Neuhof: Qualität?	? 2001,71016 2314,71167 2396,71244 2817,71074 3184,71083 3599,70845
 # REMOVED (aufgenommen, ohne enge Straße) --- #: XXX anonymous meint: Asphalt ohne weitere Kategorisierung, q1 (enge Straße) --- Ziegeleiweg: Qualität?	? 5117,64943 5152,65382 5066,65598 4747,65917 4521,66271 4341,66572 4224,66707 4138,67194 4074,67903 3882,68297 3717,68402 3526,68316
@@ -4687,3 +4712,6 @@ Schmöckwitzer Str.: Qualität?	? 26048,-3334 26232,-3205 26249,-3190
 Schmöckwitzer Str.: Qualität?	? 26875,-2993 26831,-2990 26669,-3030 26565,-3054 26469,-3073 26337,-3101 26242,-3135 26237,-3164 26249,-3190 26268,-3195 26302,-3188 26359,-3177 26436,-3155 26463,-3119 26469,-3073
 Lindow - Banzendorf: Qualität?	? -19626,66497 -18685,66767 -18418,67087 -18287,67361
 Banzendorf - Hindenberg: Qualität?	? -18287,67361 -18101,67745 -18267,68226 -18260,68442 -17866,69551 -17808,69926 -17941,70276 -18048,70542 -17823,70759
+#: XXX zumindest südwestlich des Bahnübergangs gab's Kopfsteinpflaster (schlecht?), aber mit einem glatten Streifen (Asphalt? nur Richtung Nordosten?)
+Golzow - Senftenhütte: Qualität der Straße?	? 36621,56807 37029,56698 37471,56609 37735,56749 38224,57167
+Golzow - Senftenhütte: Qualität der Straße?	? 38597,57514 38956,57644 39237,58124 39783,58604 39940,58908 40109,58965 40362,59162

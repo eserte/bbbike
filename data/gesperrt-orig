@@ -1,4 +1,4 @@
-	#: #: -*- coding: iso-8859-1 -*-
+#: #: -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen
 #: note: XXX_* categorization done 2008-01-26
 #:
@@ -1124,11 +1124,13 @@ Wiltinger Str.	1 2384,25679 2375,25607
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.489468.php
 #: XXX (wann) wird die Einbahnstraßenregelung für Radfahrer aufgehoben? -> nach gesperrt_car-orig überführen vvv
 #: last_checked: 2016-07-23 vvv
+#: check_frequency: 14d vvv
 Leonhardyweg	1s 9033,8029 9035,7810 9040,7648
 Leonhardyweg	1s 9033,8029 9032,8254
 Kleineweg	1s 9130,7810 9132,7661
 Kleineweg	1s 9130,7810 9130,8029
 Kleineweg	1s 9128,8251 9130,8029
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 #: by: ^^^
@@ -3018,19 +3020,8 @@ Niederlagstr.: Bauarbeiten, keine Zufahrt von Unter den Linden möglich	2::inwork
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
-#: next_check_id: STERNDAMM-2016
-#: by: fritz
-#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160124
-#: source_id: 2147339574
-#: source_id: IM_026665
-#: source_id: 2147340122
-#: source_id: LMS-BR_r_LMS-BR_68908
-#: last_checked: 2016-06-26
-#: check_frequency: 90d
-#: priority: #A
-#: XXX Gesamtmaßnahme bis 2018 (oder 2017?)
-#: valid: -20180101
-Sterndamm: Eisenbahnunterführung in Richtung Groß-Berliner Damm/Südostallee gesperrt	1::inwork 17886,5587 17736,5441
+# REMOVED --- #: next_check_id: STERNDAMM-2016 --- #: by: fritz --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160124 --- #: source_id: 2147339574 --- #: source_id: IM_026665 --- #: source_id: 2147340122 --- #: source_id: LMS-BR_r_LMS-BR_68908 --- #: last_checked: 2016-06-26 --- #: check_frequency: 90d --- #: priority: #A --- #: XXX Gesamtmaßnahme bis 2018 (oder 2017?) --- #: valid: -20180101
+# REMOVED (laut vmz) --- Sterndamm: Eisenbahnunterführung in Richtung Groß-Berliner Damm/Südostallee gesperrt	1::inwork 17886,5587 17736,5441
 #Sterndamm: Eisenbahnunterführung voll gesperrt	2::inwork 17886,5587 17736,5441
 # 
 #: next_check_id: GRENZALLEE-2014
