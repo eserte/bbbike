@@ -250,7 +250,7 @@ sub gonzo {
 
 	my @via = ();
 
-	make_net();
+	#make_net();
 
 	my @res = do_search($start, $end, \@via);
 	if (!@res) {
@@ -262,9 +262,6 @@ sub gonzo {
 	foreach my $point (@path) {
 		print "@$point[0], @$point[1]\n";
 	}
-
-	#use Dumpvalue;
-	#Dumpvalue->new->dumpValue( \@path );
 
 }
 
