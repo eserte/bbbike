@@ -274,7 +274,8 @@ sub find_random_route {
 
 }
 
-sub gonzo {
+# gonzo
+sub find_thousand_random_routes {
 
 	for(0..999) {
 		if ($_ % 10 == 0) {
@@ -19586,12 +19587,18 @@ sub search_route_mouse {
 	my $this_search_route_start = $search_route_points[-1]->[SRP_COORD];
 	return if !defined $this_search_route_start;
 
+	# gonzo hack
 	# gonzo
+	$this_search_route_start = "14558, 10082";
+	$search_route_ziel = "14626, 10162";
+
 	print "start/ziel: $this_search_route_start $search_route_ziel\n";
 	search_route($this_search_route_start, $search_route_ziel);
 
+
+
 	# gonzo
-	gonzo();
+	#find_thousand_random_routes();
 
 	# XXX duplicate code (see above)
 	undef $search_route_flag;
