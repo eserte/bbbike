@@ -19602,7 +19602,7 @@ sub search_route_mouse {
 
 	#$c->createOval(0, 0, 10000, 10000, -fill => 'orange');
 
-	my $radius = 10;
+	my $radius = 5;
 
 	#my $xx = 14558;
 	#my $yy = 10082;
@@ -19615,6 +19615,7 @@ sub search_route_mouse {
 
 	#$c->createOval($tx0, $ty0, $tx1, $ty1, -fill => 'orange');
 
+	print "Creating 5000 points.\n";
 	while (<$handle>) {
 		my ($x, $y) = split(',', $_);
 		print "x, y: $x $y\n";
@@ -19627,7 +19628,7 @@ sub search_route_mouse {
 		print "CreateOval: $x1 $y1 $x2 $y2\n";
 		$c->createOval($x1, $y1, $x2, $y2, -fill => 'orange');
 	}
-
+	print "Done.\n";
 	return;
 
 	search_route($this_search_route_start, $search_route_ziel);
