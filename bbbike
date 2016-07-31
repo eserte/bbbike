@@ -19257,6 +19257,12 @@ sub restore_cursor {
 }
 
 sub set_cursor {
+
+    # gonzo
+    #use Devel::StackTrace;
+    #my $trace = Devel::StackTrace->new;
+    #print $trace->as_string; # like carp
+
     my($type, $fallback) = @_;
     if (!defined $fallback && defined $type) {
 	if ($type eq 'ziel') {
@@ -19505,6 +19511,9 @@ sub search_route_mouse {
 	status_message('');
 	my $this_search_route_start = $search_route_points[-1]->[SRP_COORD];
 	return if !defined $this_search_route_start;
+
+	# gonzo
+	print "start/ziel: $this_search_route_start $search_route_ziel\n";
 	search_route($this_search_route_start, $search_route_ziel);
 
 	# XXX duplicate code (see above)
