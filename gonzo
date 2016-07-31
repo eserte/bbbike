@@ -10,8 +10,7 @@ sub random_point {
 	my $ymin =  0;
 	my $ymax =  26000;
 
-	print "$xmin $xmax $ymin $ymax\n";
-
+	#print "$xmin $xmax $ymin $ymax\n";
 
 	my $x = int(rand($xmax - $xmin)) + $xmin;
 	my $y = int(rand($ymax - $ymin)) + $ymin;
@@ -19,6 +18,7 @@ sub random_point {
 	print "$x $y\n";
 }
 
-
-random_point();
+for (0..9) {
+	random_point();
+}
 
