@@ -235,13 +235,37 @@ use Msg; # This call has to be in bbbike!
 
 # gonzo
 sub gonzo {
-	print "Gonzo!\n";
+
+	$green_optimization = 1;
+
 	my $start = random_point();
+	while (!$net->reachable($start)) {
+		$start = random_point();
+	}
+
 	my $end = random_point();
-	print "$start $end\n";
+	while (!$net->reachable($end)) {
+		$end = random_point();
+	}
+
+	my @via = ();
 
 	make_net();
-	search_route($start, $end);
+
+	my @res = do_search($start, $end, \@via);
+	if (!@res) {
+	    die M"Keine Strecke gefunden.\n";
+	}
+	my @path = @{ $res[StrassenNetz::RES_PATH] };
+	print "Size of path: $#path\n";
+
+	foreach my $point (@path) {
+		print "@$point[0], @$point[1]\n";
+	}
+
+	#use Dumpvalue;
+	#Dumpvalue->new->dumpValue( \@path );
+
 }
 
 # XXX This is a hack until I decide how to do custom create_page best.
