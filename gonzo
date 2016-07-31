@@ -15,10 +15,11 @@ sub random_point {
 	my $x = int(rand($xmax - $xmin)) + $xmin;
 	my $y = int(rand($ymax - $ymin)) + $ymin;
 
-	print "$x $y\n";
+	return ($x, $y);
 }
 
-for (0..9) {
-	random_point();
+for (0..0) {
+	my ($x, $y) = random_point();
+	print "$x $y\n";
 }
 
