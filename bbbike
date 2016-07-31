@@ -234,10 +234,12 @@ use Msg; # This call has to be in bbbike!
 }
 
 # gonzo
-BEGIN {
+sub gonzo {
 	print "Gonzo!\n";
 	my ($x, $y) = random_point();
 	print "$x $y\n\n";
+
+	make_net();
 }
 
 # XXX This is a hack until I decide how to do custom create_page best.
@@ -18908,6 +18910,7 @@ sub make_net {
     DecBusy($top);
 }
 
+
 sub make_qualitaet_net {
     if (!$qualitaet_s_net) {
 	# XXX hmmm, fails fataly if any of the layers is missing
@@ -19523,6 +19526,9 @@ sub search_route_mouse {
 	# gonzo
 	print "start/ziel: $this_search_route_start $search_route_ziel\n";
 	search_route($this_search_route_start, $search_route_ziel);
+
+	# gonzo
+	gonzo();
 
 	# XXX duplicate code (see above)
 	undef $search_route_flag;
@@ -22484,5 +22490,6 @@ sub Tk::Widget::tk_sleep {
 ## DEBUG_BEGIN
 #BEGIN{mymstat("100% BEGIN");}
 ## DEBUG_END
+
 
 package bbbike; # HACK for autosplit
