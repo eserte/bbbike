@@ -236,10 +236,12 @@ use Msg; # This call has to be in bbbike!
 # gonzo
 sub gonzo {
 	print "Gonzo!\n";
-	my ($x, $y) = random_point();
-	print "$x $y\n\n";
+	my $start = random_point();
+	my $end = random_point();
+	print "$start $end\n";
 
 	make_net();
+	#search_route($this_search_route_start, $search_route_ziel);
 }
 
 # XXX This is a hack until I decide how to do custom create_page best.
