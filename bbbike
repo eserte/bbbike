@@ -144,6 +144,7 @@ BEGIN {
 	 => [qw(create_postscript print_postscript toggle_legend
 		print_text_postscript print_text_pdflatex print_route_pdf
 		view_pdf print_text_windows)],
+	'Gonzo'	=> [qw(random_point)],
 	);
     while(my($k,$v) = each %autouse_func) {
 	eval "use autouse $k => qw(" . join(" ", @$v) . ");";
@@ -230,6 +231,13 @@ use Msg; # This call has to be in bbbike!
 	eval 'sub M ($) { $_[0] }';
 	eval 'sub Mfmt { sprintf(shift, @_) }';
     }
+}
+
+# gonzo
+BEGIN {
+	print "Gonzo!\n";
+	my ($x, $y) = random_point();
+	print "$x $y\n\n";
 }
 
 # XXX This is a hack until I decide how to do custom create_page best.

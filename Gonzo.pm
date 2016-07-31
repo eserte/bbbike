@@ -1,4 +1,4 @@
-#!/usr/bin/env perl
+package Gonzo;
 
 use strict;
 use warnings;
@@ -18,8 +18,12 @@ sub random_point {
 	return ($x, $y);
 }
 
-for (0..0) {
-	my ($x, $y) = random_point();
-	print "$x $y\n";
+sub random_points {
+	for (0..0) {
+		my ($x, $y) = random_point();
+		print "$x $y\n";
+	}
 }
+
+1;
 
