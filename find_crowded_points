@@ -12,7 +12,6 @@ while (<$handle>) {
 	push @points, [ @point ];
 }
 
-#print "Size of points: $#points\n";
 
 my %count;
 my %dups;
@@ -24,9 +23,6 @@ for my $point (@points) {
 
 
 foreach my $name (reverse sort { $dups{$a} <=> $dups{$b} } keys %dups) {
-	#print "$name $dups{$name}";
 	print "$dups{$name} $name";
 }
 
-#use Data::Dumper;
-#print Dumper(\%dups);

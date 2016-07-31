@@ -1,3 +1,7 @@
-all:
+all: 5000_crowded_points
+
+crowded_points: points
 	./find_crowded_points > crowded_points
+5000_crowded_points: crowded_points
+	cut -d" " -f2 crowded_points |head -n5000|tr "_" ", " > 5000_crowded_points
 

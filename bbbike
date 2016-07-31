@@ -19589,13 +19589,48 @@ sub search_route_mouse {
 
 	# gonzo hack
 	# gonzo
-	$this_search_route_start = "14558, 10082";
-	$search_route_ziel = "14626, 10162";
+	#$this_search_route_start = "14558, 10082";
+	#$search_route_ziel = "14626, 10162";
+	#print "start/ziel: $this_search_route_start $search_route_ziel\n";
 
-	print "start/ziel: $this_search_route_start $search_route_ziel\n";
+	#$c->createOval(0, 0, 5000, 5000, -fill => 'orange');
+
+
+	#$crowded_file = "thousand_crowded_points";
+	my $crowded_file = "5000_crowded_points";
+	open(my $handle, "<", $crowded_file) or die "Can't open points!";
+
+	#$c->createOval(0, 0, 10000, 10000, -fill => 'orange');
+
+	my $radius = 10;
+
+	#my $xx = 14558;
+	#my $yy = 10082;
+	#my($txx, $tyy) = transpose($xx, $yy);
+	#my $tx0 = $txx - $radius;
+	#my $ty0 = $tyy - $radius;
+	#my $tx1 = $txx + $radius;
+	#my $ty1 = $tyy + $radius;
+	#print "transposed: $tx0 $ty0 $tx1 $ty1\n";
+
+	#$c->createOval($tx0, $ty0, $tx1, $ty1, -fill => 'orange');
+
+	while (<$handle>) {
+		my ($x, $y) = split(',', $_);
+		print "x, y: $x $y\n";
+		my($tx, $ty) = transpose($x, $y);
+		print "transposed: $tx $ty\n";
+		my $x1 = int($tx) - int($radius);
+		my $y1 = int($ty) - int($radius);
+		my $x2 = int($tx) + int($radius);
+		my $y2 = int($ty) + int($radius);
+		print "CreateOval: $x1 $y1 $x2 $y2\n";
+		$c->createOval($x1, $y1, $x2, $y2, -fill => 'orange');
+	}
+
+	return;
+
 	search_route($this_search_route_start, $search_route_ziel);
-
-
 
 	# gonzo
 	#find_thousand_random_routes();
