@@ -1,0 +1,14 @@
+#!/usr/bin/env perl
+
+# Find most crowded points in the simulation of 1000 routes in Berlin
+
+open(my $handle, "<", "points") or die "Can't open points!";
+
+my @points = ();
+
+while (<$handle>) {
+	my @point = split(',', $_);
+	push @points, [ @point ];
+}
+
+print "Size of points: $#points\n";
