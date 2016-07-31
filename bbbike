@@ -234,7 +234,10 @@ use Msg; # This call has to be in bbbike!
 }
 
 # gonzo
-sub gonzo {
+
+my @all_routes = ();
+
+sub find_random_route {
 
 	$green_optimization = 1;
 
@@ -254,16 +257,53 @@ sub gonzo {
 
 	my @res = do_search($start, $end, \@via);
 	if (!@res) {
-	    die M"Keine Strecke gefunden.\n";
+		return;
+	}
+	if (!$res[StrassenNetz::RES_PATH]) {
+		return;
 	}
 	my @path = @{ $res[StrassenNetz::RES_PATH] };
-	print "Size of path: $#path\n";
 
-	foreach my $point (@path) {
-		print "@$point[0], @$point[1]\n";
-	}
+	push @all_routes, [ @path ];
+
+
+	#print "Size of path: $#path\n";
+	#foreach my $point (@path) {
+	#	print "@$point[0], @$point[1]\n";
+	#}
 
 }
+
+sub gonzo {
+
+	for(0..999) {
+		if ($_ % 10 == 0) {
+			print " $_\n";
+		} else {
+			print ".";
+		}
+		find_random_route();
+	}
+	print "\n";
+	print "Size of all_routes now: $#all_routes\n";
+
+	foreach my $route (@all_routes) {
+		print "Route\n";
+		foreach my $point (@$route) {
+			print "@$point[0], @$point[1]\n";
+		}
+	}
+
+	#my %count;
+	#my %dups;
+	#for(@all_routes) {
+	#	$dups{$_}++ if $count{$_}++;
+	#}
+
+	#use Dumpvalue;
+	#Dumpvalue->new->dumpValue( \%dups);
+}
+
 
 # XXX This is a hack until I decide how to do custom create_page best.
 {
