@@ -241,7 +241,7 @@ sub gonzo {
 	print "$start $end\n";
 
 	make_net();
-	#search_route($this_search_route_start, $search_route_ziel);
+	search_route($start, $end);
 }
 
 # XXX This is a hack until I decide how to do custom create_page best.

@@ -16,7 +16,7 @@ sub random_point {
 	my $y = int(rand($ymax - $ymin)) + $ymin;
 
 	my $point = $x . "," . $y;
-	print "$point\n";
+	#print "$point\n";
 
 	return $point;
 }
