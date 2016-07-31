@@ -22,8 +22,11 @@ for my $point (@points) {
 	$dups{$dummy}++ if $count{$dummy}++;
 }
 
-$size = keys %dups;
-print $size . "\n";
 
-use Data::Dumper;
-print Dumper(\%count);
+foreach my $name (reverse sort { $dups{$a} <=> $dups{$b} } keys %dups) {
+	#print "$name $dups{$name}";
+	print "$dups{$name} $name";
+}
+
+#use Data::Dumper;
+#print Dumper(\%dups);
