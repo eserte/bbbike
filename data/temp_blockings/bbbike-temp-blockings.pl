@@ -254,14 +254,14 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Fürstenwalder Damm zwischen Bölschestraße und Hartlebenstraße Baustell stadtauswärts, Straße gesperrt, eine Umleitung ist eingerichtet, Dauer: 07.09.2003,04.00 Uhr bis 21.09.2003',
        type  => 'gesperrt',
      },
-     { from  => $isodate2epoch->("2015-09-10 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-09-13 21:00:00"),
+     { from  => $isodate2epoch->("2016-09-08 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-09-11 21:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 6, months => 9]],
-       text  => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 11.9.2015 16:00 bis 13.9.2015 20:00',
+       text  => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 9.9.2016 16:00 bis 11.9.2016 20:00',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.berlin.de/tickets/suche/detail.php?id=1087093
+#: by: http://www.berlin.de/tickets/suche/detail.php?id=1250629
 userdel	2::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
@@ -8639,7 +8639,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.berliner-zeitung.de/berlin/volksfest--treptow-in-flammen--organisiertes-besaeufnis-im-treptower-park-faellt-aus,10809148,26239080.html (fällt 2014 aus)
-userdel	2::temp 14464,9927 14465,9900 14500,9863 14635,9786 14807,9704 14889,9660 14909,9649
+userdel	2::temp 14464,9927 14459,9897 14467,9887 14500,9863 14635,9786 14807,9704 14889,9660 14909,9649
 userdel	2::temp 14500,9863 14488,9848
 EOF
      },
@@ -16382,11 +16382,11 @@ EOF
 userdel	2::temp 8424,12853 8309,12758 8306,12609
 EOF
      },
-     { from  => $isodate2epoch->("2015-09-18 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-09-20 20:00:00"),
+     { from  => $isodate2epoch->("2016-09-16 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-09-18 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 19, months => 9]],
-       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbst in Westend), Straße vollständig gesperrt (19.09.2015 bis 20.09.2015) ',
+       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbst in Westend), Straße vollständig gesperrt (17.09.2016 bis 18.09.2016) ',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,11953
@@ -25077,7 +25077,7 @@ EOF
 EOF
      },
      { from  => 1463868000, # 2016-05-22 00:00
-       until => $isodate2epoch->("2016-08-23 23:59:59"), # 1472680799, # 2016-08-31 23:59
+       until => 1470078618, # $isodate2epoch->("2016-08-23 23:59:59"), # 1472680799, # 2016-08-31 23:59
        text  => 'Darßer Brücke: Bauarbeiten, Radfahrer Richtung Osten können die Brücke schiebend passieren, vom 23.05.2016 bis Ende August 2016 ',
        type  => 'handicap',
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1605/nachricht6033.html',

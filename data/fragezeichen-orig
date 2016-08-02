@@ -145,8 +145,8 @@ Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 #: osm_watch: way id="4638315" version="20"
 #: last_checked: 2016-03-26 vvv
 #: next_check: 2016-07-28 vvv
-#: osm_watch: way id="27848137" version="8"
-#: osm_watch: way id="4541086" version="19"
+#: osm_watch: way id="27848137" version="9"
+#: osm_watch: way id="4541086" version="20"
 Reinickendorfer Str.: werden hier noch die restlichen Radspuren markiert?	?::projected 7666,16879 7681,16769
 #: osm_watch: way id="350932989" version="4"
 Reinickendorfer Str.: werden hier noch die restlichen Radspuren markiert?	?::projected; 7713,16557 7681,16769
@@ -382,6 +382,18 @@ Nürnberger Str.: Radspuren entstehen	?::projected 6025,10746 6122,10925 6145,109
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
+# 
+#: XXX Wiesenweg (Lichtenberg) in beiden Richtungen zwischen Kietzer Weg und Gürtelstraße (Berlin)  Gültig ab: 01.08.2016 15:27  Vollsperrung, Baustelle	LMS-BR_r_LMS-BR_75088
+Wiesenweg: ist die Sperrung auch für Radfahrer relevant? bis wann geht die Sperrung?	?::inwork 15055,11505 15162,11458 15162,11458
+# 
+#: XXX Colditzstraße (Tempelhof) in beiden Richtungen (Berlin)  Gültig ab: 31.07.2016 22:35  Brücke gesperrt, Gefahr durch Unterspülung der Fahrbahn	LMS-BR_r_LMS-BR_74687
+Colditzstr.: ist die Sperrung auch für Radfahrer relvant?	?::inwork 9863,5637 9893,5569
+# 
+#: XXX "Zwischen Mulack- und Weinmeisterstraße Vollsperrung nach einem Wasserrohrbruch"
+Alte Schönhauser Str.: ist die Sperrung auch für Radfahrer relvant?	?::inwork 10527,13257 10603,13395 10640,13471
+# 
+#: XXX Pappelallee/Stahlheimer Straße (Prenzlauer Berg) in beiden Richtungen zwischen Stargarder Straße und Wichertstraße (Berlin)  Gültig ab: 29.07.2016 14:03  Vollsperrung, Absenkung der Fahrbahn	LMS-BR_r_LMS-BR_74872
+Pappelallee: ist die Sperrung auch für Radfahrer relvant?	?::inwork 11301,15668 11373,15789 11393,15823 11455,15916
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2016
 #: XXX Berlin.coods.data-Eintrag fehlt
@@ -1906,8 +1918,8 @@ Kastanienallee (Potsdam): teilweise Entwidmung für den Kfzverkehr	? -14758,-2460
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.401555.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/buergerbeteiligung/xv-30b-ve-353886.php
 #: osm_watch: way id="86812767" version="3"
-#: last_checked: 2016-07-14
-#: next_check: 2016-08-01
+#: last_checked: 2016-07-29
+#: check_frequency: 360d
 Fanny-Zobel-Str.	? 13975,10187 14049,10164
 # 
 # REMOVED (realisiert) --- #: XXX wahrscheinlich nach den Bauarbeiten? --- #: osm_watch: way id="4687118" version="11" --- #: last_checked: 2013-12-20 --- Parkaue: wann wird hier die Einbahnstraße ausgeschildert, wird sie tatsächlich für Radfahrer nicht offen sein?	? 15406,12444 15408,12394 15370,12264

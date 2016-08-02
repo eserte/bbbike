@@ -4,7 +4,7 @@
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
 Straße der Pariser Kommune: Wasserrohrbruch, Fahrbahn gesperrt	q2::inwork 12497,11459 12551,11515 12645,11673
-Revaler Str.: Bauarbeiten, evtl. Ausweichen auf Gehweg nötig, Bordsteine	q3::inwork 14211,11229 14286,11186
+Revaler Str.: Bauarbeiten, evtl. Ausweichen auf Gehweg nötig	q2::inwork 14211,11229 14286,11186
 Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
 Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
 Rigaer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 14133,12482 14266,12446
@@ -74,8 +74,9 @@ Rathausstr.: Fußgänger, Bauarbeiten	q2 10923,12779 10704,12595
 Dircksenstr.: langsame Straßenbahnen, Fußgänger	q2 10970,12822 10849,12944
 Dircksenstr.: Fußgänger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
 Gontardstr.: langsame Straßenbahnen, Fußgänger	q2 10733,12967 10801,12901 10923,12779
-Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 15778,8990 15623,9028 15527,9096 15513,9144 15453,9259 15432,9322 15304,9464 15186,9550 15052,9584 14909,9649 14889,9660 14807,9704 14635,9786 14500,9863 14488,9848
-Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 14500,9863 14467,9880 14448,9922
+Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 15778,8990 15623,9028 15527,9096 15513,9144 15453,9259 15432,9322 15304,9464 15186,9550 15052,9584 14909,9649 14889,9660 14807,9704 14635,9786 14500,9863 14467,9887
+Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 14500,9863 14488,9848
+Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 14467,9887 14455,9892 14448,9922
 (S-Bahnhof - Treptower Hafen): Fußgänger, besonders an schönen Tagen	q2 14361,9772 14436,9784 14460,9814 14488,9848
 (S-Bahnhof - Treptower Hafen): Fußgänger, besonders an schönen Tagen	q2 14404,9847 14466,9861 14488,9848
 (Uferweg - Puschkinallee): Fußgänger	q1 14443,9731 14371,9726 14318,9688
@@ -139,7 +140,7 @@ Am Flutgraben: Fußgänger	q1 13333,9929 13418,9944 13579,10146
 (durch den Schlesischen Busch): Fußgänger	q1 13418,9944 13657,9983 13711,10022
 Kolonie Albrechtshöhe: einige Fußgänger	q1 10260,5953 10215,5959 9955,5993
 Am Landwehrkanal: Parkweg	q1 12739,9576 12796,9548 12919,9584 12981,9672 13086,9825 13145,9861 13230,9981
-Uferweg an den Treptowers: enger und kurviger Weg	q3 14500,9863 14465,9900 14464,9927 14509,9997 14432,10059 14373,10046
+Uferweg an den Treptowers: enger und kurviger Weg	q3 14467,9887 14459,9897 14464,9927 14509,9997 14432,10059 14373,10046
 Denewitzstr.: kombinierter Fuß- und Radweg	q1 8058,10306 7947,10155
 Linienstr.: einige Fußgänger	q1 10718,13625 10740,13621
 Linienstr.: Gehweg	q2 11104,13456 11131,13455

@@ -10,12 +10,12 @@
 # 
 ### Friedrichshain ###
 # 
-# REMOVED (by fritz) --- #: last_checked: 2016-07-27 --- #: check_frequency: 14d --- Koppenstr.: Wasserrohrbruch, Fahrbahn gesperrt	q2::inwork 12409,11902 12366,11808
+# REMOVED --- #: last_checked: 2016-07-27 --- #: check_frequency: 14d --- Koppenstr.: Wasserrohrbruch, Fahrbahn gesperrt	q2::inwork 12409,11902 12366,11808
 # 
 #: source_id: LMS-BR_r_LMS-BR_73434
 #: source_id: 2147340364
 #: XXX laut fritz bis zum 17. August
-#: last_checked: 2016-07-27
+#: last_checked: 2016-08-01
 #: next_check: 2016-08-17
 Straße der Pariser Kommune: Wasserrohrbruch, Fahrbahn gesperrt	q2::inwork 12497,11459 12551,11515 12645,11673
 # 
@@ -23,9 +23,9 @@ Straße der Pariser Kommune: Wasserrohrbruch, Fahrbahn gesperrt	q2::inwork 12497,
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2016-07-25 vvv
+#: last_checked: 2016-08-01 vvv
 # REMOVED --- Revaler Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14357,11148 14286,11186
-Revaler Str.: Bauarbeiten, evtl. Ausweichen auf Gehweg nötig, Bordsteine	q3::inwork 14211,11229 14286,11186
+Revaler Str.: Bauarbeiten, evtl. Ausweichen auf Gehweg nötig	q2::inwork 14211,11229 14286,11186
 Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
 # REMOVED (keine Behinderungen mehr) --- Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
 # REMOVED (gibt's nicht mehr?) --- Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraße ausgewiesen	q3::inwork; 14442,11101 14468,11203
@@ -37,7 +37,7 @@ Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,112
 # REMOVED (beendet) --- #: XXX laut Fritz bis Ende März 2016 (sieht aber schlecht aus für diesen Termin) --- #: last_checked: 2016-06-13 vvv --- #: check_frequency: 7d vvv --- Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 # REMOVED --- Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
-#: last_checked: 2016-07-28
+#: last_checked: 2016-08-01
 #: check_frequency: 7d
 Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
 # 
@@ -66,7 +66,7 @@ Rigaer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 14133,12482 14266,12446
 #
 #: XXX siehe auch valid-Eintrag weiter unten
 #: source_id: 2147340178
-#: last_checked: 2016-07-29
+#: last_checked: 2016-08-01
 #: valid: -20161115
 Bouchéstr.: Bauarbeiten, Radfahrer müssen auf dem Gehweg fahren	q2::inwork 13642,9624 13865,9866 13890,9894
 # REMOVED (wahrscheinlich aufgehoben) --- #: last_checked: 2013-11-22 --- #: check_frequency: 60d --- Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 13973,9465 14157,9345
@@ -91,7 +91,7 @@ Schützenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10116,11485 9949,11470
 # REMOVED (zwar noch Einbahnstraße, aber man kann mittlerweile relativ gut vorbei) --- #: XXX bis wann dauert die Sperrung an? Wird die Straße dann asphaltiert sein? (siehe auch Änderung in qualitaet_s-orig, "provisorischer Asphalt") --- #: last_checked: 2016-03-17 --- Leuschnerdamm: Sperrung der Fahrbahn Richtung Michaelkirchplatz	q4::inwork; 11458,11136 11473,11180
 # 
 #: XXX nach den Bauarbeiten bessere Qualität?
-#: last_checked: 2016-07-26
+#: last_checked: 2016-08-01
 Melchiorstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 11542,11342 11726,11265 11921,11185
 # 
 # REMOVED (nicht mehr gesperrt für Radfahrer) --- #: XXX nochmal genauer anschauen... --- #: last_checked: 2014-11-10 --- Gipsstr.: Bauarbeiten zwischen Rosenthaler Str. und Joachimstr., Einbahnstraße	q2::inwork; 10350,13376 10199,13446
@@ -342,8 +342,8 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süde
 #: XXX laut vmz bis Ende August 2016, laut fritz bis 31.07.2016
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1604/nachricht5997.html
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.470764.php
-#: last_checked: 2016-07-29
-#: next_check: 2016-07-31
+#: last_checked: 2016-08-01
+#: next_check: 2016-08-31
 Kynaststr./Hauptstr.: Bauarbeiten, Gehweg benutzen	q3::inwork 14882,10732 14906,10820
 # 
 # REMOVED --- #: last_checked: 2015-12-02 --- #: check_frequency: 14d --- Wiesenweg: Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q3::inwork 15303,11412 15477,11338
@@ -467,8 +467,9 @@ Rathausstr.: Fußgänger, Bauarbeiten	q2 10923,12779 10704,12595
 Dircksenstr.: langsame Straßenbahnen, Fußgänger	q2 10970,12822 10849,12944
 Dircksenstr.: Fußgänger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
 Gontardstr.: langsame Straßenbahnen, Fußgänger	q2 10733,12967 10801,12901 10923,12779
-Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 15778,8990 15623,9028 15527,9096 15513,9144 15453,9259 15432,9322 15304,9464 15186,9550 15052,9584 14909,9649 14889,9660 14807,9704 14635,9786 14500,9863 14488,9848
-Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 14500,9863 14467,9880 14448,9922
+Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 15778,8990 15623,9028 15527,9096 15513,9144 15453,9259 15432,9322 15304,9464 15186,9550 15052,9584 14909,9649 14889,9660 14807,9704 14635,9786 14500,9863 14467,9887
+Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 14500,9863 14488,9848
+Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 14467,9887 14455,9892 14448,9922
 (S-Bahnhof - Treptower Hafen): Fußgänger, besonders an schönen Tagen	q2 14361,9772 14436,9784 14460,9814 14488,9848
 (S-Bahnhof - Treptower Hafen): Fußgänger, besonders an schönen Tagen	q2 14404,9847 14466,9861 14488,9848
 (Uferweg - Puschkinallee): Fußgänger	q1 14443,9731 14371,9726 14318,9688
@@ -536,7 +537,7 @@ Am Flutgraben: Fußgänger	q1 13333,9929 13418,9944 13579,10146
 (durch den Schlesischen Busch): Fußgänger	q1 13418,9944 13657,9983 13711,10022
 Kolonie Albrechtshöhe: einige Fußgänger	q1 10260,5953 10215,5959 9955,5993
 Am Landwehrkanal: Parkweg	q1 12739,9576 12796,9548 12919,9584 12981,9672 13086,9825 13145,9861 13230,9981
-Uferweg an den Treptowers: enger und kurviger Weg	q3 14500,9863 14465,9900 14464,9927 14509,9997 14432,10059 14373,10046
+Uferweg an den Treptowers: enger und kurviger Weg	q3 14467,9887 14459,9897 14464,9927 14509,9997 14432,10059 14373,10046
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20070810.1330.83363.html
 #: confirmed_by: srt
 Denewitzstr.: kombinierter Fuß- und Radweg	q1 8058,10306 7947,10155
