@@ -208,6 +208,9 @@ rare-persistent-tmp:	\
 		${PERSISTENTTMPDIR}/unpaved.bbd \
 		data-bbbgeojsonp
 
+update-bbbike-aux-downloads:
+	cd ${HOME}/src/bbbike-aux/downloads && ${MAKE}
+
 # popular targets
 fragezeichen-outdoor-nextcheck:	${PERSISTENTTMPDIR}/fragezeichen-outdoor-nextcheck.bbd
 
