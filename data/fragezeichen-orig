@@ -115,7 +115,7 @@ Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10
 # REMOVED (realisiert) --- #: XXX Baumaßnahme 1.39 (Realisierung in 2011) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: last_checked: 2013-06-28 --- #: check_frequency: 60d --- Schulze-Delitzsch-Platz: werden hier Radspuren markiert?	?::projected 11242,11720 11155,11750
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2016-07-28
+#: last_checked: 2016-08-02
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9701,11656
 # 
@@ -383,17 +383,13 @@ Nürnberger Str.: Radspuren entstehen	?::projected 6025,10746 6122,10925 6145,109
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
-#: XXX Wiesenweg (Lichtenberg) in beiden Richtungen zwischen Kietzer Weg und Gürtelstraße (Berlin)  Gültig ab: 01.08.2016 15:27  Vollsperrung, Baustelle	LMS-BR_r_LMS-BR_75088
-Wiesenweg: ist die Sperrung auch für Radfahrer relevant? bis wann geht die Sperrung?	?::inwork 15055,11505 15162,11458 15162,11458
+# REMOVED (laut fritz nur bis Mi) --- #: XXX Wiesenweg (Lichtenberg) in beiden Richtungen zwischen Kietzer Weg und Gürtelstraße (Berlin)  Gültig ab: 01.08.2016 15:27  Vollsperrung, Baustelle	LMS-BR_r_LMS-BR_75088 --- Wiesenweg: ist die Sperrung auch für Radfahrer relevant? bis wann geht die Sperrung?	?::inwork 15055,11505 15162,11458 15162,11458
 # 
 #: XXX Colditzstraße (Tempelhof) in beiden Richtungen (Berlin)  Gültig ab: 31.07.2016 22:35  Brücke gesperrt, Gefahr durch Unterspülung der Fahrbahn	LMS-BR_r_LMS-BR_74687
 Colditzstr.: ist die Sperrung auch für Radfahrer relvant?	?::inwork 9863,5637 9893,5569
 # 
-#: XXX "Zwischen Mulack- und Weinmeisterstraße Vollsperrung nach einem Wasserrohrbruch"
-Alte Schönhauser Str.: ist die Sperrung auch für Radfahrer relvant?	?::inwork 10527,13257 10603,13395 10640,13471
-# 
-#: XXX Pappelallee/Stahlheimer Straße (Prenzlauer Berg) in beiden Richtungen zwischen Stargarder Straße und Wichertstraße (Berlin)  Gültig ab: 29.07.2016 14:03  Vollsperrung, Absenkung der Fahrbahn	LMS-BR_r_LMS-BR_74872
-Pappelallee: ist die Sperrung auch für Radfahrer relvant?	?::inwork 11301,15668 11373,15789 11393,15823 11455,15916
+# REMOVED (nicht relevant) --- #: XXX "Zwischen Mulack- und Weinmeisterstraße Vollsperrung nach einem Wasserrohrbruch" --- Alte Schönhauser Str.: ist die Sperrung auch für Radfahrer relvant?	?::inwork 10527,13257 10603,13395 10640,13471
+# REMOVED (nicht relevant) --- #: XXX Pappelallee/Stahlheimer Straße (Prenzlauer Berg) in beiden Richtungen zwischen Stargarder Straße und Wichertstraße (Berlin)  Gültig ab: 29.07.2016 14:03  Vollsperrung, Absenkung der Fahrbahn	LMS-BR_r_LMS-BR_74872 --- Pappelallee: ist die Sperrung auch für Radfahrer relvant?	?::inwork 11301,15668 11373,15789 11393,15823 11455,15916
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2016
 #: XXX Berlin.coods.data-Eintrag fehlt
@@ -469,8 +465,8 @@ Wuhlewanderweg: wird hier ein Weg auf der östlichen Uferseite errichtet?	?::proj
 # 
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2015/pressemitteilung.385888.php
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.205751.php
-#: last_checked: 2016-07-28
-#: next_check: 2016-08-31
+#: last_checked: 2016-08-02
+#: next_check: 2016-08-20
 Pappelallee: Radspuren entstehen	?::inwork 10881,15047 11119,15385 11183,15485 11301,15668
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php
@@ -1521,7 +1517,7 @@ Anforderungsampel, X	?::inwork 7651,14260
 #: next_check_id: ZIEGELSTR-2016
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/25re.pdf/file?y=2016
 #: XXX Berlin.coords.data-Eintrag fehlt
-#: last_checked: 2016-07-11
+#: last_checked: 2016-08-02
 Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?	? 9636,13076
 # 
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.490082.php

@@ -25347,7 +25347,7 @@ userdel	2::inwork 25571,4553 25658,4619
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => $isodate2epoch->("2016-08-10 10:00:00"), # mögliches Ende-Datum laut fritz
        text  => 'Gleimtunnel: Sperrung, unter Umständen können auch Radfahrer und Fußgänger nicht passieren',
        type  => 'gesperrt',
        data  => <<EOF,

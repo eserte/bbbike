@@ -3913,7 +3913,7 @@ userdel	q4::inwork 12911,1815 12817,2031
          'id' => 2813,
          'text' => 'Gleimtunnel: Sperrung, unter Umständen können auch Radfahrer und Fußgänger nicht passieren',
          'type' => 'gesperrt',
-         'until' => undef
+         'until' => 1470816000
        },
        {
          'data' => 'userdel	q4::inwork 2380,20465 2473,20486 2595,20514
