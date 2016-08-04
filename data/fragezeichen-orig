@@ -453,8 +453,9 @@ Rosenthaler Weg: Neubau der Straße, danach existieren Radspuren	?::projected 109
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3712
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.175274.php
 #: XXX ab Mitte 2016, Bauende: voraussichtlich Ende 2019
+#: XXX neue Termine: Baubeginn: voraussichtlich Frühjahr 2017, Bauende: voraussichtlich Mitte 2020
 #: last_checked: 2015-11-07
-#: next_check: 2017-01-01
+#: next_check: 2017-03-01
 Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::projected 5476,19450 5495,19571 5533,19811 5545,19909 5517,20120 5506,20197 5475,20381 5463,20461 5441,20613 5421,20748 5410,20822 5401,20882 5395,20915 5382,21001 5356,21146 5349,21198 5343,21250 5341,21266 5333,21332 5320,21432 5311,21495 5210,21636 5136,21738
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6401
@@ -786,7 +787,7 @@ Brunolfweg: Verknüpfung gefordert	?::projected 19290,894 19316,951 19334,997
 # REMOVED (Eintrag wurde aufgehoben, das Problem besteht aber weiterhin) --- #: XXX_indoor vmz-Eintrag: Karl-Marx-Allee (Friedrichshain): Baustelle, nur Rechtsabbiegen möglich (bis Anfang 08/13) Kreuzung Straße der Pariser Kommune, 17.06.2013 16:42 Uhr bis 02.08.2013 16:00 Uhr	IM_019976 --- #: XXX_indoor vmz-Eintrag: Straße der Pariser Kommune (Friedrichshain): Baustelle, nur Rechtsabbiegen möglich, Überfahrt gesperrt (bis Anfang 08/13) Kreuzung Karl-Marx-Allee, 17.06.2013 16:42 Uhr bis 02.08.2013 16:00 Uhr	IM_019975 --- #: XXX_prog ich brauche eine Kombination aus den Kategorien "3" und "qX". Oder wahlweise "3" mit einer Zeitangabe (wie BNP oder 0). --- #: last_checked: 2013-07-10 --- #: next_check: 2013-08-02 --- Straße der Pariser Kommune: Überqueren der Karl-Marx-Allee nur mit Zeitverlust möglich	?::inwork  12891,12549 12869,12425 12850,12286
 # REMOVED (realisiert) --- außerdem: benachbarter Zebrastreifen wird entfernt, sobald die Ampel in Betrieb ist --- #: last_checked: 2013-09-14 --- #: check_frequency: 30d --- Allee der Kosmonauten/Beilsteiner Str.: Ampel in Bau	?::inwork 18875,13467
 # 
-#: last_checked: 2015-08-01
+#: last_checked: 2016-06-26
 #: check_frequency: 360d
 parallel zur Johannes-Tobei-Str.: eine mit Betonschwellen abgesperrte Asphaltstraße existiert, wird sie offiziell mal eröffnet? Wie geht es dahinten weiter?	? 21243,142 21320,160
 # 
@@ -938,7 +939,7 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 # 
 #: by: http://www.bwb.de/content/language1/html/10337.php#11671
 #: osm_watch: way id="75509950" version="11"
-#: last_checked: 2016-07-26
+#: last_checked: 2016-08-03
 #: check_frequency: 60d
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12085,9778 12074,9689 12066,9558
 #: by: ^^^
@@ -948,7 +949,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12085,977
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="13"
-#: last_checked: 2016-07-29
+#: last_checked: 2016-08-03
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -1376,28 +1377,30 @@ Drakestr./Holbeinstr.: Zebrastreifen in Planung	?::projected 3625,3446 3626,3465
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.104719.php
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/fussgaengerueberweg-gallwitzallee.pdf
 #: priority: #C
+#: XXX evtl. zu Ende der Bauarbeiten eingerichtet?
 #: last_checked: 2016-07-23
-#: check_frequency: 90d
+#: next_check: 2016-09-02
 Gallwitzallee/Krankenhaus: Zebrastreifen in Planung	?::projected 6768,1999 6799,1922 6804,2004
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160319 vvv
-#: next_check: 2016-08-01 vvv
+#: XXX voraussichtliche Dauer: Mai-Dezember 2016
+#: next_check: 2016-12-01 vvv
 Am Kiesberg: Fahrbahnerneuerung in Planung	?::projected 18839,1715 18919,1888 18941,1934 18967,2002 18985,2047
 Mehldornpfad, Teichrohrweg: Fahrbahnerneuerung in Planung	?::projected 18941,1934 19016,1895 18925,1681 18888,1658
 #: next_check ^^^
 # 
 # REMOVED --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.463942.php --- #: source_id: 2147339904 --- #: next_check: 2016-05-04 --- Buntzelstr./Advokatensteig: Zebrastreifen (?) in Planung	?::projected 22156,433 22162,452 22181,482
 # 
-#: next_check: 2016-08-01
+#: next_check: 2016-10-01
 Gemeinschaftsstr.: Fahrbahnerneuerung in Planung	?::projected 19873,3898 19924,3939 19947,3957
 # 
-#: next_check: 2016-08-01
+#: next_check: 2016-10-01
 Tulpenweg: Fahrbahnerneuerung in Planung (danach Q0 statt Q0-?)	?::projected 19921,355 19971,434 20051,646
 # 
-#: next_check: 2016-08-01
+#: next_check: 2016-10-01
 Brückenstr. (Rahnsdorf): Fahrbahnerneuerung in Planung	?::projected 29609,4049 29568,4098 29524,4208
 # 
-#: next_check: 2016-08-01
+#: next_check: 2016-10-01
 Schwarzer Weg (Schmöckwitz): Fahrbahnerneuerung in Planung	?::projected 27892,-3167 28000,-3147 28212,-3120 28549,-3084 28803,-2932 29079,-2874
 #: by ^^^
 # 
@@ -1453,6 +1456,13 @@ Planstraße A: Straßenname? Qualität? Wird es eine Verbindung (für Fußgänger/Radf
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_929_16.pdf
+Liebigstr.: Einrichtung einer Spielstraße, wo genau?	? 14229,12311 14166,12323 14147,12344 14091,12355 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
+# 
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7041
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_925_16.pdf
+Eldenaer Str.: Verlängerung der Radspuren	? 14355,12752 14096,12827 14066,12836 13979,12861 13960,12866 13844,12900
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5759
 Alice-Salomon-Park: Zufahrt nochmal prüfen	? 6771,9458 6851,9365
@@ -4691,6 +4701,11 @@ Kupferhammerweg (Eberswalde): Qualität? Stimmt der Straßenname?	? 36295,48210 36
 # REMOVED (ja) --- Invalidenstr.: gibt es zwischen Caroline-Michaelis-Str. und Chausseestr. Radspuren?	? 9151,13941 9085,13919 8935,13844
 # REMOVED (ja) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20150804 --- #: next_check: 2015-09-01 --- Hirschsprung: wird hier die Straße neu asphaltiert?	? 23837,5978 23865,5895 23865,5895 23874,5876
 # REMOVED (teilweise Verbundsteinpflaster) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20150804 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20151009 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160319 --- #: next_check: 2016-08-01 --- Rainweg: wird hier die Straße neu asphaltiert?	? 25006,-3014 25000,-3001 24970,-2945 25012,-2857 25028,-2846 25113,-2797
+# 
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160803
+#: next_check: 2016-09-02
+Rainweg: wird hier die Straße verbessert?	?::inwork 25006,-3014 25000,-3001 24970,-2945 25012,-2857 25028,-2846
+# 
 # REMOVED (ja, relevant) --- #: add_fragezeichen: Ist die Sperrung auch für Radfahrer relevant? --- #: XXX Florastr. (Pankow): Baustelle, Fahrtrichtung gesperrt (bis Mitte 11/15) Richtung S- und U-Bahnhof Pankow zwischen Wollankstr. und Mühlenstr., 04.08.2015 09:50 Uhr bis 13.11.2015 17:00 Uhr	IM_025833 --- #: valid: -20151113 --- #: XXX_prog valid wird auf diese Datei noch nicht angewandt --- Florastr.: Baustelle, Fahrtrichtung S-Bhf. Pankow gesperrt	?::inwork; 9727,17804 9835,17797 10053,17777 10179,17772 10311,17764 10459,17754
 # 
 Steinstr. (Zepernick): Qualität?	? 18619,28283 18634,28409 18693,28474

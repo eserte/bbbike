@@ -3675,9 +3675,9 @@ userdel	q4::inwork; 25010,4807 25171,4757 25228,4745 25248,4752 25369,4790 25434
          'from' => 1462053600,
          'id' => 2781,
          'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.469998.php',
-         'text' => 'Müggelseedamm: Bauarbeiten zwischen Charlotte-E.-Pauly-Str. und Bölschestr., Fahrbahn in Richtung Osten gesperrt, 2. Mai 2016 bis November 2016',
+         'text' => 'Müggelseedamm: Bauarbeiten zwischen Charlotte-E.-Pauly-Str. und Bölschestr., Fahrbahn in Richtung Osten gesperrt, 2. Mai 2016 bis Ende November 2016',
          'type' => 'handicap',
-         'until' => 1480546799
+         'until' => 1480158000
        },
        undef,
        undef,
@@ -3768,6 +3768,7 @@ userdel	2::inwork 3472,24709 3481,24686 3492,24667 3535,24626
        undef,
        {
          'data' => '#: by: http://www.friedrichshagen.net/baustelle-friedrichshagen/
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160803
 #: last_checked: 2016-07-16
 #: check_frequency: 60d
 userdel	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
@@ -3776,7 +3777,7 @@ userdel	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
          'id' => 2799,
          'text' => 'Bahnbrücke an der Erpe: wegen Bauarbeiten ist der Weg unter Umständen nicht passierbar',
          'type' => 'gesperrt',
-         'until' => undef
+         'until' => 1483225199
        },
        {
          'data' => '#: last_checked: 2016-06-19
@@ -3876,14 +3877,14 @@ userdel	q4::inwork 12911,1815 12817,2031
        },
        undef,
        {
-         'data' => 'userdel	q3::inwork 6984,1540 6881,1743
+         'data' => 'userdel	q3::inwork 7130,1253 7081,1346 6984,1540 6881,1743
 ',
          'from' => 1469052000,
          'id' => 2810,
          'source_id' => '2147340348',
-         'text' => 'Tautenburger Str.: zwischen Blankenhainer Str. und Brotteroder Str. Baustelle, Sperrung der Fahrbahn, Radfahrer dürfen den Gehweg benutzen, bis Ende August 2016',
+         'text' => 'Tautenburger Str.: zwischen Blankenhainer Str. und Brotteroder Str. und später zwischen Brotteroder Str. und Maximilian-Kaller-Str. Baustelle, Sperrung der Fahrbahn, Radfahrer dürfen den Gehweg benutzen, bis Anfang September 2016',
          'type' => 'handicap',
-         'until' => 1472680799
+         'until' => 1472803200
        },
        {
          'data' => 'userdel	2::inwork 23792,10926 24203,10848 24229,10843
@@ -3895,17 +3896,7 @@ userdel	q4::inwork 12911,1815 12817,2031
          'type' => 'gesperrt',
          'until' => 1472248799
        },
-       {
-         'data' => 'userdel	2::inwork 25571,4553 25658,4619
-',
-         'dont_check_date' => 1,
-         'from' => 1469570400,
-         'id' => 2812,
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1607/nachricht6127.html',
-         'text' => 'Spreetunnel: Vollsperrung an den folgenden Tagen jeweils von 20.00 Uhr bis 04.00 Uhr: 28.07.2016 - 29.07.2016, 01.08.2016 - 02.08.2016, 02.08.2016 - 03.08.2016',
-         'type' => 'gesperrt',
-         'until' => 1470189600
-       },
+       undef,
        {
          'data' => 'userdel	2::inwork 10130,15647 9991,15629 9907,15618
 ',
@@ -3925,6 +3916,26 @@ userdel	q4::inwork 2473,20486 2448,20592
          'text' => 'Tile-Brügge-Weg und An der Oberrealschule: Fahrbahn gesperrt, Bauarbeiten, vom 04.08.2016 bis zum 02.09.2016 ',
          'type' => 'handicap',
          'until' => 1472853600
+       },
+       {
+         'data' => 'userdel	q4::inwork; -4011,13407 -4299,13304 -4634,13173 -4731,13135
+',
+         'from' => 1470520800,
+         'id' => 2815,
+         'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.504895.php',
+         'text' => 'Seeburger Str.: Einbahnstraßenregelung zwischen Elsflether Weg und Päwesiner Weg, offen Richtung Osten, vom 08.08.2016 bis voraussichtlich 04.09.2016',
+         'type' => 'handicap',
+         'until' => 1473026400
+       },
+       {
+         'data' => 'userdel	q4::inwork 1732,24798 1730,24860 1750,24942 1775,25019 1767,25098 1738,25243
+',
+         'from' => 1470520800,
+         'id' => 2816,
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.504849.php',
+         'text' => 'Alemannenstr.: Bauarbeiten zwischen Maximiliankorso und Sigismundkorso, Fahrbahn gesperrt, vom 8. August 2016 bis 2. September 2016',
+         'type' => 'handicap',
+         'until' => 1472853599
        }
      
 );

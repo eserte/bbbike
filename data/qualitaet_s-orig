@@ -159,7 +159,7 @@ Corneliusstr.: m‰ﬂiges Kopfsteinpflaster	Q2 6880,11110 6841,11114 6630,11247 647
 Kopernikusstr.: m‰ﬂiges Kopfsteinpflaster	Q2 13467,11778 13651,11731
 Torellstr.: m‰ﬂiges Kopfsteinpflaster	Q2 13295,11792 13467,11778
 #: XXX Bauarbeiten, danach vielleicht teilweise bessere Qualit‰t?
-#: last_checked: 2016-08-01
+#: last_checked: 2016-08-03
 #: check_frequency: 60d
 R¸dersdorfer Str.: Asphalt mit Sch‰den	Q1- 13295,11792 13173,11788 13066,11854
 Kaskelstr.: relative glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
@@ -220,7 +220,8 @@ Suadicanistr.: glatt gepflastert	Q0 7858,7506 7854,7572
 Lilienthalstr.: Asphalt	Q0 10675,8940 10640,8832 10633,8705
 Lilienthalstr.: Asphalt, etwas rau	Q0- 10633,8705 10615,8558
 Weichselstr.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q2- 12330,8636 12394,8729 12434,8776 12483,8834 12590,8977 12681,9083 12761,9190
-Weichselstr.: Asphalt	Q0 12761,9190 12851,9309 12844,9351
+#: XXX_indoor: ... mit "abgeschr‰gten Stufen", wie dr¸ckt man das am besten aus?
+Weichselstr./Maybachufer: Asphalt	Q1+ 12761,9190 12851,9309 12844,9351
 Treptower Str.: Asphalt	Q0 13860,8599 14015,8798 14151,8967
 Pfarrstr.: m‰ﬂiges Kopfsteinpflaster	Q2 15279,10862 15359,11115 15458,11306
 Pfarrstr.: sehr guter Asphalt	Q0 15458,11306 15477,11338
@@ -244,7 +245,7 @@ Lohm¸hlenbr¸cke: Asphalt	Q0 12871,9356 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaﬂnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2016-07-14
+#: last_checked: 2016-08-03
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15021,11152 15102,11120
@@ -1506,8 +1507,9 @@ Lepsiusstr.: Kopfsteinpflaster	Q2 4973,6645 4940,6586 4913,6538
 #: by: Johann Eickhoff-Koberg (Nordteil, Q2) vvv
 #: corrected_by: srt (S¸dteil, korrigiert zu Q1-)
 #: XXX Sanierung ab dem Jahr 2016 (by Bezirksmelder) vvv
+#: XXX neue Termine: Baubeginn: voraussichtlich Ende 2017, Bauende: voraussichtlich Mitte 2018
 #: last_checked: 2015-11-07 vvv
-#: next_check: 2016-05-01 vvv
+#: next_check: 2017-11-01 vvv
 Artemisstr.: kleinteiliges Kopfsteinpflaster mit sp¸rbaren Unebenheiten	Q1- 4371,22234 4280,22383 4232,22458
 #: corrected_by: srt (kleinteiliges Kopfsteinpflaster mit sp¸rbaren Unebenheiten -> ...)
 Artemisstr.: schadhafter Asphalt	Q1- 4232,22458 4119,22634
@@ -1945,6 +1947,9 @@ Heinrich-Lassen-Park: glatte Pflasterung	Q0 6664,8787 6705,8730
 Heinrich-Lassen-Park: wassergebundene Decke	Q1- 6705,8730 6740,8682 6815,8691 6912,8617
 Am Berlin-Spandauer Schiffahrtskanal: Kopfsteinpflaster	Q2 8337,13541 8248,13659
 #: note: fr¸her "glatter Belag, Q0", mittlerweile hat die Qualit‰t deutlich nachgelassen
+#: XXX eventuell wird hier asphaltiert werden
+#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/1505_2016_bav_zu_ds_1599_iv_radweg_berlin-kopenhagen.pdf
+#: last_checked: 2016-06-16
 Am Berlin-Spandauer Schiffahrtskanal: wassergebundene Decke	Q1 8248,13659 8101,13901 8119,13912
 Uferweg: Verbundsteinpflaster	Q1 8011,14096 7994,14102 7967,14161 7973,14195
 Uferweg: Asphalt f¸r Radfahrer, Kopfsteinpflaster f¸r Fuﬂg‰nger	Q0 7973,14195 7807,14441
@@ -7967,8 +7972,9 @@ Schildower Str.: Asphalt	Q0 4169,23451 4236,23608 4250,23642 4303,23767 4397,240
 Arnheidstr.: Kleinsteinpflaster	Q1- 4250,23642 4185,23679 4098,23761
 #: XXX Neubau der Straﬂe von voraussichtlich Mitte 2015 bis voraussichtlich Ende 2016, die Fahrbahn wird dann asphaltiert sein
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129483.php
+#: XXX neue Termine: Baubeginn: voraussichtlich Fr¸hjahr 2017, Bauende: voraussichtlich Mitte 2018
 #: last_checked: 2015-11-07
-#: next_check: 2016-12-31
+#: next_check: 2017-03-01
 Hermsdorfer Str.: Kleinsteinpflaster	Q1- 3957,23981 4073,23980 4240,23985 4256,23985 4316,23995 4397,24033
 Cecilienallee: Kleinsteinpflaster	Q1- 3922,24161 4034,24181
 Cecilienplatz: Gehwegplatten	Q0- 3915,24200 4031,24218
@@ -17211,6 +17217,9 @@ Liliencronstr.: Asphalt	Q0 6435,4590 6360,4654 6288,4704 6272,4716 6183,4785
 Gartenstadtweg: Asphalt	Q0 21538,479 21527,547
 #: corrected_by: srt (Kopfsteinpflaster -> Beton)
 Gartenstadtweg: Beton	Q1 21527,547 21536,603
+#: XXX Bauarbeiten --- vielleicht wird das Kopfsteinpflaster danach etwas besser sein?
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.505151.php
+#: next_check: 2016-11-21
 Gartenstadtweg: schlechtes Kopfsteinpflaster	Q3 21536,603 21543,673 21685,916
 #: by: ^^^
 # 
@@ -23067,8 +23076,8 @@ Pansfelder Weg: guter Asphalt	Q0 7297,-519 7384,-387 7536,-139
 #: XXX Instandsetzungsarbeiten Fahrbahn
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20151009
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.432036.php (erster Bauabschnitt (fertig?))
-#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20160124 (Baueende 2016-06-30)
-#: next_check: 2016-01-01
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20160124 (Baueende 2016-06-30, sp‰ter 2016-08-31)
+#: next_check: 2016-08-31
 Beyschlagstr.: m‰ﬂiger Asphalt	Q1- 408,22184 184,22257 5,22384 21,22545
 # 
 #: by: epha: vvv
@@ -25145,7 +25154,8 @@ Bekassinenweg: Beton	Q0 -1452,21978 -1368,22091 -1359,22126 -1340,22219
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129468.php
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.404058.php
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.459717.php ("ab Anfang April", kein Endedatum)
-#: next_check: 2016-08-31
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20160803
+#: next_check: 2016-11-01
 Bekassinenweg: schlechter Asphalt	Q2 -1340,22219 -1301,22347 -1267,22480
 #: by: ^^^
 # 
