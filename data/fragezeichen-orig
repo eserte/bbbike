@@ -40,7 +40,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 #: XXX im Baumaﬂnahmenkatalog ist nur der ˆstliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaﬂnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2016-07-26
+#: last_checked: 2016-08-05
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11249,11268 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -172,7 +172,7 @@ Schˆnerlinder Str.: entstehen hier bessere Radwege oder Radspuren?	?::projected 
 # REMOVED (realisiert (Einbahnstraﬂe offen)) --- #: XXX Baumaﬂnahme 3.35 (Realisierung in 2011) --- #: last_checked: 2013-04-30 --- #: next_check: 2013-07-30 --- Pasedagplatz: wird hier eine Ampel entstehen? Oder die Einbahnstraﬂenregelung f¸r Radfahrer aufgehoben?	?::projected 14174,17226 14144,17165
 # 
 #: XXX Baumaﬂnahme 10.11 (Realisierung nach 2011)
-#: osm_watch: way id="387676294" version="2"
+#: osm_watch: way id="387676294" version="3"
 #: osm_watch: way id="10041007" version="18"
 #: last_checked: 2016-05-29
 #: check_frequency: 180d
@@ -1616,7 +1616,7 @@ Mehringdamm: Radspuren entstehen	?::projected; 9248,9350 9225,9111 9224,9053 922
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7478
 #: XXX "noch 2016"
-#: last_checked: 2016-07-26 vvv
+#: last_checked: 2016-08-05 vvv
 #: priority: #C vvv
 Waldemar/Dresdener: Zebrastreifen geplant	?::projected 11170,11048 11150,11030 11121,11021
 Sebastian/Luckauer: Zebrastreifen geplant	?::projected 11105,10969 11113,10943 11122,10908
@@ -1794,7 +1794,7 @@ Seegefelder Weg: Bau von Radspuren	?::projected -6507,15007 -6861,15129
 # REMOVED (aufgenommen) --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.356806.php --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5228 --- #: XXX ggfs. in Berlin.coords.data eintragen; osm-Notiz erstellen --- Waltraud-Krause-Weg: wird es hier Straﬂenschilder geben?	? 17826,6495 17852,6589
 # REMOVED --- #: last_checked: 2015-08-16 --- #: check_frequency: 60d --- Siemensstr.: werden hier vielleicht auch Radspuren markiert?	? 5746,14090 5708,14077 5647,14067 5443,14028 5322,14044
 # REMOVED (nein) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20150723.1925.402307.html --- #: XXX Endedatum laut fritz 2015-08-28, laut Pressemitteilung: 2015-09-30 --- #: next_check: 2015-09-30 --- Weiﬂenseer Weg: wird der Radweg nach den Bauarbeiten besser sein?	? 14843,15007 14959,14752
-# REMOVED (teilweise) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5207 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036190348500/190348500/00109616/16-Anlagen/04/B1105ZB1.pdf ---  #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.493019.php --- #: XXX angestrebt zum 2016-07-05 --- #: last_checked: 2016-06-30 --- #: next_check: 2016-07-05 --- Parkweg: Umbenennung in Bernhard-Langwaldt-Weg?	? 14652,10201 14626,10162 14597,10129 14558,10082 14453,9929 14448,9922 14404,9847 14361,9772 14318,9688
+# REMOVED (teilweise) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5207 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036190348500/190348500/00109616/16-Anlagen/04/B1105ZB1.pdf ---  #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.493019.php --- #: XXX angestrebt zum 2016-07-05 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2016 --- #: last_checked: 2016-06-30 --- #: next_check: 2016-07-05 --- Parkweg: Umbenennung in Bernhard-Langwaldt-Weg?	? 14652,10201 14626,10162 14597,10129 14558,10082 14453,9929 14448,9922 14404,9847 14361,9772 14318,9688
 # REMOVED (realisiert, mit Schild) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4094 --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036390936422/390936422/00068591/91-Anlagen/01/Anlage1u2NEU.pdf --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4115 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file?y=2015 --- #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2015/pressemitteilung.403259.php --- #: last_checked: 2015-11-07 --- #: next_check: 2015-11-27 --- Minna-Flake-Platz: Benennung eines Platzes	? 11673,16003
 # 
 #: XXX "Straﬂen in der Hahnebergsiedlung asphaltieren" vvv
@@ -2699,9 +2699,22 @@ Traudelstr.: geplante Straﬂe in Altglienicke, genaue Lage, Qualit‰t?	?::projecte
 #: next_check: 2016-08-01
 Bebauungsplan 10-77: werden hier neue Straﬂen entstehen?	?::projected 21483,16527 21548,16338
 # 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2016
+#: XXX hmmm, es gibt schon einen Antonyplatz am Waidmannsluster Damm? Siehe z.B.
+#: by: http://www.berliner-zeitung.de/typisch-franzoesisch-15795708
+#: by: https://de-de.facebook.com/CDU.Fraktion.Reinickendorf/posts/1011925145529512
+#: next_check: 2016-09-19
+#: priority: #A
+Antonyplatz: Benennung eines Platzes	? 4879,20427
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2016
+Mariendorfer-Hafen-Weg und Mariendorfer-Hafen-Steg: Benennung eines Weges und Stegs, existieren schon Straﬂenschilder?	? 8199,3338 8145,3380 8106,3410 7795,4242 7769,4315 7667,4549
+# 
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6436
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036284949883/284949883/00122677/77-Anlagen/02/Anlage1775.pdf
 #: XXX geplante neue Straﬂen im Komplex ArendsCarrÈe (Bebauungsplan 11-24 VE), noch nicht best‰tigt, fehlen in Berlin.coords.data, genaue Lage? vvv
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2016
+#: XXX Privatstraﬂen
 #: last_checked: 2016-07-24 vvv
 #: check_frequency: 2700d vvv
 Agnethaweg	?::projected 17221,15181 17245,15182 17314,15186 17336,15187
