@@ -1265,7 +1265,7 @@ Medebacher Weg: Schranke	3 1945,19622 1896,19801 1886,19835
 Dievenowstr.	1 3228,7401 3208,7328 3189,7249 3202,7121
 Abbestr.: nur für Anlieger, herausfahrbare Poller	2:Anlieger 4755,12236 4674,12076
 Knesebeckstr. - Hardenbergstr.	3 4897,11354 4919,11605 4900,11626
-Sakrower Kirchweg	1 -8449,3907 -8401,3894 -8308,3902 -8255,3946 -8162,4025
+Sakrower Kirchweg	1 -8441,3918 -8401,3899 -8308,3902 -8255,3946 -8162,4025
 Sibeliusweg	1 -6797,4991 -6789,5052 -6787,5076 -6762,5133 -6747,5169
 Angerburger Allee	1 -1538,11126 -1608,11133 -1885,11392 -1931,11437 -1994,11496
 Sensburger Allee	1 200,11428 326,11391 438,11236
@@ -1828,3 +1828,6 @@ Mittelstreifen	3nocross::ignrte 7820,13994 7865,13924 7906,13855 7973,13743
 Heidestr. -> Lydia-Rabinowitsch-Str.; Planstr.n 2.1, 2.2, 2.3: Mittelstreifen	3::igndisp 7820,13994 7865,13924 7973,13991
 Lydia-Rabinowitsch-Str.; Planstr.n 2.1, 2.2, 2.3 -> Heidestr.: Mittelstreifen	3::igndisp 7973,13991 7865,13924 7906,13855
 Mittelstreifen	3nocross::ignrte 7651,14260 7697,14187 7732,14131
+Mittelstreifen	3nocross::ignrte -3789,13519 -3764,13613 -3716,13724
+Klosterstr. -> Diedenhofener Str.: Mittelstreifen	3::igndisp -3716,13724 -3764,13613 -3672,13597
+Diedenhofener Str. -> Klosterstr.: Mittelstreifen	3::igndisp -3672,13597 -3764,13613 -3789,13519

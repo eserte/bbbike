@@ -1761,7 +1761,7 @@ Kiepenheuerallee: Straßenbahntrasse	3nocross -13311,462 -13203,434 -13157,394
 Wilhelmstr.: Mittelstreifen	3nocross -3824,13350 -3813,13404 -3803,13464
 Heerstr.: Mittelstreifen	3nocross -4895,12066 -4637,11982 -4500,11937
 #: by: ^^^
-Klosterstr.: Mittelstreifen	3nocross -3803,13464 -3789,13519 -3761,13625
+Klosterstr.: Mittelstreifen	3nocross -3803,13464 -3789,13519 -3764,13613
 Klosterstr.: Mittelstreifen	3nocross -3625,13889 -3678,13801 -3690,13776 -3716,13724
 Wilhelmstr.: Mittelstreifen	3nocross -4239,12626 -4180,12690 -4119,12763 -4063,12842
 Wilhelmstr.: Mittelstreifen	3nocross -4008,12916 -3967,12976 -3923,13060
@@ -2118,6 +2118,8 @@ Treppe	0:40 1888,42795
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter	BNP:3::trailer=10 -9595,6363
+Drängelgitter	BNP:3::trailer=10 -9635,6265
 Drängelgitter	BNP:2::trailer=8 -1309,2017
 Drängelgitter	BNP:2::trailer=8 -1278,2034
 Drängelgitter	BNP:3::trailer=10 21688,312
@@ -2746,11 +2748,11 @@ Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17082,7189 16954,70
 #: last_checked: 2016-07-23
 Alfonsstr.: Bauzäune	2::inwork 19027,1427 19034,1441 19061,1457
 # 
-#: last_checked: 2016-07-15
-#: next_check: 2016-09-22
+#: last_checked: 2016-08-07
+#: check_frequency: 90d
 Sonntagstr./Ostkreuz: wegen Bauarbeiten gesperrt	2::inwork 14752,11041 14798,10985
 # 
-#: last_checked: 2016-07-24
+#: last_checked: 2016-08-07
 Haasestr.: Bauarbeiten, keine Durchfahrt möglich	2::inwork 14328,11320 14286,11186
 # 
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 vvv --- #: last_checked: 2016-06-02 vvv --- #: check_frequency: 14d vvv --- Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12844,9351 12851,9309 12907,9073 --- Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12907,9073 12851,9309 12844,9351
@@ -2873,7 +2875,7 @@ Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 144
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5561.html
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/gerickesteg/index.shtml (20 Monate Bauzeit)
 #: osm_watch: way id="27250334" version="6"
-#: last_checked: 2016-07-28
+#: last_checked: 2016-08-07
 #: next_check: 2017-01-01
 Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,12669 6765,12680
 # 
@@ -3298,7 +3300,7 @@ Fröhner Str.	1 -4302,11669 -4413,11628 -4573,11545
 Bocksfeldstr.	1 -4312,11720 -4101,11708
 Roedeliusweg	1 -4413,11628 -4431,11779
 Bollmannweg	1 -4431,11779 -4310,11770
-Weinmeisterhornweg	1s -4789,11225 -4564,11180
+Weinmeisterhornweg	1s -4798,11231 -4581,11183
 #: note: keine Verbindung zur südlichen Nebenfahrbahn
 Heerstr.	3nocross -1523,11012 -1288,11037 -1050,11061
 Heerstr.	3nocross -4500,11937 -4437,11919 -4310,11882

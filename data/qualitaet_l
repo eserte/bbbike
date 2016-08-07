@@ -885,7 +885,7 @@ Kopfsteinpflaster	Q2 -19190,7296 -19187,6709 -19514,6643
 	Q0 -26840,5684 -26918,5525 -26965,5390 -27127,5270
 	Q0 -27399,8064 -27441,8070 -28062,8160 -28724,8191 -28778,8193 -29594,8467 -29794,8456 -29867,8452 -30706,8406 -31151,8132
 	Q0 -12865,5567 -12891,5317 -12893,5254 -12819,5106 -12643,5022 -12644,4841 -12571,4741 -12498,4564 -12280,4299 -12245,4171 -12134,4128 -11795,3519 -11509,3084 -11065,2396 -10871,2152 -10722,2111
-	Q0 -10105,2458 -9999,2615 -9530,3165 -9399,3297 -9156,3451 -9064,3667 -8799,3778
+	Q0 -10105,2458 -9999,2615 -9530,3165 -9399,3297 -9156,3451 -9064,3667 -8859,3779 -8825,3783
 	Q0 -25658,8777 -25641,7263 -25537,6616
 	Q0 -22206,-1693 -22672,-1511 -23124,-1235 -23199,-903 -23175,-350 -23411,15 -23896,653 -24509,1607 -24680,1670 -24894,1733
 	Q0 -24894,1733 -24895,1903 -24853,2031 -24983,2265 -25110,2303
@@ -2072,8 +2072,9 @@ Anni-von-Gottberg-Str. (Potsdam): Asphalt	Q0 -7390,-5238 -7415,-5237 -7492,-5242
 Anni-von-Gottberg-Str. (Potsdam): Asphalt	Q0 -7568,-5269 -7491,-5264
 Seepromenade: Asphalt	Q0 -9671,5382 -9653,5317
 Seepromenade: Kopfsteinpflaster	Q2 -9653,5317 -9609,5151
-Seepromenade: Verbundsteinpflaster	Q1 -9609,5151 -9617,5086
-(westlich des Sacrower Sees): Waldweg, sandige Stellen	Q2 -9617,5086 -9846,4977 -9915,4974
+Seepromenade: Verbundsteinpflaster	Q1 -9609,5151 -9615,5069
+Verl‰ngerung Krampnitzer Weg: Asphalt	Q0 -9353,5012 -9395,5033 -9537,5083 -9615,5069
+(westlich des Sacrower Sees): Waldweg, sandige Stellen	Q2 -9615,5069 -9846,4977 -9915,4974
 (westlich des Sacrower Sees): Waldweg	Q1 -9915,4974 -9976,4963
 (westlich des Sacrower Sees): Waldweg	Q1 -9976,4963 -10304,4668 -10388,4469 -10599,4372 -10649,4320 -10738,4074 -10783,3792 -10712,3625 -10662,3514 -10640,3293 -10799,3064 -10893,2730 -10976,2609 -11013,2545 -11065,2396
 Wasserstr.: Kopfsteinpflaster	Q2 -9883,-161 -9795,-230
@@ -2083,7 +2084,7 @@ Am Klubhaus: Kopfsteinpflaster	Q2 -8429,-1805 -8788,-1852
 Sacrower Allee (Groﬂ Glienicke): Asphalt	Q0 -10090,6868 -10059,6832 -10057,6804 -10055,6715 -10053,6676 -10052,6640 -10052,6563 -10045,6292 -10040,6021 -10036,5795
 Sacrower Allee (Groﬂ Glienicke): Kopfsteinpflaster	Q2 -10036,5795 -10046,5464
 Sacrower Allee (Groﬂ Glienicke): Asphalt	Q0 -10046,5464 -10036,5310 -9986,5176 -9935,5070
-Richard-Wagner-Str. (Groﬂ Glienicke): Asphalt	Q0 -9730,5802 -9847,5798 -9945,5797 -10036,5795
+Richard-Wagner-Str. (Groﬂ Glienicke): Asphalt	Q0 -9723,5810 -9847,5798 -9945,5797 -10036,5795
 Richard-Wagner-Str. (Groﬂ Glienicke): Kopfsteinpflaster	Q2 -10036,5795 -10140,5794 -10195,5794 -10234,5804 -10347,5874 -10467,5948
 Dorfstr. (Groﬂ Glienicke): Asphalt	Q0 -9476,7033 -9531,6901 -9547,6865 -9567,6773 -9593,6646 -9642,6538
 Bergstr. (Groﬂ Glienicke): Verbundsteinpflaster	Q1 -9722,6549 -9642,6538
@@ -2091,7 +2092,8 @@ Hechtsprung (Groﬂ Glienicke): Schotter	Q2 -10154,6284 -10045,6292
 Hechtsprung (Groﬂ Glienicke): Asphalt	Q0 -10045,6292 -9962,6295 -9860,6288 -9703,6278
 Ernst-Th‰lmann-Str. (Groﬂ Glienicke): Plattenweg	Q2 -10148,6021 -10040,6021
 Ernst-Th‰lmann-Str. (Groﬂ Glienicke): Asphalt	Q0 -10040,6021 -9957,6028 -9855,6034 -9727,6035
-An der Sporthalle (Groﬂ Glienicke): Verbundsteinpflaster	Q1 -9689,6334 -9753,6338 -9851,6363
+An der Sporthalle (Groﬂ Glienicke): Verbundsteinpflaster	Q1 -9687,6339 -9753,6338 -9851,6363
+(Uferweg - Seepromenade): wassergebundene Decke	Q1 -9614,6314 -9687,6339
 (Potsdamer Chaussee - Dorfstr.): Asphalt	Q0 -9616,6980 -9565,6954 -9547,6865
 M¸ndeseerundweg: schottriger/sandiger Weg	Q2 50403,70708 50497,70796 50594,70755 50678,70738 50758,70752 50871,70761
 Pinnow - Frauenhagen: Asphalt	Q0 55703,74309 55612,74354 55164,74111 55074,74084 54952,74078 54679,74235
@@ -3846,8 +3848,19 @@ Grenzweg (Mahlow): Asphalt	Q0 12284,-4595 12307,-4577 12717,-4593 13289,-4660
 Schwarzer Weg (Groﬂziethen): Verbundsteinpflaster	Q1 13215,-570 13022,-647
 Schwarzer Weg (Groﬂziethen): Asphalt	Q0 13022,-647 12804,-735
 (Bucher Teiche - Hobrechtsfelde): Feldweg	Q2 15777,28037 16058,28106 16107,28379 16066,28510
-Am Park: Asphalt	Q0 -9118,7286 -8968,7328
-Mauerweg am Groﬂ-Glienicker See: Asphalt, einige Fugen	Q0 -9118,7286 -9168,7172 -9154,7073 -9175,7037 -9424,6874 -9455,6843 -9490,6650 -9616,6309 -9668,6171 -9622,5804 -9640,5723 -9727,5573 -9763,5555
+Am Park: Asphalt	Q0 -9118,7286 -9104,7290 -8970,7334
+Mauerweg am Groﬂ-Glienicker See: Asphalt, einige Fugen	Q1 -9118,7286 -9168,7172 -9154,7073 -9175,7037 -9196,7022
+Mauerweg am Groﬂ-Glienicker See: unbefestigter Weg	Q2 -9196,7022 -9192,7006 -9242,6964 -9271,6973
+Mauerweg am Groﬂ-Glienicker See: Asphalt, einige Fugen	Q1 -9271,6973 -9414,6899
+Mauerweg am Groﬂ-Glienicker See: wassergebundene Decke	Q1 -9414,6899 -9432,6884 -9462,6839 -9471,6791 -9462,6699 -9479,6630 -9499,6630
+Mauerweg am Groﬂ-Glienicker See: Asphalt, grˆﬂere Fugen	Q1 -9499,6630 -9595,6363 -9614,6314 -9635,6265 -9668,6171 -9644,5952
+Mauerweg am Groﬂ-Glienicker See: Asphalt	Q1 -9733,5572 -9763,5555
+Mauerweg am Groﬂ-Glienicker See: wassergebundene Decke	Q1 -9733,5572 -9777,5489
+Braumannweg: Asphalt	Q0 -9415,5322 -9491,5339 -9652,5378 -9671,5382
+Braumannweg [Strichstraﬂe]: unbefestigte Straﬂe	Q2 -9491,5339 -9475,5500
+Landhausstr.: Asphalt	Q0 -9415,5322 -9398,5495
+Seeblick: unbefestigte Straﬂe	Q2 -9652,5378 -9556,5445
+Am Denkmal: Verbundsteinpflaster	Q1 -9531,6901 -9432,6884
 Seeburger Chaussee: Asphalt	Q0 -8634,9626 -8595,9582 -8564,9423 -8632,8641 -8666,8449 -8719,8161
 Seeburger Chaussee: m‰ﬂiger Asphalt	Q1 -8719,8161 -8878,8089 -9077,7923 -9150,7720 -9097,7649 -9088,7599
 Edisonstr.: Sand	Q3 -10696,15970 -10722,16134
@@ -4442,7 +4455,7 @@ Z¸ssow, Bahnhof: Asphalt	Q0 16747,174747 16899,174586
 Wockninstr. (‹ckeritz): Asphalt	Q0 51229,179229 51270,179246 51327,179272 51430,179287 51488,179349 51557,179407
 Wockninstr. - ‹ckeritz, Strand: Waldweg	Q2 51557,179407 51660,179531 51738,179771
 Karlsruher Str.: guter Asphalt	Q0 27016,14509 27026,14443 27073,14138
-Seenpromenade (Groﬂ Glienicke): sehr guter Asphalt	Q0 -9642,6538 -9668,6423 -9689,6334 -9703,6278 -9728,6173 -9727,6035 -9730,5802 -9763,5555 -9777,5489 -9766,5437 -9671,5382
+Seenpromenade (Groﬂ Glienicke): sehr guter Asphalt	Q0 -9642,6538 -9668,6423 -9687,6339 -9703,6278 -9728,6173 -9727,6035 -9723,5810 -9763,5555 -9777,5489 -9759,5441 -9671,5382
 In der Aue: Kopfsteinpflaster	Q2 -8189,-2569 -8107,-2600 -8099,-2590 -8018,-2585 -7999,-2585 -7782,-2572 -7373,-2539
 Im Blumenhag: Asphalt	Q0 21117,29968 21110,30037 21481,30539 21646,30961
 Friedhofsweg: Verbundsteinpflaster	Q1 13693,-949 13439,-741 13230,-712
@@ -4528,9 +4541,9 @@ Staakener Weg (Seeburg): Asphalt	Q0 -8445,12092 -8599,11272 -8623,11264 -8624,11
 (Gatower Weg - Maximilian-Kolbe-Str./Potsdamer Chaussee): fester Sandweg, unebene Fahrbahn	Q1 -6660,9953 -6681,9964 -7414,10335 -8274,10938
 Hamburger Str. (Falkensee): Asphalt	Q0 -8080,16150 -8010,16486 -7970,16592
 Dallgow Ausbau: Beton, rissig, mit einigen Bodenwellen	Q1 -9467,12248 -9210,13338
-Mauerweg Groﬂ Glienicke - Sacrower Landstr.: asphaltiert	Q0 -9415,5322 -9390,5298 -9367,5246 -9395,5025 -9560,4615
-Mauerweg Groﬂ Glienicke - Sacrower Landstr.: guter Waldweg	Q0 -9560,4615 -9138,4086
-Mauerweg Groﬂ Glienicke - Sacrower Landstr.: asphaltiert	Q0 -9138,4086 -8868,3875 -8799,3778
+Mauerweg Groﬂ Glienicke - Sacrower Landstr.: asphaltiert mit Fugen	Q1 -9415,5322 -9390,5298 -9367,5246 -9395,5033 -9546,4671
+Mauerweg Groﬂ Glienicke - Sacrower Landstr.: guter Waldweg	Q1 -9546,4671 -9539,4613 -9160,4124
+Mauerweg Groﬂ Glienicke - Sacrower Landstr.: asphaltiert	Q0 -9160,4124 -9113,4070 -9010,4010 -8957,3967 -8864,3888 -8859,3779
 Rudow - Kleinziethen: Sandweg	Q3 15118,-970 15100,-1008 14652,-1410 14341,-1751 14119,-2010 13912,-2428 13857,-2452 13732,-2659 13540,-2681
 Sch¸tzenstr. (Altglienicke): Asphalt	Q0 19352,-961 19465,-907 19599,-885
 Sch¸tzenstr. (Altglienicke): Asphalt	Q0 19585,-856 19678,-817

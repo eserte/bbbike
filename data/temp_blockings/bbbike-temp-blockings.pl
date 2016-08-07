@@ -17529,14 +17529,15 @@ EOF
 userdel	2::temp 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586
 EOF
      },
-     { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Anwohner haben den Uferweg am Groß Glienicker See versperrt',
-       type  => 'gesperrt',
-       data  => <<EOF,
-userdel	2::temp -9668,6171 -9622,5804 -9640,5723 -9727,5573
-EOF
-     },
+     undef, # früher:
+     #      { from  => undef, # 
+     #        until => undef, # XXX
+     #        text  => 'Anwohner haben den Uferweg am Groß Glienicker See versperrt',
+     #        type  => 'gesperrt',
+     #        data  => <<EOF,
+     # userdel	2::temp -9668,6171 -9644,5952 -9622,5804 -9640,5723 -9733,5572
+     # EOF
+     #      },
      { from  => 1271280104, # 2010-04-14 23:21
        until => 1275775200, # 2010-06-06 00:00
        text  => 'Althüttendorf: Grundhafter Ausbau im Bereich der AS Chorin, westl. Seite 12.04.2010 bis 05.06.2010 ',
@@ -24174,7 +24175,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.312630.php',
        data  => <<EOF,
-userdel	2::inwork -6474,5144 -6361,5222 -6277,5180 -6037,5371 -5918,5610 -5853,5674 -5828,5739 -5688,5837 -5390,5941 -5264,6001 -5037,6085 -4835,6220 -4774,6514
+userdel	2::inwork -6474,5144 -6366,5215 -6280,5176 -6037,5371 -5924,5602 -5911,5619 -5853,5674 -5828,5739 -5737,5814 -5382,5948 -5315,5991 -5277,5993 -5254,6005 -4991,6109 -4950,6139 -4835,6220 -4792,6348 -4789,6422 -4774,6514
 EOF
      },
      { from  => undef,
@@ -24567,7 +24568,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367062.php',
        data  => <<EOF,
-userdel	2::inwork -4546,9381 -4506,9395 -4460,9456 -4442,9625 -4536,9800 -4585,9836 -4619,9867 -4631,10046 -4625,10139 -4645,10192 -4592,10184 -4510,10208 -4445,10379 -4387,10496 -4323,10570 -4230,10679 -4254,10810 -4251,11112
+userdel	2::inwork -4546,9381 -4506,9395 -4460,9456 -4442,9625 -4536,9800 -4585,9836 -4619,9867 -4631,10046 -4625,10139 -4650,10180 -4552,10185 -4514,10201 -4445,10379 -4413,10447 -4387,10496 -4302,10584 -4223,10671 -4223,10714 -4284,10834 -4292,10888 -4266,11008 -4264,11117
 EOF
      },
      { from  => 1442786400, # 2015-09-21 00:00

@@ -2334,15 +2334,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp -9668,6171 -9622,5804 -9640,5723 -9727,5573
-',
-         'from' => undef,
-         'id' => 2040,
-         'text' => 'Anwohner haben den Uferweg am Groß Glienicker See versperrt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2634,31 +2626,7 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.bierfestival-berlin.de/landkarte.html
-userdel	2::temp 12360,12505 12362,12540 12364,12589
-userdel	2::temp 12891,12549 12869,12425
-userdel	2::temp 12632,12630 12596,12472
-userdel	2::temp 13448,12340 13484,12436
-userdel	2::temp 13552,12435 13543,12326
-#zukünftig, wenn dieser Weg eingetragen ist: userdel	2::temp 13163,12382 13176,12500
-',
-         'from' => 1470297600,
-         'id' => 2262,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              31,
-                              'months',
-                              7
-                            ]
-                          ],
-         'text' => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung (Internationales Berliner Bierfestival), Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (5.8.2016 bis 7.8.2016)',
-         'type' => 'gesperrt',
-         'until' => 1470528000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3790,18 +3758,7 @@ userdel	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6081.html (Radfahrer _dürfen_ passieren)
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1607/nachricht6133.html
-userdel	q3::inwork 8389,9087 8180,9099
-',
-         'from' => 1466444819,
-         'id' => 2802,
-         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.489591.php',
-         'text' => 'Monumentenbrücke: Bauarbeiten bis zum 6. August 2016, langsameres Passieren möglich',
-         'type' => 'handicap',
-         'until' => 1470456000
-       },
+       undef,
        {
          'data' => 'userdel	2::inwork -2955,15129 -2929,15082 -2965,15053 -3008,14992 -3008,14910 -2998,14879 -3030,14844 -3066,14718
 ',

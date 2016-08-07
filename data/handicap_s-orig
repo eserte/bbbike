@@ -13,7 +13,7 @@
 # REMOVED --- #: last_checked: 2016-07-27 --- #: check_frequency: 14d --- Koppenstr.: Wasserrohrbruch, Fahrbahn gesperrt	q2::inwork 12409,11902 12366,11808
 # 
 #: XXX laut fritz bis 09.09.2016
-#: last_checked: 2016-08-05
+#: last_checked: 2016-08-07
 #: next_check: 2016-09-09
 Lange Str.: Bauarbeiten, Kreuzungsbereich gesperrt, 2x Bordsteine	q3::inwork 11993,11978 12238,11931
 # 
@@ -28,7 +28,7 @@ Straße der Pariser Kommune: Wasserrohrbruch, Fahrbahn gesperrt	q2::inwork 12497,
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2016-08-01 vvv
+#: last_checked: 2016-08-07 vvv
 # REMOVED --- Revaler Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14357,11148 14286,11186
 Revaler Str.: Bauarbeiten, evtl. Ausweichen auf Gehweg nötig	q2::inwork 14211,11229 14286,11186
 Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
@@ -2357,6 +2357,12 @@ Schlosspark Schönhausen: einige Fußgänger	q1+ 10600,19225 10636,19289 10575,1932
 Schlosspark Schönhausen: einige Fußgänger	q1+ 10589,19275 10636,19289 10857,19379 11081,19456 11236,19509
 Bitburger Str. teilweise relativ eng	q2 15548,17684 15515,17717 15478,17724 15441,17705
 (Dohnagestell - Plötzensee): eng	q2 5086,15664 5113,15596 5134,15565
+(Uferweg - Bocksfeldstr.): einige Fußgänger	q1 -3928,11526 -3909,11596 -3872,11619
+(Uferweg): Fußgänger	q1 -4245,11400 -4209,11424 -4181,11458 -4106,11519 -4028,11533 -3928,11526 -3828,11491 -3785,11445 -3752,11373
+#: note: auch auf dem Straßenabschnitt
+Imchenallee: Fußgänger, besonders an schönen Tagen	q1 -7714,4279 -7687,4233 -7561,4191 -7326,4195 -7195,4194 -7102,4246 -7025,4410 -6990,4531 -6920,4702 -6879,4775 -6811,4893
+Uferweg: Fußgänger	q1 -4774,6514 -4734,6531 -4678,6625 -4664,6746 -4579,6913 -4460,7071 -4438,7169 -4488,7200
+Uferweg: Fußgänger	q1 -4546,9381 -4506,9395 -4460,9456 -4442,9625 -4536,9800 -4585,9836
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -2849,7 +2855,7 @@ Willenberger Pfad: Fußgänger, schmal	q2 569,10738 673,10727
 Börnicker Str. - Südpark): Fußgänger	q2 -4117,11997 -4095,12006
 Graetschelsteig - Südpark): Fußgänger	q2 -4195,12139 -4144,12187
 Südpark): Fußgänger	q2 -4027,11818 -3890,11775 -3712,11714
-Südpark): Fußgänger	q2 -3712,11714 -3675,11702
+Südpark): Fußgänger	q2 -3712,11714 -3685,11704
 Südpark): Fußgänger	q2 -4095,12006 -4021,11924 -3890,11775
 Südpark): Fußgänger	q2 -3989,12223 -3993,12166 -3931,12056 -3786,11913
 (Südpark): Fußgänger	q2 -3993,12166 -4012,12111
@@ -2873,7 +2879,7 @@ Weißenburger Str.: Fußgänger	q1 -3984,12812 -4063,12842
 #: XXX_prog BS (östliche Seite) (ansonsten q1)
 Sprengelstr. (Wilhelmstadt): Fußgänger, Bordstein	q2 -4026,12720 -4119,12763
 Jägerstr. (Wilhelmstadt): Fußgänger	q3 -3752,12566 -3729,12669
-(Wachheimer Weg - Götelstr.): Fußgänger	q2 -3437,12258 -3350,12260 -3349,12213
+(Wachheimer Weg - Götelstr.): Fußgänger	q2 -3437,12258 -3350,12260 -3349,12232
 #: XXX_prog BS (Lindenstr.; beim Überqueren nach links sogar 3x) (ansonsten q2)
 (Neuenburger Str. - Lindenstr.): Fußgänger, Bordstein	q3 9853,10543 9848,10526 9795,10512
 Fanny-Hensel-Weg: spielende Kinder, Pfähle	q3 8781,10827 8742,10868 8659,10910
@@ -4025,7 +4031,7 @@ Lee-Parry-Weg: schwieriges Befahren durch Steigung, in beiden Richtungen	q3 -509
 #: note: "... ist aber dennoch benutzbar"
 (Strittweg - Straße 270): teilweise durch hereinragende Pflanzen wie Brennnesseln eingeengt	q2 -5256,11142 -5312,10948
 Litta-von-Stauffenberg-Weg: schmaler Rad- und Gehweg (1,5m-2m)	q1 -7009,5211 -7174,5307
-Scharfe Lanke: enge Straße	q0- -4251,11112 -4254,10810 -4230,10679 -4323,10570 -4387,10496 -4445,10379
+Scharfe Lanke: enge Straße	q0- -4264,11117 -4266,11008 -4292,10888 -4284,10834 -4223,10714 -4223,10671 -4302,10584 -4387,10496 -4413,10447 -4445,10379
 (Schiffahrtsufer - Betckestr.): einige Fußgänger	q1 -3441,13270 -3352,13135 -3337,13111 -3230,12938 -3228,12920 -3208,12889 -3211,12868 -3211,12784 -3170,12603
 (Schiffahrtsufer - Betckestr.): einige Fußgänger	q1 -3221,12925 -3199,12888 -3205,12816 -3180,12719 -3142,12615
 (zum Räcknitzer Steig): einige Fußgänger	q1 -5535,12631 -5559,12557

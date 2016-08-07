@@ -2089,8 +2089,8 @@ Kerstenweg -> Wilhelmstr.: Mittelstreifen	3::igndisp -3707,13377 -3813,13404 -38
 Mittelstreifen	3nocross::ignrte -4895,12066 -4637,11982 -4500,11937
 Heerstr. -> Winzerstr.: Mittelstreifen	3::igndisp -4500,11937 -4637,11982 -4687,11885
 Winzerstr. -> Heerstr.: Mittelstreifen	3::igndisp -4687,11885 -4637,11982 -4895,12066
-Mittelstreifen	3nocross::ignrte -3803,13464 -3789,13519 -3761,13625
-Klosterstr. -> Ziegelhof, Grünanlage: Mittelstreifen	3::igndisp -3761,13625 -3789,13519 -3689,13513
+Mittelstreifen	3nocross::ignrte -3803,13464 -3789,13519 -3764,13613
+Klosterstr. -> Ziegelhof, Grünanlage: Mittelstreifen	3::igndisp -3764,13613 -3789,13519 -3689,13513
 Ziegelhof, Grünanlage -> Klosterstr.: Mittelstreifen	3::igndisp -3689,13513 -3789,13519 -3803,13464
 Mittelstreifen	3nocross::ignrte -3625,13889 -3678,13801 -3690,13776 -3716,13724
 Klosterstr. -> Borkumer Str.: Mittelstreifen	3::igndisp -3690,13776 -3678,13801 -3849,13848
@@ -2400,6 +2400,8 @@ tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
 tragen (6 Stufen)	0:15:-90 4608,63927
 Treppe	0:40:-131 1888,42795
+Drängelgitter	BNP:3:19:trailer=10 -9595,6363
+Drängelgitter	BNP:3:23:trailer=10 -9635,6265
 Drängelgitter	BNP:2:-118:trailer=8 -1309,2017
 Drängelgitter	BNP:2:-116:trailer=8 -1278,2034
 Drängelgitter	BNP:3:-26:trailer=10 21688,312
@@ -3087,7 +3089,7 @@ Fröhner Str.	1 -4302,11669 -4413,11628 -4573,11545
 Bocksfeldstr.	1 -4312,11720 -4101,11708
 Roedeliusweg	1 -4413,11628 -4431,11779
 Bollmannweg	1 -4431,11779 -4310,11770
-Weinmeisterhornweg	1s -4789,11225 -4564,11180
+Weinmeisterhornweg	1s -4798,11231 -4581,11183
 Heerstr.	3nocross::ignrte -1523,11012 -1288,11037 -1050,11061
 Heerstr. -> Passenheimer Str.: Heerstr.	3::igndisp -1523,11012 -1288,11037 -1304,11183
 Passenheimer Str. -> Heerstr.: Heerstr.	3::igndisp -1304,11183 -1288,11037 -1050,11061
