@@ -366,7 +366,8 @@
   (interactive)
   (if (not url)
       (setq url (bbbike--get-url-under-cursor)))
-  (call-process-shell-command (concat "/home/e/eserte/src/bbbike-aux/downloads/view -show-in-firefox '" url "'")))
+  (let ((bbbike-aux-dir (concat (bbbike-rootdir) "-aux")))
+    (call-process-shell-command (concat bbbike-aux-dir "/downloads/view -show-in-firefox '" url "'"))))
 
 (defun bbbike-view-remote-url ()
   "View the URL under cursor remotely"
