@@ -2630,10 +2630,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: by: Stefan Klinkusch:
 	F -7762,14067
 	F -4924,14535
-#: XXX Baustellenampel
-#: last_checked: 2014-09-13
-#: check_frequency: 180d
-	X::inwork -6861,15129
+# REMOVED (keine Ampel während der Bauarbeiten) --- #: XXX Baustellenampel --- #: last_checked: 2014-09-13 --- #: check_frequency: 180d ---	X::inwork -6861,15129
 	F 20612,18487
 	X 5628,17631
 	X 7676,18492
@@ -3324,7 +3321,7 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	B 52964,-21786
 #: note: Luftbild
 	B -13357,37176
-	B 18101,-35914
+# REMOVED (Bahnübergang wird zzt. rückgebaut) --- B 18101,-35914
 #: note: Luftbild
 	B 22928,-46895
 #: note: Luftbild

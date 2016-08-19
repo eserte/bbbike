@@ -19904,14 +19904,14 @@ EOF
 userdel	2::inwork -13687,-4949 -13723,-6401
 EOF
      },
-     { from  => $isodate2epoch->("2015-09-11 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-09-13 23:59:59"),
+     { from  => $isodate2epoch->("2016-09-09 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-09-11 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 9]],
-       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., Veranstaltung (Fest an der Panke), Straße vollständig gesperrt (12.09.2015-13.09.2015)',
+       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., Veranstaltung (Fest an der Panke), Straße vollständig gesperrt (10.09.2016-11.09.2016)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.laubinger.de/termine/46-fest-an-der-panke/
+#: by: http://www.laubinger.de/termine/47-fest-an-der-panke/
 userdel	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345
 EOF
      },
@@ -19944,13 +19944,13 @@ EOF
 userdel	2::inwork 872,24330 873,24112 825,24068 764,24065 609,24215 237,24374 195,24389 132,24390 78,24364 -406,23934
 EOF
      },
-     { from  => $isodate2epoch->("2015-09-17 00:00:00"), # 1347508800, # 2012-09-13 06:00 PERIODISCH, ca. 2. Wochenende im September
-       until => $isodate2epoch->("2015-09-20 23:59:59"), # 1347832740, # 2012-09-16 23:59
+     { from  => $isodate2epoch->("2016-09-15 00:00:00"), # 1347508800, # 2012-09-13 06:00 PERIODISCH, ca. 2. Wochenende im September
+       until => $isodate2epoch->("2016-09-18 23:59:59"), # 1347832740, # 2012-09-16 23:59
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 9]],
-       text  => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 18.09.2015 bis 20.09.2015',
+       text  => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 16.09.2016 bis 18.09.2016',
        type  => 'handicap',
-       source_id => 'http://www.laubinger.de/termine/rosenthaler-herbst/',
+       source_id => 'http://www.laubinger.de/termine/rosenthaler-herbst/?y=2016',
        data  => <<EOF,
 userdel	q4::temp 8556,21918 8568,21863 8473,21633 8460,21602
 EOF
@@ -23418,13 +23418,13 @@ EOF
 userdel	q4::inwork; 5325,12234 5518,12159 5424,11944
 EOF
      },
-     { from  => $isodate2epoch->("2015-09-11 00:00:00"), # 1410519600, # 2014-09-12 13:00
-       until => $isodate2epoch->("2015-09-12 23:59:59"), # 1410624000, # 2014-09-13 18:00
+     { from  => $isodate2epoch->("2016-09-09 00:00:00"), # 1410519600, # 2014-09-12 13:00
+       until => $isodate2epoch->("2016-09-10 23:59:59"), # 1410624000, # 2014-09-13 18:00
        periodic => 1,
-       recurrences => [["yearly", days => 12, months => 9]],
-       text  => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 12. September 2015, 13 bis 21 Uhr ',
+       recurrences => [["yearly", days => 9, months => 9]],
+       text  => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 10. September 2016, 14 bis 18 Uhr ',
        type  => 'gesperrt',
-       source_id => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.361364.php',
+       source_id => 'http://www.quartiersmanagement-berlin.de/veranstaltungen/moabit-west-beusselstrasse/termin/calendar/2016/09/10/event/tx_cal_phpicalendar/moabiter_kiezfest_2016/print.html',
        data  => <<EOF,
 userdel	2::temp 5857,13342 5868,13441 5882,13548
 EOF
@@ -23520,12 +23520,15 @@ EOF
 userdel	q3::inwork 4638,10162 4623,10066 4609,9949
 EOF
      },
-     { from  => 1412021931, # 2014-09-29 22:18
-       until => 1427482278, # $isodate2epoch->("2015-03-28 23:59:59"), # 1424473200, # 2015-02-21 00:00
-       text  => 'Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, bis 28.03.2015',
+     { from  => $isodate2epoch->("2016-08-21 00:00:00"), # 1412021931, # 2014-09-29 22:18
+       until => $isodate2epoch->("2016-10-07 18:00:00"), # 1427482278, # $isodate2epoch->("2015-03-28 23:59:59"), # 1424473200, # 2015-02-21 00:00
+       text  => 'Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, 22.08.2016 bis 07.10.2016',
        type  => 'gesperrt',
        data  => <<EOF,
-# REMOVED --- #: next_check_id: INVALIDENFRIEDHOF-2014 --- #: by: Birgit Schroeer --- #: confirmed_by: srt --- #: XXX vielleicht wird hier asphaltiert? --- #: last_checked: 2015-03-06 --- #: next_check: 2015-03-28
+#: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2016/pressemitteilung.510363.php
+#: XXX hier wird asphaltiert
+#: next_check: 2016-10-07
+#: priority: #A
 userdel	2::inwork 8101,13901 8248,13659 8337,13541
 EOF
      },
@@ -25290,8 +25293,8 @@ userdel	q4::inwork; 5866,10492 6025,10746
 EOF
      },
      { from  => 1468101600, # 2016-07-10 00:00
-       until => 1471816800, # 2016-08-22 00:00
-       text  => 'Köpenicker Str.: Bauarbeiten zwischen Rudower Str. und Schönefelder Chaussee, Fahrbahn voraussichtlich gesperrt, vom 11.07.2016 bis zum 21.08.2016',
+       until => $isodate2epoch->("2016-09-14 12:00:00"), # 1471816800, # 2016-08-22 00:00
+       text  => 'Köpenicker Str.: Bauarbeiten zwischen Rudower Str. und Schönefelder Chaussee, Fahrbahn gesperrt, bis Mitte September 2016',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.493537.php',
        data  => <<EOF,
@@ -25326,6 +25329,8 @@ EOF
        type  => 'handicap',
        source_id => '2147340348',
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.505292.php
+#: source_id: 2147340404
 userdel	q3::inwork 7130,1253 7081,1346 6984,1540 6881,1743
 EOF
      },
@@ -25353,6 +25358,8 @@ EOF
        text  => 'Gleimtunnel: Sperrung, unter Umständen können auch Radfahrer und Fußgänger nicht passieren',
        type  => 'gesperrt',
        data  => <<EOF,
+#: note: wurde leider erst am 2016-08-18 für Radfahrer eröffnet
+#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2016/pressemitteilung.510057.php
 userdel	2::inwork 10130,15647 9991,15629 9907,15618
 EOF
      },
@@ -25367,12 +25374,14 @@ userdel	q4::inwork 2473,20486 2448,20592
 EOF
      },
      { from  => 1470520800, # 2016-08-07 00:00
-       until => 1473026400, # 2016-09-05 00:00
-       text  => 'Seeburger Str.: Einbahnstraßenregelung zwischen Elsflether Weg und Päwesiner Weg, offen Richtung Osten, vom 08.08.2016 bis voraussichtlich 04.09.2016',
+       until => $isodate2epoch->("2016-09-02 12:00:00"), # 1473026400, # 2016-09-05 00:00
+       text  => 'Seeburger Str.: Einbahnstraßenregelung zwischen Elsflether Weg und Päwesiner Weg, offen Richtung Westen, vom 08.08.2016 bis voraussichtlich 02.09.2016',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.504895.php',
        data  => <<EOF,
-userdel	q4::inwork; -4011,13407 -4299,13304 -4634,13173 -4731,13135
+#: source_id: 2147340417
+#: note: laut vmz und fritz offen Richtung Westen
+userdel	q4::inwork; -4731,13135 -4634,13173 -4299,13304 -4011,13407
 EOF
      },
      { from  => 1470520800, # 2016-08-07 00:00
@@ -25382,6 +25391,15 @@ EOF
        source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.504849.php',
        data  => <<EOF,
 userdel	q4::inwork 1732,24798 1730,24860 1750,24942 1775,25019 1767,25098 1738,25243
+EOF
+     },
+     { from  => 1469916000, # 2016-07-31 00:00
+       until => 1472767199, # 2016-09-01 23:59
+       text  => 'Langhansstr.: zwischen Goethestr. und Gustav-Adolf-Str. Baustelle, Fahrtrichtung Prenzlauer Promenade gesperrt, bis Anfang September 2016 ',
+       type  => 'handicap',
+       source_id => '2147340382',
+       data  => <<EOF,
+userdel	q4::inwork; 12564,16399 12399,16479
 EOF
      },
     );

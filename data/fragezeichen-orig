@@ -378,6 +378,13 @@ Nürnberger Str.: Radspuren entstehen	?::projected 6025,10746 6122,10925 6145,109
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: next_check: 2017-01-01
+Ausbau Dresdener Bahn: Bahnunterführung wird gebaut, geänderte Straßenführung	?::inwork 16480,-30962 16630,-30953 17081,-30944
+# 
+#: source_id: 166000788
+#: next_check: 2016-10-07
+Ützdorf - Lanke: Bau eines Radwegs	?::inwork 18621,39109 18702,39267 19045,39387 19475,39491 19818,39443 19947,39531 20251,39573 20355,39677 20493,39727 20637,39656
+# 
 # REMOVED (laut fritz nur bis Mi) --- #: XXX Wiesenweg (Lichtenberg) in beiden Richtungen zwischen Kietzer Weg und Gürtelstraße (Berlin)  Gültig ab: 01.08.2016 15:27  Vollsperrung, Baustelle	LMS-BR_r_LMS-BR_75088 --- Wiesenweg: ist die Sperrung auch für Radfahrer relevant? bis wann geht die Sperrung?	?::inwork 15055,11505 15162,11458 15162,11458
 # 
 #: XXX Colditzstraße (Tempelhof) in beiden Richtungen (Berlin)  Gültig ab: 31.07.2016 22:35  Brücke gesperrt, Gefahr durch Unterspülung der Fahrbahn	LMS-BR_r_LMS-BR_74687
@@ -394,6 +401,7 @@ Am Carolinenhof: existiert die Straße schon? Qualität? Genaue Lage?	? -8100,3994
 # 
 #: XXX http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4316
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036209836611/209836611/00129192/92-Anlagen/02/BenennungsabsichtfuereineneueprivateErschliess.pdf
+#: by: www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/33re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: XXX fehlt bei Berlin.coords.data
 #: XXX Privatstraße
 Karlinekenweg: neue Straße, existiert sie schon, Qualität, genaue Lage?	?::projected 11419,20327 11371,20295 11485,20064 11544,20079 11563,20048
@@ -416,7 +424,7 @@ Buschallee: wird der Radstreifen nach den Bauarbeiten verlängert?	?::inwork; 155
 # 
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.466174.php
 #: by: http://www.berlin.de/ba-spandau/_assets/ueber-den-bezirk/16-04-07-havel-radweg-schifffahrtsufer-umleitung.jpg
-#: last_checked: 2016-08-07
+#: last_checked: 2016-08-19
 #: next_check: 2016-09-30
 Schifffahrtsufer: wird dieser Abschnitt nach den Bauarbeiten asphaltiert sein?	?::inwork -3529,13452 -3546,13503 -3556,13582 -3543,13691 -3503,13773 -3385,13937 -3345,13994
 # 
@@ -763,6 +771,8 @@ Friedrich-Kunert-Weg: Verlängerung?	? -13714,1747 -13658,1730
 #: XXX neue Straßen/Wege im Zuge des Bebauungsplans XV-29b, Ortsteil Altglienicke vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/stadtplverm/beteiligungxv-29bve.html vvv
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/st__dtebauliche_untersuchung.pdf?start&ts=1381739816&file=st__dtebauliche_untersuchung.pdf vvv
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.509968.php
+#: by: www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/33re.pdf/file?y=2016
 #: XXX_osm: fehlt bei osm als "planned"/"proposed"
 #: last_checked: 2016-06-26 vvv
 #: check_frequency: 720d vvv
@@ -1454,6 +1464,25 @@ Planstraße A: Straßenname? Qualität? Wird es eine Verbindung (für Fußgänger/Radf
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+Nürnberger Str.: gibt es hier schon Radspuren?	? 5866,10492 5866,10492 6025,10746
+# 
+#: XXX Am Treptower Park (Treptow) stadtauswärts zwischen Puschkinallee und Elsenstraße (Berlin)  Gültig ab: 19.08.2016 09:59  Fahrtrichtung gesperrt, Baustelle (bis Anfang 09/16)	2147340463
+Am Treptower Park: Baustelle auch für Radfahrer relevant?	? 13795,9941 13865,9866 14089,9610
+# 
+#: XXX Akazienstraße (Schöneberg) in beiden Richtungen zwischen Belziger Straße und Vorbergstraße (Berlin)  Gültig ab: 18.08.2016 12:54  Vollsperrung, Havarie	LMS-BR_r_LMS-BR_76371
+Akazienstr.: Baustelle auch für Radfahrer relevant?	? 7022,9211 7044,9163 7107,9030
+# 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/35re.pdf/file?y=2016
+#: priority: #C
+Schwarzschildstr.: Verlängerung; verkehrsberuhigter Bereich?	? 18759,2592 18764,2526
+# 
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
+Nordhafenpark West: gibt es Sperrungen während der Umgestaltung?	? 7636,14414 7612,14449 7561,14458 7426,14539 7373,14566
+# 
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6160.html
+#: next_check: 2016-08-22
+Treppen an der Bösebrücke: wie ist der Stand?	? 9955,16578 9983,16561 9998,16547 9982,16527 9959,16510
+# 
 Wege im Gutspark Neukladow: Wegführung, nachts beleuchtet, Qualität?	? -6198,5357 -6127,5419 -6112,5406 -6026,5485 -5953,5582
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_929_16.pdf
@@ -1461,6 +1490,7 @@ Liebigstr.: Einrichtung einer Spielstraße, wo genau?	? 14229,12311 14166,12323 1
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7041
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_925_16.pdf
+#: XXX evtl. erst ab 2016-09-07 fertig
 Eldenaer Str.: Verlängerung der Radspuren	? 14355,12752 14096,12827 14066,12836 13979,12861 13960,12866 13844,12900
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5759
@@ -3563,6 +3593,8 @@ Murchin - Daugzin: Qualität?	? 30231,167202 30045,167370 29826,167541 29631,1675
 Libnow - Lassan: Qualität (möglicherweise nur ein Feldweg)?	? 31996,167054 32020,167181 32132,167279 32157,167349 32145,167413 31739,168418
 # REMOVED (Keine Links in Google hierzu - gibt es hier überhaupt eine Fähre?) --- Rankwitz - Lassen: Daten zur Fähre	? 43031,170709 42343,170953 38875,172989 37809,172428
 Freest - Peenemünde, Fähre (Telefon 038371-20829 oder 0170-1607371): Wann fährt hier die Fähre?	? 28887,192995 29771,193403 30250,193525 30746,192592 31301,192513 31355,192739 31413,192783
+#: XXX nach Fertigstellung der Bahnunterführung wird sich die Streckenführung ändern
+#: source_id: 157200868
 Mückendorf/B96 - Richtung Teupitz: Qualität? Wie geht es in Richtung Teupitz weiter?	? 18001,-35985 18101,-35914 18479,-35645 18936,-35316 19344,-35036 19826,-34707 20021,-34512 20246,-34268 20338,-34165 20618,-33964 20661,-33854
 #: by: Emanuel Schlüßler
 Darwinbogen (Königs Wusterhausen): Qualität (betoniert?)? Mit Radweg oder Radspur? Wie weit Richtung Westen ist die Straßen schon gebaut?	? 24361,-11236 24289,-11236 24131,-11318 23982,-11328

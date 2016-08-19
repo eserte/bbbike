@@ -19,16 +19,15 @@ Lange Str.: Bauarbeiten, Kreuzungsbereich gesperrt, 2x Bordsteine	q3::inwork 119
 # 
 #: source_id: LMS-BR_r_LMS-BR_73434
 #: source_id: 2147340364
-#: XXX laut fritz bis zum 17. August
 #: last_checked: 2016-08-05
-#: next_check: 2016-08-17
+#: next_check: 2016-08-31
 Straße der Pariser Kommune: Wasserrohrbruch, Fahrbahn gesperrt	q2::inwork 12497,11459 12551,11515 12645,11673
 # 
 # REMOVED --- #: source_id: 2147339819 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.415646.php --- #: XXX laut vmz bis Mitte Mai 2016, laut fritz bis 13.05.2016, tatsächlich aber noch länger gültig --- bis wann? --- #: last_checked: 2016-07-10 vvv --- #: valid: -20160813 vvv --- Wühlischstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14575,11407 14674,11370 14737,11347 14759,11339 14771,11345 --- #: valid ^^^ --- #: last_checked ^^^
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2016-08-07 vvv
+#: last_checked: 2016-08-19 vvv
 # REMOVED --- Revaler Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14357,11148 14286,11186
 Revaler Str.: Bauarbeiten, evtl. Ausweichen auf Gehweg nötig	q2::inwork 14211,11229 14286,11186
 Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
@@ -135,7 +134,7 @@ Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und 
 # REMOVED (Einbahnstraßenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universitätsstr.: wegen Bauarbeiten Einbahnstraße zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9580,12581
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2016-07-05 vvv
+#: last_checked: 2016-08-19 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="3"
@@ -551,7 +550,7 @@ Am Stichkanal: Fußgänger	q1 22832,4491 22814,4505 22797,4518 22702,4592 22585,46
 Am Stichkanal: Fußgänger	q1 22759,4430 22797,4518
 Schwedter Str. (Mauerpark): Park, Fußgänger	q2 10354,14987 10240,15318 10188,15474 10185,15487 10130,15647
 (Fußweg am Griesinger-Krankenhaus): Fußgänger	q1 21935,12153 21930,12185 21608,12320 21435,12390 21346,12427 21265,12468 21221,12484
-# REMOVED (die Nicht-Existenz sollte auch durch Nicht-Existenz auf der Karte reflektiert werden) --- (Fußgängerbrücke Ostkreuz): Fußgänger	q3 14798,10985 14787,10972 14764,10877 14794,10844
+# REMOVED (die Nicht-Existenz sollte auch durch Nicht-Existenz auf der Karte reflektiert werden) --- (Fußgängerbrücke Ostkreuz): Fußgänger	q3 14810,10977 14787,10972 14764,10877 14794,10844
 (Ringbahnsteig Ostkreuz): Fußgänger	q4 14794,10844 14839,10853 14862,10942 14845,10954
 Marheinekeplatz: Fußgänger, Brunnen	q3 9892,9286 9880,9233
 #: note: zumindest auf der westlichen Seite existiert kein explizites Verbotsschild für Radfahrer
@@ -1094,8 +1093,8 @@ Uferweg: Fußgänger, Biergarten	q3 3747,12679 3862,12675
 Uferweg: Fußgänger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
 (Neues Ufer - Kaiserin-Augusta-Allee): Fußgänger	q1 4456,12918 4514,12936 4581,13066 4576,13115 4547,13139 4561,13244
 # REMOVED (keine Fahrbahn mehr, nur der obere Uferweg) --- Bundesratufer: Fußgänger	q4 5938,12848 5922,12765
-Sonntagstr.: Richtung S-Bahnhof viele Fußgänger	q3 14845,10954 14798,10985 14752,11041
-(provisorischer Zugang zum Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fußgänger	q3 14682,11037 14692,11015 14798,10985
+Sonntagstr.: Richtung S-Bahnhof viele Fußgänger	q3 14845,10954 14810,10977 14752,11041
+(provisorischer Zugang zum Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fußgänger	q3 14712,11039 14727,11005 14810,10977
 #: XXX_prog: für Anhänger relevant (q1 oder so)
 Bouchéstr.: Bodenschwellen	q0 13489,9456 13357,9313
 #: XXX_prog: für Anhänger relevant (q1 oder so)

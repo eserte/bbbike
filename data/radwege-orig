@@ -87,10 +87,11 @@ asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9233,8597 9229,8718
 #: osm_watch: way id="30709741" version="12"
 #: osm_watch: way id="354645896" version="2"
 #: last_checked: 2016-07-04 vvv
-#: check_frequency: 30d vvv
+#: next_check: 2016-10-01
 	RW0;RW3 8680,6322 8661,6169 8641,5998
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.506616.php
+#: next_check: 2016-09-22
 	RW3;RW0 8641,5998 8622,5867 8613,5745
-#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 	RW3;RW3 8613,5745 8600,5580
@@ -1415,7 +1416,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2016-07-11
+#: last_checked: 2016-08-19
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622

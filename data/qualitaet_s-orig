@@ -555,11 +555,11 @@ Königsweg: Waldweg, mäßig bis OK	Q2+ -3161,975 -3407,834 -3511,776 -4184,400 -42
 Königsweg: Asphalt	Q0 -1082,2140 -1278,2034 -1296,2025
 # REMOVED (fertig) --- #: XXX Instandsetzung, wird neu asphaltiert --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.364590.php --- #: last_checked: 2015-09-27 --- #: check_frequency: 30d
 Königsweg: Asphalt	Q0 -1296,2025 -1309,2017 -1591,1861 -1650,1826 -1724,1785 -1805,1740 -1889,1693 -1950,1659 -2043,1608 -2602,1291
-Sonntagstr.: Kopfsteinpflaster	Q2 14434,11465 14535,11327 14598,11245 14669,11152 14752,11041 14798,10985
-Ostkreuz: Asphalt	Q0 14798,10985 14845,10954
+Sonntagstr.: Kopfsteinpflaster	Q2 14434,11465 14535,11327 14598,11245 14669,11152 14752,11041 14810,10977
+Ostkreuz: Asphalt	Q0 14810,10977 14845,10954
 Simplonstr.: Kopfsteinpflaster	Q2 13996,11631 13992,11605 14031,11569 14049,11553 14099,11505 14181,11434 14254,11377 14328,11320 14369,11287 14400,11261 14468,11203
 Simplonstr.: Asphalt	Q0 14468,11203 14531,11142
-Simplonstr.: Kopfsteinpflaster	Q2 14531,11142 14605,11078 14639,11051 14682,11037 14752,11041
+Simplonstr.: Kopfsteinpflaster	Q2 14531,11142 14605,11078 14639,11051 14682,11037 14712,11039 14752,11041
 Helenenhof: kleinteiliges Pflaster	Q1 14506,11275 14395,11356
 Matkowskystr.: Asphalt	Q0 14531,11142 14513,11075
 # REMOVE (ja) --- #: next_check_id: NEUEBAHNHOF-2014 --- #: last_checked: 2014-04-27 --- #: XXX wird die andere Fahrtrichtung auch asphaltiert? --- Neue Bahnhofstr.: Kopfsteinpflaster	Q2; 14752,11041 14811,11067 14879,11182
@@ -1949,10 +1949,8 @@ Rodelbergweg: Asphalt	Q0 16433,6892 16494,6948 16563,7012 16615,7062
 Heinrich-Lassen-Park: glatte Pflasterung	Q0 6664,8787 6705,8730
 Heinrich-Lassen-Park: wassergebundene Decke	Q1- 6705,8730 6740,8682 6815,8691 6912,8617
 Am Berlin-Spandauer Schiffahrtskanal: Kopfsteinpflaster	Q2 8337,13541 8248,13659
+# REMOVED (siehe temp_blockings-Eintrag) ---  --- #: XXX eventuell wird hier asphaltiert werden --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/1505_2016_bav_zu_ds_1599_iv_radweg_berlin-kopenhagen.pdf --- #: last_checked: 2016-06-16
 #: note: früher "glatter Belag, Q0", mittlerweile hat die Qualität deutlich nachgelassen
-#: XXX eventuell wird hier asphaltiert werden
-#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/1505_2016_bav_zu_ds_1599_iv_radweg_berlin-kopenhagen.pdf
-#: last_checked: 2016-06-16
 Am Berlin-Spandauer Schiffahrtskanal: wassergebundene Decke	Q1 8248,13659 8101,13901 8119,13912
 Uferweg: Verbundsteinpflaster	Q1 8011,14096 7994,14102 7967,14161 7973,14195
 Uferweg: Asphalt für Radfahrer, Kopfsteinpflaster für Fußgänger	Q0 7973,14195 7807,14441
@@ -10129,7 +10127,7 @@ Kirchdorfer Str.: Asphalt	Q0 19842,9895 19858,9775 19871,9680
 Ahornallee [Privatstraße] (Mahlsdorf): Asphalt	Q0 24513,9796 24527,9850 24637,9828
 Theodorstr. [31-37c] (Mahlsdorf): Asphalt	Q0 24925,10762 24747,10806
 Kaiserkorso: Asphalt mit Schäden	Q1; 9128,8251 9128,8414
-(provisorischer Zugang zum Bahnhof Ostkreuz): Asphalt	Q0 14682,11037 14692,11015 14798,10985
+(provisorischer Zugang zum Bahnhof Ostkreuz): Asphalt	Q0 14712,11039 14727,11005 14810,10977
 #: last_checked: 2016-06-26
 Alfonsstr.: Asphalt, letzte Deckschicht fehlt noch	Q1 19083,1243 18998,1349 19027,1427 19034,1441 19061,1457
 Rainweg [Stichstraße]: Verbundsteinpflaster	Q1 25028,-2846 24977,-2753
