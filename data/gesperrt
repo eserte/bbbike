@@ -306,7 +306,7 @@ Pfahlerstr.	1 5301,18447 5423,18438 5541,18435
 Harnackstr.	1 15848,11528 15881,11621 15871,11690 15911,11790 15984,11827 16020,11814 16099,11786 16134,11774
 Carmerstr.	1 5088,11322 4926,11081
 Mirbachplatz	1 13331,16424 13347,16447 13391,16436 13400,16395 13377,16378 13348,16387 13331,16424
-Treskowstr. (Mahlsdorf)	1 24567,11980 24491,11972
+Treskowstr. (Mahlsdorf)	1 24563,11980 24491,11972
 Knoten am Flughafen Tegel	1 2996,15930 2960,15847
 Knoten am Flughafen Tegel	1 2913,15944 2949,15922 2977,15923 2996,15930
 Knoten am Flughafen Tegel	1 2960,15847 2880,15884 2828,15903
@@ -820,6 +820,7 @@ Gartenstr.	1s 720,2718 835,2715
 Gartenstr.	1 835,2715 912,2965
 Kilstetter Str.	1 1532,2921 1536,3029 1575,3054 1689,3125 1835,2898
 Belßstr.	1s 7899,2391 7983,2348 7987,2337
+Röbeler Weg: Privatstraße, Durchfahrt verboten	2 24831,10730 24831,10772 24760,10790
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -1171,9 +1172,9 @@ Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3 12211,16688 12017,1673
 Mittelstreifen	3nocross::ignrte 16720,6845 16677,6892 16646,6925 16563,7012
 Köpenicker Landstr. -> Güldenhofer Ufer: Mittelstreifen	3::igndisp 16720,6845 16677,6892 16630,6800
 Güldenhofer Ufer -> Köpenicker Landstr.: Mittelstreifen	3::igndisp 16630,6800 16677,6892 16646,6925
-Mittelstreifen	3nocross::ignrte 17290,6228 17216,6308 16886,6665 16843,6712
-Rixdorfer Str. -> Schnellerstr.: Mittelstreifen	3::igndisp 17160,6239 17216,6308 16886,6665
-Schnellerstr. -> Rixdorfer Str.: Mittelstreifen	3::igndisp 17290,6228 17216,6308 17160,6239
+Mittelstreifen	3nocross::ignrte 17293,6230 17216,6308 16882,6657 16838,6708
+Rixdorfer Str. -> Schnellerstr.: Mittelstreifen	3::igndisp 17160,6239 17216,6308 16882,6657
+Schnellerstr. -> Rixdorfer Str.: Mittelstreifen	3::igndisp 17293,6230 17216,6308 17160,6239
 Straßenbahntrasse	3nocross::ignrte 23895,15450 23913,15333 23933,15209 23952,15086
 Stendaler Str. -> Jerichower Str.: Straßenbahntrasse	3::igndisp 23895,15450 23913,15333 23960,15340
 Jerichower Str. -> Stendaler Str.: Straßenbahntrasse	3::igndisp 23960,15340 23913,15333 23933,15209
@@ -1191,9 +1192,11 @@ Allee der Kosmonauten -> Fichtelbergstr.: Straßenbahntrasse	3::igndisp 20474,144
 Fichtelbergstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20609,14480 20611,14445 20657,14446
 Allee der Kosmonauten -> Charlottenstr.: Straßenbahntrasse	3::igndisp 20727,14467 20657,14446 20647,14341
 Charlottenstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20647,14341 20657,14446 20611,14445
-Straßenbahntrasse	3nocross::ignrte 20944,14840 20980,14914 21163,15289
-Allee der Kosmonauten -> Schragenfeldstr.: Straßenbahntrasse	3::igndisp 21163,15289 20980,14914 21027,14886
+Straßenbahntrasse	3nocross::ignrte 20944,14840 20980,14914 21018,14991 21099,15158 21163,15289
+Allee der Kosmonauten -> Schragenfeldstr.: Straßenbahntrasse	3::igndisp 21018,14991 20980,14914 21027,14886
 Schragenfeldstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 21027,14886 20980,14914 20944,14840
+Allee der Kosmonauten -> Allee der Kosmonauten [Wohngebiet]: Straßenbahntrasse	3::igndisp 20980,14914 21018,14991 20980,15013
+Allee der Kosmonauten [Wohngebiet] -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20980,15013 21018,14991 21099,15158
 Mittelstreifen	3nocross::ignrte 7410,4373 7450,4397 7482,4416
 Straßenbahntrasse	3nocross::ignrte 20262,14255 20249,14143 20235,14017 20207,13778
 Allee der Kosmonauten -> Allee der Kosmonauten [Wohngebiet]: Straßenbahntrasse	3::igndisp 20235,14017 20249,14143 20172,14141
@@ -1415,9 +1418,9 @@ Heidenauer Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24146,14594 24097,
 Straßenbahntrasse	3nocross::ignrte 24198,14454 24162,14487 24120,14526
 Riesaer Str. -> Oelsnitzer Str.: Straßenbahntrasse	3::igndisp 24198,14454 24162,14487 24133,14444
 Oelsnitzer Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24133,14444 24162,14487 24120,14526
-Straßenbahntrasse	3nocross::ignrte 24721,14293 24870,14244 24930,14225 24983,14208 25095,14171
+Straßenbahntrasse	3nocross::ignrte 24730,14288 24870,14244 24930,14225 24983,14208 25095,14171
 Riesaer Str. -> Frohburger Str.: Straßenbahntrasse	3::igndisp 24930,14225 24870,14244 24807,14043
-Frohburger Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24807,14043 24870,14244 24721,14293
+Frohburger Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24807,14043 24870,14244 24730,14288
 Riesaer Str. -> Schönewalder Str.: Straßenbahntrasse	3::igndisp 24870,14244 24930,14225 24974,14355
 Schönewalder Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24974,14355 24930,14225 24983,14208
 Riesaer Str. -> Mittweidaer Str.: Straßenbahntrasse	3::igndisp 25095,14171 24983,14208 24918,14008
@@ -1934,8 +1937,8 @@ Dingolfinger Str. -> Blumberger Damm: Mittelstreifen	3::igndisp 21233,11781 2113
 Straßenbahntrasse	3nocross::ignrte 19206,2848 19242,2876 19324,2939
 Rudower Chaussee -> Brook-Taylor-Str.: Straßenbahntrasse	3::igndisp 19206,2848 19242,2876 19215,2906
 Brook-Taylor-Str. -> Rudower Chaussee: Straßenbahntrasse	3::igndisp 19215,2906 19242,2876 19324,2939
-Straßenbahntrasse	3nocross::ignrte 19581,3184 19603,3207 19732,3340
-Karl-Otto-Reinsch-Str. -> Rudower Chaussee: Straßenbahntrasse	3::igndisp 19524,3286 19603,3207 19732,3340
+Straßenbahntrasse	3nocross::ignrte 19574,3186 19598,3212 19728,3351
+Karl-Otto-Reinsch-Str. -> Rudower Chaussee: Straßenbahntrasse	3::igndisp 19524,3286 19598,3212 19728,3351
 Mittelstreifen mit Geländer	3nocross::ignrte 6935,8208 7001,8161 7073,8081
 Torgauer Str. -> Sachsendamm: Mittelstreifen mit Geländer	3::igndisp 7158,8208 7001,8161 7073,8081
 Mittelstreifen	3nocross::ignrte 11963,11813 11916,11846 11764,12001
@@ -2400,6 +2403,8 @@ tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
 tragen (6 Stufen)	0:15:-90 4608,63927
 Treppe	0:40:-131 1888,42795
+Drängelgitter (lichte Breite ca. 90cm)	BNP:4:-169:trailer=15 23550,13863
+Drängelgitter (lichte Breite ca. 90cm)	BNP:4:-171:trailer=15 23553,13885
 Drängelgitter	BNP:3:19:trailer=10 -9595,6363
 Drängelgitter	BNP:3:23:trailer=10 -9635,6265
 Drängelgitter	BNP:2:-118:trailer=8 -1309,2017
@@ -2695,7 +2700,7 @@ Drängelgitter	BNP:2:90:trailer=5 18390,2972
 Drängelgitter	BNP:2:-265:trailer=5 18361,2972
 Drängelgitter	BNP:2:90:trailer=5 18220,2973
 Drängelgitter	BNP:2:-165:trailer=5 18167,2724
-Drängelgitter	BNP:2:-71:trailer=5 17621,4063
+Drängelgitter	BNP:2:-70:trailer=5 17621,4063
 Drängelgitter	BNP:2:85:trailer=5 18833,3781
 Drängelgitter	BNP:2:-88:trailer=5 18018,3276
 Schranke, ggfs. auf Gehweg ausweichen	BNP:2:82:trailer=6 16368,7425
@@ -2732,7 +2737,7 @@ Schranke	BNP:3:61 8251,20927
 Schranke	BNP:5:-174 21297,12748
 Drängelgitter	BNP:3:7:trailer=5 22061,15168
 Drängelgitter kann ohne Absteigen passiert werden	BNP:2:-199 1388,3197
-Barriere für Autofahrer	BNP:2:-2 17301,7645
+Barriere für Autofahrer	BNP:2:0 17301,7645
 Drängelgitter	BNP:5:72 11010,-378
 Drängelgitter	BNP:5:-42 22268,11285
 Drängelgitter	BNP:5:66 -7228,15504
@@ -2770,7 +2775,7 @@ Schranke	BNP:2:85:trailer=4 9907,11752
 Schranke	BNP:3:43:trailer=10 10112,11796
 Schranke	BNP:3:89:trailer=6 9698,10348
 Drängelgitter	BNP:3:-12:trailer=6 12682,7514
-Barriere	BNP:5:-2 17301,7645
+Barriere	BNP:5:0 17301,7645
 Drängelgitter	BNP:3:-70:trailer=10 24398,4842
 Drängelgitter	BNP:5:-96 11995,19759
 Drängelgitter	BNP:3:-257:trailer=6 9884,10192
@@ -2849,7 +2854,7 @@ SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2336,1111 2408,1144 2504,1
 Fünf Morgen: Bauarbeiten, gesperrt. Wird es eine Anbindung an den Hüttenweg geben?	2::inwork 1437,5015 1483,5161
 Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076 9559,13087
-Schwarzer Weg: wegen Straßenbau gesperrt	2::inwork 17295,7323 17295,7330 17296,7396
+Schwarzer Weg: wegen Straßenbau gesperrt	2::inwork 17295,7323 17295,7330 17296,7401
 Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10703,11837
 Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10703,11837 10687,11853 10869,11949
 Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10672,11870

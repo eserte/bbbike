@@ -268,8 +268,7 @@ Stallschreiberstr., Alexandrinenstr.: Einbahnstraßenregelung	q4::inwork; 10794,1
 # 
 # REMOVED --- #: last_checked: 2012-10-21 --- #: next_check: 2012-11-01 --- Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 22478,6041 22544,6037 22539,5956
 # 
-#: last_checked: 2016-07-29
-Nalepastr.: Bauarbeiten	q3::inwork 17190,7306 17219,7268
+# REMOVED (zurzeit keine weiteren Beeinträchtigungen) --- #: last_checked: 2016-07-29 --- Nalepastr.: Bauarbeiten	q3::inwork 17190,7306 17219,7268
 # 
 ### Friedrichshagen ###
 # 
@@ -1171,7 +1170,7 @@ Am Haselbusch: Radfahren verboten, ggfs. schieben	q1 17411,4979 17356,5011
 (Allmersweg - Groß-Berliner Damm): Fußgänger, Bordsteine	q3 17789,5189 17726,5166
 #: XXX_prog: für Anhänger q3
 Sportfliegerstr.: vier Bodenschwellen, nicht umfahrbar	q2 18157,4742 18341,4543
-Karl-Otto-Reinsch-Str.: Fußgänger	q1 19603,3207 19524,3286
+Karl-Otto-Reinsch-Str.: Fußgänger	q1 19598,3212 19524,3286
 Brook-Taylor-Str.: Fußgängerzone	q1 19146,2975 19101,3028 19015,3129
 Alexander-von-Humboldt-Weg: Fußgängerzone	q1 19015,3129 18892,3256
 Heinrich-Mirbach-Str.: Fußgänger	q1 17288,4026 17244,4084
@@ -2159,7 +2158,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 (Britzer Str. - Uferweg): Radfahren verboten	q4 18470,5600 18473,5645
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
-#: next_check: 2016-09-01
+#: last_checked: 2016-08-20
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
 Insel-Rügen-Weg: eng	q2 10967,17671 10978,17589 11064,17599
@@ -2362,6 +2361,13 @@ Bitburger Str. teilweise relativ eng	q2 15548,17684 15515,17717 15478,17724 1544
 Imchenallee: Fußgänger, besonders an schönen Tagen	q1 -7714,4279 -7687,4233 -7561,4191 -7326,4195 -7195,4194 -7102,4246 -7025,4410 -6990,4531 -6920,4702 -6879,4775 -6811,4893
 Uferweg: Fußgänger	q1 -4774,6514 -4734,6531 -4678,6625 -4664,6746 -4579,6913 -4460,7071 -4438,7169 -4488,7200
 Uferweg: Fußgänger	q1 -4546,9381 -4506,9395 -4460,9456 -4442,9625 -4536,9800 -4585,9836
+#: note: am südlichen Ende ist ein Fußgänger-Schild, am nördlichen Ende fehlt es
+#: XXX_prog BS (am südlichen Ende), ansonsten q2
+Rudolf-Filter-Weg: Fußgänger, Bordstein	q3 20988,15505 21009,15539 21040,15589
+(Hellersdorfer Str. - Feldberger Ring): Fußgänger	q2 23021,13982 22978,13967
+Kuschelweg: einige Fußgänger	q1 23355,12732 23349,12760 23408,13100 23474,13449 23499,13593 23550,13863 23552,13878 23553,13885 23560,13936 23603,13956 23631,13935 23680,13924 23738,13925 24050,13855 24130,13842 24255,13816 24291,13828 24402,13805 24437,13786 24494,13785
+(Melanchthonstr. - Weg an der S-Bahn): einige Fußgänger	q1 24759,12401 24756,12277 24711,12150
+(Parlerstr. - Elsenstr.): enger Pfad	q3 24528,10696 24571,10736 24593,10775
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -3022,7 +3028,7 @@ Allee der Kosmonauten - Biesdorfer Promenade: Fußgänger	q1 19826,13444 19837,132
 Rathener Str.: enge Straße	q1 24228,14644 24271,14576 24362,14542
 # 
 #: by: anonymous
-Trützschlerstr.: enge Straße	q1 17471,4570 17612,4460 17745,4351
+Trützschlerstr.: enge Straße	q1 17471,4570 17612,4460 17748,4349
 # 
 #: by: Jürgen Jacobi:
 #: corrected_by: Roland Mohrbacher (added "hohe Bordsteinkanten", deshalb q3 -> q4)

@@ -27,7 +27,6 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10256,11160 10437,11352
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10624,11548 10640,11564
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10437,11352 10489,11405
 Stallschreiberstr., Alexandrinenstr.: Einbahnstraﬂenregelung	q4::inwork; 10794,10927 10824,11010 10678,11172 10593,11120 10501,11056
-Nalepastr.: Bauarbeiten	q3::inwork 17190,7306 17219,7268
 S-Bhf. Friedrichshagen: Bauarbeiten	q2::inwork 25579,5958 25584,6029
 Dieselstr., Umfahrung: Fuﬂg‰nger, kurvig, eng	q2::inwork 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112 14429,8074 14471,8046
 Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung S¸den auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12753,8187 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785 12969,7610
@@ -630,7 +629,7 @@ Lemgoer Str.: Fuﬂg‰nger, Bordsteine	q2 14341,17030 14331,17016 14328,17011
 Am Haselbusch: Radfahren verboten, ggfs. schieben	q1 17411,4979 17356,5011
 (Allmersweg - Groﬂ-Berliner Damm): Fuﬂg‰nger, Bordsteine	q3 17789,5189 17726,5166
 Sportfliegerstr.: vier Bodenschwellen, nicht umfahrbar	q2 18157,4742 18341,4543
-Karl-Otto-Reinsch-Str.: Fuﬂg‰nger	q1 19603,3207 19524,3286
+Karl-Otto-Reinsch-Str.: Fuﬂg‰nger	q1 19598,3212 19524,3286
 Brook-Taylor-Str.: Fuﬂg‰ngerzone	q1 19146,2975 19101,3028 19015,3129
 Alexander-von-Humboldt-Weg: Fuﬂg‰ngerzone	q1 19015,3129 18892,3256
 Heinrich-Mirbach-Str.: Fuﬂg‰nger	q1 17288,4026 17244,4084
@@ -1564,6 +1563,11 @@ Bitburger Str. teilweise relativ eng	q2 15548,17684 15515,17717 15478,17724 1544
 Imchenallee: Fuﬂg‰nger, besonders an schˆnen Tagen	q1 -7714,4279 -7687,4233 -7561,4191 -7326,4195 -7195,4194 -7102,4246 -7025,4410 -6990,4531 -6920,4702 -6879,4775 -6811,4893
 Uferweg: Fuﬂg‰nger	q1 -4774,6514 -4734,6531 -4678,6625 -4664,6746 -4579,6913 -4460,7071 -4438,7169 -4488,7200
 Uferweg: Fuﬂg‰nger	q1 -4546,9381 -4506,9395 -4460,9456 -4442,9625 -4536,9800 -4585,9836
+Rudolf-Filter-Weg: Fuﬂg‰nger, Bordstein	q3 20988,15505 21009,15539 21040,15589
+(Hellersdorfer Str. - Feldberger Ring): Fuﬂg‰nger	q2 23021,13982 22978,13967
+Kuschelweg: einige Fuﬂg‰nger	q1 23355,12732 23349,12760 23408,13100 23474,13449 23499,13593 23550,13863 23552,13878 23553,13885 23560,13936 23603,13956 23631,13935 23680,13924 23738,13925 24050,13855 24130,13842 24255,13816 24291,13828 24402,13805 24437,13786 24494,13785
+(Melanchthonstr. - Weg an der S-Bahn): einige Fuﬂg‰nger	q1 24759,12401 24756,12277 24711,12150
+(Parlerstr. - Elsenstr.): enger Pfad	q3 24528,10696 24571,10736 24593,10775
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
@@ -1962,7 +1966,7 @@ K¸hleweinstr.: Schule	q1 8014,17468 7998,17564
 (Weg an der Markuskirche): viele Fuﬂg‰nger, Bordsteinkanten	q3 6342,4783 6288,4704
 Allee der Kosmonauten - Biesdorfer Promenade: Fuﬂg‰nger	q1 19826,13444 19837,13218 19866,13174 19868,13131 20068,13036
 Rathener Str.: enge Straﬂe	q1 24228,14644 24271,14576 24362,14542
-Tr¸tzschlerstr.: enge Straﬂe	q1 17471,4570 17612,4460 17745,4351
+Tr¸tzschlerstr.: enge Straﬂe	q1 17471,4570 17612,4460 17748,4349
 (Paster-Behrens-Str. - H¸sung): Fuﬂg‰nger, hohe Bordsteinkanten	q4 13394,4735 13397,4762
 Stanzer Zeile: enge Straﬂe	q0 6180,376 6130,449 6112,547 6089,643 6066,821 6067,865 6080,1011 6106,1133
 (Uferweg an der Havel): enge Br¸cke	q1 -2413,18770 -2434,18832 -2460,18918

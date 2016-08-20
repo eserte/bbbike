@@ -189,7 +189,7 @@ Anzengruberstr.	1 12865,8346 12689,8289
 #: XXX Nalepastr. wird in Zukunft wieder geˆffnet (Sackgasse f¸r Autos, Durchfahrtmˆglichkeit f¸r Radfahrer)
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00081950/50-Anlagen/01/DRS0182VB.pdf (Pl‰ne)
 #: osm_watch: way id="24869862" version="12"
-#: last_checked: 2016-02-28
+#: last_checked: 2016-08-20
 #: check_frequency: 180d
 Nalepastr. am Rundfunkgeb‰ude	2 17065,8396 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
@@ -389,7 +389,7 @@ Pfahlerstr.	1 5301,18447 5423,18438 5541,18435
 Harnackstr.	1 15848,11528 15881,11621 15871,11690 15911,11790 15984,11827 16020,11814 16099,11786 16134,11774
 Carmerstr.	1 5088,11322 4926,11081
 Mirbachplatz	1 13331,16424 13347,16447 13391,16436 13400,16395 13377,16378 13348,16387 13331,16424
-Treskowstr. (Mahlsdorf)	1 24567,11980 24491,11972
+Treskowstr. (Mahlsdorf)	1 24563,11980 24491,11972
 Knoten am Flughafen Tegel	1 2996,15930 2960,15847
 Knoten am Flughafen Tegel	1 2913,15944 2949,15922 2977,15923 2996,15930
 Knoten am Flughafen Tegel	1 2960,15847 2880,15884 2828,15903
@@ -1138,6 +1138,7 @@ Gartenstr.	1s:q3 720,2718 835,2715
 Gartenstr.	1 835,2715 912,2965
 Kilstetter Str.	1 1532,2921 1536,3029 1575,3054 1689,3125 1835,2898
 Belﬂstr.	1s:q2 7899,2391 7983,2348 7987,2337
+Rˆbeler Weg: Privatstraﬂe, Durchfahrt verboten	2 24831,10730 24831,10772 24760,10790
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -1471,12 +1472,12 @@ Oranienburger Str. (Wittenau): Mittelstreifen	3nocross 5343,21250 5349,21198 535
 Oranienburger Str.: Straﬂenbahnhaltestelle	3nocross 9225,13389 9293,13366 9415,13315
 Brauhausstr. -> Prenzlauer Promenade: Straﬂenbahntrasse	3 12211,16688 12017,16734 12045,16574
 Schnellerstr.: Mittelstreifen	3nocross 16720,6845 16677,6892 16646,6925 16563,7012
-Schnellerstr.: Mittelstreifen	3nocross 17290,6228 17216,6308 16886,6665 16843,6712
+Schnellerstr.: Mittelstreifen	3nocross 17293,6230 17216,6308 16882,6657 16838,6708
 Stendaler Str.: Straﬂenbahntrasse	3nocross 23895,15450 23913,15333 23933,15209 23952,15086
 #: note: einige Meter nˆrdlich der Henny-Porten-Str. existiert eine Fuﬂg‰ngerfurt
 Stendaler Str.: Straﬂenbahntrasse	3nocross 23933,15209 23952,15086 23960,15021
 Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 20474,14442 20611,14445 20657,14446 20727,14467
-Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 20944,14840 20980,14914 21163,15289
+Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 20944,14840 20980,14914 21018,14991 21099,15158 21163,15289
 Attilastr.: Mittelstreifen	3nocross 7410,4373 7450,4397 7482,4416
 Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 20262,14255 20249,14143 20235,14017 20207,13778
 #: note: Luftbild vvv
@@ -1555,7 +1556,7 @@ Karl-Liebknecht-Str.: Straﬂenbahntrasse	3nocross 10923,13156 10976,13229 11012,1
 Riesaer Str.: Straﬂenbahntrasse	3nocross 24120,14526 24097,14575 24030,14717
 #: note: Luftbild:
 Riesaer Str.: Straﬂenbahntrasse	3nocross 24198,14454 24162,14487 24120,14526
-Riesaer Str.: Straﬂenbahntrasse	3nocross 24721,14293 24870,14244 24930,14225 24983,14208 25095,14171
+Riesaer Str.: Straﬂenbahntrasse	3nocross 24730,14288 24870,14244 24930,14225 24983,14208 25095,14171
 # REMOVED --- Rummelsburger Str.: wegen ‹berf¸hrung nicht ¸berquerbar	3nocross 17527,7812 17568,7753 17681,7589 17769,7465
 Rummelsburger Str.: wegen ‹berf¸hrung nicht ¸berquerbar	3nocross 17769,7465 17847,7356 18010,7133
 Detmolder Str.: Mittelstreifen nicht passierbar	3nocross 4469,8037 4659,7982 4793,8005
@@ -1702,7 +1703,7 @@ Blumberger Damm: Mittelstreifen	3nocross 21599,15213 21623,15357 21647,15496
 #: note: Luftbild:
 Blumberger Damm: Mittelstreifen	3nocross 21150,11925 21135,11799 21108,11628
 Rudower Chaussee: Straﬂenbahntrasse	3nocross 19206,2848 19242,2876 19324,2939
-Rudower Chaussee: Straﬂenbahntrasse	3nocross 19581,3184 19603,3207 19732,3340
+Rudower Chaussee: Straﬂenbahntrasse	3nocross 19574,3186 19598,3212 19728,3351
 Sachsendamm: Mittelstreifen mit Gel‰nder	3nocross 6935,8208 7001,8161 7073,8081
 Holzmarktstr.: Mittelstreifen	3nocross 11963,11813 11916,11846 11764,12001
 Mehringdamm/Baruther: Mittelstreifen	3nocross 9334,9670 9387,9804 9444,9919
@@ -2118,6 +2119,8 @@ Treppe	0:40 1888,42795
 #
 # Kinderanh‰nger wie der Chariot Captain XL sind 87cm breit
 # 
+Dr‰ngelgitter (lichte Breite ca. 90cm)	BNP:4::trailer=15 23550,13863
+Dr‰ngelgitter (lichte Breite ca. 90cm)	BNP:4::trailer=15 23553,13885
 Dr‰ngelgitter	BNP:3::trailer=10 -9595,6363
 Dr‰ngelgitter	BNP:3::trailer=10 -9635,6265
 Dr‰ngelgitter	BNP:2::trailer=8 -1309,2017
@@ -2741,7 +2744,7 @@ Mariannenstr.: Baustelle, Einbahnstraﬂenregelung	1s:q2 11671,10402 11616,10288
 #: source_id ^^^
 # 
 #: next_check_id: MINNATODENHAGENSTR-2016
-#: last_checked: 2016-07-16
+#: last_checked: 2016-08-20
 #: next_check: 2016-12-01
 Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17082,7189 16954,7096 16720,6845
 # 
@@ -2845,10 +2848,10 @@ Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076 9559,13087
 # 
 #: next_check_id: MINNATODENHAGENSTR-2016
-#: last_checked: 2016-07-29 vvv
+#: last_checked: 2016-08-20 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- Grenzweg: wegen Straﬂenbau gesperrt, ggfs. dauerhaft	2::inwork 17219,7268 17295,7330 17445,7434
-Schwarzer Weg: wegen Straﬂenbau gesperrt	2::inwork 17295,7323 17295,7330 17296,7396
+Schwarzer Weg: wegen Straﬂenbau gesperrt	2::inwork 17295,7323 17295,7330 17296,7401
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -2890,8 +2893,8 @@ IGA 2017-Gel‰nde: Wege gesperrt	2 22414,14144 22407,14111 22404,13984
 #: XXX ^^^
 # 
 #: XXX R¸bertragen ist zur Not mˆglich vvv
-#: last_checked: 2016-04-05 vvv
-#: check_frequency: 100d vvv
+#: last_checked: 2016-08-20 vvv
+#: check_frequency: 120d vvv
 Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 19015,3129 18892,3256 18689,3465
 Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 18689,3465 18892,3256 19015,3129
 #: check_frequency ^^^
@@ -2900,8 +2903,8 @@ Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr
 # 
 #: osm_watch: way id="257072322" version="7"
 #: osm_watch: way id="412992929" version="1" 
-#: last_checked: 2016-04-05
-#: check_frequency: 100d
+#: last_checked: 2016-08-20
+#: check_frequency: 120d
 Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch f¸r Fuﬂg‰nger	2::inwork 18892,3256 18953,3318
 # 
 #: XXX Wie wird die Qualit‰t danach sein? Wird man zum Hiltrud-Dudek-Weg durchfahren kˆnnen? Wird die Straﬂe verkehrsberuhigt sein?
@@ -2981,7 +2984,7 @@ Frauenauer Str.: Straﬂe fertig, aber noch gesperrt	2::inwork 19663,9757 19858,97
 #: check_frequency: 60d
 Kirchdorfer Str.: Straﬂe fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9775 19871,9680
 # 
-#: osm_watch: way id="24845189" version="12"
+#: osm_watch: way id="24845189" version="13"
 #: last_checked: 2016-07-23
 #: check_frequency: 60d
 Viechtacher Str.: Straﬂe fertig, aber noch gesperrt	2::inwork 19801,9680 19871,9680 19923,9682

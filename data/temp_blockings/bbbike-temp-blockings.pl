@@ -833,7 +833,7 @@ EOF
        text  => 'Dauer: 01.09.2004 07:00 Uhr bis 03.09.2004 20:00 Uhr. Rudower Chaussee, gesperrt von Agastraße bis Großberliner Damm in Richtung Treptow',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 19732,3340 19603,3207 19581,3184 19501,3101
+userdel	1 19728,3351 19598,3212 19574,3186 19501,3101
 EOF
      },
      { from  => 1094083200, # 2004-09-02 02:00
@@ -5206,7 +5206,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_84075',
        data  => <<EOF,
-userdel	q4::inwork; 18191,6363 18343,6318 18423,6285 18473,6265 18574,6197 18670,6132 18766,6067 18843,6013 18861,6000
+userdel	q4::inwork; 18191,6363 18341,6313 18423,6285 18464,6269 18473,6265 18574,6197 18670,6132 18766,6067 18843,6013 18861,6000
 EOF
      },
      { from  => 1154642400, # 2006-08-04 00:00
@@ -5446,7 +5446,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_84352',
        data  => <<EOF,
-userdel	q4::inwork 16868,5938 17056,6133 17160,6239 17231,6179 17290,6228
+userdel	q4::inwork 16868,5938 17056,6133 17160,6239 17231,6179 17293,6230
 EOF
      },
      { from  => 1154876732, # 2006-08-06 17:05
@@ -5579,7 +5579,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004079',
        data  => <<EOF,
-userdel	1::inwork 17290,6228 17231,6179 17160,6239 17056,6133 16868,5938
+userdel	1::inwork 17293,6230 17231,6179 17160,6239 17056,6133 16868,5938
 EOF
      },
      { from  => 1155836502, # 2006-08-17 19:41
@@ -5728,7 +5728,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003370',
        data  => <<EOF,
-userdel	1::inwork 18861,6000 18843,6013 18766,6067 18670,6132 18574,6197 18473,6265 18423,6285 18343,6318 18191,6363 17992,6436
+userdel	1::inwork 18861,6000 18843,6013 18766,6067 18670,6132 18574,6197 18473,6265 18464,6269 18423,6285 18341,6313 18191,6363 17991,6431
 EOF
      },
      { from  => 1160949600, # 2006-10-16 00:00
@@ -7083,7 +7083,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_004559',
        data  => <<EOF,
-userdel	q4::inwork; 24623,11684 24657,11762 24652,11794 24578,11928
+userdel	q4::inwork; 24623,11684 24657,11762 24652,11794 24575,11932
 EOF
      },
      { from  => 1190067630, # 2007-09-18 00:20
@@ -9001,7 +9001,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_005905',
        data  => <<EOF,
-userdel	q4::inwork; 17388,3576 17491,3627 17522,3653 17593,3748
+userdel	q4::inwork; 17388,3576 17490,3630 17522,3653 17552,3675 17585,3745
 EOF
      },
      { from  => 1184191200, # 2007-07-12 00:00
@@ -9235,7 +9235,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_096853',
        data  => <<EOF,
-userdel	q4::inwork 19904,3464 19842,3419 19732,3340
+userdel	q4::inwork 19904,3464 19840,3423 19728,3351
 EOF
      },
      { from  => 1185055200, # 2007-07-22 00:00
@@ -9802,7 +9802,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_006436',
        data  => <<EOF,
-userdel	q4::inwork; 17900,6072 17930,6175 17952,6246 17992,6436
+userdel	q4::inwork; 17900,6072 17930,6175 17952,6246 17991,6431
 EOF
      },
      { from  => 1188059298, # 2007-08-25 18:28
@@ -12741,7 +12741,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009957',
        data  => <<EOF,
-userdel	1::inwork 17992,6436 17962,6674
+userdel	1::inwork 17991,6431 17962,6674
 EOF
      },
      { from  => 1229375516, # 2008-12-15 22:11
@@ -16230,7 +16230,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014203',
        data  => <<EOF,
-userdel	q4::inwork; 18226,13506 18382,13492 18783,13469 18875,13467 19059,13479 19181,13485
+userdel	q4::inwork; 18226,13506 18382,13492 18783,13469 18875,13467 18946,13472 19181,13485
 EOF
      },
      { from  => undef, # 
@@ -16385,7 +16385,7 @@ EOF
      { from  => $isodate2epoch->("2016-09-16 11:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2016-09-18 20:00:00"),
        periodic => 1,
-       recurrences => [['yearly', days => 19, months => 9]],
+       recurrences => [['yearly', days => 16, months => 9]],
        text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbst in Westend), Straße vollständig gesperrt (17.09.2016 bis 18.09.2016) ',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -16792,7 +16792,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-	2::temp 19071,2746 19136,2673 19207,2592
+	2::temp 19071,2746 19136,2673 19204,2603
 EOF
      },
      { from  => undef, #
@@ -20811,6 +20811,7 @@ EOF
 #: note: geprüft am So, den 2016-05-15, vormittags: offen
 #: note: geprüft am So, den 2016-07-17, vormittags und mittags: offen
 #: note: geprüft am So, den 2016-07-23, mittags: offen
+#: note: geprüft am Sa, den 2016-09-20, vormittags: offen
 userdel	2::night 14838,11410 14792,11391
 EOF
      },
@@ -23159,7 +23160,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.148904.php',
        data  => <<EOF,
-userdel	q4::inwork 20149,3617 20301,3432
+userdel	q4::inwork 20149,3617 20299,3435
 EOF
      },
      { from  => 1407189600, # 2014-08-05 00:00
@@ -23435,7 +23436,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_022799',
        data  => <<EOF,
-userdel	q4::inwork; 18343,6318 18191,6363 17992,6436
+userdel	q4::inwork; 18341,6313 18191,6363 17991,6431
 EOF
      },
      { from  => 1410559200, # 2014-09-13 00:00
@@ -25221,7 +25222,7 @@ EOF
        text  => 'Theodorstr.: Bauarbeiten, Straße kann gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2016-06-19
+#: last_checked: 2016-08-20
 	2::inwork 24897,11083 24899,11044 24905,10955 24913,10884 24919,10818 24922,10785 24923,10774
 EOF
      },

@@ -21,9 +21,9 @@ Herzbergstr.: Tram auf Fahrbahn	CS 15896,13547 16629,13532 16866,13532
 # REMOVED (Radweg existiert) --- Karl-Lade-Str.: Tram auf Fahrbahn	CS 14218,13834 14425,13780
 Karl-Lade-Str.: Tram auf Fahrbahn	CS 14425,13780 14635,13725 14751,13693
 # REMOVED (Radweg existiert) --- Karl-Lade-Str.: Tram auf Fahrbahn	CS 14751,13693 14821,13674
-Brücken/Edisonstr.: Tram auf Fahrbahn	CS; 17962,6674 17992,6436
-# Radweg ist aber benutzungspflichtig --- Brücken/Edisonstr.: Tram auf Fahrbahn	CS; 17992,6436 17952,6246 17930,6175 17900,6072
-Wilhelminenhofstr.: Tram auf Fahrbahn	CS; 19024,5830 18932,5926 18861,6000 18843,6013 18766,6067 18670,6132 18574,6197 18473,6265 18423,6285 18343,6318 18191,6363 17992,6436
+Brücken/Edisonstr.: Tram auf Fahrbahn	CS; 17962,6674 17991,6431
+# Radweg ist aber benutzungspflichtig --- Brücken/Edisonstr.: Tram auf Fahrbahn	CS; 17991,6431 17952,6246 17930,6175 17900,6072
+Wilhelminenhofstr.: Tram auf Fahrbahn	CS; 19024,5830 18932,5926 18861,6000 18843,6013 18766,6067 18670,6132 18574,6197 18473,6265 18464,6269 18423,6285 18341,6313 18191,6363 17991,6431
 Brückenstr.: Tram auf Fahrbahn	CS 17900,6072 17728,5756
 Kietzer/Kirchstr.: Tram auf Fahrbahn	CS 22383,4470 22372,4496 22358,4521 22324,4586 22314,4604 22284,4653 22246,4711 22240,4768 22196,4847
 Wassersportallee: Tram auf Fahrbahn	CS 22162,1067 22208,1103 22287,1165 22367,1230 22453,1294 22493,1325 22560,1377 22655,1450
@@ -43,7 +43,7 @@ Pappelallee (Prenzlauer Berg): Tram auf Fahrbahn	CS 10881,15047 11119,15385 1118
 Stahlheimer Str.: Tram auf Fahrbahn	CS 11393,15823 11455,15916 11500,15988 11550,16068 11554,16075 11618,16183 11698,16311 11727,16358
 Ostendstr.: Tram auf Fahrbahn	CS 19024,5830 19273,5866 19388,5883 19403,5885 19650,5920 19681,5924 19958,5950
 (Straßenbahnwendestelle): Tram auf Fahrbahn	CS 12925,13373 13081,13457
-Hönower Str.: Tram auf Fahrbahn	CS; 24624,11374 24583,11537 24591,11587 24623,11684 24657,11762 24652,11794 24578,11928 24567,11980 24556,12056 24554,12100 24556,12181
+Hönower Str.: Tram auf Fahrbahn	CS; 24624,11374 24583,11537 24591,11587 24623,11684 24657,11762 24652,11794 24575,11932 24563,11980 24556,12056 24554,12100 24556,12181
 Haeckelstr.: Tram auf Fahrbahn	CS 17379,3932 17468,3979
 Winckelmannstr: Tram auf Fahrbahn	CS 17468,3979 17503,4148 17507,4216 17476,4337 17428,4503
 Geschwister-Scholl-Str.: Tram auf Fahrbahn	CS; -14115,-1678 -14143,-1662 -14213,-1695 -14330,-1762 -14452,-1798 -14586,-1808 -14612,-1809
@@ -75,7 +75,7 @@ Bleicheroder Str.: Tram auf der Fahrbahn	CS; 11818,19089 11762,19014 11727,19001
 Romain-Rolland-Str.: Tram auf der Fahrbahn	CS 12548,18503 12555,18375 12566,18275
 #: note: siehe auch qualitaet_s (Mitte der Fahrbahn asphaltiert)
 Berliner Str.: Tram auf der Fahrbahn	CS 12736,17998 12467,17814
-Treskowstr.: Straßenbahnwendeschleife	CS 24362,11954 24491,11972 24567,11980
+Treskowstr.: Straßenbahnwendeschleife	CS 24362,11954 24491,11972 24563,11980
 #: by: Rainer Mischke, srt vvv
 Niebergallstr.: Straßenbahnwendeschleife	CS; 23144,1439 23158,1379
 Ekhofstr.: Straßenbahnwendeschleife	CS; 23158,1379 23243,1398
@@ -89,7 +89,8 @@ Alexanderplatz - Wadzekstr.: Tram auf der Fahrbahn	CS 11139,13008 11191,13080 11
 Bernkasteler Str.: Tram auf der Fahrbahn	CS 14558,16907 14673,16895 14739,16891
 #: next_check_id: STERNDAMM-2016
 #: XXX Bleiben die Straßenbahngleise in Richtung Südwesten nach den Bauarbeiten bestehen?
-#: last_checked: 2016-06-26
+#: last_checked: 2016-08-20
+#: next_check: 2017-01-01
 Sterndamm: inaktive Straßenbahngleise	CS; 17886,5587 17736,5441
 Invalidenstr.: Tram auf Fahrbahn	CS 9383,13986 9659,14043 9676,14046 9804,14071 9821,14073 9936,14085 10002,14092
 Veteranenstr.: Tram auf Fahrbahn	CS 10002,14092 10282,14212 10304,14254

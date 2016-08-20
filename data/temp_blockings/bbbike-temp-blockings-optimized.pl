@@ -2140,7 +2140,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
                             [
                               'yearly',
                               'days',
-                              19,
+                              16,
                               'months',
                               9
                             ]
@@ -2216,7 +2216,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'until' => undef
        },
        {
-         'data' => '	2::temp 19071,2746 19136,2673 19207,2592
+         'data' => '	2::temp 19071,2746 19136,2673 19204,2603
 ',
          'from' => undef,
          'id' => 1958,
@@ -2807,6 +2807,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: note: geprüft am So, den 2016-05-15, vormittags: offen
 #: note: geprüft am So, den 2016-07-17, vormittags und mittags: offen
 #: note: geprüft am So, den 2016-07-23, mittags: offen
+#: note: geprüft am Sa, den 2016-09-20, vormittags: offen
 userdel	2::night 14838,11410 14792,11391
 ',
          'from' => undef,
@@ -3806,7 +3807,7 @@ userdel	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
          'until' => 1483225199
        },
        {
-         'data' => '#: last_checked: 2016-06-19
+         'data' => '#: last_checked: 2016-08-20
 	2::inwork 24897,11083 24899,11044 24905,10955 24913,10884 24919,10818 24922,10785 24923,10774
 ',
          'from' => undef,

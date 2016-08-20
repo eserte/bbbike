@@ -131,7 +131,7 @@ Lefèvrestr.	1 5360,6642 5215,6643
 #: by: ^^^
 #: by: N. H. Sassi (Einbahnstraße nicht für Radfahrer)
 Kühlebornweg	1 5165,4667 5075,4600 5004,4709
-Gartenstr.	1 22467,3889 22281,4033 22263,4120 22279,4220
+Gartenstr.	1 22456,3889 22281,4033 22263,4120 22279,4220
 Wichmannstr.	1 6477,11045 6555,11012 6681,10959 6824,10904
 Lützowufer	1 6873,11011 6742,11099 6626,11178 6582,11202
 Mulackstr.	1 10308,13575 10406,13543 10535,13509 10640,13471
@@ -224,9 +224,9 @@ Gutenbergstr.	1 -12045,-757 -12227,-724
 Langhoffstr.	1 19817,14371 19818,14064
 #: by: Thomas Hallmann:
 Lintruper Str.	1 10307,922 10380,757
-Edison-/Siemensstr.	3 17992,6436 17962,6674 17860,6644
-Edisonstr.	1 17962,6674 17992,6436
-Brückenstr./Edisonstr.	1 17992,6436 17952,6246 17930,6175 17900,6072
+Edison-/Siemensstr.	3 17991,6431 17962,6674 17860,6644
+Edisonstr.	1 17962,6674 17991,6431
+Brückenstr./Edisonstr.	1 17991,6431 17952,6246 17930,6175 17900,6072
 Müggelheimer Str.	3nocross 22674,4309 22556,4386 22451,4441 22419,4457 22383,4470
 Gropiusstr.	1 8543,16364 8534,16355 8389,16214
 Osloer Str.	3nocross 8503,16716 8721,16689 8759,16684 8939,16668
@@ -475,7 +475,7 @@ Mittelstreifen	3nocross 6228,13324 6115,13328 6105,13328 6011,13330
 Straßenbahntrasse	3nocross 10933,22179 10997,22203 11067,22232
 #: by: Sara Köhler:
 Elisabethstr.	1 -3387,15410 -3451,15372 -3492,15331
-Eisenacher Str.	1 22899,15073 23116,15111
+Eisenacher Str.	1 22899,15073 23113,15110
 #: note: Luftbild:
 Streitstr./Chamissostr.: Mittelstreifen	3nocross -3009,17090 -3017,16984 -3018,16974
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-lichtenberg/presse/archiv/20081119.1415.114691.html
@@ -741,7 +741,7 @@ Pößnecker Str.	1 5934,1310 5863,1453
 Aarberger Str.: Poller	3 * 3581,2105 *
 Rochowstr. - Stralauer Allee	3 14170,10675 14103,10489 14222,10430
 Adlergestell: Mittelstreifen	3nocross 20565,2754 20451,2869 20289,3033 20207,3115 20064,3278
-Zossener Str.: Straßenbahntrasse	3nocross 22708,15794 22811,15753 22883,15740
+Zossener Str.: Straßenbahntrasse	3nocross 22698,15788 22811,15753 22883,15740
 Stendaler Str.: Straßenbahntrasse	3nocross 23933,15209 23952,15086 23960,15021
 Hauffstr.: Poller	3 * 15484,11292 *
 Hauffstr.: Poller	3 * 15567,11247 *
@@ -968,6 +968,8 @@ Prenzlauer Allee: Straßenbahntrasse	3nocross 12030,15968 12075,16144 12090,16199
 Prenzlauer Allee: Straßenbahntrasse	3nocross 11471,14143 11498,14234 11572,14452
 B2 - Piesporter Str.: Linksabbiegen verboten	3 15569,18492 15181,18137 15239,18063
 Ruschestr. - Schulze-Boysen-Str.: Geradeausfahren verboten	3 15879,12131 15863,11992 15836,11840
+Schulze-Boysen-Str. - Ruschestr.: Geradeausfahren verboten	3 15836,11840 15863,11992 15879,12131
+Schulze-Boysen-Str. - Frankfurter Allee: Linksabbiegen verboten	3 15836,11840 15863,11992 15717,12015
 Bizetstr. - Indira-Gandhi-Str.: nur Rechtsabbiegen erlaubt	3 14293,16073 14552,16171 14522,16260
 Linienstr. - Rosa-Luxemburg-Str.: nur Rechtsabbiegen erlaubt	3 10740,13621 10777,13614 10746,13673
 Linienstr. - Rosa-Luxemburg-Str.: nur Rechtsabbiegen erlaubt	3 10740,13621 10777,13614 10872,13570

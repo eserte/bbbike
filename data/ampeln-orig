@@ -483,9 +483,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 15765,6212
 	X 16146,6755
 	X 16428,7144
-	X 17290,6228
+	X 17293,6230
 	X 17614,6571
-	X 17992,6436
+	X 17991,6431
 	X 19958,5950
 	X 22467,6135
 	X 7389,8837
@@ -1635,7 +1635,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 22883,13013
 	X 23868,15633
 	X 23960,15021
-	X 24721,14293
+	X 24730,14288
 	X -6025,12419
 	X -5513,12266
 	X -4412,12179
@@ -2013,7 +2013,7 @@ Industriebahn	B0 -2410,13746
 	F -6459,14160
 	X 18496,2471
 	X 19501,3101
-	X 19581,3184
+	X 19574,3186
 	X -6480,5713
 	F -6170,6016
 	F -5877,6308
@@ -2382,7 +2382,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 15074,12850
 	F 14667,14336
 	F 14721,14379
-	X 18045,4663
+	X 18042,4667
 	X 18445,2642
 	X 17364,3565
 	F 8053,9123
@@ -2437,7 +2437,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: off: weekend
 #: XXX Ampel wird vielleicht zur Roedernstr. verlegt
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=4836&options=4
-#: last_checked: 2015-08-02
+#: last_checked: 2016-08-20
 #: check_frequency: 360d
 	F 23933,8879
 #: off: weekend
@@ -2458,8 +2458,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 20451,2869
 	X 20289,3033
 #: note: provisorische Ampel
+#: note: Anforderungsampel
 #: osm_watch: node id="3366620137" version="3"
-#: last_checked: 2015-04-10
+#: last_checked: 2016-08-20
 #: check_frequency: 180d
 	F::inwork 20002,3349
 	F 3995,12173
@@ -2552,12 +2553,12 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 9000,11727
 	X 25451,14018
 #: by: ossi vvv
-	X 19732,3340
+	X 19728,3351
 #: note: Anforderungsampel für linksabbiegende Radfahrer, ansonsten Kontaktschleifen in Newtonstr. und Gottfried-Leibniz-Str.
 	X 19324,2939
 #: note: wahrscheinlich mit der Ampel am Adlergestell synchronisiert
 #: note: südliche Ampel dient auch als Straßenbahnampel
-	F 19842,3419
+	F 19840,3423
 	X 19111,2777
 #: by: ^^^
 	F 4651,6037
@@ -2742,7 +2743,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id ^^^
 # 
 #: next_check_id: SONNENALLEE-2014 vvv
-#: osm_watch: way id="260062339" version="7"
+#: osm_watch: way id="260062339" version="8"
 #: last_checked: 2016-07-13 vvv
 #: check_frequency: 90d vvv
 #: note: Radfahrer in Richtung Südosten müssen die Seite wechseln, hier Anforderungsampel
@@ -2794,9 +2795,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
 #: source_id: IM_023532 (Gesamtmaßnahme bis Ende Juni 2016) vvv
 #: source_id: 2147339539 vvv
-#: last_checked: 2016-06-26 vvv
+#: last_checked: 2016-08-20 vvv
 #: check_frequency: 90d vvv
-	F::inwork 16886,6665
+	F::inwork 16882,6657
 	F::inwork 16646,6925
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -2830,10 +2831,10 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id: ZIMMERMANNSTRBR-2015 vvv
 #: XXX temporäre Ampeln vvv
 #: last_checked: 2016-06-19 vvv
-#: check_frequency: 60d vvv
+#: next_check: 2016-10-31 vvv
 	X::inwork 21164,9960
 	X::inwork 22129,9702
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
 #: next_check_id ^^^
@@ -2865,6 +2866,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: source_id: 2147340304
 #: last_checked: 2016-11-15
 	X::inwork 12442,20805
+#: note: Anforderungsampel
+	F 18464,6269
 # 
 ################################################################################
 #: note: Potsdam vvv
@@ -3013,6 +3016,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F -7554,13514
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	B 71914,-71679
 	B 38484,55381
 	B 33251,64036
 	B 38224,57167
