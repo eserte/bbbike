@@ -129,6 +129,12 @@ install_perl_dependencies() {
 	# XXX DBD-mysql-4.034 fails to specify DBI::DBD as a prereq
 	# https://rt.cpan.org/Ticket/Display.html?id=115167
 	cpanm --quiet --notest DBI::DBD
+	# Upgrade CGI.pm to avoid "CGI will be removed from the Perl core distribution" warnings
+	case "$PERLBREW_PERL" in
+	    5.20*)
+		cpanm --quiet --notest CGI
+		;;
+	esac
 	cpanm --quiet --installdeps --notest .
     fi
 }
