@@ -159,7 +159,7 @@ Nalepastr. am Rundfunkgebäude	2 17065,8396 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
 Kirchstr.	1s 22314,4604 22284,4653
 Kietzer Str.	1s 22372,4496 22383,4470
-Ontarioseestr.	1 18577,10023 18408,10041
+Ontarioseestr.	1 18585,10024 18408,10041
 Degnerstr. (außer Tram)	1 16448,15593 16475,15659
 Henriette-Herz-Platz	1 10371,13006 10312,12982 10255,12959
 Savignyplatz	1 4921,11017 4920,10933 4868,10934 4817,10943 4827,11025 4835,11092 4880,11088 4926,11081 4921,11017
@@ -771,7 +771,7 @@ Koppenplatz	1 9947,13674 9980,13559 9946,13550
 Luise-Zietz-Str.	1 20137,13016 20103,12698 20079,12479
 Ingwerweg: durch Tor versperrt	2 9260,21636 9282,21589
 Am Tierpark [Wohngebiet]	1 18512,10337 18552,10220
-Am Tierpark [Wohngebiet]	1 18552,10220 18534,10185 18484,10326
+Am Tierpark [Wohngebiet]	1 18552,10220 18538,10189 18484,10326
 (Freiherr-vom-Stein-Str. - Dominicusstr.)	1::igndisp 6477,8654 6454,8653
 Neue Jakobstr./Schulze-Delitzsch-Platz	1 11060,11753 11073,11774
 Edith-Kiss-Str.	1 12793,11132 12866,11256
@@ -1910,8 +1910,8 @@ Parkweg Heinrich-Lassen-Park -> Hauptstr.: Mittelstreifen	3::igndisp 6815,8691 6
 Straßenbahntrasse	3nocross::ignrte 18585,10278 18554,10354 18446,10620
 Otto-Schmirgal-Str. -> Am Tierpark: Straßenbahntrasse	3::igndisp 18512,10337 18554,10354 18446,10620
 Am Tierpark -> Otto-Schmirgal-Str.: Straßenbahntrasse	3::igndisp 18585,10278 18554,10354 18512,10337
-Straßenbahntrasse	3nocross::ignrte 18286,11275 18268,11391 18216,11656
-Am Tierpark -> Am Tierpark [Nebenfahrbahn]: Straßenbahntrasse	3::igndisp 18216,11656 18268,11391 18306,11402
+Straßenbahntrasse	3nocross::ignrte 18286,11275 18263,11393 18216,11656
+Am Tierpark -> Am Tierpark [zur Nebenfahrbahn]: Straßenbahntrasse	3::igndisp 18216,11656 18263,11393 18304,11407
 Mittelstreifen ohne Überquerungshilfe	3nocross::ignrte 12497,11459 12539,11416 12576,11375 12641,11288
 Mühlenstr. -> Am Postbahnhof: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12497,11459 12539,11416 12594,11467
 Am Postbahnhof -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12594,11467 12539,11416 12576,11375
@@ -2835,6 +2835,7 @@ versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
 Drängelgitter	BNP:3:-240 31665,48997
+Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 Corinthstr.: Baustelle, Einbahnstraßenregelung	1s 14447,10491 14270,10584
 Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s 11512,10105 11616,10288
 Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s 11671,10402 11616,10288
@@ -3218,8 +3219,8 @@ Sonnenallee	3nocross::ignrte 14617,7243 14693,7168 14752,7108 14803,7056
 Sonnenallee -> Krebsgang: Sonnenallee	3::igndisp 14617,7243 14693,7168 14792,7192
 Krebsgang -> Sonnenallee: Sonnenallee	3::igndisp 14792,7192 14693,7168 14752,7108
 Straßenbahntrasse	3nocross::ignrte 18631,10167 18694,10018 18703,9997 18742,9903
-Treskowallee -> Ontarioseestr.: Straßenbahntrasse	3::igndisp 18703,9997 18694,10018 18577,10023
-Ontarioseestr. -> Am Tierpark: Straßenbahntrasse	3::igndisp 18577,10023 18694,10018 18631,10167
+Treskowallee -> Ontarioseestr.: Straßenbahntrasse	3::igndisp 18703,9997 18694,10018 18585,10024
+Ontarioseestr. -> Am Tierpark: Straßenbahntrasse	3::igndisp 18585,10024 18694,10018 18631,10167
 Treskowallee -> Weg entlang der Bahnstrecke: Straßenbahntrasse	3::igndisp 18742,9903 18703,9997 18445,9887
 Treskowallee -> Richard-Kolkwitz-Weg: Straßenbahntrasse	3::igndisp 18694,10018 18703,9997 18708,10000
 Weg entlang der Bahnstrecke -> Treskowallee: Straßenbahntrasse	3::igndisp 18445,9887 18703,9997 18694,10018
