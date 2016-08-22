@@ -2831,8 +2831,64 @@ userdel	2::night 14838,11410 14792,11391
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+',
+         'from' => 1474430400,
+         'id' => 2387,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              21,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon gesperrt, vermutlich ab 22.09.2016',
+         'type' => 'gesperrt',
+         'until' => 1474581600
+       },
+       {
+         'data' => 'userdel	2::temp 8573,12325 8540,12420
+userdel	2::temp 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+userdel	2::temp 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+userdel	2::temp 8119,12414 8055,12186
+userdel	2::temp 8538,12245 8522,12239 8466,12197
+userdel	2::temp 8538,12245 8522,12187
+userdel	2::temp 8546,12279 8391,12389 8354,12416
+userdel	2::temp 8119,12414 8354,12416 8400,12417 8540,12420
+userdel	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
+userdel	3 7429,12070 7383,12095 7039,12314
+userdel	3 7039,12314 7383,12095 7429,12070
+userdel	3 7823,12120 7816,12150 7822,12201 7875,12363
+userdel	3 7875,12363 7822,12201 7816,12150 7823,12120
+userdel	2::temp 8119,12414 8122,12603 8207,12606 8306,12609 8348,12609 8399,12610 8485,12612
+userdel	2::temp 8207,12606 8206,12757
+userdel	3 7945,12592 8122,12603 8120,12756
+userdel	3 8120,12756 8122,12603 7945,12592
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+',
+         'from' => 1474581600,
+         'id' => 2388,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              21,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Behrenstr. und Scheidemannstr., Yitzak-Rabin-Str., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, vermutlich bis 26.09.2016',
+         'type' => 'gesperrt',
+         'until' => 1474905600
+       },
        undef,
        undef,
        undef,
@@ -3308,27 +3364,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 22138,4642 22111,4562 22093,4499
-userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
-',
-         'from' => 1471521600,
-         'id' => 2610,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              18,
-                              'months',
-                              8
-                            ]
-                          ],
-         'source_id' => 'http://www.weinfeste-in-deutschland.de/winzerfest-in-berlin-koepenick.html',
-         'text' => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 19.8.2016 bis 21.8.2016',
-         'type' => 'gesperrt',
-         'until' => 1471816799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3948,6 +3984,26 @@ userdel	q4::inwork; -4731,13135 -4634,13173 -4299,13304 -4011,13407
          'text' => 'Langhansstr.: zwischen Goethestr. und Gustav-Adolf-Str. Baustelle, Fahrtrichtung Prenzlauer Promenade gesperrt, bis Anfang September 2016 ',
          'type' => 'handicap',
          'until' => 1472767199
+       },
+       {
+         'data' => '#: note: by fritz
+userdel	2::inwork 19666,7988 19843,7866 19927,7813 20031,7794 20077,7786 20139,7775 20280,7749
+',
+         'from' => 1471816800,
+         'id' => 2818,
+         'text' => 'Verlängerte Waldowallee: Sperrung zwischen Kiefernallee und Rudolf-Rühl-Allee, vom 23. August 2016 bis voraussichtlich 06. September 2016',
+         'type' => 'gesperrt',
+         'until' => 1473199199
+       },
+       {
+         'data' => '#: note: by fritz
+userdel	q4::inwork 6587,16199 6484,16085
+',
+         'from' => 1471893583,
+         'id' => 2819,
+         'text' => 'Kameruner Str.: Fahrbahn zwischen Müllerstr. und Lüderitzstr. gesperrt, bis 08.12.2016',
+         'type' => 'handicap',
+         'until' => 1481238000
        }
      
 );

@@ -70,7 +70,7 @@ Rigaer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 14133,12482 14266,12446
 #
 #: XXX siehe auch valid-Eintrag weiter unten
 #: source_id: 2147340178
-#: last_checked: 2016-08-03
+#: last_checked: 2016-08-22
 #: valid: -20161115
 BouchÈstr.: Bauarbeiten, Radfahrer m¸ssen auf dem Gehweg fahren	q2::inwork 13642,9624 13865,9866 13890,9894
 # REMOVED (wahrscheinlich aufgehoben) --- #: last_checked: 2013-11-22 --- #: check_frequency: 60d --- Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 13973,9465 14157,9345
@@ -83,7 +83,7 @@ BouchÈstr.: Bauarbeiten, Radfahrer m¸ssen auf dem Gehweg fahren	q2::inwork 13642
 #: last_checked: 2016-07-27
 Kommandantenstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10330,11422 10136,11529
 # 
-#: last_checked: 2016-07-27
+#: last_checked: 2016-08-22
 Beuthstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10201,11631 10235,11610 10330,11422
 # 
 #: last_checked: 2016-07-27
@@ -101,16 +101,16 @@ Melchiorstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 11542,11342 11726,11265 119
 # REMOVED (nicht mehr gesperrt f¸r Radfahrer) --- #: XXX nochmal genauer anschauen... --- #: last_checked: 2014-11-10 --- Gipsstr.: Bauarbeiten zwischen Rosenthaler Str. und Joachimstr., Einbahnstraﬂe	q2::inwork; 10350,13376 10199,13446
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2014-08-22 --- #: check_frequency: 14d --- Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11487,11390 11542,11342 11415,11392 11487,11390
 # 
-#: last_checked: 2016-06-16
-#: check_frequency: 60d
+#: XXX Baustraﬂenbelag wird zurzeit entfernt
+#: last_checked: 2016-08-22
+#: check_frequency: 7d
 zur Keibelstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 10976,13229 11045,13183
 # 
 # REMOVED --- #: last_checked: 2016-03-31 --- #: check_frequency: 60d --- Alex-Wedding-Str.: tempor‰re Einbahnstraﬂenregelung	q4::inwork; 11085,13239 11146,13328
 # 
-#: XXX_prog BS auf beiden Seiten Bordsteine
-#: last_checked: 2016-08-02
+#: last_checked: 2016-08-22
 #: check_frequency: 14d
-Wadzeckstr.: Bauarbeiten, auf Gehweg ausweichen, Bordsteine	q4::inwork 11146,13328 11201,13289
+Wadzeckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 11146,13328 11201,13289
 # 
 # REMOVED --- #: last_checked: 2015-02-13 --- #: check_frequency: 60d --- Seydelstr.: Bauarbeiten, Einbahnstraﬂe, gesperrt in Richtung Spittelmarkt	q3::inwork; 10446,11470 10320,11627
 # REMOVED (keine Einschr‰nkungen mehr) --- #: last_checked: 2014-06-06 --- Ohmstr.: Bauarbeiten, auf engen Gehweg ausweichen	q3::inwork 11378,11856 11324,11689
@@ -118,7 +118,7 @@ Wadzeckstr.: Bauarbeiten, auf Gehweg ausweichen, Bordsteine	q4::inwork 11146,133
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
 # REMOVED --- #: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualit‰t -> qualitaet_s-orig-Eintrag revidieren --- #: last_checked: 2013-11-21 --- Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2016-05-23
+#: last_checked: 2016-07-05
 #: check_frequency: 90d
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9984,12426 9996,12401 10058,12290
 # REMOVED --- Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q4::inwork 9996,12401 9994,12368 9943,12364
@@ -134,7 +134,7 @@ Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und 
 # REMOVED (Einbahnstraﬂenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universit‰tsstr.: wegen Bauarbeiten Einbahnstraﬂe zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9580,12581
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2016-08-19 vvv
+#: last_checked: 2016-08-22 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="3"
@@ -231,9 +231,9 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # 
 #: XXX laut fritz bis 29.07.2016
 #: source_id: 2147339998
-#: last_checked: 2016-08-02
+#: last_checked: 2016-08-22
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10256,11160 10437,11352
-#: last_checked: 2016-07-25 vvv
+#: last_checked: 2016-08-22 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10624,11548 10640,11564
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10437,11352 10489,11405
 #: last_checked ^^^
@@ -251,7 +251,7 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10437,11352 10489,11405
 #: next_check_id: ALEXANDRINENSTR-2016
 #: source_id: LMS-BR_r_LMS-BR_68468
 #: XXX Endedatum laut fritz
-#: last_checked: 2016-08-02
+#: last_checked: 2016-08-22
 #: next_check: 2016-09-16
 Stallschreiberstr., Alexandrinenstr.: Einbahnstraﬂenregelung	q4::inwork; 10794,10927 10824,11010 10678,11172 10593,11120 10501,11056
 # 

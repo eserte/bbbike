@@ -10131,7 +10131,7 @@ EOF
        text  => 'L 073 Baruth-Stülpe zw. Paplitz und Lynow Deckeninstandsetzung Vollsperrung 08.10.2007-28.10.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 10970,-39919 11561,-39875 11814,-39896 12751,-39434 13114,-39180 13618,-39476 13914,-39770 15361,-39713
+userdel	2::inwork 10970,-39919 11561,-39875 11814,-39896 12751,-39434 13114,-39180 13618,-39476 13914,-39770 15261,-39728
 EOF
      },
      { from  => 1193776679, # 2007-10-30 21:37
@@ -14032,7 +14032,7 @@ EOF
        text  => 'L 712 Kemlitz-Paplitz zw. B115 und Paplitz, bei Baruth Straßenbau Vollsperrung 13.05.2009-29.05.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 15977,-42207 16047,-39802 15949,-39449
+userdel	2::inwork 15974,-42223 16047,-39802 15941,-39429
 EOF
      },
      { from  => 1241301600, # 2009-05-03 00:00
@@ -20943,11 +20943,11 @@ EOF
 userdel	q4::inwork; 9275,4672 9405,4667 9494,4658 9695,4638 10010,4606
 EOF
      },
-     { from  => $isodate2epoch->("2015-09-22 06:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-09-25 00:00:00"), #
+     { from  => $isodate2epoch->("2016-09-21 06:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-09-23 00:00:00"), #
        periodic => 1,
        recurrences => [['yearly', days => 21, months => 9]],
-       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon gesperrt, ab 24.09.2015',
+       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon gesperrt, vermutlich ab 22.09.2016',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
@@ -20955,11 +20955,11 @@ userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,1224
 	3::temp 8327,12174 8344,12221 8391,12389
 EOF
      },
-     { from  => $isodate2epoch->("2015-09-25 00:00:00"),
-       until => $isodate2epoch->("2015-09-28 18:00:00"),
+     { from  => $isodate2epoch->("2016-09-23 00:00:00"),
+       until => $isodate2epoch->("2016-09-26 18:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 21, months => 9]],
-       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Behrenstr. und Scheidemannstr., Yitzak-Rabin-Str., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, bis 28.09.2015',
+       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Behrenstr. und Scheidemannstr., Yitzak-Rabin-Str., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, vermutlich bis 26.09.2016',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 8573,12325 8540,12420
@@ -25401,6 +25401,24 @@ EOF
        source_id => '2147340382',
        data  => <<EOF,
 userdel	q4::inwork; 12564,16399 12399,16479
+EOF
+     },
+     { from  => 1471816800, # 2016-08-22 00:00
+       until => 1473199199, # 2016-09-06 23:59
+       text  => 'Verlängerte Waldowallee: Sperrung zwischen Kiefernallee und Rudolf-Rühl-Allee, vom 23. August 2016 bis voraussichtlich 06. September 2016',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: note: by fritz
+userdel	2::inwork 19666,7988 19843,7866 19927,7813 20031,7794 20077,7786 20139,7775 20280,7749
+EOF
+     },
+     { from  => 1471893583, # 2016-08-22 21:19
+       until => 1481238000, # 2016-12-09 00:00
+       text  => 'Kameruner Str.: Fahrbahn zwischen Müllerstr. und Lüderitzstr. gesperrt, bis 08.12.2016',
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: by fritz
+userdel	q4::inwork 6587,16199 6484,16085
 EOF
      },
     );

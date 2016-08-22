@@ -822,6 +822,7 @@ Rad- und Gehwegverbindung geplant: Qualität? Name des Weges? Beleuchtet?	? 24905
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5709
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036775164584/775164584/00071625/25-Anlagen/02/vzb0716_IV-B-Plan_XXIII-3-1VE_Festsetzg_Planre.pdf
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.510775.php
 #: osm_watch: way id="351531101" version="1"
 #: last_checked: 2016-08-20
 #: check_frequency: 360d
@@ -1157,7 +1158,7 @@ Wolzenseeweg: Qualität? Straße bereits fertiggestellt? Wird es eine Überquerungs
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 # 
 #: next_check_id: OBERWALL-2014 vvv
-#: last_checked: 2016-07-27 vvv
+#: last_checked: 2016-08-22 vvv
 #: check_frequency: 90d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2015 (Grundstücksnummerierungen)
@@ -1455,8 +1456,7 @@ Jan-Petersen-Str. - Karl-Holtz-Str.: Straßen/Radwegführung pürfen; evtl. auch we
 # 
 Nürnberger Str.: gibt es hier schon Radspuren?	? 5866,10492 5866,10492 6025,10746
 # 
-#: XXX Am Treptower Park (Treptow) stadtauswärts zwischen Puschkinallee und Elsenstraße (Berlin)  Gültig ab: 19.08.2016 09:59  Fahrtrichtung gesperrt, Baustelle (bis Anfang 09/16)	2147340463
-Am Treptower Park: Baustelle auch für Radfahrer relevant?	? 13795,9941 13865,9866 14089,9610
+# REMOVED (für Radfahrer problemlos passierbar) --- #: XXX Am Treptower Park (Treptow) stadtauswärts zwischen Puschkinallee und Elsenstraße (Berlin)  Gültig ab: 19.08.2016 09:59  Fahrtrichtung gesperrt, Baustelle (bis Anfang 09/16)	2147340463 --- Am Treptower Park: Baustelle auch für Radfahrer relevant?	? 13795,9941 13865,9866 14089,9610
 # 
 #: XXX Akazienstraße (Schöneberg) in beiden Richtungen zwischen Belziger Straße und Vorbergstraße (Berlin)  Gültig ab: 18.08.2016 12:54  Vollsperrung, Havarie	LMS-BR_r_LMS-BR_76371
 Akazienstr.: Baustelle auch für Radfahrer relevant?	? 7022,9211 7044,9163 7107,9030
@@ -1551,7 +1551,7 @@ Anforderungsampel, X	?::inwork 7651,14260
 #: next_check_id: ZIEGELSTR-2016
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/25re.pdf/file?y=2016
 #: XXX Berlin.coords.data-Eintrag fehlt
-#: last_checked: 2016-08-02
+#: last_checked: 2016-08-22
 Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?	? 9636,13076
 # 
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.490082.php
@@ -2344,7 +2344,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: XXX_prog ^^^
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20141202.1525.400470.html
-#: last_checked: 2016-06-27
+#: last_checked: 2016-08-22
 #: check_frequency: 90d
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 
@@ -2352,7 +2352,7 @@ Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7482
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2016-07-25
+#: last_checked: 2016-08-22
 #: check_frequency: 14d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172 10818,11269
 # 
@@ -2724,7 +2724,7 @@ Mariendorfer-Hafen-Weg und Mariendorfer-Hafen-Steg: Benennung eines Weges und St
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2016
 #: XXX Privatstraßen
 #: last_checked: 2016-07-24 vvv
-#: check_frequency: 2700d vvv
+#: check_frequency: 270d vvv
 Agnethaweg	?::projected 17221,15181 17245,15182 17314,15186 17336,15187
 Anni-Frid-Weg	?::projected 17234,15053 17258,15053 17323,15054 17346,15055
 Bennyweg	?::projected 17245,15182 17258,15053
@@ -2750,7 +2750,7 @@ Bebauungsplan XXI-34a: evtl. entstehen hier neue Straßen	?::projected 20649,1162
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036554746315/554746315/00071216/16-Dateien/image001.png
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7240
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4237
-#: next_check: 2016-07-31
+#: next_check: 2016-10-31
 Wedding/Prenzlauer Berg: Bezirksgrenzen werden verändert	?::projected 10271,14950 10208,14922 10053,15214 10031,15395 9976,15546 9941,15627 10042,15640
 # 
 # REMOVED --- #: XXX wird erst im April eröffnet --- #: by: http://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20160213 --- #: note: category RB --- #: next_check: 2016-04-01 --- Berlin-Schöneweide	? 17722,5573
