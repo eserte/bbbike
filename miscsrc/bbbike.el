@@ -434,4 +434,18 @@
 	  )
       (error "No X selection or X selection does not contain a way/node/relation line"))))
 
+(defun bbbike-grep ()
+  (interactive)
+  (let (search-key search-val)
+    (save-excursion
+      (beginning-of-line)
+      (if (looking-at "^#:[ ]*\\(next_check_id\\):?[ ]*\\([^ \n]+\\)")
+	  (progn
+	    (setq search-key (buffer-substring (match-beginning 1) (match-end 1)))
+	    (setq search-val (buffer-substring (match-beginning 2) (match-end 2))))))
+    (if (not search-val)
+	(error "Can't find anything to grep for"))
+    (if search-key
+	(grep (concat "2>/dev/null grep -ins *-orig *.coords.data temp_blockings/bbbike-temp-blockings.pl -e '" search-key ".*" search-val "'")))))
+
 (provide 'bbbike-mode)
