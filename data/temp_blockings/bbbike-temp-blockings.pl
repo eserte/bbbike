@@ -22444,7 +22444,7 @@ EOF
      },
      { from  => undef, # 1385766000, # 2013-11-30 00:00
        until => $isodate2epoch->("2016-09-15 00:00:00"), # 1404667175, # $isodate2epoch->("2015-12-31 23:59:59"), # 1401458400, # 2014-05-30 16:00
-       text  => 'Wuhlewanderweg: an der Zimmermannstraßenbrücke wegen Bauarbeiten gesperrt',
+       text  => 'Wuhlewanderweg: an der Zimmermannstraßenbrücke wegen Bauarbeiten gesperrt, vermutlich bis Mitte September 2016',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: ZIMMERMANNSTRBR-2015
@@ -25404,11 +25404,12 @@ userdel	q4::inwork; 12564,16399 12399,16479
 EOF
      },
      { from  => 1471816800, # 2016-08-22 00:00
-       until => 1473199199, # 2016-09-06 23:59
-       text  => 'Verlängerte Waldowallee: Sperrung zwischen Kiefernallee und Rudolf-Rühl-Allee, vom 23. August 2016 bis voraussichtlich 06. September 2016',
+       until => $isodate2epoch->("2016-09-02 18:00:00"), # 1473199199, # 2016-09-06 23:59
+       text  => 'Verlängerte Waldowallee: Sperrung zwischen Kiefernallee und Rudolf-Rühl-Allee, vom 23. August 2016 bis 02. September 2016',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: by fritz
+#: source_id: 2147340467
 userdel	2::inwork 19666,7988 19843,7866 19927,7813 20031,7794 20077,7786 20139,7775 20280,7749
 EOF
      },

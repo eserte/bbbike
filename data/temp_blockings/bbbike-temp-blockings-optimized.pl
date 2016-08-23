@@ -3232,7 +3232,7 @@ userdel	2::night 17671,13132 17684,13133
 ',
          'from' => undef,
          'id' => 2527,
-         'text' => 'Wuhlewanderweg: an der Zimmermannstraßenbrücke wegen Bauarbeiten gesperrt',
+         'text' => 'Wuhlewanderweg: an der Zimmermannstraßenbrücke wegen Bauarbeiten gesperrt, vermutlich bis Mitte September 2016',
          'type' => 'gesperrt',
          'until' => 1473890400
        },
@@ -3987,13 +3987,14 @@ userdel	q4::inwork; -4731,13135 -4634,13173 -4299,13304 -4011,13407
        },
        {
          'data' => '#: note: by fritz
+#: source_id: 2147340467
 userdel	2::inwork 19666,7988 19843,7866 19927,7813 20031,7794 20077,7786 20139,7775 20280,7749
 ',
          'from' => 1471816800,
          'id' => 2818,
-         'text' => 'Verlängerte Waldowallee: Sperrung zwischen Kiefernallee und Rudolf-Rühl-Allee, vom 23. August 2016 bis voraussichtlich 06. September 2016',
+         'text' => 'Verlängerte Waldowallee: Sperrung zwischen Kiefernallee und Rudolf-Rühl-Allee, vom 23. August 2016 bis 02. September 2016',
          'type' => 'gesperrt',
-         'until' => 1473199199
+         'until' => 1472832000
        },
        {
          'data' => '#: note: by fritz

@@ -1993,6 +1993,7 @@ Industriebahn	B0 -2410,13746
 	F 12532,11008
 	X 4828,10356
 #: note: Anforderungsampel
+#: note: kann ausgeschaltet sein (gesehen: Di, 2016-08-23, gegen 18:45)
 	F 11285,14515
 # REMOVED (Baustellenampel, existiert nicht mehr, 2009-07) ---	X 10635,13207
 	F 11905,15462
@@ -2743,7 +2744,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: SONNENALLEE-2014 vvv
 #: osm_watch: way id="260062339" version="8"
-#: last_checked: 2016-07-13 vvv
+#: last_checked: 2016-08-23 vvv
 #: check_frequency: 90d vvv
 #: note: Radfahrer in Richtung Südosten müssen die Seite wechseln, hier Anforderungsampel
 	X::inwork 14174,7505
@@ -2830,7 +2831,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id: ZIMMERMANNSTRBR-2015 vvv
 #: XXX temporäre Ampeln vvv
 #: last_checked: 2016-06-19 vvv
-#: next_check: 2016-10-31 vvv
+#: next_check: 2016-09-15 vvv
 	X::inwork 21164,9960
 	X::inwork 22129,9702
 #: next_check ^^^

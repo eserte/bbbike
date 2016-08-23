@@ -866,7 +866,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736 20755,5750
 #: XXX laut fritz "geänderte Straßenführung" bis 31.12.2016
 #: source_id: IM_023718
 #: source_id: 2147339540
-#: last_checked: 2016-06-12 vvv
+#: last_checked: 2016-08-23 vvv
 #: check_frequency: 90d vvv
 	RW2; 14015,7631 14095,7568 14174,7505
 # REMOVED, siehe unten ---	RW1; 14174,7505 14302,7429 14357,7450 14405,7435 14424,7401 14432,7353 14451,7340
@@ -1643,7 +1643,7 @@ Berliner Gehwegplatten, ca. 1,50m breit	RW2;RW2 9272,14208 9400,14400 9410,14410
 #: next_check_id: OTTOBRAUN-2015
 #: note: Wobei es so aussieht, als ob das Zusatzschild einfach nur fehlt
 #: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5;
-#: last_checked: 2016-08-02
+#: last_checked: 2016-08-23
 #: check_frequency: 90d
 	RW4; 11451,13301 11368,13170
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 11451,13301 11486,13350
@@ -2812,7 +2812,7 @@ die letzten 100 Meter werden auf dem Gehweg geführt	RW3; 7487,3089 7115,3003
 	RW1;RW1 14011,7103 14069,7100
 #: XXX Radweg wegen Bauarbeiten aufgehoben
 #: source_id: LMS-BR_r_LMS-BR_62750
-#: last_checked: 2016-06-12
+#: last_checked: 2016-08-23
 #: check_frequency: 60d
 	RW1;RW0 14069,7100 14196,7086 14344,7003
 	RW1; 14344,7003 14567,6810
@@ -4413,7 +4413,7 @@ Verbundsteinpflaster	RW1; 19405,5284 19445,5271
 	RW6;RW6 11797,20601 11828,20625 11874,20656 11915,20686 11919,20745 11923,20781
 	RW6;RW6 11874,20656 11826,20722
 	RW1; 11650,21498 11696,21493 11831,21469
-gemeinsamer Rad- und Gehweg	RW2; 11915,19580 11907,19749
+gemeinsamer Rad- und Gehweg	RW2; 11915,19580 11911,19667 11909,19706 11907,19749
 Gehweg für Radfahrer frei	RW1; 13204,21203 13165,21144
 	RW6;RW6 8235,20109 8237,20098 8258,19983 8272,19908
 	RW6;RW6 8288,20128 8291,20112 8315,19993 8325,19934
@@ -4508,7 +4508,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1239
 	RW3;RW3 12969,7610 12991,7549 13015,7471
 #: next_check_id: KARLMARXSTR-2016
 #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus?
-#: last_checked: 2016-07-11
+#: last_checked: 2016-08-23
 #: check_frequency: 60d
 	RW4; 12969,7610 12914,7785
 # REMOVED (wieder entfernt) --- #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus? --- #: last_checked: 2016-03-01 ---	RW3; 12898,7832 12865,7923 12830,8031 12794,8103 12753,8187
@@ -4558,7 +4558,7 @@ Tempo 10	RW6;RW6 13559,12779 13470,12990
 	RW4;RW3 14096,12827 14066,12836
 #: XXX wegen Bauarbeiten am Hochhaus "Upper West" sind die Radspuren aufgehoben
 #: by: http://www.tagesspiegel.de/berlin/stadtentwicklung-zwillingsturm-soll-2016-in-der-city-west-eroeffnen/7416454.html (geplante Eröffnung Mitte 2016)
-#: last_checked: 2016-07-21
+#: last_checked: 2016-08-23
 #	RW3; 5488,10978 5613,10963 5652,11004
 ##: note: teilweise vor dem Hotel unterbrochen (wegen Ladezone?)
 #	RW3; 5652,11004 5613,10963 5488,10978
