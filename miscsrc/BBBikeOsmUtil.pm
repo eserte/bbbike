@@ -459,6 +459,8 @@ sub plot_osm_files {
 	    if ((exists $tag{'railway'} && ($tag{'railway'} =~ ABANDONED_RX || $tag{'railway'} =~ PLANNED_RX)) ||
 		(exists $tag{'highway'} && ($tag{'highway'} =~ ABANDONED_RX || $tag{'highway'} =~ PLANNED_RX)) ||
 		(exists $tag{'disused'} && $tag{'disused'} eq 'yes') ||
+		exists $tag{'demolished:historic'} ||
+		(exists $tag{'highway'} && $tag{'highway'} eq 'none') ||
 		(exists $tag{'man_made'} && $tag{'man_made'} eq 'pipeline') ||
 		exists $tag{'barrier'} ||
 		exists $tag{'mj10777:admin_levels'}
