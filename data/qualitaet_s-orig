@@ -42,12 +42,12 @@ Markgrafendamm/Hauptstr.: asphaltiert	Q0 14674,10811 14717,10855 14794,10844 149
 #: next_check_id: HAUPTSTR-2015 vvv
 #: XXX nach den Bauarbeiten vermutlich asphaltiert mit Radwegen oder -spuren vvv
 #: source_id: 2147339565 vvv
-#: last_checked: 2016-08-01 vvv
-#: check_frequency: 60d vvv
+#: last_checked: 2016-08-25 vvv
+#: next_check: 2016-08-29 vvv
 Hauptstr.: Kopfsteinpflaster, Betonplatten, alte Straßenbahnschienen	Q2; 14906,10820 15261,10738
 #: note: Asphaltierung während der Bauarbeiten, vielleicht auch permanent; einige kurze Kopfsteinpflasterabschnitte
 Hauptstr.: überwiegend asphaltierte Fahrbahn	Q1+; 15261,10738 14906,10820
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: source_id ^^^
 #: XXX ^^^
@@ -159,7 +159,7 @@ Corneliusstr.: mäßiges Kopfsteinpflaster	Q2 6880,11110 6841,11114 6630,11247 647
 Kopernikusstr.: mäßiges Kopfsteinpflaster	Q2 13467,11778 13651,11731
 Torellstr.: mäßiges Kopfsteinpflaster	Q2 13295,11792 13467,11778
 #: XXX Bauarbeiten, danach vielleicht teilweise bessere Qualität?
-#: last_checked: 2016-08-05
+#: last_checked: 2016-08-24
 #: check_frequency: 60d
 Rüdersdorfer Str.: Asphalt mit Schäden	Q1- 13295,11792 13173,11788 13066,11854
 Kaskelstr.: relative glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
@@ -274,13 +274,13 @@ Alt-Lübars: schlechtes Kopfsteinpflaster	Q3 7111,23873 7051,23924 6879,23816
 (Schildower Weg): Feldweg, teilweise gemeinsam mit Reitweg	Q2 7877,24037 7675,23968 7615,23884 7571,23885 7339,23782 7312,23775 7185,23749
 Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
+#: next_check_id: MARIANNEN-2016
 #: XXX wird hier vielleicht asphaltiert werden?
 #: XXX Baumaßnahme 2.22 (Realisierung nach 2011)
 #: XXX ggfs. Bauarbeiten bis Mitte September 2016 (laut rbbtext)
 #: source_id: INKO_2147340291_COPY_1
 #: source_id: 2147340291
-#: last_checked: 2016-08-22
-#: next_check: 2016-09-01
+#: last_checked: 2016-08-24
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9053,16029 8923,15850
 Böttgerstr.: Asphalt	Q0 9123,15963 8923,15850
@@ -2974,7 +2974,7 @@ Mauerstr.: kleinteiliges Kopfsteinpflaster	Q1 -3409,14241 -3316,14169
 Schönstedtstr. (Neukölln): Kopfsteinpflaster	Q2 12742,8635 12649,8535
 Schönstedtstr. (Neukölln): Asphalt	Q0 12649,8535 12540,8458
 # REMOVED (Asphalt neu gemacht) --- #: XXX Straßenbauarbeiten (mit Vollsperrung) ab September 2013, danach vielleicht bessere Qualität? --- #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_08_02.pdf?start&ts=1375448176&file=stra__enbauliste_stand_2013_08_02.pdf --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130827.1005.388421.html --- #: last_checked: 2013-09-09 --- #: next_check: 2013-09-30
-Höhndorfstr.: Asphalt	Q0 8454,8574 8438,8676 8425,8775
+Höhndorfstr.: Asphalt	Q0 8454,8574 8438,8676 8434,8775
 Zionskirchstr.: Asphalt	Q0+ 10561,14181 10426,14262
 Arkonaplatz: Kopfsteinpflaster	Q2 10105,14608 10189,14649 10277,14691
 Armbrustweg: Asphalt mit Schäden	Q1 7599,18705 7620,18615
@@ -24255,7 +24255,8 @@ Am Festungsgraben: Kopfsteinpflaster	Q2 9845,12506 9764,12492
 (Eichhornstr. - Reichpietschufer): Kopfsteinpflaster, Gehweg OK	Q2 8232,11414 8205,11401 8184,11160
 Kuppenheimerstr.: Schotterweg	Q1 5820,8117 5824,8035
 (Herkulesufer - Von-der-Heydtstr.): Kleinpflaster	Q2 7140,11156 7115,11220
-(Geßlerstr. - Monumentenstr.): Verbundsteinpflaster	Q1 7970,8886 7964,9060 8009,9063 8014,9126
+(Geßlerstr. - Monumentenstr.): Verbundsteinpflaster	Q1 7970,8886 7964,9060 8009,9063
+(Geßlerstr. - Monumentenstr.): Asphalt	Q0 8009,9063 8014,9126
 # REMOVED --- (Am Lokdepot): schlechtes Kopfsteinpflaster	Q3+ 8405,8994 8409,8904 8390,8879
 Fritz-Reuter-Str. (Schöneberg): Kopfsteinpflaster	Q2 6621,8221 6779,8279
 Gutzkowstr.: Kopfsteinpflaster	Q2 6785,8194 6636,8157

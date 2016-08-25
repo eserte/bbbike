@@ -21966,7 +21966,7 @@ EOF
        text  => 'Höhndorfstr.: Bauarbeiten, Fahrbahn gesperrt, vom 09.09.2013 bis zum 30.09.2013',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 8425,8775 8438,8676 8454,8574
+userdel	q4::inwork 8434,8775 8438,8676 8454,8574
 EOF
      },
      { from  => $isodate2epoch->("2013-09-04 00:00:00"),
@@ -24322,14 +24322,17 @@ EOF
 userdel	q3::inwork 12295,12197 12525,12151
 EOF
      },
-     { from  => $isodate2epoch->("2015-05-04 04:00:00"), # ein Tag Vorlauf
-       until => 1436706798, # $isodate2epoch->("2015-09-21 18:00:00"), # XXX dieser Eintrag ist inaktiv, siehe oben für aktiven Eintrag
-       text  => 'Karlshorster Str.: Fahrbahn zwischen Nöldnerstr. und Hauptstr. zeitweise komplett gesperrt, auch für Fußgänger und Radfahrer, 04.05.2015 bis 21.09.2015',
-       type  => 'handicap',
-       source_id => 'IM_024846',
+     { from  => $isodate2epoch->("2016-08-28 00:00:00"), # ein Tag Vorlauf
+       until => $isodate2epoch->("2016-10-31 23:59:59"),
+       text  => 'Karlshorster Str.: Fahrbahn komplett gesperrt, während der Arbeitszeiten auch für Fußgänger und Radfahrer, 29.08.2016 bis 31.10.2016',
+       type  => 'gesperrt',
        data  => <<EOF,
-# REMOVED --- #: next_check_id: KARLSHORSTER-2015 --- #: last_checked: 2015-07-04 --- #: next_check: 2015-09-21
-userdel	2::inwork 15261,10738 15272,10790
+#: next_check_id: KARLSHORSTER-2016
+#: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.511369.php
+#: XXX ist vielleicht nur der südliche Abschnitt betroffen? Und außerdem: Einbahnstraßenregelung in der Hirschberger Str. auch für Radfahrer?
+#: last_checked: 2016-08-25
+#: next_check: 2016-08-29
+userdel	2::inwork 15261,10738 15272,10790 15279,10862
 EOF
      },
      { from  => $isodate2epoch->("2016-06-27 00:00:00"), # 1 Tag Vorlauf
@@ -25271,6 +25274,9 @@ EOF
        text  => 'Lollapalooza 2016 im Treptower Park: gesperrte Wege und Straßen, 10.09.2016 und 11.09.2016',
        type  => 'gesperrt',
        data  => <<EOF,
+#: XXX gibt es schon die ersten Sperrungen im Park? vvv
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.511653.php
+#: next_check: 2016-08-27 vvv
 #: by: http://lolp2.de.c3cdn.com/wp/wp-content/uploads/2016/02/Lollapalooza2016_Treptower-Park_Festivalmap_2000x1414_RZ.png
 userdel	2::temp 15383,9191 14879,9433 14809,9466
 userdel	2::temp 14909,9649 14867,9573 14837,9517 14809,9466
@@ -25281,6 +25287,8 @@ userdel	2::temp 15133,9396 15184,9373 15268,9374
 userdel	2::temp 14316,9542 14384,9565
 userdel	2::temp 14809,9466 14556,9581
 userdel	2::temp 14588,9473 14635,9441
+#: next_check ^^^
+#: XXX ^^^
 EOF
      },
      { from  => 1467496800, # 2016-07-03 00:00

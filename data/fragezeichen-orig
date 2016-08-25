@@ -89,7 +89,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 # 
 #: XXX Baumaßnahme 2.29 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Realisierung anscheinend ungewiss)
-#: last_checked: 2016-07-23
+#: last_checked: 2016-08-25
 #: check_frequency: 180d
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
@@ -104,7 +104,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6183 (Baubeginn erst 2015)
 #: XXX Baubeginn des ersten Abschnitts: 3. Quartal 2014
-#: last_checked: 2016-08-23
+#: last_checked: 2016-08-25
 #: check_frequency: 60d
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -391,10 +391,7 @@ Ausbau Dresdener Bahn: Bahnunterführung wird gebaut, geänderte Straßenführung	?:
 Ützdorf - Lanke: Bau eines Radwegs	?::inwork 18621,39109 18702,39267 19045,39387 19475,39491 19818,39443 19947,39531 20251,39573 20355,39677 20493,39727 20637,39656
 # 
 # REMOVED (laut fritz nur bis Mi) --- #: XXX Wiesenweg (Lichtenberg) in beiden Richtungen zwischen Kietzer Weg und Gürtelstraße (Berlin)  Gültig ab: 01.08.2016 15:27  Vollsperrung, Baustelle	LMS-BR_r_LMS-BR_75088 --- Wiesenweg: ist die Sperrung auch für Radfahrer relevant? bis wann geht die Sperrung?	?::inwork 15055,11505 15162,11458 15162,11458
-# 
-#: XXX Colditzstraße (Tempelhof) in beiden Richtungen (Berlin)  Gültig ab: 31.07.2016 22:35  Brücke gesperrt, Gefahr durch Unterspülung der Fahrbahn	LMS-BR_r_LMS-BR_74687
-Colditzstr.: ist die Sperrung auch für Radfahrer relvant?	?::inwork 9863,5637 9893,5569
-# 
+# REMOVED --- #: XXX Colditzstraße (Tempelhof) in beiden Richtungen (Berlin)  Gültig ab: 31.07.2016 22:35  Brücke gesperrt, Gefahr durch Unterspülung der Fahrbahn	LMS-BR_r_LMS-BR_74687 --- Colditzstr.: ist die Sperrung auch für Radfahrer relvant?	?::inwork 9863,5637 9893,5569
 # REMOVED (nicht relevant) --- #: XXX "Zwischen Mulack- und Weinmeisterstraße Vollsperrung nach einem Wasserrohrbruch" --- Alte Schönhauser Str.: ist die Sperrung auch für Radfahrer relvant?	?::inwork 10527,13257 10603,13395 10640,13471
 # REMOVED (nicht relevant) --- #: XXX Pappelallee/Stahlheimer Straße (Prenzlauer Berg) in beiden Richtungen zwischen Stargarder Straße und Wichertstraße (Berlin)  Gültig ab: 29.07.2016 14:03  Vollsperrung, Absenkung der Fahrbahn	LMS-BR_r_LMS-BR_74872 --- Pappelallee: ist die Sperrung auch für Radfahrer relvant?	?::inwork 11301,15668 11373,15789 11393,15823 11455,15916
 # 
@@ -935,7 +932,7 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 # 
 #: by: http://www.bwb.de/content/language1/html/10337.php#11671
 #: osm_watch: way id="75509950" version="11"
-#: last_checked: 2016-08-03
+#: last_checked: 2016-08-25
 #: check_frequency: 60d
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12085,9778 12074,9689 12066,9558
 #: by: ^^^
@@ -945,7 +942,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12085,977
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="13"
-#: last_checked: 2016-08-23
+#: last_checked: 2016-08-25
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -1455,6 +1452,9 @@ Planstraße A: Straßenname? Qualität? Wird es eine Verbindung (für Fußgänger/Radf
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX NEW	Alexandrinenstraße (Kreuzberg) in beiden Richtungen zwischen Stallschreiberstraße und Oranienstraße (Berlin)  Gültig ab: 25.08.2016 13:59  Vollsperrung, Tiefbauarbeiten (bis Ende 09/16)	LMS-BR_r_LMS-BR_68468	INUSE
+Alexandrinenstr.: Vollsperrung prüfen	?::inwork 10501,11056 10593,11120 10678,11172
+# 
 #: last_checked: 2016-08-20
 #: check_frequency: 60d
 Zossener Str. (Hellersdorf): Bauarbeiten, wird es danach bessere Radwege oder Radspuren geben?	?; 22771,16194 22698,15788
@@ -1510,6 +1510,7 @@ Neue Grottkauer Straße --> Kienberg-Gärten der Welt	X 23042,13880
 # 
 #: XXX prüfen!
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2016
+#: last_checked: 2016-08-25
 Monumentenstr. 13d: wird hier ein verkehrsberuhigter Bereich ausgewiesen?	? 8014,9126 8009,9063
 # 
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/tunnel-adenauerplatz/
@@ -1630,7 +1631,7 @@ Treskowallee: Gehweg für Radfahrer freigegeben?	?; 18733,8633 18731,8577 18709,8
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7470
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.501167.php
-#: last_checked: 2016-07-27
+#: last_checked: 2016-08-25
 #: next_checked: 2016-09-16
 Mehringdamm: Radspuren entstehen	?::projected; 9248,9350 9225,9111 9224,9053 9225,9038 9227,8890 9229,8785
 # 
@@ -2370,12 +2371,7 @@ Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11
 #: next_check: 2016-10-31
 Koeltzepark: entsteht hier vielleicht eine Beleuchtung?	?::projected -3077,15367 -3138,15259
 # 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2016
-#: XXX vielleicht passiert nichts weiter, außer dass hier ein Schild ("Privatparkplatz ...") steht
-#: last_checked: 2016-07-04
-#: check_frequency: 90d
-Sülzhayner Str.: Einziehung von Straßenland, ändert sich hier etwas?	? 13267,9077 13403,9236 13420,9259
-# 
+# REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2016 --- #: XXX vielleicht passiert nichts weiter, außer dass hier ein Schild ("Privatparkplatz ...") steht --- #: last_checked: 2016-07-04 --- #: check_frequency: 90d --- Sülzhayner Str.: Einziehung von Straßenland, ändert sich hier etwas?	? 13267,9077 13403,9236 13420,9259
 # REMOVED (zurzeit nur ein nicht eingezeichneter Diagonalweg gesperrt) --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.334347.php --- #: XXX ist es dieser Weg oder ein anderer oder ein nicht eingezeichneter? --- Spreebogenpark: Sperrung wg. Bauarbeiten, danach "provisorische Befestigung", wo genau?	? 8309,12758 8304,12938
 # REMOVED (alle Einschränkungen elsewhere eingetragen) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1506/nachricht5652.html vvv --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1508/nachricht5703.html --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/download/LP_05-1.pdf --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/download/LP_04-1.pdf --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/download/LP_03.pdf --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/download/LP_02.pdf --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/download/LP_01.pdf --- #: XXX laut Artikel werden die Jülicher und Malmöer Str. zu Einbahnstraßen vvv --- #: XXX Radfahrer Richtung Osten werden auf zur gegenüberliegenden Seite geführt. Behinderungen vermutlich durch die zusätzlichen Ampelüberquerungen; vermutlich auch ungünstige Schaltzeiten an den Kreuzungen mit der Umleitungsstrecke. Div. Gehwege werden "Radfahrer frei"-Schilder haben (Jülicher Str., Behmstr.) --- #: last_checked: 2015-07-14 vvv --- #: next_check: 2015-08-10 vvv --- Sperrung der Bösebrücke: wie sieht die Wegführung für Radfahrer an der Bösebrücke aus? Gibt es Einschränkungen auf der Umleitungsstrecke?	? 10301,16186 10281,16263 10254,16363 10225,16436 10197,16528 10134,16534 9998,16547 9883,16557 9816,16565 9781,16569 9617,16590 9514,16603 9498,16480 9487,16395 9475,16307 9474,16297 9458,16180 9441,16058
 # REMOVED (aufgenommen) --- Treppe: gibt es hier auch Einschränkungen? (Unterquerung der Brücke wird möglich sein, aber vielleicht wird es eng?)	? 9998,16547 9982,16527 9959,16510

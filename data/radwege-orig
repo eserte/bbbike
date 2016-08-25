@@ -1035,7 +1035,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 969
 #: source_id: IM_018997
 #: source_id: IM_023987
 #: source_id: IM_025933
-#: last_checked: 2016-08-02
+#: last_checked: 2016-08-22
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
@@ -1071,6 +1071,7 @@ Busspur gilt Mo-Fr 7-14 Uhr	RW5; 10876,12563 10803,12470
 # REMOVED (zu weit entfernt von der anderen Seite) --- : next_check_id: VOSSSTR-2014
 #: last_checked: 2016-07-28
 #: XXX provisorischer Radstreifen, aber mittlerweile Richtung Westen (früher vor den Bauarbeiten war es Richtung Osten), evtl. wird später der alte Zustand wieder hergestellt: RW3;RW0
+#: source_id: 2147340369
 	RW0;RW3 8740,11524 8834,11536 9058,11564
 	RW3; 9058,11564 9268,11590
 #: note: kein Radweg, allerdings kann man die parallel führende Parkplatzstraße benutzen
@@ -3981,7 +3982,7 @@ die letzten 50 Meter sind benutzungspflichtig	RW3; 8763,8780 8594,8777
 	RW3; 8594,8777 8763,8780
 	RW4; 8594,8777 8472,8776
 die letzten 50 Meter sind benutzungspflichtig	RW3; 8472,8776 8594,8777
-	RW3;RW3 8472,8776 8425,8775 8389,8775 8298,8774
+	RW3;RW3 8472,8776 8434,8775 8389,8775 8298,8774
 Tempo 10	RW6;RW6 10301,11899 10227,12013 10207,12055
 #: by: Josef Schepers
 	RW6;RW6 194,1055 115,1043 84,1174 91,1202
@@ -4777,11 +4778,7 @@ asphaltiert	RW1; 17681,6212 17843,6083
 	RW6;RW6 14185,21126 14210,21200
 	RW6;RW6 14185,21126 14166,21072
 	RW6;RW6 16163,18780 16198,18753 16210,18706 16233,18643
-#: XXX ggfs. nach den Bauarbeiten gibt es in einer Richtung ein RW4
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6081.html
-#: last_checked: 2016-07-25
-#: next_check: 2016-08-05
-	RW3;RW3 8180,9099 8389,9087
+	RW3;RW4 8180,9099 8389,9087
 #: by: a.joerns
 #: confirmed_by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.477564.php
 	RW7;RW7 5546,4302 5630,4476 5656,4543 5668,4584 5691,4636 5709,4674 5748,4754 5797,4846 5870,4992 5905,5088 5927,5182 5962,5296 5993,5422 6009,5691 6007,5785 6007,5882 6001,5974 6008,6067

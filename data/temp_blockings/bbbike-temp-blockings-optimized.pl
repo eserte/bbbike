@@ -3585,7 +3585,20 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: KARLSHORSTER-2016
+#: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.511369.php
+#: XXX ist vielleicht nur der südliche Abschnitt betroffen? Und außerdem: Einbahnstraßenregelung in der Hirschberger Str. auch für Radfahrer?
+#: last_checked: 2016-08-25
+#: next_check: 2016-08-29
+userdel	2::inwork 15261,10738 15272,10790 15279,10862
+',
+         'from' => 1472335200,
+         'id' => 2717,
+         'text' => 'Karlshorster Str.: Fahrbahn komplett gesperrt, während der Arbeitszeiten auch für Fußgänger und Radfahrer, 29.08.2016 bis 31.10.2016',
+         'type' => 'gesperrt',
+         'until' => 1477954799
+       },
        undef,
        {
          'data' => '	2::inwork 9998,16547 9982,16527 9959,16510
@@ -3877,7 +3890,10 @@ userdel	2::inwork 16532,26174 16222,25829
          'until' => 1475359199
        },
        {
-         'data' => '#: by: http://lolp2.de.c3cdn.com/wp/wp-content/uploads/2016/02/Lollapalooza2016_Treptower-Park_Festivalmap_2000x1414_RZ.png
+         'data' => '#: XXX gibt es schon die ersten Sperrungen im Park? vvv
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.511653.php
+#: next_check: 2016-08-27 vvv
+#: by: http://lolp2.de.c3cdn.com/wp/wp-content/uploads/2016/02/Lollapalooza2016_Treptower-Park_Festivalmap_2000x1414_RZ.png
 userdel	2::temp 15383,9191 14879,9433 14809,9466
 userdel	2::temp 14909,9649 14867,9573 14837,9517 14809,9466
 userdel	2::temp 14577,9641 14627,9609 14695,9587 14792,9599 14867,9573 14918,9545 15025,9461 15133,9396 15184,9373 15268,9374
@@ -3887,6 +3903,8 @@ userdel	2::temp 15133,9396 15184,9373 15268,9374
 userdel	2::temp 14316,9542 14384,9565
 userdel	2::temp 14809,9466 14556,9581
 userdel	2::temp 14588,9473 14635,9441
+#: next_check ^^^
+#: XXX ^^^
 ',
          'from' => 1473372000,
          'id' => 2805,
