@@ -1226,6 +1226,7 @@ Ahornallee [Privatstraße] (Mahlsdorf)	1 24637,9828 24527,9850 24513,9796
 ###################################################################### 
 # elsewhere in Brandenburg
 #: by: rjoop
+Zehlendorfer Str. (Teltow)	1 1329,-753 1388,-685
 Poststr. (Hennigsdorf)	1 -3495,25739 -3438,25572
 B1/B5	2 30678,10923 29752,10895 29194,10899 27817,10875
 Hanns-Eisler-Weg	1 68794,73965 68643,73843 68594,73737 68608,73622 68694,73474
@@ -1236,7 +1237,7 @@ Wachtelweg (Ahrensfelde)	1 22212,19404 22239,19349
 Max-Sabersky-Allee (Teltow)	1 2457,-100 2399,-13 2545,92 2704,198 2902,329
 Hauffstr. (Teltow)	1 2763,103 2704,198
 Fritz-Reuter-Str. (Teltow)	1 2545,92 2560,-25
-Hannemannstr. (Teltow)	1 2902,329 2968,235
+Hannemannstr. (Teltow)	1 2902,329 2958,229
 Umfahrung Dahlwitz	2 26596,10921 26900,10665 27209,10666 27499,10859
 Krumme Str.	1 25490,14601 25444,14665 25418,14835
 Margaretenstr.	1 25418,14835 25503,14842
@@ -1472,7 +1473,7 @@ Oranienburger Str. (Wittenau): Mittelstreifen	3nocross 5343,21250 5349,21198 535
 Oranienburger Str.: Straßenbahnhaltestelle	3nocross 9225,13389 9293,13366 9415,13315
 Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3 12211,16688 12017,16734 12045,16574
 Schnellerstr.: Mittelstreifen	3nocross 16720,6845 16677,6892 16646,6925 16563,7012
-Schnellerstr.: Mittelstreifen	3nocross 17293,6230 17216,6308 16882,6657 16838,6708
+Schnellerstr.: Mittelstreifen	3nocross 17293,6230 17216,6308 16909,6628 16838,6708
 Stendaler Str.: Straßenbahntrasse	3nocross 23895,15450 23913,15333 23933,15209 23952,15086
 #: note: einige Meter nördlich der Henny-Porten-Str. existiert eine Fußgängerfurt
 Stendaler Str.: Straßenbahntrasse	3nocross 23933,15209 23952,15086 23960,15021
@@ -2119,6 +2120,7 @@ Treppe	0:40 1888,42795
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+weites Drängelgitter	BNP:2::trailer=7 16657,19705
 Drängelgitter (lichte Breite ca. 90cm)	BNP:4::trailer=15 23550,13863
 Drängelgitter (lichte Breite ca. 90cm)	BNP:4::trailer=15 23553,13885
 Drängelgitter	BNP:3::trailer=10 -9595,6363
@@ -2759,7 +2761,7 @@ Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11671,10402 11616,10288
 #: next_check_id ^^^
 # 
 #: next_check_id: MINNATODENHAGENSTR-2016
-#: last_checked: 2016-08-20
+#: last_checked: 2016-08-27
 #: next_check: 2016-12-01
 Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17082,7189 16954,7096 16720,6845
 # 
@@ -2783,7 +2785,7 @@ Keibelstr.: Bauarbeiten, Fahrbahn wird neu gemacht, Durchfahrt nicht möglich	2::
 # REMOVED (sah fertig aus, glaube ich) --- #: last_checked: 2016-08-02 --- #: check_frequency: 14d --- Wadzeckstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 11291,13218 11201,13289
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2015
-#: osm_watch: way id="156817982" version="10"
+#: osm_watch: way id="156817982" version="11"
 #: last_checked: 2016-07-07
 #: check_frequency: 60d
 Lutterbacher Str.: noch Baustelle	2::inwork 2094,3231 1993,3170 2072,3034 2163,3092
@@ -2813,10 +2815,10 @@ Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7741,14560 7527,14
 # REMOVED (fertig) --- Treptower Park: Bauarbeiten	2::inwork 15591,8848 15608,8882 15617,8924 15623,8949 15630,8979
 # REMOVED --- #: XXX evtl. kann man hier als Fußgänger irgendwie vorbei --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 3d --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14448,9922 14467,9880 14500,9863 --- #: last_checked ^^^
 # 
-#: last_checked: 2016-05-29
+#: last_checked: 2016-08-27
 #: XXX laut osm mittlerweile offen ("unclassified") (stimmt aber nicht)
 #: osm_watch: way id="311371554" version="4"
-Clara-Immerwahr-Str.: Bauzäune	2::inwork 19202,17471 19546,17351 19798,17263 19845,17235 19914,17203
+Clara-Immerwahr-Str.: Bauzäune, Fußgänger können aber u.U. passieren	2::inwork 19202,17471 19546,17351 19798,17263 19845,17235 19914,17203
 # 
 #: last_checked: 2016-07-27
 #: osm_watch: way id="57852078" version="4"
@@ -2980,13 +2982,7 @@ Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwo
 #: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6003 (Forderung nach Wiederherstellung)
-#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6003&date=20151213 (Abriss der Brücke)
-#: XXX: Umfahrung existiert mittlerweile --- bleibt die Sperrung permanent?
-#: XXX: sobald die Brücke abgerissen wurde -> aus den Daten entfernen
-#: last_checked: 2015-10-04
-#: check_frequency: 180d
-Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352
+# REMOVED (Aufschüttung statt Brücke) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6003 (Forderung nach Wiederherstellung) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6003&date=20151213 (Abriss der Brücke) --- #: XXX: Umfahrung existiert mittlerweile --- bleibt die Sperrung permanent? --- #: XXX: sobald die Brücke abgerissen wurde -> aus den Daten entfernen --- #: last_checked: 2015-10-04 --- #: check_frequency: 180d --- Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352
 # 
 #: osm_watch: way id="193373934" version="4"
 #: last_checked: 2016-07-23

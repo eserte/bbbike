@@ -3,7 +3,7 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
-Straße der Pariser Kommune: Wasserrohrbruch, Fahrbahn gesperrt	q2::inwork 12497,11459 12551,11515 12645,11673
+Straße der Pariser Kommune: Wasserrohrbruch, Fahrbahn Richtung Stralauer Platz gesperrt	q3::inwork; 12645,11673 12551,11515
 Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
 Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
 Rigaer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 14133,12482 14266,12446
@@ -28,7 +28,6 @@ Stallschreiberstr., Alexandrinenstr.: Einbahnstraßenregelung	q4::inwork; 10794,1
 S-Bhf. Friedrichshagen: Bauarbeiten	q2::inwork 25579,5958 25584,6029
 Dieselstr., Umfahrung: Fußgänger, kurvig, eng	q2::inwork 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112 14429,8074 14471,8046
 Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süden auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12753,8187 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785 12969,7610
-Kynaststr./Hauptstr.: Bauarbeiten, Gehweg benutzen	q3::inwork 14882,10732 14906,10820
 Jülicher Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
 Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
 Zimmermannstraßenbrücke: Bau einer neuen Brücke, Radfahrer müssen den Gehweg bzw. Behelfsbrücke benutzen	q4::inwork 21430,9026 21385,9049 21365,9059 21351,9066 21314,9083
@@ -772,8 +771,8 @@ Kelchstr.: enge Straße	q1 7386,4692 7424,4821 7437,4855 7456,4934
 Doldenweg: Bordsteine, Fußgänger	q2 7424,4821 7487,4802
 Kottesteig: Bordsteine, Fußgänger	q1 6868,5262 6820,5237 6806,5230
 (Zu den Krugwiesen - Vincent-van-Gogh-Str.): Fußgänger	q1 18646,17345 18704,17565
-(Weg durch die Falkenberger Krugwiesen): Fußgänger	q1 18704,17565 18756,17498 18784,17525 18831,17663 18937,17738 18986,17786 19102,17879 19110,18015 19127,18091 19212,18205 19251,18252 19249,18351 19265,18400 19291,18456
-(Falkenberger Krugwiesen - Falkenberger Chaussee): Fußgänger	q1 19212,18205 18969,18448
+(Weg durch die Falkenberger Krugwiesen): Fußgänger	q1 18704,17565 18756,17498 18784,17525 18831,17663 18937,17738 18986,17786 19102,17879 19110,18015 19127,18091 19213,18195 19251,18248 19249,18351 19265,18400 19291,18456
+(Falkenberger Krugwiesen - Falkenberger Chaussee): Fußgänger	q1 19213,18195 18969,18448
 Stritteweg: vereinzelte Stufen und schmale Rampen	q3 -5236,11204 -5256,11142
 Künstlerweg: enge Straße	q1 -7418,7842 -7334,7703 -7258,7735 -7340,7873
 Ritterfelddamm [Nebenfahrbahn]: Bordsteine	q3 -8582,6987 -8598,7018

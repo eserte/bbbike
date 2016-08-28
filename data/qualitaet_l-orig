@@ -170,7 +170,7 @@ Berliner Str. (Erkner): Fahrbahn und Radweg Richtung Berlin Asphalt, Radweg Rich
 Heinersdorf: Kopfsteinpflaster	Q2 5941,-2072 5767,-2048
 Heinersdorf: rauher Asphalt	Q1 5767,-2048 5656,-2008
 Heinersdorf: schlechtes Kopfsteinpflaster, sandiger Rand evtl. OK	Q3 5656,-2008 4985,-2373 4283,-2370
-Iserstr.: Kopfsteinpflaster	Q2 -248,-1160 -173,-1397
+Iserstr.: Asphalt	Q0 -248,-1160 -173,-1397
 #: add_fragezeichen: Stimmt das oder ist das St¸ck in Sputendorf auch asphaltiert?
 Sputendorf: teilweise Kopfsteinpflaster, OK	Q1 -1316,-7721 -1734,-7716 -2500,-7557
 #: add_fragezeichen: Stimmt das noch immer?
@@ -1008,8 +1008,8 @@ Kopfsteinpflaster	Q2 -19190,7296 -19187,6709 -19514,6643
 	Q0 -16280,-6747 -15811,-6533 -15472,-6233 -15275,-5928 -15228,-5678 -14947,-5405 -14795,-5169 -14710,-4977 -14712,-4614 -14267,-4206 -14119,-3845 -14095,-3670 -14031,-3554 -14038,-3356 -13771,-3023 -13718,-2991 -13481,-2956 -13381,-2943 -13155,-2913 -13062,-2901
 	Q0 -13062,-2901 -13022,-2776 -13003,-2754 -12879,-2573 -12796,-2488 -12779,-2467 -12756,-2437 -12743,-2387 -12708,-2257 -12697,-2235 -12620,-2174 -12534,-2125 -12431,-2096
 	Q0 -17643,-7028 -17703,-7228 -18009,-7528
-	Q0 -5662,-3583 -5463,-3467 -5156,-3192 -4963,-3121 -4885,-3087 -4456,-2968 -3950,-2743 -3650,-2609 -3521,-2552 -3252,-2368 -3105,-2267 -2984,-2184 -2831,-1956 -2492,-1736 -2267,-1612 -2184,-1575 -2117,-1545 -2035,-1540 -1952,-1565 -1781,-1676 -1661,-1714 -1453,-1715 -1307,-1764 -1196,-1771 -866,-1615 -713,-1542 -671,-1507 -624,-1468 -556,-1402 -248,-1160 -93,-1052 -71,-1037 -39,-1014 154,-876 212,-834 351,-738 465,-662 590,-618 709,-582 723,-580 758,-582 791,-598 950,-680 1067,-699 1212,-706 1235,-714 1329,-753 1390,-759 1453,-746
-	Q0 3467,560 3417,524 3263,427 3187,380 2968,235 2763,103 2560,-25 2457,-100 2338,-210 2215,-328 1974,-440 1672,-577 1492,-697 1460,-714 1453,-746
+	Q0 -5662,-3583 -5463,-3467 -5156,-3192 -4963,-3121 -4885,-3087 -4456,-2968 -3965,-2749 -3933,-2734 -3908,-2723 -3650,-2609 -3489,-2535 -3252,-2368 -3105,-2267 -3020,-2208 -2989,-2177 -2946,-2130 -2842,-1976 -2789,-1919 -2662,-1841 -2498,-1741 -2267,-1612 -2184,-1575 -2115,-1551 -2056,-1544 -1973,-1560 -1781,-1676 -1664,-1720 -1457,-1722 -1291,-1770 -1196,-1771 -866,-1615 -713,-1542 -671,-1507 -624,-1468 -556,-1402 -248,-1160 -90,-1056 -68,-1041 -36,-1017 154,-876 212,-834 351,-738 465,-662 590,-618 685,-591 731,-585 757,-587 791,-598 948,-684 1067,-699 1212,-706 1235,-714 1329,-753 1390,-759 1453,-746
+	Q0 3467,560 3417,524 3263,427 3177,374 2958,229 2763,103 2560,-25 2457,-100 2338,-210 2215,-328 1974,-440 1672,-577 1492,-697 1460,-714 1453,-746
 	Q0 -5201,-35443 -5621,-35171 -5722,-34792
 	Q0 -5722,-34792 -6145,-34688 -6467,-34622 -7769,-33957 -8779,-33414
 	Q0 -8779,-33414 -8622,-32920 -9156,-32411 -9943,-31926 -10517,-31803 -10943,-31376 -11218,-31357
@@ -1196,9 +1196,11 @@ Iserstr.: Asphalt	Q0 -173,-1397 86,-2903
 Eggersdorf - Altlandsberg: teilweise etwas unebener Asphalt	Q0 38171,15125 36539,16154 36087,16319 35807,16563 35196,17190 35225,17557
 vor Erkner: Kopfsteinpflaster Richtung S¸den	Q1; 34449,1689 34232,888
 vor Erkner: Richtung Norden asphaltiert	Q0; 34232,888 34449,1689
-Osdorfer Str. (Teltow): glatter unbefestigter Feldweg	Q1 2477,-548 2248,-554 1849,-775
+Osdorfer Str. (Teltow): glatter unbefestigter Feldweg	Q1- 2477,-548 2250,-570 2078,-640 1861,-754 1852,-770
 Breitscheidstr. (Teltow): m‰ﬂiger Asphalt	Q1 2338,-210 2532,-457 2557,-510
-Osdorfer Str.: Verbundsteine	Q1 2557,-510 2477,-548
+Osdorfer Str.: Kopfsteinpflaster	Q2 2557,-510 2536,-519
+Osdorfer Str.: Verbundsteinpflaster	Q1 2536,-519 2477,-548
+Osdorfer Str.: unbefestigte Straﬂe	Q2 2557,-510 2671,-477 2847,-431
 #: note: Fahrbahn und Radwege
 Berliner Str. (Woltersdorf): Verbundsteine	Q0 33207,5820 32823,5946 32728,5942 32601,5936 32479,5931 32376,5926 32252,5917 32192,5915
 R¸dersdorf: Kopfsteinpflaster	Q2 35771,7946 36068,7796 36362,7759
@@ -1716,7 +1718,7 @@ in Klockow: Asphalt	Q0 49382,110861 49446,110392
 Klockow - Kleptow: sehr guter Asphalt	Q0 49446,110392 49487,110056 49638,109926 50293,109046 50419,108545
 Klockow - Kleptow: ¸berwiegend gute Schotterstraﬂe	Q1- 49487,110056 49545,109679 49500,108991 49432,108885 49307,108563 49297,108402 49363,108104
 Klockow - Kleptow: Asphalt	Q0 49363,108104 49375,107992
-Alte Potsdamer Landstr.: Feldweg	Q2 -3284,-1659 -3684,-1820 -3968,-1823
+Alte Potsdamer Landstr.: Feldweg	Q2 -3290,-1665 -3684,-1820 -3968,-1823
 Alte Potsdamer Landstr.: Asphalt	Q0 -3968,-1823 -4075,-1837
 Alte Potsdamer Landstr.: teilweise grobes Kopfsteinpflaster, teilweise Sandweg	Q2 -4075,-1837 -5556,-1909 -5984,-2062
 Bahnhofstr.: Asphalt	Q0 -4075,-1837 -4032,-1937
@@ -1736,10 +1738,10 @@ Marktplatz: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3 1121,-557 1132,-498
 Ritterstr.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3 1304,-540 1132,-498 1106,-491 990,-467
 Hoher Steinweg: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3 990,-467 978,-521 965,-585
 Alte Potsdamer Str.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3 965,-585 767,-542
-Jahnstr.: m‰ﬂiges Kopfsteinpflaster	Q2 758,-582 767,-542 818,-298
+Jahnstr.: m‰ﬂiges Kopfsteinpflaster	Q2 757,-587 767,-542 818,-298
 Im Tal: Kopfsteinpflaster	Q2 -882,-1220 -940,-1256 -1112,-1123 -1310,-1137
 Am Weinberg: Kopfsteinpflaster, etwas kleinteiliger	Q2 -1348,-1098 -1310,-1137 -1091,-1350 -1036,-1315 -940,-1256
-Allee am Forsthaus: schlechtes Kopfsteinpflaster, teilweise mit Sandbanketten, und teilweise unebener Sandweg	Q3 -1503,-1328 -1607,-1389 -1698,-1384 -1976,-1325 -2071,-1259 -2262,-1317 -2334,-1392 -2624,-1438
+Allee am Forsthaus: schlechtes Kopfsteinpflaster, teilweise mit Sandbanketten, und teilweise unebener Sandweg	Q3 -1503,-1328 -1607,-1389 -1698,-1384 -1976,-1325 -2071,-1259 -2262,-1317 -2334,-1392 -2627,-1439
 Leiblstr.: Kopfsteinpflaster	Q2 -12545,-698 -12266,-613
 Mittelstr.: Kopfsteinpflaster	Q2 -12545,-698 -12697,-729 -12884,-769
 Am Schafgraben: Parkweg	Q1 -14500,-2012 -14536,-1943 -14571,-1881 -14612,-1809
@@ -2034,8 +2036,8 @@ Yorckstr.: asphaltiert	Q0 -13208,-1315 -13001,-1349 -12976,-1356 -12833,-1365
 Luisenplatz: Kopfsteinpflaster, OK	Q1 -13643,-1220 -13646,-1168 -13646,-1115 -13560,-1106
 K‰the-Kollwitz-Str.: asphaltiert	Q0 -48,-30 -345,7 -554,3 -645,-25 -749,-74
 Ernst-Th‰lmann-Str.: gutes Kopfsteinpflaster	Q1 -1709,653 -1831,641
-Ernst-Th‰lmann-Str.: m‰ﬂiger Beton	Q1 -1831,641 -2382,549
-Rudolf-Breitscheid-Str.: Asphalt	Q0 -3003,432 -2915,456 -2382,549
+Ernst-Th‰lmann-Str.: m‰ﬂiger Beton	Q1 -1831,641 -2387,548
+Rudolf-Breitscheid-Str.: Asphalt	Q0 -3003,432 -2915,456 -2387,548
 Rudolf-Breitscheid-Str.: gutes Kopfsteinpflaster	Q1 -3003,432 -3112,371 -3160,344
 (Rudolf-Breitscheid-Str. - Stahnsdorfer Damm): Waldweg	Q2 -3160,344 -3415,204 -3412,-291
 Rembrandtstr.: m‰ﬂiger Beton	Q1 -11337,609 -11122,271
@@ -3332,11 +3334,12 @@ Hauffstr. (Teltow): Verbundsteinpflaster	Q1 2672,238 2704,198
 Hauffstr. (Teltow): Asphalt	Q0 2704,198 2763,103 2809,28
 Fritz-Reuter-Str. (Teltow): unbefestigt	Q2 2527,141 2545,92
 Fritz-Reuter-Str. (Teltow): Asphalt	Q0 2545,92 2560,-25
-Fritz-Reuter-Str. (Teltow): Kopfsteinpflaster	Q2 2560,-25 2611,-100
-#: add_fragezeichen: ist der s¸dliche Abschnitt der Fritz-Reuter-Str. ebenfalls gepflastert?
-	Q2 2611,-100 2669,-187 2757,-311 2847,-431
-Maxim-Gorki-Str. (Teltow): Asphalt	Q0 3187,380 3235,310
-Gerhart-Hauptmann-Str. (Teltow): Asphalt	Q0 3263,427 3304,356
+Fritz-Reuter-Str. (Teltow): Kopfsteinpflaster	Q2 2560,-25 2607,-105
+#: add_fragezeichen: ist der mittlere Abschnitt der Fritz-Reuter-Str. ebenfalls gepflastert?
+	Q2 2607,-105 2667,-199
+Fritz-Reuter-Str. (Teltow): Kopfsteinpflaster	Q2 2667,-199 2751,-312 2847,-431
+Maxim-Gorki-Str. (Teltow): Asphalt	Q0 3177,374 3225,304
+Gerhart-Hauptmann-Str. (Teltow): Asphalt	Q0 3263,427 3304,356 3320,335 3404,211 3485,102
 Radweg an der B96: asphaltiert	Q0 11701,-3360 11697,-3397 11986,-4036
 (Ulmenallee - Ahrensfelder Chaussee): Verbundsteinpflaster	Q1 21363,19045 21344,19008
 (Ulmenallee - Gehrensee): Verbundsteinpflaster	Q1 21363,19045 21328,19049
@@ -3541,14 +3544,20 @@ Zeppelinufer: Fahrbahn asphaltiert	Q0 1464,-470 1338,-426 1134,-370 818,-298
 #: by: osm
 Lindenstr. (Teltow): Kopfsteinpflaster	Q3 1235,-714 1273,-626 1279,-608 1304,-540
 B‰ckerstr. (Teltow): Kopfsteinpflaster	Q2 1067,-699 1101,-553
-Landstr. (Teltow): Kopfsteinpflaster	Q2 950,-680 965,-585
+Landstr. (Teltow): Kopfsteinpflaster	Q2 948,-684 965,-585
 Striewitzweg (Teltow): Verbundsteinpflaster	Q1 590,-618 577,-543
 Striewitzweg (Teltow): Beton/Kopfsteinpflaster	Q2 590,-618 598,-757
 Katzbachstr. (Teltow): Asphalt	Q0 351,-738 295,-628
 Elbestr. (Teltow): Kopfsteinpflaster	Q2 351,-738 347,-784
 Havelstr. (Teltow): Asphalt/Kopfsteinpflaster	Q2 154,-876 245,-1001
 Kleiststr. (Stahnsdorf): Asphalt	Q0 -671,-1507 -569,-1670
-Stolper Weg (Kienwerder): Betonplatten	Q2 -4963,-3121 -4765,-3352
+#: note: kleine Platten, ca. 1m x 1m
+Stolper Weg (Kienwerder): Betonplatten	Q1- -4963,-3121 -4764,-3343
+Stolper Weg (Kienwerder): unbefestigte Straﬂe	Q2 -4764,-3343 -4663,-3443 -4476,-3574 -4462,-3588 -4451,-3598 -4394,-3652 -4382,-3683 -4364,-3719
+Am Kienwerder (Kienwerder): Betonplatten	Q1- -4764,-3343 -4694,-3304 -4539,-3269
+Reiherweg: unbefestigte Straﬂe	Q2 -4476,-3574 -4498,-3428 -4539,-3269
+Reiherweg: unbefestigte Straﬂe	Q2 -4451,-3598 -4395,-3591 -4261,-3576 -4232,-3572
+Alte Feldmark: unbefestigte Straﬂe	Q2 -4394,-3652 -4395,-3591 -4373,-3504
 Stern - Stahnsdorf: asphaltiert	Q0 -5750,-3611 -5657,-3589 -5463,-3467
 Kohlhasenbr¸cker Str. (Potsdam): asphaltiert	Q0 -6827,-2791 -6810,-3151 -6809,-3208 -6811,-3373
 Jagdhausstr. (Potsdam): Asphalt mit Sch‰den	Q1 -7060,-3124 -7017,-3225
@@ -3814,6 +3823,21 @@ Britz - Chorin: Kopfsteinpflaster	Q2 38774,55675 38987,55637 39284,55620 39474,5
 Britz - Chorin: sandiger Weg	Q2 39474,55669 40500,55749
 Dankwartstr. (Wismar): Kopfsteinpflaster, OK	Q1- -124758,162486 -124560,162832
 Am Markt (Wismar): Kopfsteinpflaster	Q2- -124560,162832 -124529,162833 -124447,162829 -124452,162909 -124529,162907 -124529,162833
+Wattstr.: Verbundsteinpflaster	Q1 -3226,-453 -3289,-519
+Heidefeld: Asphalt	Q0 -3127,-641 -3082,-599 -3040,-554
+Tannenweg: Asphalt	Q0 -3020,-2208 -3130,-2017
+#: by: osm (nˆrdlicher Abschnitt)
+Kastanienweg: Kopfsteinpflaster	Q2 -2946,-2130 -2981,-2065 -2989,-1916 -3000,-1811
+#: by: osm
+Kastanienweg: Asphalt	Q0 -3000,-1811 -3024,-1645
+Osdorfer Str.: Gehwegplatten	Q1 1550,-761 1589,-763
+Osdorfer Str.: Verbundsteinpflaster	Q1 1589,-763 1722,-773
+Gottfried-Keller-Str.: unbefestigte Straﬂe	Q2 2586,-421 2517,-335 2443,-238
+Gustav-Freytag-Str.: unbefestigte Straﬂe	Q2 2578,-306 2640,-385 2655,-410 2671,-477
+Klaus-Groth-Str.: unbefestigte Straﬂe	Q2 2689,-353 2635,-282
+Hauffstr. (Teltow): Kopfsteinpflaster	Q2 2870,-66 2943,-186
+Hauffstr. (Teltow): Beton	Q0 2943,-186 3030,-312
+Am Hochwald: Kopfsteinpflaster	Q2 -2694,-1100 -2311,-1013
 ######################### User Contributions #################################
 #: by: mopedfahrerrr:
 #: confirmed_by: anonymous:
@@ -3994,7 +4018,7 @@ Marlene-Dietrich-Allee: guter Asphalt	Q0 -8423,-2038 -8548,-2035 -8721,-2041 -87
 #: corrected_by: srt (Asphalt -> ...)
 Hannemannstr. (Teltow): unbefestigt	Q2 2841,411 2902,329
 #: confirmed_by: srt (zumindest der nˆrdliche Abschnitt)
-Hannemannstr. (Teltow): Asphalt	Q0 2902,329 2968,235 3013,165 3074,68 3149,-50 3340,-357
+Hannemannstr. (Teltow): Asphalt	Q0 2902,329 2958,229 3004,159 3067,63 3143,-53 3340,-357
 #: by ^^^
 # 
 #: by: anonymous:
@@ -4290,7 +4314,7 @@ Goethestr. (Neu-Buch): fester Sandweg	Q2 17228,24640 17350,24699 17581,24815 176
 #: by: ^^^
 # 
 #: by: Jens Velten:
-Dreilindenerweg: Asphalt	Q0 -3574,-163 -3746,-268 -3793,-340 -3834,-459 -3993,-700
+Dreilindenerweg: Asphalt	Q0 -3589,-150 -3746,-268 -3793,-340 -3834,-459 -3993,-700
 # 
 #: by: Ricarda Mache
 #: confirmed: srt (nur das nordwestliche Ende)
@@ -5154,8 +5178,10 @@ Lessingstr. (Potsdam): schlechtes Kopfsteinpflaster	Q3 -9837,-1612 -9529,-1599 -
 Lessingstr. (Potsdam): Asphalt mit einigen Sch‰den	Q1 -9355,-1586 -9319,-1587 -9227,-1589
 #: by: ^^^
 #: by: Dieter wegwerth:
+#: corrected_by: srt (Asphalt -> Beton)
+Kantstr. (Teltow): guter Beton	Q0 3721,195 3689,182 3485,102 3392,63 3324,34 3305,25 3263,7 3223,-10 3201,-19 3143,-53
 #: note: overriding my (?) old entry ("m‰ﬂiger Asphalt")
-Kantstr. (Teltow): guter Asphalt	Q0 3721,195 3689,182 3490,102 3404,64 3149,-50 2951,-185 2757,-311 2532,-457
+Kantstr. (Teltow): guter Asphalt	Q0 3143,-53 3090,-87 3042,-119 2993,-152 2943,-186 2893,-221 2846,-252 2799,-283 2751,-312 2689,-353 2640,-385 2586,-421 2532,-457
 #: by: hans noe: vvv
 Wolziger Zeile - B101: in die Jahre gekommener Asphalt	Q1 9608,-2642 9529,-2628 9159,-2590 8100,-2471 7090,-1651
 Wolziger Zeile - B101: holpriger Plattenweg	Q2- 7090,-1651 6742,-1368
@@ -5349,7 +5375,7 @@ Karlstr. (Glienicke): Asphalt	Q0 5168,24614 5119,24856
 Ziolkowskistr.: guter Beton	Q0 -7971,-3373 -7856,-3397 -7830,-3400 -7511,-3384 -7412,-3419 -7285,-3464 -7150,-3513 -7015,-3563 -6951,-3590 -6796,-3645
 # 
 #: by: M.Mende:
-Schleusenweg: guter Asphalt	Q0 -2760,-740 -3003,432
+Schleusenweg: guter Asphalt	Q0 -2760,-740 -2832,-386 -3003,432
 # 
 #: by: holger (macholm):
 #: note: "Fahrbahn wird gerade erneuert (Nov.2009)"

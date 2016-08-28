@@ -519,7 +519,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 8848,4683
 	X 8813,5004
 	X 8661,6169
-	X 8622,5867
+	X 8627,5866
 	X 9176,5803
 	X 10527,13257
 	X 8119,12414
@@ -1224,7 +1224,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5205,14253
 	X 5753,15096
 	X 5581,16708
-	X 3888,1221
+	X 3895,1219
 	X 4261,1584
 	X 5248,2376
 	X 5317,2345
@@ -2468,7 +2468,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: Anforderungsampel
 	F 15356,3759
 #: next_check_id: KARLSHORSTER-2016
-#: last_checked: 2016-08-25
+#: last_checked: 2016-08-27
 #: next_check: 2015-10-31
 #: note: provisorische Ampel
 # REMOVED --- : XXX nicht immer eingeschaltet, z.B. 2015-08-08 (Sa) gegen 10 Uhr off
@@ -2498,6 +2498,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 7535,21229
 	F 6829,21160
 	X 21165,18715
+#: note: nachts immer ausgeschaltet? (gesehen: Fr 2016-08-26 gegen 22:30)
 	X 7825,4672
 	F 2629,7771
 	F 2524,7900
@@ -2803,7 +2804,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: source_id: 2147339539 vvv
 #: last_checked: 2016-08-20 vvv
 #: check_frequency: 90d vvv
-	F::inwork 16882,6657
+	F::inwork 16909,6628
 	F::inwork 16646,6925
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -2874,6 +2875,12 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X::inwork 12442,20805
 #: note: Anforderungsampel
 	F 18464,6269
+#: note: nachts immer ausgeschaltet? (gesehen: Fr 2016-08-26 gegen 22:15)
+	F 4056,1448
+#: note: nachts immer ausgeschaltet? (gesehen: Fr 2016-08-26 gegen 22:15)
+	X 4433,1800
+#: note: nachts immer ausgeschaltet? (gesehen: Fr 2016-08-26 gegen 22:15)
+	F 4636,2083
 # 
 ################################################################################
 #: note: Potsdam vvv
@@ -3022,6 +3029,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F -7554,13514
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	X -2747,-937
 	B 71914,-71679
 	B 38484,55381
 	B 33251,64036
@@ -3045,9 +3053,11 @@ Umgehung mit Treppen existiert	Zbr 4611,63946
 	F 34287,2967
 	X 23392,30395
 	X -4963,-3121
-	F -3252,-2368
+	X -3252,-2368
 	X -3105,-2267
-	X -2492,-1736
+	X -3650,-2609
+	X -2498,-1741
+	X -2267,-1612
 	X -2184,-1575
 	X -866,-1615
 	X -248,-1160
@@ -3244,7 +3254,7 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	B -6100,73876
 	X 6349,-1745
 	X -1709,653
-	X -1661,-1714
+	X -1664,-1720
 	X -3368,-4430
 	X -1715,-1767
 	B 15580,-26698

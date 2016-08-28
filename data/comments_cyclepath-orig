@@ -42,12 +42,13 @@ Verbundsteinpflasterradweg	RW2;RW2 33943,5568 33966,5744 33992,5938 34028,6053 3
 #: confirmed_by: srt (zumindest im westlichen Bereich)
 	RW3; -10429,-1944 -10360,-1934 -10235,-1916 -9986,-1882 -9735,-1845
 	RW;RW8? 5399,-3049 5407,-3031 5416,-3014 5540,-2771 5802,-2272 5941,-2072
-#: add_fragezeichen: Ist die Qualität des Radwegs zwischen Güterfelder Eck und Kienwerder besser geworden?
+#: add_fragezeichen: Ist die Qualität des Radwegs zwischen Güterfelder Eck und Kienwerder besser geworden? Befindet sich der Radweg mittlerweile auf der südlichen Seite?
 #: source_id: LS/W-SG33-P/12/229
 #: next_check: 2014-08-31
-enger Zweirichtungsradweg, asphaltiert, einige Schäden	RW8;RW2 -5662,-3583 -5463,-3467 -5156,-3192 -4963,-3121 -4885,-3087
-asphaltiert	RW8;RW2 -4885,-3087 -4456,-2968 -3950,-2743 -3650,-2609
-Verbundsteinpflasterradweg, teilweise recht eng	RW2;RW2 3467,560 3417,524 3263,427 3187,380 2968,235 2763,103 2560,-25 2457,-100 2338,-210
+enger Zweirichtungsradweg, asphaltiert, einige Schäden	RW8;RW2 -5662,-3583 -5463,-3467 -5156,-3192 -4963,-3121
+neu asphaltiert	RW2;RW8 -4963,-3121 -4885,-3087 -4456,-2968 -3965,-2749 -3933,-2734
+asphaltiert	RW2;RW2 -3933,-2734 -3908,-2723 -3650,-2609
+Verbundsteinpflasterradweg, teilweise recht eng	RW2;RW2 3467,560 3417,524 3263,427 3177,374 2958,229 2763,103 2560,-25 2457,-100 2338,-210
 	RW;RW 2338,-210 2215,-328 1974,-440 1672,-577 1492,-697 1460,-714 1453,-746
 Heinrich-Mann-Allee	RW2;RW1 -12431,-2096 -12493,-1896
 #: XXX_indoor: es gibt sowohl einen Radweg auf der westlichen Seite als auch den Zweirichtungsradweg auf der Extrabrücke --- evtl. beide getrennt zeichnen?
@@ -166,6 +167,7 @@ asphaltierter Radweg	RW8;RW2 39096,2149 39149,1973 39212,1762
 	RW8?;RW 14341,30839 12955,30436 12466,30452
 Feinsplit-Radweg	RW;RW 41806,-40762 42075,-40337 42152,-39572 41675,-38268 41687,-38100 41731,-37743
 asphaltiert, enge Stelle an der Bahnüberführung	RW;RW8? 8303,28478 7546,28255 7365,28253 7125,28106 5939,27781
+gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2;RW -248,-1160 -173,-1397
 gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW;RW -173,-1397 86,-2903
 gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW;RW -1853,-2412 -2049,-2165
 Verbundsteinpflaster	RW8?;RW 56175,173875 56327,173853 56381,173849
@@ -263,7 +265,7 @@ gemeinsamer Geh- und Radweg, Verbundsteinpflaster, auch als Zweirichtungsradweg 
 gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; -15533,813 -15938,1003
 	RW4; -15938,1003 -16026,1044
 gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; -16026,1044 -16640,1304 -16719,1369 -16742,1387 -16763,1402 -16905,1503 -16897,1518 -16840,1639 -16782,1767 -16706,1911
-Betonplatten	RW2;  -16640,1304 -16026,1044
+Betonplatten	RW2; -16640,1304 -16026,1044
 	RW4; -16026,1044 -15938,1003
 Betonplatten	RW2; -15938,1003 -15533,813 -15501,795
 	RW3;RW3 -15757,-1758 -15799,-1352
@@ -383,8 +385,9 @@ Radweg auf Gehweg	RW2;RW2 53144,-90435 53039,-90432 52714,-90551
 Verbundsteinpflaster	RW8;RW2 52714,-90551 52580,-90602 52531,-90608 51535,-90752 51083,-90805 50891,-90838 50434,-90824 50146,-90787
 Verbundsteinpflaster	RW;RW -4,1133 -129,989 -203,906 -371,715 -475,568 -625,189 -749,-74 -797,-138 -840,-185 -927,-280 -1436,-887
 Radweg auf Gehweg	RW;RW -371,715 -426,773 -492,795 -531,807 -641,806 -818,789 -1196,724 -1427,684 -1642,659 -1709,653
-Radweg auf Gehweg	RW;RW -2743,-934 -2941,-805 -3112,-655 -3412,-291 -3574,-163 -3663,-91 -3875,88
+Radweg auf Gehweg	RW1;RW1 -3082,-599 -3226,-453 -3412,-291 -3589,-150 -3663,-91 -3856,60
 Radweg auf Gehweg	RW;RW 2745,89716 2797,89387
+	RW2;RW8 -2747,-937 -2760,-740
 Verbundsteinpflasterradweg auf Gehweg	RW;RW 2797,89387 2480,89399 2111,89378 1907,89597 1782,89633 1544,89701 1090,89570
 asphaltiert	RW;RW8? 1090,89570 627,89430 234,89271
 Verbundsteinpflasterradweg auf Gehweg, teilweise sehr eng	RW;RW -8777,85887 -8775,85947 -8738,86096 -8726,86224 -8711,86273 -8641,86541
@@ -452,11 +455,16 @@ asphaltiert	RW2;RW8 25401,53587 25381,53484 25347,53338 25368,53125 25393,52762 
 	RW8;RW2 26320,50521 26244,50372
 Suggestivstreifen	RW3;RW3 22868,30412 22904,30359
 	RW;RW 2246,31162 2219,31171 2173,31187 2126,31207 2042,31236 1931,31275 1918,31279 1762,31318 1737,31303
-	RW4?;RW 1329,-753 1235,-714
-	RW4;RW2 709,-582 590,-618 465,-662 351,-738
-	RW4;RW4 351,-738 212,-834 154,-876 -39,-1014 -71,-1037
-	RW2;RW2 -71,-1037 -93,-1052 -248,-1160 -556,-1402 -624,-1468
-	RW;RW -624,-1468 -671,-1507 -713,-1542 -866,-1615 -1196,-1771 -1307,-1764 -1453,-1715 -1661,-1714 -1781,-1676 -1952,-1565 -2035,-1540 -2117,-1545 -2184,-1575 -2267,-1612 -2492,-1736 -2831,-1956 -2984,-2184 -3105,-2267 -3252,-2368 -3521,-2552 -3650,-2609
+	RW4?;RW2 1329,-753 1235,-714
+	RW2;RW 1329,-753 1390,-759 1453,-746 1495,-747 1550,-761 1684,-927
+	RW4;RW2 731,-585 685,-591 590,-618 465,-662 351,-738
+	RW3;RW3 731,-585 757,-587 791,-598 948,-684 1067,-699 1212,-706 1235,-714
+	RW4;RW4 351,-738 212,-834 154,-876 -36,-1017 -68,-1041
+	RW2;RW2 -68,-1041 -90,-1056 -248,-1160 -556,-1402 -624,-1468
+	RW2;RW2 -624,-1468 -671,-1507 -713,-1542 -866,-1615 -1196,-1771 -1291,-1770 -1457,-1722 -1664,-1720 -1781,-1676 -1973,-1560 -2056,-1544 -2115,-1551 -2184,-1575 -2267,-1612 -2498,-1741
+#: note: nördlicher Radweg ist zusätzlich ein Zweirichtungsradweg
+	RW2;RW2 -2498,-1741 -2662,-1841 -2789,-1919 -2842,-1976 -2946,-2130 -2989,-2177 -3020,-2208
+	RW2;RW2 -3020,-2208 -3105,-2267 -3252,-2368 -3489,-2535 -3650,-2609
 Gehweg für Radfahrer frei	RW1; 4958,24418 5019,24484 5168,24614
 Gehweg für Radfahrer frei	RW1;RW1 5212,24652 5265,24642 5443,24589 5608,24610
 	RW3;RW3 -13199,1691 -13133,1698
@@ -891,7 +899,7 @@ asphaltierter straßenbegleitender Radweg	RW;RW 6336,-50572 6733,-50847 6956,-518
 # 
 #: by: Werner Braun: vvv
 #: confirmed_by: M.Mende
-	RW;RW -2760,-740 -3003,432
+	RW;RW -2760,-740 -2832,-386 -3003,432
 #: by: ^^^
 # 
 #: by: Torsten Fleischmann:
@@ -1049,3 +1057,7 @@ asphaltiert	RW8;RW2 -19314,61170 -19585,60140 -19695,59899 -20188,58747 -20271,5
 #: by ^^^
 gemeinsamer Rad- und Gehweg	RW2; -25411,76258 -25355,76171 -25099,75763
 gemeinsamer Rad- und Gehweg	RW2; -25099,75763 -25355,76171 -25411,76258 -25508,76444
+	RW1;RW1 -2747,-937 -2714,-999 -2694,-1100 -2683,-1160 -2671,-1216 -2669,-1306 -2654,-1359 -2648,-1388 -2640,-1416 -2627,-1439 -2621,-1451 -2613,-1473 -2587,-1546 -2519,-1612
+	RW2; -2519,-1612 -2498,-1741
+#: by: osm
+	RW;RW -556,-1402 -641,-1313 -665,-1265 -685,-1198 -684,-1150 -677,-1116 -650,-1077

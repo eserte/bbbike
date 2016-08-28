@@ -3354,7 +3354,7 @@ EOF
        text  => 'Stahnsdorf, Lindenstraße, Baustelle bis 30.04.2006, Der Verkehr wird an der Baustelle durch eine Lichtzeichenanlage halbseitig vorbeigeführt. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 -1661,-1714 -1715,-1767 -1921,-1931 -2049,-2165
+userdel	1 -1664,-1720 -1715,-1767 -1921,-1931 -2049,-2165
 EOF
      },
      { from  => $isodate2epoch->("2015-11-22 00:00:00"), # 1 Tag Vorlauf
@@ -19753,7 +19753,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_107049',
        data  => <<EOF,
-userdel	q4::inwork 16104,19165 16011,19158 15642,19179
+userdel	q4::inwork 16104,19165 16074,19162 16011,19158 15642,19179
 EOF
      },
      { from  => 1332272539, # 2012-03-20 20:42
@@ -22861,7 +22861,7 @@ EOF
        text  => 'Potsdamer Str. in Teltow: Baustelle, Einbahnstraße offen in Richtung Osten, voraussichtlich bis März 2015',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; 1329,-753 1235,-714 1212,-706 1067,-699 950,-680 791,-598 758,-582 723,-580 709,-582
+	q4::inwork; 1329,-753 1235,-714 1212,-706 1067,-699 948,-684 791,-598 757,-587 731,-585 685,-591
 EOF
      },
      { from  => 1400392980, # 2014-05-18 08:03
@@ -25344,11 +25344,12 @@ userdel	q3::inwork 7130,1253 7081,1346 6984,1540 6881,1743
 EOF
      },
      { from  => 1469311200, # 2016-07-24 00:00
-       until => $isodate2epoch->("2016-08-26 23:59:59"), # 1472680799, # 2016-08-31 23:59
-       text  => 'Elsenstr.: Baustelle zwischen Kressenweg und Hultschiner Damm, Fahrbahn gesperrt, bis Ende August 2016 ',
+       until => $isodate2epoch->("2016-09-09 23:59:59"), # 1472680799, # 2016-08-31 23:59
+       text  => 'Elsenstr.: Baustelle zwischen Kressenweg und Hultschiner Damm, Fahrbahn gesperrt, bis 09.09.2016',
        type  => 'gesperrt',
        source_id => '2147340370',
        data  => <<EOF,
+#: next_check_id: ELSENSTR-2016
 userdel	2::inwork 23792,10926 24203,10848 24229,10843
 EOF
      },
@@ -25428,6 +25429,15 @@ EOF
        data  => <<EOF,
 #: note: by fritz
 userdel	q4::inwork 6587,16199 6484,16085
+EOF
+     },
+     { from  => 1472356800, # 2016-08-28 06:00
+       until => 1472925600, # 2016-09-03 20:00
+       text  => 'Spreetunnel Friedrichshagen: vom 29. August 2016, 6 Uhr bis 3. September 2016, 20 Uhr, für Fußgänger und Radfahrer voll gesperrt',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.512129.php',
+       data  => <<EOF,
+userdel	2::inwork 25571,4553 25658,4619
 EOF
      },
     );

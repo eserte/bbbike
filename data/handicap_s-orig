@@ -15,9 +15,9 @@
 # 
 #: source_id: LMS-BR_r_LMS-BR_73434
 #: source_id: 2147340364
-#: last_checked: 2016-08-24
+#: last_checked: 2016-08-26
 #: next_check: 2016-08-31
-Straße der Pariser Kommune: Wasserrohrbruch, Fahrbahn gesperrt	q2::inwork 12497,11459 12551,11515 12645,11673
+Straße der Pariser Kommune: Wasserrohrbruch, Fahrbahn Richtung Stralauer Platz gesperrt	q3::inwork; 12645,11673 12551,11515
 # 
 # REMOVED --- #: source_id: 2147339819 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.415646.php --- #: XXX laut vmz bis Mitte Mai 2016, laut fritz bis 13.05.2016, tatsächlich aber noch länger gültig --- bis wann? --- #: last_checked: 2016-07-10 vvv --- #: valid: -20160813 vvv --- Wühlischstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14575,11407 14674,11370 14737,11347 14759,11339 14771,11345 --- #: valid ^^^ --- #: last_checked ^^^
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
@@ -91,7 +91,7 @@ Schützenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10116,11485 9949,11470
 # REMOVED (zwar noch Einbahnstraße, aber man kann mittlerweile relativ gut vorbei) --- #: XXX bis wann dauert die Sperrung an? Wird die Straße dann asphaltiert sein? (siehe auch Änderung in qualitaet_s-orig, "provisorischer Asphalt") --- #: last_checked: 2016-03-17 --- Leuschnerdamm: Sperrung der Fahrbahn Richtung Michaelkirchplatz	q4::inwork; 11458,11136 11473,11180
 # 
 #: XXX nach den Bauarbeiten bessere Qualität?
-#: last_checked: 2016-08-24
+#: last_checked: 2016-08-26
 Melchiorstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 11542,11342 11726,11265 11921,11185
 # 
 # REMOVED (nicht mehr gesperrt für Radfahrer) --- #: XXX nochmal genauer anschauen... --- #: last_checked: 2014-11-10 --- Gipsstr.: Bauarbeiten zwischen Rosenthaler Str. und Joachimstr., Einbahnstraße	q2::inwork; 10350,13376 10199,13446
@@ -227,7 +227,7 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # 
 #: XXX laut fritz bis 29.07.2016
 #: source_id: 2147339998
-#: last_checked: 2016-08-22
+#: last_checked: 2016-08-26
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10256,11160 10437,11352
 #: last_checked: 2016-08-22 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10624,11548 10640,11564
@@ -247,7 +247,7 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10437,11352 10489,11405
 #: next_check_id: ALEXANDRINENSTR-2016
 #: source_id: LMS-BR_r_LMS-BR_68468
 #: XXX Endedatum laut fritz
-#: last_checked: 2016-08-22
+#: last_checked: 2016-08-26
 #: next_check: 2016-09-16
 Stallschreiberstr., Alexandrinenstr.: Einbahnstraßenregelung	q4::inwork; 10794,10927 10824,11010 10678,11172 10593,11120 10501,11056
 # 
@@ -323,17 +323,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süde
 # 
 ### Lichtenberg ###
 # 
-#: next_check_id: HAUPTSTR-2015
-#: source_id: 2147339565
-#: source_id: LMS-BR_r_LMS-BR_65986
-#: source_id: 2147340080
-#: XXX laut vmz bis Ende August 2016, laut fritz bis 31.07.2016
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1604/nachricht5997.html
-#: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.470764.php
-#: last_checked: 2016-08-25
-#: next_check: 2016-08-29
-Kynaststr./Hauptstr.: Bauarbeiten, Gehweg benutzen	q3::inwork 14882,10732 14906,10820
-# 
+# REMOVED #: next_check_id: HAUPTSTR-2015 --- #: source_id: 2147339565 --- #: source_id: LMS-BR_r_LMS-BR_65986 --- #: source_id: 2147340080 --- #: XXX laut vmz bis Ende August 2016, laut fritz bis 31.07.2016 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1604/nachricht5997.html --- #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.470764.php --- #: last_checked: 2016-08-25 --- #: next_check: 2016-08-29 --- Kynaststr./Hauptstr.: Bauarbeiten, Gehweg benutzen	q3::inwork 14882,10732 14906,10820
 # REMOVED --- #: last_checked: 2015-12-02 --- #: check_frequency: 14d --- Wiesenweg: Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q3::inwork 15303,11412 15477,11338
 # REMOVED (laut osm beendet) --- #: osm_watch: way id="4782474" version="12" --- #: next_check_id: DEUTSCHMEISTER-2015 --- #: last_checked: 2015-09-23 --- Deutschmeisterstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 15370,12264 15443,12222
 # REMOVED --- #: next_check_id: SANDINO-2014 --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-09-27 --- #: check_frequency: 21d --- Sandinostr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 15799,14674 15706,14752
@@ -1337,8 +1327,8 @@ Kelchstr.: enge Straße	q1 7386,4692 7424,4821 7437,4855 7456,4934
 Doldenweg: Bordsteine, Fußgänger	q2 7424,4821 7487,4802
 Kottesteig: Bordsteine, Fußgänger	q1 6868,5262 6820,5237 6806,5230
 (Zu den Krugwiesen - Vincent-van-Gogh-Str.): Fußgänger	q1 18646,17345 18704,17565
-(Weg durch die Falkenberger Krugwiesen): Fußgänger	q1 18704,17565 18756,17498 18784,17525 18831,17663 18937,17738 18986,17786 19102,17879 19110,18015 19127,18091 19212,18205 19251,18252 19249,18351 19265,18400 19291,18456
-(Falkenberger Krugwiesen - Falkenberger Chaussee): Fußgänger	q1 19212,18205 18969,18448
+(Weg durch die Falkenberger Krugwiesen): Fußgänger	q1 18704,17565 18756,17498 18784,17525 18831,17663 18937,17738 18986,17786 19102,17879 19110,18015 19127,18091 19213,18195 19251,18248 19249,18351 19265,18400 19291,18456
+(Falkenberger Krugwiesen - Falkenberger Chaussee): Fußgänger	q1 19213,18195 18969,18448
 Stritteweg: vereinzelte Stufen und schmale Rampen	q3 -5236,11204 -5256,11142
 Künstlerweg: enge Straße	q1 -7418,7842 -7334,7703 -7258,7735 -7340,7873
 #: XXX_prog: Bordsteine (2x)

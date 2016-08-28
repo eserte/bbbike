@@ -3949,14 +3949,15 @@ userdel	q3::inwork 7130,1253 7081,1346 6984,1540 6881,1743
          'until' => 1472803200
        },
        {
-         'data' => 'userdel	2::inwork 23792,10926 24203,10848 24229,10843
+         'data' => '#: next_check_id: ELSENSTR-2016
+userdel	2::inwork 23792,10926 24203,10848 24229,10843
 ',
          'from' => 1469311200,
          'id' => 2811,
          'source_id' => '2147340370',
-         'text' => 'Elsenstr.: Baustelle zwischen Kressenweg und Hultschiner Damm, Fahrbahn gesperrt, bis Ende August 2016 ',
+         'text' => 'Elsenstr.: Baustelle zwischen Kressenweg und Hultschiner Damm, Fahrbahn gesperrt, bis 09.09.2016',
          'type' => 'gesperrt',
-         'until' => 1472248799
+         'until' => 1473458399
        },
        undef,
        undef,
@@ -4023,6 +4024,16 @@ userdel	q4::inwork 6587,16199 6484,16085
          'text' => 'Kameruner Str.: Fahrbahn zwischen Müllerstr. und Lüderitzstr. gesperrt, bis 08.12.2016',
          'type' => 'handicap',
          'until' => 1481238000
+       },
+       {
+         'data' => 'userdel	2::inwork 25571,4553 25658,4619
+',
+         'from' => 1472356800,
+         'id' => 2820,
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.512129.php',
+         'text' => 'Spreetunnel Friedrichshagen: vom 29. August 2016, 6 Uhr bis 3. September 2016, 20 Uhr, für Fußgänger und Radfahrer voll gesperrt',
+         'type' => 'gesperrt',
+         'until' => 1472925600
        }
      
 );

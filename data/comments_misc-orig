@@ -245,6 +245,8 @@ Kreisverkehr	Roundabout 34421,1950
 Kreisverkehr	Roundabout 39341,-1057
 #: note: mit benutzungspflichtigen Radwegen
 Kreisverkehr	Roundabout -3475,26523
+Kreisverkehr	Roundabout -3856,60
+Kreisverkehr	Roundabout -556,-1402
 #: XXX_prog ^^^
 #: ignore ^^^
 #
@@ -329,7 +331,7 @@ Bus 246	busroute_N 5314,7217 5310,7325 5318,7424 5352,7428
 Bus 166	busroute_N 15560,7400 15693,7512 15763,7569 15920,7697
 Bus 170, Bus 265	busroute_N 16428,7144 16507,7254
 # REMOVED (NH!) --- Bus 265	busroute_N 16507,7254 16406,7430 16136,7886 16003,8119 15869,8355 15714,8633 15591,8848
-Bus 170	busroute_N 16507,7254 16633,7434 16675,7486
+Bus 170	busroute_N 16507,7254 16633,7434 16673,7511
 Bus 166, ...	busroute_N 15303,8343 15242,8263 15256,8247 15284,8214 15357,8286
 Bus 171	busroute_N 13860,8599 13687,8734 13507,8872 13335,9019 13267,9077 13190,9139 13100,9210 13047,9251 12979,9304 12897,9365
 Bus 194	busroute_N 13614,9333 13489,9456 13348,9595 13190,9750 13127,9661 13058,9572 12987,9481 12897,9365
@@ -1108,7 +1110,7 @@ Im Brachfeldwinkel: ausgeschildert zum "Schwedenhaus"	CP2; 3068,21150 3024,21286
 # REMOVED (mittlerweile existiert ein Straßenschild) --- Altes Gaswerk Mariendorf: ausgeschildert "Marienpark" und "Kaiser's"	CP2; 8295,4303 8266,4221
 # REMOVED (mittlerweile existieren Staßenschilder) --- #: XXX sind die Straßen mittlerweile ausgeschildert? vvv --- Altes Gaswerk Mariendorf: ausgeschildert "Marienpark"	CP2; 8461,3410 8404,3648 --- Im Marienpark: nicht ausgeschildert	CP2; 8404,3648 8346,3633
 Str. 156: nicht ausgeschildert	CP2; 17532,15645 17570,15658
-#: last_checked: 2016-07-29
+#: last_checked: 2016-08-27
 #: check_frequency: 60d
 Wasserstr. und Uferstr.: noch nicht ausgeschildert	CS 17483,6024 17681,6212 17843,6083
 #: by: Max Mütze
@@ -1117,7 +1119,7 @@ Unterführung kann unter Wasser stehen	CS 13617,21819 13644,21808
 nicht ausgeschildert	CP2; 16104,19165 16158,19049
 nicht ausgeschildert	CP2; 16633,7434 16620,7574
 #: add_fragezeichen: Wann werden die Straßen im Olympiaviertel ausgeschildert? vvv
-#: last_checked: 2016-07-24 vvv
+#: last_checked: 2016-08-27 vvv
 Helga-Haase-Str.: nicht ausgeschildert	CS 17465,16340 17508,16356 17611,16396 17673,16420 17792,16465
 Jutta-Langenau-Str.: nicht ausgeschildert	CS 17615,16310 17643,16322 17818,16397 17857,16414 17877,16423
 Gerhard-Schulz-Str.: nicht ausgeschildert	CS 17508,16356 17497,16385 17552,16461

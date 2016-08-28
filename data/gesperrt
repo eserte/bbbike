@@ -893,6 +893,7 @@ Ernst-von-Bergmann-Klinikum	1 -12365,-752 -12360,-772 -12351,-828
 Ernst-von-Bergmann-Klinikum	1 -12351,-828 -12374,-849 -12402,-829 -12413,-789 -12418,-764
 Am Böttcherberg	1s -9565,62 -9541,97 -9539,147
 Ahornallee [Privatstraße] (Mahlsdorf)	1 24637,9828 24527,9850 24513,9796
+Zehlendorfer Str. (Teltow)	1 1329,-753 1388,-685
 Poststr. (Hennigsdorf)	1 -3495,25739 -3438,25572
 B1/B5	2 30678,10923 29752,10895 29194,10899 27817,10875
 Hanns-Eisler-Weg	1 68794,73965 68643,73843 68594,73737 68608,73622 68694,73474
@@ -903,7 +904,7 @@ Wachtelweg (Ahrensfelde)	1 22212,19404 22239,19349
 Max-Sabersky-Allee (Teltow)	1 2457,-100 2399,-13 2545,92 2704,198 2902,329
 Hauffstr. (Teltow)	1 2763,103 2704,198
 Fritz-Reuter-Str. (Teltow)	1 2545,92 2560,-25
-Hannemannstr. (Teltow)	1 2902,329 2968,235
+Hannemannstr. (Teltow)	1 2902,329 2958,229
 Umfahrung Dahlwitz	2 26596,10921 26900,10665 27209,10666 27499,10859
 Krumme Str.	1 25490,14601 25444,14665 25418,14835
 Margaretenstr.	1 25418,14835 25503,14842
@@ -1172,8 +1173,8 @@ Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3 12211,16688 12017,1673
 Mittelstreifen	3nocross::ignrte 16720,6845 16677,6892 16646,6925 16563,7012
 Köpenicker Landstr. -> Güldenhofer Ufer: Mittelstreifen	3::igndisp 16720,6845 16677,6892 16630,6800
 Güldenhofer Ufer -> Köpenicker Landstr.: Mittelstreifen	3::igndisp 16630,6800 16677,6892 16646,6925
-Mittelstreifen	3nocross::ignrte 17293,6230 17216,6308 16882,6657 16838,6708
-Rixdorfer Str. -> Schnellerstr.: Mittelstreifen	3::igndisp 17160,6239 17216,6308 16882,6657
+Mittelstreifen	3nocross::ignrte 17293,6230 17216,6308 16909,6628 16838,6708
+Rixdorfer Str. -> Schnellerstr.: Mittelstreifen	3::igndisp 17160,6239 17216,6308 16909,6628
 Schnellerstr. -> Rixdorfer Str.: Mittelstreifen	3::igndisp 17293,6230 17216,6308 17160,6239
 Straßenbahntrasse	3nocross::ignrte 23895,15450 23913,15333 23933,15209 23952,15086
 Stendaler Str. -> Jerichower Str.: Straßenbahntrasse	3::igndisp 23895,15450 23913,15333 23960,15340
@@ -2403,6 +2404,7 @@ tragen, langgezogene Stufen (13 Stufen)	0:25:-168 20704,1383
 tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
 tragen (6 Stufen)	0:15:-90 4608,63927
 Treppe	0:40:-131 1888,42795
+weites Drängelgitter	BNP:2:-251:trailer=7 16657,19705
 Drängelgitter (lichte Breite ca. 90cm)	BNP:4:-169:trailer=15 23550,13863
 Drängelgitter (lichte Breite ca. 90cm)	BNP:4:-171:trailer=15 23553,13885
 Drängelgitter	BNP:3:19:trailer=10 -9595,6363
@@ -2849,7 +2851,7 @@ Keibelstr.: Bauarbeiten, Fahrbahn wird neu gemacht, Durchfahrt nicht möglich	2::
 Lutterbacher Str.: noch Baustelle	2::inwork 2094,3231 1993,3170 2072,3034 2163,3092
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,9200 12548,9167
 Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7741,14560 7527,14684
-Clara-Immerwahr-Str.: Bauzäune	2::inwork 19202,17471 19546,17351 19798,17263 19845,17235 19914,17203
+Clara-Immerwahr-Str.: Bauzäune, Fußgänger können aber u.U. passieren	2::inwork 19202,17471 19546,17351 19798,17263 19845,17235 19914,17203
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
 SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2408,1144 2352,1267
 SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2336,1111 2408,1144 2504,1186
@@ -2877,7 +2879,6 @@ Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, gg
 Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3217,11570
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
-Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352
 Frauenauer Str.: Straße fertig, aber noch gesperrt	2::inwork 19663,9757 19858,9775
 Kirchdorfer Str.: Straße fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9775 19871,9680
 Viechtacher Str.: Straße fertig, aber noch gesperrt	2::inwork 19801,9680 19871,9680 19923,9682

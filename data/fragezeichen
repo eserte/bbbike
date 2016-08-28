@@ -151,7 +151,7 @@ Eberswalde - Spechthausen: Qualität?	? 35428,47961 35306,47832 35244,47675 35241
 Eberswalde - Spechthausen: Qualität? Straßennamen?	? 35339,46996 35149,46710 35168,46488 35218,46368 35149,46126 35069,45501
 Schönfeld - Neuenfeld: im Ort Schönfeld noch Betonplatten mit Spur (Q1), danach den Anschein nach Asphalt (Q0)	? 48065,112982 49449,113574 49802,113824
 Klockow - Neuenfeld: Qualität?	? 49573,112426 49739,112949 49802,113824
-Bäkepromenade (Stahnsdorf): Qualität? Existiert eine Verbindung?	? -2618,-1473 -2800,-1484 -2794,-1628
+Bäkepromenade (Stahnsdorf): Qualität? Existiert eine Verbindung?	? -2613,-1473 -2800,-1484 -2794,-1628
 Falkenthal - Bergsdorf: Kopfsteinpflaster, mindestens von Falkenthal her	? 2034,55227 -285,58256
 Zichow-Lindenwegsiedlung: Qualität?	? 54500,87934 52642,87955
 Eisenbahnbrücke über der Elbe: laut <cp6net$f0g$1@zeppelin.rz.uni-potsdam.de> ist die Eisenbahnbrücke für Fußgänger begehbar, laut <cn2fr0taoncnlu6s84inbhgpo8lq0u0bh2@4ax.com> sogar offizieller Bestandteil des Elbe-Radwegs	? -92087,-49506 -91387,-49350
@@ -948,9 +948,10 @@ Route Lychen - Templin: Qualität?	? 3153,88773 3614,88158 3855,88004 3976,87729 
 Route Lychen - Templin: Qualität?	? 8746,84188 9057,84387 9552,84861 9796,84919 9902,85079 10400,85239 10871,85426 11049,85281 11360,85254
 Route Lychen - Templin: Qualität?	? 11457,84997 10910,82175 10950,82078 11321,82045 11565,81930 11976,81523 12233,80877 12435,80783 13005,80698 14950,79874 15176,79845
 Am Graben (Waldblick): Qualität?	? 9402,-3817 9354,-3949
-Hauffstr. (Teltow): Qualität des südlichen Abschnitts? Auch asphaltiert?	? 2809,28 2873,-60 2951,-185 3030,-312 3101,-427
-Maxim-Gorki-Str. (Teltow): Qualität des südlichen Abschnitts? Auch asphaltiert?	? 3235,310 3325,179 3404,64 3485,-56 3578,-193 3627,-270
-Gerhart-Hauptmann-Str. (Teltow): Qualität des südlichen Abschnitts? Auch asphaltiert?	? 3304,356 3320,335 3409,208 3490,102 3561,-5 3658,-145 3726,-242
+Hauffstr. (Teltow): Qualität des mittleren Abschnitts? Asphaltiert oder Kopfsteinpflaster?	? 2809,28 2870,-66
+Hauffstr. (Teltow): Qualität des südlichen Abschnitts? Unbefestigt?	? 3030,-312 3101,-427
+Maxim-Gorki-Str. (Teltow): Qualität des südlichen Abschnitts? Auch asphaltiert?	? 3225,304 3314,179 3392,63 3485,-56 3578,-193 3627,-270
+Gerhart-Hauptmann-Str. (Teltow): Qualität des südlichen Abschnitts? Auch asphaltiert?	? 3485,102 3561,-5 3658,-145 3726,-242
 Neue Straße (Mahlow): Qualität?	? 12387,-4943 12241,-5186
 Poststr. (Mahlow): Qualität?	? 11082,-5172 11189,-5157 11281,-5178 11390,-5228
 Ernst-Thälmann-Str. (Mahlow): Qualität?	? 11390,-5228 11439,-5233 11639,-5201 11747,-5140 11772,-5124 11789,-5111 11919,-5061 12085,-5114
@@ -959,8 +960,10 @@ Ibsenstr. (Mahlow): Qualität? Existiert ein Radweg?	? 12340,-4833 12307,-4851 12
 Ehrenpfortensteig, Verlängerung: Qualität? Existiert eine Ausschilderung?	? 2203,22749 2088,22798 1897,22781 1760,22839 1661,22851 1563,22850 1518,22874 1460,22874
 Am Buchenberg - Schulzendorfer Str.: Qualität? Existiert eine Ausschilderung?	? 2827,23132 2773,23164 2458,23272 1794,23255 1479,23355 1050,23447 894,23477 737,23442
 Am Buchenberg - Schulzendorfer Str.: Qualität? Existiert eine Ausschilderung?	? 554,23349 224,23440 -38,23355 -190,23187 -404,23107 -417,23034 -573,23032 -656,23011
-Stolper Weg (Kienwerder): Qualität des südöstlichen Teils?	? -4765,-3352 -4462,-3588 -4439,-3613 -4394,-3652 -4382,-3683 -4364,-3719
-Am Kienwerder (Kienwerder): Qualität?	? -4765,-3352 -4694,-3304 -4341,-3227 -4208,-3215 -4027,-3236 -3761,-3313
+Am Kienwerder (Kienwerder): Qualität? Hier auch Betonplatten?	? -4539,-3269 -4437,-3247 -4341,-3227 -4208,-3215 -4027,-3236 -3761,-3313
+Am Birkenhügel (Kienwerder): Qualität?	? -4261,-3576 -4308,-3384 -4341,-3227
+Reiherweg (Kienwerder): Qualität?	? -4498,-3428 -4400,-3403 -4308,-3384
+Alte Feldmark (Kienwerder): Qualität? Im nördlichen Abschnitt auch unbefestigt?	? -4373,-3504 -4400,-3403 -4437,-3247
 Hochstr. (Schwanebeck): Qualität?	? 18942,26470 19340,26610
 Hochstr. (Schwanebeck): Qualität?	? 19715,26770 19948,26760 20051,26756 20225,26711
 Kiesstr. (Schwanebeck): Qualität?	? 20192,26621 20225,26711 20304,26861
@@ -980,16 +983,14 @@ Klandorf: Qualität im östlichen Abschnitt?	? 19854,52797 19870,52656 20344,52595
 Waldheimstr. (Basdorf): Qualität im östlichen Abschnitt? Auch asphaltiert?	? 12676,34638 12979,34718 13468,34885 13568,34935
 Herrenhof: Qualität?	? 59259,80538 59325,80664 59305,80701 59481,80950
 Jamikow - Woltersdorf: Qualität?	? 61398,85335 61465,85414 61678,85560 62757,86072 63202,86383 63391,86474 63574,86547 63805,86748 64018,86876
-Potsdamer Str. (Teltow): werden nach den Bauarbeiten hier Radwege/-spuren existieren?	?::inwork 1235,-714 1212,-706 1067,-699 950,-680 791,-598 758,-582 723,-580 709,-582
 Neue Straße (Teltow): Fahrbahnbeschaffenheit?	? 978,-521 1101,-553
 Badstr. (Teltow): Fahrbahnbeschaffenheit?	? 1106,-491 1134,-370
 Mauerweg in Teltow: Wegbeschaffenheit?	? 1473,-420 1219,-376 1144,-351 1134,-370
 Ruhlsdorfer Platz (Teltow): Fahrbahnbeschaffenheit? verkehrsberuhigt?	? 1492,-697 1495,-747
-Weinbergweg (Teltow): Fahrbahnbeschaffenheit?	? 723,-580 720,-713 682,-792
+Weinbergweg (Teltow): Fahrbahnbeschaffenheit?	? 731,-585 720,-713 682,-792
 Weserstr. (Teltow): Fahrbahnbeschaffenheit?	? 347,-784 458,-885 528,-917 597,-948
 Katzbachstr. (Teltow): Fahrbahnbeschaffenheit des nördlichen Abschnitts?	? 295,-628 285,-608 240,-519
 Havelstr. (Teltow): Fahrbahnbeschaffenheit?	? 245,-1001 288,-1040 353,-1105 403,-1166 501,-1262 544,-1320
-Saganer Str. (Teltow): Fahrbahnbeschaffenheit? existieren hier Radwege?	? -556,-1402 -641,-1313 -665,-1265 -685,-1198 -684,-1150 -677,-1116 -650,-1077
 Kleiststr. (Stahnsdorf): Fahrbahnbeschaffenheit im südlichen Abschnitt?	? -569,-1670 -497,-1802
 Schwarzer Weg (Kleinmachnow): Fahrbahnbeschaffenheit?	? -866,-1615 -872,-1602 -1036,-1315
 Bahnhofstr. (Stahnsdorf): Qualität des östlichen Endes?	? -2878,-3004 -2817,-2967 -2720,-2937 -2657,-2907
@@ -1077,6 +1078,20 @@ Banzendorf - Hindenberg: Qualität?	? -18287,67361 -18101,67745 -18267,68226 -182
 Golzow - Senftenhütte: Qualität der Straße?	? 36621,56807 37029,56698 37471,56609 37735,56749 38224,57167
 Golzow - Senftenhütte: Qualität der Straße?	? 38597,57514 38956,57644 39237,58124 39783,58604 39940,58908 40109,58965 40362,59162
 Götelstr. - Tharsanderweg: ist der Weg nachts beleuchtet?	? -3416,12165 -3524,11980
+Heidestr. (Stahnsdorf): Qualität?	? -3908,-2723 -3687,-3099 -3612,-3219 -3576,-3283
+Waldstr. (Stahnsdorf): Qualität?	? -3687,-3099 -3748,-3262
+Am Wiesengrund (Kienwerder): Qualität?	? -3748,-3262 -3761,-3313 -3778,-3376 -3835,-3613 -3867,-3713 -3915,-3906 -3911,-4055
+Steinweg (Kleinmachnow): Qualität?	? -2197,-227 -2263,-179 -2387,548 -2406,665
+Heidefeld (Kleinmachnow): Qualität? hier auch Asphalt?	? -3188,-885 -3181,-841 -3189,-778 -3193,-732 -3193,-709 -3127,-641
+Heidefeld (Kleinmachnow): Qualität? hier auch Asphalt?	? -3040,-554 -2975,-494 -2911,-442 -2832,-386 -2715,-314 -2623,-270 -2531,-233 -2432,-211 -2383,-199 -2263,-179
+Schleusenweg (Stahnsdorf): Radweg Richtung Norden?	?; -2498,-1741 -2519,-1612
+Tannenweg: Qualität im nördlichen Abschnitt? hier auch Asphalt?	? -3130,-2017 -3257,-1772 -3273,-1665
+Heinersdorfer Weg (Teltow): Qualität?	? 1852,-770 1889,-765 2040,-798 2160,-805 2440,-820 2578,-871 2637,-933 2807,-987
+Blumenstr. (Teltow): Qualität?	? 2687,-1506 2775,-1347 2924,-1081 2940,-1031
+An den Koppeln (Teltow): Qualität?	? 2807,-987 2855,-1022 2940,-1031 3004,-1036 3118,-1063
+Osdorfer Str. (Teltow): Qualität im östlichen Abschnitt?	? 2847,-431 2944,-467 3101,-427 3186,-400 3340,-357 3401,-368 3843,-401
+Klaus-Groth-Str. (Teltow): Qualität des Fußwegs?	? 2635,-282 2606,-243
+Klaus-Groth-Str. (Teltow): Qualität im nördlichen Abschnitt?	? 2606,-243 2594,-187
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
@@ -1096,9 +1111,9 @@ Glasmeisterstr. (ist der westliche Abschnitt der Glasmeisterstr. für Autos gespe
 Baumschulenweg (Qualität?)	? -17444,-628 -17477,-411 -17444,-312 -17409,-209 -17391,-156 -17372,-96
 (Telegrafenberg) (Qualität der Wege auf dem Telegrafenberg?)	? -12222,-2932 -12306,-2979 -12288,-3075 -12282,-3226 -12346,-3232 -12391,-3296
 Walter-Klausch-Str. (Ist der Mittelteil parallel zur Nuthestr. für Autos gesperrt?)	? -10133,-2903 -10046,-2974 -9963,-2980
-Stolper Weg (Qualität?)	? -2743,-934 -2781,-946 -3540,-834 -3993,-700 -4162,-596
+Stolper Weg (Qualität? Radwege?)	? -2747,-937 -2781,-946 -3188,-885 -3540,-834 -3993,-700 -4162,-596
 Stolper Weg (Qualität?)	? -4162,-596 -4229,-463 -4317,-521 -4331,-631 -4350,-665 -4594,-709 -4709,-728
-Landstr. (Ist die Landstraße eine Einbahnstraße? Nur für Autos, oder auch für Radfahrer?)	? 950,-680 965,-585
+Landstr. (Ist die Landstraße eine Einbahnstraße? Nur für Autos, oder auch für Radfahrer?)	? 948,-684 965,-585
 Karl-Marx-Str. (Qualität?)	? 950,29767 1078,29668 1141,29607 1272,29447 1366,29416
 Kantstr. (Qualität/Fahrbahnbeschaffenheit der Straße?)	? 32451,6132 32630,6179
 Im Winkel (Qualität/Fahrbahnbeschaffenheit?)	? 17853,21837 17891,21744
@@ -1210,7 +1225,7 @@ Käthe-Kollwitz-Str.: Kopfsteinpflaster (liegt auch im östlichen Teil Kopfsteinpf
 Friedenstr.: Kopfsteinpflaster (liegt hier Kopfsteinpflaster? Wie ist die Qualität des Kopfsteinpflasters?)	? 26556,-3781 26860,-3805 26977,-3814
 (Qualität des Wegs (wahrscheinlich ein unbefestigter Feldweg)?)	? 18962,-5709 19915,-6315
 (ist der komplette Weg ein Schotterweg? Oder teilweise nur ein unbefestigter Feldweg?)	? 17162,-6465 17910,-6981
-(ist der südliche Abschnitt der Fritz-Reuter-Str. ebenfalls gepflastert?)	? 2611,-100 2669,-187 2757,-311 2847,-431
+(ist der mittlere Abschnitt der Fritz-Reuter-Str. ebenfalls gepflastert?)	? 2607,-105 2667,-199
 Ernst-Toller-Str.: unbefestigte Straße (ist der nordwestliche Abschnitt tatsächlich unbefestigt?)	? 17581,24815 17638,24756
 Fritz-Reuter-Str.: unbefestigte Straße (ist der südwestliche Abschnitt tatsächlich unbefestigt?)	? 17900,24483 17990,24572 18057,24641 18124,24709
 Humboldtstr.: unbefestigte Straße (ist der nordwestliche Abschnitt tatsächlich unbefestigt?)	? 17699,24874 17728,24824
@@ -1252,7 +1267,7 @@ B404 (was ist hier oben?)	? -197853,130794 -197527,130848
 Schulstr. (Tegel) (Ist die Einbahnstraße mittlerweile für Radfahrer gegen die Fahrtrichtung frei?)	? 1953,20149 1794,20110
 Poller (wo genau ist der Poller: an der KGA oder an der Umgehungsbahn?)	? -1889,37093
 # added from comments_cyclepath
-enger Zweirichtungsradweg, asphaltiert, einige Schäden (Ist die Qualität des Radwegs zwischen Güterfelder Eck und Kienwerder besser geworden?)	? -5662,-3583 -5463,-3467 -5156,-3192 -4963,-3121 -4885,-3087
+enger Zweirichtungsradweg, asphaltiert, einige Schäden (Ist die Qualität des Radwegs zwischen Güterfelder Eck und Kienwerder besser geworden? Befindet sich der Radweg mittlerweile auf der südlichen Seite?)	? -5662,-3583 -5463,-3467 -5156,-3192 -4963,-3121
 (ist hier auch ein asphaltierter Zweirichtungsradweg?)	? 34403,3857 34486,4276 34549,4551
 (wie ist die Qualität des Radwegs?)	? -7533,24138 -7599,23946 -7734,23796 -8777,22961 -8988,22668 -9046,22376
 (andere Straßenseite auch?)	? 37093,-151665 37375,-151190
