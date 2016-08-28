@@ -108,15 +108,12 @@ EOF
 }
 
 sub teaser_kreisfahrt_adfc {
-    my $year = (localtime)[5]+1900;
-    my @l = localtime; $l[4]++;$l[5]+=1900;
-    my $today = sprintf "%04d%02d%02d", $l[5], $l[4], $l[3];
-    my $out_of_date = $today lt "20150905" || $today gt "20150919";
+    my $out_of_date = $today lt "20160903" || $today gt "20160917";
     if (!$out_of_date) {
-	my $adfc_url    = "http://adfc-berlin.de/aktiv-werden/bei-demonstrationen/kreisfahrt/263-adfc-kreisfahrt-2015.html";
+	my $adfc_url    = "http://adfc-berlin.de/aktiv-werden/bei-demonstrationen/kreisfahrt/376-adfc-kreisfahrt-2016.html";
 	my $kreisfahrt_img = "/BBBike/misc/kreisfahrt_anyyear/kreisfahrt_anyyear.png";
 	<<EOF
-<div class="teaser"><a style="text-decoration:none;" href="$adfc_url"><img src="$kreisfahrt_img" alt="ADFC-Kreisfahrt ${year}" border="0"" /></a> am 19. September $year</div>
+<div class="teaser"><a style="text-decoration:none;" href="$adfc_url"><img src="$kreisfahrt_img" alt="ADFC-Kreisfahrt ${year}" border="0"" /></a> am 17. September $year</div>
 EOF
     } else {
 	();
