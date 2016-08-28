@@ -11,6 +11,9 @@
 # WWW:  http://bbbike.de
 #
 
+use strict;
+use vars qw($lang $bbbike_url $bbbike_images $bbbike_script $bbbike_html $can_mapserver $mapserver_init_url $is_beta);
+
 sub _teaser_beta_html (;$);
 sub _teaser_new_html (;$);
 sub _teaser_is_current ($);
@@ -195,6 +198,7 @@ EOF
 sub teaser_none { "" }
 
 sub teaser_collecting_tracks {
+    $BBBike::EMAIL = $BBBike::EMAIL if 0; # cease -w
     <<EOF;
 <div class="teaser">Ich sammele GPS-Tracks von Berlin und Brandenburg. Bitte per Mail an <a target="_top" href="mailto:@{[ CGI::escapeHTML($BBBike::EMAIL) ]}?subject=BBBike-GPS">Slaven Rezic</a> schicken.</div>
 EOF
