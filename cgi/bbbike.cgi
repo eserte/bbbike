@@ -714,7 +714,7 @@ unshift(@Strassen::datadirs,
 	"$FindBin::RealBin/../BBBike/data",
        );
 
-use vars qw($lang $config_master $msg);
+use vars qw($lang $config_master $msg $fake_time);
 
 # These must not be permanent:
 undef $msg;
@@ -1028,6 +1028,8 @@ if ($q->param('_hack_scalefactor')) {
 } else {
     undef $hack_scalefactor;
 }
+
+$fake_time = $q->param('fake_time');
 
 foreach my $type (qw(start via ziel)) {
     if (defined $q->param($type . "charimg.x") and
@@ -3731,7 +3733,6 @@ sub search_coord {
     }
 
     my $is_test_mode = (defined $q->param("test") && grep { /^(?:custom|temp)[-_]blocking/ } BBBikeCGI::Util::my_multi_param($q, 'test'));
-    my $fake_time    = $q->param('fake_time');
     load_temp_blockings(-test => $is_test_mode || $fake_time);
 
     my(%custom_s, @current_temp_blocking);
