@@ -40,7 +40,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2016-08-26
+#: last_checked: 2016-08-29
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -1452,10 +1452,7 @@ Planstraße A: Straßenname? Qualität? Wird es eine Verbindung (für Fußgänger/Radf
 # 
 Kommandantenstr. - Oranienstr.: Verbindung prüfen	? 10593,11120 10633,11051 10644,11019 10633,11000 10684,10975
 # 
-#: XXX NEW	Alexandrinenstraße (Kreuzberg) in beiden Richtungen zwischen Stallschreiberstraße und Oranienstraße (Berlin)  Gültig ab: 25.08.2016 13:59  Vollsperrung, Tiefbauarbeiten (bis Ende 09/16)	LMS-BR_r_LMS-BR_68468	INUSE
-#: last_checked: 2016-08-26
-#: check_frequency: 7d
-Alexandrinenstr.: Vollsperrung prüfen	?::inwork 10501,11056 10593,11120 10678,11172
+# REMOVED --- #: XXX NEW	Alexandrinenstraße (Kreuzberg) in beiden Richtungen zwischen Stallschreiberstraße und Oranienstraße (Berlin)  Gültig ab: 25.08.2016 13:59  Vollsperrung, Tiefbauarbeiten (bis Ende 09/16)	LMS-BR_r_LMS-BR_68468	INUSE --- #: last_checked: 2016-08-26 --- #: check_frequency: 7d --- Alexandrinenstr.: Vollsperrung prüfen	?::inwork 10501,11056 10593,11120 10678,11172
 # 
 #: last_checked: 2016-08-20
 #: check_frequency: 60d
@@ -1467,7 +1464,8 @@ Nürnberger Str.: gibt es hier schon Radspuren?	? 5866,10492 5866,10492 6025,1074
 # 
 # REMOVED (für Radfahrer problemlos passierbar) --- #: XXX Am Treptower Park (Treptow) stadtauswärts zwischen Puschkinallee und Elsenstraße (Berlin)  Gültig ab: 19.08.2016 09:59  Fahrtrichtung gesperrt, Baustelle (bis Anfang 09/16)	2147340463 --- Am Treptower Park: Baustelle auch für Radfahrer relevant?	? 13795,9941 13865,9866 14089,9610
 # 
-#: XXX Akazienstraße (Schöneberg) in beiden Richtungen zwischen Belziger Straße und Vorbergstraße (Berlin)  Gültig ab: 18.08.2016 12:54  Vollsperrung, Havarie	LMS-BR_r_LMS-BR_76371
+#: XXX Akazienstraße (Schöneberg) in beiden Richtungen zwischen Belziger Straße und Vorbergstraße (Berlin)  Gültig ab: 18.08.2016 12:54  Vollsperrung, Havarie, bis Ende September 2016	LMS-BR_r_LMS-BR_76371
+#: source_id: 2147340485
 Akazienstr.: Baustelle auch für Radfahrer relevant?	? 7022,9211 7044,9163 7107,9030
 # 
 # REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/35re.pdf/file?y=2016 --- #: priority: #C --- Schwarzschildstr.: Verlängerung; verkehrsberuhigter Bereich?	? 18759,2592 18766,2525

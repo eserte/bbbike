@@ -3588,14 +3588,17 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
        {
          'data' => '#: next_check_id: KARLSHORSTER-2016
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.511369.php
-#: XXX ist vielleicht nur der südliche Abschnitt betroffen? Und außerdem: Einbahnstraßenregelung in der Hirschberger Str. auch für Radfahrer?
-#: last_checked: 2016-08-25
-#: next_check: 2016-08-29
-userdel	2::inwork 15261,10738 15272,10790 15279,10862
+#: source_id: 2147340474
+#: XXX periodisch prüfen
+#: last_checked: 2016-08-29
+#: check_frequency: 14d
+	2::inwork 15261,10738 15272,10790
+	q4; 15279,10862 15272,10790 15388,10758 15433,10765
+	q4; 15205,11080 15102,11120 15021,11152 14988,11130
 ',
          'from' => 1472335200,
          'id' => 2717,
-         'text' => 'Karlshorster Str.: Fahrbahn komplett gesperrt, während der Arbeitszeiten auch für Fußgänger und Radfahrer, 29.08.2016 bis 31.10.2016',
+         'text' => 'Karlshorster Str.: zwischen Haupstr. und Nöldnerstr. Fahrbahn komplett gesperrt, während der Arbeitszeiten auch für Fußgänger und Radfahrer, Einbahnstraßenregelung in der Nöldnerstr. und Hirschberger Str., 29.08.2016 bis 31.10.2016',
          'type' => 'gesperrt',
          'until' => 1477954799
        },
@@ -3890,9 +3893,10 @@ userdel	2::inwork 16532,26174 16222,25829
          'until' => 1475359199
        },
        {
-         'data' => '#: XXX gibt es schon die ersten Sperrungen im Park? vvv
+         'data' => '#: XXX gibt es schon die ersten Sperrungen im Park? die Sperrungen werden vermutlich umfangreicher sein! vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.511653.php
-#: next_check: 2016-08-27 vvv
+#: last_checked: 2016-08-29 vvv
+#: check_frequency: 4d vvv
 #: by: http://lolp2.de.c3cdn.com/wp/wp-content/uploads/2016/02/Lollapalooza2016_Treptower-Park_Festivalmap_2000x1414_RZ.png
 userdel	2::temp 15383,9191 14879,9433 14809,9466
 userdel	2::temp 14909,9649 14867,9573 14837,9517 14809,9466
@@ -3903,7 +3907,8 @@ userdel	2::temp 15133,9396 15184,9373 15268,9374
 userdel	2::temp 14316,9542 14384,9565
 userdel	2::temp 14809,9466 14556,9581
 userdel	2::temp 14588,9473 14635,9441
-#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 #: XXX ^^^
 ',
          'from' => 1473372000,
@@ -3915,6 +3920,7 @@ userdel	2::temp 14588,9473 14635,9441
        undef,
        {
          'data' => '#: source_id: 2147340278
+#: source_id: 2147340486
 userdel	q4::inwork 19676,1577 19704,1621 19766,1796
 ',
          'from' => 1468101600,
@@ -4034,6 +4040,16 @@ userdel	q4::inwork 6587,16199 6484,16085
          'text' => 'Spreetunnel Friedrichshagen: vom 29. August 2016, 6 Uhr bis 3. September 2016, 20 Uhr, für Fußgänger und Radfahrer voll gesperrt',
          'type' => 'gesperrt',
          'until' => 1472925600
+       },
+       {
+         'data' => 'userdel	2::inwork 21867,8752 21680,8400
+',
+         'from' => 1472495093,
+         'id' => 2821,
+         'source_id' => '2147340477',
+         'text' => 'Kaulsdorfer Straße: zwischen Falkstätter Straße und Deutschhofer Allee Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 2. September 2016',
+         'type' => 'gesperrt',
+         'until' => 1472853599
        }
      
 );
