@@ -1025,11 +1025,11 @@ userdel	q4 49039,44131 48924,44216 48724,44248 48523,44467
 userdel	q4 49039,44131 49691,43812
 EOF
      },
-     { from  => $isodate2epoch->("2015-09-29 06:00:00"), # 1 Tag Vorlauf # 1096578452, # 2004-09-30 23:07
-       until => $isodate2epoch->("2015-10-06 23:59:59"), # 1096862400, # 2004-10-04 06:00
+     { from  => $isodate2epoch->("2016-09-29 06:00:00"), # 1 Tag Vorlauf # 1096578452, # 2004-09-30 23:07
+       until => $isodate2epoch->("2016-10-06 23:59:59"), # 1096862400, # 2004-10-04 06:00
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 9]],
-       text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen vollständig gesperrt (bis 06.10.2015)',
+       text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt (bis 06.10.2016)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 8055,12186 8089,12190 8214,12205
@@ -25279,18 +25279,18 @@ EOF
        data  => <<EOF,
 #: XXX gibt es schon die ersten Sperrungen im Park? die Sperrungen werden vermutlich umfangreicher sein! vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.511653.php
-#: last_checked: 2016-08-29 vvv
+#: last_checked: 2016-08-30 vvv
 #: check_frequency: 4d vvv
 #: by: http://lolp2.de.c3cdn.com/wp/wp-content/uploads/2016/02/Lollapalooza2016_Treptower-Park_Festivalmap_2000x1414_RZ.png
-userdel	2::temp 15383,9191 14879,9433 14809,9466
-userdel	2::temp 14909,9649 14867,9573 14837,9517 14809,9466
-userdel	2::temp 14577,9641 14627,9609 14695,9587 14792,9599 14867,9573 14918,9545 15025,9461 15133,9396 15184,9373 15268,9374
-userdel	2::temp 14695,9587 14705,9578 14791,9537
-userdel	2::temp 14879,9433 14898,9364 14955,9294
-userdel	2::temp 15133,9396 15184,9373 15268,9374
-userdel	2::temp 14316,9542 14384,9565
-userdel	2::temp 14809,9466 14556,9581
-userdel	2::temp 14588,9473 14635,9441
+	2::temp 15383,9191 14879,9433 14809,9466
+	2::temp 14909,9649 14867,9573 14837,9517 14809,9466
+	2::temp 14361,9772 14443,9731 14495,9710 14577,9641 14627,9609 14695,9587 14792,9599 14867,9573 14918,9545 15025,9461 15133,9396 15184,9373 15268,9374
+	2::temp 14695,9587 14705,9578 14791,9537
+	2::temp 14879,9433 14898,9364 14955,9294
+	2::temp 14316,9542 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441
+	2::temp 14809,9466 14556,9581
+	2::temp 14588,9473 14556,9581
+	2::temp 14318,9688 14371,9726 14443,9731
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -25419,7 +25419,7 @@ userdel	q4::inwork; 12564,16399 12399,16479
 EOF
      },
      { from  => 1471816800, # 2016-08-22 00:00
-       until => $isodate2epoch->("2016-09-02 18:00:00"), # 1473199199, # 2016-09-06 23:59
+       until => 1472583170, # $isodate2epoch->("2016-09-02 18:00:00"), # 1473199199, # 2016-09-06 23:59
        text  => 'Verlängerte Waldowallee: Sperrung zwischen Kiefernallee und Rudolf-Rühl-Allee, vom 23. August 2016 bis 02. September 2016',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -25453,6 +25453,15 @@ EOF
        source_id => '2147340477',
        data  => <<EOF,
 userdel	2::inwork 21867,8752 21680,8400
+EOF
+     },
+     { from  => 1472799600, # 2016-09-02 09:00
+       until => 1472939999, # 2016-09-03 23:59
+       text  => 'Mierendorffplatz: Insel-Kiezfest, Straße zwischen Osnabrücker Str. und Mindener Str. gesperrt, am 03.09.2016',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.512648.php',
+       data  => <<EOF,
+userdel	q4::temp 3556,13200 3534,13098 3523,13076
 EOF
      },
     );

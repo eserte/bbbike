@@ -1360,14 +1360,8 @@ Hünensteig	1s:q4 6419,5048 6387,5057
 Hünensteig	1s:q3 6387,5057 6395,5154
 #: note: Radfahren auf dem Uferweg ist wohl Sitte
 Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen	1s:q2 12116,9825 11946,9913 11735,10022 11512,10105
-# REMOVED (wahrscheinlich alles nur ein Versehen) --- #: XXX Wie ist der Status der Einbahnstraße? Zurzeit ist das Einbahnstraßenschild überklebt, aber das Einfahrt-verboten-Schild nicht --- #: last_checked: 2014-12-04
-#: next_check_id: ALEXANDRINENSTR-2016
-#: XXX Einbahnstraßenrichtung umgedreht, vermutlich wegen der Einbahnstraße in der Alexandrinenstr.?
-#: XXX alter Eintrag: Stallschreiberstr.	1s:q1 10489,11405 10620,11244 10678,11172
-#: last_checked: 2016-07-25
-#: next_check: 2016-09-16
-#: priority: #A
-Stallschreiberstr.	1s:q2 10678,11172 10620,11244 10489,11405
+# XXX next_check_id: ALEXANDRINENSTR-2016
+# XXX alter Eintrag: Stallschreiberstr.	1s:q1 10489,11405 10620,11244 10678,11172
 Jahnstr.	1s:q3 11500,9116 11509,9392
 Waldweg	1s 25496,2429 24981,2580
 #: note: auf dem Gehweg stehen regelmäßig (Wach-)Polizisten 
@@ -2729,7 +2723,7 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: last_checked: 2016-08-25
+#: last_checked: 2016-08-30
 Weichselplatz: Uferweg wegen Bauarbeiten gesperrt	2::inwork 12851,9309 12907,9073
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2016
@@ -2776,12 +2770,7 @@ Sonntagstr./Ostkreuz: wegen Bauarbeiten gesperrt	2::inwork 14752,11041 14810,109
 Haasestr.: Bauarbeiten, keine Durchfahrt möglich	2::inwork 14328,11320 14286,11186
 # 
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 vvv --- #: last_checked: 2016-06-02 vvv --- #: check_frequency: 14d vvv --- Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12844,9351 12851,9309 12907,9073 --- Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12907,9073 12851,9309 12844,9351
-# 
-#: XXX wobei, der Gehweg ist mittlerweile schon passierbar
-#: last_checked: 2016-08-22
-#: check_frequency: 14d
-Keibelstr.: Bauarbeiten, Fahrbahn wird neu gemacht, Durchfahrt nicht möglich	2::inwork 11108,13142 11201,13289
-# 
+# REMOVED --- #: XXX wobei, der Gehweg ist mittlerweile schon passierbar --- #: last_checked: 2016-08-22 --- #: check_frequency: 14d --- Keibelstr.: Bauarbeiten, Fahrbahn wird neu gemacht, Durchfahrt nicht möglich	2::inwork 11108,13142 11201,13289
 # REMOVED (sah fertig aus, glaube ich) --- #: last_checked: 2016-08-02 --- #: check_frequency: 14d --- Wadzeckstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 11291,13218 11201,13289
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2015
@@ -2820,7 +2809,7 @@ Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7741,14560 7527,14
 #: osm_watch: way id="311371554" version="4"
 Clara-Immerwahr-Str.: Bauzäune, Fußgänger können aber u.U. passieren	2::inwork 19202,17471 19546,17351 19798,17263 19845,17235 19914,17203
 # 
-#: last_checked: 2016-07-27
+#: last_checked: 2016-08-30
 #: osm_watch: way id="57852078" version="4"
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
 # 
@@ -3028,7 +3017,7 @@ Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Du
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
 #: osm_watch: way id="305153174" version="1"
-#: last_checked: 2016-07-27 vvv
+#: last_checked: 2016-08-30 vvv
 #: check_frequency: 90d vvv
 Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9996,12401 9994,12368 9943,12364
 Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10008,12274 9994,12368
@@ -3157,7 +3146,7 @@ Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9808,
 #: next_check_id: ^^^
 # 
 #: XXX Eröffnung 2019 geplant
-#: last_checked: 2016-05-23
+#: last_checked: 2016-08-30
 #: check_frequency: 120d
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 

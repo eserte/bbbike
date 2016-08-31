@@ -52,7 +52,7 @@ Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 
 #: osm_watch: way id="25113713" version="12"
 #: osm_watch: way id="4752742"  version="8"
 #: osm_watch: way id="4752743"  version="10"
-#: osm_watch: way id="8049679"  version="10"
+#: osm_watch: way id="8049679"  version="11"
 #: osm_watch: way id="8049678"  version="7"
 #: last_checked: 2016-08-07
 #: check_frequency: 180d
@@ -115,7 +115,7 @@ Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10
 # REMOVED (realisiert) --- #: XXX Baumaßnahme 1.39 (Realisierung in 2011) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: last_checked: 2013-06-28 --- #: check_frequency: 60d --- Schulze-Delitzsch-Platz: werden hier Radspuren markiert?	?::projected 11242,11720 11155,11750
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2016-08-02
+#: last_checked: 2016-08-30
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9701,11656
 # 
@@ -932,7 +932,7 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 # 
 #: by: http://www.bwb.de/content/language1/html/10337.php#11671
 #: osm_watch: way id="75509950" version="11"
-#: last_checked: 2016-08-25
+#: last_checked: 2016-08-30
 #: check_frequency: 60d
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12085,9778 12074,9689 12066,9558
 #: by: ^^^
@@ -942,7 +942,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12085,977
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="13"
-#: last_checked: 2016-08-25
+#: last_checked: 2016-08-30
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -1450,6 +1450,9 @@ Planstraße A: Straßenname? Qualität? Wird es eine Verbindung (für Fußgänger/Radf
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX bis 30.9.16, by fritz
+Naumburger Str.: Einbahnstraßenregelung auch für Radfahrer relevant?	?::inwork 13278,6967 13520,6583
+# 
 Kommandantenstr. - Oranienstr.: Verbindung prüfen	? 10593,11120 10633,11051 10644,11019 10633,11000 10684,10975
 # 
 # REMOVED --- #: XXX NEW	Alexandrinenstraße (Kreuzberg) in beiden Richtungen zwischen Stallschreiberstraße und Oranienstraße (Berlin)  Gültig ab: 25.08.2016 13:59  Vollsperrung, Tiefbauarbeiten (bis Ende 09/16)	LMS-BR_r_LMS-BR_68468	INUSE --- #: last_checked: 2016-08-26 --- #: check_frequency: 7d --- Alexandrinenstr.: Vollsperrung prüfen	?::inwork 10501,11056 10593,11120 10678,11172
@@ -1702,9 +1705,10 @@ Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 1
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6636
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.470764.php
-#: XXX Bauzeit Ende August 2016 bis vsl. Sommer 2017
+#: by: http://www.s-bahn-berlin.de/bauinformationen/details/rummelsburg/4530
+#: XXX Bauzeit Ende August 2016 bis vsl. Sommer 2017; neue Bauzeit: 1.11.2016 für 2,5 Monate
 #: last_checked: 2016-07-16
-#: next_check: 2016-08-28
+#: next_check: 2016-11-01
 (Unterführung S-Bhf. Rummelsburg): wird während der Bauarbeiten hier komplett gesperrt sein?	? 15379,10651 15419,10706 15433,10765
 # 
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.331148.php
@@ -2369,15 +2373,22 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: XXX_prog ^^^
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20141202.1525.400470.html
-#: last_checked: 2016-08-22
+#: last_checked: 2016-08-30
 #: check_frequency: 90d
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 
+#: next_check_id: ALEXANDRINENSTR-2016
+#: XXX siehe auskommentierter Eintrag in gesperrt-orig
+#: last_checked: 2016-08-30
+#: next_check: 2016-09-16
+#: priority: #A
+Stallschreiberstr.: wird die Einbahnstraße wiederhergestellt?	?::inwork 10489,11405 10620,11244 10678,11172
+#
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.334355.php
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7482
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2016-08-22
+#: last_checked: 2016-08-30
 #: check_frequency: 14d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172 10818,11269
 # 

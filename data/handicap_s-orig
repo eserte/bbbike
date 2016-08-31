@@ -16,7 +16,7 @@
 #: source_id: LMS-BR_r_LMS-BR_73434
 #: source_id: 2147340364
 #: last_checked: 2016-08-29
-#: next_check: 2016-08-31
+#: next_check: 2016-09-09
 Straﬂe der Pariser Kommune: Wasserrohrbruch, Fahrbahn Richtung Stralauer Platz gesperrt	q3::inwork; 12645,11673 12551,11515
 # 
 # REMOVED --- #: source_id: 2147339819 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.415646.php --- #: XXX laut vmz bis Mitte Mai 2016, laut fritz bis 13.05.2016, tats‰chlich aber noch l‰nger g¸ltig --- bis wann? --- #: last_checked: 2016-07-10 vvv --- #: valid: -20160813 vvv --- W¸hlischstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14575,11407 14674,11370 14737,11347 14759,11339 14771,11345 --- #: valid ^^^ --- #: last_checked ^^^
@@ -66,7 +66,7 @@ Rigaer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 14133,12482 14266,12446
 #
 #: XXX siehe auch valid-Eintrag weiter unten
 #: source_id: 2147340178
-#: last_checked: 2016-08-29
+#: last_checked: 2016-08-30
 #: valid: -20161115
 BouchÈstr.: Bauarbeiten, Radfahrer m¸ssen auf dem Gehweg fahren	q2::inwork 13642,9624 13865,9866 13890,9894
 # REMOVED (wahrscheinlich aufgehoben) --- #: last_checked: 2013-11-22 --- #: check_frequency: 60d --- Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 13973,9465 14157,9345
@@ -76,13 +76,13 @@ BouchÈstr.: Bauarbeiten, Radfahrer m¸ssen auf dem Gehweg fahren	q2::inwork 13642
 # REMOVED --- #: last_checked: 2015-06-10 --- Am Zirkus: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9167,13046 9137,13032 9090,13009
 # REMOVED --- #: last_checked: 2016-06-01 --- Kommandantenstr.: Bauarbeiten, Einbahnstraﬂe	q2::inwork; 10437,11352 10389,11390
 # 
-#: last_checked: 2016-07-27
+#: last_checked: 2016-08-30
 Kommandantenstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10330,11422 10136,11529
 # 
-#: last_checked: 2016-08-22
+#: last_checked: 2016-08-30
 Beuthstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10201,11631 10235,11610 10330,11422
 # 
-#: last_checked: 2016-07-27
+#: last_checked: 2016-08-30
 Sch¸tzenstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10116,11485 9949,11470
 # 
 # REMOVED (wieder offen) --- #: XXX gibt es hier noch Einschr‰nkungen? --- #: last_checked: 2016-01-14 --- #: next_check: 2016-02-03 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9935,11566 9990,11571
@@ -98,23 +98,19 @@ Melchiorstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 11542,11342 11726,11265 119
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2014-08-22 --- #: check_frequency: 14d --- Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11487,11390 11542,11342 11415,11392 11487,11390
 # 
 #: XXX Baustraﬂenbelag wird zurzeit entfernt
-#: last_checked: 2016-08-22
+#: last_checked: 2016-08-30
 #: check_frequency: 7d
 zur Keibelstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 10976,13229 11045,13183
 # 
 # REMOVED --- #: last_checked: 2016-03-31 --- #: check_frequency: 60d --- Alex-Wedding-Str.: tempor‰re Einbahnstraﬂenregelung	q4::inwork; 11085,13239 11146,13328
-# 
-#: last_checked: 2016-08-22
-#: check_frequency: 14d
-Wadzeckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 11146,13328 11201,13289
-# 
+# REMOVED --- #: last_checked: 2016-08-22 --- #: check_frequency: 14d --- Wadzeckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 11146,13328 11201,13289
 # REMOVED --- #: last_checked: 2015-02-13 --- #: check_frequency: 60d --- Seydelstr.: Bauarbeiten, Einbahnstraﬂe, gesperrt in Richtung Spittelmarkt	q3::inwork; 10446,11470 10320,11627
 # REMOVED (keine Einschr‰nkungen mehr) --- #: last_checked: 2014-06-06 --- Ohmstr.: Bauarbeiten, auf engen Gehweg ausweichen	q3::inwork 11378,11856 11324,11689
 # REMOVED (Baustelle so gut wie fertig) --- #: last_checked: 2015-07-02 --- Schadowstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9007,12499 9016,12416
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
 # REMOVED --- #: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualit‰t -> qualitaet_s-orig-Eintrag revidieren --- #: last_checked: 2013-11-21 --- Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2016-07-05
+#: last_checked: 2016-08-30
 #: check_frequency: 90d
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9984,12426 9996,12401 10058,12290
 # REMOVED --- Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q4::inwork 9996,12401 9994,12368 9943,12364
@@ -201,7 +197,7 @@ Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse
 #: next_check_id: STAATSOPER-2014 vvv
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html
-#: last_checked: 2016-07-27 vvv
+#: last_checked: 2016-08-30 vvv
 #: check_frequency: 30d vvv
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9882,12259 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
@@ -216,7 +212,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6145.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2016-08-05
+#: last_checked: 2016-08-30
 #: check_frequency: 30d
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -227,9 +223,9 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # 
 #: XXX laut fritz bis 29.07.2016
 #: source_id: 2147339998
-#: last_checked: 2016-08-26
+#: last_checked: 2016-08-30
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10256,11160 10437,11352
-#: last_checked: 2016-08-22 vvv
+#: last_checked: 2016-08-30 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10624,11548 10640,11564
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10437,11352 10489,11405
 #: last_checked ^^^
@@ -247,7 +243,7 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10437,11352 10489,11405
 #: next_check_id: ALEXANDRINENSTR-2016
 #: source_id: LMS-BR_r_LMS-BR_68468
 #: XXX Endedatum laut fritz
-#: last_checked: 2016-08-29
+#: last_checked: 2016-08-30
 #: next_check: 2016-09-16
 Stallschreiberstr., Alexandrinenstr.: Einbahnstraﬂenregelung	q4::inwork; 10794,10927 10824,11010 10678,11172 10593,11120 10501,11056
 # 

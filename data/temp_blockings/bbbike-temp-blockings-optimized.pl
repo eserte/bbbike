@@ -116,7 +116,32 @@ userdel	2::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 1117
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2 8055,12186 8089,12190 8214,12205
+userdel	2 8214,12205 8303,12216 8344,12221 8538,12245
+userdel	2 8546,12279 8538,12245
+userdel	2 8600,12165 8538,12245
+userdel	2 8538,12245 8610,12254
+userdel	2 8546,12279 8570,12302 8573,12325 8540,12420 
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+',
+         'from' => 1475121600,
+         'id' => 127,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              29,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt (bis 06.10.2016)',
+         'type' => 'gesperrt',
+         'until' => 1475791199
+       },
        undef,
        undef,
        undef,
@@ -3895,18 +3920,18 @@ userdel	2::inwork 16532,26174 16222,25829
        {
          'data' => '#: XXX gibt es schon die ersten Sperrungen im Park? die Sperrungen werden vermutlich umfangreicher sein! vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.511653.php
-#: last_checked: 2016-08-29 vvv
+#: last_checked: 2016-08-30 vvv
 #: check_frequency: 4d vvv
 #: by: http://lolp2.de.c3cdn.com/wp/wp-content/uploads/2016/02/Lollapalooza2016_Treptower-Park_Festivalmap_2000x1414_RZ.png
-userdel	2::temp 15383,9191 14879,9433 14809,9466
-userdel	2::temp 14909,9649 14867,9573 14837,9517 14809,9466
-userdel	2::temp 14577,9641 14627,9609 14695,9587 14792,9599 14867,9573 14918,9545 15025,9461 15133,9396 15184,9373 15268,9374
-userdel	2::temp 14695,9587 14705,9578 14791,9537
-userdel	2::temp 14879,9433 14898,9364 14955,9294
-userdel	2::temp 15133,9396 15184,9373 15268,9374
-userdel	2::temp 14316,9542 14384,9565
-userdel	2::temp 14809,9466 14556,9581
-userdel	2::temp 14588,9473 14635,9441
+	2::temp 15383,9191 14879,9433 14809,9466
+	2::temp 14909,9649 14867,9573 14837,9517 14809,9466
+	2::temp 14361,9772 14443,9731 14495,9710 14577,9641 14627,9609 14695,9587 14792,9599 14867,9573 14918,9545 15025,9461 15133,9396 15184,9373 15268,9374
+	2::temp 14695,9587 14705,9578 14791,9537
+	2::temp 14879,9433 14898,9364 14955,9294
+	2::temp 14316,9542 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441
+	2::temp 14809,9466 14556,9581
+	2::temp 14588,9473 14556,9581
+	2::temp 14318,9688 14371,9726 14443,9731
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -4010,17 +4035,7 @@ userdel	q4::inwork; -4731,13135 -4634,13173 -4299,13304 -4011,13407
          'type' => 'handicap',
          'until' => 1472767199
        },
-       {
-         'data' => '#: note: by fritz
-#: source_id: 2147340467
-userdel	2::inwork 19666,7988 19843,7866 19927,7813 20031,7794 20077,7786 20139,7775 20280,7749
-',
-         'from' => 1471816800,
-         'id' => 2818,
-         'text' => 'Verlängerte Waldowallee: Sperrung zwischen Kiefernallee und Rudolf-Rühl-Allee, vom 23. August 2016 bis 02. September 2016',
-         'type' => 'gesperrt',
-         'until' => 1472832000
-       },
+       undef,
        {
          'data' => '#: note: by fritz
 userdel	q4::inwork 6587,16199 6484,16085
@@ -4050,6 +4065,16 @@ userdel	q4::inwork 6587,16199 6484,16085
          'text' => 'Kaulsdorfer Straße: zwischen Falkstätter Straße und Deutschhofer Allee Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 2. September 2016',
          'type' => 'gesperrt',
          'until' => 1472853599
+       },
+       {
+         'data' => 'userdel	q4::temp 3556,13200 3534,13098 3523,13076
+',
+         'from' => 1472799600,
+         'id' => 2822,
+         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.512648.php',
+         'text' => 'Mierendorffplatz: Insel-Kiezfest, Straße zwischen Osnabrücker Str. und Mindener Str. gesperrt, am 03.09.2016',
+         'type' => 'handicap',
+         'until' => 1472939999
        }
      
 );
