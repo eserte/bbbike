@@ -25174,7 +25174,7 @@ EOF
 EOF
      },
      { from  => 1465682400, # 2016-06-12 00:00
-       until => $isodate2epoch->("2016-09-02 23:59:59"),
+       until => 1472760879, # $isodate2epoch->("2016-09-02 23:59:59"),
        text  => 'Werneuchener Str.: Richtung Konrad-Wolf-Str. ab Küstriner Str. Baustelle, Fahrtrichtung gesperrt, 13.06.2016 bis 02.09.2016',
        type  => 'handicap',
        source_id => '2147340189',
@@ -25274,26 +25274,10 @@ EOF
      },
      { from  => 1473372000, # 2016-09-09 00:00
        until => 1473631200, # 2016-09-12 00:00
-       text  => 'Lollapalooza 2016 im Treptower Park: gesperrte Wege und Straßen, 10.09.2016 und 11.09.2016',
+       text  => 'Lollapalooza 2016 im Treptower Park: Puschkinallee gesperrt, 10.09.2016 und 11.09.2016',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX gibt es schon die ersten Sperrungen im Park? die Sperrungen werden vermutlich umfangreicher sein! vvv
-#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.511653.php
-#: last_checked: 2016-08-30 vvv
-#: check_frequency: 4d vvv
-#: by: http://lolp2.de.c3cdn.com/wp/wp-content/uploads/2016/02/Lollapalooza2016_Treptower-Park_Festivalmap_2000x1414_RZ.png
-	2::temp 15383,9191 14879,9433 14809,9466
-	2::temp 14909,9649 14867,9573 14837,9517 14809,9466
-	2::temp 14361,9772 14443,9731 14495,9710 14577,9641 14627,9609 14695,9587 14792,9599 14867,9573 14918,9545 15025,9461 15133,9396 15184,9373 15268,9374
-	2::temp 14695,9587 14705,9578 14791,9537
-	2::temp 14879,9433 14898,9364 14955,9294
-	2::temp 14316,9542 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441
-	2::temp 14809,9466 14556,9581
-	2::temp 14588,9473 14556,9581
-	2::temp 14318,9688 14371,9726 14443,9731
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
+	2::temp 15383,9191 14879,9433 14809,9466 14556,9581
 EOF
      },
      { from  => 1467496800, # 2016-07-03 00:00
@@ -25339,7 +25323,7 @@ userdel	2::inwork 22084,5877 21846,5856 21744,5804 21602,5685
 EOF
      },
      { from  => 1469052000, # 2016-07-21 00:00
-       until => $isodate2epoch->("2016-09-02 10:00:00"), # 1472680799, # 2016-08-31 23:59
+       until => 1472760891, # $isodate2epoch->("2016-09-02 10:00:00"), # 1472680799, # 2016-08-31 23:59
        text  => 'Tautenburger Str.: zwischen Blankenhainer Str. und Brotteroder Str. und später zwischen Brotteroder Str. und Maximilian-Kaller-Str. Baustelle, Sperrung der Fahrbahn, Radfahrer dürfen den Gehweg benutzen, bis Anfang September 2016',
        type  => 'handicap',
        source_id => '2147340348',
@@ -25462,6 +25446,25 @@ EOF
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.512648.php',
        data  => <<EOF,
 userdel	q4::temp 3556,13200 3534,13098 3523,13076
+EOF
+     },
+     { from  => $isodate2epoch->("2016-08-29 00:00:00"), # 1473372000, # 2016-09-09 00:00
+       until => 1473631200, # 2016-09-12 00:00
+       text  => 'Lollapalooza 2016 im Treptower Park: Vorbereitungen, viele Wege sind bereits gesperrt, mindestens bis 11.09.2016',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.511653.php
+#: by: http://lolp2.de.c3cdn.com/wp/wp-content/uploads/2016/02/Lollapalooza2016_Treptower-Park_Festivalmap_2000x1414_RZ.png
+	2::temp 14909,9649 14867,9573 14837,9517 14809,9466
+	2::temp 14361,9772 14443,9731 14495,9710 14577,9641 14627,9609 14695,9587 14792,9599 14867,9573 14918,9545 15025,9461 15133,9396 15184,9373 15268,9374 15325,9354 15453,9259
+	2::temp 15184,9373 15249,9337
+	2::temp 14577,9641 14604,9674 14645,9710 14697,9726 14853,9655 14909,9649 15052,9584 15186,9550 15304,9464 15432,9322 15453,9259
+	2::temp 14695,9587 14705,9578 14791,9537
+	2::temp 14879,9433 14898,9364 14955,9294
+	2::temp 14316,9542 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14789,9401
+	2::temp 14588,9473 14556,9581
+	2::temp 14318,9688 14371,9726 14443,9731
+	2::temp 14318,9688 14316,9542 14347,9452 14398,9373 14485,9271 14531,9244 14655,9311 14673,9353 14669,9389 14635,9441
 EOF
      },
     );
