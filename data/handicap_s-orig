@@ -37,7 +37,7 @@ Dˆringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,112
 # REMOVED (beendet) --- #: XXX laut Fritz bis Ende M‰rz 2016 (sieht aber schlecht aus f¸r diesen Termin) --- #: last_checked: 2016-06-13 vvv --- #: check_frequency: 7d vvv --- Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 # REMOVED --- Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
-#: last_checked: 2016-09-01
+#: last_checked: 2016-09-02
 #: check_frequency: 4d
 Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
 # 
@@ -76,10 +76,10 @@ BouchÈstr.: Bauarbeiten, Radfahrer m¸ssen auf dem Gehweg fahren	q2::inwork 13642
 # REMOVED --- #: last_checked: 2015-06-10 --- Am Zirkus: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9167,13046 9137,13032 9090,13009
 # REMOVED --- #: last_checked: 2016-06-01 --- Kommandantenstr.: Bauarbeiten, Einbahnstraﬂe	q2::inwork; 10437,11352 10389,11390
 # 
-#: last_checked: 2016-08-30
+#: last_checked: 2016-09-02
 Kommandantenstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10330,11422 10136,11529
 # 
-#: last_checked: 2016-08-30
+#: last_checked: 2016-09-02
 Beuthstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10201,11631 10235,11610 10330,11422
 # 
 #: last_checked: 2016-08-30
@@ -126,7 +126,7 @@ Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und 
 # REMOVED (Einbahnstraﬂenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universit‰tsstr.: wegen Bauarbeiten Einbahnstraﬂe zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9580,12581
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2016-08-22 vvv
+#: last_checked: 2016-09-02 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="3"
@@ -223,11 +223,11 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # 
 #: XXX laut fritz bis 29.07.2016
 #: source_id: 2147339998
-#: last_checked: 2016-08-30
+#: last_checked: 2016-09-02
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10256,11160 10437,11352
-#: last_checked: 2016-08-30 vvv
+#: last_checked: 2016-09-02 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10624,11548 10640,11564
-Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10437,11352 10489,11405
+# REMOVED --- Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10437,11352 10489,11405
 #: last_checked ^^^
 # 
 # REMOVED --- Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10437,11352
@@ -243,7 +243,7 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10437,11352 10489,11405
 #: next_check_id: ALEXANDRINENSTR-2016
 #: source_id: LMS-BR_r_LMS-BR_68468
 #: XXX Endedatum laut fritz
-#: last_checked: 2016-08-30
+#: last_checked: 2016-09-02
 #: next_check: 2016-09-16
 Stallschreiberstr., Alexandrinenstr.: Einbahnstraﬂenregelung	q4::inwork; 10794,10927 10824,11010 10678,11172 10593,11120 10501,11056
 # 
@@ -349,7 +349,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung S¸de
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml vvv
 #: source_id: IM_025877 vvv
 #: source_id: 2147339245 vvv
-#: last_checked: 2016-03-26 vvv
+#: last_checked: 2016-09-02 vvv
 #: next_check: 2017-08-01 vvv
 J¸licher Str.: Einbahnstraﬂenregelung wegen Bauarbeiten an der Bˆsebr¸cke	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
 Malmˆer Str.: Einbahnstraﬂenregelung wegen Bauarbeiten an der Bˆsebr¸cke	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
@@ -824,7 +824,7 @@ Uferweg, Mentzelpark: Fuﬂg‰nger, eng	q3 21761,4979 21821,4918 21834,4889
 (Mentzelpark): Fuﬂg‰nger	q1 21726,4896 21741,4889 21778,4916
 # REMOVED (hier hat sich nichts weiter ge‰ndert (by mrt), wahrscheinlich passiert nichts mehr) --- #: XXX Bauarbeiten; in Zukunft wird das Radfahren offiziell erlaubt sein; evtl. auch asphaltiert? --- #: XXX offiziell sollten die Bauarbeiten schon Ende 2010 (!) beendet sein ---- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20120515.0900.370132.html (teilweise fertig) --- #: last_checked: 2013-09-16 (noch immer Radfahren verboten) --- #: check_frequency: 120d
 Heinrich-Lassen-Park: Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q3 6664,8787 6705,8730 6740,8682 6815,8691 6912,8617
-(Uferweg am Nordhafen): Fuﬂg‰nger	q1 7753,14528 7695,14545 7653,14570 7605,14600 7527,14644 7486,14652
+(Uferweg am Nordhafen): Fuﬂg‰nger	q1 7753,14528 7695,14545 7653,14570 7605,14600 7527,14644 7480,14660
 An der Malche: teilweise eng und kurvig	q1 1106,20424 1032,20580 895,20523 834,20610 625,20738
 Am Friedhof: recht enger Radweg	q1 6380,17836 6376,17687 6347,17381
 Gerlachsheimer Weg: Fuﬂg‰nger	q2 13151,7914 13240,7966
@@ -904,7 +904,7 @@ Cecilieng‰rten: schmale Rampe oder Treppe	q3 6356,7479 6289,7472
 Tasdorfer Str. - Wilhelm-Guddorf-Str.: Fuﬂg‰nger	q1 15393,11590 15423,11667
 (Gr¸nes Band): Radfahren erlaubt, Fuﬂg‰nger haben Vorrang	q1 15349,11911 15301,11876 15327,11724 15337,11639 15365,11564 15377,11555 15412,11510 15414,11487 15445,11455 15515,11416
 Am Bahndamm: Radfahren offiziell nicht erlaubt	q2 7667,4549 7769,4315
-Am Bahndamm: Fuﬂg‰nger	q1 7769,4315 7795,4242 8106,3410
+Am Bahndamm: Fuﬂg‰nger	q1 7769,4315 7795,4242 8016,3651 8106,3410
 Edenkobener Steg: Fuﬂg‰nger	q1 6618,4191 6633,4272
 #: XXX bleibt es bei dem steilen Abschnitt?
 #: last_checked: 2016-07-07
@@ -1796,7 +1796,7 @@ Park am Nordbahnhof: Fuﬂg‰nger	q1 9147,14151 9070,14058
 Park am Nordbahnhof: Fuﬂg‰nger	q1 8913,14485 8868,14442 8825,14401
 Park am Nordbahnhof: Fuﬂg‰nger	q1 9175,14193 9144,14169 9081,14232 8868,14442
 Park am Nordbahnhof: Fuﬂg‰nger	q1 9119,14255 9081,14232 8992,14176
-(an der Panke - Mauerweg): einige Fuﬂg‰nger	q1+ 7878,14514 7889,14519 7939,14447 7989,14478 8050,14558 8103,14582 8232,14689
+(an der Panke - Mauerweg): einige Fuﬂg‰nger	q1+ 7872,14510 7889,14519 7939,14447 7989,14478 8050,14558 8103,14582 8232,14689
 #: XXX_prog: BS
 Bordstein	q3 -2452,17408 -2451,17421
 #: note: 6 oder 7 Bodenschwellen liegen hier, fast ¸ber die ganze Fahrbahnbreite
@@ -2233,7 +2233,7 @@ Biedermannweg: einige Fuﬂg‰nger	q1 -717,12823 -686,12735
 Am Murellenteich: Bordstein	q3 -440,12767 -408,12766
 (Am Nordhafen - Uferweg am Nordhafen): Fuﬂg‰nger, Gef‰lle	q1; 7741,14560 7696,14577 7662,14579 7653,14570
 (Am Nordhafen - Uferweg am Nordhafen): Fuﬂg‰nger, Steigung	q2; 7653,14570 7662,14579 7696,14577 7741,14560
-(Uferweg am Nordhafen - Am Nordhafen/Fennstr.): Fuﬂg‰nger	q1 7605,14600 7589,14627 7549,14664 7520,14679
+(Uferweg am Nordhafen - Am Nordhafen/Fennstr.): Fuﬂg‰nger	q1 7605,14600 7589,14627 7549,14664 7514,14686
 Kelheimer Str.: einige Fuﬂg‰nger	q2 5894,10287 5898,10318
 #: XXX_prog BS am Wendehammer, ansonsten q2
 W¸rzburger Str.: einige Fuﬂg‰nger, Bordstein	q3 5898,10318 5907,10347
@@ -2353,6 +2353,7 @@ Kuschelweg: einige Fuﬂg‰nger	q1 23355,12732 23349,12760 23408,13100 23474,13449 
 (Melanchthonstr. - Weg an der S-Bahn): einige Fuﬂg‰nger	q1 24759,12401 24756,12277 24711,12150
 (Parlerstr. - Elsenstr.): enger Pfad	q3 24528,10696 24571,10736 24593,10775
 (Alt-Friedrichsfelde - Gensinger Str.): einige Fuﬂg‰nger	q1+ 18719,11821 18825,11816 18910,11826 19048,11815 19138,11815
+an der Kieler Br¸cke: einige Fuﬂg‰nger	q1 7804,14445 7780,14431 7740,14409 7661,14398 7634,14406 7617,14420 7570,14392
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -2816,7 +2817,7 @@ Rossitter Weg: Fuﬂg‰nger (nur bei Veranstaltungen ein Problem)	q0 -107,12220 -12
 (Bonhoefferufer - Tegeler Weg): Fuﬂg‰nger	q2 3154,12936 3164,13067
 Eosanderstr.: Fuﬂg‰nger	q1 3344,12611 3271,12609
 Siemenssteg: Fuﬂg‰nger, schmal	q2 4129,12619 4128,12637 4124,12706 4124,12721
-(M¸llerstr. - Gerichtstr.): Fuﬂg‰nger	q2 7611,15286 7723,15417
+(M¸llerstr. - Gerichtstr.): Fuﬂg‰nger	q2 7607,15282 7723,15417
 (s¸dliches Spreeufer): Fuﬂg‰nger	q2 5579,12231 5714,12290 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
 (nˆrdliches Spreeufer): Fuﬂg‰nger	q1 6106,12981 6064,12950 6019,12923 5962,12854 5921,12663 5890,12602 5871,12595
 (nˆrdliches Spreeufer): Fuﬂg‰nger	q2 6271,12985 6218,12975 6190,12978 6164,12980

@@ -358,13 +358,13 @@ Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Osloer Str.:
 Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Stockholmer Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8783,16710
 Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Travemünder Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8688,16533
 Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Travemünder Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8759,16665
-Müllerstr./Lindower Str.	3nocross::ignrte 7929,15006 7819,15103 7754,15160 7611,15286
-Müllerstr. -> Lynarstr.: Müllerstr./Lindower Str.	3::igndisp 7819,15103 7754,15160 7694,15125
-Müllerstr. -> Lindower Str.: Müllerstr./Lindower Str.	3::igndisp 7611,15286 7754,15160 7929,15355
-Lynarstr. -> Müllerstr.: Müllerstr./Lindower Str.	3::igndisp 7694,15125 7754,15160 7611,15286
-Lynarstr. -> Lindower Str.: Müllerstr./Lindower Str.	3::igndisp 7694,15125 7754,15160 7929,15355
-Lindower Str. -> Müllerstr.: Müllerstr./Lindower Str.	3::igndisp 7929,15355 7754,15160 7819,15103
-Lindower Str. -> Lynarstr.: Müllerstr./Lindower Str.	3::igndisp 7929,15355 7754,15160 7694,15125
+Müllerstr./Lindower Str.	3nocross::ignrte 7911,15008 7811,15096 7745,15160 7607,15282
+Müllerstr. -> Lynarstr.: Müllerstr./Lindower Str.	3::igndisp 7811,15096 7745,15160 7694,15125
+Müllerstr. -> Lindower Str.: Müllerstr./Lindower Str.	3::igndisp 7607,15282 7745,15160 7929,15355
+Lynarstr. -> Müllerstr.: Müllerstr./Lindower Str.	3::igndisp 7694,15125 7745,15160 7607,15282
+Lynarstr. -> Lindower Str.: Müllerstr./Lindower Str.	3::igndisp 7694,15125 7745,15160 7929,15355
+Lindower Str. -> Müllerstr.: Müllerstr./Lindower Str.	3::igndisp 7929,15355 7745,15160 7811,15096
+Lindower Str. -> Lynarstr.: Müllerstr./Lindower Str.	3::igndisp 7929,15355 7745,15160 7694,15125
 Adolfstr.	1 7796,15590 7817,15418
 Mimosenweg	2 17668,2187 17657,2213
 Straßenbahntrasse	3nocross::ignrte 14619,16551 14619,16672 14619,16682 14608,16772 14558,16907
@@ -1464,9 +1464,9 @@ Krumme Str.	1 4029,12158 3999,12050 3976,11869
 Kirchplatz: gesperrt für Fahrzeuge aller Art	2 -7221,14692 -7196,14746 -7140,14749
 Eylauer Str.: Einfahrt gesperrt	3 8389,9087 8480,9080 8472,8776
 Eylauer Str.: Einfahrt gesperrt	3 8598,9074 8480,9080 8472,8776
-Scharnhorststr.: Poller	3 7883,14508 7801,14450 7780,14431
-Scharnhorststr.: Poller	3 7883,14508 7801,14450 7787,14473
-Scharnhorststr.: Poller	3 7883,14508 7801,14450 7807,14441
+Scharnhorststr.: Poller	3 7877,14504 7804,14445 7780,14431
+Scharnhorststr.: Poller	3 7877,14504 7804,14445 7787,14473
+Scharnhorststr.: Poller	3 7877,14504 7804,14445 7973,14195
 Mittelstreifen	3nocross::ignrte 5635,18776 5713,18777 5791,18778
 Lindauer Allee -> Rundpfuhlweg: Mittelstreifen	3::igndisp 5791,18778 5713,18777 5713,18739
 Rundpfuhlweg -> Lindauer Allee: Mittelstreifen	3::igndisp 5713,18739 5713,18777 5635,18776

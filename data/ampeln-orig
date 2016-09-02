@@ -569,7 +569,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 9383,13986
 	X 8098,13419
 	X 8057,14876
-	X 7929,15006
+	X 7911,15008
 	X 8049,15470
 	X 8271,15734
 	X 8788,16264
@@ -582,7 +582,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6304,16447
 	X 6239,15553
 	X 7570,14392
-	X 7373,14566
+	X 7368,14573
 	X 7180,14419
 	X 7123,14367
 	X 7277,15586
@@ -667,7 +667,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 9262,13111
 	X 8607,15426
 	X 8024,15401
-	X 8016,15085
+	X 8007,15087
 	X 8919,16154
 # REMOVED --- #: next_check_id: AMNORDHAFEN-2016 --- #: XXX bleibt diese Ampel noch bestehen? --- #: osm_watch: node id="3777205508" version="1" --- #: last_checked: 2016-03-26 --- #: check_frequency: 60d
 # REMOVED (existiert nicht mehr) --- X 7527,14684
@@ -962,9 +962,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 2268,19919
 #: note: etwas nach Nordwesten versetzt
 #: XXX_prog: zusätzlicher Zeitverlust durch Fußgängerverkehr zwischen S- und U-Bahnhof möglich
-	F 7754,15160
-	X 7474,15408
-	X 7396,15479
+	F 7745,15160
+	X 7464,15409
+	X 7393,15476
 	X 7024,15810
 	X 6659,16133
 	X 6098,16630
@@ -2600,11 +2600,11 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
 #: XXX laut fritz bis 05.05.2016
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
-#: last_checked: 2016-07-27
+#: last_checked: 2016-08-30
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2016-08-22 vvv
+#: last_checked: 2016-09-02 vvv
 #: check_frequency: 30d vvv
 	X::inwork 9122,12509
 	X::inwork 9286,12886
@@ -2853,7 +2853,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: Anforderungsampel
 	F 10461,3757
 #: XXX Baustellenampel
-#: last_checked: 2016-07-11
+#: last_checked: 2016-09-02
 #: check_frequency: 60d
 	F::inwork 8853,13539
 #: next_check_id: HEERSTR-2016
@@ -2865,7 +2865,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 24426,11265
 # 
 #: next_check_id: LORTZING-2014
-#: last_checked: 2016-07-04
+#: last_checked: 2016-09-02
 #: check_frequency: 120d
 	F::inwork 10038,15418
 # 

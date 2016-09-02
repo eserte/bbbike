@@ -3958,18 +3958,7 @@ userdel	q4::inwork 2473,20486 2448,20592
          'type' => 'handicap',
          'until' => 1472853600
        },
-       {
-         'data' => '#: source_id: 2147340417
-#: note: laut vmz und fritz offen Richtung Westen
-userdel	q4::inwork; -4731,13135 -4634,13173 -4299,13304 -4011,13407
-',
-         'from' => 1470520800,
-         'id' => 2815,
-         'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.504895.php',
-         'text' => 'Seeburger Str.: Einbahnstraßenregelung zwischen Elsflether Weg und Päwesiner Weg, offen Richtung Westen, vom 08.08.2016 bis voraussichtlich 02.09.2016',
-         'type' => 'handicap',
-         'until' => 1472810400
-       },
+       undef,
        {
          'data' => 'userdel	q4::inwork 1732,24798 1730,24860 1750,24942 1775,25019 1767,25098 1738,25243
 ',
@@ -3986,9 +3975,9 @@ userdel	q4::inwork; -4731,13135 -4634,13173 -4299,13304 -4011,13407
          'from' => 1469916000,
          'id' => 2817,
          'source_id' => '2147340382',
-         'text' => 'Langhansstr.: zwischen Goethestr. und Gustav-Adolf-Str. Baustelle, Fahrtrichtung Prenzlauer Promenade gesperrt, bis Anfang September 2016 ',
+         'text' => 'Langhansstr.: zwischen Goethestr. und Gustav-Adolf-Str. Baustelle, Fahrtrichtung Prenzlauer Promenade gesperrt, bis Mitte September 2016 ',
          'type' => 'handicap',
-         'until' => 1472767199
+         'until' => 1473933600
        },
        undef,
        {
@@ -4011,16 +4000,7 @@ userdel	q4::inwork 6587,16199 6484,16085
          'type' => 'gesperrt',
          'until' => 1472925600
        },
-       {
-         'data' => 'userdel	2::inwork 21867,8752 21680,8400
-',
-         'from' => 1472495093,
-         'id' => 2821,
-         'source_id' => '2147340477',
-         'text' => 'Kaulsdorfer Straße: zwischen Falkstätter Straße und Deutschhofer Allee Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 2. September 2016',
-         'type' => 'gesperrt',
-         'until' => 1472853599
-       },
+       undef,
        {
          'data' => 'userdel	q4::temp 3556,13200 3534,13098 3523,13076
 ',

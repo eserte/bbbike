@@ -13706,7 +13706,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012112',
        data  => <<EOF,
-userdel	q4::inwork; 7373,14566 7180,14419 7123,14367 6992,14251 6818,14102 6730,14021 6646,13951 6493,13822 6366,13716 6230,13596
+userdel	q4::inwork; 7368,14573 7180,14419 7123,14367 6992,14251 6818,14102 6730,14021 6646,13951 6493,13822 6366,13716 6230,13596
 EOF
      },
      { from  => 1238450400, # 2009-03-31 00:00
@@ -22657,7 +22657,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_021410',
        data  => <<EOF,
-userdel	q4::inwork 7373,14566 7314,14599
+userdel	q4::inwork 7368,14573 7314,14599
 EOF
      },
      { from  => $isodate2epoch->("2014-04-03 12:00:00"),
@@ -23873,7 +23873,7 @@ EOF
        text  => 'Perleberger Brücke: Sperrung vom 13.12.2014 00:30 Uhr bis 15.12.2014 00:30 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 7373,14566 7180,14419
+userdel	2::inwork 7368,14573 7180,14419
 EOF
      },
      { from  => 1418119200, # 2014-12-09 11:00
@@ -23891,7 +23891,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED (-> gesperrt-orig) --- #: by: user per phone --- #: XXX vor Ort anschauen! Gibt es ein Endedatum?
-userdel	2::inwork 7769,4315 7795,4242 8106,3410
+userdel	2::inwork 7769,4315 7795,4242 8016,3651 8106,3410
 EOF
      },
      { from  => 1421344800, # 2015-01-15 19:00
@@ -23914,7 +23914,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.256386.php',
        data  => <<EOF,
-	2::inwork 7653,14570 7605,14600 7527,14644 7486,14652
+	2::inwork 7653,14570 7605,14600 7527,14644 7480,14660
 EOF
      },
      { from  => 1423465860, # 2015-02-09 08:11
@@ -25394,8 +25394,8 @@ userdel	q4::inwork 1732,24798 1730,24860 1750,24942 1775,25019 1767,25098 1738,2
 EOF
      },
      { from  => 1469916000, # 2016-07-31 00:00
-       until => 1472767199, # 2016-09-01 23:59
-       text  => 'Langhansstr.: zwischen Goethestr. und Gustav-Adolf-Str. Baustelle, Fahrtrichtung Prenzlauer Promenade gesperrt, bis Anfang September 2016 ',
+       until => $isodate2epoch->("2016-09-15 12:00:00"), # 1472767199, # 2016-09-01 23:59
+       text  => 'Langhansstr.: zwischen Goethestr. und Gustav-Adolf-Str. Baustelle, Fahrtrichtung Prenzlauer Promenade gesperrt, bis Mitte September 2016 ',
        type  => 'handicap',
        source_id => '2147340382',
        data  => <<EOF,
@@ -25431,7 +25431,7 @@ userdel	2::inwork 25571,4553 25658,4619
 EOF
      },
      { from  => 1472495093, # 2016-08-29 20:24
-       until => 1472853599, # 2016-09-02 23:59
+       until => 1472843584, # 1472853599, # 2016-09-02 23:59
        text  => 'Kaulsdorfer Straße: zwischen Falkstätter Straße und Deutschhofer Allee Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 2. September 2016',
        type  => 'gesperrt',
        source_id => '2147340477',
