@@ -6273,15 +6273,17 @@ EOF
 userdel	2::inwork 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589
 EOF
      },
-     { from  => $isodate2epoch->("2015-10-02 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-10-04 23:59:59"),
+     { from  => $isodate2epoch->("2016-09-30 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-10-02 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 3, months => 10]],
-       text  => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 03.10.2015 bis 04.10.2015',
+       recurrences => [['yearly', days => 30, months => 9]],
+       text  => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 01.10.2016 bis 02.10.2016',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.ms-event-agentur.com/seite22.html?date=20150404
-userdel	2::temp 7006,9292 7022,9211 7044,9163 7107,9030
+#: by: http://www.ms-event-agentur.com/seite22.html?date=20160903
+	2::temp 7006,9292 7022,9211 7044,9163 7107,9030
+	2::temp 6945,9142 7044,9163
+	2::temp 6975,8944 7107,9030 7308,9163
 EOF
      },
      { from  => 1160517600, # 2006-10-11 00:00
@@ -15340,7 +15342,7 @@ EOF
        text  => 'Seit dem 13.07.2009 erfolgt der Bau einer Regenwasserleitung in der Steinstraße zwischen Großbeerenstraße und Hubertusdamm. Die Arbeiten werden unter Vollsperrung der Steinstraße durchgeführt. Die Arbeiten werden voraussichtlich drei Monate andauern. ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -7060,-3124 -7266,-2736
+userdel	q4::inwork -7055,-3120 -7061,-3090 -7106,-3051 -7115,-3034 -7266,-2736
 EOF
      },
      { from  => 1249164000, # 2009-08-02 00:00

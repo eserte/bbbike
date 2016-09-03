@@ -70,7 +70,7 @@ Hubertusallee/Teplitzer Str.: werden hier Radspuren markiert?	?::projected 2320,
 #: osm_watch: way id="23109081" version="8"
 #: osm_watch: way id="41108858" version="6"
 #: source_id: IM_026443	
-#: last_checked: 2016-07-07
+#: last_checked: 2016-09-03
 #: check_frequency: 90d
 Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4188,2674 -4280,2539 -4290,2304 -4181,2062 -4164,1993 -4180,1941 -4256,1831 -4368,1731 -4492,1624 -4587,1542 -4644,1514 -4744,1466 -4827,1433 -4944,1298
 # 
@@ -2487,7 +2487,8 @@ Adolf-Hoffmann-Str. (Vogelsdorf): mäßiger fester Sandweg, Q2	? 34007,11572 34149
 #: by: ThomasDob:
 Am Wall (Kleinmachnow): guter Beton, Q0	? -3395,-880 -3322,-894 -3191,-914 -3060,-933 -2926,-955 -2795,-978 -2742,-987
 #: by: ThomasDob:
-Promenadenweg (Kleinmachnow): Asphalt, Q0, q4(???), Frage: Gehwegverbindung zum Stahnsdorfer Damm?	? -3391,-1155 -3288,-1153 -3221,-1154 -3087,-1155 -2953,-1156 -2819,-1157 -2720,-1159 -2683,-1160
+#: XXX vermutlich verkehrsberuhigt
+Promenadenweg (Kleinmachnow): Asphalt, Q0, q4(???)	? -3391,-1155 -3288,-1153 -3221,-1154 -3087,-1155 -2953,-1156 -2819,-1157 -2720,-1159
 #: by: Katharina Undisz [AM]
 Helmut-Just-Str. (Hohen Neuendorf): Asphalt Q1	? 4054,29959 4132,29954 4487,29996
 #
@@ -3127,7 +3128,6 @@ Eberswalde - Spechthausen: Qualität?	? 35428,47961 35306,47832 35244,47675 35241
 Eberswalde - Spechthausen: Qualität? Straßennamen?	? 35339,46996 35149,46710 35168,46488 35218,46368 35149,46126 35069,45501
 Schönfeld - Neuenfeld: im Ort Schönfeld noch Betonplatten mit Spur (Q1), danach den Anschein nach Asphalt (Q0)	? 48065,112982 49449,113574 49802,113824
 Klockow - Neuenfeld: Qualität?	? 49573,112426 49739,112949 49802,113824
-Bäkepromenade (Stahnsdorf): Qualität? Existiert eine Verbindung?	? -2613,-1473 -2800,-1484 -2794,-1628
 Falkenthal - Bergsdorf: Kopfsteinpflaster, mindestens von Falkenthal her	? 2034,55227 -285,58256
 # REMOVED (ninaluetge widerspricht, ebenso public imagery) --- #: XXX: unklare Eintragung zu Radwegen existiert: --- Jan-Petersen-Str.: Gibt es hier Radwege?	? 21030,16206 21196,16119 21108,15955 21086,15910
 Zichow-Lindenwegsiedlung: Qualität?	? 54500,87934 52642,87955
@@ -3709,6 +3709,7 @@ Kerkow - Görlsdorf: nach den Bauarbeiten (2008-11-08) besserer Asphalt?	? 45864,
 Am Mönchberg: gesperrt (gesehen am 2008-10-25), scheint ein unbefestigter Weg zu sein	? 1887,31658 1837,31725
 (Eberswalde): Straßennamen, Qualität?	? 36020,48283 35838,47830 35428,47961
 # REMOVED (hier existiert keine öffentliche Straße) --- Straße 14 (Neukölln): Qualität? Offen? Ausgeschildert?	? 14133,6187 14116,6277
+#: XXX culdesac-Eintrag fehlt
 Malergarten: Qualität?	? -7831,-2230 -7859,-2304
 # REMOVED (Straße wurde umbenannt) --- auch entfernt: Bachstelzenweg|Blankenfelde|13159|8708,24707 --- Bachstelzenweg (Blankenfelde): Qualität? Geht der Weg bis zum Hauptweg weiter?	? 8604,24747 8658,24686 8726,24659
 # REMOVED --- wo ist diese Straße??? Feldweg|Französisch Buchholz|13127|
@@ -3778,7 +3779,7 @@ Nieden - Göritz: Qualität?	? 43904,115305 43730,115229 42427,113348 42135,112936
 Göritz - Tornow: Qualität (vermutlich asphaltiert?)?	? 43007,111999 43070,112007 43476,111826 43822,111442 44872,110944
 Klockow: Weg nach Carmzow ausgeschildert? Qualität (vermutlich unbefestigt)?	? 49523,111095 49629,111050
 Am Gehölz (Potsdam): Qualität?	? -7758,-2457 -8024,-2468 -8140,-2475
-Hubertusdamm (Potsdam): Qualität östlich der Mendelssohn-Bartholdy-Str.?	? -7803,-2689 -7484,-2745 -7369,-2751 -7266,-2736
+Hubertusdamm (Potsdam): Qualität östlich der Mendelssohn-Bartholdy-Str.?	? -7803,-2689 -7484,-2745 -7369,-2751
 Brahmsweg (Potsdam): Qualität?	? -8136,-2699 -8132,-2754 -8138,-2804
 Schubertstr. (Potsdam): Qualität?	? -8219,-2795 -8138,-2804 -8108,-2809 -7965,-2825
 Mozartstr. (Potsdam): Qualität im nördlichen Abschnitt?	? -8108,-2809 -8127,-2925
@@ -3889,13 +3890,12 @@ Chopinstr. (Potsdam): Qualität?	? -7577,-3093 -7582,-3196 -7638,-3330
 #: XXX str_cont_ausnahme-Eintrag
 Schwarzschildstr. (Potsdam): Qualität? Können Radfahrer zur Grotrianstr. und Neuendorfer Str. fahren?	? -7923,-3228 -7896,-3236 -7839,-3262 -7794,-3277 -7638,-3330 -7552,-3365
 Schwarzschildstr. (Potsdam): Qualität?	? -7839,-3262 -7856,-3397
-Jagdhausstr. (Potsdam): Qualität im südöstlichen Abschnitt?	? -7017,-3225 -6959,-3339 -6897,-3456 -6796,-3645
 Eulenkamp (Potsdam): Qualität?	? -7412,-3419 -7563,-3565
-#: XXX str_cont_ausnahme-Eintrag
-Wildeberstr. (Potsdam): Qualität?	? -7017,-3225 -7248,-3434
+Wildeberstr. (Potsdam): Qualität des Geh/Radweg-Abschnitts?	? -7248,-3434 -7285,-3464
 Wildeberstr. (Potsdam): Qualität?	? -7285,-3464 -7407,-3578
-Waldhornweg (Potsdam): Qualität?	? -6809,-3208 -6959,-3339 -7150,-3513 -7269,-3628
-Otto-Haseloff-Str. (Potsdam): Qualität?	? -6744,-3310 -6811,-3373 -6897,-3456 -7015,-3563 -7117,-3655
+Waldhornweg (Potsdam): Qualität des südwestlichen Abschnitts?	? -7150,-3513 -7269,-3628
+Otto-Haseloff-Str. (Potsdam): Qualität des nordöstlichen Abschnitts?	? -6744,-3310 -6811,-3373
+Otto-Haseloff-Str. (Potsdam): Qualität des südwestlichen Abschnitts?	? -7015,-3563 -7117,-3655
 #: XXX str_cont_ausnahme-Eintrag
 Sternstr. (Potsdam): Qualität des nordöstlichen Abschnitts?	? -6959,-3804 -6796,-3645
 Sternstr. (Potsdam): Qualität des südwestlichen Abschnitts?	? -7228,-4113 -7335,-4235 -7436,-4337 -7480,-4391 -7531,-4446 -7616,-4536 -7702,-4629 -7853,-4790
@@ -4552,9 +4552,6 @@ Am Buchenberg - Schulzendorfer Str.: Qualität? Existiert eine Ausschilderung?	? 
 Am Buchenberg - Schulzendorfer Str.: Qualität? Existiert eine Ausschilderung?	? 554,23349 224,23440 -38,23355 -190,23187 -404,23107 -417,23034 -573,23032 -656,23011
 #: next_check ^^^
 #: XXX ^^^
-Am Kienwerder (Kienwerder): Qualität? Hier auch Betonplatten?	? -4539,-3269 -4437,-3247 -4341,-3227 -4208,-3215 -4027,-3236 -3761,-3313
-Am Birkenhügel (Kienwerder): Qualität?	? -4261,-3576 -4308,-3384 -4341,-3227
-Reiherweg (Kienwerder): Qualität?	? -4498,-3428 -4400,-3403 -4308,-3384
 Alte Feldmark (Kienwerder): Qualität? Im nördlichen Abschnitt auch unbefestigt?	? -4373,-3504 -4400,-3403 -4437,-3247
 # 
 # REMOVED (realisiert) --- #: XXX im südlichen Teil ist die asphaltierte Trasse schon erkennbar, der nördliche Teil wird wahrscheinlich noch gebaut; Zweirichtungsweg auf der nordwestlichen Seite der Straße --- #: source_id: 111100069 --- #: last_checked: 2013-08-16 --- #: next_check: 2013-10-31 --- Lindenberg - Schwanebeck: ist der Radweg fertig gebaut?	?::inwork 18356,22225 18500,22348 18671,22604 19061,23130 19144,23267 19246,23441 19293,23520 19393,23690 19539,23981
@@ -4608,7 +4605,6 @@ Havelstr. (Teltow): Fahrbahnbeschaffenheit?	? 245,-1001 288,-1040 353,-1105 403,
 Kleiststr. (Stahnsdorf): Fahrbahnbeschaffenheit im südlichen Abschnitt?	? -569,-1670 -497,-1802
 Schwarzer Weg (Kleinmachnow): Fahrbahnbeschaffenheit?	? -866,-1615 -872,-1602 -1036,-1315
 Bahnhofstr. (Stahnsdorf): Qualität des östlichen Endes?	? -2878,-3004 -2817,-2967 -2720,-2937 -2657,-2907
-Patrizierweg - Steinstr.: Durchfahrt für Radfahrer möglich? Qualität?	? -7178,-3027 -7114,-3030 -7060,-3124
 #: XXX genaue Lage?
 #: XXX fehlt in Potsdam.coords.data: OT Golm, PLZ=14476
 #: by: http://www.potsdam.de/sites/default/files/documents/endfassungab_nr._6l_pdmstadt2014.pdf
@@ -4805,12 +4801,9 @@ Banzendorf - Hindenberg: Qualität?	? -18287,67361 -18101,67745 -18267,68226 -182
 Golzow - Senftenhütte: Qualität der Straße?	? 36621,56807 37029,56698 37471,56609 37735,56749 38224,57167
 Golzow - Senftenhütte: Qualität der Straße?	? 38597,57514 38956,57644 39237,58124 39783,58604 39940,58908 40109,58965 40362,59162
 Götelstr. - Tharsanderweg: ist der Weg nachts beleuchtet?	? -3416,12165 -3524,11980
-Heidestr. (Stahnsdorf): Qualität?	? -3908,-2723 -3687,-3099 -3612,-3219 -3576,-3283
-Waldstr. (Stahnsdorf): Qualität?	? -3687,-3099 -3748,-3262
-Am Wiesengrund (Kienwerder): Qualität?	? -3748,-3262 -3761,-3313 -3778,-3376 -3835,-3613 -3867,-3713 -3915,-3906 -3911,-4055
 Steinweg (Kleinmachnow): Qualität?	? -2197,-227 -2263,-179 -2387,548 -2406,665
-Heidefeld (Kleinmachnow): Qualität? hier auch Asphalt?	? -3188,-885 -3181,-841 -3189,-778 -3193,-732 -3193,-709 -3127,-641
-Heidefeld (Kleinmachnow): Qualität? hier auch Asphalt?	? -3040,-554 -2975,-494 -2911,-442 -2832,-386 -2715,-314 -2623,-270 -2531,-233 -2432,-211 -2383,-199 -2263,-179
+Heidefeld (Kleinmachnow): Qualität? hier auch Asphalt?	? -3188,-885 -3181,-841 -3189,-778 -3193,-732 -3193,-709
+Heidefeld (Kleinmachnow): Qualität? hier auch Asphalt?	? -2975,-494 -2911,-442 -2832,-386 -2715,-314 -2623,-270 -2531,-233 -2432,-211 -2383,-199 -2263,-179
 Schleusenweg (Stahnsdorf): Radweg Richtung Norden?	?; -2498,-1741 -2519,-1612
 Tannenweg: Qualität im nördlichen Abschnitt? hier auch Asphalt?	? -3130,-2017 -3257,-1772 -3273,-1665
 Heinersdorfer Weg (Teltow): Qualität?	? 1852,-770 1889,-765 2040,-798 2160,-805 2440,-820 2578,-871 2637,-933 2807,-987
@@ -4819,3 +4812,9 @@ An den Koppeln (Teltow): Qualität?	? 2807,-987 2855,-1022 2940,-1031 3004,-1036 
 Osdorfer Str. (Teltow): Qualität im östlichen Abschnitt?	? 2847,-431 2944,-467 3101,-427 3186,-400 3340,-357 3401,-368 3843,-401
 Klaus-Groth-Str. (Teltow): Qualität des Fußwegs?	? 2635,-282 2606,-243
 Klaus-Groth-Str. (Teltow): Qualität im nördlichen Abschnitt?	? 2606,-243 2594,-187
+Heinrich-Hertz-Str. (Kleinmachnow): Qualität? Existiert hier ein Radweg?	? -4229,-463 -4105,-383 -4077,-256
+Bergstr. (Stahnsdorf): Qualität des südlichen Abschnitts?	? -3168,-2498 -3097,-2616 -3045,-2705 -3008,-2767 -2878,-3004 -2796,-3146 -2785,-3164 -2617,-3262
+Friedrich-Naumann-Str. (Stahnsdorf): Qualität des östlichen Abschnitts?	? -3410,-2654 -3317,-2742 -3209,-2797 -3008,-2767 -2835,-2726 -2766,-2683 -2706,-2640 -2632,-2591 -2590,-2557 -2416,-2394 -2394,-2378 -2275,-2314 -2113,-2215
+#: XXX laut osm Kopfsteinpflaster und unbefestigte Straße
+Am Wiesengrund (Kienwerder): Qualität des südlichen Abschnitts?	? -3835,-3613 -3867,-3713 -3915,-3906 -3911,-4055
+Uni Potsdam: Qualität des Wegs?	? -8196,-1912 -8174,-1783 -8157,-1670
