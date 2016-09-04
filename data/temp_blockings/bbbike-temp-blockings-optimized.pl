@@ -3994,16 +3994,7 @@ userdel	q4::inwork 6587,16199 6484,16085
        },
        undef,
        undef,
-       {
-         'data' => 'userdel	q4::temp 3556,13200 3534,13098 3523,13076
-',
-         'from' => 1472799600,
-         'id' => 2822,
-         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.512648.php',
-         'text' => 'Mierendorffplatz: Insel-Kiezfest, Straße zwischen Osnabrücker Str. und Mindener Str. gesperrt, am 03.09.2016',
-         'type' => 'handicap',
-         'until' => 1472939999
-       },
+       undef,
        {
          'data' => '#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.511653.php
 #: by: http://lolp2.de.c3cdn.com/wp/wp-content/uploads/2016/02/Lollapalooza2016_Treptower-Park_Festivalmap_2000x1414_RZ.png
