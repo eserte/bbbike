@@ -25483,4 +25483,21 @@ userdel	q4::inwork; 8642,7876 8731,7956
 #: XXX ^^^
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Littenstr.: Bauarbeiten, Fahrbahn gesperrt, Zufahrt von der Waisenstr. nicht möglich, Einbahnstraßenregelung in der Voltairestr.',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
+#: last_checked: 2016-09-07 vvv
+#: check_frequency: 14d vvv
+	q4::inwork 10954,12635 11059,12450 11084,12395 11092,12375
+	2::inwork 11032,12439 11059,12450
+	2::inwork 11049,12386 11084,12395
+	q2::inwork; 11092,12375 11209,12430
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+EOF
+     },
     );

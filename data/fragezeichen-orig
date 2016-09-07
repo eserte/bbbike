@@ -40,7 +40,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2016-09-06
+#: last_checked: 2016-09-07
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -877,15 +877,17 @@ Dahlemer Weg: wird hier eine Fußgängerampel realisiert?	?::projected 1763,1288 1
 # REMOVED --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5691&options=4 --- Lindenthaler Allee/Königsweg: hier werden Drängelgitter eingerichtet	?::projected -1328,1984 -1296,2025 -1247,2015
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.501190.php vvv
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.515161.php (Fertigstellung) vvv
 #: priority: #C vvv
 #: last_checked: 2016-07-23 vvv
 #: next_check: 2016-09-03 vvv
 #: source_id: 2147340363
-Barnetstr./Nuthestr.: Bau eines Zebrastreifens?	?::inwork 9943,-845 9888,-853 9902,-901
-Barnetstr./Finchleystr.: Bau eines Zebrastreifens?	?::inwork 10685,-1279 10720,-1340 10675,-1380
+Barnetstr./Nuthestr.: wo ist der Zebrastreifen?	? 9943,-845 9888,-853 9902,-901
+Barnetstr./Finchleystr.: wo ist der Zebrastreifen?	? 10685,-1279 10720,-1340 10675,-1380
 #: next_check ^^^
 #: last_checked ^^^
 #: priority ^^^
+#: by ^^^
 #: by ^^^
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3250&options=4 vvv
@@ -1508,8 +1510,8 @@ Liebigstr.: Einrichtung einer Spielstraße, wo genau?	? 14229,12311 14166,12323 1
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7041
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_925_16.pdf
 #: XXX Bauarbeiten zwischen Thaerstr. und Hübnerstr.
-#: last_checked: 2016-09-01
-#: next_check: 2016-09-07
+#: last_checked: 2016-09-07
+#: check_frequency: 14d
 Eldenaer Str.: Verlängerung der Radspuren	? 14355,12752 14096,12827 14066,12836 13979,12861 13960,12866 13844,12900
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5759
@@ -2378,7 +2380,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: XXX_prog ^^^
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20141202.1525.400470.html
-#: last_checked: 2016-08-30
+#: last_checked: 2016-09-07
 #: check_frequency: 90d
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 

@@ -4029,6 +4029,24 @@ userdel	q4::inwork; 8642,7876 8731,7956
          'text' => 'Werner-Voß-Damm und Manfred-von-Richthofen-Str.: Bauarbeiten, Fahrbahn gesperrt (zwischen Boelckestr. und Manfred-von-Richthofen-Str. sowie zwischen Loewenhardtdamm und Wolffring), vom 19. September 2016 bis November 2016',
          'type' => 'handicap',
          'until' => 1480546799
+       },
+       {
+         'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
+#: last_checked: 2016-09-07 vvv
+#: check_frequency: 14d vvv
+	q4::inwork 10954,12635 11059,12450 11084,12395 11092,12375
+	2::inwork 11032,12439 11059,12450
+	2::inwork 11049,12386 11084,12395
+	q2::inwork; 11092,12375 11209,12430
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+',
+         'from' => undef,
+         'id' => 2825,
+         'text' => 'Littenstr.: Bauarbeiten, Fahrbahn gesperrt, Zufahrt von der Waisenstr. nicht möglich, Einbahnstraßenregelung in der Voltairestr.',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
