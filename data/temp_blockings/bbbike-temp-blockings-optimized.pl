@@ -4014,6 +4014,21 @@ userdel	q4::inwork 6587,16199 6484,16085
          'text' => 'Lollapalooza 2016 im Treptower Park: Vorbereitungen, viele Wege sind bereits gesperrt, mindestens bis 11.09.2016',
          'type' => 'gesperrt',
          'until' => 1473631200
+       },
+       {
+         'data' => '#: XXX wann im November sind die Bauarbeiten fertig? vvv
+#: next_check: 2016-11-01 vvv
+userdel	q4::inwork; 8730,8079 8776,8285 8807,8353
+userdel	q4::inwork; 8642,7876 8731,7956
+#: next_check ^^^
+#: XXX ^^^
+',
+         'from' => 1474149600,
+         'id' => 2824,
+         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.514646.php',
+         'text' => 'Werner-Voß-Damm und Manfred-von-Richthofen-Str.: Bauarbeiten, Fahrbahn gesperrt (zwischen Boelckestr. und Manfred-von-Richthofen-Str. sowie zwischen Loewenhardtdamm und Wolffring), vom 19. September 2016 bis November 2016',
+         'type' => 'handicap',
+         'until' => 1480546799
        }
      
 );

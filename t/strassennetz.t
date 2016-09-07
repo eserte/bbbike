@@ -69,30 +69,30 @@ if ($do_xxx) {
 }
 
 {
-    # Melchiorstr.: mäßiger Asphalt	Q1; 11726,11265 11542,11342
-    my $coords = "11542,11342 11726,11265";
+    # Winckelmannstr.: Kopfsteinpflaster Richtung Süden	Q2; 17428,4503 17476,4337
+    my $coords = "17476,4337 17428,4503";
     my $route  = [map { [split /,/] } split /\s+/, $coords];
 
     {
-	pass("-- Melchiorstr.: einseitige Qualitätsangabe --");
+	pass("-- Winckelmannstr.: einseitige Qualitätsangabe --");
 
 	my $net = StrassenNetz->new($qs);
 	$net->make_net_cat(-obeydir => 1, -net2name => 1);
 	my $route = dclone $route;
 	is($net->get_point_comment($route, 0, undef), 0, "Without multiple");
 	$route = [ reverse @$route ];
-	like(($net->get_point_comment($route, 0, undef))[0], qr/mäßiger Asphalt/i);
+	like(($net->get_point_comment($route, 0, undef))[0], qr/Kopfsteinpflaster Richtung Süden/i);
     }
 
     {
-	pass("-- Melchiorstr.: einseitige Qualitätsangabe (dito) --");
+	pass("-- Winckelmannstr.: einseitige Qualitätsangabe (dito) --");
 
 	my $net = StrassenNetz->new($qs);
 	$net->make_net_cat(-obeydir => 1, -net2name => 1, -multiple => 1);
 	my $route = dclone $route;
 	is(scalar $net->get_point_comment($route, 0, undef), 0, "With multiple");
 	$route = [ reverse @$route ];
-	like(($net->get_point_comment($route, 0, undef))[0], qr/mäßiger Asphalt/i);
+	like(($net->get_point_comment($route, 0, undef))[0], qr/Kopfsteinpflaster Richtung Süden/i);
     }
 }
 

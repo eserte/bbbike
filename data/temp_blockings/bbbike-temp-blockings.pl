@@ -25469,4 +25469,18 @@ EOF
 	2::temp 14318,9688 14316,9542 14347,9452 14398,9373 14485,9271 14531,9244 14655,9311 14673,9353 14669,9389 14635,9441
 EOF
      },
+     { from  => 1474149600, # 2016-09-18 00:00
+       until => 1480546799, # 2016-11-30 23:59
+       text  => 'Werner-Voß-Damm und Manfred-von-Richthofen-Str.: Bauarbeiten, Fahrbahn gesperrt (zwischen Boelckestr. und Manfred-von-Richthofen-Str. sowie zwischen Loewenhardtdamm und Wolffring), vom 19. September 2016 bis November 2016',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.514646.php',
+       data  => <<EOF,
+#: XXX wann im November sind die Bauarbeiten fertig? vvv
+#: next_check: 2016-11-01 vvv
+userdel	q4::inwork; 8730,8079 8776,8285 8807,8353
+userdel	q4::inwork; 8642,7876 8731,7956
+#: next_check ^^^
+#: XXX ^^^
+EOF
+     },
     );
