@@ -369,7 +369,6 @@ $progname = basename($0);
 use Sys::Hostname qw(hostname);
 $devel_host = (eval { hostname } =~ /^(biokovo|biokovo-amd64|mosor|vran|cabulja|cvrsnica|spiff|mom|devpc01|devpc01-debian)(\.|$)/i);
 $os =   $^O eq 'MSWin32' || $^O eq 'os2' || $^O eq 'dos' ? 'win'
-      : $^O eq 'MacOS'				    	 ? 'mac'
       : 						   'unix';
 $os_bsd = $^O =~ /bsd/i;
 
@@ -18432,11 +18431,19 @@ sub show_route_strname {
 		-initialdir => $home,
 	       );
 	   return if !defined $file;
-	   if ($os eq 'win' and $file !~ /\.txt$/i) {
+	   if (($os eq 'win' || $^O eq 'darwin') and $file !~ /\.txt$/i) {
+	       # Mac OS X displays .txt and .text files with a "TXT"
+	       # icon in the finder. These, but also suffix-less files
+	       # are opened in a text viewer.
 	       $file .= '.TXT';
 	   }
 	   make_backup($file);
 	   if (open(ROUTE, ">$file")) {
+	       if ($^O eq 'darwin' && $] >= 5.008) {
+		   eval '
+			binmode ROUTE, ":encoding(utf-8)";
+		   '; warn $@ if $@;
+	       }
 	       print ROUTE route_info_to_text();
 	       close ROUTE;
 	   } else {
