@@ -25274,12 +25274,12 @@ EOF
 userdel	2::inwork 16532,26174 16222,25829
 EOF
      },
-     { from  => 1473372000, # 2016-09-09 00:00
-       until => 1473631200, # 2016-09-12 00:00
-       text  => 'Lollapalooza 2016 im Treptower Park: Puschkinallee gesperrt, 10.09.2016 und 11.09.2016',
+     { from  => $isodate2epoch->("2016-09-08 18:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-09-12 06:00:00"),
+       text  => 'Lollapalooza 2016 im Treptower Park: Puschkinallee und Alt-Treptow gesperrt, ab 09.09.2016 abends bis 12.09.2016 morgens',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 15383,9191 14879,9433 14809,9466 14556,9581
+	2::temp 15591,8848 15452,9079 15442,9095 15383,9191 14879,9433 14809,9466 14556,9581
 EOF
      },
      { from  => 1467496800, # 2016-07-03 00:00
@@ -25450,9 +25450,9 @@ EOF
 userdel	q4::temp 3556,13200 3534,13098 3523,13076
 EOF
      },
-     { from  => $isodate2epoch->("2016-08-29 00:00:00"), # 1473372000, # 2016-09-09 00:00
-       until => 1473631200, # 2016-09-12 00:00
-       text  => 'Lollapalooza 2016 im Treptower Park: Vorbereitungen, viele Wege sind bereits gesperrt, mindestens bis 11.09.2016',
+     { from  => $isodate2epoch->("2016-08-29 00:00:00"),
+       until => $isodate2epoch->("2016-09-12 23:59:59"),
+       text  => 'Lollapalooza 2016 im Treptower Park: viele Parkwege sind gesperrt, mindestens bis 12.09.2016',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.511653.php
@@ -25498,6 +25498,28 @@ EOF
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
+EOF
+     },
+     { from  => 1472680800, # 2016-09-01 00:00
+       until => $isodate2epoch->("2016-11-05 16:00:00"),
+       text  => 'Goltzstr.: Richtung Süden zwischen Mertensstr. und Rauchstr. Baustelle, Fahrtrichtung gesperrt, 02.09.2016 bis 05.11.2016',
+       type  => 'handicap',
+       source_id => '2147340513',
+       data  => <<EOF,
+userdel	q4::inwork; -2517,17431 -2606,17272 -2666,17168 -2728,17038
+EOF
+     },
+     { from  => 1473285600, # 2016-09-08 00:00
+       until => 1473674400, # 2016-09-12 12:00
+       text  => 'Straße des 17. Juni und Ebertstr.: Sperrungen wegen der Sportveranstaltung "Berlin fliegt", ab 09.09.2016 bis 12.09.2016',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
+userdel	2::temp 8600,12165 8538,12245 8610,12254
+userdel auto	3 8522,12239 8538,12245 8522,12187
+userdel auto	3 8522,12187 8538,12245 8522,12239
+userdel auto	3 8391,12389 8344,12221 8327,12174
+userdel auto	3 8327,12174 8344,12221 8391,12389
 EOF
      },
     );

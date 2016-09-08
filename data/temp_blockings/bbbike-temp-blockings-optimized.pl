@@ -3921,13 +3921,13 @@ userdel	2::inwork 16532,26174 16222,25829
          'until' => 1475359199
        },
        {
-         'data' => '	2::temp 15383,9191 14879,9433 14809,9466 14556,9581
+         'data' => '	2::temp 15591,8848 15452,9079 15442,9095 15383,9191 14879,9433 14809,9466 14556,9581
 ',
-         'from' => 1473372000,
+         'from' => 1473350400,
          'id' => 2805,
-         'text' => 'Lollapalooza 2016 im Treptower Park: Puschkinallee gesperrt, 10.09.2016 und 11.09.2016',
+         'text' => 'Lollapalooza 2016 im Treptower Park: Puschkinallee und Alt-Treptow gesperrt, ab 09.09.2016 abends bis 12.09.2016 morgens',
          'type' => 'gesperrt',
-         'until' => 1473631200
+         'until' => 1473652800
        },
        undef,
        {
@@ -4011,9 +4011,9 @@ userdel	q4::inwork 6587,16199 6484,16085
 ',
          'from' => 1472421600,
          'id' => 2823,
-         'text' => 'Lollapalooza 2016 im Treptower Park: Vorbereitungen, viele Wege sind bereits gesperrt, mindestens bis 11.09.2016',
+         'text' => 'Lollapalooza 2016 im Treptower Park: viele Parkwege sind gesperrt, mindestens bis 12.09.2016',
          'type' => 'gesperrt',
-         'until' => 1473631200
+         'until' => 1473717599
        },
        {
          'data' => '#: XXX wann im November sind die Bauarbeiten fertig? vvv
@@ -4047,6 +4047,30 @@ userdel	q4::inwork; 8642,7876 8731,7956
          'text' => 'Littenstr.: Bauarbeiten, Fahrbahn gesperrt, Zufahrt von der Waisenstr. nicht möglich, Einbahnstraßenregelung in der Voltairestr.',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => 'userdel	q4::inwork; -2517,17431 -2606,17272 -2666,17168 -2728,17038
+',
+         'from' => 1472680800,
+         'id' => 2826,
+         'source_id' => '2147340513',
+         'text' => 'Goltzstr.: Richtung Süden zwischen Mertensstr. und Rauchstr. Baustelle, Fahrtrichtung gesperrt, 02.09.2016 bis 05.11.2016',
+         'type' => 'handicap',
+         'until' => 1478358000
+       },
+       {
+         'data' => 'userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
+userdel	2::temp 8600,12165 8538,12245 8610,12254
+userdel auto	3 8522,12239 8538,12245 8522,12187
+userdel auto	3 8522,12187 8538,12245 8522,12239
+userdel auto	3 8391,12389 8344,12221 8327,12174
+userdel auto	3 8327,12174 8344,12221 8391,12389
+',
+         'from' => 1473285600,
+         'id' => 2827,
+         'text' => 'Straße des 17. Juni und Ebertstr.: Sperrungen wegen der Sportveranstaltung "Berlin fliegt", ab 09.09.2016 bis 12.09.2016',
+         'type' => 'gesperrt',
+         'until' => 1473674400
        }
      
 );

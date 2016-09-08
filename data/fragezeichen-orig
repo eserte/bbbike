@@ -1452,6 +1452,11 @@ Planstraﬂe A: Straﬂenname? Qualit‰t? Wird es eine Verbindung (f¸r Fuﬂg‰nger/Radf
 # - Fragen nach genauen Routenverl‰ufen
 # - XXX_prog- und XXX_indoor-Eintr‰ge
 # 
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.515606.php
+#: XXX Wird es w‰hrend der Bauarbeiten Behinderungen geben? Wann sind die Bauarbeiten fertig? Wird die Qualit‰t danach besser sein?
+#: next_check: 2016-09-12
+Spreeradweg: Um- und Ausbau	?::inwork 3763,12624 3654,12672 3582,12704 3476,12735 3396,12741 3332,12742
+# 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6172.html
 Messedamm: wo befindet sich die provisorische Fuﬂg‰ngerampel?	? 2040,11196 2016,11034 2097,11194
 # 
@@ -2755,8 +2760,11 @@ Bebauungsplan 10-77: werden hier neue Straﬂen entstehen?	?::projected 21483,1652
 Antonyplatz: Benennung eines Platzes	? 4879,20427
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2016
-#: XXX am nˆrdlichen Ende keine Schilder
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.515951.php (offizielle Benennung)
+#: XXX wird es Schilder geben?
 #: last_checked: 2016-08-26
+#: next_check: 2016-09-14
+#: priority: #A
 Mariendorfer-Hafen-Weg und Mariendorfer-Hafen-Steg: Benennung eines Weges und Stegs, existieren schon Straﬂenschilder?	? 8199,3338 8145,3380 8106,3410 8016,3651 7795,4242 7769,4315 7667,4549
 #
 #: XXX ein Schild an der Attilastr. hat explizit Radfahrer erw‰hnt
