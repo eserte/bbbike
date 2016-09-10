@@ -19910,11 +19910,12 @@ EOF
        until => $isodate2epoch->("2016-09-11 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 9]],
-       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., Veranstaltung (Fest an der Panke), Straße vollständig gesperrt (10.09.2016-11.09.2016)',
+       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (10.09.2016-11.09.2016)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.laubinger.de/termine/47-fest-an-der-panke/
-userdel	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345
+	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345
+	2::temp 10602,18382 10562,18506 10532,18601
 EOF
      },
      { from  => 1315040400, # 2011-09-03 11:00
@@ -25264,13 +25265,12 @@ userdel	2::inwork -2955,15129 -2929,15082 -2965,15053 -3008,14992 -3008,14910 -2
 EOF
      },
      { from  => 1467237600, # 2016-06-30 00:00
-       until => 1475359199, # 2016-10-01 23:59
+       until => 1473446141, # 1475359199, # 2016-10-01 23:59
        text  => 'Röntgentaler Weg: Bauarbeiten, Weg wird für Radfahrer und Fußgänger gesperrt sein, voraussichtlich Anfang Juli 2016 bis Anfang Oktober 2016',
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2016/pressemitteilung.491050.php',
        data  => <<EOF,
-#: XXX danach enthält der Weg einen "Bitumenbelag"
-#: next_check: 2016-10-01
+# REMOVED --- #: XXX danach enthält der Weg einen "Bitumenbelag" --- #: next_check: 2016-10-01
 userdel	2::inwork 16532,26174 16222,25829
 EOF
      },
@@ -25336,7 +25336,7 @@ userdel	q3::inwork 7130,1253 7081,1346 6984,1540 6881,1743
 EOF
      },
      { from  => 1469311200, # 2016-07-24 00:00
-       until => $isodate2epoch->("2016-09-09 23:59:59"), # 1472680799, # 2016-08-31 23:59
+       until => 1473447309, # $isodate2epoch->("2016-09-09 23:59:59"), # 1472680799, # 2016-08-31 23:59
        text  => 'Elsenstr.: Baustelle zwischen Kressenweg und Hultschiner Damm, Fahrbahn gesperrt, bis 09.09.2016',
        type  => 'gesperrt',
        source_id => '2147340370',
@@ -25510,9 +25510,10 @@ userdel	q4::inwork; -2517,17431 -2606,17272 -2666,17168 -2728,17038
 EOF
      },
      { from  => 1473285600, # 2016-09-08 00:00
-       until => 1473674400, # 2016-09-12 12:00
+       until => $isodate2epoch->("2016-09-12 09:00:00"), # 1473674400, # 2016-09-12 12:00b
        text  => 'Straße des 17. Juni und Ebertstr.: Sperrungen wegen der Sportveranstaltung "Berlin fliegt", ab 09.09.2016 bis 12.09.2016',
        type  => 'gesperrt',
+       source_id => '2147339672',
        data  => <<EOF,
 userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 userdel	2::temp 8600,12165 8538,12245 8610,12254

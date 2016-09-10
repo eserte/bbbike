@@ -396,7 +396,7 @@ Ausbau Dresdener Bahn: Bahnunterführung wird gebaut, geänderte Straßenführung	?:
 # REMOVED (nicht relevant) --- #: XXX Pappelallee/Stahlheimer Straße (Prenzlauer Berg) in beiden Richtungen zwischen Stargarder Straße und Wichertstraße (Berlin)  Gültig ab: 29.07.2016 14:03  Vollsperrung, Absenkung der Fahrbahn	LMS-BR_r_LMS-BR_74872 --- Pappelallee: ist die Sperrung auch für Radfahrer relvant?	?::inwork 11301,15668 11373,15789 11393,15823 11455,15916
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2016
-#: XXX Berlin.coods.data-Eintrag fehlt
+#: XXX Berlin.coods.data-Eintrag fehlt, PLZ=14089
 #: XXX Privatstraße
 #: next_check: 2016-09-19
 Am Carolinenhof: existiert die Straße schon? Qualität? Genaue Lage?	? -8100,3994 -8146,3916 -8154,3863
@@ -934,7 +934,7 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 # 
 #: by: http://www.bwb.de/content/language1/html/10337.php#11671
 #: osm_watch: way id="75509950" version="11"
-#: last_checked: 2016-08-30
+#: last_checked: 2016-09-09
 #: check_frequency: 60d
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12085,9778 12074,9689 12066,9558
 #: by: ^^^
@@ -944,7 +944,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12085,977
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="13"
-#: last_checked: 2016-08-30
+#: last_checked: 2016-09-09
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -1069,7 +1069,7 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Realisierung ab 2014)
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4757 (Vorschlag: Führungsschienen für den Elsensteg)
 #: osm_watch: way id="182693863" version="1"
-#: last_checked: 2016-03-04
+#: last_checked: 2016-09-09
 #: check_frequency: 180d
 Innstr.: eventuell wird hier asphaltiert, vielleicht auch der Zugang zum Elsensteg erleichtert?	?::projected 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
 # REMOVED (VS realisiert) --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (in Bau, Stand 2012-04) --- Buckower Damm: eventuell werden die Radwege hier asphaltiert oder neues Verbundsteinpflaster verlegt?	? 12673,3619 12684,3406 12687,3319 12701,2955 12695,2789 12693,2746 12694,2570 12694,2544 12694,2517
@@ -1464,9 +1464,7 @@ Messedamm: wo befindet sich die provisorische Fußgängerampel?	? 2040,11196 2016,
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.513299.php
 Ma-Damm: Kaiserstr. - Alt-Mariendorf, gibt es für Radfahrer Einschränkungen durch die Reparaturarbeiten?	?; 9310,4407 9333,4229 9346,4144 9372,4012 9426,3797
 # 
-#: XXX bis 30.10.16, by fritz
-#: XXX NEW	Naumburger Str. (Neukölln) Höhe Grenzallee (Berlin)  Gültig ab: 31.08.2016 06:00  Baustelle, Zufahrt zur Grenzallee gesperrt (bis Ende 09/16)	2147340488
-Naumburger Str.: Einbahnstraßenregelung auch für Radfahrer relevant?	?::inwork 13278,6967 13520,6583
+# REMOVED (keine Einschränkungen gesehen) --- #: XXX bis 30.10.16, by fritz --- #: XXX NEW	Naumburger Str. (Neukölln) Höhe Grenzallee (Berlin)  Gültig ab: 31.08.2016 06:00  Baustelle, Zufahrt zur Grenzallee gesperrt (bis Ende 09/16)	2147340488 --- Naumburger Str.: Einbahnstraßenregelung auch für Radfahrer relevant?	?::inwork 13278,6967 13520,6583
 # 
 Kommandantenstr. - Oranienstr.: Verbindung prüfen	? 10593,11120 10633,11051 10644,11019 10637,10996
 # 
@@ -1562,8 +1560,8 @@ Hundsfelder Str.: gibt es hier eine Einbahnstraße?	? 21700,-537 21688,-589
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5289
 #: XXX am 2016-07-11 gegen 9 Uhr --- keine größeren Beeinträchtigungen
 #: XXX ggfs. online checken
-#: last_checked: 2016-08-28
-#: next_check: 2016-09-05
+#: last_checked: 2016-09-09
+#: next_check: 2016-09-12
 Saalestr.: Dauerstau? Prüfen!	?; 13323,7210 13161,7173 13051,7157
 # 
 (Paul-Schwarz-Promenade - Dalandweg): gibt's hier Bordsteine oder eine signifikante Steigung?	? 5387,4214 5396,4229
@@ -1606,6 +1604,7 @@ Maienwerderweg: wie sieht die Qualität zurzeit aus?	? 127,17176 660,17352 1270,1
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6703 vvv
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036827265989/827265989/00127185/85-Anlagen/02/Koggebrunnen.pdf vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2016
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: last_checked: 2016-08-21 vvv
 #: check_frequency: 60d vvv
 Im Achterkastell: neue Straße	?::projected 18730,11833 18732,11885 18887,11880 18888,11910
@@ -2583,7 +2582,7 @@ Planstraßen im Marienhain: Straßennamen? Qualität?	? 22771,3151 22476,3118 22485
 #: by: http://www.berlin.de/imperia/md/content/baneukoelln/b-plan/auslegung/planzeichnungen/8_9bab_pl.pdf?start&ts=1393408069&file=8_9bab_pl.pdf
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4570
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/45081036990958011/990958011/00040576/76-Anlagen/06/8-9bab_pl.pdf
-#: XXX Straßenname vermutlich "An der Neumark", Privatstraße, fehlt in Berlin.coords.data
+#: XXX Straßenname vermutlich "An der Neumark", Privatstraße, fehlt in Berlin.coords.data, PLZ=12347
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/12re.pdf/file?y=2016
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: last_checked: 2016-05-13
@@ -2774,6 +2773,7 @@ zukünftiger Mariendorfer-Hafen-Weg: ist das Radfahren hier doch erlaubt?	? 7667,
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036284949883/284949883/00122677/77-Anlagen/02/Anlage1775.pdf
 #: XXX geplante neue Straßen im Komplex ArendsCarrée (Bebauungsplan 11-24 VE), noch nicht bestätigt, fehlen in Berlin.coords.data, genaue Lage? vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2016
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: XXX Privatstraßen
 #: last_checked: 2016-07-24 vvv
 #: check_frequency: 270d vvv

@@ -2693,7 +2693,8 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        {
          'data' => '#: by: http://www.laubinger.de/termine/47-fest-an-der-panke/
-userdel	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345
+	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345
+	2::temp 10602,18382 10562,18506 10532,18601
 ',
          'from' => 1473372000,
          'id' => 2281,
@@ -2707,7 +2708,7 @@ userdel	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 1028
                               9
                             ]
                           ],
-         'text' => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., Veranstaltung (Fest an der Panke), Straße vollständig gesperrt (10.09.2016-11.09.2016)',
+         'text' => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (10.09.2016-11.09.2016)',
          'type' => 'gesperrt',
          'until' => 1473631199
        },
@@ -3908,18 +3909,7 @@ userdel	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
          'type' => 'gesperrt',
          'until' => 1475272799
        },
-       {
-         'data' => '#: XXX danach enthält der Weg einen "Bitumenbelag"
-#: next_check: 2016-10-01
-userdel	2::inwork 16532,26174 16222,25829
-',
-         'from' => 1467237600,
-         'id' => 2804,
-         'source_id' => 'http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2016/pressemitteilung.491050.php',
-         'text' => 'Röntgentaler Weg: Bauarbeiten, Weg wird für Radfahrer und Fußgänger gesperrt sein, voraussichtlich Anfang Juli 2016 bis Anfang Oktober 2016',
-         'type' => 'gesperrt',
-         'until' => 1475359199
-       },
+       undef,
        {
          'data' => '	2::temp 15591,8848 15452,9079 15442,9095 15383,9191 14879,9433 14809,9466 14556,9581
 ',
@@ -3955,17 +3945,7 @@ userdel	q4::inwork 12911,1815 12817,2031
        },
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: ELSENSTR-2016
-userdel	2::inwork 23792,10926 24203,10848 24229,10843
-',
-         'from' => 1469311200,
-         'id' => 2811,
-         'source_id' => '2147340370',
-         'text' => 'Elsenstr.: Baustelle zwischen Kressenweg und Hultschiner Damm, Fahrbahn gesperrt, bis 09.09.2016',
-         'type' => 'gesperrt',
-         'until' => 1473458399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4068,9 +4048,10 @@ userdel auto	3 8327,12174 8344,12221 8391,12389
 ',
          'from' => 1473285600,
          'id' => 2827,
+         'source_id' => '2147339672',
          'text' => 'Straße des 17. Juni und Ebertstr.: Sperrungen wegen der Sportveranstaltung "Berlin fliegt", ab 09.09.2016 bis 12.09.2016',
          'type' => 'gesperrt',
-         'until' => 1473674400
+         'until' => 1473663600
        }
      
 );

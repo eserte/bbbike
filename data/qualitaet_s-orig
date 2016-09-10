@@ -267,7 +267,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX ggfs. Bauarbeiten bis Mitte September 2016 (laut rbbtext)
 #: source_id: INKO_2147340291_COPY_1
 #: source_id: 2147340291
-#: last_checked: 2016-09-06
+#: last_checked: 2016-09-09
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9053,16029 8923,15850
 Böttgerstr.: Asphalt	Q0 9123,15963 8923,15850
@@ -462,8 +462,7 @@ Richardstr.: Asphalt	Q0 12797,8168 12870,8087 13045,7938
 Richardstr.: Kopfsteinpflaster	Q2 13045,7938 13085,7904 13103,7889 13150,7845 13226,7775 13245,7742
 Richardstr.: Asphalt	Q0 13245,7742 13278,7673
 Richardstr.: Kopfsteinpflaster	Q2 13278,7673 13288,7653 13303,7622
-Richardstr.: Asphalt	Q0 13303,7622 13339,7452
-Richardstr.: Kopfsteinpflaster, OK	Q1 13339,7452 13345,7424 13369,7307
+Richardstr.: Asphalt	Q0 13303,7622 13339,7452 13345,7424 13369,7307
 Hertzbergstr.: Kopfsteinpflaster	Q2 13423,7757 13416,7712
 Alt-Rudow: Asphalt	Q0 16975,1262 16849,1437
 Fichtestr.: Kopfsteinpflaster, mit Teer gefugt	Q2+ 11108,9187 11055,9539
@@ -2005,7 +2004,9 @@ Gudrunstr.: Asphalt	Q0 17466,12241 17300,12173 17195,12125 17139,12100 17088,120
 # REMOVED (neu asphaltiert) --- #: XXX eventuell wurde hier neu asphaltiert, prüfen! --- Marzahner Chaussee (bis zur Kurve): mäßiger Asphalt	Q1; 19173,13478 19194,13272
 (Eichhörnchensteig - Wildpfad): enger Waldpfad	Q2 1449,7519 1485,7651 1509,7700
 Röntgentaler Weg (durch den Schloßpark): Asphalt	Q0 16166,25767 16222,25829
-Röntgentaler Weg (durch den Schloßpark): fester Waldweg	Q1 16222,25829 16532,26174
+#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2016/pressemitteilung.516230.php
+#: XXX Qualität nochmal prüfen
+Röntgentaler Weg (durch den Schloßpark): Bitumendecke	Q0 16222,25829 16532,26174
 #: note: vom Zug aus gesehen:
 Röntgentaler Weg: schlechtes Kopfsteinpflaster, teilweise mit Asphaltflicken	Q3 16532,26174 17101,26701 17186,26779 17395,26968
 Treseburger Ufer: Kopfsteinpflaster, Umgehen auf dem Uferweg möglich	Q2 12052,5710 12177,5746 12301,5783
