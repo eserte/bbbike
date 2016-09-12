@@ -51,8 +51,11 @@ Kopenhagener Str.: mäßiger Radweg auf beiden Seiten (gepflastert), Straße OK	Q0 
 Hauptstr. (Rosenthal, Wilhelmsruh): Asphalt	Q0 7634,19793 7672,19869 7711,19956 7748,20040 7790,20132 7832,20219 7900,20378 7979,20528 8055,20708 8081,20785 8092,20817 8107,20859 8167,21020
 Hauptstr. (Rosenthal, Wilhelmsruh): Kopfsteinpflaster auf der Straße, Radwege OK	Q1 8277,21257 8167,21020
 Hauptstr. (Rosenthal, Wilhelmsruh)/Mönchmühler Str.: schlechtes Kopfsteinpflaster (12 km/h)	Q3 8277,21257 8389,21468 8460,21602 8473,21633 8568,21863 8556,21918 8401,22013 8430,22110 8439,22143 8464,22215 8543,22413 8554,22440 8900,23274 8903,23349 8909,23506
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4247 (Asphaltierung??)
+#: XXX: wurden Bahnhofstr. und Hauptstr. in Blankenfelde mittlerweile asphaltiert? Oder ist nur der östliche Abschnitt gemeint? vvv
 Bahnhofstr.: schlechtes Kopfsteinpflaster	Q3 8803,23478 8909,23506
 Hauptstr. (Blankenfelde): schlechtes Kopfsteinpflaster	Q3 8909,23506 9175,23620
+#: XXX ^^^
 Hauptstr. (Blankenfelde): Asphalt	Q0 9175,23620 9228,23643
 #: corrected_by: Jessaï Arakelian (früher schlechtes Kopfsteinpflaster)
 Hauptstr. (Blankenfelde): Asphalt	Q0 9228,23643 9415,23699
@@ -146,7 +149,7 @@ Corneliusstr.: mäßiges Kopfsteinpflaster	Q2 6880,11110 6841,11114 6630,11247 647
 Kopernikusstr.: mäßiges Kopfsteinpflaster	Q2 13467,11778 13651,11731
 Torellstr.: mäßiges Kopfsteinpflaster	Q2 13295,11792 13467,11778
 #: XXX Bauarbeiten, danach vielleicht teilweise bessere Qualität?
-#: last_checked: 2016-09-07
+#: last_checked: 2016-09-12
 #: check_frequency: 60d
 Rüdersdorfer Str.: Asphalt mit Schäden	Q1- 13295,11792 13173,11788 13066,11854
 Kaskelstr.: relative glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
@@ -2206,7 +2209,7 @@ Beethovenstr.: kleinteiliges Kopfsteinpflaster, uneben	Q2 10155,-2739 10219,-289
 Marie-Curie-Str.: Asphalt mit leichten Unebenheiten	Q0- 16751,10674 16751,10696 16861,10923
 Marie-Curie-Str.: Asphalt mit Schäden	Q1 16861,10923 16967,11162
 Marie-Curie-Str.: Asphalt mit leichten Unebenheiten	Q0- 16967,11162 17070,11375 17208,11658
-Debenzer Str.: Asphalt	Q0 19885,10619 19910,10630 20143,10731 20426,10854 20578,10949
+Debenzer Str.: Asphalt	Q0 19885,10619 19910,10630 20143,10731 20426,10854 20579,10944
 Debenzer Str.: Plattenweg	Q2+ 19885,10619 19912,10543
 Wilhelmsbrücker Str.: Asphalt	Q0 20510,11162 20370,11168
 Brachfelder Str.: Asphalt	Q0- 20370,11168 20365,11025 20364,10970 20426,10854
@@ -2788,8 +2791,7 @@ Gerhart-Hauptmann-Str.: Asphalt	Q0 22988,8952 23071,9151
 Roedernstr.: Asphalt	Q0 23289,8993 23176,9037 23071,9151 23047,9186 23031,9209
 Klara-Schabbel-Str.: Asphalt mit Schäden	Q1 20705,9979 20527,9961 20337,9948
 Klara-Schabbel-Str.: Beton mit Schäden	Q1 20337,9948 20208,9932
-#: XXX ist die Straße mittlerweile asphaltiert?
-Lissaer Str.: unbefestigte Straße	Q2 20349,10239 20536,10233 20711,10230
+Lissaer Str.: asphaltiert	Q0 20349,10239 20536,10233 20711,10230
 Georg-Löwenstein-Str.: Asphalt	Q0 16030,9830 16155,9992 16187,10033
 (Rummelsburger Bucht - Georg-Löwenstein-Str.): Asphalt	Q0 16002,9787 16030,9830
 Karl-Wilker-Str.: Asphalt, einige Meter gepflastert an der Friedrich-Jacobs-Promenade	Q0- 15952,10134 16066,10054 16155,9992
@@ -4179,8 +4181,8 @@ Schrodaer Str.: unbefestigte Straße, teilweise sehr sandig	Q3+ 20092,10840 19964
 Brandorfer Weg: Asphalt	Q0 20536,11022 20524,11016 20365,11025
 Baggerseestr.: unbefestigte Straße	Q2 20281,11341 20346,11337
 Baggerseestr.: Beton/Verbundsteinpflaster	Q1 20346,11337 20413,11334
-Arno-Philippsthal-Str.: Asphalt	Q0 20641,11480 20630,11342
-Stawesdamm: unbefestigter Weg, Feinschotter	Q2+ 20623,11481 20631,11621 20633,11651
+Arno-Philippsthal-Str.: Asphalt	Q0 20641,11485 20630,11342
+Stawesdamm: unbefestigter Weg, Feinschotter	Q2+ 20623,11485 20631,11621 20633,11651
 Parkweg (Biesdorf): rauer Asphalt	Q1+ 20587,11824 20694,11811
 Parkweg (Biesdorf): Beton	Q0- 20694,11811 20779,11801
 Lötschbergstr.: Asphalt	Q1 20114,11233 20135,11269
@@ -7322,7 +7324,7 @@ Mittelweg (Kaulsdorf): Gras	Q3+ 23654,12730 23669,12772
 (Wuhlewanderweg - Buckower Ring): wassergebundene Decke	Q1- 22058,13366 22038,13338 21826,13371
 (Wuhlewanderweg - Buckower Ring): wassergebundene Decke	Q1- 22067,13333 22038,13338
 Kleiner-Heufalter-Weg: Verbundsteinpflaster	Q1+ 21260,11015 21361,11061
-Grabensprung: Beton/Verbundsteinpflaster	Q1+ 20681,10772 20641,10840 20622,10874 20586,10935 20578,10949
+Grabensprung: Beton/Verbundsteinpflaster	Q1+ 20681,10772 20641,10840 20622,10874 20586,10935 20579,10944
 Budapester Weg: Asphalt	Q0 20515,11275 20581,11272 20647,11267 20713,11263 20817,11257
 Rauhkopfweg: Verbundsteinpflaster	Q0- 20581,11240 20581,11272
 Stachelbartweg: Verbundsteinpflaster	Q0- 20646,11237 20647,11267
@@ -10103,9 +10105,10 @@ Am Bullengraben: sehr guter Asphalt	Q0 -6272,13472 -6265,13475 -6209,13499 -6076
 Kerrweg: unbefestigte Straße	Q2 -6269,13464 -6189,13497 -6125,13540 -6010,13586 -5962,13584 -5917,13582
 Straße zum Müggelturm: Asphalt/Beton	Q0- 25008,2889 25010,2794 24978,2634 24981,2580 24982,2519 24641,2074 24630,2034 24634,1974 24673,1888 24726,1837 24889,1743 24973,1690
 Lohmeyerstr.: Kopfsteinpflaster	Q2 3348,12314 3409,12451
+#: next_check_id: OLYMPIAVIERTEL-2016 vvv
 #: add_fragezeichen: Wann werden die Straßen im Olympiaviertel ausgebaut? vvv
 #: XXX wird hier auch verkehrsberuhigt, zumindest teilweise? vvv
-#: last_checked: 2016-08-27 vvv
+#: last_checked: 2016-09-11 vvv
 Helga-Haase-Str.: unbefestigte Baustraße	Q2- 17465,16340 17508,16356 17611,16396 17673,16420 17792,16465
 #: osm_watch: way id="354078625" version="4"
 Jutta-Langenau-Str.: unbefestigte Baustraße	Q2- 17615,16310 17643,16322 17818,16397 17857,16414 17877,16423
@@ -10123,6 +10126,7 @@ Anna-Maria-Müller-Str.: unbefestigte Baustraße	Q2- 17734,16587 17712,16549
 #: last_checked ^^^
 #: XXX ^^^
 #: add_fragezeichen ^^^
+#: next_check_id ^^^
 (Marzahner Promenade - Landsberger Allee [Wohngebiet]): Asphalt	Q0 20731,15742 20759,15740
 (Marzahner Promenade - Landsberger Allee [Wohngebiet]): Beton	Q1 20759,15740 20789,15736
 Heinrich-Grüber-Str: Asphalt mit Schäden	Q1 23244,12417 23299,12600 23321,12673
@@ -10185,6 +10189,7 @@ Schwarzschildstr.: Betonpflaster	Q1+ 18766,2525 18759,2592
 (Wolfener Str. - Weg am Cleantech Business Park): Verbundsteinpflaster	Q1- 20228,17266 19907,17429
 zur Kieler Brücke: Kopfsteinpflaster	Q2 7804,14445 7780,14431
 Kieler Brücke: Holzbohlen	Q1 7780,14431 7740,14409
+(Am Märchenbrunnen): Betonplatten	Q1- 11823,13635 11899,13750
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -11789,6 +11794,9 @@ Boris-Pasternak-Weg: guter Asphalt	Q0 9958,19053 10055,18831
 Majakowskiring: schlechtes Kopfsteinpflaster	Q3 9985,18735 9937,18728
 Majakowskiring: asphaltiert mit den üblichen Schlaglöchern	Q1 10373,18889 10307,18915 10184,18875 10162,18867 10055,18831 10003,18798 9985,18735 10041,18697 10203,18762 10354,18814 10373,18889
 Majakowskiring: asphaltiert mit den üblichen Schlaglöchern	Q1 10434,18907 10373,18889
+#: XXX Asphaltierung ist geplant
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4247
+#: next_check: 2017-06-01
 Güllweg: mäßiges Kopfsteinpflaster	Q2 10115,19105 10068,19276 10059,19304 10018,19429
 #: by: ^^^
 # 
@@ -12709,7 +12717,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20131119.1100.391816.html (BA-Beschluss 277/2013)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: osm_watch: way id="42689070" version="5"
-#: last_checked: 2016-06-29
+#: last_checked: 2016-09-11
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -18212,8 +18220,10 @@ Baumbachstr.: schlechtes Kopfsteinpflaster	Q3 11441,16612 11441,16745
 #: by: henrikwillborn: vvv
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> Asphalt)
 Feldtmannstr.: Asphalt	Q0 16460,17214 16418,17311 16380,17356 16326,17407
-#: corrected_by: srt (schlechtes Kopfsteinpflaster -> mäßig)
+#: corrected_by: srt (schlechtes Kopfsteinpflaster -> mäßig) vvv
 Feldtmannstr.: mäßiges Kopfsteinpflaster	Q2 16326,17407 16302,17439 15920,17495
+Feldtmannstr.: mäßiges Kopfsteinpflaster	Q2 16302,17439 16324,17435
+#: corrected_by ^^^
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> Asphalt)
 Feldtmannstr.: Asphalt	Q0 15920,17495 15821,17510 15810,17512 15239,17599
 #: by: ^^^
@@ -20785,7 +20795,7 @@ Aurorafalterweg: Asphalt	Q0 21132,10923 21182,10920 21284,10956 21402,11009
 Apfelwicklerstr.: Asphalt	Q0 21475,10590 21456,10631 21434,10678 21428,10691
 Dukatenfalterweg: Asphalt	Q0 21896,10892 21765,10834 21649,10777
 Feuerfalterstr.: Asphalt	Q0 21578,10977 21543,11064 21513,11137
-Minsker Str.: Asphalt	Q0 20828,11466 20820,11333 20818,11293 20817,11257 20834,11150
+Minsker Str.: Asphalt	Q0 20828,11480 20820,11333 20818,11293 20817,11257 20834,11150
 #: confirmed_by: srt
 Haltoner Str.: Asphalt	Q0 20536,11022 20602,11050 20659,11076 20719,11101 20834,11150 20968,11203
 Wettersternweg: Asphalt	Q0 20719,11101 20708,11145 20710,11234
@@ -22837,6 +22847,8 @@ Privatstr. 2: Asphalt	Q0 16905,17281 17028,17298 17162,17294
 #: confirmed_by: srt
 Privatstr. 2: mäßiger Asphalt, unebene Fahrbahn, teilweise unbefestigte Stellen	Q1- 17162,17294 17286,17277 17404,17238
 Privatstr. 3: mäßiger Asphalt, unebene Fahrbahn, diverse kleine Schlaglöcher	Q1- 16920,17204 17027,17219 17153,17216 17375,17165
+#: XXX zurzeit Bauarbeiten, danach vielleicht bessere Qualität?
+#: last_checked: 2016-09-11
 Privatstr. 4: mäßiger Asphalt, unebene Fahrbahn, diverse kleine Schlaglöcher	Q1- 16934,17132 17125,17147 17146,17147 17167,17145 17346,17100
 Privatstr. 6: schlechter Asphalt, unebene Fahrbahn, diverse Schlaglöcher	Q2 16966,16978 17134,16988 17290,16957
 #: corrected_by: srt (mäßiger Asphalt -> ..., neu gemacht?)
@@ -22844,7 +22856,7 @@ Privatstr. 8: Asphalt	Q0 16992,16840 17120,16849 17237,16825
 #: corrected_by: srt (hier besser)
 Privatstr. 9: Asphalt	Q0 17004,16778 17117,16785
 #: confirmed_by: srt
-Privatstr. 9: mäßiger Asphalt, unebene Fahrbahn, diverse kleine Schlaglöcher	Q1 17117,16785 17212,16760
+Privatstr. 9: mäßiger Asphalt, unebene Fahrbahn, diverse kleine Schlaglöcher	Q1- 17117,16785 17212,16760
 Privatstr. 12: schlechter Asphalt, unebene Fahrbahn, diverse Schlaglöcher	Q2 17182,17375 17418,17277
 #: note: "mäßig von Fußgängern frequentiert, da der Weg gut 2 m breit ist, hatte ich da auch noch nie Probleme mit den Fußgängern beim Vorbeifahren"
 #: confirmed_by: srt

@@ -2723,6 +2723,9 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2016-09-12
+Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3 9042,11839 8969,11814
+# 
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: last_checked: 2016-09-02
@@ -2742,7 +2745,7 @@ Sülzhayner Str.: komplett gesperrt wegen Bauarbeiten, vielleicht dauerhaft	2::in
 #: check_frequency: 60d
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 # 
-#: last_checked: 2016-09-09
+#: last_checked: 2016-09-11
 Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2 14447,10491 14270,10584
 # 
 #: next_check_id: MARIANNEN-2016 vvv
@@ -2761,7 +2764,7 @@ Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11671,10402 11616,10288
 #: next_check_id ^^^
 # 
 #: next_check_id: MINNATODENHAGENSTR-2016
-#: last_checked: 2016-08-27
+#: last_checked: 2016-09-11
 #: next_check: 2016-12-01
 Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17082,7189 16954,7096 16720,6845
 # 
@@ -2841,10 +2844,11 @@ Fünf Morgen: Bauarbeiten, gesperrt. Wird es eine Anbindung an den Hüttenweg gebe
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810369999434/9999434/00071829/29-Anlagen/02/vzb0641_IV-B-Plan_XXI-32d-1_Auswertg_TOeB.pdf
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/artikel.434654.php
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/auslegungen/b-planentwurf_xxi-32d-1.pdf
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6762
 #: XXX evtl. wird dieses Stück Straße komplett entfernt
 #: osm_watch: way id="24216753" version="12"
 #: last_checked: 2015-08-09
-#: next_check: 2016-09-01
+#: next_check: 2017-03-01
 Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 # 
 # REMOVED --- #: XXX wann wird die Straße eröffnet? --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2016 (Widmung von Straßenland) --- #: osm_watch: way id="266854579" version="6" --- #: last_checked: 2015-08-02 --- Am Theodorpark: noch gesperrt	2::inwork 24905,10955 24949,10956 25055,10959 25143,10961
@@ -2854,7 +2858,7 @@ Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 # 
 #: next_check_id: ZIEGELSTR-2016
 #: XXX Ende der Bauarbeiten?
-#: last_checked: 2016-09-02
+#: last_checked: 2016-09-12
 #: check_frequency: 14d
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076 9559,13087
 # 
@@ -2870,7 +2874,7 @@ Schwarzer Weg: wegen Straßenbau gesperrt	2::inwork 17295,7323 17295,7330 17296,7
 # 
 #: next_check_id: FISCHERINSEL-2015 vvv
 #: source_id: 2147339543 vvv
-#: last_checked: 2016-09-07 vvv
+#: last_checked: 2016-09-12 vvv
 #: next_check: 2016-10-31 vvv
 Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10703,11837
 Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10703,11837 10687,11853 10869,11949
@@ -2980,17 +2984,17 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 # REMOVED (Aufschüttung statt Brücke) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6003 (Forderung nach Wiederherstellung) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6003&date=20151213 (Abriss der Brücke) --- #: XXX: Umfahrung existiert mittlerweile --- bleibt die Sperrung permanent? --- #: XXX: sobald die Brücke abgerissen wurde -> aus den Daten entfernen --- #: last_checked: 2015-10-04 --- #: check_frequency: 180d --- Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352
 # 
 #: osm_watch: way id="193373934" version="5"
-#: last_checked: 2016-07-23
+#: last_checked: 2016-09-11
 #: check_frequency: 60d
 Frauenauer Str.: Straße fertig, aber noch gesperrt	2::inwork 19663,9757 19858,9775
 # 
 #: osm_watch: way id="290255259" version="3"
-#: last_checked: 2016-07-23
+#: last_checked: 2016-09-11
 #: check_frequency: 60d
 Kirchdorfer Str.: Straße fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9775 19871,9680
 # 
 #: osm_watch: way id="24845189" version="13"
-#: last_checked: 2016-07-23
+#: last_checked: 2016-09-11
 #: check_frequency: 60d
 Viechtacher Str.: Straße fertig, aber noch gesperrt	2::inwork 19801,9680 19871,9680 19923,9682
 # 

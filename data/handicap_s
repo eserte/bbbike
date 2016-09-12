@@ -6,6 +6,7 @@
 Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
 Rigaer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 14133,12482 14266,12446
 Bouchéstr.: Bauarbeiten, Radfahrer müssen auf dem Gehweg fahren	q2::inwork 13642,9624 13865,9866 13890,9894
+Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 Kommandantenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10330,11422 10136,11529
 Beuthstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10201,11631 10235,11610 10330,11422
 Schützenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10116,11485 9949,11470
@@ -24,6 +25,7 @@ Stallschreiberstr., Alexandrinenstr.: Einbahnstraßenregelung	q4::inwork; 10794,1
 S-Bhf. Friedrichshagen: Bauarbeiten	q2::inwork 25579,5958 25584,6029
 Dieselstr., Umfahrung: Fußgänger, kurvig, eng	q2::inwork 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112 14429,8074 14471,8046
 Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süden auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12753,8187 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785 12969,7610
+Akazienstr.: Bauarbeiten, Fahrbahn zwischen Apostel-Paulus-Str. und Hauptstr. gesperrt	q4::inwork 7201,8870 7107,9030 7044,9163
 Jülicher Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
 Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
 Zimmermannstraßenbrücke: Bau einer neuen Brücke, Radfahrer müssen den Gehweg bzw. Behelfsbrücke benutzen	q4::inwork 21430,9026 21385,9049 21365,9059 21351,9066 21314,9083
@@ -1564,6 +1566,7 @@ Kuschelweg: einige Fußgänger	q1 23355,12732 23349,12760 23408,13100 23474,13449 
 (Parlerstr. - Elsenstr.): enger Pfad	q3 24528,10696 24571,10736 24593,10775
 (Alt-Friedrichsfelde - Gensinger Str.): einige Fußgänger	q1 18719,11821 18825,11816 18910,11826 19048,11815 19138,11815
 an der Kieler Brücke: einige Fußgänger	q1 7804,14445 7780,14431 7740,14409 7661,14398 7634,14406 7617,14420 7570,14392
+Schwäbische Str.: einige Fußgänger	q1 6529,9738 6502,9782
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schüler	q2 7242,8586 7288,8635
@@ -2487,6 +2490,7 @@ Ludolfinger Platz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp;
 Sewanstr. - Balatonstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich): gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 18377,9366 18490,9387
 Neue Bahnhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
+Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9042,11839 8969,11814
 Corinthstr.: Baustelle, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 14447,10491 14270,10584
 Mariannenstr.: Baustelle, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 11512,10105 11616,10288
 Mariannenstr.: Baustelle, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 11671,10402 11616,10288

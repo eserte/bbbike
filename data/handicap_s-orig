@@ -67,7 +67,10 @@ BouchÈstr.: Bauarbeiten, Radfahrer m¸ssen auf dem Gehweg fahren	q2::inwork 13642
 # REMOVED --- #: last_checked: 2015-06-10 --- Am Zirkus: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9167,13046 9137,13032 9090,13009
 # REMOVED --- #: last_checked: 2016-06-01 --- Kommandantenstr.: Bauarbeiten, Einbahnstraﬂe	q2::inwork; 10437,11352 10389,11390
 # 
-#: last_checked: 2016-09-02
+#: last_checked: 2016-09-12
+Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
+# 
+#: last_checked: 2016-09-12
 Kommandantenstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10330,11422 10136,11529
 # 
 #: last_checked: 2016-09-02
@@ -89,7 +92,7 @@ Melchiorstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 11542,11342 11726,11265 119
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2014-08-22 --- #: check_frequency: 14d --- Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11487,11390 11542,11342 11415,11392 11487,11390
 # 
 #: XXX Baustraﬂenbelag wird zurzeit entfernt
-#: last_checked: 2016-08-30
+#: last_checked: 2016-09-12
 #: check_frequency: 7d
 zur Keibelstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 10976,13229 11045,13183
 # 
@@ -214,9 +217,9 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # 
 #: XXX laut fritz bis 29.07.2016
 #: source_id: 2147339998
-#: last_checked: 2016-09-02
+#: last_checked: 2016-09-12
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10256,11160 10437,11352
-#: last_checked: 2016-09-02 vvv
+#: last_checked: 2016-09-12 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10624,11548 10640,11564
 # REMOVED --- Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10437,11352 10489,11405
 #: last_checked ^^^
@@ -234,7 +237,7 @@ Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10624,11548 1
 #: next_check_id: ALEXANDRINENSTR-2016
 #: source_id: LMS-BR_r_LMS-BR_68468
 #: XXX Endedatum laut fritz
-#: last_checked: 2016-09-02
+#: last_checked: 2016-09-12
 #: next_check: 2016-09-16
 Stallschreiberstr., Alexandrinenstr.: Einbahnstraﬂenregelung	q4::inwork; 10794,10927 10824,11010 10678,11172 10593,11120 10501,11056
 # 
@@ -328,6 +331,12 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung S¸de
 # REMOVED --- #: source_id: INKO_111447 --- #: source_id: LMS_1290313357 --- #: last_checked: 2013-04-20 --- #: next_check: 2013-06-30 (Ende: 1.7.2013) --- Malchower Weg: Einbahnstraﬂe wegen Bauarbeiten (bis zum Anfang Juli), Ausweichen auf dem Gehweg	q3::inwork; 17014,16724 17059,16560 17102,16464 17170,16365 17220,16320 17271,16280 17383,16197
 # 
 ### Schˆneberg ###
+# 
+#: source_id: LMS-BR_r_LMS-BR_76371
+#: source_id: 2147340485
+#: last_checked: 2016-09-12
+#: next_check: 2016-09-30
+Akazienstr.: Bauarbeiten, Fahrbahn zwischen Apostel-Paulus-Str. und Hauptstr. gesperrt	q4::inwork 7201,8870 7107,9030 7044,9163
 # 
 # REMOVED (kaum noch Beeintr‰chtigungen) --- #: XXX laut http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_09_26.pdf?start&ts=1411733076&file=strassenbauliste_stand_2014_09_26.pdf gehen die Bauarbeiten bis 2014-10-20 --- #: last_checked: 2014-09-13 --- #: check_frequency: 21d --- Dennewitzstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 7906,10098 7947,10155
 # 
@@ -766,7 +775,7 @@ Fritz-Schiff-Weg: Fuﬂg‰nger	q1 13463,12507 13484,12436 13448,12340
 (Crellestr. - Julius-Leber-Br¸cke): Fuﬂg‰nger	q2 7524,9093 7555,8978 7509,8929 7497,8916
 (Fischerinsel, Spreekanalufer): Fuﬂg‰nger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870
 #: next_check_id: FISCHERINSEL-2015
-#: last_checked: 2016-09-07
+#: last_checked: 2016-09-12
 #: next_check: 2016-10-31
 Spreekanalufer: Umfahrung an der Straﬂe Fischerinsel, Fuﬂg‰nger	q3::inwork 10672,11870 10776,11942
 # REMOVED (danach wieder folgendes aktivieren) --- (Fischerinsel, Spreekanalufer): Fuﬂg‰nger	q1 10672,11870 10776,11942
@@ -2345,6 +2354,7 @@ Kuschelweg: einige Fuﬂg‰nger	q1 23355,12732 23349,12760 23408,13100 23474,13449 
 (Parlerstr. - Elsenstr.): enger Pfad	q3 24528,10696 24571,10736 24593,10775
 (Alt-Friedrichsfelde - Gensinger Str.): einige Fuﬂg‰nger	q1+ 18719,11821 18825,11816 18910,11826 19048,11815 19138,11815
 an der Kieler Br¸cke: einige Fuﬂg‰nger	q1 7804,14445 7780,14431 7740,14409 7661,14398 7634,14406 7617,14420 7570,14392
+Schw‰bische Str.: einige Fuﬂg‰nger	q1 6529,9738 6502,9782
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

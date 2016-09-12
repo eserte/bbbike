@@ -1,121 +1,6 @@
-$#temp_blocking = 30;
+$#temp_blocking = 126;
 push @temp_blocking,
 (
-       {
-         'data' => '#: by: http://www.berlin.de/tickets/suche/detail.php?id=1250629
-userdel	2::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
-',
-         'from' => 1473325200,
-         'id' => 31,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              6,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 9.9.2016 16:00 bis 11.9.2016 20:00',
-         'type' => 'gesperrt',
-         'until' => 1473620400
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'data' => 'userdel	2 8055,12186 8089,12190 8214,12205
 userdel	2 8214,12205 8303,12216 8344,12221 8538,12245
@@ -2691,27 +2576,7 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.laubinger.de/termine/47-fest-an-der-panke/
-	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345
-	2::temp 10602,18382 10562,18506 10532,18601
-',
-         'from' => 1473372000,
-         'id' => 2281,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              10,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (10.09.2016-11.09.2016)',
-         'type' => 'gesperrt',
-         'until' => 1473631199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3054,8 +2919,8 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
 #: source_id: 2147339529
-#: last_checked: 2016-05-27
-#: check_frequency: 90d
+#: last_checked: 2016-09-12
+#: next_check: 2016-12-01
 userdel	q2::inwork 5258,11285 5236,10994
 ',
          'from' => 1366740818,
@@ -3288,26 +3153,7 @@ userdel	2::night 17671,13132 17684,13133
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 5661,9630 5657,9600 5630,9592 5602,9606 5595,9626
-',
-         'from' => 1473339600,
-         'id' => 2533,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              9,
-                              'months',
-                              5
-                            ]
-                          ],
-         'source_id' => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/ueber-den-bezirk/sonstiges/events/fest-der-nationen/',
-         'text' => 'Prager Platz: Veranstaltung "Fest der Nationen", Durchfahrt nicht möglich, vom 9.9.2016 15 Uhr bis 11.9.2016 22 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1473624000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3426,26 +3272,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 5857,13342 5868,13441 5882,13548
-',
-         'from' => 1473372000,
-         'id' => 2625,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              9,
-                              'months',
-                              9
-                            ]
-                          ],
-         'source_id' => 'http://www.quartiersmanagement-berlin.de/veranstaltungen/moabit-west-beusselstrasse/termin/calendar/2016/09/10/event/tx_cal_phpicalendar/moabiter_kiezfest_2016/print.html',
-         'text' => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 10. September 2016, 14 bis 18 Uhr ',
-         'type' => 'gesperrt',
-         'until' => 1473544799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3910,15 +3737,7 @@ userdel	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
          'until' => 1475272799
        },
        undef,
-       {
-         'data' => '	2::temp 15591,8848 15452,9079 15442,9095 15383,9191 14879,9433 14809,9466 14556,9581
-',
-         'from' => 1473350400,
-         'id' => 2805,
-         'text' => 'Lollapalooza 2016 im Treptower Park: Puschkinallee und Alt-Treptow gesperrt, ab 09.09.2016 abends bis 12.09.2016 morgens',
-         'type' => 'gesperrt',
-         'until' => 1473652800
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: 2147340278
@@ -3951,16 +3770,7 @@ userdel	q4::inwork 12911,1815 12817,2031
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	q4::inwork; 12564,16399 12399,16479
-',
-         'from' => 1469916000,
-         'id' => 2817,
-         'source_id' => '2147340382',
-         'text' => 'Langhansstr.: zwischen Goethestr. und Gustav-Adolf-Str. Baustelle, Fahrtrichtung Prenzlauer Promenade gesperrt, bis Mitte September 2016 ',
-         'type' => 'handicap',
-         'until' => 1473933600
-       },
+       undef,
        undef,
        {
          'data' => '#: note: by fritz
@@ -3991,9 +3801,9 @@ userdel	q4::inwork 6587,16199 6484,16085
 ',
          'from' => 1472421600,
          'id' => 2823,
-         'text' => 'Lollapalooza 2016 im Treptower Park: viele Parkwege sind gesperrt, mindestens bis 12.09.2016',
+         'text' => 'Lollapalooza 2016 im Treptower Park: viele Parkwege sind gesperrt, evtl. bis Donnerstag, 15.09.2016',
          'type' => 'gesperrt',
-         'until' => 1473717599
+         'until' => 1473933600
        },
        {
          'data' => '#: XXX wann im November sind die Bauarbeiten fertig? vvv
@@ -4038,20 +3848,26 @@ userdel	q4::inwork; 8642,7876 8731,7956
          'type' => 'handicap',
          'until' => 1478358000
        },
+       undef,
        {
-         'data' => 'userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
-userdel	2::temp 8600,12165 8538,12245 8610,12254
-userdel auto	3 8522,12239 8538,12245 8522,12187
-userdel auto	3 8522,12187 8538,12245 8522,12239
-userdel auto	3 8391,12389 8344,12221 8327,12174
-userdel auto	3 8327,12174 8344,12221 8391,12389
+         'data' => '#: note: by fritz
+userdel	q3::inwork 9706,6802 9511,6797 9245,6791
 ',
-         'from' => 1473285600,
-         'id' => 2827,
-         'source_id' => '2147339672',
-         'text' => 'Straße des 17. Juni und Ebertstr.: Sperrungen wegen der Sportveranstaltung "Berlin fliegt", ab 09.09.2016 bis 12.09.2016',
-         'type' => 'gesperrt',
-         'until' => 1473663600
+         'from' => 1473704824,
+         'id' => 2828,
+         'text' => 'Borussiastraße/Fuhrmannstraße: Bauarbeiten, Fahrbahn gesperrt, bis 30.09.2016 ',
+         'type' => 'handicap',
+         'until' => 1475272800
+       },
+       {
+         'data' => '#: source_id: 2147340518
+userdel	q3::inwork; -795,13437 -729,13415 -346,13349 -309,13268 -264,13009
+',
+         'from' => 1473704924,
+         'id' => 2829,
+         'text' => 'Wiesendamm: Bauarbeiten, RIchtung Spandauer Damm Fahrbahn gesperrt, bis 30.09.2016',
+         'type' => 'handicap',
+         'until' => 1475272800
        }
      
 );

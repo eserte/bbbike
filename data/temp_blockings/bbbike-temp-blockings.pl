@@ -21336,8 +21336,8 @@ EOF
 #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
 #: source_id: 2147339529
-#: last_checked: 2016-05-27
-#: check_frequency: 90d
+#: last_checked: 2016-09-12
+#: next_check: 2016-12-01
 userdel	q2::inwork 5258,11285 5236,10994
 EOF
      },
@@ -25396,7 +25396,7 @@ userdel	q4::inwork 1732,24798 1730,24860 1750,24942 1775,25019 1767,25098 1738,2
 EOF
      },
      { from  => 1469916000, # 2016-07-31 00:00
-       until => $isodate2epoch->("2016-09-15 12:00:00"), # 1472767199, # 2016-09-01 23:59
+       until => 1473619562, # $isodate2epoch->("2016-09-15 12:00:00"), # 1472767199, # 2016-09-01 23:59
        text  => 'Langhansstr.: zwischen Goethestr. und Gustav-Adolf-Str. Baustelle, Fahrtrichtung Prenzlauer Promenade gesperrt, bis Mitte September 2016 ',
        type  => 'handicap',
        source_id => '2147340382',
@@ -25451,8 +25451,8 @@ userdel	q4::temp 3556,13200 3534,13098 3523,13076
 EOF
      },
      { from  => $isodate2epoch->("2016-08-29 00:00:00"),
-       until => $isodate2epoch->("2016-09-12 23:59:59"),
-       text  => 'Lollapalooza 2016 im Treptower Park: viele Parkwege sind gesperrt, mindestens bis 12.09.2016',
+       until => $isodate2epoch->("2016-09-15 12:00:00"),
+       text  => 'Lollapalooza 2016 im Treptower Park: viele Parkwege sind gesperrt, evtl. bis Donnerstag, 15.09.2016',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.511653.php
@@ -25521,6 +25521,24 @@ userdel auto	3 8522,12239 8538,12245 8522,12187
 userdel auto	3 8522,12187 8538,12245 8522,12239
 userdel auto	3 8391,12389 8344,12221 8327,12174
 userdel auto	3 8327,12174 8344,12221 8391,12389
+EOF
+     },
+     { from  => 1473704824, # 2016-09-12 20:27
+       until => 1475272800, # 2016-10-01 00:00
+       text  => 'Borussiastraße/Fuhrmannstraße: Bauarbeiten, Fahrbahn gesperrt, bis 30.09.2016 ',
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: by fritz
+userdel	q3::inwork 9706,6802 9511,6797 9245,6791
+EOF
+     },
+     { from  => 1473704924, # 2016-09-12 20:28
+       until => 1475272800, # 2016-10-01 00:00
+       text  => 'Wiesendamm: Bauarbeiten, RIchtung Spandauer Damm Fahrbahn gesperrt, bis 30.09.2016',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: 2147340518
+userdel	q3::inwork; -795,13437 -729,13415 -346,13349 -309,13268 -264,13009
 EOF
      },
     );
