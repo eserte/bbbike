@@ -399,9 +399,17 @@ if ($with_searches_weight) {
 
 my %monthly_stats;
 {
+    my $today = strftime '%F', localtime;
+    my $this_month = strftime '%Y-%m', localtime;
     for (@records) {
 	if (defined $_->{date}) {
-	    if (my($ym) = $_->{date} =~ m{^(\d{4}-\d{2})}) {
+	    if ($_->{date} =~ m{^\Q$this_month}) {
+		if ($_->{date} lt $today) {
+		    $monthly_stats{"$this_month-AA"}++; # XXX better label? (but at least it's automatically sorted)
+		} else {
+		    $monthly_stats{"$this_month-ZZ"}++; # XXX better label? (but at least it's automatically sorted)
+		}
+	    } elsif (my($ym) = $_->{date} =~ m{^(\d{4}-\d{2})}) {
 		$monthly_stats{$ym}++;
 	    } else {
 		warn "WARN (unexpected): Cannot parse $_->{date}";
