@@ -24334,7 +24334,7 @@ EOF
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.511369.php
 #: source_id: 2147340474
 #: XXX periodisch prüfen
-#: last_checked: 2016-08-29
+#: last_checked: 2016-09-14
 #: check_frequency: 14d
 	2::inwork 15261,10738 15272,10790
 	q4; 15279,10862 15272,10790 15388,10758 15433,10765
@@ -24356,11 +24356,11 @@ EOF
      },
      { from  => 1436738400, # 2015-07-13 00:00
        until => 1499983200, # 2017-07-14 00:00
-       text  => 'Treppe an der Bornholmer Str.: wegen Bauarbeiten an der Bösebrücke gesperrt, ab 14. Juli 2015 für ca. zwei Jahre',
+       text  => 'nördliche Treppe an der Bornholmer Str.: wegen Bauarbeiten an der Bösebrücke gesperrt, bis ca. Juli 2017',
        type  => 'handicap',
        source_id => 'http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml',
        data  => <<EOF,
-	2::inwork 9998,16547 9982,16527 9959,16510
+	2::inwork 9998,16547 9983,16561 9955,16578
 EOF
      },
      { from  => 1437256800, # 2015-07-19 00:00

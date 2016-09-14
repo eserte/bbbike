@@ -1115,7 +1115,7 @@ Sackgassenende, Reha-Zentrum	culdesac 3228,26728
 	culdesac_pseudo 16285,3616
 	culdesac_pseudo 16227,3660
 	culdesac_pseudo 16167,3702
-	culdesac 8070,3563
+	culdesac_pseudo 8070,3563
 	culdesac -6125,838
 	culdesac -9481,85
 	culdesac -11418,334
@@ -1216,6 +1216,7 @@ Sackgassenende in Steinstücken	culdesac -8095,-2219
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo 10633,11051
 	culdesac_pseudo -7248,-3434
 	culdesac_pseudo 1589,-763
 	culdesac 25007,11000

@@ -3455,7 +3455,7 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.511369.php
 #: source_id: 2147340474
 #: XXX periodisch prüfen
-#: last_checked: 2016-08-29
+#: last_checked: 2016-09-14
 #: check_frequency: 14d
 	2::inwork 15261,10738 15272,10790
 	q4; 15279,10862 15272,10790 15388,10758 15433,10765
@@ -3469,12 +3469,12 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
        },
        undef,
        {
-         'data' => '	2::inwork 9998,16547 9982,16527 9959,16510
+         'data' => '	2::inwork 9998,16547 9983,16561 9955,16578
 ',
          'from' => 1436738400,
          'id' => 2719,
          'source_id' => 'http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml',
-         'text' => 'Treppe an der Bornholmer Str.: wegen Bauarbeiten an der Bösebrücke gesperrt, ab 14. Juli 2015 für ca. zwei Jahre',
+         'text' => 'nördliche Treppe an der Bornholmer Str.: wegen Bauarbeiten an der Bösebrücke gesperrt, bis ca. Juli 2017',
          'type' => 'handicap',
          'until' => 1499983200
        },
@@ -3739,18 +3739,7 @@ userdel	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147340278
-#: source_id: 2147340486
-userdel	q4::inwork 19676,1577 19704,1621 19766,1796
-',
-         'from' => 1468101600,
-         'id' => 2807,
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.493537.php',
-         'text' => 'Köpenicker Str.: Bauarbeiten zwischen Rudower Str. und Schönefelder Chaussee, Fahrbahn gesperrt, bis Mitte September 2016',
-         'type' => 'handicap',
-         'until' => 1473847200
-       },
+       undef,
        {
          'data' => '# REMOVED ("Verkürzung" laut fritz) --- userdel	q4::inwork 12938,1348 12940,1547 12911,1815
 userdel	q4::inwork 12911,1815 12817,2031

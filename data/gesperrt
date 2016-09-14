@@ -152,6 +152,8 @@ Körtestr.	1 11004,9554 11023,9597
 Körtestr.	1 11055,9539 11004,9554
 Fichtestr.	1 11075,9576 11055,9539
 Baerwaldstr.	1 10361,9755 10357,9807 10424,9958
+Baerwaldstr.	1 10424,9958 10467,10051 10500,10081
+Baerwaldstr.	1 10500,10081 10513,10038 10480,9949
 Baerwaldstr.	1 10480,9949 10405,9795 10361,9755
 Dittersbacher Weg	1 7855,3355 7852,3183
 Anzengruberstr.	1 12865,8346 12689,8289
@@ -2170,6 +2172,8 @@ Stülerstr. -> zur Thomas-Dehler-Str.: Mittelstreifen	3::igndisp 6692,11365 6716,
 Mittelstreifen	3nocross::ignrte 1884,4811 1747,4829 1479,4853
 Saargemünder Str. -> Garystr.: Mittelstreifen	3::igndisp 1884,4811 1747,4829 1736,4774
 Garystr. -> Saargemünder Str.: Mittelstreifen	3::igndisp 1736,4774 1747,4829 1479,4853
+Geländer am Gehweg	3nocross::ignrte 7628,4521 7667,4549 7690,4563
+Am Bahndamm -> Attilastr.: Geländer am Gehweg	3::igndisp 7692,4464 7667,4549 7628,4521
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
@@ -2872,8 +2876,6 @@ Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr
 Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 18892,3256 18953,3318
 Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17651,-393
 (Planstraßen 2.1, 2.2, 2.3): noch gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924
-Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081
-Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081
 Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, ggfs. dauerhaft	2::inwork 17670,7512 17681,7589
 (Treppe an der Freybrücke)	2::inwork -3181,11496 -3177,11507 -3173,11520
 Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3217,11570

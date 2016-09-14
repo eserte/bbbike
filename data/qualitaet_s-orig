@@ -1066,7 +1066,7 @@ Am Seddinsee: teils schlechter Waldweg	Q3 28862,-1816 28887,-1795 28935,-1819 28
 Zum Seddinsee: teils schlechter Waldweg	Q3 30869,-5 30857,-60 30803,-147 30778,-326
 #: next_check_id: MELCHIOR-2015
 #: XXX nach den Bauarbeiten vermutlich asphaltiert
-#: last_checked: 2016-09-07
+#: last_checked: 2016-09-14
 Melchiorstr.: Kopfsteinpflaster	Q2 11921,11185 11726,11265 11542,11342
 Hansa-Ufer: Kopfsteinpflaster	Q2 5871,12595 5797,12494 5740,12419
 Unionstr: Kopfsteinpflaster	Q2 5782,14067 5943,14049
@@ -9782,7 +9782,7 @@ Fellbacher Str.: Kopfsteinpflaster	Q2 3610,23272 3653,23305
 (Weg zum großen Bunkerberg): kleinteiliges Kopfsteinpflaster	Q1- 12307,13329 12355,13366 12391,13416 12386,13452 12305,13514 12232,13523 12197,13488 12196,13453 12235,13383 12274,13372 12327,13394 12344,13424 12307,13491 12254,13495 12232,13477 12246,13440 12278,13418 12287,13443
 Torstr. - Weydingerstr.: Verbundsteinpflaster	Q1+ 11079,13492 11111,13518
 #: XXX Wird die Fahrbahn nochmal geändert? Wird bei der Erstellung der Straße auch eine Beleuchtung eingebaut (-> nolighting-orig)?
-#: last_checked: 2016-06-13
+#: last_checked: 2016-09-13
 #: check_frequency: 90d
 Wilhelmine-Gemberg-Weg: (provisorischer?) Asphalt	Q0 11715,11522 11762,11665
 Wilhelmine-Gemberg-Weg: Feinschotter	Q1 11762,11665 11829,11727
@@ -10190,6 +10190,8 @@ Schwarzschildstr.: Betonpflaster	Q1+ 18766,2525 18759,2592
 zur Kieler Brücke: Kopfsteinpflaster	Q2 7804,14445 7780,14431
 Kieler Brücke: Holzbohlen	Q1 7780,14431 7740,14409
 (Am Märchenbrunnen): Betonplatten	Q1- 11823,13635 11899,13750
+(Mariendorfer-Hafen-Weg - Im Marienpark): unbefestigter Weg	Q2 8016,3651 8035,3657
+(Mariendorfer-Hafen-Weg - Im Marienpark): Kopfsteinpflaster	Q2 8035,3657 8070,3563
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -14339,10 +14341,11 @@ Sondershauser Str.: Asphalt	Q0 6386,1051 6397,1135 6409,1218 6441,1444 6470,1598
 #: last_checked: 2016-07-23
 #: check_frequency: 300d
 Sondershauser Str.: Kopfsteinpflaster	Q2 6470,1598 6486,1680
-#: confirmed_by: srt (südliches Ende, ebenso: ADFC-Karte meint auch "mäßig geeignet")
-(Am Bahndamm): Feldweg	Q2 8106,3410 8016,3651 7795,4242
+#: confirmed_by: srt
+(Am Bahndamm): unbefestigter Weg	Q2 8106,3410 8016,3651 7795,4242
 (Am Bahndamm): Holzbohlen	Q1 7795,4242 7769,4315
-(Am Bahndamm): Feldweg	Q2 7769,4315 7667,4549
+#: corrected_by: srt (Feldweg -> ...)
+(Am Bahndamm): Verbundsteinpflaster/wassergebundene Decke	Q1- 7769,4315 7692,4464 7667,4549
 #: by: ^^^
 # 
 #: by: Petra Hennecke: vvv
