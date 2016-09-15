@@ -6834,6 +6834,14 @@ sub header {
 			  -sizes => '114x114',
 			  -href  => "$bbbike_images/srtbike114.png",
 			 });
+    push @$head, cgilink({-rel   => 'apple-touch-icon',
+			  -sizes => '120x120',
+			  -href  => "$bbbike_images/srtbike120.png",
+			 });
+    push @$head, cgilink({-rel   => 'apple-touch-icon',
+			  -sizes => '152x152',
+			  -href  => "$bbbike_images/srtbike152.png",
+			 });
 
     my($bbbike_de_script, $bbbike_en_script);
     if ($lang eq 'en') {
