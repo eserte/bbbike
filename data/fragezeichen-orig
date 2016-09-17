@@ -32,7 +32,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2016-09-13
+#: last_checked: 2016-09-15
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -96,7 +96,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6183 (Baubeginn erst 2015)
 #: XXX Baubeginn des ersten Abschnitts: 3. Quartal 2014
-#: last_checked: 2016-09-14
+#: last_checked: 2016-09-16
 #: check_frequency: 60d
 Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 # 
@@ -1250,7 +1250,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/25re.pdf/file?y=2016 (Brückenbenennung)
 #: XXX Asphaltierung der Fahrbahn von Rummelsburger Landstr. bis Schwarzer Weg fertig
 #: XXX Radwege werden vermutlich asphaltiert sein
-#: last_checked: 2016-08-20
+#: last_checked: 2016-09-16
 #: next_check: 2016-12-01
 Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rummelsburger Landstraße und Köpenicker Landstraße	?::inwork 17681,7589 17585,7525 17082,7189 16954,7096 16720,6845
 # 
@@ -1467,9 +1467,11 @@ Weg an der Wuhle: evtl. entsteht auch ein Weg hier --- wird es auch eine Anbindu
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-#: XXX NEW	Baerwaldstraße (Kreuzberg) in beiden Richtungen zwischen Wilmsstraße und Urbanstraße (Berlin)  Gültig ab: 14.09.2016 00:49  Vollsperrung, Wasserrohrbruch	LMS-BR_r_LMS-BR_78608
-#: XXX laut fritz nur Richtung Süden
-Baerwaldstr.: Auswirkungen für Radfahrer?	? 10424,9958 10357,9807
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/39re.pdf/file?y=2016
+#: next_check: 2016-11-15
+Mehringplatz: Widmung von Straßenland - ändert sich hier etwas?	? 9587,10421 9592,10263
+# 
+# REMOVED (keine) --- #: XXX NEW	Baerwaldstraße (Kreuzberg) in beiden Richtungen zwischen Wilmsstraße und Urbanstraße (Berlin)  Gültig ab: 14.09.2016 00:49  Vollsperrung, Wasserrohrbruch	LMS-BR_r_LMS-BR_78608 --- #: XXX laut fritz nur Richtung Süden --- Baerwaldstr.: Auswirkungen für Radfahrer?	? 10424,9958 10357,9807
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5991
 Osnabrücker/Mierendorffstr.: Vorfahrtsregelung?	? 3542,13203 3556,13200 3645,13206
@@ -1651,6 +1653,7 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	?::inwork 4815,33
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6661
 #: XXX bei der letzten Überprüfung nicht zu erkennen
+#: source_id: 2147340565
 #: last_checked: 2016-09-11
 #: check_frequency: 60d
 Treskowallee: Gehweg für Radfahrer freigegeben?	?; 18733,8633 18731,8577 18709,8423
@@ -1750,14 +1753,7 @@ Falkenberger Chaussee: Radfahrstreifen werden entstehen, wo genau?	?; 17843,1807
 # 
 # REMOVED --- #: source_id: 2147339823 --- #: source_id: 2147339936 --- #: next_check: 2016-06-15 --- Dietzgenstr.: Bauarbeiten zwischen Kräuter- und Wiesenkräuterweg, danach vielleicht Änderungen für Radfahrer?	? 10083,21848 10097,21809 10106,21784 10111,21673
 # REMOVED (aufgenommen) --- #: source_id 2147339819 --- #: laut vmz bis Mitte Mai 2016, laut fritz bis 13.05.2016 --- Wühischstr.: zwischen Böcklinstr. und Boxhagener Str. Bauarbeiten, auch für Radfahrer relevant?	?; 14674,11370 14737,11347 14759,11339 14771,11345
-# 
-#: source_id: 129871
-#: source_id: LMS-BR_r_LMS-BR_62186
-#: XXX Bauarbeiten bis 30.05.2016 (am last_checked-Datum war hier noch immer Baustelle)
-#: XXX Richtung Südosten wird die Fahrbahn asphaltiert sein (aber ist es noch breit genug, wenn dort Autos parken sollten?)
-#: last_checked: 2016-08-20
-Wallensteinstr.: Bauarbeiten --- gibt es hier Qualitätsverbesserungen?	?::inwork 17549,9529 18037,9195
-# 
+# REMOVED (nur in einer Richtung) --- #: source_id: 129871 --- #: source_id: LMS-BR_r_LMS-BR_62186 --- #: XXX Bauarbeiten bis 30.05.2016 (am last_checked-Datum war hier noch immer Baustelle) --- #: XXX Richtung Südosten wird die Fahrbahn asphaltiert sein (aber ist es noch breit genug, wenn dort Autos parken sollten?) --- #: last_checked: 2016-08-20 --- Wallensteinstr.: Bauarbeiten --- gibt es hier Qualitätsverbesserungen?	?::inwork 17549,9529 18037,9195
 # REMOVED --- #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8362&options=4 --- #: XXX kein rechts-vor-links? --- Maulbeerallee: Vorfahrtsregelung?	? -6093,12801 -5975,12827 -5878,12845 -5784,12858 -5706,12869 -5594,12832 -5480,12793 -5307,12737 -5282,12730
 # REMOVED (bereits aufgenommen) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4203 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/15re.pdf/file?y=2016 --- #: XXX ggfs. auch als Grünfläche in flaechen-orig eintragen --- #: next_check: 2016-05-01 --- Selma- und Paul-Latte-Platz: Benennungsabsicht eines Platzes	? 10843,20301 10786,20272 10802,20240 10843,20301
 # REMOVED --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036470336375/470336375/00071821/21-Anlagen/02/_15-BenennungsabsichtfuerdieoeffentlicheStrass.pdf --- Straße 46: ist hier bereits die Mittelstr.?	? 14320,20580 14482,20547
@@ -2730,6 +2726,7 @@ Benno-König-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::pro
 #: note: Privatstraße:
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5229
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file?y=2015 (Grundstücksnummerierungen)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/39re.pdf/file?y=2016
 #: XXX vermutlich Verbundsteinpflaster
 #: last_checked: 2016-06-26
 #: check_frequency: 60d
@@ -4349,17 +4346,16 @@ Alter Fischerweg (Gosen): Qualität?	? 32778,-1044 33013,-790 33117,-767 33140,-7
 # REMOVED (realisiert) --- #: XXX Baumaßnahme 8.18 (Realisierung bis 2010) --- #: XXX_osm laut osm existieren bereits Radwege (track), aber stimmt das? --- Buckower Damm: existieren am Buckower Damm zwischen Gerlinger Str. und Stadtgrenze Radwege oder Radspuren?	? 12938,1348 12941,1256 12984,1011
 # REMOVED (realisiert) --- Gutschmidtstraße: sind die Radwege asphaltiert oder saniert?	? 12655,3882 12711,3881 12726,3870 12796,3821 12913,3743 13030,3664 13162,3576
 # REMOVED (realisiert) --- Gutschmidtstraße: sind die Radwege asphaltiert oder saniert?	? 13162,3576 13217,3557 13387,3513 13526,3519
-#: XXX Fahrbahn wird ab Kormoranweg saniert, wird in Zuge der Sanierung auch der Radweg neu gemacht?
+# REMOVED (nein) --- #: XXX Fahrbahn wird ab Kormoranweg saniert, wird in Zuge der Sanierung auch der Radweg neu gemacht?
 # REMOVED --- : source_id: IM_023411
-#: last_checked: 2016-05-13 vvv
+#: last_checked: 2016-09-16 vvv
 #: check_frequency: 180d vvv
-#: next_check: 2016-08-20
 Fritz-Erler-Allee: werden die Radwege asphaltiert oder saniert?	? 14392,2979 14274,3129 14205,3187 14126,3225
 Fritz-Erler-Allee: werden die Radwege asphaltiert oder saniert?	? 14126,3225 14023,3276 13906,3340 13775,3500
 #: check_frequency ^^^
 #: last_checked ^^^
 # REMOVED --- : source_id: IM_020569
-#: last_checked: 2016-05-13
+#: last_checked: 2016-09-16
 #: check_frequency: 180d
 Gutschmidtstr.: werden die Radwege asphaltiert oder saniert?	? 13775,3500 13710,3522 13623,3523 13526,3519
 #: XXX ^^^

@@ -24334,7 +24334,7 @@ EOF
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.511369.php
 #: source_id: 2147340474
 #: XXX periodisch prüfen
-#: last_checked: 2016-09-14
+#: last_checked: 2016-09-16
 #: check_frequency: 14d
 	2::inwork 15261,10738 15272,10790
 	q4; 15279,10862 15272,10790 15388,10758 15433,10765
@@ -24912,16 +24912,15 @@ userdel	q4::inwork 19037,5316 18999,5237 18940,5243 18824,5280 18659,5330
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1474047511, # undef, # XXX
        text  => 'Am Teltowkanal: Bauarbeiten am Uferweg',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2016-06-26 vvv
-#: priority: #B
+# REMOVED --- #: last_checked: 2016-06-26 vvv --- #: priority: #B
 # REMOVED ---	2::inwork 16066,3799 15878,3936
 	2::inwork 15878,3936 15861,3942 15678,4083 15594,4152
 # REMOVED ---	2::inwork 15878,3936 15859,3924
-#: last_checked ^^^
+# REMOVED --- #: last_checked ^^^
 EOF
      },
      { from  => 1458194400, # 2016-03-17 07:00

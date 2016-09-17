@@ -3136,18 +3136,7 @@ userdel	2::night 17671,13132 17684,13133
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: next_check_id: ZIMMERMANNSTRBR-2015
-# REMOVED (keine Bauarbeiten mehr) --- #: next_check_id: ZIMMERMANNSTRBR-2014 --- #: last_checked: 2014-02-08 --- #: next_check: 2014-06-30 (bei VMZ entfernt!) --- #: add_fragezeichen: Sind die Bauarbeiten auf der Zimmermannstraßenbrücke und am Wuhlewanderweg mittlerweile beendet?
-# REMOVED userdel	2::inwork 21385,9049 21365,9059 21351,9066
-	2::inwork 21467,9236 21385,9049
-',
-         'from' => undef,
-         'id' => 2527,
-         'text' => 'Wuhlewanderweg: an der Zimmermannstraßenbrücke wegen Bauarbeiten gesperrt, vermutlich bis Mitte September 2016',
-         'type' => 'gesperrt',
-         'until' => 1473890400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3455,7 +3444,7 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.511369.php
 #: source_id: 2147340474
 #: XXX periodisch prüfen
-#: last_checked: 2016-09-14
+#: last_checked: 2016-09-16
 #: check_frequency: 14d
 	2::inwork 15261,10738 15272,10790
 	q4; 15279,10862 15272,10790 15388,10758 15433,10765
@@ -3560,20 +3549,7 @@ userdel	q4::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129 -6507,15007
        undef,
        undef,
        undef,
-       {
-         'data' => '#: last_checked: 2016-06-26 vvv
-#: priority: #B
-# REMOVED ---	2::inwork 16066,3799 15878,3936
-	2::inwork 15878,3936 15861,3942 15678,4083 15594,4152
-# REMOVED ---	2::inwork 15878,3936 15859,3924
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 2772,
-         'text' => 'Am Teltowkanal: Bauarbeiten am Uferweg',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -3774,26 +3750,7 @@ userdel	q4::inwork 6587,16199 6484,16085
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.511653.php
-#: by: http://lolp2.de.c3cdn.com/wp/wp-content/uploads/2016/02/Lollapalooza2016_Treptower-Park_Festivalmap_2000x1414_RZ.png
-	2::temp 14909,9649 14867,9573 14837,9517 14809,9466
-	2::temp 14361,9772 14443,9731 14495,9710 14577,9641 14627,9609 14695,9587 14792,9599 14867,9573 14918,9545 15025,9461 15133,9396 15184,9373 15268,9374 15325,9354 15453,9259
-	2::temp 15184,9373 15249,9337
-	2::temp 14577,9641 14604,9674 14645,9710 14697,9726 14853,9655 14909,9649 15052,9584 15186,9550 15304,9464 15432,9322 15453,9259
-	2::temp 14695,9587 14705,9578 14791,9537
-	2::temp 14879,9433 14898,9364 14955,9294
-	2::temp 14316,9542 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14789,9401
-	2::temp 14588,9473 14556,9581
-	2::temp 14318,9688 14371,9726 14443,9731
-	2::temp 14318,9688 14316,9542 14347,9452 14398,9373 14485,9271 14531,9244 14655,9311 14673,9353 14669,9389 14635,9441
-',
-         'from' => 1472421600,
-         'id' => 2823,
-         'text' => 'Lollapalooza 2016 im Treptower Park: viele Parkwege sind gesperrt, evtl. bis Donnerstag, 15.09.2016',
-         'type' => 'gesperrt',
-         'until' => 1473933600
-       },
+       undef,
        {
          'data' => '#: XXX wann im November sind die Bauarbeiten fertig? vvv
 #: next_check: 2016-11-01 vvv
