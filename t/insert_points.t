@@ -22,7 +22,7 @@ BEGIN {
 }
 
 use POSIX 'strftime';
-use constant TODO_MEHRINGDAMM_FRAGEZEICHEN => "2016-09-16T12:00:00" gt strftime('%FT%T', localtime) && 'temporary fragezeichen entry';
+use constant TODO_MEHRINGDAMM_FRAGEZEICHEN => "2016-10-14T12:00:00" gt strftime('%FT%T', localtime) && 'temporary fragezeichen entry';
 
 my @insert_points = ($^X, "$FindBin::RealBin/../miscsrc/insert_points");
 my $datadir = "$FindBin::RealBin/../data";
