@@ -3874,8 +3874,8 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003889',
        data  => <<EOF,
-userdel	q4::inwork; 4391,7258 4571,7239 4743,7212
-userdel	q4::inwork; 4530,7021 4462,7137 4391,7258
+userdel	q4::inwork; 4393,7266 4571,7239 4743,7212
+userdel	q4::inwork; 4530,7021 4462,7137 4393,7266
 EOF
      },
      { from  => 1143068400, # 2006-03-23 00:00
@@ -5654,7 +5654,7 @@ EOF
        text  => 'Straßenfest am Kaiserdamm. Die Fahrbahn Richtung Theodor-Heuss-Platz ist vom 26.08.2006, 6.00 Uhr, von der Sophie-Charlotten- bis zur Königin-Elisabeth-Straße bis zum 28.08.2006, 0.00 Uhr gesperrt.',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::temp 2609,11503 2391,11478 2282,11463 2191,11451 2109,11441
+userdel	1::temp 2609,11503 2391,11478 2371,11475 2282,11463 2191,11451 2095,11440
 EOF
      },
      { from  => 1156454823, # 2006-08-24 23:27
@@ -10917,7 +10917,7 @@ EOF
        text  => 'Einbahnstraße Richtung Westen wegen Bauarbeiten',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 5149,7012 5251,6949 5357,6932
+userdel	1::inwork 5149,7012 5239,6953 5357,6932
 EOF
      },
      { from  => 1200438000, # 2008-01-16 00:00
@@ -15538,7 +15538,7 @@ EOF
        data  => <<EOF,
 ######################################################################
 # Wochenmärkte vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-	q4::temp:clock 4397,7375 4330,7375 4162,7375 4059,7375
+	q4::temp:clock 4397,7380 4330,7382 4161,7388 4064,7396
 EOF
      },
      { from  => undef, #
@@ -19175,7 +19175,7 @@ EOF
        text  => 'Seifenkistenrennen auf dem Kaiserdamm zwischen Theodor-Heuss-Platz und Königin-Elisabeth-Straße, 10./11.09.2011',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::temp 1574,11379 1625,11380 1834,11408 1960,11426 2109,11441
+userdel	1::temp 1574,11379 1625,11380 1834,11408 1960,11426 2095,11440
 EOF
      },
      { from  => $isodate2epoch->("2016-07-02 10:00:00"), # 1 Tag Vorlauf
@@ -24092,7 +24092,7 @@ EOF
        text  => 'Zillestr.: zwischen Richard-Wagner-Str. und Wilmersdorfer Str. Bauarbeiten, Einbahnstraßenregelung, offen Richtung Osten, Ende der Sperrung unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2016-03-26
+#: last_checked: 2016-09-18
 #: check_frequency: 90d
 userdel	q4::inwork; 3807,11859 3666,11855
 EOF
@@ -24122,7 +24122,7 @@ EOF
        source_id => 'IM_024612',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.291488.php
-userdel	q4::inwork 2087,7811 2106,8075 2120,8335 2126,8426
+userdel	q4::inwork 2092,7810 2112,8074 2120,8335 2126,8426
 EOF
      },
      { from  => 1429160400, # 2015-04-16 07:00
@@ -25488,7 +25488,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2016-09-07 vvv
+#: last_checked: 2016-09-18 vvv
 #: check_frequency: 14d vvv
 	q4::inwork 10954,12635 11059,12450 11084,12395 11092,12375
 	2::inwork 11032,12439 11059,12450
@@ -25538,6 +25538,23 @@ EOF
        data  => <<EOF,
 #: source_id: 2147340518
 userdel	q3::inwork; -795,13437 -729,13415 -346,13349 -309,13268 -264,13009
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Spreeradweg: Bauarbeiten, Uferweg zwischen Caprivibrücke und Schloßbrücke gesperrt',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.515606.php',
+       data  => <<EOF,
+#: XXX Wann sind die Bauarbeiten beendet? Wird die Qualität danach besser sein? vvv
+#: last_checked: 2016-09-18 vvv
+#: check_frequency: 60d vvv
+userdel	2::inwork 3332,12742 3396,12741 3358,12718
+userdel	2::inwork 3396,12741 3476,12735 3582,12704 3654,12672 3763,12624 3837,12618
+userdel	2::inwork 3741,12607 3654,12672
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
 EOF
      },
     );

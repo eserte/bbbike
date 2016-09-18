@@ -1809,7 +1809,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'data' => '######################################################################
 # Wochenmärkte vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-	q4::temp:clock 4397,7375 4330,7375 4162,7375 4059,7375
+	q4::temp:clock 4397,7380 4330,7382 4161,7388 4064,7396
 ',
          'from' => undef,
          'id' => 1813,
@@ -3378,7 +3378,7 @@ userdel	2::inwork 8101,13901 8248,13659 8337,13541
        undef,
        undef,
        {
-         'data' => '#: last_checked: 2016-03-26
+         'data' => '#: last_checked: 2016-09-18
 #: check_frequency: 90d
 userdel	q4::inwork; 3807,11859 3666,11855
 ',
@@ -3768,7 +3768,7 @@ userdel	q4::inwork; 8642,7876 8731,7956
        },
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2016-09-07 vvv
+#: last_checked: 2016-09-18 vvv
 #: check_frequency: 14d vvv
 	q4::inwork 10954,12635 11059,12450 11084,12395 11092,12375
 	2::inwork 11032,12439 11059,12450
@@ -3814,6 +3814,24 @@ userdel	q3::inwork; -795,13437 -729,13415 -346,13349 -309,13268 -264,13009
          'text' => 'Wiesendamm: Bauarbeiten, RIchtung Spandauer Damm Fahrbahn gesperrt, bis 30.09.2016',
          'type' => 'handicap',
          'until' => 1475272800
+       },
+       {
+         'data' => '#: XXX Wann sind die Bauarbeiten beendet? Wird die Qualität danach besser sein? vvv
+#: last_checked: 2016-09-18 vvv
+#: check_frequency: 60d vvv
+userdel	2::inwork 3332,12742 3396,12741 3358,12718
+userdel	2::inwork 3396,12741 3476,12735 3582,12704 3654,12672 3763,12624 3837,12618
+userdel	2::inwork 3741,12607 3654,12672
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+',
+         'from' => undef,
+         'id' => 2830,
+         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.515606.php',
+         'text' => 'Spreeradweg: Bauarbeiten, Uferweg zwischen Caprivibrücke und Schloßbrücke gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

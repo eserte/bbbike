@@ -75,7 +75,7 @@ Mariendorfer Damm: Fahrbahn zwischen Prinzenstr. und Richterstr. gesperrt	q4::in
 #
 #: XXX siehe auch valid-Eintrag weiter unten
 #: source_id: 2147340178
-#: last_checked: 2016-09-01
+#: last_checked: 2016-09-17
 #: valid: -20161115
 Bouchéstr.: Bauarbeiten, Radfahrer müssen auf dem Gehweg fahren	q2::inwork 13642,9624 13865,9866 13890,9894
 # REMOVED (wahrscheinlich aufgehoben) --- #: last_checked: 2013-11-22 --- #: check_frequency: 60d --- Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 13973,9465 14157,9345
@@ -85,7 +85,10 @@ Bouchéstr.: Bauarbeiten, Radfahrer müssen auf dem Gehweg fahren	q2::inwork 13642
 # REMOVED --- #: last_checked: 2015-06-10 --- Am Zirkus: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9167,13046 9137,13032 9090,13009
 # REMOVED --- #: last_checked: 2016-06-01 --- Kommandantenstr.: Bauarbeiten, Einbahnstraße	q2::inwork; 10437,11352 10389,11390
 # 
-#: last_checked: 2016-09-12
+#: last_checked: 2016-09-18
+Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 10480,12077 10418,12016
+# 
+#: last_checked: 2016-09-18
 Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
 #: last_checked: 2016-09-12
@@ -393,20 +396,7 @@ Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inw
 # 
 ### Biesdorf ###
 # 
-#: next_check_id: ZIMMERMANNSTRBR-2015
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5575.html
-#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/zimmermannstrassenbruecke/
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6162.html
-#: XXX Radfahrer können weiterhin passieren, zunächst über den nördlichen Gehweg, später über eine Behelfsbrücke (Breite 2,50m)
-#: XXX nach den Bauarbeiten (bis 2016-08?) wird es hier Radspuren geben
-#: XXX laut rbbtext bis 31.03.2016
-#: XXX laut vmz bis Ende Oktober 2016, laut fritz bis 15.09.2016, laut Pressemitteilung Mitte September
-#: source_id: IM_024857
-#: source_id: 2147339545
-#: osm_watch: way id="25795962" version="14" 
-#: last_checked: 2016-06-19
-#: next_check: 2016-09-15
-Zimmermannstraßenbrücke: Bau einer neuen Brücke, Radfahrer müssen den Gehweg bzw. Behelfsbrücke benutzen	q4::inwork 21430,9026 21385,9049 21365,9059 21351,9066 21314,9083
+# REMOVED (laut osm für Radfahrer bereits befahrbar) --- #: next_check_id: ZIMMERMANNSTRBR-2015 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5575.html --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/zimmermannstrassenbruecke/ --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6162.html --- #: XXX Radfahrer können weiterhin passieren, zunächst über den nördlichen Gehweg, später über eine Behelfsbrücke (Breite 2,50m) --- #: XXX nach den Bauarbeiten (bis 2016-08?) wird es hier Radspuren geben --- #: XXX laut rbbtext bis 31.03.2016 --- #: XXX laut vmz bis Ende Oktober 2016, laut fritz bis 15.09.2016, laut Pressemitteilung Mitte September --- #: source_id: IM_024857 --- #: source_id: 2147339545 --- #: osm_watch: way id="25795962" version="15"  --- #: last_checked: 2016-06-19 --- #: next_check: 2016-09-15 --- Zimmermannstraßenbrücke: Bau einer neuen Brücke, Radfahrer müssen den Gehweg bzw. Behelfsbrücke benutzen	q4::inwork 21430,9026 21385,9049 21365,9059 21351,9066 21314,9083
 # 
 #: temporary ^^^
 ######################################################################
@@ -677,7 +667,7 @@ Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 (Tilla-Durieux-Park): Fußgänger	q2 8467,11125 8410,11143
 #: next_check_id: SPREERADWEGEINSTEINUFER-2014
 #: XXX Bauarbeiten, wird der Weg später breiter sein?
-#: last_checked: 2016-03-26
+#: last_checked: 2016-09-18
 #: check_frequency: 180d
 (Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3358,12718 3396,12741 3476,12735 3582,12704 3654,12672 3763,12624 3837,12618 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491
 (Rad- und Wanderweg an Spree und Landwehrkanal): einige Fußgänger	q1 4642,12491 4817,12366 5045,12243 5147,12164 5261,12004 5361,11910
@@ -754,7 +744,7 @@ Am Rummelsburger See: Fußgänger an schönen Tagen	q1 16268,9670 16347,9594
 Am Teltowkanal: kurverreich und recht eng	q1 3764,1385 3695,1308 3619,1207 3419,1061 3375,1026 3366,1007
 #: XXX_prog BS (es gibt an beiden Seiten Bordsteine sowie eine zusätzliche Stufe im südlichen Bereich, ansonsten wäre es wohl q2)
 Körnerpark: Fußgänger, Bordsteine	q3 12703,7370 12722,7261
-Fregestr. zur Feuerbachstr.: Gehweg, Fußgänger	q2 5629,6407 5582,6360
+# REMOVED (separater Radweg existiert) --- Fregestr. zur Feuerbachstr.: Gehweg, Fußgänger	q2 5622,6400 5582,6360
 #: XXX_prog BS (wahrscheinlich nur am Wendehammer der Weisestr. und falls man die Fahrbahn der Flughafenstr. benutzen möchte, ansonsten q2 oder schlechter)
 Weisestr.: Bordsteine	q3 11767,8330 11770,8292
 #: by: http://fotos.benno-koch.de/v/Radfahren_in_der_Stadt_Berlin/Radrouten_in_Berlin/Spreeradweg/Berliner_Innenstadt/P1010416.JPG.html ("Radfahrer absteigen"-Schild)
@@ -801,7 +791,7 @@ Fritz-Schiff-Weg: Fußgänger	q1 13463,12507 13484,12436 13448,12340
 (Crellestr. - Julius-Leber-Brücke): Fußgänger	q2 7524,9093 7555,8978 7509,8929 7497,8916
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870
 #: next_check_id: FISCHERINSEL-2015
-#: last_checked: 2016-09-13
+#: last_checked: 2016-09-17
 #: next_check: 2016-10-31
 Spreekanalufer: Umfahrung an der Straße Fischerinsel, Fußgänger	q3::inwork 10672,11870 10776,11942
 # REMOVED (danach wieder folgendes aktivieren) --- (Fischerinsel, Spreekanalufer): Fußgänger	q1 10672,11870 10776,11942
@@ -2840,7 +2830,7 @@ Rossitter Weg: Fußgänger (nur bei Veranstaltungen ein Problem)	q0 -107,12220 -12
 (Olbestr. - Lamberstr.): Fußgänger	q2 3280,13625 3304,13685 3365,13695
 (Goslarer Ufer - Am Bahnhof Jungfernheide): Fußgänger	q1 4187,13704 4156,13914 4151,13961 4076,14203 4011,14245
 (Lise-Meitner-Str. - Goslarer Ufer): Fußgänger	q1 4011,14245 3957,14229
-(Verlängerung der Ilsenburger Str. (Charlottenburg)): Fußgänger	q2 3966,13333 3969,13487
+(Verlängerung der Ilsenburger Str. (Charlottenburg)): Fußgänger	q2 3969,13341 3969,13405 3969,13487
 (Schwarzer Weg): Fußgänger	q2 4237,13231 4167,13375 4093,13429 3969,13487 3823,13540
 (Dahlienweg): Fußgänger	q2 3823,13540 3829,13572 3833,13590
 (Lambertstr. - Lise-Meitner-Str.): Fußgänger, schmal	q3 3508,13727 3713,13787

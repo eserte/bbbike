@@ -1212,10 +1212,12 @@ Sackgassenende im westlichen Potsdamer Abschnitt	culdesac -8060,-2228
 Sackgassenende in Steinstücken	culdesac -8095,-2219
 	culdesac -4232,-3572
 	culdesac 11899,13750
+nördliches Sackgassenende, BSR-Recyclinghof	culdesac_pseudo 3969,13341
 # 
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo 5622,6400
 	culdesac_pseudo 10633,11051
 	culdesac_pseudo -7248,-3434
 	culdesac_pseudo 1589,-763

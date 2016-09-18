@@ -443,9 +443,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 2369,9779
 	X 2360,9754
 	X 2415,9765
-	X 2366,9664
+	X 2361,9664
 	X 1928,10728
-	X 2016,11034
+	X 2011,11046
+	F 2037,11122
 	X 1532,11280
 	X 3006,11093
 	X 3501,11096
@@ -643,10 +644,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3441,11601
 	X 2609,11503
 	X 2547,11788
-	X 2071,11752
+	X 2058,11756
 	X 1971,12368
 	X 2414,12418
-	X 2109,11441
+	X 2095,11440
 	X 1574,11379
 	X 1403,11428
 #: XXX_prog nicht relevant beim Fahren von der Heerstr. auf den Platz
@@ -690,8 +691,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 653,12109
 	X 818,11954
 	F 1215,11587
-	X 2252,11037
-	X 2340,11045
+	X 2254,11051
+	X 2340,11056
 	X 2621,11065
 	X 3283,11097
 	X 3975,11087
@@ -811,7 +812,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 2746,5537
 	X 2027,4792
 	X 1074,8470
-	X 2114,7742
+	X 2112,7754
 	X 2767,7592
 	X 6020,8809
 	X 161,3062
@@ -991,9 +992,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	B 1583,9713
 	X 1049,10568
 	X 1344,10012
-	X 4056,7280
+	X 4063,7287
 #: note: Anforderung für Radfahrer Richtung Norden (offene Einbahnstraße!)
-	X 4391,7258
+	X 4393,7266
 	X 13217,11936
 #: note: Ausfahrt Klinikum Neukölln
 	X 14347,3836
@@ -1353,7 +1354,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX_indoor: Ampel ist eigentlich Richtung SW versetzt, allerdings stimmt dann die Geometrie mit dem Flinsberger Platz nicht...
 	F 2966,8586
 	F 2857,8487
-	X 2316,8857
+	X 2322,8857
 	X 1585,5136
 	X 23451,4877
 	F -7787,8517
@@ -1767,7 +1768,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 4957,9437
 	F 5799,6841
 	X -772,13199
-	X 3961,7288
+	X 3965,7297
 	X 3083,7587
 	F 4519,9393
 #: note: Anforderungsampel für Radfahrer im Zuge der Delbrückstr.; für Autos gibt es Kontaktschleifen
@@ -2468,10 +2469,10 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: Anforderungsampel
 	F 15356,3759
 #: next_check_id: KARLSHORSTER-2016
-#: last_checked: 2016-09-14
-#: next_check: 2016-10-31
-#: note: provisorische Ampel
 # REMOVED --- : XXX nicht immer eingeschaltet, z.B. 2015-08-08 (Sa) gegen 10 Uhr off
+#: note: provisorische Ampel
+#: last_checked: 2016-09-17
+#: next_check: 2016-10-31
 #: valid: 20160829-20161031
 	X::inwork 14805,10518
 # REMOVED (ja) --- #: XXX bleibt die Ampel permanent? --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1509/nachricht5759.html (ja, es wird eine neue Ampel errichtet) --- #: last_checked: 2016-08-01 --- #: check_frequency: 60d
@@ -2479,7 +2480,6 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 8667,5372
 	F 5807,12070
 	F 6833,15215
-#: note: Luftbild
 	F 3542,13203
 #: note: Luftbild
 	X 3429,13227
@@ -2604,7 +2604,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2016-09-12 vvv
+#: last_checked: 2016-09-17 vvv
 #: check_frequency: 30d vvv
 	X::inwork 9122,12509
 	X::inwork 9286,12886
@@ -2784,9 +2784,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_prog eigentlich nur für Radfahrer Richtung Nordwesten relevant vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
 #: source_id: IM_023548 (bis Ende April 2016) vvv
-#: last_checked: 2016-05-22 vvv
+#: last_checked: 2016-09-16 vvv
 #: check_frequency: 120d vvv
-	F 17568,7753
+# REMOVED (Zweirichtungsradweg geht Richtung Norden weiter) --- F 17568,7753
 	F 17769,7465
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -2816,7 +2816,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id: FISCHERINSEL-2015 vvv
 #: source_id: IM_024012 vvv
 #: source_id: 2147339543 vvv
-#: last_checked: 2016-09-13 vvv
+#: last_checked: 2016-09-17 vvv
 #: next_check: 2016-10-31 vvv
 	F::inwork 10703,11837
 	F::inwork 10656,11887
