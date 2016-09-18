@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# Copyright (C) 2009,2012,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012,2013,2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -22,7 +22,8 @@ use Getopt::Long;
 use LWP::UserAgent;
 use Time::Local qw(timegm);
 
-my $metar_url = "http://weather.noaa.gov/cgi-bin/mgetmetar.pl?cccc=";
+#my $metar_url = "http://weather.noaa.gov/cgi-bin/mgetmetar.pl?cccc=";
+my $metar_url_cb = sub { "http://tgftp.nws.noaa.gov/data/observations/metar/stations/$_[0].TXT" };
 
 sub usage () {
     die <<EOF;
@@ -105,7 +106,7 @@ if (!@sites) {
 for my $site_def (@sites) {
     my($site_code, $r) = @{$site_def}{qw(sitecode record)};
 
-    my $url = $metar_url . $site_code;
+    my $url = $metar_url_cb->($site_code);
     my $resp = $ua->get($url);
     if (!$resp) {
 	warn "Fetching for $site_code failed: " . $resp->status_line;
@@ -113,8 +114,8 @@ for my $site_def (@sites) {
     }
 
     my $content = $resp->content;
-    $content =~ s/\n//g;
-    $content =~ m/($site_code\s\d+Z.*?)</g;
+    #$content =~ s/\n//g;
+    $content =~ m/(\Q$site_code\E\s\d+Z.*)/g;
     my $metar = $1;
     if (length $metar < 10) {
 	warn "METAR for $site_code too short: '$metar'. Skipping...\n";
