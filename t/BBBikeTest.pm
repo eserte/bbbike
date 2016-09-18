@@ -37,6 +37,15 @@ use base qw(Exporter);
 
 use File::Basename qw(dirname);
 use File::Spec     qw();
+use Cwd            qw(realpath);
+
+BEGIN {
+    my $bbbike_root = realpath(dirname(__FILE__) . "/..");
+    no warnings 'uninitialized';
+    if (!grep { realpath($_) eq $bbbike_root } @INC) {
+        push @INC, $bbbike_root;
+    }
+}
 
 use BBBikeBuildUtil qw(get_pmake);
 use BBBikeUtil qw(bbbike_root is_in_path);

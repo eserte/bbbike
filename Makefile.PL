@@ -8,6 +8,8 @@ BEGIN {
 }
 
 use strict;
+use FindBin;
+use lib $FindBin::RealBin;
 
 use ExtUtils::MakeMaker;
 use ExtUtils::Manifest;

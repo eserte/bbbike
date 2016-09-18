@@ -7,7 +7,7 @@
 
 use strict;
 use FindBin;
-use lib "$FindBin::RealBin..";
+use lib "$FindBin::RealBin/..";
 
 use File::Temp qw(tempdir);
 use Test::More;

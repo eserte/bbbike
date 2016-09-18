@@ -32,7 +32,7 @@ ok $pmake, "pmake call worked, result is $pmake";
 {
     chdir "$FindBin::RealBin/.." or die $!;
     my $pmake_via_cmdline = IO::Pipe->new->reader
-	($^X, '-MBBBikeBuildUtil=get_pmake', '-e', 'print get_pmake')
+	($^X, '-I.', '-MBBBikeBuildUtil=get_pmake', '-e', 'print get_pmake')
 	->getline;
     is $pmake_via_cmdline, $pmake, 'cmdline call also works';
 }

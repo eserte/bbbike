@@ -6,6 +6,8 @@
 #
 
 use strict;
+use FindBin;
+use lib "$FindBin::RealBin/..";
 
 BEGIN {
     if (!eval q{
