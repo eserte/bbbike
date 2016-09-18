@@ -42,7 +42,7 @@ use Cwd            qw(realpath);
 BEGIN {
     my $bbbike_root = realpath(dirname(__FILE__) . "/..");
     no warnings 'uninitialized';
-    if (!grep { realpath($_) eq $bbbike_root } @INC) {
+    if (!grep { -d $_ && realpath($_) eq $bbbike_root } @INC) {
         push @INC, $bbbike_root;
     }
 }
