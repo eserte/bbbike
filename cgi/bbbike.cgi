@@ -6851,12 +6851,14 @@ sub header {
 			  -href  => "$bbbike_images/srtbike_logo_black.svg",
 			  -color => 'blue',
 			 });
-    # for android chrome
-    push @$head, cgilink({-rel   => 'icon',
-			  -sizes => '192x192',
-			  -href  => "$bbbike_images/srtbike192.png",
-			  -type  => 'image/png',
-			 });
+    ## for android chrome
+    ## unfortunately this sets also the standard firefox favicon, but this
+    ## icon here has no transparent background --- so currently disabled
+    #push @$head, cgilink({-rel   => 'icon',
+    #			  -sizes => '192x192',
+    #			  -href  => "$bbbike_images/srtbike192.png",
+    #			  -type  => 'image/png',
+    #			 });
 
     my($bbbike_de_script, $bbbike_en_script);
     if ($lang eq 'en') {
