@@ -6842,6 +6842,10 @@ sub header {
 			  -sizes => '152x152',
 			  -href  => "$bbbike_images/srtbike152.png",
 			 });
+    push @$head, cgilink({-rel   => 'apple-touch-icon',
+			  -sizes => '180x180',
+			  -href  => "$bbbike_images/srtbike180.png",
+			 });
 
     my($bbbike_de_script, $bbbike_en_script);
     if ($lang eq 'en') {

@@ -322,9 +322,13 @@ png-to-jpg:	\
 # then added the borders with ImageMagick:
 #   convert -bordercolor white -border 8x8 tmp.png srtbike72.png
 #   convert -bordercolor white -border 12x12 tmp.png srtbike114.png
-# Same with the larger versions (with 94x94px for the 120px version and 120x120px for the 152px version)
+# Same with the larger versions, with
+# 94x94px for the 120px version
+# 120x120px for the 152px version
+# 140x140px for the 180px version
 #   convert -bordercolor white -border 13x13 /tmp/tmp1.png /tmp/srtbike120.png
 #   convert -bordercolor white -border 16x16 /tmp/tmp2.png /tmp/srtbike152.png
+#   convert -bordercolor white -border 20x20 /tmp/tmp3.png /tmp/srtbike180.png
 
 # Creation of srtbike16a.png and srtbike32a.png:
 #   convert -border 1x1 -bordercolor '#ffffff00' -geometry 16x16 srtbike_logo.svg srtbike16a.png
