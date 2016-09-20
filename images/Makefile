@@ -326,9 +326,16 @@ png-to-jpg:	\
 # 94x94px for the 120px version
 # 120x120px for the 152px version
 # 140x140px for the 180px version
+# 150x150px for the 192px version
+# 
 #   convert -bordercolor white -border 13x13 /tmp/tmp1.png /tmp/srtbike120.png
 #   convert -bordercolor white -border 16x16 /tmp/tmp2.png /tmp/srtbike152.png
 #   convert -bordercolor white -border 20x20 /tmp/tmp3.png /tmp/srtbike180.png
+#   convert -bordercolor white -border 21x21 /tmp/tmp4.png /tmp/srtbike192.png
+#
+# srtbike_logo_black.svg was manually created in inkscape from
+# srtbike_logo.svg, by re-coloring everything to black and setting
+# alpha of the lightblue portions to 50%.
 
 # Creation of srtbike16a.png and srtbike32a.png:
 #   convert -border 1x1 -bordercolor '#ffffff00' -geometry 16x16 srtbike_logo.svg srtbike16a.png

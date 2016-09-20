@@ -6846,6 +6846,17 @@ sub header {
 			  -sizes => '180x180',
 			  -href  => "$bbbike_images/srtbike180.png",
 			 });
+    # safari pinned tab icon
+    push @$head, cgilink({-rel   => 'mask-icon',
+			  -href  => "$bbbike_images/srtbike_logo_black.svg",
+			  -color => 'blue',
+			 });
+    # for android chrome
+    push @$head, cgilink({-rel   => 'icon',
+			  -sizes => '192x192',
+			  -href  => "$bbbike_images/srtbike192.png",
+			  -type  => 'image/png',
+			 });
 
     my($bbbike_de_script, $bbbike_en_script);
     if ($lang eq 'en') {
