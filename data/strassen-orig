@@ -1088,7 +1088,7 @@ Andreasstr.	NH 12180,11657 12208,11746 12238,11931 12279,12113 12295,12197 12345
 Kleine Andreasstr.	N 12064,12171 12211,12128
 Kleine Andreasstr.	NN 12211,12128 12279,12113
 Schillingstr. (Mitte)	NN 11388,12202 11452,12318 11462,12384
-Schillingstr. (Mitte)	N 11340,12443 11462,12384 11497,12463 11558,12588 11596,12668 11635,12745
+Schillingstr. (Mitte)	N 11340,12443 11353,12436 11462,12384 11497,12463 11558,12588 11596,12668 11635,12745
 (Schillingstr. - Neue Blumenstr.)	NN 11596,12668 11709,12601
 Neue Blumenstr.	N 11607,12412 11709,12601 12006,12464 12118,12462
 Blumenstr. (Friedrichshain)	N 12118,12462 12305,12440 12345,12435
@@ -5677,9 +5677,13 @@ Blumberger Damm [Nebenfahrbahn]	N 21719,15666 21733,15755
 Blumberger Damm [Nebenfahrbahn]	N 21816,15954 21788,16002 21812,16189 21835,16210 21842,16242 21862,16381 21885,16494 21908,16634 21944,16805
 Blumberger Damm [Nebenfahrbahn]	N 21413,13459 21430,13602 21466,13903
 Blumberger Damm [Wohngebiet]	N 21824,16506 21574,16547
-#: XXX_indoor ist das der "Reinhold-Lingner-Weg"? (kaum Treffer dazu im Internet)
+# REMOVED (vermutlich nicht) --- : XXX_indoor ist das der "Reinhold-Lingner-Weg"? (kaum Treffer dazu im Internet)
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036788094107/788094107/00079308/08-Anlagen/02/vzbbvv1018_IV_Radwegekonzept.pdf
 #: by: http://fraktion.piraten-mahe.de/wiki/index.php?title=Protokolle/2016-04-20_siedverklap
+#: XXX vorgeschlagener neuer Name: Gottfried-Funeck-Weg (fehlt in Berlin.coords.data)
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksamt/beschluesse/2016/artikel.515598.php
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2016/ba-vorlage_1311_iv_benennung_fuss_radweg_funeck.pdf
+#: XXX laut PDF "im Bau" --- als gesperrt markieren?
 (Blumberger Damm - Wuhle)	NN 21450,14576 21822,14480 21925,14500 21948,14501 21985,14513 22026,14501 22061,14471 22172,14287 22414,14144
 # REMOVED --- #: XXX Straße wird umbenannt, neuer Name: "Am Gewerbepark" --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5605 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810361044878152/1044878152/00070570/70-Anlagen/02/vzb0689_IV-Bennenung_Am_Gewerbepark.pdf --- #: XXX Eintrag in Berlin.coords.data fehlt, die "Grimmener Str." muss ausgetragen werden und nach oldnames wandern --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/13re.pdf/file?y=2014 --- #: last_checked: 2014-08-08 --- #: check_frequency: 60d
 #: oldname: -201403: Grimmener Str.
@@ -9723,7 +9727,7 @@ Mühsamstr.	N 13844,12900 13622,12806 13559,12779 13506,12752 13371,12694 13273,1
 Adalbertstr.	NH 11393,10390 11389,10463 11411,10515 11463,10642 11505,10744 11556,10869 11589,10947 11640,11067 11656,11106
 Adalbertstr.	N 11656,11106 11726,11265 11808,11482
 Kohlfurter Str.	N 11512,10105 11464,10102 11274,10184 11094,10261
-Böcklerstr.	N 10967,10092 10923,10113 10878,10150 10871,10322
+Böcklerstr.	N 10967,10092 10923,10113 10887,10142 10871,10322
 Riemeisterstr.	N 88,5136 144,5102 294,4916 346,4833 374,4779 418,4696 519,4547 666,4339 754,4220 806,4130 861,3996 892,3907 891,3828 923,3585 971,3534
 Ladenstr.	N 374,4779 169,4676
 Hertastr. (Zehlendorf)	N 1015,3858 949,4055

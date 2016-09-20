@@ -20946,11 +20946,11 @@ EOF
 userdel	q4::inwork; 9275,4672 9405,4667 9494,4658 9695,4638 10010,4606
 EOF
      },
-     { from  => $isodate2epoch->("2016-09-21 06:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-09-23 00:00:00"), #
+     { from  => $isodate2epoch->("2016-09-19 06:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-09-22 12:00:00"), #
        periodic => 1,
-       recurrences => [['yearly', days => 21, months => 9]],
-       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon gesperrt, vermutlich ab 22.09.2016',
+       recurrences => [['yearly', days => 19, months => 9]],
+       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon gesperrt, ab 20.09.2016',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
@@ -20958,11 +20958,11 @@ userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,1224
 	3::temp 8327,12174 8344,12221 8391,12389
 EOF
      },
-     { from  => $isodate2epoch->("2016-09-23 00:00:00"),
-       until => $isodate2epoch->("2016-09-26 18:00:00"),
+     { from  => $isodate2epoch->("2016-09-21 06:00:00"),
+       until => $isodate2epoch->("2016-09-26 06:00:00"),
        periodic => 1,
-       recurrences => [['yearly', days => 21, months => 9]],
-       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Behrenstr. und Scheidemannstr., Yitzak-Rabin-Str., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, vermutlich bis 26.09.2016',
+       recurrences => [['yearly', days => 19, months => 9]],
+       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, bis 26.09.2016',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 8573,12325 8540,12420
@@ -25469,30 +25469,28 @@ EOF
 EOF
      },
      { from  => 1474149600, # 2016-09-18 00:00
-       until => 1480546799, # 2016-11-30 23:59
-       text  => 'Werner-Voß-Damm und Manfred-von-Richthofen-Str.: Bauarbeiten, Fahrbahn gesperrt (zwischen Boelckestr. und Manfred-von-Richthofen-Str. sowie zwischen Loewenhardtdamm und Wolffring), vom 19. September 2016 bis November 2016',
+       until => $isodate2epoch->("2016-11-12 12:00:00"), # 1480546799, # 2016-11-30 23:59
+       text  => 'Werner-Voß-Damm und Manfred-von-Richthofen-Str.: Bauarbeiten, Fahrbahn gesperrt (zwischen Boelckestr. und Manfred-von-Richthofen-Str. sowie zwischen Loewenhardtdamm und Wolffring), vom 19. September 2016 bis 12. November 2016',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.514646.php',
        data  => <<EOF,
-#: XXX wann im November sind die Bauarbeiten fertig? vvv
-#: next_check: 2016-11-01 vvv
+#: source_id: 2147340586
 userdel	q4::inwork; 8730,8079 8776,8285 8807,8353
 userdel	q4::inwork; 8642,7876 8731,7956
-#: next_check ^^^
-#: XXX ^^^
 EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Littenstr.: Bauarbeiten, Fahrbahn gesperrt, Zufahrt von der Waisenstr. nicht möglich, Einbahnstraßenregelung in der Voltairestr.',
+       text  => 'Littenstr.: Bauarbeiten, Fahrbahn gesperrt, Einbahnstraßenregelung in der Voltairestr.',
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2016-09-18 vvv
+#: last_checked: 2016-09-20 vvv
 #: check_frequency: 14d vvv
-	q4::inwork 10954,12635 11059,12450 11084,12395 11092,12375
-	2::inwork 11032,12439 11059,12450
-	2::inwork 11049,12386 11084,12395
+	q2::inwork 10954,12635 11059,12450
+	q3::inwork 11059,12450 11084,12395 11092,12375
+#	2::inwork 11032,12439 11059,12450
+#	2::inwork 11049,12386 11084,12395
 	q2::inwork; 11092,12375 11209,12430
 #: check_frequency ^^^
 #: last_checked ^^^

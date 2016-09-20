@@ -1147,7 +1147,8 @@ Münsinger Park -> Altstädter Ring: Mittelstreifen mit Zaun	3::igndisp -3607,1424
 Mittelstreifen	3nocross::ignrte 6996,3761 6957,3699 6782,3491
 Langkofelweg -> Kaiser-Wilhelm-Str.: Mittelstreifen	3::igndisp 6998,3596 6957,3699 6782,3491
 umbequemes Überqueren wegen Bordsteinen	3nocross::ignrte 11329,12497 11340,12443 11355,12331
-Schillingstr. -> Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11462,12384 11340,12443 11355,12331
+Schillingstr. -> Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11353,12436 11340,12443 11355,12331
+Alexanderstr. -> Schillingstr.: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11329,12497 11340,12443 11353,12436
 Mittelstreifen	3nocross::ignrte 8777,9601 8679,9544 8595,9495
 Yorckstr. -> Hagelberger Str.: Mittelstreifen	3::igndisp 8777,9601 8679,9544 8774,9534
 Mittelstreifen	3nocross::ignrte 7434,18695 7492,18699 7520,18701
@@ -3482,3 +3483,4 @@ Frankfurter Allee, linker Gehweg bis zur Ampel	1::igndisp 15670,12022 15717,1201
 Otto-Braun-Str., linker Gehweg	1::igndisp 11451,13301 11352,13180
 Invalidenstr., linker Gehweg	1::igndisp 8337,13541 8282,13535
 Lichtenberger Brücke, linker Gehweg	1::igndisp 16978,11852 16818,11878
+Alexanderstr., linker Gehweg	1::igndisp 11353,12436 11329,12497

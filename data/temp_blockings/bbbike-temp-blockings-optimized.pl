@@ -2061,25 +2061,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,11953
-',
-         'from' => 1474016400,
-         'id' => 1910,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              16,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbst in Westend), Straße vollständig gesperrt (17.09.2016 bis 18.09.2016) ',
-         'type' => 'gesperrt',
-         'until' => 1474221600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2580,26 +2562,7 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	q4::temp 8556,21918 8568,21863 8473,21633 8460,21602
-',
-         'from' => 1473890400,
-         'id' => 2285,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              14,
-                              'months',
-                              9
-                            ]
-                          ],
-         'source_id' => 'http://www.laubinger.de/termine/rosenthaler-herbst/?y=2016',
-         'text' => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 16.09.2016 bis 18.09.2016',
-         'type' => 'handicap',
-         'until' => 1474235999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2748,21 +2711,21 @@ userdel	2::night 14838,11410 14792,11391
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
 ',
-         'from' => 1474430400,
+         'from' => 1474257600,
          'id' => 2387,
          'periodic' => 1,
          'recurrences' => [
                             [
                               'yearly',
                               'days',
-                              21,
+                              19,
                               'months',
                               9
                             ]
                           ],
-         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon gesperrt, vermutlich ab 22.09.2016',
+         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon gesperrt, ab 20.09.2016',
          'type' => 'gesperrt',
-         'until' => 1474581600
+         'until' => 1474538400
        },
        {
          'data' => 'userdel	2::temp 8573,12325 8540,12420
@@ -2785,21 +2748,21 @@ userdel	3 8120,12756 8122,12603 7945,12592
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
 ',
-         'from' => 1474581600,
+         'from' => 1474430400,
          'id' => 2388,
          'periodic' => 1,
          'recurrences' => [
                             [
                               'yearly',
                               'days',
-                              21,
+                              19,
                               'months',
                               9
                             ]
                           ],
-         'text' => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Behrenstr. und Scheidemannstr., Yitzak-Rabin-Str., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, vermutlich bis 26.09.2016',
+         'text' => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, bis 26.09.2016',
          'type' => 'gesperrt',
-         'until' => 1474905600
+         'until' => 1474862400
        },
        undef,
        undef,
@@ -3752,27 +3715,25 @@ userdel	q4::inwork 6587,16199 6484,16085
        undef,
        undef,
        {
-         'data' => '#: XXX wann im November sind die Bauarbeiten fertig? vvv
-#: next_check: 2016-11-01 vvv
+         'data' => '#: source_id: 2147340586
 userdel	q4::inwork; 8730,8079 8776,8285 8807,8353
 userdel	q4::inwork; 8642,7876 8731,7956
-#: next_check ^^^
-#: XXX ^^^
 ',
          'from' => 1474149600,
          'id' => 2824,
          'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.514646.php',
-         'text' => 'Werner-Voß-Damm und Manfred-von-Richthofen-Str.: Bauarbeiten, Fahrbahn gesperrt (zwischen Boelckestr. und Manfred-von-Richthofen-Str. sowie zwischen Loewenhardtdamm und Wolffring), vom 19. September 2016 bis November 2016',
+         'text' => 'Werner-Voß-Damm und Manfred-von-Richthofen-Str.: Bauarbeiten, Fahrbahn gesperrt (zwischen Boelckestr. und Manfred-von-Richthofen-Str. sowie zwischen Loewenhardtdamm und Wolffring), vom 19. September 2016 bis 12. November 2016',
          'type' => 'handicap',
-         'until' => 1480546799
+         'until' => 1478948400
        },
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2016-09-18 vvv
+#: last_checked: 2016-09-20 vvv
 #: check_frequency: 14d vvv
-	q4::inwork 10954,12635 11059,12450 11084,12395 11092,12375
-	2::inwork 11032,12439 11059,12450
-	2::inwork 11049,12386 11084,12395
+	q2::inwork 10954,12635 11059,12450
+	q3::inwork 11059,12450 11084,12395 11092,12375
+#	2::inwork 11032,12439 11059,12450
+#	2::inwork 11049,12386 11084,12395
 	q2::inwork; 11092,12375 11209,12430
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3780,7 +3741,7 @@ userdel	q4::inwork; 8642,7876 8731,7956
 ',
          'from' => undef,
          'id' => 2825,
-         'text' => 'Littenstr.: Bauarbeiten, Fahrbahn gesperrt, Zufahrt von der Waisenstr. nicht möglich, Einbahnstraßenregelung in der Voltairestr.',
+         'text' => 'Littenstr.: Bauarbeiten, Fahrbahn gesperrt, Einbahnstraßenregelung in der Voltairestr.',
          'type' => 'handicap',
          'until' => undef
        },
