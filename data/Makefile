@@ -1853,26 +1853,14 @@ ${PERSISTENTTMPDIR}/unhandled_streets_$(plz)XXX.bbd:	${PERSISTENTTMPDIR}/Berlin$
 
 ######################################################################
 
-.if ${UNAME} == FreeBSD
 check-coords.data:	check-Berlin.coords.data check-Potsdam.coords.data
-.else
-check-coords.data:
-	@echo '*** check-coords.data target is only active under FreeBSD,'
-	@echo '*** because of incompatible locale definitions'
-.endif
 
 .for city in Berlin Potsdam
 check-$(city).coords.data:	.check_$(city)_coords_data
 
 # Check for sortedness and unique records:
 .check_$(city)_coords_data:: $(city).coords.data
-	$(SORT_GERMAN_LOCALE) ${COORDS_DATA_SORT_OPTS} -c $(city).coords.data || \
-	    ( $(SORT_GERMAN_LOCALE) ${COORDS_DATA_SORT_OPTS} $(city).coords.data | diff -u - $(city).coords.data; false )
-	$(PERL) -nle '@l=split /\|/;\
-	    if (++$$x{"@l[0..2]"} > 1) { die "Duplicate: @l" }\
-	    if (@l < 2 || @l > 4) { die "Too less/many fields: @l" }\
-	    if ($$l[2] !~ /^(|\d{5})$$/) { die "Not a ZIP: @l" }\
-	' $(city).coords.data
+	${PERL} ${MISCSRCDIR}/sort-coords-data.pl -c $(city).coords.data
 	@touch $@
 .endfor
 
@@ -1974,25 +1962,11 @@ show-used-directives:
 
 sort-coords.data:	sort-Berlin.coords.data sort-Potsdam.coords.data
 
-# The sort result is the same like running this with FreeBSD's sort
-# with a German locale --- with the bug that "ß" is not handled correctly.
-# This is reflected in the perl script below (no substitution for "ß").
-#
-# Maybe in future this could be reimplemented to use Unicode::Collate,
-# but Unicode::Collate is significantly slower
 .for city in Berlin Potsdam
 sort-$(city).coords.data:
-	-@$(WRITEABLE) $(city).coords.data~
-	mv $(city).coords.data $(city).coords.data~
-	${PERL} -F'\|' -nale '\
-	    $$srtkey = lc join("|", @F[0..2]);\
-	    $$srtkey =~ tr/äöüÄÖÜáéè/aouaouaee/;\
-	    push @data, [$$srtkey, $$_];\
-	    END {\
-		print join("\n", map { $$_->[1] } sort { $$a->[0] cmp $$b->[0] } @data);\
-	    }' < $(city).coords.data~ > $(city).coords.data
+	${PERL} ${MISCSRCDIR}/sort-coords-data.pl $(city).coords.data > $(city).coords.data~
+	mv -f $(city).coords.data~ $(city).coords.data
 	@$(READABLE) $(city).coords.data
-	touch .check_$(city)_coords_data
 .endfor
 
 
