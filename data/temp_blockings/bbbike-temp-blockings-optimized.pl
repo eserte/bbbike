@@ -3238,6 +3238,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
        {
          'data' => '#: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2016/pressemitteilung.510363.php
 #: XXX hier wird asphaltiert
+#: last_checked: 2016-09-21
 #: next_check: 2016-10-07
 #: priority: #A
 userdel	2::inwork 8101,13901 8248,13659 8337,13541
@@ -3582,11 +3583,13 @@ userdel	q4::inwork; 25010,4807 25171,4757 25228,4745 25248,4752 25369,4790 25434
 #: note: offen am 2016-07-01 gegen 18:15 Uhr
 #: note: geschlossen am 2016-07-11 gegen 18:00 Uhr
 #: note: geschlossen am 2016-07-21 gegen 19:30 Uhr
+#: note: offen am 2016-09-21 gegen 18:15 Uhr
 userdel	2::temp 8362,13466 8369,13465 8377,13463
 #: note: verschlossen am 2016-06-16 gegen 9:30 Uhr
 #: note: verschlossen am 2016-07-01 gegen 18:15 Uhr
 #: note: verschlossen am 2016-07-11 gegen 18:00 Uhr
 #: note: verschlossen am 2016-07-21 gegen 19:30 Uhr
+#: note: verschlossen am 2016-09-21 gegen 18:15 Uhr
 userdel	2::temp 8371,13399 8363,13402 8356,13404
 ',
          'from' => undef,

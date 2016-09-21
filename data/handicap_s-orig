@@ -17,7 +17,7 @@
 #: source_id: LMS-BR_r_LMS-BR_78589
 #: source_id: 2147340546
 #: XXX bis Ende Oktober
-#: last_checked: 2016-09-14
+#: last_checked: 2016-09-21
 #: check_frequency: 14d
 Straße der Pariser Kommune: Wasserrohrbruch, Fahrbahn unter der Bahnbrücke gesperrt, Gehweg für Radfahrer frei	q3::inwork 12645,11673 12551,11515
 # 
@@ -88,7 +88,7 @@ Bouchéstr.: Bauarbeiten, Radfahrer müssen auf dem Gehweg fahren	q2::inwork 13642
 #: last_checked: 2016-09-18
 Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 10480,12077 10418,12016
 # 
-#: last_checked: 2016-09-18
+#: last_checked: 2016-09-21
 Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
 #: last_checked: 2016-09-12
@@ -113,7 +113,7 @@ Melchiorstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 11542,11342 11726,11265 119
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2014-08-22 --- #: check_frequency: 14d --- Michaelkirchplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11487,11390 11542,11342 11415,11392 11487,11390
 # 
 #: XXX Baustraßenbelag wird zurzeit entfernt
-#: last_checked: 2016-09-12
+#: last_checked: 2016-09-21
 #: check_frequency: 7d
 zur Keibelstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 10976,13229 11045,13183
 # 
@@ -203,7 +203,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # 
 #: by: http://www.bmbf.de/de/16888.php (Bezug im Herbst 2014)
 #: osm_watch: way id="4592727" version="12"
-#: last_checked: 2016-07-21
+#: last_checked: 2016-09-21
 #: check_frequency: 60d
 Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse!), Ausweichen auf Gehweg	q3::inwork 8315,13181 8406,13127
 # 
@@ -238,7 +238,8 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # 
 #: XXX laut fritz bis 29.07.2016
 #: source_id: 2147339998
-#: last_checked: 2016-09-13
+#: last_checked: 2016-09-21
+#: check_frequency: 7d
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10256,11160 10437,11352
 #: last_checked: 2016-09-13 vvv
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10624,11548
@@ -266,7 +267,7 @@ Carl-Herz-Ufer: Sperrung der Fahrbahn an der Baerwaldstr.	q4::inwork 10469,10081
 #: next_check_id: ALEXANDRINENSTR-2016
 #: source_id: LMS-BR_r_LMS-BR_68468
 #: XXX Endedatum laut fritz
-#: last_checked: 2016-09-13
+#: last_checked: 2016-09-21
 Stallschreiberstr., Alexandrinenstr.: Einbahnstraßenregelung	q4::inwork; 10794,10927 10824,11010 10678,11172 10593,11120 10501,11056
 # 
 # REMOVED (kaum noch Beeinträchtigungen) --- #: last_checked: 2016-02-26 --- #: next_check: 2016-03-30 --- Wassertorstr.: Wasserrohrbruch, kurzes Stück auf Gehweg ausweichen	q2::inwork 10857,10411 10987,10360

@@ -107,7 +107,7 @@ Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10
 # REMOVED (realisiert) --- #: XXX Baumaßnahme 1.39 (Realisierung in 2011) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: last_checked: 2013-06-28 --- #: check_frequency: 60d --- Schulze-Delitzsch-Platz: werden hier Radspuren markiert?	?::projected 11242,11720 11155,11750
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2016-09-12
+#: last_checked: 2016-09-21
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9701,11656
 # 
@@ -398,6 +398,10 @@ Munsterdamm: bei der Fahrbahnsanierung entstehen Radspuren	?::projected 6651,484
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: last_checked: 2016-09-21
+#: priority: #C
+Münzstr./Rochstr.: Zebrastreifen in Bau	?::inwork 10635,13207 10623,13213
+# 
 #: by: http://www.aktion-kms.de/files/2015-07-13_flyer_isarneckar_final.pdf
 #: last_checked: 2016-09-14
 #: check_frequency: 45d
@@ -492,9 +496,11 @@ Wuhlewanderweg: wird hier ein Weg auf der östlichen Uferseite errichtet?	?::proj
 # 
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2015/pressemitteilung.385888.php
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.205751.php
+#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2016/pressemitteilung.519460.php
+#: XXX "Der gesamte Straßenzug von der Danziger Straße bis zur Wisbyer Straße soll bis Ende 2017 fertig gestellt werden."
 #: last_checked: 2016-09-13
-#: check_frequency: 45d
-Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 10881,15047 11119,15385 11183,15485 11301,15668 11373,15789 11393,15823 11455,15916
+#: check_frequency: 30d
+Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 10881,15047 11119,15385 11183,15485 11301,15668 11373,15789 11393,15823 11455,15916 11500,15988 11550,16068 11554,16075 11618,16183 11698,16311 11727,16358
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php
 #: XXX ab Frühjahr 2017 für vier Jahre
@@ -563,12 +569,13 @@ Germanenplatz: Qualität nach den Bauarbeiten?	?::inwork 20405,1460 20381,1390
 #: XXX in beiden Amtsblättern ohne Bindestriche --- ist das richtig?
 #: XXX fehlt in Berlin.coords.data, PLZ=14195
 #: note: Privatstraße
-#: osm_watch: way id="318581479" version="2"
-#: osm_watch: way id="318581478" version="1"
-#: osm_watch: way id="318581477" version="1"
+#: osm_watch: way id="318581479" version="3"
+#: osm_watch: way id="318581478" version="2"
+#: osm_watch: way id="318581477" version="2"
 #: XXX im DPAG-Mitteilungsblatt mit Bindestrichen: Oskar-Helene-Park
+#: XXX laut osm living_street
 #: last_checked: 2016-03-28
-#: check_frequency: 180d
+#: next_check: 2016-09-21
 Oskar Helene Park: Wann sind die Bauarbeiten beendet? genaue Straßenführung? Qualität? Straßenname tatsächlich ohne Bindestriche?	?::inwork 1360,4501 1305,4519 1305,4556 1230,4629 1170,4562 1251,4478 1305,4519
 # 
 #: XXX Baumaßnahme GR9.24 (Realisierung nach 2011)
@@ -1345,16 +1352,17 @@ Soldiner Str.: grundhafte Erneuerung, evtl. verschwindet das Kopfsteinpflaster d
 #: XXX Ziffer 1 - George-Stephenson-Str.
 #: XXX Ziffer 5 - Lydia-Rabinowitsch-Kempner-Str. --- abgelehnt, neuer Namensvorschlag: Lydia-Rabinowitsch-Str.
 #: XXX Ziffer 6 - Annemarie-Renger-Str.
-#: last_checked: 2016-09-02 vvv
+#: last_checked: 2016-09-21 vvv
 #: next_check: 2016-12-31 vvv
 Kieler Brücke - Heidestraße, Rad/Gehweg	?::projected 7740,14409 7621,14341
 #: osm_watch: way id="237716440" version="3"
-geplanter Uferweg	?::projected 8171,13703 8128,13767 8044,13929 7989,14035 7912,14160 7843,14275 7824,14305 7740,14409
+geplanter Uferweg	?::projected 8291,13520 8171,13703 8128,13767 8044,13929 7989,14035 7912,14160 7843,14275 7824,14305 7740,14409
 #: XXX wird es auch eine Brücke zur Kieler Str. geben?
 #: XXX vermutlich diese Brücke wird "Golda-Meir-Steg" heißen (Berlin.coords.data-Eintrag fehlt)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2016
 Otto-Weidt-Platz: Fußgängerbereich zur Heidestraße, Qualität?	?::projected 7912,14160 7767,14077
 #: osm_watch: way id="237716438" version="6"
+#: XXX hinterer Bereich wird verkehrsberuhigt sein
 Clara-von-Simson-Str. (Ziffer 4); Planstraßen 1.1, 1.2, 1.3: asphaltiert; wird der Straßenname stimmen?	?::inwork 7651,14260 7762,14319 7802,14250 7697,14187
 Planstraße 1.3 - Uferweg: Fußgängerbereich	?::projected 7802,14250 7843,14275
 #: XXX wird es auch eine Brücke zum Invalidenfriedhof geben?
@@ -1594,9 +1602,8 @@ Spektegrünzug: parallel zum Spekteweg existiert ein Rad/Gehweg	? -4671,14818 -47
 # 
 #: next_check_id: HEIDESTR-2016 vvv
 #: XXX Ampeln in der Heidestr. vvv
-#: last_checked: 2016-07-21 vvv
+#: last_checked: 2016-09-21 vvv
 #: check_frequency: 60d vvv
-Anforderungsampel, F	?::inwork 7973,13743
 Anforderungsampel, X	?::inwork 7820,13994
 Anforderungsampel, F	?::inwork 7732,14131
 Anforderungsampel, X	?::inwork 7651,14260
@@ -1860,15 +1867,7 @@ Buschower Weg: wird hier asphaltiert?	? -8110,12160 -8098,12340 -8078,12647
 #: next_check: 2015-10-01
 Mauerweg im Spandauer Forst: Erneuerung	?::projected -3497,20003 -3652,20100 -4219,20240 -4485,20420 -4622,20496 -4724,20596 -5118,20749 -5393,20774 -5464,20802 -5609,20929 -5795,20965 -6044,20971 -6099,21157 -6465,21060 -6442,20864 -6482,20783
 # 
-#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6817
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2015
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2015 (Grundstücksnummerierungen)
-#: XXX sieht man schon Schilder? evtl. auch weiter hinten gelegen, oder westliches des Hamburger Bahnhofs
-#: XXX fehlt in Berlin.coords.data, laut LOR PLZ=10557
-#: last_checked: 2016-07-21 (keine Schilder)
-#: check_frequency: 60d
-Am Hamburger Bahnhof: Benennung des Platzes	? 8293,13519 8282,13535 8171,13703 8128,13767
-# 
+# REMOVED (befindet sich westliches des Hamburger Bahnhofs) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6817 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2015 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2015 (Grundstücksnummerierungen) --- #: XXX sieht man schon Schilder? evtl. auch weiter hinten gelegen, oder westliches des Hamburger Bahnhofs --- #: XXX fehlt in Berlin.coords.data, laut LOR PLZ=10557 --- #: last_checked: 2016-07-21 (keine Schilder) --- #: check_frequency: 60d --- Am Hamburger Bahnhof: Benennung des Platzes	? 8291,13520 8282,13535 8171,13703 8128,13767
 # REMOVED (ja, und eine Einbahnstraße für Autos) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6320 --- Kyllburger Weg: gibt es hier eine Spielstraße?	? 16418,17311 16549,17394 16645,17449 16670,17454 16779,17521
 # 
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2015/pressemitteilung.331578.php

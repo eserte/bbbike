@@ -564,6 +564,9 @@ Nonnendammallee (Richtungsfahrbahn)	1::igndisp -925,14631 -278,14532
 Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4348,2619 4313,2630 4224,2671 4170,2727
 Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4170,2727 4233,2675 4317,2638 4348,2619
 Königsberger Str. (Mittelstreifen)	3nocross::ignrte 4348,2619 4317,2638 4233,2675 4170,2727
+Invalidenstr. (Richtungsfahrbahn)	1::igndisp 8098,13419 8189,13468 8291,13520 8337,13541
+Invalidenstr. (Richtungsfahrbahn)	1::igndisp 8337,13541 8293,13519 8098,13419
+Invalidenstr. (Straßenbahntrasse)	3nocross::ignrte 8337,13541 8291,13520 8189,13468 8098,13419
 Lötschbergstr.	1s 20161,11715 20150,11512
 Brodenbacher Weg	1s 15178,17134 14897,17093
 Huttwiler Weg	1 6913,18460 6961,18453 7035,18413 7098,18383 7120,18295 7071,18232
@@ -2114,9 +2117,6 @@ Zimmerstr. -> Wilhelmstr.: Mittelstreifen	3::igndisp -3942,12957 -3967,12976 -40
 Straßenbahntrasse	3nocross::ignrte 10431,12709 10387,12760 10360,12793
 Spandauer Str. -> Spreegasse: Straßenbahntrasse	3::igndisp 10431,12709 10387,12760 10309,12700
 Spreegasse -> Spandauer Str.: Straßenbahntrasse	3::igndisp 10309,12700 10387,12760 10360,12793
-Straßenbahntrasse	3nocross::ignrte 8337,13541 8293,13519 8098,13419
-Invalidenstr. -> am Hamburger Bhf.: Straßenbahntrasse	3::igndisp 8098,13419 8293,13519 8282,13535
-am Hamburger Bhf. -> Invalidenstr.: Straßenbahntrasse	3::igndisp 8282,13535 8293,13519 8337,13541
 Mittelstreifen	3nocross::ignrte 7816,13276 7842,13292 7880,13315
 Invalidenstr. -> Weg durch den Geschichtspark: Mittelstreifen	3::igndisp 7816,13276 7842,13292 7822,13323
 Weg durch den Geschichtspark -> Invalidenstr.: Mittelstreifen	3::igndisp 7822,13323 7842,13292 7880,13315
@@ -3481,6 +3481,6 @@ Altentreptower Str., linker Gehweg	1::igndisp 21573,12140 21401,12155
 Wilhelmsruher Damm, linker Geh/Radweg bis zur Fußgängerampel	1::igndisp 5525,21022 5599,21025
 Frankfurter Allee, linker Gehweg bis zur Ampel	1::igndisp 15670,12022 15717,12010
 Otto-Braun-Str., linker Gehweg	1::igndisp 11451,13301 11352,13180
-Invalidenstr., linker Gehweg	1::igndisp 8337,13541 8282,13535
+Invalidenstr., linker Gehweg	1::igndisp 8337,13541 8183,13482
 Lichtenberger Brücke, linker Gehweg	1::igndisp 16978,11852 16818,11878
 Alexanderstr., linker Gehweg	1::igndisp 11353,12436 11329,12497
