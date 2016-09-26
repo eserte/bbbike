@@ -242,8 +242,8 @@ Stromstr., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,1
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20140627.1145.398202.html (Bauarbeiten, letzter Abschnitt) --- #: next_check_id: BLANKENBURGER-2014 --- #: last_checked: 2015-07-19 --- #: next_check: 2015-12-31 --- Blankenburger Str.: Radspuren bis 2015 geplant	?::projected 11563,20048 11632,20086 11690,20127 11799,20224 11959,20365 12008,20368
 # 
 #: osm_watch: way id="33836252" version="13"
-#: last_checked: 2016-04-17
-#: check_frequency: 100d
+#: last_checked: 2016-09-23
+#: check_frequency: 120d
 Pasewalker Str.: Radspuren bis 2015 geplant	?::projected 11907,19749 11909,19706 11911,19667 11915,19580 11927,19308 11937,19175
 # 
 #: XXX Fahrbahninstandsetzung mit anschlieﬂenden Umbau der Radwege
@@ -430,7 +430,9 @@ Am Carolinenhof: existiert die Straﬂe schon? Qualit‰t? Genaue Lage?	? -8100,3994
 #: by: www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/33re.pdf/file?y=2016 (Grundst¸cksnummerierungen)
 #: XXX fehlt bei Berlin.coords.data
 #: XXX Privatstraﬂe
-Karlinekenweg: neue Straﬂe, existiert sie schon, Qualit‰t, genaue Lage?	?::projected 11419,20327 11371,20295 11485,20064 11544,20079 11563,20048
+#: last_checked: 2016-09-23
+#: check_frequency: 180d
+Karlinekenweg: neue Straﬂe in Planung, Qualit‰t, genaue Lage?	?::projected 11419,20327 11371,20295 11485,20064 11544,20079 11563,20048
 # 
 # REMOVED (noch keine Bauarbeiten) --- #: XXX Zwischen Bosse- und Bˆdikerstraﬂe Sperrung stadtausw‰rts. (Bis 08.09.2016 17:00 Uhr) --- Corinthstr.: Bauarbeiten auch f¸r Radfahrer relevant?	?::inwork; 14312,10657 14490,10610
 # 
@@ -498,7 +500,7 @@ Wuhlewanderweg: wird hier ein Weg auf der ˆstlichen Uferseite errichtet?	?::proj
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.205751.php
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2016/pressemitteilung.519460.php
 #: XXX "Der gesamte Straﬂenzug von der Danziger Straﬂe bis zur Wisbyer Straﬂe soll bis Ende 2017 fertig gestellt werden."
-#: last_checked: 2016-09-13
+#: last_checked: 2016-09-25
 #: check_frequency: 30d
 Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 10881,15047 11119,15385 11183,15485 11301,15668 11373,15789 11393,15823 11455,15916 11500,15988 11550,16068 11554,16075 11618,16183 11698,16311 11727,16358
 # 
@@ -667,11 +669,17 @@ Hennigsdorfer Str.: nach den Bauarbeiten durchg‰ngig asphaltiert mit Radstreifen
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/49re.pdf/file?y=2015 (Bebauungsplan 9-22)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/9-22-bebauungsplanentwurf.pdf (9-22 Bebauungsplanentwurf)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/9-22-gutachten-verkehr.pdf
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5501
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/450810361013210974/1013210974/00244965/65-Anlagen/01/DRS1399VB.pdf
 #: XXX vermutlich wird die Ottomar-Geschke-Str. komplett asphaltiert werden
 #: last_checked: 2016-07-16 vvv
 #: check_frequency: 360d vvv
-Planstraﬂe in der Wasserstadt Spindlersfeld: genaue Lage? Lage der kreuzenden Privatstraﬂen? Straﬂenname? Qualit‰t? Anbindung zum Uferweg?	?::projected 21447,5414 21482,5388 21555,5214 21415,5157 21345,5157
-Planstraﬂe in der Wasserstadt Spindlersfeld: genaue Lage? Lage der kreuzenden Privatstraﬂen? Straﬂenname? Qualit‰t? Anbindung zum Uferweg?	?::projected 21415,5157 21498,5023
+Planstraﬂe in der Wasserstadt Spindlersfeld: genaue Lage? Lage der kreuzenden Privatstraﬂen? Straﬂenname? Qualit‰t? Anbindung zum Uferweg?	?::projected 21447,5414 21482,5388 21516,5308 21555,5214 21415,5157 21345,5157
+Planstraﬂe in der Wasserstadt Spindlersfeld: genaue Lage? Lage der kreuzenden Privatstraﬂen? Straﬂenname? Qualit‰t? Anbindung zum Uferweg?	?::projected 21415,5157 21449,5102 21477,5057 21498,5023
+Privatstraﬂen in der Wasserstadt Spindlersfeld: genaue Lage? Straﬂenname? Qualit‰t? wird es hier eine Verl‰ngerung f¸r Radfahrer/Fuﬂg‰nger bis zum Harnischweg geben	?::projected 21482,5388 21425,5364
+Privatstraﬂen in der Wasserstadt Spindlersfeld: genaue Lage? Straﬂenname? Qualit‰t?	?::projected 21516,5308 21407,5270 21360,5273 21362,5289
+Privatstraﬂen in der Wasserstadt Spindlersfeld: genaue Lage? Straﬂenname? Qualit‰t?	?::projected 21449,5102 21373,5078 21334,5081 21343,5140
+Privatstraﬂen in der Wasserstadt Spindlersfeld: genaue Lage? Straﬂenname? Qualit‰t?	?::projected 21375,4974 21381,5007 21477,5057 21599,5121 21613,5089 21498,5023
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -709,7 +717,7 @@ Sternbergpromenade: der Havel-Radweg wird hier offiziell entlanggef¸hrt	?::proje
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2014/mdb-bapankow-pressestelle-ba-beschluesse-2014-13.05.14_genehmigung_von_20_bauvorhaben_gem________33_abs_1_baugb_im_geltungsbereich_des_bebauungsplanentwurfs_xix_48b_f__r_das_gel__nde_zwischen_dr_markus_stra__e__pankgaben_...pdf
 #: XXX ÷ffentliche Straﬂen:
 #: next_check_id: NIZZASTR-2014 vvv
-#: last_checked: 2016-07-10 vvv
+#: last_checked: 2016-09-23 vvv
 #: check_frequency: 60d vvv
 #: XXX Planstraﬂe A -> Marseillestraﬂe
 #: XXX zurzeit eine Baustraﬂe
@@ -870,7 +878,7 @@ Rad- und Gehwegverbindung geplant: Qualit‰t? Name des Weges? Beleuchtet?	? 24905
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5709
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036775164584/775164584/00071625/25-Anlagen/02/vzb0716_IV-B-Plan_XXIII-3-1VE_Festsetzg_Planre.pdf
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.510775.php
-#: osm_watch: way id="43999858" version="9"
+#: osm_watch: way id="43999858" version="10"
 #: last_checked: 2016-08-20
 #: check_frequency: 360d
 XXIII-3-1VE: hier kˆnnte eine/mehrere Straﬂen entstehen	?::projected 24672,11522 24747,11524
@@ -1498,6 +1506,12 @@ Weg an der Wuhle: evtl. entsteht auch ein Weg hier --- wird es auch eine Anbindu
 # - Fragen nach genauen Routenverl‰ufen
 # - XXX_prog- und XXX_indoor-Eintr‰ge
 # 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2015
+#: osm_watch: way id="156817982" version="12"
+#: last_checked: 2016-07-07
+#: next_check: 2016-09-25
+Lutterbacher Str.: Straﬂe ist offen, pr¸fen!	? 2094,3231 1993,3170 2072,3034 2163,3092
+# 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/39re.pdf/file?y=2016
 #: next_check: 2016-11-15
 Mehringplatz: Widmung von Straﬂenland - ‰ndert sich hier etwas?	? 9587,10421 9592,10263
@@ -1544,7 +1558,7 @@ Liebigstr.: Einrichtung einer Spielstraﬂe, wo genau?	? 14229,12311 14166,12323 1
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7041
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_925_16.pdf
 #: XXX Bauarbeiten zwischen Thaerstr. und H¸bnerstr.
-#: last_checked: 2016-09-13
+#: last_checked: 2016-09-23
 #: check_frequency: 14d
 Eldenaer Str.: Verl‰ngerung der Radspuren	? 14355,12752 14096,12827 14066,12836 13979,12861 13960,12866 13844,12900
 # 
@@ -4409,8 +4423,8 @@ Waldweg zum Campingplatz: Qualit‰t der Straﬂe?	? 29208,71 29512,-619 29297,-717 
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2011
-#: last_checked: 2016-02-13
-#: check_frequency: 180d
+#: last_checked: 2016-09-25
+#: check_frequency: 120d
 Am Orangeriepark: Ist die Straﬂe bereits fertiggestellt? Qualit‰t? Wo befindet sich die Straﬂe (mˆglichst mit GPS-Track)?	?::inwork 10271,19361 10421,19410
 # 
 # REMOVED (realisiert) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/20re.pdf/file?y=2012 ("geplanter Straﬂenname") --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2012 (Lage) --- #: XXX fehlt auch in Berlin.coords.data PLZ=12683 --- #: last_checked: 2012-09-16 --- #: next_check: 2013-08-01 --- #: osm_watch: way id="189453405" version="1" --- Fechinger Weg: Ist die Straﬂe bereits fertiggestellt? Qualit‰t? Wo befindet sich die Straﬂe (mˆglichst mit GPS-Track)?	?::inwork 21409,11941 21411,11863 21456,11825

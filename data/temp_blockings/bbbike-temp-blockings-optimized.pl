@@ -2706,27 +2706,7 @@ userdel	2::night 14838,11410 14792,11391
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-',
-         'from' => 1474257600,
-         'id' => 2387,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              19,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon gesperrt, ab 20.09.2016',
-         'type' => 'gesperrt',
-         'until' => 1474538400
-       },
+       undef,
        {
          'data' => 'userdel	2::temp 8573,12325 8540,12420
 userdel	2::temp 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031

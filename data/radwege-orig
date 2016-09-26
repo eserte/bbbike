@@ -98,11 +98,11 @@ asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9233,8597 9229,8718
 #: osm_watch: way id="354645896" version="2"
 #: last_checked: 2016-09-14 vvv
 #: source_id: 2147340437
-#: next_check: 2016-09-30
+#: next_check: 2016-10-07
 	RW0;RW3 8680,6322 8661,6169 8642,5998
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.506616.php
 #: source_id: 2147340425
-#: next_check: 2016-09-30
+#: next_check: 2016-10-07
 	RW3;RW0 8642,5998 8627,5866 8613,5745
 #: last_checked ^^^
 #: XXX ^^^
@@ -1653,7 +1653,7 @@ Berliner Gehwegplatten, ca. 1,50m breit	RW2;RW2 9272,14208 9400,14400 9410,14410
 #: next_check_id: OTTOBRAUN-2015
 #: note: Wobei es so aussieht, als ob das Zusatzschild einfach nur fehlt
 #: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5;
-#: last_checked: 2016-08-31
+#: last_checked: 2016-09-23
 #: check_frequency: 90d
 	RW4; 11451,13301 11368,13170
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 11451,13301 11486,13350
@@ -1964,8 +1964,8 @@ asphaltierter Radweg, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr	RW1;
 	RW1; 2123,2803 2076,2626
 Radweg fängt 50m vor der Ampel an	RW0; 2076,2626 2123,2803
 	RW1;RW1 2076,2626 2000,2748 1888,2925
-	RW1;RW2 820,3081 751,2860
-	RW2;RW2 751,2860 718,2735 720,2718 749,2616 772,2538 803,2435
+	RW1;RW2 820,3081 758,2870
+	RW2;RW2 758,2870 718,2735 720,2718 749,2616 772,2538 803,2435
 	RW1;RW 534,3149 251,3325
 	RW;RW 251,3325 231,3338 137,3396 17,3471
 	RW;RW1 17,3471 -135,3567
