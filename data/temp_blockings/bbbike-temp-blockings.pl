@@ -1026,10 +1026,10 @@ userdel	q4 49039,44131 49691,43812
 EOF
      },
      { from  => $isodate2epoch->("2016-09-29 06:00:00"), # 1 Tag Vorlauf # 1096578452, # 2004-09-30 23:07
-       until => $isodate2epoch->("2016-10-06 23:59:59"), # 1096862400, # 2004-10-04 06:00
+       until => $isodate2epoch->("2016-10-04 23:59:59"), # 1096862400, # 2004-10-04 06:00
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 9]],
-       text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt (bis 06.10.2016)',
+       text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt (bis 04.10.2016)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 8055,12186 8089,12190 8214,12205
@@ -25533,8 +25533,8 @@ userdel	q3::inwork 9706,6802 9511,6797 9245,6791
 EOF
      },
      { from  => 1473704924, # 2016-09-12 20:28
-       until => 1475272800, # 2016-10-01 00:00
-       text  => 'Wiesendamm: Bauarbeiten, RIchtung Spandauer Damm Fahrbahn gesperrt, bis 30.09.2016',
+       until => $isodate2epoch->("2016-10-04 12:00:00"), # 1475272800, # 2016-10-01 00:00
+       text  => 'Wiesendamm: Bauarbeiten, RIchtung Spandauer Damm Fahrbahn gesperrt, bis 04.10.2016',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147340518

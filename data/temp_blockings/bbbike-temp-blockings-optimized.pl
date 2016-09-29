@@ -23,9 +23,9 @@ userdel	2 8546,12279 8570,12302 8573,12325 8540,12420
                               9
                             ]
                           ],
-         'text' => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt (bis 06.10.2016)',
+         'text' => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt (bis 04.10.2016)',
          'type' => 'gesperrt',
-         'until' => 1475791199
+         'until' => 1475618399
        },
        undef,
        undef,
@@ -2707,43 +2707,7 @@ userdel	2::night 14838,11410 14792,11391
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 8573,12325 8540,12420
-userdel	2::temp 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-userdel	2::temp 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-userdel	2::temp 8119,12414 8055,12186
-userdel	2::temp 8538,12245 8522,12239 8466,12197
-userdel	2::temp 8538,12245 8522,12187
-userdel	2::temp 8546,12279 8391,12389 8354,12416
-userdel	2::temp 8119,12414 8354,12416 8400,12417 8540,12420
-userdel	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
-userdel	3 7429,12070 7383,12095 7039,12314
-userdel	3 7039,12314 7383,12095 7429,12070
-userdel	3 7823,12120 7816,12150 7822,12201 7875,12363
-userdel	3 7875,12363 7822,12201 7816,12150 7823,12120
-userdel	2::temp 8119,12414 8122,12603 8207,12606 8306,12609 8348,12609 8399,12610 8485,12612
-userdel	2::temp 8207,12606 8206,12757
-userdel	3 7945,12592 8122,12603 8120,12756
-userdel	3 8120,12756 8122,12603 7945,12592
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-',
-         'from' => 1474430400,
-         'id' => 2388,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              19,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, bis 26.09.2016',
-         'type' => 'gesperrt',
-         'until' => 1474862400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3755,9 +3719,9 @@ userdel	q3::inwork; -795,13437 -729,13415 -346,13349 -309,13268 -264,13009
 ',
          'from' => 1473704924,
          'id' => 2829,
-         'text' => 'Wiesendamm: Bauarbeiten, RIchtung Spandauer Damm Fahrbahn gesperrt, bis 30.09.2016',
+         'text' => 'Wiesendamm: Bauarbeiten, RIchtung Spandauer Damm Fahrbahn gesperrt, bis 04.10.2016',
          'type' => 'handicap',
-         'until' => 1475272800
+         'until' => 1475575200
        },
        {
          'data' => '#: XXX Wann sind die Bauarbeiten beendet? Wird die Qualität danach besser sein? vvv

@@ -29,11 +29,11 @@
 	RW1; 9229,8785 9227,8890 9225,9038 9224,9053 9225,9111 9248,9350
 #: XXX kommen hier noch Radwegschilder hin? An der Kreuzbergstr., an der Schwiebusser Str.? vvv
 #: XXX Testcase in insert_points anpassen!
-#: last_checked: 2016-09-19 vvv
-#: next_check: 2016-06-20 vvv
+#: last_checked: 2016-09-26 vvv
+#: check_frequency: 14d vvv
 	RW3; 9248,9350 9225,9111 9224,9053 9225,9038 9227,8890
 asphaltiert	RW1; 9227,8890 9229,8785
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 	RW1;RW1 9248,9350 9280,9476 9334,9670 9387,9804 9444,9919 9448,10014 9416,10196
@@ -876,7 +876,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736 20755,5750
 #: XXX laut fritz "geänderte Straßenführung" bis 31.12.2016
 #: source_id: IM_023718
 #: source_id: 2147339540
-#: last_checked: 2016-09-19 vvv
+#: last_checked: 2016-09-26 vvv
 #: check_frequency: 90d vvv
 	RW2; 14015,7631 14095,7568 14174,7505
 # REMOVED, siehe unten ---	RW1; 14174,7505 14302,7429 14357,7450 14405,7435 14424,7401 14432,7353 14451,7340
@@ -1108,7 +1108,7 @@ die letzten 50 Meter sind benutzungspflichtig	RW1; 18225,7004 18010,7133
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
-#: last_checked: 2016-09-19
+#: last_checked: 2016-09-26
 #: check_frequency: 90d
 	RW8;RW2 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
@@ -2653,7 +2653,9 @@ Gehweg für Radfahrer frei	RW1;RW1 24624,11374 24583,11537 24591,11587 24623,1168
 	RW1;RW10 22257,10428 22327,10685 22393,10896 22436,11054
 	RW;RW 21549,8982 21508,8988
 	RW;RW1 21508,8988 21430,9026
-	RW1;RW1 21430,9026 21385,9049 21365,9059 21351,9066 21314,9083 21206,9130 21088,9175
+	RW1;RW1 21430,9026 21385,9049
+	RW4?;RW4? 21385,9049 21365,9059 21351,9066
+	RW1;RW1 21351,9066 21314,9083 21206,9130 21088,9175
 sehr schmale prähistorische Radwege	RW1;RW1 21055,8374 21072,8742 21079,8931 21088,9175
 	RW1;RW2 7115,3003 7049,3005 6914,3093
 	RW1;RW1 6914,3093 6788,3181
