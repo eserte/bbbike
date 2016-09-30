@@ -146,7 +146,7 @@ Dernburgstr.	1 2498,10665 2378,10677 2333,10710 2254,11051
 # REMOVED (aufgehoben für alle) --- #: XXX wird die Einbahnstraßenregelung für Radfahrer zumindest im östlichen Abschnitt wegen der Radroute aufgehoben? --- #: osm_watch: way id="42826410" version="5" --- Schuckertdamm	1 1343,14972 1465,14963
 Schuckertdamm	1 741,14827 1022,14898 1056,14906 1112,14918 1200,14943 1343,14972
 Am Kleinen Wannsee	1 -5499,1349 -5488,1289 -5541,1214 -5749,1146
-Oberhofer Platz	1 5491,1955 5474,1940 5452,1940 5431,1956 5376,2097 5406,2110 5434,2122 5489,1981 5491,1955
+Oberhofer Platz	1 5491,1955 5474,1940 5452,1940 5431,1956 5393,2053 5376,2097 5406,2110 5434,2122 5452,2077 5489,1981 5491,1955
 Scheelestr.	1 5741,1231 5697,1098 5556,984 5488,943 5421,902 5342,845
 Tibertius-Brücke: Kfz-Straße	2 5681,5743 5574,5819 5414,5939 5345,5994 4937,6205
 An der Schillingbrücke	1 12061,11406 12060,11323
@@ -573,7 +573,7 @@ Murtzaner Ring	1 19818,14064 19843,14064 19921,14064 19951,14083 20040,14179
 Rosenstr.	1 22284,4653 22212,4655 22144,4660
 Laurenzstr.	1 22246,4711 22175,4730
 # REMOVED --- Gotenburger Str.	1 9000,16803 8844,16863
-Werrastr.: Firmengelände	2 13802,8195 13697,8279
+Werrastr.: Firmengelände	2 13805,8193 13697,8279
 Neuendorfer Str.	1 -3295,14777 -3228,14794
 Neuendorfer Str.	1 -3228,14794 -3251,14741
 #: by: verena kauffmann:
@@ -795,9 +795,9 @@ Bundesallee (Richtungsfahrbahn)	1::igndisp 5505,8832 5515,8709 5508,8598 5472,85
 Nonnendammallee (Richtungsfahrbahn)	1::igndisp -278,14532 -457,14536 -914,14602
 Nonnendammallee (Richtungsfahrbahn)	1::igndisp -925,14631 -278,14532
 #: note: Mittelstreifen vvv
-Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4348,2619 4313,2630 4224,2671 4170,2727
-Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4170,2727 4233,2675 4317,2638 4348,2619
-Königsberger Str. (Mittelstreifen)	3nocross::ignrte 4348,2619 4317,2638 4233,2675 4170,2727
+Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4348,2627 4313,2630 4224,2671 4170,2727
+Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4170,2727 4233,2675 4317,2638 4348,2627
+Königsberger Str. (Mittelstreifen)	3nocross::ignrte 4348,2627 4317,2638 4233,2675 4170,2727
 #: note ^^^
 #: note: Straßenbahntrasse vvv
 Invalidenstr. (Richtungsfahrbahn)	1::igndisp 8098,13419 8189,13468 8291,13520 8337,13541
@@ -963,6 +963,8 @@ Bäumerplan	1 8512,7757 8466,7918
 Mierendorffstr.	1 3645,13206 3534,13098
 Hüttigpfad	1 4810,15000 4887,14931 5057,14824 5095,14792
 (Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1s:q3 11012,13278 11085,13239
+Alex-Wedding-Str.	1 11085,13239 11045,13183
+Keibelstr.	1 11045,13183 11108,13142
 Zwerghuhnweg	1s 15612,416 15561,386
 Grammestr.	1 1057,14389 1058,14459
 Halskesteig	1 1058,14459 1157,14459
@@ -1122,27 +1124,15 @@ EUREF-Campus: Privatgelände	2 7158,8208 7149,8249 7316,8509
 Wiltinger Str.	1 2375,25607 2312,25673
 Wiltinger Str.	1 2384,25679 2375,25607
 #: by ^^^
-# 
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5732 vvv
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.489468.php
-#: XXX (wann) wird die Einbahnstraßenregelung für Radfahrer aufgehoben? -> nach gesperrt_car-orig überführen vvv
-#: last_checked: 2016-08-25 vvv
-#: check_frequency: 30d vvv
-Leonhardyweg	1s 9033,8029 9035,7810 9040,7648
-Leonhardyweg	1s 9033,8029 9032,8254
-Kleineweg	1s 9130,7810 9132,7661
-Kleineweg	1s 9130,7810 9130,8029
-Kleineweg	1s 9128,8251 9130,8029
-Bundesring	1s 8969,8278 8941,8186
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-#: by: ^^^
+# REMOVED --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5732 vvv --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.489468.php --- #: XXX (wann) wird die Einbahnstraßenregelung für Radfahrer aufgehoben? -> nach gesperrt_car-orig überführen vvv --- #: last_checked: 2016-08-25 vvv --- #: check_frequency: 30d vvv --- Leonhardyweg	1s 9033,8029 9035,7810 9040,7648 --- Leonhardyweg	1s 9033,8029 9032,8254 --- Kleineweg	1s 9130,7810 9132,7661 --- Kleineweg	1s 9130,7810 9130,8029 --- Kleineweg	1s 9128,8251 9130,8029 --- Bundesring	1s 8969,8278 8941,8186
 Gartenstr.	1s:q3 720,2718 835,2715
 Gartenstr.	1 835,2715 912,2965
 Kilstetter Str.	1 1532,2921 1536,3029 1575,3054 1689,3125 1835,2898
 Belßstr.	1s:q2 7899,2391 7983,2348 7987,2337
 Röbeler Weg: Privatstraße, Durchfahrt verboten	2 24831,10730 24831,10772 24760,10790
+Markgrafenstr.	1 9807,10788 9799,10846
+Markgrafenstr.	1 9799,10846 9834,10840
+Morgensternstr.	1 5212,2360 5229,2395
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -1406,6 +1396,7 @@ Neue Bahnhofstr.	1s:q3 14908,11231 14918,11249
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+Lindenstr./Markgrafenstr.: Barrieren	3nocross 9797,10771 9807,10788 9829,10830
 Friedrichstr.: Straßenbahnhaltestelle	3nocross 9246,13235 9255,13164 9262,13111
 Reinickendorfer Str.: Mittelstreifen mit Zaun	3nocross 7966,15571 7975,15500 8049,15470
 #: XXX_prog unbequemes Überqueren, bessere Alternativen existieren, sollte als eine Art handicap für Punkte implementiert sein
@@ -1453,7 +1444,7 @@ Altstädter Ring: Mittelstreifen	3nocross -3481,14523 -3498,14413 -3501,14365 -35
 #: by: Juliane (alberts...)
 Altstädter Ring: Mittelstreifen mit Zaun	3nocross -3501,14365 -3506,14306 -3517,14218 -3552,14082
 #: by: Steini (immerlocker)
-Kaiser-Wilhelm-Str.: Mittelstreifen	3nocross 6996,3761 6957,3699 6782,3491
+Kaiser-Wilhelm-Str.: Mittelstreifen	3nocross 6996,3761 6957,3699 6780,3497
 Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3nocross 11329,12497 11340,12443 11355,12331
 Yorckstr.: Mittelstreifen	3nocross 8777,9601 8679,9544 8595,9495
 Klemkestr.: Mittelstreifen	3nocross 7434,18695 7492,18699 7520,18701
@@ -1777,7 +1768,7 @@ Hansastr.: Straßenbahntrasse	3nocross 15662,16656 15735,16698 15776,16721
 Am Juliusturm: Mittelstreifen	3nocross -3255,14685 -3209,14662 -3150,14631
 Hellersdorfer Str.: Mittelstreifen	3nocross 22883,13013 22924,12833 22967,12647
 Buckower Damm: Mittelstreifen	3nocross 12564,4308 12637,4014 12655,3882
-Albrechtstr.: Mittelstreifen	3nocross 6102,4726 6006,4852 6034,4893
+Albrechtstr.: Mittelstreifen	3nocross 6048,4797 6006,4852 6034,4893 6055,4950
 Südwestkorso: Mittelstreifen, parkende Autos	3nocross 4909,7436 4874,7382 4836,7327
 Südwestkorso: Mittelstreifen, parkende Autos	3nocross 4125,6763 4206,6820 4237,6840
 Berliner Str.: Mittelstreifen	3nocross 1910,20548 1929,20501 1955,20435
@@ -2816,7 +2807,7 @@ Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7741,14560 7518,14
 #: osm_watch: way id="311371554" version="4"
 Clara-Immerwahr-Str.: Bauzäune, Fußgänger können aber u.U. passieren	2::inwork 19202,17471 19546,17351 19798,17263 19845,17235 19914,17203
 # 
-#: last_checked: 2016-08-30
+#: last_checked: 2016-09-30
 #: osm_watch: way id="57852078" version="4"
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
 # 
@@ -2856,8 +2847,8 @@ Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 # 
 #: next_check_id: ZIEGELSTR-2016
 #: XXX Ende der Bauarbeiten?
-#: last_checked: 2016-09-12
-#: check_frequency: 14d
+#: last_checked: 2016-09-30
+#: check_frequency: 21d
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076 9559,13087
 # 
 #: next_check_id: MINNATODENHAGENSTR-2016
@@ -3013,7 +3004,7 @@ Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Du
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
 #: osm_watch: way id="305153174" version="1"
-#: last_checked: 2016-08-30 vvv
+#: last_checked: 2016-09-30 vvv
 #: check_frequency: 90d vvv
 Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9996,12401 9994,12368 9943,12364
 Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10008,12274 9994,12368
@@ -3087,7 +3078,7 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 #: XXX siehe auch Eintrag in handicap_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0194-oberwallstrae-werderscher-markt.html
 #: osm_watch: way id="66071370" version="4"
-#: last_checked: 2016-09-02
+#: last_checked: 2016-09-30
 #: check_frequency: 30d
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9898,12161 9882,12259
 # 
@@ -3125,7 +3116,7 @@ Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,2
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
 #: next_check_id: STAATSOPER-2014 vvv
-#: last_checked: 2016-09-02 vvv
+#: last_checked: 2016-09-30 vvv
 #: check_frequency: 90d vvv
 #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung)
 #: XXX voraussichtliche Eröffnung 2017-10-03 (laut Tsp vom 2016-03-31)
@@ -3138,7 +3129,7 @@ Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12
 #: last_checked: ^^^
 # 
 #: XXX hier sind gerade Asphaltierungsarbeiten, vielleicht wird hier früher eröffnet?
-#: last_checked: 2016-09-02
+#: last_checked: 2016-09-30
 Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9808,12182 9801,12245
 #: next_check_id: ^^^
 # 

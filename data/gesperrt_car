@@ -73,7 +73,7 @@ Fidicin - Mehringdamm	3 9295,9047 9224,9053 9225,9038 9227,8890
 Mangerstr. (Potsdam)	1 -12054,-274 -12123,-294 -12265,-418
 Rudolf-Breitscheid-Str.	1 -10429,-1944 -10360,-1934 -10235,-1916 -9986,-1882 -9735,-1845
 Bendastr.	1 12689,6905 12702,6846
-Bendastr.	1 12794,6407 12782,6462 12759,6563 12743,6645 12726,6727 12722,6748 12715,6775 12702,6846
+Bendastr.	1 12715,6775 12702,6846
 Puschkin/Bulgarische	1 14196,9749 14271,9712 14318,9688 14495,9609 14556,9581 14809,9466 14879,9433 15383,9191 15442,9095 15452,9079 15591,8848 15558,8820 15378,8668 15166,8489
 Karl-Marx-Str./Schönstedt	3nocross::ignrte 12500,8504 12540,8458 12562,8432 12582,8408
 Karl-Marx-Str. -> Schönstedtstr.: Karl-Marx-Str./Schönstedt	3::igndisp 12500,8504 12540,8458 12649,8535
@@ -922,13 +922,11 @@ Mittelstreifen	3nocross::ignrte 8438,8676 8334,8655 8380,8545
 Loewenhardtdamm -> Loewenhardtdamm: Mittelstreifen	3::igndisp 8380,8545 8334,8655 8306,8722
 Loewenhardtdamm -> Höhndorfstr.: Mittelstreifen	3::igndisp 8306,8722 8334,8655 8438,8676
 Friedbergstr.	1 3012,10812 3204,10895
-Betonblöcke (aber für Radfahrer passierbar)	3nocross::ignrte 9777,10719 9797,10771 9805,10791 9829,10830 9935,11067
-Lindenstr. -> Fromet-und-Moses-Mendelssohn-Pl.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9777,10719 9797,10771 9733,10827
-Fromet-und-Moses-Mendelssohn-Pl. -> Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9733,10827 9797,10771 9805,10791
-Lindenstr. -> Markgrafenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9797,10771 9805,10791 9786,10971
-Markgrafenstr. -> Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9786,10971 9805,10791 9829,10830
-Lindenstr. -> Am Berlin Museum: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9935,11067 9829,10830 10032,10752
-Am Berlin Museum -> Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 10032,10752 9829,10830 9805,10791
+Betonblöcke (aber für Radfahrer passierbar)	3nocross::ignrte 9807,10788 9829,10830 9834,10840 9935,11067
+Lindenstr. -> Am Berlin Museum: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9834,10840 9829,10830 10032,10752
+Am Berlin Museum -> Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 10032,10752 9829,10830 9807,10788
+Lindenstr. -> Markgrafenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9829,10830 9834,10840 9799,10846
+Markgrafenstr. -> Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3::igndisp 9799,10846 9834,10840 9935,11067
 Treptower Str.	1 13376,7970 13457,8069 13459,8072
 Alte Schönhauser Str.	1 10718,13625 10746,13673
 Knoten Märkische Allee	1 19979,11774 20025,11747 20114,11719
@@ -1249,12 +1247,12 @@ Douglasienweg: Poller	3 11633,4117 11563,4099 11547,4127
 Douglasienweg: Poller	3 11633,4117 11563,4099 11567,4085
 Douglasienweg: Poller	3 11547,4127 11563,4099 11633,4117
 Douglasienweg: Poller	3 11567,4085 11563,4099 11633,4117
-Goldenes Horn: Poller	3 10561,3748 10563,3767 10586,4039
-Goldenes Horn: Poller	3 10586,4039 10563,3767 10561,3748
-Brusaer Weg: Poller	3 10248,3897 10236,3777 10047,3794
-Brusaer Weg: Poller	3 10248,3897 10236,3777 10461,3757
-Brusaer Weg: Poller	3 10047,3794 10236,3777 10248,3897
-Brusaer Weg: Poller	3 10461,3757 10236,3777 10248,3897
+Goldenes Horn: Poller	3 10562,3754 10563,3767 10586,4039
+Goldenes Horn: Poller	3 10586,4039 10563,3767 10562,3754
+Brusaer Weg: Poller	3 10248,3897 10237,3789 10048,3806
+Brusaer Weg: Poller	3 10248,3897 10237,3789 10462,3765
+Brusaer Weg: Poller	3 10048,3806 10237,3789 10248,3897
+Brusaer Weg: Poller	3 10462,3765 10237,3789 10248,3897
 Teikeweg: Poller	3 9519,4537 9412,4537 9408,4568
 Teikeweg: Poller	3 9519,4537 9412,4537 9428,4419
 Teikeweg: Poller	3 9408,4568 9412,4537 9519,4537
@@ -1745,9 +1743,9 @@ Waldeyerstr.	1 15054,12323 15003,12241
 Prenzlauer Allee -> Saarbrücker Str.	3 11160,13492 11251,13667 11134,13820
 Stolzenfelsstr.	1 19447,8175 19400,8147 19333,8165 19171,8280 18949,8437 18787,8540
 Treskowallee - Dönhoffstr.	3 18731,8577 18733,8633 18609,8717
-Straßenbahntrasse	3nocross::ignrte 15639,10469 15404,10633 15379,10651
+Straßenbahntrasse	3nocross::ignrte 15639,10469 15404,10633 15372,10655
 Hauptstr. -> Hauptstr. (Rummelsburg) [Wohngebiet]: Straßenbahntrasse	3::igndisp 15639,10469 15404,10633 15358,10562
-Hauptstr. (Rummelsburg) [Wohngebiet] -> Hauptstr.: Straßenbahntrasse	3::igndisp 15358,10562 15404,10633 15379,10651
+Hauptstr. (Rummelsburg) [Wohngebiet] -> Hauptstr.: Straßenbahntrasse	3::igndisp 15358,10562 15404,10633 15372,10655
 Mittelstreifen	3nocross::ignrte 5475,10808 5471,10719 5458,10443
 Joachimsthaler Str. -> Augsburger Str.: Mittelstreifen	3::igndisp 5475,10808 5471,10719 5497,10719
 Augsburger Str. -> Joachimsthaler Str.: Mittelstreifen	3::igndisp 5497,10719 5471,10719 5458,10443
@@ -1833,3 +1831,9 @@ Mittelstreifen	3nocross::ignrte -3789,13519 -3764,13613 -3716,13724
 Klosterstr. -> Diedenhofener Str.: Mittelstreifen	3::igndisp -3716,13724 -3764,13613 -3672,13597
 Diedenhofener Str. -> Klosterstr.: Mittelstreifen	3::igndisp -3672,13597 -3764,13613 -3789,13519
 Karl-Marx-Platz	1 12969,7610 13100,7626
+Leonhardyweg	1 9033,8029 9035,7810 9040,7648
+Leonhardyweg	1 9033,8029 9032,8254
+Kleineweg	1 9130,7810 9132,7661
+Kleineweg	1 9130,7810 9130,8029
+Kleineweg	1 9128,8251 9130,8029
+Bundesring	1 8969,8278 8941,8186

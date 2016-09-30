@@ -604,7 +604,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6757,5858
 	X 7690,4563
 	X 7597,4499
-	X 6625,3314
+	X 6613,3320
 	X 6712,3237
 	X 6977,870
 	X 7757,834
@@ -783,7 +783,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10800,5203
 	X 11266,5097
 	X 11386,5107
-	X 6782,3491
+	X 6780,3497
 	X 6996,3761
 	X 7159,4023
 	X 7497,5610
@@ -1229,11 +1229,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5581,16708
 	X 3895,1219
 	X 4261,1584
-	X 5248,2376
+	X 5229,2395
 	X 5317,2345
 	X 5542,2491
-	X 6110,2822
-	X 6407,3101
+	X 6105,2826
+	X 6401,3113
 	X 10501,11056
 	X 3836,6550
 	F 9937,9484
@@ -1296,7 +1296,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6675,6740
 	X 6360,4504
 	X 6120,4214
-	X 4700,2662
+	X 4702,2676
 	X 5447,3801
 #: note: Anforderungsampel für linksabbiegende Radfahrer aus der Osdorfer Str. in den Blanckertzweg
 	X 4542,1188
@@ -1700,7 +1700,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6914,3093
 	X 7183,3570
 	F 7104,3416
-	X 4348,2619
+	X 4348,2627
 	X 3456,2835
 	X 3507,3635
 	X 1080,1637
@@ -2258,7 +2258,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	F 11775,9234
 	F 9242,7218
 #: note: Anforderungsampel
-	F 6745,4999
+	F 6746,4999
 # REMOVED (Bahnstrecke existiert nicht mehr) --- B0 14641,1771
 	F 18177,-449
 	X 17855,1629
@@ -2359,7 +2359,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: by: http://www.panoramio.com/photo/19638043
 	F 3733,3317
 #: by: http://www.panoramio.com/photo/19637927
-	F 4934,2546
+	F 4943,2557
 #: by: http://www.panoramio.com/photo/19637886
 	X 5479,2464
 	F 10736,12285
@@ -2602,7 +2602,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
 #: XXX laut fritz bis 05.05.2016
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
-#: last_checked: 2016-08-30
+#: last_checked: 2016-09-30
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
@@ -2852,7 +2852,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 9274,13963
 	X 9151,13941
 #: note: Anforderungsampel
-	F 10461,3757
+	F 10462,3765
 #: XXX Baustellenampel
 #: last_checked: 2016-09-02
 #: check_frequency: 60d
@@ -2884,6 +2884,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 4636,2083
 #: note: Anforderungsampel
 	F 7973,13743
+#: note: Anforderungsampel
+	F 5824,2621
 # 
 ################################################################################
 #: note: Potsdam vvv
@@ -3021,7 +3023,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -12655,-1714
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
 #: next_check_id: KIEFHOLZ-2015 vvv
-#: last_checked: 2016-09-26 vvv
+#: last_checked: 2016-09-30 vvv
 #: check_frequency: 90d vvv
 	X::inwork 14151,8967
 	X::inwork 14363,8738
@@ -3030,6 +3032,10 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id ^^^
 #: off: Pfingstmontag 2016-05-16 gegen 13 Uhr
 	F -7554,13514
+# 
+#: next_check_id: HAUPTSTR-2015
+#: last_checked: 2016-09-30
+	F::inwork 14672,10760
 ################################################################################
 #: note: Ampeln elsewhere vvv
 	F -2691,-1112

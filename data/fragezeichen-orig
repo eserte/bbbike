@@ -95,10 +95,13 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/15re.pdf/file?y=2014 (Widmung von Straßenland für einen Radfahrstreifen, Gitschiner/Alexandrinen)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6183 (Baubeginn erst 2015)
-#: XXX Baubeginn des ersten Abschnitts: 3. Quartal 2014
-#: last_checked: 2016-09-26
-#: check_frequency: 60d
-Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.521884.php (Baubeginn, Fertigstellung der Gesamtmaßnahme August 2018)
+#: last_checked: 2016-09-30 vvv
+#: check_frequency: 60d vvv
+Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
+Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected; 9865,10227 9948,10280 9873,10285
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 # REMOVED --- #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
 # REMOVED (weitgehend realisiert, bis auf das letzte Stück vor der Kreuzung) --- #: last_checked: 2013-09-10 vvv --- #: next_check: 2013-09-12 vvv --- Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::inwork; 12726,11851 12681,11741 12645,11673 --- Straße der Pariser Kommune: werden hier die fehlenden Radspuren noch markiert?	?::projected; 12551,11515 12497,11459 --- #: next_check ^^^ --- #: last_checked ^^^
@@ -107,7 +110,7 @@ Skalitzer/Gitschiner Str.: werden hier Radspuren markiert?	?::projected 11335,10
 # REMOVED (realisiert) --- #: XXX Baumaßnahme 1.39 (Realisierung in 2011) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: last_checked: 2013-06-28 --- #: check_frequency: 60d --- Schulze-Delitzsch-Platz: werden hier Radspuren markiert?	?::projected 11242,11720 11155,11750
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2016-09-21
+#: last_checked: 2016-09-30
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9701,11656
 # 
@@ -290,7 +293,7 @@ Feuerbachstr.: Radspuren bis 2015 geplant	?::inwork 5582,6360 5701,6386 5781,640
 # REMOVED (realisiert) --- #: osm_watch: way id="151617776" version="11" --- #: last_checked: 2015-10-31 --- #: check_frequency: 90d --- Kaiserstr.: Radspuren bis 2015 geplant	?::projected 9310,4407 9192,4389 9079,4376
 # 
 #: osm_watch: way id="4357826" version="13"
-#: last_checked: 2016-08-27
+#: last_checked: 2016-09-30
 #: check_frequency: 90d
 Schöneberger Str.: Radspuren bis 2015 geplant	?::projected 8739,6701 8653,6781 8496,6919 8460,6959 8414,6995 8319,7084
 # 
@@ -361,8 +364,9 @@ Berliner Allee/Tassostr.: Bau einer Ampel	?::projected 13591,15969 13623,15954 1
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.515796.php
 #: XXX Baubeginn Frühjahr 2017
+#: last_checked: 2016-09-30
 #: next_check: 2017-05-01
-Munsterdamm: bei der Fahrbahnsanierung entstehen Radspuren	?::projected 6651,4843 6744,4983 6745,4999 6747,5010 6767,5233
+Munsterdamm: bei der Fahrbahnsanierung entstehen Radspuren	?::projected 6651,4843 6744,4983 6746,4999 6747,5010 6767,5233
 # 
 #: section ^^^
 #: ignore ^^^
@@ -405,7 +409,7 @@ Munsterdamm: bei der Fahrbahnsanierung entstehen Radspuren	?::projected 6651,484
 #: next_check: 2017-04-01
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11388,12202 11513,12138 11619,12084 11764,12001
 # 
-#: last_checked: 2016-09-21
+#: last_checked: 2016-09-30
 #: priority: #C
 Münzstr./Rochstr.: Zebrastreifen in Bau	?::inwork 10635,13207 10623,13213
 # 
@@ -427,6 +431,7 @@ Ausbau Dresdener Bahn: Bahnunterführung wird gebaut, geänderte Straßenführung	?:
 # REMOVED (nicht relevant) --- #: XXX Pappelallee/Stahlheimer Straße (Prenzlauer Berg) in beiden Richtungen zwischen Stargarder Straße und Wichertstraße (Berlin)  Gültig ab: 29.07.2016 14:03  Vollsperrung, Absenkung der Fahrbahn	LMS-BR_r_LMS-BR_74872 --- Pappelallee: ist die Sperrung auch für Radfahrer relvant?	?::inwork 11301,15668 11373,15789 11393,15823 11455,15916
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2016
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: XXX Berlin.coods.data-Eintrag fehlt, PLZ=14089
 #: XXX Privatstraße
 #: next_check: 2016-09-19
@@ -531,9 +536,9 @@ Königsweg: geplante Asphaltierung	?::projected -1082,2140 -987,2203 -882,2260
 #: osm_watch: way id="229232324" version="3"
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.515823.php
 #: XXX "Mit einem Baubeginn ist voraussichtlich im Frühjahr 2017 zu rechnen."
-#: last_checked: 2016-07-23
+#: last_checked: 2016-09-30
 #: next_check: 2017-04-15
-Jungfernstieg: in der Fahrbahnmitte ein 4m breiter Asphaltstreifen geplant	?::projected 5226,2390 5332,2568 5425,2735 5510,2883
+Jungfernstieg: in der Fahrbahnmitte ein 4m breiter Asphaltstreifen geplant	?::projected 5229,2395 5332,2568 5425,2735 5510,2883
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/beschreibung-dahlemer-weg.pdf
 #: osm_watch: way id="14477524" version="42"
@@ -1076,6 +1081,7 @@ Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur e
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_51%5B1%5D.pdf
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130604.0740.385616.html (Spatenstich)
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20140528.1550.397569.html (Baustart)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: XXX liegt die Straße tatsächlich hier?
 #: XXX die Reinickendorfer Pressemeldungsschreiber sind fleißig, höchstwahrscheinlich wird es dort erscheinen, falls hier was passiert
 #: XXX fehlt in Berlin.coords.data, PLZ=13507 -> Humboldtinsel|Tegel|13507|X,Y
@@ -1115,7 +1121,7 @@ Flughafen Berlin-Brandenburg - Business Park Berlin: wahrscheinlich asphaltiert	
 #: last_checked: 2015-08-01
 Flughafen Berlin-Brandenburg - Business Park Berlin: Schotterweg, bleibt das so?	? 19731,-1903 20125,-1739 20412,-1750 20416,-1721
 # 
-# REMOVED --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/verwaltung/bauen/tiefbau/bauarbeiten.html?date=20120505 --- #: next_check: 2012-12-31 --- Leonorenstr.: Radwegführung wird geändert, teilweise mit Busspur zusammengelegt	?::inwork 6625,3314 6529,3480 6489,3578 6462,3644 6442,3685 6376,3835
+# REMOVED --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/verwaltung/bauen/tiefbau/bauarbeiten.html?date=20120505 --- #: next_check: 2012-12-31 --- Leonorenstr.: Radwegführung wird geändert, teilweise mit Busspur zusammengelegt	?::inwork 6613,3320 6529,3480 6489,3578 6462,3644 6442,3685 6376,3835
 # 
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20120427.1445.369492.html vvv
 #: XXX Radwegesanierung in Neukölln, geplant für 2013 und später vvv
@@ -1223,7 +1229,7 @@ Wolzenseeweg: Qualität? Straße bereits fertiggestellt? Wird es eine Überquerungs
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 # 
 #: next_check_id: OBERWALL-2014 vvv
-#: last_checked: 2016-09-02 vvv
+#: last_checked: 2016-09-30 vvv
 #: check_frequency: 90d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2015 (Grundstücksnummerierungen)
@@ -1513,6 +1519,12 @@ Weg an der Wuhle: evtl. entsteht auch ein Weg hier --- wird es auch eine Anbindu
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+Schulstr. - Paul-Schneider-Str.: Unterführung auch für Radfahrer benutzbar? Ist die Paul-Schneider-Str. überquerbar?	? 6698,3336 6651,3288 6613,3320
+# 
+In den Leonorengärten: Qualität?	? 6493,4105 6517,4051 6452,4024 6428,4076
+# 
+Alex-Wedding-Str.: ist hier auch eine Einbahnstraßenregelegung?	? 11085,13239 11146,13328
+# 
 Uferweg: existiert hier ein Weg? Qualität? Beleuchtung?	? 5364,12327 5299,12420 5287,12465 5233,12466
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanverfahren/artikel.520066.php
@@ -1621,7 +1633,7 @@ Hundsfelder Str.: gibt es hier eine Einbahnstraße?	? 21700,-537 21688,-589
 #: XXX ggfs. online checken
 #: last_checked: 2016-09-09
 #: next_check: 2016-09-12
-Saalestr.: Dauerstau? Prüfen!	?; 13323,7210 13161,7173 13051,7157
+Saalestr.: Dauerstau? Prüfen!	?; 13325,7210 13161,7173 13051,7157
 # 
 (Paul-Schwarz-Promenade - Dalandweg): gibt's hier Bordsteine oder eine signifikante Steigung?	? 5387,4214 5396,4229
 # 
@@ -1643,7 +1655,7 @@ Anforderungsampel, X	?::inwork 7651,14260
 #: next_check_id: ZIEGELSTR-2016
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/25re.pdf/file?y=2016
 #: XXX Berlin.coords.data-Eintrag fehlt
-#: last_checked: 2016-09-12
+#: last_checked: 2016-09-30
 Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?	? 9636,13076
 # 
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.490082.php
@@ -1694,8 +1706,11 @@ Kollwitzstr.: hat die Einziehung von Straßenland hier Auswirkungen?	? 11229,1442
 # REMOVED (relativ kurzes Stück Einbahnstraße) --- #: XXX laut fritz Einbahnstraße, bis 30.05.2016 --- Auerstr.: Einschränkungen für Radfahrer?	? 13202,12790 13273,12902
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.477625.php
-#: last_checked: 2016-07-07
-Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	?::inwork 4815,3382 4822,3431 4910,3599 5018,3810 5074,3900 5139,3997 5225,4095 5282,4145 5337,4192
+#: last_checked: 2016-09-30
+#: check_frequency: 120d
+#: XXX passiert auf dem letzten Teilstück noch was?
+Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,3431 4910,3599 5018,3810
+# REMOVED (realisiert) Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	?::inwork 5018,3810 5074,3900 5139,3997 5225,4095 5282,4145 5337,4192
 # REMOVED (realisiert --- ist das vielleicht schon alles?) --- Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	?::inwork 5337,4192 5387,4214 5523,4285 5546,4302
 # 
 # REMOVED --- #: XXX B1, B5 Berlin, Karl-Marx-Allee zwischen Alexanderstraße und Kreisverkehr Strausberger Platz Gültig ab: 11.05.2016 20:00  gesperrt	LMS-BR_r_LMS-BR_67424 --- #: XXX Karl-Marx-Allee (Mitte) stadtauswärts zwischen Otto-Braun-Straße und Petersburger Platz (Berlin)  Gültig ab: 11.05.2016 20:00  Vollsperrung, Aufbauarbeiten zur Formula-E (bis ca. 24:00 Uhr)	2147340063 --- #: priority: #A --- Karl-Marx-Allee: bereits wegen der Vorbereitungen für das Rennen gesperrt, auch für Radfahrer?	?; 11226,12945 11289,12908 11589,12768 11635,12745 11683,12725 11976,12595
@@ -1767,9 +1782,9 @@ Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 1
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.470764.php
 #: by: http://www.s-bahn-berlin.de/bauinformationen/details/rummelsburg/4530
 #: XXX Bauzeit Ende August 2016 bis vsl. Sommer 2017; neue Bauzeit: 1.11.2016 für 2,5 Monate
-#: last_checked: 2016-09-14
+#: last_checked: 2016-09-30
 #: next_check: 2016-11-01
-(Unterführung S-Bhf. Rummelsburg): wird während der Bauarbeiten hier komplett gesperrt sein?	? 15379,10651 15419,10706 15433,10765
+(Unterführung S-Bhf. Rummelsburg): wird während der Bauarbeiten hier komplett gesperrt sein?	? 15372,10655 15409,10709 15433,10765
 # 
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.331148.php
 #: XXX bis voraussichtlich Ende Oktober 2015 war hier gesperrt, danach wird eventuell auch der Havelradweg über diesen Weg geführt
@@ -1783,7 +1798,7 @@ Conradstr.: gibt es nach den Bauarbeiten Änderungen beim aufgemalten Radweg?	? 3
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.463961.php --- #: last_checked: 2016-04-11 --- #: next_check: 2016-04-30 --- Monumentenbrücke: Radstreifen werden markiert	? 8180,9099 8389,9087
 # REMOVED (keine Änderungen) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.463953.php --- #: next_check: 2016-07-29 --- Friedrich-Wilhelm-Platz: Ampelumbau und Radweganpassungen, ändert sich dabei etwas?	? 5429,7220 5397,7205 5352,7184
-# REMOVED (Abschnitt ist kürzer, anders) --- #: source_id: 2147339877 --- #: XXX gültig bis Mitte 07/2016, laut fritz bis 16.07.2016 --- Lindenstr.: Fahrbahnverschwenkung genauer anschauen, ggfs. Radspur bis zum Ende der Bauarbeiten entfernen	?; 9935,11067 9829,10830 9805,10791 9797,10771 9777,10719
+# REMOVED (Abschnitt ist kürzer, anders) --- #: source_id: 2147339877 --- #: XXX gültig bis Mitte 07/2016, laut fritz bis 16.07.2016 --- Lindenstr.: Fahrbahnverschwenkung genauer anschauen, ggfs. Radspur bis zum Ende der Bauarbeiten entfernen	?; 9935,11067 9834,10840 9829,10830 9807,10788 9797,10771 9777,10719
 # REMOVED --- Buschkrugallee - Britzer Park: ist der Weg unbeleuchtet?	? 14053,4173 14045,4164 14009,4148 13910,4090 13873,4067 13798,4037 13721,4023 13656,3989 13601,3895 13573,3885 13489,3857 13463,3854 13356,3843 13302,3837
 # REMOVED --- Landjägerstr. oder Alter Markt: wie ist hier ausgeschildert?	? 22458,4565 22495,4523
 # 
@@ -2002,7 +2017,7 @@ Fanny-Zobel-Str.	? 13975,10187 14049,10164
 # 
 #: by: http://gruene-xhain.de/news/single-view/artikel/vorfahrt-fuer-den-radverkehr.html
 #: by: http://www.berlin.de/imperia/md/content/bafriedrichshain-kreuzberg/abtstadtpg/bzbm-buero/bezirksamtssitzungen/02-07-13/beschluss_265_13.pdf?start&ts=1372853813&file=beschluss_265_13.pdf
-#: last_checked: 2016-09-18
+#: last_checked: 2016-09-30
 #: check_frequency: 120d
 #: priority: #C
 Bergmannstr./Heimstr.: wird hier die Vorfahrtsregelung zugunsten des Radwegs geändert?	? 9880,9233 9973,9232 10001,9234
@@ -2192,7 +2207,7 @@ Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,
 # REMOVED (das sah nicht öffentlich aus...) --- #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20121129.1435.378795.html vvv --- Privatstraße der Berlin-Chemie: befahrbar für Radfahrer? Qualität?	? 21211,3474 21270,3407 20867,3018 --- Privatstraße der Berlin-Chemie: befahrbar für Radfahrer? Qualität?	? 21046,3188 20927,3292 --- #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=3934&options=4
-#: last_checked: 2016-08-27
+#: last_checked: 2016-09-30
 #: check_frequency: 90d
 Schöneberger Str.: eventuell wird hier eine (Fußgänger-)Ampel entstehen	?::projected 8640,6770 8653,6781 8655,6796
 # 
@@ -2291,7 +2306,7 @@ Dörpfeldstr.: evtl. Einrichtung von Radverkehrsanlagen	?::projected 20834,4035 2
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4353&options=4 (Prüfung der Maßnahme)
 #: osm_watch: way id="46907545" version="6"
-#: last_checked: 2016-07-07
+#: last_checked: 2016-09-30
 #: check_frequency: 180d
 Birkbuschstr.: werden hier Radspuren oder Busspuren angelegt?	? 5546,4302 5483,4359 5416,4411 5329,4485 5271,4547 5165,4667 5132,4704 5076,4762 5070,4770 5048,4798 4985,4884 4951,4920 4879,5017
 # 
@@ -2353,8 +2368,7 @@ Bordsteinkante	? -831,4636
 #: XXX_prog:
 Hauptstr.: enger Mittelstreifen, für Anhänger recht knapp (-> 3nocross)	? 6608,8277 6560,8219 6460,8093
 # 
-#: XXX_prog: eine Art qX+3(=gerichtet)-Kombination ist notwendig, mit Unterstützung für bestimmte Fahrzeugarten (trailer) oder nur 3 mit trailer
-Für Anhänger sehr unbequem zu passieren (Betonblöcke und Barrieren, max. 90cm lichte Breite)	? 9797,10771 9805,10791 9786,10971
+# REMOVED --- #: XXX_prog: eine Art qX+3(=gerichtet)-Kombination ist notwendig, mit Unterstützung für bestimmte Fahrzeugarten (trailer) oder nur 3 mit trailer --- Für Anhänger sehr unbequem zu passieren (Betonblöcke und Barrieren, max. 90cm lichte Breite)	? 9797,10771 9807,10788 9803,10808 9799,10846 9786,10971
 # 
 #: XXX_prog:
 Potsdamer Str. oder Hauptstr.: Richtung Norden Hauptstr., Richtung Süden Potsdamer Str.	? 7479,9357 7517,9454
@@ -2598,16 +2612,19 @@ Planstraßen im Marienhain: Straßennamen? Qualität?	? 22771,3151 22476,3118 22485
 # REMOVED (weitgehend realisiert) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20140922.1345.399356.html (Erschließung bis Anfang 2015) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6304 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036218583297/218583297/00079580/80-Anlagen/02/vzb1011_IV_Benennung_Strassen_B_Plan_10_56.pdf (Straßenname) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2015 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6407 (Korrektur der Benennung, vorher Clara-Immerwahr-Haber-Str.) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036322976038/322976038/00081362/62-Anlagen/02/vzb1095_IV_Korrektur_Benennung_Clara_Immerwahr.pdf --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/46re.pdf/file?y=2015 (Korrektur) --- #: last_checked: 2015-04-11 --- #: next_check: 2015-10-01 --- #: XXX Straße ist asphaltiert --- #: XXX fehlt in Berlin.coords.data, PLZ=12681 --- Clara-Immerwahr-Str.: Wann wird die Straße eröffnet?	?::inwork 19202,17471 19546,17351 19546,17351 19798,17263 19845,17235 19914,17203 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/21re.pdf/file?y=2015 --- #: XXX Straße ist asphaltiert --- #: XXX fehlt in Berlin.coords.data, PLZ=12681 --- #: XXX Name tatsächlich ohne Bindestriche? --- auch laut Amtsblatt ohne Bindestriche --- #: last_checked: 2015-08-09 --- #: next_check: 2015-10-01 --- Am Cleantech Business Park: Wann wird die Straße eröffnet?	?::inwork 19428,16692 19459,16767 19449,16797 19408,16824 19384,16863 19486,17170 --- #: XXX ist der Radweg/Gehweg hier auch asphaltiert? --- #: next_check: 2015-10-01 --- Am Cleantech Business Park: Weg in Bau: wann wird der Weg eröffnet?	?::inwork 19486,17170 19546,17351
 # REMOVED (realisiert) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2014 (Straßenlandwidmung für Verbreiterung der Hohenschönhausener) --- #: last_checked: 2014-09-27 --- #: check_frequency: 45d --- Hohenschönhausener Str.: Radweg wird auf der östlichen Seite gebaut, wahrscheinlich asphaltiert und Zweirichtungsradweg	?::inwork 18738,16957 19108,17347 19183,17444 19202,17471 19529,17902 19611,17999 19668,18005 19772,18064 19820,18091 19845,18120 19875,18182
 # 
+#: next_check_id: ANDERNEUMARK-2016
 #: by: http://www.berlin.de/ba-neukoelln/verwaltung/bebauungsplaene/8-9bab.html
 #: by: http://www.berlin.de/imperia/md/content/baneukoelln/b-plan/auslegung/planzeichnungen/8_9bab_pl.pdf?start&ts=1393408069&file=8_9bab_pl.pdf
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4570
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/45081036990958011/990958011/00040576/76-Anlagen/06/8-9bab_pl.pdf
-#: XXX Straßenname vermutlich "An der Neumark", Privatstraße, fehlt in Berlin.coords.data, PLZ=12347
+# REMOVED (eingetragen) --- : XXX Straßenname vermutlich "An der Neumark", Privatstraße, fehlt in Berlin.coords.data, PLZ=12347
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/12re.pdf/file?y=2016
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2016 (Grundstücksnummerierungen)
-#: last_checked: 2016-05-13
+#: XXX ggfs. culdesac-Einträge machen
+#: last_checked: 2016-09-30
 #: check_frequency: 60d
-neue Straßen im Zuge des Bebauungsplanes 8-9bab: genaue Lage, Qualität, Straßenname vermutlich "An der Neumark"?	?::inwork 11304,3764 11320,3733 11395,3753 11464,3662
+# neue Straßen im Zuge des Bebauungsplanes 8-9bab: genaue Lage, Qualität, Straßenname vermutlich "An der Neumark"?	?::inwork 11283,3774 11300,3709 11357,3720 11378,3626 11332,3615
+An der Neumark: weitere Abschnitte der Straße, Hausnummern hier 5-93	?::inwork 11394,3814 11445,3642
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20140507.1055.396976.html
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6562
@@ -2880,6 +2897,7 @@ Güterbahnhof Wilmersdorf: vermutlich wird die Straße während der Bauarbeiten ges
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/11re.pdf/file?y=2016
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2016 (Widerspruch)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2016 (bestandskräftig)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: XXX Berlin.coords.data-Eintrag fehlt
 #: XXX ist das der Bebauungsplan 5-93?
 #: osm_watch: way id="377485132" version="1"

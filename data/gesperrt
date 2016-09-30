@@ -121,7 +121,7 @@ Petersburger Platz	1 13470,12990 13559,12779
 Dernburgstr.	1 2498,10665 2378,10677 2333,10710 2254,11051
 Schuckertdamm	1 741,14827 1022,14898 1056,14906 1112,14918 1200,14943 1343,14972
 Am Kleinen Wannsee	1 -5499,1349 -5488,1289 -5541,1214 -5749,1146
-Oberhofer Platz	1 5491,1955 5474,1940 5452,1940 5431,1956 5376,2097 5406,2110 5434,2122 5489,1981 5491,1955
+Oberhofer Platz	1 5491,1955 5474,1940 5452,1940 5431,1956 5393,2053 5376,2097 5406,2110 5434,2122 5452,2077 5489,1981 5491,1955
 Scheelestr.	1 5741,1231 5697,1098 5556,984 5488,943 5421,902 5342,845
 Tibertius-Brücke: Kfz-Straße	2 5681,5743 5574,5819 5414,5939 5345,5994 4937,6205
 An der Schillingbrücke	1 12061,11406 12060,11323
@@ -426,7 +426,7 @@ Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 195
 Murtzaner Ring	1 19818,14064 19843,14064 19921,14064 19951,14083 20040,14179
 Rosenstr.	1 22284,4653 22212,4655 22144,4660
 Laurenzstr.	1 22246,4711 22175,4730
-Werrastr.: Firmengelände	2 13802,8195 13697,8279
+Werrastr.: Firmengelände	2 13805,8193 13697,8279
 Neuendorfer Str.	1 -3295,14777 -3228,14794
 Neuendorfer Str.	1 -3228,14794 -3251,14741
 Büdnerring	1 7997,18524 7902,18575 7892,18603 7926,18665 8037,18673 8063,18659 8066,18632 7997,18524
@@ -561,9 +561,9 @@ Bundesallee (Richtungsfahrbahn)	1::igndisp 5399,8344 5427,8412 5465,8511 5502,85
 Bundesallee (Richtungsfahrbahn)	1::igndisp 5505,8832 5515,8709 5508,8598 5472,8507 5433,8407 5399,8344
 Nonnendammallee (Richtungsfahrbahn)	1::igndisp -278,14532 -457,14536 -914,14602
 Nonnendammallee (Richtungsfahrbahn)	1::igndisp -925,14631 -278,14532
-Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4348,2619 4313,2630 4224,2671 4170,2727
-Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4170,2727 4233,2675 4317,2638 4348,2619
-Königsberger Str. (Mittelstreifen)	3nocross::ignrte 4348,2619 4317,2638 4233,2675 4170,2727
+Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4348,2627 4313,2630 4224,2671 4170,2727
+Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4170,2727 4233,2675 4317,2638 4348,2627
+Königsberger Str. (Mittelstreifen)	3nocross::ignrte 4348,2627 4317,2638 4233,2675 4170,2727
 Invalidenstr. (Richtungsfahrbahn)	1::igndisp 8098,13419 8189,13468 8291,13520 8337,13541
 Invalidenstr. (Richtungsfahrbahn)	1::igndisp 8337,13541 8293,13519 8098,13419
 Invalidenstr. (Straßenbahntrasse)	3nocross::ignrte 8337,13541 8291,13520 8189,13468 8098,13419
@@ -695,6 +695,8 @@ Bäumerplan	1 8512,7757 8466,7918
 Mierendorffstr.	1 3645,13206 3534,13098
 Hüttigpfad	1 4810,15000 4887,14931 5057,14824 5095,14792
 (Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1s 11012,13278 11085,13239
+Alex-Wedding-Str.	1 11085,13239 11045,13183
+Keibelstr.	1 11045,13183 11108,13142
 Zwerghuhnweg	1s 15612,416 15561,386
 Grammestr.	1 1057,14389 1058,14459
 Halskesteig	1 1058,14459 1157,14459
@@ -815,17 +817,14 @@ Am Lehnshof	1s 4291,22986 4264,22992 4202,23034
 EUREF-Campus: Privatgelände	2 7158,8208 7149,8249 7316,8509
 Wiltinger Str.	1 2375,25607 2312,25673
 Wiltinger Str.	1 2384,25679 2375,25607
-Leonhardyweg	1s 9033,8029 9035,7810 9040,7648
-Leonhardyweg	1s 9033,8029 9032,8254
-Kleineweg	1s 9130,7810 9132,7661
-Kleineweg	1s 9130,7810 9130,8029
-Kleineweg	1s 9128,8251 9130,8029
-Bundesring	1s 8969,8278 8941,8186
 Gartenstr.	1s 720,2718 835,2715
 Gartenstr.	1 835,2715 912,2965
 Kilstetter Str.	1 1532,2921 1536,3029 1575,3054 1689,3125 1835,2898
 Belßstr.	1s 7899,2391 7983,2348 7987,2337
 Röbeler Weg: Privatstraße, Durchfahrt verboten	2 24831,10730 24831,10772 24760,10790
+Markgrafenstr.	1 9807,10788 9799,10846
+Markgrafenstr.	1 9799,10846 9834,10840
+Morgensternstr.	1 5212,2360 5229,2395
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -1031,6 +1030,8 @@ Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18
 Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
 Ritterstr.	1 -3369,14532 -3316,14504
 Neue Bahnhofstr.	1s 14908,11231 14918,11249
+Barrieren	3nocross::ignrte 9797,10771 9807,10788 9829,10830
+Markgrafenstr. -> Lindenstr.: Barrieren	3::igndisp 9799,10846 9807,10788 9829,10830
 Straßenbahnhaltestelle	3nocross::ignrte 9246,13235 9255,13164 9262,13111
 Friedrichstr. -> Johannisstr.: Straßenbahnhaltestelle	3::igndisp 9246,13235 9255,13164 9385,13174
 Johannisstr. -> Friedrichstr.: Straßenbahnhaltestelle	3::igndisp 9385,13174 9255,13164 9262,13111
@@ -1147,8 +1148,8 @@ Jüdenstr. -> Altstädter Ring: Mittelstreifen mit Zaun	3::igndisp -3481,14308 -35
 Altstädter Ring -> Jüdenstr.: Mittelstreifen mit Zaun	3::igndisp -3501,14365 -3506,14306 -3481,14308
 Altstädter Ring -> Münsinger Park: Mittelstreifen mit Zaun	3::igndisp -3552,14082 -3517,14218 -3607,14249
 Münsinger Park -> Altstädter Ring: Mittelstreifen mit Zaun	3::igndisp -3607,14249 -3517,14218 -3506,14306
-Mittelstreifen	3nocross::ignrte 6996,3761 6957,3699 6782,3491
-Langkofelweg -> Kaiser-Wilhelm-Str.: Mittelstreifen	3::igndisp 6998,3596 6957,3699 6782,3491
+Mittelstreifen	3nocross::ignrte 6996,3761 6957,3699 6780,3497
+Langkofelweg -> Kaiser-Wilhelm-Str.: Mittelstreifen	3::igndisp 6998,3596 6957,3699 6780,3497
 umbequemes Überqueren wegen Bordsteinen	3nocross::ignrte 11329,12497 11340,12443 11355,12331
 Schillingstr. -> Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11353,12436 11340,12443 11355,12331
 Alexanderstr. -> Schillingstr.: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11329,12497 11340,12443 11353,12436
@@ -2139,12 +2140,14 @@ Mittelstreifen	3nocross::ignrte 22883,13013 22924,12833 22967,12647
 Hellersdorfer Str. -> Bansiner Str.: Mittelstreifen	3::igndisp 22967,12647 22924,12833 22896,12827
 Bansiner Str. -> Hellersdorfer Str.: Mittelstreifen	3::igndisp 22896,12827 22924,12833 22883,13013
 Mittelstreifen	3nocross::ignrte 12564,4308 12637,4014 12655,3882
-Mittelstreifen	3nocross::ignrte 6102,4726 6006,4852 6034,4893
-Albrechtstr. -> zur Albrechtstr.: Mittelstreifen	3::igndisp 6102,4726 6006,4852 5920,4976
-Albrechtstr. -> Stadtpark Steglitz, Brückenstr.: Mittelstreifen	3::igndisp 6102,4726 6006,4852 6000,4846
+Mittelstreifen	3nocross::ignrte 6048,4797 6006,4852 6034,4893 6055,4950
+Albrechtstr. -> zur Albrechtstr.: Mittelstreifen	3::igndisp 6048,4797 6006,4852 5920,4976
+Albrechtstr. -> Stadtpark Steglitz, Brückenstr.: Mittelstreifen	3::igndisp 6048,4797 6006,4852 6000,4846
 zur Albrechtstr. -> Bismarckstr.: Mittelstreifen	3::igndisp 5920,4976 6006,4852 6034,4893
 Stadtpark Steglitz, Brückenstr. -> Bismarckstr.: Mittelstreifen	3::igndisp 6000,4846 6006,4852 6034,4893
 Stadtpark Steglitz, Brückenstr. -> zur Albrechtstr.: Mittelstreifen	3::igndisp 6000,4846 6006,4852 5920,4976
+Bismarckstr. -> Karl-Stieler-Str.: Mittelstreifen	3::igndisp 6055,4950 6034,4893 6097,4858
+Karl-Stieler-Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 6097,4858 6034,4893 6006,4852
 Mittelstreifen, parkende Autos	3nocross::ignrte 4909,7436 4874,7382 4836,7327
 Südwestkorso -> Rheingaustr.: Mittelstreifen, parkende Autos	3::igndisp 4909,7436 4874,7382 4874,7326
 Rheingaustr. -> Südwestkorso: Mittelstreifen, parkende Autos	3::igndisp 4874,7326 4874,7382 4836,7327

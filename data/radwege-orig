@@ -29,7 +29,7 @@
 	RW1; 9229,8785 9227,8890 9225,9038 9224,9053 9225,9111 9248,9350
 #: XXX kommen hier noch Radwegschilder hin? An der Kreuzbergstr., an der Schwiebusser Str.? vvv
 #: XXX Testcase in insert_points anpassen!
-#: last_checked: 2016-09-26 vvv
+#: last_checked: 2016-09-30 vvv
 #: check_frequency: 14d vvv
 	RW3; 9248,9350 9225,9111 9224,9053 9225,9038 9227,8890
 asphaltiert	RW1; 9227,8890 9229,8785
@@ -89,20 +89,20 @@ asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9242,7286 9242,7325 9242,
 asphaltiert, aber mäßiger Zustand (Wurzelschäden), asphaltierte Nebenfahrbahn existiert	RW1; 9238,8410 9233,8597
 asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9233,8597 9229,8718
 	RW1;RW1 8715,7384 8806,7382 8886,7377 8971,7359 9051,7340 9107,7297 9242,7286
-	RW1;RW1 8715,7384 8716,7323 8718,7095 8723,6958 8750,6779 8739,6701
+	RW1; 8716,7323 8715,7384
+	RW1;RW1 8716,7323 8718,7095 8723,6958 8750,6779 8739,6701
 	RW1;RW1 8739,6701 8722,6656
 	RW3;RW3 8722,6656 8707,6537 8697,6455 8680,6322
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/sbl_stand_2015_08_24.pdf?start&ts=1440409042&file=sbl_stand_2015_08_24.pdf
-#: XXX Radspuren in Bau, zwischenzeitlich keine Radwege mehr vvv
+#: XXX Radspuren in Bau vvv
 #: osm_watch: way id="30709741" version="12"
 #: osm_watch: way id="354645896" version="2"
-#: last_checked: 2016-09-14 vvv
+#: last_checked: 2016-09-30 vvv
 #: source_id: 2147340437
-#: next_check: 2016-10-07
-	RW0;RW3 8680,6322 8661,6169 8642,5998
+	RW1;RW3 8680,6322 8661,6169 8642,5998
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.506616.php
 #: source_id: 2147340425
-#: next_check: 2016-10-07
+#: check_frequency: 14d
 	RW3;RW0 8642,5998 8627,5866 8613,5745
 #: last_checked ^^^
 #: XXX ^^^
@@ -585,9 +585,9 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 9-18 Uhr	RW1; 9275,3753 9106,3703 
 Gehweg für Radfahrer frei	RW1; 9584,3713 9751,3769
 Busspur gilt Mo-Fr 13-18 Uhr	RW5; 8964,3539 9128,3580 9215,3599
 Busspur ist immer gültig	RW5; 9215,3599 9391,3651 9455,3671
-altes Verbundsteinpflaster	RW1; 9953,3806 10047,3794
-altes Verbundsteinpflaster	RW2; 10047,3794 9953,3806
-altes Verbundsteinpflaster	RW1;RW1 10047,3794 10236,3777 10461,3757 10561,3748 10985,3707 11048,3700 11084,3702
+altes Verbundsteinpflaster	RW1; 9953,3806 10048,3806
+altes Verbundsteinpflaster	RW2; 10048,3806 9953,3806
+altes Verbundsteinpflaster	RW1;RW1 10048,3806 10237,3789 10462,3765 10562,3754 10985,3707 11048,3700 11084,3702
 # REMOVED --- #: XXX Radweg Richtung Südwesten aufgehoben, später werden hier Radspuren eingerichtet --- #: source_id: IM_026105 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150511.1105.401906.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150703.0950.402227.html --- #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2015_07_10.pdf?start&ts=1436508425&file=stra__enbauliste_stand_2015_07_10.pdf (Ende) --- #: osm_watch: way id="30701044" version="9" --- #: osm_watch: way id="29890799" version="11" --- #: last_checked: 2016-03-28 (noch Bauarbeiten, Richtung Süden noch keine Markierungen) --- #: check_frequency: 30d
 #: by: Susan Richter
 #: confirmed_by: srt
@@ -597,10 +597,10 @@ die letzten 70 Meter werden auf dem Gehweg geführt	RW3; 10181,4181 9953,3806
 	RW1;RW1 10412,4552 10505,4713 10755,5129
 	RW2;RW1 10755,5129 10800,5203
 	RW1;RW1 10800,5203 10862,5356 10927,5517 10976,5628 11128,5782 11196,5851 11338,5992
-# REMOVED (stimmt größtenteils nicht) --- #: note: Kommentar von Jens Velten, von srt korrigiert --- teilweise relativ breit, neues Verbundsteinpflaster	RW1; 11084,3702 11153,3728 11159,3730 11166,3732 11264,3767 11375,3807 11496,3850 11610,3891 11684,3919 11698,3924 11768,3950 11851,3980 12015,4038 12284,4133 12337,4160 12363,4175 12564,4308
+# REMOVED (stimmt größtenteils nicht) --- #: note: Kommentar von Jens Velten, von srt korrigiert --- teilweise relativ breit, neues Verbundsteinpflaster	RW1; 11084,3702 11153,3728 11159,3730 11166,3732 11264,3767 11283,3774 11375,3807 11394,3814 11496,3850 11610,3891 11684,3919 11698,3924 11768,3950 11851,3980 12015,4038 12284,4133 12337,4160 12363,4175 12564,4308
 uneben, schmal, Verbundsteinpflaster	RW1; 12564,4308 12363,4175 12337,4160
 teilweise neues Verbundsteinpflaster	RW1; 12337,4160 12363,4175 12564,4308
-uneben, schmal, Verbundsteinpflaster	RW1;RW1 12337,4160 12284,4133 12015,4038 11851,3980 11768,3950 11698,3924 11684,3919 11610,3891 11496,3850 11375,3807 11264,3767 11166,3732 11159,3730 11153,3728 11084,3702
+uneben, schmal, Verbundsteinpflaster	RW1;RW1 12337,4160 12284,4133 12015,4038 11851,3980 11768,3950 11698,3924 11684,3919 11610,3891 11496,3850 11394,3814 11375,3807 11283,3774 11264,3767 11166,3732 11159,3730 11153,3728 11084,3702
 neues Verbundsteinpflaster, trotzdem relativ uneben	RW1; 13775,3500 13906,3340 14023,3276 14126,3225 14205,3187 14274,3129
 sehr uneben	RW1; 14274,3129 14205,3187 14126,3225 14023,3276 13906,3340 13775,3500
 sehr uneben	RW1;RW1 14274,3129 14392,2979
@@ -729,7 +729,7 @@ asphaltiert	RW; -1746,24219 -1627,24105 -1746,24219 -1872,24336
 	RW2;RW8 449,15654 525,15435 559,15342 613,15195 651,15091 717,14894 741,14827 838,14530 842,14518 862,14463 889,14392
 	RW;RW1 2095,11440 2082,11554 2058,11756
 	RW1;RW2 6651,4843 6744,4983
-	RW1;RW1 6744,4983 6745,4999 6747,5010 6767,5233 6771,5273 6787,5459
+	RW1;RW1 6744,4983 6746,4999 6747,5010 6767,5233 6771,5273 6787,5459
 	RW;RW1 6787,5459 6770,5684 6757,5858
 	RW1;RW1 6757,5858 6736,6071 6714,6293 6710,6342 6694,6512 6675,6740 6668,6810 6650,7017 6640,7138
 	RW2;RW4 6757,5858 6696,5854
@@ -768,10 +768,9 @@ Gehweg für Radfahrer frei	RW1;RW1 5352,7428 5364,7330 5397,7205
 	RW1;RW 6094,5171 6089,5145 6070,5044
 	RW;RW1 6070,5044 6055,4950
 hier in beide Richtungen für Radfahrer aus dem Stadtpark befahrbar	RW2; 6055,4950 6034,4893 6006,4852
-	RW; 6006,4852 6034,4893 6055,4950
-asphaltiert	RW1; 6006,4852 6102,4726 6107,4718
-	RW; 6107,4718 6102,4726
-asphaltiert	RW1; 6102,4726 6006,4852
+asphaltiert	RW1; 6006,4852 6048,4797 6102,4726 6107,4718
+asphaltiert	RW1; 6107,4718 6102,4726 6048,4797 6006,4852 6034,4893
+	RW1; 6034,4893 6055,4950
 # REMOVED (ja) --- #: XXX ist der Radweg hier auch neu gemacht (neu asphaltiert?)? --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/verwaltung/bauen/tiefbau/bauarbeiten.html?date=20131119
 asphaltiert	RW1;RW1 6107,4718 6116,4707 6212,4622
 	RW2;RW2 6071,6559 6168,6467
@@ -1035,7 +1034,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut rbbtext bis 31.05.2016, laut vmz bis Ende 2016
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2016-08-30
+#: last_checked: 2016-09-30
 #: check_frequency: 60d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 9695,12390 9656,12386 9601,12380
@@ -1085,9 +1084,9 @@ Busspur gilt Mo-Fr 7-14 Uhr	RW5; 10876,12563 10803,12470
 #: note: kein Radweg, allerdings kann man die parallel führende Parkplatzstraße benutzen
 	RW0; 9268,11590 9058,11564
 Verbundsteinpflaster	RW1;RW1 9935,11067 10103,10989
-Gehweg für Radfahrer frei	RW1; 15261,10738 15307,10701 15379,10651 15404,10633
+Gehweg für Radfahrer frei	RW1; 15261,10738 15307,10701 15372,10655 15404,10633
 gemeinsamer Rad- und Gehweg	RW2; 15404,10633 15639,10469
-Gehweg für Radfahrer frei	RW1; 15639,10469 15404,10633 15379,10651 15307,10701
+Gehweg für Radfahrer frei	RW1; 15639,10469 15404,10633 15372,10655 15307,10701
 	RW2; 15307,10701 15261,10738
 Gehweg für Radfahrer frei	RW1; 15639,10469 15831,10329
 gemeinsamer Rad- und Gehweg	RW2; 15831,10329 15639,10469
@@ -1401,8 +1400,8 @@ asphaltiert	RW1;RW1 11632,8302 11767,8330 11898,8362
 Busspur gilt Mo-Fr 6-20 Uhr und Sa-So 10-20 Uhr	RW5; 9873,10285 9593,10238
 Busspur gilt Mo-Fr 7-9 Uhr und 14-17 Uhr	RW5; 9795,10512 9858,10350
 	RW3; 9858,10350 9795,10512
-	RW3;RW3 9795,10512 9770,10590 9777,10719 9797,10771 9805,10791 9829,10830
-	RW3;RW4 9829,10830 9935,11067 9973,11150
+	RW3;RW3 9795,10512 9770,10590 9777,10719 9797,10771 9807,10788 9829,10830
+	RW3;RW4 9829,10830 9834,10840 9935,11067 9973,11150
 	RW3;RW3 9973,11150 10020,11262
 	RW3;RW4 10020,11262 10072,11384 10116,11485
 	RW3;RW3 10116,11485 10136,11529 10166,11592 10201,11631
@@ -1511,10 +1510,10 @@ die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
 	RW3;RW3 14608,10409 14641,10552 14675,10693 14672,10760
 	RW3;RW2 14672,10760 14674,10811
 #: next_check_id: HAUPTSTR-2015
-#: XXX wegen Bauarbeiten aufgehoben, früher RW4;RW4
-#: last_checked: 2016-08-27
+#: XXX wegen Bauarbeiten teilweise aufgehoben, früher RW4;RW4
+#: last_checked: 2016-09-30
 #: check_frequency: 30d
-	RW0;RW0 14674,10811 14717,10855
+	RW4;RW0 14674,10811 14717,10855
 	RW1;RW1 14652,10201 14688,10167 14705,10149 14747,10108 14817,10031
 	RW0;RW1 13795,9941 13890,9894
 	RW1;RW1 13890,9894 13999,9842 14196,9749
@@ -1763,8 +1762,8 @@ neu asphaltiert	RW2;RW2 3165,19136 3045,19032 2994,18979 2821,18831
 	RW1;RW1 4261,1584 4365,1440 4381,1418 4542,1188
 	RW1;RW 4542,1188 4605,1089
 	RW;RW 4605,1089 4768,840 4875,677 4948,562 5061,409
-	RW3;RW1 6625,3314 6544,3235
-	RW1;RW1 6544,3235 6407,3101 6320,3022 6226,2936 6110,2822 6002,2723 5971,2691 5930,2671 5831,2624 5789,2604 5666,2548 5542,2491 5479,2464 5413,2436
+	RW3;RW1 6613,3320 6535,3243
+	RW1;RW1 6535,3243 6401,3113 6313,3028 6222,2940 6105,2826 6002,2723 5971,2691 5930,2671 5831,2624 5824,2621 5789,2604 5666,2548 5542,2491 5479,2464 5413,2436
 # del: laut http://www.panoramio.com/photo/19637894 kein Radweg:	RW;RW 5413,2436 5398,2422 5317,2345
 	RW1;RW 3556,13200 3542,13203 3429,13227 3310,13253
 	RW;RW 3310,13253 3200,13277 3112,13296
@@ -1929,15 +1928,13 @@ Radweg endet etwa 60 Meter vor der Kreuzung	RW1; 6651,4843 6827,4806 6847,4802
 	RW10;RW1 6579,4856 6531,4865
 	RW10;RW0 6531,4865 6385,4896
 # REMOVED (Hinweis von Jörg Feler) ---	RW;RW0 6385,4896 6353,4895 6288,4906 6215,4926 6191,4923 6184,4924 6055,4950
-	RW; 4348,2619 4317,2638 4233,2675 4170,2727
-	RW; 4224,2671 4313,2630 4348,2619
-#: by: rjoop (Busspur Richtung Westen) vvv
-Für Radfahrer freigegebene Busspur ist Mo-Fr, Uhrzeit unbekannt	RW1;RW 4348,2619 4383,2613 4526,2635 4700,2662 4934,2546 4962,2532 5056,2481
-Für Radfahrer freigegebene Busspur ist Mo-Fr, Uhrzeit unbekannt	RW1;RW1 5056,2481 5226,2390
-Für Radfahrer freigegebene Busspur ist Mo-Fr, Uhrzeit unbekannt	RW1;RW 5226,2390 5248,2376
-#: by ^^^
-	RW1;RW 5248,2376 5317,2345
-Gehweg für Radfahrer frei	RW1; 5191,2350 5248,2376
+	RW; 4348,2627 4317,2638 4233,2675 4170,2727
+	RW; 4224,2671 4313,2630 4348,2627
+für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 4348,2627 4392,2628 4526,2648 4702,2676
+für Radfahrer freigegebene Busspur gilt Mo-Fr 15-18 Uhr	RW1; 4702,2676 4750,2667 4943,2557 4968,2543 5060,2490 5229,2395 5256,2379
+für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr	RW1; 5256,2379 5229,2395 5060,2490 4968,2543 4943,2557 4750,2667 4702,2676 4526,2648 4392,2628 4348,2627
+	RW1;RW 5256,2379 5317,2345
+Gehweg für Radfahrer frei	RW1; 5191,2350 5212,2360 5256,2379
 	RW1;RW3 4517,4853 4515,4760
 	RW1;RW 4515,4760 4515,4581
 	RW;RW 4515,4581 4521,4484
@@ -2346,7 +2343,7 @@ der Radweg "versiegt" in Höhe der Kleingartenanlage	RW1; 12883,5257 13046,5267
 	RW1;RW1 2695,7082 2535,7257
 	RW3;RW3 2535,7257 2367,7454 2213,7637
 	RW1;RW3 2213,7637 2169,7690 2112,7754
-Busspur gilt Mo-Fr 15-18 Uhr	RW5; 6782,3491 6625,3314
+Busspur gilt Mo-Fr 15-18 Uhr	RW5; 6780,3497 6613,3320
 Gehweg für Radfahrer frei	RW1;RW1 21968,-15 21800,-109 21534,-262 21463,-280 21355,-309 21235,-354
 Gehweg für Radfahrer frei	RW1; 21157,-413 21235,-354
 Gehweg für Radfahrer frei	RW1;RW0 22145,208 22073,59 21977,-8 21968,-15
@@ -3475,12 +3472,12 @@ mäßiger Radweg und für Radfahrer freigegebene Busspur (Geltungszeiten Mo-Fr 6-19
 neu asphaltierter Radweg	RW2; 6248,4127 6120,4214
 Busspur gilt Mo-Fr 9-19 Uhr und Sa 9-14h	RW5; 6435,3697 6460,3643 6489,3578
 Busspur gilt Mo-Fr 6-19 Uhr	RW5; 6489,3578 6460,3643 6435,3697 6412,3750
-Radweg und für Radfahrer freigegebene Busspur (Geltungszeiten Mo-Fr 9-19 Uhr und Sa 9-14h)	RW1; 6489,3578 6529,3480 6625,3314
-Radweg und für Radfahrer freigegebene Busspur	RW1; 6625,3314 6529,3480 6489,3578
-	RW2;RW 6625,3314 6712,3237
+Radweg und für Radfahrer freigegebene Busspur (Geltungszeiten Mo-Fr 9-19 Uhr und Sa 9-14h)	RW1; 6489,3578 6529,3480 6613,3320
+Radweg und für Radfahrer freigegebene Busspur	RW1; 6613,3320 6529,3480 6489,3578
+	RW2;RW 6613,3320 6712,3237
 	RW1; 5766,4025 5737,4013
 	RW1;RW1 5737,4013 5671,3987
-Gehweg für Radfahrer frei	RW1;RW1 4700,2662 4722,2771 4776,2873 4821,2954 4832,2975 4871,3045 4927,3147 4969,3222 5022,3318 5094,3439 5155,3502 5336,3692
+Gehweg für Radfahrer frei	RW1;RW1 4702,2676 4722,2771 4776,2873 4821,2954 4832,2975 4871,3045 4927,3147 4969,3222 5022,3318 5094,3439 5155,3502 5336,3692
 Gehweg für Radfahrer frei	;RW1 5336,3692 5447,3801
 Nebenstraße jenseits des Gleises mit unterschiedlicher Qualität (gut asphaltiert bis eng und unbefestigt; Spielstraße)	RW10;RW0 2076,2626 2056,2535 1945,2127 1873,1772 1854,1677 1848,1647 1825,1534 1785,1338 1774,1269 1768,1242 1742,1118 1726,1046 1655,666
 aufgemalter Radweg nicht mehr erkennbar	RW0;RW0 1576,1742 1478,1721 1358,1695 1249,1672 1198,1662 1080,1637
@@ -3619,7 +3616,7 @@ Verbundsteinpflaster, OK	RW1; 13531,4152 13595,4232 13632,4304 13666,4410 13671,
 #: by: ^^^
 # 
 #: by: Hermann Kühne:
-	RW6;RW6 10236,3777 10248,3897 10260,4107 10269,4136
+	RW6;RW6 10237,3789 10248,3897 10260,4107 10269,4136
 #: by: Hendrik Buley:
 #: confirmed_by: srt
 	RW6;RW6 6107,22383 6013,22497
@@ -4799,3 +4796,4 @@ asphaltiert	RW1; 17681,6212 17843,6083
 	RW6;RW6 2021,2890 2108,2883
 	RW6;RW6 17533,12222 17749,12239 17785,12257
 	RW1; 3884,1187 3895,1219
+	RW6;RW6 6363,4047 6428,4076 6493,4105 6517,4051 6452,4024 6428,4076

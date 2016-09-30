@@ -14,7 +14,6 @@ Kommandantenstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10330,11422 10136,11529
 Beuthstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10201,11631 10235,11610 10330,11422
 Sch¸tzenstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10116,11485 9949,11470
 Melchiorstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 11542,11342 11726,11265 11921,11185
-zur Keibelstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 10976,13229 11045,13183
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9984,12426 9996,12401 10058,12290
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwork; 9580,12581 9601,12380
@@ -304,7 +303,8 @@ Lehmbruckstr.: Bordsteine	q3 13678,10685 13690,10715
 Barsekowstr.: Fuﬂg‰nger	q1 5336,4676 5406,4631 5465,4606 5521,4605 5588,4629
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5588,4629 5643,4626 5691,4636
 (Stadtpark Steglitz): Fuﬂg‰nger, Bordstein	q3 5709,4674 5715,4672 5724,4670
-(Stadtpark Steglitz): Fuﬂg‰nger	q2 5734,4694 5830,4661 5890,4674 6012,4662 6026,4744 6030,4743 6092,4717 6107,4718
+(Stadtpark Steglitz): Fuﬂg‰nger	q2 5734,4694 5830,4661 5890,4674 6012,4662 6026,4744 6028,4765 6048,4797
+(Stadtpark Steglitz): Fuﬂg‰nger	q2 6026,4744 6030,4743 6092,4717 6107,4718
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5589,4617 5588,4629 5582,4675 5555,4743
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5509,4773 5453,4665 5406,4631
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5797,4846 5806,4840 5909,4798 5947,4791 6022,4746 6026,4744
@@ -656,7 +656,7 @@ Cheruskerpark: Fuﬂg‰nger	q1 7439,8716 7405,8698 7382,8658 7368,8595 7352,8391 73
 (Hoeppnerstr. - Hessenring): eng, Fuﬂg‰nger	q3 8376,7440 8446,7524 8549,7622
 (Kolonie Z‰hringer Korso): eng	q3 8553,7795 8554,7746 8573,7710 8549,7622
 (Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.): enge Straﬂe	q1 15639,11653 15482,11729 15413,11690
-(Unterf¸hrung S-Bhf. Rummelsburg): Fuﬂg‰nger	q4 15379,10651 15419,10706 15433,10765
+(Unterf¸hrung S-Bhf. Rummelsburg): Fuﬂg‰nger	q4 15372,10655 15409,10709 15433,10765
 (Unterf¸hrung Bhf. Karlshorst): Fuﬂg‰nger	q3 18875,8365 18906,8394 18949,8437
 Vereinsweg (Charlottenburg): Radfahren verboten	q4 2828,11731 2855,11752 2907,11755 2934,11747
 Neue Br¸cke: Fuﬂg‰nger	q1 -3139,14710 -3143,14676 -3150,14631
@@ -1570,6 +1570,7 @@ Kuschelweg: einige Fuﬂg‰nger	q1 23355,12732 23349,12760 23408,13100 23474,13449 
 an der Kieler Br¸cke: einige Fuﬂg‰nger	q1 7804,14445 7780,14431 7740,14409 7661,14398 7634,14406 7617,14420 7570,14392
 Schw‰bische Str.: einige Fuﬂg‰nger	q1 6529,9738 6502,9782
 (Kommandantenstr. - Oranienstr.): einige Fuﬂg‰nger	q3 10593,11120 10633,11051
+zur Keibelstr.: Fuﬂg‰nger, Bordstein	q3 10976,13229 11045,13183
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
@@ -2203,7 +2204,7 @@ Hohenzollernstr. (Zehlendorf): enge Straﬂe	q1 21,2728 53,2708 226,2752 322,2772 
 Hohenzollernstr. (Zehlendorf): enge Straﬂe	q1 492,2813 522,2802 537,2772
 Rosa-Reinglass-Steig	q1 -2878,15304 -2856,15383
 Am Lupinenfeld: enge Straﬂe	q0 24159,13507 24347,13465 24539,13427 24746,13384 24817,13370 24875,13333 25031,13242 25138,13183 25181,13157
-Franzstr. (Lankwitz): enge Straﬂe	q1 5556,3056 5776,3195
+Franzstr. (Lankwitz): enge Straﬂe	q0 5556,3056 5776,3195
 Gluckweg: enge Straﬂe	q1 5853,3050 6039,3275
 Gluckweg: beiderseits parkende Autos	q1 6039,3275 6171,3400
 Chrysanthemenstr.: Benutzung des Fuﬂwegs, Bordsteine	q3 14241,13941 14261,13932
@@ -2310,8 +2311,8 @@ Parkanlage: einige Fuﬂg‰nger	q1 13261,20919 13289,21001 13285,21021
 Parkanlage: einige Fuﬂg‰nger	q1 13298,20917 13289,21001
 Hermesweg: einige Fuﬂg‰nger	q1 6116,4707 6072,4606
 Reginenweg: Radfahren verboten, ggfs. schieben	q4 6484,3292 6482,3327 6431,3417 6426,3425
-Ruthstr.: Fuﬂweg	q2 6332,3007 6320,3022
-Brigittenstr.: Fuﬂweg	q2 6208,2954 6226,2936
+Ruthstr.: Fuﬂweg	q2 6332,3007 6313,3028
+Brigittenstr.: Fuﬂweg	q2 6208,2954 6222,2940
 (Oranienburger Str. - Wilhelm-Gericke-Str.): Fuﬂweg, Bordstein	q2 5545,19909 5598,19912
 Siepesteig: enge Straﬂe	q1 194,1055 115,1043 84,1174 91,1202
 Waldschluchtpfad: enge Straﬂe	q0 -5064,6853 -5034,6933 -4806,6901

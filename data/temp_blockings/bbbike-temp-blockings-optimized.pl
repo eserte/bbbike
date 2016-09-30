@@ -3352,7 +3352,7 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.511369.php
 #: source_id: 2147340474
 #: XXX periodisch prüfen
-#: last_checked: 2016-09-16
+#: last_checked: 2016-09-30
 #: check_frequency: 14d
 	2::inwork 15261,10738 15272,10790
 	q4; 15279,10862 15272,10790 15388,10758 15433,10765
@@ -3675,7 +3675,7 @@ userdel	q4::inwork; 8642,7876 8731,7956
        },
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2016-09-20 vvv
+#: last_checked: 2016-09-30 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -3739,6 +3739,30 @@ userdel	2::inwork 3741,12607 3654,12672
          'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.515606.php',
          'text' => 'Spreeradweg: Bauarbeiten, Uferweg zwischen Caprivibrücke und Schloßbrücke gesperrt',
          'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: XXX wann wird wieder geöffnet?
+#: last_checked: 2016-09-30
+#: check_frequency: 60d
+userdel	2::inwork 4778,3352 4815,3382 4822,3431
+',
+         'from' => undef,
+         'id' => 2831,
+         'text' => 'Unterführung Krahmersteg: gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2016-09-30
+#: check_frequency: 60d
+userdel	q3::inwork 4564,3457 4800,3391 4862,3363 5022,3318
+',
+         'from' => undef,
+         'id' => 2832,
+         'text' => 'Krahmerstr.: Bauarbeiten, einige Engstellen',
+         'type' => 'handicap',
          'until' => undef
        }
      

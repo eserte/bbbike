@@ -5188,7 +5188,7 @@ EOF
        text  => 'Neubau der Treptower Straße in Neukölln, Sperrung zwischen Kiefholzstraße und Heidelberger Straße (Anliegerverkehr ist frei) (bis Ende 2006) ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 13860,8599 14015,8798 14151,8967
+userdel	q4::inwork 13860,8599 14011,8787 14151,8967
 EOF
      },
      { from  => 1153955394, # 2006-07-27 01:09
@@ -6998,7 +6998,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004418',
        data  => <<EOF,
-userdel	2::inwork 14151,8967 14015,8798 13860,8599
+userdel	2::inwork 14151,8967 14011,8787 13860,8599
 EOF
      },
      { from  => 1171050907, # 2007-02-09 20:55
@@ -9036,7 +9036,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_004418',
        data  => <<EOF,
-userdel	2::inwork 13860,8599 14015,8798 14151,8967
+userdel	2::inwork 13860,8599 14011,8787 14151,8967
 EOF
      },
      { from  => 1183412580, # 2007-07-02 23:43
@@ -23487,7 +23487,7 @@ EOF
        dont_check_date => 1,
        data  => <<EOF,
 # REMOVED (kein Schild mehr) --- #: last_checked: 2015-02-14 (gerade nicht gesperrt) --- #: next_check: 2015-12-01
-userdel	2::inwork 15419,10706 15379,10651
+userdel	2::inwork 15409,10709 15372,10655
 EOF
      },
      { from  => 1411279200, # 2014-09-21 08:00
@@ -24335,7 +24335,7 @@ EOF
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.511369.php
 #: source_id: 2147340474
 #: XXX periodisch prüfen
-#: last_checked: 2016-09-16
+#: last_checked: 2016-09-30
 #: check_frequency: 14d
 	2::inwork 15261,10738 15272,10790
 	q4; 15279,10862 15272,10790 15388,10758 15433,10765
@@ -24629,7 +24629,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (weitgehend fertig, ein paar umfahrbare Absperrungen zu den Nebenstraßen existieren noch) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2015-10-12 --- #: check_frequency: 7d
-userdel	q4::inwork 13369,7307 13322,7294 13150,7254 13043,7234
+userdel	q4::inwork 13369,7307 13326,7294 13150,7254 13043,7234
 EOF
      },
      { from  => 1444543200, # 2015-10-11 08:00
@@ -25488,7 +25488,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2016-09-20 vvv
+#: last_checked: 2016-09-30 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -25556,6 +25556,28 @@ userdel	2::inwork 3741,12607 3654,12672
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Unterführung Krahmersteg: gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: XXX wann wird wieder geöffnet?
+#: last_checked: 2016-09-30
+#: check_frequency: 60d
+userdel	2::inwork 4778,3352 4815,3382 4822,3431
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Krahmerstr.: Bauarbeiten, einige Engstellen',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2016-09-30
+#: check_frequency: 60d
+userdel	q3::inwork 4564,3457 4800,3391 4862,3363 5022,3318
 EOF
      },
     );
