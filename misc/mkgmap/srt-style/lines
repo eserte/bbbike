@@ -194,6 +194,12 @@ bbbike:mountclass=medium_slope [0x10405 resolution 23]
 bbbike:mountclass=strong_slope [0x10406 resolution 23]
 bbbike:mountclass=unspecified_slope [0x10407 resolution 23]
 
+# XXX Reusing the path symbol is currently a hack ---
+# XXX consider to even use an "invisible" line, just
+# XXX for the highway plates/names
+route=bicycle [0x16 resolution 20]
+route=bicycle {name '${ref|highway-symbol:oval} ${name}' | '${ref|highway-symbol:oval}' }
+
 # SRT addition ends here
 ######################################################################
 

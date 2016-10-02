@@ -286,7 +286,7 @@ if ($single_file) {
     do_file("$datadir/landstrassen2", \&handle_anywhere_highway_like);
 
     # XXX not enabled by default
-    if ($experiments{'cycle-route'} && $optimize_for_mapnik_style == OPTIMIZE_FOR_MAPNIK_STYLE_BBBIKE) {
+    if ($experiments{'cycle-route'} && ($optimize_for_mapnik_style == OPTIMIZE_FOR_MAPNIK_STYLE_BBBIKE || $optimize_for == OPTIMIZE_FOR_GARMIN)) {
 	do_file("$datadir/comments_route", \&handle_comments_route_like);
     }
 
@@ -1252,18 +1252,27 @@ sub handle_comments_route_like {
     if ($geo && $geo->can('parse_street_type_nr')) {
 	my $name = $r->[Strassen::NAME];
 	my($type, $nr, $do_round, $image) = $geo->parse_street_type_nr($name);
+	if (!defined $type) {
+	    ($type, $nr) = Strasse::parse_street_type_nr($name);
+	}
 	if (defined $type) {
 	    my @node_ids = get_node_ids($r);
-	    _xmlify($name);
 	    print $wayfh qq{<way id="$next_way_id" visible="true">\n};
 	    for my $node_id (@node_ids) {
 		print $wayfh qq{  <nd ref="$node_id"/>\n};
 	    }
 	    print $wayfh qq{  <tag k="route" v="bicycle" />\n};
-	    print $wayfh qq{  <tag k="name" v="$name" />\n};
-	    if ($image) {
-		_xmlify($image);
-		print $wayfh qq{  <tag k="ref" v="$image" />\n};
+	    if ($optimize_for == OPTIMIZE_FOR_GARMIN) {
+		my $plate = $type . (defined $nr ? $nr : '');
+		_xmlify($plate);
+		print $wayfh qq{  <tag k="ref" v="$plate" />\n};
+	    } else {
+		_xmlify($name);
+		print $wayfh qq{  <tag k="name" v="$name" />\n};
+		if ($image) {
+		    _xmlify($image);
+		    print $wayfh qq{  <tag k="ref" v="$image" />\n};
+		}
 	    }
 	    print $wayfh qq{</way>\n};
 	    $next_way_id++;
