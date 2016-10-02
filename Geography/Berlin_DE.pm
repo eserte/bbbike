@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000,2006,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2006,2015,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -251,6 +251,8 @@ sub parse_street_type_nr {
     } elsif ($strname =~ m{dahme.*radweg}i) {
 	$type = 'Dhm';
 	$image = 'dahme_radweg.png';
+    } elsif ($strname =~ m{Reinickendorfer Route (\d+)}) {
+	$type = "Rdf$1";
     }
     if (defined $type) {
 	$do_round = 1;
