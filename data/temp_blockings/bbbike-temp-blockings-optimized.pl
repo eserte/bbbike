@@ -1,6 +1,125 @@
-$#temp_blocking = 126;
+$#temp_blocking = 35;
 push @temp_blocking,
 (
+       {
+         'data' => 'userdel	2::temp -3275,14407 -3231,14383 -3204,14368 -3155,14340
+userdel	2::temp -3275,14407 -3338,14333
+userdel	2::temp -3150,14631 -3185,14556 -3205,14512 -3228,14468 -3275,14407
+userdel	2::temp -3275,14407 -3350,14446 -3393,14470 -3410,14479 -3440,14498 -3481,14523
+userdel	2::temp -3227,14260 -3155,14340
+userdel	2::temp -3227,14260 -3293,14304 -3338,14333
+userdel	2::temp -3552,14082 -3457,14189 -3409,14241 -3338,14333
+userdel	2::temp -3039,14522 -3054,14498 -3089,14440 -3110,14408 -3142,14358 -3155,14340
+userdel	2::temp -3110,14408 -3174,14438 -3228,14468
+userdel	2::temp -3231,14383 -3293,14304
+',
+         'from' => 1479769200,
+         'id' => 36,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              22,
+                              'months',
+                              11
+                            ]
+                          ],
+         'source_id' => 'http://www.partner-fuer-spandau.de/Weihnachtsmarkt-2014_683_0.html',
+         'text' => 'Spandauer Weihnachtsmarkt, vom 23.11.2016 bis 23.12.2016',
+         'type' => 'gesperrt',
+         'until' => 1482620399
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'data' => 'userdel	2 8055,12186 8089,12190 8214,12205
 userdel	2 8214,12205 8303,12216 8344,12221 8538,12245
@@ -26,6 +145,64 @@ userdel	2 8546,12279 8570,12302 8573,12325 8540,12420
          'text' => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt (bis 04.10.2016)',
          'type' => 'gesperrt',
          'until' => 1475618399
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       {
+         'data' => 'userdel	2::temp 9986,13412 10317,13248
+',
+         'from' => 1480028400,
+         'id' => 166,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              25,
+                              'months',
+                              11
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (26.11.2016 - 27.11.2016)',
+         'type' => 'gesperrt',
+         'until' => 1480287599
        },
        undef,
        undef,
@@ -254,46 +431,28 @@ userdel	2 8546,12279 8570,12302 8573,12325 8540,12420
        undef,
        undef,
        undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
+       {
+         'data' => '# sowieso schon mit q4 markiert, deshalb -> 2
+userdel	2::temp 5829,10964 5782,10884
+userdel	2::temp 5656,10876 5652,11004
+',
+         'from' => 1479596400,
+         'id' => 394,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              11
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/charlottenburg-wilmersdorf/971524-1323017-weihnachtsmarktanderged%C3%A4chtniskirche.html',
+         'text' => 'Weihnachtsmarkt an der Gedächtniskirche, vom 21. November 2016 bis 01. Januar 2017',
+         'type' => 'gesperrt',
+         'until' => 1483397999
+       },
        undef,
        undef,
        undef,
@@ -2176,8 +2335,49 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 11329,12497 11209,12430
+userdel	2::temp 11209,12430 11273,12301
+userdel	2::temp 11273,12301 11355,12331
+',
+         'from' => 1478214000,
+         'id' => 1988,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              4,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr. und Dircksenstr.), von Anfang November 2016 bis Ende Dezember 2016',
+         'type' => 'gesperrt',
+         'until' => 1482793199
+       },
+       {
+         'data' => '#: note "WeihnachtsZauber auf dem Gendarmenmarkt"
+userdel	2::temp 9536,11922 9666,11935
+userdel	2::temp 9524,12010 9656,12021
+',
+         'from' => 1479596400,
+         'id' => 1989,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              11
+                            ]
+                          ],
+         'source_id' => 'http://www.berlin.de/tickets/suche/detail.php?id=1090035',
+         'text' => 'Gendarmenmarkt: Weihnachtsmarkt vom 21.11.2016 bis 31.12.2016, Durchfahrt nicht möglich (Eintritt!)',
+         'type' => 'gesperrt',
+         'until' => 1483311599
+       },
        undef,
        undef,
        undef,
@@ -2310,7 +2510,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im September von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Oktober von 7.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3022,9 +3222,66 @@ userdel	2::night 17671,13132 17684,13133
        undef,
        undef,
        undef,
-       undef,
-       undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 9986,13412 10317,13248
+',
+         'from' => 1480633200,
+         'id' => 2515,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              2,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (03.12.2016 - 04.12.2016)',
+         'type' => 'gesperrt',
+         'until' => 1480892399
+       },
+       {
+         'data' => 'userdel	2::temp 9986,13412 10317,13248
+',
+         'from' => 1481238000,
+         'id' => 2516,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              9,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (10.12.2016 - 11.12.2016)',
+         'type' => 'gesperrt',
+         'until' => 1481497199
+       },
+       {
+         'data' => 'userdel	2::temp 9986,13412 10317,13248
+',
+         'from' => 1481842800,
+         'id' => 2517,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              16,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (17.12.2016 - 18.12.2016)',
+         'type' => 'gesperrt',
+         'until' => 1482101999
+       },
        undef,
        undef,
        undef,
@@ -3352,7 +3609,7 @@ userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.511369.php
 #: source_id: 2147340474
 #: XXX periodisch prüfen
-#: last_checked: 2016-09-30
+#: last_checked: 2016-10-02
 #: check_frequency: 14d
 	2::inwork 15261,10738 15272,10790
 	q4; 15279,10862 15272,10790 15388,10758 15433,10765
@@ -3424,31 +3681,42 @@ userdel	q4::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129 -6507,15007
        undef,
        undef,
        undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
-         'data' => 'userdel	2::inwork 37162,121204 38900,120605
+         'data' => 'userdel	q3::temp 11139,13008 11064,12910 10970,12822
+userdel	q4::temp 11064,12910 11134,12793
 ',
-         'from' => 1444543200,
-         'id' => 2748,
-         'source_id' => 'LS/721-E/15/102',
-         'text' => 'Uckerland: B104: Brückenneubau zwischen Milow und Wilsickow, Straße gesperrt, 12.10.2015 08:00 Uhr bis 30.09.2016 ',
-         'type' => 'gesperrt',
-         'until' => 1475272800
+         'from' => 1479596400,
+         'id' => 2763,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              11
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/1304487-1328132-weihnachtsmarktaufdemalexanderplatz.html',
+         'text' => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 21. November 2016 bis 26. Dezember 2016',
+         'type' => 'handicap',
+         'until' => 1482793199
        },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        undef,
        undef,
        undef,
@@ -3481,19 +3749,7 @@ userdel	q4::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129 -6507,15007
          'type' => 'handicap',
          'until' => 1484348400
        },
-       {
-         'data' => '#: note: hier zurzeit (2016-05-16) nicht gesperrt
-userdel	2::inwork -3529,13452 -3546,13503 -3556,13582 -3543,13691 -3503,13773
-#: note: hier zurzeit (2016-05-16) komplett gesperrt
-userdel	2::inwork -3503,13773 -3385,13937 -3345,13994
-',
-         'from' => 1460584800,
-         'id' => 2777,
-         'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.466174.php',
-         'text' => 'Schifffahrtsufer: Bauarbeiten zwischen Bullengraben und Stabholzgraben, komplett gesperrt, von Mitte April 2016 bis voraussichtlich Ende September 2016',
-         'type' => 'gesperrt',
-         'until' => 1475272799
-       },
+       undef,
        undef,
        {
          'data' => '#: note: am So 2016-04-17 gegen 15 Uhr offen
@@ -3554,18 +3810,7 @@ userdel	2::temp 8371,13399 8363,13402 8356,13404
          'until' => undef
        },
        undef,
-       {
-         'data' => 'userdel	q4::inwork 20302,1613 20369,1476 20347,1398
-userdel	q4::inwork 20580,1406 20405,1460 20369,1476
-userdel	q4::inwork 20381,1390 20405,1460
-',
-         'from' => 1464645600,
-         'id' => 2788,
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.480057.php',
-         'text' => 'Keltensteig, Germanenplatz, Teutonenstr.: Bauarbeiten, Juni 2016 bis September 2016',
-         'type' => 'handicap',
-         'until' => 1475272799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3612,16 +3857,7 @@ userdel	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
        },
        undef,
        undef,
-       {
-         'data' => 'userdel	2::inwork -2955,15129 -2929,15082 -2965,15053 -3008,14992 -3008,14910 -2998,14879 -3030,14844 -3066,14718
-',
-         'from' => 1467151200,
-         'id' => 2803,
-         'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.490082.php',
-         'text' => 'Wröhmännerpark: Bauarbeiten, Weg für Fußgänger und Radfahrer gesperrt, von Ende Juni 2016 bis voraussichtlich Ende September 2016',
-         'type' => 'gesperrt',
-         'until' => 1475272799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3703,16 +3939,7 @@ userdel	q4::inwork; 8642,7876 8731,7956
          'until' => 1478358000
        },
        undef,
-       {
-         'data' => '#: note: by fritz
-userdel	q3::inwork 9706,6802 9511,6797 9245,6791
-',
-         'from' => 1473704824,
-         'id' => 2828,
-         'text' => 'Borussiastraße/Fuhrmannstraße: Bauarbeiten, Fahrbahn gesperrt, bis 30.09.2016 ',
-         'type' => 'handicap',
-         'until' => 1475272800
-       },
+       undef,
        {
          'data' => '#: source_id: 2147340518
 userdel	q3::inwork; -795,13437 -729,13415 -346,13349 -309,13268 -264,13009

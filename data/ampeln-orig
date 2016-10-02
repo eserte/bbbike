@@ -1006,7 +1006,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 11884,18063
 	X 11950,18529
 	X 17003,19035
-	X 18205,18256
+	X 18196,18254
 	X 18738,16957
 	X 21889,16817
 	X 20575,11698
@@ -2007,7 +2007,7 @@ Industriebahn	B0 -2410,13746
 	X 8019,13650
 	F 12204,13719
 	X 19777,12949
-	F 18191,18557
+	F 18197,18557
 	X 19896,16611
 #: off: weekend (seen 2015-12-26 12:00)
 	X 19428,16692
@@ -2263,7 +2263,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	F 18177,-449
 	X 17855,1629
 	X 21789,5427
-	X 21088,9175
+	X 21088,9178
 	F 4650,18817
 #: note: Anforderungsampel, zumindest beim indirekten Linksabbiegen für Radfahrer Hauptstr. -> Hildegard-Marcusson-Str.; Kontaktschleifen in der Linksabbigerspur, die offenbar keine Radfahrer erfassen können
 	X 16004,10204
@@ -2836,16 +2836,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 20262,14255
 #: note: Anforderung für Radfahrer aus/in Richtung Kohlisstr.
 	X 23810,7946
-#: next_check_id: ZIMMERMANNSTRBR-2015 vvv
-#: XXX temporäre Ampeln vvv
-#: last_checked: 2016-06-19 vvv
-#: next_check: 2016-09-15 vvv
-	X::inwork 21164,9960
-	X::inwork 22129,9702
-#: next_check ^^^
-#: last_checked ^^^
-#: XXX ^^^
-#: next_check_id ^^^
+# REMOVED --- #: next_check_id: ZIMMERMANNSTRBR-2015 vvv --- #: XXX temporäre Ampeln vvv --- #: last_checked: 2016-06-19 vvv --- #: next_check: 2016-09-15 vvv ---	X::inwork 21164,9960 ---	X::inwork 22129,9702
 #: note: Anforderung für Radfahrer & Kontaktschleife
 	X 24801,11261
 #: off: weekend (gesehen: Sa 2015-09-12 nachmittags)

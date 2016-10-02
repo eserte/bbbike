@@ -295,11 +295,11 @@ EOF
      #   #file  => 'rixdorfer_weihnachtsmarkt.bbd', # XXX do not use anymore!!!
      #   data => '', # dummy
      # },
-     { from  => $isodate2epoch->("2015-11-25 00:00:00"), # 1353884400, # 2012-11-26 00:00, # 1290962654, # PERIODISCH! # früher: 1102672800, # 2004-12-10 11:00
-       until => $isodate2epoch->("2015-12-23 23:59:59"), # 1356303599, # 2012-12-23 23:59, # 1293145199, # PERIODISCH! # früher: 1102805999, # 2004-12-11 23:59
+     { from  => $isodate2epoch->("2016-11-22 00:00:00"), # 1353884400, # 2012-11-26 00:00, # 1290962654, # PERIODISCH! # früher: 1102672800, # 2004-12-10 11:00
+       until => $isodate2epoch->("2016-12-24 23:59:59"), # 1356303599, # 2012-12-23 23:59, # 1293145199, # PERIODISCH! # früher: 1102805999, # 2004-12-11 23:59
        periodic => 1,
-       recurrences => [['yearly', days => 26, months => 11]],
-       text  => 'Spandauer Weihnachtsmarkt, vom 26.11.2015 bis 23.12.2015',
+       recurrences => [['yearly', days => 22, months => 11]],
+       text  => 'Spandauer Weihnachtsmarkt, vom 23.11.2016 bis 23.12.2016',
        type  => 'gesperrt',
        source_id => 'http://www.partner-fuer-spandau.de/Weihnachtsmarkt-2014_683_0.html',
        data  => <<EOF,
@@ -1362,11 +1362,11 @@ EOF
 userdel	q4 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 13165,-34 13176,-161 13215,-570 13225,-681 13230,-712 13300,-1252
 EOF
      },
-     { from  => $isodate2epoch->("2015-11-27 00:00:00"), # weitere Termine unten
-       until => $isodate2epoch->("2015-11-29 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (28.11.2015 - 29.11.2015)',
+     { from  => $isodate2epoch->("2016-11-25 00:00:00"), # weitere Termine unten
+       until => $isodate2epoch->("2016-11-27 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (26.11.2016 - 27.11.2016)',
        periodic => 1,
-       recurrences => [['yearly', days => 28, months => 11]],
+       recurrences => [['yearly', days => 25, months => 11]],
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
@@ -1856,7 +1856,7 @@ EOF
        text  => 'Zimmermannstr. (Marzahn) Richtung Osten zwischen Köpenicker Str. und Lindenstr. Baustelle, Fahrtrichtung gesperrt (bis 30.05.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 21088,9175 21206,9130 21314,9083 21351,9066
+userdel	q4; 21088,9178 21205,9124 21312,9077 21349,9062
 EOF
      },
      { from  => 1123452000, # 2005-08-08 00:00
@@ -3357,11 +3357,11 @@ EOF
 userdel	1 -1664,-1720 -1715,-1767 -1921,-1931 -2049,-2165
 EOF
      },
-     { from  => $isodate2epoch->("2015-11-22 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-01-03 23:59:59"), # 1357513199, # 2013-01-06 23:59 # 1325458800, # 2012-01-02 00:00 # PERIODISCH!
+     { from  => $isodate2epoch->("2016-11-20 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-01-02 23:59:59"), # 1357513199, # 2013-01-06 23:59 # 1325458800, # 2012-01-02 00:00 # PERIODISCH!
        periodic => 1,
-       recurrences => [['yearly', days => 23, months => 11]],
-       text  => 'Weihnachtsmarkt an der Gedächtniskirche, vom 23. November 2015 bis 03. Januar 2016',
+       recurrences => [['yearly', days => 20, months => 11]],
+       text  => 'Weihnachtsmarkt an der Gedächtniskirche, vom 21. November 2016 bis 01. Januar 2017',
        type  => 'gesperrt',
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/charlottenburg-wilmersdorf/971524-1323017-weihnachtsmarktanderged%C3%A4chtniskirche.html',
        data  => <<EOF,
@@ -17039,12 +17039,12 @@ EOF
 userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998 24927,-87720
 EOF
      },
-     { from  => $isodate2epoch->("2015-11-06 00:00:00"), # Beginn am 23.11. (voraussichtlich), Aufbauzeit mindestens 17 Tage... (am Anfang ist nur die Fahrbahn der Voltairestr. gesperrt, später auch die Gehwege, die Schicklerstr. ist schon früher komplett gesperrt)
-       until => $isodate2epoch->("2015-12-30 23:59:59"), # Ende am 27.12. (voraussichtlich), Abbauzeit 3 Tage?...
+     { from  => $isodate2epoch->("2016-11-04 00:00:00"), # Aufbauzeit mindestens 17 Tage... (am Anfang ist nur die Fahrbahn der Voltairestr. gesperrt, später auch die Gehwege, die Schicklerstr. ist schon früher komplett gesperrt)
+       until => $isodate2epoch->("2016-12-26 23:59:59"), # Abbauzeit ca. 3 Tage?...
        periodic => 1,
-       recurrences => [['yearly', days => 6, months => 11]],
+       recurrences => [['yearly', days => 4, months => 11]],
        # außerdem ist der Nordteil der Dircksenstr. Einbahnstraße offen Richtung Süden, aber nicht relevant für das Routing
-       text  => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr. und Dircksenstr.), von Mitte November 2015 bis Ende Dezember 2015',
+       text  => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr. und Dircksenstr.), von Anfang November 2016 bis Ende Dezember 2016',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 11329,12497 11209,12430
@@ -17052,14 +17052,15 @@ userdel	2::temp 11209,12430 11273,12301
 userdel	2::temp 11273,12301 11355,12331
 EOF
      },
-     { from  => $isodate2epoch->("2015-11-22 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-01-01 23:59:59"), # 1 Tag (mindestens) für den Abbau
+     { from  => $isodate2epoch->("2016-11-20 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-01-01 23:59:59"), # 1 Tag (mindestens) für den Abbau
        periodic => 1,
-       recurrences => [['yearly', days => 23, months => 11]],
+       recurrences => [['yearly', days => 20, months => 11]],
        source_id => 'http://www.berlin.de/tickets/suche/detail.php?id=1090035',
-       text  => 'Gendarmenmarkt: Weihnachtsmarkt vom 23.11.2015 bis 31.12.2015, Durchfahrt nicht möglich (Eintritt!)',
+       text  => 'Gendarmenmarkt: Weihnachtsmarkt vom 21.11.2016 bis 31.12.2016, Durchfahrt nicht möglich (Eintritt!)',
        type  => 'gesperrt',
        data  => <<EOF,
+#: note "WeihnachtsZauber auf dem Gendarmenmarkt"
 userdel	2::temp 9536,11922 9666,11935
 userdel	2::temp 9524,12010 9656,12021
 EOF
@@ -18324,7 +18325,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20100720.1055.303592.html',
        data  => <<EOF,
-userdel	q4::inwork 22599,15105 22577,15109 22441,15118 22326,15116 22059,15153
+userdel	q4::inwork 22599,15105 22577,15109 22441,15118 22323,15119 22059,15153
 EOF
      },
      { from  => 1281128604, # 2010-08-08 00:00 1281218400
@@ -22321,33 +22322,33 @@ EOF
 userdel	2::inwork 12624,25570 12694,25696
 EOF
      },
-     { from  => $isodate2epoch->("2015-12-05 00:00:00"), # erster Termin oben
-       until => $isodate2epoch->("2015-12-06 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (5.12.2015 - 6.12.2015)',
+     { from  => $isodate2epoch->("2016-12-02 00:00:00"), # erster Termin oben
+       until => $isodate2epoch->("2016-12-04 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (03.12.2016 - 04.12.2016)',
        periodic => 1,
-       recurrences => [['yearly', days => 6, months => 12]],
+       recurrences => [['yearly', days => 2, months => 12]],
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
 userdel	2::temp 9986,13412 10317,13248
 EOF
      },
-     { from  => $isodate2epoch->("2015-12-11 00:00:00"),
-       until => $isodate2epoch->("2015-12-13 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (12.12.2015 - 13.12.2015)',
+     { from  => $isodate2epoch->("2016-12-09 00:00:00"),
+       until => $isodate2epoch->("2016-12-11 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (10.12.2016 - 11.12.2016)',
        periodic => 1,
-       recurrences => [['yearly', days => 13, months => 12]],
+       recurrences => [['yearly', days => 9, months => 12]],
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
 userdel	2::temp 9986,13412 10317,13248
 EOF
      },
-     { from  => $isodate2epoch->("2015-12-18 00:00:00"),
-       until => $isodate2epoch->("2015-12-20 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (19.12.2015 - 20.12.2015)',
+     { from  => $isodate2epoch->("2016-12-16 00:00:00"),
+       until => $isodate2epoch->("2016-12-18 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (17.12.2016 - 18.12.2016)',
        periodic => 1,
-       recurrences => [['yearly', days => 20, months => 12]],
+       recurrences => [['yearly', days => 16, months => 12]],
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
@@ -22452,8 +22453,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: ZIMMERMANNSTRBR-2015
 # REMOVED (keine Bauarbeiten mehr) --- #: next_check_id: ZIMMERMANNSTRBR-2014 --- #: last_checked: 2014-02-08 --- #: next_check: 2014-06-30 (bei VMZ entfernt!) --- #: add_fragezeichen: Sind die Bauarbeiten auf der Zimmermannstraßenbrücke und am Wuhlewanderweg mittlerweile beendet?
-# REMOVED userdel	2::inwork 21385,9049 21365,9059 21351,9066
-	2::inwork 21467,9236 21385,9049
+# REMOVED userdel	2::inwork 21383,9045 21363,9055 21349,9062
+	2::inwork 21467,9236 21383,9045
 EOF
      },
      { from  => $isodate2epoch->("2014-07-16 00:00:00"), # 1386257400, # 2013-12-05 16:30
@@ -24335,7 +24336,7 @@ EOF
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.511369.php
 #: source_id: 2147340474
 #: XXX periodisch prüfen
-#: last_checked: 2016-09-30
+#: last_checked: 2016-10-02
 #: check_frequency: 14d
 	2::inwork 15261,10738 15272,10790
 	q4; 15279,10862 15272,10790 15388,10758 15433,10765
@@ -24793,11 +24794,11 @@ EOF
 userdel	q3::inwork; 14218,13834 14261,13932 14298,14015 14358,14155 14464,14216 14658,14328 14667,14336 14721,14379 14754,14406 14990,14537 15066,14579
 EOF
      },
-     { from  => 1448146800, # 2015-11-22 00:00
-       until => 1451257199, # 2015-12-27 23:59
+     { from  => $isodate2epoch->("2016-11-20 00:00:00"), # 1448146800, # 2015-11-22 00:00
+       until => $isodate2epoch->("2016-12-26 23:59:59"), # )1451257199, # 2015-12-27 23:59
        periodic => 1,
-       recurrences => [['yearly', days => 23, months => 11]],
-       text  => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 23. November 2015 bis 27. Dezember 2015',
+       recurrences => [['yearly', days => 20, months => 11]],
+       text  => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 21. November 2016 bis 26. Dezember 2016',
        type  => 'handicap',
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/1304487-1328132-weihnachtsmarktaufdemalexanderplatz.html',
        data  => <<EOF,

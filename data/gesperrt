@@ -292,7 +292,7 @@ Paracelsusstr.	1 11599,19171 11549,19258 11543,19279 11575,19296 11613,19312 116
 Wormbacher Weg	1 3791,338 3782,397 3648,531
 Schwelmer Str.	1 3676,311 3569,469 3497,583
 Schˆppinger Str.	1 3691,566 3648,531 3569,469
-Arberstr.	1 19424,9502 19407,9232
+Arberstr.	1 19424,9502 19406,9236
 Hanne N¸te	1 13675,4855 13695,4859 13758,4926 13761,4992 13717,5175
 Parchimer Str.	1 22292,12198 22228,12274 22212,12349 22212,12422 22256,12489 22253,12570 22271,12623 22310,12637
 Ringbahnstr.	1 12934,6967 13072,7013
@@ -597,7 +597,7 @@ Boppstr.	1s 11785,9437 11560,9524
 S¸dstern	1 10713,9260 10625,9259 10564,9292
 S¸dstern	1 10564,9292 10639,9304 10670,9286 10713,9260
 Pitschener Str.	1s 21769,-432 21719,-397 21637,-381
-Dankratstr.	1s 21105,9538 20943,9543
+Dankratstr.	1s 21097,9538 20943,9543
 Helen-Ernst-Str., hinter der Mercedes-Benz Arena: bei Veranstaltungen gesperrt	2 13240,11279 13056,11329
 Bruno-Taut-Ring	1 13833,3665 13682,3718 13628,3781 13632,3875 13673,3915 13726,3928 13909,3845
 Havermannstr.	1s 13803,4932 13892,4955
@@ -1053,9 +1053,6 @@ an der BMW-Niederlassung -> Messedamm: Mittelstreifen, Autobahnausfahrt	3::igndi
 an der BMW-Niederlassung -> Bredtschneiderstr.: Mittelstreifen, Autobahnausfahrt	3::igndisp 2180,11318 2102,11307 1975,11291
 Straﬂenbahnhaltestelle	3nocross::ignrte 10908,17142 10917,17088 10927,17022
 Berliner Str. -> Berliner Str. (Pankow, Prenzlauer Berg) [zur Tiroler Str.]: Straﬂenbahnhaltestelle	3::igndisp 10927,17022 10917,17088 10891,17088
-Mittelstreifen	3nocross::ignrte 21831,13801 21853,13784 21918,13720
-Siegmarstr. -> Cecilienstr.: Mittelstreifen	3::igndisp 21870,13852 21853,13784 21918,13720
-Cecilienstr. -> Siegmarstr.: Mittelstreifen	3::igndisp 21831,13801 21853,13784 21870,13852
 Mittelstreifen	3nocross::ignrte 2767,7592 2750,7444 2744,7397
 Warnem¸nder Str. -> Hammersteinstr.: Mittelstreifen	3::igndisp 2744,7397 2750,7444 2719,7415
 Hammersteinstr. -> Warnem¸nder Str.: Mittelstreifen	3::igndisp 2719,7415 2750,7444 2767,7592
@@ -1314,8 +1311,6 @@ Mittelstreifen	3nocross::ignrte 4741,5309 4748,5357 4861,5581
 Schloﬂstr. -> Wrangelstr.: Mittelstreifen	3::igndisp 4741,5309 4748,5357 4640,5411
 Wrangelstr. -> Schloﬂstr.: Mittelstreifen	3::igndisp 4640,5411 4748,5357 4861,5581
 Mittelstreifen	3nocross::ignrte 21378,14490 21408,14591 21537,14932
-Fridolinweg -> Blumberger Damm: Mittelstreifen	3::igndisp 21450,14576 21408,14591 21378,14490
-Blumberger Damm -> Fridolinweg: Mittelstreifen	3::igndisp 21537,14932 21408,14591 21450,14576
 Mittelstreifen	3nocross::ignrte 21709,15808 21682,15673 21675,15636 21647,15496
 Blumberger Damm -> Hirschfelder Weg: Mittelstreifen	3::igndisp 21709,15808 21682,15673 21719,15666
 Hirschfelder Weg -> Blumberger Damm: Mittelstreifen	3::igndisp 21719,15666 21682,15673 21675,15636
@@ -2177,7 +2172,7 @@ Mittelstreifen	3nocross::ignrte 1884,4811 1747,4829 1479,4853
 Saargem¸nder Str. -> Garystr.: Mittelstreifen	3::igndisp 1884,4811 1747,4829 1736,4774
 Garystr. -> Saargem¸nder Str.: Mittelstreifen	3::igndisp 1736,4774 1747,4829 1479,4853
 Gel‰nder am Gehweg	3nocross::ignrte 7628,4521 7667,4549 7690,4563
-Am Bahndamm -> Attilastr.: Gel‰nder am Gehweg	3::igndisp 7692,4464 7667,4549 7628,4521
+Mariendorfer-Hafen-Weg -> Attilastr.: Gel‰nder am Gehweg	3::igndisp 7692,4464 7667,4549 7628,4521
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
@@ -2874,6 +2869,7 @@ Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 144
 Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,12669 6765,12680
 IGA 2017-Gel‰nde: Wege gesperrt	2 22455,14815 22417,14837 22380,14831 22331,14793 22254,14793 22199,14744 22164,14722 22108,14710 22090,14704 22071,14630 22051,14604 22026,14601 22012,14556 21985,14513 22026,14501 22061,14471 22172,14287 22414,14144 22462,14172 22639,14384 22679,14450 22670,14520
 IGA 2017-Gel‰nde: Wege gesperrt	2 22414,14144 22407,14111 22404,13984
+IGA 2017-Gel‰nde: Wege gesperrt	2 21408,14591 21450,14576 21822,14480 21925,14500 21948,14501 21985,14513
 Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 19015,3129 18892,3256 18689,3465
 Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 18689,3465 18892,3256 19015,3129
 Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch f¸r Fuﬂg‰nger	2::inwork 18892,3256 18953,3318
@@ -2886,8 +2882,6 @@ Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwo
 Rummelsburger Platz: zur H‰lfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 Frauenauer Str.: Straﬂe fertig, aber noch gesperrt	2::inwork 19663,9757 19858,9775
 Kirchdorfer Str.: Straﬂe fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9775 19871,9680
-Viechtacher Str.: Straﬂe fertig, aber noch gesperrt	2::inwork 19801,9680 19871,9680 19923,9682
-Teisnacher Str.: fertiggestellt, aber noch gesperrt	2::inwork 19871,9680 19859,9473
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14463,10212
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Durchfahrt verboten	2 8251,14337 8442,14456
