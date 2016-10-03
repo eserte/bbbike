@@ -7592,7 +7592,7 @@ EOF
        text  => 'Vom 20.03. bis voraussichtlich zum 30.04.2007 wird die Fahrbahndecke der Namslaustraße zwischen Berliner Straße und Sterkrader Straße erneuert. Während der Bauzeit wird die Namslaustraße in Richtung Berliner Straße als Einbahnstraße ausgewiesen. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 2698,19099 2585,19091 2460,19083 2098,19058
+userdel	1::inwork 2690,19099 2585,19091 2460,19083 2098,19058
 EOF
      },
      { from  => 1175292000, # 2007-03-31 00:00
@@ -18559,7 +18559,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20100920.1135.311271.html',
        data  => <<EOF,
-userdel	q4::inwork; 5006,22507 5142,22581 5260,22634 5368,22669
+userdel	q4::inwork; 5006,22507 5142,22581 5187,22601 5260,22634 5368,22669
 EOF
      },
      { from  => 1285855200, # 2010-09-30 16:00
@@ -23532,6 +23532,7 @@ EOF
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2016/pressemitteilung.510363.php
 #: XXX hier wird asphaltiert
+#: osm_watch: way id="33912929" version="12"
 #: last_checked: 2016-09-21
 #: next_check: 2016-10-07
 #: priority: #A
@@ -25374,8 +25375,8 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.504154.php',
        data  => <<EOF,
-userdel	q4::inwork 2380,20465 2473,20486 2595,20514
-userdel	q4::inwork 2473,20486 2448,20592
+userdel	q4::inwork 2377,20475 2466,20494 2595,20514
+userdel	q4::inwork 2466,20494 2448,20592
 EOF
      },
      { from  => 1470520800, # 2016-08-07 00:00

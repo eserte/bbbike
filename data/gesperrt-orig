@@ -86,9 +86,9 @@ Knoten Märkische/Landsberger Allee	1 19694,15141 19707,15206 19654,15219 19577,1
 Knoten Märkische/Landsberger Allee	1 19507,15095 19604,15227
 Alt-Blankenburg	1 13576,20849 13562,20913 13909,20928
 Alt-Blankenburg	1 13909,20928 13576,20849
-Seestr.	1 5049,14675 5246,14758 5311,14786 5440,14840
-Seestr.	1 5440,14840 5331,14735 5293,14699 5264,14671 5057,14607
-Waidmannsluster Damm	1 2144,20870 1843,21440 1870,21491 2195,20898
+Seestr.	1 5043,14671 5246,14758 5311,14786 5440,14840
+Seestr.	1 5440,14840 5331,14735 5293,14699 5264,14671 5051,14606
+Waidmannsluster Damm	1 2146,20887 1843,21440 1870,21491 2188,20910
 Flughafen Tegel	1 2819,16141 2757,16194 2713,16286 2756,16344 2832,16343 2863,16280 2819,16141
 Jakob-Kaiser-Platz	1 2795,14161 2811,14196 2831,14219 2857,14222 2896,14187 2892,14149 2860,14118 2825,14128 2795,14161
 Kurt-Schumacher-Damm (Süd)	1 2831,14219 2803,14288 2793,14374 2905,14754
@@ -618,11 +618,6 @@ Müggelbergplatz	1 23293,1697 23321,1678 23303,1650 23278,1668 23293,1697
 Ingridpfad	1 6359,2875 6304,2825 6182,2737
 Georgenstr. (Mitte)	1 9242,12652 9108,12635
 Georgenstr. (Mitte)	1 9117,12705 9242,12652
-#: by: Uwe Majewski
-#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3655 (Freigabe noch 2015)
-#: add_fragezeichen: Ist die Einbahnstraße mittlerweile für Radfahrer gegen die Fahrtrichtung frei?
-#: next_check: 2015-12-31
-Schulstr. (Tegel)	1 1953,20149 1794,20110
 Natalissteig	1 1200,14943 1223,14824 1226,14714
 Alt-Biesdorf	1 20375,11694 20435,11698 20575,11698 21108,11628
 Alt-Biesdorf	1 21108,11628 20963,11618 20633,11651 20549,11659 20375,11694
@@ -1133,6 +1128,7 @@ Röbeler Weg: Privatstraße, Durchfahrt verboten	2 24831,10730 24831,10772 24760,1
 Markgrafenstr.	1 9807,10788 9799,10846
 Markgrafenstr.	1 9799,10846 9834,10840
 Morgensternstr.	1 5212,2360 5229,2395
+Gotenburger Str.: Einfahrt verboten	1s:q3 9000,16803 8847,16870
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -1447,10 +1443,6 @@ Kaiser-Wilhelm-Str.: Mittelstreifen	3nocross 6996,3761 6957,3699 6780,3497
 Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3nocross 11329,12497 11340,12443 11355,12331
 Yorckstr.: Mittelstreifen	3nocross 8777,9601 8679,9544 8595,9495
 Klemkestr.: Mittelstreifen	3nocross 7434,18695 7492,18699 7520,18701
-#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4017 (ein querender Fußweg ... im Jahr 2015 angelegt)
-#: XXX wird die Überquerungsmöglichkeit auch für Radfahrer nutzbar sein?
-#: next_check: 2015-12-31
-Klemkestr.: Mittelstreifen	3nocross 7520,18701 7599,18705 7676,18713
 Berliner Allee: Straßenbahntrasse	3nocross 14619,16682 14608,16772 14558,16907
 #: by: jan (...matrix):
 #: confirmed_by: srt
@@ -1469,8 +1461,8 @@ Allee der Kosmonauten: Straßenbahntrasse	3nocross 20474,14442 20611,14445 20657,
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20944,14840 20980,14914 21018,14991 21099,15158 21163,15289
 Attilastr.: Mittelstreifen	3nocross 7410,4373 7450,4397 7482,4416
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20262,14255 20249,14143 20235,14017 20207,13778
-#: note: Luftbild vvv
 Am Nordgraben: Mittelstreifen	3nocross 5201,20103 5299,20104 5399,20106 5517,20120
+#: note: Luftbild vvv
 Attilastr.: Mittelstreifen	3nocross 7263,4281 7310,4308 7368,4342
 Edisonstr.: Straßenbahn	3nocross 18010,7133 17934,7029 17919,6978
 Falkenseer Chaussee: Mittelstreifen	3nocross -5039,15618 -5153,15658 -5370,15721 -5470,15750
@@ -2722,7 +2714,7 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3 9042,11839 8969,118
 # 
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
-#: last_checked: 2016-09-21
+#: last_checked: 2016-10-03
 #: next_check: 2017-09-02
 Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,14449 7561,14458 7426,14539 7368,14573
 # 
@@ -2765,11 +2757,9 @@ Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17082,7189 16954,70
 #: last_checked: 2016-07-23
 Alfonsstr.: Bauzäune	2::inwork 19027,1427 19034,1441 19061,1457
 # 
-#: last_checked: 2016-09-26
-#: check_frequency: 90d
-Sonntagstr./Ostkreuz: wegen Bauarbeiten gesperrt	2::inwork 14752,11041 14810,10977
+# REMOVED (komplett entfernt) --- #: last_checked: 2016-09-26 --- #: check_frequency: 90d --- Sonntagstr./Ostkreuz: wegen Bauarbeiten gesperrt	2::inwork 14752,11041 14810,10977
 # 
-#: last_checked: 2016-09-26
+#: last_checked: 2016-10-03
 Haasestr.: Bauarbeiten, keine Durchfahrt möglich	2::inwork 14328,11320 14286,11186
 # 
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 vvv --- #: last_checked: 2016-06-02 vvv --- #: check_frequency: 14d vvv --- Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12844,9351 12851,9309 12907,9073 --- Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12907,9073 12851,9309 12844,9351
@@ -2787,7 +2777,7 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,
 #: XXX Straße wird zurückgebaut
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.256386.php
 #: osm_watch: way id="309901369" version="4"
-#: last_checked: 2016-09-21
+#: last_checked: 2016-10-03
 #: check_frequency: 60d
 Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7741,14560 7518,14689
 # 
@@ -2990,8 +2980,7 @@ am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14463,10212
 #: by: http://www.rbb-online.de/politik/beitrag/2014/07/bnd-zentrale-berlin-verzoegerung-vollstaendiger-umzug-bis-2017.html
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7441
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/1767-2016-bav-zu-ds-2814-iv-durchwegung_scharnhorst-chaussestrasse_sb.pdf
-#: last_checked: 2016-09-21
-#: check_frequency: 60d
+#: last_checked: 2016-10-03
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Durchfahrt verboten	2 8251,14337 8442,14456
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
@@ -3056,7 +3045,7 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 #: XXX geplante Fertigstellung (als Autostraße) im Dezember 2013
 #: XXX wrote Mail about current status (2013-11-05), no response
 # REMOVED --- osm_watch: way id="183406331" version="3"
-#: last_checked: 2016-09-02
+#: last_checked: 2016-10-03
 #: check_frequency: 120d
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
@@ -3098,8 +3087,8 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: osm_watch: way id="23099023" version="9"
 #: osm_watch: way id="23099024" version="6"
 #: osm_watch: way id="103531998" version="2"
-#: last_checked: 2015-11-07
-#: check_frequency: 90d
+#: last_checked: 2016-10-03
+#: check_frequency: 150d
 Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603
 # 
 #: note: Baugelände
@@ -3136,10 +3125,11 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
+#: next_check_id: LOEWENBRUECKE-2018
 #: by: http://www.tagesspiegel.de/berlin/haengepartie-fuer-die-loewenbruecke/4572208.html
 #: note: früher bei osm, jetzt komplett entfernt: osm_watch: way id="22792488" version="5"
 #: last_checked: 2014-10-12
-#: check_frequency: 720d
+#: next_check: 2018-12-31
 Löwenbrücke: gesperrt	2:inwork 6406,11784 6452,11778
 # 
 #: last_checked: 2013-10-22

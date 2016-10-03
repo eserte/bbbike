@@ -789,28 +789,7 @@ userdel	2::temp 5656,10876 5652,11004
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.ms-event-agentur.com/seite22.html?date=20160903
-	2::temp 7006,9292 7022,9211 7044,9163 7107,9030
-	2::temp 6945,9142 7044,9163
-	2::temp 6975,8944 7107,9030 7308,9163
-',
-         'from' => 1475226000,
-         'id' => 731,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              30,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 01.10.2016 bis 02.10.2016',
-         'type' => 'gesperrt',
-         'until' => 1475445599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3439,6 +3418,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
        {
          'data' => '#: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2016/pressemitteilung.510363.php
 #: XXX hier wird asphaltiert
+#: osm_watch: way id="33912929" version="12"
 #: last_checked: 2016-09-21
 #: next_check: 2016-10-07
 #: priority: #A

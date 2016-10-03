@@ -67,9 +67,9 @@ Knoten Märkische/Landsberger Allee	1 19694,15141 19707,15206 19654,15219 19577,1
 Knoten Märkische/Landsberger Allee	1 19507,15095 19604,15227
 Alt-Blankenburg	1 13576,20849 13562,20913 13909,20928
 Alt-Blankenburg	1 13909,20928 13576,20849
-Seestr.	1 5049,14675 5246,14758 5311,14786 5440,14840
-Seestr.	1 5440,14840 5331,14735 5293,14699 5264,14671 5057,14607
-Waidmannsluster Damm	1 2144,20870 1843,21440 1870,21491 2195,20898
+Seestr.	1 5043,14671 5246,14758 5311,14786 5440,14840
+Seestr.	1 5440,14840 5331,14735 5293,14699 5264,14671 5051,14606
+Waidmannsluster Damm	1 2146,20887 1843,21440 1870,21491 2188,20910
 Flughafen Tegel	1 2819,16141 2757,16194 2713,16286 2756,16344 2832,16343 2863,16280 2819,16141
 Jakob-Kaiser-Platz	1 2795,14161 2811,14196 2831,14219 2857,14222 2896,14187 2892,14149 2860,14118 2825,14128 2795,14161
 Kurt-Schumacher-Damm (Süd)	1 2831,14219 2803,14288 2793,14374 2905,14754
@@ -456,7 +456,6 @@ Müggelbergplatz	1 23293,1697 23321,1678 23303,1650 23278,1668 23293,1697
 Ingridpfad	1 6359,2875 6304,2825 6182,2737
 Georgenstr. (Mitte)	1 9242,12652 9108,12635
 Georgenstr. (Mitte)	1 9117,12705 9242,12652
-Schulstr. (Tegel)	1 1953,20149 1794,20110
 Natalissteig	1 1200,14943 1223,14824 1226,14714
 Alt-Biesdorf	1 20375,11694 20435,11698 20575,11698 21108,11628
 Alt-Biesdorf	1 21108,11628 20963,11618 20633,11651 20549,11659 20375,11694
@@ -825,6 +824,7 @@ Röbeler Weg: Privatstraße, Durchfahrt verboten	2 24831,10730 24831,10772 24760,1
 Markgrafenstr.	1 9807,10788 9799,10846
 Markgrafenstr.	1 9799,10846 9834,10840
 Morgensternstr.	1 5212,2360 5229,2395
+Gotenburger Str.: Einfahrt verboten	1s 9000,16803 8847,16870
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -1154,13 +1154,6 @@ Mittelstreifen	3nocross::ignrte 8777,9601 8679,9544 8595,9495
 Yorckstr. -> Hagelberger Str.: Mittelstreifen	3::igndisp 8777,9601 8679,9544 8774,9534
 Mittelstreifen	3nocross::ignrte 7434,18695 7492,18699 7520,18701
 Klemkestr. -> Am Stand: Mittelstreifen	3::igndisp 7434,18695 7492,18699 7484,18778
-Mittelstreifen	3nocross::ignrte 7520,18701 7599,18705 7676,18713
-Klemkestr. -> Klemkepark: Mittelstreifen	3::igndisp 7520,18701 7599,18705 7588,18761
-Klemkestr. -> Armbrustweg: Mittelstreifen	3::igndisp 7676,18713 7599,18705 7620,18615
-Klemkepark -> Klemkestr.: Mittelstreifen	3::igndisp 7588,18761 7599,18705 7676,18713
-Klemkepark -> Armbrustweg: Mittelstreifen	3::igndisp 7588,18761 7599,18705 7620,18615
-Armbrustweg -> Klemkestr.: Mittelstreifen	3::igndisp 7620,18615 7599,18705 7520,18701
-Armbrustweg -> Klemkepark: Mittelstreifen	3::igndisp 7620,18615 7599,18705 7588,18761
 Straßenbahntrasse	3nocross::ignrte 14619,16682 14608,16772 14558,16907
 Berliner Allee -> Caseler Str.: Straßenbahntrasse	3::igndisp 14558,16907 14608,16772 14700,16790
 Caseler Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14700,16790 14608,16772 14619,16682
@@ -2849,7 +2842,6 @@ Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s 11512,10105 11616,10288
 Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s 11671,10402 11616,10288
 Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17082,7189 16954,7096 16720,6845
 Alfonsstr.: Bauzäune	2::inwork 19027,1427 19034,1441 19061,1457
-Sonntagstr./Ostkreuz: wegen Bauarbeiten gesperrt	2::inwork 14752,11041 14810,10977
 Haasestr.: Bauarbeiten, keine Durchfahrt möglich	2::inwork 14328,11320 14286,11186
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,9200 12548,9167
 Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7741,14560 7518,14689

@@ -25,7 +25,7 @@ Straße der Pariser Kommune: Wasserrohrbruch, Fahrbahn unter der Bahnbrücke gespe
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2016-09-26 vvv
+#: last_checked: 2016-10-03 vvv
 Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
 # REMOVED --- Revaler Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14357,11148 14286,11186
 # REMOVED (zurzeit keine Behinderungen mehr) --- Revaler Str.: Bauarbeiten, evtl. Ausweichen auf Gehweg nötig	q2::inwork 14211,11229 14286,11186
@@ -622,7 +622,7 @@ Volksparksteg: kombinierter Rad- und Fußweg	q1 5531,8458 5417,8519
 Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5465,8511 5417,8519 5347,8562
 #: XXX_prog BS (Bordstein an der Stülerstr.; ansonsten muss man wohl auch über Gras schieben, deshalb kann man trotzdem die q4 beibehalten)
 (zur Thomas-Dehler-Str.): Fußgänger, Bordstein	q4 6657,11467 6716,11439
-# REMOVED (?) --- #: by: ADFC-Karte --- Ernststr.: Fußgänger	q2 2488,19520 2553,19524 2700,19527
+# REMOVED (?) --- #: by: ADFC-Karte --- Ernststr.: Fußgänger	q2 2488,19520 2553,19524 2689,19544
 (S-Bahnunterführung Wartenberg): Fußgänger	q1 16939,18652 16998,18695
 (S-Bahnunterführung Wartenberg): Rampe	q3 16998,18695 17024,18674 17008,18701
 (S-Bahnunterführung Wartenberg): Fußgänger	q2 17008,18701 17068,18736
@@ -682,7 +682,7 @@ Goerdelersteg: enge wendelförmige Rampen	q3 3663,14137 3634,14187 3625,14230 360
 Goerdelersteg: enge wendelförmige Rampen	q3 3655,14237 3610,14219 3625,14230
 # REMOVED (by Monika W-J: "gut ausgebauter Radweg seit Sommer 2011") --- Goerdelerdamm: enger Zweirichtungsradweg	q1 3595,14267 3707,14303 4676,14534
 Schneckenbrücke: Rampe	q3 2012,3356 2009,3362 1980,3409 1977,3414
-Radweg eng und bewachsen	q1 5057,14607 5264,14671 5293,14699 5331,14735 5440,14840
+Radweg eng und bewachsen	q1 5051,14606 5264,14671 5293,14699 5331,14735 5440,14840
 zum Tunnel S-Bhf. Grunewald: Fußgänger	q1 693,9129 731,9103
 Tunnel S-Bhf. Grunewald: Fußgänger, Radfahren nicht erlaubt, ggfs. absteigen	q3 731,9103 884,8954
 enge Kurven	q2 33531,2772 33419,2765 33406,2738
@@ -887,13 +887,13 @@ Pankeweg: Fußgänger	q1 8303,15298 8260,15226 8266,15134
 Uferweg am Tegeler Hafen: Fußgänger	q1 1259,20303 1349,20345 1534,20421 1572,20412 1610,20385 1655,20388 1756,20405 1858,20431 1863,20478
 (Uferweg am Tegeler Hafen - Berliner Str.): Fußgänger	q1 1863,20478 1929,20501
 # REMOVED --- Uferweg am Tegeler Hafen: Fußgänger	q1 1863,20478 1826,20492 1761,20539
-(Berliner Str. - Tegeler Hafen): Fußgänger	q1 1872,20683 1741,20571
-(Tegeler Hafen - An der Mühle): Fußgänger, teilweise eng	q2 1756,20405 1736,20441 1733,20470 1753,20511 1761,20539 1741,20571 1721,20603 1697,20623 1687,20645 1668,20670 1630,20731
+(Berliner Str. - Tegeler Hafen): Fußgänger	q1 1872,20683 1741,20566
+(Tegeler Hafen - An der Mühle): Fußgänger, teilweise eng	q2 1756,20405 1736,20441 1733,20470 1753,20511 1761,20539 1741,20566 1721,20603 1697,20623 1687,20645 1668,20670 1630,20731
 (Brücke über den Tegeler Fließ): eng, Fußgänger	q3 2371,21524 2352,21559
 Egidysteg: eng, Fußgänger	q3 3094,22216 3134,22153
 (Egidysteg - Mühlenfeldstr.): Fußgänger	q1 3118,22294 3094,22233 3094,22216
 (Weg am Tegeler Fließ): Fußgänger	q1 3772,22482 3715,22399 3674,22396 3631,22417 3556,22404 3498,22333 3390,22264 3355,22230 3271,22321
-(Tegeler Fließ - Mühlenfeldstr.): Fußgänger	q1 3740,22520 3772,22482
+(Tegeler Fließ - Mühlenfeldstr.): Fußgänger	q1 3740,22520 3758,22511 3772,22482
 (Weg am Tegeler Fließ): Fußgänger, unterhalb der S-Bahnbrücke eng	q2 4222,22854 4176,22764 4117,22722 4106,22731 4022,22691
 (Weg am Tegeler Fließ): Fußgänger	q1 5621,23966 5409,23816 5350,23717 5316,23661 5214,23420 5242,23156 5232,23139 5206,23103 5100,23045 5037,23036 4993,23020 4944,22978 4876,22955 4824,22907 4750,22915 4697,22901 4613,22928
 (Weg am Tegeler Fließ): Fußgänger	q1 4596,22955 4543,22964 4459,22931 4407,22897 4332,22916 4309,22922 4158,22896
@@ -1090,7 +1090,7 @@ Uferweg: Fußgänger, Biergarten	q3 3747,12679 3862,12675
 Uferweg: Fußgänger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
 (Neues Ufer - Kaiserin-Augusta-Allee): Fußgänger	q1 4456,12918 4514,12936 4581,13066 4576,13115 4547,13139 4561,13244
 # REMOVED (keine Fahrbahn mehr, nur der obere Uferweg) --- Bundesratufer: Fußgänger	q4 5938,12848 5922,12765
-Sonntagstr.: Richtung S-Bahnhof viele Fußgänger	q3 14845,10954 14810,10977 14752,11041
+# REMOVED --- Sonntagstr.: Richtung S-Bahnhof viele Fußgänger	q3 14845,10954 14810,10977 14752,11041
 (provisorischer Zugang zum Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fußgänger	q3 14712,11039 14727,11005 14810,10977
 #: XXX_prog: für Anhänger relevant (q1 oder so)
 Bouchéstr.: Bodenschwellen	q0 13489,9456 13357,9313
@@ -1133,7 +1133,10 @@ Oleanderstr.: Fußgänger, Bordsteine	q2 14271,14024 14298,14015
 Pankgrafenstr. (Pankow): Fußgänger, ggfs. schieben	q2 10470,18402 10502,18338
 #: by: Susanne Grittner (sort-of) vvv
 Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 3585,16252 3587,16219 3546,16143 3518,16102 3490,16083 3358,15794 3299,15668 3282,15632 3290,15604 3328,15595 3335,15617 3316,15641 3301,15631 3280,15543 3242,15523 3221,15498 3162,15314 3045,15044 2963,14752
-Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 2905,14754 2934,14852 3000,15048 3106,15384 3105,15487 3140,15503 3160,15603 3183,15599 3249,15654 3310,15790 3398,16000 3564,16294
+Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 2905,14754 2934,14852
+# REMOVED (hier breit genug) --- Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 2934,14852 3000,15048 3106,15384 3105,15487
+Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 3105,15487 3140,15503 3160,15603 3183,15599 3249,15654 3310,15790
+# REMOVED (hier breit genug) --- Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 3310,15790 3398,16000 3564,16294
 #: by: ^^^
 Hülsenplatz: Fußgänger, Bordsteine	q3 18512,10744 18545,10752 18542,10762 18538,10774 18506,10769
 Hülsenplatz: Fußgänger, Bordsteine	q3 18542,10762 18570,10768
@@ -1454,7 +1457,7 @@ Papendickstr.: enge Straße	q0- 17071,16174 17073,16222 17135,16334 17170,16365
 Am Wiesenweg: Fußgänger	q1 21977,988 21857,989 21708,937 21685,916
 Grasmückenweg: Fußgänger, eng	q2 14877,3475 14822,3409
 (Scharnweberstr. - Berenhorststr.): Fußgänger	q1 4801,17623 4816,17712
-Ernststr.: wendelförmige Rampen	q4 2821,19559 2780,19548 2700,19527
+Ernststr.: wendelförmige Rampen	q4 2821,19559 2780,19548 2714,19529 2689,19544
 An der Kremmener Bahn: Fußgänger	q1 -304,22578 -515,22801 -700,22998
 Straße 366: Bodenschwellen	q2 -3145,22004 -3281,22011
 Verlängerte Fährstr.: enge Straße	q1 -3419,22102 -3412,22058 -3407,22028 -3402,21994 -3397,21946 -3394,21915 -3367,21860
@@ -2373,6 +2376,11 @@ Schwäbische Str.: einige Fußgänger	q1 6529,9738 6502,9782
 (Kommandantenstr. - Oranienstr.): einige Fußgänger	q3 10593,11120 10633,11051
 #: XXX_prog BS ohne Bordstein q2
 zur Keibelstr.: Fußgänger, Bordstein	q3 10976,13229 11045,13183
+#: XXX_prog BS zu beiden Seiten, ansonsten q2
+Armbrustweg: einige Fußgänger, Bordsteine	q3 7620,18615 7635,18570
+#: XXX_prog BS zu beiden Seiten, ansonsten q1
+(Illerzeile - Gorkistr.): einige Fußgänger, Bordsteine	q3 2544,20304 2530,20345
+Maienwerderweg: einige Fußgänger, Hunde	q1+ 2731,18729 2723,18675 2622,18546 2440,18440 2284,18310 2243,18274 2226,18228 1547,17726 1270,17566 660,17352 130,17187
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

@@ -252,8 +252,8 @@ In den Gärten - Marienfelder Chaussee: 100m auf der linken Straßenseite vorfahre
 Marienfelder Chaussee - In den Gärten: bereits am Quarzweg die Straßenseite wechseln	PI; 11476,1398 11765,1522 11744,1577 11724,1629
 Lange Brücke - Freundschaftsinsel: wegen der Tramtrasse bereits vor der Langen Brücke die Straßenseite wechseln	PI; -12758,-1654 -12730,-1681 -12655,-1714 -12567,-1817 -12396,-1681
 Freundschaftsinsel - Potsdam Hbf: wegen der Tramtrasse zunächst auf dem Gehweg bis zur nächsten Ampel vorfahren	CP; -12396,-1681 -12567,-1817 -12493,-1896
-Zum Barnimer Dörferweg: am Waidmannsluster Damm auf den Gehweg fahren, nicht auf die Radspur fahren (wegen eines nicht überwindbaren Geländers)	PI; 1858,20740 1808,20817 1787,20836 1750,20868 1712,20907 1819,21116
-Barnimer Dörferweg - Karolinenstr.: wegen des Geländers zunächst auf dem Gehweg fahren	CP; 1819,21116 1712,20907 1750,20868 1787,20836 1808,20817 1858,20740
+Zum Barnimer Dörferweg: am Waidmannsluster Damm auf den Gehweg fahren, nicht auf die Radspur fahren (wegen eines nicht überwindbaren Geländers)	PI; 1840,20761 1808,20817 1787,20836 1750,20868 1712,20907 1819,21116
+Barnimer Dörferweg - Karolinenstr.: wegen des Geländers zunächst auf dem Gehweg fahren	CP; 1819,21116 1712,20907 1750,20868 1787,20836 1808,20817 1840,20761
 # REMOVED (man kann beide Brücken nehmen) --- Tegeler Hafen: zweite Brücke zur Insel nehmen	CP; 1655,20388 1756,20405 1736,20441
 Clayallee - Flanaganstr.: Fußweg vor dem McDrive nehmen	CP; 1746,5922 1736,5850 1614,5738
 Flanaganstr. - Clayallee: Fußweg am McDrive nehmen, bis zur Ampel an der Königin-Luise-Str. den linken Gehweg benutzen	PI; 1614,5738 1736,5850 1746,5922
@@ -274,8 +274,7 @@ Zossener Str. - Mittenwalder Str.: bereits an der Kreuzung Alte Hellersdorfer St
 Staakener Str. - Magistratsweg: linken Geh/Radweg benutzen und nach der Unterführung die Straße unterqueren	CP; -6458,14292 -6465,14291 -6470,14247
 Klosterbuschweg - Staakener Str.: frühzeitig auf den linken Geh/Radweg wechseln	PI; -6454,14392 -6461,14323 -6465,14291 -6458,14292
 Ellerbeker Str. - Behmstr.: links entlang des Sportplatzes fahren	CP2; 9727,16188 9754,16183
-#: XXX_prog: CP without ";" is uncommon, this is the only occurence here. Inteded?
-Am Hohenzollernkanal: keine Unterquerung der Bernauer Brücke möglich	CP 44,15897 -196,16060 -224,16095 -238,16095 -822,16535 -910,16608
+# REMOVED (muss man nicht erwähnen) --- #: XXX_prog: CP without ";" is uncommon, this is the only occurence here. Inteded? --- Am Hohenzollernkanal: keine Unterquerung der Bernauer Brücke möglich	CP 44,15897 -196,16060 -224,16095 -238,16095 -822,16535 -910,16608
 #: by: Isabel [AM] vvv
 Roonstr./Flotowstr.: Hindenburgdamm kann über Fußgängerfurt gequert werden	CP; 4265,4484 4515,4581 4651,4638
 Flotowstr./Roonstr.: Hindenburgdamm kann über Fußgängerfurt gequert werden	CP; 4651,4638 4515,4581 4265,4484

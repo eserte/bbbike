@@ -1842,3 +1842,11 @@ Siegmarstr. -> Cecilienstr.: Mittelstreifen	3::igndisp 21870,13852 21853,13784 2
 Cecilienstr. -> Siegmarstr.: Mittelstreifen	3::igndisp 21831,13801 21853,13784 21870,13852
 Zachenberger Str.: Poller	3 19889,9400 19824,9405 19780,9409
 Zachenberger Str.: Poller	3 19780,9409 19824,9405 19889,9400
+Mittelstreifen	3nocross::ignrte 7520,18701 7599,18705 7676,18713
+Klemkestr. -> Klemkepark: Mittelstreifen	3::igndisp 7520,18701 7599,18705 7588,18761
+Klemkestr. -> Armbrustweg: Mittelstreifen	3::igndisp 7676,18713 7599,18705 7620,18615
+Klemkepark -> Klemkestr.: Mittelstreifen	3::igndisp 7588,18761 7599,18705 7676,18713
+Klemkepark -> Armbrustweg: Mittelstreifen	3::igndisp 7588,18761 7599,18705 7620,18615
+Armbrustweg -> Klemkestr.: Mittelstreifen	3::igndisp 7620,18615 7599,18705 7520,18701
+Armbrustweg -> Klemkepark: Mittelstreifen	3::igndisp 7620,18615 7599,18705 7588,18761
+Schulstr. (Tegel)	1 1953,20149 1794,20110

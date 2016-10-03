@@ -257,7 +257,7 @@ F¸rther Str.: Gehweg	q2 5764,10322 5808,10284
 Goerdelersteg: enge wendelfˆrmige Rampen	q3 3663,14137 3634,14187 3625,14230 3601,14284 3595,14267
 Goerdelersteg: enge wendelfˆrmige Rampen	q3 3655,14237 3610,14219 3625,14230
 Schneckenbr¸cke: Rampe	q3 2012,3356 2009,3362 1980,3409 1977,3414
-Radweg eng und bewachsen	q1 5057,14607 5264,14671 5293,14699 5331,14735 5440,14840
+Radweg eng und bewachsen	q1 5051,14606 5264,14671 5293,14699 5331,14735 5440,14840
 zum Tunnel S-Bhf. Grunewald: Fuﬂg‰nger	q1 693,9129 731,9103
 Tunnel S-Bhf. Grunewald: Fuﬂg‰nger, Radfahren nicht erlaubt, ggfs. absteigen	q3 731,9103 884,8954
 enge Kurven	q2 33531,2772 33419,2765 33406,2738
@@ -402,13 +402,13 @@ Pankeweg: Fuﬂg‰nger	q1 8721,16689 8804,16881 8866,17075
 Pankeweg: Fuﬂg‰nger	q1 8303,15298 8260,15226 8266,15134
 Uferweg am Tegeler Hafen: Fuﬂg‰nger	q1 1259,20303 1349,20345 1534,20421 1572,20412 1610,20385 1655,20388 1756,20405 1858,20431 1863,20478
 (Uferweg am Tegeler Hafen - Berliner Str.): Fuﬂg‰nger	q1 1863,20478 1929,20501
-(Berliner Str. - Tegeler Hafen): Fuﬂg‰nger	q1 1872,20683 1741,20571
-(Tegeler Hafen - An der M¸hle): Fuﬂg‰nger, teilweise eng	q2 1756,20405 1736,20441 1733,20470 1753,20511 1761,20539 1741,20571 1721,20603 1697,20623 1687,20645 1668,20670 1630,20731
+(Berliner Str. - Tegeler Hafen): Fuﬂg‰nger	q1 1872,20683 1741,20566
+(Tegeler Hafen - An der M¸hle): Fuﬂg‰nger, teilweise eng	q2 1756,20405 1736,20441 1733,20470 1753,20511 1761,20539 1741,20566 1721,20603 1697,20623 1687,20645 1668,20670 1630,20731
 (Br¸cke ¸ber den Tegeler Flieﬂ): eng, Fuﬂg‰nger	q3 2371,21524 2352,21559
 Egidysteg: eng, Fuﬂg‰nger	q3 3094,22216 3134,22153
 (Egidysteg - M¸hlenfeldstr.): Fuﬂg‰nger	q1 3118,22294 3094,22233 3094,22216
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 3772,22482 3715,22399 3674,22396 3631,22417 3556,22404 3498,22333 3390,22264 3355,22230 3271,22321
-(Tegeler Flieﬂ - M¸hlenfeldstr.): Fuﬂg‰nger	q1 3740,22520 3772,22482
+(Tegeler Flieﬂ - M¸hlenfeldstr.): Fuﬂg‰nger	q1 3740,22520 3758,22511 3772,22482
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger, unterhalb der S-Bahnbr¸cke eng	q2 4222,22854 4176,22764 4117,22722 4106,22731 4022,22691
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 5621,23966 5409,23816 5350,23717 5316,23661 5214,23420 5242,23156 5232,23139 5206,23103 5100,23045 5037,23036 4993,23020 4944,22978 4876,22955 4824,22907 4750,22915 4697,22901 4613,22928
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 4596,22955 4543,22964 4459,22931 4407,22897 4332,22916 4309,22922 4158,22896
@@ -569,7 +569,6 @@ Uferweg: Fuﬂg‰nger	q1 3559,12793 3641,12753 3747,12679
 Uferweg: Fuﬂg‰nger, Biergarten	q3 3747,12679 3862,12675
 Uferweg: Fuﬂg‰nger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
 (Neues Ufer - Kaiserin-Augusta-Allee): Fuﬂg‰nger	q1 4456,12918 4514,12936 4581,13066 4576,13115 4547,13139 4561,13244
-Sonntagstr.: Richtung S-Bahnhof viele Fuﬂg‰nger	q3 14845,10954 14810,10977 14752,11041
 (provisorischer Zugang zum Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fuﬂg‰nger	q3 14712,11039 14727,11005 14810,10977
 BouchÈstr.: Bodenschwellen	q0 13489,9456 13357,9313
 Radenzer Str.: zwei Bodenschwellen	q1 16220,6277 16304,6358
@@ -597,7 +596,8 @@ s¸dliches Spreeufer: besonders an Wochenenden tags¸ber sehr viele Fuﬂg‰nger	q2 7
 Oleanderstr.: Fuﬂg‰nger, Bordsteine	q2 14271,14024 14298,14015
 Pankgrafenstr. (Pankow): Fuﬂg‰nger, ggfs. schieben	q2 10470,18402 10502,18338
 Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 3585,16252 3587,16219 3546,16143 3518,16102 3490,16083 3358,15794 3299,15668 3282,15632 3290,15604 3328,15595 3335,15617 3316,15641 3301,15631 3280,15543 3242,15523 3221,15498 3162,15314 3045,15044 2963,14752
-Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 2905,14754 2934,14852 3000,15048 3106,15384 3105,15487 3140,15503 3160,15603 3183,15599 3249,15654 3310,15790 3398,16000 3564,16294
+Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 2905,14754 2934,14852
+Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 3105,15487 3140,15503 3160,15603 3183,15599 3249,15654 3310,15790
 H¸lsenplatz: Fuﬂg‰nger, Bordsteine	q3 18512,10744 18545,10752 18542,10762 18538,10774 18506,10769
 H¸lsenplatz: Fuﬂg‰nger, Bordsteine	q3 18542,10762 18570,10768
 Viktoria-Luise-Platz: Fuﬂg‰ngerzone, Radfahren verboten	q4 6142,9934 6224,9980
@@ -857,7 +857,7 @@ Papendickstr.: enge Straﬂe	q0 17071,16174 17073,16222 17135,16334 17170,16365
 Am Wiesenweg: Fuﬂg‰nger	q1 21977,988 21857,989 21708,937 21685,916
 Grasm¸ckenweg: Fuﬂg‰nger, eng	q2 14877,3475 14822,3409
 (Scharnweberstr. - Berenhorststr.): Fuﬂg‰nger	q1 4801,17623 4816,17712
-Ernststr.: wendelfˆrmige Rampen	q4 2821,19559 2780,19548 2700,19527
+Ernststr.: wendelfˆrmige Rampen	q4 2821,19559 2780,19548 2714,19529 2689,19544
 An der Kremmener Bahn: Fuﬂg‰nger	q1 -304,22578 -515,22801 -700,22998
 Straﬂe 366: Bodenschwellen	q2 -3145,22004 -3281,22011
 Verl‰ngerte F‰hrstr.: enge Straﬂe	q1 -3419,22102 -3412,22058 -3407,22028 -3402,21994 -3397,21946 -3394,21915 -3367,21860
@@ -1571,6 +1571,9 @@ an der Kieler Br¸cke: einige Fuﬂg‰nger	q1 7804,14445 7780,14431 7740,14409 7661,
 Schw‰bische Str.: einige Fuﬂg‰nger	q1 6529,9738 6502,9782
 (Kommandantenstr. - Oranienstr.): einige Fuﬂg‰nger	q3 10593,11120 10633,11051
 zur Keibelstr.: Fuﬂg‰nger, Bordstein	q3 10976,13229 11045,13183
+Armbrustweg: einige Fuﬂg‰nger, Bordsteine	q3 7620,18615 7635,18570
+(Illerzeile - Gorkistr.): einige Fuﬂg‰nger, Bordsteine	q3 2544,20304 2530,20345
+Maienwerderweg: einige Fuﬂg‰nger, Hunde	q1 2731,18729 2723,18675 2622,18546 2440,18440 2284,18310 2243,18274 2226,18228 1547,17726 1270,17566 660,17352 130,17187
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
@@ -2461,6 +2464,7 @@ Wartenbergstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 15
 Am Lehnshof: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 4291,22986 4264,22992 4202,23034
 Gartenstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 720,2718 835,2715
 Belﬂstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 7899,2391 7983,2348 7987,2337
+Gotenburger Str.: Einfahrt verboten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 9000,16803 8847,16870
 Am Krusenick: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22751,4970 22652,4966 22667,4912 22705,4874
 Josef-Nawrocki-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25802,4681 25802,4823
 Josef-Nawrocki-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25695,4714 25554,4758 25552,4829
