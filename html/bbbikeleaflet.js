@@ -97,6 +97,14 @@ var inworkIcon = L.icon({
     iconAnchor: new L.Point(6,6)
 });
 
+var xmasIcon = L.icon({
+    iconUrl: bbbikeImagesRoot + "/xmas.png",
+    shadowUrl: bbbikeImagesRoot + "/px_1t.gif",
+    iconSize: new L.Point(15,16),
+    shadowSize: new L.Point(1,1),
+    iconAnchor: new L.Point(6,6)
+});
+
 var startMarker, goalMarker, loadingMarker;
 
 var id2marker;
@@ -587,7 +595,7 @@ function doLeaflet() {
 	}
 	var l = L.geoJson(initialGeojson, {
             style: function (feature) {
-		if (feature.properties.cat.match(/^(1|2|3|q\d)::(night|temp|inwork);?/)) {
+		if (feature.properties.cat.match(/^(1|2|3|q\d)::(night|temp|inwork|xmas);?/)) {
                     var attrib = RegExp.$2;
                     var latLngs = L.GeoJSON.coordsToLatLngs(feature.geometry.coordinates);
                     var centerLatLng = getLineStringCenter(latLngs);
@@ -598,6 +606,8 @@ function doLeaflet() {
 			l = L.marker(centerLatLng, { icon: clockIcon });
                     } else if (attrib == 'inwork') {
 			l = L.marker(centerLatLng, { icon: inworkIcon });
+                    } else if (attrib == 'xmas') {
+			l = L.marker(centerLatLng, { icon: xmasIcon });
                     }
                     l.addTo(map);
                     l.bindPopup(feature.properties.name);

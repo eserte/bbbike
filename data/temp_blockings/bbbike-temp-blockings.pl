@@ -303,16 +303,16 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.partner-fuer-spandau.de/Weihnachtsmarkt-2014_683_0.html',
        data  => <<EOF,
-userdel	2::temp -3275,14407 -3231,14383 -3204,14368 -3155,14340
-userdel	2::temp -3275,14407 -3338,14333
-userdel	2::temp -3150,14631 -3185,14556 -3205,14512 -3228,14468 -3275,14407
-userdel	2::temp -3275,14407 -3350,14446 -3393,14470 -3410,14479 -3440,14498 -3481,14523
-userdel	2::temp -3227,14260 -3155,14340
-userdel	2::temp -3227,14260 -3293,14304 -3338,14333
-userdel	2::temp -3552,14082 -3457,14189 -3409,14241 -3338,14333
-userdel	2::temp -3039,14522 -3054,14498 -3089,14440 -3110,14408 -3142,14358 -3155,14340
-userdel	2::temp -3110,14408 -3174,14438 -3228,14468
-userdel	2::temp -3231,14383 -3293,14304
+userdel	2::xmas -3275,14407 -3231,14383 -3204,14368 -3155,14340
+userdel	2::xmas -3275,14407 -3338,14333
+userdel	2::xmas -3150,14631 -3185,14556 -3205,14512 -3228,14468 -3275,14407
+userdel	2::xmas -3275,14407 -3350,14446 -3393,14470 -3410,14479 -3440,14498 -3481,14523
+userdel	2::xmas -3227,14260 -3155,14340
+userdel	2::xmas -3227,14260 -3293,14304 -3338,14333
+userdel	2::xmas -3552,14082 -3457,14189 -3409,14241 -3338,14333
+userdel	2::xmas -3039,14522 -3054,14498 -3089,14440 -3110,14408 -3142,14358 -3155,14340
+userdel	2::xmas -3110,14408 -3174,14438 -3228,14468
+userdel	2::xmas -3231,14383 -3293,14304
 EOF
      },
      { from  => 1070600400, # 2003-12-05 06:00 # note: periodisch, siehe unten
@@ -1370,7 +1370,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
-userdel	2::temp 9986,13412 10317,13248
+userdel	2::xmas 9986,13412 10317,13248
 EOF
      },
      { from  => 1102050000, # 2004-12-03 06:00 # note: periodisch, siehe unten
@@ -1378,7 +1378,7 @@ EOF
        text  => 'Bahnhofstr. zwischen Goltzstr. und Steinstraße Weihnachstsmarkt, in beiden Richtungen gesperrt. Dauer: 04.12.2004, 06:00 Uhr bis 05.12.2004, 01:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 10453,-2133 10509,-2131 10631,-2130 10747,-2129
+userdel	2::xmas 10453,-2133 10509,-2131 10631,-2130 10747,-2129
 EOF
      },
      { from  => 1101337200, # 2004-11-25 00:00
@@ -1451,8 +1451,8 @@ EOF
        text  => 'Weihnachtsmarkt am Opernpalais, bis 25.12.2004',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 9898,12161 9882,12259 9876,12298 9858,12410
-userdel	2 9801,12245 9795,12293 9780,12401
+userdel	2::xmas 9898,12161 9882,12259 9876,12298 9858,12410
+userdel	2::xmas 9801,12245 9795,12293 9780,12401
 EOF
      },
      { from  => undef, # # note: gibt es nicht mehr
@@ -1460,7 +1460,7 @@ EOF
        text  => 'Weihnachtsmarkt am Schloßplatz, bis 25.12.2005',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 10174,12284 10063,12438
+userdel	2::xmas 10174,12284 10063,12438
 EOF
      },
      { from  => 1136837576, # 2006-01-09 21:12
@@ -3366,8 +3366,8 @@ EOF
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/charlottenburg-wilmersdorf/971524-1323017-weihnachtsmarktanderged%C3%A4chtniskirche.html',
        data  => <<EOF,
 # sowieso schon mit q4 markiert, deshalb -> 2
-userdel	2::temp 5829,10964 5782,10884
-userdel	2::temp 5656,10876 5652,11004
+userdel	2::xmas 5829,10964 5782,10884
+userdel	2::xmas 5656,10876 5652,11004
 EOF
      },
      { from  => 1132606608, # 2005-11-21 21:56
@@ -3570,7 +3570,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.weihnachtsmarkt-deutschland.de/berlin-lichtenrade-lichtermarkt.html
-userdel	q4::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
+userdel	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
      { from  => 1134255600, # 2005-12-11 00:00
@@ -6772,15 +6772,15 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berliner-weihnacht.de/?y=2013',
        data  => <<EOF,
-userdel	2::temp 10008,12274 9994,12368
+userdel	2::xmas 10008,12274 9994,12368
 # REMOVED (passierbar!) --- userdel	2::temp 9943,12364 9961,12273 9972,12184
-userdel	2::temp 10010,12259 10029,12208
+userdel	2::xmas 10010,12259 10029,12208
 # REMOVED (2012 nicht gesperrt) --- userdel	2::temp 9858,12410 9876,12298 9882,12259 9898,12161
-userdel	2::temp 10008,12274 10058,12290
-userdel	2::temp 10091,12232 10058,12290 9996,12401
+userdel	2::xmas 10008,12274 10058,12290
+userdel	2::xmas 10091,12232 10058,12290 9996,12401
 # REMOVED (2012 nicht gesperrt) --- userdel	2::temp 9961,12273 9882,12259
-userdel	q4::temp 9994,12368 9996,12401 9984,12426
-	q2::temp 9972,12184 9961,12273 9943,12364 9994,12368
+userdel	q4::xmas 9994,12368 9996,12401 9984,12426
+	q2::xmas 9972,12184 9961,12273 9943,12364 9994,12368
 EOF
      },
      { from  => 1163718000, # 2006-11-17 00:00
@@ -10653,7 +10653,7 @@ EOF
        text  => 'Weihnachtsmarkt ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 9708,12235 9702,12307 9695,12390
+userdel	2::xmas 9708,12235 9702,12307 9695,12390
 EOF
      },
      { from  => undef, # # note: existiert nicht mehr
@@ -10661,7 +10661,7 @@ EOF
        text  => 'Weihnachtsmarkt',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 10174,12284 10063,12438
+userdel	2::xmas 10174,12284 10063,12438
 EOF
      },
      { from  => 1195515915, # 2007-11-20 00:45
@@ -13222,7 +13222,7 @@ EOF
        text  => 'L 071 Markt OL Schönewalde, zw. Herzberger Str. und Gartenstr. Weihnachtsmarkt Vollsperrung 14.12.2008-14.12.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork -575,-65978 60,-66035
+userdel	q4::xmas -575,-65978 60,-66035
 EOF
      },
      { from  => 1226876400, # 2008-11-17 00:00
@@ -16928,7 +16928,7 @@ EOF
        text  => 'L 060 Ringstr. OD Uebigau, Bereich Markt Weihnachtsmarkt Vollsperrung 28.11.2009-29.11.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::temp 5358,-90502 5798,-90075
+userdel	q4::xmas 5358,-90502 5798,-90075
 EOF
      },
      { from  => 1257375600, # 2009-11-05 00:00
@@ -17047,9 +17047,9 @@ EOF
        text  => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr. und Dircksenstr.), von Anfang November 2016 bis Ende Dezember 2016',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 11329,12497 11209,12430
-userdel	2::temp 11209,12430 11273,12301
-userdel	2::temp 11273,12301 11355,12331
+userdel	2::xmas 11329,12497 11209,12430
+userdel	2::xmas 11209,12430 11273,12301
+userdel	2::xmas 11273,12301 11355,12331
 EOF
      },
      { from  => $isodate2epoch->("2016-11-20 00:00:00"), # 1 Tag Vorlauf
@@ -17061,8 +17061,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: note "WeihnachtsZauber auf dem Gendarmenmarkt"
-userdel	2::temp 9536,11922 9666,11935
-userdel	2::temp 9524,12010 9656,12021
+userdel	2::xmas 9536,11922 9666,11935
+userdel	2::xmas 9524,12010 9656,12021
 EOF
      },
      { from  => 1262990710, #  undef
@@ -17133,9 +17133,9 @@ EOF
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971680-955635-winterweltampotsdamerplatz.html',
        data  => <<EOF,
 #: note: Winterwelt bereits ab 2.11.2014 (bis 4.1.2015), Weihnachtsmarkt erst ab dem 24.11.2014
-userdel	2::temp 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324
+userdel	2::xmas 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324
 #userdel	2::temp 8318,11324 8280,11296 8278,11257
-#: XXX_prog "3::temp" geht nicht?
+#: XXX_prog "3::temp" oder "3::xmas" geht nicht?
 userdel	3 8427,11365 8389,11378 8374,11479
 userdel	3 8374,11479 8389,11378 8427,11365
 EOF
@@ -17148,15 +17148,15 @@ EOF
        text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (04.12.2015 - 06.12.2015)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 13416,7712 13426,7674
-userdel	2::temp 13416,7712 13378,7695 13288,7653
-userdel	2::temp 13426,7674 13400,7642 13303,7622
-userdel	2::temp 12969,7610 13100,7626 13177,7644
-userdel	2::temp 13188,7590 13177,7644
-userdel	2::temp 13188,7590 13303,7622
-userdel	2::temp 13288,7653 13303,7622
-userdel	2::temp 13288,7653 13177,7644
-userdel	2::temp 13288,7653 13278,7673 13245,7742
+userdel	2::xmas 13416,7712 13426,7674
+userdel	2::xmas 13416,7712 13378,7695 13288,7653
+userdel	2::xmas 13426,7674 13400,7642 13303,7622
+userdel	2::xmas 12969,7610 13100,7626 13177,7644
+userdel	2::xmas 13188,7590 13177,7644
+userdel	2::xmas 13188,7590 13303,7622
+userdel	2::xmas 13288,7653 13303,7622
+userdel	2::xmas 13288,7653 13177,7644
+userdel	2::xmas 13288,7653 13278,7673 13245,7742
 EOF
      },
      { from  => 1212876000, # 2008-06-08 00:00
@@ -17199,7 +17199,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-deutschland.de/berlin-koepenick-weihnachtsmarkt.html',
        data  => <<EOF,
-userdel	2::temp 22111,4562 22162,4546 22214,4548
+userdel	2::xmas 22111,4562 22162,4546 22214,4548
 EOF
      },
      { from  => 1260481636, # 2009-12-10 22:47
@@ -21397,7 +21397,7 @@ EOF
        source_id => 'IM_020815',
        data  => <<EOF,
 #: by: http://www.weihnachteninberlin.de/weihnachtsmaerkte/tempelhof-schoeneberg/1001683-1328179-weihnachtsmarktinderbahnhofstra%C3%9Felichte.html
-userdel	2::temp 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
+userdel	2::xmas 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
 EOF
      },
      { from  => $isodate2epoch->("2016-05-20 00:00:00"), # 1431715044, # 1367560678, # 2013-05-03 07:57
@@ -22330,7 +22330,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
-userdel	2::temp 9986,13412 10317,13248
+userdel	2::xmas 9986,13412 10317,13248
 EOF
      },
      { from  => $isodate2epoch->("2016-12-09 00:00:00"),
@@ -22341,7 +22341,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
-userdel	2::temp 9986,13412 10317,13248
+userdel	2::xmas 9986,13412 10317,13248
 EOF
      },
      { from  => $isodate2epoch->("2016-12-16 00:00:00"),
@@ -22352,7 +22352,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
-userdel	2::temp 9986,13412 10317,13248
+userdel	2::xmas 9986,13412 10317,13248
 EOF
      },
      { from  => $isodate2epoch->("2015-11-28 12:00:00"), # 1 Tag Vorlauf
@@ -22363,7 +22363,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
        data  => <<EOF,
-userdel	2::temp 11317,14564 11255,14572 11155,14554
+userdel	2::xmas 11317,14564 11255,14572 11155,14554
 EOF
      },
      { from  => $isodate2epoch->("2015-12-05 12:00:00"), # 1 Tag Vorlauf
@@ -22374,7 +22374,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
        data  => <<EOF,
-userdel	2::temp 11317,14564 11255,14572 11155,14554
+userdel	2::xmas 11317,14564 11255,14572 11155,14554
 EOF
      },
      { from  => $isodate2epoch->("2015-12-12 12:00:00"), # 1 Tag Vorlauf
@@ -22385,7 +22385,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
        data  => <<EOF,
-userdel	2::temp 11317,14564 11255,14572 11155,14554
+userdel	2::xmas 11317,14564 11255,14572 11155,14554
 EOF
      },
      { from  => $isodate2epoch->("2015-12-19 12:00:00"), # 1 Tag Vorlauf
@@ -22396,7 +22396,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
        data  => <<EOF,
-userdel	2::temp 11317,14564 11255,14572 11155,14554
+userdel	2::xmas 11317,14564 11255,14572 11155,14554
 EOF
      },
      { from  => 1384642800, # 2013-11-17 00:00
@@ -22443,7 +22443,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.potsdam.de/content/weihnachtliches-potsdam-1
-userdel	1::temp -13556,-1182 -13643,-1220
+userdel	1::xmas -13556,-1182 -13643,-1220
 EOF
      },
      { from  => undef, # 1385766000, # 2013-11-30 00:00
@@ -24803,8 +24803,8 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/1304487-1328132-weihnachtsmarktaufdemalexanderplatz.html',
        data  => <<EOF,
-userdel	q3::temp 11139,13008 11064,12910 10970,12822
-userdel	q4::temp 11064,12910 11134,12793
+userdel	q3::xmas 11139,13008 11064,12910 10970,12822
+userdel	q4::xmas 11064,12910 11134,12793
 EOF
      },
      { from  => undef, # 

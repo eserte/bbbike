@@ -5682,6 +5682,7 @@ sub load_photos {
     $cal_questionmark_photo = load_photo($top, 'cal_questionmark');
     $clock_photo	 = load_photo($top, 'clock');
     $night_photo	 = load_photo($top, 'night');
+    $xmas_photo	         = load_photo($top, 'xmas');
     $ferry_photo         = load_photo($top, 'ferry')
 	if !$ferry_photo;
     $ferry_klein_photo   = load_photo($top, 'ferry_klein');
@@ -10947,6 +10948,7 @@ sub plot_sperre {
 				   ['clock',  $clock_photo],
 				   ['tempmaybe', $cal_questionmark_photo],
 				   ['temp',   $cal_photo], # should be last
+				   ['xmas',   $xmas_photo],
 				  ) {
 			my($addinfo, $photo) = @$check;
 			if ($addinfo{$addinfo} && $photo) {
