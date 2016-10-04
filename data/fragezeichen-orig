@@ -135,17 +135,18 @@ Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 #: XXX_osm: laut osm existieren bereits zumindest zwischen Schulstr. und Nettelbeckplatz Radwege (track), was aber definitiv nicht der Fall ist und niemals der Fall sein wird
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: source_id: 2147340359
+#: source_id: 2147340620
 #: osm_watch: way id="162964323" version="13"
 #: osm_watch: way id="4541085" version="23"
 #: osm_watch: way id="4638315" version="20"
 #: last_checked: 2016-09-17 vvv
-#: check_frequency: 60d vvv
+#: next_check: 2016-12-15 vvv
 #: osm_watch: way id="27848137" version="9"
 #: osm_watch: way id="4541086" version="20"
 Reinickendorfer Str.: werden hier noch die restlichen Radspuren markiert?	?::projected 7666,16879 7681,16769
 #: osm_watch: way id="350932989" version="4"
 Reinickendorfer Str.: werden hier noch die restlichen Radspuren markiert?	?::projected; 7713,16557 7681,16769
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 # 
 # REMOVED (wahrscheinlich passiert hier nichts bevor das Pankower Tor realisiert wird) --- #: XXX Baumaßnahme 3.39 (Realisierung nach 2011) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) --- #: XXX evtl. wird erst etwas mit Realisierung des Stadtquartiers "Pankower Tor" entstehen --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3701 --- #: osm_watch: way id="144945039" version="4" --- #: last_checked: 2013-10-25 (Richtung Nordosten fertig) --- #: next_check: 2014-01-25 --- Granitzstr.: wird auch etwas in der anderen Richtung gemacht?	? 11253,18168 11320,18218 11395,18274 11492,18347 11578,18406 11645,18440 11696,18454 11796,18482
@@ -1501,13 +1502,18 @@ Weg an der Wuhle: evtl. entsteht auch ein Weg hier --- wird es auch eine Anbindu
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1610/nachricht6208.html vvv
+Beusselstr.: Markierung von neuen Busspuren?	? 5220,14043 5231,13843 5248,13434
+Invalidenstr.: Markierung von neuen Busspuren?	? 7415,13060 7433,13070 7563,13143 7573,13149 7759,13246
+#: by: ^^^
+# 
 Rüdickenstr.: Vorfahrtsregelung?	? 17233,17490 17264,17489 17257,17464
 # 
 Schulstr. - Paul-Schneider-Str.: Unterführung auch für Radfahrer benutzbar? Ist die Paul-Schneider-Str. überquerbar?	? 6698,3336 6651,3288 6613,3320
 # 
 In den Leonorengärten: Qualität?	? 6493,4105 6517,4051 6452,4024 6428,4076
 # 
-Alex-Wedding-Str.: ist hier auch eine Einbahnstraßenregelegung?	? 11085,13239 11146,13328
+# REMOVED (nein) --- Alex-Wedding-Str.: ist hier auch eine Einbahnstraßenregelegung?	? 11085,13239 11146,13328
 # 
 Uferweg: existiert hier ein Weg? Qualität? Beleuchtung?	? 5364,12327 5299,12420 5287,12465 5233,12466
 # 
@@ -1567,7 +1573,7 @@ Liebigstr.: Einrichtung einer Spielstraße, wo genau?	? 14229,12311 14166,12323 1
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7041
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_925_16.pdf
 #: XXX Bauarbeiten zwischen Thaerstr. und Hübnerstr.
-#: last_checked: 2016-09-23
+#: last_checked: 2016-10-04
 #: check_frequency: 14d
 Eldenaer Str.: Verlängerung der Radspuren	? 14355,12752 14096,12827 14066,12836 13979,12861 13960,12866 13844,12900
 # 
@@ -1703,11 +1709,13 @@ Treskowallee: Gehweg für Radfahrer freigegeben?	?; 18733,8633 18731,8577 18709,8
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7478
 #: XXX "noch 2016"
-#: last_checked: 2016-09-05 vvv
+#: last_checked: 2016-10-04 vvv
+#: check_frequency: 60d vvv
 #: priority: #C vvv
 Waldemar/Dresdener: Zebrastreifen geplant	?::projected 11170,11048 11150,11030 11121,11021
 Sebastian/Luckauer: Zebrastreifen geplant	?::projected 11105,10969 11113,10943 11122,10908
 #: priority ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: XXX wird hier ein Zebrastreifen entstehen?

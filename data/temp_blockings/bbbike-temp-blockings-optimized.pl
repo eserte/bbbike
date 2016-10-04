@@ -3920,16 +3920,7 @@ userdel	q4::inwork; 8642,7876 8731,7956
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147340518
-userdel	q3::inwork; -795,13437 -729,13415 -346,13349 -309,13268 -264,13009
-',
-         'from' => 1473704924,
-         'id' => 2829,
-         'text' => 'Wiesendamm: Bauarbeiten, RIchtung Spandauer Damm Fahrbahn gesperrt, bis 04.10.2016',
-         'type' => 'handicap',
-         'until' => 1475575200
-       },
+       undef,
        {
          'data' => '#: XXX Wann sind die Bauarbeiten beendet? Wird die Qualität danach besser sein? vvv
 #: last_checked: 2016-09-18 vvv

@@ -414,8 +414,9 @@ Luzerner Str.: Kopfsteinpflaster	Q2 3251,1881 3148,1888 3044,1890
 #: XXX Pflasterung wird erneuert, danach vielleicht besser als Q2? vvv
 #: XXX "Baubeginn im Laufe des Jahres 2014" vvv
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.90747.php vvv
+#: by: http://www.berliner-woche.de/lichterfelde/bauen/strassensanierung-soll-puenktlich-starten-d83213.html
 #: last_checked: 2016-07-07 vvv
-#: check_frequency: 90d vvv
+#: check_frequency: 120d vvv
 #: osm_watch: way id="148329608" version="15" vvv
 Carstennstr.: Kopfsteinpflaster, teilweise mit Asphaltflicken	Q2 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265
 Carstennstr.: provisorischer Asphalt	Q1 2880,2265 2848,2340 2826,2390 2805,2438
@@ -8728,12 +8729,12 @@ Quitzowstr.: Kopfsteinpflaster	Q2 7080,14398 7104,14403
 (Goerdelersteg - Beusselstr.): Verbundsteinpflaster mit großen Fugen, unangenehm zu fahren	Q2- 3655,14237 4616,14483
 (Goerdelersteg - Beusselstr.): unbefestigter Weg, Schotter	Q2 4616,14483 5051,14606
 Bernhard-Lichtenberg-Str.: Beton	Q0 3169,14256 3105,14316 3076,14354 3067,14403 3073,14465 3083,14529 3088,14591 3096,14657 3105,14735
-Strünckweg: Beton	Q0 3105,14316 3195,14320
+Strünckweg: Beton	Q0 3105,14316 3140,14340 3184,14338
 Klausingring: Beton	Q0 3076,14354 2951,14347 2954,14401 3067,14403
-Kirchnerpfad: Beton	Q0 3073,14465 3197,14450
-Delpzeile: Beton	Q0 3083,14529 2988,14539
-Teichgräberzeile: Beton	Q0 3088,14591 3214,14578
-Wiersichweg: Beton	Q0 3096,14657 3024,14663
+Kirchnerpfad: Beton	Q0 3073,14465 3194,14466
+Delpzeile: Beton	Q0 3083,14529 2936,14525
+Teichgräberzeile: Beton	Q0 3088,14591 3196,14593
+Wiersichweg: Beton	Q0 3096,14657 2972,14654
 (Bootshausweg - Am Havelgarten): wassergebundene Decke	Q1 -1229,16773 -1311,16736 -1343,16732
 (Bootshausweg - Am Havelgarten): unbefestigter Weg	Q2+ -1343,16732 -1418,16755 -1459,16723
 Strausseeweg: Asphalt	Q0 -1570,16629 -1629,16640
@@ -12988,10 +12989,10 @@ Dahrendorfzeile: Beton	Q0 2597,14288 2680,14287
 Hofackerzeile: Asphalt	Q0 2657,14486 2769,14482
 Habermannzeile: Beton	Q0 2671,14653 2806,14645
 Am Heidebusch: Asphalt	Q0 3039,14743 3092,15000
-Schwambzeile: Asphalt	Q0 3442,14562 3310,14556
-Wirmerzeile: Asphalt	Q0 3460,14432 3320,14428
-Leuningerpfad: Asphalt	Q0 3473,14385 3545,14381
-Terwielsteig: Asphalt	Q0 3450,14507 3534,14496
+Schwambzeile: Asphalt	Q0 3431,14586 3315,14581
+Wirmerzeile: Asphalt	Q0 3455,14460 3327,14457
+Leuningerpfad: Asphalt	Q0 3464,14407 3525,14408
+Terwielsteig: Asphalt	Q0 3443,14535 3507,14535
 #: by: ^^^
 # 
 #: by: ben.kr:
@@ -13998,6 +13999,7 @@ Richterstr.: mäßiges Kopfsteinpflaster	Q2 9115,3959 9106,4114 9099,4204
 #: by: Anja Rößler: vvv
 #: corrected_by: srt (Q2 -> Q2-)
 Dolziger Str.: mäßiges Kopfsteinpflaster	Q2- 14435,12761 14436,12731 14628,12682
+Dolziger Str.: mäßiges Kopfsteinpflaster	Q2- 14436,12731 14405,12738
 Dolziger Str.: mäßiges Kopfsteinpflaster	Q2 14628,12682 14814,12626
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Dolziger Str.: Asphalt	Q0 14814,12626 14935,12596
