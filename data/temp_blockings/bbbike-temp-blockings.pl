@@ -859,7 +859,7 @@ EOF
        text  => 'Leibnizstraße (Charlottenburg) zwischen Bismarckstr. und Otto-Suhr-Allee in Richtung Kantstr. Baustelle, Fahrtrichtung gesperrt bis 5.9.2004, 20:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 4367,11996 4337,11721
+userdel	1 4355,12001 4337,11721
 EOF
      },
      { from  => 1094508000, # 2004-09-07 00:00
@@ -1261,8 +1261,8 @@ EOF
        text  => 'Lennéstr. zwischen Bellvuestr. und Eberstr. Baustelle, Straße gesperrt Richtung Ebertstr. (bis 15.11.2004) ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 8489,11782 8438,11753 8335,11718
-userdel	2 8335,11718
+userdel	2 8489,11782 8438,11753 8322,11715
+userdel	2 8322,11715
 EOF
      },
      { from  => 1092520800, # 2004-08-15 00:00
@@ -4657,7 +4657,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002820',
        data  => <<EOF,
-userdel	2 11347,12181 11325,12021
+userdel	2 11343,12182 11325,12021
 EOF
      },
      { from  => 1149058136, # 2006-05-31 08:48
@@ -5719,7 +5719,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003108',
        data  => <<EOF,
-userdel	1::inwork 4367,11996 4337,11721
+userdel	1::inwork 4355,12001 4337,11721
 EOF
      },
      { from  => 1156793020, # 2006-08-28 21:23
@@ -5845,7 +5845,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003436',
        data  => <<EOF,
-userdel	1::inwork 11351,12221 11347,12181 11325,12021 11283,11876 11242,11720
+userdel	1::inwork 11347,12223 11343,12182 11325,12021 11283,11876 11242,11720
 EOF
      },
      { from  => 1159826400, # 2006-10-03 00:00
@@ -6241,7 +6241,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003744',
        data  => <<EOF,
-userdel	1::inwork 4367,11996 4337,11721
+userdel	1::inwork 4355,12001 4337,11721
 EOF
      },
      { from  => $isodate2epoch->("2016-05-06 00:00:00"), # 1 Tag Vorlauf
@@ -6405,7 +6405,7 @@ EOF
        text  => '21.10.2006 (Samstag): Vollsperrung der Jannowitzbrücke (Demontage von Stahlbetonteilen)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 11347,12181 11325,12021
+userdel	2::inwork 11343,12182 11325,12021
 EOF
      },
      { from  => 1159826400, # 2006-10-03 00:00
@@ -8876,7 +8876,7 @@ EOF
        source_id => 'IM_005827',
        data  => <<EOF,
 userdel	2::inwork 297,6541 441,6435
-userdel	2::inwork 1514,5163 1443,5193 1385,5214 1333,5246 1212,5353 1067,5486 1022,5525 948,5597 910,5654 894,5829 884,5974 869,6085 736,6217
+userdel	2::inwork 1514,5163 1486,5175 1443,5193 1385,5214 1333,5246 1212,5353 1067,5486 1022,5525 948,5597 910,5654 894,5829 884,5974 869,6085 736,6217
 userdel	2::inwork 486,6404 605,6345
 userdel	2::inwork -130,6694 218,6571
 EOF
@@ -10934,7 +10934,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007651',
        data  => <<EOF,
-userdel	1::inwork 10309,12854 10264,12826 10166,12777
+userdel	1::inwork 10308,12859 10260,12831 10166,12777
 EOF
      },
      { from  => 1198018800, # 2007-12-19 00:00
@@ -11946,7 +11946,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009262',
        data  => <<EOF,
-userdel	1::inwork 10286,13084 10339,13052 10371,13006 10418,12922 10395,12908 10348,12879 10309,12854
+userdel	1::inwork 10286,13084 10339,13052 10371,13006 10418,12922 10395,12908 10347,12881 10308,12859
 EOF
      },
      { from  => 1215112739, # 
@@ -12190,7 +12190,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 8424,12853 8503,12895
-userdel	2::temp 7936,12906 8021,12832
+userdel	2::temp 7930,12912 8021,12832
 userdel	2::temp 8737,12757 8596,12760 8545,12760
 userdel	2::temp 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
 userdel	2::temp 8514,12877 8545,12760
@@ -12459,7 +12459,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009757',
        data  => <<EOF,
-userdel	2::temp 9385,13174 9255,13164
+userdel	2::temp 9385,13174 9254,13171
 EOF
      },
      { from  => 1219523521, # 2008-08-23 22:32
@@ -15225,8 +15225,8 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_013844',
        data  => <<EOF,
-userdel	2::temp 5231,12122 5181,12195 5243,12303 5325,12234
-userdel	2::temp 5181,12195 5133,12240 5203,12387 5243,12303
+userdel	2::temp 5231,12122 5181,12195 5243,12303 5317,12242
+userdel	2::temp 5181,12195 5133,12240 5194,12398 5243,12303
 EOF
      },
      { from  => 1249414524, # undef
@@ -17088,7 +17088,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014681',
        data  => <<EOF,
-userdel	q4::inwork; 5361,11910 5229,12001 5128,12149 4981,12252
+userdel	q4::inwork; 5361,11910 5229,12001 5128,12149 4973,12256
 EOF
      },
      { from  => 1258239600, # 2009-11-15 00:00
@@ -21349,7 +21349,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130424.1240.383903.html',
        data  => <<EOF,
 #: source_id: IM_019774 vvv
-userdel	q4::inwork; 4367,11996 4441,12185 4518,12355
+userdel	q4::inwork; 4355,12001 4441,12185 4518,12355
 # REMOVED (dieser Abschnitt für Anlieger befahrbar) --- userdel	q4::inwork; 4518,12355 4598,12501
 # REMOVED (geraten, wahrscheinlich passierbar) --- userdel auto	3 4602,12313 4518,12355 4358,12365
 # REMOVED (geraten, wahrscheinlich passierbar) --- userdel auto	3 4358,12365 4518,12355 4602,12313
@@ -21663,7 +21663,7 @@ userdel	2::temp 8965,11825 8901,12008 8861,12125 8804,12280 8775,12457
 userdel	2::temp 8553,11630 8548,11571 8502,11564 8442,11555 8209,11671 8203,11686
 userdel	2::temp 8502,11564 8473,11638 8387,11637
 userdel	2::temp 8354,12416 8119,12414 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8610,12254 8731,12270 8804,12280 9028,12307
-userdel	2::temp 8335,11718 8438,11753 8489,11782 8571,11846 8577,11896
+userdel	2::temp 8322,11715 8438,11753 8489,11782 8571,11846 8577,11896
 userdel	2::temp 8358,11477 8301,11469 8226,11458
 userdel	2::temp 8214,12205 8215,12156 8327,12174 8466,12197 8522,12239
 userdel	2::temp 8548,11571 8542,11502 8479,11493 8374,11479
@@ -21672,7 +21672,7 @@ userdel	2::temp 8132,11910 8167,11865
 userdel	2::temp 8595,12066 8577,11896 8632,11912 8783,11959 8901,12008
 userdel	2::temp 8210,11775 8221,11876 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245 8600,12165 8595,12066 8737,12098 8783,11959 8813,11825
 userdel	2::temp 8122,12147 8215,12156 8221,11885 8221,11876 8167,11865 8140,11850
-userdel	2::temp 8210,11775 8203,11686 8335,11718 8387,11637 8442,11555 8542,11502 8596,11508 8740,11524 8834,11536 9058,11564 9000,11727 8969,11814 8825,11773 8813,11825 8567,11799
+userdel	2::temp 8210,11775 8203,11686 8322,11715 8387,11637 8442,11555 8542,11502 8596,11508 8740,11524 8834,11536 9058,11564 9000,11727 8969,11814 8825,11773 8813,11825 8567,11799
 userdel	2::temp 8538,12245 8546,12279
 userdel	2::temp 9016,12416 9007,12499
 userdel	2::temp 8825,11773 8837,11676 8743,11663 8553,11638
@@ -23420,7 +23420,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140904.1220.399072.html',
        data  => <<EOF,
-userdel	q4::inwork; 5325,12234 5518,12159 5424,11944
+userdel	q4::inwork; 5317,12242 5518,12159 5424,11944
 EOF
      },
      { from  => $isodate2epoch->("2016-09-09 00:00:00"), # 1410519600, # 2014-09-12 13:00
@@ -23753,7 +23753,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-spandau/presse/archiv/20141107.1350.400054.html',
        data  => <<EOF,
-userdel	q4::inwork 1361,14431 1423,14679
+userdel	q4::inwork 1361,14431 1386,14605 1406,14686
 EOF
      },
      { from  => 1415055600, # 2014-11-04 00:00
@@ -23907,7 +23907,7 @@ EOF
        source_id => 'IM_023887',
        data  => <<EOF,
 userdel	2::temp 8206,12757 8120,12756 8030,12824
-userdel	2::temp 7936,12906 8021,12832
+userdel	2::temp 7930,12912 8021,12832
 userdel auto	3 8124,12840 8120,12756 8122,12603
 userdel auto	3 8207,12606 8206,12757 8204,12816
 userdel auto	3 8204,12816 8206,12757 8207,12606
@@ -23970,7 +23970,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: fritz
-userdel	q4::inwork; 5018,12322 5133,12240
+userdel	q4::inwork; 5013,12323 5133,12240
 EOF
      },
      { from  => 1426374000, # 2015-03-15 00:00
@@ -24095,8 +24095,8 @@ EOF
        text  => 'Zillestr.: zwischen Richard-Wagner-Str. und Wilmersdorfer Str. Bauarbeiten, Einbahnstraßenregelung, offen Richtung Osten, Ende der Sperrung unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2016-09-18
-#: check_frequency: 90d
+#: last_checked: 2016-10-08
+#: check_frequency: 60d
 userdel	q4::inwork; 3807,11859 3666,11855
 EOF
      },
@@ -24229,12 +24229,12 @@ userdel	q4::inwork 22145,208 21933,152 21868,139
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1475958134, # undef, # XXX
        text  => 'Rampe an der Großen Eiswerderbrücke gesperrt, Dauer unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8094&options=4
-#: next_check: 2016-03-01
+# REMOVED (nicht mehr gesperrt) --- #: next_check: 2016-03-01
 userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
 EOF
      },
@@ -24944,7 +24944,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.464628.php',
        data  => <<EOF,
-userdel	q4::inwork; 4981,12252 5128,12149 5229,12001 5361,11910
+userdel	q4::inwork; 4973,12256 5128,12149 5229,12001 5361,11910
 EOF
      },
      { from  => undef,
@@ -24967,15 +24967,17 @@ userdel	q3::inwork 4542,1188 4634,1245 4706,1293 4806,1360 4897,1350 5059,1337
 EOF
      },
      { from  => 1460584800, # 2016-04-14 00:00
-       until => 1475272799, # 2016-09-30 23:59
-       text  => 'Schifffahrtsufer: Bauarbeiten zwischen Bullengraben und Stabholzgraben, komplett gesperrt, von Mitte April 2016 bis voraussichtlich Ende September 2016',
+       until => $isodate2epoch->("2016-10-31 12:00:00"), # 1475272799, # 2016-09-30 23:59 # Ende September 2016 konnte nicht gehalten werden
+       text  => 'Schifffahrtsufer: Bauarbeiten zwischen Bullengraben und Stabholzgraben, komplett gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.466174.php',
        data  => <<EOF,
-#: note: hier zurzeit (2016-05-16) nicht gesperrt
-userdel	2::inwork -3529,13452 -3546,13503 -3556,13582 -3543,13691 -3503,13773
-#: note: hier zurzeit (2016-05-16) komplett gesperrt
-userdel	2::inwork -3503,13773 -3385,13937 -3345,13994
+#: note: hier zurzeit (2016-10-08) nicht gesperrt
+	2::inwork -3529,13452 -3546,13503 -3556,13582 -3543,13691
+#: note: hier zurzeit (2016-10-08) gesperrt
+	2::inwork -3543,13691 -3503,13773
+# REMOVED (hier fertig) --- #: note: hier zurzeit (2016-05-16) komplett gesperrt --- 2::inwork -3503,13773 -3460,13828 -3459,13846 -3390,13940 -3345,13994
+	2::inwork -3494,13980 -3390,13940
 EOF
      },
      { from  => 1459980000, # 2016-04-07 00:00
@@ -25490,7 +25492,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2016-09-30 vvv
+#: last_checked: 2016-10-08 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -25580,6 +25582,24 @@ EOF
 #: last_checked: 2016-09-30
 #: check_frequency: 60d
 userdel	q3::inwork 4564,3457 4800,3391 4862,3363 5022,3318
+EOF
+     },
+     { from  => 1475964000, # 2016-10-09 00:00
+       until => 1479250799, # 2016-11-15 23:59
+       text  => 'Uhlandstr.: Bauarbeiten zwischen Lietzenburger Str. und Pariser Str., Einbahnstraßenregelung, offen Richtung Hohenzollerndamm, von 10.10.2016 bis etwa Mitte November 2016',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.522495.php',
+       data  => <<EOF,
+userdel	q4::inwork; 5013,10039 5026,10151 5047,10381
+EOF
+     },
+     { from  => 1479078000, # 2016-11-14 00:00
+       until => 1483225199, # 2016-12-31 23:59
+       text  => 'Uhlandstr.: Bauarbeiten zwischen Pariser Str. und Hohenzollerndamm, Einbahnstraßenregelung, offen Richtung Hohenzollerndamm, von ca. Mitte November 2016 bis Dezember 2016',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.522495.php',
+       data  => <<EOF,
+userdel	q4::inwork; 4976,9670 4982,9729 4993,9843 5013,10039
 EOF
      },
     );

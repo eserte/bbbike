@@ -39,7 +39,7 @@ Holtei von S - Boxhagener	3 14575,11407 14639,11512 14577,11582
 Boxhagener von W - Holtei	3 14577,11582 14639,11512 14710,11626
 Holtei von N - Boxhagener	3 14710,11626 14639,11512 14752,11369
 Boxhagener von E - Holtei	3 14752,11369 14639,11512 14575,11407
-Bachstr. - 17. Juni (?)	3 5790,12026 5775,11975 5758,11895 5900,11913
+Bachstr. - 17. Juni (?)	3 5790,12026 5775,11975 5758,11895 5810,11902 5900,11913
 Fasanen - Hertzallee (nur für BVG frei)	3 5456,11742 5356,11512 5352,11502 5587,11397
 Fasanenstr.	1 5192,10234 5196,10398
 Naumannstr. - Kolonnenstr.	3 7713,8600 7709,8777 7642,8815
@@ -263,7 +263,7 @@ Mainzer Str./Frankfurter Allee	3nocross 14381,12205 14427,12197 14488,12188
 Colbestr./Frankfurter Allee	3nocross 14488,12188 14523,12183 14621,12168
 Kinzigstr./Frankfurter Allee	3nocross 14523,12183 14621,12168 14702,12157
 Finowstr.+Weichselstr./Frankfurter Allee	3nocross 14702,12157 14854,12137 14926,12129 14994,12121
-Friedrichstr. (Straßenbahn)	3nocross 9225,13389 9246,13235 9255,13164 9262,13111
+Friedrichstr. (Straßenbahn)	3nocross 9225,13389 9246,13235 9254,13171 9262,13111
 Friedrichstr. (Straßenbahn)	3nocross 9262,13111 9269,13060 9279,12953
 Oranienburger Str. (Straßenbahnhaltestelle)	3nocross 9225,13389 9293,13366 9415,13315
 Saarstr.: Durchfahrt für Autofahrer per Poller gesperrt	3nocross 5966,6747 5896,6785 5811,6833
@@ -392,7 +392,7 @@ Geitelsteig	1 1988,14870 1977,14751 1974,14646
 Schweiggerweg	1 2081,14570 2079,14704 2099,14852
 #: by: ^^^
 #: note: Luftbild:
-Jungfernheideweg	1 1465,14963 1423,14679 1361,14431
+Jungfernheideweg	1 1465,14963 1406,14686 1386,14605 1361,14431
 #: by: junga:
 Dihlmannstr.: Radweg existiert	1 651,15091 755,15123 851,15155 957,15189 976,15195 1065,15229
 Zwickauer Damm: Bahntrasse	3nocross 16135,2135 16056,2034 16002,1964 15875,1796 15835,1747
@@ -514,12 +514,12 @@ Finkeldeweg	1 22928,3057 22834,3571
 An der Wuhlheide: Mittelstreifen	3nocross 19405,6276 19276,6359 19245,6379
 Kiautschoustr.	1 7007,14911 7192,14976
 Rochstr.: Barriere	3 * 10535,13006 *
-Rahel-Hirsch-Str.: Mittelstreifen	3nocross 7936,12906 7948,12918 8039,13009
+Rahel-Hirsch-Str.: Mittelstreifen	3nocross 7930,12912 7946,12932 8039,13009
 Am Kanal -> Französische Str.: verboten	3nocross -12666,-1311 -12549,-1277 -12552,-1233
 Mittelstr. (Potsdam)	1 -12884,-769 -12697,-729
 Emma-Herwegh-Str.	1 7795,13168 7595,12980
-Margarete-Kühn-Str.: Poller am Salzufer	3 5203,12387 5133,12240 *
-Margarete-Kühn-Str.: Poller am Salzufer	3 * 5133,12240 5203,12387
+Margarete-Kühn-Str.: Poller am Salzufer	3 5194,12398 5133,12240 *
+Margarete-Kühn-Str.: Poller am Salzufer	3 * 5133,12240 5194,12398
 Eberswalder Str. (Bernau)	1 23109,30968 23103,30923 23084,30893 22917,30635
 Rutnikstr. - Möllendorffstr.: Abbiegen verboten	3 15648,12687 15546,12690 15550,12625
 # REMOVED (kein Durchgangsverkehr mehr) --- Torgauer Str.: nur für Anlieger	2:Anlieger 7446,8200 7402,8208 7374,8211 7250,8223 7001,8161
@@ -855,7 +855,7 @@ Prenzlauer Promenade: Mittelstreifen	3nocross 11872,17522 11893,17397 11920,1724
 Voigtstr. - Pettenkoferstr.	1 14858,12775 14834,12767
 Gryphius/Boxhagener Str.	3 14550,11732 14513,11657 14496,11620
 Gryphius/Boxhagener Str.	3 14550,11732 14513,11657 14561,11600
-Spandauer Str.: Straßenbahntrasse	3nocross 10387,12760 10360,12793 10309,12854
+Spandauer Str.: Straßenbahntrasse	3nocross 10387,12760 10360,12793 10308,12859
 Oskar-Ziethen-Krankenhaus: Schranke und Tor	3 * 16541,12071 *
 #: note: kein Problem für Radfahrer vvv
 Grünspechtweg: Schranke	3 * 7059,23127 *
@@ -1098,3 +1098,5 @@ Zachenberger Str.: Poller	3 19780,9409 19824,9405 19889,9400
 Klemkestr.: Mittelstreifen	3nocross 7520,18701 7599,18705 7676,18713
 # REMOVED --- #: by: Uwe Majewski --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3655 (Freigabe noch 2015) --- #: add_fragezeichen: Ist die Einbahnstraße mittlerweile für Radfahrer gegen die Fahrtrichtung frei? --- #: next_check: 2015-12-31
 Schulstr. (Tegel)	1 1953,20149 1794,20110
+Möllentordamm	1 -2942,14666 -3027,14689 -3042,14682
+Goebelplatz	1 1974,14646 1974,14565

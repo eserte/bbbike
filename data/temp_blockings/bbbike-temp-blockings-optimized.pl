@@ -120,32 +120,7 @@ userdel	2::xmas -3231,14383 -3293,14304
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2 8055,12186 8089,12190 8214,12205
-userdel	2 8214,12205 8303,12216 8344,12221 8538,12245
-userdel	2 8546,12279 8538,12245
-userdel	2 8600,12165 8538,12245
-userdel	2 8538,12245 8610,12254
-userdel	2 8546,12279 8570,12302 8573,12325 8540,12420 
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-',
-         'from' => 1475121600,
-         'id' => 127,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              29,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt (bis 04.10.2016)',
-         'type' => 'gesperrt',
-         'until' => 1475618399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3415,21 +3390,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2016/pressemitteilung.510363.php
-#: XXX hier wird asphaltiert
-#: osm_watch: way id="33912929" version="12"
-#: last_checked: 2016-09-21
-#: next_check: 2016-10-07
-#: priority: #A
-userdel	2::inwork 8101,13901 8248,13659 8337,13541
-',
-         'from' => 1471730400,
-         'id' => 2636,
-         'text' => 'Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, 22.08.2016 bis 07.10.2016',
-         'type' => 'gesperrt',
-         'until' => 1475856000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3523,8 +3484,8 @@ userdel	2::inwork 8101,13901 8248,13659 8337,13541
        undef,
        undef,
        {
-         'data' => '#: last_checked: 2016-09-18
-#: check_frequency: 90d
+         'data' => '#: last_checked: 2016-10-08
+#: check_frequency: 60d
 userdel	q4::inwork; 3807,11859 3666,11855
 ',
          'from' => undef,
@@ -3566,17 +3527,7 @@ userdel	q4::inwork; 3807,11859 3666,11855
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8094&options=4
-#: next_check: 2016-03-01
-userdel	2::inwork -2453,15476 -2454,15472 -2465,15471
-',
-         'from' => undef,
-         'id' => 2709,
-         'text' => 'Rampe an der Großen Eiswerderbrücke gesperrt, Dauer unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3729,7 +3680,21 @@ userdel	q4::xmas 11064,12910 11134,12793
          'type' => 'handicap',
          'until' => 1484348400
        },
-       undef,
+       {
+         'data' => '#: note: hier zurzeit (2016-10-08) nicht gesperrt
+	2::inwork -3529,13452 -3546,13503 -3556,13582 -3543,13691
+#: note: hier zurzeit (2016-10-08) gesperrt
+	2::inwork -3543,13691 -3503,13773
+# REMOVED (hier fertig) --- #: note: hier zurzeit (2016-05-16) komplett gesperrt --- 2::inwork -3503,13773 -3460,13828 -3459,13846 -3390,13940 -3345,13994
+	2::inwork -3494,13980 -3390,13940
+',
+         'from' => 1460584800,
+         'id' => 2777,
+         'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.466174.php',
+         'text' => 'Schifffahrtsufer: Bauarbeiten zwischen Bullengraben und Stabholzgraben, komplett gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => 1477911600
+       },
        undef,
        {
          'data' => '#: note: am So 2016-04-17 gegen 15 Uhr offen
@@ -3891,7 +3856,7 @@ userdel	q4::inwork; 8642,7876 8731,7956
        },
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2016-09-30 vvv
+#: last_checked: 2016-10-08 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -3962,6 +3927,26 @@ userdel	q3::inwork 4564,3457 4800,3391 4862,3363 5022,3318
          'text' => 'Krahmerstr.: Bauarbeiten, einige Engstellen',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => 'userdel	q4::inwork; 5013,10039 5026,10151 5047,10381
+',
+         'from' => 1475964000,
+         'id' => 2833,
+         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.522495.php',
+         'text' => 'Uhlandstr.: Bauarbeiten zwischen Lietzenburger Str. und Pariser Str., Einbahnstraßenregelung, offen Richtung Hohenzollerndamm, von 10.10.2016 bis etwa Mitte November 2016',
+         'type' => 'handicap',
+         'until' => 1479250799
+       },
+       {
+         'data' => 'userdel	q4::inwork; 4976,9670 4982,9729 4993,9843 5013,10039
+',
+         'from' => 1479078000,
+         'id' => 2834,
+         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.522495.php',
+         'text' => 'Uhlandstr.: Bauarbeiten zwischen Pariser Str. und Hohenzollerndamm, Einbahnstraßenregelung, offen Richtung Hohenzollerndamm, von ca. Mitte November 2016 bis Dezember 2016',
+         'type' => 'handicap',
+         'until' => 1483225199
        }
      
 );

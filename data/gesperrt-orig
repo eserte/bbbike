@@ -299,7 +299,7 @@ Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
 # REMOVED (Einbahnstraßenregelung ist hier zweifelhaft) --- #: XXX Wird die Einbahnstraßenregelung hier aufgehoben? --- #: last_checked: 2012-03-06 --- #: next_check: 2012-04-20 --- Niederlagstr.	1:q3 9972,12184 9961,12273
 # REMOVED (wie sieht's nach den Bauarbeiten aus?) --- Niederlagstr.	1 9943,12364 9934,12420
-Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3025,14644 -2950,14624 -2944,14652 -2942,14666 -3027,14689 -3042,14682
+Kolk/Behnitz	1 -3042,14682 -3025,14644 -2950,14624 -2944,14652 -2942,14666
 Hertelstr.	1 4893,6900 4787,6899
 Karl-Marx-Platz	1 13100,7626 12991,7549
 Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,12019
@@ -502,8 +502,6 @@ Zingster Str. (Gesundbrunnen)	1 9276,16032 9265,16109 9277,16154 9307,16190
 Neufahrwasserweg	1 20390,15307 20550,15551
 #: by: rjoop:
 Rotdornstr.	1 5085,7109 5121,7132 5141,7158 5139,7210
-#: by: HGinzel:
-Goebelplatz	1 1974,14646 1974,14565
 #: by: junga: vvv
 Rieppelstr.	1 851,15155 780,15358 794,15362 772,15460 768,15486
 Harriesstr.	1 768,15486 659,15469 525,15435
@@ -702,7 +700,7 @@ Harzburger Str. (Pankow), Klaustaler Str...	1s:q4 11442,18736 11419,18801 11463,
 #: by: Andy (compstars)
 #: confirmed_by: Luftbild
 #: XXX_indoor bei osm falsch herum
-Faucherweg	1 -1307,14801 -1251,14772 -1207,14781 -1141,14814 -896,14888
+Faucherweg	1 -1299,14797 -1251,14772 -1207,14781 -1141,14814 -896,14888
 Römerweg	1s:q2 19236,9710 19450,9728 19459,9842
 Michaelkirchplatz	1 11415,11392 11487,11390 11542,11342
 #: by: Ulrike Orlowski vvv
@@ -1393,7 +1391,7 @@ Neue Bahnhofstr.	1s:q3 14908,11231 14918,11249
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
 Lindenstr./Markgrafenstr.: Barrieren	3nocross 9797,10771 9807,10788 9829,10830
-Friedrichstr.: Straßenbahnhaltestelle	3nocross 9246,13235 9255,13164 9262,13111
+Friedrichstr.: Straßenbahnhaltestelle	3nocross 9246,13235 9254,13171 9262,13111
 Reinickendorfer Str.: Mittelstreifen mit Zaun	3nocross 7966,15571 7975,15500 8049,15470
 #: XXX_prog unbequemes Überqueren, bessere Alternativen existieren, sollte als eine Art handicap für Punkte implementiert sein
 Spittelmarkt: unbequemes Überqueren	3nocross 10238,11741 10299,11786 10314,11804
@@ -1630,7 +1628,7 @@ Märkische Allee: Mittelstreifen	3nocross 19896,11688 19918,11891 19928,11978 199
 Stralauer Allee: unbequemes Abbiegen	3nocross 13332,10832 13389,10808 13496,10763 13596,10722
 Stralauer Allee: unbequemes Abbiegen	3nocross 13596,10722 13678,10685 13779,10642
 Stralauer Allee: unbequem passierbare Straße	3nocross 14222,10430 14405,10340 14558,10264
-Stralauer Str.: Mittelstreifen	3nocross 11221,12250 11300,12241 11351,12221
+Stralauer Str.: Mittelstreifen	3nocross 11221,12250 11300,12241 11347,12223
 Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross 12630,8722 12742,8635 12772,8612
 Sonnenallee: Mittelstreifen	3nocross 13277,8211 13459,8072 13474,8060
 Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10659,12259 10625,12206 10574,12131
@@ -1769,6 +1767,7 @@ Rosenthaler Weg: Straßenbahntrasse	3nocross 11693,22482 11812,22523 11940,22587
 Altentreptower Str.: Mittelstreifen	3nocross 21307,12132 21400,12135 21573,12140
 Stülerstr.: Mittelstreifen	3nocross 6692,11365 6716,11439 6825,11486
 Saargemünder Str.: Mittelstreifen	3nocross 1884,4811 1747,4829 1479,4853
+Straße des 17. Juni: Mittelstreifen	3nocross 5758,11895 5810,11902 5900,11913
 Attilastr.: Geländer am Gehweg	3nocross 7628,4521 7667,4549 7690,4563
 # REMOVED (leicht überquerbar) --- #: XXX Mittelstreifen vielleicht leicht überquerbar, prüfen! --- Straße des 17. Juni: Mittelstreifen	3nocross 8303,12216 8344,12221 8538,12245
 abgeschlossenes Tor	3 * 8237,20098 *
@@ -2718,7 +2717,7 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3 9042,11839 8969,118
 #: next_check: 2017-09-02
 Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,14449 7561,14458 7426,14539 7368,14573
 # 
-#: last_checked: 2016-09-09
+#: last_checked: 2016-10-05
 Weichselplatz: Uferweg wegen Bauarbeiten gesperrt	2::inwork 12851,9309 12907,9073
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2016
@@ -2731,13 +2730,13 @@ Sülzhayner Str.: komplett gesperrt wegen Bauarbeiten, vielleicht dauerhaft	2::in
 #: check_frequency: 60d
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 # 
-#: last_checked: 2016-09-14
+#: last_checked: 2016-10-05
 Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2 14447,10491 14270,10584
 # 
 #: next_check_id: MARIANNEN-2016 vvv
 #: source_id: INKO_2147340291_COPY_1 vvv
 #: source_id: 2147340291 vvv
-#: last_checked: 2016-09-29 vvv
+#: last_checked: 2016-10-06 vvv
 #: next_check: 2016-10-15 vvv
 #: valid: -20161015 vvv
 Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11512,10105 11616,10288
@@ -2769,7 +2768,7 @@ Haasestr.: Bauarbeiten, keine Durchfahrt möglich	2::inwork 14328,11320 14286,111
 #: XXX Bauarbeiten (Erweiterung des Rütli-Campus?)
 #: XXX Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="137084083" version="6"
-#: last_checked: 2016-09-02
+#: last_checked: 2016-10-05
 #: check_frequency: 60d
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,9200 12548,9167
 # 
@@ -2813,10 +2812,10 @@ SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2336,1111 2408,1144 2504,1
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
-#: osm_watch: way id="318581438" version="3"
+#: osm_watch: way id="318581438" version="4"
 #: last_checked: 2016-07-07
 #: check_frequency: 120d
-Fünf Morgen: Bauarbeiten, gesperrt. Wird es eine Anbindung an den Hüttenweg geben?	2::inwork 1437,5015 1483,5161
+Fünf Morgen: Bauarbeiten, gesperrt. Wird es eine Anbindung an den Hüttenweg geben?	2::inwork 1437,5015 1486,5175
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5713
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810369999434/9999434/00071829/29-Anlagen/02/vzb0641_IV-B-Plan_XXI-32d-1_Auswertg_TOeB.pdf
@@ -2836,7 +2835,7 @@ Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 # 
 #: next_check_id: ZIEGELSTR-2016
 #: XXX Ende der Bauarbeiten?
-#: last_checked: 2016-09-30
+#: last_checked: 2016-10-08
 #: check_frequency: 21d
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076 9559,13087
 # 
@@ -2852,13 +2851,11 @@ Schwarzer Weg: wegen Straßenbau gesperrt	2::inwork 17295,7323 17295,7330 17296,7
 # 
 #: next_check_id: FISCHERINSEL-2015 vvv
 #: source_id: 2147339543 vvv
-#: last_checked: 2016-09-17 vvv
-#: next_check: 2016-10-31 vvv
+#: last_checked: 2016-10-08 vvv
 Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10703,11837
 Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10703,11837 10687,11853 10869,11949
 Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10672,11870
 Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,11853 10869,11949
-#: next_check ^^^
 #: last_checked ^^^
 #: source_id ^^^
 #: next_check_id ^^^
@@ -2927,23 +2924,21 @@ Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, gg
 #: by: Stefan Klinkusch: "gesperrt" vvv
 #: source_id: INKO_118000 vvv
 #: osm_watch: way id="25115001" version="8" vvv
-#: last_checked: 2016-05-16 vvv
-#: check_frequency: 90d vvv
+#: last_checked: 2016-10-08 vvv
 # REMOVED (doch benutzbar) --- (Baustraße an der Freybrücke)	2::inwork -3075,11510 -3197,11554
 (Treppe an der Freybrücke)	2::inwork -3181,11496 -3177,11507 -3173,11520
 Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3217,11570
-#: check_frequency ^^^
 #: last_checked ^^^
 #: osm_watch ^^^
 #: source_id ^^^
 #: by ^^^
 #: XXX ^^^
 # 
-#: last_checked: 2016-09-14
+#: last_checked: 2016-10-08
 #: check_frequency: 120d
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 # 
-#: last_checked: 2016-09-14
+#: last_checked: 2016-10-08
 #: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 
@@ -3050,7 +3045,7 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)
-#: last_checked: 2016-07-21
+#: last_checked: 2016-10-08
 #: check_frequency: 120d
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
 # 
@@ -3065,7 +3060,7 @@ Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9898,12161 9882,12259
 # 
 # REMOVED --- #: by: Kai Wagner --- #: confirmed_by: srt --- #: XXX hier entsteht wohl eine neue Filiale von Möbel Kraft --- #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.474190.php --- #: last_checked: 2016-02-10 --- #: check_frequency: 360d --- Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 17221,14268 17274,14280
 # 
-#: last_checked: 2016-09-07
+#: last_checked: 2016-10-08
 #: check_frequency: 120d
 Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
 # 
@@ -3092,7 +3087,7 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603
 # 
 #: note: Baugelände
-#: last_checked: 2016-09-02
+#: last_checked: 2016-10-08
 #: check_frequency: 180d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
@@ -3128,7 +3123,7 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 #: next_check_id: LOEWENBRUECKE-2018
 #: by: http://www.tagesspiegel.de/berlin/haengepartie-fuer-die-loewenbruecke/4572208.html
 #: note: früher bei osm, jetzt komplett entfernt: osm_watch: way id="22792488" version="5"
-#: last_checked: 2014-10-12
+#: last_checked: 2016-10-08
 #: next_check: 2018-12-31
 Löwenbrücke: gesperrt	2:inwork 6406,11784 6452,11778
 # 

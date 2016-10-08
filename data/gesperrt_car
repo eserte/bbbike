@@ -49,7 +49,7 @@ Holtei von S - Boxhagener	3 14575,11407 14639,11512 14577,11582
 Boxhagener von W - Holtei	3 14577,11582 14639,11512 14710,11626
 Holtei von N - Boxhagener	3 14710,11626 14639,11512 14752,11369
 Boxhagener von E - Holtei	3 14752,11369 14639,11512 14575,11407
-Bachstr. - 17. Juni (?)	3 5790,12026 5775,11975 5758,11895 5900,11913
+Bachstr. - 17. Juni (?)	3 5790,12026 5775,11975 5758,11895 5810,11902 5900,11913
 Fasanen - Hertzallee (nur für BVG frei)	3 5456,11742 5356,11512 5352,11502 5587,11397
 Fasanenstr.	1 5192,10234 5196,10398
 Naumannstr. - Kolonnenstr.	3 7713,8600 7709,8777 7642,8815
@@ -428,11 +428,11 @@ Weichselstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::i
 Weichselstr. -> Waldeyerstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14887,11929 14926,12129 15003,12241
 Waldeyerstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 15003,12241 14926,12129 14994,12121
 Waldeyerstr. -> Weichselstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 15003,12241 14926,12129 14887,11929
-Friedrichstr. (Straßenbahn)	3nocross::ignrte 9225,13389 9246,13235 9255,13164 9262,13111
-Friedrichstr. -> Claire-Waldoff-Str.: Friedrichstr. (Straßenbahn)	3::igndisp 9255,13164 9246,13235 9132,13187
+Friedrichstr. (Straßenbahn)	3nocross::ignrte 9225,13389 9246,13235 9254,13171 9262,13111
+Friedrichstr. -> Claire-Waldoff-Str.: Friedrichstr. (Straßenbahn)	3::igndisp 9254,13171 9246,13235 9132,13187
 Claire-Waldoff-Str. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9132,13187 9246,13235 9225,13389
-Friedrichstr. -> Johannisstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9246,13235 9255,13164 9385,13174
-Johannisstr. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9385,13174 9255,13164 9262,13111
+Friedrichstr. -> Johannisstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9246,13235 9254,13171 9385,13174
+Johannisstr. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9385,13174 9254,13171 9262,13111
 Friedrichstr. (Straßenbahn)	3nocross::ignrte 9262,13111 9269,13060 9279,12953
 Friedrichstr. -> Ziegelstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9262,13111 9269,13060 9401,13072
 Ziegelstr. -> Friedrichstr.: Friedrichstr. (Straßenbahn)	3::igndisp 9401,13072 9269,13060 9279,12953
@@ -702,7 +702,7 @@ Heliosstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20975,14601 20
 Heliosstr. -> Vierlandenstr.: Straßenbahntrasse	3::igndisp 20975,14601 20822,14594 20761,14589
 Geitelsteig	1 1988,14870 1977,14751 1974,14646
 Schweiggerweg	1 2081,14570 2079,14704 2099,14852
-Jungfernheideweg	1 1465,14963 1423,14679 1361,14431
+Jungfernheideweg	1 1465,14963 1406,14686 1386,14605 1361,14431
 Dihlmannstr.: Radweg existiert	1 651,15091 755,15123 851,15155 957,15189 976,15195 1065,15229
 Bahntrasse	3nocross::ignrte 16135,2135 16056,2034 16002,1964 15875,1796 15835,1747
 Zwickauer Damm -> Sattlerstr.: Bahntrasse	3::igndisp 16135,2135 16056,2034 16177,1943
@@ -941,9 +941,9 @@ Verl. Rathenaustr. -> An der Wuhlheide: Mittelstreifen	3::igndisp 19372,6579 192
 Kiautschoustr.	1 7007,14911 7192,14976
 Rochstr.: Barriere	3 10418,12922 10535,13006 10571,13034
 Rochstr.: Barriere	3 10571,13034 10535,13006 10418,12922
-Mittelstreifen	3nocross::ignrte 7936,12906 7948,12918 8039,13009
-Ella-Trebe-Str. -> Rahel-Hirsch-Str.: Mittelstreifen	3::igndisp 7939,13026 7948,12918 8039,13009
-Rahel-Hirsch-Str. -> Ella-Trebe-Str.: Mittelstreifen	3::igndisp 7936,12906 7948,12918 7939,13026
+Mittelstreifen	3nocross::ignrte 7930,12912 7946,12932 8039,13009
+Ella-Trebe-Str. -> Rahel-Hirsch-Str.: Mittelstreifen	3::igndisp 7939,13026 7946,12932 8039,13009
+Rahel-Hirsch-Str. -> Ella-Trebe-Str.: Mittelstreifen	3::igndisp 7930,12912 7946,12932 7939,13026
 verboten	3nocross::ignrte -12666,-1311 -12549,-1277 -12552,-1233
 Am Kanal -> Am Kanal: verboten	3::igndisp -12317,-1212 -12549,-1277 -12666,-1311
 Am Kanal -> Joliot-Curie-Str.: verboten	3::igndisp -12317,-1212 -12549,-1277 -12542,-1305
@@ -952,10 +952,10 @@ Französische Str. -> Joliot-Curie-Str.: verboten	3::igndisp -12552,-1233 -12549,
 Joliot-Curie-Str. -> Am Kanal: verboten	3::igndisp -12542,-1305 -12549,-1277 -12666,-1311
 Mittelstr. (Potsdam)	1 -12884,-769 -12697,-729
 Emma-Herwegh-Str.	1 7795,13168 7595,12980
-Margarete-Kühn-Str.: Poller am Salzufer	3 5203,12387 5133,12240 5018,12322
-Margarete-Kühn-Str.: Poller am Salzufer	3 5203,12387 5133,12240 5181,12195
-Margarete-Kühn-Str.: Poller am Salzufer	3 5018,12322 5133,12240 5203,12387
-Margarete-Kühn-Str.: Poller am Salzufer	3 5181,12195 5133,12240 5203,12387
+Margarete-Kühn-Str.: Poller am Salzufer	3 5194,12398 5133,12240 5013,12323
+Margarete-Kühn-Str.: Poller am Salzufer	3 5194,12398 5133,12240 5181,12195
+Margarete-Kühn-Str.: Poller am Salzufer	3 5013,12323 5133,12240 5194,12398
+Margarete-Kühn-Str.: Poller am Salzufer	3 5181,12195 5133,12240 5194,12398
 Eberswalder Str. (Bernau)	1 23109,30968 23103,30923 23084,30893 22917,30635
 Rutnikstr. - Möllendorffstr.: Abbiegen verboten	3 15648,12687 15546,12690 15550,12625
 Hermannswerder	1 -14306,-2867 -14044,-2918 -13765,-2974 -13733,-2967
@@ -1486,9 +1486,9 @@ Treskowstr. -> Prenzlauer Promenade: Mittelstreifen	3::igndisp 12327,17211 11893
 Voigtstr. - Pettenkoferstr.	1 14858,12775 14834,12767
 Gryphius/Boxhagener Str.	3 14550,11732 14513,11657 14496,11620
 Gryphius/Boxhagener Str.	3 14550,11732 14513,11657 14561,11600
-Straßenbahntrasse	3nocross::ignrte 10387,12760 10360,12793 10309,12854
+Straßenbahntrasse	3nocross::ignrte 10387,12760 10360,12793 10308,12859
 Spandauer Str. -> St. Wolfgang-Str.: Straßenbahntrasse	3::igndisp 10387,12760 10360,12793 10285,12744
-St. Wolfgang-Str. -> Spandauer Str.: Straßenbahntrasse	3::igndisp 10285,12744 10360,12793 10309,12854
+St. Wolfgang-Str. -> Spandauer Str.: Straßenbahntrasse	3::igndisp 10285,12744 10360,12793 10308,12859
 Oskar-Ziethen-Krankenhaus: Schranke und Tor	3 16512,11894 16541,12071 16556,12180
 Oskar-Ziethen-Krankenhaus: Schranke und Tor	3 16556,12180 16541,12071 16512,11894
 Grünspechtweg: Schranke	3 6988,23244 7059,23127 7171,22942
@@ -1850,3 +1850,5 @@ Klemkepark -> Armbrustweg: Mittelstreifen	3::igndisp 7588,18761 7599,18705 7620,
 Armbrustweg -> Klemkestr.: Mittelstreifen	3::igndisp 7620,18615 7599,18705 7520,18701
 Armbrustweg -> Klemkepark: Mittelstreifen	3::igndisp 7620,18615 7599,18705 7588,18761
 Schulstr. (Tegel)	1 1953,20149 1794,20110
+Möllentordamm	1 -2942,14666 -3027,14689 -3042,14682
+Goebelplatz	1 1974,14646 1974,14565

@@ -130,7 +130,7 @@ hinter dem "Alten Zollhaus" halbrechts abbiegen	CP; 10313,10084 10168,10085 1015
 Frankfurter Allee - Kreutzigerstr.: Einfahrt in Hausdurchgang	CP2; 14291,12220 14285,12190
 #: XXX_prog: RL:ja, GPS:nein
 #: XXX_prog: eigentlich nicht notwendig, da als RW8/RW9 bereits gekennzeichnet. Allerdings wird das im CGI noch gar nicht visualisiert. Vielleicht in der der stilisierten Straßenführung auf der *rechten* (falschen) Seite unterbringen?
-Lennéstr: Radweg Richtung Ebertstr. auf der linken Seite im Tiergarten	CS; 8203,11686 8335,11718 8438,11753 8489,11782 8571,11846
+Lennéstr: Radweg Richtung Ebertstr. auf der linken Seite im Tiergarten	CS; 8203,11686 8322,11715 8438,11753 8489,11782 8571,11846
 # REMOVED (diese Angaben sind nach temp-blockings gewandert) --- #: XXX_indoor: hmm, folgende zwei Datensätze sind mit keinen Konsequenzen verbunden. nach permanent temp_blockings verschieben? oder Penalty einplanen? Auf jeden Fall nicht bei GPS-Tracks gesondert ausgeben. --- Jüdenstr.: unbequemes Passieren der Grunerstr., ggfs. Ampel an der Spandauer Str. nehmen	CP; 10772,12515 10803,12470 10805,12468 10831,12371 --- Jüdenstr.: unbequemes Passieren der Grunerstr., ggfs. Ampel an der Spandauer Str. nehmen	CP; 10831,12371 10805,12468 10803,12470 10772,12515
 #: XXX_prog: RL:ja, GPS:jein (wegen spitzem Winkel) (evtl. ein Kandidat für comments_misc)
 #: note: und nicht der Asphaltstraße
@@ -399,7 +399,7 @@ Preußenallee - Heerstr.: auf der linken Gehwegseite bis zur Ampel Länderallee vo
 Schorlemerallee - Gregor-Mendel-Str.: etwa 20 Meter vor der Kreuzung die Straßenseite wechseln	PI; 3643,6519 3664,6523 3650,6665
 Gregor-Mendel-Str. - Schorlemerallee: Überquerungsmöglichkeit ca. 20 Meter zur rechten Seite	CP; 3650,6665 3664,6523 3836,6550
 # REMOVED (die Radwegführung ist mittlerweile eindeutig) --- #: by: norbert winkelmann: vvv --- Welzower Steig: links des Grabens halten	CP; 6529,21620 6511,21649 6478,21652 --- Welzower Steig: links des Grabens halten	CP; 6223,21952 6257,22005 6111,22155 --- Welzower Steig: rechts des Grabens halten	CP; 6111,22155 6257,22005 6223,21952 --- Welzower Steig: rechts des Grabens halten	CP; 6478,21652 6511,21649 6529,21620 --- #: by: ^^^
-Rahel-Hirsch-Str. - Ella-Trebe-Str.: bereits an der Ampel Alt-Moabit/Moltkebrücke auf den linken Gehweg wechseln	PI; 7936,12906 7948,12918 7939,13026
+Rahel-Hirsch-Str. - Ella-Trebe-Str.: bereits an der Ampel Alt-Moabit/Moltkebrücke auf den linken Gehweg wechseln	PI; 7930,12912 7946,12932 7939,13026
 Babelsberger Str. - Uferweg: bereits an der Ampel den Radweg auf der linken Straßenseite benutzen	PI; -12493,-1896 -12457,-1857 -12363,-1742
 Ausgeschildert Richtung Buga-Park	CP2; -14305,2184 -14100,2144
 Ausgeschildert Richtung Kurstr.	CP2; 9972,12184 10003,12113
@@ -410,7 +410,7 @@ Lindenstr. - Breitestr.: auf dem linken Geh/Radweg bis zur Dortustr. fahren und 
 Breitestr. - Lindenstr.: bereits an der Kreuzung "Wall am Kiez" auf die linke Straßenseite wechseln	PI; -13516,-1517 -13375,-1546 -13366,-1499
 # REMOVED (nicht mehr notwendig) --- Frankfurter Allee - Buchberger Str.: bereits an der Ampel Atzpodienstr. auf die linke Straßenseite wechseln	PI; 16413,11906 16368,11912 16242,11533
 # REMOVED (reguläres Abbiegen mittlerweile möglich) --- Buchberger Str. - Frankfurter Allee: zum Überqueren der Frankfurter Allee entweder Ampel an der Atzpodienstr. (rechts) oder Alfredstr. (links) benutzen	CP; 16242,11533 16368,11912 16317,11920
-Holzmarktstr. - Schillingstr.: bereits an der Kreuzung Stralauer Allee/Alexanderstr. auf die linke Straßenseite wechseln	PI; 11351,12221 11388,12202 11452,12318
+Holzmarktstr. - Schillingstr.: bereits an der Kreuzung Stralauer Allee/Alexanderstr. auf die linke Straßenseite wechseln	PI; 11347,12223 11388,12202 11452,12318
 #: XXX_prog: Zeitverlust durch Umweg; Ampel wird nicht in der Berechnung verwendet!
 Schillingstr. - Holzmarktstr.: zum Linksabbiegen die Ampel an der Kreuzung Alexanderstr. benutzen	CP; 11452,12318 11388,12202 11513,12138
 Frankfurter Allee - Bürgerheimstr.: bereits an der Ampel Alfredstr. auf die linke Straßenseite wechseln	PI; 16207,11937 16317,11920 16326,11966

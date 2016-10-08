@@ -248,7 +248,7 @@ Mudrackzeile	1 6985,17812 7020,17690
 Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
-Kolk/Behnitz/Möllentordamm	1 -3042,14682 -3025,14644 -2950,14624 -2944,14652 -2942,14666 -3027,14689 -3042,14682
+Kolk/Behnitz	1 -3042,14682 -3025,14644 -2950,14624 -2944,14652 -2942,14666
 Hertelstr.	1 4893,6900 4787,6899
 Karl-Marx-Platz	1 13100,7626 12991,7549
 Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,12019
@@ -382,7 +382,6 @@ Hornblendeweg	1 10440,1283 10415,1323 10402,1362 10425,1400 10510,1441 10594,146
 Zingster Str. (Gesundbrunnen)	1 9276,16032 9265,16109 9277,16154 9307,16190
 Neufahrwasserweg	1 20390,15307 20550,15551
 Rotdornstr.	1 5085,7109 5121,7132 5141,7158 5139,7210
-Goebelplatz	1 1974,14646 1974,14565
 Rieppelstr.	1 851,15155 780,15358 794,15362 772,15460 768,15486
 Harriesstr.	1 768,15486 659,15469 525,15435
 Rapsstr.	1 755,15123 702,15274 693,15335 665,15414 659,15469
@@ -512,7 +511,7 @@ Fuchsbau	1 17590,7828 17651,7973
 Drosselstieg	1 17683,7958 17748,8109
 Blaurackenweg	1 17532,8125 17647,8071 17613,7989
 Harzburger Str. (Pankow), Klaustaler Str...	1s 11442,18736 11419,18801 11463,18817 11469,18799 11483,18753 11462,18743 11442,18736
-Faucherweg	1 -1307,14801 -1251,14772 -1207,14781 -1141,14814 -896,14888
+Faucherweg	1 -1299,14797 -1251,14772 -1207,14781 -1141,14814 -896,14888
 Römerweg	1s 19236,9710 19450,9728 19459,9842
 Michaelkirchplatz	1 11415,11392 11487,11390 11542,11342
 Berenhorststr.	1 4816,17712 4862,17934
@@ -1032,9 +1031,9 @@ Ritterstr.	1 -3369,14532 -3316,14504
 Neue Bahnhofstr.	1s 14908,11231 14918,11249
 Barrieren	3nocross::ignrte 9797,10771 9807,10788 9829,10830
 Markgrafenstr. -> Lindenstr.: Barrieren	3::igndisp 9799,10846 9807,10788 9829,10830
-Straßenbahnhaltestelle	3nocross::ignrte 9246,13235 9255,13164 9262,13111
-Friedrichstr. -> Johannisstr.: Straßenbahnhaltestelle	3::igndisp 9246,13235 9255,13164 9385,13174
-Johannisstr. -> Friedrichstr.: Straßenbahnhaltestelle	3::igndisp 9385,13174 9255,13164 9262,13111
+Straßenbahnhaltestelle	3nocross::ignrte 9246,13235 9254,13171 9262,13111
+Friedrichstr. -> Johannisstr.: Straßenbahnhaltestelle	3::igndisp 9246,13235 9254,13171 9385,13174
+Johannisstr. -> Friedrichstr.: Straßenbahnhaltestelle	3::igndisp 9385,13174 9254,13171 9262,13111
 Mittelstreifen mit Zaun	3nocross::ignrte 7966,15571 7975,15500 8049,15470
 Reinickendorfer Str. -> Nettelbeckpl.: Mittelstreifen mit Zaun	3::igndisp 8049,15470 7975,15500 7975,15484
 Nettelbeckpl. -> Reinickendorfer Str.: Mittelstreifen mit Zaun	3::igndisp 7975,15484 7975,15500 7966,15571
@@ -1794,9 +1793,9 @@ Lehmbruckstr. -> Stralauer Allee: unbequemes Abbiegen	3::igndisp 13690,10715 136
 unbequem passierbare Straße	3nocross::ignrte 14222,10430 14405,10340 14558,10264
 Stralauer Allee -> Bödikerstr.: unbequem passierbare Straße	3::igndisp 14222,10430 14405,10340 14447,10491
 Bödikerstr. -> Stralauer Allee: unbequem passierbare Straße	3::igndisp 14447,10491 14405,10340 14558,10264
-Mittelstreifen	3nocross::ignrte 11221,12250 11300,12241 11351,12221
+Mittelstreifen	3nocross::ignrte 11221,12250 11300,12241 11347,12223
 Stralauer Str. -> Dircksenstr.: Mittelstreifen	3::igndisp 11221,12250 11300,12241 11273,12301
-Dircksenstr. -> Stralauer Str.: Mittelstreifen	3::igndisp 11273,12301 11300,12241 11351,12221
+Dircksenstr. -> Stralauer Str.: Mittelstreifen	3::igndisp 11273,12301 11300,12241 11347,12223
 unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross::ignrte 12630,8722 12742,8635 12772,8612
 Sonnenallee -> Schönstedtstr.: unbequemes Passieren des Mittelstreifens (parkende Autos)	3::igndisp 12772,8612 12742,8635 12649,8535
 Schönstedtstr. -> Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3::igndisp 12649,8535 12742,8635 12630,8722
@@ -2164,6 +2163,9 @@ Stülerstr. -> zur Thomas-Dehler-Str.: Mittelstreifen	3::igndisp 6692,11365 6716,
 Mittelstreifen	3nocross::ignrte 1884,4811 1747,4829 1479,4853
 Saargemünder Str. -> Garystr.: Mittelstreifen	3::igndisp 1884,4811 1747,4829 1736,4774
 Garystr. -> Saargemünder Str.: Mittelstreifen	3::igndisp 1736,4774 1747,4829 1479,4853
+Mittelstreifen	3nocross::ignrte 5758,11895 5810,11902 5900,11913
+Tiergartenufer -> Str. des 17. Juni: Mittelstreifen	3::igndisp 5813,11886 5810,11902 5758,11895
+Str. des 17. Juni -> Tiergartenufer: Mittelstreifen	3::igndisp 5900,11913 5810,11902 5813,11886
 Geländer am Gehweg	3nocross::ignrte 7628,4521 7667,4549 7690,4563
 Mariendorfer-Hafen-Weg -> Attilastr.: Geländer am Gehweg	3::igndisp 7692,4464 7667,4549 7628,4521
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
@@ -2849,7 +2851,7 @@ Clara-Immerwahr-Str.: Bauzäune, Fußgänger können aber u.U. passieren	2::inwork 1
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
 SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2408,1144 2352,1267
 SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2336,1111 2408,1144 2504,1186
-Fünf Morgen: Bauarbeiten, gesperrt. Wird es eine Anbindung an den Hüttenweg geben?	2::inwork 1437,5015 1483,5161
+Fünf Morgen: Bauarbeiten, gesperrt. Wird es eine Anbindung an den Hüttenweg geben?	2::inwork 1437,5015 1486,5175
 Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076 9559,13087
 Schwarzer Weg: wegen Straßenbau gesperrt	2::inwork 17295,7323 17295,7330 17296,7401
@@ -3472,3 +3474,4 @@ Otto-Braun-Str., linker Gehweg	1::igndisp 11451,13301 11352,13180
 Invalidenstr., linker Gehweg	1::igndisp 8337,13541 8183,13482
 Lichtenberger Brücke, linker Gehweg	1::igndisp 16978,11852 16818,11878
 Alexanderstr., linker Gehweg	1::igndisp 11353,12436 11329,12497
+Straße des 17. Juni, linker Geh/Radweg	1::igndisp 5758,11895 5813,11886
