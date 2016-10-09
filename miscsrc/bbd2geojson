@@ -26,4 +26,6 @@ GetOptions(
 my $file = shift || usage();
 my $s = Strassen->new($file);
 my $s_geojson = Strassen::GeoJSON->new($s);
+print "// generated with bbd2geojson (from BBBike distribution)\n";
 print $s_geojson->bbd2geojson(bbbgeojsonp => $bbbgeojsonp, pretty => !$compact, utf8 => $compact);
+print "\n";
