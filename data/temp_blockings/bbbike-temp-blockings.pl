@@ -25604,4 +25604,14 @@ EOF
 userdel	q4::inwork; 4976,9670 4982,9729 4993,9843 5013,10039
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg (Bordsteine!)',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2016-10-11
+#: check_frequency: 14d
+userdel	q3::inwork 13295,11792 13173,11788 13066,11854
+EOF
+     },
     );

@@ -3949,6 +3949,17 @@ userdel	q4::inwork; 5013,10039 5026,10151 5047,10381
          'text' => 'Uhlandstr.: Bauarbeiten zwischen Pariser Str. und Hohenzollerndamm, Einbahnstraßenregelung, offen Richtung Hohenzollerndamm, von ca. Mitte November 2016 bis Dezember 2016',
          'type' => 'handicap',
          'until' => 1483225199
+       },
+       {
+         'data' => '#: last_checked: 2016-10-11
+#: check_frequency: 14d
+userdel	q3::inwork 13295,11792 13173,11788 13066,11854
+',
+         'from' => undef,
+         'id' => 2835,
+         'text' => 'Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg (Bordsteine!)',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
