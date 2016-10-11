@@ -21,8 +21,8 @@ BEGIN {
     }
 }
 
-use POSIX 'strftime';
-use constant TODO_MEHRINGDAMM_FRAGEZEICHEN => "2016-10-14T12:00:00" gt strftime('%FT%T', localtime) && 'temporary fragezeichen entry';
+#use POSIX 'strftime';
+#use constant TODO_MEHRINGDAMM_FRAGEZEICHEN => "2016-10-14T12:00:00" gt strftime('%FT%T', localtime) && 'temporary fragezeichen entry';
 
 my @insert_points = ($^X, "$FindBin::RealBin/../miscsrc/insert_points");
 my $datadir = "$FindBin::RealBin/../data";
@@ -66,7 +66,6 @@ for my $use_indexer (0, 1) {
 	    my @res = run_insert_points("-operation", "grep",
 					@common_args,
 					$dudenstr_orig);
-	    local $TODO = TODO_MEHRINGDAMM_FRAGEZEICHEN;
 	    is(join(" ", sort @res),
 	       join(" ",
 		    qw(../misc/ampelschaltung-orig.txt),
@@ -110,7 +109,6 @@ for my $use_indexer (0, 1) {
 	    my @res = run_insert_points("-operation", "change",
 					@common_args,
 					$dudenstr_orig, "0,0");
-	    local $TODO = TODO_MEHRINGDAMM_FRAGEZEICHEN;
 	    is(join(" ", sort @res),
 	       join(" ",
 		    qw(../misc/ampelschaltung-orig.txt),

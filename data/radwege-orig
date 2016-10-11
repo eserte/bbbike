@@ -27,15 +27,8 @@
 # * möglichst auf "ist" oder andere Verben verzichten (ist aber nicht immer möglich, siehe oben)
 # 
 	RW1; 9229,8785 9227,8890 9225,9038 9224,9053 9225,9111 9248,9350
-#: XXX kommen hier noch Radwegschilder hin? An der Kreuzbergstr., an der Schwiebusser Str.? vvv
-#: XXX Testcase in insert_points anpassen!
-#: last_checked: 2016-09-30 vvv
-#: check_frequency: 14d vvv
 	RW3; 9248,9350 9225,9111 9224,9053 9225,9038 9227,8890
 asphaltiert	RW1; 9227,8890 9229,8785
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
 	RW1;RW1 9248,9350 9280,9476 9334,9670 9387,9804 9444,9919 9448,10014 9416,10196
 	RW2;RW2 9229,8785 9272,8781 9395,8726
 Gehwegplatten	RW1;RW2 9395,8726 9570,8715 9801,8683
@@ -97,16 +90,16 @@ asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9233,8597 9229,8718
 #: XXX Radspuren in Bau vvv
 #: osm_watch: way id="30709741" version="12"
 #: osm_watch: way id="354645896" version="2"
-#: last_checked: 2016-09-30 vvv
+#: last_checked: 2016-10-10 vvv
 #: next_check: 2016-12-03
 #: source_id: 2147340437
 	RW1;RW3 8680,6322 8661,6169 8642,5998
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.506616.php
-#: source_id: 2147340425
-#: next_check: 2016-10-07
-	RW3;RW0 8642,5998 8627,5866 8613,5745
 #: last_checked ^^^
 #: XXX ^^^
+# REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.506616.php --- #: source_id: 2147340425 --- #: next_check: 2016-10-07
+	RW3;RW3 8642,5998 8627,5866
+	RW3; 8627,5866 8613,5745
+Radspuren hören ca. 50 Meter vor der Kreuzung auf	RW3; 8613,5745 8627,5866
 	RW3;RW3 8613,5745 8600,5580
 	RW1;RW3 8600,5580 8593,5491
 	RW1;RW1 8593,5491 8642,5422
@@ -669,8 +662,8 @@ die letzten 50 Meter sind benutzungspflichtig	RW3; 3741,10097 3852,10236
 	RW2;RW2 6173,12396 6354,12278 6656,12075
 	RW2;RW2 6787,12099 7039,12314
 	RW2; 6873,11011 7002,11034
-	RW1;RW9 11607,7145 11617,7083 11652,6879 11663,6806
-	RW1;RW1 11663,6806 11672,6737 11689,6634
+	RW1;RW9 11607,7145 11617,7083 11652,6879 11664,6796
+	RW1;RW1 11664,6796 11672,6737 11689,6634
 	RW1;RW3 -927,6888 -739,6838
 Wurzelschäden, wellig	RW1;RW1 -739,6838 -130,6694 218,6571
 	RW1;RW9 2688,7067 2576,7026 2465,6984 2403,6962 2266,6911 2155,6873 2130,6865 2052,6847 1960,6826
@@ -873,7 +866,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736 20755,5750
 #: XXX laut fritz "geänderte Straßenführung" bis 31.12.2016
 #: source_id: IM_023718
 #: source_id: 2147339540
-#: last_checked: 2016-09-26 vvv
+#: last_checked: 2016-10-10 vvv
 #: check_frequency: 90d vvv
 	RW2; 14015,7631 14095,7568 14174,7505
 # REMOVED, siehe unten ---	RW1; 14174,7505 14302,7429 14357,7450 14405,7435 14424,7401 14432,7353 14451,7340
@@ -1192,8 +1185,8 @@ Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW5; 6460,8688 6449,8807 6449,8845 6445
 	RW1;RW1 7402,8208 7446,8200 7497,8168 7582,8123 7639,8091 7710,8051 7733,8023
 #: XXX Wilhelm-Kabus-Str.: eventuell wird der Gehweg Richtung Süden für Radfahrer freigegeben
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4159&options=4
-#: last_checked: 2016-07-04
-#: check_frequency: 90d
+#: last_checked: 2016-10-10
+#: check_frequency: 120d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
 	RW2;RW4 7717,7879 7718,7820 7696,7771
 	RW2;RW0 4324,8899 4325,8998 4325,9082 4325,9159 4339,9224 4377,9258
@@ -4537,7 +4530,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1239
 	RW3;RW3 12969,7610 12991,7549 13015,7471
 #: next_check_id: KARLMARXSTR-2016
 #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus?
-#: last_checked: 2016-09-14
+#: last_checked: 2016-10-10
 #: check_frequency: 60d
 	RW4; 12969,7610 12914,7785
 # REMOVED (wieder entfernt) --- #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus? --- #: last_checked: 2016-03-01 ---	RW3; 12898,7832 12865,7923 12830,8031 12794,8103 12753,8187

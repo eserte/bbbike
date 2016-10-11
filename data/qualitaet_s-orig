@@ -10,7 +10,7 @@
 # REMOVED (Bauarbeiten beendet) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5898 --- #: note: oder man f‰hrt auf dem mit zahlreichen Engstellen zugestellten Radweg, muss dann aber ggfs. warten --- #: last_checked: 2014-03-21 --- #: valid: -20140523 --- Bergmannstr.: w‰hrend der Bauarbeiten zwischen Heim- und Friesenstr. Umleitung ¸ber gepflasterte Fahrbahn	Q2 9973,9232 9880,9233 9793,9241
 # 
 #: next_check_id: DIESEL-2015 vvv
-#: last_checked: 2016-08-23 vvv
+#: last_checked: 2016-10-10 vvv
 #: check_frequency: 60d vvv
 Dieselstr., Umfahrung: Asphalt mit Rollsplit	Q1 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112
 Dieselstr., Umfahrung: Asphalt	Q0 14419,8112 14429,8074
@@ -53,7 +53,9 @@ Hauptstr. (Rosenthal, Wilhelmsruh): Kopfsteinpflaster auf der Straﬂe, Radwege OK
 Hauptstr. (Rosenthal, Wilhelmsruh)/Mˆnchm¸hler Str.: schlechtes Kopfsteinpflaster (12 km/h)	Q3 8277,21257 8389,21468 8460,21602 8473,21633 8568,21863 8556,21918 8401,22013 8430,22110 8439,22143 8464,22215 8543,22413 8554,22440 8900,23274 8903,23349 8909,23506
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4247 (Asphaltierung??)
 #: XXX: wurden Bahnhofstr. und Hauptstr. in Blankenfelde mittlerweile asphaltiert? Oder ist nur der ˆstliche Abschnitt gemeint? vvv
+#: osm_watch: way id="444587490" version="1"
 Bahnhofstr.: schlechtes Kopfsteinpflaster	Q3 8803,23478 8909,23506
+#: osm_watch: way id="30768385" version="11"
 Hauptstr. (Blankenfelde): schlechtes Kopfsteinpflaster	Q3 8909,23506 9175,23620
 #: XXX ^^^
 Hauptstr. (Blankenfelde): Asphalt	Q0 9175,23620 9228,23643
@@ -66,9 +68,9 @@ Berliner Str. (Blankenfelde): Asphalt	Q0 9415,23699 9437,23680 9490,23531 9528,2
 B96a: Asphalt	Q0 9228,23643 9146,23843 8984,24078 8944,24186 8885,24344 8826,24501 8798,24575 8682,24883 8665,24941 8661,24952 8636,25016 8571,25180 8567,25189 8548,25239 8501,25358 8488,25390
 #: add_fragezeichen: ist hier asphaltiert oder betoniert?
 Hobrechtsfelder Chaussee (bis Kurve): OK	Q0 15589,27116 15230,26560 14859,26029 14472,25449 14434,25388 14308,25196 14217,24999
-#: corrected_by: osm (schlechtes Kopfsteinpflaster -> paved)
-#: add_fragezeichen: ist hier asphaltiert oder betoniert?
-Hobrechtsfelder Chaussee (ab Kurve): OK	Q0 15589,27116 15711,27928 15777,28037
+#: corrected_by: osm (schlechtes Kopfsteinpflaster -> paved, irgendwann sp‰ter -> cobblestone:flattened)
+#: add_fragezeichen: ist hier asphaltiert, betoniert oder liegt hier Kopfsteinpflaster?
+Hobrechtsfelder Chaussee (ab Kurve): Kopfsteinpflaster	Q2 15589,27116 15711,27928 15777,28037
 Wisbyer Str.: Asphalt	Q0 11019,16465 11289,16423 11397,16405 11448,16398 11470,16394 11542,16384 11632,16373 11673,16367 11727,16358 11750,16354 11808,16343 11829,16339 11889,16328 11936,16302 12012,16250 12090,16199
 Weserstr.: asphaltiert, schmale Verbundsteinpflaster-Radwege	Q0 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193 12322,9124
 Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege	Q1- 12322,9124 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13029,8632 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
@@ -149,7 +151,7 @@ Corneliusstr.: m‰ﬂiges Kopfsteinpflaster	Q2 6880,11110 6841,11114 6630,11247 647
 Kopernikusstr.: m‰ﬂiges Kopfsteinpflaster	Q2 13467,11778 13651,11731
 Torellstr.: m‰ﬂiges Kopfsteinpflaster	Q2 13295,11792 13467,11778
 #: XXX Bauarbeiten, danach vielleicht teilweise bessere Qualit‰t?
-#: last_checked: 2016-10-08
+#: last_checked: 2016-10-10
 #: check_frequency: 60d
 R¸dersdorfer Str.: Asphalt mit Sch‰den	Q1- 13295,11792 13173,11788 13066,11854
 Kaskelstr.: relative glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
@@ -461,7 +463,7 @@ Richardplatz: Kopfsteinpflaster	Q2 13177,7644 13288,7653
 Richardplatz: Kopfsteinpflaster, OK	Q1- 13288,7653 13378,7695
 Karl-Marx-Platz: Kopfsteinpflaster	Q2- 12991,7549 13100,7626
 Richardplatz: Kopfsteinpflaster	Q2 13188,7590 13303,7622
-Richardplatz: Kopfsteinpflaster, OK	Q1 13303,7622 13400,7642
+Richardplatz: Kopfsteinpflaster, OK	Q2+ 13303,7622 13400,7642
 Richardplatz: Kopfsteinpflaster	Q2 13400,7642 13426,7674 13416,7712 13378,7695
 Richardstr.: Kopfsteinpflaster, OK	Q1 12779,8188 12797,8168
 Richardstr.: Asphalt	Q0 12797,8168 12870,8087 13045,7938
@@ -738,8 +740,8 @@ Samoastr.: Kopfsteinpflaster	Q2 7001,14837 7007,14911 6945,15045 6886,15156
 Henriette-Herz-Platz: Kopfsteinpflaster, OK	Q1 10132,12941 10255,12959 10312,12982 10371,13006
 Emser Str.: Kopfsteinpflaster	Q2 12645,7087 12766,7113 12806,7120
 Emser Str.: Asphalt	Q0 12806,7120 12872,7134 13051,7157
-Neiﬂestr.: m‰ﬂiges Kopfsteinpflaster	Q2 11937,6929 11951,6862
-Boberstr.: Asphalt	Q0 12129,6903 12115,6964
+Neiﬂestr.: m‰ﬂiges Kopfsteinpflaster	Q2 11920,6926 11935,6848
+Boberstr.: Asphalt	Q0 12122,6886 12105,6962
 Nogatstr.: Kopfsteinpflaster	Q2 12296,7057 12451,7100 12632,7137 12751,7166 12865,7192 12909,7181
 M‰rkischer Platz: gutes Kopfsteinpflaster	Q1 10687,11853 10869,11949
 B‰nschstr.: Kopfsteinpflaster	Q2 14058,12709 14188,12664 14319,12629 14591,12555
@@ -934,7 +936,9 @@ Wuhlewanderweg: guter Asphalt	Q0 22030,6600 22097,6414 22146,6338 22214,6271 222
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
 #: last_checked: 2016-08-27 vvv
+#: osm_watch: way id="317233618" version="2"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22084,5877
+#: osm_watch: way id="25216398" version="23"
 Wuhlewanderweg: Verbundsteine, teilweise etwas uneben	Q1- 22084,5877 21846,5856 21744,5804 21602,5685 21507,5620
 #: last_checked ^^^
 H‰mmerlingstr.: Asphalt	Q0 21683,6946 21774,6880 21833,6810 21861,6719 21913,6554 21984,6317 22000,6245 22033,6144 22075,5996 22083,5899 22084,5877 22089,5782 22092,5673 22095,5585
@@ -1070,7 +1074,7 @@ Am Seddinsee: teils schlechter Waldweg	Q3 28862,-1816 28887,-1795 28935,-1819 28
 Zum Seddinsee: teils schlechter Waldweg	Q3 30869,-5 30857,-60 30803,-147 30778,-326
 #: next_check_id: MELCHIOR-2015
 #: XXX nach den Bauarbeiten vermutlich asphaltiert
-#: last_checked: 2016-09-29
+#: last_checked: 2016-10-10
 Melchiorstr.: Kopfsteinpflaster	Q2 11921,11185 11726,11265 11542,11342
 Hansa-Ufer: Kopfsteinpflaster	Q2 5871,12595 5797,12494 5740,12419
 Unionstr: Kopfsteinpflaster	Q2 5782,14067 5943,14049
@@ -1755,7 +1759,7 @@ Netzestr.: m‰ﬂiges Kopfsteinpflaster	Q2 11718,7103 11700,7197
 Warthestr.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3 11617,7083 11718,7103 11818,7123
 Warthestr.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3 11915,7140 12244,7205
 Wartheplatz: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3 11818,7123 11823,7097 11920,7115 11915,7140 11910,7167 11814,7147 11818,7123
-Altenbraker Str.: Kopfsteinpflaster	Q2 12367,7429 12396,7312 12421,7197 12451,7100 12463,7037 12477,6975
+Altenbraker Str.: Kopfsteinpflaster	Q2 12367,7429 12396,7312 12421,7197 12451,7100 12463,7037 12479,6969
 Selkestr.: Kopfsteinpflaster	Q2 12766,7113 12751,7166 12741,7224
 Wittmannsdorfer Str.: m‰ﬂiges bis gutes Kopfsteinpflaster	Q2+ 12908,7305 12878,7415
 R¸belandstr.: Kopfsteinpflaster	Q2 12843,7290 12865,7192
@@ -2256,6 +2260,7 @@ Mˆthlower Str.: Asphalt	Q0 -7736,15460 -7664,15601 -7588,15656
 Mˆthlower Str.: Sand	Q2 -7588,15656 -7483,15690 -7457,15704
 #: by: rjoop photos vvv
 #: XXX Bauarbeiten gesehen --- wird die Straﬂe danach besere Qualit‰t haben?
+#: osm_watch: way id="23943477" version="5"
 #: last_checked: 2016-08-07
 #: corrected_by: srt (in Bau?)
 Straﬂe 270: unbestigter Weg, Schotter	Q2- -5870,10847 -5312,10948
@@ -5924,6 +5929,8 @@ Kˆnigsweg (Tegel): Verbundsteinpflaster	Q1 2164,20557 2168,20585 2188,20600
 Schloﬂstr. (Tegel): Kopfsteinpflaster	Q2 2009,20604 2002,20467
 Schloﬂstr. (Tegel): Asphalt	Q0 2002,20467 1955,20435
 Am Tegelgrund: Verbundsteinpflaster	Q1 455,22285 408,22184 368,22080
+#: XXX laut osm Verbundsteinpflaster
+#: osm_watch: way id="18784664" version="16"
 Im Waldwinkel: Asphalt	Q0 238,22412 184,22257
 Rausendorffweg: grobes Verbundsteinpflaster	Q1- -48,22595 -83,22536 -113,22451
 Am Dorfteich: grobes Verbundsteinpflaster	Q1- -83,22536 -159,22590 -237,22640
@@ -10239,6 +10246,7 @@ Am L¸barser Feld: Verbundsteinpflaster	Q1+ 5901,22710 5777,22852
 (s¸dliches Spreeufer): wassergebundene Decke	Q1 5235,12461 5287,12465 5299,12420 5360,12331 5405,12292
 Mahnkopfweg: Kleinsteinpflaster	Q2 -3404,11589 -3342,11700 -3317,11706
 (Schwarzer Weg): schlechter Asphalt	Q2 1235,14609 1386,14605
+Siegfriedstr.: Beton, einzelne Hebungen	Q1+ 11664,6796 11935,6848 12122,6886 12305,6928 12342,6936
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -11377,10 +11385,11 @@ Heidekrautweg: Asphalt	Q0 21982,10874 22060,10914
 #: note: ^^^
 #: XXX wird hier vielleicht asphaltiert werden? vvv
 #: XXX Baumaﬂnahme GL7.25 (Realisierung nach 2011) vvv
-#: osm_watch: way id="152177244" version="3"
 #: last_checked: 2014-10-04 vvv
 #: check_frequency: 360d vvv
+#: osm_watch: way id="152177244" version="3"
 Petkusser Str.: schlechtes Kopfsteinpflaster	Q3+ 10510,-2642 10573,-2891 10606,-3017 10655,-3135
+#: osm_watch: way id="152177244" version="3"
 Petkusser Str.: schlechtes Kopfsteinpflaster	Q3 10655,-3135 10735,-3142
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -17362,6 +17371,7 @@ Gartenstadtweg: Asphalt	Q0 21538,479 21527,547
 Gartenstadtweg: Beton	Q1 21527,547 21536,603
 #: XXX Bauarbeiten --- vielleicht wird das Kopfsteinpflaster danach etwas besser sein?
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.505151.php
+#: osm_watch: way id="153260644" version="4"
 #: next_check: 2016-11-21
 Gartenstadtweg: schlechtes Kopfsteinpflaster	Q3 21536,603 21543,673 21685,916
 #: by: ^^^
@@ -23230,8 +23240,10 @@ Pansfelder Weg: guter Asphalt	Q0 7297,-519 7384,-387 7536,-139
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20151009
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.432036.php (erster Bauabschnitt (fertig?))
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20160124 (Baueende 2016-06-30, sp‰ter 2016-08-31)
+#: XXX laut osm Verbundsteinpflaster
+#: osm_watch: way id="24718232" version="12"
 #: next_check: 2016-08-31
-#: add_fragezeichen: Sind die Instandsetzungsarbeiten beendet? Ist die Qualit‰t des Asphalts besser geworden?
+#: add_fragezeichen: Sind die Instandsetzungsarbeiten beendet? Was f¸r eine Fahrbahnbeschaffenheit existiert hier (Asphalt, Verbundsteinpflaster)?
 Beyschlagstr.: m‰ﬂiger Asphalt	Q1- 408,22184 184,22257 5,22384 21,22545
 # 
 #: by: epha: vvv

@@ -2433,6 +2433,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 30037,4176
 	F 23059,4635
 #: XXX Baustellenampel; bleibt sie permanent?
+#: osm_watch: node id="76598376" version="10"
 #: last_checked: 2014-04-21
 #: check_frequency: 180d
 	X 13256,26863
@@ -2572,7 +2573,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 19111,2777
 #: by: ^^^
 	F 4651,6037
-	F 12348,6923
+	F 12347,6923
 	X 13648,13334
 #: XXX_prog: Ampel gilt nicht auf dem Radweg
 #: note: keine Anforderungsampel
@@ -2754,7 +2755,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: SONNENALLEE-2014 vvv
 #: osm_watch: way id="260062339" version="8"
-#: last_checked: 2016-09-26 vvv
+#: last_checked: 2016-10-10 vvv
 #: check_frequency: 90d vvv
 #: note: Radfahrer in Richtung Südosten müssen die Seite wechseln, hier Anforderungsampel
 	X::inwork 14174,7505

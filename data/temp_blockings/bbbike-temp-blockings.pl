@@ -23607,6 +23607,7 @@ EOF
 #: note: am Di, den 2016-04-05 gegen 08:45: geschlossen
 #: note: am Mo, den 2016-04-11 gegen 18:20: geschlossen
 #: note: am So, den 2016-06-12 gegen 12:30: offen
+#: note: am Mo, den 2016-10-10 gegen 17:50: offen
 	3::night 14563,8243 14425,8116 14419,8112
 	3::night 14419,8112 14425,8116 14563,8243
 EOF
@@ -25590,6 +25591,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.522495.php',
        data  => <<EOF,
+#: source_id: 2147340654
 userdel	q4::inwork; 5013,10039 5026,10151 5047,10381
 EOF
      },
