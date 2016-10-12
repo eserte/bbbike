@@ -48,12 +48,21 @@ test-live-layout-localhost-staging:
 #
 #    plackup cgi/bbbike.psgi
 #
+PSGI_ENV=BBBIKE_TEST_CGIDIR=http://localhost:$(PSGI_PORT)/bbbike/cgi BBBIKE_TEST_CGIURL=http://localhost:$(PSGI_PORT)/bbbike/cgi/bbbike.cgi BBBIKE_TEST_WAPURL=http://localhost:$(PSGI_PORT)/bbbike/cgi/wapbbbike.cgi BBBIKE_TEST_HTMLDIR=http://localhost:$(PSGI_PORT)/bbbike
+
 test-psgi:
-	(cd .. && LANG=C BBBIKE_TEST_CGIDIR=http://localhost:$(PSGI_PORT)/bbbike/cgi BBBIKE_TEST_CGIURL=http://localhost:$(PSGI_PORT)/bbbike/cgi/bbbike.cgi BBBIKE_TEST_WAPURL=http://localhost:$(PSGI_PORT)/bbbike/cgi/wapbbbike.cgi BBBIKE_TEST_HTMLDIR=http://localhost:$(PSGI_PORT)/bbbike $(PERL) -w -I.. -I../lib -MTest::Harness -e \
+	(cd .. && LANG=C $(PSGI_ENV) $(PERL) -w -I.. -I../lib -MTest::Harness -e \
 	    'runtests(@ARGV)' $(CGI_TEST_FILES))
 
+test-all-psgi:
+	LANG=C $(PSGI_ENV) $(PERL) -w -I.. -I../lib -MTest::Harness -e \
+	    'runtests(@ARGV)' $(TEST_FILES)
+
 prove-psgi:
-	(cd .. && LANG=C BBBIKE_TEST_CGIDIR=http://localhost:$(PSGI_PORT)/bbbike/cgi BBBIKE_TEST_CGIURL=http://localhost:$(PSGI_PORT)/bbbike/cgi/bbbike.cgi BBBIKE_TEST_WAPURL=http://localhost:$(PSGI_PORT)/bbbike/cgi/wapbbbike.cgi BBBIKE_TEST_HTMLDIR=http://localhost:$(PSGI_PORT)/bbbike $(PERL) -S prove -w -I -Ilib $(CGI_TEST_FILES))
+	(cd .. && LANG=C $(PSGI_ENV) $(PERL) -S prove -w -I -Ilib $(CGI_TEST_FILES))
+
+prove-all-psgi:
+	LANG=C $(PSGI_ENV) $(PERL) -S prove -w -I -Ilib $(TEST_FILES)
 
 # This is basically test-no-cgi, but works with dmake
 # (dmake+windows cannot ?=, env shell syntax, single quotes, * expansion)
