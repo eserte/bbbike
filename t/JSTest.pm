@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2015,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,42 +14,59 @@
 package JSTest;
 
 use strict;
-use vars qw($VERSION @EXPORT $JS_INTERPRETER);
-$VERSION = '0.02';
+use vars qw($VERSION @EXPORT @JS_INTERPRETERS);
+$VERSION = '0.03';
 
 use Exporter 'import';
 @EXPORT = qw(
 		check_js_interpreter check_js_interpreter_or_exit
-		run_js run_js_e run_js_f is_strict_js $JS_INTERPRETER
+		run_js run_js_e run_js_f is_strict_js
 	   );
 
 use BBBikeUtil qw(is_in_path);
 
-$JS_INTERPRETER = $ENV{BBBIKE_TEST_JS_INTERPRETER} || 'js' if !defined $JS_INTERPRETER;
+if ($ENV{BBBIKE_TEST_JS_INTERPRETER}) {
+    @JS_INTERPRETERS = $ENV{BBBIKE_TEST_JS_INTERPRETER};
+} else {
+    @JS_INTERPRETERS = qw(js rhino spidermonkey);
+}
 
 my $redeclaration_warning_seen;
+my $js_interpreter_binary;
 my $js_interpreter_impl;
 
 sub check_js_interpreter () {
-    return 0 unless is_in_path $JS_INTERPRETER;
-    # Try to guess implementation
-    my $out = `$JS_INTERPRETER --help 2>&1`; # XXX depend on IPC::Run here?
-    if ($out =~ m{^JavaScript-C}) {
-	$js_interpreter_impl = 'spidermonkey';
-    } elsif ($out =~ m{\Qjava org.mozilla.javascript.tools.shell.Main}) {
-	$js_interpreter_impl = 'rhino';
-    } elsif ($out =~ m{NODE_PATH}) {
-	$js_interpreter_impl = 'nodejs';
-    } else {
-	$js_interpreter_impl = 'unknown';
+    for my $candidate (@JS_INTERPRETERS) {
+	my $candidate_path = is_in_path $candidate;
+	if (defined $candidate_path) {
+	    # Try to guess implementation
+	    my $out = `$candidate --help 2>&1`; # XXX depend on IPC::Run here?
+	    if ($out =~ m{^JavaScript-C}) {
+		$js_interpreter_binary = $candidate_path;
+		$js_interpreter_impl = 'spidermonkey';
+	    } elsif ($out =~ m{\Qjava org.mozilla.javascript.tools.shell.Main}) {
+		$js_interpreter_binary = $candidate_path;
+		$js_interpreter_impl = 'rhino';
+	    } elsif ($out =~ m{NODE_PATH}) {
+		# XXX Test scripts are currently not compatible with nodejs:
+		# external file loading does not work (no load(), require() cannot be used),
+		# with is not allowed, there's no print() (instead process.stdout.write() has
+		# to be used
+		#$js_interpreter_impl = 'nodejs';
+	    } else {
+		$js_interpreter_binary = $candidate_path;
+		$js_interpreter_impl = 'unknown';
+	    }
+	    return 1 if $js_interpreter_impl;
+	}
     }
-    1;
+    0;
 }
 
 # Creates a "skip_all" plan and exits if no JS could be found
 sub check_js_interpreter_or_exit () {
     if (!check_js_interpreter) {
-	Test::More::plan(skip_all => "A js interpreter '$JS_INTERPRETER' is missing");
+	Test::More::plan(skip_all => "A js interpreter (candidate/s: @JS_INTERPRETERS) is missing");
 	exit 0;
     }
 
@@ -62,7 +79,7 @@ sub check_js_interpreter_or_exit () {
 
     my $res = eval { run_js($js_prog) };
     if ($res ne "yes!\n") {
-	Test::More::plan(skip_all => "It seems that $JS_INTERPRETER exists, but it cannot be run...");
+	Test::More::plan(skip_all => "It seems that a js interpreter $js_interpreter_binary exists, but it cannot be run...");
 	exit 0;
     }
 }
@@ -70,7 +87,8 @@ sub check_js_interpreter_or_exit () {
 # Adds one test
 sub is_strict_js ($) {
     my $file = shift;
-    my @cmd = ($JS_INTERPRETER, ($js_interpreter_impl eq 'nodejs' ? '--use_strict' : '-strict'), $file);
+    local $Test::Builder::Level = $Test::Builder::Level+1;
+    my @cmd = ($js_interpreter_binary, ($js_interpreter_impl eq 'nodejs' ? '--use_strict' : '-strict'), $file);
     my $all_out;
     require IPC::Run;
     my $res = IPC::Run::run(\@cmd, ">&", \$all_out);
@@ -85,7 +103,8 @@ sub is_strict_js ($) {
 
 sub run_js_e ($) {
     my $cmd = shift;
-    open my $fh, "-|", $JS_INTERPRETER, "-e", $cmd
+    local $Test::Builder::Level = $Test::Builder::Level+1;
+    open my $fh, "-|", $js_interpreter_binary, "-e", $cmd
 	or die $!;
     local $/ = undef;
     my $res = <$fh>;
@@ -96,6 +115,7 @@ sub run_js_e ($) {
 
 sub run_js_f ($) {
     my $cmd = shift;
+    local $Test::Builder::Level = $Test::Builder::Level+1;
     require File::Temp;
     my($tmpfh,$tmpfile) = File::Temp::tempfile(SUFFIX => ".js", UNLINK => 1)
 	or die "Can't create temporary file: $!";
@@ -103,7 +123,7 @@ sub run_js_f ($) {
     close $tmpfh
 	or die $!;
 
-    my @cmd = $JS_INTERPRETER;
+    my @cmd = $js_interpreter_binary;
     if ($js_interpreter_impl ne 'nodejs') {
 	push @cmd, '-f';
     }
