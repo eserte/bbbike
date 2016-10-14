@@ -32,7 +32,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2016-10-11
+#: last_checked: 2016-10-12
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -575,9 +575,9 @@ Germanenplatz: Qualität nach den Bauarbeiten?	?::inwork 20405,1460 20381,1390
 #: XXX in beiden Amtsblättern ohne Bindestriche --- ist das richtig?
 #: XXX fehlt in Berlin.coords.data, PLZ=14195
 #: note: Privatstraße
-#: osm_watch: way id="318581479" version="3"
-#: osm_watch: way id="318581478" version="2"
-#: osm_watch: way id="318581477" version="2"
+#: osm_watch: way id="318581479" version="4"
+#: osm_watch: way id="318581478" version="3"
+#: osm_watch: way id="318581477" version="3"
 #: XXX im DPAG-Mitteilungsblatt mit Bindestrichen: Oskar-Helene-Park
 #: XXX laut osm living_street
 #: last_checked: 2016-03-28
@@ -1070,7 +1070,7 @@ Humboldtinsel: liegt die Straße hier? ausgeschildert? Qualität?	?::inwork 1687,2
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_10_18.pdf?start&ts=1350628483&file=stra__enbauliste_stand_2012_10_18.pdf
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_11_30.pdf?start&ts=1354267767&file=stra__enbauliste_stand_2012_11_30.pdf
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_11_08.pdf?start&ts=1383903600&file=stra__enbauliste_stand_2013_11_08.pdf
-#: osm_watch: way id="4663347" version="17"
+#: osm_watch: way id="4663347" version="18"
 #: last_checked: 2016-10-10 (Bauarbeiten sind schon lange beendet, aber es wurde nicht markiert?)
 #: check_frequency: 180d
 Ordensmeisterstr.: werden die Radspuren noch weiter geführt?	?::projected 10254,5921 10027,5868 9796,5790
@@ -1102,7 +1102,7 @@ Flughafen Berlin-Brandenburg - Business Park Berlin: Schotterweg, bleibt das so?
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20120427.1445.369492.html vvv
 #: XXX Radwegesanierung in Neukölln, geplant für 2013 und später vvv
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Asphalt-Radstreifen, Realisierung ab 2013)
-#: osm_watch: way id="155605301" version="7"
+#: osm_watch: way id="155605301" version="9"
 #: last_checked: 2016-06-20
 #: check_frequency: 120d
 Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
@@ -1506,6 +1506,10 @@ Weg an der Wuhle: evtl. entsteht auch ein Weg hier --- wird es auch eine Anbindu
 # REMOVED (realisiert) --- Beusselstr.: Markierung von neuen Busspuren?	? 5220,14043 5231,13843 5248,13434
 # REMOVED (realisiert) --- Invalidenstr.: Markierung von neuen Busspuren?	? 7415,13060 7433,13070 7563,13143 7573,13149 7714,13223 7759,13246
 # 
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/44re.pdf/file?y=2016
+#: XXX Widmung als öffentliches Straßenland
+Bellevue-Ufer: ist der Weg mittlerweile beleuchtet?	? 7039,12314 6694,12627
+# 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20161010
 Grünfließer Gang: hat sich hier etwas nach den Bauarbeiten geändert/verbessert?	? 23675,5823 23675,5729 23675,5706 23681,5579
 # 
@@ -1527,7 +1531,7 @@ In den Leonorengärten: Qualität?	? 6493,4105 6517,4051 6452,4024 6428,4076
 Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich für den Kfz-Verkehr gesperrt	? 5243,12303 5299,12420
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2015
-#: osm_watch: way id="156817982" version="12"
+#: osm_watch: way id="156817982" version="13"
 #: last_checked: 2016-07-07
 #: next_check: 2016-09-25
 Lutterbacher Str.: Straße ist offen, prüfen!	? 2094,3231 1993,3170 2072,3034 2163,3092
@@ -1716,7 +1720,7 @@ Treskowallee: Gehweg für Radfahrer freigegeben?	?; 18733,8633 18731,8577 18709,8
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7478
 #: XXX "noch 2016"
-#: last_checked: 2016-10-04 vvv
+#: last_checked: 2016-10-12 vvv
 #: check_frequency: 60d vvv
 #: priority: #C vvv
 Waldemar/Dresdener: Zebrastreifen geplant	?::projected 11170,11048 11150,11030 11121,11021
@@ -1741,7 +1745,7 @@ Neue Krugallee/Lakegrund	? 16401,7400 16406,7430 16409,7464
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4755 vvv
 #: source_id: 2147339938
 #: last_checked: 2016-10-10
-#: check_frequency: 90d
+#: next_check: 2016-10-31
 Köpenicker Landstraße: bleibt die Radwegbenutzungspflicht?	?; 15166,8489 15303,8343 15357,8286 15557,8077
 #: last_checked: 2016-09-11
 #: check_frequency: 90d
@@ -3437,7 +3441,7 @@ Gusow - Zechin: Qualität?	? 74469,22985 74952,22909 76094,23328 77008,22972 7799
 #: XXX: laut Aktiv Regional gut geeignet
 Wollup: Qualität?	? 77999,23404 78418,24318 78481,25588 78608,25600 78633,25880
 #: XXX: laut Aktiv Regional gut geeignet
-Quappendorf - Letschin: Qualität?	? 68577,24737 68887,25042 69645,25105 70686,25156 71029,24978 71308,25092 72946,25270 73403,26273 74101,26641 74317,27352 74530,27809
+Quappendorf - Letschin: Qualität?	? 68577,24737 68887,25042 69645,25105 70686,25156 71029,24978 71308,25092 72946,25270 73403,26273 73989,26589 73989,26589 74101,26641 74317,27352 74530,27809
 #: XXX: laut Aktiv Regional gut geeignet
 Platkow - Sietzing: Qualität?	? 72689,20940 72463,21144 72623,21374 72580,21502 72611,21782 72434,22343 72306,22934 72385,22915 72367,23123 72477,23744 71593,24195 71460,24394 71308,25092 71331,25578 71459,25938 70892,26505 70724,26857 70610,27213 70039,29259
 #: XXX: laut Aktiv Regional gut geeignet

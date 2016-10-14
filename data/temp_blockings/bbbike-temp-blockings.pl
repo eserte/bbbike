@@ -25606,10 +25606,10 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg (Bordsteine!)',
+       text  => 'Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2016-10-11
+#: last_checked: 2016-10-14
 #: check_frequency: 14d
 userdel	q3::inwork 13295,11792 13173,11788 13066,11854
 EOF

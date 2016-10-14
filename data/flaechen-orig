@@ -795,14 +795,9 @@ Murellenberge, Murellenschlucht, Schwanzenwald	F:Forest -1538,13122 -1958,13181 
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20130701.1255.386582.html
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2016 (Widmung)
 Bürgerwiese im Block 56	F:P 18967,5958 18954,5973 18968,6009 19079,6120 19106,6093 18967,5958
-#: note: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/02re.pdf/file?y=2015 (Widmung)
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5154&options=4 (Umbenennung zu Lilli-Flora-Borchardt-Park)
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5664&options=4
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5749 (Name soll nun nur Lilli-Flora-Park lauten)
-#: XXX wann wird umbenannt?
-#: last_checked: 2016-09-12
-#: check_frequency: 180d
-Pallaspark	F:P 7315,9808 7350,9806 7370,9952 7337,9965
+# REMOVED --- #: note: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/02re.pdf/file?y=2015 (Widmung) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5154&options=4 (Umbenennung zu Lilli-Flora-Borchardt-Park) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5664&options=4 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5749 (Name soll nun nur Lilli-Flora-Park lauten) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/44re.pdf/file?y=2016 (Benennung) --- #: XXX wann wird umbenannt? --- #: last_checked: 2016-09-12
+#: oldname: -20160929: Pallaspark
+Lilli-Flora-Park	F:P 7315,9808 7350,9806 7370,9952 7337,9965
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/07re.pdf/file?y=2015
 KGA Hoffnung	F:Orchard 11856,20502 11691,20344 11741,20286 11900,20432
 Alarichplatz	F:P 8674,5357 8557,5226 8575,5202 8707,5289 8674,5357
@@ -851,6 +846,7 @@ Sportplätze An der Alten Försterei	F:Sport 21944,6162 22026,6023 21800,5903 2172
 	F:P 758,2870 712,2885 786,3089 820,3081 758,2870
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2016
 Grünanlage Theodorpark	F:P 24924,10767 25018,10747 25054,10743 25115,10740 25115,10750 25148,10749 25148,10769 25148,10774 25079,10768 24920,10795 24922,10785 24923,10774
+	F:Forest -8157,6259 -8251,6214 -8267,6250 -8428,6154 -8557,6025 -8650,5962 -8753,5934 -8854,5925 -8854,5889 -8931,5892 -9075,5904 -9162,5901 -9177,5798 -9197,5759 -9187,5729 -9089,5764 -8992,5731 -8968,5648 -8840,5601 -8829,5710 -8721,5835 -8631,5845 -8354,5709 -8231,5651 -8073,5518 -8050,5560 -8178,5678 -8335,5745 -8534,5846 -8502,5930 -8239,6089 -8117,6167 -8125,6184 -8157,6259
 # 
 #############################################################################
 # Plätze (experimentell)
