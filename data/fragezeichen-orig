@@ -32,7 +32,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2016-10-12
+#: last_checked: 2016-10-27
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -393,6 +393,7 @@ Munsterdamm: bei der Fahrbahnsanierung entstehen Radspuren	?::projected 6651,484
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1609/nachricht6206.html
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/holzmarktstrasse/index.shtml
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/holzmarktstrasse/download/LP_01.pdf
+#: source_id: 2147340618
 #: last_checked: 2016-10-08
 #: next_check: 2017-04-01
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11388,12202 11513,12138 11619,12084 11764,12001
@@ -553,20 +554,6 @@ Bohnsdorfer Kreisel: Einbahnstraße wird aufgehoben	?::projected 21977,988 21894,
 #: last_checked ^^^
 # 
 # REMOVED (laut osm realisiert) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20151009 --- #: XXX wurde die Fahrbahninstandsetzung hier durchgeführt?  --- #: XXX_osm: hier mittlerweile highway=construction --- #: osm_watch: way id="80883601" version="5" --- #: next_check: 2015-12-18 --- Rosestr.: Ist hier jetzt vielleicht asphaltiert?	? 21329,832 21497,1042
-# 
-#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20151009
-#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.480057.php
-#: osm_watch: way id="152466411" version="2"
-#: osm_watch: way id="81283639" version="5"
-#: last_checked: 2017-07-23 vvv
-#: next_check: 2016-09-01 vvv
-Keltensteig - Teutonenstr.: Wird nach der Fahrbahninstandsetzung die Qualität besser werden?	?::inwork 20302,1613 20369,1476 20405,1460 20580,1406
-#: osm_watch: way id="152466398" version="2"
-Germanenplatz: Qualität nach den Bauarbeiten?	?::inwork 20369,1476 20347,1398
-#: osm_watch: way id="152466399" version="2"
-Germanenplatz: Qualität nach den Bauarbeiten?	?::inwork 20405,1460 20381,1390
-#: next_check ^^^
-#: last_checked ^^^
 # 
 # REMOVED --- #: last_checked: 2016-05-21 --- Treptower Park, mittlerer Weg: wann ist hier fertig gebaut? wie geht der Weg weiter? Qualität? Beleuchtung?	?::inwork 15133,9396 15184,9373 15268,9374 15325,9354 15453,9259
 # 
@@ -771,9 +758,9 @@ Mauerweg Rudow: wann wird der fehlende Abschnitt gebaut?	?::projected 16997,-663
 #: XXX evtl. hat die Baustellenampel auch mit den Bauarbeiten an der BAB114 zu tun (Umleitungsstrecken)
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4306
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4305
-#: XXX wie wird die Situation nach dem Abbau der Baustellenampel sein?
+#: XXX wurde die Baustellenampel abgebaut?
 #: source_id: 2147340304
-#: last_checked: 2016-11-15
+#: last_checked: 2016-10-27
 Bahnhofstr./Blankenburger Weg/Pankstr.: Ampel geplant	?::projected 12442,20805
 # 
 # REMOVED --- #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3129 --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4353 --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3906 (Umsetzung 2016) --- #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.459697.php --- #: last_checked: 2015-11-07 --- #: check_frequency: 90d --- #: priority: #C --- Jean-Jaurés-Straße/Nimrodstraße: befindet sich hier der Zebrastreifen?	? 4575,22089 4584,22107 4582,22122
@@ -1619,7 +1606,8 @@ Adenauerplatz: Behinderungen für Radfahrer während der Bauarbeiten	?::projected 
 # REMOVED --- :XXX NEW	Straße der Pariser Kommune (Friedrichshain) in beiden Richtungen zwischen An der Ostbahn und Stralauer Platz (Berlin)  Gültig ab: 13.09.2016 15:55  Vollsperrung, Baustelle (bis Mitte Oktober)	LMS-BR_r_LMS-BR_78589 --- Straße der Pariser Kommune: Wasserrohrbruch, Behinderungen für Radfahrer? (schon wieder/noch immer?)	? 12497,11459 12551,11515 12645,11673
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.496419.php
-#: next_check: 2016-10-31
+#: source_id: LMS-BR_r_LMS-BR_81037
+#: next_check: 2016-11-15
 Knesebeckstr./Hardenbergstr.: Umbau, Knesebeckstr. wird rechtwinklig auf die Hardenbergstr. treffen	?::projected 4897,11354 4919,11605
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4876
@@ -1647,6 +1635,7 @@ Anforderungsampel, X	?::inwork 7651,14260
 # 
 #: next_check_id: ZIEGELSTR-2016
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/25re.pdf/file?y=2016
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/46re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: XXX Berlin.coords.data-Eintrag fehlt
 #: last_checked: 2016-10-08
 Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?	? 9636,13076
@@ -1778,7 +1767,7 @@ Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 1
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.470764.php
 #: by: http://www.s-bahn-berlin.de/bauinformationen/details/rummelsburg/4530
 #: XXX Bauzeit Ende August 2016 bis vsl. Sommer 2017; neue Bauzeit: 1.11.2016 für 2,5 Monate
-#: last_checked: 2016-09-30
+#: last_checked: 2016-10-27
 #: next_check: 2016-11-01
 (Unterführung S-Bhf. Rummelsburg): wird während der Bauarbeiten hier komplett gesperrt sein?	? 15372,10655 15409,10709 15433,10765
 # 
@@ -2394,7 +2383,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: XXX_prog ^^^
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20141202.1525.400470.html
-#: last_checked: 2016-09-07
+#: last_checked: 2016-10-27
 #: check_frequency: 90d
 Sebastianstr.: Straßenumgestaltungsmaßnahme Sebastianstraße - gibt es Änderungen für Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
 # 
@@ -2408,7 +2397,7 @@ Stallschreiberstr.: wird die Einbahnstraße wiederhergestellt?	?::inwork 10489,11
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7482
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2016-09-13
+#: last_checked: 2016-10-27
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172 10818,11269
 # 
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7641&options=4
@@ -4831,3 +4820,18 @@ Friedrich-Naumann-Str. (Stahnsdorf): Qualität des östlichen Abschnitts?	? -3410,
 #: XXX laut osm Kopfsteinpflaster und unbefestigte Straße
 Am Wiesengrund (Kienwerder): Qualität des südlichen Abschnitts?	? -3835,-3613 -3867,-3713 -3915,-3906 -3911,-4055
 Uni Potsdam: Qualität des Wegs?	? -8196,-1912 -8174,-1783 -8157,-1670
+# 
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20151009
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.480057.php
+#: osm_watch: way id="152466411" version="2"
+#: osm_watch: way id="81283639" version="5"
+#: last_checked: 2017-07-23 vvv
+#: next_check: 2016-09-01 vvv
+Keltensteig - Teutonenstr.: ist nach der Fahrbahninstandsetzung die Qualität besser geworden?	? 20302,1613 20369,1476 20405,1460 20580,1406
+#: osm_watch: way id="152466398" version="2"
+Germanenplatz: ist nach der Fahrbahninstandsetzung die Qualität besser geworden?	? 20369,1476 20347,1398
+#: osm_watch: way id="152466399" version="2"
+Germanenplatz: ist nach der Fahrbahninstandsetzung die Qualität besser geworden?	? 20405,1460 20381,1390
+#: next_check ^^^
+#: last_checked ^^^
+# 

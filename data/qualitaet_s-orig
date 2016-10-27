@@ -274,7 +274,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX ggfs. Bauarbeiten bis Mitte September 2016 (laut rbbtext)
 #: source_id: INKO_2147340291_COPY_1
 #: source_id: 2147340291
-#: last_checked: 2016-10-14
+#: last_checked: 2016-10-27
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9053,16029 8923,15850
 Böttgerstr.: Asphalt	Q0 9123,15963 8923,15850
@@ -1072,11 +1072,7 @@ An der Krampe: schlechter Waldweg, Wurzeln	Q3 27847,-665 27803,-742 27759,-995 2
 Am Seddinsee: sich selbst überlassener Waldweg	Q3 28163,-2013 28338,-2265 28443,-2317 28527,-2347 28568,-2346 28742,-2264 28892,-1955 28862,-1816
 Am Seddinsee: teils schlechter Waldweg	Q3 28862,-1816 28887,-1795 28935,-1819 28957,-1810 28958,-1779 28999,-1784 29149,-1742 29162,-1704 29229,-1676 29204,-1545 29334,-1343 29475,-1275 29602,-1051 30028,-891 30125,-734 30218,-529 30421,-424 30570,-351 30778,-326
 Zum Seddinsee: teils schlechter Waldweg	Q3 30869,-5 30857,-60 30803,-147 30778,-326
-#: next_check_id: MELCHIOR-2015
-#: XXX nach den Bauarbeiten vermutlich asphaltiert
-#: last_checked: 2016-10-14
-#: check_frequency: 14d
-Melchiorstr.: Kopfsteinpflaster	Q2 11921,11185 11726,11265 11542,11342
+Melchiorstr.: Asphalt	Q0 11921,11185 11726,11265 11542,11342
 Hansa-Ufer: Kopfsteinpflaster	Q2 5871,12595 5797,12494 5740,12419
 Unionstr: Kopfsteinpflaster	Q2 5782,14067 5943,14049
 Bremer Str.: Fahrbahn Kopfsteinpflaster, Verbundsteinpflasterradweg	Q1 5956,14168 5943,14049
@@ -8960,6 +8956,8 @@ Schweriner Ring [9-19 ungerade]: Beton	Q0- 17444,19115 17259,19121
 Zingster Str.: Beton	Q0 16358,18687 16445,18571 16534,18457 16583,18386
 (entlang der Stadtbahn): Verbundsteinpflaster	Q1- 10117,12973 10004,12966 9930,12947
 Lentzeallee [Stichstraße]: Verbundsteinpflaster	Q1 3165,6939 3190,7047
+#: XXX wird bei den Bauarbeiten vielleicht das Kopfsteinpflaster durch Asphalt ersetzt?
+#: next_check: 2016-11-18
 Ebereschenallee: schlechtes Kopfsteinpflaster	Q3+ 867,12140 963,12116
 Branitzer Platz (Westend): Asphalt mit einigen Schäden	Q1 1346,12053 1386,12058 1414,12091 1407,12134 1374,12164 1334,12152 1311,12122 1311,12084 1346,12053
 #: note: Stefan Klinkusch meint "guter Asphalt"

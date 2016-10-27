@@ -17124,15 +17124,15 @@ EOF
 userdel	q4::inwork -4614,-35852 -4603,-35730
 EOF
      },
-     { from  => $isodate2epoch->("2015-11-22 00:00:00"), # 1 Tag Vorlauf # 1353279600, # 2012-11-19 00:00, # 1290380400, # PERIODISCH! # undef, # 
-       until => $isodate2epoch->("2015-12-27 23:59:59"), # 1356562799, # 2012-12-26 23:59, # 1293404400, # PERIODISCH! # früher: 1262300399, # 2009-12-31 23:59
+     { from  => $isodate2epoch->("2016-11-20 00:00:00"), # 1 Tag Vorlauf # 1353279600, # 2012-11-19 00:00, # 1290380400, # PERIODISCH! # undef, # 
+       until => $isodate2epoch->("2016-12-27 23:59:59"), # 1356562799, # 2012-12-26 23:59, # 1293404400, # PERIODISCH! # früher: 1262300399, # 2009-12-31 23:59
        periodic => 1,
        recurrences => [['yearly', days => 19, months => 11]],
-       text  => 'Winterwelt am Potsdamer Platz, Alte Potsdamer Str. gesperrt, 23. November 2015 bis 27. Dezember 2015',
+       text  => 'Winterwelt am Potsdamer Platz, Alte Potsdamer Str. gesperrt, 21. November 2016 bis 27. Dezember 2016',
        type  => 'gesperrt',
-       source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971680-955635-winterweltampotsdamerplatz.html',
+       source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/3238975-955635-winterwelt-am-potsdamer-platz.html',
        data  => <<EOF,
-#: note: Winterwelt bereits ab 2.11.2014 (bis 4.1.2015), Weihnachtsmarkt erst ab dem 24.11.2014
+#: note: Winterwelt bereits ab 4.11.2016 (bis 1.1.2017), Weihnachtsmarkt erst ab dem 21.11.2016
 userdel	2::xmas 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324
 #userdel	2::temp 8318,11324 8280,11296 8278,11257
 #: XXX_prog "3::temp" oder "3::xmas" geht nicht?
@@ -22435,14 +22435,14 @@ EOF
 	2::night 7811,13344 7784,13392 7767,13431 7732,13484 7696,13470
 EOF
      },
-     { from  => $isodate2epoch->("2015-11-22 00:00:00"), # 1385334000, # 2013-11-25 00:00
-       until => $isodate2epoch->("2015-12-27 23:59:59"), # 1388357999, # 2013-12-29 23:59
+     { from  => $isodate2epoch->("2016-11-20 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-12-27 23:59:59"), #
        periodic => 1,
-       recurrences => [['yearly', days => 23, months => 11]],
-       text  => 'Weihnachtsmarkt am Luisenplatz: geänderte Radverkehrsführung, 23.11.2015 - 27.12.2015',
+       recurrences => [['yearly', days => 20, months => 11]],
+       text  => 'Weihnachtsmarkt am Luisenplatz: geänderte Radverkehrsführung, 21.11.2016 - 27.12.2016',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: https://www.potsdam.de/content/weihnachtliches-potsdam-1
+#: by: http://www.potsdam.de/weihnachtliches-potsdam-2016
 userdel	1::xmas -13556,-1182 -13643,-1220
 EOF
      },
@@ -24338,8 +24338,8 @@ EOF
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.511369.php
 #: source_id: 2147340474
 #: XXX periodisch prüfen
-#: last_checked: 2016-10-02
-#: check_frequency: 14d
+#: last_checked: 2016-10-27
+#: next_check: 2016-10-31
 	2::inwork 15261,10738 15272,10790
 	q4; 15279,10862 15272,10790 15388,10758 15433,10765
 	q4; 15205,11080 15102,11120 15021,11152 14988,11130
@@ -25478,13 +25478,13 @@ EOF
      },
      { from  => 1474149600, # 2016-09-18 00:00
        until => $isodate2epoch->("2016-11-12 12:00:00"), # 1480546799, # 2016-11-30 23:59
-       text  => 'Werner-Voß-Damm und Manfred-von-Richthofen-Str.: Bauarbeiten, Fahrbahn gesperrt (zwischen Boelckestr. und Manfred-von-Richthofen-Str. sowie zwischen Loewenhardtdamm und Wolffring), vom 19. September 2016 bis 12. November 2016',
+       text  => 'Manfred-von-Richthofen-Str.: Bauarbeiten, Fahrbahn gesperrt (zwischen Loewenhardtdamm und Wolffring), bis 12. November 2016',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.514646.php',
        data  => <<EOF,
 #: source_id: 2147340586
 userdel	q4::inwork; 8730,8079 8776,8285 8807,8353
-userdel	q4::inwork; 8642,7876 8731,7956
+# REMOVED --- userdel	q4::inwork; 8642,7876 8731,7956
 EOF
      },
      { from  => undef, # 
@@ -25609,9 +25609,47 @@ EOF
        text  => 'Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2016-10-14
+#: last_checked: 2016-10-26
 #: check_frequency: 14d
 userdel	q3::inwork 13295,11792 13173,11788 13066,11854
+EOF
+     },
+     { from  => 1476655200, # 2016-10-17 00:00
+       until => $isodate2epoch->("2018-07-01 12:00:00"), # 1534370399, # 2018-08-15 23:59
+       text  => 'Grünauer Straße/Am Falkenberg: zwischen Keltensteig und Drössestr. Baustelle, Fahrbahn gesperrt, ab 18.10.2016 bis Sommer 2018 ',
+       type  => 'handicap',
+       source_id => '2147340679',
+       data  => <<EOF,
+#: note: laut vmz bis Mitte August 2018 und nur bis zur Bahnbrücke, laut fritz bis 1.7.2018
+#: XXX Behinderungen für Radfahrer?
+userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,1416 21127,1307 21169,1279
+EOF
+     },
+     { from  => 1476568800, # 2016-10-16 00:00
+       until => 1479250799, # 2016-11-15 23:59
+       text  => 'Knesebeckstraße: zwischen Hardenbergstraße und Goethestraße Baustelle, Fahrbahn gesperrt, ab 17.10.2016 bis Mitte November 2016 ',
+       type  => 'handicap',
+       source_id => 'LMS-BR_r_LMS-BR_81037',
+       data  => <<EOF,
+userdel	q4::inwork 4897,11354 4919,11605
+EOF
+     },
+     { from  => 1477602762, # 2016-10-27 23:12
+       until => 1479510000, # 2016-11-19 00:00
+       text  => 'Ebereschenallee: zwischen Kirschenallee und Ratzeburger Allee Bauarbeiten, Sperrung der Fahrbahn, bis 18.11.2016 ',
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: by fritz
+userdel	q4::inwork 963,12116 867,12140 772,12163
+EOF
+     },
+     { from  => 1477603388, # 2016-10-27 23:23
+       until => 1481324400, # 2016-12-10 00:00
+       text  => 'Geisenheimer Str.: zwischen Rauenthaler Straße und Gritznerstraße Tiefbauarbeiten, Fahrbahn gesperrt, bis 09.12.2016',
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: by fritz
+userdel	q4::inwork 4646,6875 4767,6717
 EOF
      },
     );

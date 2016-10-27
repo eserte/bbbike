@@ -2339,7 +2339,31 @@ userdel	2::xmas 9524,12010 9656,12021
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: Winterwelt bereits ab 4.11.2016 (bis 1.1.2017), Weihnachtsmarkt erst ab dem 21.11.2016
+userdel	2::xmas 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324
+#userdel	2::temp 8318,11324 8280,11296 8278,11257
+#: XXX_prog "3::temp" oder "3::xmas" geht nicht?
+userdel	3 8427,11365 8389,11378 8374,11479
+userdel	3 8374,11479 8389,11378 8427,11365
+',
+         'from' => 1479596400,
+         'id' => 1997,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              19,
+                              'months',
+                              11
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/3238975-955635-winterwelt-am-potsdamer-platz.html',
+         'text' => 'Winterwelt am Potsdamer Platz, Alte Potsdamer Str. gesperrt, 21. November 2016 bis 27. Dezember 2016',
+         'type' => 'gesperrt',
+         'until' => 1482879599
+       },
        undef,
        undef,
        undef,
@@ -3029,7 +3053,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'from' => undef,
          'id' => 2454,
          'recurring' => 1,
-         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Sommer: 21.00 bis 6.00 Uhr',
+         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Winter: 18.00 bis 6.00 Uhr',
          'until' => undef
        },
        {
@@ -3253,7 +3277,26 @@ userdel	2::night 17671,13132 17684,13133
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: by: http://www.potsdam.de/weihnachtliches-potsdam-2016
+userdel	1::xmas -13556,-1182 -13643,-1220
+',
+         'from' => 1479596400,
+         'id' => 2526,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Weihnachtsmarkt am Luisenplatz: geänderte Radverkehrsführung, 21.11.2016 - 27.12.2016',
+         'type' => 'gesperrt',
+         'until' => 1482879599
+       },
        undef,
        undef,
        undef,
@@ -3541,8 +3584,8 @@ userdel	q4::inwork; 3807,11859 3666,11855
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.511369.php
 #: source_id: 2147340474
 #: XXX periodisch prüfen
-#: last_checked: 2016-10-02
-#: check_frequency: 14d
+#: last_checked: 2016-10-27
+#: next_check: 2016-10-31
 	2::inwork 15261,10738 15272,10790
 	q4; 15279,10862 15272,10790 15388,10758 15433,10765
 	q4; 15205,11080 15102,11120 15021,11152 14988,11130
@@ -3846,12 +3889,12 @@ userdel	q4::inwork 6587,16199 6484,16085
        {
          'data' => '#: source_id: 2147340586
 userdel	q4::inwork; 8730,8079 8776,8285 8807,8353
-userdel	q4::inwork; 8642,7876 8731,7956
+# REMOVED --- userdel	q4::inwork; 8642,7876 8731,7956
 ',
          'from' => 1474149600,
          'id' => 2824,
          'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.514646.php',
-         'text' => 'Werner-Voß-Damm und Manfred-von-Richthofen-Str.: Bauarbeiten, Fahrbahn gesperrt (zwischen Boelckestr. und Manfred-von-Richthofen-Str. sowie zwischen Loewenhardtdamm und Wolffring), vom 19. September 2016 bis 12. November 2016',
+         'text' => 'Manfred-von-Richthofen-Str.: Bauarbeiten, Fahrbahn gesperrt (zwischen Loewenhardtdamm und Wolffring), bis 12. November 2016',
          'type' => 'handicap',
          'until' => 1478948400
        },
@@ -3951,7 +3994,7 @@ userdel	q4::inwork; 5013,10039 5026,10151 5047,10381
          'until' => 1483225199
        },
        {
-         'data' => '#: last_checked: 2016-10-14
+         'data' => '#: last_checked: 2016-10-26
 #: check_frequency: 14d
 userdel	q3::inwork 13295,11792 13173,11788 13066,11854
 ',
@@ -3960,6 +4003,48 @@ userdel	q3::inwork 13295,11792 13173,11788 13066,11854
          'text' => 'Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: note: laut vmz bis Mitte August 2018 und nur bis zur Bahnbrücke, laut fritz bis 1.7.2018
+#: XXX Behinderungen für Radfahrer?
+userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,1416 21127,1307 21169,1279
+',
+         'from' => 1476655200,
+         'id' => 2836,
+         'source_id' => '2147340679',
+         'text' => 'Grünauer Straße/Am Falkenberg: zwischen Keltensteig und Drössestr. Baustelle, Fahrbahn gesperrt, ab 18.10.2016 bis Sommer 2018 ',
+         'type' => 'handicap',
+         'until' => 1530439200
+       },
+       {
+         'data' => 'userdel	q4::inwork 4897,11354 4919,11605
+',
+         'from' => 1476568800,
+         'id' => 2837,
+         'source_id' => 'LMS-BR_r_LMS-BR_81037',
+         'text' => 'Knesebeckstraße: zwischen Hardenbergstraße und Goethestraße Baustelle, Fahrbahn gesperrt, ab 17.10.2016 bis Mitte November 2016 ',
+         'type' => 'handicap',
+         'until' => 1479250799
+       },
+       {
+         'data' => '#: note: by fritz
+userdel	q4::inwork 963,12116 867,12140 772,12163
+',
+         'from' => 1477602762,
+         'id' => 2838,
+         'text' => 'Ebereschenallee: zwischen Kirschenallee und Ratzeburger Allee Bauarbeiten, Sperrung der Fahrbahn, bis 18.11.2016 ',
+         'type' => 'handicap',
+         'until' => 1479510000
+       },
+       {
+         'data' => '#: note: by fritz
+userdel	q4::inwork 4646,6875 4767,6717
+',
+         'from' => 1477603388,
+         'id' => 2839,
+         'text' => 'Geisenheimer Str.: zwischen Rauenthaler Straße und Gritznerstraße Tiefbauarbeiten, Fahrbahn gesperrt, bis 09.12.2016',
+         'type' => 'handicap',
+         'until' => 1481324400
        }
      
 );

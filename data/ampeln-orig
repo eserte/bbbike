@@ -2861,10 +2861,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: check_frequency: 120d
 	F::inwork 10038,15418
 # 
-#: XXX wie wird die Situation nach dem Abbau der Baustellenampel sein?
-#: source_id: 2147340304
-#: last_checked: 2016-11-15
-	X::inwork 12442,20805
+# REMOVED --- #: XXX wie wird die Situation nach dem Abbau der Baustellenampel sein? --- #: source_id: 2147340304 --- #: last_checked: 2016-11-15 ---	X::inwork 12442,20805
 #: note: Anforderungsampel
 	F 18464,6269
 #: note: nachts immer ausgeschaltet? (gesehen: Fr 2016-08-26 gegen 22:15)
