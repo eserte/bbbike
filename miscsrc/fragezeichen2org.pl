@@ -28,6 +28,7 @@ use Getopt::Long;
 use POSIX qw(strftime);
 use Time::Local qw(timelocal);
 
+use BBBikeBuildUtil qw(get_pmake);
 use BBBikeUtil qw(int_round bbbike_root);
 use Strassen::Util ();
 use StrassenNextCheck;
@@ -488,15 +489,18 @@ EOF
     }
 }
 
-print <<'EOF';
+{
+    my $pmake = get_pmake;
+    print <<"EOF";
 * settings
 #+SEQ_TODO: TODO | PLAN | DONE
 # Local variables:
-# compile-command: "(cd ../data && make fragezeichen-nextcheck.org-exact-dist)"
+# compile-command: "(cd ../data && $pmake fragezeichen-nextcheck.org-exact-dist HOME=$ENV{HOME})"
 # End:
 EOF
-# Alternative compile command (without using the dist.db):
-## compile-command: "(cd ../data && make ../tmp/fragezeichen-nextcheck.org)"
+    # Alternative compile command (without using the dist.db):
+    ## compile-command: "(cd ../data && make ../tmp/fragezeichen-nextcheck.org)"
+}
 
 sub _get_first_XXX_directive {
     my $dir = shift;
