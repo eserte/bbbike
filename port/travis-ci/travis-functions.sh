@@ -135,7 +135,17 @@ install_perl_dependencies() {
 		cpanm --quiet --notest CGI
 		;;
 	esac
-	cpanm --quiet --installdeps --notest .
+	if true
+	then
+	    cpanm --quiet --notest App::cpm
+	    perl Makefile.PL
+	    mymeta-cpanfile > cpanfile~ && mv cpanfile~ cpanfile
+	    # problem with optional core modules: https://github.com/skaji/cpm/issues/42
+	    cpm install -g -v DB_File
+	    cpm install -g -v
+	else
+	    cpanm --quiet --installdeps --notest .
+	fi
     fi
 }
 
