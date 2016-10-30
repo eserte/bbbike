@@ -274,7 +274,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX ggfs. Bauarbeiten bis Mitte September 2016 (laut rbbtext)
 #: source_id: INKO_2147340291_COPY_1
 #: source_id: 2147340291
-#: last_checked: 2016-10-27
+#: last_checked: 2016-10-28
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9053,16029 8923,15850
 Böttgerstr.: Asphalt	Q0 9123,15963 8923,15850
@@ -5871,7 +5871,7 @@ Bohrauer Pfad: Beton	Q0- 20981,4628 20827,4655 20716,4691
 (Gartenweg [Kolonie Wendenheide]): unbefestigte Straße, zweispurig	Q2 20850,4225 20716,4549 20684,4596
 Alice-Archenhold-Weg: Beton	Q1 19696,5456 19715,5403
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19456,7956 19468,7918 19495,7874 19540,7842 19602,7753
-#: osm_watch: way id="156650954" version="5"
+#: osm_watch: way id="156650954" version="6"
 #: XXX wird hier auch eine wassergebundene Decke entstehen?
 #: last_checked: 2016-05-21
 #: check_frequency: 180d
@@ -24653,12 +24653,12 @@ Am Zirkus: Asphalt	Q0 9090,13009 9137,13032 9167,13046 9212,12969 9239,12923
 Gustav-Heinemann-Brücke: Holzbohlen mit Fugen	Q1 8116,12938 8110,13042
 # REMOVED (hier asphaltiert) --- #: XXX Qualität der wassergebundenen Decke prüfen --- #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6285
 (Willy-Brandt-Str. - Rahel-Hirsch-Str.): Asphalt	Q0 8120,12756 8124,12840 8116,12938
-# REMOVED (erstmal komplett entfernt; nach den Bauarbeiten wird es vermutlich ganz anders aussehen) --- #: next_check_id: CHARITE-2014 --- #: XXX wie wird die Situation nach den Bauarbeiten aussehen? --- #: by: http://www.charite.de/charite/organisation/baumassnahmen/campus_charite_mitte/ (Dauer: 3 Jahre ab Herbst 2013) --- #: by: http://infocenter.charite.de/ --- #: last_checked: 2015-11-27 --- #: check_frequency: 90d --- (entlang der Baustelle an der Charité): teilweise Schotter	Q2 8833,13440 8846,13412 8835,13376 8818,13365 8808,13377 8764,13372
-(Parkplatz Charité): Asphalt	Q1 8764,13372 8665,13353
+# REMOVED (erstmal komplett entfernt; nach den Bauarbeiten wird es vermutlich ganz anders aussehen) --- #: next_check_id: CHARITE-2014 --- #: XXX wie wird die Situation nach den Bauarbeiten aussehen? --- #: by: http://www.charite.de/charite/organisation/baumassnahmen/campus_charite_mitte/ (Dauer: 3 Jahre ab Herbst 2013) --- #: by: http://infocenter.charite.de/ --- #: last_checked: 2015-11-27 --- #: check_frequency: 90d --- (entlang der Baustelle an der Charité): teilweise Schotter	Q2 8833,13440 8836,13396 8835,13376 8818,13365 8808,13377
+(an der Notfallaufnahme Charité): Steinplatten	Q0 8665,13353 8806,13384 8836,13396
+(an der Notfallaufnahme Charité): Kleinsteinpflaster	Q1 8836,13396 8833,13440
 Platz vor dem Neuen Tor: Kopfsteinpflaster	Q2 8674,13593 8668,13645 8662,13688
 Platz vor dem Neuen Tor: Kopfsteinpflaster	Q2 8668,13645 8626,13641
-#: XXX Qualität überprüfen!
-Kleine Hamburger Str.: Asphalt mit Löchern und Ausbesserungen	Q1 9670,13637 9749,13582 9793,13549
+Kleine Hamburger Str.: Asphalt mit leichten Unebenheiten	Q0- 9670,13637 9749,13582 9793,13549
 Helga-Hahnemann-Str.: Schotter, bei Regen große Pfützen	Q2 9415,13315 9408,13282 9385,13174
 Blasewitzer Ring: Asphalt	Q0 -5437,12440 -5219,12374 -5196,12452 -5146,12632 -5170,12690 -5282,12730
 Gruberzeile: Beton	Q0 -6013,12009 -5881,11902 -5847,11876 -5789,11831 -5735,11793 -5674,11800 -5618,11884

@@ -27,7 +27,7 @@ Straße der Pariser Kommune: Wasserrohrbruch, Fahrbahn unter der Bahnbrücke gespe
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
 #: last_checked: 2016-10-03 vvv
-Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
+# REMOVED --- Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
 # REMOVED --- Revaler Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14357,11148 14286,11186
 # REMOVED (zurzeit keine Behinderungen mehr) --- Revaler Str.: Bauarbeiten, evtl. Ausweichen auf Gehweg nötig	q2::inwork 14211,11229 14286,11186
 # REMOVED (keine Behinderungen mehr) --- Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
@@ -65,10 +65,10 @@ Rigaer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 14133,12482 14266,12446
 ### Tempelhof ###
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.513299.php
-#: note: laut fritz bis Mitte Dezember 2016
+#: note: laut fritz bis 09.12.2016
 #: source_id: 2147340484
 #: last_checked: 2016-09-14
-#: next_check: 2016-12-15
+#: next_check: 2016-12-09
 #: priority: #A
 Mariendorfer Damm: Fahrbahn zwischen Prinzenstr. und Richterstr. gesperrt	q4::inwork; 9333,4229 9346,4144 9372,4012
 # 
@@ -85,17 +85,15 @@ Bouchéstr.: Bauarbeiten, Radfahrer müssen auf dem Gehweg fahren	q2::inwork 13642
 # 
 # REMOVED --- #: last_checked: 2015-06-10 --- Am Zirkus: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9167,13046 9137,13032 9090,13009
 # REMOVED --- #: last_checked: 2016-06-01 --- Kommandantenstr.: Bauarbeiten, Einbahnstraße	q2::inwork; 10437,11352 10389,11390
+# REMOVED --- #: last_checked: 2016-09-18 --- Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 10480,12077 10418,12016
 # 
-#: last_checked: 2016-09-18
-Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 10480,12077 10418,12016
-# 
-#: last_checked: 2016-10-08
+#: last_checked: 2016-10-28
 Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
-#: last_checked: 2016-10-27
+#: last_checked: 2016-10-28
 Kommandantenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10330,11422 10136,11529
 # 
-#: last_checked: 2016-10-27
+#: last_checked: 2016-10-28
 Beuthstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10201,11631 10235,11610 10330,11422
 # 
 #: last_checked: 2016-09-30
@@ -230,7 +228,7 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # 
 #: XXX laut fritz bis 29.07.2016
 #: source_id: 2147339998
-#: last_checked: 2016-10-27
+#: last_checked: 2016-10-28
 #: check_frequency: 14d
 Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10256,11160 10437,11352
 # REMOVED --- #: last_checked: 2016-10-06 vvv --- Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10624,11548
@@ -255,7 +253,7 @@ Carl-Herz-Ufer: Sperrung der Fahrbahn an der Baerwaldstr.	q4::inwork 10469,10081
 # 
 #: next_check_id: ALEXANDRINENSTR-2016
 #: source_id: LMS-BR_r_LMS-BR_68468
-#: last_checked: 2016-10-27
+#: last_checked: 2016-10-28
 Stallschreiberstr., Alexandrinenstr.: Einbahnstraßenregelung	q4::inwork; 10794,10927 10824,11010 10678,11172 10593,11120 10501,11056
 # 
 # REMOVED (kaum noch Beeinträchtigungen) --- #: last_checked: 2016-02-26 --- #: next_check: 2016-03-30 --- Wassertorstr.: Wasserrohrbruch, kurzes Stück auf Gehweg ausweichen	q2::inwork 10857,10411 10987,10360
@@ -1038,8 +1036,7 @@ Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 #: XXX_prog BS am westlichen Ende, östliches ist leicht abgesenkt und eigentlich kein Problem (wenn es nicht zugeparkt ist)
 (Entlang des Stadtbahnviadukts): Bordsteine, Fußgänger	q2 11966,11832 12132,11788
 (Maybachufer - Weigandufer): Radfahren nicht erlaubt, ggfs. schieben	q3 12851,9309 12907,9073
-(Parkplatz Charité): Fußgänger	q3 8833,13440 8846,13412 8835,13376 8818,13365 8808,13377 8764,13372
-(Parkplatz Charité): Fußgänger, parkende Autos	q1 8764,13372 8665,13353
+(an der Notfallaufnahme Charité): Notfallwagen, Fußgänger	q2 8833,13440 8836,13396 8806,13384 8665,13353
 #: XXX_prog BS am westlichen Ende, am östlichen existiert eine Bordsteinabsenkung; ansonsten q2
 (Lasdehner Str. - Gubener Str.): Fußgänger, Bordsteine	q3 13375,12062 13339,12029
 # REMOVED (paralleler Radweg existiert) --- Straßenbahntrasse zum Alex: Bodenschwellen und Schienen	q1- 11139,13008 11191,13080

@@ -42,10 +42,10 @@ Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 
 #: XXX Baumaßnahme 5.11 (Realisierung nach 2011)
 #: osm_watch: way id="4609212"  version="9"
 #: osm_watch: way id="25113713" version="12"
-#: osm_watch: way id="4752742"  version="8"
+#: osm_watch: way id="4752742"  version="9"
 #: osm_watch: way id="4752743"  version="10"
-#: osm_watch: way id="8049679"  version="11"
-#: osm_watch: way id="8049678"  version="7"
+#: osm_watch: way id="8049679"  version="12"
+#: osm_watch: way id="8049678"  version="8"
 #: last_checked: 2016-08-07
 #: check_frequency: 180d
 Schulenburgstr./Weißenburger Str.: werden hier Radspuren markiert?	?::projected -2725,13287 -2798,13257 -2940,13221 -2974,13188 -3159,12962 -3210,12913 -3246,12890 -3301,12864 -3448,12834 -3650,12762
@@ -155,7 +155,7 @@ Reinickendorfer Str.: werden hier noch die restlichen Radspuren markiert?	?::pro
 #: last_checked: 2015-09-12
 #: check_frequency: 100d
 #: osm_watch: way id="82449630" version="8"
-#: osm_watch: way id="32426064" version="6"
+#: osm_watch: way id="32426064" version="7"
 Quickborner Str.: werden hier Radspuren markiert?	?::projected 7991,21531 7966,21563 7959,21573 7781,21812 7742,21867 7594,22068 7516,22178 7439,22306 7416,22349
 # 
 #: XXX Baumaßnahme B3.4 (Realisierung nach 2011)
@@ -559,6 +559,7 @@ Bohnsdorfer Kreisel: Einbahnstraße wird aufgehoben	?::projected 21977,988 21894,
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2015
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/07re.pdf/file?y=2016 (Grundstücksnummerierungen)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: XXX in beiden Amtsblättern ohne Bindestriche --- ist das richtig?
 #: XXX fehlt in Berlin.coords.data, PLZ=14195
 #: note: Privatstraße
@@ -1048,7 +1049,7 @@ Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur e
 #: XXX liegt die Straße tatsächlich hier?
 #: XXX die Reinickendorfer Pressemeldungsschreiber sind fleißig, höchstwahrscheinlich wird es dort erscheinen, falls hier was passiert
 #: XXX fehlt in Berlin.coords.data, PLZ=13507 -> Humboldtinsel|Tegel|13507|X,Y
-#: osm_watch: way id="228172653" version="4"
+#: osm_watch: way id="228172653" version="5"
 #: last_checked: 2016-10-03 (Bauarbeiten)
 #: check_frequency: 150d
 Humboldtinsel: liegt die Straße hier? ausgeschildert? Qualität?	?::inwork 1687,20645 1635,20607 1587,20534 1403,20440
@@ -1175,7 +1176,7 @@ Kletterrosenweg	?::projected 21382,149 21354,289
 #: last_checked: 2014-09-13 vvv
 #: check_frequency: 90d vvv
 #: note fehlt noch bei osm vvv
-#: osm_watch: way id="57686461" version="5"
+#: osm_watch: way id="57686461" version="6"
 #: XXX ad osm_watch id referenziert die Daumstr., wegen der möglichen Zufahrten zu Wolzenseeweg, Röddelinseeweg, Quenzseeweg...
 #: XXX_osm: fehlt bei osm als "planned"/"proposed"
 #: XXX culdesac-Einträge!
@@ -1195,7 +1196,7 @@ Wolzenseeweg: Qualität? Straße bereits fertiggestellt? Wird es eine Überquerungs
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 # 
 #: next_check_id: OBERWALL-2014 vvv
-#: last_checked: 2016-09-30 vvv
+#: last_checked: 2016-10-28 vvv
 #: check_frequency: 90d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2015 (Grundstücksnummerierungen)
@@ -1489,6 +1490,13 @@ Weg an der Wuhle: evtl. entsteht auch ein Weg hier --- wird es auch eine Anbindu
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX Enddatum unbekannt
+Pettenkoferstr.: Sperrung für Radfahrer relevant?	? 14935,12596 14858,12775
+# 
+#: next_check: 2016-11-04
+#: priority: #A
+Weihnachtsmarkt am Alexa: wird die Voltairestr. wieder gesperrt?	? 11209,12430 11329,12497
+# 
 # REMOVED --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1610/nachricht6208.html vvv
 # REMOVED (realisiert) --- Beusselstr.: Markierung von neuen Busspuren?	? 5220,14043 5231,13843 5248,13434
 # REMOVED (realisiert) --- Invalidenstr.: Markierung von neuen Busspuren?	? 7415,13060 7433,13070 7563,13143 7573,13149 7714,13223 7759,13246
@@ -1637,7 +1645,7 @@ Anforderungsampel, X	?::inwork 7651,14260
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/25re.pdf/file?y=2016
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/46re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: XXX Berlin.coords.data-Eintrag fehlt
-#: last_checked: 2016-10-08
+#: last_checked: 2016-10-28
 Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?	? 9636,13076
 # 
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.490082.php
@@ -2658,6 +2666,7 @@ Campus am Jungfernsee: neue Straßen, wo genau?	? -13116,2533 -12975,2508 -13008,
 #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/entwurf_des_bebauungsplans_9-34__.pdf
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5377
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/29re.pdf/file?y=2016 (Grundstücksnummerierungen)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2016 (Straßenlandwidmung)
 #: XXX Straßennamen fehlen alle in Berlin.coords.data vvv
 #: last_checked: 2016-06-26 vvv
 #: check_frequency: 360d vvv
@@ -2731,10 +2740,11 @@ Benno-König-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::pro
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/39re.pdf/file?y=2016
 #: XXX vermutlich Verbundsteinpflaster
-#: osm_watch: way id="380935416" version="3"
+#: osm_watch: way id="380935416" version="4"
+#: XXX laut osm fertig
 #: last_checked: 2016-06-26
 #: check_frequency: 60d
-Traudelstr.: geplante Straße in Altglienicke, genaue Lage, Qualität?	?::projected 19027,1427 19169,1249 19143,1147
+Traudelstr.: genaue Lage, Qualität?	? 19027,1427 19169,1249 19143,1147
 #: XXX ^^^
 #: by: ^^^
 #: by: ^^^

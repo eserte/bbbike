@@ -2604,11 +2604,11 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
 #: XXX laut fritz bis 05.05.2016
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
-#: last_checked: 2016-09-30
+#: last_checked: 2016-10-28
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2016-09-17 vvv
+#: last_checked: 2016-10-28 vvv
 #: check_frequency: 30d vvv
 	X::inwork 9122,12509
 	X::inwork 9286,12886
@@ -2620,7 +2620,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id ^^^
 #
 #: XXX temporäre Ampel vvv
-#: last_checked: 2016-09-12 vvv
+#: last_checked: 2016-10-28 vvv
 #: check_frequency: 30d vvv
 	F::inwork 9270,12086
 #: check_frequency ^^^
@@ -2821,7 +2821,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id: FISCHERINSEL-2015 vvv
 #: source_id: IM_024012 vvv
 #: source_id: 2147339543 vvv
-#: last_checked: 2016-10-08 vvv
+#: last_checked: 2016-10-28 vvv
 	F::inwork 10703,11837
 	F::inwork 10656,11887
 #: last_checked ^^^
@@ -2846,7 +2846,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: Anforderungsampel
 	F 10462,3765
 #: XXX Baustellenampel
-#: last_checked: 2016-09-02
+#: last_checked: 2016-10-28
 #: check_frequency: 60d
 	F::inwork 8853,13539
 #: next_check_id: HEERSTR-2016

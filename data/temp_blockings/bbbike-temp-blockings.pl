@@ -3562,14 +3562,14 @@ EOF
 userdel	2::inwork -19908,17940 -18793,18169
 EOF
      },
-     { from  => $isodate2epoch->("2015-11-28 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-11-29 20:00:00"), #
+     { from  => $isodate2epoch->("2016-11-26 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-11-27 20:00:00"), #
        periodic => 1,
-       recurrences => [['yearly', days => 29, months => 11]],
-       text  => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 29. November 2015 von 13 bis 18 Uhr)',
+       recurrences => [['yearly', days => 26, months => 11]],
+       text  => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 27. November 2016 von 13 bis 19 Uhr)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.weihnachtsmarkt-deutschland.de/berlin-lichtenrade-lichtermarkt.html
+#: by: http://www.weihnachteninberlin.de/weihnachtsmaerkte/tempelhof-schoeneberg/1310676-1328179-lichtenraderlichtermarkt.html
 userdel	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
@@ -17039,7 +17039,7 @@ EOF
 userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998 24927,-87720
 EOF
      },
-     { from  => $isodate2epoch->("2016-11-04 00:00:00"), # Aufbauzeit mindestens 17 Tage... (am Anfang ist nur die Fahrbahn der Voltairestr. gesperrt, später auch die Gehwege, die Schicklerstr. ist schon früher komplett gesperrt)
+     { from  => $isodate2epoch->("2016-12-04 00:00:00"), # XXX $isodate2epoch->("2016-11-04 00:00:00"), # Aufbauzeit mindestens 17 Tage... (am Anfang ist nur die Fahrbahn der Voltairestr. gesperrt, später auch die Gehwege, die Schicklerstr. ist schon früher komplett gesperrt)
        until => $isodate2epoch->("2016-12-26 23:59:59"), # Abbauzeit ca. 3 Tage?...
        periodic => 1,
        recurrences => [['yearly', days => 4, months => 11]],
@@ -21392,6 +21392,7 @@ EOF
        until => $isodate2epoch->("2015-11-29 23:59:59"), # 1385938799, # 2013-12-01 23:59
        periodic => 1,
        recurrences => [['yearly', days => 28, months => 11]], # zwei Termine, 1. und 3. Advent
+       recurrence_prewarn_days => 14, # 2016 stand der Termin Ende Oktober noch nicht fest
        text  => 'Bahnhofstr. (Lichtenrade): Weihnachtsmarkt zwischen Riedingerstr. und Goltzstr, Straße gesperrt, 28.11.2015 und 29.11.2015',
        type  => 'gesperrt',
        source_id => 'IM_020815',
@@ -22355,20 +22356,20 @@ EOF
 userdel	2::xmas 9986,13412 10317,13248
 EOF
      },
-     { from  => $isodate2epoch->("2015-11-28 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-11-29 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 29. November 2015, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2016-11-26 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-11-27 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 27. November 2016, 12:00 bis 19:00 Uhr',
        periodic => 1,
-       recurrences => [['yearly', days => 29, months => 11]],
+       recurrences => [['yearly', days => 26, months => 11]],
        type  => 'gesperrt',
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
        data  => <<EOF,
 userdel	2::xmas 11317,14564 11255,14572 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2015-12-05 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-12-06 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 6. Dezember 2015, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2016-12-03 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-12-04 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 4. Dezember 2016, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 6, months => 12]],
        type  => 'gesperrt',
@@ -22377,9 +22378,9 @@ EOF
 userdel	2::xmas 11317,14564 11255,14572 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2015-12-12 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-12-13 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 13. Dezember 2015, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2016-12-10 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-12-11 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 11. Dezember 2016, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 13, months => 12]],
        type  => 'gesperrt',
@@ -22388,9 +22389,9 @@ EOF
 userdel	2::xmas 11317,14564 11255,14572 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2015-12-19 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-12-20 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 20. Dezember 2015, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2016-12-17 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-12-18 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 18. Dezember 2016, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 12]],
        type  => 'gesperrt',
@@ -23526,15 +23527,16 @@ userdel	q3::inwork 4638,10162 4623,10066 4609,9949
 EOF
      },
      { from  => $isodate2epoch->("2016-08-21 00:00:00"), # 1412021931, # 2014-09-29 22:18
-       until => $isodate2epoch->("2016-10-07 18:00:00"), # 1427482278, # $isodate2epoch->("2015-03-28 23:59:59"), # 1424473200, # 2015-02-21 00:00
-       text  => 'Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt, 22.08.2016 bis 07.10.2016',
+       until => undef, # $isodate2epoch->("2016-10-07 18:00:00"), # 1427482278, # $isodate2epoch->("2015-03-28 23:59:59"), # 1424473200, # 2015-02-21 00:00
+       text  => 'Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2016/pressemitteilung.510363.php
 #: XXX hier wird asphaltiert
+#: XXX ursprüngliches Enddatum wurde wohl nicht eingehalten
 #: osm_watch: way id="33912929" version="12"
-#: last_checked: 2016-09-21
-#: next_check: 2016-10-07
+#: last_checked: 2016-10-28
+#: check_frequency: 14d
 #: priority: #A
 userdel	2::inwork 8101,13901 8248,13659 8337,13541
 EOF
@@ -24330,7 +24332,7 @@ userdel	q3::inwork 12295,12197 12525,12151
 EOF
      },
      { from  => $isodate2epoch->("2016-08-28 00:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2016-10-31 23:59:59"),
+       until => $isodate2epoch->("2016-10-31 04:00:00"),
        text  => 'Karlshorster Str.: zwischen Haupstr. und Nöldnerstr. Fahrbahn komplett gesperrt, während der Arbeitszeiten auch für Fußgänger und Radfahrer, Einbahnstraßenregelung in der Nöldnerstr. und Hirschberger Str., 29.08.2016 bis 31.10.2016',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -25493,7 +25495,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2016-10-08 vvv
+#: last_checked: 2016-10-28 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -25609,7 +25611,7 @@ EOF
        text  => 'Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2016-10-26
+#: last_checked: 2016-10-28
 #: check_frequency: 14d
 userdel	q3::inwork 13295,11792 13173,11788 13066,11854
 EOF

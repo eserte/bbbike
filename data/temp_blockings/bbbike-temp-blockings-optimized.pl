@@ -450,7 +450,26 @@ userdel	2::xmas 5656,10876 5652,11004
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.weihnachteninberlin.de/weihnachtsmaerkte/tempelhof-schoeneberg/1310676-1328179-lichtenraderlichtermarkt.html
+userdel	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
+',
+         'from' => 1480114800,
+         'id' => 417,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 27. November 2016 von 13 bis 19 Uhr)',
+         'type' => 'gesperrt',
+         'until' => 1480273200
+       },
        undef,
        undef,
        undef,
@@ -2294,7 +2313,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
 userdel	2::xmas 11209,12430 11273,12301
 userdel	2::xmas 11273,12301 11355,12331
 ',
-         'from' => 1478214000,
+         'from' => 1480806000,
          'id' => 1988,
          'periodic' => 1,
          'recurrences' => [
@@ -3260,10 +3279,86 @@ userdel	2::night 17671,13132 17684,13133
          'type' => 'gesperrt',
          'until' => 1482101999
        },
-       undef,
-       undef,
-       undef,
-       undef,
+       {
+         'data' => 'userdel	2::xmas 11317,14564 11255,14572 11155,14554
+',
+         'from' => 1480158000,
+         'id' => 2518,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              11
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 27. November 2016, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1480269600
+       },
+       {
+         'data' => 'userdel	2::xmas 11317,14564 11255,14572 11155,14554
+',
+         'from' => 1480762800,
+         'id' => 2519,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              6,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 4. Dezember 2016, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1480874400
+       },
+       {
+         'data' => 'userdel	2::xmas 11317,14564 11255,14572 11155,14554
+',
+         'from' => 1481367600,
+         'id' => 2520,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              13,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 11. Dezember 2016, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1481479200
+       },
+       {
+         'data' => 'userdel	2::xmas 11317,14564 11255,14572 11155,14554
+',
+         'from' => 1481972400,
+         'id' => 2521,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 18. Dezember 2016, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1482084000
+       },
        undef,
        undef,
        undef,
@@ -3433,7 +3528,22 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2016/pressemitteilung.510363.php
+#: XXX hier wird asphaltiert
+#: XXX ursprüngliches Enddatum wurde wohl nicht eingehalten
+#: osm_watch: way id="33912929" version="12"
+#: last_checked: 2016-10-28
+#: check_frequency: 14d
+#: priority: #A
+userdel	2::inwork 8101,13901 8248,13659 8337,13541
+',
+         'from' => 1471730400,
+         'id' => 2636,
+         'text' => 'Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -3594,7 +3704,7 @@ userdel	q4::inwork; 3807,11859 3666,11855
          'id' => 2717,
          'text' => 'Karlshorster Str.: zwischen Haupstr. und Nöldnerstr. Fahrbahn komplett gesperrt, während der Arbeitszeiten auch für Fußgänger und Radfahrer, Einbahnstraßenregelung in der Nöldnerstr. und Hirschberger Str., 29.08.2016 bis 31.10.2016',
          'type' => 'gesperrt',
-         'until' => 1477954799
+         'until' => 1477882800
        },
        undef,
        {
@@ -3900,7 +4010,7 @@ userdel	q4::inwork; 8730,8079 8776,8285 8807,8353
        },
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2016-10-08 vvv
+#: last_checked: 2016-10-28 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -3994,7 +4104,7 @@ userdel	q4::inwork; 5013,10039 5026,10151 5047,10381
          'until' => 1483225199
        },
        {
-         'data' => '#: last_checked: 2016-10-26
+         'data' => '#: last_checked: 2016-10-28
 #: check_frequency: 14d
 userdel	q3::inwork 13295,11792 13173,11788 13066,11854
 ',

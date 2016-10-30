@@ -723,7 +723,7 @@ Karl-Heinrich-Ulrichs-Str.	H 7033,10396 7003,10513 6985,10597 6972,10665
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2013 (Verschiebung, kein neuer Termin)
 #: osm_watch: way id="150519560" version="6"
 #: last_checked: 2016-05-24
-#: check_frequency: 150d
+#: check_frequency: 360d
 #: priority: #A
 Einemstr.	H 6972,10665 6929,10852
 Nollendorfplatz	H 7033,10328 7033,10396
@@ -8956,14 +8956,14 @@ Straße 42 (Blankenburg)	N 14554,20891 14751,20876
 Straße 24	N 14532,20820 14484,20832
 Straße 27	N 14747,21472 14617,21490 14541,21360 14509,21337
 Straße 26	N 14977,21194 14771,21253 14679,21285 14509,21337
-#: XXX Straße wird benannt: Marie-Grünberg-Str.
+#: XXX Straße wird benannt: Marie-Grünberg-Str.: prüfen, ob das tatsächlich passiert ist
+#: last_checked: 2016-04-17
+#: next_check: 2016-10-27
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4204
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2016
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4282
-#: last_checked: 2016-04-17
-#: next_check: 2016-10-27
-#: priority: #A
-Straße 46 (Blankenburg)	N 14320,20580 14482,20547 14685,20504
+#: oldname: -20161027: Straße 46 (Blankenburg)
+Marie-Grünberg-Str.	N 14320,20580 14482,20547 14685,20504
 Mittelstr. (Blankenburg)	N 13912,20650 14320,20580
 Treseburger Str. (Blankenburg)	N 14509,21337 14461,21372 14304,21399 14226,21419 14157,21442 14069,21471 13978,21496 13884,21524
 #: note: Privatstraße vvv
@@ -16554,8 +16554,7 @@ Margarete-Steffin-Str.	N 8315,13181 8406,13127 8525,12958 8559,12912 8631,12848 
 (Parkweg Spreebogenpark)	NN 8309,12758 8304,12938
 (südliches Spreeufer - Gustav-Heinemann-Brücke)	NN 8032,12889 8053,12871 8116,12938
 (südliches Spreeufer - Panoramaweg)	NN 8427,12871 8385,12881 8304,12938
-(entlang der Baustelle an der Charité)	NN 8833,13440 8846,13412 8835,13376 8818,13365 8808,13377 8764,13372
-(Parkplatz Charité)	NN 8764,13372 8665,13353
+(an der Notfallaufnahme Charité)	N 8833,13440 8836,13396 8806,13384 8665,13353
 Robert-Koch-Platz [Hannoversche Str.]	N 8674,13593 8634,13588 8601,13584
 Robert-Koch-Platz [Luisenstr.]	H 8634,13588 8648,13498
 Robert-Koch-Platz	N 8601,13584 8611,13494 8648,13498 8684,13503 8674,13593
