@@ -137,7 +137,9 @@ install_perl_dependencies() {
 	esac
 	if true
 	then
-	    cpanm --quiet --notest App::cpm
+	    # install cpm; and install also https support for LWP because of
+	    # https://github.com/miyagawa/cpanminus/issues/519
+	    cpanm --quiet --notest App::cpm LWP::Protocol::https
 	    perl Makefile.PL
 	    mymeta-cpanfile > cpanfile~ && mv cpanfile~ cpanfile
 	    # problem with optional core modules: https://github.com/skaji/cpm/issues/42
