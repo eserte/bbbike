@@ -824,6 +824,7 @@ Markgrafenstr.	1 9807,10788 9799,10846
 Markgrafenstr.	1 9799,10846 9834,10840
 Morgensternstr.	1 5212,2360 5229,2395
 Gotenburger Str.: Einfahrt verboten	1s 9000,16803 8847,16870
+Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -2544,7 +2545,7 @@ Tor, sollte geschlossen gehalten werden	BNP:10:1:trailer=15 -6943,14262
 Schranke	BNP:3:-66:trailer=10 3427,18467
 Schranke	BNP:3:-79:trailer=10 -4300,15295
 Schranke	BNP:3:-77:trailer=10 -4117,15255
-Schranke	BNP:3:-249:trailer=10 15090,11237
+Schranke	BNP:3:-248:trailer=10 15090,11237
 Schranke	BNP:5:22:trailer=10 10919,9804
 Drängelgitter, kann umfahren werden	BNP:3:-152:trailer=10 14969,10138
 Schwingtor	BNP:3:-252:trailer=10 14146,12921
@@ -2869,7 +2870,7 @@ Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr
 Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 18892,3256 18953,3318
 Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17651,-393
 (Planstraßen 2.1, 2.2, 2.3): noch gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924
-Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, ggfs. dauerhaft	2::inwork 17670,7512 17681,7589
+Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, für Autos dauerhaft	2::inwork 17670,7512 17681,7589
 (Treppe an der Freybrücke)	2::inwork -3181,11496 -3177,11507 -3173,11520
 Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3217,11570
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372

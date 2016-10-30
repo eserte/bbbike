@@ -2789,10 +2789,12 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_prog eigentlich nur für Radfahrer Richtung Nordwesten relevant vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
 #: source_id: IM_023548 (bis Ende April 2016) vvv
-#: last_checked: 2016-09-16 vvv
+#: last_checked: 2016-10-30 vvv
 #: check_frequency: 120d vvv
 # REMOVED (Zweirichtungsradweg geht Richtung Norden weiter) --- F 17568,7753
-	F 17769,7465
+#: XXX hier wird später eine normale Ampel stehen
+	F::inwork 17681,7589
+	F::inwork 17527,7812
 #: check_frequency ^^^
 #: last_checked ^^^
 #: source_id ^^^
@@ -2806,7 +2808,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
 #: source_id: IM_023532 (Gesamtmaßnahme bis Ende Juni 2016) vvv
 #: source_id: 2147339539 vvv
-#: last_checked: 2016-09-11 vvv
+#: last_checked: 2016-10-30 vvv
 #: check_frequency: 90d vvv
 	F::inwork 16909,6628
 	F::inwork 16646,6925
@@ -3029,9 +3031,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: off: Pfingstmontag 2016-05-16 gegen 13 Uhr
 	F -7554,13514
 # 
-#: next_check_id: HAUPTSTR-2015
-#: last_checked: 2016-09-30
-	F::inwork 14672,10760
+# REMOVED --- #: next_check_id: HAUPTSTR-2015 --- #: last_checked: 2016-09-30 ---	F::inwork 14672,10760
 ################################################################################
 #: note: Ampeln elsewhere vvv
 	F -2691,-1112

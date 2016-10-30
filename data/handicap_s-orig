@@ -60,7 +60,7 @@ Rigaer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 14133,12482 14266,12446
 # REMOVED (fast keine Einschränkungen mehr) --- #: source_id: LMS_3261840849 --- #: last_checked: 2013-03-03 --- Gärtnerstr.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14247,11681 14272,11775
 # REMOVED (Bauarbeiten beendet) --- Mainzer Str., Gärtnerstr.: Baustelle, Einbahnstraßenregelung	q3::inwork; 14311,11884 14357,12011
 # REMOVED --- #: last_checked: 2013-04-16 --- #: check_frequency: 7d --- #: XXX abhängig von den Arbeiten in der Kynaststr. --- #: source_id: IM_018694 --- Alt-Stralau: Asphaltierungsarbeiten unter der Brücke, Fahrbahn gesperrt, Gehweg passierbar	q3::inwork 14652,10201 14619,10223 14558,10264
-# REMOVED (erstmal wieder befahrbar) --- #: last_checked: 2013-03-26 --- Markgrafendamm - Modersohnstr.: Bauarbeiten, Fahrbahn gesperrt, enger Gehweg kann benutzt werden	q3::inwork 14672,10760 14564,10792
+# REMOVED (erstmal wieder befahrbar) --- #: last_checked: 2013-03-26 --- Markgrafendamm - Modersohnstr.: Bauarbeiten, Fahrbahn gesperrt, enger Gehweg kann benutzt werden	q3::inwork 14671,10751 14564,10792
 # 
 ### Tempelhof ###
 # 
@@ -853,7 +853,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20140603.1435.397678.html (Vorlage 096/2014)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
-#: last_checked: 2016-07-24
+#: last_checked: 2016-10-30
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268
@@ -1021,7 +1021,7 @@ Wildensteiner Str.: enge Straße	q0- 18627,8475 18528,8331
 Wildensteiner Str.: enge Straße	q1 18528,8331 18416,8163 18365,8094 18333,8059
 # REMOVED --- #: XXX noch immer eine enge Stelle? --- (Am Carlsgarten - Waldowallee): enger Abschnitt under der Bahnbrücke	q2 19460,7954 19504,8003 19558,8064
 Linienstr./Oranienburger Str.: Fußgänger	q2 9225,13389 9312,13388
-#: note: falls die Umfahrungsstellen nicht zugeparkt sind, was wohl häufiger der Fall ist (gesehen: 2013-03-09)
+#: note: falls die Umfahrungsstellen nicht zugeparkt sind, was wohl häufiger der Fall ist (gesehen: 2013-03-09, 2016-10-30)
 Fontanestr.: zwei Schwellen, können evtl. umfahren werden	q1 18240,6845 18254,6679
 #: note: wenn keine Autos illegalerweise an diesen Stellen parken
 Triniusstr.: zwei Schwellen, können umfahren werden	q1+ 18417,6775 18339,6660
@@ -2150,7 +2150,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="5"
-#: last_checked: 2016-08-20
+#: last_checked: 2016-10-30
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
 Insel-Rügen-Weg: eng	q2 10967,17671 10978,17589 11064,17599

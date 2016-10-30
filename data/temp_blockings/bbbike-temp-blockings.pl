@@ -23528,14 +23528,14 @@ EOF
      },
      { from  => $isodate2epoch->("2016-08-21 00:00:00"), # 1412021931, # 2014-09-29 22:18
        until => undef, # $isodate2epoch->("2016-10-07 18:00:00"), # 1427482278, # $isodate2epoch->("2015-03-28 23:59:59"), # 1424473200, # 2015-02-21 00:00
-       text  => 'Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt',
+       text  => 'Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten bis November 2016 gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2016/pressemitteilung.510363.php
 #: XXX hier wird asphaltiert
-#: XXX ursprüngliches Enddatum wurde wohl nicht eingehalten
+#: XXX ursprüngliches Enddatum wurde nicht eingehalten
 #: osm_watch: way id="33912929" version="12"
-#: last_checked: 2016-10-28
+#: last_checked: 2016-10-30
 #: check_frequency: 14d
 #: priority: #A
 userdel	2::inwork 8101,13901 8248,13659 8337,13541

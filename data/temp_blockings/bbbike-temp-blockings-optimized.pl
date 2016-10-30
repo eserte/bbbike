@@ -3531,16 +3531,16 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
        {
          'data' => '#: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2016/pressemitteilung.510363.php
 #: XXX hier wird asphaltiert
-#: XXX ursprüngliches Enddatum wurde wohl nicht eingehalten
+#: XXX ursprüngliches Enddatum wurde nicht eingehalten
 #: osm_watch: way id="33912929" version="12"
-#: last_checked: 2016-10-28
+#: last_checked: 2016-10-30
 #: check_frequency: 14d
 #: priority: #A
 userdel	2::inwork 8101,13901 8248,13659 8337,13541
 ',
          'from' => 1471730400,
          'id' => 2636,
-         'text' => 'Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten gesperrt',
+         'text' => 'Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten bis November 2016 gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        },

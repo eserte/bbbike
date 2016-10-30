@@ -36,7 +36,7 @@ Eiswerderstr.: Asphalt	Q0 -2883,15571 -2783,15538 -2702,15517 -2675,15513
 #: XXX Baumaßnahme 6.9 (Realisierung bis 2010)
 #: osm_watch: way id="23044831" version="11"
 Neue Kreisstr.: Kopfsteinpflaster	Q2 -7191,-1023 -7271,-1102 -7376,-1226 -7498,-1355 -7592,-1402
-Markgrafendamm: Asphalt	Q0 14558,10264 14608,10409 14641,10552 14675,10693 14672,10760 14674,10811
+Markgrafendamm: Asphalt	Q0 14558,10264 14608,10409 14641,10552 14675,10693 14671,10751 14674,10811
 Markgrafendamm/Hauptstr.: asphaltiert	Q0 14674,10811 14717,10855 14794,10844 14906,10820
 # REMOVED --- #: next_check_id: HAUPTSTR-2015 vvv --- #: XXX nach den Bauarbeiten vermutlich asphaltiert mit Radwegen oder -spuren vvv --- #: source_id: 2147339565 vvv --- #: last_checked: 2016-08-25 vvv --- #: next_check: 2016-08-29 vvv
 Hauptstr.: Asphalt	Q0 14906,10820 15261,10738
@@ -1968,7 +1968,7 @@ Auguste-Hauschner-Str.: asphaltiert	Q0 8438,11753 8473,11638 8502,11564
 Cora-Berliner-Str.: asphaltiert	Q0 8737,12098 8783,11959
 Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8825,11773 8813,11825 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
-(Markgrafendamm - Modersohnstr.; über das DB-Gelände): asphaltiert	Q0 14672,10760 14566,10783
+(Markgrafendamm - Modersohnstr.; über das DB-Gelände): asphaltiert	Q0 14671,10751 14566,10783
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Beton	Q0 14566,10783 14558,10819
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 14558,10819 14141,10931 14107,10911 14043,10928
 Mehringplatz: Verbundsteinpflaster	Q0 9592,10263 9547,10278 9517,10332 9527,10389 9587,10421 9646,10404 9675,10351 9668,10306 9646,10279 9606,10263 9592,10263
@@ -3429,8 +3429,8 @@ Am Rosengarten: Beton	Q1 18654,12255 18707,12225 18749,12226
 (Am Rosengarten - Lütztalweg): unbefestigter Weg	Q2 18749,12226 18834,12228
 (Am Rosengarten - Lütztalweg): wassergebundene Decke	Q1 18834,12228 18867,12265 18917,12271
 Hohenschönhauser Weg: mäßiger Asphalt	Q1 18420,11864 18411,12100
-Rosenfelder Ring: Kopfsteinpflaster	Q2+ 17466,11960 17384,11976
-Rosenfelder Ring: Beton	Q1+ 18014,11837 18004,12010 17978,12084 17917,12106 17846,12102 17487,12012 17466,11960
+Rosenfelder Ring: Kopfsteinpflaster	Q2+ 17460,11961 17384,11976
+Rosenfelder Ring: Beton	Q1+ 18014,11837 18004,12010 17978,12084 17917,12106 17846,12102 17511,12019 17480,12003 17460,11961
 Rosenfelder Ring: Beton	Q0- 17477,11893 17772,11862 18014,11837
 #: note: aus der S-Bahn gesehen:
 Seebeckstr.: Kopfsteinpflaster	Q2+ 8495,18566 8425,18542
@@ -7461,16 +7461,16 @@ Hermann-Stöhr-Platz: wassergebundene Decke, holprig	Q2+ 12453,11790 12409,11902
 (Zur Alten Flussbadeanstalt - Bolleufer): Beton, teilweise Verbundsteinpflaster	Q0- 16268,9670 16182,9591 16120,9653 16123,9692
 (Normannenstr. - Jobcenter Lichtenberg): Verbundsteinpflaster, Asphalt	Q1 16056,12317 16068,12376 16080,12441 16089,12522
 (Normannenstr. - Jobcenter Lichtenberg): Beton	Q1 16089,12522 16122,12524 16132,12621
-Kaskelstr.: Asphalt	Q0 15245,11178 15090,11237 15058,11250
+Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 (Zobtener Str. - Fischerstr.): unbefestigter Weg, etwas Schotter	Q2+ 16353,10207 16404,10286
 (Fischerstr. - Lückstr.): unbefestigter Weg, etwas Schotter	Q2+ 16404,10286 16488,10381 16516,10448
 (Fischerstr. - Lückstr.): Beton mit Schäden	Q2+ 16516,10448 16501,10460 16572,10613 16587,10613
 (Fischerstr. - Lückstr.): Beton mit Schäden	Q1- 16587,10613 16601,10650
 #: XXX wird hier saniert werden?
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6721
-#: last_checked: 2016-06-19
+#: last_checked: 2016-10-30
 #: check_frequency: 120d
-(Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1- 17210,11950 17201,11975 17137,11969 17023,11908 17026,11888
+(Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1- 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 Rüdersdorfer Str. [Rückseite]: Beton	Q0- 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
 Neue Jakobstr. [Wohngebiet]: Beton, Kopfsteinpflasterabschnitt	Q1 11131,11579 11017,11658
 Neue Jakobstr. [Wohngebiet]: Beton	Q1 11017,11658 10963,11695
@@ -10246,6 +10246,8 @@ Am Lübarser Feld: Verbundsteinpflaster	Q1+ 5901,22710 5777,22852
 Mahnkopfweg: Kleinsteinpflaster	Q2 -3404,11589 -3342,11700 -3317,11706
 (Schwarzer Weg): schlechter Asphalt	Q2 1235,14609 1386,14605
 Siegfriedstr.: Beton, einzelne Hebungen	Q1+ 11664,6796 11935,6848 12122,6886 12305,6928 12342,6936
+Löwenberger Str.: Beton	Q0- 17440,11774 17477,11893 17460,11961
+Rosenfelder Str./Ring: Beton	Q1+ 17384,11976 17429,12030 17480,12003
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
