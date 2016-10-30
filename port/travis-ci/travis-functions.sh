@@ -22,7 +22,7 @@ init_env_vars() {
     export BBBIKE_LONG_TESTS=1 BBBIKE_TEST_SKIP_MAPSERVER=1
     # The default www.cpan.org may not be the fastest one, and may
     # even cause problems if an IPv6 address is chosen...
-    export PERL_CPANM_OPT="--mirror http://cpan.cpantesters.org --mirror https://cpan.metacpan.org"
+    export PERL_CPANM_OPT="--mirror https://cpan.metacpan.org --mirror http://cpan.cpantesters.org"
 }
 
 init_perl() {
