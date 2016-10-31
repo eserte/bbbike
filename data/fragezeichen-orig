@@ -2956,6 +2956,21 @@ Bebauungsplan 3-59: geplante Straßen und Wege	?::projected 12512,21482 12783,214
 #: next_check: 2018-09-01
 S-Bahnhof Marzahn: Verlängerung der nördlichen Brücke + Bau von Rampen, auch für Radfahrer interessant?	?::projected 19762,15475 19642,15534
 # 
+#: XXX Bebauungsplan 5-91 zwischen Brunsbütteler Damm und Nennhauser Damm vvv
+#: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/bebauungsplan_5-91.pdf
+Privatstraße A und Planstraße A: Namen, genauer Verlauf, Qualität? Was passiert mit dem Fuß/Radweg am Brunsbütteler Damm?	? -8064,13534 -8088,13594 -7984,13649 -7926,13709 -7897,13762 -7885,13818 -7896,13899 -7928,13967 -8023,14032 -8150,14064 -8220,14038 -8243,14183
+Privatstraße B: Name, genauer Verlauf, Qualität?	? -7885,13818 -7730,13857
+#: XXX ^^^
+# 
+#: XXX Bebauungsplan VIII-354, Hamburger Str./Seegefelder Str. vvv
+#: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/viii-354_planzeichnung.pdf
+#: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/viii-354_begruendung.pdf
+#: XXX Straßennamen sind wohl: Künzelsauer Weg, Öhringer Weg, Hohenloher Weg, Ingelfinger Weg; fehlen alle in Berlin.coords.data
+#: XXX vermutlich (teilweise?) Privatstraßen
+Neue Straßen entstehen: Qualität, genaue Lage, Straßennamen?	?::inwork -8153,15852 -8223,15879 -8312,15914 -8377,15756 -8285,15718 -8274,15743 -8223,15879
+Neue Straßen entstehen: Qualität, genaue Lage, Straßennamen?	?::inwork -8274,15743 -8184,15717
+#: XXX ^^^
+# 
 #: ignore ^^^
 #: section ^^^
 # 
@@ -3603,7 +3618,7 @@ Demnitz - Altwigshagen: Qualität?	? 35047,144242 35170,144280 35505,144226 35871
 Flaeming-Skate, RK3: genaue Wegführung? Qualität (wahrscheinlich asphaltierte Radwege)	? -11258,-44256 -11846,-43656 -12023,-43430 -11968,-42909 -11928,-42617 -10865,-42209 -10612,-42017 -10274,-42032 -10021,-42071 -10009,-42157 -9811,-42202 -9622,-42397 -9088,-42717 -8988,-42742 -9082,-43110 -9037,-43211 -8936,-43318
 Flaeming-Skate, RK2: genaue Wegführung? Qualität (wahrscheinlich asphaltierte Radwege)	? -5082,-38726 -5149,-38403 -4942,-37087 -4768,-36337 -3794,-36334
 Löpten - Halbe (West): Qualität?	? 30295,-28418 29920,-28522 29923,-28702 30082,-29064 30094,-29360 29778,-30065 29704,-30237 29881,-30578 29850,-30776 30079,-31267 30024,-31526 30201,-31788 29936,-32373
-# REMOVED (siehe qualitaet_s/l) --- #: XXX: Aber Bauarbeiten, die bis Ende Mai 2008 (2008-05-31) fertig werden... dann besser geeignet? (siehe http://www.berlin.de/ba-spandau/presse/archiv/20080325.1455.96926.html) --- Hamburger Str.: Qualität (laut ADFC-Karte mäßig geeignet)?	? -8010,16486 -8080,16150 -8197,15622
+# REMOVED (siehe qualitaet_s/l) --- #: XXX: Aber Bauarbeiten, die bis Ende Mai 2008 (2008-05-31) fertig werden... dann besser geeignet? (siehe http://www.berlin.de/ba-spandau/presse/archiv/20080325.1455.96926.html) --- Hamburger Str.: Qualität (laut ADFC-Karte mäßig geeignet)?	? -8010,16486 -8080,16150 -8198,15648
 Barkhausenstr.: Qualität?	? -10530,16281 -10744,16241
 Barkhausenstr.: Qualität?	? -10853,16230 -10970,16232 -11136,16247 -11296,16308 -11549,16413 -11783,16506
 #: next_check: 2009-06-01
@@ -4845,3 +4860,4 @@ Germanenplatz: ist nach der Fahrbahninstandsetzung die Qualität besser geworden?
 #: next_check ^^^
 #: last_checked ^^^
 # 
+Philipp-Gerlach-Weg - Brunsbütteler Damm: existiert hier für Radfahrer eine Verbindung? Qualität? Nachts beleuchtet?	? -7801,13697 -7730,13857
