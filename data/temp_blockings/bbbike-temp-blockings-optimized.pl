@@ -3689,23 +3689,7 @@ userdel	q4::inwork; 3807,11859 3666,11855
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: KARLSHORSTER-2016
-#: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.511369.php
-#: source_id: 2147340474
-#: XXX periodisch prüfen
-#: last_checked: 2016-10-27
-#: next_check: 2016-10-31
-	2::inwork 15261,10738 15272,10790
-	q4; 15279,10862 15272,10790 15388,10758 15433,10765
-	q4; 15205,11080 15102,11120 15021,11152 14988,11130
-',
-         'from' => 1472335200,
-         'id' => 2717,
-         'text' => 'Karlshorster Str.: zwischen Haupstr. und Nöldnerstr. Fahrbahn komplett gesperrt, während der Arbeitszeiten auch für Fußgänger und Radfahrer, Einbahnstraßenregelung in der Nöldnerstr. und Hirschberger Str., 29.08.2016 bis 31.10.2016',
-         'type' => 'gesperrt',
-         'until' => 1477882800
-       },
+       undef,
        undef,
        {
          'data' => '	2::inwork 9998,16547 9983,16561 9955,16578
@@ -3834,21 +3818,7 @@ userdel	q4::xmas 11064,12910 11134,12793
          'type' => 'handicap',
          'until' => 1484348400
        },
-       {
-         'data' => '#: note: hier zurzeit (2016-10-08) nicht gesperrt
-	2::inwork -3529,13452 -3546,13503 -3556,13582 -3543,13691
-#: note: hier zurzeit (2016-10-08) gesperrt
-	2::inwork -3543,13691 -3503,13773
-# REMOVED (hier fertig) --- #: note: hier zurzeit (2016-05-16) komplett gesperrt --- 2::inwork -3503,13773 -3460,13828 -3459,13846 -3390,13940 -3345,13994
-	2::inwork -3494,13980 -3390,13940
-',
-         'from' => 1460584800,
-         'id' => 2777,
-         'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.466174.php',
-         'text' => 'Schifffahrtsufer: Bauarbeiten zwischen Bullengraben und Stabholzgraben, komplett gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
-         'until' => 1477911600
-       },
+       undef,
        undef,
        {
          'data' => '#: note: am So 2016-04-17 gegen 15 Uhr offen
@@ -4104,7 +4074,7 @@ userdel	q4::inwork; 5013,10039 5026,10151 5047,10381
          'until' => 1483225199
        },
        {
-         'data' => '#: last_checked: 2016-10-28
+         'data' => '#: last_checked: 2016-10-31
 #: check_frequency: 14d
 userdel	q3::inwork 13295,11792 13173,11788 13066,11854
 ',
