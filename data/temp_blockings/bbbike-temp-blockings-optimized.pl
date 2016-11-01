@@ -2507,7 +2507,7 @@ userdel	3 8374,11479 8389,11378 8427,11365
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Oktober von 7.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im November von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -4125,6 +4125,17 @@ userdel	q4::inwork 4646,6875 4767,6717
          'text' => 'Geisenheimer Str.: zwischen Rauenthaler Straße und Gritznerstraße Tiefbauarbeiten, Fahrbahn gesperrt, bis 09.12.2016',
          'type' => 'handicap',
          'until' => 1481324400
+       },
+       {
+         'data' => 'userdel	2::temp -2834,5578 -1925,6790 -2080,6897
+userdel	2::temp -2226,5120 -927,6888
+userdel	2::temp -1925,6790 -1851,6887
+',
+         'from' => 1477989030,
+         'id' => 2840,
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am Mittwoch ab 09:30',
+         'type' => 'gesperrt',
+         'until' => 1478088000
        }
      
 );

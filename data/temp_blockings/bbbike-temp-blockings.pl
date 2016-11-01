@@ -25654,4 +25654,14 @@ EOF
 userdel	q4::inwork 4646,6875 4767,6717
 EOF
      },
+     { from  => 1477989030, # 2016-11-01 09:30
+       until => 1478088000, # 2016-11-02 13:00
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am Mittwoch ab 09:30',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp -2834,5578 -1925,6790 -2080,6897
+userdel	2::temp -2226,5120 -927,6888
+userdel	2::temp -1925,6790 -1851,6887
+EOF
+     },
     );
