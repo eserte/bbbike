@@ -17039,7 +17039,7 @@ EOF
 userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998 24927,-87720
 EOF
      },
-     { from  => $isodate2epoch->("2016-12-04 00:00:00"), # XXX $isodate2epoch->("2016-11-04 00:00:00"), # Aufbauzeit mindestens 17 Tage... (am Anfang ist nur die Fahrbahn der Voltairestr. gesperrt, später auch die Gehwege, die Schicklerstr. ist schon früher komplett gesperrt)
+     { from  => $isodate2epoch->("2016-11-04 00:00:00"), # XXX $isodate2epoch->("2016-11-04 00:00:00"), # Aufbauzeit mindestens 17 Tage... (am Anfang ist nur die Fahrbahn der Voltairestr. gesperrt, später auch die Gehwege, die Schicklerstr. ist schon früher komplett gesperrt)
        until => $isodate2epoch->("2016-12-26 23:59:59"), # Abbauzeit ca. 3 Tage?...
        periodic => 1,
        recurrences => [['yearly', days => 4, months => 11]],
@@ -17049,7 +17049,7 @@ EOF
        data  => <<EOF,
 userdel	2::xmas 11329,12497 11209,12430
 userdel	2::xmas 11209,12430 11273,12301
-userdel	2::xmas 11273,12301 11355,12331
+# REMOVED (hier (noch?) nicht gesperrt) --- userdel	2::xmas 11273,12301 11355,12331
 EOF
      },
      { from  => $isodate2epoch->("2016-11-20 00:00:00"), # 1 Tag Vorlauf
@@ -17140,12 +17140,12 @@ userdel	3 8427,11365 8389,11378 8374,11479
 userdel	3 8374,11479 8389,11378 8427,11365
 EOF
      },
-     { from  => $isodate2epoch->("2015-12-03 00:00:00"), # 1354809600, # 2012-12-06 17:00, # 1322780400, # PERIODISCH! # früher: 1259959719, # 2009-12-04 21:48
-       until => $isodate2epoch->("2015-12-06 23:59:59"), # 1355079600, # 2012-12-09 20:00, # 1323039600, # PERIODISCH! # früher: 1260140400, # 2009-12-07 00:00
+     { from  => $isodate2epoch->("2016-12-01 00:00:00"), # 1354809600, # 2012-12-06 17:00, # 1322780400, # PERIODISCH! # früher: 1259959719, # 2009-12-04 21:48
+       until => $isodate2epoch->("2016-12-04 23:59:59"), # 1355079600, # 2012-12-09 20:00, # 1323039600, # PERIODISCH! # früher: 1260140400, # 2009-12-07 00:00
        periodic => 1,
-       recurrences => [['yearly', days => 4, months => 12]],
+       recurrences => [['yearly', days => 1, months => 12]],
        source_id => 'http://www.weihnachtsmarkt-deutschland.de/weihnachtsmarkt-berlin-alt-rixdorf.html',
-       text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (04.12.2015 - 06.12.2015)',
+       text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (02.12.2016 - 04.12.2016)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::xmas 13416,7712 13426,7674
@@ -25495,21 +25495,21 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2016-10-28 vvv
+#: last_checked: 2016-11-04 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
 #	2::inwork 11032,12439 11059,12450
 #	2::inwork 11049,12386 11084,12395
-	q2::inwork; 11092,12375 11209,12430
+# REMOVED (eh' nur teilweise) --- q2::inwork; 11092,12375 11209,12430
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 EOF
      },
      { from  => 1472680800, # 2016-09-01 00:00
-       until => $isodate2epoch->("2016-11-05 16:00:00"),
-       text  => 'Goltzstr.: Richtung Süden zwischen Mertensstr. und Rauchstr. Baustelle, Fahrtrichtung gesperrt, 02.09.2016 bis 05.11.2016',
+       until => $isodate2epoch->("2016-11-11 16:00:00"),
+       text  => 'Goltzstr.: Richtung Süden zwischen Mertensstr. und Rauchstr. Baustelle, Fahrtrichtung gesperrt, 02.09.2016 bis Mitte 11.11.2016',
        type  => 'handicap',
        source_id => '2147340513',
        data  => <<EOF,
@@ -25611,7 +25611,7 @@ EOF
        text  => 'Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2016-10-31
+#: last_checked: 2016-11-03
 #: check_frequency: 14d
 userdel	q3::inwork 13295,11792 13173,11788 13066,11854
 EOF
@@ -25662,6 +25662,15 @@ EOF
 userdel	2::temp -2834,5578 -1925,6790 -2080,6897
 userdel	2::temp -2226,5120 -927,6888
 userdel	2::temp -1925,6790 -1851,6887
+EOF
+     },
+     { from  => 1478412000, # 2016-11-06 07:00
+       until => 1478646000, # 2016-11-09 00:00
+       text  => 'Kiefholzstr.: Sperrung zwischen Treptower Str. und Puderstr. (Einbau von Hilfsbrücken), vom 07.11.2016, 07:00 Uhr bis zum 08.11.2016, 24:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1611/nachricht6250.html',
+       data  => <<EOF,
+userdel	2::inwork 14363,8738 14335,8771 14327,8856 14290,8907 14211,8909 14151,8967
 EOF
      },
     );

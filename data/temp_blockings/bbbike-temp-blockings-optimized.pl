@@ -2311,9 +2311,9 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'data' => 'userdel	2::xmas 11329,12497 11209,12430
 userdel	2::xmas 11209,12430 11273,12301
-userdel	2::xmas 11273,12301 11355,12331
+# REMOVED (hier (noch?) nicht gesperrt) --- userdel	2::xmas 11273,12301 11355,12331
 ',
-         'from' => 1480806000,
+         'from' => 1478214000,
          'id' => 1988,
          'periodic' => 1,
          'recurrences' => [
@@ -2383,7 +2383,34 @@ userdel	3 8374,11479 8389,11378 8427,11365
          'type' => 'gesperrt',
          'until' => 1482879599
        },
-       undef,
+       {
+         'data' => 'userdel	2::xmas 13416,7712 13426,7674
+userdel	2::xmas 13416,7712 13378,7695 13288,7653
+userdel	2::xmas 13426,7674 13400,7642 13303,7622
+userdel	2::xmas 12969,7610 13100,7626 13177,7644
+userdel	2::xmas 13188,7590 13177,7644
+userdel	2::xmas 13188,7590 13303,7622
+userdel	2::xmas 13288,7653 13303,7622
+userdel	2::xmas 13288,7653 13177,7644
+userdel	2::xmas 13288,7653 13278,7673 13245,7742
+',
+         'from' => 1480546800,
+         'id' => 1998,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-deutschland.de/weihnachtsmarkt-berlin-alt-rixdorf.html',
+         'text' => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (02.12.2016 - 04.12.2016)',
+         'type' => 'gesperrt',
+         'until' => 1480892399
+       },
        undef,
        undef,
        undef,
@@ -3980,13 +4007,13 @@ userdel	q4::inwork; 8730,8079 8776,8285 8807,8353
        },
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2016-10-28 vvv
+#: last_checked: 2016-11-04 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
 #	2::inwork 11032,12439 11059,12450
 #	2::inwork 11049,12386 11084,12395
-	q2::inwork; 11092,12375 11209,12430
+# REMOVED (eh\' nur teilweise) --- q2::inwork; 11092,12375 11209,12430
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -4003,9 +4030,9 @@ userdel	q4::inwork; 8730,8079 8776,8285 8807,8353
          'from' => 1472680800,
          'id' => 2826,
          'source_id' => '2147340513',
-         'text' => 'Goltzstr.: Richtung Süden zwischen Mertensstr. und Rauchstr. Baustelle, Fahrtrichtung gesperrt, 02.09.2016 bis 05.11.2016',
+         'text' => 'Goltzstr.: Richtung Süden zwischen Mertensstr. und Rauchstr. Baustelle, Fahrtrichtung gesperrt, 02.09.2016 bis Mitte 11.11.2016',
          'type' => 'handicap',
-         'until' => 1478358000
+         'until' => 1478876400
        },
        undef,
        undef,
@@ -4074,7 +4101,7 @@ userdel	q4::inwork; 5013,10039 5026,10151 5047,10381
          'until' => 1483225199
        },
        {
-         'data' => '#: last_checked: 2016-10-31
+         'data' => '#: last_checked: 2016-11-03
 #: check_frequency: 14d
 userdel	q3::inwork 13295,11792 13173,11788 13066,11854
 ',
@@ -4126,16 +4153,16 @@ userdel	q4::inwork 4646,6875 4767,6717
          'type' => 'handicap',
          'until' => 1481324400
        },
+       undef,
        {
-         'data' => 'userdel	2::temp -2834,5578 -1925,6790 -2080,6897
-userdel	2::temp -2226,5120 -927,6888
-userdel	2::temp -1925,6790 -1851,6887
+         'data' => 'userdel	2::inwork 14363,8738 14335,8771 14327,8856 14290,8907 14211,8909 14151,8967
 ',
-         'from' => 1477989030,
-         'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am Mittwoch ab 09:30',
+         'from' => 1478412000,
+         'id' => 2841,
+         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1611/nachricht6250.html',
+         'text' => 'Kiefholzstr.: Sperrung zwischen Treptower Str. und Puderstr. (Einbau von Hilfsbrücken), vom 07.11.2016, 07:00 Uhr bis zum 08.11.2016, 24:00 Uhr',
          'type' => 'gesperrt',
-         'until' => 1478088000
+         'until' => 1478646000
        }
      
 );

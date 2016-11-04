@@ -2472,13 +2472,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 22031,9142
 #: note: Anforderungsampel
 	F 15356,3759
-#: next_check_id: KARLSHORSTER-2016
-# REMOVED --- : XXX nicht immer eingeschaltet, z.B. 2015-08-08 (Sa) gegen 10 Uhr off
-#: note: provisorische Ampel
-#: last_checked: 2016-09-26
-#: next_check: 2016-10-31
-#: valid: 20160829-20161031
-	X::inwork 14805,10518
+# REMOVED --- #: next_check_id: KARLSHORSTER-2016 --- # REMOVED --- : XXX nicht immer eingeschaltet, z.B. 2015-08-08 (Sa) gegen 10 Uhr off --- #: note: provisorische Ampel --- #: last_checked: 2016-09-26 --- #: next_check: 2016-10-31 --- #: valid: 20160829-20161031 ---	X::inwork 14805,10518
 # REMOVED (ja) --- #: XXX bleibt die Ampel permanent? --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1509/nachricht5759.html (ja, es wird eine neue Ampel errichtet) --- #: last_checked: 2016-08-01 --- #: check_frequency: 60d
 	X 14906,10820
 	F 8667,5372
@@ -2608,7 +2602,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2016-10-28 vvv
+#: last_checked: 2016-11-04 vvv
 #: check_frequency: 30d vvv
 	X::inwork 9122,12509
 	X::inwork 9286,12886
@@ -2886,6 +2880,16 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: off: Sunday (gesehen 2016-10-03 gegen 15:45)
 #: on: Samstag (gesehen 2016-10-08 gegen 15:00)
 	F 3273,14738
+#: next_check_id: CHAUSSEESTR-2016 vvv
+#: source_id: 2147340715 vvv
+#: last_checked: 2016-11-04 vvv
+#: next_check: 2017-04-29 vvv
+	X::inwork 8250,14672
+	F::inwork 8732,14098
+#: next_check ^^^
+#: last_checked ^^^
+#: source_id ^^^
+#: next_check_id ^^^
 # 
 ################################################################################
 #: note: Potsdam vvv

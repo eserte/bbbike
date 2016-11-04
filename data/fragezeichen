@@ -564,7 +564,7 @@ Prager Str. (Potsdam): Qualität?	? -9464,-2868 -9503,-3005
 Otterweg (Potsdam): Qualität? Ist die Straße verkehrsberuhigt?	? -9583,-3090 -9438,-3133
 Beetzweg: Qualität?	? -9372,-2915 -9419,-3068 -9438,-3133 -9464,-3239
 Ulmenstr. (Potsdam): Qualität?	? -9356,-3546 -9268,-3283 -9257,-3245
-Orenstein-&-Koppel-Str. (Potsdam): Qualität?	? -8846,-3474 -9020,-3395 -9074,-3354 -9221,-3307 -9239,-3291 -9268,-3283 -9327,-3265 -9377,-3267 -9464,-3239
+Orenstein-&-Koppel-Str. (Potsdam): Qualität?	? -8846,-3474 -9020,-3395 -9039,-3379 -9074,-3354 -9221,-3307 -9239,-3291 -9268,-3283 -9327,-3265 -9377,-3267 -9464,-3239
 Beetzweg - Fritz-Zubeil-Str.: Qualität? Radfahren erlaubt?	? -9464,-3239 -9494,-3242 -9531,-3408
 Am Alten Friedhof (Potsdam): Qualität? Kann man die Heinrich-Mann-Allee wegen der Tramtrasse überqueren?	? -11770,-2743 -11637,-2617 -11595,-2635
 Schlaatzweg: Qualität?	? -11597,-2203 -11487,-2373
@@ -893,7 +893,7 @@ Havelwelle: genaue Lage der Straße? Qualität?	? -14725,-2389 -14618,-2295 -14585
 Müllerweg (Potsdam-Fahrland): Qualität? Genauer Verlauf?	? -15503,6422 -15392,6371
 Am Kaniswall: Privatstraße, wo genau? Qualität?	? 32854,-201 32970,320
 Alter Fischerweg (Gosen): Qualität?	? 32778,-1044 33013,-790 33117,-767 33140,-703 33061,-636 33046,-551 32842,-509 32889,-402 32854,-201
-Ahornstr. (Potsdam): Qualität?	? -8829,-2741 -8870,-2876
+Ahornstr. (Potsdam): Qualität?	? -8829,-2741 -8870,-2876 -8970,-3143 -9039,-3379
 Alter Torfweg (Potsdam): Qualität? Existieren Straßenschilder?	? -10836,-5477 -10829,-5608 -10917,-5739 -11089,-5909
 Niederstr. (Glienicke): Qualität östlich der Ottostr.?	? 3949,24718 4052,24731 4233,24772 4276,24781 4354,24803 4389,24783
 Egestorffstr. - Mauerweg: Qualität? Nachts beleuchtet?	? 9093,-1670 9083,-1991 9081,-2073
@@ -916,8 +916,12 @@ Am Fährgut: neue Privatstraße, schon fertiggestellt, Qualität?	? -13672,3295 -13
 Carl-Dähne-Str.: Planstraße A, schon fertiggestellt, Qualität?	? -16337,-542 -16312,-537 -16309,-435 -16166,-302
 Zum Düsteren Teich: Planstraße B, schon fertiggestellt, Qualität?	? -16079,-394 -16166,-302 -16268,-218
 Amundsenstr.: Rad- und Gehweg, bereits befahrbar, Qualität?	? -15813,-154 -16079,-394 -16222,-521 -16337,-542
-Heinz-Sielmann-Ring (Potsdam-Groß-Glienicke): Qualität? Bereits ausgeschildert?	? -8632,8641 -8192,8567
-Georg-Sigismund-von-Oppen-Weg: Qualität? Wo befindet sich die Straße?	? -8666,8449 -8214,8387
+Heinz-Sielmann-Ring (Potsdam-Groß-Glienicke): Qualität? Bereits ausgeschildert?	? -8632,8641 -8467,8612 -8458,8648 -8220,8575 -8240,8450 -8251,8392 -8269,8288 -8291,8148 -8354,8043
+Hans-Georg-Straße: Qualität? Bereits ausgeschildert?	? -8233,8283 -8269,8288 -8326,8300 -8389,8313 -8455,8326 -8498,8335
+Christoph-Friedrich-Weg: Qualität? Bereits ausgeschildert?	? -8466,8246 -8455,8326 -8442,8398
+Eva-Katharina-Weg: Qualität? Bereits ausgeschildert?	? -8399,8238 -8389,8313 -8376,8390
+Margarethe-Gottliebe-Weg: Qualität? Bereits ausgeschildert?	? -8337,8229 -8326,8300 -8311,8381
+Von-Oppen-Weg: Qualität? Wo befindet sich die Straße?	? -8445,8504 -8240,8450
 Uferweg von der Neuen Fahrt zum Hermannswerder: neuer Weg wird hier entstehen, Qualität?	?::inwork -12803,-2219 -12803,-2371 -12906,-2537 -13156,-2702
 Am alten Dorf (Potsdam-Bornim): Qualität? Genaue Lage?	? -16800,1991 -16931,1783
 Albertshof - Rüdnitz: Qualität?	? 27662,33209 27529,33478 27432,33943 27363,34109 27324,34142 26862,34287 26720,34396 26678,34447 26312,34571 26195,34658 26086,34697 26113,34734
@@ -1089,6 +1093,8 @@ Keltensteig - Teutonenstr.: ist nach der Fahrbahninstandsetzung die Qualität bes
 Germanenplatz: ist nach der Fahrbahninstandsetzung die Qualität besser geworden?	? 20369,1476 20347,1398
 Germanenplatz: ist nach der Fahrbahninstandsetzung die Qualität besser geworden?	? 20405,1460 20381,1390
 Philipp-Gerlach-Weg - Brunsbütteler Damm: existiert hier für Radfahrer eine Verbindung? Qualität? Nachts beleuchtet?	? -7801,13697 -7730,13857
+Blumenstr. - Am Krongut: existiert hier eine Verbindung für Radfahrer? Qualität? Nachts beleuchtet?	? -15050,268 -15043,148 -15085,144
+Hebbelstr. - Charlottenstr.: existiert hier ein Geh/Radweg?	? -12512,-911 -12504,-912 -12488,-999
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
