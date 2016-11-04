@@ -344,7 +344,14 @@ for my $browser (@browsers) {
 	$like_long_data->(qr/Böcklinstr.*
 			     Wühlischstr.*
 			     Boxhagener.Str.*
-			     Karlshorster.Str.*
+			     Marktstr.*
+			     (
+			      Karlshorster.Str.*
+			     |
+			      # Alternative route, needed since 2016-11-04 because of oneway in Nöldnerstr.
+			      Türrschmidtstr.*
+			      Stadthausstr.*
+			     )
 			     Nöldnerstr.*
 			     Lückstr.*
 			     Sewanstr.*
