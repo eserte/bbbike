@@ -3336,7 +3336,7 @@ userdel	2::night 17671,13132 17684,13133
                             [
                               'yearly',
                               'days',
-                              6,
+                              3,
                               'months',
                               12
                             ]
@@ -3356,7 +3356,7 @@ userdel	2::night 17671,13132 17684,13133
                             [
                               'yearly',
                               'days',
-                              13,
+                              10,
                               'months',
                               12
                             ]
@@ -3376,7 +3376,7 @@ userdel	2::night 17671,13132 17684,13133
                             [
                               'yearly',
                               'days',
-                              20,
+                              17,
                               'months',
                               12
                             ]
