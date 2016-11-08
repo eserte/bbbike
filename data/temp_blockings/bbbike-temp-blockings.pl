@@ -24962,11 +24962,11 @@ EOF
      },
      { from  => 1459720800, # 2016-04-04 00:00
        until => 1484348400, # 2017-01-14 00:00
-       text  => 'Hildburghauser Straße/Blankertzweg: Bauarbeiten zwischen Am Pfarracker und Osdorfer Str., Radfahrer können auf dem schmalen Gehweg fahren, 04.04.2016 bis 13.01.2017 ',
+       text  => 'Blankertzweg/Hildburghauser Straße: Bauarbeiten zwischen Osdorfer Str. und Woltmannweg, Einbahnstraße, Radfahrer können auf dem schmalen Gehweg fahren, 04.04.2016 bis 13.01.2017 ',
        type  => 'handicap',
        source_id => '2147339913',
        data  => <<EOF,
-userdel	q3::inwork 4542,1188 4634,1245 4706,1293 4806,1360 4897,1350 5059,1337
+userdel	q3::inwork; 4542,1188 4634,1245 4706,1293 4806,1360 4897,1350 5059,1337
 EOF
      },
      { from  => 1460584800, # 2016-04-14 00:00
@@ -25588,7 +25588,7 @@ userdel	q3::inwork 4564,3457 4800,3391 4862,3363 5022,3318
 EOF
      },
      { from  => 1475964000, # 2016-10-09 00:00
-       until => 1479250799, # 2016-11-15 23:59
+       until => 1478635433, # 1479250799, # 2016-11-15 23:59
        text  => 'Uhlandstr.: Bauarbeiten zwischen Lietzenburger Str. und Pariser Str., Einbahnstraßenregelung, offen Richtung Hohenzollerndamm, von 10.10.2016 bis etwa Mitte November 2016',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.522495.php',
@@ -25597,7 +25597,7 @@ EOF
 userdel	q4::inwork; 5013,10039 5026,10151 5047,10381
 EOF
      },
-     { from  => 1479078000, # 2016-11-14 00:00
+     { from  => 1478635433, # 1479078000, # 2016-11-14 00:00
        until => 1483225199, # 2016-12-31 23:59
        text  => 'Uhlandstr.: Bauarbeiten zwischen Pariser Str. und Hohenzollerndamm, Einbahnstraßenregelung, offen Richtung Hohenzollerndamm, von ca. Mitte November 2016 bis Dezember 2016',
        type  => 'handicap',

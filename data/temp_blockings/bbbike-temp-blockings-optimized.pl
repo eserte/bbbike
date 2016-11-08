@@ -3836,12 +3836,12 @@ userdel	q4::xmas 11064,12910 11134,12793
          'until' => undef
        },
        {
-         'data' => 'userdel	q3::inwork 4542,1188 4634,1245 4706,1293 4806,1360 4897,1350 5059,1337
+         'data' => 'userdel	q3::inwork; 4542,1188 4634,1245 4706,1293 4806,1360 4897,1350 5059,1337
 ',
          'from' => 1459720800,
          'id' => 2776,
          'source_id' => '2147339913',
-         'text' => 'Hildburghauser Straﬂe/Blankertzweg: Bauarbeiten zwischen Am Pfarracker und Osdorfer Str., Radfahrer kˆnnen auf dem schmalen Gehweg fahren, 04.04.2016 bis 13.01.2017 ',
+         'text' => 'Blankertzweg/Hildburghauser Straﬂe: Bauarbeiten zwischen Osdorfer Str. und Woltmannweg, Einbahnstraﬂe, Radfahrer kˆnnen auf dem schmalen Gehweg fahren, 04.04.2016 bis 13.01.2017 ',
          'type' => 'handicap',
          'until' => 1484348400
        },
@@ -4079,21 +4079,11 @@ userdel	q3::inwork 4564,3457 4800,3391 4862,3363 5022,3318
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: 2147340654
-userdel	q4::inwork; 5013,10039 5026,10151 5047,10381
-',
-         'from' => 1475964000,
-         'id' => 2833,
-         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.522495.php',
-         'text' => 'Uhlandstr.: Bauarbeiten zwischen Lietzenburger Str. und Pariser Str., Einbahnstraﬂenregelung, offen Richtung Hohenzollerndamm, von 10.10.2016 bis etwa Mitte November 2016',
-         'type' => 'handicap',
-         'until' => 1479250799
-       },
+       undef,
        {
          'data' => 'userdel	q4::inwork; 4976,9670 4982,9729 4993,9843 5013,10039
 ',
-         'from' => 1479078000,
+         'from' => 1478635433,
          'id' => 2834,
          'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.522495.php',
          'text' => 'Uhlandstr.: Bauarbeiten zwischen Pariser Str. und Hohenzollerndamm, Einbahnstraﬂenregelung, offen Richtung Hohenzollerndamm, von ca. Mitte November 2016 bis Dezember 2016',
