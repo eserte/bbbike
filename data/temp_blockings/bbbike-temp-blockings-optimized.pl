@@ -3993,18 +3993,7 @@ userdel	q4::inwork 6587,16199 6484,16085
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147340586
-userdel	q4::inwork; 8730,8079 8776,8285 8807,8353
-# REMOVED --- userdel	q4::inwork; 8642,7876 8731,7956
-',
-         'from' => 1474149600,
-         'id' => 2824,
-         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.514646.php',
-         'text' => 'Manfred-von-Richthofen-Str.: Bauarbeiten, Fahrbahn gesperrt (zwischen Loewenhardtdamm und Wolffring), bis 12. November 2016',
-         'type' => 'handicap',
-         'until' => 1478948400
-       },
+       undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
 #: last_checked: 2016-11-04 vvv
@@ -4142,17 +4131,6 @@ userdel	q4::inwork 4646,6875 4767,6717
          'text' => 'Geisenheimer Str.: zwischen Rauenthaler Straße und Gritznerstraße Tiefbauarbeiten, Fahrbahn gesperrt, bis 09.12.2016',
          'type' => 'handicap',
          'until' => 1481324400
-       },
-       undef,
-       {
-         'data' => 'userdel	2::inwork 14363,8738 14335,8771 14327,8856 14290,8907 14211,8909 14151,8967
-',
-         'from' => 1478412000,
-         'id' => 2841,
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1611/nachricht6250.html',
-         'text' => 'Kiefholzstr.: Sperrung zwischen Treptower Str. und Puderstr. (Einbau von Hilfsbrücken), vom 07.11.2016, 07:00 Uhr bis zum 08.11.2016, 24:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1478646000
        }
      
 );

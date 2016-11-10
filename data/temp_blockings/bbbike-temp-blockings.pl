@@ -25479,7 +25479,7 @@ EOF
 EOF
      },
      { from  => 1474149600, # 2016-09-18 00:00
-       until => $isodate2epoch->("2016-11-12 12:00:00"), # 1480546799, # 2016-11-30 23:59
+       until => 1478720572, # $isodate2epoch->("2016-11-12 12:00:00"), # 1480546799, # 2016-11-30 23:59
        text  => 'Manfred-von-Richthofen-Str.: Bauarbeiten, Fahrbahn gesperrt (zwischen Loewenhardtdamm und Wolffring), bis 12. November 2016',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.514646.php',
