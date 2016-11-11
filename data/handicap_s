@@ -18,6 +18,7 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwo
 Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse!), Ausweichen auf Gehweg	q3::inwork 8315,13181 8406,13127
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9882,12259 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
+Behrenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9743,12239 9798,12267
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 Neue Jakobstr. [Wohngebiet]: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10963,11695 11017,11658
 Neue Jakobstr. [Wohngebiet]: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 11017,11658 11131,11579
@@ -198,7 +199,7 @@ Wuhlheide: einige Fuﬂg‰nger	q1 19594,6155 19606,6182 19751,6514 19810,6634 19931
 Blockdammweg (Br¸cke): eng, Fuﬂg‰nger, Radfahren erlaubt	q2 17975,8971 17996,8966 18070,9022
 Markgrafenstr.: Gehweg	q2 9737,11546 9732,11574 9707,11596 9701,11656
 Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9536,11922 9666,11935
-Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9524,12010 9656,12021
+Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9523,12019 9656,12031
 Am Volkspark: Parkweg	q1 5745,8194 5925,8219
 Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12869,12425 12950,12340 12985,12303
 Lange Str. [vor Kaufhof]: Fuﬂg‰nger, Bordstein	q2 12409,11902 12522,11837
@@ -498,7 +499,7 @@ Mauerweg: Fuﬂg‰nger	q1 4406,-910 4038,-362 4046,-299 4034,-255 3982,-181 3941,-1
 Bayernring: enge Straﬂe	q1 8380,8545 8454,8574 8616,8605
 Bulgarische Str.: kein Radweg, Gehweg benutzen	q2; 15591,8848 15558,8820 15378,8668 15166,8489
 Hedwigskirchgasse: Fuﬂg‰nger	q1 9743,12239 9747,12205
-Hedwigskirchgasse: Bordsteine, Fuﬂg‰nger	q3 9747,12205 9756,12139
+Hedwigskirchgasse: Bordsteine, Fuﬂg‰nger	q3 9747,12205 9755,12144
 Zufahrt Franz-Mehring-Platz: flacher Bordstein	q1 12735,12131 12691,12042
 Am Flutgraben: Fuﬂg‰nger, sechs Bodenschwellen	q3 13535,10184 13371,9974
 Am Flutgraben: Fuﬂg‰nger	q1 13371,9974 13333,9929
@@ -1387,8 +1388,8 @@ Kˆnigsheideweg - S¸dostallee: Kleingartengel‰nde	q1 15784,5865 15788,5898 15793,
 Kˆnigsheideweg - S¸dostallee: Kleingartengel‰nde	q1 15788,5898 15881,5901 15967,5924 15964,5940
 Engelwurzweg: teilweise recht eng	q3 25059,6554 24738,6418
 (Marzahner Chaussee - Gensinger Str.): gemeinsamer Rad- und Gehweg	q1 18578,11881 18702,11921 18888,11910 18913,11909
-Platz vor dem Neuen Tor: Bordsteine, Fuﬂg‰nger	q4 8588,13673 8590,13653
-Platz vor dem Neuen Tor: Bordsteine, Fuﬂg‰nger	q4 8659,13708 8662,13688
+Platz vor dem Neuen Tor: Bordsteine, Fuﬂg‰nger	q4 8586,13678 8590,13653
+Platz vor dem Neuen Tor: Bordsteine, Fuﬂg‰nger	q4 8661,13715 8664,13688
 Abteibr¸cke, Insel der Jugend: einige Fuﬂg‰nger	q2 15630,8979 15658,9007 15674,9095 15683,9136 15693,9194 15604,9215 15580,9181 15631,9114 15668,9140 15683,9136
 Borretschweg: eng	q2 24300,6142 24275,6156
 Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
@@ -2395,7 +2396,7 @@ Dorotheenstr. (Straﬂenbahn): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2
 Kirchstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q0::igndisp; 22314,4604 22284,4653
 Kietzer Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22372,4496 22383,4470
 Triftstr. (Buchholz): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 12023,23039 12185,23021
-Joachimstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 10085,13684 10142,13556 10199,13446
+Joachimstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 10082,13686 10142,13556 10199,13446
 Fanningerstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 16890,12135 16794,12144
 Lauterstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 5817,7223 5810,7337
 Tannenweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; -3023,17889 -3012,17940 -3028,18027
@@ -2551,6 +2552,6 @@ Altentreptower Str., linker Gehweg	q2::igndisp; 21401,12155 21573,12140
 Wilhelmsruher Damm, linker Geh/Radweg bis zur Fuﬂg‰ngerampel	q3::igndisp; 5599,21025 5525,21022
 Frankfurter Allee, linker Gehweg bis zur Ampel	q3::igndisp; 15717,12010 15670,12022
 Otto-Braun-Str., linker Gehweg	q4::igndisp; 11352,13180 11451,13301
-Invalidenstr., linker Gehweg	q4::igndisp; 8183,13482 8337,13541
+Invalidenstr., linker Gehweg	q4::igndisp; 8183,13482 8332,13548
 Lichtenberger Br¸cke, linker Gehweg	q1::igndisp; 16818,11878 16978,11852
 Straﬂe des 17. Juni, linker Geh/Radweg	q3::igndisp; 5813,11886 5758,11895

@@ -17,7 +17,7 @@
 #: source_id: LMS-BR_r_LMS-BR_78589
 #: source_id: 2147340546
 #: XXX bis Mitte Dezember
-#: last_checked: 2016-11-08
+#: last_checked: 2016-11-11
 #: next_check: 2016-12-14
 #: priority: #A
 Straße der Pariser Kommune: Wasserrohrbruch, Fahrbahn unter der Bahnbrücke gesperrt, Gehweg für Radfahrer frei	q3::inwork 12645,11673 12551,11515
@@ -92,10 +92,10 @@ Schmollerplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 13124,9375 13111,9361 
 #: last_checked: 2016-10-28
 Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
-#: last_checked: 2016-11-07
+#: last_checked: 2016-11-11
 Kommandantenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10330,11422 10136,11529
 # 
-#: last_checked: 2016-11-07
+#: last_checked: 2016-11-11
 Beuthstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10201,11631 10235,11610 10330,11422
 # 
 #: last_checked: 2016-11-07
@@ -124,9 +124,9 @@ Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und 
 # REMOVED --- Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q4::inwork 9996,12401 9994,12368 9943,12364
 # REMOVED (-> temp_blockings) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1406/nachricht5293.html --- #: XXX laut VMZ bis Anfang Juli 2015 --- #: source_id: IM_022304 --- #: source_id: 2147338476 --- #: last_checked: 2015-03-27 --- #: next_check: 2015-04-01 --- #: priority: #A --- Chausseestr.: Bauarbeiten, Fahrbahn gesperrt, kann aber teilweise schon benutzt werden	q3::inwork 8935,13844 8870,13926
 # REMOVED --- #: source_id: IM_023614 --- #: valid: 20141202-20150331 --- #: last_checked: 2015-03-21 --- #: next_check: 2015-03-30 --- #: priority: #A --- Schiffbauerdamm: zwischen Luisenstr. und Albrechtstr. Bauarbeiten, Sperrung der Fahrbahn, bis 31.03.2015 17:00 Uhr	q3::inwork 8870,12647 9056,12743
-# REMOVED --- : osm_watch: way id="4412885" version="23" --- #: last_checked: 2014-06-26 --- #: check_frequency: 60d --- Platz vor dem Neuen Tor: Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 8659,13708 8662,13688 8668,13645
-# REMOVED --- #: last_checked: 2014-06-26 --- Platz vor dem Neuen Tor: erschwerter Zugang von der Invalidenstr.	q4::inwork 8588,13673 8590,13653 8601,13580
-# REMOVED (Ende) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5236.html --- #: source_id: IM_021790 --- #: valid: 20140428-20140516 vvv --- #: last_checked: 2014-05-05 vvv --- #: next_check: 2014-05-16 vvv --- #: priority: #A vvv --- Luisenstr. am Platz vor dem Neuen Tor: Fahrbahn bis 16. Mai 2014 gesperrt	q4::inwork 8626,13641 8619,13689
+# REMOVED --- : osm_watch: way id="4412885" version="23" --- #: last_checked: 2014-06-26 --- #: check_frequency: 60d --- Platz vor dem Neuen Tor: Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 8661,13715 8664,13688 8668,13645
+# REMOVED --- #: last_checked: 2014-06-26 --- Platz vor dem Neuen Tor: erschwerter Zugang von der Invalidenstr.	q4::inwork 8586,13678 8590,13653 8601,13580
+# REMOVED (Ende) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5236.html --- #: source_id: IM_021790 --- #: valid: 20140428-20140516 vvv --- #: last_checked: 2014-05-05 vvv --- #: next_check: 2014-05-16 vvv --- #: priority: #A vvv --- Luisenstr. am Platz vor dem Neuen Tor: Fahrbahn bis 16. Mai 2014 gesperrt	q4::inwork 8626,13641 8622,13696
 # REMOVED (laut Tsp vom 15.12.2013) --- #: source_id: INKO_113388 --- #: last_checked: 2013-12-11 --- #: next_check: 2014-08-31 --- Friedrichstr.: Fahrbahn zwischen Unter den Linden und Mittelstraße gesperrt, Ausweichen auf Gehweg möglich	q4::inwork 9343,12464 9358,12351
 # REMOVED (laut Tsp vom 15.12.2013) --- #: source_id: INKO_091722 --- #: source_id: INKO_091722_COPY_1 --- #: XXX siehe auch temporäre Ampel an der Neustädtischen Kirchstr. --- #: XXX siehe auch Busspur UdL --- #: last_checked: 2013-12-11 --- #: next_check: 2013-12-31 --- Friedrichstr. (Mitte): Fahrbahn wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg schiebend möglich	q4::inwork 9358,12351 9369,12253 9373,12197
 # REMOVED (aufgehoben) --- #: next_check_id: UDLU5-2014 --- #: source_id: IM_020322 --- #: last_checked: 2015-02-17 --- #: next_check: 2015-02-18 --- Charlottenstr.: Einbahnstraßenregelung	q4::inwork; 9475,12365 9489,12263 9496,12215
@@ -174,7 +174,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # REMOVED (but check!) --- Invalidenstr. (Mitte): Baustelle, Fahrbahn zwischen Caroline-Michaelis-Str. und Gartenstr. gesperrt	q4::inwork 9383,13986 9285,13965 9274,13963 9203,13953 9151,13941
 # REMOVED (but check!) --- Invalidenstr.: Fahrbahn zwischen Gartenstr. und Bergstr. teilweise gesperrt	q2::inwork 9383,13986 9659,14043 9676,14046
 # REMOVED (mittlerweile besser befahrbar, denke ich) --- Invalidenstr. (Mitte): Baustelle, Fahrbahn in Richtung Gartenstr. zwischen Caroline-Michaelis-Str. und Eichendorffstr. gesperrt	q4::inwork; 9151,13941 9203,13953
-# REMOVED (wieder offen ab 2013-08-29) --- Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 8690,13723 8659,13708 8619,13689
+# REMOVED (wieder offen ab 2013-08-29) --- Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 8690,13723 8661,13715 8622,13696
 # REMOVED (wieder offen ab 2013-08-29) --- #: source_id: IM_019009 --- #: source_id: IM_018437 --- Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
 #: priority ^^^
 #: next_check ^^^
@@ -196,7 +196,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # 
 #: by: http://www.bmbf.de/de/16888.php (Bezug im Herbst 2014)
 #: osm_watch: way id="4592727" version="12"
-#: last_checked: 2016-09-21
+#: last_checked: 2016-11-11
 #: check_frequency: 60d
 Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse!), Ausweichen auf Gehweg	q3::inwork 8315,13181 8406,13127
 # 
@@ -211,6 +211,10 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9882,12259 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 #: check_frequency ^^^
 #: last_checked ^^^
+# 
+#: last_checked: 2016-11-11
+#: XXX siehe auch aufgehobene Einbahnstraßenregelung in gesperrt-orig (Behrenstr./Bebelplatz)
+Behrenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9743,12239 9798,12267
 #: next_check_id ^^^
 # 
 # REMOVED --- #: last_checked: 2012-07-13 --- #: next_check: 2012-09-01 --- Kronenstr./Jerusalemer Str.: Bauarbeiten, Fahrbahn vor der Kreuzung gesperrt	q3::inwork 9692,11732 9892,11752
@@ -259,7 +263,7 @@ Carl-Herz-Ufer: Sperrung der Fahrbahn an der Baerwaldstr.	q4::inwork 10469,10081
 # 
 #: next_check_id: ALEXANDRINENSTR-2016
 #: source_id: LMS-BR_r_LMS-BR_68468
-#: last_checked: 2016-11-07
+#: last_checked: 2016-11-11
 Stallschreiberstr., Alexandrinenstr.: Einbahnstraßenregelung	q4::inwork; 10794,10927 10824,11010 10678,11172 10593,11120 10501,11056
 # 
 # REMOVED (kaum noch Beeinträchtigungen) --- #: last_checked: 2016-02-26 --- #: next_check: 2016-03-30 --- Wassertorstr.: Wasserrohrbruch, kurzes Stück auf Gehweg ausweichen	q2::inwork 10857,10411 10987,10360
@@ -603,7 +607,7 @@ Wuhlheide: einige Fußgänger	q1 19594,6155 19606,6182 19751,6514 19810,6634 19931
 Blockdammweg (Brücke): eng, Fußgänger, Radfahren erlaubt	q2 17975,8971 17996,8966 18070,9022
 Markgrafenstr.: Gehweg	q2 9737,11546 9732,11574 9707,11596 9701,11656
 Gendarmenmarkt: Fußgängerzone, ggfs. schieben	q3 9536,11922 9666,11935
-Gendarmenmarkt: Fußgängerzone, ggfs. schieben	q3 9524,12010 9656,12021
+Gendarmenmarkt: Fußgängerzone, ggfs. schieben	q3 9523,12019 9656,12031
 Am Volkspark: Parkweg	q1 5745,8194 5925,8219
 Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12869,12425 12950,12340 12985,12303
 #: XXX_prog: zusätzlich noch Bordsteine an der östlichen Seite (BS) (q2 auch ohne Bordstein)
@@ -1005,7 +1009,7 @@ Bayernring: enge Straße	q1 8380,8545 8454,8574 8616,8605
 Bulgarische Str.: kein Radweg, Gehweg benutzen	q2; 15591,8848 15558,8820 15378,8668 15166,8489
 Hedwigskirchgasse: Fußgänger	q1 9743,12239 9747,12205
 #: XXX_prog: Bordstein (BS) nur am Südende
-Hedwigskirchgasse: Bordsteine, Fußgänger	q3 9747,12205 9756,12139
+Hedwigskirchgasse: Bordsteine, Fußgänger	q3 9747,12205 9755,12144
 #: XXX_prog: BS am Nordende, flach
 Zufahrt Franz-Mehring-Platz: flacher Bordstein	q1 12735,12131 12691,12042
 Am Flutgraben: Fußgänger, sechs Bodenschwellen	q3+ 13535,10184 13371,9974
@@ -2148,8 +2152,8 @@ Königsheideweg - Südostallee: Kleingartengelände	q1 15788,5898 15881,5901 15967,
 Engelwurzweg: teilweise recht eng	q3 25059,6554 24738,6418
 (Marzahner Chaussee - Gensinger Str.): gemeinsamer Rad- und Gehweg	q1 18578,11881 18702,11921 18888,11910 18913,11909
 #: XXX_prog BS auf beiden Seiten, ansonsten q3 (zu kurze Strecke für q2) vvv
-Platz vor dem Neuen Tor: Bordsteine, Fußgänger	q4 8588,13673 8590,13653
-Platz vor dem Neuen Tor: Bordsteine, Fußgänger	q4 8659,13708 8662,13688
+Platz vor dem Neuen Tor: Bordsteine, Fußgänger	q4 8586,13678 8590,13653
+Platz vor dem Neuen Tor: Bordsteine, Fußgänger	q4 8661,13715 8664,13688
 #: XXX_prog ^^^
 Abteibrücke, Insel der Jugend: einige Fußgänger	q2 15630,8979 15658,9007 15674,9095 15683,9136 15693,9194 15604,9215 15580,9181 15631,9114 15668,9140 15683,9136
 Borretschweg: eng	q2 24300,6142 24275,6156

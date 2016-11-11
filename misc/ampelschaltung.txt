@@ -725,7 +725,7 @@ Fr, 09.04.1999
 9416,10196    Mehringdamm/Tempelhofer Ufer       S->N       19:44:27  19:43:40
 9492,11209    Friedrichstr./Kochstr.             S->N   70  19:46:44  19:46:56
 9444,11616    Friedrichstr./Leipziger Str.       S->N   70  19:47:20  19:47:38
-9385,12098    Friedrichstr./Französische Str.    S->N   60  19:49:53  19:50:12
+9384,12103    Friedrichstr./Französische Str.    S->N   60  19:49:53  19:50:12
 9358,12351    Friedrichstr./Unter den Linden     S->N   70  19:51:19  19:51:38
 9330,12529    Friedrichstr./Dorotheenstr.        S->N       19:54:02  19:53:12
 
@@ -1061,7 +1061,7 @@ Mi, 28.04.1999
 9404,10250    Wilhelmstr./Hallesches Ufer        S->N       19:56:39
 9492,11209    Friedrichstr./Kochstr.             S->N   70  19:59:05  19:59:18
 9444,11616    Friedrichstr./Leipziger Str.       S->N   70  20:00:41  20:00:58
-9385,12098    Friedrichstr./Französische Str.    S->N   60  20:01:54  20:02:12
+9384,12103    Friedrichstr./Französische Str.    S->N   60  20:01:54  20:02:12
 9358,12351    Friedrichstr./Unter den Linden     S->N       20:04:50  20:03:39
 9330,12529    Friedrichstr./Dorotheenstr.        S->N       20:05:23
 9262,13111    Friedrichstr./Reinhardtstr.        S->N       20:06:45  20:06:59
@@ -1099,7 +1099,7 @@ Do, 29.04.1999
 9262,13111    Friedrichstr./Reinhardtstr.        N->S       00:47:55  00:47:04
 9330,12529    Friedrichstr./Dorotheenstr.        N->S       00:49:23
 9358,12351    Friedrichstr./Unter den Linden     N->S       00:50:31
-9385,12098    Friedrichstr./Französische Str.    N->S   60? 00:51:54  00:51:13
+9384,12103    Friedrichstr./Französische Str.    N->S   60? 00:51:54  00:51:13
 9444,11616    Friedrichstr./Leipziger Str.       N->S       00:53:16
 9444,11616    Friedrichstr./Leipziger Str.       S->N                 00:53:31
 9492,11209    Friedrichstr./Kochstr.             N->S   50  00:54:17
@@ -1756,9 +1756,9 @@ Mi, 24.02.2010
 9416,10196    Mehringdamm/Tempelhofer Ufer       S->N                 19:47:07
 9492,11209    Friedrichstr./Kochstr./Rudi-Dutsc  S->N       19:52:53
 9569,11631    Leipziger Str./Charlottenstr.      S->N       19:55:05
-9510,12113    Französische Str./Charlottenstr.   S->N       19:55:47
-9510,12113    Französische Str./Charlottenstr.   S->N                 19:56:03
-9510,12113    Französische Str./Charlottenstr.   S->N       19:56:47
+9509,12117    Französische Str./Charlottenstr.   S->N       19:55:47
+9509,12117    Französische Str./Charlottenstr.   S->N                 19:56:03
+9509,12117    Französische Str./Charlottenstr.   S->N       19:56:47
 9580,12581    Dorotheenstr./Universitätsstr.     S->N       19:59:38
 
 #WPTFILE: /home/e/eserte/src/bbbike/misc/gps_data/ampelschaltung/20100225.wpt:track1

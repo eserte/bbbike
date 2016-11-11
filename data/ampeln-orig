@@ -306,7 +306,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 9164,12172
 	X 9058,11564
 	X 9444,11616
-	X 9385,12098
+	X 9384,12103
 	X 9358,12351
 	X 10213,11728
 	X 10512,12039
@@ -1592,8 +1592,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6996,15319
 	X 7263,14873
 #: note: Anforderungsampel für Radfahrer aus Richtung Osten Richtung Luisenstr. und für Radfahrer aus der Luisenstr.
-	X 8619,13689
-	X 8574,13666
+	X 8622,13696
+	X 8572,13671
 	X 8456,15235
 	X 9443,15430
 	X 9907,15618
@@ -1858,7 +1858,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	B 20782,5206
 	X 7315,10537
 # REMOVED (wieder komplette Ampel) --- #: XXX zurzeit nur eine Fußgängerampel, nach den Bauarbeiten evtl. wieder eine volle Autoampel (X) --- #: last_checked: 2013-05-24 --- #: next_check: 2013-12-31 (Invalidenstr.)
-	X 8690,13723
+	X 8685,13728
 	X 11629,9086
 #: off: night (seen 2014-10-29 23:30), Sunday (seen 2015-11-01 15:00)
 	X 15681,10801
@@ -2274,7 +2274,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	X 21115,271
 	X 17483,6024
 	F 13737,14204
-	X 9510,12113
+	X 9509,12117
 #: note: Anforderungsampel, ist aber manchmal (tagsüber? oder immer?) automatisch aktiviert
 	F 13142,10530
 	F 9245,6352
@@ -2351,7 +2351,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 17997,8695
 #: note: Anforderungsampel
 #: XXX_prog für Radfahrer auf der Invalidenstr. in Richtung Osten keine Haltelinie, also nur bzgl. StVO §1 relevant
-	F 8337,13541
+	F 8332,13548
 #: note: Anforderungsampel für die Überquerung der Gürtelstr. als Fußgänger (oder als Radfahrer aus Richtung Wilhelm-Guddorf-Str.)
 	X 15248,11880
 #: by: osm
@@ -2602,7 +2602,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2016-11-04 vvv
+#: last_checked: 2016-11-11 vvv
 #: check_frequency: 30d vvv
 	X::inwork 9122,12509
 	X::inwork 9286,12886
@@ -2630,7 +2630,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # REMOVED (ausgeschaltet) --- X::inwork 8313,13839
 # REMOVED (existiert nicht mehr) ---	X::inwork 9085,13919
 # REMOVED (zwar noch eine Baustellenampel, aber die neue steht schon daneben) --- #: next_check_id: INVALIDEN-2014 --- #: XXX wird die Ampel hier nach Öffnung der Invalidenstr. aufgehoben? --- #: last_checked: 2015-05-12 --- #: next_check: 2015-08-15 --- # REMOVED --- X::inwork 8775,13606 --- # REMOVED (Antwort: wahrscheinlich ja) --- #: XXX ist diese Ampel permanent?
-	X 8450,13599
+	X 8453,13611
 	X 9070,14058
 	F 17117,18761
 #: by: Stefan Klinkusch:
@@ -2844,8 +2844,10 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: Anforderungsampel
 	F 10462,3765
 #: XXX Baustellenampel
-#: last_checked: 2016-10-28
-#: check_frequency: 60d
+#: XXX zurzeit wird hier wechselseitig gefahren, also insgesamt zwei Ampeln
+#: source_id: 2147340713
+#: last_checked: 2016-11-11
+#: next_check: 2016-12-16
 	F::inwork 8853,13539
 #: next_check_id: HEERSTR-2016
 #: XXX Baustellenampel; eigentlich sind hier zwei Ampeln: einmal für die Straße runter zur Havel, und dann etwas weiter für die Radfahrer zum Wechseln auf die andere Straßenseite

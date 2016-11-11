@@ -1353,7 +1353,7 @@ Soldiner Str.: grundhafte Erneuerung, evtl. verschwindet das Kopfsteinpflaster d
 #: next_check: 2016-12-31 vvv
 Kieler Brücke - Heidestraße, Rad/Gehweg	?::projected 7740,14409 7621,14341
 #: osm_watch: way id="237716440" version="3"
-geplanter Uferweg	?::projected 8291,13520 8171,13703 8128,13767 8044,13929 7989,14035 7912,14160 7843,14275 7824,14305 7740,14409
+geplanter Uferweg	?::projected 8292,13530 8171,13703 8128,13767 8044,13929 7989,14035 7912,14160 7843,14275 7824,14305 7740,14409
 #: XXX wird es auch eine Brücke zur Kieler Str. geben?
 #: XXX vermutlich diese Brücke wird "Golda-Meir-Steg" heißen (Berlin.coords.data-Eintrag fehlt)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2016
@@ -1521,10 +1521,7 @@ Brodersenstr.: Neubau, danach bessere Qualität?	?::projected 6033,19611 5885,199
 #: priority: #A
 Parkweg zwischen Stresemannstr. und Wilhemstr.: wird instandgesetzt, vermutlich in dieser Zeit nicht befahrbar, danach eine "bituminöse Befestigung"	? 9250,10563 9375,10616
 # 
-#: XXX NEW	Hannoversche Str. (Mitte) Höhe HU Mensa (Berlin)  Gültig ab: 31.10.2016 11:00  Baustelle, in beiden Richtungen abwechselnd nur ein Fahrstreifen frei (Baustellenampel) (bis Mitte 12/16)	2147340713
-#: XXX laut fritz bis 16.12.2016
-Hannoversche Str.: auch für Radfahrer relevant?	?::inwork 8892,13498 8853,13539
-# 
+# REMOVED (notiert in ampeln-orig) --- #: XXX NEW	Hannoversche Str. (Mitte) Höhe HU Mensa (Berlin)  Gültig ab: 31.10.2016 11:00  Baustelle, in beiden Richtungen abwechselnd nur ein Fahrstreifen frei (Baustellenampel) (bis Mitte 12/16)	2147340713 --- #: XXX laut fritz bis 16.12.2016 --- Hannoversche Str.: auch für Radfahrer relevant?	?::inwork 8892,13498 8853,13539
 # REMOVED (hier ist (noch?) nichts) ---  #: XXX Enddatum unbekannt --- Pettenkoferstr.: Sperrung für Radfahrer relevant?	? 14935,12596 14858,12775
 # REMOVED (ja) --- #: last_checked: 2016-11-02 --- #: next_check: 2016-11-04 --- #: priority: #A --- Weihnachtsmarkt am Alexa: wird die Voltairestr. wieder gesperrt?	? 11209,12430 11329,12497
 # REMOVED --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1610/nachricht6208.html vvv
@@ -1910,7 +1907,7 @@ Buschower Weg: wird hier asphaltiert?	? -8110,12160 -8098,12340 -8078,12647
 #: next_check: 2015-10-01
 Mauerweg im Spandauer Forst: Erneuerung	?::projected -3497,20003 -3652,20100 -4219,20240 -4485,20420 -4622,20496 -4724,20596 -5118,20749 -5393,20774 -5464,20802 -5609,20929 -5795,20965 -6044,20971 -6099,21157 -6465,21060 -6442,20864 -6482,20783
 # 
-# REMOVED (befindet sich westliches des Hamburger Bahnhofs) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6817 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2015 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2015 (Grundstücksnummerierungen) --- #: XXX sieht man schon Schilder? evtl. auch weiter hinten gelegen, oder westliches des Hamburger Bahnhofs --- #: XXX fehlt in Berlin.coords.data, laut LOR PLZ=10557 --- #: last_checked: 2016-07-21 (keine Schilder) --- #: check_frequency: 60d --- Am Hamburger Bahnhof: Benennung des Platzes	? 8291,13520 8282,13535 8171,13703 8128,13767
+# REMOVED (befindet sich westliches des Hamburger Bahnhofs) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6817 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2015 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2015 (Grundstücksnummerierungen) --- #: XXX sieht man schon Schilder? evtl. auch weiter hinten gelegen, oder westliches des Hamburger Bahnhofs --- #: XXX fehlt in Berlin.coords.data, laut LOR PLZ=10557 --- #: last_checked: 2016-07-21 (keine Schilder) --- #: check_frequency: 60d --- Am Hamburger Bahnhof: Benennung des Platzes	? 8292,13530 8282,13535 8171,13703 8128,13767
 # REMOVED (ja, und eine Einbahnstraße für Autos) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6320 --- Kyllburger Weg: gibt es hier eine Spielstraße?	? 16418,17311 16549,17394 16645,17449 16670,17454 16779,17521
 # 
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2015/pressemitteilung.331578.php
@@ -2702,6 +2699,7 @@ Campus am Jungfernsee: neue Straßen, wo genau?	? -13116,2533 -12975,2508 -13008,
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5377
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/29re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2016 (Straßenlandwidmung)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/49re.pdf/file?y=2016 (Berichtigung)
 #: XXX Straßennamen fehlen alle in Berlin.coords.data vvv
 #: last_checked: 2016-06-26 vvv
 #: check_frequency: 360d vvv
@@ -2774,6 +2772,7 @@ Benno-König-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::pro
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5229
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/39re.pdf/file?y=2016
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/49re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: XXX vermutlich Verbundsteinpflaster
 #: osm_watch: way id="380935416" version="4"
 #: XXX laut osm fertig

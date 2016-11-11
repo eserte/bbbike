@@ -179,7 +179,7 @@ Grazer Platz	1 6798,6755 6675,6740 6546,6724 6517,6722 6439,6716
 Putlitzstr.	1 6267,14184 6264,13995 6226,13951
 Langhansstr. (außer Tram)	1 12045,16574 12189,16578 12399,16479
 Triftstr. (Buchholz)	1s 12023,23039 12185,23021
-Joachimstr.	1s 10085,13684 10142,13556 10199,13446
+Joachimstr.	1s 10082,13686 10142,13556 10199,13446
 Wilhelmsaue	1 4778,8784 4918,8785 5165,8784
 Wilhelmsaue	1 5164,8740 4918,8740 4777,8731
 Friedrichsruher Str.	1 3196,9193 3333,9026
@@ -562,9 +562,9 @@ Nonnendammallee (Richtungsfahrbahn)	1::igndisp -925,14631 -278,14532
 Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4348,2627 4313,2630 4224,2671 4170,2727
 Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4170,2727 4233,2675 4317,2638 4348,2627
 Königsberger Str. (Mittelstreifen)	3nocross::ignrte 4348,2627 4317,2638 4233,2675 4170,2727
-Invalidenstr. (Richtungsfahrbahn)	1::igndisp 8098,13419 8189,13468 8291,13520 8337,13541
-Invalidenstr. (Richtungsfahrbahn)	1::igndisp 8337,13541 8293,13519 8098,13419
-Invalidenstr. (Straßenbahntrasse)	3nocross::ignrte 8337,13541 8291,13520 8189,13468 8098,13419
+Invalidenstr. (Richtungsfahrbahn)	1::igndisp 8098,13419 8189,13468 8292,13530 8332,13548
+Invalidenstr. (Richtungsfahrbahn)	1::igndisp 8332,13548 8293,13527 8098,13419
+Invalidenstr. (Straßenbahntrasse)	3nocross::ignrte 8332,13548 8292,13530 8189,13468 8098,13419
 Lötschbergstr.	1s 20161,11715 20150,11512
 Brodenbacher Weg	1s 15178,17134 14897,17093
 Huttwiler Weg	1 6913,18460 6961,18453 7035,18413 7098,18383 7120,18295 7071,18232
@@ -2898,11 +2898,9 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
-Behrenstr.: Bauarbeiten, vollständig gesperrt	2:inwork 9743,12239 9801,12245
 Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9876,12298
-Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9801,12245 9795,12293 9780,12401
+Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9798,12267 9795,12293 9780,12401
 Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12395
-Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9808,12182 9801,12245
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 Löwenbrücke: gesperrt	2:inwork 6406,11784 6452,11778
@@ -3476,7 +3474,7 @@ Altentreptower Str., linker Gehweg	1::igndisp 21573,12140 21401,12155
 Wilhelmsruher Damm, linker Geh/Radweg bis zur Fußgängerampel	1::igndisp 5525,21022 5599,21025
 Frankfurter Allee, linker Gehweg bis zur Ampel	1::igndisp 15670,12022 15717,12010
 Otto-Braun-Str., linker Gehweg	1::igndisp 11451,13301 11352,13180
-Invalidenstr., linker Gehweg	1::igndisp 8337,13541 8183,13482
+Invalidenstr., linker Gehweg	1::igndisp 8332,13548 8183,13482
 Lichtenberger Brücke, linker Gehweg	1::igndisp 16978,11852 16818,11878
 Alexanderstr., linker Gehweg	1::igndisp 11353,12436 11329,12497
 Straße des 17. Juni, linker Geh/Radweg	1::igndisp 5758,11895 5813,11886

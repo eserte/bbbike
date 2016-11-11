@@ -127,7 +127,7 @@ Waisenstr.	1 11040,12415 11049,12386 11094,12243
 Sonnenallee - Tellstr.	3 12242,8972 12320,8927 12402,9080
 Tellstr. - Sonnenallee	3 12402,9080 12320,8927 12438,8859
 Lettestr	1 11268,15360 11368,15301 11480,15229
-Kleine Auguststr.	1 10049,13528 9996,13678
+Kleine Auguststr.	1 10049,13528 9993,13682
 Steinstr. (Mitte)	1 10603,13395 10390,13493 10311,13537 10286,13548
 Roennebergstr.	1 5533,6753 5357,6932
 Matternstr.	1 13798,13003 13579,12904
@@ -895,8 +895,8 @@ Zitadelle -> Am Juliusturm: Mittelstreifen	3::igndisp -2652,14559 -2646,14525 -2
 Mittelstreifen	3nocross::ignrte 2585,5696 2556,5575 2444,5303
 Thielallee -> Kuckucksweg: Mittelstreifen	3::igndisp 2444,5303 2556,5575 2483,5575
 Kuckucksweg -> Thielallee: Mittelstreifen	3::igndisp 2483,5575 2556,5575 2585,5696
-Kleine Hamburger - Torstr.	3 9749,13582 9670,13637 9580,13600
-Kleine Hamburger - Gartenstr.	3 9749,13582 9670,13637 9535,13801
+Kleine Hamburger - Torstr.	3 9744,13584 9670,13637 9580,13600
+Kleine Hamburger - Gartenstr.	3 9744,13584 9670,13637 9535,13801
 Straßenbahntrasse	3nocross::ignrte 10287,13783 10463,13747 10569,13719
 Torstr. -> Gormannstr.: Straßenbahntrasse	3::igndisp 10287,13783 10463,13747 10480,13871
 Gormannstr. -> Torstr.: Straßenbahntrasse	3::igndisp 10445,13675 10463,13747 10287,13783
@@ -1156,8 +1156,8 @@ Theodorstr.: Poller	3 24928,10737 24921,10705 24916,10539
 Anzengruberstr.	1 13042,8395 12865,8346
 Holtzendorffstr.	1 3049,11015 3082,11090
 Hansa -> Buschallee	3 15297,16321 15437,16491 15142,16499
-Poller	3 8588,13673 8590,13653 8601,13584
-Poller	3 8601,13584 8590,13653 8588,13673
+Poller	3 8586,13678 8590,13653 8594,13625
+Poller	3 8594,13625 8590,13653 8586,13678
 Mittelstreifen	3nocross::ignrte 11888,9189 11803,9390 11785,9437
 Kottbusser Damm -> Lenaustr.: Mittelstreifen	3::igndisp 11785,9437 11803,9390 11954,9415
 Lenaustr. -> Kottbusser Damm: Mittelstreifen	3::igndisp 11954,9415 11803,9390 11888,9189
@@ -1738,7 +1738,7 @@ Bizetstr. - Indira-Gandhi-Str.	3 14293,16073 14552,16171 14522,16260
 Hermann-Hesse-Str. -> Schützenstr.	3 9214,18666 8891,18545 8839,18504
 Friedrichstr. -> Am Weidendamm	3 9279,12953 9286,12886 9323,12895
 Murtzaner Ring	1 19593,14452 19593,14472
-Invalidenstr. - Hessische Str.	3 8842,13798 8690,13723 8775,13606
+Invalidenstr. - Hessische Str.	3 8841,13800 8685,13728 8775,13606
 Waldeyerstr.	1 15054,12323 15003,12241
 Prenzlauer Allee -> Saarbrücker Str.	3 11160,13492 11251,13667 11134,13820
 Stolzenfelsstr.	1 19447,8175 19400,8147 19333,8165 19171,8280 18949,8437 18787,8540
