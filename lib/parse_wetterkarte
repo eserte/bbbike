@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2006,2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2006,2009,2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -21,10 +21,11 @@ use Time::Local qw(timelocal);
 use File::ReadBackwards;
 
 my $wetterdir = "$ENV{HOME}/doc/met";
+my $default_url = "http://wkserv.met.fu-berlin.de/Wetter/mainframe.php";
 
 sub fetch_and_store {
     my($storefile, %args) = @_;
-    my %result = get_result();
+    my %result = get_result(%args);
     my $lastline = "";
     $storefile = "$wetterdir/wetter2-$result{year}" if !defined $storefile;
     if (tie *BW, "File::ReadBackwards", $storefile) {
@@ -42,25 +43,35 @@ sub fetch_and_store {
 }
 
 sub get_result {
-    my $content = fetch();
-    my %result = parse($content);
+    my(%opts) = @_;
+    my $url = $opts{url} || $default_url;
+    my $parseastext = $opts{parseastext};
+    my $content = fetch($url);
+    my %result = parse($content, parseastext => $parseastext);
     %result;
 }
 
 sub fetch {
+    my $url = shift;
     my $ua = LWP::UserAgent->new;
-    my $resp = $ua->get("http://wkserv.met.fu-berlin.de/Wetter/mainframe.php");
+    my $resp = $ua->get($url);
     die $resp->content if !$resp->is_success;
     $resp->content;
 }
 
 sub parse {
     my $content = shift;
-    my $tree = HTML::TreeBuilder->new;
-    $tree->parse($content);
-    my $text = $tree->as_trimmed_text;
+    my(%opts) = @_;
+    my $text;
+    if ($opts{parseastext}) {
+	$text = $content;
+    } else {
+	my $tree = HTML::TreeBuilder->new;
+	$tree->parse($content);
+	$text = $tree->as_trimmed_text;
+    }
     my $err = 0;
-    my($Y,$M,$D,$h,$m,$tz) = $text =~ /(\d{4})-(\d{2})-(\d{2})\s+(\d{1,2}):(\d{2})\s+(\S+)/;
+    my($Y,$M,$D,$h,$m,$s,$tz) = $text =~ /(\d{4})-(\d{2})-(\d{2})\s+(\d{1,2}):(\d{2})(?::(\d{2}))?\s+(\S+)/;
     warn "Cannot parse date/time", $err++ if (!defined $Y);
     my($windrichtung) = $text =~ /Windrichtung:\s+(\d+)/;
     warn "Cannot parse windrichtung", $err++ if (!defined $windrichtung);
@@ -141,15 +152,19 @@ return 1 if caller;
 
 require Getopt::Long;
 my %opt;
-Getopt::Long::GetOptions(\%opt, "o=s", "windrose!")
-    or die "usage: $0 [-o file] [-[no]windrose]";
+Getopt::Long::GetOptions(\%opt, "o=s", "windrose!", "fromlocalfile=s", "parseastext!")
+    or die "usage: $0 [-o file] [-[no]windrose] [-fromlocalfile file] [-parseastext]";
 $opt{windrose} = "windrose" if $opt{windrose};
 my $cmd = shift || "fetch_and_print";
 
+my %fetch_parse_args = (
+			($opt{fromlocalfile} ? (url => "file://$opt{fromlocalfile}") : ()),
+			($opt{parseastext} ? (parseastext => 1) : ()),
+		       );
 if ($cmd eq 'fetch_and_store') {
-    fetch_and_store($opt{o}, windrichtung => $opt{windrose});
+    fetch_and_store($opt{o}, windrichtung => $opt{windrose}, %fetch_parse_args);
 } elsif ($cmd eq 'fetch_and_print') {
-    my %result = get_result();
+    my %result = get_result(%fetch_parse_args);
     my $newline = formatline(\%result, windrichtung => $opt{windrose});
     print "$newline\n";
 } else {
