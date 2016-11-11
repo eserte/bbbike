@@ -1985,8 +1985,10 @@ $(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.yml: temp_blockings/bbbike-t
 	@$(READABLE) $@
 
 $(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.bbd: $(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.yml
+	-@$(WRITEABLE) $@
 	$(TEMP_BLOCKINGS_TASKS) yml_to_bbd $> > $@~
 	mv -f $@~ $@
+	-@$(READONLY) $@
 
 $(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd: temp_blockings/bbbike-temp-blockings.yml
 	$(TEMP_BLOCKINGS_TASKS) yml_to_bbd $> > $@~
