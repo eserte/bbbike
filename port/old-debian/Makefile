@@ -16,7 +16,7 @@ DEST_PACKAGEDIR=$(PACKAGEDIR)
 SKIPCOMPILE?=
 PERL?=		perl
 #DEBIAN_ARCH=	$(shell perl -e 'use AptPkg::Config qw/$$_config/; $$_config->init; print $$_config->get("APT::Architecture")')
-DEBIAN_ARCH=	$(shell dpkg --print-architecture)
+DEBIAN_ARCH?=	$(shell dpkg --print-architecture)
 
 all:	pre-check debian-package
 
