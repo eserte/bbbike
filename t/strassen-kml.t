@@ -33,7 +33,7 @@ use BBBikeTest;
 
 sub load_from_file_and_check ($);
 
-plan tests => 73;
+plan tests => 85;
 
 use Strassen::KML;
 my $s = Strassen::KML->new;
@@ -418,7 +418,7 @@ EOF
 ######################################################################
 # Helpers
 
-# 8 tests
+# 11 tests
 sub load_from_file_and_check ($) {
     my($filename) = @_;
 
@@ -436,6 +436,13 @@ sub load_from_file_and_check ($) {
 	$s;
     };
 
+    my $s_suffix = do {
+	my $s = Strassen->new_by_suffix($filename);
+	isa_ok $s, "Strassen";
+	isa_ok $s, "Strassen::KML";
+	$s;
+    };
+
     my $s = do {
 	my $s = Strassen->new($filename);
 	isa_ok $s, "Strassen";
@@ -445,6 +452,7 @@ sub load_from_file_and_check ($) {
 
     is_deeply $s->data, $s_kml->data, 'Strassen and Strassen::KML loading';
     is_deeply $s_magic->data, $s_kml->data, 'magic check';
+    is_deeply $s_suffix->data, $s_kml->data, 'suffix check';
 
     $s_kml;
 }

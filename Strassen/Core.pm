@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# Copyright (c) 1995-2003,2012,2014,2015 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2003,2012,2014,2015,2016 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -26,7 +26,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $STRICT $VERSION $can_strassen_storabl
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = '1.98';
+$VERSION = '1.99';
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -78,57 +78,65 @@ sub AUTOLOAD {
 sub new {
     my($class, $filename, %args) = @_;
     if (defined $filename) {
-	if      ($filename =~ /\.(?:dbf|sbn|sbx|shp|shx)$/) {
-	    require Strassen::ESRI;
-	    return Strassen::ESRI->new($filename, %args);
-	} elsif ($filename =~ /\.(?:mif|mid)$/i) {
-	    require Strassen::MapInfo;
-	    return Strassen::MapInfo->new($filename, %args);
-	} elsif ($filename =~ /\.e00$/i) {
-	    require Strassen::E00;
-	    return Strassen::E00->new($filename, %args);
-	} elsif ($filename =~ /\.(?:wpt|trk|rte)(?:\.gz)?$/) {
-	    require Strassen::Gpsman;
-	    return Strassen::Gpsman->new($filename, %args);
-	} elsif ($filename =~ /waypoint\.txt$/) {
-	    require Strassen::WaypointPlus;
-	    return Strassen::WaypointPlus->new($filename, %args);
-	} elsif ($filename =~ /\.ovl$/i) {
-	    require Strassen::Gpsman;
-	    require GPS::Ovl;
-	    my $ovl = GPS::Ovl->new;
-	    $ovl->check($filename);
-	    my $gpsman_data = $ovl->convert_to_gpsman;
-	    return Strassen::Gpsman->new_from_string($gpsman_data, File => $filename, %args);
-	} elsif ($filename =~ /\.(?:mps|gpx|g7t)$/i) {
-	    if ($filename =~ /\.gpx$/ && eval { require Strassen::GPX; 1 }) {
-		return Strassen::GPX->new($filename, %args);
-	    } else {
-		require Strassen::FromRoute;
-		return Strassen::FromRoute->new($filename, %args);
-	    }
-	} elsif ($filename =~ /\.km[lz]$/i) {
-	    if (eval { require Strassen::KML; 1 }) {
-		return Strassen::KML->new($filename, %args);
-	    }
-	} elsif ($filename =~ /\.geojson$/i) {
-	    if (eval { require Strassen::GeoJSON; 1 }) {
-		return Strassen::GeoJSON->new($filename, %args);
-	    }
-	} elsif ($filename =~ /\.xml$/ && eval { require Strassen::Touratech; 1 }) {
-	    # XXX Maybe really check for touratech files
-	    return Strassen::Touratech->new($filename, %args);
-	}
+	my $ret = $class->new_by_suffix($filename, %args);
+	return $ret if $ret;
     }
-
     $class->new_bbd($filename, %args);
+}    
+
+sub new_by_suffix {
+    my($class, $filename, %args) = @_;
+    if      ($filename =~ /\.bbd$/i) {
+	return $class->new_bbd($filename, %args);
+    } elsif ($filename =~ /\.(?:dbf|sbn|sbx|shp|shx)$/) {
+	require Strassen::ESRI;
+	return Strassen::ESRI->new($filename, %args);
+    } elsif ($filename =~ /\.(?:mif|mid)$/i) {
+	require Strassen::MapInfo;
+	return Strassen::MapInfo->new($filename, %args);
+    } elsif ($filename =~ /\.e00$/i) {
+	require Strassen::E00;
+	return Strassen::E00->new($filename, %args);
+    } elsif ($filename =~ /\.(?:wpt|trk|rte)(?:\.gz)?$/) {
+	require Strassen::Gpsman;
+	return Strassen::Gpsman->new($filename, %args);
+    } elsif ($filename =~ /waypoint\.txt$/) {
+	require Strassen::WaypointPlus;
+	return Strassen::WaypointPlus->new($filename, %args);
+    } elsif ($filename =~ /\.ovl$/i) {
+	require Strassen::Gpsman;
+	require GPS::Ovl;
+	my $ovl = GPS::Ovl->new;
+	$ovl->check($filename);
+	my $gpsman_data = $ovl->convert_to_gpsman;
+	return Strassen::Gpsman->new_from_string($gpsman_data, File => $filename, %args);
+    } elsif ($filename =~ /\.(?:mps|gpx|g7t)$/i) {
+	if ($filename =~ /\.gpx$/ && eval { require Strassen::GPX; 1 }) {
+	    return Strassen::GPX->new($filename, %args);
+	} else {
+	    require Strassen::FromRoute;
+	    return Strassen::FromRoute->new($filename, %args);
+	}
+    } elsif ($filename =~ /\.km[lz]$/i) {
+	if (eval { require Strassen::KML; 1 }) {
+	    return Strassen::KML->new($filename, %args);
+	}
+    } elsif ($filename =~ /\.geojson$/i) {
+	if (eval { require Strassen::GeoJSON; 1 }) {
+	    return Strassen::GeoJSON->new($filename, %args);
+	}
+    } elsif ($filename =~ /\.xml$/ && eval { require Strassen::Touratech; 1 }) {
+	# XXX Maybe really check for touratech files
+	return Strassen::Touratech->new($filename, %args);
+    }
+    undef;
 }
 
 sub new_by_magic_or_suffix {
     my($class, $filename, %args) = @_;
     my $ret = $class->new_by_magic($filename, %args);
     return $ret if $ret;
-    $class->new($filename, %args);
+    $class->new_by_suffix($filename, %args);
 }
 
 sub new_by_magic {

@@ -42,7 +42,7 @@ sub xpath_checks ($$&);
 my $v;
 my @variants = ("XML::LibXML", "XML::Twig");
 my $new_strassen_gpx_tests = 5;
-my $tests_per_variant = 159 + $new_strassen_gpx_tests;
+my $tests_per_variant = 165 + $new_strassen_gpx_tests;
 my $do_long_tests = !!$ENV{BBBIKE_LONG_TESTS};
 my $bbdfile;
 my $bbdfile_with_lines = "comments_scenic";
@@ -799,7 +799,7 @@ sub keep_file ($$) {
     }
 }
 
-# 9 tests
+# 12 tests
 # Try the different constructor variants
 sub load_from_file_and_check ($$) {
     my($gpxfile, $check_against) = @_;
@@ -825,9 +825,17 @@ sub load_from_file_and_check ($$) {
 	$s;
     };
 
+    my $s_suffix = do {
+	my $s = Strassen->new_by_suffix($gpxfile);
+	isa_ok $s, "Strassen";
+	isa_ok $s, "Strassen::GPX";
+	$s;
+    };
+
     is_deeply $s->data, $check_against->data, "Loading gpx with factory";
     is_deeply $s_gpx->data, $check_against->data, "Loading gpx explicitely with Strassen::GPX";
     is_deeply $s_magic->data, $check_against->data, "Loading gpx with magic check";
+    is_deeply $s_suffix->data, $check_against->data, "Loading gpx with suffix check";
 }
 
 # one test + specified number of $tests
