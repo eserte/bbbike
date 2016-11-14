@@ -2852,6 +2852,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id: HEERSTR-2016
 #: XXX Baustellenampel; eigentlich sind hier zwei Ampeln: einmal für die Straße runter zur Havel, und dann etwas weiter für die Radfahrer zum Wechseln auf die andere Straßenseite
 #: last_checked: 2016-10-08
+#: check_frequency: 60d
 	X::inwork -3069,11487
 #: note: Zufahrt zu Obi
 	X 24426,11265

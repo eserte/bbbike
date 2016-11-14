@@ -2761,14 +2761,14 @@ Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2 14447,10491 14270,10584
 #: next_check_id: MARIANNEN-2016 vvv
 #: source_id: INKO_2147340291_COPY_1 vvv
 #: source_id: 2147340291 vvv
-#: last_checked: 2016-11-04 vvv
-#: next_check: 2016-11-14 vvv
-#: valid: -20161114 vvv
+#: priority: #A vvv
+#: last_checked: 2016-11-14 vvv
+#: check_frequency: 14d vvv
 Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11512,10105 11616,10288
 Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11671,10402 11616,10288
-#: valid ^^^
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
+#: priority ^^^
 #: source_id ^^^
 #: source_id ^^^
 #: next_check_id ^^^
@@ -2782,10 +2782,11 @@ Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17082,7189 16954,70
 # REMOVED (laut osm nicht mehr highway=construction) --- #: osm_watch: way id="291810047" version="7" --- #: last_checked: 2016-07-23 --- Alfonsstr.: Bauzäune	2::inwork 19027,1427 19034,1441 19061,1457
 # REMOVED (komplett entfernt) --- #: last_checked: 2016-09-26 --- #: check_frequency: 90d --- Sonntagstr./Ostkreuz: wegen Bauarbeiten gesperrt	2::inwork 14752,11041 14810,10977
 # 
-#: last_checked: 2016-10-30
+#: last_checked: 2016-11-13
 Haasestr.: Bauarbeiten, keine Durchfahrt möglich	2::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2016-10-30
+#: XXX nach den Bauarbeiten vermutlich bessere Qualität der Fahrbahn
+#: last_checked: 2016-11-13
 Döringstr.: Bauarbeiten, keine Durchfahrt möglich	2::inwork 14400,11261 14357,11148
 # 
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 vvv --- #: last_checked: 2016-06-02 vvv --- #: check_frequency: 14d vvv --- Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12844,9351 12851,9309 12907,9073 --- Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12907,9073 12851,9309 12844,9351
@@ -2949,19 +2950,23 @@ Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17651,-393
 #: next_check: 2017-01-01
 Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, für Autos dauerhaft	2::inwork 17670,7512 17681,7589
 # 
-#: XXX siehe auch temp_blockings-Eintrag vvv
+#: next_check_id: HEERSTR-2016 vvv
+#: XXX es gab mal einen temp_blockings-Eintrag, der mittlerweile inaktiv ist vvv
 #: by: Stefan Klinkusch: "gesperrt" vvv
 #: source_id: INKO_118000 vvv
 #: osm_watch: way id="25115001" version="8" vvv
 #: last_checked: 2016-10-08 vvv
+#: check_frequency: 60d vvv
 # REMOVED (doch benutzbar) --- (Baustraße an der Freybrücke)	2::inwork -3075,11510 -3197,11554
 (Treppe an der Freybrücke)	2::inwork -3181,11496 -3177,11507 -3173,11520
 Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3217,11570
+#: check_frequency ^^^
 #: last_checked ^^^
 #: osm_watch ^^^
 #: source_id ^^^
 #: by ^^^
 #: XXX ^^^
+#: next_check_id ^^^
 # 
 #: last_checked: 2016-10-31
 #: check_frequency: 120d

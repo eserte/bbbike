@@ -96,11 +96,12 @@ Mˆckernstr.: werden hier vielleicht Radspuren Richtung S¸den markiert oder Radwe
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Baubeginn)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6183 (Baubeginn erst 2015)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.521884.php (Baubeginn, Fertigstellung der Gesamtmaﬂnahme August 2018)
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.532371.php (Fertigstellung des Teilabschnittes am 17.01.2017)
 #: last_checked: 2016-11-02 vvv
-#: check_frequency: 60d vvv
+#: next_check: 2017-01-17 vvv
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected; 9865,10227 9948,10280 9873,10285
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 # 
 # REMOVED --- #: XXX Baumaﬂnahme 2.23 (Realisierung nach 2011) vvv
@@ -355,6 +356,9 @@ Berliner Allee/Tassostr.: Bau einer Ampel	?::projected 13591,15969 13623,15954 1
 #: next_check: 2017-05-01
 Munsterdamm: bei der Fahrbahnsanierung entstehen Radspuren	?::projected 6651,4843 6744,4983 6746,4999 6747,5010 6767,5233
 # 
+#: XXX laut osm asphaltiert
+(Richterstr. - Rathausstr./Alt-Mariendorf): existiert hier ein Radweg? Qualit‰t? Nachts beleuchtet?	? 9115,3959 9117,3898
+# 
 #: section ^^^
 #: ignore ^^^
 #
@@ -430,6 +434,7 @@ Am Carolinenhof: existiert die Straﬂe schon? Qualit‰t? Genaue Lage?	? -8113,4000
 #: XXX http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4316
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036209836611/209836611/00129192/92-Anlagen/02/BenennungsabsichtfuereineneueprivateErschliess.pdf
 #: by: www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/33re.pdf/file?y=2016 (Grundst¸cksnummerierungen)
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4367
 #: XXX fehlt bei Berlin.coords.data
 #: XXX Privatstraﬂe
 #: last_checked: 2016-09-23
@@ -726,8 +731,9 @@ Toulonstr.: wird hier noch verkehrsberuhigt?	? 12404,21532 12480,21560
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file?y=2015
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2015 (Grundst¸cksnummerierungen)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2016 (Grundst¸cksnummerierungen)
-#: osm_watch: way id="344108078" version="1"
+#: osm_watch: way id="344108078" version="2"
 #: XXX PLZ=13127
+#: XXX laut osm "Marseillestraﬂe", noch construction, living_street
 Rennesstr.: genaue Lage, Qualit‰t?	?::projected 12411,21515 12422,21492 12467,21515
 # REMOVED (einzelne Straﬂen aufgef¸hrt) --- Bebauungsplan XIX-48b: neue Plan- und Privatstraﬂen werden erstellt	?::inwork 12337,20954 12459,21010 12562,21055 12547,21372 12495,21670 12172,21545 12209,21448 12189,21337 12168,21218 12255,21083 12337,20954
 # REMOVED (realisiert) --- Nizzastr.: bereits fertiggestellt? Qualit‰t? Genaue Lage?	?::inwork 12257,21079 12434,21160 12404,21217 12384,21256 12360,21303 12322,21378
@@ -1512,6 +1518,9 @@ Brodersenstr.: Neubau, danach bessere Qualit‰t?	?::projected 6033,19611 5885,199
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverl‰ufen
 # - XXX_prog- und XXX_indoor-Eintr‰ge
+# 
+#: XXX vermutlich schlechtes Kopfsteinpflaster, vermutlich Einbahnstraﬂe im s¸dlichen Abschnitt; str_cont_ausnahme-Eintrag notwendig
+Hauptstr.: Qualit‰t, Einbahnstraﬂenregelung...	? 12205,22696 12205,22696 12230,22689 12248,22577 12231,22460 12205,22367 12205,22367
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.530316.php
 #: XXX -> gesperrt-orig-Eintrag!
@@ -2448,6 +2457,17 @@ Gewerbepark Babelsberg: drei neue Planstraﬂen entstehen, Namen, Qualit‰t, Lage?	
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036680121217/680121217/00270568/68-Anlagen/01/DS2337_VzKAufstellungVI-46-1undFruehzeitigeBet.pdf
 #: next_check: 2018-06-01
 Kleinbeerenstr. - Groﬂbeerenstr.: geplanter Weg im Zuge des Bebauungsplans VI-46-1	?::projected 8979,10485 9192,10528
+# 
+#: XXX "Wilhelmsruher Tor", Bebauungsplan 3-18, neue Straﬂen werden entstehen vvv
+#: by: http://www.pankower-allgemeine-zeitung.de/wilhelmsruher-tor-kommt-endlich-voran/
+#: by: http://www.pankower-allgemeine-zeitung.de/Aktuelle-News-Berlin-Pankow//wp-content/uploads/2016/05/bplan3-18-600x532.jpg
+#: next_check: 2017-07-01 vvv
+Planstraﬂe A (anstelle der jetzigen Stichstraﬂe)	?::projected 7603,19713 7675,19677 7729,19649
+Verl‰ngerung Tollerstr.	?::projected 7749,19693 7729,19649
+Planstraﬂe B	?::projected 7729,19649 7744,19622 7797,19580
+Planstraﬂe C	?::projected 7744,19622 7687,19488
+#: next_check ^^^
+#: XXX ^^^
 # 
 #: ignore ^^^
 # 

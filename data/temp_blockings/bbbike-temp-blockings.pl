@@ -7129,7 +7129,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004638',
        data  => <<EOF,
-userdel	1::inwork 12185,23021 12214,22918 12187,22486
+userdel	1::inwork 12185,23021 12214,22918 12205,22696 12187,22486
 EOF
      },
      { from  => 1170802800, # 2007-02-07 00:00
@@ -21388,17 +21388,16 @@ userdel	q4::inwork 13150,7845 13103,7889
 userdel	q4::inwork 13085,7904 13117,7939 13151,7914
 EOF
      },
-     { from  => $isodate2epoch->("2015-11-27 06:00:00"), # 1385679600, # 2013-11-29 00:00 - 1 Tag Vorlauf
-       until => $isodate2epoch->("2015-11-29 23:59:59"), # 1385938799, # 2013-12-01 23:59
+     { from  => $isodate2epoch->("2016-12-09 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2016-12-11 21:00:00"), #
        periodic => 1,
-       recurrences => [['yearly', days => 28, months => 11]], # zwei Termine, 1. und 3. Advent
-       recurrence_prewarn_days => 14, # 2016 stand der Termin Ende Oktober noch nicht fest
-       text  => 'Bahnhofstr. (Lichtenrade): Weihnachtsmarkt zwischen Riedingerstr. und Goltzstr, Straße gesperrt, 28.11.2015 und 29.11.2015',
-       type  => 'gesperrt',
-       source_id => 'IM_020815',
+       recurrences => [['yearly', days => 9, months => 12]],
+       text  => 'Kunsthandwerklicher Weihnachtsmarkt in Lichtenrade: Alt-Lichtenrade, Straße vermutlich gesperrt (10. November 2016 bis 11. November 2016, jeweils 11-20 Uhr)',
+       type  => 'handicap',
        data  => <<EOF,
-#: by: http://www.weihnachteninberlin.de/weihnachtsmaerkte/tempelhof-schoeneberg/1001683-1328179-weihnachtsmarktinderbahnhofstra%C3%9Felichte.html
-userdel	2::xmas 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
+#: note: früher in der Bahnhofstr.
+#: by: http://www.weihnachteninberlin.de/weihnachtsmaerkte/tempelhof-schoeneberg/1001683-1328179-kunsthandwerklicher-weihnachtsmarkt-in-l.html
+	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
      { from  => $isodate2epoch->("2016-05-20 00:00:00"), # 1431715044, # 1367560678, # 2013-05-03 07:57
@@ -23532,7 +23531,7 @@ EOF
 #: XXX hier wird asphaltiert
 #: XXX ursprüngliches Enddatum wurde nicht eingehalten
 #: osm_watch: way id="33912929" version="12"
-#: last_checked: 2016-10-30
+#: last_checked: 2016-11-11
 #: check_frequency: 14d
 #: priority: #A
 userdel	2::inwork 8101,13901 8248,13659 8332,13548
@@ -24975,6 +24974,7 @@ EOF
 #: note: hier zurzeit (2016-10-08) nicht gesperrt
 	2::inwork -3529,13452 -3546,13503 -3556,13582 -3543,13691
 #: note: hier zurzeit (2016-10-08) gesperrt
+#: osm_watch: way id="445422415" version="1"
 	2::inwork -3543,13691 -3503,13773
 # REMOVED (hier fertig) --- #: note: hier zurzeit (2016-05-16) komplett gesperrt --- 2::inwork -3503,13773 -3460,13828 -3459,13846 -3390,13940 -3345,13994
 	2::inwork -3494,13980 -3390,13940
@@ -25609,7 +25609,7 @@ EOF
        text  => 'Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2016-11-03
+#: last_checked: 2016-11-11
 #: check_frequency: 14d
 userdel	q3::inwork 13295,11792 13173,11788 13066,11854
 EOF

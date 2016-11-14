@@ -3064,7 +3064,27 @@ userdel	q2::inwork 5258,11285 5236,10994
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: früher in der Bahnhofstr.
+#: by: http://www.weihnachteninberlin.de/weihnachtsmaerkte/tempelhof-schoeneberg/1001683-1328179-kunsthandwerklicher-weihnachtsmarkt-in-l.html
+	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
+',
+         'from' => 1481274000,
+         'id' => 2426,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              9,
+                              'months',
+                              12
+                            ]
+                          ],
+         'text' => 'Kunsthandwerklicher Weihnachtsmarkt in Lichtenrade: Alt-Lichtenrade, Straße vermutlich gesperrt (10. November 2016 bis 11. November 2016, jeweils 11-20 Uhr)',
+         'type' => 'handicap',
+         'until' => 1481486400
+       },
        undef,
        undef,
        undef,
@@ -3587,7 +3607,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
 #: XXX hier wird asphaltiert
 #: XXX ursprüngliches Enddatum wurde nicht eingehalten
 #: osm_watch: way id="33912929" version="12"
-#: last_checked: 2016-10-30
+#: last_checked: 2016-11-11
 #: check_frequency: 14d
 #: priority: #A
 userdel	2::inwork 8101,13901 8248,13659 8332,13548
@@ -4099,7 +4119,7 @@ userdel	q3::inwork 4564,3457 4800,3391 4862,3363 5022,3318
          'until' => 1483225199
        },
        {
-         'data' => '#: last_checked: 2016-11-03
+         'data' => '#: last_checked: 2016-11-11
 #: check_frequency: 14d
 userdel	q3::inwork 13295,11792 13173,11788 13066,11854
 ',
