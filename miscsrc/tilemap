@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: tilemap,v 1.7 2005/07/22 23:28:24 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,10 +14,6 @@
 
 use strict;
 use Getopt::Long;
-use lib "$ENV{HOME}/lib/perl"; # XXX
-# XXX non-standard modules XXX
-use NetPBM::PurePerl;
-use NetPBM::Pipe;
 use File::Basename;
 
 =head1 NAME
@@ -82,14 +77,29 @@ my $pnmcut = "pnmcut";
 my $basedest = basename($opt{destdir});
 
 my $tmpfile = "/tmp/tilemap.$$.ppm";
-my $pp = NetPBM::Pipe->create(["file", $opt{image}],
-			      ["file", $tmpfile]);
-warn $pp->cmdline;
-$pp->execute;
+my($img_width, $img_height);
+if (0) {
+    require lib;
+    lib->import("$ENV{HOME}/lib/perl"); # XXX
+    # XXX non-standard modules XXX
+    require NetPBM::PurePerl;
+    require NetPBM::Pipe;
+    my $pp = NetPBM::Pipe->create(["file", $opt{image}],
+				  ["file", $tmpfile]);
+    warn $pp->cmdline;
+    $pp->execute;
+    my $img = NetPBM::PurePerl->open($tmpfile)
+	or die "Can't load $tmpfile as netpbm file";
+    ($img_width, $img_height) = ($img->width, $img->height);
+} else {
+    my @cmd = ("convert", $opt{image}, $tmpfile);
+    system @cmd;
+    die "Command '@cmd' failed" if $? != 0;
 
-my $img = NetPBM::PurePerl->open($tmpfile)
-    or die "Can't load $tmpfile as netpbm file";
-my($img_width, $img_height) = ($img->width, $img->height);
+    require Image::Info;
+    my $info = Image::Info::image_info($tmpfile);
+    ($img_width, $img_height) = Image::Info::dim($info);
+}
 
 if ($opt{conf}) {
     open CONF, ">$opt{conf}" or die "Can't write to $opt{conf}: $!";
