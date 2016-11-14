@@ -46,7 +46,8 @@ update: update_data images
 
 # update_potsdam_data ist evtl. aufw‰ndig, deshalb nicht default
 update_data:	data/strassen.gz data/landstrassen.gz \
-		data/ubahn.gz data/sbahn.gz update_rest
+		data/ubahn.gz data/sbahn.gz data/Berlin.coords.data \
+		update_rest
 
 update_rest:
 	chmod +w data/Berlin.coords.data
@@ -65,6 +66,7 @@ update_rest:
 # Potsdam: remove strings like (B1) and (F1.1) as this turns to be
 # problematic for data_berlin_and_potsdam. Also make all B into HH streets.
 data/strassen.gz: ${DATADIR}/strassen ${DATADIR}/landstrassen
+	mkdir -p data
 	rm -f data/strassen
 	cp ${DATADIR}/strassen data/strassen
 	chmod +w data/strassen
@@ -94,10 +96,13 @@ data/landstrassen.gz:	data/strassen.gz \
 	 gzip -9 > $@
 
 data/ubahn.gz:	${DATADIR}/ubahn
-	gzip -9 < $> > $@
+	gzip -9 < $^ > $@
 
 data/sbahn.gz:	${DATADIR}/sbahn
-	gzip -9 < $> > $@
+	gzip -9 < $^ > $@
+
+data/Berlin.coords.data: ${DATADIR}/Berlin.coords.data
+	cp $^ $@
 
 # XXX Move theses two rules to data/Makefile as slow_slow_checks
 # make a s/(s)traﬂe$/$1tr./g on the data
