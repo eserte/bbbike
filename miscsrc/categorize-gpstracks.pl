@@ -14,43 +14,62 @@
 
 use strict;
 
+my @age_defs =
+    (
+     { rx => qr{^200[0-7]},          name => 'Old1', color => '#a0a030' },
+     { rx => qr{^20(0[8-9]|1[0-3])}, name => 'Old2', color => '#b05078' },
+     {                               name => '',     color => '#c000c0' },
+    );
+
 my @line_defs =
     (
-     { rx => qr{\((?:car|bus|tram)},                           type => 'Car',   dash => '8.3' },
+     { rx => qr{\((?:car|bus|tram)},                           type => 'Car',   dash => '8,3' },
      { rx => qr{\((?:plane)},                                  type => 'Plane', dash => '1,4' },
      { rx => qr{\((?:ship|ferry)},                             type => 'Ship',  dash => '2,8' },
      { rx => qr{\((?:train|s-bahn|u-bahn|draisine|funicular)}, type => 'Train', dash => '3,8' },
      { rx => qr{\((?:pedes)},                                  type => 'Pedes', dash => '8,3,8,6' },
-     { rx => qr{\.trk\t},                                      type => 'Uncat' },
+     { rx => qr{\.trk\t},                                      type => 'Uncat', dash => '4,1' },
+     {                                                         type => '' },
     );
 
-print "#: line_color: #c000c0\n";
-for my $oldspec ('', 'Old') {
+my $def_color = (grep { $_->{name} eq '' } @age_defs)[0]->{color};
+print "#: line_color: $def_color\n";
+for my $age_def (@age_defs) {
     for my $line_def (@line_defs) {
 	my($type, $dash) = @{$line_def}{qw(type dash)};
 	if (defined $dash) {
-	    print "#: line_dash.GPSs$type$oldspec: $dash\n";
+	    print "#: line_dash.GPSs$type$age_def->{name}: $dash\n";
 	}
     }
 }
-for my $oldspec ('Old') {
+for my $age_def (@age_defs) {
+    my $name = $age_def->{name};
+    next if $name eq '';
     for my $line_def (@line_defs) {
 	my $type = $line_def->{type};
-	print "#: line_color.GPSs$type$oldspec: #a0a030\n";
+	print "#: line_color.GPSs$type$name: $age_def->{color}\n";
     }
 }
 print "#:\n";
 
 while(<STDIN>) {
     my $cat = '';
- LINE_DEF: for my $line_def (@line_defs) {
-	if ($_ =~ $line_def->{rx}) {
+    for my $line_def (@line_defs) {
+	my $rx = $line_def->{rx};
+	if ($rx && $_ =~ $rx) {
 	    $cat = $line_def->{type};
-	    last LINE_DEF;
+	    last;
 	}
     }
-    my $oldspec = (m{^200[0-7]} ? 'Old' : '');
-    s{\tGPSs}{\tGPSs$cat$oldspec};
+    my $age_name = '';
+    for my $age_def (@age_defs) {
+	my $rx = $age_def->{rx};
+	if ($rx && $_ =~ $rx) {
+	    $age_name = $age_def->{name};
+	    last;
+	}
+    }
+    s{\tGPSs}{\tGPSs$cat$age_name};
     print $_;
 }
 
