@@ -812,7 +812,16 @@ sub check_gui_testing () {
 
 sub on_author_system () {
     require Sys::Hostname;
-    if (Sys::Hostname::hostname() !~ m{\.(rezic|herceg)\.de$}) {
+    my $hostname = Sys::Hostname::hostname();
+    if ($hostname !~ m{\.}) {
+	# short hostname, probably on Linux
+	chomp($hostname = `hostname -f`);
+	if (!length $hostname) {
+	    print "1..0 # skip Live server tests only activated on author systems, but cannot determine fqdn of this host.\n";
+	    exit 0;
+	}
+    }
+    if ($hostname !~ m{\.(rezic|herceg)\.de$}) {
 	print "1..0 # skip Live server tests only activated on author systems.\n";
 	exit 0;
     }
