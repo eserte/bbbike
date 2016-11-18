@@ -97,7 +97,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6183 (Baubeginn erst 2015)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.521884.php (Baubeginn, Fertigstellung der Gesamtmaßnahme August 2018)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.532371.php (Fertigstellung des Teilabschnittes am 17.01.2017)
-#: last_checked: 2016-11-02 vvv
+#: last_checked: 2016-11-17 vvv
 #: next_check: 2017-01-17 vvv
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected; 9865,10227 9948,10280 9873,10285
@@ -291,8 +291,9 @@ Schöneberger Str.: Radspuren bis 2015 geplant	?::projected 8739,6701 8653,6781 8
 # 
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bvv/mdv_vii_19.pdf?start&ts=1368606374&file=mdv_vii_19.pdf (Seite 79)
 #: osm_watch: way id="28961260" version="13"
+#: source_id: 2147339938
 #: last_checked: 2016-10-30
-#: next_check: 2016-11-21
+#: next_check: 2017-01-21
 Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166,8489
 #: by: ^^^
 # 
@@ -433,8 +434,9 @@ Am Carolinenhof: existiert die Straße schon? Qualität? Genaue Lage?	? -8113,4000
 # 
 #: XXX http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4316
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036209836611/209836611/00129192/92-Anlagen/02/BenennungsabsichtfuereineneueprivateErschliess.pdf
-#: by: www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/33re.pdf/file?y=2016 (Grundstücksnummerierungen)
+#: XXX too late: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/33re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4367
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2016 (Benennung)
 #: XXX fehlt bei Berlin.coords.data
 #: XXX Privatstraße
 #: last_checked: 2016-09-23
@@ -1522,14 +1524,6 @@ Brodersenstr.: Neubau, danach bessere Qualität?	?::projected 6033,19611 5885,199
 #: XXX vermutlich schlechtes Kopfsteinpflaster, vermutlich Einbahnstraße im südlichen Abschnitt; str_cont_ausnahme-Eintrag notwendig
 Hauptstr.: Qualität, Einbahnstraßenregelung...	? 12205,22696 12205,22696 12230,22689 12248,22577 12231,22460 12205,22367 12205,22367
 # 
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.530316.php
-#: XXX -> gesperrt-orig-Eintrag!
-#: XXX "3-4 Wochen"
-#: XXX evtl. wird die Beleuchtung auch erneuert?
-#: next_check: 2016-11-14
-#: priority: #A
-Parkweg zwischen Stresemannstr. und Wilhemstr.: wird instandgesetzt, vermutlich in dieser Zeit nicht befahrbar, danach eine "bituminöse Befestigung"	? 9250,10563 9375,10616
-# 
 # REMOVED (notiert in ampeln-orig) --- #: XXX NEW	Hannoversche Str. (Mitte) Höhe HU Mensa (Berlin)  Gültig ab: 31.10.2016 11:00  Baustelle, in beiden Richtungen abwechselnd nur ein Fahrstreifen frei (Baustellenampel) (bis Mitte 12/16)	2147340713 --- #: XXX laut fritz bis 16.12.2016 --- Hannoversche Str.: auch für Radfahrer relevant?	?::inwork 8892,13498 8853,13539
 # REMOVED (hier ist (noch?) nichts) ---  #: XXX Enddatum unbekannt --- Pettenkoferstr.: Sperrung für Radfahrer relevant?	? 14935,12596 14858,12775
 # REMOVED (ja) --- #: last_checked: 2016-11-02 --- #: next_check: 2016-11-04 --- #: priority: #A --- Weihnachtsmarkt am Alexa: wird die Voltairestr. wieder gesperrt?	? 11209,12430 11329,12497
@@ -1568,7 +1562,8 @@ Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich für den Kfz-Verkehr gesperr
 Lutterbacher Str.: Straße ist offen, prüfen!	? 2094,3231 1993,3170 2072,3034 2163,3092
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/39re.pdf/file?y=2016
-#: next_check: 2016-11-15
+#: last_checked: 2016-11-15
+#: check_frequency: 120d
 Mehringplatz: Widmung von Straßenland - ändert sich hier etwas?	? 9587,10421 9592,10263
 # 
 # REMOVED (keine) --- #: XXX NEW	Baerwaldstraße (Kreuzberg) in beiden Richtungen zwischen Wilmsstraße und Urbanstraße (Berlin)  Gültig ab: 14.09.2016 00:49  Vollsperrung, Wasserrohrbruch	LMS-BR_r_LMS-BR_78608 --- #: XXX laut fritz nur Richtung Süden --- Baerwaldstr.: Auswirkungen für Radfahrer?	? 10424,9958 10357,9807
@@ -1612,7 +1607,7 @@ Liebigstr.: Einrichtung einer Spielstraße, wo genau?	? 14229,12311 14166,12323 1
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7041
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_925_16.pdf
 #: XXX Bauarbeiten zwischen Thaerstr. und Hübnerstr.
-#: last_checked: 2016-11-01
+#: last_checked: 2016-11-16
 #: check_frequency: 14d
 Eldenaer Str.: Verlängerung der Radspuren	? 14355,12752 14096,12827 14066,12836 13979,12861 13960,12866 13844,12900
 # 
@@ -1778,7 +1773,7 @@ Neue Krugallee/Lakegrund	? 16401,7400 16406,7430 16409,7464
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4755 vvv
 #: source_id: 2147339938
 #: last_checked: 2016-10-30
-#: next_check: 2016-11-21
+#: next_check: 2017-01-21
 Köpenicker Landstraße: bleibt die Radwegbenutzungspflicht?	?; 15166,8489 15303,8343 15357,8286 15557,8077
 #: last_checked: 2016-10-30
 #: check_frequency: 90d
@@ -3030,6 +3025,13 @@ Neue Straßen entstehen: Qualität, genaue Lage, Straßennamen?	?::inwork -8274,157
 #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_nr._9_2016_neu_0.pdf
 #: XXX Privatstraße
 Lilienweg (Potsdam): genaue Lage? Qualität?	? -18312,7674 -18395,7365
+# 
+#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2016/pressemitteilung.533236.php
+#: XXX auch eintragen: die Grünanlage
+#: XXX wo entsteht die geplante Fußgängerbrücke?
+#: next_check: 2017-06-01
+Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093 10251,20218 10525,20392
+# 
 #: ignore ^^^
 #: section ^^^
 # 

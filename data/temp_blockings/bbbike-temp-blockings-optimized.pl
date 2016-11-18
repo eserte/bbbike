@@ -3107,34 +3107,7 @@ userdel	q2::inwork 5258,11285 5236,10994
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2013
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/49re.pdf/file?y=2016
-	2::temp 7873,12927 7930,12912 8021,12832 8030,12824 8120,12756 8206,12757 8309,12758 8424,12853 8503,12895
-	2::temp 8119,12414 8122,12603 8120,12756 8124,12840 8116,12938 8110,13042
-	2::temp 8030,12824 8124,12840 8168,12848 8204,12816 8206,12757 8207,12606
-	2::temp 7710,12585 7741,12586 7851,12590 7945,12592 8122,12603 8207,12606 8306,12609 8348,12609 8399,12610 8485,12612 8554,12593 8596,12576
-	2::temp 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576 8667,12555 8766,12541
-	2::temp 8304,12938 8309,12758 8306,12609
-	2::temp 8309,12758 8415,12749 8593,12742 8596,12760
-	2::temp 8424,12853 8370,12902 8304,12938 8235,12945 8168,12945 8116,12938 8072,12902 8046,12870 8036,12855 8021,12832
-	2::temp 7946,12932 7930,12912 7923,12876 7923,12872 7931,12876 7945,12878
-	2::temp 8119,12414 8354,12416 8400,12417 8540,12420 8775,12457
-	2::temp 8775,12457 8804,12280 8861,12125
-	2::temp 9141,12320 9028,12307 8804,12280 8731,12270 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205
-	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066 8577,11896 8571,11846
-	2::temp 8595,12066 8737,12098 8743,12099 8861,12125
-	2::temp 8354,12416 8391,12389 8546,12279
-	2::temp 8577,11896 8632,11912 8783,11959 8737,12098
-	2::temp 8503,12895 8488,12920
-	2::temp 8348,12609 8354,12416
-',
-         'from' => 1479222000,
-         'id' => 2449,
-         'text' => 'Pariser Platz und weite Umgebung: umfangreiche Sperrungen im Regierungsviertel wegen des Obama-Besuchs, 16. November 2016, 16 Uhr bis 18. November 2016, 14 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1479474000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4114,12 +4087,12 @@ userdel	q3::inwork 4564,3457 4800,3391 4862,3363 5022,3318
          'from' => 1478635433,
          'id' => 2834,
          'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.522495.php',
-         'text' => 'Uhlandstr.: Bauarbeiten zwischen Pariser Str. und Hohenzollerndamm, Einbahnstraßenregelung, offen Richtung Hohenzollerndamm, von ca. Mitte November 2016 bis Dezember 2016',
+         'text' => 'Uhlandstr.: Bauarbeiten zwischen Pariser Str. und Hohenzollerndamm, Einbahnstraßenregelung, offen Richtung Hohenzollerndamm, von ca. Mitte November 2016 bis Mitte Dezember 2016',
          'type' => 'handicap',
-         'until' => 1483225199
+         'until' => 1481893200
        },
        {
-         'data' => '#: last_checked: 2016-11-11
+         'data' => '#: last_checked: 2016-11-15
 #: check_frequency: 14d
 userdel	q3::inwork 13295,11792 13173,11788 13066,11854
 ',
@@ -4141,16 +4114,7 @@ userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,
          'type' => 'handicap',
          'until' => 1530439200
        },
-       {
-         'data' => 'userdel	q4::inwork 4897,11354 4919,11605
-',
-         'from' => 1476568800,
-         'id' => 2837,
-         'source_id' => 'LMS-BR_r_LMS-BR_81037',
-         'text' => 'Knesebeckstraße: zwischen Hardenbergstraße und Goethestraße Baustelle, Fahrbahn gesperrt, ab 17.10.2016 bis Mitte November 2016 ',
-         'type' => 'handicap',
-         'until' => 1479250799
-       },
+       undef,
        {
          'data' => '#: note: by fritz
 userdel	q4::inwork 963,12116 867,12140 772,12163

@@ -2709,6 +2709,15 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.530316.php
+#: XXX "3-4 Wochen"
+#: XXX danach eine "bituminöse Befestigung"
+#: XXX evtl. wird die Beleuchtung auch erneuert?
+#: last_checked: 2016-11-15
+#: next_check: 2016-12-05
+#: priority: #A
+Parkweg zwischen Stresemannstr. und Wilhemstr.: wird instandgesetzt, in dieser Zeit nicht befahrbar	2::inwork 9250,10563 9375,10616
+# 
 #: next_check_id: CHAUSSEESTR-2016 vvv
 #: XXX NEW	Chausseestraße (Mitte) Richtung Müllerstraße zwischen Habersaathstraße und Wöhlertstraße (Berlin)  Gültig ab: 31.10.2016 12:29  Baustelle, Fahrtrichtung gesperrt. eine Umleitung über Zinnowitzer Straße ist eingerichtet (bis 04/17)
 #: XXX laut fritz bis 29.04.2017
@@ -2761,14 +2770,16 @@ Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2 14447,10491 14270,10584
 #: next_check_id: MARIANNEN-2016 vvv
 #: source_id: INKO_2147340291_COPY_1 vvv
 #: source_id: 2147340291 vvv
+#: source_id: 2147340768 vvv
 #: priority: #A vvv
-#: last_checked: 2016-11-14 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2016-11-17 vvv
+#: next_check: 2016-12-15 vvv
 Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11512,10105 11616,10288
 Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11671,10402 11616,10288
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: priority ^^^
+#: source_id ^^^
 #: source_id ^^^
 #: source_id ^^^
 #: next_check_id ^^^

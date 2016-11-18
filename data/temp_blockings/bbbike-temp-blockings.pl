@@ -16603,7 +16603,7 @@ EOF
        text  => 'L 060 zw. Finsterwalde u. Hennersdorf Deckeneinbau Vollsperrung 08.10.2009-10.10.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 31829,-85450 31240,-85488 30463,-85655 29077,-85475 27831,-85375
+userdel	2::inwork 31829,-85450 31240,-85488 30463,-85655 29042,-85545 27854,-85429
 EOF
      },
      { from  => 1254952800, # 2009-10-08 00:00
@@ -25596,8 +25596,8 @@ userdel	q4::inwork; 5013,10039 5026,10151 5047,10381
 EOF
      },
      { from  => 1478635433, # 1479078000, # 2016-11-14 00:00
-       until => 1483225199, # 2016-12-31 23:59
-       text  => 'Uhlandstr.: Bauarbeiten zwischen Pariser Str. und Hohenzollerndamm, Einbahnstraßenregelung, offen Richtung Hohenzollerndamm, von ca. Mitte November 2016 bis Dezember 2016',
+       until => $isodate2epoch->("2016-12-16 14:00:00"), # 1483225199, # 2016-12-31 23:59
+       text  => 'Uhlandstr.: Bauarbeiten zwischen Pariser Str. und Hohenzollerndamm, Einbahnstraßenregelung, offen Richtung Hohenzollerndamm, von ca. Mitte November 2016 bis Mitte Dezember 2016',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.522495.php',
        data  => <<EOF,
@@ -25609,7 +25609,7 @@ EOF
        text  => 'Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2016-11-11
+#: last_checked: 2016-11-15
 #: check_frequency: 14d
 userdel	q3::inwork 13295,11792 13173,11788 13066,11854
 EOF
