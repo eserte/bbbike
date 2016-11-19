@@ -203,6 +203,13 @@ sub check_url {
 
 	skip("No internet available", $no_tests)
 	    if ($resp->code == 500 && $resp->message =~ /No route to host/i); # 'Bad hostname' was part of this regexp, but this mask a real test failure!
+	if ($resp->code == 500 && $resp->message =~ /certificate verify failed/i) {
+	    diag <<EOF;
+Make sure that your SSL-related libraries and modules are up-to date.
+Especially requests to sourceforge.net may fail if Net::SSLeay is too
+old (1.66 probably to old, 1.78 should work).
+EOF
+	}
 	#warn $resp->content;
 	ok($resp->is_success, "Successful request of $url$redir_text " . sprintf("%.3fs", $dt))
 	    or diag $resp->status_line . " " . $resp->content;
