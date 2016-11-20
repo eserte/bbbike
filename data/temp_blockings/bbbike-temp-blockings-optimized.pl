@@ -3081,7 +3081,7 @@ userdel	q2::inwork 5258,11285 5236,10994
                               12
                             ]
                           ],
-         'text' => 'Kunsthandwerklicher Weihnachtsmarkt in Lichtenrade: Alt-Lichtenrade, Straße vermutlich gesperrt (10. November 2016 bis 11. November 2016, jeweils 11-20 Uhr)',
+         'text' => 'Kunsthandwerklicher Weihnachtsmarkt in Lichtenrade: Alt-Lichtenrade, Straße vermutlich gesperrt (10. Dezember 2016 bis 11. Dezember 2016, jeweils 11-20 Uhr)',
          'type' => 'handicap',
          'until' => 1481486400
        },

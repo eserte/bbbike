@@ -976,18 +976,13 @@ Else-Lasker-Schüler-Str.: Poller	3 7033,10396 7245,10499 7281,10510
 Else-Lasker-Schüler-Str.: Poller	3 7281,10510 7245,10499 7033,10396
 (Westhafenstr. - Beusselstr.): Durchfahrt verboten, Anlieger frei	2:Anlieger 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5205,14253
 Steinbachstr.	1 19759,4160 19703,3979 19673,3888 19587,3801
-Mittelstreifen	3nocross::ignrte 5091,7676 5067,7652 5051,7631
-Südwestkorso -> Stubenrauchstr.: Mittelstreifen	3::igndisp 5091,7676 5067,7652 5069,7498
-Südwestkorso -> Görresstr.: Mittelstreifen	3::igndisp 5091,7676 5067,7652 5188,7536
-Südwestkorso -> Stubenrauchstr.: Mittelstreifen	3::igndisp 5051,7631 5067,7652 5063,7784
-Stubenrauchstr. -> Südwestkorso: Mittelstreifen	3::igndisp 5069,7498 5067,7652 5051,7631
-Stubenrauchstr. -> Stubenrauchstr.: Mittelstreifen	3::igndisp 5069,7498 5067,7652 5063,7784
-Stubenrauchstr. -> Südwestkorso: Mittelstreifen	3::igndisp 5063,7784 5067,7652 5091,7676
-Stubenrauchstr. -> Stubenrauchstr.: Mittelstreifen	3::igndisp 5063,7784 5067,7652 5069,7498
-Stubenrauchstr. -> Görresstr.: Mittelstreifen	3::igndisp 5063,7784 5067,7652 5188,7536
-Görresstr. -> Südwestkorso: Mittelstreifen	3::igndisp 5188,7536 5067,7652 5051,7631
-Görresstr. -> Stubenrauchstr.: Mittelstreifen	3::igndisp 5188,7536 5067,7652 5069,7498
-Görresstr. -> Stubenrauchstr.: Mittelstreifen	3::igndisp 5188,7536 5067,7652 5063,7784
+Mittelstreifen	3nocross::ignrte 5091,7676 5073,7660 5051,7631
+Südwestkorso -> Görresstr.: Mittelstreifen	3::igndisp 5091,7676 5073,7660 5188,7536
+Südwestkorso -> Stubenrauchstr.: Mittelstreifen	3::igndisp 5051,7631 5073,7660 5052,7686
+Stubenrauchstr. -> Südwestkorso: Mittelstreifen	3::igndisp 5052,7686 5073,7660 5091,7676
+Stubenrauchstr. -> Görresstr.: Mittelstreifen	3::igndisp 5052,7686 5073,7660 5188,7536
+Görresstr. -> Südwestkorso: Mittelstreifen	3::igndisp 5188,7536 5073,7660 5051,7631
+Görresstr. -> Stubenrauchstr.: Mittelstreifen	3::igndisp 5188,7536 5073,7660 5052,7686
 Überqueren verboten	3nocross::ignrte 6687,8385 6807,8309 6935,8208
 Feurigstr. -> Dominicusstr.: Überqueren verboten	3::igndisp 7012,8511 6807,8309 6935,8208
 Feurigstr. -> Gustav-Freytag-Str.: Überqueren verboten	3::igndisp 7012,8511 6807,8309 6779,8279

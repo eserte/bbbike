@@ -21392,7 +21392,7 @@ EOF
        until => $isodate2epoch->("2016-12-11 21:00:00"), #
        periodic => 1,
        recurrences => [['yearly', days => 9, months => 12]],
-       text  => 'Kunsthandwerklicher Weihnachtsmarkt in Lichtenrade: Alt-Lichtenrade, Straße vermutlich gesperrt (10. November 2016 bis 11. November 2016, jeweils 11-20 Uhr)',
+       text  => 'Kunsthandwerklicher Weihnachtsmarkt in Lichtenrade: Alt-Lichtenrade, Straße vermutlich gesperrt (10. Dezember 2016 bis 11. Dezember 2016, jeweils 11-20 Uhr)',
        type  => 'handicap',
        data  => <<EOF,
 #: note: früher in der Bahnhofstr.
@@ -22104,7 +22104,7 @@ EOF
        text  => 'Görresstr.: Bauarbeiten, Einbahnstraße, bis 28. März 2014',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork; 5352,7428 5318,7424 5272,7458 5188,7536 5067,7652
+userdel	q4::inwork; 5352,7428 5318,7424 5272,7458 5188,7536 5073,7660
 EOF
      },
      { from  => 1379149200, # 2013-09-14 11:00
