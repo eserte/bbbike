@@ -591,9 +591,15 @@ EOF
 	}
     }
     if (-r "ext/Makefile") {
-	$out .= <<'EOF'; # XXX "build" should not be here!
+	if ($is_travis) {
+	    $out .= <<'EOF';
+	cd ext && $(MAKE) test PERL=$(FULLPERL)
+EOF
+	} else {
+	    $out .= <<'EOF'; # XXX "build" should not be here!
 	cd ext && $(MAKE) build test PERL=$(FULLPERL)
 EOF
+	}
     }
     if (0 && -r "projects/bbbike.de-hosteurope/Makefile") {
 	$out .= <<'EOF';
