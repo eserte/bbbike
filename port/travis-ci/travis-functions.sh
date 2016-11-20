@@ -146,7 +146,7 @@ install_perl_dependencies() {
 	    cpm install -g -v DB_File
 	    # implement suggestion for more diagnostics in case of failures
 	    # https://github.com/skaji/cpm/issues/51#issuecomment-261754382
-	    if ! cpm install -g -v; then cat `ls -t $HOME/.perl-cpm/build.* | head -1`; fi
+	    if ! cpm install -g -v; then cat `ls -t $HOME/.perl-cpm/build.* | head -1`; false; fi
 	else
 	    cpanm --quiet --installdeps --notest .
 	fi
