@@ -3159,7 +3159,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        undef,
        {
-         'data' => '#: XXX_osm bei osm jetzt mit bicycle=yes getaggt, aber laut R. Herzog stimmt das nicht - zwischenzeitlich bicycle=no, seit 2014-10-25 wieder bicycle=yes vvv
+         'data' => '#: XXX_osm bei osm jetzt mit bicycle=yes getaggt, aber laut R. Herzog stimmt das nicht - zwischenzeitlich bicycle=no, seit 2014-10-25 wieder bicycle=yes, 2016 wieder bicycle=no vvv
 #: note: Verbot bestätigt von roald dot lange at gmx (2015-06-23)
 #: osm_watch: way id="80221295" version="18" brb
 	2 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
@@ -3167,8 +3167,8 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
 	2 19105,-3940 19164,-3980 19282,-3928 19464,-3780 19479,-3690
 #: osm_watch: way id="60482011" version="25" brb
 #: osm_watch: way id="192153919" version="4" brb
-#: osm_watch: way id="192153925" version="8" brb
-#: osm_watch: way id="136089841" version="21" brb
+#: osm_watch: way id="192153925" version="9" brb
+#: osm_watch: way id="136089841" version="22" brb
 	2 19479,-3690 19443,-3540 19558,-3155 19626,-3031 19808,-2953 19909,-2863 19941,-2759 19909,-2677 19575,-2358 19346,-2337 19236,-2298 19131,-2145 18866,-1674 18936,-1581
 	2 19131,-2145 19198,-2118
 	2 19909,-2863 19996,-2880
@@ -4115,16 +4115,7 @@ userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,
          'until' => 1530439200
        },
        undef,
-       {
-         'data' => '#: note: by fritz
-userdel	q4::inwork 963,12116 867,12140 772,12163
-',
-         'from' => 1477602762,
-         'id' => 2838,
-         'text' => 'Ebereschenallee: zwischen Kirschenallee und Ratzeburger Allee Bauarbeiten, Sperrung der Fahrbahn, bis 18.11.2016 ',
-         'type' => 'handicap',
-         'until' => 1479510000
-       },
+       undef,
        {
          'data' => '#: note: by fritz
 userdel	q4::inwork 4646,6875 4767,6717

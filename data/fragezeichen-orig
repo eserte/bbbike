@@ -733,9 +733,9 @@ Toulonstr.: wird hier noch verkehrsberuhigt?	? 12404,21532 12480,21560
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file?y=2015
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2016 (Grundstücksnummerierungen)
-#: osm_watch: way id="344108078" version="2"
+#: osm_watch: way id="344108078" version="3"
 #: XXX PLZ=13127
-#: XXX laut osm "Marseillestraße", noch construction, living_street
+#: XXX laut osm living_street
 Rennesstr.: genaue Lage, Qualität?	?::projected 12411,21515 12422,21492 12467,21515
 # REMOVED (einzelne Straßen aufgeführt) --- Bebauungsplan XIX-48b: neue Plan- und Privatstraßen werden erstellt	?::inwork 12337,20954 12459,21010 12562,21055 12547,21372 12495,21670 12172,21545 12209,21448 12189,21337 12168,21218 12255,21083 12337,20954
 # REMOVED (realisiert) --- Nizzastr.: bereits fertiggestellt? Qualität? Genaue Lage?	?::inwork 12257,21079 12434,21160 12404,21217 12384,21256 12360,21303 12322,21378
@@ -791,20 +791,19 @@ Bahnhofstr./Blankenburger Weg/Pankstr.: Ampel geplant	?::projected 12442,20805
 # die früher geplante Straßennamen wurden im Amtsblatt 9/2013 wieder zurückgezogen ("ersatzlos gestrichen")
 # REMOVED (") --- früher geplant Hans-Kölle-Weg: Straßenname? Qualität?	? -13632,1388 -13654,1402 -13707,1434 -13766,1469
 # REMOVED (") --- früher geplant Rudolf-Kierski-Weg: Straßenname? Qualität?	? -13612,1425 -13633,1438 -13686,1470 -13745,1504
-# REMOVED (") --- früher geplant Georg-Potente-Weg: Straßenname? Qualität?	? -13586,1540 -13701,1579
-# REMOVED (") --- früher geplant Ferdinand-Jühlke-Weg: Straßenname? Qualität?	? -13590,1649 -13671,1665
+# REMOVED (") --- früher geplant Georg-Potente-Weg: Straßenname? Qualität?	? -13586,1540
+# REMOVED (") --- früher geplant Ferdinand-Jühlke-Weg: Straßenname? Qualität?	? -13590,1649
 #: XXX auch prüfen: Verkehrsberuhigung
 Fritz-Encke-Str.: wird die wassergebundene Decke durch Asphalt ersetzt werden?	? -13766,1402 -13738,1387 -13683,1356 -13655,1339
 #: XXX zweifelhaft, ob diese Verlängerung passiert; evtl. nur teilweise
 Erich-Mendelsohn-Allee: Verlängerung?	? -13695,1276 -13655,1339 -13632,1388 -13612,1425 -13593,1469 -13587,1520 -13586,1540 -13586,1594 -13590,1649 -13600,1777 -13645,1807 -13682,1830 -13739,1855 -13784,1874 -13867,1901
-Nietnerstr.: Verlängerung?	? -13586,1594 -13682,1614 -13748,1636
+Nietnerstr.: Verlängerung?	? -13606,1615 -13698,1621 -13748,1636
 Nietnerstr.: wird hier befestigt werden, evtl. Verbundsteinpflaster gelegt werden?	? -13843,1668 -13855,1673 -13962,1711
-#: osm_watch: way id="268094694" version="1" brb
-Orville-Wright-Str.: Verlängerung?	? -13843,1668 -13811,1785 -13784,1874
+Orville-Wright-Str.: Verlängerung?	? -13843,1668 -13811,1785 -13784,1874 -13748,1960 -13854,2025
 Theodor-Echtermeyer-Str.: Verlängerung?	? -13760,1765 -13739,1855
 Fintelmannstr.: Verlängerung?	? -13714,1747 -13682,1830
 Friedrich-Kunert-Weg: Verlängerung?	? -13781,1772 -13811,1785
-Friedrich-Kunert-Weg: Verlängerung?	? -13714,1747 -13658,1730
+Friedrich-Kunert-Weg: Verlängerung?	? -13714,1747 -13664,1729
 #: note ^^^
 # 
 # REMOVED (realisiert; Park existiert eigentlich noch nicht, nur ein Spielplatz) --- #: by: http://www.sanierung-osw.de/index.php?id=419 (Blockdurchquerung) --- #: XXX asphaltiert, wahrscheinlich für Radfahrer frei --- #: XXX evtl. auch Park einzeichnen, Name? --- #: last_checked: 2013-08-19 --- (Siemensstr./Deulstr. - Wilhelminenhofstr.): wann wird hier eröffnet? Nachts beleuchtet?	?::inwork 17842,6639 17852,6589 17826,6495
@@ -2103,7 +2102,8 @@ Eduard-Claudius-Str. (Potsdam): Qualität (auch Beton?)?	? -10542,-4204 -10615,-4
 # 
 Tiroler Damm (Potsdam): Qualität (auch Beton?)?	? -10362,-4158 -10304,-4090 -10267,-4025 -10165,-3954 -10140,-3918
 # 
-#: osm_watch: way id="4783066" version="6" brb
+#: osm_watch: way id="4783066" version="7" brb
+#: XXX laut osm weiterhin cobblestone
 #: last_checked: 2013-05-09
 #: next_check: 2013-08-09
 Am Brunnen (Potsdam): Bauarbeiten, danach vielleicht etwas bessere Qualität (Asphalt?)?	?::inwork; -11789,-3212 -11672,-3345
@@ -2565,7 +2565,7 @@ Aalsteig (Potsdam): Qualität?	? -19584,4326
 #: by: http://www.potsdam.de/cms/dokumente/10115978_1771576/bbb8d1f2/ENDFASSUNGAbl.%20PdmStadt%2004_13.pdf
 #: XXX fehlt in Potsdam.coords.data, PLZ=14467
 #: XXX: laut osm fertiggestellt, highway=service, surface=cobblestone + paving_stones
-#: osm_watch: way id="226916964" version="3" brb
+#: osm_watch: way id="226916964" version="4" brb
 Im Nikolaiquartier: neue Straße, wo befindet sie sich? Qualität?	? -12988,-1265 -13078,-1250 -13089,-1313
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5491 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2013 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/44re.pdf/file?y=2013 (Hausnummern) --- #: XXX Freesienweg (beide Amtsblätter, DPAG-Mitteilungsblatt 12/2013) oder Fresienweg (BA)? Wikipedia meint "Freesien" --- #: XXX fehlt bei Berlin.coords.data, PLZ=10365 --- #: last_checked: 2014-06-19 (Bauarbeiten in Gange, keine Straße zu sehen) --- #: check_frequency: 90d --- Freesienweg: geplante Straße, wo wird sie genau liegen? Qualität?	?::projected 16000,12625 15997,12743
@@ -2691,6 +2691,7 @@ Birkengrund (Potsdam): genaue Lage, Qualität?	? -11013,-2957 -11119,-2963
 Alte Gärtnerei (Potsdam): genaue Lage, Qualität?	? -11119,-2963 -11099,-2859
 #: by: ^^^
 # 
+#: note: Campus am Jungfernsee vvv
 #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_landeshauptstadtpotsdam_09-2014.pdf
 #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_2014_16.pdf (Korrektur der Emmy-Noether-Straße)
 #: XXX Straßennamen sind (alle fehlen in Potsdam.coords.data)
@@ -2699,7 +2700,15 @@ Alte Gärtnerei (Potsdam): genaue Lage, Qualität?	? -11119,-2963 -11099,-2859
 #: XXX Planstraße W4: Hermann-Weyl-Straße, PLZ=14469
 #: XXX Planstraße W5: Carl-Gustav-Jacobi-Straße, PLZ=14469
 #: XXX Planstraße W6: Carl-Adam-Petri-Straße (von Planstraße W2/W4 bis Planstraße W1), PLZ=14469
-Campus am Jungfernsee: neue Straßen, wo genau?	? -13116,2533 -12975,2508 -13008,2379
+Am Jungfernsee: Qualität? Teilweise Einbahnstraße, wo?	? -13181,2285 -13138,2269 -12924,2164 -12874,2210 -12799,2238 -12777,2305 -12746,2340 -12706,2356 -12706,2389 -12854,2528 -12972,2557 -12991,2507 -13029,2437
+Carl-Gustav-Jacobi-Str.: Qualität? Einbahnstraße?	? -12799,2238 -12873,2294 -13113,2396
+Hermann-Weyl-Str.: Qualität? Teilweise Einbahnstraße, wo?	? -12734,2281 -12777,2305 -12809,2319 -12916,2400 -13029,2437
+Emmy-Noether-Str.: Qualität? Einbahnstraße?	? -12991,2507 -12834,2443 -12746,2340
+Carl-Adam-Petri-Str.: Qualität? Einbahnstraße?	? -13029,2437 -13079,2437 -13113,2396 -13116,2366 -13103,2338 -13025,2268 -12906,2233 -12874,2210
+Radweg: Qualität? Beleuchtet?	? -12956,2619 -13091,2574 -13105,2614
+Radweg: Qualität? Beleuchtet?	? -13103,2338 -13138,2269 -13162,2218
+Radweg: Qualität? Beleuchtet?	? -13122,2849 -13168,2836
+#: note ^^^
 # 
 # REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2014 --- #: note: privat --- #: XXX fehlt bei Berlin.coords.data --- Lindenallee: wo befindet sich die Straße genau?	? -784,16574 -945,16725 -781,16793
 # REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file?y=2014 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2014 --- #: osm_watch: way id="51823452" version="1" --- #: XXX Privatstraße
@@ -2891,7 +2900,7 @@ Brunnenallee (Potsdam):genaue Lage? Qualität? Existiert die Straße schon?	?::pro
 # 
 #: by: https://www.potsdam.de/sites/default/files/documents/final_amtsblatt_nr._3_2016_zur_druckfreigabe.pdf
 #: XXX Bebauungsplan Nr. 146
-Uferweg (Potsdam): wird es hier Änderungen/Verbesserung geben, z.B. hinsichtlich der Qualität?	?::projected -13375,2950 -13287,2924 -13227,2920 -13194,2909 -13192,2897 -13112,2825 -13076,2703 -12992,2595 -12897,2508 -12819,2465 -12743,2388 -12671,2354 -12637,2348 -12609,2364 -12586,2373 -12460,2288
+Uferweg (Potsdam): wird es hier Änderungen/Verbesserung geben, z.B. hinsichtlich der Qualität?	?::projected -13375,2950 -13287,2924 -13227,2920 -13194,2909 -13153,2884 -13122,2849 -13004,2755 -12999,2661 -12956,2619 -12913,2597 -12811,2576 -12736,2523 -12711,2471 -12656,2431 -12636,2398 -12586,2373 -12460,2288
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2016 (Benennung einer Straße)
 #: XXX fehlt in Berlin.coords.data
@@ -4106,6 +4115,8 @@ Schönerlinder Bahnhofstr.: Qualität? Ist der Bahnübergang beschrankt?	? 11856,27
 Industriestr. (Schönerlinde): Qualität?	? 12126,26016 11655,26469 11621,26746 11530,26931 11360,27051 11312,27124
 #: XXX im Bereich der Gutsstr./Verlängerung Beton, und teilweise Rasengittersteine
 Kirschallee - Rückertstr.: Qualität der Wege? Unbeleuchtet?	? -13944,1764 -14171,1878 -14205,1864 -14588,1918 -15132,1992 -15560,2052 -15671,1990 -15875,2079 -15942,2110 -16004,2136 -16034,2150 -16396,2310
+Grenzallee - Birnenweg: Qualität des Wegs? Unbeleuchtet?	? -14100,2144 -14205,1864 -14288,1707 -14379,1551 -14349,1505
+Fritz-Encke-Str., Verlängerung: Qualität des Wegs? Unbeleuchtet?	? -14016,1563 -14288,1707
 # REMOVED (aufgenommen) --- #: XXX_osm fehlt bei osm --- #: XXX Ist hier auch die Straße 356 oder 365? --- Straße 357: Qualität?	? -6046,14253 -6053,14278 -6064,14321 -6091,14391 -6146,14317 -6064,14321
 # 
 #: XXX_osm: fehlt bei osm
@@ -4580,7 +4591,6 @@ Von-Oppen-Weg: Qualität? Wo befindet sich die Straße?	? -8445,8504 -8240,8450
 # 
 #: by: http://www.potsdam.de/cms/dokumente/10098106_1471008/11eddb87/ENDFASSUNG10_12.pdf
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_nr._1_2016.pdf (zum Bebauungsplan Speicherstadt-Süd)
-#: osm_watch: way id="199807300" version="1" brb
 #: last_checked: 2014-05-11
 #: next_check: 2015-01-01
 Uferweg von der Neuen Fahrt zum Hermannswerder: neuer Weg wird hier entstehen, Qualität?	?::inwork -12803,-2219 -12803,-2371 -12906,-2537 -13156,-2702
@@ -4737,14 +4747,14 @@ Gertrud-Feiertag-Str. (Potsdam): Existiert hier schon eine Straße? Qualität?	? -
 # 
 #: XXX neu geplante Namen, fehlen in Potsdam.coords.data: vvv
 #: XXX (Planstr. 1+2) PLZ=14469 (in DPAG-Mitteilungsblatt 6/2014)
-Opolestr. (Potsdam): Qualität?	? -13683,1356 -13654,1402 -13633,1438 -13614,1467 -13610,1521
+Opolestr. (Potsdam): Qualität?	? -13683,1356 -13654,1402 -13633,1438 -13614,1467 -13610,1521 -13606,1615
 #: XXX (Planstr. 3) PLZ=14469 (in DPAG-Mitteilungsblatt 12/2013)
 Luzernstr. (Potsdam): Qualität?	? -13738,1387 -13707,1434 -13686,1470 -13653,1522
 #: XXX ^^^
 # 
 #: XXX laut osm schon teilweise verlängert vvv
-Gustav-Meyer-Str.: wurde die Straße schon teilweise Richtung Osten verlängert? Qualität?	? -13587,1520 -13610,1521 -13653,1522 -13731,1525 -13779,1544
-Hermann-Mattern-Promenade: wurde die Straße schon teilweise Richtung Norden verlängert? Qualität?	? -13795,1420 -13766,1469 -13745,1504 -13731,1525 -13701,1579 -13682,1614 -13671,1665 -13658,1730 -13645,1807
+Gustav-Meyer-Str.: wurde die Straße schon teilweise Richtung Osten verlängert? Qualität?	? -13610,1521 -13653,1522 -13731,1525 -13779,1544
+Hermann-Mattern-Promenade: wurde die Straße schon teilweise Richtung Norden verlängert? Qualität?	? -13795,1420 -13766,1469 -13745,1504 -13731,1525 -13698,1621 -13664,1729 -13645,1807
 #: XXX ^^^
 # 
 #: by: http://www.potsdam.de/cms/dokumente/26838366_1771576/7b9e9382/ENDFASSUNGPdmStadt%2017_13.pdf
@@ -4792,13 +4802,13 @@ Heerstr. - Chemnitzer Str.: existiert der Verbindungsweg für Radfahrer und Fußgä
 #: by: http://www.potsdam.de/cms/dokumente/10090503_1471008/726adfe6/Amtsblatt_1-2012.pdf vvv
 #: osm_watch: way id="174465897" version="3" brb
 An der Kornmühle (Potsdam): Qualität der Straße?	? -12712,-2172 -12728,-2227
-#: osm_watch: way id="174465898" version="8" brb
-#: XXX laut osm living_street
+#: osm_watch: way id="174465898" version="9" brb
+#: XXX laut osm living_street und surface=paved
 Am Speicher (Potsdam): Qualität der Straße?	? -12783,-2269 -12771,-2220 -12754,-2154
 #: by: ^^^
 #: by: http://www.potsdam.de/cms/dokumente/10091281_1471008/5b118cfb/2012%2002%2009Endfassung02_12.pdf
-#: osm_watch: way id="174465895" version="4" brb
-#: XXX laut osm living_street
+#: osm_watch: way id="174465895" version="5" brb
+#: XXX laut osm living_street und surface=paved
 Altstadtblick (Potsdam): Qualität der Straße?	? -12697,-2235 -12728,-2227 -12771,-2220 -12803,-2219
 #: XXX weitere Straßen, die hier entstehen (http://www.potsdam.de/sites/default/files/documents/final_abl_pdmstadt_08_2015_web_0.pdf)
 #: XXX fehlen in Potsdam.coords.data
