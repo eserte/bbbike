@@ -15,7 +15,7 @@ package BBBikeOrgDownload;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 use File::Basename qw(basename);
 use File::Temp qw(tempdir);
@@ -79,14 +79,19 @@ sub listing {
     @cities;
 }
 
+sub get_city_url {
+    my($self, $city) = @_;
+    my $root_url = $self->{root_url};
+    "$root_url/$city.tbz";
+}
+
 sub get_city {
     my($self, $city) = @_;
 
-    my $root_url = $self->{root_url};
     my $debug = $self->{debug};
     my $ua = $self->{ua};
 
-    my $url = "$root_url/$city.tbz";
+    my $url = $self->get_city_url($city);
     my $data_osm_directory = $self->{download_dir} || get_data_osm_directory(-create => 1);
     my $tmpdir = tempdir(DIR => $data_osm_directory, CLEANUP => 1)
 	or die "Can't create temporary directory in $data_osm_directory: $!";
@@ -104,7 +109,9 @@ sub get_city {
     print STDERR "Extracting data to $data_osm_directory...\n" if $debug;
     if (eval { require Archive::Tar; Archive::Tar->has_bzip2_support }) {
 	my $success = Archive::Tar->extract_archive($tmpfile);
-	if (!$success) {
+	# Can't check just for $success, see
+	# https://rt.cpan.org/Ticket/Display.html?id=118850
+	if (!$success || Archive::Tar->error) {
 	    die "Error while extracting $tmpfile with Archive::Tar: " . Archive::Tar->error;
 	}
     } else {

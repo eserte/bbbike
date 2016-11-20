@@ -23,9 +23,12 @@ use FindBin;
 use lib (
 	 "$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
+	 "$FindBin::RealBin/../miscsrc", # for BBBikeOrgDownload.pm
 	);
 
 use File::Temp qw(tempdir);
+
+use BBBikeUtil qw(is_in_path);
 use Strassen::Core ();
 
 BEGIN {
@@ -80,6 +83,30 @@ my @listing;
 
     my $s = Strassen->new("$dir/$city/strassen");
     isa_ok $s, 'Strassen';
+}
+
+SKIP: {
+    # Simulate broken downloads
+    skip "wget needed for simulation", 1 if !is_in_path('wget');
+    skip "IPC::Run needed for simulation", 1 if !eval { require IPC::Run; 1 };
+
+    require BBBikeOrgDownload;
+
+    my($dir) = tempdir("bbbike.org_download_XXXXXXXX", CLEANUP => 1, TMPDIR => 1)
+	or die "Cannot create temporary directory: $!";
+    my $city = 'UlanBator';
+    my $url = BBBikeOrgDownload->new->get_city_url($city);
+    my $success = IPC::Run::run(['wget', "-O$dir/$city.tbz", $url], '2>', \my $stderr);
+    if (!$success) {
+	fail "Downloading $url failed: $stderr";
+    } else {
+	mkdir "$dir/extract";
+	my $size = -s "$dir/$city.tbz";
+	truncate "$dir/$city.tbz", $size-100;
+	my $success = IPC::Run::run([$^X, $download_script, @debug_opts, '-url', 'file://'.$dir, '-city', $city, '-o', "$dir/extract"], '2>', \my $stderr);
+	ok !$success, "Simulate downloading truncated tarball for city '$city'";
+	like $stderr, qr{Error while extracting.*\Q$city\E.*with Archive::Tar};
+    }
 }
 
 __END__
