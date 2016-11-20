@@ -144,7 +144,9 @@ install_perl_dependencies() {
 	    mymeta-cpanfile > cpanfile~ && mv cpanfile~ cpanfile
 	    # problem with optional core modules: https://github.com/skaji/cpm/issues/42
 	    cpm install -g -v DB_File
-	    cpm install -g -v
+	    # implement suggestion for more diagnostics in case of failures
+	    # https://github.com/skaji/cpm/issues/51#issuecomment-261754382
+	    if ! cpm install -g -v; then cat `ls -t $HOME/.perl-cpm/build.* | head -1`; fi
 	else
 	    cpanm --quiet --installdeps --notest .
 	fi
