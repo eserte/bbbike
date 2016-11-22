@@ -33,7 +33,7 @@ use Strassen::Strasse;
 use VectorUtil qw(get_polygon_center);
 
 use vars qw($VERSION);
-$VERSION = '1.04';
+$VERSION = '1.05';
 
 # Monkeypatch for performance reasons
 # See http://rt.cpan.org/Ticket/Display.html?id=39619
@@ -67,6 +67,7 @@ my $debug;
 my $do_highway_primary_hack = 0;
 my $do_print_version;
 my %experiments;
+my $out_file;
 GetOptions("single=s" => \$single_file,
 	   "type=s" => \$single_file_type,
 	   "fragezeichen=s" => \$fragezeichen_file,
@@ -86,6 +87,7 @@ EOF
 	       }
 	       $experiments{$exp}++;
 	   },
+	   'o|outfile=s' => \$out_file,
 	   "version" => \$do_print_version,
 	  )
     or usage;
@@ -1354,6 +1356,10 @@ seek $wayfh, 0, SEEK_SET
 seek $relationfh, 0, SEEK_SET
     or die $!;
 
+if (defined $out_file) {
+    open STDOUT, '>', $out_file
+	or die "Can't write to $out_file: $!";
+}
 binmode STDOUT, ':utf8';
 print qq{<osm version="0.6" generator="bbd2osm">\n};
 print qq{<bound box="$min_lat,$min_lon,$max_lat,$max_lon" origin="http://www.bbbike.de" />\n};
