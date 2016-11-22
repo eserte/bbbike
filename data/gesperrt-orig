@@ -9,11 +9,11 @@
 # die Richtung gibt bei Einbahnstraßen die Sperrung an
 # 
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9865,10227 9825,10206 9687,10180 9599,10175 9416,10196
-Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9145,10290 8804,10303 8724,10327 8661,10377 8634,10426 8525,10626 8430,10710
+Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9145,10290 8804,10303 8724,10327 8661,10377 8634,10426 8527,10621 8430,10710
 Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8336,10829 8205,10979 8104,11037 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034
 Kanalstraßen Nordufer	1 6880,11110 7115,11220 7160,11225 7253,11208 7322,11177 7419,11137 7492,11111 7595,11086 7690,11108 7828,11133 8000,11137 8102,11099 8241,11024
 # Hier zwischen kann ein kurzes Stück auf dem Gehweg überbrückt werden
-Kanalstraßen Nordufer	1 8241,11024 8261,11015 8342,10916 8380,10865 8443,10777 8578,10672 8701,10428 8771,10381 8824,10366 8953,10366 9028,10371 9154,10348 9239,10313 9404,10250 9492,10226 9593,10238 9873,10285
+Kanalstraßen Nordufer	1 8241,11024 8261,11015 8342,10916 8380,10865 8443,10777 8581,10663 8701,10428 8771,10381 8824,10366 8953,10366 9028,10371 9154,10348 9239,10313 9404,10250 9492,10226 9593,10238 9873,10285
 Gitschiner Str.	1 9873,10285 9948,10280
 Gitschiner Str.	1 9948,10280 9865,10227
 Skalitzer Str.	1 12978,10581 12899,10595
@@ -154,7 +154,7 @@ An der Schillingbrücke	1 12025,11346 12061,11406
 Schulze-Delitzsch-Platz	1 11155,11750 11060,11753 11024,11789
 Schulze-Delitzsch-Platz	1 11024,11789 11073,11774 11155,11750
 Dorotheenstr.	1 9870,12657 9744,12601 9682,12593 9580,12581 9454,12558
-Dorotheenstr. (Straßenbahn)	1s:q2 9454,12558 9330,12529
+Dorotheenstr. (Straßenbahn)	1s:q2 9454,12558 9330,12538
 Georgenstr.	1 9434,12669 9568,12688 9659,12704 9754,12775
 Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: by: Rolf Schröder <001301c0fe12$f9c9eb00$fe78a8c0@pc166>
@@ -1327,7 +1327,7 @@ Am Krusenick	1s:q3 22751,4970 22652,4966 22667,4912 22705,4874
 #: note: Umweg über Scharnweberstr. ist vertretbar
 Josef-Nawrocki-Str.	1s:q4 25724,4706 25802,4681 25802,4823
 Josef-Nawrocki-Str.	1s:q4 25724,4706 25695,4714 25554,4758 25552,4829
-Askanischer Platz	1s:q2 8882,10905 8938,10872 8983,10846 9022,10857
+Askanischer Platz	1s:q2 8889,10906 8938,10872 8983,10846 9022,10857
 #: by: Ilona Lange (man fährt auf dem Gehweg, sowieso)
 Helbigstr.	1s:q3 20109,4087 20339,3779 20362,3750
 # 
@@ -2709,11 +2709,12 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: STRESEMANNPARKWEG-2016
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.530316.php
 #: XXX "3-4 Wochen"
 #: XXX danach eine "bituminöse Befestigung"
 #: XXX evtl. wird die Beleuchtung auch erneuert?
-#: last_checked: 2016-11-15
+#: last_checked: 2016-11-21
 #: next_check: 2016-12-05
 #: priority: #A
 Parkweg zwischen Stresemannstr. und Wilhemstr.: wird instandgesetzt, in dieser Zeit nicht befahrbar	2::inwork 9250,10563 9375,10616
@@ -2734,7 +2735,7 @@ Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q4 8654,14194 8607,14253 8527
 #: next_check_id ^^^
 # 
 #: by: http://www.s-bahn-berlin.de/bauinformationen/details/rummelsburg/4530 vvv
-#: last_checked: 2016-11-04 vvv
+#: last_checked: 2016-11-21 vvv
 #: next_check: 2017-01-14 vvv
 (Unterführung S-Bhf. Rummelsburg): Bauarbeiten, komplett gesperrt	2::inwork 15433,10765 15409,10709 15372,10655
 Nöldnerstr.: Bauarbeiten, Einbahnstraße	1s:q4 15272,10790 15388,10758 15433,10765
@@ -2747,11 +2748,11 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3 9042,11839 8969,118
 # 
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
-#: last_checked: 2016-10-03
+#: last_checked: 2016-11-22
 #: next_check: 2017-09-02
 Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,14449 7561,14458 7426,14539 7368,14573
 # 
-#: last_checked: 2016-11-04
+#: last_checked: 2016-11-21
 Weichselplatz: Uferweg wegen Bauarbeiten gesperrt	2::inwork 12851,9309 12907,9073
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2016
@@ -2775,7 +2776,6 @@ Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2 14447,10491 14270,10584
 #: last_checked: 2016-11-17 vvv
 #: next_check: 2016-12-15 vvv
 Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11512,10105 11616,10288
-Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11671,10402 11616,10288
 #: next_check ^^^
 #: last_checked ^^^
 #: priority ^^^
@@ -2815,7 +2815,7 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,
 #: XXX Straße wird zurückgebaut
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.256386.php
 #: osm_watch: way id="309901369" version="4"
-#: last_checked: 2016-10-03
+#: last_checked: 2016-11-22
 #: check_frequency: 60d
 Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7741,14560 7518,14689
 # 
@@ -2874,7 +2874,7 @@ Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 # 
 #: next_check_id: ZIEGELSTR-2016
 #: XXX Ende der Bauarbeiten?
-#: last_checked: 2016-10-28
+#: last_checked: 2016-11-22
 #: check_frequency: 21d
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076 9559,13087
 # 
@@ -3020,7 +3020,7 @@ am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14463,10212
 #: by: http://www.rbb-online.de/politik/beitrag/2014/07/bnd-zentrale-berlin-verzoegerung-vollstaendiger-umzug-bis-2017.html
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7441
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/1767-2016-bav-zu-ds-2814-iv-durchwegung_scharnhorst-chaussestrasse_sb.pdf
-#: last_checked: 2016-11-04
+#: last_checked: 2016-11-22
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Durchfahrt verboten	2 8251,14337 8442,14456
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
@@ -3057,7 +3057,7 @@ Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,689
 # 
 #: next_check_id: CHARITE-2014
 #: XXX eine Umleitung existiert, ist aber von der Westseite schwierig zu finden und könnte nachts gesperrt sein
-#: last_checked: 2016-10-28
+#: last_checked: 2016-11-22
 #: check_frequency: 30d
 An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8665,13353 8806,13384
 # 
@@ -3072,7 +3072,7 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 #: XXX geplante Fertigstellung (als Autostraße) im Dezember 2013
 #: XXX wrote Mail about current status (2013-11-05), no response
 # REMOVED --- osm_watch: way id="183406331" version="3"
-#: last_checked: 2016-10-03
+#: last_checked: 2016-11-20
 #: check_frequency: 120d
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
@@ -3144,7 +3144,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2016-11-11
+#: last_checked: 2016-11-22
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

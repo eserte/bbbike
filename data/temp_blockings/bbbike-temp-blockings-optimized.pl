@@ -3580,7 +3580,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
 #: XXX hier wird asphaltiert
 #: XXX ursprüngliches Enddatum wurde nicht eingehalten
 #: osm_watch: way id="33912929" version="12"
-#: last_checked: 2016-11-11
+#: last_checked: 2016-11-22
 #: check_frequency: 14d
 #: priority: #A
 userdel	2::inwork 8101,13901 8248,13659 8332,13548
@@ -3901,12 +3901,14 @@ userdel	q4::inwork; 25010,4807 25171,4757 25228,4745 25248,4752 25369,4790 25434
 #: note: geschlossen am 2016-07-21 gegen 19:30 Uhr
 #: note: offen am 2016-09-21 gegen 18:15 Uhr
 #: note: offen am 2016-11-11 gegen 18:40 Uhr
+#: note: offen am 2016-11-22 gegen 18:30 Uhr
 userdel	2::temp 8362,13466 8369,13465 8377,13463
 #: note: verschlossen am 2016-06-16 gegen 9:30 Uhr
 #: note: verschlossen am 2016-07-01 gegen 18:15 Uhr
 #: note: verschlossen am 2016-07-11 gegen 18:00 Uhr
 #: note: verschlossen am 2016-07-21 gegen 19:30 Uhr
 #: note: verschlossen am 2016-09-21 gegen 18:15 Uhr
+#: note: verschlossen am 2016-11-22 gegen 18:30 Uhr
 userdel	2::temp 8371,13399 8363,13402 8356,13404
 ',
          'from' => undef,
@@ -4017,7 +4019,7 @@ userdel	q4::inwork 6587,16199 6484,16085
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2016-11-04 vvv
+#: last_checked: 2016-11-22 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -4092,7 +4094,8 @@ userdel	q3::inwork 4564,3457 4800,3391 4862,3363 5022,3318
          'until' => 1481893200
        },
        {
-         'data' => '#: last_checked: 2016-11-15
+         'data' => '#: next_check_id: RUEDERSDORFER-2016
+#: last_checked: 2016-11-22
 #: check_frequency: 14d
 userdel	q3::inwork 13295,11792 13173,11788 13066,11854
 ',

@@ -150,8 +150,9 @@ Winterfeldtplatz: Kopfsteinpflaster, OK	Q1 7038,10088 7049,9833
 Corneliusstr.: mäßiges Kopfsteinpflaster	Q2 6880,11110 6841,11114 6630,11247 6476,11325
 Kopernikusstr.: mäßiges Kopfsteinpflaster	Q2 13467,11778 13651,11731
 Torellstr.: mäßiges Kopfsteinpflaster	Q2 13295,11792 13467,11778
+#: next_check_id: RUEDERSDORFER-2016
 #: XXX Bauarbeiten, danach vielleicht teilweise bessere Qualität?
-#: last_checked: 2016-11-18
+#: last_checked: 2016-11-22
 #: check_frequency: 60d
 Rüdersdorfer Str.: Asphalt mit Schäden	Q1- 13295,11792 13173,11788 13066,11854
 Kaskelstr.: relative glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
@@ -239,7 +240,7 @@ Lohmühlenbrücke: Asphalt	Q0 12871,9356 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2016-11-07
+#: last_checked: 2016-11-21
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15021,11152 15102,11120
@@ -892,8 +893,8 @@ Hochspannungsweg: Asphalt	Q0 11747,2091 11626,2037 11373,1925 11343,1937
 Alt-Lichtenrade: mäßiges Kleinsteinpflaster	Q2+ 11149,-1274 11147,-1346 11068,-1574 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11085,-1969 11115,-1969 11119,-1992
 Pasinger Str.: glatt gepflastert	Q2+ 12052,-2250 12073,-2296 11996,-2476 11909,-2531 11760,-2575 11696,-2589
 Pasinger Str.: schlechtes Kopfsteinpflaster	Q3 11696,-2589 11523,-2617 11360,-2648
-Platz vor dem Tempodrom: Asphalt	Q0 8939,10657 8854,10712
-Weg am Tempodrom: Parkweg	Q1 8854,10712 8798,10678 8738,10704 8700,10766
+Platz vor dem Tempodrom: Asphalt	Q0 8941,10663 8853,10708
+Weg am Tempodrom: Parkweg	Q1 8853,10708 8798,10678 8738,10704 8698,10756
 Zum Hundsteinweg: fester Sandweg	Q1 10661,2790 10721,2800 10775,2765
 Tauernallee - Wildspitzweg: fester Sandweg	Q1 10716,2597 10775,2765 10799,2839 10821,3030 10840,3048 10846,3147
 Sangerhauser Weg: Verbundsteine	Q1 10748,2412 10933,2606 10939,2642 11005,2726 11199,2932
@@ -1913,8 +1914,8 @@ Steinstr.: Kopfsteinpflaster	Q2 -7909,-2375 -7996,-2293
 (Anhalter Steg): Asphalt	Q0 8711,10322 8726,10351
 (Anhalter Steg): Holzbohlen	Q1 8726,10351 8760,10408 8773,10429
 (Anhalter Steg - Anhalter Bahnhof): Parkweg, wassergebundene Decke	Q1 8773,10429 8776,10548 8808,10598
-(Anhalter Steg - Anhalter Bahnhof): Asphalt	Q0 8808,10598 8854,10712
-(Anhalter Steg - Anhalter Bahnhof): Parkweg, wassergebundene Decke	Q1 8854,10712 8912,10846 8938,10872
+(Anhalter Steg - Anhalter Bahnhof): Asphalt	Q0 8808,10598 8853,10708
+(Anhalter Steg - Anhalter Bahnhof): Parkweg, wassergebundene Decke	Q1 8853,10708 8912,10846 8938,10872
 Erich-Lodemann-Str.: Betonstraße	Q1 15763,7569 15425,7953
 Erich-Lodemann-Str.: Betonstraße	Q1 15444,7969 15288,8134
 Kleine Parkstr.: schlechtes Kopfsteinpflaster	Q3 9154,9347 9124,9262
@@ -7030,7 +7031,7 @@ Bebelplatz: gepflastert	Q1 9674,12231 9702,12307 9734,12395
 (Park am Gleisdreieck, Eingang Kurfürstenstr.): Beton	Q0 8058,10306 8180,10282 8253,10265
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): wassergebundene Decke	Q1 8263,10187 8276,10079
 #: next_check_id: HELLWEG-2014 vvv
-#: last_checked: 2016-07-25 vvv
+#: last_checked: 2016-11-21 vvv
 #: check_frequency: 100d vvv
 #: XXX wird hier noch eine wassergebundene Decke erstellt?
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): unbefestigt	Q2 8276,10079 8289,9988
@@ -7488,8 +7489,9 @@ Neue Blumenstr.: Asphalt	Q0 11709,12601 12006,12464
 (Wriezener Park): Asphalt	Q0 13239,11567 13175,11649
 (Helsingforser Str. - Wriezener Park): Beton	Q1 13324,11529 13308,11515
 (Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege	Q2 12986,11699 13002,11705 13042,11749
-(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege, teilweise sehr holprig	Q3+ 13042,11749 13175,11649
+(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege, teilweise sehr holprig	Q3+ 13042,11749 13092,11712 13175,11649
 (Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege	Q2 13175,11649 13208,11658
+(Rüdersdorfer Str. - Am Wriezener Bahnhof): unbefestigte Wege, teilweise sehr holprig	Q3+ 13173,11788 13092,11712
 Oranienplatz: Kleinsteinpflaster	Q1 11275,10723 11253,10778 11227,10821
 # REMOVED (existiert nicht mehr) --- (Schloßplatz, zwischen Breite Str. und Lustgarten): Holzbohlen	Q1 10285,12306 10155,12494
 Glasower Str.: Asphalt	Q0 12510,6508 12759,6563 12876,6589 13141,6651
@@ -8139,7 +8141,7 @@ Jülicher Str.: Asphalt	Q0 9514,16603 9498,16480 9487,16395 9475,16307 9474,16297
 (Mauerweg Frohnau-Heiligensee): Asphalt	Q0 -802,24541 -972,24498 -1655,24428 -1940,24464 -1953,24435
 (neben dem U-Bahn-Viadukt): Asphalt	Q0 7906,10098 7928,10094 8011,10085
 (Dennewitzstr., hinterer Weg): Kleinsteinpflaster	Q1 8011,10085 8023,10106 8074,10292 8058,10306
-(Park am Gleisdreieck, Eingang Schöneberger Str.): Verbundsteinpflaster	Q1 8296,10438 8322,10451 8338,10484 8377,10503 8384,10507
+(Park am Gleisdreieck, Eingang Schöneberger Str.): Verbundsteinpflaster	Q1 8296,10438 8322,10451 8328,10485 8361,10491 8377,10502 8384,10507
 (Treptower Park): Asphalt	Q0 15187,9038 15181,8967 15159,8934
 (Treptower Park): wassergebundene Decke	Q1- 15187,9038 15154,9106 15025,9171 14955,9294
 (Treptower Park): Asphalt	Q0 14955,9294 14898,9364 14879,9433
@@ -12554,7 +12556,7 @@ Iltisstr.: Kopfsteinpflaster	Q2 2858,5535 2797,5624
 (Weg in d. Kolonie Norderney): Asphalt	Q0 3596,6828 3607,6952 3582,6964
 Wormser Str.: Kopfsteinpflaster	Q2 6302,10462 6377,10434
 #: confirmed_by: srt
-Schadowstr.: Asphalt	Q0 9028,12307 9016,12416 9007,12499
+Schadowstr.: Asphalt	Q0 9028,12307 9011,12423 8999,12498
 Peter-Lenné-Str.: Kopfsteinpflaster	Q2 3574,5717 3407,5938 3209,6206 3123,6318
 Grillparzerstr.: Kopfsteinpflaster	Q2 3891,6295 4040,6289 4124,6288 4173,6284 4221,6283 4298,6239
 #: confirmed_by: srt (but Q1 -> Q1-)
@@ -25284,7 +25286,7 @@ Ziegelhof: Kopfsteinpflaster	Q2 -3692,13480 -3651,13476 -3529,13452
 Jakobikirchstr.: Kopfsteinpflaster	Q2 10511,10800 10564,10925
 (Neuenburger Str. - Lindenstr.): Gehwegplatten	Q0 9853,10543 9848,10526 9795,10512
 Enckestr.: Asphalt/Beton	Q0 9653,10950 9666,10848
-Fanny-Hensel-Weg: Kopfsteinpflaster/Gehwegplatten	Q2 8781,10827 8742,10868 8659,10910
+Fanny-Hensel-Weg: Kopfsteinpflaster/Gehwegplatten	Q2 8784,10824 8742,10868 8659,10910
 Hitzigallee: Asphalt	Q0 7690,11108 7745,11332
 Kielganstr.: Asphalt	Q0 7117,10611 7064,10467
 Maienstr.: Kleinpflaster	Q2 7003,10513 6877,10492
