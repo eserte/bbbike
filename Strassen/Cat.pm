@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2013,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2013,2014,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,13 +18,13 @@ package Strassen::Cat;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.20';
+$VERSION = '2.00';
 
 use File::Basename qw(basename);
 
-use vars qw(%filetype_to_cat %file_to_cat);
+use vars qw(%file_to_cat $DEBUG);
 
-my %older_file_to_cat;
+my %versioned_file_to_cat;
 {
     my $_array_to_qr = sub {
 	my $array_ref = shift;
@@ -35,14 +35,26 @@ my %older_file_to_cat;
     my $strassen_cat_3_16_qr = $_array_to_qr->([qw(HH H N NN Pl)]);
     my $strassen_cat_3_18_qr = $_array_to_qr->([qw(HH H NH N NN Pl)]);
 
-    %filetype_to_cat =
+    my @flaechen_3_16     = qw(F:Ae F:Cemetery F:Forest F:Green
+			       F:Industrial F:Orchard F:Mine
+			       F:P F:Pabove F:Sport);
+    my @flaechen_3_17_add = qw(F:ex-Ae);
+    my @flaechen_3_18_add = (sub {
+				 # not handled, but older bbbike <= 3.17 shows a green area which is acceptable
+				 /^F:Cemetery\|religion:(?:muslim|jewish)$/,
+			     }
+			    );
+
+    my @gesperrt_3_16 = (
+			 sub { /^(1|2|3|3nocross)(?:::?(?:inwork|temp|igndisp|ignrte))?$/ }, # XXX both ":" and "::" needs to be allowed here :-(
+			 sub { /^0:\d+(:-?\d+)?$/ },
+			 sub { /^BNP:\d+(:-?\d+(:trailer=(no|\d+))?)?$/ },
+			 sub { /^1s(:q\d)?(:(?:inwork|temp))?$/ },
+			);
+
+    my %filetype_to_cat =
     (
      "borders"	      => [qw(Z)],
-     "gesperrt"	      => [sub { /^(1|2|3|3nocross)(?:::?(?:inwork|temp|igndisp|ignrte))?$/ }, # XXX both ":" and "::" needs to be allowed here :-(
-			  sub { /^0:\d+(:-?\d+)?$/ },
-			  sub { /^BNP:\d+(:-?\d+(:trailer=(no|\d+))?)?$/ },
-			  sub { /^1s(:q\d)?(:(?:inwork|temp))?$/ },
-			 ],
      "fragezeichen"   => [sub { /^(?:\?|\?\?|F:\?|F:\?\?)(?:::(?:inwork|projected))?$/ }],
      "handicap"	      => [sub { /^q[01234](?:::(?:igndisp|inwork))?$/ }],
      "landstrassen"   => [qw(B HH H NH N NN Pl)],
@@ -59,33 +71,37 @@ my %older_file_to_cat;
 				 /^((F:)?(?:SW|Shop)(\|$img)?|($img)?)$/
 			     },
 			    ],
-     "strassen"	      => [sub { /^$strassen_cat_3_18_qr(?:::(?:igndisp))?$/ }],
      "ubahn"	      => [sub { /^U(?:0|A|B|C|Bau)(?:::_?Tu_?)?$/ }],
      "wasserstrassen" => [sub { /^(?:F:(I|W|W0|W1|W2)|(?:(?:W|W0|W1|W2)(?:::_?Tu_?)?))$/ }],
      "*bahnhof_bg"    => [qw(bg bf)],
+     "gesperrt_oepnv" => [qw(2:inwork)],
     );
 
-    %older_file_to_cat =
+    # The pseudo version "data-update" may be used here, for
+    # specification of checkers which should be accepted in the "make
+    # check-categories" call. Typically the categories passed here
+    # should be fine for updates in the current stable bbbike.
+    %versioned_file_to_cat =
     (
      "flaechen" => {
-		    '3.16'        => [qw(F:Ae F:Cemetery F:Forest F:Green
-				         F:Industrial F:Orchard F:Mine
-				         F:P F:Pabove F:Sport)],
-		    'data-update' => [qw(F:Ae F:Cemetery F:Forest F:Green
-				         F:Industrial F:Orchard F:Mine
-				         F:P F:Pabove F:Sport),
-				      sub {
-					  # not handled, but older bbbike <= 3.17 shows a green area which is acceptable
-					  /^F:Cemetery\|religion:(?:muslim|jewish)$/,
-				      },
-				     ],
+		    '3.16'        => [@flaechen_3_16],
+		    '3.17'        => [@flaechen_3_16, @flaechen_3_17_add],
+		    '3.18'        => [@flaechen_3_16, @flaechen_3_17_add, @flaechen_3_18_add],
 		   },
      "strassen" => {
 		    '3.16'        => [sub { /^$strassen_cat_3_16_qr$/ }],
 		    '3.17'        => [sub { /^$strassen_cat_3_16_qr(?:::(?:igndisp))?$/ }],
 		    '3.18'        => [sub { /^$strassen_cat_3_18_qr(?:::(?:igndisp))?$/ }],
+		    #'data-update'=> ...
+		   },
+     "gesperrt" => {
+		    '3.16'        => [@gesperrt_3_16],
 		   },
     );
+    $versioned_file_to_cat{'strassen-cooked'} = $versioned_file_to_cat{'strassen'};
+    for my $v (keys %{ $versioned_file_to_cat{'gesperrt'} }) {
+	$versioned_file_to_cat{'gesperrt_car'}->{$v} = [@{ $versioned_file_to_cat{'gesperrt'}->{$v} }, '1:Anlieger', '2:Anlieger'], # XXX Anlieger -> TBD
+    }
 
     %file_to_cat =
     ("ampeln"			=> [sub { /^(?:\?|B|B0|F|F0|X|X0|Zbr)(?:::inwork)?$/ }],
@@ -107,16 +123,11 @@ my %older_file_to_cat;
      "deutschland"		=> $filetype_to_cat{"borders"},
      "exits"			=> [qw(X)],
      "faehren"			=> [qw(Q QQ)], # XXX QQ may be removed again some day
-     "flaechen"			=> [qw(F:Ae F:ex-Ae F:Cemetery F:Forest F:Green
-				       F:Industrial F:Orchard F:Mine
-				       F:P F:Pabove F:Sport)],
      "fragezeichen"		=> $filetype_to_cat{"fragezeichen"},
      "fragezeichen-cooked"	=> $filetype_to_cat{"fragezeichen"},
-     "gesperrt"			=> $filetype_to_cat{"gesperrt"},
-     "gesperrt_car"		=> [@{$filetype_to_cat{"gesperrt"}}, "1:Anlieger", "2:Anlieger"], # XXX Anlieger -> TBD
-     "gesperrt_r"		=> $filetype_to_cat{"gesperrt"},
-     "gesperrt_s"		=> $filetype_to_cat{"gesperrt"},
-     "gesperrt_u"		=> $filetype_to_cat{"gesperrt"},
+     "gesperrt_r"		=> $filetype_to_cat{"gesperrt_oepnv"},
+     "gesperrt_s"		=> $filetype_to_cat{"gesperrt_oepnv"},
+     "gesperrt_u"		=> $filetype_to_cat{"gesperrt_oepnv"},
      "green"			=> [qw(green1 green2)],
      "grenzuebergaenge"         => [qw(GU)],
      "handicap_l"		=> $filetype_to_cat{"handicap"},
@@ -151,8 +162,6 @@ my %older_file_to_cat;
      "sbahnhof"			=> $filetype_to_cat{"sbahn"},
      "sbahnhof_bg"		=> $filetype_to_cat{"*bahnhof_bg"},
      "sehenswuerdigkeit"	=> $filetype_to_cat{"sehenswuerdigkeit"},
-     "strassen"			=> $filetype_to_cat{"strassen"},
-     "strassen-cooked"		=> $filetype_to_cat{"strassen"},
      "strassen_bab"		=> [sub { /^BAB(?:::(?:_?Tu_?|Br))?$/ }],
      "ubahn"			=> $filetype_to_cat{"ubahn"},
      "ubahnhof"			=> $filetype_to_cat{"ubahn"},
@@ -175,19 +184,35 @@ sub _normalize_filename {
 sub get_validity_checker {
     my($filename, %args) = @_;
     my $bbbike_version = delete $args{BBBikeVersion};
+    if (!$bbbike_version) {
+	require BBBikeVar;
+	($bbbike_version) = $BBBike::VERSION =~ m{^(\d+\.\d+)};
+	if (!$bbbike_version) {
+	    die "FATAL ERROR: cannot parse \$BBBike::VERSION '$BBBike::VERSION'";
+	}
+    }
+    warn "check data for version $bbbike_version\n" if $DEBUG;
     die "Unhandled arguments: " . join(" ", %args) if %args;
 
     $filename = _normalize_filename($filename);
     my $allowed_cats;
-    if (defined $bbbike_version && exists $older_file_to_cat{$filename}) {
-	if ($bbbike_version eq 'data-update' && exists $older_file_to_cat{$filename}->{$bbbike_version}) {
-	    $allowed_cats = $older_file_to_cat{$filename}->{$bbbike_version};
-	} else {
-	    for my $v (sort { $b <=> $a } keys %{ $older_file_to_cat{$filename} }) {
-		if ($bbbike_version > $v) {
-		    last;
-		} else {
-		    $allowed_cats = $older_file_to_cat{$filename}->{$v};
+    if (exists $versioned_file_to_cat{$filename}) {
+    FIND_ALLOWED_CATS: {
+	    if ($bbbike_version eq 'data-update') {
+		if (exists $versioned_file_to_cat{$filename}->{$bbbike_version}) {
+		    $allowed_cats = $versioned_file_to_cat{$filename}->{$bbbike_version};
+		    last FIND_ALLOWED_CATS;
+		}
+		require BBBikeVar;
+		no warnings 'once';
+		$bbbike_version = $BBBike::STABLE_VERSION;
+	    }
+
+	    for my $v (sort { $b <=> $a } keys %{ $versioned_file_to_cat{$filename} }) {
+		warn "check for version $v\n" if $DEBUG;
+		if ($bbbike_version >= $v) {
+		    warn "use older_file_to_cat settings for $v\n" if $DEBUG;
+		    $allowed_cats = $versioned_file_to_cat{$filename}->{$v};
 		    last;
 		}
 	    }
@@ -210,8 +235,7 @@ sub get_validity_checker {
 		 code => \@code,
 	       };
     } else {
-	warn "Cannot get validity checker for $filename";
-	undef;
+	die "Cannot get validity checker for $filename";
     }
 }
 
