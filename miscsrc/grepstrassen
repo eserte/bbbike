@@ -356,7 +356,7 @@ sub special_directive_handler {
 	if (!@add_names) {
 	    @add_names = $type eq 'fragezeichen' ? "unsicher" : $type;
 	}
-	$name .= join("; ", @add_names);
+	$name .= join("; ", map { s/\t/ /g; $_ } @add_names); # join & sanitize
 	$name .= ")";
 	$new_r->[Strassen::NAME] = $name;
 	$new_r->[Strassen::CAT] = "?";
