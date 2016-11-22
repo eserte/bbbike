@@ -9,6 +9,7 @@ use strict;
 use FindBin;
 
 use Cwd qw(realpath);
+use IO::File;
 
 BEGIN {
     if (!eval q{
@@ -280,6 +281,29 @@ EOF
     is run_grepstrassen($sample_inverted_valid_bbd, ["-valid", "20170601"]), $expected_within_period;
     is run_grepstrassen($sample_inverted_valid_bbd, ["-valid", "20170602"]), $expected_without_period;
 }
+
+######################################################################
+# the obscure -adddirectives switch
+{
+    my $directive_bbd = <<'EOF';
+#:
+#: XXX a directive with a	tab
+Foo street	X 1,2 3,4
+EOF
+    my $expected_bbd = <<'EOF';
+Foo street (a directive with a tab)	? 1,2 3,4
+EOF
+    run_grepstrassen($directive_bbd, ['-adddirectives', 'XXX']);
+    # side effect (the basename "-" is used because we feed the bbd
+    # data through stdin)
+    my $generated_file = "/tmp/XXX_-.bbd";
+    ok -f $generated_file;
+    my $generated_contents = join '', IO::File->new($generated_file)->getlines;
+    is $generated_contents, $expected_bbd, 'XXX added, tab removed, category changed';
+    unlink $generated_file;
+}
+
+######################################################################
 
 sub run_grepstrassen ($$) {
     my($in_data, $args) = @_;
