@@ -503,6 +503,7 @@ $use_faehre = 0;
 $sperre{'einbahn'} = 1;
 $sperre{'einbahn-strict'} = 0;
 $sperre{'sperre'} = 1;
+$sperre{'sperre-strict'} = 0;
 $sperre{'wegfuehrung'} = 1;
 $sperre{'Q3'} = 0;
 $sperre_file = "gesperrt";
@@ -3276,6 +3277,7 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 			   $sperre{'einbahn'} = $sperre{'wegfuehrung'} = $sperre{'sperre'};
 			   if (!$sperre{'sperre'}) {
 			       $sperre{'einbahn-strict'} = 0;
+			       $sperre{'sperre-strict'} = 0;
 			   }
 			   pending(1, 'recalc-net');
 		       },
@@ -3286,6 +3288,7 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 			   if ($sperre{'einbahn-strict'}) {
 			       $sperre{'einbahn'} = $sperre{'wegfuehrung'} = $sperre{'sperre'} = 1;
 			   }
+			   $sperre{'sperre-strict'} = $sperre{'einbahn-strict'};
 			   pending(1, 'recalc-net');
 		       },
 		      );
@@ -5862,6 +5865,7 @@ sub define_item_attribs {
 	 'sperre1' => 'blue',	# Einbahnstraﬂen
 	 'sperre1s' => '#b0b0ff',  # Einbahnstraﬂen (nur mit "einbahn-strict")
 	 'sperre2' => 'red',	# voll gesperrt
+	 'sperre2s' => '#ffb0b0',  # voll gesperrt (nur mit "sperre-strict")
 	 'sperre3' => 'red',	# Wegf¸hrung gesperrt
 
 	 'IN' => 'violet',	# Industrieanlagen
@@ -6027,6 +6031,9 @@ sub define_item_attribs {
     foreach (qw/sperre1s/) {
 	$line_width{$_} = [@{ $line_width{"sperre1"}}];
     }
+    foreach (qw/sperre2s/) {
+	$line_width{$_} = [@{ $line_width{"sperre2"}}];
+    }
     foreach (qw/gBO gP gD/) {
 	$line_width{$_} = [@{ $line_width{"g"}}];
     }
@@ -6079,6 +6086,9 @@ sub define_item_attribs {
 	);
     foreach (qw/sperre1s/) {
 	$line_length{$_} = [@{ $line_length{"sperre1"}}];
+    }
+    foreach (qw/sperre2s/) {
+	$line_length{$_} = [@{ $line_length{"sperre2"}}];
     }
 
     %category_line_arrow =
@@ -10711,6 +10721,7 @@ sub plot_sperre {
 	    (StrassenNetz::BLOCKED_ONEWAY()        => "sperre1",
 	     StrassenNetz::BLOCKED_ONEWAY_STRICT() => "sperre1s",
 	     StrassenNetz::BLOCKED_COMPLETE()      => "sperre2",
+	     StrassenNetz::BLOCKED_COMPLETE_STRICT() => "sperre2s",
 	     StrassenNetz::BLOCKED_CARRY()         => "sperre0",
 	    );
 
@@ -10719,8 +10730,11 @@ sub plot_sperre {
 	     ($width1 && $length1 ? $category_color{'sperre1'} : undef),
 	     StrassenNetz::BLOCKED_ONEWAY_STRICT() =>
 	     ($width1 && $length1 ? $category_color{'sperre1s'} : undef),
+	     StrassenNetz::BLOCKED_COMPLETE()      =>
+	     ($width2 && $length2 ? $category_color{'sperre2'} : undef),
+	     StrassenNetz::BLOCKED_COMPLETE_STRICT() =>
+	     ($width2 && $length2 ? $category_color{'sperre2s'} : undef),
 	    );
-	my $fill2 = ($width2 && $length2 ? $category_color{'sperre2'} : undef);
 
 	# korrigieren, damit beim Vergrˆﬂern etwas erscheint
 	$length1 = ($length1 ? $length1 : 1);
@@ -10924,18 +10938,19 @@ sub plot_sperre {
 				       -arrowshape => [4,6,3],
 				       -tags => $tags,
 				      );
-		    } elsif ($cat eq StrassenNetz::BLOCKED_COMPLETE) {
+		    } elsif ($cat eq StrassenNetz::BLOCKED_COMPLETE ||
+			     $cat eq StrassenNetz::BLOCKED_COMPLETE_STRICT) {
 			# $c->createImage($xm,$ym,
 			# 	    -image => $blocked_photo,
 			# 	    -tags => $tags);
 			$c->createLine($xm-$length2, $ym-$length2,
 				       $xm+$length2, $ym+$length2,
-				       -fill => $fill2,
+				       -fill => $type2fill{$cat},
 				       -width => $width2,
 				       -tags => $tags);
 			$c->createLine($xm-$length2, $ym+$length2,
 				       $xm+$length2, $ym-$length2,
-				       -fill => $fill2,
+				       -fill => $type2fill{$cat},
 				       -width => $width2,
 				       -tags => $tags);
 		    }
@@ -10977,7 +10992,8 @@ sub plot_sperre {
 			if ($cat eq StrassenNetz::BLOCKED_ONEWAY ||
 			    $cat eq StrassenNetz::BLOCKED_ONEWAY_STRICT) {
 			    $inx = $#{$hop}-1;
-			} elsif ($cat eq StrassenNetz::BLOCKED_COMPLETE) {
+			} elsif ($cat eq StrassenNetz::BLOCKED_COMPLETE ||
+				 $cat eq StrassenNetz::BLOCKED_COMPLETE_STRICT) {
 			    $inx = int($#{$hop}/2);
 			} else {
 			    # may happen for "q4" entries from temp-blockings
@@ -13692,7 +13708,7 @@ sub enterpoint {
 	} elsif ($tags[1] =~ /^sperre1/) {
 	    $act_value{Haltestelle} = M("Einbahnstraﬂe") .
 		(defined $tags[2] and $tags[2] ne "" ? " - " . $tags[2] : "");
-	} elsif ($tags[1] eq 'sperre2') {
+	} elsif ($tags[1] =~ /^sperre2/) {
 	    if (defined $tags[2] and $tags[2] ne "") {
 		$act_value{Haltestelle} = $tags[2];
 	    } else {
@@ -16173,7 +16189,7 @@ sub scale_width {
 	    rw
 	    w-W w-W0 w-W1 w-W2 w-W-out w-W0-out w-W1-out w-W2-out wr
 	    l l-out u b r pp p z g gP gD gBO fz
-	    sperre0 sperre1 sperre1s sperre2)) {
+	    sperre0 sperre1 sperre1s sperre2 sperre2s)) {
 	eval {
 	CHANGE: {
 		my $new_width = get_line_width($type, $scale);
@@ -16201,7 +16217,7 @@ sub scale_width {
 	    warn "Error while configuring $type in scale_width: $@";
 	}
     }
-    foreach my $sperre_type (qw(sperre1 sperre1s sperre2)) {
+    foreach my $sperre_type (qw(sperre1 sperre1s sperre2 sperre2s)) {
 	my $new_width = get_line_width($sperre_type);
 	my $old_width = get_line_width($sperre_type, $old_scale);
 	if ($new_width != $old_width) {
@@ -18813,7 +18829,7 @@ sub make_net {
 
 	    if ($net_type eq 's' || $net_type eq 's-car') {
 		my @sperre_type;
-		foreach ('einbahn', 'einbahn-strict', 'sperre', 'tragen', 'wegfuehrung') {
+		foreach ('einbahn', 'einbahn-strict', 'sperre', 'sperre-strict', 'tragen', 'wegfuehrung') {
 		    push @sperre_type, $_ if $sperre{$_};
 		}
 		if (@sperre_type) {

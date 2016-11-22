@@ -692,11 +692,17 @@ handicap_s:	handicap_s-orig berlin ${PERSISTENTTMPDIR}/gesperrt-with-handicaps r
 	$(CONVERT_ORIG) -keep-directive valid -strip-tendencies handicap_s-orig |\
 	    ${GREPSTRASSEN_VALID} > $@~
 	[ -s $@~ ]
-	$(GREPSTRASSEN) -catrx ':q\d' < ${PERSISTENTTMPDIR}/gesperrt-with-handicaps |\
+	$(GREPSTRASSEN) -catrx '1s?:q\d' < ${PERSISTENTTMPDIR}/gesperrt-with-handicaps |\
 	    $(GREPSTRASSEN) -inner berlin |\
 	    $(REPLACESTRASSEN) -noglobaldirectives \
 		-catexpr 's/.*:(q\d)/$$1::igndisp;/' \
 		-nameexpr 's/(.*)/$$1: gegen die Einbahnstraßenrichtung, ggfs. schieben/' \
+		>> $@~
+	$(GREPSTRASSEN) -catrx '2s?:q\d' < ${PERSISTENTTMPDIR}/gesperrt-with-handicaps |\
+	    $(GREPSTRASSEN) -inner berlin |\
+	    $(REPLACESTRASSEN) -noglobaldirectives \
+		-catexpr 's/.*:(q\d)/$$1::igndisp/' \
+		-nameexpr 's/(.*)/$$1: gesperrt, ggfs. schieben/' \
 		>> $@~
 	${GREPSTRASSEN} -ignoreglobaldirectives -ignorelocaldirectives -catrx '^q\d+;$$' routing_helper-orig |\
 	    ${REPLACESTRASSEN} -catexpr 's/;/::igndisp;/' >> $@~
@@ -708,11 +714,17 @@ handicap_l:	handicap_l-orig berlin ${PERSISTENTTMPDIR}/gesperrt-with-handicaps
 	$(CONVERT_ORIG) -keep-directive valid -strip-tendencies handicap_l-orig |\
 	    ${GREPSTRASSEN_VALID} > $@~
 	[ -s $@~ ]
-	$(GREPSTRASSEN) -catrx ':q\d' < ${PERSISTENTTMPDIR}/gesperrt-with-handicaps |\
+	$(GREPSTRASSEN) -catrx '1s?:q\d' < ${PERSISTENTTMPDIR}/gesperrt-with-handicaps |\
 	    $(GREPSTRASSEN) -outer berlin |\
 	    $(REPLACESTRASSEN) -noglobaldirectives \
 		-catexpr 's/.*:(q\d)/$$1::igndisp;/' \
 		-nameexpr 's/(.*)/$$1: gegen die Einbahnstraßenrichtung, ggfs. schieben/' \
+		>> $@~
+	$(GREPSTRASSEN) -catrx '2s?:q\d' < ${PERSISTENTTMPDIR}/gesperrt-with-handicaps |\
+	    $(GREPSTRASSEN) -outer berlin |\
+	    $(REPLACESTRASSEN) -noglobaldirectives \
+		-catexpr 's/.*:(q\d)/$$1::igndisp/' \
+		-nameexpr 's/(.*)/$$1: gesperrt, ggfs. schieben/' \
 		>> $@~
 	mv $@~ $@
 	-@$(READONLY) $@

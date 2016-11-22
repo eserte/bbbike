@@ -51,6 +51,9 @@ my %versioned_file_to_cat;
 			 sub { /^BNP:\d+(:-?\d+(:trailer=(no|\d+))?)?$/ },
 			 sub { /^1s(:q\d)?(:(?:inwork|temp))?$/ },
 			);
+    my @gesperrt_3_19_add = (
+			     sub { /^2s(:q\d)?(:(?:inwork|temp))?$/ },
+			    );
 
     my %filetype_to_cat =
     (
@@ -92,10 +95,11 @@ my %versioned_file_to_cat;
 		    '3.16'        => [sub { /^$strassen_cat_3_16_qr$/ }],
 		    '3.17'        => [sub { /^$strassen_cat_3_16_qr(?:::(?:igndisp))?$/ }],
 		    '3.18'        => [sub { /^$strassen_cat_3_18_qr(?:::(?:igndisp))?$/ }],
-		    #'data-update'=> ...
 		   },
      "gesperrt" => {
 		    '3.16'        => [@gesperrt_3_16],
+		    '3.19'        => [@gesperrt_3_16, @gesperrt_3_19_add],
+		    'data-update' => [@gesperrt_3_16, @gesperrt_3_19_add], # 2s is not really handled in bbbike 3.18, but acceptable
 		   },
     );
     $versioned_file_to_cat{'strassen-cooked'} = $versioned_file_to_cat{'strassen'};

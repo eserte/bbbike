@@ -194,6 +194,7 @@ use enum qw(:WIDE_ NEIGHBOR1 DISTANCE1 NEIGHBOR2 DISTANCE2);
 use constant BLOCKED_ONEWAY   => 1;
 use constant BLOCKED_ONEWAY_STRICT => "1s";
 use constant BLOCKED_COMPLETE => 2;
+use constant BLOCKED_COMPLETE_STRICT => '2s';
 use constant BLOCKED_CARRY    => 0;
 use constant BLOCKED_ROUTE    => 3;
 use constant BLOCKED_NARROWPASSAGE => "BNP";
@@ -216,6 +217,8 @@ sub make_sperre_1 {
 		$sperre_type{&BLOCKED_ONEWAY_STRICT} = 1;
 	    } elsif ($_ eq 'sperre') {
 		$sperre_type{&BLOCKED_COMPLETE} = 1;
+	    } elsif ($_ eq 'sperre-strict') {
+		$sperre_type{&BLOCKED_COMPLETE_STRICT} = 1;
 	    } elsif ($_ eq 'tragen') {
 		$sperre_type{&BLOCKED_CARRY} = 1;
 	    } elsif ($_ eq 'wegfuehrung') {
@@ -224,7 +227,8 @@ sub make_sperre_1 {
 		$sperre_type{&BLOCKED_NARROWPASSAGE} = 1;
 	    } elsif ($_ eq 'all') {
 		for (BLOCKED_ONEWAY, BLOCKED_ONEWAY_STRICT,
-		     BLOCKED_COMPLETE, BLOCKED_CARRY, BLOCKED_ROUTE,
+		     BLOCKED_COMPLETE, BLOCKED_COMPLETE_STRICT,
+		     BLOCKED_CARRY, BLOCKED_ROUTE,
 		     BLOCKED_NARROWPASSAGE) {
 		    $sperre_type{$_} = 1;
 		}

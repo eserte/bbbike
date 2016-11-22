@@ -731,12 +731,19 @@ handicap of class C<q4> for the wrong direction.).
 
 =item * C<1h>:
 
-One way street 8read E<quot>one hardE<quot>), and there's no
+One way street (read E<quot>one hardE<quot>), and there's no
 possibility for a cyclist to use the street in wrong direction.
 
 =item * C<2>:
 
 Blocked street in both directions.
+
+=item * C<2s>:
+
+Blocked street (read E<quot>two softE<quot>), but not strictly for
+cyclists (means: It is usually possible for bicyclists to pass the
+street, maybe by pushing the bike. Typically an handicap addition like
+C<2s:q4> or C<2s:q3> should be specified).
 
 =item * C<0>:
 

@@ -399,7 +399,7 @@ sub handle_blocked_way_like {
     for my $node_id_i (1 .. $#node_ids) {
 	if ($cat eq '1' || $cat eq '1s') {
 	    $oneway{$node_ids[$node_id_i].' '.$node_ids[$node_id_i-1]} = 1; # in osm oneway is the open direction, not the closed
-	} elsif ($cat eq '2') {
+	} elsif ($cat eq '2' || $cat eq '2s') {
 	    $no_access{$node_ids[$node_id_i-1].' '.$node_ids[$node_id_i]} = 1;
 	    $no_access{$node_ids[$node_id_i].' '.$node_ids[$node_id_i-1]} = 1;
 	}
