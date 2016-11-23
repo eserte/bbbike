@@ -1526,8 +1526,10 @@ Brodersenstr.: Neubau, danach bessere Qualität?	?::projected 6033,19611 5885,199
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-#: XXX NEW	Scharnweberstraße (Friedrichshain) Richtung Gürtelstraße zwischen Jessnerstraße und Gürtelstraße (Berlin)  Gültig ab: 22.11.2016 07:00  Baustelle, Fahrtrichtung gesperrt (bis Mitte 12/16)	2147340779
-Scharnweberstr.: Sperrung auch für Radfahrer relevant?	?; 15080,11905 15121,11899 15248,11880
+#: XXX NEW	Fasanenstraße (Charlottenburg) zwischen Kantstraße und Kurfürstendamm (Berlin)  Gültig ab: 23.11.2016 13:12  Vollsperrung, Baustelle (bis 31.12.16)	LMS-BR_r_LMS-BR_83962
+Fasanenstr.: Sperrung auch für Radfahrer relevant?	? 5236,10994 5230,10919 5215,10711
+# 
+# REMOVED (zurzeit kann man ganz gut vorbeifahren) --- #: XXX NEW	Scharnweberstraße (Friedrichshain) Richtung Gürtelstraße zwischen Jessnerstraße und Gürtelstraße (Berlin)  Gültig ab: 22.11.2016 07:00  Baustelle, Fahrtrichtung gesperrt (bis Mitte 12/16)	2147340779 --- Scharnweberstr.: Sperrung auch für Radfahrer relevant?	?; 15080,11905 15121,11899 15248,11880
 # 
 #: XXX vermutlich schlechtes Kopfsteinpflaster, vermutlich Einbahnstraße im südlichen Abschnitt; str_cont_ausnahme-Eintrag notwendig
 Hauptstr.: Qualität, Einbahnstraßenregelung...	? 12205,22696 12205,22696 12230,22689 12248,22577 12231,22460 12205,22367 12205,22367
@@ -1608,14 +1610,14 @@ Wege im Gutspark Neukladow: Wegführung, nachts beleuchtet, Qualität?	? -6198,535
 Bebauungsplan VIII-424: neue Straßen entstehen, wo genau? Qualität?	? -6366,5873 -6523,5998 -6224,6417 -6552,6663 -6439,6811 -6216,6410 -6370,6183 -6189,6065 -6366,5873
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_929_16.pdf
-#: last_checked: 2016-11-01
+#: last_checked: 2016-11-23
 #: check_frequency: 60d
 Liebigstr.: Einrichtung einer Spielstraße, wo genau?	? 14229,12311 14166,12323 14147,12344 14091,12355 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7041
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_925_16.pdf
 #: XXX Bauarbeiten zwischen Thaerstr. und Hübnerstr.
-#: last_checked: 2016-11-16
+#: last_checked: 2016-11-23
 #: check_frequency: 14d
 Eldenaer Str.: Verlängerung der Radspuren	? 14355,12752 14096,12827 14066,12836 13979,12861 13960,12866 13844,12900
 # 

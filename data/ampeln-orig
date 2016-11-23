@@ -2895,6 +2895,14 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: source_id ^^^
 #: next_check_id ^^^
 # 
+#: next_check_id: HAUPTSTR-2015 vvv
+#: note etwas weiter südlich gelegen
+#: last_checked: 2016-11-23
+	F::inwork 14674,10811
+#: last_checked: 2016-11-23
+	F::inwork 14794,10844
+#: next_check_id ^^^
+# 
 ################################################################################
 #: note: Potsdam vvv
 	F -12868,-502
@@ -3041,7 +3049,6 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: off: Pfingstmontag 2016-05-16 gegen 13 Uhr
 	F -7554,13514
 # 
-# REMOVED --- #: next_check_id: HAUPTSTR-2015 --- #: last_checked: 2016-09-30 ---	F::inwork 14672,10760
 ################################################################################
 #: note: Ampeln elsewhere vvv
 	F -2691,-1112
