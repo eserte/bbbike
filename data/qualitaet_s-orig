@@ -3353,7 +3353,7 @@ Zum Schmetterlingshorst: Asphalt	Q0 24663,991 24889,1743
 Annenallee: Asphalt	Q0 22184,5545 22095,5585 22009,5593
 Annenallee: schlechtes Kopfsteinpflaster	Q3 22009,5593 21901,5728
 Heinrich-Schlusnus-Str.: Asphalt	Q0 15026,6391 15056,6431 15054,6526 15054,6589 15070,6621 15146,6690
-Joseph-Schmidt-Str.: Asphalt	Q0 15260,6310 15255,6531 15275,6554
+Joseph-Schmidt-Str.: Asphalt	Q0 15260,6315 15255,6531 15275,6554
 #: note: zumindest an der Oberspreestr.
 #: note: Stefan (moehres) meint Asphalt, Q1
 Johanna-Tesch-Str.: Beton	Q0- 19715,5185 19743,5271 19756,5313 19928,5365 20030,5334 19998,5226 19930,5247 19919,5214 19743,5271
@@ -6443,7 +6443,8 @@ Ostheimer Str.: Verbundsteinpflaster	Q1 10664,1068 10738,906
 Wingerter Str.: Asphalt	Q0 10829,1135 10845,1026 10851,929
 Künheimer Weg: Asphalt	Q0 11012,1210 11040,1135 11061,1029
 Alt-Buckow: Asphalt	Q0 12561,1931 12574,1866
-Alt-Buckow: Asphalt	Q0 12817,2031 12561,1931 12545,1918
+Alt-Buckow: Asphalt	Q0 12817,2031 12561,1931
+Alt-Buckow: Kopfsteinpflaster	Q3 12561,1931 12545,1918
 Turfweg: unbefestigte Straße	Q2 13336,2151 13357,2031
 #: note: sowie daneben Gehwegplatten vvv
 Wildmeisterdamm: Verbundsteinpflaster	Q1+ 13827,2280 13943,2284 14082,2289 14276,2293 14355,2294
@@ -7208,7 +7209,7 @@ Lindholzweg: unbefestigte Straße	Q2 12224,1235 12125,1282
 An den Achterhöfen: Asphalt	Q0 12260,1597 12295,1560 12512,1650 12643,1706 12911,1815
 Landschöppenpfad: Gehwegplatten	Q0- 12609,1780 12574,1866
 #: note: vom Rufacher Weg geht auch eine Parkplatzeinfahrt ab, diese hat aber wurzelgeschädigten Asphalt
-Fläzsteinpfad: Verbundsteinpflaster	Q1 12489,2105 12498,2025 12561,1931
+Fläzsteinpfad: Verbundsteinpflaster/Gehwegpflasterung	Q1 12489,2105 12498,2025 12561,1931
 Reinowzeile: Asphalt	Q0 13449,1227 13417,1333 13413,1363
 Großcreutzweg: Asphalt	Q0 13514,1823 13502,1797 13507,1659
 Auf der Planweide: Verbundsteinpflaster	Q1 13871,1473 13794,1799
@@ -14450,7 +14451,7 @@ Ringstr.: Kopfsteinpflaster	Q2+ 2701,3064 2781,3122 3011,3303 3050,3333 3184,342
 Herwarthstr.: Asphalt	Q0 4722,2771 4622,2787 4440,2752 4382,2658 4392,2628
 # 
 #: by: Patryk (bigoudi): vvv
-Fritzi-Massary-Str.: Asphalt	Q0 15131,6295 15158,6313 15260,6310 15363,6310 15386,6310 15428,6355 15452,6384
+Fritzi-Massary-Str.: Asphalt	Q0 15135,6291 15158,6313 15260,6315 15385,6317 15428,6355 15452,6384
 #: corrected_by: srt ("mäßig"+"Schlaglöcher" -> ""; bin dort 25 km/h gefahren)
 Eibenweg: Asphalt	Q0 17364,5094 17378,5195 17365,5271 17355,5322
 #: confirmed_by: srt

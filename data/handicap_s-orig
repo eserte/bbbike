@@ -26,7 +26,7 @@ Straße der Pariser Kommune: Wasserrohrbruch, Fahrbahn unter der Bahnbrücke gespe
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2016-11-23 vvv
+#: last_checked: 2016-11-24 vvv
 # REMOVED --- Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
 # REMOVED --- Revaler Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14357,11148 14286,11186
 Revaler Str.: Bauarbeiten, evtl. Ausweichen auf Gehweg nötig	q2::inwork 14211,11229 14286,11186
@@ -1299,9 +1299,9 @@ Wongrowitzer Steig: Bodenschwelle	q0 22474,7065 22358,7093
 Wirsitzer Weg: Bodenschwelle	q0 22448,6957 22641,6918
 # konflikt mit anderen Mittelheide-Eintrag! --- : XXX_prog: für Anhänger relevant (q1 oder so) --- Mittelheide: zwei Bodenschwellen	q0 23135,6500 23220,6520 23299,6541
 (Valeska-Gert-Str. - Am Postbahnhof): Fußgänger	q1 12807,11287 12713,11372
-#: XXX_prog: 2x Bordsteine
+#: XXX_prog BS: 2x Bordsteine
 Fritzi-Massary-Str: Bordsteine	q3 15428,6355 15452,6384
-#: XXX_prog: 2x Bordsteine (ansonsten q2)
+#: XXX_prog BS: 2x Bordsteine (ansonsten q2)
 (Rotkehlchenweg - Kormoranweg): eng, einige Fußgänger, Bordsteine	q3 14099,3772 14185,3734
 Dürtenstr.: Fußgänger	q2 13785,4839 13825,4850 13874,4867 13914,4877
 Angelikaweg: Fußgänger	q1 15459,2921 15537,3026
