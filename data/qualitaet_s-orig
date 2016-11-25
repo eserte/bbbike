@@ -100,7 +100,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: XXX wird dieses Teilstück asphaltiert?
 #: XXX Baumaßnahme GL7.6, GL7.7 (Realisierung nach 2011)
 #: osm_watch: way id="102486250" version="6"
-#: last_checked: 2016-07-23
+#: last_checked: 2016-11-25
 #: check_frequency: 90d
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7223,5890
 Priesterweg: Asphalt	Q0 7223,5890 7171,5831
@@ -10253,6 +10253,7 @@ Mahnkopfweg: Kleinsteinpflaster	Q2 -3404,11589 -3342,11700 -3347,11772 -3324,118
 Siegfriedstr.: Beton, einzelne Hebungen	Q1+ 11664,6796 11935,6848 12122,6886 12305,6928 12342,6936
 Löwenberger Str.: Beton	Q0- 17440,11774 17477,11893 17460,11961
 Rosenfelder Str./Ring: Beton	Q1+ 17384,11976 17429,12030 17480,12003
+Ullsteinstr.: Asphalt mit einigen Schäden	Q0-; 8813,5004 8934,5095 9076,5160 9207,5185
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -18763,14 +18764,10 @@ Gustave-Courbet-Str.: Asphalt	Q0 3836,16273 3881,16259 3992,16198
 # 
 #: by: David (dh): vvv
 #: corrected_by: srt (added "schlechtes")
-#: XXX wird diese Straße asphaltiert?
-#: XXX Baumaßnahme GL6.11 (Realisierung nach 2011)
-#: XXX laut osm bereits asphaltiert
-#: osm_watch: way id="102486207" version="4"
-#: osm_watch: way id="436624329" version="2"
-#: last_checked: 2016-07-23
-#: next_check: 2016-11-19
-Brandenburgische Str. (Steglitz): schlechtes Kopfsteinpflaster	Q3 6889,4334 6820,4347 6677,4384
+# REMOVED --- #: XXX wird diese Straße asphaltiert? --- #: XXX Baumaßnahme GL6.11 (Realisierung nach 2011) --- #: XXX laut osm bereits asphaltiert --- #: osm_watch: way id="102486207" version="4" --- #: osm_watch: way id="436624329" version="2" --- #: last_checked: 2016-07-23 --- #: next_check: 2016-11-19
+Brandenburgische Str. (Steglitz): schlechtes Kopfsteinpflaster	Q3 6889,4334 6820,4347
+#: corrected_by: srt (Kopfsteinpflaster -> Asphalt, neu gemacht)
+Brandenburgische Str. (Steglitz): Asphalt	Q0 6820,4347 6677,4384
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Brandenburgische Str. (Steglitz): Asphalt	Q0 6677,4384 6638,4394 6532,4422
 #: by: ^^^
@@ -18874,6 +18871,7 @@ Biberacher Weg: schlechtes Kopfsteinpflaster	Q3 7532,4605 7382,4503
 #: corrected_by: srt (schlechtes -> mäßiges)
 Buhrowstr.: mäßiges Kopfsteinpflaster	Q2 7091,4760 7032,4635
 #: confirmed_by: srt
+#: note: schmale asphaltierte Banketten existieren teilweise, sind aber größtenteils zugeparkt
 Buhrowstr.: schlechtes Kopfsteinpflaster	Q3 7032,4635 6889,4334
 #: by ^^^
 # 

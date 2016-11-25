@@ -10151,7 +10151,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006795',
        data  => <<EOF,
-userdel	2::inwork 9207,5185 8934,5095 8813,5004
+userdel	2::inwork 9207,5185 9076,5160 8934,5095 8813,5004
 EOF
      },
      { from  => 1192312800, # 2007-10-14 00:00
@@ -22591,7 +22591,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_021331',
        data  => <<EOF,
-userdel	2::inwork 13797,7267 13761,7328
+userdel	2::inwork 13797,7267 13762,7321
 EOF
      },
      { from  => 1393624717, # 2014-02-28 22:58
@@ -25612,9 +25612,10 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: RUEDERSDORFER-2016
-#: last_checked: 2016-11-22
+#: last_checked: 2016-11-25
 #: check_frequency: 14d
-userdel	q3::inwork 13295,11792 13173,11788 13066,11854
+# REMOVED --- userdel	q3::inwork 13295,11792 13173,11788
+userdel	q3::inwork 13173,11788 13066,11854
 EOF
      },
      { from  => 1476655200, # 2016-10-17 00:00

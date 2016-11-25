@@ -1605,7 +1605,7 @@ Attilagarten	NN 8435,5239 8406,5258
 Ingostr.	N 7896,4732 7970,4640
 (Ingostr. - Am Teltowkanal)	NN 7970,4640 8027,4571
 Alarichstr.	H 8593,5491 8642,5422 8667,5372 8674,5357 8707,5289 8750,5173 8784,5095 8813,5004
-Ullsteinstr.	N 8637,4980 8813,5004 8934,5095 9207,5185
+Ullsteinstr.	N 8637,4980 8813,5004 8934,5095 9076,5160 9207,5185
 Ullsteinstr.	H 9207,5185 9423,5227 9578,5235 9661,5224 10012,5231 10029,5230 10208,5237 10800,5203
 Reulestr.	N 8858,4579 8561,4535
 Rathausstr. (Mariendorf)	H 8813,5004 8827,4874 8848,4683 8858,4579 8867,4506 8868,4498 8877,4356 8932,4188 8962,4096 9003,3947 9021,3878 9065,3693
@@ -5678,16 +5678,11 @@ Blumberger Damm [Nebenfahrbahn]	N 21816,15954 21788,16002 21812,16189 21835,1621
 Blumberger Damm [Nebenfahrbahn]	N 21413,13459 21430,13602 21466,13903
 Blumberger Damm [Wohngebiet]	N 21824,16506 21574,16547
 # REMOVED (vermutlich nicht) --- : XXX_indoor ist das der "Reinhold-Lingner-Weg"? (kaum Treffer dazu im Internet)
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036788094107/788094107/00079308/08-Anlagen/02/vzbbvv1018_IV_Radwegekonzept.pdf
-#: by: http://fraktion.piraten-mahe.de/wiki/index.php?title=Protokolle/2016-04-20_siedverklap
-#: XXX vorgeschlagener neuer Name: Gottfried-Funeck-Weg (fehlt in Berlin.coords.data)
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksamt/beschluesse/2016/artikel.515598.php
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2016/ba-vorlage_1311_iv_benennung_fuss_radweg_funeck.pdf
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6780
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6780
+# REMOVED #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036788094107/788094107/00079308/08-Anlagen/02/vzbbvv1018_IV_Radwegekonzept.pdf --- #: by: http://fraktion.piraten-mahe.de/wiki/index.php?title=Protokolle/2016-04-20_siedverklap --- #: XXX vorgeschlagener neuer Name: Gottfried-Funeck-Weg (fehlt in Berlin.coords.data) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksamt/beschluesse/2016/artikel.515598.php --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2016/ba-vorlage_1311_iv_benennung_fuss_radweg_funeck.pdf --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6780 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6780 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/51re.pdf/file?y=2016 (Straßenbenennung)
+#: add_fragezeichen ist der Weg bereits ausgeschildert?
 #: last_checked: 2016-10-02
-#: next_check: 2017-04-01
-(Blumberger Damm - Wuhle)	NN 21450,14576 21822,14480 21925,14500 21948,14501 21985,14513 22026,14501 22061,14471 22172,14287 22414,14144
+#: oldname: -201611: <namenslos>
+Gottfried-Funeck-Weg	NN 21450,14576 21822,14480 21925,14500 21948,14501 21985,14513 22026,14501 22061,14471 22172,14287 22414,14144
 # REMOVED --- #: XXX Straße wird umbenannt, neuer Name: "Am Gewerbepark" --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5605 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810361044878152/1044878152/00070570/70-Anlagen/02/vzb0689_IV-Bennenung_Am_Gewerbepark.pdf --- #: XXX Eintrag in Berlin.coords.data fehlt, die "Grimmener Str." muss ausgetragen werden und nach oldnames wandern --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/13re.pdf/file?y=2014 --- #: last_checked: 2014-08-08 --- #: check_frequency: 60d
 #: oldname: -201403: Grimmener Str.
 Am Gewerbepark	N 21298,13154 21395,13135 21443,13125
@@ -9643,7 +9638,7 @@ Goethestr. (Lichtenrade)	N 9709,-333 9808,-339 9968,-345 10079,-321 10181,-300 1
 Warnitzer Str. (Lichtenrade)	N 10510,-235 10584,-432
 Uhlandstr. (Lichtenrade)	N 10179,744 10242,572 10321,341 10373,216 10425,67 10469,-52
 Potsdamer Str. (Lichtenrade)	N 10788,-172 10835,-145 10974,-83 11021,-63 11081,-58 11192,-41 11364,-16
-Saalestr.	NH 13051,7157 13161,7173 13325,7210 13495,7249 13648,7284 13761,7328 13887,7416 13952,7497 13980,7548 14015,7631
+Saalestr.	NH 13051,7157 13161,7173 13325,7210 13495,7249 13648,7284 13762,7321 13794,7333 13887,7416 13952,7497 13980,7548 14015,7631
 Treptower Str.	N 13345,7900 13359,7949 13376,7970 13457,8069 13459,8072 13478,8095
 Treptower Str.	NH 13478,8095 13510,8138 13566,8212 13648,8321 13716,8410 13745,8448 13808,8533 13860,8599 14011,8787 14151,8967
 Treptower Str.	NH 13474,8060 13478,8095
@@ -10125,7 +10120,7 @@ Büllinger Str.	N 21935,10318 21978,10384 22030,10467
 Jurek-Becker-Str.	N 21978,10384 22009,10371 21970,10247 21959,10251 21923,10265
 Jurek-Becker-Str.	N 21939,10179 21959,10251
 Anton-von-Werner-Str.	N 22030,10467 22125,10451 22257,10428
-Niemetzstr.	N 13553,7594 13581,7586 13702,7418 13761,7328 13797,7267 13891,7107
+Niemetzstr.	N 13553,7594 13581,7586 13702,7418 13762,7321 13797,7267 13891,7107
 Albertstr.	N 6989,8687 7086,8579 7166,8487
 Yitzhak-Rabin-Str.	H 8119,12414 8055,12186
 # REMOVED --- (Ehemalige Entlastungsstr., Rückbau und Renaturierung erfolgt ab ca. 2006-07-01)	NN 8055,12186 8056,12061 8129,11735 8172,11679

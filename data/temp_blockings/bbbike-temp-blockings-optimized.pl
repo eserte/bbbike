@@ -4095,9 +4095,10 @@ userdel	q3::inwork 4564,3457 4800,3391 4862,3363 5022,3318
        },
        {
          'data' => '#: next_check_id: RUEDERSDORFER-2016
-#: last_checked: 2016-11-22
+#: last_checked: 2016-11-25
 #: check_frequency: 14d
-userdel	q3::inwork 13295,11792 13173,11788 13066,11854
+# REMOVED --- userdel	q3::inwork 13295,11792 13173,11788
+userdel	q3::inwork 13173,11788 13066,11854
 ',
          'from' => undef,
          'id' => 2835,

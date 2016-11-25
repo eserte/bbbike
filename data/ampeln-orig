@@ -476,7 +476,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 13430,6086
 #: note: linksabbiegende Radfahrer (Neuköllnische Allee -> Grenzallee Richtung Osten) sollten die Fußgängeranforderung betätigen! (während der Sperrung der Grenzallee)
 	X 14344,7003
-	X 13761,7328
+	X 13762,7321
 	X 14015,7631
 	X 14617,7243
 	X 13474,8060
@@ -2750,7 +2750,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: SONNENALLEE-2014 vvv
 #: osm_watch: way id="260062339" version="8"
-#: last_checked: 2016-10-10 vvv
+#: last_checked: 2016-11-25 vvv
 #: check_frequency: 90d vvv
 #: note: Radfahrer in Richtung Südosten müssen die Seite wechseln, hier Anforderungsampel
 	X::inwork 14174,7505
@@ -2903,6 +2903,10 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F::inwork 14794,10844
 #: next_check_id ^^^
 # 
+#: note: Anforderungsampel für Radfahrer aus/in Richtung Priesterweg
+#: note: Ampel für Radfahrer auf den Prellerweg in Richtung Südosten nicht relevant
+	X 7171,5831
+# 
 ################################################################################
 #: note: Potsdam vvv
 	F -12868,-502
@@ -3039,7 +3043,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -12655,-1714
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
 #: next_check_id: KIEFHOLZ-2015 vvv
-#: last_checked: 2016-11-24 vvv
+#: last_checked: 2016-11-25 vvv
 #: check_frequency: 90d vvv
 	X::inwork 14151,8967
 	X::inwork 14363,8738

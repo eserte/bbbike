@@ -2765,7 +2765,7 @@ S¸lzhayner Str.: komplett gesperrt wegen Bauarbeiten, vielleicht dauerhaft	2::in
 #: check_frequency: 60d
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 # 
-#: last_checked: 2016-11-24
+#: last_checked: 2016-11-25
 Corinthstr.: Baustelle, Einbahnstraﬂenregelung	1s:q2 14447,10491 14270,10584
 # 
 #: next_check_id: MARIANNEN-2016 vvv
@@ -2773,8 +2773,9 @@ Corinthstr.: Baustelle, Einbahnstraﬂenregelung	1s:q2 14447,10491 14270,10584
 #: source_id: 2147340291 vvv
 #: source_id: 2147340768 vvv
 #: priority: #A vvv
+#: XXX laut fritz bis 16.12.2016
 #: last_checked: 2016-11-23 vvv
-#: next_check: 2016-12-15 vvv
+#: next_check: 2016-12-16 vvv
 Mariannenstr.: Baustelle, Einbahnstraﬂenregelung	1s:q2 11512,10105 11616,10288
 #: source_id: 2147340777
 #: XXX laut fritz bis 10.01.2017
@@ -2924,6 +2925,7 @@ Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,126
 IGA 2017-Gel‰nde: Wege gesperrt	2 22455,14815 22417,14837 22380,14831 22331,14793 22254,14793 22199,14744 22164,14722 22108,14710 22090,14704 22071,14630 22051,14604 22026,14601 22012,14556 21985,14513 22026,14501 22061,14471 22172,14287 22414,14144 22462,14172 22639,14384 22679,14450 22670,14520
 #: osm_watch: way id="338582727" version="3"
 IGA 2017-Gel‰nde: Wege gesperrt	2 22414,14144 22407,14111 22404,13984
+#: next_check: 2016-11-25
 IGA 2017-Gel‰nde: Wege gesperrt	2 21408,14591 21450,14576 21822,14480 21925,14500 21948,14501 21985,14513
 #: next_check ^^^
 #: last_checked ^^^
