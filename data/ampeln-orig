@@ -2919,7 +2919,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -12833,-1365
 #: note: Anforderungsampel
 	F -12674,-1313
-	X -12758,-1654
+	X -12794,-1652
 	X -13238,-1569
 	X -13516,-1517
 	X -13879,-1445
@@ -2928,7 +2928,10 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -13231,-763
 	X -12265,-418
 	X -12045,-757
+#: XXX_prog eigentlich eine Ampel! vvv
 	X -12493,-1896
+	X -12478,-1879
+#: XXX_prog ^^^
 	X -12431,-2096
 	X -10973,-1764
 	X -10559,-1901
@@ -3027,8 +3030,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -13044,-709
 	F -11133,262
 	X 18417,10738
-#: note: Anforderungsampel
-	F -12531,-781
+# REMOVED (existiert nicht mehr) --- #: note: Anforderungsampel ---	F -12531,-781
 #: note: Anforderungsampel
 #: XXX_prog Ampel gilt auch für Radfahrer beim Linksabbiegen in die Gutenbergstr. (O -> W)
 	F -12235,-713
@@ -3040,7 +3042,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F -12432,-226
 #: XXX_prog: Ampelanlage gilt für die gesamte Brücke, auf der anderen Seite ist auch eine
 	X -9942,21
-	X -12655,-1714
+	X -12653,-1723
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: last_checked: 2016-11-25 vvv

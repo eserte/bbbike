@@ -1180,14 +1180,14 @@ Spornstr.	1 -13220,-1416 -13350,-1403
 Nuthestr.: Kfz-Straße	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10321,-2800 -10547,-2606 -10898,-2375 -11070,-2123 -11116,-1681 -11140,-1564 -11226,-1445 -11386,-1313 -11613,-1125 -11869,-907 -12045,-757
 Nuthestr.: nicht passierbarer Mittelstreifen	3nocross -12045,-757 -11869,-907 -11613,-1125 -11386,-1313
 Breite Str.: nicht passierbarer Mittelstreifen	3nocross -13238,-1569 -13375,-1546 -13516,-1517
-Lange Brücke: Straßenbahntrasse	3nocross -12758,-1654 -12730,-1681 -12655,-1714 -12567,-1817
+Lange Brücke: Straßenbahntrasse	3nocross -12794,-1652 -12758,-1689 -12733,-1703 -12653,-1723 -12567,-1817
 Rudolf-Breitscheid-Str.	2 -11056,-1726 -11116,-1681
 Geschwister-Scholl-Str.	1 -14330,-1762 -14213,-1695 -14143,-1662 -14115,-1678
 Zimmerstr.	1 -13646,-1168 -13876,-1226
 Platz der Einheit	1 -12756,-1131 -12741,-1197 -12718,-1327
 Puschkinallee	1 -13042,807 -12912,783 -12868,738 -12827,629 -12815,554 -12811,533
 Geschwister-Scholl-Str.	1 -14213,-1695 -14143,-1662 -14115,-1678
-Friedrich-Ebert-Str.: Straßenbahntrasse	3nocross -12786,-1556 -12808,-1488 -12833,-1365
+Friedrich-Ebert-Str.: Straßenbahntrasse	3nocross -12790,-1560 -12808,-1488 -12833,-1365
 #: XXX_prog: Treppe sollte besser als -13733,-722 -13772,-623 -13784,-537 dargestellt sein, wenn es geht
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180 -13772,-623
 #: by: rjoop
@@ -1212,6 +1212,9 @@ Ernst-von-Bergmann-Klinikum	1 -12365,-752 -12360,-772 -12351,-828
 Ernst-von-Bergmann-Klinikum	1 -12351,-828 -12374,-849 -12402,-829 -12413,-789 -12418,-764
 Am Böttcherberg	1s:q2 -9565,62 -9541,97 -9539,147
 Ahornallee [Privatstraße] (Mahlsdorf)	1 24637,9828 24527,9850 24513,9796
+#: note: nur für Radfahrer gültig
+Lange Brücke	1s:q4 -12493,-1896 -12567,-1817 -12653,-1723 -12733,-1703 -12758,-1689 -12794,-1652
+Heinrich-Mann-Allee	1s:q4 -12478,-1879 -12431,-2096
 ###################################################################### 
 # elsewhere in Brandenburg
 #: by: rjoop
@@ -1936,7 +1939,7 @@ tragen (ca. 30 Stufen)	0:30 8773,10399
 tragen (ca. 25 Stufen)	0:30 -18702,4551
 tragen (11 Stufen)	0:20 -12676,-1742
 tragen (11 Stufen)	0:20 -12685,-1449
-tragen (18 Stufen)	0:25 -12625,-1703
+tragen (9 Stufen)	0:20 -12606,-1694
 tragen (ca. 30 Stufen)	0:30 -13802,-1856
 tragen (ca. 30 Stufen)	0:30 -13733,-1856
 #: note: Luftbild
@@ -2799,11 +2802,11 @@ Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17082,7189 16954,70
 # REMOVED (laut osm nicht mehr highway=construction) --- #: osm_watch: way id="291810047" version="7" --- #: last_checked: 2016-07-23 --- Alfonsstr.: Bauzäune	2::inwork 19027,1427 19034,1441 19061,1457
 # REMOVED (komplett entfernt) --- #: last_checked: 2016-09-26 --- #: check_frequency: 90d --- Sonntagstr./Ostkreuz: wegen Bauarbeiten gesperrt	2::inwork 14752,11041 14810,10977
 # 
-#: last_checked: 2016-11-20
+#: last_checked: 2016-11-27
 Haasestr.: Bauarbeiten, keine Durchfahrt möglich	2::inwork 14328,11320 14286,11186
 # 
-#: XXX nach den Bauarbeiten vermutlich bessere Qualität der Fahrbahn
-#: last_checked: 2016-11-20
+#: XXX nach den Bauarbeiten vermutlich Verbundsteinpflaster
+#: last_checked: 2016-11-27
 Döringstr.: Bauarbeiten, keine Durchfahrt möglich	2::inwork 14400,11261 14357,11148
 # 
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 vvv --- #: last_checked: 2016-06-02 vvv --- #: check_frequency: 14d vvv --- Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12844,9351 12851,9309 12907,9073 --- Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12907,9073 12851,9309 12844,9351
@@ -2914,9 +2917,10 @@ Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 144
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5561.html
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/gerickesteg/index.shtml (20 Monate Bauzeit)
+#: XXX laut http://www.stadtentwicklung.berlin.de/bauen/strassenbau/ bis "II. Quartal 2017"
 #: osm_watch: way id="27250334" version="7"
-#: last_checked: 2016-09-04
-#: next_check: 2017-01-01
+#: last_checked: 2016-11-26
+#: next_check: 2017-04-01
 Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,12669 6765,12680
 # 
 #: XXX Sperrungen wegen Bauarbeiten für die IGA 2017 vvv
@@ -3085,7 +3089,7 @@ Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)
 #: source_id: 2147340791
-#: last_checked: 2016-10-08
+#: last_checked: 2016-11-26
 #: next_check: 2018-12-01
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
 # 
@@ -3152,7 +3156,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2016-11-22
+#: last_checked: 2016-11-26
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
@@ -3169,7 +3173,7 @@ Dahlemer Feld: zur Zeit eine Ziegenweide, keine Durchfahrt möglich	2:temp -1643,
 # 
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-# REMOVED --- #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	1:inwork -12655,-1714 -12730,-1681 -12758,-1654 -12755,-1585 -12786,-1556
+# REMOVED --- #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	1:inwork -12653,-1723 -12733,-1703 -12758,-1689 -12794,-1652 -12755,-1585 -12790,-1560
 # REMOVED --- #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12808,-1488
 # REMOVED --- #: last_checked: 2010-05-09 --- Bertiniweg: gesperrt, wird evtl. später neu geöffnet	2:inwork -12689,1693 -12663,1703 -12640,1761 -12524,1891 -12516,1906 -12539,1917 -12568,1970
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

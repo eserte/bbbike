@@ -1011,8 +1011,8 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5542,11075 5459,11135
 #: XXX früher: Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5
 #: XXX bis Ende 2016, laut rbbtext bis 16.12.2016
 #: source_id: 2147339533
-#: last_checked: 2016-09-12
-#: next_check: 2016-12-01
+#: last_checked: 2016-11-26
+#: next_check: 2016-12-16
 	RW0;RW0  5459,11135 5258,11285 5166,11343 5091,11406 5085,11413 4919,11605
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4919,11605 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
@@ -1418,7 +1418,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2016-11-22
+#: last_checked: 2016-11-26
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -4584,7 +4584,7 @@ Tempo 10	RW6;RW6 13559,12779 13470,12990
 	RW4;RW3 14096,12827 14066,12836
 #: XXX wegen Bauarbeiten am Hochhaus "Upper West" sind die Radspuren aufgehoben
 #: by: http://www.tagesspiegel.de/berlin/stadtentwicklung-zwillingsturm-soll-2016-in-der-city-west-eroeffnen/7416454.html (geplante Eröffnung Mitte 2016)
-#: last_checked: 2016-09-17
+#: last_checked: 2016-11-26
 #	RW3; 5488,10978 5613,10963 5652,11004
 ##: note: teilweise vor dem Hotel unterbrochen (wegen Ladezone?)
 #	RW3; 5652,11004 5613,10963 5488,10978

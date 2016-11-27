@@ -859,21 +859,21 @@ Spornstr.	1 -13220,-1416 -13350,-1403
 Nuthestr.: Kfz-Straße	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10321,-2800 -10547,-2606 -10898,-2375 -11070,-2123 -11116,-1681 -11140,-1564 -11226,-1445 -11386,-1313 -11613,-1125 -11869,-907 -12045,-757
 nicht passierbarer Mittelstreifen	3nocross::ignrte -12045,-757 -11869,-907 -11613,-1125 -11386,-1313
 nicht passierbarer Mittelstreifen	3nocross::ignrte -13238,-1569 -13375,-1546 -13516,-1517
-Straßenbahntrasse	3nocross::ignrte -12758,-1654 -12730,-1681 -12655,-1714 -12567,-1817
-Mercure-Hotel -> Lange Brücke: Straßenbahntrasse	3::igndisp -12676,-1742 -12655,-1714 -12730,-1681
-Mercure-Hotel -> Humboldtstr.: Straßenbahntrasse	3::igndisp -12676,-1742 -12655,-1714 -12643,-1694
-Lange Brücke -> Mercure-Hotel: Straßenbahntrasse	3::igndisp -12567,-1817 -12655,-1714 -12676,-1742
-Lange Brücke -> Humboldtstr.: Straßenbahntrasse	3::igndisp -12730,-1681 -12655,-1714 -12643,-1694
-Humboldtstr. -> Mercure-Hotel: Straßenbahntrasse	3::igndisp -12643,-1694 -12655,-1714 -12676,-1742
-Humboldtstr. -> Lange Brücke: Straßenbahntrasse	3::igndisp -12643,-1694 -12655,-1714 -12567,-1817
+Straßenbahntrasse	3nocross::ignrte -12794,-1652 -12758,-1689 -12733,-1703 -12653,-1723 -12567,-1817
+Mercure-Hotel -> Breite Str. (B1): Straßenbahntrasse	3::igndisp -12676,-1742 -12653,-1723 -12733,-1703
+Mercure-Hotel -> Humboldtstr.: Straßenbahntrasse	3::igndisp -12676,-1742 -12653,-1723 -12646,-1702
+Breite Str. (B1) -> Humboldtstr.: Straßenbahntrasse	3::igndisp -12733,-1703 -12653,-1723 -12646,-1702
+Lange Brücke -> Mercure-Hotel: Straßenbahntrasse	3::igndisp -12567,-1817 -12653,-1723 -12676,-1742
+Humboldtstr. -> Mercure-Hotel: Straßenbahntrasse	3::igndisp -12646,-1702 -12653,-1723 -12676,-1742
+Humboldtstr. -> Lange Brücke: Straßenbahntrasse	3::igndisp -12646,-1702 -12653,-1723 -12567,-1817
 Rudolf-Breitscheid-Str.	2 -11056,-1726 -11116,-1681
 Geschwister-Scholl-Str.	1 -14330,-1762 -14213,-1695 -14143,-1662 -14115,-1678
 Zimmerstr.	1 -13646,-1168 -13876,-1226
 Platz der Einheit	1 -12756,-1131 -12741,-1197 -12718,-1327
 Puschkinallee	1 -13042,807 -12912,783 -12868,738 -12827,629 -12815,554 -12811,533
 Geschwister-Scholl-Str.	1 -14213,-1695 -14143,-1662 -14115,-1678
-Straßenbahntrasse	3nocross::ignrte -12786,-1556 -12808,-1488 -12833,-1365
-Friedrich-Ebert-Str. -> Schwertfegerstr.: Straßenbahntrasse	3::igndisp -12786,-1556 -12808,-1488 -12870,-1493
+Straßenbahntrasse	3nocross::ignrte -12790,-1560 -12808,-1488 -12833,-1365
+Friedrich-Ebert-Str. -> Schwertfegerstr.: Straßenbahntrasse	3::igndisp -12790,-1560 -12808,-1488 -12870,-1493
 Schwertfegerstr. -> Friedrich-Ebert-Str.: Straßenbahntrasse	3::igndisp -12870,-1493 -12808,-1488 -12833,-1365
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180:-201 -13772,-623
 Brücke mittlerweile gesperrt	2 -19183,7299 -19150,7320
@@ -897,6 +897,8 @@ Ernst-von-Bergmann-Klinikum	1 -12365,-752 -12360,-772 -12351,-828
 Ernst-von-Bergmann-Klinikum	1 -12351,-828 -12374,-849 -12402,-829 -12413,-789 -12418,-764
 Am Böttcherberg	1s -9565,62 -9541,97 -9539,147
 Ahornallee [Privatstraße] (Mahlsdorf)	1 24637,9828 24527,9850 24513,9796
+Lange Brücke	1s -12493,-1896 -12567,-1817 -12653,-1723 -12733,-1703 -12758,-1689 -12794,-1652
+Heinrich-Mann-Allee	1s -12478,-1879 -12431,-2096
 Zehlendorfer Str. (Teltow)	1 1329,-753 1388,-685
 Poststr. (Hennigsdorf)	1 -3495,25739 -3438,25572
 B1/B5	2 30678,10923 29752,10895 29194,10899 27817,10875
@@ -2295,7 +2297,7 @@ tragen (ca. 30 Stufen)	0:30:-173 8773,10399
 tragen (ca. 25 Stufen)	0:30:-14 -18702,4551
 tragen (11 Stufen)	0:20:-195 -12676,-1742
 tragen (11 Stufen)	0:20:-12 -12685,-1449
-tragen (18 Stufen)	0:25:-234 -12625,-1703
+tragen (9 Stufen)	0:20:-235 -12606,-1694
 tragen (ca. 30 Stufen)	0:30:-246 -13802,-1856
 tragen (ca. 30 Stufen)	0:30:-90 -13733,-1856
 tragen (21 Stufen)	0:30:-127 15091,21172

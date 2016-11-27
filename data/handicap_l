@@ -21,7 +21,7 @@ Holzmarktstr - Humboldtbrücke: Rampe	q2 -11851,-962 -11926,-909 -11851,-954
 Humboldtbrücke - Uferweg: Rampe	q2 -11680,-1084 -11634,-1135 -11702,-1078
 Platz der Einheit (diagonal über den Platz): Fußgänger	q1 -12839,-1342 -12792,-1234 -12756,-1131
 Platz der Einheit (diagonal über den Platz): Fußgänger	q1 -12718,-1327 -12792,-1234 -12870,-1149
-Freundschaftsinsel: Fußgänger	q1 -12256,-1456 -12260,-1503 -12253,-1589 -12396,-1681 -12567,-1817
+Freundschaftsinsel: Fußgänger	q1 -12256,-1456 -12260,-1503 -12253,-1589 -12396,-1681 -12544,-1799
 Prenzlau: enger Radweg für beide Richtungen (ca. 2m)	q1 38700,100937 38939,101112
 (Lustgarten): Fußgänger	q2 -12931,-1761 -12678,-1812
 Akazienweg: enger Weg	q1 2082,31535 2070,31607 1988,31882 1972,31940
@@ -110,7 +110,8 @@ Am Finowkanal: bei schönem Wetter reger Fußgänger- und Fahrradverkehr	q1 38162,4
 (Im Französischen Quartier): eng, Fußgänger	q2 -12601,-1108 -12670,-1120 -12657,-1183
 (Im Französischen Quartier): eng, Fußgänger, Bordstein	q3 -12657,-1183 -12741,-1197
 Am Alten Markt: Fußgänger	q2 -12747,-1336 -12727,-1416 -12694,-1408 -12685,-1449 -12677,-1536
-Am Alten Markt: Fußgänger	q2 -12624,-1598 -12619,-1549 -12677,-1536 -12728,-1539 -12786,-1556
+Am Alten Markt: Fußgänger	q2 -12624,-1598 -12619,-1549 -12677,-1536 -12719,-1542 -12790,-1560
+Steubenplatz: Fußgänger	q2 -12749,-1668 -12719,-1542
 An der Wetzlarer Bahn (Potsdam): einige Fußgänger, kleine Engpässe (schmales geöffnetes Tor für Fußgänger, Brücke)	q2 -9306,-4259 -9642,-4916 -10015,-5551
 Reiherweg (Potsdam): Bordsteine	q4 -14706,301 -14737,300
 Caputher Heuweg: enge Straße	q1 -10188,-5486 -10288,-5562 -10431,-5655 -10535,-5751 -10641,-5814
@@ -140,7 +141,6 @@ Beerenwinkel: eng, nur für Fußgänger	q2 22315,19501 22338,19508
 (Elsternweg - Fasanenstr.): eng, Fußgänger	q2 22054,19341 22049,19268
 (Mohnblumenweg - Kutschersteig): Fußgänger	q1 21619,19235 21638,19181 21660,19120
 Unterführung Bhf. Schönefeld: Fußgänger	q3 18011,-1443 18124,-1540 18095,-1562
-(Parkplatz am Bahnhof): Parkplatzverkehr	q1 -12210,-1858 -12199,-1812 -12170,-1820 -12133,-1760
 Falkenweg: Bordstein an der Oranienburger Chaussee	q4 3803,24652 3820,24654
 Vierwaldstätter Str. (Schwanebeck): einige "Kissen", besonders an Kreuzungen	q1 18439,26277 18281,26008 18226,25889 18171,25619 18133,25321 18111,25169
 Platz der Befreiung: einige Fußgänger	q1 68960,73751 69121,73868
@@ -158,6 +158,8 @@ Osdorfer Str.: einige Fußgänger	q1 1550,-761 1589,-763
 (Patrizierweg - Steinstr.): einige Fußgänger	q1 -7178,-3027 -7115,-3034
 Wollestr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -10717,-1227 -10984,-1574
 Am Böttcherberg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; -9565,62 -9541,97 -9539,147
+Lange Brücke: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -12493,-1896 -12567,-1817 -12653,-1723 -12733,-1703 -12758,-1689 -12794,-1652
+Heinrich-Mann-Allee: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -12478,-1879 -12431,-2096
 Lützlow: Gehweg auf gleichem Niveau wie Fahrbahn: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 52431,94119 52422,94028 52350,93856
 Dorfstr. (Pieskow): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 56031,-14776 55983,-14721
 Sankt Petri: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -46334,-150 -46304,-19

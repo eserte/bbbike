@@ -62,7 +62,7 @@ Hubertusallee/Teplitzer Str.: werden hier Radspuren markiert?	?::projected 2320,
 #: osm_watch: way id="23109081" version="8"
 #: osm_watch: way id="41108858" version="6"
 #: source_id: IM_026443	
-#: last_checked: 2016-09-03
+#: last_checked: 2016-11-26
 #: check_frequency: 90d
 Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4188,2674 -4280,2539 -4290,2304 -4181,2062 -4164,1993 -4180,1941 -4256,1831 -4368,1731 -4492,1624 -4587,1542 -4644,1514 -4744,1466 -4827,1433 -4944,1298
 # 
@@ -405,7 +405,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/holzmarktstrasse/index.shtml
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/holzmarktstrasse/download/LP_01.pdf
 #: source_id: 2147340618
-#: last_checked: 2016-10-08
+#: last_checked: 2016-11-26
 #: next_check: 2017-04-01
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11388,12202 11513,12138 11619,12084 11764,12001
 # 
@@ -1540,10 +1540,7 @@ Hauptstr.: Qualität, Einbahnstraßenregelung...	? 12205,22696 12205,22696 12230,2
 # REMOVED --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1610/nachricht6208.html vvv
 # REMOVED (realisiert) --- Beusselstr.: Markierung von neuen Busspuren?	? 5220,14043 5231,13843 5248,13434
 # REMOVED (realisiert) --- Invalidenstr.: Markierung von neuen Busspuren?	? 7415,13060 7433,13070 7563,13143 7573,13149 7714,13223 7759,13246
-# 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/44re.pdf/file?y=2016
-#: XXX Widmung als öffentliches Straßenland
-Bellevue-Ufer: ist der Weg mittlerweile beleuchtet?	? 7039,12314 6694,12627
+# REMOVED (ja) --- : by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/44re.pdf/file?y=2016 --- #: XXX Widmung als öffentliches Straßenland --- Bellevue-Ufer: ist der Weg mittlerweile beleuchtet?	? 7039,12314 6694,12627
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20161010
 Grünfließer Gang: hat sich hier etwas nach den Bauarbeiten geändert/verbessert?	? 23675,5823 23675,5729 23675,5706 23681,5579
@@ -1842,7 +1839,7 @@ Schleuse - Lindenufer: führt der Havelradweg hier entlang?	? -2942,14666 -2928,1
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2016
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2016
 #: XXX ggfs. culdesac- und str_cont_ausnahme-Einträge erstellen
-#: last_checked: 2016-10-06
+#: last_checked: 2016-11-26
 #: check_frequency: 90d
 Mehlbeerenweg: Teilstück wird eingezogen	? 11940,11982 11923,11881
 # 
@@ -2055,16 +2052,8 @@ Bergmannstr./Heimstr.: wird hier die Vorfahrtsregelung zugunsten des Radwegs geä
 #: by: http://www.potsdam.de/cms/dokumente/15582776_1771576/847336e8/Amtsblatt_10_13.pdf
 Kaninchenberg (Potsdam): befindet sich die Straße hier? Qualität?	? -8960,-5817 -9054,-5905
 # 
-#: XXX fehlt in Potsdam.coords.data, PLZ=14467
-#: by: http://www.potsdam.de/cms/dokumente/15582776_1771576/847336e8/Amtsblatt_10_13.pdf
-Otto-Braun-Platz (Potsdam): befindet sich hier der Platz? Ist er ausgeschildert?	? -12643,-1694
-# 
-#: XXX fehlt in Potsdam.coords.data, PLZ=14467
-#: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_2014_16.pdf
-#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_nr._5_2016_zur_druckfreigabe_0.pdf (Straßenneubenennung)
-#: by: http://www.potsdam.de/sites/default/files/documents/final_16503_amtsblatt_okt16_dsjs_korr3.pdf (eingezeichnet)
-#: last_checked: 2016-03-05
-Steubenplatz (Potsdam): befindet er sich vor dem Landtag? ist er ausgeschildert?	? -12747,-1596 -12728,-1539 -12706,-1515
+# REMOVED (aufgenommen) --- #: XXX fehlt in Potsdam.coords.data, PLZ=14467 --- #: by: http://www.potsdam.de/cms/dokumente/15582776_1771576/847336e8/Amtsblatt_10_13.pdf --- Otto-Braun-Platz (Potsdam): befindet sich hier der Platz? Ist er ausgeschildert?	? -12643,-1694
+# REMOVED (aufgenommen) --- #: XXX fehlt in Potsdam.coords.data, PLZ=14467 --- #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_2014_16.pdf --- #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_nr._5_2016_zur_druckfreigabe_0.pdf (Straßenneubenennung) --- #: by: http://www.potsdam.de/sites/default/files/documents/final_16503_amtsblatt_okt16_dsjs_korr3.pdf (eingezeichnet) --- #: last_checked: 2016-03-05 --- Steubenplatz (Potsdam): befindet er sich vor dem Landtag? ist er ausgeschildert?	? -12747,-1596 -12719,-1542 -12706,-1515
 # 
 #: XXX fehlt wahrscheinlich in Potsdam.coords.data, PLZ=14467
 #: by: http://www.potsdam.de/cms/dokumente/15582776_1771576/847336e8/Amtsblatt_10_13.pdf
@@ -4969,5 +4958,4 @@ Philipp-Gerlach-Weg - Brunsbütteler Damm: existiert hier für Radfahrer eine Verb
 #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_nr._9_2016_neu_0.pdf
 Blumenstr. - Am Krongut: existiert hier eine Verbindung für Radfahrer? Qualität? Nachts beleuchtet?	? -15050,268 -15043,148 -15085,144
 # 
-#: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_nr._9_2016_neu_0.pdf
-Hebbelstr. - Charlottenstr.: existiert hier ein Geh/Radweg?	? -12512,-911 -12504,-912 -12488,-999
+# REMOVED (aufgenommen) --- #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_nr._9_2016_neu_0.pdf --- Hebbelstr. - Charlottenstr.: existiert hier ein Geh/Radweg?	? -12512,-911 -12493,-914 -12488,-999

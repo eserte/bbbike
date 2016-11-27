@@ -11247,7 +11247,7 @@ EOF
        text  => 'Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Unter Umständen Umfahrung über Alten Markt notwendig. ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork -12758,-1654 -12776,-1575 -12786,-1556
+userdel	2::inwork -12758,-1654 -12776,-1575 -12790,-1560
 EOF
      },
      { from  => 1211228399, # 2008-05-19 22:19
@@ -15367,7 +15367,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.potsdam.de/cms/beitrag/10051448/757395/',
        data  => <<EOF,
-userdel	2::inwork -12669,-1768 -12608,-1715
+userdel	2::inwork -12669,-1768 -12596,-1701
 EOF
      },
      { from  => 1249768800, # 2009-08-09 00:00
@@ -15490,9 +15490,9 @@ EOF
 	2::night -11650,590 -11603,721 -11615,853
 	2::night -11510,810 -11562,918 -11575,1031 -11537,1206 -11544,1262 -11580,1281 -11871,1185 -11990,1214 -12124,1359 -12135,1358
 	2::night -11615,853 -11510,810 -11412,784 -11392,762 -11231,696
-(Ökonomieweg, Neuer Garten): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::night -12528,-11 -12518,13 -12537,48 -12531,75 -12475,116 -12448,246 -12373,288 -12276,554 -12205,732 -12182,788 -12154,963 -12180,1131 -12161,1211 -12141,1267 -12133,1323 -12135,1358 -12166,1384
-Neuer Garten, Westufer des Heiligen Sees: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::night -12265,-418 -12263,-403 -12262,-393 -12262,-362 -12328,-212 -12334,-114 -12321,9 -12293,110 -12222,186 -12227,219 -12177,283 -12115,409 -12068,384 -11990,790 -11950,781 -11887,837 -11856,950 -11818,993
-Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::night -12334,-114 -12424,-107 -12453,-36 -12518,13 -12561,35
+(Ökonomieweg, Neuer Garten): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -12528,-11 -12518,13 -12537,48 -12531,75 -12475,116 -12448,246 -12373,288 -12276,554 -12205,732 -12182,788 -12154,963 -12180,1131 -12161,1211 -12141,1267 -12133,1323 -12135,1358 -12166,1384
+Neuer Garten, Westufer des Heiligen Sees: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -12265,-418 -12263,-403 -12262,-393 -12262,-362 -12328,-212 -12334,-114 -12321,9 -12293,110 -12222,186 -12227,219 -12177,283 -12115,409 -12068,384 -11990,790 -11950,781 -11887,837 -11856,950 -11818,993
+Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -12334,-114 -12424,-107 -12453,-36 -12518,13 -12561,35
 Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -12332,585 -12276,554 -12115,409
 	2::night -12263,-403 -12280,-385 -12306,-378 -12357,-307 -12371,-284 -12396,-298
 	2::night -12449,-186 -12440,-181 -12449,-134 -12424,-107
@@ -17253,11 +17253,11 @@ EOF
 userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998
 EOF
      },
-     { from  => $isodate2epoch->("2015-12-27 06:00:00"), # siehe auch anderen Eintrag mit weiteren Sperrungen am 31. und 1.
-       until => $isodate2epoch->("2016-01-02 23:59:59"),
+     { from  => $isodate2epoch->("2016-12-27 06:00:00"), # siehe auch anderen Eintrag mit weiteren Sperrungen am 31. und 1.
+       until => $isodate2epoch->("2017-01-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 12]],
-       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., vom 28.12.2015 bis 02.01.2016',
+       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., vom 28.12.2016 bis 02.01.2017',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
@@ -21325,7 +21325,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.potsdam.de/cms/dokumente/10050614_996205/9f652b1a/Radverkehrsfuehrung_Potsdamer_Mitte_22_04k.pdf
-userdel	1::inwork -12655,-1714 -12730,-1681 -12758,-1654
+userdel	1::inwork -12653,-1723 -12733,-1703 -12758,-1689 -12794,-1652
 EOF
      },
      { from  => 1366740818, # 2013-04-23 20:13
@@ -21337,8 +21337,8 @@ EOF
 #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
 #: source_id: 2147339529
-#: last_checked: 2016-09-12
-#: next_check: 2016-12-01
+#: last_checked: 2016-11-26
+#: next_check: 2016-12-16
 userdel	q2::inwork 5258,11285 5236,10994
 EOF
      },
@@ -22615,13 +22615,14 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Wege am Havelufer wegen Bauarbeiten gesperrt',
+       text  => 'Brauerstr.: wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
-#: last_checked: 2016-03-05
-#: check_frequency: 90d
-userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
+#: osm_watch: way id="43141418" version="7" brb
+#: last_checked: 2016-11-26
+userdel	2::inwork -12583,-1552 -12485,-1482
+# REMOVED --- userdel	2::inwork -12485,-1482 -12474,-1559 -12596,-1701
 EOF
      },
      { from  => 1394924400, # 2014-03-16 00:00
@@ -24836,11 +24837,11 @@ EOF
 userdel	2::inwork 20640,7122 20722,6971
 EOF
      },
-     { from  => 1451473200, # 2015-12-30 12:00 # siehe auch anderen Eintrag mit früheren Sperrungen
-       until => 1451646000, # 2016-01-01 12:00
+     { from  => $isodate2epoch->("2016-12-30 12:00:00"), # 1451473200, # 2015-12-30 12:00 # siehe auch anderen Eintrag mit früheren Sperrungen
+       until => $isodate2epoch->("2017-01-01 12:00:00"), # )1451646000, # 2016-01-01 12:00
        periodic => 1,
        recurrences => [['yearly', days => 31, months => 12]],
-       text  => 'Regierungsviertel u.a. Dorotheenstr., Scheidemannstr., Heinrich-von-Gagern-Str. und Paul-Löbe-Allee: wegen Silvesterparty gesperrt, vom 31.12.2015 12:00 Uhr bis 01.01.2016 12:00 Uhr',
+       text  => 'Regierungsviertel u.a. Dorotheenstr., Scheidemannstr., Heinrich-von-Gagern-Str. und Paul-Löbe-Allee: wegen Silvesterparty gesperrt, vom 31.12.2016 12:00 Uhr bis 01.01.2017 12:00 Uhr',
        type  => 'gesperrt',
        source_id => '2147339665',
        data  => <<EOF,
@@ -25495,7 +25496,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2016-11-22 vvv
+#: last_checked: 2016-11-26 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -25673,6 +25674,16 @@ EOF
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1611/nachricht6250.html',
        data  => <<EOF,
 userdel	2::inwork 14363,8738 14335,8771 14327,8856 14290,8907 14211,8909 14151,8967
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Freundschaftsinsel: nur zwischen 7 Uhr und Einbruch der Dunkelheit offen',
+       type  => 'gesperrt',
+       recurring => 1,
+       source_id => 'http://www.potsdam.de/content/freundschaftsinsel-2',
+       data  => <<EOF,
+	2::night -12544,-1799 -12396,-1681 -12253,-1589 -12260,-1503 -12256,-1456
 EOF
      },
     );

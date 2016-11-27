@@ -450,26 +450,7 @@ userdel	2::xmas 5656,10876 5652,11004
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.weihnachteninberlin.de/weihnachtsmaerkte/tempelhof-schoeneberg/1310676-1328179-lichtenraderlichtermarkt.html
-userdel	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
-',
-         'from' => 1480114800,
-         'id' => 417,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              26,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 27. November 2016 von 13 bis 19 Uhr)',
-         'type' => 'gesperrt',
-         'until' => 1480273200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1889,9 +1870,9 @@ Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am 
 	2::night -11650,590 -11603,721 -11615,853
 	2::night -11510,810 -11562,918 -11575,1031 -11537,1206 -11544,1262 -11580,1281 -11871,1185 -11990,1214 -12124,1359 -12135,1358
 	2::night -11615,853 -11510,810 -11412,784 -11392,762 -11231,696
-(Ökonomieweg, Neuer Garten): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::night -12528,-11 -12518,13 -12537,48 -12531,75 -12475,116 -12448,246 -12373,288 -12276,554 -12205,732 -12182,788 -12154,963 -12180,1131 -12161,1211 -12141,1267 -12133,1323 -12135,1358 -12166,1384
-Neuer Garten, Westufer des Heiligen Sees: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::night -12265,-418 -12263,-403 -12262,-393 -12262,-362 -12328,-212 -12334,-114 -12321,9 -12293,110 -12222,186 -12227,219 -12177,283 -12115,409 -12068,384 -11990,790 -11950,781 -11887,837 -11856,950 -11818,993
-Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet 	2::night -12334,-114 -12424,-107 -12453,-36 -12518,13 -12561,35
+(Ökonomieweg, Neuer Garten): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -12528,-11 -12518,13 -12537,48 -12531,75 -12475,116 -12448,246 -12373,288 -12276,554 -12205,732 -12182,788 -12154,963 -12180,1131 -12161,1211 -12141,1267 -12133,1323 -12135,1358 -12166,1384
+Neuer Garten, Westufer des Heiligen Sees: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -12265,-418 -12263,-403 -12262,-393 -12262,-362 -12328,-212 -12334,-114 -12321,9 -12293,110 -12222,186 -12227,219 -12177,283 -12115,409 -12068,384 -11990,790 -11950,781 -11887,837 -11856,950 -11818,993
+Neuer Garten (am Portierhaus) - Weinmeisterstr.: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -12334,-114 -12424,-107 -12453,-36 -12518,13 -12561,35
 Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -12332,585 -12276,554 -12115,409
 	2::night -12263,-403 -12280,-385 -12306,-378 -12357,-307 -12371,-284 -12396,-298
 	2::night -12449,-186 -12440,-181 -12449,-134 -12424,-107
@@ -2441,7 +2422,31 @@ userdel	2::xmas 13288,7653 13278,7673 13245,7742
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
+userdel	2::temp 8731,12270 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+userdel	2::temp 8055,12186 8119,12414
+userdel	2::temp 8522,12239 8466,12197
+userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+',
+         'from' => 1482814800,
+         'id' => 2010,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              12
+                            ]
+                          ],
+         'text' => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., vom 28.12.2016 bis 02.01.2017',
+         'type' => 'gesperrt',
+         'until' => 1483397999
+       },
        undef,
        undef,
        undef,
@@ -3050,8 +3055,8 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
 #: source_id: 2147339529
-#: last_checked: 2016-09-12
-#: next_check: 2016-12-01
+#: last_checked: 2016-11-26
+#: next_check: 2016-12-16
 userdel	q2::inwork 5258,11285 5236,10994
 ',
          'from' => 1366740818,
@@ -3326,26 +3331,7 @@ userdel	2::night 17671,13132 17684,13133
          'type' => 'gesperrt',
          'until' => 1482101999
        },
-       {
-         'data' => 'userdel	2::xmas 11317,14564 11255,14572 11155,14554
-',
-         'from' => 1480158000,
-         'id' => 2518,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              26,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 27. November 2016, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1480269600
-       },
+       undef,
        {
          'data' => 'userdel	2::xmas 11317,14564 11255,14572 11155,14554
 ',
@@ -3466,13 +3452,14 @@ userdel	1::xmas -13556,-1182 -13643,-1220
        undef,
        {
          'data' => '#: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
-#: last_checked: 2016-03-05
-#: check_frequency: 90d
-userdel	2::inwork -12583,-1552 -12485,-1482 -12608,-1715
+#: osm_watch: way id="43141418" version="7" brb
+#: last_checked: 2016-11-26
+userdel	2::inwork -12583,-1552 -12485,-1482
+# REMOVED --- userdel	2::inwork -12485,-1482 -12474,-1559 -12596,-1701
 ',
          'from' => undef,
          'id' => 2544,
-         'text' => 'Wege am Havelufer wegen Bauarbeiten gesperrt',
+         'text' => 'Brauerstr.: wegen Bauarbeiten gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -3836,7 +3823,34 @@ userdel	q4::xmas 11064,12910 11134,12793
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 8485,12612 8399,12610 8348,12609 8306,12609 8207,12606 8122,12603 8119,12414 8354,12416 8400,12417 8540,12420
+userdel	2::temp 8348,12609 8354,12416
+	2::temp 8207,12606 8206,12757
+userdel auto	3 7945,12592 8122,12603 8120,12756
+userdel auto	3 8391,12389 8400,12417 8399,12610
+userdel auto	3 8070,12409 8119,12414 8055,12186
+userdel auto	3 8399,12610 8400,12417 8391,12389
+userdel auto	3 8120,12756 8122,12603 7945,12592
+userdel auto	3 8055,12186 8119,12414 8070,12409
+',
+         'from' => 1483095600,
+         'id' => 2767,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              31,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => '2147339665',
+         'text' => 'Regierungsviertel u.a. Dorotheenstr., Scheidemannstr., Heinrich-von-Gagern-Str. und Paul-Löbe-Allee: wegen Silvesterparty gesperrt, vom 31.12.2016 12:00 Uhr bis 01.01.2017 12:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1483268400
+       },
        undef,
        undef,
        undef,
@@ -3879,17 +3893,7 @@ userdel	2::night 16196,18364 16315,18208
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: source_id: 2147340012
-userdel	q4::inwork; 25010,4807 25171,4757 25228,4745 25248,4752 25369,4790 25434,4825 25477,4832 25519,4830
-',
-         'from' => 1462053600,
-         'id' => 2781,
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.469998.php',
-         'text' => 'Müggelseedamm: Bauarbeiten zwischen Charlotte-E.-Pauly-Str. und Bölschestr., Fahrbahn in Richtung Osten gesperrt, 2. Mai 2016 bis Ende November 2016',
-         'type' => 'handicap',
-         'until' => 1480158000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4019,7 +4023,7 @@ userdel	q4::inwork 6587,16199 6484,16085
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2016-11-22 vvv
+#: last_checked: 2016-11-26 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -4129,6 +4133,19 @@ userdel	q4::inwork 4646,6875 4767,6717
          'text' => 'Geisenheimer Str.: zwischen Rauenthaler Straße und Gritznerstraße Tiefbauarbeiten, Fahrbahn gesperrt, bis 09.12.2016',
          'type' => 'handicap',
          'until' => 1481324400
+       },
+       undef,
+       undef,
+       {
+         'data' => '	2::night -12544,-1799 -12396,-1681 -12253,-1589 -12260,-1503 -12256,-1456
+',
+         'from' => undef,
+         'id' => 2842,
+         'recurring' => 1,
+         'source_id' => 'http://www.potsdam.de/content/freundschaftsinsel-2',
+         'text' => 'Freundschaftsinsel: nur zwischen 7 Uhr und Einbruch der Dunkelheit offen',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

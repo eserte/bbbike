@@ -581,7 +581,7 @@ Griebnitzstr. (Potsdam): Kopfsteinpflaster	Q2 -9627,-27 -9433,-64
 Griebnitzstr. (Potsdam): Waldweg	Q1 -9433,-64 -9375,-117
 Albert-Einstein-Str. (Potsdam): Kopfsteinpflaster	Q2+ -12358,-2278 -12330,-2297
 Albert-Einstein-Str. (Potsdam): asphaltiert, im Wohngebiet teils mäßige Stellen, im Wald sehr gut	Q0- -12330,-2297 -12335,-2571 -12317,-2637 -12219,-2760 -12222,-2932
-Schloßstr. (Potsdam): Kopfsteinpflaster	Q2 -12923,-1558 -12882,-1565 -12776,-1575
+Schloßstr. (Potsdam): Kopfsteinpflaster	Q2 -12923,-1558 -12882,-1565 -12815,-1575 -12790,-1560
 Johannes-Lepsius-Str.: Asphalt	Q0 -13240,32 -13232,98 -13226,157 -13225,179 -13209,260
 Johannes-Lepsius-Str.: Verbundsteinpflaster	Q0- -13209,260 -13244,281
 (Johannes-Lepsius-Str. - Kiepenheuerallee): Asphalt	Q0 -13244,281 -13203,434
@@ -1501,7 +1501,7 @@ Kopfsteinpflaster	Q2 -16243,3284 -16196,3300 -15921,3268
 #: add_fragezeichen: stimmt das?
 asphaltiert	Q0 -15921,3268 -15821,3240 -15459,2946
 asphaltiert	Q0 -16295,2475 -15459,2946 -15034,3150 -14382,3066 -13840,2956 -13581,3075 -13387,2987
-Freundschaftsinsel: Parkweg	Q1 -12260,-1503 -12253,-1589 -12396,-1681 -12567,-1817
+Freundschaftsinsel: Parkweg	Q1 -12260,-1503 -12253,-1589 -12396,-1681 -12544,-1799
 Schlaatzstr.: Kopfsteinpflaster	Q2+ -11694,-2245 -11579,-2333 -11487,-2373
 Schlaatzstr. - Horstweg: asphaltiert	Q0 -11487,-2373 -11425,-2384
 Schlaatzstr. - Horstweg: betoniert	Q0 -11425,-2384 -11422,-2425 -11240,-2525
@@ -1781,7 +1781,8 @@ Köhlerplatz (Potsdam): Kopfsteinpflaster	Q2 -13876,-1226 -13876,-1263
 Kastanienallee (Potsdam): Kopfsteinpflaster, Tram auf Fahrbahn	Q2 -14909,-1818 -14896,-1968 -14881,-2098 -14868,-2244 -14859,-2384
 bei Zechow: Asphalt	Q0 -26350,70262 -24687,71412 -24162,71612
 dt. Alleenstraße: Asphalt	Q0 -24436,65301 -22589,66989 -22477,67059 -21066,67757 -20469,68007
-An der Alten Fahrt: Parkweg	Q1 -12608,-1715 -12485,-1482 -12265,-1434 -12114,-1409 -12110,-1379
+An der Alten Fahrt: Kleinsteinpflaster	Q1- -12669,-1768 -12596,-1701 -12474,-1559
+An der Alten Fahrt: Parkweg	Q1 -12474,-1559 -12485,-1482 -12265,-1434 -12114,-1409 -12110,-1379
 Burgstr.: Kopfsteinpflaster	Q2 -12110,-1379 -12062,-1378
 #: by: phelim: vvv
 Burgstr.: Beton	Q1 -12500,-1437 -12422,-1416 -12281,-1378 -12265,-1434
@@ -1794,7 +1795,7 @@ Am Alten Markt: Asphalt	Q0 -12666,-1311 -12657,-1338 -12628,-1423
 #: note: "historisierendes" Verbundsteinpflaster
 Alter Markt: Verbundsteinpflaster	Q0- -12628,-1423 -12614,-1471 -12583,-1552
 # REMOVED (wahrscheinlich permanent?) --- #: note: aus der Straßenbahn heraus gesehen: --- #: XXX bleibt der Asphalt in Zukunft bestehen, oder wird er durch Verbundsteinpflaster ersetzt? --- #: last_checked: 2013-05-09 --- #: next_check: 2013-09-01
-Humboldtstr.: Asphalt	Q0 -12655,-1714 -12643,-1694 -12624,-1598 -12583,-1552
+Humboldtstr.: Asphalt	Q0 -12653,-1723 -12646,-1702 -12643,-1694 -12624,-1598 -12583,-1552
 Ebräerstr.: Kopfsteinpflaster, evtl. OK	Q2 -12981,-1222 -12854,-1243
 Wilhelm-Staab-Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ -13001,-1329 -12988,-1265 -12981,-1222 -12961,-1105
 Eltesterstr.: Kopfsteinpflaster	Q2 -12062,-1378 -11981,-1390
@@ -1807,8 +1808,7 @@ Uferpromenade im Babelsberger Park: Parkweg, teilweise etwas uneben	Q1 -9965,-10
 Uferpromenade und Hauptweg im Babelsberger Park: asphaltiert	Q1+ -10895,-246 -11055,-461 -11136,-687 -11127,-812 -11040,-887 -11081,-1303 -11084,-1396
 Uferpromenade im Babelsberger Park: Parkweg, kurzes Stück Kopfsteinpflaster	Q1 -11136,-687 -11189,-805 -11284,-909 -11425,-1001 -11452,-974 -11494,-1014 -11531,-1021 -11597,-989 -11657,-1018
 Uferpromenade: überwiegend guter Parkweg	Q1 -11657,-1018 -11702,-1078 -11719,-1189 -11767,-1265 -11753,-1334 -11729,-1382 -11899,-1544 -11952,-1596 -12059,-1617 -12102,-1582 -12363,-1742
-#: XXX hier mittlerweile asphaltiert?
-Uferpromenade - S-Bhf. Potsdam Hauptbahnhof: überwiegend guter Parkweg	Q1 -12363,-1742 -12457,-1857
+Uferpromenade - S-Bhf. Potsdam Hauptbahnhof: Asphalt	Q0 -12363,-1742 -12457,-1857
 (Unterführung Lange Brücke): asphaltiert	Q0 -12363,-1742 -12377,-1743 -12557,-1900
 (Uferweg): asphaltiert	Q0 -12557,-1900 -12625,-1956 -12721,-2082 -12754,-2154
 Breite Str. - Auf dem Kiewitt: gute Parkwege oder Gehwegplatten	Q1 -13764,-1460 -13865,-1618 -14009,-1678 -13979,-1842
@@ -2165,11 +2165,11 @@ Schloßstr.: Kopfsteinpflaster	Q2 -12946,-1659 -12940,-1625 -12927,-1576 -12923,-
 Am Hinzenberg: Beton	Q0 -12708,-1928 -12894,-2111 -12946,-2119
 Am Hinzenberg: gute Pflasterung	Q0 -12708,-1928 -12678,-1812 -12669,-1768
 Alter Markt: gepflastert	Q2+ -12614,-1471 -12619,-1549 -12624,-1598
-Alter Markt: gepflastert	Q2+ -12583,-1552 -12619,-1549 -12677,-1536 -12728,-1539
+Alter Markt: gepflastert	Q2+ -12583,-1552 -12619,-1549 -12677,-1536 -12719,-1542
 #: XXX bleibt es hier asphaltiert?
-#: last_checked: 2016-03-05
+#: last_checked: 2016-11-26
 #: check_frequency: 180d
-Alter Markt: provisorischer Asphalt	Q0- -12728,-1539 -12786,-1556
+Alter Markt: provisorischer Asphalt	Q0- -12719,-1542 -12790,-1560
 Schwertfegerstr.: teils schlechtes Kopfsteinpflaster	Q3 -12808,-1488 -12870,-1493
 Am Neuen Markt: mäßiges bis schlechtes Kopfsteinpflaster	Q2- -12882,-1565 -12870,-1493
 Am Neuen Markt: teils schlechtes Kopfsteinpflaster	Q3 -12870,-1493 -12865,-1462 -12913,-1451
@@ -3593,8 +3593,8 @@ Friesenstr. (Potsdam): Asphalt	Q0 -10634,-2159 -10653,-2276
 (zur Edison-Allee): Verbundsteinpflaster	Q1 -11173,-1743 -11180,-1756
 Max-Volmer-Str.: Beton	Q1 -11535,-1869 -11441,-1731
 (Humboldtring - Nuthestr.): Asphalt	Q0 -11540,-1543 -11439,-1344 -11427,-1294
-(Parkplatz am Bahnhof): Asphalt	Q0 -12210,-1858 -12199,-1812 -12170,-1820 -12133,-1760
-(Potsdam Hbf. - Uferweg): wassergebundene Decke	Q1 -12133,-1760 -12122,-1737 -12103,-1679 -12059,-1617
+# REMOVED (existiert nicht mehr) --- (Parkplatz am Bahnhof): Asphalt	Q0 -12199,-1812 -12170,-1820 -12133,-1760
+# REMOVED (existiert nicht mehr) --- (Potsdam Hbf. - Uferweg): wassergebundene Decke	Q1 -12133,-1760 -12122,-1737 -12103,-1679 -12059,-1617
 Holzmarktstr - Humboldtbrücke: sehr gute Pflasterung	Q0 -11851,-962 -11926,-909 -11851,-954
 Hönow - Krummensee (Radweg): Asphalt	Q0 26624,16752 27935,17072 28114,17108
 Hönow - Krummensee (Radweg): Schotter	Q2 28114,17108 28141,17137
@@ -3867,6 +3867,8 @@ Waltraudstr.: Kopfsteinpflaster	Q2 -4025,-3231 -4034,-3289 -3942,-3617
 Am Kiebitzfenn: unbefestigte Straße	Q2 -4161,-3212 -4154,-3263 -4046,-3623 -4010,-3717
 Am Birkenhügel (Kienwerder): unbefestigte Straße	Q2 -4261,-3576 -4308,-3384 -4341,-3227
 Reiherweg (Kienwerder): unbefestigte Straße	Q2 -4498,-3428 -4400,-3403 -4308,-3384
+(Hebbelstr. - Charlottenstr.): Verbundsteinpflaster	Q1+ -12512,-911 -12493,-914 -12488,-999
+Lange Brücke: Asphalt	Q0 -12478,-1879 -12544,-1799 -12616,-1715 -12646,-1702
 ######################### User Contributions #################################
 #: by: mopedfahrerrr:
 #: confirmed_by: anonymous:
