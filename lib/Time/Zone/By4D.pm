@@ -68,6 +68,16 @@ sub get_timeoffset {
     $timezone->offset_for_datetime($dt);
 }
 
+# Return time offset as [+-]hh:mm
+sub get_iso8601_timeoffset {
+    my $s = get_timeoffset(@_);
+    my $sgn = $s < 0 ? '-' : '+';
+    $s = abs($s);
+    my $min = int($s/60) % 60;
+    my $h = int($s/3600);
+    sprintf "%s%02d:%02d", $sgn, $h, $min;
+}
+
 1;
 
 __END__
@@ -80,11 +90,19 @@ Time::Zone::By4D - get time zone name for given location and time
 
     use Time::Zone::By4D;
     my $timezone = Time::Zone::By4D::get_timezone($longitude, $latitude, $epoch);
+    my $offset     = Time::Zone::By4D::get_timeoffset($longitude, $latitude, $epoch);
+    my $offset8601 = Time::Zone::By4D::get_8601_timeoffset($longitude, $latitude, $epoch);
 
 =head1 DESCRIPTION
 
 For the given longitude/latitude and epoch time return the time zone
 name for this location at this time.
+
+The C<get_timeoffset> function returns the offset in seconds for the
+guessed time zone.
+
+The C<get_8601_timezone> function returns the offset as I<+hh:mm> or
+I<-hh:mm>, suitable for inclusion in ISO 8601 times.
 
 Currently only a limited implementation: most of South and Central
 Europe is covered, starting from 1981. For simplicity reasons,

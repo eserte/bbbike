@@ -23,7 +23,9 @@ for my $def (
     my($lon,$lat,$place) = @$def;
     is Time::Zone::By4D::get_timezone($lon,$lat,time), 'Europe/Berlin', "in $place";
     is Time::Zone::By4D::get_timeoffset($lon,$lat,1402839390), 7200, "time offset in $place (with DST)";
+    is Time::Zone::By4D::get_iso8601_timeoffset($lon,$lat,1402839390), '+02:00', "time offset in $place (with DST) for ISO8601";
     is Time::Zone::By4D::get_timeoffset($lon,$lat,1387287410), 3600, "time offset in $place (without DST)";
+    is Time::Zone::By4D::get_iso8601_timeoffset($lon,$lat,1387287410), '+01:00', , "time offset in $place (without DST) for ISO8601";
 }
 
 for my $def (
@@ -32,7 +34,9 @@ for my $def (
     my($lon,$lat,$place) = @$def;
     is Time::Zone::By4D::get_timezone($lon,$lat,time), 'Europe/London', "in $place";
     is Time::Zone::By4D::get_timeoffset($lon,$lat,1402839390), 3600, "time offset in $place (with DST)";
+    is Time::Zone::By4D::get_iso8601_timeoffset($lon,$lat,1402839390), '+01:00', "time offset in $place (with DST) for ISO8601";
     is Time::Zone::By4D::get_timeoffset($lon,$lat,1387287410),    0, "time offset in $place (without DST)";
+    is Time::Zone::By4D::get_iso8601_timeoffset($lon,$lat,1387287410), '+00:00', "time offset in $place (without DST) for ISO8601";
 }
 
 {
