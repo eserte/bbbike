@@ -48,7 +48,7 @@ while(1) {
 	if ($datatype eq 'vorfahrt') {
 	    if ($r->[Strassen::CAT] =~ m{^Vf($|::)}) {
 		if (scalar @{$r->[Strassen::COORDS]} != 3) {
-		    push @err, "Vf entry in vorfahrt file must have exactly 3 points (pos @{[ $s->pos ]})";
+		    push @err, "Vf entry in vorfahrt file must have exactly 3 points (pos @{[ $s->pos ]}, coords \"@{$r->[Strassen::COORDS]}\")";
 		}
 	    } elsif ($r->[Strassen::CAT] eq 'Kz') {
 		if (scalar @{$r->[Strassen::COORDS]} != 1) {
