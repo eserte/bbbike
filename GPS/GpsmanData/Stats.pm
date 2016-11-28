@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2010,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2010,2013,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,9 +15,11 @@ package GPS::GpsmanData::Stats;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 use POSIX qw(strftime);
+
+use Time::Zone::By4D ();
 
 use constant ISODATE_FMT => "%Y-%m-%dT%H:%M:%S";
 
@@ -66,8 +68,8 @@ sub run_stats {
     my $min_speed = undef;
     my %vehicles;
     my %tags;
-    my $min_epoch;
-    my $max_epoch;
+    my($min_epoch, $min_wpt);
+    my($max_epoch, $max_wpt);
 
     my($bbox_minx, $bbox_miny, $bbox_maxx, $bbox_maxy);
 
@@ -94,8 +96,8 @@ sub run_stats {
 
 	my($chunk_bbox_minx, $chunk_bbox_miny, $chunk_bbox_maxx, $chunk_bbox_maxy);
 
-	my $chunk_min_epoch;
-	my $chunk_max_epoch;
+	my($chunk_min_epoch, $chunk_min_wpt);
+	my($chunk_max_epoch, $chunk_max_wpt);
 
 	my $last_wpt;
 	for my $wpt (@{ $chunk->Track }) {
@@ -115,9 +117,11 @@ sub run_stats {
 		my $time0 = $last_wpt->Comment_to_unixtime($chunk);
 		if (!defined $chunk_min_epoch) {
 		    $chunk_min_epoch = $time0;
+		    $chunk_min_wpt = $last_wpt;
 		}
 		my $time1 = $wpt->Comment_to_unixtime($chunk);
 		$chunk_max_epoch = $time1;
+		$chunk_max_wpt = $wpt;
 		my $hop_duration = $time1-$time0;
 		my $hop_dist = $chunk->wpt_dist($last_wpt, $wpt);
 		if ($hop_duration > 0) { # negative duration may happen if the GPS clock was adjusted in midst
@@ -157,8 +161,8 @@ sub run_stats {
 			     vehicle   => $vehicle,
 			     (defined $tag ? (tags => [split /\s+/, $tag]) : ()),
 			     bbox      => [$chunk_bbox_minx, $chunk_bbox_miny, $chunk_bbox_maxx, $chunk_bbox_maxy],
-			     (defined $chunk_min_epoch ? (min_datetime => strftime ISODATE_FMT, localtime($chunk_min_epoch)) : ()),
-			     (defined $chunk_max_epoch ? (max_datetime => strftime ISODATE_FMT, localtime($chunk_max_epoch)) : ()),
+			     (defined $chunk_min_epoch ? (min_datetime => _get_wpt_isodate($chunk_min_epoch, $chunk_min_wpt)) : ()),
+			     (defined $chunk_max_epoch ? (max_datetime => _get_wpt_isodate($chunk_max_epoch, $chunk_max_wpt)) : ()),
 			   };
 
 	$duration += $chunk_duration;
@@ -193,9 +197,11 @@ sub run_stats {
 
 	if (defined $chunk_min_epoch && (!defined $min_epoch || $chunk_min_epoch < $min_epoch)) {
 	    $min_epoch = $chunk_min_epoch;
+	    $min_wpt   = $chunk_min_wpt;
 	}
 	if (defined $chunk_max_epoch && (!defined $max_epoch || $chunk_max_epoch > $max_epoch)) {
 	    $max_epoch = $chunk_max_epoch;
+	    $max_wpt   = $chunk_max_wpt;
 	}
     }
     
@@ -271,8 +277,8 @@ sub run_stats {
 		   bbox      => [$bbox_minx, $bbox_miny, $bbox_maxx, $bbox_maxy],
 		   route     => [map { $_->Longitude . ',' . $_->Latitude } @route_wpts],
 		   route_areas => [@route_areas],
-		   (defined $min_epoch ? (min_datetime => strftime ISODATE_FMT, localtime($min_epoch)) : ()),
-		   (defined $max_epoch ? (max_datetime => strftime ISODATE_FMT, localtime($max_epoch)) : ()),
+		   (defined $min_epoch ? (min_datetime => _get_wpt_isodate($min_epoch, $min_wpt)) : ()),
+		   (defined $max_epoch ? (max_datetime => _get_wpt_isodate($max_epoch, $max_wpt)) : ()),
 		 });
 }
 
@@ -355,6 +361,17 @@ sub _find_nearest_place {
 	}
     } else {
 	return undef;
+    }
+}
+
+sub _get_wpt_isodate {
+    my($epoch, $wpt) = @_;
+    if ($wpt) {
+	my $offset      = Time::Zone::By4D::get_timeoffset($wpt->Longitude, $wpt->Latitude, $epoch);
+	my $offset_8601 = Time::Zone::By4D::get_iso8601_timeoffset($wpt->Longitude, $wpt->Latitude, $epoch);
+	strftime(ISODATE_FMT, gmtime($epoch + $offset)) . $offset_8601;
+    } else {
+	strftime(ISODATE_FMT, localtime($epoch));
     }
 }
 
