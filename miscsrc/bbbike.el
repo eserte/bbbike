@@ -436,7 +436,7 @@
 
 (defun bbbike-grep ()
   (interactive)
-  (let (search-key search-val)
+  (let (search-key search-val dirop)
     (save-excursion
       (beginning-of-line)
       (if (looking-at "^#:[ ]*\\(next_check_id\\):?[ ]*\\([^ \n]+\\)")
@@ -445,7 +445,11 @@
 	    (setq search-val (buffer-substring (match-beginning 2) (match-end 2))))))
     (if (not search-val)
 	(error "Can't find anything to grep for"))
+    (if (string-match "/temp_blockings/" buffer-file-name)
+	(setq dirop "../")
+      (setq dirop ""))
     (if search-key
-	(grep (concat "2>/dev/null grep -ins *-orig *.coords.data temp_blockings/bbbike-temp-blockings.pl -e '" search-key ".*" search-val "'")))))
+	(grep (concat "2>/dev/null grep -ins " dirop "*-orig " dirop "*.coords.data " dirop "temp_blockings/bbbike-temp-blockings.pl -e '" search-key ".*" search-val "'")))))
 
+      
 (provide 'bbbike-mode)
