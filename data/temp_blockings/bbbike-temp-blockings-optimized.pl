@@ -159,26 +159,7 @@ userdel	2::xmas -3231,14383 -3293,14304
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::xmas 9986,13412 10317,13248
-',
-         'from' => 1480028400,
-         'id' => 166,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              25,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (26.11.2016 - 27.11.2016)',
-         'type' => 'gesperrt',
-         'until' => 1480287599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4023,7 +4004,7 @@ userdel	q4::inwork 6587,16199 6484,16085
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2016-11-26 vvv
+#: last_checked: 2016-11-28 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -4097,19 +4078,7 @@ userdel	q3::inwork 4564,3457 4800,3391 4862,3363 5022,3318
          'type' => 'handicap',
          'until' => 1481893200
        },
-       {
-         'data' => '#: next_check_id: RUEDERSDORFER-2016
-#: last_checked: 2016-11-25
-#: check_frequency: 14d
-# REMOVED --- userdel	q3::inwork 13295,11792 13173,11788
-userdel	q3::inwork 13173,11788 13066,11854
-',
-         'from' => undef,
-         'id' => 2835,
-         'text' => 'Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: note: laut vmz bis Mitte August 2018 und nur bis zur Bahnbrücke, laut fritz bis 1.7.2018
 #: XXX Behinderungen für Radfahrer?

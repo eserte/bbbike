@@ -25496,7 +25496,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2016-11-26 vvv
+#: last_checked: 2016-11-28 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -25608,13 +25608,13 @@ userdel	q4::inwork; 4976,9670 4982,9729 4993,9843 5013,10039
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1480359401, # undef, # XXX -> jetzt in handicap_s-orig
        text  => 'Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: next_check_id: RUEDERSDORFER-2016
-#: last_checked: 2016-11-25
-#: check_frequency: 14d
+# REMOVED --- : next_check_id: RUEDERSDORFER-2016
+# REMOVED --- : last_checked: 2016-11-28
+# REMOVED --- : check_frequency: 14d
 # REMOVED --- userdel	q3::inwork 13295,11792 13173,11788
 userdel	q3::inwork 13173,11788 13066,11854
 EOF
