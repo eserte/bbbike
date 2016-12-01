@@ -180,8 +180,8 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 # REMOVED (realisiert) --- #: XXX Baumaßnahme 10.19 (Realisierung nach 2011) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=4797&options=4 --- Hänflingsteig: wird dieser Abschnitt asphaltiert?	?::projected 20093,14591 20147,14570
 # 
 #: XXX Baumaßnahme 11.34 (Realisierung nach 2011)
-#: osm_watch: way id="182782708" version="4"
-#: osm_watch: way id="168307255" version="4"
+#: osm_watch: way id="182782708" version="5"
+#: osm_watch: way id="168307255" version="5"
 #: osm_watch: way id="4687243" version="23"
 #: last_checked: 2016-09-11
 #: check_frequency: 60d
@@ -1222,7 +1222,7 @@ Wolzenseeweg: Qualität? Straße bereits fertiggestellt? Wird es eine Überquerungs
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 # 
 #: next_check_id: OBERWALL-2014 vvv
-#: last_checked: 2016-11-04 vvv
+#: last_checked: 2016-11-30 vvv
 #: check_frequency: 90d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2015 (Grundstücksnummerierungen)
@@ -1526,6 +1526,9 @@ Brodersenstr.: Neubau, danach bessere Qualität?	?::projected 6033,19611 5885,199
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX laut fritz bis 12.12.2016
+Brachvogelstr.: Sperrung auch für Radfahrer relevant?	? 10042,10103 10066,10071 10082,10032
+# 
 #: XXX NEW	Fasanenstraße (Charlottenburg) zwischen Kantstraße und Kurfürstendamm (Berlin)  Gültig ab: 23.11.2016 13:12  Vollsperrung, Baustelle (bis 31.12.16)	LMS-BR_r_LMS-BR_83962
 Fasanenstr.: Sperrung auch für Radfahrer relevant?	? 5236,10994 5230,10919 5215,10711
 # 
@@ -1607,7 +1610,7 @@ Wege im Gutspark Neukladow: Wegführung, nachts beleuchtet, Qualität?	? -6198,535
 Bebauungsplan VIII-424: neue Straßen entstehen, wo genau? Qualität?	? -6366,5873 -6523,5998 -6224,6417 -6552,6663 -6439,6811 -6216,6410 -6370,6183 -6189,6065 -6366,5873
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_929_16.pdf
-#: last_checked: 2016-11-23
+#: last_checked: 2016-11-29
 #: check_frequency: 60d
 Liebigstr.: Einrichtung einer Spielstraße, wo genau?	? 14229,12311 14166,12323 14147,12344 14091,12355 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
 # 
@@ -1616,7 +1619,7 @@ Liebigstr.: Einrichtung einer Spielstraße, wo genau?	? 14229,12311 14166,12323 1
 #: XXX Bauarbeiten zwischen Thaerstr. und Hübnerstr.
 #: XXX NEW	Eldenaer Str. (Friedrichshain) In beiden Richtungen Kreuzung Proskauer Str. (Berlin)  Gültig ab: 24.11.2016 06:15  Baustelle, Vollsperrung (bis vsl. Ende 11/16)	2147340785
 #: XXX -> ist die Vollsperrung für Radfahrer relevant? -> am Abend schon wieder aufgehoben?
-#: last_checked: 2016-11-23
+#: last_checked: 2016-11-29
 #: check_frequency: 14d
 Eldenaer Str.: Verlängerung der Radspuren	? 14355,12752 14096,12827 14066,12836 13979,12861 13960,12866 13844,12900
 # 
@@ -1627,8 +1630,11 @@ Eldenaer Str.: Verlängerung der Radspuren	? 14355,12752 14096,12827 14066,12836 
 #: by: http://www.berliner-linienchronik.de/fahrplanaenderungen.html?date=20160731 vvv
 #: next_check: 2016-12-11 vvv
 #: priority: #A vvv
+#: XXX oder nur "Johannisthal"?
 Betriebsbahnhof Schöneweide --> Adlershof-Johannisthal	X 18682,4714
+#: XXX oder "Freie Universität (Thielplatz)"?
 Thielplatz --> Freie Universität	X 2265,4892
+#: XXX oder "Kienberg (Gärten der Welt)"?
 Neue Grottkauer Straße --> Kienberg-Gärten der Welt	X 23042,13880
 #: priority ^^^
 #: next_check ^^^
@@ -1655,7 +1661,7 @@ Adenauerplatz: Behinderungen für Radfahrer während der Bauarbeiten	?::projected 
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.496419.php
 #: source_id: LMS-BR_r_LMS-BR_81037
-#: next_check: 2016-11-15
+#: next_check: 2016-12-23
 Knesebeckstr./Hardenbergstr.: Umbau, Knesebeckstr. wird rechtwinklig auf die Hardenbergstr. treffen	?::projected 4897,11354 4919,11605
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4876
@@ -1685,7 +1691,7 @@ Anforderungsampel, X	?::inwork 7651,14260
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/25re.pdf/file?y=2016
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/46re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: XXX Berlin.coords.data-Eintrag fehlt
-#: last_checked: 2016-11-22
+#: last_checked: 2016-11-30
 Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?	? 9636,13076
 # 
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.490082.php
@@ -2217,7 +2223,7 @@ Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,
 Schöneberger Str.: eventuell wird hier eine (Fußgänger-)Ampel entstehen	?::projected 8640,6770 8653,6781 8655,6796
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4106&options=4 (Konzeptphase)
-#: osm_watch: way id="338316875" version="2"
+#: osm_watch: way id="338316875" version="3"
 #: last_checked: 2016-10-10
 #: check_frequency: 100d
 Kolonnenstr.: werden hier Radstreifen errichtet?	?::projected; 7709,8777 7795,8765 8008,8771 8014,8771 8078,8772

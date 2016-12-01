@@ -2712,6 +2712,14 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+Spreeufer Nikolaiviertel: Gehweg gesperrt	2::inwork 10424,12364 10492,12289 10583,12206
+# 
+#: source_id: 2147340790
+#: last_checked: 2016-12-01
+#: next_check: 2017-01-31
+#: valid: -20170131
+Puschkinallee: Fahrtrichtung gesperrt	1::inwork 13795,9941 13890,9894
+# 
 #: next_check_id: STRESEMANNPARKWEG-2016
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.530316.php
 #: XXX "3-4 Wochen"
@@ -2768,7 +2776,7 @@ Sülzhayner Str.: komplett gesperrt wegen Bauarbeiten, vielleicht dauerhaft	2::in
 #: check_frequency: 60d
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 # 
-#: last_checked: 2016-11-25
+#: last_checked: 2016-12-01
 Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2 14447,10491 14270,10584
 # 
 #: next_check_id: MARIANNEN-2016 vvv
@@ -2777,7 +2785,7 @@ Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2 14447,10491 14270,10584
 #: source_id: 2147340768 vvv
 #: priority: #A vvv
 #: XXX laut fritz bis 16.12.2016
-#: last_checked: 2016-11-28 vvv
+#: last_checked: 2016-12-01 vvv
 #: next_check: 2016-12-16 vvv
 Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11512,10105 11616,10288
 #: source_id: 2147340777
@@ -2883,8 +2891,8 @@ Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 # 
 #: next_check_id: ZIEGELSTR-2016
 #: XXX Ende der Bauarbeiten?
-#: last_checked: 2016-11-22
-#: check_frequency: 21d
+#: last_checked: 2016-11-30
+#: check_frequency: 14d
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076 9559,13087
 # 
 #: next_check_id: MINNATODENHAGENSTR-2016
@@ -2900,7 +2908,7 @@ Schwarzer Weg: wegen Straßenbau gesperrt	2::inwork 17295,7323 17295,7330 17296,7
 #: next_check_id: FISCHERINSEL-2015 vvv
 #: source_id: 2147339543 vvv
 #: last_checked: 2016-10-08 vvv
-#: next_check: 2016-11-30 vvv
+#: next_check: 2016-12-22 vvv
 Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10703,11837
 Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10703,11837 10687,11853 10869,11949
 Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10672,11870
@@ -3036,13 +3044,14 @@ Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Du
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
 #: osm_watch: way id="305153174" version="1"
-#: last_checked: 2016-11-28 vvv
-#: check_frequency: 90d vvv
-Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9996,12401 9994,12368 9943,12364
+#: last_checked: 2016-11-30 vvv
+#: check_frequency: 14d vvv
+# REMOVED Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9996,12401 9994,12368 9943,12364
+Niederlagstr.: Bauarbeiten, Passieren auch für Fußgänger nicht möglich	2:inwork 9994,12368 9996,12401
 Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10008,12274 9994,12368
 # REMOVED (hier aufgehoben, temporär?) --- Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9943,12364 9961,12273
-#: XXX eigentlich für Fußgänger passierbar, aber UdL nur in Richtung Osten
-Niederlagstr.: Bauarbeiten, keine Zufahrt von Unter den Linden möglich	2::inwork 9943,12364 9934,12420
+# REMOVED --- #: XXX eigentlich für Fußgänger passierbar, aber UdL nur in Richtung Osten
+# REMOVED --- Niederlagstr.: Bauarbeiten, keine Zufahrt von Unter den Linden möglich	2::inwork 9943,12364 9934,12420
 #: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
@@ -3061,10 +3070,15 @@ Niederlagstr.: Bauarbeiten, keine Zufahrt von Unter den Linden möglich	2::inwork
 #: next_check: 2018-06-30
 Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,6895 14153,6795
 # 
-# REMOVED --- #: next_check_id: ZEUGHAUS-2014 vvv --- #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv --- #: XXX siehe auch Busspur in radwege-orig vvv --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html vvv --- #: source_id: INKO_113041 vvv --- #: source_id: 2147339528 vvv --- #: last_checked: 2016-02-08 vvv
-# REMOVED (Einfahrt in Niederlagstr. nun komplett als gesperrt markiert) --- Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9858,12410
-# REMOVED --- Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
+# REMOVED --- #: XXX siehe auch Busspur in radwege-orig vvv --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html vvv --- #: source_id: INKO_113041 vvv --- #: source_id: 2147339528 vvv --- 
+#: next_check_id: ZEUGHAUS-2014
+#: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
+#: last_checked: 2016-11-30 vvv
+Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9858,12410
+Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
 # REMOVED --- Niederlagstr. - Unter den Linden: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9943,12364 9934,12420 9984,12426
+#: last_checked ^^^
+#: XXX_prog ^^^
 # 
 #: next_check_id: CHARITE-2014
 #: XXX eine Umleitung existiert, ist aber von der Westseite schwierig zu finden und könnte nachts gesperrt sein
@@ -3098,7 +3112,7 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 #: XXX siehe auch Eintrag in handicap_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0194-oberwallstrae-werderscher-markt.html
 #: osm_watch: way id="66071370" version="4"
-#: last_checked: 2016-11-11
+#: last_checked: 2016-11-30
 #: check_frequency: 30d
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9898,12161 9882,12259
 # 

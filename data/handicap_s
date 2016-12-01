@@ -5,11 +5,12 @@
 #:
 Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 13173,11788 13066,11854
 Straße der Pariser Kommune: Wasserrohrbruch, Fahrbahn unter der Bahnbrücke gesperrt, Gehweg für Radfahrer frei	q3::inwork 12645,11673 12551,11515
-Revaler Str.: Bauarbeiten, evtl. Ausweichen auf Gehweg nötig	q2::inwork 14211,11229 14286,11186
+Revaler Str.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14211,11229 14286,11186
 Rigaer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 14133,12482 14266,12446
 Mariendorfer Damm: Fahrbahn zwischen Prinzenstr. und Richterstr. gesperrt	q4::inwork; 9333,4229 9346,4144 9372,4012
 Schmollerplatz: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 13203,9450 13124,9375
 Schmollerplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 13124,9375 13111,9361 13126,9347
+Schloßplatz: Fahrbahn gesperrt, Radfahrer können auf den Bürgersteig ausweichen	q2::inwork 10285,12306 10357,12356
 Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 Kommandantenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10330,11422 10136,11529
 Beuthstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10201,11631 10235,11610 10330,11422
@@ -21,6 +22,7 @@ Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und 
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9580,12581 9601,12380
 Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse!), Ausweichen auf Gehweg	q3::inwork 8315,13181 8406,13127
+Oberwallstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9882,12259 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 Behrenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9743,12239 9798,12267
@@ -29,7 +31,6 @@ Neue Jakobstr. [Wohngebiet]: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10963,116
 Neue Jakobstr. [Wohngebiet]: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 11017,11658 11131,11579
 Carl-Herz-Ufer: Sperrung der Fahrbahn an der Baerwaldstr.	q4::inwork 10469,10081 10500,10081
 Stallschreiberstr., Alexandrinenstr.: Einbahnstraßenregelung	q4::inwork; 10794,10927 10824,11010 10678,11172 10593,11120 10501,11056
-S-Bhf. Friedrichshagen: Bauarbeiten	q2::inwork 25579,5958 25584,6029
 Dieselstr., Umfahrung: Fußgänger, kurvig, eng	q2::inwork 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112 14429,8074 14471,8046
 Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süden auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12753,8187 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785 12969,7610
 Jülicher Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
@@ -314,7 +315,7 @@ Barsekowstr.: Fußgänger	q1 5336,4676 5406,4631 5465,4606 5521,4605 5588,4629
 (Stadtpark Steglitz): Fußgänger	q1 5797,4846 5806,4840 5909,4798 5947,4791 6022,4746 6026,4744
 Dieffenbachstr.: Bodenschwellen	q0 11141,9732 11346,9655
 Dieffenbachstr.: Bodenschwellen, können gut umfahren werden	q0 11346,9655 11541,9576
-Hoffmannstr.: Bodenschwellen (2x)	q1; 14077,10016 14289,9870
+Hoffmannstr.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 Lausitzer Platz: einige Bodenschwellen	q2 12197,10494 12172,10585
 Lausitzer Platz: einige Bodenschwellen	q2 12274,10612 12172,10585
 Lausitzer Platz: einige Bodenschwellen	q2 12328,10442 12274,10612
@@ -2513,7 +2514,6 @@ Nöldnerstr.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs.
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9042,11839 8969,11814
 Corinthstr.: Baustelle, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 14447,10491 14270,10584
 Mariannenstr.: Baustelle, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 11512,10105 11616,10288
-Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9996,12401 9994,12368 9943,12364
 (Los-Angeles-Platz): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 5669,10704 5822,10609
 Westendallee: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 461,11455 425,11455 395,11486 329,11696 323,11801
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8376,6579 -8354,6590

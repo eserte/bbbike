@@ -11,7 +11,7 @@
 ### Friedrichshain ###
 # 
 #: next_check_id: RUEDERSDORFER-2016
-#: last_checked: 2016-11-28
+#: last_checked: 2016-11-29
 #: check_frequency: 14d
 R¸dersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 13173,11788 13066,11854
 # 
@@ -25,14 +25,15 @@ R¸dersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inw
 #: last_checked: 2016-11-26
 #: next_check: 2016-12-14
 #: priority: #A
+#: valid: -20161214
 Straﬂe der Pariser Kommune: Wasserrohrbruch, Fahrbahn unter der Bahnbr¸cke gesperrt, Gehweg f¸r Radfahrer frei	q3::inwork 12645,11673 12551,11515
 # 
 # REMOVED --- #: source_id: 2147339819 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.415646.php --- #: XXX laut vmz bis Mitte Mai 2016, laut fritz bis 13.05.2016, tats‰chlich aber noch l‰nger g¸ltig --- bis wann? --- #: last_checked: 2016-07-10 vvv --- #: valid: -20160813 vvv --- W¸hlischstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14575,11407 14674,11370 14737,11347 14759,11339 14771,11345 --- #: valid ^^^ --- #: last_checked ^^^
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraﬂe wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2016-11-25 vvv
-Revaler Str.: Bauarbeiten, evtl. Ausweichen auf Gehweg nˆtig	q2::inwork 14211,11229 14286,11186
+#: last_checked: 2016-12-01 vvv
+Revaler Str.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14211,11229 14286,11186
 # REMOVED --- Dˆringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
 # REMOVED --- Revaler Str.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14357,11148 14286,11186
 # REMOVED (keine Behinderungen mehr) --- Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
@@ -46,7 +47,7 @@ Revaler Str.: Bauarbeiten, evtl. Ausweichen auf Gehweg nˆtig	q2::inwork 14211,11
 # REMOVED --- Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: last_checked: 2016-09-07 --- #: check_frequency: 4d --- Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
 # 
-#: last_checked: 2016-11-23
+#: last_checked: 2016-11-29
 Rigaer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 14133,12482 14266,12446
 # 
 # REMOVED (ausgelaufen) --- #: last_checked: 2016-06-29 vvv --- #: next_check: 2016-06-30 vvv --- #: source_id: LMS-BR_r_LMS-BR_69902 --- #: XXX Ende laut fritz --- Rigaer Str./Liebigstr.: Bauarbeiten, Kreuzung gesperrt	q2::inwork 13761,12578 13991,12522 14091,12494 --- Rigaer Str./Liebigstr.: Bauarbeiten, Kreuzung gesperrt	q2::inwork 13905,12374 13991,12522 14058,12709
@@ -75,6 +76,7 @@ Rigaer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 14133,12482 14266,12446
 #: last_checked: 2016-09-14
 #: next_check: 2016-12-05
 #: priority: #A
+#: valid: -20161205
 Mariendorfer Damm: Fahrbahn zwischen Prinzenstr. und Richterstr. gesperrt	q4::inwork; 9333,4229 9346,4144 9372,4012
 # 
 ### Treptow ###
@@ -94,13 +96,16 @@ Schmollerplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 13124,9375 13111,9361 
 # REMOVED --- #: last_checked: 2016-06-01 --- Kommandantenstr.: Bauarbeiten, Einbahnstraﬂe	q2::inwork; 10437,11352 10389,11390
 # REMOVED --- #: last_checked: 2016-09-18 --- Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 10480,12077 10418,12016
 # 
+#: by: wosch
+Schloﬂplatz: Fahrbahn gesperrt, Radfahrer kˆnnen auf den B¸rgersteig ausweichen	q2::inwork 10285,12306 10357,12356
+# 
 #: last_checked: 2016-11-28
 Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
-#: last_checked: 2016-11-28
+#: last_checked: 2016-11-30
 Kommandantenstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10330,11422 10136,11529
 # 
-#: last_checked: 2016-11-28
+#: last_checked: 2016-11-30
 Beuthstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10201,11631 10235,11610 10330,11422
 # 
 #: last_checked: 2016-11-07
@@ -215,10 +220,16 @@ Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse
 # 
 # REMOVED (so gut wie fertig, man kommt als Radfahrer schon durch) --- #: last_checked: 2014-07-16 --- Bellermannstr.: Bauarbeiten der Wasserbetriebe, Ausweichen auf Gehweg f¸r einen 70 Meter langer Abschnitt	q2::inwork 8912,16582 9107,16389
 # 
+#: next_check_id: ZEUGHAUS-2014
+#: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
+#: last_checked: 2016-11-30
+#: check_frequency: 14d
+Oberwallstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
+# 
 #: next_check_id: STAATSOPER-2014 vvv
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html
-#: last_checked: 2016-11-28 vvv
+#: last_checked: 2016-11-30 vvv
 #: check_frequency: 30d vvv
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9882,12259 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
@@ -276,7 +287,7 @@ Carl-Herz-Ufer: Sperrung der Fahrbahn an der Baerwaldstr.	q4::inwork 10469,10081
 # 
 #: next_check_id: ALEXANDRINENSTR-2016
 #: source_id: LMS-BR_r_LMS-BR_68468
-#: last_checked: 2016-11-28
+#: last_checked: 2016-11-30
 Stallschreiberstr., Alexandrinenstr.: Einbahnstraﬂenregelung	q4::inwork; 10794,10927 10824,11010 10678,11172 10593,11120 10501,11056
 # 
 # REMOVED (kaum noch Beeintr‰chtigungen) --- #: last_checked: 2016-02-26 --- #: next_check: 2016-03-30 --- Wassertorstr.: Wasserrohrbruch, kurzes St¸ck auf Gehweg ausweichen	q2::inwork 10857,10411 10987,10360
@@ -296,12 +307,7 @@ Stallschreiberstr., Alexandrinenstr.: Einbahnstraﬂenregelung	q4::inwork; 10794,1
 # 
 ### Friedrichshagen ###
 # 
-#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160319
-#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.463650.php
-#: note: vor Ort sahen die Beeintr‰chtigungen nicht so groﬂ aus
-#: source_id: 2147339863
-#: valid: 20160627-20161130
-S-Bhf. Friedrichshagen: Bauarbeiten	q2::inwork 25579,5958 25584,6029
+# REMOVED --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160319 --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.463650.php --- #: note: vor Ort sahen die Beeintr‰chtigungen nicht so groﬂ aus --- #: source_id: 2147339863 --- #: valid: 20160627-20161130 --- S-Bhf. Friedrichshagen: Bauarbeiten	q2::inwork 25579,5958 25584,6029
 # 
 ### Moabit ###
 #
@@ -782,10 +788,7 @@ Dieffenbachstr.: Bodenschwellen	q0- 11141,9732 11346,9655
 #: XXX_prog: f¸r Anh‰nger evtl. q1
 Dieffenbachstr.: Bodenschwellen, kˆnnen gut umfahren werden	q0- 11346,9655 11541,9576
 # REMOVED (alle Bodenschwellen wurden entfernt) --- Schˆnleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
-#: XXX mittlerweile halbseitig entfernt --- wird die andere Seite auch entfernt oder alles wiederhergestellt?
-#: last_checked: 2016-11-04
-#: check_frequency: 30d
-Hoffmannstr.: Bodenschwellen (2x)	q1; 14077,10016 14289,9870
+Hoffmannstr.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 Lausitzer Platz: einige Bodenschwellen	q2 12197,10494 12172,10585
 Lausitzer Platz: einige Bodenschwellen	q2 12274,10612 12172,10585
 Lausitzer Platz: einige Bodenschwellen	q2 12328,10442 12274,10612
@@ -807,7 +810,7 @@ Fritz-Schiff-Weg: Fuﬂg‰nger	q1 13463,12507 13484,12436 13448,12340
 (Fischerinsel, Spreekanalufer): Fuﬂg‰nger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870
 #: next_check_id: FISCHERINSEL-2015
 #: last_checked: 2016-10-08
-#: next_check: 2016-11-30
+#: next_check: 2016-12-22
 Spreekanalufer: Umfahrung an der Straﬂe Fischerinsel, Fuﬂg‰nger	q3::inwork 10672,11870 10776,11942
 # REMOVED (danach wieder folgendes aktivieren) --- (Fischerinsel, Spreekanalufer): Fuﬂg‰nger	q1 10672,11870 10776,11942
 (Fischerinsel, Spreekanalufer): Fuﬂg‰nger	q1 10776,11942 10824,11992
