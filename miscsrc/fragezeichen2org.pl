@@ -451,10 +451,13 @@ print "fragezeichen/nextcheck\t\t\t-*- mode:org; coding:utf-8 -*-\n\n";
     }
 }
 
+print "* future\n";
+print_org_visibility('children');
 my $today_printed = 0;
 for my $record (@all_records_by_date) {
     if (!$today_printed && $record->{date} le $today) {
-	print "** ---------- TODAY ----------\n";
+	print "* until today\n";
+	print_org_visibility('children');
 	$today_printed = 1;
     }
     print $record->{body};
@@ -462,6 +465,7 @@ for my $record (@all_records_by_date) {
 
 if (@expired_searches_weight_records) {
     print "* expired " . ($with_nextcheckless_records ? "and open " : "") . "records, sort by number of route searches\n";
+    print_org_visibility('children');
     for my $expired_searches_weight_record (@expired_searches_weight_records) {
 	print $expired_searches_weight_record->{body};
     }
@@ -469,6 +473,7 @@ if (@expired_searches_weight_records) {
 
 if (@expired_sort_by_dist_records) {
     print "* expired " . ($with_nextcheckless_records ? "and open " : "") . "records, sort by dist\n";
+    print_org_visibility('children');
     for my $expired_record (@expired_sort_by_dist_records) {
 	print $expired_record->{body};
     }
@@ -480,10 +485,8 @@ if (@expired_sort_by_dist_records) {
 if (%monthly_stats) {
     print <<'EOF';
 * monthly stats
-  :PROPERTIES:
-  :VISIBILITY: folded
-  :END:
 EOF
+    print_org_visibility('folded');
     for my $date (reverse sort keys %monthly_stats) {
 	print "** $date $monthly_stats{$date}\n";
     }
@@ -590,6 +593,15 @@ sub debug {
     return if !$debug;
     my $msg = shift;
     print STDERR $msg;
+}
+
+sub print_org_visibility {
+    my($visibility) = @_;
+    print <<EOF;
+  :PROPERTIES:
+  :VISIBILITY: $visibility
+  :END:
+EOF
 }
 
 __END__
