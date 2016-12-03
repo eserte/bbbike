@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2015,2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -24,15 +24,17 @@ my $username = $ENV{USERNAME};
 my $do_snapshot;
 my $do_continue;
 my $do_bbbike_update = 1;
+my $strawberry_ver = '5.24.0.1';
 GetOptions(
 	   "snapshot" => \$do_snapshot,
 	   "c|cont|continue" => \$do_continue,
 	   "bbbike-update!" => \$do_bbbike_update,
+	   'strawberry-version|strawberry-ver=s' => \$strawberry_ver,
 	  )
-    or die "usage: $0 [-snapshot] [-c|-continue] [-no-bbbike-update]";
+    or die "usage: $0 [-snapshot] [-c|-continue] [-no-bbbike-update] [-strawberry-version X.Y.Z.A]";
 
-my $strawberry_ver = 'strawberry-perl-5.14.2.1';
-my $strawberry_zip_file = $strawberry_ver . '-32bit-portable.zip';
+my $strawberry_base = 'strawberry-perl-' . $strawberry_ver;
+my $strawberry_zip_file = $strawberry_base . '-32bit-portable.zip';
 my @downloads_paths =
     (
      "$ENV{USERPROFILE}\\Downloads",
@@ -59,7 +61,7 @@ if (!-s $strawberry_zip_path) {
     die "$strawberry_zip_path does not exist or is empty. Please download the file from www.strawberryperl.com.\n";
 }
 
-my $strawberry_dir = "$eserte_dos_path\\$strawberry_ver";
+my $strawberry_dir = "$eserte_dos_path\\$strawberry_base";
 my $bbbikewindist_dir = "$eserte_dos_path\\bbbikewindist";
 my $bak_date = strftime("%Y%m%d%H%M%S", localtime);
 if (-e $strawberry_dir) {
