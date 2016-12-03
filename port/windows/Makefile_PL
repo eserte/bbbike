@@ -1,0 +1,59 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+use strict;
+use FindBin;
+my $bbbikesrc_dir; BEGIN { $bbbikesrc_dir = "$FindBin::RealBin/../.." }
+use lib (
+	 $bbbikesrc_dir,
+	 "$bbbikesrc_dir/lib",
+	);
+
+use Cwd 'realpath';
+
+use BBBikeUtil qw(save_pwd2);
+
+my $bbbikewindist = realpath '../../../bbbikewindist';
+
+my $action = shift;
+if (!$action) {
+    die "Please specify an action";
+} elsif ($action eq 'bbbike-strawberry-dist') {
+    my $bbbikever = `perl -I../.. -MBBBikeVar -e 'print \$BBBike::WINDOWS_VERSION'`;
+    my $cmd = "tpage --debug=undef --define VERSION=$bbbikever --define BBBIKEWINDIST=$bbbikewindist --eval_perl bbbike.tpl.iss > bbbike.iss~";
+    system $cmd;
+    die "Command $cmd failed" if $? != 0;
+    chmod 0755, 'bbbike.iss~';
+    rename 'bbbike.iss~', 'bbbike.iss'
+	or die "Failed to rename bbbike.iss~ to bbbike.iss: $!";
+} elsif ($action eq 'bbbike-strawberry-snapshot-dist') {
+    require POSIX;
+    my $snapshotdate = POSIX::strftime('%Y%m%d', localtime);
+    my $cmd = "tpage --debug=undef --define VERSION=snapshot-$snapshotdate --define BBBIKEWINDIST=$bbbikewindist --eval_perl bbbike.tpl.iss > bbbike-snapshot-$snapshotdate.iss~";
+    system $cmd;
+    die "Command $cmd failed" if $? != 0;
+    chmod 0755, "bbbike-snapshot-$snapshotdate.iss~";
+    rename "bbbike-snapshot-$snapshotdate.iss~", "bbbike-snapshot-$snapshotdate.iss"
+	or die "Failed to rename bbbike-snapshot-$snapshotdate.iss~ to bbbike-snapshot-$snapshotdate.iss: $!";
+} elsif ($action eq 'make-bbbike-dist') {
+    require File::Path;
+    require ExtUtils::Manifest;
+    {
+	my $save_pwd = save_pwd2();
+	chdir $bbbikewindist
+	    or die "Cannot chdir to $bbbikewindist: $!";
+	File::Path::rmtree('bbbike.old');
+	if (-e 'bbbike') {
+	    rename 'bbbike', 'bbbike.old'
+		or die "Failed to move bbbike to bbbike.old in $bbbikewindist: $!";
+	}
+    }
+
+    chdir '../..'
+	or die "Cannot chdir two dirs up: $!";
+    ExtUtils::Manifest::manicopy(ExtUtils::Manifest::maniread(q{MANIFEST}),q{../bbbikewindist/bbbike}, 'cp');
+} else {
+    die "Unsupported action '$action'";
+}
+
+__END__

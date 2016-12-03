@@ -4,10 +4,6 @@
    SET VERSION = BBBike.WINDOWS_VERSION;
    END;
 -%]
-[% IF USERNAME == "";
-   SET USERNAME = "eserte";
-   END;
--%]
 [% PROCESS "../../BBBikeVar.tpl" -%]
 [% SET wperl_exe = "{app}\\perl\\bin\\wperl.exe"; -%]
 [% USE date %]
@@ -25,7 +21,7 @@ DefaultGroupName=BBBike
 UninstallDisplayIcon={app}\bbbike\images\srtbike.ico
 Compression=lzma
 SolidCompression=yes
-OutputDir=c:\cygwin\tmp
+OutputDir=[% BBBIKEWINDIST %]/..
 OutputBaseFilename=BBBike-[% VERSION %]-Windows
 OutputManifestFile=SETUP-MANIFEST
 
@@ -35,24 +31,24 @@ Name: "{app}\bbbike\data"; Permissions: users-modify
 [Files]
 ;;;
 ;;; This contains a MANIFEST copy of bbbike after running "make make-bbbike-dist"
-Source: "C:\cygwin\home\[% USERNAME %]\bbbikewindist\bbbike\*"; DestDir: "{app}\bbbike"; Excludes: "\data,\data\*,\data\*\*"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\cygwin\home\[% USERNAME %]\bbbikewindist\bbbike\data\*"; DestDir: "{app}\bbbike\data"; Permissions: users-modify; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "[% BBBIKEWINDIST %]\bbbike\*"; DestDir: "{app}\bbbike"; Excludes: "\data,\data\*,\data\*\*"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "[% BBBIKEWINDIST %]\bbbike\data\*"; DestDir: "{app}\bbbike\data"; Permissions: users-modify; Flags: ignoreversion recursesubdirs createallsubdirs
 ;;;
 ;;; XXX should contain an additional a notice where to get the complete distro and sources
 ;;; Note: in previous Strawberry versions there was a libexpat.dll in perl\bin (part of XML::Parser),
 ;;; but nowadays (at least since 5.14.x) it's called libexpat-1.dll
-Source: "C:\cygwin\home\[% USERNAME %]\bbbikewindist\gpsbabel\*"; DestDir: "{app}\gpsbabel"; [% -%]
-    Flags: ignoreversion recursesubdirs createallsubdirs
+;;; XXX not bundled anymore --- Source: "C:\cygwin\home\% USERNAME %\bbbikewindist\gpsbabel\*"; DestDir: "{app}\gpsbabel"; [% -%]
+;;; XXX not bundled anymore ---     Flags: ignoreversion recursesubdirs createallsubdirs
 ;;;
 ;;; This contains a rather minimal Strawberry,
 ;;; see strawberry-include-exclude.pl and create_customized_strawberry.pl
-Source: "C:\cygwin\home\[% USERNAME %]\bbbikewindist\perl\*"; DestDir: "{app}\perl"; [% ~%]
+Source: "[% BBBIKEWINDIST %]\perl\*"; DestDir: "{app}\perl"; [% ~%]
     Flags: ignoreversion recursesubdirs createallsubdirs
 ;;;
 ;;; additional files in c\bin required by XML::LibXML and Tk
-Source: "C:\cygwin\home\[% USERNAME %]\bbbikewindist\c\*"; DestDir: "{app}\c"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\cygwin\home\[% USERNAME %]\bbbikewindist\portable.perl"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\cygwin\home\[% USERNAME %]\bbbikewindist\portableshell.bat"; DestDir: "{app}"; Flags: ignoreversion
+Source: "[% BBBIKEWINDIST %]\c\*"; DestDir: "{app}\c"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "[% BBBIKEWINDIST %]\portable.perl"; DestDir: "{app}"; Flags: ignoreversion
+Source: "[% BBBIKEWINDIST %]\portableshell.bat"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]
 Name: "{group}\BBBike"; Filename: "[% wperl_exe %]"; Parameters: """{app}\bbbike\bbbike"""; WorkingDir: "{app}\bbbike"; IconFilename: "{app}\bbbike\images\srtbike.ico"; Comment: "BBBike - ein Routenplaner für Radfahrer in Berlin und Brandenburg"

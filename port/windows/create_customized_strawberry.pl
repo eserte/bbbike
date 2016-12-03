@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2011,2012,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2011,2012,2015,2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -35,11 +35,13 @@ my $strawberry_dir;
 my $strawberry_ver;
 my $bbbikedist_dir;
 my $use_bundle; # by default, use task
+my $only_action;
 GetOptions(
 	   "strawberrydir=s" => \$strawberry_dir,
 	   "strawberryver=s" => \$strawberry_ver,
 	   "bbbikedistdir=s" => \$bbbikedist_dir,
 	   "bundle!" => \$use_bundle,
+	   'only-action=s' => \$only_action,
 	  )
     or usage();
 $strawberry_dir or usage();
@@ -57,12 +59,13 @@ my $strawberry_zipfile = shift; # optional
 	    open my $fh, $config_heavy
 		or die "Cannot open $config_heavy ($!).\n";
 	    while(<$fh>) {
-		if (/myuname=.*strawberryperl ([\d\.]+)/) {
+		if (/myuname=.*strawberry-?perl ([\d\.]+)/) {
 		    $strawberry_ver = $1;
 		    last;
 		}
 	    }
-	    die "Cannot find strawberryperl version in $config_heavy.\n";
+	    die "Cannot find strawberryperl version in $config_heavy.\n"
+		if !$strawberry_ver;
 	};
 	if ($@) {
 	    die <<EOF;
@@ -84,6 +87,17 @@ if (-d $patchdir) {
 } else {
     warn "INFO: No patches for Strawberry Perl $strawberry_ver found (expected patch directory: $patchdir).\n";
     undef $patchdir;
+}
+
+if ($only_action) {
+    my $action_sub = 'action_' . $only_action;
+    if (!defined &$action_sub) {
+	die "Action $only_action does not exist";
+    } else {
+	no strict 'refs';
+	&$action_sub;
+    }
+    exit;
 }
 
 if (!-d $strawberry_dir) {
@@ -151,8 +165,11 @@ EOF
     }
 };
 
-print STDERR "Add modules from Bundle::BBBike_windist...\n";
-{
+action_add_bbbike_bundle();
+
+sub action_add_bbbike_bundle {
+    print STDERR "Add modules from Bundle::BBBike_windist...\n";
+
     # Fix PATH, otherwise Tk and probably other stuff cannot be built
     local $ENV{PATH} = join(";",
 			    "$strawberry_dir\\perl\\site\\bin",
@@ -161,6 +178,12 @@ print STDERR "Add modules from Bundle::BBBike_windist...\n";
 			    "$ENV{PATH}"
 			   );
     save_pwd {
+	# For some reason CPAN.pm may not create the
+	# build directory itself (if used like below?)
+	if (!-d $strawberry_dir . '\\cpan\\build') {
+	    print STDERR "Create CPAN build directory...\n";
+	    mkdir $strawberry_dir . '\\cpan\\build';
+	}
 	my @common_cpan_cmd = (
 			       "$strawberry_dir/perl/bin/perl.exe",
 			       "-MCPAN",
@@ -173,7 +196,9 @@ print STDERR "Add modules from Bundle::BBBike_windist...\n";
 			       # Too slow especially for large Bundles or Tasks, and
 			       # I don't worry about memory currently (difference is
 			       # 160MB vs. 32MB):
-			       '$CPAN::Config->{use_sqlite} => q[0]; ' . 
+			       '$CPAN::Config->{use_sqlite} = q[0]; ' . 
+			       # distroprefs is not YAML-XS ready
+			       '$CPAN::Config->{yaml_module} = q[YAML::Syck]; ' .
 			       'install shift',
 			      );
 	chdir $bbbikesrc_dir
@@ -185,15 +210,18 @@ print STDERR "Add modules from Bundle::BBBike_windist...\n";
 		or die "Can't chdir to task directory: $!";
 	    system(@common_cpan_cmd, '.');
 	}
+	# XXX Check if everything was successful, but how?
     };
 }
 
 print STDERR "Copying strawberry perl to $bbbikedist_dir...\n";
-system($^X, "$FindBin::RealBin/strawberry-include-exclude.pl",
-       "-doit", "-v",
-       "-src", $strawberry_dir,
-       "-dest", $bbbikedist_dir,
-      );
+my @cmd = ($^X, "$FindBin::RealBin/strawberry-include-exclude.pl",
+	   "-doit", "-v",
+	   "-src", $strawberry_dir,
+	   "-dest", $bbbikedist_dir,
+	  );
+system @cmd;
+die "Failure of command: @cmd" if $? != 0; 
 
 print STDERR "Finished.\n";
 
@@ -205,6 +233,9 @@ Both --strawberrydir and --bbbikedistdir directories should
 not exist yet, only the parent directories.
 
 Optional: --bundle may be specified to use Bundle instead of Task.
+
+To run only one action specify the --only-action=\$action option.
+
 EOF
 }
 
