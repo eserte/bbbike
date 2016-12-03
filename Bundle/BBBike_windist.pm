@@ -53,8 +53,6 @@ DB_File	- Caching, Sessionhandling etc.
 
 MLDBM
 
-Algorithm::Permute 0.08	- Für das Problem des Handlungsreisenden (schnellerer Permutor)
-
 List::Permutor	- Für das Problem des Handlungsreisenden (langsamerer Permutor)
 
 PDF::Create 0.06	- Erzeugung der Route als PDF-Dokument

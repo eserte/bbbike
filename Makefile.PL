@@ -132,7 +132,7 @@ my @req_table =
    'zum On-the-fly-Erzeugen von Grafiken beim CGI-Programm'],
   [qw/Chart::ThreeD::Pie	0	all	0	base/,
    'Tortendiagramme in der Statistik'],
-  [qw/Algorithm::Permute	0.08	all	0|4	base/,
+  [qw/Algorithm::Permute	0.08	all	0	base/,
    'Für das Problem des Handlungsreisenden (schnellerer Permutor)'],
   [qw/List::Permutor	0	all	0|4	base/,
    'Für das Problem des Handlungsreisenden (langsamerer Permutor)'],
