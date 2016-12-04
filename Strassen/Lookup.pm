@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package Strassen::Lookup;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 use Hash::Util qw(lock_keys);
 use Unicode::Collate ();
@@ -111,6 +111,9 @@ sub look {
     require Symbol;
     my $fh = Symbol::gensym();
     my $layer_string = $self->{GlobalDirectives}->{encoding} ? ":encoding($self->{GlobalDirectives}->{encoding}->[0])" : '';
+    if ($^O eq 'MSWin32') {
+	$layer_string = ':raw' . $layer_string;
+    }
     tie *$fh, 'Tie::Handle::Offset', "<$layer_string", $self->{File}, { offset => $self->{Offset} }
 	or die "Can't tie: $!";
     $self->{CurrentSearchString} = $search_string;
