@@ -625,12 +625,13 @@ Rathaus Wedding: ändert sich was während/nach der Bauarbeiten am Rathausplatz?	?
 # REMOVED --- #: next_check_id: ZIMMERMANNSTRBR-2015 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5575.html --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/zimmermannstrassenbruecke/ --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6162.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1609/nachricht6205.html --- #: source_id: IM_024857 --- #: source_id: 2147339545 --- #: osm_watch: way id="25795962" version="15" --- #: last_checked: 2016-06-19 --- #: next_check: 2016-09-15 --- Zimmermannstraßenbrücke: wie weit reichen die Radspuren? Benutzungspflicht?	? 21430,9026 21385,9049 21365,9059 21349,9062 21314,9083
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5602 (Baubeginn "in Kürze")
+#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6811
 #: XXX Bauarbeiten in Gange
 #: XXX unnötiger Punkt kann danach entfernt werden
 #: source_id: 2147340412
 #: last_checked: 2016-08-21
-#: next_check: 2016-12-30
-Rummelsburger/Zacherstr.: Ampel wird verlegt (auf die Ostseite)	?::inwork 17834,11192 17848,11204
+#: next_check: 2016-12-15
+Rummelsburger/Zachertstr.: Ampel wird verlegt (auf die Ostseite)	?::inwork 17834,11192 17848,11204
 # 
 # REMOVED (kaum Änderungen) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20141028.1510.399863.html --- #: XXX Bauende voraussichtlich zum Jahresende --- #: next_check: 2014-12-31 --- Wege im Springpfuhlpark: gibt es danach relevante Änderungen?	?::inwork 19565,13893 19547,14042 19544,14234 19545,14290 19535,14448 19534,14459 19524,14474
 # REMOVED (läuft eh' bald aus) --- #: source_id: IM_023275 --- #: XXX falls ja -> 27.10.2014 11:00 Uhr bis 02.11.2014 16:00 Uhr --- #: XXX -> zurzeit offiziell nur für BVG frei, aber unproblematisch für Radfahrer --- #: last_checked: 2014-10-30 --- #: check_frequency: 14d --- An der Spandauer Brücke: Sperrung für Radfahrer relevant?	? 10286,13084 10339,13052 10371,13006
@@ -910,7 +911,7 @@ Straße 6 (Mariendorf): wird in Zukunft vielleicht entstehen	? 9099,4204 9079,437
 #: by: http://www.berlin.de/ba-treptow-koepenick/organisationseinheiten/stadtplverm/auslegungxvi-65und9-47.html
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=2690
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00054831/31-Anlagen/06/B0522ZB3.pdf
-#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5308 (Namensvorschlag: Jan Czochralski)
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5308 (Namensvorschlag: Jan Czochralski) (wurde vom BA abgelehnt)
 #: osm_watch: way id="199532117" version="1"
 #: last_checked: 2016-10-30
 #: check_frequency: 180d
@@ -1002,7 +1003,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12085,977
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
 #: XXX laut Tsp vom 2010-03-26 wird der Radweg gerade erneuert (Richtung Norden)
-#: last_checked: 2016-11-20
+#: last_checked: 2016-12-04
 #: check_frequency: 120d
 #: priority: #C
 Tempelhofer Damm: wird der Radweg Richtung Norden erneuert?	?::projected; 9242,7286 9242,7325 9242,7658 9240,7811 9240,7991 9240,8028 9239,8099 9238,8253 9238,8410 9233,8597 9229,8718
@@ -1526,6 +1527,13 @@ Brodersenstr.: Neubau, danach bessere Qualität?	?::projected 6033,19611 5885,199
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5792
+#: next_check: 2017-01-01
+Dominicusstr./Sachsendamm: bleibt die Radwegbenutzungspflicht?	? 6460,8688 6477,8654 6523,8567 6575,8469 6687,8385 6807,8309
+# 
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5759
+Schwäbische Str.: Umfahrungen prüfen	? 6917,9274 6851,9365 6771,9458
+# 
 #: XXX NEW	Fasanenstraße (Charlottenburg) zwischen Kantstraße und Kurfürstendamm (Berlin)  Gültig ab: 23.11.2016 13:12  Vollsperrung, Baustelle (bis 31.12.16)	LMS-BR_r_LMS-BR_83962
 Fasanenstr.: Sperrung auch für Radfahrer relevant?	? 5236,10994 5230,10919 5215,10711
 # 
@@ -1750,11 +1758,12 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 # REMOVED --- #: XXX B1, B5 Berlin, Karl-Marx-Allee zwischen Alexanderstraße und Kreisverkehr Strausberger Platz Gültig ab: 11.05.2016 20:00  gesperrt	LMS-BR_r_LMS-BR_67424 --- #: XXX Karl-Marx-Allee (Mitte) stadtauswärts zwischen Otto-Braun-Straße und Petersburger Platz (Berlin)  Gültig ab: 11.05.2016 20:00  Vollsperrung, Aufbauarbeiten zur Formula-E (bis ca. 24:00 Uhr)	2147340063 --- #: priority: #A --- Karl-Marx-Allee: bereits wegen der Vorbereitungen für das Rennen gesperrt, auch für Radfahrer?	?; 11226,12945 11289,12908 11589,12768 11635,12745 11683,12725 11976,12595
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6661
+#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6661&date=20161204
 #: XXX bei der letzten Überprüfung nicht zu erkennen
 #: source_id: 2147340565
 #: last_checked: 2016-09-11
-#: check_frequency: 60d
-Treskowallee: Gehweg für Radfahrer freigegeben?	?; 18733,8633 18731,8577 18709,8423
+#: next_check: 2017-02-01
+Treskowallee: wird die zu erstellende provisorische Fahrbahn eine Radspur Richtung Süden erhalten?	?; 18733,8633 18731,8577 18709,8423
 # 
 # REMOVED (ja, wegen Straßenschäden; RW6-Eintrag lohnt aber nicht, denke ich) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7438 --- Waldemarstr.: existieren hier Tempo-10-Schilder?	? 11150,11030 11290,10972
 # REMOVED (-> radwege) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7470 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.501167.php --- #: last_checked: 2016-08-27 --- #: next_checked: 2016-09-16 --- Mehringdamm: Radspuren entstehen	?::projected; 9248,9350 9225,9111 9224,9053 9225,9038 9227,8890 --- 9229 --- 8785
@@ -1772,7 +1781,7 @@ Sebastian/Luckauer: Zebrastreifen geplant	?::projected 11105,10969 11113,10943 1
 # 
 #: XXX wird hier ein Zebrastreifen entstehen?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5452
-#: next_check: 2016-11-10
+#: next_check: 2017-05-01
 #: priority: #C
 Porzer Str./Coloniaallee	? 19948,-14 19972,-19 19998,-21
 # 

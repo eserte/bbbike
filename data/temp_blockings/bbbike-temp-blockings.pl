@@ -21224,7 +21224,8 @@ EOF
      { from  => $isodate2epoch->("2016-01-05 06:00:00"), # 1 Tag Vorlauf --- 1357040979, # 2013-01-01 12:49
        until => $isodate2epoch->("2016-01-29 22:00:00"), # 1358981999, # 2013-01-23 23:59
        periodic => 1,
-       recurrences => [['yearly', days => 3, months => 1]],
+       # XXX ab 2017 nicht mehr am Brandenburger Tor
+       # XXX recurrences => [['yearly', days => 3, months => 1]],
        text  => 'Straße des 17. Juni: wegen der Fashion Week gesperrt, 06.01.2016 bis 29.01.2016',
        type  => 'gesperrt',
        source_id => 'IM_019489',

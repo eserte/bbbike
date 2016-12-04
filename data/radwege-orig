@@ -863,19 +863,19 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736 20755,5750
 #: note: es existieren explizite Schilder zur Aufhebung der Radwegbenutzungspflicht
 	RW2;RW1 14495,9609 14556,9581 14809,9466 14879,9433 15383,9191 15442,9095 15452,9079 15591,8848
 	RW1; 13919,7707 14015,7631
+	RW2; 14015,7631 14095,7568 14174,7505
+	RW1; 14174,7505 14095,7568 14015,7631
 #: next_check_id: SONNENALLEE-2014 vvv
 #: XXX laut fritz "geänderte Straßenführung" bis 31.12.2016
 #: source_id: IM_023718
 #: source_id: 2147339540
 #: last_checked: 2016-10-10 vvv
 #: check_frequency: 90d vvv
-	RW2; 14015,7631 14095,7568 14174,7505
 # REMOVED, siehe unten ---	RW1; 14174,7505 14302,7429 14357,7450 14405,7435 14424,7401 14432,7353 14451,7340
 	RW2; 14451,7340 14519,7301
 #: note: vermutlich:
 	RW2; 14519,7301 14451,7340
 	RW2;RW8 14451,7340 14432,7353 14424,7401 14405,7435 14357,7450 14302,7429 14174,7505
-	RW1; 14174,7505 14095,7568 14015,7631
 #: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
@@ -1100,7 +1100,7 @@ die letzten 50 Meter sind benutzungspflichtig	RW1; 18225,7004 18010,7133
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
-#: last_checked: 2016-11-24
+#: last_checked: 2016-12-04
 #: check_frequency: 90d
 	RW8;RW2 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
@@ -1504,7 +1504,7 @@ die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
 	RW3;RW2 14671,10751 14674,10811
 #: next_check_id: HAUPTSTR-2015
 #: XXX wegen Bauarbeiten teilweise aufgehoben, früher RW4;RW4
-#: last_checked: 2016-11-23
+#: last_checked: 2016-12-04
 #: check_frequency: 30d
 	RW0;RW0 14674,10811 14717,10855
 	RW1;RW1 14652,10201 14688,10167 14705,10149 14747,10108 14817,10031
