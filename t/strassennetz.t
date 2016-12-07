@@ -377,7 +377,13 @@ EOF
     # stack and pop_stack
 
     # Create net with existing record
-    my($k1,$v1) = each %{$s_net->{Net}}; keys %{$s_net->{Net}};
+    my($k1,$v1);
+    while(($k1,$v1) = each %{$s_net->{Net}}) {
+	last if defined $v1;
+	# $v1 may be undefined if $k1 is part of
+	# inaccessible_strassen
+    }
+    keys %{$s_net->{Net}}; # reset iterator
     my($k2,$v2) = each %$v1;             keys %$v1;
     my $add_s1 = Strassen->new_from_data_string(<<EOF);
 something	XYZ $k1 $k2
