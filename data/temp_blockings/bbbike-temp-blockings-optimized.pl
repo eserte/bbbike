@@ -804,7 +804,27 @@ userdel	2::xmas 5656,10876 5652,11004
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	2::xmas 9743,12239 9798,12267
+	q4::xmas 9743,12239 9747,12205 9771,12190 9775,12178 9808,12182
+',
+         'from' => 1479942000,
+         'id' => 790,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              18,
+                              'months',
+                              11
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/971793-1328132-weihnachtsmarktamopernpalais.html',
+         'text' => 'Nostalgischer Weihnachtsmarkt Opernpalais: Wege und Straßen rund um die Hedwigs-Kathedrale teilweise nicht passierbar, teilweise reger Fußgängerverkehr, vom 25.11. bis 26.12.2016',
+         'type' => 'gesperrt',
+         'until' => 1482793199
+       },
        undef,
        undef,
        undef,
@@ -2345,34 +2365,7 @@ userdel	3 8374,11479 8389,11378 8427,11365
          'type' => 'gesperrt',
          'until' => 1482879599
        },
-       {
-         'data' => 'userdel	2::xmas 13416,7712 13426,7674
-userdel	2::xmas 13416,7712 13378,7695 13288,7653
-userdel	2::xmas 13426,7674 13400,7642 13303,7622
-userdel	2::xmas 12969,7610 13100,7626 13177,7644
-userdel	2::xmas 13188,7590 13177,7644
-userdel	2::xmas 13188,7590 13303,7622
-userdel	2::xmas 13288,7653 13303,7622
-userdel	2::xmas 13288,7653 13177,7644
-userdel	2::xmas 13288,7653 13278,7673 13245,7742
-',
-         'from' => 1480546800,
-         'id' => 1998,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachtsmarkt-deutschland.de/weihnachtsmarkt-berlin-alt-rixdorf.html',
-         'text' => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (02.12.2016 - 04.12.2016)',
-         'type' => 'gesperrt',
-         'until' => 1480892399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3252,26 +3245,7 @@ userdel	2::night 17671,13132 17684,13133
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::xmas 9986,13412 10317,13248
-',
-         'from' => 1480633200,
-         'id' => 2515,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              2,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (03.12.2016 - 04.12.2016)',
-         'type' => 'gesperrt',
-         'until' => 1480892399
-       },
+       undef,
        {
          'data' => 'userdel	2::xmas 9986,13412 10317,13248
 ',
@@ -3868,6 +3842,7 @@ userdel	2::night 16196,18364 16315,18208
 #: note: offen am 2016-09-21 gegen 18:15 Uhr
 #: note: offen am 2016-11-11 gegen 18:40 Uhr
 #: note: offen am 2016-11-22 gegen 18:30 Uhr
+#: note: offen am 2016-12-07 gegen 19:00 Uhr
 userdel	2::temp 8362,13466 8369,13465 8377,13463
 #: note: verschlossen am 2016-06-16 gegen 9:30 Uhr
 #: note: verschlossen am 2016-07-01 gegen 18:15 Uhr
@@ -3875,6 +3850,7 @@ userdel	2::temp 8362,13466 8369,13465 8377,13463
 #: note: verschlossen am 2016-07-21 gegen 19:30 Uhr
 #: note: verschlossen am 2016-09-21 gegen 18:15 Uhr
 #: note: verschlossen am 2016-11-22 gegen 18:30 Uhr
+#: note: verschlossen am 2016-12-07 gegen 19:00 Uhr
 userdel	2::temp 8371,13399 8363,13402 8356,13404
 ',
          'from' => undef,
@@ -3985,7 +3961,7 @@ userdel	q4::inwork 6587,16199 6484,16085
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2016-11-28 vvv
+#: last_checked: 2016-12-05 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375

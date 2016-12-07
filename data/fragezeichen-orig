@@ -32,7 +32,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 #: XXX im Baumaﬂnahmenkatalog ist nur der ˆstliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaﬂnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2016-11-09
+#: last_checked: 2016-12-06
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -405,7 +405,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/holzmarktstrasse/index.shtml
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/holzmarktstrasse/download/LP_01.pdf
 #: source_id: 2147340618
-#: last_checked: 2016-11-28
+#: last_checked: 2016-12-05
 #: next_check: 2017-04-01
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11388,12202 11513,12138 11619,12084 11764,12001
 # 
@@ -1223,7 +1223,7 @@ Wolzenseeweg: Qualit‰t? Straﬂe bereits fertiggestellt? Wird es eine ‹berquerungs
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straﬂe	? -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 # 
 #: next_check_id: OBERWALL-2014 vvv
-#: last_checked: 2016-11-30 vvv
+#: last_checked: 2016-12-07 vvv
 #: check_frequency: 90d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2015 (Grundst¸cksnummerierungen)
@@ -1641,6 +1641,7 @@ Betriebsbahnhof Schˆneweide --> Adlershof-Johannisthal	X 18682,4714
 #: XXX oder "Freie Universit‰t (Thielplatz)"?
 Thielplatz --> Freie Universit‰t	X 2265,4892
 #: XXX oder "Kienberg (G‰rten der Welt)"?
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.538884.php (Variante mit Klammern)
 Neue Grottkauer Straﬂe --> Kienberg-G‰rten der Welt	X 23042,13880
 #: priority ^^^
 #: next_check ^^^
@@ -1852,7 +1853,7 @@ Schleuse - Lindenufer: f¸hrt der Havelradweg hier entlang?	? -2942,14666 -2928,1
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2016
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2016
 #: XXX ggfs. culdesac- und str_cont_ausnahme-Eintr‰ge erstellen
-#: last_checked: 2016-11-26
+#: last_checked: 2016-12-06
 #: check_frequency: 90d
 Mehlbeerenweg: Teilst¸ck wird eingezogen	? 11940,11982 11923,11881
 # 
@@ -2433,19 +2434,15 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: XXX_prog ^^^
 # 
 # REMOVED (Bauarbeiten laufen gerade, siehe handicap-Eintrag) --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20141202.1525.400470.html --- #: last_checked: 2016-10-27 --- #: check_frequency: 90d --- Sebastianstr.: Straﬂenumgestaltungsmaﬂnahme Sebastianstraﬂe - gibt es ƒnderungen f¸r Radfahrer?	?::projected 10640,11564 10818,11269 10824,11256 10911,11080
-# 
-#: next_check_id: ALEXANDRINENSTR-2016
-#: XXX siehe auskommentierter Eintrag in gesperrt-orig
-#: last_checked: 2016-11-07
-#: priority: #A
-Stallschreiberstr.: wird die Einbahnstraﬂe wiederhergestellt?	?::inwork 10489,11405 10620,11244 10678,11172
+# REMOVED (sieht wieder normal aus) --- #: next_check_id: ALEXANDRINENSTR-2016 --- #: XXX siehe auskommentierter Eintrag in gesperrt-orig --- #: last_checked: 2016-11-07 --- #: priority: #A --- Stallschreiberstr.: wird die Einbahnstraﬂe wiederhergestellt?	?::inwork 10489,11405 10620,11244 10678,11172
 #
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.334355.php
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7482
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein ˆffentlich zug‰nglicher Geh/Radweg gebaut
-#: last_checked: 2016-11-07
-Stallschreiberstr./Kolonnenweg: Straﬂenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172 10818,11269
+#: last_checked: 2016-12-06
+Stallschreiberstr./Kolonnenweg: Straﬂenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
+# REMOVED (->handicap) --- Stallschreiberstr./Kolonnenweg: Straﬂenbauarbeiten geplant	?::projected 10678,11172 10818,11269
 # 
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7641&options=4
 #: next_check: 2016-10-31

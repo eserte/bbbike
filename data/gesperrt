@@ -1002,6 +1002,7 @@ Walsroder Str.	1s 6395,5154 6295,5158 6202,5163 6094,5171
 Hünensteig	1s 6419,5048 6387,5057
 Hünensteig	1s 6387,5057 6395,5154
 Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen	1s 12116,9825 11946,9913 11735,10022 11512,10105
+Stallschreiberstr.	1s 10489,11405 10620,11244 10678,11172
 Jahnstr.	1s 11500,9116 11509,9392
 Waldweg	1s 25496,2429 24981,2580
 Schulenburgring	1s 9030,8431 9028,8584 9011,8605
@@ -2366,6 +2367,7 @@ tragen (Treppe)	0:30:87 4334,12551
 tragen (Jungfernbrücke, 10 Stufen)	0:15:53 10212,12002
 tragen (Jungfernbrücke, 4 Stufen)	0:10:53 10223,12010
 tragen (Treppe, 26 Stufen)	0:30:-248 10591,12203
+tragen (Treppe, 11 Stufen)	0:20:-220 10417,12378
 tragen (Treppe und Rampe)	0:30:-154 39281,17353
 tragen (Treppe oder sehr steile, sandige Rampe)	0:60:-255 41715,18446
 tragen (Treppe am Körnerpark, 16 Stufen)	0:30:-114 12734,7384
@@ -2837,7 +2839,6 @@ versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
 Drängelgitter	BNP:3:-240 31665,48997
-Spreeufer Nikolaiviertel: Gehweg gesperrt	2::inwork 10424,12364 10492,12289 10583,12206
 Puschkinallee: Fahrtrichtung gesperrt	1::inwork 13795,9941 13890,9894
 Parkweg zwischen Stresemannstr. und Wilhemstr.: wird instandgesetzt, in dieser Zeit nicht befahrbar	2::inwork 9250,10563 9375,10616
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s 8732,14098 8654,14194
@@ -2901,7 +2902,7 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
 Oberwallstr.: Bauarbeiten, komplett gesperrt	2:inwork 9898,12161 9882,12259
-Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10422,12395
+Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10411,12471 10416,12394
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18680,-1506 18798,-1581 18853,-1656 18866,-1674
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603

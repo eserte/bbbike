@@ -6764,23 +6764,16 @@ EOF
 userdel	2::inwork -31993,-726 -32143,-211 -32153,-176
 EOF
      },
-     { from  => $isodate2epoch->("2013-11-19 00:00:00"), # die Buden standen schon am 19.11.2013 # 1353884400, # 1321916400, # 2011-11-22 00:00 # PERIODISCH! # früher: 1163480400, # 2006-11-14 06:00
-       until => $isodate2epoch->("2013-12-26 23:59:59"), # 1356562740, # 1324940399, # 2011-12-26 23:59 # PERIODISCH! # früher: 1167433200, # 2006-12-30 00:00
-       # periodic => 1,
-       # recurrences => [['yearly', days => 18, months => 11]], --- zurzeit wahrscheinlich an der Neuen Wache, wahrscheinlich ohne Behinderungen
-       text  => 'Nostalgischer Weihnachtsmarkt rund um das Opernpalais: Schinkelplatz teilweise gesperrt, teilweise reger Fußgängerverkehr, vom 25.11. bis 26.12.2013',
+     { from  => $isodate2epoch->("2016-11-24 00:00:00"), # die Buden standen schon am 19.11.2013 # 1353884400, # 1321916400, # 2011-11-22 00:00 # PERIODISCH! # früher: 1163480400, # 2006-11-14 06:00
+       until => $isodate2epoch->("2016-12-26 23:59:59"), # 1356562740, # 1324940399, # 2011-12-26 23:59 # PERIODISCH! # früher: 1167433200, # 2006-12-30 00:00
+       periodic => 1,
+       recurrences => [['yearly', days => 18, months => 11]],
+       text  => 'Nostalgischer Weihnachtsmarkt Opernpalais: Wege und Straßen rund um die Hedwigs-Kathedrale teilweise nicht passierbar, teilweise reger Fußgängerverkehr, vom 25.11. bis 26.12.2016',
        type  => 'gesperrt',
-       source_id => 'http://www.berliner-weihnacht.de/?y=2013',
+       source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/971793-1328132-weihnachtsmarktamopernpalais.html',
        data  => <<EOF,
-userdel	2::xmas 10008,12274 9994,12368
-# REMOVED (passierbar!) --- userdel	2::temp 9943,12364 9961,12273 9972,12184
-userdel	2::xmas 10010,12259 10029,12208
-# REMOVED (2012 nicht gesperrt) --- userdel	2::temp 9858,12410 9876,12298 9882,12259 9898,12161
-userdel	2::xmas 10008,12274 10058,12290
-userdel	2::xmas 10091,12232 10058,12290 9996,12401
-# REMOVED (2012 nicht gesperrt) --- userdel	2::temp 9961,12273 9882,12259
-userdel	q4::xmas 9994,12368 9996,12401 9984,12426
-	q2::xmas 9972,12184 9961,12273 9943,12364 9994,12368
+	2::xmas 9743,12239 9798,12267
+	q4::xmas 9743,12239 9747,12205 9771,12190 9775,12178 9808,12182
 EOF
      },
      { from  => 1163718000, # 2006-11-17 00:00
@@ -13924,7 +13917,7 @@ EOF
        source_id => 'IM_012342',
        data  => <<EOF,
 userdel	q4::inwork 10285,12306 10357,12356
-userdel	q4::inwork 10422,12395 10476,12432
+userdel	q4::inwork 10416,12394 10476,12432
 EOF
      },
      { from  => 1240518036, # 2009-04-23 22:20
@@ -25082,6 +25075,7 @@ EOF
 #: note: offen am 2016-09-21 gegen 18:15 Uhr
 #: note: offen am 2016-11-11 gegen 18:40 Uhr
 #: note: offen am 2016-11-22 gegen 18:30 Uhr
+#: note: offen am 2016-12-07 gegen 19:00 Uhr
 userdel	2::temp 8362,13466 8369,13465 8377,13463
 #: note: verschlossen am 2016-06-16 gegen 9:30 Uhr
 #: note: verschlossen am 2016-07-01 gegen 18:15 Uhr
@@ -25089,6 +25083,7 @@ userdel	2::temp 8362,13466 8369,13465 8377,13463
 #: note: verschlossen am 2016-07-21 gegen 19:30 Uhr
 #: note: verschlossen am 2016-09-21 gegen 18:15 Uhr
 #: note: verschlossen am 2016-11-22 gegen 18:30 Uhr
+#: note: verschlossen am 2016-12-07 gegen 19:00 Uhr
 userdel	2::temp 8371,13399 8363,13402 8356,13404
 EOF
      },
@@ -25497,7 +25492,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2016-11-28 vvv
+#: last_checked: 2016-12-05 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
