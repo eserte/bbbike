@@ -11,7 +11,7 @@
 ### Friedrichshain ###
 # 
 #: next_check_id: RUEDERSDORFER-2016
-#: last_checked: 2016-12-06
+#: last_checked: 2016-12-08
 #: check_frequency: 14d
 Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 13173,11788 13066,11854
 # 
@@ -74,9 +74,9 @@ Rigaer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 14133,12482 14266,12446
 #: note: laut fritz bis 09.12.2016, laut rbb bis 05.12.2016
 #: source_id: 2147340484
 #: last_checked: 2016-09-14
-#: next_check: 2016-12-09
+#: next_check: 2016-02-28
 #: priority: #A
-#: valid: -20161209
+#: valid: -20170228
 Mariendorfer Damm: Fahrbahn zwischen Prinzenstr. und Richterstr. gesperrt	q4::inwork; 9333,4229 9346,4144 9372,4012
 # 
 ### Treptow ###
@@ -242,8 +242,9 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2016-11-11
 #: XXX siehe auch aufgehobene Einbahnstraßenregelung in gesperrt-orig (Behrenstr./Bebelplatz)
+#: last_checked: 2016-12-07
+#: next_check: 2016-12-27
 Behrenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9743,12239 9798,12267
 #: next_check_id ^^^
 # 
