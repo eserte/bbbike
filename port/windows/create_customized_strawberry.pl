@@ -261,14 +261,18 @@ sub action_add_bbbike_bundle {
     };
 }
 
-print STDERR "Copying strawberry perl to $bbbikedist_dir...\n";
-my @cmd = ($^X, "$FindBin::RealBin/strawberry-include-exclude.pl",
-	   "-doit", "-v",
-	   "-src", $strawberry_dir,
-	   "-dest", $bbbikedist_dir,
-	  );
-system @cmd;
-die "Failure of command: @cmd" if $? != 0; 
+action_copy_to_bbbikedistdir();
+
+sub action_copy_to_bbbikedistdir {
+    print STDERR "Copying strawberry perl to $bbbikedist_dir...\n";
+    my @cmd = ($^X, "$FindBin::RealBin/strawberry-include-exclude.pl",
+	       "-doit", "-v",
+	       "-src", $strawberry_dir,
+	       "-dest", $bbbikedist_dir,
+	      );
+    system @cmd;
+    die "Failure of command: @cmd" if $? != 0; 
+}
 
 print STDERR "Finished.\n";
 
