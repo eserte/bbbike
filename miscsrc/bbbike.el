@@ -434,6 +434,17 @@
 	  )
       (error "No X selection or X selection does not contain a way/node/relation line"))))
 
+(defun bbbike-insert-osm-watch ()
+  (interactive)
+  (let ((sel (bbbike--get-x-selection)))
+    (if (string-match "<\\(way\\|node\\|relation\\).* \\(id=\"[0-9]+\"\\).* \\(version=\"[0-9]+\"\\)" sel)
+	(let ((elemtype (substring sel (match-beginning 1) (match-end 1)))
+	      (elemid (substring sel (match-beginning 2) (match-end 2)))
+	      (elemversion (substring sel (match-beginning 3) (match-end 3))))
+	  (beginning-of-line)
+	  (insert (concat "#: osm_watch: " elemtype " " elemid " " elemversion "\n")))
+      (error "No X selection or X selection does not contain a way/node/relation line"))))
+
 (defun bbbike-grep ()
   (interactive)
   (let (search-key search-val dirop)
