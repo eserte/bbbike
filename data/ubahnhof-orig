@@ -37,7 +37,9 @@ Breitenbachplatz	UB 3998,6655
 Podbielskiallee	UB 3158,6358
 #: attrs bg
 Dahlem-Dorf	UB 2768,5624
-Thielplatz	UB 2265,4892
+#: oldname: -20161210: Thielplatz
+#: alias: Thielplatz
+Freie Universität	UB 2265,4892
 Oskar-Helene-Heim	UB 1408,4785
 Onkel Toms Hütte	UB 284,4723
 #: attrs bg
@@ -130,10 +132,9 @@ Wuhletal	UB 22121,12080
 #: attrs bf
 Kaulsdorf-Nord	UB 22960,13041
 #: attrs bf
-#: XXX Umbenennung in "Kienberg - Gärten der Welt"
-#: by: http://www.bahninfo.de/berlin/?date=20160331
-#: next_check: 2016-12-11
-Neue Grottkauer Str.	UB 23042,13880
+#: oldname: -20161210: Neue Grottkauer Str.
+#: alias: Kienberg (Gärten der Welt)
+Kienberg	UB 23042,13880
 #: attrs bf
 Cottbusser Platz	UB 23400,14469
 #: attrs bf
