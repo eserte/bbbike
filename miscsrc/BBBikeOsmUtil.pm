@@ -491,6 +491,8 @@ sub plot_osm_files {
 		$item_args{'-dash'} = '.-'; # looks like a boundary, n'est-ce pas?
 	    } elsif (exists $tag{'obsolete_boundary'}) {
 		next;
+	    } elsif (exists $tag{'roof:ridge'} || exists $tag{'roof:edge'}) {
+		$item_args{'-width'} = 1;
 	    }
 	    if (exists $tag{'oneway'}) {
 		if ($tag{'oneway'} eq '-1') {
@@ -590,6 +592,8 @@ sub plot_osm_files {
 			(exists $tag{'waterway'})
 		       ) {
 			$color = '#6060a0';
+		    } elsif (exists $tag{'roof:ridge'} || exists $tag{'roof:edge'}) {
+			$color = '#a06060';
 		    }
 		    $c->createLine(@coordlist,
 				   -fill => $color,
