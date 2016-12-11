@@ -3498,22 +3498,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2016/pressemitteilung.510363.php
-#: XXX hier wird asphaltiert
-#: XXX ursprüngliches Enddatum wurde nicht eingehalten
-#: osm_watch: way id="33912929" version="12"
-#: last_checked: 2016-11-22
-#: check_frequency: 14d
-#: priority: #A
-userdel	2::inwork 8101,13901 8248,13659 8332,13548
-',
-         'from' => 1471730400,
-         'id' => 2636,
-         'text' => 'Invalidenfriedhof - Invalidenstr.: Weg wegen Bauarbeiten bis November 2016 gesperrt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3527,13 +3512,14 @@ userdel	2::inwork 8101,13901 8248,13659 8332,13548
 #: note: am Mo, den 2016-04-11 gegen 18:20: geschlossen
 #: note: am So, den 2016-06-12 gegen 12:30: offen
 #: note: am Mo, den 2016-10-10 gegen 17:50: offen
+#: note: am Sa, den 2016-12-10 gegen 13:00: geschlossen
 	3::night 14563,8243 14425,8116 14419,8112
 	3::night 14419,8112 14425,8116 14563,8243
 ',
          'from' => undef,
          'id' => 2643,
          'recurring' => 1,
-         'text' => 'Mergenthalerring/Dieselstr.: Tor kann vormittags, abends und nachts versperrt sein',
+         'text' => 'Mergenthalerring/Dieselstr.: Tor kann versperrt sein',
          'until' => undef
        },
        undef,
@@ -3660,7 +3646,34 @@ userdel	q4::inwork; 3807,11859 3666,11855
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	q4::inwork 8634,10426 8384,10507 8527,10621
+userdel	q4::inwork 8348,10636 8335,10518 8350,10499
+',
+         'from' => 1484521200,
+         'id' => 2718,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              8,
+                              'months',
+                              1
+                            ],
+                            [
+                              'yearly',
+                              'days',
+                              27,
+                              'months',
+                              6
+                            ]
+                          ],
+         'source_id' => '2147339708',
+         'text' => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 17.01.2017-19.01.2017',
+         'type' => 'handicap',
+         'until' => 1484866799
+       },
        {
          'data' => '	2::inwork 9998,16547 9983,16561 9955,16578
 ',
@@ -3944,16 +3957,7 @@ userdel	q4::inwork 12911,1815 12817,2031
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: by fritz
-userdel	q4::inwork 6587,16199 6484,16085
-',
-         'from' => 1471893583,
-         'id' => 2819,
-         'text' => 'Kameruner Str.: Fahrbahn zwischen Müllerstr. und Lüderitzstr. gesperrt, bis 08.12.2016',
-         'type' => 'handicap',
-         'until' => 1481238000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4050,16 +4054,7 @@ userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,
        },
        undef,
        undef,
-       {
-         'data' => '#: note: by fritz
-userdel	q4::inwork 4646,6875 4767,6717
-',
-         'from' => 1477603388,
-         'id' => 2839,
-         'text' => 'Geisenheimer Str.: zwischen Rauenthaler Straße und Gritznerstraße Tiefbauarbeiten, Fahrbahn gesperrt, bis 09.12.2016',
-         'type' => 'handicap',
-         'until' => 1481324400
-       },
+       undef,
        undef,
        undef,
        {

@@ -2135,7 +2135,7 @@ Schranke	BNP:3::trailer=10 5296,11529
 # 
 #: next_check_id: DIESEL-2015 vvv
 #: note: mittlerweile gibt es hier auch zwei Baustellenampeln mit Anforderung, allerdings wird relativ schnell auf grün geschaltet vvv
-#: last_checked: 2016-10-10 vvv
+#: last_checked: 2016-12-10 vvv
 #: check_frequency: 60d vvv
 Drängelgitter	BNP:5::trailer=10 14364,8096
 Drängelgitter	BNP:5::trailer=10 14405,8115
@@ -2776,7 +2776,7 @@ Sülzhayner Str.: komplett gesperrt wegen Bauarbeiten, vielleicht dauerhaft	2::in
 #: check_frequency: 60d
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 # 
-#: last_checked: 2016-12-01
+#: last_checked: 2016-12-10
 Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2 14447,10491 14270,10584
 # 
 #: next_check_id: MARIANNEN-2016 vvv
@@ -2785,7 +2785,7 @@ Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2 14447,10491 14270,10584
 #: source_id: 2147340768 vvv
 #: priority: #A vvv
 #: XXX laut fritz bis 16.12.2016
-#: last_checked: 2016-12-08 vvv
+#: last_checked: 2016-12-09 vvv
 #: next_check: 2016-12-16 vvv
 Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11512,10105 11616,10288
 #: source_id: 2147340777
@@ -2803,14 +2803,14 @@ Mariannenstr.: Baustelle, Fahrbahn gesperrt	2s:q3 11671,10402 11616,10288
 # 
 #: note: siehe auch http://www.detlefzabel.de/spreebruecke-neubau/
 #: next_check_id: MINNATODENHAGENSTR-2016
-#: last_checked: 2016-10-30
-#: next_check: 2017-01-01
-Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17082,7189 16954,7096 16720,6845
+#: last_checked: 2016-12-10
+#: next_check: 2017-04-01
+Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17453,7451 17295,7344 17211,7280 17091,7175 16971,7058 16720,6845
 # 
 # REMOVED (laut osm nicht mehr highway=construction) --- #: osm_watch: way id="291810047" version="7" --- #: last_checked: 2016-07-23 --- Alfonsstr.: Bauzäune	2::inwork 19027,1427 19034,1441 19061,1457
 # REMOVED (komplett entfernt) --- #: last_checked: 2016-09-26 --- #: check_frequency: 90d --- Sonntagstr./Ostkreuz: wegen Bauarbeiten gesperrt	2::inwork 14752,11041 14810,10977
 # 
-#: last_checked: 2016-12-04
+#: last_checked: 2016-12-10
 Haasestr.: Bauarbeiten, keine Durchfahrt möglich	2::inwork 14328,11320 14286,11186
 # 
 #: XXX nach den Bauarbeiten vermutlich Verbundsteinpflaster
@@ -2896,10 +2896,10 @@ Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076 9559,13087
 # 
 #: next_check_id: MINNATODENHAGENSTR-2016
-#: last_checked: 2016-09-16 vvv
+#: last_checked: 2016-12-10 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- Grenzweg: wegen Straßenbau gesperrt, ggfs. dauerhaft	2::inwork 17219,7268 17295,7330 17445,7434
-Schwarzer Weg: wegen Straßenbau gesperrt	2::inwork 17295,7323 17295,7330 17296,7401
+Schwarzer Weg: wegen Straßenbau gesperrt	2::inwork 17295,7323 17295,7330 17295,7344 17296,7401
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -2919,7 +2919,7 @@ Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,1
 #: next_check_id ^^^
 # 
 #: next_check_id: DIESEL-2015
-#: last_checked: 2016-10-10
+#: last_checked: 2016-12-10
 #: check_frequency: 60d
 Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 14471,8046
 # 
@@ -3009,12 +3009,12 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 # REMOVED (Aufschüttung statt Brücke) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6003 (Forderung nach Wiederherstellung) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6003&date=20151213 (Abriss der Brücke) --- #: XXX: Umfahrung existiert mittlerweile --- bleibt die Sperrung permanent? --- #: XXX: sobald die Brücke abgerissen wurde -> aus den Daten entfernen --- #: last_checked: 2015-10-04 --- #: check_frequency: 180d --- Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352
 # 
 #: osm_watch: way id="193373934" version="5"
-#: last_checked: 2016-10-30
+#: last_checked: 2016-12-10
 #: check_frequency: 30d
 Frauenauer Str.: Straße fertig, aber noch gesperrt	2::inwork 19663,9757 19858,9775
 # 
 #: osm_watch: way id="290255259" version="3"
-#: last_checked: 2016-10-30
+#: last_checked: 2016-12-10
 #: check_frequency: 30d
 Kirchdorfer Str.: Straße fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9775 19871,9680
 # 
@@ -3028,7 +3028,7 @@ Kirchdorfer Str.: Straße fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9
 #: check_frequency: 360d
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 # 
-#: last_checked: 2016-12-03
+#: last_checked: 2016-12-10
 #: check_frequency: 120d
 am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14463,10212
 # 

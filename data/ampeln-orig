@@ -2784,13 +2784,13 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_prog eigentlich nur für Radfahrer Richtung Nordwesten relevant vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
 #: source_id: IM_023548 (bis Ende April 2016) vvv
-#: last_checked: 2016-10-30 vvv
-#: check_frequency: 120d vvv
+#: last_checked: 2016-12-10 vvv
+#: next_check: 2017-04-30 vvv
 # REMOVED (Zweirichtungsradweg geht Richtung Norden weiter) --- F 17568,7753
 #: XXX hier wird später eine normale Ampel stehen
 	F::inwork 17681,7589
 	F::inwork 17527,7812
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: source_id ^^^
 #: by: ^^^
@@ -3046,7 +3046,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -12653,-1723
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
 #: next_check_id: KIEFHOLZ-2015 vvv
-#: last_checked: 2016-12-04 vvv
+#: last_checked: 2016-12-10 vvv
 #: check_frequency: 90d vvv
 	X::inwork 14151,8967
 	X::inwork 14363,8738

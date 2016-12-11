@@ -583,7 +583,7 @@ Uferweg an den Treptowers: Parkweg (fester Sandweg)	Q1 14373,10046 14202,10152 1
 Hasenheide: asphaltiert	Q0 11266,8336 11275,8387 11282,8428 11279,8489 11255,8591 11182,8983 11141,9107 11136,9183
 Hasenheide, zur Lilienthalstr.: Parkweg	Q1 10709,9192 11141,9107
 Carl-Herz-Ufer: Kopfsteinpflaster (kann auf Uferweg umgangen werden)	Q2 10627,9912 10602,9957 10500,10081
-Carl-Herz-Ufer: Kopfsteinpflaster (kann auf breitem asphaltierten Uferweg umgangen werden)	Q1 10168,10085 10313,10084 10469,10081 10500,10081
+Carl-Herz-Ufer: Kopfsteinpflaster (kann auf breitem asphaltierten Uferweg umgangen werden)	Q1 10168,10085 10313,10084 10430,10081 10500,10081
 Schloßstr.: asphaltiert	Q0 3117,11852 3103,11968
 Zillestr.: Asphalt	Q0 3268,11847 3117,11852
 Am Graben: Kopfsteinpflaster und Verbundsteinpflaster	Q1 -4778,7791 -4819,7833
@@ -784,7 +784,7 @@ Uferweg am Schlachtensee: rauer Asphalt	Q1 -1353,4205 -1282,4244
 südlicher Uferweg am Schlachtensee: Feinschotter	Q1 -3384,3212 -3341,3122 -3273,3096 -3200,3145 -3190,3167 -3136,3294 -3081,3377 -2947,3486 -2802,3570 -2761,3576 -2729,3593 -2599,3637 -2513,3631 -2464,3631 -2396,3666 -2174,3718 -2042,3838 -2015,3873 -2012,3949 -2030,4089 -1944,4140 -1760,4001 -1701,3980 -1621,3972 -1516,3993 -1488,4009 -1390,4116 -1382,4132
 Weg am Teufelssee: Waldweg	Q1 -886,9447 -942,9251 -1047,9123
 Schwarzer Weg (Oberschöneweide): unbefestigter Weg, holprig	Q2 17299,8140 17299,8108 17301,7754
-Schwarzer Weg (Oberschöneweide): asphaltiert, mit leichten Schäden	Q0 17301,7754 17301,7645 17296,7401 17295,7330
+Schwarzer Weg (Oberschöneweide): asphaltiert, mit leichten Schäden	Q0 17301,7754 17301,7645 17296,7401 17295,7344 17295,7330
 Schwarzer Weg (Oberschöneweide): unbefestigter Weg, teilweise recht schmal	Q2 17295,7330 17295,7323 17297,7196 17286,7173
 (Wilhelmstrand, Weg 1): unbefestigter Weg	Q2 17059,8097 17299,8108
 Möllhausenufer: Kopfsteinpflaster	Q2 23295,1145 23408,1170 23520,1194 23608,1210
@@ -1515,7 +1515,7 @@ Nalepastr.: Kopfsteinpflaster	Q2 17052,7738 17059,8097
 Nalepastr.: Asphalt	Q0 17050,7687 17052,7738
 Nalepastr.: Beton, Eisenbahnschienen	Q1 17050,7687 17047,7619
 Nalepastr.: fester enger Sandweg	Q2 17043,7512 17047,7619
-Nalepastr.: Beton, Eisenbahnschienen	Q1 17043,7512 17135,7377 17190,7306 17219,7268
+Nalepastr.: Beton, Eisenbahnschienen	Q1 17043,7512 17135,7377 17190,7306 17211,7280 17219,7268
 Nalepastr.: sehr guter Asphalt	Q0 17219,7268 17286,7173 17352,7051 17459,6854 17514,6754 17555,6680 17614,6571
 Ernst-Grube-Str.: Asphalt	Q0 21364,5430 21363,5336 21362,5289 21345,5157 21343,5140 21324,4986
 Ernst-Grube-Str.: Kopfsteinpflaster	Q2 21324,4986 21306,4876 21300,4837 21264,4809 21332,4655
@@ -1642,7 +1642,8 @@ Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8825,11773 8813,11825 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): asphaltiert	Q0 14671,10751 14566,10783
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Beton	Q0 14566,10783 14558,10819
-(Markgrafendamm - Modersohnstr.; über das DB-Gelände): mäßiges bis schlechtes Kopfsteinpflaster	Q3 14558,10819 14141,10931 14107,10911 14043,10928
+(Markgrafendamm - Modersohnstr.; über das DB-Gelände): mäßiges bis schlechtes Kopfsteinpflaster	Q3 14558,10819 14231,10907 14141,10931 14107,10911 14043,10928
+(Markgrafendamm - Modersohnstr.; Werkstraße über das DB-Gelände): asphaltiert	Q0 14231,10907 14224,10878 14107,10911
 Mehringplatz: Verbundsteinpflaster	Q0 9592,10263 9547,10278 9517,10332 9527,10389 9587,10421 9646,10404 9675,10351 9668,10306 9646,10279 9606,10263 9592,10263
 Mehringplatz - Friedrichstr.: Verbundsteinpflaster	Q0 9587,10421 9570,10566
 zum Mehringplatz: Verbundsteinpflaster	Q0 9873,10285 9668,10306
@@ -9094,7 +9095,7 @@ Patersdorfer Str.: Asphalt	Q0 19626,9171 19764,9160 19874,9151
 (Wohnpark Karlshorst): Kleinsteinpflaster	Q1 19679,9214 19680,9291 19688,9365
 (Wohnpark Karlshorst): Kleinsteinpflaster	Q1 19634,9292 19680,9291
 (Wohnpark Karlshorst): Beton	Q0 19688,9365 19692,9416
-(Wohnpark Karlshorst): Beton	Q0 19641,9411 19669,9418 19692,9416 19743,9412 19780,9409
+(Wohnpark Karlshorst): Beton	Q0 19641,9411 19650,9413 19669,9418 19692,9416 19743,9412 19780,9409
 Wasserstr. (Niederschöneweide): Asphalt	Q0 17483,6024 17681,6212
 Uferstr. (Niederschöneweide): Asphalt	Q0 17681,6212 17843,6083
 (Weg): Beton	Q0 21860,462 21820,524 21777,591
