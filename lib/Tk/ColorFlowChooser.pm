@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# $Id: ColorFlowChooser.pm,v 1.5 2002/12/26 02:17:46 eserte Exp eserte $
+# $Id: ColorFlowChooser.pm,v 1.6 2015/05/31 15:55:41 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright (C) 2002 Slaven Rezic. All rights reserved.
@@ -16,7 +16,7 @@
 package Tk::ColorFlowChooser;
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
 use Tk qw(Ev);
 use base qw(Tk::Derived Tk::Canvas);
 Construct Tk::Widget 'ColorFlowChooser';
@@ -49,8 +49,10 @@ sub draw {
     my $font = $w->{Font};
     if (!defined $font) {
 	$font = $w->optionGet("font", "Font");
-	if (!defined $font) {
-	    die "XXX no font?";
+	if (!defined $font || $font eq '') {
+	    my $l = $w->Label;
+	    $font = $l->cget(-font);
+	    $l->destroy;
 	}
     }
     my $font_height = $w->fontMetrics($font, '-linespace');

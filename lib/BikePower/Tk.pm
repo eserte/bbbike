@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# $Id: Tk.pm,v 1.9 2004/10/02 08:21:47 eserte Exp eserte $
+# $Id: Tk.pm,v 1.10 2014/01/26 20:02:16 eserte Exp $
 # Author: Slaven Rezic
 #
 # Copyright: see BikePower.pm
@@ -43,7 +43,7 @@ sub set_lang {
 package BikePower::Tk;
 use BikePower;
 use vars qw($VERSION @interfaces %icons);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/);
 
 # language strings
 my $lang_s =

@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: ContextHelp.pm,v 1.18 2007/11/05 20:56:50 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (c) 1998,2000,2003 Slaven Rezic. All rights reserved.
+# Copyright (c) 1998,2000,2003,2015 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -19,7 +18,7 @@ BEGIN { die "Tk::ContextHelp does not work with Win32" if $^O eq 'MSWin32' }
 use Tk::InputO;
 use strict;
 use vars qw($VERSION @ISA $NO_TK_POD);
-$VERSION = '0.12';
+$VERSION = '0.13';
 @ISA = qw(Tk::Toplevel);
 
 Construct Tk::Widget 'ContextHelp';
@@ -226,13 +225,8 @@ sub _show_help {
 	    } elsif ($w->{'podwindow'} && $w->{'pod'}{$under}) {
 		# here comes the *hack*
 		# find the Text widget of the pod window
-		foreach ($w->{'podwindow'}{'SubWidget'}{'pod'}
-			 ->children->{'SubWidget'}{'more'}->children) {
-		    if ($_->isa('Tk::Text')) {
-			$textw = $_;
-			last;
-		    }
-		}
+		my $podtext = $w->{podwindow}->Subwidget('pod');
+		$textw      = $podtext->Subwidget('more')->Subwidget('text');
 	    }
 	    if ($textw) {
 		$textw->tag('configure', 'search',
@@ -668,7 +662,7 @@ Slaven Rezic <F<slaven@rezic.de>>
 Some code and documentation is derived from Rajappa Iyer's
 B<Tk::Balloon>.
 
-Copyright (c) 1998,2000,2003 Slaven Rezic. All rights reserved.
+Copyright (c) 1998,2000,2003,2015 Slaven Rezic. All rights reserved.
 This package is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.
 

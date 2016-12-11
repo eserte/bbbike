@@ -8,7 +8,7 @@
 # modify it under the same terms as Perl itself.
 #
 # Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  http://bbbike.sourceforge.net/
 #
 
 package Tk::CanvasFig;

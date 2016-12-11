@@ -21,7 +21,7 @@ Tk::FreeDesktop::Wm - a bridge between Tk and freedesktop window managers
 
 use strict;
 use vars qw($VERSION);
-$VERSION = "0.03";
+$VERSION = "0.04";
 
 use Tk;
 
@@ -254,6 +254,7 @@ sub _parse_wm_icon_data {
 	{
 	    open my $fh, $file
 		or die "Can't open file $file: $!";
+	    binmode $fh;
 	    read $fh, $magic, 10;
 	}
 	if      ($magic =~ m{^\x89PNG\x0d\x0a\x1a\x0a}) {
@@ -321,8 +322,9 @@ sub _parse_wm_icon_data_imager_png_file {
 sub set_window_type {
     my($self, $type, $window) = @_;
     $window = $self->mw if !$window;
+    my($wr) = $window->wrapper;
     $window->property("set", "_NET_WM_WINDOW_TYPE", "ATOM", 32,
-		      [$type]);
+		      [$type], $wr);
 }
 
 sub set_wm_desktop_file {

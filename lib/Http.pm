@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Http.pm,v 4.4 2015/01/24 19:52:28 eserte Exp $
+# $Id: Http.pm,v 4.5 2016/12/11 17:02:00 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1995,1996,1998,2000,2001,2003,2005,2008,2014,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 1995,1996,1998,2000,2001,2003,2005,2008,2014,2015,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -25,7 +25,7 @@ use vars qw(@ISA @EXPORT_OK $VERSION $tk_widget $user_agent $http_defaultheader
 @ISA = qw(Exporter);
 @EXPORT_OK = qw(get $user_agent $http_defaultheader
 		rfc850_date uuencode);
-$VERSION = sprintf("%d.%02d", q$Revision: 4.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 4.5 $ =~ /(\d+)\.(\d+)/);
 
 $tk_widget = 0 unless defined $tk_widget;
 $timeout = 10  unless defined $timeout;
@@ -37,6 +37,8 @@ EOF
 if (is_in_path("zcat")) {
     $http_defaultheader .= "Accept-encoding: deflate, gzip\015\012";
 }
+
+my $tk_async_method; set_tk_async_method();
 
 # Holt das durch urlstring spezifizierte WWW-Dokument. Falls rfc850 oder ctime
 # angegeben wurde, wird das Dokument nur geholt, falls seitdem
@@ -169,6 +171,7 @@ sub get_plain {
     my $sock = gensym;
 
     my $r;
+    print STDERR "Wait for connected socket ($host:$port) ...\n" if $debug;
     if ($timeout && _can_alarm()) {
 	local $SIG{ALRM} = sub { die "Timeout" };
 	alarm($timeout);
@@ -216,12 +219,17 @@ sub get_plain {
 	      . ($extra_header ne "" ? "$extra_header\015\012" : "")
 	        . "\015\012";
 
-    if ($tk_widget && $^O ne "MSWin32") {
+    if ($tk_widget) {
 	$$waitref = 0;
 	print STDERR "\nWait for writable socket ..." if $debug;
-	$tk_widget->fileevent($sock, 'writable', sub { $$waitref = 1 });
-	$tk_widget->waitVariable($waitref);
-	$tk_widget->fileevent($sock, 'writable', '');
+	if ($tk_async_method eq 'poll') {
+	    _tk_poll_for_ready_socket($sock, 'writable', $waitref);
+	    $tk_widget->waitVariable($waitref) if !$$waitref;
+	} else {
+	    $tk_widget->fileevent($sock, 'writable', sub { $$waitref = 1 });
+	    $tk_widget->waitVariable($waitref) if !$$waitref;
+	    $tk_widget->fileevent($sock, 'writable', '');
+	}
 	print STDERR " socket is writable\n" if $debug;
     }
 
@@ -307,55 +315,64 @@ sub get_plain {
 	my $error = 0;
 	my $recursive_call = 0;
 	$$waitref = 0;
-	$tk_widget->fileevent
-	    ($sock, 'readable', sub {
-		 if ($timeout && _can_alarm()) {
-		     local $SIG{ALRM} = sub { die "Timeout" };
-		     alarm($timeout);
-		     my $r;
-		     eval {
-			 $r = sysread($sock, $buffer, 1024, length($buffer));
-		     };
-		     my $err = $@;
-		     alarm(0);
-		     if ($err) {
-			 $content = $err;
-			 $error = 1;
-			 $$waitref = 1;
-			 return;
-		     }
-		     if ($r == 0) {
-			 $$waitref = 1;
-			 return;
-		     }
-		 } else {
-		     if (sysread($sock, $buffer, 1024, length($buffer)) == 0) {
-			 $$waitref = 1;
-			 return;
-		     }
-		 }
-		 if ($stage == 0) {
-		     while ($buffer =~ s/(.*?\012)(.*)/$2/) {
-			 $_ = $1;
-			 if (!$parse_header_line->()) {
-			     $stage = 1;
-			     if ($error{code} != 200) {
-				 $$waitref = 1;
-				 $recursive_call = 1;
-				 return;
-			     }
-			     $content .= $buffer;
-			     $buffer = "";
-			     last;
-			 }
-		     }
-		 } else {
-		     $content .= $buffer;
-		     $buffer = "";
-		 }
-	     });
-	$tk_widget->waitVariable($waitref);
-	$tk_widget->fileevent($sock, 'readable', '');
+	my $do_read = sub {
+	    if ($timeout && _can_alarm()) {
+		local $SIG{ALRM} = sub { die "Timeout" };
+		alarm($timeout);
+		my $r;
+		eval {
+		    $r = sysread($sock, $buffer, 1024, length($buffer));
+		};
+		my $err = $@;
+		alarm(0);
+		if ($err) {
+		    $content = $err;
+		    $error = 1;
+		    $$waitref = 1;
+		    return;
+		}
+		if ($r == 0) {
+		    $$waitref = 1;
+		    return;
+		}
+	    } else {
+		if (sysread($sock, $buffer, 1024, length($buffer)) == 0) {
+		    $$waitref = 1;
+		    return;
+		}
+	    }
+	    if ($stage == 0) {
+		while ($buffer =~ s/(.*?\012)(.*)/$2/) {
+		    $_ = $1;
+		    if (!$parse_header_line->()) {
+			$stage = 1;
+			if ($error{code} != 200) {
+			    $$waitref = 1;
+			    $recursive_call = 1;
+			    return;
+			}
+			$content .= $buffer;
+			$buffer = "";
+			last;
+		    }
+		}
+	    } else {
+		$content .= $buffer;
+		$buffer = "";
+	    }
+	};
+	if ($tk_async_method eq 'poll') {
+	    while (!$$waitref) {
+		my $waitref2 = 0;
+		_tk_poll_for_ready_socket($sock, 'readable', \$waitref2);
+		$tk_widget->waitVariable(\$waitref2) if !$waitref2;
+		$do_read->();
+	    }
+	} else {
+	    $tk_widget->fileevent($sock, 'readable', $do_read);
+	    $tk_widget->waitVariable($waitref);
+	    $tk_widget->fileevent($sock, 'readable', '');
+	}
 	if ($recursive_call) {
 	    $content_follows->();
 	} elsif ($error) {
@@ -575,6 +592,41 @@ sub _can_alarm {
     $can_alarm;
 }
 
+sub _tk_poll_for_ready_socket {
+    my($sock, $_able, $waitref) = @_;
+    require IO::Select;
+    my $sel = IO::Select->new($sock);
+    my $can_method = $_able eq 'writable' ? 'can_write' : $_able eq 'readable' ? 'can_read' : die "specify 'writable' or 'readable', not '$_able'";
+    my $start = Tk::timeofday();
+    my $check;
+    $check = sub {
+	if ($sel->$can_method(0)) {
+	    $$waitref = 1;
+	    return;
+	}
+	if (defined $timeout && Tk::timeofday() - $start > $timeout) {
+	    die "Timeout while waiting on $_able socket (timeout is ${timeout}s)";
+	}
+	$tk_widget->after(20, $check);
+    };
+    $check->();
+}
+
+sub set_tk_async_method {
+    my($method) = @_;
+    if (!defined $method) {
+	if ($^O eq 'MSWin32') {
+	    $method = 'poll';
+	} else {
+	    $method = 'tk-fileevent';
+	}
+    }
+    if ($method !~ m{^(poll|tk-fileevent)$}) {
+	die "Invalid tk async method '$method'";
+    }
+    $tk_async_method = $method;
+}
+
 1;
 
 __END__
@@ -669,8 +721,12 @@ Slaven Rezic <srezic@cpan.org>
 
 =head1 COPYRIGHT
 
-Copyright (c) 1995,1996,1998,2000,2001,2003,2005,2008,2015 Slaven Rezic. All rights reserved.
+Copyright (c) 1995,1996,1998,2000,2001,2003,2005,2008,2015,2016 Slaven Rezic. All rights reserved.
 This module is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
 =head1 SEE ALSO
+
+L<LWP>.
+
+=cut

@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2000,2001,2003,2005,2006,2007,2008,2009,2012,2013,2014 Slaven Rezic.
+# Copyright (C) 1999,2000,2001,2003,2005,2006,2007,2008,2009,2012,2013,2014,2016 Slaven Rezic.
 # All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
@@ -24,7 +24,7 @@ use vars qw(@unix_browsers @available_browsers
 
 my $no_process_checker_warned;
 
-$VERSION = 2.52;
+$VERSION = 2.53;
 
 @available_browsers = qw(_debian_browser _internal_htmlview
 			 _default_gnome _default_kde
@@ -100,8 +100,14 @@ sub start_browser {
 	    eval {
 		my $cmdline = _get_cmdline_for_url_from_Gnome($url);
 		exec_bg($cmdline);
-		return 1;
 	    };
+	    if (!$@) {
+		return 1; # we're done;
+	    } else {
+		if ($VERBOSE && $VERBOSE >= 2) {
+		    warn "Can't exexute default gnome browser: $@";
+		}
+	    }
 	} elsif ($browser eq '_default_kde') {
 	    # NYI
 	} elsif ($browser eq 'konqueror') {
