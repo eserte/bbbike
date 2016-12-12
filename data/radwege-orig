@@ -528,7 +528,7 @@ Gehweg für Radfahrer frei	RW1; -4540,8535 -4540,8449 -4578,8336
 	RW3; -4578,8336 -4540,8449 -4540,8535
 Gehweg für Radfahrer frei	RW1; -4578,8336 -4819,7833 -4906,7666 -4967,7567 -5046,7442 -5097,7361 -5170,7256 -5279,7113 -5454,6896 -5698,6551
 enger Radweg	RW1; -5698,6551 -5454,6896 -5279,7113 -5170,7256 -5097,7361 -5046,7442 -4967,7567 -4906,7666 -4819,7833 -4578,8336
-Gehweg für Radfahrer frei	RW1;RW1 -5698,6551 -5758,6469 -5877,6308 -5915,6269 -6159,6026 -6170,6016 -6420,5771 -6480,5713 -6559,5637 -6666,5535 -6734,5470 -6982,5237
+Gehweg für Radfahrer frei	RW1;RW1 -5698,6551 -5758,6469 -5877,6308 -5915,6269 -6159,6026 -6170,6016 -6342,5846 -6420,5771 -6451,5740 -6480,5713 -6559,5637 -6666,5535 -6734,5470 -6982,5237
 	RW2;RW1 -6982,5237 -7009,5211 -7082,5144 -7120,5076
 	RW1; -5399,11426 -5462,11326 -5509,11256
 	RW3; -5509,11256 -5462,11326
@@ -936,7 +936,7 @@ asphaltiert	RW1;RW1 931,14268 984,14086
 	RW2; 4555,6403 4423,6477
 #: XXX was passiert hier bzgl. der Radwege?
 #: XXX Baumaßnahme GL6.17 (Realisierung nach 2011)
-#: osm_watch: way id="85468589" version="10"
+#: osm_watch: way id="85468589" version="11"
 #: last_checked: 2016-07-23
 #: check_frequency: 120d
 	RW2;RW8 6718,2443 6711,2496 6679,2701 6677,2718 6665,2836
@@ -1013,8 +1013,8 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5542,11075 5459,11135
 #: source_id: 2147339533
 #: last_checked: 2016-11-26
 #: next_check: 2016-12-16
-	RW0;RW0  5459,11135 5258,11285 5166,11343 5091,11406 5085,11413 4919,11605
-Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4919,11605 4900,11626 4838,11697
+	RW0;RW0  5459,11135 5258,11285 5166,11343 5091,11406 5085,11413 4922,11600
+Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 #: last_checked: 2016-11-28
 #: check_frequency: 60d
@@ -1410,7 +1410,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 	RW3;RW3 11159,10769 11234,10739 11275,10723
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW4;RW4
-#: last_checked: 2016-12-07
+#: last_checked: 2016-12-12
 #: check_frequency: 60d
 	RW0;RW0 8804,12280 8775,12457
 	RW4;RW4 8775,12457 8766,12541
@@ -1418,7 +1418,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2016-12-07
+#: last_checked: 2016-12-12
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -4534,6 +4534,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1239
 	RW3;RW3 12969,7610 12991,7549 13015,7471
 #: next_check_id: KARLMARXSTR-2016
 #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus?
+#: osm_watch: way id="297058655" version="3"
 #: last_checked: 2016-10-10
 #: check_frequency: 60d
 	RW4; 12969,7610 12914,7785

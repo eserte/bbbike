@@ -99,9 +99,10 @@ Wilhelmshöhe: Verbundsteinpflaster	Q1 9225,9111 9186,9107 9155,9029 9149,8961
 Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,6436 7227,6080
 #: XXX wird dieses Teilstück asphaltiert?
 #: XXX Baumaßnahme GL7.6, GL7.7 (Realisierung nach 2011)
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf (erwähnt)
 #: osm_watch: way id="102486250" version="6"
 #: last_checked: 2016-11-25
-#: check_frequency: 90d
+#: next_check: 2017-04-01
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7223,5890
 Priesterweg: Asphalt	Q0 7223,5890 7171,5831
 Hans-Baluschek-Park, Zugang: Verbundsteinpflaster	Q0- 7370,6451 7222,6458
@@ -152,7 +153,7 @@ Kopernikusstr.: mäßiges Kopfsteinpflaster	Q2 13467,11778 13651,11731
 Torellstr.: mäßiges Kopfsteinpflaster	Q2 13295,11792 13467,11778
 #: next_check_id: RUEDERSDORFER-2016
 #: XXX Bauarbeiten, danach vielleicht teilweise bessere Qualität?
-#: last_checked: 2016-12-08
+#: last_checked: 2016-12-12
 #: check_frequency: 60d
 Rüdersdorfer Str.: Asphalt mit Schäden	Q1- 13295,11792 13173,11788 13066,11854
 Kaskelstr.: relative glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
@@ -1944,9 +1945,8 @@ Rodelbergweg: Asphalt	Q0 16433,6892 16494,6948 16563,7012 16615,7062
 Heinrich-Lassen-Park: glatte Pflasterung	Q0 6664,8787 6705,8730
 Heinrich-Lassen-Park: wassergebundene Decke	Q1- 6705,8730 6740,8682 6815,8691 6912,8617
 Am Berlin-Spandauer Schiffahrtskanal: Kopfsteinpflaster	Q2 8332,13548 8248,13659
-# REMOVED (siehe temp_blockings-Eintrag) ---  --- #: XXX eventuell wird hier asphaltiert werden --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/1505_2016_bav_zu_ds_1599_iv_radweg_berlin-kopenhagen.pdf --- #: last_checked: 2016-06-16
-#: note: früher "glatter Belag, Q0", mittlerweile hat die Qualität deutlich nachgelassen
-Am Berlin-Spandauer Schiffahrtskanal: wassergebundene Decke	Q1 8248,13659 8101,13901 8119,13912
+# REMOVED (siehe temp_blockings-Eintrag) ---  --- #: XXX eventuell wird hier asphaltiert werden --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/1505_2016_bav_zu_ds_1599_iv_radweg_berlin-kopenhagen.pdf --- #: last_checked: 2016-06-16 --- #: note: früher "glatter Belag, Q0", mittlerweile hat die Qualität deutlich nachgelassen
+Am Berlin-Spandauer Schiffahrtskanal: Asphalt	Q0 8248,13659 8101,13901 8119,13912
 Uferweg: Verbundsteinpflaster	Q1 8011,14096 7994,14102 7967,14161 7973,14195
 Uferweg: Asphalt für Radfahrer, Kopfsteinpflaster für Fußgänger	Q0 7973,14195 7804,14445
 (Uferweg am Nordhafen): Asphalt	Q0 7753,14528 7695,14545 7653,14570 7605,14600 7527,14644 7480,14660
@@ -6347,7 +6347,7 @@ Melanchthonstr. (Lankwitz): provisorischer Asphalt über Kopfsteinpflaster	Q1 692
 Mühlenstr.: Asphalt	Q0 6914,3093 6842,2995
 #: XXX wird hier asphaltiert werden? vvv
 #: XXX Baumaßnahme GL6.15 (Realisierung nach 2011) vvv
-#: osm_watch: way id="118635979" version="5"
+#: osm_watch: way id="118635979" version="6"
 #: last_checked: 2016-07-23 vvv
 #: check_frequency: 180d vvv
 Mühlenstr.: schlechtes Kopfsteinpflaster	Q3+ 6842,2995 6763,2879 6745,2848
@@ -7492,9 +7492,9 @@ Neue Blumenstr.: Asphalt	Q0 11709,12601 12006,12464
 (Wriezener Park): Asphalt	Q0 13239,11567 13175,11649
 (Helsingforser Str. - Wriezener Park): Beton	Q1 13324,11529 13308,11515
 (Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege	Q2 12986,11699 13002,11705 13042,11749
-(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege, teilweise sehr holprig	Q3+ 13042,11749 13092,11712 13175,11649
+(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege, teilweise sehr holprig, kann nach Regenfällen überschwemmt sein	Q3+ 13042,11749 13092,11712 13175,11649
 (Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege	Q2 13175,11649 13208,11658
-(Rüdersdorfer Str. - Am Wriezener Bahnhof): unbefestigte Wege, teilweise sehr holprig	Q3+ 13173,11788 13092,11712
+(Rüdersdorfer Str. - Am Wriezener Bahnhof): unbefestigte Wege, teilweise sehr holprig, kann nach Regenfällen überschwemmt sein	Q3+ 13173,11788 13092,11712
 Oranienplatz: Kleinsteinpflaster	Q1 11275,10723 11253,10778 11227,10821
 # REMOVED (existiert nicht mehr) --- (Schloßplatz, zwischen Breite Str. und Lustgarten): Holzbohlen	Q1 10285,12306 10155,12494
 Glasower Str.: Asphalt	Q0 12510,6508 12759,6563 12876,6589 13141,6651
@@ -10147,16 +10147,18 @@ Lohmeyerstr.: Kopfsteinpflaster	Q2 3348,12314 3409,12451
 #: last_checked: 2016-09-11 vvv
 #: check_frequency: 60d vvv
 Helga-Haase-Str.: unbefestigte Baustraße	Q2- 17465,16340 17508,16356 17611,16396 17673,16420 17792,16465
-#: osm_watch: way id="354078625" version="4"
+#: osm_watch: way id="354078625" version="5"
 Jutta-Langenau-Str.: unbefestigte Baustraße	Q2- 17615,16310 17643,16322 17818,16397 17857,16414 17877,16423
-#: osm_watch: way id="354078420" version="3"
+#: osm_watch: way id="354078420" version="4"
 Gerhard-Schulz-Str.: unbefestigte Baustraße	Q2- 17508,16356 17497,16385 17552,16461
-#: osm_watch: way id="354078421" version="3"
+#: osm_watch: way id="354078421" version="4"
 Harry-Glaß-Str.: unbefestigte Baustraße	Q2- 17552,16461 17603,16415 17611,16396 17643,16322
-#: osm_watch: way id="354078422" version="3"
+#: osm_watch: way id="354078422" version="4"
 Erich-Hagen-Str.: unbefestigte Baustraße	Q2- 17673,16420 17657,16464 17712,16549
-#: osm_watch: way id="354078419" version="2"
+#: osm_watch: way id="354078419" version="3"
 Joachim-Böhmer-Str.: unbefestigte Baustraße	Q2- 17818,16397 17792,16465 17776,16504 17712,16549 17673,16577
+#: XXX ist diese Straße eine Einbahnstraße?
+#: osm_watch: way id="410517492" version="2"
 Anna-Maria-Müller-Str.: unbefestigte Baustraße	Q2- 17857,16414 17814,16534 17734,16587 17704,16607
 Anna-Maria-Müller-Str.: unbefestigte Baustraße	Q2- 17734,16587 17712,16549
 (Fußweg zur Gehrenseestr.): unbefestigter Weg	Q2- 17615,16310 17640,16259
@@ -10236,6 +10238,7 @@ Am Hamburger Bahnhof: Kopfsteinpflaster	Q2 8189,13468 8183,13482 8141,13580 8120
 (Vorfahrt Petruskirche): Kopfsteinpflaster	Q2 5393,2053 5452,2077
 #: next_check_id: ANDERNEUMARK-2016
 #: XXX wann und wie wird die Straße befestigt?
+#: osm_watch: way id="438655143" version="1"
 #: last_checked: 2016-09-30
 #: check_frequency: 60d
 An der Neumark: unbefestigte Baustraße	Q2 11283,3774 11300,3709 11357,3720 11378,3626 11332,3615
@@ -11396,13 +11399,14 @@ Heidekrautweg: Asphalt	Q0 21982,10874 22060,10914
 #: note: ^^^
 #: XXX wird hier vielleicht asphaltiert werden? vvv
 #: XXX Baumaßnahme GL7.25 (Realisierung nach 2011) vvv
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf (erwähnt)
 #: last_checked: 2014-10-04 vvv
-#: check_frequency: 360d vvv
+#: next_check: 2017-06-01 vvv
 #: osm_watch: way id="152177244" version="3"
 Petkusser Str.: schlechtes Kopfsteinpflaster	Q3+ 10510,-2642 10573,-2891 10606,-3017 10655,-3135
 #: osm_watch: way id="152177244" version="3"
 Petkusser Str.: schlechtes Kopfsteinpflaster	Q3 10655,-3135 10735,-3142
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
 #: XXX ^^^
@@ -16491,11 +16495,10 @@ Bamberger Str.: Asphalt	Q0 11130,-2120 11380,-2100 11631,-2088 11692,-2047 11723
 #: by: Ruth Berendes-Edler: vvv
 #: confirmed_by: srt
 Hochkalterweg: guter Asphalt	Q0 10576,2683 10526,2694 10402,2721 10304,2743
-#: corrected_by: srt (gut befahrbar -> ...)
-#: XXX Asphaltierung, während der Bauarbeiten ist der nördliche Parkweg noch passierbar
+#: corrected_by: srt (gut befahrbar -> wassergebundene Decke; ab 2016: Asphalt)
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.521493.php
-#: next_check: 2016-10-17
-(Hochkalterweg - Floningweg): wassergebundene Decke	Q1 10304,2743 10196,2771
+#: by: http://husch-berlin.de/index.php/fahrrad/verkehr/91-berliner-fahrradhauptroute-rr11.html (Bestätigung)
+(Hochkalterweg - Floningweg): Asphalt	Q0 10304,2743 10196,2771
 #: by: ^^^
 # 
 #: by: Bernd (modest):

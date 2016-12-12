@@ -2603,7 +2603,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2016-11-28 vvv
+#: last_checked: 2016-12-12 vvv
 #: check_frequency: 30d vvv
 	X::inwork 9121,12514
 	X::inwork 9286,12886
@@ -2846,8 +2846,10 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 10462,3765
 #: XXX Baustellenampel
 #: XXX zurzeit wird hier wechselseitig gefahren, also insgesamt zwei Ampeln
+#: XXX hier wird eine Fußgängerampel gebaut
 #: source_id: 2147340713
-#: last_checked: 2016-12-07
+#: osm_watch: note 814294 1
+#: last_checked: 2016-12-12
 #: next_check: 2016-12-16
 	F::inwork 8853,13539
 #: next_check_id: HEERSTR-2016
