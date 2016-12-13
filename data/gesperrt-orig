@@ -2802,7 +2802,7 @@ Corinthstr.: Baustelle, Einbahnstraﬂenregelung	1s:q2 14447,10491 14270,10584
 #: source_id: 2147340768 vvv
 #: priority: #A vvv
 #: XXX laut fritz bis 16.12.2016
-#: last_checked: 2016-12-09 vvv
+#: last_checked: 2016-12-13 vvv
 #: next_check: 2016-12-16 vvv
 Mariannenstr.: Baustelle, Einbahnstraﬂenregelung	1s:q2 11512,10105 11616,10288
 #: source_id: 2147340777
@@ -3051,7 +3051,17 @@ BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 #: check_frequency: 120d
 am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14463,10212
 # 
-# REMOVED (sieht offen aus) --- #: next_check_id: BND-2014 --- #: osm_watch: way id="327596395" version="1" --- #: osm_watch: way id="129104626" version="4" --- #: XXX culdesac-orig entfernen, sobald die Verl‰ngerung erfolgt ist --- #: by: http://www.rbb-online.de/politik/beitrag/2014/07/bnd-zentrale-berlin-verzoegerung-vollstaendiger-umzug-bis-2017.html --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7441 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/1767-2016-bav-zu-ds-2814-iv-durchwegung_scharnhorst-chaussestrasse_sb.pdf --- #: last_checked: 2016-11-22 --- Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: z.Zt. nur Baustellenzufahrt, Durchfahrt verboten	2 8251,14337 8442,14456
+#: next_check_id: BND-2014
+#: osm_watch: way id="327596395" version="1"
+#: osm_watch: way id="129104626" version="4"
+#: osm_watch: note 802816 3
+# REMOVED (schon gemacht) --- : XXX culdesac-orig entfernen, sobald die Verl‰ngerung erfolgt ist
+#: by: http://www.rbb-online.de/politik/beitrag/2014/07/bnd-zentrale-berlin-verzoegerung-vollstaendiger-umzug-bis-2017.html
+#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7441
+#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/1767-2016-bav-zu-ds-2814-iv-durchwegung_scharnhorst-chaussestrasse_sb.pdf
+#: last_checked: 2016-11-22
+#: next_check: 2016-12-15
+Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: Durchfahrt noch nicht zuverl‰ssig offen	2::inwork 8251,14337 8442,14456
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
 #: osm_watch: way id="305153174" version="1"
