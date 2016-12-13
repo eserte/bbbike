@@ -19,14 +19,19 @@ sub usage (;$) {
     my $msg = shift;
     warn $msg, "\n" if $msg;
     die <<EOF;
-usage: $0 [-filter-region ...] files
+usage: $0 [-filter-region ...] [-without-notes] files
 EOF
 }
 
 use Getopt::Long;
 
 my $filter_for_region = ''; # empty string means: Berlin
-GetOptions("filter-region=s" => \$filter_for_region)
+my $with_notes = 1;
+GetOptions
+    (
+     "filter-region=s" => \$filter_for_region,
+     "without-notes" => sub { $with_notes = 0 },
+    )
     or usage;
 my @infiles = @ARGV
     or usage "bbd file is missing (one or more)";
@@ -37,6 +42,7 @@ require Strassen::Core;
 binmode STDOUT, 'encoding(utf-8)';
 
 my %id_seen;
+my %note_id_seen;
 my @errors;
 for my $infile (@infiles) {
     Strassen->new_stream($infile)->read_stream
@@ -45,8 +51,18 @@ for my $infile (@infiles) {
 	     for my $osm_watch (@{ $dir->{osm_watch} || [] }) {
 		 my($elemtype, $rest) = split /\s+/, $osm_watch, 2;
 		 if ($elemtype eq 'note') {
-		     my($note_id, $comments) = split /\s+/, $rest;
-		     # XXX currently ignored
+		     if ($with_notes) {
+			 my($note_id, $comments) = split /\s+/, $rest;
+			 if (exists $note_id_seen{$note_id}) {
+			     # consistency check
+			     if ($note_id_seen{$note_id} != $comments) {
+				 push @errors, "Consistent check failed for note $note_id: $note_id_seen{$note_id} != $comments in file $infile line $.";
+			     }
+			 } else {
+			     print join("\t", "note", $note_id, $comments), "\n";
+			     $note_id_seen{$note_id} = $comments;
+			 }
+		     }
 		 } else {
 		     if ($elemtype !~ m{^(way|node|relation)$}) {
 			 push @errors, "Unknown element type '$elemtype' in file $infile line $.";
@@ -62,7 +78,7 @@ for my $infile (@infiles) {
 		     if ($filter_for_region eq $region) {
 			 my $key = "$elemtype-$id_assign";
 			 if (exists $id_seen{$key}) {
-			     # sanity check
+			     # consistency check
 			     if ($id_seen{$key} ne $version_assign) {
 				 push @errors, "Version mismatch for <$elemtype $id_assign>: $id_seen{$key} ne $version_assign in file $infile line $.";
 			     }
