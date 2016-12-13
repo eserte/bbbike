@@ -42,6 +42,7 @@ my $show_unchanged;
 my $quiet;
 my $show_diffs;
 my $new_file;
+my $with_notes = 1;
 GetOptions(
 	   "show-unchanged" => \$show_unchanged,
 	   "diff!" => \$show_diffs,
@@ -49,8 +50,9 @@ GetOptions(
 	   "osm-watch-list=s" => \$osm_watch_list,
 	   "osm-file=s" => \$osm_file,
 	   "new-file=s" => \$new_file,
+	   'without-notes' => sub { $with_notes = 0 },
 	  )
-    or die "usage: $0 [-show-unchanged] [-q|-quiet] [-diff] [-osm-watch-list ...] [-new-file ...]";
+    or die "usage: $0 [-show-unchanged] [-q|-quiet] [-diff] [-osm-watch-list ...] [-new-file ...] [-without-notes]";
 
 my $egrep_prog;
 if ($osm_file =~ m{\.bz2$}) {
@@ -65,6 +67,11 @@ my $ua;
 if ($show_diffs) {
     require XML::LibXML;
     require Text::Diff;
+}
+if ($with_notes) {
+    require JSON::XS;
+}
+if ($show_diffs || $with_notes) {
     require LWP::UserAgent;
     $ua = LWP::UserAgent->new;
     $ua->agent("check-osm-watch-list/$VERSION "); # + add lwp UA string
@@ -82,6 +89,7 @@ if (-M $osm_file >= 7) {
 }
 
 my @osm_watch_list_data;
+my @notes_data;
 my %id_to_record;
 my @file_lines;
 {
@@ -93,12 +101,43 @@ my @file_lines;
 	chomp;
 	next if m{^\s*#};
 	next if m{^\s*$};
-	my($type, $id, $version, $info);
-	if (($type, $id, $version, $info) = $_ =~ m{^(way|node)\s+id="(\d+)"\s+version="(\d+)"\s+(.*)$}) {
-	    push @osm_watch_list_data, { type => $type, id => $id, version => $version, info => $info, line => $. };
-	    $id_to_record{"$type/$id"} = $osm_watch_list_data[-1];
+	if (my($type, $rest) = $_ =~ m{^(way|node|relation|note)\s+(.*)}) {
+	    if ($type eq 'note') {
+		my($id, $comments_count) = split /\s+/, $rest;
+		push @notes_data, { type => 'note', id => $id, comments_count => $comments_count };
+	    } else {
+		my($id, $version, $info);
+		if (($id, $version, $info) = $rest =~ m{^id="(\d+)"\s+version="(\d+)"\s+(.*)$}) {
+		    push @osm_watch_list_data, { type => $type, id => $id, version => $version, info => $info, line => $. };
+		    $id_to_record{"$type/$id"} = $osm_watch_list_data[-1];
+		} else {
+		    warn "ERROR: Cannot parse string '$_'";
+		}
+	    }
 	} else {
 	    warn "ERROR: Cannot parse string '$_'";
+	}
+    }
+}
+
+if ($with_notes) {
+    for my $note_data (@notes_data) {
+	my $id = $note_data->{id};
+	my $url = "http://www.openstreetmap.org/api/0.6/notes/$id.json";
+	my $resp = $ua->get($url);
+	if (!$resp->is_success) {
+	    warn "ERROR: Cannot fetch $url: " . $resp->status_line;
+	} else {
+	    my $data = JSON::XS::decode_json($resp->decoded_content(charset => 'none'));
+	    my $properties = $data->{properties};
+	    if ($properties->{status} ne 'open') {
+		warn "CHANGE: note $id: status is not 'open', but '$properties->{status}'\n";
+	    } else {
+		my $now_comments_count = @{ $properties->{comments} };
+		if ($now_comments_count != $note_data->{comments_count}) {
+		    warn "CHANGE: note $id: number of comments changed (now $now_comments_count, was " . scalar($note_data->{comments_count}) . ")\n";
+		}
+	    }
 	}
     }
 }
