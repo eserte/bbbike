@@ -130,7 +130,7 @@ for my $kr ($kr1, $kr2) {
 
     # Wilhelmstr. -> Stresemannstr.
     {
-	my %situation = situation_at_point_inorder($kr, qw(9404,10250 9388,10393 9250,10563));
+	my %situation = situation_at_point_inorder($kr, qw(9404,10250 9388,10393 9353,10421));
 	like($situation{action}, qr{^(half-)?left$}, q{It's "left" or "half-left", we accept both});
     }
 
