@@ -25,7 +25,7 @@ my @line_defs =
     (
      { rx => qr{\((?:car|bus|tram)},                           type => 'Car',   dash => '8,3' },
      { rx => qr{\((?:plane)},                                  type => 'Plane', dash => '1,4' },
-     { rx => qr{\((?:ship|ferry)},                             type => 'Ship',  dash => '2,8' },
+     { rx => qr{\((?:ship|ferry|boat)},                        type => 'Ship',  dash => '2,8' },
      { rx => qr{\((?:train|s-bahn|u-bahn|draisine|funicular)}, type => 'Train', dash => '3,8' },
      { rx => qr{\((?:pedes)},                                  type => 'Pedes', dash => '8,3,8,6' },
      { rx => qr{\.trk\t},                                      type => 'Uncat', dash => '4,1' },

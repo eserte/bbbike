@@ -22,6 +22,7 @@ my %vehicle_to_color = (
 			# cd .../misc/gps_data
 			# perl -nle 'm{srt:vehicle=(\S+)} and print $1' *.trk | sort | uniq -c
 			'bike'   => 'darkblue',
+			'boat'   => 'lightblue',
 			'bus'    => 'violet',
 			'car'    => 'darkgrey',
 			'ferry'  => 'lightblue',
