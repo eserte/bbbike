@@ -17,7 +17,7 @@ package FahrinfoQuery;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.17';
+$VERSION = '0.18';
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
@@ -41,6 +41,7 @@ sub _provide_vbb_2013_stops ();
 sub _prereq_check_vbb_2013_stops ();
 sub _download_vbb_2013_stops ();
 sub _extract_vbb_2013_stops ();
+sub _extract_vbb_2016_stops ();
 sub _convert_vbb_2013_stops ();
 
 # XXX use Msg.pm some day
@@ -69,12 +70,13 @@ my $bbbike_root = bbbike_root;
 #my $openvbb_2013_year = 2015;
 #my $openvbb_2013_bbd_file = "$bbbike_root/tmp/vbb_${openvbb_2013_year}_3.bbd";
 
-my $openvbb_2013_download_size = '22MB';
-my $openvbb_2013_data_url = 'http://www.vbb.de/de/download/GTFS_VBB_MitteAug_Dez2016.zip';
+my $openvbb_2013_download_size = '81MB';
+my $openvbb_2013_data_url = 'http://www.vbb.de/de/download/GTFS_VBB_Dez2016_Aug2017.zip';
+my $openvbb_2016_intermediate_zip_file = 'GTFS_VBB_Dez2016_Aug2017_mit_shapes-files.zip';
 my $openvbb_2013_archive_file = "$bbbike_root/tmp/" . basename($openvbb_2013_data_url);
 my $openvbb_2013_local_file = "$bbbike_root/tmp/" . basename($openvbb_2013_data_url, '.zip') . '_stops.txt';
 my $openvbb_2013_year = 2016;
-my $openvbb_2013_bbd_file = "$bbbike_root/tmp/vbb_${openvbb_2013_year}_3.bbd";
+my $openvbb_2013_bbd_file = "$bbbike_root/tmp/vbb_${openvbb_2013_year}_4.bbd";
 
 my $search_net;
 
@@ -549,7 +551,7 @@ sub _provide_vbb_2013_stops () {
 	}
     }
 
-    if (!eval { _extract_vbb_2013_stops }) {
+    if (!eval { _extract_vbb_2016_stops }) {
 	main::status_message("Extraction failed. Error message is: $@", "error");
 	return;
     }
@@ -583,6 +585,7 @@ sub _download_vbb_2013_stops () {
     1;
 }
 
+# only usable before Dez2016
 sub _extract_vbb_2013_stops () {
     require Archive::Zip;
     if (!-e $openvbb_2013_archive_file) {
@@ -592,6 +595,23 @@ sub _extract_vbb_2013_stops () {
 	or die "Can't read zip file $openvbb_2013_archive_file";
     $zip->extractMember('stops.txt', $openvbb_2013_local_file) == Archive::Zip::AZ_OK()
 	or die "Failure while extracting 'stops.txt' from '$openvbb_2013_archive_file'";
+}
+
+sub _extract_vbb_2016_stops () {
+    require Archive::Zip;
+    require File::Temp;
+    if (!-e $openvbb_2013_archive_file) {
+	die "The file $openvbb_2013_archive_file does not exist";
+    }
+    my $zip = Archive::Zip->new($openvbb_2013_archive_file)
+	or die "Can't read zip file $openvbb_2013_archive_file";
+    my($tmpfh,$tmpfile) = File::Temp::tempfile('VBB_intermediate_zip_XXXXXXXX', UNLINK => 1);
+    $zip->extractMember($openvbb_2016_intermediate_zip_file, $tmpfile) == Archive::Zip::AZ_OK()
+	or die "Failure while extracting '$openvbb_2016_intermediate_zip_file' from '$openvbb_2013_archive_file'";
+    my $zip2 = Archive::Zip->new($tmpfile)
+	or die "Can't read zip file $tmpfile";
+    $zip2->extractMember('stops.txt', $openvbb_2013_local_file) == Archive::Zip::AZ_OK()
+	or die "Failure while extracting 'stops.txt' from '$tmpfile'";
 }
 
 sub _convert_vbb_2013_stops () {
