@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,12 +16,13 @@ use strict;
 use FindBin;
 use Text::CSV_XS ();
 
-my $infile = shift || "$FindBin::RealBin/../downloads/data-digested/5061c95925f17ae08661edb271b94747.content"; # this is http://datenfragen.de/openvbb/GTFS_VBB_Okt2012/stops.txt
+my $infile = shift
+    or die "Please provide path to stops.txt file as found in VBB-Fahrplandaten (try http://daten.berlin.de/datensaetze/vbb-fahrplandaten-dezember-2016-bis-august-2017 or so).\n";
 open my $fh, $infile or die $!;
 binmode $fh, ":utf8";
 my $csv = Text::CSV_XS->new({ binary => 1})
     or die "Cannot use CSV: ".Text::CSV_XS->error_diag ();
-chomp(my @keys = split /,/, scalar <$fh>);
+my @keys = @{ $csv->getline($fh) };
 
 binmode STDOUT, ':utf8';
 print "#: encoding: utf8\n";
