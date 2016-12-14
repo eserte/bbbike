@@ -2742,10 +2742,10 @@ Puschkinallee: Fahrtrichtung gesperrt	1::inwork 13795,9941 13890,9894
 #: XXX "3-4 Wochen"
 #: XXX danach eine "bituminöse Befestigung"
 #: XXX evtl. wird die Beleuchtung auch erneuert?
-#: last_checked: 2016-12-05
+#: last_checked: 2016-12-14
 #: check_frequency: 3d
 #: priority: #A
-Parkweg zwischen Stresemannstr. und Wilhemstr.: wird instandgesetzt, in dieser Zeit nicht befahrbar	2::inwork 9250,10563 9375,10616
+Parkweg zwischen Stresemannstr. und Wilhemstr.: wird instandgesetzt, in dieser Zeit nicht befahrbar	2::inwork 9249,10562 9375,10616
 # 
 #: next_check_id: CHAUSSEESTR-2016 vvv
 #: XXX NEW	Chausseestraße (Mitte) Richtung Müllerstraße zwischen Habersaathstraße und Wöhlertstraße (Berlin)  Gültig ab: 31.10.2016 12:29  Baustelle, Fahrtrichtung gesperrt. eine Umleitung über Zinnowitzer Straße ist eingerichtet (bis 04/17)
@@ -2802,12 +2802,11 @@ Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2 14447,10491 14270,10584
 #: source_id: 2147340768 vvv
 #: priority: #A vvv
 #: XXX laut fritz bis 16.12.2016
-#: last_checked: 2016-12-13 vvv
-#: next_check: 2016-12-16 vvv
+#: last_checked: 2016-12-14 vvv
+#: next_check: 2017-01-10 vvv
 Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11512,10105 11616,10288
 #: source_id: 2147340777
 #: XXX laut fritz bis 10.01.2017
-#: next_check: 2017-01-10
 #: priority: #A
 Mariannenstr.: Baustelle, Fahrbahn gesperrt	2s:q3 11671,10402 11616,10288
 #: next_check ^^^
@@ -2908,7 +2907,7 @@ Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 # 
 #: next_check_id: ZIEGELSTR-2016
 #: XXX Ende der Bauarbeiten?
-#: osm_watch: note 622211 4
+#: osm_watch: note 622211 3
 #: last_checked: 2016-12-12
 #: check_frequency: 14d
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076 9559,13087
@@ -2983,10 +2982,16 @@ Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::in
 #: check_frequency: 100d
 Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17651,-393
 # 
-#: next_check_id: EUROPACITY-2015
-#: last_checked: 2016-09-21
-#: next_check: 2016-12-31
-(Planstraßen 2.1, 2.2, 2.3): noch gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924
+#: next_check_id: EUROPACITY-2015 vvv
+#: last_checked: 2016-09-21 vvv
+#: next_check: 2016-12-31 vvv
+#: osm_watch: way id="237704729" version="7"
+Lydia-Rabinowitsch-Str.: noch gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924
+#: osm_watch: way id="237716438" version="6"
+Clara-von-Simson-Str.: noch gesperrt	2 7651,14260 7757,14318 7802,14250 7697,14187
+#: next_check ^^^
+#: last_checked ^^^
+#: next_check_id ^^^
 # 
 # REMOVED --- #: next_check_id: BAERWALD-2015 --- #: XXX siehe auch aufgehobene Einbahnstraßenregelungen weiter oben vvv --- #: source_id: IM_023816 vvv --- #: source_id: 2147339541 vvv --- #: XXX vermutlich bis Mitte Mai 2016 andauernd; laut fritz und vmz bis Ende Oktober --- #: last_checked: 2016-07-27 vvv --- #: next_check: 2016-10-28 vvv --- Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081 --- Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: source_id ^^^ --- #: source_id ^^^ --- #: XXX ^^^
 # 
@@ -3068,8 +3073,8 @@ Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: Durchfahrt noch nicht zuverläss
 #: last_checked: 2016-11-30 vvv
 #: check_frequency: 14d vvv
 # REMOVED Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9996,12401 9994,12368 9943,12364
-Niederlagstr.: Bauarbeiten, Passieren auch für Fußgänger nicht möglich	2:inwork 9994,12368 9996,12401
-Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10008,12274 9994,12368
+#: REMOVED --- Niederlagstr.: Bauarbeiten, Passieren auch für Fußgänger nicht möglich	2:inwork 9994,12368 9996,12401
+# REMOVED --- Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10008,12274 9994,12368
 # REMOVED (hier aufgehoben, temporär?) --- Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9943,12364 9961,12273
 # REMOVED --- #: XXX eigentlich für Fußgänger passierbar, aber UdL nur in Richtung Osten
 # REMOVED --- Niederlagstr.: Bauarbeiten, keine Zufahrt von Unter den Linden möglich	2::inwork 9943,12364 9934,12420

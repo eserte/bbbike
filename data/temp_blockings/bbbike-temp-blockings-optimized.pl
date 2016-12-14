@@ -3892,7 +3892,7 @@ userdel	q4::inwork 12911,1815 12817,2031
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
 #: last_checked: 2016-12-05 vvv
-#: check_frequency: 14d vvv
+#: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
 #	2::inwork 11032,12439 11059,12450
