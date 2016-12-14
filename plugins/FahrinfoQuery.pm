@@ -17,7 +17,7 @@ package FahrinfoQuery;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.18';
+$VERSION = '0.19';
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
@@ -229,9 +229,11 @@ sub choose {
     my $b;
     {
 	my $f = $t->Frame->pack(qw(-fill x -expand 1));
-	$b = $f->Button(-text => 'Search',
-		       )->pack(qw(-fill x -expand 1 -side left));
-	$f->Label(-textvariable => \$expected_foottime)->pack(qw(-side left));
+	$b = $f->Button(
+			-text => 'Search',
+			-font => $main::font{'bold'},
+		       )->pack(qw(-fill both -expand 1 -side left));
+	$f->Label(-textvariable => \$expected_foottime, -justify => 'left')->pack(qw(-side left));
     }
 
     my(@start_stops, @goal_stops);
@@ -287,6 +289,23 @@ sub choose {
 	    $total_time += $stops->[$cursel]->{Time};
 	}
 	$expected_foottime = 'Expected foot time: ' . s2ms($total_time) . ' min';
+	$expected_foottime .= "\nVBB pays off if not slower than:";
+	for my $def (
+		     ['',      do { no warnings 'once'; \@main::speed_txt }],
+		     ['Power', do { no warnings 'once'; \@main::power_txt }],
+		    ) {
+	    my($type, $txtref) = @$def;
+	    my $key = $type . 'TimeSeconds';
+	    for my $index (0 .. $#{ $main::act_value{$key} }) {
+		$expected_foottime .= "\n\@ $txtref->[$index]: ";
+		my $time_to_beat = $main::act_value{$key}->[$index] - $total_time;
+		if ($time_to_beat < 0) {
+		    $expected_foottime .= 'never (foot time exceeds cycle time)';
+		} else {
+		    $expected_foottime .= s2ms($time_to_beat) . ' min';
+		}
+	    }
+	}
     };
     $t->afterIdle($adjust_expected_foottime);
 
