@@ -957,8 +957,9 @@ sub tracks_in_region {
 sub make_gps_target {
     my $rule = shift;
     if (fork == 0) {
+	require BBBikeBuildUtil;
 	exec(qw(xterm -e sh -c),
-	     'cd ' . $bbbike_rootdir . '/misc/gps_data && make ' . $rule . '; echo Ready; sleep 9999');
+	     'cd ' . $bbbike_rootdir . '/misc/gps_data && ' . BBBikeBuildUtil::get_pmake() . ' ' . $rule . '; echo Ready; sleep 9999');
 	die $!;
     }
 }
