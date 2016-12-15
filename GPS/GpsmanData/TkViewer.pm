@@ -14,7 +14,7 @@
 package GPS::GpsmanData::TkViewer;
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.04';
+$VERSION = '1.05';
 
 use FindBin;
 
@@ -286,7 +286,9 @@ sub gps_data_viewer {
 	my($w, $args) = @_;
 	$args->{'-title'} = 'GPS data statistics' if !exists $args->{'-title'};
 	$w->SUPER::Populate($args);
-	my $txt = $w->Scrolled('ROText', -width => 30, -scrollbars => 'osoe')->pack(qw(-fill both -expand 1));
+	# width: should be enough for indentation + "max_datetime" + iso date
+	# YAML is easier to read with fixed font
+	my $txt = $w->Scrolled('ROText', -width => 42, -font => 'courier 10', -scrollbars => 'osoe')->pack(qw(-fill both -expand 1));
 	$w->Advertise(Txt => $txt);
 	$w->Button(-text => 'Close', -command => sub { $w->destroy })->pack;
     }
