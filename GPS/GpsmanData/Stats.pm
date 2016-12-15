@@ -15,7 +15,7 @@ package GPS::GpsmanData::Stats;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.04';
+$VERSION = '0.05';
 
 use POSIX qw(strftime);
 
@@ -138,16 +138,16 @@ sub run_stats {
 	    }
 
 	    if (!defined $chunk_bbox_minx || $chunk_bbox_minx > $wpt->Longitude) {
-		$chunk_bbox_minx = $wpt->Longitude;
+		$chunk_bbox_minx = $wpt->Longitude + 0;
 	    }
 	    if (!defined $chunk_bbox_maxx || $chunk_bbox_maxx < $wpt->Longitude) {
-		$chunk_bbox_maxx = $wpt->Longitude;
+		$chunk_bbox_maxx = $wpt->Longitude + 0;
 	    }
 	    if (!defined $chunk_bbox_miny || $chunk_bbox_miny > $wpt->Latitude) {
-		$chunk_bbox_miny = $wpt->Latitude;
+		$chunk_bbox_miny = $wpt->Latitude + 0;
 	    }
 	    if (!defined $chunk_bbox_maxy || $chunk_bbox_maxy < $wpt->Latitude) {
-		$chunk_bbox_maxy = $wpt->Latitude;
+		$chunk_bbox_maxy = $wpt->Latitude + 0;
 	    }
 
 	    $last_wpt = $wpt;
