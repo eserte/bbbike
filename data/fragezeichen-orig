@@ -32,7 +32,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 #: XXX im Baumaﬂnahmenkatalog ist nur der ˆstliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaﬂnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2016-12-12
+#: last_checked: 2016-12-16
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -82,7 +82,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 # 
 #: XXX Baumaﬂnahme 2.29 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Realisierung anscheinend ungewiss)
-#: last_checked: 2016-11-07
+#: last_checked: 2016-12-16
 #: check_frequency: 180d
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
@@ -325,14 +325,13 @@ Ernststr.: Verbesserung f¸r den Radverkehr, evtl. Entfernung des Kopfsteinpflast
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.328462.php --- #: XXX_osm meint schon cycleway=lane, aber bezieht sich nur auf die Pressemitteilung --- #: next_check: 2015-10-16 --- Gauﬂstr.: Radspuren werden errichtet	?::inwork 3739,13563 3833,13590 4098,13664 4187,13704
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.491926.php vvv
-#: last_checked: 2016-09-12 vvv
-#: check_frequency: 45d vvv
-#: osm_watch: way id="4491994" version="14"
-N¸rnberger Str.: Radspuren entstehen	?::projected 5764,10322 5808,10396 5866,10492
+#: last_checked: 2016-12-16 vvv
+#: check_frequency: 90d vvv
+# REMOVED --- #: osm_watch: way id="4491994" version="14" --- N¸rnberger Str.: Radspuren entstehen	?::projected 5764,10322 5808,10396 5866,10492 --- N¸rnberger Str.: Radspuren entstehen	?::projected 5866,10492 5866,10492
+#: XXX hier sieht es eigentlich nicht so aus, als ob Radspuren vorgesehen sind...
 #: osm_watch: way id="4491980" version="10"
-N¸rnberger Str.: Radspuren entstehen	?::projected 5866,10492 5866,10492 6025,10746
-#: osm_watch: way id="151526149" version="3"
-N¸rnberger Str.: Radspuren entstehen	?::projected 6025,10746 6122,10925 6145,10975
+N¸rnberger Str.: Radspuren entstehen	?::projected 5866,10492 6025,10746
+# REMOVED --- #: osm_watch: way id="151526149" version="3" --- N¸rnberger Str.: Radspuren entstehen	?::projected 6025,10746 6122,10925 6145,10975
 #: check_frequency ^^^
 #: last_checked ^^^
 #: by ^^^
@@ -1564,8 +1563,7 @@ Brodersenstr.: Neubau, danach bessere Qualit‰t?	?::projected 6033,19611 5885,199
 #: next_check: 2017-01-01
 Dominicusstr./Sachsendamm: bleibt die Radwegbenutzungspflicht?	? 6460,8688 6477,8654 6523,8567 6575,8469 6687,8385 6807,8309
 # 
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5759
-Schw‰bische Str.: Umfahrungen pr¸fen	? 6917,9274 6851,9365 6771,9458
+# REMOVED --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5759 --- Schw‰bische Str.: Umfahrungen pr¸fen	? 6917,9274 6851,9365 6771,9458
 # 
 # REMOVED (-> temp blockings) --- #: XXX NEW	Fasanenstraﬂe (Charlottenburg) zwischen Kantstraﬂe und Kurf¸rstendamm (Berlin)  G¸ltig ab: 23.11.2016 13:12  Vollsperrung, Baustelle (bis 31.12.16)	LMS-BR_r_LMS-BR_83962 --- Fasanenstr.: Sperrung auch f¸r Radfahrer relevant?	? 5236,10994 5230,10919 5215,10711
 # REMOVED (zurzeit kann man ganz gut vorbeifahren) --- #: XXX NEW	Scharnweberstraﬂe (Friedrichshain) Richtung G¸rtelstraﬂe zwischen Jessnerstraﬂe und G¸rtelstraﬂe (Berlin)  G¸ltig ab: 22.11.2016 07:00  Baustelle, Fahrtrichtung gesperrt (bis Mitte 12/16)	2147340779 --- Scharnweberstr.: Sperrung auch f¸r Radfahrer relevant?	?; 15080,11905 15121,11899 15248,11880
@@ -1691,7 +1689,8 @@ Betriebsbahnhof Schˆneweide --> Adlershof-Johannisthal	X 18682,4714
 #: XXX pr¸fen!
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2016
 #: osm_watch: way id="21844065" version="9"
-#: last_checked: 2016-09-18
+#: last_checked: 2016-12-16
+#: check_frequency: 60d
 Monumentenstr. 13d: wird hier ein verkehrsberuhigter Bereich ausgewiesen?	? 8014,9126 8009,9063
 # 
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/tunnel-adenauerplatz/
@@ -2088,7 +2087,7 @@ Fanny-Zobel-Str.	? 13975,10187 14049,10164
 # 
 #: by: http://gruene-xhain.de/news/single-view/artikel/vorfahrt-fuer-den-radverkehr.html
 #: by: http://www.berlin.de/imperia/md/content/bafriedrichshain-kreuzberg/abtstadtpg/bzbm-buero/bezirksamtssitzungen/02-07-13/beschluss_265_13.pdf?start&ts=1372853813&file=beschluss_265_13.pdf
-#: last_checked: 2016-11-25
+#: last_checked: 2016-12-16
 #: check_frequency: 120d
 #: priority: #C
 Bergmannstr./Heimstr.: wird hier die Vorfahrtsregelung zugunsten des Radwegs ge‰ndert?	? 9880,9233 9973,9232 10001,9234
@@ -2488,7 +2487,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7482
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein ˆffentlich zug‰nglicher Geh/Radweg gebaut
-#: last_checked: 2016-12-14
+#: last_checked: 2016-12-16
 #: check_frequency: 90d
 Stallschreiberstr./Kolonnenweg: Straﬂenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # REMOVED (->handicap) --- Stallschreiberstr./Kolonnenweg: Straﬂenbauarbeiten geplant	?::projected 10678,11172 10818,11269
@@ -2512,6 +2511,7 @@ Gewerbepark Babelsberg: drei neue Planstraﬂen entstehen, Namen, Qualit‰t, Lage?	
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7661
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036680121217/680121217/00270568/68-Anlagen/01/DS2337_VzKAufstellungVI-46-1undFruehzeitigeBet.pdf
+#: last_checked: 2016-12-16
 #: next_check: 2018-06-01
 Kleinbeerenstr. - Groﬂbeerenstr.: geplanter Weg im Zuge des Bebauungsplans VI-46-1	?::projected 8979,10485 9192,10528
 # 

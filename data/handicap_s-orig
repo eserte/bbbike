@@ -11,7 +11,7 @@
 ### Friedrichshain ###
 # 
 #: next_check_id: RUEDERSDORFER-2016
-#: last_checked: 2016-12-14
+#: last_checked: 2016-12-16
 #: check_frequency: 14d
 Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 13173,11788 13066,11854
 # 
@@ -32,7 +32,7 @@ Straße der Pariser Kommune: Wasserrohrbruch, Fahrbahn unter der Bahnbrücke gespe
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2016-12-14 vvv
+#: last_checked: 2016-12-16 vvv
 Revaler Str.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14211,11229 14286,11186
 # REMOVED --- Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
 # REMOVED --- Revaler Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14357,11148 14286,11186
@@ -111,7 +111,7 @@ Kommandantenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10330,11422 10136,11529
 #: last_checked: 2016-11-30
 Beuthstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10201,11631 10235,11610 10330,11422
 # 
-#: last_checked: 2016-12-14
+#: last_checked: 2016-12-16
 Sebastianstr.: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 10640,11564 10818,11269
 # 
 #: last_checked: 2016-11-28
@@ -123,7 +123,7 @@ Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q2-::inwork 9935,11566 9737,11546
 #: last_checked ^^^
 # 
 #: osm_watch: note 814191 1
-#: last_checked: 2016-12-14
+#: last_checked: 2016-12-16
 Alexandrinenstr.: direkter Zugang zur Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q3::inwork 10818,11269 10678,11172
 # 
 # REMOVED --- #: last_checked: 2016-09-30 --- Schützenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10116,11485 9949,11470 --- 
@@ -303,7 +303,7 @@ Carl-Herz-Ufer: Sperrung der Fahrbahn an der Baerwaldstr.	q4::inwork 10430,10081
 #: next_check_id: ALEXANDRINENSTR-2016
 #: source_id: LMS-BR_r_LMS-BR_68468
 #: source_id: LMS-BR_r_LMS-BR_85494
-#: last_checked: 2016-12-14
+#: last_checked: 2016-12-16
 #: next_check: 2017-01-31
 Stallschreiberstr., Alexandrinenstr.: Einbahnstraßenregelung	q4::inwork; 10794,10927 10824,11010 10678,11172 10593,11120 10501,11056
 # 
@@ -392,6 +392,10 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süde
 # REMOVED --- #: source_id: INKO_111447 --- #: source_id: LMS_1290313357 --- #: last_checked: 2013-04-20 --- #: next_check: 2013-06-30 (Ende: 1.7.2013) --- Malchower Weg: Einbahnstraße wegen Bauarbeiten (bis zum Anfang Juli), Ausweichen auf dem Gehweg	q3::inwork; 17014,16724 17059,16560 17102,16464 17170,16365 17220,16320 17271,16280 17383,16197
 # 
 ### Schöneberg ###
+# 
+#: last_checked: 2016-12-16
+#: check_frequency: 14d
+Bautzener Str.: Bauarbeiten an der Großgörschenstr., auf Gehweg ausweichen	q4::inwork 8186,9380 8185,9338
 # 
 # #: source_id: LMS-BR_r_LMS-BR_76371
 # #: source_id: 2147340485
@@ -712,6 +716,7 @@ Henriette-Herz-Platz: Straßenbahn	q2 10132,12941 10255,12959 10312,12982 10371,1
 Monbijoupark - Henriette-Herz-Platz: Fußgänger	q1 9977,12912 10132,12941
 Monbijoubrücke: Fußgänger	q1 9707,12974 9683,12913 9654,12882
 Garnisonkirchplatz: Straßenbahn	q2 10308,12859 10255,12959
+#: note: Bordstein am Wendehammer, aber einige Meter weiter ist eine Bordsteinabsenkung
 Fürther Str.: Gehweg	q2 5764,10322 5808,10284
 (Zossener Brücke - Mehringplatz): Gehweg	q1 9873,10285 9668,10306
 #: note: nach Einwand von britta tr. (Message-ID: <43BA64D8.5030001@charite.de>) von q2 auf q3 heruntergestuft
@@ -826,7 +831,7 @@ Fritz-Schiff-Weg: Fußgänger	q1 13463,12507 13484,12436 13448,12340
 (Crellestr. - Julius-Leber-Brücke): Fußgänger	q2 7524,9093 7555,8978 7509,8929 7497,8916
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870
 #: next_check_id: FISCHERINSEL-2015
-#: last_checked: 2016-10-08
+#: last_checked: 2016-12-16
 #: next_check: 2016-12-22
 Spreekanalufer: Umfahrung an der Straße Fischerinsel, Fußgänger	q3::inwork 10672,11870 10776,11942
 # REMOVED (danach wieder folgendes aktivieren) --- (Fischerinsel, Spreekanalufer): Fußgänger	q1 10672,11870 10776,11942

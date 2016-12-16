@@ -707,21 +707,11 @@ Torgauer Str. (Schöneberg)	N 7582,8123 7639,8091 7710,8051 7733,8023
 Leberstr.	NH 7582,8123 7578,8358 7574,8596 7563,8871
 # REMOVED (realisiert) --- #: XXX die Straße wird am 2013-12-17 zu Karl-Heinrich-Ulrichs-Str. umbenannt (oldname-Eintrag nicht vergessen) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20121015.1110.376564.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4542 (frühestmöglicher Termin) --- #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=5595 --- #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=5631 (frühestmöglicher Termin wg. Bundestagswahl) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file?y=2013 --- #: by: http://www.berlin.de/imperia/md/content/bamitte/602_2013_ds0962_iv_umbenennung_einemstra__e.pdf?start&ts=1379930336&file=602_2013_ds0962_iv_umbenennung_einemstra__e.pdf (BA-Beschluss; Termin: 1.1.2014) --- #: next_check: 2013-12-17 --- #: priority: #A
 #: oldname: -20131217: Einemstr.
-#: ignore_oldname_file: yes
 #: carriageway_width: 49m (25m+medial strip=6m+18m, am Nollendorfplatz, zusätzlich noch die Rechtsabbiegespur 9m)
 Karl-Heinrich-Ulrichs-Str.	H 7033,10396 7003,10513 6985,10597 6972,10665
-#: XXX dieser Abschnitt wird erst später umbenannt
-#: XXX ignore_oldname_file dann entfernen!
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20131202.0955.392341.html
-#: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20131018.0910.390488.html (Verschiebung?)
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2013 (Verschiebung, kein neuer Termin)
-#: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2016/pressemitteilung.537264.php
-#: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2016/pressemitteilung.540472.php
-#: osm_watch: way id="150519560" version="6"
-#: last_checked: 2016-05-24
-#: next_check: 2016-12-16
-#: priority: #A
-Einemstr.	H 6972,10665 6929,10852
+# REMOVED (realisiert) --- #: XXX dieser Abschnitt wird erst später umbenannt --- #: XXX ignore_oldname_file dann entfernen! --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20131202.0955.392341.html --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20131018.0910.390488.html (Verschiebung?) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2013 (Verschiebung, kein neuer Termin) --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2016/pressemitteilung.537264.php --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2016/pressemitteilung.540472.php --- #: osm_watch: way id="150519560" version="6" --- #: last_checked: 2016-05-24 --- #: next_check: 2016-12-16 -- #: priority: #A --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/55re.pdf/file?y=2016
+#: oldname: -20161216: Einemstr.
+Karl-Heinrich-Ulrichs-Str.	H 6972,10665 6929,10852
 Nollendorfplatz	H 7033,10328 7033,10396
 Kleiststr. (Schöneberg)	HH 6851,10416 7033,10396
 Kleiststr. (Schöneberg)	HH 7033,10328 6971,10346 6937,10363 6851,10416
@@ -781,12 +771,12 @@ Viktoria-Luise-Platz	NN 6224,9980 6142,9934
 Viktoria-Luise-Platz	N 6142,9934 6155,9900
 Viktoria-Luise-Platz	NN 6155,9900 6219,9891
 Viktoria-Luise-Platz	N 6219,9891 6272,9922 6275,9962
-Regensburger Str. (Schöneberg, Wilmersdorf)	N 6142,9934 6034,9934 5895,9946 5799,9948 5723,9949 5537,9938
+Regensburger Str. (Schöneberg, Wilmersdorf)	N 6142,9934 6034,9939 5895,9946 5814,9948 5723,9949 5537,9938
 Regensburger Str. (Schöneberg, Wilmersdorf)	NN 5537,9938 5464,9914
 Nachodstr.	H 5905,9795 5725,9846 5467,9866
 Spichernstr.	H 5463,9961 5700,10226
 Nürnberger Str. (Wilmersdorf, Charlottenburg, Schöneberg)	H 5700,10226 5764,10322 5808,10396 5866,10492 6025,10746 6122,10925 6145,10975
-Fürther Str. (Wilmersdorf)	NN 5764,10322 5808,10284
+(Lietzenburger Str. - Fürther Str.)	NN 5764,10322 5808,10284
 Fürther Str. (Wilmersdorf)	N 5808,10284 5796,10176
 Budapester Str.	H 5652,11004 5716,10978 5829,10964 5986,10976 6058,10988 6145,10975 6168,11042 6447,11144 6582,11202 6606,11222
 Kantstr. (Charlottenburg)	HH 5652,11004 5613,10963 5488,10978 5373,10981 5236,10994 5102,11006 4921,11017 4827,11025 4722,11030 4532,11042 4415,11050 4289,11060 4100,11078 3975,11087 3795,11098 3501,11096 3391,11097 3283,11097 3082,11090 3006,11093
@@ -932,7 +922,7 @@ Münchener Str. (Schöneberg)	NN 6255,9194 6264,9156
 Münchener Str. (Schöneberg)	N 6264,9156 6276,9042
 Landshuter Str. (Schöneberg)	N 6084,9242 6062,9335 6049,9401 6030,9542 6008,9699
 Landshuter Str. (Schöneberg)	NN 6008,9699 6004,9771
-Ansbacher Str.	N 6004,9771 6008,9808 6034,9934 6071,10127 6128,10319 6147,10383 6192,10542
+Ansbacher Str.	N 6004,9771 6008,9808 6034,9939 6071,10127 6128,10319 6147,10383 6192,10542
 Ansbacher Str.	NN 6192,10542 6216,10614 6228,10646 6250,10701
 Ansbacher Str.	N 6250,10701 6272,10926
 Bayreuther Str.	NN 6276,10401 6302,10462
@@ -11238,7 +11228,7 @@ Eduardstr.	N 16531,11158 16420,11189 16311,11226
 Eitelstr. (Rummelsburg)	N 16727,11611 16669,11558 16649,11497 16570,11278 16531,11158 16492,11042 16452,10922 16425,10839
 (Eitelstr. - Bahnhof Lichtenberg)	NN 16727,11611 16766,11603
 Rankestr.	N 5520,10453 5568,10535 5627,10637 5669,10704 5782,10884
-Geisbergstr.	N 6427,10044 6217,10099 6071,10127 5948,10152 5881,10163 5817,10173 5796,10176 5754,10182 5700,10226
+Geisbergstr.	N 6427,10044 6217,10099 6071,10127 5948,10152 5881,10163 5833,10170 5796,10176 5754,10182 5700,10226
 Lipschitzallee	NH 15301,3038 15254,2926 15174,2773 15078,2647 14946,2519 14744,2308 14681,2231 14633,2145 14587,2032 14549,1922 14523,1847
 Bat-Yam-Platz	NN 14515,2212 14545,2206 14633,2145
 Martin-Luther-King-Weg	N 13931,2579 13968,2611 13988,2614 14022,2602 14046,2588 14092,2585
@@ -14611,7 +14601,7 @@ Adolf-Martens-Str.	N 2713,4087 2787,3975 3033,4113
 Knesebeckstr. (Lichterfelde)	N 3151,4160 3054,4094 3033,4113 2944,4241
 Zwinglistr.	N 5199,13247 5351,13238 5547,13227 5694,13219
 Schlieperstr.	N 1585,19862 1863,19925 2029,19963 2224,20007 2435,20032
-Kulmbacher Str.	N 5799,9948 5817,10173
+Kulmbacher Str.	N 5814,9948 5833,10170
 Martin-Buber-Str.	N 638,2637 610,2678 578,2704 537,2772 537,2843 589,2925 630,2998 669,3119
 Martin-Buber-Str.	N 682,2660 610,2678
 Beuckestr.	N 578,2704 505,2714 344,2679 249,2653 84,2618 45,2592

@@ -2742,8 +2742,8 @@ Puschkinallee: Fahrtrichtung gesperrt	1::inwork 13795,9941 13890,9894
 #: XXX "3-4 Wochen"
 #: XXX danach eine "bituminˆse Befestigung"
 #: XXX evtl. wird die Beleuchtung auch erneuert?
-#: last_checked: 2016-12-14
-#: check_frequency: 3d
+#: last_checked: 2016-12-16
+#: check_frequency: 4d
 #: priority: #A
 Parkweg zwischen Stresemannstr. und Wilhemstr.: wird instandgesetzt, in dieser Zeit nicht befahrbar	2::inwork 9249,10562 9375,10616
 # 
@@ -2800,18 +2800,13 @@ Corinthstr.: Baustelle, Einbahnstraﬂenregelung	1s:q2 14447,10491 14270,10584
 #: source_id: INKO_2147340291_COPY_1 vvv
 #: source_id: 2147340291 vvv
 #: source_id: 2147340768 vvv
-#: priority: #A vvv
-#: XXX laut fritz bis 16.12.2016
-#: last_checked: 2016-12-15 vvv
-#: next_check: 2017-01-10 vvv
-Mariannenstr.: Baustelle, Einbahnstraﬂenregelung	1s:q2 11512,10105 11616,10288
+# REMOVED (aufgehoben) --- #: priority: #A vvv --- #: XXX laut fritz bis 16.12.2016 --- #: last_checked: 2016-12-15 vvv --- #: next_check: 2017-01-10 vvv --- Mariannenstr.: Baustelle, Einbahnstraﬂenregelung	1s:q2 11512,10105 11616,10288
 #: source_id: 2147340777
 #: XXX laut fritz bis 10.01.2017
 #: priority: #A
+#: last_checked: 2016-12-15
+#: check_frequency: 7d
 Mariannenstr.: Baustelle, Fahrbahn gesperrt	2s:q3 11671,10402 11616,10288
-#: next_check ^^^
-#: last_checked ^^^
-#: priority ^^^
 #: source_id ^^^
 #: source_id ^^^
 #: source_id ^^^
@@ -2919,7 +2914,7 @@ Schwarzer Weg: wegen Straﬂenbau gesperrt	2::inwork 17295,7323 17295,7330 17295,7
 # 
 #: next_check_id: FISCHERINSEL-2015 vvv
 #: source_id: 2147339543 vvv
-#: last_checked: 2016-10-08 vvv
+#: last_checked: 2016-12-16 vvv
 #: next_check: 2016-12-22 vvv
 M‰rkisches Ufer - Neue Roﬂstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10703,11837
 Neue Roﬂstr. - M‰rkisches Ufer: wegen Bauarbeiten gesperrt	3 10703,11837 10687,11853 10869,11949

@@ -17246,18 +17246,20 @@ EOF
 userdel	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998
 EOF
      },
-     { from  => $isodate2epoch->("2016-12-27 06:00:00"), # siehe auch anderen Eintrag mit weiteren Sperrungen am 31. und 1.
+     { from  => $isodate2epoch->("2016-12-25 06:00:00"), # siehe auch anderen Eintrag mit weiteren Sperrungen am 31. und 1.
        until => $isodate2epoch->("2017-01-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 12]],
-       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., vom 28.12.2016 bis 02.01.2017',
+       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., vom 26.12.2016 bis 02.01.2017',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
-userdel	2::temp 8731,12270 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-userdel	2::temp 8055,12186 8119,12414
-userdel	2::temp 8522,12239 8466,12197
-userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+#: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6280.html
+	2::temp 8595,12066 8737,12098 8743,12099 8861,12125
+	2::temp 8731,12270 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	2::temp 8055,12186 8119,12414
+	2::temp 8522,12239 8466,12197
+	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
 EOF
@@ -21331,8 +21333,8 @@ EOF
 #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
 #: source_id: 2147339529
-#: last_checked: 2016-11-26
-#: next_check: 2016-12-16
+#: last_checked: 2016-12-16
+#: next_check: 2017-03-01
 userdel	q2::inwork 5258,11285 5236,10994
 EOF
      },
@@ -24837,6 +24839,7 @@ EOF
        type  => 'gesperrt',
        source_id => '2147339665',
        data  => <<EOF,
+	2::temp 8540,12420 8775,12457
 userdel	2::temp 8485,12612 8399,12610 8348,12609 8306,12609 8207,12606 8122,12603 8119,12414 8354,12416 8400,12417 8540,12420
 userdel	2::temp 8348,12609 8354,12416
 	2::temp 8207,12606 8206,12757
@@ -25690,9 +25693,9 @@ EOF
        type  => 'handicap',
        source_id => 'LMS-BR_r_LMS-BR_83962',
        data  => <<EOF,
-#: XXX vor Ort prüfen!
 #: osm_watch: way id="454003207" version="1"
-userdel	q4::inwork 5230,10919 5215,10711
+#: last_checked: 2016-12-16
+userdel	q4::inwork 5236,10994 5230,10919
 EOF
      },
     );

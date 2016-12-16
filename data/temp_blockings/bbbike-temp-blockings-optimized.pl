@@ -2379,14 +2379,16 @@ userdel	3 8374,11479 8389,11378 8427,11365
        undef,
        {
          'data' => '#: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
-userdel	2::temp 8731,12270 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-userdel	2::temp 8055,12186 8119,12414
-userdel	2::temp 8522,12239 8466,12197
-userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+#: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6280.html
+	2::temp 8595,12066 8737,12098 8743,12099 8861,12125
+	2::temp 8731,12270 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	2::temp 8055,12186 8119,12414
+	2::temp 8522,12239 8466,12197
+	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
 ',
-         'from' => 1482814800,
+         'from' => 1482642000,
          'id' => 2010,
          'periodic' => 1,
          'recurrences' => [
@@ -2398,7 +2400,7 @@ userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,1216
                               12
                             ]
                           ],
-         'text' => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., vom 28.12.2016 bis 02.01.2017',
+         'text' => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., vom 26.12.2016 bis 02.01.2017',
          'type' => 'gesperrt',
          'until' => 1483397999
        },
@@ -3010,8 +3012,8 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
 #: source_id: 2147339529
-#: last_checked: 2016-11-26
-#: next_check: 2016-12-16
+#: last_checked: 2016-12-16
+#: next_check: 2017-03-01
 userdel	q2::inwork 5258,11285 5236,10994
 ',
          'from' => 1366740818,
@@ -3699,7 +3701,8 @@ userdel	q4::xmas 11064,12910 11134,12793
        undef,
        undef,
        {
-         'data' => 'userdel	2::temp 8485,12612 8399,12610 8348,12609 8306,12609 8207,12606 8122,12603 8119,12414 8354,12416 8400,12417 8540,12420
+         'data' => '	2::temp 8540,12420 8775,12457
+userdel	2::temp 8485,12612 8399,12610 8348,12609 8306,12609 8207,12606 8122,12603 8119,12414 8354,12416 8400,12417 8540,12420
 userdel	2::temp 8348,12609 8354,12416
 	2::temp 8207,12606 8206,12757
 userdel auto	3 7945,12592 8122,12603 8120,12756
@@ -3959,16 +3962,7 @@ userdel	q3::inwork 4564,3457 4800,3391 4862,3363 5022,3318
          'until' => undef
        },
        undef,
-       {
-         'data' => 'userdel	q4::inwork; 4976,9670 4982,9729 4993,9843 5013,10039
-',
-         'from' => 1478635433,
-         'id' => 2834,
-         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.522495.php',
-         'text' => 'Uhlandstr.: Bauarbeiten zwischen Pariser Str. und Hohenzollerndamm, Einbahnstraßenregelung, offen Richtung Hohenzollerndamm, von ca. Mitte November 2016 bis Mitte Dezember 2016',
-         'type' => 'handicap',
-         'until' => 1481893200
-       },
+       undef,
        undef,
        {
          'data' => '#: note: laut vmz bis Mitte August 2018 und nur bis zur Bahnbrücke, laut fritz bis 1.7.2018
@@ -3999,9 +3993,9 @@ userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,
          'until' => undef
        },
        {
-         'data' => '#: XXX vor Ort prüfen!
-#: osm_watch: way id="454003207" version="1"
-userdel	q4::inwork 5230,10919 5215,10711
+         'data' => '#: osm_watch: way id="454003207" version="1"
+#: last_checked: 2016-12-16
+userdel	q4::inwork 5236,10994 5230,10919
 ',
          'from' => 1479769200,
          'id' => 2843,
