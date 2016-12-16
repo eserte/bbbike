@@ -2732,7 +2732,7 @@ Drängelgitter	BNP:3 31665,48997
 # REMOVED (man kommt hinter dem Georg-Denkmal vorbei) --- Spreeufer Nikolaiviertel: Gehweg gesperrt	2::inwork 10417,12378 10492,12289 10583,12206
 # 
 #: source_id: 2147340790
-#: last_checked: 2016-12-04
+#: last_checked: 2016-12-15
 #: next_check: 2017-01-31
 #: valid: -20170131
 Puschkinallee: Fahrtrichtung gesperrt	1::inwork 13795,9941 13890,9894
@@ -2784,7 +2784,7 @@ Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,
 Weichselplatz: Uferweg wegen Bauarbeiten gesperrt	2::inwork 12851,9309 12907,9073
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2016
-#: last_checked: 2016-09-14
+#: last_checked: 2016-12-15
 #: check_frequency: 180d
 Sülzhayner Str.: komplett gesperrt wegen Bauarbeiten, vielleicht dauerhaft	2::inwork 13420,9259 13403,9236
 # 
@@ -2793,7 +2793,7 @@ Sülzhayner Str.: komplett gesperrt wegen Bauarbeiten, vielleicht dauerhaft	2::in
 #: check_frequency: 60d
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 # 
-#: last_checked: 2016-12-10
+#: last_checked: 2016-12-15
 Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2 14447,10491 14270,10584
 # 
 #: next_check_id: MARIANNEN-2016 vvv
@@ -2802,7 +2802,7 @@ Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2 14447,10491 14270,10584
 #: source_id: 2147340768 vvv
 #: priority: #A vvv
 #: XXX laut fritz bis 16.12.2016
-#: last_checked: 2016-12-14 vvv
+#: last_checked: 2016-12-15 vvv
 #: next_check: 2017-01-10 vvv
 Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11512,10105 11616,10288
 #: source_id: 2147340777
@@ -2861,11 +2861,6 @@ Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7741,14560 7518,14
 # REMOVED (fertig) --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.476901.php --- #: next_check: 2016-05-14 --- Treptower Park: Bauarbeiten	2::inwork 14695,9587 14705,9578 14791,9537
 # REMOVED (fertig) --- Treptower Park: Bauarbeiten	2::inwork 15591,8848 15608,8882 15617,8924 15623,8949 15630,8979
 # REMOVED --- #: XXX evtl. kann man hier als Fußgänger irgendwie vorbei --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 3d --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14448,9922 14467,9880 14500,9863 --- #: last_checked ^^^
-# 
-#: last_checked: 2016-10-02
-#: XXX laut osm mittlerweile offen ("unclassified") (stimmt aber nicht)
-#: osm_watch: way id="311371554" version="4"
-Clara-Immerwahr-Str.: Bauzäune, Fußgänger können aber u.U. passieren	2::inwork 19202,17471 19546,17351 19798,17263 19845,17235 19914,17203
 # 
 #: last_checked: 2016-12-05
 #: osm_watch: way id="57852078" version="4"

@@ -432,8 +432,8 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 # 
 #: by: http://www.aktion-kms.de/files/2015-07-13_flyer_isarneckar_final.pdf
-#: last_checked: 2016-11-07
-#: check_frequency: 45d
+#: last_checked: 2016-12-15
+#: check_frequency: 30d
 Neckarstr./Isarstr.: Umgestaltung, danach verkehrsberuhigter Bereich; ändert sich am Fahrbahnbelag etwas?	?::inwork 12368,8356 12384,8284 12639,8344
 # 
 #: next_check: 2017-01-01
@@ -1021,7 +1021,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12085,977
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="13"
-#: last_checked: 2016-12-02
+#: last_checked: 2016-12-15
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -1940,12 +1940,14 @@ Schulzendorfer Str.: Radverkehrsanlangen? (vermutlich asphaltiert, vermutlich nu
 # REMOVED (hier nicht, oben) --- #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367062.php --- #: by: http://www.gruen-berlin.de/in-realisation/havelradweg/?L=.htewrap&PHPSESSID=bc0eb92d1c0f3ab3c89fe427b9f45c1a --- #: osm_watch: way id="25332831" version="2" --- #: osm_watch: way id="60219319" version="4" --- #: osm_watch: way id="117818805" version="4" --- #: osm_watch: way id="24613443" version="8" --- #: next_check: 2015-12-15 --- Haveluferweg: bessere Qualität nach den Bauarbeiten?	?::inwork -4546,9381 -4506,9395 -4460,9456 -4442,9625 -4536,9800 -4585,9836 -4619,9867 -4631,10046 -4625,10139 -4645,10192 -4592,10184 -4510,10208 -4445,10379 -4387,10496 -4323,10570 -4230,10679 -4254,10810 -4251,11112
 # REMOVED --- #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367062.php --- #: by: http://www.gruen-berlin.de/in-realisation/havelradweg/?L=.htewrap&PHPSESSID=bc0eb92d1c0f3ab3c89fe427b9f45c1a --- #: next_check: 2015-12-15 --- Schifffahrtsufer an der Havel: bessere Qualität nach den Bauarbeiten?	?::inwork -3337,13111 -3230,12938 -3228,12920 -3208,12889 -3211,12868 -3211,12784 -3170,12603 --- Schifffahrtsufer an der Havel: bessere Qualität nach den Bauarbeiten?	?::inwork -3221,12925 -3199,12888 -3205,12816 -3180,12719 -3142,12615
 # 
+#: next_check_id: SEEGEFELDERWEG-2016
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367070.php
+#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.541819.php
 #: osm_watch: way id="5000155" version="14"
 #: osm_watch: way id="313302635" version="4"
 #: osm_watch: way id="57401090" version="8"
-#: next_check: 2016-12-31
-Seegefelder Weg: Bau von Radspuren	?::projected -6507,15007 -6861,15129
+#: next_check: 2017-04-01
+Seegefelder Weg: Bau von Radspuren	?::inwork -6507,15007 -6861,15129
 # 
 # REMOVED --- Chausseestr.: wie weit geht hier noch die Radspur?	? 8442,14456 8527,14352
 # REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2015 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/46re.pdf/file?y=2015 (Grundstücksnummerierungen) --- #: note: Privatstraße, aber ausdrücklich "öffentlich zugänglich" --- #: XXX fehlt in Berlin.coords.data, PLZ=10829 --- #: XXX Wirksamkeit der Benennung: 2015-10-10 --- #: last_checked: 2016-03-26 (sieht noch privat aus) --- EUREF-Campus: Innenfläche wird benannt; genaue Wegführung, Qualität?	? 7158,8208 7149,8249 7316,8509
@@ -4216,7 +4218,7 @@ Altdöbern - Calau: Qualität?	? 55259,-83091 55388,-83077 55768,-82862 54521,-794
 # 
 #: XXX fehlen alle in Berlin.coords.data, PLZ=12623 vvv
 #: last_checked: 2016-06-04 vvv
-#: check_frequency: 180d vvv
+#: check_frequency: 270d vvv
 #: osm_watch: way id="338546084" version="6"
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__21_vom_28__Mai_2010.pdf
 #: by: https://www.google.de/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0ahUKEwjn5uqLgY_NAhVHsBQKHcfIAEEQFggvMAE&url=https%3A%2F%2Fwww.berlin.de%2Fba-marzahn-hellersdorf%2Fpolitik-und-verwaltung%2Faemter%2Fstadtentwicklungsamt%2Fstadtplanung%2Fmdb-bamarzahnhellersdorf-stadtplanung-festgesetb-xxiii_15b_1_abzeichnung.pdf&usg=AFQjCNHD5t6sh5hLTtunUdcS4SG222H6xw&cad=rja

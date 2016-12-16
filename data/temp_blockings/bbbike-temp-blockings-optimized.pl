@@ -3638,17 +3638,19 @@ userdel	q4::inwork 8348,10636 8335,10518 8350,10499
        undef,
        undef,
        {
-         'data' => '#: source_id: IM_026411
+         'data' => '#: next_check_id: SEEGEFELDERWEG-2016
+#: source_id: IM_026411
 #: source_id: 2147339562
 #: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3
+#: next_check: 2017-04-01
 userdel	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129 -6507,15007
 ',
          'from' => 1443650400,
          'id' => 2740,
          'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367070.php',
-         'text' => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Klosterbuschweg und Finkenkruger Weg, stadteinwärts gesperrt, voraussichtlich ab Oktober 2015 bis Ende 2016',
+         'text' => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Klosterbuschweg und Finkenkruger Weg, stadteinwärts gesperrt, Ende unbekannt',
          'type' => 'handicap',
-         'until' => 1483225199
+         'until' => undef
        },
        undef,
        undef,
