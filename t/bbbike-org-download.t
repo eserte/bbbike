@@ -26,6 +26,7 @@ use lib (
 	 "$FindBin::RealBin/../miscsrc", # for BBBikeOrgDownload.pm
 	);
 
+use Getopt::Long;
 use File::Temp qw(tempdir);
 
 use BBBikeUtil qw(is_in_path);
@@ -47,6 +48,10 @@ BEGIN {
 
 plan skip_all => 'Mysterious download fails' if $ENV{APPVEYOR}; # for example: https://ci.appveyor.com/project/eserte/bbbike/build/1.0.65#L270
 plan 'no_plan';
+
+my $city;
+GetOptions('city=s' => \$city)
+    or die "usage: $0 [-city ...]\n";
 
 my $download_script = "$FindBin::RealBin/../miscsrc/bbbike.org_download.pl";
 
@@ -70,7 +75,7 @@ my @listing;
 
     my($dir) = tempdir("bbbike.org_download_XXXXXXXX", CLEANUP => 1, TMPDIR => 1)
 	or die "Cannot create temporary directory: $!";
-    my $city = $random ? $listing[rand(@listing)] : 'UlanBator'; # size of Ulan Bator dataset on 2016-04-03: 311.9K
+    my $city = $city // ($random ? $listing[rand(@listing)] : 'UlanBator'); # size of Ulan Bator dataset on 2016-04-03: 311.9K
     system($^X, $download_script, @debug_opts, "-city", $city, "-o", $dir, "-agentsuffix", " (testing)");
     is $?, 0, "Downloading city '$city'";
     ok -d "$dir/$city", "Directory $dir/$city exists";
