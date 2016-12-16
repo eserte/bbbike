@@ -108,6 +108,18 @@ sub get_city {
 
     print STDERR "Extracting data to $data_osm_directory...\n" if $debug;
     if (eval { require Archive::Tar; Archive::Tar->has_bzip2_support }) {
+	# Workaround for pbzip2-compressed tarballs, see
+	# https://rt.cpan.org/Ticket/Display.html?id=119262
+	no warnings 'redefine';
+	local *Archive::Tar::_get_handle = sub {
+	    my($self, $file) = @_;
+	    no warnings 'once';
+	    my $fh = IO::Uncompress::Bunzip2->new( $file, MultiStream => 1 ) ||
+		$self->_error( qq[Could not read '$file': ] .
+			       $IO::Uncompress::Bunzip2::Bunzip2Error
+			     );
+	    $fh;
+	};
 	my $success = Archive::Tar->extract_archive($tmpfile);
 	# Can't check just for $success, see
 	# https://rt.cpan.org/Ticket/Display.html?id=118850
