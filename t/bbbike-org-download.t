@@ -75,7 +75,7 @@ my @listing;
 
     my($dir) = tempdir("bbbike.org_download_XXXXXXXX", CLEANUP => 1, TMPDIR => 1)
 	or die "Cannot create temporary directory: $!";
-    my $city = $city // ($random ? $listing[rand(@listing)] : 'UlanBator'); # size of Ulan Bator dataset on 2016-04-03: 311.9K
+    my $city = $city || ($random ? $listing[rand(@listing)] : 'UlanBator'); # size of Ulan Bator dataset on 2016-04-03: 311.9K
     system($^X, $download_script, @debug_opts, "-city", $city, "-o", $dir, "-agentsuffix", " (testing)");
     is $?, 0, "Downloading city '$city'";
     ok -d "$dir/$city", "Directory $dir/$city exists";
