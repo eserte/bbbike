@@ -204,32 +204,19 @@ EOF
 	}
 
     if (!defined $images{Pharus}) {
-	# Fetched http://www.pharus-plan.de/px/head_kopf.jpg
-	# and converted using Gimp (cropped manually and scaled to 16px width)
-	# mmencode the result
+	# This is the favicon of www.berliner-stadtplan.com, run through "base64"
 	$images{Pharus} = $main::top->Photo
-	    (-format => 'gif',
+	    (-format => 'png',
 	     -data => <<EOF);
-R0lGODlhDQAQAOfOADg4NDs7OEFBPUVEQlBHPVJKSU1OSFZOSmBRRl5RTGBUTVpYTFNcTWFa
-NGhYQRmMAxiNAhqMAhqMAx+ICxuMARuMAx6KBxuNARuNAh+LAhiPABqOAHNbHxqOARqOAhuO
-ABuOAR2NARuOAiCLBx+MBk9oR3RdKiOMDWheT3ReL11iW2RgWGVeYGpdWieNEVBtUlhqTimO
-FWphVyaREH9iH1NwT35jJ25iWC2SFy+RGXVkW35qLnRmX2huW3RqXzuTI21sbXlqYXlrXD2W
-J3duY29xbn5uY2GDVWeAW3R3amp/X3d2c4R0XYRzZ29+akSfMIJ0bnt3c3x2d2yCaoJ5X0ef
-OIF3dHGBbYR6X4V4aYd2cEyfOnl+cYZ4bnaAcUqiNIJ7bop4aoN7bU6gOXt9fIh6bH99dox6
-aGSSVol+Y32AfY16cl+YT2KWU4t/ZlCmQmyTZVWmQVqjTm2XW3+IfH6LdYiEhVunRFumS3eS
-a16lSmyaX1+lTXWVZ3eTb2KjU4SKfnaVapSGa5aFa5OEeWmiWoyKg2WlXmmnWYGVenKhZG6l
-W3idb3ifaXaga4uRhJCPiJGRj5WPj5KRj5GTiZGUhJSUkoCldJ+SjaiSd5iWkpqalZebmKeZ
-gK+Xdp6alrCce6mekaCin7KggqOko6SnqKamqK+mnqSvobGpqaysp8Gtj664qMaxkLW2r8q0
-icG5m7i5vbe8sM63j8u7kcHBuL/Aw8XBusHEwMHDx9fBn9fDn8XHvcLJw9bGqMnJxszLxc3M
-xNzPr+nLosjVy9LS0dfVydXY0NnZ2drb2Nzf2d7f3+Lg4OXi4///////////////////////
-////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
-/////////////////////////////////yH+FUNyZWF0ZWQgd2l0aCBUaGUgR0lNUAAh+QQB
-CgD/ACwAAAAADQAQAAAI7QAzfBDhIg4bNG345IBw4QIGCkMU1TH0SVKSRmMqgJDwgxEvYK7I
-qKklK8+XCCQWsQomypYpS0VIHbuE44kfZZyW9SKGClckZI/w/AHUrFQxSpAqxcr1S5UjOHaY
-NeBgw8QOGilSbUqkJEoyIlSwCHLDxIExTVymALlFyJcnXaBWnTk1iQ6SJaHWDBo269UuBFqk
-OJljpkyTNK0yjerkI4iVQHd6ZAmDAhYtYWBu6FhQKMYRAC26EBCjgAeUAjCqPHhTw8AKGUKM
-HAjAANEIDxbklBDAAlOCAS8OzaCwIcSELXuuqPDSR8+JDhoCAgA7
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAASFBMVEXEtrz8+vzMusQTkyWU
+joz88mQA8gqknqS0qqykmpzM2uTMyrTsRjR0moyUknzMunzMyszUymzc5lzk1mx0tnzc7vT06lz/
+//8oqzT8AAAAAWJLR0QXC9aYjwAAAAd0SU1FB+AMEQ0THxP6s+0AAACbSURBVBjTJY7bAsIgDEMT
+2jDYHG6K/v+n2iIvTS+cBACLGegyI9ajWd0IVbOWfbNaKwmPYh3w6M32xsNSPRDFGuP2pEIactzL
+YMdTqeOPRJRjpwYuLqNbrwK8lY4OsrMptjqdHqyCPc6GpDnnFagE8QNI91zQtMVGqetve61gTQ0r
+2AxoRteXK7qEIMYqLD3vh+DwZiYcMR+R5AdYUAS1NmdRiQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAx
+Ni0xMi0xN1QxNDoxOToyMSswMTowMF/HH4gAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTAtMTEtMDhU
+MTE6NDQ6NTUrMDE6MDCRfW6PAAAAAElFTkSuQmCC
 EOF
     }
 
