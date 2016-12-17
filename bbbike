@@ -14672,7 +14672,19 @@ sub show_info {
 
 	my($px0,$py0,$px1,$py1) = get_current_bbox_as_wgs84();
 
-	for my $key (keys %info_plugins) {
+	my @sorted_info_plugins = sort {
+	    my $a_order = $info_plugins{$a}->{order} || 0;
+	    my $b_order = $info_plugins{$b}->{order} || 0;
+	    if    ($a_order eq 'first') { return -1 }
+	    elsif ($b_order eq 'first') { return +1 }
+	    elsif ($a_order eq 'last')  { return +1 }
+	    elsif ($b_order eq 'last')  { return -1 }
+	    else {
+		$a_order <=> $b_order;
+	    }
+	} keys %info_plugins;
+
+	for my $key (@sorted_info_plugins) {
 	    my $plugin = $info_plugins{$key};
 
 	    my @args = (coords => $real_coords,
