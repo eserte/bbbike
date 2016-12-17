@@ -583,13 +583,14 @@ sub showmap_deinplan_web {
 sub showmap_url_bikemapnet {
     my(%args) = @_;
 
+    my $lang = $Msg::lang || 'de';
+    $lang = 'en' if $lang !~ m{^(de|en)$}; # what are the supported languages?
+
     my $px = $args{px};
     my $py = $args{py};
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
     $scale = 17 if $scale > 17;
-#    sprintf "http://www.bikemap.net/#lat=%s&lng=%s&zoom=%d&type=0",
-#	$py, $px, $scale;
-    sprintf "http://www.bikemap.net/#/z%d/%s,%s/terrain",
+    sprintf "https://www.bikemap.net/en/search/?zoom=%d&center=%s%2C%s",
 	$scale, $py, $px;
 
 }
