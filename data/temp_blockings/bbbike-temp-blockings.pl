@@ -22505,7 +22505,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/ueber-den-bezirk/sonstiges/events/fest-der-nationen/',
        data  => <<EOF,
-userdel	2::temp 5661,9630 5657,9600 5630,9592 5602,9606 5595,9626
+userdel	2::temp 5648,9642 5642,9613 5618,9607 5598,9612 5578,9629
 EOF
      },
      { from  => 1390086000, # 2014-01-19 00:00

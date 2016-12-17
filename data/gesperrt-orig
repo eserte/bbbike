@@ -142,6 +142,8 @@ Pannierstr.	1 12202,8895 12242,8972
 # REMOVED (nicht mehr Einbahnstraße) --- Dönhoffstr.	1 18726,8633 18609,8717 18514,8773 18451,8823 18375,8874 18296,8920 18221,8978 18161,9029 18136,9072
 Bersarinplatz	1 13730,12535 13698,12544 13675,12581 13681,12624 13695,12643 13747,12642 13767,12626 13761,12578 13730,12535
 Petersburger Platz	1 13470,12990 13559,12779
+#: add_fragezeichen: Ist die Einbahnstraße mittlerweile für Radfahrer geöffnet oder wird das in Zukunft passieren?
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf
 Dernburgstr.	1 2498,10665 2378,10677 2333,10710 2254,11051
 # REMOVED (aufgehoben für alle) --- #: XXX wird die Einbahnstraßenregelung für Radfahrer zumindest im östlichen Abschnitt wegen der Radroute aufgehoben? --- #: osm_watch: way id="42826410" version="5" --- Schuckertdamm	1 1343,14972 1465,14963
 Schuckertdamm	1 741,14827 1022,14898 1056,14906 1112,14918 1200,14943 1343,14972
@@ -219,9 +221,7 @@ Triftstr. (Buchholz)	1s:q3 12023,23039 12185,23021
 Joachimstr.	1s:q3 10082,13686 10142,13556 10199,13446
 Wilhelmsaue	1 4778,8784 4918,8785 5165,8784
 Wilhelmsaue	1 5164,8740 4918,8740 4777,8731
-Friedrichsruher Str.	1 3196,9193 3333,9026
 Schweidnitzer Str	1 3220,9598 3225,9844
-Mansfelder Str.	1 4096,9175 4158,9109 4228,9093 4325,9082
 Johann-Georg-Str.	1 3108,10069 3170,10041 3348,9806
 Damaschkestr.	1 3132,10499 3013,10553
 # REMOVED --- Herbartstr.	1 2346,11147 2340,11045
@@ -286,6 +286,8 @@ Große Präsidentenstr.	1 10105,13004 10220,13098
 #: next_check: 2017-03-01
 Naumannstr.	1 7709,8777 7707,8915
 Gritznerstr.	1 4511,6318 4555,6403
+#: add_fragezeichen: Ist die Einbahnstraße mittlerweile für Radfahrer geöffnet oder wird das in Zukunft passieren?
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/fahr-rat-19-sitzung.pdf
 Duisburger Str.	1 4183,10144 3874,10153
 Straße 462	1 4914,17399 5068,17384
 Havensteinstr.	1 6293,2583 6463,2724 6593,2831
@@ -1008,6 +1010,9 @@ Olbrichweg	1 5787,19326 5879,19352
 Genfer Str.	1 6890,18190 6821,18216 6683,18243
 #: note: enge Hausdurchfahrt
 Eckertstr.	1s:q3 13598,12554 13585,12584
+#: add_fragezeichen: Ist die Einbahnstraße mittlerweile für Radfahrer offen?
+#: osm_watch: way id="4515877" version="5"
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf
 Leistikowstr.	1 1188,11861 1133,11664
 Am Krummen Weg	1 -7169,14849 -7026,14890
 Am Krummen Weg	1 -7169,14849 -7248,14826
@@ -1145,6 +1150,10 @@ Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
 #: osm_watch: way id="31540773" version="11"
 #: next_check: 2017-03-01
 Fritz-Werner-Str.	1s:q3 9099,2780 9072,2589
+Kraftwerk Reuter West	2 -447,14338 -495,14311 -650,14355 -792,14258 -1002,14162 -1020,14084
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf
+#: by: osm
+Bechstedter Weg	1 3467,9045 3661,8815 3701,8849
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -1381,8 +1390,14 @@ Niemannstr.	1s:q3 14254,11377 14211,11229
 Björnsonstr	1s:q1 10209,16674 10197,16528
 Ibsenstr.	1s:q1 10295,16667 10209,16674
 Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
+#: add_fragezeichen: Ist die Einbahnstraße mittlerweile für Radfahrer offen? vvv
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf vvv
+#: osm_watch: way id="183614191" version="4"
 Ahornallee	1s:q3 1589,11483 1574,11379
+#: osm_watch: way id="24852084" version="8"
 Lindenallee	1s:q3 1429,11523 1403,11428
+#: by: ^^^
+#: add_fragezeichen ^^^
 Gramzow (Dorfstr.?)	1s:q1 49779,90206 49810,90444
 Alt-Tegel	1s:q3 1668,20156 1753,20191 1907,20265
 Alt-Tegel	1s:q3 1668,20156 1529,20131 1543,20060 1630,20097 1668,20156
@@ -2897,7 +2912,7 @@ Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 # 
 #: next_check_id: ZIEGELSTR-2016
 #: XXX Ende der Bauarbeiten?
-#: osm_watch: note 622211 3
+#: osm_watch: way id="4610375" version="14"
 #: last_checked: 2016-12-12
 #: check_frequency: 14d
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076 9559,13087
@@ -3363,11 +3378,8 @@ Heerstr.	3nocross -1050,11061 -848,11086 -779,11093 -733,11098 -593,11119
 Heerstr.	3nocross -593,11119 -511,11127 -406,11141 -360,11145 -82,11178
 Heerstr.	3nocross -82,11178 16,11190 229,11213 438,11236 504,11243
 tragen (20 Stufen)	0:30 23,11137
-Oldenburgallee	1 454,11670 461,11455
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4509&options=4
 Westendallee	1s:q3 461,11455 425,11455 395,11486 329,11696 323,11801
-Brixplatz	1 419,12397 335,12343 208,12305
-Brixplatz	1 179,12434 269,12462 329,12503
 Lerschpfad	1 2181,12276 2152,12389
 Gottfried-Keller-Str.	1 1697,11911 1792,11889
 tragen (5 Stufen)	0:20 3829,13572
@@ -3385,9 +3397,6 @@ Kaiser-Friedrich-Str.: Mittelstreifen, unbequemes Überqueren	3nocross 3479,11238
 tragen, schieben (3 x 9 Stufen, schmale Rampe)	0:30 6190,12978
 tragen (30 Stufen)	0:45 5890,12602
 tragen (12 Stufen)	0:20 5683,12342
-Karolingerplatz	1 1278,11087 1181,11136
-Karolingerplatz	1 1209,11212 1315,11179
-Ubierstr.	1 1315,11179 1278,11087
 #: corrected_by: srt (12 -> 11 Stufen, 0:40 -> 0:20)
 tragen (11 Stufen)	0:20 2228,11317
 #: corrected_by: srt (12 -> 8 Stufen, 0:40 -> 0:20)
@@ -3454,6 +3463,9 @@ Drängelgitter	BNP:10 9171,5263
 #: confirmed_by: srt
 Niederneuendorfer Allee (Wendeschleife)	1 -2906,17661 -2897,17861
 Zeiler Weg	1 11495,18129 11579,18184
+#: add_fragezeichen: Gibt es (für Radfahrer? für Autofahrer?) eine Einbahnstraßenregelung zur Prenzlauer Promenade?
+#: XXX unklar: siehe Fahr-Rat-Protokoll, bei osm gar nicht als Einbahnstraße markiert
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-sitzung-fahrrat-am-01-09-15.pdf
 Zeiler Weg	1s 11835,18301 11914,18303
 Dettelbacher Weg	1 11696,18454 11750,18273
 Dettelbacher Weg	1 11819,18050 11750,18273

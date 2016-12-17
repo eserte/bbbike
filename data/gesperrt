@@ -182,9 +182,7 @@ Triftstr. (Buchholz)	1s 12023,23039 12185,23021
 Joachimstr.	1s 10082,13686 10142,13556 10199,13446
 Wilhelmsaue	1 4778,8784 4918,8785 5165,8784
 Wilhelmsaue	1 5164,8740 4918,8740 4777,8731
-Friedrichsruher Str.	1 3196,9193 3333,9026
 Schweidnitzer Str	1 3220,9598 3225,9844
-Mansfelder Str.	1 4096,9175 4158,9109 4228,9093 4325,9082
 Johann-Georg-Str.	1 3108,10069 3170,10041 3348,9806
 Damaschkestr.	1 3132,10499 3013,10553
 Lietzenseeufer	1 2871,11211 2806,11241 2748,11206 2621,11190 2621,11065
@@ -826,6 +824,8 @@ Morgensternstr.	1 5212,2360 5229,2395
 Gotenburger Str.: Einfahrt verboten	1s 9000,16803 8847,16870
 Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
 Fritz-Werner-Str.	1s 9099,2780 9072,2589
+Kraftwerk Reuter West	2 -447,14338 -495,14311 -650,14355 -792,14258 -1002,14162 -1020,14084
+Bechstedter Weg	1 3467,9045 3661,8815 3701,8849
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -3043,7 +3043,6 @@ Hoffmann-von-Fallersleben-Pl. -> Hohenzollerndamm: unbequem passierbarer Mittels
 Hohenzollerndamm -> Bielefelder Str.: unbequem passierbarer Mittelstreifen	3::igndisp 3741,9051 3816,9052 3814,9304
 Bielefelder Str. -> Hohenzollerndamm: unbequem passierbarer Mittelstreifen	3::igndisp 3814,9304 3816,9052 3831,9052
 unpassierbarer Mittelstreifen	3nocross::ignrte 3427,9010 3467,9045 3521,9059
-Hohenzollerndamm -> Bechstedter Weg: unpassierbarer Mittelstreifen	3::igndisp 3521,9059 3467,9045 3661,8815
 Bechstedter Weg -> Hohenzollerndamm: unpassierbarer Mittelstreifen	3::igndisp 3661,8815 3467,9045 3427,9010
 Kette	BNP:5:-131 3370,9215
 Kette	BNP:5:-220 3264,9261
@@ -3153,10 +3152,7 @@ Sensburger Allee -> Teufelsseestr.: Heerstr.	3::igndisp 326,11391 438,11236 454,
 Heerstr. -> Teufelsseestr.: Heerstr.	3::igndisp 504,11243 438,11236 454,11159
 Heerstr. -> Sensburger Allee: Heerstr.	3::igndisp 229,11213 438,11236 326,11391
 tragen (20 Stufen)	0:30:-186 23,11137
-Oldenburgallee	1 454,11670 461,11455
 Westendallee	1s 461,11455 425,11455 395,11486 329,11696 323,11801
-Brixplatz	1 419,12397 335,12343 208,12305
-Brixplatz	1 179,12434 269,12462 329,12503
 Lerschpfad	1 2181,12276 2152,12389
 Gottfried-Keller-Str.	1 1697,11911 1792,11889
 tragen (5 Stufen)	0:20:-169 3829,13572
@@ -3184,9 +3180,6 @@ Mittelstreifen, unbequemes Überqueren	3nocross::ignrte 3479,11238 3467,11373 346
 tragen, schieben (3 x 9 Stufen, schmale Rampe)	0:30:-263 6190,12978
 tragen (30 Stufen)	0:45:26 5890,12602
 tragen (12 Stufen)	0:20:41 5683,12342
-Karolingerplatz	1 1278,11087 1181,11136
-Karolingerplatz	1 1209,11212 1315,11179
-Ubierstr.	1 1315,11179 1278,11087
 tragen (11 Stufen)	0:20:-52 2228,11317
 tragen (8 Stufen)	0:40:-70 2300,11292
 Thüringerallee: Privatstr.	2 1454,11164 1342,11020
