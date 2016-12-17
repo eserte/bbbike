@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: AltBerlin.pm,v 1.5 2006/09/17 20:20:41 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -21,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.06';
 
 use vars qw($icon);
 
@@ -61,7 +60,7 @@ sub register {
     if ($is_berlin) {
 	_create_image();
 	$main::info_plugins{__PACKAGE__ . ""} =
-	    { name => "Alt-Berlin (1946)",
+	    { name => "Alt-Berlin (1946) (kaputt)", # XXX currently (2016-12-17) the website exists, but is broken
 	      callback => sub { altberlin(@_, stadtplannr => 10) },
 	      #callback_3_std => sub { altberlin_url(@_) },
 	      callback_3 => sub { show_all_urls_menu(@_) },
