@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.05';
+$VERSION = '0.06';
 
 use vars qw(%images);
 
@@ -49,7 +49,7 @@ sub register {
 	  callback => sub { merkaartor_via_url(@_) },
 	  callback_3_std => sub { merkaartor_url(@_) },
 	  allmaps => 0, # do not show in allmaps list
-	  ($images{Merkaartor} ? (icon => $images{Merkaartor}) : ()),
+	  ($images{MerkaartorJOSM} ? (icon => $images{MerkaartorJOSM}) : ()),
 	  order => -100,
 	};
 }
@@ -104,6 +104,29 @@ MgdAIgMSCACQj5Lv7u9bRxNJNwxdSRZqTQx4XynOw5vU1ajc3NSkm5NiVEdSSUJtbG2wsLDX
 ycjAyogE3jOwMPCiCjAyyCMLMF5hYXioiywAVGGFooKRhYEfhb+KhYEPRYABTaAf3VoGoEBf
 PYoAI0M3ihkZ6IYuZ1kBYwYxrGf8zOvLyLCFkdEL5M3tIFFXEGsP1Pt794FIAF7gEE4ei/dj
 AAAAAElFTkSuQmCC
+EOF
+    }
+    if (!defined $images{MerkaartorJOSM} && eval { require Tk::PNG; 1 }) {
+	# A combination of the merkaartor and josm logos
+	# created in GIMP
+	$images{MerkaartorJOSM} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAADGElEQVQozzXBX2wTdRwA8O/97nf/
+uN6t/+htXTe3irHMAVrGnJOkbYJuauIfyEa2xMQIAuGBgcxEXwh/giE+CcITJGIUEhMIDzyQEH0A
+1g7pti77w4htKVvpWsr6564tvWt7HE98PsSlM32x6MOqSjAMG1lSIo+qAge7v3zPMFAqnc0+LzEs
+19Gs13TKuq4wcuAyjj0pNnRiMaqE5uSmdXDsyA6LiCSHLa8Yb7nX3/73QWg6/c8E9GyE73/6ddO2
+IbJ3sxiezSzECc8bxNGD/Rxvjcbiz/IoGl9RFAUzZncbw+Ia4/CXK2TA78eSnYsmgaKMWgP9fDZk
+s1BfD3/4ODrzf6IYT4LyAjI5OPHLt4Ojn58ZuzIRDKJ6w5DLUKnCmmy80GDfiKe727Nz1xBDUxUN
+kAHjJ75xdnkZzC4vR2dnZ5HWoDEJkhWGBwSOgXSe0fX6nfvLzQ7KZYUvDm8PfOaziczqyqqcq6RS
+KayUARFgN4PdKox/J12/NUezwt3gPA2NvpH93oBNU4AR+BtXb7a1t/I8j8181SxA83qSpnSWJo7/
+OKyq6mBgtGLpLGEroWPD4Mvl7OP4ss/3kUNy4LxCFBRosVNNgolAOBiauvvfU2/voOEAm7Cypjas
+guiSOja4Ni8szJ/b/xuiWRNCYAB+CcRqpvDH9UeeLt9zzZZO5MpPsNuyUeLcdZkd2Cq5OjqdTidW
+1YaJgw0dPEkYHAv9m/hcfGLPhb+knL5SRKDmMWsy251dvUP3fjhar9cxSZlGdm1rcZmuXLvvcbeY
+Ob3KUHZRi4RKd34ft1jNGeVlbK3+wcDuzva3DcPAg4E3EahySW21kWouX9PJvUdO8cjs7X9nYfqT
++algodSoUk1b3vX29b0/OTmJOQaRiJsOL1E1FjvET3cevjf/sDgRCQS+On3+z0KhmM6ka7Xa02Qy
+m82Gw2GcL6qJ2FIqGpMNlqj2xhPkxzv2tbe1Tk1NJ5NJURQ5li0pSiKRWFxc9Pv9xNyDv5/l6KsX
+T3b3jx4aG8OYgtdmZmYikYgsy5qm+Xy+np4emqZfAcqvYBk6Ws9LAAAAAElFTkSuQmCC
 EOF
     }
 }
