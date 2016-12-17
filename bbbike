@@ -14004,7 +14004,7 @@ sub show_info {
 	$is_p = ($base_tag =~ /-(?:[fb]g|img)$/);
 	$base_tag =~ s/-(?:[fb]g|img)$//;
 	last unless !exists $p_file{$base_tag} and !$str_file{$base_tag};
-	my($below_item, @below_tags) = find_below($c, qw/s l u b r f w o v fz/);
+	my($below_item, @below_tags) = find_below($c, qw/s l u b r f w o v v-fg fz/);
 	if (!defined $below_item) {
 	    # 2nd pass: check for markers etc.
 	    my($below_item, @below_tags) = find_below($c, qw/show/); # XXX still necessary? 'show' is now -state=>'disabled'
