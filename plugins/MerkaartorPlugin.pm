@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,10 +20,11 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.04';
+$VERSION = '0.05';
 
 use vars qw(%images);
 
+use BBBikeUtil qw(is_in_path);
 use BBBikeProcUtil qw(double_forked_exec);
 
 sub register {
@@ -105,6 +106,9 @@ EOF
 }
 
 sub merkaartor_via_cmdline {
+    if (!is_in_path 'merkaartor') {
+	main::status_message("merkaartor ist nicht installiert.", "die");
+    }
     my($minx,$miny,$maxx,$maxy) = main::get_visible_map_bbox_polar();
     my $url = sprintf 'osm://<whatever>/load_and_zoom?left=%s&right=%s&top=%s&bottom=%s', # &select=node413602999
 	$minx, $maxx, $miny, $maxy;
@@ -112,6 +116,9 @@ sub merkaartor_via_cmdline {
 }
 
 sub josm_via_cmdline {
+    if (!is_in_path 'josm') {
+	main::status_message("merkaartor ist nicht installiert.", "die");
+    }
     my($minx,$miny,$maxx,$maxy) = main::get_visible_map_bbox_polar();
     # [--download=]minlat,minlon,maxlat,maxlon
     my $download_opt = sprintf '--download=%s,%s,%s,%s',
