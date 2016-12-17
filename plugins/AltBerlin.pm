@@ -65,6 +65,7 @@ sub register {
 	      #callback_3_std => sub { altberlin_url(@_) },
 	      callback_3 => sub { show_all_urls_menu(@_) },
 	      icon => $icon,
+	      order => 'last',
 	    };
     } else {
 	main::status_message("Das AltBerlin-Plugin ist nur für Berlin verfübar.", "err")

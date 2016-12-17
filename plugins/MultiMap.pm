@@ -56,6 +56,7 @@ sub register {
 	  callback => sub { showmap_openstreetmap(osmmarker => 0, @_) },
 	  callback_3 => sub { show_openstreetmap_menu(@_) },
 	  ($images{OpenStreetMap} ? (icon => $images{OpenStreetMap}) : ()),
+	  order => 'first',
 	};
     $main::info_plugins{__PACKAGE__ . "_MapCompare"} =
 	{ name => "Map Compare (Google/OSM)",
@@ -112,6 +113,7 @@ sub register {
     $main::info_plugins{__PACKAGE__ . '_AllMaps'} =
 	{ name => 'All Maps',
 	  callback => sub { show_links_to_all_maps(@_) },
+	  order => 9000,
 	};
 }
 

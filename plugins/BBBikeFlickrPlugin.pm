@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013,2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +20,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.01;
+$VERSION = 1.02;
 
 use File::Temp qw(tempfile);
 use Flickr::API ();
@@ -42,6 +42,7 @@ sub register {
 	  callback => sub { show_mini_images(@_) },
 	  callback_3 => sub { show_flickr_menu(@_) },
 	  ($flickr_bbbike_icon ? (icon => $flickr_bbbike_icon) : ()),
+	  order => 10_000,
 	};
     Hooks::get_hooks("delete_background_images")->add
 	    (sub {

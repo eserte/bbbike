@@ -29,17 +29,19 @@ use BBBikeProcUtil qw(double_forked_exec);
 
 sub register {
     _create_images();
-    $main::info_plugins{__PACKAGE__ . "_MerkaartorCmdline"} =
-	{ name => "Merkaartor (via Kommandozeile)",
-	  using_current_region => 1,
-	  callback => sub { merkaartor_via_cmdline(@_) },
-	  ($images{Merkaartor} ? (icon => $images{Merkaartor}) : ()),
-	};
     $main::info_plugins{__PACKAGE__ . "_JOSMCmdline"} =
 	{ name => "JOSM (via Kommandozeile)",
 	  using_current_region => 1,
 	  callback => sub { josm_via_cmdline(@_) },
 	  ($images{JOSM} ? (icon => $images{JOSM}) : ()),
+	  order => -102,
+	};
+    $main::info_plugins{__PACKAGE__ . "_MerkaartorCmdline"} =
+	{ name => "Merkaartor (via Kommandozeile)",
+	  using_current_region => 1,
+	  callback => sub { merkaartor_via_cmdline(@_) },
+	  ($images{Merkaartor} ? (icon => $images{Merkaartor}) : ()),
+	  order => -101,
 	};
     $main::info_plugins{__PACKAGE__ . "_MerkaartorURL"} =
 	{ name => "Merkaartor/JOSM (via URL)",
@@ -48,6 +50,7 @@ sub register {
 	  callback_3_std => sub { merkaartor_url(@_) },
 	  allmaps => 0, # do not show in allmaps list
 	  ($images{Merkaartor} ? (icon => $images{Merkaartor}) : ()),
+	  order => -100,
 	};
 }
 
