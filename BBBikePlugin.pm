@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikePlugin.pm,v 1.20 2008/02/28 20:52:29 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2006,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +14,7 @@
 package BBBikePlugin;
 use strict;
 use vars qw($VERSION %plugins);
-$VERSION = 0.02;
+$VERSION = 0.03;
 
 {
     package BBBikePlugin::Plugin;
@@ -93,9 +92,14 @@ sub _find_all_plugins_perl {
     require File::Find;
     my @p;
     my $wanted = sub {
-	if (   $File::Find::name =~ m{^\Q$topdir\E/projects/} # e.g. the directories for live bbbike.de deployments
-	    || $File::Find::name =~ m{^\Q$topdir\E/BBBike-\d+\.\d+(-DEVEL)?/} # distdir
-	    || $File::Find::name =~ m{/(CVS|RCS|\.svn|\.git)/}) {
+	if (   $File::Find::name =~ m{^\Q$topdir\E/projects(/|$)} # e.g. the directories for live bbbike.de deployments
+	    || $File::Find::name =~ m{^\Q$topdir\E/BBBike-\d+\.\d+(-DEVEL)?(/|$)} # distdir
+	    || $File::Find::name =~ m{^\Q$topdir\E/(babybike|blib|c|cache|cdrom|cover_db|distfiles|doc|html|images|java|nytprof|port|t|tcl|tmp|vbbbike)(/|$)} # various non-code directories
+	    || $File::Find::name =~ m{^\Q$topdir\E/data(_.*)?(/|$)} # all kind of data directories
+	    || $File::Find::name =~ m{^\Q$topdir\E/misc/gps_data(/|$)} # convention for private gps data
+	    || $File::Find::name =~ m{^\Q$topdir\E/misc/download(/|$)} # convention for downloaded files
+	    || $File::Find::name =~ m{^\Q$topdir\E/(ext|lib/5\.\d+\.\d+)(/|$)} # skip uninstalled and installed XS modules (would need another find strategy anyway here, to use only the correct perl version/arch)
+	    || $File::Find::name =~ m{/(CVS|RCS|\.svn|\.git)(/|$)}) {
 	    $File::Find::prune = 1;
 	    return;
 	}
