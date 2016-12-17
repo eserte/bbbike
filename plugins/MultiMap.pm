@@ -532,7 +532,7 @@ sub showmap_bvgstadtplan {
 sub showmap_url_deinplan_leaflet {
     my(%args) = @_;
     my $scale = int(17 - log(($args{mapscale_scale})/2863)/log(2) + 0.5);
-    if ($scale > 17) { $scale = 17 }
+    if ($scale > 16) { $scale = 16 }
     'http://m.deinplan.de/map.php#' . $scale . '/' . $args{py} . '/' . $args{px};
 }
 
