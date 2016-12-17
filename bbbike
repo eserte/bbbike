@@ -15018,7 +15018,7 @@ sub hypertext_widget {
 
     $info_text->tagConfigure("bold", -font => $font{'bold'});
     $info_text->tagConfigure("fixed", -font => $font{'fixed'});
-    $info_text->tagConfigure("iconindent", -lmargin1 => 16 + 2);
+    $info_text->tagConfigure("iconindent", -lmargin1 => 16 + 4);
 
     $info_text;    
 }
