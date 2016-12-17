@@ -14383,7 +14383,7 @@ sub show_info {
 		}
 		if ($mapserver_logo_photo) {
 		    $info_text->imageCreate("end", -image => $mapserver_logo_photo,
-					    -align => "bottom", -padx => 2, -pady => 2);
+					    -align => "bottom", -padx => 2, -pady => 1);
 		}
 		$info_text->insert("end", $mapserver_label, ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
 		$show_url->($linkcount, $url);
@@ -14393,7 +14393,7 @@ sub show_info {
 		if ($advanced && !$is_local) {
 		    if ($mapserver_logo_photo) {
 			$info_text->imageCreate("end", -image => $mapserver_logo_photo,
-						-align => "bottom", -padx => 2, -pady => 2);
+						-align => "bottom", -padx => 2, -pady => 1);
 		    }
 		    $info_text->insert("end", $mapserver_label . " (kurzer Link)",
 				       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
