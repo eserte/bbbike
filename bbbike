@@ -14440,7 +14440,7 @@ sub show_info {
 		    if ($is_first) {
 			my $zielname_e = $info_text->Entry(-textvariable => \$zielname,
 							   -width => 10);
-			$info_text->insert("end", " Zielname:");
+			$info_text->insert("end", " " . M("Zielname") . ":");
 			$info_text->windowCreate("end", -window => $zielname_e);
 			$is_first = 0;
 		    }
@@ -14821,19 +14821,19 @@ sub show_info {
 	    my $sunset_nautical  = $get_sun_set->(-12);
 	    my $sunset_astro     = $get_sun_set->(-15);
 
-	    $info_text->insert("end", "\nSonnenaufgang/-untergang\n", "bold");
+	    $info_text->insert("end", "\n" . M("Sonnenaufgang/-untergang") . "\n", "bold");
 	    $info_text->insert("end", <<EOF);
-Sonnenaufgang:\t$sunrise_real
-Dämmerung ab:
-  bürgerliche:\t$sunrise_civil
-  nautische:\t$sunrise_nautical
-  astronomische:\t$sunrise_astro
+@{[ M("Sonnenaufgang") ]}:\t$sunrise_real
+@{[ M("Dämmerung ab") ]}:
+  @{[ M("bürgerliche") ]}:\t$sunrise_civil
+  @{[ M("nautische") ]}:\t$sunrise_nautical
+  @{[ M("astronomische") ]}:\t$sunrise_astro
 
-Sonnenuntergang:\t$sunset_real
-Dämmerung bis:
-  bürgerliche:\t$sunset_civil
-  nautische:\t$sunset_nautical
-  astronomische:\t$sunset_astro
+@{[ M("Sonnenuntergang") ]}:\t$sunset_real
+@{[ M("Dämmerung bis") ]}:
+  @{[ M("bürgerliche") ]}:\t$sunset_civil
+  @{[ M("nautische") ]}:\t$sunset_nautical
+  @{[ M("astronomische") ]}:\t$sunset_astro
 
 EOF
 	};
