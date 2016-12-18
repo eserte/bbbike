@@ -219,6 +219,8 @@ Math::Round	- Für downloadosm -round
 
 DateTime::Event::Easter	- Für Feiertagsberechnungen in temp_blockings_tasks
 
+CGI 3.46	- CGI-Handling, URL-Berechnungen
+
 Module::Metadata	- Information zu installierten Modulen für API-Aufrufe
 
 Plack	- Basis für die PSGI-Anwendung

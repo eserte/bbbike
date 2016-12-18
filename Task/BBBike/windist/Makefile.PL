@@ -37,6 +37,7 @@ WriteMakefile(
 	'Geo::Coder::Bing'    => 0.10, # Geocoding über Bing
 	'Geo::Coder::OSM'     => 0, # Geocoding mit OpenStreetMap-Daten
 	'Text::Unidecode'     => 0, # Für das Neu-Erzeugen der .bbd-Dateien in data; Fallback für internationale Texte in PDFs
+	'CGI'                 => 3.46, # CGI-Handling, URL-Berechnungen
 	'Tie::Handle::Offset' => 0, # Für die schnelle Straßen+Hausnummernsuche
 	'Search::Dict'        => 1.07, # Für die schnelle Straßen+Hausnummernsuche
 	'Unicode::Collate'    => 0.60, # Für die schnelle Straßen+Hausnummernsuche

@@ -273,10 +273,10 @@ my @req_table =
    'Für Feiertagsberechnungen in temp_blockings_tasks'],
 
   # CGI 3.43 which comes with Debian has a couple of problems (self
-  # urls have port, encoding problems with params...)
-  (!eval { require CGI; $CGI::VERSION < 3.43 || $CGI::VERSION >= 3.46 } ?
-   [qw/CGI		3.46	all	2	cgi/,
-    'CGI-Handling'] : ()),
+  # urls have port, encoding problems with params...). 3.46 and
+  # later is OK again
+  [qw/CGI		3.46	all	2|4	cgi/,
+    'CGI-Handling, URL-Berechnungen'],
   [qw/Module::Metadata	0	all	2	cgi/,
    'Information zu installierten Modulen für API-Aufrufe'],
 

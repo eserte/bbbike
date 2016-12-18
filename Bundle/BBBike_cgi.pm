@@ -69,6 +69,8 @@ WWW::Mechanize	- Für Testen des CGI-Interfaces
 
 WWW::Mechanize::FormFiller	- Für Testen des CGI-Interfaces
 
+CGI 3.46	- CGI-Handling, URL-Berechnungen
+
 Module::Metadata	- Information zu installierten Modulen für API-Aufrufe
 
 HTTP::Date	- Für If-Modified-Since-Handling in BBBikeDataDownloadCompat (mod_perl)
