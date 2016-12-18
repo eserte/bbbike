@@ -19,7 +19,9 @@ my $action = shift;
 if (!$action) {
     die "Please specify an action";
 } elsif ($action eq 'bbbike-strawberry-dist') {
-    my $bbbikever = `perl -I../.. -MBBBikeVar -e 'print \$BBBike::WINDOWS_VERSION'`;
+    unshift @INC, $bbbikesrc_dir;
+    require BBBikeVar;
+    my $bbbikever = do { no warnings 'once'; $BBBike::WINDOWS_VERSION };
     my $cmd = "tpage --debug=undef --define VERSION=$bbbikever --define BBBIKEWINDIST=$bbbikewindist --eval_perl bbbike.tpl.iss > bbbike.iss~";
     system $cmd;
     die "Command $cmd failed" if $? != 0;
