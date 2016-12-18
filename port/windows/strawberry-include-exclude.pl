@@ -17,10 +17,12 @@ use warnings;
 use FindBin;
 use lib "$FindBin::RealBin/inc"; # for Algorithm::IncludeExclude
 use Algorithm::IncludeExclude;
-use File::Basename qw(dirname);
+use File::Basename qw(dirname basename);
 use File::Copy qw(cp);
 use File::Path qw(mkpath);
 use Getopt::Long;
+
+our $VERSION = '0.02';
 
 my($src,$dest);
 my $doit;
@@ -31,10 +33,11 @@ GetOptions("src=s" => \$src,
 	   "dest=s" => \$dest,
 	   "doit!" => \$doit,
 	   "fl=s" => \$filelist,
-	   "v" => \$v,
+	   "v|verbose" => \$v,
+	   "version" => sub { print basename($0) . " $VERSION\n"; exit },
 	   "allow-shadowed" => \$allow_shadowed,
 	  )
-    or die "usage?";
+    or die "usage: $0 [-src dir | -fl filelist] [-dest dir] [-doit] [-v] [-allow-shadowed]\n";
 
 my $say = !$doit || $v;
 my $do  =  $doit;
@@ -322,8 +325,11 @@ while(<$fh>) {
 			print STDERR "cp $srcpath -> $destpath\n";
 		    }
 		    if ($do) {
-			# XXX preserve permissions?
-			# XXX fails if trying to overwrite an existing file without w bit
+			if (-e $destpath && !-w $destpath) {
+			    # make sure the w bit is set
+			    chmod 0644, $destpath;
+			}
+			# cp will preserve permissions
 			cp $srcpath, $destpath
 			    or do {
 				if (-e $destpath) {
