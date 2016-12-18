@@ -73,6 +73,7 @@ my %exclude;
 my $ie = Algorithm::IncludeExclude->new;
 $ie->include;
 $ie->exclude('c');
+$ie->include(qw(c bin libdb-6.2_.dll));   # needed by DB_File
 $ie->include(qw(c bin libexpat-1_.dll));
 #$ie->include(qw(c bin libiconv-2_.dll));
 $ie->include(qw(c bin libjpeg-8_.dll));   # probably needed by Tk, version in 5.14.x
