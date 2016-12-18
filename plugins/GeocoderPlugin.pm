@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007,2008,2010,2011,2013,2014,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2008,2010,2011,2013,2014,2015,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION $geocoder_toplevel);
-$VERSION = 3.04;
+$VERSION = 3.05;
 
 BEGIN {
     if (!eval '
@@ -440,6 +440,7 @@ sub geocoder_dialog {
 			    for my $_api (sort { ($apis{$b}->{include_multi_master}||0) <=> ($apis{$a}->{include_multi_master}||0) } keys %apis) {
 				my $gc = $apis{$_api};
 				next if !$gc->{include_multi};
+				next if $gc->{devel_only} && !$main::devel_host;
 				my $location = eval {
 				    $do_geocode->($gc, $get_loc->());
 				};
