@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.06';
+$VERSION = '0.07';
 
 use vars qw(%images);
 
@@ -143,7 +143,7 @@ sub merkaartor_via_cmdline {
 
 sub josm_via_cmdline {
     if (!is_in_path 'josm') {
-	main::status_message("merkaartor ist nicht installiert.", "die");
+	main::status_message("josm ist nicht installiert.", "die");
     }
     my($minx,$miny,$maxx,$maxy) = main::get_visible_map_bbox_polar();
     # [--download=]minlat,minlon,maxlat,maxlon
