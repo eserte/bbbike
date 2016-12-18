@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2012,2013,2014,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2012,2013,2014,2015,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package BBBikeOsmUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.20;
+$VERSION = 1.21;
 
 use vars qw(%osm_layer %images @cover_grids %seen_grids $last_osm_file $defer_restacking
 	  );
@@ -189,7 +189,7 @@ sub get_visible_area_constrained_tiles {
     my @elsewhere_tiles;
 
     open my $fh, "-|",
-	$^X, bbbike_root() . "/miscsrc/downloadosm", "-xstep", XSTEP, "-ystep", YSTEP, "-round", "-report", "-o", $elsewhere_dir, $x0,$y0,$x1,$y1
+	$^X, bbbike_root() . "/miscsrc/downloadosm", "-xstep", XSTEP, "-ystep", YSTEP, "-round", "-report", "-o", $elsewhere_dir, '--', $x0,$y0,$x1,$y1
 	    or die "Can't run downloadosm: $!";
     while(<$fh>) {
 	chomp;
