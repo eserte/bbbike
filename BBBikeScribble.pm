@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeScribble.pm,v 1.6 2005/04/05 22:29:28 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +15,7 @@ package BBBikeScribble;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.07';
 
 package Tk::Babybike; # XXX
 no strict; # XXX make strict!!!
@@ -42,11 +41,11 @@ $scribble_color = 'blue'
     if !@scribble_colors;
 $show_scribble = 1
     if !defined $show_scribble;
-$scribble_file = "/tmp/scribble.canvas"
+$scribble_file = "$main::tmpdir/scribble.canvas"
     if !defined $scribble_file;
-$scribble_bbd  = "/tmp/scribble.bbd"
+$scribble_bbd  = "$main::tmpdir/scribble.bbd"
     if !defined $scribble_bbd;
-$scribble_desc  = "/tmp/scribble.desc"
+$scribble_desc = "$main::tmpdir/scribble.desc"
     if !defined $scribble_desc;
 $show_scribble_labels = 1
     if !defined $show_scribble_labels;
