@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.07';
+$VERSION = '0.08';
 
 use vars qw(%images);
 
@@ -179,12 +179,22 @@ sub send_url {
 Fehler: @{[ $resp->status_line ]}.
 
 Falls Merkaartor verwendet werden soll:
-Vielleicht läuft Merkaartor nicht? Bitte starten!
+* Vielleicht läuft Merkaartor nicht? Bitte starten!
+* Vielleicht ist die Fernsteuerung in Merkaartor
+  nicht aktiviert? Bitte hier ändern:
+  * Deutsche Variante:
+    Werkzeuge > Einstellungen > Netzwerk
+    > JOSM-kompatiblen Server auf Port 8111 aktivieren
+  * Englische Variante:
+    Tools > Preferences > Network
+    > Enable JOSM-compatible local server on port 8111
 
 Falls JOSM verwendet werden soll:
-Vielleicht läuft JOSM nicht? Bitte starten!
-Vielleicht ist die Fernsteuerung in JOSM nicht aktiviert? Bitte über die Einstellung aktivieren.
-Für ältere JOSM-Version (älter als 3715) muss das RemoteControl-Plugin installiert sein.
+* Vielleicht läuft JOSM nicht? Bitte starten!
+* Vielleicht ist die Fernsteuerung in JOSM
+  nicht aktiviert? Bitte über die Einstellung aktivieren.
+* Für ältere JOSM-Versionen (älter als 3715)
+  muss das RemoteControl-Plugin installiert sein.
 EOF
 	return;
     }
