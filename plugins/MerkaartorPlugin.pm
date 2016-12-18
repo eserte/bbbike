@@ -154,7 +154,8 @@ sub josm_via_cmdline {
 
 sub merkaartor_url {
     my($minx,$miny,$maxx,$maxy) = main::get_visible_map_bbox_polar();
-    my $url = sprintf 'http://localhost:8111/load_and_zoom?left=%s&right=%s&top=%s&bottom=%s', # &select=way65780504
+    # localhost:8111 does not seem to work on Windows
+    my $url = sprintf 'http://127.0.0.1:8111/load_and_zoom?left=%s&right=%s&top=%s&bottom=%s', # &select=way65780504
 	$minx, $maxx, $maxy, $miny;
     $url;
 }
