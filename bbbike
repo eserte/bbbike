@@ -19905,6 +19905,15 @@ sub status_message {
 	    }
 
 	    my $Dialog = LongOrNormalDialog();
+	    if ($Dialog eq 'LongDialog') {
+		my $msg_lines = $msg =~ tr/\n/\n/;
+		if ($msg_lines > 4) {
+		    if ($msg_lines > 15) {
+			$msg_lines = 15;
+		    }
+		    $args{-height} = $msg_lines;
+		}
+	    } # normal Dialog should not get a -height limitation, as this could crop the message text
 	    $status_message_dialog = $top->$Dialog(%args);
 	    # KDE's window manager seems to have a bug (?)
 	    # that the dialog might be behind other
