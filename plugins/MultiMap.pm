@@ -50,6 +50,7 @@ sub register {
 	  callback => sub { showmap_wikimapia(@_) },
 	  callback_3_std => sub { showmap_url_wikimapia(@_) },
 	  ($images{WikiMapia} ? (icon => $images{WikiMapia}) : ()),
+	  order => 8000,
 	};
     $main::info_plugins{__PACKAGE__ . '_OpenStreetMap'} =
 	{ name => 'OpenStreetMap',
@@ -91,12 +92,14 @@ sub register {
 	  callback => sub { showmap_geocaching(@_) },
 	  callback_3_std => sub { showmap_url_geocaching(@_) },
 	  ($images{Geocaching} ? (icon => $images{Geocaching}) : ()),
+	  order => 8800,
 	};
     $main::info_plugins{__PACKAGE__ . "_YahooDe"} =
 	{ name => "yahoo.de",
 	  callback => sub { showmap_yahoo_de(@_) },
 	  callback_3_std => sub { showmap_url_yahoo_de(@_) },
 	  ($images{YahooDe} ? (icon => $images{YahooDe}) : ()),
+	  order => 8900,
 	};
     $main::info_plugins{__PACKAGE__ . "_Bing_Birdseye"} =
 	{ name => "bing (Bird's eye)",
