@@ -14668,6 +14668,20 @@ sub show_info {
 	    $show_url->($linkcount, $url);
 	    $info_text->insert("end", "\n");
 	    $linkcount++;
+
+	    if ($city_obj->cityname eq 'Berlin') {
+		my $scale = 17 - log(($mapscale_scale)/3000)/log(2);
+		my $url = sprintf "http://tools.wmflabs.org/historicmaps/berlin/index.html#map=%d/%s/%s/0", $scale, $py, $px;
+		if ($wikipedia_photo) {
+		    $info_text->imageCreate("end", -image => $wikipedia_photo,
+					    -align => "bottom", -padx => 2, -pady => 1);
+		}
+		$info_text->insert('end', 'Historic maps Berlin',
+				   ["link$linkcount", ($need_indentation ? 'iconindent' : ())]);
+		$show_url->($linkcount, $url);
+		$info_text->insert("end", "\n");
+		$linkcount++;
+	    }
 	}
 
 	my($px0,$py0,$px1,$py1) = get_current_bbox_as_wgs84();
