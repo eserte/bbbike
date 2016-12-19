@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2008,2012,2013,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2008,2012,2013,2015,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ push @ISA, 'GPS';
 
 use strict;
 use vars qw($VERSION $GPSBABEL $DEBUG);
-$VERSION = '1.19';
+$VERSION = '1.20';
 
 use File::Basename qw(dirname);
 use BBBikeUtil qw(is_in_path bbbike_root);
@@ -39,7 +39,7 @@ my %magics =
      'gpx' => ['^('.$GPS::_UTF8_BOM.')?<\?xml\s+'],
     );
 
-my $current_gpsbabel_version = '1.5.2'; # January 2015
+my $current_gpsbabel_version = '1.5.3'; # December 2016
 
 sub magics {
     map { @$_ } values %magics;
@@ -162,7 +162,7 @@ sub gpsbabel_available {
     if ($^O eq 'MSWin32') {
 	# Maybe bundled together with BBBike:
 	$ENV{PATH} .= ";" . dirname(bbbike_root()) . "\\gpsbabel";
-	# There's no fixed installation location for gpsbabel under Windows:
+	# With 1.5.3 gpsman comes with a proper Windows installer
 	$ENV{PATH} .= ";" . $self->gpsbabel_recommended_path;
     } else {
 	$ENV{PATH} .= ";" . $self->gpsbabel_recommended_path;
@@ -183,7 +183,8 @@ sub gpsbabel_available {
 # May be called also as a static method
 sub gpsbabel_recommended_path {
     if ($^O eq 'MSWin32') {
-	"C:\\Program files\\gpsbabel-$current_gpsbabel_version";
+	require Win32Util;
+	Win32Util::get_program_folder() . "\\gpsbabel";
     } else {
 	"$ENV{HOME}/.bbbike/external/gpsbabel-$current_gpsbabel_version";
     }

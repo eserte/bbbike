@@ -10014,16 +10014,11 @@ sub send_route_to_gps {
 	    if (GPS::Gpsbabel->gpsbabel_available) {
 		gps_interface($gps_transfer, -noloading => 1);
 	    } else {
-		my $recommended_path = GPS::Gpsbabel->gpsbabel_recommended_path;
 		my $download_location = GPS::Gpsbabel->gpsbabel_download_location;
 		# XXX use hypertext_widget
 		status_message(<<EOF, "die");
 Das Programm gpsbabel wird zur Übertragung zum GPS-Gerät benötigt und muss noch installiert werden. gpsbabel gibt es hier zum Download:
 $download_location
-
-Die heruntergeladene .zip-Datei sollte im Verzeichnis
-$recommended_path
-ausgepackt werden.
 EOF
 	    }
 	} elsif ($gps_transfer eq 'BBBikeGPS::MapSourceSend') {
