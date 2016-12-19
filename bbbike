@@ -552,6 +552,7 @@ $gps_waypointlength = 10;
 $gps_waypointcharset = 'ascii';
 $gps_needuniqueroutenumber = 0;
 $gps_routenamelength = 13;
+$gps_transfer = 'BBBikeGPS::MountedDevice';
 
 ### Fonts
 $standard_height = 12;
@@ -5364,6 +5365,18 @@ dazu verwendet wird",
 	  longhelp => M"Typischerweise 13 bei älteren Garmin-Geräten, aber neuere Geräte können längere Namen verwenden (etrex 30 z.B. 36 Zeichen)",
 	  var => \$gps_routenamelength,
 	 ],
+	 ['gpstransfer','=s','BBBikeGPS::MountedDevice',
+	  strict => 1,
+	  choices => [
+		      [M('Massenspeicher') => 'BBBikeGPS::MountedDevice'],
+		      [  'GPSBabel',       => 'BBBikeGPS::GpsbabelSend'],
+		      [  'MapSource'       => 'BBBikeGPS::MapSourceSend'],
+		      [M('Seriell/USB')    => 'DirectGarmin'],
+		     ],
+	  label => M"GPS-Transfer",
+	  longhelp => M"Methode für das Übertragen von GPS-Routen/Tracks auf ein GPS-Gerät.",
+	  var => \$gps_transfer,
+	 ],  
 	 ['gpsdevice','=s',($os eq 'win'   ? "USB" :
 			    $os_bsd        ? '/dev/cuaa0' :
 			    $^O eq 'linux' ? '/dev/ttyUSB0' 
@@ -5373,7 +5386,10 @@ dazu verwendet wird",
 		      : $os_bsd      ? [map {  "/dev/cuaa$_"		       } (0..3) ]
 		      :                [map { ($_."0", $_."1", $_."2", $_."3") } ("/dev/ttyUSB", "/dev/usb/ttyUSB", "/dev/tts/USB", "/dev/ttyS") ]
 		     ),
-	  label => M"GPS-Device", var => \$gps_device],
+	  label => M"GPS-Device",
+	  longhelp => M"Wird nur bei der Auswahl Seriell/USB benötigt",
+	  var => \$gps_device,
+	 ],
 	 ['gpsuploadhist','!',0, var => \$do_gps_upload_hist,
 	  label => M"GPS-Uploads persistent machen",
 	  longhelp => Mfmt("GPS-Routen werden bei Uploads automatisch als BBR-Dateien im Verzeichnis %s gespeichert.", $gps_upload_dir),
@@ -9992,29 +10008,16 @@ sub send_route_to_gps {
 	status_message(M"Keine Route", "infodlg");
 	return;
     }
-    if ($os eq 'win') {
-	# Assume that the windows distribution has gpsbabel bundled,
-	# so always prefer this one
-	#
-	# XXX Nowadays the file could be directly copied to a mounted
-	# garmin device. This should be the preferred code path. See
-	# also GPS::BBBikeGPS::MountedDevice, which needs a rewrite
-	# for Windows.
-	require GPS::Gpsbabel;
-	if (GPS::Gpsbabel->gpsbabel_available) {
-	    gps_interface('BBBikeGPS::GpsbabelSend', -noloading => 1);
-	} else {
-	    require BBBikeGPS;
-	    if (GPS::BBBikeGPS::MapSourceSend->has_mapsource) {
-		gps_interface('BBBikeGPS::MapSourceSend', -noloading => 1);
+    if ($gps_transfer) {
+	if ($gps_transfer eq 'BBBikeGPS::GpsbabelSend') {
+	    require GPS::Gpsbabel;
+	    if (GPS::Gpsbabel->gpsbabel_available) {
+		gps_interface($gps_transfer, -noloading => 1);
 	    } else {
-		if ($gps_device ne 'USB' && eval { require GPS::DirectGarmin; 1 }) {
-		    gps_interface('DirectGarmin');
-		} else {
-		    my $recommended_path = GPS::Gpsbabel->gpsbabel_recommended_path;
-		    my $download_location = GPS::Gpsbabel->gpsbabel_download_location;
-		    # XXX use hypertext_widget
-		    status_message(<<EOF, "die");
+		my $recommended_path = GPS::Gpsbabel->gpsbabel_recommended_path;
+		my $download_location = GPS::Gpsbabel->gpsbabel_download_location;
+		# XXX use hypertext_widget
+		status_message(<<EOF, "die");
 Das Programm gpsbabel wird zur Übertragung zum GPS-Gerät benötigt und muss noch installiert werden. gpsbabel gibt es hier zum Download:
 $download_location
 
@@ -10022,11 +10025,19 @@ Die heruntergeladene .zip-Datei sollte im Verzeichnis
 $recommended_path
 ausgepackt werden.
 EOF
-		}
 	    }
+	} elsif ($gps_transfer eq 'BBBikeGPS::MapSourceSend') {
+	    require BBBikeGPS;
+	    if (GPS::BBBikeGPS::MapSourceSend->has_mapsource) {
+		gps_interface($gps_transfer, -noloading => 1);
+	    } else {
+		status_message('MapSource is nicht verfügbar.', 'die');
+	    }
+	} else {
+	    gps_interface($gps_transfer);
 	}
     } else {
-	gps_interface('DirectGarmin');
+	main::status_message("Es ist keine GPS-Transfer-Methode definiert. Bitte in den Einstellungen unter GPS > GPS-Transfer definieren.", "error");
     }
 }
 
