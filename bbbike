@@ -18149,19 +18149,8 @@ sub show_route_strname {
 	    $toplevel{strlist}->withdraw;
 	} else {
 	    my $was_withdrawn = $toplevel{strlist}->state ne "normal";
-	    #XXX maybe combine with code below
 	    if ($was_withdrawn) {
-		if (eval {require Tk::Placement; 1; }) {
-		    # XXX use placer also for other toplevels --- replace
-		    # all Popup(@popup_style) calls?
-		    warn "Use Tk::Placement, yet experimental..." if $devel_host;
-		    Tk::Placement::placer($toplevel{strlist}, -screen => $c,
-					  -addx => 20, -addy => 25, # XXX for fvwm
-					  );
-		}
 		$toplevel{strlist}->deiconify;
-		# raise nur ausführen, wenn es wirklich was zu sehen gibt
-		#$toplevel{strlist}->raise;
 	    }
 
 	}
@@ -18593,14 +18582,13 @@ sub show_route_strname {
     $endb->focus;
     #$t->Popup(@popup_style);
 
-    my $was_withdrawn = $t->state ne "normal";
-    if ($was_withdrawn) {
+    {
 	if (eval {require Tk::Placement; 1; }) {
 	    # XXX use placer also for other toplevels --- replace
 	    # all Popup(@popup_style) calls?
-	    warn "Use Tk::Placement, yet experimental...";
+	    warn "Use Tk::Placement, yet experimental..." if $devel_host;
 	    Tk::Placement::placer($t, -screen => $c,
-				  -addx => 20, -addy => 25, # XXX for fvwm
+				  -addx => 20, -addy => 25 + 27, # XXX for fvwm and infobar
 				 );
 	} else {
 	    $t->withdraw;
