@@ -3812,16 +3812,7 @@ userdel	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
          'type' => 'gesperrt',
          'until' => 1483225199
        },
-       {
-         'data' => '#: last_checked: 2016-08-20
-	2::inwork 24897,11083 24899,11044 24905,10955 24913,10884 24919,10818 24922,10785 24923,10774
-',
-         'from' => undef,
-         'id' => 2800,
-         'text' => 'Theodorstr.: Bauarbeiten, Straße kann gesperrt sein',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,

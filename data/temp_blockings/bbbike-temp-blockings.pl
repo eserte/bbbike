@@ -25236,11 +25236,11 @@ userdel	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1482170631, # undef, # XXX
        text  => 'Theodorstr.: Bauarbeiten, Straße kann gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2016-08-20
+# REMOVED (laut osm mittlerweile offen) --- : last_checked: 2016-08-20
 	2::inwork 24897,11083 24899,11044 24905,10955 24913,10884 24919,10818 24922,10785 24923,10774
 EOF
      },
