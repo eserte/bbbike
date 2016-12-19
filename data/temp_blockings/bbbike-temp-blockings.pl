@@ -21428,7 +21428,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.freizeittipp.com/pages/veranstaltungen/detail-1792910-Sch%C3%B6neberger-Mai-und-Spargelfest-2016-Berlin.php',
        data  => <<EOF,
-userdel	2::temp 6244,8597 6339,8644 6454,8653
+userdel	2::temp 6230,8602 6313,8638 6454,8653
 EOF
      },
      { from  => 1368334800, # 2013-05-12 07:00

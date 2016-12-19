@@ -226,7 +226,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: XXX außerdem gibt es eine Drucksache für die Absenkung des Bordsteins am Mittelstreifen
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7421
 #: osm_watch: way id="25219757" version="11"
-#: osm_watch: way id="4600236" version="14"
+#: osm_watch: way id="4600236" version="15"
 #: last_checked: 2016-09-17
 #: check_frequency: 90d
 Stromstr., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,13517 6228,13324
@@ -1566,8 +1566,10 @@ Nikolsburger Platz: wurde die Situation für Radfahrer verbessert (Bordsteine?)?	
 #: XXX bei osm: bicycle=yes
 Nikolsburger Platz: existiert auf der westlichen Seite eine Verbindung für Radfarer?	? 5307,9664 5314,9588
 # 
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/fahr-rat-18-sitzung.pdf
-Spichernstr.: besteht die Radwegbenutzungspflicht noch?	? 5764,10322 5700,10226 5463,9961
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/fahr-rat-18-sitzung.pdf vvv
+Spichernstr.: besteht die Radwegbenutzungspflicht noch?	?; 5700,10226 5764,10322
+Spichernstr.: besteht die Radwegbenutzungspflicht noch?	?; 5700,10226 5463,9961
+#: by ^^^
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5792
 #: next_check: 2017-01-01

@@ -3210,49 +3210,11 @@ userdel	2::night 17671,13132 17684,13133
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::xmas 9986,13412 10317,13248
-',
-         'from' => 1481842800,
-         'id' => 2517,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              16,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (17.12.2016 - 18.12.2016)',
-         'type' => 'gesperrt',
-         'until' => 1482101999
-       },
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::xmas 11317,14564 11255,14572 11155,14554
-',
-         'from' => 1481972400,
-         'id' => 2521,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              17,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 18. Dezember 2016, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1482084000
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
