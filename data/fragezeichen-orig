@@ -532,6 +532,8 @@ Wuhlewanderweg: wird hier ein Weg auf der östlichen Uferseite errichtet?	?::proj
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.205751.php
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2016/pressemitteilung.519460.php
 #: XXX "Der gesamte Straßenzug von der Danziger Straße bis zur Wisbyer Straße soll bis Ende 2017 fertig gestellt werden."
+#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2016/pressemitteilung.544145.php
+#: XXX "bis voraussichtlich 2018"
 #: last_checked: 2016-12-09 vvv
 #: check_frequency: 30d vvv
 Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 10881,15047 11119,15385
@@ -1010,7 +1012,7 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 # 
 #: by: http://www.bwb.de/content/language1/html/10337.php#11671
 #: osm_watch: way id="75509950" version="11"
-#: last_checked: 2016-12-02
+#: last_checked: 2016-12-20
 #: check_frequency: 60d
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12085,9778 12074,9689 12066,9558
 #: by: ^^^
@@ -1020,7 +1022,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12085,977
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="13"
-#: last_checked: 2016-12-15
+#: last_checked: 2016-12-20
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -1444,6 +1446,11 @@ Brunsbütteler Damm: Radweg wird asphaltiert	?::inwork; -4290,14025 -4759,13992
 #: next_check: 2016-09-15
 Brunsbütteler Damm: Radweg wird asphaltiert	?::projected; -3892,13960 -3937,13975 -4190,14036 -4290,14025
 #
+#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/1795-2016-bav-zu-ds-1879-iv-fussgaengerueberweg_ungarnstrasse_75_sb.pdf
+#: next_check: 2017-06-01
+#: priority: #C
+Ungarnstr.: wird hier ein Zebrastreifen gebaut?	? 7107,16678 7106,16646 7141,16650
+# 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.104719.php
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/fussgaengerueberweg-bismarckstrasse.pdf
 #: priority: #C
@@ -1541,6 +1548,15 @@ Brodersenstr.: Neubau, danach bessere Qualität?	?::projected 6033,19611 5885,199
 #: XXX ^^^
 #: by ^^^
 # 
+#: by: http://www.potsdam.de/sites/default/files/documents/16-_amtsblatt_nov16_dsjs_endfassung.pdf
+#: XXX B-Plan Nr. 52
+#: next_check: 2017-08-01
+Rote Kaserne Ost (Potsdam): ändert sich hier an der Verkehrsflächen etwas?	?::projected -13087,1746 -12969,1800 -13058,1848 -12978,1899
+# 
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2016/ba_vorlage_0011_v_auswertung_beteilig_b_plan_xxi_41b.pdf
+#: next_check: 2017-08-01
+Bebauungsplanverfahren XXI-41b: ändert sich hier an den Wegen etwas?	?::projected 20598,9298 20938,9293 20932,8956 20594,8966 20598,9298
+# 
 #: section ^^^
 #: ignore ^^^
 #
@@ -1558,6 +1574,18 @@ Brodersenstr.: Neubau, danach bessere Qualität?	?::projected 6033,19611 5885,199
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: XXX wo genau?
+#: by: http://www.berlin.de/ba-neukoelln/_assets/dokumente/ba-beschluesse/ba-beschluss-206-16.pdf
+#: next_check: 2017-03-01
+Weserstr.: Fahrradstraße wird eingerichtet	? 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193 12322,9124
+# 
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/15-11-2016_mehr-fahrradstrassen-fuer-pankow.pdf
+#: XXX unklar, ob auch die Route Dunckerstr. - Kollwitzstr. ebenso Fahrradstraße werden könnte
+#: next_check: 2017-05-01
+Stargarder Str.: eventuell wird hier eine Fahrradstraße eingerichtet	? 10953,15787 11086,15772 11158,15739 11301,15668 11418,15587 11502,15527 11595,15460 11682,15397 11852,15281
+# 
+(Tuttlinger Weg - Crailsheimer Str.): Privatstraße existiert hier, Qualität, für alle befahrbar?	? 7046,4354 7071,4431 7127,4441
 # 
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/content/protokoll_der_12._sitzung_fahr_rat.pdf
 Goslaer Ufer: wurde der Gehweg für Radfahrer freigegeben?	?; 4295,13234 4187,13704
@@ -2498,6 +2526,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.334355.php
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7482
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
+#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
 #: last_checked: 2016-12-16
 #: check_frequency: 90d
@@ -3128,6 +3157,10 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: osm_watch: way id="375159766" version="3"
 #: next_check: 2017-06-01
 Alt-Mahlsdorf: entsteht hier eine Ampel? Wird sie für Radfahrer relevant sein?	? 25303,11202 25313,11184 25322,11169
+# 
+#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
+#: next_check: 2018-01-01
+Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 
 #: ignore ^^^
 #: section ^^^

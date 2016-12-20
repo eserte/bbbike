@@ -91,7 +91,7 @@ asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9233,8597 9229,8718
 #: osm_watch: way id="30709741" version="12"
 #: osm_watch: way id="354645896" version="2"
 #: last_checked: 2016-10-10 vvv
-#: next_check: 2016-12-31
+#: next_check: 2016-12-20
 #: source_id: 2147340437
 	RW1;RW3 8680,6322 8661,6169 8642,5998
 #: last_checked ^^^
@@ -506,11 +506,13 @@ die letzten Meter sind benutzungspflichtig	RW1; 10941,15697 10953,15787
 #: XXX laut Tsp von 2016-06-04 Eröffnung im Oktober 2016
 #: XXX laut MoPo vom 2016-11-10 noch immer nicht fertig
 #: by: http://www.tagesspiegel.de/berlin/berlin-spandau-eroeffnungstermin-fuer-freybruecke-steht-jetzt-fest/14988922.html (Eröffnungstermin)
-#: XXX alter Eintrag:	RW2;RW2 -3069,11487 -3173,11520 -3381,11583 -3404,11589
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6281.html (Fertigstellung des nördlichen Geh- und Radwegbereiches)
+#: XXX auf der Brücke asphaltiert
+#: XXX zukünftiger Eintrag:	RW2;RW2 -3069,11487 -3173,11520 -3381,11583 -3404,11589
 #: last_checked: 2016-10-08
-#: next_check: 2016-12-20
+#: next_check: 2017-06-01
 #: priority: #A
-	RW2;RW8 -3069,11487 -3173,11520 -3381,11583 -3404,11589
+	RW8;RW2 -3069,11487 -3173,11520 -3381,11583 -3404,11589
 	RW2;RW2 -3404,11589 -3688,11688 -3707,11693 -4031,11796 -4076,11810
 	RW2;RW -4412,12179 -4500,11937
 #: by: Stefan Klinkusch (Benutzungspflicht):
