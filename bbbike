@@ -3852,17 +3852,14 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		    (-label => $label,
 		     -command => sub {
 			 gps_interface('BBBikeGPS::'.$module, -noloading => 1);
-		     });
-	    } elsif ($module eq 'DirectGarmin') {
-		$svm->command
-		    (-label => $label,
-		     -command => sub { send_route_to_gps() },
-		     -accelerator => 'Ctrl-G',
+		     },
+		     ($module eq $gps_transfer ? (-accelerator => 'Ctrl-G') : ()),
 		    );
 	    } else {
 		$svm->command
 		    (-label => $label,
 		     -command => sub { gps_interface($module) },
+		     ($module eq $gps_transfer ? (-accelerator => 'Ctrl-G') : ()),
 		    );
 	    }
 	} else {
