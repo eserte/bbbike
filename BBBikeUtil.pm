@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -13,7 +13,7 @@
 
 package BBBikeUtil;
 
-$VERSION = 1.36;
+$VERSION = 1.37;
 
 use strict;
 use vars qw(@ISA @EXPORT @EXPORT_OK);
@@ -28,7 +28,7 @@ require Exporter;
 	     kmh2ms
 	     STAT_MODTIME);
 @EXPORT_OK = qw(min max first sum ms2kmh clone bbbike_root
-		s2hms s2hm_or_s save_pwd save_pwd2);
+		s2hms s2hm_or_s save_pwd save_pwd2 uri_with_query);
 
 use constant STAT_MODTIME => 9;
 
@@ -408,6 +408,32 @@ sub save_pwd (&) {
     }
 }
 sub save_pwd2 { BBBikeUtil::SavePwd2->new }
+
+sub uri_with_query {
+    my($uri, $query_array, %args) = @_;
+    my $encoding = delete $args{encoding} || 'utf-8';
+    die "Unhandled arguments: " . join(" ", %args) if %args;
+
+    require Encode;
+    my @query_array;
+    for my $val (@$query_array) {
+	push @query_array, Encode::encode($encoding, $val);
+    }
+
+    if (eval { require URI; 1 }) {
+	my $u = URI->new($uri);
+	$u->query_form(\@query_array);
+	$u->as_string;
+    } else {
+	require CGI;
+	CGI->import('-oldstyle_urls'); # global change!
+	my $q = CGI->new;
+	for(my $i=0; $i<$#query_array; $i+=2) {
+	    $q->param($query_array[$i], $query_array[$i+1]);
+	}
+	$uri . '?' . $q->query_string;
+    }
+}
 
 1;
 

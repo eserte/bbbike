@@ -172,4 +172,48 @@ for my $exec ('perl',
     is $cached_path2, $cached_path1, "Same result for subsequent is_in_path_cached calls ($exec)";
 }
 
+for my $try_mod ('URI', 'CGI') {
+ SKIP: {
+	if ($try_mod eq 'CGI') {
+	    skip "Cannot test CGI.pm operation, Test::Without::Module cannot be loaded", 1
+		if !eval { require Test::Without::Module; 1 };
+	    eval 'use Test::Without::Module qw(URI)'; die $@ if $@;
+	}
+
+	{
+	    my $u = BBBikeUtil::uri_with_query("http://example.com", [foo=>"bar"]);
+	    is $u, 'http://example.com?foo=bar', "uri_with_query, impl $try_mod";
+	}
+
+	{
+	    my $u = BBBikeUtil::uri_with_query("http://example.com", [foo=>"bar", baz=>"blubber"]);
+	    is $u, 'http://example.com?foo=bar&baz=blubber', "uri_with_query, more params, impl $try_mod";
+	}
+
+	{
+	    my $u = BBBikeUtil::uri_with_query("https://example.com", [foo=>"with space"]);
+	    like $u, qr{^\Qhttps://example.com?foo=with\E(\+|%20)\Qspace}, "uri_with_query, with space, impl $try_mod";
+	}
+
+	{
+	    my $u = BBBikeUtil::uri_with_query("https://example.com", [foo=>"B\xfclowstra\xdfe"]);
+	    is $u, 'https://example.com?foo=B%C3%BClowstra%C3%9Fe', "uri_with_query, default encoding, impl $try_mod";
+	}
+
+	{
+	    my $u = BBBikeUtil::uri_with_query("https://example.com", [foo=>"B\xfclowstra\xdfe"], encoding => 'utf-8');
+	    is $u, 'https://example.com?foo=B%C3%BClowstra%C3%9Fe', "uri_with_query, explicit utf-8 encoding, impl $try_mod";
+	}
+
+	{
+	    my $u = BBBikeUtil::uri_with_query("https://example.com", [foo=>"B\xfclowstra\xdfe"], encoding => 'iso-8859-1');
+	    is $u, 'https://example.com?foo=B%FClowstra%DFe', "uri_with_query, explicit latin1 encoding, impl $try_mod";
+	}
+
+	if ($try_mod eq 'CGI') {
+	    eval 'no Test::Without::Module qw(URI)'; die $@ if $@;
+	}
+    }
+}
+
 __END__
