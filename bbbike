@@ -14221,9 +14221,7 @@ sub show_info {
 	    if ($name =~ m{(https?://\S+)}) {
 		$url = $1;
 	    } elsif ($good_link_for_strname) {
-		my $google_url = "http://www.google.com/search?";
-		require CGI;
-		CGI->import('-oldstyle_urls');
+		my $google_url = "http://www.google.com/search";
 		(my $name = $name) =~ s{(str)\.}{$1aße}gi;
 		# XXX duplicated in LuiseBerlin.pm
 		$name =~ s{\[.*\]}{}g; # remove special [...] parts
@@ -14233,8 +14231,8 @@ sub show_info {
 		# better to use something like outside_berlin() in bbbike.cgi
 		my $common_q = ($outside_berlin ? '' : qq{Berliner }) .
 		    qq{"$name"} . (@cityparts ? " ".join(" ",@cityparts) : "");
-		$url        = $google_url . CGI->new({ 'q' => qq{site:de.wikipedia.org $common_q} })->query_string;
-		$common_url = $google_url . CGI->new({ 'q' => $common_q })->query_string;
+		$url        = BBBikeUtil::uri_with_query($google_url, [ 'q' => qq{site:de.wikipedia.org $common_q} ]);
+		$common_url = BBBikeUtil::uri_with_query($google_url, ['q' => $common_q ]);
 	    }
 
 	    if (!$url) {
@@ -14471,18 +14469,13 @@ sub show_info {
 			 });
 
 		    $show_url->($linkcount, sub {
-				    require CGI;
-				    # sigh, ";" still makes problems...
-				    my $zielname = $zielname;
-				    if ($Tk::VERSION >= 804) {
-					$zielname = Encode::encode("iso-8859-1", $zielname);
-				    }
-				    CGI->import('-oldstyle_urls');
-				    my $q = CGI->new({zielc_wgs84 => $wgs84_coords,
-						      zielname    => $zielname,
-						     });
-				    my $url = "$bbbike_cgi_url?" . $q->query_string;
-				    $url;
+				    BBBikeUtil::uri_with_query($bbbike_cgi_url,
+							       [
+								zielc_wgs84 => $wgs84_coords,
+								zielname    => $zielname,
+							       ],
+							       encoding => 'iso-8859-1',
+							      );
 				},
 				$www_link_menu,
 			       );
