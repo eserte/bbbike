@@ -192,7 +192,7 @@ for my $try_mod ('URI', 'CGI') {
 
 	{
 	    my $u = BBBikeUtil::uri_with_query("https://example.com", [foo=>"with space"]);
-	    like $u, qr{^\Qhttps://example.com?foo=with\E(\+|%20)\Qspace}, "uri_with_query, with space, impl $try_mod";
+	    is $u, 'https://example.com?foo=with%20space', "uri_with_query, with space, impl $try_mod";
 	}
 
 	{
@@ -208,6 +208,11 @@ for my $try_mod ('URI', 'CGI') {
 	{
 	    my $u = BBBikeUtil::uri_with_query("https://example.com", [foo=>"B\xfclowstra\xdfe"], encoding => 'iso-8859-1');
 	    is $u, 'https://example.com?foo=B%FClowstra%DFe', "uri_with_query, explicit latin1 encoding, impl $try_mod";
+	}
+
+	{
+	    my $u = BBBikeUtil::uri_with_query("https://example.com", [dangerous=>"<&>"]);
+	    is $u, 'https://example.com?dangerous=%3C%26%3E', "uri_with_query, special html chars, impl $try_mod";
 	}
 
 	if ($try_mod eq 'CGI') {

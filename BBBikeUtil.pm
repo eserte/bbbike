@@ -421,9 +421,10 @@ sub uri_with_query {
     }
 
     if (eval { require URI; 1 }) {
-	my $u = URI->new($uri);
+	my $u = URI->new("", "http");
 	$u->query_form(\@query_array);
-	$u->as_string;
+	(my $q = $u->query) =~ s{\+}{%20}g; # friendly for javascript's decodeURIComponent
+	$uri . '?' . $q;
     } else {
 	require CGI;
 	CGI->import('-oldstyle_urls'); # global change!
