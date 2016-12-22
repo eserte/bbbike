@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +16,7 @@ package KaupertsPlugin;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '1.31';
+$VERSION = '1.32';
 
 BEGIN {
     if (!caller(2)) {
@@ -33,12 +33,11 @@ EOF
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
 
-use CGI qw();
-use Encode;
-
 use PLZ;
 use Strassen::Strasse;
 use WWWBrowser;
+
+use BBBikeUtil qw(uri_with_query);
 
 use vars qw($DEBUG);
 $DEBUG = 1;
@@ -127,9 +126,12 @@ sub launch_street_url {
 #     my $url = 'http://berlin.kauperts.de/Strassen/' . join('-', $street, $zip, $city);
 
     ## using Kauperts own search
-    CGI->import('oldstyle_urls');
-    my $url = 'http://berlin.kauperts.de/search?' . CGI->new({query => Encode::encode("utf-8", $street . (defined $zip ? " " . $zip : ''))})->query_string;
-
+    $street =~ s{([sS])tr\.$}{$1traße};
+    my $url = uri_with_query
+	(
+	 'http://berlin.kauperts.de/search',
+	 [query => $street . (defined $zip ? " " . $zip : '')],
+	);
     start_browser($url);
 }
 
@@ -139,21 +141,22 @@ sub start_browser {
     WWWBrowser::start_browser($url);
 }
 
-sub kill_umlauts {
-    my $s = shift;
-    my $kill_umlauts = {"ä" => "ae",
-			"ö" => "oe",
-			"ü" => "ue",
-			"ß" => "ss",
-			"Ä" => "Ae",
-			"Ö" => "Oe",
-			"Ü" => "Ue",
-			"é" => "e",
-		       };
-    my $left_part = join "", keys %$kill_umlauts;
-    $s =~ s{([$left_part])}{$kill_umlauts->{$1}}ge;
-    $s;
-}
+## not used, see above
+#sub kill_umlauts {
+#    my $s = shift;
+#    my $kill_umlauts = {"ä" => "ae",
+#			"ö" => "oe",
+#			"ü" => "ue",
+#			"ß" => "ss",
+#			"Ä" => "Ae",
+#			"Ö" => "Oe",
+#			"Ü" => "Ue",
+#			"é" => "e",
+#		       };
+#    my $left_part = join "", keys %$kill_umlauts;
+#    $s =~ s{([$left_part])}{$kill_umlauts->{$1}}ge;
+#    $s;
+#}
 
 1;
 
