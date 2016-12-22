@@ -14493,19 +14493,16 @@ sub show_info {
 	    $info_text->insert("end", "fragezeichenform",
 			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
 	    $show_url->($linkcount, sub {
-			    require CGI;
 			    my $fragezeichen_comment = $strname;
-			    if ($Tk::VERSION >= 804) {
-				$fragezeichen_comment = Encode::encode("iso-8859-1", $fragezeichen_comment);
-			    }
-			    CGI->import('-oldstyle_urls');
-			    my $qs = CGI->new({strname => $fragezeichen_comment,
-					       strname_html => CGI::escapeHTML($fragezeichen_comment),
-					       supplied_coord => $real_coords,
-					      })->query_string;
 			    # XXX $BBBIKE_UPDATE_WWW shows also to root bbbike directory at server
-			    my $url = "$BBBike::BBBIKE_UPDATE_WWW/html/fragezeichenform.html?$qs";
-			    $url;
+			    my $url = "$BBBike::BBBIKE_UPDATE_WWW/html/fragezeichenform.html";
+			    BBBikeUtil::uri_with_query($url,
+						       [strname => $fragezeichen_comment,
+							(eval { require CGI; 1 } ? (strname_html => CGI::escapeHTML($fragezeichen_comment)) : ()),
+							supplied_coord => $real_coords,
+						       ],
+						       encoding => 'iso-8859-1',
+						      );
 			});
 	    $info_text->insert("end", "\n");
 	    $linkcount++;
@@ -14539,7 +14536,6 @@ sub show_info {
 		$info_text->insert("end", $label,
 				   ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
 		$show_url->($linkcount, sub {
-				require CGI;
 				my $center = "$px,$py";
 				my $zoom;
 				if ($mapscale_scale < 2000) {
@@ -14553,15 +14549,13 @@ sub show_info {
 				} else {
 				    $zoom = 14;
 				}
-				my $q2 = CGI->new({ center => $center,
-						    zoom => $zoom,
-						    autosel => 1,
-						    maptype => "hybrid",
-						    coordsystem => "polar",
-						    mapmode => "addroute",
-						  });
-				my $url = $baseurl . "?" . $q2->query_string;
-				$url;
+				BBBikeUtil::uri_with_query($baseurl,
+							   [center => $center,
+							    zoom => $zoom,
+							    autosel => 1,
+							    maptype => "hybrid",
+							    coordsystem => "polar",
+							    mapmode => "addroute"]);
 			    });
 		$info_text->insert("end", "\n");
 		$linkcount++;
@@ -14599,16 +14593,13 @@ sub show_info {
 	    my $show_leaflet_url = sub {
 		my($baseurl, $linkcount) = @_;
 		$show_url->($linkcount, sub {
-				require CGI;
 				my $scale = 17 - log(($mapscale_scale)/3000)/log(2);
 				$scale = 18 if $scale > 18;
-				my $q2 = CGI->new({ mlat => $py,
-						    mlon => $px,
-						    ($Msg::lang eq 'en' ? (lang => "en") : ()),
-						    zoom => int($scale),
-						  });
-				my $url = $baseurl . "?" . $q2->query_string;
-				$url;
+				BBBikeUtil::uri_with_query($baseurl,
+							   [mlat => $py,
+							    mlon => $px,
+							    ($Msg::lang eq 'en' ? (lang => "en") : ()),
+							    zoom => int($scale)]);
 			    }
 			   );
 	    };

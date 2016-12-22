@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION $geocoder_toplevel);
-$VERSION = 3.05;
+$VERSION = 3.06;
 
 BEGIN {
     if (!eval '
@@ -480,14 +480,17 @@ sub geocoder_dialog {
     sub geocode {
 	my($self, %args) = @_;
 	my $loc = $args{location};
-	require CGI;
-	CGI->import(qw(-oldstyle_urls));
 	require LWP::UserAgent; # should be already loaded anyway
 	require JSON::XS;
+	require BBBikeUtil; # should be already loaded anyway
 	my $ua = LWP::UserAgent->new;
 	$ua->timeout(10);
-	my $url = 'http://maps.google.com/maps/api/geocode/json?' . CGI->new({address => $loc,
-									      sensor => 'false'})->query_string;
+	my $url = BBBikeUtil::uri_with_query
+	    (
+	     'http://maps.google.com/maps/api/geocode/json',
+	     [address => $loc,
+	      sensor => 'false'],
+	    );
 	my $resp = $ua->get($url);
 	if ($resp->is_success) {
 	    my $content = $resp->decoded_content(charset => "none");

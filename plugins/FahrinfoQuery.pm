@@ -17,18 +17,16 @@ package FahrinfoQuery;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.19';
+$VERSION = '0.20';
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
 
 use vars qw($icon %city_border_points $menu);
 
-use CGI qw();
-use Encode qw(encode);
 use File::Basename qw(basename);
 
-use BBBikeUtil qw(bbbike_root m2km kmh2ms s2ms);
+use BBBikeUtil qw(bbbike_root m2km kmh2ms s2ms uri_with_query);
 use Strassen::Core;
 use Strassen::MultiStrassen;
 use Strassen::Util;
@@ -341,14 +339,17 @@ sub choose {
 
 sub search {
     my($start_name, $goal_name) = @_;
-    CGI->import('-oldstyle_urls');
-    $_ = encode("iso-8859-1", $_) for ($start_name, $goal_name); # XXX utf8 or latin1?
-    my $qs = CGI->new({from => $start_name, # XXX add " (Berlin)"? # XXX add !
-		       to   => $goal_name,  # XXX "
-		       REQ0JourneyStopsSA1 => 1,
-		       REQ0JourneyStopsZA1 => 1
-		      })->query_string;
-    start_browser("http://mobil.bvg.de/Fahrinfo/bin/query.bin/dox?" . $qs);
+    my $url = uri_with_query
+	(
+	 "http://mobil.bvg.de/Fahrinfo/bin/query.bin/dox",
+	 [from => $start_name, # XXX add " (Berlin)"? # XXX add !
+	  to   => $goal_name,  # XXX "
+	  REQ0JourneyStopsSA1 => 1,
+	  REQ0JourneyStopsZA1 => 1,
+	 ],
+	 encoding => 'iso-8859-1',
+	);
+    start_browser($url);
 }
 
 sub start_browser {
