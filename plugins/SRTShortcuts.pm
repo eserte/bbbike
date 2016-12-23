@@ -1329,7 +1329,11 @@ sub show_new_vmz_diff {
 	main::plot('str','sBAB', -draw => 1);
 	main::make_net();
     }
-    if (defined $version) { $version = ".$version" }
+    if (defined $version) {
+	$version = ".$version";
+    } else {
+	$version = '';
+    }
     show_any_diff("$vmz_lbvs_directory/diffnewvmz.bbd$version", "newvmz");
 }
 
