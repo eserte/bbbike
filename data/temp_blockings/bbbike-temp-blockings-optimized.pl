@@ -3335,7 +3335,7 @@ userdel auto	3 7059,11978 7031,12024 7026,12054
 ',
          'from' => 1482440059,
          'id' => 2577,
-         'text' => 'Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Dorotheenstr. und Behrenstr.: Veranstaltung, gesperrt, vom 23.12.2016',
+         'text' => 'Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Dorotheenstr. und Behrenstr.: Veranstaltung, gesperrt, ab 23.12.2016',
          'type' => 'gesperrt',
          'until' => 1482728400
        },
@@ -3869,7 +3869,7 @@ userdel	q4::inwork 12911,1815 12817,2031
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2016-12-05 vvv
+#: last_checked: 2016-12-23 vvv
 #: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -3964,18 +3964,6 @@ userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,
          'text' => 'Freundschaftsinsel: nur zwischen 7 Uhr und Einbruch der Dunkelheit offen',
          'type' => 'gesperrt',
          'until' => undef
-       },
-       {
-         'data' => '#: osm_watch: way id="454003207" version="1"
-#: last_checked: 2016-12-16
-userdel	q4::inwork 5236,10994 5230,10919
-',
-         'from' => 1479769200,
-         'id' => 2843,
-         'source_id' => 'LMS-BR_r_LMS-BR_83962',
-         'text' => 'Fasanenstr.: Baustelle zwischen Kantstr. und Kurfürstendamm, Fahrbahn gesperrt, vom 23.11.2016 bis 31.12.2016',
-         'type' => 'handicap',
-         'until' => 1483225200
        }
      
 );

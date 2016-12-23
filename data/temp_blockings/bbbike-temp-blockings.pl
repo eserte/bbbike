@@ -22937,7 +22937,7 @@ EOF
      },
      { from  => 1482440059,
        until => $isodate2epoch->("2016-12-26 06:00:00"),
-       text  => 'Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Dorotheenstr. und Behrenstr.: Veranstaltung, gesperrt, vom 23.12.2016',
+       text  => 'Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Dorotheenstr. und Behrenstr.: Veranstaltung, gesperrt, ab 23.12.2016',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: Together Berlin
@@ -25497,7 +25497,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2016-12-05 vvv
+#: last_checked: 2016-12-23 vvv
 #: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -25690,7 +25690,7 @@ EOF
 EOF
      },
      { from  => 1479769200, # 2016-11-22 00:00
-       until => 1483225200, # 2017-01-01 00:00
+       until => 1482518311, # 1483225200, # 2017-01-01 00:00
        text  => 'Fasanenstr.: Baustelle zwischen Kantstr. und Kurfürstendamm, Fahrbahn gesperrt, vom 23.11.2016 bis 31.12.2016',
        type  => 'handicap',
        source_id => 'LMS-BR_r_LMS-BR_83962',

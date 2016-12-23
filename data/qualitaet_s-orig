@@ -12260,10 +12260,10 @@ Schwarzspechtweg: Beton	Q1 -2173,19357 -2231,19360 -2250,19361
 #: corrected_by: srt (Asphalt -> Verbundsteinpflaster)
 Schwarzspechtweg: Verbundsteinpflaster	Q1 -2173,19357 -2184,19143
 #: confirmed_by: srt
-Rallenweg: asphaltiert	Q0 -2360,20965 -1978,20928
+Rallenweg: asphaltiert	Q0 -2360,20965 -2043,20968
 #: note: die ADFC-Karte meint hier "mäßig geeignet"
-Mühlenweg: Waldweg	Q1 -1978,20928 -1843,20925 -1700,20971 -1559,20931 -1040,20962 -843,20940 -750,20878 -329,20685 -64,20583 65,20594 462,20694 601,20709
-Försterweg: Waldweg, etwas holprig	Q2 -1978,20928 -1968,20850 -1400,20615 -1253,20546 -1243,20471 -1050,20281 -871,20225 -842,20200
+Mühlenweg: Waldweg	Q1 -2043,20968 -1895,20953 -1760,20985 -1590,20948 -1082,20996 -889,20979 -750,20878 -329,20685 -64,20583 65,20594 462,20694 601,20709
+Försterweg: Waldweg, etwas holprig	Q2 -2043,20968 -2101,20891 -1811,20818 -1292,20572 -1243,20471 -1050,20281 -871,20225 -842,20200
 #: by: ^^^
 # 
 #: by: hoffmannbeck:
@@ -24679,7 +24679,8 @@ Gustav-Heinemann-Brücke: Holzbohlen mit Fugen	Q1 8116,12938 8110,13042
 # REMOVED (hier asphaltiert) --- #: XXX Qualität der wassergebundenen Decke prüfen --- #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6285
 (Willy-Brandt-Str. - Rahel-Hirsch-Str.): Asphalt	Q0 8120,12756 8124,12840 8116,12938
 # REMOVED (erstmal komplett entfernt; nach den Bauarbeiten wird es vermutlich ganz anders aussehen) --- #: next_check_id: CHARITE-2014 --- #: XXX wie wird die Situation nach den Bauarbeiten aussehen? --- #: by: http://www.charite.de/charite/organisation/baumassnahmen/campus_charite_mitte/ (Dauer: 3 Jahre ab Herbst 2013) --- #: by: http://infocenter.charite.de/ --- #: last_checked: 2015-11-27 --- #: check_frequency: 90d --- (entlang der Baustelle an der Charité): teilweise Schotter	Q2 8833,13440 8836,13396 8835,13376 8818,13365 8808,13377
-(an der Notfallaufnahme Charité): Steinplatten	Q0 8665,13353 8806,13384 8836,13396
+(an der Notfallaufnahme Charité): Asphalt	Q0 8665,13353 8736,13369
+(an der Notfallaufnahme Charité): Steinplatten	Q0 8736,13369 8806,13384 8836,13396
 (an der Notfallaufnahme Charité): Kleinsteinpflaster	Q1 8836,13396 8833,13440
 Platz vor dem Neuen Tor: Kopfsteinpflaster	Q2 8674,13593 8670,13633 8664,13688
 Platz vor dem Neuen Tor: Kopfsteinpflaster	Q2 8670,13633 8633,13629 8594,13625

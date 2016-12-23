@@ -2599,11 +2599,11 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
 #: XXX laut fritz bis 05.05.2016
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
-#: last_checked: 2016-11-30
+#: last_checked: 2016-12-23
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2016-12-12 vvv
+#: last_checked: 2016-12-23 vvv
 #: check_frequency: 30d vvv
 	X::inwork 9121,12514
 	X::inwork 9286,12886
@@ -2832,12 +2832,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 9151,13941
 #: note: Anforderungsampel
 	F 10462,3765
-#: XXX hier wird eine Fußgängerampel gebaut, vermutlich schon fertig --- Anforderungsampel?
-#: source_id: 2147340713
-#: osm_watch: note 814294 1
-#: last_checked: 2016-12-12
-#: next_check: 2016-12-16
-	F::inwork 8853,13539
+#: note: Anforderungsampel
+	F 8853,13539
 #: next_check_id: HEERSTR-2016
 #: XXX Baustellenampel; eigentlich sind hier zwei Ampeln: einmal für die Straße runter zur Havel, und dann etwas weiter für die Radfahrer zum Wechseln auf die andere Straßenseite
 #: last_checked: 2016-10-08
