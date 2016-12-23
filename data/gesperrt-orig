@@ -2758,7 +2758,7 @@ Puschkinallee: Fahrtrichtung gesperrt	1::inwork 13795,9941 13890,9894
 #: XXX danach eine "bituminˆse Befestigung"
 #: XXX evtl. wird die Beleuchtung auch erneuert?
 #: last_checked: 2016-12-16
-#: check_frequency: 4d
+#: check_frequency: 14d
 #: priority: #A
 Parkweg zwischen Stresemannstr. und Wilhemstr.: wird instandgesetzt, in dieser Zeit nicht befahrbar	2::inwork 9249,10562 9375,10616
 # 
@@ -2912,19 +2912,7 @@ Schwarzer Weg: wegen Straﬂenbau gesperrt	2::inwork 17295,7323 17295,7330 17295,7
 #: last_checked ^^^
 # 
 # REMOVED (fertig) --- #: XXX Bauarbeiten im Park dauern bis 2016 --- #: last_checked: 2016-02-05 --- #: check_frequency: 60d --- Kleiner Tiergarten: wegen Bauarbeiten gesperrt	2::inwork 6573,13149 6564,13260 6535,13327
-# 
-#: next_check_id: FISCHERINSEL-2015 vvv
-#: source_id: 2147339543 vvv
-#: last_checked: 2016-12-16 vvv
-#: next_check: 2016-12-22 vvv
-M‰rkisches Ufer - Neue Roﬂstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10703,11837
-Neue Roﬂstr. - M‰rkisches Ufer: wegen Bauarbeiten gesperrt	3 10703,11837 10687,11853 10869,11949
-M‰rkisches Ufer - Neue Roﬂstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10672,11870
-Neue Roﬂstr. - M‰rkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,11853 10869,11949
-#: next_check ^^^
-#: last_checked ^^^
-#: source_id ^^^
-#: next_check_id ^^^
+# REMOVED (fertig) --- #: next_check_id: FISCHERINSEL-2015 vvv --- #: source_id: 2147339543 vvv --- #: last_checked: 2016-12-16 vvv --- #: next_check: 2016-12-22 vvv --- M‰rkisches Ufer - Neue Roﬂstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 --- Neue Roﬂstr. - M‰rkisches Ufer: wegen Bauarbeiten gesperrt	3 10687,11853 10869,11949 --- M‰rkisches Ufer - Neue Roﬂstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10672,11870 --- Neue Roﬂstr. - M‰rkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,11853 10869,11949
 # 
 #: next_check_id: DIESEL-2015
 #: last_checked: 2016-12-10
@@ -3142,7 +3130,7 @@ Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht mˆgl
 # 
 #: next_check_id: BER-20XX
 #: last_checked: 2012-05-06
-#: next_check: 2017-01-01
+#: next_check: 2017-11-01
 #: osm_watch: way id="127091100" version="9" brb
 #: osm_watch: way id="54500456" version="11" brb
 B96a - Flughafen Berlin-Brandenburg: Abschnitt f¸hrt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18680,-1506 18798,-1581 18853,-1656 18866,-1674
@@ -3150,6 +3138,7 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt f¸hrt durch Sicherheitsbereich de
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20111122.1040.362894.html
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=5878
 #: XXX Sanierungstermin steht noch nicht fest
+#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7641
 #: last_checked: 2016-03-26
 #: check_frequency: 360d
 Wikingerufer: wegen Besch‰digungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910

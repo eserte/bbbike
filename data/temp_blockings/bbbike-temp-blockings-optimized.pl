@@ -3318,7 +3318,27 @@ userdel	2::inwork -12583,-1552 -12485,-1482
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: Together Berlin
+userdel	2::temp 7429,12070 7383,12095 7816,12150 7823,12120 8018,12135 8049,12140
+userdel	2::temp 7816,12150 8055,12186 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197 8522,12239
+userdel	2::temp 7383,12095 7026,12054 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120
+userdel	2::temp 8055,12186 8089,12190 8214,12205
+userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8215,12156
+userdel	2::temp 8610,12254 8538,12245 8522,12187
+userdel	2::temp 8538,12245 8600,12165 8595,12066
+userdel	2::temp 8055,12186 8119,12414
+userdel auto	3 7026,12054 7031,12024 7059,11978
+userdel auto	3 7059,11978 7031,12024 7026,12054
+	3 8327,12174 8344,12221 8391,12389
+	3 8391,12389 8344,12221 8327,12174
+',
+         'from' => 1482440059,
+         'id' => 2577,
+         'text' => 'Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Dorotheenstr. und Behrenstr.: Veranstaltung, gesperrt, vom 23.12.2016',
+         'type' => 'gesperrt',
+         'until' => 1482728400
+       },
        undef,
        undef,
        undef,

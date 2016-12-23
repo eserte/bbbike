@@ -32,7 +32,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2016-12-16
+#: last_checked: 2016-12-22
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -435,8 +435,7 @@ Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 
 #: check_frequency: 30d
 Neckarstr./Isarstr.: Umgestaltung, danach verkehrsberuhigter Bereich; ändert sich am Fahrbahnbelag etwas?	?::inwork 12368,8356 12384,8284 12639,8344
 # 
-#: next_check: 2017-01-01
-Ausbau Dresdener Bahn: Bahnunterführung wird gebaut, geänderte Straßenführung	?::inwork 16480,-30962 16630,-30953 17081,-30944
+# REMOVED (realisiert) --- #: next_check: 2017-01-01 --- Ausbau Dresdener Bahn: Bahnunterführung wird gebaut, geänderte Straßenführung	?::inwork 16480,-30962 16520,-30961 16577,-31075 16670,-31073 16737,-30998 16827,-30948 17081,-30944
 # 
 #: source_id: 166000788
 #: next_check: 2016-10-07
@@ -1115,7 +1114,7 @@ Humboldtinsel: liegt die Straße hier? ausgeschildert? Qualität?	?::inwork 1687,2
 Ordensmeisterstr.: werden die Radspuren noch weiter geführt?	?::projected 10254,5921 10027,5868 9796,5790
 # 
 #: next_check_id: BER-20XX vvv
-#: next_check: 2017-01-01 vvv
+#: next_check: 2017-11-01 vvv
 #: note: Straßen zum und am BER vvv
 #: osm_watch: way id="188865976" version="3" brb
 Ring am Flughafen BER: Genaue Wegführung? Einbahnstraßenregelungen? Werden Radfahrer die Straßen nutzen dürfen? Fahrbahnbeschaffenheit ist wahrscheinlich Asphalt.	?::inwork 18386,-4109 18386,-4109 18296,-4078 17832,-4267 18001,-4685 18517,-4502
@@ -1425,8 +1424,9 @@ Clara-Mleinek-Platz (Ziffer 3; platzähnlich): Qualität? Wird der Straßenname sti
 #: XXX Grünflächen teilweise entfernen, culdesac hinzufügen
 #: XXX vorgeschlagene Straßennamen: Bärbel-Bohley-Ring (großer Straßenring, C, D, E) und Lichtburgring (A, B); teilweise Privatstraßen
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7285
-#: next_check: 2017-01-01
-Planstraßen 1.1 und 1.2	?::projected 9991,15629 9898,15864 9746,15862
+#: osm_watch: way id="437684188" version="1"
+#: next_check: 2017-04-01
+Planstraßen 1.1 und 1.2	?::inwork 9991,15629 9898,15864 9746,15862
 # 
 # REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2015 vvv --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file?y=2015 (Grundstücksnummerierungen) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6520 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103651141239/51141239/00083028/28-Anlagen/02/vzb1159_IV_Festsetzg_B_Plan_10_39.pdf --- #: XXX fehlen alle in Berlin.coords.data (PLZ=12621) vvv --- #: XXX alles Privatstraßen, "Heinrich Wohnpark" (ohne Bindestrich!) vvv --- #: last_checked: 2015-08-01 vvv --- #: check_frequency: 120d vvv --- #: osm_watch: way id="387215886" version="1" --- Erich-Knauf-Weg: Lage der Straße? Qualität?	? 23742,13155 23833,13099 23905,13064 23962,13053 --- #: osm_watch: way id="387215889" version="1" --- Franz-Jägerstätter-Weg: Lage der Straße? Qualität?	? 23833,13099 23853,13212 23841,13238 --- #: osm_watch: way id="387215884" version="1" --- Am Kirchendreieck: Lage der Straße? Qualität?	? 23905,13064 23948,13307 23942,13321
 # 
@@ -1574,6 +1574,11 @@ Bebauungsplanverfahren XXI-41b: ändert sich hier an den Wegen etwas?	?::projecte
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+Bolle-Gelände/Alte Meierei: Weg eintragen? Wie ist die Qualität hier? Gibt es Bordsteine o.ä.?	? 6439,13163 6402,12975
+# 
+#: XXX laut Fritz bis 30.09.2017
+Zillestr.: weitere Einbahnstraße zwischen Richard-Wagner-Str. und Krumme Str. --- aber in welcher Richtung?	? 3807,11859 3976,11869
 # 
 #: XXX wo genau?
 #: by: http://www.berlin.de/ba-neukoelln/_assets/dokumente/ba-beschluesse/ba-beschluss-206-16.pdf
@@ -1845,12 +1850,13 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7478
 #: XXX "noch 2016"
-#: last_checked: 2016-12-12 vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2016-12-21 vvv
+#: check_frequency: 21d vvv
 #: priority: #C vvv
 #: osm_watch: note 814292 1
 Waldemar/Dresdener: Zebrastreifen in Bau	?::inwork 11153,11028 11150,11030
-Sebastian/Luckauer: Zebrastreifen geplant	?::projected 11105,10969 11113,10943 11122,10908
+#: osm_watch: note 824350 1
+Sebastian/Luckauer: Zebrastreifen in Bau	?::inwork 11113,10943 11109,10935
 #: priority ^^^
 #: check_frequency ^^^
 #: last_checked ^^^

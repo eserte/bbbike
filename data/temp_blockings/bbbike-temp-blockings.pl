@@ -22935,12 +22935,12 @@ userdel	2::inwork 5993,5422 6009,5691 6007,5785 6007,5882 6001,5974 6134,5986 61
 userdel	2::inwork 5935,5874 6007,5882 6134,5894
 EOF
      },
-     { from  => $isodate2epoch->("2016-06-08 00:00:00"), # ein Tag Vorlauf (zu wenig?)
-       until => $isodate2epoch->("2016-07-12 23:59:59"), # ein Tag Nachlauf (zu wenig?)
-       text  => 'Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Dorotheenstr. und Behrenstr.: Sperrungen wegen der Fußball-EM-Fanmeile, Radfahrer dürfen den Bereich in der spielfreien Zeit passieren, vom 09.06.2016 bis zum 12.07.2016',
+     { from  => 1482440059,
+       until => $isodate2epoch->("2016-12-26 06:00:00"),
+       text  => 'Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Ebertstr. zwischen Dorotheenstr. und Behrenstr.: Veranstaltung, gesperrt, vom 23.12.2016',
        type  => 'gesperrt',
-       source_id => '2147340174',
        data  => <<EOF,
+#: note: Together Berlin
 userdel	2::temp 7429,12070 7383,12095 7816,12150 7823,12120 8018,12135 8049,12140
 userdel	2::temp 7816,12150 8055,12186 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197 8522,12239
 userdel	2::temp 7383,12095 7026,12054 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120
@@ -22951,6 +22951,8 @@ userdel	2::temp 8538,12245 8600,12165 8595,12066
 userdel	2::temp 8055,12186 8119,12414
 userdel auto	3 7026,12054 7031,12024 7059,11978
 userdel auto	3 7059,11978 7031,12024 7026,12054
+	3 8327,12174 8344,12221 8391,12389
+	3 8391,12389 8344,12221 8327,12174
 EOF
      },
      { from  => 1402524000, # 2014-06-12 00:00
