@@ -50,6 +50,7 @@ my $do_init_other;
 my $test_jobs;
 my $skip_tests;
 my $log_dir;
+my $with_mapserver;
 
 # prepend extra options from rc file
 # stolen from cpan_smoke_modules
@@ -85,6 +86,7 @@ GetOptions(
 	   'init-ext'          => \$do_init_ext,
 	   'init-other'        => \$do_init_other,
 	   'log-dir=s'         => \$log_dir,
+	   'with-mapserver'    => \$with_mapserver,
 	  )
     or error "usage: $0 [--root-deploy-dir /path/to/dir] [--dry-run] [--test-jobs ...] [--skip-tests] [--no-switch]";
 
@@ -180,21 +182,28 @@ print STDERR colored("Now tests are running...", "white on_green"), "\n";
 if ($dry_run) {
     warn "NOTE: would run tests now...\n";
 } elsif ($skip_tests) {
-    print STDERR "Really skip tests? (y/n) ";
-    while () {
-	chomp(my $yn = <STDIN>);
-	if ($yn eq 'y') {
-	    last;
-	} elsif ($yn eq 'n') {
-	    warn "OK, aborting deployment...\n";
-	    exit 1;
-	} else {
-	    print STDERR "Please answer y or n: ";
+    if (!$do_switch) {
+	# don't ask
+    } else {
+	print STDERR "Really skip tests? (y/n) ";
+	while () {
+	    chomp(my $yn = <STDIN>);
+	    if ($yn eq 'y') {
+		last;
+	    } elsif ($yn eq 'n') {
+		warn "OK, aborting deployment...\n";
+		exit 1;
+	    } else {
+		print STDERR "Please answer y or n: ";
+	    }
 	}
     }
 } else {
     local $ENV{LANG} = 'C';
-    local $ENV{BBBIKE_TEST_SKIP_MAPSERVER} = 1;
+    local $ENV{BBBIKE_TEST_SKIP_MAPSERVER};
+    if (!$with_mapserver) {
+	$ENV{BBBIKE_TEST_SKIP_MAPSERVER} = 1;
+    }
     local $ENV{BBBIKE_TEST_SKIP_PALMDOC} = 1;
     local $ENV{BBBIKE_TEST_CGIDIR} = "http://$staging_host/cgi-bin";
     local $ENV{BBBIKE_TEST_HTMLDIR} = "http://$staging_host/BBBike";
@@ -394,6 +403,9 @@ sub init_other {
 	for my $file (qw(bbbikeleaflet.cgi bbbikeleaflet.en.cgi)) {
 	    symlink_root '../BBBike/cgi/bbbikeleaflet.cgi', $file;
 	}
+	if ($with_mapserver && -e "/usr/lib/cgi-bin/mapserv") {
+	    symlink_root '/usr/lib/cgi-bin/mapserv', 'mapserv';
+	}
 
 	mkdir_root "$dir/BBBike/tmp";
 	chmod 0777, "$dir/BBBike/tmp";
@@ -411,6 +423,10 @@ sub init_other {
 
 	mkdir_root "$dir/public";
 	symlink_root '../BBBike', "$dir/public/BBBike";
+
+	if ($with_mapserver) {
+	    mkdir_root "$dir/public/mapserver";
+	}
     }
 }
 
