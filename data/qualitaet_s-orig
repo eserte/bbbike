@@ -591,7 +591,7 @@ Brixener Str.: Kopfsteinpflaster	Q2 10507,17400 10502,17419 10466,17464
 Helmerdingstr.: Kopfsteinpflaster	Q2 14442,11101 14468,11203
 # REMOVED (Asphalt ist kaum von Vorteil hier) --- Helmerdingstr.: Asphalt/Kopfsteinpflaster	Q2+; 14468,11203 14442,11101
 Haasestr.: Kopfsteinpflaster	Q2 14328,11320 14286,11186
-Döringstr.: Beton	Q1 14400,11261 14357,11148
+Döringstr.: Verbundsteinpflaster	Q1 14400,11261 14357,11148
 Calvinstr.: Kopfsteinpflaster	Q2 6776,12668 6802,12797 6860,13093
 Alt-Pichelsdorf: schlechtes Kopfsteinpflaster	Q3+ -3688,11688 -3657,11631 -3606,11532 -3445,11505
 Alt-Pichelsdorf: Kopfsteinpflaster	Q2 -3445,11505 -3405,11498
@@ -10241,7 +10241,8 @@ Am Hamburger Bahnhof: Kopfsteinpflaster	Q2 8189,13468 8183,13482 8141,13580 8120
 (Vorfahrt Petruskirche): Kopfsteinpflaster	Q2 5393,2053 5452,2077
 #: next_check_id: ANDERNEUMARK-2016
 #: XXX wann und wie wird die Straße befestigt?
-#: osm_watch: way id="438655143" version="1"
+#: osm_watch: way id="438655143" version="2"
+#: XXX laut osm: surface=sett
 #: last_checked: 2016-09-30
 #: check_frequency: 60d
 An der Neumark: unbefestigte Baustraße	Q2 11283,3774 11300,3709 11357,3720 11378,3626 11332,3615
