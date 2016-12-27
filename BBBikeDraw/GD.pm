@@ -1344,7 +1344,13 @@ sub search_ttf_font {
 	    return $font;
 	}
     }
-    warn "Cannot find font in candidates @$candidates" if $^W;
+    if ($^W) {
+	my $msg = "Cannot find font in candidates @$candidates";
+	if ($^O eq 'linux') {
+	    $msg .= "\nOn Debian systems, you might want to install the fonts-dejavu-extra package.";
+	}
+	warn $msg;
+    }
     undef;
 }
 
