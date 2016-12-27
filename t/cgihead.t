@@ -86,6 +86,8 @@ my @static = qw(
 use vars qw($mapserver_prog_url);
 $mapserver_prog_url = $ENV{BBBIKE_TEST_MAPSERVERURL};
 if (!defined $mapserver_prog_url) {
+    require URI;
+    local $ENV{SERVER_NAME} = URI->new($cgi_dir)->host;
     do "$FindBin::RealBin/../cgi/bbbike.cgi.config";
 }
 if (defined $mapserver_prog_url) {

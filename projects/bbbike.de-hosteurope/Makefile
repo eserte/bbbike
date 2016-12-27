@@ -238,6 +238,14 @@ BBBIKECGI=		bbbike.cgi
 BBBIKECGI=		bbbike2.cgi
 .endif
 
+.if ${TARGET} == bbbike-pps-jessie
+BBBIKE_CGI_CONFIG=	bbbike-hosteurope-jessie.cgi.config
+MAPSERVER_BRB_LOCALINC=	mapserver-brb-brb.map-localinc-jessie
+.else
+BBBIKE_CGI_CONFIG=bbbike-hosteurope.cgi.config
+MAPSERVER_BRB_LOCALINC=	mapserver-brb-brb.map-localinc
+.endif
+
 .ifdef TARGET
 .include "${BBBIKE_ROOT_DIR}/mapserver/brb/Makefile.${TARGET}.inc"
 .endif
@@ -450,7 +458,7 @@ prepare-bbbike-dist-prog-bbbike-cgi:
 	cd ${CURDIR}/cgi-bin && ln -s ../BBBike/cgi/$(i)
 .endfor
 # Create bbbike.cgi configuration
-	cp -pf ${BBBIKE_ROOT_DIR}/cgi/bbbike-hosteurope.cgi.config \
+	cp -pf ${BBBIKE_ROOT_DIR}/cgi/${BBBIKE_CGI_CONFIG} \
 	       ${CURDIR}/BBBike/cgi/bbbike.cgi.config
 	rm -f ${CURDIR}/cgi-bin/bbbike.cgi.config
 	cd ${CURDIR}/cgi-bin && ln -s ../BBBike/cgi/bbbike.cgi.config
@@ -607,7 +615,7 @@ prepare-mapserver-dist-pre:
 # XXX rename /tmp/radzeit_mapserver_dist, here and in mapserver/brb/Makefile
 prepare-mapserver-dist-main:
 # XXX   Copying and removing the localinc file here is an ugly hack
-	cp -pf etc/mapserver-brb-brb.map-localinc ${BBBIKE_ROOT_DIR}/mapserver/brb/brb.map-localinc
+	cp -pf etc/${MAPSERVER_BRB_LOCALINC} ${BBBIKE_ROOT_DIR}/mapserver/brb/brb.map-localinc
 	cd ${BBBIKE_ROOT_DIR}/mapserver/brb && \
 	    ${MAKE} dist-any TARGET=${MAPSERVER_TARGET}
 	rm -f ${BBBIKE_ROOT_DIR}/mapserver/brb/brb.map-localinc
