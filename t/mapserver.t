@@ -24,9 +24,9 @@ BEGIN {
     }
 }
 
-if (hostname !~ m{^cvrsnica\.herceg\.de}) {
-    print "1..0 # skip works only on cvrsnica\n";
-    exit;
+if ($ENV{BBBIKE_TEST_SKIP_MAPSERVER}) {
+    plan skip_all => "Mapserver tests explicitly skipped";
+    exit 0;
 }
 
 use FindBin;
@@ -115,13 +115,7 @@ my $ms = get_config();
 {
     my $agent = get_agent();
     my $url;
-##XXX How to get site-independent?
-#     my $q = CGI->new({map => $ms->{MAPSERVER_DIR}."/brb-b.map",
-# 		      program => $ms->{MAPSERVER_PROG_RELURL},
-# 		     });
-#     $url = $ms->{MAPSERVER_PROG_URL} . "?" . $q->query_string;
-    my $host = "bbbike.cvrsnica.herceg.de";
-    $url = "http://$host/cgi-bin/bbbike.cgi?mapserver=1";
+    $url = "$cgiurl?mapserver=1";
     $agent->get($url);
     ok($agent->success, "$url is ok");
 
