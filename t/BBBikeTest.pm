@@ -112,7 +112,11 @@ if ($BBBIKE_TEST_MAPSERVERSTATICURL) {
 } elsif (defined $ENV{BBBIKE_TEST_MAPSERVERSTATICURL}) {
     $mapserverstaticurl = $ENV{BBBIKE_TEST_MAPSERVERSTATICURL};
 } else {
-    $mapserverstaticurl = "$htmldir/mapserver";
+    if ($htmldir =~ m{/bbbike$}) {
+	$mapserverstaticurl = "$htmldir/mapserver";
+    } else {
+	$mapserverstaticurl = dirname($htmldir) . '/mapserver'; # typically -> http://$HOSTNAME/mapserver
+    }
 }
 
 if ($BBBIKE_TEST_WAPURL) {
