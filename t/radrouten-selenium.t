@@ -2,15 +2,19 @@
 
 use strict;
 use warnings;
+use FindBin;
+use lib $FindBin::RealBin;
 
 use Getopt::Long;
 use URI ();
 use URI::QueryParam ();
 use Test::More;
 
+use BBBikeTest qw($mapserverstaticurl);
+
 my $doit;
 my $debug;
-my $root_url = "http://localhost/bbbike/mapserver/brb/radroute.html";
+my $root_url = "$mapserverstaticurl/brb/radroute.html";
 # To test on bbbike-pps call with:
 #
 #    perl t/radrouten-selenium.t -doit -rooturl http://bbbike-pps/mapserver/brb/radroute.html

@@ -34,7 +34,7 @@ if ($ENV{BBBIKE_TEST_SKIP_MAPSERVER}) {
 
 use Getopt::Long;
 
-use BBBikeTest qw(check_cgi_testing like_html);
+use BBBikeTest qw(check_cgi_testing like_html $mapserverstaticurl);
 
 check_cgi_testing;
 
@@ -59,7 +59,7 @@ my $ua = LWP::UserAgent->new(keep_alive => 1);
 $ua->agent("BBBike-Test/1.0");
 push @{ $ua->requests_redirectable }, 'POST'; # violating RFC 2616
 
-my $root_url = "http://localhost/bbbike/mapserver/brb/radroute.html";
+my $root_url = $mapserverstaticurl . "/brb/radroute.html";
 my $root_resp = $ua->get($root_url);
 if (!ok $root_resp->is_success, "Fetching $root_url") {
  SKIP: {

@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004,2006,2008,2012,2013,2014,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2006,2008,2012,2013,2014,2015,2016 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +16,7 @@ package BBBikeTest;
 use vars qw(@opt_vars);
 BEGIN {
     @opt_vars = qw($logfile $do_xxx $do_display $pdf_prog $debug
-		   $cgiurl $cgidir $htmldir $mapserverurl $wapurl
+		   $cgiurl $cgidir $htmldir $mapserverurl $mapserverstaticurl $wapurl
 		   $simulate_skips
 		  );
 }
@@ -30,6 +30,7 @@ use vars qw($BBBIKE_TEST_CGIDIR
 	    $BBBIKE_TEST_CGIURL
 	    $BBBIKE_TEST_HTMLDIR
 	    $BBBIKE_TEST_MAPSERVERURL
+	    $BBBIKE_TEST_MAPSERVERSTATICURL
 	    $BBBIKE_TEST_WAPURL
 	  );
 
@@ -104,6 +105,14 @@ if ($BBBIKE_TEST_MAPSERVERURL) {
     $mapserverurl = $ENV{BBBIKE_TEST_MAPSERVERURL};
 } else {
     $mapserverurl = "http://localhost/cgi-bin/mapserv";
+}
+
+if ($BBBIKE_TEST_MAPSERVERSTATICURL) {
+    $mapserverstaticurl = $BBBIKE_TEST_MAPSERVERSTATICURL;
+} elsif (defined $ENV{BBBIKE_TEST_MAPSERVERSTATICURL}) {
+    $mapserverstaticurl = $ENV{BBBIKE_TEST_MAPSERVERSTATICURL};
+} else {
+    $mapserverstaticurl = "$htmldir/mapserver";
 }
 
 if ($BBBIKE_TEST_WAPURL) {
