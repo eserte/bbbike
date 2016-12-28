@@ -28,10 +28,12 @@ BEGIN {
 }
 
 use Config;
+use File::Temp 'tempdir';
+use Storable;
+
 use Strassen;
 use Strassen::Build;
 use Strassen::Util;
-use Storable;
 eval 'use BBBikeXS';
 
 BEGIN { plan tests => $tests }
@@ -47,8 +49,7 @@ if ($^O eq 'MSWin32') {
 # StrassenNetz-CNetFile.
 $Strassen::Util::cacheprefix = "b_de_strassen_build_test";
 
-my $tmpdir = "$FindBin::RealBin/tmp/strassen-build";
-mkdir $tmpdir, 0755 if !-d $tmpdir;
+my $tmpdir = tempdir('strassen-build-XXXXXXXX', CLEANUP => 1);
 
 my $prefix = "$tmpdir/strassen";
 
