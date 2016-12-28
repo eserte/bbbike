@@ -43,15 +43,24 @@ if (!@urls) {
     @urls = $cgiurl;
 }
 
-plan tests => 2 * @urls;
+my $tests_per_url = 2;
+plan tests => $tests_per_url * @urls;
 
 my $ua_string = "User-Agent: BBBike-Test/1.0 (raw sock)";
 
-for my $_url (@urls) {
+SKIP: for my $_url (@urls) {
     my $u = URI->new($_url);
     my $host = $u->host;
     my $port = $u->port;
     my $peeraddr = "$host:$port";
+    if ($host =~ m{(^|\.)(bbbike\.de|bbbike-pps|bbbike-pps-jessie)($|\.)} && $port == 80) {
+	skip "Probably perlbal is running on $peeraddr, which is not capable of handling HTTP/1.1 pipelines", $tests_per_url;
+    } elsif ($host =~ m{^(127\.0\.0\.1|localhost)$} && $port == 80 && -f "/etc/perlbal/perlbal.conf") {
+	my $ps = `ps ax`;
+	if ($ps =~ m{/usr/bin/perlbal --daemon}) {
+	    skip "Guessing that perlbal is running on $peeraddr (found running perlbal process)", $tests_per_url;
+	}
+    }
     my $path = $u->path;
 
     my $get_sock = sub {
