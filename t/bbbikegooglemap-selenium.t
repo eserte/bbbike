@@ -10,7 +10,7 @@ use URI ();
 use URI::QueryParam ();
 use Test::More;
 
-use BBBikeTest qw($cgidir);
+use BBBikeTest qw($cgidir selenium_diag);
 
 my $doit;
 my $debug;
@@ -44,11 +44,7 @@ my $sel = eval {
 			    );
 };
 if (!$sel || $@) {
-    diag <<EOF;
-ERROR: Please remember to start the Selenium server first, e.g.
-java -jar /usr/ports/distfiles/selenium-server-standalone-2.39.0.jar
-
-EOF
+    selenium_diag;
     fail $@;
     exit 1;
 }

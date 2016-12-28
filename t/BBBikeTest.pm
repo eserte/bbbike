@@ -58,7 +58,7 @@ use BBBikeUtil qw(bbbike_root is_in_path);
 	      eq_or_diff is_long_data like_long_data unlike_long_data
 	      like_html unlike_html is_float using_bbbike_test_cgi using_bbbike_test_data check_cgi_testing check_gui_testing on_author_system
 	      get_pmake image_ok zip_ok create_temporary_content static_url
-	      get_cgi_config
+	      get_cgi_config selenium_diag
 	    ),
 	   @opt_vars);
 
@@ -1001,6 +1001,24 @@ sub get_cgi_config (;@) {
     my $resp = $ua->get($url);
     my $data = JSON::XS::decode_json($resp->decoded_content(charset => 'none'));
     $data;
+}
+
+sub selenium_diag () {
+    Test::More::diag(<<EOF);
+
+ERROR: Please remember to start the Selenium server first, e.g.
+
+    java -jar ~/Downloads/selenium-server-standalone-3.0.1.jar
+
+or an older version (selenium 3 requires java 8):
+
+    java -jar ~/Downloads/selenium-server-standalone-2.53.1.jar
+
+To download selenium check
+
+    http://www.seleniumhq.org/download/
+
+EOF
 }
 
 1;
