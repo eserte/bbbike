@@ -44,6 +44,7 @@ BBBIKE_HOSTEUROPE_SSH_HOST?=	${BBBIKE_HOSTEUROPE_HOST}
 TARGET_LIVE=		hosteurope
 HOST!=			hostname
 DEPLOYMENT_HOST?=	cvrsnica.herceg.de
+PERL?=			perl
 
 EXTRA_MISCSRC_FILES=	bbd2esri \
 			relevant_errorlog.pl \
@@ -335,10 +336,16 @@ do-rsync-bbbike-data:
 post-rsync-bbbike:
 # bbbike-snapshot expects this file, but nothing of BBBike/tmp is
 # rsync'ed by .rsync_exclude file
+# cgi-bin/mapserv symlink is also blacklisted (by .rsync_exclude) and
+# needs to be created (hardcoded for a typical Debian system)
 	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_HOSTEUROPE_USER} ${BBBIKE_HOSTEUROPE_SSH_HOST} \
-	   "touch ${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike/tmp/.keep_me"
-	-${SSH_PROG_AND_ARGS} -l ${BBBIKE_HOSTEUROPE_USER} ${BBBIKE_HOSTEUROPE_SSH_HOST} \
-	   "${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike/miscsrc/update-modperl-reload-touchfile.pl --touch"
+	   "\
+		touch ${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike/tmp/.keep_me; \
+	   	${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike/miscsrc/update-modperl-reload-touchfile.pl --touch; \
+		if [ ! -L ${BBBIKE_HOSTEUROPE_APACHE_DIR}/cgi-bin/mapserv ] ; then \
+		    ln -s /usr/lib/cgi-bin/mapserv ${BBBIKE_HOSTEUROPE_APACHE_DIR}/cgi-bin/mapserv; \
+		fi \
+	   "
 
 post-rsync-bbbike-data:
 .ifdef TARGET
@@ -416,12 +423,12 @@ prepare:	prepare-bbbike-data \
 prepare-bbbike-data:	prepare-bbbike-data-parallel
 
 prepare-bbbike-data-serial:
-	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE} all
-	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE} slow-checks
+	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE} all PERL=${PERL}
+	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && ${MAKE} slow-checks PERL=${PERL}
 
 prepare-bbbike-data-parallel:
 	cd $(BBBIKE_ROOT_DIR)/${DATA_DIR} && \
-		(${MAKE} -j${BUILD_JOBS} all slow-checks; ${MAKE} all slow-checks)
+		(${MAKE} -j${BUILD_JOBS} all slow-checks PERL=${PERL}; ${MAKE} all slow-checks PERL=${PERL})
 
 # I used "mapfiles-without-reference-maps" instead of "mapfiles" here
 # This was because the "mapfiles-reference-maps" rule took a lot of time
@@ -683,8 +690,16 @@ test-on-remote:
 .endif
 .endif
 
+# XXX avoid duplication
 test-on-remote-full:
-	$(MAKE) test-on-remote TESTS_ON_REMOTE="$(TESTS)"
+	${SSH_PROG_AND_ARGS} -l ${BBBIKE_HOSTEUROPE_USER} ${BBBIKE_HOSTEUROPE_SSH_HOST} '\
+	cd ${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike && \
+	BBBIKE_TEST_CGIDIR=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin \
+	BBBIKE_TEST_CGIURL=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/${BBBIKECGI} \
+	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_HOSTEUROPE_HOST}/BBBike \
+	BBBIKE_TEST_FOR_LIVE=1 \
+	    prove --state=hot,all,save --color --timer `find t -name '\''*.t'\'' | sort | egrep -v '\''^t/(any2bbd|cvsdiffbbd|geocoder-addr|gps-gpsmandata-any|gps-gpsmandata-garmingpx|gps-gpsmandata|gps-symbols-garmin|grepstrassen|leaflet-static|osm2bbd|reverse-geocoding|search_inaccessible|typ2legend-xpm).t$$'\'' ` \
+	'
 
 test-from-local:
 .ifdef TARGET
@@ -734,6 +749,12 @@ test-local-parallel:
 	BBBIKE_TEST_MAPSERVERURL=${LOCAL_MAPSERVER_URL} \
 	BBBIKE_TEST_HTMLDIR=${LOCAL_HTML_URL} \
 	    prove -j${TEST_JOBS} ${TESTS}
+
+compile-ext:
+	${RSYNC_PROG} -Pvz ${BBBIKE_ROOT_DIR}/ext/Makefile ${RSYNC_DEST}BBBike/ext/Makefile
+	${SSH_PROG_AND_ARGS} -l ${BBBIKE_HOSTEUROPE_USER} ${BBBIKE_HOSTEUROPE_SSH_HOST} '\
+		cd ${BBBIKE_HOSTEUROPE_APACHE_DIR}/BBBike/ext && make ext; \
+	'
 
 server-permissions:
 	${SSH_PROG_AND_ARGS} -l ${BBBIKE_HOSTEUROPE_USER} ${BBBIKE_HOSTEUROPE_SSH_HOST} '\
