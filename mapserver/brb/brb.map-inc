@@ -10,6 +10,7 @@
    UNLESS TEMPLATE.defined;	TEMPLATE = "brb";			END;
    UNLESS REFMAPOUTLINE.defined;REFMAPOUTLINE = "0 0 0";		END;
    UNLESS REFMAPCOLOR.defined;	REFMAPCOLOR = "-1 -1 -1";		END;
+   UNLESS SMALL_SCREEN.defined;	SMALL_SCREEN = 0;			END;
 
    # Use "<" if the font does not support left arrow. Be conservative.
    #UNLESS LEFTARROW.defined;	LEFTARROW = "&#8592;";			END;

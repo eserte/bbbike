@@ -10,6 +10,7 @@
 #   IMAGE_SUFFIX=           [% IMAGE_SUFFIX %]
 #   MAPSERVER_DRIVER=       [% MAPSERVER_DRIVER %]
 #   TRANSPARENT=            [% TRANSPARENT %]
+#   SMALL_SCREEN=           [% SMALL_SCREEN %]
 #
 MAP
 
@@ -172,13 +173,21 @@ END
 SCALEBAR
   IMAGECOLOR 255 255 255
   LABEL
+[% IF SMALL_SCREEN -%]
+    SIZE tiny
+[% ELSE -%]
     TYPE truetype
     FONT "lucida"
     SIZE 8
+[% END -%]
     COLOR 255 255 255
   END
   STYLE 1
+[% IF SMALL_SCREEN -%]
+  SIZE 80 2
+[% ELSE -%]
   SIZE 120 2
+[% END -%]
   COLOR 255 255 255
   UNITS KILOMETERS
   INTERVALS 1
@@ -236,6 +245,15 @@ SYMBOL
   POINTS 0 0 0 4 4 4 4 0 0 0 END
   FILLED TRUE
 END
+
+[% IF SMALL_SCREEN -%]
+SYMBOL
+  NAME 'width'
+  TYPE VECTOR
+  POINTS 0 0 0 1 1 1 1 0 0 0 END
+  FILLED TRUE
+END
+[% END -%]
 
 SYMBOL
   NAME raute
@@ -544,7 +562,15 @@ LAYER
       POSITION auto
       TYPE truetype
       FONT "lucida"
+[% IF SMALL_SCREEN -%]
+[%   IF expr == "W2" -%]
+      MINSIZE 7
+[%   ELSE -%]
+      MINSIZE 6
+[%   END -%]
+[% ELSE -%]
       MINSIZE 8
+[% END -%]
       COLOR 0 0 255
       ANGLE AUTO
       PARTIALS FALSE
@@ -608,7 +634,11 @@ LAYER
       POSITION auto
       TYPE truetype
       FONT "lucida"
+[% IF SMALL_SCREEN -%]
+      MINSIZE 6
+[% ELSE -%]
       MINSIZE 8
+[% END -%]
       COLOR 0 0 255
       PARTIALS FALSE
     END
@@ -771,7 +801,11 @@ END
     STYLE
       COLOR 250 0 100
       PATTERN 5 4 1 4 END
+[% IF SMALL_SCREEN -%]
+      WIDTH 1
+[% ELSE -%]
       WIDTH 2
+[% END -%]
     END
   END
   TEMPLATE "query.html"
@@ -884,6 +918,19 @@ END
 	{size=>16, minscale=>1000,   maxscale=>2000,    legend=>0, outline=>1, lblsize=>13},
 	{size=>20, minscale=>undef,  maxscale=>1000,    legend=>0, outline=>1, lblsize=>14},
    ];
+
+   IF SMALL_SCREEN;
+       FOR s IN [SIZES_N, SIZES_H, SIZES_HH, SIZES_B];
+           FOR i IN s;
+               SET i.lblsize = i.lblsize - 3;
+	       IF i.size >= 4;
+	           SET i.size = i.size - 3;
+	       ELSE;
+	       	   SET i.size = 1;
+	       END;
+           END;
+       END;
+   END;
 -%]
 
 LAYER
@@ -1082,9 +1129,10 @@ LAYER
 END
 [% END -%]
 
-[% PROCESS LAYER_RADWEGE data="radwege20" minscale=5000  maxscale=undef width=4 %]
-[% PROCESS LAYER_RADWEGE data="radwege10" minscale=2000  maxscale=5000  width=6 %]
-[% PROCESS LAYER_RADWEGE data="radwege5"  minscale=undef maxscale=2000  width=8 %]
+[% IF SMALL_SCREEN; SET RADWEGE_WIDTH_QUOTIENT = 2; ELSE; SET RADWEGE_WIDTH_QUOTIENT = 1; END -%]
+[% PROCESS LAYER_RADWEGE data="radwege20" minscale=5000  maxscale=undef width=4 / RADWEGE_WIDTH_QUOTIENT %]
+[% PROCESS LAYER_RADWEGE data="radwege10" minscale=2000  maxscale=5000  width=6 / RADWEGE_WIDTH_QUOTIENT %]
+[% PROCESS LAYER_RADWEGE data="radwege5"  minscale=undef maxscale=2000  width=8 / RADWEGE_WIDTH_QUOTIENT %]
 
 ### BEGIN AFTER RADWEGE
 ### END AFTER RADWEGE
@@ -1403,7 +1451,11 @@ LAYER
     MAXSCALE 20000
     STYLE
       COLOR 0 0 128
+[% IF SMALL_SCREEN -%]
+      WIDTH 1
+[% ELSE -%]
       WIDTH 2
+[% END -%]
     END
   END
   TEMPLATE "query.html"
@@ -1439,23 +1491,39 @@ LAYER
 [% IF MAPSERVER_DRIVER == "AGG" -%]
     STYLE
       COLOR 0 128 0
+[% IF SMALL_SCREEN -%]
+      WIDTH 2
+[% ELSE -%]
       WIDTH 4
+[% END -%]
     END
     STYLE
       COLOR 255 255 255
       SYMBOL 'train-dashed'
+[% IF SMALL_SCREEN -%]
+      WIDTH 1
+[% ELSE -%]
       WIDTH 2
+[% END -%]
     END
 [% ELSE -%]
     STYLE
       COLOR 0 128 0
       SYMBOL 'point'
-      SIZE 4
+[% IF SMALL_SCREEN -%]
+      WIDTH 2
+[% ELSE -%]
+      WIDTH 4
+[% END -%]
     END
     STYLE
       COLOR 255 255 255
       SYMBOL 'rectangle-train'
-      SIZE 2
+[% IF SMALL_SCREEN -%]
+      WIDTH 1
+[% ELSE -%]
+      WIDTH 2
+[% END -%]
     END
 [% END -%]
   END
@@ -1487,11 +1555,19 @@ LAYER
     MAXSCALE 20000
     STYLE
       COLOR 0 128 0
+[% IF SMALL_SCREEN -%]
+      WIDTH 2.0
+[% ELSE -%]
       WIDTH 4.0
+[% END -%]
     END
     STYLE
       COLOR 255 255 255
+[% IF SMALL_SCREEN -%]
+      WIDTH 1.0
+[% ELSE -%]
       WIDTH 2.0
+[% END -%]
       LINECAP BUTT
       PATTERN 8 12 END
     END
@@ -1530,7 +1606,11 @@ LAYER
     MAXSCALE 20000
     STYLE
       COLOR 0 128 0
+[% IF SMALL_SCREEN -%]
+      WIDTH 1
+[% ELSE -%]
       WIDTH 2
+[% END -%]
     END
   END
   TEMPLATE "query.html"
@@ -1560,7 +1640,11 @@ LAYER
     Name "Ausgeschilderte Radroute"
     STYLE
       COLOR [% COLOR_GREEN %]
+[% IF SMALL_SCREEN -%]
+      SIZE 5
+[% ELSE -%]
       SIZE 10
+[% END -%]
 [% IF MAPSERVER_VERSION < 6 AND MAPSERVER_DRIVER == "AGG" -%]
       SYMBOL 'dotted12'
 [% ELSE -%]
@@ -1719,7 +1803,11 @@ LAYER
     NAME "f¸r Radfahrer gesperrte Straﬂe"
     STYLE
       COLOR 200 0 0
+[% IF SMALL_SCREEN -%]
+      SIZE 5
+[% ELSE -%]
       SIZE 10
+[% END -%]
       SYMBOL 'blocked[% IF MAPSERVER_VERSION < 6 %]_40[% END %]'
 [% IF MAPSERVER_VERSION >= 6  -%]
       GAP 40
@@ -1755,7 +1843,11 @@ LAYER
     NAME "Einbahnstraﬂe"
     STYLE
       COLOR 0 0 200
+[% IF SMALL_SCREEN -%]
+      SIZE 5
+[% ELSE -%]
       SIZE 10
+[% END -%]
       SYMBOL 'oneway_arrow[% IF MAPSERVER_VERSION < 6 %]_20[% END %]'
 [% IF MAPSERVER_VERSION >= 6  -%]
       GAP -20
@@ -1767,7 +1859,11 @@ LAYER
     EXPRESSION /^1(_(right|left))?$/
     STYLE
       COLOR 0 0 200
+[% IF SMALL_SCREEN -%]
+      SIZE 3
+[% ELSE -%]
       SIZE 7
+[% END -%]
       SYMBOL 'oneway_arrow[% IF MAPSERVER_VERSION < 6 %]_10[% END %]'
 [% IF MAPSERVER_VERSION >= 6  -%]
       GAP -10
@@ -1912,6 +2008,32 @@ LAYER
   END
 END
 
+[% BLOCK CLASS_BAHNHOF -%]
+  CLASS
+    EXPRESSION [% expr %]
+[% IF symbol -%]
+    COLOR [% symbolcolor %]
+    SYMBOL '[% symbol %]'
+    SIZE [% symbolsize %]
+[% ELSE -%]
+    SYMBOL '[% IMAGE_DIR %]/[% imagename %][% imagesize %].[% IMAGE_SUFFIX %]'
+[% END -%]
+[% IF SMALL_SCREEN; SET SCALE_QUOTIENT = 3; ELSE; SET SCALE_QUOTIENT = 1; END -%]
+    [% IF maxscale %]MAXSCALE [% maxscale / SCALE_QUOTIENT %][% END %]
+    [% IF minscale %]MINSCALE [% minscale / SCALE_QUOTIENT %][% END %]
+[% IF do_label -%]
+    LABEL
+      POSITION auto
+      TYPE truetype
+      FONT "lucida"
+      SIZE 7
+      COLOR [% labelcolor %]
+      OUTLINECOLOR 225 225 225
+    END
+[% END -%]
+  END
+[% END -%]
+
 LAYER
   NAME "U-Bahnhof"
   GROUP bahn
@@ -1924,38 +2046,12 @@ LAYER
   LABELITEM 'NAME'
   CLASSITEM 'CAT'
 
-  CLASS
-    EXPRESSION /^U[ABC]?$/
-    COLOR 0 0 128
-    SYMBOL 'square'
-    SIZE 4
-    MINSCALE 75000
-  END
-  CLASS
-    EXPRESSION /^U[ABC]?$/
-    SYMBOL '[% IMAGE_DIR %]/ubahn_klein.[% IMAGE_SUFFIX %]'
-    MINSCALE 25000
-    MAXSCALE 75000
-  END
-  CLASS
-    EXPRESSION /^U[ABC]?$/
-    SYMBOL '[% IMAGE_DIR %]/ubahn.[% IMAGE_SUFFIX %]'
-    MAXSCALE 25000
-    MINSCALE 15000
-  END
-  CLASS
-    EXPRESSION /^U[ABC]?$/
-    SYMBOL '[% IMAGE_DIR %]/ubahn.[% IMAGE_SUFFIX %]'
-    MAXSCALE 15000
-    LABEL
-      POSITION auto
-      TYPE truetype
-      FONT "lucida"
-      SIZE 7
-      COLOR 0 0 128
-      OUTLINECOLOR 225 225 225
-    END
-  END
+[% PROCESS CLASS_BAHNHOF expr="/^U[ABC]?\$/" symbol="square" symbolcolor="0 0 128" symbolsize="4" minscale=150000 maxscale=undef  do_label=0 -%]
+[% PROCESS CLASS_BAHNHOF expr="/^U[ABC]?\$/" symbol=undef imagename="ubahn" imagesize="_mini"     minscale=75000  maxscale=150000 do_label=0 -%]
+[% PROCESS CLASS_BAHNHOF expr="/^U[ABC]?\$/" symbol=undef imagename="ubahn" imagesize="_klein"    minscale=25000  maxscale=75000  do_label=0 -%]
+[% PROCESS CLASS_BAHNHOF expr="/^U[ABC]?\$/" symbol=undef imagename="ubahn" imagesize=""        minscale=15000  maxscale=25000  do_label=0 -%]
+[% PROCESS CLASS_BAHNHOF expr="/^U[ABC]?\$/" symbol=undef imagename="ubahn" imagesize=""        minscale=undef  maxscale=15000  do_label=1 labelcolor="0 0 128" -%]
+
   TEMPLATE "query.html"
   HEADER "query_header2.html"
   FOOTER "query_footer2.html"
@@ -1982,38 +2078,11 @@ LAYER
   LABELITEM 'NAME'
   CLASSITEM 'CAT'
 
-  CLASS
-    EXPRESSION /^R[ABC]?$/
-    COLOR 0 128 0
-    SYMBOL 'circle'
-    SIZE 6
-    MINSCALE 75000
-  END
-  CLASS
-    EXPRESSION /^R[ABC]?$/
-    SYMBOL '[% IMAGE_DIR %]/eisenbahn_klein.[% IMAGE_SUFFIX %]'
-    MINSCALE 25000
-    MAXSCALE 75000
-  END
-  CLASS
-    EXPRESSION /^R[ABC]?$/
-    SYMBOL '[% IMAGE_DIR %]/eisenbahn.[% IMAGE_SUFFIX %]'
-    MINSCALE 15000
-    MAXSCALE 25000
-  END
-  CLASS
-    EXPRESSION /^R[ABC]?$/
-    SYMBOL '[% IMAGE_DIR %]/eisenbahn.[% IMAGE_SUFFIX %]'
-    MAXSCALE 15000
-    LABEL
-      POSITION auto
-      TYPE truetype
-      FONT "lucida"
-      SIZE 7
-      COLOR 0 128 0
-      OUTLINECOLOR 225 225 225
-    END
-  END
+[% PROCESS CLASS_BAHNHOF expr="/^R[ABC]?\$/" symbol="circle" symbolcolor="0 128 0" symbolsize="6"   minscale=150000 maxscale=undef  do_label=0 -%]
+[% PROCESS CLASS_BAHNHOF expr="/^R[ABC]?\$/" symbol=undef imagename="eisenbahn" imagesize="_mini"   minscale=75000  maxscale=150000 do_label=0 -%]
+[% PROCESS CLASS_BAHNHOF expr="/^R[ABC]?\$/" symbol=undef imagename="eisenbahn" imagesize="_klein"  minscale=25000  maxscale=75000  do_label=0 -%]
+[% PROCESS CLASS_BAHNHOF expr="/^R[ABC]?\$/" symbol=undef imagename="eisenbahn" imagesize=""        minscale=15000  maxscale=25000  do_label=0 -%]
+[% PROCESS CLASS_BAHNHOF expr="/^R[ABC]?\$/" symbol=undef imagename="eisenbahn" imagesize=""        minscale=undef  maxscale=15000  do_label=1 labelcolor="0 128 0" -%]
 
   TEMPLATE "query.html"
   HEADER "query_header2.html"
@@ -2040,38 +2109,12 @@ LAYER
   LABELITEM 'NAME'
   CLASSITEM 'CAT'
 
-  CLASS
-    EXPRESSION /^S[ABC]?$/
-    COLOR 0 128 0
-    SYMBOL 'circle'
-    SIZE 6
-    MINSCALE 75000
-  END
-  CLASS
-    EXPRESSION /^S[ABC]?$/
-    SYMBOL '[% IMAGE_DIR %]/sbahn_klein.[% IMAGE_SUFFIX %]'
-    MINSCALE 25000
-    MAXSCALE 75000
-  END
-  CLASS
-    EXPRESSION /^S[ABC]?$/
-    SYMBOL '[% IMAGE_DIR %]/sbahn.[% IMAGE_SUFFIX %]'
-    MINSCALE 15000
-    MAXSCALE 25000
-  END
-  CLASS
-    EXPRESSION /^S[ABC]?$/
-    SYMBOL '[% IMAGE_DIR %]/sbahn.[% IMAGE_SUFFIX %]'
-    MAXSCALE 15000
-    LABEL
-      POSITION auto
-      TYPE truetype
-      FONT "lucida"
-      SIZE 7
-      COLOR 0 128 0
-      OUTLINECOLOR 225 225 225
-    END
-  END
+[% PROCESS CLASS_BAHNHOF expr="/^S[ABC]?\$/" symbol="circle" symbolcolor="0 128 0" symbolsize="6" minscale=150000 maxscale=undef  do_label=0 -%]
+[% PROCESS CLASS_BAHNHOF expr="/^S[ABC]?\$/" symbol=undef imagename="sbahn" imagesize="_mini"     minscale=75000  maxscale=150000 do_label=0 -%]
+[% PROCESS CLASS_BAHNHOF expr="/^S[ABC]?\$/" symbol=undef imagename="sbahn" imagesize="_klein"    minscale=25000  maxscale=75000  do_label=0 -%]
+[% PROCESS CLASS_BAHNHOF expr="/^S[ABC]?\$/" symbol=undef imagename="sbahn" imagesize=""          minscale=15000  maxscale=25000  do_label=0 -%]
+[% PROCESS CLASS_BAHNHOF expr="/^S[ABC]?\$/" symbol=undef imagename="sbahn" imagesize=""          minscale=undef  maxscale=15000  do_label=1 labelcolor="0 128 0" -%]
+
   TEMPLATE "query.html"
   HEADER "query_header2.html"
   FOOTER "query_footer2.html"
@@ -2388,6 +2431,11 @@ TRANSPARENCY 50 ##XXX Wie am geschicktesten verwenden?
 
   CLASS
     NAME "Route"
+[% IF SMALL_SCREEN -%]
+    COLOR 255 0 255
+    SYMBOL 'width'
+    SIZE 4
+[% ELSE -%]
 [% IF MAPSERVER_VERSION < 6 && MAPSERVER_DRIVER == "AGG" -%]
     COLOR 150 0 0
     SIZE 11
@@ -2416,6 +2464,7 @@ TRANSPARENCY 50 ##XXX Wie am geschicktesten verwenden?
       GAP 25
 [% END -%]
     END
+[% END -%]
 [% END -%]
   END
   METADATA

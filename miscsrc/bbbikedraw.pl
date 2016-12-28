@@ -32,6 +32,7 @@ my @restrict;
 my $outfile;
 my $dimfile;
 my $ipaq = 0; # optimizations for the ipaq (line widths...)
+my $small_screen;
 my $outline;
 my @outlinecat;
 my $outtype;
@@ -67,6 +68,7 @@ if (!GetOptions("w=i" => \$w,
 		"outlinecat=s" => sub { @outlinecat = split /,/, $_[1] },
 		"outtype|imagetype=s" => \$outtype,
 		"ipaq!" => \$ipaq,
+		"smallscreen!" => \$small_screen,
 		"scope=s" => \$scope,
 		"datadirs=s" => sub { unshift @Strassen::datadirs, split /,/, $_[1] },
 		"fillimage!" => \$fill_image,
@@ -95,6 +97,7 @@ if ($q) {
 if ($debug) {
     # XXX this list is not comprehensive yet
     $BBBikeDraw::GoogleMapsStatic::DEBUG = $BBBikeDraw::GoogleMapsStatic::DEBUG = 1;
+    $BBBikeDraw::MapServer::DEBUG        = $BBBikeDraw::MapServer::DEBUG        = 1;
 }
 
 if (!defined $geometry) {
@@ -121,6 +124,9 @@ if ($ipaq) {
 					 N  => 1,
 					 NN => 1,
 					};
+}
+if ($small_screen) {
+    push @extra_args, SmallScreen => 1;
 }
 if (defined $outline) {
     push @extra_args, Outline => $outline;

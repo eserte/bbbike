@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003-2008,2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003-2008,2010,2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -22,7 +22,7 @@ use Carp qw(confess);
 use vars qw($VERSION $DEBUG %color %outline_color %width);
 
 $DEBUG = 0 if !defined $DEBUG;
-$VERSION = sprintf("%d.%02d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.46';
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -184,7 +184,7 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
 
     use base qw(Class::Accessor);
     use vars qw(@accessors @computed_accessors);
-    @accessors = qw(Width Height Imagecolor Transparent BBox
+    @accessors = qw(Width Height Imagecolor Transparent BBox SmallScreen
 		    ColorGreyBg ColorWhite ColorYellow ColorRed ColorGreen
 		    ColorMiddleGreen ColorDarkGreen ColorLightGreen ColorDarkBlue
 		    ColorLightBlue ColorRose ColorBlack
@@ -246,6 +246,8 @@ $VERSION = sprintf("%d.%02d", q$Revision: 1.45 $ =~ /(\d+)\.(\d+)/);
 	$self->Height($h);
 	$self->ImageType($args{imagetype}) 
 	    if defined $args{imagetype};
+	$self->SmallScreen($args{smallscreen}) 
+	    if defined $args{smallscreen};
 	$self;
     }
 
@@ -367,6 +369,7 @@ sub init {
 	$im = BBBikeDraw::MapServer::Image->new
 	    ($self->{Width},$self->{Height},
 	     imagetype => $self->msImageType,
+	     smallscreen => $self->{SmallScreen},
 	    );
     }
 

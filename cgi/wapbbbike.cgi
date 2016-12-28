@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000,2001,2003,2004,2009,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2001,2003,2004,2009,2012,2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -288,9 +288,10 @@ sub _any_image {
 		}
 		$imagetype = "png";
 	    }
-	    $extra_args{Conf} = BBBikeDraw::MapServer::Conf->bbbike_cgi_ipaq_conf
+	    $extra_args{Conf} = BBBikeDraw::MapServer::Conf->bbbike_cgi_conf
 		(ImageType => $imagetype);
 	    $extra_args{Module} = "MapServer";
+	    $extra_args{SmallScreen} = 1;
 	}
     }
 

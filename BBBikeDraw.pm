@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2008,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2008,2012,2016 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +20,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION $bahn_bau_rx $tunnel_qr);
 
-$VERSION = 3.64;
+$VERSION = 3.65;
 
 $bahn_bau_rx = qr{^[SRU](?:0|Bau|G|P)(?:::|$)}; # auch ignorieren: Güterbahnen, Parkbahnen
 
@@ -105,6 +105,11 @@ sub new {
     }
 
     bless $self, $pkg;
+
+    # driver-specific options
+    if ($pkg eq 'BBBikeDraw::MapServer') {
+	$self->{SmallScreen} = delete $args{SmallScreen};
+    }
 
     my $noinit = delete $args{NoInit};
 
