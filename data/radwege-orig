@@ -87,15 +87,14 @@ asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9233,8597 9229,8718
 	RW1;RW1 8739,6701 8722,6656
 	RW3;RW3 8722,6656 8707,6537 8697,6455 8680,6322
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/sbl_stand_2015_08_24.pdf?start&ts=1440409042&file=sbl_stand_2015_08_24.pdf
-#: XXX Radspuren in Bau vvv
 #: osm_watch: way id="30709741" version="12"
 #: osm_watch: way id="354645896" version="2"
+#: XXX laut osm mittlerweile überall "lane", Benutzungspflicht überpürfen
 #: last_checked: 2016-10-10 vvv
 #: next_check: 2016-12-20
 #: source_id: 2147340437
-	RW1;RW3 8680,6322 8661,6169 8642,5998
+	RW3;RW3 8680,6322 8661,6169 8642,5998
 #: last_checked ^^^
-#: XXX ^^^
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.506616.php --- #: source_id: 2147340425 --- #: next_check: 2016-10-07
 	RW3;RW3 8642,5998 8627,5866
 	RW3; 8627,5866 8613,5745
@@ -1027,11 +1026,11 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: next_check_id: ZEUGHAUS-2014
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 #: XXX siehe auch 3nocross in gesperrt-orig
-#: XXX laut rbbtext bis 31.05.2016, laut vmz bis Ende 2016
+#: XXX laut rbbtext bis 31.05.2016, laut vmz bis Ende 2016, laut fritz bis 8. März 2017
 #: source_id: INKO_113041
 #: source_id: 2147339528
 #: last_checked: 2016-12-23
-#: check_frequency: 60d
+#: next_check: 2017-03-08
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 9695,12390 9656,12386 9601,12380
 # 

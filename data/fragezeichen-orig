@@ -32,7 +32,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2016-12-22
+#: last_checked: 2017-01-03
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -498,7 +498,7 @@ Christoph-Ruden-Straße - Buckower Damm: Herstellung eines öffentlichen Rad- und 
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-35a/index.shtml
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-35a/download/15099800_BBP_1-35a_Planzeichnung.pdf
 #: XXX Bebauungsplan 1-35a (Kulturforum)
-#: next_check: 2017-01-01
+#: next_check: 2017-07-01
 Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::projected 8083,11381 7970,11441 7954,11399 7965,11380 7934,11275
 # 
 # REMOVED --- #: XXX während der Bauarbeiten Einbahnstraßenregelungen -> siehe temp_blockings --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.450655.php --- #: last_checked: 2016-04-30 --- #: next_check: 2016-05-30 --- Köllnische Str.: Bauarbeiten, danach vermutlich asphaltiert	?::inwork 18659,5330 18820,5275 18942,5236 18999,5237 19031,5316
@@ -582,11 +582,11 @@ Dahlemer Weg: Radwege werden durch Radspuren ersetzt	?::projected 2152,2912 2198
 #: XXX außerdem: Vorfahrtsregelung werden geändert (zum Am Falkenberg) oder spezifiziert (zur Buntzelstr.)
 #: XXX komplettes Bauende 2018
 #: osm_watch: way id="147717029" version="6"
-#: osm_watch: way id="151627031" version="8"
+#: osm_watch: way id="151627031" version="9"
 #: last_checked: 2016-07-23 vvv
 #: next_check: 2017-04-15 vvv
 Bohnsdorfer Kreisel: Bau von Radspuren in beiden Richtungen; Aufhebung der Einbahnstraßenregelung	?::projected 22007,711 22062,773 22120,886 22092,999 22044,1018 21977,988
-#: osm_watch: way id="185511108" version="7"
+#: osm_watch: way id="185511108" version="8"
 Bohnsdorfer Kreisel: Einbahnstraße wird aufgehoben	?::projected 21977,988 21894,881 21862,807 22007,711
 #: next_check ^^^
 #: last_checked ^^^
@@ -649,10 +649,11 @@ Rathaus Wedding: ändert sich was während/nach der Bauarbeiten am Rathausplatz?	?
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6811
 #: XXX Bauarbeiten in Gange
 #: XXX unnötiger Punkt kann danach entfernt werden
+#: XXX laut vmz bis Ende Januar 2017, laut fritz bis 31.01.2017
 #: source_id: 2147340412
 #: osm_watch: node id="506261205" version="6"
 #: last_checked: 2016-12-10
-#: check_frequency: 60d
+#: next_check: 2017-01-31
 Rummelsburger/Zachertstr.: Ampel wird verlegt (auf die Ostseite)	?::inwork 17834,11192 17848,11204
 # 
 # REMOVED (kaum Änderungen) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20141028.1510.399863.html --- #: XXX Bauende voraussichtlich zum Jahresende --- #: next_check: 2014-12-31 --- Wege im Springpfuhlpark: gibt es danach relevante Änderungen?	?::inwork 19565,13893 19547,14042 19544,14234 19545,14290 19535,14448 19534,14459 19524,14474
@@ -1087,7 +1088,7 @@ Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbi
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012
-#: last_checked: 2016-11-22
+#: last_checked: 2017-01-03
 #: check_frequency: 180d
 Planstraße C: Einfahrten existieren noch, aber statt einer Straße ist hier nur ein Parkplatz	?::projected 12926,11224 12848,11093
 # 
@@ -1109,7 +1110,7 @@ Humboldtinsel: liegt die Straße hier? ausgeschildert? Qualität?	?::inwork 1687,2
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_10_18.pdf?start&ts=1350628483&file=stra__enbauliste_stand_2012_10_18.pdf
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_11_30.pdf?start&ts=1354267767&file=stra__enbauliste_stand_2012_11_30.pdf
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_11_08.pdf?start&ts=1383903600&file=stra__enbauliste_stand_2013_11_08.pdf
-#: osm_watch: way id="4663347" version="19"
+#: osm_watch: way id="4663347" version="20"
 #: last_checked: 2016-10-10 (Bauarbeiten sind schon lange beendet, aber es wurde nicht markiert?)
 #: check_frequency: 180d
 Ordensmeisterstr.: werden die Radspuren noch weiter geführt?	?::projected 10254,5921 10027,5868 9796,5790
@@ -1576,6 +1577,8 @@ Bebauungsplanverfahren XXI-41b: ändert sich hier an den Wegen etwas?	?::projecte
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+Anna-Ebermann-Str. [Wohngebiet]: Qualität?	? 17753,16604 17759,16658 17863,16815
+# 
 Bolle-Gelände/Alte Meierei: Weg eintragen? Wie ist die Qualität hier? Gibt es Bordsteine o.ä.?	? 6439,13163 6402,12975
 # 
 #: XXX laut Fritz bis 30.09.2017
@@ -1744,7 +1747,8 @@ Monumentenstr. 13d: wird hier ein verkehrsberuhigter Bereich ausgewiesen?	? 8014
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/tunnel-adenauerplatz/download/bauphase3.pdf
 #: XXX Richtung Norden: Beginn: voraussichtlich im I. Quartal 2017. Die Dauer der Bauphase beträgt ca. zwei Monate.
 #: XXX Richtung Süden: Beginn: voraussichtlich im II. Quartal 2017. Die Dauer der Bauphase beträgt ca. zwei Monate.
-#: next_check: 2017-01-01
+#: source_id: 2147340386
+#: next_check: 2017-01-31
 Adenauerplatz: Behinderungen für Radfahrer während der Bauarbeiten	?::projected 3813,10435 3777,10513 3744,10577 3644,10759
 # 
 # REMOVED (ja --- aber ich habe keine Möglichkeit, das darzustellen) --- #: XXX NEW	Lückstr. (Rummelsburg) in beiden Richtungen zwischen Weitlingstr. und Rummelsburger Str. (Berlin)  Gültig ab: 14.07.2016 15:00  Baustelle, für beide Richtungen abwechselnd nur ein Fahrstreifen / Baustellenampel (bis Mitte 09/16)	2147340309 --- #: XXX laut fritz bis 09.09.2016 --- Lückstr.: abwechselnd freie Fahrspur, Behinderungen für Radfahrer?	? 16601,10650 16647,10632
@@ -1851,7 +1855,7 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7478
 #: XXX "noch 2016"
-#: last_checked: 2016-12-21 vvv
+#: last_checked: 2017-01-03 vvv
 #: check_frequency: 21d vvv
 #: priority: #C vvv
 #: osm_watch: note 814292 1
@@ -2386,7 +2390,7 @@ Weg H: Steigung müsste in die andere Richtung verlaufen!	? 27961,699 28083,592
 #: last_checked: 2015-08-01
 #: check_frequency: 360d
 Parchwitzer Str.: wurden die Kopfsteinpflasterabschnitte verbessert?	?::projected 22047,-1042 21945,-1031 21828,-1015 21734,-1002 21654,-992 21615,-979 21487,-912 21403,-859
-#: osm_watch: way id="9702843" version="15"
+#: osm_watch: way id="9702843" version="16"
 #: last_checked: 2016-07-16
 #: check_frequency: 100d
 Josef-Nawrocki-Str.: Einbahnstraße soll freigegeben werden	?::projected 25552,4829 25554,4758 25695,4714 25724,4706 25802,4681
@@ -2964,8 +2968,8 @@ Bebauungsplan XXI-34a: evtl. entstehen hier neue Straßen	?::projected 20649,1162
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036554746315/554746315/00071216/16-Dateien/image001.png
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7240
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4237
-#: XXX bei http://fbinter.stadt-berlin.de/fb/index.jsp?Szenario=light auf der Karte "Ortsteile von Berlin" nachschauen
-#: next_check: 2016-12-31
+#: XXX_indoor bei http://fbinter.stadt-berlin.de/fb/index.jsp?Szenario=light auf der Karte "Ortsteile von Berlin" nachschauen
+#: next_check: 2017-03-31
 Wedding/Prenzlauer Berg: Bezirksgrenzen werden verändert	?::projected 10271,14950 10208,14922 10053,15214 10031,15395 9976,15546 9941,15627 10042,15640
 # 
 # REMOVED --- #: XXX wird erst im April eröffnet --- #: by: http://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20160213 --- #: note: category RB --- #: next_check: 2016-04-01 --- Berlin-Schöneweide	? 17722,5573
@@ -3037,7 +3041,7 @@ Güterbahnhof Wilmersdorf: vermutlich wird die Straße während der Bauarbeiten ges
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/53re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: XXX Berlin.coords.data-Eintrag fehlt, PLZ=14089
 #: XXX ist das der Bebauungsplan 5-93?
-#: osm_watch: way id="377485132" version="1"
+#: osm_watch: way id="377485132" version="2"
 #: next_check: 2016-07-04
 Johannes-Guthmann-Weg: neue Straße entsteht, vermutlich hier? Qualität?	?::inwork -6451,5740 -6613,5849 -6669,5847
 # 
@@ -5060,8 +5064,8 @@ Uni Potsdam: Qualität des Wegs?	? -8196,-1912 -8174,-1783 -8157,-1670
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20151009
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.480057.php
-#: osm_watch: way id="152466411" version="2"
-#: osm_watch: way id="81283639" version="5"
+#: osm_watch: way id="152466411" version="3"
+#: osm_watch: way id="81283639" version="6"
 #: last_checked: 2017-07-23 vvv
 #: next_check: 2016-09-01 vvv
 Keltensteig - Teutonenstr.: ist nach der Fahrbahninstandsetzung die Qualität besser geworden?	? 20302,1613 20369,1476 20405,1460 20580,1406
@@ -5083,3 +5087,5 @@ Leonorenstr. - Edenkobener Weg: existiert hier eine Verbindung für Radfahrer? Qu
 # 
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/content/protokoll_der_12._sitzung_fahr_rat.pdf
 Mäckeritzbrücke: gibt es hier noch Radwege? Wenn ja, sind sie benutzungspflichtig?	? 1238,15705 1232,15804
+# 
+Christophstr.: existiert an dieser Stelle nur ein Fußweg? Qualität?	? 17938,16672 17923,16686

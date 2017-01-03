@@ -24550,8 +24550,8 @@ EOF
 EOF
      },
      { from  => 1443650400, # 2015-10-01 00:00
-       until => undef, # 1483225199, # 2016-12-31 23:59
-       text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Klosterbuschweg und Finkenkruger Weg, stadteinwärts gesperrt, Ende unbekannt',
+       until => $isodate2epoch->("2017-03-31 12:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
+       text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Klosterbuschweg und Finkenkruger Weg, stadteinwärts gesperrt, bis voraussichtlich Ende März 2017',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367070.php',
        data  => <<EOF,
@@ -25557,7 +25557,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.515606.php',
        data  => <<EOF,
 #: XXX Wann sind die Bauarbeiten beendet? Wird die Qualität danach besser sein? vvv
-#: osm_watch way id="136814135" version="14" vvv
+#: osm_watch: way id="136814135" version="15" vvv
 #: last_checked: 2016-09-18 vvv
 #: check_frequency: 60d vvv
 userdel	2::inwork 3332,12742 3396,12741 3358,12718
