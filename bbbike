@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (c) 1995-2016 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2017 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -10322,11 +10322,6 @@ sub plotstr {
     }
 
     handle_global_directives($str, $abk);
-    # XXX obsolete:
-    if (defined $filename && -e "$filename.desc") {
-	require BBBikeAdvanced;
-	read_desc_file("$filename.desc", $abk);
-    }
 
     if ($str_name_draw{$abk}) {
 	require Tk::RotFont;
@@ -11910,11 +11905,6 @@ sub plot_point {
 	}
 
 	handle_global_directives($bhf, $abk);
-	# XXX obsolete:
-	if (-e "$filename.desc") {
-	    require BBBikeAdvanced;
-	    read_desc_file("$filename.desc", $abk);
-	}
 
 	my $complete_str = $bhf;
 	my $diffed_str = 0;

@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2008,2012,2013,2014,2015,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2008,2012,2013,2014,2015,2016,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -311,15 +311,8 @@ sub custom_draw {
 	$file = $tmpfile;
     }
 
-    @BBBike::ExtFile::scrollregion = ();
-    undef $BBBike::ExtFile::center_on_coord;
     $fileref->{$abk} = $file;
-    # zusätzliches desc-File einlesen:
-    if ($file =~ /(.*)\.bbd(\.gz)?$/) {
-	my $desc_file = "$1.desc";
-	warn "Try to load description file $desc_file"
-	    if $verbose;
-	read_desc_file($desc_file, $abk); # XXX obsolete
+    if ($file =~ /.*\.bbd(\.gz)?$/) {
 	handle_global_directives($file, $abk);
     }
 
@@ -364,9 +357,6 @@ sub custom_draw {
 	$c->bind($_, "<ButtonRelease-1>" => \&set_route_point);
     }
 
-    if (@BBBike::ExtFile::scrollregion) {
-	set_scrollregion(@BBBike::ExtFile::scrollregion);
-    }
     if ($auto_enlarge_scrollregion) {
 	eval {
 	    enlarge_scrollregion_for_layer($abk);
@@ -376,21 +366,11 @@ sub custom_draw {
 	}
     }
 
-    if ($BBBike::ExtFile::p_attrib && $linetype eq 'p') {
-	$p_attrib{$abk} = $BBBike::ExtFile::p_attrib;
-    } else {
-	delete $p_attrib{$abk};
-    }
-    if ($BBBike::ExtFile::str_attrib && $linetype eq 'str') {
-	$str_attrib{$abk} = $BBBike::ExtFile::str_attrib;
-    } else {
-	delete $str_attrib{$abk};
-    }
+    delete $p_attrib{$abk};
+    delete $str_attrib{$abk};
 
     my $coord;
-    if (defined $BBBike::ExtFile::center_on_coord) {
-	$coord = $BBBike::ExtFile::center_on_coord;
-    } elsif ($center_beginning) {
+    if ($center_beginning) {
 	if ($layer_obj) {
 	    my $r = $layer_obj->get(0);
 	    if ($r) {
@@ -412,43 +392,6 @@ sub custom_draw {
     $file; # return filename
 }
 
-sub read_desc_file {
-    warn "Using .desc files is obsolete, please consider to switch to global in-file directives. See doc/bbd.pod for some information";
-    my $desc_file = shift;
-    my $abk = shift;
-    @BBBike::ExtFile::scrollregion = ();
-    if (-r $desc_file && -f $desc_file) {
-	warn "Read $desc_file...\n" if $verbose;
-	require Safe;
-	#XXX problems!
-	#require Symbol;
-	#Symbol::delete_package("BBBike::ExtFile");
-	my $compartment = new Safe("BBBike::ExtFile");
-	if (defined $abk) {
-	    $BBBike::ExtFile::abk = $BBBike::ExtFile::abk = $abk;
-	}
-	# $str_attrib and $p_attrib should be used in favour of
-	# %str_attrib and %p_attrib
-	my @shared_symbols =
-	    qw(%line_width %line_length
-	       %str_color  %outline_color
-	       %str_attrib %p_attrib
-	       $str_attrib $p_attrib
-	       %category_size %category_color %category_width %category_image
-	       %category_stipple
-	      );
-	$compartment->share(@shared_symbols);
-	$compartment->rdo($desc_file);
-	warn $@ if $@;
-	no strict 'refs';
-	for my $symbol (@shared_symbols) {
-	    $symbol =~ s/^.//;
-	    undef *{"BBBike::ExtFile::$symbol"};
-	}
-    }
-}
-
-# e.g. from .desc files
 sub set_scrollregion {
     my @in = @_;
     @scrollregion = (transpose(@in[0,3]), transpose(@in[2,1]));
@@ -508,23 +451,6 @@ sub enlarge_scrollregion_for_layer {
     DecBusy($top);
     if ($err) {
 	status_message($err, 'die');
-    }
-}
-
-sub enlarge_scrollregion_from_descfile {
-    my $f = shift;
-    if (!defined $f) {
-	$f = $top->getOpenFile(-filetypes => [
-					      [M"Desc-Dateien", '.desc'],
-					      [M"Alle Dateien", '*'],
-					     ]);
-    }
-    if (defined $f) {
-	# XXX replace with handle_global_directives function
-	read_desc_file($f);
-	if (@BBBike::ExtFile::scrollregion) {
-	    enlarge_scrollregion(@BBBike::ExtFile::scrollregion);
-	}
     }
 }
 
