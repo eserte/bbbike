@@ -493,7 +493,6 @@ sub plot_additional_layer {
 #    } else {
 	die "Unknown linetype $linetype, should be str, sperre or p";
     }
-    warn "Use new Layer $abk\n";
     add_to_stack($abk, "before", "pp");
 
     my @args;

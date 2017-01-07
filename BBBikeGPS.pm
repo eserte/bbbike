@@ -697,14 +697,15 @@ sub BBBikeGPS::do_draw_gpsman_data {
 	    $alt =~ s{^\?}{} if defined $alt; # XXX remove the "question mark" hack from altitudes, should really be done in GPS::GpsmanData!
 	    my $acc = $wpt->Accuracy;
 	    my $pointname;
+	    my $comment_add = (defined $wpt->Comment && $wpt->Comment ne ""
+			       ? "/" . $wpt->Comment
+			       : ''
+			      );
 	    if ($draw_point_names) {
-		$pointname = $wpt->Ident;
-		if (defined $wpt->Comment && $wpt->Comment ne "") {
-		    $pointname .= "/" . $wpt->Comment;
-		}
+		$pointname = $wpt->Ident . $comment_add;
 	    } else {
 		$pointname =
-		    $base . "/" . $wpt->Ident . "/" . $wpt->Comment .
+		    $base . "/" . $wpt->Ident . $comment_add .
 			(defined $alt ? " alt=".sprintf("%.1fm",$alt) : "") .
 			    " long=" . Karte::Polar::dms_human_readable("long", Karte::Polar::ddd2dms($wpt->Longitude)) .
 				" lat=" . Karte::Polar::dms_human_readable("lat", Karte::Polar::ddd2dms($wpt->Latitude));

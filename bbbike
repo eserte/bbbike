@@ -8198,7 +8198,6 @@ sub set_route_point {
 	} elsif ($search_route_flag) {
 	    search_route_mouse();
 	} else {
-	    warn "XXX activating....";
 	    $search_route_flag = "start";
 	    search_route_mouse();
 	}
@@ -21465,7 +21464,9 @@ sub load_photo {
 			}
 		    }
 		    if (!defined $path) {
-			warn "Could not find photo, try <$file> in some \@INC dirs...\n"; # XXX should never happen?
+			# Some images are located in misc (e.g.
+			# verkehrszeichen/*.svg) which is in @INC and
+			# found here:
 			$path = Tk::findINC($file);
 		    }
 		}
@@ -22198,8 +22199,10 @@ sub get_image {
 		if (defined $try_file) {
 		    $file = $try_file;
 		} else {
-		    warn "Could not find $file in images, try in \@INC..."; # XXX should never happen?
 		    $file = Tk::findINC($file);
+		    if (defined $file) {
+			warn "Unexpected: found image <$file> through searching in \@INC..."; # XXX should never happen?
+		    }
 		}
 		#warn "Try $file...\n";
 		$p = $c->Photo(-file => $file)
@@ -22271,7 +22274,6 @@ sub get_image_for_any {
 	    } else {
 		$p = get_image($base, $realfile);
 		if (!$p) {
-		    warn "Try $abs_realfile...\n";
 		    $p = $c->Photo(-file => $abs_realfile);
 		}
 	    }
