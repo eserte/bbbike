@@ -66,9 +66,9 @@ Rigaer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 14133,12482 14266,12446
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.513299.php
 #: source_id: 2147340484
 #: last_checked: 2016-09-14
-#: next_check: 2017-01-09
+#: next_check: 2017-02-04
 #: priority: #A
-#: valid: -20170228
+#: valid: -20170204
 Mariendorfer Damm: Fahrbahn zwischen Prinzenstr. und Richterstr. gesperrt	q4::inwork; 9333,4229 9346,4144 9372,4012
 # 
 ### Treptow ###
@@ -265,14 +265,7 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED --- #: last_checked: 2012-09-19 vvv--- #: next_check: 2012-10-19 vvv --- #: note: komplette Fertigstellung und Verkehrsfreigabe im Fr¸hjahr 2013 --- Rathausstr. und Rathausbr¸cke: Behinderungen wegen Bauarbeiten mˆglich	q1::inwork 10285,12306 10362,12351 10416,12394 --- #: next_check: ^^^ --- #: last_checked: ^^^
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10072,11384 9945,11371 9737,11349
 # REMOVED (das Einfahrt verboten-Schild h‰ngt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9949,11470 9935,11566
-# 
-#: last_checked: 2016-12-06 vvv
-#: check_frequency: 30d vvv
-Neue Jakobstr. [Wohngebiet]: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10963,11695 11017,11658
-Neue Jakobstr. [Wohngebiet]: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 11017,11658 11131,11579
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
+# REMOVED (weitgehend fertig) --- #: last_checked: 2016-12-06 vvv --- #: check_frequency: 30d vvv --- Neue Jakobstr. [Wohngebiet]: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10963,11695 11017,11658 --- Neue Jakobstr. [Wohngebiet]: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 11017,11658 11081,11614 11131,11579
 # REMOVED --- #: XXX laut fritz bis 29.07.2016 --- #: source_id: 2147339998 --- #: last_checked: 2016-10-28 --- #: check_frequency: 14d --- Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10256,11160 10437,11352
 # REMOVED --- #: last_checked: 2016-10-06 vvv --- Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q4::inwork; 10489,11405 10624,11548
 # REMOVED --- Alte Jakobstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10437,11352 10489,11405
@@ -3396,7 +3389,7 @@ Melanchthonstr.: Bordsteinkante, Fuﬂg‰nger	q2 2889,22741 2857,22756
 Rabenhorststr.: enge Straﬂe	q0- -1726,19725 -1739,19803 -1681,19955 -1630,20086 -1596,20184 -1578,20228
 # 
 #: by: Reinhard Graeff:
-Sch‰ferstr. (Spandau): enge Straﬂe	q1 -2915,15994 -2798,16005 -2638,16026
+Sch‰ferstr. (Spandau): enge Straﬂe	q1 -2915,15994 -2673,16021 -2656,16010
 #: by: anonymous
 #: corrected_by: srt/policy (q1 -> q0-)
 Feldspatweg: enge Straﬂe	q0- 11407,1592 11369,1585 11180,1623 11025,1657 10981,1665 10943,1661 10907,1651 10860,1620 10831,1585 10810,1533 10807,1497 10816,1411 10868,1281
@@ -3622,7 +3615,7 @@ Kaiser-Wilhelm-Str. - Langkofelweg: Fuﬂg‰nger	q2 6957,3699 6998,3596
 #: by: Franziska (ushuaia): vvv
 (Uferweg im Wrˆhm‰nnerpark): Fuﬂg‰nger, f¸r Radfahrer nicht freigegeben, ggfs. schieben	q3 -3066,14718 -3030,14844 -2998,14879 -3008,14910 -3008,14992 -2965,15053 -2929,15082 -2955,15129
 #: note: "ruhige Wohnstraﬂe, mehr oder weniger einspurig"
-Sch¸tzenstr. (Spandau): enge Straﬂe	q1 -2869,15782 -2859,15785 -2821,15850 -2638,16026 -2624,16049
+Sch¸tzenstr. (Spandau): enge Straﬂe	q1 -2869,15782 -2859,15785 -2821,15850 -2656,16010 -2624,16049
 #: note: einspurige Straﬂe, auf der auch Autos parken kˆnnen
 #: corrected_by: srt (q2 -> q1)
 Fliegerhorstsiedlung: enge Straﬂe	q1 -7330,7878 -7305,7838 -7266,7775 -7168,7825 -7099,7851 -7096,7881 -7114,7900 -7146,7905 -7305,7838

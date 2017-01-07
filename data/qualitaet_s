@@ -3232,6 +3232,7 @@ Am Bootshaus: Verbundsteinpflaster	Q1 -2561,16206 -2545,16291 -2507,16292 -2506,
 (Uferweg - Havelschanze/Schützenstr.): Asphalt	Q0 -2509,16050 -2561,16053
 (Havelschanze - Schützenstr.): Asphalt mit Schäden	Q1 -2561,16053 -2624,16049
 Parkstr. (Hakenfelde): Kopfsteinpflaster	Q2 -2856,15687 -2744,15690
+Parkstr. (Hakenfelde): Asphalt	Q0 -2744,15690 -2699,15738 -2627,15979 -2656,16010
 Triftstr. (Hakenfelde, Spandau): Asphalt	Q0 -2992,15271 -2903,15237 -2890,15231 -2830,15208
 Krienickesteig: Asphalt	Q0 -2903,15237 -2878,15304
 Schürstr.: Asphalt	Q0 -2980,13874 -2974,13922
@@ -6766,8 +6767,8 @@ Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 (Fischerstr. - Lückstr.): Beton mit Schäden	Q1 16587,10613 16601,10650
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 Rüdersdorfer Str. [Rückseite]: Beton	Q0 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
-Neue Jakobstr. [Wohngebiet]: Beton, Kopfsteinpflasterabschnitt	Q1 11131,11579 11017,11658
-Neue Jakobstr. [Wohngebiet]: Beton	Q1 11017,11658 10963,11695
+Neue Jakobstr. [Wohngebiet]: Beton, Kopfsteinpflasterabschnitt	Q1 11131,11579 11081,11614
+Neue Jakobstr. [Wohngebiet]: Asphalt	Q0 11081,11614 11017,11658 10963,11695
 (Wohngebiet): Beton	Q0 11052,11414 11131,11579 11166,11664
 (Wohngebiet): Beton und Verbundsteinpflaster	Q1 11166,11664 11080,11712 11017,11658
 Fischerinsel [Wohngebiet]: Beton mit einigen Schäden	Q1 10604,11941 10474,11843 10435,11813 10376,11879
@@ -12664,7 +12665,7 @@ Kandeler Weg: guter Asphalt	Q0 -4541,14893 -4542,14942 -4526,14971 -4489,15014
 Rüdigerstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 13255,21282 13107,21357
 Rabenhorststr.: gutes Verbundsteinpflaster	Q1 -1726,19725 -1739,19803 -1681,19955 -1630,20086 -1596,20184 -1578,20228
 Lorenzweg: guter Asphalt	Q0 9456,5644 9482,5557
-Schäferstr. (Spandau): guter Asphalt	Q0 -2915,15994 -2798,16005 -2638,16026
+Schäferstr. (Spandau): guter Asphalt	Q0 -2915,15994 -2673,16021 -2656,16010
 Eisvogelweg: Kopfsteinpflaster	Q2 691,4474 661,4492 635,4524 595,4594 542,4699 528,4747
 Külzer Str.: Asphalt	Q0 5674,5901 5659,5871 5642,5851 5601,5826
 Frankenwaldstr.: guter Asphalt	Q0 -5470,15750 -5452,15804 -5426,15856 -5407,15914 -5377,16017 -5356,16064 -5292,16239
@@ -13294,7 +13295,7 @@ Melsunger Str.: mäßiger Asphalt	Q1 -4691,8899 -4786,8847 -5071,8864 -5382,8880
 (Bergstr. - Brunsbütteler Damm): Asphalt	Q0 -7273,13354 -7237,13461
 (Uferweg im Wröhmännerpark): fester Sandweg, gut befahrbar	Q1 -3066,14718 -3030,14844 -2998,14879 -3008,14910 -3008,14992 -2965,15053
 (Uferweg im Wröhmännerpark): gepflastert	Q1 -2965,15053 -2929,15082 -2955,15129
-Schützenstr. (Spandau): guter Asphalt	Q0 -2869,15782 -2859,15785 -2821,15850 -2638,16026 -2624,16049
+Schützenstr. (Spandau): guter Asphalt	Q0 -2869,15782 -2859,15785 -2821,15850 -2656,16010 -2624,16049
 Fliegerhorstsiedlung: guter Asphalt	Q0 -7330,7878 -7305,7838 -7266,7775 -7168,7825 -7099,7851 -7096,7881 -7114,7900 -7146,7905 -7305,7838
 Kramstaweg: guter Asphalt	Q0 -1174,2516 -1141,2413 -1146,2269 -1006,2269
 Ravenweg: guter Asphalt	Q0 -1097,2546 -1006,2269 -987,2203
