@@ -156,6 +156,8 @@ OSMOSIS_JAR=	/opt/osmosis-0.24.1-java5/osmosis.jar
 OSMOSIS_JAR=	/usr/local/src/osmosis-0.24.1-java5/osmosis.jar
 .endif
 
+BERLIN_OSM_BZ2?=	download/osm/berlin.osm.bz2
+
 # XXX maybe bzip2 (on the fly) the output?
 split-berlin-brandenburg-from-germany:	${OSM_DOWNLOAD_DIR}/germany.osm.bz2
 	java -jar ${OSMOSIS_JAR} --rx ${OSM_DOWNLOAD_DIR}/germany.osm.bz2 --bb top=53.42 bottom=51.44 left=11.6 right=14.8 --wx ${OSM_DOWNLOAD_DIR}/berlin-brandenburg-splitted.osm
@@ -166,7 +168,7 @@ convert-splitted-berlin-brandenburg:
 	${OSM2BBD_POSTPROCESS} ../data_berlin_brandenburg_osm_bbbike
 
 convert-data_berlin_brandenburg_osm_bbbike:
-	${OSM2BBD} -country de -lang de -map bbbike -v -f -o ../data_berlin_brandenburg_osm_bbbike download/osm/berlin.osm.bz2 download/osm/brandenburg.osm.bz2
+	${OSM2BBD} -country de -lang de -map bbbike -v -f -o ../data_berlin_brandenburg_osm_bbbike ${BERLIN_OSM_BZ2} download/osm/brandenburg.osm.bz2
 	${OSM2BBD_POSTPROCESS} ../data_berlin_brandenburg_osm_bbbike
 
 # Currently brandenburg.osm.bz2 contains also berlin
@@ -192,12 +194,12 @@ data_berlin_osm_bbbike_tiled:
 data_berlin_osm_bbbike: data_berlin_osm_bbbike_untiled
 
 data_berlin_osm_bbbike_untiled:
-	${OSM2BBD} -map bbbike -experiment handle_relations -v -f -o ../data_berlin_osm_bbbike download/osm/berlin.osm.bz2
+	${OSM2BBD} -map bbbike -experiment handle_relations -v -f -o ../data_berlin_osm_bbbike ${BERLIN_OSM_BZ2}
 	${OSM2BBD_POSTPROCESS} ../data_berlin_osm_bbbike
 
 # WGS84 version - note that still bbbike and bbbike.cgi cannot handle this correctly
 data_berlin_osm_untiled:
-	${OSM2BBD} -experiment add_postal_code -v -f -o ../data_berlin_osm download/osm/berlin.osm.bz2
+	${OSM2BBD} -experiment add_postal_code -v -f -o ../data_berlin_osm ${BERLIN_OSM_BZ2}
 	${OSM2BBD_POSTPROCESS} ../data_berlin_osm
 
 ######################################################################
