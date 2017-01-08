@@ -24,6 +24,7 @@ BEGIN {
 
 use Strassen::Core;
 use Strassen::Lookup;
+use Strassen::Util;
 
 sub check_lookup ($$$);
 
@@ -184,6 +185,30 @@ EOF
     $s->convert_for_lookup($sortedtmpfile);
     my $rec = $s->search_first("Alt-Reinickendorf|4-5|");
     is $rec->[Strassen::NAME], 'Alt-Reinickendorf|4-5|13407|Berlin', 'hnr 4-5 vs. 45';
+}
+
+SKIP: {
+    my $addr_file = "$FindBin::RealBin/../data_berlin_osm_bbbike/_addr";
+    skip "osm converted data for Berlin not available (run data_berlin_osm_bbbike_untiled make target in misc)", 1
+	if !-f $addr_file;
+    my $s = Strassen::Lookup->new($addr_file);
+    isa_ok $s, 'Strassen::Lookup';
+    check_lookup $s, 'Unter den Linden|77|',
+	{
+	 'saw_UdL_Adlon' => sub {
+	     my($xy) = $_[0]->[Strassen::COORDS]->[0];
+	     my $dist = Strassen::Util::strecke_s($xy, "8750,12222");
+	     if ($dist > 100) {
+		 diag "Unexpected distance: ${dist}m";
+		 return 0;
+	     }
+	     if ($_[0]->[Strassen::NAME] !~ qr{^Unter den Linden\|77\|}) {
+		 diag "Unexpected name: $_[0]->[Strassen::NAME]";
+		 return 0;
+	     }
+	     return 1;
+	 },
+	};
 }
 
 sub check_lookup ($$$) {
