@@ -126,7 +126,7 @@ do-image-berlin:
 	${BBBIKEDRAW} -datadirs data \
 	    -outtype png \
 	    -module ${BBBIKEDRAW_RENDERER} \
-	    -geometry $(BIG_GEOMETRY) -ipaq -nooutline -fillimage \
+	    -geometry $(BIG_GEOMETRY) -smallscreen -nooutline -fillimage \
 	    -drawtypes str,flaechen,wasser,faehren,ubahn,ubahnname,sbahn,sbahnname,rbahn,berlin,ort,obst \
 	    -minplacecat 0 \
 	    -o /tmp/berlin.png -dimfile images/berlin_tiles/berlin.dim
@@ -145,7 +145,7 @@ image_brb_tiles:	do-image-brb tile-image-brb
 
 do-image-brb:
 	-mkdir images/brb_tiles
-	${BBBIKEDRAW} -geometry $(BIG_GEOMETRY) -ipaq -nooutline\
+	${BBBIKEDRAW} -geometry $(BIG_GEOMETRY) -smallscreen -nooutline\
 	    -outtype png \
 	    -module ${BBBIKEDRAW_RENDERER} \
 	    -minplacecat 0 \
@@ -168,7 +168,7 @@ image_berlin:
 	${BBBIKEDRAW} -datadirs data \
 	    -outtype png \
 	    -module ${BBBIKEDRAW_RENDERER} \
-	    -geometry $(GEOMETRY) -ipaq -nooutline -fillimage \
+	    -geometry $(GEOMETRY) -smallscreen -nooutline -fillimage \
 	    -drawtypes str,flaechen,wasser,ubahn,sbahn,berlin,ort \
 	    -o images/berlin.png -dimfile images/berlin.dim
 #	pngtopnm images/berlin.png | ppmtogif > images/berlin.gif
@@ -182,7 +182,7 @@ image_berlin:
 image_berlin2:
 	${BBBIKEDRAW} -imagemagick -outtype png -datadirs data \
 	    -outtype png \
-	    -geometry $(GEOMETRY) -ipaq -nooutline -fillimage \
+	    -geometry $(GEOMETRY) -smallscreen -nooutline -fillimage \
 	    -drawtypes str,flaechen,wasser,ubahn,sbahn,berlin,ort \
 	    -o /tmp/berlin.png -dimfile images/berlin.dim
 #	pngtopnm /tmp/berlin.png | ppmtoxpm | gzip -9 > images/berlin.xpm.gz
@@ -195,13 +195,13 @@ image_berlin_fragezeichen:
 	${BBBIKEDRAW} -datadirs data \
 	    -outtype png \
 	    -module ${BBBIKEDRAW_RENDERER} \
-	    -geometry $(GEOMETRY) -ipaq -nooutline -fillimage \
+	    -geometry $(GEOMETRY) -smallscreen -nooutline -fillimage \
 	    -drawtypes str,flaechen,wasser,berlin,ort,fragezeichen \
 	    -o images/berlin.png -dimfile images/berlin.dim
 	pngtopnm images/berlin.png | ppmtoxpm | gzip -9 > images/berlin.xpm.gz
 
 image_brb:
-	${BBBIKEDRAW} -geometry $(GEOMETRY) -ipaq -nooutline\
+	${BBBIKEDRAW} -geometry $(GEOMETRY) -smallscreen -nooutline\
 	    -outtype png \
 	    -module ${BBBIKEDRAW_RENDERER} \
 	    -minplacecat 1 \
@@ -411,7 +411,7 @@ data_koethen_gpstracks:
 	${MISCSRCDIR}/restrict_bbd_data.pl -bbox $(BBOX_KOETHEN)  -strdata ${BBBIKEDIR}/tmp/streets.bbd,${BBBIKEDIR}/misc/mps_examples/streets.bbd -o - | gzip -9f > data_koethen/gpstracks.gz
 
 image_koethen:
-	env BBBIKE_DATADIR=data_koethen ${BBBIKEDRAW} -geometry 750x* -ipaq -nooutline\
+	env BBBIKE_DATADIR=data_koethen ${BBBIKEDRAW} -geometry 750x* -smallscreen -nooutline\
 	    -outtype png -bbox $(BBOX_KOETHEN) \
 	    -scope wideregion -drawtypes str,wasser,rbahn,ort \
 	    -minplacecat 0 \
@@ -422,7 +422,7 @@ image_koethen_tiles:
 	-mkdir images/koethen_tiles
 	env BBBIKE_DATADIR=data_koethen ${BBBIKEDRAW} \
 	    -outtype png -bbox $(BBOX_KOETHEN) \
-	    -geometry 2250x* -ipaq -nooutline -fillimage \
+	    -geometry 2250x* -smallscreen -nooutline -fillimage \
 	    -scope wideregion -drawtypes str,wasser,rbahn,ort \
 	    -minplacecat 0 \
 	    -o /tmp/koethen.png -dimfile images/koethen_tiles/koethen.dim
@@ -459,7 +459,7 @@ data_uckermark_gpstracks:
 
 
 image_uckermark:
-	env BBBIKE_DATADIR=data_uckermark ${BBBIKEDRAW} -geometry 900x* -ipaq -nooutline\
+	env BBBIKE_DATADIR=data_uckermark ${BBBIKEDRAW} -geometry 900x* -smallscreen -nooutline\
 	    -outtype png -bbox $(BBOX_UCKERMARK) \
 	    -scope wideregion -drawtypes str,wasser,rbahn,ort \
 	    -module ${BBBIKEDRAW_RENDERER} \
@@ -473,14 +473,14 @@ image_uckermark_tiles:
 	env BBBIKE_DATADIR=data_uckermark ${BBBIKEDRAW} \
 	    -outtype png -bbox $(BBOX_UCKERMARK) \
 	    -module ${BBBIKEDRAW_RENDERER} \
-	    -geometry 2250x* -ipaq -nooutline -fillimage \
+	    -geometry 2250x* -smallscreen -nooutline -fillimage \
 	    -scope wideregion -drawtypes str,wasser,rbahn,ort \
 	    -minplacecat 0 \
 	    -o /tmp/uckermark.png -dimfile images/uckermark_tiles/uckermark.dim
 	pngtopnm /tmp/uckermark.png > /tmp/uckermark.ppm
 	perl -I$HOME/lib/perl ../miscsrc/tilemap -image /tmp/uckermark.ppm -destdir images/uckermark_tiles -geometry 100x100 -conf /tmp/uckermark.conf
 
-rsync-uckermark: do-rsync-uckermark ipaq-generate-cache-uckermark
+rsync-uckermark: do-rsync-uckermark smallscreen-generate-cache-uckermark
 
 do-rsync-uckermark:
 	$(RSYNC) -L --times -r -z --hard-links \
@@ -529,7 +529,7 @@ ipaq-generate-cache-uckermark:
 
 
 # image_${region}:
-# 	env BBBIKE_DATADIR=data_${region} ../miscsrc/bbbikedraw.pl -geometry 900x* -ipaq -nooutline\
+# 	env BBBIKE_DATADIR=data_${region} ../miscsrc/bbbikedraw.pl -geometry 900x* -smallscreen -nooutline\
 # 	    -outtype png -bbox $(BBOX_${REGION}) \
 # 	    -scope wideregion -drawtypes str,wasser,rbahn,ort \
 # 	    -mapserver \
@@ -543,7 +543,7 @@ ipaq-generate-cache-uckermark:
 # 	env BBBIKE_DATADIR=data_${region} ../miscsrc/bbbikedraw.pl \
 # 	    -outtype png -bbox $(BBOX_${REGION}) \
 # 	    -mapserver \
-# 	    -geometry 2250x* -ipaq -nooutline -fillimage \
+# 	    -geometry 2250x* -smallscreen -nooutline -fillimage \
 # 	    -scope wideregion -drawtypes str,wasser,rbahn,ort \
 # 	    -minplacecat 0 \
 # 	    -o /tmp/${region}.png -dimfile images/${region}_tiles/${region}.dim
