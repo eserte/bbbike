@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2009,2010,2011,2012,2013,2014,2015,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2009,2010,2011,2012,2013,2014,2015,2016,2017 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..";
 
 use vars qw($VERSION);
-$VERSION = 0.19;
+$VERSION = '0.20';
 
 use Cwd qw(getcwd realpath);
 use Data::Dumper;
@@ -32,7 +32,8 @@ sub touch ($);
 
 use constant DO_ASSERTS => 1;
 use constant SORTED_TAGS => 1;
-if (SORTED_TAGS) {
+use constant SORTED_ELEMENTS => 1;
+if (SORTED_TAGS || SORTED_ELEMENTS) {
     require Tie::IxHash;
 }
 
@@ -194,6 +195,8 @@ my %global_directives;
 my %place_to_population;
 my $handle_relations = $experiments{'handle_relations'};
 my %additional_data_per_file;
+my %addr;
+tie %addr, 'Tie::IxHash' if SORTED_ELEMENTS;
 
 # XXX see $splitlonglines
 # As fast_plot_str() is used only for layer types
@@ -396,6 +399,21 @@ my $do_fixme = sub {
 	push @or, ['fragezeichen', '?', name => $1];
     }
     @or;
+};
+
+# Return "ignore_unhandled" flag
+my $do_addr = sub ($$$) {
+    my($tagref, $nodestype, $nodesval) = @_;
+    if (exists $tagref->{'addr:city'} && exists $tagref->{'addr:housenumber'} &&
+	exists $tagref->{'addr:postcode'} && exists $tagref->{'addr:street'}) {
+	my $name = join("|", @{$tagref}{qw(addr:street addr:housenumber addr:postcode addr:city)});
+	if (!exists $addr{$name} || ($tagref->{entrance}||'') eq 'yes') { # prefer elements with entrance=yes
+	    $addr{$name} = {name => $name, $nodestype => $nodesval};
+	}
+	1; 
+    } else {
+	0;
+    }
 };
 
 my $do_unhandled = sub {
@@ -869,10 +887,9 @@ for my $osm_file (@osm_files) {
 		push @or, ['ortsschilder', 'OS'];
 	    }
 
-	    if (exists $tag{'addr:city'} && exists $tag{'addr:housenumber'} &&
-		exists $tag{'addr:postcode'} && exists $tag{'addr:street'}) {
-		my $name = join("|", @tag{qw(addr:street addr:housenumber addr:postcode addr:city)});
-		push @or, ['_addr', 'HNR', name => $name];
+	    my $ignore_unhandled = $ignore_unhandled;
+	    if ($do_addr->(\%tag, ll => $ll)) {
+		$ignore_unhandled = 1;
 	    }
 
 	    if (!@or && !$ignore_unhandled && !$ignore_underline) {
@@ -1636,6 +1653,11 @@ for my $osm_file (@osm_files) {
 		add_underline(\@or, "_power", "X");
 	    }
 
+	    my $ignore_unhandled = $ignore_unhandled;
+	    if ($do_addr->(\%tag, nodes => \@nodes)) {
+		$ignore_unhandled = 1;
+	    }
+
 	    if (!@or && !$ignore_unhandled && !$ignore_underline) {
 		$do_unhandled->(\$name, \%tag);
 		if ($name ne "") {
@@ -1716,6 +1738,8 @@ for my $osm_file (@osm_files) {
 	}
     }
 }
+
+output_addr();
 
 ######################################################################
 # RELATIONS
@@ -2085,6 +2109,16 @@ sub normalize_name_sbahnhof {
     my $name = shift;
     $name =~ s{^S(\s+|-Bhf)\.?\s*}{};
     $name;
+}
+
+sub output_addr {
+    if (%addr) {
+	while(my($name, $def) = each %addr) {
+	    my $ll = exists $def->{ll} ? $def->{ll} : $node2ll{$def->{nodes}->[0]};
+	    push @{$out{'_addr'}}, [$name, [$ll], 'HNR'];
+	}
+	%addr = (); # free memory
+    }
 }
 
 sub sort_by_population_and_category {
