@@ -1899,9 +1899,9 @@ userdel	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129 -6507,15007
          'from' => 1459720800,
          'id' => 2776,
          'source_id' => '2147339913',
-         'text' => 'Blankertzweg/Hildburghauser Straße: Bauarbeiten zwischen Osdorfer Str. und Woltmannweg, Einbahnstraße, Radfahrer können auf dem schmalen Gehweg fahren, 04.04.2016 bis 13.01.2017 ',
+         'text' => 'Blankertzweg/Hildburghauser Straße: Bauarbeiten zwischen Osdorfer Str. und Woltmannweg, Einbahnstraße, Radfahrer können auf dem schmalen Gehweg fahren, 04.04.2016 bis 31.01.2017 ',
          'type' => 'handicap',
-         'until' => 1484348400
+         'until' => 1485860400
        },
        undef,
        undef,
@@ -2116,6 +2116,27 @@ userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,
          'text' => 'Freundschaftsinsel: nur zwischen 7 Uhr und Einbruch der Dunkelheit offen',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       undef,
+       {
+         'data' => 'userdel	2::inwork -14107,-2278 -14081,-2516
+',
+         'from' => undef,
+         'id' => 2844,
+         'source_id' => 'http://www.swp-potsdam.de/swp/media/05-verkehr_1/fahrplaene_pdf/fahrplanwechsel_2016/faehre_1/vip_16_folder_faehre_161128_ansicht.pdf',
+         'text' => 'Fähre F1: kein Verkehr bis Ostern 2017',
+         'type' => 'gesperrt',
+         'until' => 1492164000
+       },
+       {
+         'data' => 'userdel	2::inwork 4631,21788 4525,21714
+',
+         'from' => 1484331784,
+         'id' => 2845,
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.550340.php',
+         'text' => 'Avenue Charles de Gaulle: Sperrung in Höhe des ehemaligen Einkaufs- und Gemeindezentrums der Cité Foch, bis voraussichtlich zum 28.02.2017',
+         'type' => 'gesperrt',
+         'until' => 1488322799
        }
      
 );

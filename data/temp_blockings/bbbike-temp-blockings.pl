@@ -24955,8 +24955,8 @@ EOF
 EOF
      },
      { from  => 1459720800, # 2016-04-04 00:00
-       until => 1484348400, # 2017-01-14 00:00
-       text  => 'Blankertzweg/Hildburghauser Straße: Bauarbeiten zwischen Osdorfer Str. und Woltmannweg, Einbahnstraße, Radfahrer können auf dem schmalen Gehweg fahren, 04.04.2016 bis 13.01.2017 ',
+       until => $isodate2epoch->("2017-01-31 12:00:00"), # 1484348400, # 2017-01-14 00:00
+       text  => 'Blankertzweg/Hildburghauser Straße: Bauarbeiten zwischen Osdorfer Str. und Woltmannweg, Einbahnstraße, Radfahrer können auf dem schmalen Gehweg fahren, 04.04.2016 bis 31.01.2017 ',
        type  => 'handicap',
        source_id => '2147339913',
        data  => <<EOF,
@@ -25698,6 +25698,24 @@ EOF
 #: osm_watch: way id="454003207" version="1"
 #: last_checked: 2016-12-16
 userdel	q4::inwork 5236,10994 5230,10919
+EOF
+     },
+     { from  => undef, # 
+       until => 1492164000, # 2017-04-14 12:00
+       text  => 'Fähre F1: kein Verkehr bis Ostern 2017',
+       type  => 'gesperrt',
+       source_id => 'http://www.swp-potsdam.de/swp/media/05-verkehr_1/fahrplaene_pdf/fahrplanwechsel_2016/faehre_1/vip_16_folder_faehre_161128_ansicht.pdf',
+       data  => <<EOF,
+userdel	2::inwork -14107,-2278 -14081,-2516
+EOF
+     },
+     { from  => 1484331784, # 2017-01-13 19:23
+       until => 1488322799, # 2017-02-28 23:59
+       text  => 'Avenue Charles de Gaulle: Sperrung in Höhe des ehemaligen Einkaufs- und Gemeindezentrums der Cité Foch, bis voraussichtlich zum 28.02.2017',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.550340.php',
+       data  => <<EOF,
+userdel	2::inwork 4631,21788 4525,21714
 EOF
      },
     );

@@ -32,7 +32,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2017-01-06
+#: last_checked: 2017-01-11
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -98,11 +98,9 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6183 (Baubeginn erst 2015)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.521884.php (Baubeginn, Fertigstellung der Gesamtmaßnahme August 2018)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.532371.php (Fertigstellung des Teilabschnittes am 17.01.2017)
-#: last_checked: 2016-12-14 vvv
-#: next_check: 2017-01-17 vvv
+#: last_checked: 2017-01-13 vvv
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected; 9865,10227 9948,10280 9873,10285
-#: next_check ^^^
 #: last_checked ^^^
 # 
 # REMOVED --- #: XXX Baumaßnahme 2.23 (Realisierung nach 2011) vvv
@@ -413,6 +411,10 @@ Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Rads
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
+# 
+#: XXX NEW¦Auerstraße zwischen Richard-Sorge-Straße und Löwestraße Friedrichshain (Berlin)  Gültig ab: 07.01.2017 07:00  beide Fahrtrichtungen gesperrt, Baustelle¦LMS-BR_r_LMS-BR_87313¦¦
+#: XXX laut fritz bis 30.04.2017, bei vmz mittlerweile schon entfernt
+Auerstr.: Bauarbeiten für Radfahrer relevant?	? 13273,12902 13202,12790
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/buergerbeteiligung/9-48-529616.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/9-48-planung_mellowpark_a3.pdf
@@ -1013,7 +1015,7 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 # 
 #: by: http://www.bwb.de/content/language1/html/10337.php#11671
 #: osm_watch: way id="75509950" version="11"
-#: last_checked: 2016-12-20
+#: last_checked: 2017-01-13
 #: check_frequency: 60d
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12085,9778 12074,9689 12066,9558
 #: by: ^^^
@@ -1023,7 +1025,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12085,977
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="13"
-#: last_checked: 2016-12-20
+#: last_checked: 2017-01-13
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -1290,8 +1292,8 @@ Prinzengasse: Genaue Lage? Qualität?	?::inwork 9973,12292 9997,12295
 #: source_id: 2147339913
 #: XXX zurzeit Bauarbeiten (laut fritz bis 13.01.2017), gibt es Einschränkungen für Radfahrer?
 #: last_checked: 2016-07-23
-#: next_check: 2017-01-13
-Blanckertzweg: Radfahrstreifen in Planung (ebenso östlicher Teil der Hildburghauser Str.)	?::projected 4806,1360 4706,1293 4634,1245 4542,1188
+#: next_check: 2017-01-31
+Blanckertzweg: Radfahrstreifen in Planung (ebenso östlicher Teil der Hildburghauser Str.)	?::inwork 4806,1360 4706,1293 4634,1245 4542,1188
 # 
 #: XXX nach dem Straßenausbau besserer Asphalt, Radwege wird es nur bis zur Zerbster Str. in Westrichtung und ab Stadtilmer Weg in Ostrichtung geben
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20131129.0640.392180.html (Straßenausbau geplant)
@@ -1299,7 +1301,7 @@ Blanckertzweg: Radfahrstreifen in Planung (ebenso östlicher Teil der Hildburghau
 #: source_id: 2147339913
 #: XXX zurzeit Bauarbeiten (laut fritz bis bis 13.01.2017), gibt es Einschränkungen für Radfahrer?
 #: last_checked: 2016-07-23
-#: next_check: 2017-01-13
+#: next_check: 2017-01-31
 Hildburghauser Str.: Ausbau der Straße, bessere Qualität des Asphalts?	? 4806,1360 4897,1350 5059,1337
 #: last_checked: 2016-07-23
 #: check_frequency: 360d
@@ -1576,6 +1578,9 @@ Bebauungsplanverfahren XXI-41b: ändert sich hier an den Wegen etwas?	?::projecte
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6864 (unbeleuchtet)
+Gutspark Lichtenberg: existiert eine Verbindung für Radfahrer? Qualität?	? 15746,12967 15744,12999 15694,12996 15618,13067 15526,13056 15515,13134 15515,13134
 # 
 Anna-Ebermann-Str. [Wohngebiet]: Qualität?	? 17753,16604 17759,16658 17863,16815
 # 
@@ -2764,12 +2769,13 @@ An der Neumark: weitere Abschnitte der Straße, Hausnummern hier 5-93	?::inwork 1
 #: XXX Bebauungsplan XXI-24
 #: XXX wird bis 2017 realisiert; mit Bahnübergang
 #: XXX evtl. wird es am Pyramidenring einen neuen Kreisverkehr geben
-#: next_check: 2017-01-01
+#: next_check: 2017-05-01
 Verbindung zwischen Beilsteiner Str. und Pyramidenring: genaue Lage, Qualität, Straßenname?	?::projected 18859,14048 18804,14239 18710,14212
 # 
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/artikel.442576.php
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/downloads/xxi-24_b-planentwurf_blatt_1.pdf
-#: next_check: 2017-01-01
+#: osm_watch: way id="294559915" version="2"
+#: next_check: 2017-05-01
 Planstraße am Pyramidenring: eine Straße existiert hier bereits, ändert sich durch den Bebauungsplan etwas?	?::projected 18889,14403 18666,14350 18710,14212
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6562 vvv
@@ -2840,12 +2846,15 @@ Radweg: Qualität? Beleuchtet?	? -13122,2849 -13168,2836
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/29re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2016 (Straßenlandwidmung)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/49re.pdf/file?y=2016 (Berichtigung)
+#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_02_0077_0188_online.pdf (Widmung)
 #: XXX Straßennamen fehlen alle in Berlin.coords.data vvv
 #: last_checked: 2016-06-26 vvv
 #: check_frequency: 360d vvv
 Planstraße 1     -> Ankerweg, PLZ=12527	?::projected 22118,2559 22153,2582 22195,2610
 Planstraße 2     -> Am Ruderverein, PLZ=12527	?::projected 22153,2482 22208,2514 22270,2549
 Planstraße 3     -> Relingstr., PLZ=12527	?::projected 22195,2390 22276,2426 22358,2460
+#: XXX diese Straße ist bereits fertiggestellt laut Amtsblatt
+#: next_check: 2016-12-15
 Planstraße 4,5,7 -> Teichmummelring, PLZ=12527	?::projected 22246,2272 22418,2390 22454,2342 22271,2214
 #: XXX im Plan "Privatstraße", im Amtsblatt "Planstraße"
 Planstraße 6     -> An der Dahme, PLZ=12527	?::projected 22195,2610 22270,2549 22358,2460
@@ -2952,6 +2961,7 @@ Björnweg	?::projected 17314,15186 17323,15054
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6406
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036322976038/322976038/00081306/06-Anlagen/02/vzb1096_IV_Benennung_Hanoier_Str.pdf
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/auslegungen/b-planentwurf-xxi-31a-1.pdf
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6867
 #: XXX Bebauungsplan XXI-31a-1
 #: XXX fehlt in Berlin.coords.data, genaue Lage?
 #: last_checked: 2016-09-11

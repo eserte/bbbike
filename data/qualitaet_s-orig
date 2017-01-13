@@ -153,7 +153,7 @@ Kopernikusstr.: mäßiges Kopfsteinpflaster	Q2 13467,11778 13651,11731
 Torellstr.: mäßiges Kopfsteinpflaster	Q2 13295,11792 13467,11778
 #: next_check_id: RUEDERSDORFER-2016
 #: XXX Bauarbeiten, danach vielleicht teilweise bessere Qualität?
-#: last_checked: 2017-01-06
+#: last_checked: 2017-01-12
 #: check_frequency: 60d
 Rüdersdorfer Str.: Asphalt mit Schäden	Q1- 13295,11792 13173,11788 13066,11854
 Kaskelstr.: relative glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
@@ -241,7 +241,7 @@ Lohmühlenbrücke: Asphalt	Q0 12871,9356 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2016-12-20
+#: last_checked: 2017-01-13
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15021,11152 15102,11120
@@ -9829,8 +9829,7 @@ Alexanderplatz: Pflasterung mit Schäden	Q1- 11030,12741 11087,12780
 (Zufahrt Debis-Parkhaus): Asphalt	Q0 8430,10710 8424,10703 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
 (Debis-Parkhaus - Gleisdreieckpark): Kleinsteinpflaster	Q1 8348,10636 8332,10637
 (Am Zirkus - Bertolt-Brecht-Platz): Betonpflaster	Q0- 9212,12969 9153,12925
-#: note: genau genommen ist das Kopfsteinpflaster nur im Wendehammer, kurz vor diesen Abschnitt
-Sülzhayner Str.: Kopfsteinpflaster, Verbundsteinpflaster	Q2+ 13403,9236 13420,9259
+# REMOVED --- #: note: genau genommen ist das Kopfsteinpflaster nur im Wendehammer, kurz vor diesen Abschnitt --- Sülzhayner Str.: Kopfsteinpflaster, Verbundsteinpflaster	Q2+ 13403,9236 13420,9259
 Südpark: wassergebundene Decke	Q1 -3989,12223 -3993,12166 -4012,12111
 Südpark: wassergebundene Decke	Q1 -3993,12166 -3931,12056 -3786,11913
 Südpark: wassergebundene Decke	Q1 -4095,12006 -4021,11924 -3890,11775
@@ -10154,18 +10153,18 @@ Lohmeyerstr.: Kopfsteinpflaster	Q2 3348,12314 3409,12451
 #: last_checked: 2016-09-11 vvv
 #: check_frequency: 60d vvv
 Helga-Haase-Str.: unbefestigte Baustraße	Q2- 17465,16340 17508,16356 17611,16396 17673,16420 17792,16465
-#: osm_watch: way id="354078625" version="5"
+#: osm_watch: way id="354078625" version="6"
 Jutta-Langenau-Str.: unbefestigte Baustraße	Q2- 17615,16310 17643,16322 17818,16397 17857,16414 17877,16423
-#: osm_watch: way id="354078420" version="4"
+#: osm_watch: way id="354078420" version="5"
 Gerhard-Schulz-Str.: unbefestigte Baustraße	Q2- 17508,16356 17497,16385 17552,16461
-#: osm_watch: way id="354078421" version="4"
+#: osm_watch: way id="354078421" version="5"
 Harry-Glaß-Str.: unbefestigte Baustraße	Q2- 17552,16461 17603,16415 17611,16396 17643,16322
-#: osm_watch: way id="354078422" version="4"
+#: osm_watch: way id="354078422" version="5"
 Erich-Hagen-Str.: unbefestigte Baustraße	Q2- 17673,16420 17657,16464 17712,16549
-#: osm_watch: way id="354078419" version="3"
+#: osm_watch: way id="354078419" version="4"
 Joachim-Böhmer-Str.: unbefestigte Baustraße	Q2- 17818,16397 17792,16465 17776,16504 17712,16549 17673,16577
 #: XXX ist diese Straße eine Einbahnstraße?
-#: osm_watch: way id="410517492" version="2"
+#: osm_watch: way id="410517492" version="3"
 Anna-Maria-Müller-Str.: unbefestigte Baustraße	Q2- 17857,16414 17814,16534 17734,16587 17704,16607
 Anna-Maria-Müller-Str.: unbefestigte Baustraße	Q2- 17734,16587 17712,16549
 (Fußweg zur Gehrenseestr.): unbefestigter Weg	Q2- 17615,16310 17640,16259

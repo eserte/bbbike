@@ -5683,8 +5683,7 @@ Blumberger Damm [Nebenfahrbahn]	N 21413,13459 21430,13602 21466,13903
 Blumberger Damm [Wohngebiet]	N 21824,16506 21574,16547
 # REMOVED (vermutlich nicht) --- : XXX_indoor ist das der "Reinhold-Lingner-Weg"? (kaum Treffer dazu im Internet)
 # REMOVED #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036788094107/788094107/00079308/08-Anlagen/02/vzbbvv1018_IV_Radwegekonzept.pdf --- #: by: http://fraktion.piraten-mahe.de/wiki/index.php?title=Protokolle/2016-04-20_siedverklap --- #: XXX vorgeschlagener neuer Name: Gottfried-Funeck-Weg (fehlt in Berlin.coords.data) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksamt/beschluesse/2016/artikel.515598.php --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2016/ba-vorlage_1311_iv_benennung_fuss_radweg_funeck.pdf --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6780 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6780 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/51re.pdf/file?y=2016 (Straßenbenennung)
-#: add_fragezeichen ist der Weg bereits ausgeschildert?
-#: last_checked: 2016-10-02
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.549015.php (offizielle Benennung mit Straßenschild)
 #: oldname: -201611: <namenslos>
 Gottfried-Funeck-Weg	NN 21450,14576 21822,14480 21925,14500 21948,14501 21985,14513 22026,14501 22061,14471 22172,14287 22414,14144
 # REMOVED --- #: XXX Straße wird umbenannt, neuer Name: "Am Gewerbepark" --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5605 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810361044878152/1044878152/00070570/70-Anlagen/02/vzb0689_IV-Bennenung_Am_Gewerbepark.pdf --- #: XXX Eintrag in Berlin.coords.data fehlt, die "Grimmener Str." muss ausgetragen werden und nach oldnames wandern --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/13re.pdf/file?y=2014 --- #: last_checked: 2014-08-08 --- #: check_frequency: 60d
@@ -13763,9 +13762,9 @@ Berthelsdorfer Str.	N 12870,8087 12992,8125 13063,8151
 Geygerstr.	N 13063,8151 13194,8276
 Elbingeroder Weg	N 13267,9077 13226,9026 13178,9062
 Elbingeroder Weg	NN 13178,9062 13146,9085
+#: XXX wurde die Sackgasse vielleicht zurückgezogen (wegen der Bauarbeiten)?
 Sülzhayner Str.	N 13267,9077 13403,9236
-#: note: "Privatparkplatz, kein öffentlicher Durchgang"
-Sülzhayner Str.	NN 13403,9236 13420,9259
+# REMOVED (existiert nicht mehr) --- #: note: "Privatparkplatz, kein öffentlicher Durchgang" --- Sülzhayner Str.	NN 13403,9236 13420,9259
 Schluchseestr.	N 5006,22507 5056,22389 5098,22326 5209,22229 5335,22196 5443,22210 5515,22250 5744,22586 5790,22618
 Höllentalweg	N 5086,22145 5108,22156
 Höllentalweg	NN 5108,22156 5150,22183 5209,22229
@@ -14983,6 +14982,7 @@ Hederichweg	N 16801,3413 16784,3441 16727,3520 16657,3619 16589,3715 16536,3797
 #: XXX wird vermutlich in "Bohnenweg" umbenannt werden
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=2653
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036544636457/544636457/00054129/29-Anlagen/06/B0485ZB4.pdf
+#: osm_watch: way id="25747548" version="9"
 #: next_check: 2016-12-31
 Straße 207	N 16842,3624 16727,3520
 Ginkgoweg	N 16942,3579 16784,3441
