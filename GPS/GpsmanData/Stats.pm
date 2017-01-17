@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2010,2013,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2010,2013,2016,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package GPS::GpsmanData::Stats;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.05';
+$VERSION = '0.06';
 
 use POSIX qw(strftime);
 
@@ -58,7 +58,15 @@ sub new {
 }
 
 sub run_stats {
-    my($self) = @_;
+    my($self, %args) = @_;
+    my $with_nightride = delete $args{with_nightride};
+    die "Unhandled arguments: " . join(" ", %args) if %args;
+
+    if ($with_nightride) {
+	require Astro::Sunrise;
+	require DateTime;
+    }
+
     my $gpsmandata = $self->GpsmanData;
     my $accepted_accuracy = $self->Accuracy;
 
@@ -78,6 +86,7 @@ sub run_stats {
 
     my($start_wpt, $farthest_wpt, $goal_wpt);
     my $max_dist_from_start;
+    my $nightride_seconds;
 
     my($area_bbox, $name_to_poly) = $self->_process_areas;
 
@@ -98,6 +107,67 @@ sub run_stats {
 
 	my($chunk_min_epoch, $chunk_min_wpt);
 	my($chunk_max_epoch, $chunk_max_wpt);
+
+	my $sunrise_epoch;
+	my $sunset_epoch;
+	if ($with_nightride && $vehicle eq 'bike' && @{ $chunk->Track }) {
+	    # XXX The algorithm probably fails in some situations, i.e.
+	    # if a chunk crosses day/night changes twice or more
+	    #
+	    # XXX Question: should we use first and last waypoint here,
+	    # or the first and last one with accepted accuracy? Both
+	    # approaches have cons and pros:
+	    # - with the current implementation the duration may be
+	    #   smaller than the nightride time, which could be confusing
+	    # - having a too small nightride time could be fatal (battery
+	    #   lifetime could be smaller than calculated)
+	    my $first_wpt = $chunk->Track->[0];
+	    my $first_epoch = $first_wpt->Comment_to_unixtime($chunk);
+	    my $last_wpt = $chunk->Track->[-1];
+	    my $last_epoch = $last_wpt->Comment_to_unixtime($chunk);
+	    my $dt = DateTime->from_epoch(epoch => $first_epoch);
+	    my($sunrise, $sunset) = Astro::Sunrise::sunrise({
+							     year  => $dt->year,
+							     month => $dt->month,
+							     day   => $dt->day,
+							     lon   => $first_wpt->Longitude,
+							     lat   => $first_wpt->Latitude,
+							     tz    => $dt->offset*3600,
+							     isdst => $dt->is_dst,
+							    });
+
+	    for my $def (
+			 [$sunrise, \$sunrise_epoch, "00:00"],
+			 [$sunset,  \$sunset_epoch,  "23:59"], # XXX 23:59:59 would be better
+			) {
+		my($hhmm, $epochref, $fallback) = @$def;
+		$hhmm ||= $fallback;
+		if (my($hh,$mm) = $hhmm =~ m{^(\d+):(\d+)}) {
+		    $$epochref = DateTime->new(year   => $dt->year,
+					       month  => $dt->month,
+					       day    => $dt->day,
+					       hour   => $hh,
+					       minute => $mm,
+					       second => 0,
+					      )->epoch;
+		} else {
+		    die "Unexpected: cannot parse '$hhmm'";
+		}
+	    }
+
+	    my $first_is_night = $first_epoch < $sunrise_epoch || $first_epoch > $sunset_epoch;
+	    my $last_is_night  = $last_epoch  < $sunrise_epoch || $last_epoch  > $sunset_epoch;
+	    if ($first_is_night && $last_is_night) {
+		# complete night ride
+		$nightride_seconds += ($last_epoch - $first_epoch);
+	    } elsif ($first_is_night && !$last_is_night) {
+		# morning ride
+		$nightride_seconds += ($sunrise_epoch - $first_epoch);
+	    } elsif (!$first_is_night && $last_is_night) {
+		# evening ride
+		$nightride_seconds += ($last_epoch - $sunset_epoch);
+	    }
+	}
 
 	my $last_wpt;
 	for my $wpt (@{ $chunk->Track }) {
@@ -279,6 +349,7 @@ sub run_stats {
 		   route_areas => [@route_areas],
 		   (defined $min_epoch ? (min_datetime => _get_wpt_isodate($min_epoch, $min_wpt)) : ()),
 		   (defined $max_epoch ? (max_datetime => _get_wpt_isodate($max_epoch, $max_wpt)) : ()),
+		   ($with_nightride ? (nightride => $nightride_seconds) : ()),
 		 });
 }
 
@@ -297,6 +368,7 @@ sub human_readable {
 	}
 	$data->{dist} = BBBikeUtil::m2km($data->{dist}, 3) if defined $data->{dist};
 	$data->{duration} = BBBikeUtil::s2hms($data->{duration}) if defined $data->{duration};
+	$data->{nightride} = BBBikeUtil::s2hms($data->{nightride}) if defined $data->{nightride};
     };
 
     my $stats = Storable::dclone($self->Stats);
