@@ -153,7 +153,7 @@ Kopernikusstr.: m‰ﬂiges Kopfsteinpflaster	Q2 13467,11778 13651,11731
 Torellstr.: m‰ﬂiges Kopfsteinpflaster	Q2 13295,11792 13467,11778
 #: next_check_id: RUEDERSDORFER-2016
 #: XXX Bauarbeiten, danach vielleicht teilweise bessere Qualit‰t?
-#: last_checked: 2017-01-12
+#: last_checked: 2017-01-18
 #: check_frequency: 60d
 R¸dersdorfer Str.: Asphalt mit Sch‰den	Q1- 13295,11792 13173,11788 13066,11854
 Kaskelstr.: relative glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
@@ -276,7 +276,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX ggfs. Bauarbeiten bis Mitte September 2016 (laut rbbtext)
 #: source_id: INKO_2147340291_COPY_1
 #: source_id: 2147340291
-#: last_checked: 2016-12-20
+#: last_checked: 2017-01-18
 #: check_frequency: 60d
 Mariannenstr: m‰ﬂiges bis gutes Kopfsteinpflaster, 25 km/h mˆglich	Q1- 11512,10105 11616,10288
 Mariannenstr: Asphalt	Q0 11616,10288 11671,10402
@@ -848,7 +848,7 @@ Morusstr.: Kopfsteinpflaster	Q2 12478,7878 12520,7694
 Leinestr.: Kopfsteinpflaster	Q2 12123,7549 11923,7516 11797,7492 11671,7464 11558,7438
 Auguststr.: Kopfsteinpflaster	Q2 10307,13600 10263,13594 10142,13556 10049,13528 10026,13521
 (Kleine) Rosenthaler Str.: Asphalt	Q0 10301,13701 10307,13600 10308,13575 10311,13537
-Magazinstr.: Kopfsteinpflaster, OK	Q1- 11558,12588 11329,12497
+Magazinstr.: Kopfsteinpflaster, OK	Q1- 11562,12597 11329,12497
 #: by: Lutz Epperlein:
 #: corrected_by: aschoenebeck ("etwas br¸chig, wenige bodenwellen", Q0 -> Q1, aber ich habe Q0- daraus gemacht)
 #: confirmed_by: srt
@@ -1735,8 +1735,10 @@ Matthesstr.: Asphalt	Q0 14172,9457 14185,9509
 Elbestr.: m‰ﬂiges, eher schlechteres Kopfsteinpflaster	Q2- 12772,8612 12822,8675 12881,8750 12954,8840 13048,8956
 Schandauer Str.: m‰ﬂiges, eher schlechteres Kopfsteinpflaster	Q2- 13102,8724 12954,8840
 Laubestr.: Kopfsteinpflaster	Q2 12980,8566 12822,8675
-Neckarstr.: Kopfsteinpflaster	Q2 12639,8344 12384,8284
-Isarstr.: Kopfsteinpflaster	Q2 12384,8284 12368,8356 12349,8464
+Neckarstr.: Asphalt	Q0 12639,8344 12509,8318
+Neckarstr.: Verbundsteinpflaster	Q1+ 12509,8318 12382,8292
+Isarstr.: Verbundsteinpflaster	Q1+ 12382,8292 12368,8356
+Isarstr.: Kopfsteinpflaster	Q2 12368,8356 12349,8464
 Heidelberger Str.: asphaltiert	Q0 13661,9069 13489,9199
 Lexisstr.: Beton	Q1+ 12987,9481 13063,9422
 Lexisstr.: Asphalt	Q0- 13063,9422 13124,9375

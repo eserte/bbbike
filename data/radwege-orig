@@ -1039,13 +1039,13 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 969
 #: source_id: IM_018997
 #: source_id: IM_023987
 #: source_id: IM_025933
-#: last_checked: 2016-12-23
+#: last_checked: 2017-01-16
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9601,12380 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2016-11-04
+#: last_checked: 2017-01-16
 #: check_frequency: 60d
 Busspur ist immer gültig	RW5; 9475,12365 9601,12380
 # 
@@ -4588,6 +4588,7 @@ asphaltiert	RW1;RW1 20779,3046 20832,3170 20927,3292 20967,3343 21055,3415 21153
 Tempo 10	RW6;RW6 13559,12779 13470,12990
 	RW4; 5165,6119 4984,6209 4937,6205
 	RW6;RW6 4971,6345 4854,6413
+	RW3; 14355,12752 14096,12827
 	RW4;RW3 14096,12827 14066,12836
 	RW3; 14066,12836 13979,12861 13960,12866 13844,12900
 #: XXX wegen Bauarbeiten am Hochhaus "Upper West" sind die Radspuren aufgehoben
@@ -4834,3 +4835,4 @@ Busspur gilt Mo-Sa 7-19 Uhr	RW5; 7433,13070 7563,13143 7573,13149 7714,13223
 die letzten Meter nur Schutzstreifen	RW4; 18731,8577 18709,8423
 	RW6;RW6 7802,14250 7757,14318
 10km/h	RW6;RW6 13510,8138 13663,8011
+	RW6;RW6 12509,8318 12382,8292 12368,8356

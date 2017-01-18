@@ -25493,14 +25493,15 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Littenstr.: Bauarbeiten, Fahrbahn gesperrt, Einbahnstraßenregelung in der Voltairestr.',
+       text  => 'Littenstr.: Bauarbeiten, Fahrbahn gesperrt bzw. Einbahnstraßenregelung',
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2016-12-23 vvv
+#: last_checked: 2017-01-16 vvv
 #: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
+	q2::inwork; 11139,12243 11092,12375
 #	2::inwork 11032,12439 11059,12450
 #	2::inwork 11049,12386 11084,12395
 # REMOVED (eh' nur teilweise) --- q2::inwork; 11092,12375 11209,12430
