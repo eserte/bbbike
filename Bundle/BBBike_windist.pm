@@ -71,7 +71,7 @@ IPC::Run	- hilft bei der sicheren Ausführung von externen Kommandos (insbesonder
 
 Object::Iterate	- Notwendig für die bbd2-esri-Konvertierung
 
-Tie::IxHash	- Damit Direktiven in Straßen-Daten geordnet bleiben
+Tie::IxHash 1.23	- Damit Direktiven in Straßen-Daten geordnet bleiben
 
 CDB_File	- Für die alternative A*-Optimierung in XS/C und Cache-Dateien (grid/lazy)
 

@@ -163,7 +163,7 @@ Geo::Proj4	- Für das Konvertieren von ESRI-Shapefiles
 
 DBD::mysql	- Für den Zugriff auf die Hausnummerdatenbank
 
-Tie::IxHash	- Damit Direktiven in Straßen-Daten geordnet bleiben
+Tie::IxHash 1.23	- Damit Direktiven in Straßen-Daten geordnet bleiben
 
 CDB_File	- Für die alternative A*-Optimierung in XS/C und Cache-Dateien (grid/lazy)
 

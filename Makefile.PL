@@ -213,7 +213,7 @@ my @req_table =
    'Für das Konvertieren von ESRI-Shapefiles'],
   [qw/DBD::mysql	0	all	0	base/,
    'Für den Zugriff auf die Hausnummerdatenbank'],
-  [qw/Tie::IxHash	0	all	0|4	base/,
+  [qw/Tie::IxHash	1.23	all	0|4	base/, # 1.23 for Clear method
    'Damit Direktiven in Straßen-Daten geordnet bleiben'],
   [qw/CDB_File		0	all	0|4	base/,
    'Für die alternative A*-Optimierung in XS/C und Cache-Dateien (grid/lazy)'],

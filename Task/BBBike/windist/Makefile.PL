@@ -31,7 +31,7 @@ WriteMakefile(
 	'Array::Heap'         => 0, # macht A* noch etwas schneller
 	'IPC::Run'            => 0, # hilft bei der sicheren Ausführung von externen Kommandos (insbesondere für Win32)
 	'Object::Iterate'     => 0, # Notwendig für die bbd2-esri-Konvertierung
-	'Tie::IxHash'         => 0, # Damit Direktiven in Straßen-Daten geordnet bleiben
+	'Tie::IxHash'         => 1.23, # Damit Direktiven in Straßen-Daten geordnet bleiben
 	'CDB_File'            => 0, # Für die alternative A*-Optimierung in XS/C und Cache-Dateien (grid/lazy)
 	'Geo::METAR'          => 0, # Wetterdaten im METAR-Format
 	'Geo::Coder::Bing'    => 0.10, # Geocoding über Bing
