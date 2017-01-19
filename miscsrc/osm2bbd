@@ -41,6 +41,9 @@ if (SORTED_TAGS || SORTED_ELEMENTS) {
 	    scalar @{ $_[0]->[1] };
 	};
     }
+    if (!defined &Tie::IxHash::CLEAR) {
+	*Tie::IxHash::CLEAR = \&Tie::IxHash::Clear;
+    }
 }
 
 # Same as in Strassen::Core, which is coincidence.
@@ -2123,7 +2126,7 @@ sub output_addr {
 	    my $ll = exists $def->{ll} ? $def->{ll} : $node2ll{$def->{nodes}->[0]};
 	    push @{$out{'_addr'}}, [$name, [$ll], 'HNR'];
 	}
-	#%addr = (); # free memory # NO! Takes forever!
+	%addr = (); # free memory
     }
 }
 
