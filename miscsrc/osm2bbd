@@ -17,7 +17,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..";
 
 use vars qw($VERSION);
-$VERSION = '0.20';
+$VERSION = '0.21';
 
 use Cwd qw(getcwd realpath);
 use Data::Dumper;
@@ -35,6 +35,12 @@ use constant SORTED_TAGS => 1;
 use constant SORTED_ELEMENTS => 1;
 if (SORTED_TAGS || SORTED_ELEMENTS) {
     require Tie::IxHash;
+    # See http://rt.cpan.org/Ticket/Display.html?id=39619
+    if (!defined &Tie::IxHash::SCALAR) {
+	*Tie::IxHash::SCALAR = sub {
+	    scalar @{ $_[0]->[1] };
+	};
+    }
 }
 
 # Same as in Strassen::Core, which is coincidence.
@@ -2117,7 +2123,7 @@ sub output_addr {
 	    my $ll = exists $def->{ll} ? $def->{ll} : $node2ll{$def->{nodes}->[0]};
 	    push @{$out{'_addr'}}, [$name, [$ll], 'HNR'];
 	}
-	%addr = (); # free memory
+	#%addr = (); # free memory # NO! Takes forever!
     }
 }
 
