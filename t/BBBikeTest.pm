@@ -58,7 +58,7 @@ use BBBikeUtil qw(bbbike_root is_in_path);
 	      eq_or_diff is_long_data like_long_data unlike_long_data
 	      like_html unlike_html is_float using_bbbike_test_cgi using_bbbike_test_data check_cgi_testing check_gui_testing on_author_system
 	      get_pmake image_ok zip_ok create_temporary_content static_url
-	      get_cgi_config selenium_diag
+	      get_cgi_config selenium_diag noskip_diag
 	    ),
 	   @opt_vars);
 
@@ -1022,6 +1022,23 @@ To download selenium check
 
     http://www.seleniumhq.org/download/
 
+EOF
+}
+
+sub noskip_diag () {
+    require Config;
+    Test::More::diag(<<EOF);
+
+There were skips because of missing modules or other prerequisites. You can
+rerun this test with
+
+    $Config::Config{scriptdir}/prove $0 :: -noskip
+
+or
+
+    $^X $0 -noskip
+
+to see failing tests because of these modules.
 EOF
 }
 

@@ -7,6 +7,8 @@
 
 use strict;
 use FindBin;
+use lib "$FindBin::RealBin";
+
 use Cwd qw(getcwd);
 use ExtUtils::Manifest;
 use Getopt::Long;
@@ -288,15 +290,8 @@ for my $f (@files) {
 }
 
 if ($has_skips) {
-    diag <<EOF;
-
-There were skips because of missing modules or other prerequisites. You can
-rerun this test with
-
-    $^X $0 -noskip
-
-to see failing tests because of these modules.
-EOF
+    require BBBikeTest;
+    BBBikeTest::noskip_diag();
 }
 
 __END__
