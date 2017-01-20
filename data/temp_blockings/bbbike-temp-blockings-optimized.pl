@@ -1765,34 +1765,7 @@ userdel	q4::inwork; 3807,11859 3666,11855
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	q4::inwork 8634,10426 8384,10507 8527,10621
-userdel	q4::inwork 8348,10636 8335,10518 8350,10499
-',
-         'from' => 1484521200,
-         'id' => 2718,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              8,
-                              'months',
-                              1
-                            ],
-                            [
-                              'yearly',
-                              'days',
-                              27,
-                              'months',
-                              6
-                            ]
-                          ],
-         'source_id' => '2147339708',
-         'text' => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 17.01.2017-19.01.2017',
-         'type' => 'handicap',
-         'until' => 1484866799
-       },
+       undef,
        {
          'data' => '	2::inwork 9998,16547 9983,16561 9955,16578
 ',
@@ -1921,35 +1894,7 @@ userdel	2::night 16196,18364 16315,18208
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: verschlossen 2016-05-11 gegen 9 Uhr
-#: note: offen am 2016-06-16 gegen 9:30 Uhr
-#: note: offen am 2016-07-01 gegen 18:15 Uhr
-#: note: geschlossen am 2016-07-11 gegen 18:00 Uhr
-#: note: geschlossen am 2016-07-21 gegen 19:30 Uhr
-#: note: offen am 2016-09-21 gegen 18:15 Uhr
-#: note: offen am 2016-11-11 gegen 18:40 Uhr
-#: note: offen am 2016-11-22 gegen 18:30 Uhr
-#: note: offen am 2016-12-07 gegen 19:00 Uhr
-#: note: offen am 2016-12-12 gegen 09:45 Uhr
-userdel	2::temp 8362,13466 8369,13465 8377,13463
-#: note: verschlossen am 2016-06-16 gegen 9:30 Uhr
-#: note: verschlossen am 2016-07-01 gegen 18:15 Uhr
-#: note: verschlossen am 2016-07-11 gegen 18:00 Uhr
-#: note: verschlossen am 2016-07-21 gegen 19:30 Uhr
-#: note: verschlossen am 2016-09-21 gegen 18:15 Uhr
-#: note: verschlossen am 2016-11-22 gegen 18:30 Uhr
-#: note: verschlossen am 2016-12-07 gegen 19:00 Uhr
-#: note: verschlossen am 2016-12-12 gegen 09:45 Uhr
-userdel	2::temp 8371,13399 8363,13402 8356,13404
-',
-         'from' => undef,
-         'id' => 2785,
-         'recurring' => 1,
-         'text' => 'Alexanderufer - Charité: Tor kann verschlossen sein',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: last_checked: 2016-06-26
 	2::inwork 16041,3718 16003,3652

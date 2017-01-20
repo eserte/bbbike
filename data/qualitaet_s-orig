@@ -153,7 +153,7 @@ Kopernikusstr.: mäßiges Kopfsteinpflaster	Q2 13467,11778 13651,11731
 Torellstr.: mäßiges Kopfsteinpflaster	Q2 13295,11792 13467,11778
 #: next_check_id: RUEDERSDORFER-2016
 #: XXX Bauarbeiten, danach vielleicht teilweise bessere Qualität?
-#: last_checked: 2017-01-19
+#: last_checked: 2017-01-20
 #: check_frequency: 60d
 Rüdersdorfer Str.: Asphalt mit Schäden	Q1- 13295,11792 13173,11788 13066,11854
 Kaskelstr.: relative glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
@@ -1500,7 +1500,7 @@ Um den Flughafen: mäßiger Asphalt	Q2+ 1033,16278 1007,16332 872,16369 762,16318 
 Um den Flughafen: Schotter, fester Sand	Q1- 315,16262 259,16628 318,16740 1450,17366 1464,17373
 # REMOVED asphaltiert (mittlerweile?) --- Klemkestr.: Kopfsteinpflaster	Q2 7217,18681
 Arnimplatz: Mosaikpflaster	Q1 10739,16146 10606,16319
-Bergstr. (Mitte): Kopfsteinpflaster	Q2 9796,13694 9741,13850 9725,13894 9676,14046
+Bergstr. (Mitte): Kopfsteinpflaster	Q2 9797,13691 9741,13850 9725,13894 9676,14046
 Schröderstr.: Kopfsteinpflaster	Q2 9535,13801 9725,13894
 Lepsiusstr.: Kopfsteinpflaster	Q2 4973,6645 4940,6586 4913,6538
 #: by: Johann Eickhoff-Koberg (Nordteil, Q2) vvv
@@ -7966,6 +7966,9 @@ Rehsprung: fester Sandweg, teilweise mit Schotterstellen	Q2+ -3521,1681 -3300,16
 Rehsprung: fester Sandweg, Feinschotter	Q1- -3156,2134 -3177,2205 -3284,2323 -3290,2420
 Rykestr.: Kopfsteinpflaster	Q2 11374,14363 11380,14316
 Simmelstr.: Verbundsteinpflaster	Q1 7533,17673 7615,17684
+#: XXX Instandsetzung 2017, danach vermutlich Q0
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170120
+#: next_check: 2017-10-01
 Simmelstr.: Asphalt	Q0- 7615,17684 7669,17691 7809,17708 7856,17714
 Simmelstr.: Kopfsteinpflaster	Q2 7856,17714 7897,17720 7973,17732
 Werftendensteig: Asphalt	Q0 7659,17826 7669,17691
@@ -17014,7 +17017,7 @@ Theodorstr. (Mahlsdorf): sehr gute Teerdecke	Q0 24916,10539 24921,10705 24928,10
 #: corrected_by: srt (wird gerade neu gemacht)
 #: XXX wann wird die letzte Asphaltierung gemacht?
 #: last_checked: 2016-08-20
-Theodorstr. (Mahlsdorf): Asphalt, letzte Deckschicht fehlt noch	Q1 24923,10774 24922,10785 24919,10818 24913,10884 24905,10955 24899,11044 24897,11083
+Theodorstr. (Mahlsdorf): Asphalt, letzte Deckschicht fehlt noch	Q1 24923,10774 24922,10785 24919,10818 24916,10853 24913,10884 24905,10955 24904,10965 24899,11044 24897,11083
 #: corrected_by: srt (neu gemacht)
 Theodorstr. (Mahlsdorf): Asphalt	Q0 24897,11083 24900,11156 24907,11186 24893,11252
 #: by: ^^^
@@ -22822,6 +22825,9 @@ Hoernlestr.: Asphalt	Q0+ 22645,6431 22509,6519 22301,6683 22265,6689 22192,6659
 #: by: arnulf knorr: vvv
 #: note: anonymous meinte: Asphalt, Q2, keine Einbahnstraße erwähnt, falsch geschriebener Straßenname
 #: note: ein anderer anonymous meinte: Beton, Q2, viele Schlaglöcher, q3
+#: XXX Instandsetzung 2017, danach vermutlich Q0
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170120
+#: next_check: 2017-10-01
 Huttwiler Weg: mäßiger Asphalt	Q1- 7071,18232 7120,18295 7098,18383 7035,18413 6961,18453 6913,18460
 Walliser Str.: guter Asphalt	Q0 6887,18330 6913,18460 6921,18560
 #: by: ^^^
@@ -24133,6 +24139,9 @@ Linumer Str.: gutes Verbundsteinpflaster	Q1 -4326,16581 -4175,16573
 # 
 #: by: Borris (tandem...): vvv
 #: note: sah wie mäßiger Asphalt aus, könnte aber auch "Betonstein" sein
+#: XXX Instandsetzung 2017, danach vermutlich Q0
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170120
+#: next_check: 2017-10-01
 Elsestr.: mit Betonsteinen gepflastert	Q1 4668,24442 4656,24379
 #: confirmed_by: srt
 Elsestr.: Asphalt	Q0 4656,24379 4662,24326 4683,24275
@@ -24670,7 +24679,7 @@ Kernhofer Str.: Kopfsteinpflaster	Q2 15434,11086 15380,10946
 Kernhofer Str.: glattes Pflaster	Q0 15380,10946 15355,10875
 Eichendorffstr.: Kopfsteinpflaster	Q2 9275,13720 9231,13843
 Eichendorffstr.: Kopfsteinpflaster	Q2- 9231,13843 9203,13953
-Novalisstr.: Kopfsteinpflaster	Q2 9340,13510 9275,13720
+Novalisstr.: Kopfsteinpflaster	Q2 9353,13521 9275,13720
 #: corrected_by: srt (Q1 -> Q0)
 Philippstr.: Asphalt	Q0 8892,13498 8833,13440
 Schlegelstr.: Asphalt	Q0 9316,13870 9231,13843 9042,13707

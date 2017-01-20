@@ -826,6 +826,7 @@ Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
 Fritz-Werner-Str.	1s 9099,2780 9072,2589
 Kraftwerk Reuter West	2 -447,14338 -495,14311 -650,14355 -792,14258 -1002,14162 -1020,14084
 Bechstedter Weg	1 3467,9045 3661,8815 3701,8849
+Tor	2 8371,13399 8363,13402 8356,13404
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -2556,8 +2557,6 @@ Drängelgitter, kann umfahren werden	BNP:3:-152:trailer=10 14969,10138
 Schwingtor	BNP:3:-252:trailer=10 14146,12921
 Schwingtor	BNP:5:-2:trailer=10 17490,13133
 Schwingtor	BNP:5:-94:trailer=10 17684,13133
-Schwingtor	BNP:5:-255:trailer=10 8369,13465
-Schwingtor	BNP:5:-249:trailer=10 8363,13402
 Schranke	BNP:3:-36:trailer=10 8623,13049
 Drängelgitter	BNP:3:-216:trailer=10 18788,27989
 Schranke	BNP:3:-228:trailer=10 -2162,17924

@@ -883,11 +883,17 @@ parallel zur Johannes-Tobei-Str.: eine mit Betonschwellen abgesperrte Asphaltstr
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6785
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036170376576/170376576/00086618/18-Anlagen/02/vzb1309_IV_Auswertung_Beteilig_B-PLan_XXIII_9a.pdf
 #: last_checked: 2016-08-20 vvv
-#: check_frequency: 360d vvv
+#: next_check: 2017-05-01 vvv
 #: osm_watch: way id="376316837" version="1"
 Planstraße A: Straße in Planung, Qualität? Wird das die neue Hauptstraßenführung?	? 24740,10992 24801,11261
-Rad- und Gehwegverbindung geplant: Qualität? Name des Weges? Beleuchtet?	? 24905,10955 24740,10992
-#: check_frequency ^^^
+Rad- und Gehwegverbindung geplant: Qualität? Name des Weges? Beleuchtet?	? 24833,10970 24740,10992
+#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_03_0189_0324_online.pdf vvv
+#: XXX fehlen in Berlin.coords.data, beides Privatstraße vvv
+Hermineweg: geplante Straße, Qualität, genaue Lage?	?::projected 24916,10853 24888,10860 24806,10880 24819,10924 24833,10970 24904,10965
+Malevkeweg: geplante Straße, Qualität, genaue Lage?	?::projected 24888,10860 24879,10921 24819,10924
+#: XXX ^^^
+#: by ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
 #: by: ^^^
@@ -1318,6 +1324,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5323 (Brückenbenennung)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/25re.pdf/file?y=2016 (Brückenbenennung)
 #: by: www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160916 (fertig im Januar 2018)
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036305920032/305920032/00249733/33-Anlagen/01/DRS0054VK.pdf
 #: XXX Asphaltierung der Fahrbahn von Rummelsburger Landstr. bis Schwarzer Weg fertig
 #: XXX Radwege werden vermutlich asphaltiert sein
 #: last_checked: 2016-12-10
@@ -1396,11 +1403,11 @@ Soldiner Str.: grundhafte Erneuerung, evtl. verschwindet das Kopfsteinpflaster d
 #: XXX Ziffer 1 - George-Stephenson-Str.
 #: XXX Ziffer 5 - Lydia-Rabinowitsch-Kempner-Str. --- abgelehnt, neuer Namensvorschlag: Lydia-Rabinowitsch-Str.
 #: XXX Ziffer 6 - Annemarie-Renger-Str.
-#: last_checked: 2016-11-22 vvv
+#: last_checked: 2017-01-20 vvv
 #: check_frequency: 60d vvv
 Kieler Brücke - Heidestraße, Rad/Gehweg	?::projected 7740,14409 7621,14341
 #: osm_watch: way id="237716440" version="3"
-#: last_checked: 2016-12-12
+#: last_checked: 2017-01-20
 geplanter Uferweg	?::projected 8292,13530 8171,13703 8128,13767 8044,13929 7989,14035 7912,14160 7843,14275 7824,14305 7740,14409
 #: XXX wird es auch eine Brücke zur Kieler Str. geben?
 #: XXX vermutlich diese Brücke wird "Golda-Meir-Steg" heißen (Berlin.coords.data-Eintrag fehlt)
@@ -1577,6 +1584,27 @@ Bebauungsplanverfahren XXI-41b: ändert sich hier an den Wegen etwas?	?::projecte
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX Instandsetzung 2017, danach vielleicht bessere Qualität
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170120
+#: next_check: 2017-10-01
+Rauentaler Str.: Instandsetzung geplant	?::projected 3138,26315 3168,26445 3170,26502
+# 
+#: XXX Instandsetzung 2017, danach vermutlich Q0
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170120
+#: next_check: 2017-10-01
+Sandhauser Str. und Falkenplatz: Instandsetzung geplant	?::projected -1869,19974 -1806,19806 -1794,19681 -1788,19663 -1784,19666
+# 
+#: XXX Instandsetzung 2017, danach vermutlich Q0
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170120
+#: next_check: 2017-10-01
+Im Erpelgrund: Instandsetzung geplant (beide Richtungen oder nur eine?)	?::projected -586,22064 -735,22103 -786,22110 -973,22117 -827,22039 -629,21975
+# 
+Am Hechtgraben - Falkenberger Chaussee: Verbindung? Nachts beleuchtet? Qualität?	? 18503,18535 18483,18433 18530,18329 18601,18342
+# 
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5430
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036305920032/305920032/00115953/53-Anlagen/04/B1328SB.pdf
+An der Wuhlheide: existieren hier Schutzstreifen?	? 21002,5755 20880,5736 20755,5750 20536,5789 20428,5841 20352,5877 20173,5892 20057,5923 19958,5950 19759,6049 19594,6155 19578,6165 19405,6276 19276,6359 19245,6379 18948,6578 18771,6699 18492,6893 18404,6946 18225,7004 18010,7133
+# 
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6864 (unbeleuchtet)
 Gutspark Lichtenberg: existiert eine Verbindung für Radfahrer? Qualität?	? 15746,12967 15744,12999 15694,12996 15618,13067 15526,13056 15515,13134 15515,13134
 # 
@@ -1686,6 +1714,7 @@ Wege im Gutspark Neukladow: Wegführung, nachts beleuchtet, Qualität?	? -6198,535
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2016
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/53re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/ba-spandau/_assets/aktuelles/bebauungsplanverfahren/viii-424_begrundung_mit_anlagen.pdf
+#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_03_0189_0324_online.pdf (zwei weitere Straßen)
 #: note: Parkviertel Kladow vvv
 #: note: Privatstraßen vvv
 #: by: https://www.deutschepost.de/content/dam/dpag/images/D_d/DDP/Downloads/Datafactory/postleitdaten/dezember2016/mtb_strassen_neu.pdf (PLZ)
@@ -1693,8 +1722,10 @@ Wege im Gutspark Neukladow: Wegführung, nachts beleuchtet, Qualität?	? -6198,535
 #: XXX Bebauungsplan VIII-424
 #: XXX a) An den Parkbäumen PLZ=14089
 #: XXX str_cont_ausnahme-Eintrag notwendig
-An den Parkbäumen: Qualität? Genaue Lage? Existiert die Straße schon?	? -6410,6549 -6381,6587 -6307,6686 -6288,6710 -6439,6818 -6536,6695 -6381,6587
-An den Parkbäumen: Qualität? Genaue Lage? Existiert die Straße schon?	? -6347,6503 -6271,6612 -6307,6686
+An den Parkbäumen: Qualität? Genaue Lage? Existiert die Straße schon?	? -6410,6549 -6381,6587 -6307,6686 -6288,6710 -6439,6818 -6536,6695
+"An den Parkbäumen" oder "Parkrosenweg": Qualität? Genaue Lage? Existiert die Straße schon? Wie lauten die Straßennamen?	? -6536,6695 -6381,6587
+#: XXX bei osm "An den Parkbäumen", vermutlich falsch
+Am Waldkiefernweg: Qualität? Genaue Lage? Existiert die Straße schon?	? -6347,6503 -6271,6612 -6307,6686
 #: XXX b) Amberbaumallee PLZ=14089
 Amberbaumallee: Qualität? Genaue Lage? Existiert die Straße schon? Hinterer Teil nur für Fußgänger?	? -6221,6411 -6347,6503 -6377,6523 -6410,6549 -6661,6743
 #: XXX c) Moorbirkenweg PLZ=14089
@@ -1773,7 +1804,7 @@ Spektegrünzug: parallel zum Spekteweg existiert ein Rad/Gehweg	? -4671,14818 -47
 # 
 #: next_check_id: HEIDESTR-2016 vvv
 #: XXX Ampeln in der Heidestr. vvv
-#: last_checked: 2016-11-22 vvv
+#: last_checked: 2017-01-20 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: node id="4308915647" version="1"
 Anforderungsampel, X	?::inwork 7820,13994
@@ -3060,7 +3091,7 @@ Johannes-Guthmann-Weg: neue Straße entsteht, vermutlich hier? Qualität?	?::inwor
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/1762-2016-bav-zu-ds-2760-iv-benennung_hilda_geiringer-sb.pdf
 #: XXX eventuell entstehen hier weitere Straßen/Wege
 #: XXX Alternativer Namensvorschlag: Am Humboldthafen
-#: last_checked: 2016-12-25
+#: last_checked: 2017-01-20
 #: check_frequency: 360d
 (Am Humboldthafen): Straße soll nach Hilda Geiringer benannt werden --- wo genau wird die Straße liegen?	?::projected 8243,13469 8245,13396
 # 

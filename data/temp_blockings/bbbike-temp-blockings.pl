@@ -19987,7 +19987,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20110928.1340.360235.html',
        data  => <<EOF,
-userdel	q4::inwork; 9212,13471 9340,13510 9394,13528 9508,13578 9580,13600 9670,13637 9796,13694 9917,13741 10177,13766
+userdel	q4::inwork; 9212,13471 9353,13521 9391,13535 9508,13578 9579,13604 9670,13637 9797,13691 9917,13741 10177,13766
 EOF
      },
      { from  => 1317679200, # 2011-10-04 00:00
@@ -25065,7 +25065,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1484934475, # -> ein Tor ist nach gesperrt-orig gewandert, das andere scheint jetzt immer offen zu sein
        text  => 'Alexanderufer - Charité: Tor kann verschlossen sein',
        recurring => 1,
        type  => 'gesperrt',
@@ -25243,7 +25243,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED (laut osm mittlerweile offen) --- : last_checked: 2016-08-20
-	2::inwork 24897,11083 24899,11044 24905,10955 24913,10884 24919,10818 24922,10785 24923,10774
+	2::inwork 24897,11083 24899,11044 24904,10965 24905,10955 24913,10884 24916,10853 24919,10818 24922,10785 24923,10774
 EOF
      },
      { from  => 1466287200, # 2016-06-19 00:00

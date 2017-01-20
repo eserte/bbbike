@@ -1154,6 +1154,8 @@ Kraftwerk Reuter West	2 -447,14338 -495,14311 -650,14355 -792,14258 -1002,14162 
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf
 #: by: osm
 Bechstedter Weg	1 3467,9045 3661,8815 3701,8849
+#: note: seit mindestens Juni 2016 dauerhaft verschlossen
+Tor	2 8371,13399 8363,13402 8356,13404
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -2330,13 +2332,8 @@ Schwingtor	BNP:3::trailer=10 14146,12921
 #: note: am 2013-08-15 war das Tor offen, am 2013-08-21 gegen 10 Uhr ebenso, am 2013-09-14 mittags geschlossen, am 2014-08-08 mittags offen, am 2015-02-14 mittags geschlossen
 Schwingtor	BNP:5::trailer=10 17490,13133
 Schwingtor	BNP:5::trailer=10 17684,13133
-#: note: am 2016-03-03 morgens war das Tor zu, ansonsten habe ich es nie vorher geschlossen gesehen (allerdings bin ich meistens nur abends vorbei)
-#: note: am 2016-03-09 abends war das Tor zu
-#: note: am 2016-04-15 abends war das Tor offen
-Schwingtor	BNP:5::trailer=10 8369,13465
-#: note: am 2016-03-09 abends war das Tor zu
-#: note: am 2016-04-15 abends war das Tor vermutlich zu (nicht sicher)
-Schwingtor	BNP:5::trailer=10 8363,13402
+# REMOVED (mittlerweile meistens (immer?) offen) --- #: note: am 2016-03-03 morgens war das Tor zu, ansonsten habe ich es nie vorher geschlossen gesehen (allerdings bin ich meistens nur abends vorbei) --- #: note: am 2016-03-09 abends war das Tor zu --- #: note: am 2016-04-15 abends war das Tor offen --- Schwingtor	BNP:5::trailer=10 8369,13465
+# REMOVED (ist nun eine komplette Sperre) ---  #: note: am 2016-03-09 abends war das Tor zu --- #: note: am 2016-04-15 abends war das Tor vermutlich zu (nicht sicher) --- Schwingtor	BNP:5::trailer=10 8363,13402
 Schranke	BNP:3::trailer=10 8623,13049
 Drängelgitter	BNP:3::trailer=10 18788,27989
 Schranke	BNP:3::trailer=10 -2162,17924
@@ -2801,7 +2798,7 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3 9042,11839 8969,118
 # 
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
-#: last_checked: 2016-11-22
+#: last_checked: 2017-01-20
 #: next_check: 2017-09-02
 Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,14449 7561,14458 7426,14539 7368,14573
 # 
@@ -2845,7 +2842,7 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,
 #: XXX Straße wird zurückgebaut
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.256386.php
 #: osm_watch: way id="309901369" version="4"
-#: last_checked: 2016-11-22
+#: last_checked: 2017-01-20
 #: check_frequency: 60d
 Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7741,14560 7518,14689
 # 
@@ -3045,8 +3042,7 @@ am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14463,10212
 #: by: http://www.rbb-online.de/politik/beitrag/2014/07/bnd-zentrale-berlin-verzoegerung-vollstaendiger-umzug-bis-2017.html
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7441
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/1767-2016-bav-zu-ds-2814-iv-durchwegung_scharnhorst-chaussestrasse_sb.pdf
-#: last_checked: 2016-11-22
-#: next_check: 2016-12-15
+#: last_checked: 2017-01-20
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: Durchfahrt noch nicht zuverlässig offen	2::inwork 8251,14337 8442,14456
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
@@ -3166,7 +3162,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2016-12-12
+#: last_checked: 2017-01-20
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
