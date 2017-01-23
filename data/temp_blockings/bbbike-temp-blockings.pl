@@ -25719,4 +25719,29 @@ EOF
 userdel	2::inwork 4631,21788 4525,21714
 EOF
      },
+     { from  => 1485205907, 
+       until => 1485270000, # 2017-01-24 16:00
+       text  => 'Umfangreiche Sperrungen in Mitte: rund um das Berliner Rathaus und im Bereich des Berliner Doms und Zeughauses, am 24. Januar 2017 von 7 Uhr bis 16 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 9984,12426 9934,12420 9858,12410 9845,12506 9837,12560 9892,12596 9919,12613 9948,12631 10017,12675 10054,12699 10086,12725
+userdel	2::temp 9919,12613 9956,12523 9845,12506
+userdel	2::temp 9956,12523 9984,12426 10024,12431 10063,12438 9956,12617 9948,12631
+userdel	2::temp 10063,12438 10155,12494 10176,12506 10243,12546 10300,12587
+userdel	2::temp 10704,12595 10601,12521 10644,12469 10673,12434 10772,12515 10704,12595
+userdel	2::temp 10094,12635 10176,12506
+userdel auto	3 9876,12298 9858,12410 9780,12401
+userdel auto	3 10431,12709 10601,12521 10584,12507
+userdel auto	3 9780,12401 9858,12410 9876,12298
+userdel auto	3 10584,12507 10601,12521 10431,12709
+EOF
+     },
+     { from  => 1485206028, # 2017-01-23 22:13
+       until => 1496440800, # 2017-06-03 00:00
+       text  => 'Stubenrauchstr.: zwischen Wiesbadener Str. und Rotdornstr. Bauarbeiten, Fahrbahn gesperrt, bis 02.06.2017 ',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 5059,7216 5064,7160 5081,7112
+EOF
+     },
     );
