@@ -25744,4 +25744,13 @@ EOF
 userdel	q4::inwork 5059,7216 5064,7160 5081,7112
 EOF
      },
+     { from  => 1485385200, # 2017-01-26 00:00
+       until => 1485730800, # 2017-01-30 00:00
+       text  => 'Schönerlinder Str.: Sperrung zwischen A114 und Am Vorwerk, von 27.01.2017 abends bis 29.01.2017 nachts',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::inwork 12254,24857 12136,24607
+userdel	2::inwork 12108,24547 11980,24276
+EOF
+     },
     );

@@ -2756,15 +2756,7 @@ Mengerzeile.: Baustelle, Einbahnstraßenregelung	1s:q3 13176,9302 13100,9210
 #: valid: -20170131
 Puschkinallee: Fahrtrichtung gesperrt	1::inwork 13795,9941 13890,9894
 # 
-#: next_check_id: STRESEMANNPARKWEG-2016
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.530316.php
-#: XXX "3-4 Wochen"
-#: XXX danach eine "bituminöse Befestigung"
-#: XXX evtl. wird die Beleuchtung auch erneuert?
-#: last_checked: 2016-12-16
-#: check_frequency: 14d
-#: priority: #A
-Parkweg zwischen Stresemannstr. und Wilhemstr.: wird instandgesetzt, in dieser Zeit nicht befahrbar	2::inwork 9249,10562 9375,10616
+# REMOVED (offen) --- #: next_check_id: STRESEMANNPARKWEG-2016 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.530316.php --- #: XXX "3-4 Wochen" --- #: XXX danach eine "bituminöse Befestigung" --- #: XXX evtl. wird die Beleuchtung auch erneuert? --- #: last_checked: 2016-12-16 --- #: check_frequency: 14d --- #: priority: #A --- Parkweg zwischen Stresemannstr. und Wilhemstr.: wird instandgesetzt, in dieser Zeit nicht befahrbar	2::inwork 9249,10562 9375,10616
 # 
 #: next_check_id: CHAUSSEESTR-2016 vvv
 #: XXX NEW	Chausseestraße (Mitte) Richtung Müllerstraße zwischen Habersaathstraße und Wöhlertstraße (Berlin)  Gültig ab: 31.10.2016 12:29  Baustelle, Fahrtrichtung gesperrt. eine Umleitung über Zinnowitzer Straße ist eingerichtet (bis 04/17)
@@ -2856,7 +2848,7 @@ Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7741,14560 7518,14
 # REMOVED (fertig) --- Treptower Park: Bauarbeiten	2::inwork 15591,8848 15608,8882 15617,8924 15623,8949 15630,8979
 # REMOVED --- #: XXX evtl. kann man hier als Fußgänger irgendwie vorbei --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 3d --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14448,9922 14467,9880 14500,9863 --- #: last_checked ^^^
 # 
-#: last_checked: 2016-12-05
+#: last_checked: 2017-01-26
 #: osm_watch: way id="57852078" version="4"
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
 # 
@@ -2897,7 +2889,7 @@ Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 #: next_check_id: ZIEGELSTR-2016
 #: XXX Ende der Bauarbeiten?
 #: osm_watch: way id="4610375" version="14"
-#: last_checked: 2017-01-16
+#: last_checked: 2017-01-26
 #: check_frequency: 14d
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076 9559,13087
 # 
@@ -3076,7 +3068,7 @@ Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,689
 # REMOVED --- #: XXX siehe auch Busspur in radwege-orig vvv --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html vvv --- #: source_id: INKO_113041 vvv --- #: source_id: 2147339528 vvv --- 
 #: next_check_id: ZEUGHAUS-2014
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
-#: last_checked: 2016-12-23 vvv
+#: last_checked: 2017-01-26 vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
 # REMOVED --- Niederlagstr. - Unter den Linden: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9943,12364 9934,12420 9984,12426
