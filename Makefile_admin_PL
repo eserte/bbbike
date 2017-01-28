@@ -14,6 +14,7 @@
 # This file is included automatically by "perl Makefile.PL"
 
 use BBBikeUtil qw(is_in_path);
+use BBBikeBuildUtil qw(get_pmake);
 use BBBikeVar qw();
 use Config qw(%Config);
 
@@ -23,6 +24,11 @@ $bbbike_makefile_admin .= <<EOF;
 BBBIKE_STABLE_VERSION=	$BBBike::STABLE_VERSION
 BBBIKE_DISTFILE_SOURCE=	distfiles/BBBike-\$(BBBIKE_STABLE_VERSION).tar.gz
 
+EOF
+
+my $pmake = get_pmake;
+$bbbike_makefile_admin .= <<EOF;
+PMAKE=	$pmake
 EOF
 
 ######################################################################
@@ -548,7 +554,7 @@ permission-other:
 	perl -MExtUtils::Manifest=maniread -le 'print join "\n", sort keys %{ maniread("MANIFEST") }' | xargs chmod ugo+r
 
 permission-data:
-	cd data && ${MAKE} fix-permissions
+	cd data && ${PMAKE} fix-permissions
 
 permission-cgi:
 	cd cgi && ${MAKE} permissions
