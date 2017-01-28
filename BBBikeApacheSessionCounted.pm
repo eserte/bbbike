@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2011,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2011,2014,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +16,7 @@ package BBBikeApacheSessionCounted;
 use strict;
 use vars qw($VERSION $debug);
 
-$VERSION = '0.03';
+$VERSION = '0.04';
 $debug = $main::debug; # XXX hmmmm
 $main::debug = $main::debug if 0; # cease -w
 
@@ -31,6 +31,7 @@ our %CLUSTER_DEFS = (
 		     'mosor'                                     => [4, 'http://mosor/bbbike/cgi/asch'],
 		     'lvps176-28-19-132.dedicated.hosteurope.de' => [5, 'http://bbbike.lvps176-28-19-132.dedicated.hosteurope.de/cgi-bin/asch'],
 		     'bbbike-vmz'                                => [6, 'http://ip78-137-103-246.pbiaas.com/cgi-bin/asch'],
+		     'lvps83-169-5-248.dedicated.hosteurope.de'  => [7, 'http://bbbike.lvps83-169-5-248.dedicated.hosteurope.de/cgi-bin/asch'],
 		    );
 ######################################################################
 our $THIS_HOST_ID;
