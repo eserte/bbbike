@@ -53,7 +53,7 @@ SKIP: for my $_url (@urls) {
     my $host = $u->host;
     my $port = $u->port;
     my $peeraddr = "$host:$port";
-    if ($host =~ m{(^|\.)(bbbike\.de|bbbike-pps|bbbike-pps-jessie)($|\.)} && $port == 80) {
+    if ($host =~ m{(^|\.)(bbbike\.de|bbbike-pps|bbbike-pps-jessie|lvps\d+-\d+-\d+-\d+\.dedicated\.hosteurope\.de)($|\.)} && $port == 80) {
 	skip "Probably perlbal is running on $peeraddr, which is not capable of handling HTTP/1.1 pipelines", $tests_per_url;
     } elsif ($host =~ m{^(127\.0\.0\.1|localhost)$} && $port == 80 && -f "/etc/perlbal/perlbal.conf") {
 	my $ps = `ps ax`;
