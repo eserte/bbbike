@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2014,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2014,2016,2017 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -28,17 +28,19 @@ BEGIN { # XXX do not hardcode
 	$BBBIKE_ROOT = "/home/e/eserte/src/bbbike/projects/bbbike.de-hosteurope/BBBike";
 	$BBBIKE_URL = "/BBBike";
 	@Strassen::datadirs = "$BBBIKE_ROOT/data";
-    } elsif ($ENV{SERVER_NAME} eq 'vran.herceg.de') {
-	$BBBIKE_URL = "/~eserte/bbbike";
-    } elsif ($ENV{SERVER_NAME} =~ /bbbike\.de$/i ||
-	     eval { require Sys::Hostname; 1 } && Sys::Hostname::hostname() =~ m{lvps\d+-\d+-\d+-\d+\.dedicated\.hosteurope\.de$}
+    } elsif ($ENV{SERVER_NAME} =~ m{(
+					bbbike\.de$
+				    |   bbbike-pps
+				    |   lvps\d+-\d+-\d+-\d+\.dedicated\.hosteurope\.de$
+				    )
+			           }xi
 	    ) {
-	$BBBIKE_ROOT = "/root/work/bbbike-webserver/BBBike";
 	$BBBIKE_URL = "/BBBike";
     } else {
-	$BBBIKE_ROOT = "$FindBin::RealBin/..";
 	$BBBIKE_URL = "/bbbike";
     }
+    $BBBIKE_ROOT = "$FindBin::RealBin/.." if !defined $BBBIKE_ROOT;
+    $BBBIKE_URL  = "/bbbike" if !defined $BBBIKE_URL;
 }
 use CGI qw(:standard *table);
 use CGI::Carp;
