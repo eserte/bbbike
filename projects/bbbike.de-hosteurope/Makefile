@@ -242,7 +242,7 @@ BBBIKECGI=		bbbike2.cgi
 BBBIKE_CGI_CONFIG=bbbike-hosteurope.cgi.config
 MAPSERVER_BRB_LOCALINC=	mapserver-brb-brb.map-localinc
 .ifdef TARGET
-.if ${TARGET} == bbbike-pps-jessie
+.if ${TARGET} == bbbike-pps-jessie || ${TARGET} == lvps83-169-5-248.dedicated.hosteurope.de
 BBBIKE_CGI_CONFIG=	bbbike-hosteurope-jessie.cgi.config
 MAPSERVER_BRB_LOCALINC=	mapserver-brb-brb.map-localinc-jessie
 .endif
