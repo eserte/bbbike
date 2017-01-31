@@ -11,7 +11,7 @@
 ### Friedrichshain ###
 # 
 #: next_check_id: RUEDERSDORFER-2016
-#: last_checked: 2017-01-26
+#: last_checked: 2017-01-31
 #: check_frequency: 14d
 Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 13173,11788 13066,11854
 # 
@@ -22,7 +22,7 @@ Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inw
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2017-01-19 vvv
+#: last_checked: 2017-01-30 vvv
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q2::inwork 14211,11229 14286,11186
 # 
 #: last_checked: 2017-01-22
@@ -273,9 +273,7 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED (nur eine Engstelle ist entstanden, kaum relevant für Radfahrer) --- #: XXX bleibt das Kopfsteinpflaster? - wahrscheinlich ja --- #: last_checked: 2014-12-04 --- Leuschnerdamm: Bauarbeiten am Engelbecken, auf Gehweg ausweichen	q4::inwork 11365,11047 11421,11073
 # 
 ### Karlshorst ###
-#: XXX nach den Bauarbeiten vermutlich bessere Qualität
-#: last_checked: 2016-12-10
-Andernacher Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 19159,8622 19249,8662
+# REMOVED --- #: XXX nach den Bauarbeiten vermutlich bessere Qualität --- #: last_checked: 2016-12-10 --- Andernacher Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 19159,8622 19249,8662
 # 
 ### Kreuzberg ###
 # 
@@ -289,12 +287,7 @@ Andernacher Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 19159,8622 19249,866
 #: check_frequency: 14d
 Carl-Herz-Ufer: Sperrung der Fahrbahn an der Baerwaldstr.	q4::inwork 10430,10081 10500,10081
 # 
-#: next_check_id: ALEXANDRINENSTR-2016
-#: source_id: LMS-BR_r_LMS-BR_68468
-#: source_id: LMS-BR_r_LMS-BR_85494
-#: last_checked: 2017-01-20
-#: next_check: 2017-01-31
-Stallschreiberstr., Alexandrinenstr.: Einbahnstraßenregelung	q4::inwork; 10794,10927 10824,11010 10678,11172 10593,11120 10501,11056
+# REMOVED --- #: next_check_id: ALEXANDRINENSTR-2016 --- #: source_id: LMS-BR_r_LMS-BR_68468 --- #: source_id: LMS-BR_r_LMS-BR_85494 --- #: last_checked: 2017-01-20 --- #: next_check: 2017-01-31 --- Stallschreiberstr., Alexandrinenstr.: Einbahnstraßenregelung	q4::inwork; 10794,10927 10824,11010 10678,11172 10593,11120 10501,11056
 # 
 # REMOVED (kaum noch Beeinträchtigungen) --- #: last_checked: 2016-02-26 --- #: next_check: 2016-03-30 --- Wassertorstr.: Wasserrohrbruch, kurzes Stück auf Gehweg ausweichen	q2::inwork 10857,10411 10987,10360
 # REMOVED (aufgehoben) --- #: last_checked: 2016-02-18 --- #: next_check: 2016-02-26 --- Oppelner Str.: Bauarbeiten, kurzes Stück auf Gehweg ausweichen	q2::inwork 12978,10581 12897,10439

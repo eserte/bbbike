@@ -1101,7 +1101,6 @@ die letzten 50 Meter sind benutzungspflichtig	RW1; 18225,7004 18010,7133
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5430
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036305920032/305920032/00115953/53-Anlagen/04/B1328SB.pdf
 #: by: osm ("lane" Richtung Westen)
-#: XXX ist der Radstreifen benutzungspflichtig?
 	RW1;RW3 18492,6893 18771,6699 18948,6578 19245,6379 19276,6359 19405,6276 19578,6165 19594,6155 19759,6049 19958,5950
 	RW0;RW1 9395,8726 9364,8640 9321,8607
 	RW3;RW3 13819,9333 13849,9310
@@ -1515,7 +1514,7 @@ die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
 	RW3;RW2 14671,10751 14674,10811
 #: next_check_id: HAUPTSTR-2015
 #: XXX wegen Bauarbeiten teilweise aufgehoben, früher RW4;RW4
-#: last_checked: 2016-12-27
+#: last_checked: 2017-01-28
 #: check_frequency: 30d
 	RW0;RW0 14674,10811 14717,10855
 	RW1;RW1 14652,10201 14688,10167 14705,10149 14747,10108 14817,10031

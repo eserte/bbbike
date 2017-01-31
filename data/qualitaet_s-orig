@@ -153,7 +153,7 @@ Kopernikusstr.: m‰ﬂiges Kopfsteinpflaster	Q2 13467,11778 13651,11731
 Torellstr.: m‰ﬂiges Kopfsteinpflaster	Q2 13295,11792 13467,11778
 #: next_check_id: RUEDERSDORFER-2016
 #: XXX Bauarbeiten, danach vielleicht teilweise bessere Qualit‰t?
-#: last_checked: 2017-01-26
+#: last_checked: 2017-01-31
 #: check_frequency: 60d
 R¸dersdorfer Str.: Asphalt mit Sch‰den	Q1- 13295,11792 13173,11788 13066,11854
 Kaskelstr.: relative glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
@@ -2537,7 +2537,8 @@ Wuhlewanderweg: wassergebundene Decke	Q1 22160,10834 22103,10814 22059,10782
 Wuhlewanderweg: guter Beton	Q0 22110,10796 22059,10782 21950,10776 21869,10750 21827,10684 21791,10623 21657,10519 21646,10510 21608,10403 21586,10344 21584,10329
 Wuhlewanderweg: Parkweg	Q1 21584,10329 21585,10289 21566,10230 21619,9993 21611,9893
 Wuhlewanderweg: Parkweg	Q1 21686,9876 21678,9817 21633,9731 21587,9609 21524,9488 21467,9236 21383,9045
-Andernacher Str.: m‰ﬂiger Asphalt	Q1- 19249,8662 19159,8622 19075,8590 19030,8559 19000,8509 18949,8437
+Andernacher Str.: Asphalt	Q0 19249,8662 19159,8622
+Andernacher Str.: m‰ﬂiger Asphalt	Q1- 19159,8622 19075,8590 19030,8559 19000,8509 18949,8437
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.523136.php
 #: XXX evtl. nach den Bauarbeiten besserer Asphalt
 #: last_checked: 2016-12-10
@@ -2885,8 +2886,9 @@ Am Carlsgarten: Asphalt	Q0 18709,8423 18799,8413 18875,8365 18914,8341 18956,832
 Am Carlsgarten: Beton	Q0- 19456,7956
 (Am Carlsgarten - Waldowallee): Asphalt	Q0 19456,7956 19478,7967 19509,7999
 #: XXX Bauarbeiten am angrenzenden Grundst¸ck, evtl. danach bessere Qualit‰t?
-#: last_checked: 2016-07-16
-#: check_frequency: 180d
+#: XXX zurzeit (2017-01-28) Kanalbauarbeiten
+#: last_checked: 2017-01-28
+#: check_frequency: 90d
 (Am Carlsgarten - Waldowallee): m‰ﬂiger Asphalt	Q2+ 19509,7999 19558,8064
 Maria-Matray-Str.: Asphalt	Q0 19208,8142 19195,8125 19176,8098 19157,8070 19133,8038
 Kr‰henwinkel: Verbundsteinpflaster	Q1+ 19195,8125 19105,8188 19044,8103
@@ -5886,7 +5888,7 @@ Alice-Archenhold-Weg: Beton	Q1 19696,5456 19715,5403
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19456,7956 19468,7918 19495,7874 19540,7842 19602,7753
 #: osm_watch: way id="156650954" version="6"
 #: XXX wird hier auch eine wassergebundene Decke entstehen?
-#: last_checked: 2016-05-21
+#: last_checked: 2017-01-28
 #: check_frequency: 180d
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: sandiger Weg, als Reitweg benutzt	Q3- 19602,7753 19559,7679 19529,7617 19348,7393 19321,7360
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: unbefestigter Weg	Q2- 19559,7679 19437,7517 19349,7429 19340,7400 19321,7360

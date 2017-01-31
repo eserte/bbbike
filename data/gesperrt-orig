@@ -2750,12 +2750,7 @@ Bouchéstr.: Baustelle, Einbahnstraßenregelung	1s:q3 13190,9139 13298,9252
 #: last_checked: 2017-01-13
 Mengerzeile.: Baustelle, Einbahnstraßenregelung	1s:q3 13176,9302 13100,9210
 # 
-#: source_id: 2147340790
-#: last_checked: 2017-01-13
-#: next_check: 2017-01-31
-#: valid: -20170131
-Puschkinallee: Fahrtrichtung gesperrt	1::inwork 13795,9941 13890,9894
-# 
+# REMOVED (laut vmz) --- #: source_id: 2147340790 --- #: last_checked: 2017-01-13 --- #: next_check: 2017-01-31 --- #: valid: -20170131 --- Puschkinallee: Fahrtrichtung gesperrt	1::inwork 13795,9941 13890,9894
 # REMOVED (offen) --- #: next_check_id: STRESEMANNPARKWEG-2016 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.530316.php --- #: XXX "3-4 Wochen" --- #: XXX danach eine "bituminöse Befestigung" --- #: XXX evtl. wird die Beleuchtung auch erneuert? --- #: last_checked: 2016-12-16 --- #: check_frequency: 14d --- #: priority: #A --- Parkweg zwischen Stresemannstr. und Wilhemstr.: wird instandgesetzt, in dieser Zeit nicht befahrbar	2::inwork 9249,10562 9375,10616
 # 
 #: next_check_id: CHAUSSEESTR-2016 vvv
@@ -2777,11 +2772,9 @@ Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q4 8654,14194 8607,14253 8527
 #: next_check_id ^^^
 # 
 #: by: http://www.s-bahn-berlin.de/bauinformationen/details/rummelsburg/4530 vvv
-#: last_checked: 2017-01-08 vvv
-#: next_check: 2017-01-14 vvv
+#: last_checked: 2017-01-28 vvv
 (Unterführung S-Bhf. Rummelsburg): Bauarbeiten, komplett gesperrt	2::inwork 15433,10765 15409,10709 15372,10655
 Nöldnerstr.: Bauarbeiten, Einbahnstraße	1s:q4 15272,10790 15388,10758 15433,10765
-#: next_check ^^^
 #: last_checked ^^^
 #: by ^^^
 # 
@@ -2968,8 +2961,7 @@ Clara-von-Simson-Str.: noch gesperrt	2 7651,14260 7757,14318 7802,14250 7697,141
 #: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/strassen_kfz/SOV-Beschluss-27022012.pdf
 #: XXX hier wird es für Autofahrer dauerhaft keine Zufahrt zur Minna-Todenhagen-Str. geben, aber vielleicht wird es für Radfahrer/Fußgänger einen Zugang geben?
 #: source_id: 2147339538
-#: last_checked: 2016-10-30
-#: next_check: 2017-01-31
+#: last_checked: 2017-01-28
 Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, für Autos dauerhaft	2::inwork 17670,7512 17681,7589
 # 
 #: next_check_id: HEERSTR-2016 vvv
@@ -3002,12 +2994,12 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 # REMOVED (Aufschüttung statt Brücke) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6003 (Forderung nach Wiederherstellung) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6003&date=20151213 (Abriss der Brücke) --- #: XXX: Umfahrung existiert mittlerweile --- bleibt die Sperrung permanent? --- #: XXX: sobald die Brücke abgerissen wurde -> aus den Daten entfernen --- #: last_checked: 2015-10-04 --- #: check_frequency: 180d --- Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352
 # 
 #: osm_watch: way id="193373934" version="5"
-#: last_checked: 2016-12-10
+#: last_checked: 2017-01-28
 #: check_frequency: 30d
 Frauenauer Str.: Straße fertig, aber noch gesperrt	2::inwork 19663,9757 19858,9775
 # 
 #: osm_watch: way id="290255259" version="3"
-#: last_checked: 2016-12-10
+#: last_checked: 2017-01-28
 #: check_frequency: 30d
 Kirchdorfer Str.: Straße fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9775 19871,9680
 # 

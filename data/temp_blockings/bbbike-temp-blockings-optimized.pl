@@ -1866,16 +1866,7 @@ userdel	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129 -6507,15007
          'text' => 'Mergenthalerring/Kiefholzstr.: Tor kann versperrt sein, auch tagsüber',
          'until' => undef
        },
-       {
-         'data' => 'userdel	q3::inwork; 4542,1188 4634,1245 4706,1293 4806,1360 4897,1350 5059,1337
-',
-         'from' => 1459720800,
-         'id' => 2776,
-         'source_id' => '2147339913',
-         'text' => 'Blankertzweg/Hildburghauser Straße: Bauarbeiten zwischen Osdorfer Str. und Woltmannweg, Einbahnstraße, Radfahrer können auf dem schmalen Gehweg fahren, 04.04.2016 bis 31.01.2017 ',
-         'type' => 'handicap',
-         'until' => 1485860400
-       },
+       undef,
        undef,
        undef,
        {
@@ -2093,16 +2084,6 @@ userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,
          'text' => 'Stubenrauchstr.: zwischen Wiesbadener Str. und Rotdornstr. Bauarbeiten, Fahrbahn gesperrt, bis 02.06.2017 ',
          'type' => 'handicap',
          'until' => 1496440800
-       },
-       {
-         'data' => 'userdel	2::inwork 12254,24857 12136,24607
-userdel	2::inwork 12108,24547 11980,24276
-',
-         'from' => 1485385200,
-         'id' => 2848,
-         'text' => 'Schönerlinder Str.: Sperrung zwischen A114 und Am Vorwerk, von 27.01.2017 abends bis 29.01.2017 nachts',
-         'type' => 'gesperrt',
-         'until' => 1485730800
        }
      
 );

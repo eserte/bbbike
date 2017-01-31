@@ -32,7 +32,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2017-01-26
+#: last_checked: 2017-01-31
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -371,13 +371,14 @@ Munsterdamm: bei der Fahrbahnsanierung entstehen Radspuren	?::projected 6651,484
 #: osm_watch: way id="30483116" version="6"
 #: next_check: 2017-06-01
 Mariendorfer Allee: Projektplanung für Schutzstreifen	?::projected 8579,2265 8555,2182 8495,2080 8404,1937 8342,1803 8246,1616 8152,1425 8077,1259 8034,1171 7899,895 7867,831
+#: source_id: 2147340903	
 #: osm_watch: way id="151571084" version="10"
 #: osm_watch: way id="169753564" version="11"
 #: osm_watch: way id="169753565" version="5"
 #: osm_watch: way id="111325187" version="13"
 #: osm_watch: way id="111325188" version="15"
 #: last_check: 2017-01-22
-#: next_check: 2017-06-01
+#: next_check: 2017-02-03
 Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Radspuren)	?::projected 8594,8777 8601,8724 8616,8605 8660,8454 8670,8370 8666,8305 8632,8174 8620,8095 8623,8018 8627,7941 8642,7876 8686,7726 8690,7704 8704,7603 8706,7585 8715,7384 8716,7323
 #: by: ^^^
 # 
@@ -416,6 +417,12 @@ Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Rads
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
 # REMOVED (nur ein paar Meter Einbahnstraße, wie schon vorher) --- #: XXX NEW¦Auerstraße zwischen Richard-Sorge-Straße und Löwestraße Friedrichshain (Berlin)  Gültig ab: 07.01.2017 07:00  beide Fahrtrichtungen gesperrt, Baustelle¦LMS-BR_r_LMS-BR_87313¦¦ --- #: XXX laut fritz bis 30.04.2017, bei vmz mittlerweile schon entfernt --- Auerstr.: Bauarbeiten für Radfahrer relevant?	? 13273,12902 13202,12790
+# 
+#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_04_0325_0472_online.pdf
+#: XXX fehlt bei Berlin.coords.data
+#: osm_watch: note 869808 1
+#: note: Privatstraße
+Am Herzbergteich: existiert die Straße schon? Qualität? Genaue Lage?	? 17913,13514 17902,13602
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/buergerbeteiligung/9-48-529616.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/9-48-planung_mellowpark_a3.pdf
@@ -648,11 +655,11 @@ Rathaus Wedding: ändert sich was während/nach der Bauarbeiten am Rathausplatz?	?
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6811
 #: XXX Bauarbeiten in Gange
 #: XXX unnötiger Punkt kann danach entfernt werden
-#: XXX laut vmz bis Ende Januar 2017, laut fritz bis 31.01.2017
+#: XXX laut vmz bis Anfang Februar 2017, laut fritz bis 04.02.2017
 #: source_id: 2147340412
-#: osm_watch: node id="506261205" version="6"
+#: osm_watch: node id="506261205" version="7"
 #: last_checked: 2016-12-10
-#: next_check: 2017-01-31
+#: next_check: 2017-02-04
 Rummelsburger/Zachertstr.: Ampel wird verlegt (auf die Ostseite)	?::inwork 17834,11192 17848,11204
 # 
 # REMOVED (kaum Änderungen) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20141028.1510.399863.html --- #: XXX Bauende voraussichtlich zum Jahresende --- #: next_check: 2014-12-31 --- Wege im Springpfuhlpark: gibt es danach relevante Änderungen?	?::inwork 19565,13893 19547,14042 19544,14234 19545,14290 19535,14448 19534,14459 19524,14474
@@ -1327,7 +1334,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036305920032/305920032/00249733/33-Anlagen/01/DRS0054VK.pdf
 #: XXX Asphaltierung der Fahrbahn von Rummelsburger Landstr. bis Schwarzer Weg fertig
 #: XXX Radwege werden vermutlich asphaltiert sein
-#: last_checked: 2016-12-10
+#: last_checked: 2017-01-28
 #: next_check: 2017-04-01
 Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rummelsburger Landstraße und Köpenicker Landstraße	?::inwork 17681,7589 17585,7525 17453,7451 17295,7344 17211,7280 17091,7175 16971,7058 16720,6845
 # 
@@ -1596,16 +1603,22 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3138,26315 3168,26445 3170,
 #: next_check: 2017-10-01
 Sandhauser Str. und Falkenplatz: Instandsetzung geplant	?::projected -1869,19974 -1806,19806 -1794,19681 -1788,19663 -1784,19666
 # 
-#: XXX Instandsetzung 2017, danach vermutlich Q0
+#: XXX Instandsetzung 2017 --- bleibt das Verbundsteinpflaster danach?
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170120
-#: next_check: 2017-10-01
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.555458.php (im 2. Quartal)
+#: next_check: 2017-06-30
 Im Erpelgrund: Instandsetzung geplant (beide Richtungen oder nur eine?)	?::projected -586,22064 -735,22103 -786,22110 -973,22117 -827,22039 -629,21975
 # 
 Am Hechtgraben - Falkenberger Chaussee: Verbindung? Nachts beleuchtet? Qualität?	? 18503,18535 18483,18433 18530,18329 18601,18342
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5430
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036305920032/305920032/00115953/53-Anlagen/04/B1328SB.pdf
-An der Wuhlheide: existieren hier Schutzstreifen?	? 21002,5755 20880,5736 20755,5750 20536,5789 20428,5841 20352,5877 20173,5892 20057,5923 19958,5950 19759,6049 19594,6155 19578,6165 19405,6276 19276,6359 19245,6379 18948,6578 18771,6699 18492,6893 18404,6946 18225,7004 18010,7133
+#: last_checked: 2017-01-28 vvv
+#: check_frequency: 90d vvv
+An der Wuhlheide: werden hier Schutzstreifen entstehen?	? 21002,5755 20880,5736 20755,5750 20536,5789 20428,5841 20352,5877 20173,5892 20057,5923 19958,5950
+An der Wuhlheide: werden hier Schutzstreifen entstehen?	? 18492,6893 18404,6946 18225,7004 18010,7133
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6864 (unbeleuchtet)
 Gutspark Lichtenberg: existiert eine Verbindung für Radfahrer? Qualität?	? 15746,12967 15744,12999 15694,12996 15618,13067 15526,13056 15515,13134 15515,13134
@@ -1785,7 +1798,7 @@ Monumentenstr. 13d: wird hier ein verkehrsberuhigter Bereich ausgewiesen?	? 8014
 #: XXX Richtung Norden: Beginn: voraussichtlich im I. Quartal 2017. Die Dauer der Bauphase beträgt ca. zwei Monate.
 #: XXX Richtung Süden: Beginn: voraussichtlich im II. Quartal 2017. Die Dauer der Bauphase beträgt ca. zwei Monate.
 #: source_id: 2147340386
-#: next_check: 2017-01-31
+#: next_check: 2017-02-28
 Adenauerplatz: Behinderungen für Radfahrer während der Bauarbeiten	?::projected 3813,10435 3777,10513 3744,10577 3644,10759
 # 
 # REMOVED (ja --- aber ich habe keine Möglichkeit, das darzustellen) --- #: XXX NEW	Lückstr. (Rummelsburg) in beiden Richtungen zwischen Weitlingstr. und Rummelsburger Str. (Berlin)  Gültig ab: 14.07.2016 15:00  Baustelle, für beide Richtungen abwechselnd nur ein Fahrstreifen / Baustellenampel (bis Mitte 09/16)	2147340309 --- #: XXX laut fritz bis 09.09.2016 --- Lückstr.: abwechselnd freie Fahrspur, Behinderungen für Radfahrer?	? 16601,10650 16647,10632
@@ -2995,6 +3008,7 @@ Björnweg	?::projected 17314,15186 17323,15054
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036322976038/322976038/00081306/06-Anlagen/02/vzb1096_IV_Benennung_Hanoier_Str.pdf
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/auslegungen/b-planentwurf-xxi-31a-1.pdf
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6867
+#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_04_0325_0472_online.pdf
 #: XXX Bebauungsplan XXI-31a-1
 #: XXX fehlt in Berlin.coords.data, genaue Lage?
 #: last_checked: 2016-09-11
@@ -3107,13 +3121,15 @@ Lili-Grün-Weg und Lin-Jaldati-Weg: wo genau werden die Straßen liegen? Qualität?
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6704 vvv
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036827265989/827265989/00127188/88-Anlagen/02/AnlageDS2043VIIWege.pdf vvv
+#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_04_0325_0472_online.pdf
 #: XXX Namensvorschläge
 #: last_checked: 2016-07-27 vvv
 #: next_check: 2017-03-01 vvv
 Zum Hechtgraben: Benennung zu Malchower Teichweg	? 16163,18780 16158,19049 16104,19165
 Zum Hechtgraben, Verlängerung: Benennung zu Malchower Teichweg	? 16074,19162 16078,19436 16081,19656 16082,19754 15617,19775
 #: note: an der Kreuzung Wiesenweg nur ein zweispuriger Track, Q2, NL
-Feldmarkweg: Benennung? Wie ist Qualität? Vermutlich unbeleuchtet?	? 17351,19411 17397,19926 17422,20268 17471,20850
+#: XXX erster Vorschlag nur "Feldmarkweg"
+Wartenberger Feldmarkweg: Benennung? Wie ist Qualität? Vermutlich unbeleuchtet?	? 17351,19411 17397,19926 17422,20268 17471,20850
 Tümpelweg: Benennung? Wie ist Qualität? Vermutlich unbeleuchtet?	? 17422,20268 18024,20630 18061,20715
 Falkenberger Fußsteig: Benennung?	? 19772,18064 19679,18119 19410,18200 19293,18249 19251,18248
 Falkenberger Fußsteig: Benennung?	? 19251,18248 19213,18195 18969,18448
@@ -3130,11 +3146,13 @@ Marie-Elisabeth-von-Humboldt-Weg: Benennung? Qualität des fehlenden westlichen S
 Max-und-Herta-Naujocks-Weg: Benennung?	? 15611,18627 15732,18666 15774,18656 15873,18561 15949,18555 16161,18687 16210,18706 16198,18753 16163,18780 16325,18796 16216,19183 16314,19210 16349,19442 16343,19470 16309,19542 16359,19590 16384,19678
 Schnitterinnenweg: Benennung?	? 16736,19193 16768,19191 17015,19287 17351,19411 17679,19532
 Am Alten Malchower Graben: Benennung?	? 15424,19861 15393,19671 15383,19610 15386,19485 15426,19216 15412,19082 15407,19024 15376,18908 15400,18840 15399,18782 15434,18731 15413,18626
-wird benannt, Name ist noch offen	? 18515,20587 18383,20623 18061,20715 18083,20782 18026,20847 17946,20889 17471,20850 17281,20834 17274,20851 17073,21329
+#: XXX beim ersten Vorschlag war der Name noch offen
+Barnimer Dörferweg	? 18515,20587 18383,20623 18061,20715 18083,20782 18026,20847 17946,20889 17471,20850 17281,20834 17274,20851 17073,21329
 Grenzweg: Benennung?	? 21369,18935 21344,19008 21328,19049 21289,19147 21101,19448
 Falkenberger Fußsteig: Benennung? (siehe auch oben)	? 18922,18436 18761,18480 18503,18535 18215,18629 18185,18641
 Ahornallee: Benennung?	? 17015,19287 17015,19587 17050,20298 17061,20451 17079,20716 17281,20834
-Florentinenweg: Benennung?	? 17050,20298 16728,20189 16633,20174
+#: XXX beim ersten Vorschlag "Florentinenweg" mit "n"
+Florentineweg: Benennung?	? 17050,20298 16728,20189 16633,20174
 Zehnrutenweg: Benennung?	? 20347,18667 20377,18753 20454,18778 20461,18796 20503,18903 20561,19084 20508,19100 20380,19206 20374,19250 20262,19367 20240,19393 19819,19602 19691,19748 19381,19830
 #: next_check ^^^
 #: last_checked ^^^
