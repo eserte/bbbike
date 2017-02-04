@@ -1263,7 +1263,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
          'data' => '#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
 #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
 #: source_id: 2147339529
-#: last_checked: 2016-12-16
+#: last_checked: 2017-02-04
 #: next_check: 2017-03-01
 userdel	q2::inwork 5258,11285 5236,10994
 ',
@@ -1712,17 +1712,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482
        undef,
        undef,
        undef,
-       {
-         'data' => '#: last_checked: 2016-10-08
-#: check_frequency: 60d
-userdel	q4::inwork; 3807,11859 3666,11855
-',
-         'from' => undef,
-         'id' => 2695,
-         'text' => 'Zillestr.: zwischen Richard-Wagner-Str. und Wilmersdorfer Str. Bauarbeiten, Einbahnstraßenregelung, offen Richtung Osten, Ende der Sperrung unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '	2::night 4280,17551 4243,17570 4240,17584 3959,17714 3987,17808
@@ -1928,17 +1918,7 @@ userdel	2::inwork 3472,24709 3481,24686 3492,24667 3535,24626
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED ("Verkürzung" laut fritz) --- userdel	q4::inwork 12938,1348 12940,1547 12911,1815
-userdel	q4::inwork 12911,1815 12817,2031
-',
-         'from' => 1467661160,
-         'id' => 2808,
-         'source_id' => '2147340272',
-         'text' => 'Buckower Damm: Baustelle zwischen Alt-Buckow und An den Achterhöfen, evtl. auch Einschränkungen für Radfahrer, bis 24.02.2017',
-         'type' => 'handicap',
-         'until' => 1487977200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1982,7 +1962,7 @@ userdel	q4::inwork 12911,1815 12817,2031
        {
          'data' => '#: XXX Wann sind die Bauarbeiten beendet? Wird die Qualität danach besser sein? vvv
 #: osm_watch: way id="136814135" version="15" vvv
-#: last_checked: 2016-09-18 vvv
+#: last_checked: 2017-02-04 vvv
 #: check_frequency: 60d vvv
 userdel	2::inwork 3332,12742 3396,12741 3358,12718
 userdel	2::inwork 3396,12741 3476,12735 3582,12704 3654,12672 3763,12624 3837,12618

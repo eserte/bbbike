@@ -1670,7 +1670,7 @@ Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross 
 Sonnenallee: Mittelstreifen	3nocross 13277,8211 13459,8072 13474,8060
 Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10659,12259 10625,12206 10574,12131
 Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10700,12315 10723,12346 10738,12364
-Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5215,10711 5351,10760 5475,10808
+Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5215,10711 5341,10756 5475,10808
 Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15420,12178 15443,12222 15480,12306 15508,12367
 Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6781,16026 6914,15908 6936,15888 7024,15810
 Wilhelmsruher Damm: Zaun auf dem Mittelstreifen	3nocross 5525,21022 5598,21032 5819,21057
@@ -2741,6 +2741,19 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX laut fritz bis 30. September 2017
+#: last_checked: 2017-02-04
+#: next_check: 2017-09-30
+#: priority: #A
+Zillestr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen	1s:q3 3807,11859 3976,11869
+# 
+#: next_check_id: VERLAENGERTEHERTZ-2017
+#: XXX zumindest an der Fasanenstr.
+#: XXX laut Schild gehen die Bauarbeiten bis Dezember 2017
+#: last_checked: 2017-02-04
+#: next_check: 2017-07-01
+(Verlängerte Hertzallee): Bauarbeiten, komplett gesperrt	2::inwork 5352,11502 5296,11529 4950,11696 4905,11785
+# 
 # REMOVED (man kommt hinter dem Georg-Denkmal vorbei) --- Spreeufer Nikolaiviertel: Gehweg gesperrt	2::inwork 10417,12378 10492,12289 10583,12206
 # 
 #: last_checked: 2017-01-18
@@ -2750,7 +2763,13 @@ Bouchéstr.: Baustelle, Einbahnstraßenregelung	1s:q3 13190,9139 13298,9252
 #: last_checked: 2017-01-13
 Mengerzeile.: Baustelle, Einbahnstraßenregelung	1s:q3 13176,9302 13100,9210
 # 
-# REMOVED (laut vmz) --- #: source_id: 2147340790 --- #: last_checked: 2017-01-13 --- #: next_check: 2017-01-31 --- #: valid: -20170131 --- Puschkinallee: Fahrtrichtung gesperrt	1::inwork 13795,9941 13890,9894
+#: source_id: 2147340790
+#: source_id: 2147340922
+#: last_checked: 2017-01-13
+#: next_check: 2017-02-28
+#: valid: -20170228
+Puschkinallee: Fahrtrichtung gesperrt	1::inwork 13795,9941 13890,9894
+# 
 # REMOVED (offen) --- #: next_check_id: STRESEMANNPARKWEG-2016 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.530316.php --- #: XXX "3-4 Wochen" --- #: XXX danach eine "bituminöse Befestigung" --- #: XXX evtl. wird die Beleuchtung auch erneuert? --- #: last_checked: 2016-12-16 --- #: check_frequency: 14d --- #: priority: #A --- Parkweg zwischen Stresemannstr. und Wilhemstr.: wird instandgesetzt, in dieser Zeit nicht befahrbar	2::inwork 9249,10562 9375,10616
 # 
 #: next_check_id: CHAUSSEESTR-2016 vvv
@@ -2783,7 +2802,7 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3 9042,11839 8969,118
 # 
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
-#: last_checked: 2017-01-20
+#: last_checked: 2017-02-04
 #: next_check: 2017-09-02
 Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,14449 7561,14458 7426,14539 7368,14573
 # 
@@ -2823,11 +2842,10 @@ Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17453,7451 17295,73
 #: check_frequency: 60d
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,9200 12548,9167
 # 
-#: next_check_id: AMNORDHAFEN-2016
 #: XXX Straße wird zurückgebaut
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.256386.php
 #: osm_watch: way id="309901369" version="4"
-#: last_checked: 2017-01-20
+#: last_checked: 2017-02-04
 #: check_frequency: 60d
 Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7741,14560 7518,14689
 # 
@@ -2945,13 +2963,13 @@ Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::in
 Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17651,-393
 # 
 #: next_check_id: EUROPACITY-2015 vvv
-#: last_checked: 2016-09-21 vvv
-#: next_check: 2016-12-31 vvv
+#: last_checked: 2017-02-04 vvv
+#: check_frequency: 60d vvv
 #: osm_watch: way id="237704729" version="7"
 Lydia-Rabinowitsch-Str.: noch gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924
 #: osm_watch: way id="237716438" version="6"
-Clara-von-Simson-Str.: noch gesperrt	2 7651,14260 7757,14318 7802,14250 7697,14187
-#: next_check ^^^
+Clara-von-Simson-Str.: noch gesperrt	2 7652,14257 7757,14318 7802,14250 7697,14187
+#: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
 # 

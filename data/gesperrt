@@ -1822,9 +1822,9 @@ Mühlendamm -> Eiergasse: unbequemes Passieren des Mittelstreifens	3::igndisp 106
 Eiergasse -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10671,12356 10700,12315 10723,12346
 Mühlendamm -> Spandauer Str. [Gehweg]: unbequemes Passieren des Mittelstreifens	3::igndisp 10700,12315 10723,12346 10665,12413
 Spandauer Str. [Gehweg] -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10665,12413 10723,12346 10738,12364
-unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross::ignrte 5215,10711 5351,10760 5475,10808
-Kurfürstendamm -> Meinekestr.: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5475,10808 5351,10760 5329,10422
-Meinekestr. -> Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5329,10422 5351,10760 5215,10711
+unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross::ignrte 5215,10711 5341,10756 5475,10808
+Kurfürstendamm -> Meinekestr.: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5475,10808 5341,10756 5313,10420
+Meinekestr. -> Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5313,10420 5341,10756 5215,10711
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 15420,12178 15443,12222 15480,12306 15508,12367
 Deutschmeisterstr. -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3::igndisp 15370,12264 15443,12222 15480,12306
 Möllendorffstr. -> Vorfahrt am Rathaus Lichtenberg: Mittelstreifen mit Straßenbahn	3::igndisp 15508,12367 15480,12306 15531,12300
@@ -2839,8 +2839,11 @@ versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
 Drängelgitter	BNP:3:-240 31665,48997
+Zillestr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen	1s 3807,11859 3976,11869
+(Verlängerte Hertzallee): Bauarbeiten, komplett gesperrt	2::inwork 5352,11502 5296,11529 4950,11696 4905,11785
 Bouchéstr.: Baustelle, Einbahnstraßenregelung	1s 13190,9139 13298,9252
 Mengerzeile.: Baustelle, Einbahnstraßenregelung	1s 13176,9302 13100,9210
+Puschkinallee: Fahrtrichtung gesperrt	1::inwork 13795,9941 13890,9894
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s 8732,14098 8654,14194
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s 8654,14194 8607,14253 8527,14352 8442,14456
 (Unterführung S-Bhf. Rummelsburg): Bauarbeiten, komplett gesperrt	2::inwork 15433,10765 15409,10709 15372,10655
@@ -2870,7 +2873,7 @@ Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr
 Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 18892,3256 18953,3318
 Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17651,-393
 Lydia-Rabinowitsch-Str.: noch gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924
-Clara-von-Simson-Str.: noch gesperrt	2 7651,14260 7757,14318 7802,14250 7697,14187
+Clara-von-Simson-Str.: noch gesperrt	2 7652,14257 7757,14318 7802,14250 7697,14187
 Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, für Autos dauerhaft	2::inwork 17670,7512 17681,7589
 Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3217,11570
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372

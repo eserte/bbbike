@@ -2225,7 +2225,7 @@ Homeyerstr.: Asphalt	Q0 9613,18758 9801,18686 9920,18636
 (Bremer Weg - Fasanerieallee): Parkweg, mittelfeiner Schotter	Q1 6337,11887 6379,11843 6406,11784 6452,11778 6540,11754
 (zum Rosengarten): Kleinsteinpflaster	Q1 7026,12054 7031,12024
 (zum Rosengarten): Parkweg	Q1 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
-nördliches Spreeufer: teils Kleinkopfsteinpflaster, teils Gehwegplatten	Q1 6608,12858 6551,12901 6535,12934 6271,12985 6218,12975 6180,12972
+nördliches Spreeufer: teils Kleinkopfsteinpflaster, teils Gehwegplatten	Q1 6608,12858 6551,12901 6535,12934 6443,12952 6271,12985 6218,12975 6180,12972
 Kirchstr. (Köpenick): Asphalt, gepflasterter Parkstreifen	Q0 22314,4604 22284,4653 22246,4711 22240,4768 22196,4847
 Am Alten Lokschuppen: Asphalt	Q0 15730,11279 15708,11193 15752,11115 15805,10949 15756,10966
 Silberberger Str.: Asphalt	Q0 19735,3643 19804,3697 19864,3742 19992,3839
@@ -9118,7 +9118,9 @@ Mauerpark: Kleinsteinpflaster	Q1 10188,15474 10234,15490
 Zeppelinplatz: Kleinsteinpflaster	Q1 6794,15553 6884,15456
 Beuth-Hochschule: Verbundsteinpflaster	Q1 6884,15456 6996,15319
 Lydia-Rabinowitsch-Str.: Asphalt	Q0 7820,13994 7930,14060 7973,13991 7865,13924
-Clara-von-Simson-Str.: Asphalt	Q0 7651,14260 7757,14318 7802,14250 7697,14187
+Clara-von-Simson-Str.: Asphalt	Q0 7652,14257 7757,14318
+Clara-von-Simson-Str.: Verbundsteinpflaster	Q1 7757,14318 7802,14250
+Clara-von-Simson-Str.: Asphalt	Q0 7802,14250 7697,14187
 Gustav-Böß-Str.: Asphalt mit leichten Schäden	Q0 10673,12434 10772,12515
 Siemensstr.: Kopfsteinpflaster	Q2 5322,14044 5306,14061
 (Gerhard-Sedlmayr-Str. - Landschaftspark): Asphalt	Q0 18228,4168 18178,4125 18176,4105
@@ -9371,6 +9373,8 @@ Löwenberger Str.: Beton	Q0 17440,11774 17477,11893 17460,11961
 Rosenfelder Str./Ring: Beton	Q1 17384,11976 17429,12030 17480,12003
 Ullsteinstr.: Asphalt mit einigen Schäden	Q0; 8813,5004 8934,5095 9076,5160 9207,5185
 (Zufahrt Parkplatz S-Bahnhof Hermsdorf): Verbundsteinpflaster	Q1 3641,23516 3594,23482 3513,23596
+Zauritzweg: Verbundsteinpflaster	Q1 4194,11703 4182,11831
+(an der alten Bolle-Meierei): Asphalt mit einigen Aufpflasterungen	Q0 6443,12952 6500,13164
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -15180,7 +15184,7 @@ Brauhofstr.: Asphalt	Q0 3606,12484 3747,12495
 Behaimstr. (Charlottenburg): Asphalt	Q0 3496,12176 3635,12187 3770,12202
 Thrasoltstr.: Asphalt	Q0 3514,11988 3651,12001 3786,12014
 Lüdtgeweg: Asphalt	Q0 4137,12411 4136,12494
-Lüdtgeweg: Gehwegplatten	Q1 4136,12494 4129,12619
+Lüdtgeweg: Gehwegplatten, Fahrbahn Kopfsteinpflaster	Q1 4136,12494 4129,12619
 Kohlrauschstr.: Asphalt	Q0 4555,12130 4635,12297
 (Guerickestr. - Einsteinufer): Kopfsteinpflaster	Q3 4602,12313 4658,12450
 Wundtstr.: Asphalt	Q0 2272,11074 2243,11107

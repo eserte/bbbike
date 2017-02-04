@@ -1182,9 +1182,9 @@ Borkumstr. -> Berliner Str.: Mittelstreifen und Straßennbahntrasse	3::igndisp 10
 Mittelstreifen	3nocross::ignrte 2346,7684 2460,7658 2576,7634
 Hundekehlestr. -> Sulzaer Str.: Mittelstreifen	3::igndisp 2346,7684 2460,7658 2499,7930
 Sulzaer Str. -> Hundekehlestr.: Mittelstreifen	3::igndisp 2499,7930 2460,7658 2576,7634
-Lietzenburger Str.	3nocross::ignrte 5047,10381 5196,10398 5329,10422
-Lietzenburger Str. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5329,10422 5196,10398 5192,10234
-Fasanenstr. -> Lietzenburger Str.: Lietzenburger Str.	3::igndisp 5215,10711 5196,10398 5329,10422
+Lietzenburger Str.	3nocross::ignrte 5047,10381 5196,10398 5313,10420
+Lietzenburger Str. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5313,10420 5196,10398 5192,10234
+Fasanenstr. -> Lietzenburger Str.: Lietzenburger Str.	3::igndisp 5215,10711 5196,10398 5313,10420
 Fasanenstr. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5215,10711 5196,10398 5192,10234
 Sybelstr.	1 3981,10590 3883,10585
 Giesebrechtstr.	1 3912,10699 3997,10607 4017,10585 4030,10575 4153,10453 4157,10418
@@ -1821,8 +1821,8 @@ Fahlandgasse	1 7675,17430 7675,17475 7675,17538
 Mittelstreifen	3nocross::ignrte 7820,13994 7865,13924 7906,13855 7973,13743
 Heidestr. -> Lydia-Rabinowitsch-Str.: Mittelstreifen	3::igndisp 7820,13994 7865,13924 7973,13991
 Lydia-Rabinowitsch-Str. -> Heidestr.: Mittelstreifen	3::igndisp 7973,13991 7865,13924 7906,13855
-Mittelstreifen	3nocross::ignrte 7651,14260 7697,14187 7732,14131
-Heidestr. -> Clara-von-Simson-Str.: Mittelstreifen	3::igndisp 7651,14260 7697,14187 7802,14250
+Mittelstreifen	3nocross::ignrte 7652,14257 7697,14187 7732,14131
+Heidestr. -> Clara-von-Simson-Str.: Mittelstreifen	3::igndisp 7652,14257 7697,14187 7802,14250
 Clara-von-Simson-Str. -> Heidestr.: Mittelstreifen	3::igndisp 7802,14250 7697,14187 7732,14131
 Mittelstreifen	3nocross::ignrte -3789,13519 -3764,13613 -3716,13724
 Klosterstr. -> Diedenhofener Str.: Mittelstreifen	3::igndisp -3716,13724 -3764,13613 -3672,13597

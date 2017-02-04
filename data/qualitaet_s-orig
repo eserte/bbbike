@@ -1412,7 +1412,7 @@ Am Berlin Museum: Asphalt mit einigen Katzenkopfreihen	Q2 10032,10752 9829,10830
 #: XXX Bauarbeiten, wie sieht es danach aus?
 #: XXX wird der Spreeradweg ab Charlottenburger Brücke hier entlanggeführt?
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140911.1355.399203.html
-#: last_checked: 2016-03-26
+#: last_checked: 2017-02-04
 #: check_frequency: 180d
 (Rad- und Wanderweg an Spree und Landwehrkanal): teilweise Parkweg, bei Regen mit Pfützen, teilweise gutes Kopfsteinpflaster	Q1- 3358,12718 3396,12741 3476,12735 3582,12704 3654,12672 3763,12624 3837,12618 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491
 (Rad- und Wanderweg an Spree und Landwehrkanal): asphaltähnlicher Belag mit einen gepflasterten Abschnitten	Q1+ 4642,12491 4817,12366 5045,12243 5147,12164 5261,12004 5361,11910
@@ -2699,7 +2699,7 @@ Homeyerstr.: Asphalt	Q0 9613,18758 9801,18686 9920,18636
 (Bremer Weg - Fasanerieallee): Parkweg, mittelfeiner Schotter	Q1 6337,11887 6379,11843 6406,11784 6452,11778 6540,11754
 (zum Rosengarten): Kleinsteinpflaster	Q1 7026,12054 7031,12024
 (zum Rosengarten): Parkweg	Q1 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
-nördliches Spreeufer: teils Kleinkopfsteinpflaster, teils Gehwegplatten	Q1+ 6608,12858 6551,12901 6535,12934 6271,12985 6218,12975 6180,12972
+nördliches Spreeufer: teils Kleinkopfsteinpflaster, teils Gehwegplatten	Q1+ 6608,12858 6551,12901 6535,12934 6443,12952 6271,12985 6218,12975 6180,12972
 Kirchstr. (Köpenick): Asphalt, gepflasterter Parkstreifen	Q0 22314,4604 22284,4653 22246,4711 22240,4768 22196,4847
 Am Alten Lokschuppen: Asphalt	Q0 15730,11279 15708,11193 15752,11115 15805,10949 15756,10966
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20071126.1325.89712.html vvv
@@ -9967,7 +9967,9 @@ Mauerpark: Kleinsteinpflaster	Q1 10188,15474 10234,15490
 Zeppelinplatz: Kleinsteinpflaster	Q1 6794,15553 6884,15456
 Beuth-Hochschule: Verbundsteinpflaster	Q1 6884,15456 6996,15319
 Lydia-Rabinowitsch-Str.: Asphalt	Q0 7820,13994 7930,14060 7973,13991 7865,13924
-Clara-von-Simson-Str.: Asphalt	Q0 7651,14260 7757,14318 7802,14250 7697,14187
+Clara-von-Simson-Str.: Asphalt	Q0 7652,14257 7757,14318
+Clara-von-Simson-Str.: Verbundsteinpflaster	Q1+ 7757,14318 7802,14250
+Clara-von-Simson-Str.: Asphalt	Q0 7802,14250 7697,14187
 Gustav-Böß-Str.: Asphalt mit leichten Schäden	Q0- 10673,12434 10772,12515
 Siemensstr.: Kopfsteinpflaster	Q2 5322,14044 5306,14061
 (Gerhard-Sedlmayr-Str. - Landschaftspark): Asphalt	Q0 18228,4168 18178,4125 18176,4105
@@ -10081,18 +10083,19 @@ Birnenblütenweg: unbefestigte Schotterstraße	Q2 11656,21309 11783,21324
 Veilchenblütenweg: unbefestigte Schotterstraße	Q2 11534,21229 11664,21246
 Veilchenblütenweg: unbefestigte Schotterstraße und Verbundsteinpflaster	Q2 11664,21246 11757,21253
 Veilchenblütenweg: unbefestigte Schotterstraße	Q2 11664,21246 11656,21309
+#: next_check_id: VERLAENGERTEHERTZ-2017
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1502/nachricht5481.html
 #: by: http://www.pressestelle.tu-berlin.de/medieninformationen/2014/oktober_2014/hertzallee_medieninformation_6102014/fotogalerie/?showp=2&uid=622255#622255
 #: by: http://www.pressestelle.tu-berlin.de/fileadmin/a70100710/Medieninformationen/2014/WB_Hertzallee_1Preis_Lageplan_500_A4_300DPI.jpg
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.487100.php ("Spatenstich")
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6077.html
 #: XXX ändert sich bei der Umgestaltung etwas an der Qualität? vvv
-#: last_checked: 2016-09-18 vvv
-#: check_frequency: 120d vvv
+#: last_checked: 2017-02-04 vvv
+#: next_check: 2017-07-01 vvv
 #: note: zusätzlich mit einigen "Pflasterschwellen"
 (Verlängerte Hertzallee): Kopfsteinpflaster	Q2- 5352,11502 5296,11529 4950,11696
 (Verlängerte Hertzallee): Kleinsteinpflaster	Q2 4950,11696 4905,11785
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
 (Welzower Steig - Senftenberger Ring): Gehwegplatten	Q1- 6511,21649 6526,21682 6633,21633 6676,21647 6722,21722
@@ -10277,6 +10280,8 @@ Rosenfelder Str./Ring: Beton	Q1+ 17384,11976 17429,12030 17480,12003
 Ullsteinstr.: Asphalt mit einigen Schäden	Q0-; 8813,5004 8934,5095 9076,5160 9207,5185
 #: XXX Qualität und Wegführung vor Ort prüfen
 (Zufahrt Parkplatz S-Bahnhof Hermsdorf): Verbundsteinpflaster	Q1 3641,23516 3594,23482 3513,23596
+Zauritzweg: Verbundsteinpflaster	Q1 4194,11703 4182,11831
+(an der alten Bolle-Meierei): Asphalt mit einigen Aufpflasterungen	Q0- 6443,12952 6500,13164
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -25048,7 +25053,8 @@ Brauhofstr.: Asphalt	Q0 3606,12484 3747,12495
 Behaimstr. (Charlottenburg): Asphalt	Q0 3496,12176 3635,12187 3770,12202
 Thrasoltstr.: Asphalt	Q0 3514,11988 3651,12001 3786,12014
 Lüdtgeweg: Asphalt	Q0 4137,12411 4136,12494
-Lüdtgeweg: Gehwegplatten	Q1 4136,12494 4129,12619
+#: corrected_by: srt (added Fahrbahn ...)
+Lüdtgeweg: Gehwegplatten, Fahrbahn Kopfsteinpflaster	Q1- 4136,12494 4129,12619
 Kohlrauschstr.: Asphalt	Q0 4555,12130 4635,12297
 (Guerickestr. - Einsteinufer): Kopfsteinpflaster	Q3 4602,12313 4658,12450
 Wundtstr.: Asphalt	Q0 2272,11074 2243,11107

@@ -21,9 +21,7 @@ Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inw
 # REMOVED --- #: source_id: 2147339819 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2015/pressemitteilung.415646.php --- #: XXX laut vmz bis Mitte Mai 2016, laut fritz bis 13.05.2016, tatsächlich aber noch länger gültig --- bis wann? --- #: last_checked: 2016-07-10 vvv --- #: valid: -20160813 vvv --- Wühlischstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14575,11407 14674,11370 14737,11347 14759,11339 14771,11345 --- #: valid ^^^ --- #: last_checked ^^^
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
-# 
-#: last_checked: 2017-01-30 vvv
-Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q2::inwork 14211,11229 14286,11186
+# REMOVED (meistens offen) --- #: last_checked: 2017-01-30 vvv --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q2::inwork 14211,11229 14286,11186
 # 
 #: last_checked: 2017-01-22
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
@@ -33,7 +31,6 @@ Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # REMOVED (gibt's nicht mehr?) --- Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraße ausgewiesen	q3::inwork; 14442,11101 14468,11203
 # REMOVED --- Haasestr.: wegen Bauarbeiten ist die Fahrbahn teilweise gesperrt	q3::inwork 14286,11186 14328,11320
 # REMOVED --- Haasestr.: Einbahnstraße wegen Bauarbeiten	q4::inwork; 14328,11320 14286,11186
-#: last_checked ^^^
 # 
 # REMOVED --- #: last_checked: 2016-03-07 --- #: check_frequency: 7d --- Revaler Str.: Bauarbeiten an der Kreuzung Warschauer Str.	q3::inwork 13588,11490 13711,11458
 # REMOVED (beendet) --- #: XXX laut Fritz bis Ende März 2016 (sieht aber schlecht aus für diesen Termin) --- #: last_checked: 2016-06-13 vvv --- #: check_frequency: 7d vvv --- Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
@@ -64,12 +61,12 @@ Rigaer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 14133,12482 14266,12446
 ### Tempelhof ###
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.513299.php
-#: XXX laut fritz bis 06.02.2017
+#: XXX laut fritz bis 10.03.2017, laut vmz bis Mitte März 2017
 #: source_id: 2147340484
 #: last_checked: 2016-09-14
-#: next_check: 2017-02-06
+#: next_check: 2017-03-10
 #: priority: #A
-#: valid: -20170206
+#: valid: -20170310
 Mariendorfer Damm: Fahrbahn zwischen Prinzenstr. und Richterstr. gesperrt	q4::inwork; 9333,4229 9346,4144 9372,4012
 # 
 ### Treptow ###
@@ -287,7 +284,11 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 #: check_frequency: 14d
 Carl-Herz-Ufer: Sperrung der Fahrbahn an der Baerwaldstr.	q4::inwork 10430,10081 10500,10081
 # 
-# REMOVED --- #: next_check_id: ALEXANDRINENSTR-2016 --- #: source_id: LMS-BR_r_LMS-BR_68468 --- #: source_id: LMS-BR_r_LMS-BR_85494 --- #: last_checked: 2017-01-20 --- #: next_check: 2017-01-31 --- Stallschreiberstr., Alexandrinenstr.: Einbahnstraßenregelung	q4::inwork; 10794,10927 10824,11010 10678,11172 10593,11120 10501,11056
+#: source_id: LMS-BR_r_LMS-BR_68468
+#: source_id: LMS-BR_r_LMS-BR_85494
+#: last_checked: 2017-02-03
+#: next_check: 2017-02-10
+Stallschreiberstr., Alexandrinenstr.: Einbahnstraßenregelung	q4::inwork; 10794,10927 10824,11010 10678,11172 10593,11120 10501,11056
 # 
 # REMOVED (kaum noch Beeinträchtigungen) --- #: last_checked: 2016-02-26 --- #: next_check: 2016-03-30 --- Wassertorstr.: Wasserrohrbruch, kurzes Stück auf Gehweg ausweichen	q2::inwork 10857,10411 10987,10360
 # REMOVED (aufgehoben) --- #: last_checked: 2016-02-18 --- #: next_check: 2016-02-26 --- Oppelner Str.: Bauarbeiten, kurzes Stück auf Gehweg ausweichen	q2::inwork 12978,10581 12897,10439
@@ -737,7 +738,7 @@ Am Zeughaus: Fußgänger	q2 9919,12613 9956,12523 9984,12426
 Steinmetzstr.: Fußgängerzone, Radfahren erlaubt	q1 7625,9771 7657,9942 7698,10147
 #: note: nicht "ggfs.", also kein Kandidat für die Datei gesperrt-orig als 1s:q3
 Lützowplatz: Einbahnstraße, Ausweichen auf Gehweg	q3; 7002,11034 6873,11011
-Zauritzweg: Fußgänger	q1 4199,11819 4194,11703
+Zauritzweg: Fußgänger	q1 4182,11831 4194,11703
 #: XXX_prog: Radfahren nicht erlaubt, rjoop möchte hier nicht geroutet werden, wenn "strikt befolgen" eingeschaltet ist
 #: note: auf der westlichen Seite steht ein überklebtes Grünanlagen-Schild mit "Radfahren verboten", auf der östlichen Seite nicht
 #: note: abgeflachte Bordsteine existieren
@@ -770,7 +771,7 @@ Körnerpark: Fußgänger, Bordsteine	q3 12703,7370 12722,7261
 #: XXX_prog BS (wahrscheinlich nur am Wendehammer der Weisestr. und falls man die Fahrbahn der Flughafenstr. benutzen möchte, ansonsten q2 oder schlechter)
 Weisestr.: Bordsteine	q3 11767,8330 11770,8292
 #: by: http://fotos.benno-koch.de/v/Radfahren_in_der_Stadt_Berlin/Radrouten_in_Berlin/Spreeradweg/Berliner_Innenstadt/P1010416.JPG.html ("Radfahrer absteigen"-Schild)
-Helgoländer Ufer - Stromstr.: Fußgänger, Café	q3 6551,12901 6535,12934 6271,12985
+Helgoländer Ufer - Stromstr.: Fußgänger, Café	q3 6551,12901 6535,12934 6443,12952 6271,12985
 Helgoländer Ufer - Stromstr.: Fußgänger	q2 6271,12985 6289,13081 6183,13083
 Bundesratufer: Rampe, Fußgänger	q2 6164,12980 6129,12976 6106,12981
 #: XXX_prog BS am Wendehammer und falls man die Fahrbahn der Stralauer Allee benutzen möchte, ansonsten q2 oder schlechter
@@ -2411,6 +2412,7 @@ Pulvermühlenweg: Bordstein	q2 -1848,15535 -1794,15517
 #: XXX_prog BS an der Paul-Schmidt-Str., ansonsten q1
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2015-11-26-prot-fahrratsitzung5-a-ergaenzungenadfc.pdf
 Alboinstr. - Paul-Schmidt-Str.: Fußgänger, Bordstein	q2 8242,5427 8200,5510
+(an der alten Bolle-Meierei): Bodenschwelle	q1 6443,12952 6500,13164
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
