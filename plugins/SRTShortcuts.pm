@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2008,2009,2010,2011,2012,2013,2014,2015,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -324,7 +324,7 @@ EOF
 	       -command => sub { tracks_in_region() },
 	      ],
 	      [Button => $do_compound->("Update tracks and matches.bbd"),
-	       -command => sub { make_gps_target("tracks tracks-accurate tracks-accurate-categorized unique-matches") },
+	       -command => sub { make_gps_target("tracks tracks-accurate tracks-accurate-categorized tracks-accurate-categorized-split unique-matches") },
 	      ],
 	      layer_checkbutton([$do_compound->("Add streets-accurate-categorized-split.bbd")],
 				'str', $acc_cat_split_streets_track,
