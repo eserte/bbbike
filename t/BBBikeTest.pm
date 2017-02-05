@@ -856,7 +856,11 @@ sub _is_author_system () {
 
 sub _is_live_system () {
     my $fqdn = _get_fqdn;
-    defined $fqdn && $fqdn =~ m{^lvps.*\Q.dedicated.hosteurope.de\E$};
+    defined $fqdn && (
+		      $fqdn =~ m{^lvps.*\Q.dedicated.hosteurope.de\E$}
+		      ||
+		      $fqdn eq 'bbbike-vmz'
+		     );
 }
 
 sub on_author_system () {
