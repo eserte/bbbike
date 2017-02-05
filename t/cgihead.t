@@ -28,7 +28,7 @@ BEGIN {
 use CGI;
 use Getopt::Long;
 
-use BBBikeTest qw(check_cgi_testing);
+use BBBikeTest qw(check_cgi_testing maybe_skip_mail_sending_tests);
 
 check_cgi_testing;
 
@@ -109,14 +109,17 @@ $ua->env_proxy;
 
 delete $ENV{PERL5LIB}; # override Test::Harness setting
 for my $prog (@prog) {
-    my $qs = "";
-    if ($prog =~ /mapserver_comment/) {
-	$qs = "?" . CGI->new({comment=>"cgihead test",
-			      subject=>"TEST IGNORE הצü",
-			     })->query_string;
+ SKIP: {
+	my $qs = "";
+	if ($prog =~ /mapserver_comment/) {
+	    maybe_skip_mail_sending_tests $per_check_url_test_cases;
+	    $qs = "?" . CGI->new({comment=>"cgihead test",
+				  subject=>"TEST IGNORE הצü",
+				 })->query_string;
+	}
+	my $absurl = ($prog =~ /^http:/ ? $prog : "$cgi_dir/$prog");
+	check_url("$absurl$qs", $prog);
     }
-    my $absurl = ($prog =~ /^http:/ ? $prog : "$cgi_dir/$prog");
-    check_url("$absurl$qs", $prog);
 }
 
 for my $static (@static) {

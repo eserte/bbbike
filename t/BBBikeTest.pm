@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004,2006,2008,2012,2013,2014,2015,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2006,2008,2012,2013,2014,2015,2016,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -56,7 +56,8 @@ use BBBikeUtil qw(bbbike_root is_in_path);
 	      xmllint_string xmllint_file gpxlint_string gpxlint_file kmllint_string
 	      validate_bbbikecgires_xml_string validate_bbbikecgires_yaml_string validate_bbbikecgires_json_string validate_bbbikecgires_data
 	      eq_or_diff is_long_data like_long_data unlike_long_data
-	      like_html unlike_html is_float using_bbbike_test_cgi using_bbbike_test_data check_cgi_testing check_gui_testing on_author_system
+	      like_html unlike_html is_float using_bbbike_test_cgi using_bbbike_test_data check_cgi_testing check_gui_testing
+	      on_author_system maybe_skip_mail_sending_tests
 	      get_pmake image_ok zip_ok create_temporary_content static_url
 	      get_cgi_config selenium_diag noskip_diag
 	    ),
@@ -823,21 +824,52 @@ sub check_gui_testing () {
     }
 }
 
-sub on_author_system () {
-    require Sys::Hostname;
-    my $hostname = Sys::Hostname::hostname();
-    if ($hostname !~ m{\.}) {
-	# short hostname, probably on Linux
-	chomp($hostname = `hostname -f`);
-	if (!length $hostname) {
-	    print "1..0 # skip Live server tests only activated on author systems, but cannot determine fqdn of this host.\n";
-	    exit 0;
+{
+    my $fqdn;
+    sub _get_fqdn () {
+	return $ENV{BBBIKE_SIMULATE_FQDN} if $ENV{BBBIKE_SIMULATE_FQDN};
+	return $fqdn if defined $fqdn;
+	require Sys::Hostname;
+	my $_fqdn = Sys::Hostname::hostname();
+	if ($_fqdn !~ m{\.}) {
+	    # short hostname, probably on Linux
+	    chomp($_fqdn = `hostname -f`);
+	    if (!length $_fqdn) {
+		my $warn_msg = "Cannot determine fqdn of this host";
+		if (defined &Test::More::diag) {
+		    Test::More::diag($warn_msg);
+		} else {
+		    warn "$warn_msg\n";
+		}
+		return undef;
+	    }
 	}
+	$fqdn = $_fqdn;
+	return $fqdn;
     }
-    if ($hostname !~ m{\.(rezic|herceg)\.de$}) {
+}
+
+sub _is_author_system () {
+    my $fqdn = _get_fqdn;
+    defined $fqdn && $fqdn =~ m{\.(rezic|herceg)\.de$},
+}
+
+sub _is_live_system () {
+    my $fqdn = _get_fqdn;
+    defined $fqdn && $fqdn =~ m{^lvps.*\Q.dedicated.hosteurope.de\E$};
+}
+
+sub on_author_system () {
+    if (!_is_author_system) {
 	print "1..0 # skip Live server tests only activated on author systems.\n";
 	exit 0;
     }
+}
+
+sub maybe_skip_mail_sending_tests (;$) {
+    my $test_no = shift || 1;
+    Test::More::skip("Do not run mail-sending tests here", $test_no)
+	    if !_is_author_system && !_is_live_system;
 }
 
 # Two tests. Call with either an image filename or a stringref
