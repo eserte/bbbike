@@ -159,7 +159,7 @@ MAPSERVER_PROG_URL=	$(BBBIKE_MAPSERVER_URL)
 .if ${TARGET} == "bbbike-pps-jessie" || ${TARGET} == "lvps83-169-5-248.dedicated.hosteurope.de"
 MAPSERVER_VERSION=	6
 .else
-MAPSERVER_VERSION=	5
+MAPSERVER_VERSION=	6
 .endif
 IMAGE_DIR=		$(RADZEIT_APACHE_DIR)/BBBike/images
 BBBIKE_HTML_RELURL=	/BBBike/html
