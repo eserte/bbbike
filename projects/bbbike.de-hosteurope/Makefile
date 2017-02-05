@@ -242,7 +242,7 @@ BBBIKECGI=		bbbike2.cgi
 BBBIKE_CGI_CONFIG=bbbike-hosteurope.cgi.config
 MAPSERVER_BRB_LOCALINC=	mapserver-brb-brb.map-localinc
 .ifdef TARGET
-.if ${TARGET} == bbbike-pps-jessie || ${TARGET} == lvps83-169-5-248.dedicated.hosteurope.de
+.if ${TARGET} == bbbike-pps-jessie || ${TARGET} == lvps83-169-5-248.dedicated.hosteurope.de || ${TARGET} == hosteurope
 BBBIKE_CGI_CONFIG=	bbbike-hosteurope-jessie.cgi.config
 MAPSERVER_BRB_LOCALINC=	mapserver-brb-brb.map-localinc-jessie
 .endif
@@ -392,7 +392,7 @@ deploy-local-no-test:	${DEPLOY_LOCAL_NO_TEST_TARGETS}
 deploy-pps:
 			-@mkdir -p .last
 			-@date >> .last/start-deploy-pps
-			${MAKE} deploy TARGET=bbbike-pps
+			${MAKE} deploy TARGET=bbbike-pps-jessie
 
 .ORDER:			${DEPLOY_DATA_TARGETS}
 deploy-data:		${DEPLOY_DATA_TARGETS}
@@ -406,7 +406,7 @@ deploy-temp-blockings:	check-temp-blockings-integrity-pre \
 			rsync-temp-blockings
 
 test-pps:
-			${MAKE} test TARGET=bbbike-pps
+			${MAKE} test TARGET=bbbike-pps-jessie
 
 test-makefile:
 	${MAKE} -n deploy-local > /tmp/test-makefile.cmd
@@ -887,5 +887,5 @@ automatic-deployment--check-prerequisites:
 	else \
 	    true; \
 	fi
-	perl -MNet::Ping -e '@p = Net::Ping->new("tcp", 2); @p[0]->port_number(80); exit !@p[0]->ping(shift)' bbbike-pps
+	perl -MNet::Ping -e '@p = Net::Ping->new("tcp", 2); @p[0]->port_number(80); exit !@p[0]->ping(shift)' bbbike-pps-jessie
 	perl -MNet::Ping -e '@p = Net::Ping->new("tcp", 2); @p[0]->port_number(80); exit !@p[0]->ping(shift)' bbbike.de
