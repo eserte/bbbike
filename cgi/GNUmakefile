@@ -84,7 +84,7 @@ $(HTTPD_CONF): httpd.conf.tpl Makefile
 # or maybe also with FS_STYLE and ROOT_DIR:
 #
 #    make vhost-httpd.conf OS_STYLE=freebsd
-#    make vhost-httpd.conf OS_STYLE=debian ROOT_DIR=/root/work/bbbike-webserver FS_STYLE=live
+#    make vhost-httpd.conf OS_STYLE=debian ROOT_DIR=/srv/www/bbbike-webserver FS_STYLE=live
 #
 .PHONY: vhost-httpd.conf
 vhost-httpd.conf:

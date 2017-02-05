@@ -237,7 +237,7 @@ rsync-fragezeichen-list:	fragezeichen-list
 	{
 		my $host = $BBBIKE_HOSTEUROPE_HOST || 'bbbike.de';
 		my $user = $BBBIKE_HOSTEUROPE_USER || 'root';
-		my @cmd = (qw(rsync -avz), "$BBBIKE_TMP_DIR/fragezeichen_list/", $user.'@'.$host.':/root/work/bbbike-webserver/BBBike/tmp/fragezeichen_list/');
+		my @cmd = (qw(rsync -avz), "$BBBIKE_TMP_DIR/fragezeichen_list/", $user.'@'.$host.':/srv/www/bbbike-webserver/BBBike/tmp/fragezeichen_list/');
 		system @cmd;
 		die "@cmd failed: $?" if $? != 0;
 	}

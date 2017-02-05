@@ -188,7 +188,7 @@ $bbbike_makefile_admin .= <<'EOF'
 # The following variables may be used in mapserver/brb/Makefile
 BBBIKE_HOSTEUROPE_USER=		root
 BBBIKE_HOSTEUROPE_HOST=		bbbike.de
-BBBIKE_HOSTEUROPE_APACHE_DIR=	/root/work/bbbike-webserver/
+BBBIKE_HOSTEUROPE_APACHE_DIR=	/srv/www/bbbike-webserver/
 RSYNC=				rsync
 
 ######################################################################

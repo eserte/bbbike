@@ -111,6 +111,7 @@ sub push_INC {
     require FindBin;
     push @INC, ("$FindBin::RealBin/..",
 		"/home/e/eserte/src/bbbike",
+		"/srv/www/bbbike-webserver/BBBike",
 		"/root/work/bbbike-webserver/BBBike",
 		"/usr/local/apache/radzeit/BBBike",
 		"/var/www/domains/radzeit.de/www/BBBike",
