@@ -80,16 +80,12 @@ install_perl_58_dependencies() {
 	# DBD::XBase~"!=1.00, !=1.01, !=1.02, !=1.03, !=1.04, !=1.05"
 	# but now one has to use exact version matches to load something from BackPAN
 	#
-	# Since February 2017 backpan.perl.org seems to be dead (or empty), so
-	# as an alternative backpan.cpantesters.org is used. Previously the definition was
-	#   DBD::XBase~"==0.234"
-	#
 	# Perl 5.8.9's File::Path has a version with underscores, and this is causing warnings and failures in the test suite
 	#
 	# Wrong version specification in DB_File's Makefile.PL, see https://rt.cpan.org/Ticket/Display.html?id=100844
 	#
         # Pegex 0.62 and newer runs only on perl 5.10.0 and newer.
-	cpanm --quiet --notest http://backpan.cpantesters.org/authors/id/J/JA/JANPAZ/DBD-XBase-0.234.tar.gz File::Path DB_File~"!=1.833" Pegex~"==0.61"
+	cpanm --quiet --notest DBD::XBase~"==0.234" File::Path DB_File~"!=1.833" Pegex~"==0.61"
     fi
 }
 
