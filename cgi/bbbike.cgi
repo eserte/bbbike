@@ -1090,8 +1090,8 @@ foreach my $type (qw(start via ziel)) {
     }
 
     if ($dx || $dy) {
-	my($x, $y) = ($q->param('detailmapx'),
-		      $q->param('detailmapy'));
+	my($x, $y) = (scalar $q->param('detailmapx'),
+		      scalar $q->param('detailmapy'));
 	$q->delete('detailmapx');
 	$q->delete('detailmapy');
 	$x += $dx;
