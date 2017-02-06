@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -77,7 +77,7 @@ sub run {
 	if ($wpt_or_trk =~ / /) {
 	    push @coords, [map { $convert_xy->($_) } split / /, $wpt_or_trk];
 	} else {
-	    push @wpt, map { $convert_wpt->($_) } param('wpt_or_trk');
+	    push @wpt, map { $convert_wpt->($_) } BBBikeCGI::Util::my_multi_param('wpt_or_trk');
 	}
     }
 
