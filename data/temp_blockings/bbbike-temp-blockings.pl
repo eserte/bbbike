@@ -24319,19 +24319,14 @@ EOF
 userdel	q3::inwork 12295,12197 12525,12151
 EOF
      },
-     { from  => $isodate2epoch->("2016-08-28 00:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2016-10-31 04:00:00"),
-       text  => 'Karlshorster Str.: zwischen Haupstr. und Nöldnerstr. Fahrbahn komplett gesperrt, während der Arbeitszeiten auch für Fußgänger und Radfahrer, Einbahnstraßenregelung in der Nöldnerstr. und Hirschberger Str., 29.08.2016 bis 31.10.2016',
+     { from  => $isodate2epoch->("2017-02-09 06:00:00"), # ein Tag Vorlauf
+       until => $isodate2epoch->("2017-02-12 23:59:59"),
+       text  => 'Karlshorster Str.: zwischen Haupstr. und Nöldnerstr. Fahrbahn komplett gesperrt, auch für Fußgänger und Radfahrer, Einbahnstraßenregelung in der Hirschberger Str., 10.02.2017 bis 12.02.2017',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: KARLSHORSTER-2016
-#: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.511369.php
-#: source_id: 2147340474
-#: XXX periodisch prüfen
-#: last_checked: 2016-10-27
-#: next_check: 2016-10-31
+#: by: fritz
 	2::inwork 15261,10738 15272,10790
-	q4; 15279,10862 15272,10790 15388,10758 15433,10765
+#	q4; 15279,10862 15272,10790 15388,10758 15433,10765
 	q4; 15205,11080 15102,11120 15021,11152 14988,11130
 EOF
      },
@@ -25495,7 +25490,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-01-16 vvv
+#: last_checked: 2017-02-09 vvv
 #: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -25749,6 +25744,18 @@ EOF
        data  => <<EOF,
 userdel	2::inwork 12254,24857 12136,24607
 userdel	2::inwork 12108,24547 11980,24276
+EOF
+     },
+     { from  => 1486676031, # 2017-02-09 22:33
+       until => 1487026800, # 2017-02-14 00:00
+       text  => 'Scheidemannstr.: wegen der Bundespräsidentwahl zwischen Yitzhak-Rabin-Str. und Ebertstr. gesperrt (bis zum 13.02.2017)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 8119,12414 8354,12416 8400,12417 8540,12420
+userdel auto	3 8348,12609 8354,12416 8391,12389
+userdel auto	3 8391,12389 8400,12417 8399,12610
+userdel auto	3 8391,12389 8354,12416 8348,12609
+userdel auto	3 8399,12610 8400,12417 8391,12389
 EOF
      },
     );

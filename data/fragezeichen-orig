@@ -32,7 +32,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 #: XXX im Baumaﬂnahmenkatalog ist nur der ˆstliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaﬂnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2017-02-06
+#: last_checked: 2017-02-09
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -414,6 +414,11 @@ Boelckestr.: Planung f¸r Radverkehrsanlagen (vermutlich Schutzstreifen oder Rads
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   f¸r Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: XXX evtl. entsteht hier ein neuer Weg --- Qualit‰t, Beleuchtung, genaue Lage?
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.558478.php
+#: next_check: 2017-06-30
+Treptower Park: neuer Weg?	?::projected 15217,9137 15410,9147 15442,9095
+# 
 # REMOVED (nur ein paar Meter Einbahnstraﬂe, wie schon vorher) --- #: XXX NEW¶Auerstraﬂe zwischen Richard-Sorge-Straﬂe und Lˆwestraﬂe Friedrichshain (Berlin)  G¸ltig ab: 07.01.2017 07:00  beide Fahrtrichtungen gesperrt, Baustelle¶LMS-BR_r_LMS-BR_87313¶¶ --- #: XXX laut fritz bis 30.04.2017, bei vmz mittlerweile schon entfernt --- Auerstr.: Bauarbeiten f¸r Radfahrer relevant?	? 13273,12902 13202,12790
 # 
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_04_0325_0472_online.pdf
@@ -435,7 +440,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/holzmarktstrasse/index.shtml
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/holzmarktstrasse/download/LP_01.pdf
 #: source_id: 2147340618
-#: last_checked: 2017-01-17
+#: last_checked: 2017-02-08
 #: next_check: 2017-04-01
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 # 
@@ -519,6 +524,7 @@ Rosenthaler Weg: Neubau der Straﬂe, danach existieren Radspuren	?::inwork 10997,
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3712
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.175274.php
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.558233.php (Baumf‰llungen)
 #: XXX ab Mitte 2016, Bauende: voraussichtlich Ende 2019
 #: XXX neue Termine: Baubeginn: voraussichtlich Fr¸hjahr 2017, Bauende: voraussichtlich Mitte 2020
 #: last_checked: 2016-10-03
@@ -1530,8 +1536,12 @@ Bautzener Brache - Groﬂgˆrschenstr.: Weg in Planung	?::projected 8240,9364 8186,
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4281
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036380423042/380423042/00072293/93-Anlagen/02/VorhabenbezogenerB-Plan3-48VE-AenderungderGelt.pdf
 #: by: www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036471085040/471085040/00073235/35-Anlagen/02/HerstellungvonoeffentlichenErschliessungsanlag.pdf 
+#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2017/pressemitteilung.558513.php (Baumf‰llungen)
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.548914.php (Bauzeit voraussichtlich September 2017 - September 2019)
 #: next_check: 2017-11-01 vvv
-Bebauungsplan 3-48 VE: Planstraﬂe A in Planung	?::projected 12969,18548 12957,18518 13178,18460 13368,18674 13410,18735
+#: XXX Norderschlieﬂungsstraﬂe
+Bebauungsplan 3-48 VE: Planstraﬂe A in Planung	?::projected 12957,18518 13178,18460 13368,18674 13389,18704 13410,18735
+#: XXX Westerschlieﬂungsstraﬂe
 Bebauungsplan 3-48 VE: Planstraﬂe B in Planung	?::projected 13368,18674 13222,18797
 #: next_check ^^^
 # 
