@@ -16,7 +16,7 @@ package BBBikeApacheSessionCounted;
 use strict;
 use vars qw($VERSION $debug);
 
-$VERSION = '0.04';
+$VERSION = '0.05';
 $debug = $main::debug; # XXX hmmmm
 $main::debug = $main::debug if 0; # cease -w
 
@@ -25,11 +25,11 @@ use Apache::Session::Counted;
 ######################################################################
 # CONFIGURATION SECTION
 our %CLUSTER_DEFS = (
-		     'biokovo.herceg.de'                         => [1, 'http://biokovo/bbbike/cgi/asch'],
-		     'lvps83-169-19-137.dedicated.hosteurope.de' => [2, 'http://bbbike.lvps83-169-19-137.dedicated.hosteurope.de/cgi-bin/asch'],
+		     #'biokovo.herceg.de'                         => [1, 'http://biokovo/bbbike/cgi/asch'],
+		     #'lvps83-169-19-137.dedicated.hosteurope.de' => [2, 'http://bbbike.lvps83-169-19-137.dedicated.hosteurope.de/cgi-bin/asch'],
 		     'eserte'                                    => [3, 'http://eserte.bbbike.org/cgi-bin/asch'],
 		     'mosor'                                     => [4, 'http://mosor/bbbike/cgi/asch'],
-		     'lvps176-28-19-132.dedicated.hosteurope.de' => [5, 'http://bbbike.lvps176-28-19-132.dedicated.hosteurope.de/cgi-bin/asch'],
+		     #'lvps176-28-19-132.dedicated.hosteurope.de' => [5, 'http://bbbike.lvps176-28-19-132.dedicated.hosteurope.de/cgi-bin/asch'],
 		     'bbbike-vmz'                                => [6, 'http://ip78-137-103-246.pbiaas.com/cgi-bin/asch'],
 		     'lvps83-169-5-248.dedicated.hosteurope.de'  => [7, 'http://bbbike.lvps83-169-5-248.dedicated.hosteurope.de/cgi-bin/asch'],
 		    );
