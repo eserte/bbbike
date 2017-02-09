@@ -1,6 +1,6 @@
 ;;; bbbike.el --- editing BBBike .bbd files in GNU Emacs
 
-;; Copyright (C) 1997-2014,2016 Slaven Rezic
+;; Copyright (C) 1997-2014,2016,2017 Slaven Rezic
 
 ;; To use this major mode, put something like:
 ;;
@@ -20,6 +20,9 @@
     (t (:underline t)))
   "Font Lock mode face used to highlight trailing whitespace."
   :group 'font-lock-faces)
+(defface bbbike-button
+  '((t (:underline t)))
+  "Face for buttons without changing foreground color")
 
 (defvar bbbike-font-lock-keywords
   '(("\\( +\\)\t" (1 bbbike-font-lock-trailing-whitespace-face)) ;; trailing whitespace after names. works only partially, but at least it disturbs the fontification
@@ -280,6 +283,8 @@
   ;; In emacs 22, tab is something else
   (local-set-key "\t" 'self-insert-command)
 
+  (bbbike-create-buttons)
+
   (run-hooks 'bbbike-mode-hook)
   )
 
@@ -445,12 +450,14 @@
 	  (insert (concat "#: osm_watch: " elemtype " " elemid " " elemversion "\n")))
       (error "No X selection or X selection does not contain a way/node/relation line"))))
 
+(setq bbbike-next-check-id-regexp "^#:[ ]*\\(next_check_id\\):?[ ]*\\([^ \n]+\\)")
+
 (defun bbbike-grep ()
   (interactive)
   (let (search-key search-val dirop)
     (save-excursion
       (beginning-of-line)
-      (if (looking-at "^#:[ ]*\\(next_check_id\\):?[ ]*\\([^ \n]+\\)")
+      (if (looking-at bbbike-next-check-id-regexp)
 	  (progn
 	    (setq search-key (buffer-substring (match-beginning 1) (match-end 1)))
 	    (setq search-val (buffer-substring (match-beginning 2) (match-end 2))))))
@@ -462,5 +469,57 @@
     (if search-key
 	(grep (concat "2>/dev/null grep -ins " dirop "*-orig " dirop "*.coords.data " dirop "temp_blockings/bbbike-temp-blockings.pl -e '" search-key ".*" search-val "'")))))
 
+(defun bbbike-grep-button (button)
+  (bbbike-grep))
+
+(define-button-type 'bbbike-grep-button
+  'action 'bbbike-grep-button
+  'follow-link t
+  'face 'bbbike-button
+  'help-echo "Click button to grep for the same next_check_id")
+
+(defun bbbike-view-cached-url-button (button)
+  (bbbike-view-cached-url))
+
+(define-button-type 'bbbike-url-button
+  'action 'bbbike-view-cached-url-button
+  'follow-link t
+  'face 'bbbike-button
+  'help-echo "Click button to browse cached URL")
+
+(defun bbbike-osm-button (button)
+  (browse-url (concat "http://www.openstreetmap.org/" (button-get button :osmid))))
+
+(define-button-type 'bbbike-osm-button
+  'action 'bbbike-osm-button
+  'follow-link t
+  'face 'bbbike-button
+  'help-echo "Click button to show OSM element")
+
+(defun bbbike-create-buttons ()
+  (save-excursion
+    (goto-char (point-min))
+    (while (search-forward-regexp bbbike-next-check-id-regexp nil t)
+      (let ((next-check-id-val (buffer-substring (match-beginning 2) (match-end 2))))
+	(if (> (length next-check-id-val) 3)
+	    (setq next-check-id-val (substring next-check-id-val 0 3)))
+	(if (not (string= next-check-id-val "^^^"))
+	    (make-button (match-beginning 1) (match-end 2) :type 'bbbike-grep-button)))
+      ))
+
+  (save-excursion
+    (goto-char (point-min))
+    (while (search-forward-regexp "^#:[ ]*by:?[ ]*\\(http[^ \n]+\\)" nil t)
+      (make-button (match-beginning 1) (match-end 1) :type 'bbbike-url-button)))
+
+  (save-excursion
+    (goto-char (point-min))
+    (while (search-forward-regexp "^#:[ ]*\\(osm_watch\\):?[ ]*\\(way\\|node\\|relation\\)[ ]+id=\"\\([0-9]+\\)\"" nil t)
+      (make-button (match-beginning 1) (match-end 1)
+		   :type 'bbbike-osm-button
+		   :osmid (concat (buffer-substring (match-beginning 2) (match-end 2)) "/" (buffer-substring (match-beginning 3) (match-end 3)))
+		   )))
+
+  )
       
 (provide 'bbbike-mode)
