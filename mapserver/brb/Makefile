@@ -79,7 +79,7 @@ MAPSERVER_DRIVER!=	perl -e '`shp2img -v` =~ m/SUPPORTS=AGG/ ? print "AGG" : prin
 .if exists(/etc/debian_version)
 FONTS_LIST?=		fonts-debian.list
 .else
-FONTS_LIST?=		fonts-biokovo.list
+FONTS_LIST?=		fonts-freebsd.list
 .endif
 .endif
 
@@ -134,7 +134,7 @@ IMAGE_SUFFIX=		png						# ***
 .if exists(/etc/debian_version)
 FONTS_LIST?=		fonts-debian.list
 .else
-FONTS_LIST?=		fonts-biokovo.list				# ***
+FONTS_LIST?=		fonts-freebsd.list				# ***
 .endif
 # The unix user of the webserver process:
 WWW_USER=		eserte						# ***
@@ -179,7 +179,7 @@ FONTS_LIST=		fonts-debian.list
 .elif ${TARGET} == "bbbike.hosteurope.herceg.de" && exists(/etc/debian_version)
 FONTS_LIST=		fonts-debian.list
 .elif ${TARGET} == "bbbike.hosteurope.herceg.de"
-FONTS_LIST=		fonts-biokovo.list
+FONTS_LIST=		fonts-freebsd.list
 .endif
 
 .endif
