@@ -57,61 +57,6 @@ $VERSION = '1.46';
 	}
     }
 
-    # XXX How to code the preferences better?
-    # XXX needed also for biokovo_default
-    sub vran_default {
-	my $self = shift->new;
-	my $HOME = "/home/e/eserte";
-	$self->BbbikeDir("$HOME/src/bbbike");
-	$self->MapserverMapDir($self->BbbikeDir . "/mapserver/brb");
-	if (0) { # 1 for current version from CVS
-	    $self->MapserverBinDir("/usr/local/src/work/mapserver");
-	} else {
-	    $self->MapserverBinDir("/usr/local/src/mapserver/mapserver-3.6.4");
-	}
-	$self->MapserverRelurl("/~eserte/mapserver/brb");
-	$self->MapserverUrl("http://www/~eserte/mapserver/brb");
-	$self->TemplateMap("brb.map-tpl");
-	$self->ImageSuffix("png");
-	$self->FontsList("fonts-vran.list");
-	$self;
-    }
-
-    sub biokovo_default {
-	my $self = shift->vran_default;
-	require Config;
-	#if ($Config::Config{archname} =~ /amd64/) {
-	#    $self->MapserverBinDir("/usr/local/src/work/mapserver-amd64");
-	#    notice_once "Use latest subversion version (amd64) from " . $self->MapserverBinDir . " ...";
-	#} else {
-	#    $self->MapserverBinDir("/usr/local/src/work/mapserver");
-	#    notice_once "Use latest subversion version from " . $self->MapserverBinDir . " ...";
-	#}
-	# use mapserver from ports
-	$self->MapserverBinDir("/usr/local/bin");
-	$self->MapserverRelurl("/cgi-bin/mapserv");
-	$self->MapserverUrl("http://www/cgi-bin/mapserv");
-	## mapserver uninstalled from ports
-	#$self->MapserverBinDir("/usr/ports/graphics/mapserver/work/mapserver-4.4.1");
-	$self->FontsList("fonts-biokovo.list");
-	$self;
-    }
-
-    sub ipaq_vran_default {
-	my $self = shift->new;
-	my(%args) = @_;
-	my $HOME = "/home/e/eserte";
-	$self->BbbikeDir("$HOME/src/bbbike");
-	$self->MapserverMapDir($self->BbbikeDir . "/mapserver/brb");
-	$self->MapserverBinDir("/usr/local/src/mapserver/mapserver-3.6.4");
-	$self->MapserverRelurl("/~eserte/mapserver/brb");
-	$self->MapserverUrl("http://www/~eserte/mapserver/brb");
-	$self->TemplateMap("brb-ipaq.map-tpl");
-	$self->ImageSuffix($args{ImageType} || "png");
-	$self->FontsList("fonts-vran.list");
-	$self;
-    }
-
     sub bbbike_cgi_conf {
 	my $self = shift->new;
 	my(%args) = @_[1..$#_];
@@ -120,19 +65,22 @@ $VERSION = '1.46';
 	require File::Spec;
 	my $bbbike_dir = File::Spec->rel2abs(File::Basename::dirname(File::Basename::dirname($INC{"BBBikeDraw/MapServer.pm"})));
 	my $bbbike_cgi_conf_path = File::Spec->catfile($bbbike_dir, "cgi", "bbbike.cgi.config");
-	if (!-r $bbbike_cgi_conf_path) {
-	    die "$bbbike_cgi_conf_path is not existent or readable";
+	if (-r $bbbike_cgi_conf_path) {
+	    require BBBikeMapserver;
+	    my $ms = BBBikeMapserver->new;
+	    $ms->read_config($bbbike_cgi_conf_path, -lax => 1); # we can compute good defaults...
+	    $self->MapserverMapDir($ms->{MAPSERVER_DIR});
+	    $self->MapserverBinDir($ms->{MAPSERVER_BIN_DIR});
+	    $self->MapserverCgiBinDir($ms->{MAPSERVER_CGI_BIN_DIR}) if defined $ms->{MAPSERVER_CGI_BIN_DIR};
+	    $self->MapserverRelurl($ms->{MAPSERVER_PROG_RELURL});
+	    $self->MapserverUrl($ms->{MAPSERVER_PROG_URL});
+	    $self->FontsList($ms->{MAPSERVER_FONTS_LIST});
 	}
-	require BBBikeMapserver;
-	my $ms = BBBikeMapserver->new;
-	$ms->read_config($bbbike_cgi_conf_path, -lax => 1); # we can compute good defaults...
 	$self->BbbikeDir("$bbbike_dir");
-	$self->MapserverMapDir($ms->{MAPSERVER_DIR});
 	if (!$self->MapserverMapDir) {
 	    $self->MapserverMapDir("$bbbike_dir/mapserver/brb");
 	}
 
-	$self->MapserverBinDir($ms->{MAPSERVER_BIN_DIR});
 	if (!$self->MapserverBinDir || ! -e $self->MapserverBinDir) {
 	TRY: {
 		for my $path (qw(/usr/local/bin /usr/bin)) {
@@ -147,16 +95,15 @@ $VERSION = '1.46';
 	    die "Please define \$mapserver_bin_dir in $bbbike_cgi_conf_path. Or maybe shp2img is not installed in one of the standard paths?";
 	}
 
-	$self->MapserverCgiBinDir($ms->{MAPSERVER_CGI_BIN_DIR}) if defined $ms->{MAPSERVER_CGI_BIN_DIR};
-	$self->MapserverRelurl($ms->{MAPSERVER_PROG_RELURL});
-	$self->MapserverUrl($ms->{MAPSERVER_PROG_URL});
 	$self->TemplateMap("brb.map-tpl");
 	$self->ImageSuffix($args{ImageType} || "png");
-	if (!defined $ms->{MAPSERVER_FONTS_LIST}) {
-	    $self->FontsList("fonts-debian.list"); # good debian defaults
-	    #warn "Please consider to define \$mapserver_fonts_list in $bbbike_cgi_conf_path";
-	} else {
-	    $self->FontsList($ms->{MAPSERVER_FONTS_LIST});
+	if (!$self->FontsList) {
+	    if ($^O eq 'freebsd') {
+		$self->FontsList("fonts-freebsd.list");
+	    } else {
+		$self->FontsList("fonts-debian.list"); # good debian defaults
+		#warn "Please consider to define \$mapserver_fonts_list in $bbbike_cgi_conf_path";
+	    }
 	}
 	$self;
     }
@@ -222,15 +169,7 @@ $VERSION = '1.46';
 	} else {
 	    my $conf = $self->get("Conf");
 	    if (!$conf) {
-		require Sys::Hostname;
-		if      (defined $ENV{SERVER_NAME} &&
-			 $ENV{SERVER_NAME} =~ /bbbike\.de$/) {
-		    $conf = BBBikeDraw::MapServer::Conf->bbbike_cgi_conf;
-		} elsif (Sys::Hostname::hostname() =~ /herceg\.(de|local)$/) {
-		    $conf = BBBikeDraw::MapServer::Conf->biokovo_default;
-		} else {
-		    $conf = BBBikeDraw::MapServer::Conf->bbbike_cgi_conf;
-		}
+		$conf = BBBikeDraw::MapServer::Conf->bbbike_cgi_conf;
 	    }
 	    $conf;
 	}
