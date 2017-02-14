@@ -5,7 +5,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2017 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -7268,7 +7268,7 @@ sub get_nearest_crossing_coords {
 			}
 		    }
 		    if (!$before_xy && !$after_xy) {
-			warn "Harmless? Cannot find any real crossing in <@street_coords>, input coords were $x,$y, scope is <@{[ $q->param('scope') ]}>";
+			warn "Harmless? Cannot find any real crossing in <@street_coords>, input coords were $x,$y, scope is <@{[ scalar $q->param('scope') ]}>";
 		    } else {
 			if ($after_xy && $before_xy) {
 			    # choose nearest
@@ -7318,7 +7318,7 @@ sub show_routelist_from_file {
 # XXX should also implement coordssession param
 sub show_routelist_from_coords {
     require Route;
-    my $r = Route->new_from_cgi_string(join("!", $q->param('coords')));
+    my $r = Route->new_from_cgi_string(join("!", scalar $q->param('coords')));
     display_route($r, -hidesettings => 1, -hidewayback => 1);
 }
 
@@ -8159,7 +8159,7 @@ Slaven Rezic <slaven@rezic.de>
 
 =head1 COPYRIGHT
 
-Copyright (C) 1998-2016 Slaven Rezic. All rights reserved.
+Copyright (C) 1998-2017 Slaven Rezic. All rights reserved.
 This is free software; you can redistribute it and/or modify it under the
 terms of the GNU General Public License, see the file COPYING.
 
