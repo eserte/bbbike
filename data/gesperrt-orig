@@ -2169,7 +2169,7 @@ Schranke	BNP:3::trailer=10 5296,11529
 # 
 #: next_check_id: DIESEL-2015 vvv
 #: note: mittlerweile gibt es hier auch zwei Baustellenampeln mit Anforderung, allerdings wird relativ schnell auf grün geschaltet vvv
-#: last_checked: 2016-12-10 vvv
+#: last_checked: 2017-02-10 vvv
 #: check_frequency: 60d vvv
 Drängelgitter	BNP:5::trailer=10 14364,8096
 Drängelgitter	BNP:5::trailer=10 14405,8115
@@ -2756,11 +2756,11 @@ Zillestr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen	1s:q3 3807
 # 
 # REMOVED (man kommt hinter dem Georg-Denkmal vorbei) --- Spreeufer Nikolaiviertel: Gehweg gesperrt	2::inwork 10417,12378 10492,12289 10583,12206
 # 
-#: last_checked: 2017-01-18
+#: last_checked: 2017-02-10
 #: osm_watch: way id="466318949" version="1"
 Bouchéstr.: Baustelle, Einbahnstraßenregelung	1s:q3 13190,9139 13298,9252
 # 
-#: last_checked: 2017-01-13
+#: last_checked: 2017-02-10
 Mengerzeile.: Baustelle, Einbahnstraßenregelung	1s:q3 13176,9302 13100,9210
 # 
 #: source_id: 2147340790
@@ -2791,7 +2791,7 @@ Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q4 8654,14194 8607,14253 8527
 #: next_check_id ^^^
 # 
 #: by: http://www.s-bahn-berlin.de/bauinformationen/details/rummelsburg/4530 vvv
-#: last_checked: 2017-01-28 vvv
+#: last_checked: 2017-02-10 vvv
 # REMOVED (vermutlich!) --- (Unterführung S-Bhf. Rummelsburg): Bauarbeiten, komplett gesperrt	2::inwork 15433,10765 15409,10709 15372,10655
 Nöldnerstr.: Bauarbeiten, Einbahnstraße	1s:q4 15272,10790 15388,10758 15433,10765
 #: last_checked ^^^
@@ -2806,7 +2806,7 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3 9042,11839 8969,118
 #: next_check: 2017-09-02
 Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,14449 7561,14458 7426,14539 7368,14573
 # 
-#: last_checked: 2017-01-13
+#: last_checked: 2017-02-10
 Weichselplatz: Uferweg wegen Bauarbeiten gesperrt	2::inwork 12851,9309 12907,9073
 # 
 # REMOVED (Baugrube) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2016 --- #: osm_watch: note 848012 1 --- #: last_checked: 2016-12-15 --- #: check_frequency: 180d --- Sülzhayner Str.: komplett gesperrt wegen Bauarbeiten, vielleicht dauerhaft	2::inwork 13420,9259 13397,9234
@@ -2816,7 +2816,7 @@ Weichselplatz: Uferweg wegen Bauarbeiten gesperrt	2::inwork 12851,9309 12907,907
 #: check_frequency: 60d
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 # 
-#: last_checked: 2017-01-18
+#: last_checked: 2017-02-10
 Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2 14447,10491 14270,10584
 # 
 # REMOVED (mittlerweile schon passierbar) --- #: next_check_id: MARIANNEN-2016 vvv --- #: source_id: INKO_2147340291_COPY_1 vvv --- #: source_id: 2147340291 vvv --- #: source_id: 2147340768 vvv --- # REMOVED (aufgehoben) --- #: priority: #A vvv --- #: XXX laut fritz bis 16.12.2016 --- #: last_checked: 2016-12-15 vvv --- #: next_check: 2017-01-10 vvv --- Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11512,10105 11616,10288 --- #: source_id: 2147340777 --- #: XXX laut fritz bis 10.01.2017 --- #: priority: #A --- #: last_checked: 2016-12-15 --- #: check_frequency: 7d --- Mariannenstr.: Baustelle, Fahrbahn gesperrt	2s:q3 11671,10402 11616,10288
@@ -2838,7 +2838,7 @@ Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17453,7451 17295,73
 #: XXX Bauarbeiten (Erweiterung des Rütli-Campus?)
 #: XXX Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="137084083" version="6"
-#: last_checked: 2016-12-20
+#: last_checked: 2017-02-10
 #: check_frequency: 60d
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,9200 12548,9167
 # 
@@ -2916,7 +2916,7 @@ Schwarzer Weg: wegen Straßenbau gesperrt	2::inwork 17295,7323 17295,7330 17295,7
 # REMOVED (fertig) --- #: next_check_id: FISCHERINSEL-2015 vvv --- #: source_id: 2147339543 vvv --- #: last_checked: 2016-12-16 vvv --- #: next_check: 2016-12-22 vvv --- Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 --- Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10687,11853 10869,11949 --- Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10672,11870 --- Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,11853 10869,11949
 # 
 #: next_check_id: DIESEL-2015
-#: last_checked: 2016-12-27
+#: last_checked: 2017-02-10
 #: check_frequency: 60d
 Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 14471,8046
 # 

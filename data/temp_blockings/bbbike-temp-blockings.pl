@@ -23600,6 +23600,7 @@ EOF
 #: note: am So, den 2016-06-12 gegen 12:30: offen
 #: note: am Mo, den 2016-10-10 gegen 17:50: offen
 #: note: am Sa, den 2016-12-10 gegen 13:00: geschlossen
+#: note: am Fr, den 2017-02-10 gegen 18:30: offen
 	3::night 14563,8243 14425,8116 14419,8112
 	3::night 14419,8112 14425,8116 14563,8243
 EOF

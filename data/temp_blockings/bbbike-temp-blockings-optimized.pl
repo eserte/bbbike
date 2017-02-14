@@ -1632,6 +1632,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482
 #: note: am So, den 2016-06-12 gegen 12:30: offen
 #: note: am Mo, den 2016-10-10 gegen 17:50: offen
 #: note: am Sa, den 2016-12-10 gegen 13:00: geschlossen
+#: note: am Fr, den 2017-02-10 gegen 18:30: offen
 	3::night 14563,8243 14425,8116 14419,8112
 	3::night 14419,8112 14425,8116 14563,8243
 ',
@@ -1754,18 +1755,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: fritz
-	2::inwork 15261,10738 15272,10790
-#	q4; 15279,10862 15272,10790 15388,10758 15433,10765
-	q4; 15205,11080 15102,11120 15021,11152 14988,11130
-',
-         'from' => 1486616400,
-         'id' => 2717,
-         'text' => 'Karlshorster Str.: zwischen Haupstr. und Nöldnerstr. Fahrbahn komplett gesperrt, auch für Fußgänger und Radfahrer, Einbahnstraßenregelung in der Hirschberger Str., 10.02.2017 bis 12.02.2017',
-         'type' => 'gesperrt',
-         'until' => 1486940399
-       },
+       undef,
        undef,
        {
          'data' => '	2::inwork 9998,16547 9983,16561 9955,16578
@@ -2075,20 +2065,6 @@ userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,
          'text' => 'Stubenrauchstr.: zwischen Wiesbadener Str. und Rotdornstr. Bauarbeiten, Fahrbahn gesperrt, bis 02.06.2017 ',
          'type' => 'handicap',
          'until' => 1496440800
-       },
-       undef,
-       {
-         'data' => 'userdel	2::temp 8119,12414 8354,12416 8400,12417 8540,12420
-userdel auto	3 8348,12609 8354,12416 8391,12389
-userdel auto	3 8391,12389 8400,12417 8399,12610
-userdel auto	3 8391,12389 8354,12416 8348,12609
-userdel auto	3 8399,12610 8400,12417 8391,12389
-',
-         'from' => 1486676031,
-         'id' => 2849,
-         'text' => 'Scheidemannstr.: wegen der Bundespräsidentwahl zwischen Yitzhak-Rabin-Str. und Ebertstr. gesperrt (bis zum 13.02.2017)',
-         'type' => 'gesperrt',
-         'until' => 1487026800
        }
      
 );

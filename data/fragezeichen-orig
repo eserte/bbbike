@@ -32,7 +32,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2017-02-09
+#: last_checked: 2017-02-13
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -99,7 +99,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.521884.php (Baubeginn, Fertigstellung der Gesamtmaßnahme August 2018)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.532371.php (Fertigstellung des Teilabschnittes am 17.01.2017)
 #: source_id: 2147340884
-#: last_checked: 2017-02-04 vvv
+#: last_checked: 2017-02-13 vvv
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected; 9865,10227 9948,10280 9873,10285
 #: last_checked ^^^
@@ -661,7 +661,7 @@ Rathaus Wedding: ändert sich was während/nach der Bauarbeiten am Rathausplatz?	?
 #: XXX unnötiger Punkt kann danach entfernt werden
 #: XXX laut vmz bis Mitte Februar 2017, laut fritz bis 10.02.2017
 #: source_id: 2147340412
-#: osm_watch: node id="506261205" version="7"
+#: osm_watch: node id="506261205" version="8"
 #: last_checked: 2016-12-10
 #: next_check: 2017-02-10
 Rummelsburger/Zachertstr.: Ampel wird verlegt (auf die Ostseite)	?::inwork 17834,11192 17848,11204
@@ -1030,7 +1030,7 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 # 
 #: by: http://www.bwb.de/content/language1/html/10337.php#11671
 #: osm_watch: way id="75509950" version="11"
-#: last_checked: 2017-01-13
+#: last_checked: 2017-02-10
 #: check_frequency: 60d
 Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12085,9778 12074,9689 12066,9558
 #: by: ^^^
@@ -1040,7 +1040,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12085,977
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="13"
-#: last_checked: 2017-01-18
+#: last_checked: 2017-02-10
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -1167,7 +1167,7 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Realisierung ab 2014)
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4757 (Vorschlag: Führungsschienen für den Elsensteg)
 #: osm_watch: way id="182693863" version="1"
-#: last_checked: 2016-09-09
+#: last_checked: 2017-02-10
 #: check_frequency: 180d
 Innstr.: eventuell wird hier asphaltiert, vielleicht auch der Zugang zum Elsensteg erleichtert?	?::projected 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
 # REMOVED (VS realisiert) --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (in Bau, Stand 2012-04) --- Buckower Damm: eventuell werden die Radwege hier asphaltiert oder neues Verbundsteinpflaster verlegt?	? 12673,3619 12684,3406 12687,3319 12701,2955 12695,2789 12693,2746 12694,2570 12694,2544 12694,2517
@@ -1582,6 +1582,12 @@ Rote Kaserne Ost (Potsdam): ändert sich hier an der Verkehrsflächen etwas?	?::pr
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2016/ba_vorlage_0011_v_auswertung_beteilig_b_plan_xxi_41b.pdf
 #: next_check: 2017-08-01
 Bebauungsplanverfahren XXI-41b: ändert sich hier an den Wegen etwas?	?::projected 20598,9298 20938,9293 20932,8956 20594,8966 20598,9298
+# 
+#: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/artikel.317415.php
+#: by: http://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/kurpromenade_ausfuehrungsplanung.pdf
+#: by: http://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/kurpromenade_begruendung.pdf
+#: next_check: 2017-08-01
+Kurpromenade: wird die Fahrbahn hier erneuert?	?::projected -8862,6375 -8860,6439 -8859,6540 -8868,6798 -8804,6818 -8732,6840 -8656,6864 -8567,6893
 # 
 #: section ^^^
 #: ignore ^^^
