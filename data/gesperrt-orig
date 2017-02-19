@@ -2741,6 +2741,10 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2017-02-18
+#: check_frequency: 14d
+Werkstraße: Zufahrt zur DB-Werkstraße ist gesperrt	2::inwork 14043,10928 14107,10911
+# 
 #: XXX laut fritz bis 30. September 2017
 #: last_checked: 2017-02-04
 #: next_check: 2017-09-30
@@ -2797,7 +2801,7 @@ Nöldnerstr.: Bauarbeiten, Einbahnstraße	1s:q4 15272,10790 15388,10758 15433,1076
 #: last_checked ^^^
 #: by ^^^
 # 
-#: last_checked: 2017-01-16
+#: last_checked: 2017-02-14
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3 9042,11839 8969,11814
 # 
 #: XXX danach könnte die Qualität der Wege besser sein
@@ -2900,7 +2904,7 @@ Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 #: next_check_id: ZIEGELSTR-2016
 #: XXX Ende der Bauarbeiten?
 #: osm_watch: way id="4610375" version="14"
-#: last_checked: 2017-01-26
+#: last_checked: 2017-02-14
 #: check_frequency: 14d
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076 9559,13087
 # 
@@ -3039,7 +3043,7 @@ am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14463,10212
 #: next_check_id: BND-2014
 #: osm_watch: way id="327596395" version="1"
 #: osm_watch: way id="129104626" version="4"
-#: osm_watch: note 802816 3
+#: osm_watch: note 802816 4
 # REMOVED (schon gemacht) --- : XXX culdesac-orig entfernen, sobald die Verlängerung erfolgt ist
 #: by: http://www.rbb-online.de/politik/beitrag/2014/07/bnd-zentrale-berlin-verzoegerung-vollstaendiger-umzug-bis-2017.html
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7441
@@ -3144,7 +3148,7 @@ Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,2
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
 #: next_check_id: STAATSOPER-2014 vvv
-#: last_checked: 2017-01-16 vvv
+#: last_checked: 2017-02-14 vvv
 #: check_frequency: 90d vvv
 #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung)
 #: XXX voraussichtliche Eröffnung 2017-10-03 (laut Tsp vom 2016-03-31)
