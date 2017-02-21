@@ -2741,11 +2741,17 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: http://www.dafmap.de/d/berlin.html?id=3192&mt=0&zoom=16 (Geplanter Projektabschluss: 2018-03-31)
+#: last_checked: 2017-02-04
+#: check_frequency: 120d
+Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt	1s:q3 5192,10234 5196,10398
+# 
 #: last_checked: 2017-02-18
 #: check_frequency: 14d
 Werkstraße: Zufahrt zur DB-Werkstraße ist gesperrt	2::inwork 14043,10928 14107,10911
 # 
 #: XXX laut fritz bis 30. September 2017
+#: by: http://www.dafmap.de/d/berlin.html?id=5031&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-12-31)
 #: last_checked: 2017-02-04
 #: next_check: 2017-09-30
 #: priority: #A
@@ -2762,10 +2768,12 @@ Zillestr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen	1s:q3 3807
 # 
 #: last_checked: 2017-02-10
 #: osm_watch: way id="466318949" version="1"
+#: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
 Bouchéstr.: Baustelle, Einbahnstraßenregelung	1s:q3 13190,9139 13298,9252
 # 
 #: last_checked: 2017-02-10
-Mengerzeile.: Baustelle, Einbahnstraßenregelung	1s:q3 13176,9302 13100,9210
+#: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
+Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:q3 13176,9302 13100,9210
 # 
 #: source_id: 2147340790
 #: source_id: 2147340922
@@ -2801,6 +2809,7 @@ Nöldnerstr.: Bauarbeiten, Einbahnstraße	1s:q4 15272,10790 15388,10758 15433,1076
 #: last_checked ^^^
 #: by ^^^
 # 
+#: by: http://www.dafmap.de/d/berlin.html?id=3853&mt=0&zoom=16
 #: last_checked: 2017-02-14
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3 9042,11839 8969,11814
 # 
@@ -2849,8 +2858,9 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,
 #: XXX Straße wird zurückgebaut
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.256386.php
 #: osm_watch: way id="309901369" version="4"
+#: source_id: 2147339783
 #: last_checked: 2017-02-04
-#: check_frequency: 60d
+#: next_check: 2017-03-31
 Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7741,14560 7518,14689
 # 
 # REMOVED --- Treptower Park: Bauarbeiten, Weg noch nicht fertiggestellt	2::inwork 14318,9688 14371,9726 14443,9731
@@ -2863,6 +2873,7 @@ Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7741,14560 7518,14
 # REMOVED (fertig) --- Treptower Park: Bauarbeiten	2::inwork 15591,8848 15608,8882 15617,8924 15623,8949 15630,8979
 # REMOVED --- #: XXX evtl. kann man hier als Fußgänger irgendwie vorbei --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 3d --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14448,9922 14467,9880 14500,9863 --- #: last_checked ^^^
 # 
+#: by: http://www.dafmap.de/d/berlin.html?id=4160&mt=0&zoom=16
 #: last_checked: 2017-01-26
 #: osm_watch: way id="57852078" version="4"
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
@@ -2870,6 +2881,7 @@ E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgäng
 #: next_check_id: STEGLITZPARK-2015 vvv
 #: last_checked: 2015-09-27 vvv
 #: check_frequency: 180d vvv
+#: by: http://www.dafmap.de/d/berlin.html?id=4144&mt=0&zoom=16 (Geplanter Projektabschluss: 2016-12-31)
 #: osm_watch: way id="306238980" version="2"
 #: XXX laut osm living_street
 SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2408,1144 2352,1267
@@ -2880,6 +2892,7 @@ SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2336,1111 2408,1144 2504,1
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
+#: by: http://www.dafmap.de/d/berlin.html?id=3217&mt=0&zoom=15
 #: osm_watch: way id="318581438" version="4"
 #: last_checked: 2016-07-07
 #: check_frequency: 120d
@@ -2904,6 +2917,7 @@ Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 #: next_check_id: ZIEGELSTR-2016
 #: XXX Ende der Bauarbeiten?
 #: osm_watch: way id="4610375" version="14"
+#: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
 #: last_checked: 2017-02-14
 #: check_frequency: 14d
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076 9559,13087
@@ -2945,6 +2959,7 @@ IGA 2017-Gelände: Wege gesperrt	2 21408,14591 21450,14576 21822,14480 21925,1450
 #: XXX ^^^
 # 
 #: XXX Rübertragen ist zur Not möglich vvv
+#: by: 
 #: last_checked: 2016-08-20 vvv
 #: check_frequency: 120d vvv
 Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 19015,3129 18892,3256 18689,3465
@@ -3005,10 +3020,12 @@ Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3
 #: XXX ^^^
 #: next_check_id ^^^
 # 
+#: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
 #: last_checked: 2017-01-03
 #: check_frequency: 120d
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 # 
+#: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
 #: last_checked: 2017-01-19
 #: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
@@ -3150,6 +3167,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: next_check_id: STAATSOPER-2014 vvv
 #: last_checked: 2017-02-14 vvv
 #: check_frequency: 90d vvv
+#: by: http://www.dafmap.de/d/berlin.html?id=3588&mt=0&zoom=16
 #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung)
 #: XXX voraussichtliche Eröffnung 2017-10-03 (laut Tsp vom 2016-03-31)
 Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9876,12298
@@ -3162,6 +3180,7 @@ Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12
 # REMOVED (fertig) --- #: XXX hier sind gerade Asphaltierungsarbeiten, vielleicht wird hier früher eröffnet? --- #: last_checked: 2016-09-30 --- Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9808,12182 9798,12267
 # 
 #: XXX Eröffnung 2019 geplant
+#: by: http://www.dafmap.de/d/berlin.html?id=3598&mt=0&zoom=16
 #: last_checked: 2016-12-23
 #: check_frequency: 120d
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
