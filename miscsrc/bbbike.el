@@ -374,17 +374,22 @@
   (let ((bbbike-aux-dir (concat (bbbike-rootdir) "-aux")))
     (call-process-shell-command (concat bbbike-aux-dir "/downloads/view -show-in-firefox '" url "'"))))
 
-(defun bbbike-view-remote-url ()
+(defun bbbike-view-remote-url (&optional url)
   "View the URL under cursor remotely"
   (interactive)
-  (browse-url (bbbike--get-url-under-cursor)))
+  (if (not url)
+      (setq url (bbbike--get-url-under-cursor)))
+  (browse-url url))
 
 ;;; XXX actually the documented behavior is NYI
-;;; XXX currently bbbike-view-cached-url is always called
+;;; XXX currently bbbike-view-cached-url is almost always called
 (defun bbbike-view-url ()
   "View the URL under cursor, either the cached version (preferred), or the remote version"
   (interactive)
-  (bbbike-view-cached-url))
+  (let ((url (bbbike--get-url-under-cursor)))
+    (if (string-match "^http://www.dafmap.de/" url)
+	(bbbike-view-remote-url url)
+      (bbbike-view-cached-url url))))
 
 (defun bbbike--get-url-under-cursor ()
   (let (begin-current-line-pos end-current-line-pos current-line)
@@ -478,14 +483,14 @@
   'face 'bbbike-button
   'help-echo "Click button to grep for the same next_check_id")
 
-(defun bbbike-view-cached-url-button (button)
-  (bbbike-view-cached-url))
+(defun bbbike-view-url-button (button)
+  (bbbike-view-url))
 
 (define-button-type 'bbbike-url-button
-  'action 'bbbike-view-cached-url-button
+  'action 'bbbike-view-url-button
   'follow-link t
   'face 'bbbike-button
-  'help-echo "Click button to browse cached URL")
+  'help-echo "Click button to browse (cached) URL")
 
 (defun bbbike-osm-button (button)
   (browse-url (concat "http://www.openstreetmap.org/" (button-get button :osmid))))
