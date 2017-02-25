@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2007,2010,2011,2012,2014,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2007,2010,2011,2012,2014,2016,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.25;
+$VERSION = 1.26;
 
 use vars qw(%images);
 
@@ -112,6 +112,12 @@ sub register {
 	  callback => sub { showmap_bing_street(@_) },
 	  callback_3_std => sub { showmap_url_bing_street(@_) },
 	  ($images{Bing} ? (icon => $images{Bing}) : ()),
+	};
+    $main::info_plugins{__PACKAGE__ . "_DAF"} =
+	{ name => "Deutsches Architektur-Forum",
+	  callback => sub { showmap_daf(@_) },
+	  callback_3_std => sub { showmap_url_daf(@_) },
+	  ($images{DAF} ? (icon => $images{DAF}) : ()),
 	};
     $main::info_plugins{__PACKAGE__ . '_AllMaps'} =
 	{ name => 'All Maps',
@@ -322,6 +328,21 @@ R0lGODlhEAAQAIQPAP+mFf+sJP+xMv+3Qf+8UP/Hbf/Ne//Tiv/Ymf/ep//jtv/pxf/u0//0
 /yH5BAEKABAALAAAAAAQABAAAAVaICCOZGme5UAMaLk8S0u+MRAQ6/kySPP8PwVhBmwccIXX
 IzFSJgKlwg8hUkJNiYdDpHg0UIefyPAblgK+r4ihNZAIbAdLFED8HIuF78GYkwQGCnkLRzKG
 hyMhADs=
+EOF
+    }
+
+    if (!defined $images{DAF}) {
+	# Created with:
+	#   convert http://www.deutsches-architektur-forum.de/forum/favicon.ico png:- | base64
+	$images{DAF} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAADFBMVEVNTU3////ajx9Rcagb
+sWHEAAAAAWJLR0QB/wIt3gAAAAd0SU1FB+ECGRIMLMfSfQMAAAAYSURBVAjXY2BgkFrFgEaEAgHD
+fyAgnQAA1G8wOeyCs3YAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTctMDItMjVUMTk6MTI6NDQrMDE6
+MDDSKYNAAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE3LTAyLTI1VDE5OjEyOjQ0KzAxOjAwo3Q7/AAA
+AABJRU5ErkJggg==
 EOF
     }
 }
@@ -665,6 +686,23 @@ sub showmap_url_bing_street {
 sub showmap_bing_street {
     my(%args) = @_;
     my $url = showmap_url_bing_street(%args);
+    start_browser($url);
+}
+
+######################################################################
+# DAF (Deutsches Architektur-Forum)
+
+sub showmap_url_daf {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    sprintf "http://www.dafmap.de/d/berlin.html?center=%s+%s&zoom=%d", $py, $px, $scale;
+}
+
+sub showmap_daf {
+    my(%args) = @_;
+    my $url = showmap_url_daf(%args);
     start_browser($url);
 }
 
