@@ -3157,8 +3157,8 @@ Cheruskerpark: Asphalt	Q0 7368,8595 7352,8391 7352,8390 7329,8329 7283,8265 7282
 (Torgauer Str. - Cheruskerstr.): asphaltähnlicher Belag	Q0 7282,8264 7289,8259 7332,8292 7353,8293 7375,8294
 (Torgauer Str. - Cheruskerpark): asphaltähnlicher Belag	Q0 7374,8211 7372,8222 7351,8258 7353,8293
 Rhinstr. [Wohngebiet]: Beton	Q0 18008,13507 17995,13675 17994,13750 18024,13843 18050,13835 18134,13811 18198,13816
-Arendsweg: Beton	Q0 17254,14451 17262,14384 17274,14280
-(Zufahrt IKEA): Asphalt	Q0 18166,14277 18055,14276 17976,14251 17808,14231 17668,14208 17330,14163 17289,14195 17274,14280
+Arendsweg: Beton	Q0 17254,14451 17261,14406 17208,14395 17187,14374 17199,14269
+(Zufahrt IKEA): Asphalt	Q0 18166,14277 18055,14276 17976,14251 17808,14231 17668,14208 17330,14163 17266,14170 17208,14209 17199,14269
 Alte Rhinstr.: Asphalt	Q0 18247,14241 18225,14398 18183,14573
 Rhinstr. [134-130]: Asphalt	Q0 18477,14042 18187,14039
 Rhinstr. [Wohngebiet]: Beton	Q1 18050,13835 18056,13853 18047,13905
@@ -8183,7 +8183,7 @@ Waltershauser Str.: Kleinsteinpflaster, teilweise Wurzelhebungen	Q2 6534,1702 66
 (Mühlenstr. - Alt-Lankwitz): Asphalt	Q0 7183,3570 7236,3605
 Alt-Lankwitz: Kopfsteinpflaster	Q3 7407,3473 7419,3500
 Alt-Lankwitz: Asphalt	Q0 7419,3500 7236,3605 7012,3743
-(Landschaftspark Herzberge - Arendsweg): unbefestigt	Q3 17266,14144 17316,14151 17330,14163
+(Landschaftspark Herzberge - Arendsweg): unbefestigt	Q3 17266,14144 17235,14152 17234,14169 17266,14170
 Genslerstr.: Asphalt mit einigen Schäden	Q1; 16669,14438 16715,14609 16738,14695
 Genslerstr: Beton	Q0 16738,14695 16752,14745 16768,14849
 Genslerstr.: Asphalt	Q0 16544,14593 16715,14609
@@ -9278,15 +9278,17 @@ Am Bullengraben: sehr guter Asphalt	Q0 -6272,13472 -6265,13475 -6209,13499 -6076
 Kerrweg: unbefestigte Straße	Q2 -6269,13464 -6189,13497 -6125,13540 -6010,13586 -5962,13584 -5917,13582
 Straße zum Müggelturm: Asphalt/Beton	Q0 25008,2889 25010,2794 24978,2634 24981,2580 24982,2519 24641,2074 24630,2034 24634,1974 24673,1888 24726,1837 24889,1743 24973,1690
 Lohmeyerstr.: Kopfsteinpflaster	Q2 3348,12314 3409,12451
-Helga-Haase-Str.: unbefestigte Baustraße	Q2 17465,16340 17508,16356 17611,16396 17673,16420 17792,16465
-Jutta-Langenau-Str.: unbefestigte Baustraße	Q2 17615,16310 17643,16322 17818,16397 17857,16414 17877,16423
-Gerhard-Schulz-Str.: unbefestigte Baustraße	Q2 17508,16356 17497,16385 17552,16461
-Harry-Glaß-Str.: unbefestigte Baustraße	Q2 17552,16461 17603,16415 17611,16396 17643,16322
-Erich-Hagen-Str.: unbefestigte Baustraße	Q2 17673,16420 17657,16464 17712,16549
-Joachim-Böhmer-Str.: unbefestigte Baustraße	Q2 17818,16397 17792,16465 17776,16504 17712,16549 17673,16577
-Anna-Maria-Müller-Str.: unbefestigte Baustraße	Q2 17857,16414 17814,16534 17734,16587 17704,16607
-Anna-Maria-Müller-Str.: unbefestigte Baustraße	Q2 17734,16587 17712,16549
-(Fußweg zur Gehrenseestr.): unbefestigter Weg	Q2 17615,16310 17640,16259
+Jutta-Langenau-Str.: unbefestigte Baustraße	Q2 17610,16307 17643,16322 17821,16395 17863,16416 17877,16423
+Harry-Glaß-Str.: unbefestigte Baustraße	Q2 17610,16400 17643,16322
+Joachim-Böhmer-Str.: unbefestigte Baustraße	Q2 17821,16395 17791,16467 17776,16504 17709,16559 17676,16582
+Gerhard-Schulz-Str.: Verbundsteinpflaster	Q1 17510,16357 17502,16385 17544,16463
+Harry-Glaß-Str.: Verbundsteinpflaster	Q1 17544,16463 17600,16422 17610,16400
+Helga-Haase-Str.: Verbundsteinpflaster	Q1 17465,16340 17510,16357 17610,16400 17672,16423 17791,16467
+Erich-Hagen-Str.: Verbundsteinpflaster	Q1 17672,16423 17653,16472 17709,16559
+Anna-Maria-Müller-Str.: Verbundsteinpflaster	Q1 17863,16416 17818,16535 17736,16595 17709,16614
+zur Anna-Maria-Müller-Str.: Verbundsteinpflaster	Q1 17736,16595 17709,16559
+(Fußweg zur Gehrenseestr.): Verbundsteinpflaster	Q1 17610,16307 17640,16259
+(Wartenberger Str. - Harry-Glaß-Str.): Verbundsteinpflaster	Q1 17504,16489 17544,16463
 (Marzahner Promenade - Landsberger Allee [Wohngebiet]): Asphalt	Q0 20731,15742 20759,15740
 (Marzahner Promenade - Landsberger Allee [Wohngebiet]): Beton	Q1 20759,15740 20789,15736
 Heinrich-Grüber-Str: Asphalt mit Schäden	Q1 23244,12417 23299,12600 23321,12673
@@ -9375,6 +9377,9 @@ Ullsteinstr.: Asphalt mit einigen Schäden	Q0; 8813,5004 8934,5095 9076,5160 9207
 (Zufahrt Parkplatz S-Bahnhof Hermsdorf): Verbundsteinpflaster	Q1 3641,23516 3594,23482 3513,23596
 Zauritzweg: Verbundsteinpflaster	Q1 4194,11703 4182,11831
 (an der alten Bolle-Meierei): Asphalt mit einigen Aufpflasterungen	Q0 6443,12952 6500,13164
+Im Achterkastell: Baustraße, unbefestigt, Pfützen bei Regenwetter	Q3 18730,11833 18732,11885 18875,11880 18913,11909
+(Gutspark Lichtenberg): Parkwege	Q1 15746,12967 15749,12995 15717,13001 15612,13069
+(Gutspark Lichtenberg): Verbundsteinpflaster	Q1 15612,13069 15526,13056
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972

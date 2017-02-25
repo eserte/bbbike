@@ -2009,6 +2009,7 @@ userdel	q3::inwork 4564,3457 4800,3391 4862,3363 5022,3318
        undef,
        {
          'data' => '#: note: laut vmz bis Mitte August 2018 und nur bis zur Bahnbrücke, laut fritz bis 1.7.2018
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103689945674/89945674/00251862/62-Anlagen/02/DRS0098.pdf
 #: XXX Behinderungen für Radfahrer?
 userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,1416 21127,1307 21169,1279
 ',

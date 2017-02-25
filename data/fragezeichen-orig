@@ -82,12 +82,13 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 # 
 #: XXX Baumaﬂnahme 2.29 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Realisierung anscheinend ungewiss)
-#: last_checked: 2016-12-16
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7877
+#: last_checked: 2017-02-24
 #: check_frequency: 180d
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
 #: XXX Baumaﬂnahme 2.28 (Realisierung nach 2011) 
-#: last_checked: 2017-02-04
+#: last_checked: 2017-02-24
 #: check_frequency: 90d
 Mˆckernstr.: werden hier vielleicht Radspuren Richtung S¸den markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
@@ -99,7 +100,7 @@ Mˆckernstr.: werden hier vielleicht Radspuren Richtung S¸den markiert oder Radwe
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.521884.php (Baubeginn, Fertigstellung der Gesamtmaﬂnahme August 2018)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.532371.php (Fertigstellung des Teilabschnittes am 17.01.2017)
 #: source_id: 2147340884
-#: last_checked: 2017-02-13 vvv
+#: last_checked: 2017-02-20 vvv
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected; 9865,10227 9948,10280 9873,10285
 #: last_checked ^^^
@@ -188,7 +189,7 @@ Wuhletalstr.: werden hier die Radspuren fortgef¸hrt?	?::projected 20895,17594 20
 Oderbruchstr./Hohenschˆnhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14658,14328 14464,14216 14358,14155 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaﬂnahme 11.12 (Realisierung nach 2011)
-#: last_checked: 2016-12-10
+#: last_checked: 2017-02-25
 #: check_frequency: 90d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 # 
@@ -253,7 +254,10 @@ Alt-Gatow: Radspuren bis 2015 geplant	?::projected; -4760,9343 -4751,9259 -4757,
 #: XXX vermutlich sp‰ter als 2015, ggfs. bis August 2016
 #: osm_watch: way id="24033655" version="31"
 #: last_checked: 2016-08-07
-Kladower Damm: Radpuren bis 2015 geplant	?::projected; -5097,7361 -5046,7442 -4967,7567 -4906,7666 -4819,7833 -4578,8336
+Kladower Damm: Radpuren bis 2015 geplant	?::projected; -5097,7361 -5046,7442 -4967,7567 -4906,7666 -4819,7833
+#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.563697.php
+#: next_check: 2017-08-01
+Kladower Damm: Radpuren in Arbeit	?::inwork; -4819,7833 -4578,8336
 # REMOVED (Radspur existiert hier (teilweise) --- #: XXX Fahrbahninstandsetzung mit anschlieﬂenden Umbau der Radwege --- #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.297917.php --- #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.341719.php --- #: next_check: 2015-08-28 --- Kladower Damm: Radpuren bis 2015 geplant	?::projected; -4578,8336 -4540,8449 -4540,8535 -4590,8666
 # 
 #: osm_watch: way id="23968027" version="10"
@@ -375,8 +379,7 @@ Mariendorfer Allee: Projektplanung f¸r Schutzstreifen	?::projected 8579,2265 855
 #: osm_watch: way id="169753565" version="5"
 #: osm_watch: way id="111325187" version="13"
 #: osm_watch: way id="111325188" version="15"
-#: last_check: 2017-01-22
-#: next_check: 2017-02-03
+#: last_checked: 2017-02-24
 Boelckestr.: Planung f¸r Radverkehrsanlagen (vermutlich Schutzstreifen oder Radspuren)	?::projected 8594,8777 8601,8724 8616,8605 8660,8454 8670,8370 8666,8305 8632,8174 8620,8095 8623,8018 8627,7941 8642,7876 8686,7726 8690,7704 8704,7603 8706,7585 8715,7384 8716,7323
 #: by: ^^^
 # 
@@ -423,9 +426,12 @@ Treptower Park: neuer Weg?	?::projected 15217,9137 15410,9147 15442,9095
 # 
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_04_0325_0472_online.pdf
 #: XXX fehlt bei Berlin.coords.data
-#: osm_watch: note 869808 1
+#: osm_watch: way id="475965723" version="1"
 #: note: Privatstraﬂe
-Am Herzbergteich: existiert die Straﬂe schon? Qualit‰t? Genaue Lage?	? 17913,13514 17902,13602
+#: XXX eine Baustraﬂe existiert schon
+#: last_checked: 2017-02-25
+#: check_frequency: 60d
+Am Herzbergteich: wann ist die Straﬂe fertig? Qualit‰t? Genaue Lage?	? 17945,13501 17942,13568
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/buergerbeteiligung/9-48-529616.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/9-48-planung_mellowpark_a3.pdf
@@ -479,14 +485,14 @@ Karlinekenweg: neue Straﬂe in Planung, Qualit‰t, genaue Lage?	?::projected 11419
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5550
 #: XXX Umsetzung bis 2017
-#: last_checked: 2016-07-24
-#: next_check: 2017-01-01
+#: last_checked: 2017-02-25
+#: check_frequency: 90d
 Landsberger Allee: Ausbau der Radwege	? 18057,14549 17848,14523 17533,14484 17254,14451 17055,14432 16852,14412 16632,14390 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308 15430,14262 15256,14237 14964,14123 14954,14119 14871,14087 14771,14048 14218,13834
 # 
 #: XXX evtl. im Zusammenhang des Bebauungsplans 11-123
-#: last_checked: 2016-07-24
-#: check_frequency: 360d
-Baumarkt (?) wird gebaut: wird es eine Durchfahrmˆglichkeit geben?	?::inwork 17010,14269 17060,14255 17221,14268 17274,14280
+#: last_checked: 2017-02-25
+#: check_frequency: 120d
+Baumarkt (?) wird gebaut: wird es eine Durchfahrmˆglichkeit geben?	?::inwork 17010,14269 17060,14255 17199,14269
 # 
 # REMOVED (nein, es ist ein Radweg geworden) --- #: last_checked: 2016-04-17 --- #: next_check: 2016-07-03 --- Buschallee: wird der Radstreifen nach den Bauarbeiten verl‰ngert?	?::inwork; 15541,16479 15437,16491
 # 
@@ -640,6 +646,7 @@ Wasserweg: wird hier asphaltiert werden? Was ist mit dem "Schlenker" am Spreepar
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7007
 #: XXX Vorschlag f¸r eine Platzbenennung: Elise-und-Otto-Hampel-Platz
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7231
+#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7807
 #: osm_watch: way id="23175110" version="6"
 #: last_checked: 2016-07-28
 #: check_frequency: 90d
@@ -655,18 +662,7 @@ Rathaus Wedding: ‰ndert sich was w‰hrend/nach der Bauarbeiten am Rathausplatz?	?
 # REMOVED --- #: XXX fehlt in Berlin.coords.data --- #: note: "Mahlsdorfer Gr¸nzug" --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/03re.pdf/file?y=2015 --- http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/08re.pdf/file?y=2015 (Nummerierung) --- Pfarrhufenanger: Qualit‰t, schon befahrbar? Verkehrsberuhigt?	? 25599,13069 25427,12847 25266,12622
 # REMOVED (teilweise offiziell f¸r Radfahrer offen) --- #: XXX Zimmerstr. (Mitte): Baustelle, Fahrtrichtung gesperrt (bis Ende 01/15) Richtung Friedrichstr. zwischen Wilhelmstr. und Friedrichstr., 04.11.2014 14:58 Uhr bis 31.01.2015 16:00 Uhr --- #: XXX wahrscheinlich f¸r Radfahrer offen --- #: source_id: IM_023356 --- #: next_check: 2014-11-10 --- Zimmerstr.: Bauarbeiten f¸r Radfahrer relevant?	?::inwork 9155,11283 9478,11317
 # REMOVED --- #: next_check_id: ZIMMERMANNSTRBR-2015 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5575.html --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/zimmermannstrassenbruecke/ --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6162.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1609/nachricht6205.html --- #: source_id: IM_024857 --- #: source_id: 2147339545 --- #: osm_watch: way id="25795962" version="15" --- #: last_checked: 2016-06-19 --- #: next_check: 2016-09-15 --- Zimmermannstraﬂenbr¸cke: wie weit reichen die Radspuren? Benutzungspflicht?	? 21430,9026 21385,9049 21365,9059 21349,9062 21314,9083
-# 
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5602 (Baubeginn "in K¸rze")
-#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6811
-#: XXX Bauarbeiten in Gange
-#: XXX unnˆtiger Punkt kann danach entfernt werden
-#: XXX laut vmz bis Mitte Februar 2017, laut fritz bis 10.02.2017
-#: source_id: 2147340412
-#: osm_watch: node id="506261205" version="8"
-#: last_checked: 2016-12-10
-#: next_check: 2017-02-10
-Rummelsburger/Zachertstr.: Ampel wird verlegt (auf die Ostseite)	?::inwork 17834,11192 17848,11204
-# 
+# REMOVED (neue Ampel steht) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5602 (Baubeginn "in K¸rze") --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6811 --- #: XXX Bauarbeiten in Gange --- #: XXX unnˆtiger Punkt kann danach entfernt werden --- #: XXX laut vmz bis Mitte Februar 2017, laut fritz bis 10.02.2017 --- #: source_id: 2147340412 --- #: osm_watch: node id="506261205" version="8" --- #: last_checked: 2016-12-10 --- #: next_check: 2017-02-10 --- Rummelsburger/Zachertstr.: Ampel wird verlegt (auf die Ostseite)	?::inwork 17834,11192 17848,11204 
 # REMOVED (kaum ƒnderungen) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20141028.1510.399863.html --- #: XXX Bauende voraussichtlich zum Jahresende --- #: next_check: 2014-12-31 --- Wege im Springpfuhlpark: gibt es danach relevante ƒnderungen?	?::inwork 19565,13893 19547,14042 19544,14234 19545,14290 19535,14448 19534,14459 19524,14474
 # REMOVED (l‰uft eh' bald aus) --- #: source_id: IM_023275 --- #: XXX falls ja -> 27.10.2014 11:00 Uhr bis 02.11.2014 16:00 Uhr --- #: XXX -> zurzeit offiziell nur f¸r BVG frei, aber unproblematisch f¸r Radfahrer --- #: last_checked: 2014-10-30 --- #: check_frequency: 14d --- An der Spandauer Br¸cke: Sperrung f¸r Radfahrer relevant?	? 10286,13084 10339,13052 10371,13006
 # REMOVED --- #: next_check_id: IDEHORST-2015 vvv --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3901 vvv --- #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036414341928/414341928/00063878/78-Anlagen/02/Benennungsabsichtfuer9PrivatwegeinderAnlageIde.pdf vvv --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/49re.pdf/file?y=2014 --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3924 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file?y=2015 (Grundst¸cksnummerierungen) --- #: XXX Benennungsabsicht f¸r 9 Privatwege in der Anlage Idehorst im Ortsteil Blankenfelde - zur Kenntnis genommen vvv --- #: XXX fehlen alle in Berlin.coords.data, 13159 Berlin, alles Privatwege vvv --- #: XXX einige culdesac-Eintr‰ge fehlen --- #: note: ¸berwiegend mit Straﬂenbeleuchtung --- #: last_checked: 2015-10-04 vvv --- #: check_frequency: 30d vvv
@@ -860,6 +856,7 @@ Friedrich-Kunert-Weg: Verl‰ngerung?	? -13714,1747 -13664,1729
 #: by: www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/33re.pdf/file?y=2016
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/buergerbeteiligung/xv-29-b-ve-504844.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/1_entwurf-vorhabenbezogener-b-plan-xv-29-b-ve.pdf
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5601 (anscheinend gibt es Bauarbeiten)
 #: XXX_osm: fehlt bei osm als "planned"/"proposed"
 #: last_checked: 2016-06-26 vvv
 #: check_frequency: 720d vvv
@@ -991,13 +988,12 @@ Barnetstr./Finchleystr.: wo ist der Zebrastreifen?	? 10685,-1279 10720,-1340 106
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3250&options=4&date=20130125 vvv
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.459697.php vvv
 #: priority: #C vvv
-#: last_checked: 2015-11-07
-#: check_frequency: 90d
-Frohnauer Str.: wird hier ein Zebrastreifen angelegt?	?::projected 2437,24435 2469,24391 2437,24393
+# REMOVE (wurde realisiert) --- #: last_checked: 2015-11-07 --- #: check_frequency: 90d --- Frohnauer Str.: wird hier ein Zebrastreifen angelegt?	?::projected 2437,24435 2469,24391 2437,24393
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4765
 #: last_checked: 2016-10-03
-#: check_frequency: 90d
+#: next_check: 2017-03-24
 Alt-Wittenau/Techowpromenade: wird hier ein Zebrastreifen angelegt?	?::projected 5250,20482 5219,20467 5235,20439
-# REALISIERT (http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3906) --- Waidmannsluster Damm/Am Leitbruch: wird hier ein Zebrastreifen angelegt?	?::projected 4052,22089 4094,22065
+# REMOVE (http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3906) --- Waidmannsluster Damm/Am Leitbruch: wird hier ein Zebrastreifen angelegt?	?::projected 4052,22089 4094,22065
 #: last_checked: 2015-11-07
 #: check_frequency: 90d
 Heinsestraﬂe s¸dlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::projected 3621,23223 3627,23246 3655,23244
@@ -1011,12 +1007,7 @@ Eichborndamm/Rotbuchenweg: wird hier ein Zebrastreifen angelegt?	?::projected 45
 #: by: ^^^
 #: by: ^^^
 # 
-#: priority: #C
-#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3906
-#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.459697.php
-#: next_check: 2016-05-17
-Sigismundkorso: Zebrastreifen entsteht hier 2016, wo genau?	?::projected 1807,24845 1732,24798 1818,24795
-# 
+# REMOVED (aufgenommen) --- #: priority: #C --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3906 --- #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.459697.php --- #: next_check: 2016-05-17 --- Sigismundkorso: Zebrastreifen entsteht hier 2016, wo genau?	?::projected 1807,24845 1732,24798 1818,24795
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130604.1220.385643.html (Vorstellung der Pl‰ne) vvv --- #: by: http://www.berlin.de/imperia/md/content/bareinickendorf/abteilungen/bausport/bauwesen/strassenbau/07_lp_zeltinger_platz_130424.pdf?start&ts=1372161246&file=07_lp_zeltinger_platz_130424.pdf vvv --- #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3533 (Beginn der Baumaﬂnahmen November 2013) --- #: next_check: 2014-01-01 vvv --- #: priority: #C vvv --- Zeltinger Str. Hˆhe Einm¸ndung in den Zeltinger Platz: Zebrastreifen ist geplant	?::projected 2441,25278 2464,25267 --- Zeltinger Platz Hˆhe Reichelt/Post: Zebrastreifen ist geplant	?::projected 2461,25148 2480,25129 --- #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3317 --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130604.1220.385643.html (Vorstellung der Pl‰ne) --- Einm¸ndung der Burgfrauenstraﬂe in den Zeltinger Platz: Zebrastreifen ist geplant	?::projected 2427,25126 2448,25146
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3039&date=20130906 (Ampel ist angeordnet (2012-09), wird aber "nicht zeitnah" umgesetzt werden)
@@ -1185,8 +1176,8 @@ Innstr.: eventuell wird hier asphaltiert, vielleicht auch der Zugang zum Elsenst
 #: by: http://www.tagesspiegel.de/berlin/berlin-schoeneberg-die-yorckbruecken-werden-erst-naechstes-jahr-fertig/14015884.html
 #: by: http://gleisdreieck-blog.de/2016/08/17/die-sanierung-der-yorckbruecken-in-frage-gestellt/
 #: osm_watch: way id="19741755" version="11"
-#: last_checked: 2016-11-21
-#: next_check: 2017-03-01
+#: last_checked: 2017-02-24
+#: check_frequency: 90d
 Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Br¸cke ¸ber die Yorckstr. realisiert?	?::projected 8426,9572 8423,9532
 # 
 # REMOVED --- #: next_check_id: MONUMENTENPLATZ-2014 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20140411.1235.396289.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20141126.1150.400360.html --- #: XXX zumindest den "Platznamen" aufnehmen --- wird es hier ein Schild geben? --- #: last_checked: 2014-10-15 --- #: next_check: 2014-12-04 --- Monumentenplatz	?::inwork 8344,9085 8332,9059
@@ -1531,7 +1522,7 @@ Schwarzer Weg (Schmˆckwitz): Fahrbahnerneuerung in Planung	?::projected 27892,-3
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5795
 #: by: http://www.dafmap.de/d/berlin.html?id=3703&mt=0&zoom=16
 #: osm_watch: way id="268088020" version="5"
-#: last_checked: 2016-11-21 vvv
+#: last_checked: 2017-02-24 vvv
 #: next_check: 2017-08-01 vvv
 Bautzener Brache: Radwegf¸hrung und Br¸cke in Planung	?::projected 8207,9223 8240,9276 8240,9364 8242,9571 8221,9582 8255,9698 8256,9778 8233,9863
 Bautzener Brache - Groﬂgˆrschenstr.: Weg in Planung	?::projected 8240,9364 8186,9380
@@ -1613,7 +1604,9 @@ Kurpromenade: wird die Fahrbahn hier erneuert?	?::projected -8862,6375 -8860,643
 # - Fragen nach genauen Routenverl‰ufen
 # - XXX_prog- und XXX_indoor-Eintr‰ge
 # 
-# REMOVED (relativ unproblematisch) --- #: by: fritz --- #: XXX bis 17.03.2017 --- Alexandrinenstr.: Sperrung f¸r Radfahrer relevant?	?; 10178,10411 10122,10294
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6946
+#: next_check: 2017-05-01
+Hultschiner Damm/Rahnsdorfer Str.: wird es hier eine Ampel geben?	? 24628,10569 24653,10580 24684,10586
 # 
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
 Seebadstr. - Alt-Hermsdorf: Widmung einer Straﬂe	? 4564,23048 4498,23161 4471,23147
@@ -1649,8 +1642,7 @@ An der Wuhlheide: werden hier Schutzstreifen entstehen?	? 18492,6893 18404,6946 
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6864 (unbeleuchtet)
-Gutspark Lichtenberg: existiert eine Verbindung f¸r Radfahrer? Qualit‰t?	? 15746,12967 15744,12999 15694,12996 15618,13067 15526,13056 15515,13134 15515,13134
+# REMOVED (Verbindung existiert nun) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6864 (unbeleuchtet) --- Gutspark Lichtenberg: existiert eine Verbindung f¸r Radfahrer? Qualit‰t?	? 15746,12967 15749,12995 15717,13001 15612,13069 15526,13056
 # 
 Anna-Ebermann-Str. [Wohngebiet]: Qualit‰t?	? 17753,16604 17759,16658 17863,16815
 # 
@@ -1658,8 +1650,7 @@ Anna-Ebermann-Str. [Wohngebiet]: Qualit‰t?	? 17753,16604 17759,16658 17863,16815
 # 
 #: XXX wo genau?
 #: by: http://www.berlin.de/ba-neukoelln/_assets/dokumente/ba-beschluesse/ba-beschluss-206-16.pdf
-#: last_checked: 2017-01-18
-#: next_check: 2017-03-01
+#: last_checked: 2017-02-24
 Weserstr.: Fahrradstraﬂe wird eingerichtet	? 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193 12322,9124
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/15-11-2016_mehr-fahrradstrassen-fuer-pankow.pdf
@@ -1765,6 +1756,7 @@ Wege im Gutspark Neukladow: Wegf¸hrung, nachts beleuchtet, Qualit‰t?	? -6198,535
 An den Parkb‰umen: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -6410,6549 -6381,6587 -6307,6686 -6288,6710 -6439,6818 -6536,6695
 "An den Parkb‰umen" oder "Parkrosenweg": Qualit‰t? Genaue Lage? Existiert die Straﬂe schon? Wie lauten die Straﬂennamen?	? -6536,6695 -6381,6587
 #: XXX bei osm "An den Parkb‰umen", vermutlich falsch
+#: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8647 (Einspruch gegen den Namen)
 Am Waldkiefernweg: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -6347,6503 -6271,6612 -6307,6686
 #: XXX b) Amberbaumallee PLZ=14089
 Amberbaumallee: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon? Hinterer Teil nur f¸r Fuﬂg‰nger?	? -6221,6411 -6347,6503 -6377,6523 -6410,6549 -6661,6743
@@ -1813,8 +1805,8 @@ Betriebsbahnhof Schˆneweide --> Adlershof-Johannisthal	X 18682,4714
 #: XXX pr¸fen!
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2016
 #: osm_watch: way id="21844065" version="9"
-#: last_checked: 2016-12-16
-#: check_frequency: 60d
+#: last_checked: 2017-02-24
+#: check_frequency: 90d
 Monumentenstr. 13d: wird hier ein verkehrsberuhigter Bereich ausgewiesen?	? 8014,9126 8009,9063
 # 
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/tunnel-adenauerplatz/
@@ -1883,10 +1875,9 @@ Wrˆhm‰nnerpark: nach den Bauarbeiten "gelber Farbasphalt", vermutlich f¸r Radfah
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file?y=2016 (Grundst¸cksnummerierungen)
 #: XXX fehlt in Berlin.coords.data, PLZ=10315
 #: osm_watch: way id="404451458" version="2"
-#: last_checked: 2016-10-30 vvv
+#: last_checked: 2017-02-25 vvv
 #: check_frequency: 60d vvv
-Im Achterkastell: neue Straﬂe	?::projected 18730,11833 18732,11885 18887,11880 18888,11910
-Alt-Friedrichsfelde [Wohngebiet]: neue Straﬂe	?::projected 18730,11833 18730,11833 18899,11824
+Alt-Friedrichsfelde [Wohngebiet]: neue Straﬂe	?::inwork 18730,11833 18730,11833 18899,11824
 #: check_frequency ^^^
 #: last_checked ^^^
 #: by ^^^
@@ -1931,7 +1922,7 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7478
 #: XXX "noch 2016"
-#: last_checked: 2017-02-06 vvv
+#: last_checked: 2017-02-22 vvv
 #: check_frequency: 21d vvv
 #: priority: #C vvv
 #: osm_watch: note 814292 1
@@ -1941,6 +1932,14 @@ Sebastian/Luckauer: Zebrastreifen in Bau	?::inwork 11113,10943 11109,10935
 #: priority ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+# 
+#: last_checked: 2017-02-22
+#: check_frequency: 14d
+Oranienplatz: Zebrastreifen in Bau	?::inwork 11233,10672 11258,10682 11262,10655
+# 
+#: last_checked: 2017-02-20
+#: check_frequency: 14d
+Baerwaldstr.: Zebrastreifen in Bau	?::inwork 10402,9941 10424,9958 10430,9937
 # 
 #: XXX wird hier ein Zebrastreifen entstehen?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5452
@@ -2321,35 +2320,16 @@ S¸dpankeweg, Fortsetzung zur Ida-von-Arnim-Str.: wann wird sie gebaut? Qualit‰t?
 # REMOVED --- : next_check_id: ANLAGEBUCHHOLZ-2015 vvv --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3954 --- #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036832083234/832083234/00064924/24-Anlagen/02/Benennungsabsichtfuer7PrivatwegeinderAnlageBuc.pdf --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4003 --- #: XXX Benennungsabsicht f¸r 7 Privatwege in der Anlage Buchholz, PLZ=13127, Ortsteil Franzˆsisch Buchholz (fehlen alle in Berlin.coords.data) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/12re.pdf/file?y=2015 (Straﬂenbenennung) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2015 (Grundst¸cksnummerierungen) --- #: note: so gut wie alle Wege hier sind beleuchtet --- #: last_checked: 2015-07-19 vvv --- #: check_frequency: 60d vvv
 # REMOVED (-> strassen-orig) --- Fliederbl¸tenweg: dieser Abschnitt des Wegs am Nordgraben wird umbenannt	? 11714,21130 11534,21229 11437,21283 11389,21310 11370,21320 11295,21392 11249,21463 11175,21571 11073,21680
 # REMOVED (-> strassen-orig) --- Pfirsichbl¸tenweg: dieser Abschnitt des Wegs am Nordgraben wird umbenannt	? 11253,21364 11373,21271 11703,21097
-# 
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5437
-#: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/bplan1135.pdf?start&ts=1363256158&file=bplan1135.pdf
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5597
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036477239018/477239018/00108573/73-Anlagen/02/249-2013-1B-Plan11-35-ErschliessungAnlage1.pdf
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5697 (Empfehlung f¸r Straﬂenbenennungen)
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2014 (Benennung)
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6093 (Empfehlung f¸r "Anna-Maria-M¸ller-Str.")
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036880042216/880042216/00116551/51-Anlagen/02/Anlage1.pdf
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2015 (Grundst¸cksnummerierungen)
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/02re.pdf/file?y=2015 ("Anna-Maria-M¸ller-Str.")
-#: XXX Bebauungsplan 11-35, teilweise verkehrsberuhigt, "Olympiaviertel" vvv
-#: next_check_id: OLYMPIAVIERTEL-2016 vvv
-#: last_checked: 2016-08-27 vvv
-#: check_frequency: 90d vvv
+# REMOVED --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5437 --- #: by: http://www.berlin.de/imperia/md/content/balichtenberghohenschoenhausen/bebauen/beteiligen/bplan1135.pdf?start&ts=1363256158&file=bplan1135.pdf --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5597 --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036477239018/477239018/00108573/73-Anlagen/02/249-2013-1B-Plan11-35-ErschliessungAnlage1.pdf --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5697 (Empfehlung f¸r Straﬂenbenennungen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2014 (Benennung) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6093 (Empfehlung f¸r "Anna-Maria-M¸ller-Str.") --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036880042216/880042216/00116551/51-Anlagen/02/Anlage1.pdf --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2015 (Grundst¸cksnummerierungen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/02re.pdf/file?y=2015 ("Anna-Maria-M¸ller-Str.") --- #: XXX Bebauungsplan 11-35, teilweise verkehrsberuhigt, "Olympiaviertel" vvv --- #: next_check_id: OLYMPIAVIERTEL-2016 vvv --- #: last_checked: 2016-08-27 vvv --- #: check_frequency: 90d vvv
 # REMOVED (-> strassen) --- Helga-Haase-Str.: Planstraﬂe 1, genaue Lage, Qualit‰t?	?::projected 17465,16340 17508,16356 17611,16396 17673,16420 17792,16465
 # REMOVED --- : osm_watch: way id="354078625" version="4" --- Jutta-Langenau-Str.: Planstraﬂe 2, genaue Lage, Qualit‰t?	?::projected 17615,16310 17643,16322 17818,16397 17857,16414 17877,16423
-# REMOVED --- : osm_watch: way id="354078420" version="3" --- Gerhard-Schulz-Str.: Planstraﬂe 3, genaue Lage, Qualit‰t?	?::projected 17508,16356 17497,16385 17552,16461
-(Fuﬂweg zur Wartenberger Str.): genaue Lage, Qualit‰t?	?::projected 17512,16495 17552,16461
-# REMOVED --- : osm_watch: way id="354078421" version="3" --- Harry-Glaﬂ-Str.: Planstraﬂe 4, genaue Lage, Qualit‰t?	?::projected 17552,16461 17603,16415 17611,16396 17643,16322
+# REMOVED --- : osm_watch: way id="354078420" version="3" --- Gerhard-Schulz-Str.: Planstraﬂe 3, genaue Lage, Qualit‰t?	?::projected 17508,16356 17497,16385 17544,16463
+# REMOVED --- (Fuﬂweg zur Wartenberger Str.): genaue Lage, Qualit‰t?	?::projected 17504,16489 17544,16463
+# REMOVED --- : osm_watch: way id="354078421" version="3" --- Harry-Glaﬂ-Str.: Planstraﬂe 4, genaue Lage, Qualit‰t?	?::projected 17544,16463 17603,16415 17611,16396 17643,16322
 # REMOVED --- : osm_watch: way id="354078422" version="3" --- Erich-Hagen-Str.: Planstraﬂe 5, genaue Lage, Qualit‰t?	?::projected 17673,16420 17657,16464 17712,16549
 # REMOVED --- : osm_watch: way id="354078419" version="2" --- Joachim-Bˆhmer-Str.: Planstraﬂe 6, genaue Lage, Qualit‰t?	?::projected 17818,16397 17792,16465 17776,16504 17712,16549 17673,16577
 # REMOVED --- Anna-Maria-M¸ller-Str.: Planstraﬂe 7, genaue Lage, Qualit‰t?	?::projected 17712,16549 17753,16604
 # REMOVED --- (Fuﬂweg zur Gehrenseestr.): Qualit‰t?	?::projected 17615,16310 17640,16259
-#: check_frequency ^^^
-#: last_checked ^^^
-#: next_check_id ^^^
-#: XXX ^^^
-# 
 # REMOVED (-> strassen+gesperrt) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5696 (Straﬂenname) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036439860180/439860180/00109962/62-Anlagen/02/LageplanDS1034.pdf (grober Lageplan) --- #: by: http://w6898n4pa.homepage.t-online.de/Lage.pdf (Lageplan) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/17re.pdf/file?y=2014 (Grundst¸cksnummerierungen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2014 (Benennung) --- #: XXX Baustart: Ende 2013, Bauende: Fr¸hjahr 2015 --- #: XXX Verbundsteinpflaster --- #: last_checked: 2015-05-10 --- #: check_frequency: 60d --- Am Gutspark: neue geplante Privatstraﬂe, Lage, Qualit‰t?	?::inwork 15747,12880 15746,12967 15826,12971
 # REMOVED (abgelehnt, siehe Schlussbericht) --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4458 --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036560602837/560602837/00092292/92-Anlagen/04/B0359SB.pdf (Schlussbericht) --- #: last_checked: 2013-06-22 --- #: check_frequency: 90d --- Brandenburgplatz: wird hier eine Fuﬂg‰ngerampel eingerichtet?	? 23363,5714 23309,5704
 # REMOVED (realisiert) --- #: next_check_id: GREIFENHAGENER-2015 --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=2656 --- #: by: http://www.berlin.de/ba-pankow/verwaltung/tiefbau/helmholtzplatz.php --- #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/pr__sentation_sanierungsgebiet_helmholtzplatz.pdf?start&ts=1399614747&file=pr__sentation_sanierungsgebiet_helmholtzplatz.pdf --- #: last_checked: 2015-06-30 --- #: check_frequency: 30d --- Greifenhagener Str.: hier wird eine Fuﬂg‰ngerzone entstehen sowie asphaltiert werden; auﬂerdem wird es eine Einbahnstraﬂenregelung f¸r Autofahrer geben	? 11123,15851 11150,15908
@@ -2407,7 +2387,7 @@ Schˆneberger Str.: eventuell wird hier eine (Fuﬂg‰nger-)Ampel entstehen	?::proje
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4106&options=4 (Konzeptphase)
 #: osm_watch: way id="338316875" version="4"
-#: last_checked: 2016-10-10
+#: last_checked: 2017-02-24
 #: check_frequency: 100d
 Kolonnenstr.: werden hier Radstreifen errichtet?	?::projected; 7709,8777 7795,8765 8008,8771 8014,8771 8078,8772
 # 
@@ -3029,9 +3009,9 @@ Bebauungsplan 10-77: werden hier neue Straﬂen entstehen?	?::projected 21483,1652
 #: last_checked: 2016-07-24 vvv
 #: check_frequency: 270d vvv
 Agnethaweg	?::projected 17221,15181 17245,15182 17314,15186 17336,15187
-Anni-Frid-Weg	?::projected 17234,15053 17258,15053 17323,15054 17346,15055
-Bennyweg	?::projected 17245,15182 17258,15053
-Bjˆrnweg	?::projected 17314,15186 17323,15054
+Anni-Frid-Weg	?::projected 17227,15054 17258,15054 17323,15055 17346,15055
+Bennyweg	?::projected 17245,15182 17258,15054
+Bjˆrnweg	?::projected 17314,15186 17323,15055
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -3213,6 +3193,20 @@ Mauerpark: Umbauarbeiten, gibt es schon Einschr‰nkungen oder Ver‰nderungen?	?::p
 #: next_check: 2018-09-01
 Karlshorst-West: neues Wohngebiet wird entstehen, auch neue Straﬂen	?::projected 17404,8844 17722,8831 17865,8766 17751,8312 17627,8379 17492,8649 17404,8844
 # 
+#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6932
+#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103674626797/74626797/00211748/48-Dateien/image001.png
+#: XXX neue Straﬂen entstehen, Bebauungsplan XVII-50ab:
+#: XXX Planstraﬂe 2: Arnbrucker Str.
+#: XXX Planstraﬂe 3: Bischofsmaiser Str.
+#: XXX Planstraﬂe 4: Langdorfer Str.
+#: XXX Planstraﬂe 5: Osserweg
+#: XXX Planstraﬂe 6: Rachelweg
+#: XXX Planstraﬂe 7: Ruhmannsfelder Str.
+#: XXX Planstraﬂe 8: Prackenbacher Str.
+#: XXX Die kleine Verbindungsstraﬂe zwischen Langdorfer Straﬂe und Prackenbacher Straﬂe: Lusenpfad
+#: XXX der Stadtplatz an der Arnbrucker Straﬂe: Arberlandplatz
+Gartenstadt Karlshost II: neue Straﬂen werden entstehen	?::projected 19657,9119 19596,9007 19905,8446 20023,8483 19931,9128 19657,9119
+# 
 #: by: http://s522689958.online.de/wp-content/uploads/2016/02/XV-37d-Paradiesstra%C3%9Fe.png vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/xv-37d-bebauungsplan.pdf
 #: XXX Bebauungsplan XV-37d, neue Planstraﬂen werden entstehen
@@ -3277,7 +3271,22 @@ Bebauungsplanentwurf I-43a "S¸dliche Alexanderstraﬂe": entsteht hier eine Planst
 #: XXX welche Straﬂen werden hier saniert?
 #: next_check: 2017-08-30
 Lichtenrade: Sanierung von Pflasterstraﬂen	?::projected 10381,-2457 11914,-2137 10775,-3208 10381,-2457
-#
+# 
+#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_08_0861_0964_online.pdf
+#: priority: #C
+Cimbernstr.: Stichstraﬂe eintragen, Qualit‰t?	? -3532,2009 -3614,1880
+# 
+#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6933
+#: XXX fehlt in Berlin.coords.data
+#: last_checked: 2017-02-25
+#: check_frequency: 90d
+Im Lichtenhain: neue geplante Straﬂe, Qualit‰t, genaue Lage?	?::projected 16494,10669 16462,10571
+# 
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5592
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103689945674/89945674/00250720/20-Anlagen/01/DRS0080VK.pdf
+#: next_check: 2018-03-01
+Bebauungsplan XVI-81: neue Straﬂen werden entstehen	?::projected 33532,2877 33523,2784 33408,2778 33394,2748 33115,2798 33158,3030 33532,2877
+# 
 #: ignore ^^^
 #: section ^^^
 # 
