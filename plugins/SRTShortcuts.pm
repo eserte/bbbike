@@ -773,8 +773,15 @@ EOF
 	      [Button => $do_compound->("Fragezeichen on route"),
 	       -command => sub { fragezeichen_on_route() },
 	      ],
-	      [Button => $do_compound->("Multi-page PDF"),
-	       -command => sub { multi_page_pdf() },
+	      [Cascade => $do_compound->("Multi-page PDF"), -menuitems =>
+	       [
+		[Button => $do_compound->('Standard settings'),
+		 -command => sub { multi_page_pdf() },
+		],
+		[Button => $do_compound->('Custom settings'),
+		 -command => sub { multi_page_pdf_dialog() },
+		],
+	       ],
 	      ],
 	      [Cascade => $do_compound->("Development"), -menuitems =>
 	       [
@@ -2842,16 +2849,59 @@ sub fragezeichen_on_route {
 }
 
 sub multi_page_pdf {
+    my(@extra_args) = @_;
     eval {
 	require File::Temp;
 	require BBBikeProcUtil;
 	my($tmp1fh,$tmp1file) = File::Temp::tempfile(SUFFIX => ".bbr", UNLINK => 1) or die $!;
 	main::load_save_route(1, $tmp1file);
-	my @cmd = ("$bbbike_rootdir/miscsrc/split-route-bboxes.pl", $tmp1file, "-view");
+	my @cmd = ("$bbbike_rootdir/miscsrc/split-route-bboxes.pl", $tmp1file, "-view", @extra_args);
+	warn "Run <@cmd>...\n" if $main::verbose;
 	BBBikeProcUtil::double_forked_exec(@cmd);
     };
     if ($@) {
 	main::status_message("An error happened: $@", "error");
+    }
+}
+
+{
+    my $hi_scale = 10000;
+    my $lo_scale = 20000;
+
+    sub multi_page_pdf_dialog {
+	require Tk::LogScale;
+	my $t = $main::top->Toplevel(-title => 'Multi PDF settings');
+	$t->transient($main::top) if $main::transient;
+	Tk::grid($t->Label(-text => 'Hi scale 1:'),
+		 $t->LogScale(-variable => \$hi_scale,
+			      -from => 1000, -to => 3_000_000, -resolution => 0.01,
+			      -command => sub {
+				  if ($hi_scale > $lo_scale) {
+				      $lo_scale = $hi_scale;
+				  }
+			      },
+			     ));
+	Tk::grid($t->Label(-text => 'Lo scale 1:'),
+		 $t->LogScale(-variable => \$lo_scale,
+			      -from => 1000, -to => 3_000_000, -resolution => 0.01,
+			      -command => sub {
+				  if ($lo_scale < $hi_scale) {
+				      $hi_scale = $lo_scale;
+				  }
+			      },
+			     ));
+	Tk::grid($t->Button(-text => 'Run',
+			    -command => sub {
+				multi_page_pdf(
+					       '--hi-scale' => $hi_scale,
+					       '--lo-scale' => $lo_scale,
+					      );
+				$t->afterIdle(sub { $t->destroy });
+			    }),
+		 $t->Button(-text => 'Cancel',
+			    -command => sub {
+				$t->afterIdle(sub { $t->destroy });
+			    }));
     }
 }
 
