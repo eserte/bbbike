@@ -873,7 +873,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736 20755,5750
 #: XXX laut fritz "geänderte Straßenführung" bis 31.12.2016
 #: source_id: IM_023718
 #: source_id: 2147339540
-#: last_checked: 2016-10-10 vvv
+#: last_checked: 2017-03-01 vvv
 #: check_frequency: 90d vvv
 # REMOVED, siehe unten ---	RW1; 14174,7505 14302,7429 14357,7450 14405,7435 14424,7401 14432,7353 14451,7340
 	RW2; 14451,7340 14519,7301
@@ -1013,7 +1013,7 @@ Busspur ist immer gültig	RW5;RW0 7848,9814 7829,9723
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5542,11075 5459,11135
 #: XXX Busspur wegen Bauarbeiten größtenteils aufgehoben (bis auf ein paar Meter am Steinplatz)
 #: XXX früher: Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5
-#: XXX bis Ende 2016, laut rbbtext bis 16.12.2016
+#: XXX bis Ende 2016, laut rbbtext bis 16.12.2016, laut VMZ nun bis Ende 2017
 #: source_id: 2147339533
 #: last_checked: 2017-02-04
 #: next_check: 2017-03-01
@@ -1030,7 +1030,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut rbbtext bis 31.05.2016, laut vmz bis Ende 2016, laut fritz bis 8. März 2017
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2017-02-14
+#: last_checked: 2017-02-27
 #: next_check: 2017-03-08
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 9695,12390 9656,12386 9601,12380
@@ -1040,13 +1040,13 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 969
 #: source_id: IM_018997
 #: source_id: IM_023987
 #: source_id: IM_025933
-#: last_checked: 2017-01-20
+#: last_checked: 2017-03-03
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9601,12380 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2017-01-16
+#: last_checked: 2017-03-03
 #: check_frequency: 60d
 Busspur ist immer gültig	RW5; 9475,12365 9601,12380
 # 
@@ -1515,7 +1515,7 @@ die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
 	RW3;RW2 14671,10751 14674,10811
 #: next_check_id: HAUPTSTR-2015
 #: XXX wegen Bauarbeiten teilweise aufgehoben, früher RW4;RW4
-#: last_checked: 2017-01-28
+#: last_checked: 2017-03-03
 #: check_frequency: 30d
 	RW0;RW0 14674,10811 14717,10855
 	RW1;RW1 14652,10201 14688,10167 14705,10149 14747,10108 14817,10031
@@ -4547,7 +4547,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1239
 #: next_check_id: KARLMARXSTR-2016
 #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus?
 #: osm_watch: way id="297058655" version="3"
-#: last_checked: 2016-12-15
+#: last_checked: 2017-03-01
 #: check_frequency: 60d
 	RW4; 12969,7610 12914,7785
 # REMOVED (wieder entfernt) --- #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus? --- #: last_checked: 2016-03-01 ---	RW3; 12898,7832 12865,7923 12830,8031 12794,8103 12753,8187
@@ -4599,7 +4599,10 @@ Tempo 10	RW6;RW6 13559,12779 13470,12990
 	RW3; 14066,12836 13979,12861 13960,12866 13844,12900
 #: XXX wegen Bauarbeiten am Hochhaus "Upper West" sind die Radspuren aufgehoben
 #: by: http://www.tagesspiegel.de/berlin/stadtentwicklung-zwillingsturm-soll-2016-in-der-city-west-eroeffnen/7416454.html (geplante Eröffnung Mitte 2016)
+#: source_id: LMS-BR_r_LMS-BR_121
+#: XXX laut fritz bis zum 26. April 2017, laut vmz mittlerweile entfernt
 #: last_checked: 2017-02-04
+#: next_check: 2017-03-03
 #	RW3; 5488,10978 5613,10963 5652,11004
 ##: note: teilweise vor dem Hotel unterbrochen (wegen Ladezone?)
 #	RW3; 5652,11004 5613,10963 5488,10978

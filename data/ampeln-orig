@@ -2597,22 +2597,27 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
 #: XXX laut fritz bis 05.05.2016
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
-#: last_checked: 2017-02-14
+#: last_checked: 2017-03-03
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2017-01-20 vvv
+#: last_checked: 2017-03-03 vvv
 #: check_frequency: 30d vvv
+#: osm_watch: node id="2959830776" version="3"
 	X::inwork 9121,12514
+#: osm_watch: node id="1769589042" version="4"
 	X::inwork 9286,12886
-# REMOVED (nicht mehr gesehen) --- X::inwork 9343,12464
+#: osm_watch: node id="25664841" version="7"
+#: osm_watch: node id="25664779" version="9"
 	X::inwork 9475,12365
+# REMOVED (nicht mehr gesehen) --- X::inwork 9343,12464
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 #: next_check_id ^^^
 #
 #: XXX temporäre Ampel vvv
+#: by: http://www.dafmap.de/d/berlin.html?id=3481&mt=0&zoom=17
 #: last_checked: 2017-02-14 vvv
 #: check_frequency: 30d vvv
 	F::inwork 9270,12086
@@ -2748,7 +2753,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: SONNENALLEE-2014 vvv
 #: osm_watch: way id="260062339" version="8"
-#: last_checked: 2017-01-22 vvv
+#: last_checked: 2017-03-01 vvv
 #: check_frequency: 90d vvv
 #: note: Radfahrer in Richtung Südosten müssen die Seite wechseln, hier Anforderungsampel
 	X::inwork 14174,7505
@@ -2878,10 +2883,11 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: HAUPTSTR-2015 vvv
 #: note etwas weiter südlich gelegen
-#: last_checked: 2017-01-28
+#: XXX allerdings nicht immer in Betrieb (z.B. nicht 2017-03-03 abends)
+#: last_checked: 2017-03-03
 	F::inwork 14674,10811
 #: XXX Zebrastreifen außer Betrieb; wie wird es nach den Bauarbeiten aussehen?
-#: last_checked: 2017-01-28
+#: last_checked: 2017-03-03
 	F::inwork 14794,10844
 #: next_check_id ^^^
 # 

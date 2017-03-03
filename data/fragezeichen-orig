@@ -21,6 +21,7 @@
 # 
 #: XXX Baumaﬂnahme 3.32 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
+#: source_id: 2147340987
 #: last_checked: 2016-12-25
 #: check_frequency: 30d
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12407,14470 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
@@ -51,11 +52,13 @@ Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 
 Schulenburgstr./Weiﬂenburger Str.: werden hier Radspuren markiert?	?::projected -2725,13287 -2798,13257 -2940,13221 -2974,13188 -3159,12962 -3210,12913 -3246,12890 -3301,12864 -3448,12834 -3650,12762
 # 
 #: XXX Baumaﬂnahme 4.18 (Realisierung nach 2011)
+#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.565829.php
+#: XXX Gesamtbaumaﬂnahme bis Ende August 2017
 #: osm_watch: way id="47266663" version="4"
 #: osm_watch: way id="47267054" version="3"
 #: last_checked: 2016-09-18
-#: check_frequency: 90d
-Hubertusallee/Teplitzer Str.: werden hier Radspuren markiert?	?::projected 2320,8722 2295,8678 2273,8640 2190,8528 2126,8426 2120,8335 2112,8074 2092,7810 2096,7782 2112,7754
+#: next_check: 2017-04-01
+Hubertusallee/Teplitzer Str.: hier werden Radspuren markiert	?::inwork 2322,8857 2320,8722 2295,8678 2273,8640 2190,8528 2126,8426 2120,8335 2112,8074 2092,7810
 # 
 #: XXX Baumaﬂnahmen GR6.20, GR6.19 (Realisierung nach 2011)
 #: osm_watch: way id="4323788" version="17"
@@ -99,10 +102,14 @@ Mˆckernstr.: werden hier vielleicht Radspuren Richtung S¸den markiert oder Radwe
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6183 (Baubeginn erst 2015)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.521884.php (Baubeginn, Fertigstellung der Gesamtmaﬂnahme August 2018)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.532371.php (Fertigstellung des Teilabschnittes am 17.01.2017)
+#: XXX laut fritz dauern die Bauarbeiten zwischen Bˆcklerstraﬂe und Alexandrinenstraﬂe bis 2017-10-13
 #: source_id: 2147340884
-#: last_checked: 2017-02-20 vvv
+#: source_id: 2147340970
+#: last_checked: 2017-02-28 vvv
+#: next_check: 2017-03-27 vvv
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected; 9865,10227 9948,10280 9873,10285
+#: next_check ^^^
 #: last_checked ^^^
 # 
 # REMOVED --- #: XXX Baumaﬂnahme 2.23 (Realisierung nach 2011) vvv
@@ -297,8 +304,7 @@ Schˆneberger Str.: Radspuren bis 2015 geplant	?::projected 8739,6701 8653,6781 8
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bvv/mdv_vii_19.pdf?start&ts=1368606374&file=mdv_vii_19.pdf (Seite 79)
 #: osm_watch: way id="28961260" version="13"
 #: source_id: 2147339938
-#: last_checked: 2016-10-30
-#: next_check: 2017-01-21
+#: last_checked: 2017-03-01
 Kˆpenicker Landstraﬂe: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166,8489
 #: by: ^^^
 # 
@@ -732,7 +738,7 @@ Privatstraﬂen in der Wasserstadt Spindlersfeld: genaue Lage? Straﬂenname? Qualit
 #: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7644 (Benennungsvorschlag)
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20150407.1145.401632.html (Bauarbeiten bis September 2015)
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.474302.php
-#: osm_watch: way id="24974528" version="14"
+#: osm_watch: way id="24974528" version="15"
 #: last_checked: 2016-10-08
 Sternbergpromenade: der Havel-Radweg wird hier offiziell entlanggef¸hrt	?::projected -3146,14145 -3090,14198 -3059,14230 -3042,14255 -3019,14286 -2923,14465 -2918,14496
 # 
@@ -1033,7 +1039,7 @@ Friedelstr.: ein asphaltierter Fahrstreifen wird angelegt	?::projected 12085,977
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="13"
-#: last_checked: 2017-02-10
+#: last_checked: 2017-03-01
 #: check_frequency: 60d
 B¸rknerstr.: wird hier eine Fahrradstraﬂe eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -1259,7 +1265,7 @@ Wolzenseeweg: Qualit‰t? Straﬂe bereits fertiggestellt? Wird es eine ‹berquerungs
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straﬂe	? -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 # 
 #: next_check_id: OBERWALL-2014 vvv
-#: last_checked: 2017-02-14 vvv
+#: last_checked: 2017-02-27 vvv
 #: check_frequency: 90d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2015 (Grundst¸cksnummerierungen)
@@ -1544,6 +1550,7 @@ Bebauungsplan 3-48 VE: Planstraﬂe B in Planung	?::projected 13368,18674 13222,18
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/artikel.472246.php
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-65ve/vorhabenbezogener_bebauungsplan.pdf
+#: by: http://www.dafmap.de/d/berlin.html?id=4281&mt=0&zoom=18
 #: next_check: 2017-05-01
 Bebauungsplan 7-65: Weg in Planung	?::projected 7960,6059 7697,6059 7630,6016 7607,5944
 # 
@@ -1603,6 +1610,12 @@ Kurpromenade: wird die Fahrbahn hier erneuert?	?::projected -8862,6375 -8860,643
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverl‰ufen
 # - XXX_prog- und XXX_indoor-Eintr‰ge
+# 
+#: XXX laut fritz von 2017-02-27 bis 2017-03-10
+#: source_id: 2147340962
+#: last_checked: 2017-02-27
+#: check_frequency: 3d
+Gartenstr.: Sperrung zw. Invalidenstr. und Bernauer Str. auch f¸r Radfahrer relevant?	?; 9383,13986 9224,14169
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6946
 #: next_check: 2017-05-01
@@ -1712,7 +1725,7 @@ Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich f¸r den Kfz-Verkehr gesperr
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2015
 #: by: http://www.dafmap.de/d/berlin.html?id=3903&mt=0&zoom=15 (Geplanter Projektabschluss: 2017-06-30)
-#: osm_watch: way id="156817982" version="13"
+#: osm_watch: way id="156817982" version="14"
 #: last_checked: 2016-07-07
 #: next_check: 2016-09-25
 Lutterbacher Str.: Straﬂe ist offen, pr¸fen!	? 2094,3231 1993,3170 2072,3034 2163,3092
@@ -1775,7 +1788,7 @@ Elsbeerenweg.: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -6378,5877 -
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_929_16.pdf
 #: osm_watch: way id="295627704" version="4"
-#: last_checked: 2017-01-17
+#: last_checked: 2017-02-28
 #: check_frequency: 60d
 Liebigstr.: Einrichtung einer Spielstraﬂe, wo genau?	? 14229,12311 14166,12323 14147,12344 14091,12355 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
 # 
@@ -1784,7 +1797,7 @@ Liebigstr.: Einrichtung einer Spielstraﬂe, wo genau?	? 14229,12311 14166,12323 1
 #: XXX Bauarbeiten zwischen Thaerstr. und H¸bnerstr.
 #: XXX NEW	Eldenaer Str. (Friedrichshain) In beiden Richtungen Kreuzung Proskauer Str. (Berlin)  G¸ltig ab: 24.11.2016 06:15  Baustelle, Vollsperrung (bis vsl. Ende 11/16)	2147340785
 #: XXX -> ist die Vollsperrung f¸r Radfahrer relevant? -> am Abend schon wieder aufgehoben?
-#: last_checked: 2017-02-06 vvv
+#: last_checked: 2017-02-28 vvv
 #: check_frequency: 30d
 Eldenaer Str.: in Richtung Osten sind noch Bauarbeiten, vermutlich werden die Radspuren danach markiert	?::inwork; 14096,12827 14355,12752
 #: check_frequency: 14d
@@ -1853,7 +1866,7 @@ Anforderungsampel, X	?::inwork 7652,14257
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/25re.pdf/file?y=2016
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/46re.pdf/file?y=2016 (Grundst¸cksnummerierungen)
 #: XXX Berlin.coords.data-Eintrag fehlt
-#: last_checked: 2017-02-14
+#: last_checked: 2017-02-27
 Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?	? 9636,13076
 # 
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.490082.php
@@ -1922,7 +1935,7 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7478
 #: XXX "noch 2016"
-#: last_checked: 2017-02-22 vvv
+#: last_checked: 2017-03-02 vvv
 #: check_frequency: 21d vvv
 #: priority: #C vvv
 #: osm_watch: note 814292 1
@@ -1933,8 +1946,9 @@ Sebastian/Luckauer: Zebrastreifen in Bau	?::inwork 11113,10943 11109,10935
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2017-02-22
+#: last_checked: 2017-03-02
 #: check_frequency: 14d
+#: osm_watch: note 851907 1
 Oranienplatz: Zebrastreifen in Bau	?::inwork 11233,10672 11258,10682 11262,10655
 # 
 #: last_checked: 2017-02-20
@@ -1956,8 +1970,7 @@ Neue Krugallee/Lakegrund	? 16401,7400 16406,7430 16409,7464
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4755 vvv
 #: source_id: 2147339938
-#: last_checked: 2016-10-30
-#: next_check: 2017-01-21
+#: last_checked: 2017-03-01
 Kˆpenicker Landstraﬂe: bleibt die Radwegbenutzungspflicht?	?; 15166,8489 15303,8343 15357,8286 15557,8077
 #: last_checked: 2016-10-30
 #: check_frequency: 90d
@@ -2348,13 +2361,13 @@ Alt-Karow: evtl. wird hier ein Schutzstreifen Richtung S¸den angelegt	? 15726,23
 # 
 #: next_check_id: SONNENALLEE-2014
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14709&options=8 (beschlossen durch BVV, Realisierung steht noch aus)
-#: last_checked: 2017-01-22 (zurzeit eine Baustellenampel, wird eine permanente Ampel nach den Bauarbeiten aufgestellt?)
+#: last_checked: 2017-03-01 (zurzeit eine Baustellenampel, wird eine permanente Ampel nach den Bauarbeiten aufgestellt?)
 #: check_frequency: 90d
 Sonnenallee/Ziegrastr.: wird hier eine permanente Ampel entstehen?	?::projected 14174,7505
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14708&options=8 (beschlossen durch BVV)
 #: osm_watch: node id="661594841" version="3"
-#: last_checked: 2016-10-10
+#: last_checked: 2017-03-01
 #: check_frequency: 90d
 Thomasstr./Hermannstr.: sichere Querung, wie wird/kˆnnte die Lˆsung hier aussehen?	?::projected 12193,7412 12180,7387 12168,7368
 # 
@@ -2595,7 +2608,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein ˆffentlich zug‰nglicher Geh/Radweg gebaut
-#: last_checked: 2017-02-14
+#: last_checked: 2017-03-03
 #: check_frequency: 90d
 Stallschreiberstr./Kolonnenweg: Straﬂenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # REMOVED (->handicap) --- Stallschreiberstr./Kolonnenweg: Straﬂenbauarbeiten geplant	?::projected 10678,11172 10818,11269
@@ -3109,6 +3122,7 @@ G¸terbahnhof Wilmersdorf: vermutlich wird die Straﬂe w‰hrend der Bauarbeiten ges
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2016 (bestandskr‰ftig)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2016 (Grundst¸cksnummerierungen)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/53re.pdf/file?y=2016 (Grundst¸cksnummerierungen)
+#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_09_0965_1056_online.pdf (Grundst¸cksnummerierungen)
 #: XXX Berlin.coords.data-Eintrag fehlt, PLZ=14089
 #: XXX ist das der Bebauungsplan 5-93?
 #: osm_watch: way id="377485132" version="3"
@@ -4823,12 +4837,28 @@ Amundsenstr.: Rad- und Gehweg, bereits befahrbar, Qualit‰t?	? -15813,-154 -16079
 #: XXX Kleinsteinpflaster, Q1-
 #: last_checked: 2014-09-13 (noch keine Ausschilderung)
 #: check_frequency: 180d
-Heinz-Sielmann-Ring (Potsdam-Groﬂ-Glienicke): Qualit‰t? Bereits ausgeschildert?	? -8632,8641 -8467,8612 -8458,8648 -8220,8575 -8240,8450 -8251,8392 -8269,8288 -8291,8148 -8354,8043
+Heinz-Sielmann-Ring (Potsdam-Groﬂ-Glienicke): Qualit‰t? Bereits ausgeschildert?	? -8632,8641 -8467,8612 -8458,8648 -8220,8575 -8240,8450 -8251,8392 -8269,8288 -8291,8148 -8320,8098 -8354,8043
 Hans-Georg-Straﬂe: Qualit‰t? Bereits ausgeschildert?	? -8233,8283 -8269,8288 -8326,8300 -8389,8313 -8455,8326 -8498,8335
 Christoph-Friedrich-Weg: Qualit‰t? Bereits ausgeschildert?	? -8466,8246 -8455,8326 -8442,8398
 Eva-Katharina-Weg: Qualit‰t? Bereits ausgeschildert?	? -8399,8238 -8389,8313 -8376,8390
 Margarethe-Gottliebe-Weg: Qualit‰t? Bereits ausgeschildert?	? -8337,8229 -8326,8300 -8311,8381
 #
+#: XXX Bebauungsplan 11a "Waldsiedlung", Quartier 4
+#: by: http://www.potsdam.de/sites/default/files/documents/17057_amtsblatt_feb17_dsjs_korr3_0.pdf
+#: by: http://www.villenpark-potsdam-gross-glienicke.de/grundstuecke/quartier-4.html#c869
+#: by: http://www.villenpark-potsdam-gross-glienicke.de/typo3temp/pics/1952d2504c.png
+#: XXX fehlen alle in Potsdam.coords.data
+Edith-Schollwer-Weg: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8320,8098 -8486,8126
+Maly-Delschaft-Weg: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8476,8181 -8486,8126 -8492,8078
+Ida-W¸st-Weg: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8408,8172 -8416,8114 -8423,8067
+K‰the-Haack-Weg: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8346,8160 -8356,8104 -8362,8061
+Rudi-Ball-Str.: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8362,8061 -8423,8067 -8492,8078 -8538,8085
+#: XXX stimmt die Schreibweise?
+Groﬂ Glienicker Heide: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8467,8612 -8499,8431
+Groﬂ Glienicker Heide: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8499,8431 -8487,8423 -8498,8335 -8538,8085 -8546,8057
+Leo-Bauer-Str.: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8560,8438 -8622,8074
+(Zugangsstraﬂe zur Waldsiedlung): Straﬂenschilder? Qualit‰t?	? -8666,8449 -8560,8438 -8499,8431
+# 
 #: by: http://www.potsdam.de/cms/dokumente/31998475_2027173/1fd58c39/Amtsblatt_02_14.pdf
 #: XXX fehlt in Potsdam.coords.data, PLZ=14476
 #: XXX Kleinsteinpflaster, Q1- (falls das hier ¸berhaupt die richtige Straﬂe ist)

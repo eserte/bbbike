@@ -747,7 +747,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Februar von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im März von 6.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -1938,7 +1938,7 @@ userdel	2::inwork 3472,24709 3481,24686 3492,24667 3535,24626
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-02-09 vvv
+#: last_checked: 2017-03-03 vvv
 #: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -2047,16 +2047,7 @@ userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,
          'type' => 'gesperrt',
          'until' => 1492164000
        },
-       {
-         'data' => 'userdel	2::inwork 4631,21788 4525,21714
-',
-         'from' => 1484331784,
-         'id' => 2845,
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.550340.php',
-         'text' => 'Avenue Charles de Gaulle: Sperrung in Höhe des ehemaligen Einkaufs- und Gemeindezentrums der Cité Foch, bis voraussichtlich zum 28.02.2017',
-         'type' => 'gesperrt',
-         'until' => 1488322799
-       },
+       undef,
        undef,
        {
          'data' => 'userdel	q4::inwork 5059,7216 5064,7160 5081,7112
