@@ -943,9 +943,9 @@ Stallschreiberstr.: Kopfsteinpflaster, OK	Q1 10620,11244 10489,11405
 Am Urban-Krankenhaus: Kopfsteinpflaster, OK	Q1 10627,9912 10695,9922
 Dieffenbachstr.: Kopfsteinpflaster	Q2 11089,9751 11141,9732
 Am Volkspark: Parkweg	Q1 5611,8252 5438,8402 5433,8407
-Am Volkspark: m‰ﬂiges Kopfsteinpflaster mit groﬂen Ritzen	Q2 5745,8194 5718,8197 5651,8218
+Am Volkspark: m‰ﬂiges Kopfsteinpflaster mit groﬂen Ritzen	Q2 5730,8207 5651,8218
 Am Volkspark: Kopfsteinpflaster	Q2 5611,8252 5651,8218
-Am Volkspark: Parkweg	Q1 5745,8194 5925,8219
+Am Volkspark: Parkweg	Q1 5730,8207 5925,8219
 Dircksenstr.: Asphalt	Q0 11300,12241 11273,12301 11209,12430 11156,12581 11057,12715
 Ruhwaldweg: Kopfsteinpflaster	Q2 758,13334 773,13375
 Bahnhofvorplatz S-Bhf. Priesterweg: Kopfsteinpflaster	Q2 7227,6080 7252,6080
@@ -1096,6 +1096,7 @@ Travestr.: Kopfsteinpflaster	Q2 14981,11751 14897,11801
 Volkspark Wilmersdorf: Parkweg, teilweise etwas holprig	Q1 4320,8596 3970,8582
 Volkspark Wilmersdorf: Parkweg	Q1 5913,8415 5831,8358 5806,8350 5762,8335 5660,8351 5533,8478 5472,8507
 Volkspark Wilmersdorf: Parkweg	Q1 5465,8511 5417,8519 5347,8562
+Volkspark Wilmersdorf: Parkweg	Q1 5762,8335 5699,8308 5687,8280 5700,8241 5730,8207
 Friedrichsruher Str.: Kopfsteinpflaster, OK	Q1 3333,9026 3196,9193
 Friedrichsruher Str.: Verbundsteine	Q0 3196,9193 3093,9306 2998,9408
 Cunostr.: Kopfsteinpflaster	Q2 3196,9193 3179,9002
@@ -2368,7 +2369,7 @@ Sennockstr.: Kopfsteinpflaster	Q2 8975,6875 8945,6873
 Arenholzsteig: kleinteiliges Pflaster	Q2 8454,6778 8455,6849 8481,6900
 Eresburgstr.: Beton	Q0 8224,6775 8454,6778 8653,6781
 Magirusstr.: Kopfsteinpflaster	Q2 8199,6583 7985,6598
-Egelingzeile: Asphalt	Q0 8194,6384 7976,6403
+Egelingzeile: Asphalt	Q0 8194,6384 7980,6403
 Albrechtstr. - Gˆtzstr.: Verbundsteinpflaster	Q1 9389,6348 9404,6392 9453,6415 9460,6519
 Sachsenhauser Str.: Asphalt	Q0 10454,6281 10404,5969
 Schwindstr.: schlechtes Kopfsteinpflaster	Q3 14727,8685 14757,8655
@@ -11444,7 +11445,7 @@ Normannenstr.: asphaltiert	Q0 19955,1502 19981,1397
 Normannenstr.: schlechtes Kopfsteinpflaster	Q3 19981,1397 19940,1265
 Schwiegersteig: Beton	Q0 1112,14918 1130,14823 1134,14721
 (Krahmerstr. - Teltowkanalpromenade): Asphalt	Q0 4800,3391 4778,3352
-Horst-Kohl-Str.: Asphalt	Q0 6116,6130 6214,6132 6307,6119 6369,6109 6462,6115 6494,6128
+Horst-Kohl-Str.: Asphalt	Q0 6116,6130 6213,6135 6306,6124 6369,6109 6462,6115 6494,6128
 Mor‰nenweg: guter Asphalt	Q0 3295,21202 3208,21425
 Imhoffweg: guter Asphalt	Q0 8953,-1089 8909,-918
 Cambridger Str.: m‰ﬂiger Asphalt	Q1 5866,17419 5778,17436 5691,17404 5556,17254
@@ -11605,7 +11606,7 @@ Ernst-Lemmer-Ring: guter Asphalt	Q0 -131,1579 -185,1815
 Ringbahnstr. (Neukˆlln): m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q2 13072,7013 12934,6967 12689,6905
 Bohnstedtstr.: betoniert	Q0 11249,-1628 11509,-1602
 Wernickestr.: gutes Kopfsteinpflaster	Q1 3720,22755 3849,22794
-Altmarkstr.: guter Asphalt	Q0 6343,6297 6323,6270 6300,6214 6307,6119 6318,6002 6326,5912 6333,5819
+Altmarkstr.: guter Asphalt	Q0 6343,6297 6323,6270 6300,6214 6306,6124 6318,6002 6326,5912 6333,5819
 Friedrichsruher Str.: Asphalt	Q0 6629,5946 6508,5931 6326,5912 6134,5894 6007,5882 5935,5874 5851,5863 5694,5845 5679,5853
 Schˆnhauser Str.: Asphalt	Q0 5809,6383 5824,6240 5834,6142 5845,6049 5847,5961 5851,5863 5850,5765
 Jeverstr.: Asphalt	Q0 5681,5743 5681,5768 5679,5853 5677,5868 5674,5901 5699,5949 5748,6051 5776,6118 5834,6142
@@ -11837,7 +11838,7 @@ Niebergallstr.: m‰ﬂiges Kopfsteinpflaster	Q2 23102,1637 23144,1439
 Niebergallstr.: Asphalt	Q0; 23144,1439 23158,1379
 Niebergallstr.: m‰ﬂiges Kopfsteinpflaster	Q2; 23158,1379 23144,1439
 Niebergallstr.: m‰ﬂiges Kopfsteinpflaster	Q2 23158,1379 23168,1335 23202,1192
-Kissinger Str. (Steglitz): asphaltiert	Q0 6198,6270 6214,6132 6226,5991
+Kissinger Str. (Steglitz): asphaltiert	Q0 6198,6270 6213,6135 6226,5991
 Engelmannweg: guter Beton	Q0 4558,18342 4531,18217
 Engelmannweg: gut befahrbares Kopfsteinpflaster	Q1 4531,18217 4492,18013 4462,17892 4429,17763
 Ahornallee (Friedrichshagen): schlechtes Kopfsteinpflaster	Q3 25121,5795 25123,5767 25111,5464 25121,5286

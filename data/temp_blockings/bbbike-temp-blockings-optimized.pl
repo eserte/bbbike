@@ -921,7 +921,29 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
+userdel	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
+userdel	q4::temp 11275,8387 11230,8402
+userdel	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
+',
+         'from' => 1493244000,
+         'id' => 2207,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              4
+                            ]
+                          ],
+         'source_id' => 'http://www.berlin.de/tickets/suche/detail.php?id=1372899',
+         'text' => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 28.04.2017 bis 19.05.2017',
+         'type' => 'handicap',
+         'until' => 1495317599
+       },
        undef,
        undef,
        undef,
@@ -1538,7 +1560,31 @@ userdel	2::inwork -12583,-1552 -12485,-1482
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
+userdel	2::inwork 8573,12325 8540,12420
+userdel	2::inwork 8303,12216 8344,12221 8538,12245 8610,12254
+userdel	2::inwork 8089,12190 8214,12205
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+',
+         'from' => 1493330400,
+         'id' => 2565,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              30,
+                              'months',
+                              4
+                            ]
+                          ],
+         'source_id' => 'http://www.berlin.de/tickets/suche/detail.php?id=1372887',
+         'text' => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung und Kinderfest des DGB), am 1. Mai 2017',
+         'type' => 'gesperrt',
+         'until' => 1493683200
+       },
        undef,
        undef,
        undef,
@@ -2057,6 +2103,17 @@ userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,
          'text' => 'Stubenrauchstr.: zwischen Wiesbadener Str. und Rotdornstr. Bauarbeiten, Fahrbahn gesperrt, bis 02.06.2017 ',
          'type' => 'handicap',
          'until' => 1496440800
+       },
+       undef,
+       undef,
+       {
+         'data' => 'userdel	q3::inwork; 8385,6034 8532,6015
+',
+         'from' => 1488649671,
+         'id' => 2850,
+         'text' => 'Kaiserin-Augusta-Str.: Bauarbeiten, Einbahnstraße, bis Mai 2017',
+         'type' => 'handicap',
+         'until' => 1493589600
        }
      
 );

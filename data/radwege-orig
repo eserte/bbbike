@@ -85,18 +85,9 @@ asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9233,8597 9229,8718
 	RW1; 8716,7323 8715,7384
 	RW1;RW1 8716,7323 8718,7095 8723,6958 8750,6779 8739,6701
 	RW1;RW1 8739,6701 8722,6656
-	RW3;RW3 8722,6656 8707,6537 8697,6455 8680,6322
-#: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/sbl_stand_2015_08_24.pdf?start&ts=1440409042&file=sbl_stand_2015_08_24.pdf
-#: osm_watch: way id="30709741" version="12"
-#: osm_watch: way id="354645896" version="4"
-#: XXX laut osm mittlerweile überall "lane", Benutzungspflicht überpürfen
-#: last_checked: 2016-10-10 vvv
-#: next_check: 2016-12-20
-#: source_id: 2147340437
-	RW3;RW3 8680,6322 8661,6169 8642,5998
-#: last_checked ^^^
+# REMOVED (realisiert) --- #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/sbl_stand_2015_08_24.pdf?start&ts=1440409042&file=sbl_stand_2015_08_24.pdf --- #: osm_watch: way id="30709741" version="12" --- #: osm_watch: way id="354645896" version="4" --- #: XXX laut osm mittlerweile überall "lane", Benutzungspflicht überpürfen --- #: last_checked: 2016-10-10 vvv --- #: next_check: 2016-12-20 --- #: source_id: 2147340437
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.506616.php --- #: source_id: 2147340425 --- #: next_check: 2016-10-07
-	RW3;RW3 8642,5998 8627,5866
+	RW3;RW3 8722,6656 8707,6537 8697,6455 8680,6322 8661,6169 8642,5998 8627,5866
 	RW3; 8627,5866 8613,5745
 Radspuren hören ca. 50 Meter vor der Kreuzung auf	RW3; 8613,5745 8627,5866
 	RW3;RW3 8613,5745 8600,5580
@@ -349,9 +340,9 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 6409,8026 6388,7999 6333,7927
 Busspur gilt Mo-Fr 7-18 Uhr	RW1; 6333,7927 6307,7893
 Busspur gilt Mo-Fr 7-18 Uhr	RW5; 6144,7677 6209,7765 6273,7849
 Busspur ist immer gültig	RW5; 6273,7849 6307,7893 6333,7927 6388,7999 6409,8026
-	RW2; 6807,8309 6687,8385
-Busspur gilt Mo-Fr 6-9 Uhr und 14-18 Uhr	RW4; 7193,7950 7147,8000 7073,8081 7001,8161 6935,8208 6807,8309
-Busspur gilt Mo-Fr 14-18 Uhr	RW1; 6687,8385 6807,8309 6935,8208 7001,8161 7073,8081
+für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr und 14-18 Uhr	RW1; 7193,7950 7147,8000 7073,8081 7001,8161 6935,8208 6807,8309 6687,8385 6575,8469 6523,8567 6477,8654 6460,8688
+für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 6477,8654 6523,8567 6575,8469
+für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 6687,8385 6807,8309 6935,8208 7001,8161 7073,8081
 	RW2; 7073,8081 7147,8000
 	RW4; 7147,8000 7193,7950
 	RW2;RW2 7600,7605 7696,7562
@@ -772,7 +763,10 @@ asphaltiert	RW1;RW1 6107,4718 6116,4707 6212,4622
 	RW1; 6168,6467 6248,6388 6343,6297 6494,6128
 für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 6494,6128 6629,5946 6696,5854
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr	RW1; 6696,5854 6629,5946 6494,6128 6343,6297 6248,6388 6168,6467
-	RW2;RW1 6575,8469 6687,8385
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5792
+#: XXX bleibt die Benutzungspflicht hier?
+#: last_checked: 2017-03-04
+	RW2; 6575,8469 6687,8385
 	RW0;RW2 8336,10829 8362,10779 8430,10710
 	RW1;RW9 8571,11846 8489,11782 8438,11753 8322,11715 8203,11686
 	RW1; 8203,11686 8172,11679
@@ -1226,9 +1220,7 @@ Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW5; 6460,8688 6449,8807 6449,8845 6445
 	RW6;RW6 6060,8334 5925,8219
 	RW6;RW6 9400,14400 9375,14419 9279,14495 9197,14562 9048,14681
 	RW1;RW1 3521,9059 3422,9178 3382,9223 3314,9304 3127,9522
-	RW3;RW2 6460,8688 6477,8654
-	RW2;RW2 6477,8654 6523,8567
-	RW2;RW 6523,8567 6575,8469
+	RW3; 6460,8688 6477,8654
 	RW2;RW2 6025,12494 6090,12451 6173,12396
 asphaltiert	RW1; 6025,12494 6124,12694
 asphaltiert	RW1; 6164,12980 6157,12933 6150,12875 6124,12694 6025,12494
@@ -1597,8 +1589,8 @@ Busspur ist immer gültig	RW5; 8414,6995 8319,7084
 	RW1;RW1 9161,5535 8968,5554 8887,5564 8767,5571 8724,5570 8687,5554
 	RW2;RW1 8687,5554 8593,5491
 	RW1;RW1 8200,5510 8177,5583 8176,5610
-	RW1;RW1 8061,5939 7980,5944
-	RW1;RW1 8176,5610 8179,5802 8092,5858 8061,5939 8096,6009 8182,6064
+	RW1;RW1 8061,5949 7967,5951
+	RW1;RW1 8176,5610 8179,5802 8092,5858 8061,5949 8096,6009 8182,6064
 	RW1;RW1 6307,7893 6332,7721 6333,7708 6352,7523 6356,7479 6367,7356 6389,7196
 	RW6;RW6 6271,7733 6257,7646
 	RW6; 6256,7428 6291,7429 6289,7472 6272,7645 6257,7646
@@ -4845,3 +4837,6 @@ die letzten Meter nur Schutzstreifen	RW4; 18731,8577 18709,8423
 	RW6;RW6 7802,14250 7757,14318
 10km/h	RW6;RW6 13510,8138 13663,8011
 	RW6;RW6 12509,8318 12382,8292 12368,8356
+	RW3; 5582,6360 5701,6386
+	RW3; 5781,6404 5701,6386 5582,6360
+	RW6;RW6 7518,5753 7659,5735

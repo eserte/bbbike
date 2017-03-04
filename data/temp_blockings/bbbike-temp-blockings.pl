@@ -19184,13 +19184,13 @@ EOF
 userdel	q4::temp 13178,10623 13206,10651 13305,10789 13332,10832
 EOF
      },
-     { from  => $isodate2epoch->("2016-04-28 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-05-26 23:59:59"), # 1 Tag Nachlauf
+     { from  => $isodate2epoch->("2017-04-27 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-05-20 23:59:59"), # 1 Tag Nachlauf
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 4]],
-       text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 29.04.2016 bis 25.05.2016',
+       text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 28.04.2017 bis 19.05.2017',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2983315-2970764-48-neukoellner-maientage.html',
+       source_id => 'http://www.berlin.de/tickets/suche/detail.php?id=1372899',
        data  => <<EOF,
 userdel	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
 userdel	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
@@ -22810,13 +22810,13 @@ EOF
 userdel	2::inwork 48229,74776 48296,74641
 EOF
      },
-     { from  => $isodate2epoch->("2016-04-28 00:00:00"), # 1398636000, # 2014-04-28 00:00
-       until => $isodate2epoch->("2016-05-02 02:00:00"), # 1398988800, # 2014-05-02 02:00
+     { from  => $isodate2epoch->("2017-04-28 00:00:00"), # 1398636000, # 2014-04-28 00:00
+       until => $isodate2epoch->("2017-05-02 02:00:00"), # 1398988800, # 2014-05-02 02:00
        periodic => 1,
        recurrences => [['yearly', days => 30, months => 4]],
-       text  => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung und Kinderfest des DGB), am 1. Mai 2016',
+       text  => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung und Kinderfest des DGB), am 1. Mai 2017',
        type  => 'gesperrt',
-       source_id => 'http://www.berlin.de/tickets/suche/detail.php?id=1240577',
+       source_id => 'http://www.berlin.de/tickets/suche/detail.php?id=1372887',
        data  => <<EOF,
 userdel	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
 userdel	2::inwork 8573,12325 8540,12420
@@ -25758,6 +25758,14 @@ userdel auto	3 8348,12609 8354,12416 8391,12389
 userdel auto	3 8391,12389 8400,12417 8399,12610
 userdel auto	3 8391,12389 8354,12416 8348,12609
 userdel auto	3 8399,12610 8400,12417 8391,12389
+EOF
+     },
+     { from  => 1488649671, # 2017-03-04 18:47
+       until => 1493589600, # 2017-05-01 00:00
+       text  => 'Kaiserin-Augusta-Str.: Bauarbeiten, Einbahnstraße, bis Mai 2017',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q3::inwork; 8385,6034 8532,6015
 EOF
      },
     );
