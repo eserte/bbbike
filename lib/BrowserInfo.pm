@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2005,2011,2012,2013,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2005,2011,2012,2013,2014,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ use CGI;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = 1.58;
+$VERSION = 1.59;
 
 my $vert_scrollbar_space = 6; # most browsers need space for a vertical scrollbar
 
@@ -97,16 +97,18 @@ sub set_info {
 		if ($info =~ /^compatible$/i) {
 		    $i++;
 		    $info = $infos[$i];
-		    $self->{'user_agent_compatible'} =
-			$self->{'user_agent_name'} . "/" .
+		    if (defined $info) {
+			$self->{'user_agent_compatible'} =
+			    $self->{'user_agent_name'} . "/" .
 			    $self->{'user_agent_version'};
 
-		    if ($info =~ /^Konqueror/) {
-			($self->{'user_agent_name'}, $self->{'user_agent_version'}) =
-			    _get_browser_version($info);
-		    } elsif ($self->{'user_agent_name'} ne 'Opera') {
-			($self->{'user_agent_name'}, $self->{'user_agent_version'}) =
-			    _get_browser_version($info, " ");
+			if ($info =~ /^Konqueror/) {
+			    ($self->{'user_agent_name'}, $self->{'user_agent_version'}) =
+				_get_browser_version($info);
+			} elsif ($self->{'user_agent_name'} ne 'Opera') {
+			    ($self->{'user_agent_name'}, $self->{'user_agent_version'}) =
+				_get_browser_version($info, " ");
+			}
 		    }
 		    next;
 		}

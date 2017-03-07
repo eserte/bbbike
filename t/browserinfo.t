@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# Copyright (C) 2005,2012,2013,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2012,2013,2014,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -31,7 +31,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 30 }
+BEGIN { plan tests => 31 }
 
 my $use_fresh_uaprof_dir;
 GetOptions("fresh-uaprof-dir" => \$use_fresh_uaprof_dir)
@@ -140,5 +140,12 @@ SKIP: {
     my $bi = BrowserInfo->new;
     is $bi->{user_agent_name}, 'AppleWebKit', 'AppleWebKit detection (name)';
     is $bi->{user_agent_version}, '537.51', 'AppleWebKit detection (version)';
+}
+
+{
+    local $ENV{HTTP_USER_AGENT} = "Bad search_robot .*google.*  (compatible; )";
+    my @warnings; local $SIG{__WARN__} = sub { push @warnings, @_ };
+    my $bi = BrowserInfo->new;
+    is "@warnings", "";
 }
 __END__
