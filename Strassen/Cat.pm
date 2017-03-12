@@ -344,6 +344,21 @@ sub change_bnp_penalty_for_special_vehicle {
     }
 }
 
+# XXX Preliminary, for use in BBBikeAdvanced.pm
+# XXX should have Msg.pm support (English!)
+# For use in extended SW categories
+# Same structure as %category_attrib
+use vars qw(%symbol_attrib);
+%symbol_attrib = (
+		  "church"    => ["Kirche", "Kirchen"],
+		  "synagogue" => ["Synagoge", "Synagogen"],
+		  "mosque"    => ["Moschee", "Moscheen"],
+		  "monument"  => ["Denkmal, Mahnmal", "Denkmäler, Mahnmale"],
+		  "museum"    => ["Museum", "Museen"],
+		  "theater"   => ["Theater", "Theater"],
+		  "hospital"  => ["Krankenhaus", "Krankenhäuser"],
+		 );
+
 1;
 
 __END__

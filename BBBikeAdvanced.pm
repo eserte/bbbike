@@ -19,6 +19,7 @@ use Config;
 use strict;
 use BBBikeGlobalVars;
 use BBBikeProcUtil qw(double_fork);
+use Strassen::Cat ();
 
 use your qw($BBBike::Menubar::option_menu
 	    $BBBike::check_bbbike_temp_blockings::temp_blockings_pl
@@ -3627,6 +3628,9 @@ sub search_anything {
 			} @$matches;
 		}
 
+		my $symbol_rx = "(" . join("|", map { quotemeta } keys %Strassen::Cat::symbol_attrib) . ")";
+		$symbol_rx = qr{$symbol_rx};
+
 		my $last_name;
 		my $last_cat;
 		foreach my $match (@sorted_matches) {
@@ -3635,15 +3639,15 @@ sub search_anything {
 		    } else {
 			if ($sort eq 'cat' && $file !~ /^PLZ-Datenbank/) {
 			    (my $this_cat = $match->[Strassen::CAT()]) =~ s/^F://;
-			    $this_cat =~s/\|.*//;
+			    if ($this_cat =~ m{\|IMG:$symbol_rx$}) {
+				$this_cat = $1;
+			    } else {
+				$this_cat =~s/\|.*//;
+			    }
 			    if (!defined $last_cat || $last_cat ne $this_cat) {
-				my $cat_name = $category_attrib{$this_cat}->[ATTRIB_PLURAL];
-				if (!defined $cat_name) {
-				    $cat_name = $category_attrib{$this_cat}->[ATTRIB_SINGULAR];
-				    if (!defined $cat_name) {
-					$cat_name = $this_cat;
-				    }
-				}
+				my $cat_name = $category_attrib{$this_cat}->[ATTRIB_PLURAL] || $Strassen::Cat::symbol_attrib{$this_cat}->[ATTRIB_PLURAL] ||
+				               $category_attrib{$this_cat}->[ATTRIB_SINGULAR] || $Strassen::Cat::symbol_attrib{$this_cat}->[ATTRIB_SINGULAR] ||
+					       $this_cat;
 				$lb->insert("end", "  " . $cat_name);
 				$lb->itemconfigure("end", -foreground => "#000060")
 				    if $lb->Subwidget("scrolled")->can("itemconfigure");
