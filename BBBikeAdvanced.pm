@@ -3633,19 +3633,23 @@ sub search_anything {
 		    if (defined $last_name && $last_name eq $match->[0]) {
 			push @{ $inx2match[-1]->[3] }, $match->[1];
 		    } else {
-			my $this_cat = $match->[Strassen::CAT()];
-			if ($sort eq 'cat' &&
-			    $file !~ /^PLZ-Datenbank/ &&
-			    (!defined $last_cat || $last_cat ne $this_cat)) {
-			    my $cat_name = $category_attrib{$this_cat}->[ATTRIB_PLURAL];
-			    if (!defined $cat_name) {
-				$cat_name = $this_cat;
+			if ($sort eq 'cat' && $file !~ /^PLZ-Datenbank/) {
+			    (my $this_cat = $match->[Strassen::CAT()]) =~ s/^F://;
+			    $this_cat =~s/\|.*//;
+			    if (!defined $last_cat || $last_cat ne $this_cat) {
+				my $cat_name = $category_attrib{$this_cat}->[ATTRIB_PLURAL];
+				if (!defined $cat_name) {
+				    $cat_name = $category_attrib{$this_cat}->[ATTRIB_SINGULAR];
+				    if (!defined $cat_name) {
+					$cat_name = $this_cat;
+				    }
+				}
+				$lb->insert("end", "  " . $cat_name);
+				$lb->itemconfigure("end", -foreground => "#000060")
+				    if $lb->Subwidget("scrolled")->can("itemconfigure");
+				$last_cat = $this_cat;
+				push @inx2match, "";
 			    }
-			    $lb->insert("end", "  " . $cat_name);
-			    $lb->itemconfigure("end", -foreground => "#000060")
-				if $lb->Subwidget("scrolled")->can("itemconfigure");
-			    $last_cat = $this_cat;
-			    push @inx2match, "";
 			}
 			$lb->insert("end", $indent . $match->[0]);
 			push @inx2match, $match;
