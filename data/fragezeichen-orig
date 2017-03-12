@@ -22,8 +22,8 @@
 #: XXX Baumaﬂnahme 3.32 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
 #: source_id: 2147340987
-#: last_checked: 2016-12-25
-#: check_frequency: 30d
+#: last_checked: 2017-03-12
+#: check_frequency: 45d
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128,14640 12317,14535 12407,14470 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
 # REMOVED (wahrscheinlich passiert hier nichts weiter, Busspur existiert) --- #: last_checked: 2012-10-12 vvv --- #: next_check: 2012-10-17 vvv --- Kniprodestr./Am Friedrichshain: wird die andere Richtung auch Radspuren bekommen?	?; 12640,13814 12695,13864 12766,13942 12856,14042 12901,14093 --- #: next_check ^^^ --- #: last_checked ^^^
@@ -191,9 +191,9 @@ Wuhletalstr.: werden hier die Radspuren fortgef¸hrt?	?::projected 20895,17594 20
 #: osm_watch: way id="182782708" version="5"
 #: osm_watch: way id="168307255" version="5"
 #: osm_watch: way id="4687243" version="23"
-#: last_checked: 2016-12-09
-#: check_frequency: 60d
-Oderbruchstr./Hohenschˆnhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14658,14328 14464,14216 14358,14155 14298,14015 14261,13932 14218,13834
+#: last_checked: 2017-03-12
+#: check_frequency: 45d
+Oderbruchstr./Hohenschˆnhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14658,14328 14465,14210 14361,14145 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaﬂnahme 11.12 (Realisierung nach 2011)
 #: last_checked: 2017-02-25
@@ -358,7 +358,8 @@ Pasewalker Str.: Schutzstreifen werden erstellt, auﬂerdem eine Ampel an der Kreu
 #: next_check: 2018-05-01
 Triftstr.: Planung von Radverkehrsanlagen	?::projected 11940,22587 11959,22696 11979,22801 11995,22884 12023,23039 12027,23057 12039,23125 12058,23227 12067,23241
 # 
-#: next_check: 2017-05-01
+#: last_checked: 2017-03-12
+#: check_frequency: 60d
 Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823 11442,17664 11457,17585 11482,17459 11508,17315 11522,17248 11541,17153 11570,17028 11598,16878 11621,16749 11630,16623 11655,16486 11659,16457 11673,16367
 # 
 #: last_checked: 2016-12-09
@@ -386,7 +387,7 @@ Mariendorfer Allee: Projektplanung f¸r Schutzstreifen	?::projected 8579,2265 855
 #: osm_watch: way id="169753565" version="5"
 #: osm_watch: way id="111325187" version="13"
 #: osm_watch: way id="111325188" version="15"
-#: last_checked: 2017-03-04
+#: last_checked: 2017-03-06
 Boelckestr.: Planung f¸r Radverkehrsanlagen (vermutlich Schutzstreifen oder Radspuren)	?::projected 8594,8777 8601,8724 8616,8605 8660,8454 8670,8370 8666,8305 8632,8174 8620,8095 8623,8018 8627,7941 8642,7876 8686,7726 8690,7704 8704,7603 8706,7585 8715,7384 8716,7323
 #: by: ^^^
 # 
@@ -467,7 +468,7 @@ Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 
 # REMOVED (laut fritz nur bis Mi) --- #: XXX Wiesenweg (Lichtenberg) in beiden Richtungen zwischen Kietzer Weg und G¸rtelstraﬂe (Berlin)  G¸ltig ab: 01.08.2016 15:27  Vollsperrung, Baustelle	LMS-BR_r_LMS-BR_75088 --- Wiesenweg: ist die Sperrung auch f¸r Radfahrer relevant? bis wann geht die Sperrung?	?::inwork 15055,11505 15162,11458 15162,11458
 # REMOVED --- #: XXX Colditzstraﬂe (Tempelhof) in beiden Richtungen (Berlin)  G¸ltig ab: 31.07.2016 22:35  Br¸cke gesperrt, Gefahr durch Untersp¸lung der Fahrbahn	LMS-BR_r_LMS-BR_74687 --- Colditzstr.: ist die Sperrung auch f¸r Radfahrer relvant?	?::inwork 9863,5637 9893,5569
 # REMOVED (nicht relevant) --- #: XXX "Zwischen Mulack- und Weinmeisterstraﬂe Vollsperrung nach einem Wasserrohrbruch" --- Alte Schˆnhauser Str.: ist die Sperrung auch f¸r Radfahrer relvant?	?::inwork 10527,13257 10603,13395 10640,13471
-# REMOVED (nicht relevant) --- #: XXX Pappelallee/Stahlheimer Straﬂe (Prenzlauer Berg) in beiden Richtungen zwischen Stargarder Straﬂe und Wichertstraﬂe (Berlin)  G¸ltig ab: 29.07.2016 14:03  Vollsperrung, Absenkung der Fahrbahn	LMS-BR_r_LMS-BR_74872 --- Pappelallee: ist die Sperrung auch f¸r Radfahrer relvant?	?::inwork 11301,15668 11373,15789 11393,15823 11455,15916
+# REMOVED (nicht relevant) --- #: XXX Pappelallee/Stahlheimer Straﬂe (Prenzlauer Berg) in beiden Richtungen zwischen Stargarder Straﬂe und Wichertstraﬂe (Berlin)  G¸ltig ab: 29.07.2016 14:03  Vollsperrung, Absenkung der Fahrbahn	LMS-BR_r_LMS-BR_74872 --- Pappelallee: ist die Sperrung auch f¸r Radfahrer relvant?	?::inwork 11290,15669 11373,15789 11393,15823 11445,15920
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2016
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2016 (Grundst¸cksnummerierungen)
@@ -482,7 +483,7 @@ Am Carolinenhof: existiert die Straﬂe schon? Qualit‰t? Genaue Lage?	? -8113,4000
 #: XXX too late: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/33re.pdf/file?y=2016 (Grundst¸cksnummerierungen)
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4367
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2016 (Benennung)
-#: XXX fehlt bei Berlin.coords.data
+#: XXX fehlt bei Berlin.coords.data, PLZ=13156
 #: XXX Privatstraﬂe
 #: last_checked: 2016-09-23
 #: check_frequency: 180d
@@ -557,13 +558,13 @@ Wuhlewanderweg: wird hier ein Weg auf der ˆstlichen Uferseite errichtet?	?::proj
 #: XXX "Der gesamte Straﬂenzug von der Danziger Straﬂe bis zur Wisbyer Straﬂe soll bis Ende 2017 fertig gestellt werden."
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2016/pressemitteilung.544145.php
 #: XXX "bis voraussichtlich 2018"
-#: last_checked: 2016-12-25 vvv
-#: check_frequency: 30d vvv
-Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 10881,15047 11119,15385
-# REMOVED (realisiert) --- Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11119,15385 11183,15485
-Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11183,15485 11301,15668
-# REMOVED (realisiert) --- Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11301,15668 11373,15789 11393,15823 11455,15916
-Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11455,15916 11500,15988 11550,16068 11554,16075 11618,16183 11698,16311 11727,16358
+#: last_checked: 2017-03-12 vvv
+#: check_frequency: 45d vvv
+Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 10881,15047 11112,15387
+# REMOVED (realisiert) --- Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11112,15387 11176,15489
+Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11176,15489 11290,15669
+# REMOVED (realisiert) --- Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11290,15669 11373,15789 11393,15823 11445,15920
+Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11445,15920 11492,15993 11542,16070 11548,16079 11618,16183 11698,16311 11727,16358
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -571,8 +572,8 @@ Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11455,15916 11500,15
 #: XXX ab Fr¸hjahr 2017 f¸r vier Jahre
 #: XXX evtl. gibt es Einschr‰nkungen wegen der Bauarbeiten
 #: XXX qualitaet: -> Q0 vermutlich
-#: last_checked: 2016-07-10
-#: next_check: 2017-03-01
+#: last_checked: 2017-03-12
+#: check_frequency: 45d
 Schˆnstr.: Neubau geplant	?::projected 13391,16436 13630,16629 13789,16775 13861,16836 13998,16956 14136,17170
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/beschreibung_konigsweg.pdf
@@ -907,7 +908,9 @@ Rad- und Gehwegverbindung geplant: Qualit‰t? Name des Weges? Beleuchtet?	? 24833
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_03_0189_0324_online.pdf vvv
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_05_0473_0604_online.pdf (Grundst¸cksnummerierungen)
 #: XXX fehlen in Berlin.coords.data, beides Privatstraﬂe vvv
+#: XXX PLZ=12623
 Hermineweg: geplante Straﬂe, Qualit‰t, genaue Lage?	?::projected 24916,10853 24888,10860 24806,10880 24819,10924 24833,10970 24904,10965
+#: XXX PLZ=12623
 Malevkeweg: geplante Straﬂe, Qualit‰t, genaue Lage?	?::projected 24888,10860 24879,10921 24819,10924
 #: XXX ^^^
 #: by ^^^
@@ -1019,7 +1022,7 @@ Eichborndamm/Rotbuchenweg: wird hier ein Zebrastreifen angelegt?	?::projected 45
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3039&date=20130906 (Ampel ist angeordnet (2012-09), wird aber "nicht zeitnah" umgesetzt werden)
 #: osm_watch: node id="29778885" version="6"
-#: last_checked: 2016-06-29
+#: last_checked: 2017-03-12
 #: check_frequency: 150d
 Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fuﬂg‰nger-?) entstehen?	?::projected 13708,17453
 # 
@@ -1613,10 +1616,14 @@ Kurpromenade: wird die Fahrbahn hier erneuert?	?::projected -8862,6375 -8860,643
 # - Fragen nach genauen Routenverl‰ufen
 # - XXX_prog- und XXX_indoor-Eintr‰ge
 # 
+#: last_checked: 2017-03-12
+#: check_frequency: 21d
+Richard-Sorge-Str./Weidenweg: Bau von zwei Zebrastreifen oder einer Ampel	?::inwork 13467,12521 13463,12507 13476,12501
+# 
 #: osm_watch: note 914657 1
 Reglinstr.: ist dieser Abschnitt auch eine Spielstraﬂe?	? 7659,5735 7771,5723
 # 
-#: XXX laut fritz von 2017-02-27 bis 2017-03-10
+#: XXX laut fritz von 2017-02-27 bis 2017-03-10, laut vmz bis Ende M‰rz 2017
 #: source_id: 2147340962
 #: last_checked: 2017-02-27
 #: check_frequency: 3d
@@ -1661,9 +1668,6 @@ An der Wuhlheide: werden hier Schutzstreifen entstehen?	? 18492,6893 18404,6946 
 #: last_checked ^^^
 # 
 # REMOVED (Verbindung existiert nun) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6864 (unbeleuchtet) --- Gutspark Lichtenberg: existiert eine Verbindung f¸r Radfahrer? Qualit‰t?	? 15746,12967 15749,12995 15717,13001 15612,13069 15526,13056
-# 
-Anna-Ebermann-Str. [Wohngebiet]: Qualit‰t?	? 17753,16604 17759,16658 17863,16815
-# 
 # REMOVED (parallelen Weg eingetragen) ---- Bolle-Gel‰nde/Alte Meierei: Weg eintragen? Wie ist die Qualit‰t hier? Gibt es Bordsteine o.‰.?	? 6439,13163 6402,12975
 # 
 #: XXX wo genau?
@@ -1673,8 +1677,9 @@ Weserstr.: Fahrradstraﬂe wird eingerichtet	? 11888,9189 12005,9211 12074,9217 12
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/15-11-2016_mehr-fahrradstrassen-fuer-pankow.pdf
 #: XXX unklar, ob auch die Route Dunckerstr. - Kollwitzstr. ebenso Fahrradstraﬂe werden kˆnnte
+#: last_checked: 2017-03-12
 #: next_check: 2017-05-01
-Stargarder Str.: eventuell wird hier eine Fahrradstraﬂe eingerichtet	? 10953,15787 11086,15772 11158,15739 11301,15668 11418,15587 11502,15527 11595,15460 11682,15397 11852,15281
+Stargarder Str.: eventuell wird hier eine Fahrradstraﬂe eingerichtet	? 10953,15787 11086,15772 11158,15739 11290,15669 11418,15587 11502,15527 11595,15460 11682,15397 11852,15281
 # 
 (Tuttlinger Weg - Crailsheimer Str.): Privatstraﬂe existiert hier, Qualit‰t, f¸r alle befahrbar?	? 7046,4354 7071,4431 7127,4441
 # 
@@ -1708,8 +1713,7 @@ Hauptstr.: Qualit‰t, Einbahnstraﬂenregelung...	? 12205,22696 12205,22696 12230,2
 Gr¸nflieﬂer Gang: hat sich hier etwas nach den Bauarbeiten ge‰ndert/verbessert?	? 23675,5823 23675,5729 23675,5706 23681,5579
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/mdb-bapankow-tiefbauamt-g__hrener_raumer.pdf --- Gˆhrener Str.: wird dieser Abschnitt auch verkehrsberuhigt?	? 11505,15065 11505,15150
-# 
-R¸dickenstr.: Vorfahrtsregelung?	? 17233,17490 17264,17489 17257,17464
+# REMOVED (keine Vorfahrt) --- R¸dickenstr.: Vorfahrtsregelung?	? 17233,17490 17264,17489 17257,17464
 # 
 Schulstr. - Paul-Schneider-Str.: Unterf¸hrung auch f¸r Radfahrer benutzbar? Ist die Paul-Schneider-Str. ¸berquerbar?	? 6698,3336 6651,3288 6613,3320
 # 
@@ -1768,9 +1772,11 @@ Wege im Gutspark Neukladow: Wegf¸hrung, nachts beleuchtet, Qualit‰t?	? -6198,535
 #: XXX a) An den Parkb‰umen PLZ=14089
 #: XXX str_cont_ausnahme-Eintrag notwendig
 An den Parkb‰umen: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -6410,6549 -6381,6587 -6307,6686 -6288,6710 -6439,6818 -6536,6695
+#: XXX DPAG-Mitteilungsblatt meint "Parkrosenweg", PLZ=14089
 "An den Parkb‰umen" oder "Parkrosenweg": Qualit‰t? Genaue Lage? Existiert die Straﬂe schon? Wie lauten die Straﬂennamen?	? -6536,6695 -6381,6587
 #: XXX bei osm "An den Parkb‰umen", vermutlich falsch
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8647 (Einspruch gegen den Namen)
+#: XXX bei DPAG auch "Am Waldkiefernweg"
 Am Waldkiefernweg: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -6347,6503 -6271,6612 -6307,6686
 #: XXX b) Amberbaumallee PLZ=14089
 Amberbaumallee: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon? Hinterer Teil nur f¸r Fuﬂg‰nger?	? -6221,6411 -6347,6503 -6377,6523 -6410,6549 -6661,6743
@@ -1789,7 +1795,7 @@ Elsbeerenweg.: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -6378,5877 -
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_929_16.pdf
 #: osm_watch: way id="295627704" version="4"
-#: last_checked: 2017-02-28
+#: last_checked: 2017-03-12
 #: check_frequency: 60d
 Liebigstr.: Einrichtung einer Spielstraﬂe, wo genau?	? 14229,12311 14166,12323 14147,12344 14091,12355 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
 # 
@@ -1798,7 +1804,7 @@ Liebigstr.: Einrichtung einer Spielstraﬂe, wo genau?	? 14229,12311 14166,12323 1
 #: XXX Bauarbeiten zwischen Thaerstr. und H¸bnerstr.
 #: XXX NEW	Eldenaer Str. (Friedrichshain) In beiden Richtungen Kreuzung Proskauer Str. (Berlin)  G¸ltig ab: 24.11.2016 06:15  Baustelle, Vollsperrung (bis vsl. Ende 11/16)	2147340785
 #: XXX -> ist die Vollsperrung f¸r Radfahrer relevant? -> am Abend schon wieder aufgehoben?
-#: last_checked: 2017-02-28 vvv
+#: last_checked: 2017-03-12 vvv
 #: check_frequency: 30d
 Eldenaer Str.: in Richtung Osten sind noch Bauarbeiten, vermutlich werden die Radspuren danach markiert	?::inwork; 14096,12827 14355,12752
 #: check_frequency: 14d
@@ -1818,7 +1824,7 @@ Betriebsbahnhof Schˆneweide --> Adlershof-Johannisthal	X 18682,4714
 # 
 #: XXX pr¸fen!
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2016
-#: osm_watch: way id="21844065" version="9"
+#: osm_watch: way id="130002114" version="2"
 #: last_checked: 2017-03-04
 #: check_frequency: 90d
 Monumentenstr. 13d: wird hier ein verkehrsberuhigter Bereich ausgewiesen?	? 8014,9126 8009,9063
@@ -1913,8 +1919,8 @@ Potsdamer Chaussee/Engelsfelder Chaussee: entsteht hier eine Ampel?	? -5883,1086
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/21re.pdf/file?y=2016
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
 #: osm_watch: way id="269707365" version="3"
-#: last_checked: 2017-02-04
-#: next_check: 2017-03-01
+#: last_checked: 2017-03-12
+#: check_frequency: 45d
 Kollwitzstr.: hat die Einziehung von Straﬂenland hier Auswirkungen?	? 11229,14422 11285,14515 11317,14564
 # 
 # REMOVED (nein) --- #: last_checked: 2016-06-20 --- Rochstr.: bleibt die Barriere dauerhaft entfernt?	? 10418,12922 10535,13006 10571,13034
@@ -2058,7 +2064,7 @@ Mehlbeerenweg: Teilst¸ck wird eingezogen	? 11940,11982 11923,11881
 Humboldtring: R¸ckbau der Anschlussstelle	? -11386,-1313 -11395,-1331 -11461,-1424
 # 
 # REMOVED (aufgenommen) --- #: XXX NEW	Unter den Linden zwischen Schadowstraﬂe und Wilhelmstraﬂe Mitte (Berlin)  G¸ltig ab: 09.11.2015 08:00  Baustelle, gesperrt (bis Ende 11/15)	2147339441	 --- #: XXX laut fritz bis 23.11.2015 --- #: next_check: 2015-11-09 --- UdL: zwischen Schadowstr. und Wilhelmstr. gesperrt, auch f¸r Radfahrer relevant?	?; 9028,12307 8804,12280
-# REMOVED (aufgenommen) --- #: XXX NEW	Hohenschˆnhauser Str./Oderbruchstr. (Fennpfuhl): Baustelle, Fahrtrichtung gesperrt (bis Ende 11/15) Richtung Konrad-Wolf-Str. zwischen Landsberger Allee und Weiﬂenseer Weg, 09.11.2015 04:30 Uhr bis 30.11.2015 04:30 Uhr	IM_026700	 --- #: next_check: 2015-11-09 --- Hohenschˆnhausener Str./Oderbruchstr.: Sperrung f¸r Radfahrer relevant?	?; 14218,13834 14261,13932 14298,14015 14358,14155 14464,14216 14658,14328 14667,14336 14721,14379 14754,14406 14990,14537 15066,14579
+# REMOVED (aufgenommen) --- #: XXX NEW	Hohenschˆnhauser Str./Oderbruchstr. (Fennpfuhl): Baustelle, Fahrtrichtung gesperrt (bis Ende 11/15) Richtung Konrad-Wolf-Str. zwischen Landsberger Allee und Weiﬂenseer Weg, 09.11.2015 04:30 Uhr bis 30.11.2015 04:30 Uhr	IM_026700	 --- #: next_check: 2015-11-09 --- Hohenschˆnhausener Str./Oderbruchstr.: Sperrung f¸r Radfahrer relevant?	?; 14218,13834 14261,13932 14298,14015 14361,14145 14465,14210 14658,14328 14667,14336 14721,14379 14754,14406 14990,14537 15066,14579
 # REMOVED (kurzes St¸ck, umfahrbar, Ampel ist daf¸r ausgeschaltet) --- #: XXX NEW	Am Weidendamm (Mitte): Baustelle, Ein- und Ausfahrt Am Weidendamm gesperrt (bis Anfang 12/15) Kreuzung Friedrichstr., 09.11.2015 07:00 Uhr bis 05.12.2015 12:00 Uhr	IM_026703	 --- #: next_check: 2015-11-09 --- Weidendamm: Sperrung f¸r Radfahrer relevant?	? 9286,12886 9323,12895
 # REMOVED (keine ƒnderung) --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.390615.php --- #: last_checked: 2015-12-04 (keine Bauarbeiten zu erkennen) --- Neues Ufer: Straﬂenbauarbeiten, Einschr‰nkungen f¸r Radfahrer? Gibt es nach den Bauarbeiten ƒnderungen (z.B. Schutzstreifen Richtung Norden)?	? 4287,13658 4363,13336
 # REMOVED (aufgenommen + Notiz bei osm aufgemacht) --- #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.391294.php --- #: XXX Berlin.coords.data-Eintrag fehlt --- #: osm_watch: way id="23965298" version="6" --- #: next_check: 2015-11-12 --- Peter-Herzog-Weg: Benennung eines Wegs am Fort Hahneberg --- ist das hier? Werden Schilder existieren?	? -7606,12624 -7375,12577 -7294,12560
@@ -2228,7 +2234,7 @@ Fanny-Zobel-Str.	? 13975,10187 14049,10164
 # 
 #: by: http://gruene-xhain.de/news/single-view/artikel/vorfahrt-fuer-den-radverkehr.html
 #: by: http://www.berlin.de/imperia/md/content/bafriedrichshain-kreuzberg/abtstadtpg/bzbm-buero/bezirksamtssitzungen/02-07-13/beschluss_265_13.pdf?start&ts=1372853813&file=beschluss_265_13.pdf
-#: last_checked: 2016-12-16
+#: last_checked: 2017-03-06
 #: check_frequency: 120d
 #: priority: #C
 Bergmannstr./Heimstr.: wird hier die Vorfahrtsregelung zugunsten des Radwegs ge‰ndert?	? 9880,9233 9973,9232 10001,9234
@@ -2581,7 +2587,7 @@ Ortsumfahrung Seelow (B1/B167): mˆglicherweise eine Kraftfahrzeugstraﬂe?	? 76378
 Ortsumfahrung Seelow (B1): mˆglicherweise eine Kraftfahrzeugstraﬂe?	? 74874,15075 74705,14029 74434,13638
 Ortsumfahrung Seelow (B167): mˆglicherweise eine Kraftfahrzeugstraﬂe?	? 74874,15075 75139,14860 75139,14860 75310,14387 75361,13914 75522,13528 75762,13209 78240,11748
 # 
-# REMOVED (mittlerweile gibt es eine offizielle Radwegf¸hrung in beide Richtungen; wahrscheinlich sind die Verlustzeiten nicht mehr so hoch) --- #: XXX_prog: Verlustzeiten f¸r Wegf¸hrungen implementieren (‰hnlich wie 3) --- Pappelstr. -> Kastanienallee: hier verliert man durchaus 2 1/2 Minuten bei der ‹berquerung der Schˆnhauser!	? 11119,15385 10881,15047 10838,14962
+# REMOVED (mittlerweile gibt es eine offizielle Radwegf¸hrung in beide Richtungen; wahrscheinlich sind die Verlustzeiten nicht mehr so hoch) --- #: XXX_prog: Verlustzeiten f¸r Wegf¸hrungen implementieren (‰hnlich wie 3) --- Pappelstr. -> Kastanienallee: hier verliert man durchaus 2 1/2 Minuten bei der ‹berquerung der Schˆnhauser!	? 11112,15387 10881,15047 10838,14962
 # REMOVED (der Bahnhof ist immer noch da, Stand 2012-10) --- Raddusch: entf‰llt der Regionalbahnhof?	? 54769,-64897
 #: XXX_prog: Dr‰ngelgitter auch auf dem Mittelstreifen Sonnenallee. Kann zurzeit nicht dargestellt werden.
 Dr‰ngelgitter	? 15496,6314 15505,6342 15516,6357
@@ -2862,13 +2868,16 @@ Leiterstr. (Potsdam): existiert eine direkte Verbindung zur Templiner Str.? Qual
 Templiner Str. - Uferweg: existiert eine Verbindung f¸r Radfahrer? Qualit‰t? Ausgeschildert? Nachts beleuchtet? Gibt es hier eine Steigung?	? -13481,-2956 -13519,-2779 -13460,-2757
 # 
 #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_landeshauptstadtpotsdam_09-2014.pdf vvv
+#: XXX PLZ=14482
 Lotte-Laserstein-Str. (Potsdam): genaue Lage, Qualit‰t?	? -10220,-2445 -10305,-2525
+#: XXX PLZ=14482
 Jacques-Russ-Str. (Potsdam): genaue Lage, Qualit‰t?	? -10305,-2525 -10196,-2543
 #: by: ^^^
 # 
 #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_landeshauptstadtpotsdam_09-2014.pdf vvv
 #: XXX fehlt in Potsdam.coords.data, PLZ=14473
 Birkengrund (Potsdam): genaue Lage, Qualit‰t?	? -11013,-2957 -11119,-2963
+#: XXX fehlt in Potsdam.coords.data, PLZ=14473
 Alte G‰rtnerei (Potsdam): genaue Lage, Qualit‰t?	? -11119,-2963 -11099,-2859
 #: by: ^^^
 # 
@@ -3027,7 +3036,7 @@ Bjˆrnweg	?::projected 17314,15186 17323,15055
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6867
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_04_0325_0472_online.pdf
 #: XXX Bebauungsplan XXI-31a-1
-#: XXX fehlt in Berlin.coords.data, genaue Lage?
+#: XXX fehlt in Berlin.coords.data (PLZ: 12683), genaue Lage?
 #: last_checked: 2016-09-11
 #: check_frequency: 360d
 Hanoier Str.	?::projected 20730,11462 20723,11374
@@ -3136,7 +3145,9 @@ Johannes-Guthmann-Weg: neue Straﬂe entsteht, vermutlich hier? Qualit‰t?	?::inwor
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2016
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/29re.pdf/file?y=2016 (Grundst¸cksnummerierungen)
 #: XXX fehlen in Berlin.coords.data, PLZ=12619
+#: XXX laut osm schon teilweise fertig
 #: osm_watch: way id="387893757" version="1"
+#: osm_watch: way id="479144282" version="1"
 #: last_checked: 2016-06-04
 #: check_frequency: 270d
 Lili-Gr¸n-Weg und Lin-Jaldati-Weg: wo genau werden die Straﬂen liegen? Qualit‰t?	?::projected 23646,14007 23744,13960 23753,14050
@@ -3145,8 +3156,8 @@ Lili-Gr¸n-Weg und Lin-Jaldati-Weg: wo genau werden die Straﬂen liegen? Qualit‰t?
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036827265989/827265989/00127188/88-Anlagen/02/AnlageDS2043VIIWege.pdf vvv
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_04_0325_0472_online.pdf
 #: XXX Namensvorschl‰ge
-#: last_checked: 2016-07-27 vvv
-#: next_check: 2017-03-01 vvv
+#: last_checked: 2017-03-12 vvv
+#: check_frequency: 60d vvv
 Zum Hechtgraben: Benennung zu Malchower Teichweg	? 16163,18780 16158,19049 16104,19165
 Zum Hechtgraben, Verl‰ngerung: Benennung zu Malchower Teichweg	? 16074,19162 16078,19436 16081,19656 16082,19754 15617,19775
 #: note: an der Kreuzung Wiesenweg nur ein zweispuriger Track, Q2, NL
@@ -3176,7 +3187,7 @@ Ahornallee: Benennung?	? 17015,19287 17015,19587 17050,20298 17061,20451 17079,2
 #: XXX beim ersten Vorschlag "Florentinenweg" mit "n"
 Florentineweg: Benennung?	? 17050,20298 16728,20189 16633,20174
 Zehnrutenweg: Benennung?	? 20347,18667 20377,18753 20454,18778 20461,18796 20503,18903 20561,19084 20508,19100 20380,19206 20374,19250 20262,19367 20240,19393 19819,19602 19691,19748 19381,19830
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: by ^^^
 #: by ^^^
@@ -4842,14 +4853,20 @@ Margarethe-Gottliebe-Weg: Qualit‰t? Bereits ausgeschildert?	? -8337,8229 -8326,8
 #: by: http://www.villenpark-potsdam-gross-glienicke.de/grundstuecke/quartier-4.html#c869
 #: by: http://www.villenpark-potsdam-gross-glienicke.de/typo3temp/pics/1952d2504c.png
 #: XXX fehlen alle in Potsdam.coords.data
+#: XXX PLZ=14476
 Edith-Schollwer-Weg: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8320,8098 -8486,8126
+#: XXX PLZ=14476
 Maly-Delschaft-Weg: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8476,8181 -8486,8126 -8492,8078
+#: XXX PLZ=14476
 Ida-W¸st-Weg: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8408,8172 -8416,8114 -8423,8067
+#: XXX PLZ=14476
 K‰the-Haack-Weg: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8346,8160 -8356,8104 -8362,8061
+#: XXX PLZ=14476
 Rudi-Ball-Str.: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8362,8061 -8423,8067 -8492,8078 -8538,8085
 #: XXX stimmt die Schreibweise?
 Groﬂ Glienicker Heide: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8467,8612 -8499,8431
 Groﬂ Glienicker Heide: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8499,8431 -8487,8423 -8498,8335 -8538,8085 -8546,8057
+#: XXX PLZ=14476
 Leo-Bauer-Str.: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8560,8438 -8622,8074
 (Zugangsstraﬂe zur Waldsiedlung): Straﬂenschilder? Qualit‰t?	? -8666,8449 -8560,8438 -8499,8431
 # 

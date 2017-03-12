@@ -39,8 +39,8 @@ Siegfriedstr.: Tram auf Fahrbahn	CS; 16820,12339 16826,12408
 Siegfriedstr.: Tram auf Fahrbahn	CS 16826,12408 16857,12600 16859,12613 16860,12861
 Langhansstr.: Tram auf Fahrbahn	CS 13512,15909 13312,16027 13189,16089 12943,16214 12859,16255 12797,16285 12725,16321 12564,16399 12399,16479 12189,16578 12045,16574
 #: note: Haltestellencaps mit Radweg
-Pappelallee (Prenzlauer Berg): Tram auf Fahrbahn	CS 10881,15047 11119,15385 11183,15485 11301,15668 11373,15789 11393,15823
-Stahlheimer Str.: Tram auf Fahrbahn	CS 11393,15823 11455,15916 11500,15988 11550,16068 11554,16075 11618,16183 11698,16311 11727,16358
+Pappelallee (Prenzlauer Berg): Tram auf Fahrbahn	CS 10881,15047 11112,15387 11176,15489 11290,15669 11367,15793 11387,15827
+Stahlheimer Str.: Tram auf Fahrbahn	CS 11387,15827 11445,15920 11492,15993 11542,16070 11548,16079 11618,16183 11698,16311 11727,16358
 Ostendstr.: Tram auf Fahrbahn	CS 19024,5830 19273,5866 19388,5883 19403,5885 19650,5920 19681,5924 19958,5950
 (Straﬂenbahnwendestelle): Tram auf Fahrbahn	CS 12925,13373 13081,13457
 Hˆnower Str.: Tram auf Fahrbahn	CS; 24624,11374 24583,11537 24591,11587 24623,11684 24657,11762 24652,11794 24575,11932 24563,11980 24556,12056 24554,12100 24556,12181
@@ -74,7 +74,7 @@ Bleicheroder Str.: Tram auf der Fahrbahn	CS; 11818,19089 11762,19014 11727,19001
 #: note: siehe auch qualitaet_s (Mitte der Fahrbahn asphaltiert)
 Romain-Rolland-Str.: Tram auf der Fahrbahn	CS 12548,18503 12555,18375 12566,18275
 #: note: siehe auch qualitaet_s (Mitte der Fahrbahn asphaltiert)
-Berliner Str.: Tram auf der Fahrbahn	CS 12736,17998 12467,17814
+Berliner Str.: Tram auf der Fahrbahn	CS 12736,17998 12462,17814
 Treskowstr.: Straﬂenbahnwendeschleife	CS 24362,11954 24491,11972 24563,11980
 #: by: Rainer Mischke, srt vvv
 Niebergallstr.: Straﬂenbahnwendeschleife	CS; 23144,1439 23158,1379
@@ -89,8 +89,8 @@ Alexanderplatz - Wadzekstr.: Tram auf der Fahrbahn	CS 11139,13008 11191,13080 11
 Bernkasteler Str.: Tram auf der Fahrbahn	CS 14558,16907 14673,16895 14739,16891
 #: next_check_id: STERNDAMM-2016
 #: XXX Bleiben die Straﬂenbahngleise in Richtung S¸dwesten nach den Bauarbeiten bestehen?
-#: last_checked: 2016-08-20
-#: next_check: 2017-01-01
+#: last_checked: 2017-03-11
+#: check_frequency: 120d
 Sterndamm: inaktive Straﬂenbahngleise	CS; 17886,5587 17736,5441
 Invalidenstr.: Tram auf Fahrbahn	CS 9383,13986 9659,14043 9676,14046 9804,14071 9821,14073 9936,14085 10002,14092
 Veteranenstr.: Tram auf Fahrbahn	CS 10002,14092 10282,14212 10304,14254

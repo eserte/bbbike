@@ -909,7 +909,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 9726,15575
 	X 9441,16058
 	X 9514,16603
-	X 11455,15916
+	X 11445,15920
 	X 11941,15586
 	X 12077,14186
 	X 10197,16528
@@ -999,7 +999,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 9987,11690
 	X 3952,8980
 	X 4324,8899
-	X 11301,15668
+	X 11290,15669
 	X 12090,16199
 	X 11884,18063
 	X 11950,18529
@@ -1416,8 +1416,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 6102,4726
 	X 6212,4622
 	X 7236,5685
-	X 5414,5939
-	X 5345,5994
+	X 5377,5961
+	X 5335,5991
 	X 6104,6258
 #: note: Anforderungsampel
 	F 5397,5302
@@ -1520,7 +1520,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 8677,17154
 	X 9727,17804
 	X 11630,16623
-	F 11554,16075
+	F 11548,16079
 # REMOVED (keine Ampel (mehr?)) ---	X 12097,16263
 	X 12399,16479
 	X 12721,15807
@@ -1599,7 +1599,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 11535,14900
 #: note: Anforderungsampel für Radfahrer in der Relation Fröbelstr. - Raumerstr.
 	X 11776,15060
-	X 11119,15385
+	X 11112,15387
 #: note: Autos können nicht aus der Knaack in die Immanuelkirchstr., demnach eine Fußgängerampel
 	F 11498,14234
 	X 11821,14317
@@ -2787,6 +2787,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_prog eigentlich nur für Radfahrer Richtung Nordwesten relevant vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
 #: source_id: IM_023548 (bis Ende April 2016) vvv
+#: source_id: 2147341023
 #: XXX laut fritz könnte es früher fertig sein
 #: last_checked: 2017-01-28 vvv
 # REMOVED (Zweirichtungsradweg geht Richtung Norden weiter) --- F 17568,7753
@@ -2887,7 +2888,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: last_checked: 2017-03-03
 	F::inwork 14674,10811
 #: XXX Zebrastreifen außer Betrieb; wie wird es nach den Bauarbeiten aussehen?
-#: last_checked: 2017-03-03
+#: last_checked: 2017-03-11
 	F::inwork 14794,10844
 #: next_check_id ^^^
 # 
@@ -3033,7 +3034,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -12653,-1723
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
 #: next_check_id: KIEFHOLZ-2015 vvv
-#: last_checked: 2017-02-10 vvv
+#: last_checked: 2017-03-11 vvv
 #: check_frequency: 90d vvv
 	X::inwork 14151,8967
 	X::inwork 14363,8738

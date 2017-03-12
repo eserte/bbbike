@@ -2345,7 +2345,7 @@ EOF
        text  => 'Pappelallee (Prenzlauer Berg) in beiden Richtungen zwischen Raumerstr. und Schönhauser Allee Baustelle, Straße vollständig gesperrt (bis 07.08.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 11119,15385 10881,15047
+userdel	q4 11112,15387 10881,15047
 EOF
      },
      { from  => 1120341600, # 2005-07-03 00:00
@@ -6021,7 +6021,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003670',
        data  => <<EOF,
-userdel	1::inwork 11301,15668 11158,15739 11086,15772
+userdel	1::inwork 11290,15669 11158,15739 11086,15772
 EOF
      },
      { from  => 1166569200, # 2006-12-20 00:00
@@ -10094,7 +10094,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006787',
        data  => <<EOF,
-userdel	2::inwork 17902,17074 17839,16987 17796,16926 17638,16686 17504,16489 17446,16393
+userdel	2::inwork 17902,17074 17839,16987 17793,16922 17638,16686 17504,16489 17446,16393
 EOF
      },
      { from  => 1186524000, # 2007-08-08 00:00
@@ -12479,7 +12479,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009715',
        data  => <<EOF,
-userdel	1::inwork 11455,15916 11567,15842 11736,15727 11941,15586
+userdel	1::inwork 11445,15920 11567,15842 11736,15727 11941,15586
 EOF
      },
      { from  => 1219879654, # 2008-08-28 01:27
@@ -13471,7 +13471,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012654',
        data  => <<EOF,
-userdel	q4::inwork; 11301,15668 11373,15789 11393,15823 11455,15916
+userdel	q4::inwork; 11290,15669 11367,15793 11387,15827 11445,15920
 EOF
      },
      { from  => 1238347688, # 2009-03-29 19:28
@@ -14161,7 +14161,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012659',
        data  => <<EOF,
-userdel	q4::inwork; 11119,15385 10881,15047
+userdel	q4::inwork; 11112,15387 10881,15047
 EOF
      },
      { from  => 1242982031, # 
@@ -14643,7 +14643,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013096',
        data  => <<EOF,
-userdel	q4::inwork; 12467,17814 12736,17998
+userdel	q4::inwork; 12462,17814 12736,17998
 EOF
      },
      { from  => 1245658920, # 2009-06-22 10:22
@@ -17370,7 +17370,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_015288',
        data  => <<EOF,
-userdel	q4::inwork; 11727,16358 11698,16311 11618,16183 11554,16075 11550,16068 11500,15988 11455,15916 11393,15823 11373,15789 11301,15668 11183,15485 11119,15385 10881,15047
+userdel	q4::inwork; 11727,16358 11698,16311 11618,16183 11548,16079 11542,16070 11492,15993 11445,15920 11387,15827 11367,15793 11290,15669 11176,15489 11112,15387 10881,15047
 EOF
      },
      { from  => 1269113469, # 2010-03-20 20:31
@@ -19438,7 +19438,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_017476',
        data  => <<EOF,
-userdel	q4::inwork; 10953,15787 11086,15772 11158,15739 11301,15668
+userdel	q4::inwork; 10953,15787 11086,15772 11158,15739 11290,15669
 EOF
      },
      { from  => 1308974400, # 2011-06-25 06:00
@@ -20660,7 +20660,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_114025',
        data  => <<EOF,
-userdel	q4::inwork 12736,17998 12467,17814
+userdel	q4::inwork 12736,17998 12462,17814
 EOF
      },
      { from  => 1342208382, # 1342044000, # 2012-07-12 00:00 --- moved to handicap-s
@@ -21091,7 +21091,7 @@ userdel	q2::inwork 11436,14741 11271,14755
 userdel	q3::inwork 11271,14755 11187,14763
 #: XXX ^^^
 #: XXX ebenfalls Umweg notwendig
-userdel	q2::inwork 11293,14957 11271,14755 11255,14572
+userdel	q2::inwork 11293,14957 11271,14755 11247,14578
 EOF
      },
      { from  => undef, #
@@ -22356,7 +22356,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
        data  => <<EOF,
-userdel	2::xmas 11317,14564 11255,14572 11155,14554
+userdel	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
      { from  => $isodate2epoch->("2016-12-03 12:00:00"), # 1 Tag Vorlauf
@@ -22367,7 +22367,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
        data  => <<EOF,
-userdel	2::xmas 11317,14564 11255,14572 11155,14554
+userdel	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
      { from  => $isodate2epoch->("2016-12-10 12:00:00"), # 1 Tag Vorlauf
@@ -22378,7 +22378,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
        data  => <<EOF,
-userdel	2::xmas 11317,14564 11255,14572 11155,14554
+userdel	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
      { from  => $isodate2epoch->("2016-12-17 12:00:00"), # 1 Tag Vorlauf
@@ -22389,7 +22389,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
        data  => <<EOF,
-userdel	2::xmas 11317,14564 11255,14572 11155,14554
+userdel	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
      { from  => 1384642800, # 2013-11-17 00:00
@@ -24004,7 +24004,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-	q4::temp::clock 11155,14554 11255,14572 11317,14564
+	q4::temp::clock 11155,14554 11247,14578 11317,14564
 EOF
      },
      { from  => $isodate2epoch->("2015-04-03 10:00:00"), # 1 Tag Vorlauf
@@ -24782,7 +24782,7 @@ EOF
        source_id => 'IM_026700',
        data  => <<EOF,
 #: source_id: 2147339577
-userdel	q3::inwork; 14218,13834 14261,13932 14298,14015 14358,14155 14464,14216 14658,14328 14667,14336 14721,14379 14754,14406 14990,14537 15066,14579
+userdel	q3::inwork; 14218,13834 14261,13932 14298,14015 14361,14145 14465,14210 14658,14328 14667,14336 14721,14379 14754,14406 14990,14537 15066,14579
 EOF
      },
      { from  => $isodate2epoch->("2016-11-20 00:00:00"), # 1448146800, # 2015-11-22 00:00

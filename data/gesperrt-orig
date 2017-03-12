@@ -150,7 +150,7 @@ Schuckertdamm	1 741,14827 1022,14898 1056,14906 1112,14918 1200,14943 1343,14972
 Am Kleinen Wannsee	1 -5499,1349 -5488,1289 -5541,1214 -5749,1146
 Oberhofer Platz	1 5491,1955 5474,1940 5452,1940 5431,1956 5393,2053 5376,2097 5406,2110 5434,2122 5452,2077 5489,1981 5491,1955
 Scheelestr.	1 5741,1231 5697,1098 5556,984 5488,943 5421,902 5342,845
-Tibertius-Brücke: Kfz-Straße	2 5681,5743 5574,5819 5414,5939 5345,5994 4937,6205
+Tibertius-Brücke: Kfz-Straße	2 5681,5743 5574,5819 5377,5961 5335,5991 4937,6205
 An der Schillingbrücke	1 12061,11406 12060,11323
 An der Schillingbrücke	1 12025,11346 12061,11406
 Schulze-Delitzsch-Platz	1 11155,11750 11060,11753 11024,11789
@@ -570,8 +570,8 @@ Asternplatz	1 3775,4632 3710,4728 3707,4752 3716,4764 3740,4766 3754,4755 3815,4
 Kammgasse	1 1992,24354 2213,24393 2264,24414 2302,24451 2325,24486
 #: by: anonymous
 #: confirmed_by: srt
-Herbert-Tschäpe-Str.	1 14358,14155 14481,14095 14510,14104 14717,14188
-Herbert-Tschäpe-Str.	1 14464,14216 14510,14104
+Herbert-Tschäpe-Str.	1 14361,14145 14481,14095 14510,14104 14717,14188
+Herbert-Tschäpe-Str.	1 14465,14210 14510,14104
 Strausberger Platz	1 11976,12595 12005,12619 12050,12616 12099,12580 12114,12546 12083,12518 12028,12519 11988,12546 11976,12595
 Magirusstr.	1 8199,6583 7985,6598
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf
@@ -1765,7 +1765,7 @@ Waltersdorfer Chaussee: Mittelstreifen	3nocross 18009,-193 17946,-100 17879,-3
 Neuköllner Str.: Mittelstreifen	3nocross 16698,1392 16643,1460 16459,1680 16450,1691
 Neuköllner Str.: Mittelstreifen	3nocross 15980,2318 15804,2512 15736,2593
 Schorlemerallee: Mittelstreifen	3nocross 3306,6453 3350,6467 3452,6491
-Berliner Str.: Straßenbahntrasse	3nocross 12396,17514 12436,17682 12467,17814
+Berliner Str.: Straßenbahntrasse	3nocross 12392,17517 12429,17685 12462,17814
 Daumstr.: Mittelstreifen	3nocross -1821,16327 -1816,16111 -1815,15976
 Zossener Str.: Straßenbahntrasse	3nocross 22811,15753 22883,15740 23080,15700
 Landsberger Chaussee: Straßenbahntrasse	3nocross 22771,16194 22974,16139 23162,16095
@@ -2753,7 +2753,7 @@ Voltairestr.: Baustelle, Fahrtrichtung gesperrt	1s:q3 11329,12497 11209,12430
 #: check_frequency: 120d
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt	1s:q3 5192,10234 5196,10398
 # 
-#: last_checked: 2017-03-04
+#: last_checked: 2017-03-06
 #: check_frequency: 14d
 Werkstraße: Zufahrt zur DB-Werkstraße ist wegen Bauarbeiten gesperrt	2::inwork 14043,10928 14107,10911
 # 
@@ -2787,7 +2787,7 @@ Karl-Marx-Platz: Bauarbeiten, Einbahnstraße gilt nun auch für Radfahrer	1s:q3 12
 # 
 #: source_id: 2147340790
 #: source_id: 2147340922
-#: last_checked: 2017-03-03
+#: last_checked: 2017-03-11
 #: check_frequency: 14d
 # REMOVED --- : valid: -20170228
 Puschkinallee: Fahrtrichtung gesperrt	1::inwork 13795,9941 13890,9894
@@ -2802,7 +2802,7 @@ Puschkinallee: Fahrtrichtung gesperrt	1::inwork 13795,9941 13890,9894
 #: source_id: 2147340715 vvv
 #: osm_watch: way id="42091230" version="18"
 #: osm_watch: way id="292424611" version="4"
-#: osm_watch: way id="52960100" version="8"
+#: osm_watch: way id="52960100" version="9"
 #: last_checked: 2016-11-04 vvv
 #: next_check: 2017-04-29 vvv
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q3 8732,14098 8654,14194
@@ -2870,7 +2870,7 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,
 #: osm_watch: way id="309901369" version="4"
 #: source_id: 2147339783
 #: last_checked: 2017-02-04
-#: next_check: 2017-03-31
+#: next_check: 2017-03-10
 Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7741,14560 7518,14689
 # 
 # REMOVED --- Treptower Park: Bauarbeiten, Weg noch nicht fertiggestellt	2::inwork 14318,9688 14371,9726 14443,9731
@@ -3063,7 +3063,7 @@ Kirchdorfer Str.: Straße fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9
 #: check_frequency: 360d
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 # 
-#: last_checked: 2017-01-22
+#: last_checked: 2017-03-11
 #: check_frequency: 120d
 am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14463,10212
 # 
@@ -3308,7 +3308,7 @@ Danziger Str.: Straßenbahnschienen	3nocross 13100,13803 13166,13707 13225,13620
 Pintschstr.	1 13339,13196 13435,12973
 Landsberger Allee	3nocross 12382,13097 12585,13118 12711,13150
 Landsberger Allee: Straßenbahntrasse	3nocross 13635,13605 13702,13634 13854,13701
-Landsberger Allee: Straßenbahntrasse	3nocross 13164,13374 13235,13414 13330,13468
+Landsberger Allee: Straßenbahntrasse	3nocross 13164,13374 13246,13420 13330,13468
 # REMOVED (mitlerweile (ca. 2012) existiert für Fußgänger und Autofahrer eine Kreuzungsmöglichkeit) --- #: by: jörg (schalkau): --- #: confirmed_by: srt --- Landsberger Allee	3nocross 17254,14451 17533,14484 17848,14523
 Landsberger Allee	3nocross 21475,15705 21584,15753 21709,15808
 Landsberger Allee	3nocross 19852,15201 19987,15280 20260,15434

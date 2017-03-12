@@ -123,7 +123,7 @@ Schuckertdamm	1 741,14827 1022,14898 1056,14906 1112,14918 1200,14943 1343,14972
 Am Kleinen Wannsee	1 -5499,1349 -5488,1289 -5541,1214 -5749,1146
 Oberhofer Platz	1 5491,1955 5474,1940 5452,1940 5431,1956 5393,2053 5376,2097 5406,2110 5434,2122 5452,2077 5489,1981 5491,1955
 Scheelestr.	1 5741,1231 5697,1098 5556,984 5488,943 5421,902 5342,845
-Tibertius-Brücke: Kfz-Straße	2 5681,5743 5574,5819 5414,5939 5345,5994 4937,6205
+Tibertius-Brücke: Kfz-Straße	2 5681,5743 5574,5819 5377,5961 5335,5991 4937,6205
 An der Schillingbrücke	1 12061,11406 12060,11323
 An der Schillingbrücke	1 12025,11346 12061,11406
 Schulze-Delitzsch-Platz	1 11155,11750 11060,11753 11024,11789
@@ -411,8 +411,8 @@ Begonienplatz	1 4193,4897 4132,4988
 Begonienplatz	1 4173,5013 4231,4922
 Asternplatz	1 3775,4632 3710,4728 3707,4752 3716,4764 3740,4766 3754,4755 3815,4657
 Kammgasse	1 1992,24354 2213,24393 2264,24414 2302,24451 2325,24486
-Herbert-Tschäpe-Str.	1 14358,14155 14481,14095 14510,14104 14717,14188
-Herbert-Tschäpe-Str.	1 14464,14216 14510,14104
+Herbert-Tschäpe-Str.	1 14361,14145 14481,14095 14510,14104 14717,14188
+Herbert-Tschäpe-Str.	1 14465,14210 14510,14104
 Strausberger Platz	1 11976,12595 12005,12619 12050,12616 12099,12580 12114,12546 12083,12518 12028,12519 11988,12546 11976,12595
 Magirusstr.	1 8199,6583 7985,6598
 Egelingzeile	1 7980,6403 8194,6384
@@ -1348,8 +1348,8 @@ Straßenbahntrasse	3nocross::ignrte 13530,13014 13487,13115 13434,13234
 Petersburger Str. -> Ebelingstr.: Straßenbahntrasse	3::igndisp 13434,13234 13487,13115 13610,13169
 Ebelingstr. -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13610,13169 13487,13115 13530,13014
 Straßenbahntrasse	3nocross::ignrte 13330,13468 13381,13354 13393,13326 13434,13234
-Petersburger Str. -> An der Brauerei: Straßenbahntrasse	3::igndisp 13393,13326 13381,13354 13283,13311
-An der Brauerei -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13283,13311 13381,13354 13330,13468
+Petersburger Str. -> An der Brauerei: Straßenbahntrasse	3::igndisp 13393,13326 13381,13354 13284,13311
+An der Brauerei -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13284,13311 13381,13354 13330,13468
 Petersburger Str. -> Heidenfeldstr.: Straßenbahntrasse	3::igndisp 13381,13354 13393,13326 13433,13346
 Heidenfeldstr. -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13433,13346 13393,13326 13434,13234
 Bahntrasse	3nocross::ignrte 16635,2796 16677,2856 16786,2989
@@ -2058,9 +2058,9 @@ Neuköllner Str. -> Primelweg: Mittelstreifen	3::igndisp 15736,2593 15804,2512 15
 Primelweg -> Neuköllner Str.: Mittelstreifen	3::igndisp 15862,2588 15804,2512 15980,2318
 Mittelstreifen	3nocross::ignrte 3306,6453 3350,6467 3452,6491
 Albrecht-Thaer-Weg -> Schorlemerallee: Mittelstreifen	3::igndisp 3449,6863 3350,6467 3452,6491
-Straßenbahntrasse	3nocross::ignrte 12396,17514 12436,17682 12467,17814
-Str. 56 -> Tino-Schwierzina-Str.: Straßenbahntrasse	3::igndisp 12587,17603 12436,17682 12396,17514
-Tino-Schwierzina-Str. -> Str. 56: Straßenbahntrasse	3::igndisp 12467,17814 12436,17682 12587,17603
+Straßenbahntrasse	3nocross::ignrte 12392,17517 12429,17685 12462,17814
+Str. 56 -> Tino-Schwierzina-Str.: Straßenbahntrasse	3::igndisp 12587,17603 12429,17685 12392,17517
+Tino-Schwierzina-Str. -> Str. 56: Straßenbahntrasse	3::igndisp 12462,17814 12429,17685 12587,17603
 Mittelstreifen	3nocross::ignrte -1821,16327 -1816,16111 -1815,15976
 Daumstr. -> Uferweg: Mittelstreifen	3::igndisp -1815,15976 -1816,16111 -1942,16105
 Uferweg -> Daumstr.: Mittelstreifen	3::igndisp -1942,16105 -1816,16111 -1821,16327
@@ -3015,9 +3015,9 @@ Ernst-Zinna-Weg -> Landsberger Allee: Landsberger Allee	3::igndisp 12564,13216 1
 Straßenbahntrasse	3nocross::ignrte 13635,13605 13702,13634 13854,13701
 Landsberger Allee -> Otto-Ostrowski-Str.: Straßenbahntrasse	3::igndisp 13854,13701 13702,13634 13769,13487
 Otto-Ostrowski-Str. -> Landsberger Allee: Straßenbahntrasse	3::igndisp 13769,13487 13702,13634 13635,13605
-Straßenbahntrasse	3nocross::ignrte 13164,13374 13235,13414 13330,13468
-Landsberger Allee -> An der Brauerei: Straßenbahntrasse	3::igndisp 13330,13468 13235,13414 13283,13311
-An der Brauerei -> Landsberger Allee: Straßenbahntrasse	3::igndisp 13283,13311 13235,13414 13164,13374
+Straßenbahntrasse	3nocross::ignrte 13164,13374 13246,13420 13330,13468
+Landsberger Allee -> An der Brauerei: Straßenbahntrasse	3::igndisp 13330,13468 13246,13420 13284,13311
+An der Brauerei -> Landsberger Allee: Straßenbahntrasse	3::igndisp 13284,13311 13246,13420 13164,13374
 Landsberger Allee	3nocross::ignrte 21475,15705 21584,15753 21709,15808
 Landsberger Allee -> Schönagelstr.: Landsberger Allee	3::igndisp 21475,15705 21584,15753 21602,15908
 Schönagelstr. -> Landsberger Allee: Landsberger Allee	3::igndisp 21602,15908 21584,15753 21709,15808
