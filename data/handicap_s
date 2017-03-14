@@ -4,8 +4,11 @@
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
 Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 13173,11788 13066,11854
+Gubener Str.: Bauarbeiten an der Kreuzung Grünberger/Wedekindstr., Ausweichen auf Gehweg	q2::inwork 13406,11896 13352,12003
+Gubener Str.: Bauarbeiten an der Kreuzung Grünberger/Wedekindstr., Ausweichen auf Gehweg	q3::inwork 13339,12029 13352,12003
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
+Kiefholzstr.: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 13819,9333 13715,9455
 Schloßplatz: Fahrbahn gesperrt, Radfahrer können auf den Bürgersteig ausweichen	q3::inwork 10285,12306 10357,12356
 Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 Kommandantenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10330,11422 10136,11529
@@ -2519,6 +2522,7 @@ Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtun
 Zillestr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 3807,11859 3976,11869
 Bouchéstr.: Baustelle, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13190,9139 13298,9252
 Mengerzeile: Baustelle, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13176,9302 13100,9210
+Heidelberger Str.: Baustelle, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13489,9199 13420,9259 13357,9313
 Karl-Marx-Platz: Bauarbeiten, Einbahnstraße gilt nun auch für Radfahrer: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 12969,7610 13100,7626
 Chausseestr.: Baustelle, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 8732,14098 8654,14194
 Chausseestr.: Baustelle, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 8654,14194 8607,14253 8527,14352 8442,14456

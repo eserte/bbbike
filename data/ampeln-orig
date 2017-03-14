@@ -2597,11 +2597,11 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
 #: XXX laut fritz bis 05.05.2016
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
-#: last_checked: 2017-03-03
+#: last_checked: 2017-03-14
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2017-03-03 vvv
+#: last_checked: 2017-03-14 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="3"
 	X::inwork 9121,12514
@@ -2618,7 +2618,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #
 #: XXX temporäre Ampel vvv
 #: by: http://www.dafmap.de/d/berlin.html?id=3481&mt=0&zoom=17
-#: last_checked: 2017-02-14 vvv
+#: last_checked: 2017-03-14 vvv
 #: check_frequency: 30d vvv
 	F::inwork 9270,12086
 #: check_frequency ^^^
@@ -2895,6 +2895,11 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: Anforderungsampel für Radfahrer aus/in Richtung Priesterweg
 #: note: Ampel für Radfahrer auf den Prellerweg in Richtung Südosten nicht relevant
 	X 7171,5831
+#: next_check_id: HEIDELBERGER-2017
+#: XXX wann werden die Ampeln wieder abgebaut?
+#: note eigentlich zwei Ampeln, aber zusammengeschaltet
+#: last_checked: 2017-03-13
+	F::inwork 13489,9199
 # 
 ################################################################################
 #: note: Potsdam vvv
