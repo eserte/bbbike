@@ -22616,7 +22616,7 @@ EOF
        data  => <<EOF,
 #: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
 #: osm_watch: way id="43141418" version="7" brb
-#: last_checked: 2016-11-26
+#: last_checked: 2017-03-18
 userdel	2::inwork -12583,-1552 -12485,-1482
 # REMOVED --- userdel	2::inwork -12485,-1482 -12474,-1559 -12596,-1701
 EOF
@@ -24544,17 +24544,18 @@ EOF
 EOF
      },
      { from  => 1443650400, # 2015-10-01 00:00
-       until => $isodate2epoch->("2017-03-31 12:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
-       text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Klosterbuschweg und Finkenkruger Weg, stadteinwärts gesperrt, bis voraussichtlich Ende März 2017',
+       until => $isodate2epoch->("2017-11-01 12:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
+       text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Klosterbuschweg und Hackbuschstr., stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich November 2017',
        type  => 'handicap',
-       source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367070.php',
+       source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php',
        data  => <<EOF,
 #: next_check_id: SEEGEFELDERWEG-2016
 #: source_id: IM_026411
 #: source_id: 2147339562
 #: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3
-#: next_check: 2017-04-01
-userdel	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129 -6507,15007
+#: next_check: 2017-11-01
+# REMOVED --- userdel	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
+userdel	q3::inwork; -6861,15129 -6507,15007
 EOF
      },
      { from  => 1442700000, # 2015-09-20 00:00
@@ -25766,6 +25767,15 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q3::inwork; 8385,6034 8532,6015
+EOF
+     },
+     { from  => 1488236400, # 2017-02-28 00:00
+       until => $isodate2epoch->("2017-04-26 18:00:00"), # 1493589599, # 2017-04-30 23:59
+       text  => 'Kantstr.: Richtung Budapester Str. ab Joachimsthaler Str. gesperrt, bis Ende April 2017 ',
+       type  => 'handicap',
+       source_id => '2147341048',
+       data  => <<EOF,
+userdel	q4::inwork; 5488,10978 5613,10963 5652,11004
 EOF
      },
     );

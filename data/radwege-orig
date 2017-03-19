@@ -1009,8 +1009,8 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5542,11075 5459,11135
 #: XXX früher: Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5
 #: XXX bis Ende 2016, laut rbbtext bis 16.12.2016, laut VMZ nun bis Ende 2017
 #: source_id: 2147339533
-#: last_checked: 2017-02-04
-#: next_check: 2017-03-01
+#: last_checked: 2017-03-18
+#: check_frequency: 14d
 	RW0;RW0  5459,11135 5258,11285 5166,11343 5091,11406 5085,11413 4922,11600
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
@@ -2544,9 +2544,15 @@ Busspur für Radfahrer freigegeben	RW1; 13104,2143 13023,2093 13010,2085
 	RW;RW 13886,2653 13915,2673 13951,2697 13999,2727
 	RW;RW1 13999,2727 14203,2859 14212,2865
 	RW1;RW1 14212,2865 14392,2979
+#: XXX Markierung von Schutzstreifen und Fahrbahnverbreiterung, Rückbau des alten Radweges vvv
+#: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017) vvv
+#: next_check: 2017-05-01 vvv
 # REMOVED (ja, ist so) --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4688 (abgesperrt) (vorher: Radwege mit Schäden) --- #: XXX vor Ort anschauen!
 vorhandener Radweg ist wegen Schäden abgesperrt	RW0; 13501,2413 13640,2229 13661,2207 13700,2173 13835,2099 14120,1991 14231,1952 14252,1945 14523,1847
 Radwege mit Schäden	RW1; 14523,1847 14252,1945 14231,1952 14120,1991 13835,2099 13700,2173 13661,2207 13640,2229 13501,2413
+#: next_check ^^^
+#: by ^^^
+#: XXX ^^^
 # REMOVED ---	RW1;RW1 14523,1847 14621,1798 14676,1777
 	RW6;RW6 10612,1925 10593,1875 10578,1840
 #: note: Zweirichtungsradweg für Radfahrer in Richtung Mozartstr.
@@ -4592,8 +4598,7 @@ Tempo 10	RW6;RW6 13559,12779 13470,12990
 #: by: http://www.tagesspiegel.de/berlin/stadtentwicklung-zwillingsturm-soll-2016-in-der-city-west-eroeffnen/7416454.html (geplante Eröffnung Mitte 2016)
 #: source_id: LMS-BR_r_LMS-BR_121
 #: XXX laut fritz bis zum 26. April 2017, laut vmz mittlerweile entfernt
-#: last_checked: 2017-02-04
-#: next_check: 2017-03-03
+#: last_checked: 2017-03-18
 #	RW3; 5488,10978 5613,10963 5652,11004
 ##: note: teilweise vor dem Hotel unterbrochen (wegen Ladezone?)
 #	RW3; 5652,11004 5613,10963 5488,10978
@@ -4722,7 +4727,7 @@ asphaltiert	RW1; 25010,4807 24936,4838 24798,4895 24681,4943 24070,5272 23942,53
 asphaltiert	RW1; 15066,14579 15174,14638
 Gehwegplatten und Asphalt im Wechsel	RW1; 15174,14638 15272,14691
 asphaltiert	RW1; 15272,14691 15174,14638 15066,14579
-	RW6;RW6 12918,8232 12805,8194 12779,8188 12797,8168
+	RW6;RW6 12873,8217 12805,8194 12779,8188 12797,8168
 	RW3; 1368,-1 1345,184
 	RW6;RW6 13410,11447 13427,11431 13473,11456
 Gehweg für Radfahrer frei	RW1; 22162,1067 22092,999 22044,1018
@@ -4839,4 +4844,8 @@ die letzten Meter nur Schutzstreifen	RW4; 18731,8577 18709,8423
 	RW3; 5582,6360 5701,6386
 	RW3; 5781,6404 5701,6386 5582,6360
 	RW6;RW6 7518,5753 7659,5735
+#: by: osm
+	RW6;RW6 7659,5735 7771,5723
+#: by: osm
+	RW6;RW6 7785,5722 7817,5719
 	RW6;RW6 14357,11148 14400,11261

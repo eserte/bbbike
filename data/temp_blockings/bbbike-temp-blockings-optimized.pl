@@ -1334,7 +1334,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'from' => undef,
          'id' => 2454,
          'recurring' => 1,
-         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Winter: 18.00 bis 6.00 Uhr',
+         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Sommer: 21.00 bis 6.00 Uhr',
          'until' => undef
        },
        {
@@ -1530,7 +1530,7 @@ userdel	2::night 17671,13132 17684,13133
        {
          'data' => '#: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
 #: osm_watch: way id="43141418" version="7" brb
-#: last_checked: 2016-11-26
+#: last_checked: 2017-03-18
 userdel	2::inwork -12583,-1552 -12485,-1482
 # REMOVED --- userdel	2::inwork -12485,-1482 -12474,-1559 -12596,-1701
 ',
@@ -1848,15 +1848,16 @@ userdel	2::inwork 8089,12190 8214,12205
 #: source_id: IM_026411
 #: source_id: 2147339562
 #: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3
-#: next_check: 2017-04-01
-userdel	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129 -6507,15007
+#: next_check: 2017-11-01
+# REMOVED --- userdel	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
+userdel	q3::inwork; -6861,15129 -6507,15007
 ',
          'from' => 1443650400,
          'id' => 2740,
-         'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367070.php',
-         'text' => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Klosterbuschweg und Finkenkruger Weg, stadteinwärts gesperrt, bis voraussichtlich Ende März 2017',
+         'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php',
+         'text' => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Klosterbuschweg und Hackbuschstr., stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich November 2017',
          'type' => 'handicap',
-         'until' => 1490954400
+         'until' => 1509534000
        },
        undef,
        undef,
@@ -2114,6 +2115,16 @@ userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,
          'text' => 'Kaiserin-Augusta-Str.: Bauarbeiten, Einbahnstraße, bis Mai 2017',
          'type' => 'handicap',
          'until' => 1493589600
+       },
+       {
+         'data' => 'userdel	q4::inwork; 5488,10978 5613,10963 5652,11004
+',
+         'from' => 1488236400,
+         'id' => 2851,
+         'source_id' => '2147341048',
+         'text' => 'Kantstr.: Richtung Budapester Str. ab Joachimsthaler Str. gesperrt, bis Ende April 2017 ',
+         'type' => 'handicap',
+         'until' => 1493222400
        }
      
 );
