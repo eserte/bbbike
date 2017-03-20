@@ -10144,7 +10144,12 @@ sub plot_layer {
 	status_message("Kein freier Layer mehr vorhanden", "err");
 	return;
     }
-    fix_stack_order($abk);
+    my $stack_order = delete $args{'stack_order'};
+    if ($stack_order) {
+	set_in_stack($abk, @$stack_order);
+    } else {
+	fix_stack_order($abk);
+    }
     if ($type eq 'p') {
 	$p_draw{$abk} = 1;
 	if (defined $file) {
@@ -20391,6 +20396,8 @@ sub add_to_stack {
 	}
 	$i++;
     }
+
+    warn "WARNING: add_to_stack: cannot handle '$how $other_abk' for '$abk'\n";
     push @normal_stack_order, $abk, "$abk-fg";
 }
 
@@ -20398,6 +20405,7 @@ sub add_to_stack {
 sub set_in_stack {
     my($abk, $how, $other_abk) = @_;
     remove_from_stack($abk);
+    special_normal($abk, 1);
     add_to_stack($abk, $how, $other_abk);
 }
 

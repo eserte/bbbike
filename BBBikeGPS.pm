@@ -869,7 +869,10 @@ sub BBBikeGPS::do_draw_gpsman_data {
 					  'category_color.Rte' => ['#000000'],
 					});
 	$s_speed->write($real_speed_outfile);
-	my $abk = main::plot_layer('str',$speed_outfile);
+	my $abk = main::plot_layer('str',$speed_outfile,
+				   #stack_order=>[below=>'s-NN'],
+				   stack_order=>[above=>'sBAB-fg'],
+				  );
 	$plotted_layer_info->{"str-$abk"}++ if defined $abk;
 	Hooks::get_hooks("after_new_layer")->execute;
     }
