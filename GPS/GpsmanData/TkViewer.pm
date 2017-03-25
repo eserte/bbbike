@@ -14,7 +14,7 @@
 package GPS::GpsmanData::TkViewer;
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.06';
+$VERSION = '1.07';
 
 use FindBin;
 
@@ -310,6 +310,7 @@ sub gps_data_viewer {
 
 	require GPS::GpsmanData::Stats;
 	require BBBikeYAML;
+	require Encode;
 	my %stats_args;
 	if ($stats_args_cb) {
 	    %stats_args = $stats_args_cb->();
@@ -319,7 +320,9 @@ sub gps_data_viewer {
 	$stats->run_stats;
 	my $txt = $w->Subwidget('Txt');
 	$txt->delete('1.0', 'end');
-	$txt->insert('end', BBBikeYAML::Dump($stats->human_readable));
+	my $yaml = BBBikeYAML::Dump($stats->human_readable); # YAML::XS is documented to emit utf8 *octets*
+	$yaml = Encode::decode_utf8($yaml);
+	$txt->insert('end', $yaml);
     }
 
     sub update_existing {
