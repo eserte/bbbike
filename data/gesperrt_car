@@ -55,13 +55,13 @@ Fasanenstr.	1 5192,10234 5196,10398
 Naumannstr. - Kolonnenstr.	3 7713,8600 7709,8777 7642,8815
 Naumannstr. N - H	3 7707,8915 7709,8777 7713,8600
 zum Mariannenplatz	2 11950,11157 11921,11185
-Herbartstr.	1 2340,11056 2372,10941 2476,10790 2498,10665
+Herbartstr.	1 2340,11056 2357,10962 2461,10796 2493,10675
 Breite Str. Pankow	1 10602,18382 10680,18380
 Gormannstr.	1 10463,13747 10445,13675 10406,13543 10390,13493
 Reichenberger Str.	1 11291,10438 11393,10390
 Weserstr.	1 12074,9217 12005,9211 11888,9189
 Friedenstr.	1 12325,13148 12382,13097
-Fasanenstr.	1 5223,9810 5209,9978
+Fasanenstr.	1 5219,9808 5203,9840 5194,9985
 Kopfstr.	1 12478,7878 12327,7847 12220,7822 12176,7811 12041,7788
 Hagelberger - Yorck	3nocross::ignrte 8595,9495 8679,9544 8777,9601
 Yorckstr. -> Hagelberger Str.: Hagelberger - Yorck	3::igndisp 8777,9601 8679,9544 8774,9534
@@ -1076,13 +1076,13 @@ Mittelstreifen	3nocross::ignrte 6144,7677 6082,7594 5955,7420
 Hauptstr. -> Wielandstr.: Mittelstreifen	3::igndisp 6144,7677 6082,7594 6081,7227
 Wielandstr. -> Hauptstr.: Mittelstreifen	3::igndisp 6081,7227 6082,7594 5955,7420
 Fehmarner Str.	1 6709,14782 6528,15000
-Mittelstreifen	3nocross::ignrte 1960,11426 1834,11408 1625,11380
-Kaiserdamm -> Soorstr.: Mittelstreifen	3::igndisp 1960,11426 1834,11408 1861,11284
-Kaiserdamm -> Soorstr.: Mittelstreifen	3::igndisp 1625,11380 1834,11408 1799,11517
-Soorstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 1861,11284 1834,11408 1625,11380
-Soorstr. -> Soorstr.: Mittelstreifen	3::igndisp 1861,11284 1834,11408 1799,11517
-Soorstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 1799,11517 1834,11408 1960,11426
-Soorstr. -> Soorstr.: Mittelstreifen	3::igndisp 1799,11517 1834,11408 1861,11284
+Mittelstreifen	3nocross::ignrte 1960,11426 1821,11408 1625,11380
+Kaiserdamm -> Soorstr.: Mittelstreifen	3::igndisp 1960,11426 1821,11408 1861,11284
+Kaiserdamm -> Soorstr.: Mittelstreifen	3::igndisp 1625,11380 1821,11408 1781,11510
+Soorstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 1861,11284 1821,11408 1625,11380
+Soorstr. -> Soorstr.: Mittelstreifen	3::igndisp 1861,11284 1821,11408 1781,11510
+Soorstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 1781,11510 1821,11408 1960,11426
+Soorstr. -> Soorstr.: Mittelstreifen	3::igndisp 1781,11510 1821,11408 1861,11284
 Paplitzer Str.	1 11027,-2448 11073,-2037
 Steinträgerweg: Poller	3 12948,2484 12963,2365 12987,2220
 Steinträgerweg: Poller	3 12987,2220 12963,2365 12948,2484
@@ -1400,7 +1400,6 @@ Georg-Hermann-Allee -> Hermann-Kasack-Str.: Straßenbahntrasse, Drängelgitter für
 Hermann-Kasack-Str. -> Georg-Hermann-Allee: Straßenbahntrasse, Drängelgitter für Radfahrer/Fußgänger	3::igndisp -13618,839 -13432,782 -13429,1069
 Kutscherweg: Poller	3 -13620,-131 -13700,-106 -13775,-85
 Kutscherweg: Poller	3 -13775,-85 -13700,-106 -13620,-131
-Dresdner Str.: Einfahrt vom Oranienplatz gesperrt	3 11159,10769 11189,10831 11162,10919
 Sebastianstr.: Einfahrt gesperrt	3 11162,10919 11113,10943 10937,11033
 Sebastianstr.: Einfahrt gesperrt	3 11162,10919 11113,10943 11049,10816
 Sebastianstr.: Einfahrt gesperrt	3 11162,10919 11113,10943 11150,11030
@@ -1547,9 +1546,9 @@ Hedwigstr. -> Am Faulen See: Straßenbahntrasse	3::igndisp 16505,16096 16520,1620
 Am Faulen See -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16551,16307 16520,16200 16656,16157
 Am Faulen See -> Hedwigstr.: Straßenbahntrasse	3::igndisp 16551,16307 16520,16200 16505,16096
 Kohlfurter Str.: provisorisch, Anlieger frei	1:Anlieger 11464,10102 11274,10184 11094,10261
-Friedbergstr.:	3 2812,10753 2766,10750 2679,10931
-Friedbergstr.:	3 2812,10753 2766,10750 2697,10669
-Friedbergstr.:	3 2812,10753 2766,10750 2845,10840
+Friedbergstr.:	3 2793,10752 2766,10750 2679,10931
+Friedbergstr.:	3 2793,10752 2766,10750 2685,10672
+Friedbergstr.:	3 2793,10752 2766,10750 2845,10840
 Wilhelm-Staab-Str. (Potsdam)	1 -13001,-1329 -12988,-1265 -12981,-1222 -12961,-1105
 Bäckerstr. (Potsdam)	1 -13314,-1226 -13287,-1231 -13203,-1246
 Brandenburger Str. (Potsdam)	1 -12801,-960 -12883,-976
@@ -1863,3 +1862,4 @@ Königsmarckstr.	1 1971,7738 2088,7723
 Pücklerstr.	1 2576,7026 2688,7067
 Friedrichsruher Str.	1 3196,9193 3333,9026
 Vesaliusstr.	1 11818,19089 11763,19191 11748,19235 11698,19489
+Leistikowstr.	1 1188,11861 1133,11664

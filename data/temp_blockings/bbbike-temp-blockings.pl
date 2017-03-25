@@ -133,7 +133,7 @@ EOF
        until => $isodate2epoch->("2016-04-17 23:59:59"),
        periodic => 1, # erster Termin im Jahr
        recurrences => [["yearly", days => 11, months => 4]],
-       recurrence_prewarn_days => 21, # weil der Termin ggfs. erst sehr spät feststeht
+       recurrence_prewarn_days => 14, # weil der Termin ggfs. erst sehr spät feststeht
        source_id => 'http://nareyka.events/news-events/mehr/artikel/44-fruehlingsfest-rheinstrasse.html',
        text  => "Rheinstraßenfest in der Rheinstraße zwischen Kaisereiche und Walther-Schreiber-Platz, am 16.04.2016 und 17.04.2016",
        data  => <<EOF,
@@ -6244,13 +6244,13 @@ EOF
 userdel	1::inwork 4355,12001 4337,11721
 EOF
      },
-     { from  => $isodate2epoch->("2016-05-06 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-05-08 23:59:59"),
+     { from  => $isodate2epoch->("2017-05-12 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-05-14 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 4]],
-       text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (7.5.2016 und 8.5.2016)',
+       text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (13.5.2017 und 14.5.2017)',
        type  => 'gesperrt',
-       source_id => 'http://www.popula.de/veranstaltung/12105833_primavera-2016-akazienstrasse-berlin',
+       source_id => 'http://www.ms-event-agentur.com/primavera%202013.html?date=20170325',
        data  => <<EOF,
 userdel	2::temp 7107,9030 7044,9163 7022,9211 7006,9292
 userdel	2::temp 6945,9142 7044,9163
@@ -6273,14 +6273,14 @@ EOF
 userdel	2::inwork 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589
 EOF
      },
-     { from  => $isodate2epoch->("2016-09-30 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-10-02 23:59:59"),
+     { from  => $isodate2epoch->("2017-09-29 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-10-01 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 30, months => 9]],
-       text  => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 01.10.2016 bis 02.10.2016',
+       text  => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 30.09.2017 bis 01.10.2017',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.ms-event-agentur.com/seite22.html?date=20160903
+#: by: http://www.ms-event-agentur.com/seite22.html?date=20170325
 	2::temp 7006,9292 7022,9211 7044,9163 7107,9030
 	2::temp 6945,9142 7044,9163
 	2::temp 6975,8944 7107,9030 7308,9163
@@ -8036,7 +8036,7 @@ EOF
        text  => 'Reichsstr. (Charlottenburg) in beiden Richtungen zwischen Theodor-Heuss-Platz und Steubenplatz Veranstaltung, Straße vollständig gesperrt (27. und 28. August 2011)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 653,12109 738,12025 818,11954 881,11893 1033,11754 1133,11664 1215,11587 1220,11583 1308,11506 1403,11428
+userdel	2::temp 653,12109 738,12025 818,11954 881,11893 1033,11754 1133,11664 1200,11600 1220,11583 1308,11506 1403,11428
 EOF
      },
      { from  => undef, # 
@@ -19171,7 +19171,7 @@ EOF
        text  => 'Seifenkistenrennen auf dem Kaiserdamm zwischen Theodor-Heuss-Platz und Königin-Elisabeth-Straße, 10./11.09.2011',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::temp 1574,11379 1625,11380 1834,11408 1960,11426 2095,11440
+userdel	1::temp 1574,11379 1625,11380 1821,11408 1960,11426 2095,11440
 EOF
      },
      { from  => $isodate2epoch->("2016-07-02 10:00:00"), # 1 Tag Vorlauf
@@ -21292,13 +21292,13 @@ EOF
 userdel	2::inwork -739,6838 -927,6888
 EOF
      },
-     { from  => $isodate2epoch->("2016-04-21 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-04-24 23:59:59"),
+     { from  => $isodate2epoch->("2017-04-21 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-04-23 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 21, months => 4]],
-       text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 22.4.2016 bis 24.4.2016',
+       text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 21.4.2017 bis 23.4.2017',
        type  => 'gesperrt',
-       source_id => 'http://www.weinfeste-in-deutschland.de/winzerfest-in-berlin-koepenick.html',
+       source_id => 'http://www.winzerfest-köpenick.de/',
        data  => <<EOF,
 userdel	2::temp 22138,4642 22111,4562 22093,4499
 userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
@@ -21325,7 +21325,7 @@ userdel	1::inwork -12653,-1723 -12733,-1703 -12758,-1689 -12794,-1652
 EOF
      },
      { from  => 1366740818, # 2013-04-23 20:13
-       until => $isodate2epoch->("2017-04-22 17:00:00"), # 1427727600, # 2015-03-30 17:00
+       until => 1490460786, # $isodate2epoch->("2017-04-22 17:00:00"), # 1427727600, # 2015-03-30 17:00
        text  => 'Fasanenstr. zwischen Hardenbergstr. und Kantstr. Baustelle, Fahrbahn gesperrt (bis Ende April 2017) ',
        type  => 'handicap',
        source_id => 'IM_019747',
@@ -21420,13 +21420,13 @@ userdel auto	3 7823,12120 7816,12150 7822,12201 7875,12363
 	3 8327,12174 8344,12221 8391,12389
 EOF
      },
-     { from  => $isodate2epoch->("2016-05-20 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-05-22 20:00:00"),
+     { from  => $isodate2epoch->("2017-05-26 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-05-28 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 4, months => 5]],
-       text  => 'Schöneberger Mai- und Spargelfest am 21. und 22. Mai 2016 in der Freiherr-vom-Stein-Straße',
+       text  => 'Schöneberger Mai- und Spargelfest am 27. und 28. Mai 2017 in der Freiherr-vom-Stein-Straße',
        type  => 'gesperrt',
-       source_id => 'http://www.freizeittipp.com/pages/veranstaltungen/detail-1792910-Sch%C3%B6neberger-Mai-und-Spargelfest-2016-Berlin.php',
+       source_id => 'http://www.ms-event-agentur.com/seite18.html?date=20170325',
        data  => <<EOF,
 userdel	2::temp 6230,8602 6313,8638 6454,8653
 EOF
@@ -21737,8 +21737,8 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-	q4::temp:clock 5066,9645 5174,9708 5253,9754
-	q4::temp:clock 5155,9786 5174,9708
+	q4::temp:clock 5066,9645 5174,9708 5248,9750
+	q4::temp:clock 5139,9777 5174,9708
 EOF
      },
      { from  => undef, #
@@ -23277,13 +23277,13 @@ EOF
 userdel	q4::inwork; 16514,15092 16430,15168
 EOF
      },
-     { from  => $isodate2epoch->("2016-08-18 14:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-08-21 23:59:59"),
+     { from  => $isodate2epoch->("2017-08-17 14:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-08-20 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 18, months => 8]],
-       text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 19.8.2016 bis 21.8.2016',
+       text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 18.8.2017 bis 20.8.2017',
        type  => 'gesperrt',
-       source_id => 'http://www.weinfeste-in-deutschland.de/winzerfest-in-berlin-koepenick.html',
+       source_id => 'http://www.winzerfest-köpenick.de/',
        data  => <<EOF,
 userdel	2::temp 22138,4642 22111,4562 22093,4499
 userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
@@ -23518,7 +23518,7 @@ EOF
        text  => 'Sächsische Straße: in Höhe Darmstädter Straße Fahrbahn gesperrt, bis 31.10.2014 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q3::inwork 4638,10162 4623,10066 4609,9949
+userdel	q3::inwork 4638,10162 4623,10066 4605,9955
 EOF
      },
      { from  => $isodate2epoch->("2016-08-21 00:00:00"), # 1412021931, # 2014-09-29 22:18
@@ -25492,7 +25492,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-03-03 vvv
+#: last_checked: 2017-03-21 vvv
 #: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -25554,7 +25554,7 @@ EOF
        data  => <<EOF,
 #: XXX Wann sind die Bauarbeiten beendet? Wird die Qualität danach besser sein? vvv
 #: osm_watch: way id="136814135" version="15" vvv
-#: last_checked: 2017-02-04 vvv
+#: last_checked: 2017-03-25 vvv
 #: check_frequency: 60d vvv
 userdel	2::inwork 3332,12742 3396,12741 3358,12718
 userdel	2::inwork 3396,12741 3476,12735 3582,12704 3654,12672 3763,12624 3837,12618
@@ -25594,7 +25594,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.522495.php',
        data  => <<EOF,
 #: source_id: 2147340654
-userdel	q4::inwork; 5013,10039 5026,10151 5047,10381
+userdel	q4::inwork; 5007,10041 5017,10150 5047,10381
 EOF
      },
      { from  => 1478635433, # 1479078000, # 2016-11-14 00:00
@@ -25603,7 +25603,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.522495.php',
        data  => <<EOF,
-userdel	q4::inwork; 4976,9670 4982,9729 4993,9843 5013,10039
+userdel	q4::inwork; 4976,9670 4980,9729 4987,9850 5007,10041
 EOF
      },
      { from  => undef, # 

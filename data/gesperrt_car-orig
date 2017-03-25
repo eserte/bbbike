@@ -55,14 +55,14 @@ zum Mariannenplatz	2 11950,11157 11921,11185
 # REMOVED (gemeldet von andk, 2013-02-08) --- Großgörschen/Kulmer	3 7882,9490 7771,9479 7609,9463
 # REMOVED (gemeldet von andk, 2013-02-08) --- Großgörschen/Kulmer	3 7609,9463 7771,9479 7829,9723
 # REMOVED (gemeldet von andk, 2013-02-08) --- Großgörschen/Kulmer	3 7771,9389 7771,9479 7829,9723
-Herbartstr.	1 2340,11056 2372,10941 2476,10790 2498,10665
+Herbartstr.	1 2340,11056 2357,10962 2461,10796 2493,10675
 Breite Str. Pankow	1 10602,18382 10680,18380
 Gormannstr.	1 10463,13747 10445,13675 10406,13543 10390,13493
 Reichenberger Str.	1 11291,10438 11393,10390
 Weserstr.	1 12074,9217 12005,9211 11888,9189
 # XXX oder komplett gesperrt?
 Friedenstr.	1 12325,13148 12382,13097
-Fasanenstr.	1 5223,9810 5209,9978
+Fasanenstr.	1 5219,9808 5203,9840 5194,9985
 Kopfstr.	1 12478,7878 12327,7847 12220,7822 12176,7811 12041,7788
 Hagelberger - Yorck	3nocross 8595,9495 8679,9544 8777,9601
 Hagelberger - Mehringdamm	3nocross 9334,9670 9280,9476 9248,9350
@@ -581,7 +581,7 @@ Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14609,15921 14597,15970 14595,159
 Lenther Steig	1 1022,14898 1037,14814 1042,14721
 Hauptstr./Wielandstr.: Mittelstreifen	3nocross 6144,7677 6082,7594 5955,7420
 Fehmarner Str.	1 6709,14782 6528,15000
-Kaiserdamm: Mittelstreifen	3nocross 1960,11426 1834,11408 1625,11380
+Kaiserdamm: Mittelstreifen	3nocross 1960,11426 1821,11408 1625,11380
 #: by: Roland Mohrbacher vvv
 Paplitzer Str.	1 11027,-2448 11073,-2037
 Steinträgerweg: Poller	3 * 12963,2365 *
@@ -800,7 +800,7 @@ Handjerystr./Schmiljanstr.	3 5494,6960 5574,7018 5569,7022
 # REMOVED (glaube ich) --- Straßenbahntrasse	3nocross -13456,500 -13436,595 -13433,693
 Straßenbahntrasse, Drängelgitter für Radfahrer/Fußgänger	3nocross -13433,693 -13432,782 -13429,1069
 Kutscherweg: Poller	3 * -13700,-106 *
-Dresdner Str.: Einfahrt vom Oranienplatz gesperrt	3 * 11189,10831 11162,10919
+# REMOVED (wurde aufgehoben) --- Dresdner Str.: Einfahrt vom Oranienplatz gesperrt	3 * 11189,10831 11162,10919
 #: note: könnte auch die andere Richtung gesperrt sein
 Sebastianstr.: Einfahrt gesperrt	3 11162,10919 11113,10943 *
 Rennbahnstr. -> Bernkastler	3 14528,16910 14558,16907 14673,16895
@@ -890,7 +890,7 @@ Pasedagplatz: nur für Straßenbahnen	2 14170,17249 14150,17255 14099,17195
 Suermondtstr: Straßenbahntrasse	3nocross 16416,16236 16476,16216 16520,16200 16656,16157
 Kohlfurter Str.: provisorisch, Anlieger frei	1:Anlieger 11464,10102 11274,10184 11094,10261
 #: by: http://www.flickr.com/photos/79200003@N05/8050610558/in/pool-gwb
-Friedbergstr.:	3 2812,10753 2766,10750 *
+Friedbergstr.:	3 2793,10752 2766,10750 *
 # 
 #: by: http://www.potsdam.de/cms/beitrag/10093238/1463075 vvv
 Wilhelm-Staab-Str. (Potsdam)	1 -13001,-1329 -12988,-1265 -12981,-1222 -12961,-1105
@@ -1137,3 +1137,4 @@ Friedrichsruher Str.	1 3196,9193 3333,9026
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-sitzung-fahrrat-am-01-09-15.pdf
 #: by: osm
 Vesaliusstr.	1 11818,19089 11763,19191 11748,19235 11698,19489
+Leistikowstr.	1 1188,11861 1133,11664

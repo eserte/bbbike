@@ -8,8 +8,7 @@ Gubener Str.: Bauarbeiten an der Kreuzung Gr¸nberger/Wedekindstr., Ausweichen au
 Gubener Str.: Bauarbeiten an der Kreuzung Gr¸nberger/Wedekindstr., Ausweichen auf Gehweg	q3::inwork 13339,12029 13352,12003
 Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
-Kiefholzstr.: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 13819,9333 13715,9455
-Schloﬂplatz: Fahrbahn gesperrt, Radfahrer kˆnnen auf den B¸rgersteig ausweichen	q3::inwork 10285,12306 10357,12356
+Schloﬂplatz: Engstelle wegen Bauarbeiten	q3::inwork 10285,12306 10357,12356
 Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 Kommandantenstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10330,11422 10136,11529
 Beuthstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10201,11631 10235,11610 10330,11422
@@ -25,11 +24,13 @@ Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9882,12259 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
+Werdersche Rosenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9882,12259 9961,12273
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9898,12161 9882,12259
 Behrenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9743,12239 9798,12267
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 Wilmsstr.: Bauarbeiten an der Baerwaldstr.	q2::inwork 10480,9949 10627,9912
 Stallschreiberstr., Alexandrinenstr.: Einbahnstraﬂenregelung	q4::inwork; 10794,10927 10824,11010 10678,11172 10593,11120 10501,11056
+Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 Dieselstr., Umfahrung: Fuﬂg‰nger, kurvig, eng	q2::inwork 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112 14429,8074 14471,8046
 Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung S¸den auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12753,8187 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785 12969,7610
 Bautzener Str.: Bauarbeiten an der Groﬂgˆrschenstr., auf Gehweg ausweichen	q4::inwork 8186,9380 8185,9338
@@ -234,7 +235,8 @@ Virchowstr. (Volkspark Friedrichshain): Fuﬂg‰nger	q1 12876,13440 12826,13526 128
 (Hohenzollerndamm - Friedrichsruher Str.): enger Gehweg	q2 3379,8969 3333,9026
 Gillweg: enger Gehweg	q2 2585,9653 2484,9671 2394,9714
 Leon-Jessel-Platz: Fuﬂg‰nger	q2 4700,9179 4735,9171 4755,9154
-Nikolsburger Platz: Fuﬂg‰nger, Bordsteine	q3 5374,9619 5307,9664
+Nikolsburger Platz: Fuﬂg‰nger	q2 5374,9619 5291,9675
+Nikolsburger Platz: Fuﬂg‰nger	q2 5291,9675 5297,9579
 zur Sybelstr.: Bordsteine	q4 3712,10566 3744,10577
 (Waitzstr. - Lewishamstr.): Bordsteine	q4 3764,10580 3744,10577
 Rosa-Luxemburg-Str.: Fuﬂg‰nger, Bordsteine	q3 10695,12933 10685,12966
@@ -1142,7 +1144,8 @@ Park am Nordbahnhof: Fuﬂg‰nger	q1 9147,14151 9070,14058
 Park am Nordbahnhof: Fuﬂg‰nger	q1 8913,14485 8868,14442 8825,14401
 Park am Nordbahnhof: Fuﬂg‰nger	q1 9175,14193 9144,14169 9081,14232 8868,14442
 Park am Nordbahnhof: Fuﬂg‰nger	q1 9119,14255 9081,14232 8992,14176
-(an der Panke - Mauerweg): einige Fuﬂg‰nger	q1 7872,14510 7889,14519 7939,14447 7989,14478 8050,14558 8103,14582 8232,14689
+(an der Panke - Mauerweg): einige Fuﬂg‰nger	q1 7872,14510 7889,14519 7939,14447
+(an der Panke - Mauerweg): einige Fuﬂg‰nger	q1 7926,14439 7939,14447 7989,14478 8050,14558 8103,14582 8232,14689
 Bordstein	q3 -2452,17408 -2451,17421
 Neuenahrer Weg: Bodenschwellen, kaum umfahrbar	q2 -2540,18105 -2728,18149
 Fuldaer Weg: enger Pfad	q3 -2392,17870 -2401,17824
