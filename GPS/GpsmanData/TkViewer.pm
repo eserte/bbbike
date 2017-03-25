@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2015,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2015,2016,2017 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,7 +14,7 @@
 package GPS::GpsmanData::TkViewer;
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.05';
+$VERSION = '1.06';
 
 use FindBin;
 
@@ -290,11 +290,23 @@ sub gps_data_viewer {
 	# YAML is easier to read with fixed font
 	my $txt = $w->Scrolled('ROText', -width => 42, -font => 'courier 10', -scrollbars => 'osoe')->pack(qw(-fill both -expand 1));
 	$w->Advertise(Txt => $txt);
+	$w->{Accepted_Accuracy} = 0;
+	{
+	    my $f = $w->Frame->pack;
+	    $f->Label(-text => 'Accept. Acc')->pack(qw(-side left));
+	    for my $def (['!', 0], ['~', 1], ['~~', 2]) {
+		my($label, $val) = @$def;
+		$f->Radiobutton(-value => $val, -text => $label, -variable => \$w->{Accepted_Accuracy}, -command => sub { $w->update_existing })->pack(qw(-side left));
+	    }
+	}
 	$w->Button(-text => 'Close', -command => sub { $w->destroy })->pack;
     }
 
     sub update {
 	my($w, $gps, $stats_args_cb) = @_;
+
+	$w->{Last_GPS} = $gps;
+	$w->{Last_Stats_Args_Cb} = $stats_args_cb;
 
 	require GPS::GpsmanData::Stats;
 	require BBBikeYAML;
@@ -302,11 +314,23 @@ sub gps_data_viewer {
 	if ($stats_args_cb) {
 	    %stats_args = $stats_args_cb->();
 	}
+	$stats_args{accuracy} = $w->{Accepted_Accuracy};
 	my $stats = GPS::GpsmanData::Stats->new($gps, %stats_args);
 	$stats->run_stats;
 	my $txt = $w->Subwidget('Txt');
 	$txt->delete('1.0', 'end');
 	$txt->insert('end', BBBikeYAML::Dump($stats->human_readable));
+    }
+
+    sub update_existing {
+	my($w) = @_;
+	my $last_gps = $w->{Last_GPS};
+	if (!$last_gps) {
+	    $w->messageBox(-message => "Unexpected: no previous gps object stored", -type => 'OK');
+	    return;
+	}
+	my $last_stats_args_cb = $w->{Last_Stats_Args_Cb}; # may be missing
+	$w->update($last_gps, $last_stats_args_cb);
     }
 }
 
