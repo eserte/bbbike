@@ -1620,6 +1620,22 @@ for(my $i = 0; $i <= $#speed; $i++) {
 	$l->bind("<ButtonPress-$_>" =>
 		 sub { change_active_speed_power("speed", $ii) });
     }
+    {
+	my $msg;
+	$balloon->attach
+	    ($l,
+	     -msg => \$msg,
+	     -postcommand => sub {
+		 if ($act_value{Time}->[$ii] && $strecke) {
+		     $msg = sprintf "%s: %.1f km/h", M("reale Durchschnittsgeschwindigkeit"), ($strecke / $act_value{TimeSeconds}->[$ii]) * 3.6;
+		     1;
+		 } else {
+		     undef $msg;
+		     0;
+		 }
+	     },
+	    );
+    }
     enter_leave_bind_for_help($speed_frame[$i],
 			      [M"Geschwindigkeit eingeben",
 			       M"Geschwindigkeit als Voreinstellung festlegen",
@@ -1691,6 +1707,22 @@ if (0) { # XXX activate if implemented in updatekm()
 		     sub { change_active_speed_power("power", $ii) });
 	    $l->bind("<ButtonPress-$_>" =>
 		     sub { change_active_speed_power("power", $ii) });
+	}
+	{
+	    my $msg;
+	    $balloon->attach
+		($l,
+		 -msg => \$msg,
+		 -postcommand => sub {
+		     if ($act_value{PowerTime}->[$ii] && $strecke) {
+			 $msg = sprintf "%s: %.1f km/h", M("reale Durchschnittsgeschwindigkeit"), ($strecke / $act_value{PowerTimeSeconds}->[$ii]) * 3.6;
+			 1;
+		     } else {
+			 undef $msg;
+			 0;
+		     }
+		 },
+		);
 	}
 	enter_leave_bind_for_help($power_frame[$i],
 				  [M"Leistung eingeben",
