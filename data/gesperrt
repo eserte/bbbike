@@ -825,6 +825,7 @@ Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
 Fritz-Werner-Str.	1s 9099,2780 9072,2589
 Kraftwerk Reuter West	2 -447,14338 -495,14311 -650,14355 -792,14258 -1002,14162 -1020,14084
 Bechstedter Weg	1 3467,9045 3661,8815 3701,8849
+Floyd-L.-Parks-Weg	1 2352,1267 2315,1251 2370,1127
 Tor	2 8371,13399 8363,13402 8356,13404
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
@@ -2173,6 +2174,9 @@ Tiergartenufer -> Str. des 17. Juni: Mittelstreifen	3::igndisp 5813,11886 5810,1
 Str. des 17. Juni -> Tiergartenufer: Mittelstreifen	3::igndisp 5900,11913 5810,11902 5813,11886
 Geländer am Gehweg	3nocross::ignrte 7628,4521 7667,4549 7690,4563
 Mariendorfer-Hafen-Weg -> Attilastr.: Geländer am Gehweg	3::igndisp 7692,4464 7667,4549 7628,4521
+unbequemes Überqueren	3nocross::ignrte 6613,3320 6647,3292 6712,3237
+Paul-Schneider-Str. -> Schulstr.: unbequemes Überqueren	3::igndisp 6613,3320 6647,3292 6653,3297
+Schulstr. -> Paul-Schneider-Str.: unbequemes Überqueren	3::igndisp 6653,3297 6647,3292 6712,3237
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
@@ -2847,7 +2851,6 @@ Zillestr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen	1s 3807,11
 Bouchéstr.: Baustelle, Einbahnstraßenregelung	1s 13190,9139 13298,9252
 Mengerzeile: Baustelle, Einbahnstraßenregelung	1s 13176,9302 13100,9210
 Heidelberger Str.: Baustelle, Einbahnstraßenregelung	1s 13489,9199 13420,9259 13357,9313
-Karl-Marx-Platz: Bauarbeiten, Einbahnstraße gilt nun auch für Radfahrer	1s 12969,7610 13100,7626
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s 8732,14098 8654,14194
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s 8654,14194 8607,14253 8527,14352 8442,14456
 (Unterführung S-Bhf. Rummelsburg): Bauarbeiten, komplett gesperrt	2::inwork 15433,10765 15409,10709 15372,10655
@@ -2861,8 +2864,6 @@ Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17453,7451 17295,73
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,9200 12548,9167
 Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7741,14560 7518,14689
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
-SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2408,1144 2352,1267
-SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2336,1111 2408,1144 2504,1186
 Fünf Morgen: Bauarbeiten, gesperrt. Wird es eine Anbindung an den Hüttenweg geben?	2::inwork 1437,5015 1486,5175
 Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076
@@ -3473,3 +3474,4 @@ Invalidenstr., linker Gehweg	1::igndisp 8332,13548 8183,13482
 Lichtenberger Brücke, linker Gehweg	1::igndisp 16978,11852 16818,11878
 Alexanderstr., linker Gehweg	1::igndisp 11353,12436 11329,12497
 Straße des 17. Juni, linker Geh/Radweg	1::igndisp 5758,11895 5813,11886
+Paul-Schneider-Str., linker Gehweg	1::igndisp 6712,3237 6653,3297 6613,3320

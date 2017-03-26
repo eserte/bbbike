@@ -144,6 +144,7 @@ Bersarinplatz	1 13730,12535 13698,12544 13675,12581 13681,12624 13695,12643 1374
 Petersburger Platz	1 13470,12990 13559,12779
 #: add_fragezeichen: Ist die Einbahnstraße mittlerweile für Radfahrer geöffnet oder wird das in Zukunft passieren?
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf
+#: osm_watch: way id="4490214" version="7"
 #: last_checked: 2017-03-25
 #: check_frequency: 100d
 Dernburgstr.	1 2493,10675 2378,10677 2333,10710 2254,11051
@@ -291,6 +292,7 @@ Naumannstr.	1 7709,8777 7707,8915
 Gritznerstr.	1 4511,6318 4555,6403
 #: add_fragezeichen: Ist die Einbahnstraße mittlerweile für Radfahrer geöffnet oder wird das in Zukunft passieren?
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/fahr-rat-19-sitzung.pdf
+#: osm_watch: way id="4437134" version="6"
 #: last_checked: 2017-03-25
 #: check_frequency: 100d
 Duisburger Str.	1 4183,10144 3874,10153
@@ -1157,6 +1159,7 @@ Kraftwerk Reuter West	2 -447,14338 -495,14311 -650,14355 -792,14258 -1002,14162 
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf
 #: by: osm
 Bechstedter Weg	1 3467,9045 3661,8815 3701,8849
+Floyd-L.-Parks-Weg	1 2352,1267 2315,1251 2370,1127
 #: note: seit mindestens Juni 2016 dauerhaft verschlossen
 Tor	2 8371,13399 8363,13402 8356,13404
 # 
@@ -1813,6 +1816,7 @@ Stülerstr.: Mittelstreifen	3nocross 6692,11365 6716,11439 6825,11486
 Saargemünder Str.: Mittelstreifen	3nocross 1884,4811 1747,4829 1479,4853
 Straße des 17. Juni: Mittelstreifen	3nocross 5758,11895 5810,11902 5900,11913
 Attilastr.: Geländer am Gehweg	3nocross 7628,4521 7667,4549 7690,4563
+Paul-Schneider-Str.: unbequemes Überqueren	3nocross 6613,3320 6647,3292 6712,3237
 # REMOVED (leicht überquerbar) --- #: XXX Mittelstreifen vielleicht leicht überquerbar, prüfen! --- Straße des 17. Juni: Mittelstreifen	3nocross 8303,12216 8344,12221 8538,12245
 abgeschlossenes Tor	3 * 8237,20098 *
 abgeschlossenes Tor	3 * 8291,20112 *
@@ -2796,9 +2800,7 @@ Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:q3 13176,9302 13100,9210
 #: last_checked: 2017-03-24
 Heidelberger Str.: Baustelle, Einbahnstraßenregelung	1s:q3 13489,9199 13420,9259 13357,9313
 # 
-#: last_checked: 2017-03-01
-Karl-Marx-Platz: Bauarbeiten, Einbahnstraße gilt nun auch für Radfahrer	1s:q3 12969,7610 13100,7626
-# 
+# REMOVED (mittlerweile ist eine Ausweichmöglichkeit markiert) --- #: last_checked: 2017-03-01 --- Karl-Marx-Platz: Bauarbeiten, Einbahnstraße gilt nun auch für Radfahrer	1s:q3 12969,7610 13100,7626
 # REMOVED --- #: source_id: 2147340790 --- #: source_id: 2147340922 --- #: last_checked: 2017-03-20 --- #: next_check: 2017-03-24 --- # REMOVED --- : valid: -20170228 --- Puschkinallee: Fahrtrichtung gesperrt	1::inwork 13795,9941 13890,9894
 # REMOVED (offen) --- #: next_check_id: STRESEMANNPARKWEG-2016 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.530316.php --- #: XXX "3-4 Wochen" --- #: XXX danach eine "bituminöse Befestigung" --- #: XXX evtl. wird die Beleuchtung auch erneuert? --- #: last_checked: 2016-12-16 --- #: check_frequency: 14d --- #: priority: #A --- Parkweg zwischen Stresemannstr. und Wilhemstr.: wird instandgesetzt, in dieser Zeit nicht befahrbar	2::inwork 9249,10562 9375,10616
 # 
@@ -2846,7 +2848,7 @@ Weichselplatz: Uferweg wegen Bauarbeiten gesperrt	2::inwork 12851,9309 12907,907
 #: check_frequency: 60d
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 # 
-#: last_checked: 2017-03-24
+#: last_checked: 2017-03-26
 Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2 14447,10491 14270,10584
 # 
 # REMOVED (mittlerweile schon passierbar) --- #: next_check_id: MARIANNEN-2016 vvv --- #: source_id: INKO_2147340291_COPY_1 vvv --- #: source_id: 2147340291 vvv --- #: source_id: 2147340768 vvv --- # REMOVED (aufgehoben) --- #: priority: #A vvv --- #: XXX laut fritz bis 16.12.2016 --- #: last_checked: 2016-12-15 vvv --- #: next_check: 2017-01-10 vvv --- Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11512,10105 11616,10288 --- #: source_id: 2147340777 --- #: XXX laut fritz bis 10.01.2017 --- #: priority: #A --- #: last_checked: 2016-12-15 --- #: check_frequency: 7d --- Mariannenstr.: Baustelle, Fahrbahn gesperrt	2s:q3 11671,10402 11616,10288
@@ -2894,19 +2896,7 @@ Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7741,14560 7518,14
 #: osm_watch: way id="57852078" version="4"
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
 # 
-#: next_check_id: STEGLITZPARK-2015 vvv
-#: last_checked: 2015-09-27 vvv
-#: check_frequency: 180d vvv
-#: by: http://www.dafmap.de/d/berlin.html?id=4144&mt=0&zoom=16 (Geplanter Projektabschluss: 2016-12-31)
-#: osm_watch: way id="306238980" version="2"
-#: XXX laut osm living_street
-SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2408,1144 2352,1267
-#: osm_watch: way id="148434465" version="4"
-#: XXX laut osm living_street
-SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2336,1111 2408,1144 2504,1186
-#: check_frequency ^^^
-#: last_checked ^^^
-#: next_check_id ^^^
+# REMOVED (fertig) --- #: next_check_id: STEGLITZPARK-2015 vvv --- #: last_checked: 2015-09-27 vvv --- #: check_frequency: 180d vvv --- #: by: http://www.dafmap.de/d/berlin.html?id=4144&mt=0&zoom=16 (Geplanter Projektabschluss: 2016-12-31) --- #: osm_watch: way id="306238980" version="2" --- #: XXX laut osm living_street --- SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2408,1144 2352,1267 --- #: osm_watch: way id="148434465" version="4" --- #: XXX laut osm living_street --- SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2336,1111 2370,1127 2408,1144 2504,1186
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3217&mt=0&zoom=15
 #: osm_watch: way id="318581438" version="4"

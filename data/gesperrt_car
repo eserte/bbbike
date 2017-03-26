@@ -381,7 +381,7 @@ Zossener Str. -> Mittenwalder Str.: Straßenbahntrasse	3::igndisp 23218,15671 234
 Mittenwalder Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23441,15780 23411,15632 23568,15603
 Zossener Str. -> Teupitzer Str.: Straßenbahntrasse	3::igndisp 23411,15632 23568,15603 23573,15627
 Teupitzer Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23573,15627 23568,15603 23617,15594
-Kleinmachnower Weg: Sa und So ist die Schranke an der Kreuzung Sachlebenstraße zu, für Kfz-Verkehr demnach gesperrt	2 269,-41 665,85 941,125 1345,184
+Kleinmachnower Weg: Sa und So ist die Schranke an der Kreuzung Sachlebenstraße zu, für Kfz-Verkehr demnach gesperrt	2 283,-35 354,-13 665,85 934,130 970,135 1168,161 1345,184
 Hentigstr.	1 18518,8778 18548,8942 18586,9172 18626,9406
 Grottewitzstr.	1 21933,152 22145,208
 Schlichtallee	3nocross::ignrte 15639,10469 15758,10578 15880,10680 15982,10765
@@ -625,7 +625,7 @@ Richard-Wagner-Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 3837,11760 3843,1
 Richard-Wagner-Str. -> Sesenheimer Str.: Mittelstreifen	3::igndisp 3837,11760 3843,11659 3866,11473
 Sesenheimer Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 3866,11473 3843,11659 3689,11637
 Sesenheimer Str. -> Richard-Wagner-Str.: Mittelstreifen	3::igndisp 3866,11473 3843,11659 3837,11760
-Lenbachstr.: Einbahnstraße (genau genommen nur das östlichste Stück)	1 5888,6520 6071,6559
+Lenbachstr.: Einbahnstraße (genau genommen nur das östlichste Stück)	1 5883,6519 6071,6559
 Augustenburger Platz: nur für Taxen und Anlieger	2:Anlieger 6561,15041 6537,15156 6562,15177
 Zinnowitzer Str. - Friedrichstr.:	3 9011,14019 8870,13926 8935,13844
 (Kastanienallee - Friedrich-Engels-Str.)	1 8789,20763 8692,20698 8717,20584
@@ -1270,9 +1270,9 @@ Poller	3 7181,-15 7231,25 7184,150
 Poller	3 7181,-15 7231,25 7277,-77
 Poller	3 7184,150 7231,25 7181,-15
 Poller	3 7277,-77 7231,25 7181,-15
-Mittelstreifen	3nocross::ignrte 9346,4144 9372,4012 9426,3797
-Richterstr. -> Mariendorfer Damm: Mittelstreifen	3::igndisp 9277,3993 9372,4012 9346,4144
-Mariendorfer Damm -> Richterstr.: Mittelstreifen	3::igndisp 9426,3797 9372,4012 9277,3993
+Mittelstreifen	3nocross::ignrte 9346,4144 9375,4022 9426,3797
+Richterstr. -> Mariendorfer Damm: Mittelstreifen	3::igndisp 9276,3997 9375,4022 9346,4144
+Mariendorfer Damm -> Richterstr.: Mittelstreifen	3::igndisp 9426,3797 9375,4022 9276,3997
 Ontarioseestr.: Sackgasse für Autos	3 18408,10041 18339,10048 18296,10027
 Ontarioseestr.: Sackgasse für Autos	3 18408,10041 18339,10048 18387,10070
 Ontarioseestr.: Sackgasse für Autos	3 18296,10027 18339,10048 18408,10041
@@ -1863,3 +1863,7 @@ Pücklerstr.	1 2576,7026 2688,7067
 Friedrichsruher Str.	1 3196,9193 3333,9026
 Vesaliusstr.	1 11818,19089 11763,19191 11748,19235 11698,19489
 Leistikowstr.	1 1188,11861 1133,11664
+In den Leonorengärten - Leonorenstr.	3 6363,4047 6295,4017 6315,3974
+In den Leonorengärten - Calandrellistr.	3 6363,4047 6295,4017 6141,3948
+Kleinmachnower Weg: Absperrung	3 283,-35 354,-13 665,85
+Kleinmachnower Weg: Absperrung	3 665,85 354,-13 283,-35

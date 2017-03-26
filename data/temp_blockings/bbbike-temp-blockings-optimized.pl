@@ -2887,7 +2887,16 @@ userdel	q3::inwork; -6861,15129 -6507,15007
          'text' => 'Mergenthalerring/Kiefholzstr.: Tor kann versperrt sein, auch tagsüber',
          'until' => undef
        },
-       undef,
+       {
+         'data' => 'userdel	q3::inwork; 4542,1188 4631,1249 4702,1298 4795,1362 4897,1352 5059,1337
+',
+         'from' => 1459720800,
+         'id' => 2776,
+         'source_id' => '2147339913',
+         'text' => 'Blankertzweg/Hildburghauser Straße: Bauarbeiten zwischen Osdorfer Str. und Woltmannweg, Einbahnstraße, Radfahrer können auf dem schmalen Gehweg fahren',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        {
@@ -3011,8 +3020,8 @@ userdel	2::inwork 3741,12607 3654,12672
          'until' => undef
        },
        {
-         'data' => '#: XXX wann wird wieder geöffnet?
-#: last_checked: 2016-09-30
+         'data' => '#: add_fragezeichen: wann wird die Unterführung wieder geöffnet?
+#: last_checked: 2017-03-26
 #: check_frequency: 60d
 userdel	2::inwork 4778,3352 4815,3382 4822,3431
 ',
@@ -3023,8 +3032,8 @@ userdel	2::inwork 4778,3352 4815,3382 4822,3431
          'until' => undef
        },
        {
-         'data' => '#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2016-09-30
+         'data' => '#: add_fragezeichen: wann sind die Bauarbeiten beendet?
+#: last_checked: 2017-03-26
 #: check_frequency: 60d
 userdel	q3::inwork 4564,3457 4800,3391 4862,3363 5022,3318
 ',

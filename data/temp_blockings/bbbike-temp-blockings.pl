@@ -24950,12 +24950,12 @@ EOF
 EOF
      },
      { from  => 1459720800, # 2016-04-04 00:00
-       until => $isodate2epoch->("2017-01-31 12:00:00"), # 1484348400, # 2017-01-14 00:00
-       text  => 'Blankertzweg/Hildburghauser Straße: Bauarbeiten zwischen Osdorfer Str. und Woltmannweg, Einbahnstraße, Radfahrer können auf dem schmalen Gehweg fahren, 04.04.2016 bis 31.01.2017 ',
+       until => undef, # kein Endedatum mehr --- $isodate2epoch->("2017-01-31 12:00:00"), # 1484348400, # 2017-01-14 00:00
+       text  => 'Blankertzweg/Hildburghauser Straße: Bauarbeiten zwischen Osdorfer Str. und Woltmannweg, Einbahnstraße, Radfahrer können auf dem schmalen Gehweg fahren',
        type  => 'handicap',
        source_id => '2147339913',
        data  => <<EOF,
-userdel	q3::inwork; 4542,1188 4634,1245 4706,1293 4806,1360 4897,1350 5059,1337
+userdel	q3::inwork; 4542,1188 4631,1249 4702,1298 4795,1362 4897,1352 5059,1337
 EOF
      },
      { from  => 1460584800, # 2016-04-14 00:00
@@ -25570,8 +25570,8 @@ EOF
        text  => 'Unterführung Krahmersteg: gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX wann wird wieder geöffnet?
-#: last_checked: 2016-09-30
+#: add_fragezeichen: wann wird die Unterführung wieder geöffnet?
+#: last_checked: 2017-03-26
 #: check_frequency: 60d
 userdel	2::inwork 4778,3352 4815,3382 4822,3431
 EOF
@@ -25581,8 +25581,8 @@ EOF
        text  => 'Krahmerstr.: Bauarbeiten, einige Engstellen',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2016-09-30
+#: add_fragezeichen: wann sind die Bauarbeiten beendet?
+#: last_checked: 2017-03-26
 #: check_frequency: 60d
 userdel	q3::inwork 4564,3457 4800,3391 4862,3363 5022,3318
 EOF
