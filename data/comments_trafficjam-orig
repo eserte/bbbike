@@ -13,21 +13,28 @@
 # 
 #: note: gesehen: 2014-10-15 19:00 (Werktag, S/DB-Bahnstreik)
 #: note: gesehen: 2016-03-27 16:30 (Werktag, keine sonstigen Besonderheiten)
+#: XXX_indoor: oder gibt es auch in den Morgenstunden hier Staus?
+#: tempex: rush_hour_evening
 Möckernstr.	Jam; 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8777,9601
 # 
+#: tempex: T06-T22
 Leipziger Str. Richtung Westen	Jam; 9569,11631 9444,11616 9268,11590 9058,11564
 # REMOVED (Radspuren existieren) --- Leipziger Str. Richtung Westen	Jam; 9058,11564 8834,11536 8740,11524
 # REMOVED (Radspuren existieren) --- Leipziger Str. Richtung Osten	Jam; 8740,11524 8834,11536 9058,11564
 # 
+#: tempex: T06-T22 vvv
 Friedrichstr.	Jam; 9313,12662 9314,12652 9330,12538 9343,12464 9358,12351 9369,12253 9373,12197 9384,12103 9393,12000 9405,11903 9418,11804 9432,11702 9444,11616
 Friedrichstr.	Jam; 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103 9373,12197 9369,12253 9358,12351 9343,12464 9330,12538 9314,12652 9313,12662
 Friedrichstr.	Jam; 9254,13171 9246,13235 9225,13389
+#: tempex ^^^
 # 
 # REMOVED --- #: next_check_id: WARSCHAUER-2014 vvv --- Warschauer Str. Richtung Norden, Ausweichen auf Mittelstreifen möglich	Jam; 13745,12118 13785,12292 --- #: next_check_id ^^^
 # 
 #: note: Stau eher morgens
+#: tempex: rush_hour_morning
 Modersohnstr. Richtung Süden	Jam; 14011,10812 13919,10583
 #: note: Stau eher abends
+#: tempex: rush_hour_evening
 Modersohnstr. Richtung Norden	Jam; 13919,10583 14011,10812
 # 
 Torstr. vor Schönhauser Tor	Jam; 10898,13632 10746,13673
@@ -48,8 +55,10 @@ Marktstr./Karlshorster Str.	Jam; 15144,10905 15279,10862 15272,10790 15261,10738
 #: last_checked: 2017-03-27 vvv
 #: check_frequency: 60d vvv
 #: note: Stau eher abends
+#: tempex: rush_hour_evening
 Hauptstr.	Jam; 14674,10811 14717,10855 14794,10844 14906,10820 15261,10738
 #: note: Stau eher morgens
+#: tempex: rush_hour_morning
 Hauptstr.	Jam; 15261,10738 14906,10820 14794,10844 14717,10855 14674,10811
 #: check_frequency ^^^
 #: last_checked ^^^

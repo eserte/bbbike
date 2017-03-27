@@ -1370,6 +1370,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
+#: tempex: before(1st_advent,1d) - +1d
 userdel	2::xmas 9986,13412 10317,13248
 EOF
      },
@@ -15468,8 +15469,10 @@ EOF
 #: note: Sperrung bestätigt von Stefan (s.sms): vvv
 #: note: genauere Uhrzeit von Dieter Heimann
 #: confirmed_by: um 20:30 Uhr steht man vor einem geschlossenen Tor, zumindest an der Nordostseite (2012-08)
+#: tempex: sa,su,holiday,(mo-fr T20:00-sunrise) vvv
 Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21683,6946 21498,7153 21475,7500 21497,7597 21546,7635
 Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21475,7500 21341,7487 21025,7349
+#: tempex ^^^
 #: note: ^^^
 EOF
      },
@@ -15479,6 +15482,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: sunset-T06 vvv
 	2::night -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12094,1273 -12133,1323
 	2::night -11650,590 -11603,721 -11615,853
 	2::night -11510,810 -11562,918 -11575,1031 -11537,1206 -11544,1262 -11580,1281 -11871,1185 -11990,1214 -12124,1359 -12135,1358
@@ -15490,6 +15494,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
 	2::night -12263,-403 -12280,-385 -12306,-378 -12357,-307 -12371,-284 -12396,-298
 	2::night -12449,-186 -12440,-181 -12449,-134 -12424,-107
 (Ökonomieweg - Leistikowstr.)	2::night -12205,732 -12266,731 -12297,738
+#: tempex ^^^
 EOF
      },
      { from  => undef, #
@@ -15498,11 +15503,13 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: sunset-T06 vvv
 (Am Neuen Palais, direkter Weg)	2::night -15810,-1274 -15820,-1146 -15854,-656
 (Am Grünen Gitter, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -13857,-1040 -14159,-1119 -14171,-1026
 (Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14171,-1026 -14482,-1043 -14622,-1138 -14865,-1118 -15025,-1096 -15553,-1139 -15651,-1137 -15820,-1146
 (Lennestr. - Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14614,-1342 -14856,-1223 -14865,-1118
 (Affengang, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14129,-1258 -14131,-1181 -14159,-1119
+#: tempex ^^^
 EOF
      },
      { from  => undef, #
@@ -15511,6 +15518,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: night
 	2::night 3332,12742 3231,12749 3127,12793 3065,12975 3016,13315 2987,13448 2953,13489 2950,13552
 EOF
      },
@@ -15520,6 +15528,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: so,holiday,(mo-sa T23-T06)
 	2::night:weekend 10624,11548 10526,11612
 EOF
      },
@@ -15531,6 +15540,7 @@ EOF
        data  => <<EOF,
 ######################################################################
 # Wochenmärkte vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+#: tempex: (tu,fr) T08-T13
 	q4::temp:clock 4397,7380 4330,7382 4161,7388 4064,7396
 EOF
      },
@@ -15540,6 +15550,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: (tu,fr) T08-T13
 	q4::temp:clock 3374,10201 3359,9968 3348,9806
 EOF
      },
@@ -15549,7 +15560,8 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-#: note: der Abbau dürfte mindestens eine weitere Stunde dauern...
+#: note: der Auf/Abbau dürfte mindestens eine weitere Stunde dauern, in tempex eingerechnet
+#: tempex: (tu,fr) T10:00-T19:30, sa T10:00-T18:00
 	q4::temp:clock 11543,10015 11669,9987 11880,9874
 EOF
      },
@@ -15561,6 +15573,7 @@ EOF
        data  => <<EOF,
 #: note: http://www.berlin.de/ba-friedrichshain-kreuzberg/wirtschaftsfoerderung/wirtschaftsstandort/maerkte.html
 # REMOVED (Montag stimmt, geprüft!) --- #: XXX Überprüfen, ob die Wochentage (Mo+Do und _nicht_ Sa) stimmen
+#: tempex: (mo,th) T10-T18
 	q3::temp:clock 9570,10566 9587,10421
 EOF
      },
@@ -15570,6 +15583,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: (we, sa) T10-T15
 	q4::temp:clock 7882,9490 7836,9413 7771,9389
 EOF
      },
@@ -15579,6 +15593,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: (mo, th) T09-T14
 	q4::temp:clock 3073,9020 2972,9037
 EOF
      },
@@ -15588,6 +15603,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: we T08-T13, sa T08-T14
 	q4::temp:clock 4101,11347 4101,11233
 EOF
      },
@@ -15597,6 +15613,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: (mo,th) T08-T13
 	q4::temp:clock 3763,12279 3701,12279
 EOF
      },
@@ -15606,6 +15623,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: sa T08-T13
 	q4::temp:clock 1020,496 1078,443
 EOF
      },
@@ -15616,6 +15634,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: (tu,fr) T08-T13
 	q4::temp:clock 589,11953 577,11837 562,11710 560,11695 550,11607
 # Wochenmärkte ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ######################################################################
@@ -15629,8 +15648,10 @@ EOF
        data  => <<EOF,
 #: by: Marek Bänsch:
 #: confirmed_by: srt
+#: tempex: YYYY1001-YYYY0315 T18:30-T07:00, YYYY0316-YYYY0930 T21:30-T07:00 vvv
 	2::night 8332,13548 8248,13659 8101,13901 8119,13912 8096,13951 8011,14096
 	2::night 8096,13951 8200,14016
+#: tempex ^^^
 EOF
      },
      { from  => undef, #
@@ -15639,8 +15660,10 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: T23:00-T06:00 vvv
 	2::night 21150,11925 21132,11943 21100,11960 20862,12027 20810,12031
 	2::night 20862,12027 20836,11768
+#: tempex ^^^
 EOF
      },
      { from  => undef, #
@@ -15649,6 +15672,8 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: note: Approximation; Straßenbeleuchtung muss nicht genau zum Sonnenuntergang eingeschaltet werden
+#: tempex: sunset-T09:00
 	2::night 22312,4329 22252,4362
 EOF
      },
@@ -15658,10 +15683,12 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: summer T22:00-T06:30, winter T19:00-T07:30 vvv
 	2::night 8825,14401 8868,14442 8913,14485 8839,14635 8848,14638 8938,14521 8953,14528
 	2::night 8913,14485 9119,14255 9175,14193 9181,14186
 	2::night 9175,14193 9144,14169 9081,14232 8868,14442
 	2::night 9119,14255 9081,14232 8992,14176
+#: tempex ^^^
 EOF
      },
      { from  => 1249842805, # 2009-08-09 20:33
@@ -16151,8 +16178,10 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: we T08-T13, th T12-T17, sa T08-T14 vvv
 	q4::temp:clock 5897,7337 5810,7337
 	q4::temp:clock 5810,7337 5817,7223
+#: tempex ^^^
 EOF
      },
      { from  => 1254261600, # 2009-09-30 00:00
@@ -16174,6 +16203,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: su T09-T16
 	q4::temp:clock 12596,11696 12453,11790 12366,11808
 EOF
      },
@@ -16183,8 +16213,10 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: (sa,su) T10-T17 vvv
 	q4::temp:clock 9754,12775 9654,12882 9618,12907 9533,12925
 	q4::temp:clock 9919,12613 9956,12523 9984,12426
+#: tempex ^^^
 EOF
      },
      { from  => 1253224800, # 2009-09-18 00:00
@@ -16754,7 +16786,8 @@ EOF
 userdel	q4::inwork; 9580,12581 9601,12380
 EOF
      },
-     { from  => 1364144751, # REMOVED -> permanent gesperrt (früher recurring)
+     { ### INACTIVE ENTRY ###
+       from  => 1364144751, # REMOVED -> permanent gesperrt (früher recurring)
        until => 1364144754, #
        text  => '(Drorystr. - Braunschweiger Str., Spielplatz): nachts werden die Tore geschlossen',
        type  => 'gesperrt',
@@ -16769,6 +16802,7 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: XXX_prog: die "Veranstaltungen" sollten auch mit einer Kategorie bedacht werden
+#: tempex: volatile, T22-T06
 	2::night 10456,15561 10512,15406
 EOF
      },
@@ -16778,6 +16812,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: volatile
 	2::temp 6611,9879 6688,9897
 EOF
      },
@@ -16787,6 +16822,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: volatile
 	2::temp 19071,2746 19136,2673 19204,2603
 EOF
      },
@@ -16796,6 +16832,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: volatile
 	2::temp 6694,12627 7039,12314
 EOF
      },
@@ -17141,6 +17178,7 @@ EOF
        text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (02.12.2016 - 04.12.2016)',
        type  => 'gesperrt',
        data  => <<EOF,
+#: tempex: before(2nd_advent,fr) T17:00 - 2nd_advent T20:00 vvv
 userdel	2::xmas 13416,7712 13426,7674
 userdel	2::xmas 13416,7712 13378,7695 13288,7653
 userdel	2::xmas 13426,7674 13400,7642 13303,7622
@@ -17150,6 +17188,7 @@ userdel	2::xmas 13188,7590 13303,7622
 userdel	2::xmas 13288,7653 13303,7622
 userdel	2::xmas 13288,7653 13177,7644
 userdel	2::xmas 13288,7653 13278,7673 13245,7742
+#: tempex ^^^
 EOF
      },
      { from  => 1212876000, # 2008-06-08 00:00
@@ -17355,7 +17394,8 @@ userdel	q2::inwork; 9456,11513 9444,11616
 userdel	q3::inwork 9444,11616 9432,11702
 EOF
      },
-     { from  => undef, # 
+     { ### INACTIVE ENTRY ###
+       from  => undef, # 
        until => 1360787052, # XXX -> schon lange als permanenten Sperrung in gesperrt-orig
        text  => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt',
        type  => 'gesperrt',
@@ -17805,6 +17845,7 @@ EOF
 		} . '. Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
        recurring => 1,
        data  => <<EOF,
+#: tempex: (YYYY01,YYYY12) T17:00-T07:30, (YYYY02,YYYY11) T18-T07, (YYYY03,YYYY10) T19-T06, (YYYY04,YYYY09) T20:30-T06:00, (YYYY05,YYYY08) T21:30-T06:00, (YYYY06,YYYY07) T22:30-T06:00
 (Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
 (Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10598,8270 10729,8152
 (Eingang Columbiadamm/Golßener Str. - Rundkurs auf dem Flughafen Tempelhof)	2::night 10384,8628 10360,8521 10298,8245
@@ -17835,6 +17876,7 @@ EOF
 (Alter Hafen)	2::night 10076,8040 10037,8269
 (Südliche Landebahn - Eingang Oderstr.)	2::night 11555,7314 11596,7280 11608,7267
 (zur nördlichen Landebahn)	2::night 11470,7744 11430,7781
+#: tempex ^^^
 EOF
      },
      { from  => 1304110406, # 2011-04-29 22:53
@@ -18184,6 +18226,7 @@ EOF
 #: note: nicht gesperrt: 2011-07-16 (Sa) gegen 16 Uhr
 #: note: nicht gesperrt: 2012-07-19 (Do) gegen 14 Uhr
 #: note: nicht gesperrt: 2013-09-07 (Sa) gegen 13 Uhr
+#: tempex: volatile
 userdel	2::temp 18870,5833 18932,5926
 EOF
      },
@@ -18229,8 +18272,10 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: note: allerdings keine Hinweise auf eine verbotene Durchfahrt gesehen
+#: tempex: volatile vvv
 (Gewerbegebiet)	2 21617,3287 21826,3129 21770,2936
 (Gewerbegebiet)	2 21685,2964 21770,2936 21816,2919 21939,2894 21984,2897 22004,2904
+#: tempex ^^^
 EOF
      },
      { from  => 1279577078, # 2010-07-20 00:04
@@ -19090,6 +19135,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: volatile & night
 Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6863
 EOF
      },
@@ -19192,10 +19238,12 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/tickets/suche/detail.php?id=1372899',
        data  => <<EOF,
+#: tempex: 20170428-T20170519 vvv
 userdel	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
 userdel	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
 userdel	q4::temp 11275,8387 11230,8402
 userdel	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
+#: tempex ^^^
 EOF
      },
      { from  => 1338760800, # 2012-06-04 00:00
@@ -19727,12 +19775,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.bierfestival-berlin.de/landkarte.html
+#: tempex 20160805-20160807 vvv
 userdel	2::temp 12360,12505 12362,12540 12364,12589
 userdel	2::temp 12891,12549 12869,12425
 userdel	2::temp 12632,12630 12596,12472
 userdel	2::temp 13448,12340 13484,12436
 userdel	2::temp 13552,12435 13543,12326
 #zukünftig, wenn dieser Weg eingetragen ist: userdel	2::temp 13163,12382 13176,12500
+#: tempex ^^^
 EOF
      },
      { from  => 1312520400, # 2011-08-05 07:00
@@ -19816,6 +19866,7 @@ EOF
        recurring => 1,
        data  => <<EOF,
 # REMOVED --- #: by: http://www.berliner-woche.de/fileadmin/Wochenblatt-Ausgaben/2011/1122_MI.pdf --- #: XXX zieht im Oktober 2014 an den Spittelmarkt --- #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6083 --- #: next_check: 2014-10-01
+#: tempex: (we,fr) T09-T16
 	q4::temp:clock 9925,11947 9878,11857
 EOF
      },
@@ -20301,8 +20352,10 @@ EOF
        recurring => 1,
        data => <<EOF,
 #: by: cornelia (bayer...): vvv
+#: tempex: min(sunset,T19)-sunrise vvv
 Am Schloss Schönhausen	2::night 10294,19298 10339,19179 10382,19066
 Am Schloss Schönhausen	2::night 10249,19148 10339,19179
+#: tempex ^^^
 #: by: ^^^
 EOF
      },
@@ -20312,6 +20365,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: volatile & night
 	2::night 13002,11705 13042,11749
 EOF
      },
@@ -20578,6 +20632,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: (tu,fr) T08-t13
 	q4::temp:clock -3942,12559 -3941,12376
 EOF
      },
@@ -20811,6 +20866,7 @@ EOF
 #: note: geprüft am So, den 2016-07-17, vormittags und mittags: offen
 #: note: geprüft am So, den 2016-07-23, mittags: offen
 #: note: geprüft am Sa, den 2016-09-20, vormittags: offen
+#: tempex: volatile
 userdel	2::night 14838,11410 14792,11391
 EOF
      },
@@ -20949,9 +21005,11 @@ EOF
        text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon gesperrt, ab 20.09.2016',
        type  => 'gesperrt',
        data  => <<EOF,
+#: tempex: 20160920T0600-20160922T0600 vvv
 userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
+#: tempex ^^^
 EOF
      },
      { from  => $isodate2epoch->("2016-09-21 06:00:00"),
@@ -20961,6 +21019,7 @@ EOF
        text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, bis 26.09.2016',
        type  => 'gesperrt',
        data  => <<EOF,
+#: tempex: 20160922T0600-T20160926T0600 vvv
 userdel	2::temp 8573,12325 8540,12420
 userdel	2::temp 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 userdel	2::temp 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
@@ -20980,6 +21039,7 @@ userdel	3 7945,12592 8122,12603 8120,12756
 userdel	3 8120,12756 8122,12603 7945,12592
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
+#: tempex ^^^
 EOF
      },
      { from  => 1348981200, # 2012-09-30 07:00
@@ -21060,6 +21120,7 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-mitte/buergerdienste/parkraumbewirtschaftung.html (Zone 3)
+#: XXX_prog: tempex-Ausdruck?
 userdel	2::temp::igndisp 10805,12468 10803,12470
 EOF
      },
@@ -21101,9 +21162,11 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3228&options=4 vvv
+#: tempex: sa T09-t16 vvv
 	q4::temp:clock 11317,14564 11285,14515 11229,14422
 #: XXX_prog: q3, weil nur ca. 35m betroffen sind 
 	q3::temp:clock 11317,14564 11436,14741
+#: tempex ^^^
 #: by: ^^^
 EOF
      },
@@ -21166,8 +21229,10 @@ EOF
        source_id => 'http://www.potsdamer-wassertaxi.de/fahrplan.php?y=2012',
        data  => <<EOF,
 #: XXX_prog temporäre Lösung für saisonale Fähren vvv
+#: tempex: (20170325-20170409 & (sa,su,holiday) | 20170414-20171016 & (th-su,holiday) | 20171021-20171029 & (sa,su,holiday)) & T10-T17 vvv
 	2::temp -12149,1436 -12057,1530 -11789,1502 -11323,1330 -10320,1494 -10098,1745 -10086,1886
 	2::temp -10086,1886 -10053,1640
+#: tempex ^^^
 #: XXX_prog ^^^
 EOF
      },
@@ -21179,8 +21244,10 @@ EOF
        source_id => 'http://www.bvg.de/index.php/de/3777/name/Faehrlinie+F21.html', # und 23
        data  => <<EOF,
 #: XXX_prog temporäre Lösung für saisonale Fähren vvv
+#: tempex: ((min(good_friday,YYYY04 sa1)-YYYY1030) & (tu-su, holiday)) & T10-T19 vvv
 	2::temp 27090,-2253 27420,-2067 27492,-1880 27490,-1710 27425,-1601 27374,-1573
 	2::temp 29406,3776 29367,3690 29395,3572 29297,3456 29131,3489 29084,3331 29113,3324 29195,3191 29553,2934 29569,2909 29604,2931 29797,2918 29945,3001 29959,3031
+#: tempex ^^^
 #: XXX_prog ^^^
 EOF
      },
@@ -21191,6 +21258,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX_prog temporäre Lösung für saisonale Fähren vvv
+#: tempex: 20170414-20170417 T12, 20170429-20170909 T11-T17, 20170910-20171003 T11-T14
 	2::temp 38674,160390 37644,160344 38049,160420 38325,160573
 #: XXX_prog ^^^
 EOF
@@ -21203,6 +21271,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX_prog temporäre Lösung für saisonale Fähren vvv
+#: tempex: volatile
 	2::temp 42506,161075 42450,161090
 #: XXX_prog ^^^
 EOF
@@ -21235,8 +21304,10 @@ EOF
        text  => 'Friedhofswege nachts gesperrt',
        recurring => 1,
        data => <<EOF,
+#: tempex: night vvv
 	2::night 12851,12602 13108,12859 13046,12956 12878,13229
 	2::night 12773,12683 13046,12956
+#: tempex ^^^
 EOF
      },
      { from  => undef, # 
@@ -21300,6 +21371,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.winzerfest-köpenick.de/',
        data  => <<EOF,
+#: tempex: 20170421-20170423
 userdel	2::temp 22138,4642 22111,4562 22093,4499
 userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
 EOF
@@ -21312,6 +21384,7 @@ EOF
        text  => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (14.07.2016 bis 17.07.2016)',
        type  => 'gesperrt',
        data  => <<EOF,
+#: tempex: 20160714-20160717
 userdel	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
 EOF
      },
@@ -21393,6 +21466,7 @@ EOF
        data  => <<EOF,
 #: note: früher in der Bahnhofstr.
 #: by: http://www.weihnachteninberlin.de/weihnachtsmaerkte/tempelhof-schoeneberg/1001683-1328179-kunsthandwerklicher-weihnachtsmarkt-in-l.html
+#: tempex: (before(3rd_advent, 1d) - 3rd_advent) T11-T20
 	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
@@ -21404,6 +21478,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berliner-frauenlauf.de/?year=2016',
        data  => <<EOF,
+#: tempex: 20160520 vvv
 userdel	2::temp 8055,12186 8119,12414
 userdel	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 	2::temp 6828,12031 6884,12006
@@ -21418,6 +21493,7 @@ userdel auto	3 7039,12314 7383,12095 7429,12070
 userdel auto	3 7823,12120 7816,12150 7822,12201 7875,12363
 	3 8391,12389 8344,12221 8327,12174
 	3 8327,12174 8344,12221 8391,12389
+#: tempex ^^^
 EOF
      },
      { from  => $isodate2epoch->("2017-05-26 11:00:00"), # 1 Tag Vorlauf
@@ -21428,6 +21504,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.ms-event-agentur.com/seite18.html?date=20170325',
        data  => <<EOF,
+#: tempex: 20170527-20170528
 userdel	2::temp 6230,8602 6313,8638 6454,8653
 EOF
      },
@@ -21458,6 +21535,7 @@ EOF
        data  => <<EOF,
 #: by: http://www.ag-bahnhofstrasse.de/maientanz.html?y=2016
 #: by: http://www.berlin.de/tickets/suche/detail.php?id=954647
+#: tempex: YYYY0429-YYYY0501
 userdel	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
 EOF
      },
@@ -21483,6 +21561,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.xhain.info/termine/fiesta-kreutziga.htm',
        data  => <<EOF,
+#: tempex: 20160604 T13-T00
 userdel	2::temp 14161,11930 14285,12190
 EOF
      },
@@ -21516,11 +21595,13 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://fez-berlin.de/nc/programm/detailansicht/internationales-kindertagsfest-303/',
        data  => <<EOF,
+#: tempex: YYYY0530-YYYY0601 vvv
 userdel	2::temp 20755,5750 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
 userdel	2::temp 19976,6087 20015,6069 20293,6278 20200,6321 20106,6357
 userdel	2::temp 20200,6321 20262,6493 20225,6631
 userdel	2::temp 20716,6029 20593,6082 20428,6157 20453,6211 20293,6278
 userdel	2::temp 19976,6087 20064,6290 20106,6357
+#: tempex ^^^
 EOF
      },
      { from  => $isodate2epoch->("2013-06-09 00:00:00"), # 1 Tag Vorlauf
@@ -21548,6 +21629,8 @@ EOF
        type  => 'handicap',
        source_id => 'IM_025248',
        data  => <<EOF,
+#: note: kann im Juni oder Juli stattfinden
+#: tempex: 20160603T0400-20160606T0400
 userdel	q4::temp 5475,10808 5341,10756 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435
 EOF
      },
@@ -21727,8 +21810,10 @@ EOF
 		},
        recurring => 1,
        data  => <<EOF,
+#: tempex: YYYY0316-YYYY1014 T21-T06, YYYY1015-YYYY0315 T18-T06 vvv
 Kleistpark	2::night 7209,9507 7275,9506 7307,9528 7351,9503 7386,9502 7414,9523 7430,9576 7416,9625 7391,9645 7347,9644 7310,9622 7277,9652 7216,9657
 Kleistpark	2::night 7430,9576 7501,9573 7520,9572
+#: tempex ^^^
 EOF
      },
      { from  => undef, #
@@ -21737,11 +21822,14 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex (we, sa) T08-T13 vvv
 	q4::temp:clock 5066,9645 5174,9708 5248,9750
 	q4::temp:clock 5139,9777 5174,9708
+#: tempex ^^^
 EOF
      },
-     { from  => undef, #
+     { ### INACTIVE ENTRY ###
+       from  => undef, #
        until => 1, # undef, # DEAKTIVIERT! Wahrscheinlich keine Behinderung, Wochenmarkt passiert auf dem Gehweg.
        text  => 'Mainzer Straße (Wilmersdorf): Wochenmarkt Montag und Donnerstag 8-13 Uhr, Behinderungen möglich',
        type  => 'gesperrt',
@@ -21756,6 +21844,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: fr T12-T19, su T10-T17
 	q4::temp:clock 10228,14564 10189,14649
 EOF
      },
@@ -21765,6 +21854,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: su T08-T18
 	q4::temp:clock 10354,14987 10240,15318
 EOF
      },
@@ -21944,6 +22034,7 @@ EOF
        source_id => 'http://www.liepnitzinsel.de/faehre.php',
        data  => <<EOF,
 #: XXX_prog temporäre Lösung für saisonale Fähren vvv
+#: tempex: ((20170325, 20170326) & T10-T17), (20170331-20171031 & T10-before(sunset,1h))
 	2::temp 17391,38405 17448,38277 17692,38138
 #: XXX_prog ^^^
 EOF
@@ -21980,8 +22071,10 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: night vvv
 userdel	2::night 17490,13133 17489,13125
 userdel	2::night 17671,13132 17684,13133
+#: tempex ^^^
 EOF
      },
      { from  => $isodate2epoch->("2014-04-27 00:00:00"), # 1377731580, # 2013-08-29 01:13
@@ -22323,6 +22416,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
+#: tempex: before(2nd_advent,sa) - +1d
 userdel	2::xmas 9986,13412 10317,13248
 EOF
      },
@@ -22334,6 +22428,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
+#: tempex: before(3rd_advent,sa) - +1d
 userdel	2::xmas 9986,13412 10317,13248
 EOF
      },
@@ -22345,6 +22440,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
+#: tempex: before(4th_advent,sa) - +1d
 userdel	2::xmas 9986,13412 10317,13248
 EOF
      },
@@ -22356,6 +22452,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
        data  => <<EOF,
+#: tempex: 1st_advent & T12-T19
 userdel	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
@@ -22367,6 +22464,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
        data  => <<EOF,
+#: tempex: 2nd_advent & T12-T19
 userdel	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
@@ -22378,6 +22476,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
        data  => <<EOF,
+#: tempex: 3rd_advent & T12-T19
 userdel	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
@@ -22389,6 +22488,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
        data  => <<EOF,
+#: tempex: 4th_advent & T12-T19
 userdel	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
@@ -22425,6 +22525,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: (YYYY1001-YYYY0331 & T16:00-T08:00), (YYYY0401-YYYY0930 & T21:00-T08:00)
 	2::night 7811,13344 7784,13392 7767,13431 7732,13484 7696,13470
 EOF
      },
@@ -22436,6 +22537,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.potsdam.de/weihnachtliches-potsdam-2016
+#: tempex: before(first_advent,mo) - YYYY1227
 userdel	1::xmas -13556,-1182 -13643,-1220
 EOF
      },
@@ -22505,6 +22607,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/ueber-den-bezirk/sonstiges/events/fest-der-nationen/',
        data  => <<EOF,
+#: note: kein tempex-Ausdruck möglich
 userdel	2::temp 5648,9642 5642,9613 5618,9607 5598,9612 5578,9629
 EOF
      },
@@ -22818,12 +22921,14 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/tickets/suche/detail.php?id=1372887',
        data  => <<EOF,
+#: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
 userdel	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
 userdel	2::inwork 8573,12325 8540,12420
 userdel	2::inwork 8303,12216 8344,12221 8538,12245 8610,12254
 userdel	2::inwork 8089,12190 8214,12205
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
+#: tempex ^^^
 EOF
      },
      { from  => 1400968800, # 2014-05-25 00:00
@@ -23124,6 +23229,7 @@ EOF
        text  => 'Gartenufer: nachts ab Sonnenuntergang, spätestens ab 21.00 Uhr gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: min(sunset,T21:00)-sunrise
 Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 EOF
      },
@@ -23285,8 +23391,10 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.winzerfest-köpenick.de/',
        data  => <<EOF,
+#: tempex: (YYYY08 & fr-2) - +2d vvv
 userdel	2::temp 22138,4642 22111,4562 22093,4499
 userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
+#: tempex ^^^
 EOF
      },
      { from  => 1409436000, # 2014-08-31 00:00
@@ -23427,6 +23535,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.quartiersmanagement-berlin.de/veranstaltungen/moabit-west-beusselstrasse/termin/calendar/2016/09/10/event/tx_cal_phpicalendar/moabiter_kiezfest_2016/print.html',
        data  => <<EOF,
+#: tempex YYYY09 & sa2 & T14-T18
 userdel	2::temp 5857,13342 5868,13441 5882,13548
 EOF
      },
@@ -23601,8 +23710,10 @@ EOF
 #: note: am Mo, den 2016-10-10 gegen 17:50: offen
 #: note: am Sa, den 2016-12-10 gegen 13:00: geschlossen
 #: note: am Fr, den 2017-02-10 gegen 18:30: offen
+#: tempex: volatile vvv
 	3::night 14563,8243 14425,8116 14419,8112
 	3::night 14419,8112 14425,8116 14563,8243
+#: tempex ^^^
 EOF
      },
      { from  => 1413093600, # 2014-10-12 08:00
@@ -23955,6 +24066,7 @@ EOF
        data  => <<EOF,
 #: note: bei Veranstaltungen möglicherweise auch gesperrt?
 #: XXX_prog: die "Veranstaltungen" sollten auch mit einer Kategorie bedacht werden
+#: tempex: volatile
 	q4::temp 10456,15561 10234,15490 10188,15474
 EOF
      },
@@ -24004,6 +24116,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: tempex: th & T10:00-T20:30
 	q4::temp::clock 11155,14554 11247,14578 11317,14564
 EOF
      },
@@ -24107,6 +24220,7 @@ EOF
        text  => 'Uranusweg - U-Bhf. Scharnweberstr.: Weg ist unter Umständen zeitweise gesperrt, zum Beispiel nachts',
        recurring => 1,
        data  => <<EOF,
+#: tempex: night, volatile
 	2::night 4280,17551 4243,17570 4240,17584 3959,17714 3987,17808
 EOF
      },
@@ -24167,6 +24281,7 @@ EOF
        source_id => 'http://www.bvg.de/de/Aktuell/Newsmeldung?newsid=612',
        data  => <<EOF,
 #: XXX_prog temporäre Lösung für saisonale Fähren vvv
+#: tempex: (20170430|YYYY0501)-YYYY1003 & (sa|su|holiday) & T11-T19
 	2::temp 29959,3031 29968,2986
 #: XXX_prog ^^^
 EOF
@@ -24340,8 +24455,10 @@ EOF
        type  => 'handicap',
        source_id => '2147339708',
        data  => <<EOF,
+#: tempex: (YYYY01 & tu3) - +2d vvv
 userdel	q4::inwork 8634,10426 8384,10507 8527,10621
 userdel	q4::inwork 8348,10636 8335,10518 8350,10499
+#: tempex ^^^
 EOF
      },
      { from  => 1436738400, # 2015-07-13 00:00
@@ -24379,6 +24496,7 @@ EOF
        recurring => 1,
        data => <<EOF,
 #: XXX_prog BNP in temp blockings wird zur Zeit weder im CGI noch in der Perl/Tk-Anwendung behandelt
+#: tempex: volatile
 	BNP:20::trailer=no 10583,15208
 EOF
      },
@@ -24787,15 +24905,17 @@ userdel	q3::inwork; 14218,13834 14261,13932 14298,14015 14361,14145 14465,14210 
 EOF
      },
      { from  => $isodate2epoch->("2016-11-20 00:00:00"), # 1448146800, # 2015-11-22 00:00
-       until => $isodate2epoch->("2016-12-26 23:59:59"), # )1451257199, # 2015-12-27 23:59
+       until => $isodate2epoch->("2016-12-26 23:59:59"), # 1451257199, # 2015-12-27 23:59
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11]],
        text  => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 21. November 2016 bis 26. Dezember 2016',
        type  => 'handicap',
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/1304487-1328132-weihnachtsmarktaufdemalexanderplatz.html',
        data  => <<EOF,
+#: tempex: before(first_advent, monday)-YYYY1226 vvv
 userdel	q3::xmas 11139,13008 11064,12910 10970,12822
 userdel	q4::xmas 11064,12910 11134,12793
+#: tempex ^^^
 EOF
      },
      { from  => undef, # 
@@ -24836,6 +24956,7 @@ EOF
        type  => 'gesperrt',
        source_id => '2147339665',
        data  => <<EOF,
+#: tempex: YYYY1231T1200-YYYY0101T1200 vvv
 	2::temp 8540,12420 8775,12457
 userdel	2::temp 8485,12612 8399,12610 8348,12609 8306,12609 8207,12606 8122,12603 8119,12414 8354,12416 8400,12417 8540,12420
 userdel	2::temp 8348,12609 8354,12416
@@ -24846,6 +24967,7 @@ userdel auto	3 8070,12409 8119,12414 8055,12186
 userdel auto	3 8399,12610 8400,12417 8391,12389
 userdel auto	3 8120,12756 8122,12603 7945,12592
 userdel auto	3 8055,12186 8119,12414 8070,12409
+#: tempex ^^^
 EOF
      },
      { from  => 1454148000, # 2016-01-30 11:00
@@ -24945,8 +25067,10 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: note: am Di, den 2016-04-05 gegen 08:45: geschlossen
+#: tempex: volatile vvv
 	3::night 14700,8368 14688,8355 14563,8243
 	3::night 14563,8243 14688,8355 14700,8368
+#: tempex ^^^
 EOF
      },
      { from  => 1459720800, # 2016-04-04 00:00
@@ -24989,6 +25113,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: am So 2016-04-17 gegen 15 Uhr offen
+#: tempex: volatile
 userdel	2::night 16196,18364 16315,18208
 EOF
      },
@@ -25059,7 +25184,8 @@ EOF
 	2::temp 11683,12725 11721,12801
 EOF
      },
-     { from  => undef, # 
+     { ### INACTIVE ENTRY ###
+       from  => undef, # 
        until => 1484934475, # -> ein Tor ist nach gesperrt-orig gewandert, das andere scheint jetzt immer offen zu sein
        text  => 'Alexanderufer - Charité: Tor kann verschlossen sein',
        recurring => 1,
@@ -25683,6 +25809,7 @@ EOF
        recurring => 1,
        source_id => 'http://www.potsdam.de/content/freundschaftsinsel-2',
        data  => <<EOF,
+#: tempex: sunset-T07
 	2::night -12544,-1799 -12396,-1681 -12253,-1589 -12260,-1503 -12256,-1456
 EOF
      },

@@ -1299,6 +1299,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'data' => '#: by: Marek Bänsch:
 #: confirmed_by: srt
+#: tempex: YYYY1001-YYYY0315 T18:30-T07:00, YYYY0316-YYYY0930 T21:30-T07:00
 	2::night 8332,13548 8248,13659 8101,13901 8119,13912 8096,13951 8011,14096
 	2::night 8096,13951 8200,14016
 ',
@@ -1310,8 +1311,10 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'until' => undef
        },
        {
-         'data' => '	2::night 21150,11925 21132,11943 21100,11960 20862,12027 20810,12031
+         'data' => '#: tempex: T23:00-T06:00 vvv
+	2::night 21150,11925 21132,11943 21100,11960 20862,12027 20810,12031
 	2::night 20862,12027 20836,11768
+#: tempex ^^^
 ',
          'from' => undef,
          'id' => 1824,
@@ -1321,7 +1324,9 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'until' => undef
        },
        {
-         'data' => '	2::night 22312,4329 22252,4362
+         'data' => '#: note: Approximation; Straßenbeleuchtung muss nicht genau zum Sonnenuntergang eingeschaltet werden
+#: tempex: sunset-T09:00
+	2::night 22312,4329 22252,4362
 ',
          'from' => undef,
          'id' => 1825,
@@ -1331,10 +1336,12 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'until' => undef
        },
        {
-         'data' => '	2::night 8825,14401 8868,14442 8913,14485 8839,14635 8848,14638 8938,14521 8953,14528
+         'data' => '#: tempex: summer T22:00-T06:30, winter T19:00-T07:30 vvv
+	2::night 8825,14401 8868,14442 8913,14485 8839,14635 8848,14638 8938,14521 8953,14528
 	2::night 8913,14485 9119,14255 9175,14193 9181,14186
 	2::night 9175,14193 9144,14169 9081,14232 8868,14442
 	2::night 9119,14255 9081,14232 8992,14176
+#: tempex ^^^
 ',
          'from' => undef,
          'id' => 1826,
@@ -1401,8 +1408,10 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        {
-         'data' => '	q4::temp:clock 5897,7337 5810,7337
+         'data' => '#: tempex: we T08-T13, th T12-T17, sa T08-T14 vvv
+	q4::temp:clock 5897,7337 5810,7337
 	q4::temp:clock 5810,7337 5817,7223
+#: tempex ^^^
 ',
          'from' => undef,
          'id' => 1884,
@@ -1413,7 +1422,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        undef,
        {
-         'data' => '	q4::temp:clock 12596,11696 12453,11790 12366,11808
+         'data' => '#: tempex: su T09-T16
+	q4::temp:clock 12596,11696 12453,11790 12366,11808
 ',
          'from' => undef,
          'id' => 1886,
@@ -1423,8 +1433,10 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'until' => undef
        },
        {
-         'data' => '	q4::temp:clock 9754,12775 9654,12882 9618,12907 9533,12925
+         'data' => '#: tempex: (sa,su) T10-T17 vvv
+	q4::temp:clock 9754,12775 9654,12882 9618,12907 9533,12925
 	q4::temp:clock 9919,12613 9956,12523 9984,12426
+#: tempex ^^^
 ',
          'from' => undef,
          'id' => 1887,
@@ -1503,6 +1515,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        {
          'data' => '#: XXX_prog: die "Veranstaltungen" sollten auch mit einer Kategorie bedacht werden
+#: tempex: volatile, T22-T06
 	2::night 10456,15561 10512,15406
 ',
          'from' => undef,
@@ -1513,7 +1526,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'until' => undef
        },
        {
-         'data' => '	2::temp 6611,9879 6688,9897
+         'data' => '#: tempex: volatile
+	2::temp 6611,9879 6688,9897
 ',
          'from' => undef,
          'id' => 1957,
@@ -1523,7 +1537,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'until' => undef
        },
        {
-         'data' => '	2::temp 19071,2746 19136,2673 19204,2603
+         'data' => '#: tempex: volatile
+	2::temp 19071,2746 19136,2673 19204,2603
 ',
          'from' => undef,
          'id' => 1958,
@@ -1533,7 +1548,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'until' => undef
        },
        {
-         'data' => '	2::temp 6694,12627 7039,12314
+         'data' => '#: tempex: volatile
+	2::temp 6694,12627 7039,12314
 ',
          'from' => undef,
          'id' => 1959,
@@ -1651,7 +1667,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        {
-         'data' => '(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
+         'data' => '#: tempex: (YYYY01,YYYY12) T17:00-T07:30, (YYYY02,YYYY11) T18-T07, (YYYY03,YYYY10) T19-T06, (YYYY04,YYYY09) T20:30-T06:00, (YYYY05,YYYY08) T21:30-T06:00, (YYYY06,YYYY07) T22:30-T06:00
+(Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
 (Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10598,8270 10729,8152
 (Eingang Columbiadamm/Golßener Str. - Rundkurs auf dem Flughafen Tempelhof)	2::night 10384,8628 10360,8521 10298,8245
 (Rundkurs auf dem Flughafen Tempelhof)	2::night 11460,7802 11470,7744 11543,7369 11593,7314 11596,7280 11598,7264 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9509,7195 9545,7426 9525,7558
@@ -1681,6 +1698,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
 (Alter Hafen)	2::night 10076,8040 10037,8269
 (Südliche Landebahn - Eingang Oderstr.)	2::night 11555,7314 11596,7280 11608,7267
 (zur nördlichen Landebahn)	2::night 11470,7744 11430,7781
+#: tempex ^^^
 ',
          'from' => undef,
          'id' => 2068,
@@ -1720,6 +1738,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
 #: note: nicht gesperrt: 2011-07-16 (Sa) gegen 16 Uhr
 #: note: nicht gesperrt: 2012-07-19 (Do) gegen 14 Uhr
 #: note: nicht gesperrt: 2013-09-07 (Sa) gegen 13 Uhr
+#: tempex: volatile
 userdel	2::temp 18870,5833 18932,5926
 ',
          'from' => undef,
@@ -1735,8 +1754,10 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        {
          'data' => '#: note: allerdings keine Hinweise auf eine verbotene Durchfahrt gesehen
+#: tempex: volatile vvv
 (Gewerbegebiet)	2 21617,3287 21826,3129 21770,2936
 (Gewerbegebiet)	2 21685,2964 21770,2936 21816,2919 21939,2894 21984,2897 22004,2904
+#: tempex ^^^
 ',
          'from' => undef,
          'id' => 2101,
@@ -1840,7 +1861,8 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        {
-         'data' => 'Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6863
+         'data' => '#: tempex: volatile & night
+Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6863
 ',
          'from' => undef,
          'id' => 2196,
@@ -1860,10 +1882,12 @@ userdel	2::temp 18870,5833 18932,5926
        undef,
        undef,
        {
-         'data' => 'userdel	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
+         'data' => '#: tempex: 20170428-T20170519 vvv
+userdel	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
 userdel	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
 userdel	q4::temp 11275,8387 11230,8402
 userdel	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
+#: tempex ^^^
 ',
          'from' => 1493244000,
          'id' => 2207,
@@ -1996,8 +2020,10 @@ userdel	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
        undef,
        {
          'data' => '#: by: cornelia (bayer...): vvv
+#: tempex: min(sunset,T19)-sunrise vvv
 Am Schloss Schönhausen	2::night 10294,19298 10339,19179 10382,19066
 Am Schloss Schönhausen	2::night 10249,19148 10339,19179
+#: tempex ^^^
 #: by: ^^^
 ',
          'from' => undef,
@@ -2035,7 +2061,8 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        {
-         'data' => '	q4::temp:clock -3942,12559 -3941,12376
+         'data' => '#: tempex: (tu,fr) T08-t13
+	q4::temp:clock -3942,12559 -3941,12376
 ',
          'from' => undef,
          'id' => 2349,
@@ -2080,6 +2107,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: note: geprüft am So, den 2016-07-17, vormittags und mittags: offen
 #: note: geprüft am So, den 2016-07-23, mittags: offen
 #: note: geprüft am Sa, den 2016-09-20, vormittags: offen
+#: tempex: volatile
 userdel	2::night 14838,11410 14792,11391
 ',
          'from' => undef,
@@ -2114,6 +2142,7 @@ userdel	2::night 14838,11410 14792,11391
        undef,
        {
          'data' => '#: by: http://www.berlin.de/ba-mitte/buergerdienste/parkraumbewirtschaftung.html (Zone 3)
+#: XXX_prog: tempex-Ausdruck?
 userdel	2::temp::igndisp 10805,12468 10803,12470
 ',
          'from' => undef,
@@ -2128,9 +2157,11 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        {
          'data' => '#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3228&options=4 vvv
+#: tempex: sa T09-t16 vvv
 	q4::temp:clock 11317,14564 11285,14515 11229,14422
 #: XXX_prog: q3, weil nur ca. 35m betroffen sind 
 	q3::temp:clock 11317,14564 11436,14741
+#: tempex ^^^
 #: by: ^^^
 ',
          'from' => undef,
@@ -2148,8 +2179,10 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        {
          'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
+#: tempex: (20170325-20170409 & (sa,su,holiday) | 20170414-20171016 & (th-su,holiday) | 20171021-20171029 & (sa,su,holiday)) & T10-T17 vvv
 	2::temp -12149,1436 -12057,1530 -11789,1502 -11323,1330 -10320,1494 -10098,1745 -10086,1886
 	2::temp -10086,1886 -10053,1640
+#: tempex ^^^
 #: XXX_prog ^^^
 ',
          'from' => undef,
@@ -2162,8 +2195,10 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        },
        {
          'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
+#: tempex: ((min(good_friday,YYYY04 sa1)-YYYY1030) & (tu-su, holiday)) & T10-T19 vvv
 	2::temp 27090,-2253 27420,-2067 27492,-1880 27490,-1710 27425,-1601 27374,-1573
 	2::temp 29406,3776 29367,3690 29395,3572 29297,3456 29131,3489 29084,3331 29113,3324 29195,3191 29553,2934 29569,2909 29604,2931 29797,2918 29945,3001 29959,3031
+#: tempex ^^^
 #: XXX_prog ^^^
 ',
          'from' => undef,
@@ -2176,6 +2211,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        },
        {
          'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
+#: tempex: 20170414-20170417 T12, 20170429-20170909 T11-T17, 20170910-20171003 T11-T14
 	2::temp 38674,160390 37644,160344 38049,160420 38325,160573
 #: XXX_prog ^^^
 ',
@@ -2188,6 +2224,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        },
        {
          'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
+#: tempex: volatile
 	2::temp 42506,161075 42450,161090
 #: XXX_prog ^^^
 ',
@@ -2202,8 +2239,10 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        undef,
        {
-         'data' => '	2::night 12851,12602 13108,12859 13046,12956 12878,13229
+         'data' => '#: tempex: night vvv
+	2::night 12851,12602 13108,12859 13046,12956 12878,13229
 	2::night 12773,12683 13046,12956
+#: tempex ^^^
 ',
          'from' => undef,
          'id' => 2413,
@@ -2217,7 +2256,8 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        undef,
        {
-         'data' => 'userdel	2::temp 22138,4642 22111,4562 22093,4499
+         'data' => '#: tempex: 20170421-20170423
+userdel	2::temp 22138,4642 22111,4562 22093,4499
 userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
 ',
          'from' => 1492725600,
@@ -2246,7 +2286,8 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,464
        undef,
        undef,
        {
-         'data' => 'userdel	2::temp 6230,8602 6313,8638 6454,8653
+         'data' => '#: tempex: 20170527-20170528
+userdel	2::temp 6230,8602 6313,8638 6454,8653
 ',
          'from' => 1495789200,
          'id' => 2428,
@@ -2291,8 +2332,10 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,464
        undef,
        undef,
        {
-         'data' => 'Kleistpark	2::night 7209,9507 7275,9506 7307,9528 7351,9503 7386,9502 7414,9523 7430,9576 7416,9625 7391,9645 7347,9644 7310,9622 7277,9652 7216,9657
+         'data' => '#: tempex: YYYY0316-YYYY1014 T21-T06, YYYY1015-YYYY0315 T18-T06 vvv
+Kleistpark	2::night 7209,9507 7275,9506 7307,9528 7351,9503 7386,9502 7414,9523 7430,9576 7416,9625 7391,9645 7347,9644 7310,9622 7277,9652 7216,9657
 Kleistpark	2::night 7430,9576 7501,9573 7520,9572
+#: tempex ^^^
 ',
          'from' => undef,
          'id' => 2454,
@@ -2301,8 +2344,10 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'until' => undef
        },
        {
-         'data' => '	q4::temp:clock 5066,9645 5174,9708 5248,9750
+         'data' => '#: tempex (we, sa) T08-T13 vvv
+	q4::temp:clock 5066,9645 5174,9708 5248,9750
 	q4::temp:clock 5139,9777 5174,9708
+#: tempex ^^^
 ',
          'from' => undef,
          'id' => 2455,
@@ -2313,7 +2358,8 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        },
        undef,
        {
-         'data' => '	q4::temp:clock 10228,14564 10189,14649
+         'data' => '#: tempex: fr T12-T19, su T10-T17
+	q4::temp:clock 10228,14564 10189,14649
 ',
          'from' => undef,
          'id' => 2457,
@@ -2323,7 +2369,8 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
          'until' => undef
        },
        {
-         'data' => '	q4::temp:clock 10354,14987 10240,15318
+         'data' => '#: tempex: su T08-T18
+	q4::temp:clock 10354,14987 10240,15318
 ',
          'from' => undef,
          'id' => 2458,
@@ -2384,6 +2431,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        {
          'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
+#: tempex: ((20170325, 20170326) & T10-T17), (20170331-20171031 & T10-before(sunset,1h))
 	2::temp 17391,38405 17448,38277 17692,38138
 #: XXX_prog ^^^
 ',
@@ -2399,8 +2447,10 @@ Kleistpark	2::night 7430,9576 7501,9573 7520,9572
        undef,
        undef,
        {
-         'data' => 'userdel	2::night 17490,13133 17489,13125
+         'data' => '#: tempex: night vvv
+userdel	2::night 17490,13133 17489,13125
 userdel	2::night 17671,13132 17684,13133
+#: tempex ^^^
 ',
          'from' => undef,
          'id' => 2479,
@@ -2455,7 +2505,8 @@ userdel	2::night 17671,13132 17684,13133
        undef,
        undef,
        {
-         'data' => '	2::night 7811,13344 7784,13392 7767,13431 7732,13484 7696,13470
+         'data' => '#: tempex: (YYYY1001-YYYY0331 & T16:00-T08:00), (YYYY0401-YYYY0930 & T21:00-T08:00)
+	2::night 7811,13344 7784,13392 7767,13431 7732,13484 7696,13470
 ',
          'from' => undef,
          'id' => 2525,
@@ -2524,12 +2575,14 @@ userdel	2::inwork -12583,-1552 -12485,-1482
        undef,
        undef,
        {
-         'data' => 'userdel	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
+         'data' => '#: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
+userdel	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
 userdel	2::inwork 8573,12325 8540,12420
 userdel	2::inwork 8303,12216 8344,12221 8538,12245 8610,12254
 userdel	2::inwork 8089,12190 8214,12205
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
+#: tempex ^^^
 ',
          'from' => 1493330400,
          'id' => 2565,
@@ -2578,7 +2631,8 @@ userdel	2::inwork 8089,12190 8214,12205
        undef,
        undef,
        {
-         'data' => 'Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
+         'data' => '#: tempex: min(sunset,T21:00)-sunrise
+Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => undef,
          'id' => 2595,
@@ -2601,8 +2655,10 @@ userdel	2::inwork 8089,12190 8214,12205
        undef,
        undef,
        {
-         'data' => 'userdel	2::temp 22138,4642 22111,4562 22093,4499
+         'data' => '#: tempex: (YYYY08 & fr-2) - +2d vvv
+userdel	2::temp 22138,4642 22111,4562 22093,4499
 userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
+#: tempex ^^^
 ',
          'from' => 1502971200,
          'id' => 2610,
@@ -2662,8 +2718,10 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,464
 #: note: am Mo, den 2016-10-10 gegen 17:50: offen
 #: note: am Sa, den 2016-12-10 gegen 13:00: geschlossen
 #: note: am Fr, den 2017-02-10 gegen 18:30: offen
+#: tempex: volatile vvv
 	3::night 14563,8243 14425,8116 14419,8112
 	3::night 14419,8112 14425,8116 14563,8243
+#: tempex ^^^
 ',
          'from' => undef,
          'id' => 2643,
@@ -2711,6 +2769,7 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,464
        {
          'data' => '#: note: bei Veranstaltungen möglicherweise auch gesperrt?
 #: XXX_prog: die "Veranstaltungen" sollten auch mit einer Kategorie bedacht werden
+#: tempex: volatile
 	q4::temp 10456,15561 10234,15490 10188,15474
 ',
          'from' => undef,
@@ -2725,7 +2784,8 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,464
        undef,
        undef,
        {
-         'data' => '	q4::temp::clock 11155,14554 11247,14578 11317,14564
+         'data' => '#: tempex: th & T10:00-T20:30
+	q4::temp::clock 11155,14554 11247,14578 11317,14564
 ',
          'from' => undef,
          'id' => 2686,
@@ -2745,7 +2805,8 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,464
        undef,
        undef,
        {
-         'data' => '	2::night 4280,17551 4243,17570 4240,17584 3959,17714 3987,17808
+         'data' => '#: tempex: night, volatile
+	2::night 4280,17551 4243,17570 4240,17584 3959,17714 3987,17808
 ',
          'from' => undef,
          'id' => 2697,
@@ -2760,6 +2821,7 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,464
        undef,
        {
          'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
+#: tempex: (20170430|YYYY0501)-YYYY1003 & (sa|su|holiday) & T11-T19
 	2::temp 29959,3031 29968,2986
 #: XXX_prog ^^^
 ',
@@ -2800,6 +2862,7 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,464
        undef,
        {
          'data' => '#: XXX_prog BNP in temp blockings wird zur Zeit weder im CGI noch in der Perl/Tk-Anwendung behandelt
+#: tempex: volatile
 	BNP:20::trailer=no 10583,15208
 ',
          'from' => undef,
@@ -2878,8 +2941,10 @@ userdel	q3::inwork; -6861,15129 -6507,15007
        undef,
        {
          'data' => '#: note: am Di, den 2016-04-05 gegen 08:45: geschlossen
+#: tempex: volatile vvv
 	3::night 14700,8368 14688,8355 14563,8243
 	3::night 14563,8243 14688,8355 14700,8368
+#: tempex ^^^
 ',
          'from' => undef,
          'id' => 2775,
@@ -2901,6 +2966,7 @@ userdel	q3::inwork; -6861,15129 -6507,15007
        undef,
        {
          'data' => '#: note: am So 2016-04-17 gegen 15 Uhr offen
+#: tempex: volatile
 userdel	2::night 16196,18364 16315,18208
 ',
          'from' => undef,
@@ -3065,7 +3131,8 @@ userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,
        undef,
        undef,
        {
-         'data' => '	2::night -12544,-1799 -12396,-1681 -12253,-1589 -12260,-1503 -12256,-1456
+         'data' => '#: tempex: sunset-T07
+	2::night -12544,-1799 -12396,-1681 -12253,-1589 -12260,-1503 -12256,-1456
 ',
          'from' => undef,
          'id' => 2842,
