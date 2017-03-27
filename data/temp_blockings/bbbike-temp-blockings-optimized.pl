@@ -3117,6 +3117,15 @@ userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,
          'text' => 'Kantstr.: Richtung Budapester Str. ab Joachimsthaler Str. gesperrt, bis Ende April 2017 ',
          'type' => 'handicap',
          'until' => 1493222400
+       },
+       {
+         'data' => 'userdel	q4::inwork; 9183,12076 9164,12172
+',
+         'from' => 1490635298,
+         'id' => 2852,
+         'text' => 'Glinkastr.: zwischen Französische Str. und Behrenstr. Baustelle, Richtung Unter den Linden gesperrt, bis 08.04.2017',
+         'type' => 'handicap',
+         'until' => 1491667200
        }
      
 );

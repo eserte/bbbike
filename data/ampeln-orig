@@ -2754,7 +2754,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: SONNENALLEE-2014 vvv
 #: osm_watch: way id="260062339" version="8"
-#: last_checked: 2017-03-01 vvv
+#: last_checked: 2017-03-27 vvv
 #: check_frequency: 90d vvv
 #: note: Radfahrer in Richtung Südosten müssen die Seite wechseln, hier Anforderungsampel
 	X::inwork 14174,7505
@@ -2793,8 +2793,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: last_checked: 2017-01-28 vvv
 # REMOVED (Zweirichtungsradweg geht Richtung Norden weiter) --- F 17568,7753
 #: XXX hier wird später eine normale Ampel stehen
-	F::inwork 17681,7589
-	F::inwork 17527,7812
+# REMOVED (existiert zurzeit nicht) ---	F::inwork 17681,7589
+# REMOVED ---	F::inwork 17527,7812
 #: last_checked ^^^
 #: source_id ^^^
 #: by: ^^^
@@ -2807,7 +2807,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
 #: source_id: IM_023532 (Gesamtmaßnahme bis Ende Juni 2016) vvv
 #: source_id: 2147339539 vvv
-#: last_checked: 2016-10-30 vvv
+#: last_checked: 2017-03-27 vvv
 #: check_frequency: 90d vvv
 	F::inwork 16909,6628
 	F::inwork 16646,6925

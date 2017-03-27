@@ -474,7 +474,8 @@ Mittelweg: Kopfsteinpflaster	Q3 12176,7811 12224,7799 12335,7770
 #: note: vielleicht sogar Q1+? vvv
 #: XXX hier wird die Fahrbahn ausgebessert (2017), später (2018-2022) Radfahrstreifen oder "Protected Bike-Lane"
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017)
-#: next_check: 2017-04-16
+#: last_checked: 2017-03-27
+#: check_frequency: 30d
 Karl-Marx-Str.: Asphalt mit Schäden	Q0- 11831,8989 11880,8955 11998,8872 12063,8826 12156,8760 12330,8636
 Karl-Marx-Str.: Asphalt mit Schäden	Q0- 12330,8636 12500,8504
 #: note ^^^
@@ -1848,6 +1849,10 @@ Neue Promenade: unebenes Pflaster	Q2 10264,13097 10263,13047
 Griebnitzseepromenade: Waldweg	Q1- -7252,-422 -7276,-482 -7337,-515 -7358,-605 -7495,-716 -7585,-736 -7677,-801 -7863,-984 -8053,-1110 -8100,-1170 -8143,-1191 -8231,-1212 -8282,-1129 -8426,-1036 -8566,-967 -8606,-925 -8620,-868 -8698,-735 -8745,-703 -8850,-679 -8901,-618 -8964,-569 -9109,-496 -9171,-478 -9171,-362 -9236,-255 -9375,-117
 (Frankfurter Allee, Nebenfahrbahn): Kopfsteinpflaster, OK	Q1- 16865,11931 16837,11920 16764,11919 16702,11920
 (Frankfurter Allee, Nebenfahrbahn): asphaltiert	Q0 16702,11920 16535,11920
+Nalepastr.: Asphalt mit Schäden	Q1 17079,8456 17065,8396
+Nalepastr.: unbefestigt	Q2 17065,8396 17057,8235
+Nalepastr.: Kleinsteinpflaster	Q1- 17057,8235 17056,8159
+Nalepastr.: Beton	Q1+ 17056,8159 17059,8097
 Nalepastr.: Kopfsteinpflaster	Q2 17052,7738 17059,8097
 Nalepastr.: Asphalt	Q0 17050,7687 17052,7738
 Nalepastr.: Beton, Eisenbahnschienen	Q1+ 17050,7687 17047,7619
@@ -2077,7 +2082,7 @@ Bruno-Bürgel-Weg: Beton	Q0 20781,5242 20437,5463
 Bruno-Bürgel-Weg: Asphalt	Q0 20437,5463 20348,5509 20065,5534 19814,5512 19696,5456 19588,5385 19386,5335 19328,5304
 #: by: Marko (hilse)
 #: corrected_by: srt (teilweise)
-Wattstr. (Oberschöneweide): sehr schlechtes Kopfsteinpflaster	Q3 17620,7260 17644,7219 17632,6930
+Wattstr. (Oberschöneweide): sehr schlechtes Kopfsteinpflaster	Q3 17620,7259 17644,7219 17632,6930
 #: note: aber das ursprüngliche Kopfsteinpflaster war eher schlecht, deshalb "-"
 Wattstr. (Oberschöneweide): mit Teer verfugtes Kopfsteinpflaster	Q2- 17632,6930 17652,6828 17766,6616
 #: confirmed_by: srt
@@ -2669,7 +2674,7 @@ Firlstr.: Asphalt	Q0 18640,6542 18645,6511 18574,6401 18473,6265
 Lauffener Str.: glattes Pflaster	Q1; 18473,6265 18428,6123
 #: note: bei wenig Verkehr kann man u.U. auf dem glatteren Pflaster auf der linken Seite fahren
 Lauffener Str.: Kopfsteinpflaster	Q2+; 18428,6123 18473,6265
-Mentelinstr.: akzeptables Kopfsteinpflaster	Q1- 17847,7356 17747,7322 17647,7280 17620,7260 17453,7136 17352,7051
+Mentelinstr.: akzeptables Kopfsteinpflaster	Q1- 17847,7356 17833,7351 17747,7322 17647,7280 17620,7259 17456,7132 17352,7051
 Mentelinstr.: Asphalt	Q0 17352,7051
 Stahnsdorfer Str.: Asphalt	Q0 -7821,-1890 -7984,-1899
 Bona-Peiser-Weg: einige Bodenschwellen	Q1 12010,11545 11947,11398
@@ -3318,7 +3323,7 @@ Katharina-Paulus-Str.: Kopfsteinpflaster	Q2 7867,13106 7867,13127
 Priesterweg (Britz): sehr schlechtes Kopfsteinpflaster	Q3- 13227,6209 13220,6237 13239,6344
 Mackenroder Weg: schlechtes Kopfsteinpflaster, mit einigen Asphaltflicken	Q3 12805,6248 12833,6127
 #: note: aus dem Auto gesehen
-Otto-Krüger-Zeile: Asphalt	Q0 17453,7136 17484,7087 17552,6959 17574,6908
+Otto-Krüger-Zeile: Asphalt	Q0 17456,7132 17484,7087 17552,6959 17574,6908
 Rampe: asphaltiert	Q0 4206,12691 4234,12710
 (Neues Ufer - Kaiserin-Augusta-Allee): Parkweg, feiner bis gröberer Schotter	Q2+ 4456,12918 4514,12936 4581,13066 4576,13115 4547,13139
 (Neues Ufer - Kaiserin-Augusta-Allee): asphaltiert	Q0 4547,13139 4561,13244

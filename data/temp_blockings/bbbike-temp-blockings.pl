@@ -25778,4 +25778,12 @@ EOF
 userdel	q4::inwork; 5488,10978 5613,10963 5652,11004
 EOF
      },
+     { from  => 1490635298, # 2017-03-27 19:21
+       until => 1491667200, # 2017-04-08 18:00
+       text  => 'Glinkastr.: zwischen Französische Str. und Behrenstr. Baustelle, Richtung Unter den Linden gesperrt, bis 08.04.2017',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork; 9183,12076 9164,12172
+EOF
+     },
     );
