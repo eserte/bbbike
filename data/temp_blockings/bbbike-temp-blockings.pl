@@ -131,9 +131,10 @@ EOF
      },
      { from  => $isodate2epoch->("2016-04-15 10:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2016-04-17 23:59:59"),
-       periodic => 1, # erster Termin im Jahr
-       recurrences => [["yearly", days => 11, months => 4]],
-       recurrence_prewarn_days => 14, # weil der Termin ggfs. erst sehr spät feststeht
+       ## fehlt es 2017 aus?
+       #periodic => 1, # erster Termin im Jahr
+       #recurrences => [["yearly", days => 11, months => 4]],
+       #recurrence_prewarn_days => 14, # weil der Termin ggfs. erst sehr spät feststeht
        source_id => 'http://nareyka.events/news-events/mehr/artikel/44-fruehlingsfest-rheinstrasse.html',
        text  => "Rheinstraßenfest in der Rheinstraße zwischen Kaisereiche und Walther-Schreiber-Platz, am 16.04.2016 und 17.04.2016",
        data  => <<EOF,

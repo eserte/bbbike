@@ -1135,8 +1135,10 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
          'data' => '#: note: Sperrung bestätigt von Stefan (s.sms): vvv
 #: note: genauere Uhrzeit von Dieter Heimann
 #: confirmed_by: um 20:30 Uhr steht man vor einem geschlossenen Tor, zumindest an der Nordostseite (2012-08)
+#: tempex: sa,su,holiday,(mo-fr T20:00-sunrise) vvv
 Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21683,6946 21498,7153 21475,7500 21497,7597 21546,7635
 Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21475,7500 21341,7487 21025,7349
+#: tempex ^^^
 #: note: ^^^
 ',
          'from' => undef,
@@ -1147,7 +1149,8 @@ Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am 
          'until' => undef
        },
        {
-         'data' => '	2::night -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12094,1273 -12133,1323
+         'data' => '#: tempex: sunset-T06 vvv
+	2::night -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12094,1273 -12133,1323
 	2::night -11650,590 -11603,721 -11615,853
 	2::night -11510,810 -11562,918 -11575,1031 -11537,1206 -11544,1262 -11580,1281 -11871,1185 -11990,1214 -12124,1359 -12135,1358
 	2::night -11615,853 -11510,810 -11412,784 -11392,762 -11231,696
@@ -1158,6 +1161,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
 	2::night -12263,-403 -12280,-385 -12306,-378 -12357,-307 -12371,-284 -12396,-298
 	2::night -12449,-186 -12440,-181 -12449,-134 -12424,-107
 (Ökonomieweg - Leistikowstr.)	2::night -12205,732 -12266,731 -12297,738
+#: tempex ^^^
 ',
          'from' => undef,
          'id' => 1809,
@@ -1167,11 +1171,13 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'until' => undef
        },
        {
-         'data' => '(Am Neuen Palais, direkter Weg)	2::night -15810,-1274 -15820,-1146 -15854,-656
+         'data' => '#: tempex: sunset-T06 vvv
+(Am Neuen Palais, direkter Weg)	2::night -15810,-1274 -15820,-1146 -15854,-656
 (Am Grünen Gitter, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -13857,-1040 -14159,-1119 -14171,-1026
 (Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14171,-1026 -14482,-1043 -14622,-1138 -14865,-1118 -15025,-1096 -15553,-1139 -15651,-1137 -15820,-1146
 (Lennestr. - Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14614,-1342 -14856,-1223 -14865,-1118
 (Affengang, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14129,-1258 -14131,-1181 -14159,-1119
+#: tempex ^^^
 ',
          'from' => undef,
          'id' => 1810,
@@ -1181,7 +1187,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'until' => undef
        },
        {
-         'data' => '	2::night 3332,12742 3231,12749 3127,12793 3065,12975 3016,13315 2987,13448 2953,13489 2950,13552
+         'data' => '#: tempex: night
+	2::night 3332,12742 3231,12749 3127,12793 3065,12975 3016,13315 2987,13448 2953,13489 2950,13552
 ',
          'from' => undef,
          'id' => 1811,
@@ -1191,7 +1198,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'until' => undef
        },
        {
-         'data' => '	2::night:weekend 10624,11548 10526,11612
+         'data' => '#: tempex: so,holiday,(mo-sa T23-T06)
+	2::night:weekend 10624,11548 10526,11612
 ',
          'from' => undef,
          'id' => 1812,
@@ -1203,6 +1211,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'data' => '######################################################################
 # Wochenmärkte vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+#: tempex: (tu,fr) T08-T13
 	q4::temp:clock 4397,7380 4330,7382 4161,7388 4064,7396
 ',
          'from' => undef,
@@ -1213,7 +1222,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'until' => undef
        },
        {
-         'data' => '	q4::temp:clock 3374,10201 3359,9968 3348,9806
+         'data' => '#: tempex: (tu,fr) T08-T13
+	q4::temp:clock 3374,10201 3359,9968 3348,9806
 ',
          'from' => undef,
          'id' => 1814,
@@ -1223,7 +1233,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'until' => undef
        },
        {
-         'data' => '#: note: der Abbau dürfte mindestens eine weitere Stunde dauern...
+         'data' => '#: note: der Auf/Abbau dürfte mindestens eine weitere Stunde dauern, in tempex eingerechnet
+#: tempex: (tu,fr) T10:00-T19:30, sa T10:00-T18:00
 	q4::temp:clock 11543,10015 11669,9987 11880,9874
 ',
          'from' => undef,
@@ -1236,6 +1247,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'data' => '#: note: http://www.berlin.de/ba-friedrichshain-kreuzberg/wirtschaftsfoerderung/wirtschaftsstandort/maerkte.html
 # REMOVED (Montag stimmt, geprüft!) --- #: XXX Überprüfen, ob die Wochentage (Mo+Do und _nicht_ Sa) stimmen
+#: tempex: (mo,th) T10-T18
 	q3::temp:clock 9570,10566 9587,10421
 ',
          'from' => undef,
@@ -1246,7 +1258,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'until' => undef
        },
        {
-         'data' => '	q4::temp:clock 7882,9490 7836,9413 7771,9389
+         'data' => '#: tempex: (we, sa) T10-T15
+	q4::temp:clock 7882,9490 7836,9413 7771,9389
 ',
          'from' => undef,
          'id' => 1817,
@@ -1256,7 +1269,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'until' => undef
        },
        {
-         'data' => '	q4::temp:clock 3073,9020 2972,9037
+         'data' => '#: tempex: (mo, th) T09-T14
+	q4::temp:clock 3073,9020 2972,9037
 ',
          'from' => undef,
          'id' => 1818,
@@ -1266,7 +1280,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'until' => undef
        },
        {
-         'data' => '	q4::temp:clock 4101,11347 4101,11233
+         'data' => '#: tempex: we T08-T13, sa T08-T14
+	q4::temp:clock 4101,11347 4101,11233
 ',
          'from' => undef,
          'id' => 1819,
@@ -1276,7 +1291,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'until' => undef
        },
        {
-         'data' => '	q4::temp:clock 3763,12279 3701,12279
+         'data' => '#: tempex: (mo,th) T08-T13
+	q4::temp:clock 3763,12279 3701,12279
 ',
          'from' => undef,
          'id' => 1820,
@@ -1286,7 +1302,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'until' => undef
        },
        {
-         'data' => '	q4::temp:clock 1020,496 1078,443
+         'data' => '#: tempex: sa T08-T13
+	q4::temp:clock 1020,496 1078,443
 ',
          'from' => undef,
          'id' => 1821,
@@ -1299,9 +1316,10 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        {
          'data' => '#: by: Marek Bänsch:
 #: confirmed_by: srt
-#: tempex: YYYY1001-YYYY0315 T18:30-T07:00, YYYY0316-YYYY0930 T21:30-T07:00
+#: tempex: YYYY1001-YYYY0315 T18:30-T07:00, YYYY0316-YYYY0930 T21:30-T07:00 vvv
 	2::night 8332,13548 8248,13659 8101,13901 8119,13912 8096,13951 8011,14096
 	2::night 8096,13951 8200,14016
+#: tempex ^^^
 ',
          'from' => undef,
          'id' => 1823,
