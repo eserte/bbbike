@@ -3609,8 +3609,8 @@ sub search_anything {
 		    } @$matches;
 		} elsif ($sort eq 'cat') {
 		    my $cat_stack_mapping = Strassen->default_cat_stack_mapping();
+		    no warnings 'uninitialized';
 		    @sorted_matches = sort {
-			no warnings 'uninitialized';
 			my $cmp = $cat_stack_mapping->{$b->[Strassen::CAT()]} <=> $cat_stack_mapping->{$a->[Strassen::CAT()]};
 			if ($cmp == 0) {
 			    $a->[Strassen::NAME()] cmp $b->[Strassen::NAME()];
