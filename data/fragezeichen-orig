@@ -442,8 +442,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/holzmarktstrasse/index.shtml
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/holzmarktstrasse/download/LP_01.pdf
 #: source_id: 2147340618
-#: last_checked: 2017-03-20
-#: next_check: 2017-04-01
+#: last_checked: 2017-03-30
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 # 
 # REMOVED (realisiert) --- #: by: http://www.aktion-kms.de/files/2015-07-13_flyer_isarneckar_final.pdf --- #: last_checked: 2016-12-15 --- #: check_frequency: 30d --- Neckarstr./Isarstr.: Umgestaltung, danach verkehrsberuhigter Bereich; ändert sich am Fahrbahnbelag etwas?	?::inwork 12368,8356 12382,8292 12509,8318 12639,8344
@@ -1210,6 +1209,7 @@ Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Brücke 
 # 
 #: XXX diese Straßen existieren noch nicht
 #: XXX teilweise fehlen sie auch in Berlin.coords.data
+#: osm_watch: way id="451344723" version="2"
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6425
 #: last_checked: 2016-10-02 vvv
 #: check_frequency: 360d vvv
@@ -1217,8 +1217,6 @@ An den Auen: Qualität?	?::projected 21194,19054 21248,19007 21285,18950 21310,18
 Markus-Herz-Weg: Qualität?	?::projected 20701,18634 20910,18719 21123,18813
 David-Friedländer-Weg: Qualität?	?::projected 20727,18726 20901,18793 21038,18851 21024,18915 20995,18988
 Dohmweg: Qualität?	?::projected 20760,18812 20894,18861 21024,18915
-#: osm_watch: way id="163492498" version="5"
-#: XXX_osm referenzierter Track wird vermutlich entfernt
 Georg-Förster-Allee: Qualität?	?::projected 20922,18613 20910,18719 20901,18793 20894,18861 20889,18943 20883,19045
 Löffleranger: Qualität?	?::projected 20995,18988 20978,19009 20964,19026 20917,19017 20918,18987 20978,19009
 Weidenröschenweg: Qualität?	?::projected 21123,18813 21310,18889
@@ -1278,8 +1276,8 @@ Wolzenseeweg: Qualität? Straße bereits fertiggestellt? Wird es eine Überquerungs
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 # 
 #: next_check_id: OBERWALL-2014 vvv
-#: last_checked: 2017-03-21 vvv
-#: check_frequency: 90d vvv
+#: last_checked: 2017-03-29 vvv
+#: next_check: 2017-03-29 vvv
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: XXX siehe auch gesperrt-orig-Eintrag zur Oberwallstr.
@@ -1288,10 +1286,11 @@ Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg
 Falkoniergasse: Genaue Lage? Qualität?	?::inwork 9945,12180 9915,12259
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
 #: XXX_osm: fehlt bei osm als "planned"/"proposed"
+#: XXX existiert und ist ausgeschildert
 #: by: http://www.dafmap.de/d/berlin.html?id=3520&mt=0&zoom=16
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2016 (Widmung)
 Prinzengasse: Genaue Lage? Qualität?	?::inwork 9973,12292 9997,12295
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
@@ -1631,7 +1630,7 @@ Lutterbacher Str. - Dahlemer Weg: wird es hier eine weitere Verbindung geben?	? 
 # 
 #: last_checked: 2017-03-12
 #: check_frequency: 21d
-Richard-Sorge-Str./Weidenweg: Bau von zwei Zebrastreifen oder einer Ampel	?::inwork 13467,12521 13463,12507 13476,12501
+Richard-Sorge-Str./Weidenweg: Bau von zwei Zebrastreifen oder einer Ampel	?::inwork 13467,12521 13457,12505 13476,12501
 # 
 # REMOVED (noch immer nichts) --- #: XXX laut fritz von 2017-02-27 bis 2017-03-10, laut vmz bis Ende März 2017 --- #: source_id: 2147340962 --- #: last_checked: 2017-02-27 --- #: check_frequency: 3d --- Gartenstr.: Sperrung zw. Invalidenstr. und Bernauer Str. auch für Radfahrer relevant?	?; 9383,13986 9224,14169
 # 
@@ -1787,7 +1786,7 @@ Elsbeerenweg.: Qualität? Genaue Lage? Existiert die Straße schon?	? -6378,5877 -
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_929_16.pdf
 #: osm_watch: way id="295627704" version="4"
-#: last_checked: 2017-03-12
+#: last_checked: 2017-03-30
 #: check_frequency: 60d
 Liebigstr.: Einrichtung einer Spielstraße, wo genau?	? 14229,12311 14166,12323 14147,12344 14091,12355 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
 # 
@@ -1796,7 +1795,7 @@ Liebigstr.: Einrichtung einer Spielstraße, wo genau?	? 14229,12311 14166,12323 1
 #: XXX Bauarbeiten zwischen Thaerstr. und Hübnerstr.
 #: XXX NEW	Eldenaer Str. (Friedrichshain) In beiden Richtungen Kreuzung Proskauer Str. (Berlin)  Gültig ab: 24.11.2016 06:15  Baustelle, Vollsperrung (bis vsl. Ende 11/16)	2147340785
 #: XXX -> ist die Vollsperrung für Radfahrer relevant? -> am Abend schon wieder aufgehoben?
-#: last_checked: 2017-03-12 vvv
+#: last_checked: 2017-03-30 vvv
 #: check_frequency: 30d
 Eldenaer Str.: in Richtung Osten sind noch Bauarbeiten, vermutlich werden die Radspuren danach markiert	?::inwork; 14096,12827 14355,12752
 #: check_frequency: 14d

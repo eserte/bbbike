@@ -21527,15 +21527,16 @@ EOF
 userdel	q4::inwork; 7085,15226 7131,15109
 EOF
      },
-     { from  => $isodate2epoch->("2016-04-28 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-05-01 23:59:59"),
-       text  => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz, Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (29.04.2016 bis 01.05.2016)',
+     { from  => $isodate2epoch->("2017-04-28 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-05-01 23:59:59"),
+       text  => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz, Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (29.04.2017 bis 01.05.2017)',
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 4]],
        type  => 'handicap',
        data  => <<EOF,
 #: by: http://www.ag-bahnhofstrasse.de/maientanz.html?y=2016
 #: by: http://www.berlin.de/tickets/suche/detail.php?id=954647
+#: by: http://www.volksfeste-in-deutschland.de/kunst-wein-in-lichtenrade.html
 #: tempex: YYYY0429-YYYY0501
 userdel	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
 EOF
@@ -25666,7 +25667,7 @@ EOF
      },
      { from  => 1473704924, # 2016-09-12 20:28
        until => $isodate2epoch->("2016-10-04 12:00:00"), # 1475272800, # 2016-10-01 00:00
-       text  => 'Wiesendamm: Bauarbeiten, RIchtung Spandauer Damm Fahrbahn gesperrt, bis 04.10.2016',
+       text  => 'Wiesendamm: Bauarbeiten, Richtung Spandauer Damm Fahrbahn gesperrt, bis 04.10.2016',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147340518
@@ -25910,8 +25911,18 @@ EOF
        until => 1491667200, # 2017-04-08 18:00
        text  => 'Glinkastr.: zwischen Französische Str. und Behrenstr. Baustelle, Richtung Unter den Linden gesperrt, bis 08.04.2017',
        type  => 'handicap',
+       source_id => '2147341088',
        data  => <<EOF,
 userdel	q4::inwork; 9183,12076 9164,12172
+EOF
+     },
+     { from  => 1491170400, # 2017-04-03 00:00
+       until => 1504303199, # 2017-09-01 23:59
+       text  => 'Albrechtstr.: Bauarbeiten zwischen Neue Filandastr. und Breite Str., Einbahnstraße offen Richtung Osten, vom 4. April 2017 bis Anfang September 2017',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.576875.php',
+       data  => <<EOF,
+userdel	q4::inwork; 5583,5179 5527,5217 5416,5289 5397,5302 5382,5312
 EOF
      },
     );

@@ -2326,7 +2326,29 @@ userdel	2::temp 6230,8602 6313,8638 6454,8653
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.ag-bahnhofstrasse.de/maientanz.html?y=2016
+#: by: http://www.berlin.de/tickets/suche/detail.php?id=954647
+#: by: http://www.volksfeste-in-deutschland.de/kunst-wein-in-lichtenrade.html
+#: tempex: YYYY0429-YYYY0501
+userdel	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
+',
+         'from' => 1493330400,
+         'id' => 2431,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              29,
+                              'months',
+                              4
+                            ]
+                          ],
+         'text' => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz, Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (29.04.2017 bis 01.05.2017)',
+         'type' => 'handicap',
+         'until' => 1493675999
+       },
        undef,
        undef,
        undef,
@@ -3208,9 +3230,20 @@ userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,
 ',
          'from' => 1490635298,
          'id' => 2852,
+         'source_id' => '2147341088',
          'text' => 'Glinkastr.: zwischen Französische Str. und Behrenstr. Baustelle, Richtung Unter den Linden gesperrt, bis 08.04.2017',
          'type' => 'handicap',
          'until' => 1491667200
+       },
+       {
+         'data' => 'userdel	q4::inwork; 5583,5179 5527,5217 5416,5289 5397,5302 5382,5312
+',
+         'from' => 1491170400,
+         'id' => 2853,
+         'source_id' => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.576875.php',
+         'text' => 'Albrechtstr.: Bauarbeiten zwischen Neue Filandastr. und Breite Str., Einbahnstraße offen Richtung Osten, vom 4. April 2017 bis Anfang September 2017',
+         'type' => 'handicap',
+         'until' => 1504303199
        }
      
 );
