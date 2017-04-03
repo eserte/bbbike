@@ -128,11 +128,16 @@ sub yml_to_bbd {
     require BBBikeYAML;
 
     my $x = BBBikeYAML::LoadFile($infile);
+    my $done_header;
     for my $rec (@$x) {
 	my $d = $rec->{data};
 	next if not $d;
 	next if $filter_recurring    && !($rec->{permanent} || $rec->{recurring});
 	next if $filter_nonrecurring &&  ($rec->{permanent} || $rec->{recurring});
+	if (!$done_header) {
+	    print "#: source_file: $infile\n#:\n";
+	    $done_header = 1;
+	}
 	if ($rec->{source_id}) {
 	    my @source_ids = ref $rec->{source_id} eq 'ARRAY' ? @{ $rec->{source_id} } : $rec->{source_id};
 	    for my $source_id (@source_ids) {
