@@ -371,14 +371,15 @@ EOF
 userdel	2 6228,13324 6115,13328 6105,13328 6011,13330 5956,13330 5857,13342 5705,13359 5569,13381 5560,13382 5434,13398 5368,13406 5248,13434
 EOF
      },
-     { from  => $isodate2epoch->("2016-04-30 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-05-01 23:59:59"),
+     { from  => $isodate2epoch->("2017-04-30 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-05-01 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 5]],
-       text  => 'MyFest: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2016',
+       text  => 'MyFest: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2017',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.myfest36.de/
+#: tempex: YYYY0431T1200-YYYY05020000 vvv
+#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2971249-2970764-myfest-berlin.html
 userdel	2::temp 11763,10635 11722,10533 11949,10414
 userdel	2::temp 11556,10869 11770,10774 11760,10732 11781,10696 11763,10635 11505,10744 11556,10869 11589,10947 11640,11067
 userdel	2::temp 11958,11045 11897,10887 11841,10747 11824,10708 11781,10696
@@ -388,6 +389,7 @@ userdel	2::temp 11841,10747 11770,10774 11799,10848
 userdel	2::temp 11463,10642 11275,10723 11234,10739 11159,10769
 userdel auto	3 11258,10682 11275,10723 11253,10778
 userdel auto	3 11253,10778 11275,10723 11258,10682
+#: tempex ^^^
 EOF
      },
      { from  => 1083232800, # 2004-04-29 12:00
@@ -1453,7 +1455,7 @@ EOF
        text  => 'Weihnachtsmarkt am Opernpalais, bis 25.12.2004',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::xmas 9898,12161 9882,12259 9876,12298 9858,12410
+userdel	2::xmas 9898,12161 9883,12251 9876,12298 9858,12410
 userdel	2::xmas 9798,12267 9795,12293 9780,12401
 EOF
      },
@@ -9514,9 +9516,9 @@ EOF
        text  => 'Berliner Gauklerfest vom 24. Juli 2009 bis 2. August 2009, einige Straßen am Opernpalais sind vollständig gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 9898,12161 9882,12259 9876,12298 9795,12293 9780,12401
+userdel	2::temp 9898,12161 9883,12251 9876,12298 9795,12293 9780,12401
 userdel	2::temp 9876,12298 9858,12410
-userdel	2::temp 9943,12364 9961,12273 9972,12184
+userdel	2::temp 9943,12364 9955,12300 9959,12281 9972,12184
 userdel	2::temp 9934,12420 9943,12364
 EOF
      },
@@ -17000,9 +17002,9 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_014608',
        data  => <<EOF,
-userdel	2::temp 9943,12364 9961,12273 9972,12184
+userdel	2::temp 9943,12364 9955,12300 9959,12281 9972,12184
 userdel	2::temp 9780,12401 9795,12293 9798,12267 9808,12182 9812,12150
-userdel	2::temp 9858,12410 9876,12298 9882,12259 9898,12161
+userdel	2::temp 9858,12410 9876,12298 9883,12251 9898,12161
 EOF
      },
      { from  => 1258239600, # 2009-11-15 00:00
@@ -17846,7 +17848,7 @@ EOF
 		} . '. Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
        recurring => 1,
        data  => <<EOF,
-#: tempex: (YYYY01,YYYY12) T17:00-T07:30, (YYYY02,YYYY11) T18-T07, (YYYY03,YYYY10) T19-T06, (YYYY04,YYYY09) T20:30-T06:00, (YYYY05,YYYY08) T21:30-T06:00, (YYYY06,YYYY07) T22:30-T06:00
+#: tempex: (YYYY01,YYYY12) T17:00-T07:30, (YYYY02,YYYY11) T18-T07, (YYYY03,YYYY10) T19-T06, (YYYY04,YYYY09) T20:30-T06:00, (YYYY05,YYYY08) T21:30-T06:00, (YYYY06,YYYY07) T22:30-T06:00 vvv
 (Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10691,8532 10644,8363 10598,8270 10575,8218
 (Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof)	2::night 10598,8270 10729,8152
 (Eingang Columbiadamm/Golßener Str. - Rundkurs auf dem Flughafen Tempelhof)	2::night 10384,8628 10360,8521 10298,8245
@@ -20902,7 +20904,7 @@ EOF
        text  => 'Gauklerfest, Straßen am Schinkelplatz gesperrt, vom 1. August bis 11. August 2013',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 9994,12368 10008,12274 10010,12259 10029,12208
+userdel	2::temp 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
 userdel	2::temp 10008,12274 10058,12290 9996,12401
 userdel	2::temp 10091,12232 10058,12290
 EOF
@@ -25076,8 +25078,8 @@ EOF
 EOF
      },
      { from  => 1459720800, # 2016-04-04 00:00
-       until => undef, # kein Endedatum mehr --- $isodate2epoch->("2017-01-31 12:00:00"), # 1484348400, # 2017-01-14 00:00
-       text  => 'Blankertzweg/Hildburghauser Straße: Bauarbeiten zwischen Osdorfer Str. und Woltmannweg, Einbahnstraße, Radfahrer können auf dem schmalen Gehweg fahren',
+       until => $isodate2epoch->("2018-06-30 12:00:00"), # 1484348400, # 2017-01-14 00:00
+       text  => 'Blankertzweg/Hildburghauser Straße: Bauarbeiten zwischen Osdorfer Str. und Woltmannweg, Einbahnstraße, Radfahrer können auf dem schmalen Gehweg fahren, bis Mitte 2018',
        type  => 'handicap',
        source_id => '2147339913',
        data  => <<EOF,
@@ -25620,7 +25622,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-03-21 vvv
+#: last_checked: 2017-04-03 vvv
 #: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375

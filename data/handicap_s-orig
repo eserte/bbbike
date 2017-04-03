@@ -12,17 +12,11 @@
 # 
 #: next_check_id: RUEDERSDORFER-2016
 #: osm_watch: way id="472360197" version="1"
-#: last_checked: 2017-03-29
+#: last_checked: 2017-04-03
 #: check_frequency: 14d
 R¸dersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 13173,11788 13066,11854
 # 
-#: last_checked: 2017-03-30 vvv
-#: check_frequency: 14d vvv
-Gubener Str.: Bauarbeiten an der Kreuzung Gr¸nberger/Wedekindstr., Ausweichen auf Gehweg	q2::inwork 13406,11896 13352,12003
-# REMOVED --- Gubener Str.: Bauarbeiten an der Kreuzung Gr¸nberger/Wedekindstr., Ausweichen auf Gehweg	q3-::inwork 13339,12029 13352,12003
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
+# REMOVED --- #: last_checked: 2017-03-30 vvv --- #: check_frequency: 14d vvv --- Gubener Str.: Bauarbeiten an der Kreuzung Gr¸nberger/Wedekindstr., Ausweichen auf Gehweg	q2::inwork 13406,11896 13352,12003 --- # REMOVED --- Gubener Str.: Bauarbeiten an der Kreuzung Gr¸nberger/Wedekindstr., Ausweichen auf Gehweg	q3-::inwork 13339,12029 13352,12003
 # REMOVED --- #: last_checked: 2016-07-27 --- #: check_frequency: 14d --- Koppenstr.: Wasserrohrbruch, Fahrbahn gesperrt	q2::inwork 12409,11902 12366,11808
 # REMOVED --- #: XXX laut fritz bis 09.09.2016 --- #: last_checked: 2016-08-07 --- #: next_check: 2016-09-09 --- Lange Str.: Bauarbeiten, Kreuzungsbereich gesperrt, 2x Bordsteine	q3::inwork 11993,11978 12238,11931
 # REMOVED --- : source_id: LMS-BR_r_LMS-BR_73434 --- #: source_id: 2147340364 --- #: source_id: LMS-BR_r_LMS-BR_78589 --- #: source_id: 2147340546 --- #: XXX bis Mitte Dezember --- #: last_checked: 2016-12-12 --- #: next_check: 2016-12-19 --- #: priority: #A --- #: valid: -20161219 --- Straﬂe der Pariser Kommune: Wasserrohrbruch, Fahrbahn unter der Bahnbr¸cke gesperrt, Gehweg f¸r Radfahrer frei	q3::inwork 12645,11673 12551,11515
@@ -90,22 +84,22 @@ Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4
 #: confirmed_by: srt
 #: source_id: 2147340953
 #: XXX laut VMZ bis Anfang April 2017
-#: last_checked: 2017-03-21
-#: next_check: 2017-04-01
+#: last_checked: 2017-04-03
+#: check_frequency: 14d
 Schloﬂplatz: Engstelle wegen Bauarbeiten	q3::inwork 10285,12306 10357,12356
 # 
 #: last_checked: 2017-03-24
 Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3339&mt=0&zoom=16 (Projektabschluss: 2017-03-31)
-#: last_checked: 2017-03-30
+#: last_checked: 2017-04-03
 Kommandantenstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10330,11422 10136,11529
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3339&mt=0&zoom=16 (Projektabschluss: 2017-03-31)
-#: last_checked: 2017-03-30
+#: last_checked: 2017-04-03
 Beuthstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10201,11631 10235,11610 10330,11422
 # 
-#: last_checked: 2017-03-30
+#: last_checked: 2017-04-03
 Sebastianstr.: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 10640,11564 10818,11269
 # 
 #: last_checked: 2017-03-14
@@ -138,7 +132,7 @@ Alexandrinenstr.: direkter Zugang zur Sebastianstr. nicht mehr mˆglich, stattdes
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
 # REMOVED --- #: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualit‰t -> qualitaet_s-orig-Eintrag revidieren --- #: last_checked: 2013-11-21 --- Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2017-03-30
+#: last_checked: 2017-04-03
 #: check_frequency: 90d
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9984,12426 9996,12401 10058,12290
 # REMOVED --- Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q4::inwork 9996,12401 9994,12368 9943,12364
@@ -225,29 +219,30 @@ Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
 #: last_checked: 2017-03-14
+#: check_frequency: 90d
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # 
 #: next_check_id: STAATSOPER-2014 vvv
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html
-#: last_checked: 2017-03-21 vvv
+#: last_checked: 2017-04-03 vvv
 #: check_frequency: 30d vvv
-Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9882,12259 9876,12298
+Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9883,12251 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2017-03-21
-Werdersche Rosenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9882,12259 9961,12273
+#: last_checked: 2017-04-03
+Werdersche Rosenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9883,12251 9959,12281
 # 
 #: next_check_id: OBERWALL-2014
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch Eintrag in handicap_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0194-oberwallstrae-werderscher-markt.html
 #: osm_watch: way id="66071370" version="4"
-#: last_checked: 2017-03-21
+#: last_checked: 2017-04-03
 #: check_frequency: 30d
-Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9898,12161 9882,12259
+Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9898,12161 9883,12251
 # 
 #: next_check_id: STAATSOPER-2014
 #: XXX siehe auch aufgehobene Einbahnstraﬂenregelung in gesperrt-orig (Behrenstr./Bebelplatz)
@@ -263,7 +258,7 @@ Behrenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9743,12239 9798,12267
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6145.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2017-03-21
+#: last_checked: 2017-04-03
 #: check_frequency: 30d
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -303,7 +298,7 @@ Carl-Herz-Ufer: Sperrung der Fahrbahn an der Baerwaldstr.	q4::inwork 10430,10081
 #: source_id: LMS-BR_r_LMS-BR_68468
 #: source_id: LMS-BR_r_LMS-BR_85494
 #: XXX laut fritz "Vollsperrung" in der Alexandrinenstr (bis 31.03.2017, sp‰ter bis 30.04.2017 verl‰ngert) ("Vollsperrung" stimmt aber nicht)
-#: last_checked: 2017-03-30
+#: last_checked: 2017-04-03
 #: next_check: 2017-04-30
 Stallschreiberstr., Alexandrinenstr.: Einbahnstraﬂenregelung	q4::inwork; 10794,10927 10824,11010 10678,11172 10593,11120 10501,11056
 # 
@@ -2452,6 +2447,8 @@ entlang der Straﬂenbahn: einige Fuﬂg‰nger	q1 17486,17266 17790,17126 17861,17099
 Schulstr. (Lankwitz): Fuﬂg‰nger	q3 6692,3334 6653,3297 6647,3292
 (Biesheimring - Lutterbacher Str.): einige Fuﬂg‰nger	q1 2048,3062 2066,3072
 (Biesheimring - Lutterbacher Str.): einige Fuﬂg‰nger	q1 1987,3166 1999,3177
+#: note: relativ kurz, deshalb q2
+Prinzengasse: einige Fuﬂg‰nger	q2 9955,12300 10002,12305
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

@@ -33,7 +33,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12128
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2017-02-17
+#: last_checked: 2017-04-03
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -62,8 +62,8 @@ Hubertusallee/Teplitzer Str.: hier werden Radspuren markiert	?::inwork 2322,8857
 # 
 #: XXX Baumaßnahmen GR6.20, GR6.19 (Realisierung nach 2011)
 #: osm_watch: way id="4323788" version="17"
-#: osm_watch: way id="23109081" version="8"
-#: osm_watch: way id="41108858" version="6"
+#: osm_watch: way id="23109081" version="9"
+#: osm_watch: way id="41108858" version="7"
 #: source_id: IM_026443	
 #: last_checked: 2017-03-18
 #: check_frequency: 90d
@@ -189,8 +189,8 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 # 
 #: XXX Baumaßnahme 11.34 (Realisierung nach 2011)
 #: osm_watch: way id="182782708" version="6"
-#: osm_watch: way id="168307255" version="5"
-#: osm_watch: way id="4687243" version="23"
+#: osm_watch: way id="168307255" version="6"
+#: osm_watch: way id="4687243" version="24"
 #: last_checked: 2017-03-12
 #: check_frequency: 45d
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14658,14328 14465,14210 14361,14145 14298,14015 14261,13932 14218,13834
@@ -1276,21 +1276,14 @@ Wolzenseeweg: Qualität? Straße bereits fertiggestellt? Wird es eine Überquerungs
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 # 
 #: next_check_id: OBERWALL-2014 vvv
-#: last_checked: 2017-03-29 vvv
-#: next_check: 2017-03-29 vvv
+#: last_checked: 2017-04-03 vvv
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: XXX siehe auch gesperrt-orig-Eintrag zur Oberwallstr.
 #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
 #: XXX_osm: fehlt bei osm als "planned"/"proposed"
 Falkoniergasse: Genaue Lage? Qualität?	?::inwork 9945,12180 9915,12259
-#: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
-#: XXX_osm: fehlt bei osm als "planned"/"proposed"
-#: XXX existiert und ist ausgeschildert
-#: by: http://www.dafmap.de/d/berlin.html?id=3520&mt=0&zoom=16
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2016 (Widmung)
-Prinzengasse: Genaue Lage? Qualität?	?::inwork 9973,12292 9997,12295
-#: next_check ^^^
+# REMOVD --- #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117 --- #: XXX_osm: fehlt bei osm als "planned"/"proposed" --- #: XXX existiert und ist ausgeschildert --- #: by: http://www.dafmap.de/d/berlin.html?id=3520&mt=0&zoom=16 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2016 (Widmung) --- Prinzengasse: Genaue Lage? Qualität?	?::inwork 9956,12297 10004,12302
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
@@ -1317,9 +1310,9 @@ Prinzengasse: Genaue Lage? Qualität?	?::inwork 9973,12292 9997,12295
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.95087.php (Beginn im Jahr 2014)
 #: osm_watch: way id="148035923" version="6"
 #: source_id: 2147339913
-#: XXX zurzeit Bauarbeiten (laut fritz bis 13.01.2017), gibt es Einschränkungen für Radfahrer?
+#: XXX zurzeit Bauarbeiten (laut fritz bis 30.06.2018), gibt es Einschränkungen für Radfahrer?
 #: last_checked: 2017-03-26
-#: check_frequency: 30d
+#: check_frequency: 180d
 Blanckertzweg: Radfahrstreifen in Planung (ebenso östlicher Teil der Hildburghauser Str.)	?::inwork 4795,1362 4702,1298 4631,1249 4542,1188
 # 
 #: XXX nach dem Straßenausbau besserer Asphalt, Radwege wird es nur bis zur Zerbster Str. in Westrichtung und ab Stadtilmer Weg in Ostrichtung geben
@@ -1624,6 +1617,22 @@ Kurpromenade: wird die Fahrbahn hier erneuert?	?::projected -8862,6375 -8860,643
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: source_id: 2147341140
+#: XXX laut vmz bis Mitte April 2017, laut rbb bis 24. April 2017, laut fritz bis 21. April 2017
+Fraenkelufer: Vollsperrung auch für Radfahrer relevant?	? 11199,9993 11082,9992 10979,10017 10967,10092
+# 
+#: source_id: 2147341145
+#: XXX laut vmz bis Anfang 2019, laut fritz bis 31.12.2018
+Möckernstr.: Sperrung auch für Radfahrer relevant?	?; 9022,10857 8941,10663 8926,10626
+# 
+#: source_id: 2147341141
+#: XXX laut vmz bis Mitte Mai 2017, laut fritz bis 19. Mai 2017
+Neuenburger Str.: Vollsperrung auch für Radfahrer relevant?	? 10178,10411 9955,10501
+# 
+#: source_id: 2147341139
+#: XXX laut fritz bis 24.05.2017
+Rennbahnstr.: Sperrung zwischen Roelckestr. und Berliner Allee auch für Radfahrer relevant?	? 13904,17325 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 14528,16910 14558,16907
+# 
 #: last_checked: 2017-03-26
 #: check_frequency: 180d
 Lutterbacher Str. - Dahlemer Weg: wird es hier eine weitere Verbindung geben?	? 2151,3126 2183,3126
@@ -1925,8 +1934,8 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7478
 #: XXX "noch 2016"
-#: last_checked: 2017-03-15 vvv
-#: check_frequency: 21d vvv
+#: last_checked: 2017-04-03 vvv
+#: check_frequency: 14d vvv
 #: priority: #C vvv
 #: osm_watch: note 814292 1
 Waldemar/Dresdener: Zebrastreifen in Bau	?::inwork 11153,11028 11150,11030
