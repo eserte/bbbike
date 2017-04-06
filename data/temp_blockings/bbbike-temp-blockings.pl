@@ -21366,7 +21366,7 @@ EOF
 userdel	2::inwork -739,6838 -927,6888
 EOF
      },
-     { from  => $isodate2epoch->("2017-04-21 00:00:00"), # 1 Tag Vorlauf
+     { from  => $isodate2epoch->("2017-04-20 14:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2017-04-23 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 21, months => 4]],
@@ -21374,9 +21374,10 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.winzerfest-köpenick.de/',
        data  => <<EOF,
-#: tempex: 20170421-20170423
+#: tempex: 20170421T1400-20170423 vvv
 userdel	2::temp 22138,4642 22111,4562 22093,4499
 userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
+#: tempex ^^^
 EOF
      },
      { from  => $isodate2epoch->("2016-07-13 00:00:00"), # 1 Tag Vorlauf
@@ -21473,15 +21474,15 @@ EOF
 	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
-     { from  => $isodate2epoch->("2016-05-20 00:00:00"), # 1431715044, # 1367560678, # 2013-05-03 07:57
-       until => $isodate2epoch->("2016-05-21 23:59:59"), # 1367704799, # 2013-05-04 23:59
+     { from  => $isodate2epoch->("2017-05-19 00:00:00"), # 1431715044, # 1367560678, # 2013-05-03 07:57
+       until => $isodate2epoch->("2017-05-20 23:59:59"), # 1367704799, # 2013-05-04 23:59
        periodic => 1,
        recurrences => [['yearly', days => 4, months => 5]],
-       text  => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 20. Mai 2016',
+       text  => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 20. Mai 2017',
        type  => 'gesperrt',
        source_id => 'http://www.berliner-frauenlauf.de/?year=2016',
        data  => <<EOF,
-#: tempex: 20160520 vvv
+#: tempex: 20170520 vvv
 userdel	2::temp 8055,12186 8119,12414
 userdel	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 	2::temp 6828,12031 6884,12006
@@ -25829,7 +25830,7 @@ userdel	q4::inwork 5236,10994 5230,10919
 EOF
      },
      { from  => undef, # 
-       until => 1492164000, # 2017-04-14 12:00
+       until => 1491370341, # 1492164000, # 2017-04-14 12:00
        text  => 'Fähre F1: kein Verkehr bis Ostern 2017',
        type  => 'gesperrt',
        source_id => 'http://www.swp-potsdam.de/swp/media/05-verkehr_1/fahrplaene_pdf/fahrplanwechsel_2016/faehre_1/vip_16_folder_faehre_161128_ansicht.pdf',
@@ -25924,7 +25925,36 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.576875.php',
        data  => <<EOF,
+#: note: laut vmz nur bis Ende Juli 2017
+#: source_id: 2147341144
 userdel	q4::inwork; 5583,5179 5527,5217 5416,5289 5397,5302 5382,5312
+EOF
+     },
+     { from  => 1492380000, # 2017-04-17 00:00
+       until => 1494280800, # 2017-05-09 00:00
+       text  => 'Karmeliterweg: Bauarbeiten zwischen Am Eichenhain und Olwenstr., Fahrbahn gesperrt, voraussichtlich vom 18.04.2017 bis zum 08.05.2017',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.580104.php',
+       data  => <<EOF,
+userdel	q4::inwork 854,24387 1033,24429 1156,24494
+EOF
+     },
+     { from  => 1494194400, # 2017-05-08 00:00
+       until => 1495836000, # 2017-05-27 00:00
+       text  => 'Karmeliterweg: Bauarbeiten zwischen Olwenstr. und Donnersmarckallee, voraussichtlich vom 09.05.2017 bis zum 26.05.2017',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.580104.php',
+       data  => <<EOF,
+userdel	q4::inwork 1458,24561 1410,24562 1330,24553 1250,24533 1156,24494
+EOF
+     },
+     { from  => 1491498639, # 2017-04-06 19:10
+       until => 1496268000, # 2017-06-01 00:00
+       text  => 'Innstr.: Bauarbeiten, Einbahnstraßenregelung, außerdem Sperrung an der Kreuzung Weserstr., bis Juni 2017',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q3::inwork 13384,8354 13217,8493
+userdel	q3::inwork; 13217,8493 13262,8554 13301,8606
 EOF
      },
     );

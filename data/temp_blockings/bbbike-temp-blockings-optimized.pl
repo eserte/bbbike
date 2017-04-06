@@ -2986,11 +2986,12 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        undef,
        {
-         'data' => '#: tempex: 20170421-20170423
+         'data' => '#: tempex: 20170421T1400-20170423 vvv
 userdel	2::temp 22138,4642 22111,4562 22093,4499
 userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
+#: tempex ^^^
 ',
-         'from' => 1492725600,
+         'from' => 1492689600,
          'id' => 2419,
          'periodic' => 1,
          'recurrences' => [
@@ -3014,7 +3015,41 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,464
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: tempex: 20170520 vvv
+userdel	2::temp 8055,12186 8119,12414
+userdel	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	2::temp 6828,12031 6884,12006
+	2::temp 6809,11979 6984,11859
+	2::temp 6778,11742 6980,11790
+	2::temp 6809,11570 6869,11567 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7649,11717 7701,11798 7706,11878 7717,11918 7658,11947 7634,11920 7559,11888 7449,11883
+	2::temp 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8034,12093 8057,12065 8052,12033 8022,12016 8020,11937 8095,11919 8132,11910 8221,11885 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
+	2::temp 8522,12239 8466,12197
+userdel auto	3 7429,12070 7383,12095 7039,12314
+userdel auto	3 7875,12363 7822,12201 7816,12150 7823,12120
+userdel auto	3 7039,12314 7383,12095 7429,12070
+userdel auto	3 7823,12120 7816,12150 7822,12201 7875,12363
+	3 8391,12389 8344,12221 8327,12174
+	3 8327,12174 8344,12221 8391,12389
+#: tempex ^^^
+',
+         'from' => 1495144800,
+         'id' => 2427,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              4,
+                              'months',
+                              5
+                            ]
+                          ],
+         'source_id' => 'http://www.berliner-frauenlauf.de/?year=2016',
+         'text' => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 20. Mai 2017',
+         'type' => 'gesperrt',
+         'until' => 1495317599
+       },
        {
          'data' => '#: tempex: 20170527-20170528
 userdel	2::temp 6230,8602 6313,8638 6454,8653
@@ -3895,16 +3930,7 @@ userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,
          'until' => undef
        },
        undef,
-       {
-         'data' => 'userdel	2::inwork -14107,-2278 -14081,-2516
-',
-         'from' => undef,
-         'id' => 2844,
-         'source_id' => 'http://www.swp-potsdam.de/swp/media/05-verkehr_1/fahrplaene_pdf/fahrplanwechsel_2016/faehre_1/vip_16_folder_faehre_161128_ansicht.pdf',
-         'text' => 'Fähre F1: kein Verkehr bis Ostern 2017',
-         'type' => 'gesperrt',
-         'until' => 1492164000
-       },
+       undef,
        undef,
        undef,
        {
@@ -3948,7 +3974,9 @@ userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,
          'until' => 1491667200
        },
        {
-         'data' => 'userdel	q4::inwork; 5583,5179 5527,5217 5416,5289 5397,5302 5382,5312
+         'data' => '#: note: laut vmz nur bis Ende Juli 2017
+#: source_id: 2147341144
+userdel	q4::inwork; 5583,5179 5527,5217 5416,5289 5397,5302 5382,5312
 ',
          'from' => 1491170400,
          'id' => 2853,
@@ -3956,6 +3984,36 @@ userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,
          'text' => 'Albrechtstr.: Bauarbeiten zwischen Neue Filandastr. und Breite Str., Einbahnstraße offen Richtung Osten, vom 4. April 2017 bis Anfang September 2017',
          'type' => 'handicap',
          'until' => 1504303199
+       },
+       {
+         'data' => 'userdel	q4::inwork 854,24387 1033,24429 1156,24494
+',
+         'from' => 1492380000,
+         'id' => 2854,
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.580104.php',
+         'text' => 'Karmeliterweg: Bauarbeiten zwischen Am Eichenhain und Olwenstr., Fahrbahn gesperrt, voraussichtlich vom 18.04.2017 bis zum 08.05.2017',
+         'type' => 'handicap',
+         'until' => 1494280800
+       },
+       {
+         'data' => 'userdel	q4::inwork 1458,24561 1410,24562 1330,24553 1250,24533 1156,24494
+',
+         'from' => 1494194400,
+         'id' => 2855,
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.580104.php',
+         'text' => 'Karmeliterweg: Bauarbeiten zwischen Olwenstr. und Donnersmarckallee, voraussichtlich vom 09.05.2017 bis zum 26.05.2017',
+         'type' => 'handicap',
+         'until' => 1495836000
+       },
+       {
+         'data' => 'userdel	q3::inwork 13384,8354 13217,8493
+userdel	q3::inwork; 13217,8493 13262,8554 13301,8606
+',
+         'from' => 1491498639,
+         'id' => 2856,
+         'text' => 'Innstr.: Bauarbeiten, Einbahnstraßenregelung, außerdem Sperrung an der Kreuzung Weserstr., bis Juni 2017',
+         'type' => 'handicap',
+         'until' => 1496268000
        }
      
 );
