@@ -46,7 +46,10 @@ for my $f (@ARGV) {
     unless ($quiet) { warn "$dest\n" }
     my $g = GPS::GpsmanData::Any->load($f);
     my $s = GPS::GpsmanData::Stats->new($g, areas => $areas, places => $places);
-    $s->run_stats(with_nightride => 1);
+    $s->run_stats(
+		  with_nightride => 1,
+		  missing_vehicle_fallback => 1,
+		 );
     DumpFile $dest, $s->human_readable;
 }
 

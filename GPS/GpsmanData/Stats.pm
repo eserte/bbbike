@@ -60,6 +60,7 @@ sub new {
 sub run_stats {
     my($self, %args) = @_;
     my $with_nightride = delete $args{with_nightride};
+    my $missing_vehicle_fallback = delete $args{missing_vehicle_fallback};
     die "Unhandled arguments: " . join(" ", %args) if %args;
 
     if ($with_nightride) {
@@ -87,6 +88,7 @@ sub run_stats {
     my($start_wpt, $farthest_wpt, $goal_wpt);
     my $max_dist_from_start;
     my $nightride_seconds;
+    my $used_missing_vehicle_fallback;
 
     my($area_bbox, $name_to_poly) = $self->_process_areas;
 
@@ -110,7 +112,7 @@ sub run_stats {
 
 	my $sunrise_epoch;
 	my $sunset_epoch;
-	if ($with_nightride && $vehicle eq 'bike' && @{ $chunk->Track }) {
+	if ($with_nightride && ((defined $vehicle && $vehicle eq 'bike') || (!defined $vehicle && $missing_vehicle_fallback)) && @{ $chunk->Track }) {
 	    # XXX The algorithm probably fails in some situations, i.e.
 	    # if a chunk crosses day/night changes twice or more
 	    #
@@ -157,15 +159,22 @@ sub run_stats {
 
 	    my $first_is_night = $first_epoch < $sunrise_epoch || $first_epoch > $sunset_epoch;
 	    my $last_is_night  = $last_epoch  < $sunrise_epoch || $last_epoch  > $sunset_epoch;
+	    my $this_nightride_seconds;
 	    if ($first_is_night && $last_is_night) {
 		# complete night ride
-		$nightride_seconds += ($last_epoch - $first_epoch);
+		$this_nightride_seconds = ($last_epoch - $first_epoch);
 	    } elsif ($first_is_night && !$last_is_night) {
 		# morning ride
-		$nightride_seconds += ($sunrise_epoch - $first_epoch);
+		$this_nightride_seconds = ($sunrise_epoch - $first_epoch);
 	    } elsif (!$first_is_night && $last_is_night) {
 		# evening ride
-		$nightride_seconds += ($last_epoch - $sunset_epoch);
+		$this_nightride_seconds = ($last_epoch - $sunset_epoch);
+	    }
+	    if ($this_nightride_seconds) {
+		$nightride_seconds += $this_nightride_seconds;
+		if (!defined $vehicle && $missing_vehicle_fallback) {
+		    $used_missing_vehicle_fallback = 1;
+		}
 	    }
 	}
 
@@ -350,6 +359,7 @@ sub run_stats {
 		   (defined $min_epoch ? (min_datetime => _get_wpt_isodate($min_epoch, $min_wpt)) : ()),
 		   (defined $max_epoch ? (max_datetime => _get_wpt_isodate($max_epoch, $max_wpt)) : ()),
 		   ($with_nightride ? (nightride => $nightride_seconds) : ()),
+		   ($used_missing_vehicle_fallback ? (nightride_with_missing_vehicle_fallback => 1) : ()),
 		 });
 }
 
