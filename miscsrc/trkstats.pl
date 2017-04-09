@@ -19,8 +19,8 @@ use lib "$FindBin::RealBin/..", "$FindBin::RealBin/../lib";
 use Cwd 'realpath';
 use File::Basename 'basename';
 use Getopt::Long;
-use YAML 'DumpFile';
 
+use BBBikeYAML 'DumpFile';
 use GPS::GpsmanData::Any;
 use GPS::GpsmanData::Stats;
 use Strassen::MultiStrassen;
