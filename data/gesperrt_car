@@ -1213,7 +1213,6 @@ Prenzlauer Promenade -> Othellostr.: Prenzlauer Promenade	3::igndisp 11907,18246
 Figarostr. -> Prenzlauer Promenade: Prenzlauer Promenade	3::igndisp 12084,18197 11907,18246 11894,18146
 Prenzlauer Promenade -> Figarostr.: Prenzlauer Promenade	3::igndisp 11914,18303 11907,18246 12084,18197
 Prenzlauer Promenade -> Zeiler Weg: Prenzlauer Promenade	3::igndisp 11907,18246 11914,18303 11835,18301
-Zeiler Weg -> Prenzlauer Promenade: Prenzlauer Promenade	3::igndisp 11835,18301 11914,18303 11950,18529
 Pasewalker Str.	3nocross::ignrte 11984,20246 11963,20136 11931,19965
 Hans-Jürgen-Str. -> Pasewalker Str.: Pasewalker Str.	3::igndisp 11939,20140 11963,20136 11984,20246
 Pasewalker Str. -> Hans-Jürgen-Str.: Pasewalker Str.	3::igndisp 11931,19965 11963,20136 11939,20140
@@ -1397,7 +1396,11 @@ Handjerystr./Schmiljanstr.	3 5494,6960 5574,7018 5569,7022
 (Am Carlsgarten - Waldowallee)	2 19456,7956 19478,7967 19509,7999 19558,8064
 Straßenbahntrasse, Drängelgitter für Radfahrer/Fußgänger	3nocross::ignrte -13433,693 -13432,782 -13429,1069
 Georg-Hermann-Allee -> Hermann-Kasack-Str.: Straßenbahntrasse, Drängelgitter für Radfahrer/Fußgänger	3::igndisp -13433,693 -13432,782 -13618,839
+Georg-Hermann-Allee -> Hermann-Kasack-Str.: Straßenbahntrasse, Drängelgitter für Radfahrer/Fußgänger	3::igndisp -13429,1069 -13432,782 -13220,728
+Hermann-Kasack-Str. -> Georg-Hermann-Allee: Straßenbahntrasse, Drängelgitter für Radfahrer/Fußgänger	3::igndisp -13220,728 -13432,782 -13433,693
+Hermann-Kasack-Str. -> Hermann-Kasack-Str.: Straßenbahntrasse, Drängelgitter für Radfahrer/Fußgänger	3::igndisp -13220,728 -13432,782 -13618,839
 Hermann-Kasack-Str. -> Georg-Hermann-Allee: Straßenbahntrasse, Drängelgitter für Radfahrer/Fußgänger	3::igndisp -13618,839 -13432,782 -13429,1069
+Hermann-Kasack-Str. -> Hermann-Kasack-Str.: Straßenbahntrasse, Drängelgitter für Radfahrer/Fußgänger	3::igndisp -13618,839 -13432,782 -13220,728
 Kutscherweg: Poller	3 -13620,-131 -13700,-106 -13775,-85
 Kutscherweg: Poller	3 -13775,-85 -13700,-106 -13620,-131
 Sebastianstr.: Einfahrt gesperrt	3 11162,10919 11113,10943 10937,11033
@@ -1868,3 +1871,6 @@ In den Leonorengärten - Calandrellistr.	3 6363,4047 6295,4017 6141,3948
 Kleinmachnower Weg: Absperrung	3 283,-35 354,-13 665,85
 Kleinmachnower Weg: Absperrung	3 665,85 354,-13 283,-35
 Novalisstr. - Torstr.: Abbiegen verboten	3 9275,13720 9353,13521 9391,13535
+Borkumstr.: für Kfz gesperrt	2 11335,17807 11412,17823
+Zeiler Weg	1 11835,18301 11914,18303
+Neue Kärtner Str. (Schwanebeck-West)	1 18601,25062 18549,25106 18531,25161 18510,25252

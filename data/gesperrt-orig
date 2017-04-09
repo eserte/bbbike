@@ -231,7 +231,7 @@ Damaschkestr.	1 3132,10499 3013,10553
 Lietzenseeufer	1 2871,11211 2806,11241 2748,11206 2621,11190 2621,11065
 # REMOVED --- Gervinusstr.	1 3587,10768 3623,10800
 # REMOVED (nach temp-blockings verschoben, trailer werden gesondert behandelt) --- XXX_indoor: nach temp-blockings verschieben; Blockierung nur für Anhänger (trailer=no)#: note während Veranstaltungen und nachts von ca. 22 bis 7 Uhr gesperrt, mit Anhänger wegen des engen Südeinganges nicht befahrbar:(Friedrich-Ludwig-Jahn-Sportpark)	2 10473,15549 10607,15142
-Darßer Str.	1 15000,18056 15031,18106 15181,18137
+Darßer Str.	1 15000,18056 15019,18104 15053,18118 15152,18115
 # REMOVED (stimmt nicht) --- Schottstr.	1 16276,12273 16389,12394
 # REMOVED (stimmt nicht) --- Rüdigerstr.	1 16389,12394 16485,12384
 Alfredstr.	1 16207,11937 16246,12177 16255,12224
@@ -1162,6 +1162,8 @@ Bechstedter Weg	1 3467,9045 3661,8815 3701,8849
 Floyd-L.-Parks-Weg	1 2352,1267 2315,1251 2370,1127
 #: note: seit mindestens Juni 2016 dauerhaft verschlossen
 Tor	2 8371,13399 8363,13402 8356,13404
+Gravensteinstr.	1s:q3 12229,22457 12185,22465
+Hauptstr. (Französisch Buchholz)	1s:q3 12199,22367 12229,22457
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -1657,7 +1659,7 @@ Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3nocross 12075,16144 12030,1596
 Prenzlauer Allee: Straßenbahntrasse	3nocross 11941,15586 11967,15700 11995,15827
 Prenzlauer Allee: Straßenbahntrasse	3nocross 11435,14023 11465,14122 11471,14143
 Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 11709,14856 11609,14881 11535,14900
-Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 12317,14535 12128,14640 12025,14695
+Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 12317,14535 12123,14643 12025,14695
 Torstr.: Mittelstreifen mit Straßenbahn	3nocross 10746,13673 10640,13700 10569,13719 10463,13747
 Yorckstr.: Linksabbiegen verboten (und unbequem)	3nocross 8192,9619 8097,9650 7938,9694
 Hauptstr./Kleistpark: unbequemes Überqueren, stark befahrene Straße	3nocross 7517,9454 7520,9572 7526,9791
@@ -2180,7 +2182,7 @@ Schranke	BNP:3::trailer=10 5296,11529
 # 
 #: next_check_id: DIESEL-2015 vvv
 #: note: mittlerweile gibt es hier auch zwei Baustellenampeln mit Anforderung, allerdings wird relativ schnell auf grün geschaltet vvv
-#: last_checked: 2017-02-10 vvv
+#: last_checked: 2017-04-07 vvv
 #: check_frequency: 60d vvv
 Drängelgitter	BNP:5::trailer=10 14364,8096
 Drängelgitter	BNP:5::trailer=10 14405,8115
@@ -2752,13 +2754,19 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: last_checked: 2017-03-24
+#: source_id: 2147339182
+#: last_checked: 2017-04-09
+#: check_frequency: 360d
+#: valid: -20181231
+Karower Str.: temporäre Einbahnstraßenregelung	1s:q3 16593,25640 16632,25512 16669,25373
+# 
+#: last_checked: 2017-04-07
 #: check_frequency: 21d
-Mauerweg: Bauarbeiten, gesperrt	2::inwork 7939,14447 7889,14519
+Mauerweg: Bauarbeiten, gesperrt	2::inwork 7926,14439 7939,14447 7889,14519
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: note: in der anderen Richtung eigentlich nur für Baustellenverkehr
-#: last_checked: 2017-04-03
+#: last_checked: 2017-04-08
 Voltairestr.: Baustelle, Fahrtrichtung gesperrt	1s:q3 11329,12497 11209,12430
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3192&mt=0&zoom=16 (Geplanter Projektabschluss: 2018-03-31)
@@ -2767,7 +2775,7 @@ Voltairestr.: Baustelle, Fahrtrichtung gesperrt	1s:q3 11329,12497 11209,12430
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt	1s:q3 5192,10234 5196,10398
 # 
 #: source_id: 2147341003 (Bauarbeiten in der angrenzenden Modersohnstr.)
-#: last_checked: 2017-04-05
+#: last_checked: 2017-04-08
 Werkstraße: Zufahrt zur DB-Werkstraße ist wegen Bauarbeiten gesperrt	2::inwork 14043,10928 14107,10911
 # 
 #: XXX laut fritz bis 30. September 2017
@@ -2780,7 +2788,7 @@ Zillestr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen	1s:q3 3807
 #: next_check_id: VERLAENGERTEHERTZ-2017
 #: XXX zumindest an der Fasanenstr.
 #: XXX laut Schild gehen die Bauarbeiten bis Dezember 2017
-#: last_checked: 2017-02-04
+#: last_checked: 2017-04-08
 #: next_check: 2017-07-01
 (Verlängerte Hertzallee): Bauarbeiten, komplett gesperrt	2::inwork 5352,11502 5296,11529 4950,11696 4905,11785
 # 
@@ -2834,11 +2842,11 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3 9042,11839 8969,118
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2017-03-24
+#: last_checked: 2017-04-07
 #: next_check: 2017-09-02
 Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,14449 7561,14458 7426,14539 7368,14573
 # 
-#: last_checked: 2017-03-24
+#: last_checked: 2017-04-07
 Weichselplatz: Uferweg wegen Bauarbeiten gesperrt	2::inwork 12851,9309 12907,9073
 # 
 # REMOVED (Baugrube) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2016 --- #: osm_watch: note 848012 1 --- #: last_checked: 2016-12-15 --- #: check_frequency: 180d --- Sülzhayner Str.: komplett gesperrt wegen Bauarbeiten, vielleicht dauerhaft	2::inwork 13420,9259 13397,9234
@@ -2942,7 +2950,7 @@ Nalepastr.: wegen Straßenbau gesperrt	2::inwork 17190,7306 17211,7280 17219,7268
 # REMOVED (fertig) --- #: next_check_id: FISCHERINSEL-2015 vvv --- #: source_id: 2147339543 vvv --- #: last_checked: 2016-12-16 vvv --- #: next_check: 2016-12-22 vvv --- Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 --- Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10687,11853 10869,11949 --- Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10672,11870 --- Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,11853 10869,11949
 # 
 #: next_check_id: DIESEL-2015
-#: last_checked: 2017-02-10
+#: last_checked: 2017-04-07
 #: check_frequency: 60d
 Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 14471,8046
 # 
@@ -2950,7 +2958,7 @@ Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 144
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/gerickesteg/index.shtml (20 Monate Bauzeit)
 #: XXX laut http://www.stadtentwicklung.berlin.de/bauen/strassenbau/ bis "II. Quartal 2017"
 #: osm_watch: way id="27250334" version="7"
-#: last_checked: 2017-03-18
+#: last_checked: 2017-04-08
 #: next_check: 2017-06-30
 Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,12669 6765,12680
 # 
@@ -2990,7 +2998,7 @@ Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::in
 Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17651,-393
 # 
 #: next_check_id: EUROPACITY-2015 vvv
-#: last_checked: 2017-02-04 vvv
+#: last_checked: 2017-04-07 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="237704729" version="7"
 Lydia-Rabinowitsch-Str.: noch gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924
@@ -3137,7 +3145,7 @@ Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)
 #: source_id: 2147340791
-#: last_checked: 2017-03-18
+#: last_checked: 2017-04-07
 #: next_check: 2018-12-01
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
 # 
@@ -3199,7 +3207,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2017-03-24
+#: last_checked: 2017-04-08
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
@@ -3226,6 +3234,9 @@ Dahlemer Feld: zur Zeit eine Ziegenweide, keine Durchfahrt möglich	2:temp -1643,
 ######################################################################
 # Unsorted
 # 
+Schwingtor	BNP:5::trailer=10 14491,26714
+Schwingtor	BNP:5::trailer=10 13966,25777
+Schwingtor	BNP:5::trailer=10 14036,25433
 tragen (Treppe)	0:30 2279,5112
 tragen (Treppe)	0:15 2211,5120
 tragen (Treppe)	0:30 17626,-1847
@@ -3460,10 +3471,6 @@ Drängelgitter	BNP:10 9171,5263
 #: confirmed_by: srt
 Niederneuendorfer Allee (Wendeschleife)	1 -2906,17661 -2897,17861
 Zeiler Weg	1 11495,18129 11579,18184
-#: add_fragezeichen: Gibt es (für Radfahrer? für Autofahrer?) eine Einbahnstraßenregelung zur Prenzlauer Promenade?
-#: XXX unklar: siehe Fahr-Rat-Protokoll, bei osm gar nicht als Einbahnstraße markiert
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-sitzung-fahrrat-am-01-09-15.pdf
-Zeiler Weg	1s 11835,18301 11914,18303
 Dettelbacher Weg	1 11696,18454 11750,18273
 Dettelbacher Weg	1 11819,18050 11750,18273
 Neuenhagener Str. (Mahlsdorf)	1s 24362,11954 24317,11754

@@ -990,7 +990,26 @@ userdel	2::temp 6945,9142 7044,9163
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
+',
+         'from' => 1494540000,
+         'id' => 964,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              7,
+                              'months',
+                              5
+                            ]
+                          ],
+         'source_id' => 'http://www.laubinger.de/termine/26-boelschefest-friedrichshagen/',
+         'text' => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (13. und 14. Mai 2017)',
+         'type' => 'gesperrt',
+         'until' => 1494799199
+       },
        undef,
        undef,
        undef,
@@ -1677,7 +1696,26 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.family-and-friends-ev.de/termine.html
+userdel	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
+',
+         'from' => 1494540000,
+         'id' => 1642,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              9,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (13. und 14. Mai 2017)',
+         'type' => 'gesperrt',
+         'until' => 1494799199
+       },
        undef,
        undef,
        undef,
@@ -2197,7 +2235,26 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.family-and-friends-ev.de/termine.html
+userdel	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,11953
+',
+         'from' => 1505466000,
+         'id' => 1910,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              15,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbstzauber in Westend), Straße vollständig gesperrt (16.09.2017 bis 17.09.2017) ',
+         'type' => 'gesperrt',
+         'until' => 1505671200
+       },
        undef,
        undef,
        undef,
@@ -3309,7 +3366,27 @@ userdel	2::night 17671,13132 17684,13133
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: kein tempex-Ausdruck möglich
+userdel	2::temp 5648,9642 5642,9613 5618,9607 5598,9612 5578,9629
+',
+         'from' => 1504789200,
+         'id' => 2533,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              9,
+                              'months',
+                              5
+                            ]
+                          ],
+         'source_id' => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/ueber-den-bezirk/sonstiges/events/fest-der-nationen/?date=20170409',
+         'text' => 'Prager Platz: Veranstaltung "Fest der Nationen", Durchfahrt nicht möglich, vom 8.9.2017 15 Uhr bis 10.9.2017 22 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1505073600
+       },
        undef,
        undef,
        undef,
@@ -3505,6 +3582,7 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,464
 #: note: am Mo, den 2016-10-10 gegen 17:50: offen
 #: note: am Sa, den 2016-12-10 gegen 13:00: geschlossen
 #: note: am Fr, den 2017-02-10 gegen 18:30: offen
+#: note: am Fr, den 2017-04-07 gegen 09:30: offen
 #: tempex: volatile vvv
 	3::night 14563,8243 14425,8116 14419,8112
 	3::night 14419,8112 14425,8116 14563,8243
@@ -3830,7 +3908,7 @@ userdel	2::inwork 3472,24709 3481,24686 3492,24667 3535,24626
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-04-03 vvv
+#: last_checked: 2017-04-08 vvv
 #: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -3964,14 +4042,15 @@ userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,
          'until' => 1493222400
        },
        {
-         'data' => 'userdel	q4::inwork; 9183,12076 9164,12172
+         'data' => '#: XXX wie sieht die Sperrung für Radfahrer aus?
+userdel	q4::inwork; 9183,12076 9164,12172
 ',
          'from' => 1490635298,
          'id' => 2852,
          'source_id' => '2147341088',
-         'text' => 'Glinkastr.: zwischen Französische Str. und Behrenstr. Baustelle, Richtung Unter den Linden gesperrt, bis 08.04.2017',
+         'text' => 'Glinkastr.: zwischen Französische Str. und Behrenstr. Baustelle, Richtung Unter den Linden gesperrt',
          'type' => 'handicap',
-         'until' => 1491667200
+         'until' => undef
        },
        {
          'data' => '#: note: laut vmz nur bis Ende Juli 2017
@@ -4014,6 +4093,16 @@ userdel	q3::inwork; 13217,8493 13262,8554 13301,8606
          'text' => 'Innstr.: Bauarbeiten, Einbahnstraßenregelung, außerdem Sperrung an der Kreuzung Weserstr., bis Juni 2017',
          'type' => 'handicap',
          'until' => 1496268000
+       },
+       {
+         'data' => 'userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 14528,16910 14558,16907
+',
+         'from' => undef,
+         'id' => 2857,
+         'source_id' => '2147341139',
+         'text' => 'Rennbahnstr.: ab Hunsrückstr. bis Berliner Allee Bauarbeiten, Fahrtrichtung gesperrt ',
+         'type' => 'handicap',
+         'until' => 1495641600
        }
      
 );

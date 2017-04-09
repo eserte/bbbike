@@ -1060,13 +1060,13 @@ Saarstr. (Eiche): Asphalt	Q0 23111,18784 23252,18529 23371,18325
 Rheinstr. (Eiche): Asphalt	Q0 23015,18687 23102,18552 23160,18461 23263,18275
 Ruhrstr. (Eiche): Asphalt	Q0 22999,18493 23048,18380 23126,18227
 Verbundsteinpflaster	Q1 23036,17919 22914,17893
-Bucher Weg/Lindenberger Weg: asphaltiert	Q0 18356,22225 18339,22271 18224,22531 18193,22656 18162,22831 18061,23456 18033,23657 17995,23719 17836,23873 17622,24160 17610,24174 17464,24358 17228,24640 17193,24683
-Karower Str.: unbefestigte Straße	Q2 17052,23958 17110,23990 17264,24021
-Karower Str.: asphaltiert	Q0 17264,24021 17610,24174 17871,24303 18006,24372 18059,24398 18122,24440 18200,24498 18280,24557 18323,24595
+Bucher Weg/Lindenberger Weg: asphaltiert	Q0 18356,22225 18339,22271 18224,22531 18193,22656 18162,22831 18061,23456 18033,23657 17995,23719 17836,23873 17622,24160 17613,24170 17470,24345 17461,24356 17228,24640 17193,24683
+Karower Str.: unbefestigte Straße	Q2 17052,23958 17114,23991
+Karower Str.: asphaltiert	Q0 17114,23991 17264,24021 17522,24122 17613,24170 17871,24303 18006,24372 18059,24398 18122,24440 18200,24498 18280,24557 18323,24595
 Kirschenallee: asphaltiert	Q0 18323,24595 18351,24641 18562,24975
 Neue Kärtner Str.: asphaltiert	Q0 18562,24975 18567,24998 18579,25033 18601,25062
-Weidenweg (Neu-Buch): Asphalt	Q0 17464,24358 17412,24315
-Kleiststr. (Neu-Buch): sehr guter Asphalt	Q0 17464,24358 17565,24441 17671,24528 17766,24624 17831,24725 17870,24821 17901,24919 17913,25005
+Weidenweg (Neu-Buch): Asphalt	Q0 17470,24345 17416,24303
+Kleiststr. (Neu-Buch): sehr guter Asphalt	Q0 17461,24356 17565,24441 17671,24528 17766,24624 17831,24725 17870,24821 17901,24919 17913,25005
 Lindenberger Str. (Neu-Buch): Asphalt	Q0 17913,25005 17967,25231
 Hellsee - Biesenthal: "Radfahrer müssen hier ab und zu das Rad schieben"	Q3 22666,38835 22702,39207 22938,39193 23289,39378 23422,39397 23479,39311 23610,39318 23658,39601 23741,39682 23739,39838 23635,40026 23655,40114 23630,40257
 Ruhlsdorfer Str.: Asphalt	Q0 86,-2903 -1520,-1832 -1715,-1767
@@ -1287,20 +1287,53 @@ Bernau, Berliner Str.: asphaltiert	Q0 22649,30519 22541,30476 22178,30343
 Rigistr.: Asphalt	Q0 18507,25596 18171,25619 18074,25640 18015,25653
 Genfer Str.: unbefestigte Straße	Q2 18441,25967 18432,25881 18342,25882
 Appenzeller Str.: unbefestigte Straße	Q2 18654,25911 18679,26138
-Thuner Str.: unbefestigte Straße	Q2 18777,25879 18810,25948
-Wilhelm-Tell-Str.: unbefestigte Straße	Q2 18844,25823 18885,25916
+Thuner Str. (Schwanebeck): unbefestigte Straße	Q2 18777,25879 18810,25948 18930,26215
+Wilhelm-Tell-Str. (Schwanebeck): unbefestigte Straße	Q2 18844,25823 18885,25916 19000,26147
+Andreas-Hofer-Str. (Schwanebeck): unbefestigte Straße	Q2 18972,25713 19144,26066
 Rudolf-Breitscheid-Str. (Schwanebeck): Asphalt	Q0 17967,25231 18003,25349 18074,25640 18142,25909 18174,26035 18220,26225
 Ernst-Thälmann-Str. (Schwanebeck): Asphalt	Q0 18220,26225 18433,26301
 Ernst-Thälmann-Str. (Schwanebeck): Kleinsteinpflaster	Q2 18433,26301 18662,26377 18822,26430 18942,26470
 Rheinstr.: Asphalt	Q0 18142,25909 18226,25889
+Alemannenstr. (Schwanebeck): Asphalt	Q0 18308,26001 18329,26024 18387,26044 18506,26081 18679,26138 18736,26158 18923,26227 18960,26240 19012,26258
+Genfer Platz (Schwanebeck): Verbundsteinpflaster	Q1 18387,26044 18406,25976
+Burgunderstr. (Schwanebeck): unbefestigte Straße	Q2 18470,26189 18698,26269 18872,26329
+Donaustr. (Schwanebeck): unbefestigte Straße	Q2 18885,25916 18810,25948 18736,26158 18698,26269 18662,26377
+Schwarzwälder Str. (Schwanebeck): unbefestigte Straße	Q2 19144,26066 19000,26147 18955,26182 18930,26215
+Schwarzwälder Str. (Schwanebeck): Asphalt	Q0 18930,26215 18923,26227 18872,26329 18822,26430
+Steiermärker Str. (Schwanebeck): unbefestigte Straße	Q2 18960,26240 18942,26470
+Steiermärker Str. (Schwanebeck): Asphalt	Q0 18942,26470 18934,26542
 Gletscherstr. (Schwanebeck): schadhafter Asphalt	Q1 18433,26301 18415,26368
+Oldenburger Ring (Schwanebeck): Baustraße	Q2 19122,26533 19130,26361 19058,26330 19045,26506
+Flensburger Str.: unbefestigte Straße	Q2 19219,26567 19231,26439 19247,26372
+Hochstr. (Schwanebeck): Asphalt	Q0 18942,26470 19045,26506 19122,26533 19219,26567 19335,26608
+Hochstr. (Schwanebeck): unbefestigte Straße	Q2 19715,26770 19816,26766 19948,26760 20051,26756 20225,26711
+Waldstr. (Schwanebeck): unbefestigte Straße	Q2 19882,26592 19935,26699 19948,26760
+Kurze Str. (Schwanebeck): unbefestigte Straße	Q2 19816,26766 19722,26581
+Bochumer Str. (Schwanebeck): unbefestigte Straße	Q2 19351,26432 19335,26608
+Bochumer Str. (Schwanebeck): Asphalt	Q0 19335,26608 19315,26676
+Altonaer Str. (Schwanebeck): unbefestigte Straße	Q2 19416,26639 19439,26465
+Hamburger Str. (Schwanebeck): Asphalt	Q0 19436,26721 19461,26660
+Hamburger Str. (Schwanebeck): unbefestigte Straße	Q2 19461,26660 19507,26562 19526,26483
+Hamburger Str. (Schwanebeck): unbefestigte Straße	Q2 19526,26483 19535,26388
+Bremer Str. (Schwanebeck): unbefestigte Straße	Q2 19582,26717 19665,26544
+Kiesstr. (Schwanebeck): unbefestigte Straße	Q2 20192,26621 20225,26711 20297,26820
+Kiesstr. (Schwanebeck): Asphalt/Kopfsteinpflaster	Q2 20297,26820 20304,26861
 Gletscherstr.: Asphalt	Q0 18433,26301 18439,26277
-Gletscherstr.: unbefestigte Straße	Q2 18439,26277 18470,26189 18506,26079 18550,25958 18551,25938
+Gletscherstr.: unbefestigte Straße	Q2 18439,26277 18470,26189 18506,26081 18550,25958 18551,25938
 Vierwaldstätter Str. (Schwanebeck): Asphalt	Q0 18439,26277 18281,26008 18226,25889 18171,25619 18133,25321 18111,25169
+Kärtner Str. (Schwanebeck-West): Asphalt	Q0 18507,25596 18503,25468 18501,25331
+Parkstr. (Schwanebeck-West): Verbundsteinpflaster	Q1 18503,25468 18419,25468 18387,25469
+Kitzbühler Str. (Schwanebeck-West): Verbundsteinpflaster	Q1 18419,25468 18421,25371
+Neue Kärtner Str. (Schwanebeck-West): Asphalt	Q0 18501,25331 18507,25272 18510,25252 18531,25161 18549,25106 18601,25062
+Grazer Str. (Schwanebeck-West): Verbundsteinpflaster	Q1 18531,25161 18453,25139 18432,25260 18507,25272
+Linzer Str. (Schwanebeck-West): Verbundsteinpflaster	Q1 18567,24998 18432,25052 18429,25074 18549,25106
+Mühlenbergring (Zepernick): Verbundsteinpflaster	Q1 19637,26995 19689,26864 19744,26867 19729,26929 19692,27018
+Mühlenstr. (Zepernick): Asphalt	Q0 19737,27037 19733,27084 19698,27205 19734,27271
 Bahnhofstr. (Röntgental): Kopfsteinpflaster	Q2 18415,26368 18400,26554 18292,26726
-Bahnhofstr. (Röntgental): Asphalt	Q0 17939,27084 17784,27209 17709,27269
-Bahnhofstr. (Röntgental): schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q2 17709,27269 17415,27506
-Buchenallee (Röntgental): Feldweg	Q2 17099,27097 17415,27506 17689,27853
+Bahnhofstr. (Röntgental): Asphalt	Q0 18168,26885 18133,26914 18014,27029 17939,27084 17784,27209 17709,27269
+Bahnhofstr. (Röntgental): schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q2 17709,27269 17409,27495
+Buchenallee (Röntgental): Feldweg	Q2 17099,27097 17340,27408
+Buchenallee (Röntgental): Asphalt	Q0 17340,27408 17409,27495 17689,27853 17896,28134
 Schönerlinder Str.: Fahrbahn asphaltiert, Verbundsteinpflasterradwege	Q0 17325,27831 17689,27853 18053,27875 18247,27861 18337,27854 18410,27890 18797,27977 18888,27976 18899,27976 19187,27987
 Asphalt, teilweise mit Wurzelschäden	Q1 18943,28375 19057,28472 19125,28553 19226,28625 19282,28646 19309,28685
 Asphalt	Q0 19309,28685 19402,28726 19709,28856 19775,28815
@@ -2597,7 +2630,8 @@ Waltersdorf - Siedlung Hubertus: Asphalt	Q0 20711,-3869 20659,-3787 20630,-3690 
 Bohnsdorfer Chaussee: Asphalt, teilweise mit Unebenheiten	Q1 19248,-771 19054,-903 18773,-1095
 Gartenstr.: Beton	Q0 18773,-1095 18892,-1273
 Jochen-Klepper-Str.: Asphalt	Q0 -13259,586 -13270,563 -13436,595 -13668,669
-Reinhold-Schneider-Str.: Asphalt	Q0 -13433,693 -13642,750
+Reinhold-Schneider-Str.: Asphalt	Q0 -13243,645 -13433,693 -13642,750
+Hermann-Kasack-Str.: Asphalt	Q0 -13432,782 -13220,728
 Hermann-Kasack-Str.: Verbundsteinpflaster	Q0 -13432,782 -13618,839
 (Fachhochschule Potsdam): gutes Kopfsteinpflaster	Q1 -13338,188 -13321,264 -13356,274
 (Fachhochschule Potsdam): Verbundsteinpflaster	Q1 -13356,274 -13311,462
@@ -3117,15 +3151,13 @@ Dorfstr. (Schönefeld): Kopfsteinpflaster	Q1 17402,-1649 17549,-1722 17574,-1753 
 Umgehungsstraße: Asphalt, etwas löchrig	Q1 17549,-1722 17890,-1445 17911,-1427 18281,-1132 18444,-996
 Hans-Grade-Allee: Asphalt	Q0 17255,-2197 17228,-2167 17062,-2291 17023,-2233 17222,-2099 17234,-2052 17167,-1981 17096,-1850 17094,-1840 17079,-1691 17102,-1553 17215,-1403 17344,-1351 17746,-1288 17872,-1270 18189,-1023 18423,-843
 (Hans-Grade-Allee - Umgehungsstraße): teilweise wassergebundene Decke	Q1 17746,-1288 17766,-1316 17825,-1318 17911,-1427
-Verbindungsweg (Schwanebeck): unbefestigte Straße	Q2 17565,24441 17350,24699
+Verbindungsweg (Schwanebeck): unbefestigte Straße	Q2 17565,24441 17345,24704
 Rosa-Luxemburg-Str. (Schwanebeck): Asphalt	Q0 17671,24528 17871,24303
-Ernst-Toller-Str.: unbefestigte Straße	Q2 17581,24815 17638,24756
-Ernst-Toller-Str.: unbefestigte Straße	Q2 17638,24756 17766,24624
+Eichendorffstr. (Schwanebeck-West): unbefestigte Straße	Q2 17638,24756 17584,24703
+Ernst-Toller-Str.: unbefestigte Straße	Q2 17581,24815 17638,24756 17766,24624
 Ernst-Toller-Str.: Asphalt	Q0 17766,24624 17900,24483 18006,24372
-Fritz-Reuter-Str.: unbefestigte Straße	Q2 17900,24483 17990,24572 18057,24641 18124,24709
-Fritz-Reuter-Str.: unbefestigte Straße	Q2 18124,24709 18198,24789 18275,24866 18312,24956
-Humboldtstr.: unbefestigte Straße	Q2 17699,24874 17728,24824
-Humboldtstr.: unbefestigte Straße	Q2 17728,24824 17831,24725
+Fritz-Reuter-Str.: Verbundsteinpflaster	Q1 17900,24483 17990,24572 18057,24641 18124,24709 18198,24789 18275,24866 18312,24956
+Humboldtstr.: unbefestigte Straße	Q2 17699,24874 17728,24824 17831,24725
 Humboldtstr.: Asphalt	Q0 17831,24725 17990,24572 18122,24440
 Humboldtstr.: Verbundsteinpflaster	Q1 18122,24440 18190,24368
 Stefan-Heym-Str.: unbefestigte Straße	Q2 17776,24912 17870,24821 18057,24641
@@ -3133,9 +3165,18 @@ Stefan-Heym-Str.: Asphalt	Q0 18057,24641 18200,24498
 Einsteinstr.: unbefestigte Straße	Q2 17864,24956 17901,24919
 Einsteinstr.: Asphalt	Q0 17901,24919 18124,24709 18280,24557
 Einsteinstr.: unbefestigte Straße	Q2 18280,24557 18305,24535
-Wolfgang-Amadeus-Mozart-Str.: unebenes Kleinsteinpflaster	Q2 17913,25005 18004,24971 18039,24940 18122,24858 18198,24789 18351,24641
-Uhlandstr.: unbefestigte Straße	Q2 18122,24858 18149,24884 18198,25001
-Uhlandstr.: unbefestigte Straße	Q2 18198,25001 18236,25113
+Wolfgang-Amadeus-Mozart-Str.: unebenes Kleinsteinpflaster	Q2 17913,25005 18004,24971 18039,24940 18122,24858
+Wolfgang-Amadeus-Mozart-Str.: Asphalt	Q0 18122,24858 18198,24789 18351,24641
+Uhlandstr.: Verbundsteinpflaster	Q1 18122,24858 18149,24884 18198,25001 18236,25113
+Voltastr. (Schwanebeck-West): Verbundsteinpflaster	Q1 18312,24956 18198,25001
+Rathenaustr. (Schwanebeck-West): Asphalt	Q0 17228,24640 17088,24538 17114,23991
+Eichenring (Schwanebeck-West): Asphalt	Q0 17416,24303 17358,24354 17289,24483 17229,24490 17201,24441 17266,24312 17272,24232 17286,24196 17323,24170 17367,24168 17411,24190 17433,24229 17430,24274 17416,24303
+Ahornweg (Schwanebeck-West): provisorischer Asphalt	Q0 17286,24196 17260,24176
+Kastanienweg (Schwanebeck-West): Verbundsteinpflaster	Q1 17323,24170 17316,24149 17333,24074
+Erlenweg (Schwanebeck-West): Verbundsteinpflaster	Q1 17367,24168 17383,24101
+Rotdornweg (Schwanebeck-West): Verbundsteinpflaster	Q1 17411,24190 17458,24133
+Buchenweg (Schwanebeck-West): Verbundsteinpflaster	Q1 17433,24229 17451,24226 17516,24150
+Ulmenweg (Schwanebeck-West): Verbundsteinpflaster	Q1 17430,24274 17471,24287 17560,24179
 Ohmstr.: unbefestigte Straße	Q2 18039,24940 18127,25162
 Bodenseestr.: Asphalt	Q0 18003,25349 18133,25321
 An der Alten Fahrt - Joliot-Curie-Str.: Parkweg	Q1 -12485,-1482 -12489,-1465
@@ -3264,7 +3305,7 @@ Temmen - Hohenwalde: unbefestigte Straße	Q2 32827,76442 32840,76223 32698,76024 
 Bahnhofstr. (Joachimsthal): Asphalt	Q0 32496,64296 32578,64405 32917,64225
 Altenhofer Waldstr. (Altenhof): Verbundsteinpflaster	Q1 30806,56904 30725,57076
 (rund um die Marienwerder Kirche): schlechtes Kopfsteinpflaster	Q3 22907,48770 22894,48744 22903,48724 22933,48718 22944,48746 22935,48771 22907,48770
-Mühlenstr. (Zepernick): Asphalt	Q0 19577,26970 19737,27037
+Mühlenstr. (Zepernick): Asphalt	Q0 19577,26970 19637,26995 19692,27018 19737,27037
 Waldstr. (Schwanebeck): Asphalt	Q0 19737,26323 19882,26592
 Neue Schwanebecker Str. (Zepernick): Verbundsteinpflaster	Q1 19512,27392 19457,27268
 Schwanebecker Str. (Zepernick): Verbundsteinpflaster	Q1 19426,27374 19457,27268
@@ -3272,7 +3313,7 @@ Schwanebecker Str. (Zepernick): Asphalt	Q0 19457,27268 19525,27100 19577,26970 1
 Zepernicker Str. (Schwanebeck): Asphalt	Q0 19648,26794 19664,26753 19713,26630 19722,26581 19737,26323
 Zepernicker Str. (Schwanebeck): Beton	Q1 19737,26323 19768,25905 19805,25232 19793,25153
 Zepernicker Str. (Schwanebeck): Asphalt	Q0 19793,25153 19809,25130
-Hochstr. (Schwanebeck): Asphalt	Q0 19340,26610 19664,26753
+Hochstr. (Schwanebeck): Asphalt	Q0 19335,26608 19416,26639 19461,26660 19582,26717 19664,26753
 Hochstr. (Schwanebeck): unbefestigte Straße	Q2 19664,26753 19715,26770
 Mürow - Grünow: Asphalt	Q0 52018,74907 52483,75441 53312,76587
 Pinnow - Frauenhagen: Asphalt	Q0 54679,74235 54527,74412 54398,74511 54161,74570 53736,74762 53607,74880 53573,74911 53396,75000 53227,75035 53056,75079 52806,75198 52644,75295 52483,75441
@@ -3477,6 +3518,11 @@ Am Birkenhügel (Kienwerder): unbefestigte Straße	Q2 -4261,-3576 -4308,-3384 -434
 Reiherweg (Kienwerder): unbefestigte Straße	Q2 -4498,-3428 -4400,-3403 -4308,-3384
 (Hebbelstr. - Charlottenstr.): Verbundsteinpflaster	Q1 -12512,-911 -12493,-914 -12488,-999
 Lange Brücke: Asphalt	Q0 -12478,-1879 -12544,-1799 -12616,-1715 -12646,-1702
+Steubenplatz: gut gepflastert	Q0 -12749,-1668 -12719,-1542
+Industriestr. (Schönerlinde): Asphalt	Q0 12131,26020 11655,26469 11620,26773 11582,26867 11530,26931 11450,27004 11345,27066 11312,27124
+Schönerlinder Dorfstr.: Asphalt	Q0 12151,27606 11940,27487 11856,27418
+Schönerlinder Bahnhofstr.: Asphalt	Q0 11856,27418 11764,27363 11312,27124
+Hobrechtsfelder Chaussee - Schönerlinder Str.: unbefestigter Weg	Q1 16070,27733 16441,28229
 Am Lückefeld (Mahlow): guter Asphalt	Q0 13256,-4919 13049,-4788 12977,-4783 12841,-4989 12680,-5230 12782,-5284 12837,-5273 13194,-5021 13256,-4919
 Kopfsteinpflaster	Q2 15157,61424 14833,61726 14920,62175 14941,62754 14768,63163 14594,63506 14618,64317 14400,64920 14312,65950 14312,66412
 Kopfsteinpflaster	Q2 13386,66797 13458,67551 13676,68144
@@ -3763,7 +3809,8 @@ Rollwitz - Damerow: Asphalt	Q0 46859,118757 46872,118656
 Rollwitz - Damerow: Kopfsteinpflaster/Feldweg	Q3 46872,118656 46914,117945 47156,116507 47087,115725
 Neuenfeld - Züsedom: schlechtes Kopfsteinpflaster	Q3 49802,113824 50143,114340 49959,115913 49981,116048
 Züsedom - Fahrenwalde: sehr schlechtes Kopfsteinpflaster, kaum Sandbanketten	Q3 50240,116023 50417,115935 50917,115807 51429,115904 51730,116017 52760,115828
-Goethestr. (Neu-Buch): fester Sandweg	Q2 17228,24640 17350,24699 17581,24815 17699,24874 17776,24912 17864,24956 17913,25005
+Goethestr. (Neu-Buch): Asphalt	Q0 17228,24640 17317,24689
+Goethestr. (Neu-Buch): fester Sandweg	Q2 17317,24689 17345,24704 17581,24815 17699,24874 17776,24912 17864,24956 17913,25005
 Dreilindenerweg: Asphalt	Q0 -3589,-150 -3746,-268 -3793,-340 -3834,-459 -3993,-700
 Bahnhofstr (Stahnsdorf): Asphalt	Q0 -2878,-3004 -2918,-3010 -3004,-3000 -3159,-2968 -3235,-2953 -3356,-2926 -3451,-2906 -3475,-2884 -3528,-2810 -3650,-2609
 Försterei Zedlitz - Straße nach Krampnitz: wassergebundene Decke	Q1 -10955,3723 -11011,3721 -11156,3523 -11247,3503 -11299,3471 -11334,3365 -11395,3270 -11509,3084

@@ -7848,7 +7848,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_005169',
        data  => <<EOF,
-userdel	q4::inwork 16045,25907 16121,25818 16166,25767
+userdel	q4::inwork 16043,25898 16121,25818 16166,25767
 EOF
      },
      { from  => 1176243783, # 2007-04-11 00:23
@@ -8230,13 +8230,13 @@ EOF
 userdel	q4::temp 6173,12396 6276,12506 6314,12518 6444,12536
 EOF
      },
-     { from  => $isodate2epoch->("2016-05-06 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-05-08 23:59:59"),
+     { from  => $isodate2epoch->("2017-05-12 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-05-14 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 7, months => 5]],
-       text  => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (7. und 8. Mai 2016)',
+       text  => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (13. und 14. Mai 2017)',
        type  => 'gesperrt',
-       source_id => 'http://www.laubinger.de/termine/22-boelschefest-friedrichshagen/?date=20160407',
+       source_id => 'http://www.laubinger.de/termine/26-boelschefest-friedrichshagen/',
        data  => <<EOF,
 userdel	2::temp 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
 EOF
@@ -14042,16 +14042,14 @@ EOF
 userdel	q4::inwork 9098,42254 9043,42165 9032,42153
 EOF
      },
-     { from  => $isodate2epoch->("2016-05-27 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-05-29 23:59:59"),
+     { from  => $isodate2epoch->("2017-05-12 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-05-14 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 9, months => 5]],
-       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (28. und 29. Mai 2016)',
+       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (13. und 14. Mai 2017)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.family-and-friends-ev.de/2.html
-#: by: http://www.berlin.de/tickets/suche/detail.php?id=859853
-#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.480355.php
+#: by: http://www.family-and-friends-ev.de/termine.html
 userdel	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
 EOF
      },
@@ -16412,13 +16410,14 @@ EOF
 userdel	2::temp 8424,12853 8309,12758 8306,12609
 EOF
      },
-     { from  => $isodate2epoch->("2016-09-16 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-09-18 20:00:00"),
+     { from  => $isodate2epoch->("2017-09-15 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-09-17 20:00:00"),
        periodic => 1,
-       recurrences => [['yearly', days => 16, months => 9]],
-       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbst in Westend), Straße vollständig gesperrt (17.09.2016 bis 18.09.2016) ',
+       recurrences => [['yearly', days => 15, months => 9]],
+       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbstzauber in Westend), Straße vollständig gesperrt (16.09.2017 bis 17.09.2017) ',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: http://www.family-and-friends-ev.de/termine.html
 userdel	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,11953
 EOF
      },
@@ -17933,7 +17932,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_015731',
        data  => <<EOF,
-userdel	q3::inwork 16414,25575 16294,25683 16220,25716 16166,25767 16121,25818 16045,25907
+userdel	q3::inwork 16414,25575 16294,25683 16220,25716 16166,25767 16121,25818 16043,25898
 EOF
      },
      { from  => 1274820117, # 2010-05-25 22:41
@@ -20421,7 +20420,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_112232',
        data  => <<EOF,
-userdel	q4::inwork; 8527,14352 8442,14456 8406,14507 8346,14576
+userdel	q4::inwork; 8527,14352 8442,14456 8406,14507 8336,14586
 EOF
      },
      { from  => $isodate2epoch->("2014-10-31 06:00:00"), # 1 Tag Vorlauf
@@ -22410,7 +22409,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_021027',
        data  => <<EOF,
-userdel	2::inwork 12624,25570 12694,25696
+userdel	2::inwork 12624,25570 12697,25704
 EOF
      },
      { from  => $isodate2epoch->("2016-12-02 00:00:00"), # erster Termin oben
@@ -22604,13 +22603,13 @@ EOF
 userdel	2::inwork 2219,11324 2180,11318 2102,11307
 EOF
      },
-     { from  => $isodate2epoch->("2016-09-08 15:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-09-11 22:00:00"),
+     { from  => $isodate2epoch->("2017-09-07 15:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-09-10 22:00:00"),
        periodic => 1, # erster Termin im Jahr
        recurrences => [["yearly", days => 9, months => 5]], # wechselnde Termine, kann auch erst Mitte September passieren
-       text  => 'Prager Platz: Veranstaltung "Fest der Nationen", Durchfahrt nicht möglich, vom 9.9.2016 15 Uhr bis 11.9.2016 22 Uhr',
+       text  => 'Prager Platz: Veranstaltung "Fest der Nationen", Durchfahrt nicht möglich, vom 8.9.2017 15 Uhr bis 10.9.2017 22 Uhr',
        type  => 'gesperrt',
-       source_id => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/ueber-den-bezirk/sonstiges/events/fest-der-nationen/',
+       source_id => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/ueber-den-bezirk/sonstiges/events/fest-der-nationen/?date=20170409',
        data  => <<EOF,
 #: note: kein tempex-Ausdruck möglich
 userdel	2::temp 5648,9642 5642,9613 5618,9607 5598,9612 5578,9629
@@ -23715,6 +23714,7 @@ EOF
 #: note: am Mo, den 2016-10-10 gegen 17:50: offen
 #: note: am Sa, den 2016-12-10 gegen 13:00: geschlossen
 #: note: am Fr, den 2017-02-10 gegen 18:30: offen
+#: note: am Fr, den 2017-04-07 gegen 09:30: offen
 #: tempex: volatile vvv
 	3::night 14563,8243 14425,8116 14419,8112
 	3::night 14419,8112 14425,8116 14563,8243
@@ -23755,7 +23755,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1410/nachricht5389.html
-userdel	2::inwork 12624,25570 12694,25696
+userdel	2::inwork 12624,25570 12697,25704
 EOF
      },
      { from  => 1412481600, # 2014-10-05 06:00
@@ -24161,7 +24161,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1505/nachricht5590.html',
        data  => <<EOF,
-userdel	2::inwork 12694,25696 12624,25570
+userdel	2::inwork 12697,25704 12624,25570
 EOF
      },
      { from  => 1426822200, # 2015-03-20 04:30
@@ -25623,7 +25623,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-04-03 vvv
+#: last_checked: 2017-04-08 vvv
 #: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -25911,11 +25911,12 @@ userdel	q4::inwork; 5488,10978 5613,10963 5652,11004
 EOF
      },
      { from  => 1490635298, # 2017-03-27 19:21
-       until => 1491667200, # 2017-04-08 18:00
-       text  => 'Glinkastr.: zwischen Französische Str. und Behrenstr. Baustelle, Richtung Unter den Linden gesperrt, bis 08.04.2017',
+       until => undef, # mittlerweile "bis auf weiteres" laut fritz --- 1491667200, # 2017-04-08 18:00
+       text  => 'Glinkastr.: zwischen Französische Str. und Behrenstr. Baustelle, Richtung Unter den Linden gesperrt',
        type  => 'handicap',
        source_id => '2147341088',
        data  => <<EOF,
+#: XXX wie sieht die Sperrung für Radfahrer aus?
 userdel	q4::inwork; 9183,12076 9164,12172
 EOF
      },
@@ -25955,6 +25956,15 @@ EOF
        data  => <<EOF,
 userdel	q3::inwork 13384,8354 13217,8493
 userdel	q3::inwork; 13217,8493 13262,8554 13301,8606
+EOF
+     },
+     { from  => undef, # 
+       until => 1495641600, # 2017-05-24 18:00
+       text  => 'Rennbahnstr.: ab Hunsrückstr. bis Berliner Allee Bauarbeiten, Fahrtrichtung gesperrt ',
+       type  => 'handicap',
+       source_id => '2147341139',
+       data  => <<EOF,
+userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 14528,16910 14558,16907
 EOF
      },
     );

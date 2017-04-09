@@ -36,6 +36,10 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süde
 Bautzener Str.: Bauarbeiten an der Großgörschenstr., auf Gehweg ausweichen	q4::inwork 8186,9380 8185,9338
 Jülicher Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
 Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
+Schloßallee: Bauarbeiten, Fahrbahn teilweise gesperrt	q2::inwork 11730,19684 11883,19739
+Blankenburger Weg: Bauarbeiten, Einbahnstraßenregelung, Radweg Richtung Nordosten ist auch gesperrt	q2::inwork; 12222,20637 12442,20805
+Pankstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 12524,20863 12442,20805
+Wiltbergstr.: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweicken	q3::inwork; 16669,25373 16583,25440 16475,25526 16414,25575 16294,25683 16220,25716
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gefälle, Fußgänger	q4; 21970,12153 21998,12204
 (An der Wuhle, östliches Ufer): Fußgänger	q1 21316,8487 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
@@ -1601,6 +1605,7 @@ Schulstr. (Lankwitz): Fußgänger	q3 6692,3334 6653,3297 6647,3292
 (Biesheimring - Lutterbacher Str.): einige Fußgänger	q1 2048,3062 2066,3072
 (Biesheimring - Lutterbacher Str.): einige Fußgänger	q1 1987,3166 1999,3177
 Prinzengasse: einige Fußgänger	q2 9955,12300 10002,12305
+(Weg im Schloßpark Buch): Fußgänger	q1 16593,25640 16583,25667 16558,25688 16481,25671 16441,25664 16384,25692 16339,25690 16265,25718 16251,25733
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schüler	q2 7242,8586 7288,8635
@@ -1633,7 +1638,7 @@ Friedrichsruher Str.: sehr eng	q1 6629,5946 6508,5931 6326,5912 6134,5894 6007,5
 Schönhauser Str.: eng	q1 5809,6383 5824,6240 5834,6142 5845,6049 5847,5961 5851,5863 5850,5765
 Jeverstr.: eng	q1 5681,5743 5681,5768 5679,5853 5677,5868 5674,5901 5699,5949 5748,6051 5776,6118 5834,6142
 Friedrichstr. (Lichterfelde): Fuß- und Radweg	q1 2890,3561 2712,3602
-(Bucher Teiche - Schönerlinder Chaussee): eng, umgestürzte Bäume	q3 14017,25491 14141,25659 14216,25760 14302,26021 14352,26100 14366,26234 14538,26558 14497,26727
+(Bucher Teiche - Schönerlinder Chaussee): einige Fußgänger	q1 14321,25216 14056,25378 14036,25433 14017,25482 13942,25711 13966,25777 13970,25785 14106,26057 14187,26214 14491,26714 14497,26727
 (Krankenhausgelände): eher schmaler Gehweg	q1 2688,12701 2555,12686
 (Schloßpark Charlottenburg, westlicher Weg): Fußgänger	q1 2858,13530 2813,13416 2685,13380 2607,13374 2625,13229 2688,12701 2717,12463
 (Uferweg): teilweise relativ schmal, Fußgänger	q1 5166,13087 5144,13075 5076,13116 4940,13168 4742,13157 4751,13245
@@ -1778,7 +1783,7 @@ Alice-Salomon-Park: Fußgänger	q1 6771,9458 6728,9457
 (zum Bayernring): Fußgänger	q1 8454,8574 8531,8404
 Bautzener Platz: Fußgänger, Bordsteine	q3 8182,9240 8100,9240
 Bautzener Platz: Fufgänger, Bordsteine	q3 8102,9262 8183,9260
-(Danziger Str. - Lilli-Henoch-Str.): Fußgänger	q2 12128,14640 12189,14767 12220,14779 12255,14849 12241,14865 12314,15008
+(Danziger Str. - Lilli-Henoch-Str.): Fußgänger	q2 12123,14643 12193,14775 12212,14781 12252,14860 12236,14870 12314,15008
 (Prenzlauer Allee - Lilli-Henoch-Str.): Fußgänger	q2 11877,15366 11937,15349 12003,15311 12103,15218 12208,15108 12284,15068 12314,15008
 (Prenzlauer Allee - Lilly-Henoch-Str.): Fußgänger	q2 11860,15309 11919,15314 11937,15349
 (Verlängerte Diesterwegstr.): Fußgänger	q2 12061,15156 12082,15206 12103,15218
@@ -2493,6 +2498,8 @@ Gartenstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 720,27
 Belßstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 7899,2391 7983,2348 7987,2337
 Gotenburger Str.: Einfahrt verboten: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9000,16803 8847,16870
 Fritz-Werner-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9099,2780 9072,2589
+Gravensteinstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 12229,22457 12185,22465
+Hauptstr. (Französisch Buchholz): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 12199,22367 12229,22457
 Am Krusenick: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 22751,4970 22652,4966 22667,4912 22705,4874
 Josef-Nawrocki-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25802,4681 25802,4823
 Josef-Nawrocki-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25695,4714 25554,4758 25552,4829
@@ -2527,6 +2534,7 @@ Ludolfinger Platz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp;
 Sewanstr. - Balatonstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 17705,10232 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich): gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 18377,9366 18490,9387
 Neue Bahnhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
+Karower Str.: temporäre Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 16593,25640 16632,25512 16669,25373
 Voltairestr.: Baustelle, Fahrtrichtung gesperrt: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 11329,12497 11209,12430
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 5192,10234 5196,10398
 Zillestr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 3807,11859 3976,11869

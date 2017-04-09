@@ -186,7 +186,7 @@ Schweidnitzer Str	1 3220,9598 3225,9844
 Johann-Georg-Str.	1 3108,10069 3170,10041 3348,9806
 Damaschkestr.	1 3132,10499 3013,10553
 Lietzenseeufer	1 2871,11211 2806,11241 2748,11206 2621,11190 2621,11065
-Darßer Str.	1 15000,18056 15031,18106 15181,18137
+Darßer Str.	1 15000,18056 15019,18104 15053,18118 15152,18115
 Alfredstr.	1 16207,11937 16246,12177 16255,12224
 Fanningerstr.	1s 16890,12135 16794,12144
 Gierkeplatz	1 3447,12269 3456,12296 3478,12306 3510,12301 3528,12276 3521,12243 3493,12228 3463,12237 3447,12269
@@ -827,6 +827,8 @@ Kraftwerk Reuter West	2 -447,14338 -495,14311 -650,14355 -792,14258 -1002,14162 
 Bechstedter Weg	1 3467,9045 3661,8815 3701,8849
 Floyd-L.-Parks-Weg	1 2352,1267 2315,1251 2370,1127
 Tor	2 8371,13399 8363,13402 8356,13404
+Gravensteinstr.	1s 12229,22457 12185,22465
+Hauptstr. (Französisch Buchholz)	1s 12199,22367 12229,22457
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -1732,9 +1734,9 @@ Raabestr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 11657,14018 11465,14
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 11709,14856 11609,14881 11535,14900
 Danziger Str. -> Rykestr.: Mittelstreifen mit Straßenbahn	3::igndisp 11709,14856 11609,14881 11535,14688
 Rykestr. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11535,14688 11609,14881 11535,14900
-Mittelstreifen mit Straßenbahn	3nocross::ignrte 12317,14535 12128,14640 12025,14695
-Danziger Str. -> Lilli-Henoch-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12025,14695 12128,14640 12189,14767
-Lilli-Henoch-Str. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12189,14767 12128,14640 12317,14535
+Mittelstreifen mit Straßenbahn	3nocross::ignrte 12317,14535 12123,14643 12025,14695
+Danziger Str. -> Lilli-Henoch-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12025,14695 12123,14643 12193,14775
+Lilli-Henoch-Str. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12193,14775 12123,14643 12317,14535
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 10746,13673 10640,13700 10569,13719 10463,13747
 Torstr. -> Angermünder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 10569,13719 10640,13700 10703,13832
 Angermünder Str. -> Torstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10703,13832 10640,13700 10746,13673
@@ -2842,7 +2844,8 @@ versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
 Drängelgitter	BNP:3:-240 31665,48997
-Mauerweg: Bauarbeiten, gesperrt	2::inwork 7939,14447 7889,14519
+Karower Str.: temporäre Einbahnstraßenregelung	1s 16593,25640 16632,25512 16669,25373
+Mauerweg: Bauarbeiten, gesperrt	2::inwork 7926,14439 7939,14447 7889,14519
 Voltairestr.: Baustelle, Fahrtrichtung gesperrt	1s 11329,12497 11209,12430
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt	1s 5192,10234 5196,10398
 Werkstraße: Zufahrt zur DB-Werkstraße ist wegen Bauarbeiten gesperrt	2::inwork 14043,10928 14107,10911
@@ -2909,6 +2912,9 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 Löwenbrücke: gesperrt	2:inwork 6406,11784 6452,11778
 Dahlemer Feld: zur Zeit eine Ziegenweide, keine Durchfahrt möglich	2:temp -1643,7828 -1787,7932 -1846,8129
+Schwingtor	BNP:5:-148:trailer=10 14491,26714
+Schwingtor	BNP:5:-160:trailer=10 13966,25777
+Schwingtor	BNP:5:-199:trailer=10 14036,25433
 tragen (Treppe)	0:30:-82 2279,5112
 tragen (Treppe)	0:15:-136 2211,5120
 tragen (Treppe)	0:30:-206 17626,-1847
@@ -3235,7 +3241,6 @@ Müncheberger Weg: Privatgelände	2 29978,8975 29868,9084
 Drängelgitter	BNP:10:70 9171,5263
 Niederneuendorfer Allee (Wendeschleife)	1 -2906,17661 -2897,17861
 Zeiler Weg	1 11495,18129 11579,18184
-Zeiler Weg	1s 11835,18301 11914,18303
 Dettelbacher Weg	1 11696,18454 11750,18273
 Dettelbacher Weg	1 11819,18050 11750,18273
 Neuenhagener Str. (Mahlsdorf)	1s 24362,11954 24317,11754
