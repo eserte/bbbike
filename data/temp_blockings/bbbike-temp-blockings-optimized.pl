@@ -4103,6 +4103,16 @@ userdel	q3::inwork; 13217,8493 13262,8554 13301,8606
          'text' => 'Rennbahnstr.: ab Hunsrückstr. bis Berliner Allee Bauarbeiten, Fahrtrichtung gesperrt ',
          'type' => 'handicap',
          'until' => 1495641600
+       },
+       {
+         'data' => 'userdel	q4::inwork 18009,18946 17900,18972 17890,18973 17799,19000 17697,18989 17600,18994
+',
+         'from' => 1491854162,
+         'id' => 2858,
+         'source_id' => '2147341173',
+         'text' => 'Ernst-Barlach-Str./Dorfstr.: Bauarbeiten zwischen Woldegker Str. und Lindenberger Str., Fahrbahn ggfs. gesperrt, bis Ende August 2017 ',
+         'type' => 'handicap',
+         'until' => 1504195200
        }
      
 );

@@ -867,17 +867,17 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736 20755,5750
 	RW2; 14015,7631 14095,7568 14174,7505
 	RW1; 14174,7505 14095,7568 14015,7631
 #: next_check_id: SONNENALLEE-2014 vvv
-#: XXX laut fritz "geänderte Straßenführung" bis 31.12.2016
+#: XXX laut fritz "geänderte Straßenführung" bis 31.12.2016, laut vmz bis Mitte Juni 2017
 #: source_id: IM_023718
 #: source_id: 2147339540
 #: last_checked: 2017-04-07 vvv
-#: check_frequency: 90d vvv
+#: next_check: 2017-06-15 vvv
 # REMOVED, siehe unten ---	RW1; 14174,7505 14302,7429 14357,7450 14405,7435 14424,7401 14432,7353 14451,7340
 	RW2; 14451,7340 14519,7301
 #: note: vermutlich:
 	RW2; 14519,7301 14451,7340
 	RW2;RW8 14451,7340 14432,7353 14424,7401 14405,7435 14357,7450 14302,7429 14174,7505
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
 	RW1; 14015,7631 13919,7707
@@ -1656,7 +1656,7 @@ Berliner Gehwegplatten, ca. 1,50m breit	RW2;RW2 9272,14208 9400,14400 9410,14410
 #: note: Wobei es so aussieht, als ob das Zusatzschild einfach nur fehlt
 #: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5;
 #: by: http://www.dafmap.de/d/berlin.html?id=3134&mt=0&zoom=16 (Projektabschluss: 2017-09-01)
-#: last_checked: 2017-03-30
+#: last_checked: 2017-04-10
 #: check_frequency: 90d
 	RW4; 11451,13301 11368,13170
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 11451,13301 11486,13350

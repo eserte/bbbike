@@ -1263,7 +1263,7 @@ Jupiterstr.: Kopfsteinpflaster	Q2 14853,6550 15058,6784
 #: by: Julius (u): vvv
 #: note: ADFC-Karte meint "mäßig geeignet"
 #: corrected_by: http://www.berlin.de/ba-pankow/presse/archiv/20080626.0955.103689.html (mäßiger Asphalt, Q1 -> Asphalt Q0)
-Grumbkowstr.: Asphalt	Q0 11269,20667 11419,20327 11563,20048
+Grumbkowstr.: Asphalt	Q0 11269,20667 11419,20327 11541,20090 11563,20048
 #: note: ADFC-Karte meint "mäßig geeignet"
 #: corrected_by: srt (schlechter Asphalt -> Asphalt)
 Grumbkowstr.: Asphalt	Q0 11563,20048 11627,19907 11695,19760 11730,19684
@@ -8046,7 +8046,7 @@ Arnheidstr.: Kleinsteinpflaster	Q1- 4250,23642 4185,23679 4098,23761
 #: XXX next_check-Datum wg. möglicher Sperrung
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.579605.php (vom 10. April 2017 bis voraussichtlich 15. Oktober 2017)
 #: last_checked: 2015-11-07
-#: next_check: 2017-04-10
+#: next_check: 2017-04-17
 #: priority: #A
 Hermsdorfer Str.: Kleinsteinpflaster	Q1- 3957,23981 4073,23980 4240,23985 4256,23985 4316,23995 4397,24033
 Cecilienallee: Kleinsteinpflaster	Q1- 3922,24161 4034,24181
@@ -16004,7 +16004,7 @@ Wackenbergstr.: Kopfsteinpflaster mit Asphaltdecke in der Mitte	Q1 10624,19912 1
 Wackenbergstr.: Kopfsteinpflaster	Q2- 10812,20011 10888,20051 10914,20065 11007,20112
 #: corrected_by: srt (Betonplatten -> Kopfsteinpflaster)
 Wackenbergstr.: Kopfsteinpflaster	Q2- 11007,20112 11285,20260 11311,20273
-Wackenbergstr.: Betonplatten	Q1 11311,20273 11419,20327 11535,20383
+Wackenbergstr.: Betonplatten	Q1 11311,20273 11359,20297 11419,20327 11535,20383
 #: confirmed_by: srt (zumindest am östlichen Ende)
 Wackenbergstr.: unbefestigt (Schlagloch-Sandpiste)	Q2- 11535,20383 11558,20414 11630,20476 11718,20551 11797,20601
 #: by: ^^^
@@ -16449,7 +16449,8 @@ Demminer Str.: guter Beton	Q0 17502,18286 17673,18438 17772,18523 17797,18679
 #: note: laut ADFC-Karte/neu schlechter als mäßig geeignet:
 #: XXX wird sich am Fahrbahnbelag was ändern?
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.559438.php
-#: next_check: 2017-04-30
+#: source_id: 2147341173
+#: next_check: 2017-08-31
 Dorfstr.: Kopfsteinpflaster	Q2 17600,18994 17697,18989 17799,19000 17890,18973 17900,18972 18009,18946
 Am Gutshof: Verbundsteinpflaster	Q0- 17730,18747 17813,18726 17819,18738 17839,18782 17938,18749 17929,18709 17819,18738
 #: by: ^^^

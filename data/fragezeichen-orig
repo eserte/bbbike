@@ -22,7 +22,7 @@
 #: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
 #: source_id: 2147340987
-#: last_checked: 2017-04-09
+#: last_checked: 2017-04-10
 #: check_frequency: 45d
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
@@ -33,7 +33,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2017-04-04
+#: last_checked: 2017-04-10
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -356,8 +356,8 @@ Triftstr.: Planung von Radverkehrsanlagen	?::projected 11940,22587 11959,22696 1
 #: check_frequency: 60d
 Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823 11442,17664 11457,17585 11482,17459 11508,17315 11522,17248 11541,17153 11570,17028 11598,16878 11621,16749 11630,16623 11655,16486 11659,16457 11673,16367
 # 
-#: last_checked: 2016-12-09
-#: check_frequency: 60d
+#: last_checked: 2017-04-10
+#: check_frequency: 90d
 Berliner Allee/Tassostr.: Bau einer Ampel	?::projected 13591,15969 13623,15954 13653,15938
 #: by: ^^^
 # 
@@ -378,7 +378,10 @@ Mariendorfer Allee: Projektplanung für Schutzstreifen	?::projected 8579,2265 855
 #: osm_watch: way id="169753565" version="5"
 #: osm_watch: way id="111325187" version="13"
 #: osm_watch: way id="111325188" version="15"
+#: source_id: 2147341157
+#: XXX Ende laut rbbtext: 24. April, laut fritz: 22. April (beide: in Höhe Bayernring), laut vmz: Ende April (Gesamtmaßnahme)
 #: last_checked: 2017-03-06
+#: next_check: 2017-04-22
 Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Radspuren)	?::projected 8594,8777 8601,8724 8616,8605 8660,8454 8670,8370 8666,8305 8632,8174 8620,8095 8623,8018 8627,7941 8642,7876 8686,7726 8690,7704 8704,7603 8706,7585 8715,7384 8716,7323
 #: by: ^^^
 # 
@@ -445,7 +448,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/holzmarktstrasse/index.shtml
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/holzmarktstrasse/download/LP_01.pdf
 #: source_id: 2147340618
-#: last_checked: 2017-04-04
+#: last_checked: 2017-04-10
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 # 
 # REMOVED (realisiert) --- #: by: http://www.aktion-kms.de/files/2015-07-13_flyer_isarneckar_final.pdf --- #: last_checked: 2016-12-15 --- #: check_frequency: 30d --- Neckarstr./Isarstr.: Umgestaltung, danach verkehrsberuhigter Bereich; ändert sich am Fahrbahnbelag etwas?	?::inwork 12368,8356 12382,8292 12509,8318 12639,8344
@@ -478,7 +481,7 @@ Am Carolinenhof: existiert die Straße schon? Qualität? Genaue Lage?	? -8113,4000
 #: osm_watch: note 789602 2
 #: last_checked: 2017-04-09
 #: check_frequency: 180d
-Karlinekenweg: neue Straße in Planung, Qualität, genaue Lage?	?::projected 11419,20327 11371,20295 11485,20064 11544,20079 11563,20048
+Karlinekenweg: neue Straße in Planung, Qualität, genaue Lage?	?::projected 11359,20297 11409,20191 11431,20202 11498,20068 11541,20090
 # 
 # REMOVED (noch keine Bauarbeiten) --- #: XXX Zwischen Bosse- und Bödikerstraße Sperrung stadtauswärts. (Bis 08.09.2016 17:00 Uhr) --- Corinthstr.: Bauarbeiten auch für Radfahrer relevant?	?::inwork; 14312,10657 14490,10610
 # 
@@ -1773,7 +1776,7 @@ Elsbeerenweg.: Qualität? Genaue Lage? Existiert die Straße schon?	? -6378,5877 -
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_929_16.pdf
 #: osm_watch: way id="295627704" version="4"
-#: last_checked: 2017-03-30
+#: last_checked: 2017-04-10
 #: check_frequency: 60d
 Liebigstr.: Einrichtung einer Spielstraße, wo genau?	? 14229,12311 14166,12323 14147,12344 14091,12355 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
 # 
@@ -1782,7 +1785,7 @@ Liebigstr.: Einrichtung einer Spielstraße, wo genau?	? 14229,12311 14166,12323 1
 #: XXX Bauarbeiten zwischen Thaerstr. und Hübnerstr.
 #: XXX NEW	Eldenaer Str. (Friedrichshain) In beiden Richtungen Kreuzung Proskauer Str. (Berlin)  Gültig ab: 24.11.2016 06:15  Baustelle, Vollsperrung (bis vsl. Ende 11/16)	2147340785
 #: XXX -> ist die Vollsperrung für Radfahrer relevant? -> am Abend schon wieder aufgehoben?
-#: last_checked: 2017-04-07 vvv
+#: last_checked: 2017-04-10 vvv
 #: check_frequency: 30d
 Eldenaer Str.: in Richtung Osten sind noch Bauarbeiten, vermutlich werden die Radspuren danach markiert	?::inwork; 14096,12827 14355,12752
 #: check_frequency: 14d
@@ -2337,7 +2340,7 @@ Südpankeweg, Fortsetzung zur Ida-von-Arnim-Str.: wann wird sie gebaut? Qualität?
 #: next_check_id: SONNENALLEE-2014
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14709&options=8 (beschlossen durch BVV, Realisierung steht noch aus)
 #: last_checked: 2017-03-27 (zurzeit eine Baustellenampel, wird eine permanente Ampel nach den Bauarbeiten aufgestellt?)
-#: check_frequency: 90d
+#: next_check: 2017-06-15
 Sonnenallee/Ziegrastr.: wird hier eine permanente Ampel entstehen?	?::projected 14174,7505
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14708&options=8 (beschlossen durch BVV)
@@ -3015,14 +3018,7 @@ Hanoier Str.	?::projected 20730,11462 20723,11374
 #: check_frequency: 360d
 Bebauungsplan XXI-34a: evtl. entstehen hier neue Straßen	?::projected 20649,11628 20641,11496 21099,11478 21091,11601 20650,11627
 # 
-#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4189
-#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036554746315/554746315/00071216/16-Dateien/image001.png
-#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7240
-#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4237
-#: XXX_indoor bei http://fbinter.stadt-berlin.de/fb/index.jsp?Szenario=light auf der Karte "Ortsteile von Berlin" nachschauen
-#: next_check: 2017-03-31
-Wedding/Prenzlauer Berg: Bezirksgrenzen werden verändert	?::projected 10271,14950 10208,14922 10053,15214 10031,15395 9976,15546 9941,15627 10042,15640
-# 
+# REMOVED (eingetragen) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4189 --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036554746315/554746315/00071216/16-Dateien/image001.png --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7240 --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4237 --- #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2017/pressemitteilung.563291.php --- #: XXX_indoor bei http://fbinter.stadt-berlin.de/fb/index.jsp?Szenario=light auf der Karte "Ortsteile von Berlin" nachschauen --- #: next_check: 2017-03-31 --- Wedding/Prenzlauer Berg: Bezirksgrenzen werden verändert	?::projected 10271,14950 10208,14922 10053,15214 10031,15395 9976,15546 9941,15627 10042,15640
 # REMOVED --- #: XXX wird erst im April eröffnet --- #: by: http://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20160213 --- #: note: category RB --- #: next_check: 2016-04-01 --- Berlin-Schöneweide	? 17722,5573
 # 
 #: XXX im Zuge des Bebauungsplans 1-67VE
@@ -3253,7 +3249,7 @@ Alt-Mahlsdorf: entsteht hier eine Ampel? Wird sie für Radfahrer relevant sein?	?
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2017-03-21
+#: last_checked: 2017-04-10
 #: next_check: 2018-01-01
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 

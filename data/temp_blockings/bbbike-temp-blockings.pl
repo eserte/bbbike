@@ -11827,7 +11827,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009192',
        data  => <<EOF,
-userdel	1::inwork 11563,20048 11419,20327 11269,20667
+userdel	1::inwork 11563,20048 11541,20090 11419,20327 11269,20667
 EOF
      },
      { from  => 1214257459, # 2008-06-23 23:44
@@ -23026,7 +23026,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20140528.1315.397553.html',
        data  => <<EOF,
-userdel	q2::inwork 11563,20048 11419,20327
+userdel	q2::inwork 11563,20048 11541,20090 11419,20327
 EOF
      },
      { from  => 1402304400, # 2014-06-09 11:00
@@ -25965,6 +25965,15 @@ EOF
        source_id => '2147341139',
        data  => <<EOF,
 userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 14528,16910 14558,16907
+EOF
+     },
+     { from  => 1491854162, # 2017-04-10 21:56
+       until => 1504195200, # 2017-08-31 18:00
+       text  => 'Ernst-Barlach-Str./Dorfstr.: Bauarbeiten zwischen Woldegker Str. und Lindenberger Str., Fahrbahn ggfs. gesperrt, bis Ende August 2017 ',
+       type  => 'handicap',
+       source_id => '2147341173',
+       data  => <<EOF,
+userdel	q4::inwork 18009,18946 17900,18972 17890,18973 17799,19000 17697,18989 17600,18994
 EOF
      },
     );
