@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2008,2013,2014,2015,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2008,2013,2014,2015,2016,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -670,6 +670,7 @@ sub BBBikeGPS::do_draw_gpsman_data {
     my @pos2vehicle;
     my $brand;
     my %brand; # per vehicle
+    my $first_date;
     foreach my $chunk (@{ $gps->Chunks }) {
 	my $is_route = $chunk->Type == GPS::GpsmanData::TYPE_ROUTE();
 	# Code taken from gpsman2bbd.pl:
@@ -706,7 +707,7 @@ sub BBBikeGPS::do_draw_gpsman_data {
 	    } else {
 		$pointname =
 		    $base . "/" . $wpt->Ident . $comment_add .
-			(defined $alt ? " alt=".sprintf("%.1fm",$alt) : "") .
+			(defined $alt && length $alt ? " alt=".sprintf("%.1fm",$alt) : "") .
 			    " long=" . Karte::Polar::dms_human_readable("long", Karte::Polar::ddd2dms($wpt->Longitude)) .
 				" lat=" . Karte::Polar::dms_human_readable("lat", Karte::Polar::ddd2dms($wpt->Latitude));
 	    }
@@ -740,7 +741,7 @@ sub BBBikeGPS::do_draw_gpsman_data {
 				$speed = $dist/($legtime)*3.6;
 			    }
 			    my $grade;
-			    if ($dist != 0 && defined $alt) {
+			    if ($dist != 0 && defined $alt && length $alt) {
 				$grade = 100*(($alt-$last_alt)/$dist);
 				if (abs($grade) > 10) {	# XXX too many wrong values... XXX more intelligent solution
 				    undef $grade;
@@ -802,12 +803,17 @@ sub BBBikeGPS::do_draw_gpsman_data {
 				if (defined $speed) {
 				    $name .= int($speed) . " km/h ";
 				}
+				my $date = sprintf "%04d-%02d-%02d", $l[5]+1900,$l[4]+1,$l[3];
 				$name .= "[dist=" . BBBikeUtil::m2km($whole_dist,2) .
-				    ", time=" . BBBikeUtil::s2ms($whole_time) . "min" . sprintf(", abstime=%02d:%02d:%02d", @l[2,1,0]) .
-					(defined $grade ? ", grade=" . sprintf("%.1f%%", $grade) : "") .
-					    (defined $alt ? ", alt=" . sprintf("%.1fm", $alt) : "") .
-						(defined $vehicle ? ", vehicle=$vehicle" . (defined $brand ? "/$brand" : "") : "") .
-						    "]";
+				    ", time=" . BBBikeUtil::s2ms($whole_time) . "min" .
+				    ", abstime=" .
+				    (defined $first_date && $date ne $first_date ? "$date " : "") .
+				    sprintf("%02d:%02d:%02d", @l[2,1,0]) .
+				    (defined $grade ? ", grade=" . sprintf("%.1f%%", $grade) : "") .
+				    (defined $alt ? ", alt=" . sprintf("%.1fm", $alt) : "") .
+				    (defined $vehicle ? ", vehicle=$vehicle" . (defined $brand ? "/$brand" : "") : "") .
+				    "]";
+				$first_date = $date if !defined $first_date;
 				my $c1 = "$last_x,$last_y";
 				my $c2 = "$x,$y";
 				if ($main::use_current_coord_prefix) {

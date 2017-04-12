@@ -3995,7 +3995,7 @@ sub gps_animation {
 	($curr_speed) = $name1 =~ m|(\d+)\s*km/h|;
 	($curr_dist)  = $name1 =~ m|dist=([\d\.]+)|;
 
-	my @abstime = $name1 =~ /abstime=(\d+):(\d+):(\d+)/;
+	my @abstime = $name1 =~ /abstime=(?:\d{4}-\d{2}-\d{2} )?(\d+):(\d+):(\d+)/;
 	$curr_abs_time = sprintf "%02d:%02d:%02d", @abstime;
 
 	my $other_tag1;
