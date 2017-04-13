@@ -1298,6 +1298,13 @@ EOF
 		    }
 		}
 	    } else {
+		# OpenStreetMap URL
+		while ($s =~ m{map=\d+/([-+]?[0-9\.]+)/([-+]?[0-9\.]+)}g) {
+		    my($y,$x) = ($1,$2);
+		    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+		    push @coords, [$x,$y];
+		}
+
 		# Geo URI
 		while ($s =~ /geo:([-+]?[0-9\.]+),([-+]?[0-9\.]+)/g) {
 		    my($y,$x) = ($1,$2);
