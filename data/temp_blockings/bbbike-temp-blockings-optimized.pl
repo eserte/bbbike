@@ -4042,18 +4042,19 @@ userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,
          'until' => 1493222400
        },
        {
-         'data' => '#: XXX wie sieht die Sperrung für Radfahrer aus?
+         'data' => '# REMOVED (ja, auf Bürgersteig ausweichen) --- XXX wie sieht die Sperrung für Radfahrer aus?
 userdel	q4::inwork; 9183,12076 9164,12172
 ',
          'from' => 1490635298,
          'id' => 2852,
          'source_id' => '2147341088',
-         'text' => 'Glinkastr.: zwischen Französische Str. und Behrenstr. Baustelle, Richtung Unter den Linden gesperrt',
+         'text' => 'Glinkastr.: zwischen Französische Str. und Behrenstr. Baustelle, Richtung Unter den Linden gesperrt, bis zum 13. April 2017',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1492084800
        },
        {
          'data' => '#: note: laut vmz nur bis Ende Juli 2017
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.579822.php (weiterhin bis September 2017)
 #: source_id: 2147341144
 userdel	q4::inwork; 5583,5179 5527,5217 5416,5289 5397,5302 5382,5312
 ',

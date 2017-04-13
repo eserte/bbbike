@@ -12,7 +12,7 @@
 # 
 #: next_check_id: RUEDERSDORFER-2016
 #: osm_watch: way id="472360197" version="1"
-#: last_checked: 2017-04-06
+#: last_checked: 2017-04-12
 #: check_frequency: 7d
 Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 13173,11788 13066,11854
 # 
@@ -24,7 +24,7 @@ Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inw
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2017-04-05
+#: last_checked: 2017-04-12
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 #: last_checked: 2017-04-09
@@ -41,7 +41,7 @@ Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # REMOVED (beendet) --- #: XXX laut Fritz bis Ende März 2016 (sieht aber schlecht aus für diesen Termin) --- #: last_checked: 2016-06-13 vvv --- #: check_frequency: 7d vvv --- Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 # REMOVED --- Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
-#: last_checked: 2017-04-04
+#: last_checked: 2017-04-12
 #: check_frequency: 7d
 Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
 # 
@@ -92,17 +92,17 @@ Schloßplatz: Engstelle wegen Bauarbeiten	q3::inwork 10285,12306 10357,12356
 Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3339&mt=0&zoom=16 (Projektabschluss: 2017-03-31)
-#: last_checked: 2017-04-07
+#: last_checked: 2017-04-11
 Kommandantenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10330,11422 10136,11529
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3339&mt=0&zoom=16 (Projektabschluss: 2017-03-31)
-#: last_checked: 2017-04-07
+#: last_checked: 2017-04-11
 Beuthstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10201,11631 10235,11610 10330,11422
 # 
 #: last_checked: 2017-04-03
 Sebastianstr.: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 10640,11564 10818,11269
 # 
-#: last_checked: 2017-04-04
+#: last_checked: 2017-04-11
 #: check_frequency: 14d
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9935,11566 9949,11470
 # 
@@ -207,7 +207,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # 
 #: by: http://www.bmbf.de/de/16888.php (Bezug im Herbst 2014)
 #: osm_watch: way id="4592727" version="12"
-#: last_checked: 2017-04-08
+#: last_checked: 2017-04-11
 #: check_frequency: 60d
 Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse!), Ausweichen auf Gehweg	q3::inwork 8315,13181 8406,13127
 # 
@@ -309,7 +309,7 @@ Carl-Herz-Ufer: Sperrung der Fahrbahn an der Baerwaldstr.	q4::inwork 10430,10081
 #: source_id: LMS-BR_r_LMS-BR_68468
 #: source_id: LMS-BR_r_LMS-BR_85494
 #: XXX laut fritz "Vollsperrung" in der Alexandrinenstr (bis 31.03.2017, später bis 30.04.2017 verlängert) ("Vollsperrung" stimmt aber nicht)
-#: last_checked: 2017-04-07
+#: last_checked: 2017-04-11
 #: next_check: 2017-04-30
 Stallschreiberstr., Alexandrinenstr.: Einbahnstraßenregelung	q4::inwork; 10794,10927 10824,11010 10678,11172 10593,11120 10501,11056
 # 
@@ -522,8 +522,11 @@ Dresdener Str. - NKZ: Bordsteine	q3 11344,10507 11334,10527
 Alexanderplatz: langsame Straßenbahnen, Fußgängerverkehr	q2 11139,13008 11064,12910 10970,12822 10923,12779
 Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q2 11134,12793 11064,12910
 #: XXX nach den Bauarbeiten den alten Eintrag wiederherstellen
+#: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr)
+#: XXX hat die Sperrung für den Kfz-Verkehr auch Auswirkungen auf den Radverkehr (zusätzliche Absperrungen?)
 #: last_checked: 2017-04-08
-#: check_frequency: 60d
+#: next_check: 2017-04-12
+# REMOVED --- : check_frequency: 60d
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Rathausstr.: Fußgänger, Bauarbeiten	q1- 10923,12779 10704,12595
 Dircksenstr.: langsame Straßenbahnen, Fußgänger	q2 10970,12822 10849,12944
@@ -555,7 +558,7 @@ Görlitzer Park: Fußgänger	q2 12509,10189 12502,10244
 Gartenufer: einige Fußgänger	q1 5790,11643 5845,11615 6067,11479 6200,11417 6337,11365 6346,11326
 Tiergartenufer: Fußgänger	q1 6186,11466 6079,11524 5919,11633 5895,11692 5835,11768 5736,11835 5543,11837 5478,11860
 (Lichtensteinallee - Tiergartenufer): Parkweg, Fußgänger	q1 6289,11440 6186,11466
-Tiergarten: Parkweg, Fußgänger	q2 5666,11362 5727,11573 5756,11618 5790,11643 5802,11677 5826,11682 5831,11697 5818,11722 5835,11768 5858,11863 5900,11913
+Tiergarten: Parkweg, Fußgänger	q2 5666,11362 5720,11573 5756,11618 5790,11643 5802,11677 5826,11682 5831,11697 5818,11722 5835,11768 5858,11863 5900,11913
 Fasanerieallee: Parkweg	q1 6428,11610 6450,11641 6540,11754 6685,11954
 Große Sternallee: Parkweg	q1 6809,11979 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566 7504,11512
 (Hiroshimastr. - Große Sternallee): Parkweg	q1 7356,11517 7362,11561 7373,11594
@@ -563,6 +566,7 @@ Am S-Bhf. Bellevue: einige Fußgänger	q1 6694,12627 6516,12650
 Bellevue-Ufer: Parkweg	q1 7039,12314 6694,12627
 Bellevueallee: Parkweg	q1 7039,12314 7383,12095 7429,12070 7658,11947 7717,11918 7801,11875 8016,11770 8026,11764 8172,11679
 Ahornsteig: Parkweg	q1 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753 8026,11764 8140,11850 8167,11865 8221,11876 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
+(Luiseninsel - Tiergartenstr.): Parkweg	q1 7664,11597 7600,11513
 Tiergarten: Parkweg	q1 8167,11865 8132,11910
 Tiergarten: Parkweg	q1 8095,11919 8104,11984 8091,11992 8091,12011
 Tiergarten: Rampe, eng	q3 8091,12011 8091,12023 8099,12022
@@ -899,7 +903,7 @@ Beruner Str.: Rampen, Fußgänger, U-Bahn-Ausgang	q3 20143,10731 20215,10554
 (Parkweg Spreebogenpark): besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 8021,12832 8036,12855 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
 Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 7904,12803 7945,12878 7966,12913 8044,12989 8159,13032
 #: note: Radfahren erlaubt:
-Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 8277,13032 8315,13005 8401,12973 8464,12919 8498,12870 8529,12757 8566,12661 8587,12642 8635,12629 8754,12622
+Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 8257,13037 8277,13032 8317,13015 8401,12973 8464,12919 8498,12870 8529,12757 8566,12661 8587,12642 8635,12629 8754,12622
 Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 8635,12629 8709,12605 8756,12608
 Helenenhof: enge Tore, Fußgänger	q3 14506,11275 14395,11356
 Färberstr. - Uferweg: sehr eng	q2 21662,4974 21665,5035 21696,5053
@@ -2483,6 +2487,7 @@ Schulstr. (Lankwitz): Fußgänger	q3 6692,3334 6653,3297 6647,3292
 #: note: relativ kurz, deshalb q2
 Prinzengasse: einige Fußgänger	q2 9955,12300 10002,12305
 (Weg im Schloßpark Buch): Fußgänger	q1 16593,25640 16583,25667 16558,25688 16481,25671 16441,25664 16384,25692 16339,25690 16265,25718 16251,25733
+(Uferpromenade am Humboldthafen): einige Fußgänger	q1 8257,13037 8242,13067 8242,13183 8315,13181
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

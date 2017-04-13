@@ -25911,12 +25911,12 @@ userdel	q4::inwork; 5488,10978 5613,10963 5652,11004
 EOF
      },
      { from  => 1490635298, # 2017-03-27 19:21
-       until => undef, # mittlerweile "bis auf weiteres" laut fritz --- 1491667200, # 2017-04-08 18:00
-       text  => 'Glinkastr.: zwischen Französische Str. und Behrenstr. Baustelle, Richtung Unter den Linden gesperrt',
+       until => $isodate2epoch->("2017-04-13 14:00:00"), # undef, # mittlerweile "bis auf weiteres" laut fritz --- 1491667200, # 2017-04-08 18:00
+       text  => 'Glinkastr.: zwischen Französische Str. und Behrenstr. Baustelle, Richtung Unter den Linden gesperrt, bis zum 13. April 2017',
        type  => 'handicap',
        source_id => '2147341088',
        data  => <<EOF,
-#: XXX wie sieht die Sperrung für Radfahrer aus?
+# REMOVED (ja, auf Bürgersteig ausweichen) --- XXX wie sieht die Sperrung für Radfahrer aus?
 userdel	q4::inwork; 9183,12076 9164,12172
 EOF
      },
@@ -25927,6 +25927,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.576875.php',
        data  => <<EOF,
 #: note: laut vmz nur bis Ende Juli 2017
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.579822.php (weiterhin bis September 2017)
 #: source_id: 2147341144
 userdel	q4::inwork; 5583,5179 5527,5217 5416,5289 5397,5302 5382,5312
 EOF
