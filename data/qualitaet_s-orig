@@ -154,10 +154,6 @@ Winterfeldtplatz: Kopfsteinpflaster, OK	Q1 7038,10088 7049,9833
 Corneliusstr.: mäßiges Kopfsteinpflaster	Q2 6880,11110 6841,11114 6630,11247 6476,11325
 Kopernikusstr.: mäßiges Kopfsteinpflaster	Q2 13467,11778 13651,11731
 Torellstr.: mäßiges Kopfsteinpflaster	Q2 13295,11792 13467,11778
-#: next_check_id: RUEDERSDORFER-2016
-#: XXX Bauarbeiten, danach vielleicht teilweise bessere Qualität?
-#: last_checked: 2017-04-12
-#: check_frequency: 60d
 Rüdersdorfer Str.: Asphalt mit Schäden	Q1- 13295,11792 13173,11788 13066,11854
 Kaskelstr.: relative glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
 Spittastr.: mäßiges Kopfsteinpflaster	Q2 15447,10883 15509,11058 15578,11241
@@ -2554,11 +2550,11 @@ Wuhlewanderweg: wassergebundene Decke	Q1 22160,10834 22103,10814 22059,10782
 Wuhlewanderweg: guter Beton	Q0 22110,10796 22059,10782 21950,10776 21869,10750 21827,10684 21791,10623 21657,10519 21646,10510 21608,10403 21586,10344 21584,10329
 Wuhlewanderweg: Parkweg	Q1 21584,10329 21585,10289 21566,10230 21619,9993 21611,9893
 Wuhlewanderweg: Parkweg	Q1 21686,9876 21678,9817 21633,9731 21587,9609 21524,9488 21467,9236 21383,9045
-Andernacher Str.: Asphalt	Q0 19249,8662 19159,8622
-Andernacher Str.: mäßiger Asphalt	Q1- 19159,8622 19075,8590 19030,8559 19000,8509 18949,8437
+Andernacher Str.: Asphalt	Q0 19245,8669 19155,8631
+Andernacher Str.: mäßiger Asphalt	Q1- 19155,8631 19075,8590 19030,8559 19000,8509 18949,8437
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.523136.php
 #: XXX evtl. nach den Bauarbeiten besserer Asphalt
-#: last_checked: 2016-12-10
+#: last_checked: 2017-04-14
 #: check_frequency: 60d
 Rheinsteinpark: Asphalt	Q0- 19073,8828 19145,8659
 Rolandseck: Asphalt	Q0 18834,9256 18903,9244 18977,9322
@@ -2902,7 +2898,7 @@ Theatergasse: Asphalt	Q0 18787,8540 18846,8616
 Wildensteiner Str.: guter Asphalt	Q0 18627,8475 18528,8331
 Wildensteiner Str.: schlechtes Kopfsteinpflaster	Q3 18528,8331 18416,8163
 Wildensteiner Str.: gutes Kopfsteinpflaster	Q1- 18416,8163 18365,8094 18333,8059
-Am Carlsgarten: Asphalt	Q0 18709,8423 18799,8413 18875,8365 18914,8341 18956,8323 19119,8209 19208,8142 19334,8046 19456,7956
+Am Carlsgarten: Asphalt	Q0 18704,8427 18799,8413 18875,8365 18914,8341 18956,8323 19119,8209 19208,8142 19334,8046 19456,7956
 Am Carlsgarten: Beton	Q0- 19456,7956
 (Am Carlsgarten - Waldowallee): Asphalt	Q0 19456,7956 19478,7967 19509,7999
 #: XXX Bauarbeiten am angrenzenden Grundstück, evtl. danach bessere Qualität?
@@ -7503,7 +7499,7 @@ Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 (Fischerstr. - Lückstr.): Beton mit Schäden	Q1- 16587,10613 16601,10650
 #: XXX wird hier saniert werden?
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6721
-#: last_checked: 2016-10-30
+#: last_checked: 2017-04-14
 #: check_frequency: 120d
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1- 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 Rüdersdorfer Str. [Rückseite]: Beton	Q0- 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
@@ -7628,7 +7624,7 @@ Ruhwaldweg: Kopfsteinpflaster	Q2 1170,13521 1132,13504 1110,13462 1018,13446
 Herbert-Lewin-Platz: Kleinsteinpflaster	Q1 5627,12105 5585,12009 5620,11997 5684,11997 5712,12033
 Herbert-Lewin-Platz: Kleinsteinpflaster	Q1 5658,12082 5645,12058 5620,11997
 (Radweg am Müggelsee - Strandschloßweg): Waldweg	Q1 25232,3757 25224,3789 25193,3844
-(Zufahrt zur Trabrennbahn): wassergebundene Decke, teilweise holprig	Q1- 18709,8423 18748,8363 18751,8300 18741,8220 18671,8092
+(Zufahrt zur Trabrennbahn): wassergebundene Decke, teilweise holprig	Q1- 18704,8427 18748,8363 18751,8300 18741,8220 18671,8092
 (Weg an der Trabrennbahn): wassergebundene Decke	Q1 18751,8300 18799,8250 18839,8165 18915,8079 19014,7875 19099,7761 19173,7585 19193,7540 19214,7515 19340,7400 19348,7393
 (An der Karlshorster Heide - Treskowallee): wassergebundene Decke	Q1 19051,8063 18881,8184 18799,8250
 (Unterfeld - Weg an der Trabrennbahn): wassergebundene Decke	Q1 18949,8107 18915,8079
@@ -10197,7 +10193,7 @@ Lohmeyerstr.: Kopfsteinpflaster	Q2 3348,12314 3409,12451
 #: XXX wird hier auch verkehrsberuhigt, zumindest teilweise? vvv
 #: last_checked: 2017-02-25 vvv
 #: check_frequency: 30d vvv
-#: osm_watch: way id="354078625" version="7"
+#: osm_watch: way id="354078625" version="8"
 Jutta-Langenau-Str.: unbefestigte Baustraße	Q2- 17610,16307 17643,16322 17821,16395 17863,16416 17877,16423
 #: osm_watch: way id="354078421" version="6"
 Harry-Glaß-Str.: unbefestigte Baustraße	Q2- 17610,16400 17643,16322
@@ -11840,7 +11836,7 @@ Koserstr.: Kopfsteinpflaster	Q2 3403,6331 3309,6270 3209,6206 3118,6140 3112,609
 # 
 #: by: Ingmar Camphausen: vvv
 #: confirmed_by: srt
-Berner Str.: schlechtes Kopfsteinpflaster	Q3 3028,2858 3015,2606
+Berner Str.: schlechtes Kopfsteinpflaster	Q3 3019,2858 3015,2606
 #: corrected_by: srt (Q3 -> Q2)
 Berner Str.: Kopfsteinpflaster	Q2 3015,2606 3011,2487 3009,2429 3006,2384 3003,2339 3000,2232 2995,2119 2995,2111
 #: confirmed_by: srt
@@ -12203,7 +12199,7 @@ Togostr.: Asphalt	Q0 5531,16734 5315,16936
 #: by: Hanswalter Schramm: vvv
 #: note: widerspricht dem Eintrag von Beate Wolter (Asphalt, Q0):
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> Asphalt)
-Kommandantenstr. (Lichterfelde): Asphalt	Q0 3028,2858 3027,2958 3026,3058 3030,3276 3011,3303
+Kommandantenstr. (Lichterfelde): Asphalt	Q0 3019,2858 3023,2958 3026,3058 3030,3276 3011,3303
 Kommandantenstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 3050,3333 3034,3359 3037,3513 3044,3680 3045,3718
 Geibelstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 2781,3122 2765,3184 2748,3393 2734,3563 2712,3602
 Friedrichstr. (Lichterfelde): Kopfsteinpflaster	Q2 3185,3476 3037,3513
@@ -12810,7 +12806,7 @@ Braillestr.: Asphalt	Q0 4512,5199 4477,5250 4430,5324
 # 
 #: by: maja wegener: vvv
 #: corrected_by: srt (mäßiger Asphalt -> Asphalt)
-Wandlitzstr.: Asphalt	Q0 18709,8423 18627,8475
+Wandlitzstr.: Asphalt	Q0 18704,8427 18627,8475
 #: corrected_by: srt (Q2 -> Q0-)
 Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 18448,8602
 #: confirmed_by: srt
@@ -16105,7 +16101,9 @@ Schubartstr.: Asphalt	Q0 3158,19964 3343,19727 3546,19477
 Rheingoldstr.: guter Asphalt	Q0 18903,9244 18961,9109 18983,9044 19059,8863
 #: corrected_by: srt
 Rheingoldstr.: schlechtes Kopfsteinpflaster	Q3 19059,8863 19073,8828
-Rheingoldstr.: guter Asphalt	Q0 19145,8659 19159,8622 19206,8514 19275,8419
+#: corrected_by: srt (Q0 -> Q0-, hier einige Schäden)
+Rheingoldstr.: guter Asphalt	Q0- 19145,8659 19155,8631
+Rheingoldstr.: guter Asphalt	Q0 19155,8631 19206,8514 19275,8419
 #: by: ^^^
 # 
 #: by: Karl Timm: vvv
@@ -16452,6 +16450,7 @@ Demminer Str.: guter Beton	Q0 17502,18286 17673,18438 17772,18523 17797,18679
 #: XXX wird sich am Fahrbahnbelag was ändern?
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.559438.php
 #: source_id: 2147341173
+#: source_id: LMS-BR_r_LMS-BR_93888
 #: next_check: 2017-08-31
 Dorfstr.: Kopfsteinpflaster	Q2 17600,18994 17697,18989 17799,19000 17890,18973 17900,18972 18009,18946
 Am Gutshof: Verbundsteinpflaster	Q0- 17730,18747 17813,18726 17819,18738 17839,18782 17938,18749 17929,18709 17819,18738
@@ -22264,7 +22263,7 @@ McNair-Promenade: Asphalt	Q0 1882,1376 1785,1338
 #: by: ^^^
 # 
 #: by: ulrike kahnt:
-Steinäckerstr.: schlechtes Kopfsteinpflaster	Q3 2637,2973 3027,2958
+Steinäckerstr.: schlechtes Kopfsteinpflaster	Q3 2637,2973 3023,2958
 # 
 #: by: timo (...beyerlein):
 Sophienstr. (Lichterfelde): Asphalt	Q0 3632,3943 3777,4042 3787,4053

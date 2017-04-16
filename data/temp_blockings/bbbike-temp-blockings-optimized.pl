@@ -2502,7 +2502,26 @@ userdel	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 34421,1950 34359,2165 34250,2546
+',
+         'from' => 1495058400,
+         'id' => 2078,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              15,
+                              'months',
+                              5
+                            ]
+                          ],
+         'source_id' => 'http://www.erkner.de/271.html?date=20170415',
+         'text' => 'Erkner: Heimatfest, 19.5.2017 bis 21.5.2017',
+         'type' => 'gesperrt',
+         'until' => 1495418400
+       },
        undef,
        undef,
        undef,
@@ -3758,6 +3777,7 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,464
          'data' => '#: next_check_id: SEEGEFELDERWEG-2016
 #: source_id: IM_026411
 #: source_id: 2147339562
+#: source_id: LMS-BR_r_LMS-BR_51041
 #: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3
 #: next_check: 2017-11-01
 # REMOVED --- userdel	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
@@ -3980,6 +4000,7 @@ userdel	q3::inwork 4564,3457 4800,3391 4862,3363 5022,3318
        {
          'data' => '#: note: laut vmz bis Mitte August 2018 und nur bis zur Bahnbrücke, laut fritz bis 1.7.2018
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103689945674/89945674/00251862/62-Anlagen/02/DRS0098.pdf
+#: source_id: LMS-BR_r_LMS-BR_81077
 #: XXX Behinderungen für Radfahrer?
 userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,1416 21127,1307 21169,1279
 ',
@@ -4012,7 +4033,8 @@ userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,
        undef,
        undef,
        {
-         'data' => 'userdel	q4::inwork 5059,7216 5064,7160 5081,7112
+         'data' => '#: source_id: LMS-BR_r_LMS-BR_88478
+userdel	q4::inwork 5059,7216 5064,7160 5081,7112
 ',
          'from' => 1485206028,
          'id' => 2847,
@@ -4032,7 +4054,8 @@ userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,
          'until' => 1493589600
        },
        {
-         'data' => 'userdel	q4::inwork; 5488,10978 5613,10963 5652,11004
+         'data' => '#: source_id: LMS-BR_r_LMS-BR_121
+userdel	q4::inwork; 5488,10978 5613,10963 5652,11004
 ',
          'from' => 1488236400,
          'id' => 2851,
@@ -4041,17 +4064,7 @@ userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,
          'type' => 'handicap',
          'until' => 1493222400
        },
-       {
-         'data' => '# REMOVED (ja, auf Bürgersteig ausweichen) --- XXX wie sieht die Sperrung für Radfahrer aus?
-userdel	q4::inwork; 9183,12076 9164,12172
-',
-         'from' => 1490635298,
-         'id' => 2852,
-         'source_id' => '2147341088',
-         'text' => 'Glinkastr.: zwischen Französische Str. und Behrenstr. Baustelle, Richtung Unter den Linden gesperrt, bis zum 13. April 2017',
-         'type' => 'handicap',
-         'until' => 1492084800
-       },
+       undef,
        {
          'data' => '#: note: laut vmz nur bis Ende Juli 2017
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.579822.php (weiterhin bis September 2017)
@@ -4096,7 +4109,8 @@ userdel	q3::inwork; 13217,8493 13262,8554 13301,8606
          'until' => 1496268000
        },
        {
-         'data' => 'userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 14528,16910 14558,16907
+         'data' => '#: source_id: LMS-BR_r_LMS-BR_93359
+userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 14528,16910 14558,16907
 ',
          'from' => undef,
          'id' => 2857,

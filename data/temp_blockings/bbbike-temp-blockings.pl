@@ -3078,7 +3078,7 @@ EOF
        text  => 'Ehrlichstr. (Lichtenberg) zwischen Wildensteiner Str. und Treskowallee Baustelle, gesperrt (bis 23.10.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269 18676,8236
+userdel	q4 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269 18672,8238
 EOF
      },
      { from  => undef, # 
@@ -7073,7 +7073,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004560',
        data  => <<EOF,
-userdel	1::inwork 18528,8331 18615,8269 18676,8236
+userdel	1::inwork 18528,8331 18615,8269 18672,8238
 EOF
      },
      { from  => 1169496024, # 2007-01-22 21:00
@@ -17962,12 +17962,12 @@ EOF
 userdel	q4::inwork 18586,9172 18511,9185 18430,9199 18319,9218
 EOF
      },
-     { from  => $isodate2epoch->("2016-06-02 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-06-06 04:00:00"), # bis in die Nacht hinein
+     { from  => $isodate2epoch->("2017-05-18 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-05-22 04:00:00"), # bis in die Nacht hinein
        periodic => 1,
        recurrences => [['yearly', days => 15, months => 5]], # kann auch erst im September stattfinden
-       source_id => 'http://www.erkner.de/271.html?date=20160415',
-       text  => 'Erkner: Heimatfest, 3.6.2016 bis 5.6.2016',
+       source_id => 'http://www.erkner.de/271.html?date=20170415',
+       text  => 'Erkner: Heimatfest, 19.5.2017 bis 21.5.2017',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 34421,1950 34359,2165 34250,2546
@@ -20447,7 +20447,7 @@ EOF
        text  => 'Vollsperrung der Bahnbrücke Karlshorst: 10. bis 15. Mai 2012 (Sperrung der Fahrbahn)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 18731,8577 18709,8423
+userdel	q4::inwork 18731,8577 18704,8427
 EOF
      },
      { from  => 1381096800, # 2013-10-07 00:00
@@ -20456,7 +20456,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.karlshorst-buergerverein.de/index.php?option=com_content&task=view&id=516
-userdel	2::inwork 18731,8577 18709,8423
+userdel	2::inwork 18731,8577 18704,8427
 EOF
      },
      { from  => undef, # 
@@ -22753,7 +22753,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_021400',
        data  => <<EOF,
-userdel	q4::inwork; 18615,8269 18676,8236
+userdel	q4::inwork; 18615,8269 18672,8238
 EOF
      },
      { from  => 1394233200, # 2014-03-08 00:00
@@ -24675,6 +24675,7 @@ EOF
 #: next_check_id: SEEGEFELDERWEG-2016
 #: source_id: IM_026411
 #: source_id: 2147339562
+#: source_id: LMS-BR_r_LMS-BR_51041
 #: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3
 #: next_check: 2017-11-01
 # REMOVED --- userdel	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
@@ -25093,6 +25094,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.466174.php',
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.582287.php (Fertigstellung)
 #: note: hier zurzeit (2016-10-08) nicht gesperrt
 	2::inwork -3529,13452 -3546,13503 -3556,13582 -3543,13691
 #: note: hier zurzeit (2016-10-08) gesperrt
@@ -25757,6 +25759,7 @@ EOF
        data  => <<EOF,
 #: note: laut vmz bis Mitte August 2018 und nur bis zur Bahnbrücke, laut fritz bis 1.7.2018
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103689945674/89945674/00251862/62-Anlagen/02/DRS0098.pdf
+#: source_id: LMS-BR_r_LMS-BR_81077
 #: XXX Behinderungen für Radfahrer?
 userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,1416 21127,1307 21169,1279
 EOF
@@ -25869,6 +25872,7 @@ EOF
        text  => 'Stubenrauchstr.: zwischen Wiesbadener Str. und Rotdornstr. Bauarbeiten, Fahrbahn gesperrt, bis 02.06.2017 ',
        type  => 'handicap',
        data  => <<EOF,
+#: source_id: LMS-BR_r_LMS-BR_88478
 userdel	q4::inwork 5059,7216 5064,7160 5081,7112
 EOF
      },
@@ -25907,6 +25911,7 @@ EOF
        type  => 'handicap',
        source_id => '2147341048',
        data  => <<EOF,
+#: source_id: LMS-BR_r_LMS-BR_121
 userdel	q4::inwork; 5488,10978 5613,10963 5652,11004
 EOF
      },
@@ -25965,6 +25970,7 @@ EOF
        type  => 'handicap',
        source_id => '2147341139',
        data  => <<EOF,
+#: source_id: LMS-BR_r_LMS-BR_93359
 userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 14528,16910 14558,16907
 EOF
      },
