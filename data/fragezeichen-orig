@@ -319,6 +319,7 @@ Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,1
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3233 vvv
 #: XXX "Durchführung der Maßnahme in 2015"
 # REMOVED (teilweise fertig) --- #: osm_watch: way id="205989870" version="7" --- #: osm_watch: way id="205989877" version="11" --- #: last_checked: 2015-09-12 --- #: check_frequency: 90d --- Eichborndamm: Ersetzung der vorhandenen Radwege durch Radstreifen?	?::projected 4780,20116 4766,20084 4728,20003 4611,19769 4497,19539 4357,19261 4284,19106 4240,19019
+Eichborndamm: existieren die Radstreifen schon ab der Kreuzung Waldstr.?	? 4210,18878 4232,18981 4240,19019
 # REMOVED (keine Änderung bei der Radroutenführung) --- #: next_check: 2015-09-01 (noch keine konkrete Planung) --- Tornower Weg - Wilhelmsruher Damm: "Lückenschluss" der Radwegführung, in welcher Form?	?::projected 6519,21002 6565,21004 6560,21055 6596,21062 6594,21134
 #: XXX noch keine konkrete Planung
 #: last_checked: 2016-10-03
@@ -2905,10 +2906,7 @@ Radweg: Qualität? Beleuchtet?	? -13122,2849 -13168,2836
 Planstraße 1     -> Ankerweg, PLZ=12527	?::projected 22118,2559 22153,2582 22195,2610
 Planstraße 2     -> Am Ruderverein, PLZ=12527	?::projected 22153,2482 22208,2514 22270,2549
 Planstraße 3     -> Relingstr., PLZ=12527	?::projected 22195,2390 22276,2426 22358,2460
-#: XXX diese Straße ist bereits fertiggestellt laut Amtsblatt
-#: osm_watch: way id="353948100" version="2"
-#: next_check: 2016-12-15
-Planstraße 4,5,7 -> Teichmummelring, PLZ=12527	?::projected 22246,2272 22418,2390 22454,2342 22271,2214
+# REMOVED (-> strassen) --- #: XXX diese Straße ist bereits fertiggestellt laut Amtsblatt --- #: next_check: 2016-12-15 --- Planstraße 4,5,7 -> Teichmummelring, PLZ=12527	?::projected 22246,2272 22418,2390 22454,2342 22271,2214
 #: XXX im Plan "Privatstraße", im Amtsblatt "Planstraße"
 Planstraße 6     -> An der Dahme, PLZ=12527	?::projected 22195,2610 22270,2549 22358,2460
 Privatstraße 1   -> An der Brücke (evtl. mit Gehweg zur Regattastr.), PLZ=12527	?::projected 22195,2610 22109,2636

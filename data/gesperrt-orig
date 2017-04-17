@@ -2150,6 +2150,8 @@ Treppe	0:40 1888,42795
 #
 # Kinderanh‰nger wie der Chariot Captain XL sind 87cm breit
 # 
+weites Dr‰ngelgitter	BNP:1::trailer=3 15289,10092
+weites Dr‰ngelgitter	BNP:1::trailer=3 15283,10087
 weites Dr‰ngelgitter	BNP:2::trailer=7 16657,19705
 Dr‰ngelgitter (lichte Breite ca. 90cm)	BNP:4::trailer=15 23550,13863
 Dr‰ngelgitter (lichte Breite ca. 90cm)	BNP:4::trailer=15 23553,13885
@@ -2775,7 +2777,7 @@ Voltairestr.: Baustelle, Fahrtrichtung gesperrt	1s:q3 11329,12497 11209,12430
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt	1s:q3 5192,10234 5196,10398
 # 
 #: source_id: 2147341003 (Bauarbeiten in der angrenzenden Modersohnstr.)
-#: last_checked: 2017-04-13
+#: last_checked: 2017-04-17
 Werkstraﬂe: Zufahrt zur DB-Werkstraﬂe ist wegen Bauarbeiten gesperrt	2::inwork 14043,10928 14107,10911
 # 
 #: XXX laut fritz bis 30. September 2017
@@ -2797,15 +2799,16 @@ Zillestr.: Bauarbeiten, Einbahnstraﬂenregelung, offen Richtung Westen	1s:q3 3807
 # 
 #: osm_watch: way id="466318949" version="1"
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
-#: last_checked: 2017-03-24
+#: last_checked: 2017-04-17
 BouchÈstr.: Baustelle, Einbahnstraﬂenregelung	1s:q3 13190,9139 13298,9252
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
-#: last_checked: 2017-03-24
+#: last_checked: 2017-04-17
 Mengerzeile: Baustelle, Einbahnstraﬂenregelung	1s:q3 13176,9302 13100,9210
 # 
 #: next_check_id: HEIDELBERGER-2017
-#: last_checked: 2017-03-24
+#: last_checked: 2017-04-17
+#: check_frequency: 60d
 Heidelberger Str.: Baustelle, Einbahnstraﬂenregelung	1s:q3 13489,9199 13420,9259 13357,9313
 # 
 # REMOVED (mittlerweile ist eine Ausweichmˆglichkeit markiert) --- #: last_checked: 2017-03-01 --- Karl-Marx-Platz: Bauarbeiten, Einbahnstraﬂe gilt nun auch f¸r Radfahrer	1s:q3 12969,7610 13100,7626
@@ -3073,7 +3076,7 @@ Kirchdorfer Str.: Straﬂe fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 # 
 #: by: http://www.dafmap.de/d/berlin.html?center=52.497318+13.462016&zoom=17#
-#: last_checked: 2017-04-06
+#: last_checked: 2017-04-17
 #: check_frequency: 120d
 am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14463,10212
 # 
