@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014,2015,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2015,2016,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,7 +18,7 @@
 
     use strict;
     use vars qw($VERSION);
-    $VERSION = '0.06';
+    $VERSION = '0.07';
 
     sub has_gps_settings { 1 }
 
@@ -84,6 +84,8 @@
 
     sub maybe_mount {
 	my(undef, $cb, %opts) = @_;
+	my $garmin_disk_type = delete $opts{garmin_disk_type} || 'flash';
+	die "Unhandled options: " . join(" ", %opts) if %opts;
 
 	######################################################################
 	# do the mount (maybe)
@@ -92,7 +94,10 @@
 	my @mount_point_candidates;
 	my $udisksctl; # will be set if Linux' DeviceKit is available
 	if ($^O eq 'freebsd') {
-	    my $garmin_disk_type = 'flash';
+	    if ($garmin_disk_type ne 'flash') {
+		die "NYI: only support for garmin_disk_type => flash available";
+		# XXX actual problem is just the hardcoded $mount_point
+	    }
 	    $mount_point = '/mnt/garmin-internal'; # *** configuration ***
 	    $mount_device = _guess_garmin_mount_device_via_hal($garmin_disk_type);
 	    if (!defined $mount_device) {
@@ -101,6 +106,10 @@
 	    }
 	    @mount_opts = (-t => 'msdosfs');
 	} elsif ($^O eq 'MSWin32') {
+	    if ($garmin_disk_type ne 'flash') {
+		die "NYI: only support for garmin_disk_type => flash available";
+		# XXX how to detect the SD card without a label?
+	    }
 	    require Win32Util;
 	    for my $drive (Win32Util::get_drives()) {
 		my $vol_name = Win32Util::get_volume_name("$drive\\");
@@ -119,7 +128,22 @@
 		$udisksctl = $check_udisksctl;
 		my $info_dialog_active;
 		my $max_wait = 60; # wait max. 60s
-		my $check_mount_device = '/dev/disk/by-label/GARMIN';
+		my $check_mount_device;
+		if ($garmin_disk_type eq 'flash') {
+		    $check_mount_device = '/dev/disk/by-label/GARMIN';
+		} elsif ($garmin_disk_type eq 'card') {
+		    my $disks = _parse_udisksctl_status();
+		    if (my $disk_info = $disks->{'Garmin GARMIN Card'}) {
+			$check_mount_device = _udisksctl_find_mountable('/dev/' . $disk_info->{DEVICE});
+			if (!defined $check_mount_device) {
+			    die "Cannot find a mountable filesystem on device '$disk_info->{DEVICE}'";
+			}
+		    } else {
+			die "Cannot find 'Garmin GARMIN Card', only disks found: " . join(", ", keys %$disks);
+		    }
+		} else {
+		    die "Only support for garmin_disk_type 'flash' or 'card' available, not '$garmin_disk_type'";
+		}
 		require IPC::Open3;
 		for (1..$max_wait) {
 		    my($stdinfh,$stdoutfh,$stderrfh);
@@ -421,6 +445,47 @@
 	$mount_device;
     }
 
+    sub _parse_udisksctl_status {
+	my %disks;
+	my @cmd = ('/usr/bin/udisksctl', 'status');
+	open my $fh, '-|', @cmd
+	    or die "Error starting '@cmd': $!";
+	chomp(my $header = <$fh>);
+	my(@f) = split /(\s+)/, $header;
+	my @field_names = do { my $i; grep { $i++ % 2 == 0 } @f };
+	my @lengths;
+	for(my $i=0; $i<$#f; $i+=2) {
+	    push @lengths, length($f[$i])+length($f[$i+1]);
+	}
+	my $unpack = join(" ", map { "a$_" } @lengths) . " a*";
+	scalar <$fh>; # dashed line
+	while(<$fh>) {
+	    chomp;
+	    my %f;
+	    @f{@field_names} = map { s/\s+$//; $_ } unpack $unpack, $_;
+	    $disks{$f{MODEL}} = \%f;
+	}
+	close $fh
+	    or die "Error running '@cmd': $!";
+	\%disks;
+    }
+
+    sub _udisksctl_find_mountable {
+	my $dev_prefix = shift;
+	require File::Glob;
+	my @candidates = File::Glob::bsd_glob($dev_prefix.'*');
+	for my $candidate (@candidates) {
+	    if (open my $fh, '-|', '/usr/bin/udisksctl', 'info', '-b', $candidate) {
+		while(<$fh>) {
+		    if (/^\s*IdUsage:\s+filesystem/) {
+			return $candidate;
+		    }
+		}
+	    }
+	}
+	undef;
+    }
+
     # Logging, should work within Perl/Tk app and outside
     sub _status_message {
 	if (defined &main::status_message) {
@@ -515,12 +580,14 @@ system:
 
 C<maybe_mount()> may also be called outside of the Perl/Tk application
 for scripts which have to make sure that the Garmin device is mounted,
-e.g. to copy from or to the mounted gps device. Simple usage example:
+e.g. to copy from or to the mounted gps device. Simple usage example
+for the internal flash:
 
     perl -w -Ilib -MGPS::BBBikeGPS::MountedDevice -e 'GPS::BBBikeGPS::MountedDevice->maybe_mount(sub { my $dir = shift; system("ls -al $dir"); 1 })'
 
-Currently only the internal flash card is supported, but in future
-this can be controlled with options.
+Or for the first partition on a card:
+
+    perl -w -Ilib -MGPS::BBBikeGPS::MountedDevice -e 'GPS::BBBikeGPS::MountedDevice->maybe_mount(sub { my $dir = shift; system("ls -al $dir"); 1 }, garmin_disk_type => "card")'
 
 =item C<get_gps_device_status(I<disk_type>, I<inforef>)>
 
