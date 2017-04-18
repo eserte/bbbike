@@ -18,7 +18,7 @@
 
     use strict;
     use vars qw($VERSION);
-    $VERSION = '0.07';
+    $VERSION = '0.08';
 
     sub has_gps_settings { 1 }
 
@@ -178,9 +178,62 @@
 		# try mounting later
 	    }
 	} elsif ($^O eq 'darwin') {
-	    @mount_point_candidates = (
-				       '/Volume/GARMIN',
-				      );
+	    if ($garmin_disk_type eq 'flash') {
+		@mount_point_candidates = (
+					   '/Volumes/GARMIN',
+					  );
+	    } elsif ($garmin_disk_type eq 'card') {
+		require BBBikePlist;
+		my $diskutil_list = do {
+		    open my $fh, '-|', qw(diskutil list -plist) or die $!;
+		    BBBikePlist->load_plist(IO => $fh);
+		};
+
+		my @disk_candidates;
+		for my $disk (@{ $diskutil_list->{AllDisksAndPartitions} || [] }) {
+		    if (exists $disk->{MountPoint} && $disk->{MountPoint} =~ m{^(/|/Volumes/GARMIN)$}) {
+			# skip
+		    } else {
+			push @disk_candidates, $disk->{DeviceIdentifier};
+		    }
+		}
+
+		my $garmin_card_disk;
+		for my $disk_candidate (@disk_candidates) {
+		    my $diskutil_info_disk = do {
+			open my $fh, '-|', qw(diskutil info -plist), $disk_candidate or die $!;
+			BBBikePlist->load_plist(IO => $fh);
+		    };
+		    if ($diskutil_info_disk->{MediaName} eq 'GARMIN Card') {
+			$garmin_card_disk = $disk_candidate;
+			last;
+		    }
+		}
+		if (!$garmin_card_disk) {
+		    die "Cannot find 'GARMIN Card'";
+		}
+
+	    FIND_DISK: for my $disk (@{ $diskutil_list->{AllDisksAndPartitions} || [] }) {
+		    if ($disk->{DeviceIdentifier} eq $garmin_card_disk) {
+			if (exists $disk->{MountPoint}) {
+			    @mount_point_candidates = ($disk->{MountPoint});
+			    last FIND_DISK;
+			}
+			for my $partition (@{ $disk->{Partitions} || [] }) {
+			    if (exists $partition->{MountPoint}) {
+				@mount_point_candidates = ($partition->{MountPoint});
+				last FIND_DISK;
+			    }
+			}
+		    }
+		}
+		if (!@mount_point_candidates) {
+		    die "Found 'GARMIN Card', but no mountable file system";
+		}
+
+	    } else {
+		die "Only support for garmin_disk_type 'flash' or 'card' available, not '$garmin_disk_type'";
+	    }
 	} else {
 	    _status_message("Don't know how to handle Garmin device under operating system '$^O'", "info");
 	}
@@ -583,11 +636,11 @@ for scripts which have to make sure that the Garmin device is mounted,
 e.g. to copy from or to the mounted gps device. Simple usage example
 for the internal flash:
 
-    perl -w -Ilib -MGPS::BBBikeGPS::MountedDevice -e 'GPS::BBBikeGPS::MountedDevice->maybe_mount(sub { my $dir = shift; system("ls -al $dir"); 1 })'
+    perl -w -Ilib -MGPS::BBBikeGPS::MountedDevice -e 'GPS::BBBikeGPS::MountedDevice->maybe_mount(sub { my $dir = shift; system("ls", "-al", $dir); 1 })'
 
 Or for the first partition on a card:
 
-    perl -w -Ilib -MGPS::BBBikeGPS::MountedDevice -e 'GPS::BBBikeGPS::MountedDevice->maybe_mount(sub { my $dir = shift; system("ls -al $dir"); 1 }, garmin_disk_type => "card")'
+    perl -w -Ilib -MGPS::BBBikeGPS::MountedDevice -e 'GPS::BBBikeGPS::MountedDevice->maybe_mount(sub { my $dir = shift; system("ls", "-al", $dir); 1 }, garmin_disk_type => "card")'
 
 =item C<get_gps_device_status(I<disk_type>, I<inforef>)>
 
