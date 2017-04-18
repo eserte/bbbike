@@ -197,13 +197,17 @@
 		my $garmin_card_disk;
 		for my $disk_candidate (@disk_candidates) {
 		    my $diskutil_info_disk = _diskutil_info($disk_candidate);
-		    if ($diskutil_info_disk->{MediaName} eq 'GARMIN Card') {
+		    my $media_name = $diskutil_info_disk->{MediaName};
+		    if (
+			$media_name eq 'GARMIN Card'    ||
+			$media_name eq 'GARMIN SD Card'
+		       ) {
 			$garmin_card_disk = $disk_candidate;
 			last;
 		    }
 		}
 		if (!$garmin_card_disk) {
-		    die "Cannot find 'GARMIN Card'";
+		    die "Cannot find 'GARMIN Card' or 'GARMIN SD Card'";
 		}
 
 	    FIND_DISK: for my $disk (@{ $diskutil_list->{AllDisksAndPartitions} || [] }) {
