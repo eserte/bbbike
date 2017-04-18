@@ -145,6 +145,8 @@ for my $site_def (@sites) {
 		    if ($1 eq $line) {
 			$do_print = 0;
 		    }
+		} elsif ($buf eq $line) {
+		    $do_print = 0;
 		}
 	    }
 	    if ($do_print) {
