@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# Copyright (C) 2009,2012,2013,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012,2013,2016,2017 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,6 +17,7 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
 
+use Fcntl 'SEEK_END';
 use Geo::METAR;
 use Getopt::Long;
 use LWP::UserAgent;
@@ -126,23 +127,35 @@ for my $site_def (@sites) {
     $m->metar($metar);
 
     if ($wettermeldung_compatible) {
-	my $fh = \*STDOUT;
-	my $o_tmp;
-	if ($o) {
-	    $o_tmp = "$o.~$$~";
-	    open $fh, ">", $o_tmp
-		or die "Can't write to $o_tmp: $!";
-	}
-	print $fh format_wettermeldung($m);
+	my $line = format_wettermeldung($m);
 	if (!$wanted_site_code) {
-	    print $fh "|$site_code";
+	    $line .= "|$site_code";
 	}
-	print $fh "\n";
+	$line .= "\n";
+
 	if ($o) {
-	    close $fh
-		or die "Can't write to $o_tmp: $!";
-	    rename "$o_tmp", $o
-		or die "Error while renaming $o_tmp to $o: $!";
+	    my $do_print = 1;
+	    if (open my $ifh, $o) {
+		if (-s $o > 4096) {
+		    seek $ifh, -4096, SEEK_END;
+		}
+		local $/ = undef;
+		my $buf = <$ifh>;
+		if ($buf =~ m{.*\n(.+)}s) {
+		    if ($1 eq $line) {
+			$do_print = 0;
+		    }
+		}
+	    }
+	    if ($do_print) {
+		open my $ofh, ">>", $o
+		    or die "Can't append to $o: $!";
+		print $ofh $line;
+		close $ofh
+		    or die "Error closing $o: $!";
+	    }
+	} else {
+	    print $line;
 	}
     } else {
 	print "$site_code: " . $m->dump . "\n";
