@@ -183,11 +183,7 @@
 					   '/Volumes/GARMIN',
 					  );
 	    } elsif ($garmin_disk_type eq 'card') {
-		require BBBikePlist;
-		my $diskutil_list = do {
-		    open my $fh, '-|', qw(diskutil list -plist) or die $!;
-		    BBBikePlist->load_plist(IO => $fh);
-		};
+		my $diskutil_list = _diskutil_list();
 
 		my @disk_candidates;
 		for my $disk (@{ $diskutil_list->{AllDisksAndPartitions} || [] }) {
@@ -200,10 +196,7 @@
 
 		my $garmin_card_disk;
 		for my $disk_candidate (@disk_candidates) {
-		    my $diskutil_info_disk = do {
-			open my $fh, '-|', qw(diskutil info -plist), $disk_candidate or die $!;
-			BBBikePlist->load_plist(IO => $fh);
-		    };
+		    my $diskutil_info_disk = _diskutil_info($disk_candidate);
 		    if ($diskutil_info_disk->{MediaName} eq 'GARMIN Card') {
 			$garmin_card_disk = $disk_candidate;
 			last;
@@ -537,6 +530,19 @@
 	    }
 	}
 	undef;
+    }
+
+    sub _diskutil_list {
+	require BBBikePlist;
+	open my $fh, '-|', qw(diskutil list -plist) or die $!;
+	BBBikePlist->load_plist(IO => $fh);
+    }
+
+    sub _diskutil_info {
+	my $disk = shift;
+	require BBBikePlist;
+	open my $fh, '-|', qw(diskutil info -plist), $disk or die $!;
+	BBBikePlist->load_plist(IO => $fh);
     }
 
     # Logging, should work within Perl/Tk app and outside

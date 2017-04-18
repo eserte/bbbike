@@ -47,4 +47,17 @@ SKIP: {
     }
 }
 
+SKIP: {
+    skip "works only on darwin", 1
+	if $^O ne 'darwin';
+
+    my $diskutil_list = GPS::BBBikeGPS::MountedDevice::_diskutil_list();
+    is ref $diskutil_list->{AllDisksAndPartitions}, 'ARRAY', 'output of diskutil list';
+
+    my $first_disk = $diskutil_list->{WholeDisks}->[0];
+    my $diskutil_info = GPS::BBBikeGPS::MountedDevice::_diskutil_info($first_disk);
+    is ref $diskutil_info, 'HASH', 'output of diskutil info';
+    is $diskutil_info->{DeviceIdentifier}, $first_disk;
+}
+
 __END__
