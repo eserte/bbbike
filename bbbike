@@ -144,6 +144,7 @@ BEGIN {
 	 => [qw(create_postscript print_postscript toggle_legend
 		print_text_postscript print_text_pdflatex print_route_pdf
 		view_pdf print_text_windows)],
+	'Gonzo'	=> [qw(random_point)],
 	);
     while(my($k,$v) = each %autouse_func) {
 	eval "use autouse $k => qw(" . join(" ", @$v) . ");";
@@ -231,6 +232,79 @@ use Msg; # This call has to be in bbbike!
 	eval 'sub Mfmt { sprintf(shift, @_) }';
     }
 }
+
+# gonzo
+
+my @all_routes = ();
+
+sub find_random_route {
+
+	$green_optimization = 1;
+
+	my $start = random_point();
+	while (!$net->reachable($start)) {
+		$start = random_point();
+	}
+
+	my $end = random_point();
+	while (!$net->reachable($end)) {
+		$end = random_point();
+	}
+
+	my @via = ();
+
+	#make_net();
+
+	my @res = do_search($start, $end, \@via);
+	if (!@res) {
+		return;
+	}
+	if (!$res[StrassenNetz::RES_PATH]) {
+		return;
+	}
+	my @path = @{ $res[StrassenNetz::RES_PATH] };
+
+	push @all_routes, [ @path ];
+
+
+	#print "Size of path: $#path\n";
+	#foreach my $point (@path) {
+	#	print "@$point[0], @$point[1]\n";
+	#}
+
+}
+
+# gonzo
+sub find_thousand_random_routes {
+
+	for(0..999) {
+		if ($_ % 10 == 0) {
+			print " $_\n";
+		} else {
+			print ".";
+		}
+		find_random_route();
+	}
+	print "\n";
+	print "Size of all_routes now: $#all_routes\n";
+
+	foreach my $route (@all_routes) {
+		print "Route\n";
+		foreach my $point (@$route) {
+			print "@$point[0], @$point[1]\n";
+		}
+	}
+
+	#my %count;
+	#my %dups;
+	#for(@all_routes) {
+	#	$dups{$_}++ if $count{$_}++;
+	#}
+
+	#use Dumpvalue;
+	#Dumpvalue->new->dumpValue( \%dups);
+}
+
 
 # XXX This is a hack until I decide how to do custom create_page best.
 {
@@ -18952,6 +19026,7 @@ sub make_net {
     DecBusy($top);
 }
 
+
 sub make_qualitaet_net {
     if (!$qualitaet_s_net) {
 	# XXX hmmm, fails fataly if any of the layers is missing
@@ -19309,6 +19384,12 @@ sub restore_cursor {
 }
 
 sub set_cursor {
+
+    # gonzo
+    #use Devel::StackTrace;
+    #my $trace = Devel::StackTrace->new;
+    #print $trace->as_string; # like carp
+
     my($type, $fallback) = @_;
     if (!defined $fallback && defined $type) {
 	if ($type eq 'ziel') {
@@ -19557,7 +19638,55 @@ sub search_route_mouse {
 	status_message('');
 	my $this_search_route_start = $search_route_points[-1]->[SRP_COORD];
 	return if !defined $this_search_route_start;
+
+	# gonzo hack
+	# gonzo
+	#$this_search_route_start = "14558, 10082";
+	#$search_route_ziel = "14626, 10162";
+	#print "start/ziel: $this_search_route_start $search_route_ziel\n";
+
+	#$c->createOval(0, 0, 5000, 5000, -fill => 'orange');
+
+
+	#$crowded_file = "thousand_crowded_points";
+	my $crowded_file = "5000_crowded_points";
+	open(my $handle, "<", $crowded_file) or die "Can't open points!";
+
+	#$c->createOval(0, 0, 10000, 10000, -fill => 'orange');
+
+	my $radius = 5;
+
+	#my $xx = 14558;
+	#my $yy = 10082;
+	#my($txx, $tyy) = transpose($xx, $yy);
+	#my $tx0 = $txx - $radius;
+	#my $ty0 = $tyy - $radius;
+	#my $tx1 = $txx + $radius;
+	#my $ty1 = $tyy + $radius;
+	#print "transposed: $tx0 $ty0 $tx1 $ty1\n";
+
+	#$c->createOval($tx0, $ty0, $tx1, $ty1, -fill => 'orange');
+
+	print "Creating 5000 points.\n";
+	while (<$handle>) {
+		my ($x, $y) = split(',', $_);
+		print "x, y: $x $y\n";
+		my($tx, $ty) = transpose($x, $y);
+		print "transposed: $tx $ty\n";
+		my $x1 = int($tx) - int($radius);
+		my $y1 = int($ty) - int($radius);
+		my $x2 = int($tx) + int($radius);
+		my $y2 = int($ty) + int($radius);
+		print "CreateOval: $x1 $y1 $x2 $y2\n";
+		$c->createOval($x1, $y1, $x2, $y2, -fill => 'orange');
+	}
+	print "Done.\n";
+	return;
+
 	search_route($this_search_route_start, $search_route_ziel);
+
+	# gonzo
+	#find_thousand_random_routes();
 
 	# XXX duplicate code (see above)
 	undef $search_route_flag;
@@ -22534,5 +22663,6 @@ sub Tk::Widget::tk_sleep {
 ## DEBUG_BEGIN
 #BEGIN{mymstat("100% BEGIN");}
 ## DEBUG_END
+
 
 package bbbike; # HACK for autosplit

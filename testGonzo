@@ -1,0 +1,8 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use autouse 'Gonzo' => qw(random_point);
+
+random_point();
+
