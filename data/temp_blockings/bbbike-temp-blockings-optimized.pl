@@ -4128,6 +4128,16 @@ userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 
          'text' => 'Ernst-Barlach-Str./Dorfstr.: Bauarbeiten zwischen Woldegker Str. und Lindenberger Str., Fahrbahn ggfs. gesperrt, bis Ende August 2017 ',
          'type' => 'handicap',
          'until' => 1504195200
+       },
+       {
+         'data' => 'userdel	2::inwork 15458,11306 15477,11338
+',
+         'from' => 1492466400,
+         'id' => 2859,
+         'source_id' => '2147341208',
+         'text' => 'Pfarrstr. zwischen Wiesenweg und Hauffstr.: Brückenarbeiten, eventuell auch für Fußgänger und Radfahrer gesperrt, bis 10. Mai 2017',
+         'type' => 'gesperrt',
+         'until' => 1494432000
        }
      
 );

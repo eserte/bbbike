@@ -25983,4 +25983,13 @@ EOF
 userdel	q4::inwork 18009,18946 17900,18972 17890,18973 17799,19000 17697,18989 17600,18994
 EOF
      },
+     { from  => 1492466400, # 2017-04-18 00:00
+       until => $isodate2epoch->("2017-05-10 18:00:00"), # 1494885599, # 2017-05-15 23:59
+       text  => 'Pfarrstr. zwischen Wiesenweg und Hauffstr.: Brückenarbeiten, eventuell auch für Fußgänger und Radfahrer gesperrt, bis 10. Mai 2017',
+       type  => 'gesperrt',
+       source_id => '2147341208',
+       data  => <<EOF,
+userdel	2::inwork 15458,11306 15477,11338
+EOF
+     },
     );

@@ -33,7 +33,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2017-04-10
+#: last_checked: 2017-04-20
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -44,7 +44,7 @@ Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 
 #: osm_watch: way id="4609212"  version="9"
 #: osm_watch: way id="25113713" version="12"
 #: osm_watch: way id="4752742"  version="9"
-#: osm_watch: way id="4752743"  version="10"
+#: osm_watch: way id="4752743"  version="11"
 #: osm_watch: way id="8049679"  version="12"
 #: osm_watch: way id="8049678"  version="8"
 #: last_checked: 2016-08-07
@@ -108,7 +108,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: source_id: 2147340884
 #: source_id: 2147340970
 #: source_id: LMS-BR_r_LMS-BR_90638
-#: last_checked: 2017-04-07 vvv
+#: last_checked: 2017-04-20 vvv
 #: check_frequency: 21d vvv
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected; 9865,10227 9948,10280 9873,10285
@@ -387,6 +387,7 @@ Mariendorfer Allee: Projektplanung für Schutzstreifen	?::projected 8579,2265 855
 #: source_id: 2147341157
 #: source_id: 2147341182
 #: source_id:LMS-BR_r_LMS-BR_93889
+#: source_id: 2147341183
 #: XXX Ende laut rbbtext: 19. April, laut fritz: 22. April (beide: in Höhe Bayernring), laut vmz: Ende April (Gesamtmaßnahme)
 #: last_checked: 2017-03-06
 #: next_check: 2017-04-19
@@ -616,7 +617,7 @@ Dahlemer Weg: Radwege werden durch Radspuren ersetzt	?::projected 2152,2912 2198
 #: last_checked: 2016-07-23 vvv
 #: next_check: 2017-04-30 vvv
 Bohnsdorfer Kreisel: Bau von Radspuren in beiden Richtungen; Aufhebung der Einbahnstraßenregelung	?::projected 22007,711 22062,773 22120,886 22092,999 22044,1018 21977,988
-#: osm_watch: way id="185511108" version="8"
+#: osm_watch: way id="410955359" version="2"
 Bohnsdorfer Kreisel: Einbahnstraße wird aufgehoben	?::projected 21977,988 21894,881 21862,807 22007,711
 #: next_check ^^^
 #: last_checked ^^^
@@ -1027,7 +1028,7 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/170315_radverkehrsmassnahmen-nkn-bis-2022.jpg (Übersichtskarte)
 #: XXX Ausbau des Kopfsteinpflasters, Bau einer Asphaltfahrbahn
 #: osm_watch: way id="75509950" version="11"
-#: last_checked: 2017-04-07
+#: last_checked: 2017-04-20
 #: next_check: 2018-03-01
 Friedelstr.: Asphaltierung	?::projected 12085,9778 12074,9689 12066,9558 12047,9429 12074,9217
 #: by: ^^^
@@ -1037,7 +1038,7 @@ Friedelstr.: Asphaltierung	?::projected 12085,9778 12074,9689 12066,9558 12047,9
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="13"
-#: last_checked: 2017-04-07
+#: last_checked: 2017-04-20
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -1187,7 +1188,7 @@ Innstr.: hier wird ein Asphaltstreifen entstehen, vielleicht auch der Zugang zum
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017)
-#: last_checked: 2017-04-07
+#: last_checked: 2017-04-20
 #: check_frequency: 100d
 Weigandufer (und Pflügerstr.?): Fahrradstraße geplant	?::projected 13939,8228 13875,8282 13716,8410 13641,8470 13539,8552 13450,8625 13366,8694 13191,8838 13048,8956 12907,9073 12761,9190 12620,9293 12480,9394
 # 
@@ -1985,10 +1986,10 @@ Seehausener Str.: vielleicht Bau eines Zebrastreifens	?::projected 18520,17525 1
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6391
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6616
 #: XXX Baubeginn Ende 2016, mittlerweile ab April 2018
-#: osm_watch: way id="4068148" version="15"
+#: osm_watch: way id="4068148" version="16"
 #: osm_watch: way id="27942935" version="9"
-#: osm_watch: way id="11663312" version="13"
-#: osm_watch: way id="4689343" version="13"
+#: osm_watch: way id="11663312" version="14"
+#: osm_watch: way id="4689343" version="14"
 #: last_checked: 2017-04-14
 #: next_check: 2018-04-01
 Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 18215,12123

@@ -19,11 +19,14 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2017-04-17
+#: last_checked: 2017-04-20
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 #: last_checked: 2017-04-13
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
+# 
+#: last_checked: 2017-04-20
+Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 # REMOVED --- Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
 # REMOVED --- Revaler Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 14357,11148 14286,11186
@@ -31,15 +34,10 @@ Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # REMOVED (gibt's nicht mehr?) --- Helmerdingstr.: wegen Bauarbeiten Fahrbahn teilweise als Einbahnstraße ausgewiesen	q3::inwork; 14442,11101 14468,11203
 # REMOVED --- Haasestr.: wegen Bauarbeiten ist die Fahrbahn teilweise gesperrt	q3::inwork 14286,11186 14328,11320
 # REMOVED --- Haasestr.: Einbahnstraße wegen Bauarbeiten	q4::inwork; 14328,11320 14286,11186
-# 
 # REMOVED --- #: last_checked: 2016-03-07 --- #: check_frequency: 7d --- Revaler Str.: Bauarbeiten an der Kreuzung Warschauer Str.	q3::inwork 13588,11490 13711,11458
 # REMOVED (beendet) --- #: XXX laut Fritz bis Ende März 2016 (sieht aber schlecht aus für diesen Termin) --- #: last_checked: 2016-06-13 vvv --- #: check_frequency: 7d vvv --- Rudolfstr.: Bauarbeiten an der Kreuzung Danneckerstr., auf Gehweg ausweichen	q3::inwork 14026,10869 13886,10939 13795,10995
 # REMOVED --- Danneckerstr.: Bauarbeiten an der Kreuzung Rudolfstr., auf Gehweg ausweichen	q3::inwork 13856,10864 13886,10939 --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
-#: last_checked: 2017-04-12
-#: check_frequency: 7d
-Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
-# 
+# REMOVED --- #: last_checked: 2017-04-18 --- #: check_frequency: 7d --- Gubener Str.: Fahrbahn an der Warschauer Str. gesperrt, auf Gehweg ausweichen	q4::inwork 13603,11538 13568,11560
 # REMOVED --- #: last_checked: 2017-01-17 --- Rigaer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 14133,12482 14266,12446
 # REMOVED (ausgelaufen) --- #: last_checked: 2016-06-29 vvv --- #: next_check: 2016-06-30 vvv --- #: source_id: LMS-BR_r_LMS-BR_69902 --- #: XXX Ende laut fritz --- Rigaer Str./Liebigstr.: Bauarbeiten, Kreuzung gesperrt	q2::inwork 13761,12578 13991,12522 14091,12494 --- Rigaer Str./Liebigstr.: Bauarbeiten, Kreuzung gesperrt	q2::inwork 13905,12374 13991,12522 14058,12709
 # REMOVED (fertig) --- #: XXX nach den Bauarbeiten nur das kleine Stück an der Boxhagener noch mit handicap versehen (weil Durchfahrt verboten + umständliche Ampelführung) --- #: last_checked: 2014-05-26 --- #: next_check: 2014-06-01 (wahrscheinlich abgeschlossen) --- Neue Bahnhofstr.: Einbahnstraße wegen Bauarbeiten	q3::inwork; 14752,11041 14811,11067 14879,11182 14908,11231 14918,11249
@@ -94,7 +92,7 @@ Kommandantenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10330,11422 10136,11529
 #: last_checked: 2017-04-11
 Beuthstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10201,11631 10235,11610 10330,11422
 # 
-#: last_checked: 2017-04-03
+#: last_checked: 2017-04-19
 Sebastianstr.: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 10640,11564 10818,11269
 # 
 #: last_checked: 2017-04-11
@@ -275,6 +273,12 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # 
 ### Kreuzberg ###
 # 
+#: source_id: 2147341140
+#: XXX laut fritz bis 08.06.2017, laut vmz bis Anfang Juni 2017
+#: next_check: 2017-06-08
+#: valid: -20170608
+Erkelenzufer: Bauarbeiten zwischen Böcklerstr. und Kohlfurter Str., Fahrbahn gesperrt, Bordsteine	q3::inwork 10967,10092 11038,10247 11094,10261
+# 
 #: source_id: 2147341145
 #: source_id: LMS-BR_r_LMS-BR_93387
 #: XXX laut vmz bis Anfang 2019, laut fritz bis 31.12.2018
@@ -348,7 +352,7 @@ Stallschreiberstr., Alexandrinenstr.: Einbahnstraßenregelung	q4::inwork; 10794,1
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 7d vvv --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12761,9190 12851,9309 12844,9351 --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12907,9073 12761,9190 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4952&mt=0&zoom=17
-#: last_checked: 2017-04-07
+#: last_checked: 2017-04-20
 #: next_check: 2018-06-01
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 
@@ -537,9 +541,9 @@ Gontardstr.: langsame Straßenbahnen, Fußgänger	q2 10733,12967 10801,12901 10923,
 Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 15778,8990 15623,9028 15527,9096 15513,9144 15453,9259 15432,9322 15304,9464 15186,9550 15052,9584 14909,9649 14889,9660 14807,9704 14635,9786 14500,9863 14467,9887
 Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 14500,9863 14488,9848
 Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 14467,9887 14455,9892 14448,9922
-(S-Bahnhof - Treptower Hafen): Fußgänger, besonders an schönen Tagen	q2 14361,9772 14436,9784 14460,9814 14488,9848
+(S-Bahnhof - Treptower Hafen): Fußgänger, besonders an schönen Tagen, Radfahren nicht erlaubt	q3 14361,9772 14436,9784 14460,9814 14488,9848
 (S-Bahnhof - Treptower Hafen): Fußgänger, besonders an schönen Tagen	q2 14404,9847 14466,9861 14488,9848
-(Uferweg - Puschkinallee): Fußgänger	q1 14443,9731 14371,9726 14318,9688
+(Uferweg - Puschkinallee): Fußgänger, Radfahren nicht erlaubt	q3 14443,9731 14371,9726 14318,9688
 Treptower Park, am Rosengarten: Fußgänger	q2 14809,9466 14837,9517 14867,9573 14909,9649
 Treptower Park: Fußgänger	q1 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674 14577,9641 14495,9710 14443,9731 14361,9772
 Treptower Park: einige Fußgänger	q1+ 15558,8820 15439,8839 15297,8921 15245,8916 15223,8893
