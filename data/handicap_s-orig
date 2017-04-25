@@ -19,13 +19,13 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2017-04-20
+#: last_checked: 2017-04-25
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 #: last_checked: 2017-04-13
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2017-04-20
+#: last_checked: 2017-04-25
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 # REMOVED --- Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
@@ -77,12 +77,11 @@ Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11
 #: confirmed_by: srt
 #: source_id: 2147340953
 #: XXX laut VMZ bis Ende April 2017
-#: last_checked: 2017-04-03
+#: last_checked: 2017-04-24
 #: next_check: 2017-04-30
 Schloßplatz: Engstelle wegen Bauarbeiten	q3::inwork 10285,12306 10357,12356
 # 
-#: last_checked: 2017-03-24
-Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
+# REMOVED --- #: last_checked: 2017-03-24 --- Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3339&mt=0&zoom=16 (Projektabschluss: 2017-03-31)
 #: last_checked: 2017-04-11
@@ -141,9 +140,9 @@ Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und 
 #: last_checked: 2017-04-07 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
-#: osm_watch: way id="153698394" version="4"
+#: osm_watch: way id="153698394" version="5"
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
-#: osm_watch: way id="114667396" version="5"
+#: osm_watch: way id="114667396" version="6"
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9580,12581 9601,12380
 #: by: ^^^
 #: check_frequency ^^^
@@ -230,7 +229,7 @@ Werdersche Rosenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9883,12251 9959,
 #: XXX siehe auch Eintrag in handicap_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0194-oberwallstrae-werderscher-markt.html
 #: osm_watch: way id="66071370" version="4"
-#: last_checked: 2017-04-03
+#: last_checked: 2017-04-24
 #: check_frequency: 30d
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9898,12161 9883,12251
 # 
@@ -248,7 +247,7 @@ Behrenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9743,12239 9798,12267
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6145.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2017-04-03
+#: last_checked: 2017-04-24
 #: check_frequency: 30d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -290,22 +289,14 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 #: source_id: 2147341141
 #: source_id: LMS-BR_r_LMS-BR_93355
 #: XXX laut vmz bis Mitte Mai 2017, laut fritz bis 19. Mai 2017
-#: last_checked: 2017-04-04
+#: last_checked: 2017-04-25
 #: next_check: 2017-05-19
 #: valid: -20170519
 Neuenburger Str.: Bauarbeiten, Sperrung der Fahrbahn	q2::inwork 10178,10411 9955,10501
 # 
-#: next_check_id: BAERWALDSTR-2017
-#: last_checked: 2017-03-25
-Wilmsstr.: Bauarbeiten an der Baerwaldstr.	q2::inwork 10480,9949 10627,9912
-# 
+# REMOVED --- #: next_check_id: BAERWALDSTR-2017 --- #: last_checked: 2017-03-25 --- Wilmsstr.: Bauarbeiten an der Baerwaldstr.	q2::inwork 10480,9949 10627,9912
 # REMOVED --- #: last_checked: 2016-12-09 --- #: next_check: 2016-12-12 --- #: priority: #A --- #: valid: -20161212 --- Brachvogelstr.: Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 10066,10071 10069,10151
-#: source_id: IM_023816
-#: source_id: 2147339541
-#: XXX vermutlich bis Mitte Mai 2016 andauernd; laut fritz und vmz bis Ende Oktober
-#: last_checked: 2017-03-27
-#: check_frequency: 14d
-Carl-Herz-Ufer: Sperrung der Fahrbahn an der Baerwaldstr.	q4::inwork 10430,10081 10500,10081
+# REMOVED --- #: source_id: IM_023816 --- #: source_id: 2147339541 --- #: XXX vermutlich bis Mitte Mai 2016 andauernd; laut fritz und vmz bis Ende Oktober --- #: last_checked: 2017-03-27 --- #: check_frequency: 14d --- Carl-Herz-Ufer: Sperrung der Fahrbahn an der Baerwaldstr.	q4::inwork 10430,10081 10500,10081
 # 
 #: source_id: LMS-BR_r_LMS-BR_68468
 #: source_id: LMS-BR_r_LMS-BR_85494
@@ -407,7 +398,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süde
 # 
 ### Schöneberg ###
 # 
-#: last_checked: 2017-03-25
+#: last_checked: 2017-04-25
 #: check_frequency: 14d
 Bautzener Str.: Bauarbeiten an der Großgörschenstr., auf Gehweg ausweichen	q4::inwork 8186,9380 8185,9338
 # 
@@ -450,8 +441,8 @@ Schloßallee: Bauarbeiten, Fahrbahn teilweise gesperrt	q2::inwork 11730,19684 118
 #: source_id: LMS-BR_r_LMS-BR_91192
 #: source_id: LMS-BR_r_LMS-BR_91193
 #: last_checked: 2017-04-09 vvv
-#: next_check: 2017-06-30 vvv
-#: valid: -20170630 vvv
+#: next_check: 2017-07-07 vvv
+#: valid: -20170707 vvv
 Blankenburger Weg: Bauarbeiten, Einbahnstraßenregelung, Radweg Richtung Nordosten ist auch gesperrt	q2::inwork; 12222,20637 12442,20805
 Pankstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 12524,20863 12442,20805
 #: valid ^^^
@@ -528,11 +519,9 @@ Dresdener Str. - NKZ: Bordsteine	q3 11344,10507 11334,10527
 Alexanderplatz: langsame Straßenbahnen, Fußgängerverkehr	q2 11139,13008 11064,12910 10970,12822 10923,12779
 Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q2 11134,12793 11064,12910
 #: XXX nach den Bauarbeiten den alten Eintrag wiederherstellen
-#: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr)
-#: XXX hat die Sperrung für den Kfz-Verkehr auch Auswirkungen auf den Radverkehr (zusätzliche Absperrungen?)
-#: last_checked: 2017-04-08
-#: next_check: 2017-04-12
-# REMOVED --- : check_frequency: 60d
+#: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen für Radfahrer)
+#: last_checked: 2017-04-24
+#: check_frequency: 60d
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Rathausstr.: Fußgänger, Bauarbeiten	q1- 10923,12779 10704,12595
 Dircksenstr.: langsame Straßenbahnen, Fußgänger	q2 10970,12822 10849,12944

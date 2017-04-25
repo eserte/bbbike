@@ -32,11 +32,11 @@ my $isodate2epoch = sub {
        text  => "Gesperrte Straßen am 28.5. zwischen 14 Und 24 Uhr während des Kirchentages (im Bereich Pariser Platz - Unter den Linden - Friedrichstr. - Gendarmenmarkt)",
        type  => "handicap",
      },
-     { from  => $isodate2epoch->("2016-05-12 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-05-16 23:59:59"),
+     { from  => $isodate2epoch->("2017-06-01 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-06-05 23:59:59"),
        periodic => 1,
        recurrences => [['easter', 47]], # zwei Tage vor Pfingsten
-       text  => 'Straßenfest rund um den Blücherplatz, 13.5.2016 bis 16.5.2016',
+       text  => 'Straßenfest rund um den Blücherplatz, 02.06.2017 bis 05.06.2017',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.berlin.de/tickets/suche/detail.php?id=810735
@@ -59,12 +59,12 @@ userdel	3 9922,10010 9827,10051 9837,9856
 userdel	3 9837,9856 9827,10051 9922,10010
 EOF
      },
-     { from  => $isodate2epoch->("2016-05-14 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-05-15 23:59:59"),
+     { from  => $isodate2epoch->("2017-06-03 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-06-04 23:59:59"),
        periodic => 1,
        recurrences => [['easter', 49]], # Pfingstsonntag
        source_id => 'http://www.karneval-berlin.de/de/',
-       text  => 'Karneval der Kulturen, 15.05.2016',
+       text  => 'Karneval der Kulturen, 04.06.2016',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670 9243,9696 9044,9753
@@ -25443,8 +25443,8 @@ userdel	q4::inwork 19676,1577 19704,1621 19766,1796
 EOF
      },
      { from  => 1467661160, # 2016-07-04 21:39
-       until => 1486150257, # (bei fritz entfernt) --- 1487977200, # 2017-02-25 00:00
-       text  => 'Buckower Damm: Baustelle zwischen Alt-Buckow und An den Achterhöfen, evtl. auch Einschränkungen für Radfahrer, bis 24.02.2017',
+       until => $isodate2epoch->("2017-05-02 18:00:00"),
+       text  => 'Buckower Damm: Baustelle zwischen Alt-Buckow und An den Achterhöfen, evtl. auch Einschränkungen für Radfahrer, bis 02.05.2017',
        type  => 'handicap',
        source_id => '2147340272',
        data  => <<EOF,
@@ -25906,8 +25906,8 @@ userdel	q3::inwork; 8385,6034 8532,6015
 EOF
      },
      { from  => 1488236400, # 2017-02-28 00:00
-       until => $isodate2epoch->("2017-04-26 18:00:00"), # 1493589599, # 2017-04-30 23:59
-       text  => 'Kantstr.: Richtung Budapester Str. ab Joachimsthaler Str. gesperrt, bis Ende April 2017 ',
+       until => undef, # Ende-Datum bei fritz aufgehoben --- $isodate2epoch->("2017-04-26 18:00:00"), # 1493589599, # 2017-04-30 23:59
+       text  => 'Kantstr.: Richtung Budapester Str. ab Joachimsthaler Str. gesperrt',
        type  => 'handicap',
        source_id => '2147341048',
        data  => <<EOF,
@@ -25989,6 +25989,7 @@ EOF
        type  => 'gesperrt',
        source_id => '2147341208',
        data  => <<EOF,
+#: XXX prüfen!
 userdel	2::inwork 15458,11306 15477,11338
 EOF
      },

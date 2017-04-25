@@ -1,6 +1,124 @@
-$#temp_blocking = 44;
+$#temp_blocking = 2;
 push @temp_blocking,
 (
+       {
+         'data' => '#: by: http://www.berlin.de/tickets/suche/detail.php?id=810735
+userdel	2::temp 9521,10010 9827,10051
+userdel	2::temp 9521,10010 9448,10014
+userdel	2::temp 9599,10175 9687,10180 9825,10206
+userdel	2::temp 9416,10196 9599,10175
+userdel	2::temp 9579,10122 9536,10064
+userdel	2::temp 9579,10122 9631,10142 9702,10129
+userdel	2::temp 9837,10117 9827,10051
+userdel	2::temp 9837,10117 9858,10199
+userdel	2::temp 9599,10175 9579,10122
+userdel	2::temp 9702,10129 9827,10051
+userdel	2::temp 9702,10129 9816,10119
+userdel	2::temp 9599,10175 9631,10142 9687,10180
+	2::temp 9825,10206 9865,10227 9948,10280
+	2::temp 9873,10285 9865,10227 9858,10199
+	2::temp 9825,10206 9858,10199
+userdel	3 9922,10010 9827,10051 9837,9856
+userdel	3 9837,9856 9827,10051 9922,10010
+',
+         'from' => 1496268000,
+         'id' => 3,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'easter',
+                              47
+                            ]
+                          ],
+         'text' => 'Straßenfest rund um den Blücherplatz, 02.06.2017 bis 05.06.2017',
+         'type' => 'gesperrt',
+         'until' => 1496699999
+       },
+       {
+         'data' => 'userdel	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670 9243,9696 9044,9753
+# REMOVED --- userdel	2::temp 9044,9753 9002,9731 8777,9601 8679,9544 8595,9495 8358,9568 8192,9619
+userdel	2::temp 10713,9260 10670,9286 10639,9304 10564,9292
+# REMOVED --- userdel	3 8774,9534 8777,9601 8779,9812
+# REMOVED --- userdel	3 8779,9812 8777,9601 8774,9534
+# REMOVED --- userdel	3 9000,9509 9044,9753 9073,9915
+# REMOVED --- userdel	3 9073,9915 9044,9753 9000,9509
+userdel	3 9280,9476 9334,9670 9387,9804
+userdel	3 9387,9804 9334,9670 9280,9476
+userdel	3 9524,9426 9552,9602 9588,9827
+userdel	3 9588,9827 9552,9602 9524,9426
+userdel	3 9650,9404 9676,9564 9705,9732
+userdel	3 9705,9732 9676,9564 9650,9404
+userdel	3 9767,9386 9790,9528 9820,9718
+userdel	3 9820,9718 9790,9528 9767,9386
+userdel	3 9892,9286 9927,9487 9957,9692
+userdel	3 9957,9692 9927,9487 9892,9286
+userdel	3 10004,9268 10032,9456 10067,9667
+userdel	3 10067,9667 10032,9456 10004,9268
+userdel	3 10123,9233 10198,9405 10306,9640
+userdel	3 10306,9640 10198,9405 10123,9233
+userdel	3 10547,9233 10564,9292 10580,9361
+userdel	3 10580,9361 10564,9292 10547,9233
+userdel	3 10705,9234 10713,9260 10749,9342
+userdel	3 10749,9342 10713,9260 10705,9234
+userdel	3 11141,9107 11136,9183 11208,9345 11274,9492
+userdel	3 11274,9492 11208,9345 11136,9183 11141,9107
+userdel	3 11998,8872 11880,8955 11831,8989 11830,8917 11845,8824 11879,8672 11882,8527
+userdel	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 11998,8872
+',
+         'from' => 1496440800,
+         'id' => 4,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'easter',
+                              49
+                            ]
+                          ],
+         'source_id' => 'http://www.karneval-berlin.de/de/',
+         'text' => 'Karneval der Kulturen, 04.06.2016',
+         'type' => 'gesperrt',
+         'until' => 1496613599
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'data' => '#: tempex: YYYY0431T1200-YYYY05020000 vvv
 #: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2971249-2970764-myfest-berlin.html
@@ -3061,29 +3179,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: 20170421T1400-20170423 vvv
-userdel	2::temp 22138,4642 22111,4562 22093,4499
-userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
-#: tempex ^^^
-',
-         'from' => 1492689600,
-         'id' => 2419,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              21,
-                              'months',
-                              4
-                            ]
-                          ],
-         'source_id' => 'http://www.winzerfest-köpenick.de/',
-         'text' => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 21.4.2017 bis 23.4.2017',
-         'type' => 'gesperrt',
-         'until' => 1492984799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3909,7 +4005,17 @@ userdel	2::inwork 3472,24709 3481,24686 3492,24667 3535,24626
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED ("Verkürzung" laut fritz) --- userdel	q4::inwork 12938,1348 12940,1547 12911,1815
+userdel	q4::inwork 12911,1815 12817,2031
+',
+         'from' => 1467661160,
+         'id' => 2808,
+         'source_id' => '2147340272',
+         'text' => 'Buckower Damm: Baustelle zwischen Alt-Buckow und An den Achterhöfen, evtl. auch Einschränkungen für Radfahrer, bis 02.05.2017',
+         'type' => 'handicap',
+         'until' => 1493740800
+       },
        undef,
        undef,
        undef,
@@ -4060,9 +4166,9 @@ userdel	q4::inwork; 5488,10978 5613,10963 5652,11004
          'from' => 1488236400,
          'id' => 2851,
          'source_id' => '2147341048',
-         'text' => 'Kantstr.: Richtung Budapester Str. ab Joachimsthaler Str. gesperrt, bis Ende April 2017 ',
+         'text' => 'Kantstr.: Richtung Budapester Str. ab Joachimsthaler Str. gesperrt',
          'type' => 'handicap',
-         'until' => 1493222400
+         'until' => undef
        },
        undef,
        {
@@ -4130,7 +4236,8 @@ userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 
          'until' => 1504195200
        },
        {
-         'data' => 'userdel	2::inwork 15458,11306 15477,11338
+         'data' => '#: XXX prüfen!
+userdel	2::inwork 15458,11306 15477,11338
 ',
          'from' => 1492466400,
          'id' => 2859,
