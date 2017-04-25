@@ -7034,13 +7034,7 @@ sub complete_link_to_einstellungen {
 }
 
 sub link_to_met {
-## Die Berliner Wetterkarte sieht nicht so schick aus, und hat sowieso
-## die gleichen Daten wie die Startseite von met.fu-berlin.de
-#     if ("@weather_cmdline" =~ /parse_wetterkarte/) {
-# 	qq{<a href="http://wkserv.met.fu-berlin.de/Wetter/mainframe.php">};
-#     } else {
-	qq{<a href="http://www.met.fu-berlin.de/de/wetter/">};
-#     }
+    qq{<a href="http://www.met.fu-berlin.de/de/wetter/">};
 }
 
 sub window_open {

@@ -80,16 +80,7 @@ sub BBBikeWeather::update_weather {
     eval {
 	my @station;
 	my($act_line, $act_station);
-	if ($wetter_station eq 'wetterkarte') {
-	    if (!eval { require "$FindBin::RealBin/lib/parse_wetterkarte"; 1}) {
-		main::status_message("parse_wetterkarte konnte nicht geladen werden", "die");
-	    }
-	    # only needed for indexes
-	    BBBikeWeather::require_wettermeldung();
-	    my %result = ParseWetterkarte::get_result();
-	    $act_line = ParseWetterkarte::formatline(\%result, windrichtung => "windrose");
-	    $act_station = $wetter_station;
-	} elsif ($wetter_station =~ m{metar-(\S+)}) {
+	if ($wetter_station =~ m{metar-(\S+)}) {
 	    my $site_code = $1;
 	    # only needed for indexes (?)
 	    BBBikeWeather::require_wettermeldung();
@@ -324,7 +315,7 @@ EOF
 sub BBBikeWeather::parse_wetterline {
     my($wetterline, $source) = @_;
     my $fullwetter = $wetter_full{$source};
-    my $wind_is_in_m_s = $fullwetter || $source eq 'wetterkarte' || $source =~ m{^metar};
+    my $wind_is_in_m_s = $fullwetter || $source =~ m{^metar};
     my(@wetterline) = split(/\|/, $wetterline);
     $wetterline[$wettermeldung2::FIELD_WIND_DIR] = lc($wetterline[$wettermeldung2::FIELD_WIND_DIR]);
     if (!exists $BBBikeCalc::wind_dir{$wetterline[$wettermeldung2::FIELD_WIND_DIR]}) {
@@ -335,7 +326,7 @@ sub BBBikeWeather::parse_wetterline {
 	$wind = 0;
 	die "Can't parse max wind speed ($wetterline[$wettermeldung2::FIELD_WIND_MAX]) from " . join("|", @wetterline);
     }
-    if (($fullwetter||$source eq 'wetterkarte') && $wetterline[$wettermeldung2::FIELD_WIND_AVG] !~ /^[\d\.]+$/) {
+    if ($fullwetter && $wetterline[$wettermeldung2::FIELD_WIND_AVG] !~ /^[\d\.]+$/) {
 	$wind = 0;
 	die "Can't parse average wind speed ($wetterline[$wettermeldung2::FIELD_WIND_AVG]) from " . join("|", @wetterline);
     }
