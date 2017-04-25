@@ -13,7 +13,9 @@ install:
   - cd C:\projects\%APPVEYOR_PROJECT_NAME%\Task\BBBike\windist
   - cpanm --installdeps .
 # For building ext and additional tests
-  - cpanm Inline::C XBase Date::Calc Image::ExifTool HTML::FormatText Object::Realize::Later DB_File::Lock
+# DB_File::Lock fails tests on newer perls, see https://rt.cpan.org/Ticket/Display.html?id=98224
+  - cpanm --notest DB_File::Lock
+  - cpanm Inline::C XBase Date::Calc Image::ExifTool HTML::FormatText Object::Realize::Later
   - cd C:\projects\%APPVEYOR_PROJECT_NAME%
 
 build_script:
