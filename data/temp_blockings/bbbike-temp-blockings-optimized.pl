@@ -3272,7 +3272,32 @@ userdel	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 1112
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: tempex: YYYY0530-YYYY0601 vvv
+userdel	2::temp 20755,5750 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
+userdel	2::temp 19976,6087 20015,6069 20293,6278 20200,6321 20106,6357
+userdel	2::temp 20200,6321 20262,6493 20225,6631
+userdel	2::temp 20716,6029 20593,6082 20428,6157 20453,6211 20293,6278
+userdel	2::temp 19976,6087 20064,6290 20106,6357
+#: tempex ^^^
+',
+         'from' => 1496095200,
+         'id' => 2436,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              30,
+                              'months',
+                              5
+                            ]
+                          ],
+         'source_id' => 'https://familienfez.fez-berlin.de/programm/kindertagsfest/',
+         'text' => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 1. Juni 2017',
+         'type' => 'gesperrt',
+         'until' => 1496354399
+       },
        undef,
        undef,
        undef,
@@ -4034,7 +4059,7 @@ userdel	q4::inwork 12911,1815 12817,2031
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-04-08 vvv
+#: last_checked: 2017-04-28 vvv
 #: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -4166,9 +4191,9 @@ userdel	q4::inwork; 5488,10978 5613,10963 5652,11004
          'from' => 1488236400,
          'id' => 2851,
          'source_id' => '2147341048',
-         'text' => 'Kantstr.: Richtung Budapester Str. ab Joachimsthaler Str. gesperrt',
+         'text' => 'Kantstr.: Richtung Budapester Str. ab Joachimsthaler Str. gesperrt, voraussichtlich bis Mitte Juni 2017',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1497456000
        },
        undef,
        {
@@ -4236,15 +4261,26 @@ userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 
          'until' => 1504195200
        },
        {
-         'data' => '#: XXX prüfen!
-userdel	2::inwork 15458,11306 15477,11338
+         'data' => '	q4::inwork 15458,11306 15477,11338
+	q3::inwork; 15055,11505 15162,11458 15220,11440 15303,11412 15477,11338
 ',
          'from' => 1492466400,
          'id' => 2859,
          'source_id' => '2147341208',
-         'text' => 'Pfarrstr. zwischen Wiesenweg und Hauffstr.: Brückenarbeiten, eventuell auch für Fußgänger und Radfahrer gesperrt, bis 10. Mai 2017',
-         'type' => 'gesperrt',
+         'text' => 'Pfarrstr. zwischen Wiesenweg und Hauffstr.: Brückenarbeiten, langsames Passieren für Radfahrer möglich; außerdem Einbahnstraßenregelung im Wiesenweg, bis 10. Mai 2017',
+         'type' => 'handicap',
          'until' => 1494432000
+       },
+       {
+         'data' => '#: last_checked: 2017-04-28
+#: check_frequency: 14d
+userdel	q4::inwork; 7201,8870 7107,9030
+',
+         'from' => undef,
+         'id' => 2860,
+         'text' => 'Akazienstr.: Bauarbeiten, Einbahnstraßenregelung',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

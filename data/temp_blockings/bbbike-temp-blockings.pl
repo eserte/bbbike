@@ -21591,13 +21591,13 @@ EOF
 userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 11162,19844 11312,19920 11425,19978 11563,20048
 EOF
      },
-     { from  => $isodate2epoch->("2016-05-30 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-06-01 23:59:59"),
-       text  => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 1. Juni 2016',
+     { from  => $isodate2epoch->("2017-05-30 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-06-01 23:59:59"),
+       text  => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 1. Juni 2017',
        periodic => 1,
        recurrences => [["yearly", "days" => 30, "months" => 5]],
        type  => 'gesperrt',
-       source_id => 'http://fez-berlin.de/nc/programm/detailansicht/internationales-kindertagsfest-303/',
+       source_id => 'https://familienfez.fez-berlin.de/programm/kindertagsfest/',
        data  => <<EOF,
 #: tempex: YYYY0530-YYYY0601 vvv
 userdel	2::temp 20755,5750 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
@@ -25625,7 +25625,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-04-08 vvv
+#: last_checked: 2017-04-28 vvv
 #: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -25906,8 +25906,8 @@ userdel	q3::inwork; 8385,6034 8532,6015
 EOF
      },
      { from  => 1488236400, # 2017-02-28 00:00
-       until => undef, # Ende-Datum bei fritz aufgehoben --- $isodate2epoch->("2017-04-26 18:00:00"), # 1493589599, # 2017-04-30 23:59
-       text  => 'Kantstr.: Richtung Budapester Str. ab Joachimsthaler Str. gesperrt',
+       until => $isodate2epoch->("2017-06-14 18:00:00"), # 1493589599, # 2017-04-30 23:59
+       text  => 'Kantstr.: Richtung Budapester Str. ab Joachimsthaler Str. gesperrt, voraussichtlich bis Mitte Juni 2017',
        type  => 'handicap',
        source_id => '2147341048',
        data  => <<EOF,
@@ -25985,12 +25985,22 @@ EOF
      },
      { from  => 1492466400, # 2017-04-18 00:00
        until => $isodate2epoch->("2017-05-10 18:00:00"), # 1494885599, # 2017-05-15 23:59
-       text  => 'Pfarrstr. zwischen Wiesenweg und Hauffstr.: Brückenarbeiten, eventuell auch für Fußgänger und Radfahrer gesperrt, bis 10. Mai 2017',
-       type  => 'gesperrt',
+       text  => 'Pfarrstr. zwischen Wiesenweg und Hauffstr.: Brückenarbeiten, langsames Passieren für Radfahrer möglich; außerdem Einbahnstraßenregelung im Wiesenweg, bis 10. Mai 2017',
+       type  => 'handicap',
        source_id => '2147341208',
        data  => <<EOF,
-#: XXX prüfen!
-userdel	2::inwork 15458,11306 15477,11338
+	q4::inwork 15458,11306 15477,11338
+	q3::inwork; 15055,11505 15162,11458 15220,11440 15303,11412 15477,11338
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Akazienstr.: Bauarbeiten, Einbahnstraßenregelung',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2017-04-28
+#: check_frequency: 14d
+userdel	q4::inwork; 7201,8870 7107,9030
 EOF
      },
     );
