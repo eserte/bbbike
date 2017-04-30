@@ -274,7 +274,8 @@ $f:	${_f_raw_${f}} inaccessible_landstrassen
 
 plaetze: plaetze-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) plaetze-orig > plaetze~
+	${GREPSTRASSEN_VALID} plaetze-orig |\
+	    $(CONVERT_ORIG) > plaetze~
 	mv plaetze~ plaetze
 	-@$(READONLY) $@
 
