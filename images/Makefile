@@ -346,3 +346,8 @@ png-to-jpg:	\
 #   Created 16x16, 12x12 and 8x8 variants with inkscape
 
 # loading.gif is from jquery
+
+# Creation of ropeway*.png:
+#   convert -geometry 16x16 ropeway.svg ropeway.png
+#   convert -geometry 10x10 ropeway.svg ropeway_klein.png
+#   convert -geometry 5x5 ropeway.svg ropeway_mini.png

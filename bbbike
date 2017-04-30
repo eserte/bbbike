@@ -450,7 +450,7 @@ $init_p_draw{'lsa'} = 1;
 $p_far_away{'o'} = 0;
 $str_restrict{'s'}  = {qw(BAB 0 B 1 HH 1 H 1 NH 1 N 1 NN 1 Pl 0 Br 0)}; # Pl = places, Br = bridges
 # NOTE: This is misused for getting all valid RBahn categories:
-$str_restrict{'r'}  = {qw(RA 1 RB 1 RC 1 R 1 R0 0 RBau 0 RG 1 RP 0)};
+$str_restrict{'r'}  = {qw(RA 1 RB 1 RC 1 R 1 R0 0 RBau 0 RG 1 RP 0 Ropeway 0)};
 $str_restrict{'b'}  = {qw(S 1 SA 1 SB 1 SC 1 S0 0 SBau 0 SBetrieb 0)};
 $str_restrict{'u'}  = {qw(U 1 UA 1 UB 1 U0 0 UBau 0 UBetrieb 0)};
 $str_restrict{'qs'} = {qw(Q0 0 Q1 1 Q2 1 Q3 1)};
@@ -2654,6 +2654,7 @@ unless ($skip_features{"r-bahn"}) {
 	     [M"in Bau", 'RBau'],
 	     [M"Güterbahnen/Verbindungsstrecken", 'RG'],
 	     [M"Parkbahnen/Kleinbahnen", 'RP'],
+	     [M"Seilbahnen", "Ropeway"],
 	    ) {
 	my($label,$cat) = @$_;
 	$rbcm->checkbutton(-label => $label,
@@ -5868,6 +5869,7 @@ sub define_item_attribs {
 	 'RBau' => '#a0b0a0', 	# in Bau
 	 'RG' => '#a0c8a0',	# Güterbahnen
 	 'RP' => '#49c043',	# Parkbahnen...
+	 'Ropeway' => 'black',
 	 'U'  => '#000080', 	# U-Bahn
 	 'UA' => '#000080', 	# U-Bahn, Zone A
 	 'UB' => '#000080', 	# U-Bahn, Zone B
@@ -5966,6 +5968,7 @@ sub define_item_attribs {
 	 'S'  => '#006000',
 	 'R'  => '#006000', 	# altes Farbschema
 	 #   'R'  => '#a00000',# neues Farbschema
+	 Ropeway => '#000000',
 	);
     for (qw(UA UB U0)) { $category_font_color{$_} = $category_font_color{"U"} }
     for (qw(SA SB SC S0)) { $category_font_color{$_} = $category_font_color{"S"} }
@@ -6113,6 +6116,7 @@ sub define_item_attribs {
 	 'U0'   => [1,5],
 	 'S0'   => [1,5],
 	 'radroute' => [1,15],
+	 'Ropeway' => [6,6],
 	);
     %category_capstyle =
 	('radroute' => 'round'); # XXX $capstyle_round not available at this time!
@@ -6304,6 +6308,7 @@ sub define_item_attribs {
 	 'RBau' => [M"Bahnstrecke in Bau", M"Bahnstrecken in Bau"],
 	 'RG' => [M"Güterbahn/Verbindungsstrecke", M"Güterbahnen/Verbindungsstrecken"],
 	 'RP' => [M"Park-/Kleinbahn", M"Park-/Kleinbahnen"],
+	 'Ropeway' => [M"Seilbahn", M"Seilbahnen"],
 	 'HH' => [M"wichtige Hauptstraße", M"wichtige Hauptstraßen"],
 	 'B'  => [M"Bundesstraße", M"Bundesstraßen"],
 	 'H'  => [M"Hauptstraße", M"Hauptstraßen"],
@@ -11810,6 +11815,7 @@ sub config_symbol {
 	    $c->itemconfigure('r-R0-fg', -image => get_symbol_scale('r-R0'));
 	    $c->itemconfigure('r-RBau-fg', -image => get_symbol_scale('r-RBau'));
 	    $c->itemconfigure('r-RP-fg', -image => get_symbol_scale('r-RP'));
+	    $c->itemconfigure('r-Ropeway-fg', -image => get_symbol_scale('r-Ropeway'));
 	}
 	$c->itemconfigure($tag_label, -font => "$sans_serif_font_family -12");
 	change_label_visibility($c, undef, undef, ["$abk-label"]);
@@ -16300,7 +16306,7 @@ sub scale_width {
     foreach (qw(lsa-X lsa-X0 lsa-B lsa-B0 lsa-F lsa-F0 lsa-Zbr rest kn vf-Vf vf-Kz u b), ($XXX_use_old_R_symbol ? () : ('r'))) {
 	$c->itemconfigure($_ . '-fg && !attrib-inwork', -image => get_symbol_scale($_, $scale));
     }
-    foreach (qw(u-U0 u-UBau b-S0 b-SBau r-R0 r-RBau r-RP)) { # overwrite the previous settings of u,b,r
+    foreach (qw(u-U0 u-UBau b-S0 b-SBau r-R0 r-RBau r-RP r-Ropeway)) { # overwrite the previous settings of u,b,r
 	$c->itemconfigure($_ . '-fg', -image => get_symbol_scale($_, $scale));
     }
     foreach (qw(attrib-inwork)) {
@@ -16683,6 +16689,20 @@ sub get_symbol_scale {
 	} else {
 	    return undef;
 	}
+    } elsif ($tag eq 'r-Ropeway') {
+	my $filename;
+	if ($myscale > 2*$mod) {
+	    $filename = 'ropeway'
+	} elsif ($myscale >= 0.5*$mod) {
+	    $filename = 'ropeway_klein';
+	} elsif ($myscale >= 0.2*$mod) {
+	    $filename = 'ropeway_mini';
+	}
+	my $photo;
+	if ($filename) {
+	    $photo = load_photo($top, $filename, -persistent => 1);
+	}
+	return $photo;
     } elsif ($tag eq 'r' || $tag eq 'r-R0') {
 	my $filename;
 	if ($myscale > 2*$mod) {

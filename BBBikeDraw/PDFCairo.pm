@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2011,2014,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2011,2014,2015,2017 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -28,7 +28,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = 0.02;
+$VERSION = 0.03;
 
 # XXX hmmm, also defined in Route::PDF::Cairo...
 use constant DIN_A4_WIDTH => 595;
@@ -385,6 +385,7 @@ sub draw_map {
 
 	    my $images_dir = $self->get_images_dir;
 	    my $image;
+	    my $ropeway_image;
 	    my $suffix;
 	    if ($self->{Xk} < 0.05) {
 		$suffix = "_mini";
@@ -399,6 +400,7 @@ sub draw_map {
 		    $image = Cairo::ImageSurface->create_from_png("$images_dir/${type}bahn$suffix.png");
 		} elsif ($points eq 'rbahnhof') {
 		    $image = Cairo::ImageSurface->create_from_png("$images_dir/eisenbahn$suffix.png");
+		    $ropeway_image = Cairo::ImageSurface->create_from_png("$images_dir/ropeway$suffix.png");
 		}
 	    };
 	    warn $@ if $@;
@@ -407,13 +409,14 @@ sub draw_map {
   		my $cat = $s->[Strassen::CAT];
   		next if $cat =~ $BBBikeDraw::bahn_bau_rx;
   		my($x0,$y0) = split /,/, $s->[Strassen::COORDS][0];
-		if ($image) {
+		my $use_image = ($cat eq 'Ropeway' ? $ropeway_image : $image);
+		if ($use_image) {
 		    my($x1, $y1) = &$transpose($x0, $y0);
-		    my($w,$h) = ($image->get_width, $image->get_height);
+		    my($w,$h) = ($use_image->get_width, $use_image->get_height);
 		    $x1 -= $w/2;
 		    $y1 -= $h/2;
 		    next if $x1 < 0 || $y1 < 0 || $x1 > $self->{Width} || $y1 > $self->{Height};
-		    $im->set_source_surface($image, $x1, $y1);
+		    $im->set_source_surface($use_image, $x1, $y1);
 		    $im->paint;
 		    if (0 && $do_bahnhof) { # XXX station label drawing not yet enabled, needs more work...
 			my $name = $strip_bhf->($s->[Strassen::NAME]);

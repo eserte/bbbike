@@ -783,10 +783,28 @@ sub handle_fixme_cat_like {
     get_node_ids($r, $attribs); # as a side-effect, create the nodes
 }
 
+sub handle_ropeway {
+    my($r, $dir) = @_;
+    my @node_ids = get_node_ids($r);
+    my $name = $r->[Strassen::NAME];
+    _xmlify($name);
+    print $wayfh qq{<way id="$next_way_id" visible="true">\n};
+    for my $node_id (@node_ids) {
+	print $wayfh qq{  <nd ref="$node_id"/>\n};
+    }
+    print $wayfh qq{  <tag k="name" v="$name" />\n} if defined $name && length $name;
+    print $wayfh qq{  <tag k="aerialway" v="cable_car" />\n}; # XXX rough approximation, might also be gondola or something else
+    print $wayfh qq{</way>\n};
+    $next_way_id++;
+}
+
 sub handle_railway_like {
     my($r, $dir) = @_;
 
     my($cat, $cat_attribs) = $r->[Strassen::CAT] =~ m{^([^:]+)(?:::(.*))?};
+    if ($cat eq 'Ropeway') {
+	return handle_ropeway($r, $dir);
+    }
     return if $cat !~ m{^([USR]|RP|RG)([ABC0]|Bau)?$};
     my $railway_cat = $cat_to_railway{$1};
     return if !defined $railway_cat;
@@ -1014,9 +1032,23 @@ sub handle_zebrastreifen_like {
     get_node_ids($r, \%attribs);
 }
 
+sub handle_ropeway_stations {
+    my($r) = @_;
+    my $name = $r->[Strassen::NAME];
+    tie my %attribs, 'Tie::IxHash';
+    %attribs = (aerialway => 'station');
+    if (defined $name) {
+	$attribs{name} = $name;
+    }
+    get_node_ids($r, \%attribs);
+}    
+
 sub handle_railway_stations_like {
     my($r) = @_;
     my $cat = $r->[Strassen::CAT];
+    if ($cat eq 'Ropeway') {
+	return handle_ropeway_stations($r);
+    }
     my $is_ubahn = $cat =~ m{^U};
     my $is_sbahn = $cat =~ m{^S};
     my $is_abandoned = $cat =~ m{0$};
