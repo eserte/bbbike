@@ -971,7 +971,10 @@ Egidysteg: eng, Fuﬂg‰nger	q3 3094,22216 3134,22153
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger, unterhalb der S-Bahnbr¸cke eng	q2 4222,22854 4176,22764 4117,22722 4106,22731 4022,22691
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 5621,23966 5409,23816 5350,23717 5316,23661 5214,23420 5242,23156 5232,23139 5206,23103 5100,23045 5037,23036 4993,23020 4944,22978 4876,22955 4824,22907 4750,22915 4697,22901 4613,22928
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 4596,22955 4543,22964 4459,22931 4407,22897 4332,22916 4309,22922 4158,22896
-(Weg am Tegeler Flieﬂ): Fuﬂg‰nger, eng	q2 5860,24067 5693,24037 5632,23992 5621,23966
+(Weg am Tegeler Flieﬂ): Fuﬂg‰nger, eng, Radfahren nicht erlaubt	q3 5867,24056 5818,24058 5690,24031 5647,24006 5628,23977 5621,23966
+#: note: unklar, ob Radfahren ¸berhaupt erlaubt ist
+Naturlehrpfad: Fuﬂg‰nger, eng	q3 5621,23966 5534,24005 5408,24068 5363,24109
+Naturlehrpfad: Fuﬂg‰nger, eng	q3 5363,24109 5264,24186 5182,24183
 (Schildower Weg): Fuﬂg‰nger	q1 7877,24037 7675,23968 7615,23884 7571,23885 7339,23782 7312,23775 7185,23749
 (Mehrower Allee, Unterf¸hrung zum S-Bahnhof): Rampe, Fuﬂg‰nger	q4 20547,17084 20533,17051 20439,17103
 #: XXX_prog BS wahrscheinlich auf der ˆstlichen Seite, ansonsten vielleicht q1
@@ -2265,7 +2268,7 @@ Parkplatz Einkaufszentrum: Parkplatzverkehr	q2 -2195,3564 -2173,3513 -2164,3488
 (Am Gr¸ng¸rtel - Weg zwischen Triftstr. und Eichborndamm): einige Fuﬂg‰nger	q1 4597,20508 4626,20577
 (Weg am Packereigraben - Schluchseestr.): Fuﬂg‰nger	q1- 5471,22092 5470,22101 5469,22114 5443,22210
 (Alt-Hermsdorf - Zehntwerderweg): Fuﬂg‰nger, kurze Rampe	q2 4613,22928 4698,22778
-(Wanderweg an den Eichwerder Moorwiesen): einige Fuﬂg‰nger	q1 4268,23292 4288,23301 4338,23382 4373,23466 4444,23553 4466,23608 4455,23679 4436,23714 4495,23822 4498,23876 4535,23922 4647,23973 4754,23998 4807,24011 5023,23954 5050,23984 5081,24019 5106,24105 5101,24150 5136,24201
+(Wanderweg an den Eichwerder Moorwiesen): einige Fuﬂg‰nger	q1 4268,23292 4288,23301 4338,23382 4373,23466 4444,23553 4466,23608 4455,23679 4436,23714 4495,23822 4498,23876 4535,23922 4647,23973 4754,23998 4820,24010 4903,23999 5023,23954 5050,23984 5081,24019 5106,24105 5101,24150 5136,24201
 (Am Ried - Wanderweg an den Eichwerder Moorwiesen): einige Fuﬂg‰nger	q1 4593,23355 4588,23362 4529,23441
 #: note: von S¸den her steht hier ein Schild mit durchgestrichenem Rad
 (Am Ried - Wanderweg an den Eichwerder Moorwiesen): absch¸ssige Strecke, ggfs. schieben, einige Fuﬂg‰nger	q4 4529,23441 4500,23476
@@ -2372,7 +2375,7 @@ Knobelsdorffstr.: einige Moabiter Kissen	q0- 3117,11852 2953,11830 2728,11805 25
 Wegenerstr.: ein Moabiter Kissen	q0- 4477,9176 4619,9200
 #: XXX_prog: f¸r Anh‰nger grˆﬂere Behinderung (q1?)
 Sigmaringer Str.: ein Moabiter Kissen	q0- 4700,9179 4715,8977
-(Wittenauer Str. - Zabel-Kr¸ger-Damm): einige Fuﬂg‰nger	q1 6278,22615 6254,22633 6226,22712 6234,22759 6243,22797 6118,22947 6064,23014
+(Wittenauer Str. - Zabel-Kr¸ger-Damm): einige Fuﬂg‰nger	q1 6278,22615 6257,22632 6226,22712 6234,22759 6243,22797 6118,22947 6064,23014
 (Rummelsburger Ufer - Hauptstr.): einige Fuﬂg‰nger	q1+ 15249,10564 15307,10701
 #: XXX_prog BS Bordstein am Wendehammer, ansonsten vielleicht q1 f¸r Fuﬂg‰nger
 Lepsiusstr.: Bordstein	q2 4913,6538 4901,6505
@@ -2488,6 +2491,9 @@ Prinzengasse: einige Fuﬂg‰nger	q2 9955,12300 10002,12305
 #: XXX_prog BS an der Hauptstr., ansonsten entfernen
 (Hauptstr. - Rummelsburger Ufer): flacher Bordstein	q2 15334,10528 15322,10513
 (Nixenkai - Am Speicher): Fuﬂg‰nger	q1 15289,10097 15273,10087 15244,10083 15218,10092
+Am Orangeriepark: einige Fuﬂg‰nger	q1 10271,19361 10281,19364 10330,19384 10321,19410 10389,19438
+#: XXX_prog BS zwischen Damm und Parkplatz (s¸dliches Ende), ansonsten q1
+(Zur L¸barser Bahn - M‰rkisches Viertel): einige Fuﬂg‰nger, Bordstein	q2 6569,22345 6585,22324
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -3314,7 +3320,7 @@ Hallichpromenade: Fuﬂweg	q2 5388,20606 5441,20613
 Allmendeweg: enge Hausdurchfahrt	q1+ 3071,21801 3155,21572
 # 
 #: by: Sven Beckers
-Senheimer Str.: enge Straﬂe	q1 2510,25350 2506,25398 2502,25544 2515,25666 2519,25772 2496,25915 2484,25984 2490,26126 2531,26251 2540,26280 2560,26349 2569,26408 2564,26462
+Senheimer Str.: enge Straﬂe	q1 2510,25350 2506,25398 2502,25544 2515,25666 2519,25772 2496,25915 2484,25984 2490,26126 2531,26251 2540,26280 2552,26327 2562,26379 2560,26475
 # 
 #: by: Jan Riemke:
 Romanshorner Weg: enge Straﬂe	q1 6709,17466 6679,17568 6631,17721 6578,17898 6550,17988 6577,17998
@@ -3363,7 +3369,7 @@ Wilckeweg: schmaler Fuﬂweg, nur 1m breit	q3 8536,20702 8539,20744 8554,20800
 (Friedrich-Engels-Str. - Wiesenwinkel): enge Straﬂe	q1 8692,20698 8669,20697 8628,20705 8593,20725
 (Nordgraben, s¸dliches Ufer): eng, ggfs. Fuﬂg‰nger und Autos	q1 8092,20817 8219,20870 8507,21023
 (Nordgraben - Wurstmacherweg): sehr enge Stelle	q3 8311,20840 8327,20836
-(Eichborndamm - General-Woyna-Str.): einige Fuﬂg‰nger, recht eng	q2 4232,18981 4285,18983
+(Eichborndamm - General-Woyna-Str.): einige Fuﬂg‰nger, recht eng	q2 4223,18982 4285,18983
 (Eichborndamm - General-Woyna-Str.): einige Fuﬂg‰nger	q1 4285,18983 4353,18986 4475,18998 4577,19009
 (S-Bahndamm - Waldstr.): einige Fuﬂg‰nger	q1 4577,19009 4570,18822
 #: by: ^^^
@@ -4207,20 +4213,13 @@ Narzissenpfad: enge Straﬂe	q0- -7387,14951 -7523,14969
 #: corrected_by: srt/policy (q2 -> q1) (auf der anderen Seite ebenfalls q1)
 (Pankeweg zwischen Pankstr. und Wiesenstr.): einige Fuﬂg‰nger	q1 8140,15859 8129,15701 8156,15614
 # 
-#: by: Wolfgang Koehne vvv
-#: confirmed_by: srt vvv
-#: XXX_prog Steigung -> comments_mount? vvvv
-(Am Rosenanger - Am Sandkrug, Entenschnabel): stark absch¸ssig, eine 30cm-Stufe	q4; 3481,24686 3492,24667 3535,24626
-(Am Sandkrug, Entenschnabel - Am Rosenanger): starke Steigung, eine 30cm-Stufe	q4; 3535,24626 3492,24667 3481,24686 3472,24709
-#: XXX_prog ^^^
-#: confirmed_by ^^^
-#: by: ^^^
+# REMOVED (mittlerweile mit Treppe) --- #: by: Wolfgang Koehne vvv --- #: confirmed_by: srt vvv --- #: XXX_prog Steigung -> comments_mount? vvvv --- (Am Rosenanger - Am Sandkrug, Entenschnabel): stark absch¸ssig, eine 30cm-Stufe	q4; 3481,24686 3514,24652 3535,24626 --- (Am Sandkrug, Entenschnabel - Am Rosenanger): starke Steigung, eine 30cm-Stufe	q4; 3535,24626 3514,24652 3481,24686 3472,24709
 # 
 #: by: j. bethsold
 (Lankegrabenpark): langsam befahrbar, eng, Hundebetrieb	q3 7365,3199 7409,3331 7458,3451
 # 
 #: by: Sigmount Kˆnigsberg
-Verl‰ngerte Schulzendorfer Str.: Fuﬂg‰nger	q1 2150,22464 2015,22435 1834,22421 1583,22376 1505,22368 1411,22365 1266,22401 1094,22504 670,22646 636,22658 587,22646 520,22624 439,22620 289,22618 194,22547
+Verl‰ngerte Schulzendorfer Str.: Fuﬂg‰nger	q1 2150,22464 2015,22435 1834,22421 1583,22376 1499,22378 1411,22365 1266,22401 1094,22504 670,22646 636,22658 587,22646 520,22624 439,22620 289,22618 194,22547
 # 
 #: by: Detlef Westphal
 (Heinz-Brandt-Str./Mauerweg - Uhlandstr.): Trampelpfad	q3 7306,20635 7316,20623 7321,20588 7415,20617
@@ -4230,7 +4229,7 @@ Verl‰ngerte Schulzendorfer Str.: Fuﬂg‰nger	q1 2150,22464 2015,22435 1834,22421 1
 (Frithjofstr. - Rotkardinalweg): schmal, selten Fuﬂg‰nger	q2 12650,19462 12543,19760 12552,19765
 # 
 #: by: Kai Pauldrach vvv
-(Verl‰ngerung Senheimer Str.): teils enger Weg	q2 2564,26462 2493,26665 2421,26793 2366,26842 2303,26913
+(Verl‰ngerung Senheimer Str.): teils enger Weg	q2 2560,26475 2493,26665 2434,26783 2384,26851 2303,26913
 (Ludwig-Lesser-Park, mittlerer Weg): viele Fuﬂg‰nger	q2 2312,25673 2293,26111
 (Senheimer Str. - Oranienburger Chaussee/Schwarzkittelweg): enger Weg	q2 2540,26280 3013,26458
 #: by: ^^^

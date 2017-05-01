@@ -1270,7 +1270,26 @@ userdel	2::temp 6945,9142 7044,9163
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.openairgallery.de/?y=2017
+userdel	2::temp 13178,10623 13206,10651 13305,10789 13332,10832
+',
+         'from' => 1496476800,
+         'id' => 1107,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              31,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Open Air Gallery am 4. Juni 2017 auf der Oberbaumbrücke (10:00 - 20:00)',
+         'type' => 'gesperrt',
+         'until' => 1496606400
+       },
        undef,
        undef,
        undef,
@@ -2608,7 +2627,7 @@ userdel	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im April von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Mai von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2804,7 +2823,25 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	q4::temp 13178,10623 13206,10651 13305,10789 13332,10832
+',
+         'from' => 1504339200,
+         'id' => 2206,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              2,
+                              'months',
+                              7
+                            ]
+                          ],
+         'text' => 'Open Air Gallery am 3. September 2017 auf der Oberbaumbrücke (10:00 - 20:00)',
+         'type' => 'gesperrt',
+         'until' => 1504468800
+       },
        {
          'data' => '#: tempex: 20170428-T20170519 vvv
 userdel	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
@@ -4007,18 +4044,7 @@ userdel	2::night 16196,18364 16315,18208
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: Kai Pauldrach
-#: XXX Bis wann sind die Bauarbeiten beendet? Ändert sich danach etwas an der Qualität?
-#: next_check: 2016-07-13
-userdel	2::inwork 3472,24709 3481,24686 3492,24667 3535,24626
-',
-         'from' => undef,
-         'id' => 2796,
-         'text' => 'Am Rosenanger - Am Sandkrug, Entenschnabel: wegen Bauarbeiten komplett gesperrt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4175,15 +4201,7 @@ userdel	q4::inwork 5059,7216 5064,7160 5081,7112
        },
        undef,
        undef,
-       {
-         'data' => 'userdel	q3::inwork; 8385,6034 8532,6015
-',
-         'from' => 1488649671,
-         'id' => 2850,
-         'text' => 'Kaiserin-Augusta-Str.: Bauarbeiten, Einbahnstraße, bis Mai 2017',
-         'type' => 'handicap',
-         'until' => 1493589600
-       },
+       undef,
        {
          'data' => '#: source_id: LMS-BR_r_LMS-BR_121
 userdel	q4::inwork; 5488,10978 5613,10963 5652,11004
@@ -4210,12 +4228,15 @@ userdel	q4::inwork; 5583,5179 5527,5217 5416,5289 5397,5302 5382,5312
          'until' => 1504303199
        },
        {
-         'data' => 'userdel	q4::inwork 854,24387 1033,24429 1156,24494
+         'data' => '#: XXX Ende am 2017-05-08 scheint nicht realistisch zu sein, gibt es Infos dazu?
+#: next_check: 2017-05-08
+#: priority: #A
+userdel	q4::inwork 854,24387 1033,24429 1156,24494 1250,24533
 ',
          'from' => 1492380000,
          'id' => 2854,
          'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.580104.php',
-         'text' => 'Karmeliterweg: Bauarbeiten zwischen Am Eichenhain und Olwenstr., Fahrbahn gesperrt, voraussichtlich vom 18.04.2017 bis zum 08.05.2017',
+         'text' => 'Karmeliterweg: Bauarbeiten zwischen Am Eichenhain und Artuswall, Fahrbahn gesperrt, voraussichtlich vom 18.04.2017 bis zum 08.05.2017',
          'type' => 'handicap',
          'until' => 1494280800
        },
@@ -4281,6 +4302,16 @@ userdel	q4::inwork; 7201,8870 7107,9030
          'text' => 'Akazienstr.: Bauarbeiten, Einbahnstraßenregelung',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => 'userdel	q4::inwork 3957,23981 4073,23980 4240,23985 4256,23985 4316,23995 4397,24033 4425,24067
+',
+         'from' => 1493652218,
+         'id' => 2861,
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.579605.php',
+         'text' => 'Hermsdorfer Damm: Bauarbeiten, Fahrbahn gesperrt, bis voraussichtlich Mitte Oktober 2017',
+         'type' => 'handicap',
+         'until' => 1508104799
        }
      
 );

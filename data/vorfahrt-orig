@@ -529,6 +529,7 @@ X	Vf 3835,10915 3847,10865 3872,10749
 X	Vf 3872,10749 3881,10699 3883,10585
 X	Vf 3881,10699 3883,10585 3870,10510
 # REMOVED (keine Vorfahrtsregelung mehr) --- #: by: http://www.berlin.de/ba-pankow/presse/archiv/20080710.1140.104697.html --- X	Vf 11688,15398 11595,15460 11502,15527
+#: note: Stop für einmündende Straße
 X	Vf 4780,20116 4491,20125 4262,20025
 #: by: http://www.potsdam.de/cms/beitrag/10046238/620526/
 X	Vf -8559,-1378 -8485,-1445 -8390,-1532
@@ -1581,3 +1582,4 @@ X	Kz 4291,14947
 X	Vf 5352,11502 5587,11397 5666,11362
 #: note: implizit, kreuzende Straße mit Bord
 X	Vf 3976,11869 4149,11887 4237,12057
+X	Vf 4914,17399 4901,17341 4891,17289

@@ -8000,7 +8000,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005307',
        data  => <<EOF,
-userdel	2::inwork 3726,18962 3883,18944 4162,18891
+userdel	2::inwork 3726,18962 3883,18944 4144,18896
 EOF
      },
      { from  => 1178143200, # 2007-05-03 00:00
@@ -9466,14 +9466,14 @@ EOF
 userdel	2::temp 12891,12549 12869,12425
 EOF
      },
-     { from  => $isodate2epoch->("2016-06-04 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-06-05 22:00:00"),
+     { from  => $isodate2epoch->("2017-06-03 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-06-04 22:00:00"),
        periodic => 1, # erster Termin im Sommer
        recurrences => [['yearly', days => 31, months => 5]], # kann aber auch erst im Juli stattfinden
-       text  => 'Open Air Gallery am 5. Juni 2016 auf der Oberbaumbrücke (10:00 - 20:00)',
+       text  => 'Open Air Gallery am 4. Juni 2017 auf der Oberbaumbrücke (10:00 - 20:00)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.openairgallery.de/index.html?y=2016
+#: by: http://www.openairgallery.de/?y=2017
 userdel	2::temp 13178,10623 13206,10651 13305,10789 13332,10832
 EOF
      },
@@ -14654,7 +14654,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013223',
        data  => <<EOF,
-userdel	q4::inwork; 7979,20528 8343,20556 8410,20561 8481,20566 8543,20571 8561,20572 8717,20584 8900,20601
+userdel	q4::inwork; 7979,20528 8343,20556 8410,20561 8481,20566 8543,20571 8561,20572 8717,20584 8864,20598 8900,20601
 EOF
      },
      { from  => 1246208018, # 2009-06-28 18:53
@@ -19222,11 +19222,11 @@ EOF
 userdel	1::temp 1574,11379 1625,11380 1821,11408 1960,11426 2095,11440
 EOF
      },
-     { from  => $isodate2epoch->("2016-07-02 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-07-03 22:00:00"),
+     { from  => $isodate2epoch->("2017-09-02 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-09-03 22:00:00"),
        periodic => 1, # zweiter Termin im Sommer
-       recurrences => [['yearly', days => 2, months => 7]], # kann aber auch erst im August stattfinden
-       text  => 'Open Air Gallery am 3. Juli 2016 auf der Oberbaumbrücke (10:00 - 20:00)',
+       recurrences => [['yearly', days => 2, months => 7]], # kann aber auch erst im August oder September stattfinden
+       text  => 'Open Air Gallery am 3. September 2017 auf der Oberbaumbrücke (10:00 - 20:00)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	q4::temp 13178,10623 13206,10651 13305,10789 13332,10832
@@ -19993,7 +19993,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110929.0810.360313.html',
        data  => <<EOF,
-userdel	2::inwork 872,24330 873,24112 825,24068 764,24065 609,24215 237,24374 195,24389 132,24390 78,24364 -406,23934
+userdel	2::inwork 872,24330 865,24114 793,24070 736,24068 601,24192 237,24374 195,24389 132,24390 78,24364 -406,23934
 EOF
      },
      { from  => $isodate2epoch->("2016-09-15 00:00:00"), # 1347508800, # 2012-09-13 06:00 PERIODISCH, ca. 2. Wochenende im September
@@ -22951,7 +22951,7 @@ EOF
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5249.html',
        data  => <<EOF,
 #: XXX eigentlich falsch positioniert, aber temp_blockings auf fragezeichen-Strecken geht wohl nicht (ungetestet)
-userdel	2::inwork 554,23349 658,23395
+userdel	2::inwork 554,23349 664,23416
 EOF
      },
      { from  => 1399586400, # 2014-05-09 00:00
@@ -25325,14 +25325,13 @@ userdel	q4::inwork; 16314,15223 16119,15302
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1493652406, # undef, # XXX
        text  => 'Am Rosenanger - Am Sandkrug, Entenschnabel: wegen Bauarbeiten komplett gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: Kai Pauldrach
-#: XXX Bis wann sind die Bauarbeiten beendet? Ändert sich danach etwas an der Qualität?
-#: next_check: 2016-07-13
-userdel	2::inwork 3472,24709 3481,24686 3492,24667 3535,24626
+# REMOVED --- #: XXX Bis wann sind die Bauarbeiten beendet? Ändert sich danach etwas an der Qualität? --- #: next_check: 2016-07-13
+userdel	2::inwork 3472,24709 3481,24686 3514,24652 3535,24626
 EOF
      },
      { from  => 1466015432, # 2016-06-15 20:30
@@ -25939,11 +25938,14 @@ EOF
      },
      { from  => 1492380000, # 2017-04-17 00:00
        until => 1494280800, # 2017-05-09 00:00
-       text  => 'Karmeliterweg: Bauarbeiten zwischen Am Eichenhain und Olwenstr., Fahrbahn gesperrt, voraussichtlich vom 18.04.2017 bis zum 08.05.2017',
+       text  => 'Karmeliterweg: Bauarbeiten zwischen Am Eichenhain und Artuswall, Fahrbahn gesperrt, voraussichtlich vom 18.04.2017 bis zum 08.05.2017',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.580104.php',
        data  => <<EOF,
-userdel	q4::inwork 854,24387 1033,24429 1156,24494
+#: XXX Ende am 2017-05-08 scheint nicht realistisch zu sein, gibt es Infos dazu?
+#: next_check: 2017-05-08
+#: priority: #A
+userdel	q4::inwork 854,24387 1033,24429 1156,24494 1250,24533
 EOF
      },
      { from  => 1494194400, # 2017-05-08 00:00
@@ -26001,6 +26003,15 @@ EOF
 #: last_checked: 2017-04-28
 #: check_frequency: 14d
 userdel	q4::inwork; 7201,8870 7107,9030
+EOF
+     },
+     { from  => 1493652218, # 2017-05-01 17:23
+       until => 1508104799, # 2017-10-15 23:59
+       text  => 'Hermsdorfer Damm: Bauarbeiten, Fahrbahn gesperrt, bis voraussichtlich Mitte Oktober 2017',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.579605.php',
+       data  => <<EOF,
+userdel	q4::inwork 3957,23981 4073,23980 4240,23985 4256,23985 4316,23995 4397,24033 4425,24067
 EOF
      },
     );

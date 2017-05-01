@@ -586,7 +586,7 @@ Sackgassenende, zur Unterführung	culdesac_pseudo -8287,14411
 	culdesac_pseudo 7062,17500
 Sackgassenende, zur Egidystr.	culdesac_pseudo 3077,22234
 	culdesac_pseudo 2319,22264
-	culdesac 2203,22749
+	culdesac 2155,22771
 Sackgassenende, zum Tegeler Fließ	culdesac_pseudo 3381,22273
 	culdesac_pseudo 5046,24000
 	culdesac_pseudo 4534,23938
@@ -1237,10 +1237,13 @@ nördliches Sackgassenende, BSR-Recyclinghof	culdesac_pseudo 3969,13341
 	culdesac 4342,1173
 	culdesac 4401,1232
 	culdesac 12472,21510
+	culdesac 10389,19438
+	culdesac_pseudo 5484,17312
 # 
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo 5182,24183
 	culdesac_pseudo 6692,3334
 	culdesac_pseudo 9814,15312
 	culdesac_pseudo 9898,15354

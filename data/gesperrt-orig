@@ -106,9 +106,9 @@ Breite Str. (Pankow)	1 10680,18380 10660,18345 10487,18270 10469,18262 10320,181
 Heinrich-Mann-Platz.	1 9565,18555 9524,18531 9480,18539 9454,18570 9457,18612 9495,18639 9542,18634 9567,18599 9565,18555
 Edelweißstr.	1 8234,19936 7993,19949 7935,19954 7885,19975 7748,20040
 Edelhofdamm	1 3185,25437 3101,25402 2909,25322 2756,25260 2683,25238 2713,25300 2744,25314 2882,25375 3076,25456 3166,25496
-Antonienstr.	1 3930,17920 3970,18126 4009,18322 4070,18695 4098,18762 4162,18891 4240,19019
-Eichborndamm	1s:q3 4240,19019 4232,18981
-Eichborndamm	1 4232,18981 4210,18878 4163,18676 4102,18298 4059,18107 4015,17912
+Antonienstr.	1 3930,17920 3970,18126 4009,18322 4070,18695 4144,18896 4228,19024
+Eichborndamm	1s:q3 4228,19024 4223,18982
+Eichborndamm	1 4223,18982 4211,18882 4163,18676 4102,18298 4059,18107 4015,17912
 Spreestr.	1 17900,6072 17939,5968 17877,5860 17810,5736 17807,5730 17782,5698
 Buckower Chaussee	1 8742,475 8972,498 9002,471
 # REMOVED (nein, wird nicht) --- #: XXX evtl. wird die Einbahnstraßenregelung aufgehoben --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6025 --- #: last_checked: 2015-05-05 --- #: check_frequency: 30d
@@ -2144,12 +2144,15 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 #: note: Blechrampe existiert
 tragen (6 Stufen)	0:15 4608,63927
 Treppe	0:40 1888,42795
+tragen (mehrere Treppen mit insgesamt 45 Stufen und Kinderwagenrampe)	0:90 3514,24652
 #
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+weites Drängelgitter	BNP:2::trailer=7 5628,23977
+weites Drängelgitter	BNP:2::trailer=7 5867,24056
 weites Drängelgitter	BNP:1::trailer=3 15289,10092
 weites Drängelgitter	BNP:1::trailer=3 15283,10087
 weites Drängelgitter	BNP:2::trailer=7 16657,19705
@@ -2222,8 +2225,7 @@ Schranke (lichte Breite ca. 100cm)	BNP:3::trailer=10 -4277,14981
 Drängelgitter	BNP:3::trailer=10 3664,23313
 Drängelgitter	BNP:3::trailer=10 3737,23369
 Tor	BNP:5::trailer=10 2818,23931
-#: XXX_prog: "künstlicher" Eintrag, um Anhänger auszusperren, siehe auch handicap_s
-sehr steil	BNP:0::trailer=no 3492,24667
+# REMOVED (mittlerweile mit Treppe) --- #: XXX_prog: "künstlicher" Eintrag, um Anhänger auszusperren, siehe auch handicap_s --- sehr steil	BNP:0::trailer=no 3514,24652
 Drängelgitter, kann umfahren werden	BNP:1::trailer=5 3557,24572
 Schranke	BNP:3::trailer=10 4588,23362
 Drängelgitter	BNP:3::trailer=10 22848,14460
@@ -2756,6 +2758,11 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: RATHAUSWEDDING-2017
+#: last_checked: 2017-05-01
+#: check_frequency: 60d
+Limburger Str.: Bauarbeiten am Rathaus Wedding, komplett gesperrt	2::inwork 7129,15717 7012,15571
+# 
 #: source_id: 2147339182
 #: last_checked: 2017-04-09
 #: check_frequency: 360d
@@ -2823,7 +2830,7 @@ Heidelberger Str.: Baustelle, Einbahnstraßenregelung	1s:q3 13489,9199 13420,9259
 #: source_id: LMS-BR_r_LMS-BR_82028
 #: osm_watch: way id="42091230" version="18"
 #: osm_watch: way id="52960100" version="9"
-#: last_checked: 2017-03-24 vvv
+#: last_checked: 2017-05-01 vvv
 #: next_check: 2017-08-30 vvv
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q3 8732,14098 8654,14194
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q4 8654,14194 8607,14253 8527,14352 8442,14456
@@ -3186,7 +3193,7 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: osm_watch: way id="23099023" version="9"
 #: osm_watch: way id="23099024" version="6"
 #: osm_watch: way id="103531998" version="2"
-#: last_checked: 2017-03-25
+#: last_checked: 2017-05-01
 #: check_frequency: 150d
 Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603
 # 
@@ -3246,6 +3253,7 @@ Dahlemer Feld: zur Zeit eine Ziegenweide, keine Durchfahrt möglich	2:temp -1643,
 ######################################################################
 # Unsorted
 # 
+Tor	BNP:5::trailer=10 10281,19364
 Schwingtor	BNP:5::trailer=10 14491,26714
 Schwingtor	BNP:5::trailer=10 13966,25777
 Schwingtor	BNP:5::trailer=10 14036,25433
