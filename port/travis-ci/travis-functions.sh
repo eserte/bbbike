@@ -176,6 +176,7 @@ fix_cgis() {
 init_webserver_config() {
     if [ "$USE_MODPERL" = "1" ]
     then
+	chmod 755 $HOME
 	(cd cgi && make httpd.conf)
 	if [ ! -e /etc/apache2/sites-available/bbbike.conf -a ! -h /etc/apache2/sites-available/bbbike.conf ]
 	then
