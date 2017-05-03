@@ -477,7 +477,6 @@ Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2016
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2016 (Grundstücksnummerierungen)
-#: XXX Berlin.coods.data-Eintrag fehlt, PLZ=14089
 #: XXX Privatstraße
 #: osm_watch: way id="451944991" version="1"
 #: next_check: 2016-09-19
@@ -638,7 +637,7 @@ Bohnsdorfer Kreisel: Einbahnstraße wird aufgehoben	?::projected 21977,988 21894,
 #: osm_watch: way id="318581479" version="4"
 #: osm_watch: way id="318581478" version="3"
 #: osm_watch: way id="318581477" version="3"
-#: XXX im DPAG-Mitteilungsblatt mit Bindestrichen: Oskar-Helene-Park
+#: XXX im DPAG-Mitteilungsblatt mit Bindestrichen: Oskar-Helene-Park, bei LOR 2017 ohne Bindestriche
 #: XXX laut osm living_street
 #: last_checked: 2016-03-28
 #: next_check: 2016-09-21
@@ -1126,7 +1125,6 @@ Planstraße C: neue Straße entsteht	?::projected 12926,11224 12848,11093
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: XXX liegt die Straße tatsächlich hier?
 #: XXX die Reinickendorfer Pressemeldungsschreiber sind fleißig, höchstwahrscheinlich wird es dort erscheinen, falls hier was passiert
-#: XXX fehlt in Berlin.coords.data, PLZ=13507 -> Humboldtinsel|Tegel|13507|X,Y
 #: osm_watch: way id="228172653" version="6"
 #: last_checked: 2017-05-01 (Bauarbeiten)
 #: check_frequency: 150d
@@ -1286,7 +1284,6 @@ Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: XXX siehe auch gesperrt-orig-Eintrag zur Oberwallstr.
-#: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117
 #: XXX_osm: fehlt bei osm als "planned"/"proposed"
 Falkoniergasse: Genaue Lage? Qualität?	?::inwork 9945,12180 9915,12259
 # REMOVD --- #: XXX Eintrag in Berlin.coords.data fehlt: PLZ=10117 --- #: XXX_osm: fehlt bei osm als "planned"/"proposed" --- #: XXX existiert und ist ausgeschildert --- #: by: http://www.dafmap.de/d/berlin.html?id=3520&mt=0&zoom=16 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2016 (Widmung) --- Prinzengasse: Genaue Lage? Qualität?	?::inwork 9956,12297 10004,12302
@@ -1772,7 +1769,7 @@ Wege im Gutspark Neukladow: Wegführung, nachts beleuchtet, Qualität?	? -6198,535
 #: note: Parkviertel Kladow vvv
 #: note: Privatstraßen vvv
 #: by: https://www.deutschepost.de/content/dam/dpag/images/D_d/DDP/Downloads/Datafactory/postleitdaten/dezember2016/mtb_strassen_neu.pdf (PLZ)
-#: XXX fehlen alle bei Berlin.coords.data
+#: XXX manche fehlen noch bei Berlin.coords.data
 #: XXX Bebauungsplan VIII-424
 #: XXX a) An den Parkbäumen PLZ=14089
 #: XXX str_cont_ausnahme-Eintrag notwendig
@@ -1794,7 +1791,7 @@ Wildapfelpfad: Qualität? Genaue Lage? Existiert die Straße schon?	? -6441,6106 -
 #: XXX f) Parkviertelallee PLZ=14089
 Parkviertelallee: Qualität? Genaue Lage? Existiert die Straße schon?	? -6342,5846 -6378,5877 -6523,5992 -6441,6106 -6385,6185 -6251,6370 -6221,6411
 #: XXX g) Elsbeerenweg PLZ=14089
-Elsbeerenweg.: Qualität? Genaue Lage? Existiert die Straße schon?	? -6378,5877 -6191,6066
+Elsbeerenweg: Qualität? Genaue Lage? Existiert die Straße schon?	? -6378,5877 -6191,6066
 #: note ^^^
 #: note ^^^
 # 
@@ -1895,6 +1892,8 @@ Wröhmännerpark: nach den Bauarbeiten "gelber Farbasphalt", vermutlich für Radfah
 #: last_checked: 2017-02-25 vvv
 #: check_frequency: 60d vvv
 Alt-Friedrichsfelde [Wohngebiet]: neue Straße	?::inwork 18730,11833 18730,11833 18899,11824
+#: XXX_prog: duplizierter Eintrag wegen .check_missing_streets
+An der Hansekogge	? 18702,11921 18888,11910 18913,11909
 #: check_frequency ^^^
 #: last_checked ^^^
 #: by ^^^
@@ -3011,7 +3010,7 @@ Bebauungsplan 10-77: werden hier neue Straßen entstehen?	?::projected 21483,1652
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6436
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036284949883/284949883/00122677/77-Anlagen/02/Anlage1775.pdf
-#: XXX geplante neue Straßen im Komplex ArendsCarrée (Bebauungsplan 11-24 VE), noch nicht bestätigt, fehlen in Berlin.coords.data, genaue Lage? vvv
+#: XXX geplante neue Straßen im Komplex ArendsCarrée (Bebauungsplan 11-24 VE), genaue Lage? vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2016
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: XXX Privatstraßen
@@ -3112,7 +3111,6 @@ Güterbahnhof Wilmersdorf: vermutlich wird die Straße während der Bauarbeiten ges
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/53re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_09_0965_1056_online.pdf (Grundstücksnummerierungen)
-#: XXX Berlin.coords.data-Eintrag fehlt, PLZ=14089
 #: XXX ist das der Bebauungsplan 5-93?
 #: osm_watch: way id="377485132" version="3"
 #: next_check: 2016-07-04
@@ -3136,7 +3134,8 @@ Johannes-Guthmann-Weg: neue Straße entsteht, vermutlich hier? Qualität?	?::inwor
 #: osm_watch: way id="479144282" version="1"
 #: last_checked: 2016-06-04
 #: check_frequency: 270d
-Lili-Grün-Weg und Lin-Jaldati-Weg: wo genau werden die Straßen liegen? Qualität?	?::projected 23646,14007 23744,13960 23753,14050
+Lili-Grün-Weg: wo genau wird die Straße liegen? Qualität?	?::projected 23646,14007 23744,13960 23753,14050
+Lin-Jaldati-Weg: wo genau wird die Straße liegen? Qualität?	?::projected 23646,14007 23744,13960 23753,14050
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6704 vvv
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036827265989/827265989/00127188/88-Anlagen/02/AnlageDS2043VIIWege.pdf vvv
@@ -4421,7 +4420,7 @@ Striewitzweg (Teltow): Qualität im südlichen Abschnitt der Straße: wo genau sind
 Striewitzweg (Teltow): Qualität im nördlichen Abschnitt? Ist die Straße hier verkehrsberuhigt?	? 577,-543 550,-396 525,-347
 Altdöbern - Calau: Qualität?	? 55259,-83091 55388,-83077 55768,-82862 54521,-79452 54572,-78865 54600,-77483 53827,-76082
 # 
-#: XXX fehlen alle in Berlin.coords.data, PLZ=12623 vvv
+#: XXX einige fehlen in Berlin.coords.data, PLZ=12623 vvv
 #: last_checked: 2016-06-04 vvv
 #: check_frequency: 270d vvv
 #: osm_watch: way id="338546084" version="6"
@@ -4712,7 +4711,6 @@ Müllerweg (Potsdam-Fahrland): Qualität? Genauer Verlauf?	? -15503,6422 -15392,63
 # REMOVED (Weg existiert, wassergebundene Decke, unbeleuchtet, Radfahren frei, allerdings Bordstein an beiden Seiten, wenn man nicht via angrenzenden Bordstein kommt, und wahrscheinlich sowieso verkehrlich eher uninteressant) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20120405.1310.368452.html (Radfahren erlaubt) --- Preußenpark: Qualität des Weges? Nachts beleuchtet?	? 4374,9409 4353,9430 4281,9393 4246,9406
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/17re.pdf/file?y=2012
 #: note: siehe auch: http://www.freilandlabor-kaniswall.de/kontakt.htm
-#: XXX fehlt in Berlin.coords.data, PLZ=12559, Citypart=Müggelheim
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4248&options=4
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00081630/30-Anlagen/01/DRS0149VK.pdf (mit Lageplan)
 Am Kaniswall: Privatstraße, wo genau? Qualität?	? 32854,-201 32970,320

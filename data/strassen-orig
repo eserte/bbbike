@@ -3720,6 +3720,7 @@ Charles-Corcelle-Ring	N 3676,16497 3711,16481 3895,16381 4263,16166 4724,15925 4
 (Charles-Corcelle-Ring - Dohnagestell/Am Schwarzen Graben)	NN 4775,15929 4833,15916
 #: oldname: -20001130: Rue AndrÈ le NÙtre
 #: note: luise-berlin.de meint: "Die Schreibweise des Straﬂennamens entspricht nicht den Regeln der deutschen Rechtschreibung.", aber mittlerweile (2012-09) ist vor Ort richtig geschrieben
+#: note: bei LOR 2017 "Tourcoing Straﬂe"
 Tourcoingstr.	N 3781,16175 3796,16202 3836,16273 3895,16381
 Gustave-Courbet-Str.	N 3645,16308 3836,16273 3881,16259 3992,16198
 Rue Ambroise ParÈ	N 3643,16437 3624,16445 3606,16453 3481,16480 3375,16558
@@ -5578,7 +5579,7 @@ Zur Alten Bˆrse	N 18736,13080 18712,12853 18682,12599 18649,12371 18647,12354
 (Parkplatz Getr‰nke Hoffmann)	N 18647,12354 18715,12348
 (Marzahner Chaussee - Gensinger Str.)	NN 18578,11881 18702,11921
 #: next_check_id: ACHTERKASTELL-2016
-#: XXX neuer Name: "An der Hansekogge", PLZ: 10315 (fehlt in Berlin.coords.data)
+#: XXX neuer Name: "An der Hansekogge"
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6703
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036827265989/827265989/00127185/85-Anlagen/02/Koggebrunnen.pdf
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2016
@@ -9243,14 +9244,12 @@ Aalstieg	N 30233,3639 30181,3634 30073,3634 30024,3636 29937,3675 29917,3697
 Forellensprung	N 30019,3820 30073,3634
 Quappenzeile	N 29960,3845 30019,3820 30136,3798 30233,3782
 Straﬂe 567	N 30030,3475 30017,3554 30024,3636
-#: XXX_indoor: bei osm falscher Straﬂenname (Richard-Hˆrnke-Str.)
+#: note: bei LOR 2017 vermutlich falscher Name: "Richard-Hˆrncke-Weg" mit "c"
 #: oldname: -20101220: Fuﬂweg 552
 Richard-Hˆrnke-Weg	N 29836,3443 29930,3450 30030,3475
-#: XXX_indoor: bei osm falscher Straﬂenname (Richard-Hilliges-Str.)
 #: oldname: -20101220: Straﬂe 567a
 Richard-Hilliges-Weg	N 29937,3675 29947,3464 30001,3473
 (Fuﬂweg 552 - Straﬂe 567a)	NN 29930,3450 29947,3464
-#: XXX_indoor: bei osm falscher Straﬂenname (Paul-Rahn-Str.)
 #: oldname: -20101220: Straﬂe 13a
 Paul-Rahn-Weg	NN 29930,3450 29840,3378
 An den B‰nken	N 29529,3880 29753,3679 29820,3589 29836,3443 29840,3378
@@ -9361,10 +9360,11 @@ Gersweilerstr.	N 28748,885 28751,923 28925,1117
 Pelzlakeweg	N 29163,1333 29074,1410
 #: add_fragezeichen: heiﬂt die Straﬂe "Abtweilerstraﬂe" oder "Abtweiler Str."?
 #: XXX luise berlin meint zusammengeschrieben, siehe http://berlin.kauperts.de/Strassen/Abtweilerstrasse-12559-Berlin#Geschichte
-#: XXX in LOR ist es auch zusammengeschrieben
+#: XXX in LOR 2017 ist es auch zusammengeschrieben
 #: XXX alle anderen Kartenwerke (OSM, Google, Here) meinen auseinander
 #: XXX bei Pharus widerspr¸chlich: auf der Karte auseinandergeschrieben gezeichnet, in der Straﬂenliste zusammengeschrieben
-Abtweiler Str.	N 29188,1086 29098,1148 29060,1179
+#: XXX bei Google-Streetview sieht man beide Schreibweisen
+Abtweilerstr.	N 29188,1086 29098,1148 29060,1179
 Geinsheimer Weg	N 29065,892 29042,891 28968,891 28931,889 28882,888 28748,885 28689,886 28577,889 28419,896 28331,877
 Weg T	N 28892,844 28931,889
 Weg T	N 28830,774 28865,816
@@ -14525,7 +14525,10 @@ Erich-Lodemann-Str.	N 15763,7569 15425,7953
 Erich-Lodemann-Str.	N 15444,7969 15288,8134
 Erich-Lodemann-Str.	NN 15288,8134 15242,8182
 (Vorplatz S-Bhf. Pl‰nterwald)	NN 15256,8247 15212,8203 15242,8182
-In den neuen G‰rten	N 7111,3432 7318,3306 7359,3349 7409,3331 7472,3308
+#: add_fragezeichen: Lautet der Straﬂenname "In den neuen G‰rten" oder "In den Neuen G‰rten"?
+#: XXX bei osm & LOR 2017 "Neuen", bei google "neuen"
+#: XXX bei Google-Streetview sieht man einige Schildern mit "neuen", aber eins (das in der Mitte der Straﬂe) kˆnnte "Neuen" sein (nicht genau zu erkennen)
+In den Neuen G‰rten	N 7111,3432 7318,3306 7359,3349 7409,3331 7472,3308
 Gieselerstr.	N 4602,9439 4619,9200 4609,9027
 Hattenheimer Str. (Frohnau)	N 2673,25012 2907,24757
 Am Rosenanger	N 2907,24757 2995,24672 3053,24640 3124,24614 3228,24613 3472,24709 3570,24763 3651,24788
@@ -16778,6 +16781,7 @@ Ernst-Bumm-Weg	N 2397,12513 2467,12525
 Am Bahnhof Westend	N 2417,12401 2317,12388 2337,12260 2440,12264
 Klausenerplatz	N 2786,12473 2804,12326 2662,12306 2643,12453
 Neufertstr.	N 2804,12326 2888,12292 3060,12311
+#: note: bei LOR 2017 "Gardes-Du-Corps-Straﬂe" geschrieben (groﬂes "D")
 Gardes-du-Corps-Str.	N 2437,12283 2662,12306
 Nithackstr.	N 3189,12519 3204,12416 3207,12325 3217,12239
 Wulfsheinstr.	N 3060,12311 3207,12325

@@ -25442,8 +25442,8 @@ userdel	q4::inwork 19676,1577 19704,1621 19766,1796
 EOF
      },
      { from  => 1467661160, # 2016-07-04 21:39
-       until => $isodate2epoch->("2017-05-02 18:00:00"),
-       text  => 'Buckower Damm: Baustelle zwischen Alt-Buckow und An den Achterhöfen, evtl. auch Einschränkungen für Radfahrer, bis 02.05.2017',
+       until => $isodate2epoch->("2017-07-09 18:00:00"),
+       text  => 'Buckower Damm: Baustelle zwischen Alt-Buckow und An den Achterhöfen, evtl. auch Einschränkungen für Radfahrer, bis 09.07.2017',
        type  => 'handicap',
        source_id => '2147340272',
        data  => <<EOF,

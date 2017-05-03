@@ -119,36 +119,7 @@ userdel	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 1199
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: YYYY0431T1200-YYYY05020000 vvv
-#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2971249-2970764-myfest-berlin.html
-userdel	2::temp 11763,10635 11722,10533 11949,10414
-userdel	2::temp 11556,10869 11770,10774 11760,10732 11781,10696 11763,10635 11505,10744 11556,10869 11589,10947 11640,11067
-userdel	2::temp 11958,11045 11897,10887 11841,10747 11824,10708 11781,10696
-userdel	2::temp 11805,10899 11803,10857
-userdel	2::temp 11275,10723 11301,10783 11329,10785 11365,10791 11403,10782 11505,10744 11463,10642 11722,10533
-userdel	2::temp 11841,10747 11770,10774 11799,10848
-userdel	2::temp 11463,10642 11275,10723 11234,10739 11159,10769
-userdel auto	3 11258,10682 11275,10723 11253,10778
-userdel auto	3 11253,10778 11275,10723 11258,10682
-#: tempex ^^^
-',
-         'from' => 1493546400,
-         'id' => 45,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'MyFest: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2017',
-         'type' => 'gesperrt',
-         'until' => 1493675999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3282,29 +3253,7 @@ userdel	2::temp 6230,8602 6313,8638 6454,8653
        },
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.ag-bahnhofstrasse.de/maientanz.html?y=2016
-#: by: http://www.berlin.de/tickets/suche/detail.php?id=954647
-#: by: http://www.volksfeste-in-deutschland.de/kunst-wein-in-lichtenrade.html
-#: tempex: YYYY0429-YYYY0501
-userdel	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
-',
-         'from' => 1493330400,
-         'id' => 2431,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              29,
-                              'months',
-                              4
-                            ]
-                          ],
-         'text' => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz, Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (29.04.2017 bis 01.05.2017)',
-         'type' => 'handicap',
-         'until' => 1493675999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3615,33 +3564,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
-userdel	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
-userdel	2::inwork 8573,12325 8540,12420
-userdel	2::inwork 8303,12216 8344,12221 8538,12245 8610,12254
-userdel	2::inwork 8089,12190 8214,12205
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-#: tempex ^^^
-',
-         'from' => 1493330400,
-         'id' => 2565,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              30,
-                              'months',
-                              4
-                            ]
-                          ],
-         'source_id' => 'http://www.berlin.de/tickets/suche/detail.php?id=1372887',
-         'text' => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung und Kinderfest des DGB), am 1. Mai 2017',
-         'type' => 'gesperrt',
-         'until' => 1493683200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4063,9 +3986,9 @@ userdel	q4::inwork 12911,1815 12817,2031
          'from' => 1467661160,
          'id' => 2808,
          'source_id' => '2147340272',
-         'text' => 'Buckower Damm: Baustelle zwischen Alt-Buckow und An den Achterhöfen, evtl. auch Einschränkungen für Radfahrer, bis 02.05.2017',
+         'text' => 'Buckower Damm: Baustelle zwischen Alt-Buckow und An den Achterhöfen, evtl. auch Einschränkungen für Radfahrer, bis 09.07.2017',
          'type' => 'handicap',
-         'until' => 1493740800
+         'until' => 1499616000
        },
        undef,
        undef,
