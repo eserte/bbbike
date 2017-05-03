@@ -29,12 +29,7 @@ use File::Temp qw(tempdir);
 use Strassen::Core;
 
 my @search_inaccessible_points = "$FindBin::RealBin/../miscsrc/search_inaccessible_points";
-
-if ($^O eq 'MSWin32') {
-    unshift @search_inaccessible_points, $^X;
-} else {
-    ok -x $search_inaccessible_points[0], "$search_inaccessible_points[0] is executable";
-}
+unshift @search_inaccessible_points, $^X;
 
 {
     my $test_datadir = "$FindBin::RealBin/data-test";
