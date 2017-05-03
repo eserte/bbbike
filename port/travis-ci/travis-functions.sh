@@ -57,8 +57,9 @@ init_apt() {
 # - rhino:                  javascript tests
 # - imagemagick:            typ2legend test
 # - libpango1.0-dev:        prerequisite for Pango
+# - libxml2-utils:          xmllint
 install_non_perl_dependencies() {
-    sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep tre-agrep libgd2-xpm-dev ttf-bitstream-vera ttf-dejavu gpsbabel xvfb fvwm rhino imagemagick libpango1.0-dev
+    sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep tre-agrep libgd2-xpm-dev ttf-bitstream-vera ttf-dejavu gpsbabel xvfb fvwm rhino imagemagick libpango1.0-dev libxml2-utils
 }
 
 # Some CPAN modules not mentioned in Makefile.PL, usually for testing only
