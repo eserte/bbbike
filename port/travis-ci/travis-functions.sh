@@ -183,7 +183,7 @@ init_webserver_config() {
 	    sudo ln -s $TRAVIS_BUILD_DIR/cgi/httpd.conf /etc/apache2/sites-available/bbbike.conf
 	fi
 	sudo a2ensite bbbike.conf
-	sudo a2enmod headers
+	sudo a2enmod headers cgi remoteip
     fi
 }
 
