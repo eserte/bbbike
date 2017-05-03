@@ -196,7 +196,9 @@ start_webserver() {
 }
 
 init_webserver_environment() {
-    (sleep 5; lwp-request -m GET "http://localhost/bbbike/cgi/bbbike.cgi?init_environment=1")
+    (sleep 5; lwp-request -m GET "http://localhost/bbbike/cgi/bbbike.cgi?init_environment=1" || \
+	(grep --with-filename . /etc/apache2/sites-enabled/*; false)
+    )
 }
 
 start_xserver() {
