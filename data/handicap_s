@@ -9,7 +9,6 @@ Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11
 Schloßplatz: Engstelle wegen Bauarbeiten	q3::inwork 10285,12306 10357,12356
 Kommandantenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10330,11422 10136,11529
 Beuthstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10201,11631 10235,11610 10330,11422
-Sebastianstr.: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 10640,11564 10818,11269
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9935,11566 9949,11470
 Alexandrinenstr.: direkter Zugang zur Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q3::inwork 10818,11269 10678,11172
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9984,12426 9996,12401 10058,12290
@@ -74,11 +73,12 @@ Rathausstr.: Fußgänger, Bauarbeiten	q1 10923,12779 10704,12595
 Dircksenstr.: langsame Straßenbahnen, Fußgänger	q2 10970,12822 10849,12944
 Dircksenstr.: Fußgänger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
 Gontardstr.: langsame Straßenbahnen, Fußgänger	q2 10733,12967 10801,12901 10923,12779
-Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 15778,8990 15623,9028 15527,9096 15513,9144 15453,9259 15432,9322 15304,9464 15186,9550 15052,9584 14909,9649 14889,9660 14807,9704 14635,9786 14500,9863 14467,9887
-Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 14500,9863 14488,9848
-Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 14467,9887 14455,9892 14448,9922
+Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen, Radfahren nicht erlaubt	q3 15778,8990 15623,9028 15527,9096 15513,9144 15453,9259 15432,9322 15304,9464 15186,9550 15052,9584 14909,9649 14889,9660 14807,9704 14635,9786
+Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen, Radfahren nicht erlaubt	q3 14635,9786 14500,9863 14467,9887
+Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen, Radfahren nicht erlaubt	q3 14467,9887 14455,9892 14448,9922
+Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen, Radfahren nicht erlaubt	q3 14488,9848 14500,9863
 (S-Bahnhof - Treptower Hafen): Fußgänger, besonders an schönen Tagen, Radfahren nicht erlaubt	q3 14361,9772 14436,9784 14460,9814 14488,9848
-(S-Bahnhof - Treptower Hafen): Fußgänger, besonders an schönen Tagen	q2 14404,9847 14466,9861 14488,9848
+(S-Bahnhof - Treptower Hafen): Fußgänger, besonders an schönen Tagen, Radfahren nicht erlaubt	q3 14404,9847 14466,9861 14488,9848
 (Uferweg - Puschkinallee): Fußgänger, Radfahren nicht erlaubt	q3 14443,9731 14371,9726 14318,9688
 Treptower Park, am Rosengarten: Fußgänger	q2 14809,9466 14837,9517 14867,9573 14909,9649
 Treptower Park: Fußgänger	q1 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674 14577,9641 14495,9710 14443,9731 14361,9772
@@ -783,7 +783,7 @@ Yva-Bogen: Fußgänger	q2 5373,10981 5426,11039 5459,11135
 (Georgenkirchstr. - Mollstr.): Fußgänger	q1 11589,13305 11526,13252
 Kelchstr.: enge Straße	q1 7386,4692 7424,4821 7437,4855 7456,4934
 Doldenweg: Bordsteine, Fußgänger	q2 7424,4821 7487,4802
-Kottesteig: Bordsteine, Fußgänger	q1 6868,5262 6820,5237 6806,5230
+Kottesteig: Bordsteine, Fußgänger	q2 6868,5262 6820,5237 6806,5230
 (Zu den Krugwiesen - Vincent-van-Gogh-Str.): Fußgänger	q1 18646,17345 18704,17565
 (Weg durch die Falkenberger Krugwiesen): Fußgänger	q1 18704,17565 18756,17498 18784,17525 18831,17663 18937,17738 18986,17786 19102,17879 19110,18015 19127,18091 19213,18195 19251,18248 19249,18351 19265,18400 19291,18456
 (Falkenberger Krugwiesen - Falkenberger Chaussee): Fußgänger	q1 19213,18195 18969,18448
@@ -1615,6 +1615,8 @@ Prinzengasse: einige Fußgänger	q2 9955,12300 10002,12305
 (Nixenkai - Am Speicher): Fußgänger	q1 15289,10097 15273,10087 15244,10083 15218,10092
 Am Orangeriepark: einige Fußgänger	q1 10271,19361 10281,19364 10330,19384 10321,19410 10389,19438
 (Zur Lübarser Bahn - Märkisches Viertel): einige Fußgänger, Bordstein	q2 6569,22345 6585,22324
+(Paul-Schwarz-Promenade - Dalandweg): einige Fußgänger, Bordstein	q2 5387,4214 5385,4236
+An der Neumark: laut Schild "Schrittgeschwindigkeit"	q2 11283,3774 11300,3709 11357,3720 11378,3626 11332,3615
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schüler	q2 7242,8586 7288,8635
@@ -2017,7 +2019,7 @@ Trützschlerstr.: enge Straße	q1 17471,4570 17612,4460 17748,4349
 (Paster-Behrens-Str. - Hüsung): Fußgänger, hohe Bordsteinkanten	q4 13394,4735 13397,4762
 Stanzer Zeile: enge Straße	q0 6180,376 6130,449 6112,547 6089,643 6066,821 6067,865 6080,1011 6106,1133
 (Uferweg an der Havel): enge Brücke	q1 -2413,18770 -2434,18832 -2460,18918
-Mommsenstr. (Lichterfelde): enge Straße	q1 3583,4011 3356,3860
+Mommsenstr. (Lichterfelde): enge Straße	q1 3583,4011 3361,3860
 Sodtkestr.: enge Straße	q1 12221,15514 12298,15658 12382,15802 12423,15875
 Glauberstr.: viele parkende Autos, daher eng	q1 5556,984 5455,1150 5421,1205 5411,1259
 (Templerzeile - Götzstr.): Parkweg, Fußgänger, teilweise mit Radweg	q1 9681,6180 9683,6199 9695,6336 9719,6492
@@ -2504,7 +2506,7 @@ Am Lehnshof: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 4291,
 Gartenstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 720,2718 835,2715
 Belßstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 7899,2391 7983,2348 7987,2337
 Gotenburger Str.: Einfahrt verboten: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9000,16803 8847,16870
-Fritz-Werner-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9099,2780 9072,2589
+Fritz-Werner-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9102,2780 9076,2594
 Gravensteinstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 12229,22457 12185,22465
 Hauptstr. (Französisch Buchholz): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 12199,22367 12229,22457
 Am Krusenick: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 22751,4970 22652,4966 22667,4912 22705,4874

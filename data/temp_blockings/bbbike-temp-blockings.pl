@@ -1637,7 +1637,7 @@ EOF
        text  => 'Ringstr. (Steglitz) Richtung Finkensteinallee zwischen Drakestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis 12.2005)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4; 3507,3635 3375,3544 3228,3455 3184,3427 3050,3333 3011,3303 2781,3122 2701,3064 2661,3021 2637,2973 2625,2850
+userdel	q4; 3507,3654 3372,3557 3228,3455 3184,3427 3050,3333 3011,3303 2781,3122 2701,3064 2661,3021 2637,2973 2625,2850
 EOF
      },
      { from  => 1110917391, # 2005-03-15 21:09
@@ -6351,7 +6351,7 @@ EOF
        text  => 'L 027 Woltersdorfer Str. Bahnübergang in der OL Casekow Gleisbauarbeiten Vollsperrung 12.10.2006-12.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 63363,90636 63491,90572
+userdel	2::inwork 63329,90655 63491,90572
 EOF
      },
      { from  => 1160949600, # 2006-10-16 00:00
@@ -12904,7 +12904,7 @@ EOF
        text  => 'L 239 Angermünde - Joachimsthal zw. Kerkow und Görlsdorf Erneuerung Deckenbelag Vollsperrung 29.09.2008-08.11.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 45864,72724 46253,72339 46555,72293 46770,72248 47266,71628 48092,70962 48147,70935 48237,70892 48672,70933
+userdel	2::inwork 45864,72724 46253,72339 46555,72293 46770,72248 47266,71628 48093,70968 48162,70928 48237,70892 48672,70933
 EOF
      },
      { from  => 1221948000, # 2008-09-21 00:00
@@ -16968,7 +16968,7 @@ EOF
        text  => 'L 239 Kerkow - Joachimsthal Bahnübergang Kerkow Gleiserneuerung Vollsperrung 06.11.2009, 08.11.2009 und 09.11.2009',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 48237,70892 48147,70935 48092,70962
+userdel	2::inwork 48237,70892 48162,70928 48093,70968
 EOF
      },
      { from  => 1259967600, # 2009-12-05 00:00
@@ -16976,7 +16976,7 @@ EOF
        text  => 'L 239 Kerkow - Joachimsthal Bahnübergang Kerkow Gleiserneuerung Vollsperrung 06.12.2009 und 08.12.2009',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 48237,70892 48147,70935 48092,70962
+userdel	2::inwork 48237,70892 48162,70928 48093,70968
 EOF
      },
      { from  => 1258066800, # 2009-11-13 00:00
@@ -16984,7 +16984,7 @@ EOF
        text  => 'L 239 Kerkow - Joachimsthal Bahnübergang Kerkow Gleiserneuerung Vollsperrung 14.11.2009-15.11.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 48237,70892 48147,70935 48092,70962
+userdel	2::inwork 48237,70892 48162,70928 48093,70968
 EOF
      },
      { from  => 1257202800, # 2009-11-03 00:00
@@ -21557,15 +21557,15 @@ userdel	2::temp 14011,10812 13896,10851
 userdel	2::temp 13886,10939 13856,10864
 EOF
      },
-     { from  => $isodate2epoch->("2016-06-03 13:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-06-04 23:59:59"), 
-       text  => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am 04.06.2016',
+     { from  => $isodate2epoch->("2017-06-30 20:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-07-02 02:00:00"), 
+       text  => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am 30.06.2017 bis 01.07.2017',
        periodic => 1,
        recurrences => [['yearly', days => 3, months => 6]], # kann Anfang Juni oder Anfang Juli oder Ende August passieren
        type  => 'gesperrt',
-       source_id => 'http://www.xhain.info/termine/fiesta-kreutziga.htm',
+       source_id => 'https://www.facebook.com/events/1813020918951796/',
        data  => <<EOF,
-#: tempex: 20160604 T13-T00
+#: tempex: 20170630T2000-20170701T2359
 userdel	2::temp 14161,11930 14285,12190
 EOF
      },
@@ -21625,16 +21625,17 @@ EOF
 userdel	2::temp 3976,11869 3807,11859
 EOF
      },
-     { from  => $isodate2epoch->("2016-06-02 04:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2016-06-06 04:00:00"), #
+     { from  => $isodate2epoch->("2017-06-15 04:00:00"), # ein Tag Vorlauf
+       until => $isodate2epoch->("2017-06-19 04:00:00"), #
        periodic => 1,
        recurrences => [['yearly', days => 2, months => 6]],
-       text  => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, vom 03.06.2016 bis 06.06.2016 früh',
+       text  => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, vom 16.06.2017 bis 19.06.2017 früh',
        type  => 'handicap',
        source_id => 'IM_025248',
        data  => <<EOF,
+#: by: http://www.die-classic-days-berlin.de/programm-2/
 #: note: kann im Juni oder Juli stattfinden
-#: tempex: 20160603T0400-20160606T0400
+#: tempex: 20170616T0400-20170619T0400
 userdel	q4::temp 5475,10808 5341,10756 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435
 EOF
      },
@@ -24236,7 +24237,7 @@ EOF
        source_id => 'IM_024612',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.291488.php
-userdel	q4::inwork 2092,7810 2112,8074 2120,8335 2126,8426
+userdel	q4::inwork 2092,7810 2099,7904 2112,8074 2120,8335 2126,8426
 EOF
      },
      { from  => 1429160400, # 2015-04-16 07:00
@@ -25714,9 +25715,9 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: wann sind die Bauarbeiten beendet?
-#: last_checked: 2017-03-26
+#: last_checked: 2017-05-06
 #: check_frequency: 60d
-userdel	q3::inwork 4564,3457 4800,3391 4862,3363 5022,3318
+userdel	q3::inwork 4564,3457 4800,3391 4862,3363 5018,3320
 EOF
      },
      { from  => 1475964000, # 2016-10-09 00:00

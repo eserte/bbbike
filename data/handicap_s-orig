@@ -19,13 +19,13 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2017-04-28
+#: last_checked: 2017-05-06
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 #: last_checked: 2017-04-30
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2017-04-28
+#: last_checked: 2017-05-04
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 # REMOVED --- Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
@@ -91,9 +91,7 @@ Kommandantenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10330,11422 10136,11529
 #: last_checked: 2017-04-28
 Beuthstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10201,11631 10235,11610 10330,11422
 # 
-#: last_checked: 2017-04-19
-#: next_check: 2017-04-28
-Sebastianstr.: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 10640,11564 10818,11269
+# REMOVED --- #: last_checked: 2017-04-19 --- #: next_check: 2017-04-28 --- Sebastianstr.: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 10640,11564 10818,11269
 # 
 #: last_checked: 2017-04-28
 #: check_frequency: 14d
@@ -102,7 +100,8 @@ Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9935,11566 9949,1147
 # REMOVED --- #: last_checked: 2017-03-14 vvv --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9990,11571 9935,11566 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q2-::inwork 9935,11566 9737,11546 --- #: last_checked ^^^
 # 
 #: osm_watch: note 814191 1
-#: last_checked: 2017-04-07
+#: last_checked: 2017-05-02
+#: check_frequency: 14d
 Alexandrinenstr.: direkter Zugang zur Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q3::inwork 10818,11269 10678,11172
 # 
 # REMOVED --- #: last_checked: 2016-09-30 --- Schützenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10116,11485 9949,11470 --- 
@@ -294,7 +293,7 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 #: source_id: 2147341141
 #: source_id: LMS-BR_r_LMS-BR_93355
 #: XXX laut vmz bis Mitte Mai 2017, laut fritz bis 19. Mai 2017
-#: last_checked: 2017-04-25
+#: last_checked: 2017-05-06
 #: next_check: 2017-05-19
 #: valid: -20170519
 Neuenburger Str.: Bauarbeiten, Sperrung der Fahrbahn	q2::inwork 10178,10411 9955,10501
@@ -524,11 +523,13 @@ Rathausstr.: Fußgänger, Bauarbeiten	q1- 10923,12779 10704,12595
 Dircksenstr.: langsame Straßenbahnen, Fußgänger	q2 10970,12822 10849,12944
 Dircksenstr.: Fußgänger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
 Gontardstr.: langsame Straßenbahnen, Fußgänger	q2 10733,12967 10801,12901 10923,12779
-Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 15778,8990 15623,9028 15527,9096 15513,9144 15453,9259 15432,9322 15304,9464 15186,9550 15052,9584 14909,9649 14889,9660 14807,9704 14635,9786 14500,9863 14467,9887
-Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 14500,9863 14488,9848
-Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 14467,9887 14455,9892 14448,9922
+#: by: http://www.berliner-woche.de/alt-treptow/verkehr/radelverbot-im-park-bleibt-d122937.html
+Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen, Radfahren nicht erlaubt	q3 15778,8990 15623,9028 15527,9096 15513,9144 15453,9259 15432,9322 15304,9464 15186,9550 15052,9584 14909,9649 14889,9660 14807,9704 14635,9786
+Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen, Radfahren nicht erlaubt	q3 14635,9786 14500,9863 14467,9887
+Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen, Radfahren nicht erlaubt	q3 14467,9887 14455,9892 14448,9922
+Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen, Radfahren nicht erlaubt	q3 14488,9848 14500,9863
 (S-Bahnhof - Treptower Hafen): Fußgänger, besonders an schönen Tagen, Radfahren nicht erlaubt	q3 14361,9772 14436,9784 14460,9814 14488,9848
-(S-Bahnhof - Treptower Hafen): Fußgänger, besonders an schönen Tagen	q2 14404,9847 14466,9861 14488,9848
+(S-Bahnhof - Treptower Hafen): Fußgänger, besonders an schönen Tagen, Radfahren nicht erlaubt	q3 14404,9847 14466,9861 14488,9848
 (Uferweg - Puschkinallee): Fußgänger, Radfahren nicht erlaubt	q3 14443,9731 14371,9726 14318,9688
 Treptower Park, am Rosengarten: Fußgänger	q2 14809,9466 14837,9517 14867,9573 14909,9649
 Treptower Park: Fußgänger	q1 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674 14577,9641 14495,9710 14443,9731 14361,9772
@@ -999,7 +1000,7 @@ Am Bahndamm: teilweise enge Stellen, Fußgänger, Radfahren offiziell nicht erlaub
 Am Bahndamm: einige Fußgänger	q1 7769,4315 7795,4242 8016,3651 8106,3410
 Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 #: XXX bleibt es bei dem steilen Abschnitt?
-#: last_checked: 2017-03-26
+#: last_checked: 2017-05-06
 #: check_frequency: 120d
 Teltowkanalpromenade: enge und kurvige Unterführung, steile Abschnitte	q4 4274,2717 4272,2704 4247,2652 4209,2641
 Heinrich-Laehr-Park: Fußgänger	q1 1525,581 1372,1208 1328,1387 1249,1672
@@ -1414,7 +1415,8 @@ Yva-Bogen: Fußgänger	q2 5373,10981 5426,11039 5459,11135
 (Georgenkirchstr. - Mollstr.): Fußgänger	q1 11589,13305 11526,13252
 Kelchstr.: enge Straße	q1 7386,4692 7424,4821 7437,4855 7456,4934
 Doldenweg: Bordsteine, Fußgänger	q2 7424,4821 7487,4802
-Kottesteig: Bordsteine, Fußgänger	q1 6868,5262 6820,5237 6806,5230
+#: XXX_prog: BS am Oehlertring und unten an der Treppe, ansonsten q1
+Kottesteig: Bordsteine, Fußgänger	q2 6868,5262 6820,5237 6806,5230
 (Zu den Krugwiesen - Vincent-van-Gogh-Str.): Fußgänger	q1 18646,17345 18704,17565
 (Weg durch die Falkenberger Krugwiesen): Fußgänger	q1 18704,17565 18756,17498 18784,17525 18831,17663 18937,17738 18986,17786 19102,17879 19110,18015 19127,18091 19213,18195 19251,18248 19249,18351 19265,18400 19291,18456
 (Falkenberger Krugwiesen - Falkenberger Chaussee): Fußgänger	q1 19213,18195 18969,18448
@@ -2494,6 +2496,9 @@ Prinzengasse: einige Fußgänger	q2 9955,12300 10002,12305
 Am Orangeriepark: einige Fußgänger	q1 10271,19361 10281,19364 10330,19384 10321,19410 10389,19438
 #: XXX_prog BS zwischen Damm und Parkplatz (südliches Ende), ansonsten q1
 (Zur Lübarser Bahn - Märkisches Viertel): einige Fußgänger, Bordstein	q2 6569,22345 6585,22324
+#: XXX_prog BS am Dalandweg, ansonsten eigentlich q1 (aber hier gibt's auch gleichzeitig eine Steigung zum Dalandweg hin)
+(Paul-Schwarz-Promenade - Dalandweg): einige Fußgänger, Bordstein	q2 5387,4214 5385,4236
+An der Neumark: laut Schild "Schrittgeschwindigkeit"	q2 11283,3774 11300,3709 11357,3720 11378,3626 11332,3615
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -3178,7 +3183,7 @@ Stanzer Zeile: enge Straße	q0- 6180,376 6130,449 6112,547 6089,643 6066,821 6067
 # 
 #: by: Jörg Schulze:
 #: confirmed_by: Beate (wolter) "Keine gute Straße! Beidseitiges Parken, gerade Platz für Autobreite, am Ende Ausfahrt Parkplatz Reichelt, sehr unübersichtlich"
-Mommsenstr. (Lichterfelde): enge Straße	q1 3583,4011 3356,3860
+Mommsenstr. (Lichterfelde): enge Straße	q1 3583,4011 3361,3860
 # 
 #: by: Niels de Vos:
 Sodtkestr.: enge Straße	q1 12221,15514 12298,15658 12382,15802 12423,15875

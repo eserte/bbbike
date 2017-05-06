@@ -3255,7 +3255,27 @@ userdel	2::temp 6230,8602 6313,8638 6454,8653
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: tempex: 20170630T2000-20170701T2359
+userdel	2::temp 14161,11930 14285,12190
+',
+         'from' => 1498845600,
+         'id' => 2433,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              3,
+                              'months',
+                              6
+                            ]
+                          ],
+         'source_id' => 'https://www.facebook.com/events/1813020918951796/',
+         'text' => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am 30.06.2017 bis 01.07.2017',
+         'type' => 'gesperrt',
+         'until' => 1498953600
+       },
        undef,
        undef,
        {
@@ -3286,7 +3306,29 @@ userdel	2::temp 19976,6087 20064,6290 20106,6357
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.die-classic-days-berlin.de/programm-2/
+#: note: kann im Juni oder Juli stattfinden
+#: tempex: 20170616T0400-20170619T0400
+userdel	q4::temp 5475,10808 5341,10756 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435
+',
+         'from' => 1497492000,
+         'id' => 2439,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              2,
+                              'months',
+                              6
+                            ]
+                          ],
+         'source_id' => 'IM_025248',
+         'text' => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, vom 16.06.2017 bis 19.06.2017 früh',
+         'type' => 'handicap',
+         'until' => 1497837600
+       },
        undef,
        undef,
        undef,
@@ -4064,9 +4106,9 @@ userdel	2::inwork 4778,3352 4815,3382 4822,3431
        },
        {
          'data' => '#: add_fragezeichen: wann sind die Bauarbeiten beendet?
-#: last_checked: 2017-03-26
+#: last_checked: 2017-05-06
 #: check_frequency: 60d
-userdel	q3::inwork 4564,3457 4800,3391 4862,3363 5022,3318
+userdel	q3::inwork 4564,3457 4800,3391 4862,3363 5018,3320
 ',
          'from' => undef,
          'id' => 2832,

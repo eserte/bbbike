@@ -901,8 +901,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3930,17920
 	X 2821,18831
 	X 1840,20761
-	X 9215,3599
-	X 9146,3101
+	X 9222,3602
+	X 9152,3114
 	X 9695,1563
 	X 9858,744
 	X 9346,4144
@@ -1357,7 +1357,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 2966,8586
 	F 2857,8487
 	X 2322,8857
-	X 1585,5136
+	X 1573,5152
 	X 23451,4877
 	F -7787,8517
 	X -8797,7638
@@ -1703,7 +1703,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 7104,3416
 	X 4348,2627
 	X 3456,2835
-	X 3507,3635
+	X 3507,3654
 	X 1080,1637
 	X 85,1322
 	X -541,1883
@@ -1750,7 +1750,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: gilt nicht beim Abbiegen von NO (Gritznerstr.) -> NW (Schildhornstr.)
 	X 4555,6403
 	X 2407,4280
-	X 1861,4564
+	X 1866,4572
 	X 891,3828
 	X 1441,4741
 	X 1746,5922
@@ -2165,7 +2165,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 1945,2127
 #: note: Anforderungsampel
 #: off: weekend (seen 2014-04-27)
-	F 4927,3147
+	F 4924,3148
 	X -3923,13060
 	B -5242,17405
 	F 17130,16032
@@ -2360,7 +2360,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 11001,18528
 # REMOVED (ex nicht?) --- #: by: osm ---	X 11168,18542
 #: by: http://www.panoramio.com/photo/19638043
-	F 3733,3317
+	F 3741,3322
 #: by: http://www.panoramio.com/photo/19637927
 	F 4943,2557
 #: by: http://www.panoramio.com/photo/19637886
@@ -2773,7 +2773,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: Anforderungsampel
 	F 14346,16241
 #: note: Anforderungsampel
-	F 5155,3502
+	F 5150,3507
 # REMOVED --- #: next_check_id: BLANKENBURGER-2014 --- #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/blankenburger_stra__e_konzept_beschilderung_umleitung_3_ta.pdf?download.html --- #: last_checked: 2015-07-19 --- #: next_check: 2015-12-31 --- #: valid: 20140701-20151231 ---	X::inwork 11269,20667
 #: note: Anforderungsampel
 	F 5357,6943
@@ -2810,12 +2810,14 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
 #: source_id: IM_023532 (Gesamtmaßnahme bis Ende Juni 2016) vvv
 #: source_id: 2147339539 vvv
+#: source_id: 2147341264 vvv
 #: last_checked: 2017-03-27 vvv
 #: check_frequency: 90d vvv
 	F::inwork 16909,6628
 	F::inwork 16646,6925
 #: check_frequency ^^^
 #: last_checked ^^^
+#: source_id ^^^
 #: source_id ^^^
 #: source_id ^^^
 #: by: ^^^
@@ -3254,7 +3256,7 @@ UBB, halbstündlich	B 51270,179246
 	B 46718,60855
 	B 48516,64085
 	B 42250,115925
-	B 48147,70935
+	B 48162,70928
 	B 2641,62092
 	B -8016,54305
 	B -34333,-26828
@@ -3301,7 +3303,7 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	B 63246,76081
 	B 65412,75698
 	B 68641,74483
-	B 63363,90636
+	B 63329,90655
 #: by: Tomislav:
 	Zbr 35066,4548
 	B 25269,-4041
@@ -3319,9 +3321,7 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 #: note: Luftbild
 	B 66499,93857
 #: note: Luftbild
-	B 80941,110470
-#: note: Luftbild
-	B 78844,105446
+	B 78847,105423
 	B -16849,-5673
 #: note: Luftbild
 	B 75394,-6991
@@ -3355,7 +3355,7 @@ S-Bahn ca. alle 10 Minuten	B 10865,-4464
 	B 41168,186115
 	B 64421,117480
 #: note: Luftbild
-	B 63034,90338
+	B 63028,90343
 	B 30815,13170
 #: note: Luftbild
 	B 34183,13746
@@ -3567,6 +3567,10 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	B 38018,49083
 	B 73989,26589
 	B 11764,27363
+	B 82457,111639
+	B 80956,110467
+	B 81471,111198
+	B 74437,102167
 # 
 #: note: ^^^
 ################################################################################
