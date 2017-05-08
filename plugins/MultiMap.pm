@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.26;
+$VERSION = 1.27;
 
 use vars qw(%images);
 
@@ -66,6 +66,12 @@ sub register {
 	  ($images{Geofabrik} ? (icon => $images{Geofabrik}) : ()),
 	};
     if ($map_compare_use_bbbike_org) {
+	$main::info_plugins{__PACKAGE__ . "_MapCompare_Different_Data"} =
+	    { name => "Map Compare (different data)",
+	      callback => sub { showmap_mapcompare(@_, profile => "__different_data") },
+	      callback_3_std => sub { showmap_url_mapcompare(@_, profile => "__different_data") },
+	      ($images{Geofabrik} ? (icon => $images{Geofabrik}) : ()),
+	    };
 	$main::info_plugins{__PACKAGE__ . "_MapCompare_BBBike"} =
 	    { name => "Map Compare (profile BBBike)",
 	      callback => sub { showmap_mapcompare(@_, profile => "bbbike") },
@@ -502,17 +508,26 @@ sub showmap_url_mapcompare {
     if ($map_compare_use_bbbike_org) {
 	$scale = 18 if $scale > 18;
     }
-    my $map0 = $map_compare_use_bbbike_org ? 'google-hybrid' : 'googlehybrid';
-    #my $map1 = 'tah';
-    my $map1 = 'mapnik';
-    #my $map1 = 'cyclemap';
-    my $common_qs = sprintf 'mt0=%s&mt1=%s&lat=%s&lon=%s&zoom=%d',
-	$map0, $map1, $py, $px, $scale;
-    if ($profile) {
-	$common_qs .= "&profile=$profile";
+    my $common_qs;
+    if ($profile && $profile eq '__different_data') {
+	$common_qs = 'num=10&mt0=bvg&mt1=bbbike-bbbike&mt2=mapnik&mt3=esri&mt4=falk-base&mt5=google-map&mt6=nokia-map&mt7=lgb-topo-10&mt8=pharus&mt9=tomtom-basic-main';
+    } else{
+	my $map0 = $map_compare_use_bbbike_org ? 'google-hybrid' : 'googlehybrid';
+	#my $map1 = 'tah';
+	my $map1 = 'mapnik';
+	#my $map1 = 'cyclemap';
+	if ($profile) {
+	    $common_qs = "profile=$profile";
+	} else {
+	    $common_qs = sprintf 'mt0=%s&mt1=%s', $map0, $map1;
+	    if ($map_compare_use_bbbike_org) {
+		$common_qs .= '&num=2';
+	    }
+	}
     }
+    $common_qs .= sprintf '&lat=%s&lon=%s&zoom=%d', $py, $px, $scale;
     if ($map_compare_use_bbbike_org) {
-	'http://mc.bbbike.org/mc/?num=2&' . $common_qs;
+	'http://mc.bbbike.org/mc/?' . $common_qs;
     } else {
 	'http://tools.geofabrik.de/mc/?' . $common_qs;
     }
