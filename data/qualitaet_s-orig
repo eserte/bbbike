@@ -240,7 +240,7 @@ Lohmühlenbrücke: Asphalt	Q0 12871,9356 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2017-04-17
+#: last_checked: 2017-05-08
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15021,11152 15102,11120
@@ -395,7 +395,7 @@ Fürstenberger Str.: Kopfsteinpflaster	Q2 10320,14608 10472,14632
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 Kiehlufer: Kopfsteinpflaster	Q2 13745,8448 13575,8593 13402,8741 13311,8813
 Kiehlufer: Asphalt	Q0 13311,8813 13225,8880
-Kiehlufer: Kopfsteinpflaster	Q2 13225,8880 13078,8992 12950,9132 12897,9365
+Kiehlufer: Kopfsteinpflaster	Q2- 13225,8880 13078,8992 12950,9132 12897,9365
 Spreewaldplatz: Kopfsteinpflaster, OK	Q1 12243,10274 12292,10374 12274,10436
 Spreewaldplatz: Kopfsteinpflaster, OK	Q1 12341,10218 12292,10374
 Am Nordhafen: Kopfsteinpflaster	Q2 7741,14560 7518,14689
@@ -467,8 +467,8 @@ Mittelweg: Kopfsteinpflaster	Q3 12176,7811 12224,7799 12335,7770
 #: note: vielleicht sogar Q1+? vvv
 #: XXX hier wird die Fahrbahn ausgebessert (2017), später (2018-2022) Radfahrstreifen oder "Protected Bike-Lane"
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017)
-#: last_checked: 2017-03-27
-#: check_frequency: 30d
+#: last_checked: 2017-05-08
+#: check_frequency: 60d
 Karl-Marx-Str.: Asphalt mit Schäden	Q0- 11831,8989 11880,8955 11998,8872 12063,8826 12156,8760 12330,8636
 Karl-Marx-Str.: Asphalt mit Schäden	Q0- 12330,8636 12500,8504
 #: note ^^^
@@ -1710,9 +1710,9 @@ südliches Spreeufer: glattes Pflaster	Q1 7745,12603 7782,12623 7934,12734 8006,1
 Glasbläserallee: Verbundsteinpflaster	Q0- 14747,10108 14835,10272 14888,10385
 Bootsbauerstr.: Verbundsteinpflaster	Q0- 15134,10243 15090,10140 15024,9994
 Fischzug: Asphalt	Q0 14835,10272 14920,10225 14993,10188 15050,10160 15090,10140 15148,10111
-Fischzug: Kopfsteinpflaster, teilweise auch Verbundsteinpflaster	Q2 15148,10111 15208,10077
-Am Speicher: Kopfsteinpflaster	Q2 15208,10077 15218,10092 15253,10171
-Palmkernzeile: Verbundsteinpflaster	Q0 15100,9831 15142,9931 15208,10077
+Fischzug: Kopfsteinpflaster, teilweise auch Verbundsteinpflaster	Q2 15148,10111 15170,10100 15210,10080
+Am Speicher: Kopfsteinpflaster	Q2 15210,10080 15216,10093 15253,10171
+Palmkernzeile: Verbundsteinpflaster	Q0- 15088,9842 15142,9931 15210,10080
 Friedrich-Junge-Str.: Asphalt	Q0 15020,9875 15071,9967 15148,10111 15165,10144
 Friedrich-Junge-Str.: Verbundsteinpflaster	Q0 15165,10144 15199,10211
 Schinkestr.: Kopfsteinpflaster	Q2 11623,9841 11734,9856 11880,9874
@@ -2004,8 +2004,8 @@ Brommystr.: Kopfsteinpflaster	Q2 12521,11016 12582,11103
 (Uferweg): Parkweg	Q1 15626,9710 15621,9704 15659,9647 15708,9607 15739,9583 15749,9558
 (Uferweg): glatt gepflastert	Q0 15749,9558 15819,9430
 (Uferweg): Parkweg	Q1 15819,9430 15813,9378 15793,9334
-(Fischzug - Uferweg): Holzbohlenweg	Q1 15208,10077 15260,10048
-(Strela-Park): Parkweg	Q1 15400,9742 15465,9860
+# REMOVED --- (Fischzug - Uferweg): Holzbohlenweg	Q1 15210,10080 15260,10048
+(Strela-Platz): Parkweg	Q1 15400,9742 15465,9860
 #: confirmed_by: anonymous (for Fischerhüttenstr. und Beerenstr., "zeimlich schlecht", but q1?)
 Busseallee: Kopfsteinpflaster	Q2 161,3062 71,3179
 #: note: public imagery
@@ -2674,7 +2674,7 @@ Mauerweg Lichterfelde: sehr guter Asphalt	Q0 4038,-362 4046,-299 4034,-255 3982,
 Mauerweg Lichterfelde: Asphalt mit Fugen	Q1 4038,-362 4406,-910
 Alexanderufer: Asphalt	Q0 8315,13042 8315,13181 8314,13323
 Alexanderufer: Asphalt	Q0 8314,13323 8356,13404 8365,13431 8362,13466 8354,13523 8332,13548
-Koppenstr.: Asphalt	Q0 12525,12151 12575,12223 12596,12472 12632,12630
+Koppenstr.: Asphalt	Q0 12532,12150 12573,12227 12596,12472 12632,12630
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/de/bild_tvo_april_2007_2.shtml
 (Weg unterhalb der Spindlersfelder Str.): Verbundsteinpflaster	Q0- 21108,4725 21130,4596 21130,4420 21139,4293 21146,4229 21170,4111 21260,3848 21310,3762 21325,3715 21324,3691
 #: by: http://www.reinickendorf.de/index_7745_de.html
@@ -10330,7 +10330,7 @@ Hauptstr. (Französisch Buchholz): Kleinsteinpflaster	Q1- 12229,22457 12199,22367
 (Weg im Schloßpark Buch): Asphalt mit Schäden	Q1 16481,25671 16441,25664 16384,25692
 (Weg im Schloßpark Buch): Asphalt	Q0 16384,25692 16339,25690 16265,25718 16251,25733
 (Uferpromenade am Humboldthafen): glattes Pflaster	Q0- 8257,13037 8242,13067 8242,13183 8315,13181
-(Nixenkai - Am Speicher): Parkweg	Q1 15289,10097 15273,10087 15244,10083 15218,10092
+(Nixenkai - Am Speicher): Parkweg	Q1 15289,10097 15273,10087 15244,10083 15216,10093
 Am Orangeriepark: Betonplatten	Q0 10271,19361 10281,19364 10330,19384 10321,19410 10389,19438
 (Nordgraben, südliches Ufer): unbefestigte Straße	Q2+ 7630,20698 7818,20749 7966,20787 8092,20817
 Zur Lübarser Bahn: schlechtes Kopfsteinpflaster	Q3+ 6406,22550 6569,22345
@@ -13974,7 +13974,7 @@ Johannes-Niemeyer-Weg: Asphalt	Q0 -7931,-2146 -7878,-2164 -7831,-2230 -7780,-227
 Salmbacher Str.: Asphalt	Q0 11139,1145 11250,1189 11393,1243 11523,1292 11643,1338 11756,1381 11922,1445 11991,1471
 # 
 #: by: Nicola: vvv
-Geßlerstr.: Asphalt	Q0 8006,8883 7970,8886 7791,8882
+Geßlerstr.: Asphalt	Q0 8006,8887 7973,8886 7791,8882
 Brunhildstr.: grobes Kopfsteinpflaster	Q3 7790,8913 7707,8915 7604,8927
 #: by: ^^^
 # 
@@ -24514,7 +24514,7 @@ Am Festungsgraben: Kopfsteinpflaster	Q2 9845,12506 9764,12492
 (Eichhornstr. - Reichpietschufer): Kopfsteinpflaster, Gehweg OK	Q2 8232,11414 8205,11401 8184,11160
 Kuppenheimerstr.: Schotterweg	Q1 5820,8117 5824,8035
 (Herkulesufer - Von-der-Heydtstr.): Kleinpflaster	Q2 7140,11156 7115,11220
-(Geßlerstr. - Monumentenstr.): Verbundsteinpflaster	Q1 7970,8886 7964,9060 8009,9063
+(Geßlerstr. - Monumentenstr.): Verbundsteinpflaster	Q1 7973,8886 7970,9061 8009,9063
 (Geßlerstr. - Monumentenstr.): Asphalt	Q0 8009,9063 8014,9126
 # REMOVED --- (Am Lokdepot): schlechtes Kopfsteinpflaster	Q3+ 8405,8994 8409,8904 8390,8879
 Fritz-Reuter-Str. (Schöneberg): Kopfsteinpflaster	Q2 6621,8221 6779,8279
@@ -25174,8 +25174,8 @@ Ostender Str.: Kopfsteinpflaster	Q2 6474,15278 6640,15421
 Ostender Str.: Asphalt	Q0 6640,15421 6794,15553
 Ostender Str.: Kopfsteinpflaster	Q2 6794,15553 6862,15615 6919,15666 7024,15810
 (Zufahrt Str. d. Pariser Kommune): Asphalt	Q0 12577,11804 12617,11888
-(Zufahrt Str. d. Pariser Kommune): Beton	Q1+ 12617,11888 12651,11952
-(Zufahrt Franz-Mehring-Platz): Beton	Q1+ 12651,11952 12691,12042 12735,12131
+(Zufahrt Str. d. Pariser Kommune): Beton	Q1+ 12617,11888 12648,11953
+(Zufahrt Franz-Mehring-Platz): Beton	Q1+ 12648,11953 12691,12042 12735,12131
 Mehlbeerenweg: Asphalt	Q0 11993,11978 11940,11982 11909,11985
 Mehlbeerenweg: schlechter Asphalt und Sand	Q3 11940,11982 11923,11881 11916,11846
 #: corrected_by: srt (Q2 -> Q1)

@@ -3330,7 +3330,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_81917',
        data  => <<EOF,
-userdel	2 8443,10777 8430,10710
+userdel	2 8443,10780 8430,10710
 EOF
      },
      { from  => 1131534000, # 2005-11-09 12:00
@@ -13455,7 +13455,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_011637',
        data  => <<EOF,
-userdel	q4::inwork; 8476,10884 8443,10777
+userdel	q4::inwork; 8476,10884 8443,10780
 EOF
      },
      { from  => 1244065177, # 2009-06-03 23:39
@@ -20878,7 +20878,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_019090',
        data  => <<EOF,
-userdel	q4::inwork 8443,10777 8430,10710
+userdel	q4::inwork 8443,10780 8430,10710
 EOF
      },
      { from  => 1343706240, # 2012-07-31 05:44
@@ -23446,7 +23446,7 @@ EOF
        text  => 'Koppenstr.: zwischen Rüdersdorfer Str. und Karl-Marx-Allee Bauarbeiten, Fahrbahn Richtung Norden gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q3::inwork; 12575,12223 12596,12472
+userdel	q3::inwork; 12573,12227 12596,12472
 EOF
      },
      { from  => 1408476026, # 2014-08-19 21:20
@@ -24438,7 +24438,7 @@ EOF
        data  => <<EOF,
 #: XXX bis wann geht die Baustelle?
 #: last_checked: 2015-07-03
-userdel	q3::inwork 12295,12197 12525,12151
+userdel	q3::inwork 12295,12197 12532,12150
 EOF
      },
      { from  => $isodate2epoch->("2017-02-09 06:00:00"), # ein Tag Vorlauf

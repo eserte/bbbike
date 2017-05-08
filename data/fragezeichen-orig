@@ -87,7 +87,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 #: XXX Baumaßnahme 2.29 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5957 (Realisierung anscheinend ungewiss)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7877
-#: last_checked: 2017-03-27
+#: last_checked: 2017-05-08
 #: check_frequency: 180d
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
@@ -1026,12 +1026,12 @@ Friedelstr.: Asphaltierung	?::projected 12085,9778 12074,9689 12066,9558 12047,9
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="13"
-#: last_checked: 2017-04-27
+#: last_checked: 2017-05-08
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2018-2022)
-#: last_checked: 2017-03-27
+#: last_checked: 2017-05-08
 #: next_check: 2018-09-01
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12753,8187 12714,8249 12689,8289 12639,8344 12598,8390 12582,8408 12562,8432 12540,8458 12500,8504 12330,8636
 # 
@@ -1175,7 +1175,7 @@ Innstr.: hier wird ein Asphaltstreifen entstehen, vielleicht auch der Zugang zum
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017)
-#: last_checked: 2017-04-27
+#: last_checked: 2017-05-08
 #: check_frequency: 100d
 Weigandufer (und Pflügerstr.?): Fahrradstraße geplant	?::projected 13939,8228 13875,8282 13716,8410 13641,8470 13539,8552 13450,8625 13366,8694 13191,8838 13048,8956 12907,9073 12761,9190 12620,9293 12480,9394
 # 
@@ -1614,6 +1614,9 @@ B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX ... und dann einzeichnen
+Heinrichplatz: Geokoordinaten sammeln	? 11690,10541 11707,10495 11756,10514 11732,10561 11690,10541
+# 
 Treptower Park: Radfahrverbot prüfen	? 15591,8848 15608,8882 15617,8924 15623,8949 15630,8979 15633,9007 15623,9028
 Treptower Park: Radfahrverbot prüfen	? 15453,9259 15325,9354 15268,9374 15184,9373 15133,9396 15025,9461 14918,9545 14867,9573 14792,9599 14695,9587 14627,9609 14577,9641 14495,9710 14443,9731 14361,9772
 # 
@@ -1633,12 +1636,9 @@ Alt-Friedrichsfelde - Weißenhöher Str.: wie sieht die Situation hier aus? Existi
 #: XXX während der Bauarbeiten wird ein Zweirichtungsradweg erstellt --- Zeitverlust?
 #: XXX Abschluss der Arbeiten: Juli 2017
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.586635.php
-#: next_check: 2017-05-03
+#: last_checked: 2017-05-05
+#: check_frequency: 7d
 Möllendorffstr.: Radspur Richtung Süden entsteht	?; 15420,12178 15361,12071
-# 
-#: XXX nach den Bauarbeiten wird die Straße zur Einbahnstraße. Auch für Radfahrer? Ende der Bauarbeiten: Oktober 2017
-#: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.586667.php
-Kiehlufer: gibt es während der Bauarbeiten Einschränkungen?	? 12897,9365 12950,9132
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.580100.php
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.587472.php (Baustart Anfang Juni 2017)
@@ -1699,7 +1699,8 @@ An der Wuhlheide: werden hier Schutzstreifen entstehen?	? 18492,6893 18404,6946 
 # 
 #: by: http://www.berlin.de/ba-neukoelln/_assets/dokumente/ba-beschluesse/ba-beschluss-206-16.pdf
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017)
-#: last_checked: 2017-04-06
+#: last_checked: 2017-05-08
+#: check_frequency: 60d
 Weserstr.: Fahrradstraße wird eingerichtet	? 11888,9189 12005,9211 12074,9217 12148,9209
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/15-11-2016_mehr-fahrradstrassen-fuer-pankow.pdf
@@ -1943,14 +1944,14 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 #: last_checked: 2017-04-29 vvv
 #: check_frequency: 14d vvv
 #: priority: #C vvv
-#: osm_watch: note 824350 2
+#: osm_watch: note 824350 1
 Sebastian/Luckauer: Zebrastreifen in Bau	?::inwork 11113,10943 11109,10935
 #: priority ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: check_frequency: 14d
-#: osm_watch: note 851907 1
+#: osm_watch: note 851907 2
 #: last_checked: 2017-04-24
 Oranienplatz: Zebrastreifen in Bau	?::inwork 11233,10672 11258,10682 11262,10655
 # 
@@ -2602,7 +2603,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2017-05-02
+#: last_checked: 2017-05-08
 #: check_frequency: 90d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # REMOVED (->handicap) --- Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10678,11172 10818,11269
@@ -2837,15 +2838,16 @@ An der Neumark: weitere Abschnitte der Straße, Hausnummern hier 5-93	?::inwork 1
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/artikel.515731.php
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/downloads/xxi-44-b-planentwurf.pdf
 #: XXX Bebauungsplan XXI-24
-#: XXX wird bis 2017 realisiert; mit Bahnübergang
+#: XXX Stand Mai 2014: Fertigstellung bis Anfang 2017 (ist mittlerweile nicht realistisch)
+#: XXX mit Bahnübergang
 #: XXX evtl. wird es am Pyramidenring einen neuen Kreisverkehr geben
-#: next_check: 2017-05-01
+#: next_check: 2018-04-01
 Verbindung zwischen Beilsteiner Str. und Pyramidenring: genaue Lage, Qualität, Straßenname?	?::projected 18859,14048 18804,14239 18710,14212
 # 
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/artikel.442576.php
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/downloads/xxi-24_b-planentwurf_blatt_1.pdf
 #: osm_watch: way id="294559915" version="2"
-#: next_check: 2017-05-01
+#: next_check: 2018-04-01
 Planstraße am Pyramidenring: eine Straße existiert hier bereits, ändert sich durch den Bebauungsplan etwas?	?::projected 18889,14403 18666,14350 18710,14212
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6562 vvv
@@ -3283,8 +3285,8 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: XXX siehe auch Bebauungsplan 10-72-1 VE
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/artikel.344234.php
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/downloads/anlage-2-vorhabenbezogener-bebauungsplan.pdf
-#: osm_watch: way id="375159766" version="3"
-#: next_check: 2017-06-01
+#: XXX laut osm steht hier schon eine Ampel
+#: next_check: 2017-05-08
 Alt-Mahlsdorf: entsteht hier eine Ampel? Wird sie für Radfahrer relevant sein?	? 25303,11202 25313,11184 25322,11169
 # 
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf

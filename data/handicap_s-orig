@@ -19,7 +19,7 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraﬂe wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2017-05-06
+#: last_checked: 2017-05-08
 Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 #: last_checked: 2017-04-30
@@ -88,7 +88,7 @@ Schloﬂplatz: Engstelle wegen Bauarbeiten	q3::inwork 10285,12306 10357,12356
 Kommandantenstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10330,11422 10136,11529
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3339&mt=0&zoom=16 (Projektabschluss: 2017-03-31)
-#: last_checked: 2017-04-28
+#: last_checked: 2017-05-08
 Beuthstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10201,11631 10235,11610 10330,11422
 # 
 # REMOVED --- #: last_checked: 2017-04-19 --- #: next_check: 2017-04-28 --- Sebastianstr.: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 10640,11564 10818,11269
@@ -100,8 +100,8 @@ Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9935,11566 9949,1147
 # REMOVED --- #: last_checked: 2017-03-14 vvv --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9990,11571 9935,11566 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q2-::inwork 9935,11566 9737,11546 --- #: last_checked ^^^
 # 
 #: osm_watch: note 814191 1
-#: last_checked: 2017-05-02
-#: check_frequency: 14d
+#: last_checked: 2017-05-08
+#: check_frequency: 7d
 Alexandrinenstr.: direkter Zugang zur Sebastianstr. nicht mehr mˆglich, stattdessen Trampelpfad benutzen, Bordsteine	q3::inwork 10818,11269 10678,11172
 # 
 # REMOVED --- #: last_checked: 2016-09-30 --- Sch¸tzenstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10116,11485 9949,11470 --- 
@@ -121,10 +121,12 @@ Alexandrinenstr.: direkter Zugang zur Sebastianstr. nicht mehr mˆglich, stattdes
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
 # REMOVED --- #: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualit‰t -> qualitaet_s-orig-Eintrag revidieren --- #: last_checked: 2013-11-21 --- Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2017-04-28 vvv
+#: last_checked: 2017-05-08 vvv
 #: check_frequency: 90d vvv
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9984,12426 9996,12401 10058,12290
 Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 10008,12274 10058,12290
+#: XXX_prog: sp‰ter den richtigen Eintrag re-aktivieren, siehe weiter unten
+Prinzengasse: einige Fuﬂg‰nger, parkende Autos	q3::inwork 9955,12300 10002,12305
 #: check_frequency ^^^
 #: last_checked ^^^
 # REMOVED --- Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q4::inwork 9996,12401 9994,12368 9943,12364
@@ -210,7 +212,7 @@ Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse
 # 
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
-#: last_checked: 2017-04-28
+#: last_checked: 2017-05-08
 #: check_frequency: 90d
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # 
@@ -224,7 +226,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2017-04-28
+#: last_checked: 2017-05-08
 Werdersche Rosenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9883,12251 9959,12281
 # 
 #: next_check_id: OBERWALL-2014
@@ -335,6 +337,12 @@ Neuenburger Str.: Bauarbeiten, Sperrung der Fahrbahn	q2::inwork 10178,10411 9955
 # REMOVED (scheint in beide Richtungen befahrbar zu sein) --- #: last_checked: 2012-09-22 --- #: next_check: 2012-10-15 --- #: by: IM_008926 --- #: XXX wahrscheinlich bis Ende Oktober 2012 --- #: XXX wahrscheinlich wird es teilweise oder sogar komplett Radspuren geben --- Kantstr.: Bauarbeiten am Zoofenster, Fahrbahn Richtung Westen gesperrt	q2::inwork; 5652,11004 5613,10963 5488,10978
 # 
 ### Neukˆlln ###
+# 
+#: XXX nach den Bauarbeiten wird die Straﬂe zur Einbahnstraﬂe. Auch f¸r Radfahrer? Ende der Bauarbeiten: Oktober 2017
+#: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.586667.php
+#: last_checked: 2017-05-08
+#: next_check: 2017-10-01
+Kiehlufer: Bauarbeiten, Fahrbahn gesperrt, Bordsteine beim Ausweichen auf dem Gehweg	q3::inwork 12897,9365 12950,9132
 # 
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 7d vvv --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12761,9190 12851,9309 12844,9351 --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12907,9073 12761,9190 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
@@ -919,14 +927,14 @@ Gerlachsheimer Weg: Fuﬂg‰nger	q2 13151,7914 13240,7966
 Jan-Hus-Weg/Kirchgasse: Fuﬂg‰nger	q2 13085,7904 13117,7939 13151,7914
 Wanzlikpfad: eng und kurvig, Fuﬂg‰nger	q3 13268,7801 13309,7911
 (Tunnelstr. - Uferweg): Fuﬂg‰nger	q1 15662,9501 15749,9558
-(Fischzug - Uferweg): Spielplatz, zwei Schwinggitter	q4 15208,10077 15260,10048
+# REMOVED --- (Fischzug - Uferweg): Spielplatz, zwei Schwinggitter	q4 15210,10080 15260,10048
 (Alt-Stralau - Spreeufer): Fuﬂg‰nger, Radfahren erlaubt	q1 14652,10201 14569,10055
 (Spreeufer): Fuﬂg‰nger, Radfahren erlaubt	q1 14569,10055 14599,10039 14776,9949 15000,9820
 Caroline-T¸bbecke-Ufer: Fuﬂg‰nger, Radfahren erlaubt	q1 15000,9820 15043,9790 15367,9691
 # REMOVED (Einschr‰nkung existiert nicht mehr) --- Caroline-T¸bbecke-Ufer: Fuﬂg‰nger, sehr eng, Radfahren erlaubt	q3
 (Wendenwiese): Fuﬂg‰nger, Radfahren erlaubt	q1 15367,9691 15399,9679 15466,9633 15497,9644 15498,9681 15505,9688
 (Alt-Stralau - Spreeufer): Fuﬂg‰nger, Radfahren erlaubt, kurze Rampe	q2 15020,9875 15000,9820
-(Strela-Park): Fuﬂg‰nger	q1 15400,9742 15465,9860
+(Strela-Platz): Fuﬂg‰nger	q1 15400,9742 15465,9860
 Hildburghauser Str.: Bahnunterf¸hrung f¸r Fuﬂg‰nger und Radfahrer	q1 4595,1387 4514,1402
 (zur Pfaueninself‰hre): an schˆnen Tagen viele Fuﬂg‰nger	q3 -8540,2209 -8561,2236 -8564,2276
 (Unterf¸hrung am S-Bhf. Kaulsdorf): Fuﬂg‰nger	q3 22857,12014 22859,12059
@@ -2486,13 +2494,13 @@ entlang der Straﬂenbahn: einige Fuﬂg‰nger	q1 17486,17266 17790,17126 17861,17099
 Schulstr. (Lankwitz): Fuﬂg‰nger	q3 6692,3334 6653,3297 6647,3292
 (Biesheimring - Lutterbacher Str.): einige Fuﬂg‰nger	q1 2048,3062 2066,3072
 (Biesheimring - Lutterbacher Str.): einige Fuﬂg‰nger	q1 1987,3166 1999,3177
-#: note: relativ kurz, deshalb q2
-Prinzengasse: einige Fuﬂg‰nger	q2 9955,12300 10002,12305
+##: note: relativ kurz, deshalb q2
+#Prinzengasse: einige Fuﬂg‰nger	q2 9955,12300 10002,12305
 (Weg im Schloﬂpark Buch): Fuﬂg‰nger	q1 16593,25640 16583,25667 16558,25688 16481,25671 16441,25664 16384,25692 16339,25690 16265,25718 16251,25733
 (Uferpromenade am Humboldthafen): einige Fuﬂg‰nger	q1 8257,13037 8242,13067 8242,13183 8315,13181
 #: XXX_prog BS an der Hauptstr., ansonsten entfernen
 (Hauptstr. - Rummelsburger Ufer): flacher Bordstein	q2 15334,10528 15322,10513
-(Nixenkai - Am Speicher): Fuﬂg‰nger	q1 15289,10097 15273,10087 15244,10083 15218,10092
+(Nixenkai - Am Speicher): Fuﬂg‰nger	q1 15289,10097 15273,10087 15244,10083 15216,10093
 Am Orangeriepark: einige Fuﬂg‰nger	q1 10271,19361 10281,19364 10330,19384 10321,19410 10389,19438
 #: XXX_prog BS zwischen Damm und Parkplatz (s¸dliches Ende), ansonsten q1
 (Zur L¸barser Bahn - M‰rkisches Viertel): einige Fuﬂg‰nger, Bordstein	q2 6569,22345 6585,22324
@@ -2848,7 +2856,7 @@ Voxstr.: Fuﬂg‰nger	q3 8309,11390 8375,11368
 # REMOVED (mittlerweile mit Absenkungen) --- #: XXX_prog: BS zur Rosenheimer Str., ansonsten q1
 Alice-Salomon-Park: Fuﬂg‰nger, Umfahrung an der Rosenheimer Str.	q1 6851,9365 6771,9458 6727,9497
 Alice-Salomon-Park: Fuﬂg‰nger	q1 6771,9458 6728,9457
-(Geﬂlerstr. - Monumentenstr.): Fuﬂg‰nger, Kinder	q2 7970,8886 7964,9060 8009,9063
+(Geﬂlerstr. - Monumentenstr.): Fuﬂg‰nger, Kinder	q2 7973,8886 7970,9061 8009,9063
 (Loewenhardtdamm - Hˆhndorfstr.): Fuﬂg‰nger, Bordsteine, Schranken	q2 8334,8655 8438,8676
 (Weg d. Kol. Papestr.): Fuﬂg‰nger	q1 8215,8631 8259,8628 8265,8305
 (zum Bayernring): Fuﬂg‰nger	q1 8454,8574 8531,8404

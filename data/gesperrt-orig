@@ -13,7 +13,7 @@ Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9145,10290 8804
 Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8336,10829 8205,10979 8104,11037 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034
 Kanalstraßen Nordufer	1 6880,11110 7115,11220 7160,11225 7253,11208 7322,11177 7419,11137 7492,11111 7595,11086 7690,11108 7828,11133 8000,11137 8102,11099 8241,11024
 # Hier zwischen kann ein kurzes Stück auf dem Gehweg überbrückt werden
-Kanalstraßen Nordufer	1 8241,11024 8261,11015 8342,10916 8380,10865 8443,10777 8581,10663 8701,10428 8771,10381 8824,10366 8953,10366 9028,10371 9154,10348 9239,10313 9404,10250 9492,10226 9593,10238 9873,10285
+Kanalstraßen Nordufer	1 8241,11024 8261,11015 8342,10916 8378,10858 8390,10835 8443,10780 8541,10714 8581,10663 8701,10428 8771,10381 8824,10366 8953,10366 9028,10371 9154,10348 9239,10313 9404,10250 9492,10226 9593,10238 9873,10285
 Gitschiner Str.	1 9873,10285 9948,10280
 Gitschiner Str.	1 9948,10280 9865,10227
 Skalitzer Str.	1 12978,10581 12899,10595
@@ -314,7 +314,7 @@ Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 #: last_checked: 2017-03-04
 #: check_frequency: 60d
 Gustav-Müller-Str.	1 7643,8634 7642,8815
-Gustav-Müller-Platz	1 7644,8560 7614,8599 7643,8634 7682,8598 7644,8560
+Gustav-Müller-Platz	1 7644,8560 7606,8598 7643,8634 7682,8598 7644,8560
 # REMOVED (Einbahnstraßenregelung ist hier zweifelhaft) --- #: XXX Wird die Einbahnstraßenregelung hier aufgehoben? --- #: last_checked: 2012-03-06 --- #: next_check: 2012-04-20 --- Niederlagstr.	1:q3 9972,12184 9961,12273
 # REMOVED (wie sieht's nach den Bauarbeiten aus?) --- Niederlagstr.	1 9943,12364 9934,12420
 Kolk/Behnitz	1 -3042,14682 -3025,14644 -2950,14624 -2944,14652 -2942,14666
@@ -706,7 +706,7 @@ Kaulsdorfer Str.	1 22075,6967 22049,7085
 Steinträgerweg	1 12987,2220 13023,2093
 #: by: anonymous and osm
 Am Kurzen Weg	1 -7180,14351 -7172,14459 -7185,14574
-Straßenbahnwendestelle Virchowstr.	1 12925,13373 13081,13457
+Straßenbahnwendestelle Virchowstr.	1 13081,13457 12925,13373
 Am Friedrichshain	1 12065,13851 12104,13913 12147,13887 12106,13828
 Potsdamer Chausee: explizit für Radfahrer verboten	1 -8797,7638 -8405,7751
 #: by: Maria Hach
@@ -2759,6 +2759,11 @@ Drängelgitter	BNP:3 31665,48997
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: SCHINKELPLATZ-2014
+#: last_checked: 2017-05-08
+#: check_frequency: 90d
+Schinkelplatz: Einbahnstraße	1s:q3 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
+# 
 #: next_check_id: RATHAUSWEDDING-2017
 #: last_checked: 2017-05-01
 #: check_frequency: 60d
@@ -2785,8 +2790,8 @@ Voltairestr.: Baustelle, Fahrtrichtung gesperrt	1s:q3 11329,12497 11209,12430
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt	1s:q3 5192,10234 5196,10398
 # 
 #: source_id: 2147341003 (Bauarbeiten in der angrenzenden Modersohnstr.)
-#: last_checked: 2017-05-06
-Werkstraße: Zufahrt zur DB-Werkstraße ist wegen Bauarbeiten gesperrt	2::inwork 14043,10928 14107,10911
+#: last_checked: 2017-05-08
+DB-Werkstraße: Zufahrt zur DB-Werkstraße ist wegen Bauarbeiten gesperrt	2::inwork 14043,10928 14107,10911
 # 
 #: XXX laut fritz bis 30. September 2017
 #: by: http://www.dafmap.de/d/berlin.html?id=5031&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-12-31)
@@ -2807,15 +2812,15 @@ Zillestr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen	1s:q3 3807
 # 
 #: osm_watch: way id="466318949" version="1"
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
-#: last_checked: 2017-04-20
+#: last_checked: 2017-05-08
 Bouchéstr.: Baustelle, Einbahnstraßenregelung	1s:q3 13190,9139 13298,9252
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
-#: last_checked: 2017-04-20
+#: last_checked: 2017-05-08
 Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:q3 13176,9302 13100,9210
 # 
 #: next_check_id: HEIDELBERGER-2017
-#: last_checked: 2017-04-27
+#: last_checked: 2017-05-08
 #: check_frequency: 60d
 Heidelberger Str.: Baustelle, Einbahnstraßenregelung	1s:q3 13489,9199 13420,9259 13357,9313
 # 
@@ -2858,7 +2863,7 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3 9042,11839 8969,118
 #: next_check: 2017-09-02
 Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,14449 7561,14458 7426,14539 7368,14573
 # 
-#: last_checked: 2017-04-27 (nur noch ein paar Meter Richtung Weigandufer gesperrt)
+#: last_checked: 2017-05-08 (nur noch ein paar Meter Richtung Weigandufer gesperrt)
 #: check_frequency: 7d
 Weichselplatz: Uferweg wegen Bauarbeiten gesperrt	2::inwork 12851,9309 12907,9073
 # 
@@ -2946,7 +2951,7 @@ Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 #: XXX Ende der Bauarbeiten?
 #: osm_watch: way id="4610375" version="15"
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
-#: last_checked: 2017-04-28
+#: last_checked: 2017-05-08
 #: check_frequency: 14d
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076
 # REMOVED (hier schon offen) --- Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9636,13076 9559,13087
@@ -3088,7 +3093,7 @@ Kirchdorfer Str.: Straße fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 # 
 #: by: http://www.dafmap.de/d/berlin.html?center=52.497318+13.462016&zoom=17#
-#: last_checked: 2017-04-17
+#: last_checked: 2017-05-08
 #: check_frequency: 120d
 am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14463,10212
 # 
@@ -3137,7 +3142,7 @@ Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,689
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 09.01.2018
-#: last_checked: 2017-03-29 vvv
+#: last_checked: 2017-05-08 vvv
 #: check_frequency: 90d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364

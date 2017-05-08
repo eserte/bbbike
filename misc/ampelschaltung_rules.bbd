@@ -191,9 +191,9 @@ time=* green=20s red=70s	X 12891,12008 12822,12067 12735,12131
 time=* green=20s red=70s	X 12735,12131 12822,12067 12891,12008
 # Andreas/Singer
 #: XXX_prog beide Richtungen in der Relation Singerstr. scheinen die gleichen Zeiten zu haben, könnte man das effizienter ausdrücken?
-time=rush-hour green=18s red=52s	X 12525,12151 12295,12197 12084,12235
-time=day green=18s red=42s	X 12525,12151 12295,12197 12084,12235
-time=night green=12s red=38s	X 12525,12151 12295,12197 12084,12235
-time=rush-hour green=18s red=52s	X 12084,12235 12295,12197 12525,12151
-time=day green=18s red=42s	X 12084,12235 12295,12197 12525,12151
-time=night green=12s red=38s	X 12084,12235 12295,12197 12525,12151
+time=rush-hour green=18s red=52s	X 12532,12150 12295,12197 12084,12235
+time=day green=18s red=42s	X 12532,12150 12295,12197 12084,12235
+time=night green=12s red=38s	X 12532,12150 12295,12197 12084,12235
+time=rush-hour green=18s red=52s	X 12084,12235 12295,12197 12532,12150
+time=day green=18s red=42s	X 12084,12235 12295,12197 12532,12150
+time=night green=12s red=38s	X 12084,12235 12295,12197 12532,12150
