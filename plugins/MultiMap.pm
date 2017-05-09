@@ -66,10 +66,10 @@ sub register {
 	  ($images{Geofabrik} ? (icon => $images{Geofabrik}) : ()),
 	};
     if ($map_compare_use_bbbike_org) {
-	$main::info_plugins{__PACKAGE__ . "_MapCompare_Different_Data"} =
-	    { name => "Map Compare (different data)",
-	      callback => sub { showmap_mapcompare(@_, profile => "__different_data") },
-	      callback_3_std => sub { showmap_url_mapcompare(@_, profile => "__different_data") },
+	$main::info_plugins{__PACKAGE__ . "_MapCompare_Distinct_Map_Data"} =
+	    { name => "Map Compare (distinct map data)",
+	      callback => sub { showmap_mapcompare(@_, profile => "__distinct_map_data") },
+	      callback_3_std => sub { showmap_url_mapcompare(@_, profile => "__distinct_map_data") },
 	      ($images{Geofabrik} ? (icon => $images{Geofabrik}) : ()),
 	    };
 	$main::info_plugins{__PACKAGE__ . "_MapCompare_BBBike"} =
@@ -509,7 +509,7 @@ sub showmap_url_mapcompare {
 	$scale = 18 if $scale > 18;
     }
     my $common_qs;
-    if ($profile && $profile eq '__different_data') {
+    if ($profile && $profile eq '__distinct_map_data') {
 	$common_qs = 'num=10&mt0=bvg&mt1=bbbike-bbbike&mt2=mapnik&mt3=esri&mt4=falk-base&mt5=google-map&mt6=nokia-map&mt7=lgb-topo-10&mt8=pharus&mt9=tomtom-basic-main';
     } else{
 	my $map0 = $map_compare_use_bbbike_org ? 'google-hybrid' : 'googlehybrid';
