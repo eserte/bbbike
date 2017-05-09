@@ -105,6 +105,26 @@ userdel	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 1199
        undef,
        undef,
        undef,
+       {
+         'data' => '#: by: http://www.weinfeste-in-deutschland.de/wein-und-winzerfest-in-berlin-lichtenrade.html
+userdel	2::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
+',
+         'from' => 1504774800,
+         'id' => 31,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              6,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 08.09.2017 16:00 bis 10.09.2017 20:00',
+         'type' => 'gesperrt',
+         'until' => 1505070000
+       },
        undef,
        undef,
        undef,
@@ -147,8 +167,30 @@ userdel	3 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989 11880,8955 1199
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => '#: by: http://www.stadtfest.berlin/de/index.html
+userdel	2::temp 6514,10088 6609,10147 6626,10155 6729,10212
+userdel	2::temp 6729,10212 6971,10346
+userdel	2::temp 6628,10318 6626,10155
+userdel	2::temp 6502,10273 6628,10318 6719,10347
+userdel	2::temp 6719,10347 6729,10212 6739,10120
+',
+         'from' => 1499983200,
+         'id' => 74,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              14,
+                              'months',
+                              6
+                            ]
+                          ],
+         'text' => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (15.7.2017 bis 16.7.2017)',
+         'type' => 'gesperrt',
+         'until' => 1500242399
+       },
        undef,
        undef,
        undef,
@@ -1883,6 +1925,29 @@ userdel	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
        undef,
        undef,
        undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/veranstaltungen/koepenicker-sommer-323856.php
+userdel	2::temp 22111,4562 22093,4499 22076,4422
+userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
+userdel	2::temp 22138,4642 22074,4664
+# REMOVED --- userdel	2::temp 22111,4562 22162,4546 22214,4548 22324,4586 22314,4604 22355,4660 22365,4676 22395,4678
+',
+         'from' => 1497477600,
+         'id' => 1702,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              14,
+                              'months',
+                              6
+                            ]
+                          ],
+         'text' => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain (16.06.2017 - 18.06.2017)',
+         'type' => 'gesperrt',
+         'until' => 1497823199
+       },
        undef,
        undef,
        undef,
@@ -1890,8 +1955,29 @@ userdel	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => '	q4::temp 9666,11935 9656,12031
+	2::temp 9523,12019 9656,12031
+	2::temp 9536,11922 9666,11935
+',
+         'from' => 1500242400,
+         'id' => 1710,
+         'periodic' => 1,
+         'postwarn_days' => 2,
+         'prewarn_days' => 3,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              2,
+                              'months',
+                              7
+                            ]
+                          ],
+         'text' => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (20.7.2017 - 24.7.2017; Sperrungen fangen schon früher an und dauern länger)',
+         'type' => 'gesperrt',
+         'until' => 1501099200
+       },
        undef,
        undef,
        undef,
@@ -2634,13 +2720,121 @@ userdel	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,
        undef,
        undef,
        undef,
+       {
+         'data' => '#: by: http://csd-berlin.de/event-info-en/
+#: by: https://www.berlin.de/en/events/2096878-2842498-csd-christopher-street-day.en.html
+userdel	2::temp 6851,10416 6937,10363 6971,10346 7033,10328 7033,10396 7003,10513 6985,10597 6972,10665 6929,10852 6918,10858 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6685,11954 6642,12010 6656,12075 6690,12104 6725,12113 6754,12108 6787,12099 6828,12031 6809,11979 6744,11936
+userdel	2::temp 6353,10583 6292,10627 6228,10646 6171,10657
+userdel	2::temp 7033,10396 6851,10416 6753,10446 6636,10492 6532,10529 6468,10550 6353,10583 6268,10588 6216,10614 6171,10657 6133,10679 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5341,10756 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435 4157,10418
+userdel auto	3 6380,10704 6353,10583 6302,10462
+userdel auto	3 6692,11365 6851,11346 7103,11247
+userdel auto	3 5488,10978 5475,10808 5471,10719
+userdel auto	3 4685,10689 4676,10541 4659,10335
+userdel auto	3 7115,11220 6880,11110 6841,11114
+userdel auto	3 6716,11439 6825,11486 6915,11492
+userdel auto	3 4239,10358 4245,10435 4256,10583
+userdel auto	3 7131,10331 7033,10396 7245,10499
+userdel auto	3 7131,10331 7033,10328 7060,10221
+userdel auto	3 4485,10307 4503,10497 4513,10702
+userdel auto	3 6869,11567 6809,11570 6512,11608
+userdel auto	3 6745,10619 6753,10446 6719,10347
+userdel auto	3 4847,10677 4847,10589 4828,10356
+userdel auto	3 4381,10583 4371,10465 4360,10320
+userdel auto	3 5196,10398 5215,10711 5230,10919
+userdel auto	3 6681,10959 6824,10904 6740,10755
+userdel auto	3 6740,10755 6824,10904 6681,10959
+userdel auto	3 6818,10725 6972,10665 7110,10613
+userdel auto	3 4360,10320 4371,10465 4381,10583
+userdel auto	3 7060,10221 7033,10328 7131,10331
+userdel auto	3 6915,11492 6825,11486 6716,11439
+userdel auto	3 6742,11099 6873,11011 7002,11034
+userdel auto	3 7245,10499 7033,10396 7131,10331
+userdel auto	3 4828,10356 4847,10589 4847,10677
+userdel auto	3 4513,10702 4503,10497 4485,10307
+userdel auto	3 6719,10347 6753,10446 6745,10619
+userdel auto	3 6841,11114 6880,11110 7115,11220
+userdel auto	3 6884,12006 6828,12031 7026,12054
+userdel auto	3 5829,10964 5782,10884 5669,10704
+userdel auto	3 6512,11608 6809,11570 6869,11567
+userdel auto	3 6540,11754 6778,11742 6980,11790
+userdel auto	3 5669,10704 5782,10884 5829,10964
+userdel auto	3 5047,10381 5076,10658 5079,10701
+userdel auto	3 6980,11790 6778,11742 6540,11754
+userdel auto	3 7002,11034 6873,11011 6742,11099
+userdel auto	3 5866,10492 6025,10746 6122,10925
+userdel auto	3 6192,10542 6216,10614 6228,10646
+userdel auto	3 6685,10690 6532,10529 6494,10440
+userdel auto	3 6122,10925 6025,10746 5866,10492
+userdel auto	3 7026,12054 6828,12031 6884,12006
+userdel auto	3 4256,10583 4245,10435 4239,10358
+userdel auto	3 6216,10614 6228,10646 6250,10701
+userdel auto	3 5900,11913 6642,12010 6550,11954
+userdel auto	3 5079,10701 5076,10658 5047,10381
+userdel auto	3 5471,10719 5475,10808 5488,10978
+userdel auto	3 4659,10335 4676,10541 4685,10689
+userdel auto	3 7110,10613 6972,10665 6818,10725
+userdel auto	3 5230,10919 5215,10711 5196,10398
+userdel auto	3 6302,10462 6353,10583 6380,10704
+userdel auto	3 6550,11954 6642,12010 5900,11913
+userdel auto	3 6494,10440 6532,10529 6685,10690
+userdel auto	3 6250,10701 6228,10646 6216,10614
+userdel auto	3 7103,11247 6851,11346 6692,11365
+userdel auto	3 6228,10646 6216,10614 6192,10542
+	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8592,12252 8637,12258 8722,12268
+	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+	3 7039,12314 7383,12095 7429,12070
+	3 7429,12070 7383,12095 7039,12314
+	3 7875,12363 7822,12201 7816,12150 7823,12120
+	3 7823,12120 7816,12150 7822,12201 7875,12363
+	3 8119,12414 8055,12186 8049,12140
+	3 8049,12140 8055,12186 8119,12414
+	3 8391,12389 8344,12221 8327,12174
+	3 8327,12174 8344,12221 8391,12389
+',
+         'from' => 1500588000,
+         'id' => 2083,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              6
+                            ]
+                          ],
+         'source_id' => 'http://csd-berlin.de/category/csd-2017/',
+         'text' => 'CSD am 22.7.2016',
+         'type' => 'gesperrt',
+         'until' => 1500760799
+       },
        undef,
        undef,
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 9248,9350 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
+userdel auto	3 9487,9209 9505,9306 9524,9426
+userdel auto	3 9524,9426 9505,9306 9487,9209
+',
+         'from' => 1498687200,
+         'id' => 2089,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              8,
+                              'months',
+                              6
+                            ]
+                          ],
+         'source_id' => 'https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html',
+         'text' => 'Bergmannstraße (Kreuzberg): Veranstaltung (Bergmannstraßenfest), Straße vollständig zwischen Mehringdamm und Zossener Str. gesperrt (30. Juni 2017 bis 02. Juli 2016)',
+         'type' => 'gesperrt',
+         'until' => 1499032799
+       },
        undef,
        undef,
        undef,
@@ -2892,6 +3086,33 @@ userdel	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
        undef,
        undef,
        undef,
+       {
+         'data' => '#: by: http://www.bierfestival-berlin.de/?y=2017
+#: tempex 20170804-20170806 vvv
+userdel	2::temp 12360,12505 12362,12540 12364,12589
+userdel	2::temp 12891,12549 12869,12425
+userdel	2::temp 12632,12630 12596,12472
+userdel	2::temp 13448,12340 13484,12436
+userdel	2::temp 13552,12435 13543,12326
+#zukünftig, wenn dieser Weg eingetragen ist: userdel	2::temp 13163,12382 13176,12500
+#: tempex ^^^
+',
+         'from' => 1501747200,
+         'id' => 2262,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              31,
+                              'months',
+                              7
+                            ]
+                          ],
+         'text' => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung (Internationales Berliner Bierfestival), Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (4.8.2017 bis 6.8.2017)',
+         'type' => 'gesperrt',
+         'until' => 1502064000
+       },
        undef,
        undef,
        undef,
@@ -2904,8 +3125,26 @@ userdel	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => 'userdel	q4::temp; 14499,16341 14346,16241 14248,16202 14056,16120 14015,16103 13826,16026 13737,15994 13623,15954 13512,15909
+',
+         'from' => 1499896800,
+         'id' => 2275,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              9,
+                              'months',
+                              7
+                            ]
+                          ],
+         'source_id' => 'http://www.weissenseer-blumenfest.de',
+         'text' => 'Berliner Allee (Weißensee): Veranstaltung (Weißenseer Blumenfest), Fahrtrichtung gesperrt stadteinwärts vom Weißen See bis zum Antonplatz, 14.7.2017 bis 16.7.2017',
+         'type' => 'handicap',
+         'until' => 1500242399
+       },
        undef,
        undef,
        undef,
@@ -3188,7 +3427,27 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED (was) : tempex: 20160714-20160717
+userdel	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
+',
+         'from' => 1499896800,
+         'id' => 2420,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              13,
+                              'months',
+                              7
+                            ]
+                          ],
+         'source_id' => 'http://www.gratis-in-berlin.de/festivals/item/2024942-hafenfest-tegel-2016-mit-programm-und-feuerwerk',
+         'text' => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (14.07.2017 bis 23.07.2017)',
+         'type' => 'gesperrt',
+         'until' => 1500847199
+       },
        undef,
        undef,
        undef,
@@ -3697,7 +3956,28 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,464
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- : tempex YYYY09 & sa2 & T14-T18
+#: tempex YYYY09 & sa3 & T14-T18
+userdel	2::temp 5857,13342 5868,13441 5882,13548
+',
+         'from' => 1505426400,
+         'id' => 2625,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              9,
+                              'months',
+                              9
+                            ]
+                          ],
+         'source_id' => 'https://misch-mit.net/strassenfest-ums-rathaus-moabit-10-sept-2016-2/',
+         'text' => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 16. September 2017, 14 bis 18 Uhr ',
+         'type' => 'gesperrt',
+         'until' => 1505599199
+       },
        undef,
        undef,
        undef,
@@ -3854,7 +4134,36 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,464
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: tempex: (YYYY01 & tu3) - +2d, (YYYY07 & tu1) - +2d vvv
+userdel	q4::inwork 8634,10426 8384,10507 8527,10621
+userdel	q4::inwork 8348,10636 8335,10518 8350,10499
+#: tempex ^^^
+',
+         'from' => 1499032800,
+         'id' => 2718,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              8,
+                              'months',
+                              1
+                            ],
+                            [
+                              'yearly',
+                              'days',
+                              27,
+                              'months',
+                              6
+                            ]
+                          ],
+         'source_id' => '2147339708',
+         'text' => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 04.07.2017-06.07.2017',
+         'type' => 'handicap',
+         'until' => 1499378399
+       },
        {
          'data' => '	2::inwork 9998,16547 9983,16561 9955,16578
 ',
@@ -4174,9 +4483,9 @@ userdel	q4::inwork; 5488,10978 5613,10963 5652,11004
          'from' => 1488236400,
          'id' => 2851,
          'source_id' => '2147341048',
-         'text' => 'Kantstr.: Richtung Budapester Str. ab Joachimsthaler Str. gesperrt, voraussichtlich bis Mitte Juni 2017',
+         'text' => 'Kantstr.: Richtung Budapester Str. ab Joachimsthaler Str. gesperrt, voraussichtlich bis 16. Juni 2017',
          'type' => 'handicap',
-         'until' => 1497456000
+         'until' => 1497628800
        },
        undef,
        {
@@ -4192,19 +4501,7 @@ userdel	q4::inwork; 5583,5179 5527,5217 5416,5289 5397,5302 5382,5312
          'type' => 'handicap',
          'until' => 1504303199
        },
-       {
-         'data' => '#: XXX Ende am 2017-05-08 scheint nicht realistisch zu sein, gibt es Infos dazu?
-#: next_check: 2017-05-08
-#: priority: #A
-userdel	q4::inwork 854,24387 1033,24429 1156,24494 1250,24533
-',
-         'from' => 1492380000,
-         'id' => 2854,
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.580104.php',
-         'text' => 'Karmeliterweg: Bauarbeiten zwischen Am Eichenhain und Artuswall, Fahrbahn gesperrt, voraussichtlich vom 18.04.2017 bis zum 08.05.2017',
-         'type' => 'handicap',
-         'until' => 1494280800
-       },
+       undef,
        {
          'data' => 'userdel	q4::inwork 1458,24561 1410,24562 1330,24553 1250,24533 1156,24494
 ',
@@ -4253,9 +4550,9 @@ userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 
          'from' => 1492466400,
          'id' => 2859,
          'source_id' => '2147341208',
-         'text' => 'Pfarrstr. zwischen Wiesenweg und Hauffstr.: Brückenarbeiten, langsames Passieren für Radfahrer möglich; außerdem Einbahnstraßenregelung im Wiesenweg, bis 10. Mai 2017',
+         'text' => 'Pfarrstr. zwischen Wiesenweg und Hauffstr.: Brückenarbeiten, langsames Passieren für Radfahrer möglich; außerdem Einbahnstraßenregelung im Wiesenweg, bis 15. Mai 2017',
          'type' => 'handicap',
-         'until' => 1494432000
+         'until' => 1494864000
        },
        {
          'data' => '#: last_checked: 2017-04-28

@@ -24,7 +24,7 @@ Werdersche Rosenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9883,12251 9959,
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9898,12161 9883,12251
 Behrenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9743,12239 9798,12267
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
-Erkelenzufer: Bauarbeiten zwischen Böcklerstr. und Kohlfurter Str., Fahrbahn gesperrt, Bordsteine	q3::inwork 10967,10092 11038,10247 11094,10261
+Erkelenzdamm: Bauarbeiten zwischen Böcklerstr. und Kohlfurter Str., Fahrbahn gesperrt, Bordsteine	q3::inwork 10967,10092 11038,10247 11094,10261
 Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q2::inwork; 9022,10857 8941,10663 8926,10626
 Neuenburger Str.: Bauarbeiten, Sperrung der Fahrbahn	q2::inwork 10178,10411 9955,10501
 Kiehlufer: Bauarbeiten, Fahrbahn gesperrt, Bordsteine beim Ausweichen auf dem Gehweg	q3::inwork 12897,9365 12950,9132
@@ -45,12 +45,13 @@ Pappelplatz (Mitte): gemeinsamer Fuß- und Radweg	q2 9750,14132 9676,14046
 (Frankfurter Allee - Liebigstr.): Fußgänger	q2 13885,12279 13927,12370
 Otto-Ludwig-Str.: Fußgängerzone	q2 4862,10881 4954,10876
 Mauerstr. (Mitte): Touristen, Bordsteine	q4 9405,11413 9474,11360
-Georgenstr.: Fußgängerzone, Bordstein	q3 9434,12669 9313,12662
+Georgenstr.: Fußgängerzone, Bordstein	q3 9441,12670 9313,12662
 Neue Promenade: Fußgängerzone, Radfahren erlaubt, aber nur langsam möglich	q4 10286,13084 10263,13047 10185,12982
 Neue Promenade: Fußgängerzone, Radfahren erlaubt, aber nur langsam möglich	q4 10264,13097 10263,13047
 Am Zwirngraben: Tische auf der Straße, Fußgänger	q4 10339,13052 10185,12982
 Neue Promenade: Fußgängerzone, Radfahren erlaubt	q2 10185,12982 10132,12941
-Pariser Platz/Brandenburger Tor: Fußgänger	q2 8804,12280 8731,12270 8610,12254 8538,12245
+Pariser Platz/Brandenburger Tor: Fußgänger	q2 8804,12280 8722,12268 8637,12258 8592,12252 8538,12245
+Pariser Platz: Fußgänger	q2 8637,12258 8643,12208 8728,12220 8722,12268 8714,12319 8630,12307 8637,12258
 Potsdamer Platz: Fußgänger	q3 8542,11502 8442,11555
 Blücherplatz: reger Fußgängerverkehr	q3 9579,10122 9599,10175
 Blücherplatz: Fußgängerverkehr	q3 9599,10175 9631,10142
@@ -2557,7 +2558,6 @@ Nöldnerstr.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs.
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9042,11839 8969,11814
 Corinthstr.: Baustelle, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 14447,10491 14270,10584
 (Los-Angeles-Platz): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 5669,10704 5822,10609
-Westendallee: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 461,11455 425,11455 395,11486 329,11696 323,11801
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8376,6579 -8354,6590
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8339,6578 -8364,6562
 Kreuzung Sewanstr./Am Tierpark	q1::igndisp; 18631,10167 18647,10172

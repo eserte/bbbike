@@ -160,7 +160,7 @@ Schulze-Delitzsch-Platz	1 11155,11750 11060,11753 11024,11789
 Schulze-Delitzsch-Platz	1 11024,11789 11073,11774 11155,11750
 Dorotheenstr.	1 9870,12657 9744,12601 9682,12593 9580,12581 9454,12558
 Dorotheenstr. (Straßenbahn)	1s:q2 9454,12558 9330,12538
-Georgenstr.	1 9434,12669 9568,12688 9659,12704 9754,12775
+Georgenstr.	1 9441,12670 9568,12688 9659,12704 9754,12775
 Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: by: Rolf Schröder <001301c0fe12$f9c9eb00$fe78a8c0@pc166>
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
@@ -330,7 +330,7 @@ Mentzelstr.	1 21579,4579 21546,4457
 Amalienstr.	1 13789,16775 13722,16843 13653,16907 13589,16965
 Cosimaplatz	1 5490,7651 5458,7683 5493,7717 5528,7683 5490,7651
 Reiherbeize	1 444,4498 593,4262
-Mendelssohnstr.	1 11598,13598 11550,13642 11545,13690
+Mendelssohnstr.	1 11545,13690 11550,13642 11598,13598
 Am Bäkequell	1 4593,5235 4656,5101
 # REMOVED (nicht bestätigt?) --- Sella-Hasse-Str.	1 20948,16612 20791,16679 20840,16777 20856,16807
 Schollenhof	1 3238,21448 3155,21572 3236,21601 3280,21477
@@ -2790,7 +2790,7 @@ Voltairestr.: Baustelle, Fahrtrichtung gesperrt	1s:q3 11329,12497 11209,12430
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt	1s:q3 5192,10234 5196,10398
 # 
 #: source_id: 2147341003 (Bauarbeiten in der angrenzenden Modersohnstr.)
-#: last_checked: 2017-05-08
+#: last_checked: 2017-05-09
 DB-Werkstraße: Zufahrt zur DB-Werkstraße ist wegen Bauarbeiten gesperrt	2::inwork 14043,10928 14107,10911
 # 
 #: XXX laut fritz bis 30. September 2017
@@ -2829,7 +2829,7 @@ Heidelberger Str.: Baustelle, Einbahnstraßenregelung	1s:q3 13489,9199 13420,9259
 # REMOVED (offen) --- #: next_check_id: STRESEMANNPARKWEG-2016 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.530316.php --- #: XXX "3-4 Wochen" --- #: XXX danach eine "bituminöse Befestigung" --- #: XXX evtl. wird die Beleuchtung auch erneuert? --- #: last_checked: 2016-12-16 --- #: check_frequency: 14d --- #: priority: #A --- Parkweg zwischen Stresemannstr. und Wilhemstr.: wird instandgesetzt, in dieser Zeit nicht befahrbar	2::inwork 9249,10562 9375,10616
 # 
 #: next_check_id: CHAUSSEESTR-2016 vvv
-#: XXX laut fritz bis 30.08.2017
+#: XXX laut fritz und rbbtext bis 30.08.2017
 #: XXX Richtung Süden teilweise nun mit Radspur
 #: XXX offizielle Umleitungsstrecke für Radfahrer via Zinnowitzer Str., danach keine weiteren offiziellen U-Schilder für Radfahrer, vermutlich geht es über Gartenstr. weiter
 #: source_id: 2147340715 vvv
@@ -3060,12 +3060,12 @@ Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3
 #: next_check_id ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2017-04-04
+#: last_checked: 2017-05-09
 #: check_frequency: 120d
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2017-04-04
+#: last_checked: 2017-05-09
 #: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 
@@ -3412,8 +3412,6 @@ Heerstr.	3nocross -1050,11061 -848,11086 -779,11093 -733,11098 -593,11119
 Heerstr.	3nocross -593,11119 -511,11127 -406,11141 -360,11145 -82,11178
 Heerstr.	3nocross -82,11178 16,11190 229,11213 438,11236 504,11243
 tragen (20 Stufen)	0:30 23,11137
-#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4509&options=4
-Westendallee	1s:q3 461,11455 425,11455 395,11486 329,11696 323,11801
 Lerschpfad	1 2181,12276 2152,12389
 Gottfried-Keller-Str.	1 1697,11911 1792,11889
 tragen (5 Stufen)	0:20 3829,13572
@@ -3448,6 +3446,7 @@ Tor	BNP:15 1834,8893
 tragen (10 x 3 Stufen)	0:60 2170,8841
 # REMOVED --- tragen	0:40 2316,8593
 tragen (2 x 7 Stufen)	0:30 2316,8469
+#: XXX ist hier noch eine Einbahnstraße?
 Mittelstr.	1 9462,12481 9343,12464
 Bauhofstr.	1 9815,12705 9673,12661
 Hollmannstr.	2 9995,10637 9869,10672 9777,10719

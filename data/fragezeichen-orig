@@ -33,7 +33,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2017-05-04
+#: last_checked: 2017-05-09
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -1102,9 +1102,10 @@ Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbi
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_14_1521_1636_online.pdf (Widmung)
+#: osm_watch: way id="491906864" version="2"
 #: last_checked: 2017-04-04
-#: check_frequency: 45d
-Planstraße C: neue Straße entsteht	?::projected 12926,11224 12848,11093
+#: check_frequency: 30d
+Planstraße C: neue Straße entsteht, Straßenname?	?::inwork 12926,11224 12848,11093
 # 
 # REMOVED (-> strassen-orig) --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4359&options=4 vvv --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036167532448/167532448/00083455/55-Anlagen/01/DRS0260VB.pdf vvv --- #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140214.0600.394386.html vvv --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.232673.php (Startschuss) --- #: XXX fehlen in Berlin.coords.data, PLZ=12439 --- #: osm_watch: way id="185792044" version="3" --- #: last_checked: 2014-11-15 (Trasse schon sichtbar) vvv --- #: check_frequency: 90d vvv --- Wasserstr.: geplante Straße in Niederschöneweide	?::projected 17477,6031 17681,6212 --- Uferstr.: geplante Straße in Niederschöneweide	?::projected 17681,6212 17843,6083
 # 
@@ -1614,6 +1615,8 @@ B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+Mendelssohnstr.: gibt es hier eine Einbahnstraßenregelung? auch für Radfahrer?	? 11474,13524 11512,13493 11598,13598
+# 
 #: XXX ... und dann einzeichnen
 Heinrichplatz: Geokoordinaten sammeln	? 11690,10541 11707,10495 11756,10514 11732,10561 11690,10541
 # 
@@ -1941,18 +1944,16 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7478
 #: XXX "noch 2016"
-#: last_checked: 2017-04-29 vvv
-#: check_frequency: 14d vvv
-#: priority: #C vvv
 #: osm_watch: note 824350 1
-Sebastian/Luckauer: Zebrastreifen in Bau	?::inwork 11113,10943 11109,10935
-#: priority ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
+#: last_checked: 2017-04-29
 #: check_frequency: 14d
+#: priority: #C
+Sebastian/Luckauer: Zebrastreifen in Bau	?::inwork 11113,10943 11109,10935
+# 
 #: osm_watch: note 851907 2
-#: last_checked: 2017-04-24
+#: last_checked: 2017-05-09
+#: check_frequency: 14d
+#: priority: #C
 Oranienplatz: Zebrastreifen in Bau	?::inwork 11233,10672 11258,10682 11262,10655
 # 
 # REMOVED (provisorischer Zebrastreifen existiert schon) --- #: next_check_id: BAERWALDSTR-2017 --- #: last_checked: 2017-03-04 --- #: check_frequency: 14d --- Baerwaldstr.: Zebrastreifen in Bau	?::inwork 10402,9941 10424,9958 10430,9937

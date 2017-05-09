@@ -255,14 +255,14 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Fürstenwalder Damm zwischen Bölschestraße und Hartlebenstraße Baustell stadtauswärts, Straße gesperrt, eine Umleitung ist eingerichtet, Dauer: 07.09.2003,04.00 Uhr bis 21.09.2003',
        type  => 'gesperrt',
      },
-     { from  => $isodate2epoch->("2016-09-08 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-09-11 21:00:00"),
+     { from  => $isodate2epoch->("2017-09-07 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-09-10 21:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 6, months => 9]],
-       text  => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 9.9.2016 16:00 bis 11.9.2016 20:00',
+       text  => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 08.09.2017 16:00 bis 10.09.2017 20:00',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.berlin.de/tickets/suche/detail.php?id=1250629
+#: by: http://www.weinfeste-in-deutschland.de/wein-und-winzerfest-in-berlin-lichtenrade.html
 userdel	2::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
@@ -578,11 +578,11 @@ EOF
        source_id => 'IM_015896',
        file  => 'badstr.bbd',
      },
-     { from  => $isodate2epoch->("2016-07-15 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-07-17 23:59:59"),
+     { from  => $isodate2epoch->("2017-07-14 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-07-16 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6]],
-       text  => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (16.7.2016 bis 17.7.2016)',
+       text  => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (15.7.2017 bis 16.7.2017)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.stadtfest.berlin/de/index.html
@@ -1039,7 +1039,7 @@ userdel	2 8055,12186 8089,12190 8214,12205
 userdel	2 8214,12205 8303,12216 8344,12221 8538,12245
 userdel	2 8546,12279 8538,12245
 userdel	2 8600,12165 8538,12245
-userdel	2 8538,12245 8610,12254
+userdel	2 8538,12245 8592,12252
 userdel	2 8546,12279 8570,12302 8573,12325 8540,12420 
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
@@ -1484,7 +1484,7 @@ userdel	q4 8214,12205 8089,12190 8055,12186
 userdel	q4 8214,12205 8303,12216 8344,12221 8538,12245
 userdel	q4 6656,12075 6642,12010
 userdel	q4 6685,11954 6744,11936
-userdel	q4 8610,12254 8538,12245
+userdel	q4 8592,12252 8538,12245
 userdel	q4 7816,12150 8055,12186
 userdel	q4 7816,12150 7383,12095
 userdel	q4 6744,11936 6809,11979
@@ -2226,7 +2226,7 @@ EOF
 userdel	q4 -6319,-7823 -6659,-8210
 EOF
      },
-     { from  => 1118993118, # 2005-06-17 09:25
+     { from  => 1118993118, # 2005-06-17 09:25 # FOR RECURRING ENTRY SEE BELOW
        until => 1119240000, # 2005-06-20 06:00
        text  => '"Köpenicker Sommer", im Bereich Altstadt Straßen gesperrt bis 20.06.2005, 06:00 Uhr (Schloßplatz, Grünstraße, Rosenstraße, Alt-Köpenick, Schüßlerplatz, Jägerstraße, Luisenhain, Schloßinsel) ',
        type  => 'gesperrt',
@@ -2982,7 +2982,7 @@ userdel	2 8546,12279 8538,12245
 userdel	2 8546,12279 8570,12302 8573,12325
 userdel	2 8540,12420 8573,12325
 userdel	2 8600,12165 8538,12245
-userdel	2 8538,12245 8610,12254
+userdel	2 8538,12245 8592,12252
 EOF
      },
      { from  => 1128808800, # 2005-10-09 00:00
@@ -4846,7 +4846,7 @@ EOF
 userdel	2 20367,-3844 20265,-3849
 EOF
      },
-     { from  => 1339711200, # 1150395890, # 2006-06-15 20:24
+     { from  => 1339711200, # 1150395890, # 2006-06-15 20:24 # FOR RECURRING ENTRY SEE BELOW
        until => 1339970400, # 1150754400, # 2006-06-20 00:00
        text  => 'Altstadt Köpenick: 51. Köpenicker Sommer vom 15. bis 17. Juni 2012',
        type  => 'handicap',
@@ -6059,7 +6059,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
-userdel	2::temp 8610,12254 8538,12245 8600,12165 8595,12066
+userdel	2::temp 8592,12252 8538,12245 8600,12165 8595,12066
 EOF
      },
      { from  => 1159653600, # 2006-10-01 00:00
@@ -9664,7 +9664,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006364',
        data  => <<EOF,
-userdel	2::temp 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
+userdel	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 EOF
      },
      { from  => 1188684000, # 2007-09-02 00:00
@@ -10068,7 +10068,7 @@ userdel	2::temp 8055,12186 8089,12190 8214,12205
 userdel	2::temp 8214,12205 8303,12216 8344,12221 8538,12245
 userdel	2::temp 8546,12279 8538,12245
 userdel	2::temp 8600,12165 8538,12245
-userdel	2::temp 8538,12245 8610,12254
+userdel	2::temp 8538,12245 8592,12252
 userdel	2::temp 8546,12279 8570,12302 8573,12325 8540,12420
 userdel	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186
 userdel	2::temp 8600,12165 8595,12066
@@ -11392,7 +11392,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_008397',
        data  => <<EOF,
-userdel	2::temp 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
+userdel	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 EOF
      },
      { from  => 1209160800, # 2008-04-26 00:00
@@ -11856,7 +11856,7 @@ EOF
        source_id => 'IM_019858',
        data  => <<EOF,
 #: by: http://www.rbb-online.de/nachrichten/sport/2013_05/champions_league_fanmeile_berlin.html
-userdel	2::temp 8600,12165 8538,12245 8610,12254 8731,12270
+userdel	2::temp 8600,12165 8538,12245 8592,12252 8637,12258 8722,12268
 userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 userdel auto	3 8119,12414 8055,12186 8049,12140
 userdel auto	3 7823,12120 7816,12150 7822,12201 7875,12363
@@ -11985,7 +11985,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
-userdel	2::temp 8610,12254 8538,12245 8600,12165 8595,12066 8737,12098 8743,12099 8861,12125
+userdel	2::temp 8592,12252 8538,12245 8600,12165 8595,12066 8737,12098 8743,12099 8861,12125
 EOF
      },
      { from  => 1215900000, # 2008-07-13 00:00
@@ -13315,7 +13315,7 @@ EOF
 userdel	2::temp 8119,12414 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8546,12279
 userdel	2::temp 8595,12066 8600,12165 8538,12245
 userdel	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-userdel	2::temp 8538,12245 8610,12254 8731,12270 8804,12280
+userdel	2::temp 8538,12245 8592,12252 8637,12258 8722,12268 8804,12280
 EOF
      },
      { from  => 1230730702, # 2008-12-31 14:38
@@ -14555,13 +14555,14 @@ EOF
 userdel	2::inwork 26001,-6257 26057,-6241 26146,-6218
 EOF
      },
-     { from  => $isodate2epoch->("2016-06-16 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-06-19 23:59:59"),
+     { from  => $isodate2epoch->("2017-06-15 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-06-18 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6]],
-       text  => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain (17.06.2016 - 19.06.2016)',
+       text  => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain (16.06.2017 - 18.06.2017)',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/veranstaltungen/koepenicker-sommer-323856.php
 userdel	2::temp 22111,4562 22093,4499 22076,4422
 userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
 userdel	2::temp 22138,4642 22074,4664
@@ -14625,13 +14626,14 @@ EOF
 userdel	2::inwork 7160,11225 7103,11247 6851,11346
 EOF
      },
-     { from  => $isodate2epoch->("2016-07-18 00:00:00"), # mindestens 1 Tag Vorlauf, besser zwei, oder sogar drei
-       until => $isodate2epoch->("2016-07-27 22:00:00"), # einen Tag für den Abbau --- es wurden aber tatsächlich mindestens zwei Tage benötigt; am 10. Juli 2013 war die Fahrbahn noch gesperrt
+     { from  => $isodate2epoch->("2017-07-17 00:00:00"), # mindestens 1 Tag Vorlauf, besser zwei, oder sogar drei
+       until => $isodate2epoch->("2017-07-26 22:00:00"), # einen Tag für den Abbau --- es wurden aber tatsächlich mindestens zwei Tage benötigt; am 10. Juli 2013 war die Fahrbahn noch gesperrt
        prewarn_days => 3,
        postwarn_days => 2,
-       text  => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (21.7.2016 - 25.7.2016; Sperrungen fangen schon früher an und dauern länger)',
+       text  => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (20.7.2017 - 24.7.2017; Sperrungen fangen schon früher an und dauern länger)',
        periodic => 1,
        recurrences => [['yearly', days => 2, months => 7]],
+       # zZt status=500: source_id => 'http://www.classicopenair.de/de',
        type  => 'gesperrt',
        data  => <<EOF,
 	q4::temp 9666,11935 9656,12031
@@ -15697,7 +15699,7 @@ EOF
        text  => 'Brandenburger Tor: mögliche Sperrungen zur Leichtathletik-WM (bis 26.08.09)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 8600,12165 8538,12245 8610,12254 8731,12270
+userdel	2::temp 8600,12165 8538,12245 8592,12252 8637,12258 8722,12268
 userdel	2::temp 8538,12245 8546,12279
 EOF
      },
@@ -16942,7 +16944,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_014555',
        data  => <<EOF,
-userdel	2::temp 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
+userdel	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
 userdel	2::temp 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
 EOF
      },
@@ -17297,7 +17299,7 @@ EOF
 #: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
 #: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6280.html
 	2::temp 8595,12066 8737,12098 8743,12099 8861,12125
-	2::temp 8731,12270 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	2::temp 8722,12268 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 	2::temp 8055,12186 8119,12414
 	2::temp 8522,12239 8466,12197
 	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
@@ -17748,7 +17750,7 @@ EOF
 userdel	2::temp 8573,12325 8540,12420
 userdel	2::temp 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 userdel	2::temp 8538,12245 8546,12279 8570,12302
-userdel	2::temp 8538,12245 8610,12254
+userdel	2::temp 8538,12245 8592,12252
 EOF
      },
      { from  => 1271743200, # 2010-04-20 08:00
@@ -18009,12 +18011,12 @@ EOF
 userdel	2::inwork -50068,51237 -51018,51135
 EOF
      },
-     { from  => $isodate2epoch->("2016-07-22 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-07-23 23:59:59"),
+     { from  => $isodate2epoch->("2017-07-21 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-07-22 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 6]],
-       source_id => 'http://www.csd-berlin.de/',
-       text  => 'CSD am 23.7.2016',
+       source_id => 'http://csd-berlin.de/category/csd-2017/',
+       text  => 'CSD am 22.7.2016',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://csd-berlin.de/event-info-en/
@@ -18076,7 +18078,7 @@ userdel auto	3 6494,10440 6532,10529 6685,10690
 userdel auto	3 6250,10701 6228,10646 6216,10614
 userdel auto	3 7103,11247 6851,11346 6692,11365
 userdel auto	3 6228,10646 6216,10614 6192,10542
-	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8610,12254 8731,12270
+	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8592,12252 8637,12258 8722,12268
 	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 	3 7039,12314 7383,12095 7429,12070
 	3 7429,12070 7383,12095 7039,12314
@@ -18154,13 +18156,13 @@ userdel	2::temp 8018,12135 7823,12120 7775,12114 7429,12070 7658,11947 7634,1192
 userdel	2::temp 7429,12070 7031,12024 6884,12006
 EOF
      },
-     { from  => $isodate2epoch->("2016-06-23 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-06-26 23:59:59"),
+     { from  => $isodate2epoch->("2017-06-29 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-07-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 6]],
-       text  => 'Bergmannstraße (Kreuzberg): Veranstaltung (Bergmannstraßenfest), Straße vollständig zwischen Mehringdamm und Zossener Str. gesperrt (24. bis 26. Juni 2016)',
+       text  => 'Bergmannstraße (Kreuzberg): Veranstaltung (Bergmannstraßenfest), Straße vollständig zwischen Mehringdamm und Zossener Str. gesperrt (30. Juni 2017 bis 02. Juli 2016)',
        type  => 'gesperrt',
-       source_id => 'http://www.kiez-und-kultur.de/bergmannstrassenfest/',
+       source_id => 'https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html',
        data  => <<EOF,
 userdel	2::temp 9248,9350 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
 userdel auto	3 9487,9209 9505,9306 9524,9426
@@ -19192,7 +19194,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_017171',
        data  => <<EOF,
-userdel	2::temp 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
+userdel	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 EOF
      },
@@ -19315,7 +19317,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_017297',
        data  => <<EOF,
-userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8610,12254
+userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8592,12252
 userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 userdel	2::temp 8542,11502 8548,11571
 EOF
@@ -19769,15 +19771,15 @@ EOF
 userdel	2::inwork 3045,19032 2994,18979
 EOF
      },
-     { from  => $isodate2epoch->("2016-08-04 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-08-07 02:00:00"),
+     { from  => $isodate2epoch->("2017-08-03 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-08-07 02:00:00"),
        periodic => 1, # Internationales Berliner Bierfestival
        recurrences => [['yearly', days => 31, months => 7]],
-       text  => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung (Internationales Berliner Bierfestival), Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (5.8.2016 bis 7.8.2016)',
+       text  => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung (Internationales Berliner Bierfestival), Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (4.8.2017 bis 6.8.2017)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.bierfestival-berlin.de/landkarte.html
-#: tempex 20160805-20160807 vvv
+#: by: http://www.bierfestival-berlin.de/?y=2017
+#: tempex 20170804-20170806 vvv
 userdel	2::temp 12360,12505 12362,12540 12364,12589
 userdel	2::temp 12891,12549 12869,12425
 userdel	2::temp 12632,12630 12596,12472
@@ -19899,13 +19901,13 @@ EOF
 userdel	q4::inwork 10881,15047 10838,14962 10723,14772
 EOF
      },
-     { from  => $isodate2epoch->("2016-07-14 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-07-17 23:59:59"),
+     { from  => $isodate2epoch->("2017-07-13 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-07-16 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 9, months => 7]], # kann auch erst im August stattfinden
-       text  => 'Berliner Allee (Weißensee): Veranstaltung (Weißenseer Blumenfest), Fahrtrichtung gesperrt stadteinwärts vom Weißen See bis zum Antonplatz, 15.7.2016 bis 17.7.2016',
+       text  => 'Berliner Allee (Weißensee): Veranstaltung (Weißenseer Blumenfest), Fahrtrichtung gesperrt stadteinwärts vom Weißen See bis zum Antonplatz, 14.7.2017 bis 16.7.2017',
        type  => 'handicap',
-       source_id => 'http://www.weissenseer-blumenfest.de/',
+       source_id => 'http://www.weissenseer-blumenfest.de', # note: artificial query string not allowed (e.g. ?y=2017)
        data  => <<EOF,
 userdel	q4::temp; 14499,16341 14346,16241 14248,16202 14056,16120 14015,16103 13826,16026 13737,15994 13623,15954 13512,15909
 EOF
@@ -20241,7 +20243,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_018330',
        data  => <<EOF,
-	2::temp 8538,12245 8610,12254
+	2::temp 8538,12245 8592,12252
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
@@ -20399,7 +20401,7 @@ EOF
        text  => 'Str. des 17. Juni zwischen Yitzhak-Rabin-Str. und Platz des 18. März sowie Ebertstr. gesperrt (Nisan Kinderfest, 19.4.2014 bis 21.4.2014)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
+userdel	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
@@ -20429,7 +20431,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_023302',
        data  => <<EOF,
-userdel	2::temp 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
+userdel	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
 EOF
      },
@@ -20553,7 +20555,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 8573,12325 8540,12420
-userdel	2::temp 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8610,12254
+userdel	2::temp 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8592,12252
 userdel	2::temp 8354,12416 8391,12389 8546,12279 8538,12245 8600,12165 8595,12066
 userdel	2::temp 7383,12095 7816,12150 8055,12186 8119,12414
 userdel	2::temp 8546,12279 8570,12302
@@ -21023,7 +21025,7 @@ EOF
        data  => <<EOF,
 #: tempex: 20160922T0600-T20160926T0600 vvv
 userdel	2::temp 8573,12325 8540,12420
-userdel	2::temp 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+userdel	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 userdel	2::temp 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 userdel	2::temp 8119,12414 8055,12186
 userdel	2::temp 8538,12245 8522,12239 8466,12197
@@ -21379,15 +21381,15 @@ userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,464
 #: tempex ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2016-07-13 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-07-17 23:59:59"),
+     { from  => $isodate2epoch->("2017-07-13 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-07-23 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 13, months => 7]],
        source_id => 'http://www.gratis-in-berlin.de/festivals/item/2024942-hafenfest-tegel-2016-mit-programm-und-feuerwerk',
-       text  => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (14.07.2016 bis 17.07.2016)',
+       text  => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (14.07.2017 bis 23.07.2017)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: tempex: 20160714-20160717
+# REMOVED (was) : tempex: 20160714-20160717
 userdel	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
 EOF
      },
@@ -21434,7 +21436,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://berlin.dgb.de/extra/1-mai-2013-unser-tag',
        data  => <<EOF,
-userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8610,12254
+userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8592,12252
 userdel auto	3 8546,12279 8538,12245 8600,12165
 userdel auto	3 8546,12279 8538,12245 8522,12239
 userdel auto	3 8546,12279 8538,12245 8522,12187
@@ -21672,7 +21674,7 @@ EOF
        text  => 'Pariser Platz: Durchfahrt wegen des Obama-Besuchs gesperrt, auch für Radfahrer, 14. Juni bis 21. Juni 2013',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 8538,12245 8610,12254 8731,12270 8804,12280
+userdel	2::temp 8538,12245 8592,12252 8637,12258 8722,12268 8804,12280
 EOF
      },
      { from  => 1371074400, # 2013-06-13 00:00
@@ -21751,7 +21753,7 @@ EOF
 	2::temp 7946,12932 7930,12912 7923,12876 7923,12872 7931,12876 7945,12878
 	2::temp 8119,12414 8354,12416 8400,12417 8540,12420 8775,12457
 	2::temp 8775,12457 8804,12280 8861,12125
-	2::temp 9141,12320 9028,12307 8804,12280 8731,12270 8610,12254 8538,12245 8344,12221 8303,12216 8214,12205
+	2::temp 9141,12320 9028,12307 8804,12280 8722,12268 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205
 	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066 8577,11896 8571,11846
 	2::temp 8595,12066 8737,12098 8743,12099 8861,12125
 	2::temp 8354,12416 8391,12389 8546,12279
@@ -22929,7 +22931,7 @@ EOF
 #: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
 userdel	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
 userdel	2::inwork 8573,12325 8540,12420
-userdel	2::inwork 8303,12216 8344,12221 8538,12245 8610,12254
+userdel	2::inwork 8303,12216 8344,12221 8538,12245 8592,12252
 userdel	2::inwork 8089,12190 8214,12205
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
@@ -23056,7 +23058,7 @@ userdel	2::temp 7816,12150 8055,12186 8049,12140 8122,12147 8215,12156 8327,1217
 userdel	2::temp 7383,12095 7026,12054 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120
 userdel	2::temp 8055,12186 8089,12190 8214,12205
 userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8215,12156
-userdel	2::temp 8610,12254 8538,12245 8522,12187
+userdel	2::temp 8592,12252 8538,12245 8522,12187
 userdel	2::temp 8538,12245 8600,12165 8595,12066
 userdel	2::temp 8055,12186 8119,12414
 userdel auto	3 7026,12054 7031,12024 7059,11978
@@ -23532,15 +23534,16 @@ EOF
 userdel	q4::inwork; 5317,12242 5518,12159 5424,11944
 EOF
      },
-     { from  => $isodate2epoch->("2016-09-09 00:00:00"), # 1410519600, # 2014-09-12 13:00
-       until => $isodate2epoch->("2016-09-10 23:59:59"), # 1410624000, # 2014-09-13 18:00
+     { from  => $isodate2epoch->("2017-09-15 00:00:00"),
+       until => $isodate2epoch->("2017-09-16 23:59:59"),
        periodic => 1,
        recurrences => [["yearly", days => 9, months => 9]],
-       text  => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 10. September 2016, 14 bis 18 Uhr ',
+       text  => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 16. September 2017, 14 bis 18 Uhr ',
        type  => 'gesperrt',
-       source_id => 'http://www.quartiersmanagement-berlin.de/veranstaltungen/moabit-west-beusselstrasse/termin/calendar/2016/09/10/event/tx_cal_phpicalendar/moabiter_kiezfest_2016/print.html',
+       source_id => 'https://misch-mit.net/strassenfest-ums-rathaus-moabit-10-sept-2016-2/',
        data  => <<EOF,
-#: tempex YYYY09 & sa2 & T14-T18
+# REMOVED --- : tempex YYYY09 & sa2 & T14-T18
+#: tempex YYYY09 & sa3 & T14-T18
 userdel	2::temp 5857,13342 5868,13441 5882,13548
 EOF
      },
@@ -24452,16 +24455,16 @@ EOF
 	q4; 15205,11080 15102,11120 15021,11152 14988,11130
 EOF
      },
-     { from  => $isodate2epoch->("2017-01-16 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-01-19 23:59:59"),
+     { from  => $isodate2epoch->("2017-07-03 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-07-06 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 1],
                        ['yearly', days => 27, months => 6]],
-       text  => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 17.01.2017-19.01.2017',
+       text  => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 04.07.2017-06.07.2017',
        type  => 'handicap',
        source_id => '2147339708',
        data  => <<EOF,
-#: tempex: (YYYY01 & tu3) - +2d vvv
+#: tempex: (YYYY01 & tu3) - +2d, (YYYY07 & tu1) - +2d vvv
 userdel	q4::inwork 8634,10426 8384,10507 8527,10621
 userdel	q4::inwork 8348,10636 8335,10518 8350,10499
 #: tempex ^^^
@@ -25654,7 +25657,7 @@ EOF
        source_id => '2147339672',
        data  => <<EOF,
 userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
-userdel	2::temp 8600,12165 8538,12245 8610,12254
+userdel	2::temp 8600,12165 8538,12245 8592,12252
 userdel auto	3 8522,12239 8538,12245 8522,12187
 userdel auto	3 8522,12187 8538,12245 8522,12239
 userdel auto	3 8391,12389 8344,12221 8327,12174
@@ -25906,8 +25909,8 @@ userdel	q3::inwork; 8385,6034 8532,6015
 EOF
      },
      { from  => 1488236400, # 2017-02-28 00:00
-       until => $isodate2epoch->("2017-06-14 18:00:00"), # 1493589599, # 2017-04-30 23:59
-       text  => 'Kantstr.: Richtung Budapester Str. ab Joachimsthaler Str. gesperrt, voraussichtlich bis Mitte Juni 2017',
+       until => $isodate2epoch->("2017-06-16 18:00:00"), # 1493589599, # 2017-04-30 23:59
+       text  => 'Kantstr.: Richtung Budapester Str. ab Joachimsthaler Str. gesperrt, voraussichtlich bis 16. Juni 2017',
        type  => 'handicap',
        source_id => '2147341048',
        data  => <<EOF,
@@ -25987,8 +25990,8 @@ userdel	q4::inwork 18009,18946 17900,18972 17890,18973 17799,19000 17697,18989 1
 EOF
      },
      { from  => 1492466400, # 2017-04-18 00:00
-       until => $isodate2epoch->("2017-05-10 18:00:00"), # 1494885599, # 2017-05-15 23:59
-       text  => 'Pfarrstr. zwischen Wiesenweg und Hauffstr.: Brückenarbeiten, langsames Passieren für Radfahrer möglich; außerdem Einbahnstraßenregelung im Wiesenweg, bis 10. Mai 2017',
+       until => $isodate2epoch->("2017-05-15 18:00:00"), # laut rbbtext bis 15.5.
+       text  => 'Pfarrstr. zwischen Wiesenweg und Hauffstr.: Brückenarbeiten, langsames Passieren für Radfahrer möglich; außerdem Einbahnstraßenregelung im Wiesenweg, bis 15. Mai 2017',
        type  => 'handicap',
        source_id => '2147341208',
        data  => <<EOF,
