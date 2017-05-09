@@ -636,8 +636,8 @@ EOF
 		 -command => sub {
 		     _require_BBBikeOsmUtil();
 		     my $url  = BBBikeOsmUtil::get_download_url(BBBikeOsmUtil::get_visible_area());
-		     my $url2 =BBBikeOsmUtil::get_fallback_download_url(BBBikeOsmUtil::get_visible_area());
-		     main::status_message("Official URL: $url\nFallback URL: $url2", "infodlg");
+		     my $url2 = BBBikeOsmUtil::get_overpass_download_url(BBBikeOsmUtil::get_visible_area());
+		     main::status_message("Official URL: $url\nOverpass URL: $url2", "infodlg");
 		 }],
 		"-",
 		[Button => 'Set Merkaartor Icon Style',
