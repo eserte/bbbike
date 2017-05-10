@@ -30,6 +30,7 @@ matrix:
   include:
     - perl: "5.14"
       env: USE_MODPERL=1 USE_SYSTEM_PERL=1
+      dist: precise
     - perl: "5.20"
       env: BBBIKE_TEST_SKIP_MODPERL=1
     - perl: "5.18"
@@ -47,7 +48,13 @@ matrix:
       env: BBBIKE_TEST_SKIP_MODPERL=1
     - perl: "5.20-shrplib"
       env: USE_MODPERL=1
+    - perl: "5.14"
+      env: USE_MODPERL=1 USE_SYSTEM_PERL=1
   allow_failures:
 ## XXX because of problems with cgi-mechanize* tests
     - perl: "5.20-shrplib"
+      dist: trusty
+## XXX various failures: wwwdata.t, sometimes server-check.t
+    - perl: "5.14"
+      env: USE_MODPERL=1 USE_SYSTEM_PERL=1
       dist: trusty
