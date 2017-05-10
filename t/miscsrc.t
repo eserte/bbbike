@@ -76,7 +76,9 @@ for my $f (@files) {
 	    if $f =~ m{/correct_data.pl$} && !eval { require DB_File::Lock; 1 };
 	myskip "$f works only with perl >= 5.10.0", 1
 	    if $f =~ m{/cvsdiffbbd} && $] < 5.010;
-	
+	myskip "$f works only with installed Algorithm::Diff", 1
+	    if $f =~ m{/diffbbd$} && !eval { require Algorithm::Diff; 1 };
+
 	my @add_opts;
 	if ($f =~ m{\.pm$}) {
 	    push @add_opts, "-I$cwd", "-I$cwd/lib", "-I$cwd/miscsrc";
