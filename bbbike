@@ -20848,6 +20848,9 @@ sub DecBusy {
 ### AutoLoad Sub
 sub redisplay_top {
     my($top, $name, %args) = @_;
+## DEBUG_BEGIN
+#warn "redisplay_top: called with $top $name " . join(" ", %args);
+## DEBUG_END	   
     my $force = delete $args{-force};
     my $deiconify = (exists $args{-deiconify} ? delete $args{-deiconify} : 1);
     my $raise     = (exists $args{-raise}     ? delete $args{-raise}     : 1);
@@ -21769,11 +21772,21 @@ sub toplevel_checker {
     $t->update;
     my($sw,$sh) = ($t->screenwidth, $t->screenheight);
     my($x,$y,$w,$h) = ($t->x, $t->y, $t->width, $t->height);
+    my $old_windim = "${w}x${h}+$x+$y";
+## DEBUG_BEGIN
+#warn "toplevel_checker: screendim=${sw}x${sh} windowdim=$old_windim";
+## DEBUG_END
     $w = $sw if ($w > $sw);
     $h = $sh if ($h > $sh);
     $x = 0 if ($x+$w > $sw || $x < 0);
     $y = 0 if ($y+$h > $sh || $y < 0);
-    $t->geometry($w."x".$h."+$x+$y");
+    my $new_windim = "${w}x${h}+$x+$y";
+    if ($new_windim ne $old_windim) {
+## DEBUG_BEGIN
+#warn "toplevel_checker: ->geometry set to: $new_windim";
+## DEBUG_END
+	$t->geometry($new_windim);
+    }
 }
 
 sub get_polar_location_of_route_end {
