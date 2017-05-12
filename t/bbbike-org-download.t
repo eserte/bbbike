@@ -50,16 +50,20 @@ plan skip_all => 'Mysterious download fails' if $ENV{APPVEYOR}; # for example: h
 plan 'no_plan';
 
 my $city;
-GetOptions('city=s' => \$city)
-    or die "usage: $0 [-city ...]\n";
+# Enable debugging by default on Windows, because of download problems
+# seen in appveyor environment.
+my $debug = ($^O eq 'MSWin32');
+GetOptions(
+    'city=s' => \$city,
+    'debug!' => \$debug,
+)
+    or die "usage: $0 [-city ...] [-[no]debug]\n";
 
 my $download_script = "$FindBin::RealBin/../miscsrc/bbbike.org_download.pl";
 
 ok -e $download_script, 'Download script exists';
 
-# Enable debugging only on Windows, because of download problems
-# seen in appveyor environment.
-my @debug_opts = $^O eq 'MSWin32' ? ('-debug'): ();
+my @debug_opts = $debug ? ('-debug'): ();
 
 my @listing;
 {

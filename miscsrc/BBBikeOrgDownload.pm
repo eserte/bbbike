@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2016,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package BBBikeOrgDownload;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.04';
+$VERSION = '0.05';
 
 use File::Basename qw(basename);
 use File::Temp qw(tempdir);
@@ -107,9 +107,11 @@ sub get_city {
 	if !$resp->is_success;
 
     print STDERR "Extracting data to $data_osm_directory...\n" if $debug;
-    if (eval { require Archive::Tar; Archive::Tar->has_bzip2_support }) {
+    if (eval { require Archive::Tar; Archive::Tar->has_bzip2_support; $Archive::Tar::VERSION < 2.24 }) {
 	# Workaround for pbzip2-compressed tarballs, see
 	# https://rt.cpan.org/Ticket/Display.html?id=119262
+	# Fixed in 2.24
+	print STDERR "Monkey-patching Archive::Tar $Archive::Tar::VERSION...\n" if $debug;
 	no warnings 'redefine';
 	local *Archive::Tar::_get_handle = sub {
 	    my($self, $file) = @_;
