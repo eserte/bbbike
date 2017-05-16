@@ -25628,7 +25628,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-04-28 vvv
+#: last_checked: 2017-05-15 vvv
 #: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -25929,12 +25929,12 @@ userdel	q4::inwork; 9183,12076 9164,12172
 EOF
      },
      { from  => 1491170400, # 2017-04-03 00:00
-       until => 1504303199, # 2017-09-01 23:59
-       text  => 'Albrechtstr.: Bauarbeiten zwischen Neue Filandastr. und Breite Str., Einbahnstraße offen Richtung Osten, vom 4. April 2017 bis Anfang September 2017',
+       until => $isodate2epoch->("2017-08-15 18:00:00"), # 1504303199, # 2017-09-01 23:59
+       text  => 'Albrechtstr.: Bauarbeiten zwischen Neue Filandastr. und Breite Str., Einbahnstraße offen Richtung Osten, vom 4. April 2017 bis Mitte August 2017',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.576875.php',
        data  => <<EOF,
-#: note: laut vmz nur bis Ende Juli 2017
+#: note: laut vmz nur bis Ende Juli 2017, dann Mitte August 2017
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.579822.php (weiterhin bis September 2017)
 #: source_id: 2147341144
 userdel	q4::inwork; 5583,5179 5527,5217 5416,5289 5397,5302 5382,5312
@@ -26016,6 +26016,15 @@ EOF
        source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.579605.php',
        data  => <<EOF,
 userdel	q4::inwork 3957,23981 4073,23980 4240,23985 4256,23985 4316,23995 4397,24033 4425,24067
+EOF
+     },
+     { from  => 1494777600, # 2017-05-14 18:00
+       until => 1495519200, # 2017-05-23 08:00
+       text  => 'Wollankstraße: Bauarbeiten für eine neue Bahnbrücke, Sperrung auch für Radfahrer, vom 15. Mai 2017 bis 23. Mai 2017',
+       type  => 'gesperrt',
+       source_id => '2147341281',
+       data  => <<EOF,
+userdel	2::inwork 9549,17625 9590,17662
 EOF
      },
     );

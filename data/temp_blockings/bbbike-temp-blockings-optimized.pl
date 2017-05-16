@@ -844,27 +844,7 @@ userdel	2::temp 6719,10347 6729,10212 6739,10120
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 7107,9030 7044,9163 7022,9211 7006,9292
-userdel	2::temp 6945,9142 7044,9163
-',
-         'from' => 1494540000,
-         'id' => 728,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              24,
-                              'months',
-                              4
-                            ]
-                          ],
-         'source_id' => 'http://www.ms-event-agentur.com/primavera%202013.html?date=20170325',
-         'text' => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (13.5.2017 und 14.5.2017)',
-         'type' => 'gesperrt',
-         'until' => 1494799199
-       },
+       undef,
        undef,
        undef,
        {
@@ -1121,26 +1101,7 @@ userdel	2::temp 6945,9142 7044,9163
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
-',
-         'from' => 1494540000,
-         'id' => 964,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              7,
-                              'months',
-                              5
-                            ]
-                          ],
-         'source_id' => 'http://www.laubinger.de/termine/26-boelschefest-friedrichshagen/',
-         'text' => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (13. und 14. Mai 2017)',
-         'type' => 'gesperrt',
-         'until' => 1494799199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1846,26 +1807,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.family-and-friends-ev.de/termine.html
-userdel	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
-',
-         'from' => 1494540000,
-         'id' => 1642,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              9,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (13. und 14. Mai 2017)',
-         'type' => 'gesperrt',
-         'until' => 1494799199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4359,7 +4301,7 @@ userdel	q4::inwork 12911,1815 12817,2031
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-04-28 vvv
+#: last_checked: 2017-05-15 vvv
 #: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -4489,7 +4431,7 @@ userdel	q4::inwork; 5488,10978 5613,10963 5652,11004
        },
        undef,
        {
-         'data' => '#: note: laut vmz nur bis Ende Juli 2017
+         'data' => '#: note: laut vmz nur bis Ende Juli 2017, dann Mitte August 2017
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.579822.php (weiterhin bis September 2017)
 #: source_id: 2147341144
 userdel	q4::inwork; 5583,5179 5527,5217 5416,5289 5397,5302 5382,5312
@@ -4497,9 +4439,9 @@ userdel	q4::inwork; 5583,5179 5527,5217 5416,5289 5397,5302 5382,5312
          'from' => 1491170400,
          'id' => 2853,
          'source_id' => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.576875.php',
-         'text' => 'Albrechtstr.: Bauarbeiten zwischen Neue Filandastr. und Breite Str., Einbahnstraße offen Richtung Osten, vom 4. April 2017 bis Anfang September 2017',
+         'text' => 'Albrechtstr.: Bauarbeiten zwischen Neue Filandastr. und Breite Str., Einbahnstraße offen Richtung Osten, vom 4. April 2017 bis Mitte August 2017',
          'type' => 'handicap',
-         'until' => 1504303199
+         'until' => 1502812800
        },
        undef,
        {
@@ -4543,17 +4485,7 @@ userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 
          'type' => 'handicap',
          'until' => 1504195200
        },
-       {
-         'data' => '	q4::inwork 15458,11306 15477,11338
-	q3::inwork; 15055,11505 15162,11458 15220,11440 15303,11412 15477,11338
-',
-         'from' => 1492466400,
-         'id' => 2859,
-         'source_id' => '2147341208',
-         'text' => 'Pfarrstr. zwischen Wiesenweg und Hauffstr.: Brückenarbeiten, langsames Passieren für Radfahrer möglich; außerdem Einbahnstraßenregelung im Wiesenweg, bis 15. Mai 2017',
-         'type' => 'handicap',
-         'until' => 1494864000
-       },
+       undef,
        {
          'data' => '#: last_checked: 2017-04-28
 #: check_frequency: 14d
@@ -4574,6 +4506,16 @@ userdel	q4::inwork; 7201,8870 7107,9030
          'text' => 'Hermsdorfer Damm: Bauarbeiten, Fahrbahn gesperrt, bis voraussichtlich Mitte Oktober 2017',
          'type' => 'handicap',
          'until' => 1508104799
+       },
+       {
+         'data' => 'userdel	2::inwork 9549,17625 9590,17662
+',
+         'from' => 1494777600,
+         'id' => 2862,
+         'source_id' => '2147341281',
+         'text' => 'Wollankstraße: Bauarbeiten für eine neue Bahnbrücke, Sperrung auch für Radfahrer, vom 15. Mai 2017 bis 23. Mai 2017',
+         'type' => 'gesperrt',
+         'until' => 1495519200
        }
      
 );
