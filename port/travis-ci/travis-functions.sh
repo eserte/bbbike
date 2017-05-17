@@ -87,7 +87,9 @@ install_perl_58_dependencies() {
 	# Wrong version specification in DB_File's Makefile.PL, see https://rt.cpan.org/Ticket/Display.html?id=100844
 	#
         # Pegex 0.62 and newer runs only on perl 5.10.0 and newer.
-	cpanm --quiet --notest DBD::XBase~"==0.234" File::Path DB_File~"!=1.833" Pegex~"==0.61"
+	#
+	# Inline::C 0.77 (and probably newer) runs only on perl 5.10.0 and newer.
+	cpanm --quiet --notest DBD::XBase~"==0.234" File::Path DB_File~"!=1.833" Pegex~"==0.61" Inline::C~"==0.76"
     fi
 }
 
