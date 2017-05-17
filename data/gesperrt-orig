@@ -144,7 +144,7 @@ Bersarinplatz	1 13730,12535 13698,12544 13675,12581 13681,12624 13695,12643 1374
 Petersburger Platz	1 13470,12990 13559,12779
 #: add_fragezeichen: Ist die Einbahnstraße mittlerweile für Radfahrer geöffnet oder wird das in Zukunft passieren?
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf
-#: osm_watch: way id="4490214" version="7"
+#: osm_watch: way id="4490214" version="8"
 #: last_checked: 2017-03-25
 #: check_frequency: 100d
 Dernburgstr.	1 2493,10675 2378,10677 2333,10710 2254,11051
@@ -696,8 +696,7 @@ Friedensplatz	1 8971,6154 8994,6144 9003,6121 8996,6106 8976,6094 8952,6109 8944
 Westhafenstr.: Tor kann geschlossen sein; Unbefugten ist das Betreten nicht gestattet	2 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5205,14253
 Frank-Schweitzer-Str.	1 19350,14997 19175,14926 19113,14901 19117,14875 19255,14911
 (Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.)	1 15413,11690 15482,11729 15639,11653
-#: XXX laut osm ist hier keine Einbahnstraße
-Hufelandweg	1s:q3 8630,13172 8618,13306 8582,13355
+# REMOVED (zurzeit keine Einbahnstraße) --- #: XXX laut osm ist hier keine Einbahnstraße --- Hufelandweg	1s:q3 8630,13172 8618,13306 8582,13355
 Sauerbruchweg	1s:q3 8487,13351 8555,13260 8605,13200 8630,13172
 Rahel-Hirsch-Weg	1 8586,13440 8600,13448 8581,13487 8554,13476 8586,13440
 Hempelsteig	1 -787,13147 -525,13034 -472,12961
@@ -1166,6 +1165,7 @@ Floyd-L.-Parks-Weg	1 2352,1267 2315,1251 2370,1127
 Tor	2 8371,13399 8363,13402 8356,13404
 Gravensteinstr.	1s:q3 12229,22457 12185,22465
 Hauptstr. (Französisch Buchholz)	1s:q3 12199,22367 12229,22457
+Karlplatz	1 8676,12976 8711,12986
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -1404,7 +1404,7 @@ Ibsenstr.	1s:q1 10295,16667 10209,16674
 Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: add_fragezeichen: Ist die Einbahnstraße mittlerweile für Radfahrer offen? vvv
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf vvv
-#: osm_watch: way id="183614191" version="4"
+#: osm_watch: way id="183614191" version="5"
 #: last_checked: 2017-03-25
 #: check_frequency: 100d
 Ahornallee	1s:q3 1589,11483 1574,11379
@@ -2791,7 +2791,7 @@ Voltairestr.: Baustelle, Fahrtrichtung gesperrt	1s:q3 11329,12497 11209,12430
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt	1s:q3 5192,10234 5196,10398
 # 
 #: source_id: 2147341003 (Bauarbeiten in der angrenzenden Modersohnstr.)
-#: last_checked: 2017-05-16
+#: last_checked: 2017-05-17
 DB-Werkstraße: Zufahrt zur DB-Werkstraße ist wegen Bauarbeiten gesperrt	2::inwork 14043,10928 14107,10911
 # 
 #: XXX laut fritz bis 30. September 2017
@@ -2835,8 +2835,8 @@ Heidelberger Str.: Baustelle, Einbahnstraßenregelung	1s:q3 13489,9199 13420,9259
 #: XXX offizielle Umleitungsstrecke für Radfahrer via Zinnowitzer Str., danach keine weiteren offiziellen U-Schilder für Radfahrer, vermutlich geht es über Gartenstr. weiter
 #: source_id: 2147340715 vvv
 #: source_id: LMS-BR_r_LMS-BR_82028
-#: osm_watch: way id="42091230" version="18"
-#: osm_watch: way id="52960100" version="9"
+#: osm_watch: way id="42091230" version="19"
+#: osm_watch: way id="52960100" version="10"
 #: last_checked: 2017-05-01 vvv
 #: next_check: 2017-08-30 vvv
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q3 8732,14098 8654,14194
@@ -2952,7 +2952,7 @@ Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 #: XXX Ende der Bauarbeiten?
 #: osm_watch: way id="4610375" version="15"
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
-#: last_checked: 2017-05-08
+#: last_checked: 2017-05-17
 #: check_frequency: 14d
 Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9736,13061 9636,13076
 # REMOVED (hier schon offen) --- Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9636,13076 9559,13087
@@ -3206,7 +3206,7 @@ Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,2
 # 
 #: note: Baugelände
 #: osm_watch: way id="33036326" version="6"
-#: last_checked: 2017-03-25
+#: last_checked: 2017-05-17
 #: check_frequency: 180d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
@@ -3233,7 +3233,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2017-05-15
+#: last_checked: 2017-05-17
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
@@ -3447,8 +3447,7 @@ Tor	BNP:15 1834,8893
 tragen (10 x 3 Stufen)	0:60 2170,8841
 # REMOVED --- tragen	0:40 2316,8593
 tragen (2 x 7 Stufen)	0:30 2316,8469
-#: XXX ist hier noch eine Einbahnstraße?
-Mittelstr.	1 9462,12481 9343,12464
+# REMOVED (nein) --- #: XXX ist hier noch eine Einbahnstraße? --- Mittelstr.	1 9462,12481 9343,12464
 Bauhofstr.	1 9815,12705 9673,12661
 Hollmannstr.	2 9995,10637 9869,10672 9777,10719
 tragen	0:60 -9371,-618

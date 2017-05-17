@@ -1042,7 +1042,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 969
 #: source_id: IM_018997
 #: source_id: IM_023987
 #: source_id: IM_025933
-#: last_checked: 2017-04-28
+#: last_checked: 2017-05-17
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
@@ -1435,7 +1435,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2017-05-15
+#: last_checked: 2017-05-17
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -4866,3 +4866,4 @@ die letzten Meter nur Schutzstreifen	RW4; 18731,8577 18704,8427
 	RW3; 2099,7904 2112,8074
 	RW6;RW6 1370,4547 1313,4566 1287,4577 1223,4635 1166,4566 1269,4444 1313,4566
 	RW6;RW6 15170,10100 15210,10080
+	RW6;RW6 8618,13306 8582,13355 8538,13388

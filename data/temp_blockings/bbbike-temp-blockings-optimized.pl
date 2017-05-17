@@ -4516,6 +4516,27 @@ userdel	q4::inwork; 7201,8870 7107,9030
          'text' => 'Wollankstraße: Bauarbeiten für eine neue Bahnbrücke, Sperrung auch für Radfahrer, vom 15. Mai 2017 bis 23. Mai 2017',
          'type' => 'gesperrt',
          'until' => 1495519200
+       },
+       {
+         'data' => '#: XXX bis wann gehen die Bauarbeiten?
+#: last_checked: 2017-05-17
+userdel	q3::inwork; 8752,12647 8870,12647
+',
+         'from' => undef,
+         'id' => 2863,
+         'text' => 'Schiffbauerdamm: Bauarbeiten, Einbahnstraße, offen Richtung Westen',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => 'userdel	q3::inwork 10264,13097 10310,13227 10317,13248
+',
+         'from' => 1494442386,
+         'id' => 2864,
+         'source_id' => '2147341279',
+         'text' => 'Rosenthaler Str.: Straßenbauarbeiten in Höhe Neue Schönhauser Str.. Fahrbahn gesperrt, bis 31. Mai 2017',
+         'type' => 'handicap',
+         'until' => 1496267999
        }
      
 );

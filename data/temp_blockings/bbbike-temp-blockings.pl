@@ -26027,4 +26027,23 @@ EOF
 userdel	2::inwork 9549,17625 9590,17662
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Schiffbauerdamm: Bauarbeiten, Einbahnstraße, offen Richtung Westen',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX bis wann gehen die Bauarbeiten?
+#: last_checked: 2017-05-17
+userdel	q3::inwork; 8752,12647 8870,12647
+EOF
+     },
+     { from  => 1494442386, # 2017-05-10 20:53
+       until => 1496267999, # 2017-05-31 23:59
+       text  => 'Rosenthaler Str.: Straßenbauarbeiten in Höhe Neue Schönhauser Str.. Fahrbahn gesperrt, bis 31. Mai 2017',
+       type  => 'handicap',
+       source_id => '2147341279',
+       data  => <<EOF,
+userdel	q3::inwork 10264,13097 10310,13227 10317,13248
+EOF
+     },
     );
