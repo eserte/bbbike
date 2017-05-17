@@ -37,8 +37,8 @@ use Strassen::Core;
 
 my $bbbike_url               = "http://bbbike.de";
 my $bbbike_data_url          = "http://bbbike.de/BBBike/data";
-my $bbbike_pps_url           = "http://bbbike-pps";
-my $bbbike_data_pps_url      = "http://bbbike-pps/BBBike/data";
+my $bbbike_pps_url           = "http://bbbike-pps-jessie";
+my $bbbike_data_pps_url      = "http://bbbike-pps-jessie/BBBike/data";
 
 my @urls;
 if ($ENV{BBBIKE_TEST_HTMLDIR}) {

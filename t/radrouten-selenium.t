@@ -15,9 +15,9 @@ use BBBikeTest qw($mapserverstaticurl selenium_diag);
 my $doit;
 my $debug;
 my $root_url = "$mapserverstaticurl/brb/radroute.html";
-# To test on bbbike-pps call with:
+# To test on bbbike-pps-jessie call with:
 #
-#    perl t/radrouten-selenium.t -doit -rooturl http://bbbike-pps/mapserver/brb/radroute.html
+#    perl t/radrouten-selenium.t -doit -rooturl http://bbbike-pps-jessie/mapserver/brb/radroute.html
 #
 GetOptions(
            "doit" => \$doit,
