@@ -2864,10 +2864,7 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3 9042,11839 8969,118
 #: next_check: 2017-09-02
 Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,14449 7561,14458 7426,14539 7368,14573
 # 
-#: last_checked: 2017-05-08 (nur noch ein paar Meter Richtung Weigandufer gesperrt)
-#: check_frequency: 7d
-Weichselplatz: Uferweg wegen Bauarbeiten gesperrt	2::inwork 12851,9309 12907,9073
-# 
+# REMOVED --- #: last_checked: 2017-05-08 (nur noch ein paar Meter Richtung Weigandufer gesperrt) --- #: check_frequency: 7d --- Weichselplatz: Uferweg wegen Bauarbeiten gesperrt	2::inwork 12851,9309 12907,9073
 # REMOVED (Baugrube) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2016 --- #: osm_watch: note 848012 1 --- #: last_checked: 2016-12-15 --- #: check_frequency: 180d --- Sülzhayner Str.: komplett gesperrt wegen Bauarbeiten, vielleicht dauerhaft	2::inwork 13420,9259 13397,9234
 # 
 #: next_check_id: ACHTERKASTELL-2016

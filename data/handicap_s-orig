@@ -23,7 +23,7 @@
 #: last_checked: 2017-05-15
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2017-05-16
+#: last_checked: 2017-05-18
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 # REMOVED --- Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
@@ -277,7 +277,7 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # 
 #: source_id: 2147341140
 #: XXX laut fritz bis 08.06.2017, laut rbbtext bis 06.06.2017, laut vmz bis Anfang Juni 2017
-#: last_checked: 2017-04-26
+#: last_checked: 2017-05-18
 #: next_check: 2017-06-08
 #: valid: -20170608
 Erkelenzdamm: Bauarbeiten zwischen Böcklerstr. und Kohlfurter Str., Fahrbahn gesperrt, Bordsteine	q3::inwork 10967,10092 11038,10247 11094,10261
@@ -338,14 +338,14 @@ Neuenburger Str.: Bauarbeiten, Sperrung der Fahrbahn	q2::inwork 10178,10411 9955
 # 
 #: XXX nach den Bauarbeiten wird die Straße zur Einbahnstraße. Auch für Radfahrer? Ende der Bauarbeiten: Oktober 2017
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.586667.php
-#: last_checked: 2017-05-08
+#: last_checked: 2017-05-18
 #: next_check: 2017-10-01
 Kiehlufer: Bauarbeiten, Fahrbahn gesperrt, Bordsteine beim Ausweichen auf dem Gehweg	q3::inwork 12897,9365 12950,9132
 # 
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 7d vvv --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12761,9190 12851,9309 12844,9351 --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12907,9073 12761,9190 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4952&mt=0&zoom=17
-#: last_checked: 2017-04-27
+#: last_checked: 2017-05-18
 #: next_check: 2018-06-01
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 
@@ -1130,7 +1130,7 @@ Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 (Schmidstr. - Heinrich-Heine-Str.): Bordsteine, Fußgänger	q3 11236,11508 11170,11558
 #: XXX_prog BS am westlichen Ende, östliches ist leicht abgesenkt und eigentlich kein Problem (wenn es nicht zugeparkt ist)
 (Entlang des Stadtbahnviadukts): Bordsteine, Fußgänger	q2 11966,11832 12132,11788
-(Maybachufer - Weigandufer): Radfahren nicht erlaubt, ggfs. schieben	q3 12851,9309 12907,9073
+(Maybachufer - Weigandufer): Fußgänger	q3+ 12851,9309 12907,9073
 (an der Notfallaufnahme Charité): Notfallwagen, Fußgänger	q2 8833,13440 8836,13396 8806,13384 8736,13369 8665,13353
 #: XXX_prog BS am westlichen Ende, am östlichen existiert eine Bordsteinabsenkung; ansonsten q2
 (Lasdehner Str. - Gubener Str.): Fußgänger, Bordsteine	q3 13375,12062 13339,12029
@@ -1207,6 +1207,9 @@ Stendaler Platz: Fußgänger, Spielplatz	q2 6394,14085 6489,14071
 Washingtonplatz: querende Fußgänger, Taxis	q2; 7937,13126 8011,13128 8106,13130
 #: XXX_prog: eigentlich 1s:q3 in gesperrt-orig, aber Konflikt mit dem handicap_s-Eintrag in die andere Richtung (stimmt das?)
 Washingtonplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 8106,13130 8011,13128 7937,13126
+#: XXX_prog: die Verlangsamung eigentlich nur durch das "Vorfahrt gewähren" verursacht, hier explizit gemacht, damit bei "Ampeloptimierung" keine unnötigen Schlenker gemacht werden. Leider reicht q3 hier nicht aus. Durch gerichtete Handicaps ersetzen, sobald implementiert.
+#: note: Heinrichplatz
+	q4::igndisp 11754,10516 11734,10563 11690,10543 11708,10497 11754,10516
 südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7437,12368 7561,12527 7670,12576
 (Ruwersteig - Klüsserather Weg): gemeinsamer Rad- und Gehweg, eng und kurvig	q2 19364,13033 19376,13092 19425,13089
 (Fontanestr. - Kopenhagener Str.): Fußgänger	q2 7522,19804 7518,19762 7617,19748

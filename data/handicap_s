@@ -544,7 +544,7 @@ Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 (Aldi/Getränke-Hoffmann-Parkplatz): Parkplatz	q1 13208,11658 13186,11692 13173,11788
 (Schmidstr. - Heinrich-Heine-Str.): Bordsteine, Fußgänger	q3 11236,11508 11170,11558
 (Entlang des Stadtbahnviadukts): Bordsteine, Fußgänger	q2 11966,11832 12132,11788
-(Maybachufer - Weigandufer): Radfahren nicht erlaubt, ggfs. schieben	q3 12851,9309 12907,9073
+(Maybachufer - Weigandufer): Fußgänger	q3 12851,9309 12907,9073
 (an der Notfallaufnahme Charité): Notfallwagen, Fußgänger	q2 8833,13440 8836,13396 8806,13384 8736,13369 8665,13353
 (Lasdehner Str. - Gubener Str.): Fußgänger, Bordsteine	q3 13375,12062 13339,12029
 Perleberger - Kieler: unterhalb der Brücke sehr eng	q3 7636,14414 7612,14449
@@ -605,6 +605,7 @@ Görresstr.: enge Straße	q1 5073,7660 5188,7536 5272,7458 5318,7424
 Stendaler Platz: Fußgänger, Spielplatz	q2 6394,14085 6489,14071
 Washingtonplatz: querende Fußgänger, Taxis	q2; 7937,13126 8011,13128 8106,13130
 Washingtonplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 8106,13130 8011,13128 7937,13126
+	q4::igndisp 11754,10516 11734,10563 11690,10543 11708,10497 11754,10516
 südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7437,12368 7561,12527 7670,12576
 (Ruwersteig - Klüsserather Weg): gemeinsamer Rad- und Gehweg, eng und kurvig	q2 19364,13033 19376,13092 19425,13089
 (Fontanestr. - Kopenhagener Str.): Fußgänger	q2 7522,19804 7518,19762 7617,19748
