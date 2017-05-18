@@ -89,7 +89,11 @@ install_perl_58_dependencies() {
         # Pegex 0.62 and newer runs only on perl 5.10.0 and newer.
 	#
 	# Inline::C 0.77 (and probably newer) runs only on perl 5.10.0 and newer.
-	cpanm --quiet --notest DBD::XBase~"==0.234" File::Path DB_File~"!=1.833" Pegex~"==0.61" Inline::C~"==0.76"
+	#cpanm --quiet --notest DBD::XBase~"==0.234" File::Path DB_File~"!=1.833" Pegex~"==0.61" Inline::C~"==0.76"
+	# XXX Currently it's not possible to fetch old backpan versions
+        # XXX with cpanm using the version number. See
+        # XXX https://github.com/miyagawa/cpanminus/issues/538
+	cpanm --quiet --notest http://backpan.perl.org/authors/id/J/JA/JANPAZ/DBD-XBase-0.234.tar.gz File::Path DB_File~"!=1.833" Pegex~"==0.61" Inline::C~"==0.76"
     fi
 }
 
