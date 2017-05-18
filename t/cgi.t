@@ -320,8 +320,8 @@ for my $cgiurl (@urls) {
 
     {
 	# Start and goal are in plaetze
-	my $content = std_get "$action?start=heinrichplatz&starthnr=&startcharimg.x=&startcharimg.y=&startmapimg.x=&startmapimg.y=&via=&viahnr=&viacharimg.x=&viacharimg.y=&viamapimg.x=&viamapimg.y=&ziel=gesundbrunnen&zielhnr=&zielcharimg.x=&zielcharimg.y=&zielmapimg.x=&zielmapimg.y=&scope=", testname => "Heinrichplatz - Gesundbrunnen";
-	like_html $content, qr/Start.*startc.*startname.*Heinrichplatz/, "Start is Heinrichplatz"
+	my $content = std_get "$action?start=kollwitzplatz&starthnr=&startcharimg.x=&startcharimg.y=&startmapimg.x=&startmapimg.y=&via=&viahnr=&viacharimg.x=&viacharimg.y=&viamapimg.x=&viamapimg.y=&ziel=gesundbrunnen&zielhnr=&zielcharimg.x=&zielcharimg.y=&zielmapimg.x=&zielmapimg.y=&scope=", testname => "Kollwitzplatz - Gesundbrunnen";
+	like_html $content, qr/Start.*startc.*startname.*Kollwitzplatz/, "Start is Kollwitzplatz"
 	    or diag "Test may fail if start is not in file plaetze";
 	like_html $content, qr/Ziel.*zielc.*zielname.*Gesundbrunnen/, "Goal is Gesundbrunnen"
 	    or diag "Test may fail if goal is not in file plaetze";
