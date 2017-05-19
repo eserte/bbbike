@@ -387,6 +387,7 @@ userdel	2::temp 11805,10899 11803,10857
 userdel	2::temp 11275,10723 11301,10783 11329,10785 11365,10791 11403,10782 11505,10744 11463,10642 11690,10543 11721,10530
 userdel	2::temp 11841,10747 11770,10774 11799,10848
 userdel	2::temp 11463,10642 11275,10723 11234,10739 11159,10769
+	2::temp 11708,10497 11690,10543 11734,10563 11754,10516 11708,10497
 userdel auto	3 11258,10682 11275,10723 11253,10778
 userdel auto	3 11253,10778 11275,10723 11258,10682
 #: tempex ^^^
@@ -8132,12 +8133,12 @@ EOF
 userdel	2::temp 6228,13324 6115,13328 6105,13328 6011,13330 5956,13330 5857,13342 5705,13359
 EOF
      },
-     { from  => 1304632800, # 1178379282, # 2007-05-05 17:34 # erster Termin im Jahr
-       until => 1304892000, # 1178488800, # 2007-05-07 00:00
-       text  => 'Alt-Rudow (Rudow) in beiden Richtungen zwischen Köpenicker Str. und Krokusstr. Veranstaltung, Straße vollständig gesperrt (7. und 8. Mai 2011)',
+     { from  => $isodate2epoch->("2017-05-18 00:00:00"), # ein Tag Vorlauf
+       until => $isodate2epoch->("2017-05-20 23:59:59"),
+       text  => 'Alt-Rudow: Frühlingsfest, Straße zwischen Bildhauerweg und Krokusstr. gesperrt (19. und 20. Mai 2017)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 16849,1437 16805,1488 16610,1715
+userdel	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
 EOF
      },
      { from  => 1178564497, # 2007-05-07 21:01
@@ -26004,7 +26005,7 @@ EOF
        text  => 'Akazienstr.: Bauarbeiten, Einbahnstraßenregelung',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2017-04-28
+#: last_checked: 2017-05-19
 #: check_frequency: 14d
 userdel	q4::inwork; 7201,8870 7107,9030
 EOF

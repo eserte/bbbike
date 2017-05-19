@@ -1202,8 +1202,9 @@ Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW5; 6460,8688 6449,8807 6449,8845 6445
 	RW1;RW1 7402,8208 7446,8200 7497,8168 7582,8123 7639,8091 7710,8051 7733,8023
 #: XXX Wilhelm-Kabus-Str.: eventuell wird der Gehweg Richtung Süden für Radfahrer freigegeben
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4159&options=4
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4159
 #: last_checked: 2017-02-24
-#: check_frequency: 60d
+#: check_frequency: 120d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
 	RW2;RW4 7717,7879 7718,7820 7696,7771
 	RW2;RW0 4324,8899 4325,8998 4325,9082 4325,9159 4339,9224 4377,9258
@@ -1419,7 +1420,10 @@ Busspur gilt Mo-Fr 7-9 Uhr und 14-17 Uhr	RW5; 9795,10512 9858,10350
 Radspur fängt nach der Bushaltestelle an	RW4; 10213,11728 10221,11678 10201,11631
 	RW6;RW6 10032,10752 9829,10830
 	RW6;RW6 9973,11150 10163,11070
-	RW1;RW1 10122,10294 10178,10411 10293,10645 10329,10723 10397,10852 10501,11056
+	RW1;RW1 10122,10294 10178,10411
+	RW1; 10178,10411 10293,10645
+vorhandener Radweg ist abgesperrt	RW0; 10293,10645 10178,10411
+	RW1;RW1 10293,10645 10329,10723 10397,10852 10501,11056
 Busspur gilt Mo-Fr 7-18 Uhr	RW5; 9341,11186 9196,11165
 Busspur gilt Mo-Fr 7-18 Uhr	RW5;RW5 9492,11209 9341,11186
 Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 9492,11209

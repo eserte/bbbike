@@ -23,7 +23,7 @@
 #: last_checked: 2017-05-15
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2017-05-18
+#: last_checked: 2017-05-19
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 # REMOVED --- Döringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
@@ -74,9 +74,9 @@ Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11
 #: by: wosch
 #: confirmed_by: srt
 #: source_id: 2147340953
-#: XXX laut VMZ und rbbtext bis Ende Mai 2017
+#: XXX laut VMZ mittlerweile entfernt, bei rbbtext bis Ende Mai 2017
 #: last_checked: 2017-04-28
-#: next_check: 2017-05-31
+#: next_check: 2017-05-19
 Schloßplatz: Engstelle wegen Bauarbeiten	q3::inwork 10285,12306 10357,12356
 # 
 # REMOVED --- #: last_checked: 2017-03-24 --- Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
@@ -293,9 +293,7 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 #: source_id: 2147341141
 #: source_id: LMS-BR_r_LMS-BR_93355
 #: XXX laut vmz bis Mitte Mai 2017, laut fritz bis 19. Mai 2017
-#: last_checked: 2017-05-06
-#: next_check: 2017-05-19
-#: valid: -20170519
+#: last_checked: 2017-05-19
 Neuenburger Str.: Bauarbeiten, Sperrung der Fahrbahn	q2::inwork 10178,10411 9955,10501
 # 
 # REMOVED --- #: next_check_id: BAERWALDSTR-2017 --- #: last_checked: 2017-03-25 --- Wilmsstr.: Bauarbeiten an der Baerwaldstr.	q2::inwork 10480,9949 10627,9912
@@ -400,7 +398,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süde
 # 
 ### Schöneberg ###
 # 
-#: last_checked: 2017-04-25
+#: last_checked: 2017-05-19
 #: check_frequency: 14d
 Bautzener Str.: Bauarbeiten an der Großgörschenstr., auf Gehweg ausweichen	q4::inwork 8186,9380 8185,9338
 # 

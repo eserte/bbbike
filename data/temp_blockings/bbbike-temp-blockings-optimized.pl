@@ -1089,7 +1089,15 @@ userdel	2::temp 6719,10347 6729,10212 6739,10120
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
+',
+         'from' => 1495058400,
+         'id' => 952,
+         'text' => 'Alt-Rudow: Frühlingsfest, Straße zwischen Bildhauerweg und Krokusstr. gesperrt (19. und 20. Mai 2017)',
+         'type' => 'gesperrt',
+         'until' => 1495317599
+       },
        undef,
        undef,
        undef,
@@ -4487,7 +4495,7 @@ userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 
        },
        undef,
        {
-         'data' => '#: last_checked: 2017-04-28
+         'data' => '#: last_checked: 2017-05-19
 #: check_frequency: 14d
 userdel	q4::inwork; 7201,8870 7107,9030
 ',
