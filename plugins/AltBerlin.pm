@@ -60,12 +60,12 @@ sub register {
     if ($is_berlin) {
 	_create_image();
 	$main::info_plugins{__PACKAGE__ . ""} =
-	    { name => "Alt-Berlin (1946) (kaputt)", # XXX currently (2016-12-17) the website exists, but is broken
+	    { name => "Alt-Berlin (1946)",
 	      callback => sub { altberlin(@_, stadtplannr => 10) },
 	      #callback_3_std => sub { altberlin_url(@_) },
 	      callback_3 => sub { show_all_urls_menu(@_) },
 	      icon => $icon,
-	      order => 'last',
+	      #order => 'last',
 	    };
     } else {
 	main::status_message("Das AltBerlin-Plugin ist nur für Berlin verfübar.", "err")
@@ -108,7 +108,8 @@ sub altberlin_url {
     my $py = $args{py};
     my $nr = $args{stadtplannr};
 
-    sprintf "http://www.alt-berlin.info/cgi/stp/lana.pl?nr=%s&gr=5&nord=%f&ost=%f", $nr, $py, $px;
+    #sprintf "http://www.alt-berlin.info/cgi/stp/lana.pl?nr=%s&gr=5&nord=%f&ost=%f", $nr, $py, $px;
+    sprintf 'http://www.alt-berlin.info/cgi-bin/alt-berlin.info/stp/lana.pl?nr=%s&gr=7&nord=%f&ost=%f', $nr, $py, $px;
 }
 
 sub altberlin {
