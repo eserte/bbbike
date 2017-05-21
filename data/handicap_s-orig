@@ -20,7 +20,7 @@
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # REMOVED (fertig) --- #: last_checked: 2017-05-09 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
-#: last_checked: 2017-05-15
+#: last_checked: 2017-05-21
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
 #: last_checked: 2017-05-19
@@ -465,6 +465,13 @@ Wiltbergstr.: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inw
 # 
 # REMOVED (laut osm für Radfahrer bereits befahrbar) --- #: next_check_id: ZIMMERMANNSTRBR-2015 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5575.html --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/zimmermannstrassenbruecke/ --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6162.html --- #: XXX Radfahrer können weiterhin passieren, zunächst über den nördlichen Gehweg, später über eine Behelfsbrücke (Breite 2,50m) --- #: XXX nach den Bauarbeiten (bis 2016-08?) wird es hier Radspuren geben --- #: XXX laut rbbtext bis 31.03.2016 --- #: XXX laut vmz bis Ende Oktober 2016, laut fritz bis 15.09.2016, laut Pressemitteilung Mitte September --- #: source_id: IM_024857 --- #: source_id: 2147339545 --- #: osm_watch: way id="25795962" version="15"  --- #: last_checked: 2016-06-19 --- #: next_check: 2016-09-15 --- Zimmermannstraßenbrücke: Bau einer neuen Brücke, Radfahrer müssen den Gehweg bzw. Behelfsbrücke benutzen	q4::inwork 21430,9026 21383,9045 21365,9059 21349,9062 21314,9083
 # 
+### Bohnsdorf ###
+#: source_id: 2147341295
+#: osm_watch: way id="410955359" version="3"
+#: last_checked: 2017-05-21
+#: next_check: 2017-10-31
+Am Falkenberg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 21862,807 22007,711
+# 
 #: temporary ^^^
 ######################################################################
 #: next_check_id: WUHLEWANDERWEG-2014 vvv
@@ -528,22 +535,21 @@ Rathausstr.: Fußgänger, Bauarbeiten	q1- 10923,12779 10704,12595
 Dircksenstr.: langsame Straßenbahnen, Fußgänger	q2 10970,12822 10849,12944
 Dircksenstr.: Fußgänger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
 Gontardstr.: langsame Straßenbahnen, Fußgänger	q2 10733,12967 10801,12901 10923,12779
-#: by: http://www.berliner-woche.de/alt-treptow/verkehr/radelverbot-im-park-bleibt-d122937.html
-Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen, Radfahren nicht erlaubt	q3 15778,8990 15623,9028 15527,9096 15513,9144 15453,9259 15432,9322 15304,9464 15186,9550 15052,9584 14909,9649 14889,9660 14807,9704 14635,9786
-Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen, Radfahren nicht erlaubt	q3 14635,9786 14500,9863 14467,9887
-Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen, Radfahren nicht erlaubt	q3 14467,9887 14455,9892 14448,9922
-Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen, Radfahren nicht erlaubt	q3 14488,9848 14500,9863
-(S-Bahnhof - Treptower Hafen): Fußgänger, besonders an schönen Tagen, Radfahren nicht erlaubt	q3 14361,9772 14436,9784 14460,9814 14488,9848
-(S-Bahnhof - Treptower Hafen): Fußgänger, besonders an schönen Tagen, Radfahren nicht erlaubt	q3 14404,9847 14466,9861 14488,9848
-(Uferweg - Puschkinallee): Fußgänger, Radfahren nicht erlaubt	q3 14443,9731 14371,9726 14318,9688
+Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 15778,8990 15623,9028 15527,9096 15513,9144 15453,9259 15432,9322 15304,9464 15186,9550 15052,9584 14909,9649 14889,9660 14807,9704 14635,9786
+Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 14635,9786 14500,9863 14467,9887
+Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 14467,9887 14455,9892 14448,9922
+Uferweg im Treptower Park: Fußgänger, besonders an schönen Tagen	q2 14488,9848 14500,9863
+(S-Bahnhof - Treptower Hafen): Fußgänger, besonders an schönen Tagen	q2 14361,9772 14436,9784 14460,9814 14488,9848
+(S-Bahnhof - Treptower Hafen): Fußgänger, besonders an schönen Tagen	q2 14404,9847 14466,9861 14488,9848
+(Uferweg - Puschkinallee): Fußgänger	q2 14443,9731 14371,9726 14318,9688
 Treptower Park, am Rosengarten: Fußgänger	q2 14809,9466 14837,9517 14867,9573 14909,9649
 Treptower Park: Fußgänger	q1 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674 14577,9641 14495,9710 14443,9731 14361,9772
 Treptower Park: einige Fußgänger	q1+ 15558,8820 15439,8839 15297,8921 15245,8916 15223,8893
-Treptower Park: einige Fußgänger, Radfahren nicht erlaubt	q3 14588,9473 14556,9581
-Treptower Park: einige Fußgänger, Radfahren nicht erlaubt	q3 14719,9419 14774,9437 14809,9466
-Treptower Park: einige Fußgänger, Radfahren nicht erlaubt	q3 14789,9401 14719,9419 14635,9441
-Treptower Park: einige Fußgänger, Radfahren nicht erlaubt	q3 14316,9542 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14669,9389 14673,9353 14655,9311 14531,9244 14475,9199
-Treptower Park: einige Fußgänger, Radfahren nicht erlaubt	q3 14398,9373 14485,9271 14531,9244
+Treptower Park: einige Fußgänger	q1 14588,9473 14556,9581
+Treptower Park: einige Fußgänger	q1 14719,9419 14774,9437 14809,9466
+Treptower Park: einige Fußgänger	q1 14789,9401 14719,9419 14635,9441
+Treptower Park: einige Fußgänger	q1 14316,9542 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14669,9389 14673,9353 14655,9311 14531,9244 14475,9199
+Treptower Park: einige Fußgänger	q1 14398,9373 14485,9271 14531,9244
 Görlitzer Park: Fußgänger	q2 12671,10042 12686,10045 12690,10062
 Görlitzer Park: Fußgänger	q2 12757,10197 12763,10207 12767,10216
 Görlitzer Park: Fußgänger	q2 13145,9920 12987,10007 12869,10071 12802,10097
@@ -2007,7 +2013,7 @@ Dahlienweg: Fußgänger	q2+ 15209,5713 15204,5752 15201,5807 15194,5934
 Kurzer Weg: Fußgänger	q2+ 15154,5706 15151,5746 15204,5752
 Preußensiedlung: einige Fußgänger	q1 20971,1046 20957,1043 20850,963
 (Grünzug am Falkenberg): Pfad	q2 21205,286 21230,309 21300,326
-(Bruno-Taut-Str. - Am Gartenstadtweg): Fußgänger, eng, steile Stellen	q2 21790,682 21783,660 21755,625 21723,605 21679,596
+(Bruno-Taut-Str. - Am Gartenstadtweg): Fußgänger, eng, steile Stellen	q2 21790,682 21783,660 21755,625 21723,605 21688,589 21673,590
 #: XXX_prog: BS südliches Ende, kann aber einige Meter weiter südlich umfahren werden, ansonsten: einige Fußgänger, q1
 Erieseering: Bordstein	q2 18141,10173 18132,10183
 (Erieseering - am Tränkegraben): einige Fußgänger	q1 18132,10183 18130,10201 18113,10208 18085,10244 18081,10312 18039,10398 18026,10490 18034,10567
@@ -2249,7 +2255,8 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="5"
-#: last_checked: 2016-10-30
+#: last_checked: 2017-05-21
+#: check_frequency: 90d
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
 Insel-Rügen-Weg: eng	q2 10967,17671 10978,17589 11064,17599
@@ -3116,11 +3123,13 @@ Altenburger Str.: Fußgänger, Bordsteine	q2 6651,1063 6631,968
 (Lilienthalpark): Fußgänger	q2 5533,663 5485,751 5503,783 5531,779 5590,719 5593,679 5575,660 5533,663
 (Lilienthalpark): Fußgänger	q2 5571,614 5533,663
 (Lilienthalpark): Fußgänger	q2 5531,779 5587,816
-(Hildburghauser Str. - Lilienthalpark): Fußgänger, Radfahren nicht erlaubt, ggfs. schieben	q2 6467,1028 6436,921 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5684,773 5632,755 5590,719
 #: next_check ^^^
+#: last_checked: 2017-05-21
+#: check_frequency: 120d
+(Hildburghauser Str. - Lilienthalpark): Fußgänger, Radfahren nicht erlaubt, ggfs. schieben	q2 6467,1028 6436,921 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5684,773 5632,755 5590,719
 #: XXX ^^^
 #: by ^^^
-(Mauerweg Lichtenrade - Lichterfelde): Fußgänger	q1 10309,-3191 10051,-3173 9600,-3160 9529,-2628 9506,-2421 9471,-2138 9462,-2050 9081,-2073 8846,-2089 8310,-2037 8376,-1523 7962,-1295 7593,-1034 7144,-565 7169,-520 7164,-473 7146,-466 7098,-523 6965,-387 6668,-100 6498,71 6351,219 6253,361 6198,328 6013,211 5832,93 5435,-157 4842,-547 4596,-707 4406,-910
+(Mauerweg Lichtenrade - Lichterfelde): Fußgänger	q1 10309,-3191 10051,-3173 9600,-3160 9529,-2628 9506,-2421 9471,-2138 9462,-2050 9081,-2073 8846,-2089 8310,-2037 8376,-1523 7962,-1295 7593,-1034 7144,-565 7169,-520 7164,-473 7146,-466 7098,-523 6965,-387 6668,-100 6498,71 6351,219 6256,363 6198,328 6013,211 5832,93 5435,-157 4842,-547 4596,-707 4406,-910
 #: by: ^^^
 #: by: Josch [AM]
 Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 7864,2018 7975,2275 8071,2248
@@ -3751,7 +3760,8 @@ Dinkelsbühler Steig: enge Straße	q0- 2615,25225 2649,25170 2694,25132 2775,25092
 #: by: anonymous
 Schlierbacher Weg: enge Straße	q1 10740,1180 10685,1159 10450,1202 10453,1242 10440,1283
 #: by: Andreas Weiß:
-Fritz-Kühn-Str.: enge Straße	q1 21688,-589 21666,-657 21487,-912 21445,-963
+#: corrected_by: srt/policy (q1 -> q0-)
+Fritz-Kühn-Str.: enge Straße	q0- 21688,-589 21666,-657 21487,-912 21445,-963
 #: by: Michael (hinundweg):
 #: confirmed_by: srt
 Mittelstr. (Alt-Hohenschönhausen): enge Straße	q1 15543,14491 15647,14693 15706,14752 15856,14915
@@ -3952,7 +3962,7 @@ Dualastr.: enge Straße	q1 6019,15841 5848,15685
 Kissingenplatz: Bordsteine	q4 11405,17985 11390,17962
 #: by: Wicharz:
 #: confirmed_by: anonymous
-Ruben-Wolf-Str.: einige Fußgänger	q1+ 19906,217 19865,263 19785,361
+Ruben-Wolf-Str.: einige Fußgänger	q1+ 19906,217 19865,263 19785,360
 #: by: Jörg Henke:
 Semmelweg: einige Fußgänger	q1 1229,18750 1101,18611 915,18352 766,18083 492,17831 396,17648 255,17528
 #: by: Katrin Ahrens:

@@ -1089,15 +1089,7 @@ userdel	2::temp 6719,10347 6729,10212 6739,10120
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
-',
-         'from' => 1495058400,
-         'id' => 952,
-         'text' => 'Alt-Rudow: Frühlingsfest, Straße zwischen Bildhauerweg und Krokusstr. gesperrt (19. und 20. Mai 2017)',
-         'type' => 'gesperrt',
-         'until' => 1495317599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2957,31 +2949,7 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
          'type' => 'gesperrt',
          'until' => 1504468800
        },
-       {
-         'data' => '#: tempex: 20170428-T20170519 vvv
-userdel	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
-userdel	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
-userdel	q4::temp 11275,8387 11230,8402
-userdel	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
-#: tempex ^^^
-',
-         'from' => 1493244000,
-         'id' => 2207,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              26,
-                              'months',
-                              4
-                            ]
-                          ],
-         'source_id' => 'http://www.berlin.de/tickets/suche/detail.php?id=1372899',
-         'text' => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 28.04.2017 bis 19.05.2017',
-         'type' => 'handicap',
-         'until' => 1495317599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3404,41 +3372,7 @@ userdel	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: 20170520 vvv
-userdel	2::temp 8055,12186 8119,12414
-userdel	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	2::temp 6828,12031 6884,12006
-	2::temp 6809,11979 6984,11859
-	2::temp 6778,11742 6980,11790
-	2::temp 6809,11570 6869,11567 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7649,11717 7701,11798 7706,11878 7717,11918 7658,11947 7634,11920 7559,11888 7449,11883
-	2::temp 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8034,12093 8057,12065 8052,12033 8022,12016 8020,11937 8095,11919 8132,11910 8221,11885 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
-	2::temp 8522,12239 8466,12197
-userdel auto	3 7429,12070 7383,12095 7039,12314
-userdel auto	3 7875,12363 7822,12201 7816,12150 7823,12120
-userdel auto	3 7039,12314 7383,12095 7429,12070
-userdel auto	3 7823,12120 7816,12150 7822,12201 7875,12363
-	3 8391,12389 8344,12221 8327,12174
-	3 8327,12174 8344,12221 8391,12389
-#: tempex ^^^
-',
-         'from' => 1495144800,
-         'id' => 2427,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              4,
-                              'months',
-                              5
-                            ]
-                          ],
-         'source_id' => 'http://www.berliner-frauenlauf.de/?year=2016',
-         'text' => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 20. Mai 2017',
-         'type' => 'gesperrt',
-         'until' => 1495317599
-       },
+       undef,
        {
          'data' => '#: tempex: 20170527-20170528
 userdel	2::temp 6230,8602 6313,8638 6454,8653
@@ -4378,20 +4312,7 @@ userdel	q3::inwork 4564,3457 4800,3391 4862,3363 5018,3320
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: laut vmz bis Mitte August 2018 und nur bis zur Bahnbrücke, laut fritz bis 1.7.2018
-#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103689945674/89945674/00251862/62-Anlagen/02/DRS0098.pdf
-#: source_id: LMS-BR_r_LMS-BR_81077
-#: XXX Behinderungen für Radfahrer?
-userdel	q4::inwork 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,1416 21127,1307 21169,1279
-',
-         'from' => 1476655200,
-         'id' => 2836,
-         'source_id' => '2147340679',
-         'text' => 'Grünauer Straße/Am Falkenberg: zwischen Keltensteig und Drössestr. Baustelle, Fahrbahn gesperrt, ab 18.10.2016 bis Sommer 2018 ',
-         'type' => 'handicap',
-         'until' => 1530439200
-       },
+       undef,
        undef,
        undef,
        undef,

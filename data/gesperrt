@@ -94,9 +94,6 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s 15674,10851 15870,10938
 Nöldnerplatz	1 15870,10938 15903,10906 16049,10844
 Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
-Richterstr.	1s 22092,999 22120,886
-Richterstr.	1s 22062,773 22007,711
-Grünau/B179	1 22007,711 21862,807 21894,881 21977,988 22044,1018 22092,999
 Dorfplatz	1 21074,-475 20986,-529 20890,-546 20827,-537 20999,-489 21074,-475
 B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532 21819,1595 21541,1739
 Zufahrt zur B96a	2 20288,-511 20272,-501
@@ -829,6 +826,7 @@ Tor	2 8371,13399 8363,13402 8356,13404
 Gravensteinstr.	1s 12229,22457 12185,22465
 Hauptstr. (Französisch Buchholz)	1s 12199,22367 12229,22457
 Karlplatz	1 8676,12976 8711,12986
+Hundsfelder Str.	1 21898,-303 21811,-409 21700,-537 21688,-589
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -1094,9 +1092,9 @@ Str. 455 -> Kurt-Schumacher-Damm: Mittelstreifen	3::igndisp 4916,17201 4931,1717
 Mittelstreifen	3nocross::ignrte 14788,3441 14822,3409 14994,3245
 Rudower Str. -> Grasmückenweg: Mittelstreifen	3::igndisp 14788,3441 14822,3409 14877,3475
 Grasmückenweg -> Rudower Str.: Mittelstreifen	3::igndisp 14877,3475 14822,3409 14994,3245
-Mittelstreifen	3nocross::ignrte 9248,4904 9239,4980 9207,5185
+Mittelstreifen	3nocross::ignrte 9248,4904 9239,4980 9206,5193
 Finkenweg -> Mariendorfer Damm: Mittelstreifen	3::igndisp 9360,4996 9239,4980 9248,4904
-Mariendorfer Damm -> Finkenweg: Mittelstreifen	3::igndisp 9207,5185 9239,4980 9360,4996
+Mariendorfer Damm -> Finkenweg: Mittelstreifen	3::igndisp 9206,5193 9239,4980 9360,4996
 Mittelstreifen	3nocross::ignrte 7437,1859 7423,1905 7409,1953
 Malteserstr. -> Weygerweg: Mittelstreifen	3::igndisp 7409,1953 7423,1905 7514,1930
 Weygerweg -> Malteserstr.: Mittelstreifen	3::igndisp 7514,1930 7423,1905 7437,1859
@@ -1547,7 +1545,7 @@ Knesebeckstr. -> Unter den Eichen: Straßentunnelrampe	3::igndisp 3033,4113 2944,
 Knesebeckstr. -> Goßlerstr.: Straßentunnelrampe	3::igndisp 3033,4113 2944,4241 2858,4372
 Goßlerstr. -> Unter den Eichen: Straßentunnelrampe	3::igndisp 2858,4372 2944,4241 3048,4305
 Goßlerstr. -> Knesebeckstr.: Straßentunnelrampe	3::igndisp 2858,4372 2944,4241 3033,4113
-unbequem passierbarer Mittelstreifen	3nocross::ignrte 9207,5185 9196,5272 9188,5333 9176,5413 9161,5535
+unbequem passierbarer Mittelstreifen	3nocross::ignrte 9206,5193 9196,5272 9188,5333 9176,5413 9161,5535
 Am Teltowkanal, südl. Ufer -> Mariendorfer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 9171,5263 9196,5272 9188,5333
 Mariendorfer Damm -> Wulfila-Ufer: unbequem passierbarer Mittelstreifen	3::igndisp 9196,5272 9188,5333 9145,5323
 Wulfila-Ufer -> Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 9145,5323 9188,5333 9176,5413
@@ -2850,6 +2848,9 @@ versetzte Schranke, manchmal offen	BNP:1:-195:trailer=3 24700,18981
 versetzte Schranke, manchmal offen	BNP:1:-133:trailer=3 24523,18542
 versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
 Drängelgitter	BNP:3:-240 31665,48997
+Schranke	BNP:3:-59:trailer=10 8041,-3322
+Schranke	BNP:3:-64:trailer=10 6876,-2731
+Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19143,1147
 Schinkelplatz: Einbahnstraße	1s 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
 Limburger Str.: Bauarbeiten am Rathaus Wedding, komplett gesperrt	2::inwork 7129,15717 7012,15571
 Karower Str.: temporäre Einbahnstraßenregelung	1s 16593,25640 16632,25512 16669,25373
@@ -2888,10 +2889,7 @@ IGA 2017-Gelände: Wege gesperrt	2 21948,14501 21985,14513
 IGA 2017-Gelände: Wege gesperrt	2 22783,14034 23021,13982
 IGA 2017-Gelände: Wege gesperrt	2 22638,13902 22783,14034 22855,14114 22872,14175
 IGA 2017-Gelände: Wege gesperrt	2 22503,14104 22783,14034
-Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 19015,3129 18892,3256 18689,3465
-Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 18689,3465 18892,3256 19015,3129
 Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 18892,3256 18953,3318
-Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17651,-393
 Lydia-Rabinowitsch-Str.: noch gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924
 Clara-von-Simson-Str.: noch gesperrt	2 7652,14257 7757,14318 7802,14250 7697,14187
 Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, für Autos dauerhaft	2::inwork 17670,7512 17681,7589
@@ -3267,8 +3265,6 @@ Jagowstr. (Hermsdorf)	1 3046,22292 3043,22407 3050,22554 3056,22693
 Hagenstr. (Lichtenberg)	1 16957,12599 16933,12432 16918,12325
 Gehrenseestr.	1 18494,16750 18324,16625
 tragen	0:60:90 18475,16761
-Drängelgitter	BNP:5:80 6367,825
-Drängelgitter	BNP:5:90 6352,825
 Drängelgitter	BNP:5:-263 6267,834
 Drängelgitter	BNP:5:83 6250,834
 Drängelgitter	BNP:5:81 6172,822

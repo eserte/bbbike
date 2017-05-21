@@ -3,7 +3,7 @@
 #:
 Mittelweg	1 12335,7770 12224,7799 12176,7811
 Privatweg (Kronenstr.)	2 10132,11810 10114,11789 10079,11765 9907,11752 9892,11752
-Maulbronner Ufer	1 7161,4091 7307,4087 7389,4088 7484,4109 7539,4127 7585,4154 7676,4216
+Maulbronner Ufer	1 7161,4110 7307,4087 7389,4088 7484,4109 7539,4127 7585,4154 7676,4216
 Reichstagufer	1 9098,12687 8892,12576 8766,12541
 Bunsenstr.	1 8892,12576 8904,12489
 Heimstr.	1 9973,9232 9966,9151 9958,9050 9951,8965
@@ -790,9 +790,9 @@ Mittelstreifen	3nocross::ignrte 13151,14855 13110,14879 12812,15053
 Storkower Str. -> Einsteinstr.: Mittelstreifen	3::igndisp 12812,15053 13110,14879 13143,14935
 Einsteinstr. -> Storkower Str.: Mittelstreifen	3::igndisp 13143,14935 13110,14879 13151,14855
 Hönower Wiesenweg: nur für Anlieger und Radfahrer offen	2:Anlieger 17380,8858 17416,8767 17483,8644 17554,8458 17620,8366 17704,8327 17753,8290
-Mittelstreifen	3nocross::ignrte 9248,4904 9239,4980 9207,5185
+Mittelstreifen	3nocross::ignrte 9248,4904 9239,4980 9206,5193
 Finkenweg -> Mariendorfer Damm: Mittelstreifen	3::igndisp 9360,4996 9239,4980 9248,4904
-Mariendorfer Damm -> Finkenweg: Mittelstreifen	3::igndisp 9207,5185 9239,4980 9360,4996
+Mariendorfer Damm -> Finkenweg: Mittelstreifen	3::igndisp 9206,5193 9239,4980 9360,4996
 Mittelstreifen	3nocross::ignrte 4515,4760 4515,4581 4521,4484
 Hindenburgdamm -> Flotowstr.: Mittelstreifen	3::igndisp 4515,4760 4515,4581 4651,4638
 Hindenburgdamm -> Roonstr.: Mittelstreifen	3::igndisp 4521,4484 4515,4581 4265,4484

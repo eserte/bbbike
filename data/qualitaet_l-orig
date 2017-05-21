@@ -2032,7 +2032,7 @@ Pätz (Groß Köriser Str.): Verbundsteinpflaster	Q1 28540,-19744 28514,-20071 2850
 Pätz (Groß Köriser Str.): Asphalt	Q0 28540,-19744 28615,-19431
 Zeesen - Königs Wusterhausen: holpriger Waldweg, teilweise sehr sandig	Q3 26889,-12953 26825,-12765 26797,-12589 26814,-12271
 # REMOVED (by rjoop: "Grundstück wurde abgetrennt") --- Postenweg Schönefeld: guter Beton	Q0 17234,-685 17013,-745
-Postenweg Schönefeld: guter Beton	Q0 17013,-745 16205,-969 15796,-1112 15801,-1168
+Postenweg Schönefeld: guter Beton	Q0 17013,-745 16205,-969 15795,-1108 15776,-1116 15738,-1159
 Rudower Str.: Kleinteiliges, unebenes Kopfsteinpflaster	Q2; 16205,-969 16074,-1240 15819,-1886 15782,-1953 15289,-2873
 Rudower Str.: Kopfsteinpflaster, aber schmale asphaltierte Bankette	Q0-; 15289,-2873 15782,-1953 15819,-1886 16074,-1240 16205,-969
 Rudower Str.: Asphalt	Q0 15289,-2873 14977,-3505 14878,-3602
@@ -2232,7 +2232,7 @@ Am Kanal, Nebenstraße: Asphalt	Q0 -12542,-1305 -12311,-1238
 August-Bebel-Str.: Kopfsteinpflaster	Q2 -8469,-1541 -8485,-1445
 Paul-Gerhard-Str.: Asphalt	Q0- 3232,803 3271,745 3417,524
 Alte B101-Trasse: feiner Schotter	Q1 7098,-523 6959,-743
-(Postenweg): guter Beton	Q0 17234,-685 17806,-561 18177,-449
+(Postenweg): guter Beton	Q0 17234,-685 17806,-561 18170,-449
 Peter-Huchel-Str.: Asphalt	Q0 -13257,1337 -13277,1490 -13294,1681
 Erich-Arendt-Str.: Asphalt	Q0 -13277,1490 -13125,1508
 Graf-von-Schwerin-Str.: Asphalt	Q0 -13133,1698 -13087,1696
@@ -2880,7 +2880,7 @@ Am Langen Grund (Großziethen): Verbundsteinpflaster	Q1+ 12703,-1057 12629,-1046 
 Dorfstr.: Kopfsteinpflaster	Q2 13469,-1167 13750,-992 13693,-949
 Schönefelder Weg: Asphalt	Q0 14015,-651 14032,-664 14137,-651
 #: note: auch landwirtschaftlich genutzt
-Schönefelder Weg: Verbundsteinpflaster	Q1 14137,-651 14318,-632 14424,-705 14788,-849 14843,-859 15045,-941 15118,-970 15801,-1168 16074,-1240
+Schönefelder Weg: Verbundsteinpflaster	Q1 14137,-651 14318,-632 14424,-705 14788,-849 14843,-859 15045,-941 15118,-970 15738,-1159 16074,-1240
 Friedensweg: Asphalt	Q0 12975,-1244 12804,-735
 Selchower Grund: Asphalt	Q0 12507,-1166 12503,-1221
 Selchower Grund: Asphalt	Q0 12359,-1211 12503,-1221 12551,-1228
@@ -2903,7 +2903,7 @@ Waldsieversdorf, R1: Verbundsteinpflaster	Q1+ 56527,16199 56697,16018
 Altlandsberg - Neuenhagen: Asphalt	Q0 31181,13354 31018,13222 30795,13191
 #: note: von der Bahn aus gesehen
 Gewerbestr. - S-Bhf. Birkenstein: Verbundsteinpflaster	Q1 26634,12415 26652,12435 27101,12515
-(Weg am Dörferblick): Asphalt	Q0 15640,-280 15667,-356 15637,-441 15694,-662 15796,-1112
+(Weg am Dörferblick): Asphalt	Q0 15640,-280 15667,-356 15637,-441 15694,-662 15795,-1108
 Vorfahrt Flughafen Schönefeld: Betonplatten	Q1 18293,-1472 18350,-1629 18401,-1767
 Parkplatz Flughafen Schönefeld: Beton	Q0 18350,-1629 18480,-1577
 B96a - Flughafen Berlin-Brandenburg: Asphalt	Q0 18480,-1577 18578,-1538 18680,-1506 18798,-1581 18853,-1656 18866,-1674 19131,-2145 19236,-2298 19346,-2337 19575,-2358 19909,-2677 19941,-2759 19909,-2863 19808,-2953 19626,-3031 19558,-3155 19443,-3540 19479,-3690 19464,-3780 19282,-3928 19164,-3980 19105,-3940 19019,-3859 18861,-3921 18423,-4094 18386,-4109
@@ -3926,6 +3926,15 @@ Rosow - Pomellen: Asphalt	Q0 75175,101384 74437,102167 73976,102559
 Hohenreinkendorf - Petershagen: Asphalt	Q0 66541,93799 66499,93857 66310,94244
 #: note: von der Bahn aus gesehen
 Tantow - Hohenreinkendorf: Asphalt	Q0 73031,97443 72935,97227 72879,97158 72847,96864
+Birkholz - Großbeeren: Asphalt	Q0 6162,-2329 6062,-2292 5883,-2508 5627,-2676 5572,-2767 5540,-2771
+Friederickenhof: rauer Asphalt mit Schäden	Q1 6162,-2329 6723,-2607 6824,-2706
+Friederickenhof - Birkholz: Beton	Q0- 6824,-2706 6876,-2731 7332,-2909 8041,-3322 8051,-3326 8114,-3357
+Lichtenrade - Birkholz/Diedersdorf: wassergebundene Decke	Q1 8310,-2037 8100,-2471
+Lichtenrade - Birkholz/Diedersdorf: Feldsteinpflaster mit Banketten	Q2- 8100,-2471 8113,-3293
+Lichtenrade - Birkholz/Diedersdorf: Asphalt	Q0- 8113,-3293 8114,-3357
+Egestorffstr. - Mauerweg: Asphalt	Q0 9093,-1670 9083,-1962 9065,-1983
+Innerer Mauerweg - Äußerer Mauerweg: unbefestigt	Q2 9065,-1983 9081,-2073
+Innerer Mauerweg: Asphalt	Q0 9065,-1983 8412,-1979
 ######################### User Contributions #################################
 #: by: mopedfahrerrr:
 #: confirmed_by: anonymous:

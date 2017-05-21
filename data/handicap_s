@@ -37,6 +37,7 @@ Schloﬂallee: Bauarbeiten, Fahrbahn teilweise gesperrt	q2::inwork 11730,19684 118
 Blankenburger Weg: Bauarbeiten, Einbahnstraﬂenregelung, Radweg Richtung Nordosten ist auch gesperrt	q2::inwork; 12222,20637 12442,20805
 Pankstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 12524,20863 12442,20805
 Wiltbergstr.: Bauarbeiten, Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3::inwork; 16669,25373 16583,25440 16475,25526 16414,25575 16294,25683 16220,25716
+Am Falkenberg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 21862,807 22007,711
 Wuhlewanderweg: steiler Anstieg, Fuﬂg‰nger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gef‰lle, Fuﬂg‰nger	q4; 21970,12153 21998,12204
 (An der Wuhle, ˆstliches Ufer): Fuﬂg‰nger	q1 21316,8487 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
@@ -75,21 +76,21 @@ Rathausstr.: Fuﬂg‰nger, Bauarbeiten	q1 10923,12779 10704,12595
 Dircksenstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10970,12822 10849,12944
 Dircksenstr.: Fuﬂg‰nger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
 Gontardstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10733,12967 10801,12901 10923,12779
-Uferweg im Treptower Park: Fuﬂg‰nger, besonders an schˆnen Tagen, Radfahren nicht erlaubt	q3 15778,8990 15623,9028 15527,9096 15513,9144 15453,9259 15432,9322 15304,9464 15186,9550 15052,9584 14909,9649 14889,9660 14807,9704 14635,9786
-Uferweg im Treptower Park: Fuﬂg‰nger, besonders an schˆnen Tagen, Radfahren nicht erlaubt	q3 14635,9786 14500,9863 14467,9887
-Uferweg im Treptower Park: Fuﬂg‰nger, besonders an schˆnen Tagen, Radfahren nicht erlaubt	q3 14467,9887 14455,9892 14448,9922
-Uferweg im Treptower Park: Fuﬂg‰nger, besonders an schˆnen Tagen, Radfahren nicht erlaubt	q3 14488,9848 14500,9863
-(S-Bahnhof - Treptower Hafen): Fuﬂg‰nger, besonders an schˆnen Tagen, Radfahren nicht erlaubt	q3 14361,9772 14436,9784 14460,9814 14488,9848
-(S-Bahnhof - Treptower Hafen): Fuﬂg‰nger, besonders an schˆnen Tagen, Radfahren nicht erlaubt	q3 14404,9847 14466,9861 14488,9848
-(Uferweg - Puschkinallee): Fuﬂg‰nger, Radfahren nicht erlaubt	q3 14443,9731 14371,9726 14318,9688
+Uferweg im Treptower Park: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 15778,8990 15623,9028 15527,9096 15513,9144 15453,9259 15432,9322 15304,9464 15186,9550 15052,9584 14909,9649 14889,9660 14807,9704 14635,9786
+Uferweg im Treptower Park: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 14635,9786 14500,9863 14467,9887
+Uferweg im Treptower Park: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 14467,9887 14455,9892 14448,9922
+Uferweg im Treptower Park: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 14488,9848 14500,9863
+(S-Bahnhof - Treptower Hafen): Fuﬂg‰nger, besonders an schˆnen Tagen	q2 14361,9772 14436,9784 14460,9814 14488,9848
+(S-Bahnhof - Treptower Hafen): Fuﬂg‰nger, besonders an schˆnen Tagen	q2 14404,9847 14466,9861 14488,9848
+(Uferweg - Puschkinallee): Fuﬂg‰nger	q2 14443,9731 14371,9726 14318,9688
 Treptower Park, am Rosengarten: Fuﬂg‰nger	q2 14809,9466 14837,9517 14867,9573 14909,9649
 Treptower Park: Fuﬂg‰nger	q1 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674 14577,9641 14495,9710 14443,9731 14361,9772
 Treptower Park: einige Fuﬂg‰nger	q1 15558,8820 15439,8839 15297,8921 15245,8916 15223,8893
-Treptower Park: einige Fuﬂg‰nger, Radfahren nicht erlaubt	q3 14588,9473 14556,9581
-Treptower Park: einige Fuﬂg‰nger, Radfahren nicht erlaubt	q3 14719,9419 14774,9437 14809,9466
-Treptower Park: einige Fuﬂg‰nger, Radfahren nicht erlaubt	q3 14789,9401 14719,9419 14635,9441
-Treptower Park: einige Fuﬂg‰nger, Radfahren nicht erlaubt	q3 14316,9542 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14669,9389 14673,9353 14655,9311 14531,9244 14475,9199
-Treptower Park: einige Fuﬂg‰nger, Radfahren nicht erlaubt	q3 14398,9373 14485,9271 14531,9244
+Treptower Park: einige Fuﬂg‰nger	q1 14588,9473 14556,9581
+Treptower Park: einige Fuﬂg‰nger	q1 14719,9419 14774,9437 14809,9466
+Treptower Park: einige Fuﬂg‰nger	q1 14789,9401 14719,9419 14635,9441
+Treptower Park: einige Fuﬂg‰nger	q1 14316,9542 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14669,9389 14673,9353 14655,9311 14531,9244 14475,9199
+Treptower Park: einige Fuﬂg‰nger	q1 14398,9373 14485,9271 14531,9244
 Gˆrlitzer Park: Fuﬂg‰nger	q2 12671,10042 12686,10045 12690,10062
 Gˆrlitzer Park: Fuﬂg‰nger	q2 12757,10197 12763,10207 12767,10216
 Gˆrlitzer Park: Fuﬂg‰nger	q2 13145,9920 12987,10007 12869,10071 12802,10097
@@ -1233,7 +1234,7 @@ Dahlienweg: Fuﬂg‰nger	q2 15209,5713 15204,5752 15201,5807 15194,5934
 Kurzer Weg: Fuﬂg‰nger	q2 15154,5706 15151,5746 15204,5752
 Preuﬂensiedlung: einige Fuﬂg‰nger	q1 20971,1046 20957,1043 20850,963
 (Gr¸nzug am Falkenberg): Pfad	q2 21205,286 21230,309 21300,326
-(Bruno-Taut-Str. - Am Gartenstadtweg): Fuﬂg‰nger, eng, steile Stellen	q2 21790,682 21783,660 21755,625 21723,605 21679,596
+(Bruno-Taut-Str. - Am Gartenstadtweg): Fuﬂg‰nger, eng, steile Stellen	q2 21790,682 21783,660 21755,625 21723,605 21688,589 21673,590
 Erieseering: Bordstein	q2 18141,10173 18132,10183
 (Erieseering - am Tr‰nkegraben): einige Fuﬂg‰nger	q1 18132,10183 18130,10201 18113,10208 18085,10244 18081,10312 18039,10398 18026,10490 18034,10567
 (Zachertstr. - am Tr‰nkegraben): Fuﬂg‰nger	q1 17848,11204 17893,11146 17905,11122 17924,10964 17914,10861 17892,10718 17870,10619
@@ -1986,7 +1987,7 @@ Altenburger Str.: Fuﬂg‰nger, Bordsteine	q2 6651,1063 6631,968
 (Lilienthalpark): Fuﬂg‰nger	q2 5571,614 5533,663
 (Lilienthalpark): Fuﬂg‰nger	q2 5531,779 5587,816
 (Hildburghauser Str. - Lilienthalpark): Fuﬂg‰nger, Radfahren nicht erlaubt, ggfs. schieben	q2 6467,1028 6436,921 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5684,773 5632,755 5590,719
-(Mauerweg Lichtenrade - Lichterfelde): Fuﬂg‰nger	q1 10309,-3191 10051,-3173 9600,-3160 9529,-2628 9506,-2421 9471,-2138 9462,-2050 9081,-2073 8846,-2089 8310,-2037 8376,-1523 7962,-1295 7593,-1034 7144,-565 7169,-520 7164,-473 7146,-466 7098,-523 6965,-387 6668,-100 6498,71 6351,219 6253,361 6198,328 6013,211 5832,93 5435,-157 4842,-547 4596,-707 4406,-910
+(Mauerweg Lichtenrade - Lichterfelde): Fuﬂg‰nger	q1 10309,-3191 10051,-3173 9600,-3160 9529,-2628 9506,-2421 9471,-2138 9462,-2050 9081,-2073 8846,-2089 8310,-2037 8376,-1523 7962,-1295 7593,-1034 7144,-565 7169,-520 7164,-473 7146,-466 7098,-523 6965,-387 6668,-100 6498,71 6351,219 6256,363 6198,328 6013,211 5832,93 5435,-157 4842,-547 4596,-707 4406,-910
 Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 7864,2018 7975,2275 8071,2248
 (Gielower Str - Buschkrugallee): Fuﬂg‰nger	q1 14012,4184 14053,4173 14119,4153
 (Parkweg Buschkrugallee - Bruno-Taut-Ring): Fuﬂg‰nger	q1 14053,4173 14045,4164 14009,4148 13910,4090 13873,4067 13798,4037 13721,4023 13656,3989 13601,3895 13632,3875
@@ -2223,7 +2224,7 @@ Rudi-Dutschke-Weg: viele Fuﬂg‰nger	q2 2627,5095 2851,5251 2913,5294
 Dinkelsb¸hler Steig: enge Straﬂe	q0 2615,25225 2649,25170 2694,25132 2775,25092 2816,25037
 ÷tztaler Str.: enge Straﬂe	q1 10690,17420 10630,17421
 Schlierbacher Weg: enge Straﬂe	q1 10740,1180 10685,1159 10450,1202 10453,1242 10440,1283
-Fritz-K¸hn-Str.: enge Straﬂe	q1 21688,-589 21666,-657 21487,-912 21445,-963
+Fritz-K¸hn-Str.: enge Straﬂe	q0 21688,-589 21666,-657 21487,-912 21445,-963
 Mittelstr. (Alt-Hohenschˆnhausen): enge Straﬂe	q1 15543,14491 15647,14693 15706,14752 15856,14915
 Nantesstr.: enge Straﬂe	q0 11200,21689 11255,22028 11231,22065 11067,22232
 Helgiweg: enge Straﬂe	q0 14459,18589 14517,18410
@@ -2299,7 +2300,7 @@ Faucherweg: enge Straﬂe	q1 -1299,14797 -1251,14772 -1207,14781 -1141,14814 -896,
 Dualastr.: enge Straﬂe	q1 6019,15841 5848,15685
 (Horterweg - Rˆmerweg): einige Fuﬂg‰nger	q1 19005,9816 19003,9800 18994,9707
 Kissingenplatz: Bordsteine	q4 11405,17985 11390,17962
-Ruben-Wolf-Str.: einige Fuﬂg‰nger	q1 19906,217 19865,263 19785,361
+Ruben-Wolf-Str.: einige Fuﬂg‰nger	q1 19906,217 19865,263 19785,360
 Semmelweg: einige Fuﬂg‰nger	q1 1229,18750 1101,18611 915,18352 766,18083 492,17831 396,17648 255,17528
 Langenbeckplatz: enge Straﬂe	q1 25030,9626 25095,9627 25086,9733 25020,9728 25030,9626
 (RÈaumurstr. - F¸rstenstr., S-Bahnunterf¸hrung): Fuﬂg‰nger	q3 4279,459 4218,439 4158,461 4136,505
@@ -2429,8 +2430,6 @@ Verl‰ngerte Schulzendorfer Str.: Fuﬂg‰nger	q1 2150,22464 2015,22435 1834,22421 1
 (Senheimer Str. - Oranienburger Chaussee/Schwarzkittelweg): enger Weg	q2 2540,26280 3013,26458
 Eichborndamm: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 4228,19024 4223,18982
 Archibaldweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 15674,10851 15870,10938
-Richterstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22092,999 22120,886
-Richterstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22062,773 22007,711
 Dorotheenstr. (Straﬂenbahn): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 9454,12558 9330,12538
 Kirchstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q0::igndisp; 22314,4604 22284,4653
 Kietzer Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22372,4496 22383,4470
