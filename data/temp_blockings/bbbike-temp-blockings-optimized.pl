@@ -2638,26 +2638,7 @@ userdel	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 34421,1950 34359,2165 34250,2546
-',
-         'from' => 1495058400,
-         'id' => 2078,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              15,
-                              'months',
-                              5
-                            ]
-                          ],
-         'source_id' => 'http://www.erkner.de/271.html?date=20170415',
-         'text' => 'Erkner: Heimatfest, 19.5.2017 bis 21.5.2017',
-         'type' => 'gesperrt',
-         'until' => 1495418400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4436,16 +4417,7 @@ userdel	q4::inwork; 7201,8870 7107,9030
          'type' => 'handicap',
          'until' => 1508104799
        },
-       {
-         'data' => 'userdel	2::inwork 9549,17625 9590,17662
-',
-         'from' => 1494777600,
-         'id' => 2862,
-         'source_id' => '2147341281',
-         'text' => 'Wollankstraße: Bauarbeiten für eine neue Bahnbrücke, Sperrung auch für Radfahrer, vom 15. Mai 2017 bis 23. Mai 2017',
-         'type' => 'gesperrt',
-         'until' => 1495519200
-       },
+       undef,
        {
          'data' => '#: XXX bis wann gehen die Bauarbeiten?
 #: last_checked: 2017-05-17
@@ -4466,6 +4438,31 @@ userdel	q3::inwork; 8752,12647 8870,12647
          'text' => 'Rosenthaler Str.: Straßenbauarbeiten in Höhe Neue Schönhauser Str.. Fahrbahn gesperrt, bis 31. Mai 2017',
          'type' => 'handicap',
          'until' => 1496267999
+       },
+       {
+         'data' => 'userdel	2::temp 8522,12187 8538,12245 8600,12165
+userdel	2::temp 8344,12221 8538,12245 8592,12252 8637,12258 8643,12208 8728,12220 8722,12268 8637,12258 8630,12307 8714,12319 8722,12268 8804,12280
+userdel	2::temp 8522,12239 8538,12245 8546,12279
+',
+         'from' => 1495473890,
+         'id' => 2865,
+         'text' => 'Brandenburger Tor: vermutlich Sperrungen zum Kirchentag, 24. Mai 2017 bis 27. Mai 2017',
+         'type' => 'gesperrt',
+         'until' => 1495922399
+       },
+       {
+         'data' => 'userdel	2::temp 9536,11922 9666,11935 9656,12031 9523,12019
+userdel auto	3 9645,12133 9656,12031 9913,12068
+userdel auto	3 9820,11951 9666,11935 9679,11834
+userdel auto	3 9679,11834 9666,11935 9820,11951
+userdel auto	3 9913,12068 9656,12031 9645,12133
+	2::temp 9523,12019 9536,11922
+',
+         'from' => 1495473982,
+         'id' => 2866,
+         'text' => 'Gendarmenmarkt: vermutlich Sperrungen zum Kirchentag, 24. Mai 2017',
+         'type' => 'gesperrt',
+         'until' => 1495663199
        }
      
 );

@@ -22,7 +22,7 @@
 #: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
 #: source_id: 2147340987
-#: last_checked: 2017-05-01
+#: last_checked: 2017-05-22
 #: check_frequency: 45d
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
@@ -33,7 +33,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2017-05-16
+#: last_checked: 2017-05-22
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -344,10 +344,13 @@ Nürnberger Str.: Radspuren entstehen	?::projected 5866,10492 6025,10746
 #: by ^^^
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4247 vvv
+# 
 #: XXX "Ausführung frühestens 2018"
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/neubau-der-kastanienallee-in-rosenthal-449994.php
+#: XXX wird voraussichtlich im Frühjahr 2019 beginnen, geplante Bauzeit beträgt ca. 3 Jahre
 #: last_checked: 2017-05-01
-#: next_check: 2018-05-01
-Kastanienallee: Radverkehrsanlagen sind vorgesehen	?::projected 9460,20644 9551,20662 9622,20677 9676,20700 9740,20719 9839,20749 9895,20766 9982,20793 10138,20840
+#: next_check: 2019-05-01
+Kastanienallee: Radverkehrsanlagen sind vorgesehen (Radspuren)	?::projected 8900,20601 9025,20611 9161,20622 9174,20623 9295,20632 9460,20644 9551,20662 9622,20677 9676,20700 9740,20719 9839,20749 9895,20766 9982,20793 10138,20840
 # 
 #: XXX "ab 2017"
 #: last_checked: 2017-04-09
@@ -368,9 +371,10 @@ Berliner Allee/Tassostr.: Bau einer Ampel	?::projected 13591,15969 13623,15954 1
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.515796.php
-#: XXX Baubeginn Frühjahr 2017
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.515796.php?date=20170522
+#: XXX Baubeginn frühestens 2018
 #: last_checked: 2017-05-06
-#: check_frequency: 90d
+#: next_check: 2018-03-01
 Munsterdamm: bei der Fahrbahnsanierung entstehen Radspuren	?::projected 6651,4843 6744,4983 6746,4999 6747,5010 6767,5233
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf vvv
@@ -458,7 +462,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/holzmarktstrasse/download/LP_01.pdf
 #: source_id: 2147340618
 #: source_id: LMS-BR_r_LMS-BR_81616
-#: last_checked: 2017-05-02
+#: last_checked: 2017-05-22
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 # 
 # REMOVED (realisiert) --- #: by: http://www.aktion-kms.de/files/2015-07-13_flyer_isarneckar_final.pdf --- #: last_checked: 2016-12-15 --- #: check_frequency: 30d --- Neckarstr./Isarstr.: Umgestaltung, danach verkehrsberuhigter Bereich; ändert sich am Fahrbahnbelag etwas?	?::inwork 12368,8356 12382,8292 12509,8318 12639,8344
@@ -535,10 +539,11 @@ Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::projected
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/rosenthaler-weg_blatt-5.pdf
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2016/pressemitteilung.482469.php (Fertigstellung Mitte 2019)
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6053.html (Elisabeth-Aue)
-#: XXX Bauzeit: Frühjahr 2016 + drei Jahre
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.386693.php?date=20170522
+#: XXX Bauzeit: Fertigstellung der gesamten Baumaßnahme ist derzeitig für Mitte 2019 geplant
 #: XXX nördlich entsteht ein neues Stadtviertel (Elisabeth-Aue)
 #: last_checked: 2016-07-10
-#: next_check: 2019-01-01
+#: next_check: 2019-04-01
 Rosenthaler Weg: Neubau der Straße, danach existieren Radspuren	?::inwork 10997,22203 10933,22179 10892,22165 10828,22142 10769,22122 10709,22102 10673,22090 10613,22070 10554,22050 10493,22029 10436,22010 10377,21991 10312,21969 10228,21940 10060,21916
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3712
@@ -686,6 +691,7 @@ Rathaus Wedding: ändert sich was während/nach der Bauarbeiten am Rathausplatz?	?
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3574 (Verzögerung der Bauarbeiten, Beginn erst im Frühjar 2017)
 #: XXX Knotenpunkt Heiligenseestr. wird zum Kreisverkehr umgebaut, mit vier Zebrastreifen
 #: XXX Bauzeit: Mitte 2016 - Mitte 2018
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170522 (Bauende voraussichtlich Ende 2019)
 #: osm_watch: way id="24720225" version="12"
 #: next_check: 2018-06-01
 Hennigsdorfer Str.: nach den Bauarbeiten durchgängig asphaltiert mit Radstreifen (Suggestivstreifen)	?::projected -2504,22626 -2540,22694 -2424,22991 -2306,23259 -2248,23409 -2185,23567 -2168,23607 -2132,23697 -2071,23850 -2051,23901 -1940,24176 -1896,24275 -1872,24336
@@ -1005,7 +1011,7 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/170315_radverkehrsmassnahmen-nkn-bis-2022.jpg (Übersichtskarte)
 #: XXX Ausbau des Kopfsteinpflasters, Bau einer Asphaltfahrbahn
 #: osm_watch: way id="75509950" version="11"
-#: last_checked: 2017-05-18
+#: last_checked: 2017-05-23
 #: next_check: 2018-03-01
 Friedelstr.: Asphaltierung	?::projected 12085,9778 12074,9689 12066,9558 12047,9429 12074,9217
 #: by: ^^^
@@ -1015,7 +1021,7 @@ Friedelstr.: Asphaltierung	?::projected 12085,9778 12074,9689 12066,9558 12047,9
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="13"
-#: last_checked: 2017-05-18
+#: last_checked: 2017-05-23
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -1094,7 +1100,7 @@ Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbi
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8026
 #: XXX Vorschlag: Freia-Eisner-Straße 
 #: osm_watch: way id="491906864" version="2"
-#: last_checked: 2017-04-04
+#: last_checked: 2017-05-23
 #: check_frequency: 30d
 Planstraße C: neue Straße entsteht, Straßenname?	?::inwork 12926,11224 12848,11093
 # 
@@ -1480,13 +1486,9 @@ Bismarckstr./Kniephofstr.: Zebrastreifen in Planung	?::projected 6122,5970 6134,
 Gallwitzallee/Krankenhaus: Zebrastreifen in Planung	?::projected 6768,1999 6799,1922 6804,2004
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160319 vvv
-#: XXX voraussichtliche Dauer: Mai-Dezember 2016
-#: osm_watch: way id="152708857" version="1"
-#: last_checked: 2017-05-21
-#: check_frequency: 120d
-Am Kiesberg: Fahrbahnerneuerung in Planung	? 18839,1715 18919,1888 18941,1934 18967,2002 18985,2047
+# REMOVED --- #: XXX voraussichtliche Dauer: Mai-Dezember 2016 --- #: osm_watch: way id="152708857" version="1" --- #: last_checked: 2017-05-21 --- #: check_frequency: 120d
+# REMOVED (nicht mehr gelistet) --- Am Kiesberg: Fahrbahnerneuerung in Planung	? 18839,1715 18919,1888 18941,1934 18967,2002 18985,2047
 # REMOVED (realisiert) --- Mehldornpfad, Teichrohrweg: Fahrbahnerneuerung in Planung	?::projected 18941,1934 19016,1895 18925,1681 18888,1658
-# 
 # REMOVED --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.463942.php --- #: source_id: 2147339904 --- #: next_check: 2016-05-04 --- Buntzelstr./Advokatensteig: Zebrastreifen (?) in Planung	?::projected 22156,433 22162,452 22181,482
 # 
 #: next_check: 2016-10-01
@@ -1553,8 +1555,8 @@ Weg an der Wuhle: evtl. entsteht auch ein Weg hier --- wird es auch eine Anbindu
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20161104 vvv
-#: XXX Bauzeit: Ende 2017 - Mitte 2019 vvv
-#: next_check: 2019-06-01 vvv
+#: XXX Bauzeit: Frühjahr 2018 - Ende 2019 vvv
+#: next_check: 2019-12-01 vvv
 Schmitzweg: Neubau, danach bessere Qualität?	?::projected 5983,19974 5885,19920 5803,19874 5742,19840 5731,19824 5823,19544
 Heiligental: Neubau, danach bessere Qualität?	?::projected 5929,19574 5897,19668 5858,19761 5803,19874
 Brodersenstr.: Neubau, danach bessere Qualität?	?::projected 6033,19611 5885,19920 5804,20047
@@ -1601,6 +1603,12 @@ B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170522
+#: XXX Wernsdorfer Straße (Schmöckwitz) in beiden Richtungen in Höhe Schwarzer Weg (Berlin)  Gültig ab: 15.03.2017 10:00  Baustelle, für beide Richtungen nur ein Fahrstreifen frei, Baustellenampel (bis Mitte 06/17)
+#: source_id: 2147341047
+#: next_check: 2017-06-15
+Wernsdorfer Str.: entstehen hier Radspuren?	? 27892,-3167 27761,-3165 27721,-3164
+# 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4507
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036833670245/833670245/00143778/78-Anlagen/02/BenennungsabsichtfuerdieoeffentlicheStrasse18a.pdf
 #: XXX außerdem prüfen, ob die Straße länger als auf der BBBike-Karte ist. culdesac-Eintrag entfernen
@@ -1608,8 +1616,7 @@ B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133
 #: next_check: 2017-08-20
 Louise-Henry-Str.: bisherige Straße 18a wird unbenannt	? 11217,21565 11297,21593 11347,21589 11425,21650
 # 
-#: XXX laut fritz bis 30.06.2017
-Lobeckstr.: Bauarbeiten auch für Radfahrer relevant?	?::inwork; 10684,10975 10585,10766
+# REMOVED (Fahrbahn ist noch breit genug) --- #: XXX laut fritz bis 30.06.2017 --- Lobeckstr.: Bauarbeiten auch für Radfahrer relevant?	?::inwork; 10684,10975 10585,10766
 # 
 #: last_checked: 2017-05-17
 Memhardstr.: Straße wird neu gemacht, vermutlich wird es dann durchgehende Radspuren geben	?::inwork; 10923,13156 10755,13152
@@ -1618,8 +1625,6 @@ Memhardstr.: Straße wird neu gemacht, vermutlich wird es dann durchgehende Radsp
 Sauerbruchweg: zurzeit Bauarbeiten, wie sieht die Situation danach aus?	?::inwork 8630,13172 8605,13200 8555,13260 8487,13351
 # 
 # REMOVED (-> temp blockings) --- #: XXX NEW	Rosenthaler Str. (Mitte) in beiden Richtungen Höhe Einmündung Neue Schönhauser Str. (Berlin)  Gültig ab: 10.05.2017 13:53  Baustelle, Vollsperrung (bis Ende 05/17)	2147341279 --- Rosenthaler Str.: Bauarbeiten auch für Radfahrer relevant?	?::inwork 10264,13097 10310,13227 10317,13248
-# 
-Mendelssohnstr.: gibt es hier eine Einbahnstraßenregelung? auch für Radfahrer?	? 11474,13524 11512,13493 11598,13598
 # 
 #: last_checked: 2017-05-06
 Clayallee: Asphaltierung des Radwegs	?::inwork; 1746,5922 1736,5850 1714,5722 1656,5446
@@ -1643,8 +1648,9 @@ Möllendorffstr.: Radspur Richtung Süden entsteht	?; 15420,12178 15361,12071
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.580100.php
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.587472.php (Baustart Anfang Juni 2017)
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170522
 #: last_checked: 2017-05-01
-#: next_check: 2017-06-01
+#: next_check: 2017-06-30
 Berliner Str.: Markierung von Radspuren	? 3866,24451 3842,24556
 # 
 # REMOVED (nicht relevant) --- #: source_id: 2147341140 --- #: XXX laut vmz bis Mitte April 2017, laut rbb bis 24. April 2017, laut fritz bis 21. April 2017 --- Fraenkelufer: Vollsperrung auch für Radfahrer relevant?	? 11199,9993 11082,9992 10979,10017 10967,10092
@@ -1803,7 +1809,7 @@ Elsbeerenweg: Qualität? Genaue Lage? Existiert die Straße schon?	? -6378,5877 -6
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_929_16.pdf
 #: osm_watch: way id="295627704" version="4"
-#: last_checked: 2017-04-10
+#: last_checked: 2017-05-22
 #: check_frequency: 60d
 Liebigstr.: Einrichtung einer Spielstraße, wo genau?	? 14229,12311 14166,12323 14147,12344 14091,12355 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
 # 
@@ -1812,11 +1818,11 @@ Liebigstr.: Einrichtung einer Spielstraße, wo genau?	? 14229,12311 14166,12323 1
 #: XXX Bauarbeiten zwischen Thaerstr. und Hübnerstr.
 #: XXX NEW	Eldenaer Str. (Friedrichshain) In beiden Richtungen Kreuzung Proskauer Str. (Berlin)  Gültig ab: 24.11.2016 06:15  Baustelle, Vollsperrung (bis vsl. Ende 11/16)	2147340785
 #: XXX -> ist die Vollsperrung für Radfahrer relevant? -> am Abend schon wieder aufgehoben?
-#: last_checked: 2017-04-29 vvv
-#: check_frequency: 14d
-Eldenaer Str.: in Richtung Osten sind noch Bauarbeiten, vermutlich werden die Radspuren danach markiert	?::inwork; 14096,12827 14355,12752
-#: check_frequency: 14d
+#: last_checked: 2017-05-22 vvv
+#: check_frequency: 14d vvv
+Eldenaer Str.: in Richtung Osten noch keine Radspuren markiert	?::projected; 14096,12827 14355,12752
 Eldenaer Str.: in Richtung Osten noch keine Radspuren markiert	?::projected; 13844,12900 13960,12866 13979,12861 14066,12836
+#: check_frequency: ^^^
 #: last_checked ^^^
 # 
 # REMOVED (kenne ich schon) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5759 --- Alice-Salomon-Park: Zufahrt nochmal prüfen	? 6771,9458 6851,9365
@@ -2601,7 +2607,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2017-05-17
+#: last_checked: 2017-05-22
 #: check_frequency: 90d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # REMOVED (->handicap) --- Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10678,11172 10818,11269
@@ -3273,7 +3279,7 @@ Alt-Mahlsdorf: entsteht hier eine Ampel? Wird sie für Radfahrer relevant sein?	?
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2017-04-28
+#: last_checked: 2017-05-22
 #: next_check: 2018-01-01
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 

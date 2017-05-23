@@ -277,7 +277,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX ggfs. Bauarbeiten bis Mitte September 2016 (laut rbbtext)
 #: source_id: INKO_2147340291_COPY_1
 #: source_id: 2147340291
-#: last_checked: 2017-05-04
+#: last_checked: 2017-05-23
 #: check_frequency: 60d
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288
 Mariannenstr: Asphalt	Q0 11616,10288 11671,10402
@@ -1524,9 +1524,10 @@ Lepsiusstr.: Kopfsteinpflaster	Q2 4973,6645 4940,6586 4913,6538
 #: by: Johann Eickhoff-Koberg (Nordteil, Q2) vvv
 #: corrected_by: srt (Südteil)
 #: XXX Sanierung ab dem Jahr 2016 (by Bezirksmelder) vvv
-#: XXX neue Termine: Baubeginn: voraussichtlich Ende 2017, Bauende: voraussichtlich Mitte 2018
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170522
+#: XXX neue Termine: Frühjahr 2018 - Mitte 2019
 #: last_checked: 2016-10-03 vvv
-#: next_check: 2017-11-01 vvv
+#: next_check: 2018-04-01 vvv
 Artemisstr.: kleinteiliges Kopfsteinpflaster mit spürbaren Unebenheiten	Q2+ 4371,22234 4280,22383 4232,22458
 #: corrected_by: srt (kleinteiliges Kopfsteinpflaster mit spürbaren Unebenheiten -> ...)
 Artemisstr.: schadhafter Asphalt	Q2+ 4232,22458 4119,22634
@@ -6376,8 +6377,9 @@ Alsheimer Str.: Kopfsteinpflaster	Q2+ 6618,3817 6717,3924
 Scharzhofberger Str.: Asphalt	Q0 6739,3585 6827,3676
 Melanchthonstr. (Lankwitz): provisorischer Asphalt über Kopfsteinpflaster	Q1 6926,3337 6788,3181
 Mühlenstr.: Asphalt	Q0 6914,3093 6842,2995
-#: XXX wird hier asphaltiert werden? vvv
+#: XXX es wird ein 4m breiter Asphaltstreifen realisiert; außerdem wird es vermutlich einen neuen diagonalen Weg zur Gallwitzallee geben vvv
 #: XXX Baumaßnahme GL6.15 (Realisierung nach 2011) vvv
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/uebersicht-baubereich-muehlenstrasse-2.pdf
 #: osm_watch: way id="118635979" version="6"
 #: last_checked: 2017-05-21 vvv
 #: check_frequency: 180d vvv
@@ -9563,10 +9565,11 @@ Rostocker Str.: Beton	Q0- 17343,19000 17337,18871 17443,18858 17426,18695 17430,
 (Grünanlage Egon-Erwin-Kisch-Str. - Falkenberger Chaussee): Verbundsteinpflaster	Q1 17686,18172 17721,18001
 Neustrelitzer Str.: Asphalt	Q0 16752,14745 16668,14765 16524,14749
 Alfred-Scholz-Platz: gepflastert	Q1 12753,8187 12779,8188 12805,8194
-#: XXX Fahrbahn wird neu gebaut (ab Frühjahr 2017)
+#: XXX Fahrbahn wird neu gebaut (Baubeginn ist voraussichtlich im Frühjahr 2018)
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.515712.php
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.515712.php?date=20170522
 #: last_checked: 2017-03-26
-#: check_frequency: 60d
+#: next_check: 2018-03-01
 Feuerbachstr.: Asphalt teilweise aufgebrochen	Q1; 5823,6413 6083,6451
 Storkower Str. [Gewerbegebiet]: Asphalt	Q0- 13737,14204 13639,14133
 Storkower Str. [Gewerbegebiet]: Asphalt	Q1 13639,14133 13715,14018 13784,13908
@@ -9852,7 +9855,7 @@ Fellbacher Str.: Kopfsteinpflaster	Q2 3610,23272 3653,23305
 (Weg zum großen Bunkerberg): kleinteiliges Kopfsteinpflaster	Q1- 12307,13329 12355,13366 12391,13416 12386,13452 12305,13514 12232,13523 12197,13488 12196,13453 12235,13383 12274,13372 12327,13394 12344,13424 12307,13491 12254,13495 12232,13477 12246,13440 12278,13418 12287,13443
 Torstr. - Weydingerstr.: Verbundsteinpflaster	Q1+ 11079,13492 11111,13518
 #: XXX Wird die Fahrbahn nochmal geändert? Wird bei der Erstellung der Straße auch eine Beleuchtung eingebaut (-> nolighting-orig)?
-#: last_checked: 2017-04-19
+#: last_checked: 2017-05-23
 Wilhelmine-Gemberg-Weg: provisorischer Asphalt	Q0 11715,11522 11762,11665
 Wilhelmine-Gemberg-Weg: Feinschotter	Q1 11762,11665 11829,11727
 Alexanderplatz: Pflasterung mit Schäden	Q1- 11055,12717 11030,12741 11007,12773 10970,12822

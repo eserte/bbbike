@@ -26046,4 +26046,27 @@ EOF
 userdel	q3::inwork 10264,13097 10310,13227 10317,13248
 EOF
      },
+     { from  => 1495473890, # 2017-05-22 19:24
+       until => $isodate2epoch->("2017-05-27 23:59:59"), # 1495663199, # 2017-05-24 23:59
+       text  => 'Brandenburger Tor: vermutlich Sperrungen zum Kirchentag, 24. Mai 2017 bis 27. Mai 2017',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 8522,12187 8538,12245 8600,12165
+userdel	2::temp 8344,12221 8538,12245 8592,12252 8637,12258 8643,12208 8728,12220 8722,12268 8637,12258 8630,12307 8714,12319 8722,12268 8804,12280
+userdel	2::temp 8522,12239 8538,12245 8546,12279
+EOF
+     },
+     { from  => 1495473982, # 2017-05-22 19:26
+       until => 1495663199, # 2017-05-24 23:59
+       text  => 'Gendarmenmarkt: vermutlich Sperrungen zum Kirchentag, 24. Mai 2017',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 9536,11922 9666,11935 9656,12031 9523,12019
+userdel auto	3 9645,12133 9656,12031 9913,12068
+userdel auto	3 9820,11951 9666,11935 9679,11834
+userdel auto	3 9679,11834 9666,11935 9820,11951
+userdel auto	3 9913,12068 9656,12031 9645,12133
+	2::temp 9523,12019 9536,11922
+EOF
+     },
     );
