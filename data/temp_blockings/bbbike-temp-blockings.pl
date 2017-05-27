@@ -25629,7 +25629,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-05-15 vvv
+#: last_checked: 2017-05-24 vvv
 #: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -26033,7 +26033,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann gehen die Bauarbeiten?
-#: last_checked: 2017-05-17
+#: last_checked: 2017-05-27
 userdel	q3::inwork; 8752,12647 8870,12647
 EOF
      },
@@ -26057,8 +26057,8 @@ userdel	2::temp 8522,12239 8538,12245 8546,12279
 EOF
      },
      { from  => 1495473982, # 2017-05-22 19:26
-       until => 1495663199, # 2017-05-24 23:59
-       text  => 'Gendarmenmarkt: vermutlich Sperrungen zum Kirchentag, 24. Mai 2017',
+       until => $isodate2epoch->("2017-05-28 18:00:00"), # 1495663199, # 2017-05-24 23:59
+       text  => 'Gendarmenmarkt: vermutlich Sperrungen zum Kirchentag, bis zum 28. Mai 2017 18 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 9536,11922 9666,11935 9656,12031 9523,12019
@@ -26067,6 +26067,17 @@ userdel auto	3 9820,11951 9666,11935 9679,11834
 userdel auto	3 9679,11834 9666,11935 9820,11951
 userdel auto	3 9913,12068 9656,12031 9645,12133
 	2::temp 9523,12019 9536,11922
+EOF
+     },
+     { from  => 1495918329, # 2017-05-27 22:52
+       until => $isodate2epoch->("2017-07-01 18:00:00"),
+       text  => 'Bölschestr.: Bauarbeiten, Einbahnstraße Richtung Süden, 22.05. bis 01.07.2017',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.595041.php',
+       data  => <<EOF,
+#: note: laut fritz bis 21.10.2017 08:00 Uhr
+#: by: http://werbegemeinschaft-friedrichshagen.de/wp-content/uploads/2017/05/2017-05_Boelschestr_Anwohnerflyer_web.pdf
+userdel	q4::inwork; 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
 EOF
      },
     );

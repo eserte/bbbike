@@ -1095,7 +1095,7 @@ Gehweg für Radfahrer frei	RW1;RW1 15831,10329 16004,10204 16114,10123 16138,1010
 neu asphaltiert	RW1; 17568,7753 17619,7679 17681,7589 17769,7465
 neu asphaltiert	RW1; 17769,7465 17681,7589 17619,7679
 #: XXX Bauarbeiten, zurzeit kein Radweg mehr
-#: last_checked: 2017-05-21
+#: last_checked: 2017-05-27
 	RW0; 17619,7679 17568,7753 17527,7812 17299,8140 17202,8391
 	RW1; 17202,8391 17143,8565 17105,8666
 	RW1;RW1 17769,7465 17847,7356 18010,7133
@@ -1439,7 +1439,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2017-05-17
+#: last_checked: 2017-05-27
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -2193,8 +2193,10 @@ die letzten 40 Meter am Alboinplatz noch mit Radweg auf dem Bürgersteig	RW0;RW0 
 	RW3;RW0 21781,4470 21789,4520
 	RW1;RW1 22965,4124 22971,4077 23041,3919 23055,3885
 	RW1;RW2 21954,5229 21974,5208
-	RW1; 21303,5826 21365,5832 21470,5809 21569,5730
-Gehweg für Radfahrer frei	RW1; 21569,5730 21470,5809 21365,5832 21303,5826
+	RW1; 21303,5826 21365,5832 21470,5809 21522,5771 21569,5730
+Gehweg für Radfahrer frei	RW1; 21569,5730 21522,5771
+	RW3; 21522,5771 21470,5809 21365,5832
+Gehweg für Radfahrer frei	RW1; 21365,5832 21303,5826
 Gehweg für Radfahrer frei	RW1;RW1 21569,5730 21596,5693 21602,5685 21706,5541 21789,5427
 die letzten 70 Meter sind benutzungspflichtig	RW1; 21789,5427 21954,5229
 	RW1; 21954,5229 21789,5427
@@ -4606,8 +4608,8 @@ Tempo 10	RW6;RW6 13559,12779 13470,12990
 #: by: http://www.tagesspiegel.de/berlin/stadtentwicklung-zwillingsturm-soll-2016-in-der-city-west-eroeffnen/7416454.html (geplante Eröffnung Mitte 2016)
 #: source_id: LMS-BR_r_LMS-BR_121
 #: XXX laut fritz bis zum 26. April 2017, laut vmz mittlerweile entfernt
-#: last_checked: 2017-05-15
-#: next_check: 2017-06-15
+#: last_checked: 2017-05-27
+#: next_check: 2017-06-16
 #	RW3; 5488,10978 5613,10963 5652,11004
 ##: note: teilweise vor dem Hotel unterbrochen (wegen Ladezone?)
 #	RW3; 5652,11004 5613,10963 5488,10978

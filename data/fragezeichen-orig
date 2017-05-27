@@ -462,7 +462,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/holzmarktstrasse/download/LP_01.pdf
 #: source_id: 2147340618
 #: source_id: LMS-BR_r_LMS-BR_81616
-#: last_checked: 2017-05-22
+#: last_checked: 2017-05-24
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 # 
 # REMOVED (realisiert) --- #: by: http://www.aktion-kms.de/files/2015-07-13_flyer_isarneckar_final.pdf --- #: last_checked: 2016-12-15 --- #: check_frequency: 30d --- Neckarstr./Isarstr.: Umgestaltung, danach verkehrsberuhigter Bereich; ändert sich am Fahrbahnbelag etwas?	?::inwork 12368,8356 12382,8292 12509,8318 12639,8344
@@ -716,7 +716,7 @@ Hennigsdorfer Str.: nach den Bauarbeiten durchgängig asphaltiert mit Radstreifen
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/450810361013210974/1013210974/00244965/65-Anlagen/01/DRS1399VB.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3896&mt=0&zoom=15
 #: XXX vermutlich wird die Ottomar-Geschke-Str. komplett asphaltiert werden
-#: last_checked: 2016-07-16 vvv
+#: last_checked: 2017-05-27 vvv
 #: check_frequency: 360d vvv
 Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Lage der kreuzenden Privatstraßen? Straßenname? Qualität? Anbindung zum Uferweg?	?::projected 21447,5414 21482,5388 21516,5308 21555,5214 21415,5157 21345,5157
 Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Lage der kreuzenden Privatstraßen? Straßenname? Qualität? Anbindung zum Uferweg?	?::projected 21415,5157 21449,5102 21477,5057 21498,5023
@@ -1021,7 +1021,7 @@ Friedelstr.: Asphaltierung	?::projected 12085,9778 12074,9689 12066,9558 12047,9
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="13"
-#: last_checked: 2017-05-23
+#: last_checked: 2017-05-24
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -1173,7 +1173,7 @@ Innstr.: hier wird ein Asphaltstreifen entstehen, vielleicht auch der Zugang zum
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017)
-#: last_checked: 2017-05-21
+#: last_checked: 2017-05-24
 #: check_frequency: 100d
 Weigandufer (und Pflügerstr.?): Fahrradstraße geplant	?::projected 13939,8228 13875,8282 13716,8410 13641,8470 13539,8552 13450,8625 13366,8694 13191,8838 13048,8956 12907,9073 12761,9190 12620,9293 12480,9394
 # 
@@ -1267,7 +1267,7 @@ Wolzenseeweg: Qualität? Straße bereits fertiggestellt? Wird es eine Überquerungs
 Mauerweg (Potsdam-Sacrow): evtl. existiert hier bereits ein geschotterter Radweg parallel zur Straße	? -9064,3667 -9156,3451 -9399,3297 -9530,3165 -9999,2615 -10105,2458
 # 
 #: next_check_id: OBERWALL-2014 vvv
-#: last_checked: 2017-04-28 vvv
+#: last_checked: 2017-05-24 vvv
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: XXX siehe auch gesperrt-orig-Eintrag zur Oberwallstr.
@@ -1336,7 +1336,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: http://www.dafmap.de/d/berlin.html?id=5213&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-12-31)
 #: XXX Asphaltierung der Fahrbahn von Rummelsburger Landstr. bis Schwarzer Weg fertig
 #: XXX Radwege werden vermutlich asphaltiert sein
-#: last_checked: 2017-05-21
+#: last_checked: 2017-05-27
 #: next_check: 2017-07-01
 Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rummelsburger Landstraße und Köpenicker Landstraße	?::inwork 17681,7589 17585,7525 17453,7451 17295,7344 17211,7280 17091,7175 16971,7058 16720,6845
 # 
@@ -1353,11 +1353,7 @@ Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rumm
 Treskowallee: Bau von Radwegen	?::projected; 18704,8427 18731,8577 18733,8633
 # 
 # REMOVED (laut http://www.berlin.lsvd.de/cms/index.php?option=com_content&task=view&id=184&Itemid=175 (URL existiert nicht mehr) sowie laut http://de.wikipedia.org/wiki/Kanzleramtssteg nicht mehr in Planung) --- Magnus-Hirschfeld-Steg: laut Tsp geplant	? 7360,12430 7437,12368
-# 
-#: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1370
-#: note: Havelradweg
-#: next_check: 2007-12-31
-Werder - Phöben: Radweg in Planung, Realisierung bis 2007-12-31	? -22206,-1693 -22672,-1511 -23124,-1235 -23199,-903 -23175,-350 -23411,15 -23896,653 -24509,1607 -24680,1670 -24894,1733
+# REMOVED --- #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1370 --- #: note: Havelradweg --- #: next_check: 2007-12-31 --- Werder - Phöben: Radweg in Planung, Realisierung bis 2007-12-31	? -22206,-1693 -22568,-1550 -22672,-1511 -23124,-1235 -23199,-903 -23175,-350 -23411,15 -23925,683 -24195,1129 -24509,1607 -24680,1670 -24894,1733
 # 
 #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1957
 #: next_check: 2008-08-01
@@ -1694,7 +1690,7 @@ Am Hechtgraben - Falkenberger Chaussee: Verbindung? Nachts beleuchtet? Qualität?
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5430
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036305920032/305920032/00115953/53-Anlagen/04/B1328SB.pdf
-#: last_checked: 2017-05-21 vvv
+#: last_checked: 2017-05-27 vvv
 #: check_frequency: 90d vvv
 An der Wuhlheide: werden hier Schutzstreifen entstehen?	? 21002,5755 20880,5736 20755,5750 20536,5789 20428,5841 20352,5877 20173,5892 20057,5923 19958,5950
 An der Wuhlheide: werden hier Schutzstreifen entstehen?	? 18492,6893 18404,6946 18225,7004 18010,7133
@@ -2494,7 +2490,7 @@ Dörpfeldstr.: evtl. Einrichtung von Radverkehrsanlagen	?::projected 20834,4035 2
 #: by ^^^
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4353&options=4 (Prüfung der Maßnahme)
-#: osm_watch: way id="46907545" version="6"
+#: osm_watch: way id="46907545" version="7"
 #: last_checked: 2017-05-06
 #: check_frequency: 180d
 Birkbuschstr.: werden hier Radspuren oder Busspuren angelegt?	? 5541,4305 5483,4359 5416,4411 5329,4485 5271,4547 5165,4667 5132,4704 5076,4762 5070,4770 5048,4798 4985,4884 4951,4920 4879,5017
@@ -2816,7 +2812,7 @@ Planstraßen im Marienhain: Straßennamen? Qualität?	? 22771,3151 22476,3118 22485
 #: last_checked ^^^
 #: XXX ^^^
 # 
-# REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2015 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5051 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2015 (Grundstücksnummerierungen) --- # by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/35re.pdf/file?y=2015 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/39re.pdf/file?y=2015 (Hausnummern) --- #: last_checked: 2015-05-16 vvv --- #: check_frequency: 100d vvv --- Am Stadtforst: hier entstehen neue Straßen, genaue Lage, Qualität, vermutlich Sackgasse?	? 23623,2392 23624,2275 --- Sommerwiesenweg: hier entstehen neue Straßen, genaue Lage, Qualität (zurzeit Asphalt ohne Deckschicht)?	? 23487,2276 23624,2275
+# REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2015 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5051 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2015 (Grundstücksnummerierungen) --- # by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/35re.pdf/file?y=2015 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/39re.pdf/file?y=2015 (Hausnummern) --- #: last_checked: 2015-05-16 vvv --- #: check_frequency: 100d vvv --- Am Stadtforst: hier entstehen neue Straßen, genaue Lage, Qualität, vermutlich Sackgasse?	? 23648,2374 23628,2349 23624,2275 --- Sommerwiesenweg: hier entstehen neue Straßen, genaue Lage, Qualität (zurzeit Asphalt ohne Deckschicht)?	? 23487,2276 23624,2275
 # REMOVED (weitgehend realisiert) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20140922.1345.399356.html (Erschließung bis Anfang 2015) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6304 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036218583297/218583297/00079580/80-Anlagen/02/vzb1011_IV_Benennung_Strassen_B_Plan_10_56.pdf (Straßenname) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2015 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6407 (Korrektur der Benennung, vorher Clara-Immerwahr-Haber-Str.) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036322976038/322976038/00081362/62-Anlagen/02/vzb1095_IV_Korrektur_Benennung_Clara_Immerwahr.pdf --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/46re.pdf/file?y=2015 (Korrektur) --- #: last_checked: 2015-04-11 --- #: next_check: 2015-10-01 --- #: XXX Straße ist asphaltiert --- #: XXX fehlt in Berlin.coords.data, PLZ=12681 --- Clara-Immerwahr-Str.: Wann wird die Straße eröffnet?	?::inwork 19202,17471 19546,17351 19546,17351 19798,17263 19845,17235 19914,17203 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/21re.pdf/file?y=2015 --- #: XXX Straße ist asphaltiert --- #: XXX fehlt in Berlin.coords.data, PLZ=12681 --- #: XXX Name tatsächlich ohne Bindestriche? --- auch laut Amtsblatt ohne Bindestriche --- #: last_checked: 2015-08-09 --- #: next_check: 2015-10-01 --- Am Cleantech Business Park: Wann wird die Straße eröffnet?	?::inwork 19428,16692 19459,16767 19449,16797 19408,16824 19384,16863 19486,17170 --- #: XXX ist der Radweg/Gehweg hier auch asphaltiert? --- #: next_check: 2015-10-01 --- Am Cleantech Business Park: Weg in Bau: wann wird der Weg eröffnet?	?::inwork 19486,17170 19546,17351
 # REMOVED (realisiert) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2014 (Straßenlandwidmung für Verbreiterung der Hohenschönhausener) --- #: last_checked: 2014-09-27 --- #: check_frequency: 45d --- Hohenschönhausener Str.: Radweg wird auf der östlichen Seite gebaut, wahrscheinlich asphaltiert und Zweirichtungsradweg	?::inwork 18738,16957 19108,17347 19183,17444 19202,17471 19529,17902 19611,17999 19668,18005 19772,18064 19820,18091 19845,18120 19875,18182
 # 
@@ -3279,7 +3275,7 @@ Alt-Mahlsdorf: entsteht hier eine Ampel? Wird sie für Radfahrer relevant sein?	?
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2017-05-22
+#: last_checked: 2017-05-24
 #: next_check: 2018-01-01
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 

@@ -2908,7 +2908,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id: HEIDELBERGER-2017
 #: XXX wann werden die Ampeln wieder abgebaut?
 #: note eigentlich zwei Ampeln, aber zusammengeschaltet
-#: last_checked: 2017-04-27
+#: last_checked: 2017-05-24
 #: check_frequency: 60d
 	F::inwork 13489,9199
 	X 19894,-835
@@ -3072,6 +3072,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	B -72884,-1897
 	F -2691,-1112
 	X -2747,-937
 	B 71914,-71679

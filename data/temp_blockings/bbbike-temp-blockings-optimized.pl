@@ -4224,7 +4224,7 @@ userdel	q4::inwork 12911,1815 12817,2031
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-05-15 vvv
+#: last_checked: 2017-05-24 vvv
 #: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -4354,16 +4354,7 @@ userdel	q4::inwork; 5583,5179 5527,5217 5416,5289 5397,5302 5382,5312
          'until' => 1502812800
        },
        undef,
-       {
-         'data' => 'userdel	q4::inwork 1458,24561 1410,24562 1330,24553 1250,24533 1156,24494
-',
-         'from' => 1494194400,
-         'id' => 2855,
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.580104.php',
-         'text' => 'Karmeliterweg: Bauarbeiten zwischen Olwenstr. und Donnersmarckallee, voraussichtlich vom 09.05.2017 bis zum 26.05.2017',
-         'type' => 'handicap',
-         'until' => 1495836000
-       },
+       undef,
        {
          'data' => 'userdel	q3::inwork 13384,8354 13217,8493
 userdel	q3::inwork; 13217,8493 13262,8554 13301,8606
@@ -4374,17 +4365,7 @@ userdel	q3::inwork; 13217,8493 13262,8554 13301,8606
          'type' => 'handicap',
          'until' => 1496268000
        },
-       {
-         'data' => '#: source_id: LMS-BR_r_LMS-BR_93359
-userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 14528,16910 14558,16907
-',
-         'from' => undef,
-         'id' => 2857,
-         'source_id' => '2147341139',
-         'text' => 'Rennbahnstr.: ab Hunsrückstr. bis Berliner Allee Bauarbeiten, Fahrtrichtung gesperrt ',
-         'type' => 'handicap',
-         'until' => 1495641600
-       },
+       undef,
        {
          'data' => 'userdel	q4::inwork 18009,18946 17900,18972 17890,18973 17799,19000 17697,18989 17600,18994
 ',
@@ -4420,7 +4401,7 @@ userdel	q4::inwork; 7201,8870 7107,9030
        undef,
        {
          'data' => '#: XXX bis wann gehen die Bauarbeiten?
-#: last_checked: 2017-05-17
+#: last_checked: 2017-05-27
 userdel	q3::inwork; 8752,12647 8870,12647
 ',
          'from' => undef,
@@ -4460,9 +4441,21 @@ userdel auto	3 9913,12068 9656,12031 9645,12133
 ',
          'from' => 1495473982,
          'id' => 2866,
-         'text' => 'Gendarmenmarkt: vermutlich Sperrungen zum Kirchentag, 24. Mai 2017',
+         'text' => 'Gendarmenmarkt: vermutlich Sperrungen zum Kirchentag, bis zum 28. Mai 2017 18 Uhr',
          'type' => 'gesperrt',
-         'until' => 1495663199
+         'until' => 1495987200
+       },
+       {
+         'data' => '#: note: laut fritz bis 21.10.2017 08:00 Uhr
+#: by: http://werbegemeinschaft-friedrichshagen.de/wp-content/uploads/2017/05/2017-05_Boelschestr_Anwohnerflyer_web.pdf
+userdel	q4::inwork; 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
+',
+         'from' => 1495918329,
+         'id' => 2867,
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.595041.php',
+         'text' => 'Bölschestr.: Bauarbeiten, Einbahnstraße Richtung Süden, 22.05. bis 01.07.2017',
+         'type' => 'handicap',
+         'until' => 1498924800
        }
      
 );

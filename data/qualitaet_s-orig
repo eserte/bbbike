@@ -956,11 +956,13 @@ Wuhlewanderweg: guter Asphalt	Q0 22030,6600 22097,6414 22146,6338 22214,6271 222
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
-#: last_checked: 2016-08-27 vvv
+#: last_checked: 2017-05-27 vvv
+#: check_frequency: 60d vvv
 #: osm_watch: way id="317233618" version="3"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22084,5877
 #: osm_watch: way id="25216398" version="26"
 Wuhlewanderweg: Verbundsteine, teilweise etwas uneben	Q1- 22084,5877 21846,5856 21744,5804 21602,5685 21507,5620
+#: check_frequency ^^^
 #: last_checked ^^^
 Hämmerlingstr.: Asphalt	Q0 21683,6946 21774,6880 21833,6810 21861,6719 21913,6554 21984,6317 22000,6245 22033,6144 22075,5996 22083,5899 22084,5877 22089,5782 22092,5673 22095,5585
 Dorfstr.: schlechtes Kopfsteinpflaster, teilweise gut befahrbare Banketten	Q2- 30357,3555 30319,3511 30281,3479 30201,3375 30188,3301 29998,3170 29902,3104 29921,3079 29959,3031
@@ -1956,8 +1958,8 @@ Eiselenweg - Uferweg: etwas sandig	Q2 21447,5414 21487,5425
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3240
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036544636457/544636457/00064312/12-Anlagen/10/B1072ZB7.pdf
 #: XXX "Die Herstellung des Uferweges ist zum 31.12.2016 in Planung."
-#: last_checked: 2016-07-16
-#: next_check: 2016-12-31
+#: last_checked: 2017-05-27
+#: check_frequency: 90d
 (Uferweg, Mentzelpark): Schotterweg	Q1- 21487,5425 21512,5404 21600,5221 21696,5053
 (Uferweg, Mentzelpark): Asphalt	Q0 21696,5053 21740,5004 21761,4979
 (Uferweg, Mentzelpark): hauptsächlich feiner Schotter	Q1 21761,4979 21821,4918 21834,4889
@@ -2102,8 +2104,8 @@ Am Krusenick: Asphalt	Q0 22705,4874 22667,4912 22652,4966 22751,4970
 (Am Krusenick - An der Filmfabrik): Kopfsteinpflaster	Q2 22754,4919 22794,4952
 (Am Krusenick - An der Filmfabrik): Asphalt	Q0 22794,4952 22872,5018
 Lindenstr.: äußere Fahrstreifen mit Kopfsteinpflaster	Q2+ 22154,4923 22196,4847
-Lienhardweg: asphaltiert	Q0 22958,2005 23099,2031 23209,2050 23325,2070 23433,2085 23526,2112
-Bendigstr.: Kopfsteinpflaster	Q2 23433,2085 23448,2013 23497,1812
+Lienhardweg: asphaltiert	Q0 22958,2005 23099,2031 23209,2050 23325,2070 23431,2092 23526,2112
+Bendigstr.: Kopfsteinpflaster	Q2 23431,2092 23448,2013 23497,1812
 Logauweg: Kopfsteinpflaster	Q2 23390,1785 23497,1812 23627,1835
 (Walter-Nicklitz-Promenade): glattes Verbundsteinpflaster	Q0- 8290,15304 8329,15397
 Pankebrücke: Holzbohlen	Q1 8329,15397 8308,15409
@@ -2280,7 +2282,7 @@ Möthlower Str.: Asphalt	Q0 -7736,15460 -7664,15601 -7588,15656
 Möthlower Str.: Sand	Q2 -7588,15656 -7483,15690 -7457,15704
 #: by: rjoop photos vvv
 #: XXX Bauarbeiten gesehen --- wird die Straße danach besere Qualität haben?
-#: osm_watch: way id="23943477" version="5"
+#: osm_watch: way id="23943477" version="6"
 #: last_checked: 2016-08-07
 #: corrected_by: srt (in Bau?)
 Straße 270: unbestigter Weg, Schotter	Q2- -5870,10847 -5312,10948
@@ -10066,15 +10068,7 @@ Arturweg: Verbundsteinpflaster	Q1+ 24948,10815 24949,10956
 (Weg im Theodorpark): Verbundsteinpflaster	Q1- 24922,10785 24954,10770 25017,10767 25062,10762 25148,10769
 (Allee der Kosmonauten - Murtzaner Ring): Asphalt	Q0 20096,14127 20040,14179
 Allee der Kosmonauten [Wohngebietsweg]: Asphalt	Q0- 19859,13765 20038,13771 20075,13758 20114,13762
-#: last_checked: 2016-06-26 vvv
-#: check_frequency: 120d vvv
-#: XXX wie wird die Qualität nach den Bauarbeiten?
-Am Stadtforst: unbefestigte Baustraße	Q2- 23623,2392 23624,2275
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ggfs. nur temporär?
-#: last_checked: 2016-06-26
-#: check_frequency: 90d
+Am Stadtforst: Betonpflaster	Q0- 23648,2374 23628,2349 23624,2275
 Sommerwiesenweg: Asphalt	Q0 23487,2276 23624,2275
 Siemensstr.: Betonpflastersteine	Q0- 5808,14114 5786,14106 5746,14090
 (Kolonie Wiesengrund II): unbefestigt, etwas sandig	Q2- 5966,22781 6063,22675
