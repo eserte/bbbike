@@ -4420,17 +4420,7 @@ userdel	q3::inwork; 8752,12647 8870,12647
          'type' => 'handicap',
          'until' => 1496267999
        },
-       {
-         'data' => 'userdel	2::temp 8522,12187 8538,12245 8600,12165
-userdel	2::temp 8344,12221 8538,12245 8592,12252 8637,12258 8643,12208 8728,12220 8722,12268 8637,12258 8630,12307 8714,12319 8722,12268 8804,12280
-userdel	2::temp 8522,12239 8538,12245 8546,12279
-',
-         'from' => 1495473890,
-         'id' => 2865,
-         'text' => 'Brandenburger Tor: vermutlich Sperrungen zum Kirchentag, 24. Mai 2017 bis 27. Mai 2017',
-         'type' => 'gesperrt',
-         'until' => 1495922399
-       },
+       undef,
        {
          'data' => 'userdel	2::temp 9536,11922 9666,11935 9656,12031 9523,12019
 userdel auto	3 9645,12133 9656,12031 9913,12068

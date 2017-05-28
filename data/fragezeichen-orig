@@ -453,7 +453,8 @@ Am Herzbergteich: wann ist die Straße fertig? Qualität? Genaue Lage?	? 17945,135
 #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/9-48-planung_mellowpark_a3.pdf
 #: XXX evtl. entsteht auch eine Wuhlebrücke
 #: osm_watch: way id="413009390" version="1"
-#: next_check: 2017-08-01
+#: last_checked: 2017-05-28
+#: check_frequency: 360d
 Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 21241,5666 21126,5612 21059,5596
 # 
 #: XXX außerdem Bau einer neuen Fußgängerampel Höhe Schillingstr. (dadurch fällt auch ein comments_*-Eintrag weg)
@@ -716,7 +717,7 @@ Hennigsdorfer Str.: nach den Bauarbeiten durchgängig asphaltiert mit Radstreifen
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/450810361013210974/1013210974/00244965/65-Anlagen/01/DRS1399VB.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3896&mt=0&zoom=15
 #: XXX vermutlich wird die Ottomar-Geschke-Str. komplett asphaltiert werden
-#: last_checked: 2017-05-27 vvv
+#: last_checked: 2017-05-28 vvv
 #: check_frequency: 360d vvv
 Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Lage der kreuzenden Privatstraßen? Straßenname? Qualität? Anbindung zum Uferweg?	?::projected 21447,5414 21482,5388 21516,5308 21555,5214 21415,5157 21345,5157
 Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Lage der kreuzenden Privatstraßen? Straßenname? Qualität? Anbindung zum Uferweg?	?::projected 21415,5157 21449,5102 21477,5057 21498,5023
@@ -1599,6 +1600,8 @@ B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+Weg unter der Wilhelm-Spindler-Brücke zum Bruno-Bürgel-Weg: Qualität? Beleuchtung? Genaue Wegführung?	? 21090,5417 21085,5451 20827,5431 20851,5255 20781,5242
+# 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170522
 #: XXX Wernsdorfer Straße (Schmöckwitz) in beiden Richtungen in Höhe Schwarzer Weg (Berlin)  Gültig ab: 15.03.2017 10:00  Baustelle, für beide Richtungen nur ein Fahrstreifen frei, Baustellenampel (bis Mitte 06/17)
 #: source_id: 2147341047
@@ -1690,7 +1693,7 @@ Am Hechtgraben - Falkenberger Chaussee: Verbindung? Nachts beleuchtet? Qualität?
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5430
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036305920032/305920032/00115953/53-Anlagen/04/B1328SB.pdf
-#: last_checked: 2017-05-27 vvv
+#: last_checked: 2017-05-28 vvv
 #: check_frequency: 90d vvv
 An der Wuhlheide: werden hier Schutzstreifen entstehen?	? 21002,5755 20880,5736 20755,5750 20536,5789 20428,5841 20352,5877 20173,5892 20057,5923 19958,5950
 An der Wuhlheide: werden hier Schutzstreifen entstehen?	? 18492,6893 18404,6946 18225,7004 18010,7133

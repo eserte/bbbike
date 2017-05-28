@@ -685,7 +685,7 @@ Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2
 #: confirmed_by: srt
 Handjerystr.: schlechtes Kopfsteinpflaster	Q3 20967,3343 20906,3433 20833,3519 20683,3693 20546,3865
 (An der Müggelspree - Salvador-Allende-Str.): Asphalt	Q0 23444,4942 23461,4948 23461,5013 23461,5054
-(An der Müggelspree): fester Waldweg	Q1 23461,5054 23620,5096 23776,5040 23852,5036 23962,5031 23982,5030 24147,4930 24398,4842 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25429,4493 25479,4540 25565,4549
+(An der Müggelspree): fester Waldweg	Q1 23461,5054 23620,5096 23776,5040 23852,5036 23962,5031 23982,5030 24147,4930 24378,4847 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25429,4493 25479,4540 25565,4549
 (Zum Spreetunnel): fester Waldweg, Stufen!	Q2+ 25385,4414 25403,4415 25477,4419 25565,4549
 Görlitzer Park: teils fester sandiger Weg	Q1- 12671,10042 12686,10045 12690,10062
 Görlitzer Park: teils fester sandiger Weg	Q1- 12757,10197 12763,10207 12767,10216
@@ -950,13 +950,13 @@ Splanemannstr.: Asphalt	Q0 18408,10041 18389,9925
 Wuhlewanderweg: guter Beton	Q0 21349,9062 21334,9015 21280,8954 21252,8928 21210,8883 21192,8839 21183,8731 21173,8576 21193,8468 21276,8374 21337,8273 21351,8259 21568,8052 21593,7934 21599,7904
 Wuhlewanderweg: Parkweg	Q1 21599,7904 21587,7865 21542,7752 21538,7684
 Wuhlewanderweg: guter Asphalt	Q0 21629,7921 21616,7863 21570,7751 21597,7711 21620,7647 21613,7521 21567,7284 21574,7244 21590,7211 21888,6944 21976,6848 22056,6613
-Wuhlewanderweg: guter Asphalt	Q0 22030,6600 22097,6414 22146,6338 22214,6271 22236,6233 22238,6195
+Wuhlewanderweg: guter Asphalt	Q0 22030,6600 22097,6414 22146,6338 22214,6271 22236,6233 22237,6211 22238,6195
 # REMOVED (nein, hier passiert vorerst nichts, siehe 2. URL) --- #: XXX eventuell passiert hier noch was bzgl. Neupflasterung? --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4258&options=4 (Neupflasterung) --- #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/verwaltungbzbm/mdv_vii_12.pdf?start&ts=1347456072&file=mdv_vii_12.pdf --- #: next_check: 2012-09-01
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bvv/mdv_vii_30.pdf?start&ts=1397460445&file=mdv_vii_30.pdf (Sanierung 2015)
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
-#: last_checked: 2017-05-27 vvv
+#: last_checked: 2017-05-28 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="317233618" version="3"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22084,5877
@@ -1958,7 +1958,7 @@ Eiselenweg - Uferweg: etwas sandig	Q2 21447,5414 21487,5425
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3240
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036544636457/544636457/00064312/12-Anlagen/10/B1072ZB7.pdf
 #: XXX "Die Herstellung des Uferweges ist zum 31.12.2016 in Planung."
-#: last_checked: 2017-05-27
+#: last_checked: 2017-05-28
 #: check_frequency: 90d
 (Uferweg, Mentzelpark): Schotterweg	Q1- 21487,5425 21512,5404 21600,5221 21696,5053
 (Uferweg, Mentzelpark): Asphalt	Q0 21696,5053 21740,5004 21761,4979
@@ -2102,7 +2102,7 @@ Am Krusenick: Kopfsteinpflaster	Q2 22751,4970 22754,4919
 Am Krusenick: guter Asphalt	Q0 22754,4919 22705,4874
 Am Krusenick: Asphalt	Q0 22705,4874 22667,4912 22652,4966 22751,4970
 (Am Krusenick - An der Filmfabrik): Kopfsteinpflaster	Q2 22754,4919 22794,4952
-(Am Krusenick - An der Filmfabrik): Asphalt	Q0 22794,4952 22872,5018
+(Am Krusenick - An der Filmfabrik): Asphalt	Q0 22794,4952 22817,4971 22872,5018
 Lindenstr.: äußere Fahrstreifen mit Kopfsteinpflaster	Q2+ 22154,4923 22196,4847
 Lienhardweg: asphaltiert	Q0 22958,2005 23099,2031 23209,2050 23325,2070 23431,2092 23526,2112
 Bendigstr.: Kopfsteinpflaster	Q2 23431,2092 23448,2013 23497,1812
@@ -3265,7 +3265,7 @@ Grimnitzstr. (Karlshorst): schlechtes Kopfsteinpflaster	Q3 18070,8945 17929,8742
 Müritzstr.: schlechtes Kopfsteinpflaster	Q3 18147,8895 18009,8687 17930,8567
 Hoher Wallgraben: Asphalt mit Schäden	Q2+ 17988,8350 17999,8336 18078,8112 18099,8048
 (Hoher Wallgraben - Hegemeisterweg): Waldweg	Q2+ 18099,8048 18119,7996 18287,7815
-Am Ernst-Grube-Park: sehr gutes Verbundsteinpflaster	Q0 21025,5437 21057,5421 21073,5351 21090,5417 21143,5402
+Am Ernst-Grube-Park: sehr gutes Verbundsteinpflaster	Q0 21025,5437 21057,5421 21070,5343 21090,5417 21143,5402
 Angersteinweg: Asphalt und Verbundsteinpflaster	Q0 21143,5402 21151,5412 21206,5420
 Angersteinweg: Beton	Q1 21206,5420 21208,5336 21208,5291
 Mayschweg: Asphalt	Q0 22714,3558 22834,3571 22954,3584 23007,3597
@@ -9266,7 +9266,7 @@ Dürerplatz: Verbundsteinpflaster	Q1 6243,7033 6275,7004
 Fischerstr.: Asphaltschäden	Q2+ 16423,10259 16404,10286
 # REMOVED (möglicherweise dauerhaft gesperrt) --- (Wattstr./Siemensstr. - Wilhelminenhofstr.): Beton	Q1 17766,6616 17801,6554 17800,6504
 (Grüne Trift am Walde - Müggelheimer Damm/Salvador-Allende-Str.): Waldweg	Q1- 23412,3766 23368,3894
-(Weg westlich der Freilichtbühne): Asphalt, einige Wurzelhebungen	Q1+ 20225,6631 20169,6636 20118,6617 20060,6575 19995,6406
+(Weg westlich der Freilichtbühne): neuer Asphalt	Q0 20225,6631 20169,6636 20118,6617 20060,6575 19995,6406
 # REMOVED (Bauarbeiten beendet) --- #: XXX nach den Bauarbeiten wieder entfernen --- #: last_checked: 2013-08-03 --- #: next_check: 2013-10-03 --- (Umleitungsstrecke für das Paul-und-Paula-Ufer): Schotterweg	Q2+ 15056,10625 14930,10646
 (Wasserwerk Wuhlheide - S-Bhf. Wuhlheide): Waldweg, etwas Schotter	Q1- 19463,7117 19599,7075 19721,7138 19887,7148 20024,7187 20134,7175 20316,7170 20439,7124
 (Wasserwerk Wuhlheide - Wagenburg): Waldweg, matschige Stellen	Q2+ 19407,6660 19599,7075
@@ -10345,6 +10345,7 @@ Oskar Helene Park: Asphalt	Q0 1370,4547 1313,4566 1287,4577 1223,4635 1166,4566 
 Mathilde-Vaerting-Weg: Betonpflaster	Q0- 17611,-330 17647,-386 17654,-397
 #: note: die letzten Meter sind unbefestigt
 Teutonenstr. (Altglienicke): schlechtes Kopfsteinpflaster	Q3 20186,1522 20256,1504
+(Am Krusenick - An der Filmfabrik): wassergebundene Decke	Q1 22751,4970 22770,4966 22817,4971
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -10359,8 +10360,8 @@ Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
 #: corrected_by: srt (-> neu (?) asphaltiert)
 Straße 69: Asphalt	Q0 15434,22604 15638,22473
-#: add_fragezeichen: ist hier mittlerweile auch asphaltiert?
-Straße 69: schlechter fester Sandweg, Schlaglöcher	Q3+ 15638,22473 15898,22296
+#: corrected_by: kartonage (osm) (-> neu (?) asphaltiert)
+Straße 69: Asphalt	Q0 15638,22473 15898,22296
 Suzetteweg: gutes Verbundsteinpflaster	Q1 11805,21385 11561,21429
 Erbsenpfad: schlechter fester Sandweg	Q3 -7872,14409 -7850,14555
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)

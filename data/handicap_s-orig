@@ -19,14 +19,14 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraﬂe wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2017-05-27
+#: last_checked: 2017-05-28
 Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2017-05-27
+#: last_checked: 2017-05-28
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt, Bordsteine	q3 14254,11377 14211,11229
 # 
-#: last_checked: 2017-05-21
+#: last_checked: 2017-05-28
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
 #: last_checked: 2017-05-27
@@ -215,7 +215,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: next_check_id: STAATSOPER-2014 vvv
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html
-#: last_checked: 2017-04-28 vvv
+#: last_checked: 2017-05-24 vvv
 #: check_frequency: 30d vvv
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9883,12251 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
@@ -515,7 +515,7 @@ Alt-Tegel: reger Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q4 1907,20265 2020,20327
 Breitscheidplatz: starker Fuﬂg‰ngerverkehr, oft Veranstaltungen	q4 5656,10876 5652,11004
 Breitscheidplatz: starker Fuﬂg‰ngerverkehr, oft Veranstaltungen	q4 5782,10884 5829,10964
 Wilmersdorfer Str.: starker Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone), nachts und sonntags Radfahren erlaubt	q4 3717,11462 3749,11344 3770,11231 3795,11098 3827,10980
-(An der M¸ggelspree): Fuﬂg‰nger	q2 23444,4942 23461,4948 23461,5013 23461,5054 23620,5096 23776,5040 23852,5036 23962,5031 23982,5030 24147,4930 24398,4842 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25429,4493 25479,4540 25565,4549
+(An der M¸ggelspree): Fuﬂg‰nger	q2 23444,4942 23461,4948 23461,5013 23461,5054 23620,5096 23776,5040 23852,5036 23962,5031 23982,5030 24147,4930 24378,4847 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25429,4493 25479,4540 25565,4549
 Am M¸ggelsee: Fuﬂg‰nger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26158,2647 26339,2667 26457,2660 26627,2610 26859,2596 26989,2570 27081,2528 27135,2500 27173,2444 27267,2414 27363,2448 27471,2527 27565,2637 27743,2842 27822,2910 27937,3016 28273,3143 28496,3253 28588,3285 28668,3297 28852,3293 28852,3277
 Pestalozzistr.: Fuﬂg‰ngerzone	q3 3721,11230 3770,11231 3822,11231
 (Zufahrt am NKZ): Fuﬂg‰nger/Lieferverkehr	q2 11291,10438 11317,10485 11344,10507
@@ -1041,7 +1041,7 @@ Wuhlewanderweg: Fuﬂg‰nger	q1 22242,11269 22244,11311 22073,11581 22009,11636 218
 Wuhlewanderweg: Fuﬂg‰nger	q1 22244,11311 22268,11285
 Wuhlewanderweg: enge Unterf¸hrung	q3 22268,11285 22279,11272 22270,11210
 Wuhlewanderweg: Fuﬂg‰nger	q1 22270,11210 22236,11208
-Wuhlewanderweg: Fuﬂg‰nger	q1 22238,6195 22236,6233 22214,6271 22146,6338 22097,6414 22030,6600 22056,6613 21976,6848 21888,6944 21590,7211 21574,7244 21567,7284 21613,7521 21620,7647 21597,7711 21570,7751 21616,7863 21629,7921 21599,7904 21593,7934 21568,8052 21351,8259 21337,8273 21276,8374 21193,8468 21173,8576 21183,8731 21192,8839 21210,8883 21252,8928 21280,8954 21334,9015 21349,9062
+Wuhlewanderweg: Fuﬂg‰nger	q1 22238,6195 22237,6211 22236,6233 22214,6271 22146,6338 22097,6414 22030,6600 22056,6613 21976,6848 21888,6944 21590,7211 21574,7244 21567,7284 21613,7521 21620,7647 21597,7711 21570,7751 21616,7863 21629,7921 21599,7904 21593,7934 21568,8052 21351,8259 21337,8273 21276,8374 21193,8468 21173,8576 21183,8731 21192,8839 21210,8883 21252,8928 21280,8954 21334,9015 21349,9062
 Wuhlewanderweg: Fuﬂg‰nger	q1 21383,9045 21467,9236 21524,9488 21587,9609 21633,9731 21678,9817 21686,9876
 Wuhlewanderweg: Fuﬂg‰nger	q1 21611,9893 21619,9993 21566,10230 21585,10289 21584,10329 21586,10344 21608,10403 21646,10510 21657,10519 21791,10623 21827,10684 21869,10750 21950,10776 22059,10782 22110,10796
 Wuhlewanderweg: Fuﬂg‰nger	q1 22059,10782 22103,10814 22160,10834
@@ -2512,6 +2512,7 @@ Am Orangeriepark: einige Fuﬂg‰nger	q1 10271,19361 10281,19364 10330,19384 10321,
 #: XXX_prog BS am Dalandweg, ansonsten eigentlich q1 (aber hier gibt's auch gleichzeitig eine Steigung zum Dalandweg hin)
 (Paul-Schwarz-Promenade - Dalandweg): einige Fuﬂg‰nger, Bordstein	q2 5387,4214 5385,4236
 An der Neumark: laut Schild "Schrittgeschwindigkeit"	q2 11283,3774 11300,3709 11357,3720 11378,3626 11332,3615
+(Am Krusenick - An der Filmfabrik): einige Fuﬂg‰nger	q1 22751,4970 22770,4966 22817,4971
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
