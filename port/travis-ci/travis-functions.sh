@@ -150,7 +150,11 @@ install_perl_dependencies() {
 	    # 0.293 needed for
 	    # * better diagnostics
 	    # * https://github.com/skaji/cpm/issues/42 (optional core modules)
-	    cpanm --quiet --notest 'App::cpm~>=0.293' LWP::Protocol::https
+	    #
+	    # In the process EUMM would be upgraded, but the current latest stable
+	    # is broken (see https://rt.cpan.org/Ticket/Display.html?id=121924), so
+	    # use another one.
+	    cpanm --quiet --notest 'ExtUtils::MakeMaker~!=7.26' 'App::cpm~>=0.293' LWP::Protocol::https
 	    perl Makefile.PL
 	    mymeta-cpanfile > cpanfile~ && mv cpanfile~ cpanfile
 	    # implement suggestion for more diagnostics in case of failures
