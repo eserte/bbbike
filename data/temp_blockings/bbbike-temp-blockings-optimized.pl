@@ -3354,27 +3354,7 @@ userdel	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: 20170527-20170528
-userdel	2::temp 6230,8602 6313,8638 6454,8653
-',
-         'from' => 1495789200,
-         'id' => 2428,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              4,
-                              'months',
-                              5
-                            ]
-                          ],
-         'source_id' => 'http://www.ms-event-agentur.com/seite18.html?date=20170325',
-         'text' => 'Schöneberger Mai- und Spargelfest am 27. und 28. Mai 2017 in der Freiherr-vom-Stein-Straße',
-         'type' => 'gesperrt',
-         'until' => 1495994400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4365,7 +4345,17 @@ userdel	q3::inwork; 13217,8493 13262,8554 13301,8606
          'type' => 'handicap',
          'until' => 1496268000
        },
-       undef,
+       {
+         'data' => '#: source_id: LMS-BR_r_LMS-BR_93359
+userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 14528,16910 14558,16907
+',
+         'from' => undef,
+         'id' => 2857,
+         'source_id' => '2147341139',
+         'text' => 'Rennbahnstr.: ab Hunsrückstr. bis Berliner Allee Bauarbeiten, Fahrtrichtung gesperrt, bis Anfang Juni 2017 ',
+         'type' => 'handicap',
+         'until' => 1496311200
+       },
        {
          'data' => 'userdel	q4::inwork 18009,18946 17900,18972 17890,18973 17799,19000 17697,18989 17600,18994
 ',
@@ -4421,20 +4411,7 @@ userdel	q3::inwork; 8752,12647 8870,12647
          'until' => 1496267999
        },
        undef,
-       {
-         'data' => 'userdel	2::temp 9536,11922 9666,11935 9656,12031 9523,12019
-userdel auto	3 9645,12133 9656,12031 9913,12068
-userdel auto	3 9820,11951 9666,11935 9679,11834
-userdel auto	3 9679,11834 9666,11935 9820,11951
-userdel auto	3 9913,12068 9656,12031 9645,12133
-	2::temp 9523,12019 9536,11922
-',
-         'from' => 1495473982,
-         'id' => 2866,
-         'text' => 'Gendarmenmarkt: vermutlich Sperrungen zum Kirchentag, bis zum 28. Mai 2017 18 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1495987200
-       },
+       undef,
        {
          'data' => '#: note: laut fritz bis 21.10.2017 08:00 Uhr
 #: by: http://werbegemeinschaft-friedrichshagen.de/wp-content/uploads/2017/05/2017-05_Boelschestr_Anwohnerflyer_web.pdf

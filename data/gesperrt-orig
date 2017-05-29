@@ -2787,9 +2787,10 @@ Limburger Str.: Bauarbeiten am Rathaus Wedding, komplett gesperrt	2::inwork 7129
 #: valid: -20181231
 Karower Str.: temporäre Einbahnstraßenregelung	1s:q3 16593,25640 16632,25512 16669,25373
 # 
-#: last_checked: 2017-04-07
+#: last_checked: 2017-05-29
 #: check_frequency: 21d
-Mauerweg: Bauarbeiten, gesperrt	2::inwork 7926,14439 7939,14447 7889,14519
+# REMOVED (hier wieder offen) --- Mauerweg: Bauarbeiten, gesperrt	2::inwork 7926,14439 7939,14447
+Mauerweg: Bauarbeiten, gesperrt	2::inwork 7939,14447 7889,14519
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: note: in der anderen Richtung eigentlich nur für Baustellenverkehr
@@ -2848,7 +2849,7 @@ Heidelberger Str.: Baustelle, Einbahnstraßenregelung	1s:q3 13489,9199 13420,9259
 #: source_id: LMS-BR_r_LMS-BR_82028
 #: osm_watch: way id="42091230" version="19"
 #: osm_watch: way id="52960100" version="10"
-#: last_checked: 2017-05-01 vvv
+#: last_checked: 2017-05-29 vvv
 #: next_check: 2017-08-30 vvv
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q3 8732,14098 8654,14194
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q4 8654,14194 8607,14253 8527,14352 8442,14456
@@ -2871,7 +2872,7 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3 9042,11839 8969,118
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2017-05-24
+#: last_checked: 2017-05-29
 #: next_check: 2017-09-02
 Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,14449 7561,14458 7426,14539 7368,14573
 # 
@@ -2914,7 +2915,7 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,
 #: osm_watch: way id="309901369" version="4"
 #: source_id: 2147339783
 #: source_id: LMS-BR_r_LMS-BR_93449
-#: last_checked: 2017-03-24
+#: last_checked: 2017-05-29
 Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7741,14560 7518,14689
 # 
 # REMOVED --- Treptower Park: Bauarbeiten, Weg noch nicht fertiggestellt	2::inwork 14318,9688 14371,9726 14443,9731
@@ -3101,7 +3102,7 @@ am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14463,10212
 #: by: http://www.rbb-online.de/politik/beitrag/2014/07/bnd-zentrale-berlin-verzoegerung-vollstaendiger-umzug-bis-2017.html
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7441
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/1767-2016-bav-zu-ds-2814-iv-durchwegung_scharnhorst-chaussestrasse_sb.pdf
-#: last_checked: 2017-03-24
+#: last_checked: 2017-05-29
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: Durchfahrt noch nicht zuverlässig offen	2::inwork 8251,14337 8442,14456
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
@@ -3160,13 +3161,13 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 #: XXX geplante Fertigstellung (als Autostraße) im Dezember 2013
 #: XXX wrote Mail about current status (2013-11-05), no response
 # REMOVED --- osm_watch: way id="183406331" version="3"
-#: last_checked: 2017-03-24
+#: last_checked: 2017-05-29
 #: check_frequency: 120d
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)
 #: source_id: 2147340791
-#: last_checked: 2017-04-07
+#: last_checked: 2017-05-29
 #: next_check: 2018-12-01
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
 # 

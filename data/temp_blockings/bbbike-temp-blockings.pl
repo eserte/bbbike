@@ -25971,8 +25971,8 @@ userdel	q3::inwork; 13217,8493 13262,8554 13301,8606
 EOF
      },
      { from  => undef, # 
-       until => 1495641600, # 2017-05-24 18:00
-       text  => 'Rennbahnstr.: ab Hunsrückstr. bis Berliner Allee Bauarbeiten, Fahrtrichtung gesperrt ',
+       until => $isodate2epoch->("2017-06-01 12:00:00"), # 1495641600, # 2017-05-24 18:00
+       text  => 'Rennbahnstr.: ab Hunsrückstr. bis Berliner Allee Bauarbeiten, Fahrtrichtung gesperrt, bis Anfang Juni 2017 ',
        type  => 'handicap',
        source_id => '2147341139',
        data  => <<EOF,
