@@ -101,6 +101,8 @@ Pango	- Erzeugung der Route als PDF-Dokument, alternativer Renderer
 
 Font::Metrics::Helvetica	- Für die Reparatur der Zeichenbreitentabellen in PDF::Create
 
+Imager::QRCode	- Für das Erzeugen von QRCodes
+
 BSD::Resource
 
 Devel::Peek

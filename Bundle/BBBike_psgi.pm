@@ -47,6 +47,8 @@ Cairo	- Erzeugung der Route als PDF-Dokument, alternativer Renderer
 
 Pango	- Erzeugung der Route als PDF-Dokument, alternativer Renderer
 
+Imager::QRCode	- Für das Erzeugen von QRCodes
+
 Class::Accessor	- für die ESRI-Module etc.
 
 Template	- für BBBikeDraw::MapServer

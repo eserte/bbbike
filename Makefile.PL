@@ -145,6 +145,8 @@ my @req_table =
   [qw/Font::Metrics::Helvetica	0	all	0	base/,
    'Für die Reparatur der Zeichenbreitentabellen in PDF::Create'],
   #in dist: [qw/BikePower	0	all	0	base/],
+  [qw/Imager::QRCode	0	all	2	cgi/,
+   'Für das Erzeugen von QRCodes'],
 
   [qw/BSD::Resource	0	unix	0	base/], # really only BSD, and not used anyway in BBBike
 
