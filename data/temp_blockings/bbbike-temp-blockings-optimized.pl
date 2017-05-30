@@ -4406,9 +4406,9 @@ userdel	q3::inwork; 8752,12647 8870,12647
          'from' => 1494442386,
          'id' => 2864,
          'source_id' => '2147341279',
-         'text' => 'Rosenthaler Str.: Straßenbauarbeiten in Höhe Neue Schönhauser Str.. Fahrbahn gesperrt, bis 31. Mai 2017',
+         'text' => 'Rosenthaler Str.: Straßenbauarbeiten in Höhe Neue Schönhauser Str.. Fahrbahn gesperrt, bis 5. Juli 2017',
          'type' => 'handicap',
-         'until' => 1496267999
+         'until' => 1499248800
        },
        undef,
        undef,

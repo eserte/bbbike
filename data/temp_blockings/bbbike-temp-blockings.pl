@@ -26038,8 +26038,8 @@ userdel	q3::inwork; 8752,12647 8870,12647
 EOF
      },
      { from  => 1494442386, # 2017-05-10 20:53
-       until => 1496267999, # 2017-05-31 23:59
-       text  => 'Rosenthaler Str.: Straßenbauarbeiten in Höhe Neue Schönhauser Str.. Fahrbahn gesperrt, bis 31. Mai 2017',
+       until => $isodate2epoch->("2017-07-05 12:00:00"), # 1496267999, # 2017-05-31 23:59
+       text  => 'Rosenthaler Str.: Straßenbauarbeiten in Höhe Neue Schönhauser Str.. Fahrbahn gesperrt, bis 5. Juli 2017',
        type  => 'handicap',
        source_id => '2147341279',
        data  => <<EOF,

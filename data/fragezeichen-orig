@@ -1944,13 +1944,13 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7478
 #: XXX "noch 2016"
 #: osm_watch: note 824350 1
-#: last_checked: 2017-05-18
+#: last_checked: 2017-05-30
 #: check_frequency: 14d
 #: priority: #C
 Sebastian/Luckauer: Zebrastreifen in Bau	?::inwork 11113,10943 11109,10935
 # 
 #: osm_watch: note 851907 2
-#: last_checked: 2017-05-09
+#: last_checked: 2017-05-30
 #: check_frequency: 14d
 #: priority: #C
 Oranienplatz: Zebrastreifen in Bau	?::inwork 11233,10672 11258,10682 11262,10655
@@ -3316,6 +3316,13 @@ geplante Grünanlage	?::projected 4084,15859 4055,15795 4041,15786 4224,15779 421
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.588521.php
 #: next_check: 2018-06-01
 Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660,10521 2749,10584 3043,10680
+# 
+#: next_check: 2017-12-10 vvv
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.595685.php
+Mahlsdorf: Regionalbahnhof entsteht	?::projected 24487,12082
+#: by: https://www.rbb-online.de/wirtschaft/beitrag/2017/02/berlin-brandenburg-bahn-bauvorhaben-2017.html
+Karlshorst: Regionalbahnhof entfällt	?::projected 18796,8492
+#: next_check ^^^
 # 
 #: ignore ^^^
 #: section ^^^
