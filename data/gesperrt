@@ -2850,6 +2850,9 @@ versetzte Schranke, manchmal offen	BNP:1:-171:trailer=3 24625,20855
 Drängelgitter	BNP:3:-240 31665,48997
 Schranke	BNP:3:-59:trailer=10 8041,-3322
 Schranke	BNP:3:-64:trailer=10 6876,-2731
+Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3nocross::ignrte 10122,10294 10363,10303 10605,10312
+Gitschiner Str. -> Lobeckstr.: Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3::igndisp 10122,10294 10363,10303 10433,10456
+Lobeckstr. -> Gitschiner Str.: Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3::igndisp 10433,10456 10363,10303 10605,10312
 Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19143,1147
 Schinkelplatz: Einbahnstraße	1s 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
 Limburger Str.: Bauarbeiten am Rathaus Wedding, komplett gesperrt	2::inwork 7129,15717 7012,15571

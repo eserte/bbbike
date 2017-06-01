@@ -20,6 +20,8 @@ userdel	2::temp 9599,10175 9631,10142 9687,10180
 	2::temp 9825,10206 9858,10199
 userdel	3 9922,10010 9827,10051 9837,9856
 userdel	3 9837,9856 9827,10051 9922,10010
+	2::temp 9827,10051 9837,9856
+	2::temp 9837,9856 9723,9842 9588,9827 9387,9804
 ',
          'from' => 1496268000,
          'id' => 3,
@@ -2626,7 +2628,7 @@ userdel	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Mai von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juni von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -4335,26 +4337,19 @@ userdel	q4::inwork; 5583,5179 5527,5217 5416,5289 5397,5302 5382,5312
        },
        undef,
        undef,
-       {
-         'data' => 'userdel	q3::inwork 13384,8354 13217,8493
-userdel	q3::inwork; 13217,8493 13262,8554 13301,8606
-',
-         'from' => 1491498639,
-         'id' => 2856,
-         'text' => 'Innstr.: Bauarbeiten, Einbahnstraßenregelung, außerdem Sperrung an der Kreuzung Weserstr., bis Juni 2017',
-         'type' => 'handicap',
-         'until' => 1496268000
-       },
+       undef,
        {
          'data' => '#: source_id: LMS-BR_r_LMS-BR_93359
+#: XXX bis wann gehen die Bauarbeiten?
+#: next_check: 2017-06-15
 userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 14528,16910 14558,16907
 ',
          'from' => undef,
          'id' => 2857,
          'source_id' => '2147341139',
-         'text' => 'Rennbahnstr.: ab Hunsrückstr. bis Berliner Allee Bauarbeiten, Fahrtrichtung gesperrt, bis Anfang Juni 2017 ',
+         'text' => 'Rennbahnstr.: ab Hunsrückstr. bis Berliner Allee Bauarbeiten, Fahrtrichtung gesperrt',
          'type' => 'handicap',
-         'until' => 1496311200
+         'until' => undef
        },
        {
          'data' => 'userdel	q4::inwork 18009,18946 17900,18972 17890,18973 17799,19000 17697,18989 17600,18994
@@ -4420,9 +4415,9 @@ userdel	q4::inwork; 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548
          'from' => 1495918329,
          'id' => 2867,
          'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.595041.php',
-         'text' => 'Bölschestr.: Bauarbeiten, Einbahnstraße Richtung Süden, 22.05. bis 01.07.2017',
+         'text' => 'Bölschestr.: Bauarbeiten, Einbahnstraße Richtung Süden, 22.05. bis 21.10.2017',
          'type' => 'handicap',
-         'until' => 1498924800
+         'until' => 1508565600
        }
      
 );

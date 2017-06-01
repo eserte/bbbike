@@ -57,6 +57,8 @@ userdel	2::temp 9599,10175 9631,10142 9687,10180
 	2::temp 9825,10206 9858,10199
 userdel	3 9922,10010 9827,10051 9837,9856
 userdel	3 9837,9856 9827,10051 9922,10010
+	2::temp 9827,10051 9837,9856
+	2::temp 9837,9856 9723,9842 9588,9827 9387,9804
 EOF
      },
      { from  => $isodate2epoch->("2017-06-03 00:00:00"), # 1 Tag Vorlauf
@@ -25971,12 +25973,14 @@ userdel	q3::inwork; 13217,8493 13262,8554 13301,8606
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2017-06-01 12:00:00"), # 1495641600, # 2017-05-24 18:00
-       text  => 'Rennbahnstr.: ab Hunsrückstr. bis Berliner Allee Bauarbeiten, Fahrtrichtung gesperrt, bis Anfang Juni 2017 ',
+       until => undef, # $isodate2epoch->("2017-06-01 12:00:00"), # 1495641600, # 2017-05-24 18:00
+       text  => 'Rennbahnstr.: ab Hunsrückstr. bis Berliner Allee Bauarbeiten, Fahrtrichtung gesperrt',
        type  => 'handicap',
        source_id => '2147341139',
        data  => <<EOF,
 #: source_id: LMS-BR_r_LMS-BR_93359
+#: XXX bis wann gehen die Bauarbeiten?
+#: next_check: 2017-06-15
 userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 14528,16910 14558,16907
 EOF
      },
@@ -26070,8 +26074,8 @@ userdel auto	3 9913,12068 9656,12031 9645,12133
 EOF
      },
      { from  => 1495918329, # 2017-05-27 22:52
-       until => $isodate2epoch->("2017-07-01 18:00:00"),
-       text  => 'Bölschestr.: Bauarbeiten, Einbahnstraße Richtung Süden, 22.05. bis 01.07.2017',
+       until => $isodate2epoch->("2017-10-21 08:00:00"),
+       text  => 'Bölschestr.: Bauarbeiten, Einbahnstraße Richtung Süden, 22.05. bis 21.10.2017',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.595041.php',
        data  => <<EOF,
