@@ -5055,10 +5055,11 @@ EOF
 	    print "</center>\n" unless $printmode;
 	}
 
-	my $bbbikeleaflet_url;
+	my($bbbikeleaflet_url, $bbbikeleaflet_loc_url);
 	if (!$printmode && $apache_session_module eq 'Apache::Session::Counted') {
 	    my $href = _bbbikeleaflet_url();
-	    $bbbikeleaflet_url = $href . '?' . CGI->new({coordssession => $sess->{_session_id}})->query_string;
+	    $bbbikeleaflet_url     = $href . '?' . CGI->new({coordssession => $sess->{_session_id}})->query_string;
+	    $bbbikeleaflet_loc_url = $href . '?' . CGI->new({coordssession => $sess->{_session_id}, loc => 1})->query_string;
 	}
 
 	if (!$printmode) {
@@ -5166,7 +5167,7 @@ EOF
 		print "<td>";
 	        print qq{<a href="$bbbikeleaflet_url">Leaflet<img style="vertical-align:bottom;" src="$bbbike_images/bbbike_leaflet_16.png" border="0" alt=""></a>};
 		if ($is_beta) {
-		    my $qrcode_href = add_qrcode_cgi($bbbikeleaflet_url);
+		    my $qrcode_href = add_qrcode_cgi($bbbikeleaflet_loc_url);
 		    print qq{<a href="$qrcode_href" title="QR Code - BBBikeLeaflet"><img style="vertical-align:bottom;" src="$bbbike_images/QR_icon_16x16.png" width="16" height="16" border="0" alt="QR Code - BBBikeLeaflet"></a>};
 		}
 		print "</td>";
