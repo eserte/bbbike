@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2015,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package BBBikeLeaflet::Template;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 sub new {
     my($class, %args) = @_;
@@ -37,6 +37,7 @@ sub new {
     my $geojson_file             = delete $args{geojson_file};
     my $geojsonp_url             = delete $args{geojsonp_url};
     my $replay_trk               = delete $args{replay_trk};
+    my $loc                      = delete $args{loc};
     my $show_feature_list        = delete $args{show_feature_list};
     my $show_speedometer	 = delete $args{show_speedometer};
     my $root_url                 = delete $args{root_url};
@@ -64,6 +65,7 @@ sub new {
 	   geojson_file             => $geojson_file,
 	   geojsonp_url             => $geojsonp_url,
 	   replay_trk               => $replay_trk,
+	   loc                      => $loc,
 	   show_feature_list        => $show_feature_list,
 	   show_speedometer         => $show_speedometer,
 	   root_url                 => $root_url,
@@ -88,6 +90,7 @@ sub process {
     my $geojson_file             = $self->{geojson_file};
     my $geojsonp_url             = $self->{geojsonp_url};
     my $replay_trk               = $self->{replay_trk};
+    my $loc                      = $self->{loc};
     my $show_feature_list        = $self->{show_feature_list};
     my $show_speedometer         = $self->{show_speedometer};
     my $root_url                 = $self->{root_url};
@@ -237,6 +240,7 @@ sub process {
 	    print $ofh "show_feature_list = " . ($show_feature_list ? 'true' : 'false') . ";\n";
 	    print $ofh "show_speedometer = " . ($show_speedometer ? 'true' : 'false') . ";\n";
 	    print $ofh "disable_routing = " . ($disable_routing ? 'true' : 'false') . ";\n";
+	    print $ofh "activate_loc = " . ($loc ? 'true' : 'false') . ";\n";
 	}
     }
 }

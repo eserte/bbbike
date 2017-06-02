@@ -37,6 +37,7 @@ my $use_osm_de_map     = $q->param('osmdemap') || 0;
 my $devel              = $q->param('devel') || 0;
 my $route_title        = $q->param('routetitle');
 my $replay_trk         = $q->param('replaytrk');
+my $loc                = $q->param('loc');
 my $show_expired_session_msg;
 my $coords;
 if ($q->param('coordssession')) {
@@ -78,6 +79,7 @@ my $tpl = BBBikeLeaflet::Template->new
      coords                   => $coords,
      route_title              => $route_title,
      replay_trk               => $replay_trk,
+     loc                      => $loc,
     );
 $tpl->process(\*STDOUT);
 

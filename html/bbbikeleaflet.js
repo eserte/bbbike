@@ -411,6 +411,15 @@ function doLeaflet() {
 	    container.innerHTML = label;
 	    L.DomUtil.addClass(container, "anycontrol_inactive");
 	    trackingRunning = false;
+	    var activateControl = function() {
+		map.my_locate({watch:true, setView:false});
+		if (accel) {
+		    accel.start();
+		}
+		L.DomUtil.removeClass(container, "anycontrol_inactive");
+		L.DomUtil.addClass(container, "anycontrol_active");
+		trackingRunning = true;
+	    };
 	    container.onclick = function() {
 		if (trackingRunning) {
 		    map.my_stopLocate();
@@ -422,15 +431,12 @@ function doLeaflet() {
 		    trackingRunning = false;
 		    removeLocation();
 		} else {
-		    map.my_locate({watch:true, setView:false});
-		    if (accel) {
-			accel.start();
-		    }
-		    L.DomUtil.removeClass(container, "anycontrol_inactive");
-		    L.DomUtil.addClass(container, "anycontrol_active");
-		    trackingRunning = true;
+		    activateControl();
 		}
 	    };
+	    if (activate_loc) {
+		activateControl();
+	    }
 	    return container;
 	}
     });
