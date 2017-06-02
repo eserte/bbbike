@@ -3384,32 +3384,7 @@ userdel	2::temp 14161,11930 14285,12190
        },
        undef,
        undef,
-       {
-         'data' => '#: tempex: YYYY0530-YYYY0601 vvv
-userdel	2::temp 20755,5750 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
-userdel	2::temp 19976,6087 20015,6069 20293,6278 20200,6321 20106,6357
-userdel	2::temp 20200,6321 20262,6493 20225,6631
-userdel	2::temp 20716,6029 20593,6082 20428,6157 20453,6211 20293,6278
-userdel	2::temp 19976,6087 20064,6290 20106,6357
-#: tempex ^^^
-',
-         'from' => 1496095200,
-         'id' => 2436,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              30,
-                              'months',
-                              5
-                            ]
-                          ],
-         'source_id' => 'https://familienfez.fez-berlin.de/programm/kindertagsfest/',
-         'text' => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 1. Juni 2017',
-         'type' => 'gesperrt',
-         'until' => 1496354399
-       },
+       undef,
        undef,
        undef,
        {
@@ -4303,9 +4278,9 @@ userdel	q4::inwork 5059,7216 5064,7160 5081,7112
 ',
          'from' => 1485206028,
          'id' => 2847,
-         'text' => 'Stubenrauchstr.: zwischen Wiesbadener Str. und Rotdornstr. Bauarbeiten, Fahrbahn gesperrt, bis 02.06.2017 ',
+         'text' => 'Stubenrauchstr.: zwischen Wiesbadener Str. und Rotdornstr. Bauarbeiten, Fahrbahn gesperrt, bis 30. Juni 2017',
          'type' => 'handicap',
-         'until' => 1496440800
+         'until' => 1498816800
        },
        undef,
        undef,
@@ -4337,19 +4312,33 @@ userdel	q4::inwork; 5583,5179 5527,5217 5416,5289 5397,5302 5382,5312
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2017-06-02 vvv
+#: check_frequency: 7d vvv
+	q3::inwork 13384,8354 13217,8493
+# REMOVED userdel	q3::inwork; 13217,8493 13262,8554
+	q3::inwork; 13262,8554 13301,8606 13314,8624
+	q4::inwork 13366,8694 13314,8624
+#: check_frequency ^^^
+#: last_checked ^^^
+',
+         'from' => 1491498639,
+         'id' => 2856,
+         'text' => 'Innstr.: Bauarbeiten, Einbahnstraßenregelung, außerdem Sperrung an der Kreuzung Weserstr.',
+         'type' => 'handicap',
+         'until' => undef
+       },
        {
          'data' => '#: source_id: LMS-BR_r_LMS-BR_93359
-#: XXX bis wann gehen die Bauarbeiten?
-#: next_check: 2017-06-15
 userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 14528,16910 14558,16907
 ',
          'from' => undef,
          'id' => 2857,
          'source_id' => '2147341139',
-         'text' => 'Rennbahnstr.: ab Hunsrückstr. bis Berliner Allee Bauarbeiten, Fahrtrichtung gesperrt',
+         'text' => 'Rennbahnstr.: ab Hunsrückstr. bis Berliner Allee Bauarbeiten, Fahrtrichtung gesperrt, bis 23. Juni 2017',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1498212000
        },
        {
          'data' => 'userdel	q4::inwork 18009,18946 17900,18972 17890,18973 17799,19000 17697,18989 17600,18994
@@ -4396,7 +4385,7 @@ userdel	q3::inwork; 8752,12647 8870,12647
          'until' => undef
        },
        {
-         'data' => 'userdel	q3::inwork 10264,13097 10310,13227 10317,13248
+         'data' => 'userdel	q4::inwork; 10350,13376 10313,13493
 ',
          'from' => 1494442386,
          'id' => 2864,

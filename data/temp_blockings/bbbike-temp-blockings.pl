@@ -22314,7 +22314,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 	q4::inwork 11694,16034 11673,16003
-	q3::inwork 11673,16003 11567,15842
+	q3::inwork 11673,16003 11641,15955 11614,15914 11567,15842
 EOF
      },
      { from  => 1382507820, # 2013-10-23 07:57
@@ -22826,7 +22826,7 @@ EOF
 #: last_checked: 2014-09-12
 #: next_check: 2014-09-17
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20140908.1230.399120.html ("Fest nach Umbau")
-userdel	q3::inwork 11673,16003 11567,15842
+userdel	q3::inwork 11673,16003 11641,15955 11614,15914 11567,15842
 EOF
      },
      { from  => 1395615600, # 2014-03-24 00:00
@@ -25873,8 +25873,8 @@ userdel auto	3 10584,12507 10601,12521 10431,12709
 EOF
      },
      { from  => 1485206028, # 2017-01-23 22:13
-       until => 1496440800, # 2017-06-03 00:00
-       text  => 'Stubenrauchstr.: zwischen Wiesbadener Str. und Rotdornstr. Bauarbeiten, Fahrbahn gesperrt, bis 02.06.2017 ',
+       until => $isodate2epoch->("2017-06-30 12:00:00"), # 1496440800, # 2017-06-03 00:00
+       text  => 'Stubenrauchstr.: zwischen Wiesbadener Str. und Rotdornstr. Bauarbeiten, Fahrbahn gesperrt, bis 30. Juni 2017',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: LMS-BR_r_LMS-BR_88478
@@ -25964,23 +25964,28 @@ userdel	q4::inwork 1458,24561 1410,24562 1330,24553 1250,24533 1156,24494
 EOF
      },
      { from  => 1491498639, # 2017-04-06 19:10
-       until => 1496268000, # 2017-06-01 00:00
-       text  => 'Innstr.: Bauarbeiten, Einbahnstraßenregelung, außerdem Sperrung an der Kreuzung Weserstr., bis Juni 2017',
+       until => undef, # was: 1496268000, # 2017-06-01 00:00
+       text  => 'Innstr.: Bauarbeiten, Einbahnstraßenregelung, außerdem Sperrung an der Kreuzung Weserstr.',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q3::inwork 13384,8354 13217,8493
-userdel	q3::inwork; 13217,8493 13262,8554 13301,8606
+#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2017-06-02 vvv
+#: check_frequency: 7d vvv
+	q3::inwork 13384,8354 13217,8493
+# REMOVED userdel	q3::inwork; 13217,8493 13262,8554
+	q3::inwork; 13262,8554 13301,8606 13314,8624
+	q4::inwork 13366,8694 13314,8624
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => undef, # 
-       until => undef, # $isodate2epoch->("2017-06-01 12:00:00"), # 1495641600, # 2017-05-24 18:00
-       text  => 'Rennbahnstr.: ab Hunsrückstr. bis Berliner Allee Bauarbeiten, Fahrtrichtung gesperrt',
+       until => $isodate2epoch->("2017-06-23 12:00:00"), # 1495641600, # 2017-05-24 18:00
+       text  => 'Rennbahnstr.: ab Hunsrückstr. bis Berliner Allee Bauarbeiten, Fahrtrichtung gesperrt, bis 23. Juni 2017',
        type  => 'handicap',
        source_id => '2147341139',
        data  => <<EOF,
 #: source_id: LMS-BR_r_LMS-BR_93359
-#: XXX bis wann gehen die Bauarbeiten?
-#: next_check: 2017-06-15
 userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 14528,16910 14558,16907
 EOF
      },
@@ -26047,7 +26052,7 @@ EOF
        type  => 'handicap',
        source_id => '2147341279',
        data  => <<EOF,
-userdel	q3::inwork 10264,13097 10310,13227 10317,13248
+userdel	q4::inwork; 10350,13376 10313,13493
 EOF
      },
      { from  => 1495473890, # 2017-05-22 19:24

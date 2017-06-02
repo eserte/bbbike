@@ -892,7 +892,9 @@ Gehweg f¸r Radfahrer frei	RW1; 21002,5755 20880,5736 20755,5750
 	RW1;RW1 13930,6686 13883,6682 13785,6675 13712,6656 13520,6583
 	RW2;RW1 13520,6583 13455,6559 13236,6489
 	RW1;RW1 12547,4391 12564,4308
-	RW2;RW2 -4076,11810 -4278,11873 -4310,11882 -4437,11919 -4500,11937
+#: by: https://www.facebook.com/baustellen.berlin/posts/267573523691082 (Asphaltierung)
+asphaltiert	RW2; -4076,11810 -4278,11873 -4310,11882 -4437,11919 -4500,11937
+	RW2; -4500,11937 -4437,11919 -4310,11882 -4278,11873 -4076,11810
 m‰ﬂige Radwege	RW1;RW1 1344,10012 1318,10031 1274,10063 1212,10109 1205,10114 1159,10149 1047,10225 967,10285
 m‰ﬂige Radwege	RW9;RW1 967,10285 863,10363 775,10426
 alte Gehwegplatten	RW1; 14392,2979 14541,3060 14675,3117 14816,3162 14930,3194 14994,3245
@@ -1032,7 +1034,7 @@ Busspur ist immer g¸ltig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut rbbtext bis 31.05.2016, laut vmz bis Ende 2016, laut fritz bis 09.01.2018
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2017-05-08
+#: last_checked: 2017-06-02
 #: check_frequency: 90d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer g¸ltig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 9695,12390 9656,12386 9601,12380
@@ -2516,6 +2518,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 11070,13357 11081,13372 11107,13410
 #: by: norbert winkelmann:
 #: confirmed_by: srt (and changed RW1 -> RW2)
 	RW2; 10718,13625 10746,13673
+	RW3; 10746,13673 10718,13625
 	RW1; 15693,7512 15560,7400
 nur in Ans‰tzen existierender alter enger, asphaltierter Radweg	RW0; 15920,7697 15968,7739 16136,7886
 vorhandener alter enger, asphaltierter Radweg ist abgesperrt	RW0; 16136,7886 15968,7739 15920,7697
@@ -3761,7 +3764,7 @@ mit asphaltierten Straﬂenbahncap	RW4;RW4 16331,15486 16412,15559
 mit asphaltierten Straﬂenbahncap	RW3;RW3 16633,15753 16819,15912
 	RW3;RW4 16819,15912 16941,16021
 	RW0;RW4 16941,16021 16961,16042
-	RW6;RW6 15003,12241 15054,12323
+	RW6;RW6 15003,12241 15058,12329
 	RW3;RW4 13316,15758 13229,15692 13072,15590
 	RW3; 13072,15590 12966,15478
 die ersten und letzten Meter sind Schutzstreifen	RW1; 12966,15478 13072,15590
@@ -4556,7 +4559,7 @@ mit Unkraut ¸berwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: next_check_id: KARLMARXSTR-2016
 #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus?
 #: osm_watch: way id="297058655" version="3"
-#: last_checked: 2017-03-01
+#: last_checked: 2017-06-02
 #: check_frequency: 60d
 	RW4; 12969,7610 12914,7785
 # REMOVED (wieder entfernt) --- #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus? --- #: last_checked: 2016-03-01 ---	RW3; 12898,7832 12865,7923 12830,8031 12794,8103 12753,8187
@@ -4605,7 +4608,7 @@ Tempo 10	RW6;RW6 13559,12779 13470,12990
 	RW6;RW6 4971,6345 4854,6413
 	RW3; 14355,12752 14096,12827
 	RW4;RW3 14096,12827 14066,12836
-	RW3; 14066,12836 13979,12861 13960,12866 13844,12900
+	RW3;RW3 14066,12836 13979,12861 13960,12866 13844,12900
 #: XXX wegen Bauarbeiten am Hochhaus "Upper West" sind die Radspuren aufgehoben
 #: by: http://www.tagesspiegel.de/berlin/stadtentwicklung-zwillingsturm-soll-2016-in-der-city-west-eroeffnen/7416454.html (geplante Erˆffnung Mitte 2016)
 #: source_id: LMS-BR_r_LMS-BR_121
@@ -4647,8 +4650,8 @@ an der Straﬂenbahnhaltestelle einige Meter mit Radverkehrsanlage	RW3;RW3 10838,1
 an der Straﬂenbahnhaltestelle 50 Meter mit benutzungspflichtiger Radverkehrsanlage	RW3; 10530,14452 10723,14772
 an der Straﬂenbahnhaltestelle 50 Meter mit benutzungspflichtiger Radverkehrsanlage	RW3; 10723,14772 10530,14452
 an der Straﬂenbahnhaltestelle einige Meter mit Radverkehrsanlage	RW3; 11176,15489 11112,15387
-mit asphaltierten Straﬂenbahncaps	RW3; 11112,15387 11176,15489 11290,15669 11367,15793 11387,15827 11445,15920
-mit asphaltierten Straﬂenbahncaps	RW3; 11445,15920 11387,15827 11367,15793 11290,15669
+mit asphaltierten Straﬂenbahncaps	RW3; 10881,15047 11112,15387 11176,15489 11290,15669 11367,15793 11387,15827 11445,15920
+mit asphaltierten Straﬂenbahncaps	RW3; 11445,15920 11387,15827 11367,15793 11290,15669 11176,15489
 	RW3;RW3 10530,14452 10497,14391
 	RW6;RW6 22872,5018 22856,5245 22851,5321
 	RW6;RW6 22856,5245 22803,5241
@@ -4875,3 +4878,4 @@ die letzten Meter nur Schutzstreifen	RW4; 18731,8577 18704,8427
 	RW6;RW6 1370,4547 1313,4566 1287,4577 1223,4635 1166,4566 1269,4444 1313,4566
 	RW6;RW6 15170,10100 15210,10080
 	RW6;RW6 8618,13306 8582,13355 8538,13388
+	RW6;RW6 11614,15914 11641,15955
