@@ -5104,8 +5104,12 @@ EOF
 		{
 		    my $qq2 = CGI->new($q->query_string);
 		    $qq2->param('output_as', "gpx-route");
-		    my $href = $bbbike_script;
-		    print qq{<a href="$href?} . $qq2->query_string . qq{">GPX (Route)</a>};
+		    my $href = $bbbike_script . '?' . $qq2->query_string;
+		    print qq{<a href="$href">GPX (Route)</a>};
+		    if ($is_beta) {
+			my $qrcode_href = add_qrcode_cgi($href);
+			print qq{<a href="$qrcode_href" title="QR Code - GPX Route"><img style="vertical-align:bottom; padding-left:2px;" src="$bbbike_images/QR_icon_16x16.png" width="16" height="16" border="0" alt="QR Code - GPX Route"></a>};
+		    }
 		}
 		print "</td>";
 		$maybe_do_table_br->();
@@ -5113,8 +5117,12 @@ EOF
 		{
 		    my $qq2 = CGI->new($q->query_string);
 		    $qq2->param('output_as', "gpx-track");
-		    my $href = $bbbike_script;
-		    print qq{<a href="$href?} . $qq2->query_string . qq{">GPX (Track)</a>};
+		    my $href = $bbbike_script . '?' . $qq2->query_string;
+		    print qq{<a href="$href">GPX (Track)</a>};
+		    if ($is_beta) {
+			my $qrcode_href = add_qrcode_cgi($href);
+			print qq{<a href="$qrcode_href" title="QR Code - GPX Track"><img style="vertical-align:bottom; padding-left:2px;" src="$bbbike_images/QR_icon_16x16.png" width="16" height="16" border="0" alt="QR Code - GPX Track"></a>};
+		    }
 		}
 		print "</td>";
 		$maybe_do_table_br->();
@@ -5123,8 +5131,12 @@ EOF
 		print "<td>";
 		my $qq2 = CGI->new($q->query_string);
 		$qq2->param('output_as', "kml-track");
-		my $href = $bbbike_script;
-		print qq{<a title="view route with Google Earth" href="$href?} . $qq2->query_string . qq{">KML (Google Earth)</a>};
+		my $href = $bbbike_script . '?' . $qq2->query_string;
+		print qq{<a title="view route with Google Earth" href="$href">KML (Google Earth)</a>};
+		if ($is_beta) {
+		    my $qrcode_href = add_qrcode_cgi($href);
+		    print qq{<a href="$qrcode_href" title="QR Code - KML"><img style="vertical-align:bottom; padding-left:2px;" src="$bbbike_images/QR_icon_16x16.png" width="16" height="16" border="0" alt="QR Code - KML"></a>};
+		}
 		print "</td>";
 		$maybe_do_table_br->();
 	    }
@@ -5153,6 +5165,10 @@ EOF
 	    if ($bbbikeleaflet_url) {
 		print "<td>";
 	        print qq{<a href="$bbbikeleaflet_url">Leaflet<img style="vertical-align:bottom;" src="$bbbike_images/bbbike_leaflet_16.png" border="0" alt=""></a>};
+		if ($is_beta) {
+		    my $qrcode_href = add_qrcode_cgi($bbbikeleaflet_url);
+		    print qq{<a href="$qrcode_href" title="QR Code - BBBikeLeaflet"><img style="vertical-align:bottom;" src="$bbbike_images/QR_icon_16x16.png" width="16" height="16" border="0" alt="QR Code - BBBikeLeaflet"></a>};
+		}
 		print "</td>";
 		$maybe_do_table_br->();
 	    }
@@ -8144,6 +8160,12 @@ EOF
     } else {
 	"";
     }
+}
+
+sub add_qrcode_cgi {
+    my $url = shift;
+    $url =~ s{/cgi(-bin)?/\K}{qrcode.cgi/};
+    $url;
 }
 
 

@@ -351,3 +351,5 @@ png-to-jpg:	\
 #   convert -geometry 16x16 ropeway.svg ropeway.png
 #   convert -geometry 10x10 ropeway.svg ropeway_klein.png
 #   convert -geometry 5x5 ropeway.svg ropeway_mini.png
+
+# wget -O QR_icon_16x16.png https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/QR_icon.svg/16px-QR_icon.svg.png
