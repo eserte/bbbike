@@ -8165,7 +8165,7 @@ EOF
 
 sub add_qrcode_cgi {
     my $url = shift;
-    $url =~ s{/cgi(-bin)?/\K}{qrcode.cgi/};
+    $url =~ s{(/cgi(-bin)?/)}{$1qrcode.cgi/};
     $url;
 }
 
