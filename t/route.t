@@ -28,6 +28,7 @@ EOF
 
     my $route = Route->load_as_object($sample_bbr_file);
     isa_ok $route, 'Route';
+    is $route->coord_system, 'standard';
     is_deeply $route->path->[0], [8515,12242], 'first coordinate in route';
     is_deeply $route->path->[-1], [7717,7759], 'last coordinate in route';
 
@@ -46,6 +47,7 @@ EOF
 
 {
     my $r = Route->new_from_realcoords([[0,0],[500,0],[1000,0]]);
+    is $r->coord_system, 'standard';
     is $r->from, '0,0';
     is $r->to, '1000,0';
     is $r->len, 1000; # XXX accuracy?
@@ -75,6 +77,12 @@ EOF
     is $r->len, 3000;
     is $r->trafficlights, 0;
     is $r->as_string, "3000,0;2000,0;1000,0;500,0;0,0";
+}
+
+{
+    my $r = Route->new_from_realcoords([[13.526232,52.510122], [13.220722,52.535504]]);
+    $r->set_coord_system('polar');
+    is $r->coord_system, 'polar';
 }
 
 __END__

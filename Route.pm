@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2000,2001,2012,2013,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2000,2001,2012,2013,2015,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,7 +18,7 @@ use strict;
 
 use vars qw(@EXPORT @ISA $VERSION);
 
-$VERSION = '2.00';
+$VERSION = '2.01';
 
 require Exporter;
 @ISA    = qw(Exporter);
@@ -128,7 +128,8 @@ sub path_canvas_list { @{$_[0]->{PathCanvas}} }
 sub is_empty         { !defined $_[0]->{Path} || scalar $_[0]->{Path} == 0 }
 sub ampeln           { $_[0]->{Ampeln} } # XXX deprecated...
 sub trafficlights    { $_[0]->{Ampeln} }
-sub coord_system     { $_[0]->{CoordSystem} || 'Standard' }
+# The Karte::* "token"
+sub coord_system     { $_[0]->{CoordSystem} || 'standard' }
 sub transpose        { $_[0]->{Transpose} }
 sub nearest_node     { $_[0]->{NearestNode} }
 sub set_nearest_node { $_[0]->{NearestNode} = $_[1] }
@@ -331,19 +332,10 @@ sub _coord_as_string {
     "$coord->[0],$coord->[1]";
 }
 
-# $new_coord_system ist der Modulnamen-Teil nach Karte::
-sub change_coord_system {
+# Set without changing anything else (i.e. internal path)
+sub set_coord_system {
     my($self, $new_coord_system) = @_;
-    require Karte;
-    eval q{require Karte::} . $self->coord_system;
-    eval q{require Karte::} . $new_coord_system;
-    my $from_obj = eval q{$Karte::} . $self->coord_system . q{::obj};
-    my $to_obj   = eval q{$Karte::} . $new_coord_system . q{::obj};
-    foreach (@{$self->{PathCanvas}}) {
-	($_->[0], $_->[1]) = $from_obj->map2map($to_obj, @$_);
-    }
     $self->{CoordSystem} = $new_coord_system;
-    # XXX transpose ändern?!
 }
 
 sub make_path_canvas {
