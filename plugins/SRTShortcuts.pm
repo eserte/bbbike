@@ -702,6 +702,14 @@ EOF
 		],
 	       ]
 	      ],
+	      [Cascade => $do_compound->("Current route in ..."), -menuitems =>
+	       [
+		[Button => $do_compound->("local bbbike.cgi as PDF"),
+		 # don't use draw=>'all' here --- strnames are not displayed very well (sometimes with ... or ???), probably due to coord inaccuracies XXX
+		 -command => sub { current_route_in_bbbike_cgi(imagetype => 'pdf-auto', (map { (draw => $_) } qw(str sbahn ubahn wasser flaechen ampel))) },
+		],
+	       ],
+	      ],
 	      [Button => $do_compound->("Street name experiment"),
 	       -command => sub { street_name_experiment() },
 	      ],
@@ -1763,6 +1771,28 @@ sub current_search_in_komoot_selection {
 
 sub current_search_in_komoot {
     my $url = current_search_in_komoot_url();
+    main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
+    require WWWBrowser;
+    WWWBrowser::start_browser($url);
+}
+
+sub current_route_in_bbbike_cgi {
+    my(@params) = @_;
+
+    if (!@main::realcoords) {
+	main::status_message("No current route", "warn");
+	return;
+    }
+    require Route;
+    require Route::GPLE;
+    my $rte = Route->new_from_realcoords(\@main::realcoords);
+    $rte->set_coord_system($main::coord_system);
+    my $gple = Route::GPLE::as_gple($rte);
+
+    require BBBikeUtil;
+    my $url = BBBikeUtil::uri_with_query
+	("http://localhost/bbbike/cgi/bbbike.cgi",
+	 [ gple => $gple, @params ]);
     main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
     require WWWBrowser;
     WWWBrowser::start_browser($url);

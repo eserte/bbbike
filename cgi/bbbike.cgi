@@ -1237,7 +1237,7 @@ if (defined $q->param('begin')) {
     (my $local_route_file = $q->param('localroutefilelist')) =~ s/[^A-Za-z0-9._-]//g;
     $local_route_file = "$local_route_dir/$local_route_file";
     show_routelist_from_file($local_route_file);
-} elsif (defined $q->param('coords') || defined $q->param('coordssession')) {
+} elsif (defined $q->param('coords') || defined $q->param('coordssession') || $q->param('gple')) {
     if ($q->param('showroutelist')) {
 	# XXX note: coordssession+showroutelist is not implemented
 	show_routelist_from_coords();
@@ -5702,6 +5702,13 @@ sub draw_route {
     if (defined $q->param('oldcs') &&
 	(my $oldsess = tie_session(scalar $q->param('oldcs')))) {
 	$q->param(oldcoords => $oldsess->{routestringrep});
+    }
+
+    if (defined $q->param('gple')) {
+	require Algorithm::GooglePolylineEncoding;
+	my @polyline = Algorithm::GooglePolylineEncoding::decode_polyline(scalar $q->param('gple'));
+	my @coords = map { join ',', convert_wgs84_to_data($_->{lon}, $_->{lat}) } @polyline;
+	$q->param(coords => join("!", @coords));
     }
 
     my $cookie;
