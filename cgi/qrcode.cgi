@@ -43,7 +43,20 @@ sub cgi {
     my $q = CGI->new;
     binmode STDOUT;
     print $q->header('image/png');
-    (my $url_arg = $q->self_url) =~ s{/qrcode\.cgi}{};
+    my $url_arg = $q->self_url;
+    $url_arg =~ s{/qrcode\.cgi(?:/(\.l|\.h))?}{};
+    if ($1) {
+	my $host = (
+		    $1 eq '.l' ? 'bbbike.de' :
+		    $1 eq '.h' ? 'bbbike.v.timesink.de' :
+		    die "UNEXPECTED ERROR ($1)"
+		   );
+	debug "Requested change of host to '$host'";
+	require URI;
+	my $u = URI->new($url_arg);
+	$u->host($host);
+	$url_arg = $u->as_string;
+    }
     debug "Transformed URL: '$url_arg'";
     if ($IMPL eq 'Imager') {
 	debug 'Use Imager implementation';
