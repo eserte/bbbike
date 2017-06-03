@@ -8309,9 +8309,9 @@ sub draw_street_numbers {
 		    ($midx,$midy,
 		     -text => $text,
 		     -font => $font,
-		     -fill => ($do_round             ? 'white'  :
-			       $type =~ /^(BAB|DK)$/ ? 'white'  :
-			       $type =~ /^(F|R)$/    ? 'green4' :
+		     -fill => ($do_round               ? 'white'  :
+			       $type =~ /^(BAB|A|DK)$/ ? 'white'  :
+			       $type =~ /^(F|R)$/      ? 'green4' :
 			       'black'),
 		     -tags => "$abk-label"); # no strnr (only for images) and strnr-$item here
 		my(@bbox) = $c->bbox($item);
@@ -8323,7 +8323,7 @@ sub draw_street_numbers {
 			 -width => 1,
 			 -tags => ["$abk-label-bg", "strnr", "strnr-$item"],
 			);
-		} elsif ($type =~ m{^( B | BAB | DK | DW)$}x) {
+		} elsif ($type =~ m{^( B | BAB | A | DK | DW)$}x) {
 		    my $size = $scale < SMALLER_TABLES ? 16 : 32;
 		    my $p;
 		    # prefer png because of alpha
@@ -8331,7 +8331,7 @@ sub draw_street_numbers {
 			$p = get_image("strnr_B$size", "bundesstrasse_table_$size.png");
 		    } elsif ($type eq 'BAB') {
 			$p = get_image("strnr_BAB$size", "bab_table_$size.png");
-		    } elsif ($type eq 'DK') {
+		    } elsif ($type eq 'DK' || $type eq 'A') {
 			$p = get_image("strnr_DK$size", "droga_krajowa_table_$size.png");
 		    }
 		    if ($p) {
