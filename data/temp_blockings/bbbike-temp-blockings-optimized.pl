@@ -3672,7 +3672,17 @@ userdel	2::inwork -12583,-1552 -12485,-1482
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: fritz
+userdel	q4::inwork; 15080,11905 15121,11899 15248,11880
+',
+         'from' => 1496642400,
+         'id' => 2550,
+         'source_id' => 'IM_021449',
+         'text' => 'Scharnweberstr.: Baustelle, Fahrbahn zwischen Jessnerstr. und Gürtelstr. gesperrt, ab 06.06.2017',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -4375,7 +4385,7 @@ userdel	q4::inwork; 7201,8870 7107,9030
        undef,
        {
          'data' => '#: XXX bis wann gehen die Bauarbeiten?
-#: last_checked: 2017-05-27
+#: last_checked: 2017-06-04
 userdel	q3::inwork; 8752,12647 8870,12647
 ',
          'from' => undef,

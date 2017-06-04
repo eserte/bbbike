@@ -775,7 +775,7 @@ Haveleckpark	F:P -1733,16375 -1715,16371 -1695,16369 -1680,16441 -1661,16506 -16
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3952
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2015
 #: note: Benennung erfolgt am 2. September 2015
-Jürgen-Kuczynski-Park	F:P 13632,16305 13575,16328 13600,16393 13534,16412 13544,16458 13661,16494 13712,16479 13632,16305
+Jürgen-Kuczynski-Park	F:P 13632,16305 13575,16327 13600,16393 13534,16412 13544,16458 13661,16494 13712,16479 13632,16305
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3703
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4254
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/06-09-2016_benennung-eines-platzes-nach-prof-werner-klemke.pdf
@@ -952,6 +952,8 @@ Kolonie Frischauf	F:Orchard -4433,16252 -4258,16187 -4380,15867 -4544,15940
 	F:Sport -4258,16187 -4131,16138 -4271,15821 -4380,15867
 Sportanlage Grüngürtel	F:Sport -3913,16258 -3935,16225 -4079,15914 -3978,15856 -3942,15926 -3896,15999 -3828,16118 -3789,16186
 Falkenseer Platz	F:P -3368,14723 -3352,14676 -3301,14669 -3255,14685 -3247,14713 -3251,14741 -3228,14794 -3295,14777 -3355,14764 -3368,14723
+Mirbachplatz	F:P 13331,16424 13348,16387 13377,16378 13400,16395 13391,16436 13347,16447 13331,16424
+Hamburger Platz	F:P 12670,16675 12686,16667 12702,16668 12713,16682 12712,16695 12705,16708 12691,16711 12678,16711 12667,16699 12667,16687 12667,16685 12670,16675
 # 
 #############################################################################
 # Plätze (experimentell)
@@ -959,28 +961,54 @@ Falkenseer Platz	F:P -3368,14723 -3352,14676 -3301,14669 -3255,14685 -3247,14713
 # gerendert werden sollen, und Flächen, bei dem zwischen allen Punkten
 # der Umrisslinie geroutet werden kann.
 #: ignore vvv
+#: note: frei befahrbare Fläche
 Bebelplatz	F:Square 9743,12239 9708,12235 9674,12231 9656,12386 9695,12390 9734,12395
+#: note: überwiegend frei befahrbare Fläche
 Alexanderplatz	F:Square 11123,13018 11057,12935 10977,12993 10885,12907 10903,12889 10929,12915 10981,12859 10956,12835 10980,12810 11005,12830 11024,12809 11092,12824 11102,12803 11123,12782 11134,12793 11150,12821 11092,12894 11173,12980
+#: note: Feuerwehrbrunnen und einige Bäume, nicht frei befahrbar
 Mariannenplatz	F:Square 11770,10774 11760,10732 11781,10696 11824,10708 11841,10747 11770,10774
+#: note: gepflastert, Kioske, nicht frei befahrbar
 Heinrichplatz	F:Square 11734,10563 11754,10516 11708,10497 11690,10543 11734,10563
+#: note: teilweise frei befahrbar, aber es existieren Stufen an einigen Stellen
 Platz am Kaisersteg	F:Square 18343,6062 18427,6007 18440,6034 18417,6051 18442,6132 18374,6152
-Bethlehemkirchplatz	F:Square 9387,11501 9394,11427 9331,11497
+#: note: Gerüst der ehem. Betlehemkirche steht hier, nicht frei befahrbar
+Bethlehemkirchplatz	F:Square 9387,11504 9393,11426 9331,11497
+#: note: frei befahrbare Fläche
 Fromet-und-Moses-Mendelssohn-Platz	F:Square 9785,10741 9732,10755 9751,10788 9724,10818 9735,10837 9804,10784
+#: note: ehemalige Lande- und Rollbahn, frei befahrbar
 Tempelhofer Feld	F:Square 11453,7808 9677,7672 9705,7826 9677,8009 9763,8166 9902,8252 10024,8249 10293,8238 10382,8324 10536,8299 10576,8353 10644,8363 10644,8363 10691,8532 10691,8532 10615,8558 10384,8628 10209,8661 10041,8669 10020,8526 9875,8542 9733,8519 9590,8459 9481,8378 9391,8255 9333,8130 9303,8019 9274,8021 9240,8028 9240,8028 9240,7811 9240,7811 9379,7801 9365,7763 9406,7635 9356,7627 9363,7584 9413,7581 9433,7434 9508,7361 9485,7230 9464,7228 9467,7190 9338,7232 9242,7325 9242,7325 9242,7218 9565,7092 9679,7028 9887,6882 10017,6796 10278,6686 10562,6645 10747,6683 10953,6781 11138,6953 11307,7037 11316,7069 11412,7190 11353,7214 11066,7024 10816,6859 10633,6791 10371,6795 10081,6884 9827,7085 9738,7192 11582,7300 11575,7348 11543,7343 9695,7242 9573,7454 9601,7575 11453,7754
+#: note: Parkplatz
 Platz der Luftbrücke	F:Square 9321,8607 9401,8510 9451,8548 9364,8640
+#: note: teilweise frei befahrbar, Kirchengebäude und Wasserklops in der Mitte, manchmal Veranstaltungen mit Kiosken
 Breitscheidplatz	F:Square 5652,11004 5652,11004 5656,10876 5725,10892 5782,10884 5839,10864 5881,10966 5829,10964 5716,10978 5652,11004
+#: note: teilweise Grünfläche, teilweise gepflastert, mit Wasserbrunnen, effektiv für Radfahrer nicht erreichbar
 Ernst-Reuter-Platz	F:Square 4763,11834 4737,11768 4781,11708 4838,11697 4885,11735 4905,11785 4854,11843 4763,11834
+#: note: Parkplätze und Bushalteflächen
 Hardenbergplatz	F:Square 5643,11368 5507,11102 5588,11048 5724,11332
+#: note: teilweise Parkplätze, auf der östlicher Seite großes U-Bahn-Zugangsgebäude, Markt
+#: XXX die Halbringstraße könnte man separat einzeichnen
 Fehrbelliner Platz	F:Square 4410,9335 4417,9321 4423,9301 4424,9280 4414,9255 4402,9242 4387,9230 4368,9223 4349,9223 4338,9232 4323,9241 4312,9250 4303,9258 4292,9275 4342,9301
+#: note: hauptsächlich Grünfläche mit Kirche, nicht frei befahrbar
+#: XXX_indoor evtl. eher mit F:P kennzeichnen
 Dennewitzplatz	F:Square 7813,10112 7866,9902 7906,10098 7906,10098
+#: note: gepflastert, Café, Imbiss und Kirchgebäude, Markttage, teilweise frei befahrbar
 Winterfeldtplatz	F:Square 7038,10088 7049,9833 7126,9825 7080,10098
+#: note: hauptsächlich U-Bahn-Gebäude, nicht frei befahrbar
 Nollendorfplatz	F:Square 7131,10331 7033,10328 6971,10346 6937,10363 6851,10416 7033,10396 7131,10331
+#: note: Parkplatz, Fahrschulübungsfläche, teilweise frei befahrbar
 Platz des 4. Juli	F:Square 2624,1704 2659,1720 2860,1289 2824,1273
+#: note: Parkplatz, Fahrschulübungsfläche, teilweise frei befahrbar
 Olympischer Platz	F:Square -514,11991 -505,11882 -157,11943 -110,12019 -193,12051 -272,12039 -514,11991
+#: note: gepflastert, frei befahrbar
 Mercedes-Platz	F:Square 12963,10995 13025,11107 13002,11132 13008,11161 12980,11182 12984,11194 13010,11243 13034,11232 13023,11213 13039,11184 13071,11151 13119,11148 13147,11160 13173,11152 13150,11101 13143,11092 13110,11114 13085,11093 13049,11092 12995,10978
+#: note: gepflastert, frei befahrbar
 Elsterwerdaer Platz	F:Square 20817,11265 21039,11262 21055,11284 21087,11304 21104,11303 21126,11333 21062,11334 21059,11304 20819,11314 20818,11293
+#: note: gepflastert, frei befahrbar
 Washingtonplatz	F:Square 7978,13124 7970,13049 7989,12967 8039,13009 8110,13042 8106,13130 8011,13128
-Kranoldplatz	F:Square 12715,6775 12722,6748 12726,6727 12843,6750 12833,6796 12715,6775
+#: note: hauptsächlich gepflastert, einige Bäume, Markttage
+Kranoldplatz	F:Square 12715,6775 12721,6748 12726,6727 12843,6750 12833,6796 12715,6775
+#: note: als Parkplatz genutzt
+Pistoriusplatz	F:Square 13456,16290 13513,16265 13544,16339 13485,16362
 #: ignore ^^^
 #############################################################################
 # in Potsdam

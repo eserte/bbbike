@@ -928,7 +928,7 @@ Alt-Britz: schlechtes Kopfsteinpflaster	Q3 12564,4308 12594,4324 12678,4389 1283
 #: by: Sascha (hurdler)
 Bendastr.: asphaltiert	Q0 12689,6905 12702,6846
 #: by: Gabi Sieber (confirmed):
-Bendastr.: asphaltiert	Q0 12702,6846 12715,6775 12722,6748 12726,6727 12743,6645
+Bendastr.: asphaltiert	Q0 12702,6846 12715,6775 12721,6748 12726,6727 12743,6645
 Bendastr.: asphaltiert	Q0 12743,6645 12759,6563 12782,6462 12794,6407 12801,6377
 Ilsestr.: Asphalt	Q0 12664,7013 12645,7087 12632,7137 12613,7236 12601,7284 12585,7357 12561,7472
 Ilsenhof: kleinteiliges Kopfsteinpflaster	Q1 12601,7284 12465,7250
@@ -7072,7 +7072,7 @@ Bebelplatz: gepflastert	Q1 9674,12231 9702,12307 9734,12395
 (Park am Gleisdreieck, Eingang Kurfürstenstr.): Beton	Q0 8058,10306 8180,10282 8253,10265
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): wassergebundene Decke	Q1 8263,10187 8276,10079
 #: next_check_id: HELLWEG-2014 vvv
-#: last_checked: 2017-04-25 vvv
+#: last_checked: 2017-06-04 vvv
 #: check_frequency: 100d vvv
 #: XXX wird hier noch eine wassergebundene Decke erstellt?
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): unbefestigt	Q2 8276,10079 8289,9988
@@ -7510,7 +7510,7 @@ Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 (Fischerstr. - Lückstr.): Beton mit Schäden	Q1- 16587,10613 16601,10650
 #: XXX wird hier saniert werden?
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6721
-#: last_checked: 2017-04-14
+#: last_checked: 2017-06-04
 #: check_frequency: 120d
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1- 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 Rüdersdorfer Str. [Rückseite]: Beton	Q0- 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
@@ -12904,7 +12904,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20131119.1100.391816.html (BA-Beschluss 277/2013)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: osm_watch: way id="42689070" version="5"
-#: last_checked: 2017-04-09
+#: last_checked: 2017-06-04
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -13938,7 +13938,7 @@ Markobrunner Str.: Asphalt	Q0 4374,7016 4462,7137 4593,7167
 # 
 #: by: Ingo Firlus:
 #: corrected_by: srt (Q1 -> Q2)
-Kranoldstr.: Kopfsteinpflaster	Q2 12422,6715 12592,6741 12612,6727 12722,6748
+Kranoldstr.: Kopfsteinpflaster	Q2 12422,6715 12592,6741 12612,6727 12721,6748
 # 
 #: by: Roland (Nissen):
 Gerolsteiner Str.: Verbundsteinpflaster	Q1 4330,7507 4330,7382
@@ -20822,7 +20822,7 @@ Küstriner Str.: Asphalt	Q0 16123,15025 16211,15105
 #: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...)
 Küstriner Str.: Asphalt	Q0 16211,15105 16314,15223
 #: XXX wird hier die Straße verbessert werden? - laut Drucksache wird hier ein "Neubau" erfolgen vvv
-#: last_checked: 2017-02-25 vvv
+#: last_checked: 2017-06-04 vvv
 #: check_frequency: 120d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524
 #: confirmed_by: srt

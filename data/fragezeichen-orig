@@ -370,7 +370,7 @@ Pasewalker Str.: Schutzstreifen werden erstellt, außerdem eine Ampel an der Kreu
 Triftstr.: Planung von Radverkehrsanlagen	?::projected 11940,22587 11959,22696 11979,22801 11995,22884 12023,23039 12027,23057 12039,23125 12058,23227 12067,23241
 # 
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf ("Schutzstreifen")
-#: last_checked: 2017-04-09
+#: last_checked: 2017-06-04
 #: check_frequency: 60d
 Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823 11442,17664 11457,17585 11482,17459 11508,17315 11522,17248 11541,17153 11570,17028 11598,16878 11621,16749 11630,16623 11655,16486 11659,16457 11673,16367
 # 
@@ -404,7 +404,7 @@ Marienfelder Allee: Projektplanung für Schutzstreifen	?::projected 8579,2265 855
 #: source_id:LMS-BR_r_LMS-BR_93889
 #: source_id: 2147341183
 #: XXX Ende laut rbbtext: 19. April, laut fritz: 22. April (beide: in Höhe Bayernring), laut vmz: Ende April (Gesamtmaßnahme), am 2017-04-25 ist aber noch nichts passiert
-#: last_checked: 2017-05-19
+#: last_checked: 2017-06-04
 #: check_frequency: 14d
 Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Radspuren)	?::projected 8594,8777 8601,8724 8616,8605 8660,8454 8670,8370 8666,8305 8632,8174 8620,8095 8623,8018 8627,7941 8642,7876 8686,7726 8690,7704 8704,7603 8706,7585 8715,7384 8716,7323
 #: by: ^^^
@@ -423,6 +423,7 @@ Möckernstr.: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 8783
 Bersarinplatz: Verbesserung "Radweganbindung Ostseite"	?::projected; 13730,12535 13761,12578 13767,12626 13747,12642 13695,12643
 Rothenbachstr.: Verbesserung -> wird der frühere Radweg wieder aktiviert?	?::projected; 12144,18436 11950,18529
 Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected; 15662,16656 15437,16491
+#: last_checked: 2017-06-04
 Caligariplatz: Verbesserung -> offizielle Radwegführung zur Wisbyer Str.?	?::projected 12121,16317 12097,16263 12090,16199
 Blankenfelder Chausee: Verbesserung -> Radspuren oder Verbesserung des Radwegs?	?::projected 10060,21916 9973,22133 9747,22694
 Bundesallee: Verbesserung -> Einrichtung von Zweirichtungsradwegen zur Pariser und Regensburger	?::projected 5464,9914 5467,9866
@@ -448,6 +449,7 @@ Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22351
 #: XXX routing_helper ggfs. anpassen
 #: last_checked: 2017-06-03
 Frankfurter Allee: Zweirichtungsradweg	?::projected; 15717,12010 15670,12022
+#: last_checked: 2017-06-04
 Wallensteinstr.: Asphaltstreifen	?::projected 17360,9629 17425,9605 17456,9594 17549,9529 18037,9195
 #: XXX oder ist die andere Seite vor Pablo-Picasso-Str. gemeint?
 Falkenberger Chaussee: Verbesserung -> Radspuren oder Asphaltierung des Radwegs?	?::projected; 17744,18016 17843,18078
@@ -514,7 +516,7 @@ Brauerstr.: Asphaltierung	?::projected 5317,2345 5159,2176 4979,1964
 Königsweg: Asphaltierung	?::projected -298,2577 -197,2634 -155,2658 -151,2656
 #: last_checked: 2017-05-21
 Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbreiterung und Asphaltierung des Weges?)	?::projected 8106,3410 8016,3651 7795,4242 7769,4315
-#: last_checked: 2017-06-03
+#: last_checked: 2017-06-04
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird hier vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13849,9310
 #: last_checked: 2017-06-03
 Rummelsburger Landstr.: Radweg/Radstreifen	?::projected 18010,7133 17847,7356 17769,7465 17681,7589 17619,7679 17568,7753 17527,7812
@@ -625,12 +627,12 @@ Karlinekenweg: neue Straße in Planung, Qualität, genaue Lage?	?::projected 11359
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5550
 #: XXX Umsetzung bis 2017
-#: last_checked: 2017-06-02
+#: last_checked: 2017-06-04
 #: check_frequency: 90d
 Landsberger Allee: Ausbau der Radwege	? 18057,14549 17848,14523 17533,14484 17254,14451 17055,14432 16852,14412 16632,14390 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308 15430,14262 15256,14237 14964,14123 14954,14119 14871,14087 14771,14048 14218,13834
 # 
 #: XXX evtl. im Zusammenhang des Bebauungsplans 11-123
-#: last_checked: 2017-02-25
+#: last_checked: 2017-06-04
 #: check_frequency: 120d
 Baumarkt (?) wird gebaut: wird es eine Durchfahrmöglichkeit geben?	?::inwork 17010,14269 17060,14255 17199,14269
 # 
@@ -693,7 +695,7 @@ Wuhlewanderweg: wird hier ein Weg auf der östlichen Uferseite errichtet?	?::proj
 #: XXX "Der gesamte Straßenzug von der Danziger Straße bis zur Wisbyer Straße soll bis Ende 2017 fertig gestellt werden."
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2016/pressemitteilung.544145.php
 #: XXX "bis voraussichtlich 2018"
-#: last_checked: 2017-06-02 vvv
+#: last_checked: 2017-06-04 vvv
 #: check_frequency: 30d vvv
 Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork; 11112,15387 10881,15047
 # REMOVED (realisiert) --- Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11112,15387 11176,15489
@@ -707,8 +709,8 @@ Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11445,15920 11492,15
 #: XXX ab Frühjahr 2017 für vier Jahre
 #: XXX evtl. gibt es Einschränkungen wegen der Bauarbeiten
 #: XXX qualitaet: -> Q0 vermutlich
-#: last_checked: 2017-03-12
-#: check_frequency: 45d
+#: last_checked: 2017-06-04
+#: check_frequency: 60d
 Schönstr.: Neubau geplant	?::projected 13391,16436 13630,16629 13789,16775 13861,16836 13998,16956 14136,17170
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/beschreibung_konigsweg.pdf
@@ -1152,7 +1154,7 @@ Friedelstr.: Asphaltierung	?::projected 12085,9778 12074,9689 12066,9558 12047,9
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2018-2022)
-#: last_checked: 2017-05-08
+#: last_checked: 2017-06-04
 #: next_check: 2018-09-01
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12753,8187 12714,8249 12689,8289 12639,8344 12598,8390 12582,8408 12562,8432 12540,8458 12500,8504 12330,8636
 # 
@@ -1299,7 +1301,7 @@ Innstr.: hier wird ein Asphaltstreifen entstehen, vielleicht auch der Zugang zum
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017)
-#: last_checked: 2017-06-02
+#: last_checked: 2017-06-04
 #: check_frequency: 100d
 Weigandufer (und Pflügerstr.?): Fahrradstraße geplant	?::projected 13939,8228 13875,8282 13716,8410 13641,8470 13539,8552 13450,8625 13366,8694 13191,8838 13048,8956 12907,9073 12761,9190 12620,9293 12480,9394
 # 
@@ -1634,7 +1636,7 @@ Schwarzer Weg (Schmöckwitz): Fahrbahnerneuerung in Planung	?::projected 27892,-3
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5795
 #: by: http://www.dafmap.de/d/berlin.html?id=3703&mt=0&zoom=16
 #: osm_watch: way id="268088020" version="6"
-#: last_checked: 2017-05-19 vvv
+#: last_checked: 2017-06-04 vvv
 #: check_frequency: 360d vvv
 Bautzener Brache: Radwegführung und Brücke in Planung	?::projected 8207,9223 8240,9276 8240,9364 8242,9571 8221,9582 8255,9698 8256,9778 8233,9863
 Bautzener Brache - Großgörschenstr.: Weg in Planung	?::projected 8240,9364 8186,9380
@@ -1730,6 +1732,7 @@ B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133
 Potsdamer Chaussee: Sanierung der Radwege	?::projected -6660,9953 -5928,10782 -5870,10847 -5716,11054 -5650,11143 -5564,11209 -5509,11256 -5462,11326 -5399,11426
 # 
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_23_2621_2712_online.pdf
+#: last_checked: 2017-06-04
 Am Bülowbogen: Benennung; gibt es hier Straßenschilder?	? 7906,10098 7928,10094 8011,10085
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.596879.php
@@ -1738,6 +1741,7 @@ Am Bülowbogen: Benennung; gibt es hier Straßenschilder?	? 7906,10098 7928,10094 
 Blücherstr./Zossener Str.: Bauarbeiten - gibt es Einschränkungen auch für Radfahrer?	?::projected 10066,10071 10029,9989 10006,9942 9922,10010 9827,10051
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.596879.php
+#: XXX laut fritz Vollsperrung nicht hier, sondern zwischen Mehringdamm und Zossener Str.
 #: next_check: 2017-08-31
 Blücherstr.: Sanierung des Radwegs	?::projected; 10006,9942 9922,10010 9827,10051
 # 
@@ -1849,7 +1853,7 @@ Weserstr.: Fahrradstraße wird eingerichtet	? 11888,9189 12005,9211 12074,9217 12
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/15-11-2016_mehr-fahrradstrassen-fuer-pankow.pdf
 #: XXX unklar, ob auch die Route Dunckerstr. - Kollwitzstr. ebenso Fahrradstraße werden könnte
-#: last_checked: 2017-06-02
+#: last_checked: 2017-06-04
 #: check_frequency: 30d
 Stargarder Str.: eventuell wird hier eine Fahrradstraße eingerichtet	? 10953,15787 11086,15772 11158,15739 11290,15669 11418,15587 11502,15527 11595,15460 11682,15397 11852,15281
 # 
@@ -3323,7 +3327,7 @@ Lichterfelde Süd: neue Straßen im Zuge des Bebauungsplans 6-30?	?::projected 406
 # 
 #: by: http://www.berliner-zeitung.de/berlin/umbau-so-soll-der-mauerpark-kuenftig-aussehen--24304152
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6096.html
-#: last_checked: 2017-04-07
+#: last_checked: 2017-06-04
 Mauerpark: Umbauarbeiten, gibt es schon Einschränkungen oder Veränderungen?	?::projected 9999,15594 10168,15624 10372,15028 10222,14969 9999,15594
 # 
 #: by: http://www.karlshorst-west.de/b-plan-11-47b/aktueller-planungsstand
@@ -3436,8 +3440,8 @@ Cimbernstr.: Stichstraße eintragen, Qualität?	? -3532,2009 -3614,1880
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_16_1713_1768_online.pdf (Benennung)
 #: XXX fehlt in Berlin.coords.data
 #: XXX Privatstraße
-#: last_checked: 2017-02-25
-#: check_frequency: 90d
+#: last_checked: 2017-06-04
+#: check_frequency: 120d
 Im Lichtenhain: neue geplante Straße, Qualität, genaue Lage?	?::projected 16494,10669 16462,10571
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5592
@@ -3472,6 +3476,11 @@ S3: wird bis Westkreuz verlängert	?::projected 14847,10892 14693,10943
 S75: wird bis Westkreuz verkürzt	?::projected 14847,10892 14693,10943
 #: priority ^^^
 #: next_check ^^^
+# 
+#: by: https://de.wikipedia.org/wiki/Klinik_f%C3%BCr_Kinder-_und_Jugendmedizin_Lindenhof
+#: last_checked: 2017-06-04
+#: next_check: 2018-12-31
+ehem. Kinderklinik Lindenhof: werden hier Straßen entstehen?	?::inwork 17357,12566 17396,12681
 # 
 #: ignore ^^^
 #: section ^^^

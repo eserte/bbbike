@@ -22781,13 +22781,14 @@ EOF
 userdel	q3::inwork; 15098,12849 15233,12829 15357,12813
 EOF
      },
-     { from  => 1394604000, # 2014-03-12 07:00
-       until => 1395421200, # 2014-03-21 18:00
-       text  => 'Scharnweberstr. (Friedrichshain): Baustelle, Fahrbahn zwischen Müggelstr. und Jessnerstr. gesperrt, 13.03.2014 07:00 Uhr bis 21.03.2014 18:00 Uhr ',
+     { from  => $isodate2epoch->("2017-06-05 08:00:00"), # 1394604000, # 2014-03-12 07:00
+       until => undef, # 1395421200, # 2014-03-21 18:00
+       text  => 'Scharnweberstr.: Baustelle, Fahrbahn zwischen Jessnerstr. und Gürtelstr. gesperrt, ab 06.06.2017',
        type  => 'handicap',
        source_id => 'IM_021449',
        data  => <<EOF,
-userdel	q4::inwork 15080,11905 14965,11921
+#: by: fritz
+userdel	q4::inwork; 15080,11905 15121,11899 15248,11880
 EOF
      },
      { from  => 1394953200, # 2014-03-16 08:00
@@ -26043,7 +26044,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann gehen die Bauarbeiten?
-#: last_checked: 2017-05-27
+#: last_checked: 2017-06-04
 userdel	q3::inwork; 8752,12647 8870,12647
 EOF
      },
