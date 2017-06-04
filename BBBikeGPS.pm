@@ -890,14 +890,28 @@ sub BBBikeGPS::do_draw_gpsman_data {
 				})
 	    if $show_track_graph;
 
-    if ($do_center_begin && $gps->Chunks && @{ $gps->Chunks } && @{ $gps->Chunks->[0]->Points }) {
-	my $wpt = $gps->Chunks->[0]->Points->[0];
-	my($x,$y) = map { int } $Karte::map{"polar"}->map2map($main::coord_system_obj, $wpt->Longitude, $wpt->Latitude);
-	my($x0,$y0) = ($main::coord_system eq 'standard' ? ($x,$y) : map { int } $Karte::map{"polar"}->map2standard($wpt->Longitude, $wpt->Latitude));
-	my $tcoords = [[]];
-	$tcoords->[0][0] = [ transpose($x0, $y0) ];
-	main::mark_point(-coords => $tcoords,
-			 -clever_center => 1);
+    if ($do_center_begin && $gps->Chunks && @{ $gps->Chunks }) {
+	my $wpt = sub {
+	    # Common case: first point exists and it accurate enough
+	    if (@{ $gps->Chunks->[0]->Points } && $gps->Chunks->[0]->Points->[0]->Accuracy <= $accuracy_level) {
+		return $gps->Chunks->[0]->Points->[0];
+	    }
+	    # Expensive case: search for a suitable point
+	    for my $wpt_candidate ($gps->flat_track) {
+		if ($wpt_candidate->Accuracy <= $accuracy_level) {
+		    return $wpt_candidate;
+		}
+	    }
+	    undef;
+	}->();
+	if ($wpt) {
+	    my($x,$y) = map { int } $Karte::map{"polar"}->map2map($main::coord_system_obj, $wpt->Longitude, $wpt->Latitude);
+	    my($x0,$y0) = ($main::coord_system eq 'standard' ? ($x,$y) : map { int } $Karte::map{"polar"}->map2standard($wpt->Longitude, $wpt->Latitude));
+	    my $tcoords = [[]];
+	    $tcoords->[0][0] = [ transpose($x0, $y0) ];
+	    main::mark_point(-coords => $tcoords,
+			     -clever_center => 1);
+	}
     }
 
     };
