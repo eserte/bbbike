@@ -5,6 +5,7 @@
 Dieselstr., Umfahrung: Asphalt mit Rollsplit	Q1 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112
 Dieselstr., Umfahrung: Asphalt	Q0 14419,8112 14429,8074
 Dieselstr., Umfahrung: unbefestigt	Q2 14429,8074 14471,8046
+Sonnenallee: unebener, provisorischer Asphalt auf dem Radweg	Q2 14174,7505 14334,7395 14369,7376 14519,7301
 Mozartstr.: Kopfsteinpflaster	Q3 10257,-2654 10392,-2980 10462,-3149
 Mozartstr.: Asphalt	Q0 10462,-3149 10470,-3169 10460,-3199
 Eiswerder (Brücken, Straßen): Asphalt	Q0 -2675,15513 -2453,15476 -2447,15476 -2427,15493 -2324,15590 -2338,15636 -2150,15740 -2118,15709 -2038,15683 -1978,15684 -1923,15684 -1848,15686 -1835,15693 -1706,15768
@@ -791,8 +792,9 @@ Uferweg am Schlachtensee: rauer Asphalt	Q1 -1353,4205 -1282,4244
 südlicher Uferweg am Schlachtensee: Feinschotter	Q1 -3384,3212 -3341,3122 -3273,3096 -3200,3145 -3190,3167 -3136,3294 -3081,3377 -2947,3486 -2802,3570 -2761,3576 -2729,3593 -2599,3637 -2513,3631 -2464,3631 -2396,3666 -2174,3718 -2042,3838 -2015,3873 -2012,3949 -2030,4089 -1944,4140 -1760,4001 -1701,3980 -1621,3972 -1516,3993 -1488,4009 -1390,4116 -1382,4132
 Weg am Teufelssee: Waldweg	Q1 -886,9447 -942,9251 -1047,9123
 Schwarzer Weg (Oberschöneweide): unbefestigter Weg, holprig	Q2 17299,8140 17299,8108 17301,7754
-Schwarzer Weg (Oberschöneweide): asphaltiert, mit leichten Schäden	Q0 17301,7754 17301,7645 17296,7401 17295,7344 17295,7330
-Schwarzer Weg (Oberschöneweide): unbefestigter Weg, teilweise recht schmal	Q2 17295,7330 17295,7323 17297,7196 17286,7173
+Schwarzer Weg (Oberschöneweide): asphaltiert, mit leichten Schäden	Q0 17301,7754 17301,7645 17296,7401
+Schwarzer Weg (Oberschöneweide): asphaltiert	Q0 17296,7401 17295,7358
+Schwarzer Weg (Oberschöneweide): unbefestigter Weg, teilweise recht schmal	Q2 17295,7328 17297,7196 17286,7173
 (Wilhelmstrand, Weg 1): unbefestigter Weg	Q2 17059,8097 17299,8108
 Möllhausenufer: Kopfsteinpflaster	Q2 23295,1145 23408,1170 23520,1194 23608,1210
 Möllhausenufer: asphaltiert	Q0 23608,1210 23747,1243
@@ -807,7 +809,7 @@ Rheinsteinstr.: Asphalt	Q0 19116,8846 19163,8867 19299,8946
 Rheinsteinstr.: Asphalt, Parkstreifen gepflastert	Q0 19299,8946 19500,9043 19621,9097
 Köpenicker Allee: Asphalt	Q0 19819,8554 19898,8410
 Köpenicker Allee: holpriger Fahrweg mit asphaltierten Stellen	Q2 19898,8410 19990,8253 20096,8077 20226,7846 20280,7749
-Köpenicker Allee: Beton	Q0 19500,9043 19587,8973 19610,8933 19699,8773 19819,8554
+Köpenicker Allee: Beton	Q0 19500,9043 19575,8978 19610,8933 19699,8773 19819,8554
 Köpenicker Allee: mäßiger Asphalt	Q1 18939,9417 19020,9364
 Vulkanstr.: Asphalt	Q0 15912,13153 15912,13301 15896,13387 15896,13512 15896,13547 15896,13594 15896,13760 15897,13942 15871,14106 15860,14208 15850,14308
 Vulkanstr.: Asphalt	Q0 15912,13153 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340 15896,12273 15879,12131 15863,11992
@@ -1076,8 +1078,7 @@ Wilskistr.: Asphalt	Q0 -219,4149 -303,4086 -343,4056 -402,4012
 Im Fischtal: Kopfsteinpflaster, OK	Q1 798,4766 723,4572
 Ihnestr.: mäßiges Kopfsteinpflaster	Q2 1866,4572 1817,4462 1761,4255 1740,4176 1691,3990 1664,3907
 Spilstr.: Kopfsteinpflaster, OK	Q1 3836,6550 3826,6656 3865,6758
-(zur Weißenhöher Str.): geflickter Beton	Q2 19726,11743 19735,11721 19830,11677
-(zur Weißenhöher Str.): Asphalt	Q0 19830,11677 19879,11595 19881,11591
+(zur Weißenhöher Str.): Asphalt	Q0 19726,11743 19735,11721 19830,11677 19881,11591
 Biesdorfer Friedhofsweg: Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q2 21311,11528 21514,11796
 (an der U-Bahn): Schotterweg, meist OK	Q2 21514,11796 21645,11912 21775,11989
 (an der U-Bahn): wassergebundene Decke	Q1 21775,11989 21907,12018
@@ -1857,11 +1858,11 @@ Beethovenstr.: kleinteiliges Kopfsteinpflaster, uneben	Q2 10155,-2739 10219,-289
 Marie-Curie-Str.: Asphalt mit leichten Unebenheiten	Q0 16751,10674 16751,10696 16861,10923
 Marie-Curie-Str.: Asphalt mit Schäden	Q1 16861,10923 16967,11162
 Marie-Curie-Str.: Asphalt mit leichten Unebenheiten	Q0 16967,11162 17070,11375 17208,11658
-Debenzer Str.: Asphalt	Q0 19885,10619 19910,10630 20143,10731 20426,10854 20579,10944
+Debenzer Str.: Asphalt	Q0 19885,10619 19910,10630 20143,10731 20196,10754 20418,10851 20579,10944
 Debenzer Str.: Plattenweg	Q2 19885,10619 19912,10543
-Wilhelmsbrücker Str.: Asphalt	Q0 20510,11162 20370,11168
-Brachfelder Str.: Asphalt	Q0 20370,11168 20365,11025 20364,10970 20426,10854
-Gladauer Weg: Asphalt	Q0 20354,11500 20346,11337 20342,11250 20370,11168
+Wilhelmsbrücker Str.: Asphalt	Q0 20509,11174 20369,11174
+Brachfelder Str.: Asphalt	Q0 20369,11174 20365,11025 20364,10970 20409,10870 20418,10851
+Gladauer Weg: Asphalt	Q0 20354,11500 20346,11337 20342,11250 20369,11174
 Langer Weg: fester Sand, 20 km/h und mehr möglich	Q2 20682,9842 20683,9553
 Langer Weg: Schotter, 20 km/h und mehr möglich	Q2 20683,9553 20682,9448 20681,9297 20676,8965 20677,8695
 Langer Weg: Asphalt	Q0 20677,8695 20677,8446
@@ -9435,6 +9436,14 @@ Oskar Helene Park: Asphalt	Q0 1370,4547 1313,4566 1287,4577 1223,4635 1166,4566 
 Mathilde-Vaerting-Weg: Betonpflaster	Q0 17611,-330 17647,-386 17654,-397
 Teutonenstr. (Altglienicke): schlechtes Kopfsteinpflaster	Q3 20186,1522 20256,1504
 (Am Krusenick - An der Filmfabrik): wassergebundene Decke	Q1 22751,4970 22770,4966 22817,4971
+(Beruner Str. - Am Biesdorfer Baggersee): Kleinsteinpflaster	Q1 20113,10795 20126,10802
+(Debenzer Str. - Am Biesdorfer Baggersee): Kleinsteinpflaster	Q1 20196,10754 20191,10768
+(Brachfelder Str. - Am Biesdorfer Baggersee): Kleinsteinpflaster	Q1 20409,10870 20399,10867
+(Brandorfer Weg - Am Biesdorfer Baggersee): Kleinsteinpflaster	Q1 20365,11025 20354,11025
+(Wilhelmsbrücker Str. - Am Biesdorfer Baggersee): Kleinsteinpflaster	Q1 20369,11174 20362,11166
+(Am Biesdorfer Baggersee): Asphalt	Q0 20346,11337 20334,11321 20335,11258 20362,11166 20354,11025 20354,10963 20393,10889 20399,10867 20390,10850 20191,10768 20161,10765 20126,10802 20116,10837 20121,10869 20161,11033 20188,11133 20201,11216 20227,11290 20331,11326 20346,11337
+(Schwarzer Weg - Wattstr.): Asphalt	Q0 17295,7328 17477,7450 17568,7481
+(Schwarzer Weg - Wattstr.): unbefestigte Straße	Q2 17568,7481 17670,7512
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -15899,7 +15908,7 @@ Gotlindestr.: Asphalt	Q0 16859,12613 16957,12599 17088,12617 17234,12607 17301,1
 Gotlindestr.: Beton mit Ausbesserungen	Q1 15947,12626 16000,12625 16071,12623 16112,12622 16132,12621 16284,12616 16409,12612 16576,12612 16720,12614 16859,12613
 Dietlindestr.: Asphalt	Q0 17056,12304 17087,12501
 Dietlindestr.: Asphalt mit leichten Schäden	Q1 17087,12501 17088,12617
-Ortliebstr.: Asphalt	Q0 17087,12501 17210,12486 17249,12478
+Ortliebstr.: Asphalt	Q0 17087,12501 17210,12486 17215,12485 17249,12478
 Kriemhildstr.: Asphalt	Q0 17300,12173 17314,12265
 Kriemhildstr.: Asphalt	Q0 17314,12265 17320,12308 17337,12428 17346,12490 17357,12566
 Hagenstr. (Lichtenberg): Asphalt mit Schäden	Q1 16957,12599 16933,12432

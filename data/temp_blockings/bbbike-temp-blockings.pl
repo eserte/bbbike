@@ -18500,6 +18500,7 @@ EOF
        until => $isodate2epoch->("2016-07-10 23:59:59"),
        periodic => 1, # zweiter Termin im Jahr
        recurrences => [['yearly', days => 4, months => 7]], # kann auch erst im September stattfinden
+       recurrence_prewarn_days => 14, # XXX noch keine Infos dazu...
        text  => 'Rheinstraße (Friedenau): Veranstaltung (Jazzfest auf der Rheinstraße), Straße vollständig zwischen Walther-Schreiber-Platz und Kaisereiche gesperrt (09.07.2016 bis 10.07.2016)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -20136,7 +20137,7 @@ EOF
        text  => 'Alt-Friedrichsfelde - Weißenhöher Straße: Bauarbeiten, Durchfahrt könnte gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 19735,11721 19830,11677 19879,11595 19881,11591
+userdel	2::inwork 19735,11721 19830,11677 19881,11591
 EOF
      },
      { from  => 1325955689, # 

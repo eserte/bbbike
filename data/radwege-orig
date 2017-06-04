@@ -873,14 +873,10 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736 20755,5750
 #: XXX laut fritz "geänderte Straßenführung" bis 31.12.2016, laut vmz bis Mitte Juni 2017
 #: source_id: IM_023718
 #: source_id: 2147339540
-#: last_checked: 2017-04-07 vvv
-#: next_check: 2017-06-15 vvv
-# REMOVED, siehe unten ---	RW1; 14174,7505 14302,7429 14357,7450 14405,7435 14424,7401 14432,7353 14451,7340
-	RW2; 14451,7340 14519,7301
-#: note: vermutlich:
-	RW2; 14519,7301 14451,7340
-	RW2;RW8 14451,7340 14432,7353 14424,7401 14405,7435 14357,7450 14302,7429 14174,7505
-#: next_check ^^^
+#: last_checked: 2017-06-03 vvv
+# REMOVED, siehe unten ---	RW1; 14174,7505 14334,7395 14369,7376
+# REMOVED --- RW2; 14519,7301 --- #: note: vermutlich: --- RW2; 14519,7301
+	RW8;RW2 14519,7301 14369,7376 14334,7395 14174,7505
 #: last_checked ^^^
 #: next_check_id ^^^
 	RW1; 14015,7631 13919,7707
@@ -1096,11 +1092,14 @@ Gehweg für Radfahrer frei	RW1;RW1 15831,10329 16004,10204 16114,10123 16138,1010
 	RW1; 17105,8666 17143,8565 17202,8391 17299,8140 17527,7812 17568,7753
 neu asphaltiert	RW1; 17568,7753 17619,7679 17681,7589 17769,7465
 neu asphaltiert	RW1; 17769,7465 17681,7589 17619,7679
-#: XXX Bauarbeiten, zurzeit kein Radweg mehr
-#: XXX wie sieht die Situation nach der Fahrbahnverschwenkung (dauert bis Anfang September 2017) aus?
-#: last_checked: 2017-05-28
-#: next_check: 2017-05-29
-	RW0; 17619,7679 17568,7753 17527,7812 17299,8140 17202,8391
+#: XXX wie sieht es nach der Fahrbahnverschwenkung (dauert bis Anfang September 2017) aus? vvv
+#: last_checked: 2017-06-03 vvv
+#: next_check: 2017-09-01 vvv
+	RW0; 17619,7679 17568,7753 17527,7812
+provisorischer schmaler Radstreifen	RW3; 17527,7812 17299,8140 17202,8391
+#: next_check ^^^
+#: last_checked ^^^
+#: XXX ^^^
 	RW1; 17202,8391 17143,8565 17105,8666
 	RW1;RW1 17769,7465 17847,7356 18010,7133
 # REMOVED (bestätigt) --- #: XXX Benutzungspflicht wird aufgehoben --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4770 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036541309630/541309630/00099460/60-Anlagen/04/B0670SB.pdf
@@ -1117,7 +1116,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW10; 18225,7004 18010,71
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
-#: last_checked: 2017-03-26
+#: last_checked: 2017-06-03
 #: check_frequency: 90d
 	RW8;RW2 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
@@ -2851,8 +2850,8 @@ die letzten 100 Meter werden auf dem Gehweg geführt	RW3; 7487,3089 7115,3003
 #: source_id: LMS-BR_r_LMS-BR_62750
 #: source_id: 2147339827
 #: XXX laut VMZ und fritz bis Ende 2017
-#: last_checked: 2017-04-07
-#: check_frequency: 60d
+#: last_checked: 2017-06-03
+#: next_check: 2017-12-31
 	RW0;RW1 14069,7100 14196,7086 14344,7003
 	RW1; 14344,7003 14567,6810
 bestehender Radweg abgesperrt	RW0; 14567,6810 14344,7003
@@ -3146,7 +3145,7 @@ Gehweg für Radfahrer frei	RW1; 2654,9757 2559,9879
 	RW3;RW3 3159,11562 3144,11659 3117,11852 3103,11968 3091,12071 3072,12222 3060,12311 3050,12394 3034,12502
 	RW1;RW1 3337,12855 3361,12865 3435,12954 3517,13067 3523,13076 3534,13098 3556,13200
 	RW1; 3534,13098 3645,13206
-	RW2;RW2 19004,11780 19389,11761
+	RW2;RW2 19004,11780 19092,11776 19389,11761
 	RW6;RW6 2643,12453 2662,12306 2672,12190 2689,12042 2728,11805 2739,11730
 	RW1;RW0 13590,20705 13403,20686 13269,20660 13089,20626 12909,20592 12880,20610 12835,20637 12821,20646 12814,20648 12723,20691 12672,20720 12600,20742 12578,20749
 	RW1;RW1 12578,20749 12553,20757 12462,20785 12442,20805

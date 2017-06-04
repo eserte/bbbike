@@ -417,7 +417,9 @@ Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Rads
 Seestr.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6781,16026 6965,16190 7051,16264 7231,16418 7295,16477 7403,16575 7417,16587 7447,16613
 Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,15104 6561,15041 6528,15000 6445,14893 6334,14756
 Stromstr.: Verbeserung -> evtl. Radspuren?	?::projected; 6183,13083 6214,13225
+#: last_checked: 2017-05-19
 Möckernstr.: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 8783,10166 8802,10290 8804,10303
+#: last_checked: 2017-05-01
 Bersarinplatz: Verbesserung "Radweganbindung Ostseite"	?::projected; 13730,12535 13761,12578 13767,12626 13747,12642 13695,12643
 Rothenbachstr.: Verbesserung -> wird der frühere Radweg wieder aktiviert?	?::projected; 12144,18436 11950,18529
 Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected; 15662,16656 15437,16491
@@ -439,10 +441,12 @@ Im Eck: Verbesserung -> evtl. Asphaltierung?	?::projected 10269,906 10229,1008 1
 Neudecker Weg: Verbesserung -> Radspuren oder Asphaltierung des Radwegs? ("Teilabschnitte")	?::projected 16908,1217 16975,1262 17120,1394 17211,1469 17526,1540 17855,1629 18044,1716 18198,1814 18361,1926 18396,1990
 Fürstenwalder Allee: Verbesserung -> Verbreiterung Radweg	?::projected 31978,3237 32121,3215 32829,3105 33111,3064 33525,2901 33545,2896
 Bellevuestr.: Verbesserung -> evtl. Radspuren?	?::projected; 23403,5385 23402,5483
+#: last_checked: 2017-05-27
 An der Wuhlheide: Verbesserung -> evtl. Radpuren?	?::projected; 19759,6049 19958,5950
 Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22351,862 22547,651 23206,206
 (An der Straßenbahn): Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected 21539,17442 21555,17546 21559,17617 21576,17678 21639,17803 21698,17920 21726,17974 21804,18125 21843,18198
 #: XXX routing_helper ggfs. anpassen
+#: last_checked: 2017-06-03
 Frankfurter Allee: Zweirichtungsradweg	?::projected; 15717,12010 15670,12022
 Wallensteinstr.: Asphaltstreifen	?::projected 17360,9629 17425,9605 17456,9594 17549,9529 18037,9195
 #: XXX oder ist die andere Seite vor Pablo-Picasso-Str. gemeint?
@@ -454,18 +458,22 @@ Dovestr.: Radstreifen	?::projected 4749,12689 4648,12559 4620,12527
 Brandenburgische Str.: Radstreifen (wo genau? oder die gesamte Strecke?)	?::projected 4342,9301 4246,9406 4057,9648 3980,9761 3974,9774 3949,9842 3927,9935 3902,10043 3874,10153 3852,10236 3835,10352
 Ernst-Reuter-Platz: Zweirichtungsradwege	?::projected 4838,11697 4885,11735 4905,11785 4854,11843 4763,11834 4737,11768 4781,11708 4838,11697
 #: XXX oder werden größere Abschnitte der Straße mit Radstreifen versehen?
-#: last_checked: 2017-06-02
+#: last_checked: 2017-06-03
 Frankfurter Allee: Radstreifen	?::projected; 15117,12106 15361,12071
 #: XXX_indoor wobei hier keine Änderung in der Kartendarstellung passieren wird
 Friedenstr.: Verbesserung der Radroute	?::projected 12325,13148 12382,13097 12416,13045
 #: XXX außerdem wird für den Durchgangsverkehr (hoffentlich nur MIV) gesperrt
 #: last_checked: 2017-05-28
 Hegemeisterweg: Asphaltierung	?::projected 17522,8220 17202,8391
+#: last_checked: 2017-06-03
 Fanningerstr.: Asphaltierung	?::projected 16456,12191 16359,12207 16255,12224
 Seefelder Str.: "Radweganbindung"	?::projected 17273,16187 17371,16194 17383,16197
-Gensinger Str.: Radstreifen	?::projected 18586,12151 18927,12135 19094,12127 19148,12073 19138,11815 19135,11713 19121,11681 19035,11671 19005,11705 19005,11767 19004,11780
+#: last_checked: 2017-06-03
+Gensinger Str.: Radstreifen	?::projected 18586,12151 18927,12135 19094,12127 19148,12073 19138,11815 19136,11739 19135,11713 19121,11681 19035,11671 19005,11705 19005,11767 19004,11780
 #: XXX evtl. ein kleinerer Abschnitt (z.B. nur der H-Abschnitt)
+#: last_checked: 2017-06-03
 Siegfriedstr.: Radstreifen	?::projected 16860,12861 16859,12613 16857,12600 16826,12408 16820,12339 16794,12144 16764,11919
+#: last_checked: 2017-06-03
 Marzahner Chaussee: Radstreifen	?::projected 18586,12151 18635,12224 18654,12255 18715,12348 18748,12399 18773,12438 18882,12618 19005,12822 19069,12929 19123,13067 19180,13219 19198,13272 19181,13485
 #: XXX nicht eindeutig: "Asphaltierung Kameruner Straße Fahrradstraße Togostraße" --- könnte im Minimalfall nur die Kreuzung sein
 Kameruner Str.: vielleicht Asphaltierung?	?::projected 6127,15688 6267,15844 6383,15972 6484,16085 6587,16199
@@ -473,8 +481,12 @@ Kameruner Str.: vielleicht Asphaltierung?	?::projected 6127,15688 6267,15844 638
 Residenzstr.: Radstreifen	?::projected 8127,16894 8079,16953 7970,17087
 #: XXX oder ist was anderes mit "Rampe Wullenwebersteg" gemeint?
 Wullenwebersteg: wird hier eine Rampe erstellt?	?::projected 5714,12290 5714,12279 5714,12266
-#: XXX evtl. auch nur der östliche Abschnitt ab Niemetzstr.
-Braunschweiger Str.: Asphaltierung	?::projected 13369,7307 13487,7337 13519,7345 13601,7366 13654,7380 13702,7418 13781,7524 13854,7620 13919,7707
+#: XXX evtl. auch nur der östliche Abschnitt ab Niemetzstr. vvv
+#: last_checked: 2017-06-03 vvv
+Braunschweiger Str.: Asphaltierung	?::projected 13369,7307 13487,7337 13519,7345
+Braunschweiger Str.: Asphaltierung	?::projected 13702,7418 13781,7524 13854,7620 13919,7707
+#: last_checked ^^^
+#: XXX ^^^
 Niederstr.: Asphaltierung	?::projected 7634,19793 7769,19736 7857,19693
 #: XXX vielleicht nur ein Teilabschnitt
 Tollerstr.: Asphaltierung	?::projected 7751,19696 7769,19736 7807,19811 7838,19884 7885,19975
@@ -502,9 +514,9 @@ Brauerstr.: Asphaltierung	?::projected 5317,2345 5159,2176 4979,1964
 Königsweg: Asphaltierung	?::projected -298,2577 -197,2634 -155,2658 -151,2656
 #: last_checked: 2017-05-21
 Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbreiterung und Asphaltierung des Weges?)	?::projected 8106,3410 8016,3651 7795,4242 7769,4315
-#: last_checked: 2017-06-02
+#: last_checked: 2017-06-03
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird hier vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13849,9310
-#: last_checked: 2017-05-27
+#: last_checked: 2017-06-03
 Rummelsburger Landstr.: Radweg/Radstreifen	?::projected 18010,7133 17847,7356 17769,7465 17681,7589 17619,7679 17568,7753 17527,7812
 #: check_frequency ^^^
 #: by: ^^^
@@ -841,7 +853,7 @@ Privatstraßen in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualit
 #: last_checked ^^^
 # 
 # REMOVED (oberhalb) --- #: last_checked: 2014-05-06 --- #: check_frequency: 14d --- Paul-und-Paula-Ufer: wird der Radweg am Ufer oder oberhalb entlang geführt?	?::inwork 15200,10600 15145,10636 15101,10640
-# REMOVED (Änderungen aufgenommen) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5225.html --- #: XXX für Fußgänger wird nur die südliche Fahrbahnseite zur Verfügung stehen? --- #: next_check: 2014-05-10 --- Sonnenallee: Bauarbeiten, bleiben die Radwege erhalten? Außerdem Bau einer provisorischen Ampel an der Ziegrastr.	?::projected 14519,7301 14451,7340 14432,7353 14424,7401 14405,7435 14357,7450 14302,7429 14174,7505
+# REMOVED (Änderungen aufgenommen) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5225.html --- #: XXX für Fußgänger wird nur die südliche Fahrbahnseite zur Verfügung stehen? --- #: next_check: 2014-05-10 --- Sonnenallee: Bauarbeiten, bleiben die Radwege erhalten? Außerdem Bau einer provisorischen Ampel an der Ziegrastr.	?::projected 14519,7301 14451,7340 14432,7353 14424,7401 14405,7435 14357,7450 14334,7395 14174,7505
 # REMOVED (nur verschwenkt) --- #: source_id: IM_022146 --- #: last_checked: 2014-05-24 --- #: next_check: 2014-06-30 --- Siemensstr./Erna-Samuel-Str.: Kreuzungssituation nach den Bauarbeiten, evtl. Ampel?	?::inwork 5306,14061
 # REMOVED (keine Besonderheiten) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1403/nachricht5213.html --- #: XXX bis Ende 2014 --- Heidestr.: wie ist die Radverkehrsführung an der Kreuzung Sellerstr.?	? 7589,14359 7597,14417
 # REMOVED (Bauarbeiten laufen bereits, sind aber relativ unproblematisch für Radfahrer) --- #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20140326.1205.395773.html --- #: next_check: 2014-04-01 --- Thusnelda-Allee: wann genau wird die Sperrung sein?	? 5956,13330 5975,13256
@@ -1182,7 +1194,7 @@ Tempelhofer Damm: wird der Radweg Richtung Norden erneuert?	?::projected; 9242,7
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straßenname)
 #: XXX PLZ=10318 laut DPAG-Mitteilungsblatt
 #: XXX es existiert eine Baustraße, Tor ist aber gesperrt
-#: last_checked: 2017-04-14
+#: last_checked: 2017-06-03
 #: check_frequency: 180d
 Planstraße 9: evtl. Fortsetzung der Regener Str.? Qualität etc?	?::projected 19705,9039 19806,9040 19863,9073 19870,9079 19874,9151
 # REMOVED --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5991 (Straßenname) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/45081036397475695/397475695/00115094/94-Anlagen/02/Anlage1329.pdf --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2014 --- #: note: Privatstraße --- #: XXX PLZ=10318 laut DPAG-Mitteilungsblatt und LOR, bereits eingetragen --- Zachenberger Str.: (Planstraße 11) Qualität?	?::projected 19889,9400 19780,9409
@@ -1450,8 +1462,8 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: http://www.dafmap.de/d/berlin.html?id=5213&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-12-31)
 #: XXX Asphaltierung der Fahrbahn von Rummelsburger Landstr. bis Schwarzer Weg fertig
 #: XXX Radwege werden vermutlich asphaltiert sein
-#: last_checked: 2017-05-27
-#: next_check: 2017-07-01
+#: last_checked: 2017-06-03
+#: check_frequency: 60d
 Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rummelsburger Landstraße und Köpenicker Landstraße	?::inwork 17681,7589 17585,7525 17453,7451 17295,7344 17211,7280 17091,7175 16971,7058 16720,6845
 # 
 #: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/oepnv/treskowallee/Band_1/UL_3_Lageplaene/
@@ -1462,7 +1474,7 @@ Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rumm
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5758 (Bauarbeiten beginnen erst 2019)
 #: osm_watch: way id="46039447" version="14"
 #: osm_watch: way id="456120288" version="2"
-#: last_checked: 2017-04-14
+#: last_checked: 2017-06-03
 #: next_check: 2019-03-01
 Treskowallee: Bau von Radwegen	?::projected; 18704,8427 18731,8577 18733,8633
 # 
@@ -1761,16 +1773,13 @@ Sauerbruchweg: zurzeit Bauarbeiten, wie sieht die Situation danach aus?	?::inwor
 Clayallee: Asphaltierung des Radwegs	?::inwork; 1746,5922 1736,5850 1714,5722 1656,5446
 # 
 # REMOVED (keine Relevanz für Radfahrer; Durchfahrtmöglichkeit für Radfahrer) --- #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2017/pressemitteilung.588258.php --- #: XXX Bauzeit ca. vier Wochen --- auch für Radfahrer relevant? --- #: next_check: 2017-05-15 --- Stargarder Str.: geplante Einbahnstraßenregelung während der Bauarbeiten	?::projected; 11158,15739 11290,15669
-# 
-#: XXX laut osm Einbahnstraße
-Alt-Friedrichsfelde - Weißenhöher Str.: wie sieht die Situation hier aus? Existieren die Drängelgitter noch?	? 19726,11743 19735,11721 19830,11677 19879,11595 19881,11591 19888,11589
-# 
+# REMOVED --- #: XXX laut osm Einbahnstraße --- Alt-Friedrichsfelde - Weißenhöher Str.: wie sieht die Situation hier aus? Existieren die Drängelgitter noch?	? 19726,11743 19735,11721 19830,11677 19881,11591 19888,11589
 # REMOVED (eigentlich ja, aber alle fahren auf dem linken Radweg) --- #: XXX NEW¦Forckenbeckstraße (Schmargendorf)  Gültig ab: 02.05.2017 11:00  Baustelle, Fahrtrichtung gesperrt (bis Ende 11/17)¦2147341251 --- Forckenbeckstr.: Bauarbeiten auch für Radfahrer relevant?	? 3122,8247 3218,8233 3665,8131 3779,8105 4106,8031
 # 
 #: XXX während der Bauarbeiten wird ein Zweirichtungsradweg erstellt --- Zeitverlust?
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.586635.php
 #: XXX wann fangen die Bauarbeiten an?
-#: last_checked: 2017-06-02
+#: last_checked: 2017-06-03
 #: check_frequency: 90d
 Möllendorffstr.: Radspur Richtung Süden entsteht	?; 15420,12178 15361,12071
 # 
@@ -2024,7 +2033,7 @@ Wröhmännerpark: nach den Bauarbeiten "gelber Farbasphalt", vermutlich für Radfah
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: XXX fehlt in Berlin.coords.data, PLZ=10315
 #: osm_watch: way id="404451458" version="2"
-#: last_checked: 2017-02-25 vvv
+#: last_checked: 2017-06-03 vvv
 #: check_frequency: 60d vvv
 Alt-Friedrichsfelde [Wohngebiet]: neue Straße	?::inwork 18730,11833 18730,11833 18899,11824
 #: XXX_prog: duplizierter Eintrag wegen .check_missing_streets
@@ -2134,7 +2143,7 @@ Seehausener Str.: vielleicht Bau eines Zebrastreifens	?::projected 18520,17525 1
 #: osm_watch: way id="27942935" version="9"
 #: osm_watch: way id="11663312" version="14"
 #: osm_watch: way id="4689343" version="14"
-#: last_checked: 2017-04-14
+#: last_checked: 2017-06-03
 #: next_check: 2018-04-01
 Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 18215,12123
 # 
@@ -2705,7 +2714,7 @@ Zeitverlust beim Überqueren der Charlottenstraße	? -3091,14220 -3135,14183 -3275
 Radweg auf Alt-Biesdorf hier verschwenkt	? 20114,11719 20025,11747
 # 
 #: XXX_prog: Soll der Radweg ausnahmsweise separat gezeichnet werden? Oder würden handicap-Einträge reichen?
-Alt-Friedrichsfelde/Gensinger Straße: zwei Radwegverschwenkungen auf der nördlichen Seite	? 19389,11761 19004,11780 18853,11780
+Alt-Friedrichsfelde/Gensinger Straße: zwei Radwegverschwenkungen auf der nördlichen Seite	? 19389,11761 19092,11776 19004,11780 18853,11780
 # 
 #: XXX_prog hier steht auch eine Ampel, ist aber auf der Landsberger nur für den Verkehr Richtung Innenstadt relevant; wahrscheinlich mit der Ampel an der Richard-Sorge-Str. gleich geschaltet
 Landsberger/Virchowstr.	? 12979,13280

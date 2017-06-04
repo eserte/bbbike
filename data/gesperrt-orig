@@ -1629,7 +1629,7 @@ Wisbyer Str.: Straßenbahn	3nocross 11889,16328 11936,16302 12012,16250 12090,161
 Wisbyer Str.: Straßenbahn	3nocross 11542,16384 11632,16373 11673,16367
 Wisbyer Str.: Straßenbahn	3nocross 11397,16405 11448,16398 11470,16394 11542,16384
 Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 17251,11789 17440,11774 17497,11769 17746,11748 17963,11723 18098,11706 18215,11690
-Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 18626,11742 18853,11780 19004,11780 19389,11761 19661,11746 19726,11743 19907,11734 19985,11727 20114,11719 20161,11715 20375,11694
+Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 18626,11742 18853,11780 19004,11780 19092,11776 19389,11761 19661,11746 19726,11743 19907,11734 19985,11727 20114,11719 20161,11715 20375,11694
 Alt-Friedrichsfelde: Straßentunnelrampe	3nocross 18215,11690 18520,11707 18626,11742
 Lewishamstr.: abgesperrter Mittelstreifen	3nocross 3592,10869 3623,10800 3644,10759
 Lewishamstr: Straßentunnelrampe	3nocross 3644,10759 3744,10577 3777,10513 3813,10435
@@ -2192,7 +2192,7 @@ Schranke	BNP:3::trailer=10 5296,11529
 # 
 #: next_check_id: DIESEL-2015 vvv
 #: note: mittlerweile gibt es hier auch zwei Baustellenampeln mit Anforderung, allerdings wird relativ schnell auf grün geschaltet vvv
-#: last_checked: 2017-04-07 vvv
+#: last_checked: 2017-06-03 vvv
 #: check_frequency: 60d vvv
 Drängelgitter	BNP:5::trailer=10 14364,8096
 Drängelgitter	BNP:5::trailer=10 14405,8115
@@ -2216,7 +2216,7 @@ Barriere	BNP:5::trailer=10 7422,10368
 Drängelgitter	BNP:3::trailer=10 5029,19945
 Drängelgitter	BNP:3::trailer=10 -12262,-393
 Drängelgitter	BNP:3::trailer=10 -4139,1976
-enges Drängelgitter	BNP:5::trailer=no 17295,7323
+# REMOVED (existiert nicht mehr) --- enges Drängelgitter	BNP:5::trailer=no 17295,7323
 # REMOVED (mittlerweile hat sich auch ein Trampelweg neben dem Drängelgitter gebildet) --- #: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7933 --- #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036689837317/689837317/00101684/84-Anlagen/03/3_Version_vom_15_01_2016.pdf --- #: XXX wird hier verbessert werden? --- #: next_check: 2016-07-01
 Drängelgitter	BNP:2::trailer=5 -6287,13472
 #: note: relativ weit
@@ -2368,8 +2368,8 @@ hohes Drängelgitter	BNP:3::trailer=10 12782,20191
 Drängelgitter	BNP:3::trailer=10 6928,23021
 Drängelgitter	BNP:3::trailer=10 6509,23198
 enges Drängelgitter, kann umfahren werden	BNP:3::trailer=10 6278,22615
-Schranke	BNP:3::trailer=10 19735,11721
-Schranke	BNP:3::trailer=10 19879,11595
+# REMOVED --- Schranke	BNP:3::trailer=10 19735,11721
+# REMOVED --- Schranke	BNP:3::trailer=10 19879,11595
 Drängelgitter	BNP:3::trailer=10 5394,23172
 Drängelgitter	BNP:3::trailer=10 3816,22602
 Drängelgitter	BNP:3::trailer=10 3869,22581
@@ -2758,6 +2758,7 @@ versetzte Schranke, manchmal offen	BNP:1::trailer=3 24625,20855
 Drängelgitter	BNP:3 31665,48997
 Schranke	BNP:3::trailer=10 8041,-3322
 Schranke	BNP:3::trailer=10 6876,-2731
+Schranke	BNP:3::trailer=10 17215,12485
 #
 ############################################################################
 #
@@ -2806,7 +2807,7 @@ Voltairestr.: Baustelle, Fahrtrichtung gesperrt	1s:q3 11329,12497 11209,12430
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt	1s:q3 5192,10234 5196,10398
 # 
 #: source_id: 2147341003 (Bauarbeiten in der angrenzenden Modersohnstr.)
-#: last_checked: 2017-06-02
+#: last_checked: 2017-06-03
 DB-Werkstraße: Zufahrt zur DB-Werkstraße ist wegen Bauarbeiten gesperrt	2::inwork 14043,10928 14107,10911
 # 
 #: XXX laut fritz bis 30. September 2017
@@ -2884,7 +2885,7 @@ Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,
 # REMOVED (Baugrube) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2016 --- #: osm_watch: note 848012 1 --- #: last_checked: 2016-12-15 --- #: check_frequency: 180d --- Sülzhayner Str.: komplett gesperrt wegen Bauarbeiten, vielleicht dauerhaft	2::inwork 13420,9259 13397,9234
 # 
 #: next_check_id: ACHTERKASTELL-2016
-#: last_checked: 2017-02-25
+#: last_checked: 2017-06-03
 #: check_frequency: 60d
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 # 
@@ -2964,10 +2965,10 @@ Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 # REMOVED (hier schon offen) --- Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9636,13076 9559,13087
 # 
 #: next_check_id: MINNATODENHAGENSTR-2016
-#: last_checked: 2017-03-27 vvv
+#: last_checked: 2017-06-03 vvv
 #: check_frequency: 60d vvv
-# REMOVED --- Grenzweg: wegen Straßenbau gesperrt, ggfs. dauerhaft	2::inwork 17219,7268 17295,7330 17445,7434
-Schwarzer Weg: wegen Straßenbau gesperrt	2::inwork 17295,7323 17295,7330 17295,7344 17296,7401
+# REMOVED --- Grenzweg: wegen Straßenbau gesperrt, ggfs. dauerhaft	2::inwork 17219,7268 17295,7328 17445,7434
+# REMOVED (geänderte Straßenführung) --- Schwarzer Weg: wegen Straßenbau gesperrt	2::inwork 17295,7323 17295,7328 17295,7344 17295,7358 17296,7401
 Nalepastr.: wegen Straßenbau gesperrt	2::inwork 17190,7306 17211,7280 17219,7268 17286,7173
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -2976,7 +2977,7 @@ Nalepastr.: wegen Straßenbau gesperrt	2::inwork 17190,7306 17211,7280 17219,7268
 # REMOVED (fertig) --- #: next_check_id: FISCHERINSEL-2015 vvv --- #: source_id: 2147339543 vvv --- #: last_checked: 2016-12-16 vvv --- #: next_check: 2016-12-22 vvv --- Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 --- Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10687,11853 10869,11949 --- Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10672,11870 --- Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,11853 10869,11949
 # 
 #: next_check_id: DIESEL-2015
-#: last_checked: 2017-04-07
+#: last_checked: 2017-06-03
 #: check_frequency: 60d
 Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 14471,8046
 # 
@@ -2984,8 +2985,7 @@ Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 144
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/gerickesteg/index.shtml (20 Monate Bauzeit)
 #: XXX laut http://www.stadtentwicklung.berlin.de/bauen/strassenbau/ bis "II. Quartal 2017"
 #: osm_watch: way id="27250334" version="7"
-#: last_checked: 2017-05-27
-#: next_check: 2017-06-30
+#: last_checked: 2017-06-01
 Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,12669 6765,12680
 # 
 #: XXX Sperrungen wegen Bauarbeiten für die IGA 2017 vvv
@@ -3015,7 +3015,7 @@ Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::in
 # REMOVED --- #: XXX Wie wird die Qualität danach sein? Wird man zum Hiltrud-Dudek-Weg durchfahren können? Wird die Straße verkehrsberuhigt sein? --- #: osm_watch: way id="151742436" version="5" --- #: XXX ad osm_watch: id referenziert die Jeanette-Wolff-Str., nur ein "proxy" für den neu zu bauenden Weg --- #: last_checked: 2015-04-10 --- #: check_frequency: 100d --- Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17647,-386 17654,-397
 # 
 #: next_check_id: EUROPACITY-2015 vvv
-#: last_checked: 2017-04-07 vvv
+#: last_checked: 2017-05-29 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="237704729" version="7"
 Lydia-Rabinowitsch-Str.: noch gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924
@@ -3031,7 +3031,7 @@ Clara-von-Simson-Str.: noch gesperrt	2 7652,14257 7757,14318 7802,14250 7697,141
 #: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/strassen_kfz/SOV-Beschluss-27022012.pdf
 #: XXX hier wird es für Autofahrer dauerhaft keine Zufahrt zur Minna-Todenhagen-Str. geben, aber vielleicht wird es für Radfahrer/Fußgänger einen Zugang geben?
 #: source_id: 2147339538
-#: last_checked: 2017-05-27
+#: last_checked: 2017-06-03
 Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, für Autos dauerhaft	2::inwork 17670,7512 17681,7589
 # 
 #: next_check_id: HEERSTR-2016 vvv
@@ -3066,12 +3066,12 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 # REMOVED (Aufschüttung statt Brücke) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6003 (Forderung nach Wiederherstellung) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6003&date=20151213 (Abriss der Brücke) --- #: XXX: Umfahrung existiert mittlerweile --- bleibt die Sperrung permanent? --- #: XXX: sobald die Brücke abgerissen wurde -> aus den Daten entfernen --- #: last_checked: 2015-10-04 --- #: check_frequency: 180d --- Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352
 # 
 #: osm_watch: way id="193373934" version="5"
-#: last_checked: 2017-04-14
+#: last_checked: 2017-06-03
 #: check_frequency: 30d
 Frauenauer Str.: Straße fertig, aber noch gesperrt	2::inwork 19663,9757 19858,9775
 # 
 #: osm_watch: way id="290255259" version="3"
-#: last_checked: 2017-04-14
+#: last_checked: 2017-06-03
 #: check_frequency: 30d
 Kirchdorfer Str.: Straße fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9775 19871,9680
 # 

@@ -19,11 +19,11 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- R¸dersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung ¸ber Gehweg mˆglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraﬂe wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2017-06-02
+#: last_checked: 2017-06-03
 Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2017-06-02
+#: last_checked: 2017-06-03
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt, Bordsteine	q3 14254,11377 14211,11229
 # 
 #: last_checked: 2017-05-28
@@ -349,7 +349,7 @@ Kiehlufer: Bauarbeiten, Fahrbahn gesperrt, Bordsteine beim Ausweichen auf dem Ge
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 
 #: next_check_id: DIESEL-2015
-#: last_checked: 2017-04-07
+#: last_checked: 2017-06-03
 #: check_frequency: 60d
 Dieselstr., Umfahrung: Fuﬂg‰nger, kurvig, eng	q2-::inwork 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112 14429,8074 14471,8046
 # 
@@ -2516,6 +2516,22 @@ Am Orangeriepark: einige Fuﬂg‰nger	q1 10271,19361 10281,19364 10330,19384 10321,
 (Paul-Schwarz-Promenade - Dalandweg): einige Fuﬂg‰nger, Bordstein	q2 5387,4214 5385,4236
 An der Neumark: laut Schild "Schrittgeschwindigkeit"	q2 11283,3774 11300,3709 11357,3720 11378,3626 11332,3615
 (Am Krusenick - An der Filmfabrik): einige Fuﬂg‰nger	q1 22751,4970 22770,4966 22817,4971
+(Gensinger Str. - Alt-Friedrichsfelde): Rampe	q2 19136,11739 19110,11705 19092,11776
+#: note auﬂerdem zu kurz vvv
+(Beruner Str. - Am Biesdorfer Baggersee): einige Fuﬂg‰nger	q3 20113,10795 20126,10802
+(Debenzer Str. - Am Biesdorfer Baggersee): einige Fuﬂg‰nger	q3 20196,10754 20191,10768
+(Brachfelder Str. - Am Biesdorfer Baggersee): einige Fuﬂg‰nger	q3 20409,10870 20399,10867
+(Brandorfer Weg - Am Biesdorfer Baggersee): einige Fuﬂg‰nger	q3 20365,11025 20354,11025
+(Wilhelmsbr¸cker Str. - Am Biesdorfer Baggersee): einige Fuﬂg‰nger	q3 20369,11174 20362,11166
+#: note ^^^
+(Am Biesdorfer Baggersee): einige Fuﬂg‰nger	q1 20346,11337 20331,11326 20227,11290 20201,11216 20188,11133 20161,11033 20121,10869
+(Am Biesdorfer Baggersee): Fuﬂg‰nger, Badebetrieb an schˆnen Tagen	q2 20121,10869 20116,10837 20126,10802 20161,10765 20191,10768 20390,10850 20399,10867 20393,10889
+(Am Biesdorfer Baggersee): einige Fuﬂg‰nger	q1 20393,10889 20354,10963 20354,11025 20362,11166 20335,11258 20334,11321 20346,11337
+#: next_check_id: MINNATODENHAGENSTR-2016
+#: XXX entfernen, sobald die eigentliche Straﬂe offen ist
+#: last_checked: 2017-06-03
+#: check_frequency: 60d
+(Gehweg an der zuk¸nftigen Minna-Todenhagen-Str.): einige Fuﬂg‰nger	q2 17681,7589 17470,7473 17295,7358
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
