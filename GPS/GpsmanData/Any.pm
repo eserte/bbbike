@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2014,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2014,2016,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package GPS::GpsmanData::Any;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.10';
+$VERSION = '1.11';
 
 use GPS::GpsmanData;
 
@@ -254,7 +254,7 @@ sub load_gpx {
 			    my($lat, $lon) = $latlong2xy_twig->($trkpt);
 			    my $wpt = GPS::Gpsman::Waypoint->new;
 			    $wpt->Ident("");
-			    my $accuracy = 0;
+			    my $accuracy;
 			    $wpt->Latitude($lat);
 			    $wpt->Longitude($lon);
 			    for my $trkpt_child ($trkpt->children) {
@@ -267,6 +267,13 @@ sub load_gpx {
 				    $wpt->unixtime_to_DateTime($epoch, $trkseg);
 				} elsif ($trkpt_child->name eq 'srt:accuracy') {
 				    $accuracy = $trkpt_child->children_text || 0;
+				}
+			    }
+			    if (!defined $accuracy) {
+				if ($lat == 0 && $lon == 0) { # happens e.g. in fit files from fenix5s, for the first points
+				    $accuracy = 2;
+				} else {
+				    $accuracy = 0;
 				}
 			    }
 			    $wpt->Accuracy($accuracy);
