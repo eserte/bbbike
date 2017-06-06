@@ -1,68 +1,6 @@
-$#temp_blocking = 2;
+$#temp_blocking = 30;
 push @temp_blocking,
 (
-       {
-         'data' => '#: by: http://www.berlin.de/tickets/suche/detail.php?id=810735
-userdel	2::temp 9521,10010 9827,10051
-userdel	2::temp 9521,10010 9448,10014
-userdel	2::temp 9599,10175 9687,10180 9825,10206
-userdel	2::temp 9416,10196 9599,10175
-userdel	2::temp 9579,10122 9536,10064
-userdel	2::temp 9579,10122 9631,10142 9702,10129
-userdel	2::temp 9837,10117 9827,10051
-userdel	2::temp 9837,10117 9858,10199
-userdel	2::temp 9599,10175 9579,10122
-userdel	2::temp 9702,10129 9827,10051
-userdel	2::temp 9702,10129 9816,10119
-userdel	2::temp 9599,10175 9631,10142 9687,10180
-	2::temp 9825,10206 9865,10227 9948,10280
-	2::temp 9873,10285 9865,10227 9858,10199
-	2::temp 9825,10206 9858,10199
-userdel	3 9922,10010 9827,10051 9837,9856
-userdel	3 9837,9856 9827,10051 9922,10010
-	2::temp 9827,10051 9837,9856
-	2::temp 9837,9856 9723,9842 9588,9827 9387,9804
-',
-         'from' => 1496268000,
-         'id' => 3,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'easter',
-                              47
-                            ]
-                          ],
-         'text' => 'Straßenfest rund um den Blücherplatz, 02.06.2017 bis 05.06.2017',
-         'type' => 'gesperrt',
-         'until' => 1496699999
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'data' => '#: by: http://www.weinfeste-in-deutschland.de/wein-und-winzerfest-in-berlin-lichtenrade.html
 userdel	2::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
@@ -3611,14 +3549,15 @@ userdel	2::inwork -12583,-1552 -12485,-1482
        undef,
        {
          'data' => '#: by: fritz
+#: note: laut vmz "Gesamtbaumaßnahme" bis Mitte Juli 2017
 userdel	q4::inwork; 15080,11905 15121,11899 15248,11880
 ',
          'from' => 1496642400,
          'id' => 2550,
-         'source_id' => 'IM_021449',
-         'text' => 'Scharnweberstr.: Baustelle, Fahrbahn zwischen Jessnerstr. und Gürtelstr. gesperrt, ab 06.06.2017',
+         'source_id' => '2147341388',
+         'text' => 'Scharnweberstr.: Baustelle, Fahrbahn zwischen Jessnerstr. und Gürtelstr. gesperrt, ab 06.06.2017 bis 25.06.2017',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1498384800
        },
        undef,
        undef,
@@ -4170,30 +4109,8 @@ userdel	2::inwork 3741,12607 3654,12672
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: add_fragezeichen: wann wird die Unterführung wieder geöffnet?
-#: last_checked: 2017-03-26
-#: check_frequency: 60d
-userdel	2::inwork 4778,3352 4815,3382 4822,3431
-',
-         'from' => undef,
-         'id' => 2831,
-         'text' => 'Unterführung Krahmersteg: gesperrt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
-       {
-         'data' => '#: add_fragezeichen: wann sind die Bauarbeiten beendet?
-#: last_checked: 2017-05-06
-#: check_frequency: 60d
-userdel	q3::inwork 4564,3457 4800,3391 4862,3363 5018,3320
-',
-         'from' => undef,
-         'id' => 2832,
-         'text' => 'Krahmerstr.: Bauarbeiten, einige Engstellen',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -4299,7 +4216,7 @@ userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 
        },
        undef,
        {
-         'data' => '#: last_checked: 2017-05-19
+         'data' => '#: last_checked: 2017-06-06
 #: check_frequency: 14d
 userdel	q4::inwork; 7201,8870 7107,9030
 ',

@@ -745,8 +745,9 @@ Gehweg für Radfahrer frei	RW1;RW1 5352,7428 5364,7330 5397,7205
 	RW;RW1 5574,7018 5644,6936
 	RW1;RW1 5644,6936 5799,6841 5811,6833
 	RW1;RW 5811,6833 5896,6785
-	RW2;RW2 5896,6785 5966,6747 6019,6710
-	RW2;RW2 6019,6710 6042,6686
+#: note: hier ein Zweirichtungsradweg
+	RW2; 5896,6785 5966,6747 6019,6710 6042,6686
+	RW2; 6042,6686 6019,6710 5966,6747 5896,6785
 	RW1;RW1 6042,6686 6071,6559
 	RW1;RW2 6071,6559 6083,6451
 	RW1;RW 6083,6451 6095,6358
@@ -767,7 +768,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 6494,6128 6629,5946
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr	RW1; 6696,5854 6629,5946 6494,6128 6343,6297 6248,6388 6168,6467
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5792
 #: XXX bleibt die Benutzungspflicht hier?
-#: last_checked: 2017-04-29
+#: last_checked: 2017-06-06
 	RW2; 6575,8469 6687,8385
 	RW0;RW2 8336,10829 8362,10779 8430,10710
 	RW1;RW9 8571,11846 8489,11782 8438,11753 8322,11715 8203,11686
@@ -1092,6 +1093,7 @@ Gehweg für Radfahrer frei	RW1;RW1 15831,10329 16004,10204 16114,10123 16138,1010
 neu asphaltiert	RW1; 17568,7753 17619,7679 17681,7589 17769,7465
 neu asphaltiert	RW1; 17769,7465 17681,7589 17619,7679
 #: XXX wie sieht es nach der Fahrbahnverschwenkung (dauert bis Anfang September 2017) aus? vvv
+#: source_id: 2147341340
 #: last_checked: 2017-06-03 vvv
 #: next_check: 2017-09-01 vvv
 	RW0; 17619,7679 17568,7753 17527,7812
@@ -1957,8 +1959,9 @@ Gehweg für Radfahrer frei	RW1; 5191,2350 5212,2360 5256,2379
 	RW;RW 4515,4581 4521,4484
 	RW;RW1 4521,4484 4551,4042
 	RW1;RW 4551,4042 4573,3862 4592,3762 4596,3738
-Gehweg für Radfahrer frei	RW1;RW1 4596,3738 4601,3704 4611,3657 4585,3575
-Gehweg für Radfahrer frei	;RW1 4585,3575 4580,3514 4564,3457 4514,3329 4454,3260
+Gehweg für Radfahrer frei	RW1; 4596,3738 4603,3704 4603,3658 4585,3575
+	RW1; 4585,3575 4603,3658 4603,3704 4596,3738
+Gehweg für Radfahrer frei	;RW1 4585,3575 4580,3514 4566,3461 4514,3329 4454,3260
 Gehweg für Radfahrer frei	RW1; 4585,3575 4546,3527 4523,3482 4467,3332 4454,3260
 Gehweg für Radfahrer frei	RW1;RW1 4454,3260 4411,3180
 	RW1;RW1 4411,3180 4170,2727
@@ -4858,8 +4861,10 @@ die letzten Meter nur Schutzstreifen	RW4; 18731,8577 18704,8427
 	RW3;RW3 5582,6360 5701,6386 5781,6404 5823,6413
 	RW6;RW6 7518,5753 7659,5735
 #: by: osm
+#: confirmed_by: srt
 	RW6;RW6 7659,5735 7771,5723
 #: by: osm
+#: confirmed_by: srt
 	RW6;RW6 7785,5722 7817,5719
 	RW6;RW6 14357,11148 14400,11261
 #: note: nicht offizielle Spielstraßenschilder hängen hier

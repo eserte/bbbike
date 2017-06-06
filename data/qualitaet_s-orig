@@ -279,10 +279,10 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: XXX wird hier vielleicht auch asphaltiert werden?
 #: XXX Baumaßnahme 2.22 (Realisierung nach 2011)
 #: XXX ggfs. Bauarbeiten bis Mitte September 2016 (laut rbbtext)
-#: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (hier wird auch eine Einbahnstraßenregelung erwähnt, hoffentlich nur für Autos!)
+#: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (hier wird auch eine Einbahnstraßenregelung erwähnt, hoffentlich nur für Autos! -> realisiert)
 #: source_id: INKO_2147340291_COPY_1
 #: source_id: 2147340291
-#: last_checked: 2017-05-23
+#: last_checked: 2017-06-06
 #: check_frequency: 60d
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288
 Mariannenstr: Asphalt	Q0 11616,10288 11671,10402
@@ -422,7 +422,8 @@ Körnerstr.: Kopfsteinpflaster	Q2 5781,6404 5787,6389 5697,6276 5598,6136 5460,59
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060922.1210.47859.html
 Bergstr.: asphaltiert	Q0 5681,5743 5581,5741 5464,5731 5280,5714
 Schützenstr.: Kopfsteinpflaster	Q2 5183,5437 5111,5337 5046,5244 5003,5183 4956,5121 4938,5096 4906,5052 4879,5017 4802,4921
-Gélieustr.: Kopfsteinpflaster	Q2 4802,4921 4742,4885 4725,4876 4568,4789 4515,4760
+Gélieustr.: Asphalt	Q0 4802,4921 4742,4885
+Gélieustr.: Kopfsteinpflaster	Q2 4742,4885 4725,4876 4568,4789 4515,4760
 Appenzeller Str.: Asphalt	Q0 3432,1667 3346,1779
 Appenzeller Str.: Kopfsteinpflaster	Q2 3346,1779 3297,1845
 Thuner Platz: Kopfsteinpflaster	Q2 3297,1845 3251,1881
@@ -785,6 +786,8 @@ Wismarplatz: Kopfsteinpflaster	Q2 14395,11753 14416,11815
 Mainzer Str.: Asphalt	Q0 14306,11889 14354,12012 14427,12197
 Colbestr.: Asphalt	Q0 14416,11815 14468,11992
 Colbestr.: Asphalt, einige Schlaglöcher	Q0- 14468,11992 14523,12183
+#: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser?
+#: XXX Einschränkungen für Radfahrer?
 Kinzigstr.: mäßiger Asphalt	Q1 14589,11975 14471,11782
 Waldeyerstr.: Kopfsteinpflaster	Q2 15058,12329 15003,12241
 #: by: Carsten (kcdr):
@@ -11613,7 +11616,7 @@ Vionvillestr.: Asphalt	Q0 5483,4359 5557,4523
 #: note: "fester Sandweg, Q0" von lepiorz...:
 #: XXX wird dieser Abschnitt vielleicht auch asphaltiert?
 #: osm_watch: way id="115724952" version="6"
-#: last_checked: 2017-03-26
+#: last_checked: 2017-06-06
 #: check_frequency: 180d
 Stadtpark Steglitz: Parkweg	Q1 5787,4400 5836,4469 5841,4557 5890,4674
 #: corrected_by: srt (Parkweg -> Asphalt, wahrscheinlich neu gemacht)
@@ -13914,8 +13917,12 @@ Lützenstr.: Kopfsteinpflaster	Q2 2539,10235 2708,10245
 #: by: Stephan Kiehn: vvv
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Dalandweg: Asphalt	Q0 5541,4305 5385,4236
-#: XXX liegt hier Kopfsteinpflaster oder Asphalt?
-Dalandweg: Kopfsteinpflaster	Q1 5385,4236 5266,4302 5233,4249 5120,4318
+#: corrected_by: srt (Kopfsteinpflaster -> ...)
+Dalandweg: Asphalt	Q0 5385,4236 5356,4249
+#: corrected_by: srt (Kopfsteinpflaster -> Kleinsteinpflaster)
+Dalandweg: Kleinsteinpflaster	Q2+ 5356,4249 5311,4270
+#: corrected_by: srt (Kopfsteinpflaster -> ...)
+Dalandweg: Asphalt, mit einigen Schäden	Q0- 5311,4270 5250,4298 5226,4259 5120,4318
 #: corrected_by: srt (Q1 -> Q2+)
 Klopstockstr.: Kopfsteinpflaster	Q2+ -1710,3676 -1683,3723 -1629,3761 -1509,3740 -1488,3750 -1422,3785 -1394,3798 -1277,3854 -1174,4029 -1096,4267
 #: by: ^^^
@@ -24299,7 +24306,7 @@ Dorstener Str.: guter Asphalt	Q0 3691,566 3596,655
 Draisweg: gutes Verbundsteinpflaster	Q1 5366,1041 5413,1064 5488,943
 Fahrenheitstr. - Celsiusstr.: guter Belag (teils Betonplatten, teils kleinteiliges Pflaster)	Q1 4510,669 4436,621
 #: note: "wahrscheinlich Deckschicht ohne Bindemittel mit viel Split"
-Eduard-Spranger-Promenade: mäßiger Belag, viel Splitt	Q2+ 4317,2638 4659,3065 4862,3363 4951,3516
+Eduard-Spranger-Promenade: mäßiger Belag, viel Splitt	Q2+ 4317,2638 4659,3065 4866,3371 4951,3516
 Frauenstr.: Basaltpflaster	Q2 4963,2318 5060,2490
 Kirchmeisterweg: mäßiges kleinteiliges Kopfsteinpflaster, wellige Straßenoberfläche	Q2 4980,1870 4958,1844 5007,1718 5035,1723
 Schillerstr. (Lichterfelde): gutes Kopfsteinpflaster	Q1 5033,2279 5071,2169 4995,2090
@@ -26411,16 +26418,27 @@ Hanns-Eisler-Str.: einige Löcher im Asphalt	Q0- 13614,15095 13692,15231
 # 
 #: by: Kai Brueggemann [AM] vvv
 #: corrected_by: srt (added "Schotter")
-(Parkweg Bäkepark): wassergebundene Decke, teilweise mit Schotter	Q1- 5337,4192 5320,4217 5246,4240 5129,4262 5090,4291
+(Parkweg Bäkepark): wassergebundene Decke, teilweise mit Schotter	Q1- 5337,4192 5314,4216 5246,4240 5129,4262 5090,4291
+#: confirmed_by: srt
 (Parkweg Bäkepark): wassergebundene Decke	Q1 5090,4291 5015,4339 4957,4448 4870,4609
-(Parkweg Bäkepark): Verbundsteinpflaster	Q1 4870,4609 4848,4668 4795,4801 4760,4843 4742,4885
+#: confirmed_by: srt
+(Parkweg Bäkepark): Verbundsteinpflaster	Q1 4870,4609 4848,4668 4806,4772
+#: corrected_by: srt (Verbundsteinpflaster -> ...)
+(Parkweg Bäkepark): wassergebundene Decke	Q1 4806,4772 4795,4801 4760,4843 4742,4885
 Oberlinstr.: Asphalt	Q1 4742,4885 4732,4939 4846,5069
 (Oberlinstr. - Wolfensteindamm): sandig	Q2 4732,4939 4692,4997
 (Gehweg Gélieustr. - Wolfensteindamm): gepflastert	Q1 4725,4876 4675,4983
-(Parkweg Schloßpark Lichterfelde): wassergebundene Decke	Q1 4601,3704 4664,3712 4699,3707 4725,3685 4754,3651 4830,3607 4874,3617 4910,3599
-Krahmerstr.: Asphalt	Q0 4564,3457 4800,3391
-Krahmerstr.: Asphalt	Q0 4800,3391 4862,3363 5018,3320
-(Krahmerstr. - Stockweg): Asphalt	Q0 4564,3457 4523,3482
+#: confirmed_by: srt
+(Parkweg Schloßpark Lichterfelde): wassergebundene Decke	Q1 4603,3704 4657,3711 4694,3702 4723,3681 4754,3651 4815,3615 4858,3613 4910,3599
+#: confirmed_by: srt
+Krahmerstr.: Asphalt	Q0 4566,3461 4765,3401
+#: corrected_by: srt (Asphalt -> ...)
+Krahmerstr.: Verbundsteinpflaster	Q1+ 4765,3401 4800,3391
+#: confirmed_by: srt
+Krahmerstr.: Asphalt	Q0 4800,3391 4866,3371
+#: corrected_by: srt (Asphalt -> ...)
+Krahmerstr.: Verbundsteinpflaster	Q1+ 4866,3371 5018,3320
+(Krahmerstr. - Stockweg): Asphalt	Q0 4566,3461 4523,3482
 #: by:^^^
 # 
 #: by: Peter Mate [AM] vvv

@@ -19,11 +19,11 @@
 # REMOVED --- #: source_id: IM_021244 vvv --- #: valid: -20140320 vvv --- #: last_checked: 2014-04-04 vvv --- #: next_check: 2014-04-07 vvv --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13173,11788 13295,11792 13366,11651 --- # REMOVED (mittlerweile recht gut passierbar) --- Rüdersdorfer Str./Marchleweskistr.: Baustelle, Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13275,11830 13295,11792 --- # REMOVED (Baustelle fast verschwunden) --- Torellstr./Marchleweskistr.: Baustelle, Zufahrt zur Kreuzung gesperrt, langsame Umfahrung über Gehweg möglich, bis zum 30.04.2014	q3::inwork 13295,11792 13467,11778 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: valid: ^^^ --- #: source_id ^^^
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # 
-#: last_checked: 2017-06-04
+#: last_checked: 2017-06-06
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2017-06-04
+#: last_checked: 2017-06-06
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt, Bordsteine	q3 14254,11377 14211,11229
 # 
 #: last_checked: 2017-05-28
@@ -283,7 +283,7 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # 
 #: source_id: 2147341140
 #: XXX laut fritz bis 08.06.2017, laut rbbtext bis 06.06.2017, laut vmz bis Anfang Juni 2017
-#: last_checked: 2017-05-18
+#: last_checked: 2017-06-06
 #: next_check: 2017-06-08
 #: valid: -20170608
 Erkelenzdamm: Bauarbeiten zwischen Böcklerstr. und Kohlfurter Str., Fahrbahn gesperrt, Bordsteine	q3::inwork 10967,10092 11038,10247 11094,10261
@@ -399,7 +399,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süde
 # 
 ### Schöneberg ###
 # 
-#: last_checked: 2017-06-04
+#: last_checked: 2017-06-06
 #: check_frequency: 14d
 Bautzener Str.: Bauarbeiten an der Großgörschenstr., auf Gehweg ausweichen	q4::inwork 8186,9380 8185,9338
 # 
@@ -2532,6 +2532,7 @@ An der Neumark: laut Schild "Schrittgeschwindigkeit"	q2 11283,3774 11300,3709 11
 #: last_checked: 2017-06-03
 #: check_frequency: 60d
 (Gehweg an der zukünftigen Minna-Todenhagen-Str.): einige Fußgänger	q2 17681,7589 17470,7473 17295,7358
+Dalandweg: schmale und kurvenreiche Straße	q1 5120,4318 5226,4259 5250,4298 5311,4270 5356,4249 5385,4236 5541,4305
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -3166,13 +3167,14 @@ Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 786
 #: by: anonymous [AM]
 Lotte-Lenya-Bogen: Fußgängerzone, schieben	q4 5230,10919 5264,10921 5348,10960 5373,10981
 #: by: Kai Brueggemann [AM] vvv
-(Parkweg Bäkepark): Fußgänger	q1 5337,4192 5320,4217 5246,4240 5129,4262 5090,4291 5015,4339 4957,4448 4870,4609 4848,4668 4795,4801 4760,4843 4742,4885
+(Parkweg Bäkepark): Fußgänger	q1 5337,4192 5314,4216 5246,4240 5129,4262 5090,4291 5015,4339 4957,4448 4870,4609 4848,4668 4806,4772 4795,4801 4760,4843 4742,4885
 (Parkweg Bäkepark): Fußgänger	q1 5225,4095 5184,4161 5131,4207 5097,4221 5063,4266
 (Parkweg Bäkepark): Fußgänger	q1 5282,4145 5131,4207
-(Parkweg Schloßpark Lichterfelde): Fußgänger, Kinder	q2 4601,3704 4664,3712 4699,3707 4725,3685 4754,3651 4830,3607 4874,3617 4910,3599
+#: corrected_by: srt (q2 -> q1, "Kinder" entfernt)
+(Parkweg Schloßpark Lichterfelde): Fußgänger	q1 4603,3704 4657,3711 4694,3702 4723,3681 4754,3651 4815,3615 4858,3613 4910,3599
 (Oberlinstr. - Wolfensteindamm): Fußgänger	q1 4732,4939 4692,4997
 (Gehweg Gélieustr. - Wolfensteindamm): Fußgänger	q1 4725,4876 4675,4983
-(Krahmerstr. - Stockweg): Queren des Hindenburgdamms unübersichtlich, starker Autoverkehr	q4 4564,3457 4523,3482
+(Krahmerstr. - Stockweg): Queren des Hindenburgdamms unübersichtlich, starker Autoverkehr	q4 4566,3461 4523,3482
 #: by: ^^^
 (Amalienstr. - Uferweg): Fußgänger	q2 14124,16544 14183,16547
 (Große Seestr. - Uferweg): Fußgänger	q2 14184,16889 14189,16793 14232,16716
@@ -4192,7 +4194,7 @@ Frommpromenade: enge Straße	q0- 5463,20461 5350,20495 5257,20551
 Brodersenstr.: enge Straße	q0- 6033,19611 5885,19920 5804,20047
 # 
 #: by: Kay Leonhardt:
-Eduard-Spranger-Promenade: Verbot für Radfahrer	q4 4317,2638 4659,3065 4862,3363 4951,3516
+Eduard-Spranger-Promenade: Verbot für Radfahrer	q4 4317,2638 4659,3065 4866,3371 4951,3516
 # 
 #: by: Karsten Denkler vvv
 #: corrected_by: srt (q1 -> q0-)

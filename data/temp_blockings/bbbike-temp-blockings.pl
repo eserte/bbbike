@@ -22782,12 +22782,13 @@ userdel	q3::inwork; 15098,12849 15233,12829 15357,12813
 EOF
      },
      { from  => $isodate2epoch->("2017-06-05 08:00:00"), # 1394604000, # 2014-03-12 07:00
-       until => undef, # 1395421200, # 2014-03-21 18:00
-       text  => 'Scharnweberstr.: Baustelle, Fahrbahn zwischen Jessnerstr. und Gürtelstr. gesperrt, ab 06.06.2017',
+       until => $isodate2epoch->("2017-06-25 12:00:00"), # undef, # 1395421200, # 2014-03-21 18:00
+       text  => 'Scharnweberstr.: Baustelle, Fahrbahn zwischen Jessnerstr. und Gürtelstr. gesperrt, ab 06.06.2017 bis 25.06.2017',
        type  => 'handicap',
-       source_id => 'IM_021449',
+       source_id => '2147341388',
        data  => <<EOF,
 #: by: fritz
+#: note: laut vmz "Gesamtbaumaßnahme" bis Mitte Juli 2017
 userdel	q4::inwork; 15080,11905 15121,11899 15248,11880
 EOF
      },
@@ -25707,25 +25708,21 @@ userdel	2::inwork 3741,12607 3654,12672
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1496778229, # undef, # XXX
        text  => 'Unterführung Krahmersteg: gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: add_fragezeichen: wann wird die Unterführung wieder geöffnet?
-#: last_checked: 2017-03-26
-#: check_frequency: 60d
+# REMOVED --- #: add_fragezeichen: wann wird die Unterführung wieder geöffnet? --- #: last_checked: 2017-03-26 --- #: check_frequency: 60d
 userdel	2::inwork 4778,3352 4815,3382 4822,3431
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1496778250, # undef, # XXX
        text  => 'Krahmerstr.: Bauarbeiten, einige Engstellen',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: wann sind die Bauarbeiten beendet?
-#: last_checked: 2017-05-06
-#: check_frequency: 60d
-userdel	q3::inwork 4564,3457 4800,3391 4862,3363 5018,3320
+# REMOVED --- #: add_fragezeichen: wann sind die Bauarbeiten beendet? --- #: last_checked: 2017-05-06 --- #: check_frequency: 60d
+userdel	q3::inwork 4566,3461 4765,3401 4800,3391 4866,3371 5018,3320
 EOF
      },
      { from  => 1475964000, # 2016-10-09 00:00
@@ -26015,7 +26012,7 @@ EOF
        text  => 'Akazienstr.: Bauarbeiten, Einbahnstraßenregelung',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2017-05-19
+#: last_checked: 2017-06-06
 #: check_frequency: 14d
 userdel	q4::inwork; 7201,8870 7107,9030
 EOF

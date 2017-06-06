@@ -317,7 +317,8 @@ Rembrandtstr.: Kopfsteinpflaster	Q2 6051,6758 6122,6854 6143,6863
 Körnerstr.: Kopfsteinpflaster	Q2 5781,6404 5787,6389 5697,6276 5598,6136 5460,5966 5464,5731 5466,5622 5466,5523
 Bergstr.: asphaltiert	Q0 5681,5743 5581,5741 5464,5731 5280,5714
 Schützenstr.: Kopfsteinpflaster	Q2 5183,5437 5111,5337 5046,5244 5003,5183 4956,5121 4938,5096 4906,5052 4879,5017 4802,4921
-Gélieustr.: Kopfsteinpflaster	Q2 4802,4921 4742,4885 4725,4876 4568,4789 4515,4760
+Gélieustr.: Asphalt	Q0 4802,4921 4742,4885
+Gélieustr.: Kopfsteinpflaster	Q2 4742,4885 4725,4876 4568,4789 4515,4760
 Appenzeller Str.: Asphalt	Q0 3432,1667 3346,1779
 Appenzeller Str.: Kopfsteinpflaster	Q2 3346,1779 3297,1845
 Thuner Platz: Kopfsteinpflaster	Q2 3297,1845 3251,1881
@@ -11048,7 +11049,9 @@ Beymestr.: mäßiges Kopfsteinpflaster	Q2 5497,4994 5797,4846
 Lützenstr.: Kopfsteinpflaster	Q2 2539,10235 2708,10245
 (Waidmannsluster Damm - Karolinenstr.): Waldweg	Q2 1942,21564 1928,21595 1859,21541 1843,21440 1810,21363 1613,21173
 Dalandweg: Asphalt	Q0 5541,4305 5385,4236
-Dalandweg: Kopfsteinpflaster	Q1 5385,4236 5266,4302 5233,4249 5120,4318
+Dalandweg: Asphalt	Q0 5385,4236 5356,4249
+Dalandweg: Kleinsteinpflaster	Q2 5356,4249 5311,4270
+Dalandweg: Asphalt, mit einigen Schäden	Q0 5311,4270 5250,4298 5226,4259 5120,4318
 Klopstockstr.: Kopfsteinpflaster	Q2 -1710,3676 -1683,3723 -1629,3761 -1509,3740 -1488,3750 -1422,3785 -1394,3798 -1277,3854 -1174,4029 -1096,4267
 Lüdenscheider Weg: Beton	Q1 -1037,15482 -1389,15285
 Zinsgutstr.: Asphalt	Q0 20692,3951 20857,3817 21049,3657 21119,3572 21153,3484
@@ -14642,7 +14645,7 @@ Brauerplatz: guter Asphalt	Q0 4979,1964 5004,1939 4964,1890
 Dorstener Str.: guter Asphalt	Q0 3691,566 3596,655
 Draisweg: gutes Verbundsteinpflaster	Q1 5366,1041 5413,1064 5488,943
 Fahrenheitstr. - Celsiusstr.: guter Belag (teils Betonplatten, teils kleinteiliges Pflaster)	Q1 4510,669 4436,621
-Eduard-Spranger-Promenade: mäßiger Belag, viel Splitt	Q2 4317,2638 4659,3065 4862,3363 4951,3516
+Eduard-Spranger-Promenade: mäßiger Belag, viel Splitt	Q2 4317,2638 4659,3065 4866,3371 4951,3516
 Frauenstr.: Basaltpflaster	Q2 4963,2318 5060,2490
 Kirchmeisterweg: mäßiges kleinteiliges Kopfsteinpflaster, wellige Straßenoberfläche	Q2 4980,1870 4958,1844 5007,1718 5035,1723
 Schillerstr. (Lichterfelde): gutes Kopfsteinpflaster	Q1 5033,2279 5071,2169 4995,2090
@@ -15947,16 +15950,19 @@ Hanns-Eisler-Str.: Asphalt	Q0 13550,14973 13596,14934 13633,14904
 Hanns-Eisler-Str.: Asphalt	Q0 13550,14973 13453,14997
 Hanns-Eisler-Str.: Asphalt	Q0 13151,15462 13186,15518
 Hanns-Eisler-Str.: einige Löcher im Asphalt	Q0 13614,15095 13692,15231
-(Parkweg Bäkepark): wassergebundene Decke, teilweise mit Schotter	Q1 5337,4192 5320,4217 5246,4240 5129,4262 5090,4291
+(Parkweg Bäkepark): wassergebundene Decke, teilweise mit Schotter	Q1 5337,4192 5314,4216 5246,4240 5129,4262 5090,4291
 (Parkweg Bäkepark): wassergebundene Decke	Q1 5090,4291 5015,4339 4957,4448 4870,4609
-(Parkweg Bäkepark): Verbundsteinpflaster	Q1 4870,4609 4848,4668 4795,4801 4760,4843 4742,4885
+(Parkweg Bäkepark): Verbundsteinpflaster	Q1 4870,4609 4848,4668 4806,4772
+(Parkweg Bäkepark): wassergebundene Decke	Q1 4806,4772 4795,4801 4760,4843 4742,4885
 Oberlinstr.: Asphalt	Q1 4742,4885 4732,4939 4846,5069
 (Oberlinstr. - Wolfensteindamm): sandig	Q2 4732,4939 4692,4997
 (Gehweg Gélieustr. - Wolfensteindamm): gepflastert	Q1 4725,4876 4675,4983
-(Parkweg Schloßpark Lichterfelde): wassergebundene Decke	Q1 4601,3704 4664,3712 4699,3707 4725,3685 4754,3651 4830,3607 4874,3617 4910,3599
-Krahmerstr.: Asphalt	Q0 4564,3457 4800,3391
-Krahmerstr.: Asphalt	Q0 4800,3391 4862,3363 5018,3320
-(Krahmerstr. - Stockweg): Asphalt	Q0 4564,3457 4523,3482
+(Parkweg Schloßpark Lichterfelde): wassergebundene Decke	Q1 4603,3704 4657,3711 4694,3702 4723,3681 4754,3651 4815,3615 4858,3613 4910,3599
+Krahmerstr.: Asphalt	Q0 4566,3461 4765,3401
+Krahmerstr.: Verbundsteinpflaster	Q1 4765,3401 4800,3391
+Krahmerstr.: Asphalt	Q0 4800,3391 4866,3371
+Krahmerstr.: Verbundsteinpflaster	Q1 4866,3371 5018,3320
+(Krahmerstr. - Stockweg): Asphalt	Q0 4566,3461 4523,3482
 Zellinger Weg: Asphalt	Q1 11579,17692 11596,17610 11600,17565
 Sonneberger Weg: Beton	Q0 5467,1409 5462,1450 5494,1546 5543,1706 5570,1712 5592,1720 5656,1882
 Jagowstr. (Hermsdorf): Asphalt	Q0 3077,22234 3046,22292 3043,22407 3050,22554 3056,22693
