@@ -113,7 +113,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: source_id: 2147340884
 #: source_id: 2147340970
 #: source_id: LMS-BR_r_LMS-BR_90638
-#: last_checked: 2017-06-06 vvv
+#: last_checked: 2017-06-07 vvv
 #: check_frequency: 21d vvv
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected; 9865,10227 9948,10280 9873,10285
@@ -1142,7 +1142,7 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf
 #: XXX Ausbau des Kopfsteinpflasters, Bau einer Asphaltfahrbahn
 #: osm_watch: way id="75509950" version="11"
-#: last_checked: 2017-05-23
+#: last_checked: 2017-06-07
 #: next_check: 2018-03-01
 Friedelstr.: Asphaltierung	?::projected 12085,9778 12074,9689 12066,9558 12047,9429 12074,9217
 #: by: ^^^
@@ -1152,7 +1152,7 @@ Friedelstr.: Asphaltierung	?::projected 12085,9778 12074,9689 12066,9558 12047,9
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="13"
-#: last_checked: 2017-05-24
+#: last_checked: 2017-06-07
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -1730,9 +1730,6 @@ B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-#: XXX laut fritz bis 20.07.2017, Einbahnstraße
-Böckhstr.: Einschränkungen für Radfahrer durch die Bauarbeiten? Ändert sich hier etwas?	? 11673,9720 11640,9710
-# 
 #: by: https://www.facebook.com/baustellen.berlin/posts/288876511560783
 #: next_check: 2017-08-15
 Potsdamer Chaussee: Sanierung der Radwege	?::projected -6660,9953 -5928,10782 -5870,10847 -5716,11054 -5650,11143 -5564,11209 -5509,11256 -5462,11326 -5399,11426
@@ -1741,14 +1738,12 @@ Potsdamer Chaussee: Sanierung der Radwege	?::projected -6660,9953 -5928,10782 -5
 #: last_checked: 2017-06-04
 Am Bülowbogen: Benennung; gibt es hier Straßenschilder?	? 7906,10098 7928,10094 8011,10085
 # 
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.596879.php
-#: XXX bis 16. Juni 2017; gibt es vielleicht auch Änderungen in der Brachvogelstr., z.B. eine Einbahnstraßenregelung?
-#: next_check: 2017-06-06
-Blücherstr./Zossener Str.: Bauarbeiten - gibt es Einschränkungen auch für Radfahrer?	?::projected 10069,10151 10066,10071 10029,9989 10006,9942
+# REMOVED (Stau in der Brachvogel/Alexandrinenstr., Bauampel Blücherstr./Brachvogel, aber Aufnahme lohnt nicht) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.596879.php --- #: XXX bis 16. Juni 2017; gibt es vielleicht auch Änderungen in der Brachvogelstr., z.B. eine Einbahnstraßenregelung? --- #: XXX Einbahnstraße in der Johanniterstr., aber warum? --- #: next_check: 2017-06-06  --- Blücherstr./Zossener Str.: Bauarbeiten - gibt es Einschränkungen auch für Radfahrer?	?::projected 10069,10151 10066,10071 10029,9989 10006,9942
 # REMOVED --- Blücherstr./Zossener Str.: Bauarbeiten - gibt es Einschränkungen auch für Radfahrer?	?::projected 10006,9942 9922,10010 9827,10051
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.596879.php
 #: XXX laut fritz Vollsperrung nicht hier, sondern zwischen Mehringdamm und Zossener Str.
+#: last_checked: 2017-06-07
 #: next_check: 2017-08-31
 Blücherstr.: Sanierung des Radwegs	?::projected; 10006,9942 9922,10010 9827,10051
 # 
@@ -1967,7 +1962,7 @@ Liebigstr.: Einrichtung einer Spielstraße, wo genau?	? 14229,12311 14166,12323 1
 #: XXX NEW	Eldenaer Str. (Friedrichshain) In beiden Richtungen Kreuzung Proskauer Str. (Berlin)  Gültig ab: 24.11.2016 06:15  Baustelle, Vollsperrung (bis vsl. Ende 11/16)	2147340785
 #: XXX -> ist die Vollsperrung für Radfahrer relevant? -> am Abend schon wieder aufgehoben?
 #: XXX Anfang der Radspur existiert schon
-#: last_checked: 2017-06-02 vvv
+#: last_checked: 2017-06-07 vvv
 #: check_frequency: 4d vvv
 Eldenaer Str.: in Richtung Osten noch keine Radspuren markiert	?::projected; 14096,12827 14355,12752
 # REMOVED (realisiert) --- Eldenaer Str.: in Richtung Osten noch keine Radspuren markiert	?::projected; 13844,12900 13960,12866 13979,12861 14066,12836
@@ -2005,7 +2000,7 @@ Spektegrünzug: parallel zum Spekteweg existiert ein Rad/Gehweg	? -4671,14818 -47
 # 
 #: next_check_id: HEIDESTR-2016 vvv
 #: XXX Ampeln in der Heidestr. vvv
-#: last_checked: 2017-04-07 vvv
+#: last_checked: 2017-05-29 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: node id="4308915647" version="1"
 Anforderungsampel, X	?::inwork 7820,13994
