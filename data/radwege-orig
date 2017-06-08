@@ -22,6 +22,7 @@
 # * Busspur gilt [Tage] [Uhrzeit] Uhr
 # * Busspur gilt [Uhrzeit] Uhr (falls jeden Tag gültig)
 # * "für Radfahrer freigegebene Busspur": die lange Version nur, wenn parallel auch ein Radweg existiert
+# * vorhandener Radweg ist abgesperrt
 # * "Radspur" statt "Radstreifen"
 # * möglichst Singular verwenden (auch wenn beide Richtungen zutreffen)
 # * möglichst auf "ist" oder andere Verben verzichten (ist aber nicht immer möglich, siehe oben)
@@ -799,8 +800,7 @@ der frühere Radweg auf dem Gehweg (kleinteiliges Pflaster) ist nun aufgehoben	RW
 	RW1;RW2 6239,15553 6127,15688
 	RW2; 6562,15177 6626,15104
 	RW1;RW1 6127,15688 6121,15697 6071,15768 6019,15841 5968,15914 5907,16000 5827,16118 5748,16235 5596,16662 5581,16708 5561,16767 5526,16916 5479,17108 5473,17148 5490,17173
-neu asphaltiert	RW2; 6781,16026 6661,15921 6555,15827 6422,15708 6239,15553
-Gehwegpflasterung	RW2; 6239,15553 6422,15708
+neu asphaltiert	RW2; 6781,16026 6661,15921 6555,15827 6422,15708 6239,15553 6422,15708
 #: note: wobei der Asphalt nicht besonders gut ist, etwas wellig schon nach der Fertigstellung
 neu asphaltiert	RW2; 6422,15708 6555,15827 6661,15921 6781,16026
 	RW2;RW2 6239,15553 5753,15096 5700,15043 5618,14981 5598,14965 5517,14901 5440,14840
@@ -842,11 +842,12 @@ Verbundsteinpflasterradweg	RW1; 7757,834 7867,831
 #: XXX während der Bauarbeiten
 #: XXX wieder herstellen: Radweg auf der Fahrbahn hinter den parkenden Autos	RW1; 6228,13324 6229,13517 6230,13596
 #: by: http://www.dafmap.de/d/berlin.html?id=3875&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-11-30)
-#: last_checked: 2017-03-25
+#: last_checked: 2017-06-08
 #: next_check: 2017-09-01
 provisorische Radspur	RW3; 6228,13324 6229,13517 6230,13596
 #: XXX wegen Bauarbeiten aufgehoben
-#: last_checked: 2017-03-25
+#: last_checked: 2017-06-08
+#: next_check: 2017-09-01
 #	RW3; 6377,13321 6228,13324
 	RW0; 6377,13321 6228,13324
 Radweg auf der Fahrbahn hinter den parkenden Autos	RW1; 6230,13596 6227,13938
@@ -873,7 +874,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736 20755,5750
 #: XXX laut fritz "geänderte Straßenführung" bis 31.12.2016, laut vmz bis Mitte Juni 2017
 #: source_id: IM_023718
 #: source_id: 2147339540
-#: last_checked: 2017-06-03 vvv
+#: last_checked: 2017-06-08 vvv
 # REMOVED, siehe unten ---	RW1; 14174,7505 14334,7395 14369,7376
 # REMOVED --- RW2; 14519,7301 --- #: note: vermutlich: --- RW2; 14519,7301
 	RW8;RW2 14519,7301 14369,7376 14334,7395 14174,7505
@@ -1014,7 +1015,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5459,11135 5258,11285
 #: XXX früher: Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5
 #: XXX bis Ende 2016, laut rbbtext bis 16.12.2016, laut VMZ nun bis Ende 2017
 #: source_id: 2147339533
-#: last_checked: 2017-05-06
+#: last_checked: 2017-06-08
 #: check_frequency: 14d
 	RW0;RW0 5258,11285 5166,11343 5091,11406
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5091,11406 5085,11413 4922,11600
@@ -1117,7 +1118,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW10; 18225,7004 18010,71
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
-#: last_checked: 2017-06-03
+#: last_checked: 2017-06-08
 #: check_frequency: 90d
 	RW8;RW2 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
@@ -1126,8 +1127,9 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW10; 18225,7004 18010,71
 	RW1;RW3 7966,15571 7962,15633
 	RW3;RW3 7962,15633 7948,15802 7885,16005 7856,16083
 	RW4;RW3 7856,16083 7824,16170
-	RW3;RW3 7824,16170 7800,16233 7754,16364 7713,16557
-	RW3;RW0 7681,16769 7713,16557
+	RW3;RW3 7824,16170 7800,16233 7754,16364 7713,16557 7681,16769
+	RW3; 7681,16769 7666,16879
+asphaltiert	RW1; 7666,16879 7681,16769
 	RW1;RW1 10816,22654 10827,22647
 	RW1;RW2 10827,22647 10876,22613
 	RW1;RW1 10876,22613 11025,22504 11108,22445 11271,22328
@@ -1337,8 +1339,8 @@ Gehwegplatten/Verbundsteinpflaster, hereinragende parkende Autos	RW1; 5220,14043
 	RW4;RW3 6047,14188 6074,14194
 #: note: ehemaliger Radweg ist explizit abgesperrt
 	RW3;RW3 6074,14194 6089,14197 6204,14220 6267,14232 6481,14277 6656,14311 6920,14365 7080,14398
-Radweg nur aufgemalt	RW1; 8197,16809 8127,16894 8079,16953
-	RW1; 8079,16953 8127,16894 8197,16809
+Radweg nur aufgemalt	RW0; 8197,16809 8127,16894 8079,16953
+vorhandener Radweg ist abgesperrt	RW0; 8079,16953 8127,16894 8197,16809
 	RW2;RW2 8197,16809 8249,16741
 	RW1;RW1 8079,16953 7970,17087 7902,17166 7675,17430
 	RW2;RW1 7675,17430 7602,17399
@@ -4614,7 +4616,7 @@ Tempo 10	RW6;RW6 13559,12779 13470,12990
 #: by: http://www.tagesspiegel.de/berlin/stadtentwicklung-zwillingsturm-soll-2016-in-der-city-west-eroeffnen/7416454.html (geplante Eröffnung Mitte 2016)
 #: source_id: LMS-BR_r_LMS-BR_121
 #: XXX laut fritz bis zum 26. April 2017, laut vmz mittlerweile entfernt
-#: last_checked: 2017-05-27
+#: last_checked: 2017-06-08
 #: next_check: 2017-06-16
 #	RW3; 5488,10978 5613,10963 5652,11004
 ##: note: teilweise vor dem Hotel unterbrochen (wegen Ladezone?)

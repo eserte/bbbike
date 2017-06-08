@@ -86,7 +86,7 @@ Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11
 # 
 #: next_check_id: ZIEGELSTR-2016
 #: XXX Ende der Bauarbeiten?
-#: osm_watch: way id="4610375" version="15"
+#: osm_watch: way id="4610375" version="16"
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
 #: last_checked: 2017-06-02
 #: check_frequency: 14d
@@ -288,15 +288,15 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # 
 #: XXX laut fritz bis 20.07.2017, Einbahnstraße --- effektiv ist aber die gesamte Fahrbahn gesperrt
 #: XXX ändert sich an der Fahrbahnbeschaffenheit etwas?
-#: last_checked: 2017-06-07
+#: last_checked: 2017-06-08
 #: next_check: 2017-07-20
 Böckhstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 11640,9710 11411,9810
 # 
 #: source_id: 2147341140
-#: XXX laut fritz bis 08.06.2017, laut rbbtext bis 06.06.2017, laut vmz bis Anfang Juni 2017
+#: XXX laut fritz bis 15.09.2017, laut vmz bis September 2017
 #: last_checked: 2017-06-06
-#: next_check: 2017-06-08
-#: valid: -20170608
+#: next_check: 2017-09-15
+#: valid: -20170915
 Erkelenzdamm: Bauarbeiten zwischen Böcklerstr. und Kohlfurter Str., Fahrbahn gesperrt, Bordsteine	q3::inwork 10967,10092 11038,10247 11094,10261
 # 
 #: source_id: 2147341145
@@ -432,7 +432,7 @@ Bautzener Str.: Bauarbeiten an der Großgörschenstr., auf Gehweg ausweichen	q4::i
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml vvv
 #: source_id: IM_025877 vvv
 #: source_id: 2147339245 vvv
-#: last_checked: 2016-09-13 vvv
+#: last_checked: 2017-06-08 vvv
 #: next_check: 2017-08-01 vvv
 Jülicher Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
 Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
@@ -441,6 +441,10 @@ Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inw
 #: source_id ^^^
 #: source_id ^^^
 #: by ^^^
+# 
+#: XXX nach den Bauarbeiten eventuell asphaltiert
+#: last_checked: 2017-06-08
+Fürstenberger Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 10320,14608 10472,14632
 # 
 ### Pankow ###
 # 
@@ -2725,7 +2729,7 @@ Wentowsteig: enge Straße mit parkenden Autos	q0- 6904,20692 6930,20808 6943,2086
 #: by: ^^^
 # 
 #: by: Peter Held:
-(Spreeuferweg): Fußgänger	q1 4527,12543 4471,12557 4334,12551
+(Spreeuferweg): Fußgänger	q1 4478,12537 4446,12556 4321,12566
 #: by: Johannes Nerger: vvv
 #: corrected_by: srt (verlegt, neu gemacht)
 (Schönholzer Heide, parallel zur Friesenstr.): einige Fußgänger, Kurven	q1 8834,19253 8830,19239
@@ -2858,6 +2862,7 @@ Kamminer Str.: unübersichtliche Kreuzungen, parkende PKWs	q1 3240,12966 3283,131
 (Kolonieweg a. d. Forkenbeckstr.): Fußgänger, teilweise eng	q3 3218,8233 3230,8194 3635,8099 3709,8082 3753,8073 3779,8105
 Claire-Waldoff-Weg: Fußgänger	q2 3635,8099 3587,7560
 Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
+#: XXX ist hier tatsächlich eine Rampe oder nur eine Treppe?
 (Volkspark Friedrichshain, parallel zur Friedenstr.): Fußgänger, kurze Rampe	q3 12382,13097 12380,13120
 (Volkspark Friedrichshain, parallel zur Friedenstr.): Fußgänger	q1 12380,13120 12344,13157 12244,13240 12185,13298 12141,13341 12060,13422 12005,13481 11957,13528 11857,13596 11823,13610 11785,13625
 (Weydemeyerstr.): Fußgänger	q1 11890,12750 11818,12785

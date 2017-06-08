@@ -4092,8 +4092,8 @@ userdel	q4::inwork 12911,1815 12817,2031
        {
          'data' => '#: XXX Wann sind die Bauarbeiten beendet? Wird die Qualität danach besser sein? vvv
 #: osm_watch: way id="136814135" version="15" vvv
-#: last_checked: 2017-03-25 vvv
-#: check_frequency: 60d vvv
+#: last_checked: 2017-06-08 vvv
+#: check_frequency: 30d vvv
 userdel	2::inwork 3332,12742 3396,12741 3358,12718
 userdel	2::inwork 3396,12741 3476,12735 3582,12704 3654,12672 3763,12624 3837,12618
 userdel	2::inwork 3741,12607 3654,12672

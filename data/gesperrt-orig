@@ -2078,7 +2078,7 @@ tragen (41 Stufen)	0:45 9983,16561
 tragen (Treppe)	0:45 9982,16527
 tragen (Treppe, 6+7 Stufen)	0:30 3762,12599
 tragen (Treppe, 3 Stufen)	0:10 3810,12600
-tragen (Treppe)	0:30 4334,12551
+tragen (Treppe, 18 Stufen)	0:30 4321,12566
 #: note: http://www.flickr.com/photos/berolino/524778263/
 tragen (Jungfernbrücke, 10 Stufen)	0:15 10212,12002
 #: note: http://www.panoramio.com/photo/8007884
@@ -2767,7 +2767,7 @@ Schranke	BNP:3::trailer=10 17215,12485
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: last_checked: 2017-06-07
+#: last_checked: 2017-06-08
 Gitschiner Str./Lobeckstr.: Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3nocross 10122,10294 10363,10303 10605,10312
 # 
 #: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus?
@@ -2822,8 +2822,8 @@ Zillestr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen	1s:q3 3807
 #: next_check_id: VERLAENGERTEHERTZ-2017
 #: XXX zumindest an der Fasanenstr.
 #: XXX laut Schild gehen die Bauarbeiten bis Dezember 2017
-#: last_checked: 2017-04-08
-#: next_check: 2017-07-01
+#: last_checked: 2017-06-08
+#: next_check: 2017-12-01
 (Verlängerte Hertzallee): Bauarbeiten, komplett gesperrt	2::inwork 5352,11502 5296,11529 4950,11696 4905,11785
 # 
 # REMOVED (man kommt hinter dem Georg-Denkmal vorbei) --- Spreeufer Nikolaiviertel: Gehweg gesperrt	2::inwork 10417,12378 10492,12289 10583,12206
@@ -3188,7 +3188,7 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: XXX Sanierungstermin steht noch nicht fest
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7641
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/artikel.563115.php
-#: last_checked: 2017-03-25
+#: last_checked: 2017-06-08
 #: check_frequency: 360d
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 # 
