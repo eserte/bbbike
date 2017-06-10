@@ -58,17 +58,18 @@ init_apt() {
 # - imagemagick:            typ2legend test
 # - libpango1.0-dev:        prerequisite for Pango
 # - libxml2-utils:          xmllint
+# - libzbar-dev:            prerequisite for Barcode::ZBar
 install_non_perl_dependencies() {
-    sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep tre-agrep libgd2-xpm-dev ttf-bitstream-vera ttf-dejavu gpsbabel xvfb fvwm rhino imagemagick libpango1.0-dev libxml2-utils
+    sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep tre-agrep libgd2-xpm-dev ttf-bitstream-vera ttf-dejavu gpsbabel xvfb fvwm rhino imagemagick libpango1.0-dev libxml2-utils libzbar-dev
 }
 
 # Some CPAN modules not mentioned in Makefile.PL, usually for testing only
 install_perl_testonly_dependencies() {
     if [ "$USE_SYSTEM_PERL" = "1" ]
     then
-	sudo apt-get install -qq libemail-mime-perl libhtml-treebuilder-xpath-perl
+	sudo apt-get install -qq libemail-mime-perl libhtml-treebuilder-xpath-perl libbarcode-zbar-perl
     else
-	cpanm --quiet --notest Email::MIME HTML::TreeBuilder::XPath
+	cpanm --quiet --notest Email::MIME HTML::TreeBuilder::XPath Barcode::ZBar
     fi
 }
 
