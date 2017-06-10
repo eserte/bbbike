@@ -1966,7 +1966,7 @@ Eiselenweg - Uferweg: etwas sandig	Q2 21447,5414 21487,5425
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3240
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036544636457/544636457/00064312/12-Anlagen/10/B1072ZB7.pdf
 #: XXX "Die Herstellung des Uferweges ist zum 31.12.2016 in Planung."
-#: last_checked: 2017-05-28
+#: last_checked: 2017-06-09
 #: check_frequency: 90d
 (Uferweg, Mentzelpark): Schotterweg	Q1- 21487,5425 21512,5404 21600,5221 21696,5053
 (Uferweg, Mentzelpark): Asphalt	Q0 21696,5053 21740,5004 21761,4979
@@ -2080,10 +2080,10 @@ Neltestr.: schlechtes Kopfsteinpflaster	Q3 19472,3922 19596,4035 19715,4178
 Neltestr.: Beton	Q1 19715,4178 19753,4241
 #: note: Schilder "Achtung, Straßenschäden" existieren, aber die Schäden sind nur punktuell
 Ostritzer Str.: Asphalt	Q0 20774,5131 20689,4862
-Ostritzer Str.: Beton	Q0 20774,5131 20782,5206 20781,5242
+Ostritzer Str.: Beton	Q0 20774,5131 20782,5206 20782,5257
 Bernstadter Weg: Beton	Q0 20774,5131 20852,5106
-Bruno-Bürgel-Weg: Beton	Q0 20781,5242 20437,5463
-Bruno-Bürgel-Weg: Asphalt	Q0 20437,5463 20348,5509 20065,5534 19814,5512 19696,5456 19588,5385 19386,5335 19328,5304
+Bruno-Bürgel-Weg: Beton	Q0 20782,5257 20740,5273 20435,5460
+Bruno-Bürgel-Weg: Asphalt	Q0 20435,5460 20348,5509 20065,5534 19814,5512 19696,5456 19588,5385 19386,5335 19328,5304
 #: by: Marko (hilse)
 #: corrected_by: srt (teilweise)
 Wattstr. (Oberschöneweide): sehr schlechtes Kopfsteinpflaster	Q3 17620,7259 17644,7219 17632,6930
@@ -10362,6 +10362,9 @@ Teutonenstr. (Altglienicke): schlechtes Kopfsteinpflaster	Q3 20186,1522 20256,15
 (Am Biesdorfer Baggersee): Asphalt	Q0 20346,11337 20334,11321 20335,11258 20362,11166 20354,11025 20354,10963 20393,10889 20399,10867 20390,10850 20191,10768 20161,10765 20126,10802 20116,10837 20121,10869 20161,11033 20188,11133 20201,11216 20227,11290 20331,11326 20346,11337
 (Schwarzer Weg - Wattstr.): Asphalt	Q0 17295,7328 17477,7450 17568,7481
 (Schwarzer Weg - Wattstr.): unbefestigte Straße	Q2 17568,7481 17670,7512
+(Spreeuferweg): Verbundsteinpflaster	Q1+ 21090,5417 21085,5451 20827,5431
+(KGA Am Freibad Oberspree): unbefestigter Weg	Q2 20827,5431 20829,5418 20849,5266 20851,5255
+(KGA Am Freibad Oberspree - Bruno-Bürgel-Weg): Beton	Q0 20851,5255 20782,5257
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
