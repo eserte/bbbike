@@ -16,6 +16,7 @@ BEGIN {
     }
 }
 
+use strict;
 use FindBin;
 use lib ($FindBin::RealBin, "$FindBin::RealBin/..");
 
@@ -38,6 +39,7 @@ $ua->env_proxy;
     is $resp->content_type, 'image/png';
     my $data = $resp->decoded_content;
     image_ok(\$data);
+    is_barcode($resp, type => "QR-Code", like_data => qr{^https?://.*\Q/bbbike.cgi?info=1\E$});
 }
 
 {
@@ -48,6 +50,58 @@ $ua->env_proxy;
     is $resp->content_type, 'image/png';
     my $data = $resp->decoded_content;
     image_ok(\$data);
+    is_barcode($resp, type => "QR-Code", is_data => q{http://bbbike.de/bbbike/cgi/bbbike.cgi?info=1});
+}
+
+sub is_barcode {
+    my($http_resp, %checks) = @_;
+    my $number_of_checks = 1 + scalar keys %checks;
+    my $image_data = $http_resp->decoded_content;
+    (my $image_type = $http_resp->content_type) =~ s{^image/}{};
+ SKIP: {
+	skip "Need Barcode::ZBar for thorough QRCode tests", $number_of_checks
+	    if !eval { require Barcode::ZBar; 1 };
+	skip "Need Imager or Image::Magick for thorough QRCode tests", $number_of_checks
+	    if !eval { require Imager; 1 } && !eval { require Image::Magick; 1 };
+	my $barcode_scanner = Barcode::ZBar::ImageScanner->new;
+	my($raw, $width, $height, $converted_with);
+	if (defined &Imager::new) {
+	    my $imager = Imager->new(data => $image_data, type => $image_type)
+		or die Imager->errstr();
+	    ($width, $height) = ($imager->getwidth, $imager->getheight);
+	    # transform to gray
+	    my $gray = Imager->new(xsize => $width, ysize => $height, channels => 1)
+		or die Imager->errstr();
+	    $gray->rubthrough(src => $imager);
+	    $gray->write(data => \$raw, type => 'raw', raw_storechannels => 1, raw_datachannels => 1);
+	    $converted_with = 'Imager';
+	} else {
+	    my $magick = Image::Magick->new;
+	    $magick->Read(blob => $image_data);
+	    ($width, $height) = $magick->Get(qw(columns rows));
+	    $raw = $magick->ImageToBlob(magick => 'GRAY', depth => 8);
+	    $converted_with = 'Image::Magick';
+	}
+	my $barcode_image = Barcode::ZBar::Image->new;
+	$barcode_image->set_format('Y800');
+	$barcode_image->set_size($width, $height);
+	$barcode_image->set_data($raw);
+	my $n = $barcode_scanner->scan_image($barcode_image);
+
+	is $n, 1, "expect exactly one barcode image (converted with $converted_with)";
+	my $symbol = ($barcode_image->get_symbols)[0];
+	for my $check (keys %checks) {
+	    if ($check eq 'type') {
+		is $symbol->get_type, $checks{$check}, "expected type";
+	    } elsif ($check eq 'like_data') {
+		like $symbol->get_data, $checks{$check}, "expected data (regexp check)";
+	    } elsif ($check eq 'is_data') {
+		is $symbol->get_data, $checks{$check}, "expected data (exact check)";
+	    } else {
+		die "Unhandled check '$check' (only type, like_data, and is_data is allowed)";
+	    }
+	}
+    }
 }
 
 __END__
