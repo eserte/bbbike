@@ -287,13 +287,13 @@ Siegfriedstr. -> Hermannstr.: Hermannstr., am U/S-Bahnhof	3::igndisp 12479,6969 
 Siegfriedstr. -> Siegfriedstr.: Hermannstr., am U/S-Bahnhof	3::igndisp 12479,6969 12342,6936 12305,6928
 Almstadtstr.	1 10797,13575 10767,13443 10757,13401 10699,13173
 Lohmeyerstr.	1 3348,12314 3409,12451
-Martin-Luther-Str.	3nocross::ignrte 6514,10088 6512,9962 6512,9866
-Martin-Luther-Str. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6514,10088 6512,9962 6630,9990
-Martin-Luther-Str. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6512,9866 6512,9962 6366,9926
-Winterfeldtstr. -> Martin-Luther-Str.: Martin-Luther-Str.	3::igndisp 6366,9926 6512,9962 6514,10088
-Winterfeldtstr. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6366,9926 6512,9962 6630,9990
-Winterfeldtstr. -> Martin-Luther-Str.: Martin-Luther-Str.	3::igndisp 6630,9990 6512,9962 6512,9866
-Winterfeldtstr. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6630,9990 6512,9962 6366,9926
+Martin-Luther-Str.	3nocross::ignrte 6499,10086 6504,9961 6504,9865
+Martin-Luther-Str. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6499,10086 6504,9961 6630,9990
+Martin-Luther-Str. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6504,9865 6504,9961 6366,9926
+Winterfeldtstr. -> Martin-Luther-Str.: Martin-Luther-Str.	3::igndisp 6366,9926 6504,9961 6499,10086
+Winterfeldtstr. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6366,9926 6504,9961 6630,9990
+Winterfeldtstr. -> Martin-Luther-Str.: Martin-Luther-Str.	3::igndisp 6630,9990 6504,9961 6504,9865
+Winterfeldtstr. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6630,9990 6504,9961 6366,9926
 Straßenbahntrasse	3nocross::ignrte 12621,14313 12729,14227 12901,14093
 Danziger Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12901,14093 12729,14227 12601,14060
 Danziger Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12621,14313 12729,14227 12782,14300
@@ -1612,13 +1612,13 @@ Temporäre Umleitungsstrecke: eigentlich nur für Versorgung und Taxis offen	2 187
 (BAB113 - Flughafen Berlin-Brandenburg)	1 18048,-4186 18220,-4115 18329,-4154 18400,-4258 18497,-4285
 (Flughafen Berlin-Brandenburg - BAB113)	1 18497,-4285 18444,-4329 18429,-4421 18393,-4518 18222,-4592
 Elly-Beinhorn-Ring	1 18386,-4109 18423,-4094 18861,-3921 19019,-3859 19105,-3940 19158,-4083 19126,-4141 18984,-4202 18492,-4417 18480,-4374 18386,-4109
-Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3nocross::ignrte 6502,9782 6512,9866 6512,9962
-Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6512,9962 6512,9866 6611,9879
-Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6502,9782 6512,9866 6463,9862
-Luitpoldstr. -> Martin-Luther-Str.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6463,9862 6512,9866 6512,9962
-Luitpoldstr. -> Luitpoldstr.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6463,9862 6512,9866 6611,9879
-Luitpoldstr. -> Martin-Luther-Str.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6611,9879 6512,9866 6502,9782
-Luitpoldstr. -> Luitpoldstr.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6611,9879 6512,9866 6463,9862
+Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3nocross::ignrte 6492,9782 6504,9865 6504,9961
+Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6504,9961 6504,9865 6611,9879
+Martin-Luther-Str. -> Luitpoldstr.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6492,9782 6504,9865 6463,9862
+Luitpoldstr. -> Martin-Luther-Str.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6463,9862 6504,9865 6504,9961
+Luitpoldstr. -> Luitpoldstr.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6463,9862 6504,9865 6611,9879
+Luitpoldstr. -> Martin-Luther-Str.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6611,9879 6504,9865 6492,9782
+Luitpoldstr. -> Luitpoldstr.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3::igndisp 6611,9879 6504,9865 6463,9862
 Straße 600: Bake	3 -6890,15692 -6939,15700 -6977,15706
 Straße 600: Bake	3 -6977,15706 -6939,15700 -6890,15692
 Wustermarker Str.: Einbahnstraße	1 -4385,14305 -4559,14341

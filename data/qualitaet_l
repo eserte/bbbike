@@ -520,15 +520,18 @@ Karower Weg: Feldweg, teils holprig, teils OK	Q2 17281,22368 16594,22903
 Köpenicker Str. (Gosen): grobe Verbundsteine	Q1 31651,-530 31662,-1002
 Storkower Str.: grobe Verbundsteine	Q1 31662,-1002 32168,-981
 Seestr.: grobe Verbundsteine	Q1 31662,-1002 31671,-1387
-Eichwalder Str. (Gosen): Asphalt	Q0 30722,-2337 30721,-2146 30843,-1953 30909,-1831
-Eichwalder Str. (Gosen): Beton mit Schäden	Q1 30909,-1831 31057,-1457
+Eichwalder Str. (Gosen): Asphalt	Q0 30728,-2326 30721,-2146 30843,-1953 30909,-1831 31057,-1457
 Eichwalder Ausbau: Asphalt	Q0 31057,-1457 30690,-1458
 Eichwalder Ausbau: Asphalt mit Wurzelschäden	Q1 30690,-1458 30411,-1704
 Am Zwiebusch: Asphalt	Q1 30411,-1704 30361,-1756
 Pätz: Kopfsteinpflaster	Q2 28615,-19431 28251,-19639 28164,-19771 28071,-19862
 Groß-Köris - Motzen: schlechte Betonplattenstraße, teilweise Kopfsteinpflaster	Q2 27894,-25021 27629,-24247 27357,-24122 26315,-23321 26145,-23192 26102,-23166 26070,-23160 25871,-23127 23485,-22730
-Grünau - Zeuthen: gepflastert	Q1 26931,-2871 26875,-2993 26634,-3587 26556,-3781 26548,-3813 26228,-5150 26259,-5681 26085,-5839 25996,-5921
-Zeuthen - KW: Asphalt	Q0 25996,-5921 26146,-6218 26506,-6931 26609,-7136 26700,-7334 26790,-7918 26786,-7968 26775,-8117 26749,-8475 26727,-8668 26679,-8825 26381,-9753 26365,-9875 26391,-9997 26432,-10043
+Grünau - Zeuthen: gepflastert	Q1 26931,-2871 26875,-2993 26748,-3285 26639,-3587 26562,-3781 26554,-3814 26228,-5150 26259,-5681 26085,-5839 25996,-5921
+Zeuthen - KW: Asphalt	Q0 25996,-5921 26003,-5934 26135,-6206 26506,-6931 26609,-7136 26700,-7334 26790,-7918 26786,-7968 26775,-8117 26749,-8475 26727,-8668 26679,-8825 26381,-9753 26365,-9875 26391,-9997 26432,-10043
+Maxim-Gorki-Str. (Eichwalde): Asphalt	Q0 26849,-3323 26748,-3285 26654,-3234
+Schillerstr. (Zeuthen): Kopfsteinpflaster	Q2 25839,-5179 26259,-5681
+Goethestr. (Zeuthen): Kleinsteinpflaster	Q1 25932,-5982 26003,-5934
+Bahnstr. (Zeuthen): Asphalt mit einigen Schäden	Q1 25911,-6033 25997,-6245
 Bestensee: Asphalt	Q0 26204,-17794 26276,-17489
 Schwarzer Weg: Asphalt	Q0 26132,16385 26154,16397 26338,16536 26624,16752 26717,16823
 Schenkendorf - Krummensee: Kopfsteinpflaster (wenigstens im Ort Schenkendorf)	Q2 24103,-13925 24453,-14859
@@ -2552,11 +2555,13 @@ Heinrich-Heine-Allee (Eichwalde): schlechtes Kopfsteinpflaster	Q3 25191,-3903 25
 Heinrich-Heine-Allee: Asphalt	Q0 25173,-3957 25206,-4014 25212,-4025
 Friedenstr.: Asphalt	Q0 25212,-4025 25269,-4041
 Friedenstr.: Kopfsteinpflaster	Q2 25269,-4041 25322,-4042
-Friedenstr.: Kopfsteinpflaster	Q2 26556,-3781 26860,-3805 26977,-3814
+Friedenstr. (Eichwalde): Asphalt	Q0 26050,-3881 26562,-3781
+Friedenstr.: Kopfsteinpflaster	Q2 26562,-3781 26860,-3805 26977,-3814
 August-Bebel-Allee (Eichwalde): schlechtes Kopfsteinpflaster	Q3 24999,-3312 25044,-3412 25088,-3470 25163,-3652 25199,-3743 25269,-3906 25322,-4042 25368,-4182
 Mozartstr. (Eichwalde): Asphalt	Q0 25269,-3906 25365,-3880
 Schmöckwitzer Str. [August-Bebel-Platz] (Eichwalde): Kopfsteinpflaster	Q2 25199,-3743 25220,-3725 25227,-3704 25226,-3680 25209,-3657 25185,-3649 25163,-3652
 Schmöckwitzer Str.: Kopfsteinpflaster	Q2 25226,-3680 25278,-3661
+Schmöckwitzer Str.: Kopfsteinpflaster	Q2 26875,-2993 26831,-2990 26669,-3030 26565,-3054
 Waldstr. [Wohngebiet]: Beton	Q0 25606,-2880 25562,-2902 25461,-2744
 Stubenrauchstr. [Händelplatz]: schlechtes Kopfsteinpflaster	Q3 25245,-3160 25273,-3176 25320,-3153 25367,-3124 25364,-3087 25347,-3077 25295,-3103 25254,-3124 25245,-3160
 Stubenrauchstr. [Platz der Republik]: schlechtes Kopfsteinpflaster	Q3 25711,-2886 25745,-2898 25771,-2884 25778,-2855 25764,-2832 25735,-2826 25705,-2855 25711,-2886
@@ -3535,6 +3540,7 @@ Lichtenrade - Birkholz/Diedersdorf: Asphalt	Q0 8113,-3293 8114,-3357
 Egestorffstr. - Mauerweg: Asphalt	Q0 9093,-1670 9083,-1962 9065,-1983
 Innerer Mauerweg - Äußerer Mauerweg: unbefestigt	Q2 9065,-1983 9081,-2073
 Innerer Mauerweg: Asphalt	Q0 9065,-1983 8412,-1979
+Uferplatz: Asphalt	Q0 31139,-1023 31043,-1034 31029,-1064 31014,-1071
 Am Lückefeld (Mahlow): guter Asphalt	Q0 13256,-4919 13049,-4788 12977,-4783 12841,-4989 12680,-5230 12782,-5284 12837,-5273 13194,-5021 13256,-4919
 Kopfsteinpflaster	Q2 15157,61424 14833,61726 14920,62175 14941,62754 14768,63163 14594,63506 14618,64317 14400,64920 14312,65950 14312,66412
 Kopfsteinpflaster	Q2 13386,66797 13458,67551 13676,68144
@@ -4699,3 +4705,4 @@ Elbestr.: Asphalt	Q0 20569,29323 20511,29447 20410,29730 20402,29758 20378,29844
 Mainstr.: guter Asphalt	Q1 21037,29913 20981,29934 20618,29809
 Newastr.: schlechter Asphalt	Q2 20410,29730 20513,29787
 An der Panke (Bernau): wassergebundene Decke	Q2 19392,29011 19535,29067 19565,29082 19741,29160 19850,29160 19957,29131 20030,29112 20309,29168 20476,29271 20537,29285
+Hohen Neuendorfer Weg (Birkenwerder): schlechtes Kopfsteinpflaster	Q3 645,30634 618,30687 575,30816 564,30845 550,30867 516,30899 342,31100

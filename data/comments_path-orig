@@ -105,7 +105,7 @@ Fußgängerampel links benutzen	CP; 14723,16691 14619,16682 14619,16672
 # REMOVED (gelöst durch split der Hohenstaufenstr) --- #: XXX_prog: RL:ja, GPS:ja (da es doch immerhin 30 Meter bis zur Kreuzung sind) --- Hohenstaufenstr. zur Münchener Str.: frühzeitig Fußgängerampel nach links benutzen	PI; 6241,9772 6209,9773 6210,9753 6224,9544
 # REMOVED (gelöst durch split der Hohenstaufenstr) --- #: XXX_prog: RL:ja, GPS:ja (da es doch immerhin 30 Meter bis zur Ampel sind und Radfahrer evtl. nach links fahren würden) --- Münchener Str. zur Nachodstr.: Fußgängerampel auf der rechten Seite benutzen	CP; 6224,9544 6210,9753 6209,9772 6108,9772
 Fußgängerampel östlich der Münchener Str. zum Überqueren benutzen	CP; 6209,9772 6241,9772 6209,9773
-an der Fußgängerampel vor der Münchener Str. auf den linken Gehweg wechseln	CP; 6502,9782 6241,9772 6209,9771
+an der Fußgängerampel vor der Münchener Str. auf den linken Gehweg wechseln	CP; 6492,9782 6241,9772 6209,9771
 Thomas-Dehler-Str. - Stülerstr.: nach dem Abbiegen zunächst auf dem linken Gehweg bleiben	CP; 6657,11467 6716,11439 6825,11486
 Gervinusstr./Lewishamstr.: linken Gehweg bis zur Ampel an der Mommsenstr. benutzen	CP; 3835,10915 3623,10800 3644,10759
 #: XXX_prog: RL:ja, GPS:nein
@@ -280,7 +280,7 @@ Ellerbeker Str. - Behmstr.: links entlang des Sportplatzes fahren	CP2; 9727,1618
 Roonstr./Flotowstr.: Hindenburgdamm kann über Fußgängerfurt gequert werden	CP; 4265,4484 4515,4581 4651,4638
 Flotowstr./Roonstr.: Hindenburgdamm kann über Fußgängerfurt gequert werden	CP; 4651,4638 4515,4581 4265,4484
 #: by: ^^^
-Hausdurchfahrt benutzen	CP2; 6502,9782 6529,9738
+Hausdurchfahrt benutzen	CP2; 6492,9782 6529,9738
 #: XXX_prog: Ist das hier CS; oder CP; ?
 Nach dem Steg kann man zunächst nur in der Mitte direkt am Ufer fahren, da Leitplanken das Übequeren verhindern, erst auf Höhe der Genthiner Str. kann man die Straße überquert werden	CS; 7252,11188 7248,11143 7461,11051
 Lützowufer - Hiroshimasteg: frühzeitig auf den linken Gehweg wechseln, Leitplanken verhindern das Überqueren	PI; 7002,11034 7248,11143 7252,11188

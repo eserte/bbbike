@@ -65,10 +65,10 @@ userdel	2::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 1117
        undef,
        {
          'data' => '#: by: http://www.stadtfest.berlin/de/index.html
-userdel	2::temp 6514,10088 6609,10147 6626,10155 6729,10212
+userdel	2::temp 6499,10086 6609,10147 6626,10155 6729,10212
 userdel	2::temp 6729,10212 6971,10346
 userdel	2::temp 6628,10318 6626,10155
-userdel	2::temp 6502,10273 6628,10318 6719,10347
+userdel	2::temp 6487,10277 6628,10318 6719,10347
 userdel	2::temp 6719,10347 6729,10212 6739,10120
 ',
          'from' => 1499983200,
@@ -4067,7 +4067,7 @@ userdel	q4::inwork 12911,1815 12817,2031
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-05-24 vvv
+#: last_checked: 2017-06-11 vvv
 #: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -4271,6 +4271,17 @@ userdel	q4::inwork; 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548
          'text' => 'Bölschestr.: Bauarbeiten, Einbahnstraße Richtung Süden, 22.05. bis 21.10.2017',
          'type' => 'handicap',
          'until' => 1508565600
+       },
+       {
+         'data' => '#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2017-06-11
+userdel	2::inwork 21685,916 21708,937 21857,989 21977,988
+',
+         'from' => undef,
+         'id' => 2868,
+         'text' => 'Am Wiesenweg: Bauarbeiten, Weg komplett gesperrt (auch für Fußgänger), Ende unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

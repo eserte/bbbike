@@ -65,7 +65,9 @@ Kiekebusch (früher Waltersdorf) - Karlshof: laut "Berliner Umland" witterungsabh
 Kiekebusch - Karlshof: laut "Berliner Umland" geeignete Strecke auf Straßen	? 20892,-6636 20577,-6982 20255,-7591
 Karlshof - Brusendorf: laut "Berliner Umland" geeigneter Radweg (möglicherweise asphaltiert)	? 19092,-9677 18847,-9629 18205,-10432
 Eichwalde - Zeuthen: laut "Berliner Umland" witterungsabhängige Strecke	? 25212,-4025 25256,-4073 25293,-4192 25550,-5174
-Friesenstr. - Bahnstr. - Rheinstr. - Birkenstr. (Eichwalde, Zeuthen, Wildau): laut "Berliner Umland" geeignete Strecke auf Straßen	? 25550,-5174 25595,-5527 25835,-5983 25907,-6063 26001,-6257 26089,-6584 26048,-6587 26328,-7191 26359,-7450 26563,-8522
+Friesenstr. (Eichwalde, Zeuthen): laut "Berliner Umland" geeignete Strecke auf Straßen	? 25550,-5174 25595,-5527 25893,-6002 25911,-6033
+Bahnstr.: Fahrbahnbeschaffenheit? Existiert hier eine Einbahnstraße?	? 25997,-6245 26089,-6584
+Rheinstr. - Birkenstr. (Zeuthen, Wildau): laut "Berliner Umland" geeignete Strecke auf Straßen	? 26089,-6584 26048,-6587 26328,-7191 26359,-7450 26563,-8522
 Günterberg - Biesenbrow: laut "Regio-Cart" gut geeignet	? 47091,77570 47269,77634 47713,78664 48006,79147 48305,79400 49117,79726 49521,79799 49932,79760 50324,80128
 Biesenbrow - Passow: Qualität (vom Westen her wahrscheinlich auch nur der mäßige Betonweg, vom Norden her mäßig asphaltiert)? Privatstr., Durchfahrt trotzdem möglich?	? 52771,81718 54508,82572 54307,83141
 Biesenbrow - Briest: Qualität (vom Osten her Plattenweg)?	? 52512,82471 53263,82995 53611,83132 53570,83230 53668,83324
@@ -397,7 +399,7 @@ B166 - Berkholz: Qualität?	? 65022,74147 64076,73706 63945,73688
 Melzow: Qualität?	? 41459,85131 41621,85290 41910,85359
 Altranft - Sonnenburg: Qualität?	? 55627,41154 55542,41087 54597,39850 53976,39070 54043,38820 53890,38424 53397,38297
 Sonnenburg - Baasee: Qualität?	? 53397,38297 52995,38583 52879,38436 52531,38339 52410,38174
-Schillerstr. (Zeuthen): Qualität?	? 25763,-4283 25839,-5179 26259,-5681
+Schillerstr. (Zeuthen): Qualität?	? 25763,-4283 25839,-5179
 Turmstr. (Potsdam): Qualität?	? -8081,-4396 -8111,-4396 -8259,-4119
 Turmstr. (Potsdam): Qualität?	? -8294,-4022 -8404,-3824 -8451,-3728 -8510,-3616
 Neue Straße (Phöben): Qualität?	? -26488,2783 -26183,2902 -26070,2911 -25847,2835 -25664,2840
@@ -785,7 +787,6 @@ Radwegbau in Golmer Chaussee und Wublitzstr.	?::inwork -17646,1636 -18091,1642 -
 Radweg zwischen Wublitzstr. und Laubenweg: Ist der Radweg bereits fertig? Qualität?	? -19721,2368 -19721,2424 -19891,2447
 Alleestr./Weinmeinsterstr.: existiert hier eine Ampel?	? -12557,11
 Radweg in der Bergstraße: wo genau?	? -17909,7321 -18152,6572
-Hohen Neuendorfer Weg (Birkenwerder): Qualität?	? 645,30634 618,30687 575,30816 564,30845 550,30867 516,30899 342,31100
 Am Tempelberg (Potsdam-Eiche): Qualität?	? -17003,-544 -17019,-422
 Am Grünen Weg (Potsdam-Eiche): Qualität? Wird "Grünen" groß oder klein geschrieben?	? -16905,-541 -16890,-605
 Am Grünen Weg (Potsdam-Eiche): Qualität? Genaue Lage?	? -16890,-605 -16850,-793 -16872,-1054 -16203,-1002
@@ -1050,11 +1051,14 @@ Birkenweg (Havelberg): Qualität?	? -78908,46280 -79030,46209 -79197,46187 -79505
 Domstrengbrücke und Verbindung zum Grillendamm: Qualität?	? -46302,103 -46305,130 -46339,191 -46379,281
 Am Kiesteich - Spektewiesen: Qualität? Liegt hier Kleinsteinpflaster?	? -6256,15169 -6252,15228
 Schulzendorfer Str. (Eichwalde): ist der gesamte Gehweg frei für Radfahrer?	? 24606,-3698 24661,-3673 24731,-3644 24886,-3587 25032,-3529
-Friedenstr. (Eichwalde): Qualität?	? 25322,-4042 25678,-3957 26050,-3881 26556,-3781
+Friedenstr. (Eichwalde): Qualität?	? 25322,-4042 25678,-3957 26050,-3881
 Mozartstr. (Eichwalde): Qualität?	? 25365,-3880 25379,-3876 25509,-3842 25636,-3813
+Maxim-Gorki-Str. (Eichwalde): Qualität?	? 26954,-3322 26849,-3323
+Maxim-Gorki-Str. (Eichwalde): Qualität?	? 26654,-3234 26594,-3156 26565,-3054 26542,-2951
+Am Stern (Eichwalde): Qualität?	? 26002,-3362 26013,-3367 26046,-3365 26048,-3334 26029,-3326 26011,-3331 26002,-3342 26002,-3362
 Schmöckwitzer Str.: Qualität?	? 25278,-3661 25292,-3655 25416,-3609 25556,-3547 25862,-3423 26002,-3362
 Schmöckwitzer Str.: Qualität?	? 26048,-3334 26232,-3205 26249,-3190
-Schmöckwitzer Str.: Qualität?	? 26875,-2993 26831,-2990 26669,-3030 26565,-3054 26469,-3073 26337,-3101 26242,-3135 26237,-3164 26249,-3190 26268,-3195 26302,-3188 26359,-3177 26436,-3155 26463,-3119 26469,-3073
+Schmöckwitzer Str.: Qualität?	? 26565,-3054 26469,-3073 26337,-3101 26242,-3135 26237,-3164 26249,-3190 26268,-3195 26302,-3188 26359,-3177 26436,-3155 26463,-3119 26469,-3073
 Lindow - Banzendorf: Qualität?	? -19626,66497 -18685,66767 -18418,67087 -18287,67361
 Banzendorf - Hindenberg: Qualität?	? -18287,67361 -18101,67745 -18267,68226 -18260,68442 -17866,69551 -17808,69926 -17941,70276 -18048,70542 -17823,70759
 Golzow - Senftenhütte: Qualität der Straße?	? 36621,56807 37029,56698 37471,56609 37735,56749 38224,57167
@@ -1202,7 +1206,7 @@ Walther-Rathenau-Str. (Eichwalde): schlechtes Kopfsteinpflaster (liegt auch im ö
 Leistikowstr.: Kopfsteinpflaster (liegt auch im östlichen Teil Kopfsteinpflaster?)	? 24842,-3485 24987,-3426
 Schulzendorfer Str.: Asphalt (liegt auch im östlichen Teil Asphalt?)	? 24886,-3587 25032,-3529
 Käthe-Kollwitz-Str.: Kopfsteinpflaster (liegt auch im östlichen Teil Kopfsteinpflaster?)	? 24971,-3788 25119,-3735
-Friedenstr.: Kopfsteinpflaster (liegt hier Kopfsteinpflaster? Wie ist die Qualität des Kopfsteinpflasters?)	? 26556,-3781 26860,-3805 26977,-3814
+Friedenstr.: Kopfsteinpflaster (Wie ist die Qualität des Kopfsteinpflasters (mäßig oder schlecht)?)	? 26562,-3781 26860,-3805 26977,-3814
 (Qualität des Wegs (wahrscheinlich ein unbefestigter Feldweg)?)	? 18962,-5709 19915,-6315
 (ist der komplette Weg ein Schotterweg? Oder teilweise nur ein unbefestigter Feldweg?)	? 17162,-6465 17910,-6981
 (ist der mittlere Abschnitt der Fritz-Reuter-Str. ebenfalls gepflastert?)	? 2607,-105 2667,-199

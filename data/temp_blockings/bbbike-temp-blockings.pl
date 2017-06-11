@@ -589,10 +589,10 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.stadtfest.berlin/de/index.html
-userdel	2::temp 6514,10088 6609,10147 6626,10155 6729,10212
+userdel	2::temp 6499,10086 6609,10147 6626,10155 6729,10212
 userdel	2::temp 6729,10212 6971,10346
 userdel	2::temp 6628,10318 6626,10155
-userdel	2::temp 6502,10273 6628,10318 6719,10347
+userdel	2::temp 6487,10277 6628,10318 6719,10347
 userdel	2::temp 6719,10347 6729,10212 6739,10120
 EOF
      },
@@ -1284,7 +1284,7 @@ EOF
        text  => 'L 401; (Lindenallee, Fontaneallee); OL Zeuthen, zw. Forstweg und Fährstr. grundhafter Straßenbau Vollsperrung 01.11.2004-12.08.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 26609,-7136 26506,-6931 26146,-6218
+userdel	q4 26609,-7136 26506,-6931 26135,-6206
 EOF
      },
      { from  => 1089496800, # 2004-07-11 00:00
@@ -3286,7 +3286,7 @@ EOF
        text  => 'L 402; (Forstweg); Bahnübergang in OL Zeuthen Gleisbauarbeiten Vollsperrung 29.10.2005-02.11.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 26001,-6257 26057,-6241 26146,-6218
+userdel	2 25997,-6245 26040,-6233 26135,-6206
 EOF
      },
      { from  => 1130715720, # 2005-10-31 00:42
@@ -8759,7 +8759,7 @@ EOF
        source_id => 'LMS_1766426574',
        data  => <<EOF,
 userdel	2::temp 6628,10318 6626,10155 6729,10212 6739,10120
-userdel	2::temp 6609,10147 6514,10088
+userdel	2::temp 6609,10147 6499,10086
 userdel	2::temp 6971,10346 6729,10212 6719,10347
 EOF
      },
@@ -14555,7 +14555,7 @@ EOF
        text  => 'L 402 Zeuthen - Schulzendorf Bahnübergang Forstweg in Zeuthen Gleisbauarbeiten Vollsperrung 10.06.2009-11.06.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 26001,-6257 26057,-6241 26146,-6218
+userdel	2::inwork 25997,-6245 26040,-6233 26135,-6206
 EOF
      },
      { from  => $isodate2epoch->("2017-06-15 00:00:00"), # 1 Tag Vorlauf
@@ -25256,7 +25256,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.480057.php',
        data  => <<EOF,
-userdel	q4::inwork 20302,1613 20366,1479 20347,1398
+userdel	q4::inwork 20302,1613 20366,1479 20340,1401
 userdel	q4::inwork 20580,1406 20406,1465 20366,1479
 userdel	q4::inwork 20381,1390 20406,1465
 EOF
@@ -25634,7 +25634,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-05-24 vvv
+#: last_checked: 2017-06-11 vvv
 #: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -26086,6 +26086,16 @@ EOF
 #: note: laut fritz bis 21.10.2017 08:00 Uhr
 #: by: http://werbegemeinschaft-friedrichshagen.de/wp-content/uploads/2017/05/2017-05_Boelschestr_Anwohnerflyer_web.pdf
 userdel	q4::inwork; 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Am Wiesenweg: Bauarbeiten, Weg komplett gesperrt (auch für Fußgänger), Ende unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2017-06-11
+userdel	2::inwork 21685,916 21708,937 21857,989 21977,988
 EOF
      },
     );

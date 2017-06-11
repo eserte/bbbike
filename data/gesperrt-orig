@@ -1601,7 +1601,7 @@ Bornhomer Str.: Straßenbahntrasse	3nocross 10620,16497 10533,16505 10458,16509
 Bornhomer Str.: Straßenbahntrasse	3nocross 10458,16509 10370,16516 10282,16522 10197,16528
 # REMOVED (Fußgängerampel existiert) --- Karl-Liebknecht-Str./Rosenstr.: Straßenbahntrasse	3nocross 10431,12709 10515,12780 10525,12789
 Karl-Liebknecht-Str./Rosenstr.: Straßenbahntrasse	3nocross 10525,12789 10695,12933 10733,12967
-Martin-Luther-Str.: Mittelstreifen	3nocross 6502,9782 6447,9661 6445,9538
+Martin-Luther-Str.: Mittelstreifen	3nocross 6492,9782 6447,9661 6445,9538
 Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3nocross 10997,16280 10989,16197 10982,16121
 #: XXX_prog: wobei die Fußgängerampel nur ca. 20 Meter weiter östlich entfernt ist, ggfs. aufnehmen, wenn handicaps für Fahrtrichtungen implementiert sind
 Oberspreestr.: Straßenbahntrasse	3nocross 21579,4579 21726,4537 21789,4520
@@ -2152,6 +2152,8 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 tragen (6 Stufen)	0:15 4608,63927
 Treppe	0:40 1888,42795
 tragen (mehrere Treppen mit insgesamt 45 Stufen und Kinderwagenrampe)	0:90 3514,24652
+tragen (Treppe, 18 Stufen)	0:25 25902,-6006
+tragen (Treppe, 19 Stufen)	0:25 25928,-5990
 #
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
@@ -2779,7 +2781,7 @@ Gitschiner Str./Lobeckstr.: Bauarbeiten, Überqueren des Mittelstreifens nicht mö
 Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19143,1147
 # 
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2017-06-02
+#: last_checked: 2017-06-11
 #: check_frequency: 90d
 Schinkelplatz: Einbahnstraße	1s:q3 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
 # 
@@ -2801,7 +2803,7 @@ Mauerweg: Bauarbeiten, gesperrt	2::inwork 7939,14447 7889,14519
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: note: in der anderen Richtung eigentlich nur für Baustellenverkehr
-#: last_checked: 2017-05-24
+#: last_checked: 2017-06-11
 Voltairestr.: Baustelle, Fahrtrichtung gesperrt	1s:q3 11329,12497 11209,12430
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3192&mt=0&zoom=16 (Geplanter Projektabschluss: 2018-03-31)
@@ -2867,7 +2869,7 @@ Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q4 8654,14194 8607,14253 8527
 #: next_check_id ^^^
 # 
 #: by: http://www.s-bahn-berlin.de/bauinformationen/details/rummelsburg/4530 vvv
-#: last_checked: 2017-06-09 vvv
+#: last_checked: 2017-06-11 vvv
 # REMOVED (offen) --- (Unterführung S-Bhf. Rummelsburg): Bauarbeiten, komplett gesperrt	2::inwork 15433,10765 15409,10709 15372,10655
 Nöldnerstr.: Bauarbeiten, Einbahnstraße	1s:q4 15272,10790 15388,10758 15433,10765
 #: last_checked ^^^
@@ -3034,7 +3036,7 @@ Clara-von-Simson-Str.: noch gesperrt	2 7652,14257 7757,14318 7802,14250 7697,141
 #: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/strassen_kfz/SOV-Beschluss-27022012.pdf
 #: XXX hier wird es für Autofahrer dauerhaft keine Zufahrt zur Minna-Todenhagen-Str. geben, aber vielleicht wird es für Radfahrer/Fußgänger einen Zugang geben?
 #: source_id: 2147339538
-#: last_checked: 2017-06-09
+#: last_checked: 2017-06-11
 Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, für Autos dauerhaft	2::inwork 17670,7512 17681,7589
 # 
 #: next_check_id: HEERSTR-2016 vvv
@@ -3209,7 +3211,7 @@ Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,2
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
 #: next_check_id: STAATSOPER-2014 vvv
-#: last_checked: 2017-04-28 vvv
+#: last_checked: 2017-06-11 vvv
 #: check_frequency: 90d vvv
 #: by: http://www.dafmap.de/d/berlin.html?id=3588&mt=0&zoom=16
 #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung)
@@ -3225,7 +3227,7 @@ Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12
 # 
 #: XXX Eröffnung 2019 geplant
 #: by: http://www.dafmap.de/d/berlin.html?id=3598&mt=0&zoom=16
-#: last_checked: 2017-05-24
+#: last_checked: 2017-06-11
 #: check_frequency: 120d
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 

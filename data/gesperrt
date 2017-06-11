@@ -1463,10 +1463,10 @@ Andersenstr. -> Bornholmer Str.: Straßenbahntrasse	3::igndisp 10295,16667 10282,
 Straßenbahntrasse	3nocross::ignrte 10525,12789 10695,12933 10733,12967
 Karl-Liebknecht-Str. -> Rosa-Luxemburg-Str.: Straßenbahntrasse	3::igndisp 10525,12789 10695,12933 10685,12966
 Rosa-Luxemburg-Str. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 10685,12966 10695,12933 10733,12967
-Mittelstreifen	3nocross::ignrte 6502,9782 6447,9661 6445,9538
-Martin-Luther-Str. -> Traunsteiner Str.: Mittelstreifen	3::igndisp 6502,9782 6447,9661 6553,9600
+Mittelstreifen	3nocross::ignrte 6492,9782 6447,9661 6445,9538
+Martin-Luther-Str. -> Traunsteiner Str.: Mittelstreifen	3::igndisp 6492,9782 6447,9661 6553,9600
 Martin-Luther-Str. -> Speyerer Str.: Mittelstreifen	3::igndisp 6445,9538 6447,9661 6348,9535
-Speyerer Str. -> Martin-Luther-Str.: Mittelstreifen	3::igndisp 6348,9535 6447,9661 6502,9782
+Speyerer Str. -> Martin-Luther-Str.: Mittelstreifen	3::igndisp 6348,9535 6447,9661 6492,9782
 Speyerer Str. -> Traunsteiner Str.: Mittelstreifen	3::igndisp 6348,9535 6447,9661 6553,9600
 Traunsteiner Str. -> Martin-Luther-Str.: Mittelstreifen	3::igndisp 6553,9600 6447,9661 6445,9538
 Traunsteiner Str. -> Speyerer Str.: Mittelstreifen	3::igndisp 6553,9600 6447,9661 6348,9535
@@ -2417,6 +2417,8 @@ tragen (31 Stufen oder Kinderwagenrampe)	0:40:-256 13168,21706
 tragen (6 Stufen)	0:15:-90 4608,63927
 Treppe	0:40:-131 1888,42795
 tragen (mehrere Treppen mit insgesamt 45 Stufen und Kinderwagenrampe)	0:90:-44 3514,24652
+tragen (Treppe, 18 Stufen)	0:25:-66 25902,-6006
+tragen (Treppe, 19 Stufen)	0:25:-194 25928,-5990
 Drängelgitter	BNP:3:-2:trailer=10 22237,6211
 weites Drängelgitter	BNP:2:33:trailer=7 5628,23977
 weites Drängelgitter	BNP:2:-264:trailer=7 5867,24056
