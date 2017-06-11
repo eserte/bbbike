@@ -125,6 +125,14 @@ sub register {
 	  callback_3_std => sub { showmap_url_daf(@_) },
 	  ($images{DAF} ? (icon => $images{DAF}) : ()),
 	};
+    if ($is_berlin && module_exists('Geo::Proj4')) {
+	$main::info_plugins{__PACKAGE__ . "_FIS_Broker_1_5000"} =
+	    { name => "FIS-Broker (1:5000)",
+	      callback => sub { showmap_fis_broker_1_5000(@_) },
+	      callback_3_std => sub { showmap_url_fis_broker_1_5000(@_) },
+	      ($images{FIS_Broker} ? (icon => $images{FIS_Broker}) : ()),
+	    };
+    }
     $main::info_plugins{__PACKAGE__ . '_AllMaps'} =
 	{ name => 'All Maps',
 	  callback => sub { show_links_to_all_maps(@_) },
@@ -349,6 +357,24 @@ sWHEAAAAAWJLR0QB/wIt3gAAAAd0SU1FB+ECGRIMLMfSfQMAAAAYSURBVAjXY2BgkFrFgEaEAgHD
 fyAgnQAA1G8wOeyCs3YAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTctMDItMjVUMTk6MTI6NDQrMDE6
 MDDSKYNAAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE3LTAyLTI1VDE5OjEyOjQ0KzAxOjAwo3Q7/AAA
 AABJRU5ErkJggg==
+EOF
+    }
+
+    if (!defined $images{FIS_Broker}) {
+	# First try was
+	#    convert http://fbinter.stadt-berlin.de/fb/images/favicon.ico png:- | base64
+	# but the icon was too blurry and quite large, so I took
+	# http://fbinter.stadt-berlin.de/fb/images/fisbroker_logo.jpg and hand-edited
+	# with Gimp (crop + scale to 16x16 + indexed color mode with 16 colors)
+	$images{FIS_Broker} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAMFBMVEWPkh6QkSeXmDaZmTCYnB6e
+oDunqFC0tme7u3vKzY3OzZzb2qzk4cLz89v18+P8/vv6G3U3AAAAAWJLR0QAiAUdSAAAAAlwSFlz
+AAALEwAACxMBAJqcGAAAAAd0SU1FB+EGCxMzFc5bjNQAAACWSURBVAjXY/j//1Wx2dz//xn+/w4x
+NlbuBzIWKCsbKXH8Z/ijagwEhvMZPjIwMAoIMvIz/N69a+aafe/vMUxgVOtevfcGB8Pp3TPCT5xS
+1GDYzKB5vDrB2Jxhcc1inQZlZQ2G24VcW4WVjbUZPpgeFzVSNrJj+LPL0JiJ2Wg9yApjZWVxoF2/
+lJWNjUGW/n+Zltb7/z8ADMI7t51Q4A0AAAAASUVORK5CYII=
 EOF
     }
 }
@@ -722,6 +748,25 @@ sub showmap_daf {
 }
 
 ######################################################################
+# FIS-Broker
+
+sub showmap_url_fis_broker_1_5000 {
+    my(%args) = @_;
+    require Geo::Proj4;
+    my $proj4 = Geo::Proj4->new("+proj=utm +zone=33 +ellps=intl +units=m +no_defs") # see http://www.spatialreference.org/ref/epsg/2078/
+	or die Geo::Proj4->error;
+    my($x0,$y0) = $proj4->forward($args{py0}, $args{px0});
+    my($x1,$y1) = $proj4->forward($args{py1}, $args{px1});
+    sprintf 'http://fbinter.stadt-berlin.de/fb/index.jsp?Szenario=fbinter_jsc&loginkey=zoomStart&mapId=k5_farbe@senstadt&bbox=%d,%d,%d,%d', $x0, $y0, $x1, $y1;
+}
+
+sub showmap_fis_broker_1_5000 {
+    my(%args) = @_;
+    my $url = showmap_url_fis_broker_1_5000(%args);
+    start_browser($url);
+}
+
+######################################################################
 
 sub show_links_to_all_maps {
     my(%args) = @_;
@@ -770,6 +815,30 @@ sub start_browser_no_mozilla {
     @WWWBrowser::unix_browsers = grep { !m{^(seamonkey|mozilla|htmlview|_.*)$} } @WWWBrowser::unix_browsers;
     start_browser($url);
 }
+
+######################################################################
+# Helper
+
+# REPO BEGIN
+# REPO NAME module_exists /home/eserte/src/srezic-repository 
+# REPO MD5 1ea9ee163b35d379d89136c18389b022
+
+# Return true if the module exists in @INC or if it is already loaded.
+
+sub module_exists {
+    my($filename) = @_;
+    $filename =~ s{::}{/}g;
+    $filename .= ".pm";
+    return 1 if $INC{$filename};
+    foreach my $prefix (@INC) {
+	my $realfilename = "$prefix/$filename";
+	if (-r $realfilename) {
+	    return 1;
+	}
+    }
+    return 0;
+}
+# REPO END
 
 1;
 
