@@ -70,10 +70,8 @@ sub is_barcode {
 		or die Imager->errstr();
 	    ($width, $height) = ($imager->getwidth, $imager->getheight);
 	    # transform to gray
-	    my $gray = Imager->new(xsize => $width, ysize => $height, channels => 1)
-		or die Imager->errstr();
-	    $gray->rubthrough(src => $imager);
-	    $gray->write(data => \$raw, type => 'raw', raw_storechannels => 1, raw_datachannels => 1);
+	    my $gray = $imager->convert(matrix => [[1,0,0]])->to_rgb8;
+	    $gray->write(data => \$raw, type => 'raw');
 	    $converted_with = 'Imager';
 	} else {
 	    my $magick = Image::Magick->new;
