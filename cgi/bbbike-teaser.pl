@@ -154,13 +154,14 @@ EOF
 }
 
 sub teaser_velothon {
-    my $out_of_date = $today gt "20160619";
+    my $velothon_day = "20170618";
+    my $out_of_date = $today gt $velothon_day;
     if (!$out_of_date) {
-	my $velothon_map_url = "http://events.lagardere-unlimited.de/velothon/maps/sperr.php";
-	my $date_spec = $today eq '20160619' ? 'Heute' : 'Am Sonntag, den 19. Juni 2016';
+	my $velothon_map_url = "http://files.hamburg.ironman.com/velothon/maps/sperr.php";
+	my $date_spec = $today eq $velothon_day ? 'Heute' : 'Am Sonntag, den 18. Juni 2017';
 	<<EOF
-<div class="teaser" style="font-weight:bold">$date_spec findet der Velothon statt.<br/>
-<a href="$velothon_map_url">Karte mit den Sperrungen</a></div>
+<div class="teaser"><div style="font-weight:bold">$date_spec findet der Velothon statt.<br/>
+<a href="$velothon_map_url">Karte mit den Sperrungen</a></div> (Achtung, Sperrungen sind nicht in BBBike berücksichtigt!)</div>
 EOF
     } else {
 	();
