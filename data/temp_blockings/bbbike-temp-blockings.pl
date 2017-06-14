@@ -19478,14 +19478,14 @@ EOF
 userdel	q4::inwork 11796,18482 11696,18454
 EOF
      },
-     { from  => 1308592800, # 2011-06-20 20:00
-       until => 1308974400, # 2011-06-25 06:00
-       text  => 'John-Foster-Dulles-Allee (Tiergarten): Sportveranstaltung, Straße vollständig gesperrt (bis 25.06., 06:00) in beiden Richtungen, 21.06.2011 20:00 Uhr bis 25.06.2011 06:00 Uhr ',
-       type  => 'handicap',
-       source_id => 'IM_017472',
+     { from  => 1497465143, # 1308592800, # 2011-06-20 20:00
+       until => $isodate2epoch->("2017-06-17 09:00:00"), # 1308974400, # 2011-06-25 06:00
+       text  => 'John-Foster-Dulles-Allee: Sportveranstaltung, Fahrbahn gesperrt, bis 17.06.2017 09:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'LMS-BR_r_LMS-BR_99873_LMS-BR_72',
        data  => <<EOF,
-userdel	q4::temp 7215,12295 7437,12368
-userdel	q4::temp 7875,12363 7821,12367 7627,12380 7514,12387
+#: note: laut vmz bis 18.6. nachts, go with fritz
+userdel	2::temp 8070,12409 8017,12359 7875,12363 7821,12367 7627,12380 7514,12387 7437,12368
 EOF
      },
      { from  => 1308466800, # 2011-06-19 09:00
@@ -25910,11 +25910,12 @@ userdel	q3::inwork; 8385,6034 8532,6015
 EOF
      },
      { from  => 1488236400, # 2017-02-28 00:00
-       until => $isodate2epoch->("2017-06-16 18:00:00"), # 1493589599, # 2017-04-30 23:59
-       text  => 'Kantstr.: Richtung Budapester Str. ab Joachimsthaler Str. gesperrt, voraussichtlich bis 16. Juni 2017',
+       until => $isodate2epoch->("2017-07-14 18:00:00"), # 1493589599, # 2017-04-30 23:59
+       text  => 'Kantstr.: Richtung Budapester Str. ab Joachimsthaler Str. gesperrt, voraussichtlich bis 14. Juli 2017',
        type  => 'handicap',
        source_id => '2147341048',
        data  => <<EOF,
+#: next_check_id: KANTSTR-2017
 #: source_id: LMS-BR_r_LMS-BR_121
 userdel	q4::inwork; 5488,10978 5613,10963 5652,11004
 EOF
@@ -25967,14 +25968,14 @@ EOF
        text  => 'Innstr.: Bauarbeiten, Einbahnstraßenregelung, außerdem Sperrung an der Kreuzung Weserstr.',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2017-06-02 vvv
-#: check_frequency: 7d vvv
+#: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober
+#: last_checked: 2017-06-14 vvv
+#: next_check: 2017-08-14 vvv
 	q3::inwork 13384,8354 13217,8493
 # REMOVED userdel	q3::inwork; 13217,8493 13262,8554
 	q3::inwork; 13262,8554 13301,8606 13314,8624
 	q4::inwork 13366,8694 13314,8624
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 EOF
      },

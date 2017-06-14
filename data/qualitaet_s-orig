@@ -75,7 +75,7 @@ Hobrechtsfelder Chaussee (ab Kurve): Kopfsteinpflaster	Q2 15589,27116 15711,2792
 Wisbyer Str.: Asphalt	Q0 11019,16465 11289,16423 11397,16405 11448,16398 11470,16394 11542,16384 11632,16373 11673,16367 11727,16358 11750,16354 11808,16343 11829,16339 11889,16328 11936,16302 12012,16250 12090,16199
 Weserstr.: asphaltiert, schmale Verbundsteinpflaster-Radwege	Q0 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193 12322,9124
 Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege	Q1- 12322,9124 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13029,8632 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
-Jessnerstr.: Asphalt mit Aufpflasterungen	Q0 15080,11905 14981,11751 14946,11697 14849,11539
+Jessnerstr.: Asphalt mit Aufpflasterungen	Q0- 15080,11905 14981,11751 14946,11697 14849,11539
 Stuttgarter Str.: m‰ﬂiger Asphalt	Q1 13663,8011 13510,8138 13331,8283
 Stuttgarter Str.: Kopfsteinpflaster	Q2 13331,8283 13166,8423
 Dr¸becker Weg: Kopfsteinpflaster	Q2 13909,8471 13808,8533
@@ -84,7 +84,7 @@ Sinsheimer Weg: schlechtes Kopfsteinpflaster, aber Ausweichen auf Parkplatz mˆgl
 Sinsheimer Weg: Betonstraﬂe	Q0 13774,8849 13837,8932
 #: XXX Asphaltierung geplant vvv
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2018-2022) vvv
-#: last_checked: 2017-06-02 vvv
+#: last_checked: 2017-06-14 vvv
 #: next_check: 2018-03-01 vvv
 Donaustr.: schlechtes bis m‰ﬂiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729 12549,8616 12649,8535
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12918,8232
@@ -109,6 +109,7 @@ Priesterweg: m‰ﬂiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: XXX wird dieses Teilst¸ck asphaltiert?
 #: XXX Baumaﬂnahme GL7.6, GL7.7 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf (erw‰hnt)
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-11-24_prot-fahrratsitzung4.pdf
 #: osm_watch: way id="102486250" version="7"
 #: last_checked: 2017-05-06
 #: check_frequency: 60d
@@ -282,7 +283,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (hier wird auch eine Einbahnstraﬂenregelung erw‰hnt, hoffentlich nur f¸r Autos! -> realisiert)
 #: source_id: INKO_2147340291_COPY_1
 #: source_id: 2147340291
-#: last_checked: 2017-06-08
+#: last_checked: 2017-06-14
 #: check_frequency: 60d
 Mariannenstr: m‰ﬂiges bis gutes Kopfsteinpflaster, 25 km/h mˆglich	Q1- 11512,10105 11616,10288
 Mariannenstr: Asphalt	Q0 11616,10288 11671,10402
@@ -478,7 +479,7 @@ Mittelweg: Kopfsteinpflaster	Q3 12176,7811 12224,7799 12335,7770
 #: note: vielleicht sogar Q1+? vvv
 #: XXX hier wird die Fahrbahn ausgebessert (2017), sp‰ter (2018-2022) Radfahrstreifen oder "Protected Bike-Lane"
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017)
-#: last_checked: 2017-05-19
+#: last_checked: 2017-06-14
 #: check_frequency: 60d
 Karl-Marx-Str.: Asphalt mit Sch‰den	Q0- 11831,8989 11880,8955 11998,8872 12063,8826 12156,8760 12330,8636
 Karl-Marx-Str.: Asphalt mit Sch‰den	Q0- 12330,8636 12500,8504
@@ -786,7 +787,7 @@ Wismarplatz: Kopfsteinpflaster	Q2 14395,11753 14416,11815
 Mainzer Str.: Asphalt	Q0 14306,11889 14354,12012 14427,12197
 Colbestr.: Asphalt	Q0 14416,11815 14468,11992
 Colbestr.: Asphalt, einige Schlaglˆcher	Q0- 14468,11992 14523,12183
-Kinzigstr.: m‰ﬂiger Asphalt	Q1 14589,11975 14471,11782
+Kinzigstr.: Asphalt	Q0 14589,11975 14471,11782
 Waldeyerstr.: Kopfsteinpflaster	Q2 15058,12329 15003,12241
 #: by: Carsten (kcdr):
 Am Heidekampgraben: asphaltiert	Q0 15053,7966 15030,7928 15025,7860 14975,7665 14989,7574 15042,7513 15054,7474 15132,7402 15176,7315 15168,7256 15200,7233 15272,7151 15327,7065 15367,7031 15416,6944 15470,6886 15489,6839 15532,6794 15615,6610 15595,6569 15582,6493 15578,6471 15562,6461 15516,6357 15505,6342 15496,6314 15437,6227 15403,6145 15396,6125 15393,6112 15358,6022
@@ -2006,7 +2007,8 @@ Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8825,11773 8813,11825 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
 (Markgrafendamm - Modersohnstr.; ¸ber das DB-Gel‰nde): asphaltiert	Q0 14671,10751 14566,10783
 (Markgrafendamm - Modersohnstr.; ¸ber das DB-Gel‰nde): Beton	Q0 14566,10783 14558,10819
-(Markgrafendamm - Modersohnstr.; ¸ber das DB-Gel‰nde): m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3+ 14558,10819 14231,10907 14141,10931 14107,10911 14043,10928
+(Markgrafendamm - Modersohnstr.; ¸ber das DB-Gel‰nde): m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3+ 14558,10819 14231,10907 14141,10931 14107,10911
+(Markgrafendamm - Modersohnstr.; ¸ber das DB-Gel‰nde): asphaltiert	Q0 14107,10911 14043,10928
 (Markgrafendamm - Modersohnstr.; Werkstraﬂe ¸ber das DB-Gel‰nde): asphaltiert	Q0 14231,10907 14224,10878 14107,10911
 Mehringplatz: Verbundsteinpflaster	Q0 9592,10263 9547,10278 9517,10332 9527,10389 9587,10421 9646,10404 9675,10351 9668,10306 9646,10279 9606,10263 9592,10263
 Mehringplatz - Friedrichstr.: Verbundsteinpflaster	Q0 9587,10421 9570,10566
@@ -9865,7 +9867,8 @@ Fellbacher Str.: Kopfsteinpflaster	Q2 3610,23272 3653,23305
 (Weg zum groﬂen Bunkerberg): kleinteiliges Kopfsteinpflaster	Q1- 12307,13329 12355,13366 12391,13416 12386,13452 12305,13514 12232,13523 12197,13488 12196,13453 12235,13383 12274,13372 12327,13394 12344,13424 12307,13491 12254,13495 12232,13477 12246,13440 12278,13418 12287,13443
 Torstr. - Weydingerstr.: Verbundsteinpflaster	Q1+ 11079,13492 11111,13518
 #: XXX Wird die Fahrbahn nochmal ge‰ndert? Wird bei der Erstellung der Straﬂe auch eine Beleuchtung eingebaut (-> nolighting-orig)?
-#: last_checked: 2017-06-01
+#: last_checked: 2017-06-13
+#: check_frequency: 14d
 Wilhelmine-Gemberg-Weg: provisorischer Asphalt	Q0 11715,11522 11762,11665
 Wilhelmine-Gemberg-Weg: Feinschotter	Q1 11762,11665 11829,11727
 Alexanderplatz: Pflasterung mit Sch‰den	Q1- 11055,12717 11030,12741 11007,12773 10970,12822
@@ -11509,6 +11512,7 @@ Heidekrautweg: Asphalt	Q0 21982,10874 22060,10914
 #: XXX wird hier vielleicht asphaltiert werden? vvv
 #: XXX Baumaﬂnahme GL7.25 (Realisierung nach 2011) vvv
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf (erw‰hnt)
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-11-24_prot-fahrratsitzung4.pdf
 #: last_checked: 2014-10-04 vvv
 #: next_check: 2017-06-01 vvv
 #: osm_watch: way id="152177244" version="3"

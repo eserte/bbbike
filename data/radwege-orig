@@ -871,7 +871,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736 20755,5750
 	RW2; 14015,7631 14095,7568 14174,7505
 	RW1; 14174,7505 14095,7568 14015,7631
 #: next_check_id: SONNENALLEE-2014 vvv
-#: XXX laut fritz "geänderte Straßenführung" bis 31.12.2016, laut vmz bis Mitte Juni 2017
+#: XXX laut fritz "geänderte Straßenführung" bis 31.12.2016, laut vmz bis Ende Juli 2017
 #: source_id: IM_023718
 #: source_id: 2147339540
 #: last_checked: 2017-06-08 vvv
@@ -4612,15 +4612,14 @@ asphaltiert	RW1;RW1 20779,3046 20832,3170 20927,3292 20967,3343 21055,3415 21153
 Tempo 10	RW6;RW6 13559,12779 13470,12990
 	RW4; 5165,6119 4984,6209 4937,6205
 	RW6;RW6 4971,6345 4854,6413
-	RW3; 14355,12752 14096,12827
+	RW3;RW3 14355,12752 14096,12827
 	RW4;RW3 14096,12827 14066,12836
 	RW3;RW3 14066,12836 13979,12861 13960,12866 13844,12900
+#: next_check_id: KANTSTR-2017
 #: XXX wegen Bauarbeiten am Hochhaus "Upper West" sind die Radspuren aufgehoben
 #: by: http://www.tagesspiegel.de/berlin/stadtentwicklung-zwillingsturm-soll-2016-in-der-city-west-eroeffnen/7416454.html (geplante Eröffnung Mitte 2016)
-#: source_id: LMS-BR_r_LMS-BR_121
-#: XXX laut fritz bis zum 26. April 2017, laut vmz mittlerweile entfernt
 #: last_checked: 2017-06-11
-#: next_check: 2017-06-16
+#: next_check: 2017-07-15
 #	RW3; 5488,10978 5613,10963 5652,11004
 ##: note: teilweise vor dem Hotel unterbrochen (wegen Ladezone?)
 #	RW3; 5652,11004 5613,10963 5488,10978

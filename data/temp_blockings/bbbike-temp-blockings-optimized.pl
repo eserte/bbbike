@@ -2831,7 +2831,17 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: laut vmz bis 18.6. nachts, go with fritz
+userdel	2::temp 8070,12409 8017,12359 7875,12363 7821,12367 7627,12380 7514,12387 7437,12368
+',
+         'from' => 1497465143,
+         'id' => 2231,
+         'source_id' => 'LMS-BR_r_LMS-BR_99873_LMS-BR_72',
+         'text' => 'John-Foster-Dulles-Allee: Sportveranstaltung, Fahrbahn gesperrt, bis 17.06.2017 09:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1497682800
+       },
        undef,
        undef,
        undef,
@@ -4150,15 +4160,16 @@ userdel	q4::inwork 5059,7216 5064,7160 5081,7112
        undef,
        undef,
        {
-         'data' => '#: source_id: LMS-BR_r_LMS-BR_121
+         'data' => '#: next_check_id: KANTSTR-2017
+#: source_id: LMS-BR_r_LMS-BR_121
 userdel	q4::inwork; 5488,10978 5613,10963 5652,11004
 ',
          'from' => 1488236400,
          'id' => 2851,
          'source_id' => '2147341048',
-         'text' => 'Kantstr.: Richtung Budapester Str. ab Joachimsthaler Str. gesperrt, voraussichtlich bis 16. Juni 2017',
+         'text' => 'Kantstr.: Richtung Budapester Str. ab Joachimsthaler Str. gesperrt, voraussichtlich bis 14. Juli 2017',
          'type' => 'handicap',
-         'until' => 1497628800
+         'until' => 1500048000
        },
        undef,
        {
@@ -4177,14 +4188,14 @@ userdel	q4::inwork; 5583,5179 5527,5217 5416,5289 5397,5302 5382,5312
        undef,
        undef,
        {
-         'data' => '#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2017-06-02 vvv
-#: check_frequency: 7d vvv
+         'data' => '#: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober
+#: last_checked: 2017-06-14 vvv
+#: next_check: 2017-08-14 vvv
 	q3::inwork 13384,8354 13217,8493
 # REMOVED userdel	q3::inwork; 13217,8493 13262,8554
 	q3::inwork; 13262,8554 13301,8606 13314,8624
 	q4::inwork 13366,8694 13314,8624
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 ',
          'from' => 1491498639,

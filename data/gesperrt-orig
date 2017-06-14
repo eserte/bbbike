@@ -1889,6 +1889,7 @@ tragen (viele weite Stufen)	0:60 -735,4407
 tragen (20 Stufen)	0:30 13644,21808
 tragen (17 Stufen)	0:30 13617,21819
 tragen (3 x 3 Stufen) oder steile Rampen benutzen	0:15 21979,274
+tragen (7 Stufen) bzw. Rampe zum Schieben benutzen	0:12 12380,13120
 tragen (9 Stufen)	0:12 21963,261
 #: note: etwas weiter auseinanderliegend:
 tragen (5 Stufen)	0:10 19132,7769
@@ -2812,7 +2813,8 @@ Voltairestr.: Baustelle, Fahrtrichtung gesperrt	1s:q3 11329,12497 11209,12430
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt	1s:q3 5192,10234 5196,10398
 # 
 #: source_id: 2147341003 (Bauarbeiten in der angrenzenden Modersohnstr.)
-#: last_checked: 2017-06-07
+#: last_checked: 2017-06-13
+#: check_frequency: 14d
 DB-Werkstraße: Zufahrt zur DB-Werkstraße ist wegen Bauarbeiten gesperrt	2::inwork 14043,10928 14107,10911
 # 
 #: XXX laut fritz bis 30. September 2017
@@ -3022,7 +3024,7 @@ Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::in
 #: next_check_id: EUROPACITY-2015 vvv
 #: last_checked: 2017-05-29 vvv
 #: check_frequency: 60d vvv
-#: osm_watch: way id="237704729" version="7"
+#: osm_watch: way id="237704729" version="8"
 Lydia-Rabinowitsch-Str.: noch gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924
 #: osm_watch: way id="237716438" version="6"
 Clara-von-Simson-Str.: noch gesperrt	2 7652,14257 7757,14318 7802,14250 7697,14187
@@ -3059,12 +3061,12 @@ Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3
 #: next_check_id ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2017-06-01
+#: last_checked: 2017-06-13
 #: check_frequency: 120d
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2017-06-01
+#: last_checked: 2017-06-13
 #: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 
