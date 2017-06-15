@@ -21645,9 +21645,9 @@ EOF
 userdel	q4::temp 5475,10808 5341,10756 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435
 EOF
      },
-     { from  => 1370491200, # 2013-06-06 06:00
-       until => 1370836800, # 2013-06-10 06:00
-       text  => 'Str. des 17. Juni zwischen Yitzak-Rabin-Str. und Ebertstr. wegen Velothon gesperrt ab 07.06.2013 6 Uhr, bis 10.06.2013 6:00 Uhr ',
+     { from  => 1497556466, # 1370491200, # 2013-06-06 06:00
+       until => $isodate2epoch->("2017-06-19 06:00:00"), # 1370836800, # 2013-06-10 06:00
+       text  => 'Str. des 17. Juni wegen Vorbereitungen zum Velothon gesperrt bis 19.06.2017 6:00 Uhr ',
        type  => 'gesperrt',
        source_id => 'IM_019938',
        data  => <<EOF,
@@ -26097,6 +26097,15 @@ EOF
 #: XXX wann sind die Bauarbeiten beendet?
 #: last_checked: 2017-06-11
 userdel	2::inwork 21685,916 21708,937 21857,989 21977,988
+EOF
+     },
+     { from  => 1497556689, # 2017-06-15 21:58
+       until => 1504216800, # 2017-09-01 00:00
+       text  => 'Schönerlinder Str.: Autobahnbrücke gesperrt, unklar, ob Radfahrer und Fußgänger trotzdem passieren können, bis 31.08.2017',
+       type  => 'gesperrt',
+       source_id => '2147341179',
+       data  => <<EOF,
+userdel	2::inwork 11980,24276 11959,24220
 EOF
      },
     );

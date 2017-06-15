@@ -1024,7 +1024,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5459,11135 5258,11285
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5091,11406 5085,11413 4922,11600
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
-#: last_checked: 2017-05-08
+#: last_checked: 2017-06-15
 #: check_frequency: 60d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1034,7 +1034,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut rbbtext bis 31.05.2016, laut vmz bis Ende 2016, laut fritz bis 09.01.2018
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2017-06-02
+#: last_checked: 2017-06-15
 #: check_frequency: 90d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 9695,12390 9656,12386 9601,12380
@@ -2211,7 +2211,7 @@ Gehweg für Radfahrer frei	RW1;RW1 21569,5730 21596,5693 21602,5685 21706,5541 21
 die letzten 70 Meter sind benutzungspflichtig	RW1; 21789,5427 21954,5229
 	RW1; 21954,5229 21789,5427
 die letzten Meter sind benutzungspflichtig	RW3; 10755,13152 10923,13156
-die Radspur hört einige Meter vor der Ampel auf	RW4; 10923,13156 10755,13152
+	RW4; 10923,13156 10755,13152
 	RW4;RW4 13865,9866 13890,9894
 	RW7;RW7 10001,9234 10123,9233 10547,9233
 #: by: G. Chill:

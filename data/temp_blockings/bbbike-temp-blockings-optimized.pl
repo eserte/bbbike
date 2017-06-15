@@ -3295,7 +3295,16 @@ userdel	q4::temp 5475,10808 5341,10756 5215,10711 5076,10658 4847,10589 4676,105
          'type' => 'handicap',
          'until' => 1497837600
        },
-       undef,
+       {
+         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
+',
+         'from' => 1497556466,
+         'id' => 2440,
+         'source_id' => 'IM_019938',
+         'text' => 'Str. des 17. Juni wegen Vorbereitungen zum Velothon gesperrt bis 19.06.2017 6:00 Uhr ',
+         'type' => 'gesperrt',
+         'until' => 1497844800
+       },
        undef,
        undef,
        undef,
@@ -4293,6 +4302,16 @@ userdel	2::inwork 21685,916 21708,937 21857,989 21977,988
          'text' => 'Am Wiesenweg: Bauarbeiten, Weg komplett gesperrt (auch für Fußgänger), Ende unbekannt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => 'userdel	2::inwork 11980,24276 11959,24220
+',
+         'from' => 1497556689,
+         'id' => 2869,
+         'source_id' => '2147341179',
+         'text' => 'Schönerlinder Str.: Autobahnbrücke gesperrt, unklar, ob Radfahrer und Fußgänger trotzdem passieren können, bis 31.08.2017',
+         'type' => 'gesperrt',
+         'until' => 1504216800
        }
      
 );
