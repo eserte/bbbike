@@ -1487,8 +1487,8 @@ check-disabled:
 	$(CHECK_POINTS) -ampelschaltung ampelschaltung-orig ampeln-orig
 	@touch $@
 
-.check_ortsschilder:	ortsschilder .strassen.tmp landstrassen landstrassen2 fragezeichen
-	$(CHECK_POINTS) -assert-single-coordinate ortsschilder .strassen.tmp landstrassen landstrassen2 fragezeichen
+.check_ortsschilder:	ortsschilder .strassen.tmp landstrassen landstrassen2 fragezeichen strassen_bab
+	$(CHECK_POINTS) -assert-single-coordinate ortsschilder .strassen.tmp landstrassen landstrassen2 fragezeichen strassen_bab
 	@touch $@
 
 .check_ortsschilder2:	orte orte2 ortsschilder-orig
