@@ -55,7 +55,9 @@ for my $f (@ARGV) {
     if ($filter_vehicle) {
 	$dump = filter_vehicle($dump);
     }
-    DumpFile $dest, $dump;
+    DumpFile "$dest~", $dump;
+    rename "$dest~", $dest
+	or die "Error renaming $dest~ to $dest: $!";
 }
 
 sub filter_vehicle {
