@@ -4,14 +4,15 @@
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
-Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt, Bordsteine	q3 14254,11377 14211,11229
+Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3 14254,11377 14211,11229
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 Auerstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13273,12902 13202,12790
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q4::inwork 9736,13061 9636,13076
 Kommandantenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10330,11422 10136,11529
 Beuthstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10201,11631 10235,11610 10330,11422
-Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9935,11566 9949,11470
+Jerusalemer Str.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9925,11565 9936,11469
+Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9945,11371 9936,11469
 Alexandrinenstr.: direkter Zugang zur Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q3::inwork 10818,11269 10678,11172
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9984,12426 9996,12401 10058,12290
 Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 10008,12274 10058,12290
@@ -33,7 +34,7 @@ Kiehlufer: Bauarbeiten, Fahrbahn gesperrt, Bordsteine beim Ausweichen auf dem Ge
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 Dieselstr., Umfahrung: Fußgänger, kurvig, eng	q2::inwork 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112 14429,8074 14471,8046
 Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süden auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12753,8187 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785 12969,7610
-Möllendorffstr.: Bauarbeiten, Radfahrer müssen auf die gegenüberliegende Seite wechseln	q3::inwork; 15420,12178 15361,12071
+Möllendorffstr.: Bauarbeiten, Radfahrer müssen auf die gegenüberliegende Seite wechseln	q4::inwork; 15420,12178 15361,12071
 Bautzener Str.: Bauarbeiten an der Großgörschenstr., auf Gehweg ausweichen	q4::inwork 8186,9380 8185,9338
 Jülicher Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
 Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
@@ -2469,7 +2470,8 @@ Erkelenzdamm: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1111
 Privatstr. 14: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13159,17196 13103,17280
 Bernkasteler Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 15208,16939 15015,16908 14923,16901 14923,16914
 (Breite Str., Verbindung): gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 10463,18321 10487,18270
-Sauerbruchweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 8487,13351 8555,13260 8605,13200 8630,13172
+Sauerbruchweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 8487,13351 8630,13172
+Virchowweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 8603,13076 8550,13150
 Harzburger Str. (Pankow), Klaustaler Str...: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 11442,18736 11419,18801 11463,18817 11469,18799 11483,18753 11462,18743 11442,18736
 Römerweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 19236,9710 19450,9728 19459,9842
 Lötschbergstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 20161,11715 20150,11512
@@ -2563,7 +2565,6 @@ Schinkelplatz: Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q
 Karower Str.: temporäre Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 16593,25640 16632,25512 16669,25373
 Voltairestr.: Baustelle, Fahrtrichtung gesperrt: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 11329,12497 11209,12430
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 5192,10234 5196,10398
-Zillestr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 3807,11859 3976,11869
 Bouchéstr.: Baustelle, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13190,9139 13298,9252
 Mengerzeile: Baustelle, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13176,9302 13100,9210
 Heidelberger Str.: Baustelle, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13489,9199 13420,9259 13357,9313

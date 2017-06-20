@@ -1744,29 +1744,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/veranstaltungen/koepenicker-sommer-323856.php
-userdel	2::temp 22111,4562 22093,4499 22076,4422
-userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
-userdel	2::temp 22138,4642 22074,4664
-# REMOVED --- userdel	2::temp 22111,4562 22162,4546 22214,4548 22324,4586 22314,4604 22355,4660 22365,4676 22395,4678
-',
-         'from' => 1497477600,
-         'id' => 1702,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              14,
-                              'months',
-                              6
-                            ]
-                          ],
-         'text' => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain (16.06.2017 - 18.06.2017)',
-         'type' => 'gesperrt',
-         'until' => 1497823199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2831,17 +2809,7 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: laut vmz bis 18.6. nachts, go with fritz
-userdel	2::temp 8070,12409 8017,12359 7875,12363 7821,12367 7627,12380 7514,12387 7437,12368
-',
-         'from' => 1497465143,
-         'id' => 2231,
-         'source_id' => 'LMS-BR_r_LMS-BR_99873_LMS-BR_72',
-         'text' => 'John-Foster-Dulles-Allee: Sportveranstaltung, Fahrbahn gesperrt, bis 17.06.2017 09:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1497682800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3272,39 +3240,8 @@ userdel	2::temp 14161,11930 14285,12190
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.die-classic-days-berlin.de/programm-2/
-#: note: kann im Juni oder Juli stattfinden
-#: tempex: 20170616T0400-20170619T0400
-userdel	q4::temp 5475,10808 5341,10756 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435
-',
-         'from' => 1497492000,
-         'id' => 2439,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              2,
-                              'months',
-                              6
-                            ]
-                          ],
-         'source_id' => 'IM_025248',
-         'text' => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, vom 16.06.2017 bis 19.06.2017 früh',
-         'type' => 'handicap',
-         'until' => 1497837600
-       },
-       {
-         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
-',
-         'from' => 1497556466,
-         'id' => 2440,
-         'source_id' => 'IM_019938',
-         'text' => 'Str. des 17. Juni wegen Vorbereitungen zum Velothon gesperrt bis 19.06.2017 6:00 Uhr ',
-         'type' => 'gesperrt',
-         'until' => 1497844800
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -3568,13 +3505,14 @@ userdel	2::inwork -12583,-1552 -12485,-1482
        undef,
        {
          'data' => '#: by: fritz
-#: note: laut vmz "Gesamtbaumaßnahme" bis Mitte Juli 2017
-userdel	q4::inwork; 15080,11905 15121,11899 15248,11880
+#: XXX: laut vmz "Gesamtbaumaßnahme" bis Mitte Juli 2017
+#: next_check: 2017-06-25
+userdel	q4::inwork; 15080,11905 14965,11921 14887,11929
 ',
          'from' => 1496642400,
          'id' => 2550,
          'source_id' => '2147341388',
-         'text' => 'Scharnweberstr.: Baustelle, Fahrbahn zwischen Jessnerstr. und Gürtelstr. gesperrt, ab 06.06.2017 bis 25.06.2017',
+         'text' => 'Scharnweberstr.: Baustelle, Fahrbahn zwischen Jessnerstr. und Weichselstr. gesperrt, bis 25.06.2017',
          'type' => 'handicap',
          'until' => 1498384800
        },
@@ -4086,7 +4024,7 @@ userdel	q4::inwork 12911,1815 12817,2031
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-06-11 vvv
+#: last_checked: 2017-06-17 vvv
 #: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -4236,7 +4174,7 @@ userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 
        },
        undef,
        {
-         'data' => '#: last_checked: 2017-06-06
+         'data' => '#: last_checked: 2017-06-17
 #: check_frequency: 14d
 userdel	q4::inwork; 7201,8870 7107,9030
 ',
@@ -4259,7 +4197,7 @@ userdel	q4::inwork; 7201,8870 7107,9030
        undef,
        {
          'data' => '#: XXX bis wann gehen die Bauarbeiten?
-#: last_checked: 2017-06-04
+#: last_checked: 2017-06-19
 userdel	q3::inwork; 8752,12647 8870,12647
 ',
          'from' => undef,

@@ -20,17 +20,17 @@
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
-#: last_checked: 2017-06-14
+#: last_checked: 2017-06-17
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2017-06-14
-Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt, Bordsteine	q3 14254,11377 14211,11229
+#: last_checked: 2017-06-20
+Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3 14254,11377 14211,11229
 # 
 #: last_checked: 2017-05-28
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2017-06-13
+#: last_checked: 2017-06-20
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 #: last_checked: 2017-06-14
@@ -89,26 +89,27 @@ Auerstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13273,12902 13202,12790
 #: XXX Ende der Bauarbeiten?
 #: osm_watch: way id="4610375" version="16"
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
-#: last_checked: 2017-06-15
+#: last_checked: 2017-06-19
 #: check_frequency: 14d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q4::inwork 9736,13061 9636,13076
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3339&mt=0&zoom=16 (Projektabschluss: 2017-03-31)
-#: last_checked: 2017-06-15
+#: last_checked: 2017-06-19
 Kommandantenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10330,11422 10136,11529
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3339&mt=0&zoom=16 (Projektabschluss: 2017-03-31)
-#: last_checked: 2017-06-15
+#: last_checked: 2017-06-19
 Beuthstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10201,11631 10235,11610 10330,11422
 # 
 # REMOVED --- #: last_checked: 2017-04-19 --- #: next_check: 2017-04-28 --- Sebastianstr.: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 10640,11564 10818,11269
 # 
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_24_2713_2792_online.pdf (Verbreiterung)
-#: last_checked: 2017-06-12
-#: check_frequency: 12d
-Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9935,11566 9949,11470
+#: last_checked: 2017-06-19
+#: check_frequency: 5d
+Jerusalemer Str.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9925,11565 9936,11469
+Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9945,11371 9936,11469
 # 
-# REMOVED --- #: last_checked: 2017-03-14 vvv --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9990,11571 9935,11566 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q2-::inwork 9935,11566 9737,11546 --- #: last_checked ^^^
+# REMOVED --- #: last_checked: 2017-03-14 vvv --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9990,11571 9925,11565 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q2-::inwork 9925,11565 9737,11546 --- #: last_checked ^^^
 # 
 # REMOVED --- : osm_watch: note 814191 1
 #: last_checked: 2017-06-15
@@ -116,7 +117,7 @@ Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9935,11566 9949,1147
 Alexandrinenstr.: direkter Zugang zur Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q3::inwork 10818,11269 10678,11172
 # 
 # REMOVED --- #: last_checked: 2016-09-30 --- Schützenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10116,11485 9949,11470 --- 
-# REMOVED (wieder offen) --- #: XXX gibt es hier noch Einschränkungen? --- #: last_checked: 2016-01-14 --- #: next_check: 2016-02-03 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9935,11566 9990,11571
+# REMOVED (wieder offen) --- #: XXX gibt es hier noch Einschränkungen? --- #: last_checked: 2016-01-14 --- #: next_check: 2016-02-03 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9925,11565 9990,11571
 # REMOVED (wieder offen, allerdings offiziell Einbahnstraße) --- #: XXX bis wann dauert die Sperrung an? --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6992 (Frage nach Ende der Bauarbeiten) --- #: last_checked: 2016-03-17 --- Michaelkirchplatz: Sperrung der Fahrbahn am Engelbecken	q2::inwork 11415,11392 11349,11227
 # REMOVED (Passage wieder möglich) --- #: last_checked: 2016-04-19 --- Michaelkirchplatz: direkte Durchfahrt am Engeldamm gesperrt, Umweg erforderlich	q2::inwork 11542,11342 11473,11180
 # REMOVED (zwar noch Einbahnstraße, aber man kann mittlerweile relativ gut vorbei) --- #: XXX bis wann dauert die Sperrung an? Wird die Straße dann asphaltiert sein? (siehe auch Änderung in qualitaet_s-orig, "provisorischer Asphalt") --- #: last_checked: 2016-03-17 --- Leuschnerdamm: Sperrung der Fahrbahn Richtung Michaelkirchplatz	q4::inwork; 11458,11136 11473,11180
@@ -153,7 +154,7 @@ Prinzengasse: einige Fußgänger, parkende Autos	q3::inwork 9955,12300 10002,12305
 # REMOVED (Einbahnstraßenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universitätsstr.: wegen Bauarbeiten Einbahnstraße zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9580,12581
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2017-05-27 vvv
+#: last_checked: 2017-06-19 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="5"
@@ -175,31 +176,14 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # REMOVED (noch nicht ganz fertig, im Süden noch kurze Baustelle, umgedrehte Einbahnstraßenregelung, lohnt aber nicht) ---  #: last_checked: 2015-04-09 vvv --- Christinenstr.: Einbahnstraßenregelung wegen Baustelle	q4::inwork; 10688,13963 10639,13864 10599,13775 10569,13719 --- #: last_checked ^^^
 # REMOVED --- #: next_check_id: SCHWEDTER-2014 vvv --- #: last_checked: 2015-08-11 vvv --- # REMOVED --- Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q2::inwork 10567,14337 10530,14452 --- Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q2::inwork 10530,14452 10506,14521
 # REMOVED (offen) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1507/nachricht5698.html --- #: XXX wird am 3. August geöffnet --- hat sich aber verzögert! --- #: last_check: 2015-08-05 --- #: check_frequency: 7d --- #: priority: #A --- Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Caroline-Michaelis-Str. und und Hessische Str. gesperrt	q4::inwork; 9151,13941 9085,13919 8935,13844
-# 
-#: next_check_id: INVALIDEN-2014 vvv
-#: last_checked: 2015-08-10 vvv
-#: next_check: 2015-08-30 vvv
-#: XXX voraussichtlich gesperrt bis zum 30. August 2015
-#: priority: #A vvv
-#: source_id: IM_017330
-#: source_id: INKO_113944
-#: source_id: IM_021586
-#: source_id: IM_021585
-#: XXX siehe auch temporäre Ampel an der Chausseestr. sowie an der Luisenstr.
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1207/nachricht4724.html
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1403/nachricht5212.html
+# REMOVED --- #: next_check_id: INVALIDEN-2014 vvv --- #: last_checked: 2015-08-10 vvv --- #: next_check: 2015-08-30 vvv --- #: XXX voraussichtlich gesperrt bis zum 30. August 2015 --- #: priority: #A vvv --- #: source_id: IM_017330 --- #: source_id: INKO_113944 --- #: source_id: IM_021586 --- #: source_id: IM_021585 --- #: XXX siehe auch temporäre Ampel an der Chausseestr. sowie an der Luisenstr. --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1207/nachricht4724.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1403/nachricht5212.html
 # REMOVED --- Caroline-Michaelis-Str.: Bauarbeiten, Zufahrt zur Invalidenstr. umständlich	q4::inwork; 9151,13941 9125,13973
-#: XXX_prog: evtl. als q4+ eintragen (falls möglich), 9km/h sind eigentlich möglich
+# REMOVED --- #: XXX_prog: evtl. als q4+ eintragen (falls möglich), 9km/h sind eigentlich möglich
 # REMOVED (but check!) --- Invalidenstr. (Mitte): Baustelle, Fahrbahn zwischen Caroline-Michaelis-Str. und Gartenstr. gesperrt	q4::inwork 9383,13986 9285,13965 9274,13963 9203,13953 9151,13941
 # REMOVED (but check!) --- Invalidenstr.: Fahrbahn zwischen Gartenstr. und Bergstr. teilweise gesperrt	q2::inwork 9383,13986 9659,14043 9676,14046
 # REMOVED (mittlerweile besser befahrbar, denke ich) --- Invalidenstr. (Mitte): Baustelle, Fahrbahn in Richtung Gartenstr. zwischen Caroline-Michaelis-Str. und Eichendorffstr. gesperrt	q4::inwork; 9151,13941 9203,13953
 # REMOVED (wieder offen ab 2013-08-29) --- Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 8690,13723 8661,13715 8622,13696
 # REMOVED (wieder offen ab 2013-08-29) --- #: source_id: IM_019009 --- #: source_id: IM_018437 --- Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
-#: priority ^^^
-#: next_check ^^^
-#: last_checked: ^^^
-#: next_check_id ^^^
-# 
 # REMOVED --- #: XXX Einbahnstraßenregelung danach wieder aufheben! --- #: XXX Vollsperrung ab 6. August für vier Wochen --- können Radfahrer trotzdem hier trotzdem fahren? --- #: source_id: IM_024549 --- #: last_checked: 2015-04-01 --- #: next_check: 2015-08-06 --- #: priority: #A --- Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, gesperrt Richtung Osten, bis 15. August 2015	q4::inwork; 8870,13926 9011,14019
 # REMOVED (-> temp_blockings) --- #: source_id: IM_021585 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5236.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1406/nachricht5293.html (planmäßige Fertigstellung) --- #: XXX nach den Bauarbeiten wird es hier einen Radfahrstreifen geben --- #: note: man kann auch auf den Tramgleisen fahren, deshalb nur noch q2 --- #: last_checked: 2015-03-27 --- #: next_check: 2015-04-01 --- #: priority: #A --- Invalidenstr. (Mitte) Richtung Alt-Moabit zwischen Chausseestr. und und Hessische Str.: teilweise noch Bauarbeiten auf der Fahrbahn, auf Gehweg umfahren	q2::inwork; 8935,13844 8842,13798
 # REMOVED --- #: valid: -20140428 --- #: next_check: 2014-04-28 (wird wieder befahrbar sein) --- #: priority: #A --- Schwarzer Weg: Sackgasse an der Invalidenstraße, Zugang für Fußgänger und schiebende Radfahrer möglich	q3::inwork 8426,13909 8574,13666
@@ -214,8 +198,8 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # REMOVED (fertig?) --- Ella-Trebe-Str.: Einbahnstraßenregelung wegen Bauarbeiten	q3::inwork; 7939,13026 7948,12918
 # 
 #: by: http://www.bmbf.de/de/16888.php (Bezug im Herbst 2014)
-#: osm_watch: way id="4592727" version="12"
-#: last_checked: 2017-05-29
+#: osm_watch: way id="4592727" version="13"
+#: last_checked: 2017-06-19
 #: check_frequency: 60d
 Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse!), Ausweichen auf Gehweg	q3::inwork 8315,13181 8406,13127
 # 
@@ -230,14 +214,14 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: next_check_id: STAATSOPER-2014 vvv
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html
-#: last_checked: 2017-05-24 vvv
+#: last_checked: 2017-06-19 vvv
 #: check_frequency: 30d vvv
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9883,12251 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2017-06-02
+#: last_checked: 2017-06-19
 Werdersche Rosenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9883,12251 9959,12281
 # 
 #: next_check_id: OBERWALL-2014
@@ -270,7 +254,7 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # REMOVED (wieder offen) --- #: next_check_id: SPANDAUERSTR-2014 --- #: source_id: INKO_089389 (eigentlich hier nur die Spandauer Str. erwähnt) --- #: XXX siehe auch Eintrag zur Spandauer Str. in qualitaet_s-orig --- #: last_checked: 2014-03-24 --- #: check_frequency: 7d --- #: priority: #A --- Rathausstr.: Sperrung an der Spandauer Str., Ausweichen auf Gehweg	q4 10584,12507 10601,12521
 # REMOVED --- #: last_checked: 2012-09-19 vvv--- #: next_check: 2012-10-19 vvv --- #: note: komplette Fertigstellung und Verkehrsfreigabe im Frühjahr 2013 --- Rathausstr. und Rathausbrücke: Behinderungen wegen Bauarbeiten möglich	q1::inwork 10285,12306 10362,12351 10416,12394 --- #: next_check: ^^^ --- #: last_checked: ^^^
 # REMOVED --- #: last_checked: 2013-03-18 --- #: next_check: 2013-04-02 --- Zimmerstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10072,11384 9945,11371 9737,11349
-# REMOVED (das Einfahrt verboten-Schild hängt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9949,11470 9935,11566
+# REMOVED (das Einfahrt verboten-Schild hängt noch, wurde allerdings wahrscheinlich vergessen - 2013-02-06) --- #: last_checked: 2013-01-28 --- Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9936,11469 9925,11565
 # REMOVED (weitgehend fertig) --- #: last_checked: 2016-12-06 vvv --- #: check_frequency: 30d vvv --- Neue Jakobstr. [Wohngebiet]: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10963,11695 11017,11658 --- Neue Jakobstr. [Wohngebiet]: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 11017,11658 11081,11614 11131,11579
 # REMOVED --- #: XXX laut fritz bis 29.07.2016 --- #: source_id: 2147339998 --- #: last_checked: 2016-10-28 --- #: check_frequency: 14d --- Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10256,11160 10437,11352
 # REMOVED --- #: last_checked: 2016-10-06 vvv --- Alte Jakobstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 10489,11405 10624,11548
@@ -394,10 +378,11 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süde
 ### Lichtenberg ###
 # 
 #: next_check_id: MOELLENDORFFSTR-2017
-#: XXX_prog abgeschätzter Zeitverlust durch 2x Ampeln
+#: XXX_prog abgeschätzter Zeitverlust durch 2x Ampeln, explizite "Radfahren verboten"-Schilder
 #: XXX laut fritz bis 1. August 2017
+#: next_check: 2017-08-01
 #: valid: -20170801
-Möllendorffstr.: Bauarbeiten, Radfahrer müssen auf die gegenüberliegende Seite wechseln	q3::inwork; 15420,12178 15361,12071
+Möllendorffstr.: Bauarbeiten, Radfahrer müssen auf die gegenüberliegende Seite wechseln	q4::inwork; 15420,12178 15361,12071
 # 
 # REMOVED #: next_check_id: HAUPTSTR-2015 --- #: source_id: 2147339565 --- #: source_id: LMS-BR_r_LMS-BR_65986 --- #: source_id: 2147340080 --- #: XXX laut vmz bis Ende August 2016, laut fritz bis 31.07.2016 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1604/nachricht5997.html --- #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.470764.php --- #: last_checked: 2016-08-25 --- #: next_check: 2016-08-29 --- Kynaststr./Hauptstr.: Bauarbeiten, Gehweg benutzen	q3::inwork 14882,10732 14906,10820
 # REMOVED --- #: last_checked: 2015-12-02 --- #: check_frequency: 14d --- Wiesenweg: Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q3::inwork 15303,11412 15477,11338
@@ -419,7 +404,7 @@ Möllendorffstr.: Bauarbeiten, Radfahrer müssen auf die gegenüberliegende Seite w
 ### Schöneberg ###
 # 
 #: last_checked: 2017-06-06
-#: check_frequency: 14d
+#: next_check: 2017-06-17
 Bautzener Str.: Bauarbeiten an der Großgörschenstr., auf Gehweg ausweichen	q4::inwork 8186,9380 8185,9338
 # 
 # #: source_id: LMS-BR_r_LMS-BR_76371
@@ -2280,7 +2265,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="5"
-#: last_checked: 2017-06-09
+#: last_checked: 2017-06-20
 #: check_frequency: 90d
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850

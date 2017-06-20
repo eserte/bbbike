@@ -431,7 +431,8 @@ Alt-Tempelhof	F:P 9512,6652 9249,6642 9154,6638 9054,6631 8949,6644 9052,6664 92
 Gustav-Müller-Platz	F:P 7644,8560 7606,8598 7643,8634 7682,8598 7644,8560
 Germaniagarten	F:P 11227,6163 11243,6246 11252,6319 11237,6326 11220,6323 11206,6252 11189,6171
 Oberlandgarten	F:P 11229,6549 11235,6499 11238,6470 11230,6413 11246,6403 11264,6409 11269,6466 11269,6503 11264,6555
-Friedhof Baumschulenweg	F:Cemetery 16122,6084 16282,6200 16479,6433 16592,6637 17094,6170 16868,5938 16510,5917 16220,6042
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5696 (teilweise Entwidmung)
+Friedhof Baumschulenweg	F:Cemetery 16122,6084 16282,6200 16458,6407 16509,6349 16621,6542 17016,6091 16868,5938 16510,5917 16220,6042
 Kirchhof Rudow	F:Cemetery 17928,764 18102,511 18204,361 18080,275 17973,428 17792,701
 Landschaftspark Rudow	F:P 18204,361 18080,275 18336,-103 18314,-138 18321,-195 18256,-309 18588,-438 18675,-231 18801,97 18587,191 18601,268 18317,665 18102,511 18204,361
 Landschaftspark Rudow-Altglienicke	F:P 18731,903 18718,1104 18704,1262 18679,1406 18649,1522 18620,1636 18527,1827 18396,1990 18491,2128 18580,2121 18594,2121 18606,1779 18656,1782 18666,1681 18757,1693 18793,1770 18810,1751 18723,1563 18750,1522 18786,1510 18763,1420 18739,1329 18776,1319 18790,1228 18819,1073 18812,1005 18804,955 19102,873 19094,853 19043,862 19025,820 18884,851 18850,711 19022,669 18970,532 18755,581 18777,752 18789,897
@@ -831,6 +832,7 @@ Murellenberge, Murellenschlucht, Schwanzenwald	F:Forest -1538,13122 -1958,13181 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file?y=2016 (Widmung)
 Bürgerwiese im Block 56	F:P 18967,5958 18954,5973 18968,6009 19079,6120 19106,6093 18967,5958
 # REMOVED --- #: note: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/02re.pdf/file?y=2015 (Widmung) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5154&options=4 (Umbenennung zu Lilli-Flora-Borchardt-Park) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5664&options=4 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5749 (Name soll nun nur Lilli-Flora-Park lauten) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/44re.pdf/file?y=2016 (Benennung) --- #: XXX wann wird umbenannt? --- #: last_checked: 2016-09-12
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.601517.php
 #: oldname: -20160929: Pallaspark
 Lilli-Flora-Park	F:P 7315,9808 7350,9806 7370,9952 7337,9965
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/07re.pdf/file?y=2015
@@ -1032,6 +1034,7 @@ Freundschaftsinsel	F:P -12573,-1765 -12539,-1715 -12425,-1509 -12125,-1473 -1208
 Hegelallee	F:P -13625,-902 -13590,-912 -13461,-870 -13236,-797 -13140,-766 -13058,-740 -12911,-696 -12879,-691 -12877,-655 -13044,-709 -13064,-715 -13137,-737 -13231,-763 -13433,-831 -13468,-847
 Karl-Liebknecht-Stadion	F:Sport -10281,-1115 -10333,-1198 -10447,-1121 -10389,-1038
 Wansdorfer Platz	F:P -3148,16712 -3254,16726 -3255,16667 -3203,16660 -3151,16657 -3148,16712
+Neuendorfer Anger	F:P -10757,-2214 -10834,-2296 -10847,-2325 -10808,-2338 -10747,-2255 -10757,-2214
 ######################################################################
 # in Brandenburg
 Stadtpark Prenzlau	F:P 39962,101085 39867,101104 39804,101160 39757,101217 39820,101897 39900,101931 39912,101911 40018,101425

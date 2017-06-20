@@ -1044,7 +1044,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 969
 #: source_id: IM_018997
 #: source_id: IM_023987
 #: source_id: IM_025933
-#: last_checked: 2017-05-29
+#: last_checked: 2017-06-19
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
@@ -1098,7 +1098,7 @@ neu asphaltiert	RW1; 17568,7753 17619,7679 17681,7589 17769,7465
 neu asphaltiert	RW1; 17769,7465 17681,7589 17619,7679
 #: XXX wie sieht es nach der Fahrbahnverschwenkung (dauert bis Anfang September 2017) aus? vvv
 #: source_id: 2147341340
-#: last_checked: 2017-06-11 vvv
+#: last_checked: 2017-06-20 vvv
 #: next_check: 2017-09-01 vvv
 	RW0; 17619,7679 17568,7753 17527,7812
 provisorischer schmaler Radstreifen	RW3; 17527,7812 17299,8140 17202,8391
@@ -1440,7 +1440,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 	RW3;RW3 11159,10769 11234,10739 11275,10723
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW4;RW4
-#: last_checked: 2017-06-11
+#: last_checked: 2017-06-19
 #: check_frequency: 60d
 	RW0;RW0 8804,12280 8775,12457
 	RW4;RW4 8775,12457 8766,12541
@@ -1448,7 +1448,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2017-06-04
+#: last_checked: 2017-06-19
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -2574,6 +2574,7 @@ Busspur für Radfahrer freigegeben	RW1; 13104,2143 13023,2093 13010,2085
 #: XXX Markierung von Schutzstreifen und Fahrbahnverbreiterung, Rückbau des alten Radweges vvv
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017) vvv
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php
+#: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.601178.php
 #: next_check: 2017-12-31 vvv
 # REMOVED (ja, ist so) --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4688 (abgesperrt) (vorher: Radwege mit Schäden) --- #: XXX vor Ort anschauen!
 vorhandener Radweg ist wegen Schäden abgesperrt	RW0; 13501,2413 13640,2229 13661,2207 13700,2173 13835,2099 14120,1991 14231,1952 14252,1945 14523,1847
@@ -3181,7 +3182,7 @@ auf beiden Seiten asphaltierter Rad- und Gehweg, mittlerweile schon mit Wurzelsc
 # REMOVED ---	RW;RW 640,3240 649,3221 669,3119
 	RW6;RW6 -426,9473 -249,9479 73,9438
 gemeinsamer Rad- und Gehweg	RW2;RW2 16838,6708 16909,6628 17216,6308 17293,6230
-	RW2;RW2 17293,6230 17483,6024 17728,5756
+	RW2;RW2 17293,6230 17483,6024 17628,5865 17728,5756
 	RW4;RW4 8891,18545 9214,18666 9279,18724 9465,18855
 	RW3; 9465,18855 9501,18902
 #: by: http://farm5.static.flickr.com/4145/5188901332_9b95d785d2.jpg

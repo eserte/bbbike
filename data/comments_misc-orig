@@ -124,10 +124,10 @@ Sesselmannweg: Kette	CS 3264,9261 3332,9181
 Apeldorner Weg: kein Straßenname ausgeschildert; Weg verläuft westl. direkt an der BAB (104)	CS 3848,8689 3868,8759 3952,8980
 #: XXX_prog: should be superseded by a superiour BNP-like implementation
 (Wallenbergstr. - Rudolstätter Str.): Bordsteine	CP; * 4029,8482 4139,8485
-Virchowweg: Gelände der Charité	CS 8548,13577 8503,13553 8377,13463 8371,13399 8434,13310 8603,13076 8623,13049 8632,13037
+Virchowweg: Gelände der Charité	CS 8548,13577 8503,13553 8377,13463 8371,13399 8434,13310 8550,13150 8603,13076 8623,13049 8632,13037
 Hufelandweg: Gelände der Charité	CS 8503,13553 8554,13476 8504,13441 8538,13388 8582,13355 8618,13306 8630,13172 8632,13133 8603,13076
 Bonhoefferweg: Gelände der Charité	CS 8538,13388 8487,13351 8434,13310
-Sauerbruchweg: Gelände der Charité	CS 8487,13351 8555,13260 8605,13200 8630,13172
+Sauerbruchweg: Gelände der Charité	CS 8487,13351 8630,13172
 (Luisenstr. - Hufelandweg): Gelände der Charité	CS 8665,13353 8582,13355
 (Reichsstr. - Westendallee): Privatstraße	CS 269,12576 151,12541
 (Guerickestr. - Einsteinufer): Privatstraße	CS 4602,12313 4658,12450
@@ -1112,7 +1112,7 @@ Im Brachfeldwinkel: ausgeschildert zum "Schwedenhaus"	CP2; 3068,21150 3024,21286
 # REMOVED (mittlerweile existiert ein Straßenschild) --- Altes Gaswerk Mariendorf: ausgeschildert "Marienpark" und "Kaiser's"	CP2; 8295,4303 8266,4221
 # REMOVED (mittlerweile existieren Staßenschilder) --- #: XXX sind die Straßen mittlerweile ausgeschildert? vvv --- Altes Gaswerk Mariendorf: ausgeschildert "Marienpark"	CP2; 8461,3410 8404,3648 --- Im Marienpark: nicht ausgeschildert	CP2; 8404,3648 8346,3633
 Str. 156: nicht ausgeschildert	CP2; 17532,15645 17570,15658
-#: last_checked: 2017-06-09
+#: last_checked: 2017-06-20
 #: check_frequency: 60d
 Wasserstr. und Uferstr.: noch nicht ausgeschildert	CS 17483,6024 17681,6212 17843,6083
 #: by: Max Mütze

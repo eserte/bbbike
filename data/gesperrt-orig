@@ -698,7 +698,8 @@ Westhafenstr.: Tor kann geschlossen sein; Unbefugten ist das Betreten nicht gest
 Frank-Schweitzer-Str.	1 19350,14997 19175,14926 19113,14901 19117,14875 19255,14911
 (Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.)	1 15413,11690 15482,11729 15639,11653
 # REMOVED (zurzeit keine Einbahnstraße) --- #: XXX laut osm ist hier keine Einbahnstraße --- Hufelandweg	1s:q3 8630,13172 8618,13306 8582,13355
-Sauerbruchweg	1s:q3 8487,13351 8555,13260 8605,13200 8630,13172
+Sauerbruchweg	1s:q3 8487,13351 8630,13172
+Virchowweg	1s:q3 8603,13076 8550,13150
 Rahel-Hirsch-Weg	1 8586,13440 8600,13448 8581,13487 8554,13476 8586,13440
 Hempelsteig	1 -787,13147 -525,13034 -472,12961
 Kaulsdorfer Str.	1 22075,6967 22049,7085
@@ -1119,7 +1120,7 @@ Sportfliegerstr.: Betriebsgelände	2 18370,4511 18423,4459
 #: by: olaf skeries
 Schillerhof	1 7069,17204 6928,17154
 #: XXX wird aufgehoben, sobald das einsturzgefährdete Haus abgerissen wird vvv
-#: last_checked: 2017-04-30 vvv
+#: last_checked: 2017-06-18 vvv
 #: check_frequency: 60d vvv
 Wartenbergstr.	1s:q2 15423,11667 15337,11639 15328,11636 15300,11584
 #: check_frequency ^^^
@@ -1215,9 +1216,10 @@ Behlertstr.	1 -12265,-418 -12194,-463 -12106,-699 -12045,-757
 Hebbelstr.	1 -12621,-359 -12571,-581
 Potsdamer Damm	2 -5324,-3716 -5490,-3666 -5722,-3669 -6119,-3907 -6426,-4014
 Rudolf-Moos-Str. - Nuthestr.	2 -10281,-2690 -10321,-2800
+Horstweg - Nuthestr.	2 -10495,-2787 -10324,-2937 -10250,-2857
 Kleine Gasse	1 -13272,-1168 -13287,-1231
 Spornstr.	1 -13220,-1416 -13350,-1403
-Nuthestr.: Kfz-Straße	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10321,-2800 -10547,-2606 -10898,-2375 -11070,-2123 -11116,-1681 -11140,-1564 -11226,-1445 -11386,-1313 -11613,-1125 -11869,-907 -12045,-757
+Nuthestr.: Kfz-Straße	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10250,-2857 -10321,-2800 -10547,-2606 -10604,-2567 -10898,-2375 -11070,-2123 -11116,-1681 -11140,-1564 -11226,-1445 -11386,-1313 -11613,-1125 -11869,-907 -12045,-757
 Nuthestr.: nicht passierbarer Mittelstreifen	3nocross -12045,-757 -11869,-907 -11613,-1125 -11386,-1313
 Breite Str.: nicht passierbarer Mittelstreifen	3nocross -13238,-1569 -13375,-1546 -13516,-1517
 Lange Brücke: Straßenbahntrasse	3nocross -12794,-1652 -12758,-1689 -12733,-1703 -12653,-1723 -12567,-1817
@@ -1245,8 +1247,6 @@ Templiner Str.	1 -13062,-2901 -12915,-2922
 An der Vorderkappe	1 -13321,-2801 -13304,-2779 -13150,-2777 -13123,-2797
 An der Vorderkappe	1 -13123,-2797 -13209,-2829 -13257,-2821 -13321,-2801
 Ulrich-von-Hutten-Str.	1 -13456,-3099 -13481,-2956
-Johannes-R.-Becher-Str.	1 -10134,-4981 -10288,-4749
-Bertolt-Brecht-Str.	1 -10202,-4669 -9998,-4865
 Bernhard-Kellermann-Str.	1 -10183,-4402 -10277,-4471 -10399,-4335 -10360,-4236
 Ernst-von-Bergmann-Klinikum	1 -12365,-752 -12360,-772 -12351,-828
 Ernst-von-Bergmann-Klinikum	1 -12351,-828 -12374,-849 -12402,-829 -12413,-789 -12418,-764
@@ -1255,6 +1255,7 @@ Ahornallee [Privatstraße] (Mahlsdorf)	1 24637,9828 24527,9850 24513,9796
 #: note: nur für Radfahrer gültig
 Lange Brücke	1s:q4 -12493,-1896 -12567,-1817 -12653,-1723 -12733,-1703 -12758,-1689 -12794,-1652
 Heinrich-Mann-Allee	1s:q4 -12478,-1879 -12431,-2096
+(zur Nuthestr.): Kfz-Straße	2 -10917,-2439 -10604,-2567
 ###################################################################### 
 # elsewhere in Brandenburg
 #: by: rjoop
@@ -2772,7 +2773,7 @@ Schranke	BNP:3::trailer=10 17215,12485
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: last_checked: 2017-06-15
+#: last_checked: 2017-06-17
 Gitschiner Str./Lobeckstr.: Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3nocross 10122,10294 10363,10303 10605,10312
 # 
 #: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus?
@@ -2813,17 +2814,11 @@ Voltairestr.: Baustelle, Fahrtrichtung gesperrt	1s:q3 11329,12497 11209,12430
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt	1s:q3 5192,10234 5196,10398
 # 
 #: source_id: 2147341003 (Bauarbeiten in der angrenzenden Modersohnstr.)
-#: last_checked: 2017-06-15
+#: last_checked: 2017-06-17
 #: check_frequency: 7d
 DB-Werkstraße: Zufahrt zur DB-Werkstraße ist wegen Bauarbeiten gesperrt	2::inwork 14043,10928 14107,10911
 # 
-#: XXX laut fritz bis 30. September 2017
-#: by: http://www.dafmap.de/d/berlin.html?id=5031&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-12-31)
-#: source_id: LMS-BR_r_LMS-BR_86189
-#: last_checked: 2017-02-04
-#: next_check: 2017-09-30
-#: priority: #A
-Zillestr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen	1s:q3 3807,11859 3976,11869
+# REMOVED (bei fritz nicht mehr gelistet) --- #: XXX laut fritz bis 30. September 2017 --- #: by: http://www.dafmap.de/d/berlin.html?id=5031&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-12-31) --- #: source_id: LMS-BR_r_LMS-BR_86189 --- #: last_checked: 2017-02-04 --- #: next_check: 2017-09-30 --- #: priority: #A --- Zillestr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen	1s:q3 3807,11859 3976,11869
 # 
 #: next_check_id: VERLAENGERTEHERTZ-2017
 #: XXX zumindest an der Fasanenstr.
@@ -2871,7 +2866,7 @@ Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q4 8654,14194 8607,14253 8527
 #: next_check_id ^^^
 # 
 #: by: http://www.s-bahn-berlin.de/bauinformationen/details/rummelsburg/4530 vvv
-#: last_checked: 2017-06-11 vvv
+#: last_checked: 2017-06-20 vvv
 # REMOVED (offen) --- (Unterführung S-Bhf. Rummelsburg): Bauarbeiten, komplett gesperrt	2::inwork 15433,10765 15409,10709 15372,10655
 Nöldnerstr.: Bauarbeiten, Einbahnstraße	1s:q4 15272,10790 15388,10758 15433,10765
 #: last_checked ^^^
@@ -2903,7 +2898,7 @@ Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2 14447,10491 14270,10584
 # 
 #: note: siehe auch http://www.detlefzabel.de/spreebruecke-neubau/
 #: next_check_id: MINNATODENHAGENSTR-2016
-#: last_checked: 2017-06-09
+#: last_checked: 2017-06-20
 #: next_check: 2017-08-01
 Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17453,7451 17295,7344 17211,7280 17091,7175 16971,7058 16720,6845
 # 
@@ -2972,7 +2967,7 @@ Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 # REMOVED (hier schon offen) --- Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9636,13076 9559,13087
 # 
 #: next_check_id: MINNATODENHAGENSTR-2016
-#: last_checked: 2017-06-03 vvv
+#: last_checked: 2017-06-20 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- Grenzweg: wegen Straßenbau gesperrt, ggfs. dauerhaft	2::inwork 17219,7268 17295,7328 17445,7434
 # REMOVED (geänderte Straßenführung) --- Schwarzer Weg: wegen Straßenbau gesperrt	2::inwork 17295,7323 17295,7328 17295,7344 17295,7358 17296,7401
@@ -3061,12 +3056,12 @@ Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3
 #: next_check_id ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2017-06-13
+#: last_checked: 2017-06-17
 #: check_frequency: 120d
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2017-06-13
+#: last_checked: 2017-06-17
 #: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 
@@ -3193,7 +3188,7 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: XXX Sanierungstermin steht noch nicht fest
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7641
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/artikel.563115.php
-#: osm_watch: way id="137501607" version="6"
+#: osm_watch: way id="501191631" version="1"
 #: last_checked: 2017-06-08
 #: check_frequency: 360d
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
@@ -3213,7 +3208,7 @@ Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,2
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
 #: next_check_id: STAATSOPER-2014 vvv
-#: last_checked: 2017-06-11 vvv
+#: last_checked: 2017-06-19 vvv
 #: check_frequency: 90d vvv
 #: by: http://www.dafmap.de/d/berlin.html?id=3588&mt=0&zoom=16
 #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung)

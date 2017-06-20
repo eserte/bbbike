@@ -18500,7 +18500,7 @@ EOF
        until => $isodate2epoch->("2016-07-10 23:59:59"),
        periodic => 1, # zweiter Termin im Jahr
        recurrences => [['yearly', days => 4, months => 7]], # kann auch erst im September stattfinden
-       recurrence_prewarn_days => 14, # XXX noch keine Infos dazu...
+       recurrence_prewarn_days => 7, # XXX noch keine Infos dazu...
        text  => 'Rheinstraße (Friedenau): Veranstaltung (Jazzfest auf der Rheinstraße), Straße vollständig zwischen Walther-Schreiber-Platz und Kaisereiche gesperrt (09.07.2016 bis 10.07.2016)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -22783,13 +22783,14 @@ EOF
      },
      { from  => $isodate2epoch->("2017-06-05 08:00:00"), # 1394604000, # 2014-03-12 07:00
        until => $isodate2epoch->("2017-06-25 12:00:00"), # undef, # 1395421200, # 2014-03-21 18:00
-       text  => 'Scharnweberstr.: Baustelle, Fahrbahn zwischen Jessnerstr. und Gürtelstr. gesperrt, ab 06.06.2017 bis 25.06.2017',
+       text  => 'Scharnweberstr.: Baustelle, Fahrbahn zwischen Jessnerstr. und Weichselstr. gesperrt, bis 25.06.2017',
        type  => 'handicap',
        source_id => '2147341388',
        data  => <<EOF,
 #: by: fritz
-#: note: laut vmz "Gesamtbaumaßnahme" bis Mitte Juli 2017
-userdel	q4::inwork; 15080,11905 15121,11899 15248,11880
+#: XXX: laut vmz "Gesamtbaumaßnahme" bis Mitte Juli 2017
+#: next_check: 2017-06-25
+userdel	q4::inwork; 15080,11905 14965,11921 14887,11929
 EOF
      },
      { from  => 1394953200, # 2014-03-16 08:00
@@ -25634,7 +25635,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-06-11 vvv
+#: last_checked: 2017-06-17 vvv
 #: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -26013,7 +26014,7 @@ EOF
        text  => 'Akazienstr.: Bauarbeiten, Einbahnstraßenregelung',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2017-06-06
+#: last_checked: 2017-06-17
 #: check_frequency: 14d
 userdel	q4::inwork; 7201,8870 7107,9030
 EOF
@@ -26042,7 +26043,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann gehen die Bauarbeiten?
-#: last_checked: 2017-06-04
+#: last_checked: 2017-06-19
 userdel	q3::inwork; 8752,12647 8870,12647
 EOF
      },
