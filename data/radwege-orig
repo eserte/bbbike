@@ -874,7 +874,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736 20755,5750
 #: XXX laut fritz "geänderte Straßenführung" bis 31.12.2016, laut vmz bis Ende Juli 2017
 #: source_id: IM_023718
 #: source_id: 2147339540
-#: last_checked: 2017-06-08 vvv
+#: last_checked: 2017-06-22 vvv
 # REMOVED, siehe unten ---	RW1; 14174,7505 14334,7395 14369,7376
 # REMOVED --- RW2; 14519,7301 --- #: note: vermutlich: --- RW2; 14519,7301
 	RW8;RW2 14519,7301 14369,7376 14334,7395 14174,7505
@@ -1024,7 +1024,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5459,11135 5258,11285
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5091,11406 5085,11413 4922,11600
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
-#: last_checked: 2017-06-15
+#: last_checked: 2017-06-22
 #: check_frequency: 60d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1034,7 +1034,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut rbbtext bis 31.05.2016, laut vmz bis Ende 2016, laut fritz bis 09.01.2018
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2017-06-15
+#: last_checked: 2017-06-22
 #: check_frequency: 90d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 9695,12390 9656,12386 9601,12380
@@ -1098,7 +1098,7 @@ neu asphaltiert	RW1; 17568,7753 17619,7679 17681,7589 17769,7465
 neu asphaltiert	RW1; 17769,7465 17681,7589 17619,7679
 #: XXX wie sieht es nach der Fahrbahnverschwenkung (dauert bis Anfang September 2017) aus? vvv
 #: source_id: 2147341340
-#: last_checked: 2017-06-20 vvv
+#: last_checked: 2017-06-22 vvv
 #: next_check: 2017-09-01 vvv
 	RW0; 17619,7679 17568,7753 17527,7812
 provisorischer schmaler Radstreifen	RW3; 17527,7812 17299,8140 17202,8391
@@ -1110,8 +1110,10 @@ provisorischer schmaler Radstreifen	RW3; 17527,7812 17299,8140 17202,8391
 # REMOVED (bestätigt) --- #: XXX Benutzungspflicht wird aufgehoben --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4770 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036541309630/541309630/00099460/60-Anlagen/04/B0670SB.pdf
 	RW1;RW1 18010,7133 17934,7029
 	RW1; 18010,7133 18225,7004
+#: note: Radspur wird auf die Nebenfahrbahn geführt
 die letzten 50 Meter sind benutzungspflichtiger Radweg	RW10; 18225,7004 18010,7133
-	RW1;RW1 18225,7004 18404,6946 18492,6893
+	RW1; 18225,7004 18404,6946 18492,6893
+	RW3; 18492,6893 18404,6946 18225,7004
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5430
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036305920032/305920032/00115953/53-Anlagen/04/B1328SB.pdf
 #: by: osm ("lane" Richtung Westen)
@@ -1212,7 +1214,7 @@ Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW5; 6460,8688 6449,8807 6449,8845 6445
 #: XXX Wilhelm-Kabus-Str.: eventuell wird der Gehweg Richtung Süden für Radfahrer freigegeben
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4159&options=4
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4159
-#: last_checked: 2017-02-24
+#: last_checked: 2017-06-22
 #: check_frequency: 120d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
 	RW2;RW4 7717,7879 7718,7820 7696,7771
@@ -1678,7 +1680,7 @@ Berliner Gehwegplatten, ca. 1,50m breit	RW2;RW2 9272,14208 9400,14400 9410,14410
 #: note: Wobei es so aussieht, als ob das Zusatzschild einfach nur fehlt
 #: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5;
 #: by: http://www.dafmap.de/d/berlin.html?id=3134&mt=0&zoom=16 (Projektabschluss: 2017-09-01)
-#: last_checked: 2017-05-29
+#: last_checked: 2017-06-22
 #: check_frequency: 90d
 	RW4; 11451,13301 11368,13170
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 11451,13301 11486,13350
@@ -3693,7 +3695,6 @@ asphaltiert	RW2;RW8 15639,10469 15758,10578
 asphaltiert	RW1; 20689,4862 20383,4963
 asphaltiert	RW1; 20689,4862 20765,4839 20949,4775
 	RW6;RW6 27615,1245 27573,1279 27516,1300 27476,1287 27344,1329 27229,1359
-#: by: osm
 	RW6;RW6 6060,8334 6181,8181
 	RW3;RW3 6074,14194 6074,14215 6084,14251 6118,14289 6230,14316 6301,14345 6607,14403
 	RW4;RW4 6607,14403 6747,14436 6803,14459 6857,14488 6869,14494 6917,14504 6983,14508 7050,14501 7085,14482 7099,14461 7104,14432 7104,14403

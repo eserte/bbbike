@@ -4158,9 +4158,9 @@ userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 
          'from' => undef,
          'id' => 2857,
          'source_id' => '2147341139',
-         'text' => 'Rennbahnstr.: ab Hunsrückstr. bis Berliner Allee Bauarbeiten, Fahrtrichtung gesperrt, bis 23. Juni 2017',
+         'text' => 'Rennbahnstr.: ab Hunsrückstr. bis Berliner Allee Bauarbeiten, Fahrtrichtung gesperrt, bis Ende Juni 2017',
          'type' => 'handicap',
-         'until' => 1498212000
+         'until' => 1498816800
        },
        {
          'data' => 'userdel	q4::inwork 18009,18946 17900,18972 17890,18973 17799,19000 17697,18989 17600,18994
@@ -4250,6 +4250,19 @@ userdel	2::inwork 21685,916 21708,937 21857,989 21977,988
          'text' => 'Schönerlinder Str.: Autobahnbrücke gesperrt, unklar, ob Radfahrer und Fußgänger trotzdem passieren können, bis 31.08.2017',
          'type' => 'gesperrt',
          'until' => 1504216800
+       },
+       {
+         'data' => '#: XXX Baumaßnahme ist Ende 2018 fertig; Vollsperrung nur für 2-3 Wochen
+#: XXX wird es vielleicht Änderungen bei der Wegbeschaffenheit geben?
+#: next_check: 2017-09-01
+userdel	2::inwork 6815,8691 6912,8617
+',
+         'from' => 1498214515,
+         'id' => 2870,
+         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.604116.php',
+         'text' => 'Heinrich-Lassen-Park: Bauarbeiten, temporäre Vollsperrung möglich',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

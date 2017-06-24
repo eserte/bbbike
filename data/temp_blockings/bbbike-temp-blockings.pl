@@ -25981,8 +25981,8 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2017-06-23 12:00:00"), # 1495641600, # 2017-05-24 18:00
-       text  => 'Rennbahnstr.: ab Hunsrückstr. bis Berliner Allee Bauarbeiten, Fahrtrichtung gesperrt, bis 23. Juni 2017',
+       until => $isodate2epoch->("2017-06-30 12:00:00"), # 1495641600, # 2017-05-24 18:00
+       text  => 'Rennbahnstr.: ab Hunsrückstr. bis Berliner Allee Bauarbeiten, Fahrtrichtung gesperrt, bis Ende Juni 2017',
        type  => 'handicap',
        source_id => '2147341139',
        data  => <<EOF,
@@ -26107,6 +26107,18 @@ EOF
        source_id => '2147341179',
        data  => <<EOF,
 userdel	2::inwork 11980,24276 11959,24220
+EOF
+     },
+     { from  => 1498214515, # 2017-06-23 12:41
+       until => undef, # XXX
+       text  => 'Heinrich-Lassen-Park: Bauarbeiten, temporäre Vollsperrung möglich',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.604116.php',
+       data  => <<EOF,
+#: XXX Baumaßnahme ist Ende 2018 fertig; Vollsperrung nur für 2-3 Wochen
+#: XXX wird es vielleicht Änderungen bei der Wegbeschaffenheit geben?
+#: next_check: 2017-09-01
+userdel	2::inwork 6815,8691 6912,8617
 EOF
      },
     );

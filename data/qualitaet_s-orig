@@ -21,7 +21,7 @@ Dieselstr., Umfahrung: unbefestigt	Q2 14429,8074 14471,8046
 #: next_check_id ^^^
 # 
 #: next_check_id: SONNENALLEE-2014
-#: last_checked: 2017-06-08
+#: last_checked: 2017-06-22
 Sonnenallee: unebener, provisorischer Asphalt auf dem Radweg	Q2+ 14174,7505 14334,7395 14369,7376 14519,7301
 # 
 #: temporary ^^^
@@ -964,7 +964,7 @@ Wuhlewanderweg: guter Asphalt	Q0 22030,6600 22097,6414 22146,6338 22214,6271 222
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
-#: last_checked: 2017-05-28 vvv
+#: last_checked: 2017-06-21 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="317233618" version="3"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22084,5877
@@ -1870,7 +1870,7 @@ Nalepastr.: fester enger Sandweg	Q2 17043,7512 17047,7619
 Nalepastr.: Beton, Eisenbahnschienen	Q1+ 17043,7512 17135,7377 17190,7306 17211,7280 17219,7268
 Nalepastr.: sehr guter Asphalt	Q0 17219,7268 17286,7173 17352,7051 17459,6854 17514,6754 17555,6680 17614,6571
 Ernst-Grube-Str.: Asphalt	Q0 21364,5430 21363,5336 21362,5289 21345,5157 21343,5140 21324,4986
-Ernst-Grube-Str.: Kopfsteinpflaster	Q2 21324,4986 21306,4876 21300,4837 21264,4809 21332,4655
+Ernst-Grube-Str.: Kopfsteinpflaster	Q2 21324,4986 21306,4876 21300,4837 21264,4809 21287,4757 21332,4655
 Eiselenweg: Asphalt	Q0 21206,5420 21364,5430 21447,5414
 Ahornallee: asphaltiert	Q0 21324,4986 21375,4974 21454,4928 21509,4900
 Ahornallee: Kopfsteinpflaster	Q2 21509,4900 21607,4850 21684,4814
@@ -1883,7 +1883,8 @@ Gartenstr.: Asphalt	Q0 22456,3889 22281,4033 22263,4120 22279,4220
 Kietz: mäßiges Kopfsteinpflaster	Q2 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
 Gartenstr.: Kopfsteinpflaster	Q2 22279,4220 22302,4255
 Gartenstr.: welliges Verbundsteinpflaster	Q1- 22302,4255 22362,4331 22382,4361 22419,4457
-Spitzerstr.: Beton	Q0 22319,4197 22358,4282 22425,4370 22451,4441
+Spitzerstr.: Beton	Q0- 22319,4197 22358,4282 22385,4317
+Spitzerstr.: Asphalt	Q0 22385,4317 22425,4370 22451,4441
 Grünstr.: Kopfsteinpflaster	Q2 22111,4562 22162,4546 22214,4548 22324,4586
 Böttcherstr.: Kopfsteinpflaster	Q2 22214,4548 22212,4655
 Rosenstr.: Kopfsteinpflaster	Q2 22144,4660 22212,4655 22284,4653
@@ -1967,7 +1968,7 @@ Eiselenweg - Uferweg: etwas sandig	Q2 21447,5414 21487,5425
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3240
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036544636457/544636457/00064312/12-Anlagen/10/B1072ZB7.pdf
 #: XXX "Die Herstellung des Uferweges ist zum 31.12.2016 in Planung."
-#: last_checked: 2017-06-09
+#: last_checked: 2017-06-21
 #: check_frequency: 90d
 (Uferweg, Mentzelpark): Schotterweg	Q1- 21487,5425 21512,5404 21600,5221 21696,5053
 (Uferweg, Mentzelpark): Asphalt	Q0 21696,5053 21740,5004 21761,4979
@@ -1996,6 +1997,9 @@ Soldiner Str.: Asphalt	Q0 8677,17154 8866,17075 8904,17059 9082,16982
 Soldiner Str.: mäßiges Kopfsteinpflaster	Q2 9082,16982 9299,16889 9435,16832 9579,16770 9611,16741
 Grüntaler Str. - Esplanade: Asphalt	Q0 9778,16915 9846,16981 9880,16994 9980,16973 10013,16972
 Kolonie: Gehwegplatten	Q1 10190,16930 10209,16674
+#: XXX Asphaltierung geplant
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.602784.php
+#: next_check: 2017-09-15
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 10997,16280 11295,16199 11404,16140 11542,16070
 Fritz-Riedel-Str.: Asphalt	Q0 13385,13992 13449,13892 13519,13785 13635,13605
 Hausburgstr.: Asphalt	Q0 13635,13605 13706,13460 13742,13376
@@ -7074,7 +7078,7 @@ Bebelplatz: gepflastert	Q1 9674,12231 9702,12307 9734,12395
 (Park am Gleisdreieck, Eingang Kurfürstenstr.): Beton	Q0 8058,10306 8180,10282 8253,10265
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): wassergebundene Decke	Q1 8263,10187 8276,10079
 #: next_check_id: HELLWEG-2014 vvv
-#: last_checked: 2017-06-04 vvv
+#: last_checked: 2017-06-22 vvv
 #: check_frequency: 100d vvv
 #: XXX wird hier noch eine wassergebundene Decke erstellt?
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): unbefestigt	Q2 8276,10079 8289,9988

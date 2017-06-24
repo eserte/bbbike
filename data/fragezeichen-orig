@@ -440,7 +440,7 @@ Im Eck: Verbesserung -> evtl. Asphaltierung?	?::projected 10269,906 10229,1008 1
 Neudecker Weg: Verbesserung -> Radspuren oder Asphaltierung des Radwegs? ("Teilabschnitte")	?::projected 16908,1217 16975,1262 17120,1394 17211,1469 17526,1540 17855,1629 18044,1716 18198,1814 18361,1926 18396,1990
 Fürstenwalder Allee: Verbesserung -> Verbreiterung Radweg	?::projected 31978,3237 32121,3215 32829,3105 33111,3064 33525,2901 33545,2896
 Bellevuestr.: Verbesserung -> evtl. Radspuren?	?::projected; 23403,5385 23402,5483
-#: last_checked: 2017-06-11
+#: last_checked: 2017-06-22
 An der Wuhlheide: Verbesserung -> evtl. Radpuren?	?::projected; 19759,6049 19958,5950
 #: last_checked: 2017-06-11
 Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22351,862 22547,651 23206,206
@@ -469,7 +469,7 @@ Frankfurter Allee: Radstreifen	?::projected; 15117,12106 15361,12071
 #: check_frequency: 14d
 Friedenstr.: Radwegverbindung wird gebaut	?::inwork 12382,13097 12325,13148
 #: XXX außerdem wird für den Durchgangsverkehr (hoffentlich nur MIV) gesperrt
-#: last_checked: 2017-06-20
+#: last_checked: 2017-06-22
 Hegemeisterweg: Asphaltierung	?::projected 17522,8220 17202,8391
 #: last_checked: 2017-06-03
 Fanningerstr.: Asphaltierung	?::projected 16456,12191 16359,12207 16255,12224
@@ -525,7 +525,7 @@ Königsweg: Asphaltierung	?::projected -298,2577 -197,2634 -155,2658 -151,2656
 Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbreiterung und Asphaltierung des Weges?)	?::projected 8106,3410 8016,3651 7795,4242 7769,4315
 #: last_checked: 2017-06-14
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird hier vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13849,9310
-#: last_checked: 2017-06-09
+#: last_checked: 2017-06-22
 Rummelsburger Landstr.: Radweg/Radstreifen	?::projected 18010,7133 17847,7356 17769,7465 17681,7589 17619,7679 17568,7753 17527,7812
 #: check_frequency ^^^
 #: by: ^^^
@@ -568,7 +568,7 @@ Rummelsburger Landstr.: Radweg/Radstreifen	?::projected 18010,7133 17847,7356 17
 #: XXX evtl. entsteht hier ein neuer Weg --- Qualität, Beleuchtung, genaue Lage?
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.558478.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.598595.php
-#: last_checked: 2017-06-20
+#: last_checked: 2017-06-21
 Treptower Park: neuer Weg?	?::projected 15217,9137 15410,9147 15442,9095
 # 
 # REMOVED (nur ein paar Meter Einbahnstraße, wie schon vorher) --- #: XXX NEW¦Auerstraße zwischen Richard-Sorge-Straße und Löwestraße Friedrichshain (Berlin)  Gültig ab: 07.01.2017 07:00  beide Fahrtrichtungen gesperrt, Baustelle¦LMS-BR_r_LMS-BR_87313¦¦ --- #: XXX laut fritz bis 30.04.2017, bei vmz mittlerweile schon entfernt --- Auerstr.: Bauarbeiten für Radfahrer relevant?	? 13273,12902 13202,12790
@@ -587,7 +587,7 @@ Am Herzbergteich: wann ist die Straße fertig? Qualität? Genaue Lage?	? 17945,135
 #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/9-48-planung_mellowpark_a3.pdf
 #: XXX evtl. entsteht auch eine Wuhlebrücke
 #: osm_watch: way id="413009390" version="1"
-#: last_checked: 2017-05-28
+#: last_checked: 2017-06-22
 #: check_frequency: 360d
 Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 21241,5666 21126,5612 21059,5596
 # 
@@ -676,6 +676,7 @@ Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::projected
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2016/pressemitteilung.482469.php (Fertigstellung Mitte 2019)
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6053.html (Elisabeth-Aue)
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.386693.php?date=20170522
+#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2017/pressemitteilung.602923.php
 #: XXX Bauzeit: Fertigstellung der gesamten Baumaßnahme ist derzeitig für Mitte 2019 geplant
 #: XXX nördlich entsteht ein neues Stadtviertel (Elisabeth-Aue)
 #: last_checked: 2016-07-10
@@ -856,7 +857,7 @@ Hennigsdorfer Str.: nach den Bauarbeiten durchgängig asphaltiert mit Radstreifen
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/450810361013210974/1013210974/00244965/65-Anlagen/01/DRS1399VB.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3896&mt=0&zoom=15
 #: XXX vermutlich wird die Ottomar-Geschke-Str. komplett asphaltiert werden
-#: last_checked: 2017-06-09 vvv
+#: last_checked: 2017-06-21 vvv
 #: check_frequency: 360d vvv
 Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Lage der kreuzenden Privatstraßen? Straßenname? Qualität? Anbindung zum Uferweg?	?::projected 21447,5414 21482,5388 21516,5308 21555,5214 21415,5157 21345,5157
 Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Lage der kreuzenden Privatstraßen? Straßenname? Qualität? Anbindung zum Uferweg?	?::projected 21415,5157 21449,5102 21477,5057 21498,5023
@@ -1241,7 +1242,7 @@ Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbi
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8026
 #: XXX Vorschlag: Freia-Eisner-Straße; Straße ist asphaltiert
 #: osm_watch: way id="491906864" version="2"
-#: last_checked: 2017-06-17
+#: last_checked: 2017-06-21
 #: check_frequency: 14d
 Planstraße C: neue Straße entsteht, Straßenname?	?::inwork 12926,11224 12848,11093
 # 
@@ -1477,7 +1478,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: http://www.dafmap.de/d/berlin.html?id=5213&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-12-31)
 #: XXX Asphaltierung der Fahrbahn von Rummelsburger Landstr. bis Schwarzer Weg fertig
 #: XXX Radwege werden vermutlich asphaltiert sein
-#: last_checked: 2017-06-20
+#: last_checked: 2017-06-21
 #: check_frequency: 60d
 Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rummelsburger Landstraße und Köpenicker Landstraße	?::inwork 17681,7589 17585,7525 17453,7451 17295,7344 17211,7280 17091,7175 16971,7058 16720,6845
 # 
@@ -1579,6 +1580,7 @@ Clara-Mleinek-Platz (Ziffer 3; platzähnlich): Qualität? Wird der Straßenname sti
 #: XXX vorgeschlagene Straßennamen: Bärbel-Bohley-Ring (großer Straßenring, C, D, E) und Lichtburgring (A, B); teilweise Privatstraßen
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7285
 #: by: http://www.dafmap.de/d/berlin.html?id=3694&mt=0&zoom=16 (Geplanter Projektabschluss: 2019-03-01)
+#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_26_2933_3020_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="437684188" version="1"
 #: next_check: 2017-09-01
 Planstraßen 1.1 und 1.2	?::inwork 9991,15629 9898,15864 9746,15862
@@ -1649,7 +1651,7 @@ Schwarzer Weg (Schmöckwitz): Fahrbahnerneuerung in Planung	?::projected 27892,-3
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5795
 #: by: http://www.dafmap.de/d/berlin.html?id=3703&mt=0&zoom=16
 #: osm_watch: way id="268088020" version="6"
-#: last_checked: 2017-06-06 vvv
+#: last_checked: 2017-06-22 vvv
 #: check_frequency: 360d vvv
 Bautzener Brache: Radwegführung und Brücke in Planung	?::projected 8207,9223 8240,9276 8240,9364 8242,9571 8221,9582 8255,9698 8256,9778 8233,9863
 Bautzener Brache - Großgörschenstr.: Weg in Planung	?::projected 8240,9364 8186,9380
@@ -1741,10 +1743,10 @@ B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133
 # - XXX_prog- und XXX_indoor-Einträge
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5838
-#: last_checked: 2017-06-11
+#: last_checked: 2017-06-22
 Sachsendamm: für Radfahrer freigegebene Busspur wird zurückgebaut	?::projected; 7193,7950 7147,8000
 # 
-#: last_checked: 2017-06-20
+#: last_checked: 2017-06-21
 #: check_frequency: 7d
 #: XXX: Anforderungsampel
 Schnellerstr.: neue Fußgängerampel in Bau	?::inwork 17628,5865
@@ -1769,9 +1771,6 @@ Am Bülowbogen: Benennung; gibt es hier Straßenschilder?	? 7906,10098 7928,10094 
 Blücherstr.: Sanierung des Radwegs	?::projected; 10006,9942 9922,10010 9827,10051
 # 
 Ollenhauerstr.: gibt es hier eine für Radfahrer freigegebene Busspur? Geltungszeiten?	?; 5233,18069 5227,18028 5213,17936 5196,17853 5167,17725 5151,17658 5144,17629 5114,17500
-# 
-# REMOVED --- Weg unter der Wilhelm-Spindler-Brücke zum Bruno-Bürgel-Weg: Beleuchtung?	? 21090,5417 21085,5451 20827,5431
-Weg unter der Wilhelm-Spindler-Brücke zum Bruno-Bürgel-Weg: Beleuchtung?	? 20827,5431 20829,5418 20849,5266 20851,5255 20782,5257
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170522
 #: XXX Wernsdorfer Straße (Schmöckwitz) in beiden Richtungen in Höhe Schwarzer Weg (Berlin)  Gültig ab: 15.03.2017 10:00  Baustelle, für beide Richtungen nur ein Fahrstreifen frei, Baustellenampel (bis Mitte 06/17)
@@ -1855,12 +1854,11 @@ Am Hechtgraben - Falkenberger Chaussee: Verbindung? Nachts beleuchtet? Qualität?
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5430
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036305920032/305920032/00115953/53-Anlagen/04/B1328SB.pdf
-#: last_checked: 2017-06-11 vvv
 #: check_frequency: 90d vvv
+#: last_checked: 2017-06-22
 An der Wuhlheide: werden hier Schutzstreifen entstehen?	? 21002,5755 20880,5736 20755,5750 20536,5789 20428,5841 20352,5877 20173,5892 20057,5923 19958,5950
-An der Wuhlheide: werden hier Schutzstreifen entstehen?	? 18492,6893 18404,6946 18225,7004 18010,7133
+# REMOVED (realisiert) --- #: last_checked: 2017-06-11 --- An der Wuhlheide: werden hier Schutzstreifen entstehen?	? 18492,6893 18404,6946 18225,7004 18010,7133
 #: check_frequency ^^^
-#: last_checked ^^^
 # 
 # REMOVED (Verbindung existiert nun) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6864 (unbeleuchtet) --- Gutspark Lichtenberg: existiert eine Verbindung für Radfahrer? Qualität?	? 15746,12967 15749,12995 15717,13001 15612,13069 15526,13056
 # REMOVED (parallelen Weg eingetragen) ---- Bolle-Gelände/Alte Meierei: Weg eintragen? Wie ist die Qualität hier? Gibt es Bordsteine o.ä.?	? 6439,13163 6402,12975
@@ -2118,7 +2116,7 @@ Porzer Str./Coloniaallee	? 19948,-14 19972,-19 19998,-21
 # 
 #: XXX wird hier ein Zebrastreifen entstehen?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4693
-#: last_checked: 2017-06-09
+#: last_checked: 2017-06-21
 #: check_frequency: 180d
 #: priority: #C
 Neue Krugallee/Lakegrund	? 16401,7400 16406,7430 16409,7464
@@ -2956,7 +2954,7 @@ neue Planstraßen in Fahrland: Lage, Qualität?	? -16174,7006 -15929,6894
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.411427.php
 #: by: http://www.dafmap.de/d/berlin.html?id=3896&mt=0&zoom=15
 #: XXX wird zukünftig entstehen, evtl. entsteht noch ein Uferweg vvv
-#: last_checked: 2016-08-27 vvv
+#: last_checked: 2017-06-22 vvv
 #: check_frequency: 360d vvv
 Marienhainallee: Qualität, nur für Radfahrer/Fußgänger?	? 22788,3061 22485,3036 22290,3019
 Planstraßen im Marienhain: Straßennamen? Qualität?	? 22771,3151 22476,3118 22485,3036 22494,2949 22807,2962
@@ -5067,6 +5065,7 @@ Von-Oppen-Weg: Qualität? Wo befindet sich die Straße?	? -8445,8504 -8240,8450
 # 
 #: by: http://www.potsdam.de/cms/dokumente/10098106_1471008/11eddb87/ENDFASSUNG10_12.pdf
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_nr._1_2016.pdf (zum Bebauungsplan Speicherstadt-Süd)
+#: by: https://www.potsdam.de/sites/default/files/documents/17210_amtsblatt_mai2017_dsjs_korr3_final.pdf (ebenso)
 #: last_checked: 2014-05-11
 #: next_check: 2015-01-01
 Uferweg von der Neuen Fahrt zum Hermannswerder: neuer Weg wird hier entstehen, Qualität?	?::inwork -12803,-2219 -12803,-2371 -12906,-2537 -13156,-2702

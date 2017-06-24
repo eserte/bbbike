@@ -61,7 +61,7 @@ Wilhelplatz	1 -7232,445 -7219,454 -7064,584
 Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: XXX Einbahnstraßenregelung wird aufgehoben (nicht vor Ende 2017)
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5334
-#: last_checked: 2016-09-18
+#: last_checked: 2017-06-22
 #: next_check: 2017-12-31
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
 Alt-Mariendorf (Nord)	1 9732,3883 9831,3876 9953,3806
@@ -466,7 +466,7 @@ Franz-Stenzer-Str.	1 19876,15644 19974,15594 20044,15585 20111,15609 20181,15658
 Planetenstr.	1 15175,7221 15056,7198 14951,7163
 Wustermarker Str.	1 -5097,14599 -5111,14486 -5004,14454 -4981,14442 -4755,14393
 Gartenstr. (Köpenick)	1 22419,4457 22382,4361 22362,4331 22302,4255 22279,4220
-Spitzerstr.	1 22319,4197 22358,4282 22425,4370 22451,4441
+Spitzerstr.	1 22319,4197 22358,4282 22385,4317 22425,4370 22451,4441
 Zitadellenweg/BMW-Betriebswerk	2 -1993,14594 -1768,14605 -1616,14527
 #: by: rr riva w.m.s:
 Heimat	1 1032,1325 994,1485 968,1479 941,1603
@@ -2866,7 +2866,7 @@ Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q4 8654,14194 8607,14253 8527
 #: next_check_id ^^^
 # 
 #: by: http://www.s-bahn-berlin.de/bauinformationen/details/rummelsburg/4530 vvv
-#: last_checked: 2017-06-20 vvv
+#: last_checked: 2017-06-21 vvv
 # REMOVED (offen) --- (Unterführung S-Bhf. Rummelsburg): Bauarbeiten, komplett gesperrt	2::inwork 15433,10765 15409,10709 15372,10655
 Nöldnerstr.: Bauarbeiten, Einbahnstraße	1s:q4 15272,10790 15388,10758 15433,10765
 #: last_checked ^^^
@@ -3034,6 +3034,7 @@ Clara-von-Simson-Str.: noch gesperrt	2 7652,14257 7757,14318 7802,14250 7697,141
 #: XXX hier wird es für Autofahrer dauerhaft keine Zufahrt zur Minna-Todenhagen-Str. geben, aber vielleicht wird es für Radfahrer/Fußgänger einen Zugang geben?
 #: source_id: 2147339538
 #: last_checked: 2017-06-11
+#: next_check: 2017-06-22
 Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, für Autos dauerhaft	2::inwork 17670,7512 17681,7589
 # 
 #: next_check_id: HEERSTR-2016 vvv
@@ -3056,12 +3057,12 @@ Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3
 #: next_check_id ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2017-06-17
+#: last_checked: 2017-06-21
 #: check_frequency: 120d
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2017-06-17
+#: last_checked: 2017-06-21
 #: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 
@@ -3138,7 +3139,7 @@ Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,689
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 09.01.2018
-#: last_checked: 2017-06-15 vvv
+#: last_checked: 2017-06-22 vvv
 #: check_frequency: 90d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
@@ -3208,7 +3209,7 @@ Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,2
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
 #: next_check_id: STAATSOPER-2014 vvv
-#: last_checked: 2017-06-19 vvv
+#: last_checked: 2017-06-22 vvv
 #: check_frequency: 90d vvv
 #: by: http://www.dafmap.de/d/berlin.html?id=3588&mt=0&zoom=16
 #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung)
@@ -3224,7 +3225,7 @@ Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12
 # 
 #: XXX Eröffnung 2019 geplant
 #: by: http://www.dafmap.de/d/berlin.html?id=3598&mt=0&zoom=16
-#: last_checked: 2017-06-11
+#: last_checked: 2017-06-22
 #: check_frequency: 120d
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
@@ -3298,7 +3299,7 @@ Lietzenburger Str.: Mittelstreifen schlecht zu überqueren	3nocross 6494,10440 64
 tragen (2 x 10 Stufen)	0:40 1666,4637
 tragen (2 x 10 Stufen)	0:40 1689,4630
 Sterzinger Str.	1 6096,8600 6123,8546
-Bozener Str.	1 5900,8930 5971,8926 6049,8916
+Bozener Str.	1 5900,8930 5971,8926 6042,8917
 Bozener Str.	1 5971,8926 5974,9100
 Kleiststr.: schwierig zu querender Mittelstreifen	3nocross 6532,10529 6636,10492 6753,10446
 # REMOVED (Richtungsfahrbahnen eingezeichnet) --- Bundesallee: Queren nicht möglich	3nocross 5354,8236 5363,8170 5376,8104 5357,8013
