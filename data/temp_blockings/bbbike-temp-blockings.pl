@@ -18499,8 +18499,9 @@ EOF
      { from  => $isodate2epoch->("2016-07-08 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2016-07-10 23:59:59"),
        periodic => 1, # zweiter Termin im Jahr
-       recurrences => [['yearly', days => 4, months => 7]], # kann auch erst im September stattfinden
-       recurrence_prewarn_days => 7, # XXX noch keine Infos dazu...
+       #recurrences => [['yearly', days => 4, months => 7]],
+       #recurrence_prewarn_days => 7, # XXX noch keine Infos dazu...
+       #XXX does not work --- recurrences => [['yearly', days => 1, months => 9]], # kann auch erst im September stattfinden
        text  => 'Rheinstraße (Friedenau): Veranstaltung (Jazzfest auf der Rheinstraße), Straße vollständig zwischen Walther-Schreiber-Platz und Kaisereiche gesperrt (09.07.2016 bis 10.07.2016)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -22782,15 +22783,12 @@ userdel	q3::inwork; 15098,12849 15233,12829 15357,12813
 EOF
      },
      { from  => $isodate2epoch->("2017-06-05 08:00:00"), # 1394604000, # 2014-03-12 07:00
-       until => $isodate2epoch->("2017-06-25 12:00:00"), # undef, # 1395421200, # 2014-03-21 18:00
-       text  => 'Scharnweberstr.: Baustelle, Fahrbahn zwischen Jessnerstr. und Weichselstr. gesperrt, bis 25.06.2017',
+       until => $isodate2epoch->("2017-06-29 12:00:00"), # undef, # 1395421200, # 2014-03-21 18:00
+       text  => 'Scharnweberstr.: Baustelle, Fahrbahn zwischen Jessnerstr. und Müggelstr. gesperrt, bis 29. Juni 2017',
        type  => 'handicap',
        source_id => '2147341388',
        data  => <<EOF,
-#: by: fritz
-#: XXX: laut vmz "Gesamtbaumaßnahme" bis Mitte Juli 2017
-#: next_check: 2017-06-25
-userdel	q4::inwork; 15080,11905 14965,11921 14887,11929
+userdel	q4::inwork; 15080,11905 14965,11921
 EOF
      },
      { from  => 1394953200, # 2014-03-16 08:00
@@ -26119,6 +26117,16 @@ EOF
 #: XXX wird es vielleicht Änderungen bei der Wegbeschaffenheit geben?
 #: next_check: 2017-09-01
 userdel	2::inwork 6815,8691 6912,8617
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: last_checked: 2017-06-27
+#: check_frequency: 7d
+userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },
     );

@@ -2813,11 +2813,7 @@ Voltairestr.: Baustelle, Fahrtrichtung gesperrt	1s:q3 11329,12497 11209,12430
 #: check_frequency: 120d
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt	1s:q3 5192,10234 5196,10398
 # 
-#: source_id: 2147341003 (Bauarbeiten in der angrenzenden Modersohnstr.)
-#: last_checked: 2017-06-17
-#: check_frequency: 7d
-DB-Werkstraﬂe: Zufahrt zur DB-Werkstraﬂe ist wegen Bauarbeiten gesperrt	2::inwork 14043,10928 14107,10911
-# 
+# REMOVED (siehe temp_blockings-Eintrag) --- #: source_id: 2147341003 (Bauarbeiten in der angrenzenden Modersohnstr.) --- #: last_checked: 2017-06-17 --- #: check_frequency: 7d --- DB-Werkstraﬂe: Zufahrt zur DB-Werkstraﬂe ist wegen Bauarbeiten gesperrt	2::inwork 14043,10928 14107,10911
 # REMOVED (bei fritz nicht mehr gelistet) --- #: XXX laut fritz bis 30. September 2017 --- #: by: http://www.dafmap.de/d/berlin.html?id=5031&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-12-31) --- #: source_id: LMS-BR_r_LMS-BR_86189 --- #: last_checked: 2017-02-04 --- #: next_check: 2017-09-30 --- #: priority: #A --- Zillestr.: Bauarbeiten, Einbahnstraﬂenregelung, offen Richtung Westen	1s:q3 3807,11859 3976,11869
 # 
 #: next_check_id: VERLAENGERTEHERTZ-2017
@@ -2831,15 +2827,15 @@ DB-Werkstraﬂe: Zufahrt zur DB-Werkstraﬂe ist wegen Bauarbeiten gesperrt	2::inwor
 # 
 #: osm_watch: way id="466318949" version="1"
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
-#: last_checked: 2017-06-02
-BouchÈstr.: Baustelle, Einbahnstraﬂenregelung	1s:q3 13190,9139 13298,9252
+#: last_checked: 2017-06-27
+BouchÈstr.: Baustelle, Einbahnstraﬂenregelung	1s:q3 13298,9252 13190,9139
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
-#: last_checked: 2017-06-02
+#: last_checked: 2017-06-27
 Mengerzeile: Baustelle, Einbahnstraﬂenregelung	1s:q3 13176,9302 13100,9210
 # 
 #: next_check_id: HEIDELBERGER-2017
-#: last_checked: 2017-06-04
+#: last_checked: 2017-06-27
 #: check_frequency: 60d
 Heidelberger Str.: Baustelle, Einbahnstraﬂenregelung	1s:q3 13489,9199 13420,9259 13357,9313
 # 
@@ -2873,7 +2869,7 @@ Nˆldnerstr.: Bauarbeiten, Einbahnstraﬂe	1s:q4 15272,10790 15388,10758 15433,1076
 #: by ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3853&mt=0&zoom=16
-#: last_checked: 2017-05-24
+#: last_checked: 2017-06-26
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraﬂenregelung	1s:q3 9042,11839 8969,11814
 # 
 #: XXX danach kˆnnte die Qualit‰t der Wege besser sein
@@ -2891,7 +2887,7 @@ Nordhafenpark West: w‰hrend der Umgestaltung gesperrt	2::inwork 7636,14414 7612,
 #: check_frequency: 60d
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 # 
-#: last_checked: 2017-06-02
+#: last_checked: 2017-06-27
 Corinthstr.: Baustelle, Einbahnstraﬂenregelung	1s:q2 14447,10491 14270,10584
 # 
 # REMOVED (mittlerweile schon passierbar) --- #: next_check_id: MARIANNEN-2016 vvv --- #: source_id: INKO_2147340291_COPY_1 vvv --- #: source_id: 2147340291 vvv --- #: source_id: 2147340768 vvv --- # REMOVED (aufgehoben) --- #: priority: #A vvv --- #: XXX laut fritz bis 16.12.2016 --- #: last_checked: 2016-12-15 vvv --- #: next_check: 2017-01-10 vvv --- Mariannenstr.: Baustelle, Einbahnstraﬂenregelung	1s:q2 11512,10105 11616,10288 --- #: source_id: 2147340777 --- #: XXX laut fritz bis 10.01.2017 --- #: priority: #A --- #: last_checked: 2016-12-15 --- #: check_frequency: 7d --- Mariannenstr.: Baustelle, Fahrbahn gesperrt	2s:q3 11671,10402 11616,10288
@@ -2936,7 +2932,7 @@ Am Nordhafen: Bauarbeiten, Straﬂe wird zur¸ckgebaut	2::inwork 7741,14560 7518,14
 # REMOVED --- #: XXX evtl. kann man hier als Fuﬂg‰nger irgendwie vorbei --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 3d --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14448,9922 14467,9880 14500,9863 --- #: last_checked ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4160&mt=0&zoom=16
-#: last_checked: 2017-05-24
+#: last_checked: 2017-06-26
 #: osm_watch: way id="57852078" version="4"
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch f¸r Fuﬂg‰nger	2::inwork 9679,10710 9777,10719
 # 

@@ -59,7 +59,7 @@ Schulenburgstr./Weißenburger Str.: werden hier Radspuren markiert?	?::projected 
 #: XXX Baumaßnahme 4.18 (Realisierung nach 2011)
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.565829.php
 #: XXX Gesamtbaumaßnahme bis Ende August 2017
-#: osm_watch: way id="47266663" version="4"
+#: osm_watch: way id="47266663" version="5"
 #: osm_watch: way id="47267054" version="3"
 #: last_checked: 2017-05-06
 Hubertusallee/Teplitzer Str.: hier werden Radspuren markiert	?::inwork 2322,8857 2320,8722 2295,8678 2273,8640 2190,8528 2126,8426 2120,8335 2112,8074 2099,7904 2092,7810
@@ -201,7 +201,7 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753
 # 
 #: XXX Baumaßnahme 9.16 (Realisierung nach 2011) (auch im Maßnahmenkatalog Treptow-Köpenick, Bsw.7)
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5154
-#: last_checked: 2017-04-07
+#: last_checked: 2017-06-27
 #: check_frequency: 90d
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15553,7408 15560,7400 15609,7347 15695,7254 15928,6996 15977,6942 16060,6850 16146,6755 16273,6609 16280,6601 16333,6544 16425,6445
 # 
@@ -295,7 +295,7 @@ Schöneberger Str.: Radspuren bis 2015 geplant	?::projected 8739,6701 8653,6781 8
 #: source_id: 2147339938
 #: source_id: LMS-BR_r_LMS-BR_91391
 #: XXX laut fritz bis Ende Oktober 2017
-#: last_checked: 2017-05-06
+#: last_checked: 2017-06-27
 #: next_check: 2017-09-30
 Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166,8489
 #: by: ^^^
@@ -463,7 +463,7 @@ Brandenburgische Str.: Radstreifen (wo genau? oder die gesamte Strecke?)	?::proj
 #: last_checked: 2017-06-17
 Ernst-Reuter-Platz: Zweirichtungsradwege	?::projected 4838,11697 4885,11735 4905,11785 4854,11843 4763,11834 4737,11768 4781,11708 4838,11697
 #: XXX oder werden größere Abschnitte der Straße mit Radstreifen versehen?
-#: last_checked: 2017-06-18
+#: last_checked: 2017-06-25
 Frankfurter Allee: Radstreifen	?::projected; 15117,12106 15361,12071
 #: last_checked: 2017-06-14
 #: check_frequency: 14d
@@ -565,6 +565,11 @@ Rummelsburger Landstr.: Radweg/Radstreifen	?::projected 18010,7133 17847,7356 17
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: XXX: Revaler Str. (Friedrichshain) in beiden Richtungen zwischen Libauer Str. und Simon-Dach-Str. (Berlin)  Gültig ab: 26.06.2017 06:00  Baustelle, für beide Richtungen abwechselnd nur ein Spur frei (bis Ende 06/17)	2147341486
+#: XXX laut fritz bis 2017-07-03
+#: next_check: 2017-06-26
+Revaler Str.: abwechselnd nur eine freie Spur, auch für Radfahrer relevant?	? 13888,11405 13711,11458
+# 
 #: XXX evtl. entsteht hier ein neuer Weg --- Qualität, Beleuchtung, genaue Lage?
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.558478.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.598595.php
@@ -597,7 +602,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/holzmarktstrasse/download/LP_01.pdf
 #: source_id: 2147340618
 #: source_id: LMS-BR_r_LMS-BR_81616
-#: last_checked: 2017-06-17
+#: last_checked: 2017-06-26
 #: check_frequency: 60d
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 # 
@@ -1153,7 +1158,7 @@ Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgäng
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf
 #: XXX Ausbau des Kopfsteinpflasters, Bau einer Asphaltfahrbahn
 #: osm_watch: way id="75509950" version="11"
-#: last_checked: 2017-06-15
+#: last_checked: 2017-06-27
 #: next_check: 2018-03-01
 Friedelstr.: Asphaltierung	?::projected 12085,9778 12074,9689 12066,9558 12047,9429 12074,9217
 #: by: ^^^
@@ -1163,7 +1168,7 @@ Friedelstr.: Asphaltierung	?::projected 12085,9778 12074,9689 12066,9558 12047,9
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="13"
-#: last_checked: 2017-06-14
+#: last_checked: 2017-06-27
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -2094,7 +2099,7 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7478
 #: XXX "noch 2016"
 #: osm_watch: note 824350 2
-#: last_checked: 2017-06-13
+#: last_checked: 2017-06-26
 #: check_frequency: 14d
 #: priority: #C
 Sebastian/Luckauer: Zebrastreifen in Bau	?::inwork 11113,10943 11109,10935
@@ -2123,10 +2128,10 @@ Neue Krugallee/Lakegrund	? 16401,7400 16406,7430 16409,7464
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4755 vvv
 #: source_id: 2147339938
-#: last_checked: 2017-05-06
+#: last_checked: 2017-06-27
 #: next_check: 2017-09-30
 Köpenicker Landstraße: bleibt die Radwegbenutzungspflicht?	?; 15166,8489 15303,8343 15357,8286 15557,8077
-#: last_checked: 2017-03-27
+#: last_checked: 2017-06-27
 #: check_frequency: 90d
 Köpenicker Landstraße: bleibt die Radwegbenutzungspflicht?	?; 15920,7697 16195,7398 16353,7226 16428,7144
 #: by ^^^
@@ -3498,6 +3503,11 @@ Siegfried-Hirschmann-Park: neue private Platzfläche, Qualität, genaue Lage?	?::i
 #: next_check: 2017-07-01
 Möckernkiez: Privatstraße, Qualität, genaue Lage?	?::inwork 8765,9753 8741,9741 8729,9670 8587,9590 8566,9643
 # 
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/bebauungsplanung/artikel.81905.php
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/bebauungsplanung/oeffentlichkeits-beteiligungen/1-bebauungsplanentwurf-6-33-oa.pdf
+#: next_check: 2018-07-01
+Bebauungsplan 6-33: hier entstehen Straßen und Wege	?::projected 3356,4870 3357,4699 3484,4696 3478,4867 3356,4870
+# 
 #: ignore ^^^
 #: section ^^^
 # 
@@ -3712,12 +3722,12 @@ Kleinzerlang - Großzerlang: Qualität?	? -26211,86312 -25700,86287 -24725,86237 -
 Zechlinerhütte - Kleinzerlang: Qualität?	? -26137,84005 -25554,84798 -25218,85046 -25100,85862 -24725,86237
 Rheinsberg - Pelzkuhl: Qualität?	? -25428,77444 -23610,79800 -23527,80444 -23055,81034 -22750,81465 -21523,82775 -21199,83707
 #: by: http://www.ruppin.de/rheinsberg/freizeit/sport/radw_wittwe.html (Radtourenvorschlag) vvv
-Sellenwalde - Feldgrieben: Qualität?	? -21558,77171 -21487,77625 -21825,78312 -21937,78775 -21737,79100 -21225,79175 -21162,79862 -21237,80137 -22105,79930
-Feldgrieben - Wittwien: Qualität?	? -22190,79928 -22462,80150 -22650,80537 -22795,80853 -23055,81034 -23391,81395 -23725,81512
+Sellenwalde - Feldgrieben: Qualität?	? -21558,77171 -21558,77171 -21532,77414 -21871,77959 -21790,78155 -21825,78312 -21944,78554 -21944,78554 -21696,79136 -21510,79308 -21510,79308 -21181,79257 -21056,79580 -21153,80037 -21153,80037 -21918,80016 -22036,79847
+Feldgrieben - Wittwien: Qualität?	? -22036,79847 -22179,79879 -22462,80150 -22517,80271 -22795,80853 -23055,81034 -23391,81395 -23725,81512
 Wittwien - Zechlinerhütte: Qualität?	? -23725,81512 -24925,81887 -26435,81684
 #: by ^^^
 Rheinsberg - Paulshorst: Qualität?	? -25376,76422 -25117,77047 -24608,77778 -24092,78330
-Paulshorst - Feldgrieben: Qualität (laut http://www.ruppin.de/rheinsberg/freizeit/sport/radw_zechlh.html teilweise sehr sandig)?	? -24092,78330 -23675,78932 -23500,79112 -23250,80225 -22900,80462 -22650,80537
+Paulshorst - Feldgrieben: Qualität (laut http://www.ruppin.de/rheinsberg/freizeit/sport/radw_zechlh.html teilweise sehr sandig)?	? -24092,78330 -23675,78932 -23675,78932 -23613,78963 -23596,79070 -23473,79165 -23104,79619 -23178,79797 -23293,79879 -23278,80004 -23278,80004 -22819,80318 -22517,80271
 #: by: http://www.ruppin.de/rheinsberg/freizeit/sport/radw_rheinsbsee.html vvv
 Hohenelse - Schlaborn: Qualität (Pflasterstraße?)?	? -25923,78844 -26487,80362 -26818,80755
 Schlaborn - Campingplatz Dollgowsee: Qualität?	? -26818,80755 -26943,81264 -27007,81237 -27227,81273 -27333,81425 -27425,81471 -27775,81762 -27909,82108

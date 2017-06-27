@@ -3504,17 +3504,14 @@ userdel	2::inwork -12583,-1552 -12485,-1482
        undef,
        undef,
        {
-         'data' => '#: by: fritz
-#: XXX: laut vmz "Gesamtbaumaßnahme" bis Mitte Juli 2017
-#: next_check: 2017-06-25
-userdel	q4::inwork; 15080,11905 14965,11921 14887,11929
+         'data' => 'userdel	q4::inwork; 15080,11905 14965,11921
 ',
          'from' => 1496642400,
          'id' => 2550,
          'source_id' => '2147341388',
-         'text' => 'Scharnweberstr.: Baustelle, Fahrbahn zwischen Jessnerstr. und Weichselstr. gesperrt, bis 25.06.2017',
+         'text' => 'Scharnweberstr.: Baustelle, Fahrbahn zwischen Jessnerstr. und Müggelstr. gesperrt, bis 29. Juni 2017',
          'type' => 'handicap',
-         'until' => 1498384800
+         'until' => 1498730400
        },
        undef,
        undef,
@@ -4261,6 +4258,17 @@ userdel	2::inwork 6815,8691 6912,8617
          'id' => 2870,
          'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.604116.php',
          'text' => 'Heinrich-Lassen-Park: Bauarbeiten, temporäre Vollsperrung möglich',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: last_checked: 2017-06-27
+#: check_frequency: 7d
+userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
+',
+         'from' => undef,
+         'id' => 2871,
+         'text' => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
        }
