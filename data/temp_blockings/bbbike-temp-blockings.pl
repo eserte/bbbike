@@ -22783,8 +22783,8 @@ userdel	q3::inwork; 15098,12849 15233,12829 15357,12813
 EOF
      },
      { from  => $isodate2epoch->("2017-06-05 08:00:00"), # 1394604000, # 2014-03-12 07:00
-       until => $isodate2epoch->("2017-06-29 12:00:00"), # undef, # 1395421200, # 2014-03-21 18:00
-       text  => 'Scharnweberstr.: Baustelle, Fahrbahn zwischen Jessnerstr. und Müggelstr. gesperrt, bis 29. Juni 2017',
+       until => $isodate2epoch->("2017-07-03 12:00:00"), # undef, # 1395421200, # 2014-03-21 18:00
+       text  => 'Scharnweberstr.: Baustelle, Fahrbahn zwischen Jessnerstr. und Müggelstr. gesperrt, bis 3. Juli 2017',
        type  => 'handicap',
        source_id => '2147341388',
        data  => <<EOF,
@@ -25979,8 +25979,8 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2017-06-30 12:00:00"), # 1495641600, # 2017-05-24 18:00
-       text  => 'Rennbahnstr.: ab Hunsrückstr. bis Berliner Allee Bauarbeiten, Fahrtrichtung gesperrt, bis Ende Juni 2017',
+       until => $isodate2epoch->("2017-07-14 12:00:00"), # 1495641600, # 2017-05-24 18:00
+       text  => 'Rennbahnstr.: ab Hunsrückstr. bis Berliner Allee Bauarbeiten, Fahrtrichtung gesperrt, bis 14. Juli 2017',
        type  => 'handicap',
        source_id => '2147341139',
        data  => <<EOF,
@@ -26124,7 +26124,7 @@ EOF
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-06-27
+#: last_checked: 2017-06-29
 #: check_frequency: 7d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF

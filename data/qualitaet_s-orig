@@ -409,7 +409,7 @@ Kiehlufer: Asphalt	Q0 13311,8813 13225,8880
 Kiehlufer: Kopfsteinpflaster	Q2- 13225,8880 13078,8992 12950,9132 12897,9365
 Spreewaldplatz: Kopfsteinpflaster, OK	Q1 12243,10274 12292,10374 12274,10436
 Spreewaldplatz: Kopfsteinpflaster, OK	Q1 12341,10218 12292,10374
-Am Nordhafen: Kopfsteinpflaster	Q2 7741,14560 7518,14689
+# REMOVED --- Am Nordhafen: Kopfsteinpflaster	Q2 7733,14570
 Schubertstr.: Asphalt	Q0 21807,6535 21825,6440 21856,6390 21984,6317
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20061128.1350.51122.html
 Pablo-Neruda-Str: asphaltiert	Q0 22965,4124 23435,4179
@@ -1999,6 +1999,7 @@ Grüntaler Str. - Esplanade: Asphalt	Q0 9778,16915 9846,16981 9880,16994 9980,169
 Kolonie: Gehwegplatten	Q1 10190,16930 10209,16674
 #: XXX Asphaltierung geplant
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.602784.php
+#: last_checked: 2017-06-28
 #: next_check: 2017-09-15
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 10997,16280 11295,16199 11404,16140 11542,16070
 Fritz-Riedel-Str.: Asphalt	Q0 13385,13992 13449,13892 13519,13785 13635,13605
@@ -8789,7 +8790,7 @@ Schneeammerweg: unbefestigte Straße	Q2 13329,20299 13420,20236
 (an der Panke - Mauerweg): Asphalt	Q0 7872,14510 7889,14519 7939,14447
 (an der Panke - Mauerweg): Asphalt	Q0 7926,14439 7939,14447 7989,14478 8050,14558 8103,14582 8232,14689
 Uferweg: Asphalt mit Schäden	Q2+ 7612,14449 7561,14458 7426,14539 7368,14573
-Uferweg: wassergebundene Decke	Q1 7740,14409 7661,14398 7634,14406 7617,14420 7570,14392
+Uferweg: wassergebundene Decke	Q1 7740,14409 7661,14398 7634,14406 7617,14420 7566,14404
 #: note: dieses kurze Stück hat auf der Fahrbahn Kopfsteinpflaster, Radwege weiterhin Verbundsteinpflaster
 Quitzowstr.: Kopfsteinpflaster	Q2 7080,14398 7104,14403
 (Goerdelersteg - Beusselstr.): Beton	Q0 3625,14230 3610,14219 3655,14237
@@ -9965,7 +9966,8 @@ Marseillestr.: Asphalt	Q0 12402,21537 12404,21532 12411,21515 12443,21439
 (Heerstr. - Tiefwerder): Schotterweg	Q2+ -3070,11712 -3087,11728 -3179,11763
 Alter Fischerweg: unbefestigte Straße	Q2 29960,5467 30001,5460
 Alter Fischerweg: Kopfsteinpflaster	Q2- 30001,5460 30090,5446
-(Am Nordhafen - Uferweg am Nordhafen): Asphalt	Q0 7741,14560 7696,14577 7662,14579 7653,14570
+(Am Nordhafen - Uferweg am Nordhafen): Asphalt	Q0 7733,14570 7696,14577 7662,14579 7653,14570
+(Nordhafenpark): asphaltähnlicher Belag	Q0 7696,14577 7635,14628 7560,14670 7533,14702
 (Uferweg am Nordhafen - Am Nordhafen/Fennstr.): Asphalt	Q0 7605,14600 7589,14627 7549,14664 7514,14686
 Bergstr.: Kleinsteinpflaster	Q1 9118,14306 9135,14317
 Bergstr.: Asphalt	Q0 9135,14317 9182,14281 9272,14208

@@ -3509,9 +3509,9 @@ userdel	2::inwork -12583,-1552 -12485,-1482
          'from' => 1496642400,
          'id' => 2550,
          'source_id' => '2147341388',
-         'text' => 'Scharnweberstr.: Baustelle, Fahrbahn zwischen Jessnerstr. und Müggelstr. gesperrt, bis 29. Juni 2017',
+         'text' => 'Scharnweberstr.: Baustelle, Fahrbahn zwischen Jessnerstr. und Müggelstr. gesperrt, bis 3. Juli 2017',
          'type' => 'handicap',
-         'until' => 1498730400
+         'until' => 1499076000
        },
        undef,
        undef,
@@ -4155,9 +4155,9 @@ userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 
          'from' => undef,
          'id' => 2857,
          'source_id' => '2147341139',
-         'text' => 'Rennbahnstr.: ab Hunsrückstr. bis Berliner Allee Bauarbeiten, Fahrtrichtung gesperrt, bis Ende Juni 2017',
+         'text' => 'Rennbahnstr.: ab Hunsrückstr. bis Berliner Allee Bauarbeiten, Fahrtrichtung gesperrt, bis 14. Juli 2017',
          'type' => 'handicap',
-         'until' => 1498816800
+         'until' => 1500026400
        },
        {
          'data' => 'userdel	q4::inwork 18009,18946 17900,18972 17890,18973 17799,19000 17697,18989 17600,18994
@@ -4262,7 +4262,7 @@ userdel	2::inwork 6815,8691 6912,8617
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2017-06-27
+         'data' => '#: last_checked: 2017-06-29
 #: check_frequency: 7d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
