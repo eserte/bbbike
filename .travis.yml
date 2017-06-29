@@ -51,6 +51,8 @@ matrix:
       env: USE_MODPERL=1
     - perl: "5.14"
       env: USE_MODPERL=1 USE_SYSTEM_PERL=1
+    - perl: "5.24"
+      env: BBBIKE_TEST_SKIP_MODPERL=1
   allow_failures:
 ## XXX because of problems with cgi-mechanize* tests
     - perl: "5.20-shrplib"
