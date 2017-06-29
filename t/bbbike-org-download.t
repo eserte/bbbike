@@ -65,33 +65,50 @@ ok -e $download_script, 'Download script exists';
 
 my @debug_opts = $debug ? ('-debug'): ();
 
-my @listing;
-{
-    chomp(@listing = `$^X $download_script @debug_opts`);
-    # 2012-03-16: there are 231 cities available + original bbbike data
-    cmp_ok scalar(@listing), ">=", 100, 'More than 100 cities found';
-    
-    ok ((grep { $_ eq 'Wien' } @listing), 'Found Wien in listing');
+my @urls = (undef); # test default
+if ($ENV{BBBIKE_LONG_TESTS}) {
+    require BBBikeOrgDownload;
+    (my $https_url = BBBikeOrgDownload::DEFAULT_ROOT_URL()) =~ s{^http:}{https:};
+    if ($https_url ne BBBikeOrgDownload::DEFAULT_ROOT_URL()) {
+	push @urls, $https_url;
+    } else {
+	diag "DEFAULT_ROOT_URL looks like a https URL, adding it to \@urls is not necessary anymore";
+    }
 }
 
-{
-    my $random = $ENV{BBBIKE_TEST_SLOW_NETWORK} ? 0 : $ENV{BBBIKE_LONG_TESTS} ? 1 : 0;
+for my $url (@urls) {
 
-    my($dir) = tempdir("bbbike.org_download_XXXXXXXX", CLEANUP => 1, TMPDIR => 1)
-	or die "Cannot create temporary directory: $!";
-    my $city = $city || ($random ? $listing[rand(@listing)] : 'UlanBator'); # size of Ulan Bator dataset on 2016-04-03: 311.9K
-    system($^X, $download_script, @debug_opts, "-city", $city, "-o", $dir, "-agentsuffix", " (testing)");
-    is $?, 0, "Downloading city '$city'";
-    ok -d "$dir/$city", "Directory $dir/$city exists";
-    ok -f "$dir/$city/strassen", "strassen found for $city";
- SKIP: {
-	skip "No 'meta.yml' expected in '$city' file", 1
-	    if $city eq 'data';
-	ok -f "$dir/$city/meta.yml", "meta.yml found for $city";
+    my @url_opts        = defined $url ? ('-url' => $url) : ();
+    my $testname_append = defined $url ? " (using url $url)" : '';
+
+    my @listing;
+    {
+	chomp(@listing = `$^X $download_script @debug_opts @url_opts`);
+	# 2012-03-16: there are 231 cities available + original bbbike data
+	cmp_ok scalar(@listing), ">=", 100, "More than 100 cities found$testname_append";
+    
+	ok ((grep { $_ eq 'Wien' } @listing), "Found Wien in listing$testname_append");
     }
 
-    my $s = Strassen->new("$dir/$city/strassen");
-    isa_ok $s, 'Strassen';
+    {
+	my $random = $ENV{BBBIKE_TEST_SLOW_NETWORK} ? 0 : $ENV{BBBIKE_LONG_TESTS} ? 1 : 0;
+
+	my($dir) = tempdir("bbbike.org_download_XXXXXXXX", CLEANUP => 1, TMPDIR => 1)
+	    or die "Cannot create temporary directory: $!";
+	my $city = $city || ($random ? $listing[rand(@listing)] : 'UlanBator'); # size of Ulan Bator dataset on 2016-04-03: 311.9K
+	system($^X, $download_script, @debug_opts, @url_opts, "-city", $city, "-o", $dir, "-agentsuffix", " (testing)");
+	is $?, 0, "Downloading city '$city'";
+	ok -d "$dir/$city", "Directory $dir/$city exists";
+	ok -f "$dir/$city/strassen", "strassen found for $city";
+    SKIP: {
+	    skip "No 'meta.yml' expected in '$city' file", 1
+		if $city eq 'data';
+	    ok -f "$dir/$city/meta.yml", "meta.yml found for $city";
+	}
+
+	my $s = Strassen->new("$dir/$city/strassen");
+	isa_ok $s, 'Strassen';
+    }
 }
 
 SKIP: {
