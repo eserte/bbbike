@@ -38,7 +38,7 @@ Danziger Str.	?::projected 12621,14313 12729,14227 12901,14093 12975,13990 13037
 #: XXX im Baumaﬂnahmenkatalog ist nur der ˆstliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaﬂnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2017-06-13
+#: last_checked: 2017-06-30
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -408,8 +408,9 @@ Boelckestr.: Planung f¸r Radverkehrsanlagen (vermutlich Schutzstreifen oder Rads
 Seestr.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6781,16026 6965,16190 7051,16264 7231,16418 7295,16477 7403,16575 7417,16587 7447,16613
 #: last_checked: 2017-06-08
 Fˆhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,15104 6561,15041 6528,15000 6445,14893 6334,14756
+#: source_id: 2147340980
 #: last_checked: 2017-06-08
-#: check_frequency: 30d
+#: next_check: 2017-07-05
 Stromstr.: Asphaltierung des Radwegs in Arbeit	?::inwork; 6214,13225 6183,13083 6164,12980
 #: last_checked: 2017-05-19
 Mˆckernstr.: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 8783,10166 8802,10290 8804,10303
@@ -1090,6 +1091,7 @@ Bebauungsplan XV-71 (Mittelweg), Ortsteil Altglienicke: hier werden vermutlich e
 #: by: http://fbinter.stadt-berlin.de/ScansBPlan/07_tem_sch/B-Plaene/Bebauungsplan/Mariendorf/102/UeberXIII-102.htm
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/___tmp/tmp/45081036573567460/573567460/00038455/55-Anlagen/03/3_Version_vom_05_12_2012.pdf
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/___tmp/tmp/45081036623219836/623219836/00063059/59-Anlagen/07/BA_Anlage5_DurchfuehrungsvertragEndfassung2507.pdf
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6121 (wobei hier von anderen Abschnitten die Rede ist)
 #: last_checked: 2017-03-26
 #: check_frequency: 360d
 Straﬂe 6 (Mariendorf): wird in Zukunft vielleicht entstehen	? 9099,4204 9079,4376
@@ -1246,7 +1248,7 @@ Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 kˆnnte es hier eine neue Verbi
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8026
 #: XXX Vorschlag: Freia-Eisner-Straﬂe; Straﬂe ist asphaltiert
 #: osm_watch: way id="491906864" version="2"
-#: last_checked: 2017-06-21
+#: last_checked: 2017-06-30
 #: check_frequency: 14d
 Planstraﬂe C: neue Straﬂe entsteht, Straﬂenname?	?::inwork 12926,11224 12848,11093
 # 
@@ -1319,9 +1321,11 @@ Innstr.: hier wird ein Asphaltstreifen entstehen, vielleicht auch der Zugang zum
 #: by: ^^^
 # 
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017)
+#: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5520
+#: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036892648488/892648488/00177969/69-Anlagen/02/0195Radwegebebauung.pdf
 #: last_checked: 2017-06-29
 #: check_frequency: 100d
-Weigandufer (und Pfl¸gerstr.?): Fahrradstraﬂe geplant	?::projected 13939,8228 13875,8282 13716,8410 13641,8470 13539,8552 13450,8625 13366,8694 13191,8838 13048,8956 12907,9073 12761,9190 12620,9293 12480,9394
+Weigandufer (und Pfl¸gerstr.?): Fahrradstraﬂe geplant, in Hˆhe Wildenbruchplatz wird die Durchfahrt f¸r den Kfz-Verkehr gesperrt	?::projected 13939,8228 13875,8282 13716,8410 13641,8470 13539,8552 13450,8625 13366,8694 13191,8838 13048,8956 12907,9073 12761,9190 12620,9293 12480,9394
 # 
 # REMOVED (realisiert) --- #: XXX brunnels! --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1403/nachricht5207.html ("nahe Zukunft") --- #: XXX laut Tagesspiegel vom 8. April 2014 soll die Realisierung noch im April passieren --- #: by: http://www.tagesspiegel.de/berlin/schnelle-reaktion-des-senats-auf-tagesspiegel-bericht-noch-im-april-soll-die-bruecke-ueber-die-yorckstrasse-fertig-sein/9724886.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5229.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5235.html (provisorische Erˆffnung) --- #: priority: #A --- #: last_checked: 2014-03-21 --- #: next_check: 2014-04-28 --- Radweg Berlin-Leipzig, Abschnitt Yorckstr. - Monumentenstr., Br¸cke ¸ber die Yorckstr.: wann wird hier realisiert?	?::projected 8338,9593 8339,9560
 # 
@@ -1747,6 +1751,10 @@ B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133
 # - Fragen nach genauen Routenverl‰ufen
 # - XXX_prog- und XXX_indoor-Eintr‰ge
 # 
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8140
+#: next_check: 2017-08-15
+Friesenstr.: Asphaltierung geplant	?::projected 9801,8683 9801,8889 9799,8962 9797,9063 9795,9162 9793,9241
+# 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5838
 #: last_checked: 2017-06-22
 Sachsendamm: f¸r Radfahrer freigegebene Busspur wird zur¸ckgebaut	?::projected; 7193,7950 7147,8000
@@ -1757,11 +1765,13 @@ Sachsendamm: f¸r Radfahrer freigegebene Busspur wird zur¸ckgebaut	?::projected; 
 Schnellerstr.: neue Fuﬂg‰ngerampel in Bau	?::inwork 17628,5865
 # 
 #: by: https://www.facebook.com/baustellen.berlin/posts/288876511560783
+#: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8864&options=4
 #: next_check: 2017-08-15
 Potsdamer Chaussee: Sanierung der Radwege	?::projected -6660,9953 -5928,10782 -5870,10847 -5716,11054 -5650,11143 -5564,11209 -5509,11256 -5462,11326 -5399,11426
 # 
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_23_2621_2712_online.pdf
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.601504.php
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5931
 #: last_checked: 2017-06-08
 #: next_check: 2017-07-05
 Am B¸lowbogen: Benennung; gibt es hier Straﬂenschilder?	? 7906,10098 7928,10094 8011,10085
@@ -1782,11 +1792,12 @@ Ollenhauerstr.: gibt es hier eine f¸r Radfahrer freigegebene Busspur? Geltungsze
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf
 #: source_id: 2147341047
 #: last_checked: 2017-06-11
-#: next_check: 2017-06-30
+#: next_check: 2017-07-05
 Wernsdorfer Str.: entstehen hier Radspuren?	? 27892,-3167 27761,-3165 27721,-3164
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4507
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036833670245/833670245/00143778/78-Anlagen/02/BenennungsabsichtfuerdieoeffentlicheStrasse18a.pdf
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4547
 #: XXX auﬂerdem pr¸fen, ob die Straﬂe l‰nger als auf der BBBike-Karte ist. culdesac-Eintrag entfernen
 #: XXX Berlin.coords.data-Eintrag!
 #: next_check: 2017-08-20
@@ -1914,6 +1925,7 @@ Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich f¸r den Kfz-Verkehr gesperr
 # REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2015 --- #: by: http://www.dafmap.de/d/berlin.html?id=3903&mt=0&zoom=15 (Geplanter Projektabschluss: 2017-06-30) --- #: osm_watch: way id="156817982" version="14" --- #: last_checked: 2016-07-07 --- #: next_check: 2016-09-25 --- Lutterbacher Str.: Straﬂe ist offen, pr¸fen!	? 2094,3231 2064,3214 1999,3177 2066,3072 2127,3111 2151,3126
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/39re.pdf/file?y=2016
+#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_27_3021_3144_online.pdf
 #: last_checked: 2017-04-24
 #: check_frequency: 120d
 Mehringplatz: Widmung von Straﬂenland - ‰ndert sich hier etwas?	? 9587,10421 9592,10263
@@ -2099,7 +2111,7 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7478
 #: XXX "noch 2016"
 #: osm_watch: note 824350 2
-#: last_checked: 2017-06-26
+#: last_checked: 2017-06-30
 #: check_frequency: 14d
 #: priority: #C
 Sebastian/Luckauer: Zebrastreifen in Bau	?::inwork 11113,10943 11109,10935
@@ -2938,7 +2950,7 @@ Pomonaring (Potsdam-Bornim): Qualit‰t? Genaue Lage der Straﬂe?	? -15999,1387 -16
 # REMOVED --- #: priority ^^^ --- #: next_check ^^^ --- #: XXX ^^^
 # REMOVED (sieht nicht so aus) --- #: XXX wird es einen Ersatz f¸r die Ruderf‰hre F24 geben? --- #: by: http://www.berliner-zeitung.de/berlin/mueggelheim-aus-fuer-ruderfaehre,10809148,24637330.html (sagt nein: kein Platz f¸r einen Anleger) --- #: by: http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/rahnsdorf/artikel/8416-im-herbst-2013-stellt-die-faehre-f-24-den-betrieb-ein/ (sagt ja, durch die F23) --- #: by: http://www.tagesspiegel.de/berlin/berlin-koepenick-aus-fuer-berlins-letzte-ruderfaehre/8937114.html (nein, kein Hinweis darauf) --- #: next_check: 2014-03-01 --- Ersatz f¸r die F24?	? 29959,3031 29968,2986
 # 
-# REMOVE (Straﬂenschilder h‰ngen) --- #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=5831 (vorgeschlagener Straﬂenname) --- #: by: http://www.berlin.de/ba-mitte/bvv-online/___tmp/tmp/4508103642561748/42561748/00111971/71-Anlagen/03/4_Version_vom_30_12_2013.pdf (weitere Vorschl‰ge) --- #: by: http://www.fatkoehl.com/index.php?article_id=31 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/12re.pdf/file?y=2014 --- #: XXX es gab noch zwei weitere Alternativen: Kate-K¸hl-Straﬂe und Alisa-Fuss-Straﬂe --- #: XXX fehlt in Berlin.coords.data (laut DTAG-Liste und osm und LOR PLZ=10179) -> Wilhelmine-Gemberg-Weg|Mitte|10179 --- #: XXX culdesac-Eintrag wird wahrscheinlich notwendig sein --- #: XXX auch in der DTAG-Straﬂenliste vom 2014-06-04 --- #: osm_watch: way id="256968789" version="9" --- #: last_checked: 2014-07-07 (zur Zeit nur eine Baustraﬂe) --- #: check_frequency: 60d --- Wilhelmine-Gemberg-Weg: genaue Lage, Qualit‰t?	?::inwork 11715,11522 11762,11665 11829,11727
+# REMOVE (Straﬂenschilder h‰ngen) --- #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=5831 (vorgeschlagener Straﬂenname) --- #: by: http://www.berlin.de/ba-mitte/bvv-online/___tmp/tmp/4508103642561748/42561748/00111971/71-Anlagen/03/4_Version_vom_30_12_2013.pdf (weitere Vorschl‰ge) --- #: by: http://www.fatkoehl.com/index.php?article_id=31 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/12re.pdf/file?y=2014 --- #: XXX es gab noch zwei weitere Alternativen: Kate-K¸hl-Straﬂe und Alisa-Fuss-Straﬂe --- #: XXX fehlt in Berlin.coords.data (laut DTAG-Liste und osm und LOR PLZ=10179) -> Wilhelmine-Gemberg-Weg|Mitte|10179 --- #: XXX culdesac-Eintrag wird wahrscheinlich notwendig sein --- #: XXX auch in der DTAG-Straﬂenliste vom 2014-06-04 --- #: osm_watch: way id="256968789" version="9" --- #: last_checked: 2014-07-07 (zur Zeit nur eine Baustraﬂe) --- #: check_frequency: 60d --- Wilhelmine-Gemberg-Weg: genaue Lage, Qualit‰t?	?::inwork 11715,11522 11767,11662 11829,11727
 # 
 #: by: http://www.potsdam.de/cms/dokumente/26838366_1771576/7b9e9382/ENDFASSUNGPdmStadt%2017_13.pdf
 #: XXX Straﬂenbenennungen in Potsdam-Fahrland
@@ -3436,9 +3448,7 @@ Alt-Mahlsdorf: entsteht hier eine Ampel? Wird sie f¸r Radfahrer relevant sein?	?
 #: check_frequency: 360d
 Bebauungsplanentwurf I-43a "S¸dliche Alexanderstraﬂe": entsteht hier eine Planstraﬂe?	? 11243,12386 11328,12424
 # 
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.554044.php
-#: XXX welche Straﬂen werden hier saniert?
-#: next_check: 2017-08-30
+# REMOVED (nur "Kleinstfl‰chen" werden repariert) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.554044.php --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.607667.php --- #: XXX welche Straﬂen werden hier saniert? --- #: next_check: 2017-08-30
 Lichtenrade: Sanierung von Pflasterstraﬂen	?::projected 10381,-2457 11914,-2137 10775,-3208 10381,-2457
 # 
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_08_0861_0964_online.pdf
@@ -3508,6 +3518,11 @@ Mˆckernkiez: Privatstraﬂe, Qualit‰t, genaue Lage?	?::inwork 8765,9753 8741,9741 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/bebauungsplanung/oeffentlichkeits-beteiligungen/1-bebauungsplanentwurf-6-33-oa.pdf
 #: next_check: 2018-07-01
 Bebauungsplan 6-33: hier entstehen Straﬂen und Wege	?::projected 3356,4870 3357,4699 3484,4696 3478,4867 3356,4870
+# 
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7190
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036898088455/898088455/00091575/75-Anlagen/02/vzb0115_V_Benenng_Privatstr_Charl_v_Mahlsd_Rin.pdf
+#: XXX fehlt in Berlin.coords.data
+Charlotte-von-Mahlsdorf-Ring: geplante Straﬂe	?::projected 24665,10714 24728,10722 24739,10645
 # 
 #: ignore ^^^
 #: section ^^^

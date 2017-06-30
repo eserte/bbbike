@@ -25871,8 +25871,8 @@ userdel auto	3 10584,12507 10601,12521 10431,12709
 EOF
      },
      { from  => 1485206028, # 2017-01-23 22:13
-       until => $isodate2epoch->("2017-06-30 12:00:00"), # 1496440800, # 2017-06-03 00:00
-       text  => 'Stubenrauchstr.: zwischen Wiesbadener Str. und Rotdornstr. Bauarbeiten, Fahrbahn gesperrt, bis 30. Juni 2017',
+       until => $isodate2epoch->("2017-07-31 12:00:00"), # 1496440800, # 2017-06-03 00:00
+       text  => 'Stubenrauchstr.: zwischen Wiesbadener Str. und Rotdornstr. Bauarbeiten, Fahrbahn gesperrt, bis 31. Juli 2017',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: LMS-BR_r_LMS-BR_88478
@@ -26124,9 +26124,70 @@ EOF
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-06-29
+#: last_checked: 2017-06-30
 #: check_frequency: 7d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
+EOF
+     },
+     { from  => 1499148000, # 2017-07-04 08:00
+       until => 1499259600, # 2017-07-05 15:00
+       text  => 'Straßen rund um das Bundeskanzleramt: wegen eines Staatsbesuchs Sperrungen möglich, 5. Juli 2017 von 8 Uhr bis 15 Uhr',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_27_3021_3144_online.pdf',
+       data  => <<EOF,
+userdel	2::temp 8044,12989 8110,13042 8116,12938 8053,12871 8032,12889
+userdel	2::temp 8277,13032 8317,13015 8401,12973 8464,12919 8480,12909 8503,12895 8424,12853 8309,12758 8206,12757 8120,12756 8030,12824 8124,12840
+userdel	2::temp 8168,12945 8235,12945 8304,12938 8370,12902
+userdel	2::temp 8116,12938 8124,12840 8120,12756 8122,12603 8119,12414
+userdel	2::temp 8464,12919 8498,12870
+userdel	2::temp 8306,12609 8348,12609 8399,12610 8485,12612 8554,12593
+userdel	2::temp 8160,13053 8159,13042 8159,13032 8044,12989 7966,12913
+userdel	2::temp 8072,12902 8046,12870
+userdel	2::temp 8168,12848 8204,12816 8206,12757 8207,12606 8306,12609 8309,12758
+userdel	2::temp 8036,12855 8021,12832 7930,12912
+userdel	2::temp 8207,12606 8122,12603 7945,12592 7875,12363
+userdel	2::temp 8348,12609 8354,12416
+userdel	2::temp 7945,12592 7851,12590 7741,12586 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8445,12755 8415,12749 8309,12758 8304,12938
+EOF
+     },
+     { from  => 1499148000, # 2017-07-04 08:00
+       until => 1499288400, # 2017-07-05 23:00
+       text  => 'Straßen am Schloss Bellevue: wegen eines Staatsbesuchs Sperrungen möglich, 5. Juli 2017 von 08:00 bis 23:00',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_27_3021_3144_online.pdf',
+       data  => <<EOF,
+userdel	2::temp 7215,12295 7039,12314 7053,12364 7064,12419 7086,12572
+userdel	2::temp 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6787,12099 7039,12314 7383,12095
+userdel	2::temp 6694,12627 7039,12314
+	3 7139,12376 7064,12419 6808,12604
+	3 6808,12604 7064,12419 7139,12376
+EOF
+     },
+     { from  => $isodate2epoch->("2017-07-03 16:00:00"),
+       until => 1499328000, # 2017-07-06 10:00
+       text  => 'Budapester Str. und Umgebung: wegen eines Staatsbesuchs Sperrungen möglich, vom 4. Juli 2017 16:00 Uhr bis 6. Juli 2017 10:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_27_3021_3144_online.pdf',
+       data  => <<EOF,
+userdel	2::temp 6476,11325 6630,11247 6606,11222 6582,11202 6447,11144
+userdel	2::temp 6841,11114 6630,11247 6679,11319 6692,11365 6716,11439 6825,11486
+userdel	2::temp 5986,10976 6058,10988 6145,10975 6168,11042 6447,11144 6452,11118 6477,11045
+userdel	2::temp 6626,11178 6582,11202 6495,11251 6350,11301 6346,11326 6337,11365 6200,11417
+	3 6851,11346 6692,11365 6481,11400
+	3 6481,11400 6692,11365 6851,11346
+	3 6272,10926 6145,10975 6122,10925
+	3 6122,10925 6145,10975 6272,10926
+EOF
+     },
+     { from  => $isodate2epoch->("2017-07-19 12:00:00"),
+       until => 1500577200, # 2017-07-20 21:00
+       text  => 'Straßen rund um das Verteidigungsministerium: Straßensperrungen wegen einer Veranstaltung möglich, 20. Juli 2017 von 12:00 bis 21:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_27_3021_3144_online.pdf',
+       data  => <<EOF,
+userdel	2::temp 7322,11177 7419,11137 7492,11111 7595,11086 7575,11076 7252,11188 7248,11143 7461,11051 7579,11032 7595,11086 7665,11353
+userdel	2::temp 7435,11514 7322,11177 7253,11208 7356,11517
+userdel	2::temp 7160,11225 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 7218,11181 7140,11156
 EOF
      },
     );

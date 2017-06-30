@@ -20,17 +20,17 @@
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraﬂe wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualit‰t danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
-#: last_checked: 2017-06-29
+#: last_checked: 2017-06-30
 Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2017-06-29
+#: last_checked: 2017-06-30
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3 14254,11377 14211,11229
 # 
 #: last_checked: 2017-06-24
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2017-06-29
+#: last_checked: 2017-06-30
 Lange Str.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 #: last_checked: 2017-06-14
@@ -278,9 +278,9 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 Bˆckhstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 11640,9710 11411,9810
 # 
 #: source_id: 2147341140
-#: XXX laut fritz bis 15.09.2017, laut vmz bis September 2017
+#: XXX laut fritz bis 31.07.2017, laut vmz bis September 2017
 #: last_checked: 2017-06-09
-#: next_check: 2017-09-15
+#: next_check: 2017-07-31
 #: valid: -20170915
 Erkelenzdamm: Bauarbeiten zwischen Bˆcklerstr. und Kohlfurter Str., Fahrbahn gesperrt, Bordsteine	q3::inwork 10967,10092 11038,10247 11094,10261
 # 
@@ -2302,7 +2302,7 @@ Parkplatz Einkaufszentrum: Parkplatzverkehr	q2 -2195,3564 -2173,3513 -2164,3488
 (am Kaiser's): Fuﬂg‰nger	q2 15714,11941 15710,11857
 #: note: q2, falls alle vier Gleise mit Straﬂenbahnen belegt sind, aber manchmal sind es nur zwei oder so, und man kommt viel besser durch
 Groﬂe Pr‰sidentenstr.: wartende Straﬂenbahnen	q2 10220,13098 10105,13004
-Wilhelmine-Gemberg-Weg: einige Fuﬂg‰nger	q1 11762,11665 11829,11727
+Wilhelmine-Gemberg-Weg: einige Fuﬂg‰nger	q1 11767,11662 11829,11727
 (Zufahrt Debis-Parkhaus): Parkhausverkehr, einige Kurven	q1 8430,10710 8424,10703 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
 Iranische Str.: einige Fuﬂg‰nger	q1 7843,16524 7713,16557 7447,16613
 (Nennhauser Damm - Am alten Gaswerk): einige Fuﬂg‰nger	q1 -8043,13464 -8136,13542

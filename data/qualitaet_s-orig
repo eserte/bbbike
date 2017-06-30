@@ -6975,6 +6975,9 @@ Karower Chaussee [Siedlungsgebiet]: Beton	Q0- 16352,24455 16456,24384
 Karower Chaussee [Siedlungsgebiet]: Beton	Q0- 16557,24530 16456,24384 16441,24357 16410,24311
 (KGA "Steintal"): Beton	Q0- 16441,24357 16479,24331
 (KGA "Steintal"): unbefestigte Straße	Q2+ 16479,24331 16481,24299 16890,24029 17007,23994 17028,23968 17052,23958
+#: XXX Straße wird umbenannt: Alpenberger Weg
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4549 (Benennungsabsicht)
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036750280094/750280094/00146312/12-Anlagen/02/BenennungsabsichtfuerdieNummernstrasseStrasse4.pdf
 Straße 4 (Buch): Asphalt	Q0 17856,25959 18015,25653
 (Ludwigpark): Kopfsteinpflaster, wegen Schranke am besten auf Gehweg ausweichen	Q2 17446,25914 17413,25969
 (Ludwigpark): Asphalt	Q0 17259,26148 17385,25954 17413,25969 17435,25983 17310,26181
@@ -7671,6 +7674,9 @@ Schwalbenweg (Altglienicke): Beton	Q1 19773,-837 19754,-786 19724,-703
 Feldstr. (Bohnsdorf): Beton	Q2 20829,-773 21055,-723 21209,-734
 Gehwegplatten	Q0 21844,238 21963,261 21979,274 21991,273 22008,262
 # REMOVED (ich glaube, hier bessert sich nichts...) --- #: XXX wird hier die Qualität noch nachgebessert? --- #: last_checked: 2012-05-06 --- #: next_check: 2013-01-01
+#: XXX wird hier die Qualität verbessert?
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5672
+#: next_check: 2017-09-30
 Unterführung unter Adlergestell und Bahn: teilweise sehr sandig	Q3 20939,2413 20810,2398
 (Hartriegelstr. - Michael-Brückner-Str.): Verbundsteinpflaster	Q1+ 18695,5076 18622,5049 18514,5028 18425,5032
 (Bersarinplatz - Thaerstr.): unbefestigter Weg	Q1- 13747,12642 13761,12690
@@ -9869,11 +9875,10 @@ Fellbacher Str.: Kopfsteinpflaster	Q2 3610,23272 3653,23305
 (Cyclopstr. - Blomberger Weg): Verbundsteinpflaster	Q1 5099,21410 5041,21343 4968,21322
 (Weg zum großen Bunkerberg): kleinteiliges Kopfsteinpflaster	Q1- 12307,13329 12355,13366 12391,13416 12386,13452 12305,13514 12232,13523 12197,13488 12196,13453 12235,13383 12274,13372 12327,13394 12344,13424 12307,13491 12254,13495 12232,13477 12246,13440 12278,13418 12287,13443
 Torstr. - Weydingerstr.: Verbundsteinpflaster	Q1+ 11079,13492 11111,13518
-#: XXX Wird die Fahrbahn nochmal geändert? Wird bei der Erstellung der Straße auch eine Beleuchtung eingebaut (-> nolighting-orig)?
-#: last_checked: 2017-06-13
-#: check_frequency: 14d
-Wilhelmine-Gemberg-Weg: provisorischer Asphalt	Q0 11715,11522 11762,11665
-Wilhelmine-Gemberg-Weg: Feinschotter	Q1 11762,11665 11829,11727
+Wilhelmine-Gemberg-Weg: Steinpflaster	Q0- 11715,11522 11767,11662
+#: XXX Wird die Fahrbahn nochmal geändert?
+#: last_checked: 2017-06-30
+Wilhelmine-Gemberg-Weg: Feinschotter	Q1 11767,11662 11829,11727
 Alexanderplatz: Pflasterung mit Schäden	Q1- 11055,12717 11030,12741 11007,12773 10970,12822
 Alexanderplatz: Pflasterung mit Schäden	Q1- 11030,12741 11087,12780
 (Zufahrt Debis-Parkhaus): Asphalt	Q0 8430,10710 8424,10703 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
