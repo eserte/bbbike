@@ -26,7 +26,6 @@ script:
  - perl Makefile.PL && make test HARNESS_OPTIONS=j4
 language: perl
 dist: trusty
-group: deprecated-2017Q2
 matrix:
   include:
     - perl: "5.14"
