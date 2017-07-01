@@ -24,7 +24,7 @@
 Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2017-06-30
+#: last_checked: 2017-07-01
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3 14254,11377 14211,11229
 # 
 #: last_checked: 2017-06-24
@@ -33,11 +33,7 @@ Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 #: last_checked: 2017-06-30
 Lange Str.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 12409,11902 12238,11931
 # 
-#: last_checked: 2017-06-14
-#: next_check: 2017-06-30
-#: valid: -20170630
-Auerstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13273,12902 13202,12790
-# 
+# REMOVED (bei fritz entfernt) --- #: last_checked: 2017-06-14 --- #: next_check: 2017-06-30 --- #: valid: -20170630 --- Auerstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13273,12902 13202,12790
 # REMOVED --- Dˆringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
 # REMOVED --- Revaler Str.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14357,11148 14286,11186
 # REMOVED (keine Behinderungen mehr) --- Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
@@ -379,7 +375,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung S¸de
 #: next_check_id: MOELLENDORFFSTR-2017
 #: XXX_prog abgesch‰tzter Zeitverlust durch 2x Ampeln, explizite "Radfahren verboten"-Schilder
 #: XXX laut fritz bis 1. August 2017
-#: last_checked: 2017-06-25
+#: last_checked: 2017-07-01
 #: next_check: 2017-08-01
 #: valid: -20170801
 Mˆllendorffstr.: Bauarbeiten, Radfahrer m¸ssen auf die gegen¸berliegende Seite wechseln	q4::inwork; 15420,12178 15361,12071
@@ -951,7 +947,7 @@ Langhoffstr.: enge Straﬂe, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20140603.1435.397678.html (Vorlage 096/2014)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
-#: last_checked: 2017-04-30
+#: last_checked: 2017-07-01
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der groﬂen Steigung/Gef‰lles nur Schrittgeschwindigkeit mˆglich	q4 -1663,4218 -1592,4268
@@ -1038,7 +1034,7 @@ S-Bhf. Raoul-Wallenberg-Str.: lange Rampe	q3 20109,16264 20116,16303
 (Kinderbad Platsch - Max-Herrmann-Str.): Fuﬂg‰nger	q1 21102,16415 21177,16499 21238,16627
 (oberer Wuhlewanderweg - Alte Hellersdorfer Str.): einige Fuﬂg‰nger	q1 22851,14603 22876,14594 23057,14582
 Wuhlewanderweg: Fuﬂg‰nger	q1 22771,16194 22717,16142 22670,16063 22623,15959 22554,15780 22539,15729 22515,15620 22518,15510 22518,15417 22516,15399 22507,15373 22400,15321 22393,15292 22396,15254 22413,15187 22441,15118
-Wuhlewanderweg: Fuﬂg‰nger	q1 22441,15118 22573,15043 22741,14761 22806,14631 22836,14520 22843,14452 22827,14356 22839,14149 22825,14109 22611,13901 22562,13855 22462,13726 22457,13713 22447,13690 22359,13599 22295,13530
+Wuhlewanderweg: Fuﬂg‰nger	q1 22441,15118 22573,15043 22741,14761 22806,14631 22840,14494 22843,14452 22827,14356 22839,14149 22825,14109 22611,13901 22562,13855 22462,13726 22457,13713 22447,13690 22359,13599 22295,13530
 Wuhlewanderweg: enge Unterf¸hrung	q3 22359,13599 22259,13508
 Wuhlewanderweg: Fuﬂg‰nger	q1 22295,13530 22259,13508 22191,13414 22187,13304 22211,13040 22196,12961 22036,12367 21998,12204
 Wuhlewanderweg: Fuﬂg‰nger	q1 22242,11269 22244,11311 22073,11581 22009,11636 21882,11859 21885,11949 21907,12018 21936,12022
@@ -2111,7 +2107,7 @@ Wasserweg: Bordstein	q2 15680,8914 15873,8884
 (Ella-Trebe-Str. - Invalidenstr.): einige Fuﬂg‰nger	q1 7938,13302 7968,13335 8003,13374
 Europaplatz: einige Fuﬂg‰nger	q1 7880,13315 7938,13302
 Wuhlestr. [Wohngebiet]: Fuﬂg‰nger	q1 21580,13583 21430,13602
-(oberer Wuhlewanderweg): einige Fuﬂg‰nger	q1+ 22317,13521 22472,13698 22479,13734 22550,13821 22638,13902 22783,14034 22855,14114 22872,14175 22872,14233 22860,14440 22873,14502 22864,14556
+(oberer Wuhlewanderweg): einige Fuﬂg‰nger	q1+ 22317,13521 22472,13698 22479,13734 22550,13821 22638,13902 22783,14034 22855,14114 22872,14175 22872,14233 22860,14440 22868,14477 22873,14498 22864,14556
 (oberer Wuhlewanderweg): Fuﬂg‰nger, Kinderspielpl‰tze	q1- 22864,14556 22851,14603 22756,14787 22599,15030 22577,15109
 #: XXX_prog BS an beiden Seiten, sonst entfernen
 Unterbaumstr.: Bordsteine	q2 8488,12920 8502,12935
@@ -2144,7 +2140,7 @@ Am Schwanenberg: einige Fuﬂg‰nger	q1 15752,9385 15793,9334
 #: XXX_prog BS nach Osten hin, ansonsten entfernen
 Straﬂe 77: Bordstein	q1 15320,12375 15408,12394
 Wuhlebr¸cken: Fuﬂg‰nger	q2 22843,14452 22839,14453 22819,14457 22788,14468 22743,14488 22670,14520
-(oberer Wuhlewanderweg - unterer Wuhlewanderweg): Fuﬂg‰nger	q2+ 22873,14502 22848,14460 22843,14452
+(oberer Wuhlewanderweg - unterer Wuhlewanderweg): Rampe, einige Fuﬂg‰nger	q2 22873,14498 22849,14449 22847,14488 22840,14494
 Bootshausweg: einige Fuﬂg‰nger	q1+ -1017,16184 -960,16396 -972,16553 -1016,16585 -1033,16621 -1067,16635
 Bootshausweg: einige Fuﬂg‰nger	q1+ -1016,16585 -1058,16611 -1096,16597
 (Rauchstr. - Sigmund-Bergmann-Str.): einige Fuﬂg‰nger	q1+ -2414,16975 -2371,16776
@@ -2464,7 +2460,6 @@ Uferweg: Fuﬂg‰nger	q1 -4546,9381 -4506,9395 -4460,9456 -4442,9625 -4536,9800 -45
 #: note: am s¸dlichen Ende ist ein Fuﬂg‰nger-Schild, am nˆrdlichen Ende fehlt es
 #: XXX_prog BS (am s¸dlichen Ende), ansonsten q2
 Rudolf-Filter-Weg: Fuﬂg‰nger, Bordstein	q3 20988,15505 21009,15539 21040,15589
-(Hellersdorfer Str. - Feldberger Ring): Fuﬂg‰nger	q2 23021,13982 22978,13967
 Kuschelweg: einige Fuﬂg‰nger	q1 23355,12732 23349,12760 23408,13100 23474,13449 23499,13593 23550,13863 23552,13878 23553,13885 23560,13936 23603,13956 23631,13935 23680,13924 23738,13925 24050,13855 24130,13842 24255,13816 24291,13828 24402,13805 24437,13786 24494,13785
 (Melanchthonstr. - Weg an der S-Bahn): einige Fuﬂg‰nger	q1 24759,12401 24756,12277 24711,12150
 (Parlerstr. - Elsenstr.): enger Pfad	q3 24528,10696 24571,10736 24593,10775
@@ -2535,7 +2530,10 @@ An der Neumark: laut Schild "Schrittgeschwindigkeit"	q2 11283,3774 11300,3709 11
 (Gehweg an der zuk¸nftigen Minna-Todenhagen-Str.): einige Fuﬂg‰nger	q2 17681,7589 17470,7473 17295,7358
 Dalandweg: schmale und kurvenreiche Straﬂe	q1 5120,4318 5226,4259 5250,4298 5311,4270 5356,4249 5385,4236 5541,4305
 (Spreeuferweg): einige Fuﬂg‰nger	q1 21090,5417 21085,5451 20827,5431
-(KGA Am Freibad Oberspree): einige Freibad	q1 20827,5431 20829,5418 20849,5266 20851,5255
+(KGA Am Freibad Oberspree): einige Fuﬂg‰nger	q1 20827,5431 20829,5418 20849,5266 20851,5255
+(Zufahrt zum Gewerbegebiet): Parkplatzverkehr	q1 25312,11186 25298,11118 25298,10966 25297,10892
+(Pilgramer Str. - Gewerbegebiet): Parkplatzverkehr	q1 25168,10963 25298,10966 25337,10967
+(Alte Hellersdorfer Str. - Hellersdorfer Str.): viele Fuﬂg‰nger (IGA-Eingang)	q3 23084,14472 23081,14418 23021,13982
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -3838,7 +3836,7 @@ Kulmseestr.: einige Fuﬂg‰nger	q1 20252,12262 20303,12230
 #: by: Andreas Wettig:
 #: confirmed_by: srt
 (Kniprodestr./Michelangelostr. - Puccinistr.): Fuﬂweg mit Bordsteinkanten	q2- 13973,15259 13905,15306 13809,15370
-# REMOVED (existiert nicht mehr) --- #: by: Sebastian Koch: --- (Gartenstr. - Tychyer Str.): sehr enger Trampelpfad	q2 21217,11328 21257,11323 21286,11319 21300,11369
+# REMOVED (existiert nicht mehr) --- #: by: Sebastian Koch: --- (Gartenstr. - Tychyer Str.): sehr enger Trampelpfad	q2 21214,11331 21257,11323 21286,11319 21300,11369
 #: by: Elke Ortloff:
 Eisweg: enge Straﬂe	q1+ 23569,10956 23577,10915 23608,10902 23596,10848 23561,10712 23569,10693
 #: by: Manuela Baumg‰rtel:

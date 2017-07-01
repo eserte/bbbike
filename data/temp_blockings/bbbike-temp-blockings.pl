@@ -26124,7 +26124,7 @@ EOF
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-06-30
+#: last_checked: 2017-07-01
 #: check_frequency: 7d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
@@ -26188,6 +26188,18 @@ EOF
 userdel	2::temp 7322,11177 7419,11137 7492,11111 7595,11086 7575,11076 7252,11188 7248,11143 7461,11051 7579,11032 7595,11086 7665,11353
 userdel	2::temp 7435,11514 7322,11177 7253,11208 7356,11517
 userdel	2::temp 7160,11225 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 7218,11181 7140,11156
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Spreeufer - Englische Straße: Uferweg eventuell wegen Bauarbeiten gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: XXX prüfen!
+#: by: http://www.dafmap.de/d/berlin.html?id=5241&mt=0&zoom=17
+#: osm_watch: way id="392904879" version="1"
+#: osm_watch: way id="392904880" version="3"
+userdel	2::inwork 5579,12231 5535,12206
 EOF
      },
     );

@@ -2481,7 +2481,7 @@ userdel	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juni von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juli von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -4262,7 +4262,7 @@ userdel	2::inwork 6815,8691 6912,8617
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2017-06-30
+         'data' => '#: last_checked: 2017-07-01
 #: check_frequency: 7d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
@@ -4336,6 +4336,19 @@ userdel	2::temp 7160,11225 7253,11208 7252,11202 7235,11203 7233,11189 7252,1118
          'text' => 'Straßen rund um das Verteidigungsministerium: Straßensperrungen wegen einer Veranstaltung möglich, 20. Juli 2017 von 12:00 bis 21:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1500577200
+       },
+       {
+         'data' => '#: XXX prüfen!
+#: by: http://www.dafmap.de/d/berlin.html?id=5241&mt=0&zoom=17
+#: osm_watch: way id="392904879" version="1"
+#: osm_watch: way id="392904880" version="3"
+userdel	2::inwork 5579,12231 5535,12206
+',
+         'from' => undef,
+         'id' => 2876,
+         'text' => 'Spreeufer - Englische Straße: Uferweg eventuell wegen Bauarbeiten gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

@@ -59,12 +59,12 @@ Futranplatz	1 22388,4737 22451,4749
 Alt-Köpenick	1 22144,4660 22175,4730 22198,4800 22196,4847
 (Am S-Bahnhof Plänterwald): Asphalt	1 15357,8286 15284,8214 15256,8247 15242,8263 15303,8343
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
-Knoten Märkische/Landsberger Allee	1 19013,14905 19175,14968 19364,15045 19507,15095 19563,15113 19694,15141 19852,15201
+Knoten Märkische/Landsberger Allee	1 19013,14905 19175,14968 19364,15045 19502,15089 19565,15106 19694,15141 19852,15201
 Knoten Märkische/Landsberger Allee	1 19852,15201 19744,15128 19614,15061 19408,15007 19350,14997 19156,14953 19013,14905
 Knoten Märkische/Landsberger Allee	1 19452,14807 19464,14971 19408,15007
 Knoten Märkische/Landsberger Allee	1 19516,14993 19551,14961 19615,14960 19643,15025 19614,15061
 Knoten Märkische/Landsberger Allee	1 19694,15141 19707,15206 19654,15219 19577,15166
-Knoten Märkische/Landsberger Allee	1 19507,15095 19604,15227
+Knoten Märkische/Landsberger Allee	1 19502,15089 19604,15227
 Alt-Blankenburg	1 13576,20849 13562,20913 13909,20928
 Alt-Blankenburg	1 13909,20928 13576,20849
 Seestr.	1 5043,14671 5246,14758 5311,14786 5440,14840
@@ -1530,7 +1530,7 @@ Pariser Str. -> Bundesallee: unbequem passierbarer Mittelstreifen	3::igndisp 541
 Linksabbiegen nicht möglich	3nocross::ignrte 19681,15405 19664,15366 19619,15262 19604,15227 19577,15166 19516,14993 19452,14807 19425,14655
 Märkische Allee -> Parkpl. Le Prom: Linksabbiegen nicht möglich	3::igndisp 19664,15366 19619,15262 19784,15191
 Parkpl. Le Prom -> Märkische Allee: Linksabbiegen nicht möglich	3::igndisp 19784,15191 19619,15262 19604,15227
-Märkische Allee -> Landsberger Allee: Linksabbiegen nicht möglich	3::igndisp 19577,15166 19604,15227 19507,15095
+Märkische Allee -> Landsberger Allee: Linksabbiegen nicht möglich	3::igndisp 19577,15166 19604,15227 19502,15089
 Märkische Allee -> Landsberger Allee: Linksabbiegen nicht möglich	3::igndisp 19604,15227 19577,15166 19654,15219
 Landsberger Allee -> Märkische Allee: Linksabbiegen nicht möglich	3::igndisp 19551,14961 19516,14993 19452,14807
 Landsberger Allee -> Märkische Allee: Linksabbiegen nicht möglich	3::igndisp 19464,14971 19452,14807 19516,14993
@@ -2474,7 +2474,6 @@ Drängelgitter	BNP:3:-127:trailer=10 3737,23369
 Tor	BNP:5:-215:trailer=10 2818,23931
 Drängelgitter, kann umfahren werden	BNP:1:-194:trailer=5 3557,24572
 Schranke	BNP:3:-215:trailer=10 4588,23362
-Drängelgitter	BNP:3:30:trailer=10 22848,14460
 Drängelgitter	BNP:3:-99:trailer=10 23582,49940
 Drängelgitter	BNP:3:-100:trailer=10 23659,49954
 Schranke	BNP:15:-105:trailer=30 27066,55455
@@ -2856,6 +2855,9 @@ Drängelgitter	BNP:3:-240 31665,48997
 Schranke	BNP:3:-59:trailer=10 8041,-3322
 Schranke	BNP:3:-64:trailer=10 6876,-2731
 Schranke	BNP:3:-78:trailer=10 17215,12485
+oberer Wuhlewanderweg: Bauarbeiten, komplett gesperrt	2::inwork 22873,14498 22864,14556
+Möwenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 22108,10970 22195,10993
+Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11485 20631,11621 20633,11651
 Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3nocross::ignrte 10122,10294 10363,10303 10605,10312
 Gitschiner Str. -> Lobeckstr.: Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3::igndisp 10122,10294 10363,10303 10433,10456
 Lobeckstr. -> Gitschiner Str.: Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3::igndisp 10433,10456 10363,10303 10605,10312
@@ -2881,7 +2883,6 @@ Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17453,7451 17295,73
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,9200 12548,9167
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
 Fünf Morgen: Bauarbeiten, gesperrt	2::inwork 1437,5015 1486,5175
-Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
 Nalepastr.: wegen Straßenbau gesperrt	2::inwork 17190,7306 17211,7280 17219,7268 17286,7173
 Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 14471,8046
 Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,12669 6765,12680
@@ -2889,8 +2890,8 @@ IGA 2017-Gelände: Wege gesperrt	2 22455,14815 22417,14837 22380,14831 22331,1479
 IGA 2017-Gelände: Wege gesperrt	2 22414,14144 22462,14172 22639,14384 22679,14450 22670,14520
 IGA 2017-Gelände: Wege gesperrt	2 22414,14144 22407,14111 22404,13984
 IGA 2017-Gelände: Wege gesperrt	2 21948,14501 21985,14513
-IGA 2017-Gelände: Wege gesperrt	2 22783,14034 23021,13982
-IGA 2017-Gelände: Wege gesperrt	2 22638,13902 22783,14034 22855,14114 22872,14175
+IGA 2017-Gelände: Wege gesperrt	2 22783,14034 22987,13989
+IGA 2017-Gelände: Wege gesperrt	2 22638,13902 22783,14034 22855,14114 22872,14175 22872,14233 22860,14440
 IGA 2017-Gelände: Wege gesperrt	2 22503,14104 22783,14034
 Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 18892,3256 18953,3318
 Lydia-Rabinowitsch-Str.: noch gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924

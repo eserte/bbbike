@@ -78,12 +78,12 @@ Futranplatz	1 22388,4737 22451,4749
 Alt-Köpenick	1 22144,4660 22175,4730 22198,4800 22196,4847
 (Am S-Bahnhof Plänterwald): Asphalt	1 15357,8286 15284,8214 15256,8247 15242,8263 15303,8343
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
-Knoten Märkische/Landsberger Allee	1 19013,14905 19175,14968 19364,15045 19507,15095 19563,15113 19694,15141 19852,15201
+Knoten Märkische/Landsberger Allee	1 19013,14905 19175,14968 19364,15045 19502,15089 19565,15106 19694,15141 19852,15201
 Knoten Märkische/Landsberger Allee	1 19852,15201 19744,15128 19614,15061 19408,15007 19350,14997 19156,14953 19013,14905
 Knoten Märkische/Landsberger Allee	1 19452,14807 19464,14971 19408,15007
 Knoten Märkische/Landsberger Allee	1 19516,14993 19551,14961 19615,14960 19643,15025 19614,15061
 Knoten Märkische/Landsberger Allee	1 19694,15141 19707,15206 19654,15219 19577,15166
-Knoten Märkische/Landsberger Allee	1 19507,15095 19604,15227
+Knoten Märkische/Landsberger Allee	1 19502,15089 19604,15227
 Alt-Blankenburg	1 13576,20849 13562,20913 13909,20928
 Alt-Blankenburg	1 13909,20928 13576,20849
 Seestr.	1 5043,14671 5246,14758 5311,14786 5440,14840
@@ -2240,7 +2240,6 @@ Tor	BNP:5::trailer=10 2818,23931
 # REMOVED (mittlerweile mit Treppe) --- #: XXX_prog: "künstlicher" Eintrag, um Anhänger auszusperren, siehe auch handicap_s --- sehr steil	BNP:0::trailer=no 3514,24652
 Drängelgitter, kann umfahren werden	BNP:1::trailer=5 3557,24572
 Schranke	BNP:3::trailer=10 4588,23362
-Drängelgitter	BNP:3::trailer=10 22848,14460
 Drängelgitter	BNP:3::trailer=10 23582,49940
 Drängelgitter	BNP:3::trailer=10 23659,49954
 Schranke	BNP:15::trailer=30 27066,55455
@@ -2773,6 +2772,22 @@ Schranke	BNP:3::trailer=10 17215,12485
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: OBERERWUHLEWANDERWEG-2017
+#: last_checked: 2017-07-01
+oberer Wuhlewanderweg: Bauarbeiten, komplett gesperrt	2::inwork 22873,14498 22864,14556
+# 
+#: next_check_id: MOEWENWEG-2017
+#: osm_watch: way id="475891101" version="3"
+#: XXX nach den Bauarbeiten vermutlich nur ein Rad/Gehweg
+#: last_checked: 2017-07-01
+#: check_frequency: 180d
+Möwenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 22108,10970 22195,10993
+# 
+#: next_check_id: BEBAUUNGSPLAN-XXI-34A
+#: last_checked: 2017-07-01
+#: check_frequency: 360d
+Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11485 20631,11621 20633,11651
+# 
 #: last_checked: 2017-06-17
 Gitschiner Str./Lobeckstr.: Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3nocross 10122,10294 10363,10303 10605,10312
 # 
@@ -2937,17 +2952,7 @@ E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgäng
 #: check_frequency: 150d
 Fünf Morgen: Bauarbeiten, gesperrt	2::inwork 1437,5015 1486,5175
 # 
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5713
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810369999434/9999434/00071829/29-Anlagen/02/vzb0641_IV-B-Plan_XXI-32d-1_Auswertg_TOeB.pdf
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/artikel.434654.php
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/auslegungen/b-planentwurf_xxi-32d-1.pdf
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6762
-#: XXX evtl. wird dieses Stück Straße komplett entfernt
-#: osm_watch: way id="24216753" version="14"
-#: last_checked: 2015-08-09
-#: next_check: 2017-03-01
-Gartenstr.: Baustelle	2::inwork 21189,11326 21217,11328
-# 
+# REMOVED --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5713 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810369999434/9999434/00071829/29-Anlagen/02/vzb0641_IV-B-Plan_XXI-32d-1_Auswertg_TOeB.pdf --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/artikel.434654.php --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/auslegungen/b-planentwurf_xxi-32d-1.pdf --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6762 --- #: XXX evtl. wird dieses Stück Straße komplett entfernt --- #: osm_watch: way id="24216753" version="14" --- #: last_checked: 2015-08-09 --- #: next_check: 2017-03-01 --- Gartenstr.: Baustelle	2::inwork 21193,11330 21214,11331
 # REMOVED --- #: XXX wann wird die Straße eröffnet? --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2016 (Widmung von Straßenland) --- #: osm_watch: way id="266854579" version="6" --- #: last_checked: 2015-08-02 --- Am Theodorpark: noch gesperrt	2::inwork 24905,10955 24949,10956 25055,10959 25143,10961
 # REMOVED -> temp-blockings --- #: XXX wann wird die Straße eröffnet? --- #: last_checked: 2015-08-02 --- #: check_frequency: 90d --- Theodorstr.: Bauarbeiten, gesperrt	2::inwork 24897,11083 24899,11044 24905,10955 24913,10884 24919,10818 24922,10785 24923,10774
 # REMOVED (offen) --- #: XXX wann wird der Weg eröffnet? --- #: last_checked: 2015-08-02 --- #: check_frequency: 90d --- (Weg im Theodorpark)	2::inwork 24922,10785 24954,10770 25021,10768 25062,10762 25148,10769
@@ -2988,8 +2993,8 @@ IGA 2017-Gelände: Wege gesperrt	2 22414,14144 22462,14172 22639,14384 22679,1445
 IGA 2017-Gelände: Wege gesperrt	2 22414,14144 22407,14111 22404,13984
 # REMOVED --- : next_check: 2016-11-25 --- IGA 2017-Gelände: Wege gesperrt	2 21408,14591 21450,14576 21822,14480 21925,14500 21948,14501
 IGA 2017-Gelände: Wege gesperrt	2 21948,14501 21985,14513
-IGA 2017-Gelände: Wege gesperrt	2 22783,14034 23021,13982
-IGA 2017-Gelände: Wege gesperrt	2 22638,13902 22783,14034 22855,14114 22872,14175
+IGA 2017-Gelände: Wege gesperrt	2 22783,14034 22987,13989
+IGA 2017-Gelände: Wege gesperrt	2 22638,13902 22783,14034 22855,14114 22872,14175 22872,14233 22860,14440
 IGA 2017-Gelände: Wege gesperrt	2 22503,14104 22783,14034
 #: next_check ^^^
 #: last_checked ^^^
