@@ -20,14 +20,14 @@
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
-#: last_checked: 2017-06-30
+#: last_checked: 2017-07-03
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2017-07-01
+#: last_checked: 2017-07-03
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3 14254,11377 14211,11229
 # 
-#: last_checked: 2017-06-24
+#: last_checked: 2017-07-02
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
 #: last_checked: 2017-06-30
@@ -85,7 +85,7 @@ Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11
 #: XXX Ende der Bauarbeiten?
 #: osm_watch: way id="4610375" version="16"
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
-#: last_checked: 2017-06-19
+#: last_checked: 2017-07-03
 #: check_frequency: 14d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q4::inwork 9736,13061 9636,13076
 # 
@@ -321,6 +321,18 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 # REMOVED --- #: by: http://www.deutsches-architektur-forum.de/forum/showthread.php?t=3245 --- #: last_checked: 2015-09-17 --- #: check_frequency: 45d --- Köbisstr.: wegen Bauarbeiten Ausweichen auf Gehweg	q4::inwork 7103,11247 7160,11225
 # 
 ### Charlottenburg ###
+# 
+#: next_check_id: ENGLISCHESTR-2017
+#: last_checked: 2017-07-03
+#: check_frequency: 120d
+Englische Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,12159
+# 
+#: XXX nach Abschluss wieder den alten Eintrag (siehe unten) aktivieren
+#: by: http://www.dafmap.de/d/berlin.html?id=3027&mt=0&zoom=17
+#: XXX geplanter Projektabschluss laut dafmap: 2018-07-31
+#: last_checked: 2017-07-03
+#: next_check: 2018-06-30
+Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5894,12480 5944,12548
 # 
 # REMOVED (bei vmz nicht mehr aufgeführt) --- #: source_id: IM_019582 vvv --- #: last_checked: 2014-06-02 vvv --- #: next_check: 2015-01-01 vvv --- Fasanenstr.: Bauarbeiten, gemeinsamer enger Rad- und Gehweg	q3; 5258,11285 5352,11502 --- Fasanenstr.: Bauarbeiten, gemeinsamer Rad- und Gehweg	q2; 5352,11502 5356,11512 5456,11742 --- Fasanenstr.: Bauarbeiten, gemeinsamer enger Rad- und Gehweg	q3; 5456,11742 5381,11847 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: source_id ^^^
 # REMOVED (scheint in beide Richtungen befahrbar zu sein) --- #: last_checked: 2012-09-22 --- #: next_check: 2012-10-15 --- #: by: IM_008926 --- #: XXX wahrscheinlich bis Ende Oktober 2012 --- #: XXX wahrscheinlich wird es teilweise oder sogar komplett Radspuren geben --- Kantstr.: Bauarbeiten am Zoofenster, Fahrbahn Richtung Westen gesperrt	q2::inwork; 5652,11004 5613,10963 5488,10978
@@ -2972,7 +2984,8 @@ Sesenheimer Str.: Fußgänger, Bordsteine	q2 3866,11473 3874,11380
 (Kucharskistr. - südliches Spreeufer): Fußgänger	q2 4829,13089 4822,13109
 (Clara-von-Simson-Str. - südliches Spreeufer): Fußgänger	q2 4732,13030 4710,13069
 (Carnotstr. - südliches Spreeufer): Fußgänger	q2 4655,12953 4619,12975
-Schleswiger Ufer: schmal, Fußgänger	q2 5858,12425 5894,12480 5944,12548
+Schleswiger Ufer: schmal, Fußgänger	q2 5858,12425 5894,12480
+# (wieder aktivieren!) --- Schleswiger Ufer: schmal, Fußgänger	q2 5894,12480 5944,12548
 Cuxhavener Str.: Wohngebiet, Fußgänger	q2 5894,12480 5919,12423
 # REMOVED (lohnt nicht) --- Holsteiner Ufer: schmal, Fußgänger	q2 6580,12775 6469,12867 6449,12865
 (Zufahrt Parkplätze Bartningallee): schmal, unübersichtlich, Fußgänger	q3 6179,12513 6149,12454

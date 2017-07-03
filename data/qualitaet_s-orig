@@ -1217,7 +1217,7 @@ Am Walde: Asphalt	Q0 17771,7880 17678,7850 17590,7828 17527,7812
 Prager Platz: gutes Kopfsteinpflaster	Q1 5648,9642 5642,9613 5618,9607 5598,9612 5578,9629
 Normannenstr.: Kopfsteinpflaster	Q2 16159,12301 16227,12280 16276,12273
 Rüdigerstr. (Lichtenberg): Asphalt	Q0 17466,12241 17314,12265 17218,12281 17184,12288 17122,12295 17056,12304 17020,12309 16918,12325 16820,12339
-Barbarossastr.: Kopfsteinpflaster	Q2 7128,9512 7007,9522
+Barbarossastr.: Kopfsteinpflaster	Q2 7128,9512 7002,9526
 Prühßstr.: Beton	Q0- 8780,4054 8962,4096
 Prühßstr.: Kopfsteinpflaster	Q2 8962,4096 9106,4114 9346,4144
 Prühßstr.: schlechtes Kopfsteinpflaster	Q3 9346,4144 9465,4173
@@ -7679,7 +7679,8 @@ Unterführung unter Adlergestell und Bahn: teilweise sehr sandig	Q3 20939,2413 20
 (Hartriegelstr. - Michael-Brückner-Str.): Verbundsteinpflaster	Q1+ 18695,5076 18622,5049 18514,5028 18425,5032
 (Bersarinplatz - Thaerstr.): unbefestigter Weg	Q1- 13747,12642 13761,12690
 (Thaerstr. - Bersarinplatz): Gehwegplatten	Q0 13761,12690 13695,12643
-Siegmunds Hof: Kopfsteinpflaster	Q2 5714,12266 5727,12226
+#: note: neu asphaltiert
+Siegmunds Hof: Asphalt	Q0 5714,12266 5727,12226
 Eyke-von-Repkow-Platz: Kopfsteinpflaster	Q2 5531,12501 5497,12448
 Purpurkardinalweg: unbefestigter Weg	Q2+ 13491,20266 13385,20204 13321,20161 13271,20131 13205,20091 13145,20055
 Purpurkardinalweg: unbefestigte Straße	Q2 13475,20276 13420,20236 13359,20199 13310,20168 13248,20133 13187,20098 13139,20059 13129,20050 13084,20003 13008,19919
@@ -10136,7 +10137,7 @@ Veilchenblütenweg: unbefestigte Schotterstraße	Q2 11664,21246 11656,21309
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.487100.php ("Spatenstich")
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6077.html
 #: XXX ändert sich bei der Umgestaltung etwas an der Qualität? vvv
-#: last_checked: 2017-06-08 vvv
+#: last_checked: 2017-07-03 vvv
 #: next_check: 2017-12-01 vvv
 #: note: zusätzlich mit einigen "Pflasterschwellen"
 (Verlängerte Hertzallee): Kopfsteinpflaster	Q2- 5352,11502 5296,11529 4950,11696
@@ -11570,7 +11571,7 @@ Stockholmer Str.: schlechtes Kopfsteinpflaster	Q3 8759,16684 8783,16710 8847,168
 #: by: Gerhard M. vvv
 #: confirmed_by: srt vvv
 Habsburgerstr.: Asphalt	Q0 6920,9838 6912,9956 6903,10056
-Kyffhäuserstr.: Asphalt	Q0 6860,9526 6891,9678 6920,9838
+Kyffhäuserstr.: Asphalt	Q0 6860,9529 6891,9678 6920,9838
 #: confirmed_by ^^^
 #: by: ^^^
 # 
@@ -12119,7 +12120,7 @@ Fregestr.: guter Asphalt	Q0 5896,6785 5957,6889 5959,6976 5961,7229 5955,7420
 # 
 #: by: Andrea Beu: vvv
 Lettestr.: Kopfsteinpflaster	Q2 11268,15360 11368,15301 11480,15229
-Apostel-Paulus-Str.: Kopfsteinpflaster	Q2 7044,9163 6945,9142 6885,9132 6735,9103 6588,9087
+Apostel-Paulus-Str.: Kopfsteinpflaster	Q2 7035,9161 6945,9142 6885,9132 6735,9103 6588,9087
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Apostel-Paulus-Str.: Asphalt	Q0 6588,9087 6509,9077
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
@@ -12348,7 +12349,7 @@ Schmitzweg: Asphalt	Q0 5823,19544 5851,19440 5879,19352
 #: by ^^^
 # 
 #: by: Christoph Kasprowiak:
-Karl-Schrader-Str.: Asphalt	Q0 6851,9365 6860,9526
+Karl-Schrader-Str.: Asphalt	Q0 6851,9365 6860,9529
 # 
 #: by: Uwe Gasmus:
 #: confirmed_by: srt

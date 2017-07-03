@@ -745,8 +745,8 @@ userdel	2::temp 6719,10347 6729,10212 6739,10120
        undef,
        {
          'data' => '#: by: http://www.ms-event-agentur.com/seite22.html?date=20170325
-	2::temp 7006,9292 7022,9211 7044,9163 7107,9030
-	2::temp 6945,9142 7044,9163
+	2::temp 7001,9291 7012,9222 7035,9161 7107,9030
+	2::temp 6945,9142 7035,9161
 	2::temp 6975,8944 7107,9030 7308,9163
 ',
          'from' => 1506675600,
@@ -2591,28 +2591,7 @@ userdel auto	3 6228,10646 6216,10614 6192,10542
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 9248,9350 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
-userdel auto	3 9487,9209 9505,9306 9524,9426
-userdel auto	3 9524,9426 9505,9306 9487,9209
-',
-         'from' => 1498687200,
-         'id' => 2089,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              8,
-                              'months',
-                              6
-                            ]
-                          ],
-         'source_id' => 'https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html',
-         'text' => 'Bergmannstraße (Kreuzberg): Veranstaltung (Bergmannstraßenfest), Straße vollständig zwischen Mehringdamm und Zossener Str. gesperrt (30. Juni 2017 bis 02. Juli 2016)',
-         'type' => 'gesperrt',
-         'until' => 1499032799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3214,27 +3193,7 @@ userdel	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: 20170630T2000-20170701T2359
-userdel	2::temp 14161,11930 14285,12190
-',
-         'from' => 1498845600,
-         'id' => 2433,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              3,
-                              'months',
-                              6
-                            ]
-                          ],
-         'source_id' => 'https://www.facebook.com/events/1813020918951796/',
-         'text' => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am 30.06.2017 bis 01.07.2017',
-         'type' => 'gesperrt',
-         'until' => 1498953600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3503,16 +3462,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	q4::inwork; 15080,11905 14965,11921
-',
-         'from' => 1496642400,
-         'id' => 2550,
-         'source_id' => '2147341388',
-         'text' => 'Scharnweberstr.: Baustelle, Fahrbahn zwischen Jessnerstr. und Müggelstr. gesperrt, bis 3. Juli 2017',
-         'type' => 'handicap',
-         'until' => 1499076000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4103,18 +4053,7 @@ userdel	q4::inwork 5059,7216 5064,7160 5081,7112
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: KANTSTR-2017
-#: source_id: LMS-BR_r_LMS-BR_121
-userdel	q4::inwork; 5488,10978 5613,10963 5652,11004
-',
-         'from' => 1488236400,
-         'id' => 2851,
-         'source_id' => '2147341048',
-         'text' => 'Kantstr.: Richtung Budapester Str. ab Joachimsthaler Str. gesperrt, voraussichtlich bis 14. Juli 2017',
-         'type' => 'handicap',
-         'until' => 1500048000
-       },
+       undef,
        undef,
        {
          'data' => '#: note: laut vmz nur bis Ende Juli 2017, dann Mitte August 2017
@@ -4171,7 +4110,7 @@ userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 
        },
        undef,
        {
-         'data' => '#: last_checked: 2017-06-17
+         'data' => '#: last_checked: 2017-07-03
 #: check_frequency: 14d
 userdel	q4::inwork; 7201,8870 7107,9030
 ',
@@ -4203,16 +4142,7 @@ userdel	q3::inwork; 8752,12647 8870,12647
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => 'userdel	q4::inwork; 10350,13376 10313,13493
-',
-         'from' => 1494442386,
-         'id' => 2864,
-         'source_id' => '2147341279',
-         'text' => 'Rosenthaler Str.: Straßenbauarbeiten in Höhe Neue Schönhauser Str.. Fahrbahn gesperrt, bis 5. Juli 2017',
-         'type' => 'handicap',
-         'until' => 1499248800
-       },
+       undef,
        undef,
        undef,
        {
@@ -4336,19 +4266,6 @@ userdel	2::temp 7160,11225 7253,11208 7252,11202 7235,11203 7233,11189 7252,1118
          'text' => 'Straßen rund um das Verteidigungsministerium: Straßensperrungen wegen einer Veranstaltung möglich, 20. Juli 2017 von 12:00 bis 21:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1500577200
-       },
-       {
-         'data' => '#: XXX prüfen!
-#: by: http://www.dafmap.de/d/berlin.html?id=5241&mt=0&zoom=17
-#: osm_watch: way id="392904879" version="1"
-#: osm_watch: way id="392904880" version="3"
-userdel	2::inwork 5579,12231 5535,12206
-',
-         'from' => undef,
-         'id' => 2876,
-         'text' => 'Spreeufer - Englische Straße: Uferweg eventuell wegen Bauarbeiten gesperrt',
-         'type' => 'gesperrt',
-         'until' => undef
        }
      
 );

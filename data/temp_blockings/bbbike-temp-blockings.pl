@@ -72,8 +72,8 @@ EOF
 userdel	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670 9243,9696 9044,9753
 # REMOVED --- userdel	2::temp 9044,9753 9002,9731 8777,9601 8679,9544 8595,9495 8358,9568 8192,9619
 userdel	2::temp 10713,9260 10670,9286 10639,9304 10564,9292
-# REMOVED --- userdel	3 8774,9534 8777,9601 8779,9812
-# REMOVED --- userdel	3 8779,9812 8777,9601 8774,9534
+# REMOVED --- userdel	3 8774,9534 8777,9601 8778,9759 8778,9759 8779,9812
+# REMOVED --- userdel	3 8779,9812 8778,9759 8778,9759 8777,9601 8774,9534
 # REMOVED --- userdel	3 9000,9509 9044,9753 9073,9915
 # REMOVED --- userdel	3 9073,9915 9044,9753 9000,9509
 userdel	3 9280,9476 9334,9670 9387,9804
@@ -6259,8 +6259,8 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.ms-event-agentur.com/primavera%202013.html?date=20170325',
        data  => <<EOF,
-userdel	2::temp 7107,9030 7044,9163 7022,9211 7006,9292
-userdel	2::temp 6945,9142 7044,9163
+userdel	2::temp 7107,9030 7035,9161 7012,9222 7001,9291
+userdel	2::temp 6945,9142 7035,9161
 EOF
      },
      { from  => 1160214244, # 2006-10-07 11:44
@@ -6288,8 +6288,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.ms-event-agentur.com/seite22.html?date=20170325
-	2::temp 7006,9292 7022,9211 7044,9163 7107,9030
-	2::temp 6945,9142 7044,9163
+	2::temp 7001,9291 7012,9222 7035,9161 7107,9030
+	2::temp 6945,9142 7035,9161
 	2::temp 6975,8944 7107,9030 7308,9163
 EOF
      },
@@ -16668,7 +16668,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014394',
        data  => <<EOF,
-userdel	q4::temp 7201,8870 7107,9030 7044,9163 7022,9211 7006,9292 7130,9316 7202,9329 7418,9366 7479,9357
+userdel	q4::temp 7201,8870 7107,9030 7035,9161 7012,9222 7001,9291 7130,9316 7202,9329 7418,9366 7479,9357
 EOF
      },
      { from  => 1255644000, # 2009-10-16 00:00
@@ -25909,7 +25909,7 @@ userdel	q3::inwork; 8385,6034 8532,6015
 EOF
      },
      { from  => 1488236400, # 2017-02-28 00:00
-       until => $isodate2epoch->("2017-07-14 18:00:00"), # 1493589599, # 2017-04-30 23:59
+       until => 1499103102, # $isodate2epoch->("2017-07-14 18:00:00"), # 1493589599, # 2017-04-30 23:59
        text  => 'Kantstr.: Richtung Budapester Str. ab Joachimsthaler Str. gesperrt, voraussichtlich bis 14. Juli 2017',
        type  => 'handicap',
        source_id => '2147341048',
@@ -26012,7 +26012,7 @@ EOF
        text  => 'Akazienstr.: Bauarbeiten, Einbahnstraßenregelung',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2017-06-17
+#: last_checked: 2017-07-03
 #: check_frequency: 14d
 userdel	q4::inwork; 7201,8870 7107,9030
 EOF
@@ -26046,7 +26046,7 @@ userdel	q3::inwork; 8752,12647 8870,12647
 EOF
      },
      { from  => 1494442386, # 2017-05-10 20:53
-       until => $isodate2epoch->("2017-07-05 12:00:00"), # 1496267999, # 2017-05-31 23:59
+       until => 1499104267, # $isodate2epoch->("2017-07-05 12:00:00"), # 1496267999, # 2017-05-31 23:59
        text  => 'Rosenthaler Str.: Straßenbauarbeiten in Höhe Neue Schönhauser Str.. Fahrbahn gesperrt, bis 5. Juli 2017',
        type  => 'handicap',
        source_id => '2147341279',
@@ -26191,14 +26191,10 @@ userdel	2::temp 7160,11225 7253,11208 7252,11202 7235,11203 7233,11189 7252,1118
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1499103346, # -> gesperrt-orig
        text  => 'Spreeufer - Englische Straße: Uferweg eventuell wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX prüfen!
-#: by: http://www.dafmap.de/d/berlin.html?id=5241&mt=0&zoom=17
-#: osm_watch: way id="392904879" version="1"
-#: osm_watch: way id="392904880" version="3"
 userdel	2::inwork 5579,12231 5535,12206
 EOF
      },

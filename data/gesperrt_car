@@ -176,7 +176,7 @@ Templiner Str.	1 10716,14195 10739,14228
 Heylstr.	1 6459,8281 6385,8274 6325,8259
 Fritz-Reuter-Str. (Schöneberg)	1 6621,8221 6779,8279
 Gutzkowstr.	1 6785,8194 6636,8157
-Gleditschstr.	1 7137,9216 7130,9316
+Gleditschstr.	1 7136,9223 7130,9316
 Hohenfriedbergstr.	3 7791,8882 7790,8913 7790,9126
 Hohenfriedbergstr.	3 7790,9126 7790,8913 7791,8882
 Hohenfriedbergstr. - Brunhildstr.	3 7790,9126 7790,8913 7707,8915
@@ -1643,9 +1643,9 @@ Landhausstr.	1 5343,8858 5341,8931
 Mittelstreifen	3nocross::ignrte 5647,9022 5725,9041 5783,9060
 Berliner Str. -> Helmstedter Str.: Mittelstreifen	3::igndisp 5647,9022 5725,9041 5711,9357
 Helmstedter Str. -> Berliner Str.: Mittelstreifen	3::igndisp 5711,9357 5725,9041 5783,9060
-Mittelstreifen	3nocross::ignrte 6861,9263 6917,9274 7006,9292
+Mittelstreifen	3nocross::ignrte 6861,9263 6917,9274 7001,9291
 Grunewaldstr. -> Schwäbische Str.: Mittelstreifen	3::igndisp 6861,9263 6917,9274 6851,9365
-Schwäbische Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6851,9365 6917,9274 7006,9292
+Schwäbische Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6851,9365 6917,9274 7001,9291
 Herderstr. (Charlottenburg)	1 4452,11570 4434,11360
 Sperrfläche, Abbiegen nicht erlaubt	3nocross::ignrte 17492,6462 17528,6502 17614,6571
 Siemensstr. -> Tabbertstr.: Sperrfläche, Abbiegen nicht erlaubt	3::igndisp 17492,6462 17528,6502 17418,6702
