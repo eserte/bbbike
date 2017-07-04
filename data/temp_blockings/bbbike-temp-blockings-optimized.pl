@@ -3971,7 +3971,7 @@ userdel	q4::inwork 12911,1815 12817,2031
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-06-17 vvv
+#: last_checked: 2017-07-04 vvv
 #: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -4266,6 +4266,31 @@ userdel	2::temp 7160,11225 7253,11208 7252,11202 7235,11203 7233,11189 7252,1118
          'text' => 'Straßen rund um das Verteidigungsministerium: Straßensperrungen wegen einer Veranstaltung möglich, 20. Juli 2017 von 12:00 bis 21:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1500577200
+       },
+       undef,
+       {
+         'data' => '#: XXX wird sich die Qualität vielleicht bessern?
+#: next_check: 2017-09-01
+userdel	2::inwork 8234,4660 8575,4980 8598,4985 8618,5019 8784,5095
+',
+         'from' => undef,
+         'id' => 2877,
+         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.608925.php',
+         'text' => 'Teltowkanal von der Rathausstraße bis Gersdorfstraße: Sanierung Fuß- und Radweg, Wege können gesperrt sein, Zeitraum unbekannt',
+         'type' => 'gesperrt',
+         'until' => 1506852000
+       },
+       {
+         'data' => '#: XXX wird sich die Qualität vielleicht bessern?
+#: next_check: 2017-09-01
+userdel	2::inwork 7231,236 7501,83
+',
+         'from' => undef,
+         'id' => 2878,
+         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.608925.php',
+         'text' => 'Poppenreuther Weg: Wegesanierung, Sperrung möglich, Zeitraum unbekannt ',
+         'type' => 'gesperrt',
+         'until' => 1506852000
        }
      
 );

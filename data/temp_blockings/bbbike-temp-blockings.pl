@@ -25633,7 +25633,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-06-17 vvv
+#: last_checked: 2017-07-04 vvv
 #: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -26196,6 +26196,28 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 5579,12231 5535,12206
+EOF
+     },
+     { from  => undef, # 
+       until => $isodate2epoch->("2017-10-01 12:00:00"), # vermutetes Ende im Herbst
+       text  => 'Teltowkanal von der Rathausstraße bis Gersdorfstraße: Sanierung Fuß- und Radweg, Wege können gesperrt sein, Zeitraum unbekannt',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.608925.php',
+       data  => <<EOF,
+#: XXX wird sich die Qualität vielleicht bessern?
+#: next_check: 2017-09-01
+userdel	2::inwork 8234,4660 8575,4980 8598,4985 8618,5019 8784,5095
+EOF
+     },
+     { from  => undef, # 
+       until => 1506852000, # 2017-10-01 12:00
+       text  => 'Poppenreuther Weg: Wegesanierung, Sperrung möglich, Zeitraum unbekannt ',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.608925.php',
+       data  => <<EOF,
+#: XXX wird sich die Qualität vielleicht bessern?
+#: next_check: 2017-09-01
+userdel	2::inwork 7231,236 7501,83
 EOF
      },
     );

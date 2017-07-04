@@ -7,6 +7,8 @@ Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::i
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3 14254,11377 14211,11229
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 Lange Str.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 12409,11902 12238,11931
+BouchÈstr.: Bauarbeiten an der Heidelberger Str., Fahrbahn gesperrt	q3::inwork 13489,9456 13357,9313
+Voltairestr.: Baustellenverkehr	q2 11329,12497 11209,12430
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q4::inwork 9736,13061 9636,13076
 Kommandantenstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10330,11422 10136,11529
 Beuthstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10201,11631 10235,11610 10330,11422
@@ -590,7 +592,6 @@ Uferweg: Fuﬂg‰nger, Biergarten	q3 3747,12679 3862,12675
 Uferweg: Fuﬂg‰nger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
 (Neues Ufer - Kaiserin-Augusta-Allee): Fuﬂg‰nger	q1 4456,12918 4514,12936 4581,13066 4576,13115 4547,13139 4561,13244
 (provisorischer Zugang zum Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fuﬂg‰nger	q3 14712,11039 14727,11005 14810,10977 14845,10954
-BouchÈstr.: Bodenschwellen	q0 13489,9456 13357,9313
 BouchÈstr.: Bodenschwellen	q0 13642,9624 13865,9866
 Radenzer Str.: zwei Bodenschwellen	q1 16220,6277 16304,6358
 Dornbrunner Str.: zwei Bodenschwellen	q1 16147,6545 16043,6414
@@ -2565,7 +2566,6 @@ Neue Bahnhofstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 
 Wegelystr.: Einbahnstraﬂe wegen Bauarbeiten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 5518,12159 5627,12105
 Schinkelplatz: Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
 Karower Str.: tempor‰re Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 16593,25640 16632,25512 16669,25373
-Voltairestr.: Baustelle, Fahrtrichtung gesperrt: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11329,12497 11209,12430
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 5192,10234 5196,10398
 BouchÈstr.: Baustelle, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13298,9252 13190,9139
 Mengerzeile: Baustelle, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13176,9302 13100,9210
