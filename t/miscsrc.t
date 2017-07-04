@@ -78,6 +78,8 @@ for my $f (@files) {
 	    if $f =~ m{/cvsdiffbbd} && $] < 5.010;
 	myskip "$f works only with installed Algorithm::Diff", 1
 	    if $f =~ m{/diffbbd$} && !eval { require Algorithm::Diff; 1 };
+	skip "$f works only if ~/src/Doit exists", 1
+	    if $f =~ m{/copy-doit.pl$} && !-d "$ENV{HOME}/src/Doit";
 
 	my @add_opts;
 	if ($f =~ m{\.pm$}) {
