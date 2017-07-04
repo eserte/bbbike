@@ -201,6 +201,7 @@ use BBBikeTrans;
 ## DEBUG_END
 use Strassen;
 use Strassen::Dataset;
+use Strassen::CatUtil qw(apply_tendencies_in_penalty apply_tendencies_in_speed);
 ## DEBUG_BEGIN
 #BEGIN{mymstat("before Route");}
 ## DEBUG_END
@@ -759,6 +760,8 @@ foreach my $type (@comments_types) {
     push @used_comments_types, $type;
 }
 
+apply_tendencies_in_speed(\%qualitaet_s_speed);
+apply_tendencies_in_speed(\%handicap_s_speed);
 
 if ($lowmem) {
     @image_type_order = ('xpm', 'gif', 'jpg', 'png');
@@ -9541,6 +9544,7 @@ sub enter_opt_preferences {
 				     }
 				     $qualitaet_s_speed{$k} = $v;
 				 }
+				 apply_tendencies_in_speed(\%qualitaet_s_speed);
 				 while(my($k,$v) = each %var2) {
 				     if ($strcat_speed{$k} != $v) {
 					 undef $strcat_net;
@@ -9561,6 +9565,7 @@ sub enter_opt_preferences {
 				     }
 				     $handicap_s_speed{$k} = $v;
 				 }
+				 apply_tendencies_in_speed(\%handicap_s_speed);
 			     };
 			 };
     my $ok_window    = sub { &$close_window;
@@ -17763,6 +17768,7 @@ sub do_search {
 			optprefs2penalty($optprefs{$def->{OptName}}) * $_;
 		}
 	    }
+	    apply_tendencies_in_penalty($penalty);
 	    $extra_args{$def->{ExtraArgsName}} =
 		{Net => $net,
 		 Penalty => $penalty,
@@ -18975,10 +18981,19 @@ sub make_net {
 sub make_qualitaet_net {
     if (!$qualitaet_s_net) {
 	# XXX hmmm, fails fataly if any of the layers is missing
+	my @files = qw(qualitaet_s qualitaet_l);
+	local $Strassen::Util::cacheprefix = $Strassen::Util::cacheprefix;
+	if ($devel_host) {
+	    my @candidates = map { "$FindBin::RealBin/tmp/$_" } @files;
+	    if (@files == grep { -f } @candidates) {
+		@files = @candidates;
+		$Strassen::Util::cacheprefix .= "-withtendencies";
+	    } else {
+		warn "NOTE: on devel host, but some/all of @files in $FindBin::RealBin/tmp are missing";
+	    }
+	}
 	eval {
-	    $qualitaet_s_net = StrassenNetz->new
-		(MultiStrassen->new(Strassen->new("qualitaet_s"),
-				    Strassen->new("qualitaet_l")));
+	    $qualitaet_s_net = StrassenNetz->new(MultiStrassen->new(map { Strassen->new($_) } @files));
 	    $qualitaet_s_net->make_net_cat;
 	};
 	if ($@ && !$no_original_datadir) {
@@ -18991,11 +19006,19 @@ sub make_qualitaet_net {
 sub make_handicap_net {
     if (!$handicap_s_net) {
 	# XXX hmmm, fails fataly if any of the layers is missing
+	my @files = qw(handicap_s handicap_l);
+	local $Strassen::Util::cacheprefix = $Strassen::Util::cacheprefix;
+	if ($devel_host) {
+	    my @candidates = map { "$FindBin::RealBin/tmp/$_" } @files;
+	    if (@files == grep { -f } @candidates) {
+		@files = @candidates;
+		$Strassen::Util::cacheprefix .= "-withtendencies";
+	    } else {
+		warn "NOTE: on devel host, but some/all of @files in $FindBin::RealBin/tmp are missing";
+	    }
+	}
 	eval {
-	    my @s = (Strassen->new("handicap_s"),
-		     Strassen->new("handicap_l"),
-		    );
-	    $handicap_s_net = StrassenNetz->new(MultiStrassen->new(@s));
+	    $handicap_s_net = StrassenNetz->new(MultiStrassen->new(map { Strassen->new($_) } @files));
 	    $handicap_s_net->make_net_cat;
 	};
 	if ($@ && !$no_original_datadir) {
