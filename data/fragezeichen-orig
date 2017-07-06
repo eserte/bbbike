@@ -822,7 +822,7 @@ Bohnsdorfer Kreisel: Einbahnstraße wird aufgehoben	?::projected 21862,807 22007,
 # 
 #: XXX Baumaßnahme GR9.24 (Realisierung nach 2011)
 #: XXX wird hier asphaltiert werden? Was ist mit dem Schlenker am Spreepark?
-#: osm_watch: way id="207761374" version="3"
+#: osm_watch: way id="207761374" version="4"
 #: last_checked: 2017-06-20
 #: check_frequency: 180d
 Wasserweg: wird hier asphaltiert werden? Was ist mit dem "Schlenker" am Spreepark-Eingang?	?::projected 15680,8914 15873,8884 16023,8860 16161,8852 16201,8860
@@ -1566,7 +1566,11 @@ B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-#: last_checked: 2017-07-04
+#: XXX Rosenthaler Str. (Mitte) in beiden Richtungen Höhe Einmündung Neue Schönhauser Str. (Berlin)  Gültig ab: 10.05.2017 13:53  Baustelle, Vollsperrung (bis Ende 07/17)	2147341279
+#: XXX laut fritz bs 28.07.2017
+Rosenthaler Str.: noch immer Bauarbeiten?	? 10317,13248 10310,13227
+# 
+#: last_checked: 2017-07-05
 #: check_frequency: 14d
 Rüdersdorfer Str.: evtl. stehen Bauarbeiten an	? 13173,11788 13295,11792
 # 
@@ -2552,8 +2556,8 @@ Hüfnerweg (Groß Glienicke): genaue Lage, Qualität?	? -9801,6988 -9795,7066
 #: XXX ^^^
 #: by ^^^
 # 
-#: osm_watch: way id="474904443" version="1"
-#: last_checked: 2017-05-01
+#: osm_watch: way id="474904443" version="2"
+#: last_checked: 2017-07-02
 #: check_frequency: 60d
 Parkweg: Bauarbeiten, Qualität? Beleuchtung? Verbindung zum Weg am Klötzbecken?	?::inwork 5815,22870 5926,22738 6003,22642
 # 

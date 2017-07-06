@@ -26220,4 +26220,49 @@ EOF
 userdel	2::inwork 7231,236 7501,83
 EOF
      },
+     { from  => 1499279870, # 2017-07-05 20:37
+       until => 1519858800, # 2018-03-01 00:00
+       text  => 'Brückendurchfahrt Rhönstraße: Sperrung, Radfahrer und Fußgänger können die Brücken bis auf kurzzeitige Einschränkungen passieren, bis voraussichtlich Februar 2018',
+       type  => 'gesperrt',
+       source_id => 'http://www.pankow.live/2017/04/21/erneutes-chaos-zwischen-blankenburg-und-bernau-vorprogrammiert/',
+       data  => <<EOF,
+userdel	2::inwork 13415,21442 13371,21462
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Fußgängertunnel Freischützenstraße: kann nach Regenfällen unter Wasser stehen und unpasierbar sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 13617,21819 13644,21808
+EOF
+     },
+     { from  => 1499280235, # 2017-07-05 20:43
+       until => 1541026800, # 2018-11-01 00:00
+       text  => 'Brückendurchfahrt Schräger Weg: Sperrung, Radfahrer und Fußgänger können die Brücken bis auf kurzzeitige Einschränkungen passieren, bis voraussichtlich Oktober 2018',
+       type  => 'gesperrt',
+       source_id => 'http://www.pankow.live/2017/04/21/erneutes-chaos-zwischen-blankenburg-und-bernau-vorprogrammiert/',
+       data  => <<EOF,
+userdel	2::inwork 14338,22885 14276,22914
+EOF
+     },
+     { from  => $isodate2epoch->("2017-08-30 00:00:00"),
+       until => 1504562399, # 2017-09-04 23:59
+       text  => 'Zepernicker Chaussee: Sperrung an der Eisenbahnbrücke, 1. bis 4. September 2017',
+       type  => 'gesperrt',
+       source_id => 'http://www.pankow.live/2017/04/21/erneutes-chaos-zwischen-blankenburg-und-bernau-vorprogrammiert/',
+       data  => <<EOF,
+userdel	2::inwork 20533,29069 20537,29285
+EOF
+     },
+     { from  => $isodate2epoch->("2017-09-28 00:00:00"),
+       until => $isodate2epoch->("2018-08-20 23:59:59"),
+       text  => 'Zepernicker Chaussee: Sperrung an der Eisenbahnbrücke, 29. September 2017 bis 20. August 2018',
+       type  => 'gesperrt',
+       recurring => 1,
+       source_id => 'http://www.pankow.live/2017/04/21/erneutes-chaos-zwischen-blankenburg-und-bernau-vorprogrammiert/',
+       data  => <<EOF,
+userdel	2::inwork 20533,29069 20537,29285
+EOF
+     },
     );

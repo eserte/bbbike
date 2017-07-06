@@ -4202,28 +4202,7 @@ userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => 'userdel	2::temp 8044,12989 8110,13042 8116,12938 8053,12871 8032,12889
-userdel	2::temp 8277,13032 8317,13015 8401,12973 8464,12919 8480,12909 8503,12895 8424,12853 8309,12758 8206,12757 8120,12756 8030,12824 8124,12840
-userdel	2::temp 8168,12945 8235,12945 8304,12938 8370,12902
-userdel	2::temp 8116,12938 8124,12840 8120,12756 8122,12603 8119,12414
-userdel	2::temp 8464,12919 8498,12870
-userdel	2::temp 8306,12609 8348,12609 8399,12610 8485,12612 8554,12593
-userdel	2::temp 8160,13053 8159,13042 8159,13032 8044,12989 7966,12913
-userdel	2::temp 8072,12902 8046,12870
-userdel	2::temp 8168,12848 8204,12816 8206,12757 8207,12606 8306,12609 8309,12758
-userdel	2::temp 8036,12855 8021,12832 7930,12912
-userdel	2::temp 8207,12606 8122,12603 7945,12592 7875,12363
-userdel	2::temp 8348,12609 8354,12416
-userdel	2::temp 7945,12592 7851,12590 7741,12586 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8445,12755 8415,12749 8309,12758 8304,12938
-',
-         'from' => 1499148000,
-         'id' => 2872,
-         'source_id' => 'http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_27_3021_3144_online.pdf',
-         'text' => 'Straßen rund um das Bundeskanzleramt: wegen eines Staatsbesuchs Sperrungen möglich, 5. Juli 2017 von 8 Uhr bis 15 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1499259600
-       },
+       undef,
        {
          'data' => 'userdel	2::temp 7215,12295 7039,12314 7053,12364 7064,12419 7086,12572
 userdel	2::temp 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6787,12099 7039,12314 7383,12095
@@ -4291,6 +4270,56 @@ userdel	2::inwork 7231,236 7501,83
          'text' => 'Poppenreuther Weg: Wegesanierung, Sperrung möglich, Zeitraum unbekannt ',
          'type' => 'gesperrt',
          'until' => 1506852000
+       },
+       {
+         'data' => 'userdel	2::inwork 13415,21442 13371,21462
+',
+         'from' => 1499279870,
+         'id' => 2879,
+         'source_id' => 'http://www.pankow.live/2017/04/21/erneutes-chaos-zwischen-blankenburg-und-bernau-vorprogrammiert/',
+         'text' => 'Brückendurchfahrt Rhönstraße: Sperrung, Radfahrer und Fußgänger können die Brücken bis auf kurzzeitige Einschränkungen passieren, bis voraussichtlich Februar 2018',
+         'type' => 'gesperrt',
+         'until' => 1519858800
+       },
+       {
+         'data' => 'userdel	2::temp 13617,21819 13644,21808
+',
+         'from' => undef,
+         'id' => 2880,
+         'text' => 'Fußgängertunnel Freischützenstraße: kann nach Regenfällen unter Wasser stehen und unpasierbar sein',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => 'userdel	2::inwork 14338,22885 14276,22914
+',
+         'from' => 1499280235,
+         'id' => 2881,
+         'source_id' => 'http://www.pankow.live/2017/04/21/erneutes-chaos-zwischen-blankenburg-und-bernau-vorprogrammiert/',
+         'text' => 'Brückendurchfahrt Schräger Weg: Sperrung, Radfahrer und Fußgänger können die Brücken bis auf kurzzeitige Einschränkungen passieren, bis voraussichtlich Oktober 2018',
+         'type' => 'gesperrt',
+         'until' => 1541026800
+       },
+       {
+         'data' => 'userdel	2::inwork 20533,29069 20537,29285
+',
+         'from' => 1504044000,
+         'id' => 2882,
+         'source_id' => 'http://www.pankow.live/2017/04/21/erneutes-chaos-zwischen-blankenburg-und-bernau-vorprogrammiert/',
+         'text' => 'Zepernicker Chaussee: Sperrung an der Eisenbahnbrücke, 1. bis 4. September 2017',
+         'type' => 'gesperrt',
+         'until' => 1504562399
+       },
+       {
+         'data' => 'userdel	2::inwork 20533,29069 20537,29285
+',
+         'from' => 1506549600,
+         'id' => 2883,
+         'recurring' => 1,
+         'source_id' => 'http://www.pankow.live/2017/04/21/erneutes-chaos-zwischen-blankenburg-und-bernau-vorprogrammiert/',
+         'text' => 'Zepernicker Chaussee: Sperrung an der Eisenbahnbrücke, 29. September 2017 bis 20. August 2018',
+         'type' => 'gesperrt',
+         'until' => 1534802399
        }
      
 );
