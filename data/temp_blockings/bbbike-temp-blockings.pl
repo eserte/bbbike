@@ -24103,13 +24103,16 @@ userdel	2::inwork 15761,15840 15856,15924 15703,15953
 userdel	2::inwork 15891,16041 15856,15924 16080,15830
 EOF
      },
-     { from  => $isodate2epoch->("2015-03-01 04:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2015-03-09 12:00:00"), # laut fritz bis 12h bzw. 4h, laut vmz bis 5h
-       text  => 'Sterndamm: Eisenbahnunterführung voll gesperrt, 02.03.2015 bis 09.03.2015',
+     { from  => $isodate2epoch->("2017-07-07 04:00:00"), # ein Tag Vorlauf
+       until => $isodate2epoch->("2017-07-17 23:59:59"),
+       text  => 'Sterndamm: Eisenbahnunterführung voll gesperrt, 08.07.2017 bis 17.07.2017, danach Einbahnstraßenregelung',
        type  => 'gesperrt',
        source_id => 'IM_024218',
        data  => <<EOF,
 #: by: fritz
+#: XXX "Am 17.7. wird die Fahrtrichtung Michael-Brückner-Straße wieder frei gegeben. Die Gegenrichtung bleibt bis April 2018 gesperrt"
+#: next_check: 2017-07-17
+#: priority: #A
 userdel	2::inwork 17886,5587 17736,5441
 EOF
      },
