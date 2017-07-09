@@ -3682,17 +3682,14 @@ userdel	2::temp 5857,13342 5868,13441 5882,13548
        undef,
        {
          'data' => '#: by: fritz
-#: XXX "Am 17.7. wird die Fahrtrichtung Michael-Brückner-Straße wieder frei gegeben. Die Gegenrichtung bleibt bis April 2018 gesperrt"
-#: next_check: 2017-07-17
-#: priority: #A
 userdel	2::inwork 17886,5587 17736,5441
 ',
          'from' => 1499392800,
          'id' => 2684,
-         'source_id' => 'IM_024218',
+         'source_id' => '2147341514',
          'text' => 'Sterndamm: Eisenbahnunterführung voll gesperrt, 08.07.2017 bis 17.07.2017, danach Einbahnstraßenregelung',
          'type' => 'gesperrt',
-         'until' => 1500328799
+         'until' => 1500271200
        },
        undef,
        {
@@ -3759,36 +3756,7 @@ userdel	2::inwork 17886,5587 17736,5441
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: (YYYY01 & tu3) - +2d, (YYYY07 & tu1) - +2d vvv
-userdel	q4::inwork 8634,10426 8384,10507 8527,10621
-userdel	q4::inwork 8348,10636 8335,10518 8350,10499
-#: tempex ^^^
-',
-         'from' => 1499032800,
-         'id' => 2718,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              8,
-                              'months',
-                              1
-                            ],
-                            [
-                              'yearly',
-                              'days',
-                              27,
-                              'months',
-                              6
-                            ]
-                          ],
-         'source_id' => '2147339708',
-         'text' => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 04.07.2017-06.07.2017',
-         'type' => 'handicap',
-         'until' => 1499378399
-       },
+       undef,
        {
          'data' => '	2::inwork 9998,16547 9983,16561 9955,16578
 ',
@@ -3955,17 +3923,7 @@ userdel	2::night 16196,18364 16315,18208
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED ("Verkürzung" laut fritz) --- userdel	q4::inwork 12938,1348 12940,1547 12911,1815
-userdel	q4::inwork 12911,1815 12817,2031
-',
-         'from' => 1467661160,
-         'id' => 2808,
-         'source_id' => '2147340272',
-         'text' => 'Buckower Damm: Baustelle zwischen Alt-Buckow und An den Achterhöfen, evtl. auch Einschränkungen für Radfahrer, bis 09.07.2017',
-         'type' => 'handicap',
-         'until' => 1499616000
-       },
+       undef,
        undef,
        undef,
        undef,

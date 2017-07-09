@@ -1200,7 +1200,7 @@ EOF
        text  => 'L 43; (Dorfstraße in Kobbeln); südl. vom Kieselwitzer Weg Durchlaßbau Vollsperrung 18.10.2004-26.10.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 90062,-33160 90271,-33398
+userdel	q4 90001,-33098 90028,-33193 90127,-33326 90246,-33422
 EOF
      },
      { from  => 1113170400, # 2005-04-11 00:00
@@ -2602,7 +2602,7 @@ EOF
        text  => 'K 6718; von OL Schernsdorf u. Kupferhammer in 3 Abschn. Straßenbauarbeiten Vollsperrung 03.08.2005-30.09.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 83059,-23016 81501,-23378
+userdel	2 83035,-22998 82332,-23124 81386,-23416
 EOF
      },
      { from  => 1123365600, # 2005-08-07 00:00
@@ -2816,7 +2816,7 @@ EOF
        text  => 'B 112; (Guben-Eisenhüttenstadt); OD Neuzelle Deckenerneurung Vollsperrung 04.10.2005-15.10.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 96492,-34347 95945,-34062
+userdel	q4 96423,-34348 95914,-34138
 EOF
      },
      { from  => 1132873200, # 2005-11-25 00:00
@@ -4711,7 +4711,7 @@ EOF
        text  => 'B 246 Fünfeichen-Grunow OL Bremsdorf, Str. der Jugend Einbau Deckschicht Vollsperrung 08.06.2006-11.06.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 84903,-28417 83882,-28424
+userdel	2::inwork 84903,-28417 83969,-28427
 EOF
      },
      { from  => 1149544800, # 2006-06-06 00:00
@@ -8275,7 +8275,7 @@ EOF
        text  => 'B 112 Bahnhofstr., Frankfurter Str. OD Neuzelle 6. Run & Bike Veranstaltung halbseitig gesperrt; Einbahnstraße 18.05.2007-19.05.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::temp 96017,-33547 96014,-33803
+userdel	q4::temp 95997,-33605 95998,-33782 95925,-33840
 EOF
      },
      { from  => 1179341723, # 2007-05-16 20:55
@@ -10290,7 +10290,7 @@ EOF
        text  => 'L 037 zw. Schernsdorf und Müllrose Straßensanierungsarbeiten Vollsperrung 15.10.2007-16.10.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 80307,-17691 80679,-17994 82000,-19505
+userdel	2::inwork 80307,-17691 80790,-18089 81652,-19109 82033,-19642
 EOF
      },
      { from  => 1192399200, # 2007-10-15 00:00
@@ -11361,7 +11361,7 @@ EOF
        text  => 'B 112 Frankfurter Str., Bahnhofstr. OD Neuzelle 15. Bibulibustag Vollsperrung 01.05.2008-01.05.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::temp 96003,-33078 96017,-33547 96014,-33803
+userdel	q4::temp 95891,-33072 96004,-33149 96027,-33210 95990,-33367 96005,-33506 95997,-33605 95998,-33782 95925,-33840
 EOF
      },
      { from  => 1207692000, # 2008-04-09 00:00
@@ -12923,7 +12923,7 @@ EOF
        text  => 'L 431 Neuzelle - Möbiskruge OD Neuzelle, Slawengrund Deckenerneuerung Vollsperrung 22.10.2008-15.11.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 94961,-33275 95107,-33405 95699,-33584 96017,-33547
+userdel	q4::inwork 94793,-33286 95006,-33394 95563,-33647 95762,-33652 95997,-33605
 EOF
      },
      { from  => 1223503200, # 2008-10-09 00:00
@@ -12957,7 +12957,7 @@ EOF
        text  => 'K 6722 Bornow - Groß Rietz Bahnübergang zw. Bornow und Birkholz Gleisbauarbeiten Vollsperrung 09.10.2008-05.11.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 64933,-24619 64924,-23029
+userdel	2::inwork 64911,-24526 64924,-23029
 EOF
      },
      { from  => 1223762400, # 2008-10-12 00:00
@@ -13519,7 +13519,7 @@ EOF
        text  => 'K 6722 Bornow - Groß Rietz Bahnübergang bei Bornow Gleisbauarbeiten Vollsperrung 19.04.2009-19.04.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 64933,-24619 64924,-23029
+userdel	2::inwork 64911,-24526 64924,-23029
 EOF
      },
      { from  => 1239055200, # 2009-04-07 00:00
@@ -13797,7 +13797,7 @@ EOF
        text  => 'B 246 Lindenberg - Wendisch Rietz Bahnübergang OL Lindenberg Gleisbauarbeiten Vollsperrung 18.04.2009-18.04.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 59522,-22230 59293,-21524
+userdel	2::inwork 59522,-22230 59349,-21581 59293,-21524
 EOF
      },
      { from  => 1239919200, # 2009-04-17 00:00
@@ -14245,7 +14245,7 @@ EOF
        text  => 'B 112 Frankfurter-, Bahnhofstraße OD Neuzelle 16. Bibulibustag Vollsperrung 21.05.2009-21.05.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::temp 96017,-33547 96014,-33803
+userdel	q4::temp 95997,-33605 95998,-33782 95925,-33840
 EOF
      },
      { from  => 1243116000, # 2009-05-24 00:00
@@ -14693,7 +14693,7 @@ EOF
        text  => 'K 6722 B246, Bornow - Groß Rietz zw. Bornow und Birkholz Straßenneubau Vollsperrung 22.06.2009-05.09.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 64933,-24619 64924,-23029
+userdel	2::inwork 64911,-24526 64924,-23029
 EOF
      },
      { from  => 1246140000, # 2009-06-28 00:00
@@ -24104,15 +24104,12 @@ userdel	2::inwork 15891,16041 15856,15924 16080,15830
 EOF
      },
      { from  => $isodate2epoch->("2017-07-07 04:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2017-07-17 23:59:59"),
+       until => $isodate2epoch->("2017-07-17 08:00:00"),
        text  => 'Sterndamm: Eisenbahnunterführung voll gesperrt, 08.07.2017 bis 17.07.2017, danach Einbahnstraßenregelung',
        type  => 'gesperrt',
-       source_id => 'IM_024218',
+       source_id => '2147341514',
        data  => <<EOF,
 #: by: fritz
-#: XXX "Am 17.7. wird die Fahrtrichtung Michael-Brückner-Straße wieder frei gegeben. Die Gegenrichtung bleibt bis April 2018 gesperrt"
-#: next_check: 2017-07-17
-#: priority: #A
 userdel	2::inwork 17886,5587 17736,5441
 EOF
      },
