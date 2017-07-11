@@ -18,7 +18,7 @@ Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und 
 Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 10008,12274 10058,12290
 Prinzengasse: einige Fußgänger, parkende Autos	q3::inwork 9955,12300 10002,12305
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
-Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9580,12581 9601,12380
+Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9581,12588 9601,12380
 Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse!), Ausweichen auf Gehweg	q3::inwork 8315,13181 8406,13127
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9883,12251 9876,12298
@@ -117,8 +117,8 @@ Fasanerieallee: Parkweg	q1 6428,11610 6450,11641 6540,11754 6685,11954
 Große Sternallee: Parkweg	q1 6809,11979 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566 7504,11512
 (Hiroshimastr. - Große Sternallee): Parkweg	q1 7356,11517 7362,11561 7373,11594
 Am S-Bhf. Bellevue: einige Fußgänger	q1 6694,12627 6516,12650
-Bellevue-Ufer: Parkweg	q1 7039,12314 6694,12627
-Bellevueallee: Parkweg	q1 7039,12314 7383,12095 7429,12070 7658,11947 7717,11918 7801,11875 8016,11770 8026,11764 8172,11679
+Bellevue-Ufer: Parkweg	q1 7031,12320 6694,12627
+Bellevueallee: Parkweg	q1 7031,12320 7383,12095 7429,12070 7658,11947 7717,11918 7801,11875 8016,11770 8026,11764 8172,11679
 Ahornsteig: Parkweg	q1 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753 8026,11764 8140,11850 8167,11865 8221,11876 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
 (Luiseninsel - Tiergartenstr.): Parkweg	q1 7664,11597 7600,11513
 Tiergarten: Parkweg	q1 8167,11865 8132,11910
@@ -275,7 +275,7 @@ Monbijoubrücke: Fußgänger	q1 9707,12974 9683,12913 9654,12882
 Garnisonkirchplatz: Straßenbahn	q2 10308,12859 10255,12959
 Fürther Str.: Gehweg	q2 5764,10322 5808,10284
 (Zossener Brücke - Mehringplatz): Gehweg	q1 9873,10285 9668,10306
-(Richard-Wagner-Platz - Schustehrusstr.): Gehweg	q3 3763,12279 3701,12279
+(Richard-Wagner-Platz - Schustehrusstr.): Gehweg	q3 3763,12279 3726,12273 3699,12290
 Goerdelersteg: enge wendelförmige Rampen	q3 3663,14137 3634,14187 3625,14230 3601,14284 3595,14267
 Goerdelersteg: enge wendelförmige Rampen	q3 3655,14237 3610,14219 3625,14230
 Schneckenbrücke: Rampe	q3 2012,3356 2009,3362 1980,3409 1977,3414
@@ -318,7 +318,8 @@ Am Teltowkanal: kurverreich und recht eng	q1 3766,1389 3695,1308 3619,1207 3419,
 Körnerpark: Fußgänger, Bordsteine	q3 12703,7370 12722,7261
 Weisestr.: Bordsteine	q3 11767,8330 11770,8292
 Helgoländer Ufer - Stromstr.: Fußgänger, Café	q3 6551,12901 6535,12934 6443,12952 6271,12985
-Helgoländer Ufer - Stromstr.: Fußgänger	q2 6271,12985 6289,13081 6183,13083
+Helgoländer Ufer - Stromstr.: einige Fußgänger	q1 6271,12985 6289,13081
+Helgoländer Ufer - Stromstr.: einige Fußgänger	q1 6417,13052 6289,13081 6207,13093 6183,13083
 Bundesratufer: Rampe, Fußgänger	q2 6164,12980 6129,12976 6106,12981
 Lehmbruckstr.: Bordsteine	q3 13678,10685 13690,10715
 (Stadtpark Steglitz): Fußgänger	q1 5787,4400 5836,4469 5841,4557 5890,4674 5947,4791 6000,4846 6006,4852
@@ -359,7 +360,7 @@ Krughorn - Volkspark Klein-Glienicke: Fußgänger, besonders an schönen Tagen	q1 -
 Moorlake - Pfaueninsel: Fußgänger, besonders an schönen Tagen	q1 -9620,1407 -9619,1478 -9655,1567 -9648,1629 -9632,1672 -9584,1703 -9511,1739 -9444,1820 -9393,1831 -9108,1798 -9016,1782 -8934,1801 -8861,1855 -8747,2023 -8636,2102 -8591,2144
 am Wirtshaus zur Pfaueninsel: Fußgänger, besonders an schönen Tagen	q2 -8591,2144 -8540,2209 -8468,2152
 Karl-Marx-Allee - Kadiner Str.: Fußgänger	q1 13543,12326 13556,12302 13555,12259
-Spreeuferweg - Elisabeth-Abegg-Str.: Rampe	q3 7923,12872 7885,12821
+Spreeuferweg - Elisabeth-Abegg-Str.: Rampe	q3 7926,12865 7907,12817
 (südliche Fahrbahn des Sachsendamms - Naturpark Schöneberg): Rampe	q2 7696,7562 7739,7531 7708,7539 7747,7521
 Heidenfeldstr.: Gehweg	q1 13433,13346 13393,13326
 (Gudrunstr. - Lichtenberger Brücke): Gehweg	q1 16837,11920 16833,11897 16818,11878
@@ -372,7 +373,7 @@ Gustav-Heinemann-Brücke: Fußgänger, enge Brücke	q3 8116,12938 8110,13042
 Spreebogenpark: Fußgänger	q2 8116,12938 8124,12840 8120,12756
 Beruner Str.: Rampen, Fußgänger, U-Bahn-Ausgang	q3 20143,10731 20215,10554
 (Parkweg Spreebogenpark): besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 8021,12832 8036,12855 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
-Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 7904,12803 7945,12878 7966,12913 8044,12989 8159,13032
+Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 7908,12804 7945,12878 7966,12913 8044,12989 8159,13032
 Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 8257,13037 8277,13032 8317,13015 8401,12973 8464,12919 8498,12870 8529,12757 8566,12661 8587,12642 8635,12629 8754,12622
 Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 8635,12629 8709,12605 8756,12608
 Helenenhof: enge Tore, Fußgänger	q3 14506,11275 14395,11356
@@ -1639,6 +1640,7 @@ Dalandweg: schmale und kurvenreiche Straße	q1 5120,4318 5226,4259 5250,4298 5311
 (Zufahrt zum Gewerbegebiet): Parkplatzverkehr	q1 25312,11186 25298,11118 25298,10966 25297,10892
 (Pilgramer Str. - Gewerbegebiet): Parkplatzverkehr	q1 25168,10963 25298,10966 25337,10967
 (Alte Hellersdorfer Str. - Hellersdorfer Str.): viele Fußgänger (IGA-Eingang)	q3 23084,14472 23081,14418 23021,13982
+Wundtstr.: Bolzplätze	q1 2623,11385 2764,11500
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schüler	q2 7242,8586 7288,8635

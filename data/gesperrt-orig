@@ -146,7 +146,7 @@ Petersburger Platz	1 13470,12990 13559,12779
 #: add_fragezeichen: Ist die Einbahnstraße mittlerweile für Radfahrer geöffnet oder wird das in Zukunft passieren?
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf
 #: osm_watch: way id="4490214" version="9"
-#: last_checked: 2017-03-25
+#: last_checked: 2017-07-11
 #: check_frequency: 100d
 Dernburgstr.	1 2493,10675 2378,10677 2333,10710 2254,11051
 # REMOVED (aufgehoben für alle) --- #: XXX wird die Einbahnstraßenregelung für Radfahrer zumindest im östlichen Abschnitt wegen der Radroute aufgehoben? --- #: osm_watch: way id="42826410" version="5" --- Schuckertdamm	1 1343,14972 1465,14963
@@ -159,7 +159,7 @@ An der Schillingbrücke	1 12061,11406 12060,11323
 An der Schillingbrücke	1 12025,11346 12061,11406
 Schulze-Delitzsch-Platz	1 11155,11750 11060,11753 11024,11789
 Schulze-Delitzsch-Platz	1 11024,11789 11073,11774 11155,11750
-Dorotheenstr.	1 9870,12657 9744,12601 9682,12593 9580,12581 9454,12558
+Dorotheenstr.	1 9870,12657 9742,12609 9681,12601 9581,12588 9454,12558
 Dorotheenstr. (Straßenbahn)	1s:q2 9454,12558 9330,12538
 Georgenstr.	1 9441,12670 9568,12688 9659,12704 9754,12775
 Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
@@ -227,7 +227,7 @@ Wilhelmsaue	1 4778,8784 4918,8785 5165,8784
 Wilhelmsaue	1 5164,8740 4918,8740 4777,8731
 Schweidnitzer Str	1 3220,9598 3225,9844
 Johann-Georg-Str.	1 3108,10069 3170,10041 3348,9806
-Damaschkestr.	1 3132,10499 3013,10553
+Damaschkestr.	1 3123,10504 3013,10553
 # REMOVED --- Herbartstr.	1 2346,11147 2340,11045
 Lietzenseeufer	1 2871,11211 2806,11241 2748,11206 2621,11190 2621,11065
 # REMOVED --- Gervinusstr.	1 3587,10768 3623,10800
@@ -294,7 +294,7 @@ Gritznerstr.	1 4511,6318 4555,6403
 #: add_fragezeichen: Ist die Einbahnstraße mittlerweile für Radfahrer geöffnet oder wird das in Zukunft passieren?
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/fahr-rat-19-sitzung.pdf
 #: osm_watch: way id="4437134" version="6"
-#: last_checked: 2017-03-25
+#: last_checked: 2017-07-11
 #: check_frequency: 100d
 Duisburger Str.	1 4183,10144 3874,10153
 Straße 462	1 4914,17399 5068,17384
@@ -1169,6 +1169,8 @@ Gravensteinstr.	1s:q3 12229,22457 12185,22465
 Hauptstr. (Französisch Buchholz)	1s:q3 12199,22367 12229,22457
 Karlplatz	1 8676,12976 8711,12986
 Hundsfelder Str.	1 21898,-303 21811,-409 21700,-537 21688,-589
+Joachim-Karnatz-Allee	1 7175,12630 7187,12598 7418,12601
+Joachim-Karnatz-Allee	1 7419,12584 7144,12580 7142,12584 7131,12615
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -2028,7 +2030,7 @@ tragen (Treppe)	0:30 14325,5409
 tragen (28 Stufen)	0:30 18180,12262
 tragen (Treppe S-Bhf. Marzahn)	0:30 19571,15417
 tragen (Treppe S-Bhf. Marzahn)	0:30 19638,15431
-tragen (13 Stufen)	0:30 7923,12876
+tragen (13 Stufen)	0:30 7924,12872
 tragen (2 x 5 Stufen)	0:30 4985,6370
 tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20 2301,4917
 tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20 2181,4835
@@ -2810,7 +2812,7 @@ Möwenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 22108,10970 22195,10993
 #: check_frequency: 360d
 Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11485 20631,11621 20633,11651
 # 
-#: last_checked: 2017-07-03
+#: last_checked: 2017-07-11
 Gitschiner Str./Lobeckstr.: Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3nocross 10122,10294 10363,10303 10605,10312
 # 
 #: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus?
@@ -2998,7 +3000,7 @@ Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 144
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/gerickesteg/index.shtml (20 Monate Bauzeit)
 #: XXX laut http://www.stadtentwicklung.berlin.de/bauen/strassenbau/ bis "II. Quartal 2017"
 #: osm_watch: way id="27250334" version="7"
-#: last_checked: 2017-07-03
+#: last_checked: 2017-07-11
 #: check_frequency: 90d
 Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,12669 6765,12680
 # 
@@ -3182,7 +3184,7 @@ Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)
 #: source_id: 2147340791
-#: last_checked: 2017-05-29
+#: last_checked: 2017-07-11
 #: next_check: 2018-12-01
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
 # 
@@ -3246,7 +3248,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2017-06-04
+#: last_checked: 2017-07-11
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
@@ -3413,10 +3415,8 @@ Theodor-Heuss-Weg	1s 9197,14562 9128,14461 9081,14363
 #: corrected_by: srt/new_policy (0:40 -> 0:20, matches better the 10 steps)
 tragen / schieben (Treppe 10 Stufen oder wilder Weg)	0:20 9223,14608
 Tor	BNP:0 3332,12742
-tragen (Treppe, 14 Stufen)	0:30 7931,12876
-Joachim-Karnatz-Allee	1 7142,12584 7131,12615
-Joachim-Karnatz-Allee	1 7175,12630 7187,12598
-Ingeborg-Drewitz-Allee	1 7365,12775 7388,12746 7539,12754 7538,12729 7418,12725 7367,12729 7343,12758
+tragen (Treppe, 14 Stufen)	0:30 7931,12869
+Ingeborg-Drewitz-Allee	1 7365,12775 7388,12746 7541,12751 7542,12736 7377,12729 7367,12729 7343,12758
 tragen (Treppe)	0:30 5714,12279
 Altonaer Str.: Mittelstreifen schlecht zu queren	3nocross 6025,12494 6090,12451 6173,12396
 tragen (Treppe)	0:30 8159,13042
@@ -3431,7 +3431,7 @@ Gottfried-Keller-Str.	1 1697,11911 1792,11889
 tragen (5 Stufen)	0:20 3829,13572
 Schranke	BNP:5 3969,13405
 Tor (meist offen, sonst Fußgängerweg nehmen)	BNP:5 3822,14195
-Wiebestr.: (Privatweg)	2 4527,13244 4495,13107
+Wiebestr.: Privatweg, verschlossenes Tor	2 4527,13244 4495,13107
 Spandauer Damm: queren nur mit tragen möglich	3nocross 3034,12502 3189,12519 3280,12512
 Bonhoefferufer	1 3216,12994 3154,12936 3193,12857 3327,12818
 tragen (16 Stufen)	0:40 4124,12706

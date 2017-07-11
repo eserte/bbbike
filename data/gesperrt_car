@@ -55,7 +55,7 @@ Fasanenstr.	1 5192,10234 5196,10398
 Naumannstr. - Kolonnenstr.	3 7713,8600 7709,8777 7642,8815
 Naumannstr. N - H	3 7707,8915 7709,8777 7713,8600
 zum Mariannenplatz	2 11950,11157 11921,11185
-Herbartstr.	1 2340,11056 2357,10962 2461,10796 2493,10675
+Herbartstr.	1 2340,11056 2361,10941 2468,10780 2493,10675
 Breite Str. Pankow	1 10602,18382 10680,18380
 Gormannstr.	1 10463,13747 10445,13675 10406,13543 10390,13493
 Reichenberger Str.	1 11291,10438 11393,10390
@@ -81,8 +81,8 @@ Schönstedtstr. -> Karl-Marx-Str.: Karl-Marx-Str./Schönstedt	3::igndisp 12649,853
 Hoffmannstr./Elsenstr.	3 14077,10016 14289,9870 14405,10027
 Behren/Ebert	3 8861,12125 8743,12099 8737,12098 8595,12066 8577,11896 8571,11846
 UdL/Universitätsstr.	3nocross::ignrte 9475,12365 9601,12380 9656,12386 9695,12390
-Unter den Linden -> Universitätsstr.: UdL/Universitätsstr.	3::igndisp 9475,12365 9601,12380 9580,12581
-Universitätsstr. -> Unter den Linden: UdL/Universitätsstr.	3::igndisp 9580,12581 9601,12380 9656,12386
+Unter den Linden -> Universitätsstr.: UdL/Universitätsstr.	3::igndisp 9475,12365 9601,12380 9581,12588
+Universitätsstr. -> Unter den Linden: UdL/Universitätsstr.	3::igndisp 9581,12588 9601,12380 9656,12386
 Unter den Linden -> Bebelpl., diagonal über den Platz: UdL/Universitätsstr.	3::igndisp 9695,12390 9656,12386 9702,12307
 Bebelpl., diagonal über den Platz -> Unter den Linden: UdL/Universitätsstr.	3::igndisp 9702,12307 9656,12386 9601,12380
 Kolonnenstr. -> Hohenfriedbergstr.	3 7709,8777 7795,8765 7791,8882
@@ -218,9 +218,13 @@ Spandauer Str. -> Am Nußbaum: Spandauer Str. (Mitte)	3::igndisp 10673,12434 1064
 Am Nußbaum -> Spandauer Str.: Spandauer Str. (Mitte)	3::igndisp 10626,12455 10644,12469 10601,12521
 Siegfriedstr.	1 12342,6936 12479,6969 12664,7013 12810,7047 12843,7093 12872,7134
 Onkel-Herse-Str.	1 13680,4715 13757,4729 13836,4759 13853,4759 13939,4778
-Paulstr.	3nocross::ignrte 7064,12419 7086,12572 7092,12614
-Paulstr. -> Joachim-Karnatz-Allee: Paulstr.	3::igndisp 7092,12614 7086,12572 7142,12584
-Joachim-Karnatz-Allee -> Paulstr.: Paulstr.	3::igndisp 7142,12584 7086,12572 7064,12419
+Paulstr.	3nocross::ignrte 7051,12426 7077,12570 7085,12610
+Paulstr. -> Spreeuferweg: Paulstr.	3::igndisp 7051,12426 7077,12570 6996,12560
+Paulstr. -> Joachim-Karnatz-Allee: Paulstr.	3::igndisp 7085,12610 7077,12570 7142,12584
+Spreeuferweg -> Paulstr.: Paulstr.	3::igndisp 6996,12560 7077,12570 7085,12610
+Spreeuferweg -> Joachim-Karnatz-Allee: Paulstr.	3::igndisp 6996,12560 7077,12570 7142,12584
+Joachim-Karnatz-Allee -> Paulstr.: Paulstr.	3::igndisp 7142,12584 7077,12570 7051,12426
+Joachim-Karnatz-Allee -> Spreeuferweg: Paulstr.	3::igndisp 7142,12584 7077,12570 6996,12560
 Holsteiner Ufer	1 6580,12775 6449,12865 6347,12901
 Händelallee	1 6082,12273 6130,12232 6280,12222 6265,12134 5998,12105 5961,12134
 Wundstr.	1 2254,11051 2272,11074 2346,11147
@@ -1758,17 +1762,17 @@ Murtzaner Ring	1 20040,14179 20051,14191 20061,14220 20056,14373
 Kyllburger Weg	1 16779,17521 16670,17454 16645,17449
 Gethsemanestr.	1 11086,15772 11123,15851 11191,15810 11158,15739
 Mittelstreifen	3nocross::ignrte 2609,11503 2764,11519 3069,11551
-Kaiserdamm -> Witzlebenpl.: Mittelstreifen	3::igndisp 3069,11551 2764,11519 2770,11484
-Kaiserdamm -> Wundtstr.: Mittelstreifen	3::igndisp 2609,11503 2764,11519 2905,11653
+Kaiserdamm -> Witzlebenpl.: Mittelstreifen	3::igndisp 3069,11551 2764,11519 2764,11500
+Kaiserdamm -> Wundtstr.: Mittelstreifen	3::igndisp 2609,11503 2764,11519 2793,11547
 Kaiserdamm -> Danckelmannstr.: Mittelstreifen	3::igndisp 2609,11503 2764,11519 2739,11730
-Wundtstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 2905,11653 2764,11519 3069,11551
-Wundtstr. -> Witzlebenpl.: Mittelstreifen	3::igndisp 2905,11653 2764,11519 2770,11484
+Wundtstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 2793,11547 2764,11519 3069,11551
+Wundtstr. -> Witzlebenpl.: Mittelstreifen	3::igndisp 2793,11547 2764,11519 2764,11500
 Danckelmannstr. -> Kaiserdamm: Mittelstreifen	3::igndisp 2739,11730 2764,11519 3069,11551
-Danckelmannstr. -> Wundtstr.: Mittelstreifen	3::igndisp 2739,11730 2764,11519 2905,11653
-Danckelmannstr. -> Witzlebenpl.: Mittelstreifen	3::igndisp 2739,11730 2764,11519 2770,11484
-Witzlebenpl. -> Kaiserdamm: Mittelstreifen	3::igndisp 2770,11484 2764,11519 2609,11503
-Witzlebenpl. -> Wundtstr.: Mittelstreifen	3::igndisp 2770,11484 2764,11519 2905,11653
-Witzlebenpl. -> Danckelmannstr.: Mittelstreifen	3::igndisp 2770,11484 2764,11519 2739,11730
+Danckelmannstr. -> Wundtstr.: Mittelstreifen	3::igndisp 2739,11730 2764,11519 2793,11547
+Danckelmannstr. -> Witzlebenpl.: Mittelstreifen	3::igndisp 2739,11730 2764,11519 2764,11500
+Witzlebenpl. -> Kaiserdamm: Mittelstreifen	3::igndisp 2764,11500 2764,11519 2609,11503
+Witzlebenpl. -> Wundtstr.: Mittelstreifen	3::igndisp 2764,11500 2764,11519 2793,11547
+Witzlebenpl. -> Danckelmannstr.: Mittelstreifen	3::igndisp 2764,11500 2764,11519 2739,11730
 Revaler Str.	1 13588,11490 13565,11492 13473,11456
 IKEA-Parkplatz	1 7834,7131 7924,7185 8020,7185
 Königsweg: Poller	3 -882,2260 -790,2300 -745,2320

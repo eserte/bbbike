@@ -125,7 +125,7 @@ An der Schillingbrücke	1 12061,11406 12060,11323
 An der Schillingbrücke	1 12025,11346 12061,11406
 Schulze-Delitzsch-Platz	1 11155,11750 11060,11753 11024,11789
 Schulze-Delitzsch-Platz	1 11024,11789 11073,11774 11155,11750
-Dorotheenstr.	1 9870,12657 9744,12601 9682,12593 9580,12581 9454,12558
+Dorotheenstr.	1 9870,12657 9742,12609 9681,12601 9581,12588 9454,12558
 Dorotheenstr. (Straßenbahn)	1s 9454,12558 9330,12538
 Georgenstr.	1 9441,12670 9568,12688 9659,12704 9754,12775
 Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
@@ -181,7 +181,7 @@ Wilhelmsaue	1 4778,8784 4918,8785 5165,8784
 Wilhelmsaue	1 5164,8740 4918,8740 4777,8731
 Schweidnitzer Str	1 3220,9598 3225,9844
 Johann-Georg-Str.	1 3108,10069 3170,10041 3348,9806
-Damaschkestr.	1 3132,10499 3013,10553
+Damaschkestr.	1 3123,10504 3013,10553
 Lietzenseeufer	1 2871,11211 2806,11241 2748,11206 2621,11190 2621,11065
 Darßer Str.	1 15000,18056 15019,18104 15053,18118 15152,18115
 Alfredstr.	1 16207,11937 16246,12177 16255,12224
@@ -828,6 +828,8 @@ Gravensteinstr.	1s 12229,22457 12185,22465
 Hauptstr. (Französisch Buchholz)	1s 12199,22367 12229,22457
 Karlplatz	1 8676,12976 8711,12986
 Hundsfelder Str.	1 21898,-303 21811,-409 21700,-537 21688,-589
+Joachim-Karnatz-Allee	1 7175,12630 7187,12598 7418,12601
+Joachim-Karnatz-Allee	1 7419,12584 7144,12580 7142,12584 7131,12615
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -2335,7 +2337,7 @@ tragen (Treppe)	0:30:-171 14325,5409
 tragen (28 Stufen)	0:30:-93 18180,12262
 tragen (Treppe S-Bhf. Marzahn)	0:30:-195 19571,15417
 tragen (Treppe S-Bhf. Marzahn)	0:30:-155 19638,15431
-tragen (13 Stufen)	0:30:-180 7923,12876
+tragen (13 Stufen)	0:30:-195 7924,12872
 tragen (2 x 5 Stufen)	0:30:-150 4985,6370
 tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20:-40 2301,4917
 tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20:-32 2181,4835
@@ -3131,10 +3133,8 @@ tragen/schieben (40 Stufen, Rampe)	0:120:-259 -4768,11016
 Theodor-Heuss-Weg	1s 9197,14562 9128,14461 9081,14363
 tragen / schieben (Treppe 10 Stufen oder wilder Weg)	0:20:-150 9223,14608
 Tor	BNP:0:-247 3332,12742
-tragen (Treppe, 14 Stufen)	0:30:81 7931,12876
-Joachim-Karnatz-Allee	1 7142,12584 7131,12615
-Joachim-Karnatz-Allee	1 7175,12630 7187,12598
-Ingeborg-Drewitz-Allee	1 7365,12775 7388,12746 7539,12754 7538,12729 7418,12725 7367,12729 7343,12758
+tragen (Treppe, 14 Stufen)	0:30:57 7931,12869
+Ingeborg-Drewitz-Allee	1 7365,12775 7388,12746 7541,12751 7542,12736 7377,12729 7367,12729 7343,12758
 tragen (Treppe)	0:30:-180 5714,12279
 Mittelstreifen schlecht zu queren	3nocross::ignrte 6025,12494 6090,12451 6173,12396
 Altonaer Str. -> Cuxhavener Str.: Mittelstreifen schlecht zu queren	3::igndisp 6173,12396 6090,12451 5999,12280
@@ -3177,7 +3177,7 @@ Gottfried-Keller-Str.	1 1697,11911 1792,11889
 tragen (5 Stufen)	0:20:-169 3829,13572
 Schranke	BNP:5:-180 3969,13405
 Tor (meist offen, sonst Fußgängerweg nehmen)	BNP:5:75 3822,14195
-Wiebestr.: (Privatweg)	2 4527,13244 4495,13107
+Wiebestr.: Privatweg, verschlossenes Tor	2 4527,13244 4495,13107
 queren nur mit tragen möglich	3nocross::ignrte 3034,12502 3189,12519 3280,12512
 Spandauer Damm -> Nithackstr.: queren nur mit tragen möglich	3::igndisp 3280,12512 3189,12519 3204,12416
 Nithackstr. -> Spandauer Damm: queren nur mit tragen möglich	3::igndisp 3204,12416 3189,12519 3034,12502

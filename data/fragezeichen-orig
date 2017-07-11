@@ -89,7 +89,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
 #: XXX Baumaﬂnahme 2.28 (Realisierung nach 2011) 
-#: last_checked: 2017-07-03
+#: last_checked: 2017-07-11
 #: check_frequency: 90d
 Mˆckernstr.: werden hier vielleicht Radspuren Richtung S¸den markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8778,9759 8777,9601
 # 
@@ -104,7 +104,7 @@ Mˆckernstr.: werden hier vielleicht Radspuren Richtung S¸den markiert oder Radwe
 #: source_id: 2147340884
 #: source_id: 2147340970
 #: source_id: LMS-BR_r_LMS-BR_90638
-#: last_checked: 2017-07-06 vvv
+#: last_checked: 2017-07-11 vvv
 #: check_frequency: 21d vvv
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected; 9865,10227 9948,10280 9873,10285
@@ -357,12 +357,9 @@ Seestr.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6781,1602
 #: last_checked: 2017-06-08
 Fˆhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,15104 6561,15041 6528,15000 6445,14893 6334,14756
 # 
-#: source_id: 2147340980
-#: last_checked: 2017-06-08
-#: next_check: 2017-07-05
-Stromstr.: Asphaltierung des Radwegs in Arbeit	?::inwork; 6214,13225 6183,13083 6164,12980
+# REMOVED (weitgehend fertig) --- #: source_id: 2147340980 --- #: last_checked: 2017-06-08 --- #: next_check: 2017-07-05 --- Stromstr.: Asphaltierung des Radwegs in Arbeit	?::inwork; 6214,13225 6183,13083 6164,12980
 # 
-#: last_checked: 2017-05-19
+#: last_checked: 2017-07-11
 Mˆckernstr.: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 8783,10166 8802,10290 8804,10303
 # 
 #: last_checked: 2017-06-28
@@ -462,6 +459,7 @@ Dovestr.: Radstreifen	?::projected 4749,12689 4648,12559 4620,12527
 #: osm_watch: way id="26071046" version="9"
 #: osm_watch: way id="26071048" version="8"
 #: osm_watch: way id="26474540" version="7"
+#: last_checked: 2017-07-11
 Brandenburgische Str.: Radstreifen (wo genau? oder die gesamte Strecke?)	?::projected 4342,9301 4246,9406 4057,9648 3980,9761 3974,9774 3949,9842 3927,9935 3902,10043 3874,10153 3852,10236 3835,10352
 # 
 #: osm_watch: way id="188441401" version="6"
@@ -662,8 +660,8 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/holzmarktstrasse/download/LP_01.pdf
 #: source_id: 2147340618
 #: source_id: LMS-BR_r_LMS-BR_81616
-#: last_checked: 2017-06-26
-#: check_frequency: 60d
+#: last_checked: 2017-07-11
+#: check_frequency: 30d
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 # 
 #: source_id: 166000788
@@ -1568,7 +1566,7 @@ B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133
 # 
 # REMOVED (teilweise, allerdings kann man u.U. (abends?) gut durchkommen) --- #: XXX Rosenthaler Str. (Mitte) in beiden Richtungen Hˆhe Einm¸ndung Neue Schˆnhauser Str. (Berlin)  G¸ltig ab: 10.05.2017 13:53  Baustelle, Vollsperrung (bis Ende 07/17)	2147341279 --- #: XXX laut fritz bs 28.07.2017 --- Rosenthaler Str.: noch immer Bauarbeiten?	? 10317,13248 10310,13227
 # 
-#: last_checked: 2017-07-05
+#: last_checked: 2017-07-11
 #: check_frequency: 14d
 R¸dersdorfer Str.: evtl. stehen Bauarbeiten an	? 13173,11788 13295,11792
 # 
@@ -1590,12 +1588,7 @@ Schnellerstr.: neue Fuﬂg‰ngerampel in Bau	?::inwork 17628,5865
 #: next_check: 2017-08-15
 Potsdamer Chaussee: Sanierung der Radwege	?::projected -6660,9953 -5928,10782 -5870,10847 -5716,11054 -5650,11143 -5564,11209 -5509,11256 -5462,11326 -5399,11426
 # 
-#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_23_2621_2712_online.pdf
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.601504.php
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5931
-#: last_checked: 2017-06-08
-#: next_check: 2017-07-05
-Am B¸lowbogen: Benennung; gibt es hier Straﬂenschilder?	? 7906,10098 7928,10094 8011,10085
+# REMOVED --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_23_2621_2712_online.pdf --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.601504.php --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5931 --- #: last_checked: 2017-06-08 --- #: next_check: 2017-07-05 --- Am B¸lowbogen: Benennung; gibt es hier Straﬂenschilder?	? 7906,10098 7928,10094 8011,10085
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.596879.php
 #: XXX laut fritz Vollsperrung nicht hier, sondern zwischen Mehringdamm und Zossener Str.
@@ -1653,11 +1646,7 @@ Hultschiner Damm/Rahnsdorfer Str.: wird es hier eine Ampel geben?	? 24628,10569 
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
 Seebadstr. - Alt-Hermsdorf: Widmung einer Straﬂe	? 4564,23048 4498,23161 4471,23147
 # 
-#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
-#: osm_watch: way id="316695242" version="1"
-#: last_checked: 2017-03-25
-#: check_frequency: 100d
-(Neues Ufer - Kaiserin-Augusta-Allee): ‰ndert sich durch die Einziehung der Gr¸nanlage etwas?	? 4561,13244 4547,13139 4576,13115
+# REMOVED (-> temp_blockings) --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf --- #: osm_watch: way id="316695242" version="1" --- #: last_checked: 2017-03-25 --- #: check_frequency: 100d --- (Neues Ufer - Kaiserin-Augusta-Allee): ‰ndert sich durch die Einziehung der Gr¸nanlage etwas?	? 4561,13244 4547,13139 4576,13115
 # 
 #: XXX Instandsetzung 2017, danach vielleicht bessere Qualit‰t
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170120
@@ -2700,7 +2689,7 @@ Johannes-Guthmann-Weg: neue Straﬂe entsteht, vermutlich hier? Qualit‰t?	?::inwor
 #: by: http://www.dafmap.de/d/berlin.html?id=3692&mt=0&zoom=16 (Projektabschluss: 2017-12-31)
 #: XXX eventuell entstehen hier weitere Straﬂen/Wege
 #: XXX Alternativer Namensvorschlag: Am Humboldthafen
-#: last_checked: 2017-05-29
+#: last_checked: 2017-07-11
 #: next_check: 2017-12-01
 (Am Humboldthafen): Straﬂe soll nach Hilda Geiringer benannt werden --- wo genau wird die Straﬂe liegen?	?::projected 8243,13469 8245,13396
 # 
