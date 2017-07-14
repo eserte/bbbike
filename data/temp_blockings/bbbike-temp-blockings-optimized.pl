@@ -2771,7 +2771,22 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8592,12252
+userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+userdel	2::temp 8542,11502 8548,11571
+	3 8391,12389 8344,12221 8327,12174
+	3 8327,12174 8344,12221 8391,12389
+	3 8522,12239 8538,12245
+	3 8538,12245 8522,12187
+',
+         'from' => 1500051359,
+         'id' => 2214,
+         'source_id' => '2147341578',
+         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str und Brandenburger Tor gesperrt, auch Ebertstr. zwischen Behrenstr. und Dorotheenstr., Veranstaltung (bis 17.07.2016 ca. 12:00 Uhr)',
+         'type' => 'gesperrt',
+         'until' => 1500285600
+       },
        undef,
        undef,
        undef,
@@ -3757,16 +3772,7 @@ userdel	2::inwork 17886,5587 17736,5441
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::inwork 9998,16547 9983,16561 9955,16578
-',
-         'from' => 1436738400,
-         'id' => 2719,
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml',
-         'text' => 'nördliche Treppe an der Bornholmer Str.: wegen Bauarbeiten an der Bösebrücke gesperrt, bis ca. Juli 2017',
-         'type' => 'handicap',
-         'until' => 1499983200
-       },
+       undef,
        undef,
        undef,
        {
@@ -4068,17 +4074,7 @@ userdel	q4::inwork; 5583,5179 5527,5217 5416,5289 5397,5302 5382,5312
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: LMS-BR_r_LMS-BR_93359
-userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 14528,16910 14558,16907
-',
-         'from' => undef,
-         'id' => 2857,
-         'source_id' => '2147341139',
-         'text' => 'Rennbahnstr.: ab Hunsrückstr. bis Berliner Allee Bauarbeiten, Fahrtrichtung gesperrt, bis 14. Juli 2017',
-         'type' => 'handicap',
-         'until' => 1500026400
-       },
+       undef,
        {
          'data' => 'userdel	q4::inwork 18009,18946 17900,18972 17890,18973 17799,19000 17697,18989 17600,18994
 ',
@@ -4091,7 +4087,7 @@ userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 
        },
        undef,
        {
-         'data' => '#: last_checked: 2017-07-03
+         'data' => '#: last_checked: 2017-07-13
 #: check_frequency: 14d
 userdel	q4::inwork; 7201,8870 7107,9030
 ',
@@ -4112,17 +4108,7 @@ userdel	q4::inwork; 7201,8870 7107,9030
          'until' => 1508104799
        },
        undef,
-       {
-         'data' => '#: XXX bis wann gehen die Bauarbeiten?
-#: last_checked: 2017-07-11
-userdel	q3::inwork; 8752,12647 8870,12647
-',
-         'from' => undef,
-         'id' => 2863,
-         'text' => 'Schiffbauerdamm: Bauarbeiten, Einbahnstraße, offen Richtung Westen',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4173,7 +4159,7 @@ userdel	2::inwork 6815,8691 6912,8617
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2017-07-11
+         'data' => '#: last_checked: 2017-07-12
 #: check_frequency: 7d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',

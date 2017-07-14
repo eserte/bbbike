@@ -920,7 +920,7 @@ EOF
        text  => 'Gleim-Tunnel: Baustelle, Straße vollständig gesperrt (bis 01.10.2004)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 9907,15618 9991,15629 10130,15647
+userdel	2 9907,15618 10004,15636 10130,15647
 EOF
      },
      { from  => 1094421600, # 2004-09-06 00:00
@@ -1233,7 +1233,7 @@ EOF
        text  => 'Gleimstr. (Mitte) in beiden Richtungen zwischen Gleimtunnel und Graunstr. Baustelle, Straße vollständig gesperrt (bis 29.11.2004)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 9907,15618 9991,15629 10130,15647
+userdel	2 9907,15618 10004,15636 10130,15647
 EOF
      },
      { from  => 1098828000, # 2004-10-27 00:00
@@ -7778,7 +7778,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005138',
        data  => <<EOF,
-userdel	1::inwork 9443,15430 9363,15388 9141,15272 8900,15146
+userdel	1::inwork 9443,15430 9363,15388 9138,15278 8929,15176 8899,15147
 EOF
      },
      { from  => 1176069600, # 2007-04-09 00:00
@@ -19316,15 +19316,19 @@ EOF
 userdel	q4::inwork; 13085,6925 13278,6967
 EOF
      },
-     { from  => 1305840997, # 2011-05-19 23:36
-       until => 1306101600, # 2011-05-23 00:00
-       text  => 'Str. des 17. Juni (Tiergarten) in beiden Richtungen zwischen Y.-Rabin-Str. und Brandenburger Tor, auch Ebertstr. zwischen Behrenstr. und Dorotheenstr. Veranstaltung, Straße vollständig gesperrt (bis 22.05.2011 ca. 24:00 Uhr) ',
+     { from  => 1500051359, # 2011-05-19 23:36
+       until => $isodate2epoch->("2017-07-17 12:00:00"), # 1306101600, # 2011-05-23 00:00
+       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str und Brandenburger Tor gesperrt, auch Ebertstr. zwischen Behrenstr. und Dorotheenstr., Veranstaltung (bis 17.07.2016 ca. 12:00 Uhr)',
        type  => 'gesperrt',
-       source_id => 'IM_017297',
+       source_id => '2147341578',
        data  => <<EOF,
 userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8592,12252
 userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 userdel	2::temp 8542,11502 8548,11571
+	3 8391,12389 8344,12221 8327,12174
+	3 8327,12174 8344,12221 8391,12389
+	3 8522,12239 8538,12245
+	3 8538,12245 8522,12187
 EOF
      },
      { from  => 1306040400, # 2011-05-22 07:00
@@ -25509,7 +25513,7 @@ EOF
        data  => <<EOF,
 #: note: wurde leider erst am 2016-08-18 für Radfahrer eröffnet
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2016/pressemitteilung.510057.php
-userdel	2::inwork 10130,15647 9991,15629 9907,15618
+userdel	2::inwork 10130,15647 10004,15636 9907,15618
 EOF
      },
      { from  => 1470175200, # 2016-08-03 00:00
@@ -26012,7 +26016,7 @@ EOF
        text  => 'Akazienstr.: Bauarbeiten, Einbahnstraßenregelung',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2017-07-03
+#: last_checked: 2017-07-13
 #: check_frequency: 14d
 userdel	q4::inwork; 7201,8870 7107,9030
 EOF
@@ -26036,12 +26040,11 @@ userdel	2::inwork 9549,17625 9590,17662
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1500050485, # undef, # XXX
        text  => 'Schiffbauerdamm: Bauarbeiten, Einbahnstraße, offen Richtung Westen',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX bis wann gehen die Bauarbeiten?
-#: last_checked: 2017-07-11
+# REMOVED --- #: XXX bis wann gehen die Bauarbeiten? --- #: last_checked: 2017-07-11
 userdel	q3::inwork; 8752,12647 8870,12647
 EOF
      },
@@ -26124,7 +26127,7 @@ EOF
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-07-11
+#: last_checked: 2017-07-12
 #: check_frequency: 7d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF

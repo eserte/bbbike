@@ -290,11 +290,11 @@ Mariannenstr: Asphalt	Q0 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9053,16029 8923,15850
 Böttgerstr.: Asphalt	Q0 9123,15963 8923,15850
 Böttgerstr.: Kopfsteinpflaster	Q2 8923,15850 8720,15914 8655,15979 8582,16052
-Hussitenstr.: Kopfsteinpflaster, Radwege OK	Q1 8742,15298 8900,15146
-Hussitenstr.: Kopfsteinpflaster	Q2 8900,15146 9034,14910 9108,14777
+Hussitenstr.: Kopfsteinpflaster, Radwege OK	Q1 8742,15298 8899,15147
+Hussitenstr.: Kopfsteinpflaster	Q2 8899,15147 9034,14910 9108,14777
 Grenzstr.: Kopfsteinpflaster, teilweise OK, über der S-Bahn-Brücke asphaltiert	Q2 8742,15298 8654,15201 8614,15156 8570,15107
 Grenzstr.: Kopfsteinpflaster	Q2 8570,15107 8412,14923
-Scheringstr.: Kopfsteinpflaster	Q2 8900,15146 8700,14956
+Scheringstr.: Kopfsteinpflaster	Q2 8899,15147 8700,14956
 Charlottenstr.: mäßiges Kopfsteinpflaster	Q2 9653,10950 9615,11225
 Böckhstr.: teilweise Kopfsteinpflaster, teilweise Asphalt	Q1 11175,9882 11197,9894 11411,9810 11640,9710
 Böckhstr.: Kopfsteinpflaster	Q2 11640,9710 11673,9720
@@ -402,7 +402,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10085,14863 10116,14799
 Swinemünder Str.: Asphalt	Q0 10116,14799 10155,14719
 Swinemünder Str.: Kopfsteinpflaster	Q2 10155,14719 10189,14649
 Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
-Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9734,15579 9646,15737 9623,15777
+Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
 Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 Kiehlufer: Kopfsteinpflaster	Q2 13745,8448 13575,8593 13402,8741 13311,8813
@@ -810,10 +810,8 @@ Schwedter Str. (Mauerpark): Kopfsteinpflaster	Q2 10354,14987 10240,15318 10188,1
 Norwegerstr.: mäßiger Asphalt	Q1- 9959,16510 9975,16425
 Kolonnenweg: mäßiger Asphalt	Q1- 9959,16510 9955,16578
 Norwegerstr.: Asphalt	Q0 9975,16425 9996,16328 10022,16237
-#: note: public imagery
-Gleimtunnel: Fahrbahn Kopfsteinpflaster, Radwege asphaltiert	Q0 10130,15647 9991,15629
-#: by: http://www.flickr.com/photos/ametzelchen/5192911244/in/pool-1053396@N21/
-Gleimstr: Asphalt	Q0 9991,15629 9907,15618 9734,15579
+Gleimtunnel: asphaltierte Streifen, innen Kopfsteinpflaster	Q0 10130,15647 10004,15636
+Gleimstr: Asphalt	Q0 10004,15636 9907,15618 9732,15581
 Nordufer: Asphalt	Q0 5618,14981 5627,14963 5873,14847 5972,14820
 Seydlitzstr.: Kopfsteinpflaster	Q2 7655,13539 7426,13420 7332,13367 7287,13342 7263,13331 7131,13261
 Stolzenfelsstr.: Verbundsteinpflaster	Q0- 18731,8577 18787,8540
@@ -2764,7 +2762,8 @@ Donaustr: Beton	Q0 12649,8535 12771,8439
 Straße 645: Asphalt	Q0 11441,8280 11419,8077 11450,7921 11472,7899
 Oderstr.: Asphalt	Q0 11472,7899 11498,7750 11516,7654 11540,7534 11558,7438 11565,7402 11601,7362 11615,7284 11608,7267 11593,7237 11607,7145
 Jollenseglerstr.: Verbundsteinpflaster	Q0- 14921,10047 14879,9961
-Am Jüdischen Museum: wassergebundene Decke	Q1 9770,10590 9992,10626
+#: note: Pfützen bei Regen
+Am Jüdischen Museum: wassergebundene Decke	Q1- 9770,10590 9992,10626
 (Zufahrtstraße zu Oberlandgarten/Germaniagarten): Asphalt	Q0 11148,6381 11162,6379 11200,6372 11205,6358 11240,6350 11266,6347 11278,6359 11339,6351
 (Zufahrtstraße zu Oberlandgarten/Germaniagarten): Asphalt	Q0 11278,6359 11272,6374 11244,6379 11211,6384 11200,6372
 Oberlandgarten: Beton	Q0- 11244,6379 11246,6403 11264,6409 11269,6466 11253,6473 11238,6470 11230,6413 11246,6403
@@ -7082,7 +7081,7 @@ Bebelplatz: gepflastert	Q1 9674,12231 9702,12307 9734,12395
 (Park am Gleisdreieck, Eingang Kurfürstenstr.): Beton	Q0 8058,10306 8180,10282 8253,10265
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): wassergebundene Decke	Q1 8263,10187 8276,10079
 #: next_check_id: HELLWEG-2014 vvv
-#: last_checked: 2017-06-22 vvv
+#: last_checked: 2017-07-14 vvv
 #: check_frequency: 100d vvv
 #: XXX wird hier noch eine wassergebundene Decke erstellt?
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): unbefestigt	Q2 8276,10079 8289,9988
@@ -8797,7 +8796,7 @@ Schneeammerweg: unbefestigte Straße	Q2 13329,20299 13420,20236
 (an der Panke - Mauerweg): Asphalt	Q0 7872,14510 7889,14519 7939,14447
 (an der Panke - Mauerweg): Asphalt	Q0 7926,14439 7939,14447 7989,14478 8050,14558 8103,14582 8232,14689
 Uferweg: Asphalt mit Schäden	Q2+ 7612,14449 7561,14458 7426,14539 7368,14573
-Uferweg: wassergebundene Decke	Q1 7740,14409 7661,14398 7634,14406 7617,14420 7566,14404
+Uferweg: wassergebundene Decke	Q1- 7740,14409 7661,14398 7634,14406 7617,14420 7566,14404
 #: note: dieses kurze Stück hat auf der Fahrbahn Kopfsteinpflaster, Radwege weiterhin Verbundsteinpflaster
 Quitzowstr.: Kopfsteinpflaster	Q2 7080,14398 7104,14403
 (Goerdelersteg - Beusselstr.): Beton	Q0 3625,14230 3610,14219 3655,14237
@@ -10178,7 +10177,7 @@ Holteistr.: Asphalt mit Schäden	Q0- 14639,11512 14575,11407
 (Einsteinufer - TU-Mathegebäude): Kopfsteinpflaster	Q2 5128,12149 5106,12129 5141,11816
 Fuggerstr.: Kleinsteinpflaster und Gehwegplatten	Q1 6128,10319 6020,10351
 Moldaustr.: Beton	Q0- 17856,10508 17837,10425
-Swinemünder Str.: wechselndes Pflaster (Asphalt, Verbundsteinpflaster, Mosaiksteine)	Q0- 10085,14863 10029,14974 9988,15057 9929,15174 9853,15333 9734,15579
+Swinemünder Str.: wechselndes Pflaster (Asphalt, Verbundsteinpflaster, Mosaiksteine)	Q0- 10085,14863 10029,14974 9988,15057 9929,15174 9853,15333 9732,15581
 (Uferweg - Sömmeringstr.): wassergebundene Decke	Q1 3572,12866 3574,12916 3716,12925
 Bruno-Taut-Ring [Stichstraße]: Beton mit Schäden	Q1- 13632,3875 13601,3895 13573,3885
 Biesheimring: Asphalt	Q0 2028,3008 2067,3031 2048,3062 1987,3166 1946,3142
@@ -24950,7 +24949,7 @@ Lortzingstr.: Kopfsteinpflaster	Q2 10038,15418 9996,15400 9898,15354
 Lortzingstr.: Gehwegplatten	Q0 9898,15354 9853,15333 9814,15312
 Lortzingstr.: Kopfsteinpflaster	Q2 9814,15312 9702,15251 9566,15188
 #: confirmed_by: srt
-Putbusser Str.: Asphalt	Q0 9474,15714 9578,15500 9702,15251 9771,15104
+Putbusser Str.: Asphalt	Q0 9474,15714 9574,15507 9702,15251 9771,15104
 Strahlsunder Str.: Gehwegplatten	Q0 9918,14986 9843,14949 9718,14888
 #: corrected_by: srt (Q3 -> Q3+; rein vom Sehen sah es nicht sooo schlecht aus)
 Strahlsunder Str.: schlechtes Kopfsteinpflaster	Q3+ 9718,14888 9517,14785 9341,14701 9250,14658

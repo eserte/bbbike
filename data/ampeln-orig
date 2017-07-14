@@ -907,7 +907,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 9858,744
 	X 9346,4144
 	X 9192,5921
-	F 9726,15575
+	F 9720,15578
 	X 9441,16058
 	X 9514,16603
 	X 11445,15920
@@ -1165,7 +1165,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5352,7428
 	X 8249,16741
 	X 7970,17087
-	X 8900,15146
+	X 8899,15147
 	X 6071,10127
 	X 6217,10099
 	X 10308,12859
@@ -2627,7 +2627,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #
 #: XXX temporäre Ampel vvv
 #: by: http://www.dafmap.de/d/berlin.html?id=3481&mt=0&zoom=17
-#: last_checked: 2017-06-15 vvv
+#: last_checked: 2017-07-14 vvv
 #: check_frequency: 30d vvv
 	F::inwork 9270,12086
 #: check_frequency ^^^
@@ -2855,10 +2855,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: Zufahrt zu Obi
 	X 24426,11265
 # 
-#: next_check_id: LORTZING-2014
-#: last_checked: 2017-04-07
-#: check_frequency: 120d
-	F::inwork 10038,15418
+# REMOVED (ex. nicht mehr?) --- #: next_check_id: LORTZING-2014 --- #: last_checked: 2017-04-07 --- #: check_frequency: 120d --- F::inwork 10038,15418
 # 
 # REMOVED --- #: XXX wie wird die Situation nach dem Abbau der Baustellenampel sein? --- #: source_id: 2147340304 --- #: last_checked: 2016-11-15 ---	X::inwork 12442,20805
 #: note: Anforderungsampel

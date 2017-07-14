@@ -205,11 +205,11 @@ Mariannenstr: Asphalt	Q0 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9053,16029 8923,15850
 Böttgerstr.: Asphalt	Q0 9123,15963 8923,15850
 Böttgerstr.: Kopfsteinpflaster	Q2 8923,15850 8720,15914 8655,15979 8582,16052
-Hussitenstr.: Kopfsteinpflaster, Radwege OK	Q1 8742,15298 8900,15146
-Hussitenstr.: Kopfsteinpflaster	Q2 8900,15146 9034,14910 9108,14777
+Hussitenstr.: Kopfsteinpflaster, Radwege OK	Q1 8742,15298 8899,15147
+Hussitenstr.: Kopfsteinpflaster	Q2 8899,15147 9034,14910 9108,14777
 Grenzstr.: Kopfsteinpflaster, teilweise OK, über der S-Bahn-Brücke asphaltiert	Q2 8742,15298 8654,15201 8614,15156 8570,15107
 Grenzstr.: Kopfsteinpflaster	Q2 8570,15107 8412,14923
-Scheringstr.: Kopfsteinpflaster	Q2 8900,15146 8700,14956
+Scheringstr.: Kopfsteinpflaster	Q2 8899,15147 8700,14956
 Charlottenstr.: mäßiges Kopfsteinpflaster	Q2 9653,10950 9615,11225
 Böckhstr.: teilweise Kopfsteinpflaster, teilweise Asphalt	Q1 11175,9882 11197,9894 11411,9810 11640,9710
 Böckhstr.: Kopfsteinpflaster	Q2 11640,9710 11673,9720
@@ -298,7 +298,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10085,14863 10116,14799
 Swinemünder Str.: Asphalt	Q0 10116,14799 10155,14719
 Swinemünder Str.: Kopfsteinpflaster	Q2 10155,14719 10189,14649
 Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
-Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9734,15579 9646,15737 9623,15777
+Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
 Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 Kiehlufer: Kopfsteinpflaster	Q2 13745,8448 13575,8593 13402,8741 13311,8813
@@ -646,8 +646,8 @@ Schwedter Str. (Mauerpark): Kopfsteinpflaster	Q2 10354,14987 10240,15318 10188,1
 Norwegerstr.: mäßiger Asphalt	Q1 9959,16510 9975,16425
 Kolonnenweg: mäßiger Asphalt	Q1 9959,16510 9955,16578
 Norwegerstr.: Asphalt	Q0 9975,16425 9996,16328 10022,16237
-Gleimtunnel: Fahrbahn Kopfsteinpflaster, Radwege asphaltiert	Q0 10130,15647 9991,15629
-Gleimstr: Asphalt	Q0 9991,15629 9907,15618 9734,15579
+Gleimtunnel: asphaltierte Streifen, innen Kopfsteinpflaster	Q0 10130,15647 10004,15636
+Gleimstr: Asphalt	Q0 10004,15636 9907,15618 9732,15581
 Nordufer: Asphalt	Q0 5618,14981 5627,14963 5873,14847 5972,14820
 Seydlitzstr.: Kopfsteinpflaster	Q2 7655,13539 7426,13420 7332,13367 7287,13342 7263,13331 7131,13261
 Stolzenfelsstr.: Verbundsteinpflaster	Q0 18731,8577 18787,8540
@@ -9279,7 +9279,7 @@ Holteistr.: Asphalt mit Schäden	Q0 14639,11512 14575,11407
 (Einsteinufer - TU-Mathegebäude): Kopfsteinpflaster	Q2 5128,12149 5106,12129 5141,11816
 Fuggerstr.: Kleinsteinpflaster und Gehwegplatten	Q1 6128,10319 6020,10351
 Moldaustr.: Beton	Q0 17856,10508 17837,10425
-Swinemünder Str.: wechselndes Pflaster (Asphalt, Verbundsteinpflaster, Mosaiksteine)	Q0 10085,14863 10029,14974 9988,15057 9929,15174 9853,15333 9734,15579
+Swinemünder Str.: wechselndes Pflaster (Asphalt, Verbundsteinpflaster, Mosaiksteine)	Q0 10085,14863 10029,14974 9988,15057 9929,15174 9853,15333 9732,15581
 (Uferweg - Sömmeringstr.): wassergebundene Decke	Q1 3572,12866 3574,12916 3716,12925
 Bruno-Taut-Ring [Stichstraße]: Beton mit Schäden	Q1 13632,3875 13601,3895 13573,3885
 Biesheimring: Asphalt	Q0 2028,3008 2067,3031 2048,3062 1987,3166 1946,3142
@@ -15078,7 +15078,7 @@ Graunstr.: Asphalt	Q0 9844,15755 9907,15618 9996,15400 10018,15211
 Lortzingstr.: Kopfsteinpflaster	Q2 10038,15418 9996,15400 9898,15354
 Lortzingstr.: Gehwegplatten	Q0 9898,15354 9853,15333 9814,15312
 Lortzingstr.: Kopfsteinpflaster	Q2 9814,15312 9702,15251 9566,15188
-Putbusser Str.: Asphalt	Q0 9474,15714 9578,15500 9702,15251 9771,15104
+Putbusser Str.: Asphalt	Q0 9474,15714 9574,15507 9702,15251 9771,15104
 Strahlsunder Str.: Gehwegplatten	Q0 9918,14986 9843,14949 9718,14888
 Strahlsunder Str.: schlechtes Kopfsteinpflaster	Q3 9718,14888 9517,14785 9341,14701 9250,14658
 Vinetaplatz: Gehwegplatten	Q0 9942,14936 10029,14974 10111,15018
