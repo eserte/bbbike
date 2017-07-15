@@ -290,7 +290,7 @@ Siegfriedstr. -> Hermannstr.: Hermannstr., am U/S-Bahnhof	3::igndisp 12305,6928 
 Siegfriedstr. -> Hermannstr.: Hermannstr., am U/S-Bahnhof	3::igndisp 12479,6969 12342,6936 12347,6923
 Siegfriedstr. -> Siegfriedstr.: Hermannstr., am U/S-Bahnhof	3::igndisp 12479,6969 12342,6936 12305,6928
 Almstadtstr.	1 10797,13575 10767,13443 10757,13401 10699,13173
-Lohmeyerstr.	1 3348,12314 3409,12451
+Lohmeyerstr.	1 3348,12314 3416,12473
 Martin-Luther-Str.	3nocross::ignrte 6499,10086 6504,9961 6504,9865
 Martin-Luther-Str. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6499,10086 6504,9961 6630,9990
 Martin-Luther-Str. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6504,9865 6504,9961 6366,9926
@@ -624,11 +624,11 @@ Seestr. -> Syrische Str.: Straßenbahntrasse	3::igndisp 7231,16418 7295,16477 726
 Syrische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7263,16508 7295,16477 7403,16575
 Mittelstreifen	3nocross::ignrte 3689,11637 3843,11659 3897,11666
 Bismarckstr. -> Richard-Wagner-Str.: Mittelstreifen	3::igndisp 3689,11637 3843,11659 3837,11760
-Bismarckstr. -> Sesenheimer Str.: Mittelstreifen	3::igndisp 3897,11666 3843,11659 3866,11473
+Bismarckstr. -> Sesenheimer Str.: Mittelstreifen	3::igndisp 3897,11666 3843,11659 3864,11484
 Richard-Wagner-Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 3837,11760 3843,11659 3897,11666
-Richard-Wagner-Str. -> Sesenheimer Str.: Mittelstreifen	3::igndisp 3837,11760 3843,11659 3866,11473
-Sesenheimer Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 3866,11473 3843,11659 3689,11637
-Sesenheimer Str. -> Richard-Wagner-Str.: Mittelstreifen	3::igndisp 3866,11473 3843,11659 3837,11760
+Richard-Wagner-Str. -> Sesenheimer Str.: Mittelstreifen	3::igndisp 3837,11760 3843,11659 3864,11484
+Sesenheimer Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 3864,11484 3843,11659 3689,11637
+Sesenheimer Str. -> Richard-Wagner-Str.: Mittelstreifen	3::igndisp 3864,11484 3843,11659 3837,11760
 Lenbachstr.: Einbahnstraße (genau genommen nur das östlichste Stück)	1 5883,6519 6071,6559
 Augustenburger Platz: nur für Taxen und Anlieger	2:Anlieger 6561,15041 6537,15156 6562,15177
 Zinnowitzer Str. - Friedrichstr.:	3 9011,14019 8870,13926 8935,13844
@@ -842,13 +842,13 @@ Parkstr.: Durchfahrt gesperrt	3 9250,6414 9184,6413 9143,6415
 Hermannstr./Rollbergstr.	3nocross::ignrte 11933,8198 11963,8074 11979,8014
 Hermannstr. -> Rollbergstr.: Hermannstr./Rollbergstr.	3::igndisp 11933,8198 11963,8074 12147,8117
 Rollbergstr. -> Hermannstr.: Hermannstr./Rollbergstr.	3::igndisp 12147,8117 11963,8074 11979,8014
-Mittelstreifen	3nocross::ignrte 7579,10183 7539,9970 7526,9791
-Potsdamer Str. -> Winterfeldtstr.: Mittelstreifen	3::igndisp 7526,9791 7539,9970 7369,10018
-Potsdamer Str. -> Alvenslebenstr.: Mittelstreifen	3::igndisp 7579,10183 7539,9970 7657,9942
-Winterfeldtstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp 7369,10018 7539,9970 7579,10183
-Winterfeldtstr. -> Alvenslebenstr.: Mittelstreifen	3::igndisp 7369,10018 7539,9970 7657,9942
-Alvenslebenstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp 7657,9942 7539,9970 7526,9791
-Alvenslebenstr. -> Winterfeldtstr.: Mittelstreifen	3::igndisp 7657,9942 7539,9970 7369,10018
+Mittelstreifen	3nocross::ignrte 7579,10183 7526,9969 7518,9791
+Potsdamer Str. -> Winterfeldtstr.: Mittelstreifen	3::igndisp 7518,9791 7526,9969 7369,10018
+Potsdamer Str. -> Alvenslebenstr.: Mittelstreifen	3::igndisp 7579,10183 7526,9969 7657,9942
+Winterfeldtstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp 7369,10018 7526,9969 7579,10183
+Winterfeldtstr. -> Alvenslebenstr.: Mittelstreifen	3::igndisp 7369,10018 7526,9969 7657,9942
+Alvenslebenstr. -> Potsdamer Str.: Mittelstreifen	3::igndisp 7657,9942 7526,9969 7518,9791
+Alvenslebenstr. -> Winterfeldtstr.: Mittelstreifen	3::igndisp 7657,9942 7526,9969 7369,10018
 Mittelstreifen	3nocross::ignrte 10779,13793 10836,13883 10895,13961
 Fehrbelliner Str. -> Schönhauser Allee: Mittelstreifen	3::igndisp 10688,13963 10836,13883 10895,13961
 Schönhauser Allee -> Fehrbelliner Str.: Mittelstreifen	3::igndisp 10779,13793 10836,13883 10688,13963
@@ -893,9 +893,9 @@ Alt-Moabit -> Calvinstr.: Mittelstreifen	3::igndisp 6966,13075 6860,13093 6802,1
 Calvinstr. -> Alt-Moabit: Mittelstreifen	3::igndisp 6802,12797 6860,13093 6757,13112
 Krautstr. - Kleine Markusstr.: Barriere	3 11958,12112 11937,12127 11958,12195
 Spreewaldplatz	1 12243,10274 12292,10374 12274,10436
-Mittelstreifen	3nocross::ignrte -2793,14505 -2646,14525 -2597,14532
-Am Juliusturm -> Zitadelle: Mittelstreifen	3::igndisp -2793,14505 -2646,14525 -2652,14559
-Zitadelle -> Am Juliusturm: Mittelstreifen	3::igndisp -2652,14559 -2646,14525 -2597,14532
+Mittelstreifen	3nocross::ignrte -2794,14511 -2647,14532 -2597,14532
+Am Juliusturm -> Zitadelle: Mittelstreifen	3::igndisp -2794,14511 -2647,14532 -2652,14559
+Zitadelle -> Am Juliusturm: Mittelstreifen	3::igndisp -2652,14559 -2647,14532 -2597,14532
 Mittelstreifen	3nocross::ignrte 2585,5696 2556,5575 2444,5303
 Thielallee -> Kuckucksweg: Mittelstreifen	3::igndisp 2444,5303 2556,5575 2483,5575
 Kuckucksweg -> Thielallee: Mittelstreifen	3::igndisp 2483,5575 2556,5575 2585,5696
@@ -974,8 +974,8 @@ Münchener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6255,9194 6264,9156 6
 Münchener Str. -> Münchener Str.: Mittelstreifen	3::igndisp 6255,9194 6264,9156 6276,9042
 Münchener Str. -> Grunewaldstr.: Mittelstreifen	3::igndisp 6276,9042 6264,9156 6152,9136
 Münchener Str. -> Münchener Str.: Mittelstreifen	3::igndisp 6276,9042 6264,9156 6255,9194
-Viktoria-Luise-Platz: Poller	3 6272,9922 6275,9962 6224,9980
-Viktoria-Luise-Platz: Poller	3 6224,9980 6275,9962 6272,9922
+Viktoria-Luise-Platz: Poller	3 6278,9925 6275,9962 6224,9980
+Viktoria-Luise-Platz: Poller	3 6224,9980 6275,9962 6278,9925
 Else-Lasker-Schüler-Str.: Poller	3 7033,10396 7245,10499 7281,10510
 Else-Lasker-Schüler-Str.: Poller	3 7281,10510 7245,10499 7033,10396
 (Westhafenstr. - Beusselstr.): Durchfahrt verboten, Anlieger frei	2:Anlieger 6083,14564 6025,14539 6015,14516 5997,14444 5920,14422 5205,14253
@@ -1167,12 +1167,12 @@ Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15279,10862 15144,10905
 Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15279,10862 15272,10790
 Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15279,10862 15355,10875
 Mittelinsel	3nocross::ignrte 4337,11721 4331,11554 4312,11354
-Leibnizstr. -> Schillerstr.: Mittelinsel	3::igndisp 4312,11354 4331,11554 4156,11522
+Leibnizstr. -> Schillerstr.: Mittelinsel	3::igndisp 4312,11354 4331,11554 4155,11527
 Leibnizstr. -> Schillerstr.: Mittelinsel	3::igndisp 4337,11721 4331,11554 4452,11570
 Schillerstr. -> Leibnizstr.: Mittelinsel	3::igndisp 4452,11570 4331,11554 4312,11354
-Schillerstr. -> Schillerstr.: Mittelinsel	3::igndisp 4452,11570 4331,11554 4156,11522
-Schillerstr. -> Leibnizstr.: Mittelinsel	3::igndisp 4156,11522 4331,11554 4337,11721
-Schillerstr. -> Schillerstr.: Mittelinsel	3::igndisp 4156,11522 4331,11554 4452,11570
+Schillerstr. -> Schillerstr.: Mittelinsel	3::igndisp 4452,11570 4331,11554 4155,11527
+Schillerstr. -> Leibnizstr.: Mittelinsel	3::igndisp 4155,11527 4331,11554 4337,11721
+Schillerstr. -> Schillerstr.: Mittelinsel	3::igndisp 4155,11527 4331,11554 4452,11570
 Sybelstr.	1 4017,10585 4256,10583
 Hüttendorfer Weg	1 21409,-109 21463,-280
 Brückenstr.: Anlieger frei	1:Anlieger 17728,5756 17900,6072
@@ -1461,7 +1461,7 @@ Groninger Str.: Sackgasse für Autos	3 7439,16350 7403,16575 7417,16587
 Florastr.: Poller	3 1929,28119 1938,28171 1961,28239
 Florastr.: Poller	3 1961,28239 1938,28171 1929,28119
 Gartenstr. (Schwedt)	1 68940,73310 68884,73376 68854,73406
-Krumme Str.	1 4029,12158 3999,12050 3976,11869
+Krumme Str.	1 4032,12167 3999,12050 3976,11869
 Kirchplatz: gesperrt für Fahrzeuge aller Art	2 -7221,14692 -7196,14746 -7140,14749
 Eylauer Str.: Einfahrt gesperrt	3 8389,9087 8480,9080 8472,8776
 Eylauer Str.: Einfahrt gesperrt	3 8598,9074 8480,9080 8472,8776
@@ -1891,3 +1891,4 @@ Hellersdorfer Str.: Durchfahrt nicht möglich	3 22987,13989 22981,13966 22848,140
 Hellersdorfer Str.: Durchfahrt nicht möglich	3 22987,13989 22981,13966 22943,13822
 Hellersdorfer Str.: Durchfahrt nicht möglich	3 22848,14001 22981,13966 22987,13989
 Hellersdorfer Str.: Durchfahrt nicht möglich	3 22943,13822 22981,13966 22987,13989
+(Neukladower Allee - Gutspark Neukladow): nur für Anlieger	2 -6319,5606 -6246,5562 -6125,5447 -6112,5406

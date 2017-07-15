@@ -206,7 +206,7 @@ Kirchblick	1 -2014,3564 -1972,3418 -1981,3353
 Forddamm	1 9128,3580 9106,3703
 Hermannstr., am U/S-Bahnhof	3nocross 12317,7007 12342,6936 12347,6923 12362,6881
 Almstadtstr.	1 10797,13575 10767,13443 10757,13401 10699,13173
-Lohmeyerstr.	1 3348,12314 3409,12451
+Lohmeyerstr.	1 3348,12314 3416,12473
 # REMOVED (keine Einbahnstraße (mehr)) --- Yitzhak-Rabin-Str.	1 8055,12186 8119,12414
 Martin-Luther-Str.	3nocross 6499,10086 6504,9961 6504,9865
 Hans-Otto-Str: Straßenbahntrasse	3nocross 12621,14313 12729,14227 12901,14093
@@ -464,7 +464,7 @@ Karl-Marx-Allee: Mittelstreifen	3nocross 12360,12505 12596,12472 12612,12470 128
 Friedrich-Wilhelm-Str.: In die andere Richtung nur für Anlieger	1 8385,5907 8266,5911
 Parkstr.: Durchfahrt gesperrt	3 * 9184,6413 *
 Hermannstr./Rollbergstr.	3nocross 11933,8198 11963,8074 11979,8014
-Mittelstreifen	3nocross 7579,10183 7539,9970 7526,9791
+Mittelstreifen	3nocross 7579,10183 7526,9969 7518,9791
 Schönhauser Allee: Mittelstreifen	3nocross 10779,13793 10836,13883 10895,13961
 Schönhauser Allee: Abbiegen verboten	3 10703,13832 10779,13793 10836,13883
 Straßenbahntrasse	3nocross 21789,4520 21781,4470 21778,4440
@@ -490,7 +490,7 @@ Hardenbergstr./Jebensstr.: Mittelstreifen	3nocross 5542,11075 5459,11135 5258,11
 Alt-Moabit/Calvinstr.: Mittelstreifen	3nocross 6757,13112 6860,13093 6966,13075
 Krautstr. - Kleine Markusstr.: Barriere	3 11958,12112 11937,12127 11958,12195
 Spreewaldplatz	1 12243,10274 12292,10374 12274,10436
-Am Juliusturm/Zitadelle: Mittelstreifen	3nocross -2793,14505 -2646,14525 -2597,14532
+Am Juliusturm/Zitadelle: Mittelstreifen	3nocross -2794,14511 -2647,14532 -2597,14532
 #: note: Luftbild:
 Thielallee: Mittelstreifen	3nocross 2585,5696 2556,5575 2444,5303
 Kleine Hamburger - Torstr.	3 9744,13584 9670,13637 9579,13604
@@ -533,8 +533,8 @@ Leipziger Str. (Potsdam)	1 -12431,-2096 -12534,-2125 -12620,-2174 -12697,-2235 -
 #: XXX_prog für Anhänger auch nicht geeignet, Mittelstreifen zu schmal
 Grunewaldstr.: Mittelstreifen	3nocross 6152,9136 6264,9156 6361,9175
 #: note: Breite zwischen Pollern ca. 150cm
-Viktoria-Luise-Platz: Poller	3 6272,9922 6275,9962 6224,9980
-Viktoria-Luise-Platz: Poller	3 6224,9980 6275,9962 6272,9922
+Viktoria-Luise-Platz: Poller	3 6278,9925 6275,9962 6224,9980
+Viktoria-Luise-Platz: Poller	3 6224,9980 6275,9962 6278,9925
 Else-Lasker-Schüler-Str.: Poller	3 * 7245,10499 *
 #: by: Thomas (neverbox):
 #: note: Schild existiert nur auf der westlichen Seite
@@ -841,7 +841,7 @@ Seestr.: Straßenbahntrasse	3nocross 7403,16575 7417,16587 7447,16613
 Groninger Str.: Sackgasse für Autos	3 7439,16350 7403,16575 *
 Florastr.: Poller	3 * 1938,28171 *
 Gartenstr. (Schwedt)	1 68940,73310 68884,73376 68854,73406
-Krumme Str.	1 4029,12158 3999,12050 3976,11869
+Krumme Str.	1 4032,12167 3999,12050 3976,11869
 Kirchplatz: gesperrt für Fahrzeuge aller Art	2 -7221,14692 -7196,14746 -7140,14749
 #: by: http://www.flickr.com/photos/lapidarium42/7708833948/in/pool-gwb
 Eylauer Str.: Einfahrt gesperrt	3 * 8480,9080 8472,8776
@@ -1161,3 +1161,4 @@ Johannes-R.-Becher-Str.	1 -10134,-4981 -10288,-4749
 Bertolt-Brecht-Str.	1 -10202,-4669 -9998,-4865
 Hellersdorfer Str.: Durchfahrt nicht möglich	3 22987,13989 22981,13966 *
 Hellersdorfer Str.: Durchfahrt nicht möglich	3 * 22981,13966 22987,13989
+(Neukladower Allee - Gutspark Neukladow): nur für Anlieger	2 -6319,5606 -6246,5562 -6125,5447 -6112,5406

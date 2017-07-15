@@ -171,8 +171,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 7105,8788
 	X 6687,8385
 	X 7647,9196
-	X 7479,9357
-	X 7526,9791
+	X 7471,9360
+	X 7518,9791
 	X 7107,9030
 	X 7001,9291
 	X 7049,9833
@@ -185,7 +185,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6449,8807
 	X 6440,9192
 	X 6461,8463
-	X 7539,9970
+	X 7526,9969
 	X 7579,10183
 	X 7633,10394
 	X 7033,10328
@@ -552,13 +552,13 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -6805,1075
 	X -580,3912
 	X 6055,4950
-	X 4355,12001
+	X 4356,12009
 	X 4337,11721
 	X 3689,11637
 	X 3159,11562
-	X 3280,12512
-	X 3034,12502
-	X 3763,12279
+	X 3279,12533
+	X 3033,12509
+	X 3761,12298
 	X 3337,12855
 	X 2860,14118
 	X 2896,14187
@@ -569,8 +569,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 2609,11503
 	X 2547,11788
 	X 2058,11756
-	X 1971,12368
-	X 2414,12418
+	X 1969,12375
+	X 2411,12428
 	X 2095,11440
 	X 1574,11379
 	X 1403,11428
@@ -751,7 +751,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 19994,12484
 	X 4502,11740
 	X 3807,11859
-	X 3408,11849
+	X 3406,11849
 	X 1747,11719
 	X 2446,11776
 	X 2330,11762
@@ -810,9 +810,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10197,16528
 	X 12709,15112
 	X 3827,10980
-	X 2193,12393
-	X 2152,12389
-	X 797,12659
+	X 2192,12402
+	X 2151,12397
+	X 795,12652
 	X -129,12947
 	X -264,13009
 	X -442,13058
@@ -830,9 +830,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -3650,12762
 	X -3635,12572
 	X -3626,12252
-	X -3688,11688
-	X -4500,11937
-	X -4895,12066
+	X -3692,11681
+	X -4503,11930
+	X -4903,12055
 	X -2851,11417
 	X -2222,11225
 	X 9621,3155
@@ -901,7 +901,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 20575,11698
 	X 20549,11659
 	X 22771,16194
-	X -4076,11810
+	X -4078,11800
 	X -4798,11231
 	X -5399,11426
 	X -6660,9953
@@ -1417,7 +1417,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -2576,13777
 	X -3014,14559
 	X -2597,14532
-	X -2336,14460
+	X -2343,14446
 	X -834,15053
 	X -990,13502
 	X 1465,14963
@@ -1473,7 +1473,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 23960,15021
 	X 24730,14288
 	X -6025,12419
-	X -5513,12266
+	X -5518,12259
 	X -4412,12179
 	X -4351,12460
 	F 404,12414
@@ -1625,7 +1625,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3479,11238
 	F 2865,11086
 	X 2764,11519
-	X 3617,12352
+	X 3612,12377
 	X 4572,7936
 	X 15080,11905
 	X 6454,8653
@@ -1760,12 +1760,12 @@ Industriebahn	B0 -2410,13746
 	X 19428,16692
 	F 16010,14326
 	X 16819,15912
-	X -1567,14494
+	X -1564,14489
 	F -6459,14160
 	X 18496,2471
 	X 19501,3101
 	X 19574,3186
-	X -6480,5713
+	X -6482,5711
 	F -6170,6016
 	F -5877,6308
 	F 8831,13973
@@ -1937,7 +1937,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	X 3103,14187
 	F 8953,10366
 	F 5574,5819
-	F 2745,12467
+	F 2744,12474
 	X 20207,13778
 	F 20474,14442
 	F 838,14530
@@ -2077,7 +2077,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 20451,2869
 	X 20289,3033
 	F::inwork 20002,3349
-	F 3995,12173
+	F 4000,12183
 	F 22031,9142
 	F 15356,3759
 	X 14906,10820
@@ -2289,6 +2289,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 19894,-835
 	F 7533,14702
 	X 25312,11186
+	X -1947,14394
+	F 546,12720
 	F -12868,-502
 	X -12940,-1625
 	X -12549,-1277

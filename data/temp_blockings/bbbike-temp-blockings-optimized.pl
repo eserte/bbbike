@@ -65,11 +65,12 @@ userdel	2::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 1117
        undef,
        {
          'data' => '#: by: http://www.stadtfest.berlin/de/index.html
-userdel	2::temp 6499,10086 6609,10147 6626,10155 6729,10212
-userdel	2::temp 6729,10212 6971,10346
-userdel	2::temp 6628,10318 6626,10155
-userdel	2::temp 6487,10277 6628,10318 6719,10347
-userdel	2::temp 6719,10347 6729,10212 6739,10120
+	2::temp 6499,10086 6609,10147 6626,10155 6729,10212
+	2::temp 6729,10212 6971,10346
+	2::temp 6628,10318 6626,10155
+	2::temp 6487,10277 6628,10318 6719,10347
+	2::temp 6719,10347 6729,10212 6739,10120
+	2::temp 6609,10147 6630,9990
 ',
          'from' => 1499983200,
          'id' => 74,
@@ -2033,7 +2034,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'data' => '#: tempex: (mo,th) T08-T13
-	q4::temp:clock 3763,12279 3726,12273 3699,12290
+	q4::temp:clock 3761,12298 3726,12273 3699,12290
 ',
          'from' => undef,
          'id' => 1820,
@@ -3232,7 +3233,7 @@ userdel	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
        {
          'data' => '#: tempex: YYYY0316-YYYY1014 T21-T06, YYYY1015-YYYY0315 T18-T06 vvv
 Kleistpark	2::night 7209,9507 7275,9506 7307,9528 7351,9503 7386,9502 7414,9523 7430,9576 7416,9625 7391,9645 7347,9644 7310,9622 7277,9652 7216,9657
-Kleistpark	2::night 7430,9576 7501,9573 7520,9572
+Kleistpark	2::night 7430,9576 7501,9573 7512,9572
 #: tempex ^^^
 ',
          'from' => undef,
@@ -3983,9 +3984,10 @@ userdel	q4::inwork 12911,1815 12817,2031
        {
          'data' => '#: XXX Wann sind die Bauarbeiten beendet? Wird die Qualität danach besser sein? vvv
 #: osm_watch: way id="136814135" version="15" vvv
-#: last_checked: 2017-07-11 vvv
+#: last_checked: 2017-07-15 vvv
 #: check_frequency: 14d vvv
-userdel	2::inwork 3332,12742 3396,12741 3358,12718
+# REMOVED (hier nicht) --- userdel	2::inwork 3332,12742 3396,12741
+# REMOVED (hier nicht) --- userdel	2::inwork 3396,12741 3358,12718
 userdel	2::inwork 3396,12741 3476,12735 3582,12704 3654,12672 3763,12624 3837,12618
 userdel	2::inwork 3741,12607 3654,12672
 #: check_frequency ^^^
@@ -4159,8 +4161,8 @@ userdel	2::inwork 6815,8691 6912,8617
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2017-07-12
-#: check_frequency: 7d
+         'data' => '#: last_checked: 2017-07-15
+#: check_frequency: 14d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
          'from' => undef,

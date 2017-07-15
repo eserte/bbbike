@@ -18,6 +18,7 @@ abbiegender Waldweg zur Köpenicker Str. ist nicht ausgeschildert	CP2; 20869,7116
 abgehender Waldweg ist etwas versteckt, Bordstein muss überquert werden	CP2; 20872,7268 20892,7236
 Zugang durch Betonabsperrung	PI; 21221,12484 21205,12489 21200,12512 21191,12516
 am Gartenbauamt abbiegen	CP2; 7658,11947 7634,11920
+Knesebeckstr. Richtung Ernst-Reuter-Platz: ggfs. auf dem linken Gehweg fahren	CP; 4903,11580 4922,11600 4900,11626
 Schillerstr. Richtung Ernst-Reuter-Platz: zunächst linken Gehweg bis zur Ampel am Ernst-Reuter-Platz benutzen	CP; 4574,11587 4900,11626 4838,11697
 Hardenbergstr. - Schillerstr.: bereits an der Knesebeckstraße auf den linken Gehweg wechseln	PI; 4922,11600 4900,11626 4574,11587
 Zossener - Brachvogelstr.: bereits an der Fußgängerampel Waterloo-Ufer Straßenseite wechseln	PI; 9865,10227 9858,10199 9884,10192
@@ -250,8 +251,8 @@ Vierlandenstr. - Heliosstr.: Überquerungsmöglichkeit der Straßenbahntrasse recht
 Allee der Kosmonauten - Vierlandenstr.: Straßenbahntrasse kurz vor der Heliosstr. überqueren	CP; 20756,14486 20822,14594 20761,14589
 Vierlandenstr. - Allee der Kosmonauten: Überquerungsmöglichkeit der Straßenbahntrasse rechts	CP; 20761,14589 20822,14594 20868,14698
 Kleine Andreasstr.: Einfahrt befindet sich links von der Kaiser's-Parkplatzeinfahrt	CP2; 12279,12113 12211,12128
-Zitadelle - Am Juliusturm: bis zur Ampel am Zitadellenweg auf dem linken Gehweg vorfahren	CP; -2668,14635 -2656,14582 -2652,14559 -2646,14525 -2597,14532
-Am Juliusturm - Zitadelle: an der Ampel "An der Spreeschanze" die Straßenseite wechseln und zurückfahren	CP; -2793,14505 -2646,14525 -2652,14559 -2656,14582 -2668,14635
+Zitadelle - Am Juliusturm: bis zur Ampel am Zitadellenweg auf dem linken Gehweg vorfahren	CP; -2668,14635 -2656,14582 -2652,14559 -2647,14532 -2597,14532
+Am Juliusturm - Zitadelle: an der Ampel "An der Spreeschanze" die Straßenseite wechseln und zurückfahren	CP; -2794,14511 -2647,14532 -2652,14559 -2656,14582 -2668,14635
 Loewenhardtdamm - Höhndorfstr.: bereits an der General-Pape-Str. auf den linken Gehweg wechseln	PI; 8306,8722 8334,8655 8438,8676
 Ausgeschildert zum Bayernring	CP2; 8531,8404 8454,8574
 Mehringdamm - Wilhelmshöhe: bereits an der Fidicinstr. die Straßenseite wechseln	PI; 9224,9053 9225,9111 9186,9107
@@ -336,7 +337,7 @@ Potsdamer Chaussee - Wiesenschlag: bereits an der Kurstr. auf den linken Gehweg 
 Seestr./Groninger Str. - Weg am Kombibad: die Seestr. an der Fußgängerampel überqueren	PI; 7403,16575 7417,16587 7298,16725
 Friedenstr. - Schulweg: bereits am Zebrastreifen Pufendorfstr. auf den linken Gehweg wechseln	PI; 12616,12844 12594,12866 12483,12682
 Brunsbütteler Damm - Weg zur Staakener Feldstr.: bereits an der Fußgängerampel auf den linken Gehweg wechseln	PI; -7762,14067 -7716,14031 -7647,13985
-Winzerstr. - Heerstr.: auf den rechten Weg einbiegen	CP2; -4687,11885 -4637,11982
+Winzerstr. - Heerstr.: auf den rechten Weg einbiegen	CP2; -4687,11885 -4639,11973
 Residenzstr. - Am Schäfersee: bereits an der Ampel Pankower Allee auf den linken Gehweg wechseln	PI; 7579,17532 7572,17558 7477,17544
 Residenzstr. - Lettestr.: bereits an der Ampel Markstr./Residenzstr. auf den linken Gehweg wechseln	PI; 7602,17399 7675,17430 7707,17445
 Am Stand - Klemkestr.: den linken Gehweg bis zur Kreuzung Lampesteig benutzen	CP; 7484,18778 7492,18699 7520,18701
@@ -404,7 +405,7 @@ Südostallee - Königsheideweg: ausgeschildert "Zur Linde"	CP2; 16169,6064 16159,6
 Kaiser-Friedrich-Str. - Goethepark: bereits an der Ampel Schillerstr. auf die linke Seite wechseln	PI; 3460,11441 3467,11373 3594,11372
 Goethepark - Kaiser-Friedrich-Str: linken Gehweg bis zur nächsten Kreuzung benutzen	CP; 3594,11372 3467,11373 3479,11238
 Roedernallee - S-Bhf. Alt-Reinickendorf: ggfs. schon an der Ampel Flottenstr. auf die linke Seite wechseln	PI; 6392,19142 6415,19083 6513,19053
-Heerstr. - Südpark: bereits an der Ampel Jaczostr. auf die linke Seite wechseln	PI; -4076,11810 -4031,11796 -4027,11818
+Heerstr. - Südpark: bereits an der Ampel Jaczostr. auf die linke Seite wechseln	PI; -4078,11800 -4033,11786 -4027,11818
 Waxweiler Weg: nicht ausgeschildert	CP2; 16358,17627 16346,17561
 entlang der ehem. NEB-Trasse: über den Parkplatz des Audi-Zentrums	CP2; 16318,17128 16369,17042
 Am Faulen See - Hedwigstr.: Überquerungsmöglichkeit auf der linken Seite	CP; 16551,16307 16520,16200 16505,16096

@@ -1246,10 +1246,30 @@ nördliches Sackgassenende, BSR-Recyclinghof	culdesac_pseudo 3969,13341
 Sackgasse nördlich der Minna-Todenhagen-Str.	culdesac_pseudo 17295,7358
 	culdesac 21637,1324
 Krampenburg	culdesac 27323,-1671
+	culdesac -6192,6063
+	culdesac_pseudo -6314,6104
+	culdesac -8154,3879
+	culdesac -8305,4007
+	culdesac -8075,3901
+	culdesac -8155,4183
+	culdesac -9076,4382
+	culdesac -9271,4549
+	culdesac_pseudo -9294,4689
+	culdesac -8994,4851
+	culdesac -8903,5930
+	culdesac -6495,6131
+Gut Neukladow	culdesac_pseudo -6112,5406
+	culdesac -7413,4304
+	culdesac -7327,4337
+	culdesac -7266,4361
+	culdesac_pseudo -7780,4363
 # 
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo 3699,12290
+	culdesac_pseudo -5535,12631
+	culdesac_pseudo -3744,12680
 	culdesac_pseudo 4765,3401
 	culdesac_pseudo 5182,24183
 	culdesac_pseudo 6692,3334

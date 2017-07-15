@@ -76,7 +76,7 @@ Kurt-Schumacher-Damm (Süd)	1 2831,14219 2803,14288 2793,14374 2905,14754
 Kurt-Schumacher-Damm (Süd)	1 2963,14752 2847,14356 2857,14222
 Kurt-Schumacher-Damm (Nord)	1 3564,16294 3643,16437 3676,16497 3753,16638 3853,16825 3940,16861
 Kurt-Schumacher-Damm (Nord)	1 3940,16861 3788,16621 3711,16481 3585,16252
-Ferdinand-Friedensburg-Platz	1 -914,14602 -1357,14533 -1392,14527 -1508,14508 -1369,14644 -1119,14659 -925,14631
+Ferdinand-Friedensburg-Platz	1 -914,14602 -1357,14533 -1392,14527 -1484,14513 -1369,14644 -1119,14659 -925,14631
 Falkenseer Platz	1 -3352,14676 -3368,14723 -3355,14764 -3295,14777 -3251,14741 -3247,14713 -3255,14685 -3301,14669 -3352,14676
 Alt-Müggelheim	1 28317,891 28188,962 28094,1090 28225,1009 28317,891
 Prenzlauer Promenade	2 12008,19613 12040,19725 11907,19749
@@ -342,7 +342,7 @@ Planetenstr.	1 15175,7221 15056,7198 14951,7163
 Wustermarker Str.	1 -5097,14599 -5111,14486 -5004,14454 -4981,14442 -4755,14393
 Gartenstr. (Köpenick)	1 22419,4457 22382,4361 22362,4331 22302,4255 22279,4220
 Spitzerstr.	1 22319,4197 22358,4282 22385,4317 22425,4370 22451,4441
-Zitadellenweg/BMW-Betriebswerk	2 -1993,14594 -1768,14605 -1616,14527
+BMW-Betriebswerk	2 -1993,14594 -1768,14605 -1564,14489
 Heimat	1 1032,1325 994,1485 968,1479 941,1603
 Techowpromenade	1 5219,20467 5185,20358 5173,20275 5170,20182
 (Kastanienallee - Schönhauser Allee)	1 10884,14952 10838,14962
@@ -750,7 +750,7 @@ Pasedagplatz	1 14099,17195 14150,17255 14170,17249
 Aristotelessteig	1s 18496,9628 18527,9623 18660,9599
 Hügelschanze	1 -3881,15589 -3982,15577
 Beim Pfarrhof	1 -7292,14811 -7304,14567
-(Roedeliusweg - Heerstr.)	2 -4431,11779 -4437,11919
+(Roedeliusweg - Heerstr.)	2 -4431,11779 -4438,11910
 Am Kleinen Platz	1 -7248,14826 -7292,14811
 Ella-Trebe-Str.	1s 7938,13302 7938,13150
 Waldmeisterstr.	1 1736,7557 1880,7558 1930,7594
@@ -1140,8 +1140,8 @@ Mittelstreifen	3nocross::ignrte 19578,6165 19405,6276 19276,6359
 An der Wuhlheide -> Treskowstr.: Mittelstreifen	3::igndisp 19578,6165 19405,6276 19333,6165
 Treskowstr. -> An der Wuhlheide: Mittelstreifen	3::igndisp 19333,6165 19405,6276 19276,6359
 nicht überquerbar	3nocross::ignrte 504,11243 571,11255 704,11273
-Mittelstreifen	3nocross::ignrte -4076,11810 -4031,11796 -3707,11693
-Südpark -> Heerstr.: Mittelstreifen	3::igndisp -4027,11818 -4031,11796 -3707,11693
+Mittelstreifen	3nocross::ignrte -4078,11800 -4033,11786 -3820,11721 -3708,11686
+Südpark -> Heerstr.: Mittelstreifen	3::igndisp -4027,11818 -4033,11786 -3820,11721
 Mittelstreifen	3nocross::ignrte -3481,14523 -3498,14413 -3501,14365 -3506,14306
 Münsingerstr./Martin-Albertz-Weg -> Altstädter Ring: Mittelstreifen	3::igndisp -3535,14408 -3498,14413 -3481,14523
 Altstädter Ring -> Münsingerstr./Martin-Albertz-Weg: Mittelstreifen	3::igndisp -3501,14365 -3498,14413 -3535,14408
@@ -1749,9 +1749,9 @@ Christinenstr. -> Torstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10599,13775
 Linksabbiegen verboten (und unbequem)	3nocross::ignrte 8192,9619 8097,9650 7938,9694
 Yorckstr. -> Katzlerstr.: Linksabbiegen verboten (und unbequem)	3::igndisp 8192,9619 8097,9650 8035,9437
 Katzlerstr. -> Yorckstr.: Linksabbiegen verboten (und unbequem)	3::igndisp 8035,9437 8097,9650 7938,9694
-unbequemes Überqueren, stark befahrene Straße	3nocross::ignrte 7517,9454 7520,9572 7526,9791
-Potsdamer Str. -> Kleistpark: unbequemes Überqueren, stark befahrene Straße	3::igndisp 7517,9454 7520,9572 7501,9573
-Kleistpark -> Potsdamer Str.: unbequemes Überqueren, stark befahrene Straße	3::igndisp 7501,9573 7520,9572 7526,9791
+unbequemes Überqueren, stark befahrene Straße	3nocross::ignrte 7507,9458 7512,9572 7518,9791
+Potsdamer Str. -> Kleistpark: unbequemes Überqueren, stark befahrene Straße	3::igndisp 7507,9458 7512,9572 7501,9573
+Kleistpark -> Potsdamer Str.: unbequemes Überqueren, stark befahrene Straße	3::igndisp 7501,9573 7512,9572 7518,9791
 unbequemes Überqueren, stark befahrene Straße	3nocross::ignrte 14501,10169 14405,10027 14289,9870
 An den Treptowers -> Treppe zum Allianz-Gebäude: unbequemes Überqueren, stark befahrene Straße	3::igndisp 14289,9870 14405,10027 14383,10036
 Treppe zum Allianz-Gebäude -> Elsenbrücke: unbequemes Überqueren, stark befahrene Straße	3::igndisp 14383,10036 14405,10027 14501,10169
@@ -1864,8 +1864,8 @@ Mollstr. -> Pauline-Staegemann-Str.: Straßenbahntrasse	3::igndisp 11451,13301 11
 Pauline-Staegemann-Str. -> Mollstr.: Straßenbahntrasse	3::igndisp 11589,13305 11526,13252 11560,13232
 Mollstr. -> Berolinastr.: Straßenbahntrasse	3::igndisp 11681,13161 11560,13232 11476,13052
 Berolinastr. -> Mollstr.: Straßenbahntrasse	3::igndisp 11476,13052 11560,13232 11526,13252
-schlecht passierbar	3nocross::ignrte -4076,11810 -4031,11796 -3707,11693
-Südpark -> Heerstr.: schlecht passierbar	3::igndisp -4027,11818 -4031,11796 -3707,11693
+schlecht passierbar	3nocross::ignrte -4078,11800 -4033,11786 -3820,11721 -3708,11686
+Südpark -> Heerstr.: schlecht passierbar	3::igndisp -4027,11818 -4033,11786 -3820,11721
 nicht passierbarer Mittelstreifens	3nocross::ignrte 2560,5044 2587,4965 2615,4885
 Thielallee -> Hittorfstr.: nicht passierbarer Mittelstreifens	3::igndisp 2615,4885 2587,4965 2516,4936
 Hittorfstr. -> Thielallee: nicht passierbarer Mittelstreifens	3::igndisp 2516,4936 2587,4965 2560,5044
@@ -2095,9 +2095,9 @@ Johannes-Lepsius-Str. -> Kiepenheuerallee: Straßenbahntrasse	3::igndisp -13244,2
 Mittelstreifen	3nocross::ignrte -3824,13350 -3813,13404 -3803,13464
 Wilhelmstr. -> Kerstenweg: Mittelstreifen	3::igndisp -3803,13464 -3813,13404 -3707,13377
 Kerstenweg -> Wilhelmstr.: Mittelstreifen	3::igndisp -3707,13377 -3813,13404 -3824,13350
-Mittelstreifen	3nocross::ignrte -4895,12066 -4637,11982 -4500,11937
-Heerstr. -> Winzerstr.: Mittelstreifen	3::igndisp -4500,11937 -4637,11982 -4687,11885
-Winzerstr. -> Heerstr.: Mittelstreifen	3::igndisp -4687,11885 -4637,11982 -4895,12066
+Mittelstreifen	3nocross::ignrte -4903,12055 -4639,11973 -4503,11930
+Heerstr. -> Winzerstr.: Mittelstreifen	3::igndisp -4503,11930 -4639,11973 -4687,11885
+Winzerstr. -> Heerstr.: Mittelstreifen	3::igndisp -4687,11885 -4639,11973 -4903,12055
 Mittelstreifen	3nocross::ignrte -3803,13464 -3789,13519 -3764,13613
 Klosterstr. -> Ziegelhof, Grünanlage: Mittelstreifen	3::igndisp -3764,13613 -3789,13519 -3689,13513
 Ziegelhof, Grünanlage -> Klosterstr.: Mittelstreifen	3::igndisp -3689,13513 -3789,13519 -3803,13464
@@ -2601,7 +2601,6 @@ Tor	BNP:1:-110:trailer=3 10483,14720
 Tor	BNP:1:72:trailer=3 10476,14741
 Schranke, lichte Breite 120cm	BNP:1:-256:trailer=3 -7685,15092
 Poller, lichte Breite 100cm	BNP:1:-255:trailer=5 -7109,15286
-Schranke	BNP:1:-123:trailer=5 -3300,14039
 weites Drängelgitter	BNP:1:-237:trailer=5 -3437,14029
 Drängelgitter	BNP:3:-79:trailer=10 7928,10094
 enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark, falls Tor gesperrt ist	BNP:20:-19:trailer=no 10583,15208
@@ -2857,6 +2856,10 @@ Drängelgitter	BNP:3:-240 31665,48997
 Schranke	BNP:3:-59:trailer=10 8041,-3322
 Schranke	BNP:3:-64:trailer=10 6876,-2731
 Schranke	BNP:3:-78:trailer=10 17215,12485
+Gutspark Neukladow: Bauarbeiten, Weg komplett gesperrt	2::inwork -6366,5215 -6198,5357
+Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -6556,6663 -6661,6743
+An den Parkbäumen: Bauarbeiten, Fahrbahn gesperrt	2::inwork -6530,6699 -6556,6663
+Parkrosenweg: Bauarbeiten	2::inwork -6530,6699 -6381,6587
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5579,12231 5535,12206 5518,12159
 Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s 5518,12159 5627,12105
 Möckernkiez: Bauarbeiten	2::inwork 8778,9759 8741,9741 8729,9670 8587,9590 8566,9643
@@ -3125,10 +3128,10 @@ Weinmeisterhornweg	1s -4798,11231 -4581,11183
 Heerstr.	3nocross::ignrte -1523,11012 -1288,11037 -1050,11061
 Heerstr. -> Passenheimer Str.: Heerstr.	3::igndisp -1523,11012 -1288,11037 -1304,11183
 Passenheimer Str. -> Heerstr.: Heerstr.	3::igndisp -1304,11183 -1288,11037 -1050,11061
-Heerstr.	3nocross::ignrte -4500,11937 -4437,11919 -4310,11882
-Heerstr.	3nocross::ignrte -4310,11882 -4278,11873 -4076,11810
-Heerstr. -> Enger St.: Heerstr.	3::igndisp -4076,11810 -4278,11873 -4310,11770
-Enger St. -> Heerstr.: Heerstr.	3::igndisp -4310,11770 -4278,11873 -4310,11882
+Heerstr.	3nocross::ignrte -4503,11930 -4438,11910 -4311,11872
+Heerstr.	3nocross::ignrte -4311,11872 -4279,11862 -4078,11800
+Heerstr. -> Enger St.: Heerstr.	3::igndisp -4078,11800 -4279,11862 -4310,11770
+Enger St. -> Heerstr.: Heerstr.	3::igndisp -4310,11770 -4279,11862 -4311,11872
 tragen/schieben (40 Stufen, Rampe)	0:120:-259 -4768,11016
 Theodor-Heuss-Weg	1s 9197,14562 9128,14461 9081,14363
 tragen / schieben (Treppe 10 Stufen oder wilder Weg)	0:20:-150 9223,14608
@@ -3172,15 +3175,15 @@ Sensburger Allee -> Teufelsseestr.: Heerstr.	3::igndisp 326,11391 438,11236 454,
 Heerstr. -> Teufelsseestr.: Heerstr.	3::igndisp 504,11243 438,11236 454,11159
 Heerstr. -> Sensburger Allee: Heerstr.	3::igndisp 229,11213 438,11236 326,11391
 tragen (20 Stufen)	0:30:-186 23,11137
-Lerschpfad	1 2181,12276 2152,12389
+Lerschpfad	1 2181,12276 2151,12397
 Gottfried-Keller-Str.	1 1697,11911 1792,11889
 tragen (5 Stufen)	0:20:-169 3829,13572
 Schranke	BNP:5:-180 3969,13405
 Tor (meist offen, sonst Fußgängerweg nehmen)	BNP:5:75 3822,14195
 Wiebestr.: Privatweg, verschlossenes Tor	2 4527,13244 4495,13107
-queren nur mit tragen möglich	3nocross::ignrte 3034,12502 3189,12519 3280,12512
-Spandauer Damm -> Nithackstr.: queren nur mit tragen möglich	3::igndisp 3280,12512 3189,12519 3204,12416
-Nithackstr. -> Spandauer Damm: queren nur mit tragen möglich	3::igndisp 3204,12416 3189,12519 3034,12502
+queren nur mit tragen möglich	3nocross::ignrte 3033,12509 3188,12524 3279,12533
+Spandauer Damm -> Nithackstr.: queren nur mit tragen möglich	3::igndisp 3279,12533 3188,12524 3204,12416
+Nithackstr. -> Spandauer Damm: queren nur mit tragen möglich	3::igndisp 3204,12416 3188,12524 3033,12509
 Bonhoefferufer	1 3216,12994 3154,12936 3193,12857 3327,12818
 tragen (16 Stufen)	0:40:-183 4124,12706
 tragen (16 Stufen)	0:40:-183 4128,12637
@@ -3474,7 +3477,7 @@ Columbiadamm, linker Gehweg	1::igndisp 10913,8463 10799,8504 10796,8498
 Hohenstaufenstr., linker Gehweg bis zur Fußgängerampel	1::igndisp 6241,9772 6209,9774
 zur Münchener Str. auf dem linken Gehweg	1::igndisp 6209,9771 6241,9772
 Karl-Lieknecht-Str., linker Gehweg	1::igndisp 11070,13357 11082,13371
-Potsdamer Str., linker Gehweg	1::igndisp 7526,9791 7501,9573
+Potsdamer Str., linker Gehweg	1::igndisp 7518,9791 7501,9573
 Landsberger Allee, Radweg auf der linken Seite	1::igndisp 15923,14334 15848,14325 15850,14308
 Hauptstr., linker Gehweg	1::igndisp 16206,10047 16195,10044 16150,10123 16018,10212 16004,10204
 Kurt-Schumacher-Damm, linker Gehweg	1::igndisp 2793,14374 2787,14284 2831,14219

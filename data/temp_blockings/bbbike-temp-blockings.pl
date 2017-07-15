@@ -589,11 +589,12 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.stadtfest.berlin/de/index.html
-userdel	2::temp 6499,10086 6609,10147 6626,10155 6729,10212
-userdel	2::temp 6729,10212 6971,10346
-userdel	2::temp 6628,10318 6626,10155
-userdel	2::temp 6487,10277 6628,10318 6719,10347
-userdel	2::temp 6719,10347 6729,10212 6739,10120
+	2::temp 6499,10086 6609,10147 6626,10155 6729,10212
+	2::temp 6729,10212 6971,10346
+	2::temp 6628,10318 6626,10155
+	2::temp 6487,10277 6628,10318 6719,10347
+	2::temp 6719,10347 6729,10212 6739,10120
+	2::temp 6609,10147 6630,9990
 EOF
      },
      { from  => 1088807415, # 2004-07-03 00:30
@@ -865,7 +866,7 @@ EOF
        text  => 'Leibnizstraße (Charlottenburg) zwischen Bismarckstr. und Otto-Suhr-Allee in Richtung Kantstr. Baustelle, Fahrtrichtung gesperrt bis 5.9.2004, 20:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1 4355,12001 4337,11721
+userdel	1 4356,12009 4337,11721
 EOF
      },
      { from  => 1094508000, # 2004-09-07 00:00
@@ -2204,10 +2205,10 @@ EOF
        text  => '300 Jahre Charlottenburg, 17.06.2005 bis 19.06.2005',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 3072,12222 3060,12311 3050,12394 3034,12502
+userdel	2 3072,12222 3060,12311 3050,12394 3033,12509
 userdel	2 3072,12222 3091,12071
-userdel	2 3034,12502 2786,12473 2745,12467 2717,12463 2643,12453
-userdel	2 3034,12502 3189,12519 3280,12512
+userdel	2 3033,12509 2785,12479 2744,12474 2715,12470 2641,12458
+userdel	2 3033,12509 3188,12524 3279,12533
 userdel	2 3103,11968 3091,12071
 userdel auto	3 3355,12258 3217,12239 3072,12222 2899,12200 2895,12217
 userdel auto	3 2895,12217 2899,12200 3072,12222 3217,12239 3355,12258
@@ -5726,7 +5727,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003108',
        data  => <<EOF,
-userdel	1::inwork 4355,12001 4337,11721
+userdel	1::inwork 4356,12009 4337,11721
 EOF
      },
      { from  => 1156793020, # 2006-08-28 21:23
@@ -6248,7 +6249,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003744',
        data  => <<EOF,
-userdel	1::inwork 4355,12001 4337,11721
+userdel	1::inwork 4356,12009 4337,11721
 EOF
      },
      { from  => $isodate2epoch->("2017-05-12 00:00:00"), # 1 Tag Vorlauf
@@ -8854,7 +8855,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005810',
        data  => <<EOF,
-userdel	2::inwork 1971,12368 1929,12741 1892,13058
+userdel	2::inwork 1969,12375 1929,12741 1892,13058
 userdel	2::inwork 1858,13231 1610,13380 1545,13418
 userdel	2::inwork 931,14268 984,14086 1053,13790 1124,13599
 userdel	2::inwork 1159,13541 1170,13521 1193,13485 1488,13454
@@ -11915,7 +11916,7 @@ userdel auto	3 7849,10488 7689,10514 7478,10612
 userdel auto	3 7160,11225 7103,11247 6851,11346 6692,11365
 userdel auto	3 8102,11099 8000,11137 7828,11133
 userdel auto	3 7058,11809 6980,11790 6778,11742 6540,11754
-userdel auto	3 7539,9970 7579,10183 7698,10147
+userdel auto	3 7526,9969 7579,10183 7698,10147
 userdel auto	3 6745,10619 6753,10446 6719,10347
 userdel auto	3 9373,12197 9164,12172 9183,12076
 userdel auto	3 6468,10550 6532,10529 6494,10440
@@ -11924,7 +11925,7 @@ userdel auto	3 6929,10852 6918,10858 6824,10904 6681,10959
 userdel auto	3 9462,12481 9475,12365 9489,12263
 userdel auto	3 7115,11220 6880,11110 6841,11114
 userdel auto	3 6841,11114 6880,11110 7115,11220
-userdel auto	3 7698,10147 7579,10183 7539,9970
+userdel auto	3 7698,10147 7579,10183 7526,9969
 userdel auto	3 7384,10127 7413,10244 7429,10366
 userdel auto	3 7003,10513 7033,10396 7245,10499 7281,10510
 userdel auto	3 8232,11414 8226,11458 8172,11679
@@ -12309,7 +12310,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009598',
        data  => <<EOF,
-userdel	2::inwork 2152,12389 2193,12393
+userdel	2::inwork 2151,12397 2192,12402
 EOF
      },
      { from  => 1218578400, # 2008-08-13 00:00
@@ -15620,7 +15621,7 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: tempex: (mo,th) T08-T13
-	q4::temp:clock 3763,12279 3726,12273 3699,12290
+	q4::temp:clock 3761,12298 3726,12273 3699,12290
 EOF
      },
      { from  => undef, #
@@ -15940,7 +15941,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_013988',
        data  => <<EOF,
-userdel	2::inwork 2414,12418 2280,12403 2193,12393 2152,12389
+userdel	2::inwork 2411,12428 2279,12412 2192,12402 2151,12397
 EOF
      },
      { from  => 1251833280, # 2009-09-01 21:28
@@ -16668,7 +16669,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014394',
        data  => <<EOF,
-userdel	q4::temp 7201,8870 7107,9030 7035,9161 7012,9222 7001,9291 7130,9316 7202,9329 7418,9366 7479,9357
+userdel	q4::temp 7201,8870 7107,9030 7035,9161 7012,9222 7001,9291 7130,9316 7202,9329 7418,9366 7471,9360
 EOF
      },
      { from  => 1255644000, # 2009-10-16 00:00
@@ -21432,7 +21433,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130424.1240.383903.html',
        data  => <<EOF,
 #: source_id: IM_019774 vvv
-userdel	q4::inwork; 4355,12001 4441,12185 4518,12355
+userdel	q4::inwork; 4356,12009 4441,12185 4518,12355
 # REMOVED (dieser Abschnitt für Anlieger befahrbar) --- userdel	q4::inwork; 4518,12355 4598,12501
 # REMOVED (geraten, wahrscheinlich passierbar) --- userdel auto	3 4602,12313 4518,12355 4358,12365
 # REMOVED (geraten, wahrscheinlich passierbar) --- userdel auto	3 4358,12365 4518,12355 4602,12313
@@ -21776,8 +21777,8 @@ EOF
        text  => 'Spandauer Damm zwischen Sophie-Charlotten-Str. und Otto-Suhr-Allee: wegen des Obama-Besuchs möglicherweise nicht passierbar, 19. Juni 2003 von 12 bis 23 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 2414,12418 2643,12453
-userdel	2::temp 3280,12512 3189,12519 3034,12502 2786,12473 2745,12467 2717,12463
+userdel	2::temp 2411,12428 2641,12458
+userdel	2::temp 3279,12533 3188,12524 3033,12509 2785,12479 2744,12474 2715,12470
 EOF
      },
      { from  => 1371358800, # 2013-06-16 07:00
@@ -21828,7 +21829,7 @@ EOF
        data  => <<EOF,
 #: tempex: YYYY0316-YYYY1014 T21-T06, YYYY1015-YYYY0315 T18-T06 vvv
 Kleistpark	2::night 7209,9507 7275,9506 7307,9528 7351,9503 7386,9502 7414,9523 7430,9576 7416,9625 7391,9645 7347,9644 7310,9622 7277,9652 7216,9657
-Kleistpark	2::night 7430,9576 7501,9573 7520,9572
+Kleistpark	2::night 7430,9576 7501,9573 7512,9572
 #: tempex ^^^
 EOF
      },
@@ -24310,7 +24311,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.312630.php',
        data  => <<EOF,
-userdel	2::inwork -6474,5144 -6366,5215 -6280,5176 -6037,5371 -5924,5602 -5911,5619 -5853,5674 -5828,5739 -5737,5814 -5382,5948 -5315,5991 -5277,5993 -5254,6005 -4991,6109 -4950,6139 -4835,6220 -4792,6348 -4789,6422 -4774,6514
+userdel	2::inwork -6474,5144 -6366,5215 -6280,5176 -6037,5371 -5932,5556 -5924,5602 -5911,5619 -5853,5674 -5828,5739 -5737,5814 -5382,5948 -5315,5991 -5277,5993 -5254,6005 -4991,6109 -4950,6139 -4835,6220 -4792,6348 -4789,6422 -4774,6514
 EOF
      },
      { from  => undef,
@@ -25109,11 +25110,11 @@ EOF
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.582287.php (Fertigstellung)
 #: note: hier zurzeit (2016-10-08) nicht gesperrt
-	2::inwork -3529,13452 -3546,13503 -3556,13582 -3543,13691
+	2::inwork -3529,13452 -3546,13503 -3556,13582 -3544,13692
 #: note: hier zurzeit (2016-10-08) gesperrt
 #: osm_watch: way id="445422415" version="1"
-	2::inwork -3543,13691 -3503,13773
-# REMOVED (hier fertig) --- #: note: hier zurzeit (2016-05-16) komplett gesperrt --- 2::inwork -3503,13773 -3460,13828 -3459,13846 -3390,13940 -3345,13994
+	2::inwork -3544,13692 -3504,13775
+# REMOVED (hier fertig) --- #: note: hier zurzeit (2016-05-16) komplett gesperrt --- 2::inwork -3504,13775 -3493,13781 -3460,13828 -3459,13846 -3390,13940 -3345,13994
 	2::inwork -3494,13980 -3390,13940
 EOF
      },
@@ -25699,9 +25700,10 @@ EOF
        data  => <<EOF,
 #: XXX Wann sind die Bauarbeiten beendet? Wird die Qualität danach besser sein? vvv
 #: osm_watch: way id="136814135" version="15" vvv
-#: last_checked: 2017-07-11 vvv
+#: last_checked: 2017-07-15 vvv
 #: check_frequency: 14d vvv
-userdel	2::inwork 3332,12742 3396,12741 3358,12718
+# REMOVED (hier nicht) --- userdel	2::inwork 3332,12742 3396,12741
+# REMOVED (hier nicht) --- userdel	2::inwork 3396,12741 3358,12718
 userdel	2::inwork 3396,12741 3476,12735 3582,12704 3654,12672 3763,12624 3837,12618
 userdel	2::inwork 3741,12607 3654,12672
 #: check_frequency ^^^
@@ -26127,8 +26129,8 @@ EOF
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-07-12
-#: check_frequency: 7d
+#: last_checked: 2017-07-15
+#: check_frequency: 14d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },

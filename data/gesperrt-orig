@@ -95,7 +95,7 @@ Kurt-Schumacher-Damm (Süd)	1 2831,14219 2803,14288 2793,14374 2905,14754
 Kurt-Schumacher-Damm (Süd)	1 2963,14752 2847,14356 2857,14222
 Kurt-Schumacher-Damm (Nord)	1 3564,16294 3643,16437 3676,16497 3753,16638 3853,16825 3940,16861
 Kurt-Schumacher-Damm (Nord)	1 3940,16861 3788,16621 3711,16481 3585,16252
-Ferdinand-Friedensburg-Platz	1 -914,14602 -1357,14533 -1392,14527 -1508,14508 -1369,14644 -1119,14659 -925,14631
+Ferdinand-Friedensburg-Platz	1 -914,14602 -1357,14533 -1392,14527 -1484,14513 -1369,14644 -1119,14659 -925,14631
 Falkenseer Platz	1 -3352,14676 -3368,14723 -3355,14764 -3295,14777 -3251,14741 -3247,14713 -3255,14685 -3301,14669 -3352,14676
 Alt-Müggelheim	1 28317,891 28188,962 28094,1090 28225,1009 28317,891
 Prenzlauer Promenade	2 12008,19613 12040,19725 11907,19749
@@ -467,7 +467,7 @@ Planetenstr.	1 15175,7221 15056,7198 14951,7163
 Wustermarker Str.	1 -5097,14599 -5111,14486 -5004,14454 -4981,14442 -4755,14393
 Gartenstr. (Köpenick)	1 22419,4457 22382,4361 22362,4331 22302,4255 22279,4220
 Spitzerstr.	1 22319,4197 22358,4282 22385,4317 22425,4370 22451,4441
-Zitadellenweg/BMW-Betriebswerk	2 -1993,14594 -1768,14605 -1616,14527
+BMW-Betriebswerk	2 -1993,14594 -1768,14605 -1564,14489
 #: by: rr riva w.m.s:
 Heimat	1 1032,1325 994,1485 968,1479 941,1603
 #: by: MIchael Wedel:
@@ -1058,7 +1058,7 @@ Aristotelessteig	1s:q2 18496,9628 18527,9623 18660,9599
 Hügelschanze	1 -3881,15589 -3982,15577
 Beim Pfarrhof	1 -7292,14811 -7304,14567
 #: note: Weg ist nur noch Anwohnern vorbehalten (hoher Zaun, abgeschlossenes Tor)
-(Roedeliusweg - Heerstr.)	2 -4431,11779 -4437,11919
+(Roedeliusweg - Heerstr.)	2 -4431,11779 -4438,11910
 #: by: ^^^
 #: note: interpoliert
 Am Kleinen Platz	1 -7248,14826 -7292,14811
@@ -1487,7 +1487,7 @@ Hauptstr.: Straßenbahntrasse	3nocross 16004,10204 16114,10123 16138,10105 16187,
 Kniprodestr.: Grünstreifen	3nocross 13644,14915 13744,15018 13823,15111
 An der Wuhlheide: Mittelstreifen	3nocross 19578,6165 19405,6276 19276,6359
 Heerstr.: nicht überquerbar	3nocross 504,11243 571,11255 704,11273
-Heerstr.: Mittelstreifen	3nocross -4076,11810 -4031,11796 -3707,11693
+Heerstr.: Mittelstreifen	3nocross -4078,11800 -4033,11786 -3820,11721 -3708,11686
 #: by: Sabine (schaeffler)
 Altstädter Ring: Mittelstreifen	3nocross -3481,14523 -3498,14413 -3501,14365 -3506,14306
 #: by: Juliane (alberts...)
@@ -1669,7 +1669,7 @@ Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 11709,14856 11609,14881 1
 Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 12317,14535 12123,14643 12025,14695
 Torstr.: Mittelstreifen mit Straßenbahn	3nocross 10746,13673 10640,13700 10569,13719 10463,13747
 Yorckstr.: Linksabbiegen verboten (und unbequem)	3nocross 8192,9619 8097,9650 7938,9694
-Hauptstr./Kleistpark: unbequemes Überqueren, stark befahrene Straße	3nocross 7517,9454 7520,9572 7526,9791
+Hauptstr./Kleistpark: unbequemes Überqueren, stark befahrene Straße	3nocross 7507,9458 7512,9572 7518,9791
 An den Treptowers: unbequemes Überqueren, stark befahrene Straße	3nocross 14501,10169 14405,10027 14289,9870
 Lichtenberger Str.: Mittelstreifen	3nocross 12028,12519 12006,12464 11920,12266
 Sachsendamm: unbequem passierbarer Mittelstreifen	3nocross 7696,7562 7859,7486 7946,7411
@@ -1701,7 +1701,7 @@ Lichtenberger Brücke: unbequemes Passieren des Mittelstreifens (Bordsteine, star
 Kolonnenstr.: Mittelinsel mit Geländer	3nocross 7709,8777 7642,8815 7563,8871
 Mollstr.: Straßenbahntrasse	3nocross 11451,13301 11526,13252 11560,13232 11681,13161
 #: by: Andreas Mühlhausen: vvv
-Heerstr.: schlecht passierbar	3nocross -4076,11810 -4031,11796 -3707,11693
+Heerstr.: schlecht passierbar	3nocross -4078,11800 -4033,11786 -3820,11721 -3708,11686
 Thielallee: nicht passierbarer Mittelstreifens	3nocross 2560,5044 2587,4965 2615,4885
 Mollstr.: Straßenbahntrasse	3nocross 11451,13301 11409,13327 11308,13389 11276,13408
 Otto-Braun-Str.: Straßenbahntrasse	3nocross 11706,13635 11652,13564 11561,13451 11539,13425 11486,13350 11451,13301
@@ -1795,7 +1795,7 @@ Hasenheide: Mittelstreifen	3nocross 11500,9116 11550,9104 11629,9086
 Kiepenheuerallee: Straßenbahntrasse	3nocross -13311,462 -13203,434 -13157,394
 #: by: Stefan Klinkusch: vvv
 Wilhelmstr.: Mittelstreifen	3nocross -3824,13350 -3813,13404 -3803,13464
-Heerstr.: Mittelstreifen	3nocross -4895,12066 -4637,11982 -4500,11937
+Heerstr.: Mittelstreifen	3nocross -4903,12055 -4639,11973 -4503,11930
 #: by: ^^^
 Klosterstr.: Mittelstreifen	3nocross -3803,13464 -3789,13519 -3764,13613
 Klosterstr.: Mittelstreifen	3nocross -3625,13889 -3678,13801 -3690,13776 -3716,13724
@@ -2394,7 +2394,7 @@ Tor	BNP:1::trailer=3 10483,14720
 Tor	BNP:1::trailer=3 10476,14741
 Schranke, lichte Breite 120cm	BNP:1::trailer=3 -7685,15092
 Poller, lichte Breite 100cm	BNP:1::trailer=5 -7109,15286
-Schranke	BNP:1::trailer=5 -3300,14039
+# REMOVED (ex. nicht mehr?) --- Schranke	BNP:1::trailer=5 -3300,14039
 weites Drängelgitter	BNP:1::trailer=5 -3437,14029
 Drängelgitter	BNP:3::trailer=10 7928,10094
 # XXX_prog kann entfernt werden, sobald temp_blockings mit BNP umgehen kann, siehe Eintrag dort
@@ -2774,6 +2774,29 @@ Schranke	BNP:3::trailer=10 17215,12485
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: http://www.berliner-woche.de/kladow/verkehr/ausbau-des-havel-radwegs-d128132.html
+#: by: https://gruen-berlin.de/projekt/havel-radweg
+#: osm_watch: note 1050400 2
+#: last_checked: 2017-07-15
+#: next_check: 2017-10-01
+#: priority: #A
+Gutspark Neukladow: Bauarbeiten, Weg komplett gesperrt	2::inwork -6366,5215 -6198,5357
+# 
+#: next_check_id: PARKVIERTELKLADOW-2017 vvv
+#: last_checked: 2017-07-15 vvv
+#: check_frequency: 120d vvv
+#: XXX wie wird die Qualität nach den Bauarbeiten sein? Wird der hintere Teil für Autos befahrbar sein?
+#: osm_watch: way id="85900650" version="6"
+Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -6556,6663 -6661,6743
+#: XXX wird der Fahrbahnbelag tatsächlich Asphalt sein?
+#: osm_watch: way id="225000896" version="1"
+An den Parkbäumen: Bauarbeiten, Fahrbahn gesperrt	2::inwork -6530,6699 -6556,6663
+#: XXX wie wird der Fahrbahnbelag sein?
+Parkrosenweg: Bauarbeiten	2::inwork -6530,6699 -6381,6587
+#: check_frequency ^^^
+#: last_checked ^^^
+#: next_check_id ^^^
+# 
 #: next_check_id: ENGLISCHESTR-2017
 #: by: http://www.dafmap.de/d/berlin.html?id=5241&mt=0&zoom=17 vvv
 #: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01
@@ -2792,7 +2815,7 @@ Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:q3 5518,12159 5627,12105
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8103
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036562139600/562139600/00280921/21-Anlagen/01/DS0329_VzK_Strassenbenennung_Moeckernkiez_fina.pdf
 #: XXX Qualität, genaue Lage, Sackgasse?
-#: last_checked: 2017-07-03
+#: last_checked: 2017-07-15
 #: next_check: 2017-11-15
 Möckernkiez: Bauarbeiten	2::inwork 8778,9759 8741,9741 8729,9670 8587,9590 8566,9643
 # 
@@ -2843,7 +2866,7 @@ Karower Str.: temporäre Einbahnstraßenregelung	1s:q3 16593,25640 16632,25512 166
 Mauerweg: Bauarbeiten, gesperrt	2::inwork 7939,14447 7889,14519
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3192&mt=0&zoom=16 (Geplanter Projektabschluss: 2018-03-31)
-#: last_checked: 2017-03-25
+#: last_checked: 2017-07-15
 #: check_frequency: 120d
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt	1s:q3 5192,10234 5196,10398
 # 
@@ -3056,13 +3079,13 @@ Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, fü
 #: by: Stefan Klinkusch: "gesperrt" vvv
 #: source_id: INKO_118000 vvv
 #: osm_watch: way id="25115001" version="8" vvv
-#: last_checked: 2016-10-08 vvv
-#: next_check: 2017-06-01 vvv
+#: last_checked: 2017-07-15 vvv
+#: check_frequency: 60d vvv
 # REMOVED (doch benutzbar) --- (Baustraße an der Freybrücke)	2::inwork -3075,11510 -3197,11554
 # REMOVED (vermutlich nun benutzbar?) --- (Treppe an der Freybrücke)	2::inwork -3181,11496 -3177,11507 -3173,11520
 #: XXX Ersatzbrücke muss demontiert werden; vermutlich weiterhin keinen Zugang
 Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3217,11570
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: osm_watch ^^^
 #: source_id ^^^
@@ -3184,7 +3207,7 @@ Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)
 #: source_id: 2147340791
-#: last_checked: 2017-07-11
+#: last_checked: 2017-07-15
 #: next_check: 2018-12-01
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
 # 
@@ -3221,7 +3244,7 @@ Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,2
 # 
 #: note: Baugelände
 #: osm_watch: way id="33036326" version="6"
-#: last_checked: 2017-05-17
+#: last_checked: 2017-07-15
 #: check_frequency: 180d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
@@ -3248,7 +3271,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2017-07-14
+#: last_checked: 2017-07-15
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
@@ -3406,8 +3429,8 @@ Bollmannweg	1 -4431,11779 -4310,11770
 Weinmeisterhornweg	1s -4798,11231 -4581,11183
 #: note: keine Verbindung zur südlichen Nebenfahrbahn
 Heerstr.	3nocross -1523,11012 -1288,11037 -1050,11061
-Heerstr.	3nocross -4500,11937 -4437,11919 -4310,11882
-Heerstr.	3nocross -4310,11882 -4278,11873 -4076,11810
+Heerstr.	3nocross -4503,11930 -4438,11910 -4311,11872
+Heerstr.	3nocross -4311,11872 -4279,11862 -4078,11800
 #: XXX_prog: Treppe with two points: -4768,11016 -4836,11028
 tragen/schieben (40 Stufen, Rampe)	0:120 -4768,11016
 #: confirmed_by: srt
@@ -3426,13 +3449,13 @@ Heerstr.	3nocross -1050,11061 -848,11086 -779,11093 -733,11098 -593,11119
 Heerstr.	3nocross -593,11119 -511,11127 -406,11141 -360,11145 -82,11178
 Heerstr.	3nocross -82,11178 16,11190 229,11213 438,11236 504,11243
 tragen (20 Stufen)	0:30 23,11137
-Lerschpfad	1 2181,12276 2152,12389
+Lerschpfad	1 2181,12276 2151,12397
 Gottfried-Keller-Str.	1 1697,11911 1792,11889
 tragen (5 Stufen)	0:20 3829,13572
 Schranke	BNP:5 3969,13405
 Tor (meist offen, sonst Fußgängerweg nehmen)	BNP:5 3822,14195
 Wiebestr.: Privatweg, verschlossenes Tor	2 4527,13244 4495,13107
-Spandauer Damm: queren nur mit tragen möglich	3nocross 3034,12502 3189,12519 3280,12512
+Spandauer Damm: queren nur mit tragen möglich	3nocross 3033,12509 3188,12524 3279,12533
 Bonhoefferufer	1 3216,12994 3154,12936 3193,12857 3327,12818
 tragen (16 Stufen)	0:40 4124,12706
 tragen (16 Stufen)	0:40 4128,12637
