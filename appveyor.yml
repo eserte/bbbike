@@ -21,7 +21,7 @@ install:
 build_script:
   - perl Makefile.PL
   - cd ext
-  - dmake -f DMakefile ext
+  - gmake -f DMakefile ext
   - cd ..
   - cd t
-  - dmake test-on-windows
+  - gmake test-no-cgi
