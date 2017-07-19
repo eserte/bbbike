@@ -880,7 +880,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736 20755,5750
 #: XXX laut fritz "geänderte Straßenführung" bis 31.12.2016, laut vmz bis Ende Juli 2017
 #: source_id: IM_023718
 #: source_id: 2147339540
-#: last_checked: 2017-06-22 vvv
+#: last_checked: 2017-07-18 vvv
 # REMOVED, siehe unten ---	RW1; 14174,7505 14334,7395 14369,7376
 # REMOVED --- RW2; 14519,7301 --- #: note: vermutlich: --- RW2; 14519,7301
 	RW8;RW2 14519,7301 14369,7376 14334,7395 14174,7505
@@ -1547,7 +1547,7 @@ die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
 	RW3;RW2 14671,10751 14674,10811
 #: next_check_id: HAUPTSTR-2015
 #: XXX wegen Bauarbeiten teilweise aufgehoben, früher RW4;RW4
-#: last_checked: 2017-07-04
+#: last_checked: 2017-07-18
 #: check_frequency: 30d
 	RW0;RW0 14674,10811 14717,10855
 	RW1;RW1 14652,10201 14688,10167 14705,10149 14747,10108 14817,10031
@@ -2486,7 +2486,8 @@ Radweg nur aufgemalt	RW1; 6843,16346 6629,16538 6489,16658
 	RW1;RW1 2997,4378 3037,4500 3095,4680 3119,4762 3132,4803 3185,4894 3260,5023 3357,5178 3426,5292 3580,5552 3707,5758
 	RW2;RW2 11456,6103 11522,6160
 	RW2;RW1 11522,6160 11628,6240
-	RW1;RW1 11628,6240 11740,6338
+	RW1;RW1 11628,6240 11697,6300
+	RW1; 11697,6300 11740,6338
 	RW1;RW1 9732,3883 9751,3769
 	RW6;RW6 3981,11232 4101,11233 4176,11235 4302,11232
 	RW6;RW6 4786,18168 4690,18185 4609,18199
@@ -4636,8 +4637,9 @@ Tempo 10	RW6;RW6 13559,12779 13470,12990
 #: next_check_id: KANTSTR-2017
 #: XXX wegen Bauarbeiten am Hochhaus "Upper West" sind die Radspuren aufgehoben
 #: by: http://www.tagesspiegel.de/berlin/stadtentwicklung-zwillingsturm-soll-2016-in-der-city-west-eroeffnen/7416454.html (geplante Eröffnung Mitte 2016)
+#: source_id: 2147341048
 #: last_checked: 2017-07-03
-#: next_check: 2017-07-15
+#: next_check: 2017-08-18
 #	RW3; 5488,10978 5613,10963 5652,11004
 ##: note: teilweise vor dem Hotel unterbrochen (wegen Ladezone?)
 #	RW3; 5652,11004 5613,10963 5488,10978
@@ -4911,3 +4913,4 @@ Gehweg für Radfahrer frei	RW1; 13104,16522 12857,16627 12713,16682
 	RW6;RW6 23021,13982 22987,13989
 	RW6;RW6 22981,13966 22987,13989 23006,14060
 asphaltiert	RW9;RW1 12325,13148 12382,13097
+	RW6;RW6 11610,3891 11567,4085 11563,4099 11547,4127 11500,4218 11486,4321 11484,4336

@@ -1171,6 +1171,7 @@ Karlplatz	1 8676,12976 8711,12986
 Hundsfelder Str.	1 21898,-303 21811,-409 21700,-537 21688,-589
 Joachim-Karnatz-Allee	1 7175,12630 7187,12598 7418,12601
 Joachim-Karnatz-Allee	1 7419,12584 7144,12580 7142,12584 7131,12615
+Waldkraiburger Str.: Betriebsgel‰nde	2 12283,4971 12468,5000
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -2919,7 +2920,7 @@ Chausseestr.: Baustelle, Einbahnstraﬂenregelung	1s:q4 8654,14194 8607,14253 8527
 #: next_check_id ^^^
 # 
 #: by: http://www.s-bahn-berlin.de/bauinformationen/details/rummelsburg/4530 vvv
-#: last_checked: 2017-07-04 vvv
+#: last_checked: 2017-07-16 vvv
 # REMOVED (offen) --- (Unterf¸hrung S-Bhf. Rummelsburg): Bauarbeiten, komplett gesperrt	2::inwork 15433,10765 15409,10709 15372,10655
 Nˆldnerstr.: Bauarbeiten, Einbahnstraﬂe	1s:q4 15272,10790 15388,10758 15433,10765
 #: last_checked ^^^
@@ -2944,7 +2945,7 @@ Nordhafenpark West: w‰hrend der Umgestaltung gesperrt	2::inwork 7636,14414 7612,
 #: check_frequency: 60d
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 # 
-#: last_checked: 2017-06-29
+#: last_checked: 2017-07-16
 Corinthstr.: Baustelle, Einbahnstraﬂenregelung	1s:q2 14447,10491 14270,10584
 # 
 # REMOVED (mittlerweile schon passierbar) --- #: next_check_id: MARIANNEN-2016 vvv --- #: source_id: INKO_2147340291_COPY_1 vvv --- #: source_id: 2147340291 vvv --- #: source_id: 2147340768 vvv --- # REMOVED (aufgehoben) --- #: priority: #A vvv --- #: XXX laut fritz bis 16.12.2016 --- #: last_checked: 2016-12-15 vvv --- #: next_check: 2017-01-10 vvv --- Mariannenstr.: Baustelle, Einbahnstraﬂenregelung	1s:q2 11512,10105 11616,10288 --- #: source_id: 2147340777 --- #: XXX laut fritz bis 10.01.2017 --- #: priority: #A --- #: last_checked: 2016-12-15 --- #: check_frequency: 7d --- Mariannenstr.: Baustelle, Fahrbahn gesperrt	2s:q3 11671,10402 11616,10288
@@ -3015,7 +3016,7 @@ Nalepastr.: wegen Straﬂenbau gesperrt	2::inwork 17190,7306 17211,7280 17219,7268
 # REMOVED (fertig) --- #: next_check_id: FISCHERINSEL-2015 vvv --- #: source_id: 2147339543 vvv --- #: last_checked: 2016-12-16 vvv --- #: next_check: 2016-12-22 vvv --- M‰rkisches Ufer - Neue Roﬂstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 --- Neue Roﬂstr. - M‰rkisches Ufer: wegen Bauarbeiten gesperrt	3 10687,11853 10869,11949 --- M‰rkisches Ufer - Neue Roﬂstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10672,11870 --- Neue Roﬂstr. - M‰rkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,11853 10869,11949
 # 
 #: next_check_id: DIESEL-2015
-#: last_checked: 2017-06-03
+#: last_checked: 2017-07-18
 #: check_frequency: 60d
 Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 14471,8046
 # 
@@ -3127,7 +3128,7 @@ Kirchdorfer Str.: Straﬂe fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 # 
 #: by: http://www.dafmap.de/d/berlin.html?center=52.497318+13.462016&zoom=17#
-#: last_checked: 2017-06-02
+#: last_checked: 2017-07-16
 #: check_frequency: 120d
 am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14463,10212
 # 
@@ -3158,8 +3159,9 @@ Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: Durchfahrt noch nicht zuverl‰ss
 # 
 # REMOVED --- #: next_check_id: STERNDAMM-2016 --- #: by: fritz --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160124 --- #: source_id: 2147339574 --- #: source_id: IM_026665 --- #: source_id: 2147340122 --- #: source_id: LMS-BR_r_LMS-BR_68908 --- #: last_checked: 2016-06-26 --- #: check_frequency: 90d --- #: priority: #A --- #: XXX Gesamtmaﬂnahme bis 2018 (oder 2017?) --- 
 #: XXX laut Fritz bis April 2018
-#: next_check: 2018-04-01
-#: valid: -20180401
+#: source_id: 2147341515	
+#: next_check: 2018-04-15
+#: valid: -20180415
 #: priority: #A
 Sterndamm: Eisenbahnunterf¸hrung in Richtung Groﬂ-Berliner Damm/S¸dostallee gesperrt	1::inwork 17886,5587 17736,5441
 # 

@@ -63,31 +63,7 @@ userdel	2::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 1117
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.stadtfest.berlin/de/index.html
-	2::temp 6499,10086 6609,10147 6626,10155 6729,10212
-	2::temp 6729,10212 6971,10346
-	2::temp 6628,10318 6626,10155
-	2::temp 6487,10277 6628,10318 6719,10347
-	2::temp 6719,10347 6729,10212 6739,10120
-	2::temp 6609,10147 6630,9990
-',
-         'from' => 1499983200,
-         'id' => 74,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              14,
-                              'months',
-                              6
-                            ]
-                          ],
-         'text' => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (15.7.2017 bis 16.7.2017)',
-         'type' => 'gesperrt',
-         'until' => 1500242399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2772,22 +2748,7 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8592,12252
-userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-userdel	2::temp 8542,11502 8548,11571
-	3 8391,12389 8344,12221 8327,12174
-	3 8327,12174 8344,12221 8391,12389
-	3 8522,12239 8538,12245
-	3 8538,12245 8522,12187
-',
-         'from' => 1500051359,
-         'id' => 2214,
-         'source_id' => '2147341578',
-         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str und Brandenburger Tor gesperrt, auch Ebertstr. zwischen Behrenstr. und Dorotheenstr., Veranstaltung (bis 17.07.2016 ca. 12:00 Uhr)',
-         'type' => 'gesperrt',
-         'until' => 1500285600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2874,26 +2835,7 @@ userdel	2::temp 13552,12435 13543,12326
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	q4::temp; 14499,16341 14346,16241 14248,16202 14056,16120 14015,16103 13826,16026 13737,15994 13623,15954 13512,15909
-',
-         'from' => 1499896800,
-         'id' => 2275,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              9,
-                              'months',
-                              7
-                            ]
-                          ],
-         'source_id' => 'http://www.weissenseer-blumenfest.de',
-         'text' => 'Berliner Allee (Weißensee): Veranstaltung (Weißenseer Blumenfest), Fahrtrichtung gesperrt stadteinwärts vom Weißen See bis zum Antonplatz, 14.7.2017 bis 16.7.2017',
-         'type' => 'handicap',
-         'until' => 1500242399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3696,17 +3638,7 @@ userdel	2::temp 5857,13342 5868,13441 5882,13548
        },
        undef,
        undef,
-       {
-         'data' => '#: by: fritz
-userdel	2::inwork 17886,5587 17736,5441
-',
-         'from' => 1499392800,
-         'id' => 2684,
-         'source_id' => '2147341514',
-         'text' => 'Sterndamm: Eisenbahnunterführung voll gesperrt, 08.07.2017 bis 17.07.2017, danach Einbahnstraßenregelung',
-         'type' => 'gesperrt',
-         'until' => 1500271200
-       },
+       undef,
        undef,
        {
          'data' => '#: tempex: th & T10:00-T20:30
@@ -3899,16 +3831,7 @@ userdel	2::night 16196,18364 16315,18208
        undef,
        undef,
        undef,
-       {
-         'data' => '#: last_checked: 2016-06-26
-	2::inwork 16041,3718 16003,3652
-',
-         'from' => undef,
-         'id' => 2786,
-         'text' => 'Melissenweg: Bauarbeiten, Weg komplett gesperrt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3931,7 +3854,8 @@ userdel	2::night 16196,18364 16315,18208
        undef,
        undef,
        {
-         'data' => '# note: laut fritz bis 2017-09-15, laut vmz bis 2018
+         'data' => '#: note: laut fritz bis 2017-09-15, laut vmz bis 2018
+#: by: http://www.berliner-woche.de/buckow/verkehr/der-lange-weg-zur-sanierten-strasse-bauarbeiten-am-buckower-damm-anwohner-aergern-sich-ueber-lkw-im-wohngebiet-d126968.html
 userdel	q4::inwork 12911,1815 12817,2031
 ',
          'from' => 1467661160,
@@ -4161,7 +4085,7 @@ userdel	2::inwork 6815,8691 6912,8617
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2017-07-15
+         'data' => '#: last_checked: 2017-07-16
 #: check_frequency: 14d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',

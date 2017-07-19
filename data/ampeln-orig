@@ -2766,7 +2766,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: SONNENALLEE-2014 vvv
 #: osm_watch: node id="4006030833" version="2"
-#: last_checked: 2017-06-08 vvv
+#: last_checked: 2017-07-18 vvv
 #: note: Radfahrer in Richtung Nordwesten müssen die Seite wechseln, hier Anforderungsampel
 	X::inwork 14174,7505
 # REMOVED -- #: note: Baustellenstraße kreuzt ---	X::inwork 14369,7376
@@ -2896,10 +2896,10 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id: HAUPTSTR-2015 vvv
 #: note etwas weiter südlich gelegen
 #: XXX allerdings nicht immer in Betrieb (z.B. nicht 2017-03-03 abends)
-#: last_checked: 2017-07-04
+#: last_checked: 2017-07-18
 	F::inwork 14674,10811
 #: XXX Zebrastreifen außer Betrieb; wie wird es nach den Bauarbeiten aussehen?
-#: last_checked: 2017-07-04
+#: last_checked: 2017-07-18
 	F::inwork 14794,10844
 #: next_check_id ^^^
 # 
@@ -3060,7 +3060,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -12653,-1723
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
 #: next_check_id: KIEFHOLZ-2015 vvv
-#: last_checked: 2017-06-29 vvv
+#: last_checked: 2017-07-18 vvv
 #: check_frequency: 90d vvv
 	X::inwork 14151,8967
 	X::inwork 14363,8738
@@ -3072,11 +3072,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 980,1893
 #: note: Anforderungsampel
 	F 3025,2858
-#: XXX noch eine Baustellenampel, aber eine richtige Ampel scheint in Bau zu sein
-#: source_id: 2147340983
-#: last_checked: 2017-04-09
-#: next_check: 2017-06-30
-	X::inwork 12442,20805
+#: by: kartonage (osm)
+	X 12442,20805
 # 
 ################################################################################
 #: note: Ampeln elsewhere vvv

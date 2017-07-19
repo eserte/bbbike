@@ -23237,7 +23237,7 @@ EOF
 #: source_id: IM_022405
 #: note: Gehweg ist hier relativ breit
 	q3::inwork; 14089,9610 13973,9465 13923,9405
-	q4::inwork; 13923,9405 13849,9310 13760,9188
+	q4::inwork; 13923,9405 13849,9310 13766,9200
 	q4::inwork; 13489,9456 13602,9581 13642,9624 13865,9866
 EOF
      },
@@ -25235,11 +25235,11 @@ userdel	2::temp 8371,13399 8363,13402 8356,13404
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1500397414, # undef, # XXX
        text  => 'Melissenweg: Bauarbeiten, Weg komplett gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2016-06-26
+# REMOVED --- #: last_checked: 2016-06-26
 	2::inwork 16041,3718 16003,3652
 EOF
      },
@@ -25461,7 +25461,8 @@ EOF
        type  => 'handicap',
        source_id => '2147341551',
        data  => <<EOF,
-# note: laut fritz bis 2017-09-15, laut vmz bis 2018
+#: note: laut fritz bis 2017-09-15, laut vmz bis 2018
+#: by: http://www.berliner-woche.de/buckow/verkehr/der-lange-weg-zur-sanierten-strasse-bauarbeiten-am-buckower-damm-anwohner-aergern-sich-ueber-lkw-im-wohngebiet-d126968.html
 userdel	q4::inwork 12911,1815 12817,2031
 EOF
      },
@@ -26129,7 +26130,7 @@ EOF
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-07-15
+#: last_checked: 2017-07-16
 #: check_frequency: 14d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF

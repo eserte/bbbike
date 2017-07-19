@@ -21,7 +21,7 @@ Dieselstr., Umfahrung: unbefestigt	Q2 14429,8074 14471,8046
 #: next_check_id ^^^
 # 
 #: next_check_id: SONNENALLEE-2014
-#: last_checked: 2017-06-22
+#: last_checked: 2017-07-18
 Sonnenallee: unebener, provisorischer Asphalt auf dem Radweg	Q2+ 14174,7505 14334,7395 14369,7376 14519,7301
 # 
 #: temporary ^^^
@@ -144,7 +144,7 @@ Am Landwehrkanal: Parkweg, Schotterstellen, bei Regen groﬂe Pf¸tzen	Q1- 12905,94
 Am Landwehrkanal: Asphalt, einige Wurzelhebungen	Q0- 13109,9743 13225,9897
 Am Landwehrkanal: Parkweg	Q1 13225,9897 13271,9927 13333,9929
 Innstr.: Kopfsteinpflaster (m‰ﬂig bis schlecht)	Q2- 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
-Elsenstr.: Asphalt	Q0 13402,8741 13456,8809 13507,8872 13661,9069 13760,9188
+Elsenstr.: Asphalt	Q0 13402,8741 13456,8809 13507,8872 13661,9069 13766,9200
 #: note: gepflasterter Parkstreifen
 Herrfurthstr.: Asphalt	Q0 11979,8014 11833,7980 11754,7964
 #: note: gepflasterter Parkstreifen
@@ -283,7 +283,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (hier wird auch eine Einbahnstraﬂenregelung erw‰hnt, hoffentlich nur f¸r Autos! -> realisiert)
 #: source_id: INKO_2147340291_COPY_1
 #: source_id: 2147340291
-#: last_checked: 2017-07-15
+#: last_checked: 2017-07-18
 #: check_frequency: 120d
 Mariannenstr: m‰ﬂiges bis gutes Kopfsteinpflaster, 25 km/h mˆglich	Q1- 11512,10105 11616,10288
 Mariannenstr: Asphalt	Q0 11616,10288 11671,10402
@@ -367,8 +367,8 @@ Adalbertstr.: Kopfsteinpflaster	Q2; 11808,11482 11726,11265 11656,11106
 #: XXX Ausbau des Kopfsteinpflasters, Bau einer Asphaltfahrbahn 
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2018-2022)
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (Radweg wird Gehweg)
-#: last_checked: 2017-05-21
-#: next_check: 2018-03-01
+#: last_checked: 2017-07-18
+#: check_frequency: 180d
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur m‰ﬂiges Verbundsteinpflaster	Q2+ 11607,7145 11617,7083 11652,6879
 Friedelstr.: m‰ﬂiges, teilweise auch schlechtes Kopfsteinpflaster (max. 16 km/h)	Q2- 12066,9558 12047,9429 12074,9217 12078,9065
 Friedelstr.: m‰ﬂiges Kopfsteinpflaster	Q2 12085,9778 12074,9689 12066,9558
@@ -7168,7 +7168,7 @@ Lakenfelderweg: Kopfsteinpflaster	Q2 16085,547 16116,581
 Perlhuhnweg: Asphalt mit Sch‰den	Q1 15952,719 16008,628 16085,547
 Eilenburger Weg: Kopfsteinpflaster	Q2 16142,1141 16126,1112 16221,872
 Igelkolbensteig: Pfad	Q2 15949,3575 16003,3652
-Melissenweg: Asphalt mit Wurzelsch‰den	Q1 16003,3652 16041,3718
+Melissenweg: Verbundsteinpflaster	Q1 16003,3652 16041,3718
 Klausenpaﬂ: Beton	Q0 10271,2603 10368,2575 10390,2571 10507,2548 10693,2513
 Nuthestr.: Asphalt	Q0 10301,-1891 10270,-1890 10251,-1877 10239,-1849
 Nuthestr.: Beton	Q0 10239,-1849 10095,-1482 10048,-1379 9989,-1278 9925,-1106 9849,-911
@@ -14958,7 +14958,7 @@ Lauterberger Str.: Kopfsteinpflaster	Q2 12154,6063 12127,6204
 #: by: ^^^
 # 
 #: by: Sven Voss:
-Waldkraiburger Str.: Asphalt	Q0 12626,5057 12492,4995 12283,4971
+Waldkraiburger Str.: Asphalt	Q0 12626,5057 12468,5000 12283,4971
 # 
 #: by: Verena (kauffmann): vvv
 Illerzeile: m‰ﬂiger Asphalt	Q1 2704,20031 2659,20080 2567,20239 2544,20304 2530,20345 2515,20399
