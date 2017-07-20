@@ -1730,7 +1730,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        {
-         'data' => '	q4::temp 9666,11935 9656,12031
+         'data' => '	q4::temp 9679,11834 9666,11935 9656,12031 9645,12133
 	2::temp 9523,12019 9656,12031
 	2::temp 9536,11922 9666,11935
 ',
@@ -2922,17 +2922,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: (tu,fr) T08-t13
-	q4::temp:clock -3942,12559 -3941,12376
-',
-         'from' => undef,
-         'id' => 2349,
-         'recurring' => 1,
-         'text' => 'Földerichplatz: Wochenmarkt Dienstag und Freitag 8-13 Uhr',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4085,7 +4075,7 @@ userdel	2::inwork 6815,8691 6912,8617
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2017-07-16
+         'data' => '#: last_checked: 2017-07-19
 #: check_frequency: 14d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
@@ -4098,18 +4088,7 @@ userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14
        undef,
        undef,
        undef,
-       {
-         'data' => 'userdel	2::temp 7322,11177 7419,11137 7492,11111 7595,11086 7575,11076 7252,11188 7248,11143 7461,11051 7579,11032 7595,11086 7665,11353
-userdel	2::temp 7435,11514 7322,11177 7253,11208 7356,11517
-userdel	2::temp 7160,11225 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 7218,11181 7140,11156
-',
-         'from' => 1500458400,
-         'id' => 2875,
-         'source_id' => 'http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_27_3021_3144_online.pdf',
-         'text' => 'Straßen rund um das Verteidigungsministerium: Straßensperrungen wegen einer Veranstaltung möglich, 20. Juli 2017 von 12:00 bis 21:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1500577200
-       },
+       undef,
        undef,
        {
          'data' => '#: XXX wird sich die Qualität vielleicht bessern?
@@ -4200,7 +4179,9 @@ userdel	2::inwork 4561,13244 4547,13139 4576,13115
          'until' => undef
        },
        {
-         'data' => 'userdel	q4::inwork 854,24387 836,24440 813,24497 790,24556 784,24612 790,24698 808,24790 811,24833 793,24943 785,24968
+         'data' => '#: source_id: 2147341585
+#: note: laut vmz bis Ende 08/17, laut fritz bis 2017-08-25
+userdel	q4::inwork 854,24387 836,24440 813,24497 790,24556 784,24612 790,24698 808,24790 811,24833 793,24943 785,24968
 ',
          'from' => 1500156000,
          'id' => 2885,
@@ -4208,6 +4189,18 @@ userdel	2::inwork 4561,13244 4547,13139 4576,13115
          'text' => 'Am Eichenhain: Bauarbeiten zwischen Sigismundkorso und Karmeliterweg, Fahrbahn gesperrt, vom 17.07.2017 bis 20.11.2017',
          'type' => 'handicap',
          'until' => 1511218800
+       },
+       {
+         'data' => '#: by: http://www.tagesspiegel.de/berlin/bezirke/spandau/berlin-spandau-ein-wochenmarkt-schliesst-ein-anderer-oeffnet/19717792.html#
+	q4::temp:clock 1184,14515 1262,14510
+',
+         'from' => undef,
+         'id' => 2886,
+         'recurring' => 1,
+         'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.612866.php',
+         'text' => 'Jugendweg: Wochenmarkt Dienstag 12-18 Uhr',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

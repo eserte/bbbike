@@ -283,7 +283,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (hier wird auch eine Einbahnstraßenregelung erwähnt, hoffentlich nur für Autos! -> realisiert)
 #: source_id: INKO_2147340291_COPY_1
 #: source_id: 2147340291
-#: last_checked: 2017-07-18
+#: last_checked: 2017-07-20
 #: check_frequency: 120d
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288
 Mariannenstr: Asphalt	Q0 11616,10288 11671,10402
@@ -1157,7 +1157,8 @@ Hauptstr: sandiger und hoplriger Fahrweg	Q3 9675,26957 9583,26769 9577,26725 969
 Hauptstr.: Betonplatten, OK	Q1 9721,26449 9757,26351 9776,26298 9796,26244 9812,26186 9822,26159 9832,26121 9843,26077 9855,26032 9863,26000 9879,25933 9882,25918
 Bauernweg: unbefestigte Straße	Q2 9822,26159 10066,26324
 Hinter dem Gießhaus: Asphalt	Q0+ 9837,12560 9845,12506 9858,12410
-Oberwallstr.: mäßiger Asphalt	Q1+ 9898,12161 9883,12251 9876,12298 9858,12410
+Oberwallstr.: Asphalt	Q0 9898,12161 9883,12251
+Oberwallstr.: mäßiger Asphalt	Q1+ 9883,12251 9876,12298 9858,12410
 Trautenaustr.: Kopfsteinpflaster, OK	Q1 5374,9619 5314,9588 5297,9579
 Krumme Str.: Kopfsteinpflaster	Q2 3981,11232 3986,11347 3988,11502
 Fehrbelliner Str.: Kopfsteinpflaster	Q2 10037,14379 10282,14212
@@ -1705,9 +1706,9 @@ Am Rummelsburger See: glatt gepflastert	Q0- 15200,10600 15249,10564 15322,10513 
 (Rummelsburger Ufer - Emma-Ihrer-Str.): glatt gepflastert	Q0 15453,10419 15550,10361
 Am Rummelsburger See: Parkweg	Q1- 15453,10419 15457,10342 15496,10277 15518,10234 15604,10204 15606,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15914,9858 15931,9846
 Am Rummelsburger See: Betonweg	Q0- 15931,9846 16002,9787 16049,9749
-Am Rummelsburger See: asphaltiert	Q0 16049,9749 16123,9692
+Am Rummelsburger See: asphaltiert	Q0 16049,9749 16119,9689
 Am Rummelsburger See - Hauptstr.: Betonweg	Q0- 16049,9749 16261,9925
-Gustav-Holzmann-Str.: asphaltiert	Q0 16123,9692 16302,9865
+Gustav-Holzmann-Str.: asphaltiert	Q0 16119,9689 16302,9865
 (Rummelsburger Ufer - An den Knabenhäusern): Parkweg	Q1 15604,10204 15621,10214
 Tauchersteig: guter Asphalt	Q0 22058,2649 22047,2662 22011,2658 21879,2592 21770,2535
 Am Kanal: guter Asphalt	Q0 21750,2593 21490,2535 21223,2475 21111,2451
@@ -2857,10 +2858,10 @@ Roedernstr.: Asphalt	Q0 23289,8993 23176,9037 23071,9151 23047,9186 23031,9209
 Klara-Schabbel-Str.: Asphalt mit Schäden	Q1 20705,9979 20527,9961 20337,9948
 Klara-Schabbel-Str.: Beton mit Schäden	Q1 20337,9948 20208,9932
 Lissaer Str.: asphaltiert	Q0 20349,10239 20536,10233 20711,10230
-Georg-Löwenstein-Str.: Asphalt	Q0 16030,9830 16155,9992 16187,10033
-(Rummelsburger Bucht - Georg-Löwenstein-Str.): Asphalt	Q0 16002,9787 16030,9830
+Georg-Löwenstein-Str.: Asphalt	Q0 16038,9837 16155,9992 16187,10033
+(Rummelsburger Bucht - Georg-Löwenstein-Str.): Asphalt	Q0 16002,9787 16038,9837
 Karl-Wilker-Str.: Asphalt, einige Meter gepflastert an der Friedrich-Jacobs-Promenade	Q0- 15952,10134 16066,10054 16155,9992
-Erich-Müller-Str.: Asphalt	Q0 16030,9830 15944,9896 15883,9944 15840,9980
+Erich-Müller-Str.: Asphalt	Q0 16038,9837 15948,9902 15885,9947 15840,9980
 Viehtrift: Asphalt	Q0 14130,12926 14029,12954 14015,12958 13886,12995
 Am Viehhof: Verbundsteinpflaster	Q1+ 14015,12958 13979,12861
 Zur Waage: Asphalt	Q0 14029,12954 14067,13050
@@ -2875,7 +2876,7 @@ Preußstr.: Asphalt	Q0 12327,15333 12367,15396
 (Küselstr. - Prenzlauer Allee, Lidl-Parkplatz): Verbundsteinpflaster	Q1+ 12058,15621 11967,15700
 Wisbyer Str. 9-11: Asphalt	Q0 11289,16423 11255,16313
 Niederlagstr.: Asphalt	Q0 9943,12364 9955,12300 9959,12281 9972,12184
-Werdersche Rosenstr.: Asphalt	Q0 9883,12251 9959,12281
+Werdersche Rosenstr.: Asphalt	Q0 9883,12251 9909,12261 9959,12281
 Müncheberger Str.: mäßiger Asphalt, Bodenschwellen	Q1 12450,11980 12617,11888
 Theodorstr. (Tempelhof): Asphalt	Q0 9321,6079 9291,5908
 Kolonie Albrechtshöhe: wassergebundene Decke	Q1 10260,5953 10215,5959 9955,5993
@@ -3497,7 +3498,7 @@ Klamannstr.: Beton	Q0 5870,18387 5845,18435 5856,18569 5992,18651 6009,18755
 Kienhorststr.: Asphalt	Q0 4070,18695 4163,18676
 Kienhorststr.: Beton	Q0 4163,18676 4340,18636 4458,18613 4637,18595 4756,18589 5324,18560
 Kienhorststr.: Asphalt	Q0 5324,18560 5543,18555
-Gisèle-Freund-Hain: Kopfsteinpflaster	Q2+ 15883,9944 15842,9891
+Gisèle-Freund-Hain: Kopfsteinpflaster	Q2+ 15885,9947 15842,9891
 Elfriede-Tygör-Str.: asphaltiert	Q0 18105,10997 18301,11033
 (Elfriede-Tygör-Str. - Am Tierpark): asphaltiert	Q0 18301,11033 18343,11041
 Criegernweg: schadhafter Asphalt	Q2 18417,10738 18509,10757
@@ -4243,7 +4244,7 @@ Straße 16 (Baumschulenweg): Beton	Q0 14668,5834 14669,5847
 Straße 16 (Baumschulenweg): Kopfsteinpflaster	Q2 14669,5847 14668,5923
 (Späth'sche Baumschulen): Asphalt	Q0- 14507,5499 14463,5621 14418,5662 14366,5805
 (Späth'sche Baumschulen - Straße 17): Beton	Q0 14366,5805 14455,5814 14453,5851 14529,5851 14669,5847
-Friedrich-Jacobs-Promenade: Kleinsteinpflaster	Q1 16114,10123 16066,10054 15944,9896 15914,9858
+Friedrich-Jacobs-Promenade: Kleinsteinpflaster	Q1 16114,10123 16066,10054 15948,9902 15914,9858
 Schrodaer Str.: unbefestigte Straße, teilweise sehr sandig	Q3+ 20092,10840 19964,10834 19958,10755 19904,10744 19898,10656 19910,10630
 Brandorfer Weg: Asphalt	Q0 20536,11022 20524,11016 20365,11025
 Baggerseestr.: unbefestigte Straße	Q2 20281,11341 20346,11337
@@ -7513,7 +7514,7 @@ Hüttigpfad: Verbundsteinpflaster	Q1 4810,15000 4724,15055 4668,15066 4598,15057 
 #: note: bei Regen viele Pfützen
 Hermann-Stöhr-Platz: wassergebundene Decke, holprig	Q2+ 12453,11790 12409,11902
 (Zur Alten Flussbadeanstalt - Bolleufer): Asphalt	Q0 16347,9594 16268,9670
-(Zur Alten Flussbadeanstalt - Bolleufer): Beton, teilweise Verbundsteinpflaster	Q0- 16268,9670 16182,9591 16120,9653 16123,9692
+(Zur Alten Flussbadeanstalt - Bolleufer): Beton, teilweise Verbundsteinpflaster	Q0- 16268,9670 16182,9591 16120,9653 16125,9678 16119,9689
 (Normannenstr. - Jobcenter Lichtenberg): Verbundsteinpflaster, Asphalt	Q1 16056,12317 16068,12376 16080,12441 16089,12522
 (Normannenstr. - Jobcenter Lichtenberg): Beton	Q1 16089,12522 16122,12524 16132,12621
 Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250

@@ -2609,7 +2609,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
 #: XXX laut fritz bis 05.05.2016
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
-#: last_checked: 2017-06-22
+#: last_checked: 2017-07-20
 #: check_frequency: 90d
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
@@ -2631,7 +2631,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #
 #: XXX temporäre Ampel vvv
 #: by: http://www.dafmap.de/d/berlin.html?id=3481&mt=0&zoom=17
-#: last_checked: 2017-07-14 vvv
+#: last_checked: 2017-07-20 vvv
 #: check_frequency: 30d vvv
 	F::inwork 9270,12086
 #: check_frequency ^^^
@@ -2896,11 +2896,13 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id: HAUPTSTR-2015 vvv
 #: note etwas weiter südlich gelegen
 #: XXX allerdings nicht immer in Betrieb (z.B. nicht 2017-03-03 abends)
-#: last_checked: 2017-07-18
+#: check_frequency: 60d vvv
+#: last_checked: 2017-07-20
 	F::inwork 14674,10811
 #: XXX Zebrastreifen außer Betrieb; wie wird es nach den Bauarbeiten aussehen?
-#: last_checked: 2017-07-18
+#: last_checked: 2017-07-20
 	F::inwork 14794,10844
+#: check_frequency ^^^
 #: next_check_id ^^^
 # 
 #: note: Anforderungsampel für Radfahrer aus/in Richtung Priesterweg
@@ -2909,7 +2911,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id: HEIDELBERGER-2017
 #: XXX wann werden die Ampeln wieder abgebaut?
 #: note eigentlich zwei Ampeln, aber zusammengeschaltet
-#: last_checked: 2017-06-27
+#: last_checked: 2017-07-19
 #: check_frequency: 60d
 	F::inwork 13489,9199
 	X 19894,-835

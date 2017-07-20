@@ -2195,7 +2195,7 @@ EOF
 userdel	2 9645,12133 9755,12144 9812,12150
 userdel	2 10091,12232 10029,12208 9972,12184
 userdel	2 9812,12150 9898,12161
-userdel	2 9898,12161 9972,12184
+userdel	2 9898,12161 9939,12174 9972,12184
 userdel	2 10174,12284 10109,12238
 userdel	2 10174,12284 10199,12251 10285,12306
 EOF
@@ -14640,7 +14640,7 @@ EOF
        # zZt status=500: source_id => 'http://www.classicopenair.de/de',
        type  => 'gesperrt',
        data  => <<EOF,
-	q4::temp 9666,11935 9656,12031
+	q4::temp 9679,11834 9666,11935 9656,12031 9645,12133
 	2::temp 9523,12019 9656,12031
 	2::temp 9536,11922 9666,11935
 EOF
@@ -20641,12 +20641,13 @@ userdel	q4::inwork 9343,12464 9358,12351
 EOF
      },
      { from  => undef, #
-       until => undef, #
+       until => 1500528283, # undef, #
        text  => 'Földerichplatz: Wochenmarkt Dienstag und Freitag 8-13 Uhr', # Do -> Fr laut wochen_troedel2013.csv, alter Eintrag: http://www.berlin.de/ba-spandau/presse/archiv/20120423.1455.369136.html sowie bestätigt von Stefan Klinkusch
        type  => 'gesperrt',
-       recurring => 1,
+# recurring => 1,
        data  => <<EOF,
-#: tempex: (tu,fr) T08-t13
+# REMOVED --- #: tempex: (tu,fr) T08-t13
+#: by: http://www.tagesspiegel.de/berlin/bezirke/spandau/berlin-spandau-ein-wochenmarkt-schliesst-ein-anderer-oeffnet/19717792.html# (Markt schließt)
 	q4::temp:clock -3942,12559 -3941,12376
 EOF
      },
@@ -26130,7 +26131,7 @@ EOF
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-07-16
+#: last_checked: 2017-07-19
 #: check_frequency: 14d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
@@ -26290,7 +26291,20 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.611086.php',
        data  => <<EOF,
+#: source_id: 2147341585
+#: note: laut vmz bis Ende 08/17, laut fritz bis 2017-08-25
 userdel	q4::inwork 854,24387 836,24440 813,24497 790,24556 784,24612 790,24698 808,24790 811,24833 793,24943 785,24968
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'Jugendweg: Wochenmarkt Dienstag 12-18 Uhr',
+       type  => 'gesperrt',
+       recurring => 1,
+       source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.612866.php',
+       data  => <<EOF,
+#: by: http://www.tagesspiegel.de/berlin/bezirke/spandau/berlin-spandau-ein-wochenmarkt-schliesst-ein-anderer-oeffnet/19717792.html#
+	q4::temp:clock 1184,14515 1262,14510
 EOF
      },
     );
