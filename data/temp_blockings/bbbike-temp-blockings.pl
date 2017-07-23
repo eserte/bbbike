@@ -2275,7 +2275,7 @@ EOF
        text  => 'L 26; (Löcknitz MVP-LG-Brüssow); zw. LG und Kno. Wollschow Deckeneinbau Vollsperrung 27.06.2005-11.07.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 61751,112656 61788,112769
+userdel	2 61739,112642 61793,112779
 EOF
      },
      { from  => 1119697095, # 2005-06-25 12:58
@@ -14710,7 +14710,7 @@ EOF
        text  => 'L 026 Wollschow - Prenzlau OD Brüssow 750 Jahre Brüssow Vollsperrung 04.07.2009-05.07.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::temp 57672,111590 57565,111511 57477,111392
+userdel	q4::temp 57624,111578 57562,111516 57477,111392
 EOF
      },
      { from  => 1245794400, # 2009-06-24 00:00
@@ -26305,6 +26305,16 @@ EOF
        data  => <<EOF,
 #: by: http://www.tagesspiegel.de/berlin/bezirke/spandau/berlin-spandau-ein-wochenmarkt-schliesst-ein-anderer-oeffnet/19717792.html#
 	q4::temp:clock 1184,14515 1262,14510
+EOF
+     },
+     { from  => 1500818823, # 2017-07-23 16:07
+       until => 1506808800, # 2017-10-01 00:00
+       text  => 'Seecktstr.: Sperrung wegen Bauarbeiten, 24.07.2017 bis 30.09.2017 ',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.614506.php',
+       data  => <<EOF,
+userdel	2::inwork -4299,13304 -4123,13214
+userdel	2::inwork -4098,13201 -4046,13177 -4017,13167
 EOF
      },
     );
