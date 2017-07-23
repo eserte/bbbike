@@ -3363,6 +3363,11 @@ sub search_anything {
     }
     if ($devel_host) {
 	push @search_files, map { defined } @p_file{qw(/ki rest/)};
+	for my $f (values %str_file) {
+	    if ($f =~ m{/tmp/fragezeichen-outdoor\.bbd$}) {
+		push @search_files, $f;
+	    }
+	}
     }
 
     @search_files = map {
