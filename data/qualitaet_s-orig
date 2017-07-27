@@ -84,7 +84,7 @@ Sinsheimer Weg: schlechtes Kopfsteinpflaster, aber Ausweichen auf Parkplatz mögl
 Sinsheimer Weg: Betonstraße	Q0 13774,8849 13837,8932
 #: XXX Asphaltierung geplant vvv
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2018-2022) vvv
-#: last_checked: 2017-06-14 vvv
+#: last_checked: 2017-07-24 vvv
 #: next_check: 2018-03-01 vvv
 Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729 12549,8616 12649,8535
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12918,8232
@@ -480,7 +480,7 @@ Mittelweg: Kopfsteinpflaster	Q3 12176,7811 12224,7799 12335,7770
 #: note: vielleicht sogar Q1+? vvv
 #: XXX hier wird die Fahrbahn ausgebessert (2017), später (2018-2022) Radfahrstreifen oder "Protected Bike-Lane"
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017)
-#: last_checked: 2017-06-14
+#: last_checked: 2017-07-24
 #: check_frequency: 60d
 Karl-Marx-Str.: Asphalt mit Schäden	Q0- 11831,8989 11880,8955 11998,8872 12063,8826 12156,8760 12330,8636
 Karl-Marx-Str.: Asphalt mit Schäden	Q0- 12330,8636 12500,8504
@@ -2577,9 +2577,9 @@ Andernacher Str.: Asphalt	Q0 19245,8669 19155,8631
 Andernacher Str.: mäßiger Asphalt	Q1- 19155,8631 19075,8590 19030,8559 19000,8509 18949,8437
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.523136.php
 #: XXX evtl. nach den Bauarbeiten besserer Asphalt
-#: last_checked: 2017-04-14
-#: check_frequency: 60d
-Rheinsteinpark: Asphalt	Q0- 19073,8828 19145,8659
+#: last_checked: 2017-07-27
+#: check_frequency: 90d
+Rheinsteinpark: Asphalt, etwas uneben	Q1+ 19073,8828 19145,8659
 Rolandseck: Asphalt	Q0 18834,9256 18903,9244 18977,9322
 Rolandseck: Asphalt mit Schäden	Q1 18977,9322 19020,9364
 # REMOVED (nicht (mehr?) mäßig) --- Waldowallee: mäßiger Asphalt	Q1 18977,9322 18939,9417 18916,9468
@@ -3991,8 +3991,8 @@ Küsterwiesen: Asphalt	Q0 29840,3378 29807,3345
 Hechtstr.: Asphalt	Q0 29743,3546 29820,3589 29917,3697 29960,3845 30015,4047
 Brückenstr. (Rahnsdorf): schlechtes Kopfsteinpflaster, teilweise Banketten vorhanden	Q3 29609,4049 29568,4098 29524,4208
 (entlang des Fließes): unbefestigter Weg	Q2 29714,4461 29695,4434 29656,4431 29613,4371 29616,4311 29571,4256 29515,4227 29446,4193 29354,4062 29232,3991
-(entlang des Tränkegrabens): Asphalt	Q0 16900,9861 17041,9985 17084,10036
-(entlang des Tränkegrabens): Beton	Q0- 17084,10036 17137,10098 17149,10160 17137,10238 17160,10376
+(entlang des Tränkegrabens): Asphalt	Q0 16900,9861 17041,9985 17078,10038
+(entlang des Tränkegrabens): Beton	Q0- 17078,10038 17138,10109 17154,10158 17157,10173 17143,10186 17144,10297 17160,10376
 (entlang des Tränkegrabens): Beton/Asphalt	Q0 17160,10376 17249,10666
 (entlang des Tränkegrabens): Beton	Q0- 17249,10666 17249,10702 17310,10714 17415,10694 17527,10640 17625,10615 17705,10621 17847,10629 17870,10619 17897,10607 17999,10584 18034,10567 18059,10556 18150,10543
 (Baikalstr. - Tränkegraben): asphaltiert	Q0 17281,10598 17249,10666
@@ -5200,7 +5200,7 @@ Rollbergstr.: glatte Pflasterung	Q0- 12147,8117 12295,8154
 (Werbellinstr. 50 - Rollbergstr.): glatte Pflasterung	Q0- 12308,8088 12295,8154 12282,8204
 Michiganseestr.: Asphalt	Q0+ 17081,10415 17042,10269
 Michiganseestr.: Beton	Q0- 17042,10269 17025,10193
-Dolgenseestr.: Beton	Q0- 17025,10193 17018,10122 17035,10079 17084,10036 17283,9956
+Dolgenseestr.: Beton	Q0- 17025,10193 17018,10122 17035,10079 17078,10038 17283,9956
 Upsalaer Str.: Kopfsteinpflaster	Q2 11369,16744 11364,16887
 Obernburger Weg: Kopfsteinpflaster	Q2 11686,17710 11700,17629
 Obernburger Weg: Beton	Q0- 11700,17629 11711,17569
@@ -14294,7 +14294,7 @@ Kamminer Str.: Asphalt	Q0 3240,12966 3283,13132 3310,13253 3349,13406 3371,13501
 # 
 #: by: Marko (...hilse...):
 #: corrected_by: srt ("mäßiger" -> "guter")
-Wattstr. (Oberschöneweide): guter Asphalt	Q0 17681,7589 17670,7512 17647,7280
+Wattstr. (Oberschöneweide): guter Asphalt	Q0 17681,7589 17676,7555 17670,7512 17647,7280
 # 
 #: by: Saskia (sengewitz...):
 Ottokarstr.: schlechtes Kopfsteinpflaster	Q3 8642,5422 8744,5483 8767,5571
@@ -19881,7 +19881,7 @@ Albtalweg: mäßiger Asphalt/Beton	Q1- 5368,22669 5338,22753 5297,22830 5243,22896
 # 
 #: by: Heike Ludwig: vvv
 #: corrected_by: srt (mäßiges Kopfsteinpflaster -> Kleinsteinpflaster)
-Treseburger Str. (Blankenburg): Kleinsteinpflaster	Q2+ 14509,21337 14461,21372 14304,21399 14226,21419 14157,21442
+Treseburger Str. (Blankenburg): Kleinsteinpflaster	Q2+ 14509,21337 14461,21372 14304,21399 14257,21411 14226,21419 14157,21442
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Treseburger Str. (Blankenburg): Asphalt	Q0- 14157,21442 14069,21471 13978,21496 13884,21524
 #: by: ^^^
@@ -26791,3 +26791,6 @@ Leopoldstr. (Lichtenberg): Kopfsteinpflaster	Q2 15945,10984 16192,10907 16349,10
 # 
 #: by: Hildegund Beulmann-Karl [AM]
 Ibisweg: Asphalt	Q0 14854,4078 14573,3843
+#
+#: by: wosch
+(Treseburger Str. - Karower Damm): Verbundsteinpflaster	Q1 14257,21411 14220,21039

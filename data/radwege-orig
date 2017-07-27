@@ -343,7 +343,8 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 6409,8026 6388,7999 6333,7927
 Busspur gilt Mo-Fr 7-18 Uhr	RW1; 6333,7927 6307,7893
 Busspur gilt Mo-Fr 7-18 Uhr	RW5; 6144,7677 6209,7765 6273,7849
 Busspur ist immer gültig	RW5; 6273,7849 6307,7893 6333,7927 6388,7999 6409,8026
-für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr und 14-18 Uhr	RW1; 7193,7950 7147,8000 7073,8081 7001,8161 6935,8208 6807,8309 6687,8385 6575,8469 6523,8567 6477,8654 6460,8688
+	RW1; 7193,7950 7147,8000 7073,8081
+für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr und 14-18 Uhr	RW1; 7073,8081 7001,8161 6935,8208 6807,8309 6687,8385 6575,8469 6523,8567 6477,8654 6460,8688
 für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 6477,8654 6523,8567 6575,8469
 für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 6687,8385 6807,8309 6935,8208 7001,8161 7073,8081
 	RW2; 7073,8081 7147,8000
@@ -775,7 +776,9 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 6494,6128 6629,5946
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr	RW1; 6696,5854 6629,5946 6494,6128 6343,6297 6248,6388 6168,6467
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5792
 #: XXX bleibt die Benutzungspflicht hier?
-#: last_checked: 2017-06-11
+#: source_id: 2147341593
+#: last_checked: 2017-07-24
+#: next_check: 2017-10-15 (Ende der Bauarbeiten)
 	RW2; 6575,8469 6687,8385
 	RW0;RW2 8336,10829 8362,10779 8430,10710
 	RW1;RW9 8571,11846 8489,11782 8438,11753 8322,11715 8203,11686
@@ -872,7 +875,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736 20755,5750
 	RW2; 20880,5736 21002,5755
 	RW2;RW2 14196,9749 14271,9712 14318,9688 14495,9609
 #: note: es existieren explizite Schilder zur Aufhebung der Radwegbenutzungspflicht
-	RW2;RW1 14495,9609 14556,9581 14809,9466 14879,9433 15383,9191 15442,9095 15452,9079 15591,8848
+	RW2;RW1 14495,9609 14556,9581 14809,9466 14879,9433 15383,9191 15403,9158 15442,9095 15452,9079 15591,8848
 	RW1; 13919,7707 14015,7631
 	RW2; 14015,7631 14095,7568 14174,7505
 	RW1; 14174,7505 14095,7568 14015,7631
@@ -1051,7 +1054,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 969
 #: source_id: IM_018997
 #: source_id: IM_023987
 #: source_id: IM_025933
-#: last_checked: 2017-06-28
+#: last_checked: 2017-07-27
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
@@ -1105,7 +1108,7 @@ neu asphaltiert	RW1; 17568,7753 17619,7679 17681,7589 17769,7465
 neu asphaltiert	RW1; 17769,7465 17681,7589 17619,7679
 #: XXX wie sieht es nach der Fahrbahnverschwenkung (dauert bis Anfang September 2017) aus? vvv
 #: source_id: 2147341340
-#: last_checked: 2017-06-22 vvv
+#: last_checked: 2017-07-27 vvv
 #: next_check: 2017-09-01 vvv
 	RW0; 17619,7679 17568,7753 17527,7812
 provisorischer schmaler Radstreifen	RW3; 17527,7812 17299,8140 17202,8391
@@ -1219,12 +1222,14 @@ Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW5; 6460,8688 6449,8807 6449,8845 6445
 	RW6;RW6 11509,9392 11560,9524 11541,9576 11594,9604 11640,9710
 	RW6;RW6 7647,9196 7570,9124
 	RW6;RW6 7484,9066 7307,8945
-	RW1;RW1 7402,8208 7446,8200 7497,8168 7582,8123 7639,8091 7710,8051
+	RW1;RW1 7402,8208 7446,8200 7497,8168
+asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
+	RW1; 7710,8051 7639,8091 7582,8123 7497,8168
 	RW3;RW1 7710,8051 7733,8023
 #: XXX Wilhelm-Kabus-Str.: eventuell wird der Gehweg Richtung Süden für Radfahrer freigegeben
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4159&options=4
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4159
-#: last_checked: 2017-06-22
+#: last_checked: 2017-07-24
 #: check_frequency: 120d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
 	RW2;RW4 7717,7879 7718,7820 7696,7771
@@ -2032,7 +2037,7 @@ Verbundsteinpflaster	RW1;RW1 13566,20540 13584,20621 13586,20649 13590,20705 135
 	RW1;RW1 12808,18155 12885,18329
 Gehweg für Radfahrer frei	RW1;RW1 12885,18329 12902,18373 12957,18518 12969,18548 12998,18639 13008,18984 13011,19111 13014,19218 13017,19329 13021,19466 13031,19576
 Verbundsteinpflaster	RW2;RW1 14050,20955 14091,20962
-Verbundsteinpflaster	RW1;RW1 14091,20962 14172,21011 14338,21108 14509,21337
+Verbundsteinpflaster	RW1;RW1 14091,20962 14172,21011 14220,21039 14338,21108 14509,21337
 Verbundsteinpflaster	RW1;RW1 14742,21843 14932,22083 15082,22274
 holpriges Verbundsteinpflaster	RW1; 13904,17325 13708,17453
 die letzten 50 Meter werden als Radspur auf der Fahrbahn geführt	RW1; 13708,17453 13904,17325

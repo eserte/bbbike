@@ -2183,6 +2183,7 @@ Mariendorfer-Hafen-Weg -> Attilastr.: Geländer am Gehweg	3::igndisp 7692,4464 76
 unbequemes Überqueren	3nocross::ignrte 6613,3320 6647,3292 6712,3237
 Paul-Schneider-Str. -> Schulstr.: unbequemes Überqueren	3::igndisp 6613,3320 6647,3292 6653,3297
 Schulstr. -> Paul-Schneider-Str.: unbequemes Überqueren	3::igndisp 6653,3297 6647,3292 6712,3237
+unbequemes Passieren (Bordsteine, starker Verkehr, kaum Lücken)	3nocross::ignrte 15383,9191 15403,9158 15442,9095
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
@@ -2904,7 +2905,7 @@ IGA 2017-Gelände: Wege gesperrt	2 22503,14104 22783,14034
 Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 18892,3256 18953,3318
 Lydia-Rabinowitsch-Str.: noch gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924
 Clara-von-Simson-Str.: noch gesperrt	2 7652,14257 7757,14318 7802,14250 7697,14187
-Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, für Autos dauerhaft	2::inwork 17670,7512 17681,7589
+Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, für Autos dauerhaft	2::inwork 17670,7512 17676,7555 17681,7589
 Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3217,11570
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
@@ -3237,8 +3238,8 @@ Sonnenallee	3nocross::ignrte 14617,7243 14693,7168 14752,7108 14803,7056
 Sonnenallee -> Krebsgang: Sonnenallee	3::igndisp 14617,7243 14693,7168 14792,7192
 Krebsgang -> Sonnenallee: Sonnenallee	3::igndisp 14792,7192 14693,7168 14752,7108
 Straßenbahntrasse	3nocross::ignrte 18631,10167 18694,10018 18703,9997 18742,9903
-Treskowallee -> Ontarioseestr.: Straßenbahntrasse	3::igndisp 18703,9997 18694,10018 18585,10024
-Ontarioseestr. -> Am Tierpark: Straßenbahntrasse	3::igndisp 18585,10024 18694,10018 18631,10167
+Treskowallee -> Zur Ontarioseestr.: Straßenbahntrasse	3::igndisp 18703,9997 18694,10018 18585,10024
+Zur Ontarioseestr. -> Am Tierpark: Straßenbahntrasse	3::igndisp 18585,10024 18694,10018 18631,10167
 Treskowallee -> Weg entlang der Bahnstrecke: Straßenbahntrasse	3::igndisp 18742,9903 18703,9997 18445,9887
 Treskowallee -> Richard-Kolkwitz-Weg: Straßenbahntrasse	3::igndisp 18694,10018 18703,9997 18708,10000
 Weg entlang der Bahnstrecke -> Treskowallee: Straßenbahntrasse	3::igndisp 18445,9887 18703,9997 18694,10018

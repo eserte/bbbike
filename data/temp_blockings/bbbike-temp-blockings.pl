@@ -24455,13 +24455,13 @@ EOF
 userdel	q3::inwork 12295,12197 12532,12150
 EOF
      },
-     { from  => $isodate2epoch->("2017-02-09 06:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2017-02-12 23:59:59"),
-       text  => 'Karlshorster Str.: zwischen Haupstr. und Nöldnerstr. Fahrbahn komplett gesperrt, auch für Fußgänger und Radfahrer, Einbahnstraßenregelung in der Hirschberger Str., 10.02.2017 bis 12.02.2017',
+     { from  => 1501195781, # $isodate2epoch->("2017-02-09 06:00:00"), # ein Tag Vorlauf
+       until => $isodate2epoch->("2017-07-31 04:00:00"),
+       text  => 'Karlshorster Str.: zwischen Haupstr. und Nöldnerstr. Fahrbahn komplett gesperrt, eventuell auch für Fußgänger und Radfahrer, vermutlich Einbahnstraßenregelung in der Hirschberger Str., 28.07.2017 bis 31.07.2017 04:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: fritz
-	2::inwork 15261,10738 15272,10790
+	2::inwork 15261,10738 15272,10790 15279,10862
 #	q4; 15279,10862 15272,10790 15388,10758 15433,10765
 	q4; 15205,11080 15102,11120 15021,11152 14988,11130
 EOF
@@ -25432,7 +25432,7 @@ EOF
        text  => 'Lollapalooza 2016 im Treptower Park: Puschkinallee und Alt-Treptow gesperrt, ab 09.09.2016 abends bis 12.09.2016 morgens',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 15591,8848 15452,9079 15442,9095 15383,9191 14879,9433 14809,9466 14556,9581
+	2::temp 15591,8848 15452,9079 15442,9095 15403,9158 15383,9191 14879,9433 14809,9466 14556,9581
 EOF
      },
      { from  => 1467496800, # 2016-07-03 00:00
@@ -25640,7 +25640,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-07-11 vvv
+#: last_checked: 2017-07-27 vvv
 #: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -25976,8 +25976,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober
-#: last_checked: 2017-06-14 vvv
-#: next_check: 2017-08-14 vvv
+#: last_checked: 2017-07-24 vvv
+#: next_check: 2017-08-24 vvv
 	q3::inwork 13384,8354 13217,8493
 # REMOVED userdel	q3::inwork; 13217,8493 13262,8554
 	q3::inwork; 13262,8554 13301,8606 13314,8624
@@ -26020,7 +26020,7 @@ EOF
        text  => 'Akazienstr.: Bauarbeiten, Einbahnstraßenregelung',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2017-07-13
+#: last_checked: 2017-07-24
 #: check_frequency: 14d
 userdel	q4::inwork; 7201,8870 7107,9030
 EOF
@@ -26122,6 +26122,7 @@ EOF
        data  => <<EOF,
 #: XXX Baumaßnahme ist Ende 2018 fertig; Vollsperrung nur für 2-3 Wochen
 #: XXX wird es vielleicht Änderungen bei der Wegbeschaffenheit geben?
+#: last_checked: 2017-07-24
 #: next_check: 2017-09-01
 userdel	2::inwork 6815,8691 6912,8617
 EOF
@@ -26131,7 +26132,7 @@ EOF
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-07-19
+#: last_checked: 2017-07-26
 #: check_frequency: 14d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
@@ -26315,6 +26316,15 @@ EOF
        data  => <<EOF,
 userdel	2::inwork -4299,13304 -4123,13214
 userdel	2::inwork -4098,13201 -4046,13177 -4017,13167
+EOF
+     },
+     { from  => 1501452000, # 2017-07-31 00:00
+       until => 1551394799, # 2019-02-28 23:59
+       text  => 'Rigaer Str.: Sperrung zwischen Samariterstr. und Voigtstr., auch für Radfahrer und Fußgänger, vom 01.08.2017 - 28.02.2019',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.616518.php',
+       data  => <<EOF,
+userdel	2::inwork 14538,12371 14748,12314
 EOF
      },
     );

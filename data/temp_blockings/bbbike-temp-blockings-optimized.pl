@@ -1729,29 +1729,7 @@ userdel	2::temp -8087,-1453 -8151,-1470 -8306,-1454
        undef,
        undef,
        undef,
-       {
-         'data' => '	q4::temp 9679,11834 9666,11935 9656,12031 9645,12133
-	2::temp 9523,12019 9656,12031
-	2::temp 9536,11922 9666,11935
-',
-         'from' => 1500242400,
-         'id' => 1710,
-         'periodic' => 1,
-         'postwarn_days' => 2,
-         'prewarn_days' => 3,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              2,
-                              'months',
-                              7
-                            ]
-                          ],
-         'text' => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (20.7.2017 - 24.7.2017; Sperrungen fangen schon früher an und dauern länger)',
-         'type' => 'gesperrt',
-         'until' => 1501099200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3021,27 +2999,7 @@ userdel	2::temp::igndisp 10805,12468 10803,12470
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED (was) : tempex: 20160714-20160717
-userdel	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
-',
-         'from' => 1499896800,
-         'id' => 2420,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              13,
-                              'months',
-                              7
-                            ]
-                          ],
-         'source_id' => 'http://www.gratis-in-berlin.de/festivals/item/2024942-hafenfest-tegel-2016-mit-programm-und-feuerwerk',
-         'text' => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (14.07.2017 bis 23.07.2017)',
-         'type' => 'gesperrt',
-         'until' => 1500847199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3606,7 +3564,18 @@ userdel	2::temp 5857,13342 5868,13441 5882,13548
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: fritz
+	2::inwork 15261,10738 15272,10790 15279,10862
+#	q4; 15279,10862 15272,10790 15388,10758 15433,10765
+	q4; 15205,11080 15102,11120 15021,11152 14988,11130
+',
+         'from' => 1501195781,
+         'id' => 2717,
+         'text' => 'Karlshorster Str.: zwischen Haupstr. und Nöldnerstr. Fahrbahn komplett gesperrt, eventuell auch für Fußgänger und Radfahrer, vermutlich Einbahnstraßenregelung in der Hirschberger Str., 28.07.2017 bis 31.07.2017 04:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1501466400
+       },
        undef,
        undef,
        undef,
@@ -3786,7 +3755,7 @@ userdel	q4::inwork 12911,1815 12817,2031
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-07-11 vvv
+#: last_checked: 2017-07-27 vvv
 #: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -3888,8 +3857,8 @@ userdel	q4::inwork; 5583,5179 5527,5217 5416,5289 5397,5302 5382,5312
        undef,
        {
          'data' => '#: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober
-#: last_checked: 2017-06-14 vvv
-#: next_check: 2017-08-14 vvv
+#: last_checked: 2017-07-24 vvv
+#: next_check: 2017-08-24 vvv
 	q3::inwork 13384,8354 13217,8493
 # REMOVED userdel	q3::inwork; 13217,8493 13262,8554
 	q3::inwork; 13262,8554 13301,8606 13314,8624
@@ -3916,7 +3885,7 @@ userdel	q4::inwork; 5583,5179 5527,5217 5416,5289 5397,5302 5382,5312
        },
        undef,
        {
-         'data' => '#: last_checked: 2017-07-13
+         'data' => '#: last_checked: 2017-07-24
 #: check_frequency: 14d
 userdel	q4::inwork; 7201,8870 7107,9030
 ',
@@ -3977,6 +3946,7 @@ userdel	2::inwork 21685,916 21708,937 21857,989 21977,988
        {
          'data' => '#: XXX Baumaßnahme ist Ende 2018 fertig; Vollsperrung nur für 2-3 Wochen
 #: XXX wird es vielleicht Änderungen bei der Wegbeschaffenheit geben?
+#: last_checked: 2017-07-24
 #: next_check: 2017-09-01
 userdel	2::inwork 6815,8691 6912,8617
 ',
@@ -3988,7 +3958,7 @@ userdel	2::inwork 6815,8691 6912,8617
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2017-07-19
+         'data' => '#: last_checked: 2017-07-26
 #: check_frequency: 14d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
@@ -4125,6 +4095,16 @@ userdel	2::inwork -4098,13201 -4046,13177 -4017,13167
          'text' => 'Seecktstr.: Sperrung wegen Bauarbeiten, 24.07.2017 bis 30.09.2017 ',
          'type' => 'gesperrt',
          'until' => 1506808800
+       },
+       {
+         'data' => 'userdel	2::inwork 14538,12371 14748,12314
+',
+         'from' => 1501452000,
+         'id' => 2888,
+         'source_id' => 'http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.616518.php',
+         'text' => 'Rigaer Str.: Sperrung zwischen Samariterstr. und Voigtstr., auch für Radfahrer und Fußgänger, vom 01.08.2017 - 28.02.2019',
+         'type' => 'gesperrt',
+         'until' => 1551394799
        }
      
 );
