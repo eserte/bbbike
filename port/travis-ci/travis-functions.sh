@@ -143,8 +143,10 @@ install_perl_dependencies() {
 		cpanm --quiet --notest CGI
 		;;
 	esac
-	if true
+	if [ "$CPAN_INSTALLER" = "cpanm" ]
 	then
+	    cpanm --quiet --installdeps --notest .
+	else
 	    # install cpm; and install also https support for LWP because of
 	    # https://github.com/miyagawa/cpanminus/issues/519
 	    #
@@ -161,8 +163,6 @@ install_perl_dependencies() {
 	    # implement suggestion for more diagnostics in case of failures
 	    # https://github.com/skaji/cpm/issues/51#issuecomment-261754382
 	    if ! cpm install -g -v; then cat ~/.perl-cpm/build.log; false; fi
-	else
-	    cpanm --quiet --installdeps --notest .
 	fi
     fi
 }
