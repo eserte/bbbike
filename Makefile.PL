@@ -416,7 +416,10 @@ sub build_prereq {
 	    if ($type != 0) {
 		next if ($_->[REQTABLE_REQ] & $type) == 0;
 	    }
-	    if (($ENV{TRAVIS}||'') eq 'true') { # XXX actually, check for "batch environment where difficult modules cannot be installed easily"
+	    if ( # XXX actually, check for "batch environment where difficult modules cannot be installed easily"
+		($ENV{TRAVIS}||'') eq 'true' #    travis
+		|| -f "/.dockerenv"          # or docker
+	       ) {
 		next if $_->[REQTABLE_MODNAME] =~ m{^(
 							Image::Magick # needs exact matching imagemagick library version
 						    |   Geo::GDAL     # dito
