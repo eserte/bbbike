@@ -26327,4 +26327,18 @@ EOF
 userdel	2::inwork 14538,12371 14748,12314
 EOF
      },
+     { from  => 1501272725, # 2017-07-28 22:12
+       until => 1502834399, # 2017-08-15 23:59
+       text  => 'Schlosspark Schönhausen: komplett gesperrt, voraussichtlich bis Mitte August 2017',
+       type  => 'gesperrt',
+       source_id => 'http://www.berliner-zeitung.de/berlin/pankow-lebensgefahr-fuer-besucher--schlosspark-schoenhausen-gesperrt-28080750',
+       data  => <<EOF,
+#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2017/pressemitteilung.616643.php
+userdel	2::temp 10638,19149 10600,19225 10584,19132 10529,19055 10509,18981 10497,18883 10513,18854 10518,18750
+userdel	2::temp 10569,19395 10575,19327 10636,19289 10600,19225 10589,19275 10636,19289 10857,19379 11081,19456 11236,19509 11273,19521 11328,19413 11364,19313
+userdel	2::temp 10249,19148 10339,19179 10382,19066 10434,18907
+userdel	2::temp 10575,19327 10503,19371
+userdel	2::temp 10294,19298 10339,19179
+EOF
+     },
     );
