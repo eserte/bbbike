@@ -418,6 +418,35 @@ sub enlarge_transposed_scrollregion {
     $c->configure(-scrollregion => \@scrollregion);
 }
 
+sub is_inside_transposed_scrollregion {
+    my($x, $y) = @_;
+    ($x >= $scrollregion[0] && $x <= $scrollregion[2] && $y >= $scrollregion[1] && $y <= $scrollregion[3])
+}
+
+sub _bbox_for_line_coords {
+    my(@line_coords) = @_;
+    my($minx,$miny,$maxx,$maxy) = (@{$line_coords[0]}, @{$line_coords[0]});
+    for my $lc (@line_coords[1..$#line_coords]) {
+	if    ($lc->[0] < $minx) { $minx = $lc->[0] }
+	elsif ($lc->[0] > $maxx) { $maxx = $lc->[0] }
+	if    ($lc->[1] < $miny) { $miny = $lc->[1] }
+	elsif ($lc->[1] > $maxy) { $maxy = $lc->[1] }
+    }
+    ($minx,$miny,$maxx,$maxy);
+}
+
+sub _enlarge_transposed_bbox {
+    my($bbox_ref, $add_border_m) = @_;
+    my($minx,$maxy) = anti_transpose($bbox_ref->[0],$bbox_ref->[1]);
+    $minx-=$add_border_m;
+    $maxy+=$add_border_m;
+    my($maxx,$miny) = anti_transpose($bbox_ref->[2],$bbox_ref->[3]);
+    $maxx+=$add_border_m;
+    $miny-=$add_border_m;
+    (transpose($minx,$maxy), transpose($maxx,$miny));
+}
+
+
 sub _layer_tag_expr {
     my $abk = shift;
     "$abk || $abk-fg || $abk-img";
@@ -1381,10 +1410,20 @@ EOF
 	    return;
 	}
 	my @line_coords;
+	my $need_enlarge;
 	foreach (@coords) {
 	    my($valx,$valy) = @$_;
 	    my($setx, $sety) = transpose($Karte::map{$coord_output}->map2standard($valx, $valy));
+	    if (!$need_enlarge && !is_inside_transposed_scrollregion($setx,$sety)) {
+		$need_enlarge = 1;
+	    }
 	    push @line_coords, [$setx, $sety];
+	}
+	if ($need_enlarge) {
+	    if ($t->messageBox(-message => M("Koordinate außerhalb des Kartenbereichs. Kartenbereich vergrößern?"),
+			       -type    => 'YesNo') =~ /yes/i) {
+		enlarge_transposed_scrollregion(_enlarge_transposed_bbox([_bbox_for_line_coords(@line_coords)], 1000));
+	    }
 	}
 	mark_street(-coords => \@line_coords,
 		    -type => 's',
