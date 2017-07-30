@@ -511,7 +511,9 @@ asphaltiert	RW1; 10982,16121 10989,16197 10997,16280 11004,16360
 #: priority: #A
 	RW8;RW2 -3069,11487 -3173,11520 -3381,11583 -3404,11589
 eng, alter Asphalt	RW2;RW2 -3404,11589 -3692,11681
-	RW2;RW2 -3692,11681 -3708,11686 -3820,11721 -4033,11786 -4078,11800
+#: by: https://www.facebook.com/baustellen.berlin/posts/328145204300580
+neu asphaltiert	RW2; -3692,11681 -3708,11686 -3820,11721 -4033,11786 -4078,11800
+	RW2; -4078,11800 -4033,11786 -3820,11721 -3708,11686 -3692,11681
 	RW2;RW -4412,12179 -4503,11930
 #: by: Stefan Klinkusch (Benutzungspflicht):
 	RW;RW2 -4503,11930 -4590,11709 -4621,11631
@@ -912,7 +914,10 @@ asphaltiert	RW8;RW2 22351,862 22547,651 23206,206 23457,35 24485,-667 25731,-152
 mäßige bis schlechte Verbundsteinpflasterradwege	RW2;RW2 25731,-1524 26286,-1901 26698,-2322 26871,-2500 27017,-2660 27112,-2764 27139,-2793
 	RW2; 27139,-2793 27226,-2892 27270,-2941 27351,-3032
 	RW1;RW2 27518,-3054 27552,-3075
-#: XXX wie ist die Radwegbeschaffenheit (zumindest auf der Brücke ist asphaltiert)
+#: XXX wie ist die Radwegbeschaffenheit? (zumindest auf der Brücke ist asphaltiert)
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170730
+#: XXX Bauarbeiten bis Ende des Jahres
+#: next_check: 2018-01-01
 	RW2;RW2 27552,-3075 27633,-3118 27721,-3164 27761,-3165 27892,-3167
 	RW8;RW2 20565,2754 20868,2443 20928,2378 21041,2259 21055,2244 21242,2048 21475,1804
 	RW1;RW0 15166,8489 15378,8668
@@ -2399,6 +2404,9 @@ asphaltierter Gehweg für Radfahrer frei	RW1; 22062,773 22110,702 22162,452 22166
 	RW1;RW0 19055,2037 19164,2001
 	RW1; 18929,2454 18928,2319 18922,2238
 Gehweg für Radfahrer frei	RW1; 18922,2238 18928,2319 18929,2454
+#: XXX eventuell wird hier eine Verbesserung passieren
+#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf ("Umsetzung frühestens 2018")
+#: next_check: 2018-03-01
 Kein abgeflachter Bordstein bei der Auffahrt!	RW1; 18922,2238 18881,2062
 	RW1; 18881,2062 18922,2238
 	RW1;RW1 18881,2062 18863,1950 18804,1791 18807,1758 18839,1715 18888,1658 18916,1626 18974,1559 19061,1457 19107,1403 19251,1240 19333,1154

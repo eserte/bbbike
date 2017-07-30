@@ -3728,14 +3728,16 @@ userdel	2::night 16196,18364 16315,18208
        {
          'data' => '#: note: laut fritz bis 2017-09-15, laut vmz bis 2018
 #: by: http://www.berliner-woche.de/buckow/verkehr/der-lange-weg-zur-sanierten-strasse-bauarbeiten-am-buckower-damm-anwohner-aergern-sich-ueber-lkw-im-wohngebiet-d126968.html
-userdel	q4::inwork 12911,1815 12817,2031
+#: note: die Baustelle ist gewandert
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
+userdel	q4::inwork 12911,1815 12940,1547
 ',
          'from' => 1467661160,
          'id' => 2808,
          'source_id' => '2147341551',
-         'text' => 'Buckower Damm: Baustelle zwischen Alt-Buckow und An den Achterhöfen, evtl. auch Einschränkungen für Radfahrer, bis zum 15.9.2017, eventuell auch länger',
+         'text' => 'Buckower Damm: Baustelle zwischen An den Achterhöfen und Mollnerweg, evtl. auch Einschränkungen für Radfahrer, bis Ende 2017',
          'type' => 'handicap',
-         'until' => 1505455200
+         'until' => 1514718000
        },
        undef,
        undef,
@@ -3856,9 +3858,10 @@ userdel	q4::inwork; 5583,5179 5527,5217 5416,5289 5397,5302 5382,5312
        undef,
        undef,
        {
-         'data' => '#: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober
+         'data' => '#: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober; laut Pressemitteilung bis Ende 2017
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
 #: last_checked: 2017-07-24 vvv
-#: next_check: 2017-08-24 vvv
+#: next_check: 2017-10-01 vvv
 	q3::inwork 13384,8354 13217,8493
 # REMOVED userdel	q3::inwork; 13217,8493 13262,8554
 	q3::inwork; 13262,8554 13301,8606 13314,8624
@@ -4110,9 +4113,9 @@ userdel	2::inwork -4098,13201 -4046,13177 -4017,13167
          'data' => '#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2017/pressemitteilung.616643.php
 userdel	2::temp 10638,19149 10600,19225 10584,19132 10529,19055 10509,18981 10497,18883 10513,18854 10518,18750
 userdel	2::temp 10569,19395 10575,19327 10636,19289 10600,19225 10589,19275 10636,19289 10857,19379 11081,19456 11236,19509 11273,19521 11328,19413 11364,19313
-userdel	2::temp 10249,19148 10339,19179 10382,19066 10434,18907
+#userdel	2::temp 10249,19148 10339,19179 10382,19066 10434,18907
 userdel	2::temp 10575,19327 10503,19371
-userdel	2::temp 10294,19298 10339,19179
+#userdel	2::temp 10294,19298 10339,19179
 ',
          'from' => 1501272725,
          'id' => 2889,
@@ -4120,6 +4123,16 @@ userdel	2::temp 10294,19298 10339,19179
          'text' => 'Schlosspark Schönhausen: komplett gesperrt, voraussichtlich bis Mitte August 2017',
          'type' => 'gesperrt',
          'until' => 1502834399
+       },
+       {
+         'data' => 'userdel	q4::inwork 17734,675 17928,764 18023,833
+',
+         'from' => 1501439878,
+         'id' => 2890,
+         'source_id' => 'https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730',
+         'text' => 'Ostburger Weg: Bauarbeiten zwischen Will-Meisel-Weg und Am Espenpfuhl, Fahrbahn gesperrt, ab Ende Juli bis Mitte Dezember 2017',
+         'type' => 'handicap',
+         'until' => 1513378799
        }
      
 );

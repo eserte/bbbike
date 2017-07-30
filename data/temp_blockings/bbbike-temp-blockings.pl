@@ -25457,14 +25457,16 @@ userdel	q4::inwork 19676,1577 19704,1621 19766,1796
 EOF
      },
      { from  => 1467661160, # 2016-07-04 21:39
-       until => $isodate2epoch->("2017-09-15 08:00:00"),
-       text  => 'Buckower Damm: Baustelle zwischen Alt-Buckow und An den Achterhöfen, evtl. auch Einschränkungen für Radfahrer, bis zum 15.9.2017, eventuell auch länger',
+       until => $isodate2epoch->("2017-12-31 12:00:00"),
+       text  => 'Buckower Damm: Baustelle zwischen An den Achterhöfen und Mollnerweg, evtl. auch Einschränkungen für Radfahrer, bis Ende 2017',
        type  => 'handicap',
        source_id => '2147341551',
        data  => <<EOF,
 #: note: laut fritz bis 2017-09-15, laut vmz bis 2018
 #: by: http://www.berliner-woche.de/buckow/verkehr/der-lange-weg-zur-sanierten-strasse-bauarbeiten-am-buckower-damm-anwohner-aergern-sich-ueber-lkw-im-wohngebiet-d126968.html
-userdel	q4::inwork 12911,1815 12817,2031
+#: note: die Baustelle ist gewandert
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
+userdel	q4::inwork 12911,1815 12940,1547
 EOF
      },
      { from  => 1466978400, # 2016-06-27 00:00
@@ -25975,9 +25977,10 @@ EOF
        text  => 'Innstr.: Bauarbeiten, Einbahnstraßenregelung, außerdem Sperrung an der Kreuzung Weserstr.',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober
+#: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober; laut Pressemitteilung bis Ende 2017
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
 #: last_checked: 2017-07-24 vvv
-#: next_check: 2017-08-24 vvv
+#: next_check: 2017-10-01 vvv
 	q3::inwork 13384,8354 13217,8493
 # REMOVED userdel	q3::inwork; 13217,8493 13262,8554
 	q3::inwork; 13262,8554 13301,8606 13314,8624
@@ -26336,9 +26339,18 @@ EOF
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2017/pressemitteilung.616643.php
 userdel	2::temp 10638,19149 10600,19225 10584,19132 10529,19055 10509,18981 10497,18883 10513,18854 10518,18750
 userdel	2::temp 10569,19395 10575,19327 10636,19289 10600,19225 10589,19275 10636,19289 10857,19379 11081,19456 11236,19509 11273,19521 11328,19413 11364,19313
-userdel	2::temp 10249,19148 10339,19179 10382,19066 10434,18907
+#userdel	2::temp 10249,19148 10339,19179 10382,19066 10434,18907
 userdel	2::temp 10575,19327 10503,19371
-userdel	2::temp 10294,19298 10339,19179
+#userdel	2::temp 10294,19298 10339,19179
+EOF
+     },
+     { from  => 1501439878, # 2017-07-30 20:37
+       until => 1513378799, # 2017-12-15 23:59
+       text  => 'Ostburger Weg: Bauarbeiten zwischen Will-Meisel-Weg und Am Espenpfuhl, Fahrbahn gesperrt, ab Ende Juli bis Mitte Dezember 2017',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730',
+       data  => <<EOF,
+userdel	q4::inwork 17734,675 17928,764 18023,833
 EOF
      },
     );
