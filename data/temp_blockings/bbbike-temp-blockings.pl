@@ -11448,7 +11448,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_008483',
        data  => <<EOF,
-userdel	2::inwork 17014,16724 17059,16560
+userdel	2::inwork 17014,16724 17056,16558
 EOF
      },
      { from  => 1215811936, # 2008-07-11 23:32
@@ -24013,7 +24013,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_023660',
        data  => <<EOF,
-userdel	q4::inwork 14136,17170 13998,16956
+userdel	q4::inwork 14136,17170 13996,16959
 EOF
      },
      { from  => undef, # 
@@ -26132,7 +26132,7 @@ EOF
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-07-26
+#: last_checked: 2017-07-29
 #: check_frequency: 14d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF

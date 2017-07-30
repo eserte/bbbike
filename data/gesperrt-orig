@@ -328,7 +328,7 @@ Florapromenade	1 10207,17448 10284,17458 10320,17487 10311,17764
 Takustr.	1 3321,5212 3209,5214 3079,5411 2953,5606 2909,5674
 Schönerlinder Str.	1 21799,4319 21633,4355
 Mentzelstr.	1 21579,4579 21546,4457
-Amalienstr.	1 13789,16775 13722,16843 13653,16907 13589,16965
+Amalienstr.	1 13794,16773 13722,16843 13653,16907 13589,16965
 Cosimaplatz	1 5490,7651 5458,7683 5493,7717 5528,7683 5490,7651
 Reiherbeize	1 444,4498 593,4262
 Mendelssohnstr.	1 11598,13598 11550,13642 11545,13690
@@ -1044,7 +1044,7 @@ Alfred-Kowalke-Str.	1 18027,11244 18059,11256 18179,11278 18200,11269 18229,1125
 Alfred-Kowalke-Str.	1 18229,11256 18202,11253 18061,11240 18027,11244
 Wittenbergplatz	1 6171,10657 6228,10646 6292,10627 6353,10583
 Wittenbergplatz	1 6353,10583 6268,10588 6216,10614 6171,10657
-Amalienstr.	1s:q3 13789,16775 13722,16843 13653,16907 13589,16965
+Amalienstr.	1s:q3 13794,16773 13722,16843 13653,16907 13589,16965
 Pasedagplatz	1 14099,17195 14150,17255 14170,17249
 (Vorfahrt am Bahnhof Friedrichstr.)	1 9303,12718 9171,12758
 Aristotelessteig	1s:q2 18496,9628 18527,9623 18660,9599
@@ -2951,7 +2951,7 @@ Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,
 # REMOVED (Baugrube) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2016 --- #: osm_watch: note 848012 1 --- #: last_checked: 2016-12-15 --- #: check_frequency: 180d --- Sülzhayner Str.: komplett gesperrt wegen Bauarbeiten, vielleicht dauerhaft	2::inwork 13420,9259 13397,9234
 # 
 #: next_check_id: ACHTERKASTELL-2016
-#: last_checked: 2017-06-03
+#: last_checked: 2017-07-29
 #: check_frequency: 60d
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 # 
@@ -3527,7 +3527,8 @@ Treskowallee: Straßenbahn	3nocross 18878,9517 18875,9570 18865,9608 18823,9708
 Treskowallee: Straßenbahn	3nocross 18807,9746 18823,9708 18865,9608
 #: by: Kay-Uwe Ludwig [AM] vvv
 Niehofer Str.	1 16942,16174 16815,16214 16692,16253
-Drängelgitter	BNP:10 17371,16194
+#: confirmed_by: srt
+Drängelgitter	BNP:3::trailer=10 17362,16189
 #: by: ^^^
 #: by: Daniel Weber [AM] vvv
 Orlamünder Weg	1 7035,1814 7119,1829 7174,1718 7195,1703 7214,1710 7242,1754 7258,1757 7277,1747 7332,1718

@@ -160,7 +160,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 #: osm_watch: way id="182782708" version="7"
 #: osm_watch: way id="168307255" version="6"
 #: osm_watch: way id="4687243" version="24"
-#: last_checked: 2017-06-02
+#: last_checked: 2017-07-29
 #: check_frequency: 45d
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14658,14328 14465,14210 14361,14145 14298,14015 14261,13932 14218,13834
 # 
@@ -298,7 +298,7 @@ Triftstr.: Planung von Radverkehrsanlagen	?::projected 11940,22587 11959,22696 1
 Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823 11442,17664 11457,17585 11482,17459 11508,17315 11522,17248 11541,17153 11570,17028 11598,16878 11621,16749 11630,16623 11655,16486 11659,16457 11673,16367
 # 
 #: osm_watch: node id="29420748" version="5"
-#: last_checked: 2017-04-10
+#: last_checked: 2017-07-29
 #: check_frequency: 90d
 Berliner Allee/Tassostr.: Bau einer Ampel	?::projected 13591,15969 13623,15954 13653,15938
 #: by: ^^^
@@ -360,6 +360,9 @@ Bersarinplatz: Verbesserung "Radweganbindung Ostseite"	?::projected; 13730,12535
 Rothenbachstr.: Verbesserung -> wird der frühere Radweg wieder aktiviert?	?::projected; 12144,18436 11950,18529
 # 
 #: osm_watch: way id="111283481" version="10"
+#: XXX hier gibt es Bauarbeiten --- vielleicht Vorarbeiten für die Radspuren?
+#: last_checked: 2017-07-29
+#: next_check: 2017-09-01
 Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected; 15662,16656 15437,16491
 # 
 #: last_checked: 2017-06-04
@@ -424,7 +427,7 @@ Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22351
 (An der Straßenbahn): Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected 21539,17442 21555,17546 21559,17617 21576,17678 21639,17803 21698,17920 21726,17974 21804,18125 21843,18198
 # 
 #: XXX routing_helper ggfs. anpassen
-#: last_checked: 2017-07-01
+#: last_checked: 2017-07-29
 Frankfurter Allee: Zweirichtungsradweg	?::projected; 15717,12010 15670,12022
 # 
 #: osm_watch: way id="31525575" version="14"
@@ -437,6 +440,7 @@ Falkenberger Chaussee: Verbesserung -> Radspuren oder Asphaltierung des Radwegs?
 # 
 #: osm_watch: way id="40520565" version="25"
 #: osm_watch: way id="51317007" version="18"
+#: last_checked: 2017-07-29
 Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 16837,17440 16578,17285 16460,17214 16352,17150 16318,17128
 # 
 #: osm_watch: way id="40816680" version="8"
@@ -480,10 +484,10 @@ Hegemeisterweg: Asphaltierung	?::projected 17522,8220 17202,8391
 #: last_checked: 2017-06-03
 Fanningerstr.: Asphaltierung	?::projected 16456,12191 16359,12207 16255,12224
 # 
-Seefelder Str.: "Radweganbindung"	?::projected 17273,16187 17371,16194 17383,16197
+# REMOVED (realisiert) --- Seefelder Str.: "Radweganbindung"	?::projected 17325,16189 17362,16189 17383,16197
 # 
 #: osm_watch: way id="147557793" version="9"
-#: last_checked: 2017-06-03
+#: last_checked: 2017-07-29
 Gensinger Str.: Radstreifen	?::projected 18586,12151 18927,12135 19094,12127 19148,12073 19138,11815 19136,11739 19135,11713 19121,11681 19035,11671 19005,11705 19005,11767 19004,11780
 # 
 #: XXX evtl. ein kleinerer Abschnitt (z.B. nur der H-Abschnitt)
@@ -492,7 +496,7 @@ Gensinger Str.: Radstreifen	?::projected 18586,12151 18927,12135 19094,12127 191
 Siegfriedstr.: Radstreifen	?::projected 16860,12861 16859,12613 16857,12600 16826,12408 16820,12339 16794,12144 16764,11919
 # 
 #: osm_watch: way id="27959240" version="26"
-#: last_checked: 2017-07-23
+#: last_checked: 2017-07-29
 Marzahner Chaussee: Radstreifen	?::projected 18586,12151 18635,12224 18654,12255 18715,12348 18748,12399 18773,12438 18882,12618 19005,12822 19069,12929 19123,13067 19180,13219 19198,13272 19181,13485
 # 
 #: XXX nicht eindeutig: "Asphaltierung Kameruner Straße Fahrradstraße Togostraße" --- könnte im Minimalfall nur die Kreuzung sein
@@ -684,12 +688,12 @@ Karlinekenweg: neue Straße, Qualität, genaue Lage?	? 11359,20297 11409,20191 114
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5550
 #: XXX Umsetzung bis 2017
-#: last_checked: 2017-07-01
+#: last_checked: 2017-07-29
 #: check_frequency: 90d
 Landsberger Allee: Ausbau der Radwege	? 18057,14549 17848,14523 17533,14484 17254,14451 17055,14432 16852,14412 16632,14390 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308 15430,14262 15256,14237 14964,14123 14954,14119 14871,14087 14771,14048 14218,13834
 # 
 #: XXX evtl. im Zusammenhang des Bebauungsplans 11-123
-#: last_checked: 2017-06-04
+#: last_checked: 2017-07-29
 #: check_frequency: 120d
 Baumarkt (?) wird gebaut: wird es eine Durchfahrmöglichkeit geben?	?::inwork 17010,14269 17060,14255 17199,14269
 # 
@@ -755,9 +759,9 @@ Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11445,15920 11492,15
 #: XXX ab Frühjahr 2017 für vier Jahre
 #: XXX evtl. gibt es Einschränkungen wegen der Bauarbeiten
 #: XXX qualitaet: -> Q0 vermutlich
-#: last_checked: 2017-06-04
-#: check_frequency: 60d
-Schönstr.: Neubau geplant	?::projected 13391,16436 13630,16629 13789,16775 13861,16836 13998,16956 14136,17170
+#: last_checked: 2017-07-29
+#: check_frequency: 120d
+Schönstr.: Neubau geplant	?::projected 13391,16436 13630,16629 13794,16773 13870,16837 13974,16924 13996,16959 14136,17170
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/beschreibung_konigsweg.pdf
 #: XXX wird auch der Parallelweg zur Wohngebietsstraße ausgebaut?
@@ -1799,11 +1803,15 @@ Wröhmännerpark: nach den Bauarbeiten "gelber Farbasphalt", vermutlich für Radfah
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: XXX fehlt in Berlin.coords.data, PLZ=10315
 #: osm_watch: way id="404451458" version="2"
-#: last_checked: 2017-06-03 vvv
+#: last_checked: 2017-07-29 vvv
 #: check_frequency: 60d vvv
-Alt-Friedrichsfelde [Wohngebiet]: neue Straße	?::inwork 18730,11833 18730,11833 18899,11824
+# REMOVED (aufgenommen) Alt-Friedrichsfelde [Wohngebiet]: neue Straße	?::inwork 18717,11835 18730,11834 18896,11824
 #: XXX_prog: duplizierter Eintrag wegen .check_missing_streets
 An der Hansekogge	? 18702,11921 18888,11910 18913,11909
+Alt-Friedrichsfelde: Teilstück prüfen	? 18896,11824 18849,11827
+#: XXX eventuell wird sich der Straßenverlauf an der Gensinger Str. noch ändern
+#: osm_watch: way id="404451458" version="2"
+Im Achterkastell	? 18875,11880 18913,11909
 #: check_frequency ^^^
 #: last_checked ^^^
 #: by ^^^
@@ -1884,13 +1892,14 @@ Seehausener Str.: vielleicht Bau eines Zebrastreifens	?::projected 18520,17525 1
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6391
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6616
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (auch erwähnt, ohne besondere Richtung)
-#: XXX Baubeginn Ende 2016, mittlerweile ab April 2018
+#: XXX Baubeginn Ende 2016, mittlerweile ab April 2018 --- allerdings sind schon jetzt hier Bauarbeiten, bis Ende August 2017
 #: osm_watch: way id="4068148" version="16"
 #: osm_watch: way id="27942935" version="9"
 #: osm_watch: way id="11663312" version="14"
 #: osm_watch: way id="4689343" version="14"
-#: last_checked: 2017-06-03
-#: next_check: 2018-04-01
+#: source_id: 2147341322
+#: last_checked: 2017-07-29
+#: next_check: 2017-08-31
 Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 18215,12123
 # 
 # REMOVED --- #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.331148.php --- #: XXX bis voraussichtlich Ende Oktober 2015 war hier gesperrt, danach wird eventuell auch der Havelradweg über diesen Weg geführt --- #: last_checked: 2016-10-08 --- Schleuse - Lindenufer: führt der Havelradweg hier entlang?	? -2942,14666 -2928,14666 -2913,14628 -2910,14534 -2918,14496 -2964,14478
@@ -2578,11 +2587,15 @@ Bebauungsplan 10-77: werden hier neue Straßen entstehen?	?::projected 21483,1652
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2016
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: XXX Privatstraßen
-#: last_checked: 2017-02-25 vvv
-#: check_frequency: 270d vvv
+#: last_checked: 2017-07-29 vvv
+#: check_frequency: 120d vvv
+#: osm_watch: way id="497699540" version="2"
 Agnethaweg	?::projected 17221,15181 17245,15182 17314,15186 17336,15187
+#: osm_watch: way id="497699542" version="2"
 Anni-Frid-Weg	?::projected 17227,15054 17258,15054 17323,15055 17346,15055
+#: osm_watch: way id="497699539" version="2"
 Bennyweg	?::projected 17245,15182 17258,15054
+#: osm_watch: way id="497699541" version="2"
 Björnweg	?::projected 17314,15186 17323,15055
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -2890,7 +2903,7 @@ ehem. Kinderklinik Lindenhof: werden hier Straßen entstehen?	?::inwork 17357,125
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036562139600/562139600/00280924/24-Anlagen/01/DS0330_VzK_Strassenbenennung_SiegfriedHirschma.pdf
 #: XXX fehlt in Berlin.coords.data; Benennung soll zum 2017-07-01 wirksam werden
 #: XXX zuführende Straßen/Wege müssen auch eingezeichnet werden
-#: next_check: 2017-08-01
+#: last_checked: 2017-07-29
 Siegfried-Hirschmann-Park: neue private Platzfläche, Qualität, genaue Lage?	?::inwork 14730,11529 14800,11441
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/bebauungsplanung/artikel.81905.php
