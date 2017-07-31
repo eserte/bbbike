@@ -20,11 +20,11 @@
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraße wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
-#: last_checked: 2017-07-29
+#: last_checked: 2017-07-31
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2017-07-29
+#: last_checked: 2017-07-31
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3 14254,11377 14211,11229
 # 
 #: last_checked: 2017-07-20
@@ -283,10 +283,10 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 Böckhstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 11640,9710 11411,9810
 # 
 #: source_id: 2147341140
-#: XXX laut fritz bis 31.07.2017, laut vmz bis Ende Juli 2017
-#: last_checked: 2017-06-09
-#: next_check: 2017-07-31
-#: valid: -20170915
+#: XXX laut fritz bis 07.09.2017, laut vmz bis Ende Oktober 2017
+#: last_checked: 2017-07-31
+#: next_check: 2017-09-07
+#: valid: -20171031
 Erkelenzdamm: Bauarbeiten zwischen Böcklerstr. und Kohlfurter Str., Fahrbahn gesperrt, Bordsteine	q3::inwork 10967,10092 11038,10247 11094,10261
 # 
 #: source_id: 2147341145
@@ -339,7 +339,7 @@ Englische Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,1
 #: XXX nach Abschluss wieder den alten Eintrag (siehe unten) aktivieren
 #: by: http://www.dafmap.de/d/berlin.html?id=3027&mt=0&zoom=17
 #: XXX geplanter Projektabschluss laut dafmap: 2018-07-31
-#: last_checked: 2017-07-03
+#: last_checked: 2017-07-31
 #: next_check: 2018-06-30
 Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5894,12480 5944,12548
 # 
@@ -362,7 +362,7 @@ Kiehlufer: Bauarbeiten, Fahrbahn gesperrt, Bordsteine beim Ausweichen auf dem Ge
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 
 #: next_check_id: DIESEL-2015
-#: last_checked: 2017-06-03
+#: last_checked: 2017-07-31
 #: check_frequency: 60d
 Dieselstr., Umfahrung: Fußgänger, kurvig, eng	q2-::inwork 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112 14429,8074 14471,8046
 # 
@@ -431,18 +431,7 @@ Möllendorffstr.: Bauarbeiten, Radfahrer müssen auf die gegenüberliegende Seite w
 # 
 ### Prenzlauer Berg ###
 # 
-#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml vvv
-#: source_id: IM_025877 vvv
-#: source_id: 2147339245 vvv
-#: last_checked: 2017-06-28 vvv
-#: next_check: 2017-08-01 vvv
-Jülicher Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
-Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
-#: next_check ^^^
-#: last_checked ^^^
-#: source_id ^^^
-#: source_id ^^^
-#: by ^^^
+# REMOVED (-> wieder temp_blocking) --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml vvv --- #: source_id: IM_025877 vvv --- #: source_id: 2147339245 vvv --- #: source_id: 2147339553 vvv --- #: last_checked: 2017-06-28 vvv --- #: next_check: 2017-08-02 vvv --- Jülicher Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603 --- Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
 # 
 #: last_checked: 2017-07-30
 #: check_frequency: 14d
@@ -761,9 +750,10 @@ Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 #: next_check_id: SPREERADWEGEINSTEINUFER-2014
 #: XXX Bauarbeiten, wird der Weg später breiter sein?
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/fahr_rat_20_sitzung.pdf (Verbreiterungen)
-#: last_checked: 2017-07-11
+#: last_checked: 2017-07-31
 #: check_frequency: 14d
-(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3358,12718 3396,12741 3476,12735 3582,12704 3654,12672 3763,12624 3837,12618 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3358,12718 3396,12741 3476,12735 3582,12704 3654,12672 3763,12624 3837,12618
+(Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3837,12618 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491
 (Rad- und Wanderweg an Spree und Landwehrkanal): einige Fußgänger	q1 4642,12491 4817,12366 5045,12243 5147,12164 5261,12004 5361,11910
 #: note: Radfahren erlaubt, Fußgänger haben Vorrang
 Spreeufer: Fußgänger, besonders an schönen Tagen	q2 10166,12777 10105,12855 9977,12912 9944,12921 9930,12947 9900,12942 9724,12992 9716,12971 9707,12974
@@ -921,7 +911,7 @@ Beruner Str.: Rampen, Fußgänger, U-Bahn-Ausgang	q3 20143,10731 20215,10554
 (Parkweg Spreebogenpark): besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 8021,12832 8036,12855 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
 Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 7908,12804 7945,12878 7966,12913 8044,12989 8159,13032
 #: note: Radfahren erlaubt:
-Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 8257,13037 8277,13032 8317,13015 8401,12973 8464,12919 8498,12870 8529,12757 8566,12661 8587,12642 8635,12629 8754,12622
+Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 8257,13037 8277,13032 8317,13015 8408,12968 8464,12919 8498,12870 8529,12757 8538,12710 8574,12662 8635,12629 8754,12622
 Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 8635,12629 8709,12605 8756,12608
 Helenenhof: enge Tore, Fußgänger	q3 14506,11275 14395,11356
 Färberstr. - Uferweg: sehr eng	q2 21662,4974 21665,5035 21696,5053
@@ -2549,6 +2539,7 @@ Goldlärchenweg: schmal, einige Fußgänger	q1 -6314,6104 -6301,6126 -6385,6185
 Mascha-Kaléko-Weg: enger Pfad	q3 -6449,5282 -6474,5216 -6474,5144
 (Rellstabweg - Weg zwischen Bullengraben und Lutoner Str.): Fußgänger	q2 -5860,13283 -5788,13291
 (Springerzeile - Weg zwischen Bullengraben und Lutoner Str.): Fußgänger	q2 -5878,13384 -5789,13398
+Lüdtgeweg: einige Fußgänger	q1 4136,12494 4129,12619
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

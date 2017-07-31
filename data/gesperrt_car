@@ -218,14 +218,14 @@ Spandauer Str. -> Am Nußbaum: Spandauer Str. (Mitte)	3::igndisp 10673,12434 1064
 Am Nußbaum -> Spandauer Str.: Spandauer Str. (Mitte)	3::igndisp 10626,12455 10644,12469 10601,12521
 Siegfriedstr.	1 12342,6936 12479,6969 12664,7013 12810,7047 12843,7093 12872,7134
 Onkel-Herse-Str.	1 13680,4715 13757,4729 13836,4759 13853,4759 13939,4778
-Paulstr.	3nocross::ignrte 7051,12426 7077,12570 7085,12610
-Paulstr. -> Spreeuferweg: Paulstr.	3::igndisp 7051,12426 7077,12570 6996,12560
-Paulstr. -> Joachim-Karnatz-Allee: Paulstr.	3::igndisp 7085,12610 7077,12570 7142,12584
-Spreeuferweg -> Paulstr.: Paulstr.	3::igndisp 6996,12560 7077,12570 7085,12610
-Spreeuferweg -> Joachim-Karnatz-Allee: Paulstr.	3::igndisp 6996,12560 7077,12570 7142,12584
-Joachim-Karnatz-Allee -> Paulstr.: Paulstr.	3::igndisp 7142,12584 7077,12570 7051,12426
-Joachim-Karnatz-Allee -> Spreeuferweg: Paulstr.	3::igndisp 7142,12584 7077,12570 6996,12560
-Holsteiner Ufer	1 6580,12775 6449,12865 6347,12901
+Paulstr.	3nocross::ignrte 7051,12426 7077,12575 7085,12610
+Paulstr. -> Spreeuferweg: Paulstr.	3::igndisp 7051,12426 7077,12575 7064,12560
+Paulstr. -> Joachim-Karnatz-Allee: Paulstr.	3::igndisp 7085,12610 7077,12575 7139,12589
+Spreeuferweg -> Paulstr.: Paulstr.	3::igndisp 7064,12560 7077,12575 7085,12610
+Spreeuferweg -> Joachim-Karnatz-Allee: Paulstr.	3::igndisp 7064,12560 7077,12575 7139,12589
+Joachim-Karnatz-Allee -> Paulstr.: Paulstr.	3::igndisp 7139,12589 7077,12575 7051,12426
+Joachim-Karnatz-Allee -> Spreeuferweg: Paulstr.	3::igndisp 7139,12589 7077,12575 7064,12560
+Holsteiner Ufer	1 6575,12778 6449,12865 6347,12901
 Händelallee	1 6082,12273 6130,12232 6280,12222 6265,12134 5998,12105 5961,12134
 Wundstr.	1 2254,11051 2272,11074 2346,11147
 Kühler Weg	1 841,9914 743,9772 616,9602

@@ -8231,7 +8231,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_005439',
        data  => <<EOF,
-userdel	q4::temp 6173,12396 6276,12506 6314,12518 6444,12536
+userdel	q4::temp 6173,12396 6276,12506 6314,12518 6442,12545
 EOF
      },
      { from  => $isodate2epoch->("2017-05-12 00:00:00"), # 1 Tag Vorlauf
@@ -23730,6 +23730,7 @@ EOF
 #: note: am Sa, den 2016-12-10 gegen 13:00: geschlossen
 #: note: am Fr, den 2017-02-10 gegen 18:30: offen
 #: note: am Fr, den 2017-04-07 gegen 09:30: offen
+#: note: am Mo, den 2017-07-31 gegen 09:00: offen
 #: tempex: volatile vvv
 	3::night 14563,8243 14425,8116 14419,8112
 	3::night 14419,8112 14425,8116 14563,8243
@@ -24429,20 +24430,16 @@ EOF
 userdel	q3::inwork 11325,12021 11275,12055
 EOF
      },
-     { from  => 1439228045, # $isodate2epoch->("2015-07-22 00:00:00"), # 1436738400, # 2015-07-13 00:00
-       until => 1439317391, # -> handicap_s-orig --- $isodate2epoch->("2017-07-14 00:00:00"),
-       text  => 'Jülicher Str. und Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke, voraussichtlich ab 10. August 2015 für ca. zwei Jahre',
+     { from  => 1501525982, # $isodate2epoch->("2015-07-22 00:00:00"), # 1436738400, # 2015-07-13 00:00
+       until => $isodate2epoch->("2017-08-09 12:00:00"),
+       text  => 'Jülicher Str. und Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke, voraussichtlich bis 9. August 2017',
        type  => 'handicap',
        source_id => 'http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml',
        data  => <<EOF,
-#: next_check: 2015-08-10 vvv
-#: priority: #A vvv
 #: source_id: IM_025877	vvv
 	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
 	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
 #: source_id ^^^
-#: priority ^^^
-#: next_check ^^^
 EOF
      },
      { from  => undef, # 
@@ -25330,13 +25327,13 @@ EOF
 	3 6377,8460 6461,8463 6534,8467
 EOF
      },
-     { from  => 1465682400, # 2016-06-12 00:00
-       until => 1472760879, # $isodate2epoch->("2016-09-02 23:59:59"),
-       text  => 'Werneuchener Str.: Richtung Konrad-Wolf-Str. ab Küstriner Str. Baustelle, Fahrtrichtung gesperrt, 13.06.2016 bis 02.09.2016',
+     { from  => 1501526175, # 1465682400, # 2016-06-12 00:00
+       until => $isodate2epoch->("2017-09-15 12:00:00"),
+       text  => 'Werneuchener Str.: zwischen Genslerstr. und Goeckestr. Bauarbeiten, gesperrt bis Mitte September 2017',
        type  => 'handicap',
-       source_id => '2147340189',
        data  => <<EOF,
-userdel	q4::inwork; 16314,15223 16119,15302
+#: by: fritz
+userdel	q3::inwork 16768,14849 16610,15000 16514,15092
 EOF
      },
      { from  => undef, # 
@@ -25704,7 +25701,7 @@ EOF
        data  => <<EOF,
 #: XXX Wann sind die Bauarbeiten beendet? Wird die Qualität danach besser sein? vvv
 #: osm_watch: way id="136814135" version="15" vvv
-#: last_checked: 2017-07-15 vvv
+#: last_checked: 2017-07-31 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier nicht) --- userdel	2::inwork 3332,12742 3396,12741
 # REMOVED (hier nicht) --- userdel	2::inwork 3396,12741 3358,12718
@@ -25881,8 +25878,8 @@ userdel auto	3 10584,12507 10601,12521 10431,12709
 EOF
      },
      { from  => 1485206028, # 2017-01-23 22:13
-       until => $isodate2epoch->("2017-07-31 12:00:00"), # 1496440800, # 2017-06-03 00:00
-       text  => 'Stubenrauchstr.: zwischen Wiesbadener Str. und Rotdornstr. Bauarbeiten, Fahrbahn gesperrt, bis 31. Juli 2017',
+       until => $isodate2epoch->("2017-08-04 12:00:00"), # 1496440800, # 2017-06-03 00:00
+       text  => 'Stubenrauchstr.: zwischen Wiesbadener Str. und Rotdornstr. Bauarbeiten, Fahrbahn gesperrt, bis 04. August 2017',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: LMS-BR_r_LMS-BR_88478
@@ -26135,7 +26132,7 @@ EOF
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-07-29
+#: last_checked: 2017-07-31
 #: check_frequency: 14d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
@@ -26147,7 +26144,7 @@ EOF
        source_id => 'http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_27_3021_3144_online.pdf',
        data  => <<EOF,
 userdel	2::temp 8044,12989 8110,13042 8116,12938 8053,12871 8032,12889
-userdel	2::temp 8277,13032 8317,13015 8401,12973 8464,12919 8480,12909 8503,12895 8424,12853 8309,12758 8206,12757 8120,12756 8030,12824 8124,12840
+userdel	2::temp 8277,13032 8317,13015 8408,12968 8464,12919 8480,12909 8503,12895 8424,12853 8309,12758 8206,12757 8120,12756 8030,12824 8124,12840
 userdel	2::temp 8168,12945 8235,12945 8304,12938 8370,12902
 userdel	2::temp 8116,12938 8124,12840 8120,12756 8122,12603 8119,12414
 userdel	2::temp 8464,12919 8498,12870
@@ -26167,7 +26164,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_27_3021_3144_online.pdf',
        data  => <<EOF,
-userdel	2::temp 7215,12295 7031,12320 7040,12366 7051,12426 7077,12570
+userdel	2::temp 7215,12295 7031,12320 7040,12366 7051,12426 7077,12575
 userdel	2::temp 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6787,12099 6831,12150 7001,12274 7031,12320 7383,12095
 userdel	2::temp 6694,12627 7031,12320
 	3 7183,12372 7122,12384 7051,12426 6859,12567 6808,12604
@@ -26350,6 +26347,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730',
        data  => <<EOF,
+#: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.617043.php
 userdel	q4::inwork 17734,675 17928,764 18023,833
 EOF
      },

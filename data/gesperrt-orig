@@ -120,6 +120,10 @@ Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
 # REMOVED (aufgehoben) Grünau/B179	1 22007,711 21862,807
 # REMOVED (aufgehoben) Grünau/B179	1 21862,807 21904,876 21977,988 22044,1018 22092,999
 Dorfplatz	1 21074,-475 20986,-529 20890,-546 20827,-537 20999,-489 21074,-475
+#: XXX Straße wird zu einer Stadttraße umgebaut; auf der südöstlichen Seite wird ein Zweirichtungsradweg+gehweg entstehen; außerdem wird es eine Rampe zur Straße "Am Falkenberg" geben
+#: by: http://www.berlin.de/senuvk/bauen/strassenbau/b96a/index.shtml
+#: by: http://www.berlin.de/senuvk/bauen/strassenbau/b96a/download/lageplan_07.pdf
+#: next_check: 2018-06-01
 B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532 21819,1595 21541,1739
 Zufahrt zur B96a	2 20288,-511 20272,-501
 Olivaer Platz	1 4239,10358 4172,10406 4157,10418
@@ -1169,8 +1173,8 @@ Gravensteinstr.	1s:q3 12229,22457 12185,22465
 Hauptstr. (Französisch Buchholz)	1s:q3 12199,22367 12229,22457
 Karlplatz	1 8676,12976 8711,12986
 Hundsfelder Str.	1 21898,-303 21811,-409 21700,-537 21688,-589
-Joachim-Karnatz-Allee	1 7175,12630 7187,12598 7418,12601
-Joachim-Karnatz-Allee	1 7419,12584 7144,12580 7142,12584 7131,12615
+Joachim-Karnatz-Allee	1 7175,12630 7184,12602 7418,12601
+Joachim-Karnatz-Allee	1 7419,12584 7144,12580 7139,12589 7131,12615
 Waldkraiburger Str.: Betriebsgelände	2 12283,4971 12468,5000
 # 
 ######################################################################
@@ -2203,7 +2207,7 @@ Schranke	BNP:3::trailer=10 5296,11529
 # 
 #: next_check_id: DIESEL-2015 vvv
 #: note: mittlerweile gibt es hier auch zwei Baustellenampeln mit Anforderung, allerdings wird relativ schnell auf grün geschaltet vvv
-#: last_checked: 2017-06-03 vvv
+#: last_checked: 2017-07-31 vvv
 #: check_frequency: 60d vvv
 Drängelgitter	BNP:5::trailer=10 14364,8096
 Drängelgitter	BNP:5::trailer=10 14405,8115
@@ -2862,8 +2866,8 @@ Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19143,11
 Schinkelplatz: Einbahnstraße	1s:q3 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
 # 
 #: next_check_id: RATHAUSWEDDING-2017
-#: last_checked: 2017-06-28
-#: check_frequency: 45d
+#: last_checked: 2017-07-31
+#: check_frequency: 30d
 Limburger Str.: Bauarbeiten am Rathaus Wedding, komplett gesperrt	2::inwork 7129,15717 7012,15571
 # 
 #: source_id: 2147339182
@@ -2921,7 +2925,7 @@ Heidelberger Str.: Baustelle, Einbahnstraßenregelung	1s:q3 13489,9199 13420,9259
 #: source_id: LMS-BR_r_LMS-BR_82028
 #: osm_watch: way id="42091230" version="19"
 #: osm_watch: way id="52960100" version="10"
-#: last_checked: 2017-07-14 vvv
+#: last_checked: 2017-07-31 vvv
 #: next_check: 2017-08-30 vvv
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q3 8732,14098 8654,14194
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q4 8654,14194 8607,14253 8527,14352 8442,14456
@@ -2944,7 +2948,7 @@ Nöldnerstr.: Bauarbeiten, Einbahnstraße	1s:q4 15272,10790 15388,10758 15433,1076
 Türrschmidtstr.: Bauarbeiten, Einbahnstraße	1s:q3 15541,10892 15649,10922 15756,10966
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3853&mt=0&zoom=16
-#: last_checked: 2017-07-23
+#: last_checked: 2017-07-31
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3 9042,11839 8969,11814
 # 
 #: XXX danach könnte die Qualität der Wege besser sein
@@ -3032,7 +3036,7 @@ Nalepastr.: wegen Straßenbau gesperrt	2::inwork 17190,7306 17211,7280 17219,7268
 # REMOVED (fertig) --- #: next_check_id: FISCHERINSEL-2015 vvv --- #: source_id: 2147339543 vvv --- #: last_checked: 2016-12-16 vvv --- #: next_check: 2016-12-22 vvv --- Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 --- Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10687,11853 10869,11949 --- Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10672,11870 --- Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,11853 10869,11949
 # 
 #: next_check_id: DIESEL-2015
-#: last_checked: 2017-07-18
+#: last_checked: 2017-07-31
 #: check_frequency: 60d
 Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 14471,8046
 # 
@@ -3040,8 +3044,8 @@ Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 144
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/gerickesteg/index.shtml (20 Monate Bauzeit)
 #: XXX laut http://www.stadtentwicklung.berlin.de/bauen/strassenbau/ bis "II. Quartal 2017"
 #: osm_watch: way id="27250334" version="7"
-#: last_checked: 2017-07-11
-#: check_frequency: 90d
+#: last_checked: 2017-07-31
+#: check_frequency: 60d
 Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,12669 6765,12680
 # 
 #: XXX Sperrungen wegen Bauarbeiten für die IGA 2017 vvv
@@ -3155,7 +3159,7 @@ am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14463,10212
 #: by: http://www.rbb-online.de/politik/beitrag/2014/07/bnd-zentrale-berlin-verzoegerung-vollstaendiger-umzug-bis-2017.html
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7441
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/1767-2016-bav-zu-ds-2814-iv-durchwegung_scharnhorst-chaussestrasse_sb.pdf
-#: last_checked: 2017-07-14
+#: last_checked: 2017-07-31
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: Durchfahrt noch nicht zuverlässig offen	2::inwork 8251,14337 8442,14456
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
@@ -3218,7 +3222,7 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 #: XXX geplante Fertigstellung (als Autostraße) im Dezember 2013
 #: XXX wrote Mail about current status (2013-11-05), no response
 # REMOVED --- osm_watch: way id="183406331" version="3"
-#: last_checked: 2017-06-28
+#: last_checked: 2017-07-31
 #: check_frequency: 120d
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
@@ -3247,7 +3251,7 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7641
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/artikel.563115.php
 #: osm_watch: way id="501191631" version="1"
-#: last_checked: 2017-06-08
+#: last_checked: 2017-07-31
 #: check_frequency: 360d
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 # 
@@ -3261,7 +3265,7 @@ Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,2
 # 
 #: note: Baugelände
 #: osm_watch: way id="33036326" version="6"
-#: last_checked: 2017-07-15
+#: last_checked: 2017-07-31
 #: check_frequency: 180d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
@@ -3288,7 +3292,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2017-07-23
+#: last_checked: 2017-07-31
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
@@ -3456,12 +3460,12 @@ Theodor-Heuss-Weg	1s 9197,14562 9128,14461 9081,14363
 tragen / schieben (Treppe 10 Stufen oder wilder Weg)	0:20 9223,14608
 Tor	BNP:0 3332,12742
 tragen (Treppe, 14 Stufen)	0:30 7931,12869
-Ingeborg-Drewitz-Allee	1 7365,12775 7388,12746 7541,12751 7542,12736 7377,12729 7367,12729 7343,12758
+Ingeborg-Drewitz-Allee	1 7365,12775 7386,12749 7541,12754 7542,12736 7377,12729 7362,12731 7343,12758
 tragen (Treppe)	0:30 5714,12279
 Altonaer Str.: Mittelstreifen schlecht zu queren	3nocross 6025,12494 6090,12451 6173,12396
 tragen (Treppe)	0:30 8159,13042
 tragen (Treppe)	0:30 8276,13041
-Hanseatenweg	1 6444,12536 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518
+Hanseatenweg	1 6442,12545 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518
 Heerstr.	3nocross -1050,11061 -848,11086 -779,11093 -733,11098 -593,11119
 Heerstr.	3nocross -593,11119 -511,11127 -406,11141 -360,11145 -82,11178
 Heerstr.	3nocross -82,11178 16,11190 229,11213 438,11236 504,11243

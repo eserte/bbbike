@@ -496,7 +496,7 @@ asphaltiert	RW1; 10982,16121 10989,16197 10997,16280 11004,16360
 	RW2;RW2 10975,16896 10927,17022
 	RW1; 6661,13130 6608,12858
 #: note: früher ein Zweirichtungsradweg, heute nur noch ein breiter Radweg, teilweise mit expliziten Richtungspfeilen
-	RW1; 6608,12858 6580,12775 6522,12662 6516,12650 6491,12607 6444,12536 6314,12518 6276,12506 6173,12396 6082,12273 5961,12134 5917,12079 5898,12017 5900,11913
+	RW1; 6608,12858 6575,12778 6522,12662 6516,12650 6500,12605 6480,12563 6442,12545 6314,12518 6276,12506 6173,12396 6082,12273 5961,12134 5917,12079 5898,12017 5900,11913
 	RW2;RW2 -2317,11254 -2413,11283 -2476,11301 -2851,11417 -3069,11487
 #: next_check_id: HEERSTR-2016
 #: XXX während der Bauarbeiten Zweirichtungsradweg
@@ -885,7 +885,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736 20755,5750
 #: XXX laut fritz "geänderte Straßenführung" bis 31.12.2016, laut vmz bis Ende Juli 2017
 #: source_id: IM_023718
 #: source_id: 2147339540
-#: last_checked: 2017-07-18 vvv
+#: last_checked: 2017-07-31 vvv
 # REMOVED, siehe unten ---	RW1; 14174,7505 14334,7395 14369,7376
 # REMOVED --- RW2; 14519,7301 --- #: note: vermutlich: --- RW2; 14519,7301
 	RW8;RW2 14519,7301 14369,7376 14334,7395 14174,7505
@@ -1138,7 +1138,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW10; 18225,7004 18010,71
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
-#: last_checked: 2017-06-27
+#: last_checked: 2017-07-31
 #: check_frequency: 90d
 	RW8;RW2 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
@@ -1355,7 +1355,12 @@ Busspur ist immer gültig	RW5; 7123,14367 7180,14419
 	RW3;RW3 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021
 	RW3;RW4 7104,14403 7123,14367
 Radweg teilweise nur aufgemalt, hereinragende parkende Autos	RW1; 4187,13704 4271,13735 4421,13793 4583,13845 4963,13969 5100,14014 5220,14043
-Gehwegplatten/Verbundsteinpflaster, hereinragende parkende Autos	RW1; 5220,14043 5100,14014 4963,13969 4583,13845 4421,13793 4271,13735 4187,13704
+Gehwegplatten/Verbundsteinpflaster, hereinragende parkende Autos	RW1; 5220,14043 5100,14014 4963,13969 4583,13845
+#: XXX Bauarbeiten, später gibt's hier eine Radspur
+#: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Sickingenstrasse-Huttenstrasse-Verkehrsbe.7507.0.html
+#: last_checked: 2017-07-31
+	RW0; 4583,13845 4421,13793 4271,13735
+Gehwegplatten/Verbundsteinpflaster	RW1; 4271,13735 4187,13704
 # REMOVED --- Radweg teilweise nur aufgemalt, hereinragende parkende Autos	RW1;RW1 5306,14061 5322,14044 5443,14028 --- Radweg teilweise nur aufgemalt, hereinragende parkende Autos	RW1; 5443,14028 5647,14067 --- existierender Radweg explizit abgesperrt	RW0; 5647,14067 5443,14028 --- Radweg teilweise nur aufgemalt, hereinragende parkende Autos	RW1;RW1 5647,14067 5708,14077 5746,14090
 #: note: alter Bürgersteigradweg existiert teilweise noch zusätzlich
 	RW3;RW3 5322,14044 5443,14028 5647,14067 5708,14077 5746,14090
@@ -1404,7 +1409,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr und samstags am Vormittag
 	RW1;RW1 8736,337 8584,320 8470,329 8382,347 8250,392 8075,499 7937,583
 	RW1;RW2 7937,583 7790,672
 	RW4;RW4 7031,12320 7040,12366 7051,12426
-	RW1;RW1 7051,12426 7077,12570 7085,12610 7111,12743 7172,13051
+	RW1;RW1 7051,12426 7077,12575 7085,12610 7111,12743 7172,13051
 	RW1;RW1 8161,16752 8082,16483 8093,16438
 	RW1;RW1 4144,18896 4211,18882 4346,18853 4466,18831 4570,18822 4640,18818 4650,18817 4767,18810 5171,18785
 	RW1;RW 5171,18785 5376,18773
@@ -1463,7 +1468,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 	RW3;RW3 11159,10769 11234,10739 11275,10723
 #: XXX Bauarbeiten, Radspuren teilweise aufgehoben
 #: XXX war: RW4;RW4
-#: last_checked: 2017-07-23
+#: last_checked: 2017-07-31
 #: check_frequency: 60d
 	RW0;RW0 8804,12280 8775,12457
 	RW4;RW4 8775,12457 8766,12541
@@ -1471,7 +1476,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2017-07-23
+#: last_checked: 2017-07-31
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -3197,6 +3202,9 @@ asphaltierter Gehweg für Radfahrer frei	RW1; 15620,19809 15424,19861
 #: note: Berliner Gehwegplatten
 Gehweg für Radfahrer frei	RW1; 15424,19861 15620,19809
 asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19906 15059,19935 14714,19841
+#: XXX nach den Bauarbeiten vermutlich ein separater Radweg
+#: by: http://www.berlin.de/senuvk/bauen/strassenbau/malchow/index.shtml
+#: next_check: 2020-01-01
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
 	RW1; 15642,19179 15640,19060 15611,18627 15610,18596
 	RW1;RW1 15642,19179 15604,19349 15597,19573 15617,19775 15620,19809
@@ -3373,7 +3381,7 @@ asphaltiert	RW1;RW1 17020,11748 17169,11677
 	RW6;RW6 6692,13333 6687,13545 6686,13746
 	RW6;RW6 6229,13517 6104,13522 6008,13529 5964,13535 5882,13548
 	RW6;RW6 5882,13548 5725,13566 5580,13587 5390,13616
-	RW6;RW6 7077,12570 7142,12584
+	RW6;RW6 7077,12575 7139,12589
 	RW6;RW6 7330,12871 7270,12870
 	RW6;RW6 5858,12425 5803,12356
 	RW1;RW2 -1994,11496 -1931,11437 -1885,11392 -1608,11133 -1538,11126
@@ -4499,6 +4507,7 @@ Verbundsteinpflaster	RW1; 19405,5284 19445,5271
 #: XXX Löffelbrücke: Gehweg während der Bauarbeiten gesperrt
 #: by: http://www.morgenpost.de/berlin/article210334009/Im-Berliner-Norden-droht-ein-neuer-Strassenengpass.html
 #: by: http://www.prenzlberger-stimme.de/?p=111198
+#: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2017/pressemitteilung.583882.php
 #: source_id: 2147341170
 #: next_check: 2017-12-31
 #gemeinsamer Rad- und Gehweg	RW2; 11915,19580 11911,19667 11909,19706 11907,19749
@@ -4597,7 +4606,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: next_check_id: KARLMARXSTR-2016
 #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus?
 #: osm_watch: way id="297058655" version="3"
-#: last_checked: 2017-06-02
+#: last_checked: 2017-07-31
 #: check_frequency: 60d
 	RW4; 12969,7610 12914,7785
 # REMOVED (wieder entfernt) --- #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus? --- #: last_checked: 2016-03-01 ---	RW3; 12898,7832 12865,7923 12830,8031 12794,8103 12753,8187
