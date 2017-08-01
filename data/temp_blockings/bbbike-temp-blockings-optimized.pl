@@ -2436,7 +2436,7 @@ userdel	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juli von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im August von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -4145,6 +4145,17 @@ userdel	q4::inwork 17734,675 17928,764 18023,833
          'text' => 'Ostburger Weg: Bauarbeiten zwischen Will-Meisel-Weg und Am Espenpfuhl, Fahrbahn gesperrt, ab Ende Juli bis Mitte Dezember 2017',
          'type' => 'handicap',
          'until' => 1513378799
+       },
+       {
+         'data' => '#: XXX Beeinträchtigung für Radfahrer feststellen...
+userdel	q4::inwork 13716,8410 13648,8321 13566,8212 13510,8138
+',
+         'from' => 1501618467,
+         'id' => 2891,
+         'source_id' => '2147341662',
+         'text' => 'Treptower Str.: zwischen Weigandufer und Stuttgarter Str. Bauarbeiten, Fahrbahn gesperrt, bis 18.08.2017',
+         'type' => 'handicap',
+         'until' => 1503093600
        }
      
 );

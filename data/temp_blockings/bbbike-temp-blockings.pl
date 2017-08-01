@@ -26351,4 +26351,14 @@ EOF
 userdel	q4::inwork 17734,675 17928,764 18023,833
 EOF
      },
+     { from  => 1501618467, # 2017-08-01 22:14
+       until => 1503093600, # 2017-08-19 00:00
+       text  => 'Treptower Str.: zwischen Weigandufer und Stuttgarter Str. Bauarbeiten, Fahrbahn gesperrt, bis 18.08.2017',
+       type  => 'handicap',
+       source_id => '2147341662',
+       data  => <<EOF,
+#: XXX Beeinträchtigung für Radfahrer feststellen...
+userdel	q4::inwork 13716,8410 13648,8321 13566,8212 13510,8138
+EOF
+     },
     );
