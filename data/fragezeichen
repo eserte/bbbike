@@ -499,7 +499,7 @@ Dahmeradweg: genauer Verlauf zwischen Freidorf und Briesen? Qualität? Wie verläu
 Stargarder Str. (Neubrandenburg): Qualität? Anscheinend ist die südliche Zufahrt für Autofahrer gesperrt?	? -1630,127445 -1676,127494 -1683,127549 -1690,127654 -1697,127769 -1703,127871 -1703,127973 -1702,128052 -1700,128072 -1703,128124 -1699,128173 -1689,128292
 Turmstr. (Neubrandenburg): Qualität?	? -1303,127882 -1547,127876 -1703,127871
 Treptower Str. (Neubrandenburg): Qualität?	? -1703,127871 -1806,127864 -1950,127864 -2105,127848 -2172,127845
-Sonnenweg: Qualität?	? 34046,155 34267,94 34309,59 34451,109 34606,-92 34905,-188 34972,-239 35100,-95
+Sonnenweg: Qualität?	? 34267,94 34309,59 34451,109 34606,-92 34905,-188 34972,-239 35100,-95
 Fürstenwalde: Qualität? Straßennamen?	? 55447,-4432 55677,-4489 55754,-4521 55793,-4521 55787,-4468 55740,-4453 55746,-4408 55888,-4384 56147,-4494 56517,-4606 56495,-4732
 Falkenberg - Wilmersdorf: Qualität?	? 67223,-1765 67432,-1337 67874,-787 67931,-717 68094,-376 68205,-201 68275,102 68336,222 68475,377 68583,444 68936,594 69213,658 69364,652
 Flottsteller Str. (Michendorf): Qualität (wahrscheinlich asphaltiert)?	? -15891,-10464 -15769,-10534 -15613,-10667 -15182,-10981 -15018,-11070 -14861,-11221
@@ -899,7 +899,6 @@ Vogelsangsruh: ist die gesamte Straße asphaltiert?	? 66431,84540 66638,84513
 Niederfelde: ist die gesamte Straße gepflastert?	? 66126,84243 66092,84252 66062,84129
 Auguststr. (Schwedt): Qualität des westlichen Abschnitts?	? 68135,73168 68517,73160 68591,73201 68777,73351
 Theodor-Fontane-Str.: Sackgasse oder Einbahnstraßenregelung?	? -9835,6841 -9854,6890
-Waldweg zum Campingplatz: Qualität der Straße?	? 29208,71 29512,-619 29297,-717 28915,-1147 28565,-1339 28248,-1473 28162,-1294 28033,-1259 27845,-1324 27758,-1358
 ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchgängig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	? 16377,90072 15782,90862 15728,90935 15398,92093 15661,93732 15688,93829 15748,93928 15841,94009 16435,94298 17677,94900 17796,95008 17912,95192
 ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchgängig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	? 17912,95192 18005,95449
 ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchgängig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	? 18029,95408 18507,96268 18676,96867 18954,97944 19022,98128 19442,99078 19582,99411
@@ -925,6 +924,7 @@ Leo-Bauer-Str.: Qualität? Genaue Lage? Existiert die Straße schon?	? -8560,8438 
 (Zugangsstraße zur Waldsiedlung): Straßenschilder? Qualität?	? -8666,8449 -8560,8438 -8499,8431
 Von-Oppen-Weg: Qualität? Wo befindet sich die Straße?	? -8445,8504 -8240,8450
 Uferweg von der Neuen Fahrt zum Hermannswerder: neuer Weg wird hier entstehen, Qualität?	?::inwork -12803,-2219 -12803,-2371 -12906,-2537 -13156,-2702
+Uferweg am Groß-Glienicker See: genaue Lage im südöstlichen Bereich des Sees? Qualität?	? -9759,5441 -9677,5430 -9478,5549 -9372,5532
 Am alten Dorf (Potsdam-Bornim): Qualität? Genaue Lage?	? -16800,1991 -16931,1783
 Albertshof - Rüdnitz: Qualität?	? 27662,33209 27529,33478 27432,33943 27363,34109 27324,34142 26862,34287 26720,34396 26678,34447 26312,34571 26195,34658 26086,34697 26113,34734
 Metzelthin - Jakobshagen: Qualität?	? 16156,85969 16221,86247 16293,86283 16299,86386 16405,86555 17060,86947 17760,87699 19179,88641 19396,88713
@@ -1071,13 +1071,12 @@ Blumenstr. - Am Krongut: existiert hier eine Verbindung für Radfahrer? Qualität?
 Mäckeritzbrücke: gibt es hier noch Radwege? Wenn ja, sind sie benutzungspflichtig?	? 1238,15705 1232,15804
 Christophstr.: existiert an dieser Stelle nur ein Fußweg? Qualität?	? 17938,16672 17923,16686
 Parkweg Eiswerder: Qualität? Nachts beleuchtet?	? -2427,15493 -2421,15547 -2430,15589 -2448,15612 -2441,15666 -2178,15797 -2150,15740
+Buchhorster Str.: Qualität?	? 34310,1418 34190,1425 34018,1436 33644,1463 33491,1480 33350,1494
 # added from ampeln-orig
 geschlossen bei Bedarf (?) (Zbr)	? 27657,-11741
 S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
 # added from strassen
-Teichmummelring (Qualität des Teichmummelrings?)	? 22246,2272 22418,2390 22454,2342 22271,2214
 Am Waldkiefernpfad (heißt die Straße "Am Waldkiefernpfad" oder "Am Waldkiefernweg"?)	? -6340,6500 -6268,6610 -6302,6690
-Abtweilerstr. (heißt die Straße "Abtweilerstraße" oder "Abtweiler Str."?)	? 29188,1086 29098,1148 29060,1179
 # added from landstrassen
 B5 (Umfahrung Nauen) (ist die Umfahrung Nauen auch für Radfahrer benutzbar?)	? -24421,19803 -24681,20018 -24904,20093 -25871,20229 -26745,20437 -27095,20987 -27689,21958 -28075,22250
 Kerzendorf - B101 (ist diese Strecke asphaltiert?)	? 2406,-15008 2327,-14968 2188,-14926 2073,-14964 1915,-14960 1811,-14965 1704,-14954 1640,-14947 1541,-14947 1529,-15164 1566,-15226 1577,-15749 1448,-15955 1513,-16010

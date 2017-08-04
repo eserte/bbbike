@@ -5910,7 +5910,7 @@ EOF
        text  => 'L 030 Spreebordstraße OL Neu Zittau Deckeneinbau Vollsperrung 06.10.2006-08.10.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 33839,-1057 33773,-1116 33628,-1509
+userdel	q4::inwork 33839,-1057 33743,-1143 33742,-1197 33638,-1495
 EOF
      },
      { from  => 1140303600, # 2006-02-19 00:00
@@ -12769,7 +12769,7 @@ EOF
        text  => 'L 030 Neu Zittauer Str. OD Erkner Straßenbauarbeiten halbseitig gesperrt; Einbahnstraße 12.09.2008-17.09.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	1::inwork 34232,888 34449,1689 34421,1950
+userdel	1::inwork 34232,888 34374,1414 34438,1662 34421,1950
 EOF
      },
      { from  => 1221602400, # 2008-09-17 00:00
@@ -26132,7 +26132,7 @@ EOF
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-07-31
+#: last_checked: 2017-08-02
 #: check_frequency: 14d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
@@ -26328,17 +26328,19 @@ userdel	2::inwork 14538,12371 14748,12314
 EOF
      },
      { from  => 1501272725, # 2017-07-28 22:12
-       until => 1502834399, # 2017-08-15 23:59
-       text  => 'Schlosspark Schönhausen: komplett gesperrt, voraussichtlich bis Mitte August 2017',
+       until => $isodate2epoch->("2017-08-11 23:59:59"), # 1502834399, # 2017-08-15 23:59
+       text  => 'Schlosspark Schönhausen: Schloßallee ist gesperrt, voraussichtlich bis Mitte August 2017',
        type  => 'gesperrt',
        source_id => 'http://www.berliner-zeitung.de/berlin/pankow-lebensgefahr-fuer-besucher--schlosspark-schoenhausen-gesperrt-28080750',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2017/pressemitteilung.616643.php
-userdel	2::temp 10638,19149 10600,19225 10584,19132 10529,19055 10509,18981 10497,18883 10513,18854 10518,18750
-userdel	2::temp 10569,19395 10575,19327 10636,19289 10600,19225 10589,19275 10636,19289 10857,19379 11081,19456 11236,19509 11273,19521 11328,19413 11364,19313
-#userdel	2::temp 10249,19148 10339,19179 10382,19066 10434,18907
-userdel	2::temp 10575,19327 10503,19371
-#userdel	2::temp 10294,19298 10339,19179
+# REMOVED --- userdel	2::temp 10638,19149 10600,19225 10584,19132 10529,19055 10509,18981 10497,18883 10513,18854 10518,18750
+# REMOVED --- userdel	2::temp 10569,19395 10575,19327 10636,19289 10600,19225 10589,19275 10636,19289 10857,19379 11081,19456 11236,19509 11273,19521 11328,19413 11364,19313
+# REMOVED --- userdel	2::temp 10249,19148 10339,19179 10382,19066 10434,18907
+# REMOVED --- userdel	2::temp 10575,19327 10503,19371
+# REMOVED --- userdel	2::temp 10294,19298 10339,19179
+#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2017/pressemitteilung.619226.php
+	2::temp 10636,19289 10857,19379 11081,19456 11236,19509 11273,19521
 EOF
      },
      { from  => 1501439878, # 2017-07-30 20:37
@@ -26357,8 +26359,33 @@ EOF
        type  => 'handicap',
        source_id => '2147341662',
        data  => <<EOF,
-#: XXX Beeinträchtigung für Radfahrer feststellen...
-userdel	q4::inwork 13716,8410 13648,8321 13566,8212 13510,8138
+userdel	q3::inwork 13716,8410 13648,8321 13566,8212 13510,8138
+EOF
+     },
+     { from  => 1503784800, # 2017-08-27 00:00
+       until => 1506981600, # 2017-10-03 00:00
+       text  => 'Müggelbergallee: Bauarbeiten, Fahrbahn gesperrt, vom 28.08.2017 bis 02.10.2017',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.619071.php',
+       data  => <<EOF,
+userdel	q4::inwork 23102,1637 23185,1649
+EOF
+     },
+     { from  => 1501870668, # 2017-08-04 20:17
+       until => 1502834399, # 2017-08-15 23:59
+       text  => 'Frohnauer Str.: Bauarbeiten zwischen Klosterheider Weg und Am Dominikusteich, Fahrbahn gesperrt, bis Mitte August 2017',
+       type  => 'handicap',
+       source_id => 'LMS-BR_r_LMS-BR_104443_LMS-BR_72',
+       data  => <<EOF,
+userdel	q4::inwork 2636,23915 2663,23875
+EOF
+     },
+     { from  => 1501870960, # 2017-08-04 20:22
+       until => 1506808800, # 2017-10-01 00:00
+       text  => 'Witzlebenstr.: zwischen Steifensandstr. und Kaiserdamm gesperrt, eventuell sind auch Radfahrer betroffen, bis 30.09.2017',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q4::inwork 3069,11551 2924,11309
 EOF
      },
     );
