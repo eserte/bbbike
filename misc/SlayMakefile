@@ -8,6 +8,7 @@
 	use File::Compare qw(compare);
 	use File::Temp qw(tempdir);
 	use IPC::Run qw(run);
+	use POSIX qw(strftime);
 
 	$ABS_LOCAL_BBBIKE_DIR =	realpath("..");
 	$BBBIKE_DATA_DIR      = "$ABS_LOCAL_BBBIKE_DIR/data";
@@ -171,7 +172,8 @@
 				}
 			}
 			print $ofh "<hr/>";
-			print $ofh "Insgesamt: $total_count Fragezeichen-Einträge";
+			print $ofh "Insgesamt: $total_count Fragezeichen-Einträge<br>\n";
+			print $ofh "Aktualisiert: " . strftime("%F %T", localtime) . "<br>\n";
 			print $ofh "<hr/>";
 			print $ofh qq{<a href="http://www.bbbike.de">BBBike</a>\n};
 			print $ofh qq{</body></html>};
