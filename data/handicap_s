@@ -792,7 +792,7 @@ Kelchstr.: enge Straﬂe	q1 7386,4692 7424,4821 7437,4855 7456,4934
 Doldenweg: Bordsteine, Fuﬂg‰nger	q2 7424,4821 7487,4802
 Kottesteig: Bordsteine, Fuﬂg‰nger	q2 6868,5262 6820,5237 6806,5230
 (Zu den Krugwiesen - Vincent-van-Gogh-Str.): Fuﬂg‰nger	q1 18646,17345 18704,17565
-(Weg durch die Falkenberger Krugwiesen): Fuﬂg‰nger	q1 18704,17565 18756,17498 18784,17525 18831,17663 18937,17738 18986,17786 19102,17879 19110,18015 19127,18091 19213,18195 19251,18248 19249,18351 19265,18400 19291,18456
+(Weg durch die Falkenberger Krugwiesen): Fuﬂg‰nger	q1 18704,17565 18756,17498 18784,17525 18831,17663 18937,17738 18988,17781 19102,17879 19110,18015 19127,18091 19213,18195 19251,18248 19249,18351 19265,18400 19291,18456
 (Falkenberger Krugwiesen - Falkenberger Chaussee): Fuﬂg‰nger	q1 19213,18195 18969,18448
 Stritteweg: vereinzelte Stufen und schmale Rampen	q3 -5236,11204 -5256,11142
 K¸nstlerweg: enge Straﬂe	q1 -7418,7842 -7334,7703 -7258,7735 -7340,7873
@@ -995,7 +995,7 @@ Anna-Nemitz-Weg: Fuﬂg‰nger	q1 13943,2284 13905,2381 13885,2377 13872,2497 13891,
 (Darﬂer Str. - Malchower See): Fuﬂg‰nger	q1 15505,17967 15825,18385 15949,18555
 Am Malchower See: Fuﬂg‰nger	q1 15611,18627 15732,18666 15774,18656 15873,18561 15949,18555 16161,18687
 (Wartenberger Str. - Margaretenhˆhe): Gehweg, f¸r Radfahrer freigegeben	q0 16216,19183 16314,19210 16349,19442 16343,19470 16309,19542 16359,19590 16384,19678
-(Siedlung Wartenberg - Tierheim): eng, mit Anh‰nger nur langsam passierbar	q2 19381,19830 19691,19748 19819,19602
+(Siedlung Wartenberg - Tierheim): eng, mit Anh‰nger nur langsam passierbar	q2 19279,19517 19381,19830 19691,19748 19819,19602
 (J‰nschwalder Str. - Hˆnower Str.): eng	q2 25370,14421 25408,14189 25451,14018
 (Roﬂweiner Ring - Hˆnower Str.): einige enge Stellen mit Kurven	q1 24949,13760 24993,13731 25063,13781 25068,13778 25101,13797 25163,13785 25339,13948 25341,13984 25414,14036
 Roﬂweiner Ring: Bordsteinkante	q3 25163,13785 25157,13790
@@ -1645,6 +1645,8 @@ Mascha-KalÈko-Weg: enger Pfad	q3 -6449,5282 -6474,5216 -6474,5144
 (Rellstabweg - Weg zwischen Bullengraben und Lutoner Str.): Fuﬂg‰nger	q2 -5860,13283 -5788,13291
 (Springerzeile - Weg zwischen Bullengraben und Lutoner Str.): Fuﬂg‰nger	q2 -5878,13384 -5789,13398
 L¸dtgeweg: einige Fuﬂg‰nger	q1 4136,12494 4129,12619
+(Falkenberger Str. - Piesporter Str., Wohngebietsstraﬂe): einige Fuﬂg‰nger	q1 15370,16781 15362,16742 15350,16729
+(Falkenberger Fuﬂsteig - Falkenberger Chaussee): einige Fuﬂg‰nger	q1 18507,18541 18483,18433 18521,18347 18530,18327
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635
@@ -2252,7 +2254,7 @@ Dinkelsb¸hler Steig: enge Straﬂe	q0 2615,25225 2649,25170 2694,25132 2775,25092 
 ÷tztaler Str.: enge Straﬂe	q1 10690,17420 10630,17421
 Schlierbacher Weg: enge Straﬂe	q1 10740,1180 10685,1159 10450,1202 10453,1242 10440,1283
 Fritz-K¸hn-Str.: enge Straﬂe	q0 21688,-589 21666,-657 21487,-912 21445,-963
-Mittelstr. (Alt-Hohenschˆnhausen): enge Straﬂe	q1 15543,14491 15647,14693 15706,14752 15856,14915
+Mittelstr. (Alt-Hohenschˆnhausen): enge Straﬂe	q1 15539,14493 15647,14693 15706,14752 15856,14915
 Nantesstr.: enge Straﬂe	q0 11200,21689 11255,22028 11231,22065 11067,22232
 Helgiweg: enge Straﬂe	q0 14459,18589 14517,18410
 Helgiweg: enge Straﬂe	q0 14533,18413 14565,18226 14576,18163 14595,18050
@@ -2628,3 +2630,4 @@ Lichtenberger Br¸cke, linker Gehweg	q1::igndisp; 16818,11878 16978,11852
 Straﬂe des 17. Juni, linker Geh/Radweg	q3::igndisp; 5813,11886 5758,11895
 Paul-Schneider-Str., linker Gehweg	q4::igndisp; 6613,3320 6653,3297 6712,3237
 Rummelsburger Str., linker Geh/Radweg	q3::igndisp; 17833,7351 17769,7465
+Falkenberger Chaussee, linker Geh/Radweg	q3::igndisp; 18521,18347 18601,18342

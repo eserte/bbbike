@@ -261,8 +261,8 @@ Magnusstr./Rudower Chaussee	3nocross 19111,2777 19206,2848 19242,2876
 Gabelberger Str./Frankfurter Allee	3 14451,12396 14381,12205 14427,12197
 Mainzer Str./Frankfurter Allee	3nocross 14381,12205 14427,12197 14488,12188
 Colbestr./Frankfurter Allee	3nocross 14488,12188 14523,12183 14621,12168
-Kinzigstr./Frankfurter Allee	3nocross 14523,12183 14621,12168 14702,12157
-Finowstr.+Weichselstr./Frankfurter Allee	3nocross 14702,12157 14854,12137 14926,12129 14994,12121
+Kinzigstr./Frankfurter Allee	3nocross 14523,12183 14621,12168 14709,12156
+Finowstr.+Weichselstr./Frankfurter Allee	3nocross 14709,12156 14854,12137 14926,12129 14994,12121
 Friedrichstr. (Straßenbahn)	3nocross 9225,13389 9246,13235 9254,13171 9262,13111
 Friedrichstr. (Straßenbahn)	3nocross 9262,13111 9269,13060 9279,12953
 Oranienburger Str. (Straßenbahnhaltestelle)	3nocross 9225,13389 9293,13366 9415,13315
@@ -711,7 +711,7 @@ Sakrower Kirchweg	1 -8441,3918 -8401,3899 -8308,3902 -8255,3946 -8162,4025
 Sibeliusweg	1 -6797,4991 -6789,5052 -6787,5076 -6762,5133 -6747,5169
 Angerburger Allee	1 -1538,11126 -1608,11133 -1885,11392 -1931,11437 -1994,11496
 Sensburger Allee	1 200,11428 326,11391 438,11236
-Kyllburger - Darßer Str	3 16670,17454 16779,17521 16751,17560
+Kyllburger - Darßer Str	3 16670,17454 16785,17524 16761,17561
 Am Steinberg	1 13156,17579 12998,17480
 Schäßburger Weg: Poller	3 * 7127,-248 *
 Fuchsmühler Weg: Durchfahrt gesperrt	2 7277,-77 7231,25
@@ -1043,7 +1043,7 @@ Krajnik Dolny - Dolina Milosci	1 70496,70247 70008,69775 69809,69573 69697,69426
 Grottewitzstr. - ...	3 21933,152 22145,208 *
 Allee der Kosmonauten	1 20096,14127 20097,14039 20081,13993 20080,13941
 Murtzaner Ring	1 20040,14179 20051,14191 20061,14220 20056,14373
-Kyllburger Weg	1 16779,17521 16670,17454 16645,17449
+Kyllburger Weg	1 16785,17524 16670,17454 16645,17449
 Gethsemanestr.	1 11086,15772 11123,15851 11191,15810 11158,15739
 Kaiserdamm: Mittelstreifen	3nocross 2609,11503 2764,11519 3069,11551
 Revaler Str.	1 13588,11490 13565,11492 13473,11456
@@ -1102,11 +1102,7 @@ Schulstr. (Tegel)	1 1953,20149 1794,20110
 Möllentordamm	1 -2942,14666 -3027,14689 -3042,14682
 Goebelplatz	1 1974,14646 1974,14565
 # 
-#: last_checked: 2016-10-02
-#: next_check: 2017-02-01
-#: XXX laut osm access=no außer für Fußgänger/Radfahrer
-#: osm_watch: way id="311371554" version="6"
-Clara-Immerwahr-Str.: Bauzäune, Fußgänger und Radfahrer können aber passieren	2::inwork 19202,17471 19546,17351 19798,17263 19845,17235 19914,17203
+# REMOVED (offen) --- #: last_checked: 2016-10-02 --- #: next_check: 2017-02-01 --- #: XXX laut osm access=no außer für Fußgänger/Radfahrer --- #: osm_watch: way id="311371554" version="6" --- Clara-Immerwahr-Str.: Bauzäune, Fußgänger und Radfahrer können aber passieren	2::inwork 19202,17471 19542,17344 19798,17263 19845,17235 19914,17203
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf
 Brixplatz	1 179,12434 269,12462 329,12503
 #: by: osm
@@ -1164,3 +1160,4 @@ Hellersdorfer Str.: Durchfahrt nicht möglich	3 * 22981,13966 22987,13989
 #: by: osm (Öffnung der Straße für Radfahrer)
 # REMOVED --- #: osm_watch: way id="4434003" version="6"
 Egelingzeile	1 7980,6403 8194,6384
+(Falkenberger Chaussee - Darßer Str.): nur für Busse	2 16947,17506 16848,17530 16825,17537 16785,17524

@@ -396,7 +396,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süde
 #: next_check_id: MOELLENDORFFSTR-2017
 #: XXX_prog abgeschätzter Zeitverlust durch 2x Ampeln, explizite "Radfahren verboten"-Schilder
 #: XXX laut fritz bis 29. August 2017, laut vmz bis Ende 2017
-#: last_checked: 2017-07-29
+#: last_checked: 2017-08-05
 #: next_check: 2017-08-29
 #: valid: -20170831
 Möllendorffstr.: Bauarbeiten, Radfahrer müssen auf die gegenüberliegende Seite wechseln	q4::inwork; 15420,12178 15361,12071
@@ -1430,7 +1430,7 @@ Doldenweg: Bordsteine, Fußgänger	q2 7424,4821 7487,4802
 #: XXX_prog: BS am Oehlertring und unten an der Treppe, ansonsten q1
 Kottesteig: Bordsteine, Fußgänger	q2 6868,5262 6820,5237 6806,5230
 (Zu den Krugwiesen - Vincent-van-Gogh-Str.): Fußgänger	q1 18646,17345 18704,17565
-(Weg durch die Falkenberger Krugwiesen): Fußgänger	q1 18704,17565 18756,17498 18784,17525 18831,17663 18937,17738 18986,17786 19102,17879 19110,18015 19127,18091 19213,18195 19251,18248 19249,18351 19265,18400 19291,18456
+(Weg durch die Falkenberger Krugwiesen): Fußgänger	q1 18704,17565 18756,17498 18784,17525 18831,17663 18937,17738 18988,17781 19102,17879 19110,18015 19127,18091 19213,18195 19251,18248 19249,18351 19265,18400 19291,18456
 (Falkenberger Krugwiesen - Falkenberger Chaussee): Fußgänger	q1 19213,18195 18969,18448
 Stritteweg: vereinzelte Stufen und schmale Rampen	q3 -5236,11204 -5256,11142
 Künstlerweg: enge Straße	q1 -7418,7842 -7334,7703 -7258,7735 -7340,7873
@@ -1685,7 +1685,7 @@ Anna-Nemitz-Weg: Fußgänger	q1 13943,2284 13905,2381 13885,2377 13872,2497 13891,
 (Darßer Str. - Malchower See): Fußgänger	q1 15505,17967 15825,18385 15949,18555
 Am Malchower See: Fußgänger	q1 15611,18627 15732,18666 15774,18656 15873,18561 15949,18555 16161,18687
 (Wartenberger Str. - Margaretenhöhe): Gehweg, für Radfahrer freigegeben	q0- 16216,19183 16314,19210 16349,19442 16343,19470 16309,19542 16359,19590 16384,19678
-(Siedlung Wartenberg - Tierheim): eng, mit Anhänger nur langsam passierbar	q2- 19381,19830 19691,19748 19819,19602
+(Siedlung Wartenberg - Tierheim): eng, mit Anhänger nur langsam passierbar	q2- 19279,19517 19381,19830 19691,19748 19819,19602
 (Jänschwalder Str. - Hönower Str.): eng	q2 25370,14421 25408,14189 25451,14018
 (Roßweiner Ring - Hönower Str.): einige enge Stellen mit Kurven	q1 24949,13760 24993,13731 25063,13781 25068,13778 25101,13797 25163,13785 25339,13948 25341,13984 25414,14036
 #: XXX_prog BS
@@ -2540,6 +2540,8 @@ Mascha-Kaléko-Weg: enger Pfad	q3 -6449,5282 -6474,5216 -6474,5144
 (Rellstabweg - Weg zwischen Bullengraben und Lutoner Str.): Fußgänger	q2 -5860,13283 -5788,13291
 (Springerzeile - Weg zwischen Bullengraben und Lutoner Str.): Fußgänger	q2 -5878,13384 -5789,13398
 Lüdtgeweg: einige Fußgänger	q1 4136,12494 4129,12619
+(Falkenberger Str. - Piesporter Str., Wohngebietsstraße): einige Fußgänger	q1 15370,16781 15362,16742 15350,16729
+(Falkenberger Fußsteig - Falkenberger Chaussee): einige Fußgänger	q1 18507,18541 18483,18433 18521,18347 18530,18327
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -3571,6 +3573,7 @@ Knappenpfad: enge Straße	q1 2471,24709 2410,24837 2364,24886 2340,24884
 #: by: Michael Häusler:
 Auerhahnbalz: enge Straße	q2 636,4765 650,4712 668,4653 697,4605 723,4572
 #: by: Anna Lytik:
+#: confirmed_by: srt
 Welsestr.: enge Straße	q1 18601,18342 18620,18283 18660,18226 18709,18159 18746,18116 18744,18050 18476,17842 18357,17735 18300,17740 18253,17796 18269,17807
 #: by: Peter Klein:
 Bleichertstr.: enge Straße	q0 8383,1311 8455,1280 8494,1293 8530,1379 8569,1457 8661,1649
@@ -3798,7 +3801,7 @@ Schlierbacher Weg: enge Straße	q1 10740,1180 10685,1159 10450,1202 10453,1242 10
 Fritz-Kühn-Str.: enge Straße	q0- 21688,-589 21666,-657 21487,-912 21445,-963
 #: by: Michael (hinundweg):
 #: confirmed_by: srt
-Mittelstr. (Alt-Hohenschönhausen): enge Straße	q1 15543,14491 15647,14693 15706,14752 15856,14915
+Mittelstr. (Alt-Hohenschönhausen): enge Straße	q1 15539,14493 15647,14693 15706,14752 15856,14915
 #: by: Philipp Günther:
 #: corrected_by: srt/policy (q1 -> q0-)
 Nantesstr.: enge Straße	q0- 11200,21689 11255,22028 11231,22065 11067,22232

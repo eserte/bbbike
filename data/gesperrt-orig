@@ -178,7 +178,7 @@ Hardenbergplatz	1 5542,11075 5565,11147 5666,11362 5698,11333 5600,11114 5542,11
 (Waterloo-Ufer - Zossener Str.)	1 9858,10199 9825,10206
 Greinerstr.	1 8340,3242 8327,2987
 Dederingstr.	1 8455,2977 8476,3367
-Weserstr. (Friedrichshain)	1 14416,11815 14471,11782
+Weserstr. (Friedrichshain)	1 14416,11815 14475,11778
 Quickborner Str.	1 8016,21499 8162,21302
 #: by: Jessaï Arakelian
 #: confirmed_by: srt
@@ -211,7 +211,7 @@ Kietzer Str.	1s:q3 22372,4496 22383,4470
 # REMOVED (hier keine Einbahnstraße, nur eine Sackgasse) --- Ontarioseestr.	1 18552,10135 18585,10024
 Ontarioseestr.	1 18585,10024 18408,10041
 # REMOVED (hier jetzt eine Sackgasse für Autos) --- Ontarioseestr.	1 18408,10041 18339,10048
-Degnerstr. (außer Tram)	1 16448,15593 16475,15659
+Degnerstr. (außer Tram)	1 16448,15593 16469,15659
 Henriette-Herz-Platz	1 10371,13006 10312,12982 10255,12959
 Savignyplatz	1 4921,11017 4920,10933 4868,10934 4817,10943 4827,11025 4835,11092 4880,11088 4926,11081 4921,11017
 Dresdener Str./Oranienplatz	1 11258,10682 11234,10739
@@ -1176,6 +1176,7 @@ Hundsfelder Str.	1 21898,-303 21811,-409 21700,-537 21688,-589
 Joachim-Karnatz-Allee	1 7175,12630 7184,12602 7418,12601
 Joachim-Karnatz-Allee	1 7419,12584 7144,12580 7139,12589 7131,12615
 Waldkraiburger Str.: Betriebsgelände	2 12283,4971 12468,5000
+(Falkenberger Chaussee - Darßer Str.)	1 16785,17524 16825,17537 16848,17530 16947,17506
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -1686,6 +1687,7 @@ Märkische Allee: Linksabbiegen verboten	3nocross 20116,16303 20219,16523 20318,1
 Märkische Allee: Linksabbiegen verboten	3nocross 20512,17101 20691,17463 20717,17516 20768,17609 20798,17664 20843,17745 20889,17838 20912,17872 21009,18055
 Märkische Allee: Mittelstreifen	3nocross 19896,11688 19918,11891 19928,11978 19940,12076 19944,12115 19947,12140 19953,12177 19960,12222 19967,12270 19982,12405 19994,12484
 # REMOVED (neue Ampeln) --- Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3nocross 17400,17790 17482,17844 17601,17922 17675,17971 17744,18016 17843,18078
+Falkenberger Chaussee: Straßenbahntrasse	3nocross 18196,18254 18530,18327 18601,18342
 Stralauer Allee: unbequemes Abbiegen	3nocross 13332,10832 13389,10808 13496,10763 13596,10722
 Stralauer Allee: unbequemes Abbiegen	3nocross 13596,10722 13678,10685 13779,10642
 Stralauer Allee: unbequem passierbare Straße	3nocross 14222,10430 14405,10340 14558,10264
@@ -2187,8 +2189,10 @@ weites Drängelgitter	BNP:2::trailer=7 21917,10991
 Drängelgitter	BNP:3::trailer=10 26246,12648
 Drängelgitter	BNP:3::trailer=10 26183,12676
 #: note: am So, 2016-04-17 gegen 15 Uhr offen vvv
+#: note: am Sa, 2017-08-05 gegen 12 Uhr offen vvv
 Tor, kann geschlossen sein	BNP:2::trailer=5 16315,18208
 Tor, kann geschlossen sein	BNP:2::trailer=5 16196,18364
+#: note ^^^
 #: note ^^^
 Schranke	BNP:3::trailer=10 14138,21233
 #: note: Anordnung wie bei Drängelgittern vvv
@@ -2773,6 +2777,9 @@ Drängelgitter	BNP:3 31665,48997
 Schranke	BNP:3::trailer=10 8041,-3322
 Schranke	BNP:3::trailer=10 6876,-2731
 Schranke	BNP:3::trailer=10 17215,12485
+#: XXX_prog: Richtung Norden wird automatisch geöffnet, hier also kaum Beeinträchtigungen
+#: note: Richtung Süden ist kaum Spielraum neben der Schranke vorhanden
+Schranke	BNP:10::trailer=20 15334,16718
 #
 ############################################################################
 #
@@ -2783,7 +2790,7 @@ Schranke	BNP:3::trailer=10 17215,12485
 #: XXX_indoor sobald aktiv: temp_blockings-Eintrag deaktivieren
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.616518.php
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.616795.php
-#: last_checked: 2017-08-02
+#: last_checked: 2017-08-05
 #: next_check: 2019-02-28
 #: valid: 20170801-20190228
 #: priority: #A

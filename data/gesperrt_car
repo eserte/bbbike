@@ -420,12 +420,12 @@ Frankfurter Allee -> Mainzer Str.: Mainzer Str./Frankfurter Allee	3::igndisp 144
 Colbestr./Frankfurter Allee	3nocross::ignrte 14488,12188 14523,12183 14621,12168
 Colbestr. -> Frankfurter Allee: Colbestr./Frankfurter Allee	3::igndisp 14468,11992 14523,12183 14488,12188
 Frankfurter Allee -> Colbestr.: Colbestr./Frankfurter Allee	3::igndisp 14621,12168 14523,12183 14468,11992
-Kinzigstr./Frankfurter Allee	3nocross::ignrte 14523,12183 14621,12168 14702,12157
-Frankfurter Allee -> Kinzigstr.: Kinzigstr./Frankfurter Allee	3::igndisp 14702,12157 14621,12168 14589,11975
+Kinzigstr./Frankfurter Allee	3nocross::ignrte 14523,12183 14621,12168 14709,12156
+Frankfurter Allee -> Kinzigstr.: Kinzigstr./Frankfurter Allee	3::igndisp 14709,12156 14621,12168 14589,11975
 Kinzigstr. -> Frankfurter Allee: Kinzigstr./Frankfurter Allee	3::igndisp 14589,11975 14621,12168 14523,12183
-Finowstr.+Weichselstr./Frankfurter Allee	3nocross::ignrte 14702,12157 14854,12137 14926,12129 14994,12121
+Finowstr.+Weichselstr./Frankfurter Allee	3nocross::ignrte 14709,12156 14854,12137 14926,12129 14994,12121
 Frankfurter Allee -> Finowstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14926,12129 14854,12137 14836,12045
-Finowstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14836,12045 14854,12137 14702,12157
+Finowstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14836,12045 14854,12137 14709,12156
 Frankfurter Allee -> Waldeyerstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14854,12137 14926,12129 15003,12241
 Frankfurter Allee -> Weichselstr.: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14994,12121 14926,12129 14887,11929
 Weichselstr. -> Frankfurter Allee: Finowstr.+Weichselstr./Frankfurter Allee	3::igndisp 14887,11929 14926,12129 14854,12137
@@ -1264,7 +1264,7 @@ Sakrower Kirchweg	1 -8441,3918 -8401,3899 -8308,3902 -8255,3946 -8162,4025
 Sibeliusweg	1 -6797,4991 -6789,5052 -6787,5076 -6762,5133 -6747,5169
 Angerburger Allee	1 -1538,11126 -1608,11133 -1885,11392 -1931,11437 -1994,11496
 Sensburger Allee	1 200,11428 326,11391 438,11236
-Kyllburger - Darßer Str	3 16670,17454 16779,17521 16751,17560
+Kyllburger - Darßer Str	3 16670,17454 16785,17524 16761,17561
 Am Steinberg	1 13156,17579 12998,17480
 Schäßburger Weg: Poller	3 7090,-225 7127,-248 7225,-312
 Schäßburger Weg: Poller	3 7225,-312 7127,-248 7090,-225
@@ -1759,7 +1759,7 @@ Grottewitzstr. - ...	3 21933,152 22145,208 22166,312
 Grottewitzstr. - ...	3 21933,152 22145,208 22172,194
 Allee der Kosmonauten	1 20096,14127 20097,14039 20081,13993 20080,13941
 Murtzaner Ring	1 20040,14179 20051,14191 20061,14220 20056,14373
-Kyllburger Weg	1 16779,17521 16670,17454 16645,17449
+Kyllburger Weg	1 16785,17524 16670,17454 16645,17449
 Gethsemanestr.	1 11086,15772 11123,15851 11191,15810 11158,15739
 Mittelstreifen	3nocross::ignrte 2609,11503 2764,11519 3069,11551
 Kaiserdamm -> Witzlebenpl.: Mittelstreifen	3::igndisp 3069,11551 2764,11519 2764,11500
@@ -1855,7 +1855,6 @@ Armbrustweg -> Klemkepark: Mittelstreifen	3::igndisp 7620,18615 7599,18705 7588,
 Schulstr. (Tegel)	1 1953,20149 1794,20110
 Möllentordamm	1 -2942,14666 -3027,14689 -3042,14682
 Goebelplatz	1 1974,14646 1974,14565
-Clara-Immerwahr-Str.: Bauzäune, Fußgänger und Radfahrer können aber passieren	2::inwork 19202,17471 19546,17351 19798,17263 19845,17235 19914,17203
 Brixplatz	1 179,12434 269,12462 329,12503
 Brixplatz	1 419,12397 335,12343 208,12305
 Oldenburgallee	1 454,11670 461,11455
@@ -1892,3 +1891,4 @@ Hellersdorfer Str.: Durchfahrt nicht möglich	3 22848,14001 22981,13966 22987,139
 Hellersdorfer Str.: Durchfahrt nicht möglich	3 22943,13822 22981,13966 22987,13989
 (Neukladower Allee - Gutspark Neukladow): nur für Anlieger	2 -6319,5606 -6246,5562 -6125,5447 -6112,5406
 Egelingzeile	1 7980,6403 8194,6384
+(Falkenberger Chaussee - Darßer Str.): nur für Busse	2 16947,17506 16848,17530 16825,17537 16785,17524
