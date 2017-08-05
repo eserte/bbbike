@@ -245,6 +245,7 @@ Aachener Str.: Kopfsteinpflaster	Q2 4687,8034 4687,8306 4623,8457
 Lohmühlenstr.: Kopfsteinpflaster	Q2 13333,9929 13311,9905 13302,9894 13251,9829
 Harzer Str.: Kopfsteinpflaster	Q2 12979,9304 12897,9365
 Lohmühlenbrücke: Asphalt	Q0 12871,9356 12897,9365
+#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (AT.2)
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
@@ -1973,6 +1974,7 @@ Eiselenweg - Uferweg: etwas sandig	Q2 21447,5414 21487,5425
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3240
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036544636457/544636457/00064312/12-Anlagen/10/B1072ZB7.pdf
 #: XXX "Die Herstellung des Uferweges ist zum 31.12.2016 in Planung."
+#: XXX Maßnahme Kö.13
 #: last_checked: 2017-08-04
 #: check_frequency: 90d
 (Uferweg, Mentzelpark): Schotterweg	Q1- 21487,5425 21512,5404 21600,5221 21696,5053
@@ -6752,7 +6754,7 @@ Slabystr.: Asphalt	Q0 24117,13043 24317,13006 24462,12975
 Rudolf-Virchow-Str.: Asphalt	Q0 23948,12879 24187,12836
 Wernerstr.: Asphalt mit einigen Kopfsteinpflasterabschnitten	Q1- 24230,12733 24365,12712 24459,12664
 Hirtschulzstr.: schlechtes Kopfsteinpflaster	Q3 24316,12566 24195,12558 24077,12544 24018,12541
-Dahlwitzer Landstr.: Kopfsteinpflaster	Q2; 25598,6158 25584,6029
+Dahlwitzer Landstr.: Kopfsteinpflaster	Q2; 25601,6158 25584,6029
 Biesterfelder Str.: Asphalt	Q0 16942,16174 17010,16349 17102,16464
 Klettwitzer Str.: Asphalt	Q0 18875,16872 18782,16597
 (Klettwitzer Str. - Georg-Knorr-Str./Landsberger Allee): Asphalt	Q0 18782,16597 18757,16561
@@ -7690,7 +7692,7 @@ Bahnweg (Altglienicke): Asphalt	Q0- 19659,-168 19509,-283
 (Blindschleichengang - Venusstr.): unbefestigte Straße	Q2 19341,-129 19336,-59
 (Blindschleichengang - Venusstr.): unbefestigter Pfad	Q2 19336,-59 19331,73
 Siriusstr.: Verbundsteinpflaster	Q1 18997,-351 18990,-371 18950,-490 18928,-506 18904,-573
-(Kleine Lindenstr. - Business Park Berlin): Asphalt	Q0 21306,-975 21284,-1008 21273,-1057 21165,-1161 21161,-1220 20833,-1298 20770,-1315 20394,-1397 20038,-1474 19717,-1549
+(Kleine Lindenstr. - Business Park Berlin): Asphalt	Q0 21306,-975 21284,-1008 21273,-1057 21165,-1161 21161,-1220 20833,-1298 20807,-1305 20770,-1315 20394,-1397 20038,-1474 19717,-1549
 (Hufenweg Verlängerung): unbefestigte Baustraße	Q2 20814,-935 20782,-1199 20797,-1262 20807,-1305
 Hufenweg: Asphalt	Q0 20814,-935 20829,-773 20799,-667 20790,-537
 Ludwig-Prandtl-Str.: Asphalt	Q0 19626,-1318 19880,-1184 19924,-1157 20078,-1029 20274,-845
@@ -7700,9 +7702,9 @@ Gebrüder-Hirth-Str.: Asphalt	Q0 19626,-1318 19714,-1529 19717,-1549 19725,-1704
 Schwalbenweg (Altglienicke): Beton	Q1 19773,-837 19754,-786 19724,-703
 Feldstr. (Bohnsdorf): Beton	Q2 20829,-773 21055,-723 21209,-734
 Gehwegplatten	Q0 21844,238 21963,261 21979,274 21991,273 22008,262
-# REMOVED (ich glaube, hier bessert sich nichts...) --- #: XXX wird hier die Qualität noch nachgebessert? --- #: last_checked: 2012-05-06 --- #: next_check: 2013-01-01
 #: XXX wird hier die Qualität verbessert?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5672
+#: XXX siehe auch Maßnahme Gr.9; außerdem soll die Straße "Am Kanal" asphaltiert werden
 #: next_check: 2017-09-30
 Unterführung unter Adlergestell und Bahn: teilweise sehr sandig	Q3 20939,2413 20810,2398
 (Hartriegelstr. - Michael-Brückner-Str.): Verbundsteinpflaster	Q1+ 18695,5076 18622,5049 18514,5028 18425,5032
