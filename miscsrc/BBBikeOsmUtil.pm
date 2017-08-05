@@ -463,6 +463,7 @@ sub plot_osm_files {
 		(exists $tag{'highway'} && $tag{'highway'} eq 'none') ||
 		(exists $tag{'man_made'} && $tag{'man_made'} eq 'pipeline') ||
 		exists $tag{'barrier'} ||
+		exists $tag{'abandoned:barrier'} ||
 		exists $tag{'mj10777:admin_levels'} ||
 		(exists $tag{'natural'} && $tag{'natural'} eq 'tree_row')
 	       ) {
