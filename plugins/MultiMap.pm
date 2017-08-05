@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.27;
+$VERSION = 1.28;
 
 use vars qw(%images);
 
@@ -133,6 +133,11 @@ sub register {
 	      ($images{FIS_Broker} ? (icon => $images{FIS_Broker}) : ()),
 	    };
     }
+    $main::info_plugins{__PACKAGE__ . 'Fahrrad_Stadtplan_Eu'} =
+	{ name => 'fahrrad-stadtplan.eu',
+	  callback => sub { showmap_fahrrad_stadtplan_eu(@_) },
+	  callback_3_std => sub { showmap_url_fahrrad_stadtplan_eu(@_) },
+	};
     $main::info_plugins{__PACKAGE__ . '_AllMaps'} =
 	{ name => 'All Maps',
 	  callback => sub { show_links_to_all_maps(@_) },
@@ -763,6 +768,23 @@ sub showmap_url_fis_broker_1_5000 {
 sub showmap_fis_broker_1_5000 {
     my(%args) = @_;
     my $url = showmap_url_fis_broker_1_5000(%args);
+    start_browser($url);
+}
+
+######################################################################
+# fahrrad-stadtplan.eu
+
+sub showmap_url_fahrrad_stadtplan_eu {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    sprintf "http://www.fahrrad-stadtplan.eu/?lat=%s&lon=%s&zoom=%d", $py, $px, $scale;
+}
+
+sub showmap_fahrrad_stadtplan_eu {
+    my(%args) = @_;
+    my $url = showmap_url_fahrrad_stadtplan_eu(%args);
     start_browser($url);
 }
 
