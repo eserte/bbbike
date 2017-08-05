@@ -461,7 +461,7 @@ sub plot_osm_files {
 		(exists $tag{'disused'} && $tag{'disused'} eq 'yes') ||
 		exists $tag{'demolished:historic'} ||
 		(exists $tag{'highway'} && $tag{'highway'} eq 'none') ||
-		(exists $tag{'man_made'} && $tag{'man_made'} eq 'pipeline') ||
+		(exists $tag{'man_made'} && $tag{'man_made'} =~ m{^(?:pipeline|embankment)$}) ||
 		exists $tag{'barrier'} ||
 		exists $tag{'abandoned:barrier'} ||
 		exists $tag{'mj10777:admin_levels'} ||
