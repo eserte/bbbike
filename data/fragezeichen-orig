@@ -20,9 +20,9 @@
 #: source_id: 2147340987
 #: source_id: 2147341435
 #: osm_watch: way id="41954398" version="12"
-#: last_checked: 2017-07-30 vvv
+#: last_checked: 2017-08-06 vvv
 #: check_frequency: 60d vvv
-#: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (hier nur dieser Abschnitt erw‰hnt)
+#: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (hier nur dieser Abschnitt (Prenzlauer Allee - Bˆtzowstr.) erw‰hnt)
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12621,14313
 Danziger Str.	?::projected 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 #: check_frequency ^^^
@@ -135,7 +135,7 @@ M¸llerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 69
 T¸rkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 # 
 #: XXX Baumaﬂnahme 12.15 (Realisierung nach 2011)
-#: last_checked: 2017-05-01
+#: last_checked: 2017-08-06
 #: check_frequency: 100d
 #: osm_watch: way id="82449630" version="10"
 #: osm_watch: way id="32426064" version="8"
@@ -146,7 +146,7 @@ Quickborner Str.: werden hier Radspuren markiert?	?::projected 7991,21531 7966,2
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5566.html
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/b109/index.shtml (Baubeginn 2. Halbjahr 2017)
 #: osm_watch: way id="4484357" version="13"
-#: last_checked: 2017-04-09
+#: last_checked: 2017-08-06
 #: check_frequency: 360d
 Schˆnerlinder Str.: entstehen hier bessere Radwege oder Radspuren?	?::projected 11929,23946 11959,24220 11980,24276 12108,24547 12136,24607 12254,24857 12395,25143 12461,25270 12543,25423 12624,25570 12697,25704 12944,26163 13192,26628 13256,26863 13345,27187
 #
@@ -211,7 +211,7 @@ Stromstr., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,1
 # 
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (Schutzstreifen Lˆffelbr¸cke - Bhf. Heinersdorf)
 #: osm_watch: way id="33836252" version="15"
-#: last_checked: 2017-04-09
+#: last_checked: 2017-08-06
 #: check_frequency: 120d
 Pasewalker Str.: Radspuren bis 2015 geplant	?::projected 11907,19749 11909,19706 11911,19667 11915,19580 11927,19308 11937,19175
 # 
@@ -263,7 +263,7 @@ Kˆpenicker Landstraﬂe: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3225
 #: XXX mittelfristig Realisierung von Radstreifen
 #: osm_watch: way id="340337649" version="2"
-#: last_checked: 2017-05-01
+#: last_checked: 2017-08-06
 #: check_frequency: 150d
 Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,19869 7711,19956 7748,20040 7790,20132 7832,20219
 # 
@@ -297,13 +297,13 @@ Kastanienallee: Radverkehrsanlagen sind vorgesehen (Radspuren)	?::projected 8900
 #: XXX haben die Bauarbeiten (laut vmz bis Ende Juni 2017) was damit zu tun?
 #: osm_watch: way id="9711554" version="35"
 #: osm_watch: way id="29560375" version="12"
-#: last_checked: 2017-04-09
-#: check_frequency: 60d
+#: last_checked: 2017-08-06
+#: check_frequency: 90d
 Pasewalker Str.: Schutzstreifen werden erstellt, auﬂerdem eine Ampel an der Kreuzung Bahnhofstr.	?::projected 12121,20969 12158,21166 12166,21208 12188,21330 12209,21448 12172,21545 12042,21886
 # 
 #: osm_watch: way id="27370704" version="9"
-#: last_checked: 2017-04-09
-#: next_check: 2018-05-01
+#: last_checked: 2017-08-06
+#: check_frequency: 90d
 Triftstr.: Planung von Radverkehrsanlagen	?::projected 11940,22587 11959,22696 11979,22801 11995,22884 12023,23039 12027,23057 12039,23125 12058,23227 12067,23241
 # 
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf ("Schutzstreifen")
@@ -314,7 +314,7 @@ Triftstr.: Planung von Radverkehrsanlagen	?::projected 11940,22587 11959,22696 1
 Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823 11442,17664 11457,17585 11482,17459 11508,17315 11522,17248 11541,17153 11570,17028 11598,16878 11621,16749 11630,16623 11655,16486 11659,16457 11673,16367
 # 
 #: osm_watch: node id="29420748" version="5"
-#: last_checked: 2017-07-29
+#: last_checked: 2017-08-06
 #: check_frequency: 90d
 Berliner Allee/Tassostr.: Bau einer Ampel	?::projected 13591,15969 13623,15954 13653,15938
 #: by: ^^^
@@ -626,9 +626,10 @@ Fˆhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 # REMOVED (weitgehend fertig) --- #: source_id: 2147340980 --- #: last_checked: 2017-06-08 --- #: next_check: 2017-07-05 --- Stromstr.: Asphaltierung des Radwegs in Arbeit	?::inwork; 6214,13225 6183,13083 6164,12980
 # REMOVED (weitgehend fertig) --- #: last_checked: 2017-07-11 --- Mˆckernstr.: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 8783,10166 8802,10290 8804,10303
 # 
-#: last_checked: 2017-07-30
+#: last_checked: 2017-08-06
 Bersarinplatz: Verbesserung "Radweganbindung Ostseite"	?::projected; 13730,12535 13761,12578 13767,12626 13747,12642 13695,12643
 # 
+#: last_checked: 2017-08-06
 Rothenbachstr.: Verbesserung -> wird der fr¸here Radweg wieder aktiviert?	?::projected; 12144,18436 11950,18529
 # 
 #: osm_watch: way id="111283481" version="10"
@@ -637,9 +638,10 @@ Rothenbachstr.: Verbesserung -> wird der fr¸here Radweg wieder aktiviert?	?::pro
 #: next_check: 2017-09-01
 Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected; 15662,16656 15437,16491
 # 
-#: last_checked: 2017-06-04
+#: last_checked: 2017-08-06
 Caligariplatz: Verbesserung -> offizielle Radwegf¸hrung zur Wisbyer Str.?	?::projected 12121,16317 12097,16263 12090,16199
 # 
+#: last_checked: 2017-08-06
 Blankenfelder Chausee: Verbesserung -> Radspuren oder Verbesserung des Radwegs?	?::projected 10060,21916 9973,22133 9747,22694
 # 
 #: last_checked: 2017-07-03
@@ -806,19 +808,23 @@ Braunschweiger Str.: Asphaltierung	?::projected 13702,7418 13781,7524 13854,7620
 #: XXX ^^^
 # 
 #: osm_watch: way id="4764878" version="10"
+#: last_checked: 2017-08-06
 Niederstr.: Asphaltierung	?::projected 7634,19793 7769,19736 7857,19693
 # 
-#: XXX vielleicht nur ein Teilabschnitt
+#: XXX vielleicht nur ein Teilabschnitt; vielleicht auch im Zusammenhang mit dem Projekt Wilhelmsruher Tor
 #: osm_watch: way id="4764886" version="10"
+#: last_checked: 2017-08-06
+#: check_frequency: 360d
 Tollerstr.: Asphaltierung	?::projected 7751,19696 7769,19736 7807,19811 7838,19884 7885,19975
 # 
 #: osm_watch: way id="272532028" version="1"
 #: osm_watch: way id="73682384" version="2"
 #: osm_watch: way id="272532027" version="1"
-#: last_checked: 2017-05-01
+#: last_checked: 2017-08-06
 Hielscherstr.: Asphaltierung	?::projected 7558,19886 7604,19988 7695,20175 7735,20262 7809,20420 7826,20460
 # 
 #: osm_watch: way id="4684852" version="8"
+#: last_checked: 2017-08-06
 Neukirchstr.: Asphaltierung	?::projected 12751,18401 12885,18329
 # 
 #: XXX auﬂerdem zu pr¸fen: gibt es die Wegf¸hrung unter der S-Bahnbr¸cke noch, und ¸berhaupt diese Wegf¸hrung einzeichnen
@@ -975,8 +981,9 @@ Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 
 #: XXX Privatstraﬂe
 #: osm_watch: way id="499986562" version="1"
 #: XXX bei osm schon eingezeichnet, surface=asphalt
-#: last_checked: 2017-04-09
-Karlinekenweg: neue Straﬂe, Qualit‰t, genaue Lage?	? 11359,20297 11409,20191 11431,20202 11498,20068 11541,20090
+#: last_checked: 2017-08-06
+#: check_frequency: 90d
+Karlinekenweg: neue Straﬂe, Qualit‰t, genaue Lage?	? 11359,20297 11409,20191 11431,20202 11495,20073 11535,20092
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5550
 #: XXX Umsetzung bis 2017
@@ -1012,9 +1019,9 @@ Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fuﬂg‰ngerbereiche	?::projected
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2017/pressemitteilung.602923.php
 #: XXX Bauzeit: Fertigstellung der gesamten Baumaﬂnahme ist derzeitig f¸r Mitte 2019 geplant
 #: XXX nˆrdlich entsteht ein neues Stadtviertel (Elisabeth-Aue)
-#: last_checked: 2016-07-10
+#: last_checked: 2017-08-06
 #: next_check: 2019-04-01
-Rosenthaler Weg: Neubau der Straﬂe, danach existieren Radspuren	?::inwork 10997,22203 10933,22179 10892,22165 10828,22142 10769,22122 10709,22102 10673,22090 10613,22070 10554,22050 10493,22029 10436,22010 10377,21991 10312,21969 10228,21940 10060,21916
+Rosenthaler Weg: Neubau der Straﬂe, danach existieren Radspuren	?::inwork 10999,22195 10935,22174 10892,22165 10828,22142 10769,22122 10709,22102 10673,22090 10613,22070 10554,22050 10493,22029 10436,22010 10377,21991 10312,21969 10228,21940 10060,21916
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3712
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.175274.php
@@ -1051,7 +1058,7 @@ Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11445,15920 11492,15
 #: XXX ab Fr¸hjahr 2017 f¸r vier Jahre
 #: XXX evtl. gibt es Einschr‰nkungen wegen der Bauarbeiten
 #: XXX qualitaet: -> Q0 vermutlich
-#: last_checked: 2017-07-29
+#: last_checked: 2017-08-06
 #: check_frequency: 120d
 Schˆnstr.: Neubau geplant	?::projected 13391,16436 13630,16629 13794,16773 13870,16837 13974,16924 13996,16959 14136,17170
 # 
@@ -1172,7 +1179,7 @@ Privatstraﬂen in der Wasserstadt Spindlersfeld: genaue Lage? Straﬂenname? Qualit
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2014/mdb-bapankow-pressestelle-ba-beschluesse-2014-13.05.14_genehmigung_von_20_bauvorhaben_gem________33_abs_1_baugb_im_geltungsbereich_des_bebauungsplanentwurfs_xix_48b_f__r_das_gel__nde_zwischen_dr_markus_stra__e__pankgaben_...pdf
 #: XXX ÷ffentliche Straﬂen:
 #: next_check_id: NIZZASTR-2014 vvv
-#: last_checked: 2017-04-09 vvv
+#: last_checked: 2017-08-06 vvv
 #: check_frequency: 60d vvv
 #: XXX Planstraﬂe A -> Marseillestraﬂe
 #: XXX zurzeit eine Baustraﬂe
@@ -1186,9 +1193,9 @@ Marseillestr. - Dr.-Markus-Str.: Qualit‰t? wann ist die Fertigstellung? wird hie
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2015 (Grundst¸cksnummerierungen)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/01re.pdf/file?y=2016 (Grundst¸cksnummerierungen)
 #: osm_watch: way id="344108078" version="3"
-#: XXX PLZ=13127
 #: XXX_osm laut osm living_street, die Schilder fehlen aber in der Realit‰t
-Rennesstr.: wird hier nocht verkehrsberuhigt?	? 12411,21515 12422,21492 12472,21510
+Rennesstr.: wird hier noch verkehrsberuhigt?	? 12422,21492 12472,21510
+#: XXX mˆglicherweise wird der Weg asphaltiert sein
 #: osm_watch: way id="344108077" version="2"
 Nizzastr. - Dr.-Markus-Str.: Gehweg, f¸r Radfahrer frei ausgeschildert, der Weg existiert aber noch nicht. Genaue Lage? Qualit‰t? Nachts beleuchtet?	?::inwork 12434,21160 12522,21208 12535,21282 12507,21391 12497,21468 12515,21581 12495,21670
 #: check_frequency ^^^
@@ -1769,12 +1776,14 @@ Bautzener Brache - Groﬂgˆrschenstr.: Weg in Planung	?::projected 8240,9364 8186,
 #: by: www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036471085040/471085040/00073235/35-Anlagen/02/HerstellungvonoeffentlichenErschliessungsanlag.pdf 
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2017/pressemitteilung.558513.php (Baumf‰llungen)
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.548914.php (Bauzeit voraussichtlich September 2017 - September 2019)
-#: next_check: 2017-11-01 vvv
+#: last_checked: 2017-08-06 vvv
+#: check_frequency: 180d vvv
 #: XXX Norderschlieﬂungsstraﬂe
 Bebauungsplan 3-48 VE: Planstraﬂe A in Planung	?::projected 12957,18518 13178,18460 13368,18674 13389,18704 13410,18735
 #: XXX Westerschlieﬂungsstraﬂe
 Bebauungsplan 3-48 VE: Planstraﬂe B in Planung	?::projected 13368,18674 13222,18797
-#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/artikel.472246.php
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-65ve/vorhabenbezogener_bebauungsplan.pdf
@@ -2155,7 +2164,7 @@ Kˆpenicker Landstraﬂe: bleibt die Radwegbenutzungspflicht?	?; 15920,7697 16195,7
 #: by ^^^
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4129
-#: last_checked: 2017-05-01
+#: last_checked: 2017-08-06
 #: check_frequency: 90d
 #: priority: #C
 Hauptstr./Goethestr.: vorhandene ‹berquerungshilfe soll zu einem Zebrastreifen ausgebaut werden	?::projected 7787,20166 7790,20132 7823,20149
@@ -2556,13 +2565,15 @@ Kleinbeerenstr. - Groﬂbeerenstr.: geplanter Weg im Zuge des Bebauungsplans VI-46
 #: by: http://www.pankower-allgemeine-zeitung.de/wilhelmsruher-tor-kommt-endlich-voran/
 #: by: http://www.pankower-allgemeine-zeitung.de/Aktuelle-News-Berlin-Pankow//wp-content/uploads/2016/05/bplan3-18-600x532.jpg
 #: by: http://www.dafmap.de/d/berlin.html?id=4636&mt=0&zoom=15
-#: next_check: 2017-07-01 vvv
+#: last_checked: 2017-08-06 vvv
+#: check_frequency: 360d vvv
 #: osm_watch: way id="73669134" version="5"
 Planstraﬂe A (anstelle der jetzigen Stichstraﬂe)	?::projected 7603,19713 7675,19677 7729,19649
 Verl‰ngerung Tollerstr.	?::projected 7749,19693 7729,19649
 Planstraﬂe B	?::projected 7729,19649 7744,19622 7797,19580
 Planstraﬂe C	?::projected 7744,19622 7687,19488
-#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 #: XXX ^^^
 # 
 Wanderweg entlang des Grenzstreifens: Qualit‰t?	? 5264,24186 5304,24244 5327,24311 5513,24308 5678,24407 5608,24610
@@ -3097,7 +3108,8 @@ Arberlandplatz	? 19705,9039 19728,8998
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4327
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036620026584/620026584/00129985/85-Dateien/image003.png
-#: next_check: 2017-05-01
+#: last_checked: 2017-08-06
+#: check_frequency: 360d
 Bebauungsplan 3-59: geplante Straﬂen und Wege	?::projected 12512,21482 12783,21430 12828,21503 12846,21592
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.516563.php
@@ -3127,8 +3139,10 @@ Lilienweg (Potsdam): genaue Lage? Qualit‰t?	? -18312,7674 -18395,7365
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2016/pressemitteilung.533236.php
 #: XXX auch eintragen: die Gr¸nanlage
 #: XXX wo entsteht die geplante Fuﬂg‰ngerbr¸cke?
-#: last_checked: 2017-05-01
-#: check_frequency: 90d
+#: XXX von der Straﬂe "Kreuzgraben" existiert schon rechts und links ein Weg (wassergebundene Decke, unbeleuchtet), die letzten 70 Meter zur Dietzgenstr. fehlen noch
+#: osm_watch: way id="60184568" version="1"
+#: last_checked: 2017-08-06
+#: check_frequency: 120d
 Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093 10251,20218 10525,20392
 # 
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf

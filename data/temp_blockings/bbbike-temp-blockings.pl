@@ -11831,7 +11831,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009192',
        data  => <<EOF,
-userdel	1::inwork 11563,20048 11541,20090 11419,20327 11269,20667
+userdel	1::inwork 11555,20051 11535,20092 11419,20327 11269,20667
 EOF
      },
      { from  => 1214257459, # 2008-06-23 23:44
@@ -21063,7 +21063,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_115090',
        data  => <<EOF,
-userdel	q4::inwork 13589,16965 13754,17133 13812,17206 13832,17232 13904,17325
+userdel	q4::inwork 13581,16968 13754,17133 13812,17206 13832,17232 13904,17325
 EOF
      },
      { from  => 1348981200, # 2012-09-30 07:00
@@ -21601,7 +21601,7 @@ EOF
 #: source_id: IM_021030
 #: last_checked: 2014-05-21
 #: next_check: 2014-06-30
-userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 11162,19844 11312,19920 11425,19978 11563,20048
+userdel	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 11162,19844 11309,19923 11423,19982 11555,20051
 EOF
      },
      { from  => $isodate2epoch->("2017-05-30 00:00:00"), # 1 Tag Vorlauf
@@ -23040,7 +23040,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20140528.1315.397553.html',
        data  => <<EOF,
-userdel	q2::inwork 11563,20048 11541,20090 11419,20327
+userdel	q2::inwork 11555,20051 11535,20092 11419,20327
 EOF
      },
      { from  => 1402304400, # 2014-06-09 11:00
@@ -26107,7 +26107,7 @@ EOF
      },
      { from  => 1497556689, # 2017-06-15 21:58
        until => 1504216800, # 2017-09-01 00:00
-       text  => 'Schönerlinder Str.: Autobahnbrücke gesperrt, unklar, ob Radfahrer und Fußgänger trotzdem passieren können, bis 31.08.2017',
+       text  => 'Schönerlinder Str.: Autobahnbrücke gesperrt, Radfahrer und Fußgänger können unter Umständen trotzdem passieren, bis 31.08.2017',
        type  => 'gesperrt',
        source_id => '2147341179',
        data  => <<EOF,

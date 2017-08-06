@@ -439,11 +439,7 @@ Fürstenberger Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 10320,14608 10472,
 # 
 ### Pankow ###
 # 
-#: last_checked: 2017-04-09
-#: next_check: 2017-10-01
-#: valid: -20171001
-Schloßallee: Bauarbeiten, Fahrbahn teilweise gesperrt	q2::inwork 11730,19684 11883,19739
-# 
+# REMOVED --- #: last_checked: 2017-04-09 --- #: next_check: 2017-10-01 --- #: valid: -20171001 --- Schloßallee: Bauarbeiten, Fahrbahn teilweise gesperrt	q2::inwork 11730,19684 11883,19739
 # REMOVED --- #: source_id: 2147340983 vvv --- #: source_id: LMS-BR_r_LMS-BR_91192 --- #: source_id: LMS-BR_r_LMS-BR_91193 --- #: last_checked: 2017-04-09 vvv --- #: next_check: 2017-07-07 vvv --- #: valid: -20170707 vvv --- Blankenburger Weg: Bauarbeiten, Einbahnstraßenregelung, Radweg Richtung Nordosten ist auch gesperrt	q2::inwork; 12222,20637 12442,20805 --- Pankstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 12524,20863 12442,20805
 # 
 #: source_id: 2147339182
@@ -454,7 +450,7 @@ Schloßallee: Bauarbeiten, Fahrbahn teilweise gesperrt	q2::inwork 11730,19684 118
 Wiltbergstr.: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 16669,25373 16583,25440 16475,25526 16414,25575 16294,25683 16220,25716
 # 
 # REMOVED --- #: last_checked: 2016-02-13 --- #: check_frequency: 60d --- Prenzlauer Promenade: Engstelle, Fußgänger und entgegenkommende Radfahrer	q2::inwork; 11950,18529 11934,18576 11980,18900
-# REMOVED --- #: next_check_id: BLANKENBURGER-2014 vvv --- #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/blankenburger_stra__e_konzept_beschilderung_umleitung_3_ta.pdf?download.html vvv --- #: XXX laut vmz Einbahnstraße bis 31. Dezember 2015 --- #: source_id: IM_022288 vvv --- #: last_checked: 2015-07-19 vvv --- #: next_check: 2015-12-31 vvv --- #: valid: 20140701-20151231 vvv --- Blankenburger Str.: Bauarbeiten, Einbahnstraße, gesperrt in Richtung Westen	q4::inwork; 12008,20368 11959,20365 11799,20224 11690,20127 11632,20086 11563,20048
+# REMOVED --- #: next_check_id: BLANKENBURGER-2014 vvv --- #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/blankenburger_stra__e_konzept_beschilderung_umleitung_3_ta.pdf?download.html vvv --- #: XXX laut vmz Einbahnstraße bis 31. Dezember 2015 --- #: source_id: IM_022288 vvv --- #: last_checked: 2015-07-19 vvv --- #: next_check: 2015-12-31 vvv --- #: valid: 20140701-20151231 vvv --- Blankenburger Str.: Bauarbeiten, Einbahnstraße, gesperrt in Richtung Westen	q4::inwork; 12008,20368 11959,20365 11799,20224 11690,20127 11632,20086 11555,20051
 # REMOVED (vermutlich wieder offen, weil die südliche Fahrbahn schon fertig ist) --- Hans-Jürgen-Str.: Bauarbeiten, erschwerter Zugang zur Blankenburger Str.	q4::inwork 11839,20176 11799,20224
 # 
 ### Biesdorf ###
@@ -1778,7 +1774,7 @@ Hoffbauerpfad: gemeinsamer Rad- und Gehweg	q1 214,969 333,1104
 #: note: an der Breiten Str. existiert ein Bordstein, kann aber evtl. von Westen her kommend geschickt umfahren werden
 (Bleichröderpark): Fußgänger	q1 10545,18143 10487,18270
 Rampe	q2 10503,19371 10489,19406
-(Blaubeerweg - Picardieweg): eng	q2 10933,22179 10993,21948
+(Blaubeerweg - Picardieweg): eng	q2 10935,22174 10993,21948
 Schillingweg: eng, parkende Autos	q1 11259,23928 11224,23879 11190,23832 11165,23796 11134,23753 11105,23704 11069,23647 11051,23620 11008,23572 10974,23534 10855,23403 10717,23258 10700,23251 10629,23222 10396,23128
 (Tomatenweg - Straße 175): sehr eng	q3 12500,22895 12515,22898 12532,22902
 (Schloßpark Schönhausen): Fußgänger	q1 10600,19225 10638,19149
@@ -2729,7 +2725,7 @@ Wentowsteig: enge Straße mit parkenden Autos	q0- 6904,20692 6930,20808 6943,2086
 (Schönholzer Heide, parallel zur Friesenstr.): einige Fußgänger, Kurven	q1 8834,19253 8830,19239
 #: corrected_by: srt (neu gemacht, relativ breit)
 (Schönholzer Heide, parallel zur Friesenstr.): einige Fußgänger	q0- 8830,19239 8933,19179
-(Schönholzer Heide, parallel zur Friesenstr.): einige Fußgänger	q1 8933,19179 9446,18855 9465,18855
+(Schönholzer Heide, parallel zur Friesenstr.): einige Fußgänger	q1 8933,19179 9022,19135 9216,18974 9446,18855 9465,18855
 #: by ^^^
 # REMOVED (nicht mehr relevant, wird neu gebaut) --- #: by: Felix Beutler: --- Nordufer: teilweise sehr schmaler Radweg	q1 7212,14738 7427,14648 7464,14636
 #: by: Jörn Busch:
@@ -3328,7 +3324,7 @@ Biesentaler Str.: Aufpflasterungen, leicht zu umfahren	q0- 9024,16855 9245,16758
 # 
 #: by: misersky:
 #: confirmed_by: srt (insbesondere, weil es recht kurvig ist)
-Tassostr.: enge Straße	q1 13623,15954 13614,15984 13625,16054 13642,16118 13659,16151 13645,16192 13679,16286
+Tassostr.: enge Straße	q1 13623,15954 13614,15984 13625,16054 13642,16118 13654,16152 13645,16192 13679,16286
 # 
 #: by: Nicole Weber:
 An der Wildbahn: viele parkende Autos in enger Straße	q1 -1581,22553 -1447,22522 -1333,22495 -1267,22480 -1221,22468 -996,22416 -926,22399 -725,22355 -489,22295 -313,22233
@@ -3804,7 +3800,7 @@ Fritz-Kühn-Str.: enge Straße	q0- 21688,-589 21666,-657 21487,-912 21445,-963
 Mittelstr. (Alt-Hohenschönhausen): enge Straße	q1 15539,14493 15647,14693 15706,14752 15856,14915
 #: by: Philipp Günther:
 #: corrected_by: srt/policy (q1 -> q0-)
-Nantesstr.: enge Straße	q0- 11200,21689 11255,22028 11231,22065 11067,22232
+Nantesstr.: enge Straße	q0- 11200,21689 11255,22028 11231,22065 11073,22225
 # 
 #: by: Josephine Jacob vvv
 #: corrected_by: srt/policy (q1 -> q0-) vvv

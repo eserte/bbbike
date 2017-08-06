@@ -338,7 +338,7 @@ Florapromenade	1 10207,17448 10284,17458 10320,17487 10311,17764
 Takustr.	1 3321,5212 3209,5214 3079,5411 2953,5606 2909,5674
 Schönerlinder Str.	1 21799,4319 21633,4355
 Mentzelstr.	1 21579,4579 21546,4457
-Amalienstr.	1 13794,16773 13722,16843 13653,16907 13589,16965
+Amalienstr.	1 13794,16773 13722,16843 13653,16907 13581,16968
 Cosimaplatz	1 5490,7651 5458,7683 5493,7717 5528,7683 5490,7651
 Reiherbeize	1 444,4498 593,4262
 Mendelssohnstr.	1 11598,13598 11550,13642 11545,13690
@@ -542,6 +542,8 @@ Teufelsseestr.	1 454,11159 438,11236
 #: by: Michael Häusler:
 Auerhahnbalz	1 723,4572 697,4605 668,4653 650,4712 636,4765
 #: by: Marco (mar-bet):
+#: add_fragezeichen: ist die Einbahnstraße für Radfahrer offen?
+#: XXX auch die anderen Einbahnstraßen in der Gegend anschauen
 Schmohlstr.	1 13239,17269 13196,17223 13159,17196 13057,17120
 Flughafen Tempelhof	1 9364,8640 9451,8548 9401,8510 9321,8607
 Zufahrt zu Germaniagarten/Oberlandgarten	1 11240,6350 11205,6358 11200,6372 11211,6384 11244,6379 11272,6374 11278,6359 11266,6347 11240,6350
@@ -995,7 +997,7 @@ Bödikersteig	1 1141,14237 1182,14384
 Dorfstr. (Rahnsdorf)	1 29998,3170 29921,3079 29902,3104 29998,3170
 Grunerstr. - Gustav-Böß-Str.	1 10772,12515 10953,12638
 #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/umleitung_2.ba_1_teilabschnitt.pdf?start&ts=1316168438&file=umleitung_2.ba_1_teilabschnitt.pdf
-Grumbkowstr.	1 11563,20048 11627,19907 11695,19760
+Grumbkowstr.	1 11555,20051 11627,19907 11695,19760
 Hardangerstr.	1 11725,16630 11720,16752
 #: note: Radfahren explizit verboten
 (Weg)	2 14432,20188 14463,20160
@@ -1054,7 +1056,7 @@ Alfred-Kowalke-Str.	1 18027,11244 18059,11256 18179,11278 18200,11269 18229,1125
 Alfred-Kowalke-Str.	1 18229,11256 18202,11253 18061,11240 18027,11244
 Wittenbergplatz	1 6171,10657 6228,10646 6292,10627 6353,10583
 Wittenbergplatz	1 6353,10583 6268,10588 6216,10614 6171,10657
-Amalienstr.	1s:q3 13794,16773 13722,16843 13653,16907 13589,16965
+Amalienstr.	1s:q3 13794,16773 13722,16843 13653,16907 13581,16968
 Pasedagplatz	1 14099,17195 14150,17255 14170,17249
 (Vorfahrt am Bahnhof Friedrichstr.)	1 9303,12718 9171,12758
 Aristotelessteig	1s:q2 18496,9628 18527,9623 18660,9599
@@ -1671,7 +1673,7 @@ Prenzlauer Allee: Mittelstreifen mit Straßenbahn, aber Furt in der Nähe	3nocross
 Prenzlauer Allee: Mittelstreifen mit Straßenbahn, aber Ampel in der Nähe	3nocross 11776,15060 11801,15132 11828,15210
 Prenzlauer Allee: Mittelstreifen mit Straßenbahn, hier aber Fußgängerfurt vorhanden	3nocross 11709,14856 11682,14777 11655,14697
 #: XXX_prog: eine Überquerungsmöglichkeit existiert 60m weiter südlich
-Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3nocross 12075,16144 12030,15968 11995,15827
+Prenzlauer Allee: Mittelstreifen mit Straßenbahn	3nocross 12075,16144 12061,16091 12030,15968 11995,15827
 Prenzlauer Allee: Straßenbahntrasse	3nocross 11941,15586 11967,15700 11995,15827
 Prenzlauer Allee: Straßenbahntrasse	3nocross 11435,14023 11465,14122 11471,14143
 Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 11709,14856 11609,14881 11535,14900
@@ -1834,6 +1836,9 @@ Altentreptower Str.: Mittelstreifen	3nocross 21307,12132 21400,12135 21573,12140
 Stülerstr.: Mittelstreifen	3nocross 6692,11365 6716,11439 6825,11486
 Saargemünder Str.: Mittelstreifen	3nocross 1884,4811 1747,4829 1479,4853
 Straße des 17. Juni: Mittelstreifen	3nocross 5758,11895 5810,11902 5900,11913
+Blankenfelder Chaussee: Mittelstreifen	3nocross 9251,23578 9307,23456 9528,23240
+Blankenfelder Chaussee: Mittelstreifen	3nocross 9307,23456 9528,23240 9747,22694
+Blankenfelder Chaussee: Mittelstreifen	3nocross 9528,23240 9747,22694 9973,22133
 Attilastr.: Geländer am Gehweg	3nocross 7628,4521 7667,4549 7690,4563
 Paul-Schneider-Str.: unbequemes Überqueren	3nocross 6613,3320 6647,3292 6712,3237
 Puschkinallee: unbequemes Passieren (Bordsteine, starker Verkehr, kaum Lücken)	3nocross 15383,9191 15403,9158 15442,9095
@@ -2789,6 +2794,11 @@ Schranke	BNP:10::trailer=20 15334,16718
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: next_check_id: NIZZASTR-2014
+#: last_checked: 2017-08-06
+#: check_frequency: 60d
+(Marseillestr. - Straße 160): wegen Bauarbeiten gesperrt	2::inwork 12495,21397 12507,21391 12547,21372
 # 
 #: XXX_indoor sobald aktiv: temp_blockings-Eintrag deaktivieren
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.616518.php

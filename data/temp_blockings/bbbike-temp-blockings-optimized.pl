@@ -3944,7 +3944,7 @@ userdel	2::inwork 21685,916 21708,937 21857,989 21977,988
          'from' => 1497556689,
          'id' => 2869,
          'source_id' => '2147341179',
-         'text' => 'Schönerlinder Str.: Autobahnbrücke gesperrt, unklar, ob Radfahrer und Fußgänger trotzdem passieren können, bis 31.08.2017',
+         'text' => 'Schönerlinder Str.: Autobahnbrücke gesperrt, Radfahrer und Fußgänger können unter Umständen trotzdem passieren, bis 31.08.2017',
          'type' => 'gesperrt',
          'until' => 1504216800
        },

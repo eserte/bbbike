@@ -38,7 +38,6 @@ Dieselstr., Umfahrung: Fußgänger, kurvig, eng	q2::inwork 14326,8062 14344,8072 1
 Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süden auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12753,8187 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785 12969,7610
 Möllendorffstr.: Bauarbeiten, Radfahrer müssen auf die gegenüberliegende Seite wechseln	q4::inwork; 15420,12178 15361,12071
 Fürstenberger Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 10320,14608 10472,14632
-Schloßallee: Bauarbeiten, Fahrbahn teilweise gesperrt	q2::inwork 11730,19684 11883,19739
 Wiltbergstr.: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 16669,25373 16583,25440 16475,25526 16414,25575 16294,25683 16220,25716
 Am Falkenberg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 21862,807 22007,711
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
@@ -1060,7 +1059,7 @@ Hoffbauerpfad: gemeinsamer Rad- und Gehweg	q1 214,969 333,1104
 (Feldspatweg - Parksiedlung Spruch): eng	q2 10907,1651 10895,1698 10904,1733 10968,1753
 (Bleichröderpark): Fußgänger	q1 10545,18143 10487,18270
 Rampe	q2 10503,19371 10489,19406
-(Blaubeerweg - Picardieweg): eng	q2 10933,22179 10993,21948
+(Blaubeerweg - Picardieweg): eng	q2 10935,22174 10993,21948
 Schillingweg: eng, parkende Autos	q1 11259,23928 11224,23879 11190,23832 11165,23796 11134,23753 11105,23704 11069,23647 11051,23620 11008,23572 10974,23534 10855,23403 10717,23258 10700,23251 10629,23222 10396,23128
 (Tomatenweg - Straße 175): sehr eng	q3 12500,22895 12515,22898 12532,22902
 (Schloßpark Schönhausen): Fußgänger	q1 10600,19225 10638,19149
@@ -1726,7 +1725,7 @@ Wentowsteig: enge Straße mit parkenden Autos	q0 6904,20692 6930,20808 6943,20862
 (Spreeuferweg): Fußgänger	q1 4478,12537 4446,12556 4321,12566
 (Schönholzer Heide, parallel zur Friesenstr.): einige Fußgänger, Kurven	q1 8834,19253 8830,19239
 (Schönholzer Heide, parallel zur Friesenstr.): einige Fußgänger	q0 8830,19239 8933,19179
-(Schönholzer Heide, parallel zur Friesenstr.): einige Fußgänger	q1 8933,19179 9446,18855 9465,18855
+(Schönholzer Heide, parallel zur Friesenstr.): einige Fußgänger	q1 8933,19179 9022,19135 9216,18974 9446,18855 9465,18855
 (Weg am Nordgraben): schmaler Weg, mäßiger Fußgängerverkehr	q1 3563,20589 3537,20624 3470,20683 3391,20746 3312,20789 3144,20865 3094,20905 3062,20923 3032,20930 2919,20910 2570,20837
 (Weg am Waldfriedhof Dahlem): Kurven	q2 1022,5525 820,5455 541,5306
 (Waldweg parallel zur Flanaganstr. zwischen Hüttenweg und Im Jagen): starke Steigungen und Gefälle	q2 1022,5525 1697,5938
@@ -2081,7 +2080,7 @@ Rosenorter Steig: enge Straße	q0 -1349,23497 -1451,23525 -1535,23575 -1617,23624
 Straße 40 (Blankenburg): enge Straße	q0 14893,20583 14945,20748 15035,21026
 (Mörchinger Str. - Berliner Str.): Fußgänger	q2 1393,3183 1388,3197 1338,3300
 Biesentaler Str.: Aufpflasterungen, leicht zu umfahren	q0 9024,16855 9245,16758
-Tassostr.: enge Straße	q1 13623,15954 13614,15984 13625,16054 13642,16118 13659,16151 13645,16192 13679,16286
+Tassostr.: enge Straße	q1 13623,15954 13614,15984 13625,16054 13642,16118 13654,16152 13645,16192 13679,16286
 An der Wildbahn: viele parkende Autos in enger Straße	q1 -1581,22553 -1447,22522 -1333,22495 -1267,22480 -1221,22468 -996,22416 -926,22399 -725,22355 -489,22295 -313,22233
 Wolmirstedter Weg: enge Straße	q1 -4143,15639 -4216,15635 -4283,15639
 Landschöppenpfad: Bordsteine, Fußgänger	q2 12609,1780 12574,1866
@@ -2255,7 +2254,7 @@ Dinkelsbühler Steig: enge Straße	q0 2615,25225 2649,25170 2694,25132 2775,25092 
 Schlierbacher Weg: enge Straße	q1 10740,1180 10685,1159 10450,1202 10453,1242 10440,1283
 Fritz-Kühn-Str.: enge Straße	q0 21688,-589 21666,-657 21487,-912 21445,-963
 Mittelstr. (Alt-Hohenschönhausen): enge Straße	q1 15539,14493 15647,14693 15706,14752 15856,14915
-Nantesstr.: enge Straße	q0 11200,21689 11255,22028 11231,22065 11067,22232
+Nantesstr.: enge Straße	q0 11200,21689 11255,22028 11231,22065 11073,22225
 Helgiweg: enge Straße	q0 14459,18589 14517,18410
 Helgiweg: enge Straße	q0 14533,18413 14565,18226 14576,18163 14595,18050
 Lummenweg: eng durch parkende Autos	q0 21879,2592 21919,2510 21939,2388
@@ -2522,7 +2521,7 @@ Akazienweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -3112,
 Buchenweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -2968,18038 -3028,18027 -3083,18010
 Eschenweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -3306,17989 -3285,17968 -3224,17943
 Lindenweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -3111,18105 -3076,18053 -3038,18063
-Amalienstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13794,16773 13722,16843 13653,16907 13589,16965
+Amalienstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13794,16773 13722,16843 13653,16907 13581,16968
 Aristotelessteig: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 18496,9628 18527,9623 18660,9599
 Ella-Trebe-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 7938,13302 7938,13150
 Rosenfelder Ring: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 18140,11932 18139,11833

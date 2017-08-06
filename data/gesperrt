@@ -251,7 +251,7 @@ Florapromenade	1 10207,17448 10284,17458 10320,17487 10311,17764
 Takustr.	1 3321,5212 3209,5214 3079,5411 2953,5606 2909,5674
 Schˆnerlinder Str.	1 21799,4319 21633,4355
 Mentzelstr.	1 21579,4579 21546,4457
-Amalienstr.	1 13794,16773 13722,16843 13653,16907 13589,16965
+Amalienstr.	1 13794,16773 13722,16843 13653,16907 13581,16968
 Cosimaplatz	1 5490,7651 5458,7683 5493,7717 5528,7683 5490,7651
 Reiherbeize	1 444,4498 593,4262
 Mendelssohnstr.	1 11598,13598 11550,13642 11545,13690
@@ -696,7 +696,7 @@ Hefnersteig	1 1364,14191 1392,14287 1420,14369
 Bˆdikersteig	1 1141,14237 1182,14384
 Dorfstr. (Rahnsdorf)	1 29998,3170 29921,3079 29902,3104 29998,3170
 Grunerstr. - Gustav-Bˆﬂ-Str.	1 10772,12515 10953,12638
-Grumbkowstr.	1 11563,20048 11627,19907 11695,19760
+Grumbkowstr.	1 11555,20051 11627,19907 11695,19760
 Hardangerstr.	1 11725,16630 11720,16752
 (Weg)	2 14432,20188 14463,20160
 Caseler Str.	1s 14732,16770 14700,16790 14608,16772
@@ -743,7 +743,7 @@ Alfred-Kowalke-Str.	1 18027,11244 18059,11256 18179,11278 18200,11269 18229,1125
 Alfred-Kowalke-Str.	1 18229,11256 18202,11253 18061,11240 18027,11244
 Wittenbergplatz	1 6171,10657 6228,10646 6292,10627 6353,10583
 Wittenbergplatz	1 6353,10583 6268,10588 6216,10614 6171,10657
-Amalienstr.	1s 13794,16773 13722,16843 13653,16907 13589,16965
+Amalienstr.	1s 13794,16773 13722,16843 13653,16907 13581,16968
 Pasedagplatz	1 14099,17195 14150,17255 14170,17249
 (Vorfahrt am Bahnhof Friedrichstr.)	1 9303,12718 9171,12758
 Aristotelessteig	1s 18496,9628 18527,9623 18660,9599
@@ -1722,9 +1722,9 @@ Stubbenkammerstr. -> Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn, aber Ampe
 Mittelstreifen mit Straﬂenbahn, hier aber Fuﬂg‰ngerfurt vorhanden	3nocross::ignrte 11709,14856 11682,14777 11655,14697
 Prenzlauer Allee -> Chodowieckistr.: Mittelstreifen mit Straﬂenbahn, hier aber Fuﬂg‰ngerfurt vorhanden	3::igndisp 11709,14856 11682,14777 11982,14614
 Chodowieckistr. -> Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn, hier aber Fuﬂg‰ngerfurt vorhanden	3::igndisp 11982,14614 11682,14777 11655,14697
-Mittelstreifen mit Straﬂenbahn	3nocross::ignrte 12075,16144 12030,15968 11995,15827
+Mittelstreifen mit Straﬂenbahn	3nocross::ignrte 12075,16144 12061,16091 12030,15968 11995,15827
 Kuglerstr. -> Prenzlauer Allee [Wohngebiet]: Mittelstreifen mit Straﬂenbahn	3::igndisp 11961,16002 12030,15968 12154,15902
-Kuglerstr. -> Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn	3::igndisp 11961,16002 12030,15968 12075,16144
+Kuglerstr. -> Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn	3::igndisp 11961,16002 12030,15968 12061,16091
 Prenzlauer Allee -> Kuglerstr.: Mittelstreifen mit Straﬂenbahn	3::igndisp 11995,15827 12030,15968 11961,16002
 Straﬂenbahntrasse	3nocross::ignrte 11941,15586 11967,15700 11995,15827
 Zelterstr. -> K¸selstr.: Straﬂenbahntrasse	3::igndisp 11852,15765 11967,15700 12058,15621
@@ -2182,6 +2182,15 @@ Garystr. -> Saargem¸nder Str.: Mittelstreifen	3::igndisp 1736,4774 1747,4829 147
 Mittelstreifen	3nocross::ignrte 5758,11895 5810,11902 5900,11913
 Tiergartenufer -> Str. des 17. Juni: Mittelstreifen	3::igndisp 5813,11886 5810,11902 5758,11895
 Str. des 17. Juni -> Tiergartenufer: Mittelstreifen	3::igndisp 5900,11913 5810,11902 5813,11886
+Mittelstreifen	3nocross::ignrte 9251,23578 9307,23456 9528,23240
+Mˆnchm¸hler Str. -> Blankenfelder Chaussee: Mittelstreifen	3::igndisp 9152,23410 9307,23456 9251,23578
+Blankenfelder Chaussee -> Mˆnchm¸hler Str.: Mittelstreifen	3::igndisp 9528,23240 9307,23456 9152,23410
+Mittelstreifen	3nocross::ignrte 9307,23456 9528,23240 9747,22694
+Blankenfelder Chaussee -> Berliner Str.: Mittelstreifen	3::igndisp 9307,23456 9528,23240 9490,23531
+Berliner Str. -> Blankenfelder Chaussee: Mittelstreifen	3::igndisp 9490,23531 9528,23240 9747,22694
+Mittelstreifen	3nocross::ignrte 9528,23240 9747,22694 9973,22133
+Blankenfelder Chaussee -> Blankenfelder Chaussee: Mittelstreifen	3::igndisp 9469,22606 9747,22694 9528,23240
+Blankenfelder Chaussee -> Blankenfelder Chaussee: Mittelstreifen	3::igndisp 9973,22133 9747,22694 9469,22606
 Gel‰nder am Gehweg	3nocross::ignrte 7628,4521 7667,4549 7690,4563
 Mariendorfer-Hafen-Weg -> Attilastr.: Gel‰nder am Gehweg	3::igndisp 7692,4464 7667,4549 7628,4521
 unbequemes ‹berqueren	3nocross::ignrte 6613,3320 6647,3292 6712,3237
@@ -2862,6 +2871,7 @@ Schranke	BNP:3:-59:trailer=10 8041,-3322
 Schranke	BNP:3:-64:trailer=10 6876,-2731
 Schranke	BNP:3:-78:trailer=10 17215,12485
 Schranke	BNP:10:-182:trailer=20 15334,16718
+(Marseillestr. - Straﬂe 160): wegen Bauarbeiten gesperrt	2::inwork 12495,21397 12507,21391 12547,21372
 Rigaer Str.: Komplettsperrung zwischen Schreinerstr. und Voigtstr.	2::inwork 14538,12371 14748,12314
 Gutspark Neukladow: Bauarbeiten, Weg komplett gesperrt	2::inwork -6366,5215 -6198,5357
 Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -6556,6663 -6661,6743
