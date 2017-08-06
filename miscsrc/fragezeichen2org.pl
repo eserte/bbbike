@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012,2013,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2013,2016,2017 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -321,6 +321,9 @@ for my $file (@files) {
 			 $subject;
 	     if ($dir->{osm_watch}) {
 		 $headline .= " (+osm_watch)";
+	     }
+	     if ($dir->{add_fragezeichen} || ($file =~ m{fragezeichen} && !$dir->{ignore})) {
+		 $headline .= " (+public)";
 	     }
 	     if (defined $searches) {
 		 $headline .= " ($searches)";
