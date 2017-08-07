@@ -2687,33 +2687,7 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.bierfestival-berlin.de/?y=2017
-#: tempex 20170804-20170806 vvv
-userdel	2::temp 12360,12505 12362,12540 12364,12589
-userdel	2::temp 12891,12549 12869,12425
-userdel	2::temp 12632,12630 12596,12472
-userdel	2::temp 13448,12340 13484,12436
-userdel	2::temp 13552,12435 13543,12326
-#zukünftig, wenn dieser Weg eingetragen ist: userdel	2::temp 13163,12382 13176,12500
-#: tempex ^^^
-',
-         'from' => 1501747200,
-         'id' => 2262,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              31,
-                              'months',
-                              7
-                            ]
-                          ],
-         'text' => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung (Internationales Berliner Bierfestival), Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (4.8.2017 bis 6.8.2017)',
-         'type' => 'gesperrt',
-         'until' => 1502064000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3791,7 +3765,7 @@ userdel	q4::inwork 12911,1815 12940,1547
        undef,
        undef,
        {
-         'data' => '#: XXX Wann sind die Bauarbeiten beendet? Wird die Qualität danach besser sein? vvv
+         'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet und der Weg freigegeben? vvv
 #: osm_watch: way id="136814135" version="15" vvv
 #: last_checked: 2017-07-31 vvv
 #: check_frequency: 14d vvv
@@ -3802,7 +3776,7 @@ userdel	2::inwork 3741,12607 3654,12672
 #: check_frequency ^^^
 #: last_checked ^^^
 #: osm_watch ^^^
-#: XXX ^^^
+#: add_fragezeichen ^^^
 ',
          'from' => undef,
          'id' => 2830,
@@ -4160,14 +4134,15 @@ userdel	q4::inwork 17734,675 17928,764 18023,833
          'until' => 1506981600
        },
        {
-         'data' => 'userdel	q4::inwork 2636,23915 2663,23875
+         'data' => '#: source_id: LMS-BR_r_LMS-BR_104443_LMS-BR_72
+userdel	q4::inwork 2636,23915 2663,23875
 ',
          'from' => 1501870668,
          'id' => 2893,
-         'source_id' => 'LMS-BR_r_LMS-BR_104443_LMS-BR_72',
-         'text' => 'Frohnauer Str.: Bauarbeiten zwischen Klosterheider Weg und Am Dominikusteich, Fahrbahn gesperrt, bis Mitte August 2017',
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.619229.php',
+         'text' => 'Frohnauer Str.: Bauarbeiten zwischen Klosterheider Weg und Am Dominikusteich, Fahrbahn gesperrt, bis 11. August 2017',
          'type' => 'handicap',
-         'until' => 1502834399
+         'until' => 1502445600
        },
        {
          'data' => 'userdel	q4::inwork 3069,11551 2924,11309

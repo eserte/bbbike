@@ -5562,7 +5562,7 @@ EOF
        text  => 'K 7239 Diedersdorf-Birkholz OD Diedersdorf, Kno. Birkholzer Str./ Chausseestr. Bau Kreisverkehrsplatz Vollsperrung 15.08.2006-28.09.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 7513,-5721 7399,-7001
+userdel	q4::inwork 7513,-5721 7356,-6995
 EOF
      },
      { from  => 1156024800, # 2006-08-20 00:00
@@ -13966,7 +13966,7 @@ EOF
        text  => 'L 075 Mahlow - Großziethen zw. Kreuzg. B96A u. Kleinziethen Deckeninstandsetzung Vollsperrung 27.04.2009-15.05.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 13506,-2809 13393,-3084 13373,-3234 13321,-3678 13302,-4314 13301,-4355 13237,-4511 13215,-4564 13289,-4660
+userdel	2::inwork 13506,-2809 13393,-3084 13373,-3234 13321,-3678 13302,-4314 13301,-4355 13237,-4511 13215,-4564 13288,-4644
 EOF
      },
      { from  => 1240783200, # 2009-04-27 00:00
@@ -14413,7 +14413,7 @@ EOF
        text  => 'L 076 Mahlow - Teltow zw. Abzw. Birkholz und Abzw. Großbeeren Straßenbau Vollsperrung 02.06.2009-31.01.2010 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 7927,-4232 7710,-3956 6972,-3721 6929,-3827 6371,-3887 6000,-3711 5810,-3604 5731,-3508 5838,-3339 5399,-3049
+userdel	2::inwork 7924,-4240 7727,-3982 7646,-3929 6972,-3713 6929,-3827 6371,-3887 6013,-3717 5810,-3604 5731,-3508 5810,-3457 5838,-3339 5623,-3182 5399,-3049
 EOF
      },
      { from  => 1243807200, # 2009-06-01 00:00
@@ -25699,7 +25699,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.515606.php',
        data  => <<EOF,
-#: XXX Wann sind die Bauarbeiten beendet? Wird die Qualität danach besser sein? vvv
+#: add_fragezeichen: Sind die Bauarbeiten beendet und der Weg freigegeben? vvv
 #: osm_watch: way id="136814135" version="15" vvv
 #: last_checked: 2017-07-31 vvv
 #: check_frequency: 14d vvv
@@ -25710,7 +25710,7 @@ userdel	2::inwork 3741,12607 3654,12672
 #: check_frequency ^^^
 #: last_checked ^^^
 #: osm_watch ^^^
-#: XXX ^^^
+#: add_fragezeichen ^^^
 EOF
      },
      { from  => undef, # 
@@ -26372,11 +26372,12 @@ userdel	q4::inwork 23102,1637 23185,1649
 EOF
      },
      { from  => 1501870668, # 2017-08-04 20:17
-       until => 1502834399, # 2017-08-15 23:59
-       text  => 'Frohnauer Str.: Bauarbeiten zwischen Klosterheider Weg und Am Dominikusteich, Fahrbahn gesperrt, bis Mitte August 2017',
+       until => $isodate2epoch->("2017-08-11 12:00:00"), # 1502834399, # 2017-08-15 23:59
+       text  => 'Frohnauer Str.: Bauarbeiten zwischen Klosterheider Weg und Am Dominikusteich, Fahrbahn gesperrt, bis 11. August 2017',
        type  => 'handicap',
-       source_id => 'LMS-BR_r_LMS-BR_104443_LMS-BR_72',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.619229.php',
        data  => <<EOF,
+#: source_id: LMS-BR_r_LMS-BR_104443_LMS-BR_72
 userdel	q4::inwork 2636,23915 2663,23875
 EOF
      },

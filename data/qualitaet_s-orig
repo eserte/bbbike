@@ -180,10 +180,10 @@ Fischerstr.: glattes Kopfsteinpflaster	Q1- 16181,10609 16193,10593 16220,10555
 Fischerstr.: Asphalt	Q0 16038,10818 16080,10743
 Fischerstr.: Kopfsteinpflaster	Q2 15982,10765 16080,10743
 Wallensteinstr./Neuer Feldweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 17365,9654 17360,9629
-#: note: mindestens eine Ausfahrt besteht aus groben Kopfsteinpflaster mit großen Fugen, deshalb nur Q2+
+#: note: mindestens eine Ausfahrt besteht aus groben Kopfsteinpflaster mit großen Fugen, deshalb nur Q2+; bei wenig Verkehr kann man den linken asphaltierten Streifen benutzen
 Wallensteinstr./Neuer Feldweg: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg Verbundsteinpflaster	Q2+; 17360,9629 17425,9605 17456,9594 17549,9529
 #: note: der Gehweg ist hier auch für Radfahrer frei, Verbundsteinpflaster mit schlechten Stellen
-Wallensteinstr./Neuer Feldweg: Asphaltstreifen, ggfs. parkende Autos	Q1+; 17549,9529 18037,9195
+Wallensteinstr./Neuer Feldweg: Asphaltstreifen	Q0; 17549,9529 18037,9195
 #: note: aber teilweise keine abgesenkten Bordsteine, deshalb nur Q2
 Wallensteinstr./Neuer Feldweg: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg Verbundsteinpflaster/Mosaikpflaster	Q2; 18037,9195 17549,9529 17456,9594 17425,9605 17360,9629
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
@@ -282,7 +282,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (hier wird auch eine Einbahnstraßenregelung erwähnt, hoffentlich nur für Autos! -> realisiert)
 #: source_id: INKO_2147340291_COPY_1
 #: source_id: 2147340291
-#: last_checked: 2017-07-20
+#: last_checked: 2017-08-07
 #: check_frequency: 120d
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288
 Mariannenstr: Asphalt	Q0 11616,10288 11671,10402
@@ -470,6 +470,7 @@ Auguste-Viktoria-Str.: Beton	Q0 3733,18376 3909,18342 4009,18322
 Hüttenweg: Kopfsteinpflaster	Q1 1573,5152 1964,5070
 Wuhlheide: fester Waldweg, bei Trockenheit etwas sandig, Wurzeln	Q2 20872,7268 20892,7236 20867,7165 20869,7116 21409,6731 21576,6644
 Wuhlheide: fester Waldweg	Q2 20869,7116 20682,7262 20653,7289
+#: note: in Bereich des Stadions ist ein Abschnitt asphaltiert
 Wuhlheide: Waldweg	Q2 21365,5832 21653,6037 21737,6068 21832,6129 21869,6190 21958,6248 22000,6245
 (Hegemeisterweg - Modellpark Wuhlheide): Asphalt	Q0 18406,7760 18437,7752 19069,6928
 (Wasserwerk Wuhlheide - An der Wuhlheide): Kopfsteinpflaster	Q2+ 19463,7117 19223,7189
@@ -3871,9 +3872,9 @@ Zu den sieben Raben: leicht welliger Asphalt	Q0- 23027,6425 23033,6511
 Lindenhof: Asphalt	Q0 23131,6237 23113,6278 23116,6360 23131,6398
 Elseneck: Asphalt	Q0 23397,6275 23426,6346
 Heidekrugstr.: Asphalt	Q0 23482,6649 23489,6463 23498,6342 23492,6287 23485,6237
-Elsengrund: sandiger Waldweg	Q3 23532,6233 23735,6184 23812,6154 23960,6153
-Elsengrund: Beton	Q1 23960,6153 24089,6144 24230,6135
-Waldweg (Friedrichshagen): unbefestigter Weg, Schlaglöcher	Q2 24230,6135 24306,6267 24406,6354 24499,6405 24540,6421
+Elsengrund: sandiger Waldweg	Q3+ 23532,6233 23735,6184 23812,6154 23960,6153
+Elsengrund: Beton	Q1 23960,6153 24089,6144 24255,6131
+Waldweg (Friedrichshagen): unbefestigter Weg, Schlaglöcher	Q2 24255,6131 24240,6162 24260,6218 24306,6267 24406,6354 24499,6405 24540,6421
 Waldweg (Friedrichshagen): unbefestigter Weg	Q1- 24540,6421 25116,6640 25178,6664
 Ravensteiner Promenade: unbefestigter Weg	Q1- 25178,6664 25149,6822 25252,7079 25260,7224
 Ravensteiner Promenade: Asphalt	Q0 25260,7224 25262,7433
@@ -3999,7 +4000,7 @@ Straße 13a: unbefestigter Weg	Q3 29930,3450 29840,3378
 An den Bänken: Asphalt	Q0 29529,3880 29753,3679 29820,3589 29836,3443 29840,3378
 Küsterwiesen: Asphalt	Q0 29840,3378 29807,3345
 Hechtstr.: Asphalt	Q0 29743,3546 29820,3589 29917,3697 29960,3845 30015,4047
-Brückenstr. (Rahnsdorf): schlechtes Kopfsteinpflaster, teilweise Banketten vorhanden	Q3 29609,4049 29568,4098 29524,4208
+Brückenstr. (Rahnsdorf): Asphalt	Q0 29609,4049 29568,4098 29524,4208
 (entlang des Fließes): unbefestigter Weg	Q2 29714,4461 29695,4434 29656,4431 29613,4371 29616,4311 29571,4256 29515,4227 29446,4193 29354,4062 29232,3991
 (entlang des Tränkegrabens): Asphalt	Q0 16900,9861 17041,9985 17078,10038
 (entlang des Tränkegrabens): Beton	Q0- 17078,10038 17138,10109 17154,10158 17157,10173 17143,10186 17144,10297 17160,10376
@@ -4835,17 +4836,19 @@ Sternblütenweg: Asphalt	Q0 21591,488 21620,372
 Am Gartenstadtweg: Beton	Q1 21527,547 21549,533 21592,547 21657,580 21673,590 21684,642 21613,667 21592,547
 (Lindenblütenstr. - Mohnblütenweg): wassergebundene Decke	Q1 21703,388 21707,365 21671,328
 (Grünzug am Falkenberg): unbefestigt	Q2 21205,286 21230,309 21300,326
-(Grünzug am Falkenberg): Asphalt	Q0 21300,326 21409,331 21454,317 21488,319 21557,351 21592,341 21671,328 21681,326 21720,335 21745,351 21764,357 21786,382 21774,412 21734,580 21755,625
+(Grünzug am Falkenberg): Asphalt	Q0 21300,326 21409,331 21454,317 21488,319 21557,351 21592,341 21671,328 21681,326 21713,335 21745,351 21764,357 21801,349
+(Grünzug am Falkenberg): Asphalt	Q0 21764,357 21786,382
+(Grünzug am Falkenberg): Asphalt	Q0 21801,349 21786,382 21774,412 21734,580 21755,625
 (Grünzug am Falkenberg): Asphalt	Q0 21557,351 21513,361 21485,360 21409,331
 (Grünzug am Falkenberg): Asphalt	Q0 21734,580 21723,605
 (Kirchsteig - Grünzug am Falkenberg): Beton	Q0- 21925,612 21879,550 21905,510 21904,481 21860,462
 #: XXX eventuell nur während der Bauarbeiten eine Schotterstraße, wie sieht es danach aus?
-#: last_checked: 2016-06-26
+#: last_checked: 2017-08-07
 #: check_frequency: 360d
 (Kirchsteig - Grünzug am Falkenberg): Schotterstraße	Q2+ 21860,462 21774,412
 (Lindenblütenstr. - Mohnblütenweg): wassergebundene Decke	Q1 21681,326 21688,312
 (Sternblütenweg - Grünzug am Falkenberg): wassergebundene Decke	Q1 21620,372 21621,360 21592,341
-#: last_checked: 2016-06-26
+#: last_checked: 2017-08-07
 #: check_frequency: 360d
 #: XXX wird die Straße asphaltiert/befestigt?
 #: XXX heißt dieser Abschnitt auch "Höhensteig"?
@@ -9112,7 +9115,7 @@ Am Werksgarten: Kopfsteinpflaster	Q2 22803,5278 22737,5278
 Am Filmlager: Kopfsteinpflaster	Q2 22802,5325 22803,5278 22803,5241 22804,5199
 #: osm_watch: way id="150937168" version="4"
 #: XXX wird die Straße hier verbessert (asphaltiert)?
-#: last_checked: 2016-07-16
+#: last_checked: 2017-08-07
 #: check_frequency: 180d
 Werlseestr. - Am Goldmannpark: unbefestigte Straße	Q2 26199,5643 26239,5659 26274,5694 26282,5830
 (Am Goldmannpark - Fürstenwalder Damm): Asphalt	Q0 26282,5830 26302,5932
@@ -12642,7 +12645,8 @@ Schreinerstr.: Kopfsteinpflaster	Q2 14776,12418 14570,12478 14297,12553
 #: by: ^^^
 # 
 #: by: frizzo
-Seestr. (Rahnsdorf): Asphalt	Q0 29850,4288 29609,4049 29591,4035 29350,3862
+#: confirmed_by: srt
+Seestr. (Rahnsdorf): Asphalt	Q0 29850,4288 29664,4067 29609,4049 29591,4035 29350,3862
 # 
 #: by: Sandra (sweetydream...)
 #: corrected_by: rjoop (jetzt neuer Asphalt): vvv
@@ -19685,8 +19689,9 @@ Sabinensteig: mäßiges Kopfsteinpflaster	Q2 16442,15926 16395,16099 16416,16236
 #: XXX wird "neu befestigt" (danach vermutlich asphaltiert)
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.540836.php
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/161118_tut_schnitt-aa.pdf
-#: last_checked: 2017-05-06
-#: check_frequency: 90d
+#: XXX Bauarbeiten in Gange
+#: last_checked: 2017-08-07
+#: check_frequency: 30d
 Tuttlinger Weg: gutes Kopfsteinpflaster	Q1- 7143,4350 7100,4341 7046,4354
 # 
 #: by: Andre Grohmann:
@@ -25941,7 +25946,8 @@ Grottewitzstr.: Asphalt	Q0 21515,67 21608,85 21669,99 21742,115
 Grottewitzstr.: schlechtes Kopfsteinpflaster	Q3 21742,115 21868,139
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> ..., neu gemacht)
 Grottewitzstr.: Asphalt	Q0 21868,139 21933,152 22145,208
-Kirchsteig (Bohnsdorf): sehr guter Asphalt	Q0 21135,-274 21322,-176 21364,-168 21409,-109 21515,67
+#: corrected_by: srt (sehr guter -> rauer)
+Kirchsteig (Bohnsdorf): rauer Asphalt	Q0- 21135,-274 21322,-176 21364,-168 21409,-109 21515,67
 #: confirmed_by: srt
 Rosenrotweg: sehr guter Asphalt	Q0 21515,67 21487,173
 #: confirmed_by: srt

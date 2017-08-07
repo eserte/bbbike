@@ -2524,7 +2524,6 @@ Poller	BNP:1:11:trailer=6 8350,10662
 Drängelgitter	BNP:3:-194:trailer=10 10062,15927
 zwei Drängelgitter	BNP:6:64:trailer=15 10038,15418
 Schranke	BNP:3:-93 -7969,-1659
-Drängelgitter	BNP:3:-124:trailer=10 18126,9075
 Drängelgitter	BNP:3:-50:trailer=10 27115,11335
 Schranke	BNP:3:-211:trailer=10 22004,17470
 zwei Drängelgitter an der Straßenbahntrasse	BNP:5:-117:trailer=15 21860,18718
@@ -2871,6 +2870,8 @@ Schranke	BNP:3:-59:trailer=10 8041,-3322
 Schranke	BNP:3:-64:trailer=10 6876,-2731
 Schranke	BNP:3:-78:trailer=10 17215,12485
 Schranke	BNP:10:-182:trailer=20 15334,16718
+Drängelgitter	BNP:3:0:trailer=10 3783,-2079
+(entlang der Erpe): Bauarbeiten der DB	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
 (Marseillestr. - Straße 160): wegen Bauarbeiten gesperrt	2::inwork 12495,21397 12507,21391 12547,21372
 Rigaer Str.: Komplettsperrung zwischen Schreinerstr. und Voigtstr.	2::inwork 14538,12371 14748,12314
 Gutspark Neukladow: Bauarbeiten, Weg komplett gesperrt	2::inwork -6366,5215 -6198,5357
@@ -2898,7 +2899,6 @@ Mengerzeile: Baustelle, Einbahnstraßenregelung	1s 13176,9302 13100,9210
 Heidelberger Str.: Baustelle, Einbahnstraßenregelung	1s 13489,9199 13420,9259 13357,9313
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s 8732,14098 8654,14194
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s 8654,14194 8607,14253 8527,14352 8442,14456
-Türrschmidtstr.: Bauarbeiten, Einbahnstraße	1s 15541,10892 15649,10922 15756,10966
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s 9042,11839 8969,11814
 Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,14449 7561,14458 7426,14539 7368,14573
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909

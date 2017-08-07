@@ -2302,7 +2302,7 @@ Drängelgitter	BNP:3::trailer=10 10062,15927
 #: check_frequency: 120d
 zwei Drängelgitter	BNP:6::trailer=15 10038,15418
 Schranke	BNP:3 -7969,-1659
-Drängelgitter	BNP:3::trailer=10 18126,9075
+# REMOVED (existiert nicht mehr) --- Drängelgitter	BNP:3::trailer=10 18126,9075
 Drängelgitter	BNP:3::trailer=10 27115,11335
 Schranke	BNP:3::trailer=10 22004,17470
 zwei Drängelgitter an der Straßenbahntrasse	BNP:5::trailer=15 21860,18718
@@ -2788,12 +2788,18 @@ Schranke	BNP:3::trailer=10 17215,12485
 #: XXX_prog: Richtung Norden wird automatisch geöffnet, hier also kaum Beeinträchtigungen
 #: note: Richtung Süden ist kaum Spielraum neben der Schranke vorhanden
 Schranke	BNP:10::trailer=20 15334,16718
+Drängelgitter	BNP:3::trailer=10 3783,-2079
 #
 ############################################################################
 #
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: XXX vielleicht wird hier nach den Bauarbeiten kein Weg mehr existieren; die S-Bahnbrücke ist sehr niedrig geworden...
+#: last_checked: 2017-08-07
+#: check_frequency: 90d
+(entlang der Erpe): Bauarbeiten der DB	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
 # 
 #: next_check_id: NIZZASTR-2014
 #: last_checked: 2017-08-06
@@ -2958,12 +2964,7 @@ Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q4 8654,14194 8607,14253 8527
 # REMOVED --- #: by: http://www.s-bahn-berlin.de/bauinformationen/details/rummelsburg/4530 vvv --- #: last_checked: 2017-07-28 vvv
 # REMOVED (offen) --- (Unterführung S-Bhf. Rummelsburg): Bauarbeiten, komplett gesperrt	2::inwork 15433,10765 15409,10709 15372,10655
 # REMOVED (offen) --- Nöldnerstr.: Bauarbeiten, Einbahnstraße	1s:q4 15272,10790 15388,10758 15433,10765
-# 
-#: XXX Bauarbeiten der Berliner Wasserbetriebe bis Dezember 2017
-#: last_checked: 2017-07-23
-#: next_check: 2017-12-01
-#: valid: -20171231
-Türrschmidtstr.: Bauarbeiten, Einbahnstraße	1s:q3 15541,10892 15649,10922 15756,10966
+# REMOVED (nur der östliche Abschnitt ist geblieben, aber relativ breit und relativ wenig Verkehr) --- #: XXX Bauarbeiten der Berliner Wasserbetriebe bis Dezember 2017 --- #: last_checked: 2017-07-23 --- #: next_check: 2017-12-01 --- #: valid: -20171231 --- Türrschmidtstr.: Bauarbeiten, Einbahnstraße	1s:q3 15541,10892 15649,10922 15756,10966
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3853&mt=0&zoom=16
 #: last_checked: 2017-07-31
@@ -3042,7 +3043,7 @@ Fünf Morgen: Bauarbeiten, gesperrt	2::inwork 1437,5015 1486,5175
 # REMOVED (hier schon offen) --- Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9636,13076 9559,13087
 # 
 #: next_check_id: MINNATODENHAGENSTR-2016
-#: last_checked: 2017-06-20 vvv
+#: last_checked: 2017-08-07 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- Grenzweg: wegen Straßenbau gesperrt, ggfs. dauerhaft	2::inwork 17219,7268 17295,7328 17445,7434
 # REMOVED (geänderte Straßenführung) --- Schwarzer Weg: wegen Straßenbau gesperrt	2::inwork 17295,7323 17295,7328 17295,7344 17295,7358 17296,7401

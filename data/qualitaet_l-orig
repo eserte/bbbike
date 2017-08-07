@@ -82,11 +82,12 @@ Keplerstr.: Asphalt	Q0 10460,-3199 10452,-3217
 Keplerstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 10452,-3217 10416,-3302 10320,-3524 10270,-3646
 Hubertusstr.: Schotterstraße	Q2 10466,-3366 10416,-3302
 Hubertusstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 10416,-3302 10277,-3262 10138,-3220 10052,-3194
+Herderstr. (Mahlow): Asphalt	Q0 12380,-4825 12378,-4811 12385,-4800 12408,-4768 12504,-4628 12513,-4600 12516,-4587
 Fritz-Reuter-Str. (Waldblick): Asphalt	Q0 10138,-3220 10045,-3426
 (Hubertusstr. - Marienfelder Str.) (Waldblick): unbefestigter Weg	Q2 10052,-3194 10020,-3214
 Marienfelder Str. (Waldblick): Asphalt	Q0 10020,-3214 9964,-3333 9941,-3384
 Marienfelder Str. (Waldblick): Asphalt mit Schäden	Q1 9941,-3384 9869,-3556 9795,-3704 9744,-3822
-Marienfelder Str. (Waldblick): Asphalt	Q0 9744,-3822 9709,-3896 9659,-4021 9647,-4057 9593,-4234 9585,-4291 9559,-4445 9558,-4459 9540,-4600
+Marienfelder Str. (Waldblick): Asphalt	Q0 9744,-3822 9709,-3896 9659,-4021 9647,-4057 9593,-4234 9585,-4291 9559,-4445 9558,-4459 9542,-4615
 Menzelstr.: Asphalt	Q0- 9964,-3333 9973,-3397 9996,-3562 10003,-3611 10083,-3721
 Zeppelinstr.: Asphalt	Q0 9941,-3384 9973,-3397 10045,-3426 10185,-3478
 Zeppelinstr.: schlechtes Kopfsteinpflaster	Q3 10185,-3478 10320,-3524
@@ -171,8 +172,11 @@ Berliner Str. (Erkner): Fahrbahn und Radweg Richtung Berlin Asphalt, Radweg Rich
 # REMOVED --- Erkner Richtung Tasdorf: Kopfsteinpflaster	Q2; 34152,2749 34326,2915 34293,3076 34261,3092
 # REMOVED --- Erkner Richtung Tasdorf: Kopfsteinpflaster/schlechter Radweg	Q2; 34261,3092 34258,3138 34268,3204 34291,3314 34315,3429 34359,3631 34403,3857 34486,4276 34549,4551
 Heinersdorf: Kopfsteinpflaster	Q2 5941,-2072 5767,-2048
-Heinersdorf: rauher Asphalt	Q1 5767,-2048 5656,-2008
-Heinersdorf: schlechtes Kopfsteinpflaster, sandiger Rand evtl. OK	Q3 5656,-2008 4985,-2373 4283,-2370
+Heinersdorf: rauher Asphalt	Q1 5767,-2048 5671,-2004 5633,-2011
+#: add_fragezeichen: ist hier mittlerweile asphaltiert?
+Heinersdorf: schlechtes Kopfsteinpflaster, sandiger Rand evtl. OK	Q3 5633,-2011 5292,-2221 5132,-2299
+Heinersdorf - Teltow: schlechtes Kopfsteinpflaster, sandiger Rand evtl. OK	Q3 5132,-2299 4998,-2359
+Heinersdorf - Teltow: Asphalt	Q0 4998,-2359 4278,-2339 4245,-2350
 Iserstr.: Asphalt	Q0 -248,-1160 -173,-1397
 #: add_fragezeichen: Stimmt das oder ist das Stück in Sputendorf auch asphaltiert?
 Sputendorf: teilweise Kopfsteinpflaster, OK	Q1 -1316,-7721 -1734,-7716 -2500,-7557
@@ -216,7 +220,7 @@ KW: Kopfsteinpflaster	Q2 26177,-11648 25859,-11559 25618,-11642
 Ragow: Asphalt	Q0 20843,-12781 20528,-12859 20408,-13031 20134,-13333 19800,-13610 19494,-13746
 Ragow (Köpenicker Str.): Asphalt	Q0 20127,-12521 20408,-13031
 #: corrected_by: bergmann (...beuth) (Kopfsteinpflaster, Q2 -> Q0)
-Trebbiner Str.: Asphalt	Q0 11165,-5318 11189,-5157 11291,-4485
+Trebbiner Str.: Asphalt	Q0 11165,-5318 11189,-5157 11302,-4489
 #: by: Stefan Schmidt:
 #: corrected_by: bergmann/osm (mäßiges Kopfsteinpflaster, Q2 -> ...)
 #: confirmed_by: srt
@@ -1206,9 +1210,21 @@ vor Erkner: Asphalt	Q0 34438,1662 34374,1414 34232,888
 Buchhorster Str.: Kopfsteinpflaster	Q2 34374,1414 34310,1418
 Osdorfer Str. (Teltow): glatter unbefestigter Feldweg	Q1- 2477,-548 2250,-570 2078,-640 1861,-754 1852,-770
 Breitscheidstr. (Teltow): mäßiger Asphalt	Q1 2338,-210 2532,-457 2557,-510
+#: by: osm (mittlerer Abschnitt)
+Bruno-H.-Bürgel-Str. (Teltow): Asphalt	Q0 2951,123 3004,159 3163,263 3225,304 3304,356
 Osdorfer Str.: Kopfsteinpflaster	Q2 2557,-510 2536,-519
 Osdorfer Str.: Verbundsteinpflaster	Q1 2536,-519 2477,-548
 Osdorfer Str.: unbefestigte Straße	Q2 2557,-510 2671,-477 2847,-431
+Osdorfer Str.: unbefestigte Straße	Q2 3289,-367 3331,-368 3341,-353
+Osdorfer Str.: Asphalt	Q0 3341,-353 3356,-366 3403,-369 3411,-376
+Osdorfer Str.: Verbundsteinpflaster	Q1 3411,-376 3423,-372 3623,-384
+Zehnrutenweg: Asphalt	Q0 3411,-376 3539,-570 3561,-645 3602,-690 3751,-718 3818,-780 3846,-863 3954,-892 3970,-909
+Siegfriedstr.: Asphalt	Q0 3970,-909 3971,-937 3921,-1170 3926,-1218 3912,-1265 3780,-1731 3686,-2051
+Siedlerweg (Teltow): unbefestigte Straße	Q2 3020,-725 3539,-570 3666,-512
+Robert-Koch-Str.: Asphalt	Q0 3757,-2088 3696,-2361
+Eichenweg: Asphalt	Q0 3780,-1731 3783,-2079 3782,-2103
+Wodanstr.: Asphalt	Q0 3921,-1170 3974,-1175
+Friggastr.: Asphalt	Q0 3912,-1265 3958,-1276
 #: note: Fahrbahn und Radwege
 Berliner Str. (Woltersdorf): Verbundsteine	Q0 33207,5820 32823,5946 32728,5942 32601,5936 32479,5931 32376,5926 32252,5917 32192,5915
 Rüdersdorf: Kopfsteinpflaster	Q2 35771,7946 36068,7796 36362,7759
@@ -1386,8 +1402,8 @@ Fahrbahn asphaltiert, Radwege auf Gehweg	Q1 26639,-17861 26439,-17829
 	Q0 22193,-17646 21886,-17280 21825,-17135 21704,-17017 21470,-16954 20804,-16471 20361,-16197 20161,-16153 19877,-16212 19835,-16307
 	Q0 19116,-11575 18330,-11054 17687,-10765 17554,-10669 17474,-10614 17053,-10621 16500,-10734 16059,-10500 15053,-10171 13878,-9818 13576,-9738
 	Q0 13902,-10591 13772,-10251 13576,-9738 13503,-9528 13151,-9139
-	Q0 13151,-9139 12805,-9035 12198,-8833 11875,-8728 11791,-8700 11555,-8625 11247,-8513 11115,-8466 10115,-8276 9828,-8106 9170,-7708 7981,-7165 7558,-7093 7399,-7001 6432,-6715 5654,-6424 4546,-5868 4206,-5913
-	Q0 7399,-7001 7513,-5721 7927,-4232
+	Q0 13151,-9139 12805,-9035 12198,-8833 11875,-8728 11791,-8700 11555,-8625 11247,-8513 11115,-8466 10115,-8276 9828,-8106 9170,-7708 7981,-7165 7558,-7093 7356,-6995 6432,-6715 5654,-6424 4546,-5868 4206,-5913
+	Q0 7356,-6995 7513,-5721 7924,-4240
 	Q0 4213,-5957 3653,-6050
 	Q0 -11312,13478 -11253,13707 -11244,13735 -11168,13840 -11237,13995 -11257,14070 -11117,14670 -11100,14753 -11075,14934 -11073,15002 -11131,15418 -11205,15994 -11160,16162 -11136,16247 -11027,16625 -10993,16705 -10956,16796 -10706,17065 -10246,17425 -10163,17584 -10088,17984 -10023,18343 -10000,18629 -10581,19871 -10576,19951 -10377,20973 -10313,21144 -9868,21594 -9589,21658 -9085,22059 -9053,22180 -9049,22288 -9046,22376 -8988,22668 -8777,22961 -7734,23796 -7599,23946 -7533,24138 -7603,24696 -7421,24956 -7260,25515 -7230,25622 -7243,25847 -7309,26146 -7640,26928 -7681,27096 -7250,28021 -6631,28966
 	Q0 -6943,25831 -7187,25859 -7225,25509 -7260,25515
@@ -3390,8 +3406,16 @@ Fritz-Reuter-Str. (Teltow): Kopfsteinpflaster	Q2 2560,-25 2607,-105
 #: add_fragezeichen: ist der mittlere Abschnitt der Fritz-Reuter-Str. ebenfalls gepflastert?
 	Q2 2607,-105 2667,-199
 Fritz-Reuter-Str. (Teltow): Kopfsteinpflaster	Q2 2667,-199 2751,-312 2847,-431
-Maxim-Gorki-Str. (Teltow): Asphalt	Q0 3177,374 3225,304
-Gerhart-Hauptmann-Str. (Teltow): Asphalt	Q0 3263,427 3304,356 3320,335 3404,211 3485,102
+Lessingstr. (Teltow): Asphalt	Q0 3341,-353 3621,-271 3720,-242 3908,-187
+Maxim-Gorki-Str. (Teltow): Asphalt	Q0 3177,374 3225,304 3314,179 3392,63 3476,-58 3579,-196 3621,-271
+#: by: osm ("sand", östlicher Abschnitt)
+Marienfelder Anger: unbefestigte Straße	Q2 3243,151 3314,179 3404,211 3490,241 3607,283
+Gerhart-Hauptmann-Str. (Teltow): Asphalt	Q0 3263,427 3304,356 3320,335 3404,211 3485,102 3556,-3 3654,-144 3720,-242
+Schillerstr.: Verbundsteinpflaster und wassergebundene Decke	Q1 3403,-104 3476,-58 3556,-3
+Schillerstr.: Beton	Q0 3556,-3 3767,66
+Goethesteig: Verbundsteinpflaster	Q1 3579,-196 3654,-144
+Goethestr.: Beton	Q0 3654,-144 3838,-83
+Wilhelm-Busch-Str.: Verbundsteinpflaster	Q1+ 3720,-242 3741,-313
 Radweg an der B96: asphaltiert	Q0 11701,-3360 11697,-3397 11986,-4036
 (Ulmenallee - Ahrensfelder Chaussee): Verbundsteinpflaster	Q1 21363,19045 21344,19008
 (Ulmenallee - Gehrensee): Verbundsteinpflaster	Q1 21363,19045 21328,19049
@@ -3977,6 +4001,17 @@ Grimme - Brüssow: Plattenweg (Längsplatten)	Q2+ 58507,113037 58488,112965 58444,
 Grimme - Brüssow: unbefestigt/Kopfsteinpflaster	Q2 58073,112084 58004,111956
 Grimme - Brüssow: Plattenweg (Längsplatten)	Q2+ 58004,111956 57884,111744 57813,111673
 Sonnenweg: Beton	Q1 34046,155 34267,94
+Radweg an der L76: Asphalt	Q0 4930,-2730 5026,-2706 5139,-2758 5221,-2877 5238,-2903 5416,-3014
+Radweg an der L76: Asphalt	Q0 5399,-3049 5623,-3182 5838,-3339 5810,-3457 5731,-3508
+Radweg an der L76: Asphalt	Q0 5616,-3454 5731,-3508 5810,-3604 6013,-3717
+entlang der L76: Asphalt	Q0 6013,-3717 6371,-3887 6929,-3827 6972,-3713 7646,-3929 7727,-3982 7924,-4240
+Bodelschwinghstr.: Kopfsteinpflaster	Q2- 11302,-4489 11635,-4514 11653,-4529
+Bodelschwinghstr.: welliger Asphalt	Q1 11653,-4529 11712,-4589
+Grenzweg: welliger Asphalt	Q1 11712,-4589 11769,-4554 11854,-4574 12184,-4605 12233,-4608
+Anselm-Feuerbach-Str.: Asphalt	Q0 11854,-4574 12040,-4778
+B96 (Radweg) - Grenzweg (Mahlow): Asphalt	Q0 12216,-4536 12180,-4554 12184,-4605
+Radweg an der B96: Asphalt	Q0 12184,-4462 12216,-4536 12318,-4781 12340,-4833
+Radweg an der B96a: Asphalt	Q0 13288,-4644 13302,-4639 13318,-4651 13513,-4708
 ######################### User Contributions #################################
 #: by: mopedfahrerrr:
 #: confirmed_by: anonymous:
@@ -4156,8 +4191,8 @@ Marlene-Dietrich-Allee: guter Asphalt	Q0 -8423,-2038 -8548,-2035 -8721,-2041 -87
 #: by: Marko Krostack: vvv
 #: corrected_by: srt (Asphalt -> ...)
 Hannemannstr. (Teltow): unbefestigt	Q2 2841,411 2902,329
-#: confirmed_by: srt (zumindest der nördliche Abschnitt)
-Hannemannstr. (Teltow): Asphalt	Q0 2902,329 2958,229 3004,159 3067,63 3143,-53 3340,-357
+#: confirmed_by: srt (zumindest der nördliche+südliche Abschnitt)
+Hannemannstr. (Teltow): Asphalt	Q0 2902,329 2958,229 3004,159 3067,63 3143,-53 3341,-353
 #: by ^^^
 # 
 #: by: anonymous:
@@ -4512,8 +4547,8 @@ Olympisches Dorf - Döberitzer Heide: asphaltiert	Q0 -16956,14506 -16803,14549 -1
 Olympisches Dorf - Döberitzer Heide: asphaltiert	Q0 -16956,14506 -16949,14368 -17027,14043 -17045,14005 -17114,13964 -17175,13749 -17292,13343 -17282,13275
 #: by: ^^^
 # 
-Kleinbeeren: mäßiger Asphalt am Rand, Mitte OK	Q0; 6000,-3711 6015,-5015
-Kleinbeeren: Asphalt	Q0; 6015,-5015 6000,-3711
+Kleinbeeren: mäßiger Asphalt am Rand, Mitte OK	Q0; 6013,-3717 5984,-3773 6015,-5015
+Kleinbeeren: Asphalt	Q0; 6015,-5015 5984,-3773 6013,-3717
 Kleinbeeren: Asphalt	Q0 6015,-5015 5654,-6424
 Jühnsdorf - Groß Schulzendorf: Asphalt	Q0 9792,-12090 9538,-12450 9296,-12574 8930,-13631 8421,-13979 8123,-14360 7638,-14868
 Groß Schulzendorf - Nächst Neuendorf: gute Qualität	Q0 7647,-14960 9245,-16892 9394,-17191 9560,-17681 10603,-19430 11075,-20009
@@ -4645,8 +4680,10 @@ Am Finowkanal: Asphalt	Q0 24627,48655 24202,48591
 Am Finowkanal: Waldweg	Q1 24202,48591 23668,48638
 Marienwerder, am Finowkanal: Asphalt	Q0 22566,48180 22276,48270 22047,48243 21685,48291 21428,48276 20965,48351
 Zerpenschleuse - Liebenwalde: Asphalt	Q0 16526,50265 15603,50371 15182,50332 14649,49658 14512,49369 14425,49300 14216,49269 14089,49229 13811,49220 11221,49890 10313,51066 9312,51062 9097,51060
-Grenzweg - entlang der B96: Asphalt	Q0 12284,-4595 12358,-4774 12387,-4794
-Grenzweg (Mahlow): Asphalt	Q0 12284,-4595 12307,-4577 12508,-4584 12717,-4593 13289,-4660
+Grenzweg - entlang der B96: Asphalt	Q0 12288,-4599 12358,-4774 12385,-4800
+Grenzweg (Mahlow): Asphalt	Q0 12288,-4599 12293,-4579
+Anna-Seghers-Weg (Mahlow): Asphalt	Q0 12293,-4579 12516,-4587
+Bettina-von-Arnim-Weg (Mahlow): Asphalt	Q0 12516,-4587 12675,-4592 13273,-4649 13288,-4644
 Schwarzer Weg (Großziethen): Verbundsteinpflaster	Q1 13215,-570 13022,-647
 Schwarzer Weg (Großziethen): Asphalt	Q0 13022,-647 12804,-735
 (Bucher Teiche - Hobrechtsfelde): Feldweg	Q2 15777,28037 16058,28106 16107,28379 16066,28510
