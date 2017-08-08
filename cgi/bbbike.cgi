@@ -4957,25 +4957,21 @@ EOF
 			# verwendet.
 			my($cat, $rw);
 			if (defined $last_path_index) {
-			    my($longest_cat, $cat_length);
-			    my($longest_rw,  $rw_length);
+			    my %cat_length; # str_cat -> length
+			    my %rw_length;  # rw_cat -> length
 			    for my $path_i ($path_index .. $last_path_index) {
 				my $p1 = join(",", @{$r->path->[$path_i]});
 				my $p2 = join(",", @{$r->path->[$path_i+1]});
 				my $len = Strassen::Util::strecke_s($p1, $p2);
-				if (!defined $cat_length || $cat_length < $len) {
-				    my $rec = $net->get_street_record($p1, $p2);
-				    if ($rec) {
-					my $cat = $rec ? $rec->[Strassen::CAT] : '';
-					if ($cat =~ /^\?/) {
-					    $cat = 'fz';
-					}
-					$longest_cat = $cat;
-					$cat_length = $len;
+				my $rec = $net->get_street_record($p1, $p2);
+				if ($rec) {
+				    my $cat = $rec ? $rec->[Strassen::CAT] : '';
+				    if ($cat =~ /^\?/) {
+					$cat = 'fz';
 				    }
+				    $cat_length{$cat} += $len;
 				}
-				if ($radwege_net &&
-				    (!defined $rw_length || $rw_length < $len)) {
+				if ($radwege_net) {
 				    my $rw;
 				    my $rw_rec = $radwege_net->{Net}->{$p1}->{$p2};
 				    if ($rw_rec) {
@@ -4991,14 +4987,11 @@ EOF
 					    $rw = "NF"; # Nebenfahrbahn
 					}
 				    }
-				    $longest_rw = $rw;
-				    $rw_length = $len;
+				    $rw_length{$rw} += $len;
 				}
 			    }
-			    if ($longest_cat) {
-				$cat = $longest_cat;
-			    }
-			    $rw = $longest_rw || "";
+			    ($cat) = sort { $cat_length{$b} <=> $cat_length{$a} } keys %cat_length;
+			    ($rw)  = sort { $rw_length{$b}  <=> $rw_length{$a}  } keys %rw_length;
 			}
 			if ($cat) {
 			    my $cat_title = $cat_to_title{$cat};
