@@ -52,7 +52,7 @@ my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
 my $yaml_syck_tests = 5;
 #plan 'no_plan';
-plan tests => 147 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
+plan tests => 151 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
 
 if (!GetOptions(get_std_opts("cgidir", "simulate-skips"),
 	       )) {
@@ -81,6 +81,19 @@ SKIP: {
     like $http_out, qr{content-type: application/json}i, 'detected application/json content type';
     $stderr =~ s{.*Search again with nearest node .* instead of wanted goal .*\n}{};
     is $stderr, '', 'stderr is empty';
+}
+
+{
+    # mixed N/H, ferry, with_cat_display enabled (currently only in beta bbbike.cgi)
+    my $resp = bbbike_cgi_search +{ use_beta => 1,
+				    startc => '22162,1067',
+				    zielc => '23068,1638',
+				    pref_ferry => 'use',
+				  }, 'mixed N/H, ferry, beta bbbike.cgi';
+    my $content = $resp->decoded_content;
+    like_html $content, qr{Wassersportallee.*title=.Hauptstra.*e, Radweg.*class=.catH catcellRW}, 'found cat_display with H and RW';
+    like_html $content, qr{F12 \(Dahme\).*title=.F.*hre.*class=.catQ.catcell['"].*Mo-Fr von ca. 6 bis 21 Uhr.*BVG-Kurzstreckentarif}, 'found cat_display with ferry, ferry information';
+    like_html $content, qr{angekommen.*M.*ggelbergallee/F12 \(Dahme\)}, 'angekommen';
 }
 
 {
@@ -663,6 +676,10 @@ sub bbbike_en_cgi_search ($$) {
 sub _bbbike_cgi_search {
     my($cgiopts, $params, $testname) = @_;
     my $testcgi = _bbbike_lang_cgi $cgiopts;
+    my $use_beta = delete $params->{use_beta};
+    if ($use_beta) {
+	$testcgi =~ s{bbbike-test}{bbbike2-test};
+    }
     $params->{pref_seen} = 1;
     $params->{pref_speed} = 20 if !exists $params->{pref_speed};
     my $url = $testcgi . '?' . CGI->new($params)->query_string;
