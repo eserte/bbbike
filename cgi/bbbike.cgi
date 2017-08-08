@@ -930,11 +930,11 @@ if (!defined $bbbike_html) {
     $bbbike_html   = "$bbbike_root/" . ($use_cgi_bin_layout ? "BBBike/" : "") .
 	"html";
 }
-$is_beta = $bbbike_url =~ m{bbbike\d(\.en)?\.cgi}; # bbbike2.cgi ...
+$is_beta = $bbbike_url =~ m{bbbike\d(-test)?(\.en)?\.cgi}; # bbbike2.cgi ...
 $bbbike2_url = $bbbike_url;
 if (!$is_beta) {
     local $^W; # $1 may be undef
-    $bbbike2_url =~ s{bbbike(\.en)?\.cgi}{bbbike2$1.cgi};
+    $bbbike2_url =~ s{bbbike(-test)?(\.en)?\.cgi}{bbbike2$1$2.cgi};
 }
 
 $bbbike_script = $bbbike_url;

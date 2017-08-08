@@ -122,7 +122,7 @@ builder {
 		    ['bbbikeleaflet.cgi', 'bbbikeleaflet.en.cgi'],
 		    ['bbbike-data.cgi'],
 		    ['bbbike-snapshot.cgi'],
-		    ['bbbike-test.cgi', 'bbbike-test.en.cgi'],
+		    ['bbbike-test.cgi', 'bbbike-test.en.cgi', 'bbbike2-test.cgi'],
 		    ['bbbike-osm.cgi'],
 		    ['mapserver_address.cgi'],
 		    ['mapserver_comment.cgi'],
