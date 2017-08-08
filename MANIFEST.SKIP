@@ -85,7 +85,6 @@ patch\.gz$
 ^t/
 ^vbbbike/
 -orig$
-bbbike.html$
 ^bbbike.crypt$
 cgi/transcript.bbbike.configure.demonic$
 cgi/bbbike-slow.cgi$
@@ -134,9 +133,6 @@ data/add_str$
 data/add_str_potsdam$
 data/add_plaetze$
 data/str_cont_ausnahme$
-data/inaccessible_strassen$
-data/inaccessible_landstrassen$
-data/Potsdam.coords.data$
 data/\.strassen\.tmp
 data/\.gesperrt\.tmp
 # XXX warum geht das hier nicht?
@@ -168,8 +164,8 @@ ext/.*/.*\.inl$
 ext/.*/_Inline/
 ext/Strassen-Inline/Inline\.bs
 ext/Strassen-Inline/heap\.o
-html/.*\.tpl\.html$
-html/.*\.tpl\.html$
+html/bbbike_sidebar\.tpl\.html$
+html/bbbike_small\.tpl\.html$
 images/ampel_time.gif
 images/ampel_time.xpm
 images/baum.xbm
@@ -177,7 +173,6 @@ images/berlin_overview.gif
 images/berlin_overview2.gif
 images/berlin_overview.xpm
 images/berlin_overview2.xpm
-images/bg.gif
 images/bw_hleft.xbm
 images/bw_hright.xbm
 images/bw_left.xbm
@@ -261,7 +256,6 @@ cgi/GNUmakefile$
 ^Strassen/StrassenNetzNew.pm$
 ^Strassen/Touratech.pm$
 ^mapserver/daemon/mapscript_daemon.pl$
-^html/opensearch/
 # these too
 ^GDF/
 ^projects/
@@ -270,7 +264,9 @@ cgi/GNUmakefile$
 ^data_corrected/
 ^data_berlin_and_potsdam/
 # XXX maybe include this into the dist?
-^data/temp_blockings/
+^data/temp_blockings/.*\.bbd$
+^data/temp_blockings/bbbike-temp-blockings\.pl$
+^data/temp_blockings/bbbike-temp-blockings\.yml$
 ^bbbike_novacom.config$
 ^cgi/.state/
 ^babybike/
@@ -316,22 +312,9 @@ cgi/GNUmakefile$
 ^images/behindertengerecht.gif$
 ^images/behindertengerecht_klein.gif$
 ^images/behindertengerecht_klein2.gif$
-^images/achtung.gif
-^images/achtung.png
-^images/achtung.xpm
 ^doc/links.html$
 ^doc/snippets.pod$
 ^images/bbbike_splash.svg
-^images/eisenbahn.gif
-^images/eisenbahn.png
-^images/eisenbahn.xpm
-^images/eisenbahn15.png
-^images/eisenbahn_klein.gif
-^images/eisenbahn_klein.png
-^images/eisenbahn_klein.xpm
-^images/eisenbahn_mini.gif
-^images/eisenbahn_mini.png
-^images/eisenbahn_mini.xpm
 ^images/monument.svg
 ^images/ropeway.svg
 ^plugins/BBBikeAllTracksPlugin.pm
