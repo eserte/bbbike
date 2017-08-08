@@ -114,8 +114,13 @@ sub BBBikeGPS::gps_interface {
 	}
     };
     if ($@) {
-	status_message
-	    (Mfmt("Schreiben auf <%s> nicht möglich: %s", $file, $@), 'err');
+	if (defined $file) {
+	    status_message
+		(Mfmt("Schreiben auf <%s> nicht möglich: %s", $file, $@), 'err');
+	} else {
+	    status_message
+		(Mfmt("Transfer auf GPS-Gerät nicht möglich: %s", $@), 'err');
+	}
     }
 }
 
