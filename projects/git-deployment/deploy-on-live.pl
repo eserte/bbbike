@@ -388,14 +388,14 @@ sub init_other {
 	my $save_pwd = save_pwd2();
 	checked_chdir $cgi_bin;
 	for my $file (qw(
-			    bbbike.cgi.config bbbike2.cgi.config bbbike-test.cgi.config
+			    bbbike.cgi.config bbbike2.cgi.config bbbike-test.cgi.config bbbike2-test.cgi.config
 			    bbbike-snapshot.cgi bbbike-data.cgi bbbike-teaser.pl
 			    mapserver_address.cgi mapserver_comment.cgi wapbbbike.cgi
 			    qrcode.cgi
 		       )) {
 	    symlink_root "../BBBike/cgi/$file", $file;
 	}
-	for my $file (qw(bbbike.cgi bbbike.en.cgi bbbike2.cgi bbbike2.en.cgi bbbike-test.cgi bbbike-test.en.cgi)) {
+	for my $file (qw(bbbike.cgi bbbike.en.cgi bbbike2.cgi bbbike2.en.cgi bbbike-test.cgi bbbike-test.en.cgi bbbike2-test.cgi)) {
 	    symlink_root '../BBBike/cgi/bbbike.cgi', $file;
 	}
 	for my $file (qw(bbbikegooglemap.cgi bbbikegooglemap2.cgi)) {

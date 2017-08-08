@@ -484,13 +484,18 @@ prepare-bbbike-dist-prog-bbbike-cgi:
 # Create bbbikegooglemap2.cgi link
 	rm -f ${CURDIR}/cgi-bin/bbbikegooglemap2.cgi
 	cd ${CURDIR}/cgi-bin && ln -s bbbikegooglemap.cgi bbbikegooglemap2.cgi
-# Create bbbike-test.cgi link
+# Create bbbike-test.cgi links
 	rm -f ${CURDIR}/cgi-bin/bbbike-test.cgi
 	cd ${CURDIR}/cgi-bin && ln -s bbbike.cgi bbbike-test.cgi
-# Create bbbike-test.cgi configuration
+	rm -f ${CURDIR}/cgi-bin/bbbike2-test.cgi
+	cd ${CURDIR}/cgi-bin && ln -s bbbike.cgi bbbike2-test.cgi
+# Create bbbike-test.cgi configurations
 	rm -f ${CURDIR}/cgi-bin/bbbike-test.cgi.config
 	cd ${CURDIR}/cgi-bin && ln -s ../BBBike/cgi/bbbike-test.cgi.config
 	chmod ugo+r ${CURDIR}/BBBike/cgi/bbbike-test.cgi.config
+	rm -f ${CURDIR}/cgi-bin/bbbike2-test.cgi.config
+	cd ${CURDIR}/cgi-bin && ln -s ../BBBike/cgi/bbbike2-test.cgi.config
+	chmod ugo+r ${CURDIR}/BBBike/cgi/bbbike2-test.cgi.config
 # Create links for English version
 	rm -f ${CURDIR}/cgi-bin/bbbike.en.cgi
 	cd ${CURDIR}/cgi-bin && ln -s bbbike.cgi bbbike.en.cgi
