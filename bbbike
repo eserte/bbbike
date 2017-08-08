@@ -6171,8 +6171,8 @@ sub define_item_attribs {
     %outline_color =
 	('s' => 'grey70',
 	 'l' => 'grey70',
-	 'w' => 'blue4',
-	 'i' => 'blue4',
+	 'w' => '#3d8ff7',
+	 'i' => '#3d8ff7',
 	);
     %str_file =
 	(# "primary"
