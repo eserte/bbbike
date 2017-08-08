@@ -862,6 +862,7 @@ sub handle_waterway_like {
     } else {
 	($cat) = $r->[Strassen::CAT] =~ m{^([^:]+)};
     }
+    my $is_tunnel = $r->[Strassen::CAT] =~ m{:_?Tu_?(?:$|:)}; # e.g. W::_Tu_
     # XXX handling W0,W1 etc. missing
 
     my @node_ids = get_node_ids($r, undef, is_area => $is_area);
@@ -884,6 +885,9 @@ sub handle_waterway_like {
 	}
     } else {
 	print $wayfh qq{  <tag k="waterway" v="river" />\n};
+    }
+    if ($is_tunnel) {
+	print $wayfh qq{  <tag k="tunnel" v="yes" />\n};
     }
     print $wayfh qq{</way>\n};
     $next_way_id++;
