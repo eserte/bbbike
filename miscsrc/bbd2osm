@@ -1365,7 +1365,7 @@ sub handle_citypart_like {
     for my $node_id (@node_ids) {
 	print $wayfh qq{  <nd ref="$node_id"/>\n};
     }
-    print $wayfh qq{  <tag k="admin_level" v="4" />\n};
+    print $wayfh qq{  <tag k="admin_level" v="10" />\n};
     print $wayfh qq{  <tag k="boundary" v="administrative" />\n};
     print $wayfh qq{</way>\n};
 
