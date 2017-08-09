@@ -676,9 +676,9 @@ Alt-Lichtenrade	1 10782,-24 10835,-145
 Glimmerweg	1 11436,1513 11349,1483 11161,1518
 Dorfstr.	1s 18144,18813 18161,18814
 Nossener Str.	1 24345,14403 24298,14267 24217,14041
-Nossener Str.	1 24187,14052 24221,14142 24272,14278 24321,14410
-Mark-Twain-Str.	1 24349,14500 24363,14453 24345,14403
-Mark-Twain-Str.	1 24321,14410 24349,14500
+Nossener Str.	1 24187,14052 24221,14142 24272,14278 24316,14412
+Mark-Twain-Str.	1 24345,14501 24363,14453 24345,14403
+Mark-Twain-Str.	1 24316,14412 24345,14501
 A.T.U-Einfahrt: Tor, außerhalb der Öffnungszeiten (Mo-Fr bis 20 Uhr, Sa bis 16 Uhr) gesperrt	2 8546,9468 8561,9482
 (Erfurter Str. - Wexstr.)	1 6260,8011 6261,8058
 Rubensstr.	1 6429,7876 6307,7893
@@ -1530,8 +1530,8 @@ Regensburger Str. -> Pariser Str.: unbequem passierbarer Mittelstreifen	3::igndi
 Bundesallee -> Regensburger Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5463,9961 5464,9914 5537,9938
 Pariser Str. -> Regensburger Str.: unbequem passierbarer Mittelstreifen	3::igndisp 5416,9928 5464,9914 5537,9938
 Pariser Str. -> Bundesallee: unbequem passierbarer Mittelstreifen	3::igndisp 5416,9928 5464,9914 5463,9961
-Linksabbiegen nicht möglich	3nocross::ignrte 19681,15405 19664,15366 19619,15262 19604,15227 19577,15166 19516,14993 19452,14807 19425,14655
-Märkische Allee -> Parkpl. Le Prom: Linksabbiegen nicht möglich	3::igndisp 19664,15366 19619,15262 19784,15191
+Linksabbiegen nicht möglich	3nocross::ignrte 19681,15405 19664,15366 19644,15320 19619,15262 19604,15227 19577,15166 19516,14993 19452,14807 19425,14655
+Märkische Allee -> Parkpl. Le Prom: Linksabbiegen nicht möglich	3::igndisp 19644,15320 19619,15262 19784,15191
 Parkpl. Le Prom -> Märkische Allee: Linksabbiegen nicht möglich	3::igndisp 19784,15191 19619,15262 19604,15227
 Märkische Allee -> Landsberger Allee: Linksabbiegen nicht möglich	3::igndisp 19577,15166 19604,15227 19502,15089
 Märkische Allee -> Landsberger Allee: Linksabbiegen nicht möglich	3::igndisp 19604,15227 19577,15166 19654,15219
@@ -1780,10 +1780,10 @@ Bundesratufer -> Stromstr.: unpassierbarer Mittelstreifen	3::igndisp 6129,12976 
 Bundesratufer -> nördliches Spreeufer: unpassierbarer Mittelstreifen	3::igndisp 6129,12976 6164,12980 6190,12978
 nördliches Spreeufer -> Stromstr.: unpassierbarer Mittelstreifen	3::igndisp 6190,12978 6164,12980 6157,12933
 nördliches Spreeufer -> Bundesratufer: unpassierbarer Mittelstreifen	3::igndisp 6190,12978 6164,12980 6129,12976
-Linksabbiegen verboten	3nocross::ignrte 20116,16303 20219,16523 20318,16710
-Alfred-Döblin-Str. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20286,16494 20219,16523 20116,16303
-Märkische Allee -> Alfred-Döblin-Str.: Linksabbiegen verboten	3::igndisp 20318,16710 20219,16523 20286,16494
-Linksabbiegen verboten	3nocross::ignrte 20512,17101 20691,17463 20717,17516 20768,17609 20798,17664 20843,17745 20889,17838 20912,17872 21009,18055
+Linksabbiegen verboten	3nocross::ignrte 20120,16297 20232,16522 20323,16706
+Alfred-Döblin-Str. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20286,16494 20232,16522 20120,16297
+Märkische Allee -> Alfred-Döblin-Str.: Linksabbiegen verboten	3::igndisp 20323,16706 20232,16522 20286,16494
+Linksabbiegen verboten	3nocross::ignrte 20516,17088 20691,17463 20717,17516 20768,17609 20798,17664 20843,17745 20889,17838 20912,17872 21009,18055
 zur Märkischen Allee -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20727,17558 20691,17463 20717,17516
 Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3::igndisp 20768,17609 20717,17516 20853,17528
 Wuhletalstr. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20853,17528 20717,17516 20691,17463

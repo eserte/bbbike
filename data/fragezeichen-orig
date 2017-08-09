@@ -430,7 +430,7 @@ Siemensstr.: Radfahr- oder Schutzstreifen	?::projected 17614,6571 17766,6616 178
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf ("Entwurfsphase")
 #: XXX Maßnahme Osw.1 + Osw.12
-#: last_checked: 2017-08-07
+#: last_checked: 2017-08-08
 #: next_check: 2018-06-01
 Wilhelminenhofstr.: Radfahrstreifen auf nördlicher Seite	?::projected; 19024,5830 18932,5926 18861,6000 18843,6013 18766,6067 18670,6132 18574,6197 18473,6265 18464,6269 18423,6285 18341,6313 18191,6363 17991,6431 17826,6495 17800,6504 17614,6571
 #### END AG Radverkehr Treptow-Köpenick
@@ -556,9 +556,10 @@ Alte Kaulsdorfer Str.: Errichten einer Radverkehrsanlage	?::projected 22325,6385
 #: next_check: 2018-06-01
 Am Bahndamm: Errichten einer Radverkehrsanlage	?::projected; 22467,6135 22365,6149
 #: XXX Kö.9
-#: XXX diesen Weg könnte man bereits aufnehmen, danach: next_check: 2019-06-01
+#: last_checked: 2017-08-09
+#: next_check: 2019-06-01
 #: XXX ist tatsächlich der Däumlingsweg gemeint, oder doch eher die Schmausstr.?
-Däumlingsweg - Waldesruher Str.: Verbesserung der Befahrbarkeit	?::projected 23593,6663 23828,6652 23954,6721 24185,6880 24593,7455
+Däumlingsweg - Waldesruher Str.: Verbesserung der Befahrbarkeit	?::projected 23585,6523 23954,6721 24185,6880 24593,7455
 #: XXX Kö.10
 #: last_checked: 2017-08-04
 #: check_frequency: 360d
@@ -570,10 +571,11 @@ Glienicker Str. - Grünauer Str.: Verbindung wird offiziell + Wegführung durch KG
 #: next_check: 2018-06-01
 Müggelbergallee - Straße zum Müggelturm: Bestandssicherung (und Verbesserung?) der Befahrbarkeit	?::projected 23669,1759 24265,1891 24889,1743
 #: XXX Kö.28
+#: last_checked: 2017-08-09
 #: next_check: 2019-06-01
 Mittelheide: Verbesserung der Befahrbarkeit	?::projected 24089,6144 24111,6348 24185,6880
 #: XXX Kö.29  vvv
-#: last_checked: 2017-08-07
+#: last_checked: 2017-08-09
 #: next_check: 2019-06-01
 Elsengrund: Verbesserung der Befahrbarkeit	?::projected 23532,6233 23735,6184 23812,6154 23960,6153 24089,6144 24255,6131
 #: XXX oder ist tatsächlich die Straße "Hinter dem Kurpark" gemeint?
@@ -583,9 +585,11 @@ Kurpark: Verbesserung der Befahrbarkeit	?::projected 24964,6046 25260,6038 25382
 #: XXX ^^^
 #: by: ^^^
 #: XXX Osw.2
+#: last_checked: 2017-08-08
 #: next_check: 2018-06-01
 Edisonstr.: Einrichten einer Radverkehrsanlage	?::projected 17991,6431 17962,6674 17919,6968 17919,6978 17934,7029
 #: XXX Osw.3
+#: last_checked: 2017-08-08
 #: next_check: 2018-06-01
 Edisonstr.: Einrichten einer Radverkehrsanlage	?::projected; 17900,6072 17930,6175 17952,6246 17991,6431
 #: XXX Osw.5
@@ -597,13 +601,14 @@ Siemensstr.: Einrichten einer Radverkehrsanlage	?::projected; 17614,6571 17528,6
 Ostendstr./Weiskopffstr.: Einrichten einer Radverkehrsanlage	?::projected 19958,5950 19681,5924 19650,5920 19403,5885 19388,5883 19273,5866 19024,5830
 # Osw.9 ist vermutlich schon erledigt
 #: XXX Osw.11
-#: last_checked: 2017-08-07
+#: last_checked: 2017-08-08
 #: next_check: 2019-06-01
 Nalepastr.: Einrichten einer Radverkehrsanlage auf der östlichen Seite	?::projected; 17614,6571 17555,6680 17514,6754 17459,6854 17352,7051 17286,7173 17219,7268
 #: XXX Osw.13
 #: next_check: 2019-06-01
 Rudolf-Rühl-Allee: Einrichten einer Radverkehrsanlage (Ostseite) bzw. Radfahren auf Gehweg frei (Westseite)	?::projected 20280,7749 20307,7689 20323,7529 20340,7468 20393,7404 20510,7325 20616,7292 20653,7289
 #: XXX Osw.14
+#: last_checked: 2017-08-08
 #: next_check: 2020-06-01
 Wilhelminenhofbrücke: geplant, mit Radverkehrsanlage nördlich der Brücke	?::projected 19177,5560 19184,5320
 #: XXX Rd.1
@@ -716,10 +721,11 @@ An der Wuhlheide: Verbesserung -> evtl. Radpuren?	?::projected; 19759,6049 19958
 #: last_checked: 2017-06-11
 Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22351,862 22547,651 23206,206
 # 
+#: last_checked: 2017-08-09
 (An der Straßenbahn): Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected 21539,17442 21555,17546 21559,17617 21576,17678 21639,17803 21698,17920 21726,17974 21804,18125 21843,18198
 # 
 #: XXX routing_helper ggfs. anpassen
-#: last_checked: 2017-07-29
+#: last_checked: 2017-08-09
 Frankfurter Allee: Zweirichtungsradweg	?::projected; 15717,12010 15670,12022
 # 
 #: osm_watch: way id="31525575" version="14"
@@ -764,7 +770,7 @@ Ernst-Reuter-Platz: Zweirichtungsradwege	?::projected 4838,11697 4885,11735 4905
 # 
 #: XXX oder werden größere Abschnitte der Straße mit Radstreifen versehen?
 #: osm_watch: way id="37226918" version="9"
-#: last_checked: 2017-08-05
+#: last_checked: 2017-08-09
 Frankfurter Allee: Radstreifen	?::projected; 15117,12106 15361,12071
 # 
 # REMOVED --- #: last_checked: 2017-06-14 --- #: check_frequency: 14d --- Friedenstr.: Radwegverbindung wird gebaut	?::inwork 12382,13097 12325,13148
@@ -772,7 +778,7 @@ Frankfurter Allee: Radstreifen	?::projected; 15117,12106 15361,12071
 #: XXX außerdem wird für den Durchgangsverkehr (hoffentlich nur MIV) gesperrt
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="140648434" version="9"
-#: last_checked: 2017-08-07
+#: last_checked: 2017-08-09
 Hegemeisterweg: Asphaltierung	?::projected 17522,8220 17202,8391
 # 
 #: osm_watch: way id="332909265" version="1"
@@ -783,7 +789,7 @@ Fanningerstr.: Asphaltierung	?::projected 16456,12191 16359,12207 16255,12224
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="147557793" version="9"
-#: last_checked: 2017-07-29
+#: last_checked: 2017-08-09
 Gensinger Str.: Radstreifen	?::projected 18586,12151 18927,12135 19094,12127 19148,12073 19138,11815 19136,11739 19135,11713 19121,11681 19035,11671 19005,11705 19005,11767 19004,11780
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-praesentation_29-10-2015.pdf
@@ -792,7 +798,7 @@ Gensinger Str.: Radstreifen	?::projected 18586,12151 18927,12135 19094,12127 191
 Siegfriedstr.: Radstreifen	?::projected 16860,12861 16859,12613 16857,12600 16826,12408 16820,12339
 # 
 #: osm_watch: way id="27959240" version="26"
-#: last_checked: 2017-07-29
+#: last_checked: 2017-08-09
 Marzahner Chaussee: Radstreifen	?::projected 18586,12151 18635,12224 18654,12255 18715,12348 18748,12399 18773,12438 18882,12618 19005,12822 19069,12929 19123,13067 19180,13219 19198,13272 19181,13485
 # 
 #: XXX nicht eindeutig: "Asphaltierung Kameruner Straße Fahrradstraße Togostraße" --- könnte im Minimalfall nur die Kreuzung sein
@@ -896,7 +902,7 @@ Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbr
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird hier vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13849,9310
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf
-#: last_checked: 2017-08-07
+#: last_checked: 2017-08-09
 Rummelsburger Landstr.: Radweg/Radstreifen	?::projected 18010,7133 17847,7356 17769,7465 17681,7589 17619,7679 17568,7753 17527,7812
 # 
 #: check_frequency ^^^
@@ -993,8 +999,7 @@ Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4367
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2016 (Benennung)
 #: XXX Privatstraße
-#: osm_watch: way id="499986562" version="1"
-#: XXX bei osm schon eingezeichnet, surface=asphalt
+#: osm_watch: way id="499986562" version="2"
 #: last_checked: 2017-08-06
 #: check_frequency: 90d
 Karlinekenweg: neue Straße, Qualität, genaue Lage?	? 11359,20297 11409,20191 11431,20202 11495,20073 11535,20092
@@ -1282,25 +1287,23 @@ parallel zur Johannes-Tobei-Str.: eine mit Betonschwellen abgesperrte Asphaltstr
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6726
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6785
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036170376576/170376576/00086618/18-Anlagen/02/vzb1309_IV_Auswertung_Beteilig_B-PLan_XXIII_9a.pdf
-#: last_checked: 2017-07-01 vvv
-#: check_frequency: 60d vvv
+#: last_checked: 2017-08-09 vvv
+#: check_frequency: 90d vvv
 #: osm_watch: way id="376316837" version="1"
 Planstraße A: Straße in Planung, Qualität? Wird das die neue Hauptstraßenführung?	? 24740,10992 24801,11261
 Rad- und Gehwegverbindung geplant: Qualität? Name des Weges? Beleuchtet?	? 24833,10970 24740,10992
+#: check_frequency ^^^
+#: last_checked ^^^
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_03_0189_0324_online.pdf vvv
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_05_0473_0604_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="375158883" version="9"
-#: XXX fehlen in Berlin.coords.data, beides Privatstraße vvv
-#: XXX PLZ=12623
-#: XXX existiert schon teilweise, aber nicht ausgeschildert; Verbundsteinpflaster
-Hermineweg: geplante Straße, Qualität, genaue Lage?	?::projected 24916,10853 24878,10861 24806,10880 24819,10924 24833,10970 24904,10965
-#: XXX PLZ=12623
-#: XXX existiert schon teilweise, aber nicht ausgeschildert; Verbundsteinpflaster
-Malevkeweg: geplante Straße, Qualität, genaue Lage?	?::projected 24878,10861 24875,10919 24819,10924
-#: XXX ^^^
-#: by ^^^
+#: last_checked: 2017-08-09 vvv
+#: check_frequency: 60d vvv
+Hermineweg: dieser Abschnitt der Straße existiert noch nicht, Qualität?	?::projected 24806,10880 24819,10924 24833,10970 24906,10965
+Malevkeweg: dieser Abschnitt der Straße existiert noch nicht, Qualität?	?::projected 24875,10919 24819,10924
 #: check_frequency ^^^
 #: last_checked ^^^
+#: by ^^^
 #: XXX ^^^
 #: by: ^^^
 #: by: ^^^
@@ -1309,9 +1312,9 @@ Malevkeweg: geplante Straße, Qualität, genaue Lage?	?::projected 24878,10861 248
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/45081036775164584/775164584/00071625/25-Anlagen/02/vzb0716_IV-B-Plan_XXIII-3-1VE_Festsetzg_Planre.pdf
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.510775.php
 #: osm_watch: way id="43999858" version="12"
-#: last_checked: 2016-08-20
-#: check_frequency: 360d
-XXIII-3-1VE: hier könnte eine/mehrere Straßen entstehen	?::projected 24672,11522 24747,11524
+#: last_checked: 2017-08-09
+#: check_frequency: 120d
+XXIII-3-1VE: hier könnte eine/mehrere Straßen entstehen	?::projected 24673,11569 24749,11564
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5720
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810369999434/9999434/00072000/00-Anlagen/02/vzb0688_IV_Auswertung_B-Plan_XXIII_4a.pdf
@@ -1320,9 +1323,9 @@ XXIII-3-1VE: hier könnte eine/mehrere Straßen entstehen	?::projected 24672,11522
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/downloads/xxiii-4b_b-planentwurf.pdf
 #: osm_watch: way id="43999918" version="5"
 #: XXX_osm referenzierter path wird dann vermutlich entfernt
-#: last_checked: 2017-07-01
+#: last_checked: 2017-08-09
 #: check_frequency: 360d
-XXIII-4a (oder XXIII-4b?): hier wird eine Straße entstehen, Straßenname, Qualität?	?::projected 24747,11524 25171,11436 25199,11531
+XXIII-4a (oder XXIII-4b?): hier wird eine Straße entstehen, Straßenname, Qualität?	?::projected 24749,11564 25171,11436 25199,11531
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/buergerbeteiligung/xv-71-522204.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/1-entwurf_bebauungsplan_xv_71.pdf
@@ -1345,7 +1348,7 @@ Straße 6 (Mariendorf): wird in Zukunft vielleicht entstehen	? 9099,4204 9079,437
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00054831/31-Anlagen/06/B0522ZB3.pdf
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5308 (Namensvorschlag: Jan Czochralski) (wurde vom BA abgelehnt)
 #: osm_watch: way id="199532117" version="1"
-#: last_checked: 2017-06-20
+#: last_checked: 2017-08-08
 #: check_frequency: 60d
 Uferweg: wird verlängert, fortschreitende Bauarbeiten	?::inwork 18650,5707 18604,5898 18420,6009
 # 
@@ -1627,7 +1630,8 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: http://www.dafmap.de/d/berlin.html?id=5213&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-12-31)
 #: XXX Asphaltierung der Fahrbahn von Rummelsburger Landstr. bis Schwarzer Weg fertig
 #: XXX Radwege werden vermutlich asphaltiert sein
-#: last_checked: 2017-08-07
+#: XXX vermutlich wird die F11 nach Eröffnung eingestellt werden --- auch Testcase in cgi.t beachten und ggfs. auf eine andere Fähre umschreiben!
+#: last_checked: 2017-08-08
 #: check_frequency: 60d
 Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rummelsburger Landstraße und Köpenicker Landstraße	?::inwork 17681,7589 17585,7525 17453,7451 17295,7344 17211,7280 17091,7175 16971,7058 16747,6813
 # 
@@ -1931,7 +1935,7 @@ Clayallee: Asphaltierung des Radwegs	?::inwork; 1746,5922 1736,5850 1714,5722 16
 #: XXX während der Bauarbeiten wird ein Zweirichtungsradweg erstellt --- Zeitverlust?
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.586635.php
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.599467.php (neuer Termin)
-#: last_checked: 2017-08-05
+#: last_checked: 2017-08-09
 #: next_check: 2017-08-29
 Möllendorffstr.: Radspur Richtung Süden entsteht	?; 15420,12178 15361,12071
 # 
@@ -1949,7 +1953,7 @@ Berliner Str.: Markierung von Radspuren	? 3866,24451 3842,24556
 Lutterbacher Str. - Dahlemer Weg: wird es hier eine weitere Verbindung geben?	? 2151,3126 2183,3126
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6946
-#: last_checked: 2017-07-01
+#: last_checked: 2017-08-09
 #: check_frequency: 120d
 Hultschiner Damm/Rahnsdorfer Str.: wird es hier eine Ampel geben?	? 24628,10569 24653,10580 24684,10586
 # 
@@ -1968,17 +1972,18 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3138,26315 3168,26445 3170,
 #: next_check: 2017-10-01
 Sandhauser Str. und Falkenplatz: Instandsetzung geplant	?::projected -1869,19974 -1806,19806 -1794,19681 -1788,19663 -1784,19666
 # 
-#: XXX Instandsetzung 2017 --- bleibt das Verbundsteinpflaster danach?
+#: XXX Instandsetzung 2017 --- bleibt das Verbundsteinpflaster danach? --- ja, Verbundsteinpflaster bleibt, evtl. Q1+ statt Q1?
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170120
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.555458.php (im 2. Quartal)
-#: next_check: 2017-06-30
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.620100.php
+#: next_check: 2017-10-31
 Im Erpelgrund: Instandsetzung geplant (beide Richtungen oder nur eine?)	?::projected -586,22064 -735,22103 -786,22110 -973,22117 -827,22039 -629,21975
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5430
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036305920032/305920032/00115953/53-Anlagen/04/B1328SB.pdf
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.615295.php (Markierung von Radspuren zw. Straße zum FEZ und Weiskopffstr.)
 #: source_id: 2147341620
-#: last_checked: 2017-08-07
+#: last_checked: 2017-08-09
 #: next_check: 2017-09-13
 An der Wuhlheide: hier entstehen Schutzstreifen (Richtung Westen)	?::inwork 21002,5755 20880,5736 20755,5750 20536,5789 20428,5841 20352,5877 20173,5892 20057,5923 19958,5950
 # 
@@ -2010,10 +2015,7 @@ Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich für den Kfz-Verkehr gesperr
 #: check_frequency: 120d
 Mehringplatz: Widmung von Straßenland - ändert sich hier etwas?	? 9587,10421 9592,10263
 # 
-#: last_checked: 2016-10-02
-#: check_frequency: 30d
-Zossener Str. (Hellersdorf): Bauarbeiten, wird es danach bessere Radwege geben?	?; 22771,16194 22698,15788
-# 
+# REMOVED (ja) --- #: last_checked: 2016-10-02 --- #: check_frequency: 30d --- Zossener Str. (Hellersdorf): Bauarbeiten, wird es danach bessere Radwege geben?	?; 22771,16194 22698,15788
 # REMOVED --- Wege im Gutspark Neukladow: Wegführung, nachts beleuchtet, Qualität?	? -6198,5357 -6141,5413 -6125,5447 -6031,5476 -5984,5539 -5953,5582
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2016
@@ -2426,7 +2428,7 @@ Johannesstift: Qualität der Straßen? Überall verkehrsberuhigt?	? -3655,18177 -38
 Parchwitzer Str.: wurden die Kopfsteinpflasterabschnitte verbessert?	?::projected 22047,-1042 21945,-1031 21828,-1015 21734,-1002 21654,-992 21615,-979 21487,-912 21403,-859
 #: XXX Maßnahme Fh.6
 #: osm_watch: way id="9702843" version="16"
-#: last_checked: 2016-07-16
+#: last_checked: 2017-08-09
 #: check_frequency: 100d
 Josef-Nawrocki-Str.: Einbahnstraße soll freigegeben werden	?::projected 25552,4829 25554,4758 25695,4714 25724,4706 25802,4681
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (Gr.4)
@@ -2486,7 +2488,7 @@ Potsdam, Lutherplatz: ist dieser Abschnitt als Lutherplatz ausgeschildert?	? -10
 # 
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf ("Radweg Hoyerswerdaer Str. - Landesgrenze")
 #: osm_watch: way id="357515474" version="1"
-#: last_checked: 2016-08-20
+#: last_checked: 2017-08-09
 #: check_frequency: 360d
 entlang der U-Bahn nach Hönow: zur Zeit nur ein Pfad. Wird vielleicht ein ausgebauter Weg irgendwann entstehen?	? 25334,15051 25499,15010 25742,14907 25866,14898
 # 
@@ -2762,7 +2764,7 @@ Planstraße am Pyramidenring: eine Straße existiert hier bereits, ändert sich dur
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6562 vvv
 #: XXX Bebauungsplan 10-80 vvv
-#: last_checked: 2016-08-20 vvv
+#: last_checked: 2017-08-09 vvv
 #: check_frequency: 360d vvv
 Parlerstr.: Änderung der Verkehrsführung	?::projected 24369,10393 24333,10317
 geplante Planstraße	?::projected 24370,10198 24404,10387
@@ -3009,8 +3011,8 @@ Güterbahnhof Wilmersdorf: vermutlich wird die Straße während der Bauarbeiten ges
 #: osm_watch: way id="479144282" version="1"
 #: last_checked: 2016-06-04
 #: check_frequency: 270d
-Lili-Grün-Weg: wo genau wird die Straße liegen? Qualität?	?::projected 23646,14007 23744,13960 23753,14050
-Lin-Jaldati-Weg: wo genau wird die Straße liegen? Qualität?	?::projected 23646,14007 23744,13960 23753,14050
+# REMOVED --- Lili-Grün-Weg: wo genau wird die Straße liegen? Qualität?	?::projected 23642,14002 23712,13990 23728,13987
+# REMOVED --- Lin-Jaldati-Weg: wo genau wird die Straße liegen? Qualität?	?::projected 23762,14009 23751,14031 23724,14086
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6704 vvv
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036827265989/827265989/00127188/88-Anlagen/02/AnlageDS2043VIIWege.pdf vvv
@@ -4906,4 +4908,4 @@ Parkweg Eiswerder: Qualität? Nachts beleuchtet?	? -2427,15493 -2421,15547 -2430,
 Buchhorster Str.: Qualität?	? 34310,1418 34190,1425 34018,1436 33644,1463 33491,1480 33350,1494
 #: XXX laut osm "paved"
 Bruno-H.-Bürgel-Str. (Teltow): Qualität des westlichen Abschnitts?	? 2809,28 2951,123
-(Hinter dem Kurpark - Spitzwegerichweg): Qualität der Verbindung? Nachts beleuchtet?	? 25315,6232 25274,6275 25241,6281 25114,6384 25115,6415 25091,6439 25113,6452
+Heinrich-Grüber-Str: gibt es zwischen Hellerdorfer Str. und Bausdorfstr. Radwege?	? 23017,12177 23100,12269

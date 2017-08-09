@@ -3255,7 +3255,16 @@ userdel	2::inwork -12583,-1552 -12485,-1482
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	q4::inwork; 14794,11770 14802,11784 14835,11840 14887,11929
+',
+         'from' => 1502056800,
+         'id' => 2550,
+         'source_id' => '2147341689',
+         'text' => 'Weichselstr.: Bauarbeiten zwischen Oderstr. und Scharnweberstr. Richtung Norden, Fahrbahn gesperrt, bis Mitte August 2017',
+         'type' => 'handicap',
+         'until' => 1502834399
+       },
        undef,
        undef,
        undef,
@@ -3537,19 +3546,7 @@ userdel	2::temp 5857,13342 5868,13441 5882,13548
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: IM_025877	vvv
-	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
-	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
-#: source_id ^^^
-',
-         'from' => 1501525982,
-         'id' => 2715,
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml',
-         'text' => 'Jülicher Str. und Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke, voraussichtlich bis 9. August 2017',
-         'type' => 'handicap',
-         'until' => 1502272800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3937,7 +3934,7 @@ userdel	2::inwork 6815,8691 6912,8617
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2017-08-05
+         'data' => '#: last_checked: 2017-08-08
 #: check_frequency: 14d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
@@ -4152,6 +4149,26 @@ userdel	q4::inwork 2636,23915 2663,23875
          'text' => 'Witzlebenstr.: zwischen Steifensandstr. und Kaiserdamm gesperrt, eventuell sind auch Radfahrer betroffen, bis 30.09.2017',
          'type' => 'handicap',
          'until' => 1506808800
+       },
+       {
+         'data' => 'userdel	2::inwork -586,22064 -735,22103 -786,22110 -973,22117 -827,22039 -629,21975
+',
+         'from' => 1504389600,
+         'id' => 2895,
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.620100.php',
+         'text' => 'Im Erpelgrund: Bauarbeiten zwischen Dambockstr. und Reiherallee, Fahrbahn gesperrt, vom 04.09.2017 bis 31.10.2017',
+         'type' => 'gesperrt',
+         'until' => 1509490800
+       },
+       {
+         'data' => 'userdel	q4::inwork 2395,20126 2336,20117 2169,20095
+',
+         'from' => 1505599200,
+         'id' => 2896,
+         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.620077.php',
+         'text' => 'Brunowstr.: Bauarbeiten zwischen Buddestr. und Berliner Str., Fahrbahn gesperrt, vom 18.09.2017 bis 16.10.2017',
+         'type' => 'handicap',
+         'until' => 1508191200
        }
      
 );

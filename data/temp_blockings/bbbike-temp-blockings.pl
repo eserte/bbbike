@@ -22788,13 +22788,13 @@ EOF
 userdel	q3::inwork; 15098,12849 15233,12829 15357,12813
 EOF
      },
-     { from  => $isodate2epoch->("2017-06-05 08:00:00"), # 1394604000, # 2014-03-12 07:00
-       until => $isodate2epoch->("2017-07-03 12:00:00"), # undef, # 1395421200, # 2014-03-21 18:00
-       text  => 'Scharnweberstr.: Baustelle, Fahrbahn zwischen Jessnerstr. und Müggelstr. gesperrt, bis 3. Juli 2017',
+     { from  => 1502056800, # 2017-08-07 00:00
+       until => 1502834399, # 2017-08-15 23:59
+       text  => 'Weichselstr.: Bauarbeiten zwischen Oderstr. und Scharnweberstr. Richtung Norden, Fahrbahn gesperrt, bis Mitte August 2017',
        type  => 'handicap',
-       source_id => '2147341388',
+       source_id => '2147341689',
        data  => <<EOF,
-userdel	q4::inwork; 15080,11905 14965,11921
+userdel	q4::inwork; 14794,11770 14802,11784 14835,11840 14887,11929
 EOF
      },
      { from  => 1394953200, # 2014-03-16 08:00
@@ -24437,6 +24437,7 @@ EOF
        source_id => 'http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml',
        data  => <<EOF,
 #: source_id: IM_025877	vvv
+#: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2017/pressemitteilung.619785.php (Ende der Bauarbeiten)
 	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
 	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
 #: source_id ^^^
@@ -25382,7 +25383,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED (laut osm mittlerweile offen) --- : last_checked: 2016-08-20
-	2::inwork 24897,11083 24899,11044 24904,10965 24905,10955 24913,10884 24916,10853 24919,10818 24922,10785 24923,10774
+	2::inwork 24897,11083 24899,11044 24906,10965 24907,10955 24913,10884 24915,10858 24919,10818 24922,10785 24923,10774
 EOF
      },
      { from  => 1466287200, # 2016-06-19 00:00
@@ -26132,7 +26133,7 @@ EOF
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-08-05
+#: last_checked: 2017-08-08
 #: check_frequency: 14d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
@@ -26387,6 +26388,24 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 userdel	q4::inwork 3069,11551 2924,11309
+EOF
+     },
+     { from  => 1504389600, # 2017-09-03 00:00
+       until => 1509490800, # 2017-11-01 00:00
+       text  => 'Im Erpelgrund: Bauarbeiten zwischen Dambockstr. und Reiherallee, Fahrbahn gesperrt, vom 04.09.2017 bis 31.10.2017',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.620100.php',
+       data  => <<EOF,
+userdel	2::inwork -586,22064 -735,22103 -786,22110 -973,22117 -827,22039 -629,21975
+EOF
+     },
+     { from  => 1505599200, # 2017-09-17 00:00
+       until => 1508191200, # 2017-10-17 00:00
+       text  => 'Brunowstr.: Bauarbeiten zwischen Buddestr. und Berliner Str., Fahrbahn gesperrt, vom 18.09.2017 bis 16.10.2017',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.620077.php',
+       data  => <<EOF,
+userdel	q4::inwork 2395,20126 2336,20117 2169,20095
 EOF
      },
     );

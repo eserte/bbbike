@@ -975,9 +975,9 @@ Glimmerweg	1 11436,1513 11349,1483 11161,1518
 #: note: Ausfahrt auf die Hauptstraße ist verboten
 Dorfstr.	1s:q3 18144,18813 18161,18814
 Nossener Str.	1 24345,14403 24298,14267 24217,14041
-Nossener Str.	1 24187,14052 24221,14142 24272,14278 24321,14410
-Mark-Twain-Str.	1 24349,14500 24363,14453 24345,14403
-Mark-Twain-Str.	1 24321,14410 24349,14500
+Nossener Str.	1 24187,14052 24221,14142 24272,14278 24316,14412
+Mark-Twain-Str.	1 24345,14501 24363,14453 24345,14403
+Mark-Twain-Str.	1 24316,14412 24345,14501
 #: note: der Abschnitt ist außerdem eine Einbahnstraße, offen bergauf
 A.T.U-Einfahrt: Tor, außerhalb der Öffnungszeiten (Mo-Fr bis 20 Uhr, Sa bis 16 Uhr) gesperrt	2 8546,9468 8561,9482
 (Erfurter Str. - Wexstr.)	1 6260,8011 6261,8058
@@ -1424,7 +1424,7 @@ Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: last_checked: 2017-03-25
 #: check_frequency: 100d
 Ahornallee	1s:q3 1589,11483 1574,11379
-#: osm_watch: way id="24852084" version="8"
+#: osm_watch: way id="24852084" version="9"
 #: last_checked: 2017-03-25
 #: check_frequency: 100d
 Lindenallee	1s:q3 1429,11523 1403,11428
@@ -1629,7 +1629,7 @@ Treskowallee: Straßenbahntrasse	3nocross 18010,7133 18086,7243 18165,7371
 Treskowallee: Straßenbahntrasse	3nocross 18406,7760 18577,8033 18633,8126 18657,8163
 Treskowallee: Straßenbahntrasse	3nocross 18878,9517 18867,9464 18834,9256 18809,9133
 Bundesallee: unbequem passierbarer Mittelstreifen	3nocross 5463,9961 5464,9914 5467,9866
-Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19664,15366 19619,15262 19604,15227 19577,15166 19516,14993 19452,14807 19425,14655
+Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19664,15366 19644,15320 19619,15262 19604,15227 19577,15166 19516,14993 19452,14807 19425,14655
 Zossener Str.: unbequem passierbarer Mittelstreifen	3nocross 9865,10227 9858,10199 9837,10117
 Unter den Eichen: Straßentunnelrampe	3nocross 2817,4158 2944,4241 3048,4305
 Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3nocross 9206,5193 9196,5272 9188,5333 9176,5413 9161,5535
@@ -1688,8 +1688,8 @@ Karl-Marx-Str.: Mittelstreifen	3nocross 12598,8390 12582,8408 12562,8432 12540,8
 Karl-Marx-Str.: unbequemes Überqueren wegen parkender Autos	3nocross 12830,8031 12865,7923 12898,7832
 Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross 11632,8302 11767,8330 11898,8362
 Stromstr.: unpassierbarer Mittelstreifen	3nocross 6183,13083 6164,12980 6157,12933 6150,12875
-Märkische Allee: Linksabbiegen verboten	3nocross 20116,16303 20219,16523 20318,16710
-Märkische Allee: Linksabbiegen verboten	3nocross 20512,17101 20691,17463 20717,17516 20768,17609 20798,17664 20843,17745 20889,17838 20912,17872 21009,18055
+Märkische Allee: Linksabbiegen verboten	3nocross 20120,16297 20232,16522 20323,16706
+Märkische Allee: Linksabbiegen verboten	3nocross 20516,17088 20691,17463 20717,17516 20768,17609 20798,17664 20843,17745 20889,17838 20912,17872 21009,18055
 Märkische Allee: Mittelstreifen	3nocross 19896,11688 19918,11891 19928,11978 19940,12076 19944,12115 19947,12140 19953,12177 19960,12222 19967,12270 19982,12405 19994,12484
 # REMOVED (neue Ampeln) --- Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3nocross 17400,17790 17482,17844 17601,17922 17675,17971 17744,18016 17843,18078
 Falkenberger Chaussee: Straßenbahntrasse	3nocross 18196,18254 18530,18327 18601,18342
@@ -2863,7 +2863,10 @@ Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:q3 5518,12159 5627,12105
 Möckernkiez: Bauarbeiten	2::inwork 8778,9759 8741,9741 8729,9670 8587,9590 8566,9643
 # 
 #: next_check_id: OBERERWUHLEWANDERWEG-2017
-#: last_checked: 2017-07-01
+#: last_checked: 2017-08-09
+#: XXX Ende der Bauarbeiten
+#: next_check_id: 2017-08-11
+#: priority: #A
 oberer Wuhlewanderweg: Bauarbeiten, komplett gesperrt	2::inwork 22873,14498 22864,14556
 # 
 #: next_check_id: MOEWENWEG-2017
@@ -2985,14 +2988,14 @@ Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,
 #: check_frequency: 60d
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 # 
-#: last_checked: 2017-08-04
+#: last_checked: 2017-08-08
 Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2 14447,10491 14270,10584
 # 
 # REMOVED (mittlerweile schon passierbar) --- #: next_check_id: MARIANNEN-2016 vvv --- #: source_id: INKO_2147340291_COPY_1 vvv --- #: source_id: 2147340291 vvv --- #: source_id: 2147340768 vvv --- # REMOVED (aufgehoben) --- #: priority: #A vvv --- #: XXX laut fritz bis 16.12.2016 --- #: last_checked: 2016-12-15 vvv --- #: next_check: 2017-01-10 vvv --- Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11512,10105 11616,10288 --- #: source_id: 2147340777 --- #: XXX laut fritz bis 10.01.2017 --- #: priority: #A --- #: last_checked: 2016-12-15 --- #: check_frequency: 7d --- Mariannenstr.: Baustelle, Fahrbahn gesperrt	2s:q3 11671,10402 11616,10288
 # 
 #: note: siehe auch http://www.detlefzabel.de/spreebruecke-neubau/
 #: next_check_id: MINNATODENHAGENSTR-2016
-#: last_checked: 2017-08-04
+#: last_checked: 2017-08-08
 Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17453,7451 17295,7344 17211,7280 17091,7175 16971,7058 16747,6813
 # 
 # REMOVED (laut osm nicht mehr highway=construction) --- #: osm_watch: way id="291810047" version="7" --- #: last_checked: 2016-07-23 --- Alfonsstr.: Bauzäune	2::inwork 19027,1427 19034,1441 19061,1457
@@ -3043,7 +3046,7 @@ Fünf Morgen: Bauarbeiten, gesperrt	2::inwork 1437,5015 1486,5175
 # REMOVED (hier schon offen) --- Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9636,13076 9559,13087
 # 
 #: next_check_id: MINNATODENHAGENSTR-2016
-#: last_checked: 2017-08-07 vvv
+#: last_checked: 2017-08-08 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- Grenzweg: wegen Straßenbau gesperrt, ggfs. dauerhaft	2::inwork 17219,7268 17295,7328 17445,7434
 # REMOVED (geänderte Straßenführung) --- Schwarzer Weg: wegen Straßenbau gesperrt	2::inwork 17295,7323 17295,7328 17295,7344 17295,7358 17296,7401
@@ -3068,7 +3071,7 @@ Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 144
 Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,12669 6765,12680
 # 
 #: XXX Sperrungen wegen Bauarbeiten für die IGA 2017 vvv
-#: last_checked: 2017-04-30 vvv
+#: last_checked: 2017-08-09 vvv
 #: next_check: 2017-10-15 vvv
 IGA 2017-Gelände: Wege gesperrt	2 22455,14815 22417,14837 22380,14831 22331,14793 22254,14793 22199,14744 22164,14722 22108,14710 22090,14704 22071,14630 22051,14604 22026,14601 22012,14556 21985,14513 22026,14501 22061,14471 22172,14287 22414,14144 22503,14104
 IGA 2017-Gelände: Wege gesperrt	2 22414,14144 22462,14172 22639,14384 22679,14450 22670,14520
@@ -3110,7 +3113,7 @@ Clara-von-Simson-Str.: noch gesperrt	2 7652,14257 7757,14318 7802,14250 7697,141
 #: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/strassen_kfz/SOV-Beschluss-27022012.pdf
 #: XXX wird es eine Bordsteinabsenkung für Radfahrer geben?
 #: source_id: 2147339538
-#: last_checked: 2017-08-04
+#: last_checked: 2017-08-08
 Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, für Autos dauerhaft	2::inwork 17670,7512 17676,7555 17681,7589
 # 
 #: next_check_id: HEERSTR-2016 vvv
@@ -3144,14 +3147,14 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 # 
 # REMOVED (Aufschüttung statt Brücke) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6003 (Forderung nach Wiederherstellung) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6003&date=20151213 (Abriss der Brücke) --- #: XXX: Umfahrung existiert mittlerweile --- bleibt die Sperrung permanent? --- #: XXX: sobald die Brücke abgerissen wurde -> aus den Daten entfernen --- #: last_checked: 2015-10-04 --- #: check_frequency: 180d --- Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352
 # 
-#: osm_watch: way id="193373934" version="7"
+#: osm_watch: way id="193373934" version="8"
 #: last_checked: 2017-07-28
-#: check_frequency: 30d
+#: next_check: 2017-08-09
 Frauenauer Str.: Straße fertig, aber noch gesperrt	2::inwork 19663,9757 19858,9775
 # 
-#: osm_watch: way id="290255259" version="4"
+#: osm_watch: way id="290255259" version="5"
 #: last_checked: 2017-07-28
-#: check_frequency: 30d
+#: next_check: 2017-08-09
 Kirchdorfer Str.: Straße fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9775 19871,9680
 # 
 # REMOVED --- #: osm_watch: way id="24845189" version="13" --- #: last_checked: 2016-09-11 --- #: check_frequency: 60d --- Viechtacher Str.: Straße fertig, aber noch gesperrt	2::inwork 19801,9680 19871,9680 19923,9682
