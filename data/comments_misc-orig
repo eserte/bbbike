@@ -45,18 +45,18 @@ als "Ökoweg" ausgeschildert	CS; 676,9104 383,9305
 Richtung "Friedhof" ausgeschildert	CP2; -3140,9294 -2956,9307
 Richtung Schildhorn	CP2; -1484,9175 -1588,9194
 Richtung Grunewaldturm	CP2; -1484,9175 -1658,9103
-Richtung Havelchaussee	CP2; -2226,5120 -2834,5578
-Richtung Havelchaussee	CP2; -2834,5578 -3129,5798
+Richtung Havelchaussee	CP2; -2218,5133 -2825,5588
+Richtung Havelchaussee	CP2; -2825,5588 -3129,5798
 Richtung Havelchaussee	CP2; -3226,5870 -3275,5847
 Richtung Avus	CP2; -3226,5870 -3129,5798
-Richtung Avus	CP2; -2834,5578 -2226,5120
+Richtung Avus	CP2; -2825,5588 -2218,5133
 Richtung Teufelssee	CP2; -3226,5870 -3156,5926
 Richtung Teufelssee/Saubucht	CP2; -2668,6862 -2634,6907
 Richtung Teufelssee	CP2; -2897,8008 -2752,8018
 Richtung Grunewaldturm	CP2; -2897,8008 -3212,8024
 Richtung Teufelssee	CP2; 425,8766 297,8894
-Richtung S-Bhf. Nikolassee	CP2; -2834,5578 -3605,4520
-Richtung S-Bhf. Grunewald	CP2; -2834,5578 -1925,6790
+Richtung S-Bhf. Nikolassee	CP2; -2825,5588 -3021,5328
+Richtung S-Bhf. Grunewald	CP2; -2825,5588 -1925,6790
 Richtung S-Bhf.	CP2; -4001,2858 -3956,2787
 Richtung Teufelssee/Saubucht	CP2; -3483,6789 -3418,6747
 ausgeschildert Richtung Breitenbachplatz	CP2; 3346,7369 3397,7333
@@ -169,12 +169,12 @@ Seefelder Str.: Schranken, für Radler gut passierbar	CS 17341,16136 17344,16081
 (Parkweg Trippsteinstr. - Sondershauser Str.): Geschützte Grünanlage, Radfahren verboten	CS 6762,1226 6702,1197 6700,1184
 (Parkweg Trippsteinstr. - Sondershauser Str.): Geschützte Grünanlage, Radfahren verboten	CS 6667,1189 6596,1198 6528,1207 6501,1207 6481,1210 6409,1218
 (Parkweg Blankenhainer Str. - Hildburghauser Str.): Geschützte Grünanlage, Radfahren verboten	CS 6572,1601 6554,1564 6539,1476 6515,1418 6479,1312 6481,1210 6487,1169 6455,1101 6467,1028
-(Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 5514,580 5571,614 5671,637 5632,755 5587,816 5571,864 5540,919
+(Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 5514,580 5571,614 5677,650 5683,673 5640,746 5587,816 5571,864 5540,919
 (Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 5578,936 5540,919 5358,822
 (Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 5533,663 5485,751 5503,783 5531,779 5590,719 5593,679 5575,660 5533,663
 (Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 5571,614 5533,663
 (Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 5531,779 5587,816
-(Hildburghauser Str. - Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 6467,1028 6436,921 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5684,773 5632,755 5590,719
+(Hildburghauser Str. - Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 6467,1028 6436,921 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5684,773 5640,746 5590,719
 #: by: ^^^
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060505.1315.39412.html
 (Parkweg Schloßpark Lichterfelde): Radfahren erlaubt	CS 4603,3704 4657,3711 4694,3702 4723,3681 4754,3651 4815,3615 4858,3613 4910,3599
@@ -425,7 +425,7 @@ Bus 186	busroute_N 4542,1188 4605,1089 4768,840 4875,677 4948,562
 Bus 186, Bus 284	busroute_N 4948,562 4748,453 4505,465 4279,459
 Bus M85	busroute_N 4136,505 4122,421 4068,406 3912,362 3898,466 3834,502 3655,752
 Bus M85	busroute_N 7873,12927 7872,13022 7939,13026 7937,13109 7867,13106 7872,13022
-Bus M77, Bus M82	busroute_N 6977,870 6941,690 6937,671 6959,509 7007,333 7014,203 6982,88
+Bus M77, Bus M82	busroute_N 6966,880 6941,690 6937,671 6959,509 7007,333 7014,203 6982,88
 Bus 283	busroute_N 7235,2542 7324,2559 7392,2570 7488,2558 7517,2574 7555,2540 7602,2522 7667,2501 7704,2482 7777,2447 7899,2391 7923,2319 7987,2337 7983,2348 7983,2348 7899,2391
 Bus 187	busroute_N 7852,3183 7855,3355 7784,3369 7755,3376 7705,3386 7587,3411 7501,3432 7483,3440 7458,3451 7407,3473 7183,3570 7109,3635 7012,3743 6996,3761
 Bus 187	busroute_N 7755,3376 7734,3290 7719,3219 7720,3148
@@ -442,7 +442,7 @@ Bus 172	busroute_N 13501,2413 13640,2229 13661,2207 13700,2173 13835,2099 14120,
 Bus 172, Bus 373	busroute_N 14120,1991 14231,1952
 Bus 373	busroute_N 14231,1952 14252,1945 14523,1847 14549,1922 14587,2032
 Bus 172	busroute_N 14231,1952 14224,1925 14203,1873 14124,1857 14062,1846 14008,1835 13890,1817 13794,1799 13679,1782 13614,1772 13657,1587 13709,1381
-Bus M44, ...	busroute_N 13709,1381 13639,1372 13413,1363 13300,1359 13190,1355 13089,1351 12938,1348
+Bus M44, ...	busroute_N 13709,1381 13634,1371 13413,1363 13300,1359 13190,1355 13089,1351 12938,1348
 #: XXX_osm: Name enthält Start/Ziel
 Bus 172	busroute_N 12938,1348 12785,1308 12617,1121 12397,1010 12307,964 12102,903
 Bus 172	busroute_N 10258,-1474 10460,-1471 10496,-1486 10508,-1511 10531,-1633 10539,-1689 10537,-1785 10513,-1954 10511,-2007 10453,-2133
@@ -786,6 +786,7 @@ Königstuhlweg: nicht ausgeschildert	CS 10334,2321 10214,2348
 #: note: allerdings wird der Straßenname "Straße 482" an den umliegenden Häusern verwendet
 Straße 482: nicht ausgeschildert	CS 11120,1384 11146,1413 11156,1463
 Ausgeschildert als "Zu den Grundstücken Lindholzweg 44-48"	CP2; 12460,1168 12374,1193
+nicht ausgeschildert	CP2; 12374,1193 12460,1168
 Lenzelpfad: Privatstraße	CS 15318,2079 15213,2076 15213,2094 15126,2112 15125,2096 15056,2096
 Ausschilderung "Wanderweg 1"	CP2; 15965,16482 15990,16479
 Ausschilderung "Wanderweg 3"	CP2; 15505,17967 15825,18385

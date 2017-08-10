@@ -2955,7 +2955,7 @@ EOF
        text  => 'L 75; (Karl-Marx-Str.); OD Großziethen Straßenbauarbeiten Vollsperrung 06.09.2005-30.11.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 12984,1011
+userdel	2 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 12986,1001 12984,1011
 EOF
      },
      { from  => 1128290400, # 2005-10-03 00:00
@@ -4113,7 +4113,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_003887',
        data  => <<EOF,
-userdel	q4 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 12984,1011
+userdel	q4 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 12986,1001 12984,1011
 EOF
      },
      { from  => 1143928800, # 2006-04-02 00:00
@@ -5760,7 +5760,7 @@ EOF
        text  => 'L 075 Karl-Marx-Str. OD Großziehten Straßenbauarbeiten Vollsperrung 24.11.2006-22.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 12984,1011
+userdel	2 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 12986,1001 12984,1011
 EOF
      },
      { from  => 1156629600, # 2006-08-27 00:00
@@ -7261,7 +7261,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_004793',
        data  => <<EOF,
-userdel	q4::inwork 5414,1304 5585,1275 5741,1231
+userdel	q4::inwork 5414,1304 5585,1275 5741,1234
 EOF
      },
      { from  => 1172646005, # 2007-02-28 08:00
@@ -7286,7 +7286,7 @@ EOF
        text  => 'L 075 Karl-Marx-Str. OD Großziethen, nördl. Attilastr.- Landesgrenze Berlin, Buckower Damm Straßen- und Kanalbau Vollsperrung 05.03.2007-20.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::inwork 12984,1011 13124,216
+userdel	2::inwork 12984,1011 12986,1001 13124,216
 EOF
      },
      { from  => 1173308400, # 2007-03-08 00:00
@@ -8879,7 +8879,7 @@ EOF
 userdel	2::inwork 297,6541 441,6435
 userdel	2::inwork 1514,5163 1486,5175 1443,5193 1385,5214 1333,5246 1212,5353 1067,5486 1022,5525 948,5597 910,5654 894,5829 884,5974 869,6085 736,6217
 userdel	2::inwork 486,6404 605,6345
-userdel	2::inwork -130,6694 218,6571
+userdel	2::inwork -138,6681 218,6571
 EOF
      },
      { from  => 1182201647, # 2007-06-18 23:20
@@ -15208,7 +15208,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_013853',
        data  => <<EOF,
-userdel	2::inwork -130,6694 -739,6838 -927,6888
+userdel	2::inwork -138,6681 -739,6838 -927,6888
 EOF
      },
      { from  => 1249106526, # 2009-08-01 08:02
@@ -22789,7 +22789,7 @@ userdel	q3::inwork; 15098,12849 15233,12829 15357,12813
 EOF
      },
      { from  => 1502056800, # 2017-08-07 00:00
-       until => 1502834399, # 2017-08-15 23:59
+       until => $isodate2epoch->("2017-08-18 12:00:00"), # 1502834399, # 2017-08-15 23:59
        text  => 'Weichselstr.: Bauarbeiten zwischen Oderstr. und Scharnweberstr. Richtung Norden, Fahrbahn gesperrt, bis Mitte August 2017',
        type  => 'handicap',
        source_id => '2147341689',
@@ -24252,7 +24252,7 @@ EOF
        source_id => 'IM_024612',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.291488.php
-userdel	q4::inwork 2092,7810 2099,7904 2112,8074 2120,8335 2126,8426
+userdel	q4::inwork 2092,7810 2099,7904 2112,8088 2120,8335 2126,8426
 EOF
      },
      { from  => 1429160400, # 2015-04-16 07:00
@@ -25093,7 +25093,7 @@ EOF
 EOF
      },
      { from  => 1459720800, # 2016-04-04 00:00
-       until => $isodate2epoch->("2018-06-30 12:00:00"), # 1484348400, # 2017-01-14 00:00
+       until => 1502386746, # weitgehend fertig --- $isodate2epoch->("2018-06-30 12:00:00"), # 1484348400, # 2017-01-14 00:00
        text  => 'Blankertzweg/Hildburghauser Straße: Bauarbeiten zwischen Osdorfer Str. und Woltmannweg, Einbahnstraße, Radfahrer können auf dem schmalen Gehweg fahren, bis Mitte 2018',
        type  => 'handicap',
        source_id => '2147339913',
@@ -25807,8 +25807,8 @@ EOF
        text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am Mittwoch ab 09:30',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp -2834,5578 -1925,6790 -2080,6897
-userdel	2::temp -2226,5120 -927,6888
+userdel	2::temp -2825,5588 -1925,6790 -2080,6897
+userdel	2::temp -2218,5133 -927,6888
 userdel	2::temp -1925,6790 -1851,6887
 EOF
      },
@@ -26021,8 +26021,8 @@ EOF
        text  => 'Akazienstr.: Bauarbeiten, Einbahnstraßenregelung',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2017-07-24
-#: check_frequency: 14d
+#: last_checked: 2017-08-10
+#: check_frequency: 7d
 userdel	q4::inwork; 7201,8870 7107,9030
 EOF
      },
@@ -26097,13 +26097,12 @@ userdel	q4::inwork; 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1502389200, # undef, # XXX
        text  => 'Am Wiesenweg: Bauarbeiten, Weg komplett gesperrt (auch für Fußgänger), Ende unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2017-06-11
-userdel	2::inwork 21685,916 21708,937 21857,989 21977,988
+# REMOVED (offen) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2017-06-11
+userdel	2::inwork 21685,916 21724,954 21856,996 21977,988
 EOF
      },
      { from  => 1497556689, # 2017-06-15 21:58
@@ -26133,7 +26132,7 @@ EOF
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-08-08
+#: last_checked: 2017-08-10
 #: check_frequency: 14d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
@@ -26406,6 +26405,15 @@ EOF
        source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.620077.php',
        data  => <<EOF,
 userdel	q4::inwork 2395,20126 2336,20117 2169,20095
+EOF
+     },
+     { from  => 1502386525, # 2017-08-10 19:35
+       until => 1512082799, # 2017-11-30 23:59
+       text  => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Baseler Str. offen Richtung Norden), eventuell bis Ende November 2017',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
+userdel	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
 EOF
      },
     );

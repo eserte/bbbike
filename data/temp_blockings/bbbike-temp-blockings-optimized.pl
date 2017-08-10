@@ -3263,7 +3263,7 @@ userdel	2::inwork -12583,-1552 -12485,-1482
          'source_id' => '2147341689',
          'text' => 'Weichselstr.: Bauarbeiten zwischen Oderstr. und Scharnweberstr. Richtung Norden, Fahrbahn gesperrt, bis Mitte August 2017',
          'type' => 'handicap',
-         'until' => 1502834399
+         'until' => 1503050400
        },
        undef,
        undef,
@@ -3646,16 +3646,7 @@ userdel	q3::inwork; -6861,15129 -6507,15007
          'text' => 'Mergenthalerring/Kiefholzstr.: Tor kann versperrt sein, auch tagsüber',
          'until' => undef
        },
-       {
-         'data' => 'userdel	q3::inwork; 4542,1188 4631,1249 4702,1298 4795,1362 4897,1352 5059,1337
-',
-         'from' => 1459720800,
-         'id' => 2776,
-         'source_id' => '2147339913',
-         'text' => 'Blankertzweg/Hildburghauser Straße: Bauarbeiten zwischen Osdorfer Str. und Woltmannweg, Einbahnstraße, Radfahrer können auf dem schmalen Gehweg fahren, bis Mitte 2018',
-         'type' => 'handicap',
-         'until' => 1530352800
-       },
+       undef,
        undef,
        undef,
        {
@@ -3861,8 +3852,8 @@ userdel	q4::inwork; 5583,5179 5527,5217 5416,5289 5397,5302 5382,5312
        },
        undef,
        {
-         'data' => '#: last_checked: 2017-07-24
-#: check_frequency: 14d
+         'data' => '#: last_checked: 2017-08-10
+#: check_frequency: 7d
 userdel	q4::inwork; 7201,8870 7107,9030
 ',
          'from' => undef,
@@ -3898,17 +3889,7 @@ userdel	q4::inwork; 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548
          'type' => 'handicap',
          'until' => 1508565600
        },
-       {
-         'data' => '#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2017-06-11
-userdel	2::inwork 21685,916 21708,937 21857,989 21977,988
-',
-         'from' => undef,
-         'id' => 2868,
-         'text' => 'Am Wiesenweg: Bauarbeiten, Weg komplett gesperrt (auch für Fußgänger), Ende unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => 'userdel	2::inwork 11980,24276 11959,24220
 ',
@@ -3934,7 +3915,7 @@ userdel	2::inwork 6815,8691 6912,8617
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2017-08-08
+         'data' => '#: last_checked: 2017-08-10
 #: check_frequency: 14d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
@@ -4169,6 +4150,16 @@ userdel	q4::inwork 2636,23915 2663,23875
          'text' => 'Brunowstr.: Bauarbeiten zwischen Buddestr. und Berliner Str., Fahrbahn gesperrt, vom 18.09.2017 bis 16.10.2017',
          'type' => 'handicap',
          'until' => 1508191200
+       },
+       {
+         'data' => 'userdel	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
+userdel	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
+',
+         'from' => 1502386525,
+         'id' => 2897,
+         'text' => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Baseler Str. offen Richtung Norden), eventuell bis Ende November 2017',
+         'type' => 'handicap',
+         'until' => 1512082799
        }
      
 );

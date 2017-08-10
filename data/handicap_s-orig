@@ -20,11 +20,11 @@
 # REMOVED (fertig) --- #: last_checked: 2014-07-06 --- #: check_frequency: 3d --- Simplonstr.: Einbahnstraﬂe wegen Bauarbeiten	q2::inwork; 14468,11203 14531,11142
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualit‰t danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
-#: last_checked: 2017-08-09
+#: last_checked: 2017-08-10
 Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2017-08-09
+#: last_checked: 2017-08-10
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3 14254,11377 14211,11229
 # 
 #: last_checked: 2017-07-20
@@ -874,7 +874,7 @@ Fritz-Schiff-Weg: Fuﬂg‰nger	q1 13457,12505 13484,12436 13448,12340
 (Baikalstr. - Rummelsburger Str.): Fuﬂg‰nger	q1 17281,10598 17249,10666
 (Baikalstr. - Rummelsburger Str.): Fuﬂg‰nger	q1 17249,10702 17247,10755 17261,10827 17257,10875
 (Tr‰nkegraben - Eggersdorfer Str./Rummelsburger Str.): Fuﬂg‰nger	q1 17261,10827 17226,10865
-Verl. P¸cklerstr.: Fuﬂg‰nger, Hundeauslaufgebiet	q1 1553,6741 1348,6701 1152,6659 967,6620 905,6631 880,6645 832,6607 778,6603 698,6592 640,6576 546,6583 369,6594 340,6598 218,6571
+Verl. P¸cklerstr.: Fuﬂg‰nger, Hundeauslaufgebiet	q1 1553,6741 1338,6708 1154,6672 956,6631 902,6642 878,6651 818,6616 775,6615 698,6592 663,6575 546,6583 369,6594 340,6598 218,6571
 Weimarer Str.: Fuﬂg‰nger	q1 4101,11347 4101,11233
 Norwegerstr. - Behmstr.: Rampe	q2 10022,16237 10026,16165 10055,16104 10065,16110 10045,16157
 Marzahner Promenade - M¸hlenbecker Weg: Fuﬂg‰nger	q1 20222,15519 20202,15587 20202,15630 20181,15658 20150,15678
@@ -1537,7 +1537,7 @@ Appelbacher Weg: Rampe	q2 27780,893 27804,878
 Hallgarter Steig: eng und kurvig	q1 27890,373 27961,321 28042,304 28046,268 28058,155 28068,148 28071,112 28086,101 28070,22 28083,-34 28065,-114 28042,-152
 Grottewitzwanderweg: eng, kurvig	q2 28042,-152 27852,-279 27825,-371 27703,-406 27624,-480 27605,-661 27573,-757 27603,-906 27562,-1043 27578,-1153 27539,-1337
 Papendickstr.: enge Straﬂe	q0- 17071,16174 17073,16222 17135,16334 17171,16372
-Am Wiesenweg: Fuﬂg‰nger	q1 21977,988 21857,989 21708,937 21685,916
+Am Wiesenweg: Fuﬂg‰nger	q1 21977,988 21856,996 21724,954 21685,916
 Grasm¸ckenweg: Fuﬂg‰nger, eng	q2 14877,3475 14822,3409
 (Scharnweberstr. - Berenhorststr.): Fuﬂg‰nger	q1 4801,17623 4816,17712
 Ernststr.: wendelfˆrmige Rampen	q4 2821,19559 2780,19548 2714,19529 2689,19544
@@ -2519,7 +2519,7 @@ An der Neumark: laut Schild "Schrittgeschwindigkeit"	q2 11283,3774 11300,3709 11
 (Am Biesdorfer Baggersee): einige Fuﬂg‰nger	q1 20393,10889 20354,10963 20354,11025 20362,11166 20335,11258 20334,11321 20346,11337
 #: next_check_id: MINNATODENHAGENSTR-2016
 #: XXX entfernen, sobald die eigentliche Straﬂe offen ist
-#: last_checked: 2017-08-08
+#: last_checked: 2017-08-10
 #: check_frequency: 60d
 (Gehweg an der zuk¸nftigen Minna-Todenhagen-Str.): einige Fuﬂg‰nger	q2 17681,7589 17470,7473 17295,7358
 Dalandweg: schmale und kurvenreiche Straﬂe	q1 5120,4318 5226,4259 5250,4298 5311,4270 5356,4249 5385,4236 5541,4305
@@ -2754,7 +2754,7 @@ L¸nette: Fuﬂg‰nger	q1 -1347,15506 -1349,15490 -1444,15443 -1485,15463
 #: corrected_by: srt (q1 -> q0-)
 Gritznerstr.: enge Straﬂe	q0- 4312,5889 4380,6049 4414,6134 4430,6165 4472,6242 4511,6318 4555,6403 4630,6534 4679,6620 4734,6716
 #: by: Angela
-Im Jagen: Fuﬂg‰nger, Hundeauslaufgebiet	q1 905,6631 909,6584 1057,6461 1375,6138
+Im Jagen: Fuﬂg‰nger, Hundeauslaufgebiet	q1 902,6642 909,6584 1057,6461 1375,6138
 #: by: Patrik Marschalik vvv
 Worpsweder Str.: eng mit ein- und ausparkenden Autos	q1 6182,4931 6202,5163
 Wilseder Str.: eng mit ein- und ausparkenden Autos	q1 6295,5158 6276,4915
@@ -2936,7 +2936,7 @@ M¸nstersche Str.: Fuﬂg‰nger	q2 3840,9683 3698,9624
 (Hoffmannstr. - Puschkinallee): Fuﬂg‰nger	q1 14077,10016 13999,9842
 (Hoffmannstr. - Uferweg an den Treptowers): Fuﬂg‰nger	q1 14077,10016 14116,10149 14126,10176
 August-Lindemann-Str.: Fuﬂg‰nger	q3 14355,12752 14360,12792
-(Jagdschloﬂ Grunewald - Umgehungschaussee): Fuﬂg‰nger, Hundeauslaufgebiet	q2 880,6645 884,6701 1024,6898 1066,7093 1125,7184
+(Jagdschloﬂ Grunewald - Umgehungschaussee): Fuﬂg‰nger, Hundeauslaufgebiet	q2 878,6651 884,6701 1024,6898 1066,7093 1125,7184
 (Uferweg am Grunewaldsee): Fuﬂg‰nger, Hundeauslaufgebiet	q2 1251,7429 1197,7457 1168,7473 1089,7496 1007,7334 928,7252 794,6958 762,6906 682,6865 574,6842 524,6795 478,6738 340,6598
 Umgehungschaussee: Fuﬂg‰nger, Hundeauslaufgebiet	q2 1125,7184 1251,7429
 Umgehungschaussee: Fuﬂg‰nger, Hundeauslaufgebiet	q1 1251,7429 1263,7450 1252,7741 1215,7797 1043,7929 860,8052 834,8067
@@ -3143,18 +3143,22 @@ Seefelder Str. (Fuﬂweg): Fuﬂg‰nger, Bordstein	q3 17362,16189 17383,16197
 #: XXX_prog: Bordsteine
 #: corrected_by: srt (added Bordsteine)
 Altenburger Str.: Fuﬂg‰nger, Bordsteine	q2 6651,1063 6631,968
+# 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5783 vvv
 #: XXX wird sich hier was ‰ndern? vvv
-#: next_check: 2017-06-01 vvv
-(Lilienthalpark): Fuﬂg‰nger	q2 5514,580 5571,614 5671,637 5632,755 5587,816 5571,864 5540,919
+#: last_checked: 2017-08-10 vvv
+#: check_frequency: 360d vvv
+(Lilienthalpark): Fuﬂg‰nger	q2 5514,580 5571,614 5677,650 5683,673 5640,746 5587,816 5571,864 5540,919
 (Lilienthalpark): Fuﬂg‰nger	q2 5578,936 5540,919 5358,822
 (Lilienthalpark): Fuﬂg‰nger	q2 5533,663 5485,751 5503,783 5531,779 5590,719 5593,679 5575,660 5533,663
 (Lilienthalpark): Fuﬂg‰nger	q2 5571,614 5533,663
 (Lilienthalpark): Fuﬂg‰nger	q2 5531,779 5587,816
-#: next_check ^^^
-#: last_checked: 2017-05-21
-#: check_frequency: 120d
-(Hildburghauser Str. - Lilienthalpark): Fuﬂg‰nger, Radfahren nicht erlaubt, ggfs. schieben	q2 6467,1028 6436,921 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5684,773 5632,755 5590,719
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
+#: last_checked: 2017-08-10
+#: check_frequency: 360d
+(Hildburghauser Str. - Lilienthalpark): Fuﬂg‰nger, Radfahren nicht erlaubt, ggfs. schieben	q2 6467,1028 6436,921 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5684,773 5640,746 5590,719
 #: XXX ^^^
 #: by ^^^
 (Mauerweg Lichtenrade - Lichterfelde): Fuﬂg‰nger	q1 10309,-3191 10051,-3173 9600,-3160 9529,-2628 9506,-2421 9471,-2138 9462,-2050 9081,-2073 8846,-2089 8310,-2037 8376,-1523 7962,-1295 7593,-1034 7144,-565 7169,-520 7164,-473 7146,-466 7098,-523 6965,-387 6668,-100 6498,71 6351,219 6256,363 6198,328 6013,211 5832,93 5435,-157 4842,-547 4596,-707 4406,-910

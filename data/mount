@@ -194,8 +194,6 @@ Steigung 5.0% (Pappelplatz (Grunewald))	St; 425,8766 297,8894
 Steigung 5.0% (Oppermannstr.)	St; 21617,16061 21598,16055
 Steigung 4.9% (Sensburger Allee)	St; 200,11428 326,11391
 Steigung 4.9% (Langenscheidtstr.)	St; 7509,9337 7604,9242
-Steigung 4.9% (Havelchaussee)	St; -3872,4953 -3807,4794
-Steigung 4.9% (Havelchaussee)	St; -3807,4794 -3729,4687
 Steigung 4.9% (Am Tempelhofer Berg)	St; 9309,9347 9304,9241
 Steigung 4.9% ((Gensinger Str. - Alt-Friedrichsfelde))	St; 19110,11705 19136,11739
 Steigung 4.9% ((Gensinger Str. - Alt-Friedrichsfelde))	St; 19092,11776 19110,11705
@@ -226,6 +224,8 @@ Steigung 4.6% (Ritterfelddamm)	St; -7673,5678 -7556,5515
 Steigung 4.6% (Lindenstr. (Wannsee))	St; -6107,1896 -6124,1884
 Steigung 4.6% (Lindenstr. (Wannsee))	St; -6058,1937 -6107,1896
 Steigung 4.6% (Lindenstr. (Wannsee))	St; -6025,1999 -6058,1937
+Steigung 4.6% (Havelchaussee)	St; -3889,4967 -3807,4794
+Steigung 4.6% (Havelchaussee)	St; -3807,4794 -3729,4687
 Steigung 4.5% (Sibeliusweg)	St; -6811,4893 -6797,4991
 Steigung 4.5% (Sibeliusweg)	St; -6797,4991 -6789,5052
 Steigung 4.5% (Sibeliusweg)	St; -6789,5052 -6787,5076
@@ -323,8 +323,8 @@ Steigung 4.0% ((zum Teufelsberg))	St; -172,10409 -230,10409
 Steigung 4.0% ((zum Teufelsberg))	St; -141,10389 -172,10409
 Steigung 4.0% ((Jagowstr. - Egidysteg))	St; 3094,22216 3077,22234
 Steigung 3.9% (Zeunepromenade)	St; 3919,5670 3978,5600
-Steigung 3.9% (Wannseebadweg)	St; -4964,4100 -4918,4087
-Steigung 3.9% (Wannseebadweg)	St; -4918,4087 -4650,3902
+Steigung 3.9% (Wannseebadweg)	St; -4964,4100 -4901,4083
+Steigung 3.9% (Wannseebadweg)	St; -4901,4083 -4650,3902
 Steigung 3.9% (Sakrower Kirchweg)	St; -7381,4517 -7419,4497
 Steigung 3.9% (Liebigstr.)	St; 13905,12374 13991,12522
 Steigung 3.9% (Königin-Luise-Str.)	St; 3850,5801 3931,5825
@@ -1446,7 +1446,6 @@ Steigung 1.7% (Kaiserdamm)	St; 2609,11503 2391,11478
 Steigung 1.7% (Kaiserdamm)	St; 1960,11426 1821,11408
 Steigung 1.7% (Hüttenweg (Grunewald, Dahlem))	St; 441,6435 297,6541
 Steigung 1.7% (Hüttenweg (Grunewald, Dahlem))	St; 297,6541 218,6571
-Steigung 1.7% (Hüttenweg (Grunewald, Dahlem))	St; 218,6571 -130,6694
 Steigung 1.7% (Hermann-Blankenstein-Str.)	St; 14252,13263 14148,13321
 Steigung 1.7% (Hermann-Blankenstein-Str.)	St; 14148,13321 14052,13389
 Steigung 1.7% (Helsingforser Str.)	St; 13427,11431 13496,11384
@@ -1510,7 +1509,7 @@ Steigung 1.6% (Vorbergstr.)	St; 7308,9163 7363,9152
 Steigung 1.6% (Vorbergstr.)	St; 7136,9223 7308,9163
 Steigung 1.6% (Thomasstr.)	St; 12685,7497 12561,7472
 Steigung 1.6% (Thomasstr.)	St; 12561,7472 12367,7429
-Steigung 1.6% (Teplitzer Str.)	St; 2120,8335 2112,8074
+Steigung 1.6% (Teplitzer Str.)	St; 2120,8335 2112,8088
 Steigung 1.6% (Spandauer Damm)	St; -442,13058 -264,13009
 Steigung 1.6% (Skandinavische Str.)	St; 17338,11969 17210,11950
 Steigung 1.6% (Schönhauser Allee)	St; 10746,13673 10779,13793
@@ -1557,6 +1556,7 @@ Steigung 1.6% (Kaiserdamm)	St; 2095,11440 1960,11426
 Steigung 1.6% (Johannes-Tobei-Str.)	St; 21421,158 21487,173
 Steigung 1.6% (Johannes-Tobei-Str.)	St; 21382,149 21421,158
 Steigung 1.6% (Johannes-Tobei-Str.)	St; 21354,142 21382,149
+Steigung 1.6% (Hüttenweg (Grunewald, Dahlem))	St; 218,6571 -138,6681
 Steigung 1.6% (Hubertusallee)	St; 2322,8857 2337,9178
 Steigung 1.6% (Hohenzollerndamm)	St; 4224,9241 4096,9175
 Steigung 1.6% (Heerstr. (Westend, Wilhelmstadt, Staaken))	St; -3069,11487 -2851,11417
@@ -2006,6 +2006,8 @@ Steigung 1.2% (Heilsberger Allee)	St; -303,11526 -278,11843
 Steigung 1.2% (Haydnstr. (Biesdorf))	St; 20016,11980 20026,12088
 Steigung 1.2% (Haydnstr. (Biesdorf))	St; 20005,11872 19995,11795
 Steigung 1.2% (Haydnstr. (Biesdorf))	St; 19995,11795 19979,11774
+Steigung 1.2% (Havelchaussee)	St; -4072,5227 -3962,5129
+Steigung 1.2% (Havelchaussee)	St; -3962,5129 -3889,4967
 Steigung 1.2% (Hauptstr. (Schöneberg, Friedenau))	St; 7268,8960 7308,9041
 Steigung 1.2% (Hauptstr. (Schöneberg, Friedenau))	St; 7201,8870 7268,8960
 Steigung 1.2% (Halskestr.)	St; 6540,4715 6651,4843
@@ -2154,8 +2156,6 @@ Steigung 1.1% (Herzbergstr.)	St; 15724,13544 15896,13547
 Steigung 1.1% (Heribaldstr.)	St; 25029,10462 25022,10715
 Steigung 1.1% (Herbertstr. (Schöneberg))	St; 7389,8837 7360,8918
 Steigung 1.1% (Heinrich-Mann-Allee (B2) (Potsdam))	St; -12431,-2096 -12318,-2192
-Steigung 1.1% (Havelchaussee)	St; -4072,5227 -3947,5129
-Steigung 1.1% (Havelchaussee)	St; -3947,5129 -3872,4953
 Steigung 1.1% (Havelchaussee)	St; -3412,9755 -3431,9665
 Steigung 1.1% (Havelchaussee)	St; -3277,8728 -3073,9061
 Steigung 1.1% (Havelchaussee)	St; -3178,9953 -3412,9755

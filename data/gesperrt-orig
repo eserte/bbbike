@@ -134,8 +134,8 @@ Platz am Wilden Eber	1 2723,7029 2701,7045 2688,7067 2695,7082 2717,7093 2737,70
 Wexstr.	2 6260,8011 5807,7978 5631,8011
 Wexstr.	1 6388,7999 6260,8011
 Wexstr.	1 5631,8011 5824,8035 5928,8052 6154,8070 6261,8058 6409,8026
-Detmolder Str. (Süd)	1 4659,7982 4572,7936 4371,8018 4342,8093 4280,8188
-Detmolder Str. (Nord)	2 4349,8118 4469,8037 4659,7982
+Detmolder Str. (Süd)	1 4711,8013 4572,7936 4371,8018 4342,8093 4280,8188
+Detmolder Str. (Nord)	2 4349,8118 4469,8037 4600,8002 4711,8013
 Detmolder Str. (Nord)	1 4280,8188 4349,8118
 # REMOVED (moved to temp blockings) --- currently XXX_outdoor --- : XXX_indoor: consider to move into temp blockings (but check first for exact times; maybe wait until temp blocking implementations are getting better) --- #: XXX aber zuerst handicap+qualitaet analysieren --- Gartenufer (in der Dunkelheit gesperrt)	2 6226,11405 6067,11479 5845,11615 5790,11643
 Steinplatz	1 5166,11343 5122,11300 5088,11322 5053,11343 5091,11406
@@ -160,7 +160,7 @@ Dernburgstr.	1 2493,10675 2378,10677 2333,10710 2254,11051
 Schuckertdamm	1 741,14827 1022,14898 1056,14906 1112,14918 1200,14943 1343,14972
 Am Kleinen Wannsee	1 -5499,1349 -5488,1289 -5541,1214 -5749,1146
 Oberhofer Platz	1 5491,1955 5474,1940 5452,1940 5431,1956 5393,2053 5376,2097 5406,2110 5434,2122 5452,2077 5489,1981 5491,1955
-Scheelestr.	1 5741,1231 5697,1098 5556,984 5488,943 5421,902 5342,845
+Scheelestr.	1 5741,1234 5697,1098 5556,984 5488,943 5421,902 5342,845
 Tibertius-Brücke: Kfz-Straße	2 5681,5743 5574,5819 5377,5961 5335,5991 4937,6205
 An der Schillingbrücke	1 12061,11406 12060,11323
 An der Schillingbrücke	1 12025,11346 12061,11406
@@ -322,7 +322,7 @@ Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf
 #: XXX evtl wird die Straße für Radfahrer geöffnet
 #: osm_watch: way id="5110895" version="5"
-#: last_checked: 2017-07-24
+#: last_checked: 2017-08-10
 #: check_frequency: 60d
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7606,8598 7643,8634 7682,8598 7644,8560
@@ -1605,7 +1605,7 @@ Riesaer Str.: Straßenbahntrasse	3nocross 24198,14454 24162,14487 24120,14526
 Riesaer Str.: Straßenbahntrasse	3nocross 24730,14288 24870,14244 24930,14225 24983,14208 25095,14171
 # REMOVED --- Rummelsburger Str.: wegen Überführung nicht überquerbar	3nocross 17527,7812 17568,7753 17619,7679 17681,7589 17769,7465
 Rummelsburger Str.: wegen Überführung nicht überquerbar	3nocross 17769,7465 17847,7356 18010,7133
-Detmolder Str.: Mittelstreifen nicht passierbar	3nocross 4469,8037 4659,7982 4793,8005
+Detmolder Str.: Mittelstreifen nicht passierbar	3nocross 4600,8002 4711,8013 4793,8005
 Rhinstr.: Straßenbahntrasse	3nocross 18215,12123 18216,12239 18216,12262 18220,12450
 Rhinstr.: Straßenbahntrasse	3nocross 18181,14110 18184,14078 18187,14039 18198,13816
 Rhinstr.: Straßenbahntrasse	3nocross 17829,15015 17886,14899 17937,14795 17991,14684 18057,14549
@@ -1849,6 +1849,8 @@ abgeschlossenes Tor	3 * 3796,16202 *
 abgeschlossenes Tor	3 * 5083,22149 *
 #: note: theoretisch kommt man als Radfahrer weiter südwestlich zur Konrad-Wolf-Str., allerdings ist dort auch ein Tor, welches vielleicht nachts abgeschlossen ist
 abgeschlossenes Tor	3 * 15835,15092 *
+#: note: gesehen 2017-08-10 Do gegen 14:30
+abgeschlossenes Tor	3 * 10000,1131 *
 #
 ####################################################################
 #
@@ -2796,6 +2798,13 @@ Drängelgitter	BNP:3::trailer=10 3783,-2079
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamtes/artikel.434089.php
+#: XXX Bezirksamtsbeschluss 48/16
+#: by: http://www.berlin.de/ba-neukoelln/_assets/dokumente/ba-beschluesse/ba-beschluss-115-15.pdf
+#: last_checked: 2017-08-10
+#: check_frequency: 14d
+(Christoph-Ruden-Str. - Buckower Damm): letzte Bauarbeiten	2::inwork 12725,1429 12939,1469
+# 
 #: XXX vielleicht wird hier nach den Bauarbeiten kein Weg mehr existieren; die S-Bahnbrücke ist sehr niedrig geworden...
 #: last_checked: 2017-08-07
 #: check_frequency: 90d
@@ -2884,11 +2893,11 @@ Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11485 20631,1162
 #: last_checked: 2017-07-24
 Gitschiner Str./Lobeckstr.: Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3nocross 10122,10294 10363,10303 10605,10312
 # 
-#: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus?
+#: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus? --- ja, wird es geben
 #: osm_watch: way id="461214846" version="2"
-#: last_checked: 2017-05-21
+#: last_checked: 2017-08-10
 #: check_frequency: 90d
-Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19143,1147
+Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19140,1137
 # 
 #: next_check_id: SCHINKELPLATZ-2014
 #: last_checked: 2017-06-15
@@ -3113,7 +3122,7 @@ Clara-von-Simson-Str.: noch gesperrt	2 7652,14257 7757,14318 7802,14250 7697,141
 #: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/strassen_kfz/SOV-Beschluss-27022012.pdf
 #: XXX wird es eine Bordsteinabsenkung für Radfahrer geben?
 #: source_id: 2147339538
-#: last_checked: 2017-08-08
+#: last_checked: 2017-08-10
 Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, für Autos dauerhaft	2::inwork 17670,7512 17676,7555 17681,7589
 # 
 #: next_check_id: HEERSTR-2016 vvv
