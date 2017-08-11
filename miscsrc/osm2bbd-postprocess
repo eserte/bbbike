@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2011,2013,2014,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2011,2013,2014,2015,2017 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -21,7 +21,7 @@ use lib (
 	);
 
 use vars qw($VERSION);
-$VERSION = 0.16;
+$VERSION = 0.17;
 
 use Cwd            qw(realpath);
 use File::Basename qw(dirname);
@@ -42,6 +42,7 @@ my @targets = ('wasserstrassen_lowres',
 	       'icao_metar',
 	       'addr_sort',
 	       'zip_points', # dependency: addr_sort
+	       'cityparts',
 	      );
 # Targets run by default (exclude obscure ones here)
 my @run_targets =
@@ -52,6 +53,7 @@ my @run_targets =
 	      |   check_nearest		# slow
 	      |   icao_metar		# XXX needs unpublished scripts/modules/data, but this will change hopefully
 	      |   zip_points            # experimental
+	      |   cityparts             # to be decided
 	      )$}x
 	  }
     @targets;
@@ -564,6 +566,48 @@ sub target_icao_metar {
     $new_s->write("$datadir/icao_metar~");
     rename "$datadir/icao_metar~", "$datadir/icao_metar"
 	or die "Error while renaming $datadir/icao_metar~ to $datadir/icao_metar: $!";
+}
+
+# Created out of admin_level=10 boundaries --- in Berlin these are the "Ortsteile", which
+# is the largest entity with unique street names.
+sub target_cityparts {
+    my $admin_level = 10; # maybe could be made configurable if needed
+
+    if (!-e "_boundary") {
+	print STDERR "No _boundary file in generated data --- please run osm2bbd without --ignore-underline.\n";
+	return;
+    }
+
+    return if _is_up_to_date("cityparts", ["_boundary"]);
+
+    my($tmpfh,$tmpfile) = tempfile(UNLINK => 1, DIR => $datadir) or die $!;
+
+    my @cmd = (
+	       "$FindBin::RealBin/combine_streets.pl",
+	       "-closedpolygon",
+	       "$datadir/_boundary",
+	      );
+    if ($debug >= 2) {
+	print STDERR "Running '@cmd'...\n";
+    }
+    open my $fh, "-|", @cmd
+	or die "While running @cmd: $!";
+    while(<$fh>) {
+	if (/^#/) {
+	    # keep
+	} elsif (!/\tZ${admin_level} /) {
+	    # skip
+	    next;
+	} else {
+	    s/\tZ${admin_level}/\tZ/;
+	}
+	print $tmpfh $_;
+    }
+    close $fh
+	or die "Problem while running @cmd: $!";
+    rename $tmpfile, "$datadir/cityparts"
+	or die "Can't rename temporary file to $datadir/cityparts: $!";
+    chmod((0666 &~ umask), "$datadir/cityparts");
 }
 
 ######################################################################
