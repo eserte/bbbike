@@ -19967,14 +19967,14 @@ EOF
 userdel	2::inwork -13687,-4949 -13723,-6401
 EOF
      },
-     { from  => $isodate2epoch->("2016-09-09 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-09-11 23:59:59"),
+     { from  => $isodate2epoch->("2017-09-08 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-09-10 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 10, months => 9]],
-       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (10.09.2016-11.09.2016)',
+       recurrences => [['yearly', days => 8, months => 9]],
+       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (8.09.2017-10.09.2017)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.laubinger.de/termine/47-fest-an-der-panke/
+#: by: http://www.laubinger.de/termine/48-fest-an-der-panke/
 	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345
 	2::temp 10602,18382 10562,18506 10532,18601
 EOF
@@ -25640,7 +25640,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-07-27 vvv
+#: last_checked: 2017-08-11 vvv
 #: check_frequency: 21d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -26414,6 +26414,14 @@ EOF
        data  => <<EOF,
 userdel	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 userdel	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
+EOF
+     },
+     { from  => 1502483236, # 2017-08-11 22:27
+       until => 1502596800, # 2017-08-13 06:00
+       text  => 'Spandauer Str.: zwischen Rathausstr. und Karl-Liebknecht-Str. wegen einer Veranstaltung bis 13.08.2017 6 Uhr früh gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+userdel	2::temp 10601,12521 10431,12709
 EOF
      },
     );

@@ -993,7 +993,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/holzmarktstrasse/download/LP_01.pdf
 #: source_id: 2147340618
 #: source_id: LMS-BR_r_LMS-BR_81616
-#: last_checked: 2017-07-27
+#: last_checked: 2017-08-11
 #: check_frequency: 30d
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 # 
@@ -1878,6 +1878,7 @@ B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133
 #: XXX laut fritz: Zwischen Französische Straße und Jägerstraße gesperrt. (Bis 29.09.2017)
 #: XXX bei der ersten Prüfung: nicht relevant, nur einige Behinderungen in der querenden Jägerstr.
 #: last_checked: 2017-07-27
+#: next_check: 2017-08-11
 Friedrichstr. Höhe Jägerstr.: Bauarbeiten, auch für Radfahrer relevant?	?::inwork; 9384,12103 9393,12000 9405,11903
 # 
 # REMOVED (Einbahnstraße Richtung Norden ist Richtung; die meisten Radfahrer fahren auf dem relativ breiten Gehweg und umgehen somit auch das Kopfsteinpflaster) --- #: XXX NEW	Tegeler Straße (Wedding) Richtung Fennstraße zwischen Lynarstraße und Fennbrücke (Berlin)  Gültig ab: 16.07.2017 23:00  Bauarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/17)	LMS-BR_r_LMS-BR_103249_LMS-BR_72 --- #: XXX NEW	Tegeler Str. (Wedding) Richtung Luxemburger Str. zwischen Fennstr. und Lynarstr. (Berlin)  Gültig ab: 24.07.2017 06:00  Baustelle, Fahrtrichtung gesperrt (bis Mitte 10/17)	2147341570 --- #: XXX laut fritz: Bis 13.10.2017 --- Tegeler Str.: Bauarbeiten, auch für Radfahrer relevant?	?::inwork 7263,14873 7458,14643
@@ -3087,6 +3088,7 @@ Karlshorst-West: neues Wohngebiet wird entstehen, auch neue Straßen	?::projected
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_17_1769_1956_online.pdf (Benennung von Verkehrsanlagen + Karte)
 #: XXX neue Straßen entstehen, Bebauungsplan XVII-50ab --- Gartenstadt Karlshost II
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7073 (Teilung des Bebauungsplans: XVII-50aba und XVII-50abb)
+#: by: https://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_34_3753_3876_online.pdf (Teilung des Bebauungsplans)
 #: last_checked: 2017-07-28 vvv
 #: check_frequency: 360d vvv
 #: XXX Planstraße 2:
@@ -3165,7 +3167,7 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2017-06-17
+#: last_checked: 2017-08-11
 #: check_frequency: 360d
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 
@@ -3198,6 +3200,7 @@ Bebauungsplan 6-24 VE: entsteht hier eine neue Privatstraße? entsteht eine Paral
 geplante Grünanlage	?::projected 4084,15859 4055,15795 4041,15786 4224,15779 4216,15799 4295,15852 4084,15859
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.588521.php
+#: by: https://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_34_3753_3876_online.pdf (Bebauungsplan 4-66)
 #: next_check: 2018-06-01
 Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660,10521 2749,10584 3043,10680
 # 
