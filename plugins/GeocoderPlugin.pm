@@ -115,7 +115,7 @@ sub geocoder_dialog {
     }
 
     my $get_loc = sub {
-	# It seems that Yahoo and OSM can deal better with the
+	# It seems that OSM can deal better with the
 	# city/place at the end. Google and Bing are fine with both.
 	join(', ', grep { defined && length } ($street, $place));
     };
@@ -300,35 +300,6 @@ sub geocoder_dialog {
 		     }
 		 },
 		},
-
-		## XXX DEL module and API do not work anymore
-		#'Yahoo PlaceFinder' =>
-		#{
-		# 'label' => 'Yahoo PlaceFinder (needs app id)',
-		# 'short_label' => 'Yahoo PlaceFinder',
-		# 'devel_only' => 1,
-		#
-		# 'require' => sub { require Geo::Coder::PlaceFinder },
-		# 'new' => sub {
-		#     my $apikey = do {
-		#	 my $file = "$ENV{HOME}/.yahooapikey";
-		#	 open my $fh, $file
-		#	     or main::status_message("Cannot get key from $file: $!", "die");
-		#	 local $_ = <$fh>;
-		#	 chomp;
-		#	 $_;
-		#     };
-		#     Geo::Coder::PlaceFinder->new(appid => $apikey);
-		# },
-		# 'extract_addr' => sub {
-		#     my $location = shift;
-		#     join(", ", grep { defined && length } @{$location}{qw(line1 line2 line3 line4)});
-		# },
-		# 'extract_loc' => sub {
-		#     my $location = shift;
-		#     ($location->{longitude}, $location->{latitude});
-		# },
-		#},
 	       );
     $apis{Google_v3}->{$_} = $apis{My_Google_v3}->{$_} for (qw(extract_loc extract_addr extract_short_addr));
 
