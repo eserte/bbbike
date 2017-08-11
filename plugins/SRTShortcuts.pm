@@ -47,7 +47,12 @@ if (-e "$FindBin::RealBin/bbbike") {
 } else {
     $bbbike_rootdir = "$ENV{HOME}/src/bbbike";
 }
-my $bbbike_auxdir = "$ENV{HOME}/src/bbbike-aux";
+my $bbbike_auxdir;
+if (-d "$bbbike_rootdir/../bbbike-aux") {
+    $bbbike_auxdir = "$bbbike_rootdir/../bbbike-aux";
+} else {
+    $bbbike_auxdir = "$ENV{HOME}/src/bbbike-aux";
+}
 my $streets_track                    = "$bbbike_rootdir/tmp/streets.bbd";
 my $acc_streets_track                = "$bbbike_rootdir/tmp/streets-accurate.bbd";
 my $acc_cat_streets_track            = "$bbbike_rootdir/tmp/streets-accurate-categorized.bbd";
@@ -795,6 +800,9 @@ EOF
 		],
 		[Button => "Update Mapnik map data",
 		 -command => sub { update_mapnik_map_data() },
+		],
+		[Button => "Update Mapnik map data (with experimental switch)",
+		 -command => sub { update_mapnik_map_data(experimental => 1) },
 		],
 		'-',
 		[Button => "Show Karte canvas items",
@@ -2972,6 +2980,10 @@ sub render_mapnik_map {
 }
 
 sub update_mapnik_map_data {
+    my(%opts) = @_;
+    my $experimental = delete $opts{experimental};
+    die "Unhandled options: " . join(" ", %opts) if %opts;
+
     my $mapnik_bbbike_dir = get_mapnik_map_directory();
     return if !$mapnik_bbbike_dir;
     my $tools_dir = "$mapnik_bbbike_dir/tools";
@@ -2979,7 +2991,7 @@ sub update_mapnik_map_data {
     my $save_pwd = BBBikeUtil::save_pwd2();
     chdir $tools_dir
 	or main::status_message("Can't chdir to $tools_dir: $!", 'die');
-    my @cmd = ('make', 'bbbike2wgs84-mapnik', 'import-postgres');
+    my @cmd = ('make', ($experimental ? 'experimental' : 'bbbike2wgs84-mapnik'), 'import-postgres');
     main::IncBusy($main::top);
     system @cmd;
     my $exit_code = $?;
