@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package BBBikeSuggest;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 use Tk::PathEntry 2.17;
 
@@ -30,9 +30,13 @@ sub new {
 }
 
 sub set_zipfile {
-    my($self, $zip_file) = @_;
+    my($self, $zip_file, %args) = @_;
+    my $encoding = delete $args{'-encoding'};
+    die "Unhandled args: " . join(' ', %args) if %args;
+
     die "Please provide zipfile" if !$zip_file;
     $self->{zip_file} = $zip_file;
+    $self->{zip_file_encoding} = $encoding;
     $self->scan_zip_file;
     $self->{enabled} = 1;
 }
@@ -66,6 +70,9 @@ sub scan_zip_file {
     my $ZIP;
     if ($] < 5.006) { require Symbol; $ZIP = Symbol::gensym() }
     if (open($ZIP, $self->{zip_file})) {
+	if ($self->{zip_file_encoding}) {
+	    binmode $ZIP, ":encoding($self->{zip_file_encoding})";
+	}
 	while(<$ZIP>) {
 	    my $zip_firstch = lc substr($_, 0, 1);
 	    if (!exists $self->{zip_firstch}{$zip_firstch}) {

@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.90;
+$VERSION = 1.91;
 
 use your qw(%MultiMap::images $BBBikeLazy::mode
 	    %main::line_width %main::p_width %main::str_draw %main::p_draw
@@ -2538,11 +2538,10 @@ sub show_bbbike_suggest_toplevel {
     my %alias2street;
     my $is_utf8;
     my $plz;
-    for my $def (["$main::datadir/opensearch.streetnames", 1, 1],
-		 ["$main::datadir/strassen", 0, 0],
-		 ["$main::datadir/Berlin.coords.data", 0, 0], # usually never used --- check for this file, but possibly use the combined cache file
-		) {
-	my($try_srcfile, $try_is_opensearch_file, $try_is_utf8) = @$def;
+    for my $try_srcfile ("$main::datadir/opensearch.streetnames",
+			 "$main::datadir/strassen",
+			 "$main::datadir/Berlin.coords.data", # usually never used --- check for this file, but possibly use the combined cache file
+			) {
 	if (-s $try_srcfile) {
 	    if ($try_srcfile =~ m{/strassen$}) {
 		require Strassen::MultiStrassen;
@@ -2558,8 +2557,7 @@ sub show_bbbike_suggest_toplevel {
 		my $ms = MultiStrassen->new(@ms);
 		(my($tmpfh), $tempstreetsfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => "_bbbike_suggest0.data")
 		    or die $!;
-		## XXX PLZ.pm is not utf-8 capable, so don't use utf-8 here.
-		#binmode $tmpfh, ':encoding(utf-8)';
+		binmode $tmpfh, ':encoding(iso-8859-1)'; # XXX PLZ.pm is not yet utf-8 capable
 		print $tmpfh PLZ->new_data_from_streets($ms);
 		close $tmpfh
 		    or die $!;
@@ -2569,11 +2567,11 @@ sub show_bbbike_suggest_toplevel {
 		$plz = main::make_plz();
 		$srcfile = $plz->{File};
 		main::status_message("Should never happen: Keine PLZ-Datenbank vorhanden!", 'die') if (!$plz);
-	    } else {
+	    } else { # openssearch
 		$srcfile = $try_srcfile;
+		$is_opensearch_file = 1;
+		$is_utf8 = 1;
 	    }
-	    $is_opensearch_file = $try_is_opensearch_file;
-	    $is_utf8 = $try_is_utf8;
 	    last;
 	}
     }
@@ -2586,6 +2584,7 @@ sub show_bbbike_suggest_toplevel {
 	open my $fh, "-|", 'sort', $srcfile
 	    or die "Cannot sort $srcfile: $!";
 	binmode $fh, ':utf8' if $is_utf8;
+	binmode $ofh, ':utf8' if $is_utf8;
 	while(<$fh>) {
 	    if ($is_opensearch_file) {
 		chomp;
@@ -2603,7 +2602,7 @@ sub show_bbbike_suggest_toplevel {
 	close $ofh
 	    or die "Error while writing to $sorted_zipfile: $!";
     }
-    $suggest->set_zipfile($sorted_zipfile);
+    $suggest->set_zipfile($sorted_zipfile, ($is_utf8 ? (-encoding => "utf-8") : ()));
     my $t = main::redisplay_top($main::top, 'bbbike_suggest', -force => 1, -title => 'Search street', %args);
     main::set_as_toolwindow($t);
     my $w = $suggest->suggest_widget
