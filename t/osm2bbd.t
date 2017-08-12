@@ -28,7 +28,7 @@ GetOptions("keep" => \$keep)
 {
     my $destdir = tempdir(CLEANUP => $keep ? 0 : 1);
     if ($keep) {
-	diag "Destination directory is: $destdir";
+	diag "1st destination directory is: $destdir";
     }
     my($osmfh,$osmfile) = tempfile(UNLINK => 1, SUFFIX => '_osm2bbd.osm');
     print $osmfh <<'EOF';
@@ -173,5 +173,61 @@ EOF
 	is $found_url, 'http://en.wikipedia.org/wiki/cs: Evangelicky Kristuv kostel (Ostrava)', 'url in sights file';
     }
 }
+
+# Following is actually checking two things:
+# - handling gzipped osm files
+# - the polar_coord_hack experiment, together with checking the generated Karte/Polar.pm file
+SKIP: {
+    skip "Need IO::Zlib for testing .osm.gz files", 1
+	if !eval { require IO::Zlib; 1 };
+
+    my $destdir = tempdir(CLEANUP => $keep ? 0 : 1);
+    if ($keep) {
+	diag "2nd destination directory is: $destdir";
+    }
+
+    my(undef,$osm_gzip_file) = tempfile(UNLINK => 1, SUFFIX => ".osm2bbd.t.osm.gz");
+    my $fh = IO::Zlib->new($osm_gzip_file, "wb9")
+	or die "Can't create gzipped file: $!";
+    print $fh <<'EOF';
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version="0.6" generator="osmconvert 0.8.4" timestamp="2017-08-07T01:59:59Z">
+        <bounds minlat="53.246" minlon="11.085" maxlat="53.83" maxlon="11.964"/>
+        <node id="5072583" lat="53.8246271" lon="11.3533807" version="1"/>
+        <node id="5072743" lat="53.8206992" lon="11.325464" version="1"/>
+        <way id="4040433" version="1">
+                <nd ref="5072583"/>
+                <nd ref="5072743"/>
+		<tag k="highway" v="residential"/>
+		<tag k="name" v="Teststreet"/>
+	</way>
+</osm>
+EOF
+    close $fh
+	or die $!;
+
+    my @cmd = ($^X, $osm2bbd, "--debug=0", "--experiment=polar_coord_hack", "-f", "-o", $destdir, $osm_gzip_file);
+    system @cmd;
+    is $?, 0, "<@cmd> works";
+
+    {
+	my $strassen = Strassen->new("$destdir/strassen");
+	ok $strassen, 'strassen could be loaded';
+	is $strassen->data->[0], "Teststreet\tN 11.3533807,53.8246271 11.325464,53.8206992\n";
+    }
+
+    ok -f "$destdir/Karte/Polar.pm", 'Karte::Polar was created';
+
+ SKIP: {
+	skip 'Requires IPC::Run for Karte::Polar test', 1
+	    if !eval { require IPC::Run; 1 };
+	my @polar_cmd = ($^X, "-I$destdir", "-MKarte::Polar", "-MKarte::Standard", "-MKarte", "-e", 'Karte::preload(":all"); print join(",", $Karte::map{"polar"}->trim_accuracy($Karte::map{"polar"}->standard2map(0,0))), "\n"');
+	my $succ = IPC::Run::run(\@polar_cmd, '>', \my $got, '2>', \my $stderr);
+	ok $succ, "Running <@polar_cmd> was successful";
+	is $got, "13.651456,52.403097\n", "expected translation for 0,0 (trimmed)";
+	is $stderr, "Using corrected Karte::Polar for latitude 53.538...\n", "expected diagnostics"; # may be removed some day?
+    }
+}
+
 
 __END__
