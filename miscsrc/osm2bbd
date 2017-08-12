@@ -1182,6 +1182,12 @@ for my $osm_file (@osm_files) {
 		}
 	    };
 
+	    my $adjust_bab_name = sub {
+		if ($country eq 'de') {
+		    $name =~ s{\bA\s*(\d+)}{BAB$1};
+		}
+	    };
+
 	    if (exists $tag{'highway'}) {
 		my $highway_cat = $tag{'highway'};
 		my $is_motorway = 0;
@@ -1216,9 +1222,7 @@ for my $osm_file (@osm_files) {
 		}
 
 		if      ($highway_cat =~ HIGHWAY_BAB_RX || $is_motorroad) {
-		    if ($country eq 'de') {
-			$name =~ s{\bA\s*(\d+)}{BAB$1};
-		    }
+		    $adjust_bab_name->();
 		    push @or, ["strassen_bab", "BAB".$addcat];
 		    $is_motorway = 1;
 		} elsif ($highway_cat =~ HIGHWAY_HH_RX) {
@@ -1303,6 +1307,7 @@ for my $osm_file (@osm_files) {
 		} elsif ($highway_cat =~ CONSTRUCTION_RX) {
 		    my $construction = $tag{'construction'} || ""; # what will the type of street be?
 		    if      ($construction =~ HIGHWAY_BAB_RX) {
+			$adjust_bab_name->();
 			push @or, ["strassen_bab", "BAB::inwork"];
 		    } elsif ($construction =~ HIGHWAY_HH_RX) {
 			push @or, ['strassen', 'HH'];
