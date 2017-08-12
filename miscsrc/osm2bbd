@@ -17,7 +17,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..";
 
 use vars qw($VERSION);
-$VERSION = '0.23';
+$VERSION = '0.24';
 
 use Cwd qw(getcwd realpath);
 use Data::Dumper;
@@ -74,6 +74,7 @@ my %height_db;
 my $height_db_file;
 my $use_height_db = 0;
 my $no_create;
+my $handle_relations = 1;
 
 my %experiments;
 my %known_experiments = map {($_,1)} qw(add_postal_code coastline_hack polar_coord_hack handle_relations);
@@ -107,6 +108,8 @@ usage: $0 [-v] [-f] [-encoding enc] [-center lon,lat] [-map bbbike [-centerdelta
 osmfile ...       Files downloaded by downloadosm,
                   or directory containing .osm files
 -no-create	  do not store create date and cwd
+-no-handle-relations Skip parsing and handling relations
+                     (e.g. for memory reasons)
 EOF
 }
 
@@ -132,12 +135,14 @@ GetOptions("o=s" => \$o,
 	   "xmlparser=s" => \$xmlparser,
 	   "ignore-unhandled!" => \$ignore_unhandled,
 	   "ignore-underline!" => \$ignore_underline,
+	   "handle-relations!" => \$handle_relations,
 	   'experiment=s@' => sub {
 	       my $exp = $_[1];
 	       if (!$known_experiments{$exp}) {
 		   die <<EOF;
 Unknown experiment '$exp'. Known experiments are:
 @{[ sort keys %known_experiments ]}
+(handle_relations is actually set on by default)
 EOF
 	       }
 	       $experiments{$exp}++;
@@ -202,7 +207,6 @@ my %resolve_node_later;
 my @bbox_wgs84;
 my %global_directives;
 my %place_to_population;
-my $handle_relations = $experiments{'handle_relations'};
 my %additional_data_per_file;
 my %addr;
 tie %addr, 'Tie::IxHash' if SORTED_ELEMENTS;
