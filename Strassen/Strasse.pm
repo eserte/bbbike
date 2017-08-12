@@ -10,7 +10,7 @@
 
 package Strassen::Strasse;
 
-$VERSION = 1.37;
+$VERSION = 1.38;
 
 package Strasse;
 use strict;
@@ -314,9 +314,12 @@ sub split_street_citypart {
     my @cityparts;
     if ($str =~ m{^\(}) {
 	# convention: streets beginning with "(" have no cityparts
-    } elsif ($str =~ /^(.*)\s+\(([^\(]+)\)$/) {
-	$str = $1;
+    } elsif ($str =~ /^(.*)\s+\(([^\(]+)\)(\s+\[.+\])?$/) {
+	no warnings 'uninitialized'; # $3 may be undef
+	$str = "$1$3";
 	@cityparts = split /\s*,\s*/, $2;
+    } elsif ($str =~ /^.*\[.+\]$/) {
+	# commas may appear between the [...], and the next regexp would do a split here, which is wrong, so intercept such strings here
     } elsif ($str =~ /^([^(),]+\S),\s+(.{3,})/) { # with some sanity check: street needs at least three characters
 	$str = $2;
 	@cityparts = $1;

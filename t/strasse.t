@@ -35,11 +35,11 @@ my @split_street_citypart =
      ["(Fenchelweg (KGA Foobar))" =>
       ["(Fenchelweg (KGA Foobar))"]],
      ["Randolfstr. [17, 19A, 21]" =>
-      ["Randolfstr. [17, 19A, 21]"], "currently wrong"],
+      ["Randolfstr. [17, 19A, 21]"]],
      ["Sewanstr. [Wohngebiet, zur Balatonstr.]" =>
-      ["Sewanstr. [Wohngebiet, zur Balatonstr.]"], "currently wrong"],
+      ["Sewanstr. [Wohngebiet, zur Balatonstr.]"]],
      ["Treseburger Str. (Blankenburg) [22N-S,24-24D]" =>
-      ["Treseburger Str. [22N-S,24-24D]", "Blankenburg"], "currently wrong (and maybe it should be the other way around?)"],
+      ["Treseburger Str. [22N-S,24-24D]", "Blankenburg"]],
     );
 
 my @beautify_landstrasse =
