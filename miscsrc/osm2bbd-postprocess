@@ -43,6 +43,7 @@ my @targets = ('wasserstrassen_lowres',
 	       'addr_sort',
 	       'zip_points', # dependency: addr_sort
 	       'cityparts',
+	       'addr_suburbs',
 	      );
 # Targets run by default (exclude obscure ones here)
 my @run_targets =
@@ -54,6 +55,7 @@ my @run_targets =
 	      |   icao_metar		# XXX needs unpublished scripts/modules/data, but this will change hopefully
 	      |   zip_points            # experimental
 	      |   cityparts             # to be decided
+	      |   addr_suburbs          # experimental and very slow
 	      )$}x
 	  }
     @targets;
@@ -140,6 +142,67 @@ sub target_addr_sort {
     $geocoderaddr->convert_for_lookup('_addr_sorted');
     rename '_addr_sorted', '_addr'
 	or die "Renaming _addr_sorted to _addr failed: $!";
+}
+
+sub target_addr_suburbs {
+    if (!-e "_addr") {
+	print STDERR "_addr does not exist, skipping";
+	return;
+    }
+    require Strassen::Core;
+    my $glob_dir = Strassen->get_global_directives('_addr');
+    if (($glob_dir->{columns}->[0]||'') =~ /(^|,)suburb($|,)/ && _is_up_to_date("_addr", ["cityparts"])) {
+	# don't print "up-to-date", _is_up_to_date already does this
+	return;
+    }
+
+    # XXX the following should go to a separate module XXX
+    # XXX quite slow, takes currently ~20min for Berlin's _addr
+
+    # XXX check errors using this method:
+    # : cat /tmp/_addr.new | fgrep '|Berlin|' | grep -P '\|\t' | less
+    # -> currently 22 errors, all of them seem to be mapping errors
+    # or buildings very close to the border
+    require VectorUtil;
+
+    my %citypart_to_polygons;
+    {
+	my $cityparts_s = Strassen->new_stream('cityparts');
+	$cityparts_s->read_stream
+	    (sub {
+		 my($r) = @_;
+		 my @c = map { [ split /,/, $_] } @{ $r->[Strassen::COORDS()] };
+		 push @{ $citypart_to_polygons{$r->[Strassen::NAME()]} }, \@c;
+	     });
+    }
+
+    my $addr_s = Strassen->new_stream('_addr');
+    my $new_addr_s = Strassen->new;
+    $addr_s->read_stream
+	(sub {
+	     my($r) = @_;
+	     my @f = split /\|/, $r->[Strassen::NAME()];
+	     my $p = [ split /,/, $r->[Strassen::COORDS()]->[0] ];
+	     my($zip,$city) = @f[2,3];
+	     my $found_citypart;
+	 CITYPARTS: for my $citypart (keys %citypart_to_polygons) {
+		 for my $polygon (@{ $citypart_to_polygons{$citypart} }) {
+		     if (VectorUtil::point_in_polygon($p, $polygon)) {
+			 $found_citypart = $citypart;
+			 last CITYPARTS;
+		     }
+		 }
+	     }
+	     if (!$found_citypart) {
+		 warn "No citypart found for $r->[Strassen::NAME()].\n";
+		 $found_citypart = '';
+	     }
+	     $r->[Strassen::NAME()] .= "|$found_citypart";
+	     $new_addr_s->push_ext($r);
+	 });
+    $new_addr_s->set_global_directives($addr_s->get_global_directives);
+    $new_addr_s->set_global_directive(columns => 'street,housenunmber,postcode,city,suburb');
+    $new_addr_s->write("/tmp/_addr.new");#XXX should write to final destination
 }
 
 sub target_zip_points {
