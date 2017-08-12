@@ -55,11 +55,17 @@ my %versioned_file_to_cat;
 			     sub { /^2s(:q\d)?(:(?:inwork|temp))?$/ },
 			    );
 
+    my @handicap_3_16     = (
+			     sub { /^q[01234](?:::?inwork)?$/ }
+			    );
+    my @handicap_3_17_add = (
+			     sub { /^q[01234](?:::?(?:inwork|igndisp))*$/ }
+			    );
+
     my %filetype_to_cat =
     (
      "borders"	      => [qw(Z)],
      "fragezeichen"   => [sub { /^(?:\?|\?\?|F:\?|F:\?\?)(?:::(?:inwork|projected))?$/ }],
-     "handicap"	      => [sub { /^q[01234](?:::(?:igndisp|inwork))?$/ }],
      "landstrassen"   => [qw(B HH H NH N NN Pl)],
      "mount"   	      => [qw(St Gf CS)],
      "orte"	      => [qw(0 1 2 3 4 5 6)],
@@ -101,11 +107,17 @@ my %versioned_file_to_cat;
 		    '3.19'        => [@gesperrt_3_16, @gesperrt_3_19_add],
 		    'data-update' => [@gesperrt_3_16, @gesperrt_3_19_add], # 2s is not really handled in bbbike 3.18, but acceptable
 		   },
+     "handicap_s" => {
+		      '3.16'        => [@handicap_3_16],
+		      '3.17'        => [@handicap_3_16, @handicap_3_17_add],
+		      'data-update' => [@handicap_3_16, @handicap_3_17_add],
+		     },
     );
     $versioned_file_to_cat{'strassen-cooked'} = $versioned_file_to_cat{'strassen'};
     for my $v (keys %{ $versioned_file_to_cat{'gesperrt'} }) {
 	$versioned_file_to_cat{'gesperrt_car'}->{$v} = [@{ $versioned_file_to_cat{'gesperrt'}->{$v} }, '1:Anlieger', '2:Anlieger'], # XXX Anlieger -> TBD
     }
+    $versioned_file_to_cat{'handicap_l'} = $versioned_file_to_cat{'handicap_s'};
 
     %file_to_cat =
     ("ampeln"			=> [sub { /^(?:\?|B|B0|F|F0|X|X0|Zbr)(?:::inwork)?$/ }],
