@@ -13,7 +13,8 @@
 #
 
 use strict;
-use lib ("$ENV{HOME}/src/bbbike", "$ENV{HOME}/src/bbbike/lib");
+use FindBin;
+use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 use GPS::BBBikeGPS::MountedDevice;
 use Cwd 'realpath';
 
@@ -72,10 +73,26 @@ GPS::BBBikeGPS::MountedDevice->maybe_mount
 
 __END__
 
-=pod
+=head1 NAME
+
+garmin-upload-map.pl - upload extract.bbbike.org extracts to garmin device
+
+=head1 SYNOPSIS
+
+There are two modes:
+
+Download & upload:
+
+    garmin-upload-map.pl https://download.bbbike.org/osm/extract/planet...zip
+
+Upload already unzipped file:
+
+    garmin-upload-map.pl /path/to/unzipped_planet_directory
+
+=head1 DESCRIPTION
 
 Copy extracted extracts (optionally download it) from
-extract.bbbike.org to garmin card, automatically determine file name
-from readme file.
+extract.bbbike.org to garmin card (which is automatically mounted if
+possible), automatically determine file name from readme file.
 
 =cut
