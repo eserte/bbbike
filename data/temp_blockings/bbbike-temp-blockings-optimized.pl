@@ -4083,23 +4083,7 @@ userdel	2::inwork -4098,13201 -4046,13177 -4017,13167
          'type' => 'gesperrt',
          'until' => 1551394799
        },
-       {
-         'data' => '#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2017/pressemitteilung.616643.php
-# REMOVED --- userdel	2::temp 10638,19149 10600,19225 10584,19132 10529,19055 10509,18981 10497,18883 10513,18854 10518,18750
-# REMOVED --- userdel	2::temp 10569,19395 10575,19327 10636,19289 10600,19225 10589,19275 10636,19289 10857,19379 11081,19456 11236,19509 11273,19521 11328,19413 11364,19313
-# REMOVED --- userdel	2::temp 10249,19148 10339,19179 10382,19066 10434,18907
-# REMOVED --- userdel	2::temp 10575,19327 10503,19371
-# REMOVED --- userdel	2::temp 10294,19298 10339,19179
-#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2017/pressemitteilung.619226.php
-	2::temp 10636,19289 10857,19379 11081,19456 11236,19509 11273,19521
-',
-         'from' => 1501272725,
-         'id' => 2889,
-         'source_id' => 'http://www.berliner-zeitung.de/berlin/pankow-lebensgefahr-fuer-besucher--schlosspark-schoenhausen-gesperrt-28080750',
-         'text' => 'Schlosspark Schönhausen: Schloßallee ist gesperrt, voraussichtlich bis Mitte August 2017',
-         'type' => 'gesperrt',
-         'until' => 1502488799
-       },
+       undef,
        {
          'data' => '#: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.617043.php
 userdel	q4::inwork 17734,675 17928,764 18023,833
