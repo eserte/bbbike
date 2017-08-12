@@ -40,7 +40,7 @@ Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 
 #: osm_watch: way id="25113713" version="13"
 #: osm_watch: way id="4752742"  version="10"
 #: osm_watch: way id="4752743"  version="12"
-#: osm_watch: way id="8049679"  version="13"
+#: osm_watch: way id="8049679"  version="14"
 #: osm_watch: way id="8049678"  version="9"
 #: last_checked: 2017-07-15
 #: check_frequency: 180d
@@ -797,7 +797,7 @@ Fanningerstr.: Asphaltierung	?::projected 16456,12191 16359,12207 16255,12224
 # REMOVED (realisiert) --- Seefelder Str.: "Radweganbindung"	?::projected 17325,16189 17362,16189 17383,16197
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
-#: osm_watch: way id="147557793" version="9"
+#: osm_watch: way id="147557793" version="10"
 #: last_checked: 2017-08-09
 Gensinger Str.: Radstreifen	?::projected 18586,12151 18927,12135 19094,12127 19148,12073 19138,11815 19136,11739 19135,11713 19121,11681 19035,11671 19005,11705 19005,11767 19004,11780
 # 
@@ -1269,7 +1269,8 @@ Friedrich-Kunert-Weg: Verlängerung?	? -13714,1747 -13664,1729
 #: last_checked: 2017-08-10 vvv
 #: check_frequency: 360d vvv
 neue Straßen geplant: Privatstraßen 1 bis 3	?::projected 19613,851 19316,951 19184,991
-#: osm_watch: way id="458296560" version="2"
+#: XXX bei osm als "proposed" eingezeichnet
+#: osm_watch: way id="458296560" version="3"
 #: XXX culdesac-Einträge ggfs. entfernen
 Brunolfweg: Verknüpfung gefordert	?::projected 19290,894 19316,951 19334,997
 #: check_frequency ^^^
@@ -1465,9 +1466,10 @@ Planstraße C: neue Straße entsteht (asphaltiert), Straßenname? Wann wird sie geö
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: XXX liegt die Straße tatsächlich hier?
 #: XXX die Reinickendorfer Pressemeldungsschreiber sind fleißig, höchstwahrscheinlich wird es dort erscheinen, falls hier was passiert
-#: osm_watch: way id="228172653" version="6"
+#: XXX laut osm fertiggestellt
+#: osm_watch: way id="228172653" version="7"
 #: last_checked: 2017-05-01 (Bauarbeiten)
-#: check_frequency: 150d
+#: next_check: 2017-08-12
 Humboldtinsel: liegt die Straße hier? ausgeschildert? Qualität?	?::inwork 1687,20645 1635,20607 1587,20534 1403,20440
 # 
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_06_21.pdf?start&ts=1340354416&file=stra__enbauliste_stand_2012_06_21.pdf
