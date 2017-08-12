@@ -198,7 +198,8 @@ persistent-tmp:	fragezeichen-outdoor \
 		${PERSISTENTTMPDIR}/plz-b.bbd \
 		${PERSISTENTTMPDIR}/berlin-fragezeichen-poi.gpx \
 		${PERSISTENTTMPDIR}/.check_data_test_mount \
-		osm-watch-lists
+		osm-watch-lists \
+		doit
 
 rare-persistent-tmp:	\
 		${PERSISTENTTMPDIR}/all-upload-fragezeichen.wpt \
@@ -218,6 +219,9 @@ fragezeichen-outdoor:		${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd
 
 osm-watch-lists:	${PERSISTENTTMPDIR}/osm_watch_list \
 			${PERSISTENTTMPDIR}/osm_watch_list_brandenburg
+
+doit:
+	${PERL} doit.pl
 
 .for i in $(XXX_TARGETS)
 persistent-tmp:	${PERSISTENTTMPDIR}/XXX-$(i).bbd
