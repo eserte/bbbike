@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2015,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package GeocoderAddr;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 # experimental geocoder for "_addr" as created by osm2bbd
 
@@ -46,6 +46,14 @@ sub new {
 sub new_berlin_addr {
     my($class) = @_;
     $class->new(bbbike_root . "/data_berlin_osm_bbbike/_addr");
+}
+
+sub new_osm_addr {
+    my($class) = @_;
+    if (!defined $main::datadir) {
+	die "Unexpected error: no datadir defined";
+    }
+    $class->new("$main::datadir/_addr");
 }
 
 sub check_availability {

@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007,2008,2010,2011,2013,2014,2015,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2008,2010,2011,2013,2014,2015,2016,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION $geocoder_toplevel);
-$VERSION = 3.06;
+$VERSION = 3.07;
 
 BEGIN {
     if (!eval '
@@ -277,9 +277,23 @@ sub geocoder_dialog {
 		 'require' => sub {
 		     local @INC = (@INC, bbbike_root."/miscsrc");
 		     require GeocoderAddr;
-		     GeocoderAddr->new_berlin_addr->check_availability or die "local _addr is not available";
+		     if ($main::city_obj->is_osm_source) {
+			 my $ga = GeocoderAddr->new_osm_addr;
+			 $ga->check_availability
+			     or die "A suitable _addr (path $ga->{File}) is not available. Maybe osm2bbd-postprocess --only-addr was not run?";
+		     } else {
+			 my $ga = GeocoderAddr->new_berlin_addr;
+			 $ga->check_availability
+			     or die "local _addr (path $ga->{File}) is not available. Please use osm2bbd and osm2bbd-postprocess to create this file.";
+		     }
 		 },
-		 'new' => sub { GeocoderAddr->new_berlin_addr },
+		 'new' => sub {
+		     if ($main::city_obj->is_osm_source) {
+			 GeocoderAddr->new_osm_addr;
+		     } else {
+			 GeocoderAddr->new_berlin_addr;
+		     }
+		 },
 		 'extract_addr' => sub {
 		     my $loc = shift;
 		     $loc->{display_name};
