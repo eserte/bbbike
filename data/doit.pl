@@ -108,7 +108,7 @@ sub action_files_with_tendencies {
 		    [@grepstrassen, "-$side_berlin", 'berlin'],
 		    '|',
 		    [@replacestrassen, '-noglobaldirectives',
-		     '-catexpr', 's/.*:(q\d)/$1::igndisp;/', 
+		     '-catexpr', 's/.*:(q\d.*)/$1::igndisp;/', 
 		     '-nameexpr', 's/(.*)/$1: gegen die Einbahnstraßenrichtung, ggfs. schieben/'],
 		    '>>', "$dest~"
 		   );
@@ -118,7 +118,7 @@ sub action_files_with_tendencies {
 		    [@grepstrassen, "-$side_berlin", 'berlin'],
 		    '|',
 		    [@replacestrassen, '-noglobaldirectives',
-		     '-catexpr', 's/.*:(q\d)/$1::igndisp/',
+		     '-catexpr', 's/.*:(q\d.*)/$1::igndisp/',
 		     '-nameexpr', 's/(.*)/$1: gesperrt, ggfs. schieben/'],
 		    '>>', "$dest~"
 		   );
