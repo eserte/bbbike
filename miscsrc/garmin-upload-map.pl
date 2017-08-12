@@ -31,11 +31,12 @@ if ($dir_or_url =~ m{^https?://}) {
     system("cd $tmpdir && unzip download.zip");
     $dir = realpath glob("$tmpdir/planet*");
 } else { 
-    $dir = realpath $dir;
+    $dir = realpath $dir_or_url;
 }
 
 my $name;
-open my $fh, "$dir/README.txt" or die $!;
+open my $fh, "$dir/README.txt"
+    or die "Problem opening $dir/README.txt: $!";
 while(<$fh>) {
     if (/Name des Gebietes: (.*)/) {
 	$name = $1;
@@ -57,11 +58,13 @@ warn "Used name for image file: $destimg\n";
 GPS::BBBikeGPS::MountedDevice->maybe_mount
     (sub {
 	 my $dir = shift;
-	 system("ls", "-al", $dir);
+	 print STDERR "Old contents in garmin subdirectory:\n";
+	 system("ls", "-l", "$dir/garmin");
 	 system("cp", $srcimg, "$dir/garmin/$destimg");
 	 if ($? != 0) {
 	     warn "Copyting $srcimg -> garmin/$destimg failed";
 	 }
+	 print STDERR "New image transferred to garmin subdirectory:\n";
 	 system("ls", "-al", "$dir/garmin/$destimg");
      },
      garmin_disk_type => "card"
