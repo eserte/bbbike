@@ -209,6 +209,8 @@ LWP::Protocol::https	- Zum Testen von https-URLs (z.B. Download-URLs)
 
 Devel::Leak	- Für Memory-Leak-Tests
 
+Devel::Hide	- Zum Testen von optionalen Modulen
+
 Text::Table
 
 Text::Unidecode	- Für das Neu-Erzeugen der .bbd-Dateien in data; Fallback für internationale Texte in PDFs

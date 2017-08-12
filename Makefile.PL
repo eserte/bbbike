@@ -262,6 +262,8 @@ my @req_table =
    'Zum Testen von https-URLs (z.B. Download-URLs)'],
   [qw/Devel::Leak	0	all	0	test/,
    'Für Memory-Leak-Tests'],
+  [qw/Devel::Hide	0	all	0	test/,
+   'Zum Testen von optionalen Modulen'],
   [qw/Text::Table	0	all	0	devel/],
   [qw/Text::Unidecode	0	all	0|4	devel/,
    'Für das Neu-Erzeugen der .bbd-Dateien in data; Fallback für internationale Texte in PDFs'],
