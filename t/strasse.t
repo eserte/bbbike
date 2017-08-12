@@ -34,6 +34,12 @@ my @split_street_citypart =
       ["Gustav-müller-str, 16"]],
      ["(Fenchelweg (KGA Foobar))" =>
       ["(Fenchelweg (KGA Foobar))"]],
+     ["Randolfstr. [17, 19A, 21]" =>
+      ["Randolfstr. [17, 19A, 21]"], "currently wrong"],
+     ["Sewanstr. [Wohngebiet, zur Balatonstr.]" =>
+      ["Sewanstr. [Wohngebiet, zur Balatonstr.]"], "currently wrong"],
+     ["Treseburger Str. (Blankenburg) [22N-S,24-24D]" =>
+      ["Treseburger Str. [22N-S,24-24D]", "Blankenburg"], "currently wrong (and maybe it should be the other way around?)"],
     );
 
 my @beautify_landstrasse =
@@ -165,9 +171,10 @@ plan tests => (scalar(@split_street_citypart) +
 	      );
 
 for my $s (@split_street_citypart) {
-    my($str, @expected) = ($s->[0], @{ $s->[1] });
+    my($str, $expected, $todo) = @$s;
     my(@res) = Strasse::split_street_citypart($str);
-    is(join("#", @res), join("#", @expected), "Split $str -> $expected[0] ...");
+    local $TODO = $todo;
+    is(join("#", @res), join("#", @$expected), "Split $str -> $expected->[0] ...");
 }
 
 for my $s (@beautify_landstrasse) {
