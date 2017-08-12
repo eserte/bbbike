@@ -17,7 +17,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..";
 
 use vars qw($VERSION);
-$VERSION = '0.22';
+$VERSION = '0.23';
 
 use Cwd qw(getcwd realpath);
 use Data::Dumper;
@@ -481,13 +481,18 @@ if ($experiments{'polar_coord_hack'}) {
 	my $osm_download_file_qr = qr{/download_(-?\d+\.\d+),(-?\d+\.\d+),(-?\d+\.\d+),(-?\d+\.\d+)\.osm(?:\.gz|\.bz2)?$};
 	# XXX it would be better to read the bboxes of all XML files
 	for my $osm_file (@osm_files) {
+	    my($this_min_lat, $this_max_lat);
 	    if ($osm_file =~ $osm_download_file_qr) {
-		if (!defined $min_lat || $2 < $min_lat) {
-		    $min_lat = $2;
-		}
-		if (!defined $max_lat || $4 > $max_lat) {
-		    $max_lat = $4;
-		}
+		($this_min_lat, $this_max_lat) = ($2, $4);
+	    } else {
+		(undef, $this_min_lat, undef, $this_max_lat) = eval { get_bounds_from_osm_file($osm_file) };
+		warn "WARNING: cannot get bounds from $osm_file: $@" if $@;
+	    }
+	    if (defined $this_min_lat && (!defined $min_lat || $this_min_lat < $min_lat)) {
+		$min_lat = $this_min_lat;
+	    }
+	    if (defined $this_max_lat && (!defined $max_lat || $this_max_lat > $max_lat)) {
+		$max_lat = $this_max_lat;
 	    }
 	}
 	if (defined $min_lat && defined $max_lat) {
@@ -497,8 +502,8 @@ if ($experiments{'polar_coord_hack'}) {
     if (!defined $lat) {
 	die <<EOF;
 Cannot apply polar_coord_hack experiment, because the center could not
-apply polar_coorbe determined. Most commonly this happens because the
-osm file does not have a <bound> tag (e.g. because it was created
+be determined. Most commonly this happens because the
+osm file does not have a <bounds> tag (e.g. because it was created
 using osmosis). To fix this, set manually the -center option.
 EOF
 	# XXX should read the bboxes of all files
@@ -2456,6 +2461,31 @@ sub epoch2isodatez (;$) {
     sprintf("%04d%02d%02d%02d%02d%02dZ",
 	    $l[5]+1900, $l[4]+1, $l[3],
 	    $l[2],      $l[1],   $l[0]);
+}
+
+# Return (minlot,minlat,maxlon,maxlat)
+# Only works if XML::LibXML::Reader is available,
+# and the <bounds> tag comes right after the <osm> tag
+# (which is the case for osmconvert-generated files)
+sub get_bounds_from_osm_file {
+    my $file = shift;
+    my(undef, $reader) = open_osm($file);
+    if (!$reader) {
+	die "Cannot get bounds with XML::LibXML::Reader";
+    }
+    $reader->nextElement;
+    die "Expected <osm> tag" if $reader->name ne 'osm';
+    $reader->nextElement;
+    if ($reader->name ne 'bounds') {
+	die "Expected <bounds>, but got <" . $reader->name . ">";
+    }
+    my @bbox = (
+		$reader->getAttribute("minlon"),
+		$reader->getAttribute("minlat"),
+		$reader->getAttribute("maxlon"),
+		$reader->getAttribute("maxlat"),
+	       );
+    @bbox;
 }
 
 # REPO BEGIN
