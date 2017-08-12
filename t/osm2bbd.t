@@ -221,7 +221,7 @@ EOF
  SKIP: {
 	skip 'Requires IPC::Run for Karte::Polar test', 1
 	    if !eval { require IPC::Run; 1 };
-	my @polar_cmd = ($^X, "-I$destdir", "-MKarte::Polar", "-MKarte::Standard", "-MKarte", "-e", 'Karte::preload(":all"); print join(",", $Karte::map{"polar"}->trim_accuracy($Karte::map{"polar"}->standard2map(0,0))), "\n"');
+	my @polar_cmd = ($^X, "-I$destdir", "-I.", "-MKarte::Polar", "-MKarte::Standard", "-MKarte", "-e", 'Karte::preload(":all"); print join(",", $Karte::map{"polar"}->trim_accuracy($Karte::map{"polar"}->standard2map(0,0))), "\n"');
 	my $succ = IPC::Run::run(\@polar_cmd, '>', \my $got, '2>', \my $stderr);
 	ok $succ, "Running <@polar_cmd> was successful";
 	is $got, "13.651456,52.403097\n", "expected translation for 0,0 (trimmed)";
