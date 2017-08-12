@@ -2884,7 +2884,7 @@ Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -
 An den Parkbäumen: Bauarbeiten, Fahrbahn gesperrt	2::inwork -6530,6699 -6556,6663
 Parkrosenweg: Bauarbeiten	2::inwork -6530,6699 -6381,6587
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5579,12231 5535,12206 5518,12159
-Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s 5518,12159 5627,12105
+Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:inwork 5518,12159 5627,12105
 Möckernkiez: Bauarbeiten	2::inwork 8778,9759 8741,9741 8729,9670 8587,9590 8566,9643
 oberer Wuhlewanderweg: Bauarbeiten, komplett gesperrt	2::inwork 22873,14498 22864,14556
 Möwenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 22108,10970 22195,10993
@@ -2893,21 +2893,21 @@ Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3nocross::ignrte 10122
 Gitschiner Str. -> Lobeckstr.: Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3::igndisp 10122,10294 10363,10303 10433,10456
 Lobeckstr. -> Gitschiner Str.: Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3::igndisp 10433,10456 10363,10303 10605,10312
 Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19140,1137
-Schinkelplatz: Einbahnstraße	1s 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
+Schinkelplatz: Einbahnstraße	1s:inwork 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
 Limburger Str.: Bauarbeiten am Rathaus Wedding, komplett gesperrt	2::inwork 7129,15717 7012,15571
-Karower Str.: temporäre Einbahnstraßenregelung	1s 16593,25640 16632,25512 16669,25373
+Karower Str.: temporäre Einbahnstraßenregelung	1s:inwork 16593,25640 16632,25512 16669,25373
 Mauerweg: Bauarbeiten, gesperrt	2::inwork 7939,14447 7889,14519
-Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt	1s 5192,10234 5196,10398
+Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt	1s:inwork 5192,10234 5196,10398
 (Verlängerte Hertzallee): Bauarbeiten, komplett gesperrt	2::inwork 5352,11502 5296,11529 4950,11696 4905,11785
-Bouchéstr.: Baustelle, Einbahnstraßenregelung	1s 13298,9252 13190,9139
-Mengerzeile: Baustelle, Einbahnstraßenregelung	1s 13176,9302 13100,9210
-Heidelberger Str.: Baustelle, Einbahnstraßenregelung	1s 13489,9199 13420,9259 13357,9313
-Chausseestr.: Baustelle, Einbahnstraßenregelung	1s 8732,14098 8654,14194
-Chausseestr.: Baustelle, Einbahnstraßenregelung	1s 8654,14194 8607,14253 8527,14352 8442,14456
-Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s 9042,11839 8969,11814
+Bouchéstr.: Baustelle, Einbahnstraßenregelung	1s:inwork 13298,9252 13190,9139
+Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:inwork 13176,9302 13100,9210
+Heidelberger Str.: Baustelle, Einbahnstraßenregelung	1s:inwork 13489,9199 13420,9259 13357,9313
+Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:inwork 8732,14098 8654,14194
+Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:inwork 8654,14194 8607,14253 8527,14352 8442,14456
+Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:inwork 9042,11839 8969,11814
 Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,14449 7561,14458 7426,14539 7368,14573
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
-Corinthstr.: Baustelle, Einbahnstraßenregelung	1s 14447,10491 14270,10584
+Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:inwork 14447,10491 14270,10584
 Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17453,7451 17295,7344 17211,7280 17091,7175 16971,7058 16747,6813
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,9200 12548,9167
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719

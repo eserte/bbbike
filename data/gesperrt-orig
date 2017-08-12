@@ -2863,7 +2863,7 @@ Parkrosenweg: Bauarbeiten	2::inwork -6530,6699 -6381,6587
 #: last_checked: 2017-07-03 vvv
 #: check_frequency: 360d vvv
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5579,12231 5535,12206 5518,12159
-Wegelystr.: Einbahnstraﬂe wegen Bauarbeiten	1s:q3 5518,12159 5627,12105
+Wegelystr.: Einbahnstraﬂe wegen Bauarbeiten	1s:q3:inwork 5518,12159 5627,12105
 #: check_frequency ^^^
 #: last_checked ^^^
 #: osm_watch ^^^
@@ -2909,7 +2909,7 @@ Traudelstr.: Bauarbeiten, Straﬂe komplett gesperrt	2::inwork 19169,1249 19140,11
 #: next_check_id: SCHINKELPLATZ-2014
 #: last_checked: 2017-06-15
 #: check_frequency: 90d
-Schinkelplatz: Einbahnstraﬂe	1s:q3 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
+Schinkelplatz: Einbahnstraﬂe	1s:q3:inwork 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
 # 
 #: next_check_id: RATHAUSWEDDING-2017
 #: last_checked: 2017-07-31
@@ -2920,7 +2920,7 @@ Limburger Str.: Bauarbeiten am Rathaus Wedding, komplett gesperrt	2::inwork 7129
 #: last_checked: 2017-04-09
 #: check_frequency: 360d
 #: valid: -20181231
-Karower Str.: tempor‰re Einbahnstraﬂenregelung	1s:q3 16593,25640 16632,25512 16669,25373
+Karower Str.: tempor‰re Einbahnstraﬂenregelung	1s:q3:inwork 16593,25640 16632,25512 16669,25373
 # 
 #: last_checked: 2017-07-14
 #: check_frequency: 30d
@@ -2930,7 +2930,7 @@ Mauerweg: Bauarbeiten, gesperrt	2::inwork 7939,14447 7889,14519
 #: by: http://www.dafmap.de/d/berlin.html?id=3192&mt=0&zoom=16 (Geplanter Projektabschluss: 2018-03-31)
 #: last_checked: 2017-07-15
 #: check_frequency: 120d
-Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt	1s:q3 5192,10234 5196,10398
+Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt	1s:q3:inwork 5192,10234 5196,10398
 # 
 # REMOVED (siehe temp_blockings-Eintrag) --- #: source_id: 2147341003 (Bauarbeiten in der angrenzenden Modersohnstr.) --- #: last_checked: 2017-06-17 --- #: check_frequency: 7d --- DB-Werkstraﬂe: Zufahrt zur DB-Werkstraﬂe ist wegen Bauarbeiten gesperrt	2::inwork 14043,10928 14107,10911
 # REMOVED (bei fritz nicht mehr gelistet) --- #: XXX laut fritz bis 30. September 2017 --- #: by: http://www.dafmap.de/d/berlin.html?id=5031&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-12-31) --- #: source_id: LMS-BR_r_LMS-BR_86189 --- #: last_checked: 2017-02-04 --- #: next_check: 2017-09-30 --- #: priority: #A --- Zillestr.: Bauarbeiten, Einbahnstraﬂenregelung, offen Richtung Westen	1s:q3 3807,11859 3976,11869
@@ -2947,16 +2947,16 @@ Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtun
 #: osm_watch: way id="466318949" version="3"
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
 #: last_checked: 2017-07-20
-BouchÈstr.: Baustelle, Einbahnstraﬂenregelung	1s:q3 13298,9252 13190,9139
+BouchÈstr.: Baustelle, Einbahnstraﬂenregelung	1s:q3:inwork 13298,9252 13190,9139
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
 #: last_checked: 2017-07-20
-Mengerzeile: Baustelle, Einbahnstraﬂenregelung	1s:q3 13176,9302 13100,9210
+Mengerzeile: Baustelle, Einbahnstraﬂenregelung	1s:q3:inwork 13176,9302 13100,9210
 # 
 #: next_check_id: HEIDELBERGER-2017
 #: last_checked: 2017-07-24
 #: check_frequency: 60d
-Heidelberger Str.: Baustelle, Einbahnstraﬂenregelung	1s:q3 13489,9199 13420,9259 13357,9313
+Heidelberger Str.: Baustelle, Einbahnstraﬂenregelung	1s:q3:inwork 13489,9199 13420,9259 13357,9313
 # 
 # REMOVED (mittlerweile ist eine Ausweichmˆglichkeit markiert) --- #: last_checked: 2017-03-01 --- Karl-Marx-Platz: Bauarbeiten, Einbahnstraﬂe gilt nun auch f¸r Radfahrer	1s:q3 12969,7610 13100,7626
 # REMOVED --- #: source_id: 2147340790 --- #: source_id: 2147340922 --- #: last_checked: 2017-03-20 --- #: next_check: 2017-03-24 --- # REMOVED --- : valid: -20170228 --- Puschkinallee: Fahrtrichtung gesperrt	1::inwork 13795,9941 13890,9894
@@ -2973,8 +2973,8 @@ Heidelberger Str.: Baustelle, Einbahnstraﬂenregelung	1s:q3 13489,9199 13420,9259
 #: osm_watch: way id="52960100" version="10"
 #: last_checked: 2017-07-31 vvv
 #: next_check: 2017-08-30 vvv
-Chausseestr.: Baustelle, Einbahnstraﬂenregelung	1s:q3 8732,14098 8654,14194
-Chausseestr.: Baustelle, Einbahnstraﬂenregelung	1s:q4 8654,14194 8607,14253 8527,14352 8442,14456
+Chausseestr.: Baustelle, Einbahnstraﬂenregelung	1s:q3:inwork 8732,14098 8654,14194
+Chausseestr.: Baustelle, Einbahnstraﬂenregelung	1s:q4:inwork 8654,14194 8607,14253 8527,14352 8442,14456
 #: next_check ^^^
 #: last_checked ^^^
 #: source_id ^^^
@@ -2987,7 +2987,7 @@ Chausseestr.: Baustelle, Einbahnstraﬂenregelung	1s:q4 8654,14194 8607,14253 8527
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3853&mt=0&zoom=16
 #: last_checked: 2017-07-31
-Wilhelmstr. - Mohrenstr.: kurze Einbahnstraﬂenregelung	1s:q3 9042,11839 8969,11814
+Wilhelmstr. - Mohrenstr.: kurze Einbahnstraﬂenregelung	1s:q3:inwork 9042,11839 8969,11814
 # 
 #: XXX danach kˆnnte die Qualit‰t der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
@@ -3005,7 +3005,7 @@ Nordhafenpark West: w‰hrend der Umgestaltung gesperrt	2::inwork 7636,14414 7612,
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 # 
 #: last_checked: 2017-08-08
-Corinthstr.: Baustelle, Einbahnstraﬂenregelung	1s:q2 14447,10491 14270,10584
+Corinthstr.: Baustelle, Einbahnstraﬂenregelung	1s:q2:inwork 14447,10491 14270,10584
 # 
 # REMOVED (mittlerweile schon passierbar) --- #: next_check_id: MARIANNEN-2016 vvv --- #: source_id: INKO_2147340291_COPY_1 vvv --- #: source_id: 2147340291 vvv --- #: source_id: 2147340768 vvv --- # REMOVED (aufgehoben) --- #: priority: #A vvv --- #: XXX laut fritz bis 16.12.2016 --- #: last_checked: 2016-12-15 vvv --- #: next_check: 2017-01-10 vvv --- Mariannenstr.: Baustelle, Einbahnstraﬂenregelung	1s:q2 11512,10105 11616,10288 --- #: source_id: 2147340777 --- #: XXX laut fritz bis 10.01.2017 --- #: priority: #A --- #: last_checked: 2016-12-15 --- #: check_frequency: 7d --- Mariannenstr.: Baustelle, Fahrbahn gesperrt	2s:q3 11671,10402 11616,10288
 # 

@@ -2573,17 +2573,17 @@ Hˆnower Str. (Karlshorst) (Ausweichen auf Sandbankette mˆglich): gegen die Einba
 Neue Bahnhofstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
 Mauerstr.: Bauarbeiten, Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 9108,11961 9138,11872
 Charlottenstr.: Bauarbeiten, Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 9509,12117 9496,12215
-Wegelystr.: Einbahnstraﬂe wegen Bauarbeiten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 5518,12159 5627,12105
-Schinkelplatz: Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
-Karower Str.: tempor‰re Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 16593,25640 16632,25512 16669,25373
-Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 5192,10234 5196,10398
-BouchÈstr.: Baustelle, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13298,9252 13190,9139
-Mengerzeile: Baustelle, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13176,9302 13100,9210
-Heidelberger Str.: Baustelle, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13489,9199 13420,9259 13357,9313
-Chausseestr.: Baustelle, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 8732,14098 8654,14194
-Chausseestr.: Baustelle, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 8654,14194 8607,14253 8527,14352 8442,14456
-Wilhelmstr. - Mohrenstr.: kurze Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 9042,11839 8969,11814
-Corinthstr.: Baustelle, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 14447,10491 14270,10584
+Wegelystr.: Einbahnstraﬂe wegen Bauarbeiten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 5518,12159 5627,12105
+Schinkelplatz: Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
+Karower Str.: tempor‰re Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 16593,25640 16632,25512 16669,25373
+Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 5192,10234 5196,10398
+BouchÈstr.: Baustelle, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 13298,9252 13190,9139
+Mengerzeile: Baustelle, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 13176,9302 13100,9210
+Heidelberger Str.: Baustelle, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 13489,9199 13420,9259 13357,9313
+Chausseestr.: Baustelle, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 8732,14098 8654,14194
+Chausseestr.: Baustelle, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 8654,14194 8607,14253 8527,14352 8442,14456
+Wilhelmstr. - Mohrenstr.: kurze Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 9042,11839 8969,11814
+Corinthstr.: Baustelle, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2:inwork::igndisp; 14447,10491 14270,10584
 (Los-Angeles-Platz): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 5669,10704 5822,10609
 Seekorso: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; -8376,6579 -8354,6590
 Seekorso: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; -8339,6578 -8364,6562
