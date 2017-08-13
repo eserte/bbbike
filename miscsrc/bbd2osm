@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2010,2011,2012,2013,2014,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2010,2011,2012,2013,2014,2016,2017 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -33,7 +33,7 @@ use Strassen::Strasse;
 use VectorUtil qw(get_polygon_center);
 
 use vars qw($VERSION);
-$VERSION = '1.05';
+$VERSION = '1.06';
 
 # Monkeypatch for performance reasons
 # See http://rt.cpan.org/Ticket/Display.html?id=39619
@@ -339,7 +339,7 @@ sub do_file {
 
 sub handle_blocked_node_like {
     my($r, $dir) = @_;
-    my($cat, $cat_attribs) = $r->[Strassen::CAT] =~ m{^([^:]+)(?:::(.*))?};
+    my($cat, $cat_attribs) = $r->[Strassen::CAT] =~ m{^([^:]+)(?:::?(.*))?};
 
     # Don't render if the output is map-only
     if ($optimize_for == OPTIMIZE_FOR_MAPNIK && ($cat_attribs||'') =~ /\bigndisp\b/) {
@@ -386,7 +386,7 @@ sub handle_blocked_node_like {
 
 sub handle_blocked_way_like {
     my($r, $dir) = @_;
-    my($cat, $cat_attribs) = $r->[Strassen::CAT] =~ m{^([^:]+)(?:::(.*))?};
+    my($cat, $cat_attribs) = $r->[Strassen::CAT] =~ m{^([^:]+)(?:::?(.*))?};
 
     # Don't render if the output is map-only
     if ($optimize_for == OPTIMIZE_FOR_MAPNIK && ($cat_attribs||'') =~ /\bigndisp\b/) {
@@ -426,7 +426,7 @@ sub handle_handicap_like {
 	if (defined $$cat_ref) {
 	    ($$cat_ref, $$cat_attrib_ref) = $$cat_ref =~ m{^
 							   ([^:]+)
-							   (?:::(.*))?
+							   (?:::?(.*))?
 							   $}x;
 	}
     }
@@ -527,7 +527,7 @@ sub handle_anywhere_highway_like { _handle_highway_like(undef, @_) }
 sub _handle_highway_like {
     my($city, $r, $dir) = @_;
 
-    my($cat, $cat_attribs) = $r->[Strassen::CAT] =~ m{^([^:]+)(?:::(.*))?};
+    my($cat, $cat_attribs) = $r->[Strassen::CAT] =~ m{^([^:]+)(?:::?(.*))?};
     if ($cat eq 'Pl') {
 	# XXX maybe handle later...
 	return;
@@ -801,7 +801,7 @@ sub handle_ropeway {
 sub handle_railway_like {
     my($r, $dir) = @_;
 
-    my($cat, $cat_attribs) = $r->[Strassen::CAT] =~ m{^([^:]+)(?:::(.*))?};
+    my($cat, $cat_attribs) = $r->[Strassen::CAT] =~ m{^([^:]+)(?:::?(.*))?};
     if ($cat eq 'Ropeway') {
 	return handle_ropeway($r, $dir);
     }
