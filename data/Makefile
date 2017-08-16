@@ -1050,7 +1050,7 @@ fragezeichen-nextcheck.org-exact-dist:
 ${PERSISTENTTMPDIR}/fragezeichen-nextcheck-home-home.org:	*-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
 	-@$(WRITEABLE) $@
 	centerc=`${PERL} -nle 'm{centerc.*\x27(\d+,\d+)\x27} and print $$1' ~/.bbbike/config`; \
-	    ${PERL} ${MISCSRCDIR}/fragezeichen2org.pl --dist-dbfile=${PERSISTENTTMPDIR}/dist.db -centerc $$centerc -center2c $$centerc *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd > $@~
+	    ${PERL} ${MISCSRCDIR}/fragezeichen2org.pl --plan-dir=${HOME}/.bbbike/gps_uploads --with-searches-weight --max-dist=50 --dist-dbfile=${PERSISTENTTMPDIR}/dist.db -centerc $$centerc -center2c $$centerc *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 
