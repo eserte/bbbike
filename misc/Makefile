@@ -325,6 +325,10 @@ bbbikemap-for-garmin-transfer-linux:
 	rsync -vP ${BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES} /media/${USER}/*/garmin/
 	@echo "Please unmount manually"
 
+bbbikemap-for-garmin-transfer-any:
+	@echo "Set the garmin device into USB mass storage mode."
+	${PERL} -w -I.. -I../lib -MGPS::BBBikeGPS::MountedDevice -e '@img = @ARGV; GPS::BBBikeGPS::MountedDevice->maybe_mount(sub { my $$dir = shift; system("rsync", "-vP", @img, "$$dir/garmin/"); 1 }, garmin_disk_type => "card")' ${BBBIKE_FAT_ROUTABLE_GMAPSUPP_SOURCES}
+
 .PHONY: ${BBBIKETMPDIR}/bbbike_routable.osm
 ${BBBIKETMPDIR}/bbbike_routable.osm:
 # Do not use ${BBBIKETMPDIR} here, but a relative path against data,
