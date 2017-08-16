@@ -17,7 +17,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..";
 
 use vars qw($VERSION);
-$VERSION = '0.24';
+$VERSION = '0.25';
 
 use Cwd qw(getcwd realpath);
 use Data::Dumper;
@@ -1135,9 +1135,15 @@ for my $osm_file (@osm_files) {
 		    } elsif ($surface eq 'concrete_plates' || $surface eq 'concrete:plates' || $surface eq 'concrete:lanes') {
 			$quality_cat = 'Q2+';
 			@quality_name = 'Plattenweg';
-		    } elsif ($surface eq 'cobblestone' || $surface eq 'cobblestone:flattened' || $surface eq 'sett') { # XXX evtl. könnten die beiden anderen Varianten besser kategorisiert werden, Q2+?
+		    } elsif ($surface eq 'cobblestone') {
 			$quality_cat = 'Q2';
 			@quality_name = 'Kopfsteinpflaster';
+		    } elsif ($surface eq 'cobblestone:flattened') {
+			$quality_cat = 'Q2+';
+			@quality_name = 'glattes Kopfsteinpflaster';
+		    } elsif ($surface eq 'sett') {
+			$quality_cat = 'Q2+';
+			@quality_name = 'gepflastert';
 		    } elsif ($surface eq 'gravel') {
 			$quality_cat = 'Q2+';
 			@quality_name = 'Schotter';
