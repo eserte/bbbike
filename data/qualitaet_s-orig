@@ -1334,9 +1334,9 @@ Esplanade: asphaltiert	Q0 10975,16896 10886,16893
 Esplanade: Kleinsteinpflaster	Q2+ 10886,16893 10655,16904
 Glinkastr.: Asphalt	Q0+ 9183,12076 9195,11972 9207,11880 9218,11793 9220,11781
 Ettaler Str.: Kopfsteinpflaster	Q2 5997,10286 5948,10152
-Fasanenplatz, zur Schaperstr.: gutes Kopfsteinpflaster	Q1 5224,10253 5192,10234
-Fasanenplatz: gutes Kopfsteinpflaster	Q1 5192,10234 5191,10190
-Fasanenplatz, zur Meierottostr.: gutes Kopfsteinpflaster	Q1 5191,10190 5220,10192 5246,10168
+Fasanenplatz, zur Schaperstr.: gutes Kopfsteinpflaster	Q1- 5224,10253 5192,10234
+Fasanenplatz: gutes Kopfsteinpflaster	Q1- 5192,10234 5191,10190
+Fasanenplatz, zur Meierottostr.: gutes Kopfsteinpflaster	Q1- 5191,10190 5220,10192 5246,10168
 Meierottostr.: Asphalt mit einigen Schäden	Q0- 5246,10168 5463,9961
 Virchowstr.: Kopfsteinpflaster	Q2 12925,13373 12876,13440
 Dunckerstr.: Kopfsteinpflaster	Q2 11337,14946 11450,15173 11480,15229 11595,15460
@@ -1474,7 +1474,7 @@ Rosenthaler Str.: teilweise mäßiger Asphalt	Q1+ 12166,21208 12096,21224 11982,21
 Lise-Meitner-Str.: Beton	Q0 3712,13275 3725,13346 3742,13416 3741,13495 3739,13563
 Lise-Meitner-Str.: Verbundsteine	Q1 3739,13563 3724,13702
 Lise-Meitner-Str.: Beton	Q0 3724,13702 3713,13787 3702,13865 3695,13902 3663,14137
-Georg-Wilhelm-Str.: Kopfsteinpflaster, OK	Q1 2702,10006 2691,10047
+Georg-Wilhelm-Str.: Kopfsteinpflaster, OK	Q1 2702,10006 2687,10053
 Holtzendorffstr.: mäßiges Kopfsteinpflaster	Q2 3049,11015 3082,11090
 Goslarer Ufer: Kopfsteinpflaster	Q2 4421,12727 4372,12946
 Goslarer Ufer: Asphalt	Q0 4372,12946 4331,13103 4295,13234
@@ -10179,7 +10179,7 @@ Veilchenblütenweg: unbefestigte Schotterstraße	Q2 11664,21246 11656,21309
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.487100.php ("Spatenstich")
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6077.html
 #: XXX ändert sich bei der Umgestaltung etwas an der Qualität? vvv
-#: last_checked: 2017-07-03 vvv
+#: last_checked: 2017-08-15 vvv
 #: next_check: 2017-12-01 vvv
 #: note: zusätzlich mit einigen "Pflasterschwellen"
 (Verlängerte Hertzallee): Kopfsteinpflaster	Q2- 5352,11502 5296,11529 4950,11696
@@ -10473,6 +10473,7 @@ Radweg zur Detmolder Str.: Verbundsteinpflaster/Gehwegplatten	Q1; 4461,8105 4349
 Cimbernstr. [Stichstraße] (Nikolassee): schlechtes Kopfsteinpflaster	Q3 -3544,2003 -3616,1877
 Heinersdorfer Str.: Asphalt mit einigen Schäden	Q0- 5223,1318 5201,1227 5178,1123
 (Christoph-Ruden-Str. - Buckower Damm): Asphalt	Q0 12725,1429 12939,1469
+(Olivaer Platz, Wielandstr. - Bayerische Str.): Mosaikpflaster	Q1 4360,10320 4352,10260
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -13060,7 +13061,7 @@ Kulmbacher Str.: Asphalt, leicht schadhafte Stellen	Q0- 5814,9948 5833,10170
 Nordhauser Str.: Asphalt	Q0 3534,13098 3711,13098 3842,13097 3970,13097 4096,13095 4215,13098 4331,13103
 # 
 #: by: Kerstin Pantos: vvv
-Ringbahnstr. (Halensee): mäßiges Kopfsteinpflaster	Q2 2691,10047 2539,10235
+Ringbahnstr. (Halensee): mäßiges Kopfsteinpflaster	Q2 2687,10053 2539,10235
 #: confirmed_by: srt vvv
 Gustav-Müller-Str.: asphaltiert	Q0 7639,8091 7640,8359 7644,8560
 Gustav-Müller-Str.: asphaltiert	Q0 7643,8634 7642,8815
@@ -14033,7 +14034,7 @@ Kilianistr.: mäßiges Kopfsteinpflaster	Q2 18114,6549 18244,6518 18457,6490
 Beymestr.: mäßiges Kopfsteinpflaster	Q2+ 5497,4994 5797,4846
 # 
 #: by: Klemens Wawrzinek:
-Lützenstr.: Kopfsteinpflaster	Q2 2539,10235 2708,10245
+Lützenstr.: Kopfsteinpflaster	Q2 2539,10235 2710,10245
 # 
 #: by: Michael Feske (wobei er sich bei der Kategorisierung unsicher war)
 (Waidmannsluster Damm - Karolinenstr.): Waldweg	Q2 1942,21564 1928,21595 1859,21541 1843,21440 1810,21363 1613,21173
@@ -25354,6 +25355,7 @@ Eosanderstr.: Kopfsteinpflaster	Q1 3344,12611 3271,12609
 Brauhofstr.: Asphalt, einige Schäden	Q1+ 3472,12447 3486,12473 3606,12484
 #: confirmed_by: srt
 Brauhofstr.: Asphalt	Q0 3606,12484 3747,12495
+#: confirmed_by: srt
 Behaimstr. (Charlottenburg): Asphalt	Q0 3495,12185 3630,12201 3767,12217
 Thrasoltstr.: Asphalt	Q0 3514,11988 3651,12001 3786,12014
 Lüdtgeweg: Asphalt	Q0 4137,12411 4136,12494

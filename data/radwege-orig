@@ -220,7 +220,15 @@ gemeinsamer Rad- und Gehweg, Verbundsteinpflaster	RW8;RW2 13946,7918 13958,8106
 	RW0;RW1 6281,8800 6367,8804
 	RW1;RW1 4342,9301 4246,9406
 	RW1;RW1 3427,9771 3471,9754 3583,9690 3698,9624 3813,9566 3905,9523 4011,9474 4193,9404 4246,9406
-für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1;RW1 2770,10024 2702,10006 2694,10002 2590,9949 2532,9911 2482,9870 2445,9838
+für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2770,10024 2702,10006 2694,10002 2590,9949 2532,9911
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf
+#: note: vorhandener Radweg ist abgesperrt
+#: add_fragezeichen: bleibt die Absperrung des Radwegs permanent?
+#: last_checked: 2017-08-16
+#: check_frequency: 90d
+für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW5; 2532,9911 2590,9949 2694,10002 2702,10006
+für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2702,10006 2770,10024
+für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1;RW1 2532,9911 2482,9870 2445,9838
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2445,9838 2369,9779
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2415,9765 2445,9838
 	RW2; 2369,9779 2360,9754 2361,9664
@@ -810,10 +818,13 @@ der frühere Radweg auf dem Gehweg (kleinteiliges Pflaster) ist nun aufgehoben	RW
 	RW1;RW2 6239,15553 6127,15688
 	RW2; 6562,15177 6626,15104
 	RW1;RW1 6127,15688 6121,15697 6071,15768 6019,15841 5968,15914 5907,16000 5827,16118 5748,16235 5596,16662 5581,16708 5561,16767 5526,16916 5479,17108 5473,17148 5490,17173
-neu asphaltiert	RW2; 6781,16026 6661,15921 6555,15827 6422,15708 6239,15553 6422,15708
-#: note: wobei der Asphalt nicht besonders gut ist, etwas wellig schon nach der Fertigstellung
-neu asphaltiert	RW2; 6422,15708 6555,15827 6661,15921 6781,16026
-	RW2;RW2 6239,15553 5753,15096 5700,15043 5618,14981 5598,14965 5517,14901 5440,14840
+neu asphaltiert, aber trotzdem etwas wellig	RW2; 6781,16026 6661,15921
+neu asphaltiert	RW2; 6661,15921 6555,15827 6422,15708 6239,15553
+neu asphaltiert	RW2; 6239,15553 6422,15708
+neu asphaltiert, aber trotzdem etwas wellig	RW2; 6422,15708 6555,15827 6661,15921 6781,16026
+Betonplatten mit einigen Hebungen	RW2; 6239,15553 5895,15229 5753,15096 5700,15043
+	RW2; 5700,15043 5618,14981 5598,14965 5517,14901 5440,14840
+	RW2; 5440,14840 5517,14901 5598,14965 5618,14981 5700,15043 5753,15096 5895,15229 6239,15553
 	RW2; 5440,14840 5311,14786 5246,14758 5043,14671
 	RW2; 5051,14606 5264,14671 5293,14699 5331,14735 5440,14840
 	RW1;RW1 13330,13468 13381,13354 13393,13326 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13695,12643
@@ -1038,13 +1049,13 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5459,11135 5258,11285
 #: XXX früher: Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5
 #: XXX bis Ende 2016, laut rbbtext bis 16.12.2016, laut VMZ nun bis Ende 2017
 #: source_id: 2147339533
-#: last_checked: 2017-07-15
+#: last_checked: 2017-08-16
 #: next_check: 2017-09-11
 	RW0;RW0 5258,11285 5166,11343 5091,11406
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5091,11406 5085,11413 4922,11600
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
-#: last_checked: 2017-06-22
+#: last_checked: 2017-08-16
 #: check_frequency: 60d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1175,7 +1186,9 @@ mäßiges Verbundsteinpflaster	RW2;RW8 12944,26163 13192,26628 13256,26863 13345,2
 	RW1; 8161,16752 8144,16754 7852,16790 7763,16779
 	RW2; 7763,16779 7681,16769
 asphaltiert	RW1; 7681,16769 7763,16779 7852,16790 8144,16754 8161,16752
-	RW2;RW2 7681,16769 7606,16746 7447,16613 7417,16587 7403,16575 7295,16477 7231,16418 7051,16264 6965,16190 6781,16026
+#: XXX wie ist die Qualität hier? Teilweise schon asphaltiert?
+	RW2; 7681,16769 7606,16746 7447,16613 7417,16587 7403,16575 7295,16477 7231,16418 7051,16264 6965,16190 6781,16026
+Gehwegplatten und Verbundsteinpflaster	RW2; 6781,16026 6965,16190 7051,16264 7231,16418 7295,16477 7403,16575 7417,16587 7447,16613 7606,16746 7681,16769
 	RW1; 10138,20840 10145,21017 10140,21107 10135,21171 10129,21251 10126,21314 10120,21464 10118,21510 10114,21586 10111,21661 10111,21673 10106,21784 10097,21809 10083,21848
 	RW3; 10083,21848 10097,21809 10106,21784 10111,21673 10111,21661 10114,21586 10118,21510 10120,21464 10126,21314 10129,21251 10135,21171 10140,21107 10145,21017 10138,20840
 	RW2;RW8 8277,21257 8316,21240 8409,21183 8513,21099 8610,21000 8698,20897 8764,20799 8789,20763 8900,20601 8967,20539 9068,20446 9091,20425 9108,20410 9119,20399
@@ -1482,7 +1495,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2017-08-12
+#: last_checked: 2017-08-13
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -1712,8 +1725,8 @@ Berliner Gehwegplatten, ca. 1,50m breit	RW2;RW2 9272,14208 9400,14400 9410,14410
 #: note: Wobei es so aussieht, als ob das Zusatzschild einfach nur fehlt
 #: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5;
 #: by: http://www.dafmap.de/d/berlin.html?id=3134&mt=0&zoom=16 (Projektabschluss: 2017-09-01)
-#: last_checked: 2017-07-09
-#: check_frequency: 90d
+#: last_checked: 2017-08-16
+#: check_frequency: 60d
 	RW4; 11451,13301 11368,13170
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 11451,13301 11486,13350
 Busspur ist immer gültig	RW5; 11486,13350 11539,13425 11561,13451 11652,13564
@@ -4689,7 +4702,7 @@ Tempo 10	RW6;RW6 13559,12779 13470,12990
 #: XXX wegen Bauarbeiten am Hochhaus "Upper West" sind die Radspuren aufgehoben
 #: by: http://www.tagesspiegel.de/berlin/stadtentwicklung-zwillingsturm-soll-2016-in-der-city-west-eroeffnen/7416454.html (geplante Eröffnung Mitte 2016)
 #: source_id: 2147341048
-#: last_checked: 2017-07-03
+#: last_checked: 2017-08-13
 #: next_check: 2017-08-18
 #	RW3; 5488,10978 5613,10963 5652,11004
 ##: note: teilweise vor dem Hotel unterbrochen (wegen Ladezone?)

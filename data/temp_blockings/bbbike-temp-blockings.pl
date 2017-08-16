@@ -993,7 +993,7 @@ EOF
        text  => 'L 17; (Königshorst-Warsow); zw. Jahnberge und Warsow Straßenbauarbeiten Vollsperrung 22.09.2004-30.11.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 -40025,34118 -41261,33257
+userdel	2 -40025,34118 -40756,33632 -41150,33295
 userdel	2 -40025,34118 -39143,34187
 userdel	2 -38293,34081 -39143,34187
 EOF
@@ -20008,13 +20008,13 @@ EOF
 userdel	2::inwork 872,24330 865,24114 793,24070 736,24068 601,24192 237,24374 195,24389 132,24390 78,24364 -406,23934
 EOF
      },
-     { from  => $isodate2epoch->("2016-09-15 00:00:00"), # 1347508800, # 2012-09-13 06:00 PERIODISCH, ca. 2. Wochenende im September
-       until => $isodate2epoch->("2016-09-18 23:59:59"), # 1347832740, # 2012-09-16 23:59
+     { from  => $isodate2epoch->("2017-09-14 00:00:00"), # PERIODISCH, ca. 2. Wochenende im September
+       until => $isodate2epoch->("2017-09-17 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 9]],
-       text  => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 16.09.2016 bis 18.09.2016',
+       text  => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 15.09.2017 bis 17.09.2017',
        type  => 'handicap',
-       source_id => 'http://www.laubinger.de/termine/rosenthaler-herbst/?y=2016',
+       source_id => 'http://www.laubinger.de/termine/rosenthaler-herbst/?y=2017',
        data  => <<EOF,
 userdel	q4::temp 8556,21918 8568,21863 8473,21633 8460,21602
 EOF
@@ -22789,7 +22789,7 @@ userdel	q3::inwork; 15098,12849 15233,12829 15357,12813
 EOF
      },
      { from  => 1502056800, # 2017-08-07 00:00
-       until => $isodate2epoch->("2017-08-18 12:00:00"), # 1502834399, # 2017-08-15 23:59
+       until => 1502894902, # $isodate2epoch->("2017-08-18 12:00:00"), # 1502834399, # 2017-08-15 23:59
        text  => 'Weichselstr.: Bauarbeiten zwischen Oderstr. und Scharnweberstr. Richtung Norden, Fahrbahn gesperrt, bis Mitte August 2017',
        type  => 'handicap',
        source_id => '2147341689',
@@ -25702,7 +25702,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten beendet und der Weg freigegeben? vvv
 #: osm_watch: way id="136814135" version="15" vvv
-#: last_checked: 2017-07-31 vvv
+#: last_checked: 2017-08-16 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier nicht) --- userdel	2::inwork 3332,12742 3396,12741
 # REMOVED (hier nicht) --- userdel	2::inwork 3396,12741 3358,12718
