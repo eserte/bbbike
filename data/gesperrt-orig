@@ -1128,7 +1128,7 @@ Sportfliegerstr.: Betriebsgel‰nde	2 18370,4511 18423,4459
 #: by: olaf skeries
 Schillerhof	1 7069,17204 6928,17154
 #: XXX wird aufgehoben, sobald das einsturzgef‰hrdete Haus abgerissen wird vvv
-#: last_checked: 2017-06-18 vvv
+#: last_checked: 2017-08-17 vvv
 #: check_frequency: 60d vvv
 Wartenbergstr.	1s:q2 15423,11667 15337,11639 15328,11636 15300,11584
 #: check_frequency ^^^
@@ -1182,6 +1182,7 @@ Joachim-Karnatz-Allee	1 7175,12630 7184,12602 7418,12601
 Joachim-Karnatz-Allee	1 7419,12584 7144,12580 7139,12589 7131,12615
 Waldkraiburger Str.: Betriebsgel‰nde	2 12283,4971 12468,5000
 (Falkenberger Chaussee - Darﬂer Str.)	1 16785,17524 16825,17537 16848,17530 16947,17506
+Dankratweg - Am Waldberg: Betriebsgel‰nde	2 20460,9593 20408,9604 20338,9718 20335,9866
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -1766,7 +1767,7 @@ Max-Born-Str.: Straﬂenbahntrasse	3nocross 19053,2890 19021,2946 18946,3077
 Ostseestr.: Mittelstreifen	3nocross 12216,16120 12232,16110 12347,16039
 # REMOVED (Fahrbahnen getrennt) --- Schildhornstreifen: Mittelstreifen vor dem Autobahnanschluss	3nocross 4338,6528 4423,6477
 Adlergestell: Mittelstreifen	3nocross 19735,3643 19812,3561 19857,3514 19904,3464
-Adlergestell: Mittelstreifen	3nocross 19735,3643 19676,3705 19633,3751 19587,3801
+Adlergestell: Mittelstreifen	3nocross 19676,3705 19633,3751 19587,3801
 Silberberger -> Adlergestell: Abbiegen verboten	3 19804,3697 19735,3643 19812,3561
 Michael-Br¸ckner-Str.: Mittelstreifen	3nocross 18457,5000 18425,5032 18080,5376
 Michael-Br¸ckner-Str.: Mittelstreifen	3nocross 17728,5756 17782,5698 17829,5648
@@ -1857,6 +1858,8 @@ abgeschlossenes Tor	3 * 10000,1131 *
 # Stellen, an denen getragen werden muﬂ:
 # die Zahl hinter dem ":" entspricht ungef‰hr den verlorenen Sekunden
 # 
+Tor, kann geschlossen sein	BNP:10::trailer=15 20682,9834
+Tor, kann geschlossen sein	BNP:10::trailer=15 20683,9558
 Tor	BNP:3::trailer=10 20829,5418
 Schranke	BNP:3::trailer=10 20849,5266
 tragen (20 Stufen)	0:30 22624,13901
@@ -2798,6 +2801,12 @@ Dr‰ngelgitter	BNP:3::trailer=10 3783,-2079
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: http://www.dafmap.de/d/berlin.html?center=52.434534+13.536709&zoom=18# (Projektabschluss: 2019-04-30)
+#: osm_watch: way id="448097237" version="1"
+#: last_checked: 2017-08-17
+#: next_check: 2018-03-01
+Merlitzstr.: Bauarbeiten, Straﬂe komplett gesperrt	2::inwork 19661,3421 19524,3286
+# 
 #: last_checked: 2017-08-16
 #: check_frequency: 14d
 Mauerstr.: Bauarbeiten, Einbahnstraﬂe	1s:q4:inwork 9108,11961 9138,11872
@@ -3165,14 +3174,12 @@ Rummelsburger Platz: zur H‰lfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 # REMOVED (Aufsch¸ttung statt Br¸cke) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6003 (Forderung nach Wiederherstellung) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6003&date=20151213 (Abriss der Br¸cke) --- #: XXX: Umfahrung existiert mittlerweile --- bleibt die Sperrung permanent? --- #: XXX: sobald die Br¸cke abgerissen wurde -> aus den Daten entfernen --- #: last_checked: 2015-10-04 --- #: check_frequency: 180d --- Weg zwischen S-Wartenberg und S-Hohenschˆnhausen: Br¸cke morsch und gesperrt	2::inwork 17159,18375 17235,18352
 # 
 #: osm_watch: way id="193373934" version="8"
-#: last_checked: 2017-07-28
-#: next_check: 2017-08-09
-Frauenauer Str.: Straﬂe fertig, aber noch gesperrt	2::inwork 19663,9757 19858,9775
+#: last_checked: 2017-08-17
+Frauenauer Str.: Straﬂe fertig, aber noch gesperrt	2::inwork 19663,9757 19858,9784
 # 
 #: osm_watch: way id="290255259" version="5"
-#: last_checked: 2017-07-28
-#: next_check: 2017-08-09
-Kirchdorfer Str.: Straﬂe fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9775 19871,9680
+#: last_checked: 2017-08-17
+Kirchdorfer Str.: Straﬂe fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9784 19871,9680
 # 
 # REMOVED --- #: osm_watch: way id="24845189" version="13" --- #: last_checked: 2016-09-11 --- #: check_frequency: 60d --- Viechtacher Str.: Straﬂe fertig, aber noch gesperrt	2::inwork 19801,9680 19871,9680 19923,9682
 # REMOVED --- #: last_checked: 2016-07-23 vvv --- #: check_frequency: 60d vvv

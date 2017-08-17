@@ -7494,7 +7494,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004990',
        data  => <<EOF,
-userdel	2::inwork 22428,6063 22467,6135
+userdel	2::inwork 22431,6068 22467,6135
 EOF
      },
      { from  => 1174518000, # 2007-03-22 00:00
@@ -7569,7 +7569,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004990',
        data  => <<EOF,
-userdel	2::inwork 22428,6063 22467,6135
+userdel	2::inwork 22431,6068 22467,6135
 EOF
      },
      { from  => 1176328800, # 2007-04-12 00:00
@@ -15309,7 +15309,7 @@ EOF
        text  => 'Bellevuestraße und Seelenbinderstraße von Bahnhofstraße bis Bellevuestraße: Einbahnstraße in Richtung Fürstenwalder Damm vom 27.7. bis zum 10.8.2009',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22897,5740 23106,5758 23333,5710 23402,5483
+userdel	q4::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710 23402,5483
 EOF
      },
      { from  => 1249768800, # 2009-08-09 00:00
@@ -15318,7 +15318,7 @@ EOF
        type  => 'handicap',
        # XXX URL existiert nicht mehr: source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/',
        data  => <<EOF,
-userdel	q4::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22897,5740 23106,5758 23333,5710 23402,5483
+userdel	q4::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710 23402,5483
 EOF
      },
      { from  => 1252879200, # 2009-09-14 00:00
@@ -19591,13 +19591,13 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::inwork 22365,6149 22467,6135 22539,6258
-userdel	2::inwork 22358,5918 22428,6063 22467,6135 22603,6141
-userdel	2::inwork 22478,6041 22544,6037
+userdel	2::inwork 22358,5918 22431,6068 22467,6135 22603,6141
+userdel	2::inwork 22478,6048 22538,6046
 userdel	2::inwork 22325,6385 22365,6149 22296,6170
 userdel	2::inwork 22513,5747 22531,5871 22358,5918 22292,5774
 userdel	2::inwork 22777,6151 22603,6141
-userdel	2::inwork 22608,5732 22631,5866 22531,5871 22539,5956 22730,5944
-userdel	2::inwork 22639,6062 22544,6037 22539,5956
+userdel	2::inwork 22608,5732 22631,5866 22531,5871 22535,5971 22731,5953
+userdel	2::inwork 22624,6044 22538,6046 22535,5971
 EOF
      },
      { from  => 1309903200, # 2011-07-06 00:00
@@ -25329,12 +25329,12 @@ EOF
 EOF
      },
      { from  => 1501526175, # 1465682400, # 2016-06-12 00:00
-       until => $isodate2epoch->("2017-09-15 12:00:00"),
-       text  => 'Werneuchener Str.: zwischen Genslerstr. und Goeckestr. Bauarbeiten, gesperrt bis Mitte September 2017',
+       until => $isodate2epoch->("2017-08-31 12:00:00"),
+       text  => 'Werneuchener Str.: zwischen Genslerstr. und Goeckestr. Richtung Konrad-Wolf-Str. Bauarbeiten, gesperrt bis Ende August 2017',
        type  => 'handicap',
        data  => <<EOF,
 #: by: fritz
-userdel	q3::inwork 16768,14849 16610,15000 16514,15092
+userdel	q3::inwork; 16768,14849 16610,15000 16514,15092
 EOF
      },
      { from  => undef, # 
@@ -26354,8 +26354,8 @@ userdel	q4::inwork 17734,675 17928,764 18023,833
 EOF
      },
      { from  => 1501618467, # 2017-08-01 22:14
-       until => 1503093600, # 2017-08-19 00:00
-       text  => 'Treptower Str.: zwischen Weigandufer und Stuttgarter Str. Bauarbeiten, Fahrbahn gesperrt, bis 18.08.2017',
+       until => $isodate2epoch->("2017-08-31 12:00:00"), # 1503093600, # 2017-08-19 00:00
+       text  => 'Treptower Str.: zwischen Weigandufer und Stuttgarter Str. Bauarbeiten, Fahrbahn gesperrt, bis Ende August 2017',
        type  => 'handicap',
        source_id => '2147341662',
        data  => <<EOF,
@@ -26422,6 +26422,15 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2::temp 10601,12521 10431,12709
+EOF
+     },
+     { from  => 1502994466, # 2017-08-17 20:27
+       until => 1503673200, # 2017-08-25 17:00
+       text  => 'Jessnerstr.: Sperrung an der Scharnweberstr., bis 25.08.2017',
+       type  => 'handicap',
+       source_id => '2147341716',
+       data  => <<EOF,
+userdel	q2::inwork 14981,11751 15080,11905
 EOF
      },
     );

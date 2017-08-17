@@ -3708,13 +3708,13 @@ userdel	2::night 16196,18364 16315,18208
        undef,
        {
          'data' => '#: by: fritz
-userdel	q3::inwork 16768,14849 16610,15000 16514,15092
+userdel	q3::inwork; 16768,14849 16610,15000 16514,15092
 ',
          'from' => 1501526175,
          'id' => 2795,
-         'text' => 'Werneuchener Str.: zwischen Genslerstr. und Goeckestr. Bauarbeiten, gesperrt bis Mitte September 2017',
+         'text' => 'Werneuchener Str.: zwischen Genslerstr. und Goeckestr. Richtung Konrad-Wolf-Str. Bauarbeiten, gesperrt bis Ende August 2017',
          'type' => 'handicap',
-         'until' => 1505469600
+         'until' => 1504173600
        },
        undef,
        undef,
@@ -4099,9 +4099,9 @@ userdel	q4::inwork 17734,675 17928,764 18023,833
          'from' => 1501618467,
          'id' => 2891,
          'source_id' => '2147341662',
-         'text' => 'Treptower Str.: zwischen Weigandufer und Stuttgarter Str. Bauarbeiten, Fahrbahn gesperrt, bis 18.08.2017',
+         'text' => 'Treptower Str.: zwischen Weigandufer und Stuttgarter Str. Bauarbeiten, Fahrbahn gesperrt, bis Ende August 2017',
          'type' => 'handicap',
-         'until' => 1503093600
+         'until' => 1504173600
        },
        {
          'data' => 'userdel	q4::inwork 23102,1637 23185,1649
@@ -4152,6 +4152,17 @@ userdel	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
          'text' => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Baseler Str. offen Richtung Norden), eventuell bis Ende November 2017',
          'type' => 'handicap',
          'until' => 1512082799
+       },
+       undef,
+       {
+         'data' => 'userdel	q2::inwork 14981,11751 15080,11905
+',
+         'from' => 1502994466,
+         'id' => 2899,
+         'source_id' => '2147341716',
+         'text' => 'Jessnerstr.: Sperrung an der Scharnweberstr., bis 25.08.2017',
+         'type' => 'handicap',
+         'until' => 1503673200
        }
      
 );
