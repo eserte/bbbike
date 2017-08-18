@@ -26106,7 +26106,7 @@ userdel	2::inwork 21685,916 21724,954 21856,996 21977,988
 EOF
      },
      { from  => 1497556689, # 2017-06-15 21:58
-       until => 1504216800, # 2017-09-01 00:00
+       until => 1503082020, # 1504216800, # 2017-09-01 00:00
        text  => 'Schönerlinder Str.: Autobahnbrücke gesperrt, Radfahrer und Fußgänger können unter Umständen trotzdem passieren, bis 31.08.2017',
        type  => 'gesperrt',
        source_id => '2147341179',
@@ -26431,6 +26431,14 @@ EOF
        source_id => '2147341716',
        data  => <<EOF,
 userdel	q2::inwork 14981,11751 15080,11905
+EOF
+     },
+     { from  => 1503081615, # 2017-08-18 20:40
+       until => 1508191199, # 2017-10-16 23:59
+       text  => 'Palisadenstr.: Bauarbeiten, Einbahnstraße zwischen Friedenstr. und Koppenstr., offen in Richtung Osten, bis zum 16. Oktober 2017',
+       type  => 'handicap',
+       data  => <<EOF,
+userdel	q3::inwork; 12866,12582 12843,12567 12632,12630
 EOF
      },
     );

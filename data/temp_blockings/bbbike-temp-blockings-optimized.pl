@@ -3908,16 +3908,7 @@ userdel	q4::inwork; 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548
          'until' => 1508565600
        },
        undef,
-       {
-         'data' => 'userdel	2::inwork 11980,24276 11959,24220
-',
-         'from' => 1497556689,
-         'id' => 2869,
-         'source_id' => '2147341179',
-         'text' => 'Schönerlinder Str.: Autobahnbrücke gesperrt, Radfahrer und Fußgänger können unter Umständen trotzdem passieren, bis 31.08.2017',
-         'type' => 'gesperrt',
-         'until' => 1504216800
-       },
+       undef,
        {
          'data' => '#: XXX Baumaßnahme ist Ende 2018 fertig; Vollsperrung nur für 2-3 Wochen
 #: XXX wird es vielleicht Änderungen bei der Wegbeschaffenheit geben?
@@ -4163,6 +4154,15 @@ userdel	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
          'text' => 'Jessnerstr.: Sperrung an der Scharnweberstr., bis 25.08.2017',
          'type' => 'handicap',
          'until' => 1503673200
+       },
+       {
+         'data' => 'userdel	q3::inwork; 12866,12582 12843,12567 12632,12630
+',
+         'from' => 1503081615,
+         'id' => 2900,
+         'text' => 'Palisadenstr.: Bauarbeiten, Einbahnstraße zwischen Friedenstr. und Koppenstr., offen in Richtung Osten, bis zum 16. Oktober 2017',
+         'type' => 'handicap',
+         'until' => 1508191199
        }
      
 );
