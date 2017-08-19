@@ -15,11 +15,31 @@
 use strict;
 use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
-use GPS::BBBikeGPS::MountedDevice;
+
 use Cwd 'realpath';
+use File::Basename 'basename';
+use Getopt::Long;
+use List::Util 'first';
+
+use BBBikeUtil qw(save_pwd2);
+use GPS::BBBikeGPS::MountedDevice;
+
+our $VERSION = '0.02';
+
+sub usage () {
+    die "usage: @{[ basename $0 ]} directory_or_url\n";
+}
+
+GetOptions(
+	   'v' => sub {
+	       print "@{[ basename $0 ]} $VERSION\n";
+	       exit 0;
+	   },
+	  )
+    or usage;
 
 my $dir_or_url = shift
-    or die "Directory or URL?";
+    or usage;
 my $dir;
 if ($dir_or_url =~ m{^https?://}) {
     require File::Temp;
@@ -30,8 +50,19 @@ if ($dir_or_url =~ m{^https?://}) {
     $resp->is_success
 	or die "Fetching $dir_or_url failed: " . $ua->status_line;
     system("cd $tmpdir && unzip download.zip");
-    $dir = realpath glob("$tmpdir/planet*");
-} else { 
+    $dir = realpath first { -d $_ } glob("$tmpdir/*");
+} elsif ($dir_or_url =~ m{\.zip$}) {
+    require File::Temp;
+    my $tmpdir = File::Temp::tempdir(CLEANUP => 1, TMPDIR => 1);
+    my $zip_path = realpath $dir_or_url;
+    {
+	my $save_pwd = save_pwd2;
+	chdir $tmpdir or die "Can't chdir to $tmpdir: $!";
+	system 'unzip', $zip_path;
+	die "'unzip $zip_path' failed" if $? != 0;
+    }
+    $dir = realpath first { -d $_ } glob("$tmpdir/*");
+} else {
     $dir = realpath $dir_or_url;
 }
 
@@ -39,8 +70,11 @@ my $name;
 open my $fh, "$dir/README.txt"
     or die "Problem opening $dir/README.txt: $!";
 while(<$fh>) {
-    if (/Name des Gebietes: (.*)/) {
+    if (/(?:Name des Gebietes|Name of area):\s*(.*)/) {
 	$name = $1;
+	if ($name eq '') { # may be empty
+	    $name = basename($dir);
+	}
 	last;
     }
 }
@@ -89,10 +123,14 @@ Upload already unzipped file:
 
     garmin-upload-map.pl /path/to/unzipped_planet_directory
 
+Upload zip:
+
+    garmin-upload-map.pl /path/to/unzipped_planet.zip
+
 =head1 DESCRIPTION
 
-Copy extracted extracts (optionally download it) from
-extract.bbbike.org to garmin card (which is automatically mounted if
-possible), automatically determine file name from readme file.
+Copy extracts (optionally download it) from extract.bbbike.org to
+garmin card (which is automatically mounted if possible),
+automatically determine file name from readme file.
 
 =cut
