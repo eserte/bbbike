@@ -138,6 +138,12 @@ sub register {
 	  callback => sub { showmap_fahrrad_stadtplan_eu(@_) },
 	  callback_3_std => sub { showmap_url_fahrrad_stadtplan_eu(@_) },
 	};
+    $main::info_plugins{__PACKAGE__ . 'Mapillary'} =
+	{ name => 'Mapillary',
+	  callback => sub { showmap_mapillary(@_) },
+	  callback_3_std => sub { showmap_url_mapillary(@_) },
+	  ($images{Mapillary} ? (icon => $images{Mapillary}) : ()),
+	};
     $main::info_plugins{__PACKAGE__ . '_AllMaps'} =
 	{ name => 'All Maps',
 	  callback => sub { show_links_to_all_maps(@_) },
@@ -380,6 +386,34 @@ AAALEwAACxMBAJqcGAAAAAd0SU1FB+EGCxMzFc5bjNQAAACWSURBVAjXY/j//1Wx2dz//xn+/w4x
 NlbuBzIWKCsbKXH8Z/ijagwEhvMZPjIwMAoIMvIz/N69a+aafe/vMUxgVOtevfcGB8Pp3TPCT5xS
 1GDYzKB5vDrB2Jxhcc1inQZlZQ2G24VcW4WVjbUZPpgeFzVSNrJj+LPL0JiJ2Wg9yApjZWVxoF2/
 lJWNjUGW/n+Zltb7/z8ADMI7t51Q4A0AAAAASUVORK5CYII=
+EOF
+    }
+
+    if (!defined $images{Mapillary}) {
+	# Created with:
+	#   lwp-request 'https://d1dk9tvuiy3v51.cloudfront.net/assets/icon/favicon-16x16.png' | base64
+	$images{Mapillary} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAAFzUkdC
+AK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAL1QTFRF
+Nq9tNq9tNq9tNq9tNq9tNq9tNq9tNq9tNq9tNa9sNK5sNa5sTLh9YsGNM65rh8+o0+7fSLZ6Na9t
+ObBvvuXQ////jtKtasST2vDkrN7D1u/hUbqBS7d83PHmqN3ARLV4tOHJdcibYsCN/v7+RbV4Mq5q
+UrqBsODGVbuER7Z5jdKs1+/ituLKU7qCQrR2uuPNpty/NK5rULmAdsmcsuDHuuTNpdu+6PbuXr+K
+pty+Xb+KseDG5PTraMORX7+Lt5+LqQAAAAh0Uk5THJ70G/3z8vzrOLjDAAAAAWJLR0QV5dj5owAA
+AAlwSFlzAAAASAAAAEgARslrPgAAAJ5JREFUGNNdz2kTgiAQBmBQKcBCC63sslu7o8su+/8/Kw/A
+mfbLss/MsvMCAA2sy4AmgFb+IrQUCwKUd7vRJKUgUDTmuC0pBbS553eoBsJ4txf0B1QCGTreaBxO
+pkwCnbnzYLFcRTFVK+vNdrc/HE/6UyLOl+vtnjyEuoIpi5+JH3ENGeHX+5OKCjAWPP3aGaAqmsjm
+mgynqg6B+Rf/B3qgDxqL68FkAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTAxLTA5VDE1OjA3OjUz
+KzAwOjAwDs2y7AAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wMS0wOVQxNTowNzo1MyswMDowMH+Q
+ClAAAABGdEVYdHNvZnR3YXJlAEltYWdlTWFnaWNrIDYuNy44LTkgMjAxNC0wNS0xMiBRMTYgaHR0
+cDovL3d3dy5pbWFnZW1hZ2ljay5vcmfchu0AAAAAGHRFWHRUaHVtYjo6RG9jdW1lbnQ6OlBhZ2Vz
+ADGn/7svAAAAGHRFWHRUaHVtYjo6SW1hZ2U6OmhlaWdodAAxOTIPAHKFAAAAF3RFWHRUaHVtYjo6
+SW1hZ2U6OldpZHRoADE5MtOsIQgAAAAZdEVYdFRodW1iOjpNaW1ldHlwZQBpbWFnZS9wbmc/slZO
+AAAAF3RFWHRUaHVtYjo6TVRpbWUAMTQ4Mzk3NDQ3MwX4I+MAAAAPdEVYdFRodW1iOjpTaXplADBC
+QpSiPuwAAABWdEVYdFRodW1iOjpVUkkAZmlsZTovLy9tbnRsb2cvZmF2aWNvbnMvMjAxNy0wMS0w
+OS80MTk0MjEwMWEwYjc5MzVjMDhhN2VjMTE3ODdjODI0Yy5pY28ucG5nLsj4ngAAAABJRU5ErkJg
+gg==
 EOF
     }
 }
@@ -785,6 +819,23 @@ sub showmap_url_fahrrad_stadtplan_eu {
 sub showmap_fahrrad_stadtplan_eu {
     my(%args) = @_;
     my $url = showmap_url_fahrrad_stadtplan_eu(%args);
+    start_browser($url);
+}
+
+######################################################################
+# Mapillary
+
+sub showmap_url_mapillary {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    sprintf "https://www.mapillary.com/app/?lat=%s&lng=%s&z=%d", $py, $px, $scale;
+}
+
+sub showmap_mapillary {
+    my(%args) = @_;
+    my $url = showmap_url_mapillary(%args);
     start_browser($url);
 }
 
