@@ -131,7 +131,7 @@ Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 69
 #: XXX Baumaßnahme 1.23 (Realisierung nach 2011)
 #: XXX wenn hier, dann vielleicht auch in der Kongostraße?
 #: osm_watch: way id="4581787" version="8"
-#: last_checked: 2017-05-01
+#: last_checked: 2017-08-19
 #: check_frequency: 120d
 Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 # 
@@ -647,7 +647,7 @@ Grünauer Weg: Verbesserung der Befahrbarkeit	?::projected 25182,-2915 25174,-290
 #: by: https://www.morgenpost.de/bin/berlin-209903893.jpg (fast die gleiche Liste)
 #: check_frequency: 90d vvv
 # 
-#: last_checked: 2017-08-16
+#: last_checked: 2017-08-19
 Seestr.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6781,16026 6965,16190 7051,16264 7231,16418 7295,16477 7403,16575 7417,16587 7447,16613
 # 
 #: last_checked: 2017-06-08
@@ -763,8 +763,10 @@ Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 16837,17440 16578,17285
 # 
 #: osm_watch: way id="40816680" version="8"
 #: osm_watch: way id="39965422" version="7"
+#: last_checked: 2017-08-19
 Ollenhauerstr.: Lückenschluss (Radweg oder Radspur)?	?::projected; 5196,17853 5213,17936 5227,18028
 # 
+#: last_checked: 2017-08-19
 Tornower Weg - Wilhelmsruher Damm: Verbesserung der Radroute	?::projected 6519,21002 6565,21004 6560,21055 6596,21062 6594,21134
 # 
 #: by: http://www.dafmap.de/d/berlin.html?center=52.519810+13.319903&zoom=17# (Engstelle wg. Baustelle)
@@ -827,7 +829,7 @@ Kameruner Str.: vielleicht Asphaltierung?	?::projected 6267,15844 6383,15972 648
 #: XXX vielleicht auch ein größerer Abschnitt
 #: osm_watch: way id="352683182" version="2"
 #: osm_watch: way id="501402607" version="1"
-#: last_checked: 2017-08-08
+#: last_checked: 2017-08-19
 Residenzstr.: Radstreifen	?::projected 8127,16894 8079,16953 7970,17087
 # 
 #: XXX oder ist was anderes mit "Rampe Wullenwebersteg" gemeint?
@@ -864,9 +866,8 @@ Hielscherstr.: Asphaltierung	?::projected 7558,19886 7604,19988 7695,20175 7735,
 #: last_checked: 2017-08-06
 Neukirchstr.: Asphaltierung	?::projected 12751,18401 12885,18329
 # 
-#: XXX außerdem zu prüfen: gibt es die Wegführung unter der S-Bahnbrücke noch, und überhaupt diese Wegführung einzeichnen
 #: osm_watch: way id="25799814" version="12"
-#: next_check: 2017-06-02
+#: last_checked: 2017-08-19
 Oraniendamm - Dianastr.: Befestigung (evtl. Asphaltierung?)	?::projected 4222,22854 4176,22764 4155,22707
 # 
 #: osm_watch: way id="39473293" version="3" 
@@ -1065,14 +1066,21 @@ Rosenthaler Weg: Neubau der Straße, danach existieren Radspuren	?::inwork 10999,
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.558233.php (Baumfällungen)
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.597345.php
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.619540.php (Abschnitt Wittenauer Str. - Göschenplatz, bis August 2018)
-#: source_id: 2147341383
-#: source_id: 2147341699
 #: XXX ab Mitte 2016, Bauende: voraussichtlich Ende 2019
+#: last_checked: 2016-10-03 vvv
+#: next_check: 2019-01-01
+Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::projected 5476,19450 5495,19571 5533,19811 5545,19909 5517,20120
 #: XXX neue Termine: Baubeginn: voraussichtlich Frühjahr 2017, Bauende: voraussichtlich Mitte 2020; laut vmz bis Februar 2018 (zwischen Roedernallee und Nordgraben), laut fritz bis 9.2.2018
-#: XXX Abschnitt Wittenauer Str. - Göschenplatz, laut fritz bis 28.02.2018
-#: last_checked: 2016-10-03
+#: source_id: 2147341383
 #: next_check: 2018-02-09
-Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::inwork 5476,19450 5495,19571 5533,19811 5545,19909 5517,20120 5506,20197 5475,20381 5463,20461 5441,20613 5421,20748 5410,20822 5401,20882 5395,20915 5382,21001 5356,21146 5349,21198 5343,21250 5341,21266 5333,21332 5320,21432 5311,21495 5210,21636 5136,21738
+Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::inwork 5517,20120 5506,20197 5476,20372
+#: next_check: 2019-01-01
+Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::projected 5476,20372 5463,20461 5441,20613 5421,20748 5410,20822 5401,20882 5395,20915 5382,21001 5356,21146 5349,21198 5343,21250
+#: XXX Abschnitt Wittenauer Str. - Göschenplatz, laut fritz bis 28.02.2018
+#: source_id: 2147341699
+#: next_check: 2018-02-28
+Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::inwork 5343,21250 5341,21266 5333,21332 5320,21432 5311,21495 5210,21636 5136,21738
+#: last_checked ^^^
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6401
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036322976038/322976038/00081169/69-Anlagen/02/vzb1092_IV_Auswertung_B_Plan_XXIII_38.pdf
@@ -1383,12 +1391,9 @@ Dahlemer Weg: wird hier eine Fußgängerampel realisiert?	?::projected 1763,1288 1
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3250&options=4&date=20130125 vvv
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.459697.php vvv
 #: priority: #C vvv
-#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4765
-#: last_checked: 2016-10-03
-#: next_check: 2017-03-24
-Alt-Wittenau/Techowpromenade: wird hier ein Zebrastreifen angelegt?	?::projected 5250,20482 5219,20467 5235,20439
-#: last_checked: 2015-11-07
-#: check_frequency: 90d
+# REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4765 --- #: last_checked: 2016-10-03 --- #: next_check: 2017-03-24 --- Alt-Wittenau/Techowpromenade: wird hier ein Zebrastreifen angelegt?	?::projected 5250,20482 5218,20471 5235,20439
+#: last_checked: 2017-08-19
+#: check_frequency: 180d
 Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::projected 3621,23223 3627,23246 3655,23244
 #: priority ^^^
 #: by: ^^^
@@ -1921,7 +1926,7 @@ Turmstr.: wird hier eine Änderung bei den Radwegen passieren?	? 5434,13398 5368,
 # REMOVED --- Torgauer Str.: Radwegsituation (asphaltiert? aufgehoben?)	? 7710,8051 7639,8091 7582,8123 7497,8168
 # REMOVED (teilweise, allerdings kann man u.U. (abends?) gut durchkommen) --- #: XXX Rosenthaler Str. (Mitte) in beiden Richtungen Höhe Einmündung Neue Schönhauser Str. (Berlin)  Gültig ab: 10.05.2017 13:53  Baustelle, Vollsperrung (bis Ende 07/17)	2147341279 --- #: XXX laut fritz bs 28.07.2017 --- Rosenthaler Str.: noch immer Bauarbeiten?	? 10317,13248 10310,13227
 # 
-#: last_checked: 2017-08-12
+#: last_checked: 2017-08-18
 #: check_frequency: 14d
 Rüdersdorfer Str.: Bauarbeiten, wird die Qualität danach besser sein?	?::inwork 13173,11788 13295,11792
 # 
@@ -1945,8 +1950,6 @@ Schnellerstr.: neue Fußgängerampel in Bau	?::inwork 17628,5865
 #: last_checked: 2017-07-24
 #: next_check: 2017-08-31
 Blücherstr.: Sanierung des Radwegs	?::projected; 10006,9942 9922,10010 9827,10051
-# 
-Ollenhauerstr.: gibt es hier eine für Radfahrer freigegebene Busspur? Geltungszeiten?	?; 5233,18069 5227,18028 5213,17936 5196,17853 5167,17725 5151,17658 5144,17629 5114,17500
 # 
 # REMOVED (-> siehe radwege-orig) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170522 --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/tief-8-ag-radverkehr_14-03-2016.pdf (mit detaillierten Plänen) --- #: XXX Wernsdorfer Straße (Schmöckwitz) in beiden Richtungen in Höhe Schwarzer Weg (Berlin)  Gültig ab: 15.03.2017 10:00  Baustelle, für beide Richtungen nur ein Fahrstreifen frei, Baustellenampel (bis Mitte 06/17) --- #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf --- #: source_id: 2147341047 --- #: last_checked: 2017-06-11 --- #: next_check: 2017-07-05 --- Wernsdorfer Str.: entstehen hier Radspuren?	? 27898,-3171 27761,-3165 27721,-3164
 # 
@@ -1988,9 +1991,7 @@ Lutterbacher Str. - Dahlemer Weg: wird es hier eine weitere Verbindung geben?	? 
 #: check_frequency: 120d
 Hultschiner Damm/Rahnsdorfer Str.: wird es hier eine Ampel geben?	? 24628,10569 24653,10580 24684,10586
 # 
-#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
-Seebadstr. - Alt-Hermsdorf: Widmung einer Straße	? 4564,23048 4498,23161 4471,23147
-# 
+# REMOVED (nicht aufgenommen, nicht besonders interessant) --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf --- Seebadstr. - Alt-Hermsdorf: Widmung einer Straße	? 4564,23048 4498,23161 4471,23147
 # REMOVED (-> temp_blockings) --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf --- #: osm_watch: way id="316695242" version="1" --- #: last_checked: 2017-03-25 --- #: check_frequency: 100d --- (Neues Ufer - Kaiserin-Augusta-Allee): ändert sich durch die Einziehung der Grünanlage etwas?	? 4561,13244 4547,13139 4576,13115
 # 
 #: XXX Instandsetzung 2017, danach vielleicht bessere Qualität
@@ -2247,7 +2248,8 @@ Humboldtring: Rückbau der Anschlussstelle	? -11386,-1313 -11395,-1331 -11461,-14
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.380505.php
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.432036.php
-Schulzendorfer Str.: Radverkehrsanlangen? (vermutlich asphaltiert, vermutlich nur Gehweg für Radfahrer frei)	? -2504,22626 -2377,22689 -2348,22704 -2263,22748 -2176,22789 -2165,22794 -2131,22810 -2024,22899
+Schulzendorfer Str.: Radverkehrsanlangen? (vermutlich asphaltiert, vermutlich nur Gehweg für Radfahrer frei, Zweirichtungsradweg?)	? -2504,22626 -2377,22689 -2348,22704 -2263,22748
+# REMOVED --- Schulzendorfer Str.: Radverkehrsanlangen? (vermutlich asphaltiert, vermutlich nur Gehweg für Radfahrer frei)	? -2263,22748 -2176,22789 -2165,22794 -2131,22810 -2024,22899
 # 
 #: next_check_id: SEEGEFELDERWEG-2016
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367070.php
@@ -3569,8 +3571,7 @@ Liepe - Chorin: Qualität?	? 46938,50961 46757,50998 46391,51303
 Liepe - Chorin: Qualität?	? 46391,51303 45805,51471 45089,51592 44952,51669 44167,52651 43047,53809 42697,54060 42231,54671
 Herzsprung - Schmargendorf: Qualität?	? 47863,64274 47267,64435 47123,64587 46955,64641 47045,64773
 Schmargendorf - Angermünde: Qualität?	? 47045,64773 47328,65204 47831,65501 48433,66233 48570,66705 48783,67071 49065,67154
-#: XXX laut osm grade3 bis grade4
-Albertshof, Alternative: Qualität?	? 24376,31986 24478,31918 25240,31808 25630,31782 26022,31789 27434,32400
+# REMOVED (mittlerweile nur bis grade3, ist aber nicht attraktiv genug) --- #: XXX laut osm grade3 bis grade4 --- Albertshof, Alternative: Qualität?	? 24376,31986 24478,31918 25240,31808 25630,31782 26022,31789 27434,32400
 Am Finowkanal: Qualität?	? 36364,48599 35933,48623 35735,48764 35804,48827
 Am Finowkanal: Qualität?	? 34316,48964 34191,48940 34022,48884 33953,48880 33846,48943 33817,48983 33806,49014 33685,49038 33525,49019 33215,48817 33213,48789 32909,48774 32715,48723 32407,48710 32218,48771 32150,48797 31984,48916 31963,48892 31817,48912 31665,48997 31608,49035 31536,49081 31482,49109
 Finowfurt - Biesenthal: Qualität?	? 28575,49756 28606,49663 28618,49522 28631,49411
@@ -4685,6 +4686,7 @@ Uferweg am Groß-Glienicker See: gibt es einen Uferweg östlich der Seepromenade? 
 #: XXX PLZ=14469
 Am alten Dorf (Potsdam-Bornim): Qualität? Genaue Lage?	? -16800,1991 -16931,1783
 # 
+#: XXX laut osm asphaltiert
 Albertshof - Rüdnitz: Qualität?	? 27662,33209 27529,33478 27432,33943 27363,34109 27324,34142 26862,34287 26720,34396 26678,34447 26312,34571 26195,34658 26086,34697 26113,34734
 # 
 Metzelthin - Jakobshagen: Qualität?	? 16156,85969 16221,86247 16293,86283 16299,86386 16405,86555 17060,86947 17760,87699 19179,88641 19396,88713
@@ -4722,10 +4724,6 @@ Ernst-Thälmann-Str. (Mahlow): Qualität?	? 11390,-5228 11439,-5233 11639,-5201 11
 Krügers Land (Mahlow): Qualität? Teilweise mit Radweg?	? 12085,-5114 12147,-5162 12241,-5186 12294,-5215 12583,-5521 12654,-5498 12769,-5423 12782,-5284
 Ibsenstr. (Mahlow): Qualität? Existiert ein Radweg?	? 12340,-4833 12307,-4851 12278,-4863 12212,-4968 12174,-5030 12085,-5114 11970,-5232 11922,-5279 11809,-5383 11691,-5503 11650,-5546 11608,-5585 11549,-5642 11512,-5679
 Anselm-Feuerbach-Str. (Mahlow): Qualität des südöstlichen Abschnitts?	? 12040,-4778 12212,-4968
-# 
-#: XXX wahrscheinlich Waldweg (Q1- oder Q2+?), wahrscheinlich unbeleuchtet, green2
-#: next_check: 2014-03-15 (im Herbst/Winter sind Waldwege schwierig zu überprüfen)
-Am Buchenberg - Schulzendorfer Str.: Qualität? Existiert eine Ausschilderung?	? 554,23349 224,23440 -38,23355 -190,23187 -404,23107 -417,23034 -573,23032 -656,23011
 # 
 Alte Feldmark (Kienwerder): Qualität? Im nördlichen Abschnitt auch unbefestigt?	? -4373,-3504 -4400,-3403 -4437,-3247
 # 
@@ -4811,13 +4809,11 @@ Am Uferpark (Potsdam): genaue Lage der Straße, Qualität?	? -13381,-2943 -13494,-
 #: XXX fehlt in Potsdam.coords.data, PLZ=14473
 Luisenhof (Potsdam): genaue Lage der Straße, Qualität?	? -13481,-2956 -13629,-2860
 # 
-(Rote Chaussee - Mauerweg): Waldweg, Qualität?	? 132,24390 -119,24350 -245,24377 -325,24454 -392,24467 -458,24445 -595,24441 -667,24463 -802,24541
-(Berliner Forst Tegel - Mauerweg): vermutlich ein Waldweg, Qualität?	? 644,24394 618,24445 615,24532 575,24601
-(Weg an Eschengraben, Haselgraben): Qualität? Verläuft hier die Reinickendorfer Radroute 3?	? -2165,22794 -2162,22855 -2125,22882 -2083,22982 -2271,23138
-(Weg am Wiesengraben): Qualität? Nachts beleuchtet? Verläuft hier eine Reinickendorfer Radroute? Gibt es Verbindungen zu allen anliegenden Straßen?	? -2165,22794 -2164,22629 -2245,22372 -1700,22223 -1679,22127 -1654,22119
-#: XXX_indoor: Verbindungspunkte fehlen!
-(Weg am Graben (Name?)): Qualität? Nachts beleuchtet?	? -1654,22119 -1647,22152 -1482,22104 -947,21737 -730,21668 -726,21683
-Reinickendorfer Route 3: genauer Streckenverlauf? Qualität?	? 2566,23584 2272,23574 2137,23626 2114,23720 2056,23749 1980,23711 1848,23679 1702,23692 1622,23726 1607,23777 1576,23785 1433,23738 1363,23746 1304,23736 1157,23752
+# REMOVED --- (Weg am Eschengraben): Qualität? Verläuft hier die Reinickendorfer Radroute 3?	? -2165,22794 -2162,22855 -2125,22882 -2076,22988 -2040,23061
+# REMOVED --- (Weg am Haselgraben): Qualität? Verläuft hier die Reinickendorfer Radroute 3?	? -2076,22988 -2142,23030 -2269,23147
+# REMOVED --- (Weg am Wiesengraben): Qualität? Nachts beleuchtet? Verläuft hier eine Reinickendorfer Radroute? Gibt es Verbindungen zu allen anliegenden Straßen?	? -2165,22794 -2165,22641 -2239,22442 -2246,22354
+# REMOVED --- (Weg am Wiesengraben): Qualität? Nachts beleuchtet? Verläuft hier eine Reinickendorfer Radroute? Gibt es Verbindungen zu allen anliegenden Straßen?	? -2194,22343 -2173,22351 -2052,22330 -1924,22282 -1792,22250 -1700,22223 -1679,22127
+(Weg am Grimbartgraben): Qualität? Nachts beleuchtet?	? -1647,22153 -1482,22104 -1398,22050 -1148,21872 -1023,21788 -947,21737 -795,21685 -726,21683
 Straßen in Döberitz: genaue Straßennamen, Qualität?	? -11635,13818 -11709,13476 -12032,13708 -12089,13741 -12596,13763 -12956,13814 -13017,13815 -13375,13807 -13371,13691 -13400,13622
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2014 (Ausbau zum Rad- und Gehweg)
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2015/vzb_0910_iv_auswertung_b_plan_10_15.pdf
@@ -4860,10 +4856,7 @@ Warsin - Rieth: mittlerweile fast vollständig asphaltiert, bis auf 2km Kiesstrec
 Warsin - Rieth: mittlerweile fast vollständig asphaltiert, bis auf 2km Kiesstrecke --- wo sind genau die asphaltierten und Kies-Abschnitte?	? 63921,144506 64011,144465 64156,144283 64319,144145 64608,143988 64776,143825
 #: by: ^^^
 # 
-#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20150330
-#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.312664.php
-#: next_check: 2015-04-01
-Mattenbuder Pfad: ist die Qualität der Fahrbahn nach der Fahrbahninstandsetzung besser geworden?	? -1755,22975 -1633,22950 -1506,22923
+# REMOVED --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20150330 --- #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.312664.php --- #: next_check: 2015-04-01 --- Mattenbuder Pfad: ist die Qualität der Fahrbahn nach der Fahrbahninstandsetzung besser geworden?	? -1755,22975 -1637,22949 -1506,22923
 # 
 Lebehn - Sonnenberg: Qualität?	? 71560,109273 71503,109298 71141,110053 70983,110262 70824,110507 70301,111160 70177,111280
 Sonnenberg - Schwennenz: Qualität?	? 70104,111261 70177,111280 70222,111382 70314,111471 70507,111490 71823,111642 72118,111731 72642,111642

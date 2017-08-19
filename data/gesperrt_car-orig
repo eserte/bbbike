@@ -826,7 +826,7 @@ Simmelstr.: keine Durchfahrt für Autos	3 * 7615,17684 *
 Lindauer Allee: Mittelstreifen	3nocross 7198,18575 7119,18582 6924,18599
 #: note: an der anderen Seite (Alt-Hermsdorf) ist auch ein Tor, welches aber nicht geschlossen war
 An den Fließtalhöfen: Tor, freier Durchgang für Fußgänger	3 * 4444,22989 *
-Oranienburger Str.: Mittelstreifen	3nocross 5441,20613 5463,20461 5475,20381
+Oranienburger Str.: Mittelstreifen	3nocross 5441,20613 5463,20461 5476,20372
 Sittestr.: Schranke, Verbot für alle Fahrzeuge	3 * 5850,19205 *
 Residenzstr.: Mittelstreifen	3nocross 7335,18257 7291,18392 7269,18460
 # by: Juliane (alberts...)
@@ -1160,3 +1160,10 @@ Hellersdorfer Str.: Durchfahrt nicht möglich	3 * 22981,13966 22987,13989
 # REMOVED --- #: osm_watch: way id="4434003" version="6"
 Egelingzeile	1 7980,6403 8194,6384
 (Falkenberger Chaussee - Darßer Str.): nur für Busse	2 16947,17506 16848,17530 16825,17537 16785,17524
+Im Waldwinkel	1 184,22257 231,22418
+#: confirmed_by: Wilfried Spang & srt: vvv
+#: corrected_by: srt (mittlerweile für Radfahrer offen) vvv
+Beyschlagstr.	1 21,22545 5,22384 184,22257
+Beyschlagstr.	1 408,22184 184,22257
+#: corrected_by ^^^
+#: confirmed_by ^^^

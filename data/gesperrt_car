@@ -1442,8 +1442,8 @@ Lindauer Allee -> Ragazer Str.: Mittelstreifen	3::igndisp 7198,18575 7119,18582 
 Ragazer Str. -> Lindauer Allee: Mittelstreifen	3::igndisp 7035,18413 7119,18582 6924,18599
 An den Fließtalhöfen: Tor, freier Durchgang für Fußgänger	3 4403,22981 4444,22989 4432,23066
 An den Fließtalhöfen: Tor, freier Durchgang für Fußgänger	3 4432,23066 4444,22989 4403,22981
-Mittelstreifen	3nocross::ignrte 5441,20613 5463,20461 5475,20381
-Oranienburger Str. -> Frommpromenade: Mittelstreifen	3::igndisp 5475,20381 5463,20461 5350,20495
+Mittelstreifen	3nocross::ignrte 5441,20613 5463,20461 5476,20372
+Oranienburger Str. -> Frommpromenade: Mittelstreifen	3::igndisp 5476,20372 5463,20461 5350,20495
 Frommpromenade -> Oranienburger Str.: Mittelstreifen	3::igndisp 5350,20495 5463,20461 5441,20613
 Sittestr.: Schranke, Verbot für alle Fahrzeuge	3 5830,19206 5850,19205 5869,19212
 Sittestr.: Schranke, Verbot für alle Fahrzeuge	3 5869,19212 5850,19205 5830,19206
@@ -1892,3 +1892,6 @@ Hellersdorfer Str.: Durchfahrt nicht möglich	3 22943,13822 22981,13966 22987,139
 (Neukladower Allee - Gutspark Neukladow): nur für Anlieger	2 -6319,5606 -6246,5562 -6125,5447 -6112,5406
 Egelingzeile	1 7980,6403 8194,6384
 (Falkenberger Chaussee - Darßer Str.): nur für Busse	2 16947,17506 16848,17530 16825,17537 16785,17524
+Im Waldwinkel	1 184,22257 231,22418
+Beyschlagstr.	1 21,22545 5,22384 184,22257
+Beyschlagstr.	1 408,22184 184,22257

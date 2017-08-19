@@ -1105,7 +1105,7 @@ EOF
        text  => 'Ruppiner Chaussee (Hennigsdorf) Kreuzung Hennigsdorfer Straße wegen Bauarbeiten gesperrt (bis 17.10.2004)',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4 -1872,24336 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746
+userdel	q4 -1872,24336 -1746,24219 -1627,24105 -1373,23844 -1286,23753 -1281,23746
 userdel	q4 -1872,24336 -1896,24275 -1940,24176
 userdel	q4 -1872,24336 -1953,24435
 EOF
@@ -3736,7 +3736,7 @@ EOF
        text  => 'Berlin-Lübars: Am Freibad in beiden Richtungen Wasser auf der Fahrbahn, gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2 5727,23485 5316,23661
+userdel	2 5727,23485 5312,23653
 EOF
      },
      { from  => undef, # 
@@ -18742,7 +18742,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20101105.1400.317649.html',
        data  => <<EOF,
-userdel	q4::inwork; 7843,18705 7785,18730 7676,18713 7599,18705 7520,18701 7492,18699 7434,18695 7217,18681
+userdel	q4::inwork; 7843,18705 7785,18730 7676,18713 7599,18705 7520,18701 7492,18699 7434,18695 7209,18682
 EOF
      },
      { from  => 1289156455, # 2010-11-07 20:00
@@ -20005,7 +20005,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110929.0810.360313.html',
        data  => <<EOF,
-userdel	2::inwork 872,24330 865,24114 793,24070 736,24068 601,24192 237,24374 195,24389 132,24390 78,24364 -406,23934
+userdel	2::inwork 872,24330 865,24114 793,24070 736,24068 601,24192 237,24374 195,24389 160,24390 132,24390 78,24364 -406,23934
 EOF
      },
      { from  => $isodate2epoch->("2017-09-14 00:00:00"), # PERIODISCH, ca. 2. Wochenende im September
@@ -20326,7 +20326,7 @@ EOF
 #: osm_watch: way id="23243508" version="40"
 #: note: Radfahrer dürfen offiziell in Gegenrichtung fahren
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20131206.0905.392490.html (neues Ende)
-userdel	q2::inwork; -1872,24336 -1746,24219 -1627,24105 -1367,23853 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
+userdel	q2::inwork; -1872,24336 -1746,24219 -1627,24105 -1373,23844 -1286,23753 -1281,23746 -1084,23564 -997,23492 -984,23480 -903,23406 -783,23190 -656,23011
 EOF
      },
      { from  => undef, # 1329631200, # 2012-02-19 07:00
@@ -22965,7 +22965,7 @@ EOF
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1404/nachricht5249.html',
        data  => <<EOF,
 #: XXX eigentlich falsch positioniert, aber temp_blockings auf fragezeichen-Strecken geht wohl nicht (ungetestet)
-userdel	2::inwork 554,23349 664,23416
+userdel	2::inwork 558,23359 664,23416
 EOF
      },
      { from  => 1399586400, # 2014-05-09 00:00
@@ -24786,7 +24786,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.385612.php',
        data  => <<EOF,
-userdel	q4::inwork 4681,23273 4704,23278 4744,23289 4910,23490 5006,23575
+userdel	q4::inwork 4681,23273 4704,23278 4744,23289 4910,23490 4963,23541
 EOF
      },
      { from  => 1445119200, # 2015-10-18 00:00
@@ -26438,7 +26438,29 @@ EOF
        text  => 'Palisadenstr.: Bauarbeiten, Einbahnstraße zwischen Friedenstr. und Koppenstr., offen in Richtung Osten, bis zum 16. Oktober 2017',
        type  => 'handicap',
        data  => <<EOF,
+#: last_checked: 2017-08-19
 userdel	q3::inwork; 12866,12582 12843,12567 12632,12630
+EOF
+     },
+     { from  => 1503155608, # 2017-08-19 17:13
+       until => 1519858799, # 2018-02-28 23:59
+       text  => 'Cyclopstr.: Einbahnstraße während der Bauarbeiten in der Oranienburger Str., voraussichtlich bis 28. Februar 2018',
+       type  => 'handicap',
+       source_id => '2147341699',
+       data  => <<EOF,
+userdel	q4::inwork; 5349,21198 5297,21243
+userdel	q4::inwork; 5053,21452 5000,21488 4810,21730
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'S-Bahn-Unterführung gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: osm_watch: way id="463642095" version="2"
+#: last_checked: 2017-08-19
+#: next_check: 2017-12-31
+userdel	2::inwork 4117,22722 4176,22764
 EOF
      },
     );

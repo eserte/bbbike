@@ -1262,12 +1262,18 @@ Gut Neukladow	culdesac_pseudo -6112,5406
 	culdesac -7327,4337
 	culdesac -7266,4361
 	culdesac_pseudo -7780,4363
+#: note: querlaufender Pfad im Wald existiert (laut osm)
 	culdesac 29218,1580
+#: note: weitergehender Weg existiert (laut osm)
 	culdesac 29118,1660
+#: note: querlaufender Pfad im Wald existiert (laut osm)
 	culdesac 29357,2113
+#: note: querlaufender Pfad im Wald existiert (laut osm)
 	culdesac 29450,2040
+#: note: querlaufender Pfad im Wald existiert (laut osm)
 	culdesac 29546,1968
-	culdesac 29074,1410
+#: note: querlaufender Pfad im Wald existiert (laut osm)
+	culdesac_pseudo 29074,1410
 	culdesac 29188,1086
 	culdesac 28892,844
 	culdesac 28854,757
@@ -1277,11 +1283,29 @@ Gut Neukladow	culdesac_pseudo -6112,5406
 	culdesac 23762,14009
 	culdesac -3616,1877
 	culdesac 12483,1160
-	culdesac 12535,1278
+#: note: weitergehende Wege existieren
+	culdesac_pseudo 12535,1278
+	culdesac_pseudo -2058,22300
+	culdesac_pseudo -1928,22265
+	culdesac_pseudo -1796,22233
+	culdesac -2194,22343
+#: note: weitergehende Wege existieren
+	culdesac_pseudo -2159,22990
+	culdesac -2284,22847
+	culdesac -2376,22862
+	culdesac -2383,22830
+#: note: Pfad in den Wald hinein existiert (laut osm)
+	culdesac_pseudo 642,24471
+#: note: abgeschlossenes Tor
+	culdesac 3513,23596
+	culdesac -113,22451
+	culdesac 2975,23330
+	culdesac -1789,21882
 # 
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo 2875,22747
 	culdesac_pseudo 2353,8065
 	culdesac_pseudo 17676,7555
 	culdesac_pseudo 3699,12290
@@ -1593,7 +1617,7 @@ Weiterfahrt in den Friedhof möglich	culdesac_pseudo 2387,10131
 	culdesac_pseudo 5713,18739
 	culdesac_pseudo 5792,18727
 	culdesac_pseudo 2150,22464
-	culdesac_pseudo 6563,21425
+	culdesac_pseudo 6555,21429
 	culdesac_pseudo 30133,-3840
 	culdesac_pseudo 1661,18161
 #: note: von beiden Seiten

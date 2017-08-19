@@ -482,7 +482,7 @@ BMW-Betriebswerk	2 -1993,14594 -1768,14605 -1564,14489
 Heimat	1 1032,1325 994,1485 968,1479 941,1603
 #: by: MIchael Wedel:
 #: confirmed_by: srt
-Techowpromenade	1 5219,20467 5185,20358 5173,20275 5170,20182
+Techowpromenade	1 5218,20471 5185,20358 5173,20275 5170,20182
 (Kastanienallee - Schönhauser Allee)	1 10884,14952 10838,14962
 Kastanienallee	1 10838,14962 10881,15047
 Lossebergplatz	1 16070,23566 16094,23554 16095,23539 16079,23535 16064,23547 16070,23566
@@ -885,10 +885,6 @@ Saaleckplatz	1s:q3 5162,1110 5178,1123
 Saaleckplatz	1 5178,1123 5190,1114 5212,1074 5204,1057
 # REMOVED (Tunnel wird zurückgebaut) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1011/nachricht4142.html --- #: note: geschlossen ab 2012-12-01, kein Wiedereröffnungstermin --- Fußgängertunnels Sybel-Waitz-Str.: provisorische Schließung	2 3712,10566 3731,10563 3759,10567 3764,10580
 Meyerinckplatz	1 4030,10575 4007,10559 3981,10590 3997,10607
-#: by: osm
-#: confirmed_by: Wilfried Spang & srt:
-Beyschlagstr.	1 21,22545 5,22384 184,22257
-Beyschlagstr.	1 408,22184 184,22257
 Upsalaer Str.	1 11369,16744 11364,16887
 Fritz-Erpenbeck-Ring	1 9717,19692 9697,19758 9708,19779 9785,19807 9864,19793
 #: note: Außerdem (für die Anwohner) eine Einbahnstraße, offen von Waldstr. nach Kuckhoffstr.
@@ -928,10 +924,9 @@ Jüdenstr. (Spandau)	1 -3243,14633 -3316,14504 -3350,14446
 #: by: HEK:
 Hochbergplatz	1 4818,2279 4824,2266 4813,2256 4803,2257 4796,2271 4803,2280 4818,2279
 #: by: ollivero: vvv
-Jathoweg	1 5259,20186 5266,20299 5307,20437
+Jathoweg	1 5259,20186 5266,20299 5305,20431
 Taldorfer Weg	1 5170,20182 5259,20186 5506,20197
 #: by: ^^^
-Im Waldwinkel	1 184,22257 238,22412
 Im Erpelgrund	1 -428,21933 -629,21975 -827,22039 -973,22117
 Im Erpelgrund	1 -973,22117 -786,22110 -735,22103 -586,22064 -403,21991
 Krumpuhler Weg: nur Mo-Do von 8-16 Uhr und Fr von 8-14 Uhr geöffnet	2 1377,18602 1302,18398
@@ -1035,7 +1030,7 @@ Desideriusweg	1 2830,21378 2728,21336
 Am Ansitz	1 3913,21977 3855,22055
 Am Vierrutenberg etc.	1 5712,23785 5676,23971 5780,23997 5792,23943 5787,23840 5712,23785
 #: XXX_prog: eigentlich keine Einbahnstraße, allerdings dürfte aus der Gegenrichtung das Überqueren der Straße zu umständlich sein...
-(Parkplatz Residenzstr. - Kopenhagener Str.)	1::igndisp 7204,18634 7233,18562
+(Parkplatz Residenzstr. - Kopenhagener Str.)	1::igndisp 7197,18639 7233,18562
 #: note: eigentlich keine Einbahnstraße, aber in der Praxis wird man immer gegen der Uhrzeigersinn fahren
 Schmiedebankplatz	1 16165,23168 16114,23202 16122,23219 16141,23243 16243,23174 16229,23150 16218,23134 16165,23168
 IKEA-Parkplatz	1 7834,7131 7924,7185 8020,7185
@@ -2302,8 +2297,7 @@ Poller	BNP:1::trailer=6 8350,10662
 Drängelgitter	BNP:3::trailer=10 10062,15927
 #: next_check_id: LORTZING-2014
 #: XXX eventuell temporär wegen der Baustraße
-#: XXX siehe auch in zebrastreifen
-#: last_checked: 2017-07-14
+#: last_checked: 2017-08-19
 #: check_frequency: 120d
 zwei Drängelgitter	BNP:6::trailer=15 10038,15418
 Schranke	BNP:3 -7969,-1659
@@ -3612,7 +3606,7 @@ tragen (insgesamt 16 Stufen, auf vier Gruppen verteilt)	0:40 14581,16529
 Blumenweg	1 -9445,-2389 -9343,-2087
 Golliner Str.	1 22217,17989 22276,18107 22191,18150
 Schorfheidestr.	1s 21900,18215 21869,18227
-Jagowstr. (Hermsdorf)	1 3046,22292 3043,22407 3050,22554 3056,22693
+Jagowstr. (Hermsdorf)	1 3046,22292 3043,22407 3050,22554 3055,22697
 Hagenstr. (Lichtenberg)	1 16957,12599 16933,12432 16918,12325
 Gehrenseestr.	1 18494,16750 18324,16625
 tragen	0:60 18475,16761

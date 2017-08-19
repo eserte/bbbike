@@ -4156,13 +4156,37 @@ userdel	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
          'until' => 1503673200
        },
        {
-         'data' => 'userdel	q3::inwork; 12866,12582 12843,12567 12632,12630
+         'data' => '#: last_checked: 2017-08-19
+userdel	q3::inwork; 12866,12582 12843,12567 12632,12630
 ',
          'from' => 1503081615,
          'id' => 2900,
          'text' => 'Palisadenstr.: Bauarbeiten, Einbahnstraße zwischen Friedenstr. und Koppenstr., offen in Richtung Osten, bis zum 16. Oktober 2017',
          'type' => 'handicap',
          'until' => 1508191199
+       },
+       {
+         'data' => 'userdel	q4::inwork; 5349,21198 5297,21243
+userdel	q4::inwork; 5053,21452 5000,21488 4810,21730
+',
+         'from' => 1503155608,
+         'id' => 2901,
+         'source_id' => '2147341699',
+         'text' => 'Cyclopstr.: Einbahnstraße während der Bauarbeiten in der Oranienburger Str., voraussichtlich bis 28. Februar 2018',
+         'type' => 'handicap',
+         'until' => 1519858799
+       },
+       {
+         'data' => '#: osm_watch: way id="463642095" version="2"
+#: last_checked: 2017-08-19
+#: next_check: 2017-12-31
+userdel	2::inwork 4117,22722 4176,22764
+',
+         'from' => undef,
+         'id' => 2902,
+         'text' => 'S-Bahn-Unterführung gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );
