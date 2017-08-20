@@ -578,8 +578,8 @@ Königsweg: Waldweg, mäßig bis OK	Q2+ -3161,975 -3407,834 -3511,776 -4184,400 -42
 Königsweg: Asphalt	Q0 -1082,2140 -1278,2034 -1296,2025
 # REMOVED (fertig) --- #: XXX Instandsetzung, wird neu asphaltiert --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.364590.php --- #: last_checked: 2015-09-27 --- #: check_frequency: 30d
 Königsweg: Asphalt	Q0 -1296,2025 -1309,2017 -1591,1861 -1650,1826 -1724,1785 -1805,1740 -1889,1693 -1950,1659 -2043,1608 -2602,1291
-# REMOVED --- Sonntagstr.: Kopfsteinpflaster	Q2 14434,11465 14535,11327 14598,11245 14669,11152 14752,11041 14810,10977
-Ostkreuz: Asphalt	Q0 14810,10977 14845,10954
+# REMOVED --- Sonntagstr.: Kopfsteinpflaster	Q2 14434,11465 14535,11327 14598,11245 14669,11152 14752,11041 14808,10978
+Ostkreuz: Asphalt	Q0 14808,10978 14845,10954
 Simplonstr.: Kopfsteinpflaster	Q2 13996,11631 13992,11605 14031,11569 14049,11553 14099,11505 14181,11434 14254,11377 14328,11320 14369,11287 14400,11261 14468,11203
 Simplonstr.: Asphalt	Q0 14468,11203 14531,11142
 Simplonstr.: Kopfsteinpflaster	Q2 14531,11142 14605,11078 14639,11051 14682,11037 14712,11039 14752,11041
@@ -5881,14 +5881,14 @@ Straße 41 (Müggelheim): fester Sandweg	Q2 30259,2396 30504,2798
 Zu den Müggelheimer Wiesen: Asphalt	Q0 29414,2373 29740,2454 29924,2520 29977,2511
 Zur Fähre: Asphalt	Q0 29968,2986 29985,2917 30014,2781 29977,2511
 Zu den Müggelheimer Wiesen [1-29]: teils fester, teils loser Sandweg	Q2- 30259,2396 30070,2470
-Zu den Müggelheimer Wiesen [1-29]: fester Sandweg, holprig	Q2 30070,2470 29996,2503 29977,2511
-Am Bauersee (Müggelheim): Asphalt	Q0 29958,2877 29985,2917 30035,2923
+Zu den Müggelheimer Wiesen [1-29]: fester Sandweg, holprig	Q2 30070,2470 29977,2511
+Am Bauersee (Müggelheim): Asphalt	Q0 29940,2852 29985,2917 30035,2923
 Straße 34 (Müggelheim): fester, holpriger Sandweg	Q2 30035,2923 30090,2923 30184,2888 30249,2848
 Straße 36 (Müggelheim): unbefestigter Weg, zweispurig	Q2 30047,2782 30090,2923
 Straße 36 (Müggelheim): Gras	Q3 30090,2923 30124,3011
 Straße 37: unbefestigter Weg	Q2 30131,2766 30184,2888 30237,2984
 Straße 38 (Müggelheim): unbefestigter Weg	Q2 30208,2757 30249,2848 30321,2982
-(Schönhorster Str. - Zur Fähre): Waldweg	Q2 30003,2406 30007,2442 29996,2503
+(Schönhorster Str. - Zur Fähre): Waldweg	Q2 30003,2406 30070,2470
 Straße 34 (Müggelheim): unbefestigte Straße	Q2 31113,2548 30964,2556
 Siedlung Schönhorst (Spreestr.): unbefestigte Straße	Q2 30944,2166 31093,2455 31115,2502 31113,2548
 Siedlung Schönhorst (Wiesenstr.): unbefestigte Straße	Q2 31093,2455 31016,2456 30923,2501 30755,2522
@@ -10271,7 +10271,8 @@ Kirchdorfer Str.: Asphalt	Q0 19842,9895 19858,9784 19871,9680
 Ahornallee [Privatstraße] (Mahlsdorf): Asphalt	Q0 24513,9796 24527,9850 24637,9828
 Theodorstr. [31-37c] (Mahlsdorf): Asphalt	Q0 24925,10762 24747,10806
 Kaiserkorso: Asphalt mit Schäden	Q1; 9128,8251 9128,8414
-(provisorischer Zugang zum Bahnhof Ostkreuz): Asphalt	Q0 14712,11039 14727,11005 14810,10977
+(provisorischer Zugang zum Bahnhof Ostkreuz): Asphalt	Q0 14712,11039 14727,11005 14808,10978
+(provisorischer Zugang zum Bahnhof Ostkreuz): Asphalt	Q0 14811,11067 14808,10978
 Alfonsstr.: Asphalt	Q0 19083,1243 18998,1349 19027,1427 19034,1441 19061,1457
 Traudelstr.: Verbundsteinpflaster	Q1+ 19027,1427 19169,1249 19140,1137
 Rainweg [Stichstraße]: Verbundsteinpflaster	Q1 25028,-2846 24977,-2753

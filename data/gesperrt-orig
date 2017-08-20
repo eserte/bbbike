@@ -2795,6 +2795,10 @@ Drängelgitter	BNP:3::trailer=10 3783,-2079
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2017-08-20
+#: next_check: 2017-12-10
+provisorischer Zugang zum S-Bhf. Ostkreuz: Ausgang Simplonstraße ist gesperrt	2::inwork 14712,11039 14727,11005 14808,10978
+# 
 #: by: http://www.dafmap.de/d/berlin.html?center=52.434534+13.536709&zoom=18# (Projektabschluss: 2019-04-30)
 #: osm_watch: way id="448097237" version="1"
 #: last_checked: 2017-08-17
@@ -3019,7 +3023,7 @@ Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2:inwork 14447,10491 14270,10
 Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17453,7451 17295,7344 17211,7280 17091,7175 16971,7058 16747,6813
 # 
 # REMOVED (laut osm nicht mehr highway=construction) --- #: osm_watch: way id="291810047" version="7" --- #: last_checked: 2016-07-23 --- Alfonsstr.: Bauzäune	2::inwork 19027,1427 19034,1441 19061,1457
-# REMOVED (komplett entfernt) --- #: last_checked: 2016-09-26 --- #: check_frequency: 90d --- Sonntagstr./Ostkreuz: wegen Bauarbeiten gesperrt	2::inwork 14752,11041 14810,10977
+# REMOVED (komplett entfernt) --- #: last_checked: 2016-09-26 --- #: check_frequency: 90d --- Sonntagstr./Ostkreuz: wegen Bauarbeiten gesperrt	2::inwork 14752,11041 14808,10978
 # 
 # REMOVED (Autos parken hier schon) --- #: XXX nach den Bauarbeiten vermutlich Verbundsteinpflaster --- #: last_checked: 2016-12-04 --- Döringstr.: Bauarbeiten, keine Durchfahrt möglich	2::inwork 14400,11261 14357,11148
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 vvv --- #: last_checked: 2016-06-02 vvv --- #: check_frequency: 14d vvv --- Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12844,9351 12851,9309 12907,9073 --- Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12907,9073 12851,9309 12844,9351

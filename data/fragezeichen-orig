@@ -392,7 +392,7 @@ Fürstenwalder Allee: Baumaßnahmen (Radspuren?)	?::projected; 31632,3297 31447,33
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf vvv
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (Maßnahmen Ah.3 + Nsw.6)
-#: last_checked: 2017-08-04 vvv
+#: last_checked: 2017-08-20 vvv
 #: check_frequency: 60d vvv
 Oberspreestr.: Lückenschluss (Radweg?)	?::projected; 20949,4775 20765,4839 20689,4862
 Oberspreestr.: Lückenschluss (Radweg?)	?::projected; 20383,4963 19965,5101 19737,5176 19715,5185 19632,5211 19534,5242 19445,5271
@@ -523,6 +523,7 @@ Salvador-Allende-Str. - Müggelseedamm: Verbesserung der Befahrbarkeit, Bau einer
 #: next_check: 2019-06-01
 Regattastr.: wird die Benutzungspflichtig aufgehoben?	?::projected 22328,2084 22378,1970 22388,1947 22421,1872 22448,1824 22455,1812 22549,1644 22570,1607 22655,1450
 #: XXX Jt.1
+#: last_checked: 2017-08-20
 #: next_check: 2018-06-01
 Sterndamm: Errichten einer Radverkehrsanlage	?::projected 17648,5338 17736,5441 17886,5587
 #: XXX Jt.2
@@ -623,13 +624,14 @@ Rudolf-Rühl-Allee: Einrichten einer Radverkehrsanlage (Ostseite) bzw. Radfahren 
 #: next_check: 2020-06-01
 Wilhelminenhofbrücke: geplant, mit Radverkehrsanlage nördlich der Brücke	?::projected 19177,5560 19184,5320
 #: XXX Rd.1
-#: last_checked: 2017-08-07
+#: last_checked: 2017-08-20
 #: next_check: 2018-06-01
 Ingeborg-Hunzinger-Str./Straße nach Fichtenau: Einrichten einer Radverkehrsanlage (Zweirichtungsradweg, West- oder Ostseite)	?::projected 29714,4461 29712,4548 29705,4987 29832,5065 29898,5149 30038,5338 30074,5402 30090,5446 30331,5410 30410,5450 30760,5824
 #: XXX Rd.5
 #: next_check: 2018-06-01
 Fürstenwalder Allee: Einrichten einer Radverkehrsanlage	?::projected; 30748,3658 30993,3557 31139,3497 31366,3404 31447,3372 31632,3297
 #: XXX Rd.7
+#: last_checked: 2017-08-20
 #: next_check: 2019-06-01
 Hegemeisterweg/Woltersdorfer Weg: Herstellen eines fahrradfreundlichen Belags	?::projected 30074,5402 30077,5331 30081,5231 30081,5220 30099,4732 30092,4666 29982,4525 29930,4455 29813,4314
 #: XXX Sw.7
@@ -1677,7 +1679,7 @@ Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rumm
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5758 (Bauarbeiten beginnen erst 2019)
 #: osm_watch: way id="46039447" version="14"
 #: osm_watch: way id="456120288" version="2"
-#: last_checked: 2017-07-27
+#: last_checked: 2017-08-20
 #: next_check: 2019-03-01
 Treskowallee: Bau von Radwegen	?::projected; 18704,8427 18731,8577 18733,8633
 # 
@@ -1937,7 +1939,7 @@ Friesenstr.: Asphaltierung geplant	?::projected 9801,8683 9801,8889 9799,8962 97
 # 
 # REMOVED (keine Busspur-Schilder mehr) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5838 --- #: last_checked: 2017-06-22 --- Sachsendamm: für Radfahrer freigegebene Busspur wird zurückgebaut	?::projected; 7193,7950 7147,8000
 # 
-#: last_checked: 2017-08-04
+#: last_checked: 2017-08-20
 #: check_frequency: 7d
 #: XXX: Anforderungsampel
 Schnellerstr.: neue Fußgängerampel in Bau	?::inwork 17628,5865
@@ -3102,8 +3104,8 @@ Mauerpark: Umbauarbeiten, gibt es schon Einschränkungen oder Veränderungen?	?::p
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.490765.php
 #: XXX Bebauungsplan 11-47b
 #: by: http://www.dafmap.de/d/berlin.html?id=5129&mt=0&zoom=16 (Projektabschluss: 2021-12-31)
-#: last_checked: 2017-08-07
-#: next_check: 2018-09-01
+#: last_checked: 2017-08-20
+#: check_frequency: 720d
 Karlshorst-West: neues Wohngebiet wird entstehen, auch neue Straßen	?::projected 17404,8844 17722,8831 17865,8766 17751,8312 17627,8379 17492,8649 17404,8844
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6932

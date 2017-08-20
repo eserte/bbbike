@@ -27,7 +27,7 @@ Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::i
 #: last_checked: 2017-08-19
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3 14254,11377 14211,11229
 # 
-#: last_checked: 2017-08-15
+#: last_checked: 2017-08-20
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
 #: last_checked: 2017-08-18
@@ -636,7 +636,7 @@ Am Stichkanal: Fuﬂg‰nger	q1 22832,4491 22814,4505 22797,4518 22702,4592 22585,46
 Am Stichkanal: Fuﬂg‰nger	q1 22759,4430 22797,4518
 Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10354,14987 10240,15318 10188,15474 10185,15487 10130,15647
 (Fuﬂweg am Griesinger-Krankenhaus): Fuﬂg‰nger	q1 21935,12153 21930,12185 21608,12320 21435,12390 21346,12427 21265,12468 21221,12484
-# REMOVED (die Nicht-Existenz sollte auch durch Nicht-Existenz auf der Karte reflektiert werden) --- (Fuﬂg‰ngerbr¸cke Ostkreuz): Fuﬂg‰nger	q3 14810,10977 14787,10972 14764,10877 14794,10844
+# REMOVED (die Nicht-Existenz sollte auch durch Nicht-Existenz auf der Karte reflektiert werden) --- (Fuﬂg‰ngerbr¸cke Ostkreuz): Fuﬂg‰nger	q3 14808,10978 14787,10972 14764,10877 14794,10844
 (Ringbahnsteig Ostkreuz): Fuﬂg‰nger	q4 14794,10844 14839,10853 14862,10942 14845,10954
 Marheinekeplatz: Fuﬂg‰nger, Brunnen	q3 9892,9286 9880,9233
 #: note: zumindest auf der westlichen Seite existiert kein explizites Verbotsschild f¸r Radfahrer
@@ -1184,8 +1184,9 @@ Uferweg: Fuﬂg‰nger, Biergarten	q3 3747,12679 3862,12675
 Uferweg: Fuﬂg‰nger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
 (Neues Ufer - Kaiserin-Augusta-Allee): Fuﬂg‰nger	q1 4456,12918 4514,12936 4581,13066 4576,13115 4547,13139 4561,13244
 # REMOVED (keine Fahrbahn mehr, nur der obere Uferweg) --- Bundesratufer: Fuﬂg‰nger	q4 5938,12848 5922,12765
-# REMOVED --- Sonntagstr.: Richtung S-Bahnhof viele Fuﬂg‰nger	q3 14845,10954 14810,10977 14752,11041
-(provisorischer Zugang zum Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fuﬂg‰nger	q3 14712,11039 14727,11005 14810,10977 14845,10954
+# REMOVED --- Sonntagstr.: Richtung S-Bahnhof viele Fuﬂg‰nger	q3 14845,10954 14808,10978 14752,11041
+(provisorischer Zugang zum Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fuﬂg‰nger	q3 14712,11039 14727,11005 14808,10978 14845,10954
+(provisorischer Zugang zum Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fuﬂg‰nger	q3 14811,11067 14808,10978
 # zeitweise entfernt --- #: XXX_prog: f¸r Anh‰nger relevant (q1 oder so) --- BouchÈstr.: Bodenschwellen	q0 13489,9456 13357,9313
 #: XXX_prog: f¸r Anh‰nger relevant (q1 oder so)
 BouchÈstr.: Bodenschwellen	q0 13642,9624 13865,9866

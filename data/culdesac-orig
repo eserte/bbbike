@@ -1301,6 +1301,16 @@ Gut Neukladow	culdesac_pseudo -6112,5406
 	culdesac -113,22451
 	culdesac 2975,23330
 	culdesac -1789,21882
+nördliches Sackgassenende	culdesac 30124,3011
+nördliches Sackgassenende	culdesac 30237,2984
+nördliches Sackgassenende	culdesac 30321,2982
+südliches Sackgassenende	culdesac 30208,2757
+südliches Sackgassenende	culdesac 30131,2766
+#: note: laut osm geht es hier weiter
+südliches Ende	culdesac_pseudo 30047,2782
+	culdesac 30504,2798
+#: note: laut osm geht es hier weiter
+südwestliches Ende	culdesac_pseudo 29940,2852
 # 
 ######################################################################
 # culdesac entries which should remain invisible

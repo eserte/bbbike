@@ -21013,11 +21013,11 @@ EOF
 userdel	q4::inwork; 9275,4672 9405,4667 9494,4658 9695,4638 10010,4606
 EOF
      },
-     { from  => $isodate2epoch->("2016-09-19 06:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-09-22 12:00:00"), #
+     { from  => $isodate2epoch->("2017-09-18 06:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-09-20 06:00:00"), #
        periodic => 1,
        recurrences => [['yearly', days => 19, months => 9]],
-       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon gesperrt, ab 20.09.2016',
+       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon gesperrt, voraussichtlich ab 19.09.2017',
        type  => 'gesperrt',
        data  => <<EOF,
 #: tempex: 20160920T0600-20160922T0600 vvv
@@ -21027,11 +21027,11 @@ userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,1224
 #: tempex ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2016-09-21 06:00:00"),
-       until => $isodate2epoch->("2016-09-26 06:00:00"),
+     { from  => $isodate2epoch->("2017-09-20 06:00:00"),
+       until => $isodate2epoch->("2017-09-25 06:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 19, months => 9]],
-       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, bis 26.09.2016',
+       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, voraussichtlich bis 25.09.2017',
        type  => 'gesperrt',
        data  => <<EOF,
 #: tempex: 20160922T0600-T20160926T0600 vvv
@@ -26438,7 +26438,7 @@ EOF
        text  => 'Palisadenstr.: Bauarbeiten, Einbahnstraße zwischen Friedenstr. und Koppenstr., offen in Richtung Osten, bis zum 16. Oktober 2017',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2017-08-19
+#: last_checked: 2017-08-20
 userdel	q3::inwork; 12866,12582 12843,12567 12632,12630
 EOF
      },

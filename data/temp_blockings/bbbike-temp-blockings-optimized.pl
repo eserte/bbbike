@@ -2887,8 +2887,68 @@ userdel	2::night 14838,11410 14792,11391
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => '#: tempex: 20160920T0600-20160922T0600 vvv
+userdel	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+#: tempex ^^^
+',
+         'from' => 1505707200,
+         'id' => 2387,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              19,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon gesperrt, voraussichtlich ab 19.09.2017',
+         'type' => 'gesperrt',
+         'until' => 1505880000
+       },
+       {
+         'data' => '#: tempex: 20160922T0600-T20160926T0600 vvv
+userdel	2::temp 8573,12325 8540,12420
+userdel	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+userdel	2::temp 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+userdel	2::temp 8119,12414 8055,12186
+userdel	2::temp 8538,12245 8522,12239 8466,12197
+userdel	2::temp 8538,12245 8522,12187
+userdel	2::temp 8546,12279 8391,12389 8354,12416
+userdel	2::temp 8119,12414 8354,12416 8400,12417 8540,12420
+userdel	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
+userdel	3 7429,12070 7383,12095 7031,12320
+userdel	3 7031,12320 7383,12095 7429,12070
+userdel	3 7823,12120 7816,12150 7822,12201 7875,12363
+userdel	3 7875,12363 7822,12201 7816,12150 7823,12120
+userdel	2::temp 8119,12414 8122,12603 8207,12606 8306,12609 8348,12609 8399,12610 8485,12612
+userdel	2::temp 8207,12606 8206,12757
+userdel	3 7945,12592 8122,12603 8120,12756
+userdel	3 8120,12756 8122,12603 7945,12592
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+#: tempex ^^^
+',
+         'from' => 1505880000,
+         'id' => 2388,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              19,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, voraussichtlich bis 25.09.2017',
+         'type' => 'gesperrt',
+         'until' => 1506312000
+       },
        undef,
        undef,
        undef,
@@ -4156,7 +4216,7 @@ userdel	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
          'until' => 1503673200
        },
        {
-         'data' => '#: last_checked: 2017-08-19
+         'data' => '#: last_checked: 2017-08-20
 userdel	q3::inwork; 12866,12582 12843,12567 12632,12630
 ',
          'from' => 1503081615,
