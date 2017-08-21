@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.28;
+$VERSION = 1.29;
 
 use vars qw(%images);
 
@@ -143,6 +143,11 @@ sub register {
 	  callback => sub { showmap_mapillary(@_) },
 	  callback_3_std => sub { showmap_url_mapillary(@_) },
 	  ($images{Mapillary} ? (icon => $images{Mapillary}) : ()),
+	};
+    $main::info_plugins{__PACKAGE__ . 'OpenStreetCam'} =
+	{ name => 'OpenStreetCam',
+	  callback => sub { showmap_openstreetcam(@_) },
+	  callback_3_std => sub { showmap_url_openstreetcam(@_) },
 	};
     $main::info_plugins{__PACKAGE__ . '_AllMaps'} =
 	{ name => 'All Maps',
@@ -836,6 +841,23 @@ sub showmap_url_mapillary {
 sub showmap_mapillary {
     my(%args) = @_;
     my $url = showmap_url_mapillary(%args);
+    start_browser($url);
+}
+
+######################################################################
+# OpenStreetCam
+
+sub showmap_url_openstreetcam {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    sprintf "https://www.openstreetcam.org/map/@%s,%s,%dz", $py, $px, $scale;
+}
+
+sub showmap_openstreetcam {
+    my(%args) = @_;
+    my $url = showmap_url_openstreetcam(%args);
     start_browser($url);
 }
 
