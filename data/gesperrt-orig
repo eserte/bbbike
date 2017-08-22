@@ -295,7 +295,7 @@ Große Präsidentenstr.	1 10105,13004 10220,13098
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf
 #: XXX evtl wird die Straße für Radfahrer geöffnet
 #: osm_watch: way id="12307305" version="4"
-#: last_checked: 2017-07-24
+#: last_checked: 2017-08-22
 #: check_frequency: 60d
 Naumannstr.	1 7709,8777 7707,8915
 Gritznerstr.	1 4511,6318 4555,6403
@@ -322,7 +322,7 @@ Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf
 #: XXX evtl wird die Straße für Radfahrer geöffnet
 #: osm_watch: way id="5110895" version="5"
-#: last_checked: 2017-08-10
+#: last_checked: 2017-08-22
 #: check_frequency: 60d
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7606,8598 7643,8634 7682,8598 7644,8560
@@ -2795,6 +2795,11 @@ Drängelgitter	BNP:3::trailer=10 3783,-2079
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: RUEDERSDORFER-2017
+#: last_checked: 2017-08-22
+#: check_frequency: 14d
+Rüdersdorfer Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 13066,11854 13173,11788 13295,11792
+# 
 #: last_checked: 2017-08-20
 #: next_check: 2017-12-10
 provisorischer Zugang zum S-Bhf. Ostkreuz: Ausgang Simplonstraße ist gesperrt	2::inwork 14712,11039 14727,11005 14808,10978
@@ -2903,7 +2908,7 @@ Möwenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 22108,10970 22195,10993
 #: check_frequency: 360d
 Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11485 20631,11621 20633,11651
 # 
-#: last_checked: 2017-07-24
+#: last_checked: 2017-08-22
 Gitschiner Str./Lobeckstr.: Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3nocross 10122,10294 10363,10303 10605,10312
 # 
 #: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus? --- ja, wird es geben
@@ -2954,15 +2959,15 @@ Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtun
 # 
 #: osm_watch: way id="466318949" version="3"
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
-#: last_checked: 2017-07-20
+#: last_checked: 2017-08-21
 Bouchéstr.: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13298,9252 13190,9139
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
-#: last_checked: 2017-07-20
+#: last_checked: 2017-08-21
 Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13176,9302 13100,9210
 # 
 #: next_check_id: HEIDELBERGER-2017
-#: last_checked: 2017-07-24
+#: last_checked: 2017-08-21
 #: check_frequency: 60d
 Heidelberger Str.: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13489,9199 13420,9259 13357,9313
 # 
@@ -3012,7 +3017,7 @@ Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,
 #: check_frequency: 60d
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 # 
-#: last_checked: 2017-08-08
+#: last_checked: 2017-08-22
 Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2:inwork 14447,10491 14270,10584
 # 
 # REMOVED (mittlerweile schon passierbar) --- #: next_check_id: MARIANNEN-2016 vvv --- #: source_id: INKO_2147340291_COPY_1 vvv --- #: source_id: 2147340291 vvv --- #: source_id: 2147340768 vvv --- # REMOVED (aufgehoben) --- #: priority: #A vvv --- #: XXX laut fritz bis 16.12.2016 --- #: last_checked: 2016-12-15 vvv --- #: next_check: 2017-01-10 vvv --- Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11512,10105 11616,10288 --- #: source_id: 2147340777 --- #: XXX laut fritz bis 10.01.2017 --- #: priority: #A --- #: last_checked: 2016-12-15 --- #: check_frequency: 7d --- Mariannenstr.: Baustelle, Fahrbahn gesperrt	2s:q3 11671,10402 11616,10288

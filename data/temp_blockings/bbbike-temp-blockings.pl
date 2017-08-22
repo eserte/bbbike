@@ -25972,14 +25972,14 @@ EOF
      },
      { from  => 1491498639, # 2017-04-06 19:10
        until => undef, # was: 1496268000, # 2017-06-01 00:00
-       text  => 'Innstr.: Bauarbeiten, Einbahnstraßenregelung, außerdem Sperrung an der Kreuzung Weserstr.',
+       text  => 'Innstr.: Bauarbeiten, Einbahnstraßenregelung',
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober; laut Pressemitteilung bis Ende 2017
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
-#: last_checked: 2017-07-24 vvv
+#: last_checked: 2017-08-22 vvv
 #: next_check: 2017-10-01 vvv
-	q3::inwork 13384,8354 13217,8493
+# REMOVED (weitgehend fertig) ---	q3::inwork 13384,8354 13217,8493
 # REMOVED userdel	q3::inwork; 13217,8493 13262,8554
 	q3::inwork; 13262,8554 13301,8606 13314,8624
 	q4::inwork 13366,8694 13314,8624
@@ -26018,12 +26018,12 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Akazienstr.: Bauarbeiten, Einbahnstraßenregelung',
+       text  => 'Akazienstr.: Bauarbeiten im Kreuzungsbereich Belziger Str., Einbahnstraßenregelung',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2017-08-10
-#: check_frequency: 7d
-userdel	q4::inwork; 7201,8870 7107,9030
+#: last_checked: 2017-08-22
+#: check_frequency: 14d
+userdel	q3::inwork; 7201,8870 7107,9030 7035,9161
 EOF
      },
      { from  => 1493652218, # 2017-05-01 17:23
@@ -26132,7 +26132,7 @@ EOF
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-08-10
+#: last_checked: 2017-08-22
 #: check_frequency: 14d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
@@ -26354,7 +26354,7 @@ userdel	q4::inwork 17734,675 17928,764 18023,833
 EOF
      },
      { from  => 1501618467, # 2017-08-01 22:14
-       until => $isodate2epoch->("2017-08-31 12:00:00"), # 1503093600, # 2017-08-19 00:00
+       until => 1503430097, # vorzeitig fertig --- $isodate2epoch->("2017-08-31 12:00:00"), # 1503093600, # 2017-08-19 00:00
        text  => 'Treptower Str.: zwischen Weigandufer und Stuttgarter Str. Bauarbeiten, Fahrbahn gesperrt, bis Ende August 2017',
        type  => 'handicap',
        source_id => '2147341662',

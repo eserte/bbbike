@@ -3423,29 +3423,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: (YYYY08 & fr-2) - +2d vvv
-userdel	2::temp 22138,4642 22111,4562 22093,4499
-userdel	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
-#: tempex ^^^
-',
-         'from' => 1502971200,
-         'id' => 2610,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              18,
-                              'months',
-                              8
-                            ]
-                          ],
-         'source_id' => 'http://www.winzerfest-köpenick.de/',
-         'text' => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 18.8.2017 bis 20.8.2017',
-         'type' => 'gesperrt',
-         'until' => 1503266399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3902,9 +3880,9 @@ userdel	2::inwork 3741,12607 3654,12672
        {
          'data' => '#: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober; laut Pressemitteilung bis Ende 2017
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
-#: last_checked: 2017-07-24 vvv
+#: last_checked: 2017-08-22 vvv
 #: next_check: 2017-10-01 vvv
-	q3::inwork 13384,8354 13217,8493
+# REMOVED (weitgehend fertig) ---	q3::inwork 13384,8354 13217,8493
 # REMOVED userdel	q3::inwork; 13217,8493 13262,8554
 	q3::inwork; 13262,8554 13301,8606 13314,8624
 	q4::inwork 13366,8694 13314,8624
@@ -3913,7 +3891,7 @@ userdel	2::inwork 3741,12607 3654,12672
 ',
          'from' => 1491498639,
          'id' => 2856,
-         'text' => 'Innstr.: Bauarbeiten, Einbahnstraßenregelung, außerdem Sperrung an der Kreuzung Weserstr.',
+         'text' => 'Innstr.: Bauarbeiten, Einbahnstraßenregelung',
          'type' => 'handicap',
          'until' => undef
        },
@@ -3930,13 +3908,13 @@ userdel	2::inwork 3741,12607 3654,12672
        },
        undef,
        {
-         'data' => '#: last_checked: 2017-08-10
-#: check_frequency: 7d
-userdel	q4::inwork; 7201,8870 7107,9030
+         'data' => '#: last_checked: 2017-08-22
+#: check_frequency: 14d
+userdel	q3::inwork; 7201,8870 7107,9030 7035,9161
 ',
          'from' => undef,
          'id' => 2860,
-         'text' => 'Akazienstr.: Bauarbeiten, Einbahnstraßenregelung',
+         'text' => 'Akazienstr.: Bauarbeiten im Kreuzungsbereich Belziger Str., Einbahnstraßenregelung',
          'type' => 'handicap',
          'until' => undef
        },
@@ -3984,7 +3962,7 @@ userdel	2::inwork 6815,8691 6912,8617
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2017-08-10
+         'data' => '#: last_checked: 2017-08-22
 #: check_frequency: 14d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
@@ -4144,16 +4122,7 @@ userdel	q4::inwork 17734,675 17928,764 18023,833
          'type' => 'handicap',
          'until' => 1513378799
        },
-       {
-         'data' => 'userdel	q3::inwork 13716,8410 13648,8321 13566,8212 13510,8138
-',
-         'from' => 1501618467,
-         'id' => 2891,
-         'source_id' => '2147341662',
-         'text' => 'Treptower Str.: zwischen Weigandufer und Stuttgarter Str. Bauarbeiten, Fahrbahn gesperrt, bis Ende August 2017',
-         'type' => 'handicap',
-         'until' => 1504173600
-       },
+       undef,
        {
          'data' => 'userdel	q4::inwork 23102,1637 23185,1649
 ',
