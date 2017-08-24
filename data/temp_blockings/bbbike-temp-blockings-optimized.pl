@@ -3798,8 +3798,8 @@ userdel	q4::inwork 12911,1815 12940,1547
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-08-11 vvv
-#: check_frequency: 21d vvv
+#: last_checked: 2017-08-24 vvv
+#: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
 	q2::inwork; 11139,12243 11092,12375
@@ -4067,7 +4067,8 @@ userdel	2::inwork 4561,13244 4547,13139 4576,13115
        },
        {
          'data' => '#: source_id: 2147341585
-#: note: laut vmz bis Ende 08/17, laut fritz bis 2017-08-25
+#: note: laut vmz bis Ende 08/17, laut fritz bis 2017-08-31
+#: next_check: 2017-08-31
 userdel	q4::inwork 854,24387 836,24440 813,24497 790,24556 784,24612 790,24698 808,24790 811,24833 793,24943 785,24968
 ',
          'from' => 1500156000,

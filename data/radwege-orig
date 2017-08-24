@@ -193,8 +193,9 @@ die letzten Meter sind benutzungspflichtig	RW1; 12169,10310 11949,10414
 Asphalt mit Wurzelschäden; unklare Ausschilderung, teilweise ist das Zeichen 241 missverständlich aufgestellt (könnten auch die Parkwege durch den Görlitzer Park gemeint sein); kurz vor dem Spreewaldplatz gibt es das Zeichen 237 ohne Auffahrmöglichkeit	RW1; 12932,9900 12814,9966 12671,10042 12507,10130 12464,10153 12341,10218
 	RW1;RW1 12932,9900 13026,9854 13086,9825
 	RW1;RW1 12341,10218 12229,10014
-besonders schlechter Zustand des Radwegs (durch Wurzeln)	RW1;RW1 9827,10051 9922,10010 10006,9942
-besonders schlechter Zustand des Radwegs (durch Wurzeln)	RW1; 10006,9942 10134,9860
+besonders schlechter Zustand des Radwegs (durch Wurzeln)	RW1; 9827,10051 9922,10010 9950,9987 10006,9942 10134,9860
+Asphalt	RW1; 10006,9942 9950,9987
+	RW3; 9950,9987 9922,10010 9827,10051
 asphaltierter Radweg	RW1; 10134,9860 10006,9942
 	RW1;RW1 10134,9860 10164,9853 10357,9807 10405,9795 10564,9755
 unklare Ausschilderung, Zeichen 237 ist nur zur Geibelstr. hin gerichtet	RW1; 10564,9755 10781,9697
@@ -891,10 +892,11 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736 20755,5750
 	RW2; 14015,7631 14095,7568 14174,7505
 	RW1; 14174,7505 14095,7568 14015,7631
 #: next_check_id: SONNENALLEE-2014 vvv
-#: XXX laut fritz "geänderte Straßenführung" bis 31.12.2016, laut vmz bis Ende Juli 2017
+#: XXX laut fritz "geänderte Straßenführung" bis 31.12.2016, laut vmz bis Ende September 2017
 #: source_id: IM_023718
 #: source_id: 2147339540
 #: last_checked: 2017-08-22 vvv
+#: next_check: 2017-09-30
 # REMOVED, siehe unten ---	RW1; 14174,7505 14334,7395 14369,7376
 # REMOVED --- RW2; 14519,7301 --- #: note: vermutlich: --- RW2; 14519,7301
 	RW8;RW2 14519,7301 14369,7376 14334,7395 14174,7505
@@ -1064,7 +1066,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut rbbtext bis 31.05.2016, laut vmz bis Ende 2016, laut fritz bis 09.01.2018
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2017-06-22
+#: last_checked: 2017-08-24
 #: check_frequency: 90d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 9695,12390 9656,12386 9601,12380
@@ -1074,7 +1076,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9734,12395 969
 #: source_id: IM_018997
 #: source_id: IM_023987
 #: source_id: IM_025933
-#: last_checked: 2017-07-27
+#: last_checked: 2017-08-24
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
