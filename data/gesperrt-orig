@@ -106,9 +106,9 @@ Breite Str. (Pankow)	1 10680,18380 10660,18345 10487,18270 10469,18262 10320,181
 Heinrich-Mann-Platz.	1 9565,18555 9524,18531 9480,18539 9454,18570 9457,18612 9495,18639 9542,18634 9567,18599 9565,18555
 Edelweiﬂstr.	1 8234,19936 7993,19949 7935,19954 7885,19975 7748,20040
 Edelhofdamm	1 3185,25437 3101,25402 2909,25322 2756,25260 2683,25238 2713,25300 2744,25314 2882,25375 3076,25456 3166,25496
-Antonienstr.	1 3930,17920 3970,18126 4009,18322 4070,18695 4144,18896 4228,19024
+Antonienstr.	1 3930,17923 3970,18126 4009,18322 4070,18695 4144,18896 4228,19024
 Eichborndamm	1s:q3 4228,19024 4223,18982
-Eichborndamm	1 4223,18982 4211,18882 4163,18676 4102,18298 4059,18107 4015,17912
+Eichborndamm	1 4223,18982 4211,18882 4163,18676 4102,18298 4059,18107 4016,17918
 Spreestr.	1 17900,6072 17939,5968 17877,5860 17810,5736 17807,5730 17782,5698
 Buckower Chaussee	1 8742,475 8972,498 9002,471
 # REMOVED (nein, wird nicht) --- #: XXX evtl. wird die Einbahnstraﬂenregelung aufgehoben --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6025 --- #: last_checked: 2015-05-05 --- #: check_frequency: 30d
@@ -738,7 +738,7 @@ Michaelkirchplatz	1 11415,11392 11487,11390 11542,11342
 #: XXX_osm Einbahnstraﬂen fehlen bei osm vvv
 Berenhorststr.	1 4816,17712 4862,17934
 Berenhorststr.	1 4905,18142 4862,17934
-Von-der-Gablentz-Str.	1 5151,17658 4946,17701 4872,17703 4816,17712
+Von-der-Gablentz-Str.	1 5144,17659 4946,17701 4872,17703 4816,17712
 #: XXX_osm ^^^
 #: by: ^^^
 #: by: Christian (i8pp):
@@ -1178,6 +1178,7 @@ Joachim-Karnatz-Allee	1 7419,12584 7144,12580 7139,12589 7131,12615
 Waldkraiburger Str.: Betriebsgel‰nde	2 12283,4971 12468,5000
 (Falkenberger Chaussee - Darﬂer Str.)	1 16785,17524 16825,17537 16848,17530 16947,17506
 Dankratweg - Am Waldberg: Betriebsgel‰nde	2 20460,9593 20408,9604 20338,9718 20335,9866
+(Vorfahrt S-Bhf. Tegel)	1s:q3 2352,20224 2371,20225 2384,20196 2398,20166 2381,20157
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -1791,6 +1792,7 @@ Neukˆllner Str.: Mittelstreifen	3nocross 15980,2318 15804,2512 15736,2593
 Schorlemerallee: Mittelstreifen	3nocross 3306,6453 3350,6467 3452,6491
 Berliner Str.: Straﬂenbahntrasse	3nocross 12392,17517 12429,17685 12462,17814
 Daumstr.: Mittelstreifen	3nocross -1821,16327 -1816,16111 -1815,15976
+Daumstr.: Mittelstreifen	3nocross -1783,16533 -1798,16465 -1810,16391
 Zossener Str.: Straﬂenbahntrasse	3nocross 22811,15753 22883,15740 23080,15700
 Landsberger Chaussee: Straﬂenbahntrasse	3nocross 22771,16194 22974,16139 23162,16095
 Salvador-Allende-Str.: Mittelstreifen	3nocross 23404,5325 23403,5385 23402,5483
@@ -2383,7 +2385,7 @@ Schwingtor	BNP:5::trailer=10 17684,13133
 # REMOVED (ist nun eine komplette Sperre) ---  #: note: am 2016-03-09 abends war das Tor zu --- #: note: am 2016-04-15 abends war das Tor vermutlich zu (nicht sicher) --- Schwingtor	BNP:5::trailer=10 8363,13402
 Schranke	BNP:3::trailer=10 8623,13049
 Dr‰ngelgitter	BNP:3::trailer=10 18788,27989
-Schranke	BNP:3::trailer=10 -2162,17924
+Schranke	BNP:3::trailer=10 -2160,17921
 Schranke	BNP:3::trailer=10 -2278,17805
 Schranke	BNP:3::trailer=10 -2137,17898
 Schranke	BNP:3::trailer=10 -2737,18087
@@ -2796,7 +2798,7 @@ Dr‰ngelgitter	BNP:3::trailer=10 3783,-2079
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: next_check_id: RUEDERSDORFER-2017
-#: last_checked: 2017-08-24
+#: last_checked: 2017-08-26
 #: check_frequency: 14d
 R¸dersdorfer Str.: Einbahnstraﬂe wegen Bauarbeiten	1s:q3:inwork 13066,11854 13173,11788 13295,11792
 # 
@@ -2908,7 +2910,7 @@ Mˆwenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 22108,10970 22195,10993
 #: check_frequency: 360d
 Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11485 20631,11621 20633,11651
 # 
-#: last_checked: 2017-08-23
+#: last_checked: 2017-08-25
 Gitschiner Str./Lobeckstr.: Bauarbeiten, ‹berqueren des Mittelstreifens nicht mˆglich	3nocross 10122,10294 10363,10303 10605,10312
 # 
 #: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus? --- ja, wird es geben
@@ -2923,7 +2925,7 @@ Traudelstr.: Bauarbeiten, Straﬂe komplett gesperrt	2::inwork 19169,1249 19140,11
 Schinkelplatz: Einbahnstraﬂe	1s:q3:inwork 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
 # 
 #: next_check_id: RATHAUSWEDDING-2017
-#: last_checked: 2017-08-16
+#: last_checked: 2017-08-26
 #: check_frequency: 30d
 Limburger Str.: Bauarbeiten am Rathaus Wedding, komplett gesperrt	2::inwork 7129,15717 7012,15571
 # 
@@ -2933,10 +2935,10 @@ Limburger Str.: Bauarbeiten am Rathaus Wedding, komplett gesperrt	2::inwork 7129
 #: valid: -20181231
 Karower Str.: tempor‰re Einbahnstraﬂenregelung	1s:q3:inwork 16593,25640 16632,25512 16669,25373
 # 
-#: last_checked: 2017-08-16 vvv
-#: check_frequency: 30d vvv
-Mauerweg: Bauarbeiten, gesperrt	2::inwork 7926,14439 7939,14447
-Mauerweg: Bauarbeiten, gesperrt	2::inwork 7939,14447 7889,14519
+#: last_checked: 2017-08-26 vvv
+#: check_frequency: 60d vvv
+# REMOVED --- Mauerweg: Bauarbeiten, gesperrt	2::inwork 7926,14439 7940,14447
+Mauerweg: Bauarbeiten, gesperrt, vielleicht wird der Weg sogar dauerhaft zur¸ckgebaut	2::inwork 7940,14447 7889,14519
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -2984,8 +2986,8 @@ Heidelberger Str.: Baustelle, Einbahnstraﬂenregelung	1s:q3:inwork 13489,9199 134
 #: source_id: LMS-BR_r_LMS-BR_82028
 #: osm_watch: way id="42091230" version="19"
 #: osm_watch: way id="52960100" version="10"
-#: last_checked: 2017-07-31 vvv
-#: next_check: 2017-08-30 vvv
+#: last_checked: 2017-08-26 vvv
+#: next_check: 2017-08-30 (vermutlich wird nur auf die neue Fahrbahnh‰lfte gewechselt werden) vvv
 Chausseestr.: Baustelle, Einbahnstraﬂenregelung	1s:q3:inwork 8732,14098 8654,14194
 Chausseestr.: Baustelle, Einbahnstraﬂenregelung	1s:q4:inwork 8654,14194 8607,14253 8527,14352 8442,14456
 #: next_check ^^^
@@ -3005,7 +3007,7 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraﬂenregelung	1s:q3:inwork 9042,11839 8
 #: XXX danach kˆnnte die Qualit‰t der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Gr¸nanlage)
-#: last_checked: 2017-07-14
+#: last_checked: 2017-08-26
 #: next_check: 2017-09-02
 Nordhafenpark West: w‰hrend der Umgestaltung gesperrt	2::inwork 7636,14414 7612,14449 7561,14458 7426,14539 7368,14573
 # 
@@ -3089,7 +3091,7 @@ Nalepastr.: wegen Straﬂenbau gesperrt	2::inwork 17190,7306 17211,7280 17219,7268
 #: next_check_id: DIESEL-2015
 #: last_checked: 2017-07-31
 #: check_frequency: 60d
-Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 14471,8046
+Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14384,8056 14425,8052 14439,8050 14471,8046
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5561.html
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/gerickesteg/index.shtml (20 Monate Bauzeit)
@@ -3208,7 +3210,7 @@ am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14463,10212
 #: by: http://www.rbb-online.de/politik/beitrag/2014/07/bnd-zentrale-berlin-verzoegerung-vollstaendiger-umzug-bis-2017.html
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7441
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/1767-2016-bav-zu-ds-2814-iv-durchwegung_scharnhorst-chaussestrasse_sb.pdf
-#: last_checked: 2017-08-16
+#: last_checked: 2017-08-26
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: Durchfahrt noch nicht zuverl‰ssig offen	2::inwork 8251,14337 8442,14456
 # 
 #: next_check_id: SCHINKELPLATZ-2014 vvv
@@ -3271,7 +3273,7 @@ Babelsberger Park - Humboldtbr¸cke: Bauarbeiten, tempor‰r (oder sogar dauerhaft?
 #: XXX geplante Fertigstellung (als Autostraﬂe) im Dezember 2013
 #: XXX wrote Mail about current status (2013-11-05), no response
 # REMOVED --- osm_watch: way id="183406331" version="3"
-#: last_checked: 2017-07-31
+#: last_checked: 2017-08-26
 #: check_frequency: 120d
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
@@ -3308,8 +3310,8 @@ Wikingerufer: wegen Besch‰digungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: osm_watch: way id="23099023" version="9"
 #: osm_watch: way id="23099024" version="6"
 #: osm_watch: way id="103531998" version="2"
-#: last_checked: 2017-05-01
-#: check_frequency: 150d
+#: last_checked: 2017-08-26
+#: check_frequency: 90d
 Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603
 # 
 #: note: Baugel‰nde
@@ -3565,10 +3567,10 @@ Hausotterpl.	1 8319,18190 8345,18182 8355,18165 8355,18142 8333,18132 8310,18132
 Brauerstr.	1 5159,2176 5317,2345
 #: by: rene carmosin [AM]
 #: confirmed_by: srt
-Gruﬂdorfstr.	1 2356,20216 2323,20214 2109,20188
+Gruﬂdorfstr.	1 2352,20224 2322,20220 2109,20188
 #: by: rene carmosin [AM]
 #: confirmed_by: srt
-Am Buddeplatz	1 2323,20214 2336,20117
+Am Buddeplatz	1 2322,20220 2336,20117
 Karl-Pokern-Str.	1 25860,5067 25860,5159 25857,5184 26026,5179 26028,5153 26034,5056
 Karl-Pokern-Str.	1 25860,5159 26028,5153
 Kubornstr.	1 15857,12682 15832,12518 15819,12498 15800,12353

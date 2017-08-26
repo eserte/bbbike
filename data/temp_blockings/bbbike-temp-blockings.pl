@@ -4210,7 +4210,7 @@ EOF
 userdel	q4::temp 4392,17777 4429,17763 4584,17704
 userdel	q4::temp 4392,17777 4326,17801
 userdel	q4::temp 4584,17704 4683,17669
-userdel	q4::temp 4326,17801 4200,17848 4096,17890 4015,17912
+userdel	q4::temp 4326,17801 4200,17848 4096,17890 4016,17918
 EOF
      },
      { from  => 1144706400, # 2006-04-11 00:00
@@ -8554,7 +8554,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005680',
        data  => <<EOF,
-userdel	1::inwork 2020,20327 2131,20406 2241,20487
+userdel	1::inwork 2015,20336 2133,20413 2241,20487
 EOF
      },
      { from  => 1431286193, # 1181165074, # undef
@@ -13774,7 +13774,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012136',
        data  => <<EOF,
-userdel	q4::inwork; 2241,20487 2131,20406 2020,20327
+userdel	q4::inwork; 2241,20487 2133,20413 2015,20336
 EOF
      },
      { from  => 1239660000, # 2009-04-14 00:00
@@ -14894,7 +14894,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013510',
        data  => <<EOF,
-userdel	q4::inwork -1787,19341 -1826,19541 -1788,19663
+userdel	q4::inwork -1787,19341 -1839,19495 -1826,19541 -1788,19663
 EOF
      },
      { from  => 1247090400, # 2009-07-09 00:00
@@ -19678,7 +19678,7 @@ EOF
 #: XXX Weiterbau zwischen Gorkistr. und Bernstorffstraße ab März 2012 vorgesehen
 #: next_check: 2012-03-01
 userdel	q4::inwork 2358,20368 2295,20358 2241,20487
-userdel	q4::inwork 2295,20358 2356,20216 2395,20126
+userdel	q4::inwork 2295,20358 2352,20224 2381,20157 2395,20126
 EOF
      },
      { from  => 1311832800, # 2011-07-28 08:00
@@ -25640,7 +25640,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-08-24 vvv
+#: last_checked: 2017-08-26 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -26021,7 +26021,7 @@ EOF
        text  => 'Akazienstr.: Bauarbeiten im Kreuzungsbereich Belziger Str., Einbahnstraßenregelung',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2017-08-22
+#: last_checked: 2017-08-25
 #: check_frequency: 14d
 userdel	q3::inwork; 7201,8870 7107,9030 7035,9161
 EOF
@@ -26435,11 +26435,10 @@ userdel	q2::inwork 14981,11751 15080,11905
 EOF
      },
      { from  => 1503081615, # 2017-08-18 20:40
-       until => 1508191199, # 2017-10-16 23:59
+       until => 1503768204, # -> handicap_s-orig --- 1508191199, # 2017-10-16 23:59
        text  => 'Palisadenstr.: Bauarbeiten, Einbahnstraße zwischen Friedenstr. und Koppenstr., offen in Richtung Osten, bis zum 16. Oktober 2017',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2017-08-20
 userdel	q3::inwork; 12866,12582 12843,12567 12632,12630
 EOF
      },

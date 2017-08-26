@@ -536,7 +536,11 @@ Röddelinseeweg -> Zernseestr.: Mittelstreifen	3::igndisp -1705,16515 -1783,16533
 Zernseestr. -> Daumstr.: Mittelstreifen	3::igndisp -1897,16562 -1783,16533 -1765,16603
 Zernseestr. -> Röddelinseeweg: Mittelstreifen	3::igndisp -1897,16562 -1783,16533 -1705,16515
 Daumstr. -> Templiner-See-Str.: Mittelstreifen	3::igndisp -1810,16391 -1798,16465 -1902,16493
+Daumstr. -> Wolzenseeweg: Mittelstreifen	3::igndisp -1783,16533 -1798,16465 -1721,16448
+Wolzenseeweg -> Daumstr.: Mittelstreifen	3::igndisp -1721,16448 -1798,16465 -1810,16391
+Wolzenseeweg -> Templiner-See-Str.: Mittelstreifen	3::igndisp -1721,16448 -1798,16465 -1902,16493
 Templiner-See-Str. -> Daumstr.: Mittelstreifen	3::igndisp -1902,16493 -1798,16465 -1783,16533
+Templiner-See-Str. -> Wolzenseeweg: Mittelstreifen	3::igndisp -1902,16493 -1798,16465 -1721,16448
 Karlstr.	1 22556,4386 22458,4134
 Mittelstreifen	3nocross::ignrte 21400,18817 21335,18679 21309,18626 21251,18508
 Märkische Allee -> Klandorfer Str.: Mittelstreifen	3::igndisp 21400,18817 21335,18679 21377,18663
@@ -1786,7 +1790,7 @@ Braunschweiger Str. -> Karl-Marx-Str.: Mittelinsel	3::igndisp 13150,7254 13043,7
 Mittelinsel	3nocross::ignrte 12969,7610 12991,7549 13015,7471
 Karl-Marx-Str. -> Karl-Marx-Pl.: Mittelinsel	3::igndisp 12969,7610 12991,7549 13100,7626
 Karl-Marx-Pl. -> Karl-Marx-Str.: Mittelinsel	3::igndisp 13100,7626 12991,7549 13015,7471
-Berliner Str - Bernstorffstr.: nur für BVG-Busse erlaubt	3 1955,20435 2020,20327 2131,20406
+Berliner Str - Bernstorffstr.: nur für BVG-Busse erlaubt	3 1955,20435 2015,20336 2133,20413
 Waidmannsluster Damm	3nocross::ignrte 3216,21431 3238,21448 3280,21477
 Waidmannsluster Damm -> Schollenhof: Waidmannsluster Damm	3::igndisp 3216,21431 3238,21448 3155,21572
 Schollenhof -> Waidmannsluster Damm: Waidmannsluster Damm	3::igndisp 3155,21572 3238,21448 3280,21477

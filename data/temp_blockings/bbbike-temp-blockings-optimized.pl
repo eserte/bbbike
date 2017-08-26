@@ -3798,7 +3798,7 @@ userdel	q4::inwork 12911,1815 12940,1547
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-08-24 vvv
+#: last_checked: 2017-08-26 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -3908,7 +3908,7 @@ userdel	2::inwork 3741,12607 3654,12672
        },
        undef,
        {
-         'data' => '#: last_checked: 2017-08-22
+         'data' => '#: last_checked: 2017-08-25
 #: check_frequency: 14d
 userdel	q3::inwork; 7201,8870 7107,9030 7035,9161
 ',
@@ -4175,26 +4175,8 @@ userdel	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
          'until' => 1512082799
        },
        undef,
-       {
-         'data' => 'userdel	q2::inwork 14981,11751 15080,11905
-',
-         'from' => 1502994466,
-         'id' => 2899,
-         'source_id' => '2147341716',
-         'text' => 'Jessnerstr.: Sperrung an der Scharnweberstr., bis 25.08.2017',
-         'type' => 'handicap',
-         'until' => 1503673200
-       },
-       {
-         'data' => '#: last_checked: 2017-08-20
-userdel	q3::inwork; 12866,12582 12843,12567 12632,12630
-',
-         'from' => 1503081615,
-         'id' => 2900,
-         'text' => 'Palisadenstr.: Bauarbeiten, Einbahnstraße zwischen Friedenstr. und Koppenstr., offen in Richtung Osten, bis zum 16. Oktober 2017',
-         'type' => 'handicap',
-         'until' => 1508191199
-       },
+       undef,
+       undef,
        {
          'data' => 'userdel	q4::inwork; 5349,21198 5297,21243
 userdel	q4::inwork; 5053,21452 5000,21488 4810,21730

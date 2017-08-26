@@ -86,9 +86,9 @@ Breite Str. (Pankow)	1 10680,18380 10660,18345 10487,18270 10469,18262 10320,181
 Heinrich-Mann-Platz.	1 9565,18555 9524,18531 9480,18539 9454,18570 9457,18612 9495,18639 9542,18634 9567,18599 9565,18555
 Edelweißstr.	1 8234,19936 7993,19949 7935,19954 7885,19975 7748,20040
 Edelhofdamm	1 3185,25437 3101,25402 2909,25322 2756,25260 2683,25238 2713,25300 2744,25314 2882,25375 3076,25456 3166,25496
-Antonienstr.	1 3930,17920 3970,18126 4009,18322 4070,18695 4144,18896 4228,19024
+Antonienstr.	1 3930,17923 3970,18126 4009,18322 4070,18695 4144,18896 4228,19024
 Eichborndamm	1s 4228,19024 4223,18982
-Eichborndamm	1 4223,18982 4211,18882 4163,18676 4102,18298 4059,18107 4015,17912
+Eichborndamm	1 4223,18982 4211,18882 4163,18676 4102,18298 4059,18107 4016,17918
 Spreestr.	1 17900,6072 17939,5968 17877,5860 17810,5736 17807,5730 17782,5698
 Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s 15674,10851 15870,10938
@@ -510,7 +510,7 @@ Römerweg	1s 19236,9710 19450,9728 19459,9842
 Michaelkirchplatz	1 11415,11392 11487,11390 11542,11342
 Berenhorststr.	1 4816,17712 4862,17934
 Berenhorststr.	1 4905,18142 4862,17934
-Von-der-Gablentz-Str.	1 5151,17658 4946,17701 4872,17703 4816,17712
+Von-der-Gablentz-Str.	1 5144,17659 4946,17701 4872,17703 4816,17712
 Kemmannweg	1 -4207,14473 -4117,14458 -4053,14428 -3937,14340 -3911,14331 -3819,14302
 Privatstr. 13	1 13171,17335 13103,17280 13018,17264
 Preunelstr.	1 13012,17332 12965,17324 12930,17302 12865,17381
@@ -829,6 +829,7 @@ Joachim-Karnatz-Allee	1 7419,12584 7144,12580 7139,12589 7131,12615
 Waldkraiburger Str.: Betriebsgelände	2 12283,4971 12468,5000
 (Falkenberger Chaussee - Darßer Str.)	1 16785,17524 16825,17537 16848,17530 16947,17506
 Dankratweg - Am Waldberg: Betriebsgelände	2 20460,9593 20408,9604 20338,9718 20335,9866
+(Vorfahrt S-Bhf. Tegel)	1s 2352,20224 2371,20225 2384,20196 2398,20166 2381,20157
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -2071,6 +2072,13 @@ Tino-Schwierzina-Str. -> Str. 56: Straßenbahntrasse	3::igndisp 12462,17814 12429
 Mittelstreifen	3nocross::ignrte -1821,16327 -1816,16111 -1815,15976
 Daumstr. -> Uferweg: Mittelstreifen	3::igndisp -1815,15976 -1816,16111 -1942,16105
 Uferweg -> Daumstr.: Mittelstreifen	3::igndisp -1942,16105 -1816,16111 -1821,16327
+Mittelstreifen	3nocross::ignrte -1783,16533 -1798,16465 -1810,16391
+Daumstr. -> Templiner-See-Str.: Mittelstreifen	3::igndisp -1810,16391 -1798,16465 -1902,16493
+Daumstr. -> Wolzenseeweg: Mittelstreifen	3::igndisp -1783,16533 -1798,16465 -1721,16448
+Wolzenseeweg -> Daumstr.: Mittelstreifen	3::igndisp -1721,16448 -1798,16465 -1810,16391
+Wolzenseeweg -> Templiner-See-Str.: Mittelstreifen	3::igndisp -1721,16448 -1798,16465 -1902,16493
+Templiner-See-Str. -> Daumstr.: Mittelstreifen	3::igndisp -1902,16493 -1798,16465 -1783,16533
+Templiner-See-Str. -> Wolzenseeweg: Mittelstreifen	3::igndisp -1902,16493 -1798,16465 -1721,16448
 Straßenbahntrasse	3nocross::ignrte 22811,15753 22883,15740 23080,15700
 Ludwigsfelder Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 22888,15768 22883,15740 23080,15700
 Zossener Str. -> Ludwigsfelder Str.: Straßenbahntrasse	3::igndisp 22811,15753 22883,15740 22888,15768
@@ -2590,7 +2598,7 @@ Schwingtor	BNP:5:-2:trailer=10 17490,13133
 Schwingtor	BNP:5:-94:trailer=10 17684,13133
 Schranke	BNP:3:-36:trailer=10 8623,13049
 Drängelgitter	BNP:3:-216:trailer=10 18788,27989
-Schranke	BNP:3:-228:trailer=10 -2162,17924
+Schranke	BNP:3:-236:trailer=10 -2160,17921
 Schranke	BNP:3:29:trailer=10 -2278,17805
 Schranke	BNP:3:71:trailer=10 -2137,17898
 Schranke	BNP:3:-66:trailer=10 -2737,18087
@@ -2897,8 +2905,7 @@ Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19140,11
 Schinkelplatz: Einbahnstraße	1s:inwork 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
 Limburger Str.: Bauarbeiten am Rathaus Wedding, komplett gesperrt	2::inwork 7129,15717 7012,15571
 Karower Str.: temporäre Einbahnstraßenregelung	1s:inwork 16593,25640 16632,25512 16669,25373
-Mauerweg: Bauarbeiten, gesperrt	2::inwork 7926,14439 7939,14447
-Mauerweg: Bauarbeiten, gesperrt	2::inwork 7939,14447 7889,14519
+Mauerweg: Bauarbeiten, gesperrt, vielleicht wird der Weg sogar dauerhaft zurückgebaut	2::inwork 7940,14447 7889,14519
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt	1s:inwork 5192,10234 5196,10398
 (Verlängerte Hertzallee): Bauarbeiten, komplett gesperrt	2::inwork 5352,11502 5296,11529 4950,11696 4905,11785
 Bouchéstr.: Baustelle, Einbahnstraßenregelung	1s:inwork 13298,9252 13190,9139
@@ -2915,7 +2922,7 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
 Fünf Morgen: Bauarbeiten, gesperrt	2::inwork 1437,5015 1486,5175
 Nalepastr.: wegen Straßenbau gesperrt	2::inwork 17190,7306 17211,7280 17219,7268 17286,7173
-Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14439,8050 14471,8046
+Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14384,8056 14425,8052 14439,8050 14471,8046
 Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,12669 6765,12680
 IGA 2017-Gelände: Wege gesperrt	2 22455,14815 22417,14837 22380,14831 22331,14793 22254,14793 22199,14744 22164,14722 22108,14710 22090,14704 22071,14630 22051,14604 22026,14601 22012,14556 21985,14513 22026,14501 22061,14471 22172,14287 22414,14144 22503,14104
 IGA 2017-Gelände: Wege gesperrt	2 22414,14144 22462,14172 22639,14384 22679,14450 22670,14520
@@ -3246,8 +3253,8 @@ tragen (ca. 60 Stufen)	0:80:-194 -8077,-1483
 tragen	0:60:-128 -8451,-1418
 Hausotterpl.	1 8319,18190 8345,18182 8355,18165 8355,18142 8333,18132 8310,18132 8296,18154 8299,18172 8319,18190
 Brauerstr.	1 5159,2176 5317,2345
-Grußdorfstr.	1 2356,20216 2323,20214 2109,20188
-Am Buddeplatz	1 2323,20214 2336,20117
+Grußdorfstr.	1 2352,20224 2322,20220 2109,20188
+Am Buddeplatz	1 2322,20220 2336,20117
 Karl-Pokern-Str.	1 25860,5067 25860,5159 25857,5184 26026,5179 26028,5153 26034,5056
 Karl-Pokern-Str.	1 25860,5159 26028,5153
 Kubornstr.	1 15857,12682 15832,12518 15819,12498 15800,12353
