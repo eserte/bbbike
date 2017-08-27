@@ -7,7 +7,7 @@ Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3 14254,11377 142
 Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 Lange Str.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 12409,11902 12238,11931
-Palisadenstr.: Bauarbeiten, teilweise mit Einbahnstraﬂeregelung	q2::inwork; 12866,12582 12843,12567 12632,12630
+Palisadenstr.: Bauarbeiten, teilweise Einbahnstraﬂe, offen Richtung Osten	q2::inwork; 12866,12582 12843,12567 12632,12630
 BouchÈstr.: Bauarbeiten an der Heidelberger Str., Fahrbahn gesperrt	q3::inwork 13489,9456 13357,9313
 J‰gerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q2::inwork 9195,11972 9393,12000
 J‰gerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q3::inwork 9393,12000 9523,12019
@@ -38,6 +38,7 @@ Kiehlufer: Bauarbeiten, Fahrbahn gesperrt, Bordsteine beim Ausweichen auf dem Ge
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 Dieselstr., Umfahrung: Fuﬂg‰nger, kurvig, eng	q2::inwork 14326,8062 14344,8072 14358,8070 14364,8096 14405,8115 14419,8112 14429,8074 14471,8046
 Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung S¸den auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12753,8187 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785 12969,7610
+Wattstr.: Bauz‰une	q3::inwork 17681,7589 17676,7555
 Mˆllendorffstr.: Bauarbeiten, Radfahrer m¸ssen auf die gegen¸berliegende Seite wechseln	q4::inwork; 15420,12178 15361,12071
 F¸rstenberger Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 10320,14608 10472,14632
 Wiltbergstr.: Bauarbeiten, Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3::inwork; 16669,25373 16583,25440 16475,25526 16414,25575 16294,25683 16220,25716
@@ -1206,7 +1207,7 @@ Waltershauser Str.: gemeinsamer Rad- und Gehweg, einige Fuﬂg‰nger	q1 6534,1702 6
 (Gallwitzallee - Geraerstr./Trippsteinstr.): einige Fuﬂg‰nger	q1 6759,2137 6722,2096 6695,2037 6534,1702 6526,1688
 (Seydlitzstr., Verl‰ngerung): einige Fuﬂg‰nger	q1 6597,2157 6695,2037
 (Hospitalgrabenpark): Fuﬂg‰nger, Radfahren offiziell verboten	q4 7105,3040 7127,3077 7184,3142 7264,3122 7365,3199
-(Landschaftspark Herzberge - Arendsweg): Trampelpfad, Bordstein	q4 17266,14144 17235,14152 17234,14169 17266,14170
+(Landschaftspark Herzberge - Arendsweg): Trampelpfad, Bordstein	q4 17266,14144 17287,14152 17323,14154 17330,14163
 (Genslerstr. - Landsberger Allee): Fuﬂg‰nger	q2 16669,14438 16665,14420 16644,14401 16632,14390
 Schweriner Ring [9-19 ungerade]: enge Straﬂe	q1 17444,19115 17259,19121
 (Weg auf dem L‰rmschutzwall): Rampen, nicht sehr breit	q1 16665,19021 16699,19090 17197,18473 17275,18356 17564,18010 17585,17963
@@ -1609,7 +1610,7 @@ Alboinstr. - Paul-Schmidt-Str.: Fuﬂg‰nger, Bordstein	q2 8242,5427 8200,5510
 (Gutspark Lichtenberg): einige Fuﬂg‰nger	q1 15746,12967 15749,12995 15717,13001 15612,13069 15526,13056
 Nachtalbenweg: einige Fuﬂg‰nger	q1 14754,18054 14741,18063 14746,18072
 entlang der Straﬂenbahn: einige Fuﬂg‰nger	q1 17486,17266 17790,17126 17861,17099 17886,17072 17788,16926 17625,16695 17497,16506 17424,16407
-(Lotharstr. - Josef-Hˆhn-Str.): einige Fuﬂg‰nger	q1 17903,16792 17882,16811 17863,16815
+(Lotharstr. - Josef-Hˆhn-Str.): einige Fuﬂg‰nger	q1 17908,16792 17882,16811 17863,16815
 (Richterstr. - Rathausstr./Alt-Mariendorf): einige Fuﬂg‰nger, Bordstein	q2 9118,3983 9117,3898
 (Leonorenstr. - Edenkobener Weg): Fuﬂg‰nger	q2 6383,3977 6417,3991 6495,4001 6530,4023 6558,4088 6602,4189 6618,4191
 Schulstr. (Lankwitz): Fuﬂg‰nger	q3 6692,3334 6653,3297 6647,3292
@@ -1663,6 +1664,9 @@ Johannesstift: Krankenhausgel‰nde, Aufpflasterungen	q1 -3953,17941 -4108,17776 -
 (Weg am Spekteweg): kurvenreich	q2 -4989,14994 -4997,14985 -4999,14962 -4964,14954 -4963,14969 -4963,14979
 (Hohenzollernring - Flankenschanze): abgeschlossenes Tor, Ausweichen auf Gehweg	q2 -3824,14794 -3799,14806 -3776,14815
 (Parkweg Eiswerder): einige Fuﬂg‰nger	q1 -2427,15493 -2423,15540 -2427,15575 -2448,15612 -2439,15660 -2179,15800 -2150,15740
+(Gundelfinger Str. - Rˆmerweg): Wohnanlage, Fuﬂg‰nger	q2 18735,9421 18738,9467 18754,9584 18772,9694 18781,9744
+(Aristotelessteig - Treskowallee): Wohnanlage, Fuﬂg‰nger	q2 18715,9589 18754,9584 18835,9572 18865,9608
+(Christianstr. - Christophstr.): enger Pfad	q3 17964,16677 17952,16675 17925,16695
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635

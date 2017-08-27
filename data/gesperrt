@@ -2731,6 +2731,7 @@ am Oder-Spree-Kanal: teilweise enger Pfad	BNP:0:-253:trailer=no 29457,-2835
 Gummiweg: ein Befahren mit Anh‰nger ist nahezu ausgeschlossen	BNP:0:-255:trailer=no -7891,13616
 steiler Weg	BNP:0:-233:trailer=no -2046,12036
 steiler Weg	BNP:0:29:trailer=no -1431,12284
+enger Pfad	BNP:0:80:trailer=no 17952,16675
 enges Dr‰ngelgitter	BNP:5:-206:trailer=no 30862,3816
 Schranke, Durchfahrtsbreite nur 80cm	BNP:3:78:trailer=no -1342,13134
 Schranke, Durchfahrtsbreite nur 60cm	BNP:3:-232:trailer=no -784,16658
@@ -2880,6 +2881,7 @@ Schranke	BNP:3:-64:trailer=10 6876,-2731
 Schranke	BNP:3:-78:trailer=10 17215,12485
 Schranke	BNP:10:-182:trailer=20 15334,16718
 Dr‰ngelgitter	BNP:3:0:trailer=10 3783,-2079
+Am Herzbergteich: noch wegen Bauarbeiten gesperrt; wann ist die Straﬂe fertig?	2::inwork 17945,13493 17942,13568
 R¸dersdorfer Str.: Einbahnstraﬂe wegen Bauarbeiten	1s:inwork 13066,11854 13173,11788 13295,11792
 provisorischer Zugang zum S-Bhf. Ostkreuz: Ausgang Simplonstraﬂe ist gesperrt	2::inwork 14712,11039 14727,11005 14808,10978
 Merlitzstr.: Bauarbeiten, Straﬂe komplett gesperrt	2::inwork 19661,3421 19524,3286
@@ -2934,7 +2936,6 @@ IGA 2017-Gel‰nde: Wege gesperrt	2 22503,14104 22783,14034
 Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch f¸r Fuﬂg‰nger	2::inwork 18892,3256 18953,3318
 Lydia-Rabinowitsch-Str.: noch gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924
 Clara-von-Simson-Str.: noch gesperrt	2 7652,14257 7757,14318 7802,14250 7697,14187
-Wattstr.: wegen Bauarbeiten f¸r die Minna-Todenhagen-Str. teilweise gesperrt, f¸r Autos dauerhaft	2::inwork 17670,7512 17676,7555 17681,7589
 Weg nach Tiefwerder: kein Zugang wegen der Ersatzbr¸cke	2::inwork -3179,11763 -3217,11570
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 Rummelsburger Platz: zur H‰lfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
@@ -3277,8 +3278,12 @@ Richard-Kolkwitz-Weg -> Weg entlang der Bahnstrecke: Straﬂenbahntrasse	3::igndis
 Straﬂenbahn	3nocross::ignrte 18878,9517 18875,9570 18865,9608 18823,9708
 Hˆnower Str. -> Treskowallee: Straﬂenbahn	3::igndisp 18765,9426 18875,9570 18865,9608
 Treskowallee -> Hˆnower Str.: Straﬂenbahn	3::igndisp 18878,9517 18875,9570 18765,9426
+Treskowallee -> Aristotelesst.: Straﬂenbahn	3::igndisp 18875,9570 18865,9608 18835,9572
 Treskowallee -> Rheinpfalzallee: Straﬂenbahn	3::igndisp 18823,9708 18865,9608 18931,9629
+Aristotelesst. -> Treskowallee: Straﬂenbahn	3::igndisp 18835,9572 18865,9608 18823,9708
+Aristotelesst. -> Rheinpfalzallee: Straﬂenbahn	3::igndisp 18835,9572 18865,9608 18931,9629
 Rheinpfalzallee -> Treskowallee: Straﬂenbahn	3::igndisp 18931,9629 18865,9608 18875,9570
+Rheinpfalzallee -> Aristotelesst.: Straﬂenbahn	3::igndisp 18931,9629 18865,9608 18835,9572
 Straﬂenbahn	3nocross::ignrte 18807,9746 18823,9708 18865,9608
 Rˆmerweg -> Treskowallee: Straﬂenbahn	3::igndisp 18994,9707 18823,9708 18865,9608
 Niehofer Str.	1 16942,16174 16815,16214 16692,16253

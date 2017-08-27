@@ -25998,12 +25998,12 @@ userdel	q3::inwork; 14060,17221 14099,17195 14136,17170 14235,17103 14341,17030 
 EOF
      },
      { from  => 1491854162, # 2017-04-10 21:56
-       until => 1504195200, # 2017-08-31 18:00
+       until => 1503854993, # 1504195200, # 2017-08-31 18:00
        text  => 'Ernst-Barlach-Str./Dorfstr.: Bauarbeiten zwischen Woldegker Str. und Lindenberger Str., Fahrbahn ggfs. gesperrt, bis Ende August 2017 ',
        type  => 'handicap',
        source_id => '2147341173',
        data  => <<EOF,
-userdel	q4::inwork 18009,18946 17900,18972 17890,18973 17799,19000 17697,18989 17600,18994
+userdel	q4::inwork 18007,18938 17980,18947 17900,18972 17887,18975 17799,19000 17697,18989 17600,18994
 EOF
      },
      { from  => 1492466400, # 2017-04-18 00:00
@@ -26132,7 +26132,7 @@ EOF
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-08-22
+#: last_checked: 2017-08-27
 #: check_frequency: 14d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
@@ -26413,6 +26413,7 @@ EOF
        text  => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Baseler Str. offen Richtung Norden), eventuell bis Ende November 2017',
        type  => 'handicap',
        data  => <<EOF,
+#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?bvgid=BVG131679 ("gültig bis: auf Weiteres")
 userdel	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 userdel	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
 EOF
@@ -26461,6 +26462,17 @@ EOF
 #: last_checked: 2017-08-19
 #: next_check: 2017-12-31
 userdel	2::inwork 4117,22722 4176,22764
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Wattstr.: Zugang kann durch Bauzäune versperrt sein, meistens aber offen',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: MINNATODENHAGENSTR-2016
+#: XXX siehe auch handicap_s-orig-Eintrag
+#: last_checked: 2017-08-27
+userdel	2::inwork 17681,7589 17676,7555
 EOF
      },
     );

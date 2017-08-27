@@ -3896,16 +3896,7 @@ userdel	2::inwork 3741,12607 3654,12672
          'until' => undef
        },
        undef,
-       {
-         'data' => 'userdel	q4::inwork 18009,18946 17900,18972 17890,18973 17799,19000 17697,18989 17600,18994
-',
-         'from' => 1491854162,
-         'id' => 2858,
-         'source_id' => '2147341173',
-         'text' => 'Ernst-Barlach-Str./Dorfstr.: Bauarbeiten zwischen Woldegker Str. und Lindenberger Str., Fahrbahn ggfs. gesperrt, bis Ende August 2017 ',
-         'type' => 'handicap',
-         'until' => 1504195200
-       },
+       undef,
        undef,
        {
          'data' => '#: last_checked: 2017-08-25
@@ -3962,7 +3953,7 @@ userdel	2::inwork 6815,8691 6912,8617
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2017-08-22
+         'data' => '#: last_checked: 2017-08-27
 #: check_frequency: 14d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
@@ -4165,7 +4156,8 @@ userdel	q4::inwork 17734,675 17928,764 18023,833
          'until' => 1508191200
        },
        {
-         'data' => 'userdel	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
+         'data' => '#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?bvgid=BVG131679 ("gültig bis: auf Weiteres")
+userdel	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 userdel	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
 ',
          'from' => 1502386525,
@@ -4197,6 +4189,18 @@ userdel	2::inwork 4117,22722 4176,22764
          'from' => undef,
          'id' => 2902,
          'text' => 'S-Bahn-Unterführung gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: MINNATODENHAGENSTR-2016
+#: XXX siehe auch handicap_s-orig-Eintrag
+#: last_checked: 2017-08-27
+userdel	2::inwork 17681,7589 17676,7555
+',
+         'from' => undef,
+         'id' => 2903,
+         'text' => 'Wattstr.: Zugang kann durch Bauzäune versperrt sein, meistens aber offen',
          'type' => 'gesperrt',
          'until' => undef
        }

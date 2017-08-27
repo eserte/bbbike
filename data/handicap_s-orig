@@ -21,10 +21,10 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualit‰t danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2017-08-25
+#: last_checked: 2017-08-27
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3 14254,11377 14211,11229
 # 
-#: last_checked: 2017-08-25
+#: last_checked: 2017-08-27
 Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 #: last_checked: 2017-08-20
@@ -33,10 +33,10 @@ Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 #: last_checked: 2017-08-25
 Lange Str.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 12409,11902 12238,11931
 # 
-#: last_checked: 2017-08-26
+#: last_checked: 2017-08-27
 #: next_check: 2017-10-16
 #: valid: -20171016
-Palisadenstr.: Bauarbeiten, teilweise mit Einbahnstraﬂeregelung	q2::inwork; 12866,12582 12843,12567 12632,12630
+Palisadenstr.: Bauarbeiten, teilweise Einbahnstraﬂe, offen Richtung Osten	q2::inwork; 12866,12582 12843,12567 12632,12630
 # 
 # REMOVED (bei fritz entfernt) --- #: last_checked: 2017-06-14 --- #: next_check: 2017-06-30 --- #: valid: -20170630 --- Auerstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13273,12902 13202,12790
 # REMOVED --- Dˆringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
@@ -405,10 +405,16 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung S¸de
 # 
 ### Lichtenberg ###
 # 
+#: next_check_id: MINNATODENHAGENSTR-2016
+#: XXX siehe auch bbbike-temp-blockings-Eintrag
+#: XXX Bordsteinabsenkung existiert am Anfang des Wendehammers
+#: last_checked: 2017-08-27
+Wattstr.: Bauz‰une	q3::inwork 17681,7589 17676,7555
+# 
 #: next_check_id: MOELLENDORFFSTR-2017
 #: XXX_prog abgesch‰tzter Zeitverlust durch 2x Ampeln, explizite "Radfahren verboten"-Schilder
 #: XXX laut fritz bis 29. August 2017, laut vmz bis Ende 2017
-#: last_checked: 2017-08-09
+#: last_checked: 2017-08-27
 #: next_check: 2017-08-29
 #: valid: -20170831
 Mˆllendorffstr.: Bauarbeiten, Radfahrer m¸ssen auf die gegen¸berliegende Seite wechseln	q4::inwork; 15420,12178 15361,12071
@@ -1969,7 +1975,7 @@ Waltershauser Str.: gemeinsamer Rad- und Gehweg, einige Fuﬂg‰nger	q1 6534,1702 6
 (Gallwitzallee - Geraerstr./Trippsteinstr.): einige Fuﬂg‰nger	q1 6759,2137 6722,2096 6695,2037 6534,1702 6526,1688
 (Seydlitzstr., Verl‰ngerung): einige Fuﬂg‰nger	q1 6597,2157 6695,2037
 (Hospitalgrabenpark): Fuﬂg‰nger, Radfahren offiziell verboten	q4 7105,3040 7127,3077 7184,3142 7264,3122 7365,3199
-(Landschaftspark Herzberge - Arendsweg): Trampelpfad, Bordstein	q4 17266,14144 17235,14152 17234,14169 17266,14170
+(Landschaftspark Herzberge - Arendsweg): Trampelpfad, Bordstein	q4 17266,14144 17287,14152 17323,14154 17330,14163
 (Genslerstr. - Landsberger Allee): Fuﬂg‰nger	q2 16669,14438 16665,14420 16644,14401 16632,14390
 Schweriner Ring [9-19 ungerade]: enge Straﬂe	q1 17444,19115 17259,19121
 (Weg auf dem L‰rmschutzwall): Rampen, nicht sehr breit	q1 16665,19021 16699,19090 17197,18473 17275,18356 17564,18010 17585,17963
@@ -2499,7 +2505,7 @@ Alboinstr. - Paul-Schmidt-Str.: Fuﬂg‰nger, Bordstein	q2 8242,5427 8200,5510
 (Gutspark Lichtenberg): einige Fuﬂg‰nger	q1 15746,12967 15749,12995 15717,13001 15612,13069 15526,13056
 Nachtalbenweg: einige Fuﬂg‰nger	q1 14754,18054 14741,18063 14746,18072
 entlang der Straﬂenbahn: einige Fuﬂg‰nger	q1 17486,17266 17790,17126 17861,17099 17886,17072 17788,16926 17625,16695 17497,16506 17424,16407
-(Lotharstr. - Josef-Hˆhn-Str.): einige Fuﬂg‰nger	q1 17903,16792 17882,16811 17863,16815
+(Lotharstr. - Josef-Hˆhn-Str.): einige Fuﬂg‰nger	q1 17908,16792 17882,16811 17863,16815
 #: XXX_prog BS an der Richterstr., ansonsten q1
 (Richterstr. - Rathausstr./Alt-Mariendorf): einige Fuﬂg‰nger, Bordstein	q2 9118,3983 9117,3898
 (Leonorenstr. - Edenkobener Weg): Fuﬂg‰nger	q2 6383,3977 6417,3991 6495,4001 6530,4023 6558,4088 6602,4189 6618,4191
@@ -2566,6 +2572,9 @@ Johannesstift: Krankenhausgel‰nde, Aufpflasterungen	q1 -3953,17941 -4108,17776 -
 (Weg am Spekteweg): kurvenreich	q2 -4989,14994 -4997,14985 -4999,14962 -4964,14954 -4963,14969 -4963,14979
 (Hohenzollernring - Flankenschanze): abgeschlossenes Tor, Ausweichen auf Gehweg	q2 -3824,14794 -3799,14806 -3776,14815
 (Parkweg Eiswerder): einige Fuﬂg‰nger	q1 -2427,15493 -2423,15540 -2427,15575 -2448,15612 -2439,15660 -2179,15800 -2150,15740
+(Gundelfinger Str. - Rˆmerweg): Wohnanlage, Fuﬂg‰nger	q2 18735,9421 18738,9467 18754,9584 18772,9694 18781,9744
+(Aristotelessteig - Treskowallee): Wohnanlage, Fuﬂg‰nger	q2 18715,9589 18754,9584 18835,9572 18865,9608
+(Christianstr. - Christophstr.): enger Pfad	q3 17964,16677 17952,16675 17925,16695
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
