@@ -135,9 +135,30 @@ sub action_files_with_tendencies {
     }
 }
 
+sub action_check_berlin_ortsteile {
+    my $d = shift;
+    my $check_file = '.check_berlin_ortsteile';
+    my @srcs = qw(berlin_ortsteile berlin);
+    if (_need_rebuild $check_file, @srcs) {
+	my $output;
+	$d->run(['cat', @srcs],
+		'|', [$perl, "$miscsrcdir/merge_overlapping_streets.pl", '-'],
+		'|', [$perl, "$miscsrcdir/combine_streets.pl", "-"],
+		'|', [$perl, '-nle', 'print if /(.*)\t/ && $1 !~ /,/'],
+		'>', \$output);
+	if ($output ne '') {
+	    error "Unexpected output in check_berlin_ortsteile:\n$output\nPlease check borders!";
+	}
+	$d->touch($check_file);
+    }
+}
+
+######################################################################
+
 sub action_all {
     my $d = shift;
     action_files_with_tendencies($d);
+    action_check_berlin_ortsteile($d);
 }
 
 return 1 if caller;
