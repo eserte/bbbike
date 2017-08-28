@@ -10838,6 +10838,38 @@ sub plot_sperre {
 	    if (!$edit_normal_mode) { # we want to see everything in edit mode
 	        next if $addinfo{'igndisp'};
 	    }
+
+	    my $plot_additional_icon = sub ($$$) {
+		my($xm,$ym,$tags) = @_;
+
+		my @anchors = qw(nw sw ne se);
+
+		# Add an additional icon
+		for my $check (['inwork', $use_inwork_photo],
+			       ['night',  $night_photo],
+			       ['clock',  $clock_photo],
+			       ['tempmaybe', $cal_questionmark_photo],
+			       ['temp',   $cal_photo], # should be last
+			       ['xmas',   $xmas_photo],
+			      ) {
+		    my($addinfo, $photo) = @$check;
+		    if ($addinfo{$addinfo} && $photo) {
+			$c->createImage($xm,$ym,
+					-anchor => shift(@anchors),
+					-image => $photo,
+					-tags => [@$tags,"attrib-$addinfo"]);
+			last; # XXX hmmm: allow multiple icons or not?
+		    }
+		}
+
+		if ($is_car && $car_photo) {
+		    $c->createImage($xm, $ym,
+				    -image => $car_photo,
+				    -anchor => shift(@anchors),
+				    -tags => [$abk, $sub_cat,$ret->[Strassen::NAME], $abk.'-'.$pos]);
+		}
+	    };
+
 	    if ($cat eq StrassenNetz::BLOCKED_CARRY) {
 		if ($width0) { # größer 0
 		    $sub_cat = 'sperre0';
@@ -10937,6 +10969,9 @@ sub plot_sperre {
 		    }
 		}
 
+		my $tags = [$abk, $sub_cat,
+			    $ret->[Strassen::NAME], $abk.'-'.$pos];
+
 		$c->createLine
 		    (@c,
 		     -width => (!$is_nocross ? $width3 : $width3_nocross),
@@ -10949,10 +10984,10 @@ sub plot_sperre {
 				     )
 		     ),
 		     ($Tk::VERSION >= 800.016 ? (-dash => $line_dash{sperre3}) : ()),
-		     -tags => [$abk, $sub_cat,
-			       $ret->[Strassen::NAME], $abk.'-'.$pos],
+		     -tags => $tags,
 		    );
-		($icon_x, $icon_y, $icon_anchor) = ($c[0], $c[1], 'n');
+		my($xm, $ym) = $is_nocross ? ($c[2], $c[3]) : ($c[0], $c[1]);
+		$plot_additional_icon->($xm, $ym, $tags);
 	    } else {
 		$sub_cat = $type2cat{$cat};
 		if ($cat eq StrassenNetz::BLOCKED_COMPLETE && $#kreuzungen == 0) {
@@ -10999,32 +11034,7 @@ sub plot_sperre {
 				       -tags => $tags);
 		    }
 
-		    my @anchors = qw(nw sw ne se);
-
-		    # Add an additional icon
-		    for my $check (['inwork', $use_inwork_photo],
-				   ['night',  $night_photo],
-				   ['clock',  $clock_photo],
-				   ['tempmaybe', $cal_questionmark_photo],
-				   ['temp',   $cal_photo], # should be last
-				   ['xmas',   $xmas_photo],
-				  ) {
-			my($addinfo, $photo) = @$check;
-			if ($addinfo{$addinfo} && $photo) {
-			    $c->createImage($xm,$ym,
-					    -anchor => shift(@anchors),
-					    -image => $photo,
-					    -tags => [@$tags,"attrib-$addinfo"]);
-			    last;
-			}
-		    }
-
-		    if ($is_car && $car_photo) {
-			$c->createImage($xm, $ym,
-					-image => $car_photo,
-					-anchor => shift(@anchors),
-					-tags => [$abk, $sub_cat,$ret->[Strassen::NAME], $abk.'-'.$pos]);
-		    }
+		    $plot_additional_icon->($xm,$ym,$tags);
 		};
 
 		if ($advanced) { # XXX decide one day if this should be the default
