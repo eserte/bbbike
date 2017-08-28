@@ -553,20 +553,39 @@ LINES: while(defined($_ = nextline())) {
 
     my $print_record = 1;
 
-    if ($specsperre && $do_nocross && $cat =~ /^(.*)nocross$/) {
+    # Special handling for things like
+    #   3nocross
+    #   3nocross::inwork
+    # But not for
+    #   3nocross::ignrte
+    #
+    # Idea is to create display & routing-only entries out of this:
+    # * For routing, create "3" entries for the "wegfuehrung" feature.
+    #   These entries will get the "igndisp" attribute as it should
+    #   not be rendered.
+    # * For display, keep the "3nocross" entry, but add a "ignrte"
+    #   attrbute
+    #
+    # "3nocross::ignrte" entries in gesperrt-orig are already
+    # manually splitted into a display & routing-only entry, so
+    # handle_no_cross_record() does not have to be called here.
+    if ($specsperre && $do_nocross && $cat =~ /^(.*)nocross(:.*)?$/) {
 	my $out_cat = $1;
-	my $out_name = $name;
-	if ($name =~ /^.*?:\s*(.*)$/) {
-	    $out_name = $1;
-	}
-	my @res = handle_no_cross_record($out_name, $out_cat, $coords);
-	for (@res) {
-	    my $name = shift @$_;
-	    my $cat  = shift @$_;
-	    print W "$name\t$cat ", join(" ", @$_), "\n";
-	}
+	my $out_attribs = $2;
+	if ($out_attribs !~ m{^::?ignrte$}) {
+	    my $out_name = $name;
+	    if ($name =~ /^.*?:\s*(.*)$/) {
+		$out_name = $1;
+	    }
+	    my @res = handle_no_cross_record($out_name, $out_cat, $out_attribs, $coords);
+	    for (@res) {
+		my $name = shift @$_;
+		my $cat  = shift @$_;
+		print W "$name\t$cat ", join(" ", @$_), "\n";
+	    }
 
-	$print_record = 0;
+	    $print_record = 0;
+	}
     }
 
     if ($coords ne "" && $print_record) {
@@ -764,15 +783,17 @@ sub match_specsperre_exception {
 }
 
 sub handle_no_cross_record {
-    my($name, $cat, $coords) = @_;
+    my($name, $cat, $attribs, $coords) = @_;
     my @coords = split /\s+/, $coords;
     if (@coords < 3) {
 	warn "Need at least three coordinates for handling nocross records. <$name $cat $coords>\n";
 	return;
     }
+    $attribs = '' if !defined $attribs;
+
     my @res;
 
-    push @res, [$name, $cat."nocross::ignrte", @coords];
+    push @res, [$name, $cat."nocross::ignrte$attribs", @coords];
 
     for my $i (2 .. $#coords) {
 	my @blocked = @coords[$i-2 .. $i];
@@ -802,7 +823,7 @@ sub handle_no_cross_record {
 			warn "Ignore <@coords>, found entry in $specsperre_exceptions\n"
 			    if $verbose;
 		    } else {
-			push @res, [$name, $cat."::igndisp", @coords];
+			push @res, [$name, $cat."::igndisp$attribs", @coords];
 		    }
 		}
 	    }
