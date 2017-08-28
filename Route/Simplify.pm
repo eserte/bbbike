@@ -122,7 +122,7 @@ sub Route::simplify_for_gps {
     my $showcrossings = exists $args{-showcrossings} ? $args{-showcrossings} : 1;
     # "<" and ">" somehow does not work when used with perl-GPS ---
     # in this case use "(-" and "-)" or so in -leftrightpair
-    my $leftrightpair  = $args{-leftrightpair}  || ["<- ", " ->"];
+    my $leftrightpair  = $args{-leftrightpair}  || ($waypointcharset =~ m{simplearrow} ? ["\x{2190} ", " \x{2192}"] : ["<- ", " ->"]);
     my $leftrightpair2 = $args{-leftrightpair2} || ["<\\ ", " />"];
     my $uniquewpts = exists $args{-uniquewpts} ? $args{-uniquewpts} : 0;
     my $debug = $args{-debug};
@@ -194,7 +194,7 @@ sub Route::simplify_for_gps {
 		    $large_angle = 1;
 		}
 	    }
-	    if ($waypointcharset eq 'latin1' && $significant_angle) {
+	    if ($waypointcharset =~ m{(latin1|simplearrow)} && $significant_angle) {
 		if      ($prev_street_info->[&StrassenNetz::ROUTE_DIR] eq 'l') {
 		    if ($large_angle) {
 			$short_dir_left = $leftrightpair->[0];
