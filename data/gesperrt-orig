@@ -2917,7 +2917,7 @@ Möwenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 22108,10970 22195,10993
 Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11485 20631,11621 20633,11651
 # 
 #: last_checked: 2017-08-25
-Gitschiner Str./Lobeckstr.: Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3nocross 10122,10294 10363,10303 10605,10312
+Gitschiner Str./Lobeckstr.: Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3nocross::inwork 10122,10294 10363,10303 10605,10312
 # 
 #: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus? --- ja, wird es geben
 #: osm_watch: way id="461214846" version="2"
@@ -2944,7 +2944,8 @@ Karower Str.: temporäre Einbahnstraßenregelung	1s:q3:inwork 16593,25640 16632,25
 #: last_checked: 2017-08-26 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- Mauerweg: Bauarbeiten, gesperrt	2::inwork 7926,14439 7940,14447
-Mauerweg: Bauarbeiten, gesperrt, vielleicht wird der Weg sogar dauerhaft zurückgebaut	2::inwork 7940,14447 7889,14519
+#: XXX laut http://www.openstreetmap.org/note/1117960 wird der Weg "nach den Leitungsarbeiten wieder hergerichtet werden"
+Mauerweg: Bauarbeiten, gesperrt	2::inwork 7940,14447 7889,14519
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -3247,7 +3248,7 @@ Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,689
 #: XXX laut fritz bis 09.01.2018
 #: last_checked: 2017-08-24 vvv
 #: check_frequency: 90d vvv
-Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross 9984,12426 9934,12420 9858,12410
+Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
 # REMOVED --- Niederlagstr. - Unter den Linden: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9943,12364 9934,12420 9984,12426
 #: check_frequency ^^^

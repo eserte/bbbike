@@ -2897,14 +2897,14 @@ Möckernkiez: Bauarbeiten	2::inwork 8778,9759 8741,9741 8729,9670 8587,9590 8566,
 oberer Wuhlewanderweg: Bauarbeiten, komplett gesperrt	2::inwork 22873,14498 22864,14556
 Möwenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 22108,10970 22195,10993
 Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11485 20631,11621 20633,11651
-Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3nocross::ignrte 10122,10294 10363,10303 10605,10312
-Gitschiner Str. -> Lobeckstr.: Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3::igndisp 10122,10294 10363,10303 10433,10456
-Lobeckstr. -> Gitschiner Str.: Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3::igndisp 10433,10456 10363,10303 10605,10312
+Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3nocross::ignrte::inwork 10122,10294 10363,10303 10605,10312
+Gitschiner Str. -> Lobeckstr.: Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3::igndisp::inwork 10122,10294 10363,10303 10433,10456
+Lobeckstr. -> Gitschiner Str.: Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3::igndisp::inwork 10433,10456 10363,10303 10605,10312
 Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19140,1137
 Schinkelplatz: Einbahnstraße	1s:inwork 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
 Limburger Str.: Bauarbeiten am Rathaus Wedding, komplett gesperrt	2::inwork 7129,15717 7012,15571
 Karower Str.: temporäre Einbahnstraßenregelung	1s:inwork 16593,25640 16632,25512 16669,25373
-Mauerweg: Bauarbeiten, gesperrt, vielleicht wird der Weg sogar dauerhaft zurückgebaut	2::inwork 7940,14447 7889,14519
+Mauerweg: Bauarbeiten, gesperrt	2::inwork 7940,14447 7889,14519
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt	1s:inwork 5192,10234 5196,10398
 (Verlängerte Hertzallee): Bauarbeiten, komplett gesperrt	2::inwork 5352,11502 5296,11529 4950,11696 4905,11785
 Bouchéstr.: Baustelle, Einbahnstraßenregelung	1s:inwork 13298,9252 13190,9139
@@ -2942,9 +2942,9 @@ am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14463,10212
 Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: Durchfahrt noch nicht zuverlässig offen	2::inwork 8251,14337 8442,14456
 Sterndamm: Eisenbahnunterführung in Richtung Groß-Berliner Damm/Südostallee gesperrt	1::inwork 17886,5587 17736,5441
 Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,6895 14153,6795
-wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::ignrte 9984,12426 9934,12420 9858,12410
-Niederlagstr. -> Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3::igndisp 9943,12364 9934,12420 9858,12410
-Unter den Linden -> Niederlagstr.: wegen Bauarbeiten ist das Überqueren nicht möglich	3::igndisp 9984,12426 9934,12420 9943,12364
+wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::ignrte::inwork 9984,12426 9934,12420 9858,12410
+Niederlagstr. -> Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3::igndisp::inwork 9943,12364 9934,12420 9858,12410
+Unter den Linden -> Niederlagstr.: wegen Bauarbeiten ist das Überqueren nicht möglich	3::igndisp::inwork 9984,12426 9934,12420 9943,12364
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
 Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?) gesperrt	2:inwork -11407,-1086 -11460,-1098 -11538,-1138 -11615,-1094
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
