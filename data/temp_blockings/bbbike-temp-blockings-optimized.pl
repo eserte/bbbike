@@ -3681,7 +3681,15 @@ userdel	q3::inwork; -6861,15129 -6507,15007
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	q4::inwork; 14575,11407 14434,11465
+',
+         'from' => 1503943766,
+         'id' => 2755,
+         'text' => 'Wühlischstr.: Gleisarbeiten, Fahrbahn Richtung Warschauer Str. gesperrt, bis zum 8.9.2017',
+         'type' => 'handicap',
+         'until' => 1504864800
+       },
        undef,
        undef,
        undef,
@@ -3899,7 +3907,7 @@ userdel	2::inwork 3741,12607 3654,12672
        undef,
        undef,
        {
-         'data' => '#: last_checked: 2017-08-25
+         'data' => '#: last_checked: 2017-08-28
 #: check_frequency: 14d
 userdel	q3::inwork; 7201,8870 7107,9030 7035,9161
 ',
@@ -3941,8 +3949,8 @@ userdel	q4::inwork; 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548
        {
          'data' => '#: XXX Baumaßnahme ist Ende 2018 fertig; Vollsperrung nur für 2-3 Wochen
 #: XXX wird es vielleicht Änderungen bei der Wegbeschaffenheit geben?
-#: last_checked: 2017-07-24
-#: next_check: 2017-09-01
+#: last_checked: 2017-08-28 (der Eingangsbereich ist zurzeit gesperrt, Umgehung existiert)
+#: next_check: 2017-09-15
 userdel	2::inwork 6815,8691 6912,8617
 ',
          'from' => 1498214515,
@@ -3953,7 +3961,7 @@ userdel	2::inwork 6815,8691 6912,8617
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2017-08-27
+         'data' => '#: last_checked: 2017-08-28
 #: check_frequency: 14d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
@@ -3970,8 +3978,11 @@ userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14
        undef,
        {
          'data' => '#: XXX wird sich die Qualität vielleicht bessern?
-#: next_check: 2017-09-01
-userdel	2::inwork 8234,4660 8575,4980 8598,4985 8618,5019 8784,5095
+#: last_checked: 2017-08-28 vvv
+userdel	2::inwork 8234,4660 8575,4980 8598,4985
+#: XXX hier sind gerade Bauarbeiten --- Verbundsteinpflaster bleibt wohl, der wassergebundene Teil sind besser aus
+userdel	2::inwork 8598,4985 8618,5019 8784,5095
+#: last_checked ^^^
 ',
          'from' => undef,
          'id' => 2877,

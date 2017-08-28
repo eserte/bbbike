@@ -7611,7 +7611,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005044',
        data  => <<EOF,
-userdel	2::temp 2823,5672 2771,5678 2654,5678
+userdel	2::temp 2823,5672 2771,5674 2654,5678
 EOF
      },
      { from  => 1174773600, # 2007-03-24 23:00
@@ -23049,13 +23049,13 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berliner-zeitung.de/polizei/bombenentschaerfung-in-steglitz-5000-menschen-muessen-ihre-haeuser-verlassen,10809296,27383386.html',
        data  => <<EOF,
-userdel	2::inwork 6134,5986 6134,5894 6134,5800 6007,5785 5942,5775
-userdel	2::inwork 6134,5800 6115,5302
+userdel	2::inwork 6124,5983 6124,5894 6123,5798 6007,5785 5942,5775
+userdel	2::inwork 6123,5798 6115,5302
 userdel	2::inwork 5699,5949 5847,5961 5845,6049 5748,6051 5699,5949 5674,5901 5677,5868 5679,5853 5681,5768 5681,5743 5683,5672 5687,5586 5840,5588 5840,5679 5683,5672
 userdel	2::inwork 5681,5743 5850,5765 5851,5863 5694,5845
 userdel	2::inwork 5845,6049 6008,6067 6001,5974 5847,5961 5851,5863 5935,5874 5942,5775 5850,5765 5840,5679
-userdel	2::inwork 5993,5422 6009,5691 6007,5785 6007,5882 6001,5974 6134,5986 6116,6130
-userdel	2::inwork 5935,5874 6007,5882 6134,5894
+userdel	2::inwork 5993,5422 6009,5691 6007,5785 6007,5882 6001,5974 6124,5983 6116,6130
+userdel	2::inwork 5935,5874 6007,5882 6124,5894
 EOF
      },
      { from  => 1482440059,
@@ -24833,16 +24833,12 @@ userdel	q4::inwork 10105,13004 10117,12973 10132,12941
 userdel	q3::inwork 9932,13109 10105,13004
 EOF
      },
-     { from  => 1446303841, # 2015-10-31 16:04
-       until => $isodate2epoch->("2015-12-07 04:00:00"),
-       text  => 'Weichselstr./Holteistr.: Bauarbeiten, Fahrbahn Richtung Süden gesperrt, auch ist das Überqueren der Fahrbahn teilweise nicht möglich, bis 07.12.2015',
+     { from  => 1503943766,
+       until => $isodate2epoch->("2017-09-08 12:00:00"),
+       text  => 'Wühlischstr.: Gleisarbeiten, Fahrbahn Richtung Warschauer Str. gesperrt, bis zum 8.9.2017',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; 14887,11929 14835,11840 14802,11784 14794,11770 14710,11626 14639,11512
-# REMOVED ---	q3::inwork 14645,11670 14710,11626
-	q3::inwork 14710,11626 14764,11591
-# REMOVED ---	q3::inwork 14708,11820 14794,11770
-	q3::inwork 14794,11770 14856,11740
+	q4::inwork; 14575,11407 14434,11465
 EOF
      },
      { from  => 1445320800, # 2015-10-20 08:00
@@ -25035,7 +25031,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: XXX wann werden die Bauarbeiten beendet? --- #: next_check: 2016-03-29
-userdel	q4::inwork 5223,5704 5115,5551 5076,5500
+userdel	q4::inwork 5223,5704 5115,5551 5080,5498
 EOF
      },
      { from  => 1458428400, # 2016-03-20 00:00
@@ -26021,7 +26017,7 @@ EOF
        text  => 'Akazienstr.: Bauarbeiten im Kreuzungsbereich Belziger Str., Einbahnstraßenregelung',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2017-08-25
+#: last_checked: 2017-08-28
 #: check_frequency: 14d
 userdel	q3::inwork; 7201,8870 7107,9030 7035,9161
 EOF
@@ -26122,8 +26118,8 @@ EOF
        data  => <<EOF,
 #: XXX Baumaßnahme ist Ende 2018 fertig; Vollsperrung nur für 2-3 Wochen
 #: XXX wird es vielleicht Änderungen bei der Wegbeschaffenheit geben?
-#: last_checked: 2017-07-24
-#: next_check: 2017-09-01
+#: last_checked: 2017-08-28 (der Eingangsbereich ist zurzeit gesperrt, Umgehung existiert)
+#: next_check: 2017-09-15
 userdel	2::inwork 6815,8691 6912,8617
 EOF
      },
@@ -26132,7 +26128,7 @@ EOF
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-08-27
+#: last_checked: 2017-08-28
 #: check_frequency: 14d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
@@ -26213,8 +26209,11 @@ EOF
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.608925.php',
        data  => <<EOF,
 #: XXX wird sich die Qualität vielleicht bessern?
-#: next_check: 2017-09-01
-userdel	2::inwork 8234,4660 8575,4980 8598,4985 8618,5019 8784,5095
+#: last_checked: 2017-08-28 vvv
+userdel	2::inwork 8234,4660 8575,4980 8598,4985
+#: XXX hier sind gerade Bauarbeiten --- Verbundsteinpflaster bleibt wohl, der wassergebundene Teil sind besser aus
+userdel	2::inwork 8598,4985 8618,5019 8784,5095
+#: last_checked ^^^
 EOF
      },
      { from  => undef, # 

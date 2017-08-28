@@ -1307,9 +1307,9 @@ Zossener Str. -> Klausdorfer Str.: Straßenbahntrasse	3::igndisp 23080,15700 2321
 Klausdorfer Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23243,15820 23218,15671 23411,15632
 Zossener Str. -> Teupitzer Str.: Straßenbahntrasse	3::igndisp 23411,15632 23568,15603 23573,15627
 Teupitzer Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23573,15627 23568,15603 23617,15594
-Mittelstreifen	3nocross::ignrte 4741,5309 4748,5357 4861,5581
-Schloßstr. -> Wrangelstr.: Mittelstreifen	3::igndisp 4741,5309 4748,5357 4640,5411
-Wrangelstr. -> Schloßstr.: Mittelstreifen	3::igndisp 4640,5411 4748,5357 4861,5581
+Mittelstreifen	3nocross::ignrte 4741,5309 4745,5344 4861,5581
+Schloßstr. -> Wrangelstr.: Mittelstreifen	3::igndisp 4741,5309 4745,5344 4640,5411
+Wrangelstr. -> Schloßstr.: Mittelstreifen	3::igndisp 4640,5411 4745,5344 4861,5581
 Mittelstreifen	3nocross::ignrte 21378,14490 21408,14591 21537,14932
 Fridolinweg -> Blumberger Damm: Mittelstreifen	3::igndisp 21450,14576 21408,14591 21378,14490
 Blumberger Damm -> Fridolinweg: Mittelstreifen	3::igndisp 21537,14932 21408,14591 21450,14576
@@ -1902,9 +1902,6 @@ Hasenheide, westlicher Weg -> Columbiadamm: unbequem zu überqueren (Bordsteine)	
 Mittelstreifen	3nocross::ignrte 4807,5131 4766,5208 4745,5283
 Wolfensteindamm -> Fronhoferstr.: Mittelstreifen	3::igndisp 4807,5131 4766,5208 4656,5101
 Fronhoferstr. -> Wolfensteindamm: Mittelstreifen	3::igndisp 4656,5101 4766,5208 4745,5283
-Birkbuschstr.: unbequem zu passieren	3 4839,5167 4807,5131 4772,5069
-Birkbuschstr.: unbequem zu passieren	3 4772,5069 4807,5131 4839,5167
-Birkbuschstr.: unbequem zu passieren, aber Ausweichen auf linken Gehweg möglich	3 4839,5167 4807,5131 4846,5069
 Metallgitter auf dem Mittelstreifen	3nocross::ignrte 4807,5131 4846,5069 4879,5017
 Birkbuschstr. -> Oberlinstr.: Metallgitter auf dem Mittelstreifen	3::igndisp 4879,5017 4846,5069 4732,4939
 Oberlinstr. -> Birkbuschstr.: Metallgitter auf dem Mittelstreifen	3::igndisp 4732,4939 4846,5069 4807,5131
@@ -2922,7 +2919,6 @@ Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:inwork 14447,10491 14270,10584
 Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17453,7451 17295,7344 17211,7280 17091,7175 16971,7058 16747,6813
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,9200 12548,9167
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
-Fünf Morgen: Bauarbeiten, gesperrt	2::inwork 1437,5015 1486,5175
 Nalepastr.: wegen Straßenbau gesperrt	2::inwork 17190,7306 17211,7280 17219,7268 17286,7173
 Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14384,8056 14425,8052 14439,8050 14471,8046
 Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,12669 6765,12680

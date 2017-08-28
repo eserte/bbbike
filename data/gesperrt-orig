@@ -322,7 +322,7 @@ Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf
 #: XXX evtl wird die Straße für Radfahrer geöffnet
 #: osm_watch: way id="5110895" version="5"
-#: last_checked: 2017-08-22
+#: last_checked: 2017-08-28
 #: check_frequency: 60d
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7606,8598 7643,8634 7682,8598 7644,8560
@@ -1560,7 +1560,7 @@ Oranienburger Str.: Mittelstreifen	3nocross 5517,20120 5545,19909 5533,19811
 #: by: rjoop/srt
 Bahntrasse	3nocross 15875,1796 15835,1747 15799,1690 15729,1573
 Zossener Str.: Straßenbahntrasse	3nocross 23080,15700 23218,15671 23411,15632 23568,15603 23617,15594
-Schloßstr.: Mittelstreifen	3nocross 4741,5309 4748,5357 4861,5581
+Schloßstr.: Mittelstreifen	3nocross 4741,5309 4745,5344 4861,5581
 #: note: Luftbild
 Blumberger Damm: Mittelstreifen	3nocross 21378,14490 21408,14591 21537,14932
 Blumberger Damm: Mittelstreifen	3nocross 21709,15808 21682,15673 21675,15636 21647,15496
@@ -1722,11 +1722,7 @@ Karl-Marx-Allee: Mittelstreifen	3nocross 11226,12945 11289,12908 11589,12768 116
 Columbiadamm: unbequem zu überqueren (Bordsteine)	3nocross 10796,8498 10911,8457 11225,8350 11266,8336
 #: by: Axel Schumacher:
 Wolfensteindamm: Mittelstreifen	3nocross 4807,5131 4766,5208 4745,5283
-#: by: Wolfgang Schmidt: vvv
-Birkbuschstr.: unbequem zu passieren	3 4839,5167 4807,5131 4772,5069
-Birkbuschstr.: unbequem zu passieren	3 4772,5069 4807,5131 4839,5167
-Birkbuschstr.: unbequem zu passieren, aber Ausweichen auf linken Gehweg möglich	3 4839,5167 4807,5131 4846,5069
-#: by: ^^^
+# REMOVED (neue Ampel) --- #: by: Wolfgang Schmidt: vvv --- Birkbuschstr.: unbequem zu passieren	3 4829,5173 4807,5131 4772,5069 --- Birkbuschstr.: unbequem zu passieren	3 4772,5069 4807,5131 4827,5140 4829,5173 --- Birkbuschstr.: unbequem zu passieren, aber Ausweichen auf linken Gehweg möglich	3 4829,5173 4807,5131 4846,5069 --- #: by: ^^^
 #: by: Kai Brueggemann [AM] vvv
 Birkbuschstr.: Metallgitter auf dem Mittelstreifen	3nocross 4807,5131 4846,5069 4879,5017
 Linksabbiegen in den Wolfensteindamm gefährlich/unbequem	3nocross 4772,5069 4692,4997 4675,4983 4517,4853
@@ -2807,7 +2803,7 @@ Am Herzbergteich: noch wegen Bauarbeiten gesperrt; wann ist die Straße fertig?	2
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: next_check_id: RUEDERSDORFER-2017
-#: last_checked: 2017-08-26
+#: last_checked: 2017-08-28
 #: check_frequency: 14d
 Rüdersdorfer Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 13066,11854 13173,11788 13295,11792
 # 
@@ -3071,13 +3067,7 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
 # 
 # REMOVED (fertig) --- #: next_check_id: STEGLITZPARK-2015 vvv --- #: last_checked: 2015-09-27 vvv --- #: check_frequency: 180d vvv --- #: by: http://www.dafmap.de/d/berlin.html?id=4144&mt=0&zoom=16 (Geplanter Projektabschluss: 2016-12-31) --- #: osm_watch: way id="306238980" version="2" --- #: XXX laut osm living_street --- SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2408,1144 2352,1267 --- #: osm_watch: way id="148434465" version="4" --- #: XXX laut osm living_street --- SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2336,1111 2370,1127 2408,1144 2504,1186
-# 
-#: by: http://www.dafmap.de/d/berlin.html?id=3217&mt=0&zoom=15
-#: osm_watch: way id="318581438" version="4"
-#: last_checked: 2017-05-24
-#: check_frequency: 150d
-Fünf Morgen: Bauarbeiten, gesperrt	2::inwork 1437,5015 1486,5175
-# 
+# REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?id=3217&mt=0&zoom=15 --- #: osm_watch: way id="318581438" version="4" --- #: last_checked: 2017-05-24 --- #: check_frequency: 150d --- Fünf Morgen: Bauarbeiten, gesperrt	2::inwork 1437,5015 1486,5175
 # REMOVED --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5713 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810369999434/9999434/00071829/29-Anlagen/02/vzb0641_IV-B-Plan_XXI-32d-1_Auswertg_TOeB.pdf --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/artikel.434654.php --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/auslegungen/b-planentwurf_xxi-32d-1.pdf --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6762 --- #: XXX evtl. wird dieses Stück Straße komplett entfernt --- #: osm_watch: way id="24216753" version="14" --- #: last_checked: 2015-08-09 --- #: next_check: 2017-03-01 --- Gartenstr.: Baustelle	2::inwork 21193,11330 21214,11331
 # REMOVED --- #: XXX wann wird die Straße eröffnet? --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2016 (Widmung von Straßenland) --- #: osm_watch: way id="266854579" version="6" --- #: last_checked: 2015-08-02 --- Am Theodorpark: noch gesperrt	2::inwork 24905,10955 24949,10956 25055,10959 25143,10961
 # REMOVED -> temp-blockings --- #: XXX wann wird die Straße eröffnet? --- #: last_checked: 2015-08-02 --- #: check_frequency: 90d --- Theodorstr.: Bauarbeiten, gesperrt	2::inwork 24897,11083 24899,11044 24905,10955 24913,10884 24919,10818 24922,10785 24923,10774
