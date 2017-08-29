@@ -21,10 +21,10 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2017-08-28
+#: last_checked: 2017-08-29
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3 14254,11377 14211,11229
 # 
-#: last_checked: 2017-08-28
+#: last_checked: 2017-08-29
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 #: last_checked: 2017-08-20
@@ -85,6 +85,10 @@ Palisadenstr.: Bauarbeiten, teilweise Einbahnstraße, offen Richtung Osten	q2::in
 Bouchéstr.: Bauarbeiten an der Heidelberger Str., Fahrbahn gesperrt	q3::inwork 13489,9456 13357,9313
 # 
 ### Mitte ###
+# 
+#: last_checked: 2017-08-29
+#: check_frequency: 21d
+Märkisches Ufer: Bauarbeiten, Engstelle	q3+::inwork 10687,11853 10869,11949
 # 
 #: source_id: 2147341587
 #: last_checked: 2017-08-12 vvv
@@ -176,7 +180,7 @@ Prinzengasse: einige Fußgänger, parkende Autos	q3::inwork 9955,12300 10002,12305
 # REMOVED (Einbahnstraßenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universitätsstr.: wegen Bauarbeiten Einbahnstraße zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2017-08-15 vvv
+#: last_checked: 2017-08-29 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="5"
@@ -218,13 +222,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # REMOVED (nicht mehr) --- Ella-Trebe-Str./Bertha-Benz-Str./Katharina-Paulus-Str./Ilse-Schaeffer-Str.: Einbahnstraßenregelung wegen Bauarbeiten	q3::inwork; 7872,13022 7867,13106
 # REMOVED (fertig?) --- Ella-Trebe-Str./Bertha-Benz-Str./Ilse-Schaeffer-Str.: Einbahnstraßenregelung wegen Bauarbeiten	q3::inwork; 7867,13106 7937,13109
 # REMOVED (fertig?) --- Ella-Trebe-Str.: Einbahnstraßenregelung wegen Bauarbeiten	q3::inwork; 7939,13026 7948,12918
-# 
-#: by: http://www.bmbf.de/de/16888.php (Bezug im Herbst 2014)
-#: osm_watch: way id="4592727" version="13"
-#: last_checked: 2017-08-12
-#: check_frequency: 14d
-Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse!), Ausweichen auf Gehweg	q3::inwork 8315,13181 8406,13127
-# 
+# REMOVED (fertig) --- #: by: http://www.bmbf.de/de/16888.php (Bezug im Herbst 2014) --- #: osm_watch: way id="4592727" version="13" --- #: last_checked: 2017-08-12 --- #: check_frequency: 14d --- Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse!), Ausweichen auf Gehweg	q3::inwork 8315,13181 8406,13127
 # REMOVED (so gut wie fertig, man kommt als Radfahrer schon durch) --- #: last_checked: 2014-07-16 --- Bellermannstr.: Bauarbeiten der Wasserbetriebe, Ausweichen auf Gehweg für einen 70 Meter langer Abschnitt	q2::inwork 8912,16582 9107,16389
 # 
 #: next_check_id: ZEUGHAUS-2014
@@ -251,13 +249,13 @@ Werdersche Rosenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9883,12251 9909,
 #: XXX siehe auch Eintrag in handicap_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0194-oberwallstrae-werderscher-markt.html
 #: osm_watch: way id="66071370" version="4"
-#: last_checked: 2017-08-16
+#: last_checked: 2017-08-29
 #: check_frequency: 14d
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9898,12161 9883,12251
 # 
 #: next_check_id: STAATSOPER-2014
 #: XXX siehe auch aufgehobene Einbahnstraßenregelung in gesperrt-orig (Behrenstr./Bebelplatz)
-#: last_checked: 2017-08-12
+#: last_checked: 2017-08-29
 #: check_frequency: 14d
 Behrenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9743,12239 9798,12267
 #: next_check_id ^^^
@@ -304,7 +302,8 @@ Böckhstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 11640,9710 11411,9810
 #: source_id: 2147341145
 #: source_id: LMS-BR_r_LMS-BR_93387
 #: XXX laut vmz bis Anfang 2019, laut fritz bis 31.12.2018
-#: last_checked: 2017-07-14
+#: http://www.dafmap.de/d/berlin.html?id=3451&mt=0&zoom=16
+#: last_checked: 2017-08-29
 #: check_frequency: 180d
 #: valid: -20181231
 Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q2::inwork; 9022,10857 8941,10663 8926,10626
@@ -413,9 +412,9 @@ Wattstr.: Bauzäune	q3::inwork 17681,7589 17676,7555
 # 
 #: next_check_id: MOELLENDORFFSTR-2017
 #: XXX_prog abgeschätzter Zeitverlust durch 2x Ampeln, explizite "Radfahren verboten"-Schilder
-#: XXX laut fritz bis 29. August 2017, laut vmz bis Ende 2017
+#: XXX laut fritz bis 4. September 2017, laut vmz bis Ende 2017
 #: last_checked: 2017-08-27
-#: next_check: 2017-09-01
+#: next_check: 2017-09-04
 #: valid: -20170901
 Möllendorffstr.: Bauarbeiten, Radfahrer müssen auf die gegenüberliegende Seite wechseln	q4::inwork; 15420,12178 15361,12071
 # 
@@ -2540,7 +2539,7 @@ An der Neumark: laut Schild "Schrittgeschwindigkeit"	q2 11283,3774 11300,3709 11
 #: next_check_id: MINNATODENHAGENSTR-2016
 #: XXX entfernen, sobald die eigentliche Straße offen ist
 #: last_checked: 2017-08-10
-#: check_frequency: 60d
+#: next_check: 2018-01-30
 (Gehweg an der zukünftigen Minna-Todenhagen-Str.): einige Fußgänger	q2 17681,7589 17470,7473 17295,7358
 Dalandweg: schmale und kurvenreiche Straße	q1 5120,4318 5226,4259 5250,4298 5311,4270 5356,4249 5385,4236 5541,4305
 (Spreeuferweg): einige Fußgänger	q1 21090,5417 21085,5451 20827,5431

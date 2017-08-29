@@ -3961,7 +3961,7 @@ userdel	2::inwork 6815,8691 6912,8617
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2017-08-28
+         'data' => '#: last_checked: 2017-08-29
 #: check_frequency: 14d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
@@ -4069,8 +4069,8 @@ userdel	2::inwork 4561,13244 4547,13139 4576,13115
        },
        {
          'data' => '#: source_id: 2147341585
-#: note: laut vmz bis Ende 08/17, laut fritz bis 2017-08-31
-#: next_check: 2017-08-31
+#: note: laut vmz bis Mitte 10/2017, laut fritz bis 2017-08-31
+#: next_check: 2017-10-15
 userdel	q4::inwork 854,24387 836,24440 813,24497 790,24556 784,24612 790,24698 808,24790 811,24833 793,24943 785,24968
 ',
          'from' => 1500156000,

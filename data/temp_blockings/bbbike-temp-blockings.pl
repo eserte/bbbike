@@ -5249,7 +5249,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003395',
        data  => <<EOF,
-userdel	2::inwork 7002,11034 7010,11002 6966,10931 6929,10852
+userdel	2::inwork 7002,11034 6998,11003 6966,10931 6929,10852
 EOF
      },
      { from  => 1153739453, # 2006-07-24 13:10
@@ -26128,7 +26128,7 @@ EOF
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-08-28
+#: last_checked: 2017-08-29
 #: check_frequency: 14d
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
@@ -26175,12 +26175,12 @@ EOF
        data  => <<EOF,
 userdel	2::temp 6476,11325 6630,11247 6606,11222 6582,11202 6447,11144
 userdel	2::temp 6841,11114 6630,11247 6679,11319 6692,11365 6716,11439 6825,11486
-userdel	2::temp 5986,10976 6058,10988 6145,10975 6168,11042 6447,11144 6452,11118 6477,11045
+userdel	2::temp 5986,10976 6058,10988 6145,10975 6168,11042 6447,11144 6452,11118 6472,11049
 userdel	2::temp 6626,11178 6582,11202 6495,11251 6350,11301 6346,11326 6337,11365 6200,11417
 	3 6851,11346 6692,11365 6481,11400
 	3 6481,11400 6692,11365 6851,11346
-	3 6272,10926 6145,10975 6122,10925
-	3 6122,10925 6145,10975 6272,10926
+	3 6266,10927 6145,10975 6122,10925
+	3 6122,10925 6145,10975 6266,10927
 EOF
      },
      { from  => $isodate2epoch->("2017-07-19 12:00:00"),
@@ -26292,8 +26292,8 @@ EOF
        source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.611086.php',
        data  => <<EOF,
 #: source_id: 2147341585
-#: note: laut vmz bis Ende 08/17, laut fritz bis 2017-08-31
-#: next_check: 2017-08-31
+#: note: laut vmz bis Mitte 10/2017, laut fritz bis 2017-08-31
+#: next_check: 2017-10-15
 userdel	q4::inwork 854,24387 836,24440 813,24497 790,24556 784,24612 790,24698 808,24790 811,24833 793,24943 785,24968
 EOF
      },

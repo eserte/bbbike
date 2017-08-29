@@ -2791,7 +2791,11 @@ Schranke	BNP:10::trailer=20 15334,16718
 Drängelgitter	BNP:3::trailer=10 3783,-2079
 #
 ############################################################################
-#
+# 
+#: by: http://www.dafmap.de/d/berlin.html?id=4055&mt=0&zoom=16
+#: last_checked: 2017-08-29
+Zufahrt Parkhaus: Abrissarbeiten, Straße komplett gesperrt	2::inwork 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
+# 
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_04_0325_0472_online.pdf
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_15_1637_1712_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="475965723" version="1"
@@ -2803,7 +2807,7 @@ Am Herzbergteich: noch wegen Bauarbeiten gesperrt; wann ist die Straße fertig?	2
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: next_check_id: RUEDERSDORFER-2017
-#: last_checked: 2017-08-28
+#: last_checked: 2017-08-29
 #: check_frequency: 14d
 Rüdersdorfer Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 13066,11854 13173,11788 13295,11792
 # 
@@ -2916,7 +2920,7 @@ Möwenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 22108,10970 22195,10993
 #: check_frequency: 360d
 Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11485 20631,11621 20633,11651
 # 
-#: last_checked: 2017-08-25
+#: last_checked: 2017-08-29
 Gitschiner Str./Lobeckstr.: Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3nocross::inwork 10122,10294 10363,10303 10605,10312
 # 
 #: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus? --- ja, wird es geben
@@ -3031,9 +3035,11 @@ Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2:inwork 14447,10491 14270,10
 # 
 # REMOVED (mittlerweile schon passierbar) --- #: next_check_id: MARIANNEN-2016 vvv --- #: source_id: INKO_2147340291_COPY_1 vvv --- #: source_id: 2147340291 vvv --- #: source_id: 2147340768 vvv --- # REMOVED (aufgehoben) --- #: priority: #A vvv --- #: XXX laut fritz bis 16.12.2016 --- #: last_checked: 2016-12-15 vvv --- #: next_check: 2017-01-10 vvv --- Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11512,10105 11616,10288 --- #: source_id: 2147340777 --- #: XXX laut fritz bis 10.01.2017 --- #: priority: #A --- #: last_checked: 2016-12-15 --- #: check_frequency: 7d --- Mariannenstr.: Baustelle, Fahrbahn gesperrt	2s:q3 11671,10402 11616,10288
 # 
-#: note: siehe auch http://www.detlefzabel.de/spreebruecke-neubau/
 #: next_check_id: MINNATODENHAGENSTR-2016
+#: note: siehe auch http://www.detlefzabel.de/spreebruecke-neubau/
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170829
 #: last_checked: 2017-08-08
+#: next_check: 2018-01-30
 Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17453,7451 17295,7344 17211,7280 17091,7175 16971,7058 16747,6813
 # 
 # REMOVED (laut osm nicht mehr highway=construction) --- #: osm_watch: way id="291810047" version="7" --- #: last_checked: 2016-07-23 --- Alfonsstr.: Bauzäune	2::inwork 19027,1427 19034,1441 19061,1457
@@ -3130,7 +3136,7 @@ Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::in
 # 
 #: next_check_id: EUROPACITY-2015 vvv
 #: last_checked: 2017-07-14 vvv
-#: check_frequency: 60d vvv
+#: check_frequency: 45d vvv
 #: osm_watch: way id="237704729" version="8"
 Lydia-Rabinowitsch-Str.: noch gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924
 #: osm_watch: way id="237716438" version="6"
@@ -3224,6 +3230,7 @@ Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: Durchfahrt noch nicht zuverläss
 # 
 # REMOVED --- #: next_check_id: STERNDAMM-2016 --- #: by: fritz --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160124 --- #: source_id: 2147339574 --- #: source_id: IM_026665 --- #: source_id: 2147340122 --- #: source_id: LMS-BR_r_LMS-BR_68908 --- #: last_checked: 2016-06-26 --- #: check_frequency: 90d --- #: priority: #A --- #: XXX Gesamtmaßnahme bis 2018 (oder 2017?) --- 
 #: XXX laut Fritz bis April 2018
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170829 (ebenso: bis April 2018)
 #: source_id: 2147341515	
 #: next_check: 2018-04-15
 #: valid: -20180415
@@ -3316,7 +3323,7 @@ Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,2
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
 #: next_check_id: STAATSOPER-2014 vvv
-#: last_checked: 2017-08-24 vvv
+#: last_checked: 2017-08-29 vvv
 #: next_check: 2017-10-03 vvv
 #: by: http://www.dafmap.de/d/berlin.html?id=3588&mt=0&zoom=16
 #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung)
@@ -3338,7 +3345,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2017-08-13
+#: last_checked: 2017-08-29
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

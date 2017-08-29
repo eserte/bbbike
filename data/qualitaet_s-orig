@@ -1786,7 +1786,7 @@ Briesestr.: Kopfsteinpflaster	Q2 12446,8032 12668,8077 12794,8103
 Geygerstr.: Asphalt	Q0 13063,8151 13194,8276
 Bellevue-Ufer: Kleinsteinpflaster	Q1- 6694,12627 7031,12320
 Bettina-von-Arnim-Ufer: Asphalt	Q0 7437,12368 7561,12527 7670,12576
-Große Querallee: Asphalt mit einigen Schäden	Q1+ 7875,12363 7822,12201 7816,12150
+Große Querallee: Asphalt mit einigen leichten Schäden	Q0- 7875,12363 7822,12201 7816,12150
 Große Querallee: Kleinsteinpflaster	Q1 7875,12363 7945,12592
 Paul-Löbe-Allee: Asphalt	Q0 7851,12590 7945,12592 8122,12603
 (Große Querallee - Tiergartenstr.): Asphalt	Q0 7816,12150 7823,12120 7832,12036 7822,11952 7801,11875
@@ -3938,6 +3938,9 @@ Hochlandstr.: Asphalt	Q0 31987,4332 31783,4162 31699,4090 31608,4013 31482,3904 
 Hochlandstr.: Beton	Q0 31358,3801 31261,3707 31199,3631 31167,3563 31139,3497
 Siedlung am Walde: unbefestigter Weg, holprig, sandig	Q3+ 31167,3563 31396,3471 31500,3427
 Siedlung am Walde: unbefestigter Weg, holprig, sandig	Q3+ 31396,3471 31412,3503 31544,3617 31577,3698
+#: XXX nach den Bauarbeiten bessere Qualität?
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170829
+#: next_check: 2017-11-30
 Güttlander Str.: Beton mit Schäden	Q1 31695,3690 31651,3856 31608,4013
 Frankenbergstr.: Asphalt, teils wellig	Q1 31699,4090 31739,3942 31783,3851 31839,3774 31909,3703 31986,3646
 Lassallestr. (Wilhelmshagen): Asphalt	Q0- 31783,4162 31793,4072 31822,3982 31856,3903 31905,3839 31997,3753 32099,3705 32149,3688 32222,3680
@@ -18362,6 +18365,7 @@ Am Grünen Zipfel: Kleinpflastersteine	Q2 2003,24702 1893,24843
 Am Querschlag: Kleinpflastersteine	Q2 1633,24939 1643,25005 1644,25092
 Mattersburger Weg: Kleinpflastersteine	Q2 2018,24313 1992,24354 1963,24400 1908,24494
 #: XXX wird sich die Qualität nach den Bauarbeiten verändern?
+#: osm_watch: way id="225878745" version="5"
 #: last_checked: 2017-08-19
 #: next_check: 2017-11-21
 #: priority: #A
