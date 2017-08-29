@@ -46,7 +46,8 @@ my %versioned_file_to_cat;
 			    );
 
     my @gesperrt_3_16 = (
-			 sub { /^(1|2|3|3nocross)(?:::?(?:inwork|temp|igndisp|ignrte))?$/ }, # XXX both ":" and "::" needs to be allowed here :-(
+			 sub { /^(1|2)(?:::?(?:inwork|temp|igndisp|ignrte))?$/ }, # XXX both ":" and "::" needs to be allowed here :-(
+			 sub { /^(3|3nocross)(?:::?(?:inwork|temp|igndisp|ignrte))*$/ }, # XXX both ":" and "::" needs to be allowed here :-(
 			 sub { /^0:\d+(:-?\d+)?$/ },
 			 sub { /^BNP:\d+(:-?\d+(:trailer=(no|\d+))?)?$/ },
 			 sub { /^1s(:q\d)?(:(?:inwork|temp))?$/ },
