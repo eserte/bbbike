@@ -151,7 +151,7 @@
 
 			my @cityparts = $do_sort_by_count
 				? map { $_->[1] }
-				  sort { $a->[0] <=> $b->[0] }	
+				  sort { $b->[0] <=> $a->[0] }	
 				  map { my $link = $citypart2link{$_}; [ $link ? $link->{count} : 0, $_ ]; }
 				  keys %citypart2polygon
 				: sort keys %citypart2polygon;
