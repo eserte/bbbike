@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2005,2006,2008,2009,2010,2011,2012,2013,2014,2015,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2005,2006,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -108,12 +108,12 @@ EOF
 }
 
 sub teaser_kreisfahrt_adfc {
-    my $out_of_date = $today lt "20160903" || $today gt "20160917";
+    my $out_of_date = $today lt "20170902" || $today gt "20170916";
     if (!$out_of_date) {
-	my $adfc_url    = "http://adfc-berlin.de/aktiv-werden/bei-demonstrationen/kreisfahrt/376-adfc-kreisfahrt-2016.html";
+	my $adfc_url    = "http://adfc-berlin.de/aktiv-werden/bei-demonstrationen/kreisfahrt/460-adfc-kreisfahrt-2017.html";
 	my $kreisfahrt_img = "/BBBike/misc/kreisfahrt_anyyear/kreisfahrt_anyyear.png";
 	<<EOF
-<div class="teaser"><a style="text-decoration:none;" href="$adfc_url"><img src="$kreisfahrt_img" alt="ADFC-Kreisfahrt ${year}" border="0"" /></a> am 17. September $year</div>
+<div class="teaser"><a style="text-decoration:none;" href="$adfc_url"><img src="$kreisfahrt_img" alt="ADFC-Kreisfahrt ${year}" border="0"" /></a> am 16. September $year</div>
 EOF
     } else {
 	();

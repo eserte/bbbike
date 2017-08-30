@@ -53,7 +53,7 @@ EXTRA_MISCSRC_FILES=	bbd2esri \
 			bbbike_cgi_clean_expired_cache.pl \
 			cron-wrapper \
 			update-modperl-reload-touchfile.pl
-EXTRA_MISC_FILES=	gpx.xsd kml21.xsd bbbikecgires.kwalify bbbikecgires.rnc
+EXTRA_MISC_FILES=	gpx.xsd kml21.xsd bbbikecgires.kwalify bbbikecgires.rnc kreisfahrt_anyyear/kreisfahrt_anyyear.png
 EXTRA_HTML_FILES=	Makefile newstreetform.tpl.html \
 			opensearch/bbbike-opensearch.tpl.src \
 			opensearch/bbbike-opensearch.tpl.xml \
@@ -544,6 +544,9 @@ prepare-bbbike-dist-prog-bbbike-misc:
 	    mkdir ${CURDIR}/BBBike/misc
 .for f in ${EXTRA_MISC_FILES}
 	if [ ! -e ${CURDIR}/BBBike/misc/$f -o ${BBBIKE_ROOT_DIR}/misc/$f -nt ${CURDIR}/BBBike/misc/$f ] ; then \
+	    if echo $f | grep -sq / ; then \
+		mkdir -p $$(dirname ${CURDIR}/BBBike/misc/$f); \
+	    fi; \
 	    cp -pf ${BBBIKE_ROOT_DIR}/misc/$f ${CURDIR}/BBBike/misc/$f; \
 	fi
 .endfor
