@@ -15,7 +15,7 @@
 use strict;
 
 our $IMPL = 'Imager';
-our $DEBUG = 1;
+our $DEBUG = 0;
 
 sub debug ($) {
     return if !$DEBUG;
