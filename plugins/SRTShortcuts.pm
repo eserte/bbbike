@@ -2659,8 +2659,13 @@ sub garmin_devcap {
     my $devcap_data = BBBikeYAML::LoadFile("$FindBin::RealBin/misc/garmin_devcap.yaml");
     my $t = $main::top->Toplevel(-title => 'Garmin devices');
     my $lb = $t->Scrolled('Listbox', -scrollbars => 'osoe', -selectmode => 'single')->pack(qw(-fill both -expand 1));
+    my @prod_id_list = do {
+	no warnings 'uninitialized', 'numeric';
+	# younger devices (by release_date or with larger product ids) first
+	sort { $devcap_data->{$b}->{release_date} cmp $devcap_data->{$a}->{release_date} || $b <=> $a } keys %$devcap_data;
+    };
     my @data;
-    for my $prod_id (sort { $b <=> $a } keys %$devcap_data) { # younger devices (with larger product ids) first
+    for my $prod_id (@prod_id_list) {
 	my $name = $devcap_data->{$prod_id}->{name};
 	push @data, [$name, $prod_id];
 	$lb->insert('end', $name);

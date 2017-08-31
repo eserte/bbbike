@@ -1,7 +1,7 @@
 ---
 type: map
 mapping:
-  # Key is product id
+  # Key is product id (older devices) or device model name (newer devices)
   =:
     type: map
     mapping:
@@ -26,6 +26,7 @@ mapping:
           - simpleascii # only uppercase letters
           - ascii
           - latin1 # though some characters seem to be forbidden, like < and >
+          - latin1+simplearrow # latin1 including four unicode arrows
 
       # True if route number has to be unique, like specified in
       # the garmin protocol specification.
@@ -44,3 +45,7 @@ mapping:
             pattern: /^D\d+$/
           trk_hdr:
             pattern: /^D\d+$/
+
+      release_date:
+        type: text
+        pattern: /^\d{4}(-\d{2}(-\d{2})?)?$/

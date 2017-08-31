@@ -45,3 +45,11 @@
     wpt_data: D110
     trk_data: D301
     trk_hdr: D310
+eTrex 30:
+  name: eTrex 30
+  wpts_in_route: 250
+  # wpts_in_routable_route: ?
+  wpt_length: 20
+  wpt_charset: latin1+simplearrow
+  unique_route_number: 0
+  release_date: 2011-05
