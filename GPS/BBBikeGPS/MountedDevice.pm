@@ -18,7 +18,7 @@
 
     use strict;
     use vars qw($VERSION);
-    $VERSION = '0.08';
+    $VERSION = '0.09';
 
     sub has_gps_settings { 1 }
 
@@ -324,9 +324,13 @@
 	}
 	
 	######################################################################
-	# call the callback
+	# call the callback, but don't fail at this point (do umount first)
 
-	my $info = $cb->($mount_point);
+	my $die;
+	my $info = eval { $cb->($mount_point) };
+	if ($@) {
+	    $die = $@;
+	}
 
 	######################################################################
 	# do the unmount (maybe)
@@ -374,7 +378,15 @@
 	    if (_is_mounted($mount_point)) {
 		die "$mount_point is still mounted, despite of umount call";
 	    }
+
+	    if (defined $die) {
+		die $die;
+	    }
 	} else {
+	    if (defined $die) { # die early, no need to fsync here
+		die $die;
+	    }
+
 	    # Make sure generated file(s) are really written if possible
 	    if (ref $info eq 'HASH' && $info->{files}) {
 		my @sync_files = @{ $info->{files} || [] };
@@ -651,6 +663,13 @@ for the internal flash:
 Or for the first partition on a card:
 
     perl -w -Ilib -MGPS::BBBikeGPS::MountedDevice -e 'GPS::BBBikeGPS::MountedDevice->maybe_mount(sub { my $dir = shift; system("ls", "-al", $dir); 1 }, garmin_disk_type => "card")'
+
+The mount rule is: if the device is already mounted, then don't
+unmount at the end. If the device is not mounted, then unmount after
+the callback.
+
+It's made sure that an unmount (if required) is done even if the
+callback dies.
 
 =item C<get_gps_device_status(I<disk_type>, I<inforef>)>
 
