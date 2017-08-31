@@ -249,7 +249,7 @@ Lohmühlenbrücke: Asphalt	Q0 12871,9356 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2017-08-01
+#: last_checked: 2017-08-30
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15021,11152 15102,11120
@@ -7082,7 +7082,7 @@ Straße 24: unbefestigte Straße	Q2 14532,20820 14484,20832
 Straße 46 (Blankenburg): Asphalt	Q0 14482,20547 14685,20504
 Straße 46 (Blankenburg): unbefestigte Straße	Q2 14320,20580 14482,20547
 Mittelstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 13912,20650 14320,20580
-Am Fließ: Asphalt	Q0 13938,20548 13955,20452 13991,20425 14128,20410 14263,20352 14386,20237 14432,20188
+Am Fließ: Asphalt	Q0 13931,20549 13955,20452 13991,20425 14128,20410 14263,20352 14386,20237 14432,20188
 Bebelplatz: gepflastert	Q1 9708,12235 9702,12307 9695,12390
 Bebelplatz: gepflastert	Q1 9743,12239 9702,12307 9656,12386
 Bebelplatz: gepflastert	Q1 9674,12231 9702,12307 9734,12395
@@ -7737,7 +7737,7 @@ Ahornallee (Blankenburg): Kopfsteinpflaster	Q2 14157,21442 14227,21657
 Georgenstr. (Blankenburg): unbefestigte Straße	Q2 14263,20352 14294,20412 14309,20486 14320,20580 14328,20644 14304,20682
 Georgenstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 14304,20682 14236,20773
 Georgenstr. (Blankenburg): mäßiger Asphalt	Q1 14236,20773 14196,20825 14091,20962
-(Parkstr./Am Fließ - Heinersdorfer Str.): wassergebundene Decke	Q1 13888,20558 13584,20621
+(Parkstr./Am Fließ - Heinersdorfer Str.): wassergebundene Decke	Q1 13888,20558 13827,20557 13743,20594 13602,20613 13584,20628
 Frau-Elster-Weg: Gras	Q3 13953,18842 13948,18757 14011,18589
 Schneehornpfad: Asphalt	Q0 13497,18087 13619,18222
 Gustav-Adolf-Str.: Kopfsteinpflaster	Q2; 13708,17453 13633,17399
@@ -8842,7 +8842,7 @@ Teichgräberzeile: Beton	Q0 3088,14591 3196,14593
 Wiersichweg: Beton	Q0 3096,14657 2972,14654
 (Bootshausweg - Am Havelgarten): wassergebundene Decke	Q1 -1229,16773 -1311,16736 -1343,16732
 (Bootshausweg - Am Havelgarten): unbefestigter Weg	Q2+ -1343,16732 -1418,16755 -1459,16723
-Strausseeweg: Asphalt	Q0 -1570,16629 -1629,16640
+Strausseeweg: Asphalt	Q0 -1570,16629 -1627,16643
 Zeuthener-See-Weg: Asphalt	Q0 -1647,16573 -1587,16558
 Kindelseeweg: Asphalt	Q0 -1603,16495 -1661,16506
 Röddelinseeweg: Asphalt	Q0 -1783,16533 -1705,16515
@@ -15469,7 +15469,7 @@ Rendtorffstr.: Beton	Q0- 1212,559 1046,537
 # 
 #: by: Peter Lange:
 #: corrected_by: srt ("" -> "schlechtes")
-Gernroder Str.: schlechtes Kopfsteinpflaster	Q3 13938,20548 13912,20650 13929,20745 13931,20764 13909,20928
+Gernroder Str.: schlechtes Kopfsteinpflaster	Q3 13931,20549 13912,20650 13929,20745 13931,20764 13909,20928
 # 
 #: by: Gerlind Rudolph:
 #: corrected_by: srt (guter Asphalt -> ...)
@@ -19009,9 +19009,8 @@ Forstweg (Frohnau): mäßig befahrbare Kleinpflastersteine	Q2 1195,24384 1252,2437
 #: by: ^^^
 # 
 #: by: Christiane Müller:
-#: confirmed_by: srt
-#: add_fragezeichen: wurde die Straße 31 neu asphaltiert?
-Straße 31 (Heinersdorf): mäßiger fester Sandweg	Q2 13008,18984 13054,18977 13103,18957 13118,19018 13129,19104
+#: corrected_by: srt (neu gemacht)
+Straße 31 (Heinersdorf): Asphalt	Q0- 13008,18984 13054,18977 13103,18957 13118,19018 13129,19104
 # 
 #: by: Heidi (...mary): vvv
 #: corrected_by: srt (guter Asphalt -> ...)
@@ -19179,7 +19178,8 @@ Wilhelm-Gericke-Str.: Kopfsteinpflaster	Q2+ 5627,19940 5651,19953 5804,20047 591
 Segewaldweg: guter Asphalt	Q0 22742,3382 22638,3366 22553,3363 22468,3359 22356,3351
 # 
 #: by: Marco (...-bet@...):
-Schmohlstr.: schlechtes Kopfsteinpflaster	Q3 13057,17120 13159,17196 13196,17223 13239,17269
+#: corrected_by: srt (Q3 -> Q3+)
+Schmohlstr.: schlechtes Kopfsteinpflaster	Q3+ 13057,17120 13159,17196 13196,17223 13239,17269
 # 
 #: by: Jörg Böhmer:
 Wegscheider Str.: guter Asphalt	Q0 -3046,16548 -3214,16561 -3319,16572 -3343,16573 -3444,16576 -3563,16581
@@ -21454,8 +21454,8 @@ Kreideweg: guter Asphalt	Q0 10748,2233 10840,2196 10886,2167
 Fritz-Kühn-Str.: Asphalt	Q0 21688,-589 21666,-657 21487,-912 21445,-963
 # 
 #: by: Frank (winti):
-#: confirmed_by: public imagery (only Kopfsteinpflaster)
-Privatstr. 14: schlechtes Kopfsteinpflaster	Q3 13103,17280 13159,17196
+#: corrected_by: srt (schlechtes -> ...)
+Privatstr. 14: Kleinsteinpflaster, zusätzliche Aufpflasterungen	Q2 13103,17280 13159,17196
 # 
 #: by: Michael (hinundweg):
 Mittelstr. (Alt-Hohenschönhausen): guter Asphalt	Q0 15539,14493 15647,14693 15706,14752 15856,14915
@@ -22436,7 +22436,7 @@ Privatstr. 10: Asphalt mit Schäden	Q1- 17141,17070 17134,16988 17129,16922 17120
 # 
 #: by: Wachholz:
 #: confirmed_by: srt
-Parkstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 14466,20455 14309,20486 13938,20548 13888,20558
+Parkstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 14466,20455 14309,20486 13931,20549 13888,20558
 # 
 #: by: Oliver Blankenstein:
 Söllerpfad: gutes Verbundsteinpflaster	Q1 1950,25763 1843,25746
@@ -22942,7 +22942,8 @@ Straße 206: mäßiger Asphalt	Q1- 13247,17262 13321,17318 13406,17382
 #: confirmed_by: srt (mäßiger Asphalt -> ...)
 Straße 245 (Weißensee): leicht schadhafter Asphalt	Q0- 13590,17368 13271,17589 13243,17615
 #: note: laut anonymous Kopfsteinpflaster, Q2, enge Straße, q0, keine Angaben zu einer Einbahnstraße
-Privatstr. 13: schlechtes Kopfsteinpflaster	Q3 13018,17264 13103,17280 13171,17335
+#: corrected_by: srt (schlechtes -> ...)
+Privatstr. 13: Kleinsteinpflaster, zusätzliche Aufpflasterungen	Q2 13018,17264 13103,17280 13171,17335
 Preunelstr.: schlechtes Kopfsteinpflaster	Q3 12865,17381 12930,17302 12965,17324 13012,17332
 #: by: ^^^
 # 
@@ -23279,7 +23280,7 @@ Reclamweg: guter Asphalt	Q0 -5196,12452 -5126,12425
 # 
 #: by: Roland Krause vvv
 #: corrected_by: srt (Q2 -> Q1)
-(Hauffallee - Blankenburger Pflasterweg): größtenteils fester Sandweg, gut befahrbar	Q1 14284,19451 14328,19527 14364,19613 14374,19728 14338,19830 14348,19861
+(Hauffallee - Blankenburger Pflasterweg): größtenteils fester Sandweg, gut befahrbar	Q1 14284,19451 14328,19527 14366,19602 14374,19728 14338,19830 14348,19861
 #: confirmed_by: srt
 Grünauer Weg: mäßiges Kopfsteinpflaster	Q2-; 25182,-2915 25174,-2901 25113,-2797 25090,-2757 25041,-2675 25007,-2620
 #: confirmed_by: srt

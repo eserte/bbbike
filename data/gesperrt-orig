@@ -541,10 +541,6 @@ Im Heidewinkel	1 1065,15229 1009,15400 978,15496 877,15474 772,15460
 Teufelsseestr.	1 454,11159 438,11236
 #: by: Michael Häusler:
 Auerhahnbalz	1 723,4572 697,4605 668,4653 650,4712 636,4765
-#: by: Marco (mar-bet):
-#: add_fragezeichen: ist die Einbahnstraße für Radfahrer offen?
-#: XXX auch die anderen Einbahnstraßen in der Gegend anschauen
-Schmohlstr.	1 13239,17269 13196,17223 13159,17196 13057,17120
 Flughafen Tempelhof	1 9364,8640 9451,8548 9401,8510 9321,8607
 Zufahrt zu Germaniagarten/Oberlandgarten	1 11240,6350 11205,6358 11200,6372 11211,6384 11244,6379 11272,6374 11278,6359 11266,6347 11240,6350
 Germaniagarten	1 11224,6244 11206,6252 11220,6323 11237,6326 11252,6319 11243,6246 11224,6244
@@ -650,6 +646,7 @@ Natalissteig	1 1200,14943 1223,14824 1226,14714
 Alt-Biesdorf	1 20375,11694 20435,11698 20575,11698 21108,11628
 Alt-Biesdorf	1 21108,11628 20963,11618 20633,11651 20549,11659 20375,11694
 #: by: Frank Winterlich:
+#: confirmed_by: srt
 Privatstr. 14	1s:q3 13159,17196 13103,17280
 #: by: Ilka Gomoll, osm
 #: confirmed_by: srt
@@ -744,6 +741,7 @@ Von-der-Gablentz-Str.	1 5144,17659 4946,17701 4872,17703 4816,17712
 #: by: Christian (i8pp):
 Kemmannweg	1 -4207,14473 -4117,14458 -4053,14428 -3937,14340 -3911,14331 -3819,14302
 #: by: jan (...matrix): vvv
+#: confirmed_by: srt
 Privatstr. 13	1 13171,17335 13103,17280 13018,17264
 #: XXX_osm: Einbahnstraße fehlt bei osm
 Preunelstr.	1 13012,17332 12965,17324 12930,17302 12865,17381
@@ -994,8 +992,8 @@ Grunerstr. - Gustav-Böß-Str.	1 10772,12515 10953,12638
 #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/umleitung_2.ba_1_teilabschnitt.pdf?start&ts=1316168438&file=umleitung_2.ba_1_teilabschnitt.pdf
 Grumbkowstr.	1 11555,20051 11627,19907 11695,19760
 Hardangerstr.	1 11725,16630 11720,16752
-#: note: Radfahren explizit verboten
-(Weg)	2 14432,20188 14463,20160
+#: note: Radfahren explizit verboten (Golfplatz)
+(Weg)	2 14432,20188 14650,19956
 Caseler Str.	1s:q3 14732,16770 14700,16790 14608,16772
 Ottmachauer Steig	1 -519,4737 -496,4718 -435,4687 -369,4631 -354,4603 -319,4550 -283,4495 -274,4474 -277,4442
 Salemer Steig	1 -581,4662 -558,4639 -531,4599 -493,4529 -472,4476 -459,4422 -441,4354
@@ -2807,7 +2805,7 @@ Am Herzbergteich: noch wegen Bauarbeiten gesperrt; wann ist die Straße fertig?	2
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: next_check_id: RUEDERSDORFER-2017
-#: last_checked: 2017-08-29
+#: last_checked: 2017-08-31
 #: check_frequency: 14d
 Rüdersdorfer Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 13066,11854 13173,11788 13295,11792
 # 
@@ -2920,7 +2918,7 @@ Möwenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 22108,10970 22195,10993
 #: check_frequency: 360d
 Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11485 20631,11621 20633,11651
 # 
-#: last_checked: 2017-08-29
+#: last_checked: 2017-08-31
 Gitschiner Str./Lobeckstr.: Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3nocross::inwork 10122,10294 10363,10303 10605,10312
 # 
 #: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus? --- ja, wird es geben
@@ -2972,11 +2970,11 @@ Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtun
 # 
 #: osm_watch: way id="466318949" version="3"
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
-#: last_checked: 2017-08-21
+#: last_checked: 2017-08-30
 Bouchéstr.: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13298,9252 13190,9139
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
-#: last_checked: 2017-08-21
+#: last_checked: 2017-08-30
 Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13176,9302 13100,9210
 # 
 #: next_check_id: HEIDELBERGER-2017
@@ -2998,7 +2996,7 @@ Heidelberger Str.: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13489,9199 134
 #: osm_watch: way id="42091230" version="19"
 #: osm_watch: way id="52960100" version="10"
 #: last_checked: 2017-08-26 vvv
-#: next_check: 2017-08-30 (vermutlich wird nur auf die neue Fahrbahnhälfte gewechselt werden) vvv
+#: next_check: 2017-12-31 (vermutlich wird nur auf die neue Fahrbahnhälfte gewechselt werden) vvv
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 8732,14098 8654,14194
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q4:inwork 8654,14194 8607,14253 8527,14352 8442,14456
 #: next_check ^^^
@@ -3030,7 +3028,7 @@ Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,
 #: check_frequency: 60d
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 # 
-#: last_checked: 2017-08-22
+#: last_checked: 2017-08-30
 Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2:inwork 14447,10491 14270,10584
 # 
 # REMOVED (mittlerweile schon passierbar) --- #: next_check_id: MARIANNEN-2016 vvv --- #: source_id: INKO_2147340291_COPY_1 vvv --- #: source_id: 2147340291 vvv --- #: source_id: 2147340768 vvv --- # REMOVED (aufgehoben) --- #: priority: #A vvv --- #: XXX laut fritz bis 16.12.2016 --- #: last_checked: 2016-12-15 vvv --- #: next_check: 2017-01-10 vvv --- Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11512,10105 11616,10288 --- #: source_id: 2147340777 --- #: XXX laut fritz bis 10.01.2017 --- #: priority: #A --- #: last_checked: 2016-12-15 --- #: check_frequency: 7d --- Mariannenstr.: Baustelle, Fahrbahn gesperrt	2s:q3 11671,10402 11616,10288
@@ -3053,7 +3051,7 @@ Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17453,7451 17295,73
 #: XXX Bauarbeiten (Erweiterung des Rütli-Campus?)
 #: XXX Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="137084083" version="7"
-#: last_checked: 2017-07-04
+#: last_checked: 2017-08-30
 #: check_frequency: 60d
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,9200 12548,9167
 # 
@@ -3179,7 +3177,7 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 # 
 # REMOVED (Aufschüttung statt Brücke) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6003 (Forderung nach Wiederherstellung) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6003&date=20151213 (Abriss der Brücke) --- #: XXX: Umfahrung existiert mittlerweile --- bleibt die Sperrung permanent? --- #: XXX: sobald die Brücke abgerissen wurde -> aus den Daten entfernen --- #: last_checked: 2015-10-04 --- #: check_frequency: 180d --- Weg zwischen S-Wartenberg und S-Hohenschönhausen: Brücke morsch und gesperrt	2::inwork 17159,18375 17235,18352
 # 
-#: osm_watch: way id="193373934" version="8"
+#: osm_watch: way id="193373934" version="10"
 #: last_checked: 2017-08-17
 Frauenauer Str.: Straße fertig, aber noch gesperrt	2::inwork 19663,9757 19858,9784
 # 

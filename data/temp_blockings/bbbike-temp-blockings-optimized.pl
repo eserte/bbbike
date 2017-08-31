@@ -116,7 +116,32 @@ userdel	2::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 1117
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => 'userdel	2 8055,12186 8089,12190 8214,12205
+userdel	2 8214,12205 8303,12216 8344,12221 8538,12245
+userdel	2 8546,12279 8538,12245
+userdel	2 8600,12165 8538,12245
+userdel	2 8538,12245 8592,12252
+userdel	2 8546,12279 8570,12302 8573,12325 8540,12420 
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+',
+         'from' => 1506657600,
+         'id' => 127,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              29,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt (bis 04.10.2017)',
+         'type' => 'gesperrt',
+         'until' => 1507154399
+       },
        undef,
        undef,
        undef,
@@ -3754,13 +3779,14 @@ userdel	2::night 16196,18364 16315,18208
        undef,
        {
          'data' => '#: by: fritz
+#: source_id: 2147341721
 userdel	q3::inwork; 16768,14849 16610,15000 16514,15092
 ',
          'from' => 1501526175,
          'id' => 2795,
-         'text' => 'Werneuchener Str.: zwischen Genslerstr. und Goeckestr. Richtung Konrad-Wolf-Str. Bauarbeiten, gesperrt bis Ende August 2017',
+         'text' => 'Werneuchener Str.: zwischen Genslerstr. und Goeckestr. Richtung Konrad-Wolf-Str. Bauarbeiten, gesperrt bis Anfang Oktober 2017',
          'type' => 'handicap',
-         'until' => 1504173600
+         'until' => 1506852000
        },
        undef,
        undef,
@@ -3825,7 +3851,21 @@ userdel	q4::inwork 12911,1815 12940,1547
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => 'userdel	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
+userdel	2::temp 8600,12165 8538,12245 8592,12252
+userdel auto	3 8522,12239 8538,12245 8522,12187
+userdel auto	3 8522,12187 8538,12245 8522,12239
+userdel auto	3 8391,12389 8344,12221 8327,12174
+userdel auto	3 8327,12174 8344,12221 8391,12389
+',
+         'from' => 1504201168,
+         'id' => 2827,
+         'source_id' => '2147339672',
+         'text' => 'Straße des 17. Juni und Ebertstr.: Sperrungen wegen der Sportveranstaltung "Berlin fliegt", bis 03.09.2017 20 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1504461600
+       },
        undef,
        undef,
        {
@@ -4069,16 +4109,16 @@ userdel	2::inwork 4561,13244 4547,13139 4576,13115
        },
        {
          'data' => '#: source_id: 2147341585
-#: note: laut vmz bis Mitte 10/2017, laut fritz bis 2017-08-31
-#: next_check: 2017-10-15
+#: note: laut vmz bis Mitte 10/2017, laut fritz bis 2017-10-20
+#: next_check: 2017-10-20
 userdel	q4::inwork 854,24387 836,24440 813,24497 790,24556 784,24612 790,24698 808,24790 811,24833 793,24943 785,24968
 ',
          'from' => 1500156000,
          'id' => 2885,
          'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.611086.php',
-         'text' => 'Am Eichenhain: Bauarbeiten zwischen Sigismundkorso und Karmeliterweg, Fahrbahn gesperrt, vom 17.07.2017 bis 20.11.2017',
+         'text' => 'Am Eichenhain: Bauarbeiten zwischen Sigismundkorso und Karmeliterweg, Fahrbahn gesperrt, bis voraussichtlich Mitte Oktober 2017',
          'type' => 'handicap',
-         'until' => 1511218800
+         'until' => 1508493600
        },
        {
          'data' => '#: by: http://www.tagesspiegel.de/berlin/bezirke/spandau/berlin-spandau-ein-wochenmarkt-schliesst-ein-anderer-oeffnet/19717792.html#

@@ -1032,11 +1032,11 @@ userdel	q4 49039,44131 48924,44216 48724,44248 48523,44467
 userdel	q4 49039,44131 49691,43812
 EOF
      },
-     { from  => $isodate2epoch->("2016-09-29 06:00:00"), # 1 Tag Vorlauf # 1096578452, # 2004-09-30 23:07
-       until => $isodate2epoch->("2016-10-04 23:59:59"), # 1096862400, # 2004-10-04 06:00
+     { from  => $isodate2epoch->("2017-09-29 06:00:00"), # 1 Tag Vorlauf # 1096578452, # 2004-09-30 23:07
+       until => $isodate2epoch->("2017-10-04 23:59:59"), # 1096862400, # 2004-10-04 06:00
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 9]],
-       text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt (bis 04.10.2016)',
+       text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt (bis 04.10.2017)',
        type  => 'gesperrt',
        data  => <<EOF,
 userdel	2 8055,12186 8089,12190 8214,12205
@@ -25325,11 +25325,12 @@ EOF
 EOF
      },
      { from  => 1501526175, # 1465682400, # 2016-06-12 00:00
-       until => $isodate2epoch->("2017-08-31 12:00:00"),
-       text  => 'Werneuchener Str.: zwischen Genslerstr. und Goeckestr. Richtung Konrad-Wolf-Str. Bauarbeiten, gesperrt bis Ende August 2017',
+       until => $isodate2epoch->("2017-10-01 12:00:00"),
+       text  => 'Werneuchener Str.: zwischen Genslerstr. und Goeckestr. Richtung Konrad-Wolf-Str. Bauarbeiten, gesperrt bis Anfang Oktober 2017',
        type  => 'handicap',
        data  => <<EOF,
 #: by: fritz
+#: source_id: 2147341721
 userdel	q3::inwork; 16768,14849 16610,15000 16514,15092
 EOF
      },
@@ -25658,9 +25659,9 @@ EOF
 userdel	q4::inwork; -2517,17431 -2606,17272 -2666,17168 -2728,17038
 EOF
      },
-     { from  => 1473285600, # 2016-09-08 00:00
-       until => $isodate2epoch->("2016-09-12 09:00:00"), # 1473674400, # 2016-09-12 12:00b
-       text  => 'Straße des 17. Juni und Ebertstr.: Sperrungen wegen der Sportveranstaltung "Berlin fliegt", ab 09.09.2016 bis 12.09.2016',
+     { from  => 1504201168, # 1473285600, # 2016-09-08 00:00
+       until => $isodate2epoch->("2017-09-03 20:00:00"),
+       text  => 'Straße des 17. Juni und Ebertstr.: Sperrungen wegen der Sportveranstaltung "Berlin fliegt", bis 03.09.2017 20 Uhr',
        type  => 'gesperrt',
        source_id => '2147339672',
        data  => <<EOF,
@@ -26286,14 +26287,14 @@ userdel	2::inwork 4561,13244 4547,13139 4576,13115
 EOF
      },
      { from  => 1500156000, # 2017-07-16 00:00
-       until => 1511218800, # 2017-11-21 00:00
-       text  => 'Am Eichenhain: Bauarbeiten zwischen Sigismundkorso und Karmeliterweg, Fahrbahn gesperrt, vom 17.07.2017 bis 20.11.2017',
+       until => $isodate2epoch->("2017-10-20 12:00:00"), # 1511218800, # 2017-11-21 00:00
+       text  => 'Am Eichenhain: Bauarbeiten zwischen Sigismundkorso und Karmeliterweg, Fahrbahn gesperrt, bis voraussichtlich Mitte Oktober 2017',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.611086.php',
        data  => <<EOF,
 #: source_id: 2147341585
-#: note: laut vmz bis Mitte 10/2017, laut fritz bis 2017-08-31
-#: next_check: 2017-10-15
+#: note: laut vmz bis Mitte 10/2017, laut fritz bis 2017-10-20
+#: next_check: 2017-10-20
 userdel	q4::inwork 854,24387 836,24440 813,24497 790,24556 784,24612 790,24698 808,24790 811,24833 793,24943 785,24968
 EOF
      },
