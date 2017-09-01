@@ -14,26 +14,33 @@
     wpt_data: D108
     trk_data: D301
     trk_hdr: D310
+  release_date: 1999
 154:
   name: etrex Venture
   protocols: *EtrexVenture_protocols
+  release_date: 2001
 169:
   name: etrex Vista
   wpts_in_route: 50
   wpt_length: 10
   protocols: *EtrexVenture_protocols
+  release_date: 2001
 248:
   name: gecko 201
   protocols: *EtrexVenture_protocols
+  release_date: 2003
 292:
   name: GPSmap 60CSx
   protocols: *EtrexVenture_protocols
+  release_date: 2006
 295:
   name: etrex yellow
   protocols: *EtrexVenture_protocols
+  release_date: 1999
 315:
   name: etrex Vista C
   protocols: *EtrexVenture_protocols
+  release_date: 2004
 694:
   name: etrex Vista HCx
   wpts_in_route: 250
@@ -45,6 +52,7 @@
     wpt_data: D110
     trk_data: D301
     trk_hdr: D310
+  release_date: 2007
 eTrex 30:
   name: eTrex 30
   wpts_in_route: 250
