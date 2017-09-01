@@ -900,12 +900,14 @@ EOF
 userdel	2 2624,1704 2824,1273
 EOF
      },
-     { from  => $isodate2epoch->("2013-09-06 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2013-09-08 22:00:00"),
-       text  => 'Alt-Rudow zwischen Krokusstr. und Neudecker Weg Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (7. und 8. Septermber 2013)',
+     { from  => $isodate2epoch->("2017-08-31 17:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-09-03 23:59:59"),
+       periodic => 1,
+       recurrences => [['yearly', days => 31, months => 8]],
+       text  => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (01.09.2017 bis 03.09.2017)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	2::temp 16610,1715 16805,1488 16849,1437 16975,1262
+userdel	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
 EOF
      },
      { from  => undef, # 

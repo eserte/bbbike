@@ -2899,12 +2899,7 @@ Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5518,12159 5627,12105
 #: next_check: 2017-11-15
 Möckernkiez: Bauarbeiten	2::inwork 8778,9759 8741,9741 8729,9670 8587,9590 8566,9643
 # 
-#: next_check_id: OBERERWUHLEWANDERWEG-2017
-#: last_checked: 2017-08-09
-#: XXX Ende der Bauarbeiten
-#: next_check_id: 2017-08-11
-#: priority: #A
-oberer Wuhlewanderweg: Bauarbeiten, komplett gesperrt	2::inwork 22873,14498 22864,14556
+# REMOVED (vermutlich beendet) --- #: next_check_id: OBERERWUHLEWANDERWEG-2017 --- #: last_checked: 2017-08-09 --- #: XXX Ende der Bauarbeiten --- #: next_check: 2017-08-11 --- #: priority: #A --- oberer Wuhlewanderweg: Bauarbeiten, komplett gesperrt	2::inwork 22873,14498 22864,14556
 # 
 #: next_check_id: MOEWENWEG-2017
 #: osm_watch: way id="475891101" version="3"
