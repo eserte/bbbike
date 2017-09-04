@@ -21,19 +21,19 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2017-08-31
+#: last_checked: 2017-09-04
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3 14254,11377 14211,11229
 # 
-#: last_checked: 2017-08-31
+#: last_checked: 2017-09-04
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
-#: last_checked: 2017-08-20
+#: last_checked: 2017-09-02
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
 #: last_checked: 2017-08-31
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
-#: last_checked: 2017-08-27
+#: last_checked: 2017-09-03
 #: next_check: 2017-10-16
 #: valid: -20171016
 Palisadenstr.: Bauarbeiten, teilweise Einbahnstraße, offen Richtung Osten	q2::inwork; 12866,12582 12843,12567 12632,12630
@@ -79,15 +79,15 @@ Palisadenstr.: Bauarbeiten, teilweise Einbahnstraße, offen Richtung Osten	q2::in
 # REMOVED --- #: XXX siehe auch valid-Eintrag weiter unten --- #: source_id: 2147340178 --- #: last_checked: 2016-10-05 --- #: valid: -20161115 --- Bouchéstr.: Bauarbeiten, Radfahrer müssen auf dem Gehweg fahren	q2::inwork 13642,9624 13865,9866 13890,9894 -- # REMOVED (wahrscheinlich aufgehoben) --- #: last_checked: 2013-11-22 --- #: check_frequency: 60d --- Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 13973,9465 14157,9345
 # 
 #: XXX laut Schild gehen die Bauarbeiten bis 10.2017
-#: XXX nach Beendigung der Bauarbeiten wieder den alten Eintrag ("Bodenschwellen") aktivieren
-#: last_checked: 2017-08-21
+#: XXX nach Beendigung der Bauarbeiten wieder den alten handicap-Eintrag ("Bodenschwellen") aktivieren
+#: last_checked: 2017-09-04
 #: check_frequency: 21d
 #: valid: -20171001
-Bouchéstr.: Bauarbeiten an der Heidelberger Str., Einbahnstraße	q3::inwork; 13489,9456 13357,9313
+Bouchéstr.: Bauarbeiten an der Heidelberger Str.	q3::inwork 13489,9456 13357,9313
 # 
 ### Mitte ###
 # 
-#: last_checked: 2017-08-30
+#: last_checked: 2017-09-02
 #: check_frequency: 21d
 Märkisches Ufer: Bauarbeiten, Engstelle	q3+::inwork 10687,11853 10869,11949
 # 
@@ -235,7 +235,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: next_check_id: STAATSOPER-2014 vvv
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html
-#: last_checked: 2017-08-24 vvv
+#: last_checked: 2017-09-02 vvv
 #: check_frequency: 30d vvv
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9883,12251 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
@@ -250,7 +250,7 @@ Werdersche Rosenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9883,12251 9909,
 #: XXX siehe auch Eintrag in handicap_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0194-oberwallstrae-werderscher-markt.html
 #: osm_watch: way id="66071370" version="4"
-#: last_checked: 2017-08-29
+#: last_checked: 2017-09-02
 #: check_frequency: 14d
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9898,12161 9883,12251
 # 
@@ -268,8 +268,8 @@ Behrenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9743,12239 9798,12267
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6145.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2017-08-30
-#: check_frequency: 21d
+#: last_checked: 2017-09-02
+#: check_frequency: 14d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
 # REMOVED (wieder offen) --- #: next_check_id: SPANDAUERSTR-2014 --- #: source_id: INKO_089389 (eigentlich hier nur die Spandauer Str. erwähnt) --- #: XXX siehe auch Eintrag zur Spandauer Str. in qualitaet_s-orig --- #: last_checked: 2014-03-24 --- #: check_frequency: 7d --- #: priority: #A --- Rathausstr.: Sperrung an der Spandauer Str., Ausweichen auf Gehweg	q4 10584,12507 10601,12521
@@ -295,7 +295,7 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # 
 #: XXX laut fritz bis "auf weiteres", Einbahnstraße --- effektiv ist aber die gesamte Fahrbahn gesperrt
 #: XXX ändert sich an der Fahrbahnbeschaffenheit etwas?
-#: last_checked: 2017-08-25
+#: last_checked: 2017-09-03
 Böckhstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 11640,9710 11411,9810
 # 
 # REMOVED (man kommt mittlerweile durch) --- #: source_id: 2147341140 --- #: XXX laut fritz bis 31.10.2017, laut vmz bis Ende Oktober 2017 --- #: last_checked: 2017-07-31 --- #: next_check: 2017-10-31 --- #: valid: -20171031 --- Erkelenzdamm: Bauarbeiten zwischen Böcklerstr. und Kohlfurter Str., Fahrbahn gesperrt, Bordsteine	q3::inwork 10967,10092 11038,10247 11094,10261
@@ -369,7 +369,7 @@ Kiehlufer: Bauarbeiten, Fahrbahn gesperrt, Bordsteine beim Ausweichen auf dem Ge
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 7d vvv --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12761,9190 12851,9309 12844,9351 --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12907,9073 12761,9190 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4952&mt=0&zoom=17
-#: last_checked: 2017-08-30
+#: last_checked: 2017-09-04
 #: next_check: 2018-06-01
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 
@@ -413,7 +413,9 @@ Wattstr.: Bauzäune	q3::inwork 17681,7589 17676,7555
 # 
 #: next_check_id: MOELLENDORFFSTR-2017
 #: XXX_prog abgeschätzter Zeitverlust durch 2x Ampeln, explizite "Radfahren verboten"-Schilder
-#: XXX laut fritz bis 4. September 2017, laut vmz bis Ende 2017
+#: XXX laut fritz Vollsperrung bis 30. November 2017
+#: XXX laut vmz Bauarbeiten bis Ende 2017
+#: XXX Möllendorffstraße (Lichtenberg) in beiden Richtungen zwischen Am Containerbahnhof und Frankfurter Allee (Berlin)  Gültig ab: 04.09.2017 08:00  Vollsperrung, Fahrbahnsanierung (bis Ende 09/17)	2147341771
 #: last_checked: 2017-08-30
 #: next_check: 2017-09-04
 #: valid: -20170904

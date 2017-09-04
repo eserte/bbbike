@@ -9480,7 +9480,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.openairgallery.de/?y=2017
-userdel	2::temp 13178,10623 13206,10651 13305,10789 13332,10832
+userdel	q3::temp 13178,10623 13206,10651
+userdel	q4::temp 13206,10651 13305,10789 13332,10832
 EOF
      },
      { from  => 1186264800, # 2007-08-05 00:00
@@ -19239,7 +19240,8 @@ EOF
        text  => 'Open Air Gallery am 3. September 2017 auf der Oberbaumbrücke (10:00 - 20:00)',
        type  => 'gesperrt',
        data  => <<EOF,
-userdel	q4::temp 13178,10623 13206,10651 13305,10789 13332,10832
+userdel	q3::temp 13178,10623 13206,10651
+userdel	q4::temp 13206,10651 13305,10789 13332,10832
 EOF
      },
      { from  => $isodate2epoch->("2017-04-27 00:00:00"), # 1 Tag Vorlauf
@@ -25639,7 +25641,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-08-26 vvv
+#: last_checked: 2017-09-02 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -26131,8 +26133,7 @@ EOF
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-08-29
-#: check_frequency: 14d
+#: last_checked: 2017-09-04
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },

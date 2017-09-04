@@ -1470,18 +1470,18 @@ Heidestr. (Moabit)	N 8092,13467 8059,13551 8048,13578 8019,13650
 Heidestr. (Moabit)	HH 8019,13650 7979,13733 7973,13743 7906,13855 7865,13924 7820,13994 7767,14077 7732,14131 7697,14187 7652,14257 7566,14404 7532,14446 7487,14472 7401,14526 7368,14573
 # 
 #: next_check_id: EUROPACITY-2015 vvv
-#: last_checked: 2017-07-14 vvv
-#: check_frequency: 45d vvv
+#: last_checked: 2017-09-04 vvv
 #: XXX werden die Straﬂennamen tats‰chlich so lauten? Fehlen in Berlin.coords.data vvv
 #: XXX Planstraﬂen 2.1, 2.2, 2.3
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_19_2029_2164_online.pdf ("Benennung einer Erschlieﬂungsanlage")
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_31_3489_3616_online.pdf ("Grundst¸cksnummerierungen")
+#: check_frequency: 45d
 (Lydia-Rabinowitsch-Str.)	N 7820,13994 7930,14060 7973,13991 7865,13924
 #: XXX Planstraﬂen 1.1, 1.2, 1.3
 #: XXX wobei es bereits eine Clara-von-Simson-Str. in Berlin gibt (Mail an die BVV Mitte geschickt)
+#: check_frequency: 60d
 (Clara-von-Simson-Str.)	N 7652,14257 7757,14318 7802,14250 7697,14187
 #: XXX ^^^
-#: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
@@ -11421,7 +11421,7 @@ Am Buschfeld	N 14171,1634 14124,1857
 #: XXX ‰ndert sich durch die (teilweise?) Straﬂenlandwidmung etwas?
 #: osm_watch: way id="156346093" version="2"
 #: osm_watch: way id="23106203" version="10"
-#: osm_watch: way id="457087739" version="11"
+#: osm_watch: way id="457087739" version="13"
 #: last_checked: 2017-08-10
 #: check_frequency: 120d
 Stuthirtenweg	NN 12984,1011 13040,1021 13113,1046 13181,1082 13241,1113
