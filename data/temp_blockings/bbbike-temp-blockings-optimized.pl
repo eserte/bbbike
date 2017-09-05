@@ -4039,16 +4039,7 @@ userdel	2::inwork 7231,236 7501,83
          'type' => 'gesperrt',
          'until' => 1541026800
        },
-       {
-         'data' => 'userdel	2::inwork 20533,29069 20537,29285
-',
-         'from' => 1504044000,
-         'id' => 2882,
-         'source_id' => 'http://www.pankow.live/2017/04/21/erneutes-chaos-zwischen-blankenburg-und-bernau-vorprogrammiert/',
-         'text' => 'Zepernicker Chaussee: Sperrung an der Eisenbahnbrücke, 1. bis 4. September 2017',
-         'type' => 'gesperrt',
-         'until' => 1504562399
-       },
+       undef,
        {
          'data' => 'userdel	2::inwork 20533,29069 20537,29285
 ',

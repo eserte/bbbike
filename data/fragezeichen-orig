@@ -109,7 +109,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: source_id: 2147340884
 #: source_id: 2147340970
 #: source_id: LMS-BR_r_LMS-BR_90638
-#: last_checked: 2017-08-31 vvv
+#: last_checked: 2017-09-05 vvv
 #: check_frequency: 21d vvv
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected; 9865,10227 9948,10280 9873,10285
@@ -670,6 +670,7 @@ Rothenbachstr.: Verbesserung -> wird der frühere Radweg wieder aktiviert?	?::pro
 #: check_frequency: 45d
 Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected; 15662,16656 15437,16491
 # 
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4378
 #: last_checked: 2017-08-30
 Caligariplatz: Verbesserung -> offizielle Radwegführung zur Wisbyer Str.?	?::projected 12121,16317 12097,16263 12090,16199
 # 
@@ -794,7 +795,7 @@ Ernst-Reuter-Platz: Zweirichtungsradwege	?::projected 4838,11697 4885,11735 4905
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.625297.php (Fahrbahnsanierung im Kreuzungsbereich)
 #: osm_watch: way id="37226918" version="9"
 #: source_id: 2147341755
-#: last_checked: 2017-08-30
+#: last_checked: 2017-09-05
 #: next_check: 2017-11-27 (Ende laut fritz)
 Frankfurter Allee: Radstreifen	?::projected; 15117,12106 15361,12071
 # 
@@ -1152,6 +1153,7 @@ Dahlemer Weg: Radwege werden durch Radspuren ersetzt	?::projected 2152,2912 2198
 #: osm_watch: way id="151627031" version="10"
 #: source_id: 2147341295
 #: source_id: 2147341681
+#: source_id: 2147341683
 #: last_checked: 2017-08-10 vvv
 #: next_check: 2017-10-31 vvv
 #: XXX erster Bauabschnitt (vom 15. Mai 2017 bis Oktober 2017)
@@ -1403,6 +1405,11 @@ Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::
 #: by: ^^^
 #: by: ^^^
 #: by: ^^^
+# 
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4432
+#: priority: #C
+#: next_check: 2017-10-05
+Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projected 12128,21562 12172,21545 12213,21525
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3039&date=20130906 (Ampel ist angeordnet (2012-09), wird aber "nicht zeitnah" umgesetzt werden)
 #: osm_watch: node id="29778885" version="6"
@@ -1903,8 +1910,9 @@ B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-#: by: fritz (bis 10.11.2017)
-Cuvrystr.: Beeinträchtigungen für Radfahrer?	?::inwork 13249,10445 13197,10355 13151,10276
+Königsweg (Tegel): Zufahrt für Autos gesperrt?	? 2168,20585 2188,20600
+# 
+# REMOVED (zurzeit keine Einschränkungen) --- #: by: fritz (bis 10.11.2017) --- Cuvrystr.: Beeinträchtigungen für Radfahrer?	?::inwork 13249,10445 13197,10355 13151,10276
 # 
 #: XXX Dietzgenstraße (Niederschönhausen) stadteinwärts zwischen Schillerstraße und Blankenburger Straße (Berlin)  Gültig ab: 04.09.2017 06:00  Fahrtrichtung gesperrt, Gleisbauarbeiten, Umleitung ist ausgeschildert (bis Mitte Oktober)	2147341767
 #: XXX laut fritz bis 20.10.2017
@@ -1920,6 +1928,7 @@ Poststadion: gibt es hier interessante Wegverbindungen für Radfahrer? wie sieht 
 # REMOVED (kaum Einschränkungen, nur im Kreuzungsbereich) --- #: XXX Großbeerenstraße (Kreuzberg) in Höhe Stresemannstraße (Berlin)  Gültig ab: 30.08.2017 07:00  Vollsperrung, Tiefbauarbeiten (bis Ende 10/17)	2147341754	 ---- #: XXX laut fritz bis voraussichtlich 30.10.2017 --- Großbeerenstr.: Bauarbeiten, Auswirkungen auf Radfahrer?	?::inwork 9192,10528 9249,10562
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/strassenbauliste-stand-2017-08-18.pdf
+#: source_id: 2147341732
 #: next_check: 2017-09-16
 Alarichstr./Rathausstr.: wie sieht die Radwegsituation nach den Bauarbeiten aus?	?::inwork 8642,5422 8667,5372 8674,5357 8707,5289 8750,5173 8784,5095 8813,5004 8827,4874 8848,4683
 # 
@@ -1943,7 +1952,7 @@ Turmstr.: wird hier eine Änderung bei den Radwegen passieren?	? 5434,13398 5368,
 # REMOVED (teilweise, allerdings kann man u.U. (abends?) gut durchkommen) --- #: XXX Rosenthaler Str. (Mitte) in beiden Richtungen Höhe Einmündung Neue Schönhauser Str. (Berlin)  Gültig ab: 10.05.2017 13:53  Baustelle, Vollsperrung (bis Ende 07/17)	2147341279 --- #: XXX laut fritz bs 28.07.2017 --- Rosenthaler Str.: noch immer Bauarbeiten?	? 10317,13248 10310,13227
 # 
 #: next_check_id: RUEDERSDORFER-2017
-#: last_checked: 2017-09-02
+#: last_checked: 2017-09-05
 #: check_frequency: 14d
 Rüdersdorfer Str.: Bauarbeiten, wird die Qualität danach besser sein?	?::inwork 13066,11854 13173,11788 13295,11792
 # 
@@ -1963,8 +1972,8 @@ Schnellerstr.: neue Fußgängerampel in Bau	?::inwork 17628,5865
 # REMOVED --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_23_2621_2712_online.pdf --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.601504.php --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5931 --- #: last_checked: 2017-06-08 --- #: next_check: 2017-07-05 --- Am Bülowbogen: Benennung; gibt es hier Straßenschilder?	? 7906,10098 7928,10094 8011,10085
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.596879.php
-#: last_checked: 2017-08-28 (der asphaltierte Radweg sieht noch etwas provisorisch aus)
-#: next_check: 2017-08-31
+#: last_checked: 2017-09-05 (der asphaltierte Radweg sieht noch etwas provisorisch aus)
+#: check_frequency: 14d
 Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::inwork; 10006,9942 9950,9987
 # REMOVED (hier schon fertig) --- Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::inwork; 9950,9987 9922,10010 9827,10051
 # 
@@ -1985,11 +1994,12 @@ Louise-Henry-Str.: bisherige Straße 18a wird unbenannt	? 11217,21565 11297,21593
 #: XXX während der Bauarbeiten wird ein Zweirichtungsradweg erstellt --- Zeitverlust?
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.586635.php
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.599467.php (neuer Termin)
-#: last_checked: 2017-08-30
-#: next_check: 2017-09-04
+#: last_checked: 2017-09-05
 Möllendorffstr.: Radspur Richtung Süden entsteht	?; 15420,12178 15361,12071
 # 
 #: XXX Frankfurter Allee (Lichtenberg) in beiden Richtungen Höhe Möllendorffstraße/Gürtelstraße (Berlin)  Gültig ab: 04.09.2017 08:00  Fahrbahnsanierung, Fahrbahn auf jeweils 2 Fahrstreifen verengt, Abbiegen nicht möglich, Stau erwartet (Gesamtbaumaßnahme bis Ende 11/17)	2147341770
+#: XXX laut fritz "2. Bauabschnitt" bis 24.9.2017
+#: XXX müsste man nochmal schauen, wenn die provisorischen Ampeln eingeschaltet sind
 Frankfurter Allee/Möllendorffstr./Gürtelstr.: Einschränkungen auch für Radfahrer?	? 15361,12071
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.580100.php
@@ -2202,7 +2212,7 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 Sebastian/Luckauer: Zebrastreifen in Bau	?::inwork 11113,10943 11109,10935
 # 
 #: osm_watch: note 851907 2
-#: last_checked: 2017-08-31
+#: last_checked: 2017-09-05
 #: check_frequency: 14d
 #: priority: #C
 Oranienplatz: Zebrastreifen in Bau	?::inwork 11233,10672 11258,10682 11262,10655
@@ -3133,12 +3143,13 @@ Karlshorst-West/Parkstadt Karlshorst: neues Wohngebiet wird entstehen, auch neue
 #: XXX neue Straßen entstehen, Bebauungsplan XVII-50ab --- Gartenstadt Karlshost II
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7073 (Teilung des Bebauungsplans: XVII-50aba und XVII-50abb)
 #: by: https://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_34_3753_3876_online.pdf (Teilung des Bebauungsplans)
+#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6932&date=20170905
 #: last_checked: 2017-08-27 vvv
 #: check_frequency: 360d vvv
 #: XXX Planstraße 2:
-Arnbrucker Str.	? 19610,8933 19667,8965 19728,8998
+Arnbrucker Str. (oder Arnsbrucker Str.?)	? 19610,8933 19667,8965 19728,8998
 #: XXX Planstraße 3:
-Bischofsmaiser Str.	? 19667,8965 19755,8806 19840,8649
+Bischofsmaiser Str. (oder Bischofsmaier Str.?)	? 19667,8965 19755,8806 19840,8649
 #: XXX Planstraße 4:
 Langdorfer Str.	? 19705,9039 19728,8998 19816,8842 19903,8684 19956,8587 19977,8566 20037,8508
 #: XXX Planstraße 5:
@@ -3276,12 +3287,13 @@ Im Lindenhof: Planstraße B, Qualität, genaue Lage, wird der vorgeschlagene Name 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036562139600/562139600/00280924/24-Anlagen/01/DS0330_VzK_Strassenbenennung_SiegfriedHirschma.pdf
 #: XXX fehlt in Berlin.coords.data; Benennung soll zum 2017-07-01 wirksam werden
 #: XXX zuführende Straßen/Wege müssen auch eingezeichnet werden
-#: last_checked: 2017-08-27
+#: last_checked: 2017-09-05
 #: check_frequency: 90d
 Siegfried-Hirschmann-Park: neue private Platzfläche, Qualität, genaue Lage?	?::inwork 14730,11529 14800,11441
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/bebauungsplanung/artikel.81905.php
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/bebauungsplanung/oeffentlichkeits-beteiligungen/1-bebauungsplanentwurf-6-33-oa.pdf
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6223
 #: next_check: 2018-07-01
 Bebauungsplan 6-33: hier entstehen Straßen und Wege	?::projected 3356,4870 3357,4699 3484,4696 3478,4867 3356,4870
 # 

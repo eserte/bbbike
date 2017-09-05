@@ -194,6 +194,7 @@ Asphalt mit Wurzelschäden; unklare Ausschilderung, teilweise ist das Zeichen 241
 	RW1;RW1 12341,10218 12229,10014
 besonders schlechter Zustand des Radwegs (durch Wurzeln)	RW1; 9827,10051 9922,10010 9950,9987 10006,9942 10134,9860
 Asphalt	RW1; 10006,9942 9950,9987
+#: note: für das Abbiegen Richtung Zossener Str. Nord existiert ein asphaltierter Radweg
 	RW3; 9950,9987 9922,10010 9827,10051
 asphaltierter Radweg	RW1; 10134,9860 10006,9942
 	RW1;RW1 10134,9860 10164,9853 10357,9807 10405,9795 10564,9755
@@ -900,7 +901,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736 20755,5750
 	RW2; 14015,7631 14095,7568 14174,7505
 	RW1; 14174,7505 14095,7568 14015,7631
 #: next_check_id: SONNENALLEE-2014 vvv
-#: XXX laut fritz "geänderte Straßenführung" bis 31.12.2016, laut vmz bis Ende September 2017
+#: XXX laut fritz "geänderte Straßenführung" bis 31.12.2016, laut vmz bis Ende Dezember 2017
 #: source_id: IM_023718
 #: source_id: 2147339540
 #: last_checked: 2017-08-22 vvv
