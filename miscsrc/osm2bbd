@@ -1889,6 +1889,15 @@ if ($handle_relations) {
 		    }
 		    # order is important here!
 		    push @or, @waters_or, @islands_or;
+		} elsif ($tag{type} eq 'multipolygon' && ($tag{landuse}||'') eq 'forest') {
+		    # XXX A very rough solution: ignore the "holes" (inner members), because
+		    #     BBBike cannot represent them (except for waterways & islands)
+		    my $new_members = process_multipolygon(\@members, $id);
+		    for my $member (@$new_members) {
+			if (($member->{role}||'') eq 'outer') {
+			    push @or, ["flaechen", "F:Forest", $member];
+			}
+		    }
 		}
 
 	    OUTPUT_RECORD: for my $or (@or) {
