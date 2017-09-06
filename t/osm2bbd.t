@@ -55,6 +55,14 @@ GetOptions("keep" => \$keep)
   <node id="603020423" visible="true" version="1" changeset="3517189" timestamp="2010-01-02T11:04:47Z" user="Datin" uid="115815" lat="49.8392106" lon="18.2869317"/>
   <node id="603020424" visible="true" version="1" changeset="3517189" timestamp="2010-01-02T11:04:47Z" user="Datin" uid="115815" lat="49.8392232" lon="18.2869912"/>
 
+  <!-- reduced set of attributes for Berlin -->
+  <node id="240109189" visible="true" version="119" changeset="48601888" timestamp="2017-05-11T19:04:44Z" user="kartonage" uid="1497225" lat="52.5170365" lon="13.3888599">
+    <tag k="is_in:country_code" v="DE"/>
+    <tag k="place" v="city"/>
+    <tag k="name" v="Berlin"/>
+    <tag k="population" v="3531201"/>
+  </node>
+
   <!-- way with cycleway and oneway -->
   <way id="76865761" version="4" timestamp="2013-09-26T03:46:24Z" changeset="18038475" uid="1439784" user="der-martin">
     <nd ref="29271394"/>
@@ -117,6 +125,7 @@ EOF
     like $meta->{created}, qr{^2\d{7}\d{6}}, 'looks like an ISO date';
     is $meta->{coordsys}, 'wgs84';
     like "@{ $meta->{commandline} }", qr{osm2bbd};
+    is $meta->{country}, 'DE', 'country heuristics';
 
     {
 	my $strassen = Strassen->new("$destdir/strassen");
@@ -171,6 +180,12 @@ EOF
 		 $record_number++;
 	     });
 	is $found_url, 'http://en.wikipedia.org/wiki/cs: Evangelicky Kristuv kostel (Ostrava)', 'url in sights file';
+    }
+
+    {
+	my $gesperrt = Strassen->new("$destdir/orte");
+	ok $gesperrt, 'orte could be loaded';
+	is $gesperrt->data->[0], "Berlin\t6 13.3888599,52.5170365\n";
     }
 }
 
