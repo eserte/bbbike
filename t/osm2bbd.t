@@ -51,6 +51,10 @@ GetOptions("keep" => \$keep)
   <node id="27459716" lat="52.5114094" lon="13.4630646" version="6" timestamp="2012-09-03T18:56:16Z" changeset="12971697" uid="209498" user="nurinfo"/>
   <node id="29785833" lat="52.5108136" lon="13.4627415" version="5" timestamp="2010-03-07T15:29:56Z" changeset="4061779" uid="115651" user="Konrad Aust"/>
 
+  <!-- nodes for Wallensteinstra√üe -->
+  <node id="662034255" visible="true" version="4" changeset="15862082" timestamp="2013-04-25T15:29:49Z" user="BenSim" uid="261789" lat="52.4902799" lon="13.5086756"/>
+  <node id="1492489247" visible="true" version="2" changeset="35928745" timestamp="2015-12-13T16:20:37Z" user="atpl_pilot" uid="881429" lat="52.4898947" lon="13.5095316"/>
+
   <!-- nodes for Evangelicky Kristuv kostel -->
   <node id="603020423" visible="true" version="1" changeset="3517189" timestamp="2010-01-02T11:04:47Z" user="Datin" uid="115815" lat="49.8392106" lon="18.2869317"/>
   <node id="603020424" visible="true" version="1" changeset="3517189" timestamp="2010-01-02T11:04:47Z" user="Datin" uid="115815" lat="49.8392232" lon="18.2869912"/>
@@ -112,6 +116,15 @@ GetOptions("keep" => \$keep)
   <tag k="wikipedia" v="cs: Evangelicky Kristuv kostel&#10;(Ostrava)"/>
  </way>
 
+ <!-- surface:left/right -->
+ <way id="51872061" visible="true" version="25" changeset="51736723" timestamp="2017-09-05T05:25:00Z" user="BER319" uid="3020814">
+  <nd ref="662034255"/>
+  <nd ref="1492489247"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="Wallensteinstra√üe"/>
+  <tag k="smoothness:left" v="bad"/><tag k="surface:left" v="cobblestone"/><tag k="surface:right" v="asphalt"/>
+ </way>
+
 </osm>
 EOF
     close $osmfh;
@@ -133,6 +146,7 @@ EOF
 	is $strassen->data->[0], "Karl-Marx-Allee (B 1;B 5)\tHH 13.4329187,52.5178395 13.4364709,52.5174916\n";
 	is $strassen->data->[1], "Rudi-Dutschke-Straﬂe\tH 13.3905066,52.5067076 13.3905715,52.5067128\n";
 	is $strassen->data->[2], "Wismarplatz\tN 13.4630646,52.5114094 13.4627415,52.5108136\n";
+	is $strassen->data->[3], "Wallensteinstraﬂe\tN 13.5086756,52.4902799 13.5095316,52.4898947\n";
     }
 
     {
@@ -164,6 +178,11 @@ EOF
 	my $qualitaet_s = Strassen->new("$destdir/qualitaet_s");
 	ok $qualitaet_s, 'cobblestone to quality file';
 	is $qualitaet_s->data->[0], "Wismarplatz: Kopfsteinpflaster\tQ2 13.4630646,52.5114094 13.4627415,52.5108136\n";
+	{
+	    local $TODO = 'smoothness & surface:left/right NYI';
+	    is $qualitaet_s->data->[1], "Wallensteinstraﬂe: Kopfsteinpflaster\tQ3; 13.5095316,52.4898947 13.5086756,52.4902799\n";
+	    is $qualitaet_s->data->[2], "Wallensteinstraﬂe: Asphalt\tQ2; 13.5086756,52.4902799 13.5095316,52.4898947\n";
+	}
     }
 
     {
