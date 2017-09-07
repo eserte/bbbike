@@ -141,7 +141,7 @@ sub register {
     $main::info_plugins{__PACKAGE__ . 'Mapillary'} =
 	{ name => 'Mapillary',
 	  callback => sub { showmap_mapillary(@_) },
-	  callback_3_std => sub { showmap_url_mapillary(@_) },
+	  callback_3 => sub { show_mapillary_menu(@_) },
 	  ($images{Mapillary} ? (icon => $images{Mapillary}) : ()),
 	};
     $main::info_plugins{__PACKAGE__ . 'OpenStreetCam'} =
@@ -834,14 +834,50 @@ sub showmap_url_mapillary {
     my(%args) = @_;
     my $px = $args{px};
     my $py = $args{py};
+    my $dateFrom = $args{dateFrom};
+    if ($dateFrom) {
+	if ($dateFrom =~ m{^-(\d+)month$}) {
+	    require POSIX;
+	    $dateFrom = POSIX::strftime("%F", localtime(time - 86400*30));
+	}
+	if ($dateFrom !~ m{^\d{4}-\d{2}-\d{2}$}) {
+	    die "dateFrom parameter must be an ISO 8601 day, not '$dateFrom'";
+	}
+    }
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    sprintf "https://www.mapillary.com/app/?lat=%s&lng=%s&z=%d", $py, $px, $scale;
+    sprintf("https://www.mapillary.com/app/?lat=%s&lng=%s&z=%d", $py, $px, $scale)
+	. ($dateFrom ? "&dateFrom=$dateFrom" : "");
 }
 
 sub showmap_mapillary {
     my(%args) = @_;
     my $url = showmap_url_mapillary(%args);
     start_browser($url);
+}
+
+sub show_mapillary_menu {
+    my(%args) = @_;
+    my $lang = $Msg::lang || 'de';
+    my $w = $args{widget};
+    my $menu_name = __PACKAGE__ . '_Mapillary_Menu';
+    if (Tk::Exists($w->{$menu_name})) {
+	$w->{$menu_name}->destroy;
+    }
+    my $link_menu = $w->Menu(-title => 'Mapillary',
+			     -tearoff => 0);
+    $link_menu->command
+	(-label => 'Fresh Mapillary (< 1 month)',
+	 -command => sub { showmap_mapillary(dateFrom => '-1month', %args) },
+	);
+    $link_menu->command
+	(-label => "Link kopieren",
+	 -command => sub { _copy_link(showmap_url_mapillary(%args)) },
+	);
+
+    $w->{$menu_name} = $link_menu;
+    my $e = $w->XEvent;
+    $link_menu->Post($e->X, $e->Y);
+    Tk->break;
 }
 
 ######################################################################
