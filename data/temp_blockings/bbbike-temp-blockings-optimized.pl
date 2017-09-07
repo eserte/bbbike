@@ -4212,6 +4212,16 @@ userdel	2::inwork 17681,7589 17676,7555
          'text' => 'Wattstr.: Zugang kann durch Bauzäune versperrt sein, meistens aber offen',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => 'userdel	q3::inwork; 14926,12129 14887,11929
+',
+         'from' => 1504719478,
+         'id' => 2904,
+         'source_id' => '2147341770',
+         'text' => 'Weichselstr.: Einbahnstraßenregelung während der Bauarbeiten an der Kreuzung Frankfurter Allee/Möllendorffstr., voraussichtlich bis zum 24. September 2017',
+         'type' => 'handicap',
+         'until' => 1506290399
        }
      
 );

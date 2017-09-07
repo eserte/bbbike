@@ -26478,4 +26478,13 @@ EOF
 userdel	2::inwork 17681,7589 17676,7555
 EOF
      },
+     { from  => 1504719478, # 2017-09-06 19:37
+       until => 1506290399, # 2017-09-24 23:59
+       text  => 'Weichselstr.: Einbahnstraßenregelung während der Bauarbeiten an der Kreuzung Frankfurter Allee/Möllendorffstr., voraussichtlich bis zum 24. September 2017',
+       type  => 'handicap',
+       source_id => '2147341770',
+       data  => <<EOF,
+userdel	q3::inwork; 14926,12129 14887,11929
+EOF
+     },
     );

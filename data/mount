@@ -333,10 +333,6 @@ Steigung 3.9% (Kopischstr.)	St; 9477,9113 9459,9019
 Steigung 3.9% (Hochkirchstr.)	St; 8105,9313 8102,9262
 Steigung 3.9% (Hochkirchstr.)	St; 8086,9418 8076,9316
 Steigung 3.9% (Hochkirchstr.)	St; 8076,9316 8105,9313
-Steigung 3.9% (Havelchaussee)	St; -3615,8496 -3567,8031
-Steigung 3.9% (Havelchaussee)	St; -3578,8578 -3615,8496
-Steigung 3.9% (Havelchaussee)	St; -3567,8031 -3561,7964
-Steigung 3.9% (Havelchaussee)	St; -3561,7964 -3536,7856
 Steigung 3.9% (Friesenstr. (Kreuzberg, Tempelhof))	St; 9797,9063 9799,8962
 Steigung 3.9% (Conradstr. (Wannsee))	St; -5588,1454 -5675,1429
 Steigung 3.9% (Brauhausberg (B2) (Potsdam))	St; -12476,-2605 -12643,-2673
@@ -443,7 +439,8 @@ Steigung 3.4% (Frankenstr. (Altglienicke))	St; 20365,1394 20318,1281
 Steigung 3.4% (Flatowallee)	St; -605,11173 -652,11337
 Steigung 3.4% (Brauhausberg (B2) (Potsdam))	St; -12915,-2922 -12840,-2799
 Steigung 3.4% (Auf dem Mühlenberg)	St; 6834,22975 6889,23000
-Steigung 3.4% ((Teufelsseestr - Grunewaldturm))	St; -3212,8024 -3536,7856
+Steigung 3.4% ((Teufelsseestr - Grunewaldturm))	St; -3442,7935 -3536,7856
+Steigung 3.4% ((Teufelsseestr - Grunewaldturm))	St; -3212,8024 -3442,7935
 Steigung 3.4% ((Teufelsseestr - Grunewaldturm))	St; -2897,8008 -3212,8024
 Steigung 3.3% (Wulffstr.)	St; 4599,5341 4640,5411
 Steigung 3.3% (Werbellinstr. (Neukölln))	St; 12541,8140 12426,8115
@@ -750,6 +747,8 @@ Steigung 2.6% (Isarstr.)	St; 12349,8464 12368,8356
 Steigung 2.6% (Inselstr. (Nikolassee))	St; -5393,4211 -5453,4274
 Steigung 2.6% (Inselstr. (Nikolassee))	St; -5310,4216 -5393,4211
 Steigung 2.6% (Heerstr. (Westend, Wilhelmstadt, Staaken))	St; 16,11190 229,11213
+Steigung 2.6% (Havelchaussee)	St; -3615,8496 -3567,8031
+Steigung 2.6% (Havelchaussee)	St; -3578,8578 -3615,8496
 Steigung 2.6% (Havelchaussee)	St; -3496,7677 -3531,7825
 Steigung 2.6% (Gatower Str.)	St; -4843,11123 -4859,11080
 Steigung 2.6% (Flughafenstr.)	St; 12349,8464 12195,8436
@@ -774,6 +773,8 @@ Steigung 2.6% (Ahornallee (Westend))	St; 1822,12372 1799,12291
 Steigung 2.6% (Adlerstr.)	St; 22609,-601 22471,-591
 Steigung 2.6% ((Uferweg am Weißensee))	St; 14510,16549 14480,16449
 Steigung 2.6% ((Uferweg am Weißensee))	St; 14480,16449 14449,16394
+Steigung 2.6% ((Grunewaldturm))	St; -3603,7798 -3496,7677
+Steigung 2.6% ((Grunewaldturm))	St; -3567,8031 -3603,7798
 Steigung 2.5% (Weidenweg (Friedrichshain))	St; 13598,12554 13675,12581
 Steigung 2.5% (Voigtstr.)	St; 14709,12156 14748,12314
 Steigung 2.5% (Veteranenstr.)	St; 10282,14212 10304,14254
@@ -1600,6 +1601,7 @@ Steigung 1.6% (Appelbacher Weg)	St; 27450,1182 27453,1229
 Steigung 1.6% (Alfredstr.)	St; 16207,11937 16246,12177
 Steigung 1.6% (Ackerstr. (Mitte, Gesundbrunnen))	St; 9048,14681 8953,14758
 Steigung 1.6% ((Waldweg an der Schilfdachkirche))	St; -8251,6214 -8385,6148
+Steigung 1.6% ((Teufelsseestr - Grunewaldturm))	St; -3603,7798 -3536,7856
 Steigung 1.6% ((Am Niederfeld/Kressenweg - Berliner Balkon))	St; 24039,11018 23928,11038
 Steigung 1.5% (Zionskirchstr.)	St; 10090,14458 10277,14350
 Steigung 1.5% (Wittenauer Str.)	St; 5466,21910 5322,21849
