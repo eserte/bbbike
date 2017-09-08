@@ -54,13 +54,19 @@ init_apt() {
 # - libgd2-xpm-dev:         prerequisite for GD
 # - ttf-bitstream-vera + ttf-dejavu: fonts e.g. for BBBikeDraw::GD
 # - xvfb + fvwm:            some optional tests require an X server
-# - rhino:                  javascript tests
+# - libmozjs-24-bin or rhino: javascript tests
 # - imagemagick:            typ2legend test
 # - libpango1.0-dev:        prerequisite for Pango
 # - libxml2-utils:          xmllint
 # - libzbar-dev:            prerequisite for Barcode::ZBar
 install_non_perl_dependencies() {
-    sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep tre-agrep libgd2-xpm-dev ttf-bitstream-vera ttf-dejavu gpsbabel xvfb fvwm rhino imagemagick libpango1.0-dev libxml2-utils libzbar-dev
+    if [ "$(lsb_release -c -s)" = "precise" ]
+    then
+	javascript_package=rhino
+    else
+	javascript_package=libmozjs-24-bin
+    fi
+    sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep tre-agrep libgd2-xpm-dev ttf-bitstream-vera ttf-dejavu gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev
 }
 
 # Some CPAN modules not mentioned in Makefile.PL, usually for testing only
