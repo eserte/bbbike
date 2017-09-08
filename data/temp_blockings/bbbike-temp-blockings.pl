@@ -19975,7 +19975,7 @@ EOF
        until => $isodate2epoch->("2017-09-10 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 9]],
-       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (8.09.2017-10.09.2017)',
+       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (08.09.2017-10.09.2017)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.laubinger.de/termine/48-fest-an-der-panke/
@@ -23555,7 +23555,7 @@ EOF
        recurrences => [["yearly", days => 9, months => 9]],
        text  => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 16. September 2017, 14 bis 18 Uhr ',
        type  => 'gesperrt',
-       source_id => 'https://misch-mit.net/strassenfest-ums-rathaus-moabit-10-sept-2016-2/',
+       source_id => 'https://misch-mit.net/moabiter-kiezfest2017/',
        data  => <<EOF,
 # REMOVED --- : tempex YYYY09 & sa2 & T14-T18
 #: tempex YYYY09 & sa3 & T14-T18
@@ -24838,8 +24838,8 @@ userdel	q3::inwork 9932,13109 10105,13004
 EOF
      },
      { from  => 1503943766,
-       until => $isodate2epoch->("2017-09-08 12:00:00"),
-       text  => 'Wühlischstr.: Gleisarbeiten, Fahrbahn Richtung Warschauer Str. gesperrt, bis zum 8.9.2017',
+       until => $isodate2epoch->("2017-09-30 12:00:00"),
+       text  => 'Wühlischstr.: Gleisarbeiten, Fahrbahn Richtung Warschauer Str. gesperrt, bis Ende September 2017',
        type  => 'handicap',
        data  => <<EOF,
 	q4::inwork; 14575,11407 14434,11465
@@ -26133,7 +26133,7 @@ EOF
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-09-04
+#: last_checked: 2017-09-07
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },
@@ -26485,6 +26485,15 @@ EOF
        source_id => '2147341770',
        data  => <<EOF,
 userdel	q3::inwork; 14926,12129 14887,11929
+EOF
+     },
+     { from  => 1504896268, # 2017-09-08 20:44
+       until => 1508104799, # 2017-10-15 23:59
+       text  => 'Dietzgenstr.: Bauarbeiten ab Kuckhoffstr. Richtung Süden, auch Radfahrer sind betroffen, voraussichtlich bis MItte Oktober 2017',
+       type  => 'handicap',
+       source_id => '2147341767',
+       data  => <<EOF,
+userdel	q4::inwork; 10167,19797 10195,19703 10224,19628 10257,19542
 EOF
      },
     );

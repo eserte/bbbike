@@ -31,7 +31,7 @@ Danziger Str.	?::projected 12621,14313 12729,14227 12901,14093 12975,13990 13037
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2017-08-30
+#: last_checked: 2017-09-07
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -1913,10 +1913,6 @@ B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-#: by: fritz
-#: XXX bis 27.09.2017
-Krautstr.: Beeinträchtigungen für Radfahrer?	?::inwork 11963,11813 11966,11832 11993,11978
-# 
 Königsweg (Tegel): Zufahrt für Autos gesperrt?	? 2168,20585 2188,20600
 # 
 # REMOVED (zurzeit keine Einschränkungen) --- #: by: fritz (bis 10.11.2017) --- Cuvrystr.: Beeinträchtigungen für Radfahrer?	?::inwork 13249,10445 13197,10355 13151,10276
@@ -1959,7 +1955,7 @@ Turmstr.: wird hier eine Änderung bei den Radwegen passieren?	? 5434,13398 5368,
 # REMOVED (teilweise, allerdings kann man u.U. (abends?) gut durchkommen) --- #: XXX Rosenthaler Str. (Mitte) in beiden Richtungen Höhe Einmündung Neue Schönhauser Str. (Berlin)  Gültig ab: 10.05.2017 13:53  Baustelle, Vollsperrung (bis Ende 07/17)	2147341279 --- #: XXX laut fritz bs 28.07.2017 --- Rosenthaler Str.: noch immer Bauarbeiten?	? 10317,13248 10310,13227
 # 
 #: next_check_id: RUEDERSDORFER-2017
-#: last_checked: 2017-09-06
+#: last_checked: 2017-09-07
 #: check_frequency: 14d
 Rüdersdorfer Str.: Bauarbeiten, wird die Qualität danach besser sein?	?::inwork 13066,11854 13173,11788 13295,11792
 # 
@@ -2242,7 +2238,7 @@ Neue Krugallee/Lakegrund	? 16401,7400 16406,7430 16409,7464
 #: source_id: 2147339938
 #: source_id: 2147341595
 #: last_checked: 2017-08-04
-#: next_check: 2017-10-31
+#: next_check: 2017-09-11
 Köpenicker Landstraße: bleibt die Radwegbenutzungspflicht?	?; 15166,8489 15303,8343 15357,8286 15557,8077
 #: last_checked: 2017-08-04
 #: check_frequency: 90d
@@ -2276,7 +2272,7 @@ Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 1
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2016
 #: XXX ggfs. culdesac- und str_cont_ausnahme-Einträge erstellen
 #: osm_watch: way id="25008069" version="6"
-#: last_checked: 2017-06-14
+#: last_checked: 2017-09-07
 #: check_frequency: 90d
 Mehlbeerenweg: Teilstück wird eingezogen	? 11940,11982 11923,11881
 # 
@@ -2662,6 +2658,15 @@ Wanderweg entlang des Grenzstreifens: Qualität?	? 5264,24186 5304,24244 5327,243
 Bebauungsplan 5-87a (ehemaliges Kraftwerk Oberhavel): hier werden Wege für Radfahrer entstehen	? -2673,18634 -2670,18775 -2413,18770
 # 
 # REMOVED --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_29_3241_3364_online.pdf --- Waldkraiburger Str.: Einziehung von Straßenland (Teilfläche)	? 12626,5057 12468,5000 --- Waldkraiburger Str.: vermutlich privat, sollte aus der Karte entfernt werden	? 12283,4971 12468,5000
+# 
+#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_38_4261_4376_online.pdf
+Parchimer Str. - Altentreptower Str.: neuer Rad+Gehweg, Qualität, genaue Lage, nachts beleuchtet?	? 22228,12274 22220,12243 22129,12163
+# 
+#: XXX evtl. auch prüfen, ob die weiterführenden Wege/Pfade befahrbar sind
+Parchimer Str.: Qualität und Lage der Stichstraße?	? 22228,12274 22200,12267 22096,12267 22091,12215
+# 
+#: XXX bei gmaps als "Lubminer Weg" bezeichnet, existieren solche Schilder in der Realität?
+Lubminer Str. - Parchimer Str.: existiert hier eine Wegverbindung? Qualität? Nachts beleuchtet?	? 22415,12681 22319,12671 22289,12663 22271,12623
 # 
 #: ignore ^^^
 # 
@@ -3289,6 +3294,7 @@ Im Lindenhof: Planstraße B, Qualität, genaue Lage, wird der vorgeschlagene Name 
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8104
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036562139600/562139600/00280924/24-Anlagen/01/DS0330_VzK_Strassenbenennung_SiegfriedHirschma.pdf
+#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_38_4261_4376_online.pdf
 #: XXX fehlt in Berlin.coords.data; Benennung soll zum 2017-07-01 wirksam werden
 #: XXX zuführende Straßen/Wege müssen auch eingezeichnet werden
 #: last_checked: 2017-09-06
@@ -3315,6 +3321,11 @@ Damme: asphaltierte neue Straße?	? 49863,99561 49886,99581 49916,99558 49940,996
 #: XXX Bebauungsplan Nr. 141-1
 #: next_check: 2018-06-01
 Krampnitz: neue Planstraßen	?::projected -14183,5214 -13771,5077
+# 
+#: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.628715.php
+#: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/wasserpark-berlin-c-hager-partner-ag.pdf
+#: next_check: 2022-01-01
+Ostkreuz-Rummelsburger Bucht: neues Wohnquartier mit Straßen und Wegen sowie Wasserpark	?::projected 14915,10785 14872,10634 14987,10601 15106,10655 15174,10641 15200,10741 14915,10785
 # 
 #: ignore ^^^
 #: section ^^^

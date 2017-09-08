@@ -21,17 +21,23 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2017-09-04
+#: last_checked: 2017-09-08
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3 14254,11377 14211,11229
 # 
-#: last_checked: 2017-09-04
+#: last_checked: 2017-09-08
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 #: last_checked: 2017-09-02
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2017-09-06
+#: last_checked: 2017-09-07
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
+# 
+#: by: fritz
+#: last_checked: 2017-09-07
+#: next_check: 2017-09-27
+#: valid: -20170927
+Krautstr.: Fahrbahn abschnittsweise gesperrt, Ausweichen auf Gehweg notwendig	q3::inwork 11963,11813 11966,11832 11993,11978
 # 
 #: last_checked: 2017-09-03
 #: next_check: 2017-10-16
@@ -293,6 +299,15 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # 
 ### Kreuzberg ###
 # 
+#: last_checked: 2017-09-08 vvv
+#: check_frequency: 7d vvv
+Mariannenplatz: Bauarbeiten, Fahrbahn gesperrt, Bordsteine	q4::inwork 11781,10696 11824,10708
+#: XXX hier nochmal genauer prüfen:
+#: next_check: 2017-09-08
+Mariannenplatz: Bauarbeiten, Fahrbahn teilweise gesperrt	q2::inwork 11841,10747 11897,10887
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 #: XXX laut fritz bis "auf weiteres", Einbahnstraße --- effektiv ist aber die gesamte Fahrbahn gesperrt
 #: XXX ändert sich an der Fahrbahnbeschaffenheit etwas?
 #: last_checked: 2017-09-03
@@ -487,6 +502,7 @@ Am Falkenberg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 21862,807 22007,711
 ######################################################################
 #: next_check_id: WUHLEWANDERWEG-2014 vvv
 #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird, siehe auch Eintrag in qualitaet_s-orig: vvv
+#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_38_4261_4376_online.pdf (Widmung als Grünanlage)
 #: last_checked: 2017-08-09 vvv
 #: check_frequency: 300d vvv
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153

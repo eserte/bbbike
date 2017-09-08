@@ -2730,7 +2730,7 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
                               9
                             ]
                           ],
-         'text' => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (8.09.2017-10.09.2017)',
+         'text' => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (08.09.2017-10.09.2017)',
          'type' => 'gesperrt',
          'until' => 1505080799
        },
@@ -3462,7 +3462,7 @@ userdel	2::temp 5857,13342 5868,13441 5882,13548
                               9
                             ]
                           ],
-         'source_id' => 'https://misch-mit.net/strassenfest-ums-rathaus-moabit-10-sept-2016-2/',
+         'source_id' => 'https://misch-mit.net/moabiter-kiezfest2017/',
          'text' => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 16. September 2017, 14 bis 18 Uhr ',
          'type' => 'gesperrt',
          'until' => 1505599199
@@ -3693,9 +3693,9 @@ userdel	q3::inwork; -6861,15129 -6507,15007
 ',
          'from' => 1503943766,
          'id' => 2755,
-         'text' => 'Wühlischstr.: Gleisarbeiten, Fahrbahn Richtung Warschauer Str. gesperrt, bis zum 8.9.2017',
+         'text' => 'Wühlischstr.: Gleisarbeiten, Fahrbahn Richtung Warschauer Str. gesperrt, bis Ende September 2017',
          'type' => 'handicap',
-         'until' => 1504864800
+         'until' => 1506765600
        },
        undef,
        undef,
@@ -3969,7 +3969,7 @@ userdel	2::inwork 6815,8691 6912,8617
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2017-09-04
+         'data' => '#: last_checked: 2017-09-07
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
          'from' => undef,
@@ -4222,6 +4222,16 @@ userdel	2::inwork 17681,7589 17676,7555
          'text' => 'Weichselstr.: Einbahnstraßenregelung während der Bauarbeiten an der Kreuzung Frankfurter Allee/Möllendorffstr., voraussichtlich bis zum 24. September 2017',
          'type' => 'handicap',
          'until' => 1506290399
+       },
+       {
+         'data' => 'userdel	q4::inwork; 10167,19797 10195,19703 10224,19628 10257,19542
+',
+         'from' => 1504896268,
+         'id' => 2905,
+         'source_id' => '2147341767',
+         'text' => 'Dietzgenstr.: Bauarbeiten ab Kuckhoffstr. Richtung Süden, auch Radfahrer sind betroffen, voraussichtlich bis MItte Oktober 2017',
+         'type' => 'handicap',
+         'until' => 1508104799
        }
      
 );
