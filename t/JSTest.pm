@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012,2015,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2015,2016,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package JSTest;
 
 use strict;
 use vars qw($VERSION @EXPORT @JS_INTERPRETERS);
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 use Exporter 'import';
 @EXPORT = qw(
@@ -44,6 +44,9 @@ sub check_js_interpreter () {
 	    if ($out =~ m{^JavaScript-C}) {
 		$js_interpreter_binary = $candidate_path;
 		$js_interpreter_impl = 'spidermonkey';
+	    } elsif ($out =~ m{^Version: JavaScript-C24}m) {
+		$js_interpreter_binary = $candidate_path;
+		$js_interpreter_impl = 'spidermonkey24';
 	    } elsif ($out =~ m{\Qjava org.mozilla.javascript.tools.shell.Main}) {
 		$js_interpreter_binary = $candidate_path;
 		$js_interpreter_impl = 'rhino';
@@ -88,12 +91,27 @@ sub check_js_interpreter_or_exit () {
 sub is_strict_js ($) {
     my $file = shift;
     local $Test::Builder::Level = $Test::Builder::Level+1;
-    my @cmd = ($js_interpreter_binary, ($js_interpreter_impl eq 'nodejs' ? '--use_strict' : '-strict'), $file);
+    my @cmds;
+    if ($js_interpreter_impl eq 'spidermonkey24') {
+	# In strict mode a check for valid utf8 sequences is done, but
+	# currently the js code is mainly latin1, so do a conversion
+	# first if needed
+	require Encode;
+	my $js_code = do { open my $fh, $file or die $!; local $/; <$fh> };
+	if (!eval { Encode::decode_utf8($js_code, &Encode::FB_CROAK); 1 }) {
+	    Test::More::note("Need to convert $file from latin1 to utf8...") if defined &Test::More::note;
+	    Encode::from_to($js_code, "iso-8859-1", "utf-8");
+	}
+	@cmds = ([$js_interpreter_binary, '--strict', '-'], '<', \$js_code);
+    } else {
+	@cmds = ([$js_interpreter_binary, ($js_interpreter_impl eq 'nodejs' ? '--use_strict' : '-strict'), $file]);
+    }
     my $all_out;
     require IPC::Run;
-    my $res = IPC::Run::run(\@cmd, ">&", \$all_out);
+    my $res = IPC::Run::run(@cmds, ">&", \$all_out);
     if (!$res) {
-	Test::More::fail("@cmd failed: $?")
+	require Data::Dumper;
+	Test::More::fail(Data::Dumper->new([@cmds],[])->Terse(1)->Dump . " failed: $?")
 	    or Test::More::diag($all_out);
     } else {
 	Test::More::ok($all_out eq '', "No error or warning in $file")
