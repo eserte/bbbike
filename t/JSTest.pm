@@ -30,7 +30,7 @@ use BBBikeUtil qw(is_in_path);
 if ($ENV{BBBIKE_TEST_JS_INTERPRETER}) {
     @JS_INTERPRETERS = $ENV{BBBIKE_TEST_JS_INTERPRETER};
 } else {
-    @JS_INTERPRETERS = qw(js rhino spidermonkey);
+    @JS_INTERPRETERS = qw(js24 js rhino spidermonkey);
 }
 
 my $redeclaration_warning_seen;
