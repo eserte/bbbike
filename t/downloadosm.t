@@ -7,6 +7,7 @@
 
 use strict;
 use FindBin;
+use lib $FindBin::RealBin;
 
 BEGIN {
     if (!eval q{
@@ -18,9 +19,13 @@ BEGIN {
     }
 }
 
+use File::Basename qw(basename);
 use File::Glob qw(bsd_glob);
 use File::Temp qw(tempdir);
 use Getopt::Long;
+
+use BBBikeUtil qw(is_in_path);
+use BBBikeTest qw(xmllint_file);
 
 my $doit;
 GetOptions("doit!" => \$doit)
@@ -31,7 +36,7 @@ if (!$doit) {
     exit 0;
 }
 
-plan tests => 2;
+plan 'no_plan';
 
 my $downloadosm_script = "$FindBin::RealBin/../miscsrc/downloadosm";
 my $tmpdir = tempdir(TMPDIR => 1, CLEANUP => 1) or die;
@@ -43,6 +48,13 @@ my $tmpdir = tempdir(TMPDIR => 1, CLEANUP => 1) or die;
     my @files = bsd_glob("$tmpdir/download_*.osm.gz");
     cmp_ok scalar(@files), ">=", 1, "Found at least one gzipped .osm file in download directory"
 	or diag "Contents of $tmpdir: " . join("\n", bsd_glob("$tmpdir/*"));
+    for my $file (@files) {
+	if (is_in_path('gunzip')) {
+	    system 'gunzip', $file;
+	    $file =~ s{\.gz$}{};
+	    xmllint_file($file, "xmllint for " . basename($file));
+	}
+    }
 }
 
 __END__
