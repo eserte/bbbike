@@ -24,4 +24,5 @@ build_script:
   - gmake -f DMakefile ext
   - cd ..
   - cd t
+  - set BBBIKE_TEST_GUI=1
   - gmake test-no-cgi
