@@ -23,6 +23,8 @@ use Exporter 'import';
 		run_js run_js_e run_js_f is_strict_js
 	   );
 
+sub _precmd ();
+
 use BBBikeUtil qw(is_in_path);
 
 if ($ENV{BBBIKE_TEST_JS_INTERPRETER}) {
@@ -104,7 +106,10 @@ sub is_strict_js ($) {
 	}
 	@cmds = ([$js_interpreter_binary, '--strict', '-'], '<', \$js_code);
     } else {
-	@cmds = ([$js_interpreter_binary, ($js_interpreter_impl eq 'nodejs' ? '--use_strict' : '-strict'), $file]);
+	@cmds = ([
+		  _precmd,
+		  $js_interpreter_binary, ($js_interpreter_impl eq 'nodejs' ? '--use_strict' : '-strict'), $file,
+		 ]);
     }
     my $all_out;
     require IPC::Run;
@@ -122,7 +127,7 @@ sub is_strict_js ($) {
 sub run_js_e ($) {
     my $cmd = shift;
     local $Test::Builder::Level = $Test::Builder::Level+1;
-    open my $fh, "-|", $js_interpreter_binary, "-e", $cmd
+    open my $fh, "-|", _precmd, $js_interpreter_binary, "-e", $cmd
 	or die $!;
     local $/ = undef;
     my $res = <$fh>;
@@ -141,7 +146,7 @@ sub run_js_f ($) {
     close $tmpfh
 	or die $!;
 
-    my @cmd = $js_interpreter_binary;
+    my @cmd = (_precmd, $js_interpreter_binary);
     if ($js_interpreter_impl ne 'nodejs') {
 	push @cmd, '-f';
     }
@@ -156,6 +161,11 @@ sub run_js_f ($) {
     unlink $tmpfile;
 
     $res;
+}
+
+sub _precmd () {
+    # if _JAVA_OPTIONS or JAVA_TOOL_OPTIONS is defined, then debugging stuff may be emitted to stderr
+    ($js_interpreter_impl eq 'rhino' && $^O ne 'MSWin32' ? ('env', '-u', '_JAVA_OPTIONS', 'env', '-u', 'JAVA_TOOL_OPTIONS') : ())
 }
 
 # Default to -f, because rhino, Debian's default js interpreter,
