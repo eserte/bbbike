@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.29;
+$VERSION = 1.30;
 
 use vars qw(%images);
 
@@ -801,7 +801,7 @@ sub showmap_url_fis_broker_1_5000 {
 	or die Geo::Proj4->error;
     my($x0,$y0) = $proj4->forward($args{py0}, $args{px0});
     my($x1,$y1) = $proj4->forward($args{py1}, $args{px1});
-    sprintf 'http://fbinter.stadt-berlin.de/fb/index.jsp?Szenario=fbinter_jsc&loginkey=zoomStart&mapId=k5_farbe@senstadt&bbox=%d,%d,%d,%d', $x0, $y0, $x1, $y1;
+    sprintf 'http://fbinter.stadt-berlin.de/fb/index.jsp?loginkey=zoomStart&mapId=k5_farbe@senstadt&bbox=%d,%d,%d,%d', $x0, $y0, $x1, $y1;
 }
 
 sub showmap_fis_broker_1_5000 {
