@@ -25641,7 +25641,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-09-02 vvv
+#: last_checked: 2017-09-10 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -26133,7 +26133,7 @@ EOF
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-09-09
+#: last_checked: 2017-09-11
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },
@@ -26494,6 +26494,24 @@ EOF
        source_id => '2147341767',
        data  => <<EOF,
 userdel	q4::inwork; 10167,19797 10195,19703 10224,19628 10257,19542
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Alt-Stralau - Spreeufer: Verbindung gesperrt, Ende unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: last_checked: 2017-09-11
+userdel	2::inwork 14652,10201 14569,10055
+EOF
+     },
+     { from  => 1505599200, # 2017-09-17 00:00
+       until => 1509490800, # 2017-11-01 00:00
+       text  => 'Sandhauser Str./Falkenplatz: Bauarbeiten, Sperrung der Fahrbahn zwischen Sperberstr. und Falkenhorststr., vom 18.09.2017 bis 31.10.2017',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.629207.php',
+       data  => <<EOF,
+userdel	q4::inwork -1869,19974 -1806,19806 -1794,19681 -1788,19663
 EOF
      },
     );

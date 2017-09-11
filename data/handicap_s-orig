@@ -21,10 +21,10 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2017-09-09
+#: last_checked: 2017-09-11
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3 14254,11377 14211,11229
 # 
-#: last_checked: 2017-09-09
+#: last_checked: 2017-09-11
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 #: last_checked: 2017-09-02
@@ -114,7 +114,8 @@ Jägerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q3::inwork 93
 # REMOVED --- #: last_checked: 2017-03-24 --- Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
-#: last_checked: 2017-08-24
+#: XXX Richtung Westen eigentlich wg. Einbahnstraße gesperrt, aber man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen; Richtung Osten manchmal (werktags?) ein Schild "Durchfahrt verboten"
+#: last_checked: 2017-09-10
 Voltairestr.: Baustellenverkehr	q2 11329,12497 11209,12430
 # 
 #: next_check_id: ZIEGELSTR-2016
@@ -299,11 +300,9 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # 
 ### Kreuzberg ###
 # 
-#: last_checked: 2017-09-08 vvv
-#: check_frequency: 7d vvv
+#: last_checked: 2017-09-11 vvv
+#: check_frequency: 14d vvv
 Mariannenplatz: Bauarbeiten, Fahrbahn gesperrt, Bordsteine	q4::inwork 11781,10696 11824,10708
-#: XXX hier nochmal genauer prüfen:
-#: next_check: 2017-09-08
 Mariannenplatz: Bauarbeiten, Fahrbahn teilweise gesperrt	q2::inwork 11841,10747 11897,10887
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -431,7 +430,7 @@ Wattstr.: Bauzäune	q3::inwork 17681,7589 17676,7555
 #: XXX laut fritz Vollsperrung bis 30. November 2017
 #: XXX laut vmz Bauarbeiten bis Ende 2017
 #: XXX Möllendorffstraße (Lichtenberg) in beiden Richtungen zwischen Am Containerbahnhof und Frankfurter Allee (Berlin)  Gültig ab: 04.09.2017 08:00  Vollsperrung, Fahrbahnsanierung (bis Ende 09/17)	2147341771
-#: last_checked: 2017-09-06
+#: last_checked: 2017-09-10
 Möllendorffstr.: Bauarbeiten, Radfahrer müssen auf die gegenüberliegende Seite wechseln	q4::inwork; 15420,12178 15361,12071
 # 
 # REMOVED #: next_check_id: HAUPTSTR-2015 --- #: source_id: 2147339565 --- #: source_id: LMS-BR_r_LMS-BR_65986 --- #: source_id: 2147340080 --- #: XXX laut vmz bis Ende August 2016, laut fritz bis 31.07.2016 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1604/nachricht5997.html --- #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.470764.php --- #: last_checked: 2016-08-25 --- #: next_check: 2016-08-29 --- Kynaststr./Hauptstr.: Bauarbeiten, Gehweg benutzen	q3::inwork 14882,10732 14906,10820
@@ -2592,6 +2591,7 @@ Johannesstift: Krankenhausgelände, Aufpflasterungen	q1 -3953,17941 -4108,17776 -
 (Aristotelessteig - Treskowallee): Wohnanlage, Fußgänger	q2 18715,9589 18754,9584 18835,9572 18865,9608
 (Christianstr. - Christophstr.): enger Pfad	q3 17964,16677 17952,16675 17925,16695
 (Birkbuschstr. - Berlinickestr.): Fußgänger	q2 4807,5131 4827,5140 4829,5173
+Mariannenplatz: einige Fußgänger, insbesondere vor dem Bethanienhaus	q2 11799,10848 11803,10857 11805,10899 11819,10942 11854,10972
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

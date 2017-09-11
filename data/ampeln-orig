@@ -2789,47 +2789,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	B0 -3233,17767
 #: note: Anforderungsampel
 	F 7563,13143
-#: note: Anforderungsampel vvv
-#: XXX_prog eigentlich nur für Radfahrer Richtung Nordwesten relevant vvv
-#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
-#: source_id: IM_023548 (bis Ende April 2016) vvv
-#: source_id: 2147341023
-#: XXX laut fritz könnte es früher fertig sein
-#: last_checked: 2017-01-28 vvv
-# REMOVED (Zweirichtungsradweg geht Richtung Norden weiter) --- F 17568,7753
-#: XXX hier wird später eine normale Ampel stehen
-# REMOVED (existiert zurzeit nicht) ---	F::inwork 17681,7589
-# REMOVED ---	F::inwork 17527,7812
-#: last_checked ^^^
-#: source_id ^^^
-#: by: ^^^
-#: XXX_prog ^^^
-#: note ^^^
-# 
-#: next_check_id: KOEPENICKERLANDSTR-2015
-#: note: Anforderungsampel vvv
-#: XXX_prog eigentlich nur für Radfahrer Richtung Südosten relevant vvv
-#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv
-#: source_id: IM_023532 (Gesamtmaßnahme bis Ende Juni 2016) vvv
-#: source_id: 2147339539 vvv
-#: source_id: 2147341264 vvv
-#: source_id: 2147341271 vvv
-#: source_id: 2147341266 vvv
-#: last_checked: 2017-08-04 vvv
-#: check_frequency: 30d vvv
-	F::inwork 16909,6628
-	F::inwork 16646,6925
-#: check_frequency ^^^
-#: last_checked ^^^
-#: source_id ^^^
-#: source_id ^^^
-#: source_id ^^^
-#: source_id ^^^
-#: source_id ^^^
-#: by: ^^^
-#: XXX_prog ^^^
-#: note ^^^
-# 
+# REMOVED --- #: note: Anforderungsampel vvv --- #: XXX_prog eigentlich nur für Radfahrer Richtung Nordwesten relevant vvv --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv --- #: source_id: IM_023548 (bis Ende April 2016) vvv --- #: source_id: 2147341023 --- #: XXX laut fritz könnte es früher fertig sein -- #: last_checked: 2017-01-28 vvv
+# REMOVED (Zweirichtungsradweg geht Richtung Norden weiter) --- F 17568,7753 --- # REMOVED (existiert zurzeit nicht) ---	F::inwork 17681,7589 --- # REMOVED ---	F::inwork 17527,7812
+# REMOVED --- #: next_check_id: KOEPENICKERLANDSTR-2015 --- #: note: Anforderungsampel vvv --- #: XXX_prog eigentlich nur für Radfahrer Richtung Südosten relevant vvv --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2014/pressemitteilung.223342.php vvv --- #: source_id: IM_023532 (Gesamtmaßnahme bis Ende Juni 2016) vvv --- #: source_id: 2147339539 vvv --- #: source_id: 2147341264 vvv --- #: source_id: 2147341271 vvv --- #: source_id: 2147341266 vvv --- #: last_checked: 2017-08-04 vvv --- #: check_frequency: 30d vvv ---	F::inwork 16909,6628 ---	F::inwork 16646,6925
 # REMOVED --- #: next_check_id: FISCHERINSEL-2015 vvv --- #: source_id: IM_024012 vvv --- #: source_id: 2147339543 vvv --- #: last_checked: 2016-12-16 vvv --- #: next_check: 2016-12-22 vvv ---	F::inwork ---	F::inwork
 # REMOVED --- #: next_check_id: AMNORDHAFEN-2015 --- #: source_id: 2147339542 --- #: last_checked: 2015-11-27 ---	F::inwork 7733,14570
 #: note: Anforderungsampel
