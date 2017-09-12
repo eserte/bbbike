@@ -114,7 +114,9 @@ Radspuren hören ca. 50 Meter vor der Kreuzung auf	RW3; 8613,5745 8627,5866
 	RW1;RW3 6972,10665 6929,10852
 	RW3;RW0 7033,10396 7033,10328
 	RW3;RW1 6824,10904 6918,10858 6929,10852
-	RW2;RW2 6532,10529 6685,10690 6740,10755 6824,10904 6873,11011 6882,11061 6880,11110
+	RW2;RW2 6532,10529 6685,10690 6740,10755
+	RW1;RW2 6740,10755 6824,10904
+	RW2;RW2 6824,10904 6873,11011 6882,11061 6880,11110
 	RW1; 6740,10755 6818,10725 6972,10665
 die Benuzungspflicht fängt erst einige Meter später an	RW4; 6818,10725 6740,10755
 	RW1;RW0 6740,10755 6607,10801 6471,10851
@@ -872,12 +874,12 @@ Verbundsteinpflasterradweg	RW1; 7757,834 7867,831
 #: XXX während der Bauarbeiten
 #: XXX wieder herstellen: Radweg auf der Fahrbahn hinter den parkenden Autos	RW1; 6228,13324 6229,13517 6230,13596
 #: by: http://www.dafmap.de/d/berlin.html?id=3875&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-11-30)
-#: last_checked: 2017-06-08
-#: next_check: 2017-09-01
+#: last_checked: 2017-09-12
+#: check_frequency: 60d
 provisorische Radspur	RW3; 6228,13324 6229,13517 6230,13596
 #: XXX wegen Bauarbeiten aufgehoben
-#: last_checked: 2017-06-08
-#: next_check: 2017-09-01
+#: last_checked: 2017-09-12
+#: check_frequency: 60d
 #	RW3; 6377,13321 6228,13324
 	RW0; 6377,13321 6228,13324
 Radweg auf der Fahrbahn hinter den parkenden Autos	RW1; 6230,13596 6227,13938
@@ -1059,8 +1061,8 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5459,11135 5258,11285
 #: XXX früher: Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5
 #: XXX bis Ende 2016, laut rbbtext bis 16.12.2016, laut VMZ nun bis Ende 2017
 #: source_id: 2147339533
-#: last_checked: 2017-08-16
-#: next_check: 2017-09-11
+#: last_checked: 2017-09-12
+#: check_frequency: 60d
 	RW0;RW0 5258,11285 5166,11343 5091,11406
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5091,11406 5085,11413 4922,11600
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
@@ -1390,7 +1392,7 @@ Radweg teilweise nur aufgemalt, hereinragende parkende Autos	RW1; 4187,13704 427
 Gehwegplatten/Verbundsteinpflaster, hereinragende parkende Autos	RW1; 5220,14043 5100,14014 4963,13969 4583,13845
 #: XXX Bauarbeiten, später gibt's hier eine Radspur
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Sickingenstrasse-Huttenstrasse-Verkehrsbe.7507.0.html
-#: last_checked: 2017-07-31
+#: last_checked: 2017-09-12
 	RW0; 4583,13845 4421,13793 4271,13735
 Gehwegplatten/Verbundsteinpflaster	RW1; 4271,13735 4187,13704
 # REMOVED --- Radweg teilweise nur aufgemalt, hereinragende parkende Autos	RW1;RW1 5306,14061 5322,14044 5443,14028 --- Radweg teilweise nur aufgemalt, hereinragende parkende Autos	RW1; 5443,14028 5647,14067 --- existierender Radweg explizit abgesperrt	RW0; 5647,14067 5443,14028 --- Radweg teilweise nur aufgemalt, hereinragende parkende Autos	RW1;RW1 5647,14067 5708,14077 5746,14090

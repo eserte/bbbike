@@ -3538,9 +3538,9 @@ userdel	q3::inwork; -6861,15129 -6507,15007
 ',
          'from' => 1503943766,
          'id' => 2755,
-         'text' => 'Wühlischstr.: Gleisarbeiten, Fahrbahn Richtung Warschauer Str. gesperrt, bis Ende September 2017',
+         'text' => 'Wühlischstr.: Gleisarbeiten, Fahrbahn Richtung Warschauer Str. gesperrt, bis voraussichtlich 13. September 2017',
          'type' => 'handicap',
-         'until' => 1506765600
+         'until' => 1505318400
        },
        undef,
        undef,
@@ -3659,7 +3659,7 @@ userdel	q4::inwork 12911,1815 12940,1547
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-09-10 vvv
+#: last_checked: 2017-09-12 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -3681,27 +3681,7 @@ userdel	q4::inwork 12911,1815 12940,1547
        undef,
        undef,
        undef,
-       {
-         'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet und der Weg freigegeben? vvv
-#: osm_watch: way id="136814135" version="15" vvv
-#: last_checked: 2017-08-16 vvv
-#: check_frequency: 14d vvv
-# REMOVED (hier nicht) --- userdel	2::inwork 3332,12742 3396,12741
-# REMOVED (hier nicht) --- userdel	2::inwork 3396,12741 3358,12718
-userdel	2::inwork 3396,12741 3476,12735 3582,12704 3654,12672 3763,12624 3837,12618
-userdel	2::inwork 3741,12607 3654,12672
-#: check_frequency ^^^
-#: last_checked ^^^
-#: osm_watch ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => undef,
-         'id' => 2830,
-         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.515606.php',
-         'text' => 'Spreeradweg: Bauarbeiten, Uferweg zwischen Caprivibrücke und Schloßbrücke gesperrt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3814,7 +3794,7 @@ userdel	2::inwork 6815,8691 6912,8617
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2017-09-11
+         'data' => '#: last_checked: 2017-09-12
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
          'from' => undef,
@@ -4097,6 +4077,16 @@ userdel	2::inwork 14652,10201 14569,10055
          'text' => 'Sandhauser Str./Falkenplatz: Bauarbeiten, Sperrung der Fahrbahn zwischen Sperberstr. und Falkenhorststr., vom 18.09.2017 bis 31.10.2017',
          'type' => 'handicap',
          'until' => 1509490800
+       },
+       {
+         'data' => 'userdel	q4::inwork; -2959,17507 -2517,17431
+',
+         'from' => 1506204000,
+         'id' => 2908,
+         'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.629757.php',
+         'text' => 'Mertensstr.: Einbahnstraße zwischen Goltzstr. und Streitstr., offen Richtung Westen, voraussichtlich ab Ende September 2017 bis Frühjahr 2018',
+         'type' => 'handicap',
+         'until' => 1522576800
        }
      
 );

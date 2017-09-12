@@ -1162,9 +1162,11 @@ Witzlebenplatz: Kopfsteinpflaster, OK	Q1 2764,11519 2764,11500 2850,11386
 Witzlebenplatz: Asphalt	Q0 2850,11386 2924,11309
 Friedbergstr.: Kopfsteinpflaster, OK	Q1 2766,10750 2793,10752 3012,10812 3204,10895
 Am Berlin Museum: Asphalt mit einigen Katzenkopfreihen	Q2 10032,10752 9829,10830
-(Charlottenburger Ufer - UFerweg): Kleinsteinpflaster	Q1 3358,12718 3396,12741
-(Rad- und Wanderweg an Spree und Landwehrkanal): Asphalt	Q0 3396,12741 3476,12735 3582,12704 3654,12672 3763,12624 3837,12618
-(Rad- und Wanderweg an Spree und Landwehrkanal): teilweise Parkweg, bei Regen mit Pfützen, teilweise gutes Kopfsteinpflaster	Q1 3837,12618 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491
+(Charlottenburger Ufer - UFerweg): Kleinsteinpflaster	Q1 3370,12725 3396,12741
+(Rad- und Wanderweg an Spree und Landwehrkanal): Asphalt	Q0 3416,12738 3507,12725 3586,12697 3643,12671
+(Rad- und Wanderweg an Spree und Landwehrkanal): Kleinsteinpflaster, Regenablaufrinnen	Q2 3643,12671 3748,12627
+(Rad- und Wanderweg an Spree und Landwehrkanal): Asphalt	Q0 3748,12627 3836,12614 3867,12616
+(Rad- und Wanderweg an Spree und Landwehrkanal): teilweise Parkweg, bei Regen mit Pfützen, teilweise gutes Kopfsteinpflaster	Q1 3867,12616 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491
 (Rad- und Wanderweg an Spree und Landwehrkanal): asphaltähnlicher Belag mit einen gepflasterten Abschnitten	Q1 4642,12491 4817,12366 5045,12243 5147,12164 5261,12004 5361,11910
 Monbijoupark - Henriette-Herz-Platz: Asphalt	Q0 9977,12912 10132,12941
 Spreeufer: asphaltiert	Q0 10166,12777 10105,12855 9977,12912 9944,12921 9930,12947 9900,12942 9724,12992 9716,12971 9707,12974
@@ -8756,7 +8758,7 @@ Treptower Park: wassergebundene Decke	Q1 14695,9587 14792,9599 14867,9573 14918,
 (S-Bahnhof Treptower Park - Rosengarten): Gehwegplatten	Q0 14705,9578 14791,9537
 (S-Bahnhof Treptower Park - Rosengarten): Gehwegplatten	Q0 14791,9537 14823,9523 14837,9517
 (Uferweg - Puschkinallee): wassergebundene Decke und Kleinsteinpflaster	Q1 14443,9731 14371,9726 14318,9688
-(Spreeuferweg - Wintersteinstr.): Asphalt mit Regenablaufrinnen	Q1 3654,12672 3741,12607
+(Spreeuferweg - Wintersteinstr.): Kleinsteinpflaster mit Regenablaufrinnen	Q2 3643,12671 3741,12607
 (Weg am Stadtgarten Moabit): asphaltiert	Q0 5708,14077 5685,14215
 Helsingforser Platz: Betonpflaster	Q0 13473,11456 13427,11431
 (Bornholmer Str. - Kolonnenweg): Asphalt	Q0 10134,16534 10118,16561 10108,16576 9954,16590
@@ -15237,7 +15239,7 @@ Jonasstr.: Kopfsteinpflaster	Q2 5956,13433 5964,13535
 Arminusstr.: Asphalt	Q0 5956,13433 5868,13441
 Tile-Wardenberg-Str.: Kopfsteinpflaster	Q2 5740,12419 5616,12500 5585,12518 5556,12536 5486,12581 5376,12661
 Solinger Str.: Kopfsteinpflaster	Q2 5734,12673 5673,12581 5616,12500
-(Unterführung Schloßbrücke): teilweise Parkweg, teilweise gutes Kopfsteinpflaster	Q1 3396,12741 3332,12742 3231,12749
+(Unterführung Schloßbrücke): teilweise Parkweg, teilweise gutes Kopfsteinpflaster	Q1 3416,12738 3396,12741 3332,12742 3231,12749
 Sesenheimer Str.: Asphalt	Q0 3843,11659 3864,11484
 Sesenheimer Str.: Asphalt	Q0 3864,11484 3874,11380
 Sesenheimer Str.: Kopfsteinpflaster	Q2 3874,11380 3877,11347
@@ -15370,7 +15372,7 @@ Koburgallee: Beton	Q0 269,12576 341,12652
 Gotha-Allee: Beton	Q0 770,12566 630,12567 522,12577 341,12652 83,12780 99,12849
 (Reichsstr. - Westendallee): Verbundsteine	Q0 269,12576 151,12541
 Wiebestr.: Asphalt	Q0 4542,13244 4553,13294 4605,13525
-Wiebestr.: Kopfsteinpflaster	Q2 4605,13525 4649,13652 4583,13845
+Wiebestr.: Kopfsteinpflaster	Q2 4605,13525 4619,13708 4583,13845
 Klarenbachstr.: Asphalt	Q0 4553,13294 4363,13336
 Rostocker Str. (Tiergarten): Kopfsteinpflaster mit Bodewellen	Q2 5100,14014 5109,13823 5116,13457
 Wittstocker Str.: Kopfsteinpflaster mit Bodewellen	Q2 4972,13804 5109,13823 5231,13843

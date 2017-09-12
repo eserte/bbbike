@@ -23105,7 +23105,7 @@ EOF
        text  => 'Charlottenburger Ufer: zwischen Winterstein- und Lohmeyerstraße Bauarbeiten, Sperrung der Fahrbahn, bis 31.10.2014',
        type  => 'handicap',
        data  => <<EOF,
-userdel	q4::inwork 3741,12607 3597,12681 3454,12717
+userdel	q4::inwork 3741,12607 3597,12681 3450,12722
 EOF
      },
      { from  => 1402738904, # 2014-06-14 11:41
@@ -24838,8 +24838,8 @@ userdel	q3::inwork 9932,13109 10105,13004
 EOF
      },
      { from  => 1503943766,
-       until => $isodate2epoch->("2017-09-30 12:00:00"),
-       text  => 'Wühlischstr.: Gleisarbeiten, Fahrbahn Richtung Warschauer Str. gesperrt, bis Ende September 2017',
+       until => $isodate2epoch->("2017-09-13 18:00:00"),
+       text  => 'Wühlischstr.: Gleisarbeiten, Fahrbahn Richtung Warschauer Str. gesperrt, bis voraussichtlich 13. September 2017',
        type  => 'handicap',
        data  => <<EOF,
 	q4::inwork; 14575,11407 14434,11465
@@ -25641,7 +25641,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-09-10 vvv
+#: last_checked: 2017-09-12 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -25696,23 +25696,16 @@ userdel	q3::inwork; -795,13437 -729,13415 -346,13349 -309,13268 -264,13009
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1505246045, # undef, # XXX
        text  => 'Spreeradweg: Bauarbeiten, Uferweg zwischen Caprivibrücke und Schloßbrücke gesperrt',
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.515606.php',
        data  => <<EOF,
-#: add_fragezeichen: Sind die Bauarbeiten beendet und der Weg freigegeben? vvv
-#: osm_watch: way id="136814135" version="15" vvv
-#: last_checked: 2017-08-16 vvv
-#: check_frequency: 14d vvv
+# REMOVED (Sperrung beendet) --- #: add_fragezeichen: Sind die Bauarbeiten beendet und der Weg freigegeben? vvv --- #: osm_watch: way id="136814135" version="15" vvv --- #: last_checked: 2017-08-16 vvv --- #: check_frequency: 14d vvv
 # REMOVED (hier nicht) --- userdel	2::inwork 3332,12742 3396,12741
-# REMOVED (hier nicht) --- userdel	2::inwork 3396,12741 3358,12718
-userdel	2::inwork 3396,12741 3476,12735 3582,12704 3654,12672 3763,12624 3837,12618
-userdel	2::inwork 3741,12607 3654,12672
-#: check_frequency ^^^
-#: last_checked ^^^
-#: osm_watch ^^^
-#: add_fragezeichen ^^^
+# REMOVED (hier nicht) --- userdel	2::inwork 3396,12741 3370,12725
+userdel	2::inwork 3396,12741 3416,12738 3507,12725 3586,12697 3643,12671 3748,12627 3836,12614
+userdel	2::inwork 3741,12607 3643,12671
 EOF
      },
      { from  => undef, # 
@@ -26133,7 +26126,7 @@ EOF
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-09-11
+#: last_checked: 2017-09-12
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },
@@ -26512,6 +26505,15 @@ EOF
        source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.629207.php',
        data  => <<EOF,
 userdel	q4::inwork -1869,19974 -1806,19806 -1794,19681 -1788,19663
+EOF
+     },
+     { from  => 1506204000, # 2017-09-24 00:00
+       until => 1522576800, # 2018-04-01 12:00
+       text  => 'Mertensstr.: Einbahnstraße zwischen Goltzstr. und Streitstr., offen Richtung Westen, voraussichtlich ab Ende September 2017 bis Frühjahr 2018',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.629757.php',
+       data  => <<EOF,
+userdel	q4::inwork; -2959,17507 -2517,17431
 EOF
      },
     );
