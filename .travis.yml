@@ -28,20 +28,20 @@ language: perl
 dist: trusty
 matrix:
   include:
+## Fastest results (5-6 min)
     - perl: "5.14"
       env: USE_MODPERL=1 USE_SYSTEM_PERL=1
       dist: precise
+## Perl with no dot in @INC
+    - perl: "5.26"
+      env: BBBIKE_TEST_SKIP_MODPERL=1 BBBIKE_TEST_GUI=1
     - perl: "5.20"
       env: BBBIKE_TEST_SKIP_MODPERL=1
     - perl: "5.18"
       env: BBBIKE_TEST_SKIP_MODPERL=1 BBBIKE_TEST_GUI=1
-    - perl: "5.14"
-      env: BBBIKE_TEST_SKIP_MODPERL=1
     - perl: "5.20-shrplib"
       env: USE_MODPERL=1
       dist: precise
-#    - perl: "5.22"
-#      env: BBBIKE_TEST_SKIP_MODPERL=1 BBBIKE_TEST_GUI=1
     - perl: "5.10"
       env: BBBIKE_TEST_SKIP_MODPERL=1
     - perl: "5.8"
