@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2011,2013,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2011,2013,2016,2017 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -60,6 +60,8 @@ if ($task eq 'pl_to_yml') {
 
     _add_bbbike_inc();
     require BBBikeYAML;
+
+    $file_pl = _make_abs_path($file_pl);
 
     use vars qw(@temp_blocking);
     local @temp_blocking;
@@ -250,6 +252,7 @@ sub _add_bbbike_inc {
 
 sub _load_records {
     my $in_file = shift;
+    $in_file = _make_abs_path($in_file);
 
     no warnings 'once';
     use vars qw(@temp_blocking);
@@ -258,6 +261,15 @@ sub _load_records {
     die "Can't find \@temp_blocking array in $in_file" if not @temp_blocking;
 
     \@temp_blocking;
+}
+
+sub _make_abs_path {
+    my $path = shift;
+    require File::Spec;
+    if (!File::Spec->file_name_is_absolute($path)) {
+	$path = File::Spec->rel2abs($path);
+    }
+    $path;
 }
 
 __END__
