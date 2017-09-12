@@ -572,7 +572,7 @@ LINES: while(defined($_ = nextline())) {
     if ($specsperre && $do_nocross && $cat =~ /^(.*)nocross(:.*)?$/) {
 	my $out_cat = $1;
 	my $out_attribs = $2;
-	if ($out_attribs !~ m{^::?ignrte$}) {
+	if (($out_attribs||'') !~ m{^::?ignrte$}) {
 	    my $out_name = $name;
 	    if ($name =~ /^.*?:\s*(.*)$/) {
 		$out_name = $1;
