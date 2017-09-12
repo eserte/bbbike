@@ -129,9 +129,17 @@ SKIP: {
 	mkdir "$dir/extract";
 	my $size = -s "$dir/$city.tbz";
 	truncate "$dir/$city.tbz", $size-100;
-	my $success = IPC::Run::run([$^X, $download_script, @debug_opts, '-url', 'file://'.$dir, '-city', $city, '-o', "$dir/extract"], '2>', \my $stderr);
-	ok !$success, "Simulate downloading truncated tarball for city '$city'";
-	like $stderr, qr{Error while extracting.*\Q$city\E.*with Archive::Tar};
+	{
+	    my $success = IPC::Run::run([$^X, $download_script, @debug_opts, '-url', 'file://'.$dir, '-city', $city, '-o', "$dir/extract"], '2>', \my $stderr);
+	    ok !$success, "Simulate downloading truncated tarball for city '$city', Archive::Tar or tar";
+	    like $stderr, qr{Error while extracting(.*\Q$city\E.*with Archive::Tar| using tar xfj.*\Q$city\E)};
+	}
+    SKIP: {
+	    skip "No Devel::Hide available", 2 if !eval { require Devel::Hide; 1 };
+	    my $success = IPC::Run::run([$^X, "-MDevel::Hide=Archive::Tar", $download_script, @debug_opts, '-url', 'file://'.$dir, '-city', $city, '-o', "$dir/extract"], '2>', \my $stderr);
+	    ok !$success, "Simulate downloading truncated tarball for city '$city', force tar";
+	    like $stderr, qr{Error while extracting using tar xfj.*\Q$city\E};
+	}
     }
 }
 
