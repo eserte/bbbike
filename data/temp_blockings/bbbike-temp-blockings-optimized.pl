@@ -3533,15 +3533,7 @@ userdel	q3::inwork; -6861,15129 -6507,15007
        undef,
        undef,
        undef,
-       {
-         'data' => '	q4::inwork; 14575,11407 14434,11465
-',
-         'from' => 1503943766,
-         'id' => 2755,
-         'text' => 'Wühlischstr.: Gleisarbeiten, Fahrbahn Richtung Warschauer Str. gesperrt, bis voraussichtlich 13. September 2017',
-         'type' => 'handicap',
-         'until' => 1505318400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3794,7 +3786,7 @@ userdel	2::inwork 6815,8691 6912,8617
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2017-09-12
+         'data' => '#: last_checked: 2017-09-13
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
          'from' => undef,
