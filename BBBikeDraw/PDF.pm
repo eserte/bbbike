@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2004,2008,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2004,2008,2014,2017 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,6 +15,15 @@ package BBBikeDraw::PDF;
 use strict;
 use base qw(BBBikeDraw);
 use PDF::Create 0.06;
+BEGIN {
+    if ($PDF::Create::VERSION >= 1.36 && $PDF::Create::VERSION < 1.41) {
+	warn <<EOF;
+WARN: PDF::Create $PDF::Create::VERSION --- possibly problematic, see
+      https://rt.cpan.org/Ticket/Display.html?id=119292
+      Better to upgrade to at least 1.41
+EOF
+    }
+}
 use PDF::Create::MyPage; # additional methods, for older PDF::Create
 use Strassen;
 # Strassen benutzt FindBin benutzt Carp, also brauchen wir hier nicht zu
