@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# Copyright (c) 1995-2003,2014,2015 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2003,2014,2015,2017 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -27,7 +27,7 @@ Strassen::StrassenNetz - net creation and route searching routines
 
 =cut
 
-$VERSION = '1.62';
+$VERSION = '1.63';
 
 package StrassenNetz;
 use strict;
@@ -565,6 +565,7 @@ sub get_street_record {
 			 AmpelPenalty
 			 HasQualitaet
 			 HasHandicap
+			 HasDirectedHandicap
 			 HasStrcat
 			 HasRadwege
 			 HasRadwegeStrcat
@@ -641,6 +642,35 @@ sub build_penalty_code {
 			my $cat = $handicap_net->{$last_node}{$next_node};
 			if (exists $handicap_penalty->{$cat}) {
                             $pen *= $handicap_penalty->{$cat}; # Handicapzuschlag
+			}
+		    }
+';
+    }
+    if ($sc->HasDirectedHandicap) {
+	$penalty_code .= '
+		    if ($directed_handicap_net &&
+			exists $directed_handicap_net->{$next_node}) {
+			my $directed_handicaps = $directed_handicap_net->{$next_node};
+		    FIND_MATCHING_DIRECTED_HANDICAPS: {
+			    for my $directed_handicap (@$directed_handicaps) {
+				my $this_node = $last_node;
+				my $path = $directed_handicap->{p};
+			    FIND_MATCHING_DIRECTED_HANDICAP: {
+				    for(my $i=$#$path; $i>=0; $i--) {
+					if ($path->[$i] ne $this_node) {
+					    last FIND_MATCHING_DIRECTED_HANDICAP;
+					}
+					if ($i > 0) {
+					    $this_node = $NODES{$this_node}->[PREDECESSOR];
+					    if (!defined $this_node) {
+						last FIND_MATCHING_DIRECTED_HANDICAP;
+					    }
+					}
+				     }
+				     $pen += $directed_handicap->{pen};
+				     last FIND_MATCHING_DIRECTED_HANDICAPS;
+				}
+			    }
 			}
 		    }
 ';
@@ -1173,6 +1203,7 @@ sub search {
     $sc->HasPenalty(exists $args{Ampeln}    ||
 		    exists $args{Qualitaet} ||
 		    exists $args{Handicap}  ||
+		    exists $args{DirectedHandicap} ||
 		    exists $args{Strcat}    ||
 		    exists $args{Radwege}   ||
 		    exists $args{RadwegeStrcat} ||
@@ -1193,6 +1224,7 @@ sub search {
     }
     $sc->HasQualitaet     (exists $args{Qualitaet});
     $sc->HasHandicap      (exists $args{Handicap});
+    $sc->HasDirectedHandicap(exists $args{DirectedHandicap});
     $sc->HasStrcat        (exists $args{Strcat});
     $sc->HasRadwege       (exists $args{Radwege});
     $sc->HasRadwegeStrcat (exists $args{RadwegeStrcat});
@@ -1229,6 +1261,10 @@ sub search {
     if (exists $args{Handicap}) {
 	$handicap_net = $args{Handicap}->{Net}->{Net};
 	$handicap_penalty = $args{Handicap}->{Penalty} || die "No penalty";
+    }
+    my($directed_handicap_net);
+    if (exists $args{DirectedHandicap}) {
+	$directed_handicap_net = $args{DirectedHandicap};
     }
 
     my($strcat_net, $strcat_penalty);
