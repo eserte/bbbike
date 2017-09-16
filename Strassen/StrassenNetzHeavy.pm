@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# Copyright (c) 1995-2003,2012 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2003,2012,2017 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -346,6 +346,52 @@ sub make_net_cyclepath {
 	}
     }
 
+}
+
+### AutoLoad Sub
+sub make_net_directedhandicap {
+    my($self, $s, %args) = @_;
+    my $speed_kmh = delete $args{speed};
+    die "Unhandled options: " . join(" ", %args) if %args;
+    my $speed_ms = $speed_kmh / 3.6;
+
+    my %directed_handicaps;
+    my $warned_too_few_coord;
+    my $warned_invalid_cat;
+    $s->init;
+    while() {
+	my $r = $s->next;
+	my @c = @{ $r->[Strassen::COORDS()] };
+	last if !@c;
+	if (@c < 3) {
+	    if (!$warned_too_few_coord++) {
+		warn "Invalid directedhandicap record: less than three coordinates. Entry is: @$r (warn only once)";
+	    }
+	}
+	my $pen;
+	if ($r->[Strassen::CAT()] =~ m{^DH:(.+)$}) {
+	    my $attr = $1;
+	    if ($attr =~ m{^t=(\d+)$}) {
+		my $time = $1;
+		$pen = $time * $speed_ms;
+	    } elsif ($attr =~ m{^len=(\d+)$}) {
+		$pen = $1;
+	    } else {
+		if (!$warned_invalid_cat++) {
+		    warn "Invalid attr '$attr'. Entry is @$r (warn only once)";
+		}
+	    }
+	} else {
+	    if (!$warned_invalid_cat++) {
+		warn "Invalid category '$r->[Strassen::CAT()]'. Entry is @$r (warn only once)";
+	    }
+	}
+	if (defined $pen) {
+	    my $last = pop @c;
+	    push @{ $directed_handicaps{$last} }, { p => \@c, pen => $pen };
+	}
+    }
+    \%directed_handicaps;
 }
 
 # XXX Abspeichern der Wegfuehrung nicht getestet
