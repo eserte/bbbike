@@ -2886,12 +2886,14 @@ sub reload_new_modules {
 sub buttonpoint {
     my($x, $y, $current) = @_;
     my($rx,$ry) = ($x,$y);
-    $c->SelectionOwn(-command => sub {
-			 @inslauf_selection = ();
-			 # kein reset_ext_selection, weil dann beim Anklicken
-			 # auf $coordlist_lbox die Selection verschwindet
-			 @ext_selection = ();
-		     });
+    if (!$use_clipboard) {
+	$c->SelectionOwn(-command => sub {
+			     @inslauf_selection = ();
+			     # kein reset_ext_selection, weil dann beim Anklicken
+			     # auf $coordlist_lbox die Selection verschwindet
+			     @ext_selection = ();
+			 });
+    }
     my $prefix = (defined $coord_prefix
 		  ? $coord_prefix
 		  : ($use_current_coord_prefix
@@ -2901,14 +2903,11 @@ sub buttonpoint {
 		 );
     if (defined $x) {
 	my $coord = sprintf "$prefix%s,%s", $coord_output_sub->($x, $y);
-	push(@inslauf_selection, $coord);
-	clipboardAppendToken($coord);
 	my $ext = prepare_selection_line
 	    (-name => "?",
 	     -coord1 => Route::_coord_as_string([$x,$y]),
 	     -coord2 => $coord);
-	push_ext_selection($ext);
-	print STDERR $ext, "\n";
+	push_selection($coord, $ext);
     } else {
 	$current = 'current' if !defined $current;
 	my(@tags) = $c->gettags($current);
@@ -2950,9 +2949,7 @@ sub buttonpoint {
 		     -coord1 => $tags[1],
 		     -coord2 => Route::_coord_as_string([$x,$y]));
 		my $str = ($use_prefix ? $prefix : "") . Route::_coord_as_string([$x,$y]);
-		push(@inslauf_selection, $str);
-		clipboardAppendToken($str);
-		push_ext_selection($s);
+		push_selection($str, $s);
 	    } elsif ($tags[0] eq 'o' ||
 		     $tags[0] eq 'fz') {
 		my($cx, $cy);
@@ -2972,9 +2969,7 @@ sub buttonpoint {
 		   -coord1 => Route::_coord_as_string([$cx,$cy]),
 		   -coord2 => Route::_coord_as_string([$x,$y]));
 		my $str = $prefix . Route::_coord_as_string([$x,$y]);
-		push(@inslauf_selection, $str);
-		clipboardAppendToken($str);
-		push_ext_selection($s);
+		push_selection($str, $s);
 	    } else {
 		die "Tag $tags[0] wird für das Aufzeichnen von Punkten nicht unterstützt";
 	    }
@@ -2983,17 +2978,6 @@ sub buttonpoint {
 	}
     }
     ($rx,$ry);
-}
-
-### AutoLoad Sub
-sub clipboardAppendToken {
-    if ($use_clipboard) {
-	my($token) = @_;
-	if (eval { $c->clipboard('get') } ne '') {
-	    $c->clipboardAppend(" ");
-	}
-	$c->clipboardAppend($token);
-    }
 }
 
 ### AutoLoad Sub
@@ -3029,6 +3013,29 @@ sub push_ext_selection {
     }
 }
 
+sub push_selection {
+    my($short, $extended) = @_;
+    push @inslauf_selection, $short;
+    if ($use_clipboard) {
+	clipboardAppendToken($short, @inslauf_selection == 1);
+    }
+    if (defined $extended) {
+	push_ext_selection($extended);
+	print STDERR $extended, "\n";
+    }
+}
+
+### AutoLoad Sub
+sub clipboardAppendToken {
+    my($token, $is_first_point) = @_;
+    if ($is_first_point) {
+	$c->clipboardClear;
+    } else {
+	$token = ' ' . $token;
+    }
+    $c->clipboardAppend($token);
+}
+
 ### AutoLoad Sub
 sub reset_ext_selection {
     @ext_selection = ();
@@ -3044,7 +3051,12 @@ sub reset_ext_selection {
 ### AutoLoad Sub
 sub reset_selection {
     @inslauf_selection = ();
-    $c->clipboardClear() if $use_clipboard;
+    if ($use_clipboard) {
+	$c->clipboardClear();
+	# At least on Xquartz calling clipboardClear is not enough
+	# --- an empty append is also required
+	$c->clipboardAppend("");
+    }
     reset_ext_selection();
 }
 

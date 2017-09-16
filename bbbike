@@ -378,7 +378,7 @@ $^W = $devel_host ? 1 : 0; # $advanced also sets $^W, see below
 if (!defined $is_handheld) {
     $is_handheld = $Config{"archname"} =~ /^arm-linux$/i;
 }
-$use_clipboard = 1 if $os eq 'win';
+$use_clipboard = 1 if $os eq 'win' || $^O eq 'darwin';
 
 # include after setting $os!
 require TkChange;
@@ -15874,9 +15874,7 @@ sub update_flags_and_route {
 sub update_clipboard {
     if ($use_clipboard) {
 	$c->clipboardClear;
-	# Use a leading space, to be consistent with rest of (lazy) clipboard
-	# code.
-	$c->clipboardAppend(" " . join(" ", @inslauf_selection));
+	$c->clipboardAppend(join(" ", @inslauf_selection));
     }
 }
 
