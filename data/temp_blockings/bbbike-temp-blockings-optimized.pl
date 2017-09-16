@@ -3620,7 +3620,7 @@ userdel	q3::inwork; 16768,14849 16610,15000 16514,15092
        undef,
        undef,
        {
-         'data' => '#: note: laut fritz bis 2017-09-15, laut vmz bis 2018
+         'data' => '#: note: laut fritz bis 2017-12-23, laut vmz bis 2018
 #: by: http://www.berliner-woche.de/buckow/verkehr/der-lange-weg-zur-sanierten-strasse-bauarbeiten-am-buckower-damm-anwohner-aergern-sich-ueber-lkw-im-wohngebiet-d126968.html
 #: note: die Baustelle ist gewandert
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
@@ -3631,7 +3631,7 @@ userdel	q4::inwork 12911,1815 12940,1547
          'source_id' => '2147341551',
          'text' => 'Buckower Damm: Baustelle zwischen An den Achterhöfen und Mollnerweg, evtl. auch Einschränkungen für Radfahrer, bis Ende 2017',
          'type' => 'handicap',
-         'until' => 1514718000
+         'until' => 1514026800
        },
        undef,
        undef,
