@@ -39,7 +39,7 @@ Lange Str.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 12409,11902 12238,11
 #: valid: -20170927
 Krautstr.: Fahrbahn abschnittsweise gesperrt, Ausweichen auf Gehweg notwendig	q3::inwork 11963,11813 11966,11832 11993,11978
 # 
-#: last_checked: 2017-09-03
+#: last_checked: 2017-09-16
 #: next_check: 2017-10-16
 #: valid: -20171016
 Palisadenstr.: Bauarbeiten, teilweise Einbahnstraﬂe, offen Richtung Osten	q2::inwork; 12866,12582 12843,12567 12632,12630
@@ -98,7 +98,7 @@ BouchÈstr.: Bauarbeiten an der Heidelberger Str.	q3::inwork 13489,9456 13357,931
 M‰rkisches Ufer: Bauarbeiten, Engstelle	q3+::inwork 10687,11853 10869,11949
 # 
 #: source_id: 2147341587
-#: last_checked: 2017-09-12 vvv
+#: last_checked: 2017-09-16 vvv
 #: next_check: 2017-09-29 vvv
 #: valid: -20170929 vvv
 J‰gerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q2::inwork 9195,11972 9393,12000
@@ -188,7 +188,7 @@ Prinzengasse: einige Fuﬂg‰nger, parkende Autos	q3::inwork 9955,12300 10002,12305
 # REMOVED (Einbahnstraﬂenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universit‰tsstr.: wegen Bauarbeiten Einbahnstraﬂe zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2017-08-29 vvv
+#: last_checked: 2017-09-16 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="5"
@@ -235,7 +235,7 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwo
 # 
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
-#: last_checked: 2017-08-24
+#: last_checked: 2017-09-16
 #: check_frequency: 90d
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # 
