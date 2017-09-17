@@ -394,6 +394,7 @@ sub draw_map {
 	$BBBikeDraw::DEBUG = $BBBikeDraw::DEBUG = $debug;
 	$BBBikeDraw::MapServer::DEBUG = $BBBikeDraw::MapServer::DEBUG = $debug;
 	$BBBikeDraw::PDF::VERBOSE = $BBBikeDraw::PDF::VERBOSE = $debug;
+	$BBBikeDraw::PDFCairo::VERBOSE = $BBBikeDraw::PDFCairo::VERBOSE = $debug;
 	# XXX more to come...
     }
 
