@@ -51,10 +51,10 @@ my $dh_len_time = Strassen->new_from_data_string(<<"EOF");
 Simulate penalty in left turn from Grossbeerenstr. to Wartenburgstr.\tDH:t=9:len=50 9044,9753 9073,9915 8780,9968
 EOF
 my $dh_kerb = Strassen->new_from_data_string(<<"EOF");
-Simulate kerb in Kleine Andreasstr.\tDH:kerb 12064,12171 12211,12128 12279,12113
-Simulate kerb in Kleine Andreasstr.\tDH:kerb 12279,12113 12211,12128 12064,12171
-Simulate first kerb in Neuenburger Str.\tDH:kerb 9770,10590 9795,10512 9848,10526
-Simulate second kerb in Neuenburger Str.\tDH:kerb 9848,10526 9853,10543 9955,10501
+Simulate kerb in Kleine Andreasstr.\tDH:kerb_up 12064,12171 12211,12128 12279,12113
+Simulate kerb in Kleine Andreasstr.\tDH:kerb_down 12279,12113 12211,12128 12064,12171
+Simulate first kerb in Neuenburger Str.\tDH:kerb_up 9770,10590 9795,10512 9848,10526
+Simulate second kerb in Neuenburger Str.\tDH:kerb_down 9848,10526 9853,10543 9955,10501
 EOF
 
 my $s_net = StrassenNetz->new($s);
@@ -132,7 +132,7 @@ $s_net->make_net(UseCache => 0);
 }
 
 {
-    my $directed_handicap_net = StrassenNetz->make_net_directedhandicap($dh_kerb, speed => 20, kerb_time => 3);
+    my $directed_handicap_net = StrassenNetz->make_net_directedhandicap($dh_kerb, speed => 20, kerb_up_time => 4, kerb_down_time => 2);
     # Same search, with directed handicap
     my($path) = $s_net->search("9770,10590", "10178,10411", DirectedHandicap => $directed_handicap_net);
     my @route_info = $s_net->route_info(Route => $path);
@@ -148,7 +148,7 @@ $s_net->make_net(UseCache => 0);
 }
 
 {
-    my $directed_handicap_net = StrassenNetz->make_net_directedhandicap($dh_kerb, speed => 20, kerb_time => 60);
+    my $directed_handicap_net = StrassenNetz->make_net_directedhandicap($dh_kerb, speed => 20, kerb_up_time => 60, kerb_down_time => 40);
     # Same search, with directed handicap
     my($path) = $s_net->search("9770,10590", "10178,10411", DirectedHandicap => $directed_handicap_net);
     my @route_info = $s_net->route_info(Route => $path);

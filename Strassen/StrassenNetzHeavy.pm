@@ -359,16 +359,26 @@ sub make_net_directedhandicap {
     my($self, $s, %args) = @_;
     my $speed_kmh = delete $args{speed};
     my $vehicle = delete $args{vehicle} || '';
-    my $kerb_time = delete $args{kerb_time};
+    my %time;
+    $time{kerb_up}   = delete $args{kerb_up_time};
+    $time{kerb_down} = delete $args{kerb_down_time};
     die "Unhandled options: " . join(" ", %args) if %args;
     my $speed_ms = $speed_kmh / 3.6;
-    if (!defined $kerb_time) {
-	$kerb_time =
-	    # XXX check times! different types of kerbs (low/high)?
-	    {''          => 3,
-	     'trailer'   => 10,
-	     'cargobike' => 15,
-	     'heavybike' => 30,
+    # XXX check kerb times!
+    if (!defined $time{kerb_up}) {
+	$time{kerb_up} =
+	    {''          => 4,
+	     'trailer'   => 12,
+	     'cargobike' => 18,
+	     'heavybike' => 40,
+	    }->{$vehicle};
+    }
+    if (!defined $time{kerb_down}) {
+	$time{kerb_down} =
+	    {''          => 2,
+	     'trailer'   => 8,
+	     'cargobike' => 13,
+	     'heavybike' => 25,
 	    }->{$vehicle};
     }
 
@@ -394,8 +404,8 @@ sub make_net_directedhandicap {
 		    $pen += $time * $speed_ms;
 		} elsif ($attr =~ m{^len=(\d+)$}) {
 		    $pen += $1;
-		} elsif ($attr eq 'kerb') {
-		    $pen += $kerb_time * $speed_ms;
+		} elsif ($attr =~ m{^kerb_(?:up|down)$}) {
+		    $pen += $time{$attr} * $speed_ms;
 		} else {
 		    if (!$warned_invalid_cat++) {
 			warn "Invalid attr '$attr'. Entry is @$r (warn only once)";
