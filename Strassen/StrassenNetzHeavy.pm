@@ -348,6 +348,12 @@ sub make_net_cyclepath {
 
 }
 
+# Create a data structure (a hash ref) for the DirectedHandicap search feature.
+# Parameters:
+# - Strassen object
+# - %args:
+#   - speed: speed in km/h, required for converting time penalties
+# 
 ### AutoLoad Sub
 sub make_net_directedhandicap {
     my($self, $s, %args) = @_;
@@ -370,15 +376,17 @@ sub make_net_directedhandicap {
 	}
 	my $pen;
 	if ($r->[Strassen::CAT()] =~ m{^DH:(.+)$}) {
-	    my $attr = $1;
-	    if ($attr =~ m{^t=(\d+)$}) {
-		my $time = $1;
-		$pen = $time * $speed_ms;
-	    } elsif ($attr =~ m{^len=(\d+)$}) {
-		$pen = $1;
-	    } else {
-		if (!$warned_invalid_cat++) {
-		    warn "Invalid attr '$attr'. Entry is @$r (warn only once)";
+	    my $attrs = $1;
+	    for my $attr (split /:/, $attrs) {
+		if ($attr =~ m{^t=(\d+)$}) {
+		    my $time = $1;
+		    $pen += $time * $speed_ms;
+		} elsif ($attr =~ m{^len=(\d+)$}) {
+		    $pen = $1;
+		} else {
+		    if (!$warned_invalid_cat++) {
+			warn "Invalid attr '$attr'. Entry is @$r (warn only once)";
+		    }
 		}
 	    }
 	} else {

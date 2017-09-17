@@ -37,6 +37,9 @@ EOF
 my $dh_time = Strassen->new_from_data_string(<<"EOF");
 Simulate penalty in left turn from Grossbeerenstr. to Wartenburgstr.\tDH:t=18 9044,9753 9073,9915 8780,9968
 EOF
+my $dh_len_time = Strassen->new_from_data_string(<<"EOF");
+Simulate penalty in left turn from Grossbeerenstr. to Wartenburgstr.\tDH:t=9:len=50 9044,9753 9073,9915 8780,9968
+EOF
 
 my $s_net = StrassenNetz->new($s);
 $s_net->make_net(UseCache => 0);
@@ -62,6 +65,22 @@ $s_net->make_net(UseCache => 0);
     my($path) = $s_net->search("9044,9753", "8783,10166", DirectedHandicap => $directed_handicap_net);
     my @route_info = $s_net->route_info(Route => $path);
     is $route_info[1]->{Street}, 'Obentrautstr.', 'with directed handicaps, time based --- expected via Obentrautstr.';
+}
+
+{
+    my $directed_handicap_net = StrassenNetz->make_net_directedhandicap($dh_time, speed => 5);
+    # Same search, with directed handicap, time based
+    my($path) = $s_net->search("9044,9753", "8783,10166", DirectedHandicap => $directed_handicap_net);
+    my @route_info = $s_net->route_info(Route => $path);
+    is $route_info[1]->{Street}, 'Wartenburgstr.', 'with directed handicaps, time based --- low speed, still expected via Wartenburgstr.';
+}
+
+{
+    my $directed_handicap_net = StrassenNetz->make_net_directedhandicap($dh_len_time, speed => 20);
+    # Same search, with directed handicap, combined length+time based
+    my($path) = $s_net->search("9044,9753", "8783,10166", DirectedHandicap => $directed_handicap_net);
+    my @route_info = $s_net->route_info(Route => $path);
+    is $route_info[1]->{Street}, 'Obentrautstr.', 'with directed handicaps, length+time based --- expected via Obentrautstr.';
 }
 
 
