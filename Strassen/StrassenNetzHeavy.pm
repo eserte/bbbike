@@ -358,8 +358,19 @@ sub make_net_cyclepath {
 sub make_net_directedhandicap {
     my($self, $s, %args) = @_;
     my $speed_kmh = delete $args{speed};
+    my $vehicle = delete $args{vehicle} || '';
+    my $kerb_time = delete $args{kerb_time};
     die "Unhandled options: " . join(" ", %args) if %args;
     my $speed_ms = $speed_kmh / 3.6;
+    if (!defined $kerb_time) {
+	$kerb_time =
+	    # XXX check times! different types of kerbs (low/high)?
+	    {''          => 3,
+	     'trailer'   => 10,
+	     'cargobike' => 15,
+	     'heavybike' => 30,
+	    }->{$vehicle};
+    }
 
     my %directed_handicaps;
     my $warned_too_few_coord;
@@ -382,7 +393,9 @@ sub make_net_directedhandicap {
 		    my $time = $1;
 		    $pen += $time * $speed_ms;
 		} elsif ($attr =~ m{^len=(\d+)$}) {
-		    $pen = $1;
+		    $pen += $1;
+		} elsif ($attr eq 'kerb') {
+		    $pen += $kerb_time * $speed_ms;
 		} else {
 		    if (!$warned_invalid_cat++) {
 			warn "Invalid attr '$attr'. Entry is @$r (warn only once)";
