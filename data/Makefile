@@ -79,6 +79,7 @@ SOURCE_TARGETS+=	plz potsdam deutschland grenzuebergaenge
 SOURCE_TARGETS+=	sehenswuerdigkeit obst radwege
 SOURCE_TARGETS+=	qualitaet_s qualitaet_l
 SOURCE_TARGETS+=	handicap_s handicap_l
+SOURCE_TARGETS+=	handicap_directed
 SOURCE_TARGETS+=	vorfahrt nolighting
 SOURCE_TARGETS+=	housenumbers green brunnels
 SOURCE_TARGETS+=	gesperrt gesperrt_car
@@ -733,6 +734,9 @@ handicap_l:	handicap_l-orig berlin ${PERSISTENTTMPDIR}/gesperrt-with-handicaps
 		>> $@~
 	mv $@~ $@
 	-@$(READONLY) $@
+
+handicap_directed:	handicap_directed-orig
+	${PERL} doit.pl handicap_directed
 
 vorfahrt:	vorfahrt-orig .check_daily
 	-@$(WRITEABLE) $@

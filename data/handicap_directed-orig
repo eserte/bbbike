@@ -1,7 +1,8 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Directed handicaps
 #: line_arrow: last
-#: line_color: black
+#: line_color: #800000
+#: line_dash: 2,4
 #: line_do_offset: 1
 #: line_width: 2
 #:
@@ -9,5 +10,16 @@
 #: last_checked: 2017-09-10 vvv
 Gürtelstr. -> Möllendorffstr.: Umweg zur Ampel	DH:len=70 15294,11964 15361,12071 15420,12178
 Frankfurter Allee -> Möllendorffstr.: Umweg zur Ampel	DH:len=70 15117,12106 15361,12071 15420,12178
+#: last_checked ^^^
+#: next_check_id ^^^
+# 
+#: next_check_id: ZEUGHAUS-2014 vvv
+#: last_checked: 2017-09-16 vvv
+#: check_frequency: 90d vvv
+Schinkelplatz -> Am Zeughaus: Umweg zur Ampel	DH:len=50 9996,12401 9984,12426 9956,12523
+UdL -> Am Zeughaus: Umweg zur Ampel	DH:len=50 9934,12420 9984,12426 9956,12523
+Am Zeughaus -> Schinkelplatz: Umweg zur Ampel	DH:len=50 9956,12523 9984,12426 9996,12401
+Schinkelplatz -> UdL: Umweg zur Ampel	DH:len=50 9996,12401 9984,12426 9934,12420
+#: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
