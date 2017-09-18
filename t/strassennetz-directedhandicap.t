@@ -74,6 +74,9 @@ $s_net->make_net(UseCache => 0);
     my($path) = $s_net->search("9044,9753", "8783,10166", DirectedHandicap => $directed_handicap_net);
     my @route_info = $s_net->route_info(Route => $path);
     is $route_info[1]->{Street}, 'Obentrautstr.', 'with directed handicaps, length based --- expected via Obentrautstr.';
+    my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+    is_deeply \@directed_handicap_info, [], 'not routing through directed handicaps'
+	or diag(explain(\@directed_handicap_info));
 }
 
 {
@@ -82,6 +85,9 @@ $s_net->make_net(UseCache => 0);
     my($path) = $s_net->search("9044,9753", "8783,10166", DirectedHandicap => $directed_handicap_net);
     my @route_info = $s_net->route_info(Route => $path);
     is $route_info[1]->{Street}, 'Obentrautstr.', 'with directed handicaps, time based --- expected via Obentrautstr.';
+    my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+    is_deeply \@directed_handicap_info, [], 'not routing through directed handicaps'
+	or diag(explain(\@directed_handicap_info));
 }
 
 {
@@ -90,6 +96,17 @@ $s_net->make_net(UseCache => 0);
     my($path) = $s_net->search("9044,9753", "8783,10166", DirectedHandicap => $directed_handicap_net);
     my @route_info = $s_net->route_info(Route => $path);
     is $route_info[1]->{Street}, 'Wartenburgstr.', 'with directed handicaps, time based --- low speed, still expected via Wartenburgstr.';
+    my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+    is_deeply \@directed_handicap_info,
+	[
+	 {
+	  "lost_time" => 18,
+	  "add_len" => undef,
+	  "path_begin_i" => 0,
+	  "path_end_i" => 2
+	 }
+	], 'routing through a directed handicap with pen only'
+	    or diag(explain(\@directed_handicap_info));
 }
 
 {
@@ -98,6 +115,9 @@ $s_net->make_net(UseCache => 0);
     my($path) = $s_net->search("9044,9753", "8783,10166", DirectedHandicap => $directed_handicap_net);
     my @route_info = $s_net->route_info(Route => $path);
     is $route_info[1]->{Street}, 'Obentrautstr.', 'with directed handicaps, length+time based --- expected via Obentrautstr.';
+    my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+    is_deeply \@directed_handicap_info, [], 'not routing through directed handicaps'
+	or diag(explain(\@directed_handicap_info));
 }
 
 # Kerb (Bordstein) tests
@@ -113,7 +133,10 @@ $s_net->make_net(UseCache => 0);
     # Same search, with directed handicap
     my($path) = $s_net->search("12084,12235", "12238,11931", DirectedHandicap => $directed_handicap_net);
     my @route_info = $s_net->route_info(Route => $path);
-    is $route_info[1]->{Street}, 'Andreasstr.', 'with directed handicaps, kerb optimization --- expected via Kleine Andreasstr.';
+    is $route_info[1]->{Street}, 'Andreasstr.', 'with directed handicaps, kerb optimization --- expected via Andreasstr.';
+    my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+    is_deeply \@directed_handicap_info, [], 'not routing through directed handicaps'
+	or diag(explain(\@directed_handicap_info));
 }
 
 {
@@ -129,6 +152,23 @@ $s_net->make_net(UseCache => 0);
     my($path) = $s_net->search("9770,10590", "10178,10411", DirectedHandicap => $directed_handicap_net);
     my @route_info = $s_net->route_info(Route => $path);
     is $route_info[1]->{Street}, 'Neuenburger Str.', 'with kerb optimization using normal vehicle, but not "enough" --- expected via Neuenburger Str.';
+    my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+    is_deeply \@directed_handicap_info
+	[
+	 {
+	  'add_len' => undef,
+	  'lost_time' => '4',
+	  'path_begin_i' => 0,
+	  'path_end_i' => 2
+	 },
+	 {
+	  'add_len' => undef,
+	  'lost_time' => '2',
+	  'path_begin_i' => 2,
+	  'path_end_i' => 4
+	 }
+	], 'not routing through directed handicaps'
+	or diag(explain(\@directed_handicap_info));
 }
 
 {
@@ -137,6 +177,23 @@ $s_net->make_net(UseCache => 0);
     my($path) = $s_net->search("9770,10590", "10178,10411", DirectedHandicap => $directed_handicap_net);
     my @route_info = $s_net->route_info(Route => $path);
     is $route_info[1]->{Street}, 'Neuenburger Str.', 'with kerb optimization specified with kerb_time, but not "enough" --- now expected via Neuenburger Str.';
+    my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+    is_deeply \@directed_handicap_info,
+	[
+	 {
+	  'add_len' => undef,
+	  'lost_time' => '4',
+	  'path_begin_i' => 0,
+	  'path_end_i' => 2
+	 },
+	 {
+	  'add_len' => undef,
+	  'lost_time' => '2',
+	  'path_begin_i' => 2,
+	  'path_end_i' => 4
+	 }
+	], 'not routing through directed handicaps'
+	or diag(explain(\@directed_handicap_info));
 }
 
 {
@@ -145,6 +202,9 @@ $s_net->make_net(UseCache => 0);
     my($path) = $s_net->search("9770,10590", "10178,10411", DirectedHandicap => $directed_handicap_net);
     my @route_info = $s_net->route_info(Route => $path);
     is $route_info[1]->{Street}, 'Alte Jakobstr.', 'with kerb optimization using heavy bike --- now expected via Alte Jakobstr.';
+    my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+    is_deeply \@directed_handicap_info, [], 'not routing through directed handicaps'
+	or diag(explain(\@directed_handicap_info));
 }
 
 {
@@ -153,6 +213,9 @@ $s_net->make_net(UseCache => 0);
     my($path) = $s_net->search("9770,10590", "10178,10411", DirectedHandicap => $directed_handicap_net);
     my @route_info = $s_net->route_info(Route => $path);
     is $route_info[1]->{Street}, 'Alte Jakobstr.', 'with kerb optimization specified with high kerb_time --- now expected via Alte Jakobstr.';
+    my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+    is_deeply \@directed_handicap_info, [], 'not routing through directed handicaps'
+	or diag(explain(\@directed_handicap_info));
 }
 
 __END__

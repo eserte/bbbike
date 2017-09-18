@@ -368,6 +368,7 @@ sub make_net_directedhandicap {
     if (!defined $time{kerb_up}) {
 	$time{kerb_up} =
 	    {''          => 4,
+	     'childseat' => 5,
 	     'trailer'   => 12,
 	     'cargobike' => 18,
 	     'heavybike' => 40,
@@ -376,6 +377,7 @@ sub make_net_directedhandicap {
     if (!defined $time{kerb_down}) {
 	$time{kerb_down} =
 	    {''          => 2,
+	     'childseat' => 3,
 	     'trailer'   => 8,
 	     'cargobike' => 13,
 	     'heavybike' => 25,
@@ -396,6 +398,7 @@ sub make_net_directedhandicap {
 	    }
 	}
 	my $pen;
+	my $len;
 	if ($r->[Strassen::CAT()] =~ m{^DH:(.+)$}) {
 	    my $attrs = $1;
 	    for my $attr (split /:/, $attrs) {
@@ -404,6 +407,7 @@ sub make_net_directedhandicap {
 		    $pen += $time * $speed_ms;
 		} elsif ($attr =~ m{^len=(\d+)$}) {
 		    $pen += $1;
+		    $len += $1;
 		} elsif ($attr =~ m{^kerb_(?:up|down)$}) {
 		    $pen += $time{$attr} * $speed_ms;
 		} else {
@@ -419,10 +423,55 @@ sub make_net_directedhandicap {
 	}
 	if (defined $pen) {
 	    my $last = pop @c;
-	    push @{ $directed_handicaps{$last} }, { p => \@c, pen => $pen };
+	    push @{ $directed_handicaps{$last} }, { p => \@c, pen => $pen, len => $len };
 	}
     }
-    \%directed_handicaps;
+    return {
+	    Net     => \%directed_handicaps,
+	    SpeedMS => $speed_ms,
+	   };
+}
+
+sub directedhandicap_get_losses {
+    my(undef, $directed_handicap_net, $route_path_ref) = @_;
+    my $net = $directed_handicap_net->{Net};
+    my $speed_ms = $directed_handicap_net->{SpeedMS};
+    my @route_path = map { join ',', @$_ } @$route_path_ref;
+    my @ret;
+    for(my $rp_i=1; $rp_i<=$#route_path; $rp_i++) {
+	my $next_node = $route_path[$rp_i];
+	if (exists $net->{$next_node}) {
+	    my $directed_handicaps = $net->{$next_node};
+	FIND_MATCHING_DIRECTED_HANDICAPS: {
+		for my $directed_handicap (@$directed_handicaps) {
+		    my $rp_j = $rp_i-1;
+		    my $this_node = $route_path[$rp_j];
+		    my $handicap_path = $directed_handicap->{p};
+		FIND_MATCHING_DIRECTED_HANDICAP: {
+			for(my $hp_i=$#$handicap_path; $hp_i>=0; $hp_i--) {
+			    if ($handicap_path->[$hp_i] ne $this_node) {
+				last FIND_MATCHING_DIRECTED_HANDICAP;
+			    }
+			    if ($hp_i > 0) {
+				last FIND_MATCHING_DIRECTED_HANDICAP
+				    if $rp_j == 0;
+				$this_node = $route_path[--$rp_j];
+			    }
+			}
+			push @ret,
+			    {
+			     path_begin_i => $rp_j,
+			     path_end_i   => $rp_i,
+			     add_len      => $directed_handicap->{len},
+			     lost_time    => $directed_handicap->{pen} / $speed_ms,
+			    };
+			last FIND_MATCHING_DIRECTED_HANDICAPS;
+		    }
+		}
+	    }
+	}
+    }
+    @ret;
 }
 
 # XXX Abspeichern der Wegfuehrung nicht getestet

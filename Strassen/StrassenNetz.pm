@@ -1264,7 +1264,7 @@ sub search {
     }
     my($directed_handicap_net);
     if (exists $args{DirectedHandicap}) {
-	$directed_handicap_net = $args{DirectedHandicap};
+	$directed_handicap_net = $args{DirectedHandicap}->{Net};
     }
 
     my($strcat_net, $strcat_penalty);
