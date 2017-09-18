@@ -23,6 +23,8 @@ GetOptions("debug" => \my $debug)
 
 if ($debug) {
     Strassen::set_verbose(1);
+} else {
+    eval 'use Test::NoWarnings';
 }
 
 my $s = Strassen->new_from_data_string(<<"EOF");
@@ -137,6 +139,9 @@ $s_net->make_net(UseCache => 0);
     my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
     is_deeply \@directed_handicap_info, [], 'not routing through directed handicaps'
 	or diag(explain(\@directed_handicap_info));
+
+    my $directed_handicap_net_2 = StrassenNetz->make_net_directedhandicap($dh_kerb, speed => 20, vehicle => 'normal');
+    is_deeply $directed_handicap_net_2, $directed_handicap_net, '"normal" is an alias for ""';
 }
 
 {

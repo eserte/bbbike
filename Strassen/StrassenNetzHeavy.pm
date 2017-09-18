@@ -359,6 +359,7 @@ sub make_net_directedhandicap {
     my($self, $s, %args) = @_;
     my $speed_kmh = delete $args{speed};
     my $vehicle = delete $args{vehicle} || '';
+    $vehicle = '' if $vehicle eq 'normal'; # alias
     my %time;
     $time{kerb_up}   = delete $args{kerb_up_time};
     $time{kerb_down} = delete $args{kerb_down_time};
