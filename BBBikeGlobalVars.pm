@@ -225,7 +225,8 @@ use vars qw($qualitaet_s_optimierung %qualitaet_s_speed
 	    $qualitaet_s_net);
 
 use vars qw($handicap_s_optimierung %handicap_s_speed
-	    $handicap_s_net);
+	    $handicap_s_net
+	    $handicap_directed_net);
 
 use vars qw($radwege_optimierung $radwege_net $N_RW_optimization $N_RW1_optimization $N_RW_net
 	    %radwege_speed $green_optimization $green_net

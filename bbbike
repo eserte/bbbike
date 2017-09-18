@@ -3525,6 +3525,18 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 			  -value => 'childseat',
 			  -command => sub { pending(1, 'recalc-net') },
 			 );
+	if ($devel_host) { # XXX noch kaum Implementation dafür vorhanden
+	    $umm->radiobutton(-label => M"Lastenrad",
+			      -variable => \$special_vehicle_rb,
+			      -value => 'cargobike',
+			      -command => sub { pending(1, 'recalc-net') },
+			     );
+	    $umm->radiobutton(-label => M"Schweres Rad",
+			      -variable => \$special_vehicle_rb,
+			      -value => 'heavybike',
+			      -command => sub { pending(1, 'recalc-net') },
+			     );
+	}
     }
     unless ($skip_features{"nolighting"}) {
 	$sb2m->checkbutton(-label => M"Unbeleuchtete Straßen meiden",
@@ -8171,6 +8183,7 @@ sub reset_button_command {
 
 sub change_net_type {
     undef $handicap_s_net;
+    undef $handicap_directed_net;
     if ($net_type eq "r") {
 	*set_coords = \&set_coords_rbahn;
     } elsif ($net_type eq "us") {
@@ -15981,6 +15994,27 @@ sub updatekm {
 	    $time_h[$i] = ($strecke / 1000) / $speed[$i];
 	}
     }
+    if ($handicap_directed_net) {
+	my @handicap_directed_info = StrassenNetz->directedhandicap_get_losses($handicap_directed_net, \@realcoords);
+	my $add_length = 0;
+	my $add_time = 0;
+	for my $handicap_directed_info (@handicap_directed_info) {
+	    if (defined $handicap_directed_info->{add_len}) {
+		$add_length += $handicap_directed_info->{add_len};
+	    }
+	    $add_time += $handicap_directed_info->{lost_time}
+	}
+	if ($add_length) {
+	    warn "INFO: additional length because of directed handicaps: ${add_length}m\n";
+	    $strecke += $add_length;
+	}
+	if ($add_time) {
+	    warn "INFO: lost time because of directed handicaps: ${add_time}s\n";
+	    for(my $i = 0; $i <= $#speed; $i++) { # XXX just accurate for the selected speed
+		$time_h[$i] += $add_time / 3600;
+	    }
+	}
+    }
     my $dir_strecke =
       sqrt(sqr($realcoords[0]->[0] - $realcoords[-1]->[0]) +
 	   sqr($realcoords[0]->[1] - $realcoords[-1]->[1]));
@@ -17779,6 +17813,13 @@ sub do_search {
 	}
     }
 
+    if ($handicap_s_optimierung) {
+	my $net = make_handicap_directed_net();
+	if ($net) {
+	    $extra_args{DirectedHandicap} = $net;
+	}
+    }
+
     if ($strcat_optimierung || $optprefs{'Kategorie'}) {
 	# XXX wenn L zugeschaltet wird, muß strcat_net aktualisiert werden
 	if (!$strcat_net) {
@@ -18746,6 +18787,7 @@ sub make_net {
 
     undef $qualitaet_s_net;
     undef $handicap_s_net;
+    undef $handicap_directed_net;
     undef $strcat_net;
     undef $radwege_net;
     undef $N_RW_net;
@@ -19029,6 +19071,21 @@ sub make_handicap_net {
 	}
     }
     $handicap_s_net;
+}
+
+sub make_handicap_directed_net {
+    if (!$handicap_directed_net) {
+	if (-f "$datadir/handicap_directed") { # XXX currently missing for osm data
+	    $handicap_directed_net = StrassenNetz->make_net_directedhandicap(
+									     Strassen->new('handicap_directed'),
+									     speed   => get_current_active_speed_kmh(),
+									     vehicle => get_special_vehicle(),
+									    );
+	} else {
+	    warn "NOTE: No handicap_directed data file available.\n";
+	}
+    }
+    $handicap_directed_net;
 }
 
 sub make_comments_net {
@@ -20960,20 +21017,25 @@ sub calc_ampel_optimierung {
 	if ($average_v != 0) {
 	    $speed = $average_v;
 	} else {
-	    if ($active_speed_power{Type} eq 'speed') {
-		$speed = $speed[$active_speed_power{Index}];
-	    } elsif ($active_speed_power{Type} eq 'power' and $bikepwr) {
-		my $bp_obj = new BikePower;
-		$bp_obj->given('P');
-		$bp_obj->power($power[$active_speed_power{Index}]);
-		$bp_obj->calc;
-		$speed = float_prec($bp_obj->velocity*3.6, 1);
-	    }
+	    $speed = get_current_active_speed_kmh();
 	}
 	my %res = Ampelschaltung::get_lost($speed, $beschleunigung);
 	$lost_time_per_ampel{X} = $res{-zeit}; # XXX F
 	$lost_strecke_per_ampel = $res{-strecke};
 	status_message(Mfmt("Einstellungen für %s km/h: verlorene Zeit pro Ampel: %s s, verlorene Strecke pro Ampel: %d m", $speed, float_prec($lost_time_per_ampel{X}, 1), $lost_strecke_per_ampel), "info"); # XXX F
+    }
+}
+
+# If Type==power, then calculate first
+sub get_current_active_speed_kmh {
+    if ($active_speed_power{Type} eq 'speed') {
+	$speed[$active_speed_power{Index}];
+    } elsif ($active_speed_power{Type} eq 'power' and $bikepwr) {
+	my $bp_obj = new BikePower;
+	$bp_obj->given('P');
+	$bp_obj->power($power[$active_speed_power{Index}]);
+	$bp_obj->calc;
+	float_prec($bp_obj->velocity*3.6, 1);
     }
 }
 
