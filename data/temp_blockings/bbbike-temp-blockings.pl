@@ -26126,7 +26126,7 @@ EOF
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-09-13
+#: last_checked: 2017-09-18
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },
@@ -26504,6 +26504,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.629207.php',
        data  => <<EOF,
+#: source_id: 2147341831
 userdel	q4::inwork -1869,19974 -1806,19806 -1794,19681 -1788,19663
 EOF
      },

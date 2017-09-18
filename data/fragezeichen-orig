@@ -1440,7 +1440,7 @@ Friedelstr.: Asphaltierung	?::projected 12085,9778 12074,9689 12066,9558 12047,9
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="14"
-#: last_checked: 2017-09-13
+#: last_checked: 2017-09-18
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -1919,6 +1919,10 @@ B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: fritz
+#: XXX bis 22.02.2019
+Luckenwalder Str.: Sperrung auch für Radfahrer relevant?	?::inwork; 8634,10426 8384,10507
+# 
 # REMOVED (Richtung NO über Gehweg umfahrbar, Richtung SW vermutlich über Trampelpfad) --- #: source_id: 2147341808 --- #: XXX laut fritz bis 12.10.2017 --- Späthstr.: Gegenverkehrsregelung	?::inwork 15174,5467 15038,5235 14988,5214
 # REMOVED (nur kleinere Einschränkungen in der Käthe-Kollwitz-Str. von der Greifswalder aus kommend) --- #: XXX laut fritz "bis auf weiteres" --- Bötzowstr./Käthe-Niederkirchner-Str.: Kreuzung gesperrt	?::inwork 12272,13920 12280,13880 12288,13836
 # REMOVED (Markierung in der Gegenrichtung --- für Fußgänger, für Radfahrer?) --- #: XXX laut fritz bis 23.10.2017, 18 Uhr --- Moritzstr.: Sperrung relevant für Radfahrer?	?::inwork; 10433,10456 10633,10369
@@ -1966,7 +1970,7 @@ Turmstr.: wird hier eine Änderung bei den Radwegen passieren?	? 5434,13398 5368,
 # REMOVED (teilweise, allerdings kann man u.U. (abends?) gut durchkommen) --- #: XXX Rosenthaler Str. (Mitte) in beiden Richtungen Höhe Einmündung Neue Schönhauser Str. (Berlin)  Gültig ab: 10.05.2017 13:53  Baustelle, Vollsperrung (bis Ende 07/17)	2147341279 --- #: XXX laut fritz bs 28.07.2017 --- Rosenthaler Str.: noch immer Bauarbeiten?	? 10317,13248 10310,13227
 # 
 #: next_check_id: RUEDERSDORFER-2017
-#: last_checked: 2017-09-15
+#: last_checked: 2017-09-18
 #: check_frequency: 7d
 Rüdersdorfer Str.: Bauarbeiten, die Qualität wird danach besser sein	?::inwork 13066,11854 13173,11788 13295,11792
 # 
@@ -2066,13 +2070,7 @@ Im Erpelgrund: Instandsetzung geplant (beide Richtungen oder nur eine?)	?::proje
 #: next_check: 2017-09-15
 An der Wuhlheide: hier entstehen Schutzstreifen (Richtung Westen)	?::inwork 21002,5755 20880,5736 20755,5750 20536,5789 20428,5841 20352,5877 20173,5892 20057,5923 19958,5950
 # 
-#: by: http://www.berlin.de/ba-neukoelln/_assets/dokumente/ba-beschluesse/ba-beschluss-206-16.pdf
-#: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017)
-#: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.630842.php
-#: last_checked: 2017-09-13
-#: next_check: 2017-09-18
-#: priority: #A
-Weserstr.: Fahrradstraße wird eingerichtet	? 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193 12322,9124
+# REMOVED --- #: by: http://www.berlin.de/ba-neukoelln/_assets/dokumente/ba-beschluesse/ba-beschluss-206-16.pdf --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017) --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.630842.php --- #: last_checked: 2017-09-13 --- #: next_check: 2017-09-18 --- #: priority: #A --- Weserstr.: Fahrradstraße wird eingerichtet	? 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193 12322,9124
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/15-11-2016_mehr-fahrradstrassen-fuer-pankow.pdf
 #: XXX unklar, ob auch die Route Dunckerstr. - Kollwitzstr. ebenso Fahrradstraße werden könnte
@@ -2231,7 +2229,7 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 Sebastian/Luckauer: Zebrastreifen in Bau	?::inwork 11113,10943 11109,10935
 # 
 #: osm_watch: note 851907 2
-#: last_checked: 2017-09-05
+#: last_checked: 2017-09-18
 #: check_frequency: 14d
 #: priority: #C
 Oranienplatz: Zebrastreifen in Bau	?::inwork 11233,10672 11258,10682 11262,10655
