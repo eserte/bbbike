@@ -3290,28 +3290,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- : tempex YYYY09 & sa2 & T14-T18
-#: tempex YYYY09 & sa3 & T14-T18
-userdel	2::temp 5857,13342 5868,13441 5882,13548
-',
-         'from' => 1505426400,
-         'id' => 2625,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              9,
-                              'months',
-                              9
-                            ]
-                          ],
-         'source_id' => 'https://misch-mit.net/moabiter-kiezfest2017/',
-         'text' => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 16. September 2017, 14 bis 18 Uhr ',
-         'type' => 'gesperrt',
-         'until' => 1505599199
-       },
+       undef,
        undef,
        undef,
        undef,
