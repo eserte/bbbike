@@ -427,6 +427,11 @@ EOF
 #		layer_checkbutton([$do_compound->('gesperrt_car', $images{car_cross})]
 #				  'sperre', 'gesperrt_car,
 #				  maybe_orig_file => 1),
+		layer_checkbutton([$do_compound->('Gerichtete Handicaps')],
+				  'str', "$main::datadir/handicap_directed",
+				  maybe_orig_file => 1,
+				  above => $str_layer_level,
+				 ),
 		layer_checkbutton([$do_compound->('Staugefahr', main::load_photo($mf, "misc/verkehrszeichen/Zeichen_124.svg", -w => 16, -h => 16, -persistent => 1))],
 				  'str', "$main::datadir/comments_trafficjam-orig",
 				  maybe_orig_file => 0,

@@ -153,12 +153,25 @@ sub action_check_berlin_ortsteile {
     }
 }
 
+sub action_handicap_directed {
+    my $d = shift;
+    my $dest = 'handicap_directed';
+    my @srcs = 'handicap_directed-orig';
+    if (_need_rebuild $dest, @srcs) {
+	$d->run([@convert_orig, qw(-keep-directive valid), @srcs], '|',
+		[@grepstrassen_valid],
+		'>', "$dest~");
+	_commit_dest $d, $dest;
+    }
+}
+
 ######################################################################
 
 sub action_all {
     my $d = shift;
     action_files_with_tendencies($d);
     action_check_berlin_ortsteile($d);
+    action_handicap_directed($d);
 }
 
 return 1 if caller;
