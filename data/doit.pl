@@ -31,6 +31,7 @@ my @convert_orig       = ($perl, $convert_orig_file);
 my @grepstrassen       = ($perl, "$miscsrcdir/grepstrassen");
 my @grepstrassen_valid = (@grepstrassen, '-valid', $valid_date, '-preserveglobaldirectives');
 my @replacestrassen    = ($perl, "$miscsrcdir/replacestrassen");
+my @check_neighbour    = ($perl, "$miscsrcdir/check_neighbour");
 
 sub _need_rebuild ($@) {
     my($dest, @srcs) = @_;
@@ -165,6 +166,16 @@ sub action_handicap_directed {
     }
 }
 
+sub action_check_handicap_directed {
+    my $d = shift;
+    my $dest = '.check_handicap_directed';
+    my @srcs = qw(handicap_directed strassen);
+    if (_need_rebuild $dest, @srcs) {
+	$d->system(@check_neighbour, qw(-type standard -data handicap_directed));
+	$d->touch($dest);
+    }
+}
+
 ######################################################################
 
 sub action_all {
@@ -172,6 +183,7 @@ sub action_all {
     action_files_with_tendencies($d);
     action_check_berlin_ortsteile($d);
     action_handicap_directed($d);
+    action_check_handicap_directed($d);
 }
 
 return 1 if caller;

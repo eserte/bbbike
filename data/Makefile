@@ -1374,7 +1374,7 @@ do-checks:	.check_empty_lines \
 	.check_radwege .check_radwege2 \
 	.check_ampelschaltung \
 	.check_qualitaet_s .check_qualitaet_l .check_qualitaet2 \
-	.check_handicap_s .check_handicap_l .check_handicap2 \
+	.check_handicap_s .check_handicap_l .check_handicap2 .check_handicap_directed \
 	.check_vorfahrt \
 	.check_comments1 .check_comments2 .check_comments3 \
 	.check_nolighting .check_nolighting2 \
@@ -1616,6 +1616,9 @@ check-disabled:
 .check_handicap2:	handicap_s handicap_l
 	$(CHECK_DOUBLE) -linesegs handicap_s handicap_l
 	@touch $@
+
+.check_handicap_directed:	handicap_directed strassen
+	${PERL} doit.pl check_handicap_directed
 
 .check_vorfahrt:	vorfahrt strassen landstrassen landstrassen2 fragezeichen
 	$(CHECK_NEIGHBOUR) -type standard -data vorfahrt \
