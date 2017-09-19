@@ -24,7 +24,7 @@ BEGIN {
 use strict;
 use vars qw(@EXPORT);
 use vars (@opt_vars);
-use vars qw($can_tidy $can_xmllint $shown_gpx_schema_warning $shown_kml_schema_warning);
+use vars qw($can_tidy $can_xmllint $shown_gpx_schema_warning $shown_kml_schema_warning $can_pdfinfo);
 
 use vars qw($BBBIKE_TEST_CGIDIR
 	    $BBBIKE_TEST_CGIURL
@@ -60,6 +60,7 @@ use BBBikeUtil qw(bbbike_root is_in_path);
 	      on_author_system maybe_skip_mail_sending_tests
 	      get_pmake image_ok zip_ok create_temporary_content static_url
 	      get_cgi_config selenium_diag noskip_diag
+	      pdfinfo
 	    ),
 	   @opt_vars);
 
@@ -1076,6 +1077,28 @@ or
 
 to see failing tests because of these modules.
 EOF
+}
+
+sub pdfinfo ($) {
+    my($pdffile) = @_;
+    if (!defined $can_pdfinfo) {
+	$can_pdfinfo = is_in_path('pdfinfo');
+    }
+    return if !$can_pdfinfo;
+
+    my @cmd = ('pdfinfo', $pdffile);
+    my %info;
+    open my $fh, "-|", @cmd
+	or die "Error running @cmd: $!";
+    while(<$fh>) {
+	chomp;
+	my($k,$v) = split /:\s+/, $_, 2;
+	$info{$k} = $v;
+    }
+    close $fh
+	or die "Error running @cmd: $!";
+
+    \%info;
 }
 
 1;

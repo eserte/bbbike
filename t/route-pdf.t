@@ -35,7 +35,7 @@ BEGIN {
     }
 }
 
-my $pdfinfo_tests = 4;
+my $pdfinfo_tests = 5;
 plan tests => (2+$pdfinfo_tests)*2;
 
 my $lang;
@@ -182,33 +182,31 @@ sub trivial_pdf_test {
 sub pdfinfo_test {
     my $pdffile = shift;
  SKIP: {
+	my $info = pdfinfo $pdffile;
 	skip 'No pdfinfo available', $pdfinfo_tests
-	    if !is_in_path('pdfinfo');
-	my %info;
-	open my $fh, "-|", 'pdfinfo', $pdffile
-	    or die $!;
-	while(<$fh>) {
-	    chomp;
-	    my($k,$v) = split /:\s+/, $_, 2;
-	    $info{$k} = $v;
-	}
-	close $fh or die $!;
+	    if !$info;
 
 	my $info_like = sub {
 	    my($k,$rx) = @_;
-	    my $v = $info{$k} || '';
+	    my $v = $info->{$k} || '';
 	    like $v, $rx, "Check for $k"
-		or do { $debug && diag Dumper(\%info) };
+		or do { $debug && diag Dumper($info) };
 	};
 	$info_like->('Page size', qr{A4});
 	{
 	    local $TODO;
 	    if ($Route_PDF_class eq 'Route::PDF::Cairo') {
-		$TODO = 'Cannot set Creator, Author, or Title with cairo';
+		$TODO = 'Cannot set Author, or Title with cairo';
 	    }
 	    $info_like->('Title', qr{BBBike Route});
 	    $info_like->('Author', qr{Slaven Rezic});
+	}
+	if ($Route_PDF_class eq 'Route::PDF::Cairo') {
+	    $info_like->('Creator', qr{^cairo\s+\d+\.\d+\.\d+});
+	    $info_like->('Producer', qr{^cairo\s+\d+\.\d+\.\d+});
+	} else {
 	    $info_like->('Creator', qr{Route::PDF version \d+\.\d+});
+	    $info_like->('Producer', qr{PDF::Create version \d+\.\d+});
 	}
     }
 }
