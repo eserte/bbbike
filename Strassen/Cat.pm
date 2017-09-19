@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2013,2014,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2013,2014,2016,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,7 +18,7 @@ package Strassen::Cat;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '2.00';
+$VERSION = '2.01';
 
 use File::Basename qw(basename);
 
@@ -147,6 +147,7 @@ my %versioned_file_to_cat;
      "gesperrt_u"		=> $filetype_to_cat{"gesperrt_oepnv"},
      "green"			=> [qw(green1 green2)],
      "grenzuebergaenge"         => [qw(GU)],
+     'handicap_directed'        => [sub { /^DH(:t=\d+|:len=\d+)+$/ }],
      "handicap_l"		=> $filetype_to_cat{"handicap"},
      "handicap_s"		=> $filetype_to_cat{"handicap"},
      "hoehe"			=> [qw(X XXX ? ???)],
