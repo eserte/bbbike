@@ -287,7 +287,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (hier wird auch eine Einbahnstraßenregelung erwähnt, hoffentlich nur für Autos! -> realisiert)
 #: source_id: INKO_2147340291_COPY_1
 #: source_id: 2147340291
-#: last_checked: 2017-09-04
+#: last_checked: 2017-09-19
 #: check_frequency: 120d
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288
 Mariannenstr: Asphalt	Q0 11616,10288 11671,10402
@@ -973,9 +973,9 @@ Wuhlewanderweg: guter Asphalt	Q0 22030,6600 22097,6414 22146,6338 22214,6271 222
 #: last_checked: 2017-08-10 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="317233618" version="3"
-Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22084,5877
+Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
 #: osm_watch: way id="25216398" version="26"
-Wuhlewanderweg: Verbundsteine, teilweise etwas uneben	Q1- 22084,5877 21846,5856 21744,5804 21602,5685 21507,5620
+Wuhlewanderweg: Verbundsteine, teilweise etwas uneben	Q1- 22084,5877 22070,5876 21846,5856 21744,5804 21618,5699 21602,5685 21507,5620
 #: check_frequency ^^^
 #: last_checked ^^^
 Hämmerlingstr.: Asphalt	Q0 21683,6946 21774,6880 21833,6810 21861,6719 21913,6554 21984,6317 22000,6245 22033,6144 22075,5996 22083,5899 22084,5877 22089,5782 22092,5673 22095,5585
@@ -2762,6 +2762,7 @@ Homeyerstr.: Asphalt	Q0 9613,18758 9801,18686 9920,18636
 (zum Rosengarten): Parkweg	Q1 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
 nördliches Spreeufer: teils Kleinkopfsteinpflaster, teils Gehwegplatten	Q1+ 6608,12858 6551,12901 6535,12934 6443,12952 6271,12985 6218,12975 6180,12972
 Kirchstr. (Köpenick): Asphalt, gepflasterter Parkstreifen	Q0 22314,4604 22284,4653 22246,4711 22240,4768 22196,4847
+Kietzer Str.: Kopfsteinpflaster, Straßenbahngleise asphaltiert	Q1; 22324,4586 22358,4521
 Am Alten Lokschuppen: Asphalt	Q0 15730,11279 15708,11193 15752,11115 15805,10949 15756,10966
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20071126.1325.89712.html vvv
 #: confirmed_by: srt vvv
@@ -10420,6 +10421,7 @@ Teutonenstr. (Altglienicke): schlechtes Kopfsteinpflaster	Q3 20186,1522 20256,15
 #: note: bzw. asphaltähnlich
 (Am Biesdorfer Baggersee): Asphalt	Q0 20346,11337 20334,11321 20335,11258 20362,11166 20354,11025 20354,10963 20393,10889 20399,10867 20390,10850 20191,10768 20161,10765 20126,10802 20116,10837 20121,10869 20161,11033 20188,11133 20201,11216 20227,11290 20331,11326 20346,11337
 (Schwarzer Weg - Wattstr.): Asphalt	Q0 17295,7328 17477,7450 17568,7481
+#: add_fragezeichen: ist hier mittlerweile auch asphaltiert?
 (Schwarzer Weg - Wattstr.): unbefestigte Straße	Q2 17568,7481 17670,7512
 (Spreeuferweg): Verbundsteinpflaster	Q1+ 21090,5417 21085,5451 20827,5431
 (KGA Am Freibad Oberspree): unbefestigter Weg	Q2 20827,5431 20829,5418 20849,5266 20851,5255
@@ -26525,7 +26527,11 @@ Kindelbergweg: Beton	Q0 6632,1482 6601,1471 6560,1473
 #: corrected_by: srt (wassergebundene Decke -> ...)
 (Hildburghauser Str. - Lilienthalpark): Asphalt, mit einigen Wellen und Wurzelschäden	Q1 6360,825 6352,825 6267,834 6259,835 6250,834 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5684,773 5640,746
 (Hildburghauser Str. - Lilienthalpark): wassergebundene Decke	Q1 5640,746 5590,719
-(Mauerweg Lichtenrade - Marienfelde): Asphalt mit Fugen	Q1+ 10309,-3191 10051,-3173 9600,-3160 9529,-2628 9506,-2421 9471,-2138 9462,-2050 9081,-2073 8846,-2089 8310,-2037 8376,-1523 7962,-1295 7593,-1034 7144,-565
+(Mauerweg Lichtenrade - Marienfelde): Asphalt mit Fugen	Q1+ 10309,-3191 10051,-3173 9600,-3160
+#: corrected_by: http://www.lichtenrade-berlin.de/news/aktuelle-news-internetzeitung/780-mauerweg-sanierung (Asphalt mit Fugen -> ...)
+#: XXX genaue Lage des neu asphaltierten Abschnitts ermitteln
+(Mauerweg Lichtenrade - Marienfelde): Asphalt	Q0 9600,-3160 9529,-2628 9506,-2421 9471,-2138 9462,-2050 9081,-2073 8846,-2089 8310,-2037
+(Mauerweg Lichtenrade - Marienfelde): Asphalt mit Fugen	Q1+ 8310,-2037 8376,-1523 7962,-1295 7593,-1034 7144,-565
 (Mauerweg Lichtenrade - Marienfelde): Asphalt	Q0 7144,-565 7169,-520 7164,-473 7146,-466 7098,-523
 (Mauerweg Marienfelde - Lichterfelde): Asphalt mit Fugen	Q1+ 7098,-523 6965,-387 6668,-100 6498,71 6351,219 6256,363 6198,328 6013,211 5832,93 5435,-157 4842,-547 4596,-707 4406,-910
 (Mauerweg - Schütte-Lanz-Str.): fester Waldweg	Q1 5832,93 5800,138

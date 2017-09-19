@@ -25476,7 +25476,7 @@ EOF
        data  => <<EOF,
 #: XXX zweiter Bauabschnitt ab Ende August bis ca. 23.09.
 #: next_check: 2016-07-31
-userdel	2::inwork 22084,5877 21846,5856 21744,5804 21602,5685
+userdel	2::inwork 22084,5877 22070,5876 21846,5856 21744,5804 21618,5699 21602,5685
 EOF
      },
      { from  => 1469052000, # 2016-07-21 00:00
@@ -26467,7 +26467,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: MINNATODENHAGENSTR-2016
 #: XXX siehe auch handicap_s-orig-Eintrag
-#: last_checked: 2017-08-27
+#: last_checked: 2017-09-19
 userdel	2::inwork 17681,7589 17676,7555
 EOF
      },

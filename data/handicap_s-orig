@@ -30,7 +30,7 @@ Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::i
 #: last_checked: 2017-09-02
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2017-09-18
+#: last_checked: 2017-09-19
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 #: by: fritz
@@ -86,8 +86,8 @@ Palisadenstr.: Bauarbeiten, teilweise Einbahnstraße, offen Richtung Osten	q2::in
 # 
 #: XXX laut Schild gehen die Bauarbeiten bis 10.2017
 #: XXX nach Beendigung der Bauarbeiten wieder den alten handicap-Eintrag ("Bodenschwellen") aktivieren
-#: last_checked: 2017-09-04
-#: check_frequency: 21d
+#: last_checked: 2017-09-19
+#: check_frequency: 14d
 #: valid: -20171001
 Bouchéstr.: Bauarbeiten an der Heidelberger Str.	q3::inwork 13489,9456 13357,9313
 # 
@@ -304,7 +304,7 @@ Mariannenplatz: Bauarbeiten, Fahrbahn teilweise gesperrt	q2::inwork 11841,10747 
 # 
 #: XXX laut fritz bis "auf weiteres", Einbahnstraße --- effektiv ist aber die gesamte Fahrbahn gesperrt
 #: XXX ändert sich an der Fahrbahnbeschaffenheit etwas?
-#: last_checked: 2017-09-18
+#: last_checked: 2017-09-19
 Böckhstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 11640,9710 11411,9810
 # 
 # REMOVED (man kommt mittlerweile durch) --- #: source_id: 2147341140 --- #: XXX laut fritz bis 31.10.2017, laut vmz bis Ende Oktober 2017 --- #: last_checked: 2017-07-31 --- #: next_check: 2017-10-31 --- #: valid: -20171031 --- Erkelenzdamm: Bauarbeiten zwischen Böcklerstr. und Kohlfurter Str., Fahrbahn gesperrt, Bordsteine	q3::inwork 10967,10092 11038,10247 11094,10261
@@ -371,14 +371,14 @@ Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5894,12480 5944,12
 # 
 #: XXX nach den Bauarbeiten wird die Straße zur Einbahnstraße. Auch für Radfahrer? Ende der Bauarbeiten: Oktober 2017
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.586667.php
-#: last_checked: 2017-08-30
+#: last_checked: 2017-09-19
 #: next_check: 2017-10-01
 Kiehlufer: Bauarbeiten, Fahrbahn gesperrt, Bordsteine beim Ausweichen auf dem Gehweg	q3::inwork 12897,9365 12950,9132
 # 
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 7d vvv --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12761,9190 12851,9309 12844,9351 --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12907,9073 12761,9190 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4952&mt=0&zoom=17
-#: last_checked: 2017-09-04
+#: last_checked: 2017-09-19
 #: next_check: 2018-06-01
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 

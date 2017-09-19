@@ -3962,7 +3962,7 @@ userdel	2::inwork 4117,22722 4176,22764
        {
          'data' => '#: next_check_id: MINNATODENHAGENSTR-2016
 #: XXX siehe auch handicap_s-orig-Eintrag
-#: last_checked: 2017-08-27
+#: last_checked: 2017-09-19
 userdel	2::inwork 17681,7589 17676,7555
 ',
          'from' => undef,

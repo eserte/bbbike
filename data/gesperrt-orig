@@ -1156,7 +1156,7 @@ Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-03-16-prot-fahrratsitzung.pdf
 #: XXX evtl wird die Straße für Radfahrer geöffnet
-#: osm_watch: way id="31540773" version="11"
+#: osm_watch: way id="31540773" version="12"
 #: last_checked: 2017-05-06
 #: check_frequency: 180d
 Fritz-Werner-Str.	1s:q3 9102,2780 9076,2594
@@ -2787,6 +2787,13 @@ Schranke	BNP:3::trailer=10 17215,12485
 #: note: Richtung Süden ist kaum Spielraum neben der Schranke vorhanden
 Schranke	BNP:10::trailer=20 15334,16718
 Drängelgitter	BNP:3::trailer=10 3783,-2079
+#: XXX Drängelgitter genauer anschauen vvv
+Drängelgitter	BNP:3::trailer=10 21618,5699
+#: by: osm vvv
+Drängelgitter	BNP:3::trailer=10 22070,5876
+Drängelgitter	BNP:3::trailer=10 22097,5879
+#: by ^^^
+#: XXX ^^^
 #
 ############################################################################
 # 
@@ -2805,7 +2812,7 @@ Am Herzbergteich: noch wegen Bauarbeiten gesperrt; wann ist die Straße fertig?	2
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: next_check_id: RUEDERSDORFER-2017
-#: last_checked: 2017-09-18
+#: last_checked: 2017-09-19
 #: check_frequency: 14d
 Rüdersdorfer Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 13066,11854 13173,11788 13295,11792
 # 
@@ -2904,8 +2911,9 @@ Möckernkiez: Bauarbeiten	2::inwork 8778,9759 8741,9741 8729,9670 8587,9590 8566,
 #: next_check_id: MOEWENWEG-2017
 #: osm_watch: way id="475891101" version="3"
 #: XXX nach den Bauarbeiten vermutlich nur ein Rad/Gehweg
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.632264.php ("Fertigstellung ist für den Sommer 2018 geplant")
 #: last_checked: 2017-07-01
-#: check_frequency: 180d
+#: next_check: 2018-06-01
 Möwenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 22108,10970 22195,10993
 # 
 #: next_check_id: BEBAUUNGSPLAN-XXI-34A
@@ -3223,6 +3231,7 @@ Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: Durchfahrt noch nicht zuverläss
 #: next_check_id ^^^
 # 
 # REMOVED --- #: next_check_id: STERNDAMM-2016 --- #: by: fritz --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160124 --- #: source_id: 2147339574 --- #: source_id: IM_026665 --- #: source_id: 2147340122 --- #: source_id: LMS-BR_r_LMS-BR_68908 --- #: last_checked: 2016-06-26 --- #: check_frequency: 90d --- #: priority: #A --- #: XXX Gesamtmaßnahme bis 2018 (oder 2017?) --- 
+#: next_check_id: STERNDAMM-2016
 #: XXX laut Fritz bis April 2018
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170829 (ebenso: bis April 2018)
 #: source_id: 2147341515	
