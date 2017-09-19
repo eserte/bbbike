@@ -975,7 +975,8 @@ using L<Cairo> and L<Pango>.
 
 If set to true, then the PDF file is additionally compressed using
 L<BBBikeDraw::PDFUtil>. Please read L<BBBikeDraw::PDFUtil/COMPRESSION>
-about byte savings and performance losses doing so.
+about byte savings (very minor if the PDFCairo producer is used) and
+performance losses doing so.
 
 =back
 
