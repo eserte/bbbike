@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2011,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2011,2013,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ package BBBikeDraw::PDFUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 # Check if a pdf compressing tool like pdftk is available, and setup
 # everything for using later flush_compress(). Call this in the init()
@@ -29,10 +29,6 @@ sub init_compress {
 	require BBBikeUtil;
 	if (BBBikeUtil::is_in_path("pdftk")) {
 	    $self->{_CompressTool} = "pdftk";
-	} elsif (0 && eval { require PDF::API2; require File::Temp; 1 }) {# XXX does not work, see below XXX
-	    $self->{_CompressTool} = "PDF::API2";
-	} elsif (eval { require CAM::PDF; require File::Temp; 1 }) {
-	    $self->{_CompressTool} = "CAM::PDF";
 	} else {
 	    warn "No pdftk in PATH available, don't compress...";
 	    undef $self->{Compress};
@@ -89,44 +85,6 @@ sub flush_compress {
 		unlink $filename;
 		unlink $self->{_CompressTemporaryFilename};
 	    }
-	} elsif ($self->{_CompressTool} eq 'PDF::API2') {
-	    # XXX Does not work!!!
-	    my $pdf = PDF::API2->open($self->{Filename});
- 	    my $page = $pdf->openpage(1)
- 		or die "Cannot open page 1";
-	    $page->fixcontents;
-	    # XXX Especially this part does not work
- 	    warn("compressing"),$_->compressFlate for $page->{Contents}->elementsof;
-	    if (defined $self->{_CompressOriginalFilename}) {
-		$pdf->saveas($self->{_CompressOriginalFilename});
-		warn eval { $compress_message->($self->{Filename}, $self->{_CompressOriginalFilename}) }
-		    if $VERBOSE;
-	    } else {
-		my $ofh = $self->{Fh};
-		my $pdf_contents = $pdf->stringify;
-		print $ofh $pdf_contents;
-		warn eval { $compress_message->($self->{Filename}, \length $pdf_contents) }
-		    if $VERBOSE;
-	    }
-	    unlink $self->{_CompressTemporaryFilename};
-	} elsif ($self->{_CompressTool} eq 'CAM::PDF') {
-	    my $pdf = CAM::PDF->new($self->{Filename});
-	    # XXX It's purely coincidence that the map drawing is objnum=3
-	    # XXX But how to get it reliably?
-	    $pdf->encodeObject(3, 'FlateDecode');
-	    $pdf->clean;
-	    if (defined $self->{_CompressOriginalFilename}) {
-		$pdf->output($self->{_CompressOriginalFilename});
-		warn eval { $compress_message->($self->{Filename}, $self->{_CompressOriginalFilename}) }
-		    if $VERBOSE;
-	    } else {
-		my $ofh = $self->{Fh};
-		my $pdf_contents = $pdf->toPDF;
-		print $ofh $pdf_contents;
-		warn eval { $compress_message->($self->{Filename}, \length $pdf_contents) }
-		    if $VERBOSE;
-	    }
-	    unlink $self->{_CompressTemporaryFilename};
 	} else {
 	    die "Unhandled compression tool <$self->{_CompressTool}>";
 	}
@@ -136,6 +94,8 @@ sub flush_compress {
 1;
 
 __END__
+
+=encoding iso-8859-1
 
 =head1 NAME
 
@@ -182,5 +142,13 @@ With C<-module PDF> (using L<BBBikeDraw::PDF>) the timings are:
 
 Here the time difference is not so large, but savings are much higher:
 513825 vs. 2355866 bytes.
+
+=head2 COMPRESSION TOOLS
+
+Currently compression is only done if C<pdftk> is installed. This
+module used to have implementations using the Perl modules
+L<PDF::API2> and L<CAM::PDF>, but this was not working at all
+(C<PDF::API2>) resp. just partially working (C<CAM::PDF>), so support
+was removed in 0.02.
 
 =cut
