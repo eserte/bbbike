@@ -158,7 +158,7 @@ $s_net->make_net(UseCache => 0);
     my @route_info = $s_net->route_info(Route => $path);
     is $route_info[1]->{Street}, 'Neuenburger Str.', 'with kerb optimization using normal vehicle, but not "enough" --- expected via Neuenburger Str.';
     my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
-    is_deeply \@directed_handicap_info
+    is_deeply \@directed_handicap_info,
 	[
 	 {
 	  'add_len' => undef,
