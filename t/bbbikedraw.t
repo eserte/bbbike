@@ -347,9 +347,9 @@ plan tests => $total_additional_pdf_tests + scalar @module_defs * $tests_per_mod
 for my $module_def (@module_defs) {
  SKIP: {
 	my $skip = $module_def->{skip};
-	skip $skip, $tests_per_module
-	    if $skip;
 	my $module = $module_def->{mod};
+	skip $skip, $tests_per_module + ($module =~ /pdf/i ? $additional_pdf_tests : 0)
+	    if $skip;
 	eval {
 	    draw_map($module);
 	};
