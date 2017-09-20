@@ -21,17 +21,18 @@
 #: source_id: 2147341435
 #: osm_watch: way id="41954398" version="12"
 #: last_checked: 2017-09-16 vvv
-#: check_frequency: 60d vvv
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (hier nur dieser Abschnitt (Prenzlauer Allee - Bötzowstr.) erwähnt)
+#: next_check: 2018-06-01
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12621,14313
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (Baubeginn 2018)
+#: next_check: 2018-03-01
 Danziger Str.	?::projected 12621,14313 12729,14227 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
-#: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2017-09-15
+#: last_checked: 2017-09-20
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -76,7 +77,7 @@ Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4
 #: source_id: 2147341739
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf ("erste Teilabschnitte", und nur Barnetstr.)
 #: last_checked: 2017-05-21
-#: next_check: 2017-09-22
+#: next_check: 2017-12-31
 Großziethener - Barnetstr.: werden hier die bestehenden Radwege verbessert oder durch Radspuren ersetzt?	?::projected 12078,-1170 12023,-1174 11953,-1181 11858,-1189 11761,-1199 11717,-1204 11666,-1209 11578,-1220 11548,-1223 11240,-1262 11149,-1274 11003,-1303 10844,-1335 10720,-1340 10583,-1311 10492,-1266 10379,-1194 10231,-1086 10143,-1026 10082,-986 9888,-853 9815,-805 9780,-788 9693,-815
 # 
 #: XXX Baumaßnahme 7.12 (Realisierung nach 2011)
@@ -212,10 +213,12 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 Stromstr., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,13517 6228,13324
 # 
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (Schutzstreifen Löffelbrücke - Bhf. Heinersdorf)
+#: by: http://www.berlin.de/senuvk/bauen/strassenbau/loeffelbruecke/index.shtml (bis Anfang 2020)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (nach den Bauarbeiten an der Löffelbrücke)
 #: osm_watch: way id="33836252" version="15"
 #: last_checked: 2017-08-06
-#: check_frequency: 120d
-Pasewalker Str.: Radspuren bis 2015 geplant	?::projected 11907,19749 11909,19706 11911,19667 11915,19580 11927,19308 11937,19175
+#: next_check: 2019-11-01
+Pasewalker Str.: Radspuren geplant	?::projected 11907,19749 11909,19706 11911,19667 11915,19580 11927,19308 11937,19175
 # 
 #: XXX Fahrbahninstandsetzung mit anschließenden Umbau der Radwege
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.297917.php
@@ -308,10 +311,11 @@ Pasewalker Str.: Schutzstreifen werden erstellt, außerdem eine Ampel an der Kreu
 Triftstr.: Planung von Radverkehrsanlagen	?::projected 11940,22587 11959,22696 11979,22801 11995,22884 12023,23039 12027,23057 12039,23125 12058,23227 12067,23241
 # 
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf ("Schutzstreifen")
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (Baubeginn 2018)
 #: osm_watch: way id="35573588" version="7"
 #: osm_watch: way id="4632077" version="15"
 #: last_checked: 2017-07-30
-#: check_frequency: 60d
+#: next_check: 2018-04-01
 Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823 11442,17664 11457,17585 11482,17459 11508,17315 11522,17248 11541,17153 11570,17028 11598,16878 11621,16749 11630,16623 11655,16486 11659,16457 11673,16367
 # 
 #: osm_watch: node id="29420748" version="5"
@@ -858,24 +862,31 @@ Braunschweiger Str.: Asphaltierung	?::projected 13702,7418 13781,7524 13854,7620
 #: last_checked ^^^
 #: XXX ^^^
 # 
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (2017 nicht realisierbar)
 #: osm_watch: way id="4764878" version="10"
 #: last_checked: 2017-08-06
+#: next_check: 2018-04-01
 Niederstr.: Asphaltierung	?::projected 7634,19793 7769,19736 7857,19693
 # 
 #: XXX vielleicht nur ein Teilabschnitt; vielleicht auch im Zusammenhang mit dem Projekt Wilhelmsruher Tor
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (2017 nicht realisierbar)
 #: osm_watch: way id="4764886" version="10"
 #: last_checked: 2017-08-06
-#: check_frequency: 360d
+#: next_check: 2018-04-01
 Tollerstr.: Asphaltierung	?::projected 7751,19696 7769,19736 7807,19811 7838,19884 7885,19975
 # 
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (2017 nicht realisierbar)
 #: osm_watch: way id="272532028" version="1"
 #: osm_watch: way id="73682384" version="2"
 #: osm_watch: way id="272532027" version="1"
 #: last_checked: 2017-08-06
+#: next_check: 2018-04-01
 Hielscherstr.: Asphaltierung	?::projected 7558,19886 7604,19988 7695,20175 7735,20262 7809,20420 7826,20460
 # 
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf ("keine Entscheidung")
 #: osm_watch: way id="4684852" version="8"
 #: last_checked: 2017-08-06
+#: check_frequency: 360d
 Neukirchstr.: Asphaltierung	?::projected 12751,18401 12885,18329
 # 
 #: osm_watch: way id="25799814" version="12"
@@ -947,6 +958,21 @@ Rummelsburger Landstr.: Radweg/Radstreifen	?::projected 18010,7133 17847,7356 17
 #: by: ^^^
 #: by: ^^^
 #### END Liste 2017
+# 
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.625926.php (ab Frühjahr 2019 für drei Jahre Bauarbeiten) vvv
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/ausfuehrungsentwurf_strasse-vor-schoenholz_stand-sept-2017.pdf vvv
+#: next_check: 2022-04-01 vvv
+Straße vor Schönholz: Bau von Radspuren	?::projected 8406,19081 8482,18986 8634,18787
+Straße vor Schönholz: Bau von Radspuren	?::projected 8668,18744 8791,18605
+Straße vor Schönholz: Bau von Radspuren	?::projected; 8791,18605 8891,18545
+#: next_check ^^^
+#: by: ^^^
+#: by: ^^^
+# 
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf vvv
+Kniprodestr.: werden die Busspuren zu Radspuren umgewandelt?	?::projected 12640,13814 12701,13873 12766,13942 12856,14042
+Kniprodestr.: werden die Busspuren zu Radspuren umgewandelt?	?::projected 13057,14267 13097,14307 13183,14400 13239,14461 13295,14521 13362,14593 13396,14630 13438,14675
+#: by: ^^^
 # 
 #: section ^^^
 #: ignore ^^^
@@ -1496,7 +1522,7 @@ Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbi
 #: XXX Vorschlag: Freia-Eisner-Straße
 #: note: "Privatgelände"
 #: osm_watch: way id="491906864" version="2"
-#: last_checked: 2017-09-12
+#: last_checked: 2017-09-20
 #: check_frequency: 14d
 Planstraße C: neue asphaltierte Straße, Straßenname? Wann wird sie geöffnet?	?::inwork 12926,11224 12848,11093
 # 
@@ -1971,7 +1997,7 @@ Turmstr.: wird hier eine Änderung bei den Radwegen passieren?	? 5434,13398 5368,
 # REMOVED (teilweise, allerdings kann man u.U. (abends?) gut durchkommen) --- #: XXX Rosenthaler Str. (Mitte) in beiden Richtungen Höhe Einmündung Neue Schönhauser Str. (Berlin)  Gültig ab: 10.05.2017 13:53  Baustelle, Vollsperrung (bis Ende 07/17)	2147341279 --- #: XXX laut fritz bs 28.07.2017 --- Rosenthaler Str.: noch immer Bauarbeiten?	? 10317,13248 10310,13227
 # 
 #: next_check_id: RUEDERSDORFER-2017
-#: last_checked: 2017-09-19
+#: last_checked: 2017-09-20
 #: check_frequency: 7d
 Rüdersdorfer Str.: Bauarbeiten, die Qualität wird danach besser sein	?::inwork 13066,11854 13173,11788 13295,11792
 # 
@@ -2628,7 +2654,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2017-08-12
+#: last_checked: 2017-09-20
 #: check_frequency: 60d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # 

@@ -293,7 +293,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: by: Benno Koch (Linienstraßen-Mail) "gibt es schon"
 #: by: Eva Kruell widerspricht (2010-01-11):
 #: by: http://fahrrad.wikia.com/wiki/Teufelsseechaussee
-#: confirmed: srt
+#: confirmed_by: srt
 	RW7;RW7 -938,9394 -886,9447 -817,9533 -697,9598 -471,9647 -324,9701 -232,9768 -153,9854 -103,9934 -75,10017 -57,10103 -1,10327 41,10501 96,10701 194,10846 225,10885
 	RW2;RW8 454,11159 480,11204 504,11243
 	RW2;RW1 4741,5309 4677,5274 4593,5235 4512,5199
@@ -532,8 +532,9 @@ neu asphaltiert	RW2; -3692,11681 -3708,11686 -3820,11721 -4033,11786 -4078,11800
 	RW2; -4078,11800 -4033,11786 -3820,11721 -3708,11686 -3692,11681
 	RW2;RW -4412,12179 -4503,11930
 #: by: Stefan Klinkusch (Benutzungspflicht):
+#: confirmed_by: mapillary
 	RW;RW2 -4503,11930 -4590,11709 -4621,11631
-	RW;RW -4621,11631 -4648,11560 -4679,11489
+	RW;RW1 -4621,11631 -4648,11560 -4679,11489
 	RW;RW1 -4679,11489 -4798,11231
 	RW1;RW1 -4798,11231 -4836,11138 -4843,11123 -4859,11080 -4855,11031 -4806,10717
 asphaltierter Gehweg für Radfahrer frei	RW1; -4806,10717 -4825,10560 -4851,10356
@@ -4604,15 +4605,7 @@ Verbundsteinpflaster	RW1; 19405,5284 19445,5271
 	RW6;RW6 11797,20601 11828,20625 11874,20656 11915,20686 11919,20745 11923,20781
 	RW6;RW6 11874,20656 11826,20722
 	RW1; 11650,21498 11696,21493 11831,21469
-#: XXX Löffelbrücke: Gehweg während der Bauarbeiten gesperrt
-#: by: http://www.morgenpost.de/berlin/article210334009/Im-Berliner-Norden-droht-ein-neuer-Strassenengpass.html
-#: by: http://www.prenzlberger-stimme.de/?p=111198
-#: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2017/pressemitteilung.583882.php
-#: source_id: 2147341170
-#: last_checked: 2017-08-06
-#: next_check: 2017-12-31
-#gemeinsamer Rad- und Gehweg	RW2; 11915,19580 11911,19667 11909,19706 11907,19749
-	RW0; 11915,19580 11911,19667 11909,19706 11907,19749
+# REMOVED (siehe fragezeichen-Eintrag zur Pasewalker Str.) --- #: XXX Löffelbrücke: Gehweg während der Bauarbeiten gesperrt ---#: by: http://www.morgenpost.de/berlin/article210334009/Im-Berliner-Norden-droht-ein-neuer-Strassenengpass.html ---#: by: http://www.prenzlberger-stimme.de/?p=111198 ---#: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2017/pressemitteilung.583882.php --- #: source_id: 2147341170 --- #: last_checked: 2017-08-06 --- #: next_check: 2017-12-31 --- #gemeinsamer Rad- und Gehweg	RW2; 11915,19580 11911,19667 11909,19706 11907,19749 ---	RW0; 11915,19580 11911,19667 11909,19706 11907,19749
 Gehweg für Radfahrer frei	RW1; 13204,21203 13165,21144
 	RW6;RW6 8235,20109 8237,20098 8258,19983 8272,19908
 	RW6;RW6 8288,20128 8291,20112 8315,19993 8325,19934

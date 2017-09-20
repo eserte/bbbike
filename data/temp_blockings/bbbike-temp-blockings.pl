@@ -26126,7 +26126,7 @@ EOF
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-09-18
+#: last_checked: 2017-09-20
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },
