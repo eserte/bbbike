@@ -146,9 +146,9 @@ Fall. Mit
 	perl -v
 
 kann überprüft werden, ob und welche Version von perl installiert ist.
-Ansonsten kann man Perl unter L<http://www.perl.org/get.html> finden. Es wird
-mindestens die Version 5.005 benötigt, alle neueren Perl-Versionen
-(5.6.x, 5.8.x, 5.10.x, 5.12.x, 5.14.x, 5.16.x) funktionieren auch.
+Ansonsten kann man Perl unter L<http://www.perl.org/get.html> finden.
+Es werden alle Perl-Versionen ab 5.8.9 unterstützt, ggfs.
+funktionieren auch ältere Versionen (bis 5.005).
 
 Danach kann BBBike ausgepackt werden:
 [%- ELSE -%]
@@ -158,9 +158,9 @@ already bundled. You can check with
 	perl -v
 
 whether and which version of perl is installed. Otherwise you can find
-perl at L<http://www.perl.org/get.html>. You need at least version
-5.005, but newer perl versions (5.6.x, 5.8.x, 5.10.x, 5.12.x, 5.14.x,
-5.16.x) work, too.
+perl at L<http://www.perl.org/get.html>. All perl versions starting from
+5.8.9 are supported, maybe it works even with older perls (down to
+5.005).
 
 Next step is to extract the BBBike distribution:
 [%- END -%]
@@ -171,10 +171,10 @@ Next step is to extract the BBBike distribution:
 
 
 [%- IF lang=="DE" -%]
-Falls perl/Tk (eine möglichst neue Version, z.B. 804.028 or 800.025) nicht
+Falls perl/Tk (eine möglichst neue Version, zurzeit 804.034) nicht
 installiert ist: als Superuser folgendes eingeben:
 [%- ELSE -%]
-If perl/Tk (the recommended version is 804.028 or 800.025) is not installed:
+If perl/Tk (the recommended version is the latest one, currently 804.034) is not installed:
 type as super user:
 [%- END -%]
 
@@ -619,7 +619,7 @@ BBBike-Icon ebenfalls im Startmenü.
 
 Einige Versionen von BBBike wurden unter folgenden
 Plattformen getestet: [% TESTPLATFORMS %]. Die
-Entwicklungsarbeit wird auf einem FreeBSD-Rechner vorgenommen.
+Entwicklungsarbeit wird auf einem Debian/jessie- sowie einem FreeBSD-Rechner vorgenommen.
 [%- ELSE -%]
 To execute BBBike on Unix, change to the bbbike directory and type
 
@@ -641,7 +641,7 @@ this can be done with
 
 
 Some versions of BBBike are tested with: [% TESTPLATFORMS %]. The
-development machine runs with FreeBSD.
+development machines run with Debian/jessie and FreeBSD.
 [%- END -%]
 
 

@@ -44,16 +44,16 @@ Fall. Mit
 	perl -v
 
 kann überprüft werden, ob und welche Version von perl installiert ist.
-Ansonsten kann man Perl unter L<http://www.perl.org/get.html> finden. Es wird
-mindestens die Version 5.005 benötigt, alle neueren Perl-Versionen
-(5.6.x, 5.8.x, 5.10.x, 5.12.x, 5.14.x, 5.16.x) funktionieren auch.
+Ansonsten kann man Perl unter L<http://www.perl.org/get.html> finden.
+Es werden alle Perl-Versionen ab 5.8.9 unterstützt, ggfs.
+funktionieren auch ältere Versionen (bis 5.005).
 
 Danach kann BBBike ausgepackt werden:
 
 
 	zcat BBBike-3.18.tar.gz | tar xfv -
 
-Falls perl/Tk (eine möglichst neue Version, z.B. 804.028 or 800.025) nicht
+Falls perl/Tk (eine möglichst neue Version, zurzeit 804.034) nicht
 installiert ist: als Superuser folgendes eingeben:
 
         cd BBBike-3.18
@@ -260,7 +260,7 @@ BBBike-Icon ebenfalls im Startmenü.
 
 Einige Versionen von BBBike wurden unter folgenden
 Plattformen getestet: Linux (Debian jessie, Debian wheezy, Debian squeeze, Debian etch, Ubuntu 12.04, CentOS, Suse 7.0 und 6.4, Red Hat 8.0), FreeBSD (Version 10.0, 9.2, 9.1, 9.0, 8.0, 6.1, 4.9, 4.6, 3.5), Windows (Windows 8, Windows 7, Vista, XP, 2000, NT 4.0, 98, 95), MacOSX (10.4, 10.5 ...), Solaris (Version 8 und 2.5). Die
-Entwicklungsarbeit wird auf einem FreeBSD-Rechner vorgenommen.
+Entwicklungsarbeit wird auf einem Debian/jessie- sowie einem FreeBSD-Rechner vorgenommen.
 
 =head2 WWW-Version
 
