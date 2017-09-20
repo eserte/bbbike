@@ -266,7 +266,7 @@ EOF
 
 # Alternative Pod generator using Pod::ProjectDocs, looks like CPAN docs
 pod-projdocs:
-	pod2projdocs -title BBBike -desc "Der Fahrradroutenplaner für Berlin und Brandenburg" -verbose -out /tmp/pods/ -lib `pwd`
+	pod2projdocs -title BBBike -desc "Der Fahrradroutenplaner für Berlin und Brandenburg" -verbose -out /tmp/pods/ -lib `pwd` -except 'projects/' -except '/blib/lib/' -except 'lib/5\.\d+\.\d+/' -except 'port/.*/inc/' -except 'cgi/(bbbike-test(\.en)?|bbbike\.en|bbbike2|bbbikegooglemap2)'
 
 ######################################################################
 # PORTS, BINDISTS...
