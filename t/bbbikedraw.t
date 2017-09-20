@@ -507,7 +507,7 @@ sub draw_map {
 
 	my $info = pdfinfo $filename;
     SKIP: {
-	    skip "pdfinfo not available", 1
+	    skip "pdfinfo not available", $additional_pdf_tests
 		if !$info;
 	    if ($module eq 'PDF') {
 		like $info->{Creator}, qr{^BBBikeDraw::PDF version \d+\.\d+}, 'expected creator';
