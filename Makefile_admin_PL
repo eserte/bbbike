@@ -266,7 +266,7 @@ EOF
 
 # Alternative Pod generator using Pod::ProjectDocs, looks like CPAN docs
 pod-projdocs:
-	pod2projdocs -title BBBike -desc "Der Fahrradroutenplaner für Berlin und Brandenburg" -verbose -charset "iso-8859-1" -out /tmp/pods/ -lib `pwd`
+	pod2projdocs -title BBBike -desc "Der Fahrradroutenplaner für Berlin und Brandenburg" -verbose -out /tmp/pods/ -lib `pwd`
 
 ######################################################################
 # PORTS, BINDISTS...
