@@ -207,7 +207,7 @@ warn "INFO: Created RPM spec file as $specfile\n";
 
 if ($do_build) {
     warn "INFO: Building rpm...\n";
-    system 'rpm', "-bb", $specfile;
+    system 'rpmbuild', "-bb", $specfile;
 } else {
     warn "INFO: No rpm build requested...\n";
 }
