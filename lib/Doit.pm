@@ -75,7 +75,22 @@ use warnings;
 
     sub new {
 	my($class, $msg, %opts) = @_;
-	my $level = delete $opts{__level} || 1;
+	my $level = delete $opts{__level} || 'auto';
+	if ($level eq 'auto') {
+	    my $_level = 0;
+	    while() {
+		my @stackinfo = caller($_level);
+		if (!@stackinfo) {
+		    $level = $_level - 1;
+		    last;
+		}
+		if ($stackinfo[1] !~ m{([/\\]|^)Doit\.pm$}) {
+		    $level = $_level;
+		    last;
+		}
+		$_level++;
+	    }
+	}
 	($opts{__package}, $opts{__filename}, $opts{__line}) = caller($level);
 	bless {
 	       __msg  => $msg,
@@ -111,6 +126,8 @@ use warnings;
     }
 
     use Doit::Log;
+
+    my $diff_error_shown;
 
     sub _new {
 	my $class = shift;
@@ -365,14 +382,17 @@ use warnings;
 				 if (-e $real_to) {
 				     my $diff;
 				     if (eval { require IPC::Run; 1 }) {
-					 IPC::Run::run(['diff', '-u', $to, $from], '>', \$diff);
-					 "copy $from $to\ndiff:\n$diff";
+					 if (eval { IPC::Run::run(['diff', '-u', $to, $from], '>', \$diff); 1 }) {
+					     "copy $from $to\ndiff:\n$diff";
+					 } else {
+					     "copy $from $to\n(diff not available" . (!$diff_error_shown++ ? ", error: $@" : "") . ")";
+					 }
 				     } else {
 					 $diff = `diff -u '$to' '$from'`;
 					 "copy $from $to\ndiff:\n$diff";
 				     }
 				 } else {
-				     "copy $from $to (destination does not exist)\n";
+				     "copy $from $to (destination does not exist)";
 				 }
 			     },
 			     rv => 1,
@@ -394,6 +414,199 @@ use warnings;
 	Doit::Commands->new(@commands);
     }
 
+    sub _analyze_dollar_questionmark () {
+	if ($? & 127) {
+	    my $signalnum = $? & 127;
+	    my $coredump = ($? & 128) ? 'with' : 'without';
+	    (
+		msg       => sprintf("Command died with signal %d, %s coredump", $signalnum, $coredump),
+		signalnum => $signalnum,
+		coredump  => $coredump,
+	    );
+	} else {
+	    my $exitcode = $?>>8;
+	    (
+		msg      => "Command exited with exit code " . $exitcode,
+		exitcode => $exitcode,
+	    );
+	}
+    }
+
+    sub _handle_dollar_questionmark (@) {
+	my(%opts) = @_;
+	my $prefix_msg = delete $opts{prefix_msg};
+	error "Unhandled options: " . join(" ", %opts) if %opts;
+
+	my %res = _analyze_dollar_questionmark;
+	my $msg = delete $res{msg};
+	if (defined $prefix_msg) {
+	    $msg = $prefix_msg.$msg;
+	}
+	Doit::Exception::throw($msg, %res);
+    }
+
+    sub _show_cwd ($) {
+	my $flag = shift;
+	if ($flag) {
+	    require Cwd;
+	    " (in " . Cwd::getcwd() . ")";
+	} else {
+	    "";
+	}
+    }
+
+    sub cmd_open2 {
+	my($self, @args) = @_;
+	my $options = {}; if (@args && ref $args[0] eq 'HASH') { $options = shift @args }
+	my $quiet = delete $options->{quiet};
+	my $info = delete $options->{info};
+	my $instr = delete $options->{instr}; $instr = '' if !defined $instr;
+	error "Unhandled options: " . join(" ", %$options) if %$options;
+
+	require IPC::Open2;
+
+	my $code = sub {
+	    my($chld_out, $chld_in);
+	    my $pid = IPC::Open2::open2($chld_out, $chld_in, @args);
+	    print $chld_in $instr;
+	    close $chld_in;
+	    local $/;
+	    my $buf = <$chld_out>;
+	    close $chld_out;
+	    waitpid $pid, 0;
+	    $? == 0
+		or _handle_dollar_questionmark($quiet||$info ? (prefix_msg => "open2 command '@args' failed: ") : ());
+	    $buf;
+	};
+
+	my @commands;
+	push @commands, {
+			 ($info ? (rv => $code->(), code => sub {}) : (code => $code)),
+			 ($quiet ? () : (msg => "@args")),
+			};
+	Doit::Commands->new(@commands);
+    }
+
+    sub cmd_info_open2 {
+	my($self, @args) = @_;
+	my $options = {}; if (@args && ref $args[0] eq 'HASH') { $options = shift @args }
+	$options->{info} = 1;
+	$self->cmd_open2($options, @args);
+    }
+
+    sub cmd_open3 {
+	my($self, @args) = @_;
+	my $options = {}; if (@args && ref $args[0] eq 'HASH') { $options = shift @args }
+	my $quiet = delete $options->{quiet};
+	my $info = delete $options->{info};
+	my $timeout = delete $options->{timeout} || 86400;
+	my $instr = delete $options->{instr};
+	my $errref = delete $options->{errref};
+	my $statusref = delete $options->{statusref};
+	error "Unhandled options: " . join(" ", %$options) if %$options;
+
+	require IO::Select;
+	require IPC::Open3;
+	require Symbol;
+
+	my $code = sub {
+	    my($chld_out, $chld_in, $chld_err);
+	    $chld_err = Symbol::gensym();
+	    my $pid = IPC::Open3::open3((defined $instr ? $chld_in : undef), $chld_out, $chld_err, @args);
+	    if (defined $instr) {
+		print $chld_in $instr;
+		close $chld_in;
+	    }
+
+	    my $sel = IO::Select->new;
+	    $sel->add($chld_out);
+	    $sel->add($chld_err);
+
+	    my %buf = ($chld_out => '', $chld_err => '');
+	    while(my @ready_fhs = $sel->can_read($timeout)) {
+		for my $ready_fh (@ready_fhs) {
+		    my $buf = '';
+		    while (sysread $ready_fh, $buf, 1024, length $buf) { }
+		    if ($buf eq '') { # eof
+			$sel->remove($ready_fh);
+			$ready_fh->close;
+			last if $sel->count == 0;
+		    } else {
+			$buf{$ready_fh} .= $buf;
+		    }
+		}
+	    }
+
+	    waitpid $pid, 0;
+	    if ($statusref) {
+		%$statusref = ( _analyze_dollar_questionmark );
+	    } else {
+		if ($? != 0) {
+		    _handle_dollar_questionmark($quiet||$info ? (prefix_msg => "open3 command '@args' failed: ") : ());
+		}
+	    }
+
+	    if ($errref) {
+		$$errref = $buf{$chld_err};
+	    }
+
+	    $buf{$chld_out};
+	};
+
+	my @commands;
+	push @commands, {
+			 ($info ? (rv => $code->(), code => sub {}) : (code => $code)),
+			 ($quiet ? () : (msg => "@args")),
+			};
+	Doit::Commands->new(@commands);
+    }
+
+    sub cmd_info_open3 {
+	my($self, @args) = @_;
+	my $options = {}; if (@args && ref $args[0] eq 'HASH') { $options = shift @args }
+	$options->{info} = 1;
+	$self->cmd_open3($options, @args);
+    }
+
+    sub cmd_qx {
+	my($self, @args) = @_;
+	my $options = {}; if (@args && ref $args[0] eq 'HASH') { $options = shift @args }
+	my $quiet = delete $options->{quiet};
+	my $info = delete $options->{info};
+	my $statusref = delete $options->{statusref};
+	error "Unhandled options: " . join(" ", %$options) if %$options;
+
+	my $code = sub {
+	    open my $fh, '-|', @args
+		or error "Error running '@args': $!";
+	    local $/;
+	    my $buf = <$fh>;
+	    close $fh;
+	    if ($statusref) {
+		%$statusref = ( _analyze_dollar_questionmark );
+	    } else {
+		if ($? != 0) {
+		    _handle_dollar_questionmark($quiet||$info ? (prefix_msg => "qx command '@args' failed: ") : ());
+		}
+	    }
+	    $buf;
+	};
+
+	my @commands;
+	push @commands, {
+			 ($info ? (rv => $code->(), code => sub {}) : (code => $code)),
+			 ($quiet ? () : (msg => "@args")),
+			};
+	Doit::Commands->new(@commands);
+    }
+
+    sub cmd_info_qx {
+	my($self, @args) = @_;
+	my $options = {}; if (@args && ref $args[0] eq 'HASH') { $options = shift @args }
+	$options->{info} = 1;
+	$self->cmd_qx($options, @args);
+    }
+
     sub cmd_rmdir {
 	my($self, $directory) = @_;
 	my @commands;
@@ -404,24 +617,6 @@ use warnings;
 			    };
 	}
 	Doit::Commands->new(@commands);
-    }
-
-    sub _handle_dollar_questionmark () {
-	if ($? & 127) {
-	    my $signalnum = $? & 127;
-	    my $coredump = ($? & 128) ? 'with' : 'without';
-	    Doit::Exception::throw(
-				   sprintf("Command died with signal %d, %s coredump", $signalnum, $coredump),
-				   signalnum => $signalnum,
-				   coredump  => $coredump,
-			          );
-	} else {
-	    my $exitcode = $?>>8;
-	    Doit::Exception::throw(
-				   "Command exited with exit code " . $exitcode,
-				   exitcode => $exitcode,
-			          );
-	}
     }
 
     sub cmd_run {
@@ -476,6 +671,9 @@ use warnings;
 
     sub cmd_system {
 	my($self, @args) = @_;
+	my $options = {}; if (@args && ref $args[0] eq 'HASH') { $options = shift @args }
+	my $show_cwd = delete $options->{show_cwd};
+	error "Unhandled options: " . join(" ", %$options) if %$options;
 	my @commands;
 	push @commands, {
 			 code => sub {
@@ -484,7 +682,7 @@ use warnings;
 				 _handle_dollar_questionmark;
 			     }
 			 },
-			 msg  => "@args",
+			 msg  => "@args" . _show_cwd($show_cwd),
 			};
 	Doit::Commands->new(@commands);
     }
@@ -594,8 +792,11 @@ use warnings;
 				 if ($need_diff) {
 				     if (eval { require IPC::Run; 1 }) {
 					 my $diff;
-					 IPC::Run::run(['diff', '-u', $filename, '-'], '<', \$content, '>', \$diff);
-					 "Replace existing file $filename with diff:\n$diff";
+					 if (eval { IPC::Run::run(['diff', '-u', $filename, '-'], '<', \$content, '>', \$diff); 1 }) {
+					     "Replace existing file $filename with diff:\n$diff";
+					 } else {
+					     "(diff not available" . (!$diff_error_shown++ ? ", error: $@" : "") . ")";
+					 }
 				     } else {
 					 my $diff;
 					 if (eval { require File::Temp; 1 }) {
@@ -622,12 +823,18 @@ use warnings;
     }
 
     sub cmd_change_file {
-	my($self, $file, @changes) = @_;
+	my($self, @args) = @_;
+	my $options = {}; if (@args && ref $args[0] eq 'HASH') { $options = shift @args }
+	my $check = delete $options->{check};
+	if ($check && ref $check ne 'CODE') { error "check parameter should be a CODE reference" }
+	error "Unhandled options: " . join(" ", %$options) if %$options;
+
+	my($file, @changes) = @args;
 	if (!-e $file) {
-	    die "$file does not exist";
+	    error "$file does not exist";
 	}
 	if (!-f $file) {
-	    die "$file is not a file";
+	    error "$file is not a file";
 	}
 
 	my $debug;
@@ -743,7 +950,7 @@ use warnings;
 	require File::Temp;
 	require File::Basename;
 	require File::Copy;
-	my($tmfh,$tmpfile) = File::Temp::tempfile('doittemp_XXXXXXXX', UNLINK => 1, DIR => File::Basename::dirname($file));
+	my($tmpfh,$tmpfile) = File::Temp::tempfile('doittemp_XXXXXXXX', UNLINK => 1, DIR => File::Basename::dirname($file));
 	File::Copy::copy($file, $tmpfile)
 		or die "failed to copy $file to temporary file $tmpfile: $!";
 	_copy_stat $file, $tmpfile;
@@ -788,17 +995,27 @@ use warnings;
 	}
 
 	untie @lines;
+	close $tmpfh;
 
 	if ($no_of_changes) {
 	    push @commands, {
 			     code => sub {
+				 if ($check) {
+				     # XXX maybe it would be good to pass the Doit::Runner object,
+				     #     but unfortunately it's not available at this point ---
+				     #     maybe the code sub should generally get it as first argument?
+				     $check->($tmpfile)
+					 or error "Check on file $file failed";
+				 }
 				 rename $tmpfile, $file
 				     or die "Can't rename $tmpfile to $file: $!";
 			     },
 			     msg => do {
 				 my $diff;
 				 if (eval { require IPC::Run; 1 }) {
-				     IPC::Run::run(['diff', '-u', $file, $tmpfile], '>', \$diff);
+				     if (!eval { IPC::Run::run(['diff', '-u', $file, $tmpfile], '>', \$diff); 1 }) {
+					 $diff = "(diff not available" . (!$diff_error_shown++ ? ", error: $@" : "") . ")";
+				     }
 				 } else {
 				     $diff = `diff -u '$file' '$tmpfile'`;
 				 }
@@ -934,6 +1151,9 @@ use warnings;
 		 qw(make_path remove_tree), # File::Path
 		 qw(copy move), # File::Copy
 		 qw(run), # IPC::Run
+		 qw(qx info_qx), # qx// and variant which even runs in dry-run mode, both using list syntax
+		 qw(open2 info_open2), # IPC::Open2
+		 qw(open3 info_open3), # IPC::Open3
 		 qw(cond_run), # conditional run
 		 qw(touch), # like unix touch
 		 qw(create_file_if_nonexisting), # does the half of touch
@@ -1043,6 +1263,34 @@ use warnings;
 	}
     }
 
+    sub gentle_retry {
+	my(%opts) = @_;
+	my $code           = delete $opts{code} || die "code is mandatory";
+	my $tries          = delete $opts{tries} || 20;
+	my $fast_tries     = delete $opts{fast_tries} || int($tries/2);
+	my $slow_sleep     = delete $opts{slow_sleep} || 1;
+	my $fast_sleep     = delete $opts{fast_sleep} || 0.1;
+	my $retry_msg_code = delete $opts{retry_msg_code};
+	my $fail_info_ref  = delete $opts{fail_info_ref};
+	die "Unhandled options: " . join(" ", %opts) if %opts;
+
+	for my $try (1..$tries) {
+	    my $ret = $code->(fail_info_ref => $fail_info_ref, try => $try);
+	    return $ret if $ret;
+	    my $sleep_sub;
+	    if ($fast_tries && eval { require Time::HiRes; 1 }) {
+		$sleep_sub = \&Time::HiRes::sleep;
+	    } else {
+		$sleep_sub = sub { sleep $_[0] };
+	    }
+	    my $seconds = $try <= $fast_tries && defined &Time::HiRes::sleep ? $fast_sleep : $slow_sleep;
+	    $retry_msg_code->($seconds) if $retry_msg_code;
+	    $sleep_sub->($seconds);
+	}
+
+	undef;
+    }
+
 }
 
 {
@@ -1093,12 +1341,14 @@ use warnings;
 	my($class, $runner, $sockpath, %options) = @_;
 
 	my $debug = delete $options{debug};
+	my $excl  = delete $options{excl};
 	die "Unhandled options: " . join(" ", %options) if %options;
 
 	bless {
 	       runner   => $runner,
 	       sockpath => $sockpath,
 	       debug    => $debug,
+	       excl     => $excl,
 	      }, $class;
     }
 
@@ -1121,7 +1371,7 @@ use warnings;
 
 	$d->("Start worker ($$)...");
 	my $sockpath = $self->{sockpath};
-	if (-e $sockpath) {
+	if (!$self->{excl} && -e $sockpath) {
 	    $d->("unlink socket $sockpath");
 	    unlink $sockpath;
 	}
@@ -1192,7 +1442,11 @@ use warnings;
 		return;
 	    }
 	    open my $oldout, ">&STDOUT" or die $!;
-	    open STDOUT, '>', "/dev/stderr" or die $!; # XXX????
+	    if ($^O eq 'MSWin32') {
+		open STDOUT, '>', 'CON:' or die $!; # XXX????
+	    } else {
+		open STDOUT, '>', "/dev/stderr" or die $!; # XXX????
+	    }
 	    my($rettype, @ret) = $self->{runner}->call_wrapped_method($context, @data);
 	    open STDOUT, ">&", $oldout or die $!;
 	    $self->send_data($rettype, @ret);
@@ -1238,6 +1492,10 @@ use warnings;
 
     use vars '@ISA'; @ISA = ('Doit::_AnyRPCImpl');
 
+    use Doit::Log;
+
+    my $socket_count = 0;
+
     sub do_connect {
 	my($class, %opts) = @_;
 	my @sudo_opts = @{ delete $opts{sudo_opts} || [] };
@@ -1251,15 +1509,47 @@ use warnings;
 	require File::Basename;
 	require IPC::Open2;
 	require Symbol;
-	#my @cmd = ('sudo', @sudo_opts, $^X, "-I".File::Basename::dirname(__FILE__), "-I".File::Basename::dirname($0), "-e", q{require "} . File::Basename::basename($0) . q{"; Doit::RPC::SimpleServer->new(Doit->init)->run();}, "--", ($dry_run? "--dry-run" : ()));
-	#my($in, $out) = (Symbol::gensym(), Symbol::gensym());
+
+	# Socket pathname, make it possible to find out
+	# old outdated sockets easily by including a
+	# timestamp. Also need to maintain a $socket_count,
+	# if the same script opens multiple sockets quickly.
+	my $sock_path = do {
+	    require POSIX;
+	    "/tmp/." . join(".", "doit", "sudo", POSIX::strftime("%Y%m%d_%H%M%S", gmtime), $<, $$, (++$socket_count)) . ".sock";
+	};
+
+	# Make sure password has to be entered only once (if at all)
+	# Using 'sudo --validate' would be more correct, however,
+	# mysterious "sudo: ignoring time stamp from the future"
+	# errors may happen every now and then. Seen on a
+	# debian/jessie system, possibly related to
+	# https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=762465
+	{
+	    my @cmd = ('sudo', @sudo_opts, 'true');
+	    system @cmd;
+	    if ($? != 0) {
+		# Possible cases:
+		# - sudo is not installed
+		# - sudo authentication is not possible or user entered wrong password
+		# - true is not installed (hopefully this never happens on Unix systems)
+		error "Command '@cmd' failed";
+	    }
+	}
+
+	# On linux use Linux Abstract Namespace Sockets ---
+	# invisible and automatically cleaned up. See man 7 unix.
+	my $LASN_PREFIX = $^O eq 'linux' ? '\0' : '';
+
+	# Run the server
 	my @cmd_worker =
 	    (
 	     'sudo', @sudo_opts, $^X, "-I".File::Basename::dirname(__FILE__), "-I".File::Basename::dirname($0), "-e",
 	     Doit::_ScriptTools::self_require() .
 	     q{my $d = Doit->init; } .
 	     Doit::_ScriptTools::add_components(@components) .
-	     q{Doit::RPC::Server->new($d, "/tmp/.doit.sudo.$<.sock", debug => } . ($debug?1:0) . q{)->run();},
+	     q{Doit::RPC::Server->new($d, "} . $LASN_PREFIX . $sock_path . q{", excl => 1, debug => } . ($debug?1:0) . q{)->run();} .
+	     ($LASN_PREFIX ? '' : q<END { unlink "> . $sock_path . q<" }>), # cleanup socket file, except if Linux Abstract Namespace Sockets are used
 	     "--", ($dry_run? "--dry-run" : ())
 	    );
 	my $worker_pid = fork;
@@ -1270,11 +1560,16 @@ use warnings;
 	    exec @cmd_worker;
 	    die "Failed to run '@cmd_worker': $!";
 	}
+
+	# Run the client --- must also run under root for socket
+	# access.
 	my($in, $out);
-	my @cmd_comm = ('sudo', @sudo_opts, $^X, "-I".File::Basename::dirname(__FILE__), "-MDoit", "-e", q{Doit::Comm->comm_to_sock("/tmp/.doit.sudo.$<.sock", debug => shift)}, !!$debug);
+	my @cmd_comm = ('sudo', @sudo_opts, $^X, "-I".File::Basename::dirname(__FILE__), "-MDoit", "-e",
+			q{Doit::Comm->comm_to_sock("} . $LASN_PREFIX . $sock_path . q{", debug => shift)}, !!$debug);
 	warn "comm perl cmd: @cmd_comm\n" if $debug;
 	my $comm_pid = IPC::Open2::open2($out, $in, @cmd_comm);
 	$self->{rpc} = Doit::RPC::Client->new($out, $in, label => "sudo:");
+
 	$self;
     }
 
@@ -1301,7 +1596,10 @@ use warnings;
 	my $tty = delete $opts{tty};
 	my $port = delete $opts{port};
 	my $master_opts = delete $opts{master_opts};
-	die "Unhandled options: " . join(" ", %opts) if %opts;
+	my $put_to_remote = delete $opts{put_to_remote} || 'rsync_put'; # XXX ideally this should be determined automatically
+	$put_to_remote =~ m{^(rsync_put|scp_put)$}
+	    or error "Valid values for put_to_remote: rsync_put or scp_put";
+	error "Unhandled options: " . join(" ", %opts) if %opts;
 
 	my $self = bless { host => $host, debug => $debug }, $class;
 	my %ssh_run_opts = (
@@ -1313,7 +1611,8 @@ use warnings;
 	    ($master_opts   ? (master_opts   => $master_opts)   : ()),
 	);
 	my $ssh = Net::OpenSSH->new($host, %ssh_new_opts);
-	$ssh->error and die "Connection error to $host: " . $ssh->error;
+	$ssh->error
+	    and error "Connection error to $host: " . $ssh->error;
 	$self->{ssh} = $ssh;
 	{
 	    my $remote_cmd = "[ ! -d .doit/lib ] && mkdir -p .doit/lib";
@@ -1323,9 +1622,9 @@ use warnings;
 	    $ssh->system(\%ssh_run_opts, $remote_cmd);
 	}
 	if ($0 ne '-e') {
-	    $ssh->rsync_put({verbose => $debug}, $0, ".doit/"); # XXX verbose?
+	    $ssh->$put_to_remote({verbose => $debug}, $0, ".doit/"); # XXX verbose?
 	}
-	$ssh->rsync_put({verbose => $debug}, __FILE__, ".doit/lib/");
+	$ssh->$put_to_remote({verbose => $debug}, __FILE__, ".doit/lib/");
 	{
 	    my %seen_dir;
 	    for my $component (@components) {
@@ -1337,9 +1636,15 @@ use warnings;
 		    $ssh->system(\%ssh_run_opts, "[ ! -d $target_dir ] && mkdir -p $target_dir");
 		    $seen_dir{$target_dir} = 1;
 		}
-		$ssh->rsync_put({verbose => $debug}, $from, $full_target);
+		$ssh->$put_to_remote({verbose => $debug}, $from, $full_target);
 	    }
 	}
+
+	my $sock_path = do {
+	    require POSIX;
+	    "/tmp/." . join(".", "doit", "ssh", POSIX::strftime("%Y%m%d_%H%M%S", gmtime), $<, $$, int(rand(99999999))) . ".sock";
+	};
+
 	my @cmd;
 	if (defined $as) {
 	    if ($as eq 'root') {
@@ -1348,31 +1653,34 @@ use warnings;
 		@cmd = ('sudo', '-u', $as);
 	    }
 	} # XXX add ssh option -t? for password input?
-	if (0) {
-	    push @cmd, ("perl", "-I.doit", "-I.doit/lib", "-e", q{require "} . File::Basename::basename($0) . q{"; Doit::RPC::SimpleServer->new(Doit->init)->run();}, "--", ($dry_run? "--dry-run" : ()));
-	    warn "remote perl cmd: @cmd\n" if $debug;
-	    my($out, $in, $pid) = $ssh->open2(\%ssh_run_opts, @cmd);
-	    $self->{rpc} = Doit::RPC::Client->new($in, $out);
-	} else {
-	    # XXX better path for sock!
-	    my @cmd_worker =
-		(
-		 @cmd, "perl", "-I.doit", "-I.doit/lib", "-e",
-		 Doit::_ScriptTools::self_require() .
-		 q{my $d = Doit->init; } .
-		 Doit::_ScriptTools::add_components(@components) .
-		 q{Doit::RPC::Server->new($d, "/tmp/.doit.$<.sock", debug => } . ($debug?1:0).q{)->run();},
-		 "--", ($dry_run? "--dry-run" : ())
-		);
-	    warn "remote perl cmd: @cmd_worker\n" if $debug;
-	    my $worker_pid = $ssh->spawn(\%ssh_run_opts, @cmd_worker); # XXX what to do with worker pid?
-	    $self->{worker_pid} = $worker_pid;
-	    my @cmd_comm = (@cmd, "perl", "-I.doit/lib", "-MDoit", "-e", q{Doit::Comm->comm_to_sock("/tmp/.doit.$<.sock", debug => shift)}, !!$debug);
-	    warn "comm perl cmd: @cmd_comm\n" if $debug;
-	    my($out, $in, $comm_pid) = $ssh->open2(@cmd_comm);
-	    $self->{comm_pid} = $comm_pid;
-	    $self->{rpc} = Doit::RPC::Client->new($in, $out, label => "ssh:$host");
-	}
+
+	my @cmd_worker =
+	    (
+	     @cmd, "perl", "-I.doit", "-I.doit/lib", "-e",
+	     Doit::_ScriptTools::self_require() .
+	     q{my $d = Doit->init; } .
+	     Doit::_ScriptTools::add_components(@components) .
+	     q<sub _server_cleanup { unlink "> . $sock_path . q<" }> .
+	     q<$SIG{PIPE} = \&_server_cleanup; > .
+	     q<END { _server_cleanup() } > .
+	     q{Doit::RPC::Server->new($d, "} . $sock_path . q{", excl => 1, debug => } . ($debug?1:0).q{)->run();},
+	     "--", ($dry_run? "--dry-run" : ())
+	    );
+	warn "remote perl cmd: @cmd_worker\n" if $debug;
+	my $worker_pid = $ssh->spawn(\%ssh_run_opts, @cmd_worker); # XXX what to do with worker pid?
+	$self->{worker_pid} = $worker_pid;
+
+	my @cmd_comm =
+	    (
+	     @cmd, "perl", "-I.doit/lib", "-MDoit", "-e",
+	     q{Doit::Comm->comm_to_sock("} . $sock_path . q{", debug => shift);},
+	     !!$debug,
+	    );
+	warn "comm perl cmd: @cmd_comm\n" if $debug;
+	my($out, $in, $comm_pid) = $ssh->open2(@cmd_comm);
+	$self->{comm_pid} = $comm_pid;
+	$self->{rpc} = Doit::RPC::Client->new($in, $out, label => "ssh:$host");
+
 	$self;
     }
 
@@ -1419,27 +1727,26 @@ use warnings;
 	$d->("Start communication process (pid $$)...");
 
 	my $tries = 20;
-	my $sock;
-	{
-	    my $sleep;
-	    for my $try (1..$tries) {
-		$sock = IO::Socket::UNIX->new(
-					      Type => SOCK_STREAM(),
-					      Peer => $peer,
-					     );
-		last if $sock;
-		if (eval { require Time::HiRes; 1 }) {
-		    $sleep = \&Time::HiRes::sleep;
-		} else {
-		    $sleep = sub { sleep $_[0] };
-		}
-		my $seconds = $try < 10 && defined &Time::HiRes::sleep ? 0.1 : 1;
+	my $sock_err;
+	my $sock = Doit::RPC::gentle_retry(
+	    code => sub {
+		my(%opts) = @_;
+		my $sock = IO::Socket::UNIX->new(
+		    Type => SOCK_STREAM(),
+		    Peer => $peer,
+		);
+		return $sock if $sock;
+		${$opts{fail_info_ref}} = "(peer=$peer, errno=$!)";
+		undef;
+	    },
+	    retry_msg_code => sub {
+		my($seconds) = @_;
 		$d->("can't connect, sleep for $seconds seconds");
-		$sleep->($seconds);
-	    }
-	}
+	    },
+	    fail_info_ref => \$sock_err,
+	);
 	if (!$sock) {
-	    die "COMM: Can't connect to socket (after $tries retries): $!";
+	    die "COMM: Can't connect to socket (after $tries retries) $sock_err";
 	}
 	$d->("socket to worker was created");
 
