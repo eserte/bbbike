@@ -3960,12 +3960,12 @@ userdel	2::inwork 17681,7589 17676,7555
          'until' => 1506290399
        },
        {
-         'data' => 'userdel	q4::inwork; 10167,19797 10195,19703 10224,19628 10257,19542
+         'data' => 'userdel	q3::inwork; 10066,20494 10064,20437 10066,20323 10068,20188 10106,20093 10117,20065 10132,19993 10167,19797
 ',
          'from' => 1504896268,
          'id' => 2905,
          'source_id' => '2147341767',
-         'text' => 'Dietzgenstr.: Bauarbeiten ab Kuckhoffstr. Richtung Süden, auch Radfahrer sind betroffen, voraussichtlich bis MItte Oktober 2017',
+         'text' => 'Dietzgenstr.: Bauarbeiten zwischen Schillerstr. und Kuckhoffstr., Fahrbahn Richtung Süden gesperrt, voraussichtlich bis Mitte Oktober 2017',
          'type' => 'handicap',
          'until' => 1508104799
        },
@@ -3999,6 +3999,16 @@ userdel	q4::inwork -1869,19974 -1806,19806 -1794,19681 -1788,19663
          'text' => 'Mertensstr.: Einbahnstraße zwischen Goltzstr. und Streitstr., offen Richtung Westen, voraussichtlich ab Ende September 2017 bis Frühjahr 2018',
          'type' => 'handicap',
          'until' => 1522576800
+       },
+       {
+         'data' => 'userdel	q3::inwork; 10167,19797 10132,19993 10117,20065 10106,20093 10068,20188 10066,20323 10064,20437 10066,20494
+',
+         'from' => 1504896268,
+         'id' => 2909,
+         'source_id' => '2147341767',
+         'text' => 'Dietzgenstr.: zwischen Kuckhoffstr. und Schillerstr. ist die Fahrbahn Richtung Norden für Radfahrer offiziell gesperrt, voraussichtlich bis Mitte Oktober 2017',
+         'type' => 'handicap',
+         'until' => 1508104799
        }
      
 );

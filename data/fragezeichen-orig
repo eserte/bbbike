@@ -20,7 +20,7 @@
 #: source_id: 2147340987
 #: source_id: 2147341435
 #: osm_watch: way id="41954398" version="12"
-#: last_checked: 2017-09-16 vvv
+#: last_checked: 2017-09-21 vvv
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (hier nur dieser Abschnitt (Prenzlauer Allee - Bötzowstr.) erwähnt)
 #: next_check: 2018-06-01
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12621,14313
@@ -32,7 +32,7 @@ Danziger Str.	?::projected 12621,14313 12729,14227 12901,14093 12975,13990 13037
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2017-09-20
+#: last_checked: 2017-09-21
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -77,8 +77,11 @@ Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4
 #: source_id: 2147341739
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf ("erste Teilabschnitte", und nur Barnetstr.)
 #: last_checked: 2017-05-21
+#: next_check: 2017-09-21
+Groß-ziethener Str.: werden hier die bestehenden Radwege verbessert oder durch Radspuren ersetzt?	?::projected 12078,-1170 12023,-1174 11953,-1181 11858,-1189 11761,-1199 11717,-1204 11666,-1209 11578,-1220 11548,-1223 11240,-1262 11149,-1274 11003,-1303 10844,-1335
+#: last_checked: 2017-05-21
 #: next_check: 2017-12-31
-Großziethener - Barnetstr.: werden hier die bestehenden Radwege verbessert oder durch Radspuren ersetzt?	?::projected 12078,-1170 12023,-1174 11953,-1181 11858,-1189 11761,-1199 11717,-1204 11666,-1209 11578,-1220 11548,-1223 11240,-1262 11149,-1274 11003,-1303 10844,-1335 10720,-1340 10583,-1311 10492,-1266 10379,-1194 10231,-1086 10143,-1026 10082,-986 9888,-853 9815,-805 9780,-788 9693,-815
+Barnetstr.: werden hier die bestehenden Radwege verbessert oder durch Radspuren ersetzt?	?::projected 10844,-1335 10720,-1340 10583,-1311 10492,-1266 10379,-1194 10231,-1086 10143,-1026 10082,-986 9888,-853 9815,-805 9780,-788 9693,-815
 # 
 #: XXX Baumaßnahme 7.12 (Realisierung nach 2011)
 #: osm_watch: node id="29658082" version="4"
@@ -314,7 +317,7 @@ Triftstr.: Planung von Radverkehrsanlagen	?::projected 11940,22587 11959,22696 1
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (Baubeginn 2018)
 #: osm_watch: way id="35573588" version="7"
 #: osm_watch: way id="4632077" version="15"
-#: last_checked: 2017-07-30
+#: last_checked: 2017-09-21
 #: next_check: 2018-04-01
 Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823 11442,17664 11457,17585 11482,17459 11508,17315 11522,17248 11541,17153 11570,17028 11598,16878 11621,16749 11630,16623 11655,16486 11659,16457 11673,16367
 # 
@@ -668,7 +671,7 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 # REMOVED (weitgehend fertig) --- #: source_id: 2147340980 --- #: last_checked: 2017-06-08 --- #: next_check: 2017-07-05 --- Stromstr.: Asphaltierung des Radwegs in Arbeit	?::inwork; 6214,13225 6183,13083 6164,12980
 # REMOVED (weitgehend fertig) --- #: last_checked: 2017-07-11 --- Möckernstr.: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 8783,10166 8802,10290 8804,10303
 # 
-#: last_checked: 2017-09-06
+#: last_checked: 2017-09-21
 Bersarinplatz: Verbesserung "Radweganbindung Ostseite"	?::projected; 13730,12535 13761,12578 13767,12626 13747,12642 13695,12643
 # 
 #: last_checked: 2017-08-06
@@ -1130,7 +1133,7 @@ Wuhlewanderweg: wird hier ein Weg auf der östlichen Uferseite errichtet?	?::proj
 #: XXX "Der gesamte Straßenzug von der Danziger Straße bis zur Wisbyer Straße soll bis Ende 2017 fertig gestellt werden."
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2016/pressemitteilung.544145.php
 #: XXX "bis voraussichtlich 2018"
-#: last_checked: 2017-08-30 vvv
+#: last_checked: 2017-09-21 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: way id="86208414" version="9"
 Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork; 11112,15387 10881,15047
@@ -1792,12 +1795,12 @@ Clara-Mleinek-Platz (Ziffer 3; platzähnlich): Qualität? Wird der Straßenname sti
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2016 (Straßenbenennung)
 #: XXX Grünflächen teilweise entfernen, culdesac hinzufügen
 #: XXX vorgeschlagene Straßennamen: Bärbel-Bohley-Ring (großer Straßenring, C, D, E) und Lichtburgring (A, B); teilweise Privatstraßen, PLZ=13355 (fehlt in Berlin.coords.data)
-#: XXX Baustraße ist asphaltiert
+#: XXX Baustraße ist asphaltiert, vermutlich wird der Bereich verkehrsberuhigt sein
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7285
 #: by: http://www.dafmap.de/d/berlin.html?id=3694&mt=0&zoom=16 (Geplanter Projektabschluss: 2019-03-01)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_26_2933_3020_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="437684188" version="1"
-#: last_checked: 2017-07-14
+#: last_checked: 2017-09-21
 #: next_check: 2018-03-01
 Planstraßen 1.1 und 1.2	?::inwork 10004,15636 9898,15864 9746,15862
 # 
@@ -1946,10 +1949,7 @@ B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-#: by: fritz
-#: XXX bis 22.02.2019
-Luckenwalder Str.: Sperrung auch für Radfahrer relevant?	?::inwork; 8634,10426 8384,10507
-# 
+# REMOVED (Datum war falsch, und vermutlich nur die Messe) --- #: by: fritz --- #: XXX bis 22.02.2019 --- Luckenwalder Str.: Sperrung auch für Radfahrer relevant?	?::inwork; 8634,10426 8384,10507
 # REMOVED (Richtung NO über Gehweg umfahrbar, Richtung SW vermutlich über Trampelpfad) --- #: source_id: 2147341808 --- #: XXX laut fritz bis 12.10.2017 --- Späthstr.: Gegenverkehrsregelung	?::inwork 15174,5467 15038,5235 14988,5214
 # REMOVED (nur kleinere Einschränkungen in der Käthe-Kollwitz-Str. von der Greifswalder aus kommend) --- #: XXX laut fritz "bis auf weiteres" --- Bötzowstr./Käthe-Niederkirchner-Str.: Kreuzung gesperrt	?::inwork 12272,13920 12280,13880 12288,13836
 # REMOVED (Markierung in der Gegenrichtung --- für Fußgänger, für Radfahrer?) --- #: XXX laut fritz bis 23.10.2017, 18 Uhr --- Moritzstr.: Sperrung relevant für Radfahrer?	?::inwork; 10433,10456 10633,10369
@@ -1957,13 +1957,8 @@ Luckenwalder Str.: Sperrung auch für Radfahrer relevant?	?::inwork; 8634,10426 8
 Königsweg (Tegel): Zufahrt für Autos gesperrt?	? 2168,20585 2188,20600
 # 
 # REMOVED (zurzeit keine Einschränkungen) --- #: by: fritz (bis 10.11.2017) --- Cuvrystr.: Beeinträchtigungen für Radfahrer?	?::inwork 13249,10445 13197,10355 13151,10276
-# 
-#: XXX Dietzgenstraße (Niederschönhausen) stadteinwärts zwischen Schillerstraße und Blankenburger Straße (Berlin)  Gültig ab: 04.09.2017 06:00  Fahrtrichtung gesperrt, Gleisbauarbeiten, Umleitung ist ausgeschildert (bis Mitte Oktober)	2147341767
-#: XXX laut fritz bis 20.10.2017
-Dietzgenstr.: betreffen die Bauarbeiten auch Radfahrer?	?::inwork 10066,20494 10064,20437 10066,20323 10068,20188 10106,20093 10117,20065 10132,19993 10167,19797 10195,19703 10224,19628 10257,19542
-# 
-#: by: fritz (bis 20.10.2017)
-Schillerstr.: Sperrung wegen Bauarbeiten, auch für Radfahrer?	?::inwork 10705,20739 10635,20693 10537,20633 10409,20592 10309,20562 10178,20525 10066,20494
+# REMOVED (aufgenommen) --- : XXX Dietzgenstraße (Niederschönhausen) stadteinwärts zwischen Schillerstraße und Blankenburger Straße (Berlin)  Gültig ab: 04.09.2017 06:00  Fahrtrichtung gesperrt, Gleisbauarbeiten, Umleitung ist ausgeschildert (bis Mitte Oktober)	2147341767 --- #: XXX laut fritz bis 20.10.2017 --- Dietzgenstr.: betreffen die Bauarbeiten auch Radfahrer?	?::inwork 10066,20494 10064,20437 10066,20323 10068,20188 10106,20093 10117,20065 10132,19993 10167,19797 10195,19703 10224,19628 10257,19542
+# REMOVED (hier keine Bauarbeiten) --- #: by: fritz (bis 20.10.2017) --- Schillerstr.: Sperrung wegen Bauarbeiten, auch für Radfahrer?	?::inwork 10705,20739 10635,20693 10537,20633 10409,20592 10309,20562 10178,20525 10066,20494
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.625889.php
 #: next_check: 2018-04-01
@@ -1997,7 +1992,7 @@ Turmstr.: wird hier eine Änderung bei den Radwegen passieren?	? 5434,13398 5368,
 # REMOVED (teilweise, allerdings kann man u.U. (abends?) gut durchkommen) --- #: XXX Rosenthaler Str. (Mitte) in beiden Richtungen Höhe Einmündung Neue Schönhauser Str. (Berlin)  Gültig ab: 10.05.2017 13:53  Baustelle, Vollsperrung (bis Ende 07/17)	2147341279 --- #: XXX laut fritz bs 28.07.2017 --- Rosenthaler Str.: noch immer Bauarbeiten?	? 10317,13248 10310,13227
 # 
 #: next_check_id: RUEDERSDORFER-2017
-#: last_checked: 2017-09-20
+#: last_checked: 2017-09-21
 #: check_frequency: 7d
 Rüdersdorfer Str.: Bauarbeiten, die Qualität wird danach besser sein	?::inwork 13066,11854 13173,11788 13295,11792
 # 
@@ -2099,7 +2094,7 @@ An der Wuhlheide: ab wo genau fangen die Schutzstreifen Richtung Westen an?	? 21
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/15-11-2016_mehr-fahrradstrassen-fuer-pankow.pdf
 #: XXX unklar, ob auch die Route Dunckerstr. - Kollwitzstr. ebenso Fahrradstraße werden könnte
 #: osm_watch: way id="11114397" version="22"
-#: last_checked: 2017-09-05
+#: last_checked: 2017-09-21
 #: check_frequency: 30d
 Stargarder Str.: eventuell wird hier eine Fahrradstraße eingerichtet	? 10953,15787 11086,15772 11158,15739 11290,15669 11418,15587 11502,15527 11595,15460 11682,15397 11852,15281
 # 
@@ -2247,7 +2242,7 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7478
 #: XXX "noch 2016"
 #: osm_watch: note 824350 2
-#: last_checked: 2017-08-30
+#: last_checked: 2017-09-21
 #: check_frequency: 14d
 #: priority: #C
 Sebastian/Luckauer: Zebrastreifen in Bau	?::inwork 11113,10943 11109,10935
@@ -3171,7 +3166,7 @@ Lichterfelde Süd: neue Straßen im Zuge des Bebauungsplans 6-30?	?::projected 406
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6096.html
 #: by: http://www.berliner-woche.de/prenzlauer-berg/bauen/im-sommer-beginnen-die-bauarbeiten-fuer-den-stauraumkanal-unterm-mauerpark-d117861.html
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/artikel.601949.php (Fertigstellung 2019)
-#: last_checked: 2017-07-30
+#: last_checked: 2017-09-21
 #: next_check: 2018-06-01
 Mauerpark: Umbauarbeiten, gibt es schon Einschränkungen oder Veränderungen?	?::projected 9999,15594 10168,15624 10372,15028 10222,14969 9999,15594
 # 
@@ -3263,7 +3258,7 @@ Lilienweg (Potsdam): genaue Lage? Qualität?	? -18312,7674 -18395,7365
 #: XXX wo entsteht die geplante Fußgängerbrücke?
 #: XXX von der Straße "Kreuzgraben" existiert schon rechts und links ein Weg (wassergebundene Decke, unbeleuchtet), die letzten 70 Meter zur Dietzgenstr. fehlen noch
 #: osm_watch: way id="60184568" version="1"
-#: last_checked: 2017-08-06
+#: last_checked: 2017-09-21
 #: check_frequency: 120d
 Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093 10251,20218 10525,20392
 # 

@@ -13341,7 +13341,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_011081',
        data  => <<EOF,
-userdel	1::inwork 10742,19632 10439,19576 10377,19565 10331,19556 10257,19542
+userdel	1::inwork 10742,19632 10525,19592 10439,19576 10377,19565 10331,19556 10257,19542
 userdel	1::inwork 10624,19912 10742,19632
 EOF
      },
@@ -17364,7 +17364,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_011081',
        data  => <<EOF,
-userdel	q4::inwork; 10742,19632 10439,19576 10377,19565 10331,19556 10257,19542
+userdel	q4::inwork; 10742,19632 10525,19592 10439,19576 10377,19565 10331,19556 10257,19542
 userdel	q4::inwork; 10624,19912 10742,19632
 EOF
      },
@@ -26482,11 +26482,11 @@ EOF
      },
      { from  => 1504896268, # 2017-09-08 20:44
        until => 1508104799, # 2017-10-15 23:59
-       text  => 'Dietzgenstr.: Bauarbeiten ab Kuckhoffstr. Richtung Süden, auch Radfahrer sind betroffen, voraussichtlich bis MItte Oktober 2017',
+       text  => 'Dietzgenstr.: Bauarbeiten zwischen Schillerstr. und Kuckhoffstr., Fahrbahn Richtung Süden gesperrt, voraussichtlich bis Mitte Oktober 2017',
        type  => 'handicap',
        source_id => '2147341767',
        data  => <<EOF,
-userdel	q4::inwork; 10167,19797 10195,19703 10224,19628 10257,19542
+userdel	q3::inwork; 10066,20494 10064,20437 10066,20323 10068,20188 10106,20093 10117,20065 10132,19993 10167,19797
 EOF
      },
      { from  => undef, # 
@@ -26515,6 +26515,15 @@ EOF
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.629757.php',
        data  => <<EOF,
 userdel	q4::inwork; -2959,17507 -2517,17431
+EOF
+     },
+     { from  => 1504896268, # 2017-09-08 20:44
+       until => 1508104799, # 2017-10-15 23:59
+       text  => 'Dietzgenstr.: zwischen Kuckhoffstr. und Schillerstr. ist die Fahrbahn Richtung Norden für Radfahrer offiziell gesperrt, voraussichtlich bis Mitte Oktober 2017',
+       type  => 'handicap',
+       source_id => '2147341767',
+       data  => <<EOF,
+userdel	q3::inwork; 10167,19797 10132,19993 10117,20065 10106,20093 10068,20188 10066,20323 10064,20437 10066,20494
 EOF
      },
     );

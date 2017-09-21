@@ -30,7 +30,7 @@ Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::i
 #: last_checked: 2017-09-02
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2017-09-19
+#: last_checked: 2017-09-21
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 #: by: fritz
@@ -93,7 +93,7 @@ Bouchéstr.: Bauarbeiten an der Heidelberger Str.	q3::inwork 13489,9456 13357,931
 # 
 ### Mitte ###
 # 
-#: last_checked: 2017-09-02
+#: last_checked: 2017-09-21
 #: check_frequency: 21d
 Märkisches Ufer: Bauarbeiten, Engstelle	q3+::inwork 10687,11853 10869,11949
 # 
@@ -270,7 +270,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9898,12161 9883,12251
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0175-spandauer-strae-rathausstrae.html
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6145.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
-#: last_checked: 2017-09-12
+#: last_checked: 2017-09-21
 #: check_frequency: 14d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -460,8 +460,8 @@ Möllendorffstr.: Bauarbeiten, Radfahrer müssen auf die gegenüberliegende Seite w
 # 
 # REMOVED (-> wieder temp_blocking) --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml vvv --- #: source_id: IM_025877 vvv --- #: source_id: 2147339245 vvv --- #: source_id: 2147339553 vvv --- #: last_checked: 2017-06-28 vvv --- #: next_check: 2017-08-02 vvv --- Jülicher Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603 --- Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
 # 
-#: last_checked: 2017-08-30
-#: check_frequency: 14d
+#: last_checked: 2017-09-21
+#: check_frequency: 21d
 Fürstenberger Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 10320,14608 10472,14632
 # 
 ### Pankow ###
@@ -2587,6 +2587,8 @@ Johannesstift: Krankenhausgelände, Aufpflasterungen	q1 -3953,17941 -4108,17776 -
 (Christianstr. - Christophstr.): enger Pfad	q3 17964,16677 17952,16675 17925,16695
 (Birkbuschstr. - Berlinickestr.): Fußgänger	q2 4807,5131 4827,5140 4829,5173
 Mariannenplatz: einige Fußgänger, insbesondere vor dem Bethanienhaus	q2 11799,10848 11803,10857 11805,10899 11819,10942 11854,10972
+#: XXX_prog: BS an der Nordseite, aber auch ohne q4
+(Schloßpark - Blankenburger Str.): für Radfahrer offiziell verboten, Bordstein, kurze Rampe	q4 10569,19395 10578,19417 10525,19592
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
