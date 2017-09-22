@@ -3259,6 +3259,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: am Fr, den 2017-02-10 gegen 18:30: offen
 #: note: am Fr, den 2017-04-07 gegen 09:30: offen
 #: note: am Mo, den 2017-07-31 gegen 09:00: offen
+#: note: am Fr, den 2017-09-22 gegen 18:20: offen
 #: tempex: volatile vvv
 	3::night 14563,8243 14425,8116 14419,8112
 	3::night 14419,8112 14425,8116 14563,8243
@@ -3570,7 +3571,7 @@ userdel	q4::inwork 12911,1815 12940,1547
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-09-12 vvv
+#: last_checked: 2017-09-22 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -3705,7 +3706,7 @@ userdel	2::inwork 6815,8691 6912,8617
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2017-09-20
+         'data' => '#: last_checked: 2017-09-22
 userdel	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
          'from' => undef,
