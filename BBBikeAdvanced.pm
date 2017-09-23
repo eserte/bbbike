@@ -1136,11 +1136,9 @@ sub set_coord_interactive {
     }
 
     {
-	# combined:
-	# www.berliner-stadtplan.com, www.berlinonline.de
-
 	my $f = $t->Frame->pack(-anchor => "w", -fill => "x");
-	$f->Label(-text => M"Stadtplan-URL")->pack(-side => "left");
+	my $l = $f->Label(-text => M"Karten-URL")->pack(-side => "left");
+	$balloon->attach($l, -msg => M"z.B. OpenStreetMap, Google Maps ...");
 	my $url;
 	$f->Entry(-textvariable => \$url)->pack(-side => "left", -fill => "x", -expand => 1);
 	$f->Button
@@ -1189,69 +1187,67 @@ sub set_coord_interactive {
 sub parse_url_for_coords {
     my($url, %args) = @_;
     my $q = $args{quiet};
+    my $detect_ref = $args{detect_ref};
     my($x_ddd, $y_ddd); # polar/DDD
+    my $float_qr = qr{-?\d+\.\d+}; # hopefully the decimal point is always there
     my($x_s, $y_s); # BBBike coordinates
-    if (0 && $url =~ m{gps=(\d+)%7C(\d+)}) {
-	# XXX passt nicht ...
-	my($x, $y) = ($1, $2);
-	require Karte::Polar;
-	$x_ddd = 13 + $x/10000;
-	$y_ddd = 52 + $y/10000;
-	warn "$x $y $x_ddd $y_ddd";
-    } elsif ($url =~ m{x_wgs/(.*?)/y_wgs/(.*?)/}    || # berliner-stadtplan old
-	     $url =~ m{x_wgs=(.*?)[&;]y_wgs=([\.\d]+)}
-	    ) {
-	my($x, $y) = ($1, $2);
-	require Karte::Polar;
-	$x_ddd = Karte::Polar::dmm2ddd(13, $x);
-	$y_ddd = Karte::Polar::dmm2ddd(52, $y);
-    } elsif ($url =~ m{x_wgsv=([\d\.]+)&y_wgsv=([\d\.]+)}) { # berliner-stadtpan new (2007-07-24)
+    if      ($url =~ m{map=\d+/($float_qr)/($float_qr)}) { # e.g. http://www.openstreetmap.org/#map=19/52.53518/13.37355&layers=N
+	($y_ddd, $x_ddd) = ($1, $2);
+	$$detect_ref = 'openstreetmap' if $detect_ref;
+    } elsif ($url =~ m{mlat=($float_qr)&mlon=($float_qr)}) { # alternative OSM, e.g. https://www.openstreetmap.org/?mlat=52.46457&mlon=13.43595&zoom=17
+	($y_ddd, $x_ddd) = ($1, $2);
+	$$detect_ref = 'openstreetmap' if $detect_ref;
+    } elsif ($url =~ m{mlon=($float_qr)&mlat=($float_qr)}) { # same, just reversed
 	($x_ddd, $y_ddd) = ($1, $2);
-    } elsif ($url =~ m{/gps_x/(\d+),(\d+)/gps_y/(\d+),(\d+)}) { # berliner-stadtplan24 (ca. 2007-08-10)
-	($x_ddd, $y_ddd) = ($1.".".$2, $3.".".$4);
-    } elsif ($url =~ /ADR_ZIP=(\d+)&ADR_STREET=(.+?)&ADR_HOUSE=(.*)/) {
-	my($zip, $street, $hnr) = ($1, $2, $3);
-	local @INC = @INC;
-	push @INC, "$FindBin::RealBin/miscsrc";
-	require TelbuchDBApprox;
-	my $tb = TelbuchDBApprox->new(-approxhnr => 1);
-	my(@res) = $tb->search("$street $hnr", $zip);
-	if (!@res) {
-	    return if $q;
-	    status_message(M("Kein Ergebnis gefunden"), "die");
-	}
-	($x_s,$y_s) = split /,/, $res[0]->{Coord};
+	$$detect_ref = 'openstreetmap' if $detect_ref;
+    } elsif ($url =~ m{\@($float_qr),($float_qr),\d+z}) { # e.g. https://www.google.de/maps/@52.5068441,13.4247317,10z
+	($y_ddd, $x_ddd) = ($1, $2);
+	$$detect_ref = 'google' if $detect_ref;
+    } elsif ($url =~ /ADR_LOCATION=($float_qr)%2C($float_qr)/) { # e.g. https://www.berlin.de/stadtplan/?ADR_ZIP=10437&ADR_STREET=Dunckerstra%C3%9Fe&ADR_HOUSE=4&ADR_INFO=Dunckerstra%C3%9Fenfest&ADR_LOCATION=52.5411%2C13.4198
+	($y_ddd, $x_ddd) = ($1, $2);
+	$$detect_ref = 'berlin.de' if $detect_ref;
     } elsif ($url =~ /params=(\d+)_(\d+)_(?:([\d\.]+)_)?([NS])_(\d+)_(\d+)_(?:([\d\.]+)_)?([EW])/) { # wikipedia mapsources, deg min (sec)
 	$y_ddd = $1 + $2/60 + $3/3600;
 	$y_ddd *= -1 if $4 eq 'S';
 	$x_ddd = $5 + $6/60 + $7/3600;
 	$x_ddd *= -1 if $8 eq 'W';
+	$$detect_ref = 'wikipedia' if $detect_ref;
     } elsif ($url =~ /params=(\d+)\.(\d+)_([NS])_(\d+)\.(\d+)_([EW])/) { # wikipedia mapsources, decimal degrees
 	$y_ddd = sprintf "%s.%s", $1, $2;
 	$y_ddd *= -1 if $3 eq 'S';
 	$x_ddd = sprintf "%s.%s", $4, $5;
 	$x_ddd *= -1 if $6 eq 'W';
-    } elsif ($url =~ m{[\?&]ll=([0-9.]+),([0-9.]+)}) { # google maps
-	$x_ddd = $2;
-	$y_ddd = $1;
-    } elsif ($url =~ m{ll=([0-9.]+),([0-9.]+)}) {
-	$x_ddd = $2;
-	$y_ddd = $1;
-    } elsif ($url =~ /LL=%2B([0-9.]+)%2B([0-9.]+)/) {
-	$x_ddd = $2;
-	$y_ddd = $1;
-    } elsif ($url =~ /lat=([0-9.]+).*long?=([0-9.]+)/) { # e.g. goyellow.de
-	$x_ddd = $2;
-	$y_ddd = $1;
-    } elsif ($url =~ /long?=([0-9.]+).*lat=([0-9.]+)/) { # e.g. goyellow.de new
-	$x_ddd = $1;
-	$y_ddd = $2;
-    } elsif ($url =~ /cp=([0-9.]+)~([0-9.]+)&/) { # e.g. maps.live.com
-	$x_ddd = $2;
-	$y_ddd = $1;
-    } elsif ($url =~ /lt=([0-9.]+)&ln=([0-9.]+)/) { # e.g. www.panoramio.com
-	$x_ddd = $2;
-	$y_ddd = $1;
+	$$detect_ref = 'wikipedia' if $detect_ref;
+    } elsif ($url =~ m{map=($float_qr),($float_qr),\d+,}) { # e.g. https://wego.here.com/?map=52.51605,13.38419,15,normal
+	($y_ddd, $x_ddd) = ($1, $2);
+	$$detect_ref = 'here' if $detect_ref;
+    } elsif ($url =~ m{lat=($float_qr)&lon=($float_qr)}) { # Map Compare, e.g. https://mc.bbbike.org/mc/?mt0=google-hybrid&mt1=mapnik&num=2&lat=52.532291&lon=13.380783&zoom=16
+	($y_ddd, $x_ddd) = ($1, $2);
+	$$detect_ref = 'map compare' if $detect_ref;
+    } elsif ($url =~ m{lon=($float_qr)&lat=($float_qr)}) { # Map Compare, e.g. https://mc.bbbike.org/mc/?lon=13.383959&lat=52.534001&zoom=16&num=2&mt0=google-hybrid&mt1=mapnik&marker=
+	($x_ddd, $y_ddd) = ($1, $2);
+	$$detect_ref = 'map compare' if $detect_ref;
+    } elsif ($url =~ m{\d+/($float_qr)/($float_qr)$}) { # Pharus, e.g. http://m.deinplan.de/map.php#16/52.532291/13.380783
+	($y_ddd, $x_ddd) = ($1, $2);
+	$$detect_ref = 'pharus' if $detect_ref;
+    } elsif ($url =~ m{wgs84=($float_qr)%2C($float_qr)}) { # bbbike cgi URL with WGS84 coords, e.g. http://bbbike.de/cgi-bin/bbbike.cgi?zielname=Glasower+Str+27&zielc_wgs84=13.43561%2C52.46460
+	($x_ddd, $y_ddd) = ($1, $2);
+	$$detect_ref = 'bbbike cgi' if $detect_ref;
+    } elsif ($url =~ m{(?:start|ziel)c=(\d+)%2C(\d+)}) { # bbbike CGI URL, e.g. http://bbbike.de/cgi-bin/bbbike.cgi?zielname=Niederbarnimstr.;zielplz=10247;zielc=14045%2C11965;scope=
+	($x_s, $y_s) = ($1, $2);
+	$$detect_ref = 'bbbike cgi standard coordinates' if $detect_ref;
+    } elsif ($url =~ m{($float_qr).*?($float_qr)}) { # anything
+	my($first, $second) = ($1, $2);
+	# does it look like a coordinate in/near Berlin
+	if      ($first  >= 52 && $first  <= 53 &&
+		 $second >= 13 && $second <= 14) {
+	    ($y_ddd, $x_ddd) = ($first, $second);
+	    $$detect_ref = 'any lat/lon' if $detect_ref;
+	} elsif ($second >= 52 && $second <= 53 &&
+		 $first  >= 13 && $first  <= 14) {
+	    ($x_ddd, $y_ddd) = ($first, $second);
+	    $$detect_ref = 'any lon/lat' if $detect_ref;
+	}
     }
 
     if (defined $x_ddd && defined $y_ddd) {
@@ -1484,7 +1480,7 @@ EOF
 sub coord_to_markers_dialog {
     my(%args) = @_;
     my $t = redisplay_top($top, 'coord_to_markers_dialog',
-			  -title => M"Koordinaten aus Selection",
+			  -title => M"Koordinaten aus URL-Selection",
 			  -geometry => $args{-geometry},
 			 );
     return if !defined $t;
@@ -1537,10 +1533,14 @@ sub coord_to_markers_dialog {
 	     if (defined $s) {
 		 return if (defined $last_sel && $s eq $last_sel);
 		 $last_sel = $s;
-		 my $ret = parse_url_for_coords($s, quiet => 1);
+		 my $detected;
+		 my $ret = parse_url_for_coords($s, quiet => 1, detect_ref => \$detected);
 		 if ($ret) {
 		     push @marker_points, [[$ret->{x_s}, $ret->{y_s}]];
 		     $update_marker_points->();
+		     if ($verbose) {
+			 warn "Coordinates detected as $detected\n";
+		     }
 		 } else {
 		     if ($verbose && $verbose >= 2) {
 			 warn "Can't parse coords in url <$s>\n";
@@ -1711,7 +1711,7 @@ sub advanced_coord_menu {
 		   -command => \&set_coord_interactive);
     $bpcm->command(-label => M"Linienkoordinaten setzen",
 		   -command => \&set_line_coord_interactive);
-    $bpcm->command(-label => M"Koordinaten aus Selection",
+    $bpcm->command(-label => M"Koordinaten aus URL-Selection",
 		   -command => \&coord_to_markers_dialog);
     $bpcm->separator;
     $bpcm->command(-label => M"Koordinatenliste zeigen",
