@@ -3941,7 +3941,7 @@ userdel	2::inwork 4117,22722 4176,22764
        {
          'data' => '#: next_check_id: MINNATODENHAGENSTR-2016
 #: XXX siehe auch handicap_s-orig-Eintrag
-#: last_checked: 2017-09-19
+#: last_checked: 2017-09-23
 userdel	2::inwork 17681,7589 17676,7555
 ',
          'from' => undef,
@@ -4010,6 +4010,16 @@ userdel	q4::inwork -1869,19974 -1806,19806 -1794,19681 -1788,19663
          'text' => 'Dietzgenstr.: zwischen Kuckhoffstr. und Schillerstr. ist die Fahrbahn Richtung Norden für Radfahrer offiziell gesperrt, voraussichtlich bis Mitte Oktober 2017',
          'type' => 'handicap',
          'until' => 1508104799
+       },
+       {
+         'data' => '#: last_checked: 2017-09-23
+userdel	2::inwork 16268,9670 16182,9591
+',
+         'from' => undef,
+         'id' => 2910,
+         'text' => 'Bolleufer - Zur Alten Flussbadeanstalt: an der Hafenküche wegen Bauarbeiten gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

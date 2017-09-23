@@ -3,7 +3,7 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
-Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3 14254,11377 14211,11229
+Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 Lange Str.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 12409,11902 12238,11931
@@ -1513,6 +1513,7 @@ Torfstraﬂensteg: einige Fuﬂg‰nger	q1 6847,14735 6824,14821
 (westlicher Wuhlewanderweg - ˆstlicher Wuhlewanderweg): Fuﬂg‰nger	q1 22347,13858 22389,13824 22426,13735 22445,13720 22457,13713
 Darguner Str.: enge Straﬂe	q1 17566,18680 17635,18591
 Giselhersteig: enger Weg	q2 17355,12460 17386,12456 17438,12448 17491,12439 17534,12433
+(R¸digerstr. - Nibelungenring): enger Weg	q3 17441,12245 17444,12286 17442,12292
 (Giselhersteig - Nibelungenring): enger Weg	q3 17386,12456 17382,12421
 (Giselhersteig - Hadburgpfad): enger Weg	q3 17491,12439 17486,12407
 (Zufahrt zum Stadtbad Tiergarten): Parkplatzverkehr	q2 7332,13367 7306,13418
@@ -1672,6 +1673,9 @@ Johannesstift: Krankenhausgel‰nde, Aufpflasterungen	q1 -3953,17941 -4108,17776 -
 (Birkbuschstr. - Berlinickestr.): Fuﬂg‰nger	q2 4807,5131 4827,5140 4829,5173
 Mariannenplatz: einige Fuﬂg‰nger, insbesondere vor dem Bethanienhaus	q2 11799,10848 11803,10857 11805,10899 11819,10942 11854,10972
 (Schloﬂpark - Blankenburger Str.): f¸r Radfahrer offiziell verboten, Bordstein, kurze Rampe	q4 10569,19395 10578,19417 10525,19592
+(Schnellerstr. - Uferstr.): Fuﬂg‰nger, besonders zu Gesch‰ftszeiten	q2 17628,5865 17678,5916
+(Schnellerstr. - Uferstr.): Parkplatzverkehr, besonders zu Gesch‰ftszeiten	q1 17678,5916 17843,6083
+an den Gew‰chsh‰usern: kurvig	q2 17659,12823 17638,12813 17637,12785
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Sch¸ler	q2 7242,8586 7288,8635

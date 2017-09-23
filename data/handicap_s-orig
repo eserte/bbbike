@@ -21,10 +21,10 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2017-09-20
-Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3 14254,11377 14211,11229
+#: last_checked: 2017-09-23
+Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
-#: last_checked: 2017-09-20
+#: last_checked: 2017-09-23
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 #: last_checked: 2017-09-02
@@ -422,7 +422,7 @@ Wattstr.: Bauzäune	q3::inwork 17681,7589 17676,7555
 #: XXX laut fritz Vollsperrung bis 30. November 2017
 #: XXX laut vmz Bauarbeiten bis Ende 2017
 #: XXX Möllendorffstraße (Lichtenberg) in beiden Richtungen zwischen Am Containerbahnhof und Frankfurter Allee (Berlin)  Gültig ab: 04.09.2017 08:00  Vollsperrung, Fahrbahnsanierung (bis Ende 09/17)	2147341771
-#: last_checked: 2017-09-10
+#: last_checked: 2017-09-23
 Möllendorffstr.: Bauarbeiten, Radfahrer müssen auf die gegenüberliegende Seite wechseln	q4::inwork; 15420,12178 15361,12071
 # 
 # REMOVED #: next_check_id: HAUPTSTR-2015 --- #: source_id: 2147339565 --- #: source_id: LMS-BR_r_LMS-BR_65986 --- #: source_id: 2147340080 --- #: XXX laut vmz bis Ende August 2016, laut fritz bis 31.07.2016 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1604/nachricht5997.html --- #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.470764.php --- #: last_checked: 2016-08-25 --- #: next_check: 2016-08-29 --- Kynaststr./Hauptstr.: Bauarbeiten, Gehweg benutzen	q3::inwork 14882,10732 14906,10820
@@ -2270,7 +2270,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="5"
-#: last_checked: 2017-08-08
+#: last_checked: 2017-09-23
 #: check_frequency: 90d
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
@@ -2379,6 +2379,7 @@ Torfstraßensteg: einige Fußgänger	q1 6847,14735 6824,14821
 (westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): Fußgänger	q1 22347,13858 22389,13824 22426,13735 22445,13720 22457,13713
 Darguner Str.: enge Straße	q1+ 17566,18680 17635,18591
 Giselhersteig: enger Weg	q2 17355,12460 17386,12456 17438,12448 17491,12439 17534,12433
+(Rüdigerstr. - Nibelungenring): enger Weg	q3 17441,12245 17444,12286 17442,12292
 (Giselhersteig - Nibelungenring): enger Weg	q3 17386,12456 17382,12421
 (Giselhersteig - Hadburgpfad): enger Weg	q3 17491,12439 17486,12407
 (Zufahrt zum Stadtbad Tiergarten): Parkplatzverkehr	q2 7332,13367 7306,13418
@@ -2582,6 +2583,9 @@ Johannesstift: Krankenhausgelände, Aufpflasterungen	q1 -3953,17941 -4108,17776 -
 Mariannenplatz: einige Fußgänger, insbesondere vor dem Bethanienhaus	q2 11799,10848 11803,10857 11805,10899 11819,10942 11854,10972
 #: XXX_prog: BS an der Nordseite, aber auch ohne q4
 (Schloßpark - Blankenburger Str.): für Radfahrer offiziell verboten, Bordstein, kurze Rampe	q4 10569,19395 10578,19417 10525,19592
+(Schnellerstr. - Uferstr.): Fußgänger, besonders zu Geschäftszeiten	q2 17628,5865 17678,5916
+(Schnellerstr. - Uferstr.): Parkplatzverkehr, besonders zu Geschäftszeiten	q1 17678,5916 17843,6083
+an den Gewächshäusern: kurvig	q2 17659,12823 17638,12813 17637,12785
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

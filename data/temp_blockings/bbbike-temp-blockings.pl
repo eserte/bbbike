@@ -26468,7 +26468,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: MINNATODENHAGENSTR-2016
 #: XXX siehe auch handicap_s-orig-Eintrag
-#: last_checked: 2017-09-19
+#: last_checked: 2017-09-23
 userdel	2::inwork 17681,7589 17676,7555
 EOF
      },
@@ -26525,6 +26525,15 @@ EOF
        source_id => '2147341767',
        data  => <<EOF,
 userdel	q3::inwork; 10167,19797 10132,19993 10117,20065 10106,20093 10068,20188 10066,20323 10064,20437 10066,20494
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Bolleufer - Zur Alten Flussbadeanstalt: an der Hafenküche wegen Bauarbeiten gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: last_checked: 2017-09-23
+userdel	2::inwork 16268,9670 16182,9591
 EOF
      },
     );

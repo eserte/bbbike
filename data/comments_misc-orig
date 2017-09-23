@@ -351,7 +351,7 @@ Bus 296, Bus 396	busroute_N 18731,8577 18787,8540 18846,8616 18778,8663 18737,86
 Bus 240, Bus 296	busroute_N 17169,11677 17020,11748 16977,11769 16958,11778
 Bus 194, ...	busroute_N 17848,11204 17807,11219 17725,11228 17719,11092
 # REMOVED (Linie wurde eingestellt) --- Bus 193	busroute_N 16859,12613 16957,12599 17088,12617 17234,12607 17301,12585 17357,12566 17346,12490 17314,12265 17375,12255 17466,12241 17300,12173 17195,12125 17139,12100 17092,12107 16994,12122 16890,12135
-Bus 256	busroute_N 16820,12339 16794,12144 16764,11919 16837,11920 16865,11931 16975,12000 17088,12069 17092,12107 17139,12100 17195,12125 17300,12173 17466,12241 17533,12222
+Bus 256	busroute_N 16820,12339 16794,12144 16764,11919 16837,11920 16865,11931 16975,12000 17088,12069 17092,12107 17139,12100 17195,12125 17300,12173 17466,12241 17480,12237 17533,12222
 # REMOVED (veränderte Linienführung) --- Bus 256	busroute_N 16865,11931 16890,12135 16794,12144
 Bus 240	busroute_N 16863,13138 16426,13145 15912,13153 15715,13157 15515,13134
 Bus 256	busroute_N 16430,15168 16522,15258 16618,15356 16686,15448 16767,15549 16811,15611 16884,15833
@@ -1117,7 +1117,7 @@ Im Brachfeldwinkel: ausgeschildert zum "Schwedenhaus"	CP2; 3068,21150 3024,21286
 # REMOVED (mittlerweile existiert ein Straßenschild) --- Altes Gaswerk Mariendorf: ausgeschildert "Marienpark" und "Kaiser's"	CP2; 8295,4303 8266,4221
 # REMOVED (mittlerweile existieren Staßenschilder) --- #: XXX sind die Straßen mittlerweile ausgeschildert? vvv --- Altes Gaswerk Mariendorf: ausgeschildert "Marienpark"	CP2; 8461,3410 8404,3648 --- Im Marienpark: nicht ausgeschildert	CP2; 8404,3648 8346,3633
 Str. 156: nicht ausgeschildert	CP2; 17532,15645 17570,15658
-#: last_checked: 2017-09-19
+#: last_checked: 2017-09-23
 #: check_frequency: 60d
 Wasserstr. und Uferstr.: noch nicht ausgeschildert	CS 17483,6024 17681,6212 17843,6083
 #: by: Max Mütze
@@ -1180,7 +1180,7 @@ Goldlärchenweg: nicht ausgeschildert	CS -6385,6185 -6437,6221 -6495,6131
 #: XXX Es wird ein anderer Name: "Zur Ontarioseestr."
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/57re.pdf/file
 # REMOVED (hier wird keine Änderung mehr erwartet) --- : osm_watch: way id="25796640" version="13"
-#: last_checked: 2017-08-17
+#: last_checked: 2017-09-23
 #: check_frequency: 60d
 Zur Ontarioseestr.: nicht ausgeschildert	CS 18585,10024 18694,10018
 Rampe zum Zollpackhof	CS; 7945,12878 7907,12817
@@ -1194,3 +1194,5 @@ Malevkeweg: nicht ausgeschildert	CS 24878,10861 24875,10919
 (Welzower Steig - Senftenberger Ring): entlang des Packereigrabens	CS 6525,21630 6625,21600 6753,21542
 (Gundelfinger Str. - Römerweg): Treskow-Höfe	CS 18735,9421 18738,9467 18754,9584 18772,9694
 (Aristotelessteig - Treskowallee): Treskow-Höfe	CS 18715,9589 18754,9584 18835,9572 18865,9608
+entlang an Gewächshäusern	CS 17659,12823 17638,12813 17637,12785 17507,12781
+ausgeschildert als Rüdigerstr. 65+65 A-E	CP2; 17441,12245 17444,12286

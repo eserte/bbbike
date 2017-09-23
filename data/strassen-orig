@@ -1875,7 +1875,7 @@ Frankfurter Allee [Nebenfahrbahn]	NN 16535,11920 16512,11894
 (zur Pablo-Neruda-Bibliothek)	N 14020,12261 14008,12181
 Gudrunstr.	N 17466,12241 17300,12173 17195,12125 17139,12100 17088,12069 16975,12000 16865,11931
 (Kolonie Friedrichsfelde Nord)	NN 17785,12257 17832,12244 18135,12246 18142,12260 18180,12262 18216,12262
-(Am Städtischen Zentralfriedhof)	N 17785,12257 17749,12239 17533,12222 17466,12241
+(Am Städtischen Zentralfriedhof)	N 17785,12257 17749,12239 17533,12222 17480,12237 17466,12241
 (Gudrunstr. - Lichtenberger Brücke)	NN 16837,11920 16833,11897 16818,11878 16803,11859
 (Lichtenberger Brücke - Weitlingstr.)	NN 17037,11820 17026,11810 16958,11778
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz)	NN 17013,11849 16998,11861 16988,11865
@@ -2535,7 +2535,7 @@ Herzbergstr. [Wohngebiet]	N 15851,13511 15896,13512
 (Krankenhaus Herzberge)	NN 17438,13525 17247,13519 17232,13518
 (Krankenhaus Herzberge Rondell - Herzbergstr.)	NN 17479,13490 17479,13434
 (Krankenhaus Herzberge - Landschaftspark Herzberge)	N 17479,13434 17482,13316 17484,13257
-(Krankenhaus Herzberge - Landschaftspark Herzberge)	NN 17484,13257 17487,13198 17490,13133 17489,13125 17498,13015
+(Krankenhaus Herzberge - Landschaftspark Herzberge)	NN 17484,13257 17487,13198 17490,13133 17489,13125 17498,13015 17507,12781
 #: note: im Landschaftspark Herzberge vvv
 (Radweg Landschaftspark Herzberge)	NN 17201,13519 17200,13530 17187,13609 17167,13655 17111,13792 17098,13969 17117,14036 17152,14084 17196,14120 17236,14140 17266,14144
 #: note: möglicher Name: "Rohrdammweg" (by: http://www.landschaftspark-herzberge.de/uploads/tx_userbildgalerie/Luftbild.jpg)
@@ -2548,14 +2548,15 @@ Herzbergstr. [Wohngebiet]	N 15851,13511 15896,13512
 (Diagonalverbindung im Landschaftspark Herzberge)	NN 17689,13405 17670,13378 17638,13363 17590,13317 17562,13255 17487,13198
 #: note: ^^^
 (Siegfriedstr. - Gotlindestr.)	NN 17227,13075 17267,13067
+(Am Städtischen Zentralfriedhof - Landschaftspark Herzberge)	NN 17480,12237 17524,12313 17585,12539 17580,12625 17548,12703 17507,12760 17507,12781
 (Landschaftspark Herzberge)	NN 17267,13067 17300,13061 17331,13010 17498,13015 17674,13022
-(Landschaftspark Herzberge)	NN 17631,12791 17640,12823 17659,12828 17658,12925 17672,12949 17674,13022 17671,13132
+(Landschaftspark Herzberge)	NN 17507,12781 17637,12785 17638,12813 17659,12823 17662,12918 17679,12933 17674,13022 17671,13132
 (Landschaftspark Herzberge)	NN 17300,13061 17300,13118 17489,13125 17671,13132 17684,13133 17698,13134
 (Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.)	NN 17698,13124 17739,13146 17871,13145 17906,13141 17978,13328 18054,13477 18094,13505
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5116&options=4 (Forderung eines Lückenschlusses, auch zur Siegfriedstr. -> wird aber erst einmal nicht realisiert)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6766
 #: XXX hier sind Bauarbeiten zugange, teilweise existieren schon neue Verbundsteinpflasterwege
-#: last_checked: 2017-08-27
+#: last_checked: 2017-09-23
 (Landschaftspark Herzberge - Arendsweg/Zufahrt IKEA)	NN 17266,14144 17287,14152 17323,14154 17330,14163
 (Landschaftspark Herzberge, Weg am ehemaligen Zeltlager)	NN 17187,13609 17185,13765 17204,13800 17209,13856 17178,13896 17190,13903 17213,13931 17210,14054 17164,14067 17152,14084
 (Siegfriedstr. [Autowaschcenter] - Landschaftspark Herzberge)	NN 17110,14187 17224,14151 17236,14140
@@ -5410,7 +5411,7 @@ Stubenrauchstr. (Rudow, Johannisthal)	H 17490,3630 17388,3576 17364,3565 17253,3
 Karlshorster Str. (Niederschöneweide)	H 17160,6239 17231,6179 17293,6230 17432,6352
 Siemensstr. (Oberschöneweide)	H 17432,6352 17492,6462 17528,6502 17614,6571 17766,6616 17842,6639 17860,6644 17962,6674
 Wattstr. (Oberschöneweide)	NN 17681,7589 17676,7555
-Wattstr. (Oberschöneweide)	N 17676,7555 17670,7512 17647,7280
+Wattstr. (Oberschöneweide)	N 17676,7555 17669,7515 17647,7280
 Wattstr. (Oberschöneweide)	N 17620,7259 17644,7219 17632,6930 17652,6828 17766,6616
 # REMOVED (möglicherweise dauerhaft gesperrt) --- (Wattstr./Siemensstr. - Wilhelminenhofstr.)	N 17766,6616 17801,6554 17800,6504
 # REMOVED (existiert nicht mehr, hier wird schon die Minna-Todenhagen-Str. gebaut) --- Grenzweg (Oberschöneweide)	N 17681,7589 17575,7519 17445,7434
@@ -5557,7 +5558,7 @@ Alt-Friedrichsfelde [Nebenfahrbahn]	NN 18216,11656 18285,11637
 Alt-Friedrichsfelde [Nebenfahrbahn]	N 18285,11637 18329,11654 18381,11655 18519,11662
 Alt-Friedrichsfelde [Wohngebiet]	N 17742,11636 17887,11625 17931,11656 18137,11645 18158,11631
 Alt-Friedrichsfelde [Wohngebiet]	N 18317,11734 18382,11740 18461,11767 18600,11814 18716,11810 18717,11821 18717,11835 18719,11903
-Alt-Friedrichsfelde [Wohngebiet]	N 18717,11821 18696,11823 18571,11826 18456,11786 18461,11767
+Alt-Friedrichsfelde [Wohngebiet]	N 18717,11821 18574,11833 18525,11806 18453,11804 18461,11767
 Alt-Friedrichsfelde [Wohngebiet]	N 18717,11835 18730,11834 18896,11824
 (Alt-Friedrichsfelde - Gensinger Str.)	NN 18717,11821 18825,11816 18896,11824 18910,11826 19048,11815 19138,11815
 Köpitzer Str.	N 18272,11552 18390,11597 18381,11655
@@ -5609,7 +5610,7 @@ Zur Alten Börse	N 18736,13080 18712,12853 18682,12599 18649,12371 18647,12354
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036827265989/827265989/00127185/85-Anlagen/02/Koggebrunnen.pdf
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2016
 #: XXX: ist der Weg während der Bauarbeiten noch passierbar?
-#: last_checked: 2017-07-29
+#: last_checked: 2017-09-23
 #: check_frequency: 60d
 (Marzahner Chaussee - Gensinger Str.)	NN 18702,11921 18888,11910 18913,11909
 # 
@@ -5960,7 +5961,7 @@ Nalepastr.	N 17047,7619 17050,7687 17052,7738 17059,8097 17056,8159 17057,8235 1
 Schwarzer Weg (Oberschöneweide)	N 17299,8140 17299,8108 17301,7754 17301,7645 17296,7401 17295,7358
 # REMOVED (geänderte Straßenführung) --- Schwarzer Weg (Oberschöneweide)	N 17295,7358 17295,7344 17295,7328
 Schwarzer Weg (Oberschöneweide)	N 17295,7328 17297,7196 17286,7173
-(Schwarzer Weg - Wattstr.)	N 17295,7328 17477,7450 17568,7481 17670,7512
+(Schwarzer Weg - Wattstr.)	N 17295,7328 17475,7451 17566,7485 17669,7515
 (Oberspree, Weg 1)	NN 17190,7306 17296,7401
 (Wilhelmstrand, Weg 1)	NN 17059,8097 17299,8108
 #: oldname: -20100201: Weg 7
@@ -5974,7 +5975,7 @@ Fritz-König-Weg	N 17527,7812 17301,7754 17050,7687
 Minna-Todenhagen-Str.	H 17681,7589 17585,7525 17453,7451 17295,7344 17211,7280 17091,7175 16971,7058 16747,6813
 #: next_check_id: MINNATODENHAGENSTR-2016
 #: XXX entfernen, sobald die eigentliche Straße offen ist
-#: last_checked: 2017-09-19
+#: last_checked: 2017-09-23
 #: check_frequency: 60d
 (Gehweg an der zukünftigen Minna-Todenhagen-Str.)	NN 17681,7589 17470,7473 17295,7358
 Rummelsburger Landstr.	H 17105,8666 17143,8565 17202,8391 17299,8140 17527,7812 17619,7679 17681,7589
@@ -6015,6 +6016,15 @@ Lehndorffstr.	N 18407,8592 18322,8470 18221,8328 18215,8316 18269,8161 18333,805
 Edisonstr.	H 18010,7133 17934,7029 17919,6978 17919,6968 17962,6674 17991,6431 17952,6246 17930,6175
 Wasserstr. (Niederschöneweide)	N 17483,6024 17681,6212
 Uferstr. (Niederschöneweide)	N 17681,6212 17843,6083
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788
+#: XXX ist das die vorgeschlagene "Else-Schierhorn-Str."? vvv
+#: last_checked: 2017-09-23 vvv
+#: check_frequency: 90d vvv
+(Schnellerstr. - Uferstr.)	NN 17628,5865 17678,5916
+(Schnellerstr. - Uferstr.)	N 17678,5916 17843,6083
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
 Brückenstr. (Niederschöneweide)	H 17930,6175 17900,6072 17728,5756
 An der Wuhlheide	H 18010,7133 18225,7004 18404,6946 18492,6893 18771,6699 18948,6578 19245,6379 19276,6359 19405,6276 19578,6165 19594,6155 19759,6049 19958,5950 20057,5923 20173,5892 20352,5877 20428,5841 20536,5789 20755,5750 20880,5736 21002,5755 21303,5826 21365,5832 21470,5809 21522,5771 21569,5730
 (An der Wuhlheide - Uferweg)	NN 21002,5755 21054,5666 21059,5596 21002,5594
@@ -6084,7 +6094,7 @@ Köpenicker Allee	N 20226,7846 20096,8077 19990,8253 19898,8410 19819,8554 19699,
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6985
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_31_3489_3616_online.pdf (Benennung)
 #: osm_watch: way id="24845022" version="16"
-#: last_checked: 2017-08-27
+#: last_checked: 2017-09-23
 #: check_frequency: 45d
 Straße am Heizhaus	N 19699,8773 19755,8806 19816,8842 19891,8887 19949,8920 19972,8935 19984,8944 20059,8951 20150,8962 20220,8976
 #: note: Tempo-10-Zone vvv
@@ -10028,11 +10038,11 @@ Silberweidenweg	N 16376,12874 16377,12791
 Bidenswinkel	N 16242,12878 16242,12814 16255,12769
 Rhododendronweg	N 16146,12881 16148,12772 16200,12771 16197,12880
 Philosophenweg	N 16073,12883 16074,12778
-Rüdigerstr. (Lichtenberg)	N 17466,12241 17314,12265 17218,12281 17184,12288 17122,12295 17056,12304 17020,12309 16918,12325 16820,12339
+Rüdigerstr. (Lichtenberg)	N 17466,12241 17441,12245 17314,12265 17218,12281 17184,12286 17122,12295 17056,12304 17020,12309 16918,12325 16820,12339
 Rüdigerstr. (Lichtenberg)	H 16820,12339 16685,12358 16583,12371 16485,12384 16397,12397
 Rüdigerstr. (Lichtenberg)	N 16397,12397 16259,12419 16147,12434 16080,12441
 Plonzstr.	N 16227,12280 16259,12419 16266,12478 16279,12575 16284,12616
-Dankwartstr.	N 17184,12288 17210,12486
+Dankwartstr.	N 17184,12286 17210,12486
 Schottstr.	N 16409,12612 16397,12397
 Schottstr.	H 16397,12397 16276,12273 16255,12224
 Fanningerstr.	N 16255,12224 16359,12207 16456,12191 16556,12180 16657,12165 16794,12144 16890,12135 16994,12122 17092,12107 17139,12100
@@ -10836,9 +10846,9 @@ Hauffstr.	NN 15620,11210 15694,11125 15740,11028
 Hauffstr.	N 15740,11028 15756,10966
 #: note: zweiter Punkt ist nur ein "Hilfspunkt" "gegen" 3nocross
 Richard-Kolkwitz-Weg	N 18703,9997 18708,10000 18715,10003 18773,10028
-Richard-Kolkwitz-Weg	NN 18773,10028 19116,10173 19675,10410 19711,10426 19921,10499
+Richard-Kolkwitz-Weg	NN 18773,10028 19124,10175 19675,10410 19711,10426 19921,10499
 Richard-Kolkwitz-Weg	N 19921,10499 19959,10443
-Ursula-Goetze-Str.	N 19100,9811 19116,10173
+Ursula-Goetze-Str.	N 19100,9811 19112,9993 19124,10175
 Schackelsterstr.	N 19959,10443 20215,10554 20294,10585 20362,10611 20523,10686 20681,10772 20843,10878 21032,11033
 Schackelsterstr. [48 50 52]	N 20294,10585 20319,10555 20335,10487
 Arnsberger Str.	N 20522,9852 20527,9961 20529,10056 20536,10233 20542,10439 20546,10615 20540,10652 20523,10686
@@ -13660,7 +13670,8 @@ Keffenbrinkweg	N 8308,2629 8252,2614 8225,2620 8179,2630 8102,2647 8013,2667 792
 Klüberstr.	N 7923,2688 7943,2834
 Dregerhoffstr.	N 22904,2675 23028,2706 23177,2742 23291,2774 23416,2808 23541,2841 23643,2860 23777,2887 23908,2912 23991,2941 24032,2964 24071,2990
 Firlstr.	N 18473,6265 18574,6401 18645,6511 18640,6542
-Firlstr.	N 18624,6520 18640,6542 18674,6589 18697,6605 18771,6699
+Firlstr.	N 18624,6520 18640,6542 18674,6589 18700,6604 18771,6699
+Firlstr.	N 18645,6511 18674,6515 18710,6567 18700,6604
 Plönzeile	N 18574,6401 18676,6333 18767,6268 18859,6198 18970,6110
 Sprengelstr. (Wedding)	N 6739,14969 6945,15045 7131,15109 7303,15173
 Sparrstr.	N 7432,14969 7397,15036 7303,15173
@@ -15905,7 +15916,7 @@ Clara-Wieck-Str.	N 7103,11247 7171,11510
 Hiroshimastr.	N 7356,11517 7253,11208
 (zum Hiroshimasteg)	NN 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188
 Hiroshimasteg	NN 7252,11188 7248,11143
-Zeppelinstr. (Oberschöneweide)	N 18697,6605 18417,6775 18240,6845 18041,6924 17919,6968
+Zeppelinstr. (Oberschöneweide)	N 18700,6604 18417,6775 18240,6845 18041,6924 17919,6968
 Triniusstr. (Oberschöneweide)	N 18273,6606 18339,6660 18417,6775 18492,6893
 Fontanestr. (Oberschöneweide)	N 18225,7004 18240,6845 18254,6679 18273,6606
 Roedernstr. (Oberschöneweide)	N 18010,7133 18041,6924 18069,6753 18076,6693 18079,6678
@@ -17861,6 +17872,7 @@ Gotlindestr.	N 15947,12626 16000,12625 16071,12623 16112,12622 16132,12621 16284
 #: note: blaue Straßenschilder vvv
 Nibelungenring	N 17320,12308 17359,12302 17442,12292 17454,12348
 Nibelungenring	N 17466,12346 17479,12408 17433,12414 17382,12421 17376,12422 17337,12428
+(Rüdigerstr. - Nibelungenring)	NN 17441,12245 17444,12286 17442,12292
 Rumoldstr.	N 17368,12365 17454,12348 17466,12346 17526,12336
 Hadburgpfad	N 17479,12408 17486,12407 17531,12401
 Alzeyweg	N 17376,12422 17368,12365 17359,12302
