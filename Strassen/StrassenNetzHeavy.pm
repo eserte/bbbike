@@ -856,6 +856,7 @@ sub load_user_deletions {
 # -del_token?
 # -type: handicap or oneway or gesperrt (check!)
 # -addinfo: add addinfo bit to category
+# -name: record name, set to empty string if undefined
 ### AutoLoad Sub
 sub create_user_deletions_object {
     my $net = shift;
@@ -877,6 +878,7 @@ sub create_user_deletions_object {
     if (defined $args{-type} && $args{-type} eq 'handicap-q4-oneway') {
 	$cat .= ";"; # direction correction 
     }
+    my $name = defined $args{-name} ? $args{-name} : '';
 
     my $s = Strassen->new;
     my %set;
@@ -885,7 +887,7 @@ sub create_user_deletions_object {
 	while(my($k2,$v2) = each %$v1) {
 	    if (!exists $set{$k1}->{$k2} &&
 		!exists $set{$k2}->{$k1}) {
-		$s->push(["userdel", [$k1,$k2], $cat]);
+		$s->push([$name, [$k1,$k2], $cat]);
 		$set{$k1}->{$k2}++;
 	    }
 	}

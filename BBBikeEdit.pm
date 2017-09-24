@@ -4518,7 +4518,7 @@ sub add_cross_road_blockings {
     while(my($p1,$v) = each %cross_road_blockings) {
 	while(my($p,$v2) = each %$v) {
 	    while(my($p2) = each %$v2) {
-		$add_userdels->push(["userdel auto", [$p1, $p, $p2], "3"]);
+		$add_userdels->push(['', [$p1, $p, $p2], "3"]);
 	    }
 	}
     }
