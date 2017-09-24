@@ -15,10 +15,10 @@ package BBBikeBuildUtil;
 
 use strict;
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 use Exporter 'import';
-@EXPORT_OK = qw(get_pmake);
+@EXPORT_OK = qw(get_pmake module_path);
 
 use BBBikeUtil qw(is_in_path);
 
@@ -31,6 +31,24 @@ sub get_pmake () {
      : "pmake"                                                   # self-compiled BSD make, maybe
     );
 }
+
+# REPO BEGIN
+# REPO NAME module_path /home/eserte/src/srezic-repository 
+# REPO MD5 ac5f3ce48a524d09d92085d12ae26e8c
+sub module_path {
+    my($filename) = @_;
+    $filename =~ s{::}{/}g;
+    $filename .= ".pm";
+    foreach my $prefix (@INC) {
+	my $realfilename = "$prefix/$filename";
+	if (-r $realfilename) {
+	    return $realfilename;
+	}
+    }
+    return undef;
+}
+# REPO END
+
 
 1;
 
