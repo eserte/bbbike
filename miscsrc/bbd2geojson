@@ -26,6 +26,47 @@ GetOptions(
 my $file = shift || usage();
 my $s = Strassen->new($file);
 my $s_geojson = Strassen::GeoJSON->new($s);
-print "// generated with bbd2geojson (from BBBike distribution)\n";
+print "// generated with bbd2geojson from BBBike distribution, see\n";
+print "// https://github.com/eserte/bbbike/blob/master/miscsrc/bbd2geojson\n";
 print $s_geojson->bbd2geojson(bbbgeojsonp => $bbbgeojsonp, pretty => !$compact, utf8 => $compact);
 print "\n";
+
+__END__
+
+=head1 NAME
+
+bbd2geojson - convert BBD files to GeoJSON files
+
+=head1 SYNOPSIS
+
+    bbd2geojson [-compact] [-bbbgeojsonp] bbdfile > output.geo.json
+
+=head1 DESCRIPTION
+
+Create a GeoJSON file from a BBBike data file (bbd). Options:
+
+=over
+
+=item C<-compact>
+
+Create somewhat smaller output: don't create a "pretty" json,
+resulting in a one-line (and diff-unfriendly) file, and use utf-8
+encoding instead of javascript escape sequences (which are usually
+some bytes longer).
+
+=item C<-bbbgeojsonp>
+
+Create a JSONP-like file. For details, see L<Strassen::GeoJSON/JSONP
+support>.
+
+=back
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<Strassen::GeoJSON>.
+
+=cut
