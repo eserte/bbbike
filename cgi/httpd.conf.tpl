@@ -1,3 +1,8 @@
+[%  IF ALLOW_UNSAFE_HTTP -%]
+    # XXX needed because of Http.pm < 4.06, which may still access the webserver
+    HttpProtocolOptions Unsafe
+
+[%  END -%]
 [%  IF    LOCATION_STYLE == "bbbike";
         SET CGI_ROOT_URL = ROOT_URL _ "/cgi";
     ELSIF LOCATION_STYLE == "vhost";
