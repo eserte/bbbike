@@ -23,7 +23,7 @@ WriteMakefile(
 	'DB_File'             => 0, # Caching, Sessionhandling etc.
 	'MLDBM'               => 0,
 	'List::Permutor'      => 0, # Für das Problem des Handlungsreisenden (langsamerer Permutor)
-	'PDF::Create'         => 0.06, # Erzeugung der Route als PDF-Dokument
+	'PDF::Create'         => 1.43, # Erzeugung der Route als PDF-Dokument
 	'Win32::API'          => 0, # Für das Ermitteln der verfügbaren Desktop-Größe
 	'Win32::Registry'     => 0,
 	'Win32::Shortcut'     => 0,

@@ -55,7 +55,7 @@ MLDBM
 
 List::Permutor	- Für das Problem des Handlungsreisenden (langsamerer Permutor)
 
-PDF::Create 0.06	- Erzeugung der Route als PDF-Dokument
+PDF::Create 1.43	- Erzeugung der Route als PDF-Dokument
 
 Win32::API	- Für das Ermitteln der verfügbaren Desktop-Größe
 
