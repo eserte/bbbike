@@ -22,6 +22,12 @@ WARN: PDF::Create $PDF::Create::VERSION --- possibly problematic, see
       https://rt.cpan.org/Ticket/Display.html?id=119292
       Better to upgrade to at least 1.41
 EOF
+    } elsif ($PDF::Create::VERSION == 1.42) {
+	warn <<EOF;
+WARN: PDF::Create $PDF::Create::VERSION --- possibly problematic, see
+      https://rt.cpan.org/Ticket/Display.html?id=123076
+      Better to upgrade to at least 1.43
+EOF
     }
 }
 use PDF::Create::MyPage; # additional methods, for older PDF::Create
@@ -43,7 +49,7 @@ BEGIN { @colors =
 }
 use vars @colors;
 
-$VERSION = '2.56';
+$VERSION = '2.57';
 
 sub init {
     my $self = shift;
