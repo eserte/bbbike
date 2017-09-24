@@ -228,7 +228,7 @@ sub usage {
 # ImageMagick support is experimental and incomplete anyway, so do not
 # depend on this
 if (!eval { require Image::Magick; 1 }) {
-    for my $module_def (find_matching_mods qr{^MapServer}) {
+    for my $module_def (find_matching_mods qr{^ImageMagick}) {
 	$module_def->{skip} = 'Skipped because Image::Magick not available, do not test ImageMagick-related drawtypes...';
     }
 }
