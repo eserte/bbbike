@@ -122,3 +122,52 @@ EOF
     my $s_file2 = Strassen::GeoJSON->new($tmpfile);
     is_deeply $s_file2->data, $expected_data, 'geojson via Strassen::GeoJSON->new';
 }
+
+{
+    my $test_combine_data = <<"EOF";
+#: map: polar
+#:
+Waypoint 1\tX 13.4,52.5
+Waypoint 2\tX 13.5,52.6
+Waypoint 1 again\tX 13.4,52.5
+EOF
+    my $s = Strassen->new_from_data_string($test_combine_data);
+    my $s_geojson = Strassen::GeoJSON->new($s);
+    my $geojson = $s->bbd2geojson(combine => 1);
+    is $geojson, <<'EOF', 'combine=>1';
+{
+   "features" : [
+      {
+         "geometry" : {
+            "coordinates" : [
+               "13.4",
+               "52.5"
+            ],
+            "type" : "Point"
+         },
+         "properties" : {
+            "cat" : "X",
+            "name" : "Waypoint 1<br/>\nWaypoint 1 again"
+         },
+         "type" : "Feature"
+      },
+      {
+         "geometry" : {
+            "coordinates" : [
+               "13.5",
+               "52.6"
+            ],
+            "type" : "Point"
+         },
+         "properties" : {
+            "cat" : "X",
+            "name" : "Waypoint 2"
+         },
+         "type" : "Feature"
+      }
+   ],
+   "type" : "FeatureCollection"
+}
+EOF
+
+}

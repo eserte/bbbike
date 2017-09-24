@@ -17,9 +17,11 @@ EOF
 }
 
 my $compact;
+my $combine;
 my $bbbgeojsonp;
 GetOptions(
 	   "compact!"     => \$compact,
+	   "combine!"     => \$combine,
 	   "bbbgeojsonp!" => \$bbbgeojsonp,
 	  ) or usage();
 
@@ -28,7 +30,7 @@ my $s = Strassen->new($file);
 my $s_geojson = Strassen::GeoJSON->new($s);
 print "// generated with bbd2geojson from BBBike distribution, see\n";
 print "// https://github.com/eserte/bbbike/blob/master/miscsrc/bbd2geojson\n";
-print $s_geojson->bbd2geojson(bbbgeojsonp => $bbbgeojsonp, pretty => !$compact, utf8 => $compact);
+print $s_geojson->bbd2geojson(bbbgeojsonp => $bbbgeojsonp, pretty => !$compact, utf8 => $compact, combine => $combine);
 print "\n";
 
 __END__
@@ -39,7 +41,7 @@ bbd2geojson - convert BBD files to GeoJSON files
 
 =head1 SYNOPSIS
 
-    bbd2geojson [-compact] [-bbbgeojsonp] bbdfile > output.geo.json
+    bbd2geojson [-compact] [-combine] [-bbbgeojsonp] bbdfile > output.geo.json
 
 =head1 DESCRIPTION
 
@@ -53,6 +55,11 @@ Create somewhat smaller output: don't create a "pretty" json,
 resulting in a one-line (and diff-unfriendly) file, and use utf-8
 encoding instead of javascript escape sequences (which are usually
 some bytes longer).
+
+=item C<-combine>
+
+Combine features with same coordinates into a single feature, joining
+the names (separated with a HTML C<< <br/> >>).
 
 =item C<-bbbgeojsonp>
 

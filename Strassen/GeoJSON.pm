@@ -151,6 +151,7 @@ sub bbd2geojson {
     my $pretty = exists $args{pretty} ? $args{pretty} : 1;
     my $utf8   = exists $args{utf8}   ? $args{utf8}   : 1;
     my $bbbgeojsonp = $args{bbbgeojsonp};
+    my $combine = $args{combine};
 
     my $xy2longlat = \&xy2longlat;
     my $map = $self->get_global_directive("map");
@@ -159,9 +160,10 @@ sub bbd2geojson {
     }
 
     my @features;
+    my %coordstring_to_feature;
 
     $self->init;
-    while(1) {
+ BBD_RECORD: while(1) {
 	my $r = $self->next;
 	my @c = @{ $r->[Strassen::COORDS] };
 	last if !@c;
@@ -177,6 +179,15 @@ sub bbd2geojson {
 			: { type => 'Point',      coordinates => [$xy2longlat->($c[0])] }
 		       );
 
+	my $coordstring;
+	if ($combine) {
+	    $coordstring = join(" ", @c);
+	    if (my $old_feature = $coordstring_to_feature{$coordstring}) {
+		$old_feature->{properties}->{name} .= "<br/>\n$name";
+		next BBD_RECORD;
+	    }
+	}
+
 	my $feature = {
 		       type => 'Feature',
 		       geometry => $geometry,
@@ -186,6 +197,10 @@ sub bbd2geojson {
 				     }
 		      };
 	push @features, $feature;
+
+	if ($combine) {
+	    $coordstring_to_feature{$coordstring} = $feature;
+	}
     }
 
     my $to_serialize;
