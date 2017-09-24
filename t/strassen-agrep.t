@@ -35,8 +35,8 @@ Weiﬂenseer Weg	X 1,1
 EOF
 
 my @search_types = (
-		    ($^O ne 'MSWin32' ? "agrep" : ()), # usually no agrep available on Windows systems
-		    (is_in_path('tre-agrep') ? 'tre-agrep' : ()),
+		    ($^O ne 'MSWin32' && $^O ne 'darwin' ? "agrep" : ()), # usually no agrep available on Windows systems; also no (original) agrep on darwin
+		    (is_in_path('tre-agrep') ? 'tre-agrep' : ()), # XXX tre-agrep is available on darwin through the homebrew package tre as "agrep", but correct detection is missing in the module
 		    "String::Approx",
 		    "perl",
 		   );
