@@ -23,6 +23,7 @@ BEGIN {
 }
 
 use BBBikeVar;
+use BBBikeBuildUtil qw(module_path);
 
 my $action;
 GetOptions('action=s' => \$action)
@@ -385,6 +386,21 @@ if ($make_bundle) {
     exit make_psgi_bundle()    if $make_bundle eq 'psgi';
     exit make_windist_bundle() if $make_bundle eq 'windist';
     die "Should not happen: unhandled value <$make_bundle>";
+}
+
+# Fixup PREREQ_PM versions (*after* Bundle creation)
+{
+    my $pdf_create_modpath = module_path('PDF::Create');
+    if ($pdf_create_modpath) {
+	my $pdf_create_version = MM->parse_version($pdf_create_modpath);
+	if (
+	    ($pdf_create_version >= 1.36 && $pdf_create_version < 1.41) ||
+	     $pdf_create_version == 1.42
+	   ) {
+	    $prereq{'PDF::Create'} = 1.43;
+	    warn "INFO: PDF::Create $pdf_create_version problematic, increase prereq version to $prereq{'PDF::Create'}.\n";
+	}
+    }
 }
 
 my $fileref = ExtUtils::Manifest::maniread();
@@ -770,4 +786,3 @@ sub MY::postamble {
     }
     $bbbike_makefile_admin;
 }
-
