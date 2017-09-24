@@ -1,4 +1,4 @@
-[%  IF ALLOW_UNSAFE_HTTP -%]
+[%  IF ALLOW_UNSAFE_HTTP && APACHE_VERSION >= 2.4 -%]
     # XXX needed because of Http.pm < 4.06, which may still access the webserver
     HttpProtocolOptions Unsafe
 
