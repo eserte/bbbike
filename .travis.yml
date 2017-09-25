@@ -32,6 +32,10 @@ matrix:
     - perl: "5.14"
       env: USE_MODPERL=1 USE_SYSTEM_PERL=1
       dist: precise
+## Also fast
+    - perl: "5.18"
+      env: USE_MODPERL=1 USE_SYSTEM_PERL=1
+      dist: trusty
 ## Perl with no dot in @INC
     - perl: "5.26"
       env: BBBIKE_TEST_SKIP_MODPERL=1 BBBIKE_TEST_GUI=1
@@ -55,8 +59,4 @@ matrix:
   allow_failures:
 ## XXX because of problems with cgi-mechanize* tests
     - perl: "5.20-shrplib"
-      dist: trusty
-## XXX various failures: wwwdata.t, sometimes server-check.t
-    - perl: "5.14"
-      env: USE_MODPERL=1 USE_SYSTEM_PERL=1
       dist: trusty
