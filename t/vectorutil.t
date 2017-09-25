@@ -24,7 +24,7 @@ use Getopt::Long;
 use BBBikeTest qw(is_float);
 use Strassen::Util qw();
 
-plan tests => 31;
+plan tests => 32;
 
 my $do_bench;
 my $do_xxx;
@@ -164,7 +164,7 @@ goto XXX if $do_xxx;
     test_offset_line(\@coordlist, 3, \@expected_coordlist_hin, \@expected_coordlist_rueck, 'offset_line, with 90°/right polyline');
 }
 
-XXX: {
+{
     my @coordlist                = (0,0, 100,0, 0,0);
     my @expected_coordlist_hin   = (0,3, 100,3, 103,0, 100,-3, 0,-3);
     my @expected_coordlist_rueck = (0,-3, 100,-3, 103,0, 100,3, 0,3);
@@ -176,6 +176,13 @@ XXX: {
     my @expected_coordlist_hin   = (0,-3, -100,-3, -103,0, -100,3, 0,3);
     my @expected_coordlist_rueck = (0,3, -100,3, -103,0, -100,-3, 0,-3);
     test_offset_line(\@coordlist, 3, \@expected_coordlist_hin, \@expected_coordlist_rueck, 'offset_line, with 180° polyline');
+}
+
+XXX: {
+    my @coordlist                = (0,50, 100,50, 0,51);
+    my @expected_coordlist_hin   = (0,53, 100,53, 103,49.99, 99.97,47, -0.03,48);
+    my @expected_coordlist_rueck = (0,47, 100,47, 103,49.99, 100.03,53, 0.03,54);
+    test_offset_line(\@coordlist, 3, \@expected_coordlist_hin, \@expected_coordlist_rueck, 'offset_line, with 150°<angle<180° polyline');
 }
 
 is triangle_area([0,0],[2,0],[2,1]), 1;

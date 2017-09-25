@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2001,2004,2008,2010,2011,2014,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2001,2004,2008,2010,2011,2014,2016,2017 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package VectorUtil;
 
 use strict;
 use vars qw($VERSION $VERBOSE @ISA @EXPORT_OK);
-$VERSION = 1.25;
+$VERSION = 1.26;
 
 require Exporter;
 @ISA = 'Exporter';
@@ -475,7 +475,11 @@ sub offset_line {
 	};
 
 	if ($do_calc_right) {
-	    if ($angle < 0) {
+	    if ($angle > 3*pi()/4) { # getting closer to 180°, the offsetting tends to create a point far away ... so fallback to this method
+		push @offset_pnts_right, ($offset_position->(-3/2*pi, $delta),
+					  $offset_position->($half_angle + 3/2*pi, $delta),
+					  $offset_position->($half_angle*2 - 3/2*pi, $delta));
+	    } elsif ($angle < 0) {
 		push @offset_pnts_right, ($offset_position->(-3/2*pi, $delta),
 					  $offset_position->($half_angle - 3/2*pi, $delta),
 					  $offset_position->($half_angle*2 - 3/2*pi, $delta));
