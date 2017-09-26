@@ -49,6 +49,7 @@ $(HTTPD_CONF): httpd.conf.tpl Makefile
 	      --define OS_STYLE="$(OS_STYLE)" \
 	      --define FS_STYLE="$(FS_STYLE)" \
 	      --define APACHE_VERSION="$(APACHE_VERSION)" \
+	      --define ALLOW_UNSAFE_HTTP=1 \
 	      httpd.conf.tpl > $(HTTPD_CONF)~
 	chmod 644 $(HTTPD_CONF)~
 	mv $(HTTPD_CONF)~ $(HTTPD_CONF)
