@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2009,2012,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2009,2012,2015,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package Route::Simplify;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.09;
+$VERSION = 1.10;
 
 use GPS::Util qw(eliminate_umlauts);
 
@@ -302,7 +302,7 @@ sub Route::simplify_for_gps {
 	    while($level <= 3) {
 		# XXX the "+" character is not supported by all Garmin devices
 		$short_crossing = join("+", map { s/\s+\(.*\)\s*$//; Strasse::short($_, $level, "nodot") } grep { defined } @cross_streets);
-		if ($waypointcharset ne 'latin1') {
+		if ($waypointcharset !~ m{latin1}) {
 		    $short_crossing = Route::Simplify::_eliminate_umlauts_and_shorten($short_crossing);
 		}
 		$cmptwpt->set_name($short_crossing);
