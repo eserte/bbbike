@@ -21,10 +21,10 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2017-09-23
+#: last_checked: 2017-09-26
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
-#: last_checked: 2017-09-23
+#: last_checked: 2017-09-26
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 #: last_checked: 2017-09-02
@@ -86,9 +86,7 @@ Palisadenstr.: Bauarbeiten, teilweise Einbahnstraße, offen Richtung Osten	q2::in
 # 
 #: XXX laut Schild gehen die Bauarbeiten bis 10.2017
 #: XXX nach Beendigung der Bauarbeiten wieder den alten handicap-Eintrag ("Bodenschwellen") aktivieren
-#: last_checked: 2017-09-22
-#: next_check: 2017-10-01
-#: valid: -20171001
+#: last_checked: 2017-09-26
 Bouchéstr.: Bauarbeiten an der Heidelberger Str.	q3::inwork 13489,9456 13357,9313
 # 
 ### Mitte ###
@@ -115,7 +113,7 @@ Jägerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q3::inwork 93
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: XXX Richtung Westen eigentlich wg. Einbahnstraße gesperrt, aber man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen; Richtung Osten manchmal (werktags?) ein Schild "Durchfahrt verboten"
-#: last_checked: 2017-09-10
+#: last_checked: 2017-09-25
 Voltairestr.: Baustellenverkehr	q2 11329,12497 11209,12430
 # 
 #: next_check_id: ZIEGELSTR-2016
@@ -305,10 +303,14 @@ Mariannenplatz: Bauarbeiten, Fahrbahn teilweise gesperrt	q2::inwork 11841,10747 
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: XXX laut fritz bis "auf weiteres", Einbahnstraße --- effektiv ist aber die gesamte Fahrbahn gesperrt
+#: XXX laut fritz bis 30.11.2017
 #: XXX ändert sich an der Fahrbahnbeschaffenheit etwas?
-#: last_checked: 2017-09-22
+#: last_checked: 2017-09-26 vvv
+#: next_check: 2017-11-30 vvv
+Böckhstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11673,9720 11640,9710
 Böckhstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 11640,9710 11411,9810
+#: next_check ^^^
+#: last_checked ^^^
 # 
 # REMOVED (man kommt mittlerweile durch) --- #: source_id: 2147341140 --- #: XXX laut fritz bis 31.10.2017, laut vmz bis Ende Oktober 2017 --- #: last_checked: 2017-07-31 --- #: next_check: 2017-10-31 --- #: valid: -20171031 --- Erkelenzdamm: Bauarbeiten zwischen Böcklerstr. und Kohlfurter Str., Fahrbahn gesperrt, Bordsteine	q3::inwork 10967,10092 11038,10247 11094,10261
 # 
@@ -376,7 +378,7 @@ Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5894,12480 5944,12
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 7d vvv --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12761,9190 12851,9309 12844,9351 --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12907,9073 12761,9190 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4952&mt=0&zoom=17
-#: last_checked: 2017-09-22
+#: last_checked: 2017-09-26
 #: next_check: 2018-06-01
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 
@@ -414,7 +416,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süde
 #: next_check_id: MINNATODENHAGENSTR-2016
 #: XXX siehe auch bbbike-temp-blockings-Eintrag
 #: XXX Bordsteinabsenkung existiert am Anfang des Wendehammers
-#: last_checked: 2017-08-27
+#: last_checked: 2017-09-23
 Wattstr.: Bauzäune	q3::inwork 17681,7589 17676,7555
 # 
 #: next_check_id: MOELLENDORFFSTR-2017
@@ -422,6 +424,7 @@ Wattstr.: Bauzäune	q3::inwork 17681,7589 17676,7555
 #: XXX laut fritz Vollsperrung bis 30. November 2017
 #: XXX laut vmz Bauarbeiten bis Ende 2017
 #: XXX Möllendorffstraße (Lichtenberg) in beiden Richtungen zwischen Am Containerbahnhof und Frankfurter Allee (Berlin)  Gültig ab: 04.09.2017 08:00  Vollsperrung, Fahrbahnsanierung (bis Ende 09/17)	2147341771
+#: source_id: 2147341771
 #: last_checked: 2017-09-23
 Möllendorffstr.: Bauarbeiten, Radfahrer müssen auf die gegenüberliegende Seite wechseln	q4::inwork; 15420,12178 15361,12071
 # 
@@ -3138,11 +3141,13 @@ Bruno-Apitz-Str.: viele Fußgänger	q1 16329,24865 16304,24825
 #: by: ^^^
 # 
 #: by: Karsten [AM]
+#: XXX prüfen, wie eng die Straße tatsächlich ist
 Scherenbergstr.: enge Straße	q2 11307,15995 11358,16067 11404,16140 11467,16238 11542,16384
 #: by: Peter Friede [AM]
 #: confirmed_by: srt
 Lupsteiner Weg: eng durch parkende KfZ	q1 264,227 379,245 489,296 521,332 518,360 505,490 489,587 428,656 395,711 403,764 444,806 737,891
 #: by: Christine Ziegler [AM]
+#: XXX prüfen, wie eng die Straße tatsächlich ist
 Gertraudstr.: enge Straße	q2 202,1688 173,1715 79,1992
 #: by: christel lehmann [AM] vvv
 Wittenberger Str. (Einkaufzentrum): Fußgänger	q3 21614,17823 21647,17889 21719,18017 21751,18079

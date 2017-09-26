@@ -674,7 +674,7 @@ EOF
        text  => 'Flottwellstr. (Tiergarten) in beiden Richtungen zwischen Lützowstraße und Am Karlsbad Verkehrsbehinderung durch Absenkung der Fahrbahn, Straße vollständig gesperrt',
        type  => 'handicap',
       data  => <<EOF,
-	q4 8199,10634 8281,10791
+	q4 8199,10634 8287,10786
 EOF
      },
      { from  => 1092520800, # 2004-08-15 00:00
@@ -8296,7 +8296,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005532',
        data  => <<EOF,
-	1::inwork 8336,10829 8300,10823 8281,10791 8199,10634
+	1::inwork 8328,10831 8304,10816 8287,10786 8199,10634
 EOF
      },
      { from  => 1180476000, # 2007-05-30 00:00
@@ -8736,7 +8736,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005532',
        data  => <<EOF,
-	1::inwork 8336,10829 8300,10823 8281,10791 8199,10634
+	1::inwork 8328,10831 8304,10816 8287,10786 8199,10634
 EOF
      },
      { from  => 1181772000, # 2007-06-14 00:00
@@ -17867,6 +17867,7 @@ EOF
 (Weg parallel zum Tempelhofer Damm)	2::night  9300,7312 9281,7651 9281,7795
 (Eingang Peter-Strasser-Weg)	2::night 9281,7795 9240,7811
 (Nördliche Landebahn - Eingang Peter-Strasser-Weg)	2::night 9362,7616 9281,7651
+(Rundkurs auf dem Flughafen Tempelhof - Eingang Peter-Strasser-Weg)	2::night 9619,7930 9482,7827 9372,7798
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Peter-Strasser-Weg)	2::night 9562,7796 9372,7798 9281,7795
 (Südliche Landebahn)	2::night 9461,7190 9509,7195 9677,7206 11332,7305 11518,7314 11555,7314 11593,7314
 (Südliche Landebahn - Rundkurs)	2::night 11332,7305 11438,7371 11460,7447
@@ -20800,12 +20801,12 @@ EOF
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130529.1525.385421.html (Eröffnung am 1. Juni)
 	2::inwork 8309,10368 8278,10384 8296,10438 8328,10585 8332,10637 8341,10721
 	2::inwork 8328,10585 8270,10613
-	2::inwork 8336,10829 8318,10738 8270,10613 8264,10460 8257,10440 8237,10418 8192,10354 8180,10282 8145,10090
+	2::inwork 8328,10831 8318,10738 8270,10613 8264,10460 8257,10440 8237,10418 8192,10354 8180,10282 8145,10090
 	2::inwork 8278,10384 8263,10349 8258,10338 8249,10313 8253,10265 8263,10187 8276,10079 8211,10083 8145,10090 8042,10084 8027,10074 8013,10055 8011,10085 8013,10055 8011,10085
 	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
 	2::inwork 8270,10613 8236,10623 8199,10634
 	2::inwork 8159,10430 8199,10424 8237,10418 8278,10384
-	2::inwork 8341,10721 8357,10764 8362,10779
+	2::inwork 8341,10721 8350,10774 8358,10782
 #: next_check ^^^
 #: last_checked ^^^
 EOF
@@ -22094,7 +22095,7 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: tempex: night vvv
-	2::night 17490,13133 17489,13125
+	2::night 17490,13133 17491,13125
 	2::night 17671,13132 17684,13133
 #: tempex ^^^
 EOF
@@ -24891,7 +24892,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.396336.php',
        data  => <<EOF,
 #: source_id: 2147339576
-	q4::inwork; 8336,10829 8300,10823 8281,10791 8199,10634
+	q4::inwork; 8328,10831 8304,10816 8287,10786 8199,10634
 EOF
      },
      { from  => 1446332400, # 2015-11-01 00:00
@@ -26016,8 +26017,9 @@ EOF
        text  => 'Akazienstr.: Bauarbeiten im Kreuzungsbereich Belziger Str., Einbahnstraßenregelung',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2017-08-28
-#: check_frequency: 14d
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: last_checked: 2017-09-26
+#: check_frequency: 5d
 	q3::inwork; 7201,8870 7107,9030 7035,9161
 EOF
      },
@@ -26117,8 +26119,7 @@ EOF
        data  => <<EOF,
 #: XXX Baumaßnahme ist Ende 2018 fertig; Vollsperrung nur für 2-3 Wochen
 #: XXX wird es vielleicht Änderungen bei der Wegbeschaffenheit geben?
-#: last_checked: 2017-08-28 (der Eingangsbereich ist zurzeit gesperrt, Umgehung existiert)
-#: next_check: 2017-09-15
+#: last_checked: 2017-09-26 (der Eingangsbereich ist zurzeit gesperrt, Umgehung existiert)
 	2::inwork 6815,8691 6912,8617
 EOF
      },
@@ -26127,7 +26128,7 @@ EOF
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-09-22
+#: last_checked: 2017-09-26
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },
@@ -26492,10 +26493,10 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Alt-Stralau - Spreeufer: Verbindung gesperrt, Ende unbekannt',
+       text  => 'Alt-Stralau - Spreeufer: Verbindung wegen Baustelle gesperrt, Ende unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-09-11
+#: last_checked: 2017-09-26
 	2::inwork 14652,10201 14569,10055
 EOF
      },

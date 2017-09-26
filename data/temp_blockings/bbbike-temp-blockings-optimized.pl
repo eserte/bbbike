@@ -2302,6 +2302,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
 (Weg parallel zum Tempelhofer Damm)	2::night  9300,7312 9281,7651 9281,7795
 (Eingang Peter-Strasser-Weg)	2::night 9281,7795 9240,7811
 (Nördliche Landebahn - Eingang Peter-Strasser-Weg)	2::night 9362,7616 9281,7651
+(Rundkurs auf dem Flughafen Tempelhof - Eingang Peter-Strasser-Weg)	2::night 9619,7930 9482,7827 9372,7798
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Peter-Strasser-Weg)	2::night 9562,7796 9372,7798 9281,7795
 (Südliche Landebahn)	2::night 9461,7190 9509,7195 9677,7206 11332,7305 11518,7314 11555,7314 11593,7314
 (Südliche Landebahn - Rundkurs)	2::night 11332,7305 11438,7371 11460,7447
@@ -2722,45 +2723,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: 20160922T0600-T20160926T0600 vvv
-	2::temp 8573,12325 8540,12420
-	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	2::temp 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-	2::temp 8119,12414 8055,12186
-	2::temp 8538,12245 8522,12239 8466,12197
-	2::temp 8538,12245 8522,12187
-	2::temp 8546,12279 8391,12389 8354,12416
-	2::temp 8119,12414 8354,12416 8400,12417 8540,12420
-	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
-	3 7429,12070 7383,12095 7031,12320
-	3 7031,12320 7383,12095 7429,12070
-	3 7823,12120 7816,12150 7822,12201 7875,12363
-	3 7875,12363 7822,12201 7816,12150 7823,12120
-	2::temp 8119,12414 8122,12603 8207,12606 8306,12609 8348,12609 8399,12610 8485,12612
-	2::temp 8207,12606 8206,12757
-	3 7945,12592 8122,12603 8120,12756
-	3 8120,12756 8122,12603 7945,12592
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-#: tempex ^^^
-',
-         'from' => 1505880000,
-         'id' => 2388,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              19,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, voraussichtlich bis 25.09.2017',
-         'type' => 'gesperrt',
-         'until' => 1506312000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3035,7 +2998,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
        undef,
        {
          'data' => '#: tempex: night vvv
-	2::night 17490,13133 17489,13125
+	2::night 17490,13133 17491,13125
 	2::night 17671,13132 17684,13133
 #: tempex ^^^
 ',
@@ -3652,8 +3615,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: last_checked: 2017-08-28
-#: check_frequency: 14d
+         'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: last_checked: 2017-09-26
+#: check_frequency: 5d
 	q3::inwork; 7201,8870 7107,9030 7035,9161
 ',
          'from' => undef,
@@ -3694,8 +3658,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX Baumaßnahme ist Ende 2018 fertig; Vollsperrung nur für 2-3 Wochen
 #: XXX wird es vielleicht Änderungen bei der Wegbeschaffenheit geben?
-#: last_checked: 2017-08-28 (der Eingangsbereich ist zurzeit gesperrt, Umgehung existiert)
-#: next_check: 2017-09-15
+#: last_checked: 2017-09-26 (der Eingangsbereich ist zurzeit gesperrt, Umgehung existiert)
 	2::inwork 6815,8691 6912,8617
 ',
          'from' => 1498214515,
@@ -3706,7 +3669,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2017-09-22
+         'data' => '#: last_checked: 2017-09-26
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
          'from' => undef,
@@ -3950,16 +3913,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '	q3::inwork; 14926,12129 14887,11929
-',
-         'from' => 1504719478,
-         'id' => 2904,
-         'source_id' => '2147341770',
-         'text' => 'Weichselstr.: Einbahnstraßenregelung während der Bauarbeiten an der Kreuzung Frankfurter Allee/Möllendorffstr., voraussichtlich bis zum 24. September 2017',
-         'type' => 'handicap',
-         'until' => 1506290399
-       },
+       undef,
        {
          'data' => '	q3::inwork; 10066,20494 10064,20437 10066,20323 10068,20188 10106,20093 10117,20065 10132,19993 10167,19797
 ',
@@ -3971,12 +3925,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1508104799
        },
        {
-         'data' => '#: last_checked: 2017-09-11
+         'data' => '#: last_checked: 2017-09-26
 	2::inwork 14652,10201 14569,10055
 ',
          'from' => undef,
          'id' => 2906,
-         'text' => 'Alt-Stralau - Spreeufer: Verbindung gesperrt, Ende unbekannt',
+         'text' => 'Alt-Stralau - Spreeufer: Verbindung wegen Baustelle gesperrt, Ende unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
