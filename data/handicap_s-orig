@@ -30,14 +30,10 @@ Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::i
 #: last_checked: 2017-09-02
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2017-09-21
+#: last_checked: 2017-09-27
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
-#: by: fritz
-#: last_checked: 2017-09-12
-#: next_check: 2017-09-27
-#: valid: -20170927
-Krautstr.: Fahrbahn abschnittsweise gesperrt, Ausweichen auf Gehweg notwendig	q3::inwork 11963,11813 11966,11832 11993,11978
+# REMOVED --- #: by: fritz --- #: last_checked: 2017-09-12 --- #: next_check: 2017-09-27 --- #: valid: -20170927 --- Krautstr.: Fahrbahn abschnittsweise gesperrt, Ausweichen auf Gehweg notwendig	q3::inwork 11963,11813 11966,11832 11993,11978
 # 
 #: last_checked: 2017-09-16
 #: next_check: 2017-10-16
@@ -2831,7 +2827,7 @@ Herschelstr.: enge Wohnstraße	q1 3200,13277 3239,13461 3262,13547 3280,13625
 #: corrected_by: srt (Radweg zwischen Fußweg und Spielplatz -> ...)
 Togostr.: teilweise recht enger Radweg	q1 6244,16096 6104,16223
 #: by: vanfisch@...:
-Konradinstr.: eng	q1 8575,5202 8557,5226 8674,5357 8872,5484 8887,5564
+Konradinstr.: eng	q1 8575,5202 8556,5234 8632,5331 8674,5357 8872,5484 8887,5564
 #: by: Stefan Wietstock:
 #: note: "für Radfahrer freigegeben" von Holger Gaul:
 (Livländische Str. - Schoelerpark): Fußgänger, für Radfahrer freigegeben	q1 5170,8449 5212,8602

@@ -113,7 +113,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: source_id: 2147340884
 #: source_id: 2147340970
 #: source_id: LMS-BR_r_LMS-BR_90638
-#: last_checked: 2017-09-26 vvv
+#: last_checked: 2017-09-27 vvv
 #: check_frequency: 21d vvv
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected; 9865,10227 9948,10280 9873,10285
@@ -251,7 +251,7 @@ Kladower Damm: Radpuren in Arbeit	?::inwork; -4819,7833 -4578,8336
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-11-24_prot-fahrratsitzung4.pdf ("Entwurfsplanung liegt vor" + "Schwierigkeiten")
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-03-16-prot-fahrratsitzung.pdf
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-06-13-prot-fahrratsitzung.pdf (Verzögerungen)
-#: last_checked: 2017-08-07
+#: last_checked: 2017-09-27
 #: next_check: 2018-03-01
 Schöneberger Str.: Radspuren bis 2015 geplant	?::projected 8739,6701 8653,6781 8496,6919 8460,6959 8414,6995 8319,7084
 # 
@@ -343,6 +343,7 @@ Munsterdamm: bei der Fahrbahnsanierung entstehen Radspuren	?::projected 6651,484
 Barbarossaplatz: Sperrung für den Autoverkehr geplant	?::projected 6747,9531 6731,9559 6733,9560
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-06-13-prot-fahrratsitzung.pdf
+#: last_checked: 2017-09-27
 #: next_check: 2018-06-01
 Alt-Tempelhof: Radverkehrsanlage	?::projected 8739,6701 8787,6660 8848,6642 8949,6644
 # 
@@ -378,7 +379,7 @@ Marienfelder Allee: Projektplanung für Schutzstreifen	?::projected 8579,2265 855
 #: source_id:LMS-BR_r_LMS-BR_93889
 #: source_id: 2147341183
 #: XXX Ende laut rbbtext: 19. April, laut fritz: 22. April (beide: in Höhe Bayernring), laut vmz: Ende April (Gesamtmaßnahme), am 2017-04-25 ist aber noch nichts passiert
-#: last_checked: 2017-09-26
+#: last_checked: 2017-09-27
 #: check_frequency: 30d
 Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Radspuren)	?::projected 8594,8777 8601,8724 8616,8605 8660,8454 8670,8370 8666,8305 8632,8174 8620,8095 8623,8018 8627,7941 8642,7876 8686,7726 8690,7704 8704,7603 8706,7585 8715,7384 8716,7323
 #: by: ^^^
@@ -860,7 +861,7 @@ Residenzstr.: Radstreifen	?::projected 8127,16894 8079,16953 7970,17087
 Wullenwebersteg: wird hier eine Rampe erstellt?	?::projected 5714,12290 5714,12279 5714,12266
 # 
 #: XXX evtl. auch nur der östliche Abschnitt ab Niemetzstr. vvv
-#: last_checked: 2017-08-22 vvv
+#: last_checked: 2017-09-27 vvv
 #: osm_watch: way id="423009430" version="4"
 Braunschweiger Str.: Asphaltierung	?::projected 13369,7307 13487,7337 13519,7345
 #: osm_watch: way id="8153802" version="13"
@@ -945,14 +946,14 @@ Brauerstr.: Asphaltierung	?::projected 5317,2345 5159,2176 4979,1964
 Königsweg: Asphaltierung	?::projected -298,2577 -197,2634 -155,2658
 # 
 #: osm_watch: way id="150301193" version="7"
-#: last_checked: 2017-08-31 (mapillary)
+#: last_checked: 2017-09-27
 Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbreiterung und Asphaltierung des Weges?)	?::projected 8106,3410 8016,3651 7795,4242 7769,4315
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/tief-8-ag-radverkehr_14-03-2016.pdf (mit Entwurfsplänen)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (AT.4; hier bis Karl-Kunger-Str. und vermutlich beidseitig)
 #: osm_watch: way id="110450333" version="9"
-#: last_checked: 2017-09-22
+#: last_checked: 2017-09-27
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird hier vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13849,9310
 # 
@@ -1560,7 +1561,7 @@ Humboldtinsel: liegt die Straße hier? ausgeschildert? Qualität?	?::inwork 1687,2
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_11_30.pdf?start&ts=1354267767&file=stra__enbauliste_stand_2012_11_30.pdf
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_11_08.pdf?start&ts=1383903600&file=stra__enbauliste_stand_2013_11_08.pdf
 #: osm_watch: way id="4663347" version="20"
-#: last_checked: 2017-05-21 (Bauarbeiten sind schon lange beendet, aber es wurde nicht markiert?)
+#: last_checked: 2017-09-27 (Bauarbeiten sind schon lange beendet, aber es wurde nicht markiert?)
 #: check_frequency: 180d
 Ordensmeisterstr.: werden die Radspuren noch weiter geführt?	?::projected 10254,5921 10027,5868 9796,5790
 # 
@@ -1610,7 +1611,7 @@ Innstr.: hier wird ein Asphaltstreifen entstehen, vielleicht auch der Zugang zum
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017)
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5520
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036892648488/892648488/00177969/69-Anlagen/02/0195Radwegebebauung.pdf
-#: last_checked: 2017-08-30
+#: last_checked: 2017-09-27
 #: check_frequency: 100d
 Weigandufer (und Pflügerstr.?): Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 13939,8228 13875,8282 13716,8410 13641,8470 13539,8552 13450,8625 13366,8694 13191,8838 13048,8956 12907,9073 12761,9190 12620,9293 12480,9394
 # 
@@ -1983,7 +1984,8 @@ Poststadion: gibt es hier interessante Wegverbindungen für Radfahrer? wie sieht 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/strassenbauliste-stand-2017-08-18.pdf
 #: source_id: 2147341732
 #: next_check: 2017-09-16
-Alarichstr./Rathausstr.: wie sieht die Radwegsituation nach den Bauarbeiten aus?	?::inwork 8642,5422 8667,5372 8674,5357 8707,5289 8750,5173 8784,5095 8813,5004 8827,4874 8848,4683
+Alarichstr./Rathausstr.: wie sieht die Radwegsituation nach den Bauarbeiten aus?	?::inwork 8642,5422 8667,5372 8674,5357 8707,5289 8750,5173 8784,5095
+# REMOVED (hier ist nichts passiert) --- Alarichstr./Rathausstr.: wie sieht die Radwegsituation nach den Bauarbeiten aus?	?::inwork 8784,5095 8813,5004 8827,4874 8848,4683
 # 
 #: XXX NEW	Friedrichstr. (Mitte) Richtung Leipziger Str. Höhe Jägerstr. (Berlin)  Gültig ab: 17.07.2017 14:04  Baustelle, Fahrtrichtung gesperrt (bis Ende 09/17)	2147341587
 #: XXX laut fritz: Zwischen Französische Straße und Jägerstraße gesperrt. (Bis 29.09.2017)
@@ -2005,14 +2007,10 @@ Turmstr.: wird hier eine Änderung bei den Radwegen passieren?	? 5434,13398 5368,
 # 
 # REMOVED --- Torgauer Str.: Radwegsituation (asphaltiert? aufgehoben?)	? 7710,8051 7639,8091 7582,8123 7497,8168
 # REMOVED (teilweise, allerdings kann man u.U. (abends?) gut durchkommen) --- #: XXX Rosenthaler Str. (Mitte) in beiden Richtungen Höhe Einmündung Neue Schönhauser Str. (Berlin)  Gültig ab: 10.05.2017 13:53  Baustelle, Vollsperrung (bis Ende 07/17)	2147341279 --- #: XXX laut fritz bs 28.07.2017 --- Rosenthaler Str.: noch immer Bauarbeiten?	? 10317,13248 10310,13227
-# 
-#: next_check_id: RUEDERSDORFER-2017
-#: last_checked: 2017-09-22
-#: check_frequency: 7d
-Rüdersdorfer Str.: Bauarbeiten, die Qualität wird danach besser sein	?::inwork 13066,11854 13173,11788 13295,11792
+# REMOVED --- #: next_check_id: RUEDERSDORFER-2017 --- #: last_checked: 2017-09-22 --- #: check_frequency: 7d --- Rüdersdorfer Str.: Bauarbeiten, die Qualität wird danach besser sein	?::inwork 13066,11854 13173,11788 13295,11792
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8140
-#: last_checked: 2017-08-10
+#: last_checked: 2017-09-27
 #: check_frequency: 90d
 Friesenstr.: Asphaltierung geplant	?::projected 9801,8683 9801,8889 9799,8962 9797,9063 9795,9162 9793,9241
 # 
@@ -2412,7 +2410,7 @@ Fanny-Zobel-Str.	? 13975,10187 14049,10164
 # 
 #: by: http://gruene-xhain.de/news/single-view/artikel/vorfahrt-fuer-den-radverkehr.html
 #: by: http://www.berlin.de/imperia/md/content/bafriedrichshain-kreuzberg/abtstadtpg/bzbm-buero/bezirksamtssitzungen/02-07-13/beschluss_265_13.pdf?start&ts=1372853813&file=beschluss_265_13.pdf
-#: last_checked: 2017-08-10
+#: last_checked: 2017-09-27
 #: check_frequency: 120d
 #: priority: #C
 Bergmannstr./Heimstr.: wird hier die Vorfahrtsregelung zugunsten des Radwegs geändert?	? 9880,9233 9973,9232 10001,9234
@@ -2503,7 +2501,7 @@ Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=3934&options=4
 #: osm_watch: node id="26554180" version="5"
-#: last_checked: 2017-08-07
+#: last_checked: 2017-09-27
 #: check_frequency: 90d
 Schöneberger Str.: eventuell wird hier eine (Fußgänger-)Ampel entstehen	?::projected 8640,6770 8653,6781 8655,6796
 # 
@@ -3329,6 +3327,7 @@ Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2017/pressemitteilung.595249.php
 Mahlsdorf: Regionalbahnhof entsteht	?::projected 24487,12082
 #: by: https://www.rbb-online.de/wirtschaft/beitrag/2017/02/berlin-brandenburg-bahn-bauvorhaben-2017.html
+#: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2017/pressemitteilung.634478.php
 Karlshorst: Regionalbahnhof entfällt	?::projected 18796,8492
 #: next_check ^^^
 # 

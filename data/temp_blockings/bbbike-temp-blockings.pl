@@ -1034,11 +1034,11 @@ EOF
 	q4 49039,44131 49691,43812
 EOF
      },
-     { from  => $isodate2epoch->("2017-09-29 06:00:00"), # 1 Tag Vorlauf # 1096578452, # 2004-09-30 23:07
-       until => $isodate2epoch->("2017-10-04 23:59:59"), # 1096862400, # 2004-10-04 06:00
+     { from  => $isodate2epoch->("2017-09-26 18:00:00"), # 1 Tag Vorlauf # 1096578452, # 2004-09-30 23:07
+       until => $isodate2epoch->("2017-10-05 23:59:59"), # 1096862400, # 2004-10-04 06:00
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 9]],
-       text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt (bis 04.10.2017)',
+       text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt (bis 05.10.2017)',
        type  => 'gesperrt',
        data  => <<EOF,
 	2 8055,12186 8089,12190 8214,12205
@@ -26208,9 +26208,9 @@ EOF
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.608925.php',
        data  => <<EOF,
 #: XXX wird sich die Qualität vielleicht bessern?
-#: last_checked: 2017-08-28 vvv
-	2::inwork 8234,4660 8575,4980 8598,4985
 #: XXX hier sind gerade Bauarbeiten --- Verbundsteinpflaster bleibt wohl, der wassergebundene Teil sind besser aus
+#: last_checked: 2017-09-27 vvv
+	2::inwork 8234,4660 8575,4980 8598,4985
 	2::inwork 8598,4985 8618,5019 8784,5095
 #: last_checked ^^^
 EOF
@@ -26535,6 +26535,15 @@ EOF
        data  => <<EOF,
 #: last_checked: 2017-09-23
 	2::inwork 16268,9670 16182,9591
+EOF
+     },
+     { from  => 1506548546, # 2017-09-27 23:42
+       until => 1525125600, # 2018-05-01 00:00
+       text  => 'Borussiastr.: Bauarbeiten zwischen Manteuffelstr. und Schöneberger Str., Fahrbahn gesperrt, voraussichtlich bis April 2018',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2017-09-27
+	q3::inwork 8653,6781 8750,6779
 EOF
      },
     );

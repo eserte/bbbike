@@ -160,9 +160,11 @@ Winterfeldtplatz: Kopfsteinpflaster, OK	Q1 7038,10088 7049,9833
 Corneliusstr.: mäßiges Kopfsteinpflaster	Q2 6880,11110 6841,11114 6630,11247 6476,11325
 Kopernikusstr.: mäßiges Kopfsteinpflaster	Q2 13467,11778 13651,11731
 Torellstr.: mäßiges Kopfsteinpflaster	Q2 13295,11792 13467,11778
-Rüdersdorfer Str.: Asphalt	Q0-; 13295,11792 13173,11788
-Rüdersdorfer Str.: aufgerissene Straße	Q2; 13173,11788 13295,11792
-Rüdersdorfer Str.: aufgerissene Straße	Q2 13173,11788 13066,11854
+#: next_check_id: RUEDERSDORFER-2017
+#: XXX Q0, sobald die Bauarbeiten beendet und die letzte Deckschicht drauf ist
+#: last_checked: 2017-09-27
+#: check_frequency: 7d
+Rüdersdorfer Str.: Asphalt	Q0- 13295,11792 13173,11788 13066,11854
 Kaskelstr.: relative glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
 Spittastr.: mäßiges Kopfsteinpflaster	Q2 15447,10883 15509,11058 15578,11241
 Geusenstr.: mäßiges Kopfsteinpflaster	Q2+ 15586,11030 15560,10946 15541,10892
@@ -11359,7 +11361,7 @@ Wodanstr.: welliger Asphalt	Q0- 8517,19849 8496,19874 8421,19915 8402,19959
 Tödiweg: Asphalt	Q0 9431,2059 9470,1863 9503,1693 9493,1661
 #: corrected_by: srt (Q1 -> Q0)
 Ledebourstr.: Asphalt	Q0 24455,10113 24699,10060 24755,10028 24854,9975 25130,9816 25262,9740 25312,9704 25432,9600 25476,9561
-Seelbuschring: Betonplatten, OK	Q1 8244,4649 8309,4700 8432,4712 8485,4619
+Seelbuschring: Betonplatten, OK	Q1 8244,4649 8309,4700 8430,4723 8457,4707 8477,4615
 Tschudistr.: Asphalt	Q0 23584,13661 23705,13636 23823,13611 23943,13588 24119,13556
 #: confirmed_by: srt
 Rellstabweg: Verbundsteinpflaster	Q1 -6514,13017 -6524,13086 -6395,13121 -6299,13147 -6191,13177 -6080,13213 -6009,13235 -5971,13244 -5857,13270
@@ -19780,13 +19782,9 @@ Pfeddersheimer Weg: guter Asphalt	Q0 -2308,2276 -2440,2218 -2603,2162 -2674,2133
 Sabinensteig: mäßiges Kopfsteinpflaster	Q2 16442,15926 16395,16099 16416,16236
 # 
 #: by: S. Pelz:
-#: XXX wird "neu befestigt" (danach vermutlich asphaltiert)
-#: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.540836.php
-#: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/161118_tut_schnitt-aa.pdf
-#: XXX Bauarbeiten in Gange
-#: last_checked: 2017-08-07
-#: check_frequency: 30d
-Tuttlinger Weg: gutes Kopfsteinpflaster	Q1- 7143,4350 7100,4341 7046,4354
+#: corrected_by: srt (gutes Kopfsteinpflaster -> neu gemachter Asphalt)
+# REMOVED --- #: XXX wird "neu befestigt" (danach vermutlich asphaltiert) --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.540836.php --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/161118_tut_schnitt-aa.pdf --- #: XXX Bauarbeiten in Gange --- #: last_checked: 2017-08-07 --- #: check_frequency: 30d
+Tuttlinger Weg: Asphalt	Q0 7143,4350 7100,4341 7046,4354
 # 
 #: by: Andre Grohmann:
 #: confirmed_by: srt

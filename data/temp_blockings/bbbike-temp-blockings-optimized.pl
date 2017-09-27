@@ -11,7 +11,7 @@ push @temp_blocking,
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
 ',
-         'from' => 1506657600,
+         'from' => 1506441600,
          'id' => 127,
          'periodic' => 1,
          'recurrences' => [
@@ -23,9 +23,9 @@ push @temp_blocking,
                               9
                             ]
                           ],
-         'text' => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt (bis 04.10.2017)',
+         'text' => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt (bis 05.10.2017)',
          'type' => 'gesperrt',
-         'until' => 1507154399
+         'until' => 1507240799
        },
        undef,
        undef,
@@ -3685,9 +3685,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX wird sich die Qualität vielleicht bessern?
-#: last_checked: 2017-08-28 vvv
-	2::inwork 8234,4660 8575,4980 8598,4985
 #: XXX hier sind gerade Bauarbeiten --- Verbundsteinpflaster bleibt wohl, der wassergebundene Teil sind besser aus
+#: last_checked: 2017-09-27 vvv
+	2::inwork 8234,4660 8575,4980 8598,4985
 	2::inwork 8598,4985 8618,5019 8784,5095
 #: last_checked ^^^
 ',
@@ -3974,6 +3974,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Bolleufer - Zur Alten Flussbadeanstalt: an der Hafenküche wegen Bauarbeiten gesperrt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: last_checked: 2017-09-27
+	q3::inwork 8653,6781 8750,6779
+',
+         'from' => 1506548546,
+         'id' => 2911,
+         'text' => 'Borussiastr.: Bauarbeiten zwischen Manteuffelstr. und Schöneberger Str., Fahrbahn gesperrt, voraussichtlich bis April 2018',
+         'type' => 'handicap',
+         'until' => 1525125600
        }
      
 );

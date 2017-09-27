@@ -1386,7 +1386,7 @@ Sophie-Taeuber-Arp-Weg	1s:q1 3302,2476 3293,2218
 Johanna-Spyri-Weg	1s:q1 3211,2221 3221,2479
 # 
 #: note: nach Anmerkungen von Sandra Franz mit "q3" versehen:
-Seelbuschring	1s:q3 8485,4619 8432,4712 8309,4700 8244,4649
+Seelbuschring	1s:q3 8477,4615 8457,4707 8430,4723 8309,4700 8244,4649
 #: note: die Straﬂenbahn f‰hrt hier auch lang
 Zionskirchstr.	1s:q1 10391,14280 10426,14262
 Walsroder Str.	1s:q3 6395,5154 6295,5158 6202,5163 6094,5171
@@ -1398,8 +1398,6 @@ Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus
 Stallschreiberstr.	1s:q1 10489,11405 10620,11244 10678,11172
 Jahnstr.	1s:q3 11500,9116 11509,9392
 Waldweg	1s 25496,2429 24981,2580
-#: note: auf dem Gehweg stehen regelm‰ﬂig (Wach-)Polizisten 
-Schulenburgring	1s:q4 9030,8431 9028,8584 9011,8605
 Neue Schˆnhauser Str.	1s:q3 10527,13257 10423,13215 10310,13227
 Kirchhofstr.	1s:q3 13188,7590 13117,7471 13029,7353
 # REMOVED --- #: next_check: 2013-10-30 --- #: XXX von 1s:q3 -> 1s:q4 degradiert, weil wegen der Umleitung hier mehr Verkehr ist - sp‰ter wieder aufheben
@@ -2806,8 +2804,8 @@ Zufahrt Parkhaus: Abrissarbeiten, Straﬂe komplett gesperrt	2::inwork 8367,10745 
 Am Herzbergteich: noch wegen Bauarbeiten gesperrt; wann ist die Straﬂe fertig?	2::inwork 17945,13493 17942,13568
 # 
 #: next_check_id: RUEDERSDORFER-2017
-#: last_checked: 2017-09-22
-#: check_frequency: 14d
+#: last_checked: 2017-09-27
+#: check_frequency: 7d
 R¸dersdorfer Str.: Einbahnstraﬂe wegen Bauarbeiten	1s:q3:inwork 13066,11854 13173,11788 13295,11792
 # 
 #: last_checked: 2017-09-02
@@ -3026,7 +3024,7 @@ Nordhafenpark West: w‰hrend der Umgestaltung gesperrt	2::inwork 7636,14414 7612,
 #: check_frequency: 60d
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 # 
-#: last_checked: 2017-09-26
+#: last_checked: 2017-09-27
 Corinthstr.: Baustelle, Einbahnstraﬂenregelung	1s:q2:inwork 14447,10491 14270,10584
 # 
 # REMOVED (mittlerweile schon passierbar) --- #: next_check_id: MARIANNEN-2016 vvv --- #: source_id: INKO_2147340291_COPY_1 vvv --- #: source_id: 2147340291 vvv --- #: source_id: 2147340768 vvv --- # REMOVED (aufgehoben) --- #: priority: #A vvv --- #: XXX laut fritz bis 16.12.2016 --- #: last_checked: 2016-12-15 vvv --- #: next_check: 2017-01-10 vvv --- Mariannenstr.: Baustelle, Einbahnstraﬂenregelung	1s:q2 11512,10105 11616,10288 --- #: source_id: 2147340777 --- #: XXX laut fritz bis 10.01.2017 --- #: priority: #A --- #: last_checked: 2016-12-15 --- #: check_frequency: 7d --- Mariannenstr.: Baustelle, Fahrbahn gesperrt	2s:q3 11671,10402 11616,10288
