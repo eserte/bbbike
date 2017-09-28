@@ -20437,7 +20437,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_112232',
        data  => <<EOF,
-	q4::inwork; 8527,14352 8442,14456 8406,14507 8336,14586
+	q4::inwork; 8442,14456 8406,14507 8336,14586
 EOF
      },
      { from  => $isodate2epoch->("2014-10-31 06:00:00"), # 1 Tag Vorlauf
