@@ -19029,12 +19029,14 @@ sub make_qualitaet_net {
 	my @files = qw(qualitaet_s qualitaet_l);
 	local $Strassen::Util::cacheprefix = $Strassen::Util::cacheprefix;
 	if ($devel_host) {
-	    my @candidates = map { "$FindBin::RealBin/tmp/$_" } @files;
+	    my $tmp_dir_for_datadir = "$datadir/../tmp";
+	    my @candidates = map { "$tmp_dir_for_datadir/$_" } @files;
 	    if (@files == grep { -f } @candidates) {
 		@files = @candidates;
 		$Strassen::Util::cacheprefix .= "-withtendencies";
+		warn "INFO: on devel host, use @files...\n";
 	    } else {
-		warn "NOTE: on devel host, but some/all of @files in $FindBin::RealBin/tmp are missing";
+		warn "NOTE: on devel host, but some/all of @files in $tmp_dir_for_datadir are missing";
 	    }
 	}
 	eval {
