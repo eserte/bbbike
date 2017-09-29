@@ -3596,12 +3596,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober; laut Pressemitteilung bis Ende 2017
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
-#: last_checked: 2017-08-22 vvv
-#: next_check: 2017-10-01 vvv
+#: last_checked: 2017-09-29 vvv
+#: next_check: 2017-10-31 vvv
 # REMOVED (weitgehend fertig) ---	q3::inwork 13384,8354 13217,8493
 # REMOVED	q3::inwork; 13217,8493 13262,8554
-	q3::inwork; 13262,8554 13301,8606 13314,8624
-	q4::inwork 13366,8694 13314,8624
+# REMOVED	q3::inwork; 13262,8554 13301,8606 13314,8624
+# REMOVED	q4::inwork 13366,8694 13314,8624
+	q4::inwork 13217,8493 13262,8554
+	q3::inwork 13262,8554 13301,8606
 #: next_check ^^^
 #: last_checked ^^^
 ',
@@ -3669,7 +3671,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2017-09-26
+         'data' => '#: next_check_id: DBWERKSTRASSE-2017
+#: last_checked: 2017-09-26
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
          'from' => undef,
@@ -3686,7 +3689,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX wird sich die Qualität vielleicht bessern?
 #: XXX hier sind gerade Bauarbeiten --- Verbundsteinpflaster bleibt wohl, der wassergebundene Teil sind besser aus
-#: last_checked: 2017-09-27 vvv
+#: last_checked: 2017-09-29 vvv
 	2::inwork 8234,4660 8575,4980 8598,4985
 	2::inwork 8598,4985 8618,5019 8784,5095
 #: last_checked ^^^
@@ -3840,9 +3843,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1501870960,
          'id' => 2894,
-         'text' => 'Witzlebenstr.: zwischen Steifensandstr. und Kaiserdamm gesperrt, eventuell sind auch Radfahrer betroffen, bis 30.09.2017',
+         'text' => 'Witzlebenstr.: zwischen Steifensandstr. und Kaiserdamm gesperrt, eventuell sind auch Radfahrer betroffen, bis 20.10.2017',
          'type' => 'handicap',
-         'until' => 1506808800
+         'until' => 1508493600
        },
        {
          'data' => '	2::inwork -586,22064 -735,22103 -786,22110 -973,22117 -827,22039 -629,21975
@@ -3976,7 +3979,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2017-09-27
+         'data' => '#: last_checked: 2017-09-29
 	q3::inwork 8653,6781 8750,6779
 ',
          'from' => 1506548546,
@@ -3984,6 +3987,21 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Borussiastr.: Bauarbeiten zwischen Manteuffelstr. und Schöneberger Str., Fahrbahn gesperrt, voraussichtlich bis April 2018',
          'type' => 'handicap',
          'until' => 1525125600
+       },
+       {
+         'data' => '#: XXX ist die Qualität nach den Bauarbeiten etwas besser?
+#: last_checked: 2017-09-29 vvv
+#: check_frequency: 14d vvv
+	q4::inwork 13288,7653 13177,7644 13100,7626
+	q4::inwork 13177,7644 13188,7590
+#: check_frequency ^^^
+#: last_checked ^^^
+',
+         'from' => undef,
+         'id' => 2912,
+         'text' => 'Karl-Marx-Platz/Richardplatz: Bauarbeiten an der Kirchhofstr., Fahrbahn gesperrt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
