@@ -17,7 +17,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..";
 
 use vars qw($VERSION);
-$VERSION = '0.26';
+$VERSION = '0.27';
 
 use Cwd qw(getcwd realpath);
 use Data::Dumper;
@@ -67,6 +67,7 @@ my $center_delta;
 my $parsefor;
 my $country = '';
 my $lang = '';
+my $mapname;
 use constant MAXLINELENGTH => 12288; # the limit of BBBikeXS
 my $splitlonglines = 1; # XXX this may change once BBBikeXS has no length restriction anymore
 my $xmlparser;
@@ -97,6 +98,7 @@ usage: $0 [-v] [-f] [-encoding enc] [-center lon,lat] [-map bbbike [-centerdelta
 -o directory      A non-existing directory to output the bbd files.
 -parsefor ...     Parse only for the given key=value pair,
                   key as string and val as regexp
+-mapname ...      Name of the map. Only used to pass to the created meta.yml.
 -country ...      Optimize output for given country (see documentation for
                   supported countries)
 -lang ...         Optimize output for given language (see documentation for
@@ -128,6 +130,7 @@ GetOptions("o=s" => \$o,
 	   "centerdelta=s" => \$center_delta,
 	   "encoding=s" => \$encoding,
 	   "parsefor=s" => \$parsefor,
+	   "mapname=s" => \$mapname,
 	   "country=s" => \$country,
 	   "lang=s" => \$lang,
 	   "nodate" => \$nodate,
@@ -2344,6 +2347,10 @@ sub output_meta {
 	    }
 	    $meta{skip_features}->{$feature_name} = 1;
 	}
+    }
+
+    if (defined $mapname) {
+	$meta{mapname} = $mapname;
     }
 
     if ($no_create) {

@@ -129,7 +129,7 @@ GetOptions("keep" => \$keep)
 EOF
     close $osmfh;
 
-    my @cmd = ($^X, $osm2bbd, "--debug=0", "-f", "-o", $destdir, $osmfile);
+    my @cmd = ($^X, $osm2bbd, "--debug=0", "-f", "-mapname", "City/Citypart", "-o", $destdir, $osmfile);
     system @cmd;
     is $?, 0, "<@cmd> works";
 
@@ -139,6 +139,7 @@ EOF
     is $meta->{coordsys}, 'wgs84';
     like "@{ $meta->{commandline} }", qr{osm2bbd};
     is $meta->{country}, 'DE', 'country heuristics';
+    is $meta->{mapname}, 'City/Citypart', 'passed -mapname';
 
     {
 	my $strassen = Strassen->new("$destdir/strassen");
@@ -261,6 +262,10 @@ EOF
 	is $got, "13.651456,52.403097\n", "expected translation for 0,0 (trimmed)";
 	is $stderr, "Using corrected Karte::Polar for latitude 53.538...\n", "expected diagnostics"; # may be removed some day?
     }
+
+    my $meta = BBBikeYAML::LoadFile("$destdir/meta.yml");
+    is $meta->{coordsys}, 'wgs84';
+    ok !exists($meta->{mapname}), '-mapname not specified';
 }
 
 
