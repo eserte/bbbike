@@ -169,9 +169,14 @@ sub action_handicap_directed {
 sub action_check_handicap_directed {
     my $d = shift;
     my $dest = '.check_handicap_directed';
-    my @srcs = qw(handicap_directed strassen);
+    my @against = qw( strassen landstrassen landstrassen2);
+    my @srcs = ('handicap_directed', @against);
     if (_need_rebuild $dest, @srcs) {
-	$d->system(@check_neighbour, qw(-type standard -data handicap_directed));
+	$d->system(
+		   @check_neighbour,
+		   qw(-type standard -data handicap_directed),
+		   (map { ('-against', $_) } @against),
+		  );
 	$d->touch($dest);
     }
 }
