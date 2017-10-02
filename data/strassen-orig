@@ -5447,8 +5447,8 @@ Stormstr. (Baumschulenweg)	N 16328,7005 16234,7100
 Glanzstr.	N 16328,7005 16433,6892 16588,6724
 Neue Bahnhofstr.	H 15016,11431 14918,11249
 Neue Bahnhofstr.	N 14918,11249 14908,11231 14879,11182 14811,11067 14752,11041
-(provisorischer Zugang zum Bahnhof Ostkreuz)	NN 14712,11039 14727,11005 14808,10978 14845,10954
-(provisorischer Zugang zum Bahnhof Ostkreuz)	NN 14811,11067 14808,10978
+# REMOVED (wurde zurückgebaut) --- (provisorischer Zugang zum Bahnhof Ostkreuz)	NN 14712,11039 14727,11005 14808,10978
+(provisorischer Zugang zum Bahnhof Ostkreuz)	NN 14811,11067 14808,10978 14845,10954
 # REMOVED --- Sonntagstr.	NN 14808,10978 14752,11041
 Sonntagstr.	N 14752,11041 14669,11152 14598,11245 14535,11327 14434,11465
 #: note: kein Straßenschild auf der östlichen Seite, in der Mitte steht "Nöldnerplatz", auf der westlichen Seite "Lückstraße"
@@ -17945,7 +17945,7 @@ Gottfriedstr.	N 17839,16987 18029,16899 18169,16800 18246,16720 18308,16645 1831
 Lotharstr.	N 18073,17007 18029,16899 17997,16828 17997,16812 17908,16792
 Edgarstr.	N 17997,16812 18058,16708 18153,16551 18165,16523
 Christianstr.	N 18282,16920 18169,16800 18058,16708 17964,16677
-(Christianstr. - Christophstr.)	N 17964,16677 17952,16675 17925,16695
+(Christianstr. - Christophstr.)	NN 17964,16677 17952,16675 17925,16695
 Christophstr.	N 17925,16695 17908,16792
 Dietrichstr.	N 18416,16867 18246,16720 18172,16664
 (Lotharstr. - Josef-Höhn-Str.)	NN 17908,16792 17882,16811 17863,16815

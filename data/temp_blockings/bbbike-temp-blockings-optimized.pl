@@ -630,28 +630,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.ms-event-agentur.com/seite22.html?date=20170325
-	2::temp 7001,9291 7012,9222 7035,9161 7107,9030
-	2::temp 6945,9142 7035,9161
-	2::temp 6975,8944 7107,9030 7308,9163
-',
-         'from' => 1506675600,
-         'id' => 731,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              30,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 30.09.2017 bis 01.10.2017',
-         'type' => 'gesperrt',
-         'until' => 1506895199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2328,7 +2307,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im September von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Oktober von 7.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3479,17 +3458,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: fritz
-#: source_id: 2147341721
-	q3::inwork; 16768,14849 16610,15000 16514,15092
-',
-         'from' => 1501526175,
-         'id' => 2795,
-         'text' => 'Werneuchener Str.: zwischen Genslerstr. und Goeckestr. Richtung Konrad-Wolf-Str. Bauarbeiten, gesperrt bis Anfang Oktober 2017',
-         'type' => 'handicap',
-         'until' => 1506852000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3686,33 +3655,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX wird sich die Qualität vielleicht bessern?
-#: XXX hier sind gerade Bauarbeiten --- Verbundsteinpflaster bleibt wohl, der wassergebundene Teil sind besser aus
-#: last_checked: 2017-09-29 vvv
-	2::inwork 8234,4660 8575,4980 8598,4985
-	2::inwork 8598,4985 8618,5019 8784,5095
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 2877,
-         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.608925.php',
-         'text' => 'Teltowkanal von der Rathausstraße bis Gersdorfstraße: Sanierung Fuß- und Radweg, Wege können gesperrt sein, Zeitraum unbekannt',
-         'type' => 'gesperrt',
-         'until' => 1506852000
-       },
-       {
-         'data' => '#: XXX wird sich die Qualität vielleicht bessern?
-#: next_check: 2017-09-01
-	2::inwork 7231,236 7501,83
-',
-         'from' => undef,
-         'id' => 2878,
-         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.608925.php',
-         'text' => 'Poppenreuther Weg: Wegesanierung, Sperrung möglich, Zeitraum unbekannt ',
-         'type' => 'gesperrt',
-         'until' => 1506852000
-       },
+       undef,
+       undef,
        {
          'data' => '	2::inwork 13415,21442 13371,21462
 ',
@@ -3793,17 +3737,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '	2::inwork -4299,13304 -4123,13214
-	2::inwork -4098,13201 -4046,13177 -4017,13167
-',
-         'from' => 1500818823,
-         'id' => 2887,
-         'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.614506.php',
-         'text' => 'Seecktstr.: Sperrung wegen Bauarbeiten, 24.07.2017 bis 30.09.2017 ',
-         'type' => 'gesperrt',
-         'until' => 1506808800
-       },
+       undef,
        {
          'data' => '	2::inwork 14538,12371 14748,12314
 ',
@@ -4002,6 +3936,36 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Karl-Marx-Platz/Richardplatz: Bauarbeiten an der Kirchhofstr., Fahrbahn gesperrt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '	2::temp 5472,8012 5357,8013
+	2::temp 5501,8253 5573,8197 5631,8141 5631,8011 5630,7875
+	2::temp 5492,7543 5606,7651 5635,7660 5636,7540 5812,7536 5810,7662 5635,7660 5636,7685 5608,7684 5528,7683 5493,7717 5491,7836 5492,7868 5475,7906
+	2::temp 6241,7428 6238,7645 6257,7646 6271,7733 6209,7765 6144,7677 6082,7594 5955,7420 5956,7682 5957,7773 6195,7775 6209,7765 6273,7849 6307,7893 6418,7958
+	2::temp 5570,7939 5570,8011 5522,8011
+	2::temp 5913,8415 5925,8219 5730,8207 5700,8241 5687,8280 5699,8308
+	2::temp 6333,7708 6352,7523
+	2::temp 5957,7773 5807,7771 5809,7712 5636,7709 5636,7734 5630,7875 5517,7869 5636,7734
+	2::temp 6163,7237 6166,7658 6144,7677 6123,7684 5956,7682 5810,7684
+	2::temp 5573,8197 5520,8132 5522,8011 5472,8012 5471,7915
+	2::temp 5660,8351 5651,8218 5631,8141 5820,8117 5824,8035 5631,8011 5570,8011
+	2::temp 5820,8117 5910,8170 6009,8101
+	2::temp 6409,8026 6386,8085 6350,8177 6325,8259
+	2::temp 6271,7733 6332,7721 6410,7722
+	2::temp 6289,7472 6272,7645
+	2::temp 6181,8181 6257,8078 6261,8058 6260,8011 6388,7999 6333,7927 6307,7893
+	2::temp 5636,7685 5636,7709
+	2::temp 5458,7866 5492,7868 5517,7869
+	2::temp 5928,8052 5824,8035
+	2::temp 5651,8218 5730,8207
+	2::temp 5806,7796 5807,7771
+	2::temp 6060,8334 6163,8398 6246,8222 6181,8181 6060,8334 5925,8219 5910,8170 5928,8052 6154,8070 6261,8058 6409,8026 6388,7999 6418,7958 6429,7876 6307,7893 6332,7721
+',
+         'from' => undef,
+         'id' => 2913,
+         'text' => 'Rund um den Innsbrucker Platz: Bombenfund, zahlreiche Straßen im 500m-Radius gesperrt',
+         'type' => 'gesperrt',
+         'until' => 1507024800
        }
      
 );

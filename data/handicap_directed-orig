@@ -15,7 +15,7 @@
 #                   des Zeitverlusts sollte man 20km/h annehmen.
 #:
 #: next_check_id: MOELLENDORFFSTR-2017 vvv
-#: last_checked: 2017-09-28 vvv
+#: last_checked: 2017-10-02 vvv
 #: next_check: 2017-10-15 vvv
 Gürtelstr. -> Möllendorffstr.: Umweg zur Ampel	DH:len=70 15294,11964 15361,12071 15420,12178
 Frankfurter Allee -> Möllendorffstr.: Umweg zur Ampel	DH:len=70 15117,12106 15361,12071 15420,12178
@@ -44,6 +44,11 @@ Salvador-Allende-Brücke: Umweg zur Ampel	DH:len=40 23403,5385 23404,5325 23420,5
 #: next_check ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
-#
+# 
 Dresdener Str.: Bordsteinumfahrung	DH:len=25:t=7 11039,11425 11000,11327 11021,11287
 Dresdener Str.: Bordsteinumfahrung	DH:len=25:t=7 11021,11287 11000,11327 11039,11425
+# 
+#: note: Linksabbiegen verboten, Zeit künstlich verlängern vvv
+B2/B158	DH:t=120 49908,67683 49907,67684
+B2/B158	DH:t=120 49907,67684 49908,67683
+#: note ^^^
