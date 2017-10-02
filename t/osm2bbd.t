@@ -17,7 +17,6 @@ use Getopt::Long;
 use Test::More 'no_plan';
 
 use BBBikeYAML;
-use Doit ();
 use Strassen::Core;
 
 my $osm2bbd = "$FindBin::RealBin/../miscsrc/osm2bbd";
@@ -269,10 +268,11 @@ EOF
     ok !exists($meta->{mapname}), '-mapname not specified';
 }
 
-{
-    my $doit = Doit->init;
-    my $stderr;
-    my $stdout = $doit->info_open3({quiet=>1,errref=>\$stderr}, $^X, $osm2bbd, '-version');
+SKIP: {
+    skip 'Requires IPC::Run for -version test', 1
+	if !eval { require IPC::Run; 1 };
+    my $succ = IPC::Run::run([$^X, $osm2bbd, '-version'], '>', \my $stdout, '2>', \my $stderr);
+    ok $succ, '-version call is successful';
     is $stderr, '', 'nothing on stderr';
     like $stdout, qr{\Aosm2bbd \d+\.\d+\n\z}, 'looks like a version';
 }
