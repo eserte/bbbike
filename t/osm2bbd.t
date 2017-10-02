@@ -17,6 +17,7 @@ use Getopt::Long;
 use Test::More 'no_plan';
 
 use BBBikeYAML;
+use Doit ();
 use Strassen::Core;
 
 my $osm2bbd = "$FindBin::RealBin/../miscsrc/osm2bbd";
@@ -266,6 +267,14 @@ EOF
     my $meta = BBBikeYAML::LoadFile("$destdir/meta.yml");
     is $meta->{coordsys}, 'wgs84';
     ok !exists($meta->{mapname}), '-mapname not specified';
+}
+
+{
+    my $doit = Doit->init;
+    my $stderr;
+    my $stdout = $doit->info_open3({quiet=>1,errref=>\$stderr}, $^X, $osm2bbd, '-version');
+    is $stderr, '', 'nothing on stderr';
+    like $stdout, qr{\Aosm2bbd \d+\.\d+\n\z}, 'looks like a version';
 }
 
 

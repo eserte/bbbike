@@ -17,7 +17,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..";
 
 use vars qw($VERSION);
-$VERSION = '0.27';
+$VERSION = '0.28';
 
 use Cwd qw(getcwd realpath);
 use Data::Dumper;
@@ -112,6 +112,7 @@ osmfile ...       Files downloaded by downloadosm,
 -no-create	  do not store create date and cwd
 -no-handle-relations Skip parsing and handling relations
                      (e.g. for memory reasons)
+-version          Show version and exit
 EOF
 }
 
@@ -149,6 +150,10 @@ Unknown experiment '$exp'. Known experiments are:
 EOF
 	       }
 	       $experiments{$exp}++;
+	   },
+	   'version' => sub {
+	       print basename($0) . " $VERSION\n";
+	       exit 0;
 	   },
 	  )
     or die usage;
