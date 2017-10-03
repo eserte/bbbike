@@ -19,7 +19,8 @@ use Test::More 'no_plan';
 use BBBikeYAML;
 use Strassen::Core;
 
-my $osm2bbd = "$FindBin::RealBin/../miscsrc/osm2bbd";
+my $osm2bbd             = "$FindBin::RealBin/../miscsrc/osm2bbd";
+my $osm2bbd_postprocess = "$FindBin::RealBin/../miscsrc/osm2bbd-postprocess";
 
 my $keep;
 GetOptions("keep" => \$keep)
@@ -206,6 +207,32 @@ EOF
 	ok $gesperrt, 'orte could be loaded';
 	is $gesperrt->data->[0], "Berlin\t6 13.3888599,52.5170365\n";
     }
+
+    {
+	my @cmd = ($^X, $osm2bbd_postprocess, "--debug=0", "--only-title-for-dataset", $destdir);
+	system @cmd;
+	is $?, 0, "<@cmd> works";
+
+	my $meta_new = BBBikeYAML::LoadFile("$destdir/meta.yml");
+	my $dataset_title = delete $meta_new->{dataset_title}; # and manipulate $meta_new
+	is $dataset_title, 'Berlin', 'added dataset_title by osm2bbd-postprocess';
+	is_deeply $meta_new, $meta, 'meta.yml is otherwise unchanged by osm2bbd-postprocess';
+    }
+
+ SKIP: {
+	skip "Need IPC::Run for stderr capturing", 1
+	    if !eval { require IPC::Run; 1 };
+
+	my $succ = IPC::Run::run([$^X, $osm2bbd_postprocess, "--only-title-for-dataset", $destdir], '>', \my $stdout, '2>', \my $stderr);
+	ok $succ, 'Running osm2bbd-postprocess twice is OK';
+	is $stdout, '', 'STDOUT is empty';
+	is $stderr, "Running target title_for_dataset ... dataset_title already set in meta.yml, do not overwrite, skipping\n", 'Skipping target on 2nd run';
+
+	my $meta_new = BBBikeYAML::LoadFile("$destdir/meta.yml");
+	my $dataset_title = delete $meta_new->{dataset_title}; # and manipulate $meta_new
+	is $dataset_title, 'Berlin', 'dataset_title is still unchanged';
+	is_deeply $meta_new, $meta, 'meta.yml is otherwise still unchanged by osm2bbd-postprocess';
+    }
 }
 
 # Following is actually checking two things:
@@ -264,6 +291,16 @@ EOF
 
     my $meta = BBBikeYAML::LoadFile("$destdir/meta.yml");
     is $meta->{coordsys}, 'wgs84';
+
+    {
+	my @cmd = ($^X, $osm2bbd_postprocess, "--debug=0", "--only-title-for-dataset", "--dataset-title", 'a "strange" dataset title', $destdir);
+	system @cmd;
+	is $?, 0, "<@cmd> works";
+
+	my $meta_new = BBBikeYAML::LoadFile("$destdir/meta.yml");
+	is $meta_new->{dataset_title}, 'a "strange" dataset title', 'Custom --dataset-title';
+    }
+
 }
 
 SKIP: {
