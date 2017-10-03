@@ -17,6 +17,7 @@ use Getopt::Long;
 use Test::More 'no_plan';
 
 use BBBikeYAML;
+use Geography::FromMeta;
 use Strassen::Core;
 
 my $osm2bbd             = "$FindBin::RealBin/../miscsrc/osm2bbd";
@@ -134,12 +135,20 @@ EOF
     system @cmd;
     is $?, 0, "<@cmd> works";
 
-    my $meta = BBBikeYAML::LoadFile("$destdir/meta.yml");
-    is $meta->{source}, 'osm';
-    like $meta->{created}, qr{^2\d{7}\d{6}}, 'looks like an ISO date';
-    is $meta->{coordsys}, 'wgs84';
-    like "@{ $meta->{commandline} }", qr{osm2bbd};
-    is $meta->{country}, 'DE', 'country heuristics';
+    my $meta;
+    {
+	$meta = BBBikeYAML::LoadFile("$destdir/meta.yml");
+	is $meta->{source}, 'osm';
+	like $meta->{created}, qr{^2\d{7}\d{6}}, 'looks like an ISO date';
+	is $meta->{coordsys}, 'wgs84';
+	like "@{ $meta->{commandline} }", qr{osm2bbd};
+	is $meta->{country}, 'DE', 'country heuristics';
+    }
+
+    {
+	my $meta_dd = Geography::FromMeta->load_meta("$destdir/meta.dd");
+	is_deeply $meta_dd, $meta, 'meta.dd and meta.yml have the same contents';
+    }
 
     {
 	my $strassen = Strassen->new("$destdir/strassen");
@@ -293,12 +302,18 @@ EOF
     is $meta->{coordsys}, 'wgs84';
 
     {
-	my @cmd = ($^X, $osm2bbd_postprocess, "--debug=0", "--only-title-for-dataset", "--dataset-title", 'a "strange" dataset title', $destdir);
+	my $dataset_title = qq{a "strange" d\x{e4}taset title \x{20ac}};
+	require Encode;
+	my $dataset_title_octets = Encode::encode_utf8($dataset_title);
+	my @cmd = ($^X, $osm2bbd_postprocess, "--debug=0", "--only-title-for-dataset", "--dataset-title", $dataset_title_octets, $destdir);
 	system @cmd;
 	is $?, 0, "<@cmd> works";
 
 	my $meta_new = BBBikeYAML::LoadFile("$destdir/meta.yml");
-	is $meta_new->{dataset_title}, 'a "strange" dataset title', 'Custom --dataset-title';
+	is $meta_new->{dataset_title}, $dataset_title, 'Custom --dataset-title, correctly encoded';
+
+	my $meta_new_dd = Geography::FromMeta->load_meta("$destdir/meta.dd");
+	is_deeply $meta_new_dd, $meta_new, 'meta.dd and meta.yml have the same contents';
     }
 
 }

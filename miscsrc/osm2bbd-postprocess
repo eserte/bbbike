@@ -72,7 +72,7 @@ sub usage (;$) {
     } @targets) . "\tdatadir\n";
 }
 
-my $set_dataset_title;
+my $set_dataset_title_octets;
 # XXX should be generalized, or not be necessary
 my $coastline_hack_anchor;
 
@@ -92,7 +92,7 @@ GetOptions(
 	   "city-names=s" => \$city_names,
 	   "force!" => \$force,
 	   # targets with additional arguments
-	   "dataset-title=s" => \$set_dataset_title,
+	   "dataset-title=s" => \$set_dataset_title_octets,
 	   # XXX
 	   "coastline-hack-anchor=s" => \$coastline_hack_anchor,
 	  )
@@ -103,6 +103,12 @@ my $bbbikedir = dirname $miscsrcdir;
 my $datadir = shift or usage "Please specify data directory";
 $datadir = realpath $datadir;
 chdir $datadir or die "Can't chdir to $datadir: $!";
+
+my $set_dataset_title;
+if (defined $set_dataset_title_octets) {
+    require Encode;
+    $set_dataset_title = Encode::decode_utf8($set_dataset_title_octets);
+}
 
 if (grep { $_ } values %only_target) {
     @run_targets = grep { $only_target{$_} } @targets;
@@ -766,6 +772,11 @@ tasks.
 The C<coastline-hack> task needs the additional option
 C<-coastline-hack-anchor> with any cardinal direction (e.g. C<n>,
 C<nw> etc.) for the direction of the "open sea".
+
+The C<title_for_dataset> task can be given an option C<--dataset-title
+I<title>>, which should be an utf8-encoded name for the dataset. If
+not given, then the task would choose the name of the largest city in
+the area as the dataset title.
 
 =head1 AUTHOR
 
