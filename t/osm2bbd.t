@@ -20,6 +20,16 @@ use BBBikeYAML;
 use Geography::FromMeta;
 use Strassen::Core;
 
+sub my_system (@) {
+    my(@args) = @_;
+    if ($^O eq 'MSWin32') {
+	require Win32Util;
+	Win32Util::win32_system(@args);
+    } else {
+	system @args;
+    }
+}
+
 my $osm2bbd             = "$FindBin::RealBin/../miscsrc/osm2bbd";
 my $osm2bbd_postprocess = "$FindBin::RealBin/../miscsrc/osm2bbd-postprocess";
 
@@ -306,7 +316,7 @@ EOF
 	require Encode;
 	my $dataset_title_octets = Encode::encode_utf8($dataset_title);
 	my @cmd = ($^X, $osm2bbd_postprocess, "--debug=0", "--only-title-for-dataset", "--dataset-title", $dataset_title_octets, $destdir);
-	system @cmd;
+	my_system @cmd;
 	is $?, 0, "<@cmd> works";
 
 	my $meta_new = BBBikeYAML::LoadFile("$destdir/meta.yml");
@@ -326,6 +336,5 @@ SKIP: {
     is $stderr, '', 'nothing on stderr';
     like $stdout, qr{\Aosm2bbd \d+\.\d+\n\z}, 'looks like a version';
 }
-
 
 __END__
