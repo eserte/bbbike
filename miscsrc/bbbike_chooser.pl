@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2012,2013,2014,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012,2013,2014,2015,2017 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -69,6 +69,10 @@ $Msg::messages =
 	     'Problem: cannot find more data at bbbike.org.' => 'Problem: es konnten keine weiteren Daten bei bbbike.org gefunden werden.',
 	     "The download of '%s' was successful." => "Der Download von '%s' war erfolgreich.",
 	     "An error occurred while downloading '%s'." => "Ein Fehler beim Downloaden von '%s' ist aufgetreten.",
+	     "Open local data directory" => "Lokales Datenverzeichnis öffnen",
+	     "No directory selected" => "Kein Verzeichnis ausgewählt",
+	     "Directory %s does not exist." => "Verzeichnis %s existiert nicht.",
+	     "The directory %s does not look like a bbbike data directory." => "Das Verzeichnis %s ist kein BBBike-Datenverzeichnis.",
 	    },
     }->{$lang};
 
@@ -150,33 +154,28 @@ sub fill_chooser {
 	Tk::grid(my $b = $p->Button(-text => $dataset_title,
 				    -anchor => 'w',
 				    -command => sub {
-					my @cmd = ($^X, File::Spec->catfile($this_rootdir, 'bbbike'), '-datadir', $datadir,
-						   (grep { $opt{$_} } keys %opt),
-						  );
-					print STDERR "INFO: Starting '@cmd'...\n";
-					if ($^O eq 'MSWin32') {
-					    # Sigh. Windows braindamage.
-					    require Win32Util;
-					    # no forking here
-					    system 1, Win32Util::win32_quote_list(@cmd);
-					    exit 0;
-					} else {
-					    if (fork == 0) {
-						exec @cmd;
-						warn "Cannot start @cmd: $!";
-						CORE::exit(1);
-					    }
-					    $mw->destroy;
-					}
+					start_bbbike_with_datadir($datadir);
 				    },
 				   ), -sticky => 'ew');
 	$bln->attach($b, -msg => $datadir);
 	$last_b = $b;
     }
     if ($bod) {
+	if ($last_b) { # add some padding
+	    Tk::grid($p->Frame(-height => 5), -sticky => 'ew');
+	}
 	Tk::grid($p->Button(-text => M('More cities/regions @ bbbike.org'),
 			    -anchor => 'w',
 			    -command => \&download_more,
+			   ), -sticky => 'ew');
+    }
+    {
+	if ($last_b) { # add some padding
+	    Tk::grid($p->Frame(-height => 5), -sticky => 'ew');
+	}
+	Tk::grid($p->Button(-text => M('Open local data directory'),
+			    -anchor => 'w',
+			    -command => \&open_local,
 			   ), -sticky => 'ew');
     }
     if ($last_b) {
@@ -337,6 +336,66 @@ sub download_city {
     uniquify_titles();
     fill_chooser();
     flash_city_button($city);
+}
+
+sub open_local {
+    my $directory = $mw->chooseDirectory;
+    if (!defined $directory) {
+	$mw->messageBox(-message => M"No directory selected");
+	return;
+    }
+    if (!-d $directory) {
+	$mw->messageBox(-message => Mfmt("Directory %s does not exist.", $directory));
+	return;
+    }
+
+    my $check_bbbike_data_directory_candidates = sub () {
+	my $check_bbbike_data_directory = sub ($) {
+	    my $directory = shift;
+	    -r "$directory/meta.dd" && -r "$directory/strassen";
+	};
+
+	if ($check_bbbike_data_directory->($directory)) {
+	    return $directory;
+	}
+	# Maybe it's the planet directory above?
+	my $candidate = "$directory/bbbike-data";
+	if (-d $candidate && $check_bbbike_data_directory->($candidate)) {
+	    return $candidate;
+	}
+    };
+
+    my $datadir = $check_bbbike_data_directory_candidates->();
+    if (!$datadir) {
+	$mw->messageBox(-message => Mfmt("The directory %s does not look like a bbbike data directory.", $directory));
+    } else {
+	start_bbbike_with_datadir($datadir);
+    }
+}
+
+# Start bbbike with specified data directory and the selected options,
+# and close the bbbike_chooser program.
+sub start_bbbike_with_datadir {
+    my $datadir = shift;
+
+    my @cmd = ($^X, File::Spec->catfile($this_rootdir, 'bbbike'), '-datadir', $datadir,
+	       (grep { $opt{$_} } keys %opt),
+	      );
+    print STDERR "INFO: Starting '@cmd'...\n";
+    if ($^O eq 'MSWin32') {
+	# Sigh. Windows braindamage.
+	require Win32Util;
+	# no forking here
+	system 1, Win32Util::win32_quote_list(@cmd);
+	exit 0;
+    } else {
+	if (fork == 0) {
+	    exec @cmd;
+	    warn "Cannot start @cmd: $!";
+	    CORE::exit(1);
+	}
+	$mw->destroy;
+    }
 }
 
 sub flash_city_button {
