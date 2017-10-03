@@ -61,6 +61,7 @@ use BBBikeUtil qw(bbbike_root is_in_path);
 	      get_pmake image_ok zip_ok create_temporary_content static_url
 	      get_cgi_config selenium_diag noskip_diag
 	      pdfinfo
+	      checkpoint_apache_errorlogs output_apache_errorslogs
 	    ),
 	   @opt_vars);
 
@@ -1099,6 +1100,74 @@ sub pdfinfo ($) {
 	or die "Error running @cmd: $!";
 
     \%info;
+}
+
+{
+    # Show apache errorlog contents on failures.
+    #
+    # Usually used like this:
+    #
+    #    checkpoint_apache_errorlogs;
+    #    my $resp = $ua->get(...); # a possibly failing LWP call
+    #    $resp->is_success or output_apache_errorslogs;
+    #
+    # This of course only works if the current user has read
+    # access to the apache logs, which is often not the case
+    # (e.g. on debian systems only members of the adm group
+    # may read the logs)
+    #
+    # Also this does not work if the logfiles are named
+    # differently than <something>error.log, or are in a
+    # non-default location (on debian-like systems in
+    # /var/log/apache2).
+
+    my %seek_pos;
+    my @remember_checkpoint_errors;
+
+    sub checkpoint_apache_errorlogs () {
+	%seek_pos = ();
+	@remember_checkpoint_errors = ();
+	my @log_files;
+	require File::Glob;
+	if ($^O eq 'linux') { # actually matches only for Debian-like distributions
+	    @log_files = File::Glob::bsd_glob("/var/log/apache2/*error.log");
+	} elsif ($^O eq 'freebsd') {
+	    @log_files = File::Glob::bsd_glob("/var/log/httpd*error.log");
+	} else {
+	    push @remember_checkpoint_errors, "No apache errorlog checkpoint support for $^O";
+	    return;
+	}
+	if (!@log_files) {
+	    push @remember_checkpoint_errors, "Cannot find any matching apache errorlogs";
+	} else {
+	    for my $log_file (@log_files) {
+		$seek_pos{$log_file} = -s $log_file;
+	    }
+	}
+    }
+
+    sub output_apache_errorslogs () {
+	if (@remember_checkpoint_errors) {
+	    Test::More::diag(join("\n", @remember_checkpoint_errors));
+	    return;
+	}
+
+	for my $log_file (keys %seek_pos) {
+	    if (-e $log_file && -s $log_file > $seek_pos{$log_file}) {
+		if (open my $fh, "<", $log_file) {
+		    if (seek $fh, $seek_pos{$log_file}, 0) {
+			local $/ = undef;
+			my $log = <$fh>;
+			Test::More::diag("New contents in $log_file:\n$log\n----------------------------------------------------------------------");
+		    } else {
+			Test::More::diag("Cannot seek in $log_file: $!");
+		    }
+		} else {
+		    Test::More::diag("Cannot open $log_file: $!");
+		}
+	    }
+	}
+    }
 }
 
 1;

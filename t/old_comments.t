@@ -32,7 +32,7 @@ BEGIN {
     use constant TODO_BERGMANNSTR => "2014-05-23T12:00:00" gt strftime("%FT%T", localtime) && 'Temporary changed comments in Bergmannstr.';
 }
 
-use BBBikeTest qw(eq_or_diff check_cgi_testing);
+use BBBikeTest qw(eq_or_diff check_cgi_testing checkpoint_apache_errorlogs output_apache_errorslogs);
 
 BEGIN {
     if ($] < 5.006) {
@@ -176,9 +176,10 @@ for my $cgiurl (@urls) {
 	my($from, $to, $expected, $desc, $is_todo) = @$test;
 	my $qs = get_qs($from, $to);
 	my $url = "$cgiurl?$qs";
+	checkpoint_apache_errorlogs;
 	my $res = $ua->get($url);
 	ok($res->is_success, "Index $inx, $from - $to")
-	    or diag $res->as_string;
+	    or do { diag $res->as_string; output_apache_errorslogs };
 	my $got = Load($res->decoded_content);
 	my $comments = [ map {
 	    +{ map { ($_,1) } split /;\s+/, $_->{Comment} };
