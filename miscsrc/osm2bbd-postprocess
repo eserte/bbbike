@@ -316,11 +316,11 @@ sub target_title_for_dataset {
 	if (defined $max) {
 	    $set_dataset_title = $max->[Strassen::NAME()];
 	} else {
-	    print STDERR "Cannot guess dataset title, no largest city found.\n";
+	    print STDERR "Cannot guess dataset title, no largest city found.\n" if $debug;
 	    return;
 	}
     }
-    print STDERR "setting $set_dataset_title as title for dataset ";
+    print STDERR "setting $set_dataset_title as title for dataset " if $debug;
     $meta->{dataset_title} = $set_dataset_title;
     _write_meta($meta);
 }
