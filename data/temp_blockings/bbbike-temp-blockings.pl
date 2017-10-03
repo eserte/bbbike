@@ -26564,7 +26564,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1507024800, # 2017-10-03 12:00
+       until => 1507011106, # 1507024800, # 2017-10-03 12:00
        text  => 'Rund um den Innsbrucker Platz: Bombenfund, zahlreiche Straßen im 500m-Radius gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
