@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2010,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2010,2012,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ use 5.006; # sprintf("%b")
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.04';
+$VERSION = '0.05';
 
 sub encode_number {
 #   1. Take the initial signed value:
@@ -198,7 +198,7 @@ Algorithm::GooglePolylineEncoding - Google's Encoded Polyline Algorithm Format
 B<Algorithm::GooglePolylineEncoding> implements the encoded polyline
 algorithm format which is used in some parts of the Google Maps API.
 The algorithm is described in
-L<http://code.google.com/intl/en/apis/maps/documentation/polylinealgorithm.html>.
+L<https://developers.google.com/maps/documentation/utilities/polylinealgorithm>.
 
 This module is a light-weight version of
 L<Geo::Google::PolylineEncoder>, essentially just doing the encoding
@@ -238,7 +238,7 @@ Slaven Rezic <srezic@cpan.org>
 
 =head1 COPYRIGHT
 
-Copyright (c) 2009,2010,2012 Slaven Rezic. All rights reserved.
+Copyright (c) 2009,2010,2012,2017 Slaven Rezic. All rights reserved.
 This module is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 

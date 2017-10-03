@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2005,2008,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2005,2008,2015,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,7 +18,7 @@ use base qw(Tk::Frame);
 use Tk;
 Construct Tk::Widget 'LogScale';
 
-$VERSION = '0.10';
+$VERSION = '0.11';
 
 sub ClassInit {
     my($class,$mw) = @_;

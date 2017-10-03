@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: Http.pm,v 4.5 2016/12/11 17:02:00 eserte Exp $
+# $Id: Http.pm,v 4.6 2017/09/24 21:30:35 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1995,1996,1998,2000,2001,2003,2005,2008,2014,2015,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 1995,1996,1998,2000,2001,2003,2005,2008,2014,2015,2016,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -25,13 +25,13 @@ use vars qw(@ISA @EXPORT_OK $VERSION $tk_widget $user_agent $http_defaultheader
 @ISA = qw(Exporter);
 @EXPORT_OK = qw(get $user_agent $http_defaultheader
 		rfc850_date uuencode);
-$VERSION = sprintf("%d.%02d", q$Revision: 4.5 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q$Revision: 4.6 $ =~ /(\d+)\.(\d+)/);
 
 $tk_widget = 0 unless defined $tk_widget;
 $timeout = 10  unless defined $timeout;
 $user_agent = "Http.pm/$VERSION (perl)";
 $http_defaultheader = <<EOF;
-Accept: */*;
+Accept: */*\r
 EOF
 
 if (is_in_path("zcat")) {

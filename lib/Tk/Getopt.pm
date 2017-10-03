@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1997,1998,1999,2000,2003,2007,2008,2012,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 1997,1998,1999,2000,2003,2007,2008,2012,2014,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -25,7 +25,7 @@ use constant OPTEXTRA => 3;
 
 use Carp qw();
 
-$VERSION = '0.50_50';
+$VERSION = '0.51';
 $VERSION =~ s{_}{};
 
 $DEBUG = 0;
@@ -207,6 +207,15 @@ sub load_options {
     my($self, $filename) = @_;
     $filename = $self->{'filename'} if !$filename;
     return if !$filename;
+    require File::Spec;
+    if (!-e $filename) {
+	warn "File $filename does not exist";
+	return undef;
+    }
+    if (!File::Spec->file_name_is_absolute($filename)) {
+	# required for do operation with PERL_USE_UNSAFE_INC=0
+	$filename = File::Spec->rel2abs($filename);
+    }
     if ($self->{'nosafe'}) {
 	require Safe;
 	my $c = new Safe;
