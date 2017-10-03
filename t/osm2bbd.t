@@ -129,7 +129,7 @@ GetOptions("keep" => \$keep)
 EOF
     close $osmfh;
 
-    my @cmd = ($^X, $osm2bbd, "--debug=0", "-f", "-mapname", "City/Citypart", "-o", $destdir, $osmfile);
+    my @cmd = ($^X, $osm2bbd, "--debug=0", "-f", "-o", $destdir, $osmfile);
     system @cmd;
     is $?, 0, "<@cmd> works";
 
@@ -139,7 +139,6 @@ EOF
     is $meta->{coordsys}, 'wgs84';
     like "@{ $meta->{commandline} }", qr{osm2bbd};
     is $meta->{country}, 'DE', 'country heuristics';
-    is $meta->{mapname}, 'City/Citypart', 'passed -mapname';
 
     {
 	my $strassen = Strassen->new("$destdir/strassen");
@@ -265,7 +264,6 @@ EOF
 
     my $meta = BBBikeYAML::LoadFile("$destdir/meta.yml");
     is $meta->{coordsys}, 'wgs84';
-    ok !exists($meta->{mapname}), '-mapname not specified';
 }
 
 SKIP: {
