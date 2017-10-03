@@ -35,7 +35,7 @@ use IO::Select;
 use IO::Pipe;
 use LWP::UserAgent;
 
-use BBBikeTest qw($htmldir $cgiurl check_cgi_testing);
+use BBBikeTest qw($htmldir $cgiurl check_cgi_testing checkpoint_apache_errorlogs output_apache_errorslogs);
 
 check_cgi_testing;
 
@@ -45,6 +45,10 @@ plan tests => $concurrency;
 
 #my $test_url = "$htmldir/images/favicon.ico"; # too fast to be concurrent
 my $test_url = $cgiurl;
+
+my $is_local_server = $test_url =~ m{^http://localhost};
+
+checkpoint_apache_errorlogs if $is_local_server;
 
 my $sel = IO::Select->new;
 for (1..$concurrency) {
@@ -63,13 +67,19 @@ for (1..$concurrency) {
 $SIG{ALRM} = sub { die "Timeout!" };
 alarm(60);
 
+my $got_errors;
 while(my @ready = $sel->can_read(30)) {
     for my $fh (@ready) {
 	chomp(my $got = <$fh>);
-	is $got, 200, "got 200 from $fh";
+	is $got, 200, "got 200 from $fh"
+	    or $got_errors++;
 	$sel->remove($fh);
     }
     last if $sel->handles == 0;
+}
+
+if ($is_local_server && $got_errors) {
+    diag output_apache_errorslogs;
 }
 
 __END__

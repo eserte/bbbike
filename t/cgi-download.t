@@ -25,7 +25,7 @@ use lib ($FindBin::RealBin, "$FindBin::RealBin/..");
 use File::Temp qw(tempfile);
 use Getopt::Long;
 
-use BBBikeTest qw(check_cgi_testing zip_ok get_std_opts $cgidir);
+use BBBikeTest qw(check_cgi_testing zip_ok get_std_opts $cgidir checkpoint_apache_errorlogs output_apache_errorslogs);
 check_cgi_testing; # may exit
 
 plan tests => 6;
@@ -40,6 +40,8 @@ $ua->env_proxy;
 my $snapshot_github_rootdir_qr = qr{(BBBike-snapshot-\d+|bbbike-master)};
 my $snapshot_rootdir_qr = qr{BBBike-snapshot-\d+};
 
+my $is_local_server = $cgidir =~ m{^http://localhost};
+
 my($tmpfh,$tempfile) = tempfile(UNLINK => 1, SUFFIX => "_cgi-download.t.zip")
     or die $!;
 for my $def (
@@ -48,9 +50,14 @@ for my $def (
 	     ['bbbike-snapshot.cgi?local=1', qr{^$snapshot_rootdir_qr/bbbike$}, qr{^$snapshot_rootdir_qr/data/strassen$}],
 	    ) {
     my($baseurl, @member_checks) = @$def;
+    checkpoint_apache_errorlogs if $is_local_server;
     my $resp = $ua->get("$cgidir/$baseurl", ':content_file' => $tempfile);
     ok $resp->is_success, "Fetching $baseurl"
-	or diag $resp->status_line;
+	or do {
+	    output_apache_errorslogs if $is_local_server;
+	    diag $resp->status_line;
+	};
+	    
     zip_ok $tempfile, -memberchecks => \@member_checks;
 }
 
