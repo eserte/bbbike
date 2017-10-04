@@ -32,7 +32,11 @@ use warnings;
 	my $can_coloring;
 	sub _can_coloring {
 	    return $can_coloring if defined $can_coloring;
-	    $can_coloring = eval { require Term::ANSIColor; 1 } ? 1 : 0;
+	    # XXX What needs to be done to get coloring on Windows?
+	    # XXX Probably should also check if the terminal is ANSI-capable at all
+	    # XXX Probably should not use coloring on non-terminals (but
+	    #     there could be a --color option like in git to force it)
+	    $can_coloring = $^O ne 'MSWin32' && eval { require Term::ANSIColor; 1 } ? 1 : 0;
 	}
     }
 
@@ -108,6 +112,129 @@ use warnings;
     }
 
     sub throw { die Doit::Exception->new(@_) }
+}
+
+{
+    package Doit::Util;
+    use Exporter 'import';
+    our @EXPORT; BEGIN { @EXPORT = qw(in_directory) }
+    $INC{'Doit/Util.pm'} = __FILE__; # XXX hack
+    use Doit::Log;
+
+    sub in_directory (&$) {
+	my($code, $dir) = @_;
+	my $save_pwd;
+	if (defined $dir) {
+	    $save_pwd = save_pwd2();
+	    chdir $dir
+		or error "Can't chdir to $dir: $!";
+	}
+	$code->();
+    }
+
+    # REPO BEGIN
+    # REPO NAME save_pwd2 /Users/eserte/src/srezic-repository 
+    # REPO MD5 d0ad5c46f2276dc8aff7dd5b0a83ab3c
+    sub save_pwd2 {
+	require Cwd;
+	my $pwd = Cwd::getcwd();
+	if (!defined $pwd) {
+	    warning "No known current working directory";
+	}
+	bless {cwd => $pwd}, __PACKAGE__ . '::SavePwd2';
+    }
+
+    {
+	my $DESTROY = sub {
+	    my $self = shift;
+	    if (defined $self->{cwd}) {
+		chdir $self->{cwd}
+		    or error "Can't chdir to $self->{cwd}: $!";
+	    }
+	};
+	no strict 'refs';
+	*{__PACKAGE__.'::SavePwd2::DESTROY'} = $DESTROY;
+    }
+    # REPO END
+}
+
+{
+    package Doit::Win32Util;
+
+    # Taken from http://blogs.perl.org/users/graham_knop/2011/12/using-system-or-exec-safely-on-windows.html
+    sub win32_quote_list {
+	my (@args) = @_;
+
+	my $args = join ' ', map { _quote_literal($_) } @args;
+
+	if (_has_shell_metachars($args)) {
+	    # cmd.exe treats quotes differently from standard
+	    # argument parsing. just escape everything using ^.
+	    $args =~ s/([()%!^"<>&|])/^$1/g;
+	}
+	return $args;
+    }
+
+    sub _quote_literal {
+	my ($text) = @_;
+
+	# basic argument quoting.  uses backslashes and quotes to escape
+	# everything.
+	if ($text ne '' && $text !~ /[ \t\n\v"]/) {
+	    # no quoting needed
+	} else {
+	    my @text = split '', $text;
+	    $text = q{"};
+	    for (my $i = 0; ; $i++) {
+		my $bs_count = 0;
+		while ( $i < @text && $text[$i] eq "\\" ) {
+		    $i++;
+		    $bs_count++;
+		}
+		if ($i > $#text) {
+		    $text .= "\\" x ($bs_count * 2);
+		    last;
+		} elsif ($text[$i] eq q{"}) {
+		    $text .= "\\" x ($bs_count * 2 + 1);
+		} else {
+		    $text .= "\\" x $bs_count;
+		}
+		$text .= $text[$i];
+	    }
+	    $text .= q{"};
+	}
+
+	return $text;
+    }
+
+    # direct port of code from win32.c
+    sub _has_shell_metachars {
+	my $string = shift;
+	my $inquote = 0;
+	my $quote = '';
+
+	my @string = split '', $string;
+	for my $char (@string) {
+	    if ($char eq q{%}) {
+		return 1;
+	    } elsif ($char eq q{'} || $char eq q{"}) {
+		if ($inquote) {
+		    if ($char eq $quote) {
+			$inquote = 0;
+			$quote = '';
+		    }
+		} else {
+		    $quote = $char;
+		    $inquote++;
+		}
+	    } elsif ($char eq q{<} || $char eq q{>} || $char eq q{|}) {
+		if ( ! $inquote) {
+		    return 1;
+		}
+	    }
+	}
+	return;
+    }
 }
 
 {
@@ -296,6 +423,42 @@ use warnings;
 	}
     }
 
+    sub cmd_ln_nsf {
+	my($self, $oldfile, $newfile) = @_;
+
+	my $doit = 1;
+	if (!defined $oldfile) {
+	    error "oldfile was not specified for ln_nsf";
+	} elsif (!defined $newfile) {
+	    error "newfile was not specified for ln_nsf";
+	} elsif (-l $newfile) {
+	    my $points_to = readlink $newfile
+		or error "Unexpected: readlink $newfile failed (race condition?)";
+	    if ($points_to eq $oldfile) {
+		$doit = 0;
+	    }
+	} elsif (-d $newfile) {
+	    # Theoretically "ln -nsf destination directory" works (not always,
+	    # e.g. fails with destination=/), but results are not very useful,
+	    # so fail here.
+	    error qq{"$newfile" already exists as a directory};
+	} else {
+	    # probably a file, keep $doit=1
+	}
+
+	my @commands;
+	if ($doit) {
+	    push @commands, {
+			     code => sub {
+				 system 'ln', '-nsf', $oldfile, $newfile;
+				 error "ln -nsf $oldfile $newfile failed" if $? != 0;
+			     },
+			     msg => "ln -nsf $oldfile $newfile",
+			    };
+	}
+	Doit::Commands->new(@commands);
+    }
+
     sub cmd_make_path {
 	my($self, @directories) = @_;
 	my $options = {}; if (ref $directories[-1] eq 'HASH') { $options = pop @directories }
@@ -463,6 +626,8 @@ use warnings;
 	my $instr = delete $options->{instr}; $instr = '' if !defined $instr;
 	error "Unhandled options: " . join(" ", %$options) if %$options;
 
+	@args = Doit::Win32Util::win32_quote_list(@args) if $^O eq 'MSWin32';
+
 	require IPC::Open2;
 
 	my $code = sub {
@@ -504,6 +669,8 @@ use warnings;
 	my $errref = delete $options->{errref};
 	my $statusref = delete $options->{statusref};
 	error "Unhandled options: " . join(" ", %$options) if %$options;
+
+	@args = Doit::Win32Util::win32_quote_list(@args) if $^O eq 'MSWin32';
 
 	require IO::Select;
 	require IPC::Open3;
@@ -575,6 +742,8 @@ use warnings;
 	my $info = delete $options->{info};
 	my $statusref = delete $options->{statusref};
 	error "Unhandled options: " . join(" ", %$options) if %$options;
+
+	@args = Doit::Win32Util::win32_quote_list(@args) if $^O eq 'MSWin32';
 
 	my $code = sub {
 	    open my $fh, '-|', @args
@@ -672,6 +841,7 @@ use warnings;
     sub cmd_system {
 	my($self, @args) = @_;
 	my $options = {}; if (@args && ref $args[0] eq 'HASH') { $options = shift @args }
+	@args = Doit::Win32Util::win32_quote_list(@args) if $^O eq 'MSWin32';
 	my $show_cwd = delete $options->{show_cwd};
 	error "Unhandled options: " . join(" ", %$options) if %$options;
 	my @commands;
@@ -756,7 +926,11 @@ use warnings;
     }
 
     sub cmd_write_binary {
-	my($self, $filename, $content) = @_;
+	my($self, @args) = @_;
+	my $options = {}; if (@args && ref $args[0] eq 'HASH') { $options = shift @args }
+	my $quiet = delete $options->{quiet} || 0;
+	error "Unhandled options: " . join(" ", %$options) if %$options;
+	my($filename, $content) = @args;
 
 	my $doit;
 	my $need_diff;
@@ -781,6 +955,7 @@ use warnings;
 	if ($doit) {
 	    push @commands, {
 			     code => sub {
+				 # XXX make atomic!
 				 open my $ofh, '>', $filename
 				     or die "Can't write to $filename: $!";
 				 binmode $ofh;
@@ -788,35 +963,47 @@ use warnings;
 				 close $ofh
 				     or die "While closing $filename: $!";
 			     },
-			     msg => do {
-				 if ($need_diff) {
-				     if (eval { require IPC::Run; 1 }) {
-					 my $diff;
-					 if (eval { IPC::Run::run(['diff', '-u', $filename, '-'], '<', \$content, '>', \$diff); 1 }) {
-					     "Replace existing file $filename with diff:\n$diff";
+			     ($quiet >= 2
+			      ? ()
+			      : (msg => do {
+				     if ($quiet) {
+					 if ($need_diff) {
+					     "Replace existing file $filename";
 					 } else {
-					     "(diff not available" . (!$diff_error_shown++ ? ", error: $@" : "") . ")";
+					     "Create new file $filename";
 					 }
 				     } else {
-					 my $diff;
-					 if (eval { require File::Temp; 1 }) {
-					     my($tempfh,$tempfile) = File::Temp::tempfile(UNLINK => 1);
-					     print $tempfh $content;
-					     if (close $tempfh) {
-						 $diff = `diff -u '$filename' '$tempfile'`;
-						 unlink $tempfile;
+					 if ($need_diff) {
+					     # XXX use safe backtick (info_qx) -> no IPC::Run required anymore
+					     if (eval { require IPC::Run; 1 }) {
+						 my $diff;
+						 if (eval { IPC::Run::run(['diff', '-u', $filename, '-'], '<', \$content, '>', \$diff); 1 }) {
+						     "Replace existing file $filename with diff:\n$diff";
+						 } else {
+						     "(diff not available" . (!$diff_error_shown++ ? ", error: $@" : "") . ")";
+						 }
 					     } else {
-						 $diff = "(diff not available, error in tempfile creation ($!))";
+						 my $diff;
+						 if (eval { require File::Temp; 1 }) {
+						     my($tempfh,$tempfile) = File::Temp::tempfile(UNLINK => 1);
+						     print $tempfh $content;
+						     if (close $tempfh) {
+							 $diff = `diff -u '$filename' '$tempfile'`;
+							 unlink $tempfile;
+						     } else {
+							 $diff = "(diff not available, error in tempfile creation ($!))";
+						     }
+						 } else {
+						     $diff = "(diff not available, neither IPC::Run nor File::Temp available)";
+						 }
+						 "Replace existing file $filename with diff:\n$diff";
 					     }
 					 } else {
-					     $diff = "(diff not available, neither IPC::Run nor File::Temp available)";
+					     "Create new file $filename with content:\n$content";
 					 }
-					 "Replace existing file $filename with diff:\n$diff";
 				     }
-				 } else {
-				     "Create new file $filename with content:\n$content";
 				 }
-			     },
+			     )),
 			    };
 	}
 	Doit::Commands->new(@commands);
@@ -1156,6 +1343,7 @@ use warnings;
 		 qw(open3 info_open3), # IPC::Open3
 		 qw(cond_run), # conditional run
 		 qw(touch), # like unix touch
+		 qw(ln_nsf), # like unix ln -nsf
 		 qw(create_file_if_nonexisting), # does the half of touch
 		 qw(write_binary), # like File::Slurper
 		 qw(change_file), # own invention
