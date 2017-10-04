@@ -213,6 +213,8 @@ start_webserver() {
     if [ "$USE_MODPERL" = "1" ]
     then
 	sudo service apache2 restart
+	sudo chmod 755 /var/log/apache2
+	sudo chmod 644 /var/log/apache2/*.log
     else
 	sudo -E $(which plackup) --server=Starman --user=$(id -u) --group=$(id -g) --env=test --port=80 cgi/bbbike.psgi &
     fi
