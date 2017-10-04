@@ -252,6 +252,39 @@ EOF
 	is $dataset_title, 'Berlin', 'dataset_title is still unchanged';
 	is_deeply $meta_new, $meta, 'meta.yml is otherwise still unchanged by osm2bbd-postprocess';
     }
+
+    {
+	my $local_language = 'de';
+	my $city_names = 'Bärlin';
+	my $neighbours = '["some data structure"]';
+	my $other_names = "Potsdam,Bernau";
+	my $region = "\x{20ac}urope";
+	my @add_args = map { Encode::encode_utf8($_) }
+	    (
+	     '--local-language', $local_language,
+	     '--city-names', $city_names,
+	     '--neighbours', $neighbours,
+	     '--other-names', $other_names,
+	     '--region', $region,
+	    );
+	my @cmd = (
+		   $^X, $osm2bbd_postprocess, "--debug=0", "--only-write-meta",
+		   @add_args,
+		   $destdir
+		  );
+	system @cmd;
+	is $?, 0, "<@cmd> works";
+
+	my $meta_new = BBBikeYAML::LoadFile("$destdir/meta.yml");
+	is $meta_new->{local_language}, $local_language;
+	is $meta_new->{city_names}, $city_names, 'option with unicode in latin1 range';
+	is_deeply $meta_new->{neighbours}, ["some data structure"], q{eval'ed option};
+	is $meta_new->{other_names}, $other_names;
+	is $meta_new->{region}, $region, 'option with unicode > 0xff';
+
+	my $meta_dd = Geography::FromMeta->load_meta("$destdir/meta.dd");
+	is_deeply $meta_dd, $meta_new, 'meta.dd and meta.yml have the same contents';
+    }
 }
 
 # Following is actually checking two things:

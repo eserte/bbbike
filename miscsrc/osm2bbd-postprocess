@@ -21,10 +21,10 @@ use lib (
 	);
 
 use vars qw($VERSION);
-$VERSION = 0.17;
+$VERSION = 0.18;
 
 use Cwd            qw(realpath);
-use File::Basename qw(dirname);
+use File::Basename qw(dirname basename);
 use File::Temp     qw(tempfile);
 use Getopt::Long;
 
@@ -44,6 +44,7 @@ my @targets = ('wasserstrassen_lowres',
 	       'zip_points', # dependency: addr_sort
 	       'cityparts',
 	       'addr_suburbs',
+	       'write_meta',
 	      );
 # Targets run by default (exclude obscure ones here)
 my @run_targets =
@@ -56,20 +57,22 @@ my @run_targets =
 	      |   zip_points            # experimental
 	      |   cityparts             # to be decided
 	      |   addr_suburbs          # experimental and very slow
+	      |   write_meta            # only needed if just additional meta options need to be written
 	      )$}x
 	  }
     @targets;
 
-my %skip_target;
-my %only_target;
+my %skip_target; # skip default targets
+my %only_target; # run only the listed targets
+my %add_target;  # add more targets to the default ones
 
 sub usage (;$) {
     my $msg = shift;
     warn $msg, "\n" if $msg;
     die "usage: $0 [--debug=0..3] [-force]\n" . join(" ", map {
 	(my $optname = $_) =~ s{_}{-}g;
-	"\t[-skip-$optname | -only-$optname]\n"
-    } @targets) . "\tdatadir\n";
+	"\t[-skip-$optname | -only-$optname | -add-$optname]\n"
+    } @targets) . "\tdatadir\n\nDefault targets are:\n@run_targets\n";
 }
 
 my $set_dataset_title_octets;
@@ -78,23 +81,32 @@ my $coastline_hack_anchor;
 
 my $debug = 1;
 my $force;
-my $local_language;
-my $city_names;
+my %add_meta;
 GetOptions(
 	   (map {
 	       (my $optname = $_) =~ s{_}{-}g;
-	       ("skip-$optname" => \$skip_target{$_},
+	       (
+		"skip-$optname" => \$skip_target{$_},
 		"only-$optname" => \$only_target{$_},
+		"add-$optname"  => \$add_target{$_},
 	       );
 	   } @targets),
 	   "debug=i" => \$debug,
-	   "local-language=s" => \$local_language,
-	   "city-names=s" => \$city_names,
+	   "local-language=s" => \$add_meta{local_language},
+	   "city-names=s"     => \$add_meta{city_names},
+	   'neighbours=s'     => \$add_meta{neighbours},
+	   "other-names:s"    => \$add_meta{other_names},
+	   "region=s"         => \$add_meta{region},
 	   "force!" => \$force,
 	   # targets with additional arguments
 	   "dataset-title=s" => \$set_dataset_title_octets,
 	   # XXX
 	   "coastline-hack-anchor=s" => \$coastline_hack_anchor,
+	   "h|help" => sub { usage },
+	   "v|version" => sub {
+	       print basename($0) . " $VERSION\n";
+	       exit 0;
+	   },
 	  )
     or usage;
 
@@ -115,6 +127,9 @@ if (grep { $_ } values %only_target) {
 }
 
 my %targets_to_run = map { ($_, 1) } grep { !$skip_target{$_} } @run_targets;
+for my $target (keys %add_target) {
+    $targets_to_run{$_} = 1 if $add_target{$target};
+}
 
 for my $target (@run_targets) {
     if ($skip_target{$target}) {
@@ -679,6 +694,26 @@ sub target_cityparts {
     chmod((0666 &~ umask), "$datadir/cityparts");
 }
 
+sub target_write_meta {
+    require Encode;
+
+    my $meta = eval { _load_meta() };
+
+    for my $key (keys %add_meta) {
+	my $val = $add_meta{$key};
+	if (defined $val) {
+	    $val = Encode::decode_utf8($val);
+	    if ($key eq 'neighbours') { # special handling
+		$val = eval $val;
+		die qq{Error while eval'ing "$val": $@} if $@;
+	    }
+	    $meta->{$key} = $val;
+	}
+    }
+
+    _write_meta($meta);
+}
+
 ######################################################################
 
 sub _load_meta {
@@ -702,11 +737,6 @@ sub _load_meta {
 
 sub _write_meta {
     my $meta = shift;
-
-    $meta->{"local_language"} = $local_language
-	if $local_language;
-    $meta->{"city_names"} = $city_names
-	if $city_names;
 
     require Data::Dumper;
 
@@ -777,6 +807,37 @@ The C<title_for_dataset> task can be given an option C<--dataset-title
 I<title>>, which should be an utf8-encoded name for the dataset. If
 not given, then the task would choose the name of the largest city in
 the area as the dataset title.
+
+The C<write_meta> task has to be called (e.g with C<--add-write-meta>
+or C<--only-write-meta> switch) if any of the following options is
+set:
+
+=over
+
+=item C<-local-language>
+
+Sets the C<local_language> field in the meta file.
+
+=item C<-city-names>
+
+Sets the C<city_names> field in the meta file.
+
+=item C<-neighbours>
+
+Sets the C<neighbours> field in the meta file. The value is expected
+to be a perl data structure which will be eval'ed.
+
+=item C<-other-names>
+
+Sets the C<other_names> field in the meta file.
+
+=item C<-region>
+
+Sets the C<region> field in the meta file.
+
+=back
+
+All of these expect values encoded as utf-8.
 
 =head1 AUTHOR
 
