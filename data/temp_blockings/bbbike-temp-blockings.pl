@@ -3175,7 +3175,7 @@ EOF
        text  => 'Universitätsstr., Richtung Dorotheenstr. gesperrt (bis 2010) ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; 9601,12380 9581,12588
+	q4::inwork; 9608,12380 9581,12588
 EOF
      },
      { from  => undef, # 
@@ -6782,8 +6782,8 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/971793-1328132-weihnachtsmarktamopernpalais.html',
        data  => <<EOF,
-	2::xmas 9743,12239 9798,12267
-	q4::xmas 9743,12239 9747,12205 9771,12190 9775,12178 9808,12182
+	2::xmas 9737,12238 9798,12267
+	q4::xmas 9737,12238 9747,12205 9771,12190 9775,12178 9808,12182
 EOF
      },
      { from  => 1163718000, # 2006-11-17 00:00
@@ -10657,7 +10657,7 @@ EOF
        text  => 'Weihnachtsmarkt ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::xmas 9708,12235 9702,12307 9695,12390
+	2::xmas 9730,12238 9713,12392
 EOF
      },
      { from  => undef, # # note: existiert nicht mehr
@@ -11882,7 +11882,7 @@ EOF
        data  => <<EOF,
 	2::temp 8358,11477 8301,11469 8226,11458 8145,11438 8083,11381 8065,11349 8031,11249 8000,11137 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514 7633,10394 7579,10183 7413,10244 7238,10299 7131,10331 7033,10328 6971,10346 6937,10363 6851,10416 6753,10446 6636,10492 6532,10529 6685,10690 6740,10755 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936
 	2::temp 8553,11630 8548,11571 8542,11502 8479,11493 8374,11479
-	2::temp 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400 9734,12395 9695,12390 9656,12386 9601,12380 9475,12365 9358,12351 9141,12320 9164,12172 9064,12156
+	2::temp 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9608,12380 9475,12365 9358,12351 9141,12320 9164,12172 9064,12156
 	2::temp 8553,11638 8567,11799 8571,11846 8577,11896 8595,12066 8737,12098 8743,12099 8861,12125 9054,12154
 	3 6972,10665 6818,10725 6740,10755 6607,10801
 	3 8901,12008 8861,12125 8804,12280
@@ -16794,7 +16794,7 @@ EOF
        text  => 'Universitätsstraße Richtung Unter den Linden gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; 9581,12588 9601,12380
+	q4::inwork; 9581,12588 9608,12380
 EOF
      },
      { ### INACTIVE ENTRY ###
@@ -19523,7 +19523,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_017503',
        data  => <<EOF,
-	2::temp 9858,12410 9780,12401 9771,12400 9734,12395 9695,12390 9656,12386 9601,12380 9475,12365 9358,12351
+	2::temp 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9608,12380 9475,12365 9358,12351
 EOF
      },
      { from  => 1311883200, # 2011-07-28 22:00
@@ -25467,6 +25467,7 @@ EOF
 #: by: http://www.berliner-woche.de/buckow/verkehr/der-lange-weg-zur-sanierten-strasse-bauarbeiten-am-buckower-damm-anwohner-aergern-sich-ueber-lkw-im-wohngebiet-d126968.html
 #: note: die Baustelle ist gewandert
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
+#: source_id: LMS-BR_r_LMS-BR_72519
 	q4::inwork 12911,1815 12940,1547
 EOF
      },
@@ -25643,7 +25644,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-09-22 vvv
+#: last_checked: 2017-10-04 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -26092,6 +26093,7 @@ EOF
        data  => <<EOF,
 #: note: laut fritz bis 21.10.2017 08:00 Uhr
 #: by: http://werbegemeinschaft-friedrichshagen.de/wp-content/uploads/2017/05/2017-05_Boelschestr_Anwohnerflyer_web.pdf
+#: source_id: LMS-BR_r_LMS-BR_97860
 	q4::inwork; 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
 EOF
      },
@@ -26294,6 +26296,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.611086.php',
        data  => <<EOF,
 #: source_id: 2147341585
+#: source_id: LMS-BR_r_LMS-BR_103462_LMS-BR_72
 #: note: laut vmz bis Mitte 10/2017, laut fritz bis 2017-10-20
 #: next_check: 2017-10-20
 	q4::inwork 854,24387 836,24440 813,24497 790,24556 784,24612 790,24698 808,24790 811,24833 793,24943 785,24968
@@ -26388,6 +26391,7 @@ EOF
        text  => 'Witzlebenstr.: zwischen Steifensandstr. und Kaiserdamm gesperrt, eventuell sind auch Radfahrer betroffen, bis 20.10.2017',
        type  => 'handicap',
        data  => <<EOF,
+#: source_id: LMS-BR_r_LMS-BR_104863_LMS-BR_72
 	q4::inwork 3069,11551 2924,11309
 EOF
      },
@@ -26510,6 +26514,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.629207.php',
        data  => <<EOF,
 #: source_id: 2147341831
+#: source_id: LMS-BR_r_LMS-BR_109608_LMS-BR_72
 	q4::inwork -1869,19974 -1806,19806 -1794,19681 -1788,19663
 EOF
      },
@@ -26528,6 +26533,7 @@ EOF
        type  => 'handicap',
        source_id => '2147341767',
        data  => <<EOF,
+#: source_id: LMS-BR_r_LMS-BR_108061_LMS-BR_72
 	q3::inwork; 10167,19797 10132,19993 10117,20065 10106,20093 10068,20188 10066,20323 10064,20437 10066,20494
 EOF
      },

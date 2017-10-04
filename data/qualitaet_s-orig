@@ -162,7 +162,7 @@ Kopernikusstr.: mäßiges Kopfsteinpflaster	Q2 13467,11778 13651,11731
 Torellstr.: mäßiges Kopfsteinpflaster	Q2 13295,11792 13467,11778
 #: next_check_id: RUEDERSDORFER-2017
 #: XXX Q0, sobald die Bauarbeiten beendet und die letzte Deckschicht drauf ist
-#: last_checked: 2017-09-29
+#: last_checked: 2017-10-04
 #: check_frequency: 7d
 Rüdersdorfer Str.: Asphalt	Q0- 13295,11792 13173,11788 13066,11854
 Kaskelstr.: relative glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
@@ -7101,9 +7101,10 @@ Straße 46 (Blankenburg): Asphalt	Q0 14482,20547 14685,20504
 Straße 46 (Blankenburg): unbefestigte Straße	Q2 14320,20580 14482,20547
 Mittelstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 13912,20650 14320,20580
 Am Fließ: Asphalt	Q0 13931,20549 13955,20452 13991,20425 14128,20410 14263,20352 14386,20237 14432,20188
-Bebelplatz: gepflastert	Q1 9708,12235 9702,12307 9695,12390
-Bebelplatz: gepflastert	Q1 9743,12239 9702,12307 9656,12386
-Bebelplatz: gepflastert	Q1 9674,12231 9702,12307 9734,12395
+Bebelplatz: gepflastert	Q1 9730,12238 9713,12392
+Bebelplatz: gepflastert	Q1 9737,12238 9702,12307 9664,12387
+Bebelplatz: gepflastert	Q1 9680,12232 9702,12307 9713,12392
+Bebelplatz: gepflastert	Q1 9680,12232 9664,12387
 (Yorckstr. - Park am Gleisdreieck): Beton	Q0 8358,9568 8357,9598 8353,9642 8350,9685 8349,9697
 (Park am Gleisdreieck, Querweg): Beton	Q0 8335,9702 8349,9697 8446,9670 8497,9654 8540,9644
 (Park am Gleisdreieck, Berlin-Leipzig): Asphalt	Q0 8341,10721 8332,10637 8328,10585 8296,10438 8278,10384 8309,10368 8315,10347 8333,10167 8360,10133 8338,9971 8335,9702 8330,9610 8338,9593
@@ -9934,7 +9935,9 @@ Fellbacher Str.: Kopfsteinpflaster	Q2 3610,23272 3653,23305
 Torstr. - Weydingerstr.: Verbundsteinpflaster	Q1+ 11079,13492 11111,13518
 Wilhelmine-Gemberg-Weg: Steinpflaster	Q1+ 11715,11522 11767,11662
 #: XXX Wird die Fahrbahn nochmal geändert?
+#: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.635538.php
 #: last_checked: 2017-09-01
+#: next_check: 2018-03-01
 Wilhelmine-Gemberg-Weg: Feinschotter	Q1 11767,11662 11829,11727
 Alexanderplatz: Pflasterung mit Schäden	Q1- 11055,12717 11030,12741 11007,12773 10970,12822
 Alexanderplatz: Pflasterung mit Schäden	Q1- 11030,12741 11087,12780
@@ -10073,6 +10076,8 @@ Waldkiefernring: Asphalt	Q0 21855,2392 21754,2329 21782,2283 21885,2343
 Fähenweg: Asphalt	Q0 21869,2367 21791,2323
 Sportpromenade: Asphalt mit einigen Schäden und Wurzelhebungen	Q1+ 25646,-209 25574,-38 25537,167 25461,254 25172,345 24827,354 24743,370 24666,436
 Mauerpark: Kleinsteinpflaster	Q1 10188,15474 10234,15490
+#: XXX hat sich mit der Neugestaltung etwas geändert?
+#: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.635732.php
 Zeppelinplatz: Kleinsteinpflaster	Q1 6794,15553 6884,15456
 Beuth-Hochschule: Verbundsteinpflaster	Q1 6884,15456 6996,15319
 Lydia-Rabinowitsch-Str.: Asphalt	Q0 7820,13994 7930,14060 7973,13991 7865,13924
@@ -24766,7 +24771,7 @@ Georgenkirchstr.: Asphalt	Q0 11842,13576 11784,13513 11703,13426 11652,13372 115
 #: corrected_by: srt ("kurze Kopfsteinpflasterabschnitte")
 (Volkspark Friedrichshain, parallel zur Friedenstr.): Gehwegplatten und kurze Kopfsteinpflasterabschnitte	Q0- 12382,13097 12380,13120 12344,13157 12244,13240 12185,13298 12141,13341 12060,13422 12005,13481 11957,13528 11857,13596 11823,13610 11785,13625
 Hinter der Katholischen Kirche: Kopfsteinpflaster	Q1 9798,12267 9795,12293 9780,12401
-Behrenstr.: Asphalt	Q0 9496,12215 9631,12227 9674,12231 9708,12235 9743,12239 9798,12267
+Behrenstr.: Asphalt	Q0 9496,12215 9631,12227 9680,12232 9730,12238 9737,12238 9798,12267
 Markgrafenstr. (Kreuzberg, Mitte): Asphalt	Q0 9631,12227 9645,12133
 #: corrected_by: srt (Q1 -> Q2)
 Am Festungsgraben: Kopfsteinpflaster	Q2 9845,12506 9764,12492

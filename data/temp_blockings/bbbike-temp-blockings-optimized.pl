@@ -3476,6 +3476,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: http://www.berliner-woche.de/buckow/verkehr/der-lange-weg-zur-sanierten-strasse-bauarbeiten-am-buckower-damm-anwohner-aergern-sich-ueber-lkw-im-wohngebiet-d126968.html
 #: note: die Baustelle ist gewandert
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
+#: source_id: LMS-BR_r_LMS-BR_72519
 	q4::inwork 12911,1815 12940,1547
 ',
          'from' => 1467661160,
@@ -3503,7 +3504,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-09-22 vvv
+#: last_checked: 2017-10-04 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -3615,6 +3616,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: note: laut fritz bis 21.10.2017 08:00 Uhr
 #: by: http://werbegemeinschaft-friedrichshagen.de/wp-content/uploads/2017/05/2017-05_Boelschestr_Anwohnerflyer_web.pdf
+#: source_id: LMS-BR_r_LMS-BR_97860
 	q4::inwork; 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
 ',
          'from' => 1495918329,
@@ -3714,6 +3716,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: source_id: 2147341585
+#: source_id: LMS-BR_r_LMS-BR_103462_LMS-BR_72
 #: note: laut vmz bis Mitte 10/2017, laut fritz bis 2017-10-20
 #: next_check: 2017-10-20
 	q4::inwork 854,24387 836,24440 813,24497 790,24556 784,24612 790,24698 808,24790 811,24833 793,24943 785,24968
@@ -3764,7 +3767,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '	q4::inwork 3069,11551 2924,11309
+         'data' => '#: source_id: LMS-BR_r_LMS-BR_104863_LMS-BR_72
+	q4::inwork 3069,11551 2924,11309
 ',
          'from' => 1501870960,
          'id' => 2894,
@@ -3864,6 +3868,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: source_id: 2147341831
+#: source_id: LMS-BR_r_LMS-BR_109608_LMS-BR_72
 	q4::inwork -1869,19974 -1806,19806 -1794,19681 -1788,19663
 ',
          'from' => 1505599200,
@@ -3884,7 +3889,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1522576800
        },
        {
-         'data' => '	q3::inwork; 10167,19797 10132,19993 10117,20065 10106,20093 10068,20188 10066,20323 10064,20437 10066,20494
+         'data' => '#: source_id: LMS-BR_r_LMS-BR_108061_LMS-BR_72
+	q3::inwork; 10167,19797 10132,19993 10117,20065 10106,20093 10068,20188 10066,20323 10064,20437 10066,20494
 ',
          'from' => 1504896268,
          'id' => 2909,

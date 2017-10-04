@@ -309,6 +309,7 @@ Kastanienallee: Radverkehrsanlagen sind vorgesehen (Radspuren)	?::projected 8900
 Pasewalker Str.: Schutzstreifen werden erstellt, außerdem eine Ampel an der Kreuzung Bahnhofstr.	?::projected 12121,20969 12158,21166 12166,21208 12188,21330 12209,21448 12172,21545 12042,21886
 # 
 #: osm_watch: way id="27370704" version="9"
+#: source_id: LMS-BR_r_LMS-BR_111137_LMS-BR_72
 #: last_checked: 2017-08-06
 #: check_frequency: 90d
 Triftstr.: Planung von Radverkehrsanlagen	?::projected 11940,22587 11959,22696 11979,22801 11995,22884 12023,23039 12027,23057 12039,23125 12058,23227 12067,23241
@@ -1122,12 +1123,14 @@ Rosenthaler Weg: Neubau der Straße, danach existieren Radspuren	?::inwork 10999,
 Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::projected 5476,19450 5495,19571 5533,19811 5545,19909 5517,20120
 #: XXX neue Termine: Baubeginn: voraussichtlich Frühjahr 2017, Bauende: voraussichtlich Mitte 2020; laut vmz bis Februar 2018 (zwischen Roedernallee und Nordgraben), laut fritz bis 9.2.2018
 #: source_id: 2147341383
+#: source_id: LMS-BR_r_LMS-BR_98919
 #: next_check: 2018-02-09
 Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::inwork 5517,20120 5506,20197 5476,20372
 #: next_check: 2019-01-01
 Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::projected 5476,20372 5463,20461 5441,20613 5421,20748 5410,20822 5401,20882 5395,20915 5382,21001 5356,21146 5349,21198 5343,21250
 #: XXX Abschnitt Wittenauer Str. - Göschenplatz, laut fritz bis 28.02.2018
 #: source_id: 2147341699
+#: source_id: LMS-BR_r_LMS-BR_106210_LMS-BR_72
 #: next_check: 2018-02-28
 Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::inwork 5343,21250 5341,21266 5333,21332 5320,21432 5311,21495 5210,21636 5136,21738
 #: last_checked ^^^
@@ -1471,6 +1474,7 @@ Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projecte
 Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgänger-?) entstehen?	?::inwork 13708,17453
 # 
 #: source_id: 2147341598
+#: source_id: LMS-BR_r_LMS-BR_103556_LMS-BR_72
 #: last_checked: 2017-08-30
 #: next_check: 2017-10-06
 Gustav-Adolf-Str.: ändert sich durch die Bauarbeiten an der Qualität etwas?	?::inwork 13708,17453 13633,17399
@@ -1684,7 +1688,7 @@ Kletterrosenweg	?::projected 21382,149 21354,289
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: XXX siehe auch gesperrt-orig-Eintrag zur Oberwallstr.
 #: XXX_osm: fehlt bei osm als "planned"/"proposed"
-#: last_checked: 2017-09-22
+#: last_checked: 2017-10-04
 Falkoniergasse: Genaue Lage? Qualität?	?::inwork 9939,12174 9909,12261
 # 
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060109.1050.33932.html
@@ -1995,6 +1999,8 @@ Poststadion: gibt es hier interessante Wegverbindungen für Radfahrer? wie sieht 
 #: XXX bei der ersten Prüfung: nicht relevant, nur einige Behinderungen in der querenden Jägerstr.
 #: XXX bei der zweiten Prüfung: man kommt gut vorbei. Jägerstr. werde ich eintragen.
 #: XXX bei der dritten Prüfung (2017-09-22): Richtung Norden ist tatsächlich gesperrt, aber man kann vermutlich vorbeikommen
+#: source_id: 2147341587
+#: source_id: LMS-BR_r_LMS-BR_103310_LMS-BR_72
 #: last_checked: 2017-09-28
 #: check_frequency: 7d
 Friedrichstr. Höhe Jägerstr.: Bauarbeiten, auch für Radfahrer relevant?	?::inwork; 9405,11903 9393,12000 9384,12103
@@ -2663,7 +2669,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2017-09-28
+#: last_checked: 2017-10-04
 #: check_frequency: 60d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # 

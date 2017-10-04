@@ -1436,7 +1436,7 @@ Stephanstr.	1s 6523,4491 6360,4504
 Am Poetensteig, Gramzow	1s:q1 50043,90187 50107,89717
 #: by: Juliane Bölker:
 Atzpodienstr. (Umgehung auf Gehweg möglich)	1s:q3 16485,12384 16509,12518 16564,12513
-Behrenstr./Bebelplatz	1s:q3 9798,12267 9743,12239 9708,12235 9674,12231 9631,12227
+Behrenstr./Bebelplatz	1s:q3 9798,12267 9737,12238 9730,12238 9680,12232 9631,12227
 Halenseestr.	1s:q2 2163,10024 2110,10101 2030,10253 1988,10328 1939,10446
 Zeltinger Platz	1s:q4 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
 Ludolfinger Platz	1s:q4 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277,25094 2285,25059 2277,25033
@@ -2810,7 +2810,7 @@ Zufahrt Parkhaus: Abrissarbeiten, Straße komplett gesperrt	2::inwork 8367,10745 
 Am Herzbergteich: noch wegen Bauarbeiten gesperrt; wann ist die Straße fertig?	2::inwork 17945,13493 17942,13568
 # 
 #: next_check_id: RUEDERSDORFER-2017
-#: last_checked: 2017-09-29
+#: last_checked: 2017-10-04
 #: check_frequency: 7d
 Rüdersdorfer Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 13173,11788 13066,11854
 # 
@@ -3310,12 +3310,10 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: http://www.dafmap.de/d/berlin.html?id=3588&mt=0&zoom=16
 #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung)
 #: XXX voraussichtliche Eröffnung 2017-10-03 (laut Tsp vom 2016-03-31)
-#: last_checked: 2017-09-22 vvv
-#: next_check: 2017-10-03 vvv
+#: last_checked: 2017-10-04 vvv
 Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9876,12298
 Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9798,12267 9795,12293 9780,12401
-Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9743,12239 9702,12307 9734,12395
-#: next_check: ^^^
+# REMOVED (mittlerweile offen) --- Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9737,12238 9702,12307 9734,12395
 #: last_checked: ^^^
 #: next_check_id: ^^^
 # 
