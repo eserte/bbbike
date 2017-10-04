@@ -272,7 +272,7 @@ EOF
 		   @add_args,
 		   $destdir
 		  );
-	system @cmd;
+	my_system @cmd;
 	is $?, 0, "<@cmd> works";
 
 	my $meta_new = BBBikeYAML::LoadFile("$destdir/meta.yml");
