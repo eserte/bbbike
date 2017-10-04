@@ -180,7 +180,11 @@ use warnings;
 
 	# basic argument quoting.  uses backslashes and quotes to escape
 	# everything.
-	if ($text ne '' && $text !~ /[ \t\n\v"]/) {
+	#
+	# The original code had a \v here, but this is not supported
+	# in perl5.8. Also, \v probably matches too many characters here
+	# --- restrict to the ones < 0x100
+	if ($text ne '' && $text !~ /[ \t\n\x0a\x0b\x0c\x0d\x85"]/) {
 	    # no quoting needed
 	} else {
 	    my @text = split '', $text;
