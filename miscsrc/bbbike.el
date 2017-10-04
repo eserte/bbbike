@@ -455,6 +455,15 @@
 	  (insert (concat "#: osm_watch: " elemtype " " elemid " " elemversion "\n")))
       (error "No X selection or X selection does not contain a way/node/relation line"))))
 
+(defun bbbike-insert-source-id ()
+  (interactive)
+  (let ((sel (bbbike--get-x-selection)))
+    (if (string-match "\t\\([A-Za-z0-9_-]+\\)\t\\(INUSE\\)?$" sel)
+	(let ((source-id (substring sel (match-beginning 1) (match-end 1))))
+	  (beginning-of-line)
+	  (insert (concat "#: source_id: " source-id "\n")))
+      (error "No X selection or X selection does not contain a source-id"))))
+
 (setq bbbike-next-check-id-regexp "^#:[ ]*\\(next_check_id\\):?[ ]*\\([^ \n]+\\)")
 
 (defun bbbike-grep ()
