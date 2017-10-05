@@ -178,3 +178,46 @@ EOF
 EOF
 
 }
+
+{
+    my $example_geojson = <<'EOF';
+{
+   "type" : "FeatureCollection",
+   "features" : [
+      {
+         "properties" : {
+            "username" : "hinzkunz",
+            "captured_at" : "2017-10-03T13:01:17.512Z",
+            "unused" : "unused"
+         },
+         "geometry" : {
+            "coordinates" : [
+               [
+                  13.2404591160321,
+                  52.48998644499
+               ],
+               [
+                  13.2404610705015,
+                  52.4899858314651
+               ]
+            ],
+            "type" : "LineString"
+         },
+         "type" : "Feature"
+      }
+   ]
+}
+EOF
+    my $expected_data =
+        [
+	 "2017-10-03T13:01:17.512Z hinzkunz\tY 13.2404591160321,52.48998644499 13.2404610705015,52.4899858314651\n",
+	];
+
+    my $s_geojson = Strassen::GeoJSON->new();
+    $s_geojson->geojsonstring2bbd($example_geojson,
+				  namecb => sub { my $f = shift; join(" ", @{$f->{properties}}{qw(captured_at username)}) },
+				  catcb => sub { "Y" },
+				 );
+    is_deeply $s_geojson->data, $expected_data, 'name/cat set with namecb/catcb';
+}
+
