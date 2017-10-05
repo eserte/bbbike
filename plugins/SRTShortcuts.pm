@@ -719,31 +719,11 @@ EOF
 		],
 	       ],
 	      ],
-	      [Button => $do_compound->("Street name experiment"),
-	       -command => sub { street_name_experiment() },
-	      ],
-	      [Button => $do_compound->("New GPS simplification"),
-	       -command => sub { new_gps_simplification() },
-	      ],
-	      [Button => $do_compound->('Real street widths'),
-	       -command => sub { real_street_widths() },
-	      ],
 	      [Button => $do_compound->('Search while type (Berlin/Potsdam streets)'),
 	       -command => sub { show_bbbike_suggest_toplevel() },
 	      ],
 	      [Button => $do_compound->('Search while type (everything)'),
 	       -command => sub { tk_suggest() },
-	      ],
-	      [Cascade => $do_compound->('Situation at point'), -menuitems =>
-	       [
-		[Button => 'For three points',
-		 -command => sub { show_situation_at_point() },
-		],
-		[Checkbutton => 'When calculating routes',
-		 -command => sub { toggle_situation_at_point_for_route() },
-		 -variable => \$show_situation_at_point_for_route,
-		],
-	       ],
 	      ],
 	      [Button => $do_compound->("Load route"),
 	       -command => sub { route_lister() },
@@ -754,51 +734,11 @@ EOF
 	      [Button => $do_compound->("Set Garmin device defaults"),
 	       -command => sub { garmin_devcap() },
 	      ],
-	      [Button => $do_compound->("Trafficlight circuit + GPS tracks"),
-	       -command => sub {
-		   require "$bbbike_rootdir/miscsrc/TrafficLightCircuitGPSTracking.pm";
-		   TrafficLightCircuitGPSTracking::tk_gui($main::top);
-	       },
-	      ],
-	      [Cascade => $do_compound->("Winter optimization"), -menuitems =>
-	       [
-		[Radiobutton => "Disable",
-		 -variable => \$want_winter_optimization,
-		 -value => '',
-		 -command => sub {
-		     do_winter_optimization(undef);
-		 },
-		],
-		(
-		 map {
-		     if ($_ eq '-') {
-			 '-';
-		     } else {
-			 my $winter_hardness = $_;
-			 [Radiobutton => $winter_hardness,
-			  -variable => \$want_winter_optimization,
-			  -value => $winter_hardness,
-			  -command => sub {
-			      do_winter_optimization($winter_hardness);
-			  },
-			 ];
-		     }
-		 } qw(- XXX_busroute - snowy very_snowy dry_cold - grade1 grade2 grade3)
-		),
-	       ],
-	      ],
 	      [Button => $do_compound->("Fragezeichen on route"),
 	       -command => sub { fragezeichen_on_route() },
 	      ],
-	      [Cascade => $do_compound->("Multi-page PDF"), -menuitems =>
-	       [
-		[Button => $do_compound->('Standard settings'),
-		 -command => sub { multi_page_pdf() },
-		],
-		[Button => $do_compound->('Custom settings'),
-		 -command => sub { multi_page_pdf_dialog() },
-		],
-	       ],
+	      [Button => $do_compound->('Mapillary tracks', $MultiMap::images{Mapillary}),
+	       -command => sub { select_and_show_mapillary_tracks() },
 	      ],
 	      [Cascade => $do_compound->("Development"), -menuitems =>
 	       [
@@ -830,6 +770,73 @@ EOF
 		 },
 		],
 	       ]
+	      ],
+	      [Cascade => $do_compound->("Various experiments"), -menuitems =>
+	       [
+		[Button => $do_compound->("Street name experiment"),
+		 -command => sub { street_name_experiment() },
+		],
+		[Button => $do_compound->("New GPS simplification"),
+		 -command => sub { new_gps_simplification() },
+		],
+		[Button => $do_compound->('Real street widths'),
+		 -command => sub { real_street_widths() },
+		],
+		[Cascade => $do_compound->('Situation at point'), -menuitems =>
+		 [
+		  [Button => 'For three points',
+		   -command => sub { show_situation_at_point() },
+		  ],
+		  [Checkbutton => 'When calculating routes',
+		   -command => sub { toggle_situation_at_point_for_route() },
+		   -variable => \$show_situation_at_point_for_route,
+		  ],
+		 ],
+		],
+		[Button => $do_compound->("Trafficlight circuit + GPS tracks"),
+		 -command => sub {
+		     require "$bbbike_rootdir/miscsrc/TrafficLightCircuitGPSTracking.pm";
+		     TrafficLightCircuitGPSTracking::tk_gui($main::top);
+		 },
+		],
+		[Cascade => $do_compound->("Winter optimization"), -menuitems =>
+		 [
+		  [Radiobutton => "Disable",
+		   -variable => \$want_winter_optimization,
+		   -value => '',
+		   -command => sub {
+		       do_winter_optimization(undef);
+		   },
+		  ],
+		  (
+		   map {
+		       if ($_ eq '-') {
+			   '-';
+		       } else {
+			   my $winter_hardness = $_;
+			   [Radiobutton => $winter_hardness,
+			    -variable => \$want_winter_optimization,
+			    -value => $winter_hardness,
+			    -command => sub {
+				do_winter_optimization($winter_hardness);
+			    },
+			   ];
+		       }
+		   } qw(- XXX_busroute - snowy very_snowy dry_cold - grade1 grade2 grade3)
+		  ),
+		 ],
+		],
+		[Cascade => $do_compound->("Multi-page PDF"), -menuitems =>
+		 [
+		  [Button => $do_compound->('Standard settings'),
+		   -command => sub { multi_page_pdf() },
+		  ],
+		  [Button => $do_compound->('Custom settings'),
+		   -command => sub { multi_page_pdf_dialog() },
+		  ],
+		 ],
+		],
+	       ],
 	      ],
 	      "-",
 	      [Cascade => $do_compound->("Rare or old"), -menu => $rare_or_old_menu],
@@ -3091,6 +3098,75 @@ sub show_diffs_since_last_deployment {
     my $layer = add_new_layer('str', $tmpfile);
 
     main::choose_ort("str", $layer);
+}
+
+######################################################################
+# Mapillary tracks
+
+sub select_and_show_mapillary_tracks {
+    require Tk::DateEntry;
+    require POSIX;
+    my $t = $main::top->Toplevel(-title => "Select Mapillary tracks");
+    $t->transient($main::top) if $main::transient;
+    my $date = POSIX::strftime("%Y-%m-%d", localtime);
+    my $de = $t->DateEntry
+	(-dateformat => 2,
+	 -todaybackground => "yellow",
+	 -weekstart => 1,
+	 -daynames => 'locale',
+	 -textvariable => \$date,
+	 -formatcmd => sub {
+	     my($year,$month,$day) = @_;
+	     sprintf "%04d-%02d-%02d", $year, $month, $day;
+	 },
+	)->pack;
+    $t->Button(-text => 'Show',
+	       -command => sub {
+		   show_mapillary_tracks(-since => $date);
+		   $t->destroy;
+	       },
+	      )->pack;
+}
+
+sub show_mapillary_tracks {
+    my(%args) = @_;
+    my $since = delete $args{-since};
+    die "Unhandled arguments: " . join(" ", %args) if %args;
+
+    require BBBikeYAML;
+    require File::Temp;
+    require LWP::UserAgent;
+    require Strassen::GeoJSON;
+    
+    my $mapillary_config_file = "$ENV{HOME}/.mapillary";
+    my $mapillary_config = eval { BBBikeYAML::LoadFile($mapillary_config_file) };
+    if (!$mapillary_config) {
+	main::status_message("Can't load $mapillary_config_file: $@", 'die');
+    }
+    my $client_id = $mapillary_config->{client_id};
+    if (!$client_id) {
+	main::status_message("No client_id in $mapillary_config_file", 'die');
+    }
+
+    my $url = "https://a.mapillary.com/v3/sequences?bbox=13.051179,52.337621,13.764158,52.689878";
+    if ($since) {
+	$url .= "&start_time=${since}T00:00:00Z";
+    }
+    $url .= "&client_id=${client_id}";
+
+    my $ua = LWP::UserAgent->new;
+    my $resp = $ua->get($url);
+    if (!$resp->is_success) {
+	main::status_message("Fetching $url failed: " . $resp->as_string, 'die');
+    }
+    my $geojson = $resp->decoded_content(charset => 'none');
+    my $sg = Strassen::GeoJSON->new;
+    $sg->geojsonstring2bbd($geojson);
+
+    my(undef, $tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => ($since ? "_$since" : "") . "_mapillary.bbd");
+    $sg->write($tmpfile);
+
+    main::plot_additional_layer("str", $tmpfile);    
 }
 
 ######################################################################
