@@ -31,6 +31,13 @@ plan 'no_plan';
     $s2_geojson->geojsonstring2bbd($geojson);
 
     is_deeply $s2_geojson->{data}, $s->{data}, 'roundtrip check with data-test/strassen';
+
+    my($tmpfh,$tmpfile) = tempfile(UNLINK => 1, SUFFIX => ".geojson");
+    print $tmpfh $geojson;
+    close $tmpfh or die $!;
+    my $s3_geojson = Strassen::GeoJSON->new;
+    $s3_geojson->geojson2bbd($tmpfile);
+    is_deeply $s3_geojson->{data}, $s->{data}, 'roundtrip check with geojson2bbd-loaded data';
 }
 
 {
