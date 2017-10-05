@@ -3161,12 +3161,12 @@ sub show_mapillary_tracks {
     }
     my $geojson = $resp->decoded_content(charset => 'none');
     my $sg = Strassen::GeoJSON->new;
-    $sg->geojsonstring2bbd($geojson);
+    $sg->geojsonstring2bbd($geojson, namecb => sub { my $f = shift; join(" ", @{$f->{properties}}{qw(captured_at username)}) });
 
     my(undef, $tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => ($since ? "_$since" : "") . "_mapillary.bbd");
     $sg->write($tmpfile);
 
-    main::plot_additional_layer("str", $tmpfile);    
+    main::plot_additional_layer("str", $tmpfile);
 }
 
 ######################################################################
