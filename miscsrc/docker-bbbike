@@ -1,0 +1,83 @@
+#!/usr/bin/perl
+# -*- perl -*-
+
+#
+# Author: Slaven Rezic
+#
+# Copyright (C) 2017 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: srezic@cpan.org
+# WWW:  http://bbbike.de
+#
+
+use FindBin;
+use lib "$FindBin::RealBin/../lib";
+use Doit;
+use Doit::Log;
+use Getopt::Long;
+use Hash::Util qw(lock_keys);
+
+sub usage (;$) {
+    die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
+usage: $0 [--dry-run] gui [--dist debian|ubuntu|...] [--distver stretch|...] [--src local|github]
+EOF
+}
+
+sub gui {
+    my($doit, %opt) = @_;
+    lock_keys %opt;
+    my $dockerfile = <<EOF;
+FROM $opt{dist}:$opt{distver}
+RUN apt-get update
+RUN apt-get install -qqy perl-tk
+EOF
+    if ($opt{src} eq 'github') {
+	$dockerfile .= <<EOF;
+RUN apt-get install -qqy git
+CMD git clone --depth=1 git://github.com/eserte/bbbike.git && bbbike/bbbike
+EOF
+    } elsif ($opt{src} eq 'local') {
+	$dockerfile .= <<EOF;
+CMD /bbbike/bbbike
+EOF
+    } else {
+	usage "Invalid --src value '$opt{src}', only 'github' and 'local' are known";
+    }
+    my $tag = 'bbbike-gui-'.$opt{dist}.'-'.$opt{distver};
+    $doit->run([qw(docker build --tag), $tag, '-'], '<', \$dockerfile);
+    my $XSOCK = '/tmp/.X11-unix';
+    my $XAUTH = '/tmp/.docker.xauth';
+    $doit->run(['xauth', 'nlist', $ENV{DISPLAY}], '|', ['sed', '-e', 's/^..../ffff/'], '|', ['xauth', '-f', $XAUTH, 'nmerge', '-']);
+    $doit->run(['docker', 'run', '-ti',
+		'-v', "$XSOCK:$XSOCK", '-v', "$XAUTH:$XAUTH",
+		($opt{src} eq 'local' ? ('-v', "$FindBin::RealBin/..:/bbbike") : ()),
+		'-e', "XAUTHORITY=$XAUTH", '-e', "DISPLAY=$ENV{DISPLAY}", $tag,
+	       ]);
+}
+
+return 1 if caller;
+
+my $doit = Doit->init;
+
+my $subcmd = shift
+    or usage "Subcmd is missing.";
+
+if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
+    my %opt = (
+	       dist    => 'debian',
+	       distver => 'latest',
+	       src     => 'local',
+	      );
+    GetOptions(\%opt,
+	       "dist=s",
+	       "distver|distversion=s",
+	       "src=s",
+	      )
+	or usage;
+    gui($doit, %opt);
+} else {
+    usage "Unknown subcmd '$subcmd'";
+}
+__END__
