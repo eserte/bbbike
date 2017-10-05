@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2017 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -57,17 +57,17 @@ if ($do_index) {
 	usage;
     }
 
-    require KinoSearch::Plan::Schema;
-    require KinoSearch::Plan::FullTextType;
-    require KinoSearch::Plan::StringType;
-    require KinoSearch::Analysis::PolyAnalyzer;
-    require KinoSearch::Index::Indexer;
+    require Lucy::Plan::Schema;
+    require Lucy::Plan::FullTextType;
+    require Lucy::Plan::StringType;
+    require Lucy::Analysis::PolyAnalyzer;
+    require Lucy::Index::Indexer;
 
     my $schema = do {
-	my $_schema = KinoSearch::Plan::Schema->new;
-	my $polyanalyzer = KinoSearch::Analysis::PolyAnalyzer->new(language => 'de');
-	my $type = KinoSearch::Plan::FullTextType->new(analyzer => $polyanalyzer);
-	my $noindex_type = KinoSearch::Plan::StringType->new(indexed => 0);
+	my $_schema = Lucy::Plan::Schema->new;
+	my $polyanalyzer = Lucy::Analysis::PolyAnalyzer->new(language => 'de');
+	my $type = Lucy::Plan::FullTextType->new(analyzer => $polyanalyzer);
+	my $noindex_type = Lucy::Plan::StringType->new(indexed => 0);
 	$_schema->spec_field(name => 'title',   type => $type);
 	$_schema->spec_field(name => 'content', type => $type);
 	$_schema->spec_field(name => 'cat',     type => $noindex_type);
@@ -75,7 +75,7 @@ if ($do_index) {
 	$_schema;
     };
 
-    my $indexer = KinoSearch::Index::Indexer->new
+    my $indexer = Lucy::Index::Indexer->new
 	(
 	 index    => $index_dir,
 	 schema   => $schema,
@@ -173,9 +173,9 @@ if ($do_index) {
     my $query_string = "@ARGV"
 	or usage;
 
-    require KinoSearch::Search::IndexSearcher;
+    require Lucy::Search::IndexSearcher;
     
-    my $searcher = KinoSearch::Search::IndexSearcher->new(index => $index_dir);
+    my $searcher = Lucy::Search::IndexSearcher->new(index => $index_dir);
     my $hits = $searcher->hits( 
 			       query      => $query_string,
 			       offset     => 0,
@@ -209,5 +209,9 @@ Create index (takes some 30s or so):
 Search something
 
     ./bbbike-kinosearch.pl dudenstr
+
+=head1 SEE ALSO
+
+L<Lucy> (the successor to L<KinoSearch>).
 
 =cut
