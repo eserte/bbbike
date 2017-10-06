@@ -53,8 +53,12 @@ if (!GetOptions(get_std_opts(qw(xxx)))) {
 }
 
 my $s		  = Strassen::Lazy->new("strassen");
+{
+    my $i_s = new Strassen "inaccessible_strassen";
+    $s = $s->new_with_removed_points($i_s);
+}
 my $s_net	  = StrassenNetz->new($s);
-$s_net->make_net(UseCache => 1);
+$s_net->make_net(UseCache => 0);
 $s_net->make_sperre(
 		    'gesperrt',
 		    Type => [qw(einbahn sperre wegfuehrung)],
@@ -382,9 +386,12 @@ EOF
 	last if defined $v1;
 	# $v1 may be undefined if $k1 is part of
 	# inaccessible_strassen
+	# --- probably this should not happen anymore,
+	# as points from inaccessible_strassen are filtered out
     }
     keys %{$s_net->{Net}}; # reset iterator
-    my($k2,$v2) = each %$v1;             keys %$v1;
+    my($k2,$v2) = each %$v1;
+    keys %$v1; # reset iterator
     my $add_s1 = Strassen->new_from_data_string(<<EOF);
 something	XYZ $k1 $k2
 EOF
