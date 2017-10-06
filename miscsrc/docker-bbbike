@@ -119,6 +119,11 @@ ENV TRAVIS true
 CMD /bin/bash --login -e -c "wrapper start_webserver && wrapper start_xserver && wrapper init_webserver_environment && wrapper init_data && perl Makefile.PL && BBBIKE_TEST_FOR_LIVE=1 make test HARNESS_OPTIONS=j$opt{jobs}"
 EOF
     $doit->copy("$bbbike_rootdir/port/travis-ci/travis-functions.sh", "$docker_context_dir/");
+    # mtime has to be preserved, otherwise older docker (<1.8?)
+    # will take mtime into account when calculating cache checksums
+    # see https://github.com/moby/moby/pull/12031
+    my $mtime = (stat("$bbbike_rootdir/port/travis-ci/travis-functions.sh"))[9];
+    $doit->utime($mtime, $mtime, "$docker_context_dir/travis-functions.sh");
 
     in_directory {
 	my $tag = 'bbbike-travis-ci-ubuntu-trusty';
