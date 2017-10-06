@@ -17082,8 +17082,9 @@ EOF
      },
      { from  => $isodate2epoch->("2016-11-04 00:00:00"), # XXX $isodate2epoch->("2016-11-04 00:00:00"), # Aufbauzeit mindestens 17 Tage... (am Anfang ist nur die Fahrbahn der Voltairestr. gesperrt, später auch die Gehwege, die Schicklerstr. ist schon früher komplett gesperrt)
        until => $isodate2epoch->("2016-12-26 23:59:59"), # Abbauzeit ca. 3 Tage?...
-       periodic => 1,
-       recurrences => [['yearly', days => 4, months => 11]],
+       ## 2016 war das letzte Mal
+       #periodic => 1,
+       #recurrences => [['yearly', days => 4, months => 11]],
        # außerdem ist der Nordteil der Dircksenstr. Einbahnstraße offen Richtung Süden, aber nicht relevant für das Routing
        text  => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr. und Dircksenstr.), von Anfang November 2016 bis Ende Dezember 2016',
        type  => 'gesperrt',
@@ -26133,7 +26134,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-09-26
+#: last_checked: 2017-10-06
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },

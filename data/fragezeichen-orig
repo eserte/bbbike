@@ -210,7 +210,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: XXX außerdem gibt es eine Drucksache für die Absenkung des Bordsteins am Mittelstreifen
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7421
 #: osm_watch: way id="25219757" version="11"
-#: osm_watch: way id="4600236" version="15"
+#: osm_watch: way id="4600236" version="16"
 #: last_checked: 2017-09-16
 #: check_frequency: 90d
 Stromstr., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,13517 6228,13324
@@ -1054,7 +1054,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/holzmarktstrasse/download/LP_01.pdf
 #: source_id: 2147340618
 #: source_id: LMS-BR_r_LMS-BR_81616
-#: last_checked: 2017-09-22
+#: last_checked: 2017-10-06
 #: next_check: 2018-04-01 (laut Schild bis April 2018)
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 # 
@@ -1549,7 +1549,7 @@ Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbi
 #: XXX Vorschlag: Freia-Eisner-Straße
 #: note: "Privatgelände"
 #: osm_watch: way id="491906864" version="2"
-#: last_checked: 2017-09-20
+#: last_checked: 2017-10-06
 #: check_frequency: 14d
 Planstraße C: neue asphaltierte Straße, Straßenname? Wann wird sie geöffnet?	?::inwork 12926,11224 12848,11093
 # 
@@ -2001,8 +2001,8 @@ Poststadion: gibt es hier interessante Wegverbindungen für Radfahrer? wie sieht 
 #: XXX bei der dritten Prüfung (2017-09-22): Richtung Norden ist tatsächlich gesperrt, aber man kann vermutlich vorbeikommen
 #: source_id: 2147341587
 #: source_id: LMS-BR_r_LMS-BR_103310_LMS-BR_72
-#: last_checked: 2017-09-28
-#: check_frequency: 7d
+#: last_checked: 2017-10-06
+#: next_check: 2017-10-20
 Friedrichstr. Höhe Jägerstr.: Bauarbeiten, auch für Radfahrer relevant?	?::inwork; 9405,11903 9393,12000 9384,12103
 # 
 # REMOVED (Einbahnstraße Richtung Norden ist Richtung; die meisten Radfahrer fahren auf dem relativ breiten Gehweg und umgehen somit auch das Kopfsteinpflaster) --- #: XXX NEW	Tegeler Straße (Wedding) Richtung Fennstraße zwischen Lynarstraße und Fennbrücke (Berlin)  Gültig ab: 16.07.2017 23:00  Bauarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/17)	LMS-BR_r_LMS-BR_103249_LMS-BR_72 --- #: XXX NEW	Tegeler Str. (Wedding) Richtung Luxemburger Str. zwischen Fennstr. und Lynarstr. (Berlin)  Gültig ab: 24.07.2017 06:00  Baustelle, Fahrtrichtung gesperrt (bis Mitte 10/17)	2147341570 --- #: XXX laut fritz: Bis 13.10.2017 --- Tegeler Str.: Bauarbeiten, auch für Radfahrer relevant?	?::inwork 7263,14873 7458,14643
@@ -2066,9 +2066,10 @@ Möllendorffstr.: Radspur Richtung Süden entsteht	?; 15420,12178 15361,12071
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.587472.php (Baustart Anfang Juni 2017)
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170522
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170730 (bis Oktober 2017)
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.637330.php (Ende Januar 2018)
 #: osm_watch: way id="23623840" version="21"
 #: last_checked: 2017-05-01
-#: next_check: 2017-10-01
+#: next_check: 2018-01-31
 Berliner Str.: Markierung von Radspuren	? 3866,24451 3842,24556
 # 
 #: last_checked: 2017-03-26
@@ -2114,7 +2115,7 @@ An der Wuhlheide: ab wo genau fangen die Schutzstreifen Richtung Westen an?	? 21
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/15-11-2016_mehr-fahrradstrassen-fuer-pankow.pdf
 #: XXX unklar, ob auch die Route Dunckerstr. - Kollwitzstr. ebenso Fahrradstraße werden könnte
 #: osm_watch: way id="11114397" version="22"
-#: last_checked: 2017-09-21
+#: last_checked: 2017-09-30 (mapillary)
 #: check_frequency: 30d
 Stargarder Str.: eventuell wird hier eine Fahrradstraße eingerichtet	? 10953,15787 11086,15772 11158,15739 11290,15669 11418,15587 11502,15527 11595,15460 11682,15397 11852,15281
 # 
@@ -2261,14 +2262,14 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7478
 #: XXX "noch 2016"
-#: osm_watch: note 824350 2
-#: last_checked: 2017-09-21
+#: osm_watch: note 824350 3
+#: last_checked: 2017-10-06
 #: check_frequency: 14d
 #: priority: #C
 Sebastian/Luckauer: Zebrastreifen in Bau	?::inwork 11113,10943 11109,10935
 # 
-#: osm_watch: note 851907 2
-#: last_checked: 2017-09-18
+#: osm_watch: note 851907 3
+#: last_checked: 2017-10-06
 #: check_frequency: 14d
 #: priority: #C
 Oranienplatz: Zebrastreifen in Bau	?::inwork 11233,10672 11258,10682 11262,10655
@@ -3407,6 +3408,14 @@ ehemaliger Güterbahnhof Neukölln: Radweg geplant	?::projected 12704,6920 12696,6
 #: next_check: 2022-01-01
 Friedhof Jerusalem und Neue Kirche: Wohngebiet geplant, Straßen geplant	?::projected 11710,7184 11799,7199 11791,7246 11924,7271
 # 
+#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.636909.php
+#: by: http://www.o-sp.de/download/lbvbrandenburg/152398
+#: XXX außerdem neuer Kreisverkehr an der ex-B179
+#: XXX vermutlich wird während der Bauarbeiten der Radweg an der Waldstr. gesperrt werden
+#: XXX wie geht's am Bauernweg Richtung Süden weiter?
+#: next_check: 2018-06-01
+B117: neue Anschlussstelle wird gebaut, mit Radweg	?::projected 21834,-2143 21522,-2233 21113,-2676
 #: ignore ^^^
 #: section ^^^
 # 

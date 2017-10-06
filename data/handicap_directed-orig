@@ -5,10 +5,15 @@
 #: line_dash: 2,4
 #: line_do_offset: 1
 #: line_width: 2
-#
+# 
 # DH:t=...: bei Ampeln sollte hier die zur normalen durchschnittlichen
 #           Wartezeit (~15s) die *zusätzliche* durchschnittliche Wartezeit
 #           aufgeführt werden
+# 
+#           Rechnung bei Anforderungsampeln:
+#           - eingebettet in einen Zyklus mit möglicher sofortiger Grünschaltung:
+#             Zykluszeit/2 - normale durchschnittliche Wartezeit
+# 
 # DH:len=...:t=...: wenn len+t kombiniert wird, dann sollte der Zeitverlust
 #                   durch die Streckenverlängerung nicht in den t-Wert
 #                   einfließen. Als Richtgeschwindigkeit für das Ermitteln
@@ -52,3 +57,12 @@ Dresdener Str.: Bordsteinumfahrung	DH:len=25:t=7 11021,11287 11000,11327 11039,1
 B2/B158	DH:t=120 49908,67683 49907,67684
 B2/B158	DH:t=120 49907,67684 49908,67683
 #: note ^^^
+# 
+#: note: Zykluszeit von 70s angenommen
+#: source_id: 2147340164
+#: osm_watch: way id="51780241" version="4" 
+#: next_check: 2018-06-01 vvv
+Zehlendorfer Kreuz: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:len=40:t=20 -2912,1829 -3011,1761 -3113,1692
+Zehlendorfer Kreuz: Radfahrer müssen auf die rechte Seite zurück wechseln	DH:len=30:t=20 -3890,1249 -4003,1234 -4497,1165
+#: next_check ^^^
+# 

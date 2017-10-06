@@ -21,16 +21,16 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2017-10-02
+#: last_checked: 2017-10-06
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
-#: last_checked: 2017-09-29
+#: last_checked: 2017-10-06
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 #: last_checked: 2017-10-02
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2017-10-04
+#: last_checked: 2017-10-06
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 #: by: fritz
@@ -97,7 +97,7 @@ Bouchéstr.: Bauarbeiten an der Heidelberger Str.	q3::inwork 13489,9456 13357,931
 Märkisches Ufer: Bauarbeiten, Engstelle	q3+::inwork 10687,11853 10869,11949
 # 
 #: source_id: 2147341587
-#: last_checked: 2017-09-28 vvv
+#: last_checked: 2017-10-06 vvv
 #: next_check: 2017-10-20 vvv
 #: valid: -20171020 vvv
 Jägerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q2::inwork 9195,11972 9393,12000
@@ -148,7 +148,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 # REMOVED --- #: last_checked: 2017-03-14 vvv --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9990,11571 9925,11565 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q2-::inwork 9925,11565 9737,11546 --- #: last_checked ^^^
 # 
 # REMOVED --- : osm_watch: note 814191 1
-#: last_checked: 2017-10-04
+#: last_checked: 2017-10-06
 #: check_frequency: 30d
 Alexandrinenstr.: direkter Zugang zur Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q3::inwork 10818,11269 10678,11172
 # 
@@ -299,7 +299,7 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 ### Kreuzberg ###
 # 
 #: source_id: LMS-BR_r_LMS-BR_106653_LMS-BR_72
-#: last_checked: 2017-09-20 vvv
+#: last_checked: 2017-10-06 vvv
 #: check_frequency: 14d vvv
 Mariannenplatz: Bauarbeiten, Fahrbahn gesperrt, Bordsteine	q4::inwork 11781,10696 11824,10708
 Mariannenplatz: Bauarbeiten, Fahrbahn teilweise gesperrt	q2::inwork 11841,10747 11897,10887
@@ -309,9 +309,9 @@ Mariannenplatz: Bauarbeiten, Fahrbahn teilweise gesperrt	q2::inwork 11841,10747 
 #: XXX laut fritz bis 30.11.2017
 #: XXX ändert sich an der Fahrbahnbeschaffenheit etwas?
 #: source_id: LMS-BR_r_LMS-BR_110600_LMS-BR_72
-#: last_checked: 2017-09-26 vvv
+#: last_checked: 2017-10-06 vvv
 # REMOVED --- #: next_check: 2017-11-30 vvv
-Böckhstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11673,9720 11640,9710
+# REMOVED --- Böckhstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11673,9720 11640,9710
 Böckhstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 11640,9710 11411,9810
 # REMOVED --- #: next_check ^^^
 #: last_checked ^^^
