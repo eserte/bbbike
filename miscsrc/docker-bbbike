@@ -14,8 +14,13 @@
 
 use FindBin;
 use lib "$FindBin::RealBin/../lib";
+
 use Doit;
 use Doit::Log;
+use Doit::Util qw(in_directory);
+
+use Cwd qw(realpath);
+use File::Temp qw(tempdir);
 use Getopt::Long;
 use Hash::Util qw(lock_keys);
 
@@ -57,6 +62,74 @@ EOF
 	       ]);
 }
 
+sub travis_ci {
+    my($doit, %opt) = @_;
+    lock_keys %opt;
+    my $bbbike_rootdir = realpath("$FindBin::RealBin/..");
+    my $docker_context_dir = tempdir("docker_context_XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
+    $doit->write_binary("$docker_context_dir/Dockerfile", <<EOF);
+FROM ubuntu:trusty
+
+# travis defaults
+ENV DEBIAN_FRONTEND noninteractive
+
+# for agrep
+RUN echo "deb http://archive.ubuntu.com/ubuntu trusty multiverse" > /etc/apt/sources.list.d/trusty-multiverse.list
+
+RUN apt-get update -qq
+RUN apt-get install -qq git cpanminus libssl-dev libmysqlclient-dev wget
+
+# install dummy perlbrew, so at least "perlbrew off" works
+RUN echo "#!/bin/sh" > /usr/bin/perlbrew
+RUN chmod 755 /usr/bin/perlbrew
+
+COPY travis-functions.sh /
+RUN cat /travis-functions.sh >> ~/.bash_profile
+
+# build config
+ENV USE_MODPERL 1
+ENV USE_SYSTEM_PERL=1
+
+# replaces init_env_vars
+ENV BBBIKE_LONG_TESTS 1
+ENV BBBIKE_TEST_SKIP_MAPSERVER 1
+ENV PERL_CPANM_OPT "--mirror https://cpan.metacpan.org --mirror http://cpan.cpantesters.org"
+ENV CPAN_INSTALLER "cpanm"
+
+# "-e" -> init_travis must not be run anymore
+RUN /bin/bash --login -e -c "wrapper init_env_vars"
+RUN /bin/bash --login -e -c "wrapper init_perl"
+RUN /bin/bash --login -e -c "wrapper init_apt"
+RUN /bin/bash --login -e -c "wrapper install_non_perl_dependencies"
+RUN /bin/bash --login -e -c "wrapper install_perl_testonly_dependencies"
+RUN /bin/bash --login -e -c "wrapper install_perl_58_dependencies"
+RUN /bin/bash --login -e -c "wrapper install_cpan_hacks"
+RUN /bin/bash --login -e -c "wrapper install_webserver_dependencies"
+RUN /bin/bash --login -e -c "wrapper install_perl_dependencies"
+
+RUN git clone --depth=1 https://github.com/eserte/bbbike.git
+WORKDIR bbbike
+ENV TRAVIS_BUILD_DIR /bbbike
+
+RUN /bin/bash --login -e -c "wrapper init_cgi_config"
+RUN /bin/bash --login -e -c "wrapper fix_cgis"
+RUN /bin/bash --login -e -c "wrapper init_webserver_config"
+
+ENV TRAVIS true
+CMD /bin/bash --login -e -c "wrapper start_webserver && wrapper start_xserver && wrapper init_webserver_environment && wrapper init_data && perl Makefile.PL && BBBIKE_TEST_FOR_LIVE=1 make test HARNESS_OPTIONS=j$opt{jobs}"
+EOF
+    $doit->copy("$bbbike_rootdir/port/travis-ci/travis-functions.sh", "$docker_context_dir/");
+
+    in_directory {
+	my $tag = 'bbbike-travis-ci-ubuntu-trusty';
+	$doit->run([qw(docker build --tag), $tag, qw(.)]);
+	$doit->run(['docker', 'run', '-ti',
+		    #'-v', "$bbbike_rootdir:/bbbike",
+		    $tag,
+		   ]);
+    } $docker_context_dir;
+}
+
 return 1 if caller;
 
 my $doit = Doit->init;
@@ -77,6 +150,13 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	      )
 	or usage;
     gui($doit, %opt);
+} elsif ($subcmd eq 'travis-ci') {
+    my %opt = (jobs => 1);
+    GetOptions(\%opt,
+	       "jobs|j=i",
+	      )
+	or usage;
+    travis_ci($doit, %opt);
 } else {
     usage "Unknown subcmd '$subcmd'";
 }
