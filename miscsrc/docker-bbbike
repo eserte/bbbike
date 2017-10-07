@@ -33,6 +33,7 @@ EOF
 sub gui {
     my($doit, %opt) = @_;
     lock_keys %opt;
+
     my $dockerfile = <<EOF;
 FROM $opt{dist}:$opt{distver}
 RUN apt-get update
@@ -50,8 +51,55 @@ EOF
     } else {
 	usage "Invalid --src value '$opt{src}', only 'github' and 'local' are known";
     }
+
+    # Need to start docker-machine early on MacOSX, and do also some pre-checking.
+    local %ENV = %ENV; # actually needed only for darwin
+    if ($^O eq 'darwin') {
+	# If you choose to name your docker-mmachine other than
+	# "default", then you have to set the --docker-machine=...
+	# option to this name.
+	#
+	# Some references:
+	# - https://stackoverflow.com/questions/32174560/port-forwarding-in-docker-machine
+	# - https://github.com/docker/for-mac/issues/483#issuecomment-293833781
+	# - https://stackoverflow.com/a/43918461 (another solution using VNC, not tried yet)
+
+	if (!$ENV{DISPLAY}) {
+	    error "No DISPLAY environment variable --- maybe Xquartz has to be started?";
+	}
+	if (!-S $ENV{DISPLAY}) {
+	    error "Content of $ENV{DISPLAY} should be path to X socket";
+	}
+	$doit->add_component('brew');
+	$doit->brew_install_packages(qw(socat docker-machine));
+
+	{
+	    my $docker_machine_found;
+	    for my $docker_machine (split /\n/, eval { $doit->info_qx({quiet=>1}, 'docker-machine', 'active') }) {
+		if ($docker_machine eq $opt{'docker-machine'}) {
+		    info "Matching docker-machine '$docker_machine' found";
+		    $docker_machine_found = 1;
+		    last;
+		}
+	    }
+	    if (!$docker_machine_found) {
+		$doit->system('docker-machine', 'start', $opt{'docker-machine'});
+	    }
+	}
+	for my $env_line (split /\n/, $doit->info_qx({quiet=>1}, 'docker-machine', 'env', $opt{'docker-machine'})) {
+	    if ($env_line =~ m{^export\s+([^=]+)=(.*)$}) {
+		my($key, $val) = ($1, $2);
+		if ($val =~ m{^"(.*)"$}) {
+		    $val = $1;
+		}
+		$doit->setenv($key, $val);
+	    }
+	}
+    }
+
     my $tag = 'bbbike-gui-'.$opt{dist}.'-'.$opt{distver};
     $doit->run([qw(docker build --tag), $tag, '-'], '<', \$dockerfile);
+
     my $XSOCK = '/tmp/.X11-unix';
     my $XAUTH = '/tmp/.docker.xauth';
     my @docker_run_args =
@@ -61,26 +109,12 @@ EOF
 	 $opt{debug} ? ('--cap-add', 'SYS_PTRACE') : (),
 	);
     if ($^O eq 'darwin') {
-	# The usual prereqs on MacOSX for any docker operation:
-	#    docker-machine start default && eval $(docker-machine env default)
-	# Additionally it's necessary to setup port forwarding. In another window:
-	#    docker-machine ssh default -R 6098:localhost:6098
-	#
-	# Some references:
-	# - https://stackoverflow.com/questions/32174560/port-forwarding-in-docker-machine
-	# - https://github.com/docker/for-mac/issues/483#issuecomment-293833781
-	# - https://stackoverflow.com/a/43918461 (another solution using VNC, not tried yet)
-	if (!$ENV{DISPLAY}) {
-	    error "No DISPLAY environment variable --- maybe Xquartz has to be started?";
-	}
-	if (!-S $ENV{DISPLAY}) {
-	    error "Content of $ENV{DISPLAY} should be path to X socket";
-	}
-	$doit->add_component('brew');
-	$doit->brew_install_packages('socat');
+	my $scope_cleanups = Doit::ScopeCleanups->new;
+
 	my $socat_port = 6098; # should be >= 6000
 	my $display = ':' . ($socat_port-6000);
 	my $socat_pid = fork;
+	error "Can't fork: $!" if !defined $socat_pid;
 	if ($socat_pid == 0) {
 	    (my $escaped_DISPLAY = $ENV{DISPLAY}) =~ s{:}{\\:}g;
 	    my @cmd = ('socat', 'TCP-LISTEN:'.$socat_port.',reuseaddr,fork', "UNIX-CLIENT:$escaped_DISPLAY");
@@ -88,7 +122,19 @@ EOF
 	    exec @cmd;
 	    die "Can't run <@cmd>: $!";
 	}
-	# Race condition! Hopefully socat is faster than the following docker commands!
+	$scope_cleanups->add_scope_cleanup(sub { info "Killing socat process $socat_pid"; kill KILL => $socat_pid });
+
+	my $ssh_port_fwd_pid = fork;
+	error "Can't fork: $!" if !defined $ssh_port_fwd_pid;
+	if ($ssh_port_fwd_pid == 0) {
+	    my @cmd = ('docker-machine', 'ssh', $opt{'docker-machine'}, '-R', "$socat_port:localhost:$socat_port", '-N');
+	    info "Running @cmd";
+	    exec @cmd;
+	    die "Can't run <@cmd>: $!";
+	}
+	$scope_cleanups->add_scope_cleanup(sub { info "Killing ssh process $ssh_port_fwd_pid"; kill KILL => $ssh_port_fwd_pid });
+
+	# Race condition! Hopefully socat & ssh are faster than the following docker command!
 	$doit->run(['docker', 'run', '-ti',
 		    @docker_run_args,
 		    '--network=host',
@@ -97,7 +143,6 @@ EOF
 		    '-e', "DISPLAY=$display",
 		    $tag,
 		   ]);
-	kill KILL => $socat_pid;
     } else {
 	$doit->run(['xauth', 'nlist', $ENV{DISPLAY}], '|', ['sed', '-e', 's/^..../ffff/'], '|', ['xauth', '-f', $XAUTH, 'nmerge', '-']);
 	$doit->run(['docker', 'run', '-ti',
@@ -213,12 +258,14 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       distver => 'latest',
 	       src     => 'local',
 	       debug   => 0,
+	       'docker-machine' => 'default',
 	      );
     GetOptions(\%opt,
 	       "dist=s",
 	       "distver|distversion=s",
 	       "src=s",
 	       'debug!',
+	       'docker-machine=s',
 	      )
 	or usage;
     gui($doit, %opt);

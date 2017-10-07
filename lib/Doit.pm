@@ -115,47 +115,78 @@ use warnings;
 }
 
 {
+    package Doit::ScopeCleanups;
+    $INC{'Doit/ScopeCleanups.pm'} = __FILE__; # XXX hack
+    use Doit::Log;
+
+    sub new {
+	my($class) = @_;
+	bless [], $class;
+    }
+
+    sub add_scope_cleanup {
+	my($self, $code) = @_;
+	push @$self, { code => $code };
+    }
+
+    sub DESTROY {
+	my $self = shift;
+	for my $scope_cleanup (@$self) {
+	    my($code) = $scope_cleanup->{code};
+	    if ($] >= 5.014) {
+		eval {
+		    $code->();
+		};
+		if ($@) {
+		    # error() will give visual feedback about the problem,
+		    # die() would be left unnoticed. Note that
+		    # an exception in a DESTROY block is not fatal,
+		    # and can be only detected by inspecting $@.
+		    error "Scope cleanup failed: $@";
+		}
+	    } else {
+		# And eval {} in older perl versions would
+		# clobber an outside $@. See
+		# perldoc perl5140delta, "Exception Handling"
+		$code->();
+	    }
+	}
+    }
+}
+
+{
     package Doit::Util;
     use Exporter 'import';
-    our @EXPORT; BEGIN { @EXPORT = qw(in_directory) }
+    our @EXPORT; BEGIN { @EXPORT = qw(in_directory new_scope_cleanup) }
     $INC{'Doit/Util.pm'} = __FILE__; # XXX hack
     use Doit::Log;
 
+    sub new_scope_cleanup (&) {
+	my($code) = @_;
+	my $sc = Doit::ScopeCleanups->new;
+	$sc->add_scope_cleanup($code);
+	$sc;
+    }
+
     sub in_directory (&$) {
 	my($code, $dir) = @_;
-	my $save_pwd;
+	my $scope_cleanup;
 	if (defined $dir) {
-	    $save_pwd = save_pwd2();
+	    require Cwd;
+	    my $pwd = Cwd::getcwd();
+	    if (!defined $pwd) {
+		warning "No known current working directory";
+	    } else {
+		$scope_cleanup = new_scope_cleanup
+		    (sub {
+			 chdir $pwd or error "Can't chdir to $pwd: $!";
+		     });
+	    }
 	    chdir $dir
 		or error "Can't chdir to $dir: $!";
 	}
 	$code->();
     }
-
-    # REPO BEGIN
-    # REPO NAME save_pwd2 /Users/eserte/src/srezic-repository 
-    # REPO MD5 d0ad5c46f2276dc8aff7dd5b0a83ab3c
-    sub save_pwd2 {
-	require Cwd;
-	my $pwd = Cwd::getcwd();
-	if (!defined $pwd) {
-	    warning "No known current working directory";
-	}
-	bless {cwd => $pwd}, __PACKAGE__ . '::SavePwd2';
-    }
-
-    {
-	my $DESTROY = sub {
-	    my $self = shift;
-	    if (defined $self->{cwd}) {
-		chdir $self->{cwd}
-		    or error "Can't chdir to $self->{cwd}: $!";
-	    }
-	};
-	no strict 'refs';
-	*{__PACKAGE__.'::SavePwd2::DESTROY'} = $DESTROY;
-    }
-    # REPO END
 }
 
 {
@@ -818,6 +849,18 @@ use warnings;
 	Doit::Commands->new(@commands);
     }
 
+    sub cmd_setenv {
+	my($self, $key, $val) = @_;
+	my @commands;
+	if (!defined $ENV{$key} || $ENV{$key} ne $val) {
+	    push @commands, {
+			     code => sub { $ENV{$key} = $val },
+			     msg => qq{set \$ENV{$key} to "$val", previous value was } . (defined $ENV{$key} ? qq{"$ENV{$key}"} : qq{unset}),
+			    };
+	}
+	Doit::Commands->new(@commands);
+    }
+
     sub cmd_symlink {
 	my($self, $oldfile, $newfile) = @_;
 	my $doit;
@@ -907,6 +950,18 @@ use warnings;
 	    push @commands, {
 			     code => sub { unlink @files_to_remove or die $! },
 			     msg  => "unlink @files_to_remove", # shellquote?
+			    };
+	}
+	Doit::Commands->new(@commands);
+    }
+
+    sub cmd_unsetenv {
+	my($self, $key) = @_;
+	my @commands;
+	if (defined $ENV{$key}) {
+	    push @commands, {
+			     code => sub { delete $ENV{$key} },
+			     msg => qq{unset \$ENV{$key}, previous value was "$ENV{$key}"},
 			    };
 	}
 	Doit::Commands->new(@commands);
@@ -1351,6 +1406,7 @@ use warnings;
 		 qw(create_file_if_nonexisting), # does the half of touch
 		 qw(write_binary), # like File::Slurper
 		 qw(change_file), # own invention
+		 qw(setenv unsetenv), # $ENV manipulation
 		) {
 	install_cmd $cmd;
     }
