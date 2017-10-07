@@ -19,15 +19,21 @@ use lib $doitlibdir;
 use Doit;
 use File::Glob 'bsd_glob';
 
-my @copy_components = ();
+my @copy_components = qw(Brew);
 
 my $d = Doit->init;
-my $destdir = "$FindBin::RealBin/../lib";
+my $bbbike_rootdir = "$FindBin::RealBin/..";
+my $destdir = "$bbbike_rootdir/lib";
 $d->copy("$doitlibdir/Doit.pm", "$destdir");
 if (@copy_components) {
     $d->mkdir("$destdir/Doit");
     for my $component (@copy_components) {
 	$d->copy("$doitlibdir/Doit/$component.pm", "$destdir/Doit");
+	$d->change_file("$bbbike_rootdir/MANIFEST",
+			{add_if_missing => "lib/Doit/$component.pm",
+			 add_after => '^lib/Doit\.pm$',
+			},
+		       );
     }
 }
 
