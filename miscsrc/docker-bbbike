@@ -54,12 +54,59 @@ EOF
     $doit->run([qw(docker build --tag), $tag, '-'], '<', \$dockerfile);
     my $XSOCK = '/tmp/.X11-unix';
     my $XAUTH = '/tmp/.docker.xauth';
-    $doit->run(['xauth', 'nlist', $ENV{DISPLAY}], '|', ['sed', '-e', 's/^..../ffff/'], '|', ['xauth', '-f', $XAUTH, 'nmerge', '-']);
-    $doit->run(['docker', 'run', '-ti',
-		'-v', "$XSOCK:$XSOCK", '-v', "$XAUTH:$XAUTH",
-		($opt{src} eq 'local' ? ('-v', "$FindBin::RealBin/..:/bbbike:ro") : ()),
-		'-e', "XAUTHORITY=$XAUTH", '-e', "DISPLAY=$ENV{DISPLAY}", $tag,
-	       ]);
+    my @docker_run_args =
+	(
+	 # SYS_PTRACE is required for strace --- see
+	 # http://blog.johngoulah.com/2016/03/running-strace-in-docker/
+	 $opt{debug} ? ('--cap-add', 'SYS_PTRACE') : (),
+	);
+    if ($^O eq 'darwin') {
+	# The usual prereqs on MacOSX for any docker operation:
+	#    docker-machine start default && eval $(docker-machine env default)
+	# Additionally it's necessary to setup port forwarding. In another window:
+	#    docker-machine ssh default -R 6098:localhost:6098
+	#
+	# Some references:
+	# - https://stackoverflow.com/questions/32174560/port-forwarding-in-docker-machine
+	# - https://github.com/docker/for-mac/issues/483#issuecomment-293833781
+	# - https://stackoverflow.com/a/43918461 (another solution using VNC, not tried yet)
+	if (!$ENV{DISPLAY}) {
+	    error "No DISPLAY environment variable --- maybe Xquartz has to be started?";
+	}
+	if (!-S $ENV{DISPLAY}) {
+	    error "Content of $ENV{DISPLAY} should be path to X socket";
+	}
+	$doit->add_component('brew');
+	$doit->brew_install_packages('socat');
+	my $socat_port = 6098; # should be >= 6000
+	my $display = ':' . ($socat_port-6000);
+	my $socat_pid = fork;
+	if ($socat_pid == 0) {
+	    (my $escaped_DISPLAY = $ENV{DISPLAY}) =~ s{:}{\\:}g;
+	    my @cmd = ('socat', 'TCP-LISTEN:'.$socat_port.',reuseaddr,fork', "UNIX-CLIENT:$escaped_DISPLAY");
+	    info "Running @cmd";
+	    exec @cmd;
+	    die "Can't run <@cmd>: $!";
+	}
+	# Race condition! Hopefully socat is faster than the following docker commands!
+	$doit->run(['docker', 'run', '-ti',
+		    @docker_run_args,
+		    '--network=host',
+		    '-p', $socat_port,
+		    ($opt{src} eq 'local' ? ('-v', "$FindBin::RealBin/..:/bbbike:ro") : ()),
+		    '-e', "DISPLAY=$display",
+		    $tag,
+		   ]);
+	kill KILL => $socat_pid;
+    } else {
+	$doit->run(['xauth', 'nlist', $ENV{DISPLAY}], '|', ['sed', '-e', 's/^..../ffff/'], '|', ['xauth', '-f', $XAUTH, 'nmerge', '-']);
+	$doit->run(['docker', 'run', '-ti',
+		    @docker_run_args,
+		    '-v', "$XSOCK:$XSOCK", '-v', "$XAUTH:$XAUTH",
+		    ($opt{src} eq 'local' ? ('-v', "$FindBin::RealBin/..:/bbbike:ro") : ()),
+		    '-e', "XAUTHORITY=$XAUTH", '-e', "DISPLAY=$ENV{DISPLAY}", $tag,
+		   ]);
+    }
 }
 
 sub travis_ci {
@@ -165,11 +212,13 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       dist    => 'debian',
 	       distver => 'latest',
 	       src     => 'local',
+	       debug   => 0,
 	      );
     GetOptions(\%opt,
 	       "dist=s",
 	       "distver|distversion=s",
 	       "src=s",
+	       'debug!',
 	      )
 	or usage;
     gui($doit, %opt);
