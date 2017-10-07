@@ -122,6 +122,10 @@ install_webserver_dependencies() {
     then
 	# install mod_perl
 	sudo apt-get install -qq apache2-mpm-prefork
+	# XXX trying to workaround frequent internal server errors
+	#sudo a2dismod cgid && sudo a2dismod mpm_event && sudo a2enmod mpm_prefork && sudo a2enmod cgi
+	sudo a2dismod mpm_event && sudo a2enmod mpm_prefork
+	# Installation of modperl will trigger a restart, so no separate one needed
 	if [ "$USE_SYSTEM_PERL" = "1" ]
 	then
 	    sudo apt-get install -qq libapache2-mod-perl2
