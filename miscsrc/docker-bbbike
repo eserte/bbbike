@@ -57,7 +57,7 @@ EOF
     $doit->run(['xauth', 'nlist', $ENV{DISPLAY}], '|', ['sed', '-e', 's/^..../ffff/'], '|', ['xauth', '-f', $XAUTH, 'nmerge', '-']);
     $doit->run(['docker', 'run', '-ti',
 		'-v', "$XSOCK:$XSOCK", '-v', "$XAUTH:$XAUTH",
-		($opt{src} eq 'local' ? ('-v', "$FindBin::RealBin/..:/bbbike") : ()),
+		($opt{src} eq 'local' ? ('-v', "$FindBin::RealBin/..:/bbbike:ro") : ()),
 		'-e', "XAUTHORITY=$XAUTH", '-e', "DISPLAY=$ENV{DISPLAY}", $tag,
 	       ]);
 }
