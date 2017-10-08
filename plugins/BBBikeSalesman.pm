@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2008,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2008,2013,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -29,6 +29,9 @@ use Msg qw(frommain);
 
 use strict;
 use vars qw($button_image $salesman_cursor $cant_salesman $salesman $use_algorithm);
+use your qw(%main::map_mode_callback $main::Radiobutton $main::ch $main::c $main::progress @main::popup_style
+	    %main::global_search_args $main::escape $main::search_route_flag $main::advanced
+	    %BBBikePlugin::plugins);
 
 $use_algorithm = 'perfect' if !defined $use_algorithm;
 
@@ -179,6 +182,9 @@ sub map_mode_activate {
 		  if ($err) {
 		      die $err;
 		  }
+
+		  main::set_cursor('ziel');
+		  $main::search_route_flag = 'ziel_cont';
 	      }),
 	    );
     if ($main::advanced) {

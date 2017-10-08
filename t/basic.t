@@ -235,7 +235,6 @@ for my $f (@files) {
 		     | lib/AutoInstall/Tk.pm # this is because of warnings in CPAN.pm
 		     | plugins/AltBerlin.pm
 		     | plugins/BBBikeRuler.pm
-		     | plugins/BBBikeSalesman.pm
 		     | plugins/BBBikeScribblePlugin.pm
 		     | plugins/BBBikeViewImages.pm
 		     | plugins/GeocoderPlugin.pm
