@@ -26022,9 +26022,10 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2017-09-26
-#: check_frequency: 5d
-	q3::inwork; 7201,8870 7107,9030 7035,9161
+#: last_checked: 2017-10-08
+#: check_frequency: 14d
+# REMOVED ---	q3::inwork; 7201,8870 7107,9030
+	q3::inwork; 7107,9030 7035,9161
 EOF
      },
      { from  => 1493652218, # 2017-05-01 17:23
@@ -26134,7 +26135,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-10-06
+#: last_checked: 2017-10-08
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },

@@ -536,9 +536,9 @@ Badstr. (Gitter auf Mittelstreifen)	3nocross::ignrte 8659,16327 8543,16364 8516,
 Spittelmarkt (Richtungsfahrbahn)	1::igndisp 10213,11728 10238,11741 10299,11786
 Spittelmarkt (Richtungsfahrbahn)	1::igndisp 10299,11786 10240,11740 10213,11728
 Spittelmarkt (Mittelstreifen)	3nocross::ignrte 10213,11728 10240,11740 10299,11786
-Hohenstaufenstr. (Richtungsfahrbahn)	1::igndisp 6096,9772 6209,9773 6241,9772
-Hohenstaufenstr. (Richtungsfahrbahn)	1::igndisp 6241,9772 6209,9772 6096,9772
-Hohenstaufenstr. (Mittelstreifen mit Gitter)	3nocross::ignrte 6096,9772 6209,9773 6241,9772
+Hohenstaufenstr. (Richtungsfahrbahn)	1::igndisp 6096,9772 6209,9773 6237,9772
+Hohenstaufenstr. (Richtungsfahrbahn)	1::igndisp 6237,9772 6209,9772 6096,9772
+Hohenstaufenstr. (Mittelstreifen mit Gitter)	3nocross::ignrte 6096,9772 6209,9773 6237,9772
 Prellerweg (Richtungsfahrbahn)	1::igndisp 6757,5858 6895,5873 7052,5883
 Prellerweg (Richtungsfahrbahn)	1::igndisp 7052,5883 6895,5870 6757,5858
 Prellerweg (Mittelstreifen)	3nocross::ignrte 6757,5858 6895,5873 7052,5883
@@ -1824,6 +1824,7 @@ Treptower Str. -> Sonnenallee: Mittelstreifen	3::igndisp 13457,8069 13459,8072 1
 Treptower Str. -> Treptower Str.: Mittelstreifen	3::igndisp 13457,8069 13459,8072 13478,8095
 Treptower Str. -> Sonnenallee: Mittelstreifen	3::igndisp 13478,8095 13459,8072 13474,8060
 Treptower Str. -> Treptower Str.: Mittelstreifen	3::igndisp 13478,8095 13459,8072 13457,8069
+Mittelstreifen	3nocross::ignrte 13010,8422 13042,8395 13107,8343
 unbequemes Passieren des Mittelstreifens	3nocross::ignrte 10675,12280 10659,12259 10625,12206 10574,12131
 Mühlendamm -> Poststr.: unbequemes Passieren des Mittelstreifens	3::igndisp 10625,12206 10659,12259 10629,12293
 Poststr. -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10629,12293 10659,12259 10675,12280
@@ -2899,6 +2900,7 @@ An den Parkbäumen: Bauarbeiten, Fahrbahn gesperrt	2::inwork -6530,6699 -6556,666
 Parkrosenweg: Bauarbeiten	2::inwork -6530,6699 -6381,6587
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5579,12231 5535,12206 5518,12159
 Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:inwork 5518,12159 5627,12105
+Gutenbergstr.: Einbahnstraße wegen Bauarbeiten	1s:inwork 5317,12242 5518,12159
 Möckernkiez: Bauarbeiten	2::inwork 8778,9759 8741,9741 8729,9670 8587,9590 8566,9643
 Möwenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 22108,10970 22195,10993
 Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11485 20631,11621 20633,11651
@@ -2917,7 +2919,6 @@ Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:inwork 8654,14194 8607,14253 
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:inwork 9042,11839 8969,11814
 Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,14449 7561,14458 7426,14539 7368,14573
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
-Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:inwork 14447,10491 14270,10584
 Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17453,7451 17295,7344 17211,7280 17091,7175 16971,7058 16747,6813
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,9200 12548,9167
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
@@ -3507,8 +3508,8 @@ Tempelhofer Ufer, linker Gehweg	1::igndisp 8661,10377 8717,10322 8804,10303
 Leipziger Str., linker Gehweg	1::igndisp 9985,11711 9896,11703
 zur Ampel Jerusalemer Str.	1::igndisp 9982,11681 9987,11690 9985,11711
 Columbiadamm, linker Gehweg	1::igndisp 10913,8463 10799,8504 10796,8498
-Hohenstaufenstr., linker Gehweg bis zur Fußgängerampel	1::igndisp 6241,9772 6209,9774
-zur Münchener Str. auf dem linken Gehweg	1::igndisp 6209,9771 6241,9772
+Hohenstaufenstr., linker Gehweg bis zur Fußgängerampel	1::igndisp 6237,9772 6209,9774
+zur Münchener Str. auf dem linken Gehweg	1::igndisp 6209,9771 6237,9772
 Karl-Lieknecht-Str., linker Gehweg	1::igndisp 11070,13357 11082,13371
 Potsdamer Str., linker Gehweg	1::igndisp 7518,9791 7501,9573
 Landsberger Allee, Radweg auf der linken Seite	1::igndisp 15923,14334 15848,14325 15850,14308

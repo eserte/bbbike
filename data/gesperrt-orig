@@ -785,9 +785,9 @@ Spittelmarkt (Richtungsfahrbahn)	1::igndisp 10299,11786 10240,11740 10213,11728
 Spittelmarkt (Mittelstreifen)	3nocross::ignrte 10213,11728 10240,11740 10299,11786
 #: note ^^^
 #: note: Mittelstreifen mit Gitter vvv
-Hohenstaufenstr. (Richtungsfahrbahn)	1::igndisp 6096,9772 6209,9773 6241,9772
-Hohenstaufenstr. (Richtungsfahrbahn)	1::igndisp 6241,9772 6209,9772 6096,9772
-Hohenstaufenstr. (Mittelstreifen mit Gitter)	3nocross::ignrte 6096,9772 6209,9773 6241,9772
+Hohenstaufenstr. (Richtungsfahrbahn)	1::igndisp 6096,9772 6209,9773 6237,9772
+Hohenstaufenstr. (Richtungsfahrbahn)	1::igndisp 6237,9772 6209,9772 6096,9772
+Hohenstaufenstr. (Mittelstreifen mit Gitter)	3nocross::ignrte 6096,9772 6209,9773 6237,9772
 #: note ^^^
 #: note: Mittelstreifen vvv
 Prellerweg (Richtungsfahrbahn)	1::igndisp 6757,5858 6895,5873 7052,5883
@@ -1693,6 +1693,7 @@ Stralauer Allee: unbequem passierbare Straße	3nocross 14222,10430 14405,10340 14
 Stralauer Str.: Mittelstreifen	3nocross 11221,12250 11300,12241 11347,12223
 Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross 12630,8722 12742,8635 12772,8612
 Sonnenallee: Mittelstreifen	3nocross 13277,8211 13459,8072 13474,8060
+Sonnenallee: Mittelstreifen	3nocross 13010,8422 13042,8395 13107,8343
 Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10659,12259 10625,12206 10574,12131
 Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10700,12315 10723,12346 10738,12364
 Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5215,10711 5341,10756 5475,10808
@@ -2810,7 +2811,7 @@ Zufahrt Parkhaus: Abrissarbeiten, Straße komplett gesperrt	2::inwork 8367,10745 
 Am Herzbergteich: noch wegen Bauarbeiten gesperrt; wann ist die Straße fertig?	2::inwork 17945,13493 17942,13568
 # 
 #: next_check_id: RUEDERSDORFER-2017
-#: last_checked: 2017-10-06
+#: last_checked: 2017-10-08
 #: check_frequency: 7d
 Rüdersdorfer Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 13173,11788 13066,11854
 # 
@@ -2885,10 +2886,11 @@ Parkrosenweg: Bauarbeiten	2::inwork -6530,6699 -6381,6587
 #: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01
 #: osm_watch: way id="392904879" version="1" vvv
 #: osm_watch: way id="392904880" version="3" vvv
-#: last_checked: 2017-09-09 vvv
+#: last_checked: 2017-10-08 vvv
 #: check_frequency: 360d vvv
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5579,12231 5535,12206 5518,12159
 Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5518,12159 5627,12105
+Gutenbergstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5317,12242 5518,12159
 #: check_frequency ^^^
 #: last_checked ^^^
 #: osm_watch ^^^
@@ -2899,8 +2901,8 @@ Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5518,12159 5627,12105
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036562139600/562139600/00280921/21-Anlagen/01/DS0329_VzK_Strassenbenennung_Moeckernkiez_fina.pdf
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_30_3365_3488_online.pdf (Benennung)
 #: XXX Qualität, genaue Lage, Sackgasse?
-#: last_checked: 2017-07-15
-#: next_check: 2017-11-15
+#: last_checked: 2017-10-08
+#: check_frequency: 45d
 Möckernkiez: Bauarbeiten	2::inwork 8778,9759 8741,9741 8729,9670 8587,9590 8566,9643
 # 
 # REMOVED (vermutlich beendet) --- #: next_check_id: OBERERWUHLEWANDERWEG-2017 --- #: last_checked: 2017-08-09 --- #: XXX Ende der Bauarbeiten --- #: next_check: 2017-08-11 --- #: priority: #A --- oberer Wuhlewanderweg: Bauarbeiten, komplett gesperrt	2::inwork 22873,14498 22864,14556
@@ -2942,7 +2944,7 @@ Limburger Str.: Bauarbeiten am Rathaus Wedding, komplett gesperrt	2::inwork 7129
 #: valid: -20181231
 Karower Str.: temporäre Einbahnstraßenregelung	1s:q3:inwork 16593,25640 16632,25512 16669,25373
 # 
-#: last_checked: 2017-09-25 vvv
+#: last_checked: 2017-10-08 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- Mauerweg: Bauarbeiten, gesperrt	2::inwork 7926,14439 7940,14447
 #: XXX laut http://www.openstreetmap.org/note/1117960 wird der Weg "nach den Leitungsarbeiten wieder hergerichtet werden"
@@ -2961,7 +2963,7 @@ Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtun
 #: next_check_id: VERLAENGERTEHERTZ-2017
 #: XXX zumindest an der Fasanenstr.
 #: XXX laut Schild gehen die Bauarbeiten bis Dezember 2017
-#: last_checked: 2017-06-08
+#: last_checked: 2017-10-08
 #: next_check: 2017-12-01
 (Verlängerte Hertzallee): Bauarbeiten, komplett gesperrt	2::inwork 5352,11502 5296,11529 4950,11696 4905,11785
 # 
@@ -3016,7 +3018,7 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
 #: osm_watch: way id="441442656" version="1"
-#: last_checked: 2017-09-25
+#: last_checked: 2017-10-08
 #: check_frequency: 14d
 Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,14449 7561,14458 7426,14539 7368,14573
 # 
@@ -3028,9 +3030,7 @@ Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,
 #: check_frequency: 60d
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 # 
-#: last_checked: 2017-09-29
-Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2:inwork 14447,10491 14270,10584
-# 
+# REMOVED (mittlerweile kommt man besser durch) --- #: last_checked: 2017-09-29 --- Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2:inwork 14447,10491 14270,10584
 # REMOVED (mittlerweile schon passierbar) --- #: next_check_id: MARIANNEN-2016 vvv --- #: source_id: INKO_2147340291_COPY_1 vvv --- #: source_id: 2147340291 vvv --- #: source_id: 2147340768 vvv --- # REMOVED (aufgehoben) --- #: priority: #A vvv --- #: XXX laut fritz bis 16.12.2016 --- #: last_checked: 2016-12-15 vvv --- #: next_check: 2017-01-10 vvv --- Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11512,10105 11616,10288 --- #: source_id: 2147340777 --- #: XXX laut fritz bis 10.01.2017 --- #: priority: #A --- #: last_checked: 2016-12-15 --- #: check_frequency: 7d --- Mariannenstr.: Baustelle, Fahrbahn gesperrt	2s:q3 11671,10402 11616,10288
 # 
 #: next_check_id: MINNATODENHAGENSTR-2016
@@ -3192,7 +3192,7 @@ Kirchdorfer Str.: Straße fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 # 
 #: by: http://www.dafmap.de/d/berlin.html?center=52.497318+13.462016&zoom=17#
-#: last_checked: 2017-09-02
+#: last_checked: 2017-10-08
 #: check_frequency: 120d
 am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14463,10212
 # 
@@ -3260,7 +3260,7 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 #: XXX geplante Fertigstellung (als Autostraße) im Dezember 2013
 #: XXX wrote Mail about current status (2013-11-05), no response
 # REMOVED --- osm_watch: way id="183406331" version="3"
-#: last_checked: 2017-09-25
+#: last_checked: 2017-10-08
 #: check_frequency: 120d
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 

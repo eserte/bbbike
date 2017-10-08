@@ -2601,6 +2601,7 @@ Neue Bahnhofstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 
 R¸dersdorfer Str.: Einbahnstraﬂe wegen Bauarbeiten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 13173,11788 13066,11854
 Mauerstr.: Bauarbeiten, Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 9108,11961 9138,11872
 Wegelystr.: Einbahnstraﬂe wegen Bauarbeiten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 5518,12159 5627,12105
+Gutenbergstr.: Einbahnstraﬂe wegen Bauarbeiten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 5317,12242 5518,12159
 Schinkelplatz: Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
 Karower Str.: tempor‰re Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 16593,25640 16632,25512 16669,25373
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 5192,10234 5196,10398
@@ -2610,7 +2611,6 @@ Heidelberger Str.: Baustelle, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenri
 Chausseestr.: Baustelle, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 8732,14098 8654,14194
 Chausseestr.: Baustelle, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 8654,14194 8607,14253 8570,14299 8442,14456
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 9042,11839 8969,11814
-Corinthstr.: Baustelle, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2:inwork::igndisp; 14447,10491 14270,10584
 (Los-Angeles-Platz): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 5669,10704 5822,10609
 Seekorso: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; -8376,6579 -8354,6590
 Seekorso: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; -8339,6578 -8364,6562
@@ -2635,8 +2635,8 @@ Tempelhofer Ufer, linker Gehweg	q4::igndisp; 8804,10303 8717,10322 8661,10377
 Leipziger Str., linker Gehweg	q3::igndisp; 9896,11703 9985,11711
 zur Ampel Jerusalemer Str.	q3::igndisp; 9985,11711 9987,11690 9982,11681
 Columbiadamm, linker Gehweg	q3::igndisp; 10796,8498 10799,8504 10913,8463
-Hohenstaufenstr., linker Gehweg bis zur Fuﬂg‰ngerampel	q3::igndisp; 6209,9774 6241,9772
-zur M¸nchener Str. auf dem linken Gehweg	q3::igndisp; 6241,9772 6209,9771
+Hohenstaufenstr., linker Gehweg bis zur Fuﬂg‰ngerampel	q3::igndisp; 6209,9774 6237,9772
+zur M¸nchener Str. auf dem linken Gehweg	q3::igndisp; 6237,9772 6209,9771
 Karl-Lieknecht-Str., linker Gehweg	q3::igndisp; 11082,13371 11070,13357
 Potsdamer Str., linker Gehweg	q4::igndisp; 7501,9573 7518,9791
 Landsberger Allee, Radweg auf der linken Seite	q0::igndisp; 15850,14308 15848,14325 15923,14334

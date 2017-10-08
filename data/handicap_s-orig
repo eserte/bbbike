@@ -27,7 +27,7 @@ Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,1
 #: last_checked: 2017-10-06
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
-#: last_checked: 2017-10-02
+#: last_checked: 2017-10-08
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
 #: last_checked: 2017-10-06
@@ -81,7 +81,7 @@ Palisadenstr.: Bauarbeiten, teilweise Einbahnstraße, offen Richtung Osten	q2::in
 # 
 ### Treptow ###
 # 
-# REMOVED (mittlerweile wieder offen) --- #: by: http://www.dafmap.de/d/berlin.html?id=4505&mt=0&zoom=17 --- #: last_checked: 2017-03-20 --- #: check_frequency: 14d --- Kiefholzstr.: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 13819,9333 13715,9455
+# REMOVED (mittlerweile wieder offen) --- #: by: http://www.dafmap.de/d/berlin.html?id=4505&mt=0&zoom=17 --- #: last_checked: 2017-03-20 --- #: check_frequency: 14d --- Kiefholzstr.: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 13821,9340 13715,9455
 # REMOVED (aber vielleicht nur am Wochenende offen?) --- #: last_checked: 2016-12-20 vvv --- #: check_frequency: 21d vvv --- Schmollerplatz: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 13203,9450 13124,9375 --- Schmollerplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 13124,9375 13111,9361 13126,9347 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: XXX siehe auch valid-Eintrag weiter unten --- #: source_id: 2147340178 --- #: last_checked: 2016-10-05 --- #: valid: -20161115 --- Bouchéstr.: Bauarbeiten, Radfahrer müssen auf dem Gehweg fahren	q2::inwork 13642,9624 13865,9866 13890,9894 -- # REMOVED (wahrscheinlich aufgehoben) --- #: last_checked: 2013-11-22 --- #: check_frequency: 60d --- Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 13973,9465 14157,9345
 # 
@@ -362,7 +362,7 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 ### Charlottenburg ###
 # 
 #: next_check_id: ENGLISCHESTR-2017
-#: last_checked: 2017-07-03
+#: last_checked: 2017-10-08
 #: check_frequency: 120d
 Englische Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,12159
 # 

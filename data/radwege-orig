@@ -312,9 +312,9 @@ altes Verbundsteinpflaster	RW1; 10361,9755 10405,9795 10480,9949 10513,10038 105
 altes Verbundsteinpflaster	RW1;RW1 10198,9405 10306,9640 10361,9755
 	RW3; 11136,9851 11089,9751
 die letzten 10 Meter sind als benutzungspflichtige Radspur geführt	RW0; 11089,9751 11072,9711 11042,9642 11023,9597
-	RW1;RW1 6753,9814 6645,9794 6492,9782 6241,9772
-	RW1; 6241,9772 6209,9773 6096,9772
-	RW1; 6096,9772 6209,9772 6241,9772
+	RW1;RW1 6753,9814 6645,9794 6492,9782 6237,9772
+	RW1; 6237,9772 6209,9773 6096,9772
+	RW1; 6096,9772 6209,9772 6237,9772
 	RW1;RW1 6096,9772 6004,9771
 	RW1;RW1 6004,9771 5905,9795 5725,9846 5467,9866
 	RW1;RW1 5467,9866 5219,9808 5139,9777 5069,9735 4976,9670 4858,9594 4708,9498 4662,9472 4602,9439 4533,9400 4519,9393 4417,9340 4342,9301 4224,9241 4096,9175 3981,9117 3919,9085 3831,9052 3816,9052 3741,9051 3688,9051 3521,9059 3467,9045
@@ -660,7 +660,7 @@ Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 16699,10611 16725,10662 16
 	RW1;RW1 11251,13667 11329,13785 11378,13891 11435,14023 11465,14122 11471,14143 11498,14234 11572,14452 11633,14631 11655,14697 11682,14777
 	RW2;RW1 11682,14777 11709,14856
 	RW1;RW2 11709,14856 11740,14950
-	RW1;RW1 11740,14950 11776,15060 11801,15132 11828,15210 11852,15281 11860,15309 11877,15366 11891,15413 11905,15462 11913,15490 11941,15586 11967,15700 11995,15827
+	RW1;RW1 11740,14950 11776,15060 11801,15132 11828,15210 11852,15281 11860,15309 11877,15366 11891,15413 11909,15477 11916,15500 11941,15586 11967,15700 11995,15827
 	RW1;RW1 11995,15827 12030,15968 12061,16091
 	RW2;RW1 12061,16091 12075,16144 12090,16199
 # REMOVED --- #: by: rudolf kionke: ---	RW0;RW0 8092,13467 8059,13551 8048,13578 8019,13650
@@ -1060,16 +1060,14 @@ Busspur gilt Mo-Sa 7-20.30 Uhr	RW5; 7813,10112 7866,9918 7866,9902
 für Radfahrer freigegebene Busspur gilt Mo-Sa 7-20.30 Uhr	RW1;RW8 7866,9902 7866,9918 7906,10098
 Busspur ist immer gültig	RW5;RW0 7848,9814 7829,9723
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5542,11075 5459,11135
-#: XXX Busspur vermutlich temporär aufgehoben ("Fahrbahn auf zwei Fahrstreifen verengt ... bis Ende 12/2017", laut fritz bis 17.11.2017)
-#: XXX früher: Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5459,11135 5258,11285
-#: source_id: 2147341902
-Busspur gilt Mo-Fr 7-19 Uhr	RW5; 5459,11135 5258,11285
+# REMOVED (stimmt nicht) --- #: XXX Busspur vermutlich temporär aufgehoben ("Fahrbahn auf zwei Fahrstreifen verengt ... bis Ende 12/2017", laut fritz bis 17.11.2017) --- #: source_id: 2147341902 --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 5459,11135 5258,11285
+Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5459,11135 5258,11285
 #: XXX Busspur wegen Bauarbeiten größtenteils aufgehoben (bis auf ein paar Meter am Steinplatz)
 #: XXX früher: Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5
 #: XXX bis Ende 2016, laut rbbtext bis 16.12.2016, laut VMZ nun bis Ende 2017
 #: source_id: 2147339533
-#: last_checked: 2017-09-12
-#: check_frequency: 60d
+#: last_checked: 2017-10-08
+#: check_frequency: 21d
 	RW0;RW0 5258,11285 5166,11343 5091,11406
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5091,11406 5085,11413 4922,11600
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
@@ -1171,7 +1169,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW3; 18225,7004 18010,713
 #: by: osm ("lane" Richtung Westen)
 	RW1;RW3 18492,6893 18771,6699 18948,6578 19245,6379 19276,6359 19405,6276 19578,6165 19594,6155 19759,6049 19958,5950
 	RW0;RW1 9395,8726 9364,8640 9321,8607
-	RW3;RW3 13819,9333 13849,9310
+	RW3;RW3 13821,9340 13849,9310
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
@@ -1401,7 +1399,7 @@ Radweg teilweise nur aufgemalt, hereinragende parkende Autos	RW1; 4187,13704 427
 Gehwegplatten/Verbundsteinpflaster, hereinragende parkende Autos	RW1; 5220,14043 5100,14014 4963,13969 4583,13845
 #: XXX Bauarbeiten, später gibt's hier eine Radspur
 #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Sickingenstrasse-Huttenstrasse-Verkehrsbe.7507.0.html
-#: last_checked: 2017-09-12
+#: last_checked: 2017-10-08
 	RW0; 4583,13845 4421,13793 4271,13735
 Gehwegplatten/Verbundsteinpflaster	RW1; 4271,13735 4187,13704
 # REMOVED --- Radweg teilweise nur aufgemalt, hereinragende parkende Autos	RW1;RW1 5306,14061 5322,14044 5443,14028 --- Radweg teilweise nur aufgemalt, hereinragende parkende Autos	RW1; 5443,14028 5647,14067 --- existierender Radweg explizit abgesperrt	RW0; 5647,14067 5443,14028 --- Radweg teilweise nur aufgemalt, hereinragende parkende Autos	RW1;RW1 5647,14067 5708,14077 5746,14090
@@ -1747,7 +1745,7 @@ Berliner Gehwegplatten, ca. 1,50m breit	RW2;RW2 9272,14208 9400,14400 9410,14410
 #: note: Wobei es so aussieht, als ob das Zusatzschild einfach nur fehlt
 #: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5;
 #: by: http://www.dafmap.de/d/berlin.html?id=3134&mt=0&zoom=16 (Projektabschluss: 2017-09-01)
-#: last_checked: 2017-09-25
+#: last_checked: 2017-10-08
 #: check_frequency: 21d
 	RW4; 11451,13301 11368,13170
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 11451,13301 11486,13350
