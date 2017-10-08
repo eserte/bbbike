@@ -18,7 +18,7 @@
 
     use strict;
     use vars qw($VERSION);
-    $VERSION = '0.09';
+    $VERSION = '0.10';
 
     sub has_gps_settings { 1 }
 
@@ -127,7 +127,7 @@
 	    if (-x $check_udisksctl) {
 		$udisksctl = $check_udisksctl;
 		my $info_dialog_active;
-		my $max_wait = 60; # wait max. 60s
+		my $max_wait = 80; # full etrex 30 device boot until mass storage is available lasts 66-70 seconds
 		my $check_mount_device;
 		if ($garmin_disk_type eq 'flash') {
 		    $check_mount_device = '/dev/disk/by-label/GARMIN';
