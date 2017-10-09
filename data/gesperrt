@@ -657,8 +657,8 @@ Kurt-Weill-Platz	1 23772,15058 23778,14995
 Fritz-Lang-Platz	1 23871,14914 23882,14904 23856,14868 23820,14896 23846,14931 23871,14914
 Wuhletalstr. (Richtungsfahrbahn)	1::igndisp 20769,17650 20895,17594 21066,17503
 Wuhletalstr. (Richtungsfahrbahn)	1::igndisp 21066,17503 20891,17572 20769,17650
-B2: Eberswalde - Angermünde	1::igndisp 49908,67683 49633,67431
-B2: Angermünde - Eberswalde	1::igndisp 49633,67431 49907,67684
+B2: Eberswalde - Angermünde	1::igndisp 49908,67683 49839,67618 49812,67593
+B2: Angermünde - Eberswalde	1::igndisp 49812,67593 49838,67618 49907,67684
 B2: Angermünde - Schwedt	1::igndisp 50386,68158 49908,67683
 B2: Schwedt - Angermünde	1::igndisp 49907,67684 50386,68158
 Trusetaler Str.	1s 21285,17276 21360,17261 21352,17210 21451,17189 21435,17097
@@ -2885,6 +2885,8 @@ Drängelgitter	BNP:3:0:trailer=10 3783,-2079
 Drängelgitter	BNP:3:50:trailer=10 21618,5699
 Drängelgitter	BNP:3:85:trailer=10 22070,5876
 Drängelgitter	BNP:3:78:trailer=10 22097,5879
+Lichtburgring: Baustelle, Betreten verboten	2::inwork 10004,15636 9933,15815
+Bärbel-Bohley-Ring: Baustelle, Betreten verboten	2::inwork 9933,15815 9744,15793
 Zufahrt Parkhaus: Abrissarbeiten, Straße komplett gesperrt	2::inwork 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
 Am Herzbergteich: noch wegen Bauarbeiten gesperrt; wann ist die Straße fertig?	2::inwork 17945,13493 17942,13568
 Rüdersdorfer Str.: Einbahnstraße wegen Bauarbeiten	1s:inwork 13173,11788 13066,11854

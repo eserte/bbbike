@@ -1932,7 +1932,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	q4::inwork 14369,11489 14434,11465
+# REMOVED --- #: note: Gehweg ist offiziell für Radfahrer befahrbar --- q4::inwork; 14211,11552 14305,11514 14369,11489 --- 3 14254,11377 14305,11514 14211,11552 --- 3 14254,11377 14305,11514 14358,11656 --- 3 14358,11656 14305,11514 14254,11377 --- 3 14369,11489 14305,11514 14254,11377
+',
+         'from' => 1507571138,
+         'id' => 2792,
+         'source_id' => '2147340169',
+         'text' => 'Wühlischstr.: Fahrbahn zwischen Gryphiusstr. und Knorrpromenade wg. Baustelle gesperrt, ggfs. auf Gehweg ausweichen',
+         'type' => 'handicap',
+         'until' => 1508940000
+       },
        undef,
        undef,
        undef,
@@ -2013,7 +2023,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: XXX weitere Sperrungen: 18. Oktober sowie 8., 15., 22. und 29. November
+#: next_check: 2017-10-12
+#: priority: #A
+	2::temp -2218,5133 -927,6888
+	2::temp -2825,5588 -1925,6790 -2080,6897
+	2::temp -1925,6790 -1851,6887
+',
+         'from' => 1507611600,
+         'id' => 2840,
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 11. Oktober 2017 gegen 10 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1507712400
+       },
        undef,
        {
          'data' => '#: tempex: sunset-T07

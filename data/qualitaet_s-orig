@@ -162,7 +162,7 @@ Kopernikusstr.: mäßiges Kopfsteinpflaster	Q2 13467,11778 13651,11731
 Torellstr.: mäßiges Kopfsteinpflaster	Q2 13295,11792 13467,11778
 #: next_check_id: RUEDERSDORFER-2017
 #: XXX Q0, sobald die Bauarbeiten beendet und die letzte Deckschicht drauf ist
-#: last_checked: 2017-10-08
+#: last_checked: 2017-10-09
 #: check_frequency: 7d
 Rüdersdorfer Str.: Asphalt	Q0- 13295,11792 13173,11788 13066,11854
 Kaskelstr.: relative glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
@@ -2013,7 +2013,7 @@ Grüntaler Str. - Esplanade: Asphalt	Q0 9778,16915 9846,16981 9880,16994 9980,169
 Kolonie: Gehwegplatten	Q1 10190,16930 10209,16674
 #: XXX Asphaltierung geplant
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.602784.php
-#: last_checked: 2017-09-21
+#: last_checked: 2017-10-09
 #: check_frequency: 60d
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 10997,16280 11295,16199 11404,16140 11542,16070
 Fritz-Riedel-Str.: Asphalt	Q0 13385,13992 13449,13892 13519,13785 13635,13605
@@ -3766,6 +3766,8 @@ Chamierstr.: Asphalt	Q0- 15840,15806 15801,15706
 Uferweg am Weißen See: wassergebundene Decke	Q1 14463,16735 14423,16749 14299,16740 14232,16716 14187,16639 14183,16547 14188,16501 14276,16411 14406,16379 14449,16394 14480,16449 14510,16549 14521,16599
 Seeweg: Kleinkopfsteinpflaster	Q1 14499,16341 14485,16362 14480,16449
 Seeweg: wassergebundene Decke, Kleinkopfsteinpflaster	Q1 14510,16549 14581,16529
+#: XXX Schäden werden gerade ausgebessert, danach Q0
+#: last_checked: 2017-10-09
 Gustav-Adolf-Str.: Asphalt, mit einigen Schäden	Q0- 12097,16263 12182,16322 12285,16392 12399,16479 12560,16602 12670,16675
 Hilde-Ephraim-Str.: Asphalt	Q0 1312,9220 1261,9285 1662,9642 1709,9663 1718,9653 1756,9610
 Rosensteinweg: Verbundsteinpflaster	Q1+ 1718,9653 1920,9824 1935,9818
@@ -7754,7 +7756,7 @@ Georgenstr. (Blankenburg): mäßiger Asphalt	Q1 14236,20773 14196,20825 14091,2096
 Frau-Elster-Weg: Gras	Q3 13953,18842 13948,18757 14011,18589
 Schneehornpfad: Asphalt	Q0 13497,18087 13619,18222
 Gustav-Adolf-Str.: Kopfsteinpflaster	Q2; 13708,17453 13633,17399
-Gustav-Adolf-Str.: Fahrbahn Kopfsteinpflaster, Radweg alter Asphalt mit Wurzelschäden	Q2+; 13633,17399 13708,17453
+Gustav-Adolf-Str.: Fahrbahn Kopfsteinpflaster, Radweg asphaltiert	Q1; 13633,17399 13708,17453
 Magnolienring: Asphalt	Q0 3449,6863 3465,6933
 Magnolienring: Asphalt	Q0 3295,6987 3369,6965 3397,6957 3396,6949 3465,6933 3531,6918 3537,6941 3401,6971 3397,6957
 Juister Weg: Asphalt	Q0 3361,6926 3369,6965 3381,7018
@@ -11289,7 +11291,9 @@ Ferdinandstr. (Lichterfelde): Basaltpflaster	Q2 5631,1937 5592,2021
 #: confirmed_by: Kay Leonhardt
 Ferdinandstr. (Lichterfelde): guter Asphalt	Q0 5592,2021 5525,2161 5420,2379 5398,2422
 #: corrected_by: srt (mäßiger Asphalt -> )
-Rodenbergstr.: mäßiges Kopfsteinpflaster	Q2 10989,16197 11253,16118 11358,16067 11492,15993
+Rodenbergstr.: mäßiges Kopfsteinpflaster	Q2 10989,16197 11253,16118 11358,16067
+#: corrected_by: srt (ohne "mäßiger")
+Rodenbergstr.: Asphalt	Q0- 11358,16067 11492,15993
 Jänschwalder Str.: Asphalt	Q0 25234,14501 25318,14462 25356,14491 25418,14538
 Sparrstr.: Kopfsteinpflaster	Q2 7432,14969 7397,15036 7303,15173
 Dachdeckerweg: guter Asphalt	Q0 13103,2271 13089,2354 13064,2499 13029,2661 12854,2950 12807,2958 12701,2955
@@ -13085,7 +13089,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="5"
-#: last_checked: 2017-08-27
+#: last_checked: 2017-10-09
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -21039,7 +21043,7 @@ Küstriner Str.: Asphalt	Q0 16123,15025 16211,15105
 #: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...)
 Küstriner Str.: Asphalt	Q0 16211,15105 16314,15223
 #: XXX wird hier die Straße verbessert werden? - laut Drucksache wird hier ein "Neubau" erfolgen vvv
-#: last_checked: 2017-06-04 vvv
+#: last_checked: 2017-10-09 vvv
 #: check_frequency: 120d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524
 #: confirmed_by: srt
@@ -26172,7 +26176,7 @@ Schwabstr.: schlechtes Kopfsteinpflaster	Q3 8462,17778 8536,17786
 #: by: ^^^
 # 
 #: by: Karsten [AM]
-#: confirmed_by: srt (north part):
+#: confirmed_by: srt
 Scherenbergstr.: Kopfsteinpflaster	Q2 11307,15995 11358,16067 11404,16140 11467,16238 11542,16384
 # 
 #: by: Peter Friede [AM]
