@@ -59,7 +59,7 @@ Ladenbergstr. -> Habelschwerdter Allee: Fußgängerampel auf der linken Seite benu
 Alemannenallee -> Badenallee: Fußgängerampel	DH:len=90:t=15 1065,11216 943,11302 743,11462
 Alemannenallee -> Heerstr.: Fußgängerampel	DH:len=70:t=15 1065,11216 943,11302 704,11273
 Badenallee -> Alemannenallee: Fußgängerampel	DH:len=90:t=15 743,11462 943,11302 1065,11216
-Heerstr. -> Badenallee: Fußgängerampel	DH=200:t=15 704,11273 943,11302 743,11462
+Heerstr. -> Badenallee: Fußgängerampel	DH:len=200:t=15 704,11273 943,11302 743,11462
 Bundesallee/Spichernstr.: zusätzliche Ampel	DH:t=15 5464,9914 5463,9961 5450,10338
 Gregor-Mendel-Str. -> Schorlemerallee: Umweg zur Überquerungsmöglichkeit	DH:len=40 3650,6665 3664,6523 3836,6550
 Siegertweg -> Manfred-von-Richthofen-Str.: Umweg zur Überquerungsmöglichkeit	DH:len=70 9042,7462 9070,7493 8956,7598
