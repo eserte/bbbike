@@ -1205,7 +1205,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 12045,16574
 	X 12937,23357
 	B 12944,26163
-	X 11556,10869
+	X 11552,10863
 	X 10397,10852
 	X 6665,2836
 	X 6718,2443
@@ -2861,10 +2861,10 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note etwas weiter südlich gelegen
 #: XXX allerdings nicht immer in Betrieb (z.B. nicht 2017-03-03 abends)
 #: check_frequency: 60d vvv
-#: last_checked: 2017-09-22
+#: last_checked: 2017-10-10
 	F::inwork 14674,10811
 #: XXX Zebrastreifen außer Betrieb; wie wird es nach den Bauarbeiten aussehen?
-#: last_checked: 2017-09-02
+#: last_checked: 2017-10-10
 	F::inwork 14794,10844
 #: check_frequency ^^^
 #: next_check_id ^^^
@@ -3515,7 +3515,7 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	X 18423,-843
 #: next_check_id: BER-20XX vvv
 #: XXX: Ampel am 2012-05-06 noch ausgeschaltet, wird wahrscheinlich mit BER in Betrieb gehen vvv
-#: next_check: 2017-11-01 vvv
+#: next_check: 2018-11-01 vvv
 	X0 19909,-2863
 	F0 18861,-3921
 #: XXX ^^^

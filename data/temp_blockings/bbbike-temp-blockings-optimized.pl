@@ -2066,7 +2066,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober; laut Pressemitteilung bis Ende 2017
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
-#: last_checked: 2017-09-29 vvv
+#: last_checked: 2017-10-10 vvv
 #: next_check: 2017-10-31 vvv
 # REMOVED (weitgehend fertig) ---	q3::inwork 13384,8354 13217,8493
 # REMOVED	q3::inwork; 13217,8493 13262,8554
@@ -2088,6 +2088,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: osm_watch: way id="530000444" version="2"
 #: last_checked: 2017-10-08
 #: check_frequency: 14d
 # REMOVED ---	q3::inwork; 7201,8870 7107,9030
@@ -2144,12 +2145,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-10-08
+#: last_checked: 2017-10-10
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
          'from' => undef,
          'id' => 2871,
-         'text' => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
+         'text' => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten ist die Straße komplett gesperrt, auch für Radfahrer und Fußgänger',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -2358,7 +2359,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1508104799
        },
        {
-         'data' => '#: last_checked: 2017-09-26
+         'data' => '#: last_checked: 2017-10-10
 	2::inwork 14652,10201 14569,10055
 ',
          'from' => undef,

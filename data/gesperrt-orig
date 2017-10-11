@@ -2215,7 +2215,7 @@ Schranke	BNP:3::trailer=10 5296,11529
 # 
 #: next_check_id: DIESEL-2015 vvv
 #: note: mittlerweile gibt es hier auch zwei Baustellenampeln mit Anforderung, allerdings wird relativ schnell auf grün geschaltet vvv
-#: last_checked: 2017-09-22 vvv
+#: last_checked: 2017-10-10 vvv
 Drängelgitter	BNP:5::trailer=10 14366,8058
 Drängelgitter	BNP:7::trailer=15 14425,8052
 #: note ^^^
@@ -2819,7 +2819,7 @@ Zufahrt Parkhaus: Abrissarbeiten, Straße komplett gesperrt	2::inwork 8367,10745 
 Am Herzbergteich: noch wegen Bauarbeiten gesperrt; wann ist die Straße fertig?	2::inwork 17945,13493 17942,13568
 # 
 #: next_check_id: RUEDERSDORFER-2017
-#: last_checked: 2017-10-09
+#: last_checked: 2017-10-10
 #: check_frequency: 7d
 Rüdersdorfer Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 13173,11788 13066,11854
 # 
@@ -3059,7 +3059,7 @@ Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17453,7451 17295,73
 #: XXX Bauarbeiten (Erweiterung des Rütli-Campus?)
 #: XXX Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="137084083" version="7"
-#: last_checked: 2017-08-30
+#: last_checked: 2017-10-10
 #: check_frequency: 60d
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,9200 12548,9167
 # 

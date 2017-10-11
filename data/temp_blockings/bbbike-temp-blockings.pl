@@ -383,11 +383,11 @@ EOF
 #: tempex: YYYY0431T1200-YYYY05020000 vvv
 #: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2971249-2970764-myfest-berlin.html
 	2::temp 11763,10635 11734,10563 11721,10530 11754,10516 11949,10414
-	2::temp 11556,10869 11770,10774 11760,10732 11781,10696 11763,10635 11505,10744 11556,10869 11589,10947 11640,11067
-	2::temp 11958,11045 11897,10887 11841,10747 11824,10708 11781,10696
-	2::temp 11805,10899 11803,10857
+	2::temp 11552,10863 11772,10764 11760,10732 11781,10696 11763,10635 11505,10744 11552,10863 11589,10947 11640,11067
+	2::temp 11958,11045 11897,10887 11839,10736 11824,10708 11781,10696
+	2::temp 11805,10899 11805,10858
 	2::temp 11275,10723 11301,10783 11329,10785 11365,10791 11403,10782 11505,10744 11463,10642 11690,10543 11721,10530
-	2::temp 11841,10747 11770,10774 11799,10848
+	2::temp 11839,10736 11772,10764 11804,10846
 	2::temp 11463,10642 11275,10723 11234,10739 11159,10769
 	2::temp 11708,10497 11690,10543 11734,10563 11754,10516 11708,10497
 	3 11258,10682 11275,10723 11253,10778
@@ -20634,7 +20634,7 @@ EOF
        text  => 'Veranstaltung auf dem Mariannenplatz "Berlin lacht", 13.-15. September 2013',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 11770,10774 11841,10747 11897,10887 11958,11045
+	2::temp 11772,10764 11839,10736 11897,10887 11958,11045
 EOF
      },
      { from  => $isodate2epoch->("2015-07-24 00:00:00"), # 1339907400, # 2012-06-17 06:30
@@ -25974,7 +25974,7 @@ EOF
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober; laut Pressemitteilung bis Ende 2017
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
-#: last_checked: 2017-09-29 vvv
+#: last_checked: 2017-10-10 vvv
 #: next_check: 2017-10-31 vvv
 # REMOVED (weitgehend fertig) ---	q3::inwork 13384,8354 13217,8493
 # REMOVED	q3::inwork; 13217,8493 13262,8554
@@ -26021,6 +26021,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: osm_watch: way id="530000444" version="2"
 #: last_checked: 2017-10-08
 #: check_frequency: 14d
 # REMOVED ---	q3::inwork; 7201,8870 7107,9030
@@ -26130,11 +26131,11 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Fahrbahn gesperrt sein',
+       text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten ist die Straße komplett gesperrt, auch für Radfahrer und Fußgänger',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-10-08
+#: last_checked: 2017-10-10
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },
@@ -26504,7 +26505,7 @@ EOF
        text  => 'Alt-Stralau - Spreeufer: Verbindung wegen Baustelle gesperrt, Ende unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-09-26
+#: last_checked: 2017-10-10
 	2::inwork 14652,10201 14569,10055
 EOF
      },
