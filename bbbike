@@ -3505,6 +3505,12 @@ unless ($skip_features{"sehenswuerdigkeiten"}) {
 			  -variable => \$green_optimization,
 			  -value => 2,
 			 );
+	if ($devel_host) {
+	    $gwm->radiobutton(-label => M"möglichst meiden (wegen Sturmschäden)",
+			      -variable => \$green_optimization,
+			      -value => -2,
+			     );
+	}
     }
     {
 	$sb2m->cascade(-label => M("Unterwegs mit")."...");
@@ -17932,10 +17938,17 @@ sub do_search {
 			   "green1" => 2,
 			   "green2" => 1,
 			 }
-		       : { "green0" => 2,
-			       "green1" => 1.5,
-				   "green2" => 1,
-			       }
+		       :
+		       $green_optimization == -2
+		       ? { "green0" => 1,
+			   "green1" => 2,
+			   "green2" => 3,
+			 }
+		       :
+		         { "green0" => 2,
+			   "green1" => 1.5,
+			   "green2" => 1,
+		         }
 		      );
 	$extra_args{Green} =
 	    {Net => $green_net,
