@@ -360,6 +360,7 @@ sub make_net_directedhandicap {
     my $speed_kmh = delete $args{speed};
     my $vehicle = delete $args{vehicle} || '';
     $vehicle = '' if $vehicle eq 'normal'; # alias
+    my $handicap_penalty = delete $args{handicap_penalty};
     my %time;
     $time{kerb_up}   = delete $args{kerb_up_time};
     $time{kerb_down} = delete $args{kerb_down_time};
@@ -388,6 +389,8 @@ sub make_net_directedhandicap {
     my %directed_handicaps;
     my $warned_too_few_coord;
     my $warned_invalid_cat;
+    my $warned_no_handicap_penalty;
+    my $warned_missing_handicap_penalty_cat;
     $s->init;
     while() {
 	my $r = $s->next;
@@ -411,6 +414,22 @@ sub make_net_directedhandicap {
 		    $len += $1;
 		} elsif ($attr =~ m{^kerb_(?:up|down)$}) {
 		    $pen += $time{$attr} * $speed_ms;
+		} elsif ($attr =~ m{^h=(q\d[-+]?),(\d+)$}) {
+		    my($cat, $len) = ($1, $2);
+		    if (!$handicap_penalty) {
+			if (!$warned_no_handicap_penalty++) {
+			    warn "DH:h=qX category encountered, but no handicap_penalty provided (warn only once)";
+			}
+		    } else {
+			my $factor = $handicap_penalty->{$cat};
+			if (!$factor) {
+			    if (!$warned_missing_handicap_penalty_cat++) {
+				warn "No handicap_penalty definiton for '$cat' (warn only once)";
+			    }
+			} else {
+			    $pen += ($factor-1)*$len;
+			}
+		    }
 		} else {
 		    if (!$warned_invalid_cat++) {
 			warn "Invalid attr '$attr'. Entry is @$r (warn only once)";

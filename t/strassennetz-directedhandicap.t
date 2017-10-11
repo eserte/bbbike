@@ -42,6 +42,9 @@ Andreasstr.\tNH 12238,11931 12279,12113 12295,12197 12345,12435
 Lindenstr.\tH 9770,10590 9795,10512 9858,10350 9873,10285
 Alte Jakobstr.\tN 9858,10350 9914,10401 9955,10501 9992,10626
 Neuenburger Str.\tN 9795,10512 9848,10526 9853,10543 9955,10501 10178,10411
+# for h=qX,len tests
+Alexanderstr.\tHH 11252,12644 11329,12497 11340,12443 11355,12331
+Schillingstr.\tN 11340,12443 11353,12436 11462,12384
 EOF
 my $dh_len = Strassen->new_from_data_string(<<"EOF");
 Simulate penalty in left turn from Grossbeerenstr. to Wartenburgstr.\tDH:len=100 9044,9753 9073,9915 8780,9968
@@ -57,6 +60,9 @@ Simulate kerb in Kleine Andreasstr.\tDH:kerb_up 12064,12171 12211,12128 12279,12
 Simulate kerb in Kleine Andreasstr.\tDH:kerb_down 12279,12113 12211,12128 12064,12171
 Simulate first kerb in Neuenburger Str.\tDH:kerb_up 9770,10590 9795,10512 9848,10526
 Simulate second kerb in Neuenburger Str.\tDH:kerb_down 9848,10526 9853,10543 9955,10501
+EOF
+my $dh_h_qX = Strassen->new_from_data_string(<<"EOF");
+Linker Gehweg Alexanderstr.\tDH:h=q3,55 11329,12497 11340,12443 11353,12436
 EOF
 
 my $s_net = StrassenNetz->new($s);
@@ -221,6 +227,44 @@ $s_net->make_net(UseCache => 0);
     my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
     is_deeply \@directed_handicap_info, [], 'not routing through directed handicaps'
 	or diag(explain(\@directed_handicap_info));
+}
+
+# h=qX,len tests
+{
+    my @warnings;
+    local $SIG{__WARN__} = sub { push @warnings, @_ };
+    my $directed_handicap_net = StrassenNetz->make_net_directedhandicap($dh_h_qX, speed => 20, vehicle => '');
+    like "@warnings", qr{\QDH:h=qX category encountered, but no handicap_penalty provided (warn only once) at }, 'expected warning';
+}
+
+{
+    my $directed_handicap_net;
+    {
+	my @warnings;
+	local $SIG{__WARN__} = sub { push @warnings, @_ };
+	$directed_handicap_net = StrassenNetz->make_net_directedhandicap($dh_h_qX, speed => 18, vehicle => '', handicap_penalty => { q0=>1, q1=>1.2, q2=>1.5, q3=>2 });
+	is "@warnings", '', 'no warning';
+    }
+
+    # Search from Alexanderstr. to Schillingstr.
+    {
+	my($path) = $s_net->search("11252,12644", "11462,12384", DirectedHandicap => $directed_handicap_net);
+	my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+	# Calculation is:
+	# 18km/h = 5m/s
+	# for 55m: t=11s
+	# Penalty(q3)=2 -> 9km/h
+	# for 55m: t=22s
+	# -> diff is 11s
+	is $directed_handicap_info[0]->{lost_time}, 11, 'expected 11s lost time';
+    }
+
+    # Search from Alexanderstr. to Alexanderstr. (without handicaps)
+    {
+	my($path) = $s_net->search("11252,12644", "11355,12331", DirectedHandicap => $directed_handicap_net);
+	my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+	is_deeply \@directed_handicap_info, [], 'no handicaps';
+    }
 }
 
 __END__

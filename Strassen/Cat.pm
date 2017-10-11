@@ -147,7 +147,13 @@ my %versioned_file_to_cat;
      "gesperrt_u"		=> $filetype_to_cat{"gesperrt_oepnv"},
      "green"			=> [qw(green1 green2)],
      "grenzuebergaenge"         => [qw(GU)],
-     'handicap_directed'        => [sub { /^DH(:t=\d+|:len=\d+)+$/ }],
+     'handicap_directed'        => [sub {
+					/^DH
+					 (:t=\d+ # lost time
+					 |:len=\d+ # additional length
+					 |:h=q[0-9][-+]?,\d+ # handicap-like penalty for specified length
+					 )+$/x
+				    }],
      "handicap_l"		=> $filetype_to_cat{"handicap"},
      "handicap_s"		=> $filetype_to_cat{"handicap"},
      "hoehe"			=> [qw(X XXX ? ???)],
