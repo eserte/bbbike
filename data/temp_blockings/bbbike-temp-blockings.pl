@@ -25796,13 +25796,13 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2017-10-10 07:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-10-11 11:00:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 11. Oktober 2017 gegen 10 Uhr',
+     { from  => $isodate2epoch->("2017-10-17 07:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-10-18 11:00:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 18. Oktober 2017 gegen 10 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX weitere Sperrungen: 18. Oktober sowie 8., 15., 22. und 29. November
-#: next_check: 2017-10-12
+#: next_check: 2017-10-19
 #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
