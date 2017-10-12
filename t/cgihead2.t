@@ -47,7 +47,6 @@ use constant MSDOS_MIME_TYPE => qr{^application/(octet-stream|x-msdos-program|x-
     use POSIX qw(strftime);
     use constant TODO_FREEBSD_PORTSMON_BROKEN => "2017-10-13T12:00:00" gt strftime("%FT%T", localtime) && 'FreeBSD portsmon/portsoverview page is broken (internal server error)';
     use constant TODO_FREEBSD_PKG_ERRORS => "2015-05-13T12:00:00" gt strftime("%FT%T", localtime) && 'BBBike packages for FreeBSD not available, maybe permanently?';
-    use constant TODO_CS_TU_BERLIN_UNREACHABLE => "2014-02-10T20:00:00" gt strftime("%FT%T", localtime) && 'BBBike diplom location not reachable (user.cs.tu-berlin.de down)';
 }
 
 my @var;
@@ -136,11 +135,6 @@ for my $var (@var) {
 	    $url eq $BBBike::DISTFILE_FREEBSD_ALL
 	   ) {
 	    $TODO = TODO_FREEBSD_PORTSMON_BROKEN;
-	}
-	if (TODO_CS_TU_BERLIN_UNREACHABLE &&
-	    $url eq $BBBike::DIPLOM_URL
-	   ) {
-	    $TODO = TODO_CS_TU_BERLIN_UNREACHABLE;
 	}
 
 	my $timeout = 10;
