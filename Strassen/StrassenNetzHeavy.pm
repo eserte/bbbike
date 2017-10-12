@@ -361,10 +361,13 @@ sub make_net_directedhandicap {
     my $vehicle = delete $args{vehicle} || '';
     $vehicle = '' if $vehicle eq 'normal'; # alias
     my $handicap_penalty = delete $args{handicap_penalty};
+    my $default_lost_trafficlight_time = delete $args{default_lost_trafficlight_time};
+    $default_lost_trafficlight_time = 15 if !defined $default_lost_trafficlight_time;
     my %time;
     $time{kerb_up}   = delete $args{kerb_up_time};
     $time{kerb_down} = delete $args{kerb_down_time};
     die "Unhandled options: " . join(" ", %args) if %args;
+
     my $speed_ms = $speed_kmh / 3.6;
     # XXX check kerb times!
     if (!defined $time{kerb_up}) {
@@ -401,8 +404,9 @@ sub make_net_directedhandicap {
 		warn "Invalid directedhandicap record: less than three coordinates. Entry is: @$r (warn only once)";
 	    }
 	}
-	my $pen;
-	my $len;
+	my $pen;    # penalty time
+	my $tl_pen; # penalty time on traffic lights
+	my $len;    # additional length
 	if ($r->[Strassen::CAT()] =~ m{^DH:(.+)$}) {
 	    my $attrs = $1;
 	    for my $attr (split /:/, $attrs) {
@@ -430,6 +434,10 @@ sub make_net_directedhandicap {
 			    $pen += ($factor-1)*$len;
 			}
 		    }
+		} elsif ($attr =~ m{^tl(?:=(\d+))?$}) {
+		    my $lost_trafficlight_time = defined $1 ? $1 : $default_lost_trafficlight_time;
+		    $pen    += 0; # trafficlight penalties are handled specially, in $tl_pen
+		    $tl_pen += $lost_trafficlight_time * $speed_ms;
 		} else {
 		    if (!$warned_invalid_cat++) {
 			warn "Invalid attr '$attr'. Entry is @$r (warn only once)";
@@ -443,7 +451,13 @@ sub make_net_directedhandicap {
 	}
 	if (defined $pen) {
 	    my $last = pop @c;
-	    push @{ $directed_handicaps{$last} }, { p => \@c, pen => $pen, len => $len };
+	    push @{ $directed_handicaps{$last} },
+		{
+		 p => \@c,
+		 pen => $pen,
+		 (defined $tl_pen ? (tl_pen => $tl_pen) : ()),
+		 len => $len,
+		};
 	}
     }
     return {
@@ -480,10 +494,11 @@ sub directedhandicap_get_losses {
 			}
 			push @ret,
 			    {
-			     path_begin_i => $rp_j,
-			     path_end_i   => $rp_i,
-			     add_len      => $directed_handicap->{len},
-			     lost_time    => $directed_handicap->{pen} / $speed_ms,
+			     path_begin_i  => $rp_j,
+			     path_end_i    => $rp_i,
+			     add_len       => $directed_handicap->{len},
+			     lost_time     => $directed_handicap->{pen} / $speed_ms,
+			     lost_time_tl  => (exists $directed_handicap->{tl_pen} ? $directed_handicap->{tl_pen} / $speed_ms : undef),
 			    };
 			last FIND_MATCHING_DIRECTED_HANDICAPS;
 		    }

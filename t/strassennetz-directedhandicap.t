@@ -45,6 +45,12 @@ Neuenburger Str.\tN 9795,10512 9848,10526 9853,10543 9955,10501 10178,10411
 # for h=qX,len tests
 Alexanderstr.\tHH 11252,12644 11329,12497 11340,12443 11355,12331
 Schillingstr.\tN 11340,12443 11353,12436 11462,12384
+# for tl tests
+Karl-Marx-Allee\tHH 12360,12505 12596,12472 12612,12470 12869,12425
+Koppenstr.\tN 12573,12227 12596,12472 12632,12630
+Puschkinallee\tHH 14495,9609 14318,9688 14271,9712 14196,9749 13999,9842
+Puschkinallee - Elsenstr.\tHH 14271,9712 14250,9756 14244,9812
+Elsenstr.\tHH 14289,9870 14244,9812 14196,9749 14089,9610
 EOF
 my $dh_len = Strassen->new_from_data_string(<<"EOF");
 Simulate penalty in left turn from Grossbeerenstr. to Wartenburgstr.\tDH:len=100 9044,9753 9073,9915 8780,9968
@@ -63,6 +69,13 @@ Simulate second kerb in Neuenburger Str.\tDH:kerb_down 9848,10526 9853,10543 995
 EOF
 my $dh_h_qX = Strassen->new_from_data_string(<<"EOF");
 Linker Gehweg Alexanderstr.\tDH:h=q3,55 11329,12497 11340,12443 11353,12436
+EOF
+my $dh_tl = Strassen->new_from_data_string(<<"EOF");
+Puschkinallee: Ampel\tDH:tl 14318,9688 14271,9712 14196,9749
+Koppenstr./Karl-Marx-Allee: Fußgängerampel\tDH:tl=20 12573,12227 12596,12472 12632,12630
+Koppenstr./Karl-Marx-Allee: Fußgängerampel\tDH:tl=20 12632,12630 12596,12472 12573,12227
+Koppenstr./Karl-Marx-Allee: Fußgängerampel\tDH:tl=20 12573,12227 12596,12472 12360,12505
+Koppenstr./Karl-Marx-Allee: Fußgängerampel\tDH:tl=20 12360,12505 12596,12472 12632,12630
 EOF
 
 my $s_net = StrassenNetz->new($s);
@@ -109,6 +122,7 @@ $s_net->make_net(UseCache => 0);
 	[
 	 {
 	  "lost_time" => 18,
+	  "lost_time_tl" => undef,
 	  "add_len" => undef,
 	  "path_begin_i" => 0,
 	  "path_end_i" => 2
@@ -168,13 +182,15 @@ $s_net->make_net(UseCache => 0);
 	[
 	 {
 	  'add_len' => undef,
-	  'lost_time' => '4',
+	  'lost_time' => 4,
+	  'lost_time_tl' => undef,
 	  'path_begin_i' => 0,
 	  'path_end_i' => 2
 	 },
 	 {
 	  'add_len' => undef,
-	  'lost_time' => '2',
+	  'lost_time' => 2,
+	  'lost_time_tl' => undef,
 	  'path_begin_i' => 2,
 	  'path_end_i' => 4
 	 }
@@ -193,13 +209,15 @@ $s_net->make_net(UseCache => 0);
 	[
 	 {
 	  'add_len' => undef,
-	  'lost_time' => '4',
+	  'lost_time' => 4,
+	  'lost_time_tl' => undef,
 	  'path_begin_i' => 0,
 	  'path_end_i' => 2
 	 },
 	 {
 	  'add_len' => undef,
-	  'lost_time' => '2',
+	  'lost_time' => 2,
+	  'lost_time_tl' => undef,
 	  'path_begin_i' => 2,
 	  'path_end_i' => 4
 	 }
@@ -266,5 +284,59 @@ $s_net->make_net(UseCache => 0);
 	is_deeply \@directed_handicap_info, [], 'no handicaps';
     }
 }
+
+# trafficlight tests
+{
+    my $directed_handicap_net = StrassenNetz->make_net_directedhandicap($dh_tl, speed => 25, default_lost_trafficlight_time => 15);
+
+    {
+	my($path) = $s_net->search("14495,9609", "13999,9842", DirectedHandicap => $directed_handicap_net);
+	my @route_info = $s_net->route_info(Route => $path);
+	is $route_info[0]->{Street}, 'Puschkinallee';
+	is scalar(@route_info), 1, 'straight forward';
+
+	my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+	is_deeply \@directed_handicap_info,
+	    [
+	     {
+	      "add_len" => undef,
+	      "lost_time" => 0,
+	      "lost_time_tl" => 15,
+	      "path_begin_i" => 1,
+	      "path_end_i" => 3
+	     }
+	    ], 'default lost_time_tl (15s)';
+    }
+
+    {
+	# Normally the Ampeln->Net would contain the same traffic
+	# lights as defined in $dh_tl. But just for demonstration of
+	# the effect it's not defined here, leading to a strange route
+	# avoiding the traffic lights in $dh_tl.
+	my($path) = $s_net->search("14495,9609", "13999,9842", DirectedHandicap => $directed_handicap_net, Ampeln => { Net => {}, Penalty => 100 });
+	my @route_info = $s_net->route_info(Route => $path);
+	is $route_info[1]->{Street}, "(Puschkinallee -) Elsenstr.", 'strange route';
+
+	my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+	is_deeply \@directed_handicap_info, [];
+    }
+
+    {
+	my($path) = $s_net->search("12360,12505", "12632,12630", DirectedHandicap => $directed_handicap_net);
+	my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+	is_deeply \@directed_handicap_info,
+	    [
+	     {
+	      "add_len" => undef,
+	      "lost_time" => 0,
+	      "lost_time_tl" => 20,
+	      "path_begin_i" => 0,
+	      "path_end_i" => 2
+	     }
+	    ], 'tl-specific lost_time_tl (20s instead of 15s)';
+    }
+
+}
+
 
 __END__

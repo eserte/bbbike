@@ -666,9 +666,28 @@ sub build_penalty_code {
 						last FIND_MATCHING_DIRECTED_HANDICAP;
 					    }
 					}
-				     }
-				     $pen += $directed_handicap->{pen};
-				     last FIND_MATCHING_DIRECTED_HANDICAPS;
+				    }
+';
+	# HasAmpeln -> Ampeloptimierung enabled. In this case, and if
+	# it's existent here, then we use the tl_pen penalty. In all
+	# other cases we use the pen penalty.
+	if ($sc->HasAmpeln) {
+	    $penalty_code .= '
+				    if (exists $directed_handicap->{tl_pen}) {
+					$pen += $directed_handicap->{tl_pen};
+				    } else {
+';
+	}
+	$penalty_code .= '
+				    $pen += $directed_handicap->{pen};
+';
+	if ($sc->HasAmpeln) {
+	    $penalty_code .= '
+				    }
+';
+	}
+	$penalty_code .= '
+				    last FIND_MATCHING_DIRECTED_HANDICAPS;
 				}
 			    }
 			}
