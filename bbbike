@@ -15931,26 +15931,7 @@ sub deltovia {
 sub updatekm {
     return if !@realcoords;
 
-    my $lost_time_s;
-    if (%ampeln) {
-	my $ampel_count = 0;
-	foreach (@realcoords) {
-	    if ($ampeln{$_->[0].",".$_->[1]}) {
-		$ampel_count++;
-	    }
-	}
-	if ($ampel_count == 0) {
-	    $ampelstatus_label_text = M"Keine Ampeln";
-	} else {
-	    $lost_time_s = $ampel_count*$lost_time_per_ampel{X}; # XXX F ...
-	    $ampelstatus_label_text =
-		"$ampel_count " .
-		    ($ampel_count > 1 ? M"Ampeln" : M"Ampel") .
-			" (-" . s2hm_or_s($lost_time_s) . ")";
-	}
-    } else {
-	$ampelstatus_label_text = "";
-    }
+    my $final_distance = $strecke; # may be amended by directed handicap
 
     my $lost_time_tragen_s = 0;
     my $lost_time_narrowpassage_s = 0;
@@ -15997,9 +15978,12 @@ sub updatekm {
 		}
 	    }
 	} else {
-	    $time_h[$i] = ($strecke / 1000) / $speed[$i];
+	    $time_h[$i] = ($final_distance / 1000) / $speed[$i];
 	}
     }
+
+    my $tl_count_from_directed_net = 0;
+    my $tl_lost_time_from_directed_net = 0;
     if ($handicap_directed_net) {
 	my @handicap_directed_info = StrassenNetz->directedhandicap_get_losses($handicap_directed_net, \@realcoords);
 	my $add_length = 0;
@@ -16008,11 +15992,15 @@ sub updatekm {
 	    if (defined $handicap_directed_info->{add_len}) {
 		$add_length += $handicap_directed_info->{add_len};
 	    }
-	    $add_time += $handicap_directed_info->{lost_time}
+	    $add_time += $handicap_directed_info->{lost_time};
+	    if (defined $handicap_directed_info->{lost_time_tl}) {
+		$tl_count_from_directed_net++;
+		$tl_lost_time_from_directed_net += $handicap_directed_info->{lost_time_tl};
+	    }
 	}
 	if ($add_length) {
 	    warn "INFO: additional length because of directed handicaps: ${add_length}m\n";
-	    $strecke += $add_length;
+	    $final_distance += $add_length;
 	}
 	if ($add_time) {
 	    warn "INFO: lost time because of directed handicaps: ${add_time}s\n";
@@ -16020,20 +16008,48 @@ sub updatekm {
 		$time_h[$i] += $add_time / 3600;
 	    }
 	}
+	if ($tl_count_from_directed_net) {
+	    warn "INFO: additional trafficlights count from directed handicaps: $tl_count_from_directed_net\n";
+	}
+	if ($tl_lost_time_from_directed_net) {
+	    warn "INFO: lost trafficlights time from directed handicaps: ${tl_lost_time_from_directed_net}s\n";
+	}
     }
+
+    my $lost_time_s;
+    if (%ampeln) {
+	my $ampel_count = $tl_count_from_directed_net;
+	foreach (@realcoords) {
+	    if ($ampeln{$_->[0].",".$_->[1]}) {
+		$ampel_count++;
+	    }
+	}
+	if ($ampel_count == 0) {
+	    $ampelstatus_label_text = M"Keine Ampeln";
+	} else {
+	    $lost_time_s = $tl_lost_time_from_directed_net + $ampel_count*$lost_time_per_ampel{X}; # XXX F ...
+	    $ampelstatus_label_text =
+		"$ampel_count " .
+		    ($ampel_count > 1 ? M"Ampeln" : M"Ampel") .
+			" (-" . s2hm_or_s($lost_time_s) . ")";
+	}
+    } else {
+	$ampelstatus_label_text = "";
+    }
+
     my $dir_strecke =
       sqrt(sqr($realcoords[0]->[0] - $realcoords[-1]->[0]) +
 	   sqr($realcoords[0]->[1] - $realcoords[-1]->[1]));
     if ($unit_s eq 'm') {
-	$act_value{Km} = sprintf "%d", $scale_coeff * $strecke;
+	$act_value{Km} = sprintf "%d", $scale_coeff * $final_distance;
     } elsif ($unit_s eq 'mi') {
-	$act_value{Km} = float_prec($scale_coeff * $strecke/1609.344, 1);
+	$act_value{Km} = float_prec($scale_coeff * $final_distance/1609.344, 1);
     } else {
-	$act_value{Km} = float_prec($scale_coeff * $strecke/1000, 1);
+	$act_value{Km} = float_prec($scale_coeff * $final_distance/1000, 1);
     }
     $act_value{Percent} = ($dir_strecke != 0
 			   ? do {
-			       my $p = int(($strecke/$dir_strecke)*100)-100;
+			       my $p = int(($final_distance/$dir_strecke)*100)-100;
 			       # wenn 1000% erreicht sind, ist es sicher
 			       # eine Rundfahrt, und da ist eine Prozent-
 			       # angabe unsinnig

@@ -18,7 +18,7 @@ package Strassen::Cat;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '2.01';
+$VERSION = '2.02';
 
 use File::Basename qw(basename);
 
@@ -152,6 +152,7 @@ my %versioned_file_to_cat;
 					 (:t=\d+ # lost time
 					 |:len=\d+ # additional length
 					 |:h=q[0-9][-+]?,\d+ # handicap-like penalty for specified length
+					 |:tl(?:=\d+)? # trafficlights
 					 )+$/x
 				    }],
      "handicap_l"		=> $filetype_to_cat{"handicap"},
