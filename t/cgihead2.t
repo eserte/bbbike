@@ -45,7 +45,7 @@ use constant MSDOS_MIME_TYPE => qr{^application/(octet-stream|x-msdos-program|x-
 
 {
     use POSIX qw(strftime);
-    use constant TODO_FREEBSD_PORTSMON_BROKEN => "2017-10-13T12:00:00" gt strftime("%FT%T", localtime) && 'FreeBSD portsmon/portsoverview page is broken (internal server error)';
+    use constant TODO_FREEBSD_PORTSMON_BROKEN => "2017-10-18T12:00:00" gt strftime("%FT%T", localtime) && 'FreeBSD portsmon/portsoverview page is broken (internal server error)';
     use constant TODO_FREEBSD_PKG_ERRORS => "2015-05-13T12:00:00" gt strftime("%FT%T", localtime) && 'BBBike packages for FreeBSD not available, maybe permanently?';
 }
 
