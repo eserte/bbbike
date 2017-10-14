@@ -5,7 +5,7 @@ Mittelweg	1 12335,7770 12224,7799 12176,7811
 # Die Verlängerung der Kronenstr. ist ein Privatweg, der anscheinend per
 # Schranke gesperrt werden kann.
 Privatweg (Kronenstr.)	2 10132,11810 10114,11789 10079,11765 9907,11752 9892,11752
-Maulbronner Ufer	1 7161,4110 7307,4087 7389,4088 7484,4109 7539,4127 7585,4154 7676,4216
+Maulbronner Ufer	1 7161,4110 7307,4087 7389,4088 7484,4109 7539,4127 7585,4154 7673,4223
 Reichstagufer	1 9098,12687 8892,12576 8766,12541
 Bunsenstr.	1 8892,12576 8904,12489
 Heimstr.	1 9973,9232 9966,9151 9958,9050 9951,8965
@@ -57,7 +57,7 @@ zum Mariannenplatz	2 11950,11157 11921,11185
 # REMOVED (gemeldet von andk, 2013-02-08) --- Großgörschen/Kulmer	3 7771,9389 7771,9479 7829,9723
 Herbartstr.	1 2340,11056 2361,10941 2468,10780 2493,10675
 Breite Str. Pankow	1 10602,18382 10680,18380
-Gormannstr.	1 10463,13747 10445,13675 10406,13543 10390,13493
+Gormannstr.	1 10459,13760 10445,13675 10406,13543 10390,13493
 Reichenberger Str.	1 11291,10438 11393,10390
 Weserstr.	1 12074,9217 12005,9211 11888,9189
 # XXX oder komplett gesperrt?
@@ -307,7 +307,7 @@ Köpenicker Landstr.: Mittelstreifen	3nocross 16428,7144 16353,7226 16195,7398 15
 Buschallee: Straßenbahntrasse	3nocross 14809,16525 15134,16499 15142,16499
 Alt Mahlsdorf: Mittelstreifen	3nocross 24801,11261 24893,11252 25138,11215
 #: note: Luftbild
-Clayallee: Mittelstreifen	3nocross 1214,4075 1232,4129 1279,4265
+Clayallee: Mittelstreifen	3nocross 1221,4071 1240,4126 1283,4260
 #: note: Luftbild
 Cecilienstr.: Mittelstreifen	3nocross 21358,13909 21398,13906 21466,13903 21576,13898
 #: note: eine Querungsmöglichkeit existiert einige Meter weiter nördlich
@@ -496,8 +496,8 @@ Am Juliusturm/Zitadelle: Mittelstreifen	3nocross -2794,14511 -2647,14532 -2597,1
 Thielallee: Mittelstreifen	3nocross 2585,5696 2556,5575 2444,5303
 Kleine Hamburger - Torstr.	3 9744,13584 9670,13637 9579,13604
 Kleine Hamburger - Gartenstr.	3 9744,13584 9670,13637 9535,13801
-Torstr.: Straßenbahntrasse	3nocross 10287,13783 10463,13747 10569,13719
-Torstr.: Straßenbahntrasse	3nocross 10746,13673 10898,13632 11111,13518 11160,13492
+Torstr.: Straßenbahntrasse	3nocross 10319,13788 10459,13760 10572,13731
+Torstr.: Straßenbahntrasse	3nocross 10741,13685 10898,13632 11111,13518 11160,13492
 Erlanger Str.: Barriere	3 * 12293,8494 *
 Höhndorfstr. - Loewenhardtdamm: Mittelstreifen	3nocross 8438,8676 8334,8655 8380,8545
 #: by: Julia Weber
@@ -505,7 +505,7 @@ Friedbergstr.	1 3012,10812 3204,10895
 # REMOVED (auch für Radfahrer nicht wirklich passierbar) --- Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3nocross 9777,10719 9797,10771 9807,10788
 Lindenstr.: Betonblöcke (aber für Radfahrer passierbar)	3nocross 9807,10788 9829,10830 9834,10840 9935,11067
 Treptower Str.	1 13376,7970 13457,8069 13459,8072
-Alte Schönhauser Str.	1 10718,13625 10746,13673
+Alte Schönhauser Str.	1 10709,13629 10741,13685
 Knoten Märkische Allee	1 19979,11774 20025,11747 20114,11719
 Hugo-Heimann-Str.	1 14120,1991 14165,2106 14229,2177 14444,2090 14587,2032
 Albulaweg	1 10541,1889 10486,1908
@@ -973,7 +973,7 @@ Ruschestr. - Schulze-Boysen-Str.: Geradeausfahren verboten	3 15879,12131 15863,1
 Schulze-Boysen-Str. - Ruschestr.: Geradeausfahren verboten	3 15836,11840 15863,11992 15879,12131
 Schulze-Boysen-Str. - Frankfurter Allee: Linksabbiegen verboten	3 15836,11840 15863,11992 15717,12015
 Bizetstr. - Indira-Gandhi-Str.: nur Rechtsabbiegen erlaubt	3 14293,16073 14552,16171 14522,16260
-Linienstr. - Rosa-Luxemburg-Str.: nur Rechtsabbiegen erlaubt	3 10740,13621 10777,13614 10746,13673
+Linienstr. - Rosa-Luxemburg-Str.: nur Rechtsabbiegen erlaubt	3 10740,13621 10777,13614 10741,13685
 Linienstr. - Rosa-Luxemburg-Str.: nur Rechtsabbiegen erlaubt	3 10740,13621 10777,13614 10872,13570
 Ibsenstr.: Barriere	3 10549,16650 10632,16644 *
 Ibsenstr.: Barriere	3 * 10632,16644 10549,16650
@@ -1147,7 +1147,7 @@ Borkumstr.: für Kfz gesperrt	2 11335,17807 11412,17823
 Zeiler Weg	1 11835,18301 11914,18303
 Neue Kärtner Str. (Schwanebeck-West)	1 18601,25062 18549,25106 18531,25161 18510,25252
 #: note: gilt auch für Radfahrer, aber 30m südlich gibt es eine Überfahrungsmöglichkeit
-Clayallee: Mittelstreifen	3nocross 1305,4334 1370,4547 1411,4654
+Clayallee: Mittelstreifen	3nocross 1304,4334 1370,4547 1411,4654
 zur Weißenhöher Str.	1 19735,11721 19830,11677 19881,11591
 Mariannenstr.	1 11512,10105 11616,10288
 Mariannenstr.	1 11671,10402 11616,10288

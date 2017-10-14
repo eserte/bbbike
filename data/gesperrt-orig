@@ -46,7 +46,7 @@ Halenseestr.	1 2218,10067 2268,9976 2300,9883 2369,9779 2415,9765
 # s¸dˆstlicher Teil
 Halenseestr.	1 2394,9714 2360,9754 2297,9827 2163,10024
 # nordwestlicher Teil
-Halenseestr.	1 1939,10446 1901,10566 1928,10728
+Halenseestr.	1 1939,10446 1901,10566 1900,10617 1928,10728
 Rasthof Avus	1 1870,10406 1882,10356 1847,10323 1723,10289 1692,10348 1793,10424 1833,10427 1870,10406
 Breitenbachplatz (Westseite)	1 4423,6477 4335,6523 4218,6583 4111,6651 4074,6681 4021,6729 3947,6814
 Breitenbachplatz (Ostseite)	1 3981,6850 4061,6753 4103,6716 4141,6688 4248,6620 4347,6551 4423,6477
@@ -222,7 +222,7 @@ Schildhornstr.	1 4937,6205 4984,6209 5165,6119
 Schildhornstr.	1 5137,6066 5047,6116 4937,6205
 Atzpodienstr.	1 16485,12384 16456,12191 16413,11906
 #: by: Robert Joop:
-Alt-Lietzow	1 4219,12324 4101,12356 4066,12368 4079,12411 4137,12411 4250,12390
+Alt-Lietzow	1 4219,12324 4101,12356 4061,12381 4080,12417 4137,12411 4250,12390
 Martin-Wagner-Ring	1 12791,3814 12895,3991 12941,4015 12995,4003 13007,3949 12910,3739
 Wilskistr.	1 -402,4012 -343,4056 -303,4086 -219,4149 -158,4236 27,4447 195,4588 301,4643 418,4696 528,4747 636,4765 798,4766
 Grazer Platz	1 6430,6787 6529,6798 6668,6810 6791,6821
@@ -250,7 +250,7 @@ Gierkeplatz	1 3447,12269 3456,12296 3478,12306 3510,12301 3528,12276 3521,12243 
 # REMOVED (Einbahnstraﬂenregelung mittlerweile aufgehoben) --- Knaackstr.	1 11056,15009 11038,14972 11101,14768
 Hagenplatz	1 1167,8556 1094,8398
 Branitzer Platz	1 1338,12055 1303,12084 1302,12125 1325,12157 1366,12168 1396,12137 1405,12094 1381,12064 1338,12055
-Reutlinger Str.	1 7676,4216 7597,4499
+Reutlinger Str.	1 7673,4223 7597,4499
 Sybel-/Waitzstr.	1 3883,10585 3764,10580 3731,10640 3726,10757
 #: by: Erik Boﬂ:
 Aﬂmannstr.	1 25015,5729 25048,5727 25039,5304 25039,5295
@@ -345,7 +345,7 @@ Saltykowstr.	1 12726,7887 12865,7923
 (Drorystr. - Braunschweiger Str., Schulhof)	2 13518,7477 13601,7366
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4360&options=4 ("allt‰gliche Praxis")
 #: XXX evtl. wird die Einbahnstraﬂenregelung aufgehoben oder ge‰ndert
-#: last_checked: 2017-05-21
+#: last_checked: 2017-10-14
 #: check_frequency: 300d
 Barbarastr.	1s:q3 6456,3038 6372,2959 6329,2916 6359,2875 6372,2856
 Leipziger Platz	1 8596,11508 8599,11474 8639,11441 8713,11448 8743,11489 8740,11524
@@ -1177,6 +1177,7 @@ Waldkraiburger Str.: Betriebsgel‰nde	2 12283,4971 12468,5000
 (Falkenberger Chaussee - Darﬂer Str.)	1 16785,17524 16825,17537 16848,17530 16947,17506
 Dankratweg - Am Waldberg: Betriebsgel‰nde	2 20460,9593 20408,9604 20338,9718 20335,9866
 (Vorfahrt S-Bhf. Tegel)	1s:q3 2352,20224 2371,20225 2384,20196 2398,20166 2381,20157
+(Guerickestr. - Einsteinufer)	1s:q3 4658,12450 4618,12340 4593,12322
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -1415,13 +1416,13 @@ Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: add_fragezeichen: Ist die Einbahnstraﬂe mittlerweile f¸r Radfahrer offen? vvv
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf vvv
 #: osm_watch: way id="183614191" version="5"
-#: last_checked: 2017-03-25
+#: last_checked: 2017-10-14
 #: check_frequency: 100d
 Ahornallee	1s:q3 1589,11483 1574,11379
 #: osm_watch: way id="24852084" version="9"
-#: last_checked: 2017-03-25
+#: last_checked: 2017-10-14
 #: check_frequency: 100d
-Lindenallee	1s:q3 1429,11523 1403,11428
+Lindenallee	1s:q3 1429,11528 1403,11428
 #: by: ^^^
 #: add_fragezeichen ^^^
 Gramzow (Dorfstr.?)	1s:q1 49779,90206 49810,90444
@@ -1445,6 +1446,11 @@ Hˆnower Str. (Karlshorst) (Ausweichen auf Sandbankette mˆglich)	1s:q2 18377,9366
 Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
 Ritterstr.	1 -3369,14532 -3316,14504
 Neue Bahnhofstr.	1s:q3 14908,11231 14918,11249
+#: XXX evtl. ist die Einbahnstraﬂenregelung tempor‰r
+#: osm_watch: way id="4708164" version="15"
+#: last_checked: 2017-10-14
+#: check_frequency: 90d
+Soorstr.	1s:q3 1861,11284 1884,11126 1865,11082
 #
 ####################################################################
 #
@@ -1498,7 +1504,7 @@ Altst‰dter Ring: Mittelstreifen	3nocross -3481,14523 -3498,14413 -3501,14365 -35
 #: by: Juliane (alberts...)
 Altst‰dter Ring: Mittelstreifen mit Zaun	3nocross -3501,14365 -3506,14306 -3517,14218 -3552,14082
 #: by: Steini (immerlocker)
-Kaiser-Wilhelm-Str.: Mittelstreifen	3nocross 6996,3761 6957,3699 6780,3497
+Kaiser-Wilhelm-Str.: Mittelstreifen	3nocross 6993,3765 6954,3703 6930,3666
 Alexanderstr.: umbequemes ‹berqueren wegen Bordsteinen	3nocross 11329,12497 11340,12443 11355,12331
 Yorckstr.: Mittelstreifen	3nocross 8777,9601 8679,9544 8595,9495
 Klemkestr.: Mittelstreifen	3nocross 7434,18695 7492,18699 7520,18701
@@ -1672,7 +1678,7 @@ Prenzlauer Allee: Straﬂenbahntrasse	3nocross 11941,15586 11967,15700 11995,15827
 Prenzlauer Allee: Straﬂenbahntrasse	3nocross 11435,14023 11465,14122 11471,14143
 Danziger Str.: Mittelstreifen mit Straﬂenbahn	3nocross 11709,14856 11609,14881 11535,14900
 Danziger Str.: Mittelstreifen mit Straﬂenbahn	3nocross 12317,14535 12123,14643 12025,14695
-Torstr.: Mittelstreifen mit Straﬂenbahn	3nocross 10746,13673 10640,13700 10569,13719 10463,13747
+Torstr.: Mittelstreifen mit Straﬂenbahn	3nocross 10741,13685 10645,13711 10572,13731 10459,13760
 Yorckstr.: Linksabbiegen verboten (und unbequem)	3nocross 8192,9619 8097,9650 7938,9694
 Hauptstr./Kleistpark: unbequemes ‹berqueren, stark befahrene Straﬂe	3nocross 7507,9458 7512,9572 7518,9791
 An den Treptowers: unbequemes ‹berqueren, stark befahrene Straﬂe	3nocross 14501,10169 14405,10027 14289,9870
@@ -2819,7 +2825,7 @@ Zufahrt Parkhaus: Abrissarbeiten, Straﬂe komplett gesperrt	2::inwork 8367,10745 
 Am Herzbergteich: noch wegen Bauarbeiten gesperrt; wann ist die Straﬂe fertig?	2::inwork 17945,13493 17942,13568
 # 
 #: next_check_id: RUEDERSDORFER-2017
-#: last_checked: 2017-10-12
+#: last_checked: 2017-10-14
 #: check_frequency: 7d
 R¸dersdorfer Str.: Einbahnstraﬂe wegen Bauarbeiten	1s:q3:inwork 13173,11788 13066,11854
 # 
@@ -2831,7 +2837,7 @@ R¸dersdorfer Str.: Einbahnstraﬂe wegen Bauarbeiten	1s:q3:inwork 13173,11788 1306
 #: next_check: 2018-03-01
 Merlitzstr.: Bauarbeiten, Straﬂe komplett gesperrt	2::inwork 19661,3421 19524,3286
 # 
-#: last_checked: 2017-10-06
+#: last_checked: 2017-10-14
 #: check_frequency: 21d
 Mauerstr.: Bauarbeiten, Einbahnstraﬂe	1s:q4:inwork 9108,11961 9138,11872
 # 
@@ -3019,7 +3025,7 @@ Chausseestr.: Baustelle, Einbahnstraﬂenregelung	1s:q4:inwork 8654,14194 8607,142
 # REMOVED (nur der ˆstliche Abschnitt ist geblieben, aber relativ breit und relativ wenig Verkehr) --- #: XXX Bauarbeiten der Berliner Wasserbetriebe bis Dezember 2017 --- #: last_checked: 2017-07-23 --- #: next_check: 2017-12-01 --- #: valid: -20171231 --- T¸rrschmidtstr.: Bauarbeiten, Einbahnstraﬂe	1s:q3 15541,10892 15649,10922 15756,10966
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3853&mt=0&zoom=16
-#: last_checked: 2017-09-25
+#: last_checked: 2017-10-14
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraﬂenregelung	1s:q3:inwork 9042,11839 8969,11814
 # 
 #: XXX danach kˆnnte die Qualit‰t der Wege besser sein
@@ -3184,6 +3190,7 @@ Rummelsburger Platz: zur H‰lfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 #: last_checked: 2017-09-23
 Frauenauer Str.: Straﬂe fertig, aber noch gesperrt	2::inwork 19663,9757 19858,9784
 # 
+#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_44_4909_5120_online.pdf (Widmung von Straﬂenland)
 #: osm_watch: way id="290255259" version="5"
 #: last_checked: 2017-08-17
 Kirchdorfer Str.: Straﬂe fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9784 19871,9680
@@ -3317,8 +3324,8 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: next_check_id: STAATSOPER-2014 vvv
 #: by: http://www.dafmap.de/d/berlin.html?id=3588&mt=0&zoom=16
 #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Erˆffnung)
-#: XXX voraussichtliche Erˆffnung 2017-10-03 (laut Tsp vom 2016-03-31)
-#: last_checked: 2017-10-11 vvv
+#: XXX Spielbetrieb wird im Dezember 2017 aufgenommen
+#: last_checked: 2017-10-13 vvv
 Bebelplatz: Bauarbeiten, vollst‰ndig gesperrt	2:inwork 9795,12293 9876,12298
 Hinter der Katholischen Kirche: Bauarbeiten, vollst‰ndig gesperrt	2:inwork 9798,12267 9795,12293 9780,12401
 # REMOVED (mittlerweile offen) --- Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9737,12238 9702,12307 9734,12395
@@ -3335,7 +3342,7 @@ Schloﬂplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2017-09-25
+#: last_checked: 2017-10-13
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
@@ -3477,7 +3484,7 @@ schieben (steile Treppe mit seitlicher Rampe)	0:180 1319,7444
 Clayallee: Mittlestreifen wg. Leitplanke nicht zu queren	3nocross 1955,7531 1967,7561 1987,7593 2034,7654
 Clayallee: Mittelstreifen schlecht zu queren	3nocross 2112,7754 2088,7723 2034,7654
 #: by: MichaelM
-Clayallee: Mittelstreifen	3nocross 1136,3878 1152,3918 1214,4075
+Clayallee: Mittelstreifen	3nocross 1139,3876 1159,3915 1221,4071
 Argentinische Allee: Mittelstreifen	3nocross 623,4902 844,4916 922,4910
 # XXX --- zurzeit (2012-03-16) wegen Bauarbeiten Einbahnstraﬂe in andere Richtung --- Am Zirkus	1 9239,12923 9170,13031 9145,13020 9118,13070
 Adele-Schreiber-Krieger-Str.	1s 8737,12757 8596,12760

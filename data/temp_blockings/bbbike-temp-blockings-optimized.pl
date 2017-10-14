@@ -1847,16 +1847,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147339562
 #: source_id: LMS-BR_r_LMS-BR_51041
 #: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3
-#: next_check: 2017-11-01
+#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.639561.php (Ende 2018 oder Mitte 2019)
+#: next_check: 2018-12-31
 # REMOVED ---	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
 	q3::inwork; -6861,15129 -6507,15007
 ',
          'from' => 1443650400,
          'id' => 2740,
          'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php',
-         'text' => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Klosterbuschweg und Hackbuschstr., stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich November 2017',
+         'text' => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Klosterbuschweg und Hackbuschstr., stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Ende 2018',
          'type' => 'handicap',
-         'until' => 1509534000
+         'until' => 1546254000
        },
        undef,
        undef,
@@ -2145,7 +2146,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-10-12
+#: last_checked: 2017-10-14
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
          'from' => undef,
@@ -2159,7 +2160,21 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: XXX wird sich die Qualität vielleicht bessern?
+#: XXX hier sind gerade Bauarbeiten --- Verbundsteinpflaster bleibt wohl, der wassergebundene Teil sind besser aus
+#: last_checked: 2017-10-14 vvv
+	2::inwork 8234,4660 8575,4980 8598,4985
+	2::inwork 8598,4985 8618,5019 8784,5095
+#: last_checked ^^^
+',
+         'from' => undef,
+         'id' => 2877,
+         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.608925.php',
+         'text' => 'Teltowkanal von der Rathausstraße bis Gersdorfstraße: Sanierung Fuß- und Radweg, Wege können gesperrt sein, Zeitraum unbekannt',
+         'type' => 'gesperrt',
+         'until' => 1512126000
+       },
        undef,
        {
          'data' => '	2::inwork 13415,21442 13371,21462
@@ -2425,7 +2440,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX ist die Qualität nach den Bauarbeiten etwas besser?
-#: last_checked: 2017-09-29 vvv
+#: last_checked: 2017-10-13 vvv
 #: check_frequency: 14d vvv
 	q4::inwork 13288,7653 13177,7644 13100,7626
 	q4::inwork 13177,7644 13188,7590
@@ -2437,6 +2452,42 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Karl-Marx-Platz/Richardplatz: Bauarbeiten an der Kirchhofstr., Fahrbahn gesperrt',
          'type' => 'handicap',
          'until' => undef
+       },
+       undef,
+       {
+         'data' => '#: tempex (sa) T08-13 vvv
+	q4::temp:clock 720,2718 682,2660 638,2637
+	q4::temp:clock 682,2660 610,2678
+#: tempex ^^^
+',
+         'from' => undef,
+         'id' => 2914,
+         'recurring' => 1,
+         'source_id' => 'http://www.zehlendorfer-wochenmarkt.de/',
+         'text' => 'Anhaltinerstr./Postplatz: Wochemarkt Samstag 9 bis 16 Uhr',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: last_checked: 2017-10-14
+#: check_frequency: 30d
+	q3::inwork 186,2532 272,2548 638,2637
+',
+         'from' => undef,
+         'id' => 2915,
+         'text' => 'Anhaltinerstr.: mögliche Beeinträchtigungen durch Bauarbeiten',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '	q4::inwork 10178,20525 10309,20562 10409,20592
+',
+         'from' => 1508005269,
+         'id' => 2916,
+         'source_id' => 'LMS-BR_r_LMS-BR_112957_LMS-BR_72',
+         'text' => 'Schillerstr.: zwischen Heinrich-Böll- und Waldemarstr. gesperrte Fahrbahn, bis 20.10.2017',
+         'type' => 'handicap',
+         'until' => 1508536800
        }
      
 );

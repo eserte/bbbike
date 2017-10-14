@@ -274,7 +274,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5900,11913
 	X 4973,12256
 	X 5013,12323
-	X 4598,12501
+	X 4591,12511
 	X 4648,12559
 	X 4854,11843
 	X 4905,11785
@@ -330,7 +330,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10264,13097
 	X 10350,13376
 	X 10177,13766
-	X 10746,13673
+	X 10741,13685
 	X 10923,13156
 	X 10755,13152
 	X 11160,13492
@@ -692,6 +692,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -3721,14495
 	X -3625,13889
 	X 653,12109
+	X 620,12144
 	X 818,11954
 	F 1200,11600
 	X 2254,11051
@@ -788,7 +789,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 11266,5097
 	X 11386,5107
 	X 6780,3497
-	X 6996,3761
+	X 6993,3765
 	X 7159,4023
 	X 7497,5610
 	X 6651,4843
@@ -880,7 +881,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 16699,10611
 	X 17067,8725
 	X 1462,3906
-	X 1136,3878
+	X 1139,3876
 	X 458,3697
 	X -266,3648
 	X 14988,11130
@@ -1144,7 +1145,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 6216,10614
 	F 6228,10646
 	X 4267,10724
-	X 4518,12355
+	X 4520,12358
 # REMOVED (Deutschlandhalle existiert nicht mehr) --- an der Deutschlandhalle, nur bei Veranstaltungen an vvv --- #X	X 5656,8112 --- #X	X 5623,8175 --- # ^^^
 	X 6020,10351
 	X 6147,10383
@@ -1234,7 +1235,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/1749-2016-bav-zu-ds-2687-iv-fahrradweg_krzg_afrikanische_str-petersallee-sb.pdf (Anforderung)
 	X 5581,16708
 	X 3895,1219
-	X 4261,1584
+	X 4261,1601
 	X 5229,2395
 	X 5317,2345
 	X 5542,2491
@@ -1367,7 +1368,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 23451,4877
 	F -7787,8517
 	X -8797,7638
-	X 4501,1900
+	X 4505,1909
 	X 17526,1540
 	X 16975,1262
 	X 15382,5687
@@ -1908,7 +1909,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X 1053,13790
 #: XXX_prog Ampel ist nach Osten versetzt, aber hier eingetragen, damit auch das Nord-Süd-Routing diese Ampel erfährt
 #: XXX_prog in Nord->Süd-Richtung gilt eigentlich nur die Ampel über die Straßenbahntrasse
-	F 10463,13747
+	F 10459,13760
 	F 8553,11630
 #: XXX_prog Ampel ist auch relevant, wenn man aus In den Ministergärten nach links in die Ebertstr. abbiegt
 	X 8571,11846
@@ -2615,7 +2616,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2017-10-09 vvv
+#: last_checked: 2017-10-13 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="3"
 	X::inwork 9121,12514
@@ -2632,7 +2633,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: XXX temporäre Ampel vvv
 #: by: http://www.dafmap.de/d/berlin.html?id=3481&mt=0&zoom=17
-#: last_checked: 2017-09-28 vvv
+#: last_checked: 2017-10-13 vvv
 #: check_frequency: 30d vvv
 	F::inwork 9270,12086
 #: check_frequency ^^^
@@ -2704,7 +2705,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 14754,17673
 	X 10908,17142
 	X 6992,14251
-	X 4393,1400
+	X 4399,1403
 	X 8075,499
 	X 12221,7271
 	X -3631,16224
@@ -2885,8 +2886,12 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: vermutlich nur an Werktagen angeschaltet
 #: off: weekend (seen 2017-07-15 11:45 (Sat))
 	X -1947,14394
+#: XXX_prog Ampel gilt nicht für Radfahrer, zumindest Richtung Westen
 	F 546,12720
 	X 12185,23021
+	X 1900,10617
+#: note: Anforderungsampel
+	F 242,1816
 # 
 ################################################################################
 #: note: Potsdam vvv
@@ -3027,7 +3032,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -12653,-1723
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
 #: next_check_id: KIEFHOLZ-2015 vvv
-#: last_checked: 2017-09-29 vvv
+#: last_checked: 2017-10-13 vvv
 #: check_frequency: 90d vvv
 	X::inwork 14151,8967
 	X::inwork 14363,8738

@@ -96,8 +96,8 @@ Ausschilderung: Alter Markt	CP2; -11851,-954 -11926,-909
 Theaterufer: zwischen Wasserbecken und Debis-Gebäude	CP2; 8289,11205 8261,11015
 Theaterufer: zwischen Straßentunnel und Debis-Gebäude	CP2; 8261,11015 8289,11205
 Richterstr. - Rathausstr.: zum Spielplatz einbiegen	CP2; 9276,3997 9294,3921
-Linksabbiegen in die Clayallee über Fußgängerfurt	CP; 1429,3609 1064,3743 971,3534
-Linksabbiegen in die Schlettstadter Str. über Fußgängerfurt	CP; 1136,3878 1064,3743 1429,3609
+Linksabbiegen in die Clayallee über Fußgängerfurt	CP; 1429,3609 1070,3741 971,3534
+Linksabbiegen in die Schlettstadter Str. über Fußgängerfurt	CP; 1139,3876 1070,3741 1429,3609
 Kehlheimer/Würzburger: Queren der Lietzenburger über Kfz-Furt möglich	CP; 5894,10287 5898,10318 5907,10347
 Kehlheimer/Würzburger: Queren der Lietzenburger über Kfz-Furt möglich	CP; 5907,10347 5898,10318 5894,10287
 das Portal des Anhalter Bahnhofs links liegen lassen	CP2; 8938,10872 8912,10846
@@ -250,7 +250,7 @@ Am Juliusturm - Zitadelle: an der Ampel "An der Spreeschanze" die Straßenseite w
 Loewenhardtdamm - Höhndorfstr.: bereits an der General-Pape-Str. auf den linken Gehweg wechseln	PI; 8306,8722 8334,8655 8438,8676
 Ausgeschildert zum Bayernring	CP2; 8531,8404 8454,8574
 Mehringdamm - Wilhelmshöhe: bereits an der Fidicinstr. die Straßenseite wechseln	PI; 9224,9053 9225,9111 9186,9107
-Kaiser-Wilhelm-Str. - Langkofelweg: bereits an der Ampel Edenkobener Weg die Straßenseite wechseln	PI; 6996,3761 6957,3699 6998,3596
+Kaiser-Wilhelm-Str. - Langkofelweg: bereits an der Ampel Edenkobener Weg die Straßenseite wechseln	PI; 6993,3765 6954,3703 6998,3596
 Altentreptower Str. - Wuhlgartenweg: zum Linksabbiegen frühzeitig auf die Fahrbahn oder den linken Gehweg wechseln	PI; 21573,12140 21400,12135 21307,12132 21282,12115
 Heerstr. - Preußenallee: bereits an der Kreuzung Teufelsseestr./Heerstr. auf die linke Straßenseite wechseln	PI; 504,11243 571,11255 541,11464
 Preußenallee - Heerstr.: auf der linken Gehwegseite bis zur Ampel Länderallee vorfahren und dann die Straßenseite wechseln	CP; 541,11464 571,11255 704,11273
@@ -292,7 +292,7 @@ Weg entlang der Bahnstrecke: Pfad ist schwierig zu finden	CP2; 17425,9605 17438,
 Am Sandberg: Straße nicht ausgeschildert	CP2; 20144,8355 20149,8318
 Am Wriezener Karree: nicht ausgeschildert	CP2; 12959,11631 12726,11851
 Bahnhofstr. - Park: bereits an der Ampel Friedrichshagener Str. auf die linke Straßenseite wechseln	PI; 22123,5452 22087,5404 22043,5346 22046,5305
-Clayallee - Biesalskistr.: bereits an der Ampel Schützallee auf die linke Straßenseite wechseln	PI; 1136,3878 1152,3918 1130,3930
+Clayallee - Biesalskistr.: bereits an der Ampel Schützallee auf die linke Straßenseite wechseln	PI; 1139,3876 1159,3915 1130,3930
 Schönefelder Chaussee - Venusstr.: Linksabbiegen in die Venusstr. nur von der Fahrbahn oder vom linken Gehweg aus möglich, aber nicht vom Radweg aus	PI; 18892,330 18860,248 19138,141
 Str. 106 - Indira-Gandhi-Str.: Abbiegemöglichkeit zur rechten Hand an der Einmündung Fritz-Lesch-Str.	CP; 14666,14845 14828,15050 14686,15608
 Weißenseer Weg - Str. 106: bereits an der Fritz-Lesch-Str. die Straßenseite wechseln	PI; 14843,15007 14828,15050 14666,14845
@@ -343,7 +343,7 @@ Karl-Marx-Allee - Berolinastr.: bereits an der Kreuzung Alexanderstr./Otto-Braun
 Reußstr. - Streitstr.: auf den linken Gehweg bis zur Fußgängerampel fahren	CP; -3129,16931 -3023,16925 -3018,16974
 Streitstr. - Reußstr: bereits an der Ampel Goltzstr. auf den linken Gehweg wechseln	PI; -3029,16823 -3023,16925 -3129,16931
 Treskowallee - Traberweg: bereits an der Ampel Hegemeisterweg auf den linken Gehweg wechseln	PI; 18406,7760 18577,8033 18567,8041 18490,8104
-Columbiadamm - Straße 645: ggfs. bereits an der Ampel Columbiadamm/Fontanestr. auf den linken Gehweg wechseln	PI; 11632,8302 11512,8278 11441,8280 11419,8077
+Columbiadamm - Straße 645: ggfs. bereits an der Ampel Columbiadamm/Fontanestr. auf den linken Gehweg wechseln	PI; 11632,8302 11512,8278 11424,8284 11434,8194 11419,8077
 Am Tierpark [Nebenfahrbahn] - Am Tierpark: den linken Gehweg bis zur Ampel benutzen	CP; 18304,11407 18263,11393 18286,11275
 Salvador-Allende-Str. - Abzweig: bereits an der Ampel Fürstenwalder Damm auf den linken Gehweg wechseln	PI; 23402,5483 23403,5385 23428,5382
 Abzweig - Salvador-Allende-Str.: auf den linken Gehweg bis zur Ampel Friedrichshagener Str. fahren	CP; 23428,5382 23403,5385 23404,5325
@@ -425,7 +425,7 @@ Siemensstr. - Mozartstr.: an der Ampel Siemensstr./Birkbuschstr. auf den linken 
 Attilastr. - Am Bahndamm: an der Ampel Ringstr. auf die linke Seite wechseln	PI; 7690,4563 7667,4549 7692,4464
 Attilastr. - Am Bahndamm: bereits an der Kreuzung Reutlinger Str./Steglitzer Damm auf den rechten Gehweg wechseln	PI; 7597,4499 7628,4521 7667,4549 7692,4464
 Lindenstr. - Markgrafenstr.: bereits in Höhe Jüdisches Museum auf den linken Gehweg wechseln, oder in Höhe "Am Berlin Museum" die Lindenstr. überqueren	PI; 9777,10719 9797,10771 9807,10788 9829,10830 9834,10840 9799,10846
-Osdorfer Str. - Schwatlostr.: ggfs. schon an der Ampel Osdorfer Str./Hildburghauser Str. auf die linke Seite wechseln	PI; 4393,1400 4365,1440 4343,1424
+Osdorfer Str. - Schwatlostr.: ggfs. schon an der Ampel Osdorfer Str./Hildburghauser Str. auf die linke Seite wechseln	PI; 4399,1403 4370,1445 4343,1424
 Skandinavische Str. - Monimbóplatz: ggfs. schon an der Ampel Einbecker Str./Skandinavische Str. auf den linken Gehweg wechseln	PI; 16958,11778 17013,11849 16998,11861
 Kaiserdamm - Wundtstr.: einige Meter auf dem linken Gehweg des Kaiserdamms fahren	CS; 2764,11519 2793,11547
 Heinersdorfer Str. - Weg am Fließ: schon an der Ampel Heinersdorfer Str./Bahnhofstr. auf die linke Seite wechseln	PI; 13590,20705 13586,20649 13584,20628 13602,20613

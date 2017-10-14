@@ -1932,7 +1932,7 @@ EOF
        text  => 'Rosa-Luxemburg-Str. (Mitte) Richtung stadtauswärts, zwischen Memhardstr. und Torstr. Baustelle, Straße vollständig gesperrt (bis Ende 2005) Umleitung über Karl-Liebknecht-Straße - Torstraße',
        type  => 'handicap',
        data  => <<EOF,
-	q4; 10755,13152 10846,13362 10852,13377 10828,13464 10797,13575 10777,13614 10746,13673
+	q4; 10755,13152 10846,13362 10852,13377 10828,13464 10797,13575 10777,13614 10741,13685
 EOF
      },
      { from  => 1112220000, # 2005-03-31 00:00
@@ -2323,7 +2323,7 @@ EOF
        text  => 'Rosa-Luxemburg-Str. Richtung Schönhauser Tor wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-	1 10755,13152 10846,13362 10852,13377 10828,13464 10797,13575 10777,13614 10746,13673
+	1 10755,13152 10846,13362 10852,13377 10828,13464 10797,13575 10777,13614 10741,13685
 EOF
      },
      { from  => 1114293600, # 2005-04-24 00:00
@@ -10772,7 +10772,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007387',
        data  => <<EOF,
-	1::inwork 10898,13632 10746,13673
+	1::inwork 10898,13632 10741,13685
 EOF
      },
      { from  => 1197500400, # 2007-12-13 00:00
@@ -11260,7 +11260,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_008182',
        data  => <<EOF,
-	q4::inwork 10406,13543 10445,13675 10463,13747
+	q4::inwork 10406,13543 10445,13675 10459,13760
 EOF
      },
      { from  => 1207000800, # 2008-04-01 00:00
@@ -20031,7 +20031,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_017848',
        data  => <<EOF,
-	q4::temp 758,2870 589,2925
+	q4::temp 758,2870 600,2922
 EOF
      },
      { from  => 1316412000, # 2011-09-19 08:00
@@ -21440,10 +21440,10 @@ EOF
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130424.1240.383903.html',
        data  => <<EOF,
 #: source_id: IM_019774 vvv
-	q4::inwork; 4356,12009 4441,12185 4518,12355
-# REMOVED (dieser Abschnitt für Anlieger befahrbar) ---	q4::inwork; 4518,12355 4598,12501
-# REMOVED (geraten, wahrscheinlich passierbar) ---  auto	3 4602,12313 4518,12355 4358,12365
-# REMOVED (geraten, wahrscheinlich passierbar) ---  auto	3 4358,12365 4518,12355 4602,12313
+	q4::inwork; 4356,12009 4441,12185 4520,12358
+# REMOVED (dieser Abschnitt für Anlieger befahrbar) ---	q4::inwork; 4520,12358 4591,12511
+# REMOVED (geraten, wahrscheinlich passierbar) ---  auto	3 4593,12322 4520,12358 4358,12365
+# REMOVED (geraten, wahrscheinlich passierbar) ---  auto	3 4358,12365 4520,12358 4593,12322
 #: source_id ^^^
 EOF
      },
@@ -24687,8 +24687,8 @@ EOF
 EOF
      },
      { from  => 1443650400, # 2015-10-01 00:00
-       until => $isodate2epoch->("2017-11-01 12:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
-       text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Klosterbuschweg und Hackbuschstr., stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich November 2017',
+       until => $isodate2epoch->("2018-12-31 12:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
+       text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Klosterbuschweg und Hackbuschstr., stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Ende 2018',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php',
        data  => <<EOF,
@@ -24697,7 +24697,8 @@ EOF
 #: source_id: 2147339562
 #: source_id: LMS-BR_r_LMS-BR_51041
 #: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3
-#: next_check: 2017-11-01
+#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.639561.php (Ende 2018 oder Mitte 2019)
+#: next_check: 2018-12-31
 # REMOVED ---	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
 	q3::inwork; -6861,15129 -6507,15007
 EOF
@@ -26135,7 +26136,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-10-12
+#: last_checked: 2017-10-14
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },
@@ -26209,14 +26210,14 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2017-10-01 12:00:00"), # vermutetes Ende im Herbst
+       until => $isodate2epoch->("2017-12-01 12:00:00"), # vermutetes Ende im Herbst
        text  => 'Teltowkanal von der Rathausstraße bis Gersdorfstraße: Sanierung Fuß- und Radweg, Wege können gesperrt sein, Zeitraum unbekannt',
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.608925.php',
        data  => <<EOF,
 #: XXX wird sich die Qualität vielleicht bessern?
 #: XXX hier sind gerade Bauarbeiten --- Verbundsteinpflaster bleibt wohl, der wassergebundene Teil sind besser aus
-#: last_checked: 2017-09-29 vvv
+#: last_checked: 2017-10-14 vvv
 	2::inwork 8234,4660 8575,4980 8598,4985
 	2::inwork 8598,4985 8618,5019 8784,5095
 #: last_checked ^^^
@@ -26565,7 +26566,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX ist die Qualität nach den Bauarbeiten etwas besser?
-#: last_checked: 2017-09-29 vvv
+#: last_checked: 2017-10-13 vvv
 #: check_frequency: 14d vvv
 	q4::inwork 13288,7653 13177,7644 13100,7626
 	q4::inwork 13177,7644 13188,7590
@@ -26603,6 +26604,38 @@ EOF
 	2::temp 5913,8415 5831,8358 5806,8350 5762,8335 5660,8351
 	2::temp 6388,7999 6443,7971 6480,7992 6409,8026
 	2::temp 6437,7968 6489,7908
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Anhaltinerstr./Postplatz: Wochemarkt Samstag 9 bis 16 Uhr',
+       recurring => 1,
+       type  => 'handicap',
+       source_id => 'http://www.zehlendorfer-wochenmarkt.de/',
+       data  => <<EOF,
+#: tempex (sa) T08-13 vvv
+	q4::temp:clock 720,2718 682,2660 638,2637
+	q4::temp:clock 682,2660 610,2678
+#: tempex ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Anhaltinerstr.: mögliche Beeinträchtigungen durch Bauarbeiten',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2017-10-14
+#: check_frequency: 30d
+	q3::inwork 186,2532 272,2548 638,2637
+EOF
+     },
+     { from  => 1508005269, # 2017-10-14 20:21
+       until => 1508536800, # 2017-10-21 00:00
+       text  => 'Schillerstr.: zwischen Heinrich-Böll- und Waldemarstr. gesperrte Fahrbahn, bis 20.10.2017',
+       type  => 'handicap',
+       source_id => 'LMS-BR_r_LMS-BR_112957_LMS-BR_72',
+       data  => <<EOF,
+	q4::inwork 10178,20525 10309,20562 10409,20592
 EOF
      },
     );

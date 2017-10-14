@@ -32,7 +32,7 @@ Ernst-Reuter-Platz	1 4763,11834 4854,11843 4905,11785 4885,11735 4838,11697 4781
 Theodor-Heuss-Platz	1 1381,11335 1403,11428 1574,11379 1532,11280 1450,11309 1381,11335
 Halenseestr.	1 2218,10067 2268,9976 2300,9883 2369,9779 2415,9765
 Halenseestr.	1 2394,9714 2360,9754 2297,9827 2163,10024
-Halenseestr.	1 1939,10446 1901,10566 1928,10728
+Halenseestr.	1 1939,10446 1901,10566 1900,10617 1928,10728
 Rasthof Avus	1 1870,10406 1882,10356 1847,10323 1723,10289 1692,10348 1793,10424 1833,10427 1870,10406
 Breitenbachplatz (Westseite)	1 4423,6477 4335,6523 4218,6583 4111,6651 4074,6681 4021,6729 3947,6814
 Breitenbachplatz (Ostseite)	1 3981,6850 4061,6753 4103,6716 4141,6688 4248,6620 4347,6551 4423,6477
@@ -168,7 +168,7 @@ Bornstr.	1 5210,6522 5346,6443
 Schildhornstr.	1 4937,6205 4984,6209 5165,6119
 Schildhornstr.	1 5137,6066 5047,6116 4937,6205
 Atzpodienstr.	1 16485,12384 16456,12191 16413,11906
-Alt-Lietzow	1 4219,12324 4101,12356 4066,12368 4079,12411 4137,12411 4250,12390
+Alt-Lietzow	1 4219,12324 4101,12356 4061,12381 4080,12417 4137,12411 4250,12390
 Martin-Wagner-Ring	1 12791,3814 12895,3991 12941,4015 12995,4003 13007,3949 12910,3739
 Wilskistr.	1 -402,4012 -343,4056 -303,4086 -219,4149 -158,4236 27,4447 195,4588 301,4643 418,4696 528,4747 636,4765 798,4766
 Grazer Platz	1 6430,6787 6529,6798 6668,6810 6791,6821
@@ -189,7 +189,7 @@ Fanningerstr.	1s 16890,12135 16794,12144
 Gierkeplatz	1 3447,12269 3456,12296 3478,12306 3510,12301 3528,12276 3521,12243 3493,12228 3463,12237 3447,12269
 Hagenplatz	1 1167,8556 1094,8398
 Branitzer Platz	1 1338,12055 1303,12084 1302,12125 1325,12157 1366,12168 1396,12137 1405,12094 1381,12064 1338,12055
-Reutlinger Str.	1 7676,4216 7597,4499
+Reutlinger Str.	1 7673,4223 7597,4499
 Sybel-/Waitzstr.	1 3883,10585 3764,10580 3731,10640 3726,10757
 Aßmannstr.	1 25015,5729 25048,5727 25039,5304 25039,5295
 Schönblicker Str.	1 31670,3604 31661,3665 31695,3690 31745,3679 31756,3620 31724,3592 31670,3604
@@ -832,6 +832,7 @@ Waldkraiburger Str.: Betriebsgelände	2 12283,4971 12468,5000
 (Falkenberger Chaussee - Darßer Str.)	1 16785,17524 16825,17537 16848,17530 16947,17506
 Dankratweg - Am Waldberg: Betriebsgelände	2 20460,9593 20408,9604 20338,9718 20335,9866
 (Vorfahrt S-Bhf. Tegel)	1s 2352,20224 2371,20225 2384,20196 2398,20166 2381,20157
+(Guerickestr. - Einsteinufer)	1s 4658,12450 4618,12340 4593,12322
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -1019,7 +1020,7 @@ Björnsonstr	1s 10209,16674 10197,16528
 Ibsenstr.	1s 10295,16667 10209,16674
 Eichhornstr.	1s 8232,11414 8253,11306 8280,11296
 Ahornallee	1s 1589,11483 1574,11379
-Lindenallee	1s 1429,11523 1403,11428
+Lindenallee	1s 1429,11528 1403,11428
 Gramzow (Dorfstr.?)	1s 49779,90206 49810,90444
 Alt-Tegel	1s 1668,20156 1753,20191 1907,20265
 Alt-Tegel	1s 1668,20156 1529,20131 1543,20060 1630,20097 1668,20156
@@ -1040,6 +1041,7 @@ Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18
 Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
 Ritterstr.	1 -3369,14532 -3316,14504
 Neue Bahnhofstr.	1s 14908,11231 14918,11249
+Soorstr.	1s 1861,11284 1884,11126 1865,11082
 Barrieren	3nocross::ignrte 9797,10771 9807,10788 9829,10830
 Markgrafenstr. -> Lindenstr.: Barrieren	3::igndisp 9799,10846 9807,10788 9829,10830
 Straßenbahnhaltestelle	3nocross::ignrte 9246,13235 9254,13171 9262,13111
@@ -1155,8 +1157,8 @@ Jüdenstr. -> Altstädter Ring: Mittelstreifen mit Zaun	3::igndisp -3481,14308 -35
 Altstädter Ring -> Jüdenstr.: Mittelstreifen mit Zaun	3::igndisp -3501,14365 -3506,14306 -3481,14308
 Altstädter Ring -> Münsinger Park: Mittelstreifen mit Zaun	3::igndisp -3552,14082 -3517,14218 -3607,14249
 Münsinger Park -> Altstädter Ring: Mittelstreifen mit Zaun	3::igndisp -3607,14249 -3517,14218 -3506,14306
-Mittelstreifen	3nocross::ignrte 6996,3761 6957,3699 6780,3497
-Langkofelweg -> Kaiser-Wilhelm-Str.: Mittelstreifen	3::igndisp 6998,3596 6957,3699 6780,3497
+Mittelstreifen	3nocross::ignrte 6993,3765 6954,3703 6930,3666
+Langkofelweg -> Kaiser-Wilhelm-Str.: Mittelstreifen	3::igndisp 6998,3596 6954,3703 6930,3666
 umbequemes Überqueren wegen Bordsteinen	3nocross::ignrte 11329,12497 11340,12443 11355,12331
 Schillingstr. -> Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11353,12436 11340,12443 11355,12331
 Alexanderstr. -> Schillingstr.: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11329,12497 11340,12443 11353,12436
@@ -1744,11 +1746,11 @@ Rykestr. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11535,14688
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 12317,14535 12123,14643 12025,14695
 Danziger Str. -> Lilli-Henoch-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12025,14695 12123,14643 12193,14775
 Lilli-Henoch-Str. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12193,14775 12123,14643 12317,14535
-Mittelstreifen mit Straßenbahn	3nocross::ignrte 10746,13673 10640,13700 10569,13719 10463,13747
-Torstr. -> Angermünder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 10569,13719 10640,13700 10703,13832
-Angermünder Str. -> Torstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10703,13832 10640,13700 10746,13673
-Torstr. -> Christinenstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10463,13747 10569,13719 10599,13775
-Christinenstr. -> Torstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10599,13775 10569,13719 10640,13700
+Mittelstreifen mit Straßenbahn	3nocross::ignrte 10741,13685 10645,13711 10572,13731 10459,13760
+Torstr. -> Angermünder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 10572,13731 10645,13711 10703,13832
+Angermünder Str. -> Torstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10703,13832 10645,13711 10741,13685
+Torstr. -> Christinenstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10459,13760 10572,13731 10599,13775
+Christinenstr. -> Torstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10599,13775 10572,13731 10645,13711
 Linksabbiegen verboten (und unbequem)	3nocross::ignrte 8192,9619 8097,9650 7938,9694
 Yorckstr. -> Katzlerstr.: Linksabbiegen verboten (und unbequem)	3::igndisp 8192,9619 8097,9650 8035,9437
 Katzlerstr. -> Yorckstr.: Linksabbiegen verboten (und unbequem)	3::igndisp 8035,9437 8097,9650 7938,9694
@@ -3142,8 +3144,8 @@ Kronberger Str. -> Hohenzollerndamm: Mittlestreifen wg. Leitplanke nicht zu quer
 Mittelstreifen schlecht zu queren	3nocross::ignrte 2112,7754 2088,7723 2034,7654
 Hohenzollerndamm -> Königsmarckstr.: Mittelstreifen schlecht zu queren	3::igndisp 2034,7654 2088,7723 1971,7738
 Königsmarckstr. -> Hohenzollerndamm: Mittelstreifen schlecht zu queren	3::igndisp 1971,7738 2088,7723 2112,7754
-Mittelstreifen	3nocross::ignrte 1136,3878 1152,3918 1214,4075
-Biesalskistr. -> Clayallee: Mittelstreifen	3::igndisp 1130,3930 1152,3918 1214,4075
+Mittelstreifen	3nocross::ignrte 1139,3876 1159,3915 1221,4071
+Biesalskistr. -> Clayallee: Mittelstreifen	3::igndisp 1130,3930 1159,3915 1221,4071
 Mittelstreifen	3nocross::ignrte 623,4902 844,4916 922,4910
 Argentinische Allee -> Zum Holzungsweg: Mittelstreifen	3::igndisp 623,4902 844,4916 755,5017
 Adele-Schreiber-Krieger-Str.	1s 8737,12757 8596,12760
