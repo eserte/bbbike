@@ -1,6 +1,7 @@
-# -*- makefile -*-
+# -*- mode:makefile; coding:utf-8; -*-
 {
 	use strict;
+	use utf8;
 	use vars qw($ABS_LOCAL_BBBIKE_DIR $BBBIKE_DATA_DIR $BBBIKE_MISCSRC_DIR $BBBIKE_TMP_DIR);
 	use vars qw($FRZ_NEXTCHECK_SRC $FRZ_SRC);
 	use vars qw($BBBIKE_HOSTEUROPE_HOST $BBBIKE_HOSTEUROPE_USER);
@@ -27,15 +28,17 @@
 
 	sub do_fragezeichen_list {
 		my($op_mode) = @_;
-		die "Invalid operation mode '$op_mode'" if $op_mode !~ m{^(local|XXX|remote)$};
+		die "Invalid operation mode '$op_mode'" if $op_mode !~ m{^(local|XXX|remote|XXX-remote)$};
 
 		my $dir                 = ($op_mode eq 'local' ? "$BBBIKE_TMP_DIR/fragezeichen_list_local" :
 					   $op_mode eq 'XXX'   ? "$BBBIKE_TMP_DIR/XXX_list_local" :
+					   $op_mode eq 'XXX-remote' ? "$BBBIKE_TMP_DIR/XXX_list" :
 								 "$BBBIKE_TMP_DIR/fragezeichen_list");
 		my $bbbikeurl           = ($op_mode eq 'local' || $op_mode eq 'XXX' ? '/bbbike/cgi/bbbike.cgi' :
 										      'http://www.bbbike.de/cgi-bin/bbbike.cgi');
 		my $fragezeichenformurl = ($op_mode eq 'local' || $op_mode eq 'XXX' ? '/bbbike/html/fragezeichenform.html' :
 										      'http://www.bbbike.de/BBBike/html/fragezeichenform.html');
+		my $title               = ($op_mode =~ /^XXX/ ? 'Fragezeichen (privat+öffentlich)' : 'Fragezeichen');
 
 		mkdir $dir if !-d $dir;
 		chmod 0755, $dir;
@@ -55,7 +58,7 @@
 		}
 
 		my %citypart2fz;
-		my $fragezeichen_src = $op_mode eq 'XXX' ? $FRZ_NEXTCHECK_SRC : $FRZ_SRC;
+		my $fragezeichen_src = $op_mode =~ m{^XXX} ? $FRZ_NEXTCHECK_SRC : $FRZ_SRC;
 		my $fz = Strassen->new($fragezeichen_src);
 		while(1) {
 			my $r = $fz->next;
@@ -106,8 +109,8 @@
 			my $ofile = "$dir/" . $basename;
 			open my $ofh, ">", "$ofile~" or die "Can't write to $ofile~: $!";
 			binmode $ofh, ":utf8";
-			print $ofh qq{<html><head><title>BBBike: Fragezeichen in $citypart</title><meta http-equiv="content-type" content="text/html; charset=utf-8"></title><body style="margin:0px;"><div style="width:100%; height:50%; overflow:scroll; padding:0px;"><div style="padding:5px;">};
-			print $ofh "<h1>Fragezeichen: $citypart</h1>";
+			print $ofh qq{<html><head><title>BBBike: $title in $citypart</title><meta http-equiv="content-type" content="text/html; charset=utf-8"></title><body style="margin:0px;"><div style="width:100%; height:50%; overflow:scroll; padding:0px;"><div style="padding:5px;">};
+			print $ofh "<h1>$title: $citypart</h1>";
 			print $ofh $citypart_html;
 			print $ofh qq{<br/><a href="index.html">Liste der Ortsteile</a> (<a href="index-sort-by-count.html">sortiert nach Anzahl</a>)<br/>};
 			print $ofh qq{</div></div><iframe style="width:100%; height:50%; border:0px;" name="int_frame"></iframe></body></html>};
@@ -127,8 +130,8 @@
 			my $index_file = "$dir/$output";
 			open my $ofh, ">", "$index_file~" or die "While writing to $index_file~: $!";
 			binmode $ofh, ":utf8";
-			print $ofh qq{<html><head><title>BBBike: Fragezeichen</title><meta http-equiv="content-type" content="text/html; charset=utf-8"></title><body>};
-			print $ofh "<h1>BBBike: Fragezeichen</h1>";
+			print $ofh qq{<html><head><title>BBBike: $title</title><meta http-equiv="content-type" content="text/html; charset=utf-8"></title><body>};
+			print $ofh "<h1>BBBike: $title</h1>";
 
 			my $total_count = 0;
 			my $stat = eval {
@@ -172,7 +175,7 @@
 				}
 			}
 			print $ofh "<hr/>";
-			print $ofh "Insgesamt: $total_count Fragezeichen-Eintr�ge<br>\n";
+			print $ofh "Insgesamt: $total_count $title-Einträge<br>\n";
 			print $ofh "Aktualisiert: " . strftime("%F %T", localtime) . "<br>\n";
 			print $ofh "<hr/>";
 			print $ofh qq{<a href="http://www.bbbike.de">BBBike</a>\n};
@@ -219,6 +222,13 @@ fragezeichen-list-local:		{ "$BBBIKE_TMP_DIR/fragezeichen_list_local/index.html"
 		do_fragezeichen_list("local");
 	}
 
+XXX-list:				{ "$BBBIKE_TMP_DIR/XXX_list/index.html" }
+
+{ "$BBBIKE_TMP_DIR/XXX_list/index.html" } :		{ map { $_ eq $FRZ_SRC ? $FRZ_NEXTCHECK_SRC : $_ } @DO_FRAGEZEICHEN_LIST_DEPS }
+	{
+		do_fragezeichen_list('XXX-remote');
+	}
+
 XXX-list-local:				{ "$BBBIKE_TMP_DIR/XXX_list_local/index.html" }
 	{
 		print "Try now:\n";
@@ -240,6 +250,15 @@ rsync-fragezeichen-list:	fragezeichen-list
 		my $host = $BBBIKE_HOSTEUROPE_HOST || 'bbbike.de';
 		my $user = $BBBIKE_HOSTEUROPE_USER || 'root';
 		my @cmd = (qw(rsync -avz), "$BBBIKE_TMP_DIR/fragezeichen_list/", $user.'@'.$host.':/srv/www/bbbike-webserver/BBBike/tmp/fragezeichen_list/');
+		system @cmd;
+		die "@cmd failed: $?" if $? != 0;
+	}
+
+rsync-XXX-list:	XXX-list
+	{
+		my $host = $BBBIKE_HOSTEUROPE_HOST || 'bbbike.de';
+		my $user = $BBBIKE_HOSTEUROPE_USER || 'root';
+		my @cmd = (qw(rsync -avz), "$BBBIKE_TMP_DIR/XXX_list/", $user.'@'.$host.':/srv/www/bbbike-webserver/BBBike/tmp/XXX_list/');
 		system @cmd;
 		die "@cmd failed: $?" if $? != 0;
 	}
