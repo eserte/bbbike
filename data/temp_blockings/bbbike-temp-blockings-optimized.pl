@@ -1346,7 +1346,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
          'from' => undef,
          'id' => 2454,
          'recurring' => 1,
-         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Sommer: 21.00 bis 6.00 Uhr',
+         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Winter: 18.00 bis 6.00 Uhr',
          'until' => undef
        },
        {
@@ -2371,9 +2371,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1504896268,
          'id' => 2905,
          'source_id' => '2147341767',
-         'text' => 'Dietzgenstr.: Bauarbeiten zwischen Schillerstr. und Kuckhoffstr., Fahrbahn Richtung Süden gesperrt, voraussichtlich bis Mitte Oktober 2017',
+         'text' => 'Dietzgenstr.: Bauarbeiten zwischen Schillerstr. und Kuckhoffstr., Fahrbahn Richtung Süden gesperrt, voraussichtlich bis 20. Oktober 2017',
          'type' => 'handicap',
-         'until' => 1508104799
+         'until' => 1508493600
        },
        {
          'data' => '#: last_checked: 2017-10-10
@@ -2414,9 +2414,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1504896268,
          'id' => 2909,
          'source_id' => '2147341767',
-         'text' => 'Dietzgenstr.: zwischen Kuckhoffstr. und Schillerstr. ist die Fahrbahn Richtung Norden für Radfahrer offiziell gesperrt, voraussichtlich bis Mitte Oktober 2017',
+         'text' => 'Dietzgenstr.: zwischen Kuckhoffstr. und Schillerstr. ist die Fahrbahn Richtung Norden für Radfahrer offiziell gesperrt, voraussichtlich bis 20. Oktober 2017',
          'type' => 'handicap',
-         'until' => 1508104799
+         'until' => 1508493600
        },
        {
          'data' => '#: last_checked: 2017-09-23

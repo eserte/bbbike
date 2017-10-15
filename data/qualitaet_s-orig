@@ -5265,7 +5265,9 @@ Dechertstr.: schlechter Asphalt	Q2 11429,19682 11475,19749 11626,19806
 Pankower Str.: Beton	Q0- 11627,19907 11798,19989 11839,19982 11910,19968 11931,19965
 Hans-Jürgen-Str.: Kopfsteinpflaster	Q2 11799,20224 11839,20176 11870,20154 11939,20140
 Margaretenaue: Kleinsteinpflaster	Q2+ 11984,20246 12071,20232 12087,20312 12000,20327
-Straße 42 (Französisch Buchholz): schlechter Asphalt	Q2 12087,20312 12211,20486
+#: by: mapillary (früher schlechter Asphalt bzw. unbefestigte Straße)
+#: XXX Qualität nochmal live überprüfen
+Straße 42 (Französisch Buchholz): Asphalt	Q0 12087,20312 12211,20486 12274,20570 12222,20637
 Straße 199 (Französisch Buchholz, Niederschönhausen): Asphalt	Q0 11628,20092 11553,20253 11684,20377 11840,20528
 Straße 182: unbefestigte Straße	Q2 11684,20377 11630,20476
 Straße 182 (Niederschönhausen,Französisch Buchholz): unbefestigte Straße mit Asphaltstreifen	Q2+ 11630,20476 11576,20565
@@ -6509,8 +6511,8 @@ Züricher Str.: Beton	Q0 2896,2229 3000,2232
 Weißdornweg: Asphalt	Q0 2848,2340 3003,2339
 Rütliplatz: Kopfsteinpflaster	Q2 2951,2112 2995,2111
 Altdorfer Str.: Asphalt	Q0 2781,2493 3011,2487 3161,2482 3221,2479 3302,2476 3387,2473 3473,2470 3560,2467 3641,2464 3732,2461 3902,2456 3983,2454
-Churer Zeile: Verbundsteinpflaster	Q0- 3219,2141 3290,2135
-Locarnoweg: Verbundsteinpflaster	Q0- 3290,2135 3369,2135
+Churer Zeile: Verbundsteinpflaster	Q0- 3219,2141 3290,2137
+Locarnoweg: Verbundsteinpflaster	Q0- 3290,2137 3369,2135
 Glandzeile: Verbundsteinpflaster	Q0- 3369,2135 3369,2216
 Sittener Zeile: Verbundsteinpflaster	Q0- 3443,2215 3443,2138
 (Sittener Zeile - Reinacher Zeile): Verbundsteinpflaster	Q0- 3443,2138 3513,2135
@@ -7887,7 +7889,6 @@ Borkumstr.: Kopfsteinpflaster	Q2 11259,17792 11275,17690
 Hadlichstr.: teilweise Asphalt, teilweise Beton	Q0- 10815,18074 10900,18113 10970,18164 10993,18203 11123,18343
 Hadlichstr.: Asphalt	Q0 11123,18343 11001,18528
 Straße 44 (Französisch Buchholz): Asphalt	Q0 12211,20486 12116,20559
-Straße 42 (Französisch Buchholz): unbefestigte Straße mit einigen Asphaltflicken	Q2 12211,20486 12274,20570 12222,20637
 Ferdinand-Buisson-Str.: Asphalt	Q0 12337,20954 12459,21010 12562,21055 12629,21083
 Ferdinand-Buisson-Str.: schlechtes Kopfsteinpflaster, teilweise mit Sandbanketten	Q3 12629,21083 12762,21140 12837,21229 12885,21282
 Ferdinand-Buisson-Str.: unbefestigte Straße	Q2 12885,21282 12939,21345 12948,21421 12953,21502 12994,21719
@@ -10250,9 +10251,16 @@ Mergenthalerring: schlechtes Kopfsteinpflaster	Q3+ 14121,8147 14210,8227 14219,8
 #: next_check_id: NIZZASTR-2014
 #: XXX wie wird die Qualität nach der Fertigstellung sein? Beleuchtung?
 #: osm_watch: way id="344108079" version="3"
-#: last_checked: 2017-08-06
+#: last_checked: 2017-10-14 (mapillary)
 #: check_frequency: 60d
 (Marseillestr. - Straße 160): unbefestigte Baustraße	Q2- 12495,21397 12507,21391 12547,21372
+#: next_check_id: NIZZASTR-2014
+#: XXX wird hier vielleicht auch asphaltiert werden?
+#: last_checked: 2017-10-14 (mapillary)
+#: check_frequency: 60d
+(Nizzastr. - Dr.-Markus-Str.): unbefestigt	Q2+ 12434,21160 12522,21208
+#: by: mapillary
+(Nizzastr. - Dr.-Markus-Str.): asphaltiert	Q0 12522,21208 12535,21282 12507,21391 12498,21450
 (Weinapfelweg - Pankeweg): Asphalt mit Unebenheiten	Q1- 13221,22667 13223,22558 13207,22498 13220,22387 13206,22290
 Treseburger Str. (Blankenburg) [20-24G]: Verbundsteinpflaster	Q1+ 14226,21419 14165,21226 14139,21140 14185,21126
 Treseburger Str. (Blankenburg) [22N-S,24-24D]: Verbundsteinpflaster	Q1+ 14185,21126 14210,21200
@@ -10603,7 +10611,7 @@ Warnitzer Str. (Neu-Hohenschönhausen): guter Asphalt	Q0 17994,17958 17962,18010 
 Blumenthalstr.: schlechtes Kopfsteinpflaster	Q3 9120,20015 9155,19836 9159,19818
 #: corrected_by: srt (Q3 -> Q2)
 Blumenthalstr.: Kopfsteinpflaster	Q2 9159,19818 9177,19745
-Blumenthalstr.: schlechtes Kopfsteinpflaster	Q3 9177,19745 9195,19644 9214,19533 9231,19440 9249,19351 9258,19290
+Blumenthalstr.: schlechtes Kopfsteinpflaster	Q3 9177,19745 9195,19644 9213,19538 9231,19440 9249,19351 9258,19290
 #: corrected_by: srt (mäßiges Kopfsteinpflaster -> grobes Verbundsteinpflaster)
 Stegeweg (Falkenberg): grobes Verbundsteinpflaster	Q1- 19409,18397 19579,18933
 Vierlandenstr.: Asphalt	Q0 20822,14594 20761,14589 20591,14575 20520,14570
@@ -13396,10 +13404,13 @@ Alemannenallee: Asphalt	Q0 943,11302 1065,11216 1181,11136
 Kuckhoffstr.: guter Asphalt	Q0- 10167,19797 10004,19765
 #: corrected_by: srt (guter Asphalt -> Kopfsteinpflaster)
 Kuckhoffstr.: Kopfsteinpflaster	Q2 10004,19765 9962,19757 9878,19741 9717,19692
+#: confirmed_by: mapillary
 Kuckhoffstr.: guter Asphalt	Q0 9717,19692 9646,19670 9468,19599
 #: corrected_by: Christian Hahn (guter Asphalt -> Kopfsteinpflaster)
-#: confirmed_by: Wolfhard Schleese: Richtung Friedrich-Engelsstr. geht es mit Kopfsteinen weiter, weiß aber nicht wie weit. (auf jeden Fall kein Q0!):
-Kuckhoffstr.: Kopfsteinpflaster	Q2 9468,19599 9214,19533 9054,19496
+#: confirmed_by: Wolfhard Schleese: Richtung Friedrich-Engelsstr. geht es mit Kopfsteinen weiter, weiß aber nicht wie weit. (auf jeden Fall kein Q0!) & mapillary
+Kuckhoffstr.: Kopfsteinpflaster	Q2 9468,19599 9213,19538 9169,19528
+#: corrected_by: mapillary
+Kuckhoffstr.: guter Beton	Q0- 9169,19528 9054,19496
 #: corrected_by: Wolfhard Schleese (Asphalt -> Beton)
 #: confirmed_by: Christian Hahn ("Betonplatten"); srt (südwestlicher Abschnitt)
 Kuckhoffstr.: guter Beton	Q0- 9054,19496 9039,19486 8987,19449 8824,19360 8792,19335 8765,19288
@@ -16256,8 +16267,8 @@ Wackenbergstr.: Kopfsteinpflaster	Q2- 10812,20011 10888,20051 10914,20065 11007,
 #: corrected_by: srt (Betonplatten -> Kopfsteinpflaster)
 Wackenbergstr.: Kopfsteinpflaster	Q2- 11007,20112 11285,20260 11311,20273
 Wackenbergstr.: Betonplatten	Q1 11311,20273 11359,20297 11419,20327 11535,20383
-#: confirmed_by: srt (zumindest am östlichen Ende)
-Wackenbergstr.: unbefestigt (Schlagloch-Sandpiste)	Q2- 11535,20383 11558,20414 11630,20476 11718,20551 11797,20601
+#: corrected_by: mapillary (früher unbefestigt, jetzt neu gemacht)
+Wackenbergstr.: Asphalt	Q0 11535,20383 11558,20414 11630,20476 11718,20551 11797,20601
 #: by: ^^^
 # 
 #: by: Marlen Caemmerer vvv
@@ -21696,7 +21707,7 @@ Peter-Weiss-Gasse: gutes Verbundsteinpflaster	Q0- 24151,14982 24215,15057
 Am Fort: schlechtes Kopfsteinpflaster	Q3 -8056,12916 -7967,12879 -7942,12844 -7948,12634 -7959,12439 -7967,12333 -7976,12217
 # 
 #: by: Norbert Palzkill
-Thuner Str.: guter Beton	Q0 3293,2218 3290,2135 3286,2006 3286,1912
+Thuner Str.: guter Beton	Q0 3293,2218 3290,2137 3286,2006 3286,1912
 # 
 #: by: Olaf (zioerjen)
 #: confirmed_by: srt (zumindest an der Herzbergstr. Beton, eher nur mäßige Qualität)
@@ -22952,7 +22963,9 @@ Elfenallee: Asphalt	Q0 12260,21583 12249,21626 12312,21762 12332,21910
 #: corrected_by: srt (Q2+ -> Q3, nur an der Chamissostr. gesehen)
 Elfenallee: schlechtes Kopfsteinpflaster	Q3 12332,21910 12362,22131 12393,22332 12397,22429
 #: corrected_by: srt (Sandweg mit vielen Löchern -> ...)
-Dr.-Markus-Str.: schlechtes Kopfsteinpflaster	Q3+ 12172,21545 12260,21583 12364,21623 12495,21670
+Dr.-Markus-Str.: schlechtes Kopfsteinpflaster	Q3+ 12172,21545 12260,21583 12364,21623 12402,21636
+#: confirmed_by: mapillary
+Dr.-Markus-Str.: Sandweg mit vielen Löchern	Q2 12402,21636 12495,21670
 #: by: ^^^
 # 
 #: by: Ursel Stapelfeldt
@@ -25769,6 +25782,8 @@ Winterstr.: Asphalt	Q0 8116,18115 8296,18154
 #: confirmed_by: srt
 Winterstr.: Asphalt	Q0 8355,18165 8504,18195 8597,18214
 #: corrected_by: srt (mäßiger Asphalt -> )
+#: XXX bei Mapillary nicht eindeutig zu erkennen
+#: add_fragezeichen: ist der Asphalt noch immer schadhaft oder neu gemacht?
 Hausotterplatz: Asphalt mit einigen Schäden	Q1+ 8319,18190 8299,18172 8296,18154 8310,18132 8333,18132 8355,18142 8355,18165 8345,18182 8319,18190
 #: corrected_by: srt (Kopfsteinpflaster, Q2 -> )
 Kamekestr.: Asphalt	Q0- 8286,18331 8307,18242 8319,18190
@@ -26882,8 +26897,8 @@ Petershagener Weg: Beton/Asphalt	Q0- 30665,4312 30729,4510 30810,4765
 #: by: Oliver Brass [AM] vvv
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> ...)
 Fahlandgasse: Asphalt	Q0 7675,17430 7675,17475
-#: confirmed_by: srt
-Fahlandgasse: schlechtes Kopfsteinpflaster	Q3 7675,17475 7675,17538
+#: corrected_by: mapillary (vermutlich neu gemacht)
+Fahlandgasse: Asphalt	Q0 7675,17475 7675,17538
 #: corrected_by: srt (... -> schlechtes)
 Semkensteig: schlechtes Kopfsteinpflaster	Q3 7841,17551 7844,17504
 #: confirmed_by: srt (added "...platten")

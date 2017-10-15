@@ -26495,8 +26495,8 @@ EOF
 EOF
      },
      { from  => 1504896268, # 2017-09-08 20:44
-       until => 1508104799, # 2017-10-15 23:59
-       text  => 'Dietzgenstr.: Bauarbeiten zwischen Schillerstr. und Kuckhoffstr., Fahrbahn Richtung Süden gesperrt, voraussichtlich bis Mitte Oktober 2017',
+       until => $isodate2epoch->("2017-10-20 12:00:00"), # 1508104799, # 2017-10-15 23:59
+       text  => 'Dietzgenstr.: Bauarbeiten zwischen Schillerstr. und Kuckhoffstr., Fahrbahn Richtung Süden gesperrt, voraussichtlich bis 20. Oktober 2017',
        type  => 'handicap',
        source_id => '2147341767',
        data  => <<EOF,
@@ -26533,8 +26533,8 @@ EOF
 EOF
      },
      { from  => 1504896268, # 2017-09-08 20:44
-       until => 1508104799, # 2017-10-15 23:59
-       text  => 'Dietzgenstr.: zwischen Kuckhoffstr. und Schillerstr. ist die Fahrbahn Richtung Norden für Radfahrer offiziell gesperrt, voraussichtlich bis Mitte Oktober 2017',
+       until => $isodate2epoch->("2017-10-20 12:00:00"), # 1508104799, # 2017-10-15 23:59
+       text  => 'Dietzgenstr.: zwischen Kuckhoffstr. und Schillerstr. ist die Fahrbahn Richtung Norden für Radfahrer offiziell gesperrt, voraussichtlich bis 20. Oktober 2017',
        type  => 'handicap',
        source_id => '2147341767',
        data  => <<EOF,

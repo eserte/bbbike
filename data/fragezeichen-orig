@@ -141,7 +141,7 @@ Müllerstr.: Radspuren werden 2013 markiert	?::projected 6781,16026 6914,15908 69
 Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 # 
 #: XXX Baumaßnahme 12.15 (Realisierung nach 2011)
-#: last_checked: 2017-08-06
+#: last_checked: 2017-10-14 (mapillary)
 #: check_frequency: 100d
 #: osm_watch: way id="82449630" version="10"
 #: osm_watch: way id="32426064" version="8"
@@ -304,7 +304,7 @@ Kastanienallee: Radverkehrsanlagen sind vorgesehen (Radspuren)	?::projected 8900
 #: XXX haben die Bauarbeiten (laut vmz bis Ende Juni 2017) was damit zu tun?
 #: osm_watch: way id="9711554" version="35"
 #: osm_watch: way id="29560375" version="12"
-#: last_checked: 2017-09-05
+#: last_checked: 2017-10-14
 #: check_frequency: 90d
 Pasewalker Str.: Schutzstreifen werden erstellt, außerdem eine Ampel an der Kreuzung Bahnhofstr.	?::projected 12121,20969 12158,21166 12166,21208 12188,21330 12209,21448 12172,21545 12042,21886
 # 
@@ -868,7 +868,7 @@ Wullenwebersteg: wird hier eine Rampe erstellt?	?::projected 5714,12290 5714,122
 #: last_checked: 2017-09-27 vvv
 #: osm_watch: way id="423009430" version="4"
 Braunschweiger Str.: Asphaltierung	?::projected 13369,7307 13487,7337 13519,7345
-#: osm_watch: way id="8153802" version="13"
+#: osm_watch: way id="8153802" version="14"
 Braunschweiger Str.: Asphaltierung	?::projected 13702,7418 13781,7524 13854,7620 13919,7707
 #: last_checked ^^^
 #: XXX ^^^
@@ -882,7 +882,7 @@ Niederstr.: Asphaltierung	?::projected 7634,19793 7769,19736 7857,19693
 #: XXX vielleicht nur ein Teilabschnitt; vielleicht auch im Zusammenhang mit dem Projekt Wilhelmsruher Tor
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (2017 nicht realisierbar)
 #: osm_watch: way id="4764886" version="10"
-#: last_checked: 2017-08-06
+#: last_checked: 2017-10-14 (mapillary)
 #: next_check: 2018-04-01
 Tollerstr.: Asphaltierung	?::projected 7751,19696 7769,19736 7807,19811 7838,19884 7885,19975
 # 
@@ -1289,7 +1289,7 @@ Privatstraßen in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualit
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2014/mdb-bapankow-pressestelle-ba-beschluesse-2014-13.05.14_genehmigung_von_20_bauvorhaben_gem________33_abs_1_baugb_im_geltungsbereich_des_bebauungsplanentwurfs_xix_48b_f__r_das_gel__nde_zwischen_dr_markus_stra__e__pankgaben_...pdf
 #: XXX Öffentliche Straßen:
 #: next_check_id: NIZZASTR-2014 vvv
-#: last_checked: 2017-08-06 vvv
+#: last_checked: 2017-10-14 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: XXX Planstraße A -> Marseillestraße
 #: XXX zurzeit eine Baustraße
@@ -1307,7 +1307,8 @@ Marseillestr. - Dr.-Markus-Str.: Qualität? wann ist die Fertigstellung? wird hie
 Rennesstr.: wird hier noch verkehrsberuhigt?	? 12422,21492 12472,21510
 #: XXX möglicherweise wird der Weg asphaltiert sein
 #: osm_watch: way id="344108077" version="2"
-Nizzastr. - Dr.-Markus-Str.: Gehweg, für Radfahrer frei ausgeschildert, der Weg existiert aber noch nicht. Genaue Lage? Qualität? Nachts beleuchtet?	?::inwork 12434,21160 12522,21208 12535,21282 12507,21391 12497,21468 12515,21581 12495,21670
+# REMOVED (dieser Abschnitt existiert bereits) --- Nizzastr. - Dr.-Markus-Str.: Gehweg, für Radfahrer frei ausgeschildert, der Weg existiert aber noch nicht. Genaue Lage? Qualität? Nachts beleuchtet?	?::inwork 12434,21160 12522,21208 12535,21282 12507,21391 12498,21450
+Nizzastr. - Dr.-Markus-Str.: Gehweg, für Radfahrer frei ausgeschildert, der Weg existiert aber noch nicht. Genaue Lage? Qualität? Nachts beleuchtet?	?::inwork 12498,21450 12515,21581 12495,21670
 #: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
@@ -1469,7 +1470,7 @@ Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::
 Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projected 12128,21562 12172,21545 12213,21525
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3039&date=20130906 (Ampel ist angeordnet (2012-09), wird aber "nicht zeitnah" umgesetzt werden)
-#: osm_watch: node id="29778885" version="6"
+#: osm_watch: node id="29778885" version="7"
 #: source_id: 2147341598
 #: XXX Ampel steht, ist noch nicht eingeschaltet. Anforderung aus Richtung Gustav-Adolf-Str.
 #: last_checked: 2017-10-09
@@ -1768,10 +1769,11 @@ Nuthestr.: existiert auch auf der anderen Straßenseite ein Radweg? Qualität?	? -
 L792: Ausbau, danach wahrscheinlich mit Radweg, Fahrbahn wahrscheinlich nicht mehr gepflastert	?::inwork 11054,-5341 11106,-5538 10782,-6409 10636,-6703 10483,-7211 10448,-7582
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20141022.1620.399800.html ("in den nächsten Jahren")
-#: osm_watch: way id="8150022" version="13"
-#: last_checked: 2017-09-28
+#: osm_watch: way id="8150022" version="15"
+#: last_checked: 2017-10-14 (mapillary)
 #: check_frequency: 360d
-Soldiner Str.: grundhafte Erneuerung, evtl. verschwindet das Kopfsteinpflaster dabei	?::projected 8449,17196 8539,17197 8561,17198 8677,17154 8866,17075 8904,17059 9082,16982
+Soldiner Str.: grundhafte Erneuerung, evtl. verschwindet das Kopfsteinpflaster dabei	?::projected 8449,17196 8539,17197 8561,17198 8677,17154
+# REMOVED (hier ist kein Kopfsteinpflaster) --- Soldiner Str.: grundhafte Erneuerung, evtl. verschwindet das Kopfsteinpflaster dabei	?::projected 8677,17154 8866,17075 8904,17059 9082,16982
 # 
 #: next_check_id: EUROPACITY-2015 vvv
 #: XXX Europacity, neue Straßen und Wege vvv
@@ -1955,6 +1957,9 @@ B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX laut mapillary nur Rechtsabbiegen möglich --- für Radfahrer auch (wg. Straßenbahntrasse)?
+Margaretenaue/Pasewalker: Abbiegesituation für Radfahrer?	? 12015,20338 12000,20327 11981,20315
+# 
 #: source_id: 2147341703
 #: last_checked: 2017-10-14
 #: next_check: 2017-10-31
@@ -2035,10 +2040,10 @@ Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::i
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036833670245/833670245/00143778/78-Anlagen/02/BenennungsabsichtfuerdieoeffentlicheStrasse18a.pdf
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4547
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_30_3365_3488_online.pdf (Benennung)
-#: XXX außerdem prüfen, ob die Straße länger als auf der BBBike-Karte ist. culdesac-Eintrag entfernen
+# REMOVED (nein, ist sie nicht) --- #: XXX außerdem prüfen, ob die Straße länger als auf der BBBike-Karte ist. culdesac-Eintrag entfernen
 #: XXX Berlin.coords.data-Eintrag!
 #: next_check: 2017-10-01
-Louise-Henry-Str.: bisherige Straße 18a wird unbenannt	? 11217,21565 11297,21593 11347,21589 11425,21650
+Louise-Henry-Str.: bisherige Straße 18a wird unbenannt	? 11217,21565 11297,21593 11347,21589
 # 
 # REMOVED (fertig) --- #: last_checked: 2017-05-06 --- Clayallee: Asphaltierung des Radwegs	?::inwork; 1746,5922 1736,5850 1714,5722 1656,5446
 # 
@@ -3018,11 +3023,11 @@ Benno-König-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::pro
 #: check_frequency: 120d vvv
 #: osm_watch: way id="497699540" version="2"
 Agnethaweg	?::projected 17221,15181 17245,15182 17314,15186 17336,15187
-#: osm_watch: way id="497699542" version="2"
+#: osm_watch: way id="497699542" version="4"
 Anni-Frid-Weg	?::projected 17227,15054 17258,15054 17323,15055 17346,15055
-#: osm_watch: way id="497699539" version="2"
+#: osm_watch: way id="497699539" version="3"
 Bennyweg	?::projected 17245,15182 17258,15054
-#: osm_watch: way id="497699541" version="3"
+#: osm_watch: way id="497699541" version="6"
 Björnweg	?::projected 17314,15186 17323,15055
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3243,7 +3248,7 @@ Arberlandplatz	? 19705,9039 19728,8998
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4327
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036620026584/620026584/00129985/85-Dateien/image003.png
-#: last_checked: 2017-08-06
+#: last_checked: 2017-10-14 (mapillary)
 #: check_frequency: 360d
 Bebauungsplan 3-59: geplante Straßen und Wege	?::projected 12512,21482 12783,21430 12828,21503 12846,21592
 # 
