@@ -66,6 +66,9 @@ $Msg::messages =
 	     '(original BBBike data)' => '(originale BBBike-Daten)',
 	     'Options' => 'Optionen',
 	     'More cities/regions @ bbbike.org' => 'Weitere Städte/Regionen bei bbbike.org',
+	     'Custom extract from extract.bbbike.org' => 'Maßgeschneiderte Region von extract.bbbike.org',
+	     'After extracting the region on extract.bbbike.org, download the zip file, extract it on your computer and choose "Open local data directory"'
+	     => 'Nach dem Ausschneiden der Region auf extract.bbbike.org, lade die ZIP-Datei herunter, packe sie auf dem Computer aus und wähle "Lokales Datenverzeichnis öffnen"',
 	     'Problem: cannot find more data at bbbike.org.' => 'Problem: es konnten keine weiteren Daten bei bbbike.org gefunden werden.',
 	     "The download of '%s' was successful." => "Der Download von '%s' war erfolgreich.",
 	     "An error occurred while downloading '%s'." => "Ein Fehler beim Downloaden von '%s' ist aufgetreten.",
@@ -160,19 +163,31 @@ sub fill_chooser {
 	$bln->attach($b, -msg => $datadir);
 	$last_b = $b;
     }
+    my $maybe_add_some_padding = do {
+	my $vert_sep_done;
+	sub {
+	    if ($last_b && !$vert_sep_done) { # add some padding
+		Tk::grid($p->Frame(-height => 5), -sticky => 'ew');
+		$vert_sep_done = 1;
+	    }
+	};
+    };
     if ($bod) {
-	if ($last_b) { # add some padding
-	    Tk::grid($p->Frame(-height => 5), -sticky => 'ew');
-	}
+	$maybe_add_some_padding->();
 	Tk::grid($p->Button(-text => M('More cities/regions @ bbbike.org'),
 			    -anchor => 'w',
 			    -command => \&download_more,
 			   ), -sticky => 'ew');
     }
     {
-	if ($last_b) { # add some padding
-	    Tk::grid($p->Frame(-height => 5), -sticky => 'ew');
-	}
+	$maybe_add_some_padding->();
+	Tk::grid($p->Button(-text => M('Custom extract from extract.bbbike.org'),
+			    -anchor => 'w',
+			    -command => \&goto_extract_bbbike_org,
+			   ), -sticky => 'ew');
+    }
+    {
+	$maybe_add_some_padding->();
 	Tk::grid($p->Button(-text => M('Open local data directory'),
 			    -anchor => 'w',
 			    -command => \&open_local,
@@ -336,6 +351,12 @@ sub download_city {
     uniquify_titles();
     fill_chooser();
     flash_city_button($city);
+}
+
+sub goto_extract_bbbike_org {
+    $mw->messageBox(-message => M('After extracting the region on extract.bbbike.org, download the zip file, extract it on your computer and choose "Open local data directory"'));
+    require WWWBrowser;
+    WWWBrowser::start_browser('http://extract.bbbike.org/?format=bbbike-perltk.zip');
 }
 
 sub open_local {
