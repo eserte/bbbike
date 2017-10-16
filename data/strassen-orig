@@ -5455,9 +5455,11 @@ Neue Bahnhofstr.	N 14918,11249 14908,11231 14879,11182 14811,11067 14752,11041
 Sonntagstr.	N 14752,11041 14669,11152 14598,11245 14535,11327 14434,11465
 #: note: kein Straßenschild auf der östlichen Seite, in der Mitte steht "Nöldnerplatz", auf der westlichen Seite "Lückstraße"
 Lückstr.	N 15870,10938 15903,10906 16049,10844
-Lückstr.	H 16049,10844 16085,10844 16153,10818 16300,10753 16313,10747 16468,10695 16597,10651 16601,10650 16647,10632
+Lückstr.	H 16049,10844 16085,10844 16153,10818 16300,10753 16313,10747 16468,10695 16497,10685 16597,10651 16601,10650 16647,10632
 #: oldname: -201411: Sewanstr.
 Lückstr.	H 16647,10632 16699,10611
+#: note: Privatstraße
+Im Lichtenhain	N 16497,10685 16462,10571
 #: note: offiziell nur Lieferverkehr
 (Zufahrt zum Kaufland)	N 16628,10442 16751,10403
 (Zufahrt zum Kaufland)	NN 16751,10403 16767,10398
@@ -5982,7 +5984,7 @@ Fritz-König-Weg	N 17527,7812 17301,7754 17050,7687
 Minna-Todenhagen-Str.	H 17681,7589 17585,7525 17453,7451 17295,7344 17211,7280 17091,7175 16971,7058 16747,6813
 #: next_check_id: MINNATODENHAGENSTR-2016
 #: XXX entfernen, sobald die eigentliche Straße offen ist
-#: last_checked: 2017-09-23
+#: last_checked: 2017-10-16
 #: check_frequency: 60d
 (Gehweg an der zukünftigen Minna-Todenhagen-Str.)	NN 17681,7589 17470,7473 17295,7358
 Rummelsburger Landstr.	H 17105,8666 17143,8565 17202,8391 17299,8140 17527,7812 17619,7679 17681,7589
@@ -8858,8 +8860,12 @@ Straße 7 (Buch)	N 17448,26469 17668,26607
 (Straße 7 - Zepernicker Str.)	N 17668,26607 17714,26509 17764,26410
 (Radweg Berlin-Usedom)	NN 17668,26607 17661,26617 17938,26787 17964,26823
 Am Stener Berg	N 17011,25830 17446,25914 17856,25959 18108,26048
+#: XXX Straße wird umbenannt: Alpenberger Str. (wieder!)
+#: XXX Berlin.coords.data-Eintrag fehlt
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4549 (Benennungsabsicht)
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036750280094/750280094/00146312/12-Anlagen/02/BenennungsabsichtfuerdieNummernstrasseStrasse4.pdf
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4662
 #: oldname: Alpenberger Str.
-#: XXX_osm bei osm mit alten Namen?
 Straße 4 (Buch)	N 17856,25959 18015,25653
 #: url: http://www.ludwigpark.de/
 #: note: vor Ort "Ludwig-Park" geschrieben

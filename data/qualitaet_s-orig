@@ -7023,9 +7023,6 @@ Karower Chaussee [Siedlungsgebiet]: Beton	Q0- 16352,24455 16456,24384
 Karower Chaussee [Siedlungsgebiet]: Beton	Q0- 16557,24530 16456,24384 16441,24357 16410,24311
 (KGA "Steintal"): Beton	Q0- 16441,24357 16479,24331
 (KGA "Steintal"): unbefestigte Straße	Q2+ 16479,24331 16481,24299 16890,24029 17007,23994 17028,23968 17052,23958
-#: XXX Straße wird umbenannt: Alpenberger Weg
-#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4549 (Benennungsabsicht)
-#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036750280094/750280094/00146312/12-Anlagen/02/BenennungsabsichtfuerdieNummernstrasseStrasse4.pdf
 Straße 4 (Buch): Asphalt	Q0 17856,25959 18015,25653
 (Ludwigpark): Kopfsteinpflaster, wegen Schranke am besten auf Gehweg ausweichen	Q2 17446,25914 17413,25969
 (Ludwigpark): Asphalt	Q0 17259,26148 17385,25954 17413,25969 17435,25983 17310,26181
@@ -8062,7 +8059,8 @@ Rykestr.: Kopfsteinpflaster	Q2 11374,14363 11380,14316
 Simmelstr.: Verbundsteinpflaster	Q1 7533,17673 7615,17684
 #: XXX Instandsetzung 2017, danach vermutlich Q0
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170120
-#: next_check: 2017-10-01
+#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.640269.php (von Wendekehre bis Gedonstraße)
+#: next_check: 2017-11-17
 Simmelstr.: Asphalt	Q0- 7615,17684 7669,17691 7809,17708 7856,17714
 Simmelstr.: Kopfsteinpflaster	Q2 7856,17714 7897,17720 7973,17732
 Werftendensteig: Asphalt	Q0 7659,17826 7669,17691
@@ -23341,9 +23339,13 @@ Rabindranath-Tagore-Str.: Asphalt, teilweise brüchig, trotzdem gut befahrbar	Q0-
 Straße 109: sehr schlechter Asphalt, viele Schlaglöcher, teilweise guckt Kopfsteinpflaster hervor	Q2- 17342,15386 17434,15379 17533,15363 17588,15355
 #: note: "sehr schmale Straße"
 #: confirmed_by: srt
+#: XXX Qualität überprüfen
+#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7214 ("miserabler Zustand")
 Straße 133 (Alt-Hohenschönhausen): guter Asphalt	Q0 17588,15355 17762,14993
 #: note: "sehr schmale Straße"
 #: confirmed_by: srt
+#: XXX Qualität überprüfen
+#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7214 ("miserabler Zustand")
 Straße 134 (Alt-Hohenschönhausen): guter Asphalt	Q0 17533,15363 17718,14979
 #: confirmed_by: srt (an der Malchower Str.)
 Privatstr. 1: mäßiger Asphalt	Q2 16887,17349 17089,17369 17167,17331
@@ -24330,6 +24332,7 @@ Mögeldorfer Weg: mäßiger Asphalt	Q2+ -3426,16837 -3436,16838 -3513,16848
 Mögeldorfer Weg: schlechtes Kopfsteinpflaster	Q3 -3513,16848 -3554,16849 -3595,16849 -3636,16844 -3733,16827
 #: corrected_by ^^^
 Amorbacher Weg: Kleinsteinpflaster	Q1 -3042,16609 -3151,16657
+#: confirmed_by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9077
 Klingenhofer Steig: mäßiger Asphalt	Q2 -3554,16849 -3564,17007 -3567,17137
 (Breubergweg - Michelstadter Weg): breite Gehwegplatten	Q0- -3206,17263 -3105,17259
 (Winterweg, KGA Gartenfreunde): sehr gutes Verbundsteinpflaster	Q0- 3420,18470 3427,18467 3531,18418 3538,18379 3539,18357 3512,18324

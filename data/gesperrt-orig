@@ -2804,6 +2804,14 @@ Drängelgitter	BNP:3::trailer=10 22097,5879
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6933
+#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_16_1713_1768_online.pdf (Benennung)
+#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_30_3365_3488_online.pdf (Grundstücksnummerierungen)
+#: XXX vermutlich Sackgasse
+#: last_checked: 2017-08-17
+#: check_frequency: 120d
+Im Lichtenhain: neue Straße, zurzeit Bauarbeiten; Qualität, genaue Lage?	2::inwork 16497,10685 16462,10571
+# 
 #: XXX wie wird die endgültige Fahrbahnbeschaffenheit sein? Asphalt? vvv
 #: osm_watch: way id="437684188" version="2"
 #: last_checked: 2017-10-09 vvv
@@ -3050,7 +3058,7 @@ Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,1192
 #: next_check_id: MINNATODENHAGENSTR-2016
 #: note: siehe auch http://www.detlefzabel.de/spreebruecke-neubau/
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170829
-#: last_checked: 2017-08-08
+#: last_checked: 2017-10-16
 #: next_check: 2018-01-30
 Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17453,7451 17295,7344 17211,7280 17091,7175 16971,7058 16747,6813
 # 
@@ -3096,8 +3104,8 @@ E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgäng
 # REMOVED (hier schon offen) --- Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9636,13076 9559,13087
 # 
 #: next_check_id: MINNATODENHAGENSTR-2016
-#: last_checked: 2017-09-23 vvv
-#: check_frequency: 60d vvv
+#: last_checked: 2017-10-16 vvv
+#: check_frequency: 45d vvv
 # REMOVED --- Grenzweg: wegen Straßenbau gesperrt, ggfs. dauerhaft	2::inwork 17219,7268 17295,7328 17445,7434
 # REMOVED (geänderte Straßenführung) --- Schwarzer Weg: wegen Straßenbau gesperrt	2::inwork 17295,7323 17295,7328 17295,7344 17295,7358 17296,7401
 Nalepastr.: wegen Straßenbau gesperrt	2::inwork 17190,7306 17211,7280 17219,7268 17286,7173

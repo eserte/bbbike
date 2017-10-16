@@ -915,7 +915,7 @@ EOF
        text  => 'Lückstr. Richtung stadteinwärts zwischen Schlichtallee und Wönnichstr. Baustelle, Straße gesperrt (bis Mitte 10.2004) ',
        type  => 'gesperrt',
        data  => <<EOF,
-	1 16699,10611 16647,10632 16601,10650 16597,10651 16468,10695 16313,10747 16300,10753 16153,10818 16085,10844 16049,10844
+	1 16699,10611 16647,10632 16601,10650 16597,10651 16497,10685 16468,10695 16313,10747 16300,10753 16153,10818 16085,10844 16049,10844
 EOF
      },
      { from  => 1094627730, # 2004-09-08 09:15
@@ -26481,7 +26481,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: MINNATODENHAGENSTR-2016
 #: XXX siehe auch handicap_s-orig-Eintrag
-#: last_checked: 2017-09-23
+#: last_checked: 2017-10-16
 	2::inwork 17681,7589 17676,7555
 EOF
      },
@@ -26636,6 +26636,18 @@ EOF
        source_id => 'LMS-BR_r_LMS-BR_112957_LMS-BR_72',
        data  => <<EOF,
 	q4::inwork 10178,20525 10309,20562 10409,20592
+EOF
+     },
+     { from  => 1508176419, # 2017-10-16 19:53
+       until => 1514761200, # 2018-01-01 00:00
+       text  => 'Gäßnerweg: Fahrbahn zwischen Albrechtstr. und Bosestr. sowie Podewilsstr. und Burchardstr. gesperrt, bis 31.12.2017',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::inwork 8541,6191 8546,6307
+	q4::inwork 14453,9929 14558,10082
+	q4::inwork 13305,10789 13206,10651
+	q4::inwork 14405,10027 14501,10169
+	q4::inwork 8553,6665 8551,6552
 EOF
      },
     );

@@ -37,8 +37,8 @@ Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11
 # 
 #: source_id: LMS-BR_r_LMS-BR_106000_LMS-BR_72
 #: last_checked: 2017-10-11
-#: next_check: 2017-10-16
-#: valid: -20171016
+#: next_check: 2017-11-30
+#: valid: -20171130
 Palisadenstr.: Bauarbeiten, teilweise Einbahnstraße, offen Richtung Osten	q2::inwork; 12866,12582 12843,12567 12632,12630
 # 
 # REMOVED (bei fritz entfernt) --- #: last_checked: 2017-06-14 --- #: next_check: 2017-06-30 --- #: valid: -20170630 --- Auerstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13273,12902 13202,12790
@@ -295,7 +295,7 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 ### Kreuzberg ###
 # 
 #: source_id: LMS-BR_r_LMS-BR_106653_LMS-BR_72
-#: last_checked: 2017-10-06 vvv
+#: last_checked: 2017-10-16 vvv
 #: next_check: 2017-10-27 vvv
 Mariannenplatz: Bauarbeiten, Fahrbahn gesperrt, Bordsteine	q4::inwork 11781,10696 11824,10708
 Mariannenplatz: Bauarbeiten, Fahrbahn teilweise gesperrt	q2::inwork 11839,10736 11897,10887
@@ -417,16 +417,17 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süde
 #: next_check_id: MINNATODENHAGENSTR-2016
 #: XXX siehe auch bbbike-temp-blockings-Eintrag
 #: XXX Bordsteinabsenkung existiert am Anfang des Wendehammers
-#: last_checked: 2017-09-23
+#: last_checked: 2017-10-16
 Wattstr.: Bauzäune	q3::inwork 17681,7589 17676,7555
 # 
 #: next_check_id: MOELLENDORFFSTR-2017
 #: XXX_prog abgeschätzter Zeitverlust durch 2x Ampeln, explizite "Radfahren verboten"-Schilder; vermutlich ist man nicht schneller, wenn man auf dem rechten Gehweg bleibt
-#: XXX laut fritz Vollsperrung bis 30. November 2017
+#: XXX laut fritz Vollsperrung bis 30. November 2017; Abbiegebeschränkungen bis 10.11.2017
 #: XXX laut vmz Bauarbeiten bis Ende 2017
 #: XXX Möllendorffstraße (Lichtenberg) in beiden Richtungen zwischen Am Containerbahnhof und Frankfurter Allee (Berlin)  Gültig ab: 04.09.2017 08:00  Vollsperrung, Fahrbahnsanierung (bis Ende 09/17)	2147341771
 #: source_id: 2147341771
 #: source_id: LMS-BR_r_LMS-BR_108099_LMS-BR_72
+#: source_id: 2147341938
 #: last_checked: 2017-10-09
 Möllendorffstr.: Bauarbeiten, Radfahrer müssen auf die gegenüberliegende Seite wechseln	q4::inwork; 15420,12178 15361,12071
 # 
@@ -2548,7 +2549,7 @@ An der Neumark: laut Schild "Schrittgeschwindigkeit"	q2 11283,3774 11300,3709 11
 (Am Biesdorfer Baggersee): einige Fußgänger	q1 20393,10889 20354,10963 20354,11025 20362,11166 20335,11258 20334,11321 20346,11337
 #: next_check_id: MINNATODENHAGENSTR-2016
 #: XXX entfernen, sobald die eigentliche Straße offen ist
-#: last_checked: 2017-08-10
+#: last_checked: 2017-10-16
 #: next_check: 2018-01-30
 (Gehweg an der zukünftigen Minna-Todenhagen-Str.): einige Fußgänger	q2 17681,7589 17470,7473 17295,7358
 Dalandweg: schmale und kurvenreiche Straße	q1 5120,4318 5226,4259 5250,4298 5311,4270 5356,4249 5385,4236 5541,4305

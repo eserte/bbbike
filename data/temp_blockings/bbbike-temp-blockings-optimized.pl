@@ -2101,16 +2101,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '	q4::inwork 3957,23981 4073,23980 4240,23985 4256,23985 4316,23995 4397,24033 4425,24067
-',
-         'from' => 1493652218,
-         'id' => 2861,
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.579605.php',
-         'text' => 'Hermsdorfer Damm: Bauarbeiten, Fahrbahn gesperrt, bis voraussichtlich Mitte Oktober 2017',
-         'type' => 'handicap',
-         'until' => 1508104799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2355,7 +2346,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: MINNATODENHAGENSTR-2016
 #: XXX siehe auch handicap_s-orig-Eintrag
-#: last_checked: 2017-09-23
+#: last_checked: 2017-10-16
 	2::inwork 17681,7589 17676,7555
 ',
          'from' => undef,
@@ -2488,6 +2479,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Schillerstr.: zwischen Heinrich-Böll- und Waldemarstr. gesperrte Fahrbahn, bis 20.10.2017',
          'type' => 'handicap',
          'until' => 1508536800
+       },
+       {
+         'data' => '	q4::inwork 8541,6191 8546,6307
+	q4::inwork 14453,9929 14558,10082
+	q4::inwork 13305,10789 13206,10651
+	q4::inwork 14405,10027 14501,10169
+	q4::inwork 8553,6665 8551,6552
+',
+         'from' => 1508176419,
+         'id' => 2917,
+         'text' => 'Gäßnerweg: Fahrbahn zwischen Albrechtstr. und Bosestr. sowie Podewilsstr. und Burchardstr. gesperrt, bis 31.12.2017',
+         'type' => 'handicap',
+         'until' => 1514761200
        }
      
 );
