@@ -537,6 +537,15 @@
   'face 'bbbike-button
   'help-echo "Click button to show OSM element")
 
+(defun bbbike-osm-note-button (button)
+  (browse-url (concat "http://www.openstreetmap.org/note/" (button-get button :osmnoteid))))
+
+(define-button-type 'bbbike-osm-note-button
+  'action 'bbbike-osm-note-button
+  'follow-link t
+  'face 'bbbike-button
+  'help-echo "Click button to show OSM note")
+
 (defun bbbike-create-buttons ()
   (save-excursion
     (goto-char (point-min))
@@ -559,6 +568,14 @@
       (make-button (match-beginning 1) (match-end 1)
 		   :type 'bbbike-osm-button
 		   :osmid (concat (buffer-substring (match-beginning 2) (match-end 2)) "/" (buffer-substring (match-beginning 3) (match-end 3)))
+		   )))
+
+  (save-excursion
+    (goto-char (point-min))
+    (while (search-forward-regexp "^#:[ ]*\\(osm_watch\\):?[ ]*note[ ]+\\([0-9]+\\)" nil t)
+      (make-button (match-beginning 1) (match-end 1)
+		   :type 'bbbike-osm-note-button
+		   :osmnoteid (buffer-substring (match-beginning 2) (match-end 2))
 		   )))
 
   )
