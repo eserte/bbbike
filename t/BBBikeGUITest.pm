@@ -33,6 +33,21 @@ use VectorUtil;
 my($top, $c);
 my $start_time = $ENV{BBBIKE_TEST_STARTTIME};
 
+my %qr = %{
+           {
+	    'en_US.UTF-8' => +{
+			       streets => qr{^Streets$},
+			       start   => qr{^Start$},
+			       dest    => qr{^Destination$},
+			      },
+	    'de_DE.UTF-8' => +{
+			       streets => qr{^Stra.*en$}, # XXX damn unicode!
+			       start   => qr{^Start$},
+			       dest    => qr{^Ziel$},
+			      },
+	   }->{$ENV{LANG}}
+          };
+
 sub start_guitest {
     my $end_time = Time::HiRes::time();
     diag "Starting GUI test, start duration was " . sprintf("%.3f", $end_time-$start_time) . " seconds...\n";
@@ -79,7 +94,7 @@ sub wait_for_chooser_window {
     my $chooser_window;
     $top->Walk(sub {
     		   my $w = shift;
-    		   if ($w->isa('Tk::Toplevel') && $w->title =~ m{^(Streets|Stra.*en)$}) { # XXX damn unicode!
+    		   if ($w->isa('Tk::Toplevel') && $w->title =~ $qr{streets}) {
     		       $chooser_window = $w;
     		   }
     	       });
@@ -107,9 +122,9 @@ sub continue_guitest_with_chooser_window {
 			      if ($w->isa('Tk::Entry')) {
 				  $chooser_entry = $w;
 			      } elsif ($w->isa('Tk::Button')) {
-				  if ($w->cget('-text') eq 'Start') {
+				  if ($w->cget('-text') =~ $qr{start}) {
 				      $chooser_start = $w;
-				  } elsif ($w->cget('-text') =~ m{^(Ziel|Destination)$}) {
+				  } elsif ($w->cget('-text') =~ $qr{dest}) {
 				      $chooser_goal = $w;
 				  }
 			      }
