@@ -2034,7 +2034,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1508216400,
          'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 18. Oktober 2017 gegen 10 Uhr',
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 18. Oktober 2017 ab ca. 9:45 Uhr',
          'type' => 'gesperrt',
          'until' => 1508317200
        },
@@ -2294,16 +2294,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1509490800
        },
-       {
-         'data' => '	q4::inwork 2395,20126 2336,20117 2169,20095
-',
-         'from' => 1505599200,
-         'id' => 2896,
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.620077.php',
-         'text' => 'Brunowstr.: Bauarbeiten zwischen Buddestr. und Berliner Str., Fahrbahn gesperrt, vom 18.09.2017 bis 16.10.2017',
-         'type' => 'handicap',
-         'until' => 1508191200
-       },
+       undef,
        {
          'data' => '#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?bvgid=BVG131679 ("gültig bis: auf Weiteres")
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=30361
@@ -2355,7 +2346,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: next_check_id: MOELLENDORFFSTR-2017
+	q3::inwork; 14926,12129 14887,11929
+',
+         'from' => 1504719478,
+         'id' => 2904,
+         'source_id' => '2147341770',
+         'text' => 'Weichselstr.: Einbahnstraßenregelung während der Bauarbeiten an der Kreuzung Frankfurter Allee/Möllendorffstr.',
+         'type' => 'handicap',
+         'until' => 1512039600
+       },
        {
          'data' => '	q3::inwork; 10066,20494 10064,20437 10066,20323 10068,20188 10106,20093 10117,20065 10132,19993 10167,19797
 ',

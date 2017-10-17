@@ -25799,7 +25799,7 @@ EOF
      },
      { from  => $isodate2epoch->("2017-10-17 07:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2017-10-18 11:00:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 18. Oktober 2017 gegen 10 Uhr',
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 18. Oktober 2017 ab ca. 9:45 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX weitere Sperrungen: 18. Oktober sowie 8., 15., 22. und 29. November
@@ -26486,11 +26486,12 @@ EOF
 EOF
      },
      { from  => 1504719478, # 2017-09-06 19:37
-       until => 1506290399, # 2017-09-24 23:59
-       text  => 'Weichselstr.: Einbahnstraßenregelung während der Bauarbeiten an der Kreuzung Frankfurter Allee/Möllendorffstr., voraussichtlich bis zum 24. September 2017',
+       until => $isodate2epoch->("2017-11-30 12:00:00"), # 1506290399, # 2017-09-24 23:59
+       text  => 'Weichselstr.: Einbahnstraßenregelung während der Bauarbeiten an der Kreuzung Frankfurter Allee/Möllendorffstr.',
        type  => 'handicap',
        source_id => '2147341770',
        data  => <<EOF,
+#: next_check_id: MOELLENDORFFSTR-2017
 	q3::inwork; 14926,12129 14887,11929
 EOF
      },

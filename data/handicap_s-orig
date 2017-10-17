@@ -30,7 +30,7 @@ Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::i
 #: last_checked: 2017-10-15
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2017-10-12
+#: last_checked: 2017-10-17
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 # REMOVED --- #: by: fritz --- #: last_checked: 2017-09-28 --- #: check_frequency: 10d --- # REMOVED --- #: valid: -20170927 --- Krautstr.: Fahrbahn abschnittsweise gesperrt, Ausweichen auf Gehweg notwendig	q3::inwork 11966,11832 11993,11978
@@ -428,8 +428,12 @@ Wattstr.: Bauzäune	q3::inwork 17681,7589 17676,7555
 #: source_id: 2147341771
 #: source_id: LMS-BR_r_LMS-BR_108099_LMS-BR_72
 #: source_id: 2147341938
-#: last_checked: 2017-10-09
-Möllendorffstr.: Bauarbeiten, Radfahrer müssen auf die gegenüberliegende Seite wechseln	q4::inwork; 15420,12178 15361,12071
+#: last_checked: 2017-10-17 vvv
+#: next_check: 2017-11-30 vvv
+Möllendorffstr.: Bauarbeiten, Radfahrer müssen auf dem Gehweg fahren	q3-::inwork; 15420,12178 15361,12071
+Gürtelstr.: Bauarbeiten, Radweg gesperrt, Fußgänger	q2-::inwork 15361,12071 15294,11964
+#: next_check ^^^
+#: last_checked ^^^
 # 
 # REMOVED #: next_check_id: HAUPTSTR-2015 --- #: source_id: 2147339565 --- #: source_id: LMS-BR_r_LMS-BR_65986 --- #: source_id: 2147340080 --- #: XXX laut vmz bis Ende August 2016, laut fritz bis 31.07.2016 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1604/nachricht5997.html --- #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.470764.php --- #: last_checked: 2016-08-25 --- #: next_check: 2016-08-29 --- Kynaststr./Hauptstr.: Bauarbeiten, Gehweg benutzen	q3::inwork 14882,10732 14906,10820
 # REMOVED --- #: last_checked: 2015-12-02 --- #: check_frequency: 14d --- Wiesenweg: Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q3::inwork 15303,11412 15477,11338
