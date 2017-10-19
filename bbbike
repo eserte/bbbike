@@ -16912,6 +16912,21 @@ sub get_current_bbox_as_wgs84 {
     ($px0,$py0,$px1,$py1);
 }
 
+sub get_current_center_as_wgs84 {
+    my($pxm,$pym);
+    {
+	my($x0,$y0,$x1,$y1) = $c->get_corners;
+	my($xm,$ym) = (($x1-$x0)/2+$x0, ($y1-$y0)/2+$y0);
+	my($sxm,$sym) = anti_transpose($xm,$ym);
+	if ($city_obj->can("standard_to_polar")) {
+	    ($pxm,$pxm) = $city_obj->standard_to_polar($sxm,$sym);
+	} else {
+	    ($pxm,$pym) = $Karte::Polar::obj->trim_accuracy($coord_system_obj->map2map($Karte::Polar::obj, $sxm, $sym));
+	}
+    }
+    ($pxm,$pym);
+}
+
 # Zentriert entweder auf eine Straﬂe oder Koordinaten oder auf die Mitte
 # Berlins.
 ### AutoLoad Sub
