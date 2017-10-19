@@ -21,12 +21,22 @@ isa_ok $rg, 'ReverseGeocoding';
 
 {
     my $res = $rg->find_closest("13.5,52.5", "road");
-    is $res, 'Sewanstr.';
+    is $res, 'Sewanstr.', 'find road';
+}
+
+{
+    my $res = $rg->find_closest("-13.5,-52.5", "road");
+    is $res, undef, 'do not find road';
 }
 
 {
     my $res = $rg->find_closest("13.236871,52.754177", "area");
-    is $res, 'Oranienburg';
+    is $res, 'Oranienburg', 'find area';
+}
+
+{
+    my $res = $rg->find_closest("-13.236871,-52.754177", "area");
+    is $res, undef, 'do not find area';
 }
 
 __END__
