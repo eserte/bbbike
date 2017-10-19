@@ -1964,6 +1964,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: http://www.berliner-woche.de/buckow/verkehr/der-lange-weg-zur-sanierten-strasse-bauarbeiten-am-buckower-damm-anwohner-aergern-sich-ueber-lkw-im-wohngebiet-d126968.html
 #: note: die Baustelle ist gewandert
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
+#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=20802
 #: source_id: LMS-BR_r_LMS-BR_72519
 	q4::inwork 12911,1815 12940,1547
 ',
@@ -2024,20 +2025,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX weitere Sperrungen: 18. Oktober sowie 8., 15., 22. und 29. November
-#: next_check: 2017-10-19
-#: priority: #A
-	2::temp -2218,5133 -927,6888
-	2::temp -2825,5588 -1925,6790 -2080,6897
-	2::temp -1925,6790 -1851,6887
-',
-         'from' => 1508216400,
-         'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 18. Oktober 2017 ab ca. 9:45 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1508317200
-       },
+       undef,
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -2299,12 +2287,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?bvgid=BVG131679 ("gültig bis: auf Weiteres")
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=30361
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=29479
+#: by: mapillary (Gehweg für Radfahrer frei)
 	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
 ',
          'from' => 1502386525,
          'id' => 2897,
-         'text' => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Baseler Str. offen Richtung Norden), eventuell bis Ende November 2017',
+         'text' => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Richtung Norden ist der Gehweg für Radfahrer frei; Baseler Str. offen Richtung Norden), eventuell bis Ende November 2017',
          'type' => 'handicap',
          'until' => 1512082799
        },
@@ -2358,14 +2347,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1512039600
        },
        {
-         'data' => '	q3::inwork; 10066,20494 10064,20437 10066,20323 10068,20188 10106,20093 10117,20065 10132,19993 10167,19797
+         'data' => '#: note: fritz bleibt noch beim 20.10.2017
+	q3::inwork; 10066,20494 10064,20437 10066,20323 10068,20188 10106,20093 10117,20065 10132,19993 10167,19797
 ',
          'from' => 1504896268,
          'id' => 2905,
          'source_id' => '2147341767',
-         'text' => 'Dietzgenstr.: Bauarbeiten zwischen Schillerstr. und Kuckhoffstr., Fahrbahn Richtung Süden gesperrt, voraussichtlich bis 20. Oktober 2017',
+         'text' => 'Dietzgenstr.: Bauarbeiten zwischen Schillerstr. und Kuckhoffstr., Fahrbahn Richtung Süden gesperrt, voraussichtlich bis Ende November 2017',
          'type' => 'handicap',
-         'until' => 1508493600
+         'until' => 1512039600
        },
        {
          'data' => '#: last_checked: 2017-10-10
@@ -2400,15 +2390,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1522576800
        },
        {
-         'data' => '#: source_id: LMS-BR_r_LMS-BR_108061_LMS-BR_72
+         'data' => '#: note: fritz bleibt noch beim 20.10.2017
+#: source_id: LMS-BR_r_LMS-BR_108061_LMS-BR_72
+#: source_id: 2147341767
 	q3::inwork; 10167,19797 10132,19993 10117,20065 10106,20093 10068,20188 10066,20323 10064,20437 10066,20494
 ',
          'from' => 1504896268,
          'id' => 2909,
          'source_id' => '2147341767',
-         'text' => 'Dietzgenstr.: zwischen Kuckhoffstr. und Schillerstr. ist die Fahrbahn Richtung Norden für Radfahrer offiziell gesperrt, voraussichtlich bis 20. Oktober 2017',
+         'text' => 'Dietzgenstr.: zwischen Kuckhoffstr. und Schillerstr. ist die Fahrbahn Richtung Norden für Radfahrer offiziell gesperrt, voraussichtlich bis Ende November 2017',
          'type' => 'handicap',
-         'until' => 1508493600
+         'until' => 1512039600
        },
        {
          'data' => '#: last_checked: 2017-09-23
@@ -2472,14 +2464,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '	q4::inwork 10178,20525 10309,20562 10409,20592
+         'data' => '#: source_id: 2147341767
+	q4::inwork 10178,20525 10309,20562 10409,20592
 ',
          'from' => 1508005269,
          'id' => 2916,
          'source_id' => 'LMS-BR_r_LMS-BR_112957_LMS-BR_72',
-         'text' => 'Schillerstr.: zwischen Heinrich-Böll- und Waldemarstr. gesperrte Fahrbahn, bis 20.10.2017',
+         'text' => 'Schillerstr.: zwischen Heinrich-Böll- und Waldemarstr. gesperrte Fahrbahn, voraussichtlich bis zum 17.12.2017',
          'type' => 'handicap',
-         'until' => 1508536800
+         'until' => 1513508400
        },
        {
          'data' => '	q4::inwork 8541,6191 8546,6307

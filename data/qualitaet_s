@@ -3184,7 +3184,8 @@ Chamierstr.: Asphalt	Q0 15840,15806 15801,15706
 Uferweg am Weiﬂen See: wassergebundene Decke	Q1 14463,16735 14423,16749 14299,16740 14232,16716 14187,16639 14183,16547 14188,16501 14276,16411 14406,16379 14449,16394 14480,16449 14510,16549 14521,16599
 Seeweg: Kleinkopfsteinpflaster	Q1 14499,16341 14485,16362 14480,16449
 Seeweg: wassergebundene Decke, Kleinkopfsteinpflaster	Q1 14510,16549 14581,16529
-Gustav-Adolf-Str.: Asphalt, mit einigen Sch‰den	Q0 12097,16263 12182,16322 12285,16392 12399,16479 12560,16602 12670,16675
+Gustav-Adolf-Str.: Asphalt	Q0 12097,16263 12182,16322
+Gustav-Adolf-Str.: Asphalt, mit einigen Sch‰den	Q0 12182,16322 12285,16392 12399,16479 12560,16602 12670,16675
 Hilde-Ephraim-Str.: Asphalt	Q0 1312,9220 1261,9285 1662,9642 1709,9663 1718,9653 1756,9610
 Rosensteinweg: Verbundsteinpflaster	Q1 1718,9653 1917,9821 1927,9820
 Kyllmannstr. (Wannsee): Asphalt	Q0 -6246,1617 -6179,1570 -6147,1467 -6111,1396 -6065,1222
@@ -6367,8 +6368,7 @@ Villacher Str.: unbefestigte Straﬂe	Q2 14631,21136 14580,21146
 M¸hlenstr. (Blankenburg): rauer Asphalt	Q1 14386,20237 14402,20250 14455,20388 14466,20455 14482,20547 14499,20649 14509,20728 14529,20807 14532,20820 14554,20891 14577,20966
 Straﬂe 42 (Blankenburg): unbefestigte Straﬂe	Q2 14554,20891 14751,20876
 Straﬂe 24: unbefestigte Straﬂe	Q2 14532,20820 14484,20832
-Straﬂe 46 (Blankenburg): Asphalt	Q0 14482,20547 14685,20504
-Straﬂe 46 (Blankenburg): unbefestigte Straﬂe	Q2 14320,20580 14482,20547
+Marie-Gr¸nberg-Str. (Blankenburg): Asphalt	Q0 14320,20580 14482,20547 14685,20504
 Mittelstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 13912,20650 14320,20580
 Am Flieﬂ: Asphalt	Q0 13931,20549 13955,20452 13991,20425 14128,20410 14263,20352 14386,20237 14432,20188
 Bebelplatz: gepflastert	Q1 9730,12238 9713,12392
@@ -6994,7 +6994,7 @@ Sulzer Str.: Kopfsteinpflaster	Q2 14017,21673 14120,21645
 Urbacher Str.: Kopfsteinpflaster	Q2 14262,21607 14227,21657 14156,21753 14064,21838 13950,21935 13853,22006
 Ahornallee (Blankenburg): Schotterstraﬂe	Q2 14096,21243 14157,21442
 Ahornallee (Blankenburg): Kopfsteinpflaster	Q2 14157,21442 14227,21657
-Georgenstr. (Blankenburg): unbefestigte Straﬂe	Q2 14263,20352 14294,20412 14309,20486 14320,20580 14328,20644 14304,20682
+Georgenstr. (Blankenburg): Asphalt	Q0 14263,20352 14294,20412 14309,20486 14320,20580 14328,20644 14304,20682
 Georgenstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 14304,20682 14236,20773
 Georgenstr. (Blankenburg): m‰ﬂiger Asphalt	Q1 14236,20773 14196,20825 14091,20962
 (Parkstr./Am Flieﬂ - Heinersdorfer Str.): wassergebundene Decke	Q1 13888,20558 13827,20557 13743,20594 13602,20613 13584,20628
@@ -7103,9 +7103,9 @@ Tomatenweg: unbefestigte Straﬂe	Q2 12389,23097 12434,23109 12485,22940 12500,228
 (Tomatenweg - Straﬂe 175): unbefestigter Weg	Q2 12500,22895 12515,22898 12532,22902
 Straﬂe 175: unbefestigte Straﬂe	Q2 12532,22858 12532,22902 12526,22972
 Straﬂe 175: Asphalt	Q0 12526,22972 12510,23016 12582,23041
-Straﬂe 89 (Franzˆsisch Buchholz): unbefestigte Straﬂe	Q2 12532,22858 12589,22948
+Straﬂe 89 (Franzˆsisch Buchholz): Asphalt	Q0 12532,22858 12589,22948
 Straﬂe 89 (Franzˆsisch Buchholz): unbefestigte Straﬂe	Q2 12608,22943 12699,22971
-Straﬂe 76: unbefestigte Straﬂe	Q2 12766,22668 12532,22858
+Straﬂe 76: Asphalt	Q0 12766,22668 12532,22858
 Straﬂe 77a: Asphalt	Q0 12848,22776 12982,22703
 Prinzenapfelweg: unbefestigte Straﬂe	Q2 12982,22703 13088,22646 13202,22605
 Karower Weg: unbefestigte Straﬂe	Q2 12821,22437 12825,22486 12938,22513 12942,22521 13021,22589 13088,22646 13127,22716 13160,22776 13183,22817
@@ -7937,6 +7937,7 @@ Hˆpfertsteig: Verbundsteinpflaster	Q1 6830,23293 6931,23352
 (Weg am Tegeler Flieﬂ): sehr sandig	Q3 7312,23775 7252,23931 7207,24103 7039,24077 6930,24045 6870,24061 6716,23949 6609,23892
 Waldweg (Blankenfelde): Gras	Q3 9757,26351 9812,26385
 Wiesenweg (Blankenfelde): unbefestigte Straﬂe	Q2 9776,26298 9848,26349
+(Wiesenweg - Waldweg): unbefestigte Straﬂe	Q2 9940,26273 9898,26310 9848,26349 9812,26385
 Bergweg: unbefestigte Straﬂe	Q2 9796,26244 9898,26310
 Hˆhenweg: unbefestigte Straﬂe	Q2 9940,26273 9812,26186
 Arkenberger Damm: Asphalt	Q0 12400,25484 12324,25514 12305,25513
@@ -12595,7 +12596,8 @@ Attilagarten: Kopfsteinpflaster	Q2 8491,5150 8435,5239
 (Wilhelm-Kuhr-Str. - Wollankstr.): fester Sandweg	Q1 9341,17917 9348,17885 9363,17868 9396,17863
 (Wilhelm-Kuhr-Str. - Wollankstr.): Asphalt	Q1 9396,17863 9590,17662
 (Cottastr. - B¸rgerpark): Asphalt	Q0 9419,18330 9424,18276 9462,18234
-Cottastr.: Kopfsteinpflaster	Q2 9378,18370 9419,18330 9757,18378 9821,18392
+Cottastr.: Kopfsteinpflaster	Q2 9378,18370 9419,18330 9779,18384
+Cottastr.: Asphalt mit Sch‰den	Q1 9779,18384 9821,18392
 (Schˆnholzer Heide - Heinrich-Mann-Str.): Asphalt	Q0 8933,19179 8958,19149 9017,19036 9201,18777 9279,18724
 Zingergraben: relativ fester Sand, sehr uneben mit groﬂen Schlaglˆchern	Q3 8943,19755 8977,19694
 Zingergraben: fester Sand	Q2 8931,19746 8956,19688
@@ -13921,7 +13923,7 @@ Beskidenstr.: guter Asphalt	Q0 -2637,2611 -2440,2760
 Gerstenweg: guter Beton	Q0 21262,13517 21214,13126 21168,12794 21101,12661 21053,12582 21028,12536 20952,12407 20943,12376 20923,12194
 Billy-Wilder-Promenade: Asphalt mit Sch‰den	Q1 2663,1199 2584,1376 2528,1501
 Billy-Wilder-Promenade: Asphalt	Q0 2528,1501 2469,1634
-Genfer Weg: Kleinsteinpflaster	Q1 2995,2119 3150,2113
+Genfer Weg: Mosaikpflaster	Q1 2995,2119 3150,2113
 W¸nschelburger Gang: Beton	Q0 20829,4211 20850,4225 20917,4261 21008,4275
 B‰rdorfer Zeile: guter Beton	Q0 20917,4261 20822,4571 20818,4610 20827,4655
 Renatenweg: Asphalt	Q0 6372,2856 6376,2809 6423,2774

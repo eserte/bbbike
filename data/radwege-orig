@@ -900,9 +900,9 @@ gemeinsamer Rad- und Gehweg	RW2; 22431,6068 22467,6135
 	RW2;RW2 21002,5755 21303,5826
 	RW1; 19958,5950 20057,5923
 	RW1; 20057,5923 20173,5892 20352,5877 20428,5841 20536,5789 20755,5750
-	RW3; 20755,5750 20536,5789 20428,5841 20352,5877 20173,5892 20057,5923 19958,5950
+	RW3; 20880,5736 20755,5750 20536,5789 20428,5841 20352,5877 20173,5892 20057,5923 19958,5950
 	RW1; 20755,5750 20880,5736
-Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736 20755,5750
+Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 # REMOVED --- #: XXX Wurde die Benutzungspflicht aufgehoben? -> nein! --- #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/verwaltungbzbm/mdv_vii_10_reduziert.pdf?start&ts=1342111378&file=mdv_vii_10_reduziert.pdf (Aufhebung? Seite 41-42)
 	RW2; 20880,5736 21002,5755
 	RW2;RW2 14196,9749 14271,9712 14318,9688 14495,9609
@@ -913,6 +913,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736 20755,5750
 	RW1; 14174,7505 14095,7568 14015,7631
 #: next_check_id: SONNENALLEE-2014
 #: XXX laut fritz "geänderte Straßenführung" bis 31.12.2016, laut vmz bis Ende Dezember 2017
+#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=22111
 #: source_id: IM_023718
 #: source_id: 2147339540
 #: last_checked: 2017-09-22
@@ -1065,6 +1066,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5459,11135 5258,11285
 #: XXX Busspur wegen Bauarbeiten größtenteils aufgehoben (bis auf ein paar Meter am Steinplatz)
 #: XXX früher: Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5
 #: XXX bis Ende 2016, laut rbbtext bis 16.12.2016, laut VMZ nun bis Ende 2017
+#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=29825
 #: source_id: 2147339533
 #: last_checked: 2017-10-08
 #: check_frequency: 21d

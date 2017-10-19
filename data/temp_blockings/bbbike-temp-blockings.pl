@@ -6776,8 +6776,9 @@ EOF
      },
      { from  => $isodate2epoch->("2016-11-24 00:00:00"), # die Buden standen schon am 19.11.2013 # 1353884400, # 1321916400, # 2011-11-22 00:00 # PERIODISCH! # früher: 1163480400, # 2006-11-14 06:00
        until => $isodate2epoch->("2016-12-26 23:59:59"), # 1356562740, # 1324940399, # 2011-12-26 23:59 # PERIODISCH! # früher: 1167433200, # 2006-12-30 00:00
-       periodic => 1,
-       recurrences => [['yearly', days => 18, months => 11]],
+       ## ab 2017 wieder am Opernpalais --- gibt's hier Einschränkungen?
+       #periodic => 1,
+       #recurrences => [['yearly', days => 18, months => 11]],
        text  => 'Nostalgischer Weihnachtsmarkt Opernpalais: Wege und Straßen rund um die Hedwigs-Kathedrale teilweise nicht passierbar, teilweise reger Fußgängerverkehr, vom 25.11. bis 26.12.2016',
        type  => 'gesperrt',
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/971793-1328132-weihnachtsmarktamopernpalais.html',
@@ -25465,6 +25466,7 @@ EOF
 #: by: http://www.berliner-woche.de/buckow/verkehr/der-lange-weg-zur-sanierten-strasse-bauarbeiten-am-buckower-damm-anwohner-aergern-sich-ueber-lkw-im-wohngebiet-d126968.html
 #: note: die Baustelle ist gewandert
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
+#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=20802
 #: source_id: LMS-BR_r_LMS-BR_72519
 	q4::inwork 12911,1815 12940,1547
 EOF
@@ -26418,12 +26420,13 @@ EOF
      },
      { from  => 1502386525, # 2017-08-10 19:35
        until => 1512082799, # 2017-11-30 23:59
-       text  => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Baseler Str. offen Richtung Norden), eventuell bis Ende November 2017',
+       text  => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Richtung Norden ist der Gehweg für Radfahrer frei; Baseler Str. offen Richtung Norden), eventuell bis Ende November 2017',
        type  => 'handicap',
        data  => <<EOF,
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?bvgid=BVG131679 ("gültig bis: auf Weiteres")
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=30361
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=29479
+#: by: mapillary (Gehweg für Radfahrer frei)
 	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
 EOF
@@ -26496,11 +26499,12 @@ EOF
 EOF
      },
      { from  => 1504896268, # 2017-09-08 20:44
-       until => $isodate2epoch->("2017-10-20 12:00:00"), # 1508104799, # 2017-10-15 23:59
-       text  => 'Dietzgenstr.: Bauarbeiten zwischen Schillerstr. und Kuckhoffstr., Fahrbahn Richtung Süden gesperrt, voraussichtlich bis 20. Oktober 2017',
+       until => $isodate2epoch->("2017-11-30 12:00:00"), # 1508104799, # 2017-10-15 23:59
+       text  => 'Dietzgenstr.: Bauarbeiten zwischen Schillerstr. und Kuckhoffstr., Fahrbahn Richtung Süden gesperrt, voraussichtlich bis Ende November 2017',
        type  => 'handicap',
        source_id => '2147341767',
        data  => <<EOF,
+#: note: fritz bleibt noch beim 20.10.2017
 	q3::inwork; 10066,20494 10064,20437 10066,20323 10068,20188 10106,20093 10117,20065 10132,19993 10167,19797
 EOF
      },
@@ -26534,12 +26538,14 @@ EOF
 EOF
      },
      { from  => 1504896268, # 2017-09-08 20:44
-       until => $isodate2epoch->("2017-10-20 12:00:00"), # 1508104799, # 2017-10-15 23:59
-       text  => 'Dietzgenstr.: zwischen Kuckhoffstr. und Schillerstr. ist die Fahrbahn Richtung Norden für Radfahrer offiziell gesperrt, voraussichtlich bis 20. Oktober 2017',
+       until => $isodate2epoch->("2017-11-30 12:00:00"), # 1508104799, # 2017-10-15 23:59
+       text  => 'Dietzgenstr.: zwischen Kuckhoffstr. und Schillerstr. ist die Fahrbahn Richtung Norden für Radfahrer offiziell gesperrt, voraussichtlich bis Ende November 2017',
        type  => 'handicap',
        source_id => '2147341767',
        data  => <<EOF,
+#: note: fritz bleibt noch beim 20.10.2017
 #: source_id: LMS-BR_r_LMS-BR_108061_LMS-BR_72
+#: source_id: 2147341767
 	q3::inwork; 10167,19797 10132,19993 10117,20065 10106,20093 10068,20188 10066,20323 10064,20437 10066,20494
 EOF
      },
@@ -26631,11 +26637,12 @@ EOF
 EOF
      },
      { from  => 1508005269, # 2017-10-14 20:21
-       until => 1508536800, # 2017-10-21 00:00
-       text  => 'Schillerstr.: zwischen Heinrich-Böll- und Waldemarstr. gesperrte Fahrbahn, bis 20.10.2017',
+       until => $isodate2epoch->("2017-12-17 12:00:00"), # 1508536800, # 2017-10-21 00:00
+       text  => 'Schillerstr.: zwischen Heinrich-Böll- und Waldemarstr. gesperrte Fahrbahn, voraussichtlich bis zum 17.12.2017',
        type  => 'handicap',
        source_id => 'LMS-BR_r_LMS-BR_112957_LMS-BR_72',
        data  => <<EOF,
+#: source_id: 2147341767
 	q4::inwork 10178,20525 10309,20562 10409,20592
 EOF
      },
