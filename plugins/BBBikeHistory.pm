@@ -192,7 +192,7 @@ sub dump_history {
 			      require Karte::Polar;
 			      my($sx,$sy) = $Karte::Polar::obj->map2standard(@$lon_lat{qw(lon lat)}); $Karte::Polar::obj=$Karte::Polar::obj if 0;
 			      my($x,$y) = main::transpose($sx,$sy);
-			      main::mark_point(-dont_mark => 1, -clever_center => 1, -x => $x, -y => $y);
+			      main::mark_point(-dont_mark => 1, -x => $x, -y => $y);
 			  }
 		      });
 	    $t->Advertise(Listbox => $lb);
