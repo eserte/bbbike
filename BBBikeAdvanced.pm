@@ -1227,6 +1227,9 @@ sub parse_url_for_coords {
     } elsif ($url =~ m{lon=($float_qr)&lat=($float_qr)}) { # Map Compare, e.g. https://mc.bbbike.org/mc/?lon=13.383959&lat=52.534001&zoom=16&num=2&mt0=google-hybrid&mt1=mapnik&marker=
 	($x_ddd, $y_ddd) = ($1, $2);
 	$$detect_ref = 'map compare' if $detect_ref;
+    } elsif ($url =~ m{lat=($float_qr)&lng=($float_qr)}) {
+	($y_ddd, $x_ddd) = ($1, $2);
+	$$detect_ref = 'mapillary' if $detect_ref;
     } elsif ($url =~ m{\d+/($float_qr)/($float_qr)$}) { # Pharus, e.g. http://m.deinplan.de/map.php#16/52.532291/13.380783
 	($y_ddd, $x_ddd) = ($1, $2);
 	$$detect_ref = 'pharus' if $detect_ref;
