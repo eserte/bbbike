@@ -26,7 +26,7 @@ use Hash::Util qw(lock_keys);
 
 sub usage (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
-usage: $0 [--dry-run] gui [--dist debian|ubuntu|...] [--distver stretch|...] [--src local|github]
+usage: $0 [--dry-run] gui [--dist debian|ubuntu|...] [--distver stretch|...] [--src local|github] [--env KEY=VAL ...]
 EOF
 }
 
@@ -225,6 +225,13 @@ RUN /bin/bash --login -e -c "wrapper fix_cgis"
 RUN /bin/bash --login -e -c "wrapper init_webserver_config"
 
 ENV TRAVIS true
+EOF
+    for my $key (sort keys %{ $opt{env} }) {
+	$dockerfile .= <<EOF;
+ENV $key $opt{env}->{$key}
+EOF
+    }
+    $dockerfile .= <<EOF;
 CMD /bin/bash --login -e -c "wrapper start_webserver && wrapper start_xserver && wrapper init_webserver_environment && wrapper init_data && perl Makefile.PL && BBBIKE_TEST_FOR_LIVE=1 make test HARNESS_OPTIONS=j$opt{jobs}"
 EOF
     $doit->write_binary("$docker_context_dir/Dockerfile", $dockerfile);
@@ -273,10 +280,12 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
     my %opt = (
 	       jobs    => 1,
 	       distver => 'trusty',
+	       env     => {},
 	      );
     GetOptions(\%opt,
 	       "jobs|j=i",
 	       "distver|distversion=s",
+	       'env=s%'
 	      )
 	or usage;
     travis_ci($doit, %opt);
