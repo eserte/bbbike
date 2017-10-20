@@ -36,12 +36,7 @@ Briesestr. -> Karl-Marx-Str.: wegen Bauarbeiten zunächst den linken Gehweg benut
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2017-10-11 vvv
-#: check_frequency: 21d vvv
-Friedenstr. -> Weidenweg: direktes Linksabbiegen nicht möglich	DH:t=10 12866,12582 12891,12549 13025,12523
-Weidenweg -> Str. der Pariser Kommune: direktes Linksabbiegen nicht möglich	DH:t=10 13025,12523 12891,12549 12869,12425
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED (heute gab's eine Lücke) --- #: last_checked: 2017-10-11 vvv --- #: check_frequency: 21d vvv --- Friedenstr. -> Weidenweg: direktes Linksabbiegen nicht möglich	DH:t=10 12866,12582 12891,12549 13025,12523 --- Weidenweg -> Str. der Pariser Kommune: direktes Linksabbiegen nicht möglich	DH:t=10 13025,12523 12891,12549 12869,12425 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: MOELLENDORFFSTR-2017 vvv
 #: last_checked: 2017-10-17 vvv
@@ -183,7 +178,7 @@ Zeppelinstr. -> Edisonstr.: Fußgängerampel	DH:len=20:tl 18041,6924 17919,6968 17
 # 
 #: next_check_id: HOLZMARKT-2017
 #: XXX hier wird noch eine zusätzliche Ampel entstehen
-#: last_checked: 2017-10-14 vvv
+#: last_checked: 2017-10-20 vvv
 #: next_check: 2018-04-01 vvv
 Schillingstr. -> Holzmarktstr.: Ampel	DH:len=90:tl 11452,12318 11388,12202 11513,12138
 Holzmarktstr. -> Schillingstr.: linker Gehweg	DH:h=q2,45 11347,12223 11388,12202 11452,12318

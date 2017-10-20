@@ -1150,10 +1150,10 @@ neu asphaltiert	RW1; 17769,7465 17681,7589 17619,7679
 #: source_id: 2147341340
 #: source_id: LMS-BR_r_LMS-BR_98104
 #: last_checked: 2017-10-16 vvv
-#: check_frequency: 60d vvv
+#: next_check: 2017-11-23 vvv
 	RW0; 17619,7679 17527,7812
 provisorischer schmaler Radstreifen	RW3; 17527,7812 17299,8140 17202,8391
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
 	RW1; 17202,8391 17143,8565 17105,8666
@@ -4793,9 +4793,8 @@ Gehweg f¸r Radfahrer frei	RW1; -7484,13770 -7522,13651 -7550,13528 -7554,13514 -
 an der Straﬂenbahnhaltestelle einige Meter mit Radverkehrsanlage	RW3;RW3 10838,14962 10723,14772
 an der Straﬂenbahnhaltestelle 50 Meter mit benutzungspflichtiger Radverkehrsanlage	RW3; 10530,14452 10723,14772
 an der Straﬂenbahnhaltestelle 50 Meter mit benutzungspflichtiger Radverkehrsanlage	RW3; 10723,14772 10530,14452
-an der Straﬂenbahnhaltestelle einige Meter mit Radverkehrsanlage	RW3; 11176,15489 11112,15387
-mit asphaltierten Straﬂenbahncaps	RW3; 10881,15047 11112,15387 11176,15489 11290,15669 11367,15793 11387,15827 11445,15920
-mit asphaltierten Straﬂenbahncaps	RW3; 11445,15920 11387,15827 11367,15793 11290,15669 11176,15489
+mit asphaltierten Straﬂenbahncaps	RW3; 11176,15489 11112,15387 10881,15047
+mit asphaltierten Straﬂenbahncaps	RW3; 10881,15047 11112,15387 11176,15489 11290,15669 11367,15793 11387,15827 11445,15920 11387,15827 11367,15793 11290,15669 11176,15489
 	RW3;RW3 10530,14452 10497,14391
 	RW6;RW6 22872,5018 22856,5245 22851,5321
 	RW6;RW6 22856,5245 22803,5241

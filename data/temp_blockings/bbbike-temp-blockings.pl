@@ -25643,7 +25643,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-10-04 vvv
+#: last_checked: 2017-10-20 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -26090,13 +26090,14 @@ EOF
 EOF
      },
      { from  => 1495918329, # 2017-05-27 22:52
-       until => $isodate2epoch->("2017-10-21 08:00:00"),
-       text  => 'Bölschestr.: Bauarbeiten, Einbahnstraße Richtung Süden, 22.05. bis 21.10.2017',
+       until => $isodate2epoch->("2017-10-28 12:00:00"),
+       text  => 'Bölschestr.: Bauarbeiten, Einbahnstraße Richtung Süden, 22.05. bis Ende Oktober 2017',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.595041.php',
        data  => <<EOF,
 #: note: laut fritz bis 21.10.2017 08:00 Uhr
 #: by: http://werbegemeinschaft-friedrichshagen.de/wp-content/uploads/2017/05/2017-05_Boelschestr_Anwohnerflyer_web.pdf
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.641756.php
 #: source_id: LMS-BR_r_LMS-BR_97860
 	q4::inwork; 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
 EOF
@@ -26498,12 +26499,12 @@ EOF
 EOF
      },
      { from  => 1504896268, # 2017-09-08 20:44
-       until => $isodate2epoch->("2017-11-30 12:00:00"), # 1508104799, # 2017-10-15 23:59
-       text  => 'Dietzgenstr.: Bauarbeiten zwischen Schillerstr. und Kuckhoffstr., Fahrbahn Richtung Süden gesperrt, voraussichtlich bis Ende November 2017',
+       until => $isodate2epoch->("2017-12-18 12:00:00"), # 1508104799, # 2017-10-15 23:59
+       text  => 'Dietzgenstr.: Bauarbeiten zwischen Schillerstr. und Kuckhoffstr., Fahrbahn Richtung Süden gesperrt, voraussichtlich bis 18. Dezember 2017',
        type  => 'handicap',
        source_id => '2147341767',
        data  => <<EOF,
-#: note: fritz bleibt noch beim 20.10.2017
+#: note: vmz meint Ende November 2017
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=35015 (bis 6.11.2017)
 	q3::inwork; 10066,20494 10064,20437 10066,20323 10068,20188 10106,20093 10117,20065 10132,19993 10167,19797
 EOF
@@ -26538,12 +26539,12 @@ EOF
 EOF
      },
      { from  => 1504896268, # 2017-09-08 20:44
-       until => $isodate2epoch->("2017-11-30 12:00:00"), # 1508104799, # 2017-10-15 23:59
-       text  => 'Dietzgenstr.: zwischen Kuckhoffstr. und Schillerstr. ist die Fahrbahn Richtung Norden für Radfahrer offiziell gesperrt, voraussichtlich bis Ende November 2017',
+       until => $isodate2epoch->("2017-12-18 12:00:00"), # 1508104799, # 2017-10-15 23:59
+       text  => 'Dietzgenstr.: zwischen Kuckhoffstr. und Schillerstr. ist die Fahrbahn Richtung Norden für Radfahrer offiziell gesperrt, voraussichtlich bis 18. Dezember 2017',
        type  => 'handicap',
        source_id => '2147341767',
        data  => <<EOF,
-#: note: fritz bleibt noch beim 20.10.2017
+#: note: vmz meint nur Ende November 2017
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=35015 (bis 6.11.2017)
 #: source_id: LMS-BR_r_LMS-BR_108061_LMS-BR_72
 #: source_id: 2147341767
@@ -26643,6 +26644,7 @@ EOF
        type  => 'handicap',
        source_id => 'LMS-BR_r_LMS-BR_112957_LMS-BR_72',
        data  => <<EOF,
+#: note: fritz meint 18.12.2017
 #: source_id: 2147341767
 	q4::inwork 10178,20525 10309,20562 10409,20592
 EOF
