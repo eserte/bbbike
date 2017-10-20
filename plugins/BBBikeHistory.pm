@@ -175,7 +175,7 @@ sub dump_history {
 	@inx2pos = ();
 	for (reverse @history) {
 	    my($lon,$lat,$desc) = @{$_}{qw(lon lat desc)};
-	    my $title = $desc // "$lon/$lat";
+	    my $title = defined $desc ? $desc : "$lon/$lat";
 	    $lb->insert('end', $title);
 	    push @inx2pos, {lon=>$lon, lat=>$lat};
 	}
