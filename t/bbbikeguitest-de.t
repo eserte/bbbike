@@ -13,7 +13,7 @@ use Time::HiRes ();
 
 $ENV{BBBIKE_GUI_TEST_MODULE} = 'BBBikeGUITest';
 chdir "$FindBin::RealBin/.." or die $!;
-$ENV{LANG} = 'de_DE.UTF-8';
+$ENV{LC_ALL} = $ENV{LANG} = 'de_DE.UTF-8';
 $ENV{BBBIKE_TEST_STARTTIME} = Time::HiRes::time();
 exec $^X, '-It', 'bbbike', '-public';
 
