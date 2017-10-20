@@ -17167,15 +17167,14 @@ EOF
 	q4::inwork -4614,-35852 -4603,-35730
 EOF
      },
-     { from  => $isodate2epoch->("2016-11-20 00:00:00"), # 1 Tag Vorlauf # 1353279600, # 2012-11-19 00:00, # 1290380400, # PERIODISCH! # undef, # 
-       until => $isodate2epoch->("2016-12-27 23:59:59"), # 1356562799, # 2012-12-26 23:59, # 1293404400, # PERIODISCH! # früher: 1262300399, # 2009-12-31 23:59
+     { from  => $isodate2epoch->("2017-11-26 00:00:00"),
+       until => $isodate2epoch->("2017-12-26 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 19, months => 11]],
-       text  => 'Winterwelt am Potsdamer Platz, Alte Potsdamer Str. gesperrt, 21. November 2016 bis 27. Dezember 2016',
+       text  => 'Weihnachtsmarkt am Potsdamer Platz, Alte Potsdamer Str. gesperrt, 27. November 2017 bis 26. Dezember 2017',
        type  => 'gesperrt',
-       source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/3238975-955635-winterwelt-am-potsdamer-platz.html',
+       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/971680-1328132-winterweltampotsdamerplatz.html',
        data  => <<EOF,
-#: note: Winterwelt bereits ab 4.11.2016 (bis 1.1.2017), Weihnachtsmarkt erst ab dem 21.11.2016
 	2::xmas 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324
 #	2::temp 8318,11324 8280,11296 8278,11257
 #: XXX_prog "3::temp" oder "3::xmas" geht nicht?
@@ -26505,6 +26504,7 @@ EOF
        source_id => '2147341767',
        data  => <<EOF,
 #: note: fritz bleibt noch beim 20.10.2017
+#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=35015 (bis 6.11.2017)
 	q3::inwork; 10066,20494 10064,20437 10066,20323 10068,20188 10106,20093 10117,20065 10132,19993 10167,19797
 EOF
      },
@@ -26544,6 +26544,7 @@ EOF
        source_id => '2147341767',
        data  => <<EOF,
 #: note: fritz bleibt noch beim 20.10.2017
+#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=35015 (bis 6.11.2017)
 #: source_id: LMS-BR_r_LMS-BR_108061_LMS-BR_72
 #: source_id: 2147341767
 	q3::inwork; 10167,19797 10132,19993 10117,20065 10106,20093 10068,20188 10066,20323 10064,20437 10066,20494

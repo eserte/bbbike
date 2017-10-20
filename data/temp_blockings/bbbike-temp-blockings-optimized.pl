@@ -675,7 +675,30 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	2::xmas 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324
+#	2::temp 8318,11324 8280,11296 8278,11257
+#: XXX_prog "3::temp" oder "3::xmas" geht nicht?
+	3 8427,11365 8389,11378 8374,11479
+	3 8374,11479 8389,11378 8427,11365
+',
+         'from' => 1511650800,
+         'id' => 1997,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              19,
+                              'months',
+                              11
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/971680-1328132-winterweltampotsdamerplatz.html',
+         'text' => 'Weihnachtsmarkt am Potsdamer Platz, Alte Potsdamer Str. gesperrt, 27. November 2017 bis 26. Dezember 2017',
+         'type' => 'gesperrt',
+         'until' => 1514329199
+       },
        undef,
        undef,
        undef,
@@ -2348,6 +2371,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: fritz bleibt noch beim 20.10.2017
+#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=35015 (bis 6.11.2017)
 	q3::inwork; 10066,20494 10064,20437 10066,20323 10068,20188 10106,20093 10117,20065 10132,19993 10167,19797
 ',
          'from' => 1504896268,
@@ -2391,6 +2415,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: fritz bleibt noch beim 20.10.2017
+#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=35015 (bis 6.11.2017)
 #: source_id: LMS-BR_r_LMS-BR_108061_LMS-BR_72
 #: source_id: 2147341767
 	q3::inwork; 10167,19797 10132,19993 10117,20065 10106,20093 10068,20188 10066,20323 10064,20437 10066,20494
