@@ -93,10 +93,16 @@ sub wait_for_chooser_window {
     my($iteration) = @_;
 
     my $chooser_window;
+    my %seen_toplevels;
     $top->Walk(sub {
     		   my $w = shift;
-    		   if ($w->isa('Tk::Toplevel') && $w->title =~ $qr{streets}) {
-    		       $chooser_window = $w;
+    		   if ($w->isa('Tk::Toplevel')) {
+		       my $title = $w->title;
+		       if ($title =~ $qr{streets}) {
+			   $chooser_window = $w;
+		       } else {
+			   $seen_toplevels{$title}++;
+		       }
     		   }
     	       });
     if ($chooser_window) {
@@ -104,8 +110,8 @@ sub wait_for_chooser_window {
 	continue_guitest_with_chooser_window($chooser_window);
     } else {
 	$iteration++;
-	if ($iteration > 20) {
-	    fail "Cannot find chooser window after $iteration iterations...";
+	if ($iteration > 50) { # on a typical desktop system, BBBike should start withing 2-3 seconds. On travis-ci it's slower, up to 10 seconds.
+	    fail "Cannot find chooser window after $iteration iterations. Current toplevels: " . join("\n", sort keys %seen_toplevels);
 	    exit_app();
 	}
 	$top->after(500, sub { wait_for_chooser_window($iteration) });
