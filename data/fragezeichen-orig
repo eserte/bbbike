@@ -32,7 +32,7 @@ Danziger Str.	?::projected 12621,14313 12729,14227 12901,14093 12975,13990 13037
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2017-10-20
+#: last_checked: 2017-10-26
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -113,6 +113,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: source_id: 2147340884
 #: source_id: 2147340970
 #: source_id: LMS-BR_r_LMS-BR_90638
+#: source_id: 2147341904
 #: last_checked: 2017-10-17 vvv
 #: check_frequency: 21d vvv
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
@@ -172,7 +173,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14658,14328 14465,14210 14361,14145 14298,14015 14261,13932 14218,13834
 # 
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
-#: osm_watch: way id="336565341" version="6"
+#: osm_watch: way id="336565341" version="7"
 #: last_checked: 2017-10-09
 #: check_frequency: 90d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
@@ -197,7 +198,7 @@ Kiefholzstr.: werden hier Radspuren markiert?	?::projected 16146,6755 16273,6609
 #: XXX ^^^
 # 
 #: XXX Baumaßnahme 8.14 (Realisierung nach 2011)
-#: osm_watch: way id="451445143" version="1"
+#: osm_watch: way id="451445143" version="2"
 #: last_checked: 2017-09-29
 #: check_frequency: 120d
 Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projected; 13046,5267 13112,5253 13250,5234 13327,5234 13594,5240 13607,5241 13809,5257
@@ -286,7 +287,7 @@ Ernststr.: Verbesserung für den Radverkehr, evtl. Entfernung des Kopfsteinpflast
 #: last_checked: 2017-08-25
 #: check_frequency: 100d
 #: XXX hier sieht es eigentlich nicht so aus, als ob Radspuren vorgesehen sind...
-#: osm_watch: way id="4491980" version="12"
+#: osm_watch: way id="4491980" version="13"
 Nürnberger Str.: Radspuren entstehen	?::projected 5866,10492 6025,10746
 # 
 #### BEGIN Pankow-Liste
@@ -783,8 +784,8 @@ Wallensteinstr.: Asphaltstreifen	?::projected 17360,9629 17425,9605 17456,9594 1
 #: last_checked: 2017-08-27
 Falkenberger Chaussee: Verbesserung -> Radspuren oder Asphaltierung des Radwegs?	?::projected; 17744,18016 17843,18078
 # 
-#: osm_watch: way id="40520565" version="26"
-#: osm_watch: way id="51317007" version="19"
+#: osm_watch: way id="40520565" version="27"
+#: osm_watch: way id="51317007" version="21"
 #: last_checked: 2017-08-27
 Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 16837,17440 16578,17285 16460,17214 16352,17150 16318,17128
 # 
@@ -1541,7 +1542,7 @@ Kanalstr.: Bau eines Geh- und Radwegs	?::projected 18111,2135 18101,2164 17928,2
 #: check_frequency: 180d
 Planstraße 9: evtl. Fortsetzung der Regener Str.? Qualität etc?	?::projected 19705,9039 19806,9040 19863,9073 19870,9079 19874,9151
 # 
-#: osm_watch: way id="168928174" version="10"
+#: osm_watch: way id="168928174" version="11"
 #: last_checked: 2017-10-13
 #: check_frequency: 120d
 Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verlängert?	? 8632,11912 8783,11959
@@ -1558,7 +1559,7 @@ Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbi
 #: XXX Vorschlag: Freia-Eisner-Straße
 #: note: "Privatgelände"
 #: osm_watch: way id="491906864" version="2"
-#: last_checked: 2017-10-13
+#: last_checked: 2017-10-26
 #: check_frequency: 14d
 Planstraße C: neue asphaltierte Straße, Straßenname? Wann wird sie geöffnet?	?::inwork 12926,11224 12848,11093
 # 
@@ -1997,7 +1998,17 @@ Poststadion: gibt es hier interessante Wegverbindungen für Radfahrer? wie sieht 
 # REMOVED (kaum Einschränkungen, nur im Kreuzungsbereich) --- #: XXX Großbeerenstraße (Kreuzberg) in Höhe Stresemannstraße (Berlin)  Gültig ab: 30.08.2017 07:00  Vollsperrung, Tiefbauarbeiten (bis Ende 10/17)	2147341754	 ---- #: XXX laut fritz bis voraussichtlich 30.10.2017 --- Großbeerenstr.: Bauarbeiten, Auswirkungen auf Radfahrer?	?::inwork 9192,10528 9249,10562
 # REMOVED (keine Änderung) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/strassenbauliste-stand-2017-08-18.pdf --- #: source_id: 2147341732 --- #: next_check: 2017-09-16 --- Alarichstr./Rathausstr.: wie sieht die Radwegsituation nach den Bauarbeiten aus?	?::inwork 8642,5422 8667,5372 8674,5357 8707,5289 8750,5173 8784,5095
 # REMOVED (hier ist nichts passiert) --- Alarichstr./Rathausstr.: wie sieht die Radwegsituation nach den Bauarbeiten aus?	?::inwork 8784,5095 8813,5004 8827,4874 8848,4683
-# REMOVED --- #: XXX NEW	Friedrichstr. (Mitte) Richtung Leipziger Str. Höhe Jägerstr. (Berlin)  Gültig ab: 17.07.2017 14:04  Baustelle, Fahrtrichtung gesperrt (bis Ende 10/17)	2147341587 --- #: XXX laut fritz: Zwischen Französische Straße und Jägerstraße gesperrt. (Bis 29.09.2017) --- #: XXX bei der ersten Prüfung: nicht relevant, nur einige Behinderungen in der querenden Jägerstr. --- #: XXX bei der zweiten Prüfung: man kommt gut vorbei. Jägerstr. werde ich eintragen. --- #: XXX bei der dritten Prüfung (2017-09-22): Richtung Norden ist tatsächlich gesperrt, aber man kann vermutlich vorbeikommen --- #: source_id: 2147341587 --- #: source_id: LMS-BR_r_LMS-BR_103310_LMS-BR_72 --- #: last_checked: 2017-10-09 --- #: next_check: 2017-10-20 --- Friedrichstr. Höhe Jägerstr.: Bauarbeiten, auch für Radfahrer relevant?	?::inwork; 9405,11903 9393,12000 9384,12103
+#: XXX laut vmz bis Mitte 11/17
+#: XXX laut fritz: Zwischen Französische Straße und Jägerstraße gesperrt. (Bis 14.11.2017 14 Uhr)
+#: XXX bei der ersten Prüfung: nicht relevant, nur einige Behinderungen in der querenden Jägerstr.
+#: XXX bei der zweiten Prüfung: man kommt gut vorbei. Jägerstr. werde ich eintragen.
+#: XXX bei der dritten Prüfung (2017-09-22): Richtung Norden ist tatsächlich gesperrt, aber man kann vermutlich vorbeikommen
+#: source_id: 2147341587
+#: source_id: LMS-BR_r_LMS-BR_103310_LMS-BR_72
+#: last_checked: 2017-10-09
+#: next_check: 2017-10-26
+Friedrichstr. Höhe Jägerstr.: Bauarbeiten, auch für Radfahrer relevant?	?::inwork; 9405,11903 9393,12000 9384,12103
+# 
 # REMOVED (Einbahnstraße Richtung Norden ist Richtung; die meisten Radfahrer fahren auf dem relativ breiten Gehweg und umgehen somit auch das Kopfsteinpflaster) --- #: XXX NEW	Tegeler Straße (Wedding) Richtung Fennstraße zwischen Lynarstraße und Fennbrücke (Berlin)  Gültig ab: 16.07.2017 23:00  Bauarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/17)	LMS-BR_r_LMS-BR_103249_LMS-BR_72 --- #: XXX NEW	Tegeler Str. (Wedding) Richtung Luxemburger Str. zwischen Fennstr. und Lynarstr. (Berlin)  Gültig ab: 24.07.2017 06:00  Baustelle, Fahrtrichtung gesperrt (bis Mitte 10/17)	2147341570 --- #: XXX laut fritz: Bis 13.10.2017 --- Tegeler Str.: Bauarbeiten, auch für Radfahrer relevant?	?::inwork 7263,14873 7458,14643
 # 
 Heerstr.: Nebenstraße existiert, dürfen Radfahrer hier fahren?	? -3820,11721 -4033,11786 -4078,11800 -4279,11862 -4311,11872 -4438,11910 -4503,11930
@@ -3011,16 +3022,17 @@ Benno-König-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::pro
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2016
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: XXX Privatstraßen
+#: XXX vermutlich Verbundsteinpflaster (laut osm)
 #: last_checked: 2017-07-29 vvv
 #: check_frequency: 120d vvv
-#: osm_watch: way id="497699540" version="2"
-Agnethaweg	?::projected 17221,15181 17245,15182 17314,15186 17336,15187
-#: osm_watch: way id="497699542" version="4"
-Anni-Frid-Weg	?::projected 17227,15054 17258,15054 17323,15055 17346,15055
-#: osm_watch: way id="497699539" version="3"
-Bennyweg	?::projected 17245,15182 17258,15054
-#: osm_watch: way id="497699541" version="6"
-Björnweg	?::projected 17314,15186 17323,15055
+#: osm_watch: way id="497699540" version="3"
+Agnethaweg	?::inwork 17221,15181 17245,15182 17314,15186 17336,15187
+#: osm_watch: way id="497699542" version="5"
+Anni-Frid-Weg	?::inwork 17227,15054 17258,15054 17323,15055 17346,15055
+#: osm_watch: way id="497699539" version="4"
+Bennyweg	?::inwork 17245,15182 17258,15054
+#: osm_watch: way id="497699541" version="7"
+Björnweg	?::inwork 17314,15186 17323,15055
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
