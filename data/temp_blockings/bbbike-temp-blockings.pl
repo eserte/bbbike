@@ -25297,7 +25297,7 @@ EOF
 EOF
      },
      { from  => 1509050079,
-       until => $isodate2epoch->("2017-11-10 16:00:00"),
+       until => 1509120314, # $isodate2epoch->("2017-11-10 16:00:00"),
        text  => 'Wühlischstr.: Fahrbahn zwischen Knorrpromenade und Seumestr. Richtung Warschauer Straße wg. Baustelle gesperrt, ggfs. auf Gehweg ausweichen, bis 10. November 2017',
        type  => 'handicap',
        source_id => '2147340169',

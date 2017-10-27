@@ -3737,16 +3737,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '	q4::inwork; 14369,11489 14305,11514
-',
-         'from' => 1509050079,
-         'id' => 2792,
-         'source_id' => '2147340169',
-         'text' => 'Wühlischstr.: Fahrbahn zwischen Knorrpromenade und Seumestr. Richtung Warschauer Straße wg. Baustelle gesperrt, ggfs. auf Gehweg ausweichen, bis 10. November 2017',
-         'type' => 'handicap',
-         'until' => 1510326000
-       },
+       undef,
        undef,
        undef,
        undef,
