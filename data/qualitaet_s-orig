@@ -10,7 +10,7 @@
 # REMOVED (Bauarbeiten beendet) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5898 --- #: note: oder man fährt auf dem mit zahlreichen Engstellen zugestellten Radweg, muss dann aber ggfs. warten --- #: last_checked: 2014-03-21 --- #: valid: -20140523 --- Bergmannstr.: während der Bauarbeiten zwischen Heim- und Friesenstr. Umleitung über gepflasterte Fahrbahn	Q2 9973,9232 9880,9233 9793,9241
 # 
 #: next_check_id: DIESEL-2015 vvv
-#: last_checked: 2017-10-10 vvv
+#: last_checked: 2017-10-27 vvv
 Dieselstr.: teilweise betoniert, teilweise noch unbefestigt	Q1 14326,8062 14366,8058 14384,8056 14425,8052 14471,8046
 Dieselstr., Umfahrung: Asphalt	Q0 14419,8112 14429,8074
 #: XXX_osm laut osm Asphalt, hier aber nicht!
@@ -18,9 +18,7 @@ Dieselstr., Umfahrung: unbefestigt	Q2 14429,8074 14471,8046
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
-#: next_check_id: SONNENALLEE-2014
-#: last_checked: 2017-09-22
-Sonnenallee: unebener, provisorischer Asphalt auf dem Radweg	Q2+ 14174,7505 14334,7395 14369,7376 14519,7301
+# REMOVED (sah auf der anderen Seite nicht so schlecht aus) --- #: next_check_id: SONNENALLEE-2014 --- #: last_checked: 2017-09-22 --- Sonnenallee: unebener, provisorischer Asphalt auf dem Radweg	Q2+ 14174,7505 14334,7395 14369,7376 14519,7301
 # 
 #: temporary ^^^
 ######################################################################
@@ -248,7 +246,7 @@ Lohmühlenbrücke: Asphalt	Q0 12871,9356 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2017-09-26
+#: last_checked: 2017-10-27
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15021,11152 15102,11120
@@ -7126,7 +7124,7 @@ Bebelplatz: gepflastert	Q1 9680,12232 9664,12387
 (Park am Gleisdreieck, Eingang Kurfürstenstr.): Beton	Q0 8058,10306 8180,10282 8253,10265
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): wassergebundene Decke	Q1 8263,10187 8276,10079
 #: next_check_id: HELLWEG-2014 vvv
-#: last_checked: 2017-07-14 vvv
+#: last_checked: 2017-10-27 vvv
 #: check_frequency: 100d vvv
 #: XXX wird hier noch eine wassergebundene Decke erstellt?
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): unbefestigt	Q2 8276,10079 8289,9988

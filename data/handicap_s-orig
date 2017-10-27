@@ -30,7 +30,7 @@ Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::i
 #: last_checked: 2017-10-25
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2017-10-26
+#: last_checked: 2017-10-27
 Lange Str.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 # REMOVED --- #: by: fritz --- #: last_checked: 2017-09-28 --- #: check_frequency: 10d --- # REMOVED --- #: valid: -20170927 --- Krautstr.: Fahrbahn abschnittsweise gesperrt, Ausweichen auf Gehweg notwendig	q3::inwork 11966,11832 11993,11978
@@ -83,7 +83,7 @@ Palisadenstr.: Bauarbeiten, teilweise Einbahnstraﬂe, offen Richtung Osten	q2::in
 # 
 #: XXX laut Schild gehen die Bauarbeiten bis 10.2017
 #: XXX nach Beendigung der Bauarbeiten wieder den alten handicap-Eintrag ("Bodenschwellen") aktivieren
-#: last_checked: 2017-09-26
+#: last_checked: 2017-10-27
 BouchÈstr.: Bauarbeiten an der Heidelberger Str.	q3::inwork 13489,9456 13357,9313
 # 
 ### Wedding ###
@@ -129,11 +129,11 @@ Voltairestr.: Baustellenverkehr	q2 11329,12497 11209,12430
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3339&mt=0&zoom=16 (Projektabschluss: 2017-03-31)
-#: last_checked: 2017-09-22
+#: last_checked: 2017-10-27
 Kommandantenstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10330,11422 10136,11529
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3339&mt=0&zoom=16 (Projektabschluss: 2017-03-31)
-#: last_checked: 2017-09-22
+#: last_checked: 2017-10-27
 Beuthstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10201,11631 10235,11610 10330,11422
 # 
 # REMOVED --- #: last_checked: 2017-04-19 --- #: next_check: 2017-04-28 --- Sebastianstr.: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 10640,11564 10818,11269
@@ -141,7 +141,7 @@ Beuthstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10201,11631 10235,11610 10330,
 # REMOVED --- Jerusalemer Str.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9925,11565 9936,11469
 # 
 #: by: http://www.dafmap.de/d/berlin.html?center=52.508653+13.397214&zoom=17# (Geplanter Projektabschluss: 2019-03-31)
-#: last_checked: 2017-08-12 vvv
+#: last_checked: 2017-10-27 vvv
 #: next_check: 2018-03-31 vvv
 Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9945,11371 9936,11469
 Sch¸tzenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
@@ -302,7 +302,7 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 ### Kreuzberg ###
 # 
 #: source_id: LMS-BR_r_LMS-BR_106653_LMS-BR_72
-#: last_checked: 2017-10-16 vvv
+#: last_checked: 2017-10-27 vvv
 #: next_check: 2017-10-27 vvv
 Mariannenplatz: Bauarbeiten, Fahrbahn gesperrt, Bordsteine	q4::inwork 11781,10696 11824,10708
 Mariannenplatz: Bauarbeiten, Fahrbahn teilweise gesperrt	q2::inwork 11839,10736 11897,10887
@@ -391,7 +391,7 @@ Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fuﬂg‰nger	q3 5894,12480 5944,12
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 
 #: next_check_id: DIESEL-2015
-#: last_checked: 2017-10-10
+#: last_checked: 2017-10-27
 Dieselstr., Umfahrung: Fuﬂg‰nger, eng	q3::inwork 14326,8062 14366,8058 14384,8056 14425,8052 14471,8046
 # 
 # REMOVED (so gut wie fertig, Schlupflˆcher durch die Absperrungen) --- #: last_checked: 2015-07-29 --- #: check_frequency: 7d --- #: priority: #A --- Ganghoferstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12805,8194 12873,8217 12918,8232

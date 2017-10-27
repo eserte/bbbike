@@ -119,10 +119,12 @@ asphaltiert	RW2;RW2 26908,15630 26923,15583
 asphaltiert	RW8?;RW -926,27132 -1941,26218 -2118,26060 -2446,25386
 asphaltiert	RW;RW -4642,25672 -4929,25719 -5890,25875 -6593,25703 -6943,25831
 	RW7;RW7 -6943,25831 -7187,25859 -7225,25509 -7260,25515
-#: XXX: Position ist vielleicht nicht ganz genau
-#: add_fragezeichen: wie ist die Qualität des Radwegs?
-	RW8?;RW -7533,24138 -7599,23946 -7734,23796 -8777,22961 -8988,22668 -9046,22376
-asphaltiert	RW8?;RW -10377,20973 -10576,19951 -10581,19871 -10000,18629
+#: by: mapillary (Benutzungspflicht, Qualität)
+asphaltiert	RW8;RW2 -7533,24138 -7599,23946 -7734,23796 -8399,23212 -8777,22961 -8828,22886 -8988,22668 -9046,22376
+#: by: mapillary
+Verbundsteinpflaster	RW8;RW2 -9046,22376 -9049,22288 -9053,22180 -9056,22145 -9085,22059 -9589,21658 -9868,21594 -10313,21144 -10377,20973
+#: by: mapillary (Benutzungspflicht)
+asphaltiert	RW8;RW2 -10377,20973 -10418,20758 -10576,19951 -10581,19871 -10031,18697 -10000,18629
 #: XXX sind hier auch nur Suggestivstreifen?
 	RW4?;RW4? -11114,-2104 -10983,-2088
 	RW3;RW3 -10983,-2088 -10772,-2153 -10673,-2128
@@ -1125,3 +1127,7 @@ Verbundsteinpflaster	RW1; 10994,-4472 11302,-4489
 	RW2;RW8 -8450,15702 -8975,15899
 #: by: mapillary
 Gehweg für Radfahrer frei	RW1; 8303,28478 8337,28834
+#: by: mapillary
+Gehweg für Radfahrer frei	RW1; -10024,18376 -10088,17984 -10163,17584
+#: by: mapillary
+Gehweg für Radfahrer frei	RW1;RW9 -10024,18376 -10000,18629

@@ -451,7 +451,26 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/tempelhof-schoeneberg/1310676-1328179-lichtenraderlichtermarkt.html
+	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
+',
+         'from' => 1512169200,
+         'id' => 417,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 3. Dezember 2017 von 13 bis 19 Uhr)',
+         'type' => 'gesperrt',
+         'until' => 1512327600
+       },
        undef,
        undef,
        undef,
@@ -3265,10 +3284,90 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
          'type' => 'gesperrt',
          'until' => 1514156399
        },
-       undef,
-       undef,
-       undef,
-       undef,
+       {
+         'data' => '#: tempex: 1st_advent & T12-T19
+	2::xmas 11317,14564 11247,14578 11155,14554
+',
+         'from' => 1512212400,
+         'id' => 2518,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              11
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/pankow/971805-1328139-adventsmarktkollwitzplatz.html',
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 3. Dezember 2017, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1512324000
+       },
+       {
+         'data' => '#: tempex: 2nd_advent & T12-T19
+	2::xmas 11317,14564 11247,14578 11155,14554
+',
+         'from' => 1512817200,
+         'id' => 2519,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              3,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/pankow/971805-1328139-adventsmarktkollwitzplatz.html',
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 10. Dezember 2017, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1512928800
+       },
+       {
+         'data' => '#: tempex: 3rd_advent & T12-T19
+	2::xmas 11317,14564 11247,14578 11155,14554
+',
+         'from' => 1513422000,
+         'id' => 2520,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              10,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/pankow/971805-1328139-adventsmarktkollwitzplatz.html',
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 17. Dezember 2017, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1513533600
+       },
+       {
+         'data' => '#: tempex: 4th_advent & T12-T19
+	2::xmas 11317,14564 11247,14578 11155,14554
+',
+         'from' => 1513933200,
+         'id' => 2521,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              17,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/pankow/971805-1328139-adventsmarktkollwitzplatz.html',
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 23. Dezember 2017, 10:00 bis 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1514044800
+       },
        undef,
        undef,
        undef,
@@ -3885,7 +3984,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="530000444" version="2"
-#: last_checked: 2017-10-08
+#: last_checked: 2017-10-27
 #: check_frequency: 14d
 # REMOVED ---	q3::inwork; 7201,8870 7107,9030
 	q3::inwork; 7107,9030 7035,9161
@@ -3906,6 +4005,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: note: laut fritz bis 21.10.2017 08:00 Uhr, laut VMZ bis Anfang November 2017
 #: by: http://werbegemeinschaft-friedrichshagen.de/wp-content/uploads/2017/05/2017-05_Boelschestr_Anwohnerflyer_web.pdf
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.641756.php
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.643825.php
 #: source_id: LMS-BR_r_LMS-BR_97860
 	q4::inwork; 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
 ',
@@ -3921,7 +4021,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX Baumaßnahme ist Ende 2018 fertig; Vollsperrung nur für 2-3 Wochen
 #: XXX wird es vielleicht Änderungen bei der Wegbeschaffenheit geben?
-#: last_checked: 2017-09-26 (der Eingangsbereich ist zurzeit gesperrt, Umgehung existiert)
+#: last_checked: 2017-10-27 (der Eingangsbereich ist zurzeit gesperrt, Umgehung existiert)
 	2::inwork 6815,8691 6912,8617
 ',
          'from' => 1498214515,
@@ -4190,16 +4290,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1513594800
        },
-       {
-         'data' => '#: last_checked: 2017-09-23
-	2::inwork 16268,9670 16182,9591
-',
-         'from' => undef,
-         'id' => 2910,
-         'text' => 'Bolleufer - Zur Alten Flussbadeanstalt: an der Hafenküche wegen Bauarbeiten gesperrt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: last_checked: 2017-09-29
 	q3::inwork 8653,6781 8750,6779
@@ -4272,6 +4363,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Gäßnerweg: Fahrbahn zwischen Albrechtstr. und Bosestr. sowie Podewilsstr. und Burchardstr. gesperrt, bis 31.12.2017',
          'type' => 'handicap',
          'until' => 1514761200
+       },
+       {
+         'data' => '#: XXX wo genau ist die Sperrung?
+	2::inwork 5306,15387 5134,15565 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415
+',
+         'from' => undef,
+         'id' => 2918,
+         'source_id' => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.643712.php',
+         'text' => 'Uferweg Plötzensee: wegen Unterspülung gesperrt, genaue Stelle der Sperrung ist unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

@@ -3572,14 +3572,14 @@ EOF
 	2::inwork -19908,17940 -18793,18169
 EOF
      },
-     { from  => $isodate2epoch->("2016-11-26 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-11-27 20:00:00"), #
+     { from  => $isodate2epoch->("2017-12-02 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-12-03 20:00:00"), #
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 11]],
-       text  => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 27. November 2016 von 13 bis 19 Uhr)',
+       text  => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 3. Dezember 2017 von 13 bis 19 Uhr)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.weihnachteninberlin.de/weihnachtsmaerkte/tempelhof-schoeneberg/1310676-1328179-lichtenraderlichtermarkt.html
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/tempelhof-schoeneberg/1310676-1328179-lichtenraderlichtermarkt.html
 	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
@@ -13121,7 +13121,7 @@ EOF
        text  => 'L 020 Falkensee - Velten zw. Schönwalde und Gewerbegebiet Straßenbauarbeiten Vollsperrung 10.11.2008-19.12.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -8777,22961 -7734,23796 -7599,23946 -7533,24138
+	2::inwork -8777,22961 -8399,23212 -7734,23796 -7599,23946 -7533,24138
 EOF
      },
      { from  => 1225753200, # 2008-11-04 00:00
@@ -22468,49 +22468,49 @@ EOF
 	2::xmas 9986,13412 10317,13248
 EOF
      },
-     { from  => $isodate2epoch->("2016-11-26 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-11-27 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 27. November 2016, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2017-12-02 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-12-03 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 3. Dezember 2017, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 11]],
        type  => 'gesperrt',
-       source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
+       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/pankow/971805-1328139-adventsmarktkollwitzplatz.html',
        data  => <<EOF,
 #: tempex: 1st_advent & T12-T19
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2016-12-03 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-12-04 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 4. Dezember 2016, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2017-12-09 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-12-10 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 10. Dezember 2017, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 3, months => 12]],
        type  => 'gesperrt',
-       source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
+       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/pankow/971805-1328139-adventsmarktkollwitzplatz.html',
        data  => <<EOF,
 #: tempex: 2nd_advent & T12-T19
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2016-12-10 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-12-11 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 11. Dezember 2016, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2017-12-16 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-12-17 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 17. Dezember 2017, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 12]],
        type  => 'gesperrt',
-       source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
+       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/pankow/971805-1328139-adventsmarktkollwitzplatz.html',
        data  => <<EOF,
 #: tempex: 3rd_advent & T12-T19
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2016-12-17 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2016-12-18 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 18. Dezember 2016, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2017-12-22 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-12-23 17:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 23. Dezember 2017, 10:00 bis 17:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 17, months => 12]],
        type  => 'gesperrt',
-       source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarktkollwitzplatz.html',
+       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/pankow/971805-1328139-adventsmarktkollwitzplatz.html',
        data  => <<EOF,
 #: tempex: 4th_advent & T12-T19
 	2::xmas 11317,14564 11247,14578 11155,14554
@@ -26023,7 +26023,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="530000444" version="2"
-#: last_checked: 2017-10-08
+#: last_checked: 2017-10-27
 #: check_frequency: 14d
 # REMOVED ---	q3::inwork; 7201,8870 7107,9030
 	q3::inwork; 7107,9030 7035,9161
@@ -26097,6 +26097,7 @@ EOF
 #: note: laut fritz bis 21.10.2017 08:00 Uhr, laut VMZ bis Anfang November 2017
 #: by: http://werbegemeinschaft-friedrichshagen.de/wp-content/uploads/2017/05/2017-05_Boelschestr_Anwohnerflyer_web.pdf
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.641756.php
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.643825.php
 #: source_id: LMS-BR_r_LMS-BR_97860
 	q4::inwork; 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
 EOF
@@ -26127,7 +26128,7 @@ EOF
        data  => <<EOF,
 #: XXX Baumaßnahme ist Ende 2018 fertig; Vollsperrung nur für 2-3 Wochen
 #: XXX wird es vielleicht Änderungen bei der Wegbeschaffenheit geben?
-#: last_checked: 2017-09-26 (der Eingangsbereich ist zurzeit gesperrt, Umgehung existiert)
+#: last_checked: 2017-10-27 (der Eingangsbereich ist zurzeit gesperrt, Umgehung existiert)
 	2::inwork 6815,8691 6912,8617
 EOF
      },
@@ -26551,7 +26552,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1509129721, # undef, # XXX
        text  => 'Bolleufer - Zur Alten Flussbadeanstalt: an der Hafenküche wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -26655,6 +26656,16 @@ EOF
        data  => <<EOF,
 	q4::inwork 8541,6191 8546,6307
 	q4::inwork 8553,6665 8551,6552
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Uferweg Plötzensee: wegen Unterspülung gesperrt, genaue Stelle der Sperrung ist unbekannt',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.643712.php',
+       data  => <<EOF,
+#: XXX wo genau ist die Sperrung?
+	2::inwork 5306,15387 5134,15565 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415
 EOF
      },
     );
