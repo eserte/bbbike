@@ -612,6 +612,10 @@ For generated files: the generated lines originate at the specified
 line number. This directive has to be specified together with
 L</source_file>.
 
+=item C<id: I<string>>
+
+An identifier string.
+
 =back
 
 =head3 Obsolete and to-be-decided directives

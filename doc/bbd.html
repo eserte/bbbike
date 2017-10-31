@@ -613,6 +613,20 @@ A priority for checks. The priority string should be something between
 May be used for check purposes. Currently only utilized in
 <code>ortsschilder-orig</code>, where the linked name is to be used to do checks
 against <code>orte-orig</code>/<code>orte2-orig</code>.
+<dt class="POD_ITEM"><a name="source_file_filename"><code>source_file: <i>filename</i></code></a>
+<dd>
+For generated files: the generated lines originate from the specified
+<i>filename</i>. This is usually specified as a non-block directive;
+another <code>source_file</code> directive would switch to a different source
+file.
+<dt class="POD_ITEM"><a name="source_line_number"><code>source_line: <i>number</i></code></a>
+<dd>
+For generated files: the generated lines originate at the specified
+line number. This directive has to be specified together with
+<u>source_file</u>.
+<dt class="POD_ITEM"><a name="id_string"><code>id: <i>string</i></code></a>
+<dd>
+An identifier string.
 </dl>
 <h4 class="POD_HEAD3"><a name="Obsolete_and_to_be_d">Obsolete and to-be-decided directives</a></h4>
 <dl class="POD_LIST">
@@ -717,12 +731,19 @@ handicap of class <code>q4</code> for the wrong direction.).
 </p>
 <li class="POD_ITEM"><a name="1h_"><p><code>1h</code>:</p></a>
 <p class="POD_TEXT">
-One way street 8read &quot;one hard&quot;), and there&#39;s no
+One way street (read &quot;one hard&quot;), and there&#39;s no
 possibility for a cyclist to use the street in wrong direction.
 </p>
 <li class="POD_ITEM"><a name="2_"><p><code>2</code>:</p></a>
 <p class="POD_TEXT">
 Blocked street in both directions.
+</p>
+<li class="POD_ITEM"><a name="2s_"><p><code>2s</code>:</p></a>
+<p class="POD_TEXT">
+Blocked street (read &quot;two soft&quot;), but not strictly for
+cyclists (means: It is usually possible for bicyclists to pass the
+street, maybe by pushing the bike. Typically an handicap addition like
+<code>2s:q4</code> or <code>2s:q3</code> should be specified).
 </p>
 <li class="POD_ITEM"><a name="0_"><p><code></code>:</p></a>
 <p class="POD_TEXT">
@@ -1162,6 +1183,10 @@ rendered.
 <dd>
 Mark a temporary blocking which is recurring. Currently rendered with
 a &quot;clock&quot; sign.
+<dt class="POD_ITEM"><a name="xmas">xmas</a>
+<dd>
+Mark a temporary blocking which is active typically before and after
+Christmas. Currently rendered with a christmas tree sign.
 </dl>
 <h2 class="POD_HEAD1"><a name="CONVENTIONS">CONVENTIONS</a></h2>
 <p class="POD_TEXT">
