@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2015,2017 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -28,6 +28,8 @@ use Strassen::CoreHeavy;
 use Strassen::Combine;
 use Strassen::MultiStrassen;
 
+our $VERSION = '0.02';
+
 my $do_berlin_specialities = 1;
 my $output_format = 'Map::Tube';
 my $include_lines_file;
@@ -45,6 +47,10 @@ GetOptions(
 	   "ubahn!" => \$do_ubahn,
 	   "sbahn!" => \$do_sbahn,
 	   'include-lines=s' => \$include_lines_file,
+	   'v|version' => sub {
+	       print basename($0) . " $VERSION\n";
+	       exit 0;
+	   },
 	  )
     or usage;
 
@@ -194,10 +200,13 @@ my %other_links; # Id => { Type => [id, id, ...], ... }, ...
 	    my %this_other_links;
 	    for my $this_other_link (@{ $dir->{map_tube_other_link} }) {
 		my($type, $other_station) = split /:/, $this_other_link, 2;
+		if (!defined $other_station) {
+		    die "ERROR: other_link has to be in the format TYPE:OTHER_STATION, e.g. Street:Hauptbahnhof (error at station '$station')";
+		}
 		$other_station = normalize_station($other_station);
 		my $other_station_id = $station2id{$other_station};
 		if (!defined $other_station_id) {
-		    die "ERROR: no other station id for '$other_station' found";
+		    die "ERROR: no other station id for '$other_station' (station '$station') found";
 		}
 		push @{ $this_other_links{$type} }, $other_station_id;
 	    }
@@ -210,7 +219,7 @@ if ($output_format eq 'Map::Tube') {
     my $fmtid = sub { sprintf 'S%03d', $_[0] };
 
     my $doc = XML::LibXML::Document->new('1.0', 'utf-8');
-    $doc->addChild($doc->createComment('Created by ' . basename(__FILE__) . ' (part of BBBike)'));
+    $doc->addChild($doc->createComment('Created by ' . basename(__FILE__) . ' ' . $VERSION . ' (part of BBBike)'));
     my $tube = $doc->createElement('tube');
     $doc->setDocumentElement($tube);
     $tube->setAttribute(name => 'Berlin Metro');
@@ -234,7 +243,7 @@ if ($output_format eq 'Map::Tube') {
 	utf8::upgrade($station); # This smells like an XML::LibXML bug
 	$station_node->setAttribute('name', $station);
 	$station_node->setAttribute('line', join(',', @lines));
-	$station_node->setAttribute('link', join(',', map { $fmtid->($_) } @link_ids));
+	$station_node->setAttribute('link', join(',', sort map { $fmtid->($_) } @link_ids));
 	if ($this_other_links) {
 	    my $other_link_text = join ',', map { $_ . ':' . join('|', map { $fmtid->($_) } @{ $this_other_links->{$_} }) } keys %$this_other_links;
 	    $station_node->setAttribute('other_link', $other_link_text);
