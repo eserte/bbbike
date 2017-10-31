@@ -122,7 +122,7 @@ sub new_search {
     if ($refpoint) {
 	push @islands, Strassen::Check::get_island($net, $refpoint);
     } else {
-	push @islands, @{ Strassen::Check::get_islands($net, debug => $debug, number_of_unique_points => $number_of_unique_points, max_loops => $max_loops) };
+	push @islands, @{ Strassen::Check::get_islands($net, shortcut => 1, debug => $debug, number_of_unique_points => $number_of_unique_points, max_loops => $max_loops) };
     }
 
     @islands = sort { scalar(keys %$b) <=> scalar(keys %$a) } @islands;

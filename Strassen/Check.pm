@@ -97,6 +97,13 @@ Options are provided as named parameters:
 
 =over
 
+=item C<< shortcut => I<$bool> >>
+
+If set to a true value, then the functions is exited as soon as an
+island has half of the unique points in the net. Use this if you're
+interested only in getting the largest "island" (which would probably
+be a "continent").
+
 =item C<< debug => I<$bool> >>
 
 If set to a true value, then debugging statements are emitted.
@@ -104,8 +111,9 @@ Defaults to false.
 
 =item C<< number_of_unique_points => I<$int> >>
 
-Only needed if C<debug> is set, and if missing, then an automatic call
-to L</number_of_unique_points> is done.
+Number of unique numbers in the net. Only needed if any C<debug> or
+C<shortcut> is set, and if missing, then an automatic call to
+L</number_of_unique_points> is done.
 
 =item C<< max_loops => I<$int> >>
 
@@ -122,9 +130,16 @@ sub get_islands {
     my $debug                   = delete $opts{debug};
     my $number_of_unique_points = delete $opts{number_of_unique_points};
     my $max_loops               = delete $opts{max_loops} || 10;
+    my $shortcut                = delete $opts{shortcut};
     die "Unhandled options: " . join(" ", %opts) if %opts;
 
     my $s = $net->{Strassen} || die "No Strassen object available in $net";
+
+    if (!defined $number_of_unique_points) {
+	if ($debug || $shortcut) {
+	    $number_of_unique_points = Strassen::Check::number_of_unique_points($s);
+	} # else not needed
+    }
 
     $s->init_for_iterator('refpoint');
     my @islands;
@@ -144,15 +159,14 @@ sub get_islands {
 		    $global_seen{$k} = 1;
 		}
 		if ($debug) {
-		    if (!defined $number_of_unique_points) {
-			$number_of_unique_points = Strassen::Check::number_of_unique_points($s);
-		    }
 		    warn "... found " . scalar(keys %$island) . " point(s) of total $number_of_unique_points in island\n";
 		    warn "global_seen has now " . scalar(keys %global_seen) . " entries\n";
 		}
-		if (scalar(keys %$island) >= $number_of_unique_points/2) {
-		    warn "This is large enough, exiting loop.\n" if $debug;
-		    last ITERATE_OVER_STREETS;
+		if ($shortcut) {
+		    if (scalar(keys %$island) >= $number_of_unique_points/2) {
+			warn "This is large enough, exiting loop.\n" if $debug;
+			last ITERATE_OVER_STREETS;
+		    }
 		}
 		$flood_search_calls++;
 		if ($flood_search_calls > $max_loops) {
