@@ -1391,7 +1391,8 @@ do-checks:	.check_empty_lines \
 	.check_temp_blockings .check_grenzuebergaenge \
 	.check_berlin .check_potsdam \
 	.check_ortsschilder .check_ortsschilder2 \
-	${CHECK_RECURRING_TEMP_BLOCKINGS_TARGET}
+	${CHECK_RECURRING_TEMP_BLOCKINGS_TARGET} \
+	.check_data_islands_temp_blockings
 
 .check_empty_lines:	*-orig
 	for i in *-orig; do $(PERL) -nle '$$_ eq q{} and die $$ARGV' $$i; done
@@ -1734,6 +1735,10 @@ check-disabled:
 
 ${CHECK_RECURRING_TEMP_BLOCKINGS_TARGET}: temp_blockings/bbbike-temp-blockings.pl .check_daily
 	${TEMP_BLOCKINGS_TASKS} check_recurrences --prewarn-days=${CHECK_RECURRENCES_PREWARN_DAYS} temp_blockings/bbbike-temp-blockings.pl
+	@touch $@
+
+.check_data_islands_temp_blockings: temp_blockings/bbbike-temp-blockings.pl
+	${TEMP_BLOCKINGS_TASKS} check_data_islands temp_blockings/bbbike-temp-blockings.pl
 	@touch $@
 
 .check_grenzuebergaenge:	grenzuebergaenge .strassen.tmp landstrassen landstrassen2 fragezeichen deutschland

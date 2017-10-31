@@ -117,6 +117,18 @@ if ($task eq 'pl_to_yml') {
 	or usage "pl file is missing";
     my $temp_blocking_records = _load_records($pl_file);
     check_recurrences($temp_blocking_records, prewarn_days => $prewarn_days, now => $now);
+} elsif ($task eq 'check_data_islands') {
+    require Getopt::Long;
+    my $acceptable_distance = 1000; # visible area on my monitor at 1:6000 is approx. 2800x1300 meters, so 1000 is hopefully enough
+    if (!Getopt::Long::GetOptions(
+				  'acceptable-distance=i' => \$acceptable_distance,
+				 )) {
+	die "usage: $0 $task [--acceptable_distance=...] bbbike_temp_blockings.pl\n";
+    }
+    my $pl_file = shift
+	or usage 'pl file is missing';
+    my $temp_blocking_records = _load_records($pl_file);
+    check_data_islands($temp_blocking_records, acceptable_distance => $acceptable_distance);
 } else {
     usage("Task $task is unknown");
 }
@@ -236,6 +248,53 @@ sub check_recurrences {
     } else {
 	exit 0;
     }
+}
+
+sub check_data_islands {
+    my($temp_blocking_records, %args) = @_;
+    my $acceptable_distance = delete $args{acceptable_distance};
+    die "Unhandled args: " . join(" ", %args) if %args;
+
+    _add_bbbike_inc();
+    require Strassen::Core;
+    require Strassen::StrassenNetz;
+    require Strassen::Check;
+    require Strassen::Util;
+
+    my $possible_errors = 0;
+    for my $record (@$temp_blocking_records) {
+	next if !$record->{data}; # XXX what about file?
+	my $s = Strassen->new_from_data_string($record->{data});
+	my $net = StrassenNetz->new($s);
+	$net->make_net;
+	my $islands = Strassen::Check::get_islands($net, shortcut => 0);
+	next if (@$islands <= 1);
+	@$islands = sort { scalar(keys %$b) <=> scalar(keys %$a) } @$islands;
+
+	my $this_acceptable_distance = $record->{accept_multi_feature_distance} || $acceptable_distance;
+
+    CHECK_ISLAND:
+	for my $island_i (1 .. $#$islands) {
+	    my $min_dist;
+	    my @nearest_points;
+	    for my $island1_point (keys %{ $islands->[0] }) {
+		for my $island2_point (keys %{ $islands->[$island_i] }) {
+		    my $dist = Strassen::Util::strecke_s($island1_point, $island2_point);
+		    if ($dist <= $this_acceptable_distance) {
+			next CHECK_ISLAND;
+		    } elsif (!$min_dist || $dist < $min_dist) {
+			$min_dist = $dist;
+			@nearest_points = ($island1_point, $island2_point);
+		    }
+		}
+	    }
+	    warn "Found far-away data islands in record (distance $min_dist from largest island, acceptable is $this_acceptable_distance, nearest points are: @nearest_points)";
+	    require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$record, $islands],[qw(need_to_check)])->Indent(1)->Useqq(1)->Sortkeys(1)->Terse(1)->Dump;
+	    $possible_errors++;
+	}
+    }
+
+    die "$possible_errors error(s) found" if $possible_errors;
 }
 
 sub _filter_real_source_ids {
