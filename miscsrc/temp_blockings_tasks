@@ -131,8 +131,10 @@ sub yml_to_bbd {
 
     my $x = BBBikeYAML::LoadFile($infile);
     my $done_header;
+    my $id = -1;
     for my $rec (@$x) {
-	my $d = $rec->{data};
+	$id++;
+	my $d = $rec->{data}; # XXX no support for $rec->{file} --- is this intentional?
 	next if not $d;
 	next if $filter_recurring    && !($rec->{permanent} || $rec->{recurring});
 	next if $filter_nonrecurring &&  ($rec->{permanent} || $rec->{recurring});
@@ -140,6 +142,8 @@ sub yml_to_bbd {
 	    print "#: source_file: $infile\n#:\n";
 	    $done_header = 1;
 	}
+	print "# \n";
+	print "#: id: $id vvv\n";
 	if ($rec->{source_id}) {
 	    my @source_ids = ref $rec->{source_id} eq 'ARRAY' ? @{ $rec->{source_id} } : $rec->{source_id};
 	    for my $source_id (@source_ids) {
@@ -156,6 +160,7 @@ sub yml_to_bbd {
 	    $t . (substr($1,0,1) eq "\t" ? "" : " ") . $1 # separate with space only if there's a non-empty name in the bbd line
 	}gme;
 	print $d;
+	print "#: id ^^^\n";
     }
 }
 
