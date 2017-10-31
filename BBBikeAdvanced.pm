@@ -1230,6 +1230,9 @@ sub parse_url_for_coords {
     } elsif ($url =~ m{lat=($float_qr)&lng=($float_qr)}) {
 	($y_ddd, $x_ddd) = ($1, $2);
 	$$detect_ref = 'mapillary' if $detect_ref;
+    } elsif ($url =~ m{ll=($float_qr),($float_qr)&}) { # e.g. geocaching.com/map
+	($y_ddd, $x_ddd) = ($1, $2);
+	$$detect_ref = 'geocaching' if $detect_ref;
     } elsif ($url =~ m{\d+/($float_qr)/($float_qr)$}) { # Pharus, e.g. http://m.deinplan.de/map.php#16/52.532291/13.380783
 	($y_ddd, $x_ddd) = ($1, $2);
 	$$detect_ref = 'pharus' if $detect_ref;
