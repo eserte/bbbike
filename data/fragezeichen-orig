@@ -693,7 +693,7 @@ Rothenbachstr.: Verbesserung -> wird der frühere Radweg wieder aktiviert?	?::pro
 Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected; 15662,16656 15437,16491
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4378
-#: last_checked: 2017-10-15
+#: last_checked: 2017-10-26 (mapillary)
 Caligariplatz: Verbesserung -> offizielle Radwegführung zur Wisbyer Str.?	?::projected 12121,16317 12097,16263 12090,16199
 # 
 #: last_checked: 2017-08-06
@@ -1208,7 +1208,7 @@ Dahlemer Weg: Radwege werden durch Radspuren ersetzt	?::projected 2152,2912 2198
 #: XXX außerdem: Vorfahrtsregelung werden geändert (zum Am Falkenberg) oder spezifiziert (zur Buntzelstr.)
 #: XXX komplettes Bauende 2018
 #: XXX im Maßnahmenkatalog: Bd.5 + Bd.6
-#: osm_watch: way id="151627031" version="12"
+#: osm_watch: way id="151627031" version="13"
 #: source_id: 2147341295
 #: source_id: 2147341681
 #: source_id: 2147341683
@@ -1218,11 +1218,11 @@ Dahlemer Weg: Radwege werden durch Radspuren ersetzt	?::projected 2152,2912 2198
 Bohnsdorfer Kreisel: Bau von Radspuren in beiden Richtungen; Aufhebung der Einbahnstraßenregelung	?::projected 22007,711 22062,773
 #: XXX wird die Einbahnstraße bereits während der Bauarbeiten aufgehoben?
 Bohnsdorfer Kreisel: Bau von Radspuren in beiden Richtungen; Aufhebung der Einbahnstraßenregelung	?::projected 22062,773 22120,886 22092,999 22034,1006 21977,988
-#: osm_watch: way id="410955359" version="3"
 #: XXX wird die Einbahnstraße bereits während der Bauarbeiten aufgehoben?
 Bohnsdorfer Kreisel: Einbahnstraße wird aufgehoben	?::projected 21977,988 21904,876 21862,807
 #: XXX erster Bauabschnitt (vom 15. Mai 2017 bis Oktober 2017)
-Bohnsdorfer Kreisel: Einbahnstraße wird aufgehoben	?::projected 21862,807 22007,711
+#: osm_watch: way id="410955359" version="4"
+Bohnsdorfer Kreisel: wird es hier Radspuren geben?	?::projected 21862,807 22007,711
 #: next_check ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
@@ -1965,6 +1965,9 @@ B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX Verbundsteinpflaster, einige Fußgänger, vermutlich beleuchtet; wie kommt man auf die Ella-Kay-Str.? Wie gut kann man die Greifswalder überqueren?
+Greifswalder Str. - Ella-Kay-Str.: Streckenführung genauer anschauen	? 12371,14615 12229,14706 12221,14738 12186,14762 12085,14828 12089,14891
+# 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20171017
 #: next_check: 2017-10-06
 Hundsfelder Str.: Neubau Großsteinpflasterstraße, evtl. danach etwas bessere Qualität?	?::inwork 21877,-307 21769,-432
@@ -1975,7 +1978,7 @@ Margaretenaue/Pasewalker: Abbiegesituation für Radfahrer?	? 12015,20338 12000,20
 #: osm_watch: way id="48846369" version="10"
 #: source_id: 2147341703
 #: last_checked: 2017-10-14
-#: next_check: 2017-10-31
+#: next_check: 2017-11-10
 Kaiser-Wilhelm-Str.: wird es nach den Bauarbeiten Radspuren oder Radwege geben?	?::inwork; 6993,3765 6954,3703 6930,3666 6780,3497
 # 
 # REMOVED (Radfahrer dürfen offiziell auf dem Gehweg fahren) --- #: XXX laut fritz bis 03.11.2017, laut vmz bis Anfang Dezember 2017 --- #: source_id: 2147341925 --- #: source_id: 2147341599 --- Katzbachstr.: Bauarbeiten zwischen Yorck- und Kreuzbergstr., auch für Radfahrer relevant?	?::inwork; 8595,9495 8598,9269
@@ -2516,8 +2519,8 @@ Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5984
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4106
 #: osm_watch: way id="338316875" version="6"
-#: last_checked: 2017-09-26
-#: next_check: 2017-10-27
+#: last_checked: 2017-10-27
+#: next_check: 2018-03-01
 Kolonnenstr.: werden hier Radstreifen errichtet?	?::projected; 7709,8777 7795,8765 8008,8771 8014,8771 8078,8772
 # 
 #: osm_watch: way id="441924795" version="1"
@@ -2728,6 +2731,10 @@ Eberswalde - Oder-Havel-Brücke: existiert hier ein separater Radweg neben der St
 # 
 #: XXX teilweise scheint es hier nur Trampelpfade zu geben, inbesondere zwischen Mäckeritzbrücke und Flughafen Tegel...
 Saatwinkler Damm: Radwegsituation?	? 3033,15694 1238,15705 982,15710 449,15654 51,15599 -302,15546 -624,15494 -692,15487 -763,15487 -922,15463 -1013,15433
+# 
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/beteilungsverfahren-zu-den-bebauungsplaenen/12-58_oea_01_2017-08-01_bebauungsplan.pdf
+#: next_check: 2018-08-01
+Egellsstr.: eventuell wird dieser Abschnitt für die Öffentlichkeit gesperrt	? 2160,19320 2294,19328
 # 
 #: ignore ^^^
 # 
@@ -4388,7 +4395,7 @@ Am Waldfrieden (Groß Glienicke): Qualität?	? -10080,5069 -10227,5101 -10329,5131
 #: XXX laut osm "paved"
 Nibelungenstr. (Groß Glienicke): Qualität?	? -10102,5131 -9986,5176 -9875,5231 -9778,5280
 #: XXX anonymous meint: Kopfsteinpflaster (stimmt auch ganz im Norden), aber die Straße ist so lang und hat auch einen Geh/Radweg-Abschnitt
-Elbestr. (Teltow): Qualität?	? 347,-784 288,-1040 213,-1180 145,-1262 109,-1291 4,-1363 -173,-1397 -248,-1400
+Elbestr. (Teltow): Qualität?	? 288,-1040 213,-1180 145,-1262 109,-1291 4,-1363 -173,-1397 -248,-1400
 #: XXX laut osm im westl. Abschnitt track
 #: XXX zumindest unter der Bahnbrücke Kopfsteinpflaster, möglicherweise schlechtes
 #: XXX auch an der Geschwister-Scholl-Str. Kopfsteinpflaster
@@ -4888,7 +4895,7 @@ Ruhlsdorfer Platz (Teltow): Fahrbahnbeschaffenheit? verkehrsberuhigt?	? 1492,-69
 Weinbergweg (Teltow): Fahrbahnbeschaffenheit?	? 731,-585 720,-713 682,-792
 Weserstr. (Teltow): Fahrbahnbeschaffenheit?	? 347,-784 458,-885 528,-917 597,-948
 Katzbachstr. (Teltow): Fahrbahnbeschaffenheit des nördlichen Abschnitts?	? 295,-628 285,-608 240,-519
-Havelstr. (Teltow): Fahrbahnbeschaffenheit?	? 245,-1001 288,-1040 353,-1105 403,-1166 501,-1262 544,-1320
+Havelstr. (Teltow): Fahrbahnbeschaffenheit im südöstlichen Abschnitt?	? 288,-1040 353,-1105 403,-1166 501,-1262 544,-1320
 Kleiststr. (Stahnsdorf): Fahrbahnbeschaffenheit im südlichen Abschnitt?	? -569,-1670 -497,-1802
 Schwarzer Weg (Kleinmachnow): Fahrbahnbeschaffenheit?	? -866,-1615 -872,-1602 -1036,-1315
 Bahnhofstr. (Stahnsdorf): Qualität des östlichen Endes?	? -2878,-3004 -2817,-2967 -2720,-2937 -2657,-2907

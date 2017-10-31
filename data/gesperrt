@@ -1743,8 +1743,8 @@ Mittelstreifen mit Straﬂenbahn	3nocross::ignrte 11709,14856 11609,14881 11535,14
 Danziger Str. -> Rykestr.: Mittelstreifen mit Straﬂenbahn	3::igndisp 11709,14856 11609,14881 11535,14688
 Rykestr. -> Danziger Str.: Mittelstreifen mit Straﬂenbahn	3::igndisp 11535,14688 11609,14881 11535,14900
 Mittelstreifen mit Straﬂenbahn	3nocross::ignrte 12317,14535 12123,14643 12025,14695
-Danziger Str. -> Lilli-Henoch-Str.: Mittelstreifen mit Straﬂenbahn	3::igndisp 12025,14695 12123,14643 12193,14775
-Lilli-Henoch-Str. -> Danziger Str.: Mittelstreifen mit Straﬂenbahn	3::igndisp 12193,14775 12123,14643 12317,14535
+Danziger Str. -> Lilli-Henoch-Str.: Mittelstreifen mit Straﬂenbahn	3::igndisp 12025,14695 12123,14643 12186,14762
+Lilli-Henoch-Str. -> Danziger Str.: Mittelstreifen mit Straﬂenbahn	3::igndisp 12186,14762 12123,14643 12317,14535
 Mittelstreifen mit Straﬂenbahn	3nocross::ignrte 10741,13685 10645,13711 10572,13731 10459,13760
 Torstr. -> Angerm¸nder Str.: Mittelstreifen mit Straﬂenbahn	3::igndisp 10572,13731 10645,13711 10703,13832
 Angerm¸nder Str. -> Torstr.: Mittelstreifen mit Straﬂenbahn	3::igndisp 10703,13832 10645,13711 10741,13685
@@ -2761,7 +2761,7 @@ Schwingtor	BNP:5:-85:trailer=10 7366,8390
 Schwingtor	BNP:5:-49:trailer=10 7400,8273
 Schwingtor	BNP:5:-54:trailer=10 7289,8259
 Schwingtor	BNP:5:-190:trailer=10 7372,8222
-Schranke, sehr enge Durchfahrt, nicht anh‰ngertauglich	BNP:5:-135:trailer=no 14658,7513
+Schranke, sehr enge Durchfahrt, nicht anh‰ngertauglich	BNP:5:-148:trailer=no 14658,7513
 Dr‰ngelgitter an der Straﬂenbahntrasse	BNP:6:-167 14989,13630
 Schranke	BNP:3:-90 -3646,15717
 Dr‰ngelgitter am Bahn¸bergang	BNP:3:-21 11612,5253
@@ -2898,7 +2898,6 @@ Mauerstr.: Bauarbeiten, Einbahnstraﬂe	1s:inwork 9108,11961 9138,11872
 (entlang der Erpe): Bauarbeiten der DB	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
 (Marseillestr. - Straﬂe 160): wegen Bauarbeiten gesperrt	2::inwork 12495,21397 12507,21391 12547,21372
 Rigaer Str.: Komplettsperrung zwischen Schreinerstr. und Voigtstr.	2::inwork 14538,12371 14748,12314
-Gutspark Neukladow: Bauarbeiten, Weg komplett gesperrt	2::inwork -6366,5215 -6198,5357
 Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -6556,6663 -6661,6743
 An den Parkb‰umen: Bauarbeiten, Fahrbahn gesperrt	2::inwork -6530,6699 -6556,6663
 Parkrosenweg: Bauarbeiten	2::inwork -6530,6699 -6381,6587

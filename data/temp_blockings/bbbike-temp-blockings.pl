@@ -6113,7 +6113,7 @@ EOF
        text  => 'L 020 R.-Luxemburg-Str. OD Velten, Bahnübergang Arbeiten am Gleiskörper Vollsperrung 21.10.2006-02.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -5368,30480 -5417,30402 -5496,30288
+	2::inwork -5356,30485 -5417,30402 -5516,30287
 EOF
      },
      { from  => 1159693063, # 2006-10-01 10:57
@@ -6944,7 +6944,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004322',
        data  => <<EOF,
-	2::inwork -7640,26928 -7309,26146 -7243,25847 -7230,25622 -7260,25515 -7421,24956 -7603,24696
+	2::inwork -7640,26928 -7565,26755 -7509,26621 -7309,26146 -7243,25847 -7230,25622 -7260,25515 -7421,24956 -7603,24696
 EOF
      },
      { from  => 1165705200, # 2006-12-10 00:00
@@ -8788,7 +8788,7 @@ EOF
        text  => 'L 020 Rosa-Luxemburg-Str. Bahnübergang in der OL Velten Gleisbauarbeiten Vollsperrung 22.06.2007-05.07.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -5368,30480 -5417,30402 -5496,30288
+	2::inwork -5356,30485 -5417,30402 -5516,30287
 EOF
      },
      { from  => 1182031200, # 2007-06-17 00:00
@@ -8796,7 +8796,7 @@ EOF
        text  => 'L 020 Veltener Str. OD Bötzow, zw. Marwitzer Str. u. Grünstr. Einbau Deckschicht Vollsperrung 18.06.2007-24.06.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -7681,27096 -7250,28021
+	q4::inwork -7674,27071 -7250,28021
 EOF
      },
      { from  => 1182031200, # 2007-06-17 00:00
@@ -13121,7 +13121,7 @@ EOF
        text  => 'L 020 Falkensee - Velten zw. Schönwalde und Gewerbegebiet Straßenbauarbeiten Vollsperrung 10.11.2008-19.12.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -8777,22961 -8399,23212 -7734,23796 -7599,23946 -7533,24138
+	2::inwork -8750,22965 -8630,23022 -8399,23212 -7734,23796 -7599,23946 -7533,24138
 EOF
      },
      { from  => 1225753200, # 2008-11-04 00:00

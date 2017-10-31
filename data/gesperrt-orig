@@ -2871,20 +2871,12 @@ Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9108,11961 9138,11872
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.616518.php
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.616795.php
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.633456.php (Öffnung für Fußgänger)
-#: last_checked: 2017-08-05
-#: next_check: 2017-10-22
+#: last_checked: 2017-10-26 (mapillary)
 #: valid: 20170801-20190228
 #: priority: #A
 Rigaer Str.: Komplettsperrung zwischen Schreinerstr. und Voigtstr.	2::inwork 14538,12371 14748,12314
 # 
-#: by: http://www.berliner-woche.de/kladow/verkehr/ausbau-des-havel-radwegs-d128132.html
-#: by: https://gruen-berlin.de/projekt/havel-radweg
-#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.601832.php
-#: osm_watch: note 1050400 2
-#: last_checked: 2017-07-15
-#: next_check: 2017-10-01
-#: priority: #A
-Gutspark Neukladow: Bauarbeiten, Weg komplett gesperrt	2::inwork -6366,5215 -6198,5357
+# REMOVED (beendet?) --- #: by: http://www.berliner-woche.de/kladow/verkehr/ausbau-des-havel-radwegs-d128132.html --- #: by: https://gruen-berlin.de/projekt/havel-radweg --- #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.601832.php --- #: osm_watch: note 1050400 2 --- #: last_checked: 2017-07-15 --- #: next_check: 2017-10-01 --- #: priority: #A --- Gutspark Neukladow: Bauarbeiten, Weg komplett gesperrt	2::inwork -6366,5215 -6198,5357
 # 
 #: next_check_id: PARKVIERTELKLADOW-2017 vvv
 #: last_checked: 2017-07-15 vvv
@@ -3252,7 +3244,8 @@ Sterndamm: Eisenbahnunterführung in Richtung Groß-Berliner Damm/Südostallee gesp
 #: source_id: 2147338144
 #: source_id: LMS-BR_r_LMS-BR_6571
 #: valid: 20140224-20180630
-#: next_check: 2018-06-30
+# REMOVED #: next_check: 2018-06-30
+#: next_check: 2017-10-30
 Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,6895 14153,6795
 # 
 # REMOVED --- #: XXX siehe auch Busspur in radwege-orig vvv --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html vvv --- #: source_id: INKO_113041 vvv --- #: source_id: 2147339528 vvv --- 
