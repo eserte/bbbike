@@ -116,55 +116,13 @@ sub new_search {
 
     my $s = $net->{Strassen};
 
-    my $number_unique_points = do {
-	my %unique_points;
-	$s->init;
-	while() {
-	    my $r = $s->next;
-	    my @c = @{ $r->[Strassen::COORDS] };
-	    last if !@c;
-	    for my $c (@c) {
-		$unique_points{$c} = 1;
-	    }
-	}
-	scalar keys %unique_points;
-    };
+    my $number_of_unique_points = Strassen::Check::number_of_unique_points($s);
 
     my @islands;
     if ($refpoint) {
 	push @islands, Strassen::Check::get_island($net, $refpoint);
     } else {
-	$s->init_for_iterator('refpoint');
-	my %global_seen;
-	my $flood_search_calls = 0;
-    ITERATE_OVER_STREETS: while() {
-	    my $r = $s->next_for_iterator('refpoint');
-	    my @c = @{ $r->[Strassen::COORDS] };
-	    last if !@c;
-
-	    for my $c (@c) {
-		if (!exists $global_seen{$c}) {
-		    warn "flood search for refpoint=$c\n" if $debug;
-		    my $island = Strassen::Check::get_island($net, $c);
-		    push @islands, $island;
-		    while(my($k) = each %$island) {
-			$global_seen{$k} = 1;
-		    }
-		    if ($debug) {
-			warn "... found " . scalar(keys %$island) . " point(s) of total $number_unique_points in island\n";
-			warn "global_seen has now " . scalar(keys %global_seen) . " entries\n";
-		    }
-		    if (scalar(keys %$island) >= $number_unique_points/2) {
-			warn "This is large enough, exiting loop.\n" if $debug;
-			last ITERATE_OVER_STREETS;
-		    }
-		    $flood_search_calls++;
-		    if ($flood_search_calls > $max_loops) {
-			last ITERATE_OVER_STREETS;
-		    }
-		}
-	    }
-	}
+	push @islands, @{ Strassen::Check::get_islands($net, debug => $debug, number_of_unique_points => $number_of_unique_points, max_loops => $max_loops) };
     }
 
     @islands = sort { scalar(keys %$b) <=> scalar(keys %$a) } @islands;
@@ -214,14 +172,14 @@ sub new_search {
 	} else {
 	    my $percentage = sub {
 		my $index = 0;;
-		sprintf "%.1f", 100*scalar(keys %{$islands[$index]})/$number_unique_points;
+		sprintf "%.1f", 100*scalar(keys %{$islands[$index]})/$number_of_unique_points;
 	    };
 	    my $get_refpoint = sub {
 		my $index = 0;
 		(keys %{$islands[$index]})[0];
 	    };
 	    my $count_inaccessible_points = sub {
-		$number_unique_points - scalar(keys %{$islands[0]});
+		$number_of_unique_points - scalar(keys %{$islands[0]});
 	    };
 	    print STDERR <<EOF;
 largest continent:     @{[ $percentage->() ]}%

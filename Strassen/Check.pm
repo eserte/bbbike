@@ -23,6 +23,8 @@ use strict;
 use vars qw($VERSION);
 $VERSION = '0.01';
 
+use Strassen::Core;
+
 =head1 DESCRIPTION
 
 =head2 FUNCTIONS
@@ -81,6 +83,109 @@ sub get_island {
     }
 
     return \%CLOSED;
+}
+
+=head3 get_islands
+
+    my $islands_arrayref = Strassen::Check::get_islands($net, %opts);
+
+For a given L<StrassenNetz> object, return an arrayref of "islands"
+(for the data type see L</get_island>). The StrassenNetz object
+requires to have a C<Strassen> field.
+
+Options are provided as named parameters:
+
+=over
+
+=item C<< debug => I<$bool> >>
+
+If set to a true value, then debugging statements are emitted.
+Defaults to false.
+
+=item C<< number_of_unique_points => I<$int> >>
+
+Only needed if C<debug> is set, and if missing, then an automatic call
+to L</number_of_unique_points> is done.
+
+=item C<< max_loops => I<$int> >>
+
+Limit the number of loops to avoid endless iterations (may this ever
+happen?). Defaults to 10.
+
+=back
+
+=cut
+
+sub get_islands {
+    my($net, %opts) = @_;
+
+    my $debug                   = delete $opts{debug};
+    my $number_of_unique_points = delete $opts{number_of_unique_points};
+    my $max_loops               = delete $opts{max_loops} || 10;
+    die "Unhandled options: " . join(" ", %opts) if %opts;
+
+    my $s = $net->{Strassen} || die "No Strassen object available in $net";
+
+    $s->init_for_iterator('refpoint');
+    my @islands;
+    my %global_seen;
+    my $flood_search_calls = 0;
+ ITERATE_OVER_STREETS: while() {
+	my $r = $s->next_for_iterator('refpoint');
+	my @c = @{ $r->[Strassen::COORDS] };
+	last if !@c;
+
+	for my $c (@c) {
+	    if (!exists $global_seen{$c}) {
+		warn "flood search for refpoint=$c\n" if $debug;
+		my $island = Strassen::Check::get_island($net, $c);
+		push @islands, $island;
+		while(my($k) = each %$island) {
+		    $global_seen{$k} = 1;
+		}
+		if ($debug) {
+		    if (!defined $number_of_unique_points) {
+			$number_of_unique_points = Strassen::Check::number_of_unique_points($s);
+		    }
+		    warn "... found " . scalar(keys %$island) . " point(s) of total $number_of_unique_points in island\n";
+		    warn "global_seen has now " . scalar(keys %global_seen) . " entries\n";
+		}
+		if (scalar(keys %$island) >= $number_of_unique_points/2) {
+		    warn "This is large enough, exiting loop.\n" if $debug;
+		    last ITERATE_OVER_STREETS;
+		}
+		$flood_search_calls++;
+		if ($flood_search_calls > $max_loops) {
+		    last ITERATE_OVER_STREETS;
+		}
+	    }
+	}
+    }
+
+    \@islands;
+}
+
+=head3 number_of_unique_points
+
+    my $number = Strassen::Check::number_of_unique_points($s)
+
+For a given L<Strassen> object I<$s> return the count of "unique" points.
+
+=cut
+
+sub number_of_unique_points {
+    my $s = shift;
+    my %unique_points;
+    $s->init_for_iterator('number_of_unique_points');
+    while() {
+	my $r = $s->next_for_iterator('number_of_unique_points');
+	my @c = @{ $r->[Strassen::COORDS] };
+	last if !@c;
+	for my $c (@c) {
+	    $unique_points{$c} = 1;
+	}
+    }
+    scalar keys %unique_points;
 }
 
 1;
