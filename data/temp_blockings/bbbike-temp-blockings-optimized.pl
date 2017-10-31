@@ -2962,6 +2962,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'until' => undef
        },
        {
+         'accept_multi_feature_distance' => 5500,
          'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
 #: tempex: ((min(good_friday,YYYY04 sa1)-YYYY1030) & (tu-su, holiday)) & T10-T19 vvv
 	2::temp 27090,-2253 27420,-2067 27492,-1880 27490,-1710 27425,-1601 27374,-1573

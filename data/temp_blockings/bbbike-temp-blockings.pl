@@ -2719,7 +2719,7 @@ EOF
        text  => 'K 7237; (L 40 Klein Kienitz-Rangsdorf); zw. Südringcenter Rangsdorf u. Klein Kienitz Straßenbauarbeiten Vollsperrung 22.08.2005-04.09.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 26583,-15677 26572,-15618 26612,-15094
+# REMOVED (wrong?) ---	2 26583,-15677 26572,-15618 26612,-15094
 	2 14327,-11767 15962,-10958
 EOF
      },
@@ -8361,6 +8361,7 @@ EOF
      },
      { from  => 1181340000, # 2007-06-09 00:00
        until => 1181512800, # 2007-06-11 00:00
+       accept_multi_feature_distance => 2200,
        text  => 'L 023 zw. KVK Seespitze Strausberg u. B168 (Prötzel-Tiefensee) und L 033 Gielsdorfer Chaussee OL Strausberg, zw. Badstr. u. KVK Seespitze; 18. Teamtriathlon Behinderungen 10.06.2007-10.06.2007 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -11693,7 +11694,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009124',
        data  => <<EOF,
-	2::inwork 58237,11268 58056,11318
+# REMOVED (wrong?) ---	2::inwork 58237,11268 58056,11318
 	2::inwork 33475,10842 32900,10962 31871,10926 30678,10923
 EOF
      },
@@ -16380,7 +16381,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2::inwork 45328,48225 45321,48142 45322,48104
-	2::inwork 45406,45979 45119,45958
+# REMOVED (wrong?) ---	2::inwork 45406,45979 45119,45958
 EOF
      },
      { from  => 1253965502, # 2009-09-26 13:45
@@ -19791,6 +19792,7 @@ EOF
        until => $isodate2epoch->("2017-08-07 02:00:00"),
        periodic => 1, # Internationales Berliner Bierfestival
        recurrences => [['yearly', days => 31, months => 7]],
+       accept_multi_feature_distance => 1300,
        text  => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung (Internationales Berliner Bierfestival), Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (4.8.2017 bis 6.8.2017)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -21261,6 +21263,7 @@ EOF
        until => undef,
        text  => 'Fähren F21 und F23: fahren nur ab 5. April bis zum 2. November, fahren nicht am Montag',
        recurring => 1,
+       accept_multi_feature_distance => 5500,
        type  => 'gesperrt',
        source_id => 'http://www.bvg.de/index.php/de/3777/name/Faehrlinie+F21.html', # und 23
        data  => <<EOF,
@@ -21733,6 +21736,7 @@ EOF
        recurrences => [# ['yearly', days => 8, months => 1], # XXX January 2015 is cancelled
                        # ['yearly', days => 1, months => 7], # XXX Juli 2015 findet zwar statt, aber geändertes Konzept
 	              ],
+       accept_multi_feature_distance => 1200,
        text  => 'Flughafen Tempelhof: die Nebeneingänge Columbiadamm und Peter-Strasser-Weg sind wegen einer Veranstaltung (Bread and Butter) geschlossen (8. bis 10. Juli 2014)',
        type  => 'gesperrt',
        source_id => 'http://www.gruen-berlin.de/parks-gaerten/tempelhofer-freiheit/?date=20140118',
@@ -23259,6 +23263,7 @@ EOF
      },
      { from  => $isodate2epoch->("2015-07-06 06:00:00"), # 1405025033, # 2014-07-10 22:43
        until => $isodate2epoch->("2015-10-18 19:00:00"), # 1408139790, # 1408312800, # 2014-08-18 00:00
+       accept_multi_feature_distance => 1200,
        text  => 'Konrad-Wolf-Str.: Bauarbeiten, zwischen Altenhofer Str. und Werneuchener Str. für Radfahrer komplett gesperrt (für Autofahrer in Richtung Südwesten aber nicht!), zwischen Gärtnerstr. und Schöneicher Str. Einbahnstraße, offen Richtung Südwesten, bis 18.10.2015',
        type  => 'handicap',
        source_id => 'IM_025547',
