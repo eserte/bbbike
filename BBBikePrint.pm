@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2003,2006,2014,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2003,2006,2014,2015,2017 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -918,7 +918,8 @@ sub show_legend {
     if ($geometry_height + 30 > $t->screenheight) {
 	$geometry_height = $t->screenheight - 30;
     }
-    $t->geometry(int($width+$left*2) . "x" . int($geometry_height));
+    my $scrollbar_width = 25;
+    $t->geometry(int($width+$left*2+$scrollbar_width) . "x" . int($geometry_height));
 
 }
 
