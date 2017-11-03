@@ -25980,15 +25980,12 @@ EOF
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober; laut Pressemitteilung bis Ende 2017
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
-#: last_checked: 2017-10-10 vvv
-#: next_check: 2017-10-31 vvv
+#: last_checked: 2017-11-03 vvv
 # REMOVED (weitgehend fertig) ---	q3::inwork 13384,8354 13217,8493
 # REMOVED	q3::inwork; 13217,8493 13262,8554
 # REMOVED	q3::inwork; 13262,8554 13301,8606 13314,8624
 # REMOVED	q4::inwork 13366,8694 13314,8624
-	q4::inwork 13217,8493 13262,8554
 	q3::inwork 13262,8554 13301,8606
-#: next_check ^^^
 #: last_checked ^^^
 EOF
      },
@@ -26143,7 +26140,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-11-02
+#: last_checked: 2017-11-03
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },
@@ -26580,8 +26577,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX ist die Qualität nach den Bauarbeiten etwas besser?
-#: last_checked: 2017-10-13 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2017-11-03 vvv
+#: check_frequency: 21d vvv
 	q4::inwork 13288,7653 13177,7644 13100,7626
 	q4::inwork 13177,7644 13188,7590
 #: check_frequency ^^^

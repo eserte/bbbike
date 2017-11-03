@@ -32,7 +32,7 @@ Danziger Str.	?::projected 12621,14313 12729,14227 12901,14093 12975,13990 13037
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2017-10-26
+#: last_checked: 2017-11-03
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -114,8 +114,8 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: source_id: 2147340970
 #: source_id: LMS-BR_r_LMS-BR_90638
 #: source_id: 2147341904
-#: last_checked: 2017-10-27 vvv
-#: check_frequency: 7d vvv
+#: last_checked: 2017-11-03 vvv
+#: check_frequency: 14d vvv
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected; 9865,10227 9948,10280 9873,10285
 #: check_frequency ^^^
@@ -430,7 +430,11 @@ Müggelbergdamm: Schutzstreifen	?::projected 25010,4807 25171,4757 25228,4745 252
 #: next_check: 2017-10-28 vvv
 #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/de/oepnv/bekanntmachung1.shtml (erster Abschnitt?) --- Radstreifen, außer an den Tram-Haltestellen: Radwege
 #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/boelschestr/Lageplan_Unterlage3_v15032017_gesiegelt.pdf
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.645164.php
 #: XXX Maßnahmen Fh.4 + Fh.5
+#: osm_watch: way id="283006412" version="10"
+#: osm_watch: way id="520100576" version="1"
+#: osm_watch: way id="9628154" version="22"
 Bölschestr.: Schutzstreifen	?::projected 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398
 Bölschestr.: Schutzstreifen	?::projected 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
 #: next_check ^^^
@@ -490,11 +494,11 @@ Wegedornstr.: Errichten von Radverkehrsanlagen	?::projected 19333,1154 19396,110
 #: next_check: 2018-06-01
 Grünauer Str./Am Falkenberg: Errichten von Radverkehrsanlagen	?::projected 19766,1796 19898,1704 20028,1673 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,1416 21127,1307 21169,1279 21278,1205 21389,1124 21497,1042
 #: XXX AT.1
-#: last_checked: 2017-10-08
+#: last_checked: 2017-11-03
 #: next_check: 2018-06-01
 Am Treptower Park: Errichten einer Radverkehrsanlage	?::projected; 14185,9509 14089,9610
 #: XXX AT.3 (siehe auch Alternativführungen via Heidelberger Str. bzw. Plesser Str.)
-#: last_checked: 2017-10-08
+#: last_checked: 2017-11-03
 #: next_check: 2018-06-01
 Wildenbruchstr./Karl-Kunger-Str.: Errichten einer Radverkehrsanlage	?::projected 13489,9199 13614,9333 13647,9304 13766,9200
 #: XXX Bsw.1
@@ -961,7 +965,7 @@ Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbr
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (AT.4; hier bis Karl-Kunger-Str. und vermutlich beidseitig)
 #: osm_watch: way id="110450333" version="9"
-#: last_checked: 2017-10-13
+#: last_checked: 2017-11-03
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird hier vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13849,9310
 # 
@@ -1501,7 +1505,7 @@ Friedelstr.: Asphaltierung	?::projected 12085,9778 12074,9689 12066,9558 12047,9
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="14"
-#: last_checked: 2017-10-13
+#: last_checked: 2017-11-03
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -1510,7 +1514,7 @@ Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 11831,8989 11880,8955 11998,8872 12063,8826 12156,8760 12330,8636
 # 
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2018-2022)
-#: last_checked: 2017-10-27
+#: last_checked: 2017-11-03
 #: next_check: 2018-09-01
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12753,8187 12714,8249 12689,8289 12639,8344 12598,8390 12582,8408 12562,8432 12540,8458 12500,8504 12330,8636
 # 
@@ -1552,16 +1556,7 @@ Hannah-Arendt-Str.: werden die Radspuren vielleicht noch verlängert?	? 8632,1191
 #: check_frequency: 360d
 Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbindung geben	?::projected 5255,17007 4988,17172
 # 
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012
-#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_14_1521_1636_online.pdf (Widmung)
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8026
-#: XXX Vorschlag: Freia-Eisner-Straße
-#: note: "Privatgelände"
-#: osm_watch: way id="491906864" version="2"
-#: last_checked: 2017-10-26
-#: check_frequency: 14d
-Planstraße C: neue asphaltierte Straße, Straßenname? Wann wird sie geöffnet?	?::inwork 12926,11224 12848,11093
+# REMOVED (-> strassen + gesperrt) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012 --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_14_1521_1636_online.pdf (Widmung) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8026 --- #: XXX Vorschlag: Freia-Eisner-Straße --- #: note: "Privatgelände" --- #: osm_watch: way id="491906864" version="2" --- #: last_checked: 2017-10-26 --- #: check_frequency: 14d --- Planstraße C: neue asphaltierte Straße, Straßenname? Wann wird sie geöffnet?	?::inwork 12926,11224 12848,11093
 # 
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_51%5B1%5D.pdf
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130604.0740.385616.html (Spatenstich)
@@ -1621,7 +1616,7 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: http://www.berliner-woche.de/neukoelln/verkehr/elsensteg-barrierefreiheit-nicht-in-sicht-stufen-an-der-fussgaengerbruecke-bleiben-d120113.html (keine Verbesserung beim Elsensteg)
 #: XXX zunächst Arbeiten der Wasserbetriebe (gibt es da schon Einschränungen?), ab Juni 2017 Straßenbauarbeiten
 #: osm_watch: way id="182693863" version="1"
-#: last_checked: 2017-10-10
+#: last_checked: 2017-11-03
 #: next_check: 2018-03-01
 Innstr.: hier wird ein Asphaltstreifen entstehen, vielleicht auch der Zugang zum Elsensteg erleichtert?	?::projected 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
 #: XXX ^^^
@@ -1630,7 +1625,7 @@ Innstr.: hier wird ein Asphaltstreifen entstehen, vielleicht auch der Zugang zum
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017)
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5520
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036892648488/892648488/00177969/69-Anlagen/02/0195Radwegebebauung.pdf
-#: last_checked: 2017-10-13
+#: last_checked: 2017-11-03
 #: check_frequency: 100d
 Weigandufer (und Pflügerstr.?): Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 13939,8228 13875,8282 13716,8410 13641,8470 13539,8552 13450,8625 13366,8694 13191,8838 13048,8956 12907,9073 12761,9190 12620,9293 12480,9394
 # 
@@ -1965,10 +1960,7 @@ B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-#: XXX NEW	Erkelenzdamm (Kreuzberg) in beiden Richtungen zwischen Böcklerstr. und Kohlfurter Straße (Berlin)  Gültig ab: 18.04.2017 12:21  Baustelle, Vollsperrung (Gesamtmaßnahme bis Ende 11/17)	2147341140
-#: XXX laut fritz bis 30.11.2017
-#: source_id: 2147341140
-Erkelenzdamm: prüfen, ob die Bauarbeiten zwischen Böcklerstr. und Kohlfurter Str. wieder aktive sind	? 10967,10092 11038,10247 11094,10261
+# REMOVED (man kommt durch) --- #: XXX NEW	Erkelenzdamm (Kreuzberg) in beiden Richtungen zwischen Böcklerstr. und Kohlfurter Straße (Berlin)  Gültig ab: 18.04.2017 12:21  Baustelle, Vollsperrung (Gesamtmaßnahme bis Ende 11/17)	2147341140 --- #: XXX laut fritz bis 30.11.2017 --- #: source_id: 2147341140 --- Erkelenzdamm: prüfen, ob die Bauarbeiten zwischen Böcklerstr. und Kohlfurter Str. wieder aktive sind	? 10967,10092 11038,10247 11094,10261
 # 
 #: XXX Verbundsteinpflaster, einige Fußgänger, vermutlich beleuchtet; wie kommt man auf die Ella-Kay-Str.? Wie gut kann man die Greifswalder überqueren?
 Greifswalder Str. - Ella-Kay-Str.: Streckenführung genauer anschauen	? 12371,14615 12229,14706 12221,14738 12186,14762 12085,14828 12089,14891
