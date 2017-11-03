@@ -37,7 +37,7 @@ Danziger Str.	?::projected 12621,14313 12729,14227 12901,14093 12975,13990 13037
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
 #: XXX Baumaßnahme 5.11 (Realisierung nach 2011)
-#: osm_watch: way id="4609212"  version="11"
+#: osm_watch: way id="4609212"  version="12"
 #: osm_watch: way id="25113713" version="13"
 #: osm_watch: way id="4752742"  version="10"
 #: osm_watch: way id="4752743"  version="12"
@@ -1699,7 +1699,7 @@ Kletterrosenweg	?::projected 21382,149 21354,289
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: XXX siehe auch gesperrt-orig-Eintrag zur Oberwallstr.
 #: XXX_osm: fehlt bei osm als "planned"/"proposed"
-#: last_checked: 2017-10-11
+#: last_checked: 2017-11-01
 Falkoniergasse: Genaue Lage? Qualität?	?::inwork 9939,12174 9909,12261
 # 
 # REMOVED --- #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060109.1050.33932.html --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.95087.php (Beginn im Jahr 2014) --- #: osm_watch: way id="148035923" version="6" --- #: source_id: 2147339913 --- #: source_id: LMS-BR_r_LMS-BR_82723 --- #: last_checked: 2017-08-14 (Mapillary) --- #: check_frequency: 14d --- Blanckertzweg: Radfahrstreifen in Planung (ebenso östlicher Teil der Hildburghauser Str.)	?::inwork 4795,1362 4702,1298 4631,1249 4542,1188
@@ -1965,6 +1965,11 @@ B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX NEW	Erkelenzdamm (Kreuzberg) in beiden Richtungen zwischen Böcklerstr. und Kohlfurter Straße (Berlin)  Gültig ab: 18.04.2017 12:21  Baustelle, Vollsperrung (Gesamtmaßnahme bis Ende 11/17)	2147341140
+#: XXX laut fritz bis 30.11.2017
+#: source_id: 2147341140
+Erkelenzdamm: prüfen, ob die Bauarbeiten zwischen Böcklerstr. und Kohlfurter Str. wieder aktive sind	? 10967,10092 11038,10247 11094,10261
+# 
 #: XXX Verbundsteinpflaster, einige Fußgänger, vermutlich beleuchtet; wie kommt man auf die Ella-Kay-Str.? Wie gut kann man die Greifswalder überqueren?
 Greifswalder Str. - Ella-Kay-Str.: Streckenführung genauer anschauen	? 12371,14615 12229,14706 12221,14738 12186,14762 12085,14828 12089,14891
 # 
@@ -1977,6 +1982,7 @@ Margaretenaue/Pasewalker: Abbiegesituation für Radfahrer?	? 12015,20338 12000,20
 # 
 #: osm_watch: way id="48846369" version="10"
 #: source_id: 2147341703
+#: source_id: LMS-BR_r_LMS-BR_106115_LMS-BR_72
 #: last_checked: 2017-10-14
 #: next_check: 2017-11-10
 Kaiser-Wilhelm-Str.: wird es nach den Bauarbeiten Radspuren oder Radwege geben?	?::inwork; 6993,3765 6954,3703 6930,3666 6780,3497
@@ -2001,17 +2007,7 @@ Poststadion: gibt es hier interessante Wegverbindungen für Radfahrer? wie sieht 
 # REMOVED (kaum Einschränkungen, nur im Kreuzungsbereich) --- #: XXX Großbeerenstraße (Kreuzberg) in Höhe Stresemannstraße (Berlin)  Gültig ab: 30.08.2017 07:00  Vollsperrung, Tiefbauarbeiten (bis Ende 10/17)	2147341754	 ---- #: XXX laut fritz bis voraussichtlich 30.10.2017 --- Großbeerenstr.: Bauarbeiten, Auswirkungen auf Radfahrer?	?::inwork 9192,10528 9249,10562
 # REMOVED (keine Änderung) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/strassenbauliste-stand-2017-08-18.pdf --- #: source_id: 2147341732 --- #: next_check: 2017-09-16 --- Alarichstr./Rathausstr.: wie sieht die Radwegsituation nach den Bauarbeiten aus?	?::inwork 8642,5422 8667,5372 8674,5357 8707,5289 8750,5173 8784,5095
 # REMOVED (hier ist nichts passiert) --- Alarichstr./Rathausstr.: wie sieht die Radwegsituation nach den Bauarbeiten aus?	?::inwork 8784,5095 8813,5004 8827,4874 8848,4683
-#: XXX laut vmz bis Mitte 11/17
-#: XXX laut fritz: Zwischen Französische Straße und Jägerstraße gesperrt. (Bis 14.11.2017 14 Uhr)
-#: XXX bei der ersten Prüfung: nicht relevant, nur einige Behinderungen in der querenden Jägerstr.
-#: XXX bei der zweiten Prüfung: man kommt gut vorbei. Jägerstr. werde ich eintragen.
-#: XXX bei der dritten Prüfung (2017-09-22): Richtung Norden ist tatsächlich gesperrt, aber man kann vermutlich vorbeikommen
-#: source_id: 2147341587
-#: source_id: LMS-BR_r_LMS-BR_103310_LMS-BR_72
-#: last_checked: 2017-10-09
-#: next_check: 2017-10-26
-Friedrichstr. Höhe Jägerstr.: Bauarbeiten, auch für Radfahrer relevant?	?::inwork; 9405,11903 9393,12000 9384,12103
-# 
+# REMOVED --- #: XXX laut vmz bis Mitte 11/17 --- #: XXX laut fritz: Zwischen Französische Straße und Jägerstraße gesperrt. (Bis 14.11.2017 14 Uhr) --- #: XXX bei der ersten Prüfung: nicht relevant, nur einige Behinderungen in der querenden Jägerstr. --- #: XXX bei der zweiten Prüfung: man kommt gut vorbei. Jägerstr. werde ich eintragen. --- #: XXX bei der dritten Prüfung (2017-09-22): Richtung Norden ist tatsächlich gesperrt, aber man kann vermutlich vorbeikommen --- #: source_id: 2147341587 --- #: source_id: LMS-BR_r_LMS-BR_103310_LMS-BR_72 --- #: last_checked: 2017-10-09 --- #: next_check: 2017-10-26 --- Friedrichstr. Höhe Jägerstr.: Bauarbeiten, auch für Radfahrer relevant?	?::inwork; 9405,11903 9393,12000 9384,12103
 # REMOVED (Einbahnstraße Richtung Norden ist Richtung; die meisten Radfahrer fahren auf dem relativ breiten Gehweg und umgehen somit auch das Kopfsteinpflaster) --- #: XXX NEW	Tegeler Straße (Wedding) Richtung Fennstraße zwischen Lynarstraße und Fennbrücke (Berlin)  Gültig ab: 16.07.2017 23:00  Bauarbeiten, Fahrtrichtung gesperrt (bis Mitte 10/17)	LMS-BR_r_LMS-BR_103249_LMS-BR_72 --- #: XXX NEW	Tegeler Str. (Wedding) Richtung Luxemburger Str. zwischen Fennstr. und Lynarstr. (Berlin)  Gültig ab: 24.07.2017 06:00  Baustelle, Fahrtrichtung gesperrt (bis Mitte 10/17)	2147341570 --- #: XXX laut fritz: Bis 13.10.2017 --- Tegeler Str.: Bauarbeiten, auch für Radfahrer relevant?	?::inwork 7263,14873 7458,14643
 # 
 Heerstr.: Nebenstraße existiert, dürfen Radfahrer hier fahren?	? -3820,11721 -4033,11786 -4078,11800 -4279,11862 -4311,11872 -4438,11910 -4503,11930
@@ -2268,13 +2264,13 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7478
 #: XXX "noch 2016"
 #: osm_watch: note 824350 3
-#: last_checked: 2017-10-06
+#: last_checked: 2017-11-01
 #: check_frequency: 14d
 #: priority: #C
 Sebastian/Luckauer: Zebrastreifen in Bau	?::inwork 11113,10943 11109,10935
 # 
 #: osm_watch: note 851907 3
-#: last_checked: 2017-10-16
+#: last_checked: 2017-11-01
 #: check_frequency: 14d
 #: priority: #C
 Oranienplatz: Zebrastreifen in Bau	?::inwork 11233,10672 11258,10682 11262,10655

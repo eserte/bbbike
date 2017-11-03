@@ -17183,12 +17183,12 @@ EOF
 	3 8374,11479 8389,11378 8427,11365
 EOF
      },
-     { from  => $isodate2epoch->("2016-12-01 00:00:00"), # 1354809600, # 2012-12-06 17:00, # 1322780400, # PERIODISCH! # früher: 1259959719, # 2009-12-04 21:48
-       until => $isodate2epoch->("2016-12-04 23:59:59"), # 1355079600, # 2012-12-09 20:00, # 1323039600, # PERIODISCH! # früher: 1260140400, # 2009-12-07 00:00
+     { from  => $isodate2epoch->("2017-12-07 00:00:00"), # 1354809600, # 2012-12-06 17:00, # 1322780400, # PERIODISCH! # früher: 1259959719, # 2009-12-04 21:48
+       until => $isodate2epoch->("2017-12-10 23:59:59"), # 1355079600, # 2012-12-09 20:00, # 1323039600, # PERIODISCH! # früher: 1260140400, # 2009-12-07 00:00
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 12]],
        source_id => 'http://www.weihnachtsmarkt-deutschland.de/weihnachtsmarkt-berlin-alt-rixdorf.html',
-       text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (02.12.2016 - 04.12.2016)',
+       text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (08.12.2017 - 10.12.2017)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: tempex: before(2nd_advent,fr) T17:00 - 2nd_advent T20:00 vvv
@@ -26143,7 +26143,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-10-26
+#: last_checked: 2017-11-02
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },
@@ -26659,6 +26659,8 @@ EOF
        text  => 'Gäßnerweg: Fahrbahn zwischen Albrechtstr. und Bosestr. sowie Podewilsstr. und Burchardstr. gesperrt, bis 31.12.2017',
        type  => 'handicap',
        data  => <<EOF,
+#: source_id: LMS-BR_r_LMS-BR_113125_LMS-BR_72
+#: source_id: LMS-BR_r_LMS-BR_113126_LMS-BR_72
 	q4::inwork 8541,6191 8546,6307
 	q4::inwork 8553,6665 8551,6552
 EOF

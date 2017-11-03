@@ -2397,7 +2397,36 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'type' => 'gesperrt',
          'until' => 1514329199
        },
-       undef,
+       {
+         'data' => '#: tempex: before(2nd_advent,fr) T17:00 - 2nd_advent T20:00 vvv
+	2::xmas 13416,7712 13426,7674
+	2::xmas 13416,7712 13378,7695 13288,7653
+	2::xmas 13426,7674 13400,7642 13303,7622
+	2::xmas 12969,7610 13100,7626 13177,7644
+	2::xmas 13188,7590 13177,7644
+	2::xmas 13188,7590 13303,7622
+	2::xmas 13288,7653 13303,7622
+	2::xmas 13288,7653 13177,7644
+	2::xmas 13288,7653 13278,7673 13245,7742
+#: tempex ^^^
+',
+         'from' => 1512601200,
+         'id' => 1998,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-deutschland.de/weihnachtsmarkt-berlin-alt-rixdorf.html',
+         'text' => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (08.12.2017 - 10.12.2017)',
+         'type' => 'gesperrt',
+         'until' => 1512946799
+       },
        undef,
        undef,
        undef,
@@ -2505,7 +2534,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Oktober von 7.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im November von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -4034,7 +4063,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-10-26
+#: last_checked: 2017-11-02
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
          'from' => undef,
@@ -4159,16 +4188,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::inwork -586,22064 -735,22103 -786,22110 -973,22117 -827,22039 -629,21975
-',
-         'from' => 1504389600,
-         'id' => 2895,
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.620100.php',
-         'text' => 'Im Erpelgrund: Bauarbeiten zwischen Dambockstr. und Reiherallee, Fahrbahn gesperrt, vom 04.09.2017 bis 31.10.2017',
-         'type' => 'gesperrt',
-         'until' => 1509490800
-       },
+       undef,
        undef,
        {
          'data' => '#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?bvgid=BVG131679 ("gültig bis: auf Weiteres")
@@ -4255,18 +4275,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: 2147341831
-#: source_id: LMS-BR_r_LMS-BR_109608_LMS-BR_72
-	q4::inwork -1869,19974 -1806,19806 -1794,19681 -1788,19663
-',
-         'from' => 1505599200,
-         'id' => 2907,
-         'source_id' => 'http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.629207.php',
-         'text' => 'Sandhauser Str./Falkenplatz: Bauarbeiten, Sperrung der Fahrbahn zwischen Sperberstr. und Falkenhorststr., vom 18.09.2017 bis 31.10.2017',
-         'type' => 'handicap',
-         'until' => 1509490800
-       },
+       undef,
        {
          'data' => '	q4::inwork; -2959,17507 -2517,17431
 ',
@@ -4356,7 +4365,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1513508400
        },
        {
-         'data' => '	q4::inwork 8541,6191 8546,6307
+         'data' => '#: source_id: LMS-BR_r_LMS-BR_113125_LMS-BR_72
+#: source_id: LMS-BR_r_LMS-BR_113126_LMS-BR_72
+	q4::inwork 8541,6191 8546,6307
 	q4::inwork 8553,6665 8551,6552
 ',
          'from' => 1508176419,
