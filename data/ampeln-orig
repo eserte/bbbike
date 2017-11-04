@@ -1271,7 +1271,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3788,16621
 	X 3753,16638
 	X 3676,16497
-	X 2963,14752
+	X 2956,14752
 	X 2905,14754
 	X 3395,13605
 	X 3739,13563
@@ -1504,8 +1504,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -2959,17507
 	X -302,15546
 	X 449,15654
-	X 1238,15705
-	X 3033,15694
+	X 1232,15717
+#: note: Anforderungsampel
+	F 1406,15719
+	X 3028,15696
 	X 4102,18298
 	X 4009,18322
 	X 4704,17101
@@ -2813,7 +2815,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 8853,13539
 #: next_check_id: HEERSTR-2016
 #: XXX Baustellenampel; eigentlich sind hier zwei Ampeln: einmal für die Straße runter zur Havel, und dann etwas weiter für die Radfahrer zum Wechseln auf die andere Straßenseite
-#: last_checked: 2017-07-15
+#: last_checked: 2017-11-04
 #: check_frequency: 60d
 	X::inwork -3069,11487
 #: note: Zufahrt zu Obi

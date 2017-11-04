@@ -73,7 +73,7 @@ Waidmannsluster Damm	1 2146,20887 1843,21440 1870,21491 2188,20910
 Flughafen Tegel	1 2809,16143 2757,16194 2696,16271 2720,16353 2800,16368 2839,16337 2853,16293 2809,16143
 Jakob-Kaiser-Platz	1 2795,14161 2811,14196 2831,14219 2857,14222 2896,14187 2892,14149 2860,14118 2825,14128 2795,14161
 Kurt-Schumacher-Damm (Süd)	1 2831,14219 2803,14288 2793,14374 2905,14754
-Kurt-Schumacher-Damm (Süd)	1 2963,14752 2847,14356 2857,14222
+Kurt-Schumacher-Damm (Süd)	1 2956,14752 2846,14373 2857,14222
 Kurt-Schumacher-Damm (Nord)	1 3564,16294 3643,16437 3676,16497 3753,16638 3853,16825 3940,16861
 Kurt-Schumacher-Damm (Nord)	1 3940,16861 3788,16621 3711,16481 3585,16252
 Ferdinand-Friedensburg-Platz	1 -914,14602 -1357,14533 -1392,14527 -1484,14513 -1369,14644 -1119,14659 -925,14631
@@ -734,7 +734,7 @@ Akazienweg	1s -3112,18000 -3136,17976 -3155,17925
 Buchenweg	1s -2968,18038 -3028,18027 -3083,18010
 Eschenweg	1s -3306,17989 -3285,17968 -3224,17943
 Lindenweg	1s -3111,18105 -3076,18053 -3038,18063
-Küsterstr.	1 -624,15494 -593,15300 -569,15167
+Küsterstr.	1 -622,15502 -593,15300 -569,15167
 Straßburger Str.	1 11270,14131 11239,14123 11236,14153
 Rykestr./Knaackstr.	1 11331,14350 11374,14363 11380,14316
 Waldowallee	1 18916,9468 18867,9464
@@ -832,6 +832,9 @@ Waldkraiburger Str.: Betriebsgelände	2 12283,4971 12468,5000
 Dankratweg - Am Waldberg: Betriebsgelände	2 20460,9593 20408,9604 20338,9718 20335,9866
 (Vorfahrt S-Bhf. Tegel)	1s 2352,20224 2371,20225 2384,20196 2398,20166 2381,20157
 (Guerickestr. - Einsteinufer)	1s 4658,12450 4618,12340 4593,12322
+Wilhelmstr. (Wilhelmstadt)	1::igndisp -4406,12468 -4300,12571
+(Messedamm - S-Bhf. Westkreuz)	1 2117,10495 2090,10576 2033,10613
+Halenseestr.	2::igndisp 2086,10552 1961,10646 1928,10728
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -2113,8 +2116,8 @@ Mittelstreifen	3nocross::ignrte -3803,13464 -3789,13519 -3764,13613
 Klosterstr. -> Ziegelhof, Grünanlage: Mittelstreifen	3::igndisp -3764,13613 -3789,13519 -3689,13513
 Ziegelhof, Grünanlage -> Klosterstr.: Mittelstreifen	3::igndisp -3689,13513 -3789,13519 -3803,13464
 Mittelstreifen	3nocross::ignrte -3625,13889 -3678,13801 -3690,13776 -3716,13724
-Klosterstr. -> Borkumer Str.: Mittelstreifen	3::igndisp -3690,13776 -3678,13801 -3849,13848
-Borkumer Str. -> Klosterstr.: Mittelstreifen	3::igndisp -3849,13848 -3678,13801 -3625,13889
+Klosterstr. -> Borkumer Str.: Mittelstreifen	3::igndisp -3690,13776 -3678,13801 -3851,13849
+Borkumer Str. -> Klosterstr.: Mittelstreifen	3::igndisp -3851,13849 -3678,13801 -3625,13889
 Klosterstr. -> Sedanstr.: Mittelstreifen	3::igndisp -3678,13801 -3690,13776 -3614,13724
 Sedanstr. -> Klosterstr.: Mittelstreifen	3::igndisp -3614,13724 -3690,13776 -3716,13724
 Mittelstreifen	3nocross::ignrte -4239,12626 -4180,12690 -4119,12763 -4063,12842
@@ -2222,7 +2225,7 @@ Tor	BNP:3:-8:trailer=10 20829,5418
 Schranke	BNP:3:-7:trailer=10 20849,5266
 tragen (20 Stufen)	0:30:-90 22624,13901
 tragen (8 weite Stufen) bzw. Naturrampe benutzen	0:15:-175 -6004,15050
-tragen	0:30:-162 -3138,14171
+tragen (25 Stufen)	0:30:-113 -3144,14170
 tragen (5 Stufen)	0:10:-132 14832,8199
 tragen (Schienen der stillgelegten Heidekrautbahn)	0:20:-39 7316,20623
 tragen	0:15:-58 47027,49988

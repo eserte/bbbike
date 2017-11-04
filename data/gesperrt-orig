@@ -92,7 +92,7 @@ Waidmannsluster Damm	1 2146,20887 1843,21440 1870,21491 2188,20910
 Flughafen Tegel	1 2809,16143 2757,16194 2696,16271 2720,16353 2800,16368 2839,16337 2853,16293 2809,16143
 Jakob-Kaiser-Platz	1 2795,14161 2811,14196 2831,14219 2857,14222 2896,14187 2892,14149 2860,14118 2825,14128 2795,14161
 Kurt-Schumacher-Damm (Süd)	1 2831,14219 2803,14288 2793,14374 2905,14754
-Kurt-Schumacher-Damm (Süd)	1 2963,14752 2847,14356 2857,14222
+Kurt-Schumacher-Damm (Süd)	1 2956,14752 2846,14373 2857,14222
 Kurt-Schumacher-Damm (Nord)	1 3564,16294 3643,16437 3676,16497 3753,16638 3853,16825 3940,16861
 Kurt-Schumacher-Damm (Nord)	1 3940,16861 3788,16621 3711,16481 3585,16252
 Ferdinand-Friedensburg-Platz	1 -914,14602 -1357,14533 -1392,14527 -1484,14513 -1369,14644 -1119,14659 -925,14631
@@ -1040,7 +1040,7 @@ Eschenweg	1s:q3 -3306,17989 -3285,17968 -3224,17943
 Lindenweg	1s:q3 -3111,18105 -3076,18053 -3038,18063
 #: by: Martina (mascha...):
 #: corrected_by: srt (auch für Radfahrer gültig)
-Küsterstr.	1 -624,15494 -593,15300 -569,15167
+Küsterstr.	1 -622,15502 -593,15300 -569,15167
 Straßburger Str.	1 11270,14131 11239,14123 11236,14153
 Rykestr./Knaackstr.	1 11331,14350 11374,14363 11380,14316
 #XXX --- hmmm kann doch keine Einbahnstraßenregelung hier erkennen --- Waldowallee	1 18878,9517 18901,9499 18916,9468
@@ -1171,6 +1171,10 @@ Waldkraiburger Str.: Betriebsgelände	2 12283,4971 12468,5000
 Dankratweg - Am Waldberg: Betriebsgelände	2 20460,9593 20408,9604 20338,9718 20335,9866
 (Vorfahrt S-Bhf. Tegel)	1s:q3 2352,20224 2371,20225 2384,20196 2398,20166 2381,20157
 (Guerickestr. - Einsteinufer)	1s:q3 4658,12450 4618,12340 4593,12322
+Wilhelmstr. (Wilhelmstadt)	1::igndisp -4406,12468 -4300,12571
+(Messedamm - S-Bhf. Westkreuz)	1 2117,10495 2090,10576 2033,10613
+#: note: gesperrt Richtung Norden wegen Benutzungspflicht
+Halenseestr.	2::igndisp 2086,10552 1961,10646 1928,10728
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -1441,7 +1445,7 @@ Ritterstr.	1 -3369,14532 -3316,14504
 Neue Bahnhofstr.	1s:q3 14908,11231 14918,11249
 #: XXX evtl. ist die Einbahnstraßenregelung temporär
 #: osm_watch: way id="4708164" version="15"
-#: last_checked: 2017-10-14
+#: last_checked: 2017-11-04
 #: check_frequency: 90d
 Soorstr.	1s:q3 1861,11284 1884,11126 1865,11082
 #
@@ -1854,8 +1858,7 @@ Tor	BNP:3::trailer=10 20829,5418
 Schranke	BNP:3::trailer=10 20849,5266
 tragen (20 Stufen)	0:30 22624,13901
 tragen (8 weite Stufen) bzw. Naturrampe benutzen	0:15 -6004,15050
-#: XXX wie viele Stufen?
-tragen	0:30 -3138,14171
+tragen (25 Stufen)	0:30 -3144,14170
 #: note: es existiert auch eine enge und steile Rampe, nur zum Schieben geeignet
 tragen (5 Stufen)	0:10 14832,8199
 tragen (Schienen der stillgelegten Heidekrautbahn)	0:20 7316,20623
@@ -3034,7 +3037,7 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
 #: osm_watch: way id="441442656" version="1"
-#: last_checked: 2017-10-08
+#: last_checked: 2017-11-04
 #: check_frequency: 14d
 Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,14449 7561,14458 7426,14539 7368,14573
 # 
@@ -3145,7 +3148,7 @@ Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::in
 # REMOVED --- #: XXX Wie wird die Qualität danach sein? Wird man zum Hiltrud-Dudek-Weg durchfahren können? Wird die Straße verkehrsberuhigt sein? --- #: osm_watch: way id="151742436" version="5" --- #: XXX ad osm_watch: id referenziert die Jeanette-Wolff-Str., nur ein "proxy" für den neu zu bauenden Weg --- #: last_checked: 2015-04-10 --- #: check_frequency: 100d --- Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17647,-386 17654,-397
 # 
 #: next_check_id: EUROPACITY-2015 vvv
-#: last_checked: 2017-09-04 vvv
+#: last_checked: 2017-11-04 vvv
 #: osm_watch: way id="237704729" version="8"
 #: check_frequency: 45d
 Lydia-Rabinowitsch-Str.: noch gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924
@@ -3163,7 +3166,7 @@ Clara-von-Simson-Str.: noch gesperrt	2 7652,14257 7757,14318 7802,14250 7697,141
 #: by: Stefan Klinkusch: "gesperrt" vvv
 #: source_id: INKO_118000 vvv
 #: osm_watch: way id="25115001" version="8" vvv
-#: last_checked: 2017-07-15 vvv
+#: last_checked: 2017-11-04 vvv
 #: check_frequency: 60d vvv
 # REMOVED (doch benutzbar) --- (Baustraße an der Freybrücke)	2::inwork -3075,11510 -3197,11554
 # REMOVED (vermutlich nun benutzbar?) --- (Treppe an der Freybrücke)	2::inwork -3181,11496 -3177,11507 -3173,11520
@@ -3210,7 +3213,7 @@ Kirchdorfer Str.: Straße fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 # 
 #: by: http://www.dafmap.de/d/berlin.html?center=52.497318+13.462016&zoom=17#
-#: last_checked: 2017-10-08
+#: last_checked: 2017-11-04
 #: check_frequency: 120d
 am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14463,10212
 # 
@@ -3279,7 +3282,7 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 #: XXX geplante Fertigstellung (als Autostraße) im Dezember 2013
 #: XXX wrote Mail about current status (2013-11-05), no response
 # REMOVED --- osm_watch: way id="183406331" version="3"
-#: last_checked: 2017-10-08
+#: last_checked: 2017-11-04
 #: check_frequency: 120d
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
@@ -3321,7 +3324,7 @@ Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,2
 # 
 #: note: Baugelände
 #: osm_watch: way id="33036326" version="6"
-#: last_checked: 2017-09-25
+#: last_checked: 2017-11-04
 #: check_frequency: 180d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 

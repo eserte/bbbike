@@ -4028,7 +4028,23 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: (alte Meldung) laut fritz bis 21.10.2017 08:00 Uhr, laut VMZ bis Anfang November 2017
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.595041.php
+#: by: http://werbegemeinschaft-friedrichshagen.de/wp-content/uploads/2017/05/2017-05_Boelschestr_Anwohnerflyer_web.pdf
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.641756.php
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.643825.php
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.645164.php
+#: source_id: LMS-BR_r_LMS-BR_97860
+# REMOVED ---	q4::inwork; 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
+	q4::inwork; 25539,5237 25524,5011 25519,4830
+',
+         'from' => 1509836400,
+         'id' => 2867,
+         'text' => 'Bölschestr.: Bauarbeiten, zwischen Aßmannstr. und Müggelseedamm Richtung Süden gesperrt, ab 06. November 2017',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        {
@@ -4360,13 +4376,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1514761200
        },
        {
-         'data' => '#: XXX wo genau ist die Sperrung?
-	2::inwork 5306,15387 5134,15565 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415
+         'data' => '#: last_checked: 2017-11-04
+	q3::inwork 5306,15387 5134,15565
 ',
          'from' => undef,
          'id' => 2918,
          'source_id' => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.643712.php',
-         'text' => 'Uferweg Plötzensee: wegen Unterspülung gesperrt, genaue Stelle der Sperrung ist unbekannt',
+         'text' => 'Uferweg Plötzensee: wegen Unterspülung gesperrt, Umfahrung über enge Pfade möglich',
          'type' => 'gesperrt',
          'until' => undef
        }

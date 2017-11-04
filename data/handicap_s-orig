@@ -21,10 +21,10 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualit‰t danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2017-11-03
+#: last_checked: 2017-11-04
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
-#: last_checked: 2017-11-03
+#: last_checked: 2017-11-04
 Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 #: last_checked: 2017-10-25
@@ -1084,7 +1084,7 @@ Begasstr. - Riemenschneiderweg: teilweise mit Fuﬂg‰ngern zu rechnen	q2 6513,7005
 Begasstr. - Riemenschneiderweg: teilweise mit Fuﬂg‰ngern zu rechnen, kurze Rampe	q2 6650,7017 6770,7027
 Viktoriapark: Fuﬂg‰nger, kurze Rampe, Pf‰hle	q1 5013,6003 4981,5939 4954,5888
 (Gaudystr. - Mauerpark): Fuﬂg‰nger	q1 10456,15561 10234,15490 10188,15474
-(Kurt-Schumacher-Damm - Wasserturm Jungfernheide): Fuﬂg‰nger	q1 2934,14852 2900,14891 2840,14982 2685,15167 2707,15205 2695,15258 2632,15295
+(Kurt-Schumacher-Damm - Wasserturm Jungfernheide): Fuﬂg‰nger	q1 2905,14754 2923,14853 2900,14891 2840,14982 2685,15167 2707,15205 2695,15258 2632,15295
 (Jungfernheide): Fuﬂg‰nger	q1 2632,15295 2431,15290 2364,15321 2349,15380 2027,15380 1925,15426 1563,15294 1374,15314
 (Jungfernheide): Fuﬂg‰nger	q1 1416,15190 1459,15196 1498,15196 1535,15111 1735,15071 2039,15083 2053,15036 2376,15036 2683,14878 2784,14826 2900,14891
 (Jungfernheide, ˆstlicher Weg): einige Fuﬂg‰nger	q1 2683,14878 2768,14923 2840,14982 2889,15033 2929,15138 2933,15270 2926,15381 2902,15444 2861,15506
@@ -1246,7 +1246,7 @@ Oleanderstr.: Fuﬂg‰nger, Bordsteine	q2 14271,14024 14298,14015
 #: by: Sylke Sallmon:
 Pankgrafenstr. (Pankow): Fuﬂg‰nger, ggfs. schieben	q2 10470,18402 10502,18338
 #: by: Susanne Grittner (sort-of) vvv
-Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 3585,16252 3587,16219 3546,16143 3518,16102 3490,16083 3358,15794 3299,15668 3282,15632 3290,15604 3328,15595 3335,15617 3316,15641 3301,15631 3280,15543 3242,15523 3221,15498 3162,15314 3045,15044 2963,14752
+Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 3585,16252 3587,16219 3546,16143 3518,16102 3490,16083 3358,15794 3299,15668 3282,15632 3290,15604 3328,15595 3335,15617 3316,15641 3301,15631 3280,15543 3242,15523 3221,15498 3162,15314 3045,15044 2956,14752
 Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 2905,14754 2934,14852
 # REMOVED (hier breit genug) --- Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 2934,14852 3000,15048 3106,15384 3105,15487
 Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 3105,15487 3140,15503 3160,15603 3183,15599 3249,15654 3310,15790
@@ -1845,10 +1845,11 @@ Havelbr¸cke: Fuﬂg‰nger	q2 -3371,13987 -3437,14029 -3445,14033
 (Weg am M¸hlengraben): Fuﬂg‰nger	q1- -3306,14035 -3370,14115
 #: note: kein eigentliches Verbot, nur ein Radfahrpfeil
 (Weg an der Havel): Fuﬂg‰nger; Radfahrer sollten den Weg am M¸hlengraben nehmen	q3 -3300,14039 -3187,14116
-Sternbergpromenade: Fuﬂg‰nger	q1 -3187,14116 -3146,14145 -3090,14198 -3059,14230 -3042,14255 -3019,14286 -2923,14465 -2918,14496
+Sternbergpromenade: Fuﬂg‰nger	q1 -3187,14116 -3153,14141 -3090,14198 -3059,14230 -3042,14255 -3019,14286 -2939,14433 -2923,14465 -2918,14496
 #: XXX_prog BS am Lindenufer, ansonsten q1
 (Lindenufer - Sternbergpromenade): Fuﬂg‰nger, Bordstein	q2 -3091,14220 -3042,14255
 (Wasserstr. - Sternbergpromenade): Fuﬂg‰nger	q1 -3054,14305 -3019,14286
+(Hertefeldstr. - Sternbergpromenade): Fuﬂg‰nger	q1 -2964,14478 -2939,14433
 #: XXX_prog BS zum Glacisweg
 (Glacisweg - Ramin-Park): eng, Fuﬂg‰nger	q2 -3887,14405 -3855,14399 -3841,14436
 Reckeweg: eng	q3 -7109,15286 -7133,15287
@@ -3114,7 +3115,7 @@ Br¸derstr. (Wilhelmstadt): Fuﬂg‰nger	q1 -4008,12916 -3967,12891
 Weiﬂenburger Str.: Fuﬂg‰nger	q1 -3984,12812 -4063,12842
 #: XXX_prog BS (ˆstliche Seite) (ansonsten q1)
 Sprengelstr. (Wilhelmstadt): Fuﬂg‰nger, Bordstein	q2 -4026,12720 -4119,12763
-J‰gerstr. (Wilhelmstadt): Fuﬂg‰nger	q3 -3752,12566 -3744,12680
+J‰gerstr. (Wilhelmstadt): Fuﬂg‰nger, keine offizielle Freigabe f¸r Radfahrer	q3 -3752,12566 -3744,12680
 (Wachheimer Weg - Gˆtelstr.): Fuﬂg‰nger	q2 -3437,12258 -3350,12260 -3349,12232
 #: XXX_prog BS (Lindenstr.; beim ‹berqueren nach links sogar 3x) (ansonsten q2)
 (Neuenburger Str. - Lindenstr.): Fuﬂg‰nger, Bordstein	q3 9853,10543 9848,10526 9795,10512
