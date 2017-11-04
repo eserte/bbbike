@@ -5519,6 +5519,8 @@ speicherplatzsparender.",
 	 ['publicconfig','!',undef, nogui => 1,
 	  var => \&_set_public],
 	 ['configfile','=s',undef, nogui => 1], # used only in pre_check_arguments
+	 ['obsolete','!',undef, nogui => 1,
+	  var => \$use_obsolete],
 	 ['v','!',0,	alias => [qw(verbose)],
 	  label => M"Verbose", var => \$verbose,
 	  longhelp => M"Die Variable \$verbose kann manuell auf 2 oder höher gesetzt werden, um die Anwendung wortreicher zu machen"],
@@ -19804,7 +19806,11 @@ sub plugin_menu {
     }
 }
 
+# Superseded by the Layer Editor. If you really need this, then start
+# bbbike with -obsolete
 sub menu_entry_up_down {
+    return unless $use_obsolete;
+
     my($menu, $tag_group) = @_;
     my(@tags) = @$tag_group;
     $menu->separator;

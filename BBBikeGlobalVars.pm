@@ -25,7 +25,7 @@ use vars
      $coords_ref $realcoords_ref $search_route_points_ref @realcoords
      %temp_blockings_on_route
      $VERSION $tmpdir %tmpfiles $progname
-     $os $os_bsd $use_clipboard $verbose $advanced $devel_host $public_test
+     $os $os_bsd $use_clipboard $verbose $advanced $devel_host $use_obsolete $public_test
      $datadir $no_original_datadir $city $country
      $top %toplevel %processes $transient $c $sx $sy $top_dpi $top_dpmm @want_extends %autouse_func
      $small_icons $is_handheld
