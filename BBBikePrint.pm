@@ -637,7 +637,6 @@ sub draw_legend {
 		      'b'  => 'S',
 		      'p'  => 'U', # XXX falsche Farbe
 		      'o'  => 'U', # XXX "
-		      'pp' => 'S', # XXX "
 		     );
     foreach my $abk (keys %p_draw) {
 	next unless $p_draw{$abk};
@@ -745,9 +744,12 @@ sub draw_legend {
 	    $skip_height_add = 1;
 	} else {
 	    my $p_cat = $p_category{$abk} || '';
-	    my $color = (defined $category_color{$p_cat}
-			 ? $category_color{$p_cat}
-			 : $p_color{$abk});
+	    my $color = ($abk eq 'pp' ? $main::pp_color
+			 : (defined $category_color{$p_cat}
+			    ? $category_color{$p_cat}
+			    : $p_color{$abk}
+			   )
+			);
 	    ($x, $y) = ($left+$start_symbol, $top+$height);
 	    my $item = $c->createLine($x+4, $y+3,
 				      $x+4, $y+3,
