@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION $geocoder_toplevel);
-$VERSION = 3.07;
+$VERSION = 3.08;
 
 BEGIN {
     if (!eval '
@@ -43,6 +43,7 @@ require Karte::Polar;
 if (0) {
     $main::devel_host = $main::devel_host;
     $main::advanced = $main::advanced;
+    $main::use_obsolete = $main::use_obsolete;
 }
 
 sub register {
@@ -153,35 +154,15 @@ sub geocoder_dialog {
 
 		'Google' =>
 		{
-		 'label' => 'Google (needs API key)',
+		 'label' => 'Google (using CPAN module)',
 		 'short_label' => 'Google (CPAN)',
 		 'devel_only' => 1,
 
-		 'new' => sub {
-		     my $apikey = do {
-			 my $file = "$ENV{HOME}/.googlemapsapikey";
-			 open my $fh, $file
-			     or main::status_message("Cannot get key from $file: $!", "die");
-			 local $_ = <$fh>;
-			 chomp;
-			 $_;
-		     };
-		     my $google = Geo::Coder::Google->new(apikey => $apikey);
-		     if ($Geo::Coder::Google::VERSION < 0.06) {
-			 $google->ua->agent("Mozilla/5.0 (compatible; Geo::Coder::Google/$Geo::Coder::Google::VERSION; Google, please stop smoking crack; http://rt.cpan.org/Public/Bug/Display.html?id=35173)");
-		     }
-		     $google;
-		 },
-		 'extract_loc' => sub {
-		     my $location = shift;
-		     @{$location->{Point}{coordinates}};
-		 },
-		 'extract_addr' => sub {
-		     my $location = shift;
-		     $location->{address};
-		 },
+		 'new' => sub { Geo::Coder::Google->new },
+		 # extract_loc/addr resused from My_Google_v3, see below
 		},
 
+		($main::use_obsolete ? (
 		'GoogleMaps' =>
 		{
 		 'label' => 'Google (alternative implementation, needs API key)',
@@ -221,6 +202,7 @@ sub geocoder_dialog {
 		     $location->address;
 		 },
 		},
+		) : ()),
 
 		'Bing' =>
 		{
@@ -315,7 +297,7 @@ sub geocoder_dialog {
 		 },
 		},
 	       );
-    $apis{Google_v3}->{$_} = $apis{My_Google_v3}->{$_} for (qw(extract_loc extract_addr extract_short_addr));
+    $apis{Google}->{$_} = $apis{Google_v3}->{$_} = $apis{My_Google_v3}->{$_} for (qw(extract_loc extract_addr extract_short_addr));
 
     my $do_geocoder_init = sub {
 	my $gc = shift;
