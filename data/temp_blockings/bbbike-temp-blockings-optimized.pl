@@ -4232,7 +4232,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: MINNATODENHAGENSTR-2016
 #: XXX siehe auch handicap_s-orig-Eintrag
-#: last_checked: 2017-10-16
+#: last_checked: 2017-11-05
 	2::inwork 17681,7589 17676,7555
 ',
          'from' => undef,

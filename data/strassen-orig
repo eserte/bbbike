@@ -5489,6 +5489,7 @@ Sewanstr. [Wohngebiet, zur Balatonstr.]	N 17741,10386 17705,10232 17624,10249 17
 Otto-Schmirgal-Str.	N 18554,10354 18512,10337 18484,10326 18404,10294 18340,10269 18319,10249
 Otto-Schmirgal-Str.	N 18404,10294 18418,10263 18328,10225
 Erieseering	N 18387,10070 18369,10115 18328,10225 18319,10249 18141,10173 18184,10065 18220,10051 18287,10045 18296,10027
+Erieseering	N 18287,10045 18241,10157
 Erieseering	NN 18141,10173 18132,10183
 (Erieseering - Dathepromenade)	NN 18319,10249 18314,10260
 #: note: Beleuchtung existiert
@@ -5989,7 +5990,7 @@ Fritz-König-Weg	N 17527,7812 17301,7754 17050,7687
 Minna-Todenhagen-Str.	H 17681,7589 17585,7525 17453,7451 17295,7344 17211,7280 17091,7175 16971,7058 16747,6813
 #: next_check_id: MINNATODENHAGENSTR-2016
 #: XXX entfernen, sobald die eigentliche Straße offen ist
-#: last_checked: 2017-10-16
+#: last_checked: 2017-11-05
 #: check_frequency: 60d
 (Gehweg an der zukünftigen Minna-Todenhagen-Str.)	NN 17681,7589 17470,7473 17295,7358
 Rummelsburger Landstr.	H 17105,8666 17143,8565 17202,8391 17299,8140 17527,7812 17619,7679 17681,7589
@@ -6032,7 +6033,7 @@ Wasserstr. (Niederschöneweide)	N 17483,6024 17681,6212
 Uferstr. (Niederschöneweide)	N 17681,6212 17843,6083
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788
 #: XXX ist das die vorgeschlagene "Else-Schierhorn-Str."? vvv
-#: last_checked: 2017-09-23 vvv
+#: last_checked: 2017-11-05 vvv
 #: check_frequency: 90d vvv
 (Schnellerstr. - Uferstr.)	NN 17628,5865 17678,5916
 (Schnellerstr. - Uferstr.)	N 17678,5916 17843,6083
@@ -6102,13 +6103,13 @@ Verlängerte Waldowallee	H 19468,8168 19558,8064 19666,7988 19843,7866 19927,7813
 #: oldname: -20110329: Köpenicker Allee
 Rudolf-Rühl-Allee	H 21303,5826 21239,6063 20722,6971 20640,7122 20603,7189 20653,7289 20616,7292 20510,7325 20393,7404 20340,7468 20323,7529 20307,7689 20280,7749
 Köpenicker Allee	NN 20280,7749 20226,7846
-Köpenicker Allee	N 20226,7846 20096,8077 19990,8253 19898,8410 19819,8554 19699,8773 19610,8933 19575,8978 19500,9043 19392,9116 19267,9201 19206,9243 19192,9252 19109,9306 19020,9364 18939,9417
+Köpenicker Allee	N 20226,7846 20096,8077 19990,8253 19898,8410 19819,8554 19699,8773 19610,8933 19575,8978 19500,9043 19392,9116 19267,9201 19206,9243 19195,9249 19109,9306 19020,9364 18939,9417
 #: XXX neuer Straßenname: "Am alten Flugplatz", evtl. nur im Bereich der neuen Gartenstadt
 #: XXX fehlt in Berlin.coords.data
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6985
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_31_3489_3616_online.pdf (Benennung)
 #: osm_watch: way id="24845022" version="16"
-#: last_checked: 2017-09-23
+#: last_checked: 2017-11-05
 #: check_frequency: 45d
 Straße am Heizhaus	N 19699,8773 19755,8806 19816,8842 19891,8887 19949,8920 19972,8935 19984,8944 20059,8951 20150,8962 20220,8976
 #: note: Tempo-10-Zone vvv
@@ -10177,7 +10178,7 @@ Tannhäuserstr.	N 17549,9529 17720,9533 17890,9580 18125,9676
 Walkürenstr.	N 17720,9533 18006,9335 18070,9292
 Odinstr.	N 18006,9335 17898,9564 17890,9580 17866,9639
 Rienzistr.	N 17898,9564 18121,9488
-Marksburgstr.	N 18070,9292 18172,9250 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133 18900,9119 18961,9109 19050,9142 19133,9193 19192,9252
+Marksburgstr.	N 18070,9292 18172,9250 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133 18900,9119 18961,9109 19050,9142 19133,9193 19195,9249
 Lisztstr. (Karlshorst)	N 18319,9218 18332,9356 18377,9366
 #: REMOVED (hier passiert bestimmt nichts mehr) --- XXX: keine Fahrradstraße, trotz http://andreas-geisel.de/bilanz-meiner-arbeit/ , aber vielleicht passiert hier und in der Cäsarstr. noch was? --- #: osm_watch: way id="145586616" version="3" --- #: last_checked: 2014-03-29 --- #: check_frequency: 180d --- #: priority: #C
 Hentigstr.	N 18518,8778 18548,8942 18586,9172 18626,9406
@@ -11021,7 +11022,7 @@ Viechtacher Str.	N 19657,9666 19727,9672 19801,9680 19871,9680 19923,9682
 Eisensteiner Str.	N 19727,9672 19722,9483
 #: note: Privatstraße
 #: XXX wird hier noch ein verkehrsberuhigter Bereich ausgewiesen?
-#: last_checked: 2017-07-28
+#: last_checked: 2017-11-05
 #: check_frequency: 90d
 Zachenberger Str.	N 19889,9400 19824,9405 19780,9409
 Teisnacher Str.	N 19871,9680 19859,9473

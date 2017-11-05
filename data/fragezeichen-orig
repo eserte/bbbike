@@ -443,6 +443,7 @@ Bölschestr.: Schutzstreifen	?::projected 25548,5398 25553,5486 25567,5749 25571,
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf ("Entwurfsphase")
 #: XXX Maßnahme Osw.4
+#: last_checked: 2017-11-05
 #: next_check: 2018-06-01
 Siemensstr.: Radfahr- oder Schutzstreifen	?::projected 17614,6571 17766,6616 17842,6639 17860,6644 17962,6674
 # 
@@ -620,15 +621,15 @@ Kurpark: Verbesserung der Befahrbarkeit	?::projected 24964,6046 25260,6038 25382
 #: XXX ^^^
 #: by: ^^^
 #: XXX Osw.2
-#: last_checked: 2017-08-08
+#: last_checked: 2017-11-05
 #: next_check: 2018-06-01
 Edisonstr.: Einrichten einer Radverkehrsanlage	?::projected 17991,6431 17962,6674 17919,6968 17919,6978 17934,7029
 #: XXX Osw.3
-#: last_checked: 2017-08-08
+#: last_checked: 2017-11-05
 #: next_check: 2018-06-01
 Edisonstr.: Einrichten einer Radverkehrsanlage	?::projected; 17900,6072 17930,6175 17952,6246 17991,6431
 #: XXX Osw.5
-#: last_checked: 2017-10-16
+#: last_checked: 2017-11-05
 #: next_check: 2018-06-01
 Siemensstr.: Einrichten einer Radverkehrsanlage	?::projected; 17614,6571 17528,6502 17492,6462 17432,6352
 #: XXX Osw.7
@@ -637,7 +638,7 @@ Siemensstr.: Einrichten einer Radverkehrsanlage	?::projected; 17614,6571 17528,6
 Ostendstr./Weiskopffstr.: Einrichten einer Radverkehrsanlage	?::projected 19958,5950 19681,5924 19650,5920 19403,5885 19388,5883 19273,5866 19024,5830
 # Osw.9 ist vermutlich schon erledigt
 #: XXX Osw.11
-#: last_checked: 2017-10-16
+#: last_checked: 2017-11-05
 #: next_check: 2019-06-01
 Nalepastr.: Einrichten einer Radverkehrsanlage auf der östlichen Seite	?::projected; 17614,6571 17555,6680 17514,6754 17459,6854 17352,7051 17286,7173 17219,7268
 #: XXX Osw.13
@@ -774,12 +775,12 @@ Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22351
 (An der Straßenbahn): Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected 21539,17442 21555,17546 21559,17617 21576,17678 21639,17803 21698,17920 21726,17974 21804,18125 21843,18198
 # 
 #: XXX routing_helper ggfs. anpassen
-#: last_checked: 2017-10-09
+#: last_checked: 2017-11-05
 Frankfurter Allee: Zweirichtungsradweg	?::projected; 15717,12010 15670,12022
 # 
 #: osm_watch: way id="31525575" version="16"
 #: osm_watch: way id="51872061" version="26"
-#: last_checked: 2017-08-07
+#: last_checked: 2017-11-05
 Wallensteinstr.: Asphaltstreifen	?::projected 17360,9629 17425,9605 17456,9594 17549,9529 18037,9195
 # 
 #: XXX oder ist die andere Seite vor Pablo-Picasso-Str. gemeint?
@@ -969,7 +970,7 @@ Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbr
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird hier vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13849,9310
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf
-#: last_checked: 2017-10-16
+#: last_checked: 2017-11-05
 Rummelsburger Landstr.: Radweg/Radstreifen	?::projected 18010,7133 17847,7356 17769,7465 17681,7589 17619,7679 17527,7812
 # 
 #: check_frequency ^^^
@@ -1031,7 +1032,7 @@ Kniprodestr.: werden die Busspuren zu Radspuren umgewandelt?	?::projected 12640,
 #: XXX außerdem entsteht parallel zur Uferstr. noch ein Uferweg
 #: XXX culdesac-Eintrag zu culdesac_pseudo "degradieren"
 #: osm_watch: way id="382737859" version="4" 
-#: last_checked: 2017-09-23
+#: last_checked: 2017-11-05
 (Uferstr. - Brückenstr.): Rampe wird gebaut	?::inwork 17843,6083 17900,6072
 # 
 # REMOVED (aufgenommen) --- #: XXX laut fritz bis 2017-10-16 --- #: XXX Halteverbotschilder ab 18.8. --- #: last_checked: 2017-08-16 --- #: next_check: 2017-08-18 --- Palisadenstr.: Auswirkung der Sperrung zwischen Friedenstr. und Koppenstr. auf Radfahrer	?::inwork; 12866,12582 12843,12567 12632,12630
@@ -1541,7 +1542,7 @@ Kanalstr.: Bau eines Geh- und Radwegs	?::projected 18111,2135 18101,2164 17928,2
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straßenname)
 #: XXX PLZ=10318 laut DPAG-Mitteilungsblatt
 #: XXX es existiert eine Baustraße, Tor ist aber gesperrt
-#: last_checked: 2017-09-23
+#: last_checked: 2017-11-05
 #: check_frequency: 180d
 Planstraße 9: evtl. Fortsetzung der Regener Str.? Qualität etc?	?::projected 19705,9039 19806,9040 19863,9073 19870,9079 19874,9151
 # 
@@ -1726,7 +1727,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: XXX Radwege werden vermutlich asphaltiert sein
 #: XXX vermutlich wird die F11 nach Eröffnung eingestellt werden --- auch Testcase in cgi.t beachten und ggfs. auf eine andere Fähre umschreiben!
 #: XXX Ampeln an der Köpenicker Landstr. & Rummelsburger Str.
-#: last_checked: 2017-10-16
+#: last_checked: 2017-11-05
 #: next_check: 2018-01-30
 Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rummelsburger Landstraße und Köpenicker Landstraße	?::inwork 17681,7589 17585,7525 17453,7451 17295,7344 17211,7280 17091,7175 16971,7058 16747,6813
 # 
@@ -1741,7 +1742,7 @@ Minna-Todenhagen-Str.: Brücke über die Spree und Straßenverbindung zwischen Rumm
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5758 (Bauarbeiten beginnen erst 2019)
 #: osm_watch: way id="46039447" version="14"
 #: osm_watch: way id="456120288" version="2"
-#: last_checked: 2017-08-27
+#: last_checked: 2017-11-05
 #: next_check: 2019-03-01
 Treskowallee: Bau von Radwegen	?::projected; 18704,8427 18731,8577 18733,8633
 # 
@@ -1957,6 +1958,9 @@ B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX ... oder neuer Asphalt?
+Arberstr.: liegt hier tatsächlich nur mäßiger Beton?	? 19424,9502 19437,9653
+# 
 # REMOVED (man kommt durch) --- #: XXX NEW	Erkelenzdamm (Kreuzberg) in beiden Richtungen zwischen Böcklerstr. und Kohlfurter Straße (Berlin)  Gültig ab: 18.04.2017 12:21  Baustelle, Vollsperrung (Gesamtmaßnahme bis Ende 11/17)	2147341140 --- #: XXX laut fritz bis 30.11.2017 --- #: source_id: 2147341140 --- Erkelenzdamm: prüfen, ob die Bauarbeiten zwischen Böcklerstr. und Kohlfurter Str. wieder aktive sind	? 10967,10092 11038,10247 11094,10261
 # 
 #: XXX Verbundsteinpflaster, einige Fußgänger, vermutlich beleuchtet; wie kommt man auf die Ella-Kay-Str.? Wie gut kann man die Greifswalder überqueren?
@@ -2016,7 +2020,7 @@ Friesenstr.: Asphaltierung geplant	?::projected 9801,8683 9801,8889 9799,8962 97
 # 
 # REMOVED (keine Busspur-Schilder mehr) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5838 --- #: last_checked: 2017-06-22 --- Sachsendamm: für Radfahrer freigegebene Busspur wird zurückgebaut	?::projected; 7193,7950 7147,8000
 # 
-#: last_checked: 2017-09-23
+#: last_checked: 2017-11-05
 #: check_frequency: 7d
 #: XXX: Anforderungsampel
 Schnellerstr.: ist die neue Fußgängerampel irgendwann eingeschaltet?	?::inwork 17628,5865
@@ -2047,7 +2051,7 @@ Louise-Henry-Str.: bisherige Straße 18a wird unbenannt	? 11217,21565 11297,21593
 #: XXX während der Bauarbeiten wird ein Zweirichtungsradweg erstellt --- Zeitverlust?
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.586635.php
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.599467.php (neuer Termin)
-#: last_checked: 2017-10-09
+#: last_checked: 2017-11-05
 #: next_check: 2017-11-30
 Möllendorffstr.: Radspur Richtung Süden entsteht	?; 15420,12178 15361,12071
 # 
@@ -3205,7 +3209,7 @@ Karlshorst-West/Parkstadt Karlshorst: neues Wohngebiet wird entstehen, auch neue
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7073 (Teilung des Bebauungsplans: XVII-50aba und XVII-50abb)
 #: by: https://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_34_3753_3876_online.pdf (Teilung des Bebauungsplans)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6932&date=20170905
-#: last_checked: 2017-09-23 vvv
+#: last_checked: 2017-11-05 vvv
 #: check_frequency: 360d vvv
 #: XXX Planstraße 2:
 Arnbrucker Str. (oder Arnsbrucker Str.?)	? 19610,8933 19667,8965 19728,8998

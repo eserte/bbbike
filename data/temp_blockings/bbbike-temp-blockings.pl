@@ -26488,7 +26488,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: MINNATODENHAGENSTR-2016
 #: XXX siehe auch handicap_s-orig-Eintrag
-#: last_checked: 2017-10-16
+#: last_checked: 2017-11-05
 	2::inwork 17681,7589 17676,7555
 EOF
      },

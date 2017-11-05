@@ -1153,11 +1153,9 @@ neu asphaltiert	RW1; 17769,7465 17681,7589 17619,7679
 #: XXX wie sieht es nach der Fahrbahnverschwenkung (dauert vermutlich bis Ende Oktober 2017 (vmz) oder Mitte Oktober 2017 (fritz)) aus? --- noch immer nur provisorische Radstreifen und keine Arbeiten für einen eventuellen Radweg vvv
 #: source_id: 2147341340
 #: source_id: LMS-BR_r_LMS-BR_98104
-#: last_checked: 2017-10-16 vvv
-#: next_check: 2017-10-26 vvv
+#: last_checked: 2017-11-05 vvv
 	RW0; 17619,7679 17527,7812
-provisorischer schmaler Radstreifen	RW3; 17527,7812 17299,8140 17202,8391
-#: next_check ^^^
+# REMOVED (existiert nicht mehr) --- provisorischer schmaler Radstreifen	RW3; 17527,7812 17299,8140 17202,8391
 #: last_checked ^^^
 #: XXX ^^^
 	RW1; 17202,8391 17143,8565 17105,8666
@@ -3239,7 +3237,7 @@ gemeinsamer Geh- und Radweg	RW2; 12037,20524 12008,20368
 	RW1;RW1 5352,7184 5333,7201 5314,7217 5294,7216 5139,7216 5059,7216 4979,7215 4880,7214 4787,7213
 	RW3;RW4? 4787,7213 4743,7212
 	RW1;RW1 17169,11677 17251,11789
-	RW1;RW1 17169,11677 17208,11658 17275,11626 17341,11595 17609,11467 17734,11408
+neues Verbundsteinpflaster	RW1;RW1 17169,11677 17208,11658 17275,11626 17341,11595 17609,11467 17734,11408
 einige Meter nicht benutzungspflichtiger Radweg an der Einbecker Str.	RW0;RW0 17734,11408 17725,11228
 30 Meter nicht benutzungspflichtiger Radweg an der Rummelsburger Str.	RW0;RW0 17621,10994 17569,10801
 	RW1;RW1 17621,10994 17645,11028 17676,11055 17719,11092 17848,11204 17861,11210 17876,11217
@@ -4974,7 +4972,7 @@ Gehweg für Radfahrer frei	RW1;RW1 17360,9629 17425,9605 17456,9594 17549,9529 18
 	RW6;RW6 5199,13247 5351,13238
 	RW6;RW6 5547,13227 5694,13219
 #: XXX: auf der anderen Seite existiert auch ein asphaltierter Radweg, allerdings ist er noch durch Bauzäune abgesperrt
-#: last_checked: 2017-09-23
+#: last_checked: 2017-11-05
 asphaltiert	RW1; 17681,6212 17843,6083
 	RW3;RW3 17681,6212 17483,6024
 	RW6;RW6 2028,3008 2067,3031 2048,3062 1987,3166 1946,3142

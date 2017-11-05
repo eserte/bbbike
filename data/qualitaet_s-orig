@@ -1145,7 +1145,7 @@ Buchenhainer Str.: holpriger Fahrweg	Q2 21164,8243 21329,8222
 Nitzwalder Str.: holpriger Fahrweg	Q2 21329,8222 21458,8091 21529,8019 21593,7934
 Kaulsdorfer Str.: Asphalt	Q0 22049,7085 22075,6967 22186,6672 22192,6659 22305,6404 22325,6385
 Marksburgstr.: Asphalt	Q0 19050,9142 18961,9109 18900,9119 18809,9133 18697,9153 18586,9172 18511,9185 18430,9199 18319,9218
-Marksburgstr.: Asphalt mit einigen Schäden	Q1+ 19050,9142 19133,9193 19192,9252
+Marksburgstr.: Asphalt mit einigen Schäden	Q1+ 19050,9142 19133,9193 19195,9249
 Walkürenstr.: Asphalt	Q0- 18070,9292 18006,9335
 Walkürenstr.: Kopfsteinpflaster	Q2 18006,9335 17720,9533
 Tannhäuserstr.: Kopfsteinpflaster	Q2 18125,9676 17890,9580 17720,9533 17549,9529
@@ -2594,7 +2594,7 @@ Andernacher Str.: Asphalt	Q0 19245,8669 19155,8631
 Andernacher Str.: mäßiger Asphalt	Q1- 19155,8631 19075,8590 19030,8559 19000,8509 18949,8437
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.523136.php
 #: XXX evtl. nach den Bauarbeiten besserer Asphalt
-#: last_checked: 2017-08-27
+#: last_checked: 2017-11-05
 #: check_frequency: 90d
 Rheinsteinpark: Asphalt, etwas uneben	Q1+ 19073,8828 19145,8659
 Rolandseck: Asphalt	Q0 18834,9256 18903,9244 18977,9322
@@ -5473,7 +5473,7 @@ Schwalbenflug: Asphalt	Q0- 20093,14591 20068,14516 20057,14471 20051,14441
 Annenstr. (Biesdorf): Asphalt	Q0 20371,14204 20467,14196
 Eugen-Roth-Weg: Asphalt	Q0 20072,13070 20068,13036 20048,12830
 Eugen-Roth-Weg: Asphalt	Q0 20048,12830 20037,12707
-Einbecker Str.: Asphalt mit Schäden	Q1 17876,11217 17764,11371
+Einbecker Str.: löchriger Asphalt	Q1- 17876,11217 17764,11371
 Alex-Wedding-Str.: Asphalt	Q0 11045,13183 11085,13239 11146,13328
 Jaczostr.: Beton	Q0 -4078,11800 -4101,11708
 Jaczostr.: Asphalt	Q0 -4101,11708 -4255,11600 -4267,11590
@@ -7563,7 +7563,7 @@ Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 #: XXX wird hier saniert werden?
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6721
 #: osm_watch: note 1177573 1
-#: last_checked: 2017-06-04
+#: last_checked: 2017-11-05
 #: check_frequency: 120d
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1- 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 Rüdersdorfer Str. [Rückseite]: Beton	Q0- 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
@@ -9170,7 +9170,7 @@ Helene-Weigel-Platz: Asphalt	Q0 19628,13517 19625,13576
 (westlicher Wuhlewanderweg): wassergebundene Decke	Q1 22347,13858 22404,13984 22407,14111 22414,14144
 westlicher Wuhlewanderweg: überwiegend wassergebundene Decke, einige Kleinsteinpflasterabschnitte	Q1 22414,14144 22462,14172 22639,14384 22679,14450 22670,14520 22620,14673 22528,14769 22455,14815 22462,14846 22439,14873 22378,14904 22323,15119
 (Erieseering - am Tränkegraben): Verbundsteinpflaster	Q1- 18132,10183 18130,10201 18113,10208
-(Erieseering - am Tränkegraben): Parkweg, teilweise mit Schotter	Q2+ 18113,10208 18085,10244 18081,10312 18039,10398 18026,10490 18034,10567
+(Erieseering - am Tränkegraben): Parkweg	Q1- 18113,10208 18085,10244 18081,10312 18039,10398 18026,10490 18034,10567
 (Zachertstr. - am Tränkegraben): Beton	Q0- 17848,11204 17893,11146
 (Zachertstr. - am Tränkegraben): überwiegend Asphalt, kurzer unbefestigter Abschnitt	Q0- 17893,11146 17905,11122 17924,10964 17914,10861 17892,10718 17870,10619
 Schwarzmeerstr. [zur Rummelsburger Str.]: Asphalt	Q0 17751,10904 17763,10950 17676,10976
@@ -10522,7 +10522,7 @@ Bismarckplatz: Kopfsteinpflaster	Q2 -3258,15100 -3241,15118 -3216,15155
 Wolzenseeweg: Asphalt	Q0 -1798,16465 -1721,16448
 #: next_check_id: TRESKOWALLEE-2017
 #: XXX nach den Bauarbeiten vermutlich bessere Qualität
-#: last_checked: 2017-08-27
+#: last_checked: 2017-11-05
 #: next_check: 2019-03-01
 Treskowallee: Asphalt mit Schäden	Q1+; 18704,8427 18731,8577
 (Gundelfinger Str. - Römerweg): Verbundsteinpflaster	Q1+ 18735,9421 18738,9467 18754,9584 18772,9694
