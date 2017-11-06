@@ -13722,7 +13722,7 @@ EOF
        text  => 'B 002 Wittenberg - LG - Treuenbrietzen OD Marzahna Kanal- und Straßenbau halbseitig gesperrt; Einbahnstraße 01.04.2009-15.07.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; -32313,-49192 -31201,-45781
+	q4::inwork; -32267,-48756 -31201,-45781
 EOF
      },
      { from  => 1235862000, # 2009-03-01 00:00
@@ -17953,7 +17953,7 @@ EOF
        type  => 'gesperrt',
        source_id => '106900348',
        data  => <<EOF,
-	2::inwork -29601,-47258 -30976,-45652
+	2::inwork -29624,-47255 -30976,-45652
 EOF
      },
      { from  => 1275170400, # 2010-05-30 00:00
@@ -24701,6 +24701,7 @@ EOF
 #: source_id: IM_026411
 #: source_id: 2147339562
 #: source_id: LMS-BR_r_LMS-BR_51041
+#: source_id: 2147342003
 #: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.639561.php (Ende 2018 oder Mitte 2019)
 #: next_check: 2018-12-31
@@ -25647,7 +25648,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-10-20 vvv
+#: last_checked: 2017-11-06 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -26091,17 +26092,18 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2017-11-05 00:00:00"), # 1495918329, # 2017-05-27 22:52
-       until => undef, # $isodate2epoch->("2017-11-03 12:00:00"),
-       text  => 'Bölschestr.: Bauarbeiten, zwischen Aßmannstr. und Müggelseedamm Richtung Süden gesperrt, ab 06. November 2017',
+       until => $isodate2epoch->("2017-12-08 12:00:00"),
+       text  => 'Bölschestr.: Bauarbeiten, zwischen Aßmannstr. und Müggelseedamm Richtung Süden gesperrt, ab 06. November 2017 bis 08. Dezember 2017',
        type  => 'handicap',
        data  => <<EOF,
-#: note: (alte Meldung) laut fritz bis 21.10.2017 08:00 Uhr, laut VMZ bis Anfang November 2017
+#: note: laut fritz bis 8.12.2017, laut VMZ bis Mitte Dezember 2017
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.595041.php
 #: by: http://werbegemeinschaft-friedrichshagen.de/wp-content/uploads/2017/05/2017-05_Boelschestr_Anwohnerflyer_web.pdf
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.641756.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.643825.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.645164.php
 #: source_id: LMS-BR_r_LMS-BR_97860
+#: source_id: 2147341992
 # REMOVED ---	q4::inwork; 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
 	q4::inwork; 25539,5237 25524,5011 25519,4830
 EOF
