@@ -25981,7 +25981,7 @@ EOF
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober; laut Pressemitteilung bis Ende 2017
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
-#: last_checked: 2017-11-03 vvv
+#: last_checked: 2017-11-07 vvv
 # REMOVED (weitgehend fertig) ---	q3::inwork 13384,8354 13217,8493
 # REMOVED	q3::inwork; 13217,8493 13262,8554
 # REMOVED	q3::inwork; 13262,8554 13301,8606 13314,8624
@@ -26144,7 +26144,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-11-03
+#: last_checked: 2017-11-07
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },
@@ -26520,7 +26520,7 @@ EOF
        text  => 'Alt-Stralau - Spreeufer: Verbindung wegen Baustelle gesperrt, Ende unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2017-10-10
+#: last_checked: 2017-11-07
 	2::inwork 14652,10201 14569,10055
 EOF
      },
@@ -26674,6 +26674,15 @@ EOF
        data  => <<EOF,
 #: last_checked: 2017-11-04
 	q3::inwork 5306,15387 5134,15565
+EOF
+     },
+     { from  => 1510034400, # 2017-11-07 07:00
+       until => 1510329600, # 2017-11-10 17:00
+       text  => 'Wiesenweg: wegen Brückenarbeiten zwischen Gürtelstr. und Kietzer Weg gesperrt, eventuell auch für Fußgänger und Radfahrer, von 08.11.2017 7:00 Uhr bis 10.11.2017 17:00 Uhr ',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: fritz
+	2::inwork 15055,11505 15162,11458
 EOF
      },
     );
