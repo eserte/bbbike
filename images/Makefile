@@ -353,3 +353,8 @@ png-to-jpg:	\
 #   convert -geometry 5x5 ropeway.svg ropeway_mini.png
 
 # wget -O QR_icon_16x16.png https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/QR_icon.svg/16px-QR_icon.svg.png
+
+# Creation of shop.png:
+# (Original (c) by Dave Gandy, see also http://fortawesome.github.com/Font-Awesome/)
+#   wget https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Shopping_cart_font_awesome.svg/512px-Shopping_cart_font_awesome.svg.png
+#   convert -geometry 16x16 512px-Shopping_cart_font_awesome.svg.png shop.png

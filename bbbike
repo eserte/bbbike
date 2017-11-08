@@ -1559,6 +1559,7 @@ $ampel_klein_grey_photo = load_photo($top, 'ampel_klein_grey');
 $kopfstein_klein_photo      = load_photo($top, 'kopfstein_klein');
 $kopfstein_klein_grey_photo = load_photo($top, 'kopfstein_klein_grey');
 $star_photo             = load_photo($top, 'star');
+$shop_photo             = load_photo($top, 'shop');
 $newlayer_photo		= load_photo($top, 'newlayer');
 
 for(my $i = 0; $i <= $#speed; $i++) {
@@ -6667,7 +6668,8 @@ EOF
 			    warn "No image for $image";
 			}
 		    } else {
-			$c->createImage($mx,$my,-image => $star_photo,
+			my $photo = $cat_hin =~ m{^(F:)?Shop\b} ? $shop_photo : $star_photo;
+			$c->createImage($mx,$my,-image => $photo,
 					-tags => ["$abk-fg", $strname]);
 		    }
 		};
