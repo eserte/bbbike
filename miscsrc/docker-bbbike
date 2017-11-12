@@ -26,7 +26,19 @@ use Hash::Util qw(lock_keys);
 
 sub usage (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
+usage: $0 [--dry-run] gui | travis-ci [options]
+EOF
+}
+
+sub usage_gui (;$) {
+    die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
 usage: $0 [--dry-run] gui [--dist debian|ubuntu|...] [--distver stretch|...] [--src local|github] [--env KEY=VAL ...]
+EOF
+}
+
+sub usage_travis_ci (;$) {
+    die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
+usage: $0 [--dry-run] travis-ci [--dist debian|ubuntu|...] [--distver stretch|...] [--src local|github] [--branch ...]
 EOF
 }
 
@@ -157,22 +169,49 @@ EOF
 sub travis_ci {
     my($doit, %opt) = @_;
     lock_keys %opt;
+
+    error "src => 'local' not supported" if $opt{src} eq 'local'; # XXX see below
+
     my $bbbike_rootdir = realpath("$FindBin::RealBin/..");
     my $docker_context_dir = tempdir("docker_context_XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
     my $dockerfile = <<EOF;
-FROM ubuntu:$opt{distver}
+FROM $opt{dist}:$opt{distver}
 
 # travis defaults
 ENV DEBIAN_FRONTEND noninteractive
 
+EOF
+    if ($opt{dist} eq 'debian') {
+	$dockerfile .= <<EOF;
+# for agrep
+RUN echo "deb http://ftp.de.debian.org/debian/ $opt{distver} non-free" > /etc/apt/sources.list.d/$opt{distver}-non-free.list
+EOF
+    } elsif ($opt{dist} eq 'ubuntu') {
+	$dockerfile .= <<EOF;
 # for agrep
 RUN echo "deb http://archive.ubuntu.com/ubuntu $opt{distver} multiverse" > /etc/apt/sources.list.d/$opt{distver}-multiverse.list
+EOF
+    } else {
+	die "Unsupported dist $opt{dist}";
+    }
+
+    my $libmysqlclient_dev;
+    if ($opt{dist} eq 'debian') {
+	if ($opt{distver} =~ m{^(lenny|squeeze|wheezy|jessie)$}) {
+	    $libmysqlclient_dev = 'libmysqlclient-dev';
+	} else { # stretch and newer
+	    $libmysqlclient_dev = 'default-libmysqlclient-dev';
+	}
+    } else {
+	$libmysqlclient_dev = 'libmysqlclient-dev'; # XXX but probably newer ubuntus will also use default-libmysqlclient-dev
+    }
+    $dockerfile .= <<EOF;
 
 RUN apt-get update -qq
-RUN apt-get install -qq git cpanminus libssl-dev libmysqlclient-dev wget
+RUN apt-get install -qq git cpanminus libssl-dev $libmysqlclient_dev wget
 EOF
-    if ($opt{distver} eq 'precise') {
-	# Lacking packages in precise
+    if ($opt{distver} eq 'precise' || $opt{dist} eq 'debian') {
+	# Lacking packages in precise (and debian/stretch, lsb-release at least)
 	$dockerfile .= <<EOF;
 RUN apt-get install -qq lsb-release sudo
 EOF
@@ -216,7 +255,25 @@ EOF
     $dockerfile .= <<EOF;
 RUN /bin/bash --login -e -c "wrapper install_perl_dependencies"
 
-RUN git clone --depth=1 https://github.com/eserte/bbbike.git
+EOF
+    {
+	my $branch_args = '';
+	if ($opt{branch}) {
+	    $branch_args = " --branch $opt{branch}";
+	}
+	if ($opt{src} eq 'github') {
+	    $dockerfile .= <<EOF;
+RUN git clone --depth=1 https://github.com/eserte/bbbike.git$branch_args
+EOF
+	} elsif ($opt{src} eq 'local') {
+	    $dockerfile .= <<EOF;
+RUN git clone --depth=1 /bbbike-local bbbike$branch_args
+EOF
+	} else {
+	    usage "Invalid --src value '$opt{src}', only 'github' and 'local' are known";
+	}
+    }
+    $dockerfile .= <<EOF;
 WORKDIR bbbike
 ENV TRAVIS_BUILD_DIR /bbbike
 
@@ -243,10 +300,13 @@ EOF
     $doit->utime($mtime, $mtime, "$docker_context_dir/travis-functions.sh");
 
     in_directory {
-	my $tag = 'bbbike-travis-ci-ubuntu-' . $opt{distver};
-	$doit->run([qw(docker build --tag), $tag, qw(.)]);
+	my $tag = 'bbbike-travis-ci-' . $opt{dist} . '-' . $opt{distver};
+	$doit->run([qw(docker build --tag), $tag,
+		    # XXX does not work --- https://github.com/moby/moby/issues/14080
+		    ($opt{src} eq 'local' ? ('-v', "$bbbike_rootdir:/bbbike-local") : ()),
+		    qw(.),
+		   ]);
 	$doit->run(['docker', 'run', '-ti',
-		    #'-v', "$bbbike_rootdir:/bbbike",
 		    $tag,
 		   ]);
     } $docker_context_dir;
@@ -274,22 +334,61 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'debug!',
 	       'docker-machine=s',
 	      )
-	or usage;
+	or usage_gui;
     gui($doit, %opt);
-} elsif ($subcmd eq 'travis-ci') {
+} elsif ($subcmd eq 'travis-ci' || $subcmd eq 'test') {
     my %opt = (
 	       jobs    => 1,
+	       dist    => 'ubuntu',
 	       distver => 'trusty',
+	       src     => 'github',
+	       branch  => undef,
 	       env     => {},
 	      );
     GetOptions(\%opt,
 	       "jobs|j=i",
+	       "dist=s",
 	       "distver|distversion=s",
+	       "src=s",
+	       'branch=s',
 	       'env=s%'
 	      )
-	or usage;
+	or usage_travis_ci;
     travis_ci($doit, %opt);
 } else {
     usage "Unknown subcmd '$subcmd'";
 }
 __END__
+
+=head1 NAME
+
+docker-bbbike - run bbbike tasks in docker
+
+=head1 SYNOPSIS
+
+Run GUI application in a docker image, forwarding display to the real
+X11 display:
+
+    ./miscsrc/docker-bbbike gui
+
+The same, but specify OS + version (instead of default debian:latest):
+
+    ./miscsrc/docker-bbbike gui --dist ubuntu --distver 16.04
+
+Run test suite like on travis-ci:
+
+    ./miscsrc/docker-bbbike travis-ci
+
+The same, but specify additional environment variables:
+
+    ./miscsrc/docker-bbbike travis-ci --env BBBIKE_TEST_GUI=1
+
+The same, but use another Ubuntu version (default is trusty):
+
+    ./miscsrc/docker-bbbike travis-ci --distver precise
+
+=head1 SEE ALSO
+
+L<docker(1)>.
+
+=cut

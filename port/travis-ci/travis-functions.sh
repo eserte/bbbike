@@ -121,7 +121,14 @@ install_webserver_dependencies() {
     if [ "$USE_MODPERL" = "1" ]
     then
 	# install mod_perl
-	sudo apt-get install -qq apache2-mpm-prefork
+	CODENAME=$(lsb_release -c -s)
+	# XXX probably valid also for all newer debians (and ubuntus?)
+	if [ "$CODENAME" = "stretch" ]
+	then
+	    sudo apt-get install -qq apache2
+	else
+	    sudo apt-get install -qq apache2-mpm-prefork
+	fi
 	# XXX trying to workaround frequent internal server errors
 	#sudo a2dismod cgid && sudo a2dismod mpm_event && sudo a2enmod mpm_prefork && sudo a2enmod cgi
 	sudo a2dismod mpm_event && sudo a2enmod mpm_prefork
