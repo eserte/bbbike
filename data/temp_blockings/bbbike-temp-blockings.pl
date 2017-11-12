@@ -12501,7 +12501,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009790',
        data  => <<EOF,
-	1::inwork 16656,16157 16882,16072 16961,16042
+	1::inwork 16656,16157 16755,16120 16882,16072 16961,16042
 EOF
      },
      { from  => 1247724607, # 2009-07-16 08:10
@@ -17236,13 +17236,13 @@ EOF
 	2::inwork -2513,3631 -2464,3631 -2396,3666 -2174,3718 -2042,3838 -2015,3873 -2012,3949 -2030,4089 -1944,4140 -1760,4001 -1701,3980 -1621,3972 -1516,3993 -1488,4009
 EOF
      },
-     { from  => $isodate2epoch->("2016-12-08 00:00:00"), # 1354748400, # 2012-12-06 00:00, # 1291330800, # PERIODISCH! # früher: 1259794800, # 2009-12-03 00:00
-       until => $isodate2epoch->("2016-12-11 23:59:59"), # 1355698799, # 2012-12-16 23:59, # 1292194799, # PERIODISCH! # früher: 1260745199, # 2009-12-13 23:59
+     { from  => $isodate2epoch->("2017-12-14 00:00:00"), # 1354748400, # 2012-12-06 00:00, # 1291330800, # PERIODISCH! # früher: 1259794800, # 2009-12-03 00:00
+       until => $isodate2epoch->("2017-12-17 23:59:59"), # 1355698799, # 2012-12-16 23:59, # 1292194799, # PERIODISCH! # früher: 1260745199, # 2009-12-13 23:59
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 12]],
-       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 09.12.2016 bis zum 11.12.2016',
+       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 15.12.2017 bis zum 17.12.2017',
        type  => 'gesperrt',
-       source_id => 'http://www.weihnachtsmarkt-deutschland.de/berlin-koepenick-weihnachtsmarkt.html',
+       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/treptow-koepenick/1305665-1328180-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html',
        data  => <<EOF,
 	2::xmas 22111,4562 22162,4546 22214,4548
 EOF
@@ -21486,6 +21486,7 @@ EOF
        until => $isodate2epoch->("2016-12-11 21:00:00"), #
        periodic => 1,
        recurrences => [['yearly', days => 9, months => 12]],
+       recurrence_prewarn_days => 14, # 2017 stand der Termin einen Monat vorher noch nicht fest
        text  => 'Kunsthandwerklicher Weihnachtsmarkt in Lichtenrade: Alt-Lichtenrade, Straße vermutlich gesperrt (10. Dezember 2016 bis 11. Dezember 2016, jeweils 11-20 Uhr)',
        type  => 'handicap',
        data  => <<EOF,
@@ -23273,7 +23274,7 @@ EOF
 #	q4::inwork 15774,14992 15867,15073 15937,15134 16028,15218 16119,15302
 #	q4::inwork; 16119,15302 16218,15386 16263,15427 16331,15486 16412,15559
 #	q4::inwork; 16412,15559 16448,15593 16497,15636 16615,15737 16633,15753
-	q4::inwork; 16633,15753 16819,15912 16941,16021
+	q4::inwork; 16633,15753 16819,15912 16846,15936 16941,16021
 #	q4::inwork; 15937,15134 16075,15069 16123,15025
 #	3 16469,15659 16497,15636 16615,15737
 #	3 16615,15737 16497,15636 16469,15659
@@ -25648,7 +25649,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-11-06 vvv
+#: last_checked: 2017-11-09 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -25803,13 +25804,13 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2017-11-07 07:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-11-08 11:00:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 08. November 2017 ab ca. 10:00 Uhr',
+     { from  => $isodate2epoch->("2017-11-14 07:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-11-15 11:00:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 15. November 2017 ab ca. 10:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX weitere Sperrungen: 18. Oktober sowie 8., 15., 22. und 29. November
-#: next_check: 2017-11-09
+#: next_check: 2017-11-16
 #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
@@ -26144,7 +26145,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-11-07
+#: last_checked: 2017-11-08
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },
@@ -26682,6 +26683,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: fritz
+#: source_id: 2147342009
 	2::inwork 15055,11505 15162,11458
 EOF
      },

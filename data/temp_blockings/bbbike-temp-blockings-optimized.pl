@@ -2431,7 +2431,26 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	2::xmas 22111,4562 22162,4546 22214,4548
+',
+         'from' => 1513206000,
+         'id' => 2003,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              8,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/treptow-koepenick/1305665-1328180-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html',
+         'text' => 'Alt-Köpenicker Weihnachtsmarkt vom 15.12.2017 bis zum 17.12.2017',
+         'type' => 'gesperrt',
+         'until' => 1513551599
+       },
        undef,
        undef,
        undef,
@@ -3917,7 +3936,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-11-06 vvv
+#: last_checked: 2017-11-09 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -3951,17 +3970,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX weitere Sperrungen: 18. Oktober sowie 8., 15., 22. und 29. November
-#: next_check: 2017-11-09
+#: next_check: 2017-11-16
 #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
 	2::temp -1925,6790 -1851,6887
 ',
-         'from' => 1510034400,
+         'from' => 1510639200,
          'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 08. November 2017 ab ca. 10:00 Uhr',
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 15. November 2017 ab ca. 10:00 Uhr',
          'type' => 'gesperrt',
-         'until' => 1510135200
+         'until' => 1510740000
        },
        undef,
        {
@@ -4064,7 +4083,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-11-07
+#: last_checked: 2017-11-08
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
          'from' => undef,
@@ -4387,16 +4406,6 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Uferweg Plötzensee: wegen Unterspülung gesperrt, Umfahrung über enge Pfade möglich',
          'type' => 'gesperrt',
          'until' => undef
-       },
-       {
-         'data' => '#: by: fritz
-	2::inwork 15055,11505 15162,11458
-',
-         'from' => 1510034400,
-         'id' => 2919,
-         'text' => 'Wiesenweg: wegen Brückenarbeiten zwischen Gürtelstr. und Kietzer Weg gesperrt, eventuell auch für Fußgänger und Radfahrer, von 08.11.2017 7:00 Uhr bis 10.11.2017 17:00 Uhr ',
-         'type' => 'gesperrt',
-         'until' => 1510329600
        }
      
 );
