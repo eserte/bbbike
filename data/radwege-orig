@@ -1078,7 +1078,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5459,11135 5258,11285
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5091,11406 5085,11413 4922,11600
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
-#: last_checked: 2017-11-09
+#: last_checked: 2017-11-13
 #: check_frequency: 60d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1088,7 +1088,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut rbbtext bis 31.05.2016, laut vmz bis Ende 2016, laut fritz bis 09.01.2018
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2017-11-09
+#: last_checked: 2017-11-13
 #: check_frequency: 90d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9608,12380
@@ -1104,7 +1104,7 @@ Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 #: next_check_id: STABIUDL-2014
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9608,12380 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2017-11-09
+#: last_checked: 2017-11-13
 #: check_frequency: 60d
 Busspur ist immer gültig	RW5; 9475,12365 9608,12380
 # 
@@ -1634,7 +1634,7 @@ Gehweg für Radfahrer frei	RW1; 15561,12950 15531,13022
 	RW1;RW1 15546,12690 15550,12625 15557,12473 15535,12420 15508,12367
 	RW1; 15508,12367 15480,12306 15443,12222 15420,12178
 Gehweg für Radfahrer frei	RW1; 15420,12178 15443,12222 15480,12306 15508,12367
-	RW2;RW2 15420,12178 15361,12071
+	RW4;RW2 15420,12178 15361,12071
 #: by: Roy Fischer [AM]
 #: confirmed_by: srt
 	RW4;RW4 15896,13547 15896,13594

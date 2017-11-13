@@ -26502,6 +26502,7 @@ EOF
        source_id => '2147341770',
        data  => <<EOF,
 #: next_check_id: MOELLENDORFFSTR-2017
+#: last_checked: 2017-11-13
 	q3::inwork; 14926,12129 14887,11929
 EOF
      },
