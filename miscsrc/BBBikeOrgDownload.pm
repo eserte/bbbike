@@ -110,7 +110,7 @@ sub get_city {
     if (eval { require Archive::Tar; Archive::Tar->has_bzip2_support; }) {
 	no warnings 'redefine';
 	local *Archive::Tar::_get_handle = \&Archive::Tar::_get_handle;
-	if ($Archive::Tar::VERSION < 2.24) {
+	if (do { no warnings "numeric"; $Archive::Tar::VERSION < 2.24 }) {
 	    # Workaround for pbzip2-compressed tarballs, see
 	    # https://rt.cpan.org/Ticket/Display.html?id=119262
 	    # Fixed in 2.24
