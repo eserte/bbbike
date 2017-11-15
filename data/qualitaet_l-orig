@@ -4752,11 +4752,15 @@ Seeburger Chaussee: Asphalt	Q0 -8634,9626 -8595,9582 -8564,9423 -8632,8641 -8666
 Seeburger Chaussee: mäßiger Asphalt	Q1 -8719,8161 -8878,8089 -9077,7923 -9150,7720 -9097,7649 -9088,7599
 Edisonstr.: Sand	Q3 -10696,15970 -10722,16134
 Edisonstr.: Asphalt	Q0 -10722,16134 -10744,16241
+#: confirmed_by: mapillary
 Staakener Heuweg: Asphalt	Q0 -7414,16351 -7455,16243 -7497,16120
 Staakener Heuweg: Pfad, wassergebundene Decke	Q2 -7536,15978 -7536,16010 -7497,16120
-(Hamburger Str. - Staakener Heuweg): wassergebundene Decke	Q1 -8010,16486 -7812,16393 -7794,16365 -7847,16237 -7829,16154 -7722,16119 -7611,16119 -7560,16287 -7455,16243
+(Hamburger Str. - Staakener Heuweg): wassergebundene Decke	Q1 -8010,16486 -7812,16393 -7794,16365 -7847,16237 -7829,16154 -7722,16119
+# REMOVED (stimmt vermutlich nicht (mehr?)) --- (Hamburger Str. - Staakener Heuweg): wassergebundene Decke	Q1 -7722,16119 -7611,16119
+# REMOVED (stimmt vermutlich nicht (mehr?)) --- (Hamburger Str. - Staakener Heuweg): wassergebundene Decke	Q1 -7611,16119 -7560,16287
+# REMOVED (stimmt vermutlich nicht (mehr?)) --- (Hamburger Str. - Staakener Heuweg): wassergebundene Decke	Q1 -7560,16287 -7455,16243
 (Luchweg - Staakener Heuweg): Asphalt	Q0 -7734,15988 -7536,15978
-(Am Falkenhagener See): Waldweg	Q2 -8975,18080 -8877,18091 -8831,18073 -8752,17989 -8882,17800 -8874,17717 -8777,17657 -8303,17400 -8260,17327 -8180,17347
+(Am Falkenhagener See): Waldweg	Q2 -8975,18080 -8877,18091 -8831,18073 -8752,17989 -8882,17800 -8874,17717 -8777,17657 -8303,17400 -8260,17327 -8187,17345
 Kantstr.: Asphalt	Q0 -10088,17984 -9917,17995 -8975,18080
 Dallgower Str.: wassergebundene Decke	Q1 -11073,15002 -11063,15002 -11042,14934 -11024,14932 -10933,15036 -10723,15216 -10687,15321 -10652,15338 -10648,15389 -10712,15554 -10799,15946
 Dallgower Str.: Sand	Q3 -10853,16230 -10799,15946
@@ -4765,10 +4769,12 @@ Barkhausenstr.: Asphalt	Q0 -10744,16241 -10853,16230
 Eichendorffstr.: asphaltiert	Q0 -12794,15105 -12503,15181 -12236,15133 -12173,15109
 Eichendorffstr.: wassergebundene Decke	Q1 -12173,15109 -12069,15110 -11134,14862 -11108,14873 -11093,14902 -11081,15001 -11073,15002
 (Am Bahndamm): unattraktive Strecke, wassergebundene Decke bzw. Kies	Q2 -8682,14489 -8926,14526 -8982,14564 -9225,14647 -9264,14641 -9300,14593 -9314,14589 -9356,14597 -9385,14572 -9410,14568 -10011,14622 -10616,14680 -10639,14690 -11039,14732 -11054,14724 -11125,14728 -11145,14738 -12291,14864 -12542,14878 -12734,14907 -12885,14915 -13175,14960 -13662,14975 -13890,14999 -13925,14992 -13967,14996
-Niederneuendorfer Weg: Sand	Q3 -9768,18667 -8816,18828 -8394,18741 -8190,18776
-Lortzingallee: Sand	Q3 -8394,18741 -8445,18503 -8546,18331
-Brahmsallee: Sand	Q3 -8749,18648 -8445,18503 -7920,18308
-(Kuhlake): Waldweg	Q2 -7777,18082 -7457,18414 -7346,18260 -7061,18086 -6931,17818
+Niederneuendorfer Weg: Sand	Q3 -9758,18670 -8816,18828 -8394,18741 -8190,18776
+#: add_fragezeichen: wurde die Straße mittlerweile asphaltiert?
+Lortzingallee: Sand	Q3 -8394,18741 -8449,18494 -8546,18331
+#: corrected_by: mapillary (Sand -> ..., neu gemacht?)
+Brahmsallee: Asphalt	Q0 -8728,18627 -8707,18627 -8449,18494 -8196,18405 -7988,18329
+(Kuhlake): Waldweg	Q2 -7763,18049 -7777,18082 -7457,18414 -7346,18260 -7061,18086 -6931,17818
 Schleuse Schönwalde - Schönwalde: Waldweg	Q2 -11476,22085 -11448,22017 -11450,21930 -11467,21846 -11400,21710 -11173,21524 -10842,21398 -10313,21144
 nördlich des Havellandkanals: Schotter	Q2 -12182,22042 -11476,22085 -11456,22120 -11380,22120 -11351,22090 -10425,22139
 #: note: laut "Berliner Umland" gut geeigneter Radweg, nur der westliche Teil ist witterungsabhängige Strecke
@@ -5787,7 +5793,7 @@ Döberitzer Weg: Asphalt	Q0 -9524,12215 -9503,12227 -9467,12248 -9049,12498
 #: confirmed_by: srt
 Staakener Weg (Seeburg): Asphalt	Q0 -8445,12092 -8599,11272 -8623,11264 -8624,11246
 (Gatower Weg - Maximilian-Kolbe-Str./Potsdamer Chaussee): fester Sandweg, unebene Fahrbahn	Q1- -6660,9953 -6681,9964 -7414,10335 -8274,10938
-Hamburger Str. (Falkensee): Asphalt	Q0 -8080,16150 -8010,16486 -7970,16592
+Hamburger Str. (Falkensee): Asphalt	Q0 -8080,16150 -8010,16486 -7962,16608
 Dallgow Ausbau: Beton, rissig, mit einigen Bodenwellen	Q1- -9467,12248 -9210,13338
 #: note: bestätigt den Tagesspiegel vom 2007-05-12
 #: corrected_by: srt (alter Asphalt)
@@ -5906,3 +5912,10 @@ Hohen Neuendorfer Weg (Birkenwerder): schlechtes Kopfsteinpflaster	Q3 645,30634 
 # 
 #: by: Regina Sattelmayer:
 Röhrenstr. (Potsdam): Kopfsteinpflaster	Q2 -7774,-3091 -7772,-3209 -7794,-3277
+# 
+#: by: mapillary: vvv
+Weberallee: Asphalt	Q0 -8328,18064 -8293,18112 -8196,18405
+Berliner Str.: Asphalt	Q0 -8313,16897 -8220,16857 -8199,16846 -7977,16745
+Berliner Str.: Asphalt	Q0 -7977,16745 -7926,16790
+Berliner Str.: Beton	Q1 -8313,16897 -8408,16939
+#: by: ^^^

@@ -3913,7 +3913,7 @@ EOF
        data  => <<EOF,
 	q4 12423,14066 12486,14143
 	q4 12423,14066 12361,13985
-	q4 12556,14230 12621,14313
+	q4 12556,14230 12616,14315
 	q4 12556,14230 12486,14143
 EOF
      },
@@ -26145,7 +26145,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-11-08
+#: last_checked: 2017-11-15
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },
@@ -26573,7 +26573,7 @@ EOF
        text  => 'Borussiastr.: Bauarbeiten zwischen Manteuffelstr. und Schöneberger Str., Fahrbahn gesperrt, voraussichtlich bis April 2018',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2017-09-29
+#: last_checked: 2017-11-10 (mapillary)
 	q3::inwork 8653,6781 8750,6779
 EOF
      },
@@ -26583,7 +26583,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX ist die Qualität nach den Bauarbeiten etwas besser?
-#: last_checked: 2017-11-03 vvv
+#: last_checked: 2017-11-15 vvv
 #: check_frequency: 21d vvv
 	q4::inwork 13288,7653 13177,7644 13100,7626
 	q4::inwork 13177,7644 13188,7590

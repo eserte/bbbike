@@ -296,13 +296,13 @@ Winterfeldtstr. -> Martin-Luther-Str.: Martin-Luther-Str.	3::igndisp 6366,9926 6
 Winterfeldtstr. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6366,9926 6504,9961 6630,9990
 Winterfeldtstr. -> Martin-Luther-Str.: Martin-Luther-Str.	3::igndisp 6630,9990 6504,9961 6504,9865
 Winterfeldtstr. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6630,9990 6504,9961 6366,9926
-Straßenbahntrasse	3nocross::ignrte 12621,14313 12729,14227 12901,14093
-Danziger Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12901,14093 12729,14227 12601,14060
-Danziger Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12621,14313 12729,14227 12782,14300
-Hans-Otto-Str. -> Danziger Str.: Straßenbahntrasse	3::igndisp 12782,14300 12729,14227 12901,14093
-Hans-Otto-Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12782,14300 12729,14227 12601,14060
-Hans-Otto-Str. -> Danziger Str.: Straßenbahntrasse	3::igndisp 12601,14060 12729,14227 12621,14313
-Hans-Otto-Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12601,14060 12729,14227 12782,14300
+Straßenbahntrasse	3nocross::ignrte 12616,14315 12722,14232 12901,14093
+Danziger Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12901,14093 12722,14232 12601,14060
+Danziger Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12616,14315 12722,14232 12783,14312
+Hans-Otto-Str. -> Danziger Str.: Straßenbahntrasse	3::igndisp 12783,14312 12722,14232 12901,14093
+Hans-Otto-Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12783,14312 12722,14232 12601,14060
+Hans-Otto-Str. -> Danziger Str.: Straßenbahntrasse	3::igndisp 12601,14060 12722,14232 12616,14315
+Hans-Otto-Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12601,14060 12722,14232 12783,14312
 Straßenbahntrasse	3nocross::ignrte 11655,14697 11633,14631 11572,14452
 Prenzlauer Allee -> Sredzkistr.: Straßenbahntrasse	3::igndisp 11572,14452 11633,14631 11535,14688
 Prenzlauer Allee -> Christburger Str.: Straßenbahntrasse	3::igndisp 11655,14697 11633,14631 11912,14486
@@ -1390,8 +1390,8 @@ Straßenbahntrasse	3nocross::ignrte 13225,13620 13228,13615 13330,13468
 Danziger Str. -> Cotheniusstr.: Straßenbahntrasse	3::igndisp 13225,13620 13228,13615 13430,13733
 Cotheniusstr. -> Danziger Str.: Straßenbahntrasse	3::igndisp 13430,13733 13228,13615 13330,13468
 Straßenbahntrasse	3nocross::ignrte 11864,14781 11990,14714 12025,14695
-Danziger Str. -> Ella-Kay-Str.: Straßenbahntrasse	3::igndisp 11864,14781 11990,14714 12089,14891
-Ella-Kay-Str. -> Danziger Str.: Straßenbahntrasse	3::igndisp 12089,14891 11990,14714 12025,14695
+Danziger Str. -> Ella-Kay-Str.: Straßenbahntrasse	3::igndisp 11864,14781 11990,14714 12056,14831
+Ella-Kay-Str. -> Danziger Str.: Straßenbahntrasse	3::igndisp 12056,14831 11990,14714 12025,14695
 Thaters Privatweg	1 4148,15205 4103,15137 3892,14944 3893,14911 3899,14868 3956,14750
 Heinickeweg	1 2224,14825 2210,14696 2207,14576
 Jungfernsteig	1 938,14457 862,14463

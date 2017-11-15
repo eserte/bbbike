@@ -1056,6 +1056,15 @@ unbequemes Überqueren	3nocross::ignrte 10238,11741 10299,11786 10314,11804
 Spittelmarkt -> Spittelmarkt: unbequemes Überqueren	3::igndisp 10240,11740 10299,11786 10238,11741
 Spittelmarkt -> Kurstr.: unbequemes Überqueren	3::igndisp 10240,11740 10299,11786 10278,11802
 Kurstr. -> Spittelmarkt: unbequemes Überqueren	3::igndisp 10278,11802 10299,11786 10314,11804
+unbequemes Überqueren	3nocross::ignrte 10243,12546 10300,12587 10352,12627 10431,12709
+Marx-Engels-Forum -> Vera-Brittain-Ufer: unbequemes Überqueren	3::igndisp 10355,12551 10300,12587 10291,12600
+Marx-Engels-Forum -> Karl-Liebknecht-Str.: unbequemes Überqueren	3::igndisp 10355,12551 10300,12587 10243,12546
+Vera-Brittain-Ufer -> Marx-Engels-Forum: unbequemes Überqueren	3::igndisp 10291,12600 10300,12587 10355,12551
+Vera-Brittain-Ufer -> Karl-Liebknecht-Str.: unbequemes Überqueren	3::igndisp 10291,12600 10300,12587 10352,12627
+Karl-Liebknecht-Str. -> Vera-Brittain-Ufer: unbequemes Überqueren	3::igndisp 10243,12546 10300,12587 10291,12600
+Karl-Liebknecht-Str. -> Marx-Engels-Forum: unbequemes Überqueren	3::igndisp 10352,12627 10300,12587 10355,12551
+Heiligegeistgasse -> Karl-Liebknecht-Str.: unbequemes Überqueren	3::igndisp 10344,12641 10352,12627 10431,12709
+Karl-Liebknecht-Str. -> Heiligegeistgasse: unbequemes Überqueren	3::igndisp 10300,12587 10352,12627 10344,12641
 Mittelstreifen	3nocross::ignrte 19894,-835 19996,-740 20205,-548
 Schützenstr. -> Am Seegraben: Mittelstreifen	3::igndisp 19978,-712 19996,-740 20205,-548
 Mittelstreifen, Autobahnausfahrt	3nocross::ignrte 2037,11122 2102,11307 2095,11440
@@ -1746,8 +1755,8 @@ Mittelstreifen mit Straßenbahn	3nocross::ignrte 11709,14856 11609,14881 11535,14
 Danziger Str. -> Rykestr.: Mittelstreifen mit Straßenbahn	3::igndisp 11709,14856 11609,14881 11535,14688
 Rykestr. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11535,14688 11609,14881 11535,14900
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 12317,14535 12123,14643 12025,14695
-Danziger Str. -> Lilli-Henoch-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12025,14695 12123,14643 12186,14762
-Lilli-Henoch-Str. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12186,14762 12123,14643 12317,14535
+Danziger Str. -> Lilli-Henoch-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12025,14695 12123,14643 12183,14757
+Lilli-Henoch-Str. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12183,14757 12123,14643 12317,14535
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 10741,13685 10645,13711 10572,13731 10459,13760
 Torstr. -> Angermünder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 10572,13731 10645,13711 10703,13832
 Angermünder Str. -> Torstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10703,13832 10645,13711 10741,13685
@@ -2956,7 +2965,6 @@ Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht mögli
 Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?) gesperrt	2:inwork -11407,-1086 -11460,-1098 -11538,-1138 -11615,-1094
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
-Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10355,12551 10411,12471
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18680,-1506 18798,-1581 18853,-1656 18866,-1674
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603
@@ -3033,9 +3041,9 @@ Rumeyplan	1 8959,7824 8907,7773 8812,7730 8690,7704
 Greifswalder Str.	3nocross::ignrte 12422,14692 12473,14763 12528,14845
 Greifswalder Str. -> Olga-Benario-Prestes-Str.: Greifswalder Str.	3::igndisp 12528,14845 12473,14763 12628,14650
 Olga-Benario-Prestes-Str. -> Greifswalder Str.: Greifswalder Str.	3::igndisp 12628,14650 12473,14763 12422,14692
-Danziger Str.	3nocross::ignrte 12621,14313 12407,14470 12317,14535
+Danziger Str.	3nocross::ignrte 12616,14315 12407,14470 12317,14535
 Danziger Str. -> Eugen-Schönhaar-Str.: Danziger Str.	3::igndisp 12317,14535 12407,14470 12494,14532
-Eugen-Schönhaar-Str. -> Danziger Str.: Danziger Str.	3::igndisp 12494,14532 12407,14470 12621,14313
+Eugen-Schönhaar-Str. -> Danziger Str.: Danziger Str.	3::igndisp 12494,14532 12407,14470 12616,14315
 Straßenbahntrasse	3nocross::ignrte 13072,15590 13229,15692 13316,15758
 Greifswalder Str. -> Cohnstr.: Straßenbahntrasse	3::igndisp 13072,15590 13229,15692 13197,15734
 Cohnstr. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 13197,15734 13229,15692 13316,15758
@@ -3106,8 +3114,8 @@ Bechstedter Weg -> Hohenzollerndamm: unpassierbarer Mittelstreifen	3::igndisp 36
 Kette	BNP:5:-131 3370,9215
 Kette	BNP:5:-220 3264,9261
 unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3nocross::ignrte 12901,14093 12972,14173 12992,14196 13026,14234
-Kniprodestr. -> Heinz-Kapelle-Str.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3::igndisp 12901,14093 12972,14173 12782,14300
-Heinz-Kapelle-Str. -> Kniprodestr.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3::igndisp 12782,14300 12972,14173 12992,14196
+Kniprodestr. -> Heinz-Kapelle-Str.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3::igndisp 12901,14093 12972,14173 12783,14312
+Heinz-Kapelle-Str. -> Kniprodestr.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3::igndisp 12783,14312 12972,14173 12992,14196
 Kniprodestr. -> Ernst-Fürstenberg-Str.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3::igndisp 13026,14234 12992,14196 13049,14141
 Ernst-Fürstenberg-Str. -> Kniprodestr.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3::igndisp 13049,14141 12992,14196 12972,14173
 schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross::ignrte 13057,14267 13097,14307 13183,14400 13239,14461 13295,14521 13362,14593

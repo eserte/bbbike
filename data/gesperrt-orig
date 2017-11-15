@@ -1459,6 +1459,8 @@ Friedrichstr.: Straßenbahnhaltestelle	3nocross 9246,13235 9254,13171 9262,13111
 Reinickendorfer Str.: Mittelstreifen mit Zaun	3nocross 7966,15571 7975,15500 8049,15470
 #: XXX_prog unbequemes Überqueren, bessere Alternativen existieren, sollte als eine Art handicap für Punkte implementiert sein
 Spittelmarkt: unbequemes Überqueren	3nocross 10238,11741 10299,11786 10314,11804
+#: XXX_prog ggfs. routing_helper- oder handicap_directed-Lösungen implementieren
+Karl-Liebknecht-Str.: unbequemes Überqueren	3nocross 10243,12546 10300,12587 10352,12627 10431,12709
 Am Seegraben: Mittelstreifen	3nocross 19894,-835 19996,-740 20205,-548
 Messedamm: Mittelstreifen, Autobahnausfahrt	3nocross 2037,11122 2102,11307 2095,11440
 Berliner Str.: Straßenbahnhaltestelle	3nocross 10908,17142 10917,17088 10927,17022
@@ -2801,7 +2803,7 @@ Drängelgitter	BNP:3::trailer=10 22097,5879
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: XXX bleibt die Straße für den öffentlichen Verkehr gesperrt?
-#: last_checked: 2017-11-03
+#: last_checked: 2017-11-15
 Planstraße C: gesperrt, Privatstraße	2 12926,11224 12848,11093
 # 
 #: XXX wird aufgehoben, sobald das einsturzgefährdete Haus abgerissen wird
@@ -3054,7 +3056,7 @@ Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,
 #: check_frequency: 60d
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 # 
-#: last_checked: 2017-11-08
+#: last_checked: 2017-11-15
 Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2:inwork 14447,10491 14270,10584
 # 
 # REMOVED (mittlerweile schon passierbar) --- #: next_check_id: MARIANNEN-2016 vvv --- #: source_id: INKO_2147340291_COPY_1 vvv --- #: source_id: 2147340291 vvv --- #: source_id: 2147340768 vvv --- # REMOVED (aufgehoben) --- #: priority: #A vvv --- #: XXX laut fritz bis 16.12.2016 --- #: last_checked: 2016-12-15 vvv --- #: next_check: 2017-01-10 vvv --- Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11512,10105 11616,10288 --- #: source_id: 2147340777 --- #: XXX laut fritz bis 10.01.2017 --- #: priority: #A --- #: last_checked: 2016-12-15 --- #: check_frequency: 7d --- Mariannenstr.: Baustelle, Fahrbahn gesperrt	2s:q3 11671,10402 11616,10288
@@ -3189,12 +3191,12 @@ Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3
 #: next_check_id ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2017-10-06
+#: last_checked: 2017-11-15
 #: check_frequency: 120d
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2017-10-06
+#: last_checked: 2017-11-15
 #: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 
@@ -3258,9 +3260,9 @@ Sterndamm: Eisenbahnunterführung in Richtung Groß-Berliner Damm/Südostallee gesp
 #: source_id: IM_021335
 #: source_id: 2147338144
 #: source_id: LMS-BR_r_LMS-BR_6571
+#: last_checked: 2017-11-15
+#: next_check: 2018-06-30
 #: valid: 20140224-20180630
-# REMOVED #: next_check: 2018-06-30
-#: next_check: 2017-10-30
 Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,6895 14153,6795
 # 
 # REMOVED --- #: XXX siehe auch Busspur in radwege-orig vvv --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html vvv --- #: source_id: INKO_113041 vvv --- #: source_id: 2147339528 vvv --- 
@@ -3301,9 +3303,7 @@ Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
 # 
 # REMOVED --- #: by: Kai Wagner --- #: confirmed_by: srt --- #: XXX hier entsteht wohl eine neue Filiale von Möbel Kraft --- #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.474190.php --- #: last_checked: 2016-02-10 --- #: check_frequency: 360d --- Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 17221,14268 17274,14280
-# 
-#: last_checked: 2017-10-11
-Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10355,12551 10411,12471
+# REMOVED --- #: last_checked: 2017-10-11 --- Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10355,12551 10411,12471
 # 
 #: next_check_id: BER-20XX
 #: last_checked: 2012-05-06
@@ -3446,7 +3446,7 @@ Adolf-Scheidt-Platz	1 8731,8050 8765,8050 8783,8020 8769,7994 8731,7990
 Rumeyplan	1 8686,7726 8796,7751 8895,7797 8940,7835
 Rumeyplan	1 8959,7824 8907,7773 8812,7730 8690,7704
 Greifswalder Str.	3nocross 12422,14692 12473,14763 12528,14845
-Danziger Str.	3nocross 12621,14313 12407,14470 12317,14535
+Danziger Str.	3nocross 12616,14315 12407,14470 12317,14535
 #: XXX_prog die Cohnstr. ist u.U. unerreichbar, wenn man von Süden kommt. Evtl. sollte man die Straße hier teilen?
 #: note: Luftbild:
 Greifswalder Str.: Straßenbahntrasse	3nocross 13072,15590 13229,15692 13316,15758
