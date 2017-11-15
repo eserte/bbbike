@@ -170,8 +170,6 @@ sub travis_ci {
     my($doit, %opt) = @_;
     lock_keys %opt;
 
-    error "src => 'local' not supported" if $opt{src} eq 'local'; # XXX see below
-
     my $bbbike_rootdir = realpath("$FindBin::RealBin/..");
     my $docker_context_dir = tempdir("docker_context_XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
     my $dockerfile = <<EOF;
@@ -221,7 +219,7 @@ EOF
 RUN echo "#!/bin/sh" > /usr/bin/perlbrew
 RUN chmod 755 /usr/bin/perlbrew
 
-COPY travis-functions.sh /
+COPY port/travis-ci/travis-functions.sh /
 RUN cat /travis-functions.sh >> ~/.bash_profile
 
 # build config
@@ -267,7 +265,7 @@ RUN git clone --depth=1 https://github.com/eserte/bbbike.git$branch_args
 EOF
 	} elsif ($opt{src} eq 'local') {
 	    $dockerfile .= <<EOF;
-RUN git clone --depth=1 /bbbike-local bbbike$branch_args
+COPY . /bbbike
 EOF
 	} else {
 	    usage "Invalid --src value '$opt{src}', only 'github' and 'local' are known";
@@ -292,18 +290,26 @@ EOF
 CMD /bin/bash --login -e -c "wrapper start_webserver && wrapper start_xserver && wrapper init_webserver_environment && wrapper init_data && perl Makefile.PL && BBBIKE_TEST_FOR_LIVE=1 make test HARNESS_OPTIONS=j$opt{jobs}"
 EOF
     $doit->write_binary("$docker_context_dir/Dockerfile", $dockerfile);
-    $doit->copy("$bbbike_rootdir/port/travis-ci/travis-functions.sh", "$docker_context_dir/");
-    # mtime has to be preserved, otherwise older docker (<1.8?)
-    # will take mtime into account when calculating cache checksums
-    # see https://github.com/moby/moby/pull/12031
-    my $mtime = (stat("$bbbike_rootdir/port/travis-ci/travis-functions.sh"))[9];
-    $doit->utime($mtime, $mtime, "$docker_context_dir/travis-functions.sh");
+    if ($opt{src} eq 'local') {
+	in_directory {
+	    $doit->run(
+		       ['git', 'ls-files', '-z'], '|',
+		       ['rsync', '-a', '--files-from=-', '-0', '--no-dirs', '--whole-file', '.', $docker_context_dir],
+		      );
+	} $bbbike_rootdir;
+    } else {
+	$doit->make_path("$docker_context_dir/port/travis-ci");
+	$doit->copy("$bbbike_rootdir/port/travis-ci/travis-functions.sh", "$docker_context_dir/port/travis-ci/");
+	# mtime has to be preserved, otherwise older docker (<1.8?)
+	# will take mtime into account when calculating cache checksums
+	# see https://github.com/moby/moby/pull/12031
+	my $mtime = (stat("$bbbike_rootdir/port/travis-ci/travis-functions.sh"))[9];
+	$doit->utime($mtime, $mtime, "$docker_context_dir/port/travis-ci/travis-functions.sh");
+    }
 
     in_directory {
 	my $tag = 'bbbike-travis-ci-' . $opt{dist} . '-' . $opt{distver};
 	$doit->run([qw(docker build --tag), $tag,
-		    # XXX does not work --- https://github.com/moby/moby/issues/14080
-		    ($opt{src} eq 'local' ? ('-v', "$bbbike_rootdir:/bbbike-local") : ()),
 		    qw(.),
 		   ]);
 	$doit->run(['docker', 'run', '-ti',
