@@ -312,9 +312,7 @@ EOF
 	$doit->run([qw(docker build --tag), $tag,
 		    qw(.),
 		   ]);
-	$doit->run(['docker', 'run', '-ti',
-		    $tag,
-		   ]);
+	$doit->run(['docker', 'run', $tag]);
     } $docker_context_dir;
 }
 
