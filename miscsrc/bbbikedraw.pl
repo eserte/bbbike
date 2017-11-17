@@ -1,10 +1,10 @@
-#!/usr/bin/perl -w
+#!/usr/bin/env perl
 # -*- perl -*-
 
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2011 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2011,2017 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,6 +15,7 @@
 # Interface to BBBikeDraw.pm
 
 use strict;
+use warnings;
 use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",

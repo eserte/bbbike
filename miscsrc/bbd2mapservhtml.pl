@@ -1,4 +1,4 @@
-#!/usr/bin/perl -w
+#!/usr/bin/env perl
 # -*- perl -*-
 
 #
@@ -16,6 +16,7 @@
 # MapServer using the specified data for a new (route) layer.
 
 use strict;
+use warnings;
 use FindBin;
 use utf8;
 use lib ("$FindBin::RealBin/..",
