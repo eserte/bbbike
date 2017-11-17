@@ -2294,9 +2294,9 @@ mehrere Poller	BNP:1::trailer=6 12299,19143
 Poller	BNP:1::trailer=6 8350,10662
 Drängelgitter	BNP:3::trailer=10 10062,15927
 #: next_check_id: LORTZING-2014
-#: XXX eventuell temporär wegen der Baustraße
-#: last_checked: 2017-09-21
-#: check_frequency: 120d
+#: next_check_id: LICHTBURGRING-2017
+#: XXX eventuell temporär wegen der Baustraße (vielleicht für das Wohngebiet Lichtburgring?)
+#: last_checked: 2017-11-17
 zwei Drängelgitter	BNP:6::trailer=15 10038,15418
 Schranke	BNP:3 -7969,-1659
 # REMOVED (existiert nicht mehr) --- Drängelgitter	BNP:3::trailer=10 18126,9075
@@ -2820,13 +2820,15 @@ Wartenbergstr.	1s:q2:inwork 15423,11667 15337,11639 15328,11636 15300,11584
 #: check_frequency: 120d
 Im Lichtenhain: neue Straße, zurzeit Bauarbeiten; Qualität, genaue Lage?	2::inwork 16497,10685 16462,10571
 # 
+#: next_check_id: LICHTBURGRING-2017 vvv
 #: XXX wie wird die endgültige Fahrbahnbeschaffenheit sein? Asphalt? vvv
 #: osm_watch: way id="437684188" version="2"
-#: last_checked: 2017-10-09 vvv
+#: last_checked: 2017-11-17 vvv
 Lichtburgring: Baustelle, Betreten verboten	2::inwork 10004,15636 9933,15815
 Bärbel-Bohley-Ring: Baustelle, Betreten verboten	2::inwork 9933,15815 9744,15793
 #: last_checked ^^^
 #: XXX ^^^
+#: next_check_id ^^^
 # 
 # REMOVED --- #: last_checked: 2017-09-22 --- Oberwallstr.: Bauarbeiten, Einbahnstraße	1s:q3:inwork 9898,12161 9913,12068
 # 

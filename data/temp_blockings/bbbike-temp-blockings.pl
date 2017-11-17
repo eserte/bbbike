@@ -26688,4 +26688,16 @@ EOF
 	2::inwork 15055,11505 15162,11458
 EOF
      },
+     { from  => 1510939800, # 2017-11-17 18:30
+       until => 1511146800, # 2017-11-20 04:00
+       dont_check_date => 1,
+       text  => ' Roßstraßenbrücke: Bauarbeiten, Brücke nur für Fußgänger offen, außerdem Komplettsperrung der Uferwege (Fischerinsel und Märkisches Ufer), 18.11.2017, 18.30 Uhr - 18.11.2017, 24.00 Uhr sowie 19.11.2017, 07.00 Uhr - 20.11.2017, 04.00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2017/pressemitteilung.649670.php',
+       data  => <<EOF,
+	q4::inwork 10722,11816 10687,11853 10672,11870 10604,11941
+	2::inwork 10776,11942 10672,11870
+	2::inwork 10687,11853 10869,11949
+EOF
+     },
     );
