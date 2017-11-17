@@ -19,7 +19,9 @@ wrapper() {
 # Functions for the before-install phase:
 
 init_env_vars() {
-    export BBBIKE_LONG_TESTS=1 BBBIKE_TEST_SKIP_MAPSERVER=1
+    : ${BBBIKE_LONG_TESTS=1}
+    : ${BBBIKE_TEST_SKIP_MAPSERVER=1}
+    export BBBIKE_LONG_TESTS BBBIKE_TEST_SKIP_MAPSERVER
     # The default www.cpan.org may not be the fastest one, and may
     # even cause problems if an IPv6 address is chosen...
     export PERL_CPANM_OPT="--mirror https://cpan.metacpan.org --mirror http://cpan.cpantesters.org"
@@ -69,13 +71,17 @@ install_non_perl_dependencies() {
 	javascript_package=libmozjs-24-bin
     fi
     sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep tre-agrep libgd2-xpm-dev ttf-bitstream-vera ttf-dejavu gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev pdftk poppler-utils
+    if [ "$BBBIKE_TEST_SKIP_MAPSERVER" != "1" ]
+    then
+	sudo apt-get install -qq mapserver-bin cgi-mapserver
+    fi
 }
 
 # Some CPAN modules not mentioned in Makefile.PL, usually for testing only
 install_perl_testonly_dependencies() {
     if [ "$USE_SYSTEM_PERL" = "1" ]
     then
-	sudo apt-get install -qq libemail-mime-perl libhtml-treebuilder-xpath-perl libbarcode-zbar-perl
+	sudo apt-get install -qq libemail-mime-perl libhtml-treebuilder-xpath-perl libbarcode-zbar-perl libwww-mechanize-formfiller-perl
     else
 	cpanm --quiet --notest Email::MIME HTML::TreeBuilder::XPath Barcode::ZBar
     fi
@@ -190,7 +196,19 @@ install_perl_dependencies() {
 # Functions for the before-script phase:
 
 init_cgi_config() {
-    (cd cgi && ln -snf bbbike-debian-no-mapserver.cgi.config bbbike.cgi.config)
+    if [ "$BBBIKE_TEST_SKIP_MAPSERVER" = "1" ]
+    then
+	(cd cgi && ln -snf bbbike-debian-no-mapserver.cgi.config bbbike.cgi.config)
+    else
+	(cd cgi && ln -snf bbbike-debian.cgi.config bbbike.cgi.config)
+	## Additional Mapserver config+data stuff required
+	# Makefile needed by mapserver/brb/Makefile
+	perl Makefile.PL
+	# -j does not work here
+	(cd data && $(perl -I.. -MBBBikeBuildUtil=get_pmake -e 'print get_pmake') mapfiles)
+	# -j not tested here
+	(cd mapserver/brb && touch -t 197001010000 Makefile.local.inc && $(perl -I../.. -MBBBikeBuildUtil=get_pmake -e 'print get_pmake'))
+    fi
     (cd cgi && ln -snf bbbike2-travis.cgi.config bbbike2.cgi.config)
 }
 
