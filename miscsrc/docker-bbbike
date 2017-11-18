@@ -425,6 +425,10 @@ The same, but use another Ubuntu version (default is trusty):
 
     ./miscsrc/docker-bbbike travis-ci --distver precise
 
+A crontab entry may look like this:
+
+    48 0 * * *      mkdir -p $HOME/log/docker-bbbike-debian-jessie && cd $HOME/cvrsnica/src/bbbike && ./miscsrc/docker-bbbike test --dist debian --distver jessie --src local --env BBBIKE_TEST_SKIP_MAPSERVER=0 > $HOME/log/docker-bbbike-debian-jessie/$(date +\%FT\%T.log) 2>&1
+
 =head1 SEE ALSO
 
 L<docker(1)>.
