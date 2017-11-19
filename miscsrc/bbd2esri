@@ -48,18 +48,6 @@ my $polar;
 my $city;
 my $country;
 
-# Generated with M-x occur --append in landstrassen-orig
-# and some hand-editing... # XXX automate!
-my @stadt_strassen = (qw(Potsdam Erkner Schönefeld
-Dahlwitz-Hoppegarten Kleinmachnow Stahnsdorf Teltow Gosen Mahlow
-Mahlow-Waldblick Brandenburg Frankfurt Cottbus), 'Hohen Neuendorf',
-qw(Borgsdorf Oranienburg Rheinsberg Woltersdorf Rüdersdorf Schöneiche
-Strausberg Lindenberg Falkensee Dallgow-Döberitz Werder), 'Königs
-Wusterhausen', qw(Eberswalde Bernau Fürstenwalde Lübbenau Luckenwalde
-Neuruppin Mittenwalde));
-my $stadt_strassen_rx0 = "\\((?:" . join("|", map { quotemeta } @stadt_strassen) . ")\\)";
-my $stadt_strassen_rx = qr/$stadt_strassen_rx0/;
-
 use constant Strassen_SHORTCAT => Strassen::LAST + 1;
 
 if (!GetOptions("o=s" => \$outprefix,
@@ -99,6 +87,8 @@ my @files = @ARGV;
 if (!@files) {
     die "No files specified";
 }
+
+my $stadt_strassen_rx = get_stadt_strassen_rx();
 
 if ($polar) {
     require Karte::Standard;
@@ -401,6 +391,7 @@ sub create_dbf_record {
     }
     if (exists $args{-type}) {
 	if ($args{-type} eq 'street-l') {
+	    my $stadt_strassen_rx = get_stadt_strassen_rx();
 	    if ($s_rec->[Strassen::NAME] =~ $stadt_strassen_rx) {
 		($displayname = $s_rec->[Strassen::NAME]) =~ s/\s*$stadt_strassen_rx//;
 	    } else {
@@ -562,6 +553,29 @@ sub do_encode {
 	HTML::Entities::encode_numeric($text, q{<>&"'}.qq{\200-\xffffffff});
     } else {
 	unidecode_any($text, $encoding);
+    }
+}
+
+{
+    my $stadt_strassen_rx;
+    sub get_stadt_strassen_rx {
+	if (!defined $stadt_strassen_rx) {
+	    my %stadt;
+	    for my $basefile (qw(landstrassen-orig landstrassen2-orig)) {
+		my $file = "$FindBin::RealBin/../data/$basefile";
+		my $s = Strassen->new_stream($file);
+		$s->read_stream(sub {
+				    my $dir = $_[1];
+				    if ($dir->{append_comment}) {
+					$stadt{$dir->{append_comment}->[0]} = 1;
+				    }
+				});
+	    }
+	    my @stadt_strassen = sort keys %stadt;
+	    my $stadt_strassen_rx0 = "\\((?:" . join("|", map { quotemeta } @stadt_strassen) . ")\\)";
+	    $stadt_strassen_rx = qr/$stadt_strassen_rx0/;
+	}
+	$stadt_strassen_rx;
     }
 }
 
