@@ -25804,13 +25804,13 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2017-11-14 07:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-11-15 11:00:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 15. November 2017 ab ca. 10:00 Uhr',
+     { from  => $isodate2epoch->("2017-11-21 07:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-11-22 11:00:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 22. November 2017 ab ca. 10:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX weitere Sperrungen: 18. Oktober sowie 8., 15., 22. und 29. November
-#: next_check: 2017-11-16
+#: next_check: 2017-11-23
 #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
@@ -26522,6 +26522,7 @@ EOF
        text  => 'Alt-Stralau - Spreeufer: Verbindung wegen Baustelle gesperrt, Ende unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
+#: osm_watch: way id="541556560" version="1"
 #: last_checked: 2017-11-07
 	2::inwork 14652,10201 14569,10055
 EOF

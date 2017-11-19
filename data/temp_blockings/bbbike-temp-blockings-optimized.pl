@@ -3968,7 +3968,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: XXX weitere Sperrungen: 18. Oktober sowie 8., 15., 22. und 29. November
+#: next_check: 2017-11-23
+#: priority: #A
+	2::temp -2218,5133 -927,6888
+	2::temp -2825,5588 -1925,6790 -2080,6897
+	2::temp -1925,6790 -1851,6887
+',
+         'from' => 1511244000,
+         'id' => 2840,
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 22. November 2017 ab ca. 10:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1511344800
+       },
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -4274,7 +4287,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1513594800
        },
        {
-         'data' => '#: last_checked: 2017-11-07
+         'data' => '#: osm_watch: way id="541556560" version="1"
+#: last_checked: 2017-11-07
 	2::inwork 14652,10201 14569,10055
 ',
          'from' => undef,

@@ -2924,6 +2924,7 @@ Gutenbergstr.: Einbahnstraﬂe wegen Bauarbeiten	1s:q3:inwork 5317,12242 5518,1215
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036562139600/562139600/00280921/21-Anlagen/01/DS0329_VzK_Strassenbenennung_Moeckernkiez_fina.pdf
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_30_3365_3488_online.pdf (Benennung)
 #: XXX Qualit‰t, genaue Lage, Sackgasse?
+#: osm_watch: way id="264361563" version="1"
 #: last_checked: 2017-10-17
 #: check_frequency: 30d
 Mˆckernkiez: Bauarbeiten	2::inwork 8778,9759 8741,9741 8729,9670 8587,9590 8566,9643
@@ -3007,7 +3008,7 @@ BouchÈstr.: Baustelle, Einbahnstraﬂenregelung	1s:q3:inwork 13298,9252 13190,9139
 Mengerzeile: Baustelle, Einbahnstraﬂenregelung	1s:q3:inwork 13176,9302 13100,9210
 # 
 #: next_check_id: HEIDELBERGER-2017
-#: last_checked: 2017-11-08
+#: last_checked: 2017-11-18
 #: check_frequency: 60d
 Heidelberger Str.: Baustelle, Einbahnstraﬂenregelung	1s:q3:inwork 13489,9199 13420,9259 13357,9313
 # 
@@ -3138,7 +3139,7 @@ Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,126
 #: next_check: 2017-10-15 vvv
 IGA 2017-Gel‰nde: Wege gesperrt	2 22455,14815 22417,14837 22380,14831 22331,14793 22254,14793 22199,14744 22164,14722 22108,14710 22090,14704 22071,14630 22051,14604 22026,14601 22012,14556 21985,14513 22026,14501 22061,14471 22172,14287 22414,14144 22503,14104
 IGA 2017-Gel‰nde: Wege gesperrt	2 22414,14144 22462,14172 22639,14384 22679,14450 22670,14520
-#: osm_watch: way id="338582727" version="3"
+#: osm_watch: way id="338582727" version="4"
 IGA 2017-Gel‰nde: Wege gesperrt	2 22414,14144 22407,14111 22404,13984
 # REMOVED --- : next_check: 2016-11-25 --- IGA 2017-Gel‰nde: Wege gesperrt	2 21408,14591 21450,14576 21822,14480 21925,14500 21948,14501
 IGA 2017-Gel‰nde: Wege gesperrt	2 21948,14501 21985,14513
@@ -3225,7 +3226,7 @@ Kirchdorfer Str.: Straﬂe fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 # 
 #: by: http://www.dafmap.de/d/berlin.html?center=52.497318+13.462016&zoom=17#
-#: last_checked: 2017-11-04
+#: last_checked: 2017-11-19
 #: check_frequency: 120d
 am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14463,10212
 # 
