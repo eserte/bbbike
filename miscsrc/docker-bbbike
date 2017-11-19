@@ -319,7 +319,7 @@ EOF
 
     # Start all services and finally run the test suite
     $dockerfile .= <<EOF;
-CMD /bin/bash --login -e -c "wrapper start_webserver && wrapper start_xserver && wrapper init_webserver_environment && wrapper init_data && perl Makefile.PL && BBBIKE_TEST_FOR_LIVE=1 make test HARNESS_OPTIONS=j$opt{jobs}"
+CMD /bin/bash --login -e -c "wrapper start_webserver && wrapper start_xserver && wrapper init_webserver_environment && wrapper init_data && perl Makefile.PL && BBBIKE_TEST_FOR_LIVE=1 make test HARNESS_OPTIONS=j$opt{jobs} && make distcheck"
 EOF
     ## End of Dockerfile building
 

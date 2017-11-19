@@ -632,8 +632,8 @@ test-with-protocol: permission
 	    export AUTOMATED_TESTING=1;\
 	    envinfo >$$LOGDIR/bbbike-test-$$DATE 2>&1;\
 	    $(MAKE) ext  >>$$LOGDIR/bbbike-test-$$DATE 2>&1;\
-	    if ! $(MAKE) test >>$$LOGDIR/bbbike-test-$$DATE 2>&1; then \
-		echo "$(MAKE) test failed, please look at $$LOGDIR/bbbike-test-$$DATE for output";\
+	    if ! $(MAKE) test distcheck >>$$LOGDIR/bbbike-test-$$DATE 2>&1; then \
+		echo "$(MAKE) test or distcheck failed, please look at $$LOGDIR/bbbike-test-$$DATE for output";\
 		has_failure=yes;\
 	    fi; \
 	    envinfo >$$LOGDIR/bbbike-test-data-$$DATE 2>&1;\

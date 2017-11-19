@@ -24,6 +24,8 @@ before_script:
  - wrapper init_data
 script:
  - perl Makefile.PL && make test HARNESS_OPTIONS=j4
+after_script:
+ - make distcheck
 language: perl
 dist: trusty
 matrix:
