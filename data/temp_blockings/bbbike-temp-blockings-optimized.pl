@@ -4083,7 +4083,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-11-15
+#: last_checked: 2017-11-20
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
          'from' => undef,
@@ -4408,20 +4408,6 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Uferweg Plötzensee: wegen Unterspülung gesperrt, Umfahrung über enge Pfade möglich',
          'type' => 'gesperrt',
          'until' => undef
-       },
-       undef,
-       {
-         'data' => '	q4::inwork 10722,11816 10687,11853 10672,11870 10604,11941
-	2::inwork 10776,11942 10672,11870
-	2::inwork 10687,11853 10869,11949
-',
-         'dont_check_date' => 1,
-         'from' => 1510939800,
-         'id' => 2920,
-         'source_id' => 'http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2017/pressemitteilung.649670.php',
-         'text' => ' Roßstraßenbrücke: Bauarbeiten, Brücke nur für Fußgänger offen, außerdem Komplettsperrung der Uferwege (Fischerinsel und Märkisches Ufer), 18.11.2017, 18.30 Uhr - 18.11.2017, 24.00 Uhr sowie 19.11.2017, 07.00 Uhr - 20.11.2017, 04.00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1511146800
        }
      
 );

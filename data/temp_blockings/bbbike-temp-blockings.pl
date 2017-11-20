@@ -7029,7 +7029,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004454',
        data  => <<EOF,
-	2::temp 9106,12795 9056,12743 8870,12647
+	2::temp 9106,12795 9056,12743 9025,12727 8870,12647
 EOF
      },
      { from  => 1168898272, # 2007-01-15 22:57
@@ -23992,7 +23992,7 @@ EOF
        source_id => 'IM_023614',
        data  => <<EOF,
 #: add_fragezeichen: Können Radfahrer trotzdem passieren?
-	q4::inwork 8870,12647 9056,12743
+	q4::inwork 8870,12647 9025,12727 9056,12743
 EOF
      },
      { from  => undef, # 
@@ -26145,7 +26145,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-11-15
+#: last_checked: 2017-11-20
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },
