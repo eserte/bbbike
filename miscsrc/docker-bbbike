@@ -246,7 +246,7 @@ EOF
 RUN echo "#!/bin/sh" > /usr/bin/perlbrew
 RUN chmod 755 /usr/bin/perlbrew
 
-COPY port/travis-ci/travis-functions.sh /
+COPY bbbike/port/travis-ci/travis-functions.sh /
 RUN cat /travis-functions.sh >> ~/.bash_profile
 
 EOF
@@ -291,7 +291,7 @@ RUN git clone --depth=1 https://github.com/eserte/bbbike.git$branch_args
 EOF
 	} elsif ($opt{src} eq 'local') {
 	    $dockerfile .= <<EOF;
-COPY . /bbbike
+COPY bbbike /bbbike
 EOF
 	} else {
 	    usage "Invalid --src value '$opt{src}', only 'github' and 'local' are known";
@@ -319,16 +319,18 @@ EOF
 
     # Start all services and finally run the test suite
     $dockerfile .= <<EOF;
-CMD /bin/bash --login -e -c "wrapper start_webserver && wrapper start_xserver && wrapper init_webserver_environment && wrapper init_data && perl Makefile.PL && BBBIKE_TEST_FOR_LIVE=1 make test HARNESS_OPTIONS=j$opt{jobs} && make distcheck"
+CMD /bin/bash --login -e -c "wrapper start_webserver && wrapper start_xserver && wrapper init_webserver_environment && wrapper init_data && perl Makefile.PL && make distcheck && BBBIKE_TEST_FOR_LIVE=1 make test HARNESS_OPTIONS=j$opt{jobs}"
 EOF
+    # "make test" should be last command --- check scripts may look at the end of the generated log
     ## End of Dockerfile building
 
     $doit->write_binary("$docker_context_dir/Dockerfile", $dockerfile);
     if ($opt{src} eq 'local') {
+	$doit->mkdir("$docker_context_dir/bbbike");
 	in_directory {
 	    $doit->run(
 		       ['git', 'ls-files', '-z'], '|',
-		       ['rsync', '-a', '--files-from=-', '-0', '--no-dirs', '--whole-file', '.', $docker_context_dir],
+		       ['rsync', '-a', '--files-from=-', '-0', '--no-dirs', '--whole-file', '.', "$docker_context_dir/bbbike"],
 		      );
 	} $bbbike_rootdir;
     } else {
