@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2015,2017 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -72,19 +72,81 @@ use List::Util qw(max);
     sub get_module_defs {
 	shift->{MODULEDEFS};	
     }
+
+    sub minimize {
+	my $self = shift;
+
+	my @contents = @{ $self->{MODULEDEFS} };
+
+	require Parse::CPAN::Packages::Fast;
+	require Tie::IxHash;
+	my $pcpf = Parse::CPAN::Packages::Fast->new;
+	tie my %seen, 'Tie::IxHash';
+	for my $moddef (@contents) {
+	    my $m = $pcpf->package($moddef->[0]);
+	    if ($m) {
+		my $d = $m->distribution;
+		my $distvname = $d->distvname;
+		(my $modname2dist = $moddef->[0]) =~ s{::}{-}g;
+		my $is_primary_mod = $modname2dist eq $d->dist;
+		if ($seen{$distvname}) {
+		    if ($is_primary_mod) {
+			$seen{$distvname} = $moddef;
+		    } elsif (length $moddef->[0] < length $seen{$distvname}->[0]) {
+			$seen{$distvname} = $moddef;
+		    }
+		} else {
+		    $seen{$distvname} = $moddef;
+		}
+	    }
+	}
+
+	@contents = ();
+	for my $k (keys %seen) {
+	    push @contents, $seen{$k};
+	}
+
+	$self->{MODULEDEFS} = \@contents;
+    }
+}
+
+sub usage (;$) {
+    my $msg = shift;
+    warn $msg, "\n" if defined $msg;
+    require File::Basename;
+    die <<EOF;
+usage: @{[ File::Basename::basename($0) ]} [-encoding ...] [-minimize]
+                       [-action list|prereq_pm|dump] /path/to/Bundle.pm
+
+Parse a CPAN Bundle file and output contained modules.
+
+-encoding encoding: output encoding, only used with prereq_pm action
+-minimize:          only output a "principal" module per distribution
+-action list:       just list the modules
+-action prereq_pm:  output lines for EUMM's PREREQ_PM section
+-action dump:       a Data::Dumper dump
+EOF
 }
 
 my $action = 'list';
 my $encoding;
+my $minimize;
 GetOptions(
 	   'action=s' => \$action,
 	   'encoding=s' => \$encoding,
+	   'minimize' => \$minimize,
 	  )
-    or die "usage?";
-my $bundle_file = shift or die "Bundle file?";
+    or usage;
+my $bundle_file = shift
+    or usage "Bundle file is missing";
+@ARGV
+    and usage "Too many arguments";
 
 my $converter = Bundle2Task->new;
 $converter->parse_file($bundle_file);
+if ($minimize) {
+    $converter->minimize;
+}
 my $contents = $converter->get_module_defs;
 
 if ($action eq 'list') {
