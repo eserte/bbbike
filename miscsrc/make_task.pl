@@ -1,10 +1,10 @@
-#!/usr/bin/perl -w
+#!/usr/bin/env perl
 # -*- perl -*-
 
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2015,2017 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -22,11 +22,13 @@ use POSIX qw(strftime);
 my $o;
 my $bundle;
 my $name;
+my $minimize;
 my $debug;
 GetOptions(
 	   "o=s"      => \$o,
 	   "bundle=s" => \$bundle,
 	   "name=s"   => \$name,
+	   "minimize" => \$minimize,
 	   "debug!"   => \$debug,
 	  )
     or die "usage?";
@@ -37,7 +39,7 @@ $name   or die "Please specify task name (-name option)";
 
 my $prereq_pm;
 {
-    open my $fh, "-|", $^X, "$FindBin::RealBin/parse_bundle.pl", -encoding => 'utf-8', -action => 'prereq_pm', $bundle
+    open my $fh, "-|", $^X, "$FindBin::RealBin/parse_bundle.pl", ($minimize ? '-minimize' : ()), -encoding => 'utf-8', -action => 'prereq_pm', $bundle
 	or die $!;
     binmode $fh, ':encoding(utf-8)';
     while(<$fh>) {
