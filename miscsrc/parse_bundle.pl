@@ -1,4 +1,4 @@
-#!/usr/bin/perl -w
+#!/usr/bin/env perl
 # -*- perl -*-
 
 #
@@ -13,6 +13,7 @@
 #
 
 use strict;
+use warnings;
 use Getopt::Long;
 use List::Util qw(max);
 
