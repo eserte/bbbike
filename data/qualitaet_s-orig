@@ -963,9 +963,9 @@ Wuhlewanderweg: guter Asphalt	Q0 22030,6600 22097,6414 22146,6338 22214,6271 222
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
 #: last_checked: 2017-08-10 vvv
 #: check_frequency: 60d vvv
-#: osm_watch: way id="317233618" version="3"
+#: osm_watch: way id="317233618" version="4"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
-#: osm_watch: way id="25216398" version="26"
+#: osm_watch: way id="25216398" version="27"
 Wuhlewanderweg: Verbundsteine, teilweise etwas uneben	Q1- 22084,5877 22070,5876 21846,5856 21744,5804 21618,5699 21602,5685 21507,5620
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -7904,7 +7904,8 @@ Straße 100: Asphalt mit einigen Schäden	Q1+ 13690,23083 13656,23036 13610,22949
 Krontaler Str.: Asphalt	Q0 13498,22636 13365,22743 13429,22943 13521,23057 13551,23072 13656,23036 13805,22935 13884,22879
 Straße 87 (Blankenburg): Asphalt	Q0 13441,22298 13476,22345
 (Fußgängerbrücke): Asphalt/Beton	Q0 13193,21700 13168,21706 13046,21734 13008,21783
-Herwigstr.: teilweise Asphalt, teilweise unbefestigt	Q2+ 12993,21112 13165,21144
+#: XXX früher: "teilweise Asphalt, teilweise unbefestigt", heute vermutlich komplett asphaltiert, nochmal genauer prüfen
+Herwigstr.: Asphalt	Q0 12993,21112 13165,21144
 Waldammerweg: unbefestigter Weg	Q2 12901,20546 13095,20584 13276,20619 13409,20645
 Waldammerweg: Kopfsteinpflaster	Q2 13089,20626 13095,20584 13110,20514
 Waldammerweg: unbefestigter Weg	Q2 13269,20660 13276,20619 13299,20542
@@ -11319,6 +11320,7 @@ Nikolaus-Groß-Weg: guter Asphalt	Q0 2038,13870 2025,13815
 Bansiner Str.: guter Asphalt	Q0 22723,12631 22722,12710 22692,12747 22597,12751 22595,12856 22619,12885 22679,12888 22785,12840 22807,12782 22906,12766
 #: corrected_by: srt (mäßiger Asphalt -> ...)
 Bruno-Taut-Ring: Asphalt	Q0 13833,3665 13682,3718 13628,3781 13632,3875 13673,3915 13726,3928 13909,3845
+#: XXX gepflastert stimmt, aber vermutlich zwei unterschiedliche Typen: Großpflaster im östlichen Abschnitt und Kleinsteinpflaster im westlichen Abschnitt, genauer erfassen
 Pfeilstr.: mäßiges Kopfsteinpflaster	Q2 9897,18496 9568,18682
 #: confirmed_by: srt
 Lauterbachstr.: guter Asphalt	Q0 11272,17930 11296,17799
@@ -12168,7 +12170,7 @@ Majakowskiring: asphaltiert mit den üblichen Schlaglöchern	Q1 10373,18889 10307,
 Majakowskiring: asphaltiert mit den üblichen Schlaglöchern	Q1 10434,18907 10373,18889
 #: XXX Asphaltierung ist geplant
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4247
-#: last_checked: 2017-09-21
+#: last_checked: 2017-11-15 (mapillary)
 #: check_frequency: 90d
 Güllweg: mäßiges Kopfsteinpflaster	Q2 10115,19105 10095,19179 10086,19209 10018,19429
 #: by: ^^^
@@ -13088,6 +13090,7 @@ Alter Bernauer Heerweg: fester Sand-/Schotterweg; gut befahrbar	Q1 8143,23305 82
 Lindenufer: guter Asphalt	Q0 -3135,14183 -3275,14114
 #: note: die ADFC-Karte sagt hier "mäßig geeignet": vvv
 Beuthstr.: Asphalt	Q0 10843,20301 10784,20275
+#: XXX wurde der Asphalt hier verbessert?
 Beuthstr.: Asphalt mit Löchern	Q1 10784,20275 10650,20205 10534,20144 10435,20098 10309,20032 10132,19993
 #: note ^^^
 #: confirmed_by: srt
@@ -17872,12 +17875,14 @@ Leonhard-Frank-Str.: Kopfsteinpflaster	Q2 9229,18178 9342,18323
 #: confirmed_by: srt
 Leonhard-Frank-Str.: Asphalt	Q0 9342,18323 9378,18370 9480,18539
 #: note: laut ADFC-Karte nordöstlich des Heinrich-Mann-Platzes schlecht geeignet:
+#: XXX prüfen --- sieht in mapillary eher wie normales Großsteinpflaster aus
 Leonhard-Frank-Str.: schlechtes Kopfsteinpflaster	Q3 9542,18634 9568,18682 9613,18758
 #: by: ^^^
 # 
 #: by: Christian Uhrich: vvv
 #: confirmed_by: srt
 Stechowstr.: mäßiger fester Sandweg, unebene Fahrbahn	Q2 11007,20112 11066,19986
+#: XXX Qualität überprüfen: gibt es noch Schlaglöcher?
 Straße 103 (Niederschönhausen): mäßiger Asphalt, Schlaglöcher	Q1- 10914,20065 11051,19789
 #: by: ^^^
 # 

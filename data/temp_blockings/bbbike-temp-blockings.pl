@@ -17298,11 +17298,11 @@ EOF
 	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998
 EOF
      },
-     { from  => $isodate2epoch->("2016-12-25 06:00:00"), # siehe auch anderen Eintrag mit weiteren Sperrungen am 31. und 1.
-       until => $isodate2epoch->("2017-01-02 23:59:59"),
+     { from  => $isodate2epoch->("2017-12-25 06:00:00"), # siehe auch anderen Eintrag mit weiteren Sperrungen am 31. und 1.
+       until => $isodate2epoch->("2018-01-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 12]],
-       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., vom 26.12.2016 bis 02.01.2017',
+       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., vermutlich vom 26.12.2017 bis 02.01.2018',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
@@ -21486,7 +21486,7 @@ EOF
        until => $isodate2epoch->("2016-12-11 21:00:00"), #
        periodic => 1,
        recurrences => [['yearly', days => 9, months => 12]],
-       recurrence_prewarn_days => 14, # 2017 stand der Termin einen Monat vorher noch nicht fest
+       recurrence_prewarn_days => 7, # 2017 stand der Termin zwei Wochen vorher noch nicht fest
        text  => 'Kunsthandwerklicher Weihnachtsmarkt in Lichtenrade: Alt-Lichtenrade, Straße vermutlich gesperrt (10. Dezember 2016 bis 11. Dezember 2016, jeweils 11-20 Uhr)',
        type  => 'handicap',
        data  => <<EOF,
@@ -24978,11 +24978,11 @@ EOF
 	2::inwork 20640,7122 20722,6971
 EOF
      },
-     { from  => $isodate2epoch->("2016-12-30 12:00:00"), # 1451473200, # 2015-12-30 12:00 # siehe auch anderen Eintrag mit früheren Sperrungen
-       until => $isodate2epoch->("2017-01-01 12:00:00"), # )1451646000, # 2016-01-01 12:00
+     { from  => $isodate2epoch->("2017-12-30 12:00:00"), # 1451473200, # 2015-12-30 12:00 # siehe auch anderen Eintrag mit früheren Sperrungen
+       until => $isodate2epoch->("2018-01-01 12:00:00"), # )1451646000, # 2016-01-01 12:00
        periodic => 1,
        recurrences => [['yearly', days => 31, months => 12]],
-       text  => 'Regierungsviertel u.a. Dorotheenstr., Scheidemannstr., Heinrich-von-Gagern-Str. und Paul-Löbe-Allee: wegen Silvesterparty gesperrt, vom 31.12.2016 12:00 Uhr bis 01.01.2017 12:00 Uhr',
+       text  => 'Regierungsviertel u.a. Dorotheenstr., Scheidemannstr., Heinrich-von-Gagern-Str. und Paul-Löbe-Allee: wegen Silvesterparty gesperrt, vermutlich vom 31.12.2017 12:00 Uhr bis 01.01.2018 12:00 Uhr',
        type  => 'gesperrt',
        source_id => '2147339665',
        data  => <<EOF,
@@ -25804,14 +25804,14 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2017-11-21 07:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-11-22 11:00:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 22. November 2017 ab ca. 10:00 Uhr',
+     { from  => $isodate2epoch->("2017-11-28 07:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2017-11-29 11:00:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 29. November 2017 ab ca. 10:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX weitere Sperrungen: 18. Oktober sowie 8., 15., 22. und 29. November
-#: next_check: 2017-11-23
-#: priority: #A
+# REMOVED --- #: next_check: 2017-11-23
+# REMOVED --- #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
 	2::temp -1925,6790 -1851,6887
@@ -26145,7 +26145,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-11-20
+#: last_checked: 2017-11-23
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },

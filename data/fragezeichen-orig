@@ -32,7 +32,7 @@ Danziger Str.	?::projected 12616,14315 12722,14232 12901,14093 12975,13990 13037
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2017-11-17
+#: last_checked: 2017-11-24
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -304,8 +304,8 @@ Kastanienallee: Radverkehrsanlagen sind vorgesehen (Radspuren)	?::projected 8900
 #: XXX "ab 2017"
 #: source_id: 2147341430
 #: XXX haben die Bauarbeiten (laut vmz bis Ende Juni 2017) was damit zu tun?
-#: osm_watch: way id="9711554" version="35"
-#: osm_watch: way id="29560375" version="12"
+#: osm_watch: way id="9711554" version="36"
+#: osm_watch: way id="29560375" version="13"
 #: last_checked: 2017-10-14
 #: check_frequency: 90d
 Pasewalker Str.: Schutzstreifen werden erstellt, außerdem eine Ampel an der Kreuzung Bahnhofstr.	?::projected 12121,20969 12158,21166 12166,21208 12188,21330 12209,21448 12172,21545 12042,21886
@@ -697,7 +697,7 @@ Bersarinplatz: Verbesserung "Radweganbindung Ostseite"	?::projected; 13730,12535
 #: last_checked: 2017-08-06
 Rothenbachstr.: Verbesserung -> wird der frühere Radweg wieder aktiviert?	?::projected; 12144,18436 11950,18529
 # 
-#: osm_watch: way id="111283481" version="10"
+#: osm_watch: way id="111283481" version="11"
 #: XXX hier gibt es Bauarbeiten --- vielleicht Vorarbeiten für die Radspuren?
 #: last_checked: 2017-09-30
 #: check_frequency: 45d
@@ -797,8 +797,8 @@ Wallensteinstr.: Asphaltstreifen	?::projected 17360,9629 17425,9605 17456,9594 1
 #: last_checked: 2017-08-27
 Falkenberger Chaussee: Verbesserung -> Radspuren oder Asphaltierung des Radwegs?	?::projected; 17744,18016 17843,18078
 # 
-#: osm_watch: way id="40520565" version="27"
-#: osm_watch: way id="51317007" version="21"
+#: osm_watch: way id="40520565" version="28"
+#: osm_watch: way id="51317007" version="22"
 #: last_checked: 2017-08-27
 Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 16837,17440 16578,17285 16460,17214 16352,17150 16318,17128
 # 
@@ -833,7 +833,7 @@ Ernst-Reuter-Platz: Zweirichtungsradwege	?::projected 4838,11697 4885,11735 4905
 # 
 #: XXX oder werden größere Abschnitte der Straße mit Radstreifen versehen?
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.625297.php (Fahrbahnsanierung im Kreuzungsbereich)
-#: osm_watch: way id="37226918" version="9"
+#: osm_watch: way id="37226918" version="10"
 #: source_id: 2147341755
 #: last_checked: 2017-11-13
 #: next_check: 2017-11-27 (Ende laut fritz)
@@ -873,7 +873,7 @@ Marzahner Chaussee: Radstreifen	?::projected 18586,12151 18635,12224 18654,12255
 Kameruner Str.: vielleicht Asphaltierung?	?::projected 6267,15844 6383,15972 6484,16085
 # 
 #: XXX vielleicht auch ein größerer Abschnitt
-#: osm_watch: way id="352683182" version="2"
+#: osm_watch: way id="352683182" version="3"
 #: osm_watch: way id="501402607" version="1"
 #: last_checked: 2017-09-28
 Residenzstr.: Radstreifen	?::projected 8127,16894 8079,16953 7970,17087
@@ -1039,6 +1039,11 @@ Kniprodestr.: werden die Busspuren zu Radspuren umgewandelt?	?::projected 12640,
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: XXX Kastanienallee (Prenzlauer Berg) Richtung Schönhauser Allee zwischen Oderberger Straße und Schönhauser Allee (Berlin)  Gültig ab: 21.11.2017 07:00  Baustelle, Fahrtrichtung gesperrt (die Kastanienallee ist bis zur Einmünung in die Schönhauser Allee eine Sackgasse) (bis Anfang 12/17)
+#: XXX laut fritz bis voraussichtlich 09.12.2017
+#: source_id: 2147342043
+Kastanienallee: Sperrung auf für Radfahrer relevant?	?::inwork; 10723,14772 10838,14962 10884,14952
+# 
 #: next_check_id: MOEWENWEG-2017
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_48_5417_5552_online.pdf (Benennung von Privatstraßen)
 #: XXX hier ("Baugebiet Grüne Aue) werden drei Privatstraßen benannt (fehlen alle in Berlin.coords.data) (siehe auch gesperrt-orig für die andere Straße)
@@ -1084,7 +1089,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/holzmarktstrasse/download/LP_01.pdf
 #: source_id: 2147340618
 #: source_id: LMS-BR_r_LMS-BR_81616
-#: last_checked: 2017-11-16
+#: last_checked: 2017-11-21
 #: next_check: 2018-04-01 (laut Schild bis April 2018)
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 # 
@@ -1579,7 +1584,7 @@ Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbi
 #: XXX liegt die Straße tatsächlich hier?
 #: XXX die Reinickendorfer Pressemeldungsschreiber sind fleißig, höchstwahrscheinlich wird es dort erscheinen, falls hier was passiert
 #: XXX laut osm fertiggestellt, aber access=private (für die Bauarbeiter?)
-#: osm_watch: way id="228172653" version="7"
+#: osm_watch: way id="228172653" version="8"
 #: last_checked: 2017-08-26 (Bauarbeiten)
 #: check_frequency: 90d
 Humboldtinsel: liegt die Straße hier? ausgeschildert? Qualität?	?::inwork 1687,20645 1635,20607 1587,20534 1403,20440
@@ -1737,6 +1742,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160916 (fertig im Januar 2018)
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036305920032/305920032/00249733/33-Anlagen/01/DRS0054VK.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=5213&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-12-31)
+#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_50_5649_5788_online.pdf (Straßenbenennung)
 #: XXX Asphaltierung der Fahrbahn von Rummelsburger Landstr. bis Schwarzer Weg fertig
 #: XXX Radwege werden vermutlich asphaltiert sein
 #: XXX vermutlich wird die F11 nach Eröffnung eingestellt werden --- auch Testcase in cgi.t beachten und ggfs. auf eine andere Fähre umschreiben!
@@ -1786,7 +1792,7 @@ L792: Ausbau, danach wahrscheinlich mit Radweg, Fahrbahn wahrscheinlich nicht me
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20141022.1620.399800.html ("in den nächsten Jahren")
 #: osm_watch: way id="8150022" version="15"
-#: last_checked: 2017-10-14 (mapillary)
+#: last_checked: 2017-11-15 (mapillary)
 #: check_frequency: 360d
 Soldiner Str.: grundhafte Erneuerung, evtl. verschwindet das Kopfsteinpflaster dabei	?::projected 8449,17196 8539,17197 8561,17198 8677,17154
 # REMOVED (hier ist kein Kopfsteinpflaster) --- Soldiner Str.: grundhafte Erneuerung, evtl. verschwindet das Kopfsteinpflaster dabei	?::projected 8677,17154 8866,17075 8904,17059 9082,16982
@@ -1953,6 +1959,23 @@ Kurpromenade: wird die Fahrbahn hier erneuert?	?::projected -8862,6375 -8860,643
 #: source_id: BIBER_id_234607
 #: next_check: 2017-11-03
 B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133 21326,27505 21772,28566
+# 
+#: XXX mit der Verlängerung der Tram zur Turmstr.
+#: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/de/oepnv/bekanntmachung.shtml
+#: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/turmstr/04_Lageplaene/Anlage04_LP_Blatt2.pdf
+#: next_check: 2020-03-01
+Alt-Moabit - Rathenower Str.: Radspuren werden gemalt	?::projected 7415,13060 7346,13022 7172,13051 7187,13126 7161,13190 7131,13261 7069,13381
+# 
+#: by: http://www.stadtentwicklung.berlin.de/planen/strassenbauverfahren/de/verfahren/strassenbau/bekanntmachung1.shtml vvv
+#: next_check: 2020-03-01 vvv
+Verlängerung Am Luchgraben: neue Straße wird gebaut, mit Radspuren	?::projected 16594,22188 16519,22216 16400,22359 16009,22602 15723,22611 15508,22608 15434,22663 15428,22736
+Verlängerung Am Luchgraben - Am Hohen Feld: neue Straße wird gebaut, mit Radspuren	?::projected 16009,22602 16090,22745
+#: next_check ^^^
+#: by ^^^
+# 
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/gruppe-stadterneuerung/aktuelles/fraenkelufer-neugestaltung-des-landwehrkanal-nordufers-staedtebaulicher-denkmalschutz-404293.php
+#: next_check: 2018-10-01
+Fraenkelufer: Neugestaltung des Uferwegs, Verbindung zum Böcklerpark	?::projected 11199,9993 11082,9992 10979,10017 10885,10045
 # 
 #: section ^^^
 #: ignore ^^^
@@ -2267,7 +2290,7 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7478
 #: XXX "noch 2016"
 #: osm_watch: note 824350 3
-#: last_checked: 2017-11-10
+#: last_checked: 2017-11-24
 #: check_frequency: 14d
 #: priority: #C
 Sebastian/Luckauer: Zebrastreifen in Bau	?::inwork 11113,10943 11109,10935
@@ -2315,10 +2338,10 @@ Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen a
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6616
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (auch erwähnt, ohne besondere Richtung)
 #: XXX Baubeginn Ende 2016, mittlerweile ab April 2018 --- allerdings sind schon jetzt hier Bauarbeiten, bis Ende August 2017
-#: osm_watch: way id="4068148" version="17"
-#: osm_watch: way id="27942935" version="9"
-#: osm_watch: way id="11663312" version="15"
-#: osm_watch: way id="4689343" version="14"
+#: osm_watch: way id="4068148" version="18"
+#: osm_watch: way id="27942935" version="10"
+#: osm_watch: way id="11663312" version="16"
+#: osm_watch: way id="4689343" version="15"
 #: source_id: 2147341322
 #: last_checked: 2017-09-23
 #: next_check: 2018-05-01
@@ -2742,6 +2765,10 @@ Verlängerung der Margarete-Steffin-Str.	?::projected 8732,12804 8796,12804 8930,
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
 #: next_check: 2018-01-09
 Prinzregentenstr.: Durchgangsverkehr (für Kfz?) soll verhindert werden, Bau von Wendehammern, wo genau?	?::projected 5631,8011 5631,8141 5651,8218 5660,8351 5652,8605
+# 
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.651451.php
+#: next_check: 2018-05-01
+Adlergestell: (Fußgänger?-)Ampel wird gebaut	?::projected 27274,-2983 27270,-2941 27312,-2954
 # 
 #: ignore ^^^
 # 
@@ -3308,7 +3335,7 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2017-11-16
+#: last_checked: 2017-11-21
 #: check_frequency: 360d
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 

@@ -2457,7 +2457,33 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
+#: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6280.html
+	2::temp 8595,12066 8737,12098 8743,12099 8861,12125
+	2::temp 8722,12268 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	2::temp 8055,12186 8119,12414
+	2::temp 8522,12239 8466,12197
+	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+',
+         'from' => 1514178000,
+         'id' => 2010,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              12
+                            ]
+                          ],
+         'text' => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., vermutlich vom 26.12.2017 bis 02.01.2018',
+         'type' => 'gesperrt',
+         'until' => 1514933999
+       },
        undef,
        undef,
        undef,
@@ -3838,7 +3864,37 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: tempex: YYYY1231T1200-YYYY0101T1200 vvv
+	2::temp 8540,12420 8775,12457
+	2::temp 8485,12612 8399,12610 8348,12609 8306,12609 8207,12606 8122,12603 8119,12414 8354,12416 8400,12417 8540,12420
+	2::temp 8348,12609 8354,12416
+	2::temp 8207,12606 8206,12757
+	3 7945,12592 8122,12603 8120,12756
+	3 8391,12389 8400,12417 8399,12610
+	3 8070,12409 8119,12414 8055,12186
+	3 8399,12610 8400,12417 8391,12389
+	3 8120,12756 8122,12603 7945,12592
+	3 8055,12186 8119,12414 8070,12409
+#: tempex ^^^
+',
+         'from' => 1514631600,
+         'id' => 2767,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              31,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => '2147339665',
+         'text' => 'Regierungsviertel u.a. Dorotheenstr., Scheidemannstr., Heinrich-von-Gagern-Str. und Paul-Löbe-Allee: wegen Silvesterparty gesperrt, vermutlich vom 31.12.2017 12:00 Uhr bis 01.01.2018 12:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1514804400
+       },
        undef,
        undef,
        undef,
@@ -3970,17 +4026,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX weitere Sperrungen: 18. Oktober sowie 8., 15., 22. und 29. November
-#: next_check: 2017-11-23
-#: priority: #A
+# REMOVED --- #: next_check: 2017-11-23
+# REMOVED --- #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
 	2::temp -1925,6790 -1851,6887
 ',
-         'from' => 1511244000,
+         'from' => 1511848800,
          'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 22. November 2017 ab ca. 10:00 Uhr',
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 29. November 2017 ab ca. 10:00 Uhr',
          'type' => 'gesperrt',
-         'until' => 1511344800
+         'until' => 1511949600
        },
        undef,
        {
@@ -4083,7 +4139,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-11-20
+#: last_checked: 2017-11-23
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
          'from' => undef,
