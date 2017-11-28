@@ -17082,18 +17082,16 @@ EOF
 	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998 24927,-87720
 EOF
      },
-     { from  => $isodate2epoch->("2016-11-04 00:00:00"), # XXX $isodate2epoch->("2016-11-04 00:00:00"), # Aufbauzeit mindestens 17 Tage... (am Anfang ist nur die Fahrbahn der Voltairestr. gesperrt, später auch die Gehwege, die Schicklerstr. ist schon früher komplett gesperrt)
-       until => $isodate2epoch->("2016-12-26 23:59:59"), # Abbauzeit ca. 3 Tage?...
-       ## 2016 war das letzte Mal
-       #periodic => 1,
-       #recurrences => [['yearly', days => 4, months => 11]],
+     { from  => 1511897631, # $isodate2epoch->("2016-11-04 00:00:00"), # XXX $isodate2epoch->("2016-11-04 00:00:00"), # Aufbauzeit mindestens 17 Tage... (am Anfang ist nur die Fahrbahn der Voltairestr. gesperrt, später auch die Gehwege, die Schicklerstr. ist schon früher komplett gesperrt)
+       until => $isodate2epoch->("2017-12-26 23:59:59"), # Abbauzeit ca. 3 Tage?...
+       periodic => 1,
+       recurrences => [['yearly', days => 14, months => 11]],
        # außerdem ist der Nordteil der Dircksenstr. Einbahnstraße offen Richtung Süden, aber nicht relevant für das Routing
-       text  => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr. und Dircksenstr.), von Anfang November 2016 bis Ende Dezember 2016',
+       text  => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr. ist gesperrt; Dircksenstr. ist Einbahnstraße), bis Ende Dezember 2017',
        type  => 'gesperrt',
        data  => <<EOF,
 	2::xmas 11329,12497 11209,12430
-	2::xmas 11209,12430 11273,12301
-# REMOVED (hier (noch?) nicht gesperrt) ---	2::xmas 11273,12301 11355,12331
+	1::xmas 11209,12430 11273,12301
 EOF
      },
      { from  => $isodate2epoch->("2017-11-26 00:00:00"), # 1 Tag Vorlauf
@@ -22252,13 +22250,12 @@ EOF
 	q4::inwork 9075,11756 9000,11727
 EOF
      },
-     { from  => undef, # 
-       until => 1383047340, # 1383238800, # 2013-10-31 18:00
-       text  => 'Modersohnstr., Gärtnerstr.: Bauarbeiten, Einbahnstraße zwischen Revaler Str. und Wühlischstr. (offen Richtung Süden), bis Ende Oktober 2013',
+     { from  => 1511898358,
+       until => $isodate2epoch->("2017-12-22 16:00:00"), # 1383047340, # 1383238800, # 2013-10-31 18:00
+       text  => 'Gärtnerstr.: Bauarbeiten, Einbahnstraße zwischen Simplonstr. und Wühlischstr. (offen Richtung Norden), voraussichtlich bis 22.12.2017',
        type  => 'handicap',
        data  => <<EOF,
-	q3::inwork; 14134,11272 14181,11434
-# REMOVED (since 2013-10-22) ---	q2::inwork; 14181,11434 14211,11552
+	q3::inwork; 14181,11434 14211,11552
 EOF
      },
      { from  => 1382220000, # 2013-10-20 00:00
@@ -25649,7 +25646,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-11-09 vvv
+#: last_checked: 2017-11-28 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -25806,7 +25803,7 @@ EOF
      },
      { from  => $isodate2epoch->("2017-11-28 07:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2017-11-29 11:00:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 29. November 2017 ab ca. 10:00 Uhr',
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 29. November 2017 ab ca. 09:30 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX weitere Sperrungen: 18. Oktober sowie 8., 15., 22. und 29. November
@@ -26699,6 +26696,16 @@ EOF
 	q4::inwork 10722,11816 10687,11853 10672,11870 10604,11941
 	2::inwork 10776,11942 10672,11870
 	2::inwork 10687,11853 10869,11949
+EOF
+     },
+     { from  => 1511737200, # 2017-11-27 00:00
+       until => $isodate2epoch->("2017-12-07 16:00:00"), # 1513378799, # 2017-12-15 23:59
+       text  => 'Ungarnstr.: Sperrung an der Kreuzung Müllerstr., ab 28.11.2017 08:00 bis 07.12.2017',
+       type  => 'handicap',
+       source_id => '2147342100',
+       data  => <<EOF,
+#: XXX laut fritz nur Richtung Westen gesperrt
+	q3::inwork 6659,16133 6843,16346
 EOF
      },
     );

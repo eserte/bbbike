@@ -2343,7 +2343,26 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	2::xmas 11329,12497 11209,12430
+	1::xmas 11209,12430 11273,12301
+',
+         'from' => 1511897631,
+         'id' => 1988,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              14,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr. ist gesperrt; Dircksenstr. ist Einbahnstraße), bis Ende Dezember 2017',
+         'type' => 'gesperrt',
+         'until' => 1514329199
+       },
        {
          'data' => '#: note "WeihnachtsZauber auf dem Gendarmenmarkt"
 	2::xmas 9536,11922 9666,11935
@@ -3276,7 +3295,15 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	q3::inwork; 14181,11434 14211,11552
+',
+         'from' => 1511898358,
+         'id' => 2495,
+         'text' => 'Gärtnerstr.: Bauarbeiten, Einbahnstraße zwischen Simplonstr. und Wühlischstr. (offen Richtung Norden), voraussichtlich bis 22.12.2017',
+         'type' => 'handicap',
+         'until' => 1513954800
+       },
        undef,
        undef,
        undef,
@@ -3992,7 +4019,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-11-09 vvv
+#: last_checked: 2017-11-28 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -4034,7 +4061,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1511848800,
          'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 29. November 2017 ab ca. 10:00 Uhr',
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 29. November 2017 ab ca. 09:30 Uhr',
          'type' => 'gesperrt',
          'until' => 1511949600
        },
@@ -4464,6 +4491,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Uferweg Plötzensee: wegen Unterspülung gesperrt, Umfahrung über enge Pfade möglich',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       undef,
+       undef,
+       {
+         'data' => '#: XXX laut fritz nur Richtung Westen gesperrt
+	q3::inwork 6659,16133 6843,16346
+',
+         'from' => 1511737200,
+         'id' => 2921,
+         'source_id' => '2147342100',
+         'text' => 'Ungarnstr.: Sperrung an der Kreuzung Müllerstr., ab 28.11.2017 08:00 bis 07.12.2017',
+         'type' => 'handicap',
+         'until' => 1512658800
        }
      
 );
