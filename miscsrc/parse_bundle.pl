@@ -164,7 +164,7 @@ if ($action eq 'list') {
 	print "\t";
 	printf '%-' . ($maxlen+2) . 's', "'$mod'";
 	print ' => ';
-	if (defined $ver) { print $ver } else { print 0 }
+	if ($ver eq 'undef') { print 0 } elsif (defined $ver) { print $ver } else { print 0 }
 	print ",";
 	if (defined $desc) {
 	    $desc =~ s{\s+}{ }g; # especially remove newlines
