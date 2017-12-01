@@ -247,7 +247,7 @@ Lohmühlenbrücke: Asphalt	Q0 12871,9356 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2017-11-08
+#: last_checked: 2017-11-30
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15021,11152 15102,11120
@@ -283,7 +283,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (hier wird auch eine Einbahnstraßenregelung erwähnt, hoffentlich nur für Autos! -> realisiert)
 #: source_id: INKO_2147340291_COPY_1
 #: source_id: 2147340291
-#: last_checked: 2017-11-20
+#: last_checked: 2017-11-30
 #: check_frequency: 120d
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288
 Mariannenstr: Asphalt	Q0 11616,10288 11671,10402
@@ -21686,7 +21686,7 @@ Zum Erlengrund: Asphalt	Q0 -2605,18393 -2594,18630
 #: confirmed_by: srt
 Zu den Fichtewiesen: Asphalt	Q0 -2535,18391 -2523,18627
 #: corrected_by: srt (OK -> Asphalt)
-Rustweg: Asphalt	Q0 -2827,18639 -2673,18634 -2594,18630 -2523,18627 -2454,18624
+Rustweg: Asphalt	Q0 -2827,18639 -2673,18634 -2663,18634 -2594,18630 -2563,18629 -2523,18627 -2464,18624 -2454,18624
 (Rustweg - Uferweg): feste Sandstraße mit Schlaglöchern	Q2 -2454,18624 -2282,18615
 #: by: ^^^
 # 
@@ -25081,7 +25081,9 @@ Diestelmeyerstr.: mäßiges Kopfsteinpflaster	Q2 12885,12980 12833,12920
 #: confirmed_by: srt
 Diestelmeyerstr.: Gehwegplatten	Q1 12833,12920 12690,12769
 Schulweg: Asphalt, teilweise verwurzelt	Q2 12594,12866 12483,12682
+#: confirmed_by: srt
 (Friedhofsweg): wassergebundene Decke	Q1 12851,12602 13108,12859 13046,12956 12878,13229
+#: confirmed_by: srt
 (Friedhofsweg): wassergebundene Decke	Q1 12773,12683 13046,12956
 Kernhofer Str.: Kopfsteinpflaster	Q2 15434,11086 15380,10946
 Kernhofer Str.: glattes Pflaster	Q0 15380,10946 15355,10875

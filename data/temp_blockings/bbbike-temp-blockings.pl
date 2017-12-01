@@ -6774,17 +6774,16 @@ EOF
 	2::inwork -31993,-726 -32143,-211 -32153,-176
 EOF
      },
-     { from  => $isodate2epoch->("2016-11-24 00:00:00"), # die Buden standen schon am 19.11.2013 # 1353884400, # 1321916400, # 2011-11-22 00:00 # PERIODISCH! # früher: 1163480400, # 2006-11-14 06:00
-       until => $isodate2epoch->("2016-12-26 23:59:59"), # 1356562740, # 1324940399, # 2011-12-26 23:59 # PERIODISCH! # früher: 1167433200, # 2006-12-30 00:00
-       ## ab 2017 wieder am Opernpalais --- gibt's hier Einschränkungen?
-       #periodic => 1,
-       #recurrences => [['yearly', days => 18, months => 11]],
-       text  => 'Nostalgischer Weihnachtsmarkt Opernpalais: Wege und Straßen rund um die Hedwigs-Kathedrale teilweise nicht passierbar, teilweise reger Fußgängerverkehr, vom 25.11. bis 26.12.2016',
+     { from  => $isodate2epoch->("2017-11-28 00:00:00"), # die Buden standen schon am 19.11.2013 # 1353884400, # 1321916400, # 2011-11-22 00:00 # PERIODISCH! # früher: 1163480400, # 2006-11-14 06:00
+       until => $isodate2epoch->("2017-12-30 23:59:59"), # 1356562740, # 1324940399, # 2011-12-26 23:59 # PERIODISCH! # früher: 1167433200, # 2006-12-30 00:00
+       periodic => 1,
+       recurrences => [['yearly', days => 18, months => 11]],
+       text  => 'Nostalgischer Weihnachtsmarkt Opernpalais: Wege rund um die Hedwigs-Kathedrale nicht passierbar, vom 29.11. bis 30.12.2017',
        type  => 'gesperrt',
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/971793-1328132-weihnachtsmarktamopernpalais.html',
        data  => <<EOF,
-	2::xmas 9737,12238 9798,12267
-	q4::xmas 9737,12238 9747,12205 9771,12190 9775,12178 9808,12182
+# REMOVED	2::xmas 9737,12238 9798,12267
+	2::xmas 9737,12238 9747,12205 9771,12190 9775,12178 9808,12182
 EOF
      },
      { from  => 1163718000, # 2006-11-17 00:00
@@ -22255,6 +22254,7 @@ EOF
        text  => 'Gärtnerstr.: Bauarbeiten, Einbahnstraße zwischen Simplonstr. und Wühlischstr. (offen Richtung Norden), voraussichtlich bis 22.12.2017',
        type  => 'handicap',
        data  => <<EOF,
+#: source_id: 2147342105
 	q3::inwork; 14181,11434 14211,11552
 EOF
      },
@@ -26142,7 +26142,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-11-23
+#: last_checked: 2017-12-01
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },

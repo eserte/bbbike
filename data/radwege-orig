@@ -809,7 +809,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr	RW1; 6696,5854 6629,5946 6
 #: source_id: 2147341593
 #: source_id: LMS-BR_r_LMS-BR_103468_LMS-BR_72
 #: last_checked: 2017-08-25
-#: next_check: 2017-12-01 (Ende der Bauarbeiten)
+#: next_check: 2017-12-15 (Ende der Bauarbeiten)
 	RW2; 6575,8469 6687,8385
 	RW0;RW2 8328,10831 8358,10782 8430,10710
 	RW1;RW9 8571,11846 8489,11782 8438,11753 8322,11715 8203,11686
@@ -1098,13 +1098,13 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: IM_018997
 #: source_id: IM_023987
 #: source_id: IM_025933
-#: last_checked: 2017-11-09
+#: last_checked: 2017-11-29
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9608,12380 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2017-11-13
+#: last_checked: 2017-11-29
 #: check_frequency: 60d
 Busspur ist immer gültig	RW5; 9475,12365 9608,12380
 # 
@@ -5069,3 +5069,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW3;RW3 4795,1362 4702,1298 4631,1249 4542,1188
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
+#: XXX prüfen, ob die Suggestivstreifen unbeschildert bleiben
+#: last_checked: 2017-11-30
+#: check_frequency: 7d
+	RW3;RW3 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322

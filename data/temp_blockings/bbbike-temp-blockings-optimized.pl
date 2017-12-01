@@ -843,7 +843,27 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED	2::xmas 9737,12238 9798,12267
+	2::xmas 9737,12238 9747,12205 9771,12190 9775,12178 9808,12182
+',
+         'from' => 1511823600,
+         'id' => 790,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              18,
+                              'months',
+                              11
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/971793-1328132-weihnachtsmarktamopernpalais.html',
+         'text' => 'Nostalgischer Weihnachtsmarkt Opernpalais: Wege rund um die Hedwigs-Kathedrale nicht passierbar, vom 29.11. bis 30.12.2017',
+         'type' => 'gesperrt',
+         'until' => 1514674799
+       },
        undef,
        undef,
        undef,
@@ -2598,7 +2618,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im November von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Dezember von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3296,7 +3316,8 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
        undef,
        undef,
        {
-         'data' => '	q3::inwork; 14181,11434 14211,11552
+         'data' => '#: source_id: 2147342105
+	q3::inwork; 14181,11434 14211,11552
 ',
          'from' => 1511898358,
          'id' => 2495,
@@ -4051,20 +4072,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX weitere Sperrungen: 18. Oktober sowie 8., 15., 22. und 29. November
-# REMOVED --- #: next_check: 2017-11-23
-# REMOVED --- #: priority: #A
-	2::temp -2218,5133 -927,6888
-	2::temp -2825,5588 -1925,6790 -2080,6897
-	2::temp -1925,6790 -1851,6887
-',
-         'from' => 1511848800,
-         'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 29. November 2017 ab ca. 09:30 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1511949600
-       },
+       undef,
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -4166,7 +4174,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-11-23
+#: last_checked: 2017-12-01
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
          'from' => undef,
@@ -4180,21 +4188,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX wird sich die Qualität vielleicht bessern?
-#: XXX hier sind gerade Bauarbeiten --- Verbundsteinpflaster bleibt wohl, der wassergebundene Teil sind besser aus
-#: last_checked: 2017-10-14 vvv
-	2::inwork 8234,4660 8575,4980 8598,4985
-	2::inwork 8598,4985 8618,5019 8784,5095
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 2877,
-         'source_id' => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.608925.php',
-         'text' => 'Teltowkanal von der Rathausstraße bis Gersdorfstraße: Sanierung Fuß- und Radweg, Wege können gesperrt sein, Zeitraum unbekannt',
-         'type' => 'gesperrt',
-         'until' => 1512126000
-       },
+       undef,
        undef,
        {
          'data' => '	2::inwork 13415,21442 13371,21462
@@ -4293,20 +4287,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?bvgid=BVG131679 ("gültig bis: auf Weiteres")
-#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=30361
-#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=29479
-#: by: mapillary (Gehweg für Radfahrer frei)
-	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
-	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
-',
-         'from' => 1502386525,
-         'id' => 2897,
-         'text' => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Richtung Norden ist der Gehweg für Radfahrer frei; Baseler Str. offen Richtung Norden), eventuell bis Ende November 2017',
-         'type' => 'handicap',
-         'until' => 1512082799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4345,18 +4326,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: MOELLENDORFFSTR-2017
-#: last_checked: 2017-11-13
-	q3::inwork; 14926,12129 14887,11929
-',
-         'from' => 1504719478,
-         'id' => 2904,
-         'source_id' => '2147341770',
-         'text' => 'Weichselstr.: Einbahnstraßenregelung während der Bauarbeiten an der Kreuzung Frankfurter Allee/Möllendorffstr.',
-         'type' => 'handicap',
-         'until' => 1512039600
-       },
+       undef,
        {
          'data' => '#: note: vmz meint Ende November 2017
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=35015 (bis 6.11.2017)
