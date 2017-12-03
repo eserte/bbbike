@@ -21481,9 +21481,10 @@ EOF
      },
      { from  => $isodate2epoch->("2016-12-09 10:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2016-12-11 21:00:00"), #
-       periodic => 1,
-       recurrences => [['yearly', days => 9, months => 12]],
-       recurrence_prewarn_days => 7, # 2017 stand der Termin zwei Wochen vorher noch nicht fest
+## findet 2017 nicht statt
+#       periodic => 1,
+#       recurrences => [['yearly', days => 9, months => 12]],
+#       recurrence_prewarn_days => 7, # 2017 stand der Termin zwei Wochen vorher noch nicht fest
        text  => 'Kunsthandwerklicher Weihnachtsmarkt in Lichtenrade: Alt-Lichtenrade, Straße vermutlich gesperrt (10. Dezember 2016 bis 11. Dezember 2016, jeweils 11-20 Uhr)',
        type  => 'handicap',
        data  => <<EOF,

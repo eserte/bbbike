@@ -21,16 +21,18 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2017-11-30
+#: last_checked: 2017-12-02
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
-#: last_checked: 2017-11-30
+#: last_checked: 2017-12-02
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
-#: last_checked: 2017-11-19
+#: last_checked: 2017-12-03
+#: check_frequency: 14d
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2017-11-19
+#: last_checked: 2017-12-03
+#: check_frequency: 90d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
 #: last_checked: 2017-12-01
@@ -949,7 +951,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20140603.1435.397678.html (Vorlage 096/2014)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
-#: last_checked: 2017-11-08 (mapillary)
+#: last_checked: 2017-12-03
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268
@@ -2582,6 +2584,7 @@ Hampstedtstr.: einige Fußgänger	q1 749,2616 816,2658
 #: XXX_prog: BS an der Ella-Kay-Str., ansonsten q2
 (Greifswalder Str. - Ella-Kay-Str.): einige Fußgänger, Bordstein	q3 12183,14757 12056,14831
 (Wohngebiet Michelangelostr.): nur für Fußgänger	q4 13687,15387 13597,15443
+Arberstr.: einige Fußgänger	q1 19437,9653 19450,9728
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

@@ -42,7 +42,7 @@ Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 
 #: osm_watch: way id="4752742"  version="10"
 #: osm_watch: way id="4752743"  version="12"
 #: osm_watch: way id="8049679"  version="14"
-#: osm_watch: way id="8049678"  version="9"
+#: osm_watch: way id="8049678"  version="10"
 #: last_checked: 2017-07-15
 #: check_frequency: 180d
 Schulenburgstr./Weißenburger Str.: werden hier Radspuren markiert?	?::projected -2725,13287 -2798,13257 -2940,13221 -2974,13188 -3159,12962 -3210,12913 -3246,12890 -3301,12864 -3448,12834 -3650,12762
@@ -786,7 +786,7 @@ Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22351
 (An der Straßenbahn): Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected 21539,17442 21555,17546 21559,17617 21576,17678 21639,17803 21698,17920 21726,17974 21804,18125 21843,18198
 # 
 #: XXX routing_helper ggfs. anpassen
-#: last_checked: 2017-11-05
+#: last_checked: 2017-12-03
 Frankfurter Allee: Zweirichtungsradweg	?::projected; 15717,12010 15670,12022
 # 
 #: osm_watch: way id="31525575" version="16"
@@ -833,14 +833,7 @@ Brandenburgische Str.: Radstreifen (wo genau? oder die gesamte Strecke?)	?::proj
 #: last_checked: 2017-10-13
 Ernst-Reuter-Platz: Zweirichtungsradwege	?::projected 4838,11697 4885,11735 4905,11785 4854,11843 4763,11834 4737,11768 4781,11708 4838,11697
 # 
-#: XXX oder werden größere Abschnitte der Straße mit Radstreifen versehen?
-#: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.625297.php (Fahrbahnsanierung im Kreuzungsbereich)
-#: osm_watch: way id="37226918" version="10"
-#: source_id: 2147341755
-#: last_checked: 2017-11-13
-#: next_check: 2017-11-27 (Ende laut fritz)
-Frankfurter Allee: Radstreifen	?::projected; 15117,12106 15361,12071
-# 
+# REMOVED (vermutlich nicht; Bürgersteigradweg wurde etwas verschwenkt) --- #: XXX oder werden größere Abschnitte der Straße mit Radstreifen versehen? --- #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.625297.php (Fahrbahnsanierung im Kreuzungsbereich) --- #: osm_watch: way id="37226918" version="10" --- #: source_id: 2147341755 --- #: last_checked: 2017-11-13 --- #: next_check: 2017-11-27 (Ende laut fritz) --- Frankfurter Allee: Radstreifen	?::projected; 15117,12106 15361,12071
 # REMOVED --- #: last_checked: 2017-06-14 --- #: check_frequency: 14d --- Friedenstr.: Radwegverbindung wird gebaut	?::inwork 12382,13097 12325,13148
 # 
 #: XXX außerdem wird für den Durchgangsverkehr (hoffentlich nur MIV) gesperrt
@@ -849,10 +842,7 @@ Frankfurter Allee: Radstreifen	?::projected; 15117,12106 15361,12071
 #: last_checked: 2017-10-16
 Hegemeisterweg: Asphaltierung	?::projected 17522,8220 17202,8391
 # 
-#: osm_watch: way id="332909265" version="2"
-#: last_checked: 2017-08-27
-Fanningerstr.: Asphaltierung	?::projected 16456,12191 16359,12207 16255,12224
-# 
+# REMOVED (realisiert) --- #: osm_watch: way id="332909265" version="2" --- #: last_checked: 2017-08-27 --- Fanningerstr.: Asphaltierung	?::projected 16456,12191 16359,12207 16255,12224
 # REMOVED (realisiert) --- Seefelder Str.: "Radweganbindung"	?::projected 17325,16189 17362,16189 17383,16197
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
@@ -1997,11 +1987,11 @@ Fraenkelufer: Neugestaltung des Uferwegs, Verbindung zum Böcklerpark	?::projecte
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX laut osm cycleway=lane
+Gürtelstr.: gibt es hier eine Radspur?	?; 15294,11964 15361,12071
+# 
 #: XXX betoniert, Einbahnstraße offen in Richtung Konrad-Wolf-Str., Straßenbahntrasse an der Suermondtstr., aber Überqueren für Fußgänger möglich
 Suermondtstr. - Konrad-Wolf-Str.: Ausschilderung? Genaue Qualität?	? 16755,16120 16721,16016 16812,15973 16846,15936
-# 
-#: XXX ... oder neuer Asphalt?
-Arberstr.: liegt hier tatsächlich nur mäßiger Beton?	? 19424,9502 19437,9653
 # 
 # REMOVED (man kommt durch) --- #: XXX NEW	Erkelenzdamm (Kreuzberg) in beiden Richtungen zwischen Böcklerstr. und Kohlfurter Straße (Berlin)  Gültig ab: 18.04.2017 12:21  Baustelle, Vollsperrung (Gesamtmaßnahme bis Ende 11/17)	2147341140 --- #: XXX laut fritz bis 30.11.2017 --- #: source_id: 2147341140 --- Erkelenzdamm: prüfen, ob die Bauarbeiten zwischen Böcklerstr. und Kohlfurter Str. wieder aktive sind	? 10967,10092 11038,10247 11094,10261
 # REMOVED --- #: XXX Verbundsteinpflaster, einige Fußgänger, vermutlich beleuchtet; wie kommt man auf die Ella-Kay-Str.? Wie gut kann man die Greifswalder überqueren? --- Greifswalder Str. - Ella-Kay-Str.: Streckenführung genauer anschauen	? 12371,14615 12224,14707 12213,14742 12183,14757 12056,14831
@@ -2252,7 +2242,7 @@ Wröhmännerpark: nach den Bauarbeiten "gelber Farbasphalt", vermutlich für Radfah
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2016
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: XXX fehlt in Berlin.coords.data, PLZ=10315
-#: last_checked: 2017-09-23 vvv
+#: last_checked: 2017-12-03 vvv
 #: check_frequency: 60d vvv
 # REMOVED (aufgenommen) Alt-Friedrichsfelde [Wohngebiet]: neue Straße	?::inwork 18717,11835 18730,11834 18896,11824
 #: XXX_prog: duplizierter Eintrag wegen .check_missing_streets
@@ -2278,7 +2268,7 @@ Potsdamer Chaussee/Engelsfelder Chaussee: eine neue Ampel wird hier entstehen	?:
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/21re.pdf/file?y=2016
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
-#: osm_watch: way id="269707365" version="3"
+#: osm_watch: way id="269707365" version="4"
 #: last_checked: 2017-11-14
 #: check_frequency: 45d
 Kollwitzstr.: hat die Einziehung von Straßenland hier Auswirkungen?	? 11229,14422 11285,14515 11317,14564
@@ -2369,7 +2359,7 @@ Schulzendorfer Str.: Radverkehrsanlangen? (vermutlich asphaltiert, vermutlich nu
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367070.php
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.541819.php
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php
-#: osm_watch: way id="5000155" version="14"
+#: osm_watch: way id="5000155" version="15"
 #: osm_watch: way id="313302635" version="5"
 #: osm_watch: way id="57401090" version="9"
 #: next_check: 2018-12-31
@@ -3407,7 +3397,7 @@ Im Lindenhof: Planstraße B, Qualität, genaue Lage?	?::inwork 17370,12649 17475,1
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_38_4261_4376_online.pdf
 #: XXX fehlt in Berlin.coords.data; Benennung soll zum 2017-07-01 wirksam werden
 #: XXX zuführende Straßen/Wege müssen auch eingezeichnet werden
-#: last_checked: 2017-09-28
+#: last_checked: 2017-12-03
 #: check_frequency: 90d
 Siegfried-Hirschmann-Park: neue private Platzfläche, Qualität, genaue Lage?	?::inwork 14730,11529 14800,11441
 # 

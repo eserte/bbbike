@@ -1566,7 +1566,7 @@ Freiligrathstr.: Kopfsteinpflaster	Q2 10905,9472 10735,9542
 Südstern: gutes Kopfsteinpflaster	Q1 10749,9342 10741,9344 10695,9315 10647,9337
 Südstern: Kopfsteinpflaster	Q2 10647,9337 10617,9353 10580,9361
 Samariterstr.: Kopfsteinpflaster	Q2 14488,12188 14538,12371 14570,12478 14588,12542 14591,12555 14596,12573 14599,12584 14628,12682 14661,12798
-Fanningerstr.: Kopfsteinpflaster	Q2 16255,12224 16359,12207 16456,12191
+Fanningerstr.: Asphalt, Parkstreifen mit Kopfsteinpflaster	Q0 16255,12224 16359,12207 16456,12191
 Fanningerstr.: Asphalt	Q0 16456,12191 16556,12180 16657,12165 16794,12144
 Fanningerstr.: Betonplatten in der Mitte, Kopfsteinpflaster außen	Q0- 16794,12144 16890,12135 16994,12122 17092,12107
 Fanningerstr.: Kopfsteinpflaster	Q2 17092,12107 17139,12100
@@ -7563,7 +7563,7 @@ Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 #: XXX wird hier saniert werden?
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6721
 #: osm_watch: note 1177573 1
-#: last_checked: 2017-11-05
+#: last_checked: 2017-12-03
 #: check_frequency: 120d
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1- 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 Rüdersdorfer Str. [Rückseite]: Beton	Q0- 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
@@ -10385,7 +10385,7 @@ Zauritzweg: Verbundsteinpflaster	Q1 4194,11703 4182,11831
 Im Achterkastell: Verbundsteinpflaster	Q1+ 18730,11834 18732,11885 18875,11880
 #: next_check_id: ACHTERKASTELL-2016
 #: XXX wie wird die Qualität danach sein?
-#: last_checked: 2017-09-23
+#: last_checked: 2017-12-03
 #: check_frequency: 60d
 Im Achterkastell: Baustraße, unbefestigt, Pfützen bei Regenwetter	Q3 18875,11880 18913,11909
 (Gutspark Lichtenberg): Parkwege	Q1- 15746,12967 15749,12995 15717,13001 15612,13069
@@ -11237,8 +11237,11 @@ Heerstr.: Beton	Q0- 22129,9702 21988,9766 21859,9822 21842,9829 21749,9856 21686
 Heesestr.: sehr guter Asphalt	Q0 21611,9893 21594,9895 21534,9901 21371,9923 21164,9960
 #: confirmed_by ^^^
 Parchimer Str.: guter Beton	Q1 22310,12637 22271,12623 22253,12570 22256,12489 22212,12422 22212,12349 22228,12274 22292,12198 22304,12157
-Arberstr.: mäßiger Beton	Q1 19392,9116 19406,9236 19424,9502 19437,9653
-Arberstr.: Asphalt/Gehwegplatten	Q1 19437,9653 19450,9728
+Arberstr.: mäßiger Beton	Q1 19392,9116 19406,9236 19424,9502
+#: corrected_by: srt (mäßiger Beton -> ...)
+Arberstr.: Asphalt	Q0 19424,9502 19437,9653
+#: corrected_by: srt (Asphalt/Gehwegplatten -> ...)
+Arberstr.: Verbundsteinpflaster/Beton	Q1 19437,9653 19450,9728
 #: confirmed_by: h[]ttp:[URL existiert nicht mehr]//www.berlin.de/ba-spandau/presse/archiv/20071109.1320.88651.html bestätigt den Abschnitt Falkenseer Chaussee und Germersheimer Platz
 Zweibrücker Str.: guter Asphalt	Q0 -4489,15014 -4460,15007 -4352,15063 -4338,15137 -4332,15179 -4317,15298 -4308,15411 -4294,15525 -4283,15639 -4254,15813
 Büchsenweg: Asphalt	Q0 8066,18754 8045,18804 7917,18834 7685,18775 7674,18738 7676,18713 7753,18542
