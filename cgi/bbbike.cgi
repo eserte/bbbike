@@ -3602,7 +3602,7 @@ sub search_coord {
 	    $penalty->{$q_cat} = 1 if !exists $penalty->{$q_cat} || $penalty->{$q_cat} < 1;
 	}
 	require Strassen::CatUtil;
-	Strassen::CatUtil::apply_tendencies_in_penalty($penalty);
+	Strassen::CatUtil::apply_tendencies_in_penalty($penalty, quiet => 1); # quiet because of the ferry category entry ("Q")
 	$extra_args{Handicap} =
 	    {Net => $handicap_net,
 	     Penalty => $penalty,
