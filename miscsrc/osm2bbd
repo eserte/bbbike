@@ -1238,7 +1238,7 @@ for my $osm_file (@osm_files) {
 		}
 
 		my $addcat = "";
-		if (exists $tag{'tunnel'} && $tag{'tunnel'} eq 'yes') {
+		if (exists $tag{'tunnel'} && $tag{'tunnel'} =~ m{^(yes|building_passage)$}) {
 		    $addcat .= "::Tu";
 		} elsif (exists $tag{'bridge'} && $tag{'bridge'} eq 'yes') {
 		    $addcat .= "::Br";
