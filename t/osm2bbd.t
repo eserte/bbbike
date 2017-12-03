@@ -79,6 +79,10 @@ GetOptions("keep" => \$keep)
     <tag k="population" v="3531201"/>
   </node>
 
+  <!-- nodes for StallschreiberstraÃŸe (reduced) -->
+  <node id="2453005325" visible="true" version="1" changeset="17769039" timestamp="2013-09-10T15:15:14Z" user="Pholker" uid="13673" lat="52.5069069" lon="13.4069476"/>
+  <node id="767501074" visible="true" version="1" changeset="4940461" timestamp="2010-06-08T20:41:02Z" user="wicking" uid="102755" lat="52.5077626" lon="13.4058616"/>
+
   <!-- way with cycleway and oneway -->
   <way id="76865761" version="4" timestamp="2013-09-26T03:46:24Z" changeset="18038475" uid="1439784" user="der-martin">
     <nd ref="29271394"/>
@@ -137,6 +141,16 @@ GetOptions("keep" => \$keep)
   <tag k="smoothness:left" v="bad"/><tag k="surface:left" v="cobblestone"/><tag k="surface:right" v="asphalt"/>
  </way>
 
+ <!-- surface=sett -->
+ <way id="61502109" visible="true" version="7" changeset="49145142" timestamp="2017-05-31T19:35:43Z" user="RoterEmil" uid="4179530">
+  <nd ref="2453005325"/>
+  <nd ref="767501074"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="StallschreiberstraÃŸe"/>
+  <tag k="oneway" v="yes"/>
+  <tag k="surface" v="sett"/>
+ </way>
+
 </osm>
 EOF
     close $osmfh;
@@ -167,6 +181,8 @@ EOF
 	is $strassen->data->[1], "Rudi-Dutschke-Straße\tH 13.3905066,52.5067076 13.3905715,52.5067128\n";
 	is $strassen->data->[2], "Wismarplatz\tN 13.4630646,52.5114094 13.4627415,52.5108136\n";
 	is $strassen->data->[3], "Wallensteinstraße\tN 13.5086756,52.4902799 13.5095316,52.4898947\n";
+	is $strassen->data->[4], "Stallschreiberstra\x{df}e\tN 13.4069476,52.5069069 13.4058616,52.5077626\n";
+
     }
 
     {
@@ -197,12 +213,14 @@ EOF
     {
 	my $qualitaet_s = Strassen->new("$destdir/qualitaet_s");
 	ok $qualitaet_s, 'cobblestone to quality file';
-	is $qualitaet_s->data->[0], "Wismarplatz: Kopfsteinpflaster\tQ2 13.4630646,52.5114094 13.4627415,52.5108136\n";
-	{
-	    local $TODO = 'smoothness & surface:left/right NYI';
-	    is $qualitaet_s->data->[1], "Wallensteinstraße: Kopfsteinpflaster\tQ3; 13.5095316,52.4898947 13.5086756,52.4902799\n";
-	    is $qualitaet_s->data->[2], "Wallensteinstraße: Asphalt\tQ2; 13.5086756,52.4902799 13.5095316,52.4898947\n";
+	my $rec_i = 0;
+	is $qualitaet_s->data->[$rec_i++], "Wismarplatz: Kopfsteinpflaster\tQ2 13.4630646,52.5114094 13.4627415,52.5108136\n";
+	TODO: {
+	    todo_skip 'smoothness & surface:left/right NYI', 2; # XXX todo_skip to not increase $rec_i
+	    is $qualitaet_s->data->[$rec_i++], "Wallensteinstraße: Kopfsteinpflaster\tQ3; 13.5095316,52.4898947 13.5086756,52.4902799\n";
+	    is $qualitaet_s->data->[$rec_i++], "Wallensteinstraße: Asphalt\tQ2; 13.5086756,52.4902799 13.5095316,52.4898947\n";
 	}
+	is $qualitaet_s->data->[$rec_i++], "Stallschreiberstraße: gepflastert\tQ2+ 13.4069476,52.5069069 13.4058616,52.5077626\n";
     }
 
     {
