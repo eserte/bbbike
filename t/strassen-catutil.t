@@ -78,6 +78,37 @@ local $SIG{__WARN__} = sub { push @warnings, @_ };
     is_deeply \%speed, $remember_speed, 'no change if called twice'; # and no warnings
 }
 
+{
+    # Hack in bbbike.cgi: there's an "alien"
+    # element "Q" (for ferries), which should be ignored
+    # in apply_tendencies_in_*
+    my %penalty = (
+		   'q0' => 1,
+		   'q1' => 1,
+		   'q2' => 1.11111111111111,
+		   'q3' => 1.53846153846154,
+		   'q4' => 4,
+		   'Q' => 2.5,
+		  );
+    apply_tendencies_in_penalty(\%penalty, quiet => 1);
+    # Don't use is_deeply here --- probably we would suffer from
+    # floating point inaccuracies.
+    is $penalty{'q0+'}, 1;
+    is $penalty{'q0-'}, 1;
+    is $penalty{'q4'}, 4;
+    cmp_ok $penalty{'q4-'}, '>', 4, 'q4- was lowered';
+    is $penalty{'Q'}, 2.5, 'alien category untouched';
+
+    {
+	my @warnings;
+	local $SIG{__WARN__} = sub { push @warnings, @_ };
+	apply_tendencies_in_penalty(\%penalty);
+	like $warnings[0], qr{^Cannot parse unexpected key 'Q' at }, 'expected warning';
+	is scalar(@warnings), 1, 'only one warning'
+	    or diag(explain(\@warnings));
+    }
+}
+
 is_deeply \@warnings, [], 'no warnings';
 
 __END__

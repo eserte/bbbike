@@ -21,7 +21,10 @@ use Exporter 'import';
 @EXPORT = qw(apply_tendencies_in_penalty apply_tendencies_in_speed);
 
 sub _apply_tendencies {
-    my($penalty_ref, $type) = @_;
+    my($penalty_ref, $type, %opts) = @_;
+    my $quiet = delete $opts{quiet};
+    die "Unhandled options: " . join(" ", %opts) if %opts;
+
     for my $key (keys %$penalty_ref) {
 	if (my($prefix, $num) = $key =~ m{^(.*?)(\d+)$}) {
 	    my $nextnum = $num+1;
@@ -48,17 +51,19 @@ sub _apply_tendencies {
 	} elsif ($key =~ m{[+-]$}) {
 	    # the supplied hashref already has tendency information - ignore
 	} else {
-	    warn "Cannot parse unexpected key '$key'";
+	    if (!$quiet) {
+		warn "Cannot parse unexpected key '$key'";
+	    }
 	}
     }
 }
 
 sub apply_tendencies_in_penalty {
-    _apply_tendencies($_[0], 'penalty');
+    _apply_tendencies(shift, 'penalty', @_);
 }
 
 sub apply_tendencies_in_speed {
-    _apply_tendencies($_[0], 'speed');
+    _apply_tendencies(shift, 'speed', @_);
 }
 
 1;
