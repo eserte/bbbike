@@ -455,9 +455,9 @@ $str_restrict{'r'}  = {qw(RA 1 RB 1 RC 1 R 1 R0 0 RBau 0 RG 1 RP 0 Ropeway 0)};
 $str_restrict{'b'}  = {qw(S 1 SA 1 SB 1 SC 1 S0 0 SBau 0 SBetrieb 0)};
 $str_restrict{'u'}  = {qw(U 1 UA 1 UB 1 U0 0 UBau 0 UBetrieb 0)};
 $str_restrict{'qs'} = {qw(Q0 0 Q1 1 Q2 1 Q3 1)};
-$str_restrict{'ql'} = {qw(Q0 0 Q1 1 Q2 1 Q3 1)};
+update_str_restrict('qs');
 $str_restrict{'hs'} = {qw(q0 0 q1 1 q2 1 q3 1 q4 1)};
-$str_restrict{'hl'} = {qw(q0 0 q1 1 q2 1 q3 1 q4 1)};
+update_str_restrict('hs');
 $str_ignore{'temp_sperre_s'} = {0 => 1, 1 => 1, 2 => 1, 3 => 1}; # XXX BNP auch?
 # Should maybe go to Strassen::Cat?
 $tunnel_qr = qr{^_?Tu_?$};
@@ -2231,8 +2231,7 @@ unless($skip_features{"strassen"}) {
 	      (-label => $label,
 	       -variable => \$str_restrict{'qs'}->{$cat},
 	       -command => sub {
-		   $str_restrict{'ql'}->{$cat} =
-		       $str_restrict{'qs'}->{$cat};
+		   update_str_restrict('qs');
 		   pending(1, 'replot-str-qs');
 		   pending(1, 'replot-str-ql');
 	       },
@@ -16572,6 +16571,31 @@ return 1;
 		pending(1, "replot-$1");
 	    }
 	}
+    }
+}
+
+sub update_str_restrict {
+    my($type) = @_;
+    if ($type eq 'qs') {
+	for my $tendency ('-', '+') {
+	    for my $level (0 .. 3) {
+		$str_restrict{'qs'}->{'Q'.$level.$tendency} = $str_restrict{'qs'}->{'Q'.$level};
+	    }
+	}
+	while(my($k,$v) = each %{ $str_restrict{'qs'} }) {
+	    $str_restrict{'ql'}->{$k} = $v;
+	}
+    } elsif ($type eq 'hs') {
+	for my $tendency ('-', '+') {
+	    for my $level (0 .. 4) {
+		$str_restrict{'hs'}->{'q'.$level.$tendency} = $str_restrict{'hs'}->{'q'.$level};
+	    }
+	}
+	while(my($k,$v) = each %{ $str_restrict{'hs'} }) {
+	    $str_restrict{'hl'}->{$k} = $v;
+	}
+    } else {
+	warn "WARNING: update_str_restrict: unhandled type '$type'";
     }
 }
 
