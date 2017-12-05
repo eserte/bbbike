@@ -16283,6 +16283,13 @@ sub scalecanvas {
 
 sub scalecanvas_from_canvas_event {
     my($c, $scalefactor) = @_;
+    if ($scale * $scalefactor >= 2500) { # about 1:50
+	status_message('Cannot zoom in further', 'infodlg');
+	return;
+    } elsif ($scale * $scalefactor < 0.05) { # about 1:1500000
+	status_message('Cannot zoom out further', 'infodlg');
+	return;
+    }
     my $e = $c->XEvent;
     return unless $e;
     my($x, $y) = ($c->canvasx($e->x),
