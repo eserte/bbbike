@@ -159,27 +159,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: before(1st_advent,1d) - +1d
-	2::xmas 9986,13412 10317,13248
-',
-         'from' => 1512082800,
-         'id' => 166,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              25,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (02.12.2017 - 03.12.2017)',
-         'type' => 'gesperrt',
-         'until' => 1512341999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -451,26 +431,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/tempelhof-schoeneberg/1310676-1328179-lichtenraderlichtermarkt.html
-	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
-',
-         'from' => 1512169200,
-         'id' => 417,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              26,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 3. Dezember 2017 von 13 bis 19 Uhr)',
-         'type' => 'gesperrt',
-         'until' => 1512327600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3315,16 +3276,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147342105
-	q3::inwork; 14181,11434 14211,11552
-',
-         'from' => 1511898358,
-         'id' => 2495,
-         'text' => 'Gärtnerstr.: Bauarbeiten, Einbahnstraße zwischen Simplonstr. und Wühlischstr. (offen Richtung Norden), voraussichtlich bis 22.12.2017',
-         'type' => 'handicap',
-         'until' => 1513954800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3407,27 +3359,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
          'type' => 'gesperrt',
          'until' => 1514156399
        },
-       {
-         'data' => '#: tempex: 1st_advent & T12-T19
-	2::xmas 11317,14564 11247,14578 11155,14554
-',
-         'from' => 1512212400,
-         'id' => 2518,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              26,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/pankow/971805-1328139-adventsmarktkollwitzplatz.html',
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 3. Dezember 2017, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1512324000
-       },
+       undef,
        {
          'data' => '#: tempex: 2nd_advent & T12-T19
 	2::xmas 11317,14564 11247,14578 11155,14554
@@ -3683,6 +3615,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: am Fr, den 2017-04-07 gegen 09:30: offen
 #: note: am Mo, den 2017-07-31 gegen 09:00: offen
 #: note: am Fr, den 2017-09-22 gegen 18:20: offen
+#: note: am Mo, den 2017-12-04 gegen 18:45: geschlossen
 #: tempex: volatile vvv
 	3::night 14563,8243 14425,8116 14419,8112
 	3::night 14419,8112 14425,8116 14563,8243
@@ -4102,7 +4035,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober; laut Pressemitteilung bis Ende 2017
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
-#: last_checked: 2017-11-07 vvv
+#: last_checked: 2017-12-04 vvv
 # REMOVED (weitgehend fertig) ---	q3::inwork 13384,8354 13217,8493
 # REMOVED	q3::inwork; 13217,8493 13262,8554
 # REMOVED	q3::inwork; 13262,8554 13301,8606 13314,8624
@@ -4174,7 +4107,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-12-01
+#: last_checked: 2017-12-05
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
          'from' => undef,
@@ -4341,7 +4274,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: osm_watch: way id="541556560" version="1"
-#: last_checked: 2017-11-07
+#: last_checked: 2017-12-04
 	2::inwork 14652,10201 14569,10055
 ',
          'from' => undef,

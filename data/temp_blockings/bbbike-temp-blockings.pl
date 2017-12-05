@@ -22251,7 +22251,7 @@ EOF
 EOF
      },
      { from  => 1511898358,
-       until => $isodate2epoch->("2017-12-22 16:00:00"), # 1383047340, # 1383238800, # 2013-10-31 18:00
+       until => 1512504042, # $isodate2epoch->("2017-12-22 16:00:00"), # 1383047340, # 1383238800, # 2013-10-31 18:00
        text  => 'Gärtnerstr.: Bauarbeiten, Einbahnstraße zwischen Simplonstr. und Wühlischstr. (offen Richtung Norden), voraussichtlich bis 22.12.2017',
        type  => 'handicap',
        data  => <<EOF,
@@ -23742,6 +23742,7 @@ EOF
 #: note: am Fr, den 2017-04-07 gegen 09:30: offen
 #: note: am Mo, den 2017-07-31 gegen 09:00: offen
 #: note: am Fr, den 2017-09-22 gegen 18:20: offen
+#: note: am Mo, den 2017-12-04 gegen 18:45: geschlossen
 #: tempex: volatile vvv
 	3::night 14563,8243 14425,8116 14419,8112
 	3::night 14419,8112 14425,8116 14563,8243
@@ -25980,7 +25981,7 @@ EOF
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober; laut Pressemitteilung bis Ende 2017
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
-#: last_checked: 2017-11-07 vvv
+#: last_checked: 2017-12-04 vvv
 # REMOVED (weitgehend fertig) ---	q3::inwork 13384,8354 13217,8493
 # REMOVED	q3::inwork; 13217,8493 13262,8554
 # REMOVED	q3::inwork; 13262,8554 13301,8606 13314,8624
@@ -26143,7 +26144,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-12-01
+#: last_checked: 2017-12-05
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },
@@ -26521,7 +26522,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2017-11-07
+#: last_checked: 2017-12-04
 	2::inwork 14652,10201 14569,10055
 EOF
      },

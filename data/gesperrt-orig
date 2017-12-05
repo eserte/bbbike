@@ -2219,8 +2219,8 @@ Schranke, kann auf Bürgersteig umfahren werden	BNP:3::trailer=5 1778,20377
 Schranke	BNP:3::trailer=10 5296,11529
 # 
 #: next_check_id: DIESEL-2015 vvv
-#: note: mittlerweile gibt es hier auch zwei Baustellenampeln mit Anforderung, allerdings wird relativ schnell auf grün geschaltet vvv
-#: last_checked: 2017-10-27 vvv
+#: note: mittlerweile gibt es hier auch zwei Baustellenampeln mit Anforderung, allerdings wird relativ schnell auf grün geschaltet --- jetzt (2017-12) nur noch eine vvv
+#: last_checked: 2017-12-04 vvv
 Drängelgitter	BNP:3::trailer=8 14366,8058
 Drängelgitter	BNP:5::trailer=10 14425,8052
 #: note ^^^
@@ -3083,7 +3083,7 @@ Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17453,7451 17295,73
 #: XXX Bauarbeiten (Erweiterung des Rütli-Campus?)
 #: XXX Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="137084083" version="7"
-#: last_checked: 2017-10-10
+#: last_checked: 2017-12-04
 #: check_frequency: 60d
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,9200 12548,9167
 # 

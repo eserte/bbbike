@@ -35,7 +35,7 @@ Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 #: check_frequency: 90d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
-#: last_checked: 2017-12-01
+#: last_checked: 2017-12-05
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 # REMOVED --- #: by: fritz --- #: last_checked: 2017-09-28 --- #: check_frequency: 10d --- # REMOVED --- #: valid: -20170927 --- Krautstr.: Fahrbahn abschnittsweise gesperrt, Ausweichen auf Gehweg notwendig	q3::inwork 11966,11832 11993,11978
@@ -263,7 +263,7 @@ Werdersche Rosenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9883,12251 9909,
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
 #: source_id: LMS-BR_r_LMS-BR_197
 #: osm_watch: way id="194962375" version="7"
-#: last_checked: 2017-11-28
+#: last_checked: 2017-12-04 (mapillary)
 #: check_frequency: 14d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q4::inwork 10601,12521 10704,12595
 # 
@@ -294,16 +294,7 @@ Mariannenplatz: Bauarbeiten, Fahrbahn gesperrt, Bordsteine	q4::inwork 11781,1069
 Mariannenplatz: Bauarbeiten, Fahrbahn an der Waldemarstr. gesperrt	q2::inwork 11839,10736 11897,10887
 #: last_checked ^^^
 # 
-#: XXX laut fritz bis 30.11.2017
-#: XXX ändert sich an der Fahrbahnbeschaffenheit etwas?
-#: source_id: LMS-BR_r_LMS-BR_110600_LMS-BR_72
-#: last_checked: 2017-11-30 vvv
-#: check_frequency: 7d vvv
-# REMOVED --- Böckhstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11673,9720 11640,9710
-Böckhstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 11640,9710 11411,9810
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
+# REMOVED (bis auf ein kleines Stück am Kottbusser Damm fertig) --- #: XXX laut fritz bis 30.11.2017 --- #: XXX ändert sich an der Fahrbahnbeschaffenheit etwas? --- #: source_id: LMS-BR_r_LMS-BR_110600_LMS-BR_72 --- #: last_checked: 2017-11-30 vvv --- #: check_frequency: 7d vvv --- # REMOVED --- Böckhstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11673,9720 11640,9710 --- Böckhstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 11640,9710 11411,9810
 # REMOVED (man kommt mittlerweile durch) --- #: source_id: 2147341140 --- #: XXX laut fritz bis 31.10.2017, laut vmz bis Ende Oktober 2017 --- #: last_checked: 2017-07-31 --- #: next_check: 2017-10-31 --- #: valid: -20171031 --- Erkelenzdamm: Bauarbeiten zwischen Böcklerstr. und Kohlfurter Str., Fahrbahn gesperrt, Bordsteine	q3::inwork 10967,10092 11038,10247 11094,10261
 # 
 #: source_id: 2147341145
@@ -371,12 +362,12 @@ Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5894,12480 5944,12
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 7d vvv --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12761,9190 12851,9309 12844,9351 --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12907,9073 12761,9190 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4952&mt=0&zoom=17
-#: last_checked: 2017-11-30
+#: last_checked: 2017-12-04
 #: next_check: 2018-06-01
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 
 #: next_check_id: DIESEL-2015
-#: last_checked: 2017-10-27
+#: last_checked: 2017-12-04
 Dieselstr., Umfahrung: Fußgänger, eng	q3::inwork 14326,8062 14366,8058 14384,8056 14425,8052 14471,8046
 # 
 # REMOVED (so gut wie fertig, Schlupflöcher durch die Absperrungen) --- #: last_checked: 2015-07-29 --- #: check_frequency: 7d --- #: priority: #A --- Ganghoferstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12805,8194 12873,8217 12918,8232

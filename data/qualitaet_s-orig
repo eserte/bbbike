@@ -10,7 +10,7 @@
 # REMOVED (Bauarbeiten beendet) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5898 --- #: note: oder man fährt auf dem mit zahlreichen Engstellen zugestellten Radweg, muss dann aber ggfs. warten --- #: last_checked: 2014-03-21 --- #: valid: -20140523 --- Bergmannstr.: während der Bauarbeiten zwischen Heim- und Friesenstr. Umleitung über gepflasterte Fahrbahn	Q2 9973,9232 9880,9233 9793,9241
 # 
 #: next_check_id: DIESEL-2015 vvv
-#: last_checked: 2017-10-27 vvv
+#: last_checked: 2017-12-04 vvv
 Dieselstr.: teilweise betoniert, teilweise noch unbefestigt	Q1 14326,8062 14366,8058 14384,8056 14425,8052 14471,8046
 Dieselstr., Umfahrung: Asphalt	Q0 14419,8112 14429,8074
 #: XXX_osm laut osm Asphalt, hier aber nicht!
@@ -5728,10 +5728,15 @@ Hödurstr.: Asphalt	Q1 12952,18598 12910,18584 12852,18514 12751,18401
 Hödurstr.: Kopfsteinpflaster	Q2+ 12592,18230 12647,18289
 Hödurstr.: unbefestigte Straße	Q2+ 12647,18289 12751,18401
 Fafnerstr. (Heinersdorf): Asphalt	Q0 13031,19576 12909,19609
+#: add_fragezeichen: ist die Straße noch immer unbefestigt?
 Fafnerstr. (Heinersdorf): unbefestigte Straße	Q2 12909,19609 12705,19703
-Perchtastr.: unbefestigte Straße, Schotter	Q2 12886,19341 12889,19471 12890,19478 12894,19526 12909,19609
+#: by: mapillary (neu gemacht)
+Perchtastr.: Asphalt	Q0 12886,19341 12889,19471 12890,19478 12894,19526 12909,19609
+#: add_fragezeichen: ist die Straße noch immer unbefestigt?
 Straße 1 (Heinersdorf): unbefestigte Straße, Schotter	Q2 12894,19526 12788,19555
+#: add_fragezeichen: ist die Straße noch immer unbefestigt?
 Straße 2 (Heinersdorf): unbefestigte Straße, Schotter	Q2 13021,19466 12890,19478
+#: add_fragezeichen: ist die Straße noch immer unbefestigt?
 Straße 3 (Heinersdorf): unbefestigte Straße, Schotter	Q2 12889,19471 12746,19474 12722,19452
 Straße 4 (Heinersdorf): unbefestigte Straße	Q2 13014,19218 12956,19218 12945,19239 12799,19242
 Straße 4 (Heinersdorf): unbefestigte Straße	Q2 12814,19202 12937,19194 12956,19218
@@ -6962,7 +6967,8 @@ Straße 51: unbefestigte Straße, Feinschotter	Q1- 15325,21777 15377,21921
 Straße 50: alter Asphalt	Q2 15452,22180 15430,22196 15353,22105
 Straße 50: Asphalt	Q0 15305,22017 15281,21960 15197,21791 15118,21585
 Straße 50: Beton	Q0 15118,21585 15107,21514 15097,21424
-Straße 46 (Karow): unbefestigte Straße	Q2+ 14953,21680 14819,21711 14690,21764
+#: add_fragezeichen ist die Straße 46 noch immer unbefestigt oder mittlerweile asphaltiert?
+Straße 46 (Karow): unbefestigte Straße	Q2+ 14953,21680 14819,21711 14697,21760
 Straße 48 (Karow): unebener Asphalt	Q1+ 14885,21827 15053,22039 15112,22101
 Straße 48 (Karow): Asphalt	Q0 15112,22101 15202,22210
 Straße 48 (Karow): rauer Asphalt	Q1+ 15202,22210 15377,22452
@@ -10486,6 +10492,9 @@ Teichmummelring: Betonpflaster	Q1+ 22246,2272 22418,2390 22454,2342 22271,2214
 (Einkaufszentrum Lagunenweg - Parkweg): Verbundsteinpflaster	Q1 31650,3218 31660,3193
 (Parkweg): Asphalt	Q0 31762,3202 31747,3199 31700,3204 31660,3193 31658,3157 31683,3132 31707,3075 31751,3028 31800,2969 31948,2962
 (Falkenberger Str. - Piesporter Str., Wohngebietsstraße): Verbundsteinpflaster	Q1 15370,16781 15362,16742 15350,16729
+#: XXX wird hier die Qualität verbessert?
+#: last_checked: 2017-12-02 (mapillary)
+#: check_frequency: 30d
 B2: asphaltierter Radweg mit Wurzelhebungen	Q1 15778,20350 15872,20496 15900,20531 16025,20631 16644,21042 16815,21156 17073,21329
 (Falkenberger Fußsteig - Falkenberger Chaussee): wassergebundene Decke, teilweise mit Regenschäden	Q1- 18507,18541 18483,18433 18521,18347 18530,18327
 (Falkenberger Chaussee - Darßer Str.): Asphalt, etwas wellig	Q1+ 16947,17506 16848,17530
@@ -10562,6 +10571,7 @@ Erbsenpfad: schlechter fester Sandweg	Q3 -7872,14409 -7850,14555
 Ferdinandstr. (Kaulsdorf): Asphalt mit Schäden	Q1+ 23403,11841 23215,11852
 #: corrected_by: srt ("schlechtes" hinzugefügt)
 Ferdinandstr. (Kaulsdorf): schlechtes Kopfsteinpflaster	Q3 23215,11852 22947,11840
+#: XXX sieht auf den mapillary-Bildern eher wie ein normaler fester Sandweg aus, also Q2
 Straße 47 (Blankenburg): schlechter fester Sandweg	Q3+ 13136,21419 13224,21374
 #: confirmed_by: srt
 Wallenroder Str.: Asphalt	Q0 5665,21733 5989,22006
@@ -10825,7 +10835,8 @@ Kronstadter Weg: Asphalt	Q0 6809,-152 6867,-126 6963,-82 7061,-38 7161,6 7181,-1
 #: corrected_by: srt (Beton -> Asphalt)
 Kronstadter Weg: Asphalt	Q0 7181,-15 7231,25
 #: corrected_by: srt (guter Asphalt -> unbefestigte Straße)
-Straße 47: unbefestigte Straße, holprig	Q2 14650,21649 14772,21607 14906,21579 14986,21578 15118,21585
+#: corrected_by: mapillary (neu gemacht?)
+Straße 47: Asphalt	Q0 14650,21649 14772,21607 14906,21579 14986,21578 15118,21585
 #: confirmed_by: srt
 Straße 47: guter Asphalt	Q0 15118,21585 15286,21630 15332,21658 15364,21696 15379,21728 15390,21769
 #: confirmed_by: srt
@@ -13883,7 +13894,10 @@ Blumenweg: schlechtes Kopfsteinpflaster	Q3 8427,4435 8336,4378 8179,4381 8161,43
 # 
 #: by: Stefan Fruhner vvv
 #: confirmed_by: srt (nördlicher Abschnitt)
-Streckfußstr.: Asphalt	Q0 13903,22720 13976,22813 14043,22903 14148,23040 14338,23187 14442,23339 14560,23543 14646,23673
+#: confirmed_by: mapillary
+Streckfußstr.: Asphalt	Q0 13896,22691 13916,22722 13976,22813 14043,22903 14148,23040 14338,23187 14442,23339 14560,23543 14646,23673
+#: confirmed_by: mapillary
+Streckfußstr.: Asphalt	Q0 13916,22722 13986,22672
 #: confirmed_by: srt (vom Zug aus gesehen)
 Liebenstr.: schlechtes Kopfsteinpflaster	Q3 14597,23280 14526,23155
 #: confirmed_by: srt (südlicher Abschnitt; Bitumen -> Asphalt)
@@ -13904,10 +13918,11 @@ Flaischlenstr.: asphaltiert	Q0 13456,22533 13404,22384
 #: confirmed_by: srt
 Flaischlenstr.: schlechtes Kopfsteinpflaster, Ausweichen auf den Fußweg (Rasenflächen mit Trampelpfad) möglich	Q3 13404,22384 13354,22327 13267,22090 13249,22003
 #: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> unbefestigt, zumindest an der Königsteinstr.)
-Frankenstr.: unbefestigt	Q2 13267,22090 13503,22239 13541,22300 13622,22409 13681,22501
+Frankenstr.: unbefestigt	Q2 13267,22090 13503,22239 13541,22300 13622,22409 13681,22501 13706,22536
 #: confirmed_by: srt (von der Bahnstrecke aus gesehen)
 Rudelsburgstr.: Asphalt	Q0 12814,20648 12835,20670 12865,20684 13165,21144 13204,21203 13255,21282 13371,21462 13413,21528 13479,21633 13545,21738 13601,21826 13643,21901 13687,21993 13748,22093 13766,22119 13780,22141 13845,22231
 #: confirmed_by: srt (westlicher Abschnitt)
+#: confirmed_by: mapillary
 Frankensteinstr.: schlechtes Kopfsteinpflaster	Q3 13845,22231 13622,22409 13456,22533
 #: confirmed_by: srt
 Wolkensteinstr.: fester Sandweg	Q2 13681,22501 13498,22636
@@ -17142,6 +17157,7 @@ Klixstr.: schlechtes Kopfsteinpflaster	Q3 3833,17929 3871,18144 3909,18342
 Düppelstr.: mäßiges Kopfsteinpflaster	Q2 37,2562 45,2592 45,2644 39,2669 21,2728 12,2752 -49,3003
 # 
 #: by: Markus Brandt:
+#: confirmed_by: mapillary
 Miltenberger Weg: mäßiges Kopfsteinpflaster	Q2 11320,18218 11448,18051
 # 
 #: by: Florian (berlin):
@@ -19032,6 +19048,7 @@ Anna-Bruseberg-Str.: loser Sandweg, Schlaglöcher	Q2- 12039,23125 11165,23796
 Kandeler Weg: guter Asphalt	Q0 -4541,14893 -4542,14942 -4526,14971 -4489,15014
 # 
 #: by: Andrea Löser:
+#: confirmed_by: mapillary
 Rüdigerstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 13255,21282 13107,21357
 # 
 #: by: Jens Gieseke:
@@ -19178,6 +19195,7 @@ Behaimstr.: guter Asphalt	Q0 13140,16000 13189,16089 13286,16267 13348,16387
 Bardeyweg: Asphalt	Q0 -4758,9259 -4696,9263 -4635,9267
 # 
 #: by: Carsten Mathäs:
+#: confirmed_by: mapillary
 Rübländerstr.: schlechtes Kopfsteinpflaster	Q3 14321,23378 14382,23574
 # 
 #: by: Dietmar Stelzner:
@@ -20216,7 +20234,9 @@ Tilburger Str.: guter Asphalt	Q0 13870,5436 13893,5374
 #: by: ^^^
 # 
 #: by: Andreas Manlik: vvv
+#: confirmed_by: mapillary
 Kerkowstr.: guter Asphalt	Q0 14597,22842 14642,23072
+#: confirmed_by: mapillary
 Kerkowstr.: schlechtes Kopfsteinpflaster	Q3 14642,23072 14726,23194 14865,23388
 Frundsbergstr.: Asphalt	Q0 15529,22981 15382,23051 15310,23085 15280,23097
 #: by: ^^^
@@ -20539,6 +20559,7 @@ Hranitzkystr.: guter Asphalt	Q0 8689,1670 8661,1649 8578,1692 8471,1741 8342,180
 Am Waidmannseck: Beton	Q0 4887,21944 4839,21964 4786,22010 4740,22075 4762,22092 4859,22142
 # 
 #: by: Ekkehard Hochbaum:
+#: confirmed_by: mapillary
 Heimburgstr.: schlechtes Kopfsteinpflaster	Q3 13413,21528 13182,21639
 # 
 #: by: Elke Woike: vvv
@@ -26610,6 +26631,7 @@ Benfelder Str.: Asphalt	Q1 14484,16035 14516,15943
 #: by: Michael Braun [AM] vvv
 #: confirmed_by: srt
 Retzbacher Weg: Kopfsteinpflaster	Q2 11578,18406 11665,18237 11725,18032 11785,17729
+#: confirmed_by: mapillary
 Dettelbacher Weg: Kopfsteinpflaster	Q2 11696,18454 11750,18273 11819,18050
 #: confirmed_by: srt
 Zeiler Weg: Kopfsteinpflaster	Q2 11495,18129 11579,18184 11665,18237 11750,18273 11835,18301 11914,18303
@@ -26998,6 +27020,9 @@ Leopoldstr. (Lichtenberg): Kopfsteinpflaster	Q2 15945,10984 16192,10907 16349,10
 # 
 #: by: Hildegund Beulmann-Karl [AM]
 Ibisweg: Asphalt	Q0 14854,4078 14573,3843
-#
+# 
 #: by: wosch
 (Treseburger Str. - Karower Damm): Verbundsteinpflaster	Q1 14257,21411 14220,21039
+# 
+#: by: mapillary: 
+Blankenburger Chaussee [zur Straße 47]: Asphalt	Q0 14650,21649 14670,21720 14697,21760 14746,21828 14742,21843

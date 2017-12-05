@@ -110,13 +110,14 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6183 (Baubeginn erst 2015)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.521884.php (Baubeginn, Fertigstellung der Gesamtmaßnahme August 2018)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.532371.php (Fertigstellung des Teilabschnittes am 17.01.2017)
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.654744.php
 #: XXX laut fritz dauern die Bauarbeiten zwischen Böcklerstraße und Alexandrinenstraße bis 2017-10-13
 #: source_id: 2147340884
 #: source_id: 2147340970
 #: source_id: LMS-BR_r_LMS-BR_90638
 #: source_id: 2147341904
 #: last_checked: 2017-11-30 vvv
-#: check_frequency: 14d vvv
+#: check_frequency: 60d vvv
 # REMOVED (fertig) --- Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected; 9865,10227 9948,10280 9873,10285
@@ -705,7 +706,7 @@ Rothenbachstr.: Verbesserung -> wird der frühere Radweg wieder aktiviert?	?::pro
 Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected; 15662,16656 15437,16491
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4378
-#: last_checked: 2017-11-17
+#: last_checked: 2017-12-02 (mapillary)
 Caligariplatz: Verbesserung -> offizielle Radwegführung zur Wisbyer Str.?	?::projected 12121,16317 12097,16263 12090,16199
 # 
 #: last_checked: 2017-08-06
@@ -907,7 +908,7 @@ Hielscherstr.: Asphaltierung	?::projected 7558,19886 7604,19988 7695,20175 7735,
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf ("keine Entscheidung")
 #: osm_watch: way id="4684852" version="8"
-#: last_checked: 2017-08-06
+#: last_checked: 2017-12-02 (mapillary)
 #: check_frequency: 360d
 Neukirchstr.: Asphaltierung	?::projected 12751,18401 12885,18329
 # 
@@ -1507,7 +1508,7 @@ Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projecte
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf
 #: XXX Ausbau des Kopfsteinpflasters, Bau einer Asphaltfahrbahn
 #: osm_watch: way id="75509950" version="11"
-#: last_checked: 2017-11-30
+#: last_checked: 2017-12-04
 #: next_check: 2018-03-01
 Friedelstr.: Asphaltierung	?::projected 12085,9778 12074,9689 12066,9558 12047,9429 12074,9217
 # 
@@ -1516,7 +1517,7 @@ Friedelstr.: Asphaltierung	?::projected 12085,9778 12074,9689 12066,9558 12047,9
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="14"
-#: last_checked: 2017-11-30
+#: last_checked: 2017-12-04
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -1627,7 +1628,7 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: http://www.berliner-woche.de/neukoelln/verkehr/elsensteg-barrierefreiheit-nicht-in-sicht-stufen-an-der-fussgaengerbruecke-bleiben-d120113.html (keine Verbesserung beim Elsensteg)
 #: XXX zunächst Arbeiten der Wasserbetriebe (gibt es da schon Einschränungen?), ab Juni 2017 Straßenbauarbeiten
 #: osm_watch: way id="182693863" version="2"
-#: last_checked: 2017-11-07
+#: last_checked: 2017-12-04
 #: next_check: 2018-03-01
 Innstr.: hier wird ein Asphaltstreifen entstehen, vielleicht auch der Zugang zum Elsensteg erleichtert?	?::projected 13107,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13366,8694
 #: XXX ^^^
@@ -1636,7 +1637,7 @@ Innstr.: hier wird ein Asphaltstreifen entstehen, vielleicht auch der Zugang zum
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017)
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5520
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036892648488/892648488/00177969/69-Anlagen/02/0195Radwegebebauung.pdf
-#: last_checked: 2017-11-18
+#: last_checked: 2017-12-04
 #: check_frequency: 100d
 Weigandufer (und Pflügerstr.?): Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 13939,8228 13875,8282 13716,8410 13641,8470 13539,8552 13450,8625 13366,8694 13191,8838 13048,8956 12907,9073 12761,9190 12620,9293 12480,9394
 # 
@@ -2008,7 +2009,7 @@ Margaretenaue/Pasewalker: Abbiegesituation für Radfahrer?	? 12015,20338 12000,20
 #: source_id: LMS-BR_r_LMS-BR_106115_LMS-BR_72
 #: source_id: 2147342110
 #: last_checked: 2017-10-14
-#: next_check: 2017-12-05
+#: next_check: 2017-12-12
 Kaiser-Wilhelm-Str.: wird es nach den Bauarbeiten Radspuren oder Radwege geben?	?::inwork; 6993,3765 6954,3703 6930,3666 6780,3497
 # 
 # REMOVED (Radfahrer dürfen offiziell auf dem Gehweg fahren) --- #: XXX laut fritz bis 03.11.2017, laut vmz bis Anfang Dezember 2017 --- #: source_id: 2147341925 --- #: source_id: 2147341599 --- Katzbachstr.: Bauarbeiten zwischen Yorck- und Kreuzbergstr., auch für Radfahrer relevant?	?::inwork; 8595,9495 8598,9269
@@ -2283,13 +2284,13 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7478
 #: XXX "noch 2016"
 #: osm_watch: note 824350 3
-#: last_checked: 2017-12-01
+#: last_checked: 2017-12-04
 #: check_frequency: 14d
 #: priority: #C
 Sebastian/Luckauer: Zebrastreifen in Bau	?::inwork 11113,10943 11109,10935
 # 
 #: osm_watch: note 851907 3
-#: last_checked: 2017-11-28
+#: last_checked: 2017-12-04
 #: check_frequency: 14d
 #: priority: #C
 Oranienplatz: Zebrastreifen in Bau	?::inwork 11233,10672 11258,10682 11262,10655
@@ -3186,8 +3187,8 @@ Güterbahnhof Wilmersdorf: vermutlich wird die Straße während der Bauarbeiten ges
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036827265989/827265989/00127188/88-Anlagen/02/AnlageDS2043VIIWege.pdf vvv
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_04_0325_0472_online.pdf
 #: XXX Namensvorschläge
-#: last_checked: 2017-09-30 vvv
-#: check_frequency: 360d vvv
+#: last_checked: 2017-12-02 (mapillary) vvv
+#: check_frequency: 270d vvv
 Zum Hechtgraben: Benennung zu Malchower Teichweg	? 16163,18780 16158,19049 16104,19165
 # REMOVED (hier heißt des Wartenberger Weg, vermutlich bleibt das so) --- Zum Hechtgraben, Verlängerung: Benennung zu Malchower Teichweg	? 16074,19162 16074,19436
 Zum Hechtgraben, Verlängerung: Benennung zu Malchower Teichweg	? 16074,19436 16081,19656 16082,19754 15617,19775
