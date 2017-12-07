@@ -22797,13 +22797,13 @@ EOF
 	q3::inwork; 15098,12849 15233,12829 15357,12813
 EOF
      },
-     { from  => 1502056800, # 2017-08-07 00:00
-       until => 1502894902, # $isodate2epoch->("2017-08-18 12:00:00"), # 1502834399, # 2017-08-15 23:59
-       text  => 'Weichselstr.: Bauarbeiten zwischen Oderstr. und Scharnweberstr. Richtung Norden, Fahrbahn gesperrt, bis Mitte August 2017',
+     { from  => undef, # 1502056800, # 2017-08-07 00:00
+       until => $isodate2epoch->("2017-12-15 18:00:00"), # 1502894902, # $isodate2epoch->("2017-08-18 12:00:00"), # 1502834399, # 2017-08-15 23:59
+       text  => 'Scharnweberstr.: zwischen Gürtelstr. und Jessnerstr. Richtung Weichselstr. Bauarbeiten, Fahrbahn gesperrt, bis Mitte Dezember 2017',
        type  => 'handicap',
-       source_id => '2147341689',
+       source_id => '2147342112',
        data  => <<EOF,
-	q4::inwork; 14794,11770 14802,11784 14835,11840 14887,11929
+	q3::inwork; 15248,11880 15121,11899
 EOF
      },
      { from  => 1394953200, # 2014-03-16 08:00
@@ -26092,8 +26092,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2017-11-05 00:00:00"), # 1495918329, # 2017-05-27 22:52
-       until => $isodate2epoch->("2017-12-08 12:00:00"),
-       text  => 'Bölschestr.: Bauarbeiten, zwischen Aßmannstr. und Müggelseedamm Richtung Süden gesperrt, ab 06. November 2017 bis 08. Dezember 2017',
+       until => $isodate2epoch->("2017-12-18 12:00:00"),
+       text  => 'Bölschestr.: Bauarbeiten, zwischen Aßmannstr. und Müggelseedamm Richtung Süden gesperrt, ab 06. November 2017 bis 18. Dezember 2017',
        type  => 'handicap',
        data  => <<EOF,
 #: note: laut fritz bis 8.12.2017, laut VMZ bis Mitte Dezember 2017
@@ -26706,7 +26706,7 @@ EOF
        type  => 'handicap',
        source_id => '2147342100',
        data  => <<EOF,
-#: XXX laut fritz nur Richtung Westen gesperrt
+# REMOVED --- #: XXX laut fritz nur Richtung Westen gesperrt
 	q3::inwork 6659,16133 6843,16346
 EOF
      },

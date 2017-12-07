@@ -765,7 +765,7 @@ Im Eck: Verbesserung -> evtl. Asphaltierung?	?::projected 10269,906 10229,1008 1
 Neudecker Weg: Verbesserung -> Radspuren oder Asphaltierung des Radwegs? ("Teilabschnitte")	?::projected 16908,1217 16975,1262 17120,1394 17211,1469 17526,1540 17855,1629 18044,1716 18198,1814 18361,1926 18396,1990
 # 
 #: XXX Maßnahme Rd.4
-#: osm_watch: way id="31012748" version="15"
+#: osm_watch: way id="31012748" version="16"
 #: last_checked: 2017-08-04
 #: check_frequency: 30d
 Fürstenwalder Allee: Verbesserung -> Verbreiterung Radweg	?::inwork; 33545,2896 33525,2901 33111,3064 32829,3105 32121,3215 31973,3237
@@ -776,7 +776,7 @@ Fürstenwalder Allee: Verbesserung -> Verbreiterung Radweg	?::inwork; 33545,2896 
 #: last_checked: 2017-08-17
 Bellevuestr.: Verbesserung -> vermutlich Radspuren?	?::projected; 23333,5710 23402,5483
 # 
-#: osm_watch: way id="43063529" version="13"
+#: osm_watch: way id="43063529" version="14"
 #: last_checked: 2017-10-15 (mapillary)
 An der Wuhlheide: Verbesserung -> evtl. Radpuren?	?::projected; 19759,6049 19958,5950
 # 
@@ -871,6 +871,7 @@ Kameruner Str.: vielleicht Asphaltierung?	?::projected 6267,15844 6383,15972 648
 #: last_checked: 2017-09-28
 Residenzstr.: Radstreifen	?::projected 8127,16894 8079,16953 7970,17087
 # 
+#: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.655722.php (Erwähnung des Vorhabens Spreeradweg am Wullenwebersteg)
 #: XXX oder ist was anderes mit "Rampe Wullenwebersteg" gemeint?
 #: last_checked: 2017-07-03
 #: check_frequency: 360d
@@ -1637,9 +1638,11 @@ Innstr.: hier wird ein Asphaltstreifen entstehen, vielleicht auch der Zugang zum
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017)
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5520
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036892648488/892648488/00177969/69-Anlagen/02/0195Radwegebebauung.pdf
+#: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.655982.php ("ab 2019")
 #: last_checked: 2017-12-04
-#: check_frequency: 100d
-Weigandufer (und Pflügerstr.?): Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 13939,8228 13875,8282 13716,8410 13641,8470 13539,8552 13450,8625 13366,8694 13191,8838 13048,8956 12907,9073 12761,9190 12620,9293 12480,9394
+#: next_check: 2019-01-01
+# REMOVED (hier nicht?) --- Weigandufer (und Pflügerstr.?): Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 13939,8228 13875,8282 13716,8410
+Weigandufer und Pflügerstr.: Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 13716,8410 13641,8470 13539,8552 13450,8625 13366,8694 13191,8838 13048,8956 12907,9073 12761,9190 12620,9293 12480,9394
 # 
 #: XXX brunnels!
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1601/nachricht5908.html
@@ -1988,8 +1991,14 @@ Fraenkelufer: Neugestaltung des Uferwegs, Verbindung zum Böcklerpark	?::projecte
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-#: XXX laut osm cycleway=lane
-Gürtelstr.: gibt es hier eine Radspur?	?; 15294,11964 15361,12071
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.618687.php
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.623391.php
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.655961.php (Sperrung doch nicht erfolgt? Dafür Einbahnstraßenregelung ab Dez. 2017)
+#: XXX was bedeutet die Einbahnstraßenregelung für Radfahrer?
+#: osm_watch: way id="13860352" version="10"
+#: priority: #A
+#: next_check: 2017-12-20
+Moltkestr.: wird es hier eine Einbahnstraßenregelung (offen Richtung Norden) geben? Dürfen Radfahrer in die entgegengesetzte Richtung fahren?	? 3898,4477 3859,4531
 # 
 #: XXX betoniert, Einbahnstraße offen in Richtung Konrad-Wolf-Str., Straßenbahntrasse an der Suermondtstr., aber Überqueren für Fußgänger möglich
 Suermondtstr. - Konrad-Wolf-Str.: Ausschilderung? Genaue Qualität?	? 16755,16120 16721,16016 16812,15973 16846,15936
@@ -2009,7 +2018,7 @@ Margaretenaue/Pasewalker: Abbiegesituation für Radfahrer?	? 12015,20338 12000,20
 #: source_id: LMS-BR_r_LMS-BR_106115_LMS-BR_72
 #: source_id: 2147342110
 #: last_checked: 2017-10-14
-#: next_check: 2017-12-12
+#: next_check: 2017-12-11
 Kaiser-Wilhelm-Str.: wird es nach den Bauarbeiten Radspuren oder Radwege geben?	?::inwork; 6993,3765 6954,3703 6930,3666 6780,3497
 # 
 # REMOVED (Radfahrer dürfen offiziell auf dem Gehweg fahren) --- #: XXX laut fritz bis 03.11.2017, laut vmz bis Anfang Dezember 2017 --- #: source_id: 2147341925 --- #: source_id: 2147341599 --- Katzbachstr.: Bauarbeiten zwischen Yorck- und Kreuzbergstr., auch für Radfahrer relevant?	?::inwork; 8595,9495 8598,9269
@@ -2091,6 +2100,7 @@ Louise-Henry-Str.: bisherige Straße 18a wird unbenannt	? 11217,21565 11297,21593
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170730 (bis Oktober 2017)
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.637330.php (Ende Januar 2018)
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=37053
+#: source_id: 2147341977
 #: osm_watch: way id="23623840" version="21"
 #: last_checked: 2017-05-01
 #: next_check: 2018-01-31

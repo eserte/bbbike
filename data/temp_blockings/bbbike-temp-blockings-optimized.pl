@@ -3501,7 +3501,16 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	q3::inwork; 15248,11880 15121,11899
+',
+         'from' => undef,
+         'id' => 2550,
+         'source_id' => '2147342112',
+         'text' => 'Scharnweberstr.: zwischen Gürtelstr. und Jessnerstr. Richtung Weichselstr. Bauarbeiten, Fahrbahn gesperrt, bis Mitte Dezember 2017',
+         'type' => 'handicap',
+         'until' => 1513357200
+       },
        undef,
        undef,
        undef,
@@ -4086,9 +4095,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1509836400,
          'id' => 2867,
-         'text' => 'Bölschestr.: Bauarbeiten, zwischen Aßmannstr. und Müggelseedamm Richtung Süden gesperrt, ab 06. November 2017 bis 08. Dezember 2017',
+         'text' => 'Bölschestr.: Bauarbeiten, zwischen Aßmannstr. und Müggelseedamm Richtung Süden gesperrt, ab 06. November 2017 bis 18. Dezember 2017',
          'type' => 'handicap',
-         'until' => 1512730800
+         'until' => 1513594800
        },
        undef,
        undef,
@@ -4394,19 +4403,6 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Uferweg Plötzensee: wegen Unterspülung gesperrt, Umfahrung über enge Pfade möglich',
          'type' => 'gesperrt',
          'until' => undef
-       },
-       undef,
-       undef,
-       {
-         'data' => '#: XXX laut fritz nur Richtung Westen gesperrt
-	q3::inwork 6659,16133 6843,16346
-',
-         'from' => 1511737200,
-         'id' => 2921,
-         'source_id' => '2147342100',
-         'text' => 'Ungarnstr.: Sperrung an der Kreuzung Müllerstr., ab 28.11.2017 08:00 bis 07.12.2017',
-         'type' => 'handicap',
-         'until' => 1512658800
        }
      
 );
