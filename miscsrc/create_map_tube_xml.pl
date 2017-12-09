@@ -28,7 +28,7 @@ use Strassen::CoreHeavy;
 use Strassen::Combine;
 use Strassen::MultiStrassen;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 my $do_berlin_specialities = 1;
 my $output_format = 'Map::Tube';
@@ -191,7 +191,7 @@ my %other_links; # Id => { Type => [id, id, ...], ... }, ...
 	my @c = @{ $r->[Strassen::COORDS] };
 	last if !@c;
 	my $dir = $p->get_directives;
-	if ($dir && $dir->{map_tube_other_link}) {
+	if ($dir && $dir->{map_tube_other_link} && $output_format eq 'Map::Tube') {
 	    my $station = normalize_station($r->[Strassen::NAME]);
 	    my $station_id = $station2id{$station};
 	    if (!defined $station_id) {
@@ -253,6 +253,7 @@ if ($output_format eq 'Map::Tube') {
     print $doc->serialize(1);
 } elsif ($output_format eq 'Map::Metro') {
     binmode STDOUT, ':utf8';
+    print '# Created by ' . basename(__FILE__) . ' ' . $VERSION . ' (part of BBBike)' . "\n\n";
     print "--stations\n\n";
     my %seen_station;
     for my $line (sort keys %line2stations) {
