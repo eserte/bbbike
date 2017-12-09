@@ -24476,12 +24476,12 @@ EOF
 	q4; 15205,11080 15102,11120 15021,11152 14988,11130
 EOF
      },
-     { from  => $isodate2epoch->("2017-07-03 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-07-06 23:59:59"),
+     { from  => $isodate2epoch->("2018-01-15 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-01-18 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 1],
                        ['yearly', days => 27, months => 6]],
-       text  => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 04.07.2017-06.07.2017',
+       text  => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 16.01.2018-18.01.2018',
        type  => 'handicap',
        source_id => '2147339708',
        data  => <<EOF,
@@ -25648,7 +25648,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-11-28 vvv
+#: last_checked: 2017-12-09 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -26144,7 +26144,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-12-05
+#: last_checked: 2017-12-09
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },

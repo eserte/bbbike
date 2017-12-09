@@ -2834,8 +2834,9 @@ B‰rbel-Bohley-Ring: Baustelle, Betreten verboten	2::inwork 9933,15815 9744,15793
 # REMOVED --- #: last_checked: 2017-09-22 --- Oberwallstr.: Bauarbeiten, Einbahnstraﬂe	1s:q3:inwork 9898,12161 9913,12068
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4055&mt=0&zoom=16
-#: osm_watch: way id="523614486" version="2"
-#: osm_watch: way id="5134092" version="19"
+#: osm_watch: way id="523614484" version="2"
+# REMOVED (wurde gelˆscht) --- #: osm_watch: way id="523614486" version="3"
+# REMOVED (wurde gelˆscht) --- #: osm_watch: way id="5134092" version="20"
 #: last_checked: 2017-10-27
 #: check_frequency: 90d
 Zufahrt Parkhaus: Abrissarbeiten, Straﬂe komplett gesperrt	2::inwork 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
@@ -2884,8 +2885,7 @@ Mauerstr.: Bauarbeiten, Einbahnstraﬂe	1s:q4:inwork 9108,11961 9138,11872
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.616795.php
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.633456.php (÷ffnung f¸r Fuﬂg‰nger)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8329
-#: last_checked: 2017-10-26 (mapillary)
-#: next_check: 2017-12-08
+#: last_checked: 2017-12-08
 #: valid: 20170801-20190228
 #: priority: #A
 Rigaer Str.: Komplettsperrung zwischen Schreinerstr. und Voigtstr.	2::inwork 14538,12371 14748,12314
@@ -3026,7 +3026,7 @@ Heidelberger Str.: Baustelle, Einbahnstraﬂenregelung	1s:q3:inwork 13489,9199 134
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (evtl. gibt's hier sp‰ter Radstreifen)
 #: source_id: 2147340715 vvv
 #: source_id: LMS-BR_r_LMS-BR_82028
-#: osm_watch: way id="42091230" version="21"
+#: osm_watch: way id="42091230" version="23"
 #: last_checked: 2017-09-28 vvv
 # REMOVED (temporary) --- #: next_check: 2017-12-31 (vermutlich wird nur auf die neue Fahrbahnh‰lfte gewechselt werden) vvv
 #: next_check: 2017-12-31 vvv
@@ -3124,14 +3124,7 @@ Nalepastr.: wegen Straﬂenbau gesperrt	2::inwork 17190,7306 17211,7280 17219,7268
 # 
 # REMOVED (fertig) --- #: XXX Bauarbeiten im Park dauern bis 2016 --- #: last_checked: 2016-02-05 --- #: check_frequency: 60d --- Kleiner Tiergarten: wegen Bauarbeiten gesperrt	2::inwork 6573,13149 6564,13260 6535,13327
 # REMOVED (fertig) --- #: next_check_id: FISCHERINSEL-2015 vvv --- #: source_id: 2147339543 vvv --- #: last_checked: 2016-12-16 vvv --- #: next_check: 2016-12-22 vvv --- M‰rkisches Ufer - Neue Roﬂstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 --- Neue Roﬂstr. - M‰rkisches Ufer: wegen Bauarbeiten gesperrt	3 10687,11853 10869,11949 --- M‰rkisches Ufer - Neue Roﬂstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10672,11870 --- Neue Roﬂstr. - M‰rkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,11853 10869,11949
-# 
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5561.html
-#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/gerickesteg/index.shtml (20 Monate Bauzeit)
-#: XXX laut http://www.stadtentwicklung.berlin.de/bauen/strassenbau/ bis "II. Quartal 2017"
-#: osm_watch: way id="27250334" version="7"
-#: last_checked: 2017-09-09
-#: check_frequency: 45d
-Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,12669 6765,12680
+# REMOVED (fertig) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5561.html --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/gerickesteg/index.shtml (20 Monate Bauzeit) --- #: XXX laut http://www.stadtentwicklung.berlin.de/bauen/strassenbau/ bis "II. Quartal 2017" --- #: osm_watch: way id="27250334" version="7" --- #: last_checked: 2017-09-09 --- #: check_frequency: 45d --- Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,12669 6765,12680
 # 
 #: XXX Sperrungen wegen der IGA 2017 vvv
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.640770.php (Wiedererˆffnung evtl. am 31. M‰rz 2018)
@@ -3356,7 +3349,7 @@ Schloﬂplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2017-10-13
+#: last_checked: 2017-12-09
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
