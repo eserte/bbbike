@@ -17,7 +17,6 @@ Berlin Zoologischer Garten	RA 5558,11251
 Berlin Friedrichstr.	RA 9181,12732
 Berlin Alexanderplatz	RA 10856,12897
 Berlin Ostbahnhof	RA 12535,11712
-Berlin-Karlshorst	RB 18796,8492
 Berlin-Lichterfelde Ost	RB 5440,2601
 Erkner	RC 34245,2837
 Fangschleuse	RC 39153,615
@@ -39,7 +38,7 @@ Melchow	R 29469,41288
 Biesenthal	R 28262,39241
 Rüdnitz	RC 25726,34974
 Berlin-Lichtenberg	RB 16767,11787
-Ostkreuz	RB 14847,10892
+Ostkreuz	RA 14847,10892
 Berlin-Schöneweide	RB 17722,5573
 Königs Wusterhausen	RC 26348,-11950
 Berlin-Spandau	RB -3663,14083
@@ -245,7 +244,7 @@ Jüterbog Altes Lager	R -16643,-43721
 Oehna	R -12408,-53184
 Linda (Elster)	R -9753,-61929
 Holzdorf (Elster)	R -7629,-69884
-Herzberg (Elster) West	R -1390,-80976
+Herzberg (Elster)	R -1390,-80976
 Falkenberg (Elster)	R 1803,-91344
 Bad Liebenwerda	R 12592,-98667
 Elsterwerda Biehla	R 20632,-103673
@@ -255,7 +254,7 @@ Elsterwerda	R 20441,-105131
 Prösen Ost	R 19478,-108805
 Frauenhain	R 19747,-113446
 Zabeltitz	R 20648,-117376
-Großenhain Cottbusser Bahnhof	R 21343,-123775
+Großenhain	R 21343,-123775
 Priestewitz	R 20447,-128357
 Niederau	R 24092,-136541
 Weinböhla	R 24183,-138430
@@ -281,6 +280,7 @@ Falkenberg (Mark)	R 47413,45515
 Niederfinow	R 45331,47899
 Zühlsdorf	RC 9929,36358
 Wensickendorf	RC 8698,38671
+Mahlsdorf	RB 24487,12082
 Strausberg	RC 39654,14564
 Bärenklau	RC -7654,32774
 Vehlefanz	RC -9562,34675
@@ -483,9 +483,9 @@ Warenshof	R -43482,124201
 Schwenzin	R -45799,124790
 Jabel (Meckl)	R -50234,125664
 Nossentin	R -56590,122940
-Malchow (Meckl)	R -58223,118869
-Alt Schwerin	R -63177,121776
-Karow (Meckl)	R -68881,124786
+Inselstadt Malchow	R -58223,118869
+Alt Schwerin	R0 -63177,121776
+Karow (Meckl)	R0 -68881,124786
 Blankensee (Meckl)	R -1215,111282
 Cammin (Meckl)	R 1197,114756
 Burg Stargard (Meckl)	R 1294,121520
@@ -511,3 +511,5 @@ Flughafen Berlin-Brandenburg	RBau 17817,-4514
 Kienbergpark	Ropeway 23008,14090
 Bergstation Kienberg	Ropeway 22326,14474
 Gärten der Welt	Ropeway 21522,14677
+Lampertswalde	R 31949,-121703
+Ortrand	R 37546,-114350

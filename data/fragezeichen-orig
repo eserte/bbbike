@@ -3368,15 +3368,9 @@ geplante Grünanlage	?::projected 4084,15859 4055,15795 4041,15786 4224,15779 421
 #: check_frequency: 360d
 Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660,10521 2749,10584 3043,10680
 # 
-#: next_check: 2017-12-10 vvv
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.595685.php
-#: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2017/pressemitteilung.595249.php
-Mahlsdorf: Regionalbahnhof entsteht	?::projected 24487,12082
-#: by: https://www.rbb-online.de/wirtschaft/beitrag/2017/02/berlin-brandenburg-bahn-bauvorhaben-2017.html
-#: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2017/pressemitteilung.634478.php
-Karlshorst: Regionalbahnhof entfällt	?::projected 18796,8492
-#: next_check ^^^
-# 
+# REMOVED --- #: next_check: 2017-12-10 vvv --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.595685.php --- #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2017/pressemitteilung.595249.php
+# REMOVED (eingetragen) --- Mahlsdorf: Regionalbahnhof entsteht	?::projected 24487,12082
+# REMOVED (removed) --- #: by: https://www.rbb-online.de/wirtschaft/beitrag/2017/02/berlin-brandenburg-bahn-bauvorhaben-2017.html --- #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2017/pressemitteilung.634478.php --- Karlshorst: Regionalbahnhof entfällt	?::projected 18796,8492
 # REMOVED (S-Bahnlinien waren sowieso lange falsch gewesen) --- #: by: http://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20170601 --- #: next_check: 2017-08-21 vvv --- #: priority: #A vvv --- S3: wird bis Westkreuz verlängert	?::projected 14847,10892 14693,10943 --- S75: wird bis Westkreuz verkürzt	?::projected 14847,10892 14693,10943
 # 
 #: by: https://de.wikipedia.org/wiki/Klinik_f%C3%BCr_Kinder-_und_Jugendmedizin_Lindenhof
