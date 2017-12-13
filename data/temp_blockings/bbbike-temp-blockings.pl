@@ -26144,7 +26144,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-12-09
+#: last_checked: 2017-12-13
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },

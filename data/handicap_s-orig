@@ -21,10 +21,10 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualit‰t danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2017-12-11
+#: last_checked: 2017-12-13
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
-#: last_checked: 2017-12-11
+#: last_checked: 2017-12-13
 Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 #: last_checked: 2017-12-09
@@ -35,7 +35,7 @@ Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 #: check_frequency: 90d
 Dˆringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
-#: last_checked: 2017-12-12
+#: last_checked: 2017-12-13
 Lange Str.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 # REMOVED --- #: by: fritz --- #: last_checked: 2017-09-28 --- #: check_frequency: 10d --- # REMOVED --- #: valid: -20170927 --- Krautstr.: Fahrbahn abschnittsweise gesperrt, Ausweichen auf Gehweg notwendig	q3::inwork 11966,11832 11993,11978
@@ -125,8 +125,8 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 # REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?id=3339&mt=0&zoom=16 (Projektabschluss: 2017-03-31) --- #: last_checked: 2017-10-27 --- Kommandantenstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10330,11422 10136,11529
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3339&mt=0&zoom=16 (Projektabschluss: 2017-03-31)
-#: last_checked: 2017-11-28
-#: check_frequency: 7d
+#: last_checked: 2017-12-13
+#: check_frequency: 14d
 Beuthstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10201,11631 10235,11610 10330,11422
 # 
 # REMOVED --- #: last_checked: 2017-04-19 --- #: next_check: 2017-04-28 --- Sebastianstr.: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 10640,11564 10818,11269
@@ -144,7 +144,7 @@ Sch¸tzenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 # REMOVED --- #: last_checked: 2017-03-14 vvv --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9990,11571 9925,11565 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q2-::inwork 9925,11565 9737,11546 --- #: last_checked ^^^
 # 
 # REMOVED --- : osm_watch: note 814191 1
-#: last_checked: 2017-11-28
+#: last_checked: 2017-12-13
 #: check_frequency: 30d
 Alexandrinenstr.: direkter Zugang zur Sebastianstr. nicht mehr mˆglich, stattdessen Trampelpfad benutzen, Bordsteine	q3::inwork 10818,11269 10678,11172
 # 
@@ -165,7 +165,7 @@ Alexandrinenstr.: direkter Zugang zur Sebastianstr. nicht mehr mˆglich, stattdes
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
 # REMOVED --- #: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualit‰t -> qualitaet_s-orig-Eintrag revidieren --- #: last_checked: 2013-11-21 --- Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2017-11-28 vvv
+#: last_checked: 2017-12-13 vvv
 #: check_frequency: 90d vvv
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9984,12426 9996,12401 10058,12290
 Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 10008,12274 10058,12290
@@ -240,14 +240,14 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: next_check_id: STAATSOPER-2014 vvv
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html
-#: last_checked: 2017-11-28 vvv
+#: last_checked: 2017-12-13 vvv
 #: check_frequency: 30d vvv
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9883,12251 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2017-11-28
+#: last_checked: 2017-12-13
 #: check_frequency: 14d
 Werdersche Rosenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9883,12251 9909,12261 9959,12281
 #: next_check_id ^^^
@@ -263,7 +263,7 @@ Werdersche Rosenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9883,12251 9909,
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
 #: source_id: LMS-BR_r_LMS-BR_197
 #: osm_watch: way id="194962375" version="7"
-#: last_checked: 2017-12-04 (mapillary)
+#: last_checked: 2017-12-13
 #: check_frequency: 14d
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q4::inwork 10601,12521 10704,12595
 # 
