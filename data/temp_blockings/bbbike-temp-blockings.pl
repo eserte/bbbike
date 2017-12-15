@@ -11635,7 +11635,7 @@ EOF
        text  => 'Untere Kynaststr.: Restbauarbeiten, Straße könnte u.U. bis zum 2.6.2008 gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-# REMOVED ---	2::inwork 14688,10167 14752,10246 14794,10336 14820,10473 14832,10512 14828,10561 14843,10621 14882,10732 14906,10820
+# REMOVED ---	2::inwork 14688,10167 14752,10246 14794,10336 14820,10473 14832,10512 14828,10561 14843,10621 14882,10732 14904,10812
 EOF
      },
      { from  => undef, # 
@@ -11712,7 +11712,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_009127',
        data  => <<EOF,
-	q4::inwork 14906,10820 14794,10844
+	q4::inwork 14904,10812 14810,10832
 EOF
      },
      { from  => 1213737230, # 2008-06-17 23:13
@@ -22798,8 +22798,8 @@ EOF
 EOF
      },
      { from  => undef, # 1502056800, # 2017-08-07 00:00
-       until => $isodate2epoch->("2017-12-15 18:00:00"), # 1502894902, # $isodate2epoch->("2017-08-18 12:00:00"), # 1502834399, # 2017-08-15 23:59
-       text  => 'Scharnweberstr.: zwischen Gürtelstr. und Jessnerstr. Richtung Weichselstr. Bauarbeiten, Fahrbahn gesperrt, bis Mitte Dezember 2017',
+       until => $isodate2epoch->("2017-12-19 18:00:00"), # 1502894902, # $isodate2epoch->("2017-08-18 12:00:00"), # 1502834399, # 2017-08-15 23:59
+       text  => 'Scharnweberstr.: zwischen Gürtelstr. und Jessnerstr. Richtung Weichselstr. Bauarbeiten, Fahrbahn gesperrt, bis 19. Dezember 2017',
        type  => 'handicap',
        source_id => '2147342112',
        data  => <<EOF,
@@ -26144,7 +26144,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-12-13
+#: last_checked: 2017-12-14
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 EOF
      },

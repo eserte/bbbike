@@ -1603,11 +1603,12 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
 	RW3;RW3 14608,10409 14641,10552 14675,10693 14671,10751
 	RW3;RW2 14671,10751 14674,10811
+	RW4; 15261,10738 14904,10812 14810,10832 14717,10855 14674,10811
 #: next_check_id: HAUPTSTR-2015
-#: XXX wegen Bauarbeiten teilweise aufgehoben, früher RW4;RW4
-#: last_checked: 2017-11-18
-#: check_frequency: 30d
-	RW0;RW0 14674,10811 14717,10855
+#: XXX Markierungen fehlen noch
+#: last_checked: 2017-12-15
+#: check_frequency: 3d
+	RW0; 14674,10811 14717,10855 14810,10832 14904,10812 15261,10738
 	RW1;RW1 14652,10201 14688,10167 14705,10149 14747,10108 14817,10031
 	RW0;RW1 13795,9941 13890,9894
 	RW1;RW1 13890,9894 13999,9842
@@ -1749,7 +1750,7 @@ Berliner Gehwegplatten, ca. 1,50m breit	RW2;RW2 9272,14208 9400,14400 9410,14410
 #: note: Wobei es so aussieht, als ob das Zusatzschild einfach nur fehlt
 #: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5;
 #: by: http://www.dafmap.de/d/berlin.html?id=3134&mt=0&zoom=16 (Projektabschluss: 2017-09-01)
-#: last_checked: 2017-11-21
+#: last_checked: 2017-12-15
 #: check_frequency: 14d
 	RW4; 11451,13301 11368,13170
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 11451,13301 11486,13350
@@ -3980,7 +3981,7 @@ asphaltierter Radweg fängt etwas hinter dem Kreisverkehr an	RW1; 12705,16708 128
 #: by: osm
 	RW6;RW6 16146,12881 16148,12772 16200,12771 16197,12880
 # REMOVED (nicht mehr) --- Gehweg für Radfahrer frei
-# REMOVED ---	RW0; 15261,10738 14906,10820
+# REMOVED ---	RW0; 15261,10738 14904,10812
 #: by: anonymous
 asphaltierter Radweg, sehr gute Qualität	RW1;RW1 -3040,16246 -3631,16224
 	RW6;RW6 10332,11929 10364,11896
@@ -5071,7 +5072,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen unbeschildert bleiben
-#: last_checked: 2017-12-04
+#: last_checked: 2017-12-14
 #: check_frequency: 7d
 	RW3;RW3 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322
 	RW6;RW6 11715,11522 11767,11662 11829,11727

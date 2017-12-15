@@ -3447,9 +3447,9 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
          'from' => undef,
          'id' => 2550,
          'source_id' => '2147342112',
-         'text' => 'Scharnweberstr.: zwischen Gürtelstr. und Jessnerstr. Richtung Weichselstr. Bauarbeiten, Fahrbahn gesperrt, bis Mitte Dezember 2017',
+         'text' => 'Scharnweberstr.: zwischen Gürtelstr. und Jessnerstr. Richtung Weichselstr. Bauarbeiten, Fahrbahn gesperrt, bis 19. Dezember 2017',
          'type' => 'handicap',
-         'until' => 1513357200
+         'until' => 1513702800
        },
        undef,
        undef,
@@ -4085,7 +4085,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-12-13
+#: last_checked: 2017-12-14
 	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
 ',
          'from' => undef,
