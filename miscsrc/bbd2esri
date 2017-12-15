@@ -32,7 +32,7 @@ use Getopt::Long;
 use BBBikeUtil qw(rad2deg);
 
 use vars '$VERSION';
-$VERSION = '0.50';
+$VERSION = '0.51';
 
 my $outprefix;
 my $shapetype = "polyline";
@@ -87,8 +87,6 @@ my @files = @ARGV;
 if (!@files) {
     die "No files specified";
 }
-
-my $stadt_strassen_rx = get_stadt_strassen_rx();
 
 if ($polar) {
     require Karte::Standard;
@@ -558,20 +556,38 @@ sub do_encode {
 
 {
     my $stadt_strassen_rx;
+    my $warn_fallback;
     sub get_stadt_strassen_rx {
 	if (!defined $stadt_strassen_rx) {
-	    my %stadt;
-	    for my $basefile (qw(landstrassen-orig landstrassen2-orig)) {
-		my $file = "$FindBin::RealBin/../data/$basefile";
-		my $s = Strassen->new_stream($file);
-		$s->read_stream(sub {
-				    my $dir = $_[1];
-				    if ($dir->{append_comment}) {
-					$stadt{$dir->{append_comment}->[0]} = 1;
-				    }
-				});
+	    my @stadt_strassen;
+	    eval {
+		my %stadt;
+		for my $basefile (qw(landstrassen-orig landstrassen2-orig)) {
+		    my $file = "$FindBin::RealBin/../data/$basefile";
+		    my $s = Strassen->new_stream($file);
+		    $s->read_stream(sub {
+					my $dir = $_[1];
+					if ($dir->{append_comment}) {
+					    $stadt{$dir->{append_comment}->[0]} = 1;
+					}
+				    });
+		}
+		@stadt_strassen = sort keys %stadt;
+	    };
+	    if (!@stadt_strassen) {
+		if (!$warn_fallback++) {
+		    warn "bbd2esri: stadt_strassen_rx could not be created, trying fallback. Error: $@";
+		}
+		# Generated with M-x occur --append in landstrassen-orig
+		# and some hand-editing... XXX probably need another solution!
+		@stadt_strassen = (qw(Potsdam Erkner Schönefeld
+				      Dahlwitz-Hoppegarten Kleinmachnow Stahnsdorf Teltow Gosen Mahlow
+				      Mahlow-Waldblick Brandenburg Frankfurt Cottbus), 'Hohen Neuendorf',
+				   qw(Borgsdorf Oranienburg Rheinsberg Woltersdorf Rüdersdorf Schöneiche
+				      Strausberg Lindenberg Falkensee Dallgow-Döberitz Werder), 'Königs Wusterhausen',
+				   qw(Eberswalde Bernau Fürstenwalde Lübbenau Luckenwalde
+				      Neuruppin Mittenwalde));
 	    }
-	    my @stadt_strassen = sort keys %stadt;
 	    my $stadt_strassen_rx0 = "\\((?:" . join("|", map { quotemeta } @stadt_strassen) . ")\\)";
 	    $stadt_strassen_rx = qr/$stadt_strassen_rx0/;
 	}
