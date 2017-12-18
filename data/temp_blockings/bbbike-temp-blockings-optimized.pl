@@ -2402,26 +2402,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::xmas 22111,4562 22162,4546 22214,4548
-',
-         'from' => 1513206000,
-         'id' => 2003,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              8,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/treptow-koepenick/1305665-1328180-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html',
-         'text' => 'Alt-Köpenicker Weihnachtsmarkt vom 15.12.2017 bis zum 17.12.2017',
-         'type' => 'gesperrt',
-         'until' => 1513551599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3247,16 +3228,6 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147342105
-	q3::inwork; 14181,11434 14211,11552
-',
-         'from' => 1511898358,
-         'id' => 2495,
-         'text' => 'Gärtnerstr.: Bauarbeiten, Einbahnstraße zwischen Simplonstr. und Wühlischstr. (offen Richtung Norden), voraussichtlich bis 22.12.2017',
-         'type' => 'handicap',
-         'until' => 1513954800
-       },
        undef,
        undef,
        undef,
@@ -3277,27 +3248,8 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: before(3rd_advent,sa) - +1d
-	2::xmas 9986,13412 10317,13248
-',
-         'from' => 1513292400,
-         'id' => 2516,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              9,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (16.12.2017 - 17.12.2017)',
-         'type' => 'gesperrt',
-         'until' => 1513551599
-       },
+       undef,
+       undef,
        {
          'data' => '#: tempex: before(4th_advent,sa) - +1d
 	2::xmas 9986,13412 10317,13248
@@ -3321,27 +3273,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
        },
        undef,
        undef,
-       {
-         'data' => '#: tempex: 3rd_advent & T12-T19
-	2::xmas 11317,14564 11247,14578 11155,14554
-',
-         'from' => 1513422000,
-         'id' => 2520,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              10,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/pankow/971805-1328139-adventsmarktkollwitzplatz.html',
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 17. Dezember 2017, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1513533600
-       },
+       undef,
        {
          'data' => '#: tempex: 4th_advent & T12-T19
 	2::xmas 11317,14564 11247,14578 11155,14554
@@ -3441,16 +3373,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
        undef,
        undef,
        undef,
-       {
-         'data' => '	q3::inwork; 15248,11880 15121,11899
-',
-         'from' => undef,
-         'id' => 2550,
-         'source_id' => '2147342112',
-         'text' => 'Scharnweberstr.: zwischen Gürtelstr. und Jessnerstr. Richtung Weichselstr. Bauarbeiten, Fahrbahn gesperrt, bis 19. Dezember 2017',
-         'type' => 'handicap',
-         'until' => 1513702800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4064,9 +3987,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1509836400,
          'id' => 2867,
-         'text' => 'Bölschestr.: Bauarbeiten, zwischen Aßmannstr. und Müggelseedamm Richtung Süden gesperrt, ab 06. November 2017 bis 18. Dezember 2017',
+         'text' => 'Bölschestr.: Bauarbeiten, zwischen Aßmannstr. und Müggelseedamm Richtung Süden gesperrt, bis Ende März 2018',
          'type' => 'handicap',
-         'until' => 1513594800
+         'until' => 1521802800
        },
        undef,
        undef,
@@ -4145,8 +4068,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
 #: XXX Grünanlage wird eingezogen
-#: osm_watch: way id="316695242" version="1"
-#: last_checked: 2017-07-11
+#: osm_watch: way id="316695242" version="2"
+#: last_checked: 2017-12-17 (osm)
 #: check_frequency: 120d
 	2::inwork 4561,13244 4547,13139 4576,13115
 ',
@@ -4181,17 +4104,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1551394799
        },
        undef,
-       {
-         'data' => '#: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.617043.php
-	q4::inwork 17734,675 17928,764 18023,833
-',
-         'from' => 1501439878,
-         'id' => 2890,
-         'source_id' => 'https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730',
-         'text' => 'Ostburger Weg: Bauarbeiten zwischen Will-Meisel-Weg und Am Espenpfuhl, Fahrbahn gesperrt, ab Ende Juli bis Mitte Dezember 2017',
-         'type' => 'handicap',
-         'until' => 1513378799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4238,18 +4151,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: note: vmz meint Ende November 2017
-#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=35015 (bis 6.11.2017)
-	q3::inwork; 10066,20494 10064,20437 10066,20323 10068,20188 10106,20093 10117,20065 10132,19993 10167,19797
-',
-         'from' => 1504896268,
-         'id' => 2905,
-         'source_id' => '2147341767',
-         'text' => 'Dietzgenstr.: Bauarbeiten zwischen Schillerstr. und Kuckhoffstr., Fahrbahn Richtung Süden gesperrt, voraussichtlich bis 18. Dezember 2017',
-         'type' => 'handicap',
-         'until' => 1513594800
-       },
+       undef,
        {
          'data' => '#: osm_watch: way id="541556560" version="1"
 #: last_checked: 2017-12-04
@@ -4272,20 +4174,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1522576800
        },
-       {
-         'data' => '#: note: vmz meint nur Ende November 2017
-#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=35015 (bis 6.11.2017)
-#: source_id: LMS-BR_r_LMS-BR_108061_LMS-BR_72
-#: source_id: 2147341767
-	q3::inwork; 10167,19797 10132,19993 10117,20065 10106,20093 10068,20188 10066,20323 10064,20437 10066,20494
-',
-         'from' => 1504896268,
-         'id' => 2909,
-         'source_id' => '2147341767',
-         'text' => 'Dietzgenstr.: zwischen Kuckhoffstr. und Schillerstr. ist die Fahrbahn Richtung Norden für Radfahrer offiziell gesperrt, voraussichtlich bis 18. Dezember 2017',
-         'type' => 'handicap',
-         'until' => 1513594800
-       },
+       undef,
        undef,
        {
          'data' => '#: last_checked: 2017-11-10 (mapillary)
@@ -4297,21 +4186,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1525125600
        },
-       {
-         'data' => '#: XXX ist die Qualität nach den Bauarbeiten etwas besser?
-#: last_checked: 2017-11-15 vvv
-#: check_frequency: 21d vvv
-	q4::inwork 13288,7653 13177,7644 13100,7626
-	q4::inwork 13177,7644 13188,7590
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 2912,
-         'text' => 'Karl-Marx-Platz/Richardplatz: Bauarbeiten an der Kirchhofstr., Fahrbahn gesperrt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: tempex (sa) T08-13 vvv
@@ -4338,18 +4213,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: note: fritz meint 18.12.2017
-#: source_id: 2147341767
-	q4::inwork 10178,20525 10309,20562 10409,20592
-',
-         'from' => 1508005269,
-         'id' => 2916,
-         'source_id' => 'LMS-BR_r_LMS-BR_112957_LMS-BR_72',
-         'text' => 'Schillerstr.: zwischen Heinrich-Böll- und Waldemarstr. gesperrte Fahrbahn, voraussichtlich bis zum 17.12.2017',
-         'type' => 'handicap',
-         'until' => 1513508400
-       },
+       undef,
        {
          'data' => '#: source_id: LMS-BR_r_LMS-BR_113125_LMS-BR_72
 #: source_id: LMS-BR_r_LMS-BR_113126_LMS-BR_72
@@ -4372,6 +4236,44 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Uferweg Plötzensee: wegen Unterspülung gesperrt, Umfahrung über enge Pfade möglich',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       undef,
+       undef,
+       undef,
+       {
+         'data' => '#: XXX Ende der Bauarbeiten?
+#: last_checked: 2017-12-18 vvv
+	q2::inwork; 8775,12457 8904,12489
+	q4::inwork; 8904,12489 8999,12498 9011,12423
+#: last_checked ^^^
+',
+         'from' => undef,
+         'id' => 2922,
+         'text' => 'Dorotheenstr./Schadowstr.: Bauarbeiten, Einbahnstraßenregelung',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '	q4::inwork; 10264,13097 10220,13098
+',
+         'from' => 1513622933,
+         'id' => 2923,
+         'source_id' => '2147342123',
+         'text' => 'Oranienburger Str.: Richtung Friedrichstraße am Hackeschen Markt Baustelle, voraussichtlich bis 21.12.2017',
+         'type' => 'handicap',
+         'until' => 1513897200
+       },
+       {
+         'data' => '	2::temp 5652,11004 5613,10963
+	2::temp 5907,10821 5782,10884 5829,10964
+	2::temp 5475,10808 5656,10876 5652,11004 5716,10978 5829,10964 5986,10976
+	2::temp 5656,10876 5725,10892 5782,10884
+',
+         'from' => 1513623514,
+         'id' => 2924,
+         'text' => 'Rund um den Breitscheidplatz: Gedenkveranstaltung, umliegende Straßen werden gesperrt, am 19.12.2017',
+         'type' => 'gesperrt',
+         'until' => 1513724399
        }
      
 );
