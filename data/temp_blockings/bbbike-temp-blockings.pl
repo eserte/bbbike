@@ -17299,7 +17299,7 @@ EOF
        until => $isodate2epoch->("2018-01-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 12]],
-       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., vermutlich vom 26.12.2017 bis 02.01.2018',
+       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., ab 26.12.2017 bis 02.01.2018',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
@@ -25461,12 +25461,12 @@ EOF
 EOF
      },
      { from  => 1467661160, # 2016-07-04 21:39
-       until => $isodate2epoch->("2017-12-23 12:00:00"),
-       text  => 'Buckower Damm: Baustelle zwischen An den Achterhöfen und Mollnerweg, evtl. auch Einschränkungen für Radfahrer, bis Ende 2017',
+       until => $isodate2epoch->("2018-03-30 12:00:00"),
+       text  => 'Buckower Damm: Baustelle zwischen An den Achterhöfen und Mollnerweg, evtl. auch Einschränkungen für Radfahrer, voraussichtlich bis März 2018',
        type  => 'handicap',
        source_id => '2147341551',
        data  => <<EOF,
-#: note: laut fritz bis 2017-12-23, laut vmz bis 2018
+#: note: laut fritz bis 2018-03-30, laut vmz bis März 2018
 #: by: http://www.berliner-woche.de/buckow/verkehr/der-lange-weg-zur-sanierten-strasse-bauarbeiten-am-buckower-damm-anwohner-aergern-sich-ueber-lkw-im-wohngebiet-d126968.html
 #: note: die Baustelle ist gewandert
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
@@ -26740,6 +26740,16 @@ EOF
 	2::temp 5907,10821 5782,10884 5829,10964
 	2::temp 5475,10808 5656,10876 5652,11004 5716,10978 5829,10964 5986,10976
 	2::temp 5656,10876 5725,10892 5782,10884
+EOF
+     },
+     { from  => 1513713476, # 2017-12-19 20:57
+       until => 1517439600, # 2018-02-01 00:00
+       text  => 'Alte Schönhauser Str.:Bauarbeiten zwischen Schendelgasse und Weinmeisterstr., voraussichtlich bis 31.01.2018',
+       type  => 'handicap',
+       source_id => '2147342108',
+       data  => <<EOF,
+#: XXX vor Ort prüfen
+	q3::inwork; 10653,13493 10640,13471 10603,13395 10527,13257
 EOF
      },
     );

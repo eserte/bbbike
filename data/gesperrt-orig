@@ -2870,14 +2870,6 @@ Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9108,11961 9138,11872
 # 
 # REMOVED --- #: last_checked: 2017-08-12 --- Charlottenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9509,12117 9496,12215
 # 
-#: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamtes/artikel.434089.php
-#: XXX Bezirksamtsbeschluss 48/16
-#: by: http://www.berlin.de/ba-neukoelln/_assets/dokumente/ba-beschluesse/ba-beschluss-115-15.pdf
-#: osm_watch: note 1099044 1
-#: last_checked: 2017-08-10
-#: check_frequency: 14d
-(Christoph-Ruden-Str. - Buckower Damm): letzte Bauarbeiten	2::inwork 12725,1429 12939,1469
-# 
 #: XXX vielleicht wird hier nach den Bauarbeiten kein Weg mehr existieren; die S-Bahnbrücke ist sehr niedrig geworden...
 #: last_checked: 2017-08-07
 #: check_frequency: 90d
@@ -2893,6 +2885,7 @@ Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9108,11961 9138,11872
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.616795.php
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.633456.php (Öffnung für Fußgänger)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8329
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8383
 #: last_checked: 2017-12-08
 #: valid: 20170801-20190228
 #: priority: #A
@@ -3037,7 +3030,7 @@ Heidelberger Str.: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13489,9199 134
 #: osm_watch: way id="42091230" version="23"
 #: last_checked: 2017-09-28 vvv
 # REMOVED (temporary) --- #: next_check: 2017-12-31 (vermutlich wird nur auf die neue Fahrbahnhälfte gewechselt werden) vvv
-#: next_check: 2017-12-31 vvv
+#: next_check: 2018-04-30 vvv
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 8732,14098 8654,14194
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q4:inwork 8654,14194 8607,14253 8570,14299 8442,14456
 #: next_check ^^^
@@ -3077,7 +3070,7 @@ Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,1192
 #: note: siehe auch http://www.detlefzabel.de/spreebruecke-neubau/
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170829
 #: last_checked: 2017-11-05
-#: next_check: 2018-01-30
+#: next_check: 2017-12-21
 Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17453,7451 17295,7344 17211,7280 17091,7175 16971,7058 16747,6813
 # 
 # REMOVED (laut osm nicht mehr highway=construction) --- #: osm_watch: way id="291810047" version="7" --- #: last_checked: 2016-07-23 --- Alfonsstr.: Bauzäune	2::inwork 19027,1427 19034,1441 19061,1457
@@ -3182,12 +3175,10 @@ Clara-von-Simson-Str.: noch gesperrt	2 7652,14257 7757,14318 7802,14250 7697,141
 #: source_id: INKO_118000 vvv
 #: osm_watch: way id="25115001" version="8" vvv
 #: last_checked: 2017-11-04 vvv
-#: check_frequency: 60d vvv
 # REMOVED (doch benutzbar) --- (Baustraße an der Freybrücke)	2::inwork -3075,11510 -3197,11554
 # REMOVED (vermutlich nun benutzbar?) --- (Treppe an der Freybrücke)	2::inwork -3181,11496 -3177,11507 -3173,11520
 #: XXX Ersatzbrücke muss demontiert werden; vermutlich weiterhin keinen Zugang
 Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3217,11570
-#: check_frequency ^^^
 #: last_checked ^^^
 #: osm_watch ^^^
 #: source_id ^^^

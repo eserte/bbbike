@@ -515,19 +515,8 @@ asphaltiert	RW1; 10982,16121 10989,16197 10997,16280 11004,16360
 #: note: früher ein Zweirichtungsradweg, heute nur noch ein breiter Radweg, teilweise mit expliziten Richtungspfeilen
 	RW1; 6608,12858 6575,12778 6522,12662 6516,12650 6500,12605 6480,12563 6442,12545 6314,12518 6276,12506 6173,12396 6082,12273 5961,12134 5917,12079 5898,12017 5900,11913
 	RW2;RW2 -2317,11254 -2413,11283 -2476,11301 -2851,11417 -3069,11487
-#: next_check_id: HEERSTR-2016
-#: XXX während der Bauarbeiten Zweirichtungsradweg
-#: XXX laut Tsp von 2016-06-04 Eröffnung im Oktober 2016
-#: XXX laut MoPo vom 2016-11-10 noch immer nicht fertig
-#: by: http://www.tagesspiegel.de/berlin/berlin-spandau-eroeffnungstermin-fuer-freybruecke-steht-jetzt-fest/14988922.html (Eröffnungstermin)
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6281.html (Fertigstellung des nördlichen Geh- und Radwegbereiches)
-#: by: https://www.facebook.com/baustellen.berlin/posts/337499020031865
-#: XXX auf der Brücke asphaltiert
-#: XXX zukünftiger Eintrag: asphaltiert	RW2;RW2 -3069,11487 -3173,11520 -3381,11583 -3404,11589
-#: last_checked: 2017-11-04
-#: check_frequency: 30d
-#: priority: #A
-	RW8;RW2 -3069,11487 -3173,11520 -3381,11583 -3404,11589
+# REMOVED (laut Construction Sites Berlin fertig) --- #: next_check_id: HEERSTR-2016 --- #: XXX während der Bauarbeiten Zweirichtungsradweg#: XXX laut Tsp von 2016-06-04 Eröffnung im Oktober 2016 --- #: XXX laut MoPo vom 2016-11-10 noch immer nicht fertig --- #: by: http://www.tagesspiegel.de/berlin/berlin-spandau-eroeffnungstermin-fuer-freybruecke-steht-jetzt-fest/14988922.html (Eröffnungstermin) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6281.html (Fertigstellung des nördlichen Geh- und Radwegbereiches) --- #: by: https://www.facebook.com/baustellen.berlin/posts/337499020031865 --- #: XXX auf der Brücke asphaltiert --- #: XXX zukünftiger Eintrag: asphaltiert	RW2;RW2 -3069,11487 -3173,11520 -3381,11583 -3404,11589 --- #: last_checked: 2017-11-04 --- #: check_frequency: 30d --- #: priority: #A
+asphaltiert	RW2;RW2 -3069,11487 -3173,11520 -3381,11583 -3404,11589
 eng, alter Asphalt	RW2;RW2 -3404,11589 -3692,11681
 #: by: https://www.facebook.com/baustellen.berlin/posts/328145204300580
 neu asphaltiert	RW2; -3692,11681 -3708,11686 -3820,11721
@@ -4661,7 +4650,7 @@ Fußgängerzone, Radfahrer frei	RW6;RW6 7877,14504 7804,14445
 #: next_check_id: CHAUSSEESTR-2016
 #: XXX noch provisorisch, wird aber vermutlich dauerhaft bleiben
 #: last_checked: 2017-09-28
-#: next_check: 2017-12-31
+#: next_check: 2018-04-30
 	RW3; 8442,14456 8570,14299
 	RW1; 8570,14299 8607,14253
 	RW3;RW3 8406,14507 8336,14586 8286,14635 8250,14672 8234,14686 8153,14769 8138,14786 8057,14876

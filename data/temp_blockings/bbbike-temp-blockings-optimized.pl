@@ -2432,7 +2432,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
                               12
                             ]
                           ],
-         'text' => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., vermutlich vom 26.12.2017 bis 02.01.2018',
+         'text' => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., ab 26.12.2017 bis 02.01.2018',
          'type' => 'gesperrt',
          'until' => 1514933999
        },
@@ -3841,7 +3841,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: note: laut fritz bis 2017-12-23, laut vmz bis 2018
+         'data' => '#: note: laut fritz bis 2018-03-30, laut vmz bis März 2018
 #: by: http://www.berliner-woche.de/buckow/verkehr/der-lange-weg-zur-sanierten-strasse-bauarbeiten-am-buckower-damm-anwohner-aergern-sich-ueber-lkw-im-wohngebiet-d126968.html
 #: note: die Baustelle ist gewandert
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
@@ -3852,9 +3852,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1467661160,
          'id' => 2808,
          'source_id' => '2147341551',
-         'text' => 'Buckower Damm: Baustelle zwischen An den Achterhöfen und Mollnerweg, evtl. auch Einschränkungen für Radfahrer, bis Ende 2017',
+         'text' => 'Buckower Damm: Baustelle zwischen An den Achterhöfen und Mollnerweg, evtl. auch Einschränkungen für Radfahrer, voraussichtlich bis März 2018',
          'type' => 'handicap',
-         'until' => 1514026800
+         'until' => 1522404000
        },
        undef,
        undef,
@@ -4274,6 +4274,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Rund um den Breitscheidplatz: Gedenkveranstaltung, umliegende Straßen werden gesperrt, am 19.12.2017',
          'type' => 'gesperrt',
          'until' => 1513724399
+       },
+       {
+         'data' => '#: XXX vor Ort prüfen
+	q3::inwork; 10653,13493 10640,13471 10603,13395 10527,13257
+',
+         'from' => 1513713476,
+         'id' => 2925,
+         'source_id' => '2147342108',
+         'text' => 'Alte Schönhauser Str.:Bauarbeiten zwischen Schendelgasse und Weinmeisterstr., voraussichtlich bis 31.01.2018',
+         'type' => 'handicap',
+         'until' => 1517439600
        }
      
 );
