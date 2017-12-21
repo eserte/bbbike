@@ -203,7 +203,7 @@ Anzengruberstr.	1 12865,8346 12689,8289
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00081950/50-Anlagen/01/DRS0182VB.pdf (Pl‰ne)
 #: XXX Maﬂnahme Osw.10, auﬂerdem ein "fahrradfreundlicher Belag" im weiteren Verlauf der Nalepastraﬂe
 #: osm_watch: way id="24869862" version="12"
-#: last_checked: 2017-07-27
+#: last_checked: 2017-12-21
 #: check_frequency: 120d
 Nalepastr. am Rundfunkgeb‰ude	2 17065,8396 17057,8235 17056,8159 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
@@ -3065,14 +3065,7 @@ Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,1192
 # 
 # REMOVED (volle Fahrbahnbreite steht wieder zur Verf¸gung) --- #: last_checked: 2017-11-20 --- Corinthstr.: Baustelle, Einbahnstraﬂenregelung	1s:q2:inwork 14447,10491 14270,10584
 # REMOVED (mittlerweile schon passierbar) --- #: next_check_id: MARIANNEN-2016 vvv --- #: source_id: INKO_2147340291_COPY_1 vvv --- #: source_id: 2147340291 vvv --- #: source_id: 2147340768 vvv --- # REMOVED (aufgehoben) --- #: priority: #A vvv --- #: XXX laut fritz bis 16.12.2016 --- #: last_checked: 2016-12-15 vvv --- #: next_check: 2017-01-10 vvv --- Mariannenstr.: Baustelle, Einbahnstraﬂenregelung	1s:q2 11512,10105 11616,10288 --- #: source_id: 2147340777 --- #: XXX laut fritz bis 10.01.2017 --- #: priority: #A --- #: last_checked: 2016-12-15 --- #: check_frequency: 7d --- Mariannenstr.: Baustelle, Fahrbahn gesperrt	2s:q3 11671,10402 11616,10288
-# 
-#: next_check_id: MINNATODENHAGENSTR-2016
-#: note: siehe auch http://www.detlefzabel.de/spreebruecke-neubau/
-#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170829
-#: last_checked: 2017-11-05
-#: next_check: 2017-12-21
-Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17453,7451 17295,7344 17211,7280 17091,7175 16971,7058 16747,6813
-# 
+# REMOVED --- #: next_check_id: MINNATODENHAGENSTR-2016 --- #: note: siehe auch http://www.detlefzabel.de/spreebruecke-neubau/ --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170829 --- #: last_checked: 2017-11-05 --- #: next_check: 2017-12-21 --- Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17453,7451 17282,7337 17211,7280 17127,7209 17005,7085 16834,6910 16747,6813
 # REMOVED (laut osm nicht mehr highway=construction) --- #: osm_watch: way id="291810047" version="7" --- #: last_checked: 2016-07-23 --- Alfonsstr.: Bauz‰une	2::inwork 19027,1427 19034,1441 19061,1457
 # REMOVED (komplett entfernt) --- #: last_checked: 2016-09-26 --- #: check_frequency: 90d --- Sonntagstr./Ostkreuz: wegen Bauarbeiten gesperrt	2::inwork 14752,11041 14808,10978
 # 
@@ -3111,18 +3104,8 @@ E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch f¸r Fuﬂg‰ng
 # REMOVED -> temp-blockings --- #: XXX wann wird die Straﬂe erˆffnet? --- #: last_checked: 2015-08-02 --- #: check_frequency: 90d --- Theodorstr.: Bauarbeiten, gesperrt	2::inwork 24897,11083 24899,11044 24905,10955 24913,10884 24919,10818 24922,10785 24923,10774
 # REMOVED (offen) --- #: XXX wann wird der Weg erˆffnet? --- #: last_checked: 2015-08-02 --- #: check_frequency: 90d --- (Weg im Theodorpark)	2::inwork 24922,10785 24954,10770 25021,10768 25062,10762 25148,10769
 # REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/10re.pdf/file?y=2016 (Grundst¸cksnummerierungen) --- #: XXX laut osm offen ("residential") --- #: osm_watch: way id="338546087" version="3" --- #: last_checked: 2015-08-02 --- #: next_check: 2015-11-02 (public) --- Pfarrhufenanger: noch in Bau, gesperrt	2::inwork 25599,13069 25441,12838 25272,12629
-# 
 # REMOVED (hier schon offen) --- Ziegelstr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 9636,13076 9559,13087
-# 
-#: next_check_id: MINNATODENHAGENSTR-2016
-#: last_checked: 2017-11-05 vvv
-#: check_frequency: 30d vvv
-# REMOVED --- Grenzweg: wegen Straﬂenbau gesperrt, ggfs. dauerhaft	2::inwork 17219,7268 17295,7328 17445,7434
-# REMOVED (ge‰nderte Straﬂenf¸hrung) --- Schwarzer Weg: wegen Straﬂenbau gesperrt	2::inwork 17295,7323 17295,7328 17295,7344 17295,7358 17296,7401
-Nalepastr.: wegen Straﬂenbau gesperrt	2::inwork 17190,7306 17211,7280 17219,7268 17286,7173
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
+# REMOVED --- #: next_check_id: MINNATODENHAGENSTR-2016 --- #: last_checked: 2017-11-05 vvv --- #: check_frequency: 30d vvv --- # REMOVED --- Grenzweg: wegen Straﬂenbau gesperrt, ggfs. dauerhaft	2::inwork 17219,7268 17295,7328 17445,7434 --- # REMOVED (ge‰nderte Straﬂenf¸hrung) --- Schwarzer Weg: wegen Straﬂenbau gesperrt	2::inwork 17295,7323 17295,7328 17282,7337 17295,7358 17296,7401 --- Nalepastr.: wegen Straﬂenbau gesperrt	2::inwork 17190,7306 17211,7280 17219,7268 17286,7173 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (fertig) --- #: XXX Bauarbeiten im Park dauern bis 2016 --- #: last_checked: 2016-02-05 --- #: check_frequency: 60d --- Kleiner Tiergarten: wegen Bauarbeiten gesperrt	2::inwork 6573,13149 6564,13260 6535,13327
 # REMOVED (fertig) --- #: next_check_id: FISCHERINSEL-2015 vvv --- #: source_id: 2147339543 vvv --- #: last_checked: 2016-12-16 vvv --- #: next_check: 2016-12-22 vvv --- M‰rkisches Ufer - Neue Roﬂstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 --- Neue Roﬂstr. - M‰rkisches Ufer: wegen Bauarbeiten gesperrt	3 10687,11853 10869,11949 --- M‰rkisches Ufer - Neue Roﬂstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10672,11870 --- Neue Roﬂstr. - M‰rkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,11853 10869,11949
 # REMOVED (fertig) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5561.html --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/gerickesteg/index.shtml (20 Monate Bauzeit) --- #: XXX laut http://www.stadtentwicklung.berlin.de/bauen/strassenbau/ bis "II. Quartal 2017" --- #: osm_watch: way id="27250334" version="7" --- #: last_checked: 2017-09-09 --- #: check_frequency: 45d --- Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,12669 6765,12680
@@ -3218,11 +3201,7 @@ Kirchdorfer Str.: Straﬂe fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9
 #: check_frequency: 360d
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 # 
-#: by: http://www.dafmap.de/d/berlin.html?center=52.497318+13.462016&zoom=17#
-#: last_checked: 2017-11-19
-#: next_check: 2017-12-18
-am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14463,10212
-# 
+# REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?center=52.497318+13.462016&zoom=17# --- #: last_checked: 2017-11-19 --- #: next_check: 2017-12-18 --- am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14462,10206 14480,10157
 # REMOVED --- #: next_check_id: BND-2014 --- #: osm_watch: way id="129104626" version="5" --- #: osm_watch: node id="1975210030" version="4" --- # REMOVED (schon gemacht) --- : XXX culdesac-orig entfernen, sobald die Verl‰ngerung erfolgt ist --- #: by: http://www.rbb-online.de/politik/beitrag/2014/07/bnd-zentrale-berlin-verzoegerung-vollstaendiger-umzug-bis-2017.html --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7441 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/1767-2016-bav-zu-ds-2814-iv-durchwegung_scharnhorst-chaussestrasse_sb.pdf --- #: last_checked: 2017-09-04 --- Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: Durchfahrt noch nicht zuverl‰ssig offen	2::inwork 8251,14337 8442,14456
 # REMOVED --- #: next_check_id: SCHINKELPLATZ-2014 vvv --- #: osm_watch: way id="305153174" version="1" --- #: last_checked: 2016-11-30 vvv --- #: check_frequency: 14d vvv
 # REMOVED Niederlagstr.: Bauarbeiten, Einbahnstraﬂenregelung	1s:q3 9996,12401 9994,12368 9943,12364
@@ -3231,7 +3210,6 @@ am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14463,10212
 # REMOVED (hier aufgehoben, tempor‰r?) --- Niederlagstr.: Bauarbeiten, Einbahnstraﬂenregelung	1s:q3 9943,12364 9955,12300 9961,12273
 # REMOVED --- #: XXX eigentlich f¸r Fuﬂg‰nger passierbar, aber UdL nur in Richtung Osten
 # REMOVED --- Niederlagstr.: Bauarbeiten, keine Zufahrt von Unter den Linden mˆglich	2::inwork 9943,12364 9934,12420
-# 
 # REMOVED --- #: next_check_id: STERNDAMM-2016 --- #: by: fritz --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160124 --- #: source_id: 2147339574 --- #: source_id: IM_026665 --- #: source_id: 2147340122 --- #: source_id: LMS-BR_r_LMS-BR_68908 --- #: last_checked: 2016-06-26 --- #: check_frequency: 90d --- #: priority: #A --- #: XXX Gesamtmaﬂnahme bis 2018 (oder 2017?) --- 
 #: next_check_id: STERNDAMM-2016
 #: XXX laut Fritz bis April 2018

@@ -4138,18 +4138,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: MINNATODENHAGENSTR-2016
-#: XXX siehe auch handicap_s-orig-Eintrag
-#: last_checked: 2017-11-05
-	2::inwork 17681,7589 17676,7555
-',
-         'from' => undef,
-         'id' => 2903,
-         'text' => 'Wattstr.: Zugang kann durch Bauzäune versperrt sein, meistens aber offen',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -4253,28 +4242,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '	q4::inwork; 10264,13097 10220,13098
-',
-         'from' => 1513622933,
-         'id' => 2923,
-         'source_id' => '2147342123',
-         'text' => 'Oranienburger Str.: Richtung Friedrichstraße am Hackeschen Markt Baustelle, voraussichtlich bis 21.12.2017',
-         'type' => 'handicap',
-         'until' => 1513897200
-       },
-       {
-         'data' => '	2::temp 5652,11004 5613,10963
-	2::temp 5907,10821 5782,10884 5829,10964
-	2::temp 5475,10808 5656,10876 5652,11004 5716,10978 5829,10964 5986,10976
-	2::temp 5656,10876 5725,10892 5782,10884
-',
-         'from' => 1513623514,
-         'id' => 2924,
-         'text' => 'Rund um den Breitscheidplatz: Gedenkveranstaltung, umliegende Straßen werden gesperrt, am 19.12.2017',
-         'type' => 'gesperrt',
-         'until' => 1513724399
-       },
+       undef,
+       undef,
        {
          'data' => '#: XXX vor Ort prüfen
 	q3::inwork; 10653,13493 10640,13471 10603,13395 10527,13257

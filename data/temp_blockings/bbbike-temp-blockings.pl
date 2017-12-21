@@ -26484,7 +26484,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1513881189, # undef, # XXX
        text  => 'Wattstr.: Zugang kann durch Bauzäune versperrt sein, meistens aber offen',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -26723,7 +26723,7 @@ EOF
 EOF
      },
      { from  => 1513622933, # 2017-12-18 19:48
-       until => 1513897200, # 2017-12-22 00:00
+       until => 1513882963, # 1513897200, # 2017-12-22 00:00
        text  => 'Oranienburger Str.: Richtung Friedrichstraße am Hackeschen Markt Baustelle, voraussichtlich bis 21.12.2017',
        type  => 'handicap',
        source_id => '2147342123',

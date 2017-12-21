@@ -798,7 +798,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr	RW1; 6696,5854 6629,5946 6
 #: source_id: 2147341593
 #: source_id: LMS-BR_r_LMS-BR_103468_LMS-BR_72
 #: last_checked: 2017-08-25
-#: next_check: 2017-12-15 (Ende der Bauarbeiten)
+#: next_check: 2018-01-31 (Ende der Bauarbeiten)
 	RW2; 6575,8469 6687,8385
 	RW0;RW2 8328,10831 8358,10782 8430,10710
 	RW1;RW9 8571,11846 8489,11782 8438,11753 8322,11715 8203,11686
@@ -1063,7 +1063,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5459,11135 5258,11285
 #: source_id: 2147339533
 #: source_id: 2147342120
 #: last_checked: 2017-10-08
-#: next_check: 2017-12-22
+#: next_check: 2017-12-20
 	RW0;RW0 5258,11285 5166,11343 5091,11406
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5091,11406 5085,11413 4922,11600
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
@@ -1140,14 +1140,12 @@ Gehweg für Radfahrer frei	RW1;RW1 15831,10329 16004,10204 16114,10123 16138,1010
 	RW1; 17105,8666 17143,8565 17202,8391 17299,8140 17527,7812
 neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 neu asphaltiert	RW1; 17769,7465 17681,7589 17619,7679
-#: XXX wie sieht es nach der Fahrbahnverschwenkung (dauert vermutlich bis Ende Oktober 2017 (vmz) oder Mitte Oktober 2017 (fritz)) aus? --- noch immer nur provisorische Radstreifen und keine Arbeiten für einen eventuellen Radweg vvv
+#: XXX werden hier noch Radspuren oder ein neuer Radweg angelegt?
 #: source_id: 2147341340
 #: source_id: LMS-BR_r_LMS-BR_98104
-#: last_checked: 2017-11-05 vvv
-	RW0; 17619,7679 17527,7812
-# REMOVED (existiert nicht mehr) --- provisorischer schmaler Radstreifen	RW3; 17527,7812 17299,8140 17202,8391
-#: last_checked ^^^
-#: XXX ^^^
+#: last_checked: 2017-12-21
+#: check_frequency: 60d
+	RW0; 17619,7679 17527,7812 17317,8115 17299,8140 17202,8391
 	RW1; 17202,8391 17143,8565 17105,8666
 Verbundsteinpflaster	RW1; 17769,7465 17847,7356 18010,7133
 	RW1; 18010,7133 17847,7356 17769,7465
@@ -1167,7 +1165,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW3; 18225,7004 18010,713
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
-#: last_checked: 2017-12-18
+#: last_checked: 2017-12-21
 #: check_frequency: 90d
 	RW8;RW2 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
@@ -1598,8 +1596,8 @@ die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
 #: XXX Markierungen fehlen noch
 #: osm_watch: way id="439421759" version="6"
 #: osm_watch: way id="384136808" version="12"
-#: last_checked: 2017-12-15
-#: check_frequency: 3d
+#: last_checked: 2017-12-21
+#: check_frequency: 7d
 	RW0; 14674,10811 14717,10855 14810,10832 14904,10812 15261,10738
 	RW1;RW1 14652,10201 14688,10167 14705,10149 14747,10108 14817,10031
 	RW0;RW1 13795,9941 13890,9894
@@ -2976,7 +2974,7 @@ die letzten 100 Meter werden auf dem Gehweg geführt	RW3; 7487,3089 7115,3003
 #: source_id: 2147339827
 #: XXX laut VMZ und fritz bis Ende 2017
 #: last_checked: 2017-11-15
-#: next_check: 2017-12-31
+#: next_check: 2017-12-20
 	RW0;RW1 14069,7100 14196,7086 14344,7003
 	RW1; 14344,7003 14567,6810
 bestehender Radweg abgesperrt	RW0; 14567,6810 14344,7003
@@ -5068,3 +5066,4 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 #: check_frequency: 7d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322
 	RW6;RW6 11715,11522 11767,11662 11829,11727
+neu asphaltiert	RW2;RW2 17681,7589 17585,7525 17453,7451 17282,7337 17211,7280 17127,7209 17005,7085 16834,6910 16747,6813
