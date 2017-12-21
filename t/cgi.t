@@ -689,7 +689,7 @@ for my $cgiurl (@urls) {
     }
 
     {
-	my %common_args = ( startc=>'16720,6845',
+	my %common_args = ( startc=>'16428,7144',
 			    zielc=>'17202,8391',
 			    startname=>'Schnellerstr.',
 			    zielname=>'Hegemeisterweg (Karlshorst)',
