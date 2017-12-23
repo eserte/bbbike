@@ -21,10 +21,10 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2017-12-20
+#: last_checked: 2017-12-22
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
-#: last_checked: 2017-12-20
+#: last_checked: 2017-12-22
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 #: last_checked: 2017-12-09
@@ -35,7 +35,7 @@ Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 #: check_frequency: 90d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
-#: last_checked: 2017-12-13
+#: last_checked: 2017-12-22
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 # REMOVED --- #: by: fritz --- #: last_checked: 2017-09-28 --- #: check_frequency: 10d --- # REMOVED --- #: valid: -20170927 --- Krautstr.: Fahrbahn abschnittsweise gesperrt, Ausweichen auf Gehweg notwendig	q3::inwork 11966,11832 11993,11978
@@ -280,6 +280,9 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q4::inwork 10601,12521
 #: source_id: LMS-BR_r_LMS-BR_106653_LMS-BR_72
 #: last_checked: 2017-11-28 vvv
 Mariannenplatz: Bauarbeiten, Fahrbahn gesperrt, Bordsteine	q4::inwork 11781,10696 11824,10708
+#: source_id: 2147342161
+#: XXX Ende-Datum laut fritz
+#: next_check: 2018-01-31
 Mariannenplatz: Bauarbeiten, Fahrbahn an der Waldemarstr. gesperrt	q2::inwork 11839,10736 11897,10887
 #: last_checked ^^^
 # 
@@ -2568,7 +2571,8 @@ Schwarzer Weg: einige Fußgänger	q2 17276,7348 17282,7337 17295,7328
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 #: by ^^^
 #: by: Steini
-Ebersstr.: Schüler	q2 7242,8586 7288,8635
+#: confirmed_by: srt (konkretisiert, q2 -> q3)
+Ebersstr.: Schulhof, Radfahren verboten	q3 7242,8586 7288,8635
 #: by: Christian Uhrich:
 Straße 103 (Niederschönhausen): enge Straße	q1 10914,20065 11051,19789
 #: by: Petra (ploewe...):

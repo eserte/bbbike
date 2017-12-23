@@ -26026,7 +26026,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="530000444" version="2"
-#: last_checked: 2017-10-27
+#: last_checked: 2017-12-22
 #: check_frequency: 14d
 # REMOVED ---	q3::inwork; 7201,8870 7107,9030
 	q3::inwork; 7107,9030 7035,9161
@@ -26133,19 +26133,23 @@ EOF
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.604116.php',
        data  => <<EOF,
 #: XXX Baumaßnahme ist Ende 2018 fertig; Vollsperrung nur für 2-3 Wochen
-#: XXX wird es vielleicht Änderungen bei der Wegbeschaffenheit geben?
-#: last_checked: 2017-10-27 (der Eingangsbereich ist zurzeit gesperrt, Umgehung existiert)
+#: XXX außerdem wird der Weg gerade neu gemacht --- teilweise schon gut gepflastert, der Rest wird es vermutlich auch sein
+#: last_checked: 2017-12-22 (Umgehung für Bauarbeiten im Mittelbereich existiert)
 	2::inwork 6815,8691 6912,8617
 EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten ist die Straße komplett gesperrt, auch für Radfahrer und Fußgänger',
+       text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Straße komplett gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-12-14
-	2::inwork 14231,10907 14141,10931 14107,10911 14224,10878 14231,10907 14558,10819
+#: last_checked: 2017-12-23
+	2::inwork 14231,10907 14141,10931 14076,10949
+	2::inwork 14141,10931 14107,10911
+# REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
+	2::inwork 14231,10907 14352,10874
+# REMOVED ---	2::inwork 14352,10874 14558,10819
 EOF
      },
      { from  => 1499148000, # 2017-07-04 08:00
