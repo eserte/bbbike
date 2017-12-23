@@ -14064,13 +14064,15 @@ sub show_info {
 
     my $in_2nd_pass = 0;
     my $recursion_breaker=0;#XXX
+    my @above_tags;
     while (1) {
-	if($recursion_breaker++>10){die}#XXX
+	if($recursion_breaker++>10){die "recursion breaker in show_info"}#XXX
 	$base_tag = $tags[0];
 	@tags = grep { $_ ne "current" } @tags;
 	$is_p = ($base_tag =~ /-(?:[fb]g|img)$/);
 	$base_tag =~ s/-(?:[fb]g|img)$//;
 	last unless !exists $p_file{$base_tag} and !$str_file{$base_tag};
+	@above_tags = @tags;
 	my($below_item, @below_tags) = find_below($c, qw/s l u b r f w o v v-fg fz/);
 	if (!defined $below_item) {
 	    # 2nd pass: check for markers etc.
@@ -15038,6 +15040,10 @@ EOF
 
     if (@internal_canvas_tags) {
 	unshift @internal_canvas_tags, M("Interne Canvas-Tags").":\n", "bold";
+    }
+    if (@above_tags) {
+	push @internal_canvas_tags, "\n".M("Oben liegende interne Canvas-Tags").":\n", "bold";
+	push @internal_canvas_tags, join("\n", @above_tags), undef;
     }
     if (@info_txt_and_tag) {
 	unshift @info_txt_and_tag, M("Info").":\n", "bold";
