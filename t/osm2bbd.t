@@ -83,6 +83,10 @@ GetOptions("keep" => \$keep)
   <node id="2453005325" visible="true" version="1" changeset="17769039" timestamp="2013-09-10T15:15:14Z" user="Pholker" uid="13673" lat="52.5069069" lon="13.4069476"/>
   <node id="767501074" visible="true" version="1" changeset="4940461" timestamp="2010-06-08T20:41:02Z" user="wicking" uid="102755" lat="52.5077626" lon="13.4058616"/>
 
+  <!-- nodes for Klappbruecke Tegeler Hafen -->
+  <node id="1195371984" visible="true" version="1" changeset="7514472" timestamp="2011-03-10T14:10:24Z" user="Spartanischer Esel" uid="58727" lat="52.5925657" lon="13.2786880" />
+  <node id="1195371985" visible="true" version="1" changeset="7514472" timestamp="2011-03-10T14:10:24Z" user="Spartanischer Esel" uid="58727" lat="52.5924815" lon="13.2789366" />
+
   <!-- way with cycleway and oneway -->
   <way id="76865761" version="4" timestamp="2013-09-26T03:46:24Z" changeset="18038475" uid="1439784" user="der-martin">
     <nd ref="29271394"/>
@@ -151,6 +155,18 @@ GetOptions("keep" => \$keep)
   <tag k="surface" v="sett"/>
  </way>
 
+ <!-- bridge=movable -->
+ <way id="103531998" visible="true" version="3" changeset="54813480" timestamp="2017-12-21T12:28:55Z" user="Kivi" uid="120279">
+  <nd ref="1195371984"/>
+  <nd ref="1195371985"/>
+  <tag k="access" v="no"/>
+  <tag k="bridge" v="movable"/>
+  <tag k="bridge:movable" v="bascule"/>
+  <tag k="highway" v="footway"/>
+  <tag k="layer" v="1"/>
+  <tag k="man_made" v="bridge"/>
+  <tag k="name" v="Klappbruecke an der Humboldtmuehle"/>
+ </way>
 </osm>
 EOF
     close $osmfh;
@@ -182,6 +198,7 @@ EOF
 	is $strassen->data->[2], "Wismarplatz\tN 13.4630646,52.5114094 13.4627415,52.5108136\n";
 	is $strassen->data->[3], "Wallensteinstraße\tN 13.5086756,52.4902799 13.5095316,52.4898947\n";
 	is $strassen->data->[4], "Stallschreiberstra\x{df}e\tN 13.4069476,52.5069069 13.4058616,52.5077626\n";
+	is $strassen->data->[5], "Klappbruecke an der Humboldtmuehle\tNN::Br 13.2786880,52.5925657 13.2789366,52.5924815\n";
 
     }
 

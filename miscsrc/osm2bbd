@@ -283,6 +283,8 @@ use constant HIGHWAY_N_RX   => qr{^(?:residential|unclassified|service|minor)$};
 use constant CONSTRUCTION_RX => qr{^(?:construction)$};
 use constant PROJECTED_RX    => qr{^(?:planned|proposed)$};
 
+use constant BRIDGE_YES_RX  => qr{^(?:yes|movable)$};
+
 my $cyclists_dismount_label = ($lang eq 'en' ? 'Cyclists dismount' : 'Radfahrer absteigen');
 
 sub init_height_db {
@@ -1060,7 +1062,7 @@ for my $osm_file (@osm_files) {
 		my $addcat = "";
 		if (exists $tag{'tunnel'} && $tag{'tunnel'} eq 'yes') {
 		    $addcat .= "::Tu";
-		} elsif (exists $tag{'bridge'} && $tag{'bridge'} eq 'yes') {
+		} elsif (exists $tag{'bridge'} && $tag{'bridge'} =~ BRIDGE_YES_RX) {
 		    $addcat .= "::Br";
 		}
 
@@ -1240,7 +1242,7 @@ for my $osm_file (@osm_files) {
 		my $addcat = "";
 		if (exists $tag{'tunnel'} && $tag{'tunnel'} =~ m{^(yes|building_passage)$}) {
 		    $addcat .= "::Tu";
-		} elsif (exists $tag{'bridge'} && $tag{'bridge'} eq 'yes') {
+		} elsif (exists $tag{'bridge'} && $tag{'bridge'} =~ BRIDGE_YES_RX) {
 		    $addcat .= "::Br";
 		}
 
