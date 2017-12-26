@@ -21882,7 +21882,7 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: tempex: su T08-T18
-	q4::temp:clock 10354,14987 10240,15318
+	q4::temp:clock 10354,14987 10319,15090 10240,15318
 EOF
      },
      { from  => 1372568400, # 2013-06-30 07:00
@@ -25472,7 +25472,7 @@ EOF
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=20802
 #: source_id: LMS-BR_r_LMS-BR_72519
-	q4::inwork 12911,1815 12940,1547
+	q4::inwork; 12911,1815 12940,1547
 EOF
      },
      { from  => 1466978400, # 2016-06-27 00:00
@@ -26025,9 +26025,9 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: osm_watch: way id="530000444" version="2"
+#: osm_watch: way id="530000444" version="3"
 #: last_checked: 2017-12-22
-#: check_frequency: 14d
+#: next_check: 2017-12-25
 # REMOVED ---	q3::inwork; 7201,8870 7107,9030
 	q3::inwork; 7107,9030 7035,9161
 EOF
@@ -26092,7 +26092,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2017-11-05 00:00:00"), # 1495918329, # 2017-05-27 22:52
-       until => $isodate2epoch->("2018-03-23 12:00:00"),
+       until => 1514305784, # zurzeit nur verengt! --- $isodate2epoch->("2018-03-23 12:00:00"),
        text  => 'Bölschestr.: Bauarbeiten, zwischen Aßmannstr. und Müggelseedamm Richtung Süden gesperrt, bis Ende März 2018',
        type  => 'handicap',
        data  => <<EOF,
@@ -26678,7 +26678,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.643712.php',
        data  => <<EOF,
-#: last_checked: 2017-11-04
+#: last_checked: 2017-12-26
 	q3::inwork 5306,15387 5134,15565
 EOF
      },
@@ -26752,8 +26752,9 @@ EOF
        type  => 'handicap',
        source_id => '2147342108',
        data  => <<EOF,
-#: XXX vor Ort prüfen
-	q3::inwork; 10653,13493 10640,13471 10603,13395 10527,13257
+#: source_id: LMS-BR_r_LMS-BR_118136_LMS-BR_72
+# REMOVED (zurzeit nur an der Kreuzung Beeinträchtigungen) --- #: XXX vor Ort prüfen
+	q2::inwork; 10596,13398 10527,13257
 EOF
      },
     );

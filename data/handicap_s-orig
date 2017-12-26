@@ -31,7 +31,7 @@ Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::i
 #: check_frequency: 14d
 Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2017-12-09
+#: last_checked: 2017-12-25
 #: check_frequency: 90d
 Dˆringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -85,7 +85,8 @@ Lange Str.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 12409,11902 12238,11
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.641406.php
 #: valid: 20171026-
-#: next_check: 2017-11-30
+#: last_checked: 2017-12-26
+#: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
 # 
 ### Mitte ###
@@ -278,9 +279,11 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q4::inwork 10601,12521
 ### Kreuzberg ###
 # 
 #: source_id: LMS-BR_r_LMS-BR_106653_LMS-BR_72
+#: source_id: LMS-BR_r_LMS-BR_119822_LMS-BR_72
 #: last_checked: 2017-11-28 vvv
 Mariannenplatz: Bauarbeiten, Fahrbahn gesperrt, Bordsteine	q4::inwork 11781,10696 11824,10708
 #: source_id: 2147342161
+#: source_id: LMS-BR_r_LMS-BR_119821_LMS-BR_72
 #: XXX Ende-Datum laut fritz
 #: next_check: 2018-01-31
 Mariannenplatz: Bauarbeiten, Fahrbahn an der Waldemarstr. gesperrt	q2::inwork 11839,10736 11897,10887
@@ -424,7 +427,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung S¸de
 # REMOVED (-> wieder temp_blocking) --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml vvv --- #: source_id: IM_025877 vvv --- #: source_id: 2147339245 vvv --- #: source_id: 2147339553 vvv --- #: last_checked: 2017-06-28 vvv --- #: next_check: 2017-08-02 vvv --- J¸licher Str.: Einbahnstraﬂenregelung wegen Bauarbeiten an der Bˆsebr¸cke	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603 --- Malmˆer Str.: Einbahnstraﬂenregelung wegen Bauarbeiten an der Bˆsebr¸cke	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
 # 
 #: XXX mittlerweile bis zur H‰lfte offen
-#: last_checked: 2017-12-15
+#: last_checked: 2017-12-26
 #: check_frequency: 14d
 F¸rstenberger Str.: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 10320,14608 10472,14632
 # 
@@ -609,7 +612,7 @@ vor dem Kanzleramt: Fuﬂg‰nger, manchmal gesperrt	q1 8120,12756 8122,12603
 Am Stadtpark: Parkweg mit Fuﬂg‰ngern	q1 15395,12762 15424,12732 15433,12686 15454,12519
 Am Stichkanal: Fuﬂg‰nger	q1 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
 Am Stichkanal: Fuﬂg‰nger	q1 22759,4430 22797,4518
-Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10354,14987 10240,15318 10188,15474 10185,15487 10130,15647
+Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10354,14987 10319,15090 10240,15318 10188,15474 10185,15487 10130,15647
 (Fuﬂweg am Griesinger-Krankenhaus): Fuﬂg‰nger	q1 21935,12153 21930,12185 21608,12320 21435,12390 21346,12427 21265,12468 21221,12484
 # REMOVED (die Nicht-Existenz sollte auch durch Nicht-Existenz auf der Karte reflektiert werden) --- (Fuﬂg‰ngerbr¸cke Ostkreuz): Fuﬂg‰nger	q3 14808,10978 14787,10972 14764,10877 14810,10832
 (Ringbahnsteig Ostkreuz): Fuﬂg‰nger	q4 14810,10832 14839,10853 14862,10942 14845,10954
@@ -1260,7 +1263,7 @@ Orankeweg: einige Bodenschwellen, ohne Anh‰nger leicht umfahrbar	q0 14967,15885 
 (Gounodstr. - Otto-Brahm-Str.): abschnittsweise eng und kurvig	q1 14433,15908 14451,15873 14383,15848 14349,15825 14365,15778
 Gounodstr.: Fuﬂg‰nger	q1 14239,15810 14251,15828 14366,15877
 Seidenberger Str.: Bordstein, Gel‰nder	q3 12391,16994 12382,17006
-Mulackstr.: enge Straﬂe	q1 10640,13471 10535,13509 10406,13543 10308,13575
+Mulackstr.: enge Straﬂe	q1 10633,13474 10535,13509 10406,13543 10308,13575
 R¸ckerstr.: enge Straﬂe	q1 10597,13647 10535,13509
 Cheruskerpark: Fuﬂg‰nger	q1 7439,8716 7405,8698 7382,8658 7368,8595 7352,8391 7352,8390 7329,8329 7283,8265 7282,8264 7250,8223
 (Ebersstr. - Park GASAG Nordspitze): Fuﬂg‰nger	q1 7410,8593 7368,8595 7365,8595 7366,8624 7353,8633 7313,8661
@@ -2561,6 +2564,11 @@ Arberstr.: einige Fuﬂg‰nger	q1 19437,9653 19450,9728
 #: XXX_prog: BS am Wendehammer, ansonsten "einige Fuﬂg‰nger", q2
 Schwarzer Weg: Bordstein	q3 17294,7367 17276,7348
 Schwarzer Weg: einige Fuﬂg‰nger	q2 17276,7348 17282,7337 17295,7328
+Nordhafenpark West: einige Fuﬂg‰nger	q1 7368,14573 7396,14569 7426,14539 7551,14464 7572,14432 7566,14404
+Hansa-Ufer: einige Fuﬂg‰nger	q1 5657,12339 5740,12419
+#: XXX_prog BS am Wendehammer sowie, je nach Wegf¸hrung, auch am Rondell, ansonsten q2
+Ackerstr.: Fuﬂg‰nger, Bordsteine	q3 8701,14932 8741,14928
+(zum Mauerpark, tempor‰re Umgehung): Fuﬂg‰nger	q2 10302,14964 10279,15033 10301,15084 10319,15090
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
