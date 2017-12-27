@@ -30,6 +30,8 @@ use Time::Local qw(timelocal);
 
 use BBBikeBuildUtil qw(get_pmake);
 use BBBikeUtil qw(int_round bbbike_root);
+use Karte::Polar;
+use Karte::Standard;
 use Strassen::Util ();
 use StrassenNextCheck;
 
@@ -246,6 +248,14 @@ for my $file (@files) {
 		 }
 	     }
 
+	     # OSM URL
+	     my $osm_url;
+	     {
+		 my $middle = $r->[Strassen::COORDS][$#{$r->[Strassen::COORDS]}/2];
+		 my($px,$py) = $Karte::Polar::obj->standard2map(split /,/, $middle);
+		 $osm_url = 'http://www.openstreetmap.org/#map=17/'.$py.'/'.$px;
+	     }
+
 	     # Getting priority
 	     my $prio;
 	     if ($prio = $dir->{priority}) {
@@ -344,6 +354,11 @@ EOF
    : $r->[Strassen::NAME]\t$r->[Strassen::CAT] @{$r->[Strassen::COORDS]}
    [[$where]]
 EOF
+	     if ($osm_url) {
+		 $body .= <<EOF;
+   [[$osm_url]]
+EOF
+	     }
 	     if (@planned_route_files) {
 		 $body .= "\n   Planned in\n";
 		 for my $planned_route_file (@planned_route_files) {
@@ -430,8 +445,6 @@ print "fragezeichen/nextcheck\t\t\t-*- mode:org; coding:utf-8 -*-\n\n";
 
     if ($with_dist) {
 	require ReverseGeocoding;
-	require Karte::Polar;
-	require Karte::Standard;
 	my $rh = ReverseGeocoding->new;
 	if ($centerc) {
 	    my($px,$py) = $Karte::Polar::obj->standard2map(split /,/, $centerc);
