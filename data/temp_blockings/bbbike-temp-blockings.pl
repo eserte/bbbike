@@ -6262,7 +6262,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.ms-event-agentur.com/primavera%202013.html?date=20170325',
        data  => <<EOF,
-	2::temp 7107,9030 7035,9161 7012,9222 7001,9291
+	2::temp 7101,9027 7035,9161 7012,9222 7001,9291
 	2::temp 6945,9142 7035,9161
 EOF
      },
@@ -6291,9 +6291,9 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.ms-event-agentur.com/seite22.html?date=20170325
-	2::temp 7001,9291 7012,9222 7035,9161 7107,9030
+	2::temp 7001,9291 7012,9222 7035,9161 7101,9027
 	2::temp 6945,9142 7035,9161
-	2::temp 6975,8944 7107,9030 7308,9163
+	2::temp 6975,8944 7101,9027 7308,9163
 EOF
      },
      { from  => 1160517600, # 2006-10-11 00:00
@@ -12473,7 +12473,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009721',
        data  => <<EOF,
-	2::inwork 4141,6688 4174,6711 4224,6718 4309,6716 4372,6714
+	2::inwork 4141,6688 4174,6711 4224,6718 4293,6719 4372,6718
 EOF
      },
      { from  => 1219523565, # 2008-08-23 22:32
@@ -16180,7 +16180,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014142',
        data  => <<EOF,
-	q4::temp; 5817,7223 5644,6936
+	q4::temp; 5817,7223 5806,7205 5644,6936
 EOF
      },
      { from  => undef, #
@@ -16673,7 +16673,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014394',
        data  => <<EOF,
-	q4::temp 7201,8870 7107,9030 7035,9161 7012,9222 7001,9291 7130,9316 7202,9329 7418,9366 7471,9360
+	q4::temp 7201,8870 7101,9027 7035,9161 7012,9222 7001,9291 7130,9316 7202,9329 7418,9366 7471,9360
 EOF
      },
      { from  => 1255644000, # 2009-10-16 00:00
@@ -17111,7 +17111,7 @@ EOF
        text  => 'Asphaltierung der Belziger Str., Einbahnstraße Richtung Westen',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; 7107,9030 7308,9163
+	q4::inwork; 7101,9027 7308,9163
 EOF
      },
      { from  => 1258836011, # 2009-11-21 21:40
@@ -24245,7 +24245,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check: 2015-08-03
-	q3::inwork 5824,6974 5817,7223
+	q3::inwork 5824,6974 5827,7187 5806,7205
 EOF
      },
      { from  => undef,
@@ -26025,11 +26025,11 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: osm_watch: way id="530000444" version="3"
-#: last_checked: 2017-12-22
-#: next_check: 2017-12-25
-# REMOVED ---	q3::inwork; 7201,8870 7107,9030
-	q3::inwork; 7107,9030 7035,9161
+#: osm_watch: way id="548612558" version="1"
+#: last_checked: 2017-12-30
+#: check_frequency: 14d
+# REMOVED ---	q3::inwork; 7201,8870 7101,9027
+	q3::inwork; 7101,9027 7035,9161
 EOF
      },
      { from  => 1493652218, # 2017-05-01 17:23
@@ -26134,7 +26134,7 @@ EOF
        data  => <<EOF,
 #: XXX Baumaßnahme ist Ende 2018 fertig; Vollsperrung nur für 2-3 Wochen
 #: XXX außerdem wird der Weg gerade neu gemacht --- teilweise schon gut gepflastert, der Rest wird es vermutlich auch sein
-#: last_checked: 2017-12-22 (Umgehung für Bauarbeiten im Mittelbereich existiert)
+#: last_checked: 2017-12-30 (Umgehung für Bauarbeiten im Mittelbereich existiert)
 	2::inwork 6815,8691 6912,8617
 EOF
      },
@@ -26144,7 +26144,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-12-23
+#: last_checked: 2017-12-30
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -26573,11 +26573,10 @@ EOF
 EOF
      },
      { from  => 1506548546, # 2017-09-27 23:42
-       until => 1525125600, # 2018-05-01 00:00
+       until => 1514659693, # (weitgehend beendet) --- 1525125600, # 2018-05-01 00:00
        text  => 'Borussiastr.: Bauarbeiten zwischen Manteuffelstr. und Schöneberger Str., Fahrbahn gesperrt, voraussichtlich bis April 2018',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2017-11-10 (mapillary)
 	q3::inwork 8653,6781 8750,6779
 EOF
      },
@@ -26605,7 +26604,7 @@ EOF
 	2::temp 5492,7543 5606,7651 5635,7660 5636,7540 5812,7536 5810,7662 5635,7660 5636,7685 5608,7684 5528,7683 5493,7717 5491,7836 5492,7868 5475,7906
 	2::temp 6241,7428 6238,7645 6257,7646 6271,7733 6209,7765 6144,7677 6082,7594 5955,7420 5956,7682 5957,7773 6195,7775 6209,7765 6273,7849 6307,7893 6418,7958
 	2::temp 5570,7939 5570,8011 5522,8011
-	2::temp 5913,8415 5925,8219 5730,8207 5700,8241 5687,8280 5699,8308
+	2::temp 5913,8415 5917,8351 5925,8219 5730,8207 5700,8241 5687,8280 5699,8308
 	2::temp 6333,7708 6352,7523
 	2::temp 5957,7773 5807,7771 5809,7712 5636,7709 5636,7734 5630,7875 5517,7869 5636,7734
 	2::temp 6163,7237 6166,7658 6144,7677 6123,7684 5956,7682 5810,7684
@@ -26622,7 +26621,7 @@ EOF
 	2::temp 5651,8218 5730,8207
 	2::temp 5806,7796 5807,7771
 	2::temp 6060,8334 6163,8398 6246,8222 6181,8181 6060,8334 5925,8219 5910,8170 5928,8052 6154,8070 6261,8058 6409,8026 6388,7999 6418,7958 6429,7876 6307,7893 6332,7721
-	2::temp 5913,8415 5831,8358 5806,8350 5762,8335 5660,8351
+	2::temp 5913,8415 5917,8351 5831,8358 5806,8350 5762,8335 5660,8351
 	2::temp 6388,7999 6443,7971 6480,7992 6409,8026
 	2::temp 6437,7968 6489,7908
 EOF
@@ -26662,8 +26661,8 @@ EOF
 EOF
      },
      { from  => 1508176419, # 2017-10-16 19:53
-       until => 1514761200, # 2018-01-01 00:00
-       text  => 'Gäßnerweg: Fahrbahn zwischen Albrechtstr. und Bosestr. sowie Podewilsstr. und Burchardstr. gesperrt, bis 31.12.2017',
+       until => $isodate2epoch->("2018-01-04 18:00:00"), # 1514761200, # 2018-01-01 00:00
+       text  => 'Gäßnerweg: Fahrbahn zwischen Albrechtstr. und Bosestr. sowie Podewilsstr. und Burchardstr. gesperrt, bis 04.01.2018',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: LMS-BR_r_LMS-BR_113125_LMS-BR_72
@@ -26755,6 +26754,24 @@ EOF
 #: source_id: LMS-BR_r_LMS-BR_118136_LMS-BR_72
 # REMOVED (zurzeit nur an der Kreuzung Beeinträchtigungen) --- #: XXX vor Ort prüfen
 	q2::inwork; 10596,13398 10527,13257
+EOF
+     },
+     { from  => 1514396333, # 2017-12-27 18:38
+       until => 1517439600, # 2018-02-01 00:00
+       text  => 'Bosestr.: Fahrbahn zwischen Wittekindstr. und Gäßnerweg wegen Bauarbeiten gesperrt, bis 31.01.2018',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::inwork 8546,6307 8388,6322
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'Herrfurthplatz: Sa 10.00-16.00 wegen Wochenmarkt (Schillermarkt) gesperrt',
+       type  => 'gesperrt',
+       recurring => 1,
+       data => <<EOF,
+#: tempex: (sa) T10-T16
+	q4::temp:clock 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
 EOF
      },
     );

@@ -152,8 +152,8 @@ Crellestr.: Asphalt	Q0 7882,9490 7836,9413 7770,9336
 Neue Kulmer Str.: Kopfsteinpflaster	Q2 7770,9336 7771,9389 7771,9479
 Willmanndamm: Verbundsteinpflaster	Q1 7836,9413 7771,9389
 Helmstr.: gutes Kopfsteinpflaster	Q1 7524,9093 7490,9116 7444,9148 7382,9187
-Belziger Str.: Asphalt	Q0 7308,9163 7107,9030
-Suadicanistr.: Asphalt	Q0 7859,7486 7858,7506
+Belziger Str.: Asphalt	Q0 7308,9163 7101,9027
+Suadicanistr.: Asphalt	Q0 7858,7462 7858,7506
 Suadicanistr.: glatt gepflastert	Q0 7858,7506 7854,7572
 Lilienthalstr.: Asphalt	Q0 10675,8940 10640,8832 10633,8705
 Lilienthalstr.: Asphalt, etwas rau	Q0 10633,8705 10615,8558
@@ -540,7 +540,7 @@ Handjerystr.: schlechtes Kopfsteinpflaster	Q3 20967,3343 20906,3433 20833,3519 2
 (An der Müggelspree): fester Waldweg	Q1 23461,5054 23620,5096 23776,5040 23852,5036 23962,5031 23982,5030 24147,4930 24378,4847 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25429,4493 25479,4540 25565,4549
 (Zum Spreetunnel): fester Waldweg, Stufen!	Q2 25385,4414 25403,4415 25477,4419 25515,4476 25551,4481 25565,4549
 Görlitzer Park: teils fester sandiger Weg	Q1 12671,10042 12686,10045 12690,10062
-Görlitzer Park: teils fester sandiger Weg	Q1 12757,10197 12763,10207 12767,10216
+Görlitzer Park: Kopfsteinpflaster	Q2 12757,10197 12763,10207 12767,10216
 Görlitzer Park: Asphalt	Q0 13145,9920 12987,10007 12869,10071 12802,10097
 Görlitzer Park: Asphalt	Q0 12670,10160 12543,10223
 Görlitzer Park: Asphalt	Q0 12543,10223 12502,10244
@@ -548,8 +548,8 @@ Görlitzer Park: wassergebundene Decke	Q1 12502,10244 12457,10309 12384,10368
 Görlitzer Park: teils Gehwegplatten, teils Kopfsteinpflaster	Q1 12384,10368 12331,10409 12328,10442
 Görlitzer Park: Asphalt	Q0 12814,9966 12833,9998 12869,10071
 Görlitzer Park: Gehwegplatten	Q0 12869,10071 12901,10134 12905,10143
-Görlitzer Park, Rondell: Asphalt	Q0 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160
-Görlitzer Park, Rondell: Asphalt	Q0 12670,10160 12712,10192 12757,10197 12801,10146 12802,10097
+Görlitzer Park, Rondell: Asphalt	Q0 12774,10178 12795,10147 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160 12693,10183 12728,10196
+Görlitzer Park, Rondell: Kopfsteinpflaster	Q2 12728,10196 12757,10197 12774,10178
 Görlitzer Park: Asphalt	Q0 12802,10097 12670,10160
 Görlitzer Park: Kleinsteinpflaster	Q1 12507,10130 12504,10172
 Görlitzer Park: Kleinsteinpflaster	Q1 12504,10172 12464,10153
@@ -1113,7 +1113,8 @@ Oderstr.: asphaltiert	Q0 14946,11697 14856,11740 14794,11770
 Oderstr.: Kopfsteinpflaster	Q2 14794,11770 14708,11820 14623,11867
 Travestr.: Kopfsteinpflaster	Q2 14981,11751 14897,11801
 Volkspark Wilmersdorf: Parkweg, teilweise etwas holprig	Q1 4320,8596 3970,8582
-Volkspark Wilmersdorf: Parkweg	Q1 5913,8415 5831,8358 5806,8350 5762,8335 5660,8351 5533,8478 5472,8507
+Volkspark Wilmersdorf: Parkweg	Q1 5913,8415 5831,8358
+Volkspark Wilmersdorf: Parkweg	Q1 5917,8351 5831,8358 5806,8350 5762,8335 5660,8351 5533,8478 5472,8507
 Volkspark Wilmersdorf: Parkweg	Q1 5465,8511 5417,8519 5347,8562
 Volkspark Wilmersdorf: Parkweg	Q1 5762,8335 5699,8308 5687,8280 5700,8241 5730,8207
 Friedrichsruher Str.: Kopfsteinpflaster, OK	Q1 3333,9026 3196,9193
@@ -1140,7 +1141,7 @@ Ella-Kay-Str.: guter Asphalt	Q0 12089,14891 12056,14831 11990,14714
 Ella-Kay-Str.: Beton	Q0 12234,15151 12208,15108 12089,14891
 (Greifswalder Str. - Ella-Kay-Str.): Verbundsteinpflaster	Q1 12371,14615 12224,14707 12213,14742 12183,14757 12056,14831
 Landecker Str.: Kopfsteinpflaster	Q2 3137,8538 2966,8586
-Kufsteiner Str.: glatter Parkweg	Q1 5913,8415 5925,8219
+Kufsteiner Str.: glatter Parkweg	Q1 5913,8415 5917,8351 5925,8219
 Rolandufer: Asphalt	Q0 11278,12185 11155,12184
 Rolandufer: Kopfsteinpflaster, Ausweichen auf Uferweg möglich, dort unbefestigter Weg	Q2 11155,12184 10945,12150
 Rolandufer/Spreeufer: gutes Kopfsteinpflaster	Q1 10945,12150 10837,12158 10660,12176
@@ -10515,9 +10516,9 @@ Rudolf-Schwarz-Str.: mäßiges Kopfsteinpflaster	Q2 13079,14320 13009,14371 12947,
 Rudolf-Schwarz-Str.: Beton	Q1 12947,14428 12798,14536
 Rudolf-Schwarz-Str.: Beton	Q1 13097,14307 13079,14320
 Kablower Weg: glatter Asphalt	Q0 22298,494 22504,425 22695,209 22815,37 22976,-176 23206,206
-Dickhardtstr.: guter Asphalt	Q0 5533,6753 5604,6709 5752,6751 5811,6833 5826,6871 5824,6974 5817,7223
+Dickhardtstr.: guter Asphalt	Q0 5533,6753 5604,6709 5752,6751 5811,6833 5826,6871 5824,6974 5827,7187 5806,7205
 Wetzlarer Str.: Asphalt	Q0 4482,6866 4599,6933 4673,6983 4737,7036
-Laubenheimer Str.: asphaltiert	Q0 4317,7069 4374,7016 4437,6953 4482,6866 4503,6822 4528,6715
+Laubenheimer Str.: asphaltiert	Q0 4317,7069 4374,7016 4434,6957 4482,6866 4506,6811 4528,6715
 Koblenzer Str.: Kopfsteinpflaster	Q2 4874,8354 4874,8140 4873,8007 4873,7967
 (Livländische Str. - Schoelerpark): Steinpflasterweg	Q1 5170,8449 5212,8602
 Undinestr.: Kopfsteinpflaster	Q2 4760,4075 4681,4537 4651,4638 4568,4789 4517,4853
@@ -10598,7 +10599,7 @@ Walterstr.: Asphalt	Q0 13121,6689 13099,6712
 Walterstr.: Kopfsteinpflaster	Q2 13099,6712 13014,6833 12973,6902 12934,6967
 Kranoldplatz: Kopfsteinpflaster	Q2 12833,6796 12715,6775
 Kranoldplatz: Kopfsteinpflaster	Q2 12726,6727 12843,6750
-Rheingaustr.: Asphalt	Q0 4894,6709 4893,6812 4893,6900 4886,7061 4880,7214 4874,7326 4874,7382
+Rheingaustr.: Asphalt	Q0 4894,6709 4893,6812 4891,6907 4886,7061 4880,7214 4874,7326 4874,7382
 Brennerstr.: Asphalt	Q0 10927,17022 10656,17018
 Viktoriastr.: Kopfsteinpflaster	Q2 9176,5413 8947,5434
 Genovevastr.: Kopfsteinpflaster	Q2 23066,7355 23172,7236
@@ -10718,7 +10719,7 @@ Bachstelzenweg: Kleinsteinpflaster	Q1 2223,5549 2137,5488 2061,5473 1933,5477
 Gregor-Mendel-Str.: Kopfsteinpflaster	Q2 3664,6523 3650,6665 3655,6811
 Milowstr.: Kopfsteinpflaster	Q2 3826,6656 3650,6665
 Schwalbacher Str.: Kopfsteinpflaster	Q2 4812,7059 4886,7061
-Steinrückweg: Kopfsteinpflaster	Q1 4309,6716 4281,6862
+Steinrückweg: Kleinsteinpflaster	Q1 4293,6719 4257,6856
 Rohlfsstr.: Kopfsteinpflaster	Q2 3452,6491 3521,6400 3696,6165 3751,6092
 Am Erlenbusch: grobes Kopfsteinpflaster, am Rand besser	Q3 3384,6356 3440,6387 3521,6400
 Drygalskistr.: Kopfsteinpflaster	Q2 3696,6165 3596,6087 3506,6012 3407,5938
@@ -10767,7 +10768,7 @@ Mendelssohnstr.: Beton	Q0 11451,13495 11474,13524 11512,13493 11598,13598 11550,
 Keibelstr.: Asphalt	Q0 11276,13408 11201,13289 11108,13142
 Hittorfstr.: Asphalt	Q1 2212,4600 2290,4709
 Hittorfstr: Kopfsteinpflaster	Q2 2290,4709 2381,4737 2442,4806 2469,4882 2516,4936 2587,4965
-Lefèvrestr.: Asphalt	Q0 4987,6902 4993,6812 5014,6752 5040,6706 5137,6651 5215,6643 5360,6642
+Lefèvrestr.: Asphalt	Q0 4987,6909 4993,6812 5014,6752 5040,6706 5137,6651 5215,6643 5360,6642
 Paulsenstr.: Asphalt	Q0 4423,6477 4500,6612 4528,6700 4528,6715
 (Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 3231,12749 3127,12793 3065,12975 3016,13315 2987,13448 2953,13489 2950,13552 2922,13594 2910,13607
 (Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): Beton	Q1 2910,13607 2902,13665

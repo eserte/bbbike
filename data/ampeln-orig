@@ -210,7 +210,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # REMOVED (aufgehoben, gesehen 2009-05) --- X 7782,9115
 	X 7471,9360
 	X 7518,9791
-	X 7107,9030
+	X 7101,9027
 	X 7001,9291
 	X 7049,9833
 	X 7126,9825
@@ -384,6 +384,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 9310,4407
 	X 5644,6936
 	X 5817,7223
+	X 5806,7205
 #: note: Anforderung für Radfahrer aus Richtung Schmiljanstr./Schmargendorfer Str. über die Straße Richtung Bundesallee/Wiesbadener Str.
 	X 5397,7205
 #: XXX_prog: zusammenhängende Ampelanlage vvv
@@ -1404,7 +1405,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -4644,1514
 	F -4827,1433
 	X 346,4833
-	X 7946,7411
+	X 7938,7406
 	X 8150,7200
 	X 8224,7148
 	F 12081,7679
@@ -1942,7 +1943,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 13225,13620
 	X 8503,12895
 	F 11723,13139
-	F 5569,7022
+	F 5559,7031
 	F 6237,9772
 	F 2320,5743
 	F 4437,5335
@@ -2759,7 +2760,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X::inwork 14366,6337
 	X::inwork 14193,6556
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4674 (Ampel an der Niemetzstr., wurde aber verlegt)
-#: last_checked: 2016-09-09
+#: last_checked: 2017-12-30
 	X::inwork 13627,7047
 	X::inwork 13278,6967
 #: next_check ^^^
@@ -2768,7 +2769,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: SONNENALLEE-2014
 #: osm_watch: node id="4006030833" version="4"
-#: last_checked: 2017-12-25
+#: last_checked: 2017-12-27
 #: next_check: 2017-12-31
 #: note: Radfahrer in Richtung Nordwesten müssen die Seite wechseln, hier Anforderungsampel
 	X::inwork 14174,7505
@@ -2884,6 +2885,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 13708,17453
 	X 17681,7589
 	X 17211,7280
+	X 16747,6813
 # 
 ################################################################################
 #: note: Potsdam vvv
@@ -3024,7 +3026,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -12653,-1723
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
 #: next_check_id: KIEFHOLZ-2015 vvv
-#: last_checked: 2017-12-21 vvv
+#: last_checked: 2017-12-27 vvv
 #: check_frequency: 90d vvv
 	X::inwork 14151,8967
 	X::inwork 14363,8738

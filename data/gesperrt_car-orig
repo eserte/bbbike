@@ -145,7 +145,7 @@ Simon-Dach-Str.	1 13954,11647 13981,11746 14006,11843
 Simon-Dach-Str.	1 14045,11965 14006,11843
 #: by: Gregor (bluege):
 Buchhorster Str.	1 7616,20633 7736,20598 7793,20580 7866,20556 7979,20528
-Handjerystr.	1 5641,7189 5624,7113 5574,7018
+Handjerystr.	1 5641,7189 5624,7113 5565,7024
 #: by: Michael Dinter: Einbahnstraße nicht für Radfahrer:
 #: confirmed_by: srt
 Leuthener Str.	1 7494,8354 7578,8358
@@ -794,8 +794,8 @@ Heinickeweg	1 2224,14825 2210,14696 2207,14576
 Jungfernsteig	1 938,14457 862,14463
 Kapellensteig	1 936,14518 938,14457 937,14391
 Wattstr.	1 998,14516 998,14435 999,14390
-Handjerystr./Schmiljanstr.	3 5494,6960 5574,7018 5624,7113
-Handjerystr./Schmiljanstr.	3 5494,6960 5574,7018 5569,7022
+Handjerystr./Schmiljanstr.	3 5478,6959 5565,7024 5624,7113
+Handjerystr./Schmiljanstr.	3 5478,6959 5565,7024 5559,7031
 (Am Carlsgarten - Waldowallee)	2 19456,7956 19478,7967 19509,7999 19558,8064
 # REMOVED (glaube ich) --- Straßenbahntrasse	3nocross -13456,500 -13436,595 -13433,693
 Straßenbahntrasse, Drängelgitter für Radfahrer/Fußgänger	3nocross -13433,693 -13432,782 -13429,1069
@@ -1176,7 +1176,7 @@ Kiehlufer	1 12913,9353 12901,9340 12895,9323
 # 
 #: osm_watch: way id="454034985" version="4"
 #: next_check_id: DIESEL-2015
-#: last_checked: 2017-12-04
+#: last_checked: 2017-12-27
 Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14366,8058 14384,8056 14425,8052 14471,8046
 # 
 # REMOVED --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf --- #: XXX evtl wird die Straße für Radfahrer geöffnet --- #: osm_watch: way id="12307305" version="4" --- #: last_checked: 2017-08-22 --- #: check_frequency: 60d
@@ -1185,3 +1185,4 @@ Schulenburgring	1 9030,8431 9028,8584 9011,8605
 #: by: mapillary
 Vereinssteg	1 8340,18984 8406,19081
 Oberwallstr.: Anlieger frei	2:Anlieger 9898,12161 9883,12251
+Hertelstr.	1 4891,6907 4787,6907

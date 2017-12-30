@@ -1938,26 +1938,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::xmas 11329,12497 11209,12430
-	1::xmas 11209,12430 11273,12301
-',
-         'from' => 1511897631,
-         'id' => 1988,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              14,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr. ist gesperrt; Dircksenstr. ist Einbahnstraße), bis Ende Dezember 2017',
-         'type' => 'gesperrt',
-         'until' => 1514329199
-       },
+       undef,
        {
          'data' => '#: note "WeihnachtsZauber auf dem Gendarmenmarkt"
 	2::xmas 9536,11922 9666,11935
@@ -1987,30 +1968,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::xmas 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324
-#	2::temp 8318,11324 8280,11296 8278,11257
-#: XXX_prog "3::temp" oder "3::xmas" geht nicht?
-	3 8427,11365 8389,11378 8374,11479
-	3 8374,11479 8389,11378 8427,11365
-',
-         'from' => 1511650800,
-         'id' => 1997,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              19,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/971680-1328132-winterweltampotsdamerplatz.html',
-         'text' => 'Weihnachtsmarkt am Potsdamer Platz, Alte Potsdamer Str. gesperrt, 27. November 2017 bis 26. Dezember 2017',
-         'type' => 'gesperrt',
-         'until' => 1514329199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2883,27 +2841,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.potsdam.de/content/blauer-lichterglanz-der-potsdamer-innenstadt
-#: tempex: before(first_advent,mo) - YYYY1227
-	1::xmas -13556,-1182 -13643,-1220
-',
-         'from' => 1511650800,
-         'id' => 2526,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Weihnachtsmarkt am Luisenplatz: vermutlich geänderte Radverkehrsführung, 27.11.2017 - 28.12.2017',
-         'type' => 'gesperrt',
-         'until' => 1514501999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3294,29 +3232,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: before(first_advent, monday)-YYYY1226 vvv
-	q3::xmas 11139,13008 11064,12910 10970,12822
-	q4::xmas 11064,12910 11134,12793
-#: tempex ^^^
-',
-         'from' => 1511650800,
-         'id' => 2763,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/1304487-1328132-weihnachtsmarktaufdemalexanderplatz.html',
-         'text' => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 27. November 2017 bis 26. Dezember 2017',
-         'type' => 'handicap',
-         'until' => 1514329199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3529,11 +3445,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: osm_watch: way id="530000444" version="3"
-#: last_checked: 2017-12-22
-#: next_check: 2017-12-25
-# REMOVED ---	q3::inwork; 7201,8870 7107,9030
-	q3::inwork; 7107,9030 7035,9161
+#: osm_watch: way id="548612558" version="1"
+#: last_checked: 2017-12-30
+#: check_frequency: 14d
+# REMOVED ---	q3::inwork; 7201,8870 7101,9027
+	q3::inwork; 7101,9027 7035,9161
 ',
          'from' => undef,
          'id' => 2860,
@@ -3553,7 +3469,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX Baumaßnahme ist Ende 2018 fertig; Vollsperrung nur für 2-3 Wochen
 #: XXX außerdem wird der Weg gerade neu gemacht --- teilweise schon gut gepflastert, der Rest wird es vermutlich auch sein
-#: last_checked: 2017-12-22 (Umgehung für Bauarbeiten im Mittelbereich existiert)
+#: last_checked: 2017-12-30 (Umgehung für Bauarbeiten im Mittelbereich existiert)
 	2::inwork 6815,8691 6912,8617
 ',
          'from' => 1498214515,
@@ -3565,7 +3481,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-12-23
+#: last_checked: 2017-12-30
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -3726,16 +3642,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '#: last_checked: 2017-11-10 (mapillary)
-	q3::inwork 8653,6781 8750,6779
-',
-         'from' => 1506548546,
-         'id' => 2911,
-         'text' => 'Borussiastr.: Bauarbeiten zwischen Manteuffelstr. und Schöneberger Str., Fahrbahn gesperrt, voraussichtlich bis April 2018',
-         'type' => 'handicap',
-         'until' => 1525125600
-       },
+       undef,
        undef,
        undef,
        {
@@ -3772,9 +3679,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1508176419,
          'id' => 2917,
-         'text' => 'Gäßnerweg: Fahrbahn zwischen Albrechtstr. und Bosestr. sowie Podewilsstr. und Burchardstr. gesperrt, bis 31.12.2017',
+         'text' => 'Gäßnerweg: Fahrbahn zwischen Albrechtstr. und Bosestr. sowie Podewilsstr. und Burchardstr. gesperrt, bis 04.01.2018',
          'type' => 'handicap',
-         'until' => 1514761200
+         'until' => 1515085200
        },
        {
          'data' => '#: last_checked: 2017-12-26
@@ -3816,6 +3723,26 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Alte Schönhauser Str.:Bauarbeiten zwischen Schendelgasse und Weinmeisterstr., voraussichtlich bis 31.01.2018',
          'type' => 'handicap',
          'until' => 1517439600
+       },
+       {
+         'data' => '	q4::inwork 8546,6307 8388,6322
+',
+         'from' => 1514396333,
+         'id' => 2926,
+         'text' => 'Bosestr.: Fahrbahn zwischen Wittekindstr. und Gäßnerweg wegen Bauarbeiten gesperrt, bis 31.01.2018',
+         'type' => 'handicap',
+         'until' => 1517439600
+       },
+       {
+         'data' => '#: tempex: (sa) T10-T16
+	q4::temp:clock 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
+',
+         'from' => undef,
+         'id' => 2927,
+         'recurring' => 1,
+         'text' => 'Herrfurthplatz: Sa 10.00-16.00 wegen Wochenmarkt (Schillermarkt) gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

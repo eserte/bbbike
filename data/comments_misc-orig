@@ -328,7 +328,7 @@ Bus 100, ...	busroute_N 5352,11502 5587,11397 5666,11362 5565,11147 5542,11075 5
 Bus 200	busroute_N 8005,11627 7965,11467 7970,11441 8083,11381
 Bus 282	busroute_N 3981,6850 3964,6928 3837,6926 3947,6814
 Bus 170	busroute_N 5681,5743 5581,5741 5464,5731 5280,5714 5223,5704 5141,5744 5114,5705 5054,5620 4991,5531 4911,5428 4869,5386 4821,5345
-Bus 184	busroute_N 7946,7411 7914,7364 7894,7296 7921,7288 7950,7279 7973,7295
+Bus 184	busroute_N 7938,7406 7914,7364 7894,7296 7921,7288 7950,7279 7973,7295
 Bus 184	busroute_N 8661,6169 8830,6145 8944,6127 8952,6109 8976,6094 8996,6106 9003,6121 9212,6096
 Bus 184	busroute_N 9003,6121 8994,6144 8971,6154 8955,6147 8944,6127
 Bus 170	busroute_N 9796,5790 9863,5637 9893,5569 9974,5385 10029,5230
@@ -1166,7 +1166,7 @@ Yorckstr. - Katzbachstr.: beim Linksabbiegen Ausschilderung befolgen	CP; 8679,95
 #: check_frequency: 120d vvv
 #: XXX in einigen Kartenwerken (Pharus, Here) steht hier "Wildapfelpfad" statt "Goldlärchenweg" --- was wird richtig sein?
 Goldlärchenweg: nicht ausgeschildert	CS -6314,6104 -6301,6126 -6385,6185
-#: osm_watch: way id="347144701" version="5"
+#: osm_watch: way id="347144701" version="6"
 Goldlärchenweg: nicht ausgeschildert	CS -6385,6185 -6437,6221 -6495,6131
 #: check_frequency ^^^
 #: last_checked ^^^

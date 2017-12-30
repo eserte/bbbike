@@ -306,7 +306,7 @@ Straße 462	1 4914,17399 5068,17384
 Havensteinstr.	1 6293,2583 6463,2724 6593,2831
 Worpsweder Str.	1 6182,4931 6202,5163
 Wilseder Str.	1 6295,5158 6276,4915
-Dickhardtstr.	1 5817,7223 5824,6974 5826,6871 5811,6833 5752,6751 5604,6709 5533,6753
+Dickhardtstr.	1 5806,7205 5827,7187 5824,6974 5826,6871 5811,6833 5752,6751 5604,6709 5533,6753
 Roennebergstr.	1 5533,6753 5357,6932
 Schmitzweg	1 5879,19352 5851,19440 5823,19544 5731,19824
 Barbarossaplatz	1 6731,9559 6747,9531 6727,9497 6694,9537 6692,9546 6731,9559
@@ -317,14 +317,13 @@ Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf
 #: XXX evtl wird die Straße für Radfahrer geöffnet
 #: osm_watch: way id="5110895" version="5"
-#: last_checked: 2017-10-27
+#: last_checked: 2017-12-30
 #: check_frequency: 60d
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7606,8598 7643,8634 7682,8598 7644,8560
 # REMOVED (Einbahnstraßenregelung ist hier zweifelhaft) --- #: XXX Wird die Einbahnstraßenregelung hier aufgehoben? --- #: last_checked: 2012-03-06 --- #: next_check: 2012-04-20 --- Niederlagstr.	1:q3 9972,12184 9961,12273
 # REMOVED (wie sieht's nach den Bauarbeiten aus?) --- Niederlagstr.	1 9943,12364 9934,12420
 Kolk/Behnitz	1 -3042,14682 -3025,14644 -2950,14624 -2944,14652 -2942,14666
-Hertelstr.	1 4893,6900 4787,6899
 Karl-Marx-Platz	1 13100,7626 12991,7549
 Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,12019
 # REMOVED (hier ist nichts) --- Aristotelessteig	1 18452,9755 18435,9639 18660,9599
@@ -600,8 +599,8 @@ Büdnerring	1 7997,18524 7902,18575 7892,18603 7926,18665 8037,18673 8063,18659 8
 Steilpfad	1s:q3 3375,21230 3280,21477
 Jebensstr.	1 5587,11397 5459,11135
 Breitenbachplatz	1 4103,6716 4074,6681 4034,6642 3983,6599 3925,6604 3938,6651 4021,6729 4061,6753
-Südwestkorso	1 4061,6753 4206,6820
-Südwestkorso	1 4206,6820 4125,6763 4103,6716
+Südwestkorso	1 4061,6753 4204,6826
+Südwestkorso	1 4204,6826 4125,6763 4103,6716
 Kleine Markusstr. - Krautstr.	1 12021,12066 11958,12112
 Kleine Markusstr. - Krautstr.	1 11958,12112 11962,12034 12002,12008
 Schönstedtstr.	1 12540,8458 12649,8535
@@ -796,8 +795,8 @@ Prellerweg (Richtungsfahrbahn)	1::igndisp 7052,5883 6895,5870 6757,5858
 Prellerweg (Mittelstreifen)	3nocross::ignrte 6757,5858 6895,5873 7052,5883
 #: note ^^^
 #: note: Mittelstreifen vvv
-Sachsendamm/Schöneberger Str. (Richtungsfahrbahn)	1::igndisp 7946,7411 8074,7295 8176,7194 8229,7154 8319,7084
-Sachsendamm/Schöneberger Str. (Richtungsfahrbahn)	1::igndisp 8319,7084 8224,7148 8150,7200 8069,7288 7946,7411
+Sachsendamm/Schöneberger Str. (Richtungsfahrbahn)	1::igndisp 7938,7406 8074,7295 8176,7194 8229,7154 8319,7084
+Sachsendamm/Schöneberger Str. (Richtungsfahrbahn)	1::igndisp 8319,7084 8224,7148 8150,7200 8069,7288 7938,7406
 #: note: für Autos ist das Linksabbiegen zum Gewerbegebiet möglich, für Radfahrer wahrscheinlich nicht praktikabel (wegen benutzungspflichtigen Radweg)
 Sachsendamm/Schöneberger Str. (Mittelstreifen)	3nocross::ignrte 8319,7084 8229,7154 8176,7194
 #: note: ^^^
@@ -1683,7 +1682,7 @@ Yorckstr.: Linksabbiegen verboten (und unbequem)	3nocross 8192,9619 8097,9650 79
 Hauptstr./Kleistpark: unbequemes Überqueren, stark befahrene Straße	3nocross 7507,9458 7512,9572 7518,9791
 An den Treptowers: unbequemes Überqueren, stark befahrene Straße	3nocross 14501,10169 14405,10027 14289,9870
 Lichtenberger Str.: Mittelstreifen	3nocross 12028,12519 12006,12464 11920,12266
-Sachsendamm: unbequem passierbarer Mittelstreifen	3nocross 7696,7562 7859,7486 7946,7411
+Sachsendamm: unbequem passierbarer Mittelstreifen	3nocross 7696,7562 7858,7462 7938,7406
 Karl-Marx-Str.: Mittelstreifen	3nocross 12598,8390 12582,8408 12562,8432 12540,8458
 Karl-Marx-Str.: unbequemes Überqueren wegen parkender Autos	3nocross 12830,8031 12865,7923 12898,7832
 Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross 11632,8302 11767,8330 11898,8362
@@ -1825,7 +1824,7 @@ Hellersdorfer Str.: Mittelstreifen	3nocross 22883,13013 22924,12833 22967,12647
 Buckower Damm: Mittelstreifen	3nocross 12564,4308 12637,4014 12655,3882
 Albrechtstr.: Mittelstreifen	3nocross 6048,4797 6006,4852 6034,4893 6055,4950
 Südwestkorso: Mittelstreifen, parkende Autos	3nocross 4909,7436 4874,7382 4836,7327
-Südwestkorso: Mittelstreifen, parkende Autos	3nocross 4125,6763 4206,6820 4237,6840
+Südwestkorso: Mittelstreifen, parkende Autos	3nocross 4125,6763 4204,6826 4226,6840
 Berliner Str.: Mittelstreifen	3nocross 1910,20548 1929,20501 1955,20435
 Dietzgenstr.: Mittelstreifen	3nocross 10083,21848 10097,21809 10106,21784
 Dietzgenstr.: Mittelstreifen	3nocross 10120,21464 10118,21510 10114,21586 10111,21661
@@ -2220,7 +2219,7 @@ Schranke	BNP:3::trailer=10 5296,11529
 # 
 #: next_check_id: DIESEL-2015 vvv
 #: note: mittlerweile gibt es hier auch zwei Baustellenampeln mit Anforderung, allerdings wird relativ schnell auf grün geschaltet --- jetzt (2017-12) nur noch eine vvv
-#: last_checked: 2017-12-04 vvv
+#: last_checked: 2017-12-27 vvv
 Drängelgitter	BNP:3::trailer=8 14366,8058
 Drängelgitter	BNP:5::trailer=10 14425,8052
 #: note ^^^
@@ -2296,6 +2295,8 @@ Poller	BNP:1::trailer=6 8350,10662
 Drängelgitter	BNP:3::trailer=10 10062,15927
 #: next_check_id: LORTZING-2014
 #: next_check_id: LICHTBURGRING-2017
+#: osm_watch: node id="2456723872" version="2"
+#: osm_watch: node id="2456723871" version="3"
 #: XXX eventuell temporär wegen der Baustraße (vielleicht für das Wohngebiet Lichtburgring?)
 #: last_checked: 2017-11-17
 zwei Drängelgitter	BNP:6::trailer=15 10038,15418
@@ -3131,8 +3132,8 @@ IGA 2017-Gelände: Wege gesperrt	2 22503,14104 22783,14034
 # 
 # REMOVED --- #: XXX Rübertragen ist zur Not möglich vvv --- #: by:  --- #: last_checked: 2016-08-20 vvv --- #: check_frequency: 120d vvv --- Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 19015,3129 18892,3256 18689,3465 --- Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 18689,3465 18892,3256 19015,3129
 # 
-#: osm_watch: way id="257072322" version="7"
-#: osm_watch: way id="412992929" version="1" 
+#: osm_watch: way id="257072322" version="8"
+#: osm_watch: way id="412992929" version="2" 
 #: last_checked: 2017-05-21
 #: check_frequency: 120d
 Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 18892,3256 18953,3318

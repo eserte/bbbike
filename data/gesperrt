@@ -232,7 +232,7 @@ Straße 462	1 4914,17399 5068,17384
 Havensteinstr.	1 6293,2583 6463,2724 6593,2831
 Worpsweder Str.	1 6182,4931 6202,5163
 Wilseder Str.	1 6295,5158 6276,4915
-Dickhardtstr.	1 5817,7223 5824,6974 5826,6871 5811,6833 5752,6751 5604,6709 5533,6753
+Dickhardtstr.	1 5806,7205 5827,7187 5824,6974 5826,6871 5811,6833 5752,6751 5604,6709 5533,6753
 Roennebergstr.	1 5533,6753 5357,6932
 Schmitzweg	1 5879,19352 5851,19440 5823,19544 5731,19824
 Barbarossaplatz	1 6731,9559 6747,9531 6727,9497 6694,9537 6692,9546 6731,9559
@@ -243,7 +243,6 @@ Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7606,8598 7643,8634 7682,8598 7644,8560
 Kolk/Behnitz	1 -3042,14682 -3025,14644 -2950,14624 -2944,14652 -2942,14666
-Hertelstr.	1 4893,6900 4787,6899
 Karl-Marx-Platz	1 13100,7626 12991,7549
 Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,12019
 Florapromenade	1 10207,17448 10284,17458 10320,17487 10311,17764
@@ -424,8 +423,8 @@ Büdnerring	1 7997,18524 7902,18575 7892,18603 7926,18665 8037,18673 8063,18659 8
 Steilpfad	1s 3375,21230 3280,21477
 Jebensstr.	1 5587,11397 5459,11135
 Breitenbachplatz	1 4103,6716 4074,6681 4034,6642 3983,6599 3925,6604 3938,6651 4021,6729 4061,6753
-Südwestkorso	1 4061,6753 4206,6820
-Südwestkorso	1 4206,6820 4125,6763 4103,6716
+Südwestkorso	1 4061,6753 4204,6826
+Südwestkorso	1 4204,6826 4125,6763 4103,6716
 Kleine Markusstr. - Krautstr.	1 12021,12066 11958,12112
 Kleine Markusstr. - Krautstr.	1 11958,12112 11962,12034 12002,12008
 Schönstedtstr.	1 12540,8458 12649,8535
@@ -542,8 +541,8 @@ Hohenstaufenstr. (Mittelstreifen mit Gitter)	3nocross::ignrte 6096,9772 6209,977
 Prellerweg (Richtungsfahrbahn)	1::igndisp 6757,5858 6895,5873 7052,5883
 Prellerweg (Richtungsfahrbahn)	1::igndisp 7052,5883 6895,5870 6757,5858
 Prellerweg (Mittelstreifen)	3nocross::ignrte 6757,5858 6895,5873 7052,5883
-Sachsendamm/Schöneberger Str. (Richtungsfahrbahn)	1::igndisp 7946,7411 8074,7295 8176,7194 8229,7154 8319,7084
-Sachsendamm/Schöneberger Str. (Richtungsfahrbahn)	1::igndisp 8319,7084 8224,7148 8150,7200 8069,7288 7946,7411
+Sachsendamm/Schöneberger Str. (Richtungsfahrbahn)	1::igndisp 7938,7406 8074,7295 8176,7194 8229,7154 8319,7084
+Sachsendamm/Schöneberger Str. (Richtungsfahrbahn)	1::igndisp 8319,7084 8224,7148 8150,7200 8069,7288 7938,7406
 Sachsendamm/Schöneberger Str. (Mittelstreifen)	3nocross::ignrte 8319,7084 8229,7154 8176,7194
 Bundesallee: Straßentunnelrampe	3nocross::ignrte 5505,8832 5515,8709 5508,8598
 Bundesallee: Absperrung auf dem Mittelstreifen	3nocross::ignrte 5515,8709 5508,8598 5472,8507 5433,8407 5399,8344
@@ -1778,9 +1777,9 @@ Neue Blumenstr. -> Lichtenberger Str.: Mittelstreifen	3::igndisp 11709,12601 120
 Neue Blumenstr. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 11709,12601 12006,12464 12118,12462
 Neue Blumenstr. -> Lichtenberger Str.: Mittelstreifen	3::igndisp 12118,12462 12006,12464 11920,12266
 Neue Blumenstr. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 12118,12462 12006,12464 11709,12601
-unbequem passierbarer Mittelstreifen	3nocross::ignrte 7696,7562 7859,7486 7946,7411
-Sachsendamm -> Suadicanistr.: unbequem passierbarer Mittelstreifen	3::igndisp 7696,7562 7859,7486 7858,7506
-Suadicanistr. -> Sachsendamm: unbequem passierbarer Mittelstreifen	3::igndisp 7858,7506 7859,7486 7946,7411
+unbequem passierbarer Mittelstreifen	3nocross::ignrte 7696,7562 7858,7462 7938,7406
+Sachsendamm -> Suadicanistr.: unbequem passierbarer Mittelstreifen	3::igndisp 7696,7562 7858,7462 7858,7506
+Suadicanistr. -> Sachsendamm: unbequem passierbarer Mittelstreifen	3::igndisp 7858,7506 7858,7462 7938,7406
 Mittelstreifen	3nocross::ignrte 12598,8390 12582,8408 12562,8432 12540,8458
 Boddinstr. -> Karl-Marx-Str.: Mittelstreifen	3::igndisp 12368,8356 12582,8408 12562,8432
 unbequemes Überqueren wegen parkender Autos	3nocross::ignrte 12830,8031 12865,7923 12898,7832
@@ -2173,10 +2172,10 @@ Karl-Stieler-Str. -> Bismarckstr.: Mittelstreifen	3::igndisp 6097,4858 6034,4893
 Mittelstreifen, parkende Autos	3nocross::ignrte 4909,7436 4874,7382 4836,7327
 Südwestkorso -> Rheingaustr.: Mittelstreifen, parkende Autos	3::igndisp 4909,7436 4874,7382 4874,7326
 Rheingaustr. -> Südwestkorso: Mittelstreifen, parkende Autos	3::igndisp 4874,7326 4874,7382 4836,7327
-Mittelstreifen, parkende Autos	3nocross::ignrte 4125,6763 4206,6820 4237,6840
-Südwestkorso -> Gustav-Rickelt-Weg: Mittelstreifen, parkende Autos	3::igndisp 4237,6840 4206,6820 4223,6796
-Südwestkorso -> Südwestkorso: Mittelstreifen, parkende Autos	3::igndisp 4125,6763 4206,6820 4061,6753
-Gustav-Rickelt-Weg -> Südwestkorso: Mittelstreifen, parkende Autos	3::igndisp 4223,6796 4206,6820 4061,6753
+Mittelstreifen, parkende Autos	3nocross::ignrte 4125,6763 4204,6826 4226,6840
+Südwestkorso -> Gustav-Rickelt-Weg: Mittelstreifen, parkende Autos	3::igndisp 4226,6840 4204,6826 4223,6796
+Südwestkorso -> Südwestkorso: Mittelstreifen, parkende Autos	3::igndisp 4125,6763 4204,6826 4061,6753
+Gustav-Rickelt-Weg -> Südwestkorso: Mittelstreifen, parkende Autos	3::igndisp 4223,6796 4204,6826 4061,6753
 Mittelstreifen	3nocross::ignrte 1910,20548 1929,20501 1955,20435
 Berliner Str. -> Uferweg am Tegeler Hafen: Mittelstreifen	3::igndisp 1955,20435 1929,20501 1863,20478
 Uferweg am Tegeler Hafen -> Berliner Str.: Mittelstreifen	3::igndisp 1863,20478 1929,20501 1910,20548

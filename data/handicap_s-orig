@@ -21,17 +21,15 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2017-12-22
+#: last_checked: 2017-12-30
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
-#: last_checked: 2017-12-22
+#: last_checked: 2017-12-30
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
-#: last_checked: 2017-12-09
-#: check_frequency: 14d
-Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
+# REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2017-12-25
+#: last_checked: 2017-12-27
 #: check_frequency: 90d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -362,7 +360,7 @@ Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5894,12480 5944,12
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 
 #: next_check_id: DIESEL-2015
-#: last_checked: 2017-12-04
+#: last_checked: 2017-12-27
 Dieselstr., Umfahrung: Fußgänger, eng	q3::inwork 14326,8062 14366,8058 14384,8056 14425,8052 14471,8046
 # 
 # REMOVED (so gut wie fertig, Schlupflöcher durch die Absperrungen) --- #: last_checked: 2015-07-29 --- #: check_frequency: 7d --- #: priority: #A --- Ganghoferstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12805,8194 12873,8217 12918,8232
@@ -538,7 +536,7 @@ Görlitzer Park: Fußgänger	q2 12757,10197 12763,10207 12767,10216
 Görlitzer Park: Fußgänger	q2 13145,9920 12987,10007 12869,10071 12802,10097
 Görlitzer Park: Fußgänger	q2 12670,10160 12543,10223 12502,10244 12457,10309 12384,10368 12331,10409 12328,10442
 Görlitzer Park: Fußgänger	q2 12814,9966 12833,9998 12869,10071 12901,10134 12905,10143
-Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12801,10146 12757,10197 12712,10192 12670,10160
+Görlitzer Park, Rondell: Fußgänger	q2 12802,10097 12795,10147 12774,10178 12757,10197 12728,10196 12693,10183 12670,10160
 Görlitzer Park, Rondell: Fußgänger	q2 12670,10160 12659,10119 12690,10062 12737,10051 12802,10097
 Görlitzer Park: Fußgänger, eng	q2 12802,10097 12670,10160
 Görlitzer Park: eng, Kurven, Fußgänger	q2 12507,10130 12504,10172 12509,10189 12543,10223
@@ -691,6 +689,7 @@ Nettelbeckplatz: Fußgänger	q2 8024,15401 7974,15418 7891,15417
 Nettelbeckplatz: Fußgänger	q2 7929,15355 7974,15418
 Nettelbeckplatz: Fußgänger	q2 7975,15500 7975,15484 7974,15418
 Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5913,8415 5831,8358 5806,8350 5762,8335 5660,8351 5533,8478 5472,8507
+Volkspark Wilmersdorf: einige Fußgänger	q1- 5917,8351 5831,8358
 zum Volksparksteg: kombinierter Rad- und Fußweg, enge Kurven	q3 5533,8478 5531,8458
 Volksparksteg: kombinierter Rad- und Fußweg	q1 5531,8458 5417,8519
 Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5465,8511 5417,8519 5347,8562
@@ -1057,7 +1056,7 @@ Teltowkanalpromenade: eng, nicht anhängertauglich	q2 2079,-12 1924,-188 1593,-31
 Bennigsenstr.: enge Straße	q1 5807,7771 5957,7773 6195,7775 6209,7765
 Perelsplatz: Fußgänger, Park	q2 5809,7712 5636,7709
 #: XXX_prog: BS (Bordstein zum Südwestkorso, Richtung Süden kann der Bordstein zugeparkt sein) (ansonsten -> q2)
-Gustav-Rickelt-Weg: eng, Fußgänger, Bordsteine	q3 4224,6718 4223,6796 4206,6820
+Gustav-Rickelt-Weg: eng, Fußgänger, Bordsteine	q3 4224,6718 4223,6796 4204,6826
 Unterführung unter der Stromstr.: Fußgänger, eng	q2 6218,12975 6180,12972
 nördliches Spreeufer: drei niedrige Stufen, Fußgänger	q2 6180,12972 6102,12960 6064,12950
 #: by: Mirko Grammel (Bordsteine):
@@ -2569,6 +2568,8 @@ Hansa-Ufer: einige Fußgänger	q1 5657,12339 5740,12419
 #: XXX_prog BS am Wendehammer sowie, je nach Wegführung, auch am Rondell, ansonsten q2
 Ackerstr.: Fußgänger, Bordsteine	q3 8701,14932 8741,14928
 (zum Mauerpark, temporäre Umgehung): Fußgänger	q2 10302,14964 10279,15033 10301,15084 10319,15090
+#: XXX_prog BS am nördlichen Ende, und nur wenn die Kette gespannt ist, ansonsten kein Handicap
+Steinrückweg: möglicher Bordstein	q1 4257,6856 4293,6719
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -2849,7 +2850,7 @@ Hüttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5
 (Glühwürmchenweg - Pionierstr.): Wohngebiet	q1 -5960,16441 -6018,16250
 Schloßpark Charlottenburg: Fußgänger	q1 3231,12749 3127,12793 3065,12975 3016,13315 2987,13448 2953,13489 2950,13552
 Spreeweg: eng und unübersichtlich	q2 2950,13552 2922,13594 2910,13607 2902,13665 2859,13686 2777,13712 2568,13662 2402,13602 2321,13572
-Lefèvrestr.: enge Straße	q1 4987,6902 4993,6812 5014,6752 5040,6706 5137,6651 5215,6643
+Lefèvrestr.: enge Straße	q1 4987,6909 4993,6812 5014,6752 5040,6706 5137,6651 5215,6643
 # XXX removed by srt: Lefèvrestr.: enge Straße	q1 5215,6643 5360,6642
 (Paul-Löbe-Allee - südl. Spreeufer): Biergarten am HDKDW	q4 7741,12586 7710,12585
 (südliches Spreeufer): Biergarten am HDKDW	q4 7745,12603 7710,12585 7670,12576
