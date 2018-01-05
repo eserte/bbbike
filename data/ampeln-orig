@@ -2612,12 +2612,12 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_prog Anforderungsampel
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
-#: last_checked: 2017-11-28
+#: last_checked: 2018-01-04
 #: check_frequency: 90d
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2017-12-18 vvv
+#: last_checked: 2018-01-04 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="3"
 	X::inwork 9121,12514
@@ -2632,15 +2632,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX ^^^
 #: next_check_id ^^^
 # 
-#: XXX temporäre Ampel vvv
-#: by: http://www.dafmap.de/d/berlin.html?id=3481&mt=0&zoom=17
-#: last_checked: 2017-11-13 vvv
-#: check_frequency: 30d vvv
-	F::inwork 9270,12086
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-# 
+# REMOVED --- #: XXX temporäre Ampel vvv --- #: by: http://www.dafmap.de/d/berlin.html?id=3481&mt=0&zoom=17 --- #: last_checked: 2017-11-13 vvv --- #: check_frequency: 30d vvv ---	F::inwork 9270,12086 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 # REMOVED --- #: XXX temporäre Ampel (wegen gesperrten Gehweg?), Ampel ist eigentlich etwas weiter westlich --- #: XXX eigentlich gibt es sogar zwei Fußgängerampeln --- #: last_checked: 2016-05-26 --- #: check_frequency: 60d ---	F::inwork 9812,12145
 # REMOVED --- #: next_check_id: INVALIDEN-2014 --- #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße) vvv --- #: XXX Aufhebung der Umleitungsstrecke ab 6. August --- werden die Ampeln ausgeschaltet? --- #: last_checked: 2015-08-10 vvv --- #: check_frequency: 7d vvv
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) --- X::inwork 8732,14098
@@ -2815,10 +2807,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 10462,3765
 #: note: Anforderungsampel
 	F 8853,13539
-#: next_check_id: HEERSTR-2016
-#: XXX Baustellenampel; eigentlich sind hier zwei Ampeln: einmal für die Straße runter zur Havel, und dann etwas weiter für die Radfahrer zum Wechseln auf die andere Straßenseite
-#: last_checked: 2017-11-04
-	X::inwork -3069,11487
+# REMOVED (existiert nicht mehr, gesehen bei mapillary) --- #: next_check_id: HEERSTR-2016 --- #: XXX Baustellenampel; eigentlich sind hier zwei Ampeln: einmal für die Straße runter zur Havel, und dann etwas weiter für die Radfahrer zum Wechseln auf die andere Straßenseite --- #: last_checked: 2017-11-04 ---	X::inwork -3069,11487
 #: note: Zufahrt zu Obi
 	X 24426,11265
 # 
@@ -3026,7 +3015,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -12653,-1723
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
 #: next_check_id: KIEFHOLZ-2015 vvv
-#: last_checked: 2017-12-27 vvv
+#: last_checked: 2018-01-05 vvv
 #: check_frequency: 90d vvv
 	X::inwork 14151,8967
 	X::inwork 14363,8738

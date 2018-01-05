@@ -7,10 +7,10 @@ Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,1
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
+Heidelberger Str.: Baustelle, Fahrbahn an der Wildenbruchstr. gesperrt	q3::inwork 13489,9199 13420,9259
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
 Voltairestr.: Baustellenverkehr	q2 11329,12497 11209,12430
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
-Beuthstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10201,11631 10235,11610 10330,11422
 Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9945,11371 9936,11469
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 Alexandrinenstr.: direkter Zugang zur Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q3::inwork 10818,11269 10678,11172
@@ -22,7 +22,6 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9883,12251 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
-Werdersche Rosenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9883,12251 9909,12261 9959,12281
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q4::inwork 10601,12521 10704,12595
 Mariannenplatz: Bauarbeiten, Fahrbahn gesperrt, Bordsteine	q4::inwork 11781,10696 11824,10708
 Mariannenplatz: Bauarbeiten, Fahrbahn an der Waldemarstr. gesperrt	q2::inwork 11839,10736 11897,10887
@@ -2611,7 +2610,6 @@ Karower Str.: temporäre Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 5192,10234 5196,10398
 Bouchéstr.: Baustelle, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 13298,9252 13190,9139
 Mengerzeile: Baustelle, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 13176,9302 13100,9210
-Heidelberger Str.: Baustelle, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 13489,9199 13420,9259 13357,9313
 Chausseestr.: Baustelle, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 8732,14098 8654,14194
 Chausseestr.: Baustelle, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 8654,14194 8607,14253 8570,14299 8442,14456
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9042,11839 8969,11814

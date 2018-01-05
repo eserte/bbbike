@@ -1070,7 +1070,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut rbbtext bis 31.05.2016, laut vmz bis Ende 2016, laut fritz bis 09.01.2018
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2017-11-28
+#: last_checked: 2018-01-04
 #: check_frequency: 90d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9608,12380
@@ -1080,13 +1080,13 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: IM_018997
 #: source_id: IM_023987
 #: source_id: IM_025933
-#: last_checked: 2017-11-29
+#: last_checked: 2018-01-04
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9608,12380 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2017-11-29
+#: last_checked: 2018-01-04
 #: check_frequency: 60d
 Busspur ist immer gültig	RW5; 9475,12365 9608,12380
 # 
@@ -1135,7 +1135,7 @@ neu asphaltiert	RW1; 17769,7465 17681,7589 17619,7679
 #: XXX werden hier noch Radspuren oder ein neuer Radweg angelegt?
 #: source_id: 2147341340
 #: source_id: LMS-BR_r_LMS-BR_98104
-#: last_checked: 2017-12-21
+#: last_checked: 2018-01-02
 #: check_frequency: 60d
 	RW0; 17619,7679 17527,7812 17317,8115 17299,8140 17202,8391
 	RW1; 17202,8391 17143,8565 17105,8666
@@ -1585,7 +1585,7 @@ die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
 #: XXX Markierungen fehlen noch
 #: osm_watch: way id="439421759" version="6"
 #: osm_watch: way id="384136808" version="12"
-#: last_checked: 2017-12-30
+#: last_checked: 2018-01-05
 #: check_frequency: 7d
 	RW0; 14674,10811 14717,10855 14810,10832 14904,10812 15261,10738
 	RW1;RW1 14652,10201 14688,10167 14705,10149 14747,10108 14817,10031
@@ -1729,7 +1729,7 @@ Berliner Gehwegplatten, ca. 1,50m breit	RW2;RW2 9272,14208 9400,14400 9410,14410
 #: note: Wobei es so aussieht, als ob das Zusatzschild einfach nur fehlt
 #: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5;
 #: by: http://www.dafmap.de/d/berlin.html?id=3134&mt=0&zoom=16 (Projektabschluss: 2017-09-01)
-#: last_checked: 2017-12-26
+#: last_checked: 2018-01-03
 #: check_frequency: 14d
 	RW4; 11451,13301 11368,13170
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 11451,13301 11486,13350
@@ -2458,7 +2458,7 @@ neues Verbundsteinpflaster	RW1; 12547,4391 12731,4841
 	RW2;RW1 12727,5244 12773,5248
 	RW1;RW1 12773,5248 12883,5257
 der Radweg "versiegt" in Höhe der Kleingartenanlage	RW1; 12883,5257 13046,5267
-	RW2; 13046,5267 12883,5257
+	RW1; 13046,5267 12883,5257
 	RW1;RW1 -4351,12460 -4406,12468 -4658,12260
 	RW2;RW1 -4658,12260 -4903,12055
 	RW1;RW2 -4903,12055 -5014,11944
@@ -2678,12 +2678,12 @@ Busspur für Radfahrer freigegeben	RW1; 13104,2143 13023,2093 13010,2085
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017) vvv
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.601178.php
-#: last_checked: 2017-08-10 vvv
-#: next_check: 2017-12-31 vvv
+#: last_checked: 2018-01-01 (mapillary) vvv
+#: check_frequency: 90d vvv
 # REMOVED (ja, ist so) --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4688 (abgesperrt) (vorher: Radwege mit Schäden) --- #: XXX vor Ort anschauen!
 vorhandener Radweg ist wegen Schäden abgesperrt	RW0; 13501,2413 13640,2229 13661,2207 13700,2173 13835,2099 14120,1991 14231,1952 14252,1945 14523,1847
 Radwege mit Schäden	RW1; 14523,1847 14252,1945 14231,1952 14120,1991 13835,2099 13700,2173 13661,2207 13640,2229 13501,2413
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: by ^^^
 #: XXX ^^^
@@ -3157,8 +3157,7 @@ schlechte Qualität des Radwegs (holprig), eng, Fußgänger	RW2; 20010,3340 20064,3
 	RW2; 20565,2754 20451,2869 20289,3033 20207,3115 20064,3278 20010,3340
 	RW;RW 11386,5107 11676,5185 11871,5195 12060,5204
 	RW;RW1 12060,5204 12507,5228
-	RW0;RW2 13046,5267 13112,5253 13250,5234 13327,5234
-	RW0;RW1 13327,5234 13594,5240 13607,5241
+	RW0;RW1 13046,5267 13112,5253 13250,5234 13327,5234 13594,5240 13607,5241
 	RW0;RW1 13607,5241 13809,5257
 neues Verbundsteinpflaster	RW1;RW1 23082,15329 23067,15429 23060,15588 23080,15700
 Verbundsteinpflaster	RW8;RW2 -7556,5515 -7389,5294 -7328,5218 -7254,5164 -7184,5118 -7160,5090 -7120,5076
@@ -4692,7 +4691,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: next_check_id: KARLMARXSTR-2016
 #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus?
 #: osm_watch: way id="297058655" version="3"
-#: last_checked: 2017-12-18
+#: last_checked: 2017-12-30 (mapillary)
 #: check_frequency: 60d
 	RW4; 12969,7610 12914,7785
 # REMOVED (wieder entfernt) --- #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus? --- #: last_checked: 2016-03-01 ---	RW3; 12898,7832 12865,7923 12830,8031 12794,8103 12753,8187
@@ -4984,6 +4983,7 @@ asphaltiert	RW1; 17681,6212 17843,6083
 Busspur gilt Mo-Sa 7-20 Uhr	RW5; 5238,13714 5231,13843 5220,14043
 Busspur gilt Mo-Sa 7-19 Uhr	RW5; 7433,13070 7563,13143 7573,13149 7714,13223
 	RW4; 7714,13223 7759,13246
+#: XXX Bauarbeiten der Wasserbetriebe; ist die Radspur noch befahrbar?
 die letzten Meter nur Schutzstreifen	RW4; 18731,8577 18704,8427
 	RW6;RW6 7802,14250 7757,14318
 10km/h	RW6;RW6 13510,8138 13663,8011
@@ -5048,8 +5048,13 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
+#: last_checked: 2018-01-05
+#: check_frequency: 7d
+	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
+	RW4;RW4 11117,10326 10975,10334
+#: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: last_checked: 2017-12-18
 #: check_frequency: 7d
-	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322
+	RW4;RW3 10975,10334 10871,10322
 	RW6;RW6 11715,11522 11767,11662 11829,11727
 neu asphaltiert	RW2;RW2 17681,7589 17585,7525 17453,7451 17282,7337 17211,7280 17127,7209 17005,7085 16834,6910 16747,6813

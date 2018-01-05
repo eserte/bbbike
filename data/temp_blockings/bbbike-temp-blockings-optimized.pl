@@ -418,27 +418,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED	2::xmas 9737,12238 9798,12267
-	2::xmas 9737,12238 9747,12205 9771,12190 9775,12178 9808,12182
-',
-         'from' => 1511823600,
-         'id' => 790,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              18,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/971793-1328132-weihnachtsmarktamopernpalais.html',
-         'text' => 'Nostalgischer Weihnachtsmarkt Opernpalais: Wege rund um die Hedwigs-Kathedrale nicht passierbar, vom 29.11. bis 30.12.2017',
-         'type' => 'gesperrt',
-         'until' => 1514674799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1939,28 +1919,6 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note "WeihnachtsZauber auf dem Gendarmenmarkt"
-	2::xmas 9536,11922 9666,11935
-	2::xmas 9523,12019 9656,12031
-',
-         'from' => 1511650800,
-         'id' => 1989,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'http://www.berlin.de/tickets/suche/detail.php?id=1090035',
-         'text' => 'Gendarmenmarkt: Weihnachtsmarkt vom 27.11.2017 bis 31.12.2017, Durchfahrt nicht möglich (Eintritt!)',
-         'type' => 'gesperrt',
-         'until' => 1514847599
-       },
        undef,
        undef,
        undef,
@@ -1981,33 +1939,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
-#: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6280.html
-	2::temp 8595,12066 8737,12098 8743,12099 8861,12125
-	2::temp 8722,12268 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	2::temp 8055,12186 8119,12414
-	2::temp 8522,12239 8466,12197
-	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-',
-         'from' => 1514178000,
-         'id' => 2010,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              26,
-                              'months',
-                              12
-                            ]
-                          ],
-         'text' => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., ab 26.12.2017 bis 02.01.2018',
-         'type' => 'gesperrt',
-         'until' => 1514933999
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -2103,7 +2036,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Dezember von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Januar von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3236,37 +3169,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: YYYY1231T1200-YYYY0101T1200 vvv
-	2::temp 8540,12420 8775,12457
-	2::temp 8485,12612 8399,12610 8348,12609 8306,12609 8207,12606 8122,12603 8119,12414 8354,12416 8400,12417 8540,12420
-	2::temp 8348,12609 8354,12416
-	2::temp 8207,12606 8206,12757
-	3 7945,12592 8122,12603 8120,12756
-	3 8391,12389 8400,12417 8399,12610
-	3 8070,12409 8119,12414 8055,12186
-	3 8399,12610 8400,12417 8391,12389
-	3 8120,12756 8122,12603 7945,12592
-	3 8055,12186 8119,12414 8070,12409
-#: tempex ^^^
-',
-         'from' => 1514631600,
-         'id' => 2767,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              31,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => '2147339665',
-         'text' => 'Regierungsviertel u.a. Dorotheenstr., Scheidemannstr., Heinrich-von-Gagern-Str. und Paul-Löbe-Allee: wegen Silvesterparty gesperrt, vermutlich vom 31.12.2017 12:00 Uhr bis 01.01.2018 12:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1514804400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3364,7 +3267,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-12-09 vvv
+#: last_checked: 2018-01-04 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -3481,7 +3384,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-12-30
+#: last_checked: 2018-01-02
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -3490,7 +3393,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => undef,
          'id' => 2871,
-         'text' => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Straße komplett gesperrt sein',
+         'text' => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Straße gesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -3671,18 +3574,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: source_id: LMS-BR_r_LMS-BR_113125_LMS-BR_72
-#: source_id: LMS-BR_r_LMS-BR_113126_LMS-BR_72
-	q4::inwork 8541,6191 8546,6307
-	q4::inwork 8553,6665 8551,6552
-',
-         'from' => 1508176419,
-         'id' => 2917,
-         'text' => 'Gäßnerweg: Fahrbahn zwischen Albrechtstr. und Bosestr. sowie Podewilsstr. und Burchardstr. gesperrt, bis 04.01.2018',
-         'type' => 'handicap',
-         'until' => 1515085200
-       },
+       undef,
        {
          'data' => '#: last_checked: 2017-12-26
 	q3::inwork 5306,15387 5134,15565
@@ -3742,6 +3634,22 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'recurring' => 1,
          'text' => 'Herrfurthplatz: Sa 10.00-16.00 wegen Wochenmarkt (Schillermarkt) gesperrt',
          'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.618687.php
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.623391.php
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.655961.php (Sperrung doch nicht erfolgt? Dafür Einbahnstraßenregelung ab Dez. 2017)
+#: XXX Einbahnstraßenregelung genauer anschauen; wann wird die Einschränkung beendet?
+#: osm_watch: way id="13860352" version="11"
+#: next_check: 2018-03-01
+	q4::inwork; 3859,4531 3898,4477
+',
+         'from' => undef,
+         'id' => 2928,
+         'source_id' => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.663347.php',
+         'text' => 'Moltkestraßenbrücke: Einbahnstraße, offen Richtung Norden',
+         'type' => 'handicap',
          'until' => undef
        }
      

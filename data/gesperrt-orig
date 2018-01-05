@@ -123,7 +123,8 @@ Dorfplatz	1 21074,-475 20986,-529 20890,-546 20827,-537 20999,-489 21074,-475
 #: XXX Straße wird zu einer Stadttraße umgebaut; auf der südöstlichen Seite wird ein Zweirichtungsradweg+gehweg entstehen; außerdem wird es eine Rampe zur Straße "Am Falkenberg" geben
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/b96a/index.shtml
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/b96a/download/lageplan_07.pdf
-#: next_check: 2018-06-01
+#: last_checked: 2018-01-01 (mapillary)
+#: check_frequency: 360d
 B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532 21819,1595 21541,1739
 Zufahrt zur B96a	2 20288,-511 20272,-501
 Olivaer Platz	1 4239,10358 4172,10406 4157,10418
@@ -1413,11 +1414,11 @@ Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: add_fragezeichen: Ist die Einbahnstraße mittlerweile für Radfahrer offen? vvv
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf vvv
 #: osm_watch: way id="183614191" version="5"
-#: last_checked: 2017-10-14
+#: last_checked: 2017-12-30 (mapillary)
 #: check_frequency: 100d
 Ahornallee	1s:q3 1589,11483 1574,11379
 #: osm_watch: way id="24852084" version="9"
-#: last_checked: 2017-10-14
+#: last_checked: 2017-12-30 (mapillary)
 #: check_frequency: 100d
 Lindenallee	1s:q3 1429,11528 1403,11428
 #: by: ^^^
@@ -2811,12 +2812,13 @@ Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
 # 
 #: next_check_id: OTTOBRAUN-2015
 #: XXX noch Restbauarbeiten, danach vielleicht wieder eine offizielle Radwegverbindung?
-#: last_checked: 2017-12-26
+#: last_checked: 2018-01-03
 #: check_frequency: 14d
 (Wadzeckstr. - Mollstr.)	2::inwork 11326,13196 11409,13327
 # 
+#: next_check_id: PLANSTRASSEC-2018
 #: XXX bleibt die Straße für den öffentlichen Verkehr gesperrt?
-#: last_checked: 2017-11-30
+#: last_checked: 2018-01-02
 Planstraße C: gesperrt, Privatstraße	2 12926,11224 12848,11093
 # 
 #: XXX wird aufgehoben, sobald das einsturzgefährdete Haus abgerissen wird
@@ -2858,7 +2860,7 @@ Zufahrt Parkhaus: Abrissarbeiten, Straße komplett gesperrt	2::inwork 8367,10745 
 # 
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_04_0325_0472_online.pdf
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_15_1637_1712_online.pdf (Grundstücksnummerierungen)
-#: osm_watch: way id="475965723" version="2"
+#: osm_watch: way id="475965723" version="3"
 #: last_checked: 2017-09-17
 Am Herzbergteich: noch wegen Bauarbeiten gesperrt; wann ist die Straße fertig?	2::inwork 17945,13493 17942,13568
 # 
@@ -2969,7 +2971,7 @@ Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11485 20631,1162
 Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19140,1137
 # 
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2017-12-13
+#: last_checked: 2018-01-04
 #: check_frequency: 90d
 Schinkelplatz: Einbahnstraße	1s:q3:inwork 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
 # 
@@ -3003,19 +3005,14 @@ Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtun
 # 
 # REMOVED (man kommt hinter dem Georg-Denkmal vorbei) --- Spreeufer Nikolaiviertel: Gehweg gesperrt	2::inwork 10417,12378 10492,12289 10583,12206
 # 
-#: osm_watch: way id="466318949" version="3"
+#: osm_watch: way id="466318949" version="4"
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
-#: last_checked: 2017-12-15
+#: last_checked: 2018-01-05
 Bouchéstr.: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13298,9252 13190,9139
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
-#: last_checked: 2017-11-30
+#: last_checked: 2018-01-05
 Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13176,9302 13100,9210
-# 
-#: next_check_id: HEIDELBERGER-2017
-#: last_checked: 2017-12-15
-#: check_frequency: 60d
-Heidelberger Str.: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13489,9199 13420,9259 13357,9313
 # 
 # REMOVED (mittlerweile ist eine Ausweichmöglichkeit markiert) --- #: last_checked: 2017-03-01 --- Karl-Marx-Platz: Bauarbeiten, Einbahnstraße gilt nun auch für Radfahrer	1s:q3 12969,7610 13100,7626
 # REMOVED --- #: source_id: 2147340790 --- #: source_id: 2147340922 --- #: last_checked: 2017-03-20 --- #: next_check: 2017-03-24 --- # REMOVED --- : valid: -20170228 --- Puschkinallee: Fahrtrichtung gesperrt	1::inwork 13795,9941 13890,9894
@@ -3172,12 +3169,12 @@ Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3
 #: next_check_id ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2017-11-30
+#: last_checked: 2018-01-02
 #: check_frequency: 120d
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2017-12-13
+#: last_checked: 2018-01-02
 #: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 
@@ -3240,7 +3237,7 @@ Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,689
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 09.01.2018
-#: last_checked: 2017-11-28 vvv
+#: last_checked: 2018-01-04 vvv
 #: check_frequency: 90d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
@@ -3310,7 +3307,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: http://www.dafmap.de/d/berlin.html?id=3588&mt=0&zoom=16
 #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung)
 #: XXX Spielbetrieb wird im Dezember 2017 aufgenommen
-#: last_checked: 2017-12-13 vvv
+#: last_checked: 2018-01-04 vvv
 #: check_frequency: 21d vvv
 Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9876,12298
 Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9798,12267 9795,12293 9780,12401
@@ -3323,7 +3320,7 @@ Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9798,
 # 
 #: XXX Eröffnung 2019 geplant
 #: by: http://www.dafmap.de/d/berlin.html?id=3598&mt=0&zoom=16
-#: last_checked: 2017-12-13
+#: last_checked: 2018-01-04
 #: check_frequency: 120d
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 

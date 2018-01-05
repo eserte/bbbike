@@ -25648,7 +25648,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2017-12-09 vvv
+#: last_checked: 2018-01-04 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -26140,11 +26140,11 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Straße komplett gesperrt sein',
+       text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Straße gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2017-12-30
+#: last_checked: 2018-01-02
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -26772,6 +26772,21 @@ EOF
        data => <<EOF,
 #: tempex: (sa) T10-T16
 	q4::temp:clock 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Moltkestraßenbrücke: Einbahnstraße, offen Richtung Norden',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.663347.php',
+       data  => <<EOF,
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.618687.php
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.623391.php
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.655961.php (Sperrung doch nicht erfolgt? Dafür Einbahnstraßenregelung ab Dez. 2017)
+#: XXX Einbahnstraßenregelung genauer anschauen; wann wird die Einschränkung beendet?
+#: osm_watch: way id="13860352" version="11"
+#: next_check: 2018-03-01
+	q4::inwork; 3859,4531 3898,4477
 EOF
      },
     );
