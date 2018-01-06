@@ -21,10 +21,10 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-01-05
+#: last_checked: 2018-01-06
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
-#: last_checked: 2018-01-05
+#: last_checked: 2018-01-06
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
@@ -386,6 +386,13 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süde
 # REMOVED (fertig, noch immer KS) --- #: next_check_id: FRIEDEL-2014 --- #: XXX: eventuell wird mit den Bauarbeiten an den Wasserleitungen auch die Fahrbahn neu gemacht? --- #: last_checked: 2014-12-12 --- #: check_frequency: 60d --- Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12074,9689 12088,9775
 # 
 ### Lichtenberg ###
+# 
+#: XXX wird aufgehoben, sobald das einsturzgefährdete Haus abgerissen wird
+#: osm_watch: way id="488814363" version="1"
+#: last_checked: 2018-01-06
+#: check_frequency: 30d
+# REMOVED --- Wartenbergstr.	1s:q2:inwork 15423,11667 15337,11639
+Wartenbergstr.: Fahrbahn gesperrt, auf Gehweg ausweichen	q3:inwork 15337,11639 15328,11636 15300,11584
 # 
 # REMOVED --- #: next_check_id: MINNATODENHAGENSTR-2016 --- #: XXX siehe auch bbbike-temp-blockings-Eintrag --- #: XXX Bordsteinabsenkung existiert am Anfang des Wendehammers --- #: last_checked: 2017-11-05 --- Wattstr.: Bauzäune	q3::inwork 17681,7589 17676,7555
 # REMOVED --- #: next_check_id: MOELLENDORFFSTR-2017 --- #: XXX_prog abgeschätzter Zeitverlust durch 2x Ampeln, explizite "Radfahren verboten"-Schilder; vermutlich ist man nicht schneller, wenn man auf dem rechten Gehweg bleibt --- #: XXX laut fritz Vollsperrung bis 30. November 2017; Abbiegebeschränkungen bis 10.11.2017 --- #: XXX laut vmz Bauarbeiten bis Ende 2017 --- #: XXX Möllendorffstraße (Lichtenberg) in beiden Richtungen zwischen Am Containerbahnhof und Frankfurter Allee (Berlin)  Gültig ab: 04.09.2017 08:00  Vollsperrung, Fahrbahnsanierung (bis Ende 09/17)	2147341771 --- #: source_id: 2147341771 --- #: source_id: LMS-BR_r_LMS-BR_108099_LMS-BR_72 --- #: source_id: 2147341938 --- #: last_checked: 2017-11-09 vvv --- #: next_check: 2017-11-30 vvv --- Möllendorffstr.: Bauarbeiten, Radfahrer müssen auf dem Gehweg fahren	q3-::inwork; 15420,12178 15361,12071 --- Gürtelstr.: Bauarbeiten, Radweg gesperrt, Fußgänger	q2-::inwork 15361,12071 15294,11964 --- #: next_check ^^^ --- #: last_checked ^^^
@@ -2235,7 +2242,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="5"
-#: last_checked: 2017-09-23
+#: last_checked: 2018-01-06
 #: check_frequency: 90d
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
@@ -2545,7 +2552,7 @@ Mariannenplatz: einige Fußgänger, insbesondere vor dem Bethanienhaus	q2 11804,10
 #: XXX_prog: BS an der Nordseite, aber auch ohne q4
 (Schloßpark - Blankenburger Str.): für Radfahrer offiziell verboten, Bordstein, kurze Rampe	q4 10569,19395 10578,19417 10525,19592
 (Schnellerstr. - Uferstr.): Fußgänger, besonders zu Geschäftszeiten	q2 17628,5865 17678,5916
-(Schnellerstr. - Uferstr.): Parkplatzverkehr, besonders zu Geschäftszeiten	q1 17678,5916 17843,6083
+(Schnellerstr. - Uferstr.): Parkplatzverkehr, besonders zu Geschäftszeiten	q1 17678,5916 17847,6089
 an den Gewächshäusern: kurvig	q2 17659,12823 17638,12813 17637,12785
 Hampstedtstr.: einige Fußgänger	q1 749,2616 816,2658
 (Oderstr. - Kirchhofweg): einige Fußgänger	q1 11565,7402 11602,7375 11656,7375 11677,7351 11687,7284

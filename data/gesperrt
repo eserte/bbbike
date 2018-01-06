@@ -2214,7 +2214,9 @@ Mariendorfer-Hafen-Weg -> Attilastr.: Gel‰nder am Gehweg	3::igndisp 7692,4464 76
 unbequemes ‹berqueren	3nocross::ignrte 6613,3320 6647,3292 6712,3237
 Paul-Schneider-Str. -> Schulstr.: unbequemes ‹berqueren	3::igndisp 6613,3320 6647,3292 6653,3297
 Schulstr. -> Paul-Schneider-Str.: unbequemes ‹berqueren	3::igndisp 6653,3297 6647,3292 6712,3237
-unbequemes Passieren (Bordsteine, starker Verkehr, kaum L¸cken)	3nocross::ignrte 15383,9191 15403,9158 15442,9095
+unbequemes Passieren (Bordsteine, starker Verkehr, kaum L¸cken)	3nocross::ignrte 15383,9191 15407,9151 15442,9095
+Alt-Treptow -> Treptower Park: unbequemes Passieren (Bordsteine, starker Verkehr, kaum L¸cken)	3::igndisp 15442,9095 15407,9151 15359,9131
+Treptower Park -> Alt-Treptow: unbequemes Passieren (Bordsteine, starker Verkehr, kaum L¸cken)	3::igndisp 15359,9131 15407,9151 15383,9191
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
@@ -2897,15 +2899,15 @@ Dr‰ngelgitter	BNP:3:0:trailer=10 3783,-2079
 Dr‰ngelgitter	BNP:3:50:trailer=10 21618,5699
 Dr‰ngelgitter	BNP:3:85:trailer=10 22070,5876
 Dr‰ngelgitter	BNP:3:78:trailer=10 22097,5879
+Friedenshorster Str.: Einbahnstraﬂe wegen Bauarbeiten	1s:inwork 18296,10027 18312,9985 18301,9946
+Friedenshorster Str.: Einbahnstraﬂe wegen Bauarbeiten	1s:inwork 18301,9946 18266,9853
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
 (Wadzeckstr. - Mollstr.)	2::inwork 11326,13196 11409,13327
 Planstraﬂe C: gesperrt, Privatstraﬂe	2 12926,11224 12848,11093
-Wartenbergstr.	1s:inwork 15423,11667 15337,11639 15328,11636 15300,11584
 Im Lichtenhain: neue Straﬂe, zurzeit Bauarbeiten; Qualit‰t, genaue Lage?	2::inwork 16497,10685 16462,10571
 Lichtburgring: Baustelle, Betreten verboten	2::inwork 10004,15636 9933,15815
 B‰rbel-Bohley-Ring: Baustelle, Betreten verboten	2::inwork 9933,15815 9744,15793
 Zufahrt Parkhaus: Abrissarbeiten, Straﬂe komplett gesperrt	2::inwork 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
-Am Herzbergteich: noch wegen Bauarbeiten gesperrt; wann ist die Straﬂe fertig?	2::inwork 17945,13493 17942,13568
 Merlitzstr.: Bauarbeiten, Straﬂe komplett gesperrt	2::inwork 19661,3421 19524,3286
 Mauerstr.: Bauarbeiten, Einbahnstraﬂe	1s:inwork 9108,11961 9138,11872
 (entlang der Erpe): Bauarbeiten der DB	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914

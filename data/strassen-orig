@@ -448,7 +448,7 @@ An den Treptowers	HH 14289,9870 14405,10027
 Elsenbrücke	HH 14405,10027 14501,10169 14558,10264
 Am Treptower Park	H 13795,9941 13865,9866 14089,9610
 Am Treptower Park	HH 14089,9610 14185,9509 14242,9448 14382,9299 14443,9233 14475,9199 14558,9111 14614,9052 14745,8912 14842,8809 14852,8799 14934,8717 15002,8651 15070,8584 15079,8575 15166,8489
-Alt-Treptow	HH 15383,9191 15403,9158 15442,9095 15452,9079 15591,8848
+Alt-Treptow	HH 15383,9191 15407,9151 15442,9095 15452,9079 15591,8848
 Bulgarische Str.	HH 15166,8489 15378,8668 15558,8820 15591,8848
 Bulgarische Str.	N 15591,8848 15680,8914 15778,8990
 Puschkinallee	H 13535,10184 13579,10146 13711,10022 13782,9954 13795,9941 13890,9894 13999,9842 14196,9749
@@ -457,8 +457,8 @@ Puschkinallee	HH 14196,9749 14271,9712 14318,9688 14495,9609 14556,9581 14809,94
 (Treptower Park)	NN 14475,9199 14531,9244 14655,9311 14673,9353 14669,9389 14635,9441
 (Treptower Park: am Rosengarten)	NN 14809,9466 14837,9517 14867,9573 14909,9649
 (Treptower Park: südl./westl. des Karpfenteichs)	NN 15378,8668 15335,8714 15254,8735 15036,8728 14949,8773 14918,8813 14854,8964
-(Treptower Park: um das Sowjetische Ehrenmal herum)	NN 14614,9052 14854,8964 15057,8910 15110,8912 15159,8934 15181,8967 15187,9038 15154,9106 15025,9171 14955,9294 14898,9364 14879,9433
-(Treptower Park)	NN 15187,9038 15217,9137
+(Treptower Park: um das Sowjetische Ehrenmal herum)	NN 14614,9052 14854,8964 15057,8910 15110,8912 15159,8934 15181,8967 15190,9027 15154,9106 15025,9171 14955,9294 14898,9364 14888,9385 14879,9433
+(Treptower Park)	NN 15190,9027 15214,9090 15185,9189
 (Treptower Park: östl. des Karpfenteichs)	NN 15335,8714 15298,8781 15235,8841 15223,8893 15159,8934
 (Treptower Park)	NN 14318,9688 14316,9542 14347,9452 14398,9373 14485,9271 14531,9244
 (Treptower Park)	NN 14242,9448 14316,9542 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14719,9419 14789,9401
@@ -467,6 +467,7 @@ Puschkinallee	HH 14196,9749 14271,9712 14318,9688 14495,9609 14556,9581 14809,94
 (Treptower Park: zur Karpfenteichstr.)	NN 14852,8799 14883,8823 14918,8813
 (Treptower Park - Moosdorfstr.)	NN 14398,9373 14382,9299
 (Treptower Park)	NN 15181,8967 15245,8916
+(Treptower Park)	NN 14888,9385 15019,9330 15185,9189 15275,9140 15359,9131 15407,9151
 (Wasserweg - Treptower Park)	NN 15680,8914 15617,8924
 (Neue Krugallee/Bulgarische Str. - Karpfenteich)	NN 15558,8820 15439,8839 15297,8921 15245,8916 15223,8893
 # REMOVED (vermutlich nicht) --- #: XXX wird dieser Teil des Parkwegs auch unbenannt? vvv --- #: osm_watch: way id="150810051" version="9" --- #: last_checked: 2016-10-10 vvv --- #: check_frequency: 60d vvv
@@ -2568,7 +2569,7 @@ Herzbergstr. [Wohngebiet]	N 15851,13511 15896,13512
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5116&options=4 (Forderung eines Lückenschlusses, auch zur Siegfriedstr. -> wird aber erst einmal nicht realisiert)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6766
 #: XXX hier sind Bauarbeiten zugange, teilweise existieren schon neue Verbundsteinpflasterwege
-#: last_checked: 2017-09-23
+#: last_checked: 2018-01-06
 (Landschaftspark Herzberge - Arendsweg/Zufahrt IKEA)	NN 17266,14144 17287,14152 17323,14154 17330,14163
 (Landschaftspark Herzberge, Weg am ehemaligen Zeltlager)	NN 17187,13609 17185,13765 17204,13800 17209,13856 17178,13896 17190,13903 17213,13931 17210,14054 17164,14067 17152,14084
 (Siegfriedstr. [Autowaschcenter] - Landschaftspark Herzberge)	NN 17110,14187 17224,14151 17236,14140
@@ -5295,7 +5296,7 @@ Cajamarcaplatz	NN 17728,5756 17713,5728 17730,5698 17782,5698
 #: next_check_id: STERNDAMM-2014
 #: XXX bleibt dieser Zugang auch nach den Bauarbeiten bestehen?
 #: osm_watch: way id="226163591" version="2"
-#: last_checked: 2017-05-21
+#: last_checked: 2018-01-06
 #: check_frequency: 180d
 (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle)	NN 17639,5612 17675,5521
 (Friedrich-List-Str. - KGA An der Südostallee)	NN 17459,5634 17480,5666
@@ -5660,7 +5661,7 @@ Helene-Weigel-Platz [zum Springpfuhlpark]	NN 19602,13575 19593,13702 19573,13742
 (Springpfuhlpark)	NN 19570,13833 19567,13858 19565,13893 19547,14042 19544,14234 19545,14290 19535,14448 19534,14459 19524,14474
 (Springpfuhlpark/Poelchaustr. - Landsberger Allee)	NN 19524,14474 19519,14559 19523,14644 19539,14749 19595,14881 19631,14926 19703,15043 19740,15086 19811,15126 19870,15172 20245,15394 20260,15434
 #: note: Privatstraße
-Am Herzbergteich	N 17945,13493 17942,13568
+Am Herzbergteich	N 17945,13493 17941,13564 17877,13562
 Allee der Kosmonauten	N 17698,13124 17698,13134 17689,13405 17688,13430 17778,13438 17779,13457 17945,13493 18008,13507 18094,13505 18149,13505 18226,13506
 Allee der Kosmonauten	H 18226,13506 18382,13492 18590,13480 18652,13476 18783,13469 18875,13467 18946,13472 19181,13485 19360,13499 19415,13503 19503,13509 19628,13517 19726,13524 19807,13529 19837,13531 19899,13534 20073,13535 20150,13562 20193,13621 20207,13778 20235,14017 20249,14143 20262,14255 20281,14361 20318,14402 20367,14429 20474,14442 20611,14445 20657,14446 20727,14467 20756,14486 20822,14594 20868,14698 20944,14840 20980,14914 21018,14991 21099,15158 21163,15289 21187,15350 21228,15449 21242,15529 21241,15573 21239,15633
 Allee der Kosmonauten [Wohngebiet]	N 21058,15313 21064,15174 21057,15145 21035,15131 20978,15129 20980,15013 20947,14996 20914,14995 20895,14995 20894,15045
@@ -6026,16 +6027,17 @@ Lehndorffstr.	N 18401,8636 18397,8611 18407,8592 18428,8588 18448,8602
 Lehndorffstr.	N 18407,8592 18322,8470 18221,8328 18215,8316 18269,8161 18333,8059 18412,7985
 Edisonstr.	H 18010,7133 17934,7029 17919,6978 17919,6968 17962,6674 17991,6431 17952,6246 17930,6175
 Wasserstr. (Niederschöneweide)	N 17483,6024 17681,6212
-Uferstr. (Niederschöneweide)	N 17681,6212 17843,6083
+Uferstr. (Niederschöneweide)	N 17681,6212 17847,6089
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788
 #: XXX ist das die vorgeschlagene "Else-Schierhorn-Str."? vvv
 #: last_checked: 2017-11-05 vvv
 #: check_frequency: 90d vvv
 (Schnellerstr. - Uferstr.)	NN 17628,5865 17678,5916
-(Schnellerstr. - Uferstr.)	N 17678,5916 17843,6083
+(Schnellerstr. - Uferstr.)	N 17678,5916 17847,6089
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
+(Uferstr. - Brückenstr.)	NN 17847,6089 17900,6072
 Brückenstr. (Niederschöneweide)	H 17930,6175 17900,6072 17728,5756
 An der Wuhlheide	H 18010,7133 18225,7004 18404,6946 18492,6893 18771,6699 18948,6578 19245,6379 19276,6359 19405,6276 19578,6165 19594,6155 19759,6049 19958,5950 20057,5923 20173,5892 20352,5877 20428,5841 20536,5789 20755,5750 20880,5736 21002,5755 21303,5826 21365,5832 21470,5809 21522,5771 21569,5730
 (An der Wuhlheide - Uferweg)	NN 21002,5755 21054,5666 21059,5596 21002,5594
@@ -6099,15 +6101,12 @@ Verlängerte Waldowallee	H 19468,8168 19558,8064 19666,7988 19843,7866 19927,7813
 #: oldname: -20110329: Köpenicker Allee
 Rudolf-Rühl-Allee	H 21303,5826 21239,6063 20722,6971 20640,7122 20603,7189 20653,7289 20616,7292 20510,7325 20393,7404 20340,7468 20323,7529 20307,7689 20280,7749
 Köpenicker Allee	NN 20280,7749 20226,7846
-Köpenicker Allee	N 20226,7846 20096,8077 19990,8253 19898,8410 19819,8554 19699,8773 19610,8933 19575,8978 19500,9043 19392,9116 19267,9201 19206,9243 19195,9249 19109,9306 19020,9364 18939,9417
-#: XXX neuer Straßenname: "Am alten Flugplatz", evtl. nur im Bereich der neuen Gartenstadt
-#: XXX fehlt in Berlin.coords.data
-#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6985
-#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_31_3489_3616_online.pdf (Benennung)
-#: osm_watch: way id="24845022" version="16"
-#: last_checked: 2017-11-05
-#: check_frequency: 45d
-Straße am Heizhaus	N 19699,8773 19755,8806 19816,8842 19891,8887 19949,8920 19972,8935 19984,8944 20059,8951 20150,8962 20220,8976
+Köpenicker Allee	N 20226,7846 20096,8077 19990,8253 19898,8410 19813,8564 19697,8776 19610,8933 19575,8978 19500,9043 19392,9116 19267,9201 19206,9243 19195,9249 19109,9306 19020,9364 18939,9417
+# REMOVED --- #: XXX neuer Straßenname: "Am alten Flugplatz", evtl. nur im Bereich der neuen Gartenstadt --- #: XXX fehlt in Berlin.coords.data --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6985 --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_31_3489_3616_online.pdf (Benennung) --- #: osm_watch: way id="24845022" version="16" --- #: last_checked: 2017-11-05 --- #: check_frequency: 45d
+#: oldname: -201801: Straße am Heizhaus
+#: ignore_oldname_file: yes
+Am alten Flugplatz	N 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935
+Straße am Heizhaus	N 19972,8935 19984,8944 20059,8951 20150,8962 20220,8976
 #: note: Tempo-10-Zone vvv
 Wiesengrundstr. (Karlshorst)	N 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410 19964,8447 20046,8448 20129,8444 20174,8443 20187,8442 20224,8441 20293,8440
 Agavensteig (Karlshorst)	N 19550,8230 19723,8068 19746,8042 19892,7917 20031,7794
@@ -6143,7 +6142,9 @@ Wiesengrund Straße 2 (Karlshorst)	N 19909,8242 19832,8378 19781,8460 19737,8491
 Wiesengrund Straße 3 (Karlshorst)	N 19845,8242 19782,8354 19719,8458
 Wiesengrund Straße 4 (Karlshorst)	N 19794,8240 19740,8332 19684,8434
 Wiesengrund Straße 5 (Karlshorst)	N 19639,8278 19734,8182
-Hochwaldstr. (Karlshorst)	N 19713,8319 19650,8370 19551,8385 19451,8385 19449,8455 19526,8458 19544,8421 19577,8438 19684,8434
+Hochwaldstr. (Karlshorst)	N 19713,8319 19650,8370 19551,8385 19451,8385 19449,8455 19526,8458
+Hochwaldstr. (Karlshorst)	NN 19526,8458 19544,8421 19577,8438
+Hochwaldstr. (Karlshorst)	N 19577,8438 19684,8434
 An der Eiche (Karlshorst)	N 19952,8174 19914,8150
 Hasensprung (Karlshorst)	N 20055,7985 20032,7993 19980,8041 19851,8153 19780,8230
 Birkenknick	N 20035,7866 19922,7960 19779,8088
@@ -13757,7 +13758,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036637679537/637679537/00220602/02-Anlagen/01/1_Version_vom_03_07_2017.pdf (zweite Karte!)
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
-#: last_checked: 2017-12-03
+#: last_checked: 2018-01-06
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Am Kraatzgraben)	NN 16835,10052 16666,10219 16544,10337 16488,10381
@@ -14120,7 +14121,7 @@ Baikalstr.	N 17210,10350 17255,10510 17281,10598
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036637679537/637679537/00220602/02-Anlagen/01/1_Version_vom_03_07_2017.pdf (zweite Karte!)
 #: XXX Benennung zu "Am Kraatz-Tränke-Graben" geplant (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
-#: last_checked: 2017-12-03
+#: last_checked: 2018-01-06
 (entlang des Tränkegrabens)	NN 16900,9861 17041,9985 17078,10038 17138,10109 17154,10158
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -17887,7 +17888,8 @@ Stuckstr.	N 14439,8987 14525,8894 14615,8799
 Heidenelkenweg	N 16112,12622 16111,12685 16095,12685 16073,12685 16071,12623
 Heidenelkenweg	N 16095,12685 16098,12743
 Freesienweg	N 16000,12625 15997,12743
-Gotlindestr.	N 15947,12626 16000,12625 16071,12623 16112,12622 16132,12621 16284,12616 16409,12612 16576,12612 16720,12614 16859,12613 16957,12599 17088,12617 17234,12607 17301,12585 17357,12566
+Gotlindestr.	N 15947,12626 16000,12625 16071,12623 16112,12622 16132,12621 16284,12616 16409,12612 16470,12612 16576,12612 16720,12614 16859,12613 16957,12599 17088,12617 17234,12607 17301,12585 17357,12566
+Gotlindestr. [Wohngebietsstraße]	N 16470,12612 16471,12657 16473,12707 16515,12711 16517,12665 16471,12657
 #: note: Nibelungenpark vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6225&options=4 (Name des Wohngebietsparks)
 #: note: Privatstraße vvv
