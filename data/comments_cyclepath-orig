@@ -121,7 +121,7 @@ asphaltiert	RW;RW -4642,25672 -4929,25719 -5890,25875 -6593,25703 -6943,25831
 	RW7;RW7 -6943,25831 -7187,25859 -7225,25509 -7260,25515
 #: by: mapillary
 #: XXX Radweg in Bau
-#: last_checked: 2017-10-25
+#: last_checked: 2018-01-08 (mapillary)
 asphaltiert	RW0;RW0 -7603,24696 -7533,24138 -7599,23946 -7734,23796 -8399,23212
 #: by: mapillary (Benutzungspflicht, Qualität)
 asphaltiert	RW8;RW2 -8399,23212 -8630,23022 -8750,22965 -8828,22886 -8988,22668 -9046,22376
@@ -1077,7 +1077,12 @@ asphaltierter Gehweg	RW1;RW9 11338,-3945 11671,-3400
 	RW2;RW -3475,26523 -3700,26625
 	RW;RW -3700,26625 -4048,26914 -4293,27146
 #: XXX hier wahrscheinlich ein Zweirichtungsradweg
-	RW;RW -4293,27146 -4750,27667 -5182,27964 -5874,28179 -6231,28450 -6646,28977 -7125,29575 -7143,29737 -7517,29815
+	RW;RW -4293,27146 -4750,27667 -5182,27964 -5874,28179 -6231,28450 -6646,28977
+#: by: mapillary vvv
+	RW8;RW2 -6646,28977 -6832,29230
+	RW;RW2 -6832,29230 -6989,29419
+#: by ^^^
+# REMOVED (hier wohl kein Radweg) --- RW;RW -6989,29419 -7125,29575 -7143,29737 -7517,29815
 #: by ^^^
 #: by: Jörg (sirisko)
 #: note: "in den Kreisverkehren allerdings recht weit von der Kreisfahrbahn abgesetzt (Aufpassen: Vorrang wird von Kraftfahrern oft nicht erkannt)"
@@ -1145,3 +1150,5 @@ Gehweg für Radfahrer frei	RW1; 8303,28478 8337,28834
 Gehweg für Radfahrer frei	RW1; -10024,18376 -10088,17984 -10163,17584
 #: by: mapillary
 Gehweg für Radfahrer frei	RW1;RW9 -10024,18376 -10000,18629
+#: by: mapillary
+vermutlich asphaltiert	RW8;RW2 -8368,29915 -8606,30137 -9689,31543

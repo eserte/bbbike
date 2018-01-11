@@ -1841,6 +1841,7 @@ Blankenfelder Chaussee: Mittelstreifen	3nocross 9528,23240 9747,22694 9973,22133
 Attilastr.: Geländer am Gehweg	3nocross 7628,4521 7667,4549 7690,4563
 Paul-Schneider-Str.: unbequemes Überqueren	3nocross 6613,3320 6647,3292 6712,3237
 Puschkinallee: unbequemes Passieren (Bordsteine, starker Verkehr, kaum Lücken)	3nocross 15383,9191 15407,9151 15442,9095
+Puschkinallee: unbequemes Passieren (starker Verkehr, kaum Lücken)	3nocross 14495,9609 14556,9581 14809,9466
 # REMOVED (leicht überquerbar) --- #: XXX Mittelstreifen vielleicht leicht überquerbar, prüfen! --- Straße des 17. Juni: Mittelstreifen	3nocross 8303,12216 8344,12221 8538,12245
 abgeschlossenes Tor	3 * 8237,20098 *
 abgeschlossenes Tor	3 * 8291,20112 *
@@ -2806,6 +2807,12 @@ Drängelgitter	BNP:3::trailer=10 22097,5879
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: osm
+#: by: https://www.potsdam.de/sites/default/files/documents/17554_amtsblatt_de2017_nr13_dsjs_korr2.pdf (Einziehung von Straßenland)
+#: osm_watch: way id="534669300" version="1" brb
+#: next_check: 2018-06-01
+Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12677,-1536 -12685,-1449
+# 
 #: last_checked: 2018-01-06 vvv
 Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:q2:inwork 18296,10027 18312,9985 18301,9946
 Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 18301,9946 18266,9853
@@ -2890,7 +2897,8 @@ Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9108,11961 9138,11872
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.633456.php (Öffnung für Fußgänger)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8329
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8383
-#: last_checked: 2017-12-08
+#: last_checked: 2018-01-09
+#: check_frequency: 45d
 #: valid: 20170801-20190228
 #: priority: #A
 Rigaer Str.: Komplettsperrung zwischen Schreinerstr. und Voigtstr.	2::inwork 14538,12371 14748,12314
@@ -3234,11 +3242,11 @@ Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,689
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 09.01.2018
 #: last_checked: 2018-01-04 vvv
-#: check_frequency: 90d vvv
+#: next_check: 2018-06-28 vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
 # REMOVED --- Niederlagstr. - Unter den Linden: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9943,12364 9934,12420 9984,12426
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: XXX_prog ^^^
 # 

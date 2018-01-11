@@ -2217,6 +2217,7 @@ Schulstr. -> Paul-Schneider-Str.: unbequemes Überqueren	3::igndisp 6653,3297 664
 unbequemes Passieren (Bordsteine, starker Verkehr, kaum Lücken)	3nocross::ignrte 15383,9191 15407,9151 15442,9095
 Alt-Treptow -> Treptower Park: unbequemes Passieren (Bordsteine, starker Verkehr, kaum Lücken)	3::igndisp 15442,9095 15407,9151 15359,9131
 Treptower Park -> Alt-Treptow: unbequemes Passieren (Bordsteine, starker Verkehr, kaum Lücken)	3::igndisp 15359,9131 15407,9151 15383,9191
+unbequemes Passieren (starker Verkehr, kaum Lücken)	3nocross::ignrte 14495,9609 14556,9581 14809,9466
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
 abgeschlossenes Tor	3 8288,20128 8291,20112 8315,19993
@@ -2899,6 +2900,7 @@ Drängelgitter	BNP:3:0:trailer=10 3783,-2079
 Drängelgitter	BNP:3:50:trailer=10 21618,5699
 Drängelgitter	BNP:3:85:trailer=10 22070,5876
 Drängelgitter	BNP:3:78:trailer=10 22097,5879
+Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12677,-1536 -12685,-1449
 Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:inwork 18296,10027 18312,9985 18301,9946
 Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:inwork 18301,9946 18266,9853
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987

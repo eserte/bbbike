@@ -23,7 +23,6 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9883,12251 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q4::inwork 10601,12521 10704,12595
-Mariannenplatz: Bauarbeiten, Fahrbahn gesperrt, Bordsteine	q4::inwork 11781,10696 11824,10708
 Mariannenplatz: Bauarbeiten, Fahrbahn an der Waldemarstr. gesperrt	q2::inwork 11839,10736 11897,10887
 Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q2::inwork; 9022,10857 8941,10663 8926,10626
 Englische Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,12159
@@ -53,7 +52,7 @@ Blücherplatz: reger Fußgängerverkehr	q3 9579,10122 9599,10175
 Blücherplatz: Fußgängerverkehr	q3 9599,10175 9631,10142
 Hallesches Tor: reger Fußgängerverkehr	q3; 9599,10175 9593,10238
 Hallesches Tor: reger Fußgängerverkehr	q3 9593,10238 9592,10263
-Mehringplatz: Fußgänger und Radfahrer teilen sich den Weg	q1 9592,10263 9547,10278 9517,10332 9527,10389 9587,10421 9646,10404 9675,10351 9668,10306 9646,10279 9606,10263 9592,10263
+Mehringplatz: Fußgänger und Radfahrer teilen sich den Weg	q1 9592,10263 9547,10278 9535,10299 9517,10332 9527,10389 9587,10421 9646,10404 9675,10351 9668,10306 9646,10279 9606,10263 9592,10263
 Friedrichstr. (am Mehringplatz): Fußgänger und Radfahrer teilen sich den Weg	q1 9587,10421 9570,10566
 Gorkistr.: reger Fußgängerverkehr (Fußgängerzone)	q3 2044,20289 2116,20314 2295,20358
 Alt-Tegel: reger Fußgängerverkehr (Fußgängerzone)	q4 1907,20265 2015,20336
@@ -1449,7 +1448,7 @@ Parkplatz Einkaufszentrum: Parkplatzverkehr	q2 -2195,3564 -2173,3513 -2164,3488
 (Wollankstr. - Pankeweg): Fußgänger, Bordstein	q2 9228,17274 9073,17361
 (am Kaiser's): Fußgänger	q2 15714,11941 15710,11857
 Große Präsidentenstr.: wartende Straßenbahnen	q2 10220,13098 10105,13004
-Wilhelmine-Gemberg-Weg: einige Fußgänger	q1 11767,11662 11829,11727
+Wilhelmine-Gemberg-Weg: einige Fußgänger	q1 11767,11662 11821,11733
 (Zufahrt Debis-Parkhaus): Parkhausverkehr, einige Kurven	q1 8430,10710 8424,10703 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
 Iranische Str.: einige Fußgänger	q1 7843,16524 7713,16557 7447,16613
 (Nennhauser Damm - Am alten Gaswerk): einige Fußgänger	q1 -8043,13464 -8136,13542
@@ -1680,6 +1679,7 @@ Hansa-Ufer: einige Fußgänger	q1 5657,12339 5740,12419
 Ackerstr.: Fußgänger, Bordsteine	q3 8701,14932 8741,14928
 (zum Mauerpark, temporäre Umgehung): Fußgänger	q2 10302,14964 10279,15033 10301,15084 10319,15090
 Steinrückweg: möglicher Bordstein	q1 4257,6856 4293,6719
+(Mehringbrücke - Mehringplatz): einige Fußgänger	q1 9404,10250 9535,10299
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schulhof, Radfahren verboten	q3 7242,8586 7288,8635

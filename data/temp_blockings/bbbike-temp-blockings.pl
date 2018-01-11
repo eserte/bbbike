@@ -1803,9 +1803,9 @@ EOF
 	2 22507,-89430 22558,-89699
 EOF
      },
-     { from  => 1112072400, # 2005-03-29 07:00
-       until => 1112810400, # 2005-04-06 20:00
-       text  => 'die Fähre Ketzin ist vom 30.03.05 07.00 Uhr bis 06.04.2005 20.00 Uhr aufgrund Bauarbeiten gesperrt',
+     { from  => undef, # 1112072400, # 2005-03-29 07:00
+       until => $isodate2epoch->("2018-01-15 12:00:00"), # 1112810400, # 2005-04-06 20:00
+       text  => 'die Fähre Ketzin ist wegen eines technischen Defekts bis zum 15. Januar 2018, 12 Uhr, außer Betrieb',
        type  => 'gesperrt',
        data  => <<EOF,
 	2 -26784,5756 -26840,5684
@@ -18384,7 +18384,7 @@ EOF
        text  => 'Einbahnstraßenregelung in der Wasserwerkstr., Richtung Pionierstraße offen, vom 09.08.2010 bis zum 09.09.2010 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; -5806,16403 -5830,16356 -5849,16199 -5875,15994 -5911,15877
+	q4::inwork; -5804,16415 -5830,16356 -5849,16199 -5875,15994 -5911,15877
 EOF
      },
      { from  => 1280613600, # 2010-08-01 00:00
@@ -18647,7 +18647,7 @@ EOF
        text  => 'Einbahnstraßenregelung in der Wasserwerkstr. vom 11.10.2010 bis zum 22.10.2010 zwischen Pfefferweg und Pionierstraße.',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; -5806,16403 -5830,16356 -5849,16199
+	q4::inwork; -5804,16415 -5830,16356 -5849,16199
 EOF
      },
      { from  => 1287957600, # 2010-10-25 00:00
@@ -18855,7 +18855,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016640',
        data  => <<EOF,
-	q4::inwork -5806,16403 -5830,16356 -5849,16199 -5875,15994 -5911,15877
+	q4::inwork -5804,16415 -5830,16356 -5849,16199 -5875,15994 -5911,15877
 EOF
      },
      { from  => 1301342279, # 2011-03-28 21:57
@@ -25976,17 +25976,17 @@ EOF
      },
      { from  => 1491498639, # 2017-04-06 19:10
        until => undef, # was: 1496268000, # 2017-06-01 00:00
-       text  => 'Innstr.: Bauarbeiten, Einbahnstraßenregelung',
+       text  => 'Innstr.: Bauarbeiten, Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober; laut Pressemitteilung bis Ende 2017
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
-#: last_checked: 2017-12-04 vvv
+#: last_checked: 2018-01-08 vvv
 # REMOVED (weitgehend fertig) ---	q3::inwork 13384,8354 13217,8493
 # REMOVED	q3::inwork; 13217,8493 13262,8554
 # REMOVED	q3::inwork; 13262,8554 13301,8606 13314,8624
 # REMOVED	q4::inwork 13366,8694 13314,8624
-	q3::inwork 13262,8554 13301,8606
+	q4::inwork 13301,8606 13314,8624 13366,8694
 #: last_checked ^^^
 EOF
      },
@@ -26144,7 +26144,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-01-06
+#: last_checked: 2018-01-11
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907

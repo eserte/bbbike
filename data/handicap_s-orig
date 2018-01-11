@@ -21,10 +21,10 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-01-06
+#: last_checked: 2018-01-09
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
-#: last_checked: 2018-01-06
+#: last_checked: 2018-01-09
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
@@ -33,7 +33,7 @@ Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::i
 #: check_frequency: 90d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
-#: last_checked: 2018-01-05
+#: last_checked: 2018-01-11
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 # REMOVED --- #: by: fritz --- #: last_checked: 2017-09-28 --- #: check_frequency: 10d --- # REMOVED --- #: valid: -20170927 --- Krautstr.: Fahrbahn abschnittsweise gesperrt, Ausweichen auf Gehweg notwendig	q3::inwork 11966,11832 11993,11978
@@ -222,7 +222,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
 #: last_checked: 2018-01-04
-#: check_frequency: 90d
+#: next_check: 2018-06-28
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # 
 #: next_check_id: STAATSOPER-2014 vvv
@@ -273,16 +273,14 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q4::inwork 10601,12521
 # 
 ### Kreuzberg ###
 # 
-#: source_id: LMS-BR_r_LMS-BR_106653_LMS-BR_72
-#: source_id: LMS-BR_r_LMS-BR_119822_LMS-BR_72
-#: last_checked: 2017-11-28 vvv
-Mariannenplatz: Bauarbeiten, Fahrbahn gesperrt, Bordsteine	q4::inwork 11781,10696 11824,10708
+# REMOVED --- #: source_id: LMS-BR_r_LMS-BR_106653_LMS-BR_72 --- #: source_id: LMS-BR_r_LMS-BR_119822_LMS-BR_72 --- #: last_checked: 2017-11-28 vvv --- Mariannenplatz: Bauarbeiten, Fahrbahn gesperrt, Bordsteine	q4::inwork 11781,10696 11824,10708
+# 
 #: source_id: 2147342161
 #: source_id: LMS-BR_r_LMS-BR_119821_LMS-BR_72
 #: XXX Ende-Datum laut fritz
+#: last_checked: 2018-01-09
 #: next_check: 2018-01-31
 Mariannenplatz: Bauarbeiten, Fahrbahn an der Waldemarstr. gesperrt	q2::inwork 11839,10736 11897,10887
-#: last_checked ^^^
 # 
 # REMOVED (bis auf ein kleines Stück am Kottbusser Damm fertig) --- #: XXX laut fritz bis 30.11.2017 --- #: XXX ändert sich an der Fahrbahnbeschaffenheit etwas? --- #: source_id: LMS-BR_r_LMS-BR_110600_LMS-BR_72 --- #: last_checked: 2017-11-30 vvv --- #: check_frequency: 7d vvv --- # REMOVED --- Böckhstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11673,9720 11640,9710 --- Böckhstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 11640,9710 11411,9810
 # REMOVED (man kommt mittlerweile durch) --- #: source_id: 2147341140 --- #: XXX laut fritz bis 31.10.2017, laut vmz bis Ende Oktober 2017 --- #: last_checked: 2017-07-31 --- #: next_check: 2017-10-31 --- #: valid: -20171031 --- Erkelenzdamm: Bauarbeiten zwischen Böcklerstr. und Kohlfurter Str., Fahrbahn gesperrt, Bordsteine	q3::inwork 10967,10092 11038,10247 11094,10261
@@ -494,7 +492,7 @@ Blücherplatz: Fußgängerverkehr	q3 9599,10175 9631,10142
 #: note: in Südrichtung Bushaltestelle benutzen:
 Hallesches Tor: reger Fußgängerverkehr	q3; 9599,10175 9593,10238
 Hallesches Tor: reger Fußgängerverkehr	q3 9593,10238 9592,10263
-Mehringplatz: Fußgänger und Radfahrer teilen sich den Weg	q1 9592,10263 9547,10278 9517,10332 9527,10389 9587,10421 9646,10404 9675,10351 9668,10306 9646,10279 9606,10263 9592,10263
+Mehringplatz: Fußgänger und Radfahrer teilen sich den Weg	q1 9592,10263 9547,10278 9535,10299 9517,10332 9527,10389 9587,10421 9646,10404 9675,10351 9668,10306 9646,10279 9606,10263 9592,10263
 Friedrichstr. (am Mehringplatz): Fußgänger und Radfahrer teilen sich den Weg	q1 9587,10421 9570,10566
 Gorkistr.: reger Fußgängerverkehr (Fußgängerzone)	q3 2044,20289 2116,20314 2295,20358
 #: by: Thomas Heuving:
@@ -2287,7 +2285,7 @@ Parkplatz Einkaufszentrum: Parkplatzverkehr	q2 -2195,3564 -2173,3513 -2164,3488
 (am Kaiser's): Fußgänger	q2 15714,11941 15710,11857
 #: note: q2, falls alle vier Gleise mit Straßenbahnen belegt sind, aber manchmal sind es nur zwei oder so, und man kommt viel besser durch
 Große Präsidentenstr.: wartende Straßenbahnen	q2 10220,13098 10105,13004
-Wilhelmine-Gemberg-Weg: einige Fußgänger	q1 11767,11662 11829,11727
+Wilhelmine-Gemberg-Weg: einige Fußgänger	q1 11767,11662 11821,11733
 (Zufahrt Debis-Parkhaus): Parkhausverkehr, einige Kurven	q1 8430,10710 8424,10703 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
 Iranische Str.: einige Fußgänger	q1 7843,16524 7713,16557 7447,16613
 (Nennhauser Damm - Am alten Gaswerk): einige Fußgänger	q1 -8043,13464 -8136,13542
@@ -2574,6 +2572,7 @@ Ackerstr.: Fußgänger, Bordsteine	q3 8701,14932 8741,14928
 (zum Mauerpark, temporäre Umgehung): Fußgänger	q2 10302,14964 10279,15033 10301,15084 10319,15090
 #: XXX_prog BS am nördlichen Ende, und nur wenn die Kette gespannt ist, ansonsten kein Handicap
 Steinrückweg: möglicher Bordstein	q1 4257,6856 4293,6719
+(Mehringbrücke - Mehringplatz): einige Fußgänger	q1 9404,10250 9535,10299
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
