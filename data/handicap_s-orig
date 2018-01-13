@@ -21,10 +21,10 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-01-09
+#: last_checked: 2018-01-12
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
-#: last_checked: 2018-01-09
+#: last_checked: 2018-01-12
 Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
@@ -330,6 +330,7 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 # 
 #: next_check_id: ENGLISCHESTR-2017
 #: osm_watch: way id="503096340" version="2"
+#: XXX laut fritz bis 2019-04-30
 #: last_checked: 2017-10-08
 #: check_frequency: 120d
 Englische Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,12159
