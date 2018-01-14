@@ -805,11 +805,11 @@ Landjägerstr.: Asphalt	Q0 22495,4523 22458,4565
 Alter Markt: Kopfsteinpflaster	Q2 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702
 Lüdersstr.: Kopfsteinpflaster	Q2 22390,4702 22388,4737 22377,4836
 Freiheit: Kopfsteinpflaster	Q2 22377,4836 22196,4847
-Schwedter Str. (Mauerpark): Kopfsteinpflaster	Q2 10354,14987 10319,15090 10240,15318 10188,15474 10185,15487 10130,15647
+Schwedter Str. (Mauerpark): Kopfsteinpflaster	Q2 10354,14987 10319,15090 10240,15318 10188,15474 10185,15487 10130,15653
 Norwegerstr.: mäßiger Asphalt	Q1- 9959,16510 9975,16425
 Kolonnenweg: mäßiger Asphalt	Q1- 9959,16510 9955,16578
 Norwegerstr.: Asphalt	Q0 9975,16425 9996,16328 10022,16237
-Gleimtunnel: asphaltierte Streifen, innen Kopfsteinpflaster	Q0 10130,15647 10004,15636
+Gleimtunnel: asphaltierte Streifen, innen Kopfsteinpflaster	Q0 10130,15653 10004,15636
 Gleimstr: Asphalt	Q0 10004,15636 9907,15618 9732,15581
 Nordufer: Asphalt	Q0 5618,14981 5627,14963 5873,14847 5972,14820
 Seydlitzstr.: Kopfsteinpflaster	Q2 7655,13539 7426,13420 7332,13367 7287,13342 7263,13331 7131,13261
@@ -2015,7 +2015,7 @@ Grüntaler Str. - Esplanade: Asphalt	Q0 9778,16915 9846,16981 9880,16994 9980,169
 Kolonie: Gehwegplatten	Q1 10190,16930 10209,16674
 #: XXX Asphaltierung geplant
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.602784.php
-#: last_checked: 2017-11-17
+#: last_checked: 2018-01-14
 #: check_frequency: 60d
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 10997,16280 11295,16199 11404,16140 11542,16070
 Fritz-Riedel-Str.: Asphalt	Q0 13385,13992 13449,13892 13519,13785 13635,13605
@@ -4757,9 +4757,9 @@ Neuzeller Weg: Asphalt/Beton	Q1 16658,17142 16578,17285
 Drossener Str.: Asphalt/Beton	Q1+ 16915,17231 16709,17177 16658,17142 16471,17036 16402,16990 16381,16969
 Tamseler Str.: Asphalt	Q0- 16556,16673 16633,16687 16823,16730 17004,16778
 Gerzlower Str.: Asphalt	Q0- 16806,16496 16718,16545 16622,16569
-Degnerstr.: Asphalt mit einigen Aufpflasterungen	Q0- 16806,16496 16692,16253 16656,16157
+Degnerstr.: Asphalt mit einigen Aufpflasterungen	Q0- 16806,16496 16692,16253 16653,16150
 Straße 150: Asphalt	Q1 17569,15561 17640,15583 17707,15443 17706,15420
-Straße 155: Asphalt	Q0 17409,15454 17599,15435
+Straße 155: Asphalt	Q0 17405,15454 17599,15435
 Straße 155: Asphalt/Beton	Q1 17657,15427 17706,15420 17782,15389
 Straße 158: Asphalt	Q0- 17902,15039 17839,15173 17847,15197 17740,15254
 Treffurter Str.: Asphalt	Q0- 17902,15039 17958,14920 18007,14818 18067,14700 18119,14599
@@ -8071,11 +8071,8 @@ Rehsprung: fester Sandweg, teilweise mit Schotterstellen	Q2+ -3521,1681 -3300,16
 Rehsprung: fester Sandweg, Feinschotter	Q1- -3156,2134 -3177,2205 -3284,2323 -3290,2420
 Rykestr.: Kopfsteinpflaster	Q2 11374,14363 11380,14316
 Simmelstr.: Verbundsteinpflaster	Q1 7533,17673 7615,17684
-#: XXX Instandsetzung 2017, danach vermutlich Q0
-#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170120
-#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.640269.php (von Wendekehre bis Gedonstraße)
-#: next_check: 2017-11-17
-Simmelstr.: Asphalt	Q0- 7615,17684 7669,17691 7809,17708 7856,17714
+# REMOVED --- #: XXX Instandsetzung 2017, danach vermutlich Q0 --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170120 --- #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.640269.php (von Wendekehre bis Gedonstraße) --- #: next_check: 2017-11-17
+Simmelstr.: Asphalt	Q0 7615,17684 7669,17691 7809,17708 7856,17714
 Simmelstr.: Kopfsteinpflaster	Q2 7856,17714 7897,17720 7973,17732
 Werftendensteig: Asphalt	Q0 7659,17826 7669,17691
 Thaterstr.: schlechtes Kopfsteinpflaster	Q3 7432,17964 7183,17906
@@ -8667,7 +8664,7 @@ Frankfurter Allee [Wohngebiet]: Beton	Q0- 15836,11840 15856,11835 15871,11832 15
 Elsterwerdaer Platz: Gehwegplatten	Q0 20818,11293 20829,11275 20839,11300 21055,11284 21095,11315 21110,11326 21134,11331
 Haltoner Str.: Verbundsteinpflaster	Q1+ 20968,11203 21010,11223 21055,11284
 (Tränkegraben - Eggersdorfer Str./Rummelsburger Str.): Gehwegplatten	Q1+ 17261,10827 17226,10865
-Reinickendorfer Str.: Beton	Q0 8091,14895 8037,14958 7998,15068
+Reinickendorfer Str.: Beton	Q0 8091,14895 8037,14958 8015,15047 7998,15068
 (Parkplatz Residenzstr. - Kopenhagener Str.): Verbundsteinpflaster	Q1+ 7233,18562 7197,18639
 AEG-Siedlung Heimat: Asphalt	Q0 6361,22511 6301,22581
 AEG-Siedlung Heimat: Asphalt	Q0 6353,22622 6301,22581 6254,22546
@@ -9131,7 +9128,7 @@ Blockdammweg: Asphalt	Q0 17904,8924 17975,8971
 (Hansastr. - Gartenstr.): wassergebundene Decke	Q1 15102,16212 14810,16282 14665,16294
 (Hansastr. - Gartenstr.): wassergebundene Decke	Q1 14810,16282 14721,16360
 Hosemannstr. (Prenzlauer Berg) [Anliegerstraße zur Mandelstr.]: welliges Kleinsteinpflaster	Q2+ 12948,15771 12762,15882
-Parkstr.: Asphalt mit einigen Schäden	Q1+ 13788,16240 13972,16639
+Parkstr.: Asphalt mit einigen Schäden	Q1+ 13783,16237 13972,16639
 Prenzlauer Promenade: Beton	Q0- 11950,18529 11934,18576 11980,18900 11958,19158 11940,19380 11953,19541 11942,19567 11915,19580
 Prenzlauer Promenade: Beton	Q0- 11950,18529 11969,18552 11984,18650 12002,18768 12024,18913 11969,19360 11979,19403 11987,19457 12048,19485 12092,19465
 Prenzlauer Promenade: Beton	Q0- 11979,19403 11990,19325
@@ -10086,7 +10083,7 @@ Uferstr. (Niederschöneweide): Asphalt	Q0 17681,6212 17847,6089
 Waldkiefernring: Asphalt	Q0 21855,2392 21754,2329 21782,2283 21885,2343
 Fähenweg: Asphalt	Q0 21869,2367 21791,2323
 Sportpromenade: Asphalt mit einigen Schäden und Wurzelhebungen	Q1+ 25646,-209 25574,-38 25537,167 25461,254 25172,345 24827,354 24743,370 24666,436
-Mauerpark: Kleinsteinpflaster	Q1 10188,15474 10234,15490
+Mauerpark: Kleinsteinpflaster	Q1 10188,15474 10228,15488 10234,15490
 # REMOVED (nein, by mapillary) --- #: XXX hat sich mit der Neugestaltung etwas geändert? --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.635732.php
 Zeppelinplatz: Kleinsteinpflaster	Q1 6794,15553 6884,15456
 Beuth-Hochschule: Verbundsteinpflaster	Q1 6884,15456 6996,15319
@@ -10561,6 +10558,17 @@ Gotlindestr. [Wohngebietsstraße]: Verbundsteinpflaster	Q1+ 16470,12612 16471,126
 Gotlindestr. [Wohngebietsstraße]: unbefestigte Baustraße	Q2 16473,12707 16515,12711 16517,12665 16471,12657
 (Uferstr. - Brückenstr.): Asphalt	Q0 17847,6089 17900,6072
 (Mehringbrücke - Mehringplatz): Parkweg	Q1- 9404,10250 9535,10299
+Agnethaweg: Verbundsteinpflaster	Q1 17221,15181 17254,15183 17310,15186 17336,15187
+#: XXX hier wird vermutlich auch mal Verbundsteinpflaster liegen
+#: last_checked: 2018-01-14
+Anni-Frid-Weg: unbefestigte Baustraße	Q1 17227,15054 17262,15056 17317,15059 17345,15061
+Bennyweg: Verbundsteinpflaster	Q1 17254,15183 17262,15056
+Björnweg: Verbundsteinpflaster	Q1 17310,15186 17317,15059
+(Suermondtstr. - Konrad-Wolf-Str.): Beton	Q0- 16753,16111 16719,16005 16799,15974 16842,15932
+(Gleimstr. - Mauerpark): Parkweg	Q1- 10170,15659 10228,15488
+Lichtburgring: Asphalt	Q0 10004,15636 9933,15815
+Bärbel-Bohley-Ring: Asphalt	Q0 9933,15815 9917,15813 9744,15793
+Bärbel-Bohley-Ring: Betonpflaster	Q0- 9744,15793 9747,15847 9910,15876 9917,15813
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -10947,7 +10955,7 @@ Erlenstr.: mäßiges Kopfsteinpflaster	Q2 4802,4921 4878,4839 4951,4920
 Hellersdorfer Promenade: Verbundsteinpflaster	Q1+ 24131,15109 24112,15236 24094,15360 24076,15481
 Neudammer Str.: Asphalt	Q0 24385,9948 24672,9889
 Pistoriusplatz: guter Asphalt	Q0 13420,16235 13436,16239 13485,16362
-Pistoriusplatz: guter Asphalt	Q0 13479,16182 13544,16339
+Pistoriusplatz: guter Asphalt	Q0 13479,16182 13542,16337
 #: confirmed_by: srt
 Tabbertstr.: Asphalt	Q0 17352,7051 17258,6992 17359,6799 17418,6702 17528,6502
 #: confirmed_by: srt vvv
@@ -13140,7 +13148,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="6"
-#: last_checked: 2017-10-09
+#: last_checked: 2018-01-14
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -17016,7 +17024,7 @@ Teschendorfer Weg: guter Beton	Q0 7280,20895 7093,20874 6943,20862
 # 
 #: by: Lydia Moldenhauer:
 #: confirmed_by: srt
-Woelckpromenade: guter Asphalt	Q0 13632,16305 13726,16506 13710,16544 13756,16620 13848,16721
+Woelckpromenade: guter Asphalt	Q0 13630,16301 13726,16506 13710,16544 13756,16620 13848,16721
 # 
 #: by: Martina (flomo007...):
 #: corrected_by: srt (guter Asphalt -> ...)
@@ -17714,7 +17722,7 @@ Lauenburger Platz: Asphalt	Q0 6014,6160 6112,6173
 # 
 #: by: misersky:
 #: confirmed_by: srt
-Tassostr.: guter Asphalt	Q0 13623,15954 13614,15984 13625,16054 13642,16118 13654,16152 13645,16192 13679,16286
+Tassostr.: guter Asphalt	Q0 13623,15954 13614,15984 13625,16054 13642,16118 13654,16152 13645,16192 13677,16281
 # 
 #: by: Toska Holtz:
 #: confirmed_by: srt
@@ -23419,16 +23427,17 @@ Alter Radelander Weg: fester Sandweg im Wald, lässt sich gut befahren, im Winter
 #: confirmed_by: srt
 Rabindranath-Tagore-Str.: Asphalt, teilweise brüchig, trotzdem gut befahrbar	Q0- 23252,792 23469,640 23540,591 23457,35
 #: note: "besonders an der Ecke Straße 133"
-Straße 109: sehr schlechter Asphalt, viele Schlaglöcher, teilweise guckt Kopfsteinpflaster hervor	Q2- 17342,15386 17434,15379 17533,15363 17588,15355
+#: corrected_by: srt (sehr schlechter Asphalt, viele Schlaglöcher, teilweise guckt Kopfsteinpflaster hervor -> ...)
+Straße 109: unbefestigte Straße	Q2 17432,15378 17533,15363
+#: corrected_by: srt (sehr schlechter Asphalt, viele Schlaglöcher, teilweise guckt Kopfsteinpflaster hervor -> ...)
+Straße 109: Verbundsteinpflaster	Q1 17533,15363 17588,15355
 #: note: "sehr schmale Straße"
 #: confirmed_by: srt
-#: XXX Qualität überprüfen
-#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7214 ("miserabler Zustand")
+# REMOVED ("miserabler Zustand" -> nicht bestätigt) --- #: XXX Qualität überprüfen --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7214 ("miserabler Zustand")
 Straße 133 (Alt-Hohenschönhausen): guter Asphalt	Q0 17588,15355 17762,14993
 #: note: "sehr schmale Straße"
 #: confirmed_by: srt
-#: XXX Qualität überprüfen
-#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7214 ("miserabler Zustand")
+# REMOVED ("miserabler Zustand" -> nicht bestätigt) --- #: XXX Qualität überprüfen --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7214 ("miserabler Zustand")
 Straße 134 (Alt-Hohenschönhausen): guter Asphalt	Q0 17533,15363 17718,14979
 #: confirmed_by: srt (an der Malchower Str.)
 Privatstr. 1: mäßiger Asphalt	Q2 16887,17349 17089,17369 17167,17331

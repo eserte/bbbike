@@ -2811,9 +2811,9 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
        {
          'data' => '#: XXX_osm bei osm jetzt mit bicycle=yes getaggt, aber laut R. Herzog stimmt das nicht - zwischenzeitlich bicycle=no, seit 2014-10-25 wieder bicycle=yes, 2016 wieder bicycle=no vvv
 #: note: Verbot bestätigt von roald dot lange at gmx (2015-06-23)
-#: osm_watch: way id="80221295" version="18" brb
+#: osm_watch: way id="80221295" version="20" brb
 	2 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
-#: osm_watch: way id="83106248" version="15" brb
+#: osm_watch: way id="83106248" version="18" brb
 	2 19105,-3940 19164,-3980 19282,-3928 19464,-3780 19479,-3690
 #: osm_watch: way id="60482011" version="25" brb
 #: osm_watch: way id="192153919" version="4" brb
@@ -3151,7 +3151,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: note: bei Veranstaltungen möglicherweise auch gesperrt?
 #: XXX_prog: die "Veranstaltungen" sollten auch mit einer Kategorie bedacht werden
 #: tempex: volatile
-	q4::temp 10456,15561 10234,15490 10188,15474
+	q4::temp 10456,15561 10234,15490 10228,15488
 ',
          'from' => undef,
          'id' => 2681,
@@ -3376,7 +3376,37 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: verschlossen 2016-05-11 gegen 9 Uhr
+#: note: offen am 2016-06-16 gegen 9:30 Uhr
+#: note: offen am 2016-07-01 gegen 18:15 Uhr
+#: note: geschlossen am 2016-07-11 gegen 18:00 Uhr
+#: note: geschlossen am 2016-07-21 gegen 19:30 Uhr
+#: note: offen am 2016-09-21 gegen 18:15 Uhr
+#: note: offen am 2016-11-11 gegen 18:40 Uhr
+#: note: offen am 2016-11-22 gegen 18:30 Uhr
+#: note: offen am 2016-12-07 gegen 19:00 Uhr
+#: note: offen am 2016-12-12 gegen 09:45 Uhr
+#: note: verschlossen am 2018-01-14 (So) gegen 14:30 Uhr
+	2::temp 8362,13466 8369,13465 8377,13463
+#: note: verschlossen am 2016-06-16 gegen 9:30 Uhr
+#: note: verschlossen am 2016-07-01 gegen 18:15 Uhr
+#: note: verschlossen am 2016-07-11 gegen 18:00 Uhr
+#: note: verschlossen am 2016-07-21 gegen 19:30 Uhr
+#: note: verschlossen am 2016-09-21 gegen 18:15 Uhr
+#: note: verschlossen am 2016-11-22 gegen 18:30 Uhr
+#: note: verschlossen am 2016-12-07 gegen 19:00 Uhr
+#: note: verschlossen am 2016-12-12 gegen 09:45 Uhr
+#: note: verschlossen am 2018-01-14 (So) gegen 14:30 Uhr
+	2::temp 8371,13399 8363,13402 8356,13404
+',
+         'from' => undef,
+         'id' => 2785,
+         'recurring' => 1,
+         'text' => 'Alexanderufer - Charité: Tor kann verschlossen sein',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -3816,6 +3846,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.663347.php',
          'text' => 'Moltkestraßenbrücke: Einbahnstraße, offen Richtung Norden',
          'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: NORDHAFENPARKWEST-2018
+#: last_checked: 2018-01-14
+	2::inwork 7551,14464 7426,14539
+',
+         'from' => undef,
+         'id' => 2929,
+         'text' => 'Nordhafenpark West: Uferwege können wegen Bauarbeiten gesperrt sein',
+         'type' => 'gesperrt',
          'until' => undef
        }
      

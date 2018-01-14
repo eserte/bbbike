@@ -923,7 +923,7 @@ EOF
        text  => 'Gleim-Tunnel: Baustelle, Straße vollständig gesperrt (bis 01.10.2004)',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 9907,15618 10004,15636 10130,15647
+	2 9907,15618 10004,15636 10130,15653
 EOF
      },
      { from  => 1094421600, # 2004-09-06 00:00
@@ -1236,7 +1236,7 @@ EOF
        text  => 'Gleimstr. (Mitte) in beiden Richtungen zwischen Gleimtunnel und Graunstr. Baustelle, Straße vollständig gesperrt (bis 29.11.2004)',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 9907,15618 10004,15636 10130,15647
+	2 9907,15618 10004,15636 10130,15653
 EOF
      },
      { from  => 1098828000, # 2004-10-27 00:00
@@ -1760,7 +1760,7 @@ EOF
        text  => 'Pistoriusstr. (Weissensee) Richtung Berliner Allee zwischen Mirbachplatz und Parkstr. Baustelle, Fahrtrichtung gesperrt (bis 30.06.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
-	1 13400,16395 13485,16362 13544,16339 13632,16305 13679,16286 13788,16240
+	1 13399,16398 13485,16362 13542,16337 13630,16301 13677,16281 13783,16237
 EOF
      },
      { from  => 1111960800, # 2005-03-28 00:00
@@ -3678,7 +3678,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002437',
        data  => <<EOF,
-	q4; 14056,16120 14036,16129 13788,16240
+	q4; 14056,16120 14036,16129 13783,16237
 EOF
      },
      { from  => 1138319443, # 2006-01-27 00:50
@@ -12500,7 +12500,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009790',
        data  => <<EOF,
-	1::inwork 16656,16157 16755,16120 16882,16072 16961,16042
+	1::inwork 16653,16150 16753,16111 16880,16064 16961,16042
 EOF
      },
      { from  => 1247724607, # 2009-07-16 08:10
@@ -21928,9 +21928,9 @@ EOF
        data  => <<EOF,
 #: XXX_osm bei osm jetzt mit bicycle=yes getaggt, aber laut R. Herzog stimmt das nicht - zwischenzeitlich bicycle=no, seit 2014-10-25 wieder bicycle=yes, 2016 wieder bicycle=no vvv
 #: note: Verbot bestätigt von roald dot lange at gmx (2015-06-23)
-#: osm_watch: way id="80221295" version="18" brb
+#: osm_watch: way id="80221295" version="20" brb
 	2 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
-#: osm_watch: way id="83106248" version="15" brb
+#: osm_watch: way id="83106248" version="18" brb
 	2 19105,-3940 19164,-3980 19282,-3928 19464,-3780 19479,-3690
 #: osm_watch: way id="60482011" version="25" brb
 #: osm_watch: way id="192153919" version="4" brb
@@ -22812,8 +22812,8 @@ EOF
        type  => 'handicap',
        source_id => 'IM_021477',
        data  => <<EOF,
-	q2::inwork; 16520,16200 16656,16157
-	q2::inwork 16656,16157 16616,16046
+	q2::inwork; 16520,16200 16653,16150
+	q2::inwork 16653,16150 16616,16046
 	q4::inwork; 16537,15827 16559,15896 16616,16046 16505,16096 16520,16200
 EOF
      },
@@ -23272,7 +23272,7 @@ EOF
 #	q4::inwork 15774,14992 15867,15073 15937,15134 16028,15218 16119,15302
 #	q4::inwork; 16119,15302 16218,15386 16263,15427 16331,15486 16412,15559
 #	q4::inwork; 16412,15559 16448,15593 16497,15636 16615,15737 16633,15753
-	q4::inwork; 16633,15753 16819,15912 16846,15936 16941,16021
+	q4::inwork; 16633,15753 16819,15912 16842,15932 16941,16021
 #	q4::inwork; 15937,15134 16075,15069 16123,15025
 #	3 16469,15659 16497,15636 16615,15737
 #	3 16615,15737 16497,15636 16469,15659
@@ -23971,7 +23971,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_023572',
        data  => <<EOF,
-	q4::inwork; 13400,16395 13485,16362 13544,16339 13632,16305 13679,16286 13788,16240
+	q4::inwork; 13399,16398 13485,16362 13542,16337 13630,16301 13677,16281 13783,16237
 EOF
      },
      { from  => undef, # 
@@ -24100,7 +24100,7 @@ EOF
 #: note: bei Veranstaltungen möglicherweise auch gesperrt?
 #: XXX_prog: die "Veranstaltungen" sollten auch mit einer Kategorie bedacht werden
 #: tempex: volatile
-	q4::temp 10456,15561 10234,15490 10188,15474
+	q4::temp 10456,15561 10234,15490 10228,15488
 EOF
      },
      { from  => 1424975817, # 2015-02-26 19:36
@@ -25214,9 +25214,8 @@ EOF
 	2::temp 11683,12725 11721,12801
 EOF
      },
-     { ### INACTIVE ENTRY ###
-       from  => undef, # 
-       until => 1484934475, # -> ein Tor ist nach gesperrt-orig gewandert, das andere scheint jetzt immer offen zu sein
+     { from  => undef, # 
+       until => undef, # 1484934475, # -> ein Tor ist nach gesperrt-orig gewandert, das andere scheint jetzt immer offen zu sein
        text  => 'Alexanderufer - Charité: Tor kann verschlossen sein',
        recurring => 1,
        type  => 'gesperrt',
@@ -25231,6 +25230,7 @@ EOF
 #: note: offen am 2016-11-22 gegen 18:30 Uhr
 #: note: offen am 2016-12-07 gegen 19:00 Uhr
 #: note: offen am 2016-12-12 gegen 09:45 Uhr
+#: note: verschlossen am 2018-01-14 (So) gegen 14:30 Uhr
 	2::temp 8362,13466 8369,13465 8377,13463
 #: note: verschlossen am 2016-06-16 gegen 9:30 Uhr
 #: note: verschlossen am 2016-07-01 gegen 18:15 Uhr
@@ -25240,6 +25240,7 @@ EOF
 #: note: verschlossen am 2016-11-22 gegen 18:30 Uhr
 #: note: verschlossen am 2016-12-07 gegen 19:00 Uhr
 #: note: verschlossen am 2016-12-12 gegen 09:45 Uhr
+#: note: verschlossen am 2018-01-14 (So) gegen 14:30 Uhr
 	2::temp 8371,13399 8363,13402 8356,13404
 EOF
      },
@@ -25524,7 +25525,7 @@ EOF
        data  => <<EOF,
 #: note: wurde leider erst am 2016-08-18 für Radfahrer eröffnet
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2016/pressemitteilung.510057.php
-	2::inwork 10130,15647 10004,15636 9907,15618
+	2::inwork 10130,15653 10004,15636 9907,15618
 EOF
      },
      { from  => 1470175200, # 2016-08-03 00:00
@@ -26787,6 +26788,16 @@ EOF
 #: osm_watch: way id="13860352" version="11"
 #: next_check: 2018-03-01
 	q4::inwork; 3859,4531 3898,4477
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Nordhafenpark West: Uferwege können wegen Bauarbeiten gesperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: NORDHAFENPARKWEST-2018
+#: last_checked: 2018-01-14
+	2::inwork 7551,14464 7426,14539
 EOF
      },
     );

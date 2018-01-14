@@ -156,7 +156,7 @@ vor dem Kanzleramt: Fuﬂg‰nger, manchmal gesperrt	q1 8120,12756 8122,12603
 Am Stadtpark: Parkweg mit Fuﬂg‰ngern	q1 15395,12762 15424,12732 15433,12686 15454,12519
 Am Stichkanal: Fuﬂg‰nger	q1 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
 Am Stichkanal: Fuﬂg‰nger	q1 22759,4430 22797,4518
-Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10354,14987 10319,15090 10240,15318 10188,15474 10185,15487 10130,15647
+Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10354,14987 10319,15090 10240,15318 10188,15474 10185,15487 10130,15653
 (Fuﬂweg am Griesinger-Krankenhaus): Fuﬂg‰nger	q1 21935,12153 21930,12185 21608,12320 21435,12390 21346,12427 21265,12468 21221,12484
 (Ringbahnsteig Ostkreuz): Fuﬂg‰nger	q4 14810,10832 14839,10853 14862,10942 14845,10954
 Marheinekeplatz: Fuﬂg‰nger, Brunnen	q3 9892,9286 9880,9233
@@ -485,7 +485,7 @@ Braunschweiger Ufer: Fuﬂg‰nger	q1 12718,5845 13077,5893 13483,5973
 Begasstr. - Riemenschneiderweg: teilweise mit Fuﬂg‰ngern zu rechnen	q2 6513,7005 6650,7017
 Begasstr. - Riemenschneiderweg: teilweise mit Fuﬂg‰ngern zu rechnen, kurze Rampe	q2 6650,7017 6770,7027
 Viktoriapark: Fuﬂg‰nger, kurze Rampe, Pf‰hle	q1 5013,6003 4981,5939 4954,5888
-(Gaudystr. - Mauerpark): Fuﬂg‰nger	q1 10456,15561 10234,15490 10188,15474
+(Gaudystr. - Mauerpark): Fuﬂg‰nger	q1 10456,15561 10234,15490 10228,15488 10188,15474
 (Kurt-Schumacher-Damm - Wasserturm Jungfernheide): Fuﬂg‰nger	q1 2905,14754 2923,14853 2900,14891 2840,14982 2685,15167 2707,15205 2695,15258 2632,15295
 (Jungfernheide): Fuﬂg‰nger	q1 2632,15295 2431,15290 2364,15321 2349,15380 2027,15380 1925,15426 1563,15294 1374,15314
 (Jungfernheide): Fuﬂg‰nger	q1 1416,15190 1459,15196 1498,15196 1535,15111 1735,15071 2039,15083 2053,15036 2376,15036 2683,14878 2784,14826 2900,14891
@@ -1680,6 +1680,8 @@ Ackerstr.: Fuﬂg‰nger, Bordsteine	q3 8701,14932 8741,14928
 (zum Mauerpark, tempor‰re Umgehung): Fuﬂg‰nger	q2 10302,14964 10279,15033 10301,15084 10319,15090
 Steinr¸ckweg: mˆglicher Bordstein	q1 4257,6856 4293,6719
 (Mehringbr¸cke - Mehringplatz): einige Fuﬂg‰nger	q1 9404,10250 9535,10299
+(Gleimstr. - Mauerpark): Fuﬂg‰nger	q2 10170,15659 10228,15488
+Gedonstr.: Bordsteine, parkende Autos, Fuﬂg‰nger	q4 7915,17557 7916,17576 7917,17588
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schulhof, Radfahren verboten	q3 7242,8586 7288,8635
@@ -2111,7 +2113,7 @@ Rosenorter Steig: enge Straﬂe	q0 -1349,23497 -1451,23525 -1535,23575 -1617,23624
 Straﬂe 40 (Blankenburg): enge Straﬂe	q0 14893,20583 14945,20748 15035,21026
 (Mˆrchinger Str. - Berliner Str.): Fuﬂg‰nger	q2 1393,3183 1388,3197 1338,3300
 Biesentaler Str.: Aufpflasterungen, leicht zu umfahren	q0 9024,16855 9245,16758
-Tassostr.: enge Straﬂe	q1 13623,15954 13614,15984 13625,16054 13642,16118 13654,16152 13645,16192 13679,16286
+Tassostr.: enge Straﬂe	q1 13623,15954 13614,15984 13625,16054 13642,16118 13654,16152 13645,16192 13677,16281
 An der Wildbahn: viele parkende Autos in enger Straﬂe	q1 -1581,22553 -1447,22522 -1333,22495 -1270,22480 -1221,22468 -996,22416 -926,22399 -725,22355 -489,22295 -313,22233
 Wolmirstedter Weg: enge Straﬂe	q1 -4143,15639 -4216,15635 -4283,15639
 Landschˆppenpfad: Bordsteine, Fuﬂg‰nger	q2 12609,1780 12574,1866
@@ -2568,6 +2570,7 @@ Gravensteinstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 1
 Hauptstr. (Franzˆsisch Buchholz): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 12199,22367 12229,22457
 (Vorfahrt S-Bhf. Tegel): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 2352,20224 2371,20225 2384,20196 2398,20166 2381,20157
 (Guerickestr. - Einsteinufer): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 4658,12450 4618,12340 4593,12322
+(Suermondtstr. - Konrad-Wolf-Str.): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 16842,15932 16799,15974 16719,16005 16753,16111
 Am Krusenick: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22751,4970 22652,4966 22667,4912 22705,4874
 Josef-Nawrocki-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25802,4681 25802,4823
 Josef-Nawrocki-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25695,4714 25554,4758 25552,4829

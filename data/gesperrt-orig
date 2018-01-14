@@ -411,7 +411,7 @@ Pfahlerstr.	1 5301,18447 5423,18438 5541,18435
 #: by: Juliane Bölker:
 Harnackstr.	1 15848,11528 15881,11621 15871,11690 15911,11790 15984,11827 16020,11814 16099,11786 16134,11774
 Carmerstr.	1 5088,11322 4926,11081
-Mirbachplatz	1 13331,16424 13347,16447 13391,16436 13400,16395 13377,16378 13348,16387 13331,16424
+Mirbachplatz	1 13331,16424 13347,16447 13391,16436 13399,16398 13377,16378 13348,16387 13331,16424
 Treskowstr. (Mahlsdorf)	1 24563,11980 24491,11972
 Knoten am Flughafen Tegel	1 2996,15930 2960,15847
 Knoten am Flughafen Tegel	1 2913,15944 2949,15922 2977,15923 2996,15930
@@ -1177,6 +1177,7 @@ Wilhelmstr. (Wilhelmstadt)	1::igndisp -4406,12468 -4300,12571
 (Messedamm - S-Bhf. Westkreuz)	1 2117,10495 2090,10576 2033,10613
 #: note: gesperrt Richtung Norden wegen Benutzungspflicht
 Halenseestr.	2::igndisp 2086,10552 1961,10646 1928,10728
+(Suermondtstr. - Konrad-Wolf-Str.)	1s:q4 16842,15932 16799,15974 16719,16005 16753,16111
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -1842,6 +1843,7 @@ Attilastr.: Geländer am Gehweg	3nocross 7628,4521 7667,4549 7690,4563
 Paul-Schneider-Str.: unbequemes Überqueren	3nocross 6613,3320 6647,3292 6712,3237
 Puschkinallee: unbequemes Passieren (Bordsteine, starker Verkehr, kaum Lücken)	3nocross 15383,9191 15407,9151 15442,9095
 Puschkinallee: unbequemes Passieren (starker Verkehr, kaum Lücken)	3nocross 14495,9609 14556,9581 14809,9466
+Fennstr.: Mittelstreifen mit Geländer	3nocross 8007,15087 7998,15068 7911,15008
 # REMOVED (leicht überquerbar) --- #: XXX Mittelstreifen vielleicht leicht überquerbar, prüfen! --- Straße des 17. Juni: Mittelstreifen	3nocross 8303,12216 8344,12221 8538,12245
 abgeschlossenes Tor	3 * 8237,20098 *
 abgeschlossenes Tor	3 * 8291,20112 *
@@ -2183,6 +2185,7 @@ tragen (Treppe, 19 Stufen)	0:25 25928,-5990
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter	BNP:3::trailer=10 7916,17576
 Drängelgitter	BNP:3::trailer=10 22237,6211
 weites Drängelgitter	BNP:2::trailer=7 5628,23977
 weites Drängelgitter	BNP:2::trailer=7 5867,24056
@@ -2301,7 +2304,7 @@ Drängelgitter	BNP:3::trailer=10 10062,15927
 #: osm_watch: node id="2456723872" version="2"
 #: osm_watch: node id="2456723871" version="3"
 #: XXX eventuell temporär wegen der Baustraße (vielleicht für das Wohngebiet Lichtburgring?)
-#: last_checked: 2017-11-17
+#: last_checked: 2018-01-14
 zwei Drängelgitter	BNP:6::trailer=15 10038,15418
 Schranke	BNP:3 -7969,-1659
 # REMOVED (existiert nicht mehr) --- Drängelgitter	BNP:3::trailer=10 18126,9075
@@ -2807,6 +2810,11 @@ Drängelgitter	BNP:3::trailer=10 22097,5879
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: osm_watch: way id="497699542" version="5"
+#: XXX außerdem: wird es einen Sackgassenabschnitt geben? Hier oder am Björnweg?
+#: last_checked: 2018-01-14
+Anni-Frid-Weg: Baustelle, gesperrt	2::inwork 17262,15056 17317,15059 17345,15061
+# 
 #: by: osm
 #: by: https://www.potsdam.de/sites/default/files/documents/17554_amtsblatt_de2017_nr13_dsjs_korr2.pdf (Einziehung von Straßenland)
 #: osm_watch: way id="534669300" version="1" brb
@@ -2819,9 +2827,12 @@ Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 18301,9946 18
 #: last_checked ^^^
 # 
 #: by: https://www.berliner-zeitung.de/berlin/berliner-wasserbetriebe-tunnel-unterm-mauerpark-wird-zur-attraktion-25534506
-#: last_checked: 2017-12-26
-#: check_frequency: 360d
+#: last_checked: 2018-01-14 (Nordseite) vvv
+#: check_frequency: 360d vvv
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
+Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: next_check_id: OTTOBRAUN-2015
 #: XXX noch Restbauarbeiten, danach vielleicht wieder eine offizielle Radwegverbindung?
@@ -2842,19 +2853,7 @@ Planstraße C: gesperrt, Privatstraße	2 12926,11224 12848,11093
 #: check_frequency: 120d
 Im Lichtenhain: neue Straße, zurzeit Bauarbeiten; Qualität, genaue Lage?	2::inwork 16497,10685 16462,10571
 # 
-#: next_check_id: LICHTBURGRING-2017 vvv
-#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_55_6321_6504_online.pdf (Grundstücksnummerierungen)
-#: XXX wie wird die endgültige Fahrbahnbeschaffenheit sein? Asphalt? vvv
-#: osm_watch: way id="437684188" version="3"
-#: last_checked: 2017-11-17 vvv
-#: check_frequency: 90d vvv
-Lichtburgring: Baustelle, Betreten verboten	2::inwork 10004,15636 9933,15815
-Bärbel-Bohley-Ring: Baustelle, Betreten verboten	2::inwork 9933,15815 9744,15793
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-#: next_check_id ^^^
-# 
+# REMOVED --- #: next_check_id: LICHTBURGRING-2017 vvv --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_55_6321_6504_online.pdf (Grundstücksnummerierungen) --- #: XXX wie wird die endgültige Fahrbahnbeschaffenheit sein? Asphalt? vvv --- #: osm_watch: way id="437684188" version="4" --- #: last_checked: 2017-11-17 vvv --- #: next_check: 2018-01-13 vvv --- Lichtburgring: Baustelle, Betreten verboten	2::inwork 10004,15636 9933,15815 --- Bärbel-Bohley-Ring: Baustelle, Betreten verboten	2::inwork 9933,15815 9917,15813 9744,15793
 # REMOVED --- #: last_checked: 2017-09-22 --- Oberwallstr.: Bauarbeiten, Einbahnstraße	1s:q3:inwork 9898,12161 9913,12068
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4055&mt=0&zoom=16
@@ -3048,12 +3047,13 @@ Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q4:inwork 8654,14194 8607,142
 #: last_checked: 2017-12-18
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8969,11814
 # 
+#: next_check_id: NORDHAFENPARKWEST-2018
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
 #: osm_watch: way id="441442656" version="1"
-#: last_checked: 2017-12-26
-#: check_frequency: 10d
+#: last_checked: 2018-01-14
+#: check_frequency: 14d
 Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,14449 7551,14464
 # REMOVED (fertig) --- Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7551,14464 7426,14539 7396,14569 7368,14573
 # 
@@ -3141,12 +3141,12 @@ Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::in
 # REMOVED --- #: XXX Wie wird die Qualität danach sein? Wird man zum Hiltrud-Dudek-Weg durchfahren können? Wird die Straße verkehrsberuhigt sein? --- #: osm_watch: way id="151742436" version="5" --- #: XXX ad osm_watch: id referenziert die Jeanette-Wolff-Str., nur ein "proxy" für den neu zu bauenden Weg --- #: last_checked: 2015-04-10 --- #: check_frequency: 100d --- Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17647,-386 17654,-397
 # 
 #: next_check_id: EUROPACITY-2015 vvv
-#: last_checked: 2017-11-04 vvv
+#: last_checked: 2018-01-14 vvv
 #: osm_watch: way id="237704729" version="8"
 #: check_frequency: 45d
 Lydia-Rabinowitsch-Str.: noch gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924
 #: osm_watch: way id="237716438" version="6"
-#: check_frequency: 60d
+#: check_frequency: 45d
 Clara-von-Simson-Str.: noch gesperrt	2 7652,14257 7757,14318 7802,14250 7697,14187
 #: last_checked ^^^
 #: next_check_id ^^^
@@ -3330,7 +3330,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2017-12-09
+#: last_checked: 2018-01-14
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
@@ -3635,6 +3635,7 @@ Rudolf-Reusch-Str. [Wohngebiet]	1 15732,12562 15657,12562 15657,12648 15732,1265
 Letteallee	1 8226,17479 8110,17470 8014,17468 7845,17455 7707,17445 7675,17430
 #: confirmed_by: srt
 Mickestr.	1 8185,17352 8134,17398 8110,17470
+#: confirmed_by: srt
 Kühleweinstr.	1 8014,17468 8043,17282 8088,17218
 Seekorso	1 -8828,6418 -8776,6425 -8682,6435 -8578,6462 -8470,6515 -8376,6579
 Seekorso	1s:q4 -8376,6579 -8354,6590

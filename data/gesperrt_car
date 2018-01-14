@@ -1543,16 +1543,16 @@ Rosenfelder Str. -> Rosenfelder Str.: Frankfurter Allee	3::igndisp 17306,11866 1
 Ehrensfelsstr.: Durchfahrt verboten	3 18737,8686 18778,8663 18846,8616
 Ehrensfelsstr.: Durchfahrt verboten	3 18846,8616 18778,8663 18737,8686
 Buggenhagenstr.	1 14425,13780 14371,13619
-Tassostr.	1 13679,16286 13645,16192 13654,16152 13642,16118 13625,16054 13614,15984 13623,15954
+Tassostr.	1 13677,16281 13645,16192 13654,16152 13642,16118 13625,16054 13614,15984 13623,15954
 Pasedagplatz: nur f¸r Straﬂenbahnen	2 14170,17249 14150,17255 14099,17195
-Straﬂenbahntrasse	3nocross::ignrte 16416,16236 16476,16216 16520,16200 16656,16157
+Straﬂenbahntrasse	3nocross::ignrte 16416,16236 16476,16216 16520,16200 16653,16150
 Suermondtstr. -> Degnerstr.: Straﬂenbahntrasse	3::igndisp 16520,16200 16476,16216 16458,16104
 Degnerstr. -> Suermondtstr.: Straﬂenbahntrasse	3::igndisp 16458,16104 16476,16216 16416,16236
 Suermondtstr. -> Am Faulen See: Straﬂenbahntrasse	3::igndisp 16476,16216 16520,16200 16551,16307
-Suermondtstr. -> Hedwigstr.: Straﬂenbahntrasse	3::igndisp 16656,16157 16520,16200 16505,16096
+Suermondtstr. -> Hedwigstr.: Straﬂenbahntrasse	3::igndisp 16653,16150 16520,16200 16505,16096
 Hedwigstr. -> Suermondtstr.: Straﬂenbahntrasse	3::igndisp 16505,16096 16520,16200 16476,16216
 Hedwigstr. -> Am Faulen See: Straﬂenbahntrasse	3::igndisp 16505,16096 16520,16200 16551,16307
-Am Faulen See -> Suermondtstr.: Straﬂenbahntrasse	3::igndisp 16551,16307 16520,16200 16656,16157
+Am Faulen See -> Suermondtstr.: Straﬂenbahntrasse	3::igndisp 16551,16307 16520,16200 16653,16150
 Am Faulen See -> Hedwigstr.: Straﬂenbahntrasse	3::igndisp 16551,16307 16520,16200 16505,16096
 Kohlfurter Str.: provisorisch, Anlieger frei	1:Anlieger 11464,10102 11274,10184 11094,10261
 Friedbergstr.:	3 2793,10752 2766,10750 2679,10931
@@ -1906,3 +1906,7 @@ Schulenburgring	1 9030,8431 9028,8584 9011,8605
 Vereinssteg	1 8340,18984 8406,19081
 Oberwallstr.: Anlieger frei	2:Anlieger 9898,12161 9883,12251
 Hertelstr.	1 4891,6907 4787,6907
+Straﬂenbahntrasse	3nocross::ignrte 16653,16150 16753,16111 16880,16064
+Suermondtstr. -> Konrad-Wolf-Str.: Straﬂenbahntrasse	3::igndisp 16880,16064 16753,16111 16719,16005
+Konrad-Wolf-Str. -> Suermondtstr.: Straﬂenbahntrasse	3::igndisp 16719,16005 16753,16111 16653,16150
+B‰rbel-Bohley-Ring	1 9917,15813 9910,15876 9747,15847 9744,15793

@@ -21,15 +21,15 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualit‰t danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-01-12
+#: last_checked: 2018-01-13
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
-#: last_checked: 2018-01-12
+#: last_checked: 2018-01-13
 Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2018-01-05
+#: last_checked: 2018-01-14
 #: check_frequency: 90d
 Dˆringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -111,8 +111,8 @@ Voltairestr.: Baustellenverkehr	q2 11329,12497 11209,12430
 #: XXX Ende der Bauarbeiten?
 #: way id="507023458" version="1"
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
-#: last_checked: 2017-12-18
-#: check_frequency: 21d
+#: last_checked: 2018-01-14
+#: check_frequency: 30d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # 
 # REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?id=3339&mt=0&zoom=16 (Projektabschluss: 2017-03-31) --- #: last_checked: 2017-10-27 --- Kommandantenstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 10330,11422 10136,11529
@@ -613,7 +613,7 @@ vor dem Kanzleramt: Fuﬂg‰nger, manchmal gesperrt	q1 8120,12756 8122,12603
 Am Stadtpark: Parkweg mit Fuﬂg‰ngern	q1 15395,12762 15424,12732 15433,12686 15454,12519
 Am Stichkanal: Fuﬂg‰nger	q1 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
 Am Stichkanal: Fuﬂg‰nger	q1 22759,4430 22797,4518
-Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10354,14987 10319,15090 10240,15318 10188,15474 10185,15487 10130,15647
+Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10354,14987 10319,15090 10240,15318 10188,15474 10185,15487 10130,15653
 (Fuﬂweg am Griesinger-Krankenhaus): Fuﬂg‰nger	q1 21935,12153 21930,12185 21608,12320 21435,12390 21346,12427 21265,12468 21221,12484
 # REMOVED (die Nicht-Existenz sollte auch durch Nicht-Existenz auf der Karte reflektiert werden) --- (Fuﬂg‰ngerbr¸cke Ostkreuz): Fuﬂg‰nger	q3 14808,10978 14787,10972 14764,10877 14810,10832
 (Ringbahnsteig Ostkreuz): Fuﬂg‰nger	q4 14810,10832 14839,10853 14862,10942 14845,10954
@@ -1045,7 +1045,7 @@ Braunschweiger Ufer: Fuﬂg‰nger	q1 12718,5845 13077,5893 13483,5973
 Begasstr. - Riemenschneiderweg: teilweise mit Fuﬂg‰ngern zu rechnen	q2 6513,7005 6650,7017
 Begasstr. - Riemenschneiderweg: teilweise mit Fuﬂg‰ngern zu rechnen, kurze Rampe	q2 6650,7017 6770,7027
 Viktoriapark: Fuﬂg‰nger, kurze Rampe, Pf‰hle	q1 5013,6003 4981,5939 4954,5888
-(Gaudystr. - Mauerpark): Fuﬂg‰nger	q1 10456,15561 10234,15490 10188,15474
+(Gaudystr. - Mauerpark): Fuﬂg‰nger	q1 10456,15561 10234,15490 10228,15488 10188,15474
 (Kurt-Schumacher-Damm - Wasserturm Jungfernheide): Fuﬂg‰nger	q1 2905,14754 2923,14853 2900,14891 2840,14982 2685,15167 2707,15205 2695,15258 2632,15295
 (Jungfernheide): Fuﬂg‰nger	q1 2632,15295 2431,15290 2364,15321 2349,15380 2027,15380 1925,15426 1563,15294 1374,15314
 (Jungfernheide): Fuﬂg‰nger	q1 1416,15190 1459,15196 1498,15196 1535,15111 1735,15071 2039,15083 2053,15036 2376,15036 2683,14878 2784,14826 2900,14891
@@ -2574,6 +2574,9 @@ Ackerstr.: Fuﬂg‰nger, Bordsteine	q3 8701,14932 8741,14928
 #: XXX_prog BS am nˆrdlichen Ende, und nur wenn die Kette gespannt ist, ansonsten kein Handicap
 Steinr¸ckweg: mˆglicher Bordstein	q1 4257,6856 4293,6719
 (Mehringbr¸cke - Mehringplatz): einige Fuﬂg‰nger	q1 9404,10250 9535,10299
+(Gleimstr. - Mauerpark): Fuﬂg‰nger	q2 10170,15659 10228,15488
+#: XXX_prog BS an beiden Enden, ansonsten q2
+Gedonstr.: Bordsteine, parkende Autos, Fuﬂg‰nger	q4 7915,17557 7916,17576 7917,17588
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -3362,7 +3365,7 @@ Biesentaler Str.: Aufpflasterungen, leicht zu umfahren	q0- 9024,16855 9245,16758
 # 
 #: by: misersky:
 #: confirmed_by: srt (insbesondere, weil es recht kurvig ist)
-Tassostr.: enge Straﬂe	q1 13623,15954 13614,15984 13625,16054 13642,16118 13654,16152 13645,16192 13679,16286
+Tassostr.: enge Straﬂe	q1 13623,15954 13614,15984 13625,16054 13642,16118 13654,16152 13645,16192 13677,16281
 # 
 #: by: Nicole Weber:
 An der Wildbahn: viele parkende Autos in enger Straﬂe	q1 -1581,22553 -1447,22522 -1333,22495 -1270,22480 -1221,22468 -996,22416 -926,22399 -725,22355 -489,22295 -313,22233
