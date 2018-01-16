@@ -24692,8 +24692,8 @@ EOF
 EOF
      },
      { from  => 1443650400, # 2015-10-01 00:00
-       until => $isodate2epoch->("2018-12-31 12:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
-       text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Klosterbuschweg und Hackbuschstr., stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Ende 2018',
+       until => $isodate2epoch->("2018-06-29 12:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
+       text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Reckeweg und Hackbuschstr., stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Ende Juni 2018',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php',
        data  => <<EOF,
@@ -24702,11 +24702,14 @@ EOF
 #: source_id: 2147339562
 #: source_id: LMS-BR_r_LMS-BR_51041
 #: source_id: 2147342003
+#: source_id: 2147342198
 #: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.639561.php (Ende 2018 oder Mitte 2019)
+#: XXX laut fritz Ende Juni 2018, laut vmz Ende 2018
 #: next_check: 2018-12-31
 # REMOVED ---	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
-	q3::inwork; -6861,15129 -6507,15007
+# REMOVED ---	q3::inwork; -6861,15129 -6507,15007
+	q3::inwork; -7155,15233 -6888,15139 -6861,15129
 EOF
      },
      { from  => 1442700000, # 2015-09-20 00:00
@@ -26145,7 +26148,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-01-12
+#: last_checked: 2018-01-15
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -26430,14 +26433,16 @@ EOF
 EOF
      },
      { from  => 1502386525, # 2017-08-10 19:35
-       until => 1512082799, # 2017-11-30 23:59
-       text  => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Richtung Norden ist der Gehweg für Radfahrer frei; Baseler Str. offen Richtung Norden), eventuell bis Ende November 2017',
+       until => undef, # 1512082799, # 2017-11-30 23:59
+       text  => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Richtung Norden ist der Gehweg für Radfahrer frei; Baseler Str. offen Richtung Norden), Ende unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?bvgid=BVG131679 ("gültig bis: auf Weiteres")
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=30361
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=29479
 #: by: mapillary (Gehweg für Radfahrer frei)
+#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2018-01-13 (mapillary)
 	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
 EOF

@@ -32,7 +32,7 @@ Danziger Str.	?::projected 12616,14315 12722,14232 12901,14093 12975,13990 13037
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2018-01-12
+#: last_checked: 2018-01-15
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -888,7 +888,7 @@ Residenzstr.: Radstreifen	?::projected 8127,16894 8079,16953 7970,17087
 Wullenwebersteg: wird hier eine Rampe erstellt?	?::projected 5714,12290 5714,12279 5714,12266
 # 
 #: XXX evtl. auch nur der östliche Abschnitt ab Niemetzstr. vvv
-#: last_checked: 2018-01-09 (mapillary) vvv
+#: last_checked: 2018-01-11 (mapillary) vvv
 #: osm_watch: way id="423009430" version="4"
 Braunschweiger Str.: Asphaltierung	?::projected 13369,7307 13487,7337 13519,7345
 #: osm_watch: way id="8153802" version="14"
@@ -955,6 +955,7 @@ Heerstr.: Verbesserung des Radwegs? ("neuer breiterer Gehweg")	?::projected -369
 #: last_checked: 2017-09-02 (mapillary)
 Schönwalder Allee: neuer Geh- und Radweg	?::projected -6099,20718 -6482,20783 -6540,20790 -6782,20818
 # 
+#: XXX Bauarbeiten zwischen Winfriedstraße und Schützallee Richtung Norden, bis 06.04.2018 --- hat das was mit den Radwegen zu tun?
 #: last_checked: 2017-10-14
 Clayallee: Radstreifen (oder bessere Radwege?) wird erstellt, vermutlich nur in Teilabschnitten	?::projected 820,3081 856,3188 932,3422 935,3430 971,3534 1070,3741 1139,3876 1159,3915 1221,4071 1240,4126 1283,4260 1297,4311 1304,4334 1370,4547 1411,4654 1441,4741 1450,4766 1462,4802 1479,4853 1511,4955 1573,5152
 #: last_checked: 2017-10-14
@@ -1716,9 +1717,13 @@ Falkoniergasse: Genaue Lage? Qualität?	?::inwork 9939,12174 9909,12261
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20131129.0640.392180.html (Straßenausbau geplant)
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.95087.php?date=20160124 (Beginn im Jahr 2016)
 # REMOVED (kein Platz für Radspuren) --- #: source_id: 2147339913 --- #: XXX zurzeit Bauarbeiten (laut fritz bis bis 13.01.2017), gibt es Einschränkungen für Radfahrer? --- #: last_checked: 2017-03-26 --- #: check_frequency: 90d --- Hildburghauser Str.: Ausbau der Straße, wie werden die Radwege später aussehen?	?::inwork 4795,1362 4897,1352 5059,1337
-#: last_checked: 2017-08-10
+#: source_id: 2147341614
+#: last_checked: 2017-08-10 vvv
+#: next_check: 2018-04-30
+Hildburghauser Str.: Ausbau der Straße, bessere Qualität des Asphalts?	? 5059,1337 5223,1318 5414,1304 5585,1275 5741,1234
 #: check_frequency: 360d
-Hildburghauser Str.: Ausbau der Straße, bessere Qualität des Asphalts?	? 5059,1337 5223,1318 5414,1304 5585,1275 5741,1234 5795,1219 5867,1199 5909,1187 6010,1157 6106,1133 6145,1119 6199,1104 6276,1083 6294,1078 6386,1051 6467,1028 6515,1010 6631,968
+Hildburghauser Str.: Ausbau der Straße, bessere Qualität des Asphalts?	? 5741,1234 5795,1219 5867,1199 5909,1187 6010,1157 6106,1133 6145,1119 6199,1104 6276,1083 6294,1078 6386,1051 6467,1028 6515,1010 6631,968
+#: last_checked ^^^
 # 
 #: XXX_osm weitgehend fertiggestellt
 Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-10630 29088,-10386 29021,-10333 28918,-10301 28723,-10326 28656,-10329 28539,-10255 28499,-10164
@@ -5121,7 +5126,7 @@ Louise-Henry-Str.: bisherige Straße 18a wird unbenannt	? 11217,21565 11297,21593
 #: XXX Bezirksamtsbeschluss 48/16
 #: by: http://www.berlin.de/ba-neukoelln/_assets/dokumente/ba-beschluesse/ba-beschluss-115-15.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5768
-#: osm_watch: note 1099044 1
+#: osm_watch: note 1099044 2
 #: last_checked: 2017-08-10
 #: check_frequency: 14d
 (Christoph-Ruden-Str. - Buckower Damm): ist der Geh- und Radweg mittlerweile geöffnet?	? 12725,1429 12939,1469

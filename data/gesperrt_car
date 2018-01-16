@@ -1910,3 +1910,6 @@ Straßenbahntrasse	3nocross::ignrte 16653,16150 16753,16111 16880,16064
 Suermondtstr. -> Konrad-Wolf-Str.: Straßenbahntrasse	3::igndisp 16880,16064 16753,16111 16719,16005
 Konrad-Wolf-Str. -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16719,16005 16753,16111 16653,16150
 Bärbel-Bohley-Ring	1 9917,15813 9910,15876 9747,15847 9744,15793
+Mittelstreifen	3nocross::ignrte 4867,690 4875,677 4948,562
+Osdorfer Str. -> Mercatorweg: Mittelstreifen	3::igndisp 4948,562 4875,677 4695,556
+Mercatorweg -> Osdorfer Str.: Mittelstreifen	3::igndisp 4695,556 4875,677 4867,690

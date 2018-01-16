@@ -2850,12 +2850,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: Anforderungsampel für Radfahrer aus/in Richtung Priesterweg
 #: note: Ampel für Radfahrer auf den Prellerweg in Richtung Südosten nicht relevant
 	X 7171,5831
-#: next_check_id: HEIDELBERGER-2017
-#: XXX wann werden die Ampeln wieder abgebaut?
-#: note eigentlich zwei Ampeln, aber zusammengeschaltet
-#: last_checked: 2017-11-18
-#: check_frequency: 60d
-	F::inwork 13489,9199
+# REMOVED (wurden bereits abgebaut) --- #: next_check_id: HEIDELBERGER-2017 --- #: XXX wann werden die Ampeln wieder abgebaut? --- #: note eigentlich zwei Ampeln, aber zusammengeschaltet --- #: last_checked: 2017-11-18 --- #: check_frequency: 60d ---	F::inwork 13489,9199
 	X 19894,-835
 #: note: Anforderungsampel
 	F 7533,14702
@@ -2877,6 +2872,9 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	B0 17424,15400
 #: note: Anforderungsampel quer zur Heidestr.
 	X 7820,13994
+#: by: mapillary
+#: note: Anforderungsampel
+	F 4867,690
 # 
 ################################################################################
 #: note: Potsdam vvv
