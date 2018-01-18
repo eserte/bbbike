@@ -25895,13 +25895,16 @@ EOF
 	q4::inwork 5059,7216 5064,7160 5081,7112
 EOF
      },
-     { from  => 1485385200, # 2017-01-26 00:00
-       until => 1485730800, # 2017-01-30 00:00
-       text  => 'Schönerlinder Str.: Sperrung zwischen A114 und Am Vorwerk, von 27.01.2017 abends bis 29.01.2017 nachts',
+     { from  => 1516217169, # 1485385200, # 2017-01-26 00:00
+       until => $isodate2epoch->("2018-03-20 12:00:00"), # 1485730800, # 2017-01-30 00:00
+       text  => 'Schönerlinder Str.: Sperrung zwischen A114 und A10, evtl. sind auch Radfahrer betroffen, bis 20.03.2018',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 12254,24857 12136,24607
-	2::inwork 12108,24547 11980,24276
+#: source_id: 2147342176
+#: source_id: 2147341532
+# REMOVED --- 2::inwork 12254,24857 12136,24607
+# REMOVED --- 2::inwork 12108,24547 11980,24276
+	2::inwork 11980,24276 12108,24547 12136,24607 12254,24857 12395,25143 12461,25270 12543,25423 12624,25570
 EOF
      },
      { from  => 1486676031, # 2017-02-09 22:33
@@ -26148,7 +26151,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-01-15
+#: last_checked: 2018-01-17
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907

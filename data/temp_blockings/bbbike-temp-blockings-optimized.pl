@@ -2099,7 +2099,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 2147342176
+#: source_id: 2147341532
+# REMOVED --- 2::inwork 12254,24857 12136,24607
+# REMOVED --- 2::inwork 12108,24547 11980,24276
+	2::inwork 11980,24276 12108,24547 12136,24607 12254,24857 12395,25143 12461,25270 12543,25423 12624,25570
+',
+         'from' => 1516217169,
+         'id' => 2848,
+         'text' => 'Schönerlinder Str.: Sperrung zwischen A114 und A10, evtl. sind auch Radfahrer betroffen, bis 20.03.2018',
+         'type' => 'gesperrt',
+         'until' => 1521543600
+       },
        undef,
        undef,
        undef,
@@ -2165,7 +2177,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-01-15
+#: last_checked: 2018-01-17
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
