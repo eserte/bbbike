@@ -29,7 +29,7 @@ Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::i
 # 
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2018-01-14
+#: last_checked: 2018-01-21
 #: check_frequency: 90d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -111,7 +111,7 @@ Voltairestr.: Baustellenverkehr	q2 11329,12497 11209,12430
 #: XXX Ende der Bauarbeiten?
 #: way id="507023458" version="1"
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
-#: last_checked: 2018-01-14
+#: last_checked: 2018-01-19
 #: check_frequency: 30d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # 
@@ -122,7 +122,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 # REMOVED --- Jerusalemer Str.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9925,11565 9936,11469
 # 
 #: by: http://www.dafmap.de/d/berlin.html?center=52.508653+13.397214&zoom=17# (Geplanter Projektabschluss: 2019-03-31)
-#: last_checked: 2018-01-04 vvv
+#: last_checked: 2018-01-19 vvv
 #: check_frequency: 90d vvv
 Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9945,11371 9936,11469
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
@@ -426,11 +426,7 @@ Wartenbergstr.: Fahrbahn gesperrt, auf Gehweg ausweichen	q3:inwork 15337,11639 1
 ### Prenzlauer Berg ###
 # 
 # REMOVED (-> wieder temp_blocking) --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml vvv --- #: source_id: IM_025877 vvv --- #: source_id: 2147339245 vvv --- #: source_id: 2147339553 vvv --- #: last_checked: 2017-06-28 vvv --- #: next_check: 2017-08-02 vvv --- Jülicher Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603 --- Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
-# 
-#: XXX mittlerweile bis zur Hälfte offen
-#: last_checked: 2017-12-26
-#: check_frequency: 14d
-Fürstenberger Str.: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 10320,14608 10472,14632
+# REMOVED (nun offen, aber Bauarbeiten an der Kreuzung -> temp blockings) --- #: XXX mittlerweile bis zur Hälfte offen --- #: last_checked: 2017-12-26 --- #: check_frequency: 14d --- Fürstenberger Str.: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 10320,14608 10472,14632
 # 
 ### Pankow ###
 # 

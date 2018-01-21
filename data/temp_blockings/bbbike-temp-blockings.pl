@@ -26535,7 +26535,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-01-06
+#: last_checked: 2018-01-19
 	2::inwork 14652,10201 14569,10055
 EOF
      },
@@ -26724,13 +26724,14 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Dorotheenstr./Schadowstr.: Bauarbeiten, Einbahnstraßenregelung',
+       text  => 'Dorotheenstr./Schadowstr./Mittelstr.: Bauarbeiten, Einbahnstraßenregelung bzw. Fahrbahn teilweise gesperrt',
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Ende der Bauarbeiten?
-#: last_checked: 2017-12-18 vvv
+#: last_checked: 2018-01-19 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
+	q3::inwork 9011,12423 9131,12438
 #: last_checked ^^^
 EOF
      },
@@ -26806,6 +26807,20 @@ EOF
 #: next_check_id: NORDHAFENPARKWEST-2018
 #: last_checked: 2018-01-14
 	2::inwork 7551,14464 7426,14539
+EOF
+     },
+     { from  => 1516308007, # 2018-01-18 21:40
+       until => undef,
+       text  => 'Wolliner Str./Granseer Str./Fürstenberger Str.: Bauarbeiten, Kreuzung muss umständlich umfahren werden, Bordsteine',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2018-01-19 vvv
+#: check_frequency: 14d vvv
+	q3::inwork 10277,14691 10320,14608
+	q2::inwork 10320,14608 10399,14429
+	q3::inwork 10228,14564 10320,14608 10472,14632
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
     );
