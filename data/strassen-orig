@@ -458,17 +458,17 @@ Puschkinallee	HH 14196,9749 14271,9712 14318,9688 14495,9609 14556,9581 14809,94
 (Treptower Park)	NN 14475,9199 14531,9244 14655,9311 14673,9353 14669,9389 14635,9441
 (Treptower Park: am Rosengarten)	NN 14809,9466 14837,9517 14867,9573 14909,9649
 (Treptower Park: südl./westl. des Karpfenteichs)	NN 15378,8668 15335,8714 15254,8735 15036,8728 14949,8773 14918,8813 14854,8964
-(Treptower Park: um das Sowjetische Ehrenmal herum)	NN 14614,9052 14854,8964 15057,8910 15110,8912 15159,8934 15181,8967 15190,9027 15154,9106 15025,9171 14955,9294 14898,9364 14888,9385 14879,9433
+(Treptower Park: um das Sowjetische Ehrenmal herum)	NN 14614,9052 14854,8964 15057,8910 15110,8912 15159,8934 15181,8967 15190,9027 15154,9106 15025,9171 14955,9294 14898,9364 14889,9381 14879,9433
 (Treptower Park)	NN 15190,9027 15214,9090 15185,9189
 (Treptower Park: östl. des Karpfenteichs)	NN 15335,8714 15298,8781 15235,8841 15223,8893 15159,8934
 (Treptower Park)	NN 14318,9688 14316,9542 14347,9452 14398,9373 14485,9271 14531,9244
-(Treptower Park)	NN 14242,9448 14316,9542 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14719,9419 14789,9401
+(Treptower Park)	NN 14242,9448 14316,9542 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14719,9419 14797,9396 14824,9390 14889,9381
 (Treptower Park)	NN 14719,9419 14774,9437 14809,9466
 (Treptower Park)	NN 14588,9473 14556,9581
 (Treptower Park: zur Karpfenteichstr.)	NN 14852,8799 14883,8823 14918,8813
 (Treptower Park - Moosdorfstr.)	NN 14398,9373 14382,9299
 (Treptower Park)	NN 15181,8967 15245,8916
-(Treptower Park)	NN 14888,9385 15019,9330 15185,9189 15275,9140 15359,9131 15407,9151
+(Treptower Park)	NN 14889,9381 15003,9337 15185,9189 15275,9140 15359,9131 15407,9151
 (Wasserweg - Treptower Park)	NN 15680,8914 15617,8924
 (Neue Krugallee/Bulgarische Str. - Karpfenteich)	NN 15558,8820 15439,8839 15297,8921 15245,8916 15223,8893
 # REMOVED (vermutlich nicht) --- #: XXX wird dieser Teil des Parkwegs auch unbenannt? vvv --- #: osm_watch: way id="150810051" version="9" --- #: last_checked: 2016-10-10 vvv --- #: check_frequency: 60d vvv
@@ -1136,7 +1136,7 @@ Edith-Kiss-Str.	N 12793,11132 12866,11256
 #: XXX Vorschlag: Freia-Eisner-Straße
 #: note: "Privatgelände"
 #: osm_watch: way id="491906864" version="3"
-#: last_checked: 2018-01-12
+#: last_checked: 2018-01-24
 (Planstraße C)	N 12926,11224 12848,11093
 Am Postbahnhof	N 12641,11288 12664,11310 12713,11372 12638,11433 12576,11375
 Am Postbahnhof	N 12638,11433 12594,11467 12539,11416
@@ -3452,7 +3452,7 @@ Am Fenn	N 6283,4565 6174,4434 6150,4340
 Am Fenn	NN 6150,4340 6147,4329
 Wolfensteindamm	H 4741,5309 4745,5283 4766,5208 4807,5131 4772,5069 4692,4997 4675,4983 4517,4853
 Hindenburgdamm	N 4512,5199 4513,5139 4514,5082 4515,4966 4517,4853
-Hindenburgdamm	H 4517,4853 4515,4760 4515,4581 4521,4484 4551,4042 4573,3862 4592,3762 4596,3738 4603,3704 4603,3658 4585,3575 4580,3514 4566,3461 4514,3329 4454,3260 4411,3180 4170,2727
+Hindenburgdamm	H 4517,4853 4515,4760 4515,4581 4516,4483 4517,4473 4551,4042 4573,3862 4592,3762 4596,3738 4603,3704 4603,3658 4585,3575 4580,3514 4566,3461 4514,3329 4454,3260 4411,3180 4170,2727
 Hindenburgdamm	H 4454,3260 4467,3332 4523,3482 4546,3527 4585,3575
 Am Fichtenberg	N 4343,5112 4285,5180 4217,5217 4134,5284 4185,5349 4259,5390
 Gardeschützenweg	H 4515,4760 4214,4595 4039,4500 3926,4438 3643,4232 3523,4139 3489,4115 3280,3970
@@ -4431,14 +4431,14 @@ Brüderstr. (Lichterfelde)	N 3044,3680 3061,3695 3193,3793
 Augustastr. (Lichterfelde)	N 3558,3688 3627,3740 3719,3806 3870,3914 3946,3967
 Augustastr. (Lichterfelde)	N 4045,4005 4234,4020 4385,4032 4551,4042
 Augustaplatz	N 3936,4014 3937,3993 3946,3967 3971,3950 4000,3950 4025,3958 4042,3982 4045,4005 4034,4033 4015,4053 3986,4051 3955,4039 3936,4014
-Manteuffelstr. (Lichterfelde)	N 4015,4053 4092,4217 4317,4378 4521,4484
+Manteuffelstr. (Lichterfelde)	N 4015,4053 4092,4217 4317,4378 4516,4483
 Kyllmannstr. (Lichterfelde)	N 3500,4146 3467,4247
 Kyllmannstr. (Lichterfelde)	N 3518,4106 3583,4011 3632,3943 3719,3806
 Sophienstr. (Lichterfelde)	N 3632,3943 3777,4042 3787,4053
 Prausestr.	N 3228,4046 3382,4146 3354,4187 3467,4247 3575,4306
 (Prausestr. - Tietzenweg)	NN 3575,4306 3580,4309 3587,4312
 Mommsenstr. (Lichterfelde)	N 3583,4011 3361,3860
-Haydnstr. (Lichterfelde, Steglitz)	N 4521,4484 4613,4515 4681,4537 4785,4557 4870,4609 5004,4709 5076,4762
+Haydnstr. (Lichterfelde, Steglitz)	N 4516,4483 4613,4515 4681,4537 4785,4557 4870,4609 5004,4709 5076,4762
 Marschnerstr.	N 4613,4515 4641,4287 4634,4053 4629,3916
 Kreutzerweg	N 4629,3916 4836,4041 4848,4069 4834,4102
 Breite Str. (Steglitz)	N 5048,4798 5087,4853 5169,4969 5216,5047 5259,5110 5318,5205 5382,5312
@@ -8876,15 +8876,8 @@ Straße 7 (Buch)	N 17448,26469 17668,26607
 (Straße 7 - Zepernicker Str.)	N 17668,26607 17714,26509 17764,26410
 (Radweg Berlin-Usedom)	NN 17668,26607 17661,26617 17938,26787 17964,26823
 Am Stener Berg	N 17011,25830 17446,25914 17856,25959 18108,26048
-#: XXX Straße wird umbenannt: Alpenberger Str. (wieder!)
-#: XXX Berlin.coords.data-Eintrag fehlt
-#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4549 (Benennungsabsicht)
-#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036750280094/750280094/00146312/12-Anlagen/02/BenennungsabsichtfuerdieNummernstrasseStrasse4.pdf
-#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4662
-#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_47_5357_5416_online.pdf
-#: next_check: 2018-01-01 (Wirksamkeit)
-#: oldname: Alpenberger Str.
-Straße 4 (Buch)	N 17856,25959 18015,25653
+# REMOVED --- #: XXX Straße wird umbenannt: Alpenberger Str. (wieder!) --- #: XXX Berlin.coords.data-Eintrag fehlt --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4549 (Benennungsabsicht) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036750280094/750280094/00146312/12-Anlagen/02/BenennungsabsichtfuerdieNummernstrasseStrasse4.pdf --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4662 --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_47_5357_5416_online.pdf --- #: by: Arne H. --- #: next_check: 2018-01-01 (Wirksamkeit) --- #: oldname: -1952: Alpenberger Str. --- #: oldname: -20180101: Straße 4 (Buch)
+Alpenberger Str.	N 17856,25959 18015,25653
 #: url: http://www.ludwigpark.de/
 #: note: vor Ort "Ludwig-Park" geschrieben
 (Ludwigpark)	N 17446,25914 17413,25969

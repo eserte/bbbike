@@ -1747,7 +1747,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5141,5744
 	X 6477,6311
 	X 6430,6787
-	X 4521,4484
+	F 4517,4473
 	X 4932,4152
 	X 3926,4438
 	X 3259,4002
@@ -2764,7 +2764,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: SONNENALLEE-2014
 #: osm_watch: node id="4006030833" version="4"
-#: last_checked: 2018-01-21
+#: last_checked: 2018-01-23
 #: note: Radfahrer in Richtung Nordwesten müssen die Seite wechseln, hier Anforderungsampel
 	X::inwork 14174,7505
 # REMOVED -- #: note: Baustellenstraße kreuzt ---	X::inwork 14369,7376
@@ -2838,6 +2838,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	F 3273,14738
 #: next_check_id: CHAUSSEESTR-2016 vvv
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8232 (bleibt die Ampel permanent?)
+#: by: Tsp vom 2018-01-22 (neue Ampeln --- 2019)
 #: source_id: 2147340715 vvv
 #: last_checked: 2017-09-28 vvv
 #: next_check: 2018-04-30 vvv

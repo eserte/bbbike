@@ -1944,6 +1944,8 @@ Mittelstreifen ohne Überquerungshilfe	3nocross::ignrte 12990,11006 13080,10956 1
 Mühlenstr. -> Hedwig-Wachenheim-Str.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12990,11006 13080,10956 13150,11101
 Hedwig-Wachenheim-Str. -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 13150,11101 13080,10956 13144,10921
 Mittelstreifen	3nocross::ignrte 12908,11058 12848,11093 12793,11132 12736,11186
+Mühlenstr. -> Planstr. C: Mittelstreifen	3::igndisp 12793,11132 12848,11093 12926,11224
+Planstr. C -> Mühlenstr.: Mittelstreifen	3::igndisp 12926,11224 12848,11093 12908,11058
 Edith-Kiss-Str. -> Mühlenstr.: Mittelstreifen	3::igndisp 12866,11256 12793,11132 12848,11093
 Straßenbahntrasse	3nocross::ignrte 21158,15885 21220,15741 21239,15633
 Raoul-Wallenberg-Str. -> Schönagelstr.: Straßenbahntrasse	3::igndisp 21158,15885 21220,15741 21602,15908
@@ -2493,8 +2495,6 @@ Drängelgitter	BNP:2:-76:trailer=6 7886,8335
 Drängelgitter	BNP:2:-75:trailer=6 7911,8329
 Schranke, kann auf Bürgersteig umfahren werden	BNP:3:-217:trailer=5 1778,20377
 Schranke	BNP:3:-244:trailer=10 5296,11529
-Drängelgitter	BNP:3:-263:trailer=8 14366,8058
-Drängelgitter	BNP:5:-262:trailer=10 14425,8052
 Drängelgitter	BNP:5:-65:trailer=10 4626,20960
 Drängelgitter	BNP:5:32:trailer=10 7764,21271
 Schranke	BNP:3:-105:trailer=10 11392,10520
@@ -2779,6 +2779,8 @@ Schwingtor	BNP:5:-85:trailer=10 7366,8390
 Schwingtor	BNP:5:-49:trailer=10 7400,8273
 Schwingtor	BNP:5:-54:trailer=10 7289,8259
 Schwingtor	BNP:5:-190:trailer=10 7372,8222
+Schwingtor	BNP:5:-77:trailer=10 14824,9390
+Schwingtor	BNP:5:-73:trailer=10 14797,9396
 Schranke, sehr enge Durchfahrt, nicht anhängertauglich	BNP:5:-148:trailer=no 14658,7513
 Drängelgitter an der Straßenbahntrasse	BNP:6:-167 14989,13630
 Schranke	BNP:3:-90 -3646,15717
@@ -2911,7 +2913,6 @@ Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:inwork 18301,9946 18266
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
 (Wadzeckstr. - Mollstr.)	2::inwork 11326,13196 11409,13327
-Planstraße C: gesperrt, Privatstraße	2 12926,11224 12848,11093
 Im Lichtenhain: neue Straße, zurzeit Bauarbeiten; Qualität, genaue Lage?	2::inwork 16497,10685 16462,10571
 Zufahrt Parkhaus: Abrissarbeiten, Straße komplett gesperrt	2::inwork 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
 Merlitzstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19661,3421 19524,3286
@@ -2943,11 +2944,6 @@ Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,9200 12548,9167
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
-IGA 2017-Gelände: Wege gesperrt	2 22455,14815 22417,14837 22380,14831 22331,14793 22254,14793 22199,14744 22164,14722 22108,14710 22090,14704 22071,14630 22051,14604 22026,14601 22012,14556 21985,14513 22026,14501 22061,14471 22172,14287 22414,14144 22503,14104
-IGA 2017-Gelände: Wege gesperrt	2 22414,14144 22462,14172 22639,14384 22679,14450 22670,14520
-IGA 2017-Gelände: Wege gesperrt	2 22414,14144 22407,14111 22404,13984
-IGA 2017-Gelände: Wege gesperrt	2 21948,14501 21985,14513
-IGA 2017-Gelände: Wege gesperrt	2 22503,14104 22783,14034
 Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 18892,3256 18953,3318
 Lydia-Rabinowitsch-Str.: noch gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924
 Clara-von-Simson-Str.: noch gesperrt	2 7652,14257 7757,14318 7802,14250 7697,14187

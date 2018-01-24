@@ -21,10 +21,10 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualit‰t danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-01-17
+#: last_checked: 2018-01-24
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
-#: last_checked: 2018-01-17
+#: last_checked: 2018-01-24
 Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
@@ -33,7 +33,7 @@ Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::i
 #: check_frequency: 90d
 Dˆringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
-#: last_checked: 2018-01-18
+#: last_checked: 2018-01-23
 Lange Str.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 # REMOVED --- #: by: fritz --- #: last_checked: 2017-09-28 --- #: check_frequency: 10d --- # REMOVED --- #: valid: -20170927 --- Krautstr.: Fahrbahn abschnittsweise gesperrt, Ausweichen auf Gehweg notwendig	q3::inwork 11966,11832 11993,11978
@@ -356,7 +356,7 @@ Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fuﬂg‰nger	q3 5894,12480 5944,12
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 
 #: next_check_id: DIESEL-2015
-#: last_checked: 2017-12-27
+#: last_checked: 2018-01-23
 Dieselstr., Umfahrung: Fuﬂg‰nger, eng	q3::inwork 14326,8062 14366,8058 14384,8056 14425,8052 14471,8046
 # 
 # REMOVED (so gut wie fertig, Schlupflˆcher durch die Absperrungen) --- #: last_checked: 2015-07-29 --- #: check_frequency: 7d --- #: priority: #A --- Ganghoferstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12805,8194 12873,8217 12918,8232
@@ -368,7 +368,7 @@ Dieselstr., Umfahrung: Fuﬂg‰nger, eng	q3::inwork 14326,8062 14366,8058 14384,805
 #: source_id: IM_022515
 #: source_id: 2147338550
 #: source_id: LMS-BR_r_LMS-BR_19252
-#: last_checked: 2017-12-30 (mapillary)
+#: last_checked: 2018-01-23
 #: next_check: 2018-03-31
 Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung S¸den auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12753,8187 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785 12969,7610
 # REMOVED (fertig) --- Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung S¸den auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12969,7610 12991,7549 12992,7545 13015,7471 13018,7441
@@ -527,7 +527,10 @@ Treptower Park: Fuﬂg‰nger	q1 14909,9649 14853,9655 14697,9726 14645,9710 14604,9
 Treptower Park: einige Fuﬂg‰nger	q1+ 15558,8820 15439,8839 15297,8921 15245,8916 15223,8893
 Treptower Park: einige Fuﬂg‰nger	q1 14588,9473 14556,9581
 Treptower Park: einige Fuﬂg‰nger	q1 14719,9419 14774,9437 14809,9466
-Treptower Park: einige Fuﬂg‰nger	q1 14789,9401 14719,9419 14635,9441
+Treptower Park: einige Fuﬂg‰nger, enger Weg	q2+ 14889,9381 14824,9390
+#: XXX_prog 2x BS, ansonsten q2 oder q3
+Am Sowjetischen Ehrenmal: einige Fuﬂg‰nger, Bordsteine (2x)	q4 14824,9390 14797,9396
+Treptower Park: einige Fuﬂg‰nger, enger Weg	q2+ 14797,9396 14719,9419 14635,9441
 Treptower Park: einige Fuﬂg‰nger	q1 14316,9542 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14669,9389 14673,9353 14655,9311 14531,9244 14475,9199
 Treptower Park: einige Fuﬂg‰nger	q1 14398,9373 14485,9271 14531,9244
 Gˆrlitzer Park: Fuﬂg‰nger	q2 12671,10042 12686,10045 12690,10062

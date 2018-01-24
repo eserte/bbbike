@@ -10,8 +10,9 @@
 # REMOVED (Bauarbeiten beendet) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5898 --- #: note: oder man fährt auf dem mit zahlreichen Engstellen zugestellten Radweg, muss dann aber ggfs. warten --- #: last_checked: 2014-03-21 --- #: valid: -20140523 --- Bergmannstr.: während der Bauarbeiten zwischen Heim- und Friesenstr. Umleitung über gepflasterte Fahrbahn	Q2 9973,9232 9880,9233 9793,9241
 # 
 #: next_check_id: DIESEL-2015 vvv
-#: last_checked: 2017-12-27 vvv
-Dieselstr.: teilweise betoniert, teilweise noch unbefestigt	Q1 14326,8062 14366,8058 14384,8056 14425,8052 14471,8046
+#: last_checked: 2018-01-23 vvv
+Dieselstr.: überwiegend betoniert	Q1 14326,8062 14366,8058 14384,8056 14425,8052
+Dieselstr.: unbefestigt	Q2 14425,8052 14471,8046
 Dieselstr., Umfahrung: Asphalt	Q0 14419,8112 14429,8074
 #: XXX_osm laut osm Asphalt, hier aber nicht!
 Dieselstr., Umfahrung: unbefestigt	Q2 14429,8074 14471,8046
@@ -81,12 +82,12 @@ Sinsheimer Weg: schlechtes Kopfsteinpflaster, aber Ausweichen auf Parkplatz mögl
 Sinsheimer Weg: Betonstraße	Q0 13774,8849 13837,8932
 #: XXX Asphaltierung geplant vvv
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2018-2022) vvv
-#: last_checked: 2017-12-22 vvv
-#: next_check: 2018-03-01 vvv
+#: check_frequency: 60d vvv
+#: last_checked: 2017-12-22
 Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729 12549,8616 12649,8535
+#: last_checked: 2018-01-23
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12918,8232
-#: next_check ^^^
-#: last_checked ^^^
+#: check_frequency ^^^
 #: by: ^^^
 #: XXX ^^^
 Friesenstr.: mäßiges Kopfsteinpflaster	Q2 9801,8683 9801,8889 9799,8962 9797,9063 9795,9162 9793,9241
@@ -1234,9 +1235,9 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 Hufelandstr.: Kopfsteinpflaster	Q2 12077,14186 12228,14083 12361,13985 12478,13903 12579,13840 12578,13800
 Limonenstr.: Kopfsteinpflaster	Q2 3716,4764 3597,4941 3418,5088 3357,5178 3321,5212
 Willdenowstr.: Kopfsteinpflaster	Q2 3826,4800 3684,4998 3426,5292
-Manteuffelstr.: Kopfsteinpflaster	Q2 4092,4217 4317,4378 4521,4484
+Manteuffelstr.: Kopfsteinpflaster	Q2 4092,4217 4317,4378 4516,4483
 #: corrected_by: Ralf Masurowski (Q2 -> Q2-, "schlechter als mäßig")
-Haydnstr.: Kopfsteinpflaster	Q2- 4521,4484 4613,4515 4681,4537
+Haydnstr.: Kopfsteinpflaster	Q2- 4516,4483 4613,4515 4681,4537
 Haydnstr.: Kopfsteinpflaster	Q2 4681,4537 4785,4557
 #: by: Ralf Masurowski
 #: corrected_by: srt/policy (Q2 -> Q1)
@@ -1432,7 +1433,7 @@ Treptower Park: Kleinsteinpflaster	Q1- 15453,9259 15513,9144 15527,9096
 Treptower Park: Asphalt	Q0 15527,9096 15623,9028
 Treptower Park: Kleinsteinpflaster	Q1- 15623,9028 15778,8990
 Treptower Park: Schotterweg, aber relativ glatt	Q2 14854,8964 14614,9052
-Treptower Park: wassergebundene Decke	Q1 14854,8964 15057,8910 15110,8912 15159,8934
+Treptower Park: wassergebundene Decke	Q1- 14854,8964 15057,8910 15110,8912 15159,8934
 Treptower Park: wassergebundene Decke	Q1 14588,9473 14556,9581
 Treptower Park: Schotterweg	Q2 14242,9448 14316,9542
 Treptower Park: wassergebundene Decke	Q1 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674
@@ -2034,7 +2035,7 @@ Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 14558,10819 14352,10874
 #: next_check_id: DBWERKSTRASSE-2017
 #: XXX wann wird hier die letzte Deckschicht erstellt? vvv
-#: last_checked: 2018-01-17 vvv
+#: last_checked: 2018-01-23 vvv
 #: check_frequency: 7d vvv
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Asphalt, letzte Deckschicht fehlt	Q1 14352,10874 14231,10907 14141,10931 14076,10949
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Asphalt, letzte Deckschicht fehlt	Q1 14141,10931 14107,10911 14043,10928
@@ -3460,13 +3461,13 @@ Treptower Park: Asphalt	Q0 14318,9688 14316,9542 14347,9452 14398,9373
 Treptower Park: wassergebundene Decke	Q1 14398,9373 14485,9271 14531,9244
 Treptower Park: Asphalt	Q0 14398,9373 14382,9299
 Treptower Park: Asphalt, einige Wurzelschäden	Q1+ 14316,9542 14384,9565 14478,9545
-Treptower Park: wassergebundene Decke	Q1 14478,9545 14507,9529 14588,9473 14635,9441 14719,9419 14789,9401
+Treptower Park: wassergebundene Decke	Q1 14478,9545 14507,9529 14588,9473 14635,9441 14719,9419 14797,9396 14824,9390 14889,9381
 Treptower Park: wassergebundene Decke	Q1 14475,9199 14531,9244
 Treptower Park: wassergebundene Decke	Q1 14531,9244 14655,9311 14673,9353 14669,9389 14635,9441
 Treptower Park: wassergebundene Decke	Q1 14719,9419 14774,9437 14809,9466
 Treptower Park: Mosaikpflaster	Q1 14488,9848 14460,9814 14436,9784 14361,9772
 Treptower Park: Asphalt	Q0 15190,9027 15214,9090 15185,9189
-Treptower Park: wassergebundene Decke	Q1 14888,9385 15019,9330 15185,9189 15275,9140 15359,9131 15407,9151
+Treptower Park: wassergebundene Decke	Q1 14889,9381 15003,9337 15185,9189 15275,9140 15359,9131 15407,9151
 (Neue Krugallee/Bulgarische Str. - Karpfenteich): Schotterweg	Q2+ 15558,8820 15439,8839 15297,8921 15245,8916
 (Neue Krugallee/Bulgarische Str. - Karpfenteich): Asphalt	Q0 15245,8916 15223,8893
 Heylstr: Asphalt	Q0 6181,8181 6246,8222 6325,8259 6385,8274 6459,8281 6552,8281
@@ -8267,7 +8268,7 @@ Jülicher Str.: Asphalt	Q0 9514,16603 9498,16480 9487,16395 9475,16307 9474,16297
 (Park am Gleisdreieck, Eingang Schöneberger Str.): Verbundsteinpflaster	Q1 8296,10438 8322,10451 8328,10485 8361,10491 8377,10502 8384,10507
 (Treptower Park): Asphalt	Q0 15190,9027 15181,8967 15159,8934
 (Treptower Park): wassergebundene Decke	Q1- 15190,9027 15154,9106 15025,9171 14955,9294
-(Treptower Park): Asphalt	Q0 14955,9294 14898,9364 14888,9385 14879,9433
+(Treptower Park): Asphalt	Q0 14955,9294 14898,9364 14889,9381 14879,9433
 (Treptower Park): Asphalt	Q0 15159,8934 15223,8893 15235,8841 15298,8781 15335,8714 15378,8668
 (Treptower Park): Asphalt	Q0 15335,8714 15254,8735 15036,8728 14949,8773 14918,8813 14854,8964
 (Treptower Park): Asphalt	Q0 15181,8967 15245,8916
@@ -11006,6 +11007,7 @@ Im Lesachtal: Verbundsteinpflaster	Q0- 10526,2282 10504,2321
 Lobitzweg: guter Asphalt	Q0 23177,2742 23112,2943 23065,3089 23028,3216 22999,3342 22954,3584
 #: confirmed_by: srt (bin da mal langgefahren und kann mich an nichts Schlimmes erinnern)
 #: confirmed_by: Chris (...ewald)
+#: confirmed_by: mapillary
 Janischweg: guter Asphalt	Q0 537,14919 481,15088 473,15169 453,15173 431,15230 429,15284
 Wiecker Str.: guter Beton	Q0- 16589,18075 16526,18164 16459,18257
 (Wiecker Str. - Ribnitzer Str.): guter Beton	Q0- 16459,18257 16491,18278 16473,18302
@@ -23771,6 +23773,7 @@ Rudolf-Pechel-Str.: mäßiges Verbundsteinpflaster	Q2+ 9991,-413 9913,-432 9920,-5
 Biedermannweg: mäßiger Asphalt	Q1 -854,12963 -742,12924
 # 
 #: by: Tina (...164):
+#: confirmed_by: mapillary
 Buolstr.: guter Asphalt	Q0 559,15342 429,15284 283,15237
 # 
 #: by: Marian Nitschke:
@@ -23891,6 +23894,7 @@ La Famille-Str.: Verbundsteinpflaster	Q1 11794,21354 11948,21366 11973,21385 119
 Nebelhornweg: mäßiger Beton	Q1- 10504,3198 10540,3513
 # 
 #: by: Johanna Grünenberg:
+#: confirmed_by: mapillary
 Köttgenstr.: guter Beton	Q0 473,15169 556,15175 613,15195
 # 
 #: by: Siegfried Schmitt: vvv

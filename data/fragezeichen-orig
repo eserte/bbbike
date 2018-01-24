@@ -32,7 +32,7 @@ Danziger Str.	?::projected 12616,14315 12722,14232 12901,14093 12975,13990 13037
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2018-01-18
+#: last_checked: 2018-01-22
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -95,8 +95,8 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (Radfahrstreifen auf der Südseite)
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2017/pressemitteilung.646204.php (geschützte Radstreifen?)
 #: source_id: 2147342178
-#: last_checked: 2017-12-30
-#: check_frequency: 90d
+#: last_checked: 2018-01-24
+#: check_frequency: 60d
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
 #: XXX Baumaßnahme 2.28 (Realisierung nach 2011) 
@@ -960,7 +960,9 @@ Schönwalder Allee: neuer Geh- und Radweg	?::projected -6099,20718 -6482,20783 -6
 # 
 #: XXX Bauarbeiten zwischen Winfriedstraße und Schützallee Richtung Norden, bis 06.04.2018 --- hat das was mit den Radwegen zu tun?
 #: last_checked: 2017-10-14
-Clayallee: Radstreifen (oder bessere Radwege?) wird erstellt, vermutlich nur in Teilabschnitten	?::projected 820,3081 856,3188 932,3422 935,3430 971,3534 1070,3741 1139,3876 1159,3915 1221,4071 1240,4126 1283,4260 1297,4311 1304,4334 1370,4547 1411,4654 1441,4741 1450,4766 1462,4802 1479,4853 1511,4955 1573,5152
+Clayallee: Radstreifen (oder bessere Radwege?) wird erstellt, vermutlich nur in Teilabschnitten	?::projected 820,3081 856,3188 932,3422 935,3430 971,3534 1070,3741 1139,3876
+#: last_checked: 2018-01-20 (mapillary)
+Clayallee: Radstreifen (oder bessere Radwege?) wird erstellt, vermutlich nur in Teilabschnitten	?::projected 1139,3876 1159,3915 1221,4071 1240,4126 1283,4260 1297,4311 1304,4334 1370,4547 1411,4654 1441,4741 1450,4766 1462,4802 1479,4853 1511,4955 1573,5152
 #: last_checked: 2017-10-14
 Clayallee: Radstreifen (oder bessere Radwege?) wird erstellt, vermutlich nur in Teilabschnitten	?::projected; 1573,5152 1607,5259 1640,5383 1656,5446 1714,5722 1736,5850 1746,5922
 #: last_checked: 2017-10-14
@@ -1477,7 +1479,7 @@ Straße 6 (Mariendorf): wird in Zukunft vielleicht entstehen	? 9099,4204 9079,437
 Uferweg: wird verlängert	?::inwork 18650,5707 18604,5898 18420,6009
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4063
-#: last_checked: 2017-08-15 (mapillary)
+#: last_checked: 2018-01-20 (mapillary)
 #: check_frequency: 120d
 Dahlemer Weg: wird hier eine Fußgängerampel realisiert?	?::projected 1763,1288 1786,1254
 # 
@@ -1620,7 +1622,7 @@ Flughafen Berlin-Brandenburg - Business Park Berlin: Schotterweg, bleibt das so?
 #: XXX Radwegesanierung in Neukölln, geplant für 2013 und später vvv
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Asphalt-Radstreifen, Realisierung ab 2013)
 #: osm_watch: way id="155605301" version="9"
-#: last_checked: 2017-08-22
+#: last_checked: 2018-01-23
 #: check_frequency: 120d
 Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Realisierung ab 2014)
@@ -1988,6 +1990,29 @@ Fraenkelufer: Neugestaltung des Uferwegs, Verbindung zum Böcklerpark	?::projecte
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+Alpenberger Str.: stehen die neuen Straßenschilder schon?	? 17856,25959 18015,25653
+# 
+#: by: Tsp vom 20118-01-22 vvv
+#: XXX Ampeln geplant (Umsetzungen 2018) vvv
+#: next_check: 2018-06-01
+#: XXX wird nur die bestehende Ampel verlegt?
+Brandenburgische Str./Ballenstedter Str.	?::projected 3932,9819 3949,9842 3978,9821
+#: next_check: 2018-03-01
+Blücherstr./Brachvogelstr.	?::projected 9997,9987 10006,9942 9965,9925
+#: next_check: 2018-06-01
+Lindenstr./E.T.A.-Hoffmann-Promenade	?::projected 9747,10741 9777,10719 9750,10687
+#: next_check: 2018-06-01
+Hauptstr./Helmstr.	?::projected 7392,9140 7382,9187 7329,9172
+#: next_check: 2018-06-01
+Pasewalker Str./Bahnhofstr.	?::projected 12122,21178 12166,21208 12212,21206
+#: next_check: 2018-06-01
+Siemensstr./Nicolaistr.	?::projected 5825,4080 5862,4062 5846,4012
+#: XXX ^^^
+#: XXX Ampeln geplant (Umsetzungen 2018/2019) vvv
+Prenzlauer Promenade/Elsa-Brändström-Str.	?::projected 11884,17273 11920,17245 11962,17220
+#: XXX ^^^
+#: by: ^^^
+# 
 #: last_checked: 2018-01-14
 Stahlheimer Str./Erich-Weinert-Str.: wird die Fußgängerampel auf die andere Seite verlegt oder eine normale Ampel aufgestellt?	?::inwork 11526,16068 11542,16070 11547,16057
 # 
@@ -2000,8 +2025,10 @@ Stahlheimer Str./Erich-Weinert-Str.: wird die Fußgängerampel auf die andere Seit
 Weißenhöher Str.: Durchfahrt für Autos nicht möglich	? -3650,12762 -3739,12756
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.663947.php
-#: XXX Verbreiterung vermutlich erst ab Ende 2018
-Treptower Park: Wegverbindung, wird vermutlich verbreitert	? 14789,9401 14888,9385
+#: XXX Verbreiterung vermutlich erst ab Ende 2018, handicap dann von q2+ -> q1 ändern
+#: last_checked: 2018-01-23
+#: next_check: 2019-01-01
+Treptower Park: Wegverbindung, wird vermutlich verbreitert	? 14889,9381 14824,9390 14797,9396 14719,9419
 # 
 # REMOVED (ich hab's aufgenommen) --- #: source_id: 2147341532 --- #: XXX: bis 20.03.2018 --- Schönerlinder Str.: ist die Sperrung relevant für Radfahrer?	? 12254,24857 12395,25143 12461,25270 12543,25423 12624,25570 12697,25704
 # 
@@ -2083,6 +2110,7 @@ Schnellerstr.: ist die neue Fußgängerampel irgendwann eingeschaltet?	?::inwork 1
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.596879.php
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.630514.php
+#: XXX evtl. besteht hier ein Zusammenhang mit der geplanten Ampel
 #: last_checked: 2017-12-18 (nur ein provisorisch asphaltierter Radweg)
 Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::inwork; 10006,9942 9950,9987
 # REMOVED (hier schon fertig) --- Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::inwork; 9950,9987 9922,10010 9827,10051
@@ -2287,13 +2315,13 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7478
 #: XXX "noch 2016"
 #: osm_watch: note 824350 3
-#: last_checked: 2018-01-12
+#: last_checked: 2018-01-19
 #: check_frequency: 14d
 #: priority: #C
 Sebastian/Luckauer: Zebrastreifen in Bau	?::inwork 11113,10943 11109,10935
 # 
 #: osm_watch: note 851907 3
-#: last_checked: 2018-01-10
+#: last_checked: 2018-01-24
 #: check_frequency: 14d
 #: priority: #C
 Oranienplatz: Zebrastreifen in Bau	?::inwork 11233,10672 11258,10682 11262,10655
@@ -2513,7 +2541,7 @@ Südpankeweg, Fortsetzung zur Ida-von-Arnim-Str.: wann wird sie gebaut? Qualität?
 # 
 #: next_check_id: SONNENALLEE-2014
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14709&options=8 (beschlossen durch BVV, Realisierung steht noch aus)
-#: last_checked: 2018-01-21 (zurzeit eine Baustellenampel, wird eine permanente Ampel nach den Bauarbeiten aufgestellt?)
+#: last_checked: 2018-01-23 (zurzeit eine Baustellenampel, wird eine permanente Ampel nach den Bauarbeiten aufgestellt?)
 Sonnenallee/Ziegrastr.: wird hier eine permanente Ampel entstehen?	?::projected 14174,7505
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14708&options=8 (beschlossen durch BVV)
@@ -4465,8 +4493,6 @@ Am Großen Herzberg (Potsdam-Eiche): Qualität?	? -17419,551 -17083,624 -16939,671
 Herzbergstr., Verlängerung nach Eiche: Qualität?	? -17083,624 -17098,554 -17220,212
 Eichenallee (Hohen Neuendorf): Qualität?	? 1542,28700 1379,28792 1221,28876 1124,28923 1040,28973 960,29015 849,29062 655,29094 464,29099 401,29122
 Breitscheidstr. (Glienicke): Qualität östlich der Schönfließer Str.?	? 4244,25914 4292,25894 4394,25887 4579,25865 4690,25853 4795,25838 4888,25829 4985,25863 5085,25906
-#: XXX laut osm "unpaved", Tina Carl hat keine Range angegeben
-Ruppiner Str. (Falkensee): Qualität nördlich der Eberswalder Str.?	? -10845,19025 -10829,19222 -10811,19428
 Hangelsberg - Kienbaum: Qualität?	? 45968,619 47190,2995 47806,4379 48009,5898 48070,6124
 #: XXX bei Briesen halbseitig Kopfsteinpflaster, beim Abzeig Wilmersdorf asphaltiert
 Briesen - Fürstenwalde: Qualität?	? 69963,-5374 69483,-4393 68638,-3455 68429,-3205 68205,-2720

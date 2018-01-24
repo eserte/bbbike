@@ -389,10 +389,10 @@ Grottewitzstr.	1 21933,152 22145,208
 Schlichtallee	3nocross::ignrte 15639,10469 15758,10578 15880,10680 15982,10765
 Schlichtallee -> Zobtener Str.: Schlichtallee	3::igndisp 15880,10680 15758,10578 16148,10329
 Zobtener Str. -> Schlichtallee: Schlichtallee	3::igndisp 16148,10329 15758,10578 15639,10469
-Hindenburgdamm	3nocross::ignrte 4515,4760 4515,4581 4521,4484
+Hindenburgdamm	3nocross::ignrte 4515,4760 4515,4581 4516,4483
 Hindenburgdamm -> Flotowstr.: Hindenburgdamm	3::igndisp 4515,4760 4515,4581 4651,4638
-Hindenburgdamm -> Roonstr.: Hindenburgdamm	3::igndisp 4521,4484 4515,4581 4265,4484
-Flotowstr. -> Hindenburgdamm: Hindenburgdamm	3::igndisp 4651,4638 4515,4581 4521,4484
+Hindenburgdamm -> Roonstr.: Hindenburgdamm	3::igndisp 4516,4483 4515,4581 4265,4484
+Flotowstr. -> Hindenburgdamm: Hindenburgdamm	3::igndisp 4651,4638 4515,4581 4516,4483
 Flotowstr. -> Roonstr.: Hindenburgdamm	3::igndisp 4651,4638 4515,4581 4265,4484
 Roonstr. -> Hindenburgdamm: Hindenburgdamm	3::igndisp 4265,4484 4515,4581 4515,4760
 Roonstr. -> Flotowstr.: Hindenburgdamm	3::igndisp 4265,4484 4515,4581 4651,4638
@@ -799,10 +799,10 @@ Hönower Wiesenweg: nur für Anlieger und Radfahrer offen	2:Anlieger 17380,8858 17
 Mittelstreifen	3nocross::ignrte 9248,4904 9239,4980 9206,5193
 Finkenweg -> Mariendorfer Damm: Mittelstreifen	3::igndisp 9360,4996 9239,4980 9248,4904
 Mariendorfer Damm -> Finkenweg: Mittelstreifen	3::igndisp 9206,5193 9239,4980 9360,4996
-Mittelstreifen	3nocross::ignrte 4515,4760 4515,4581 4521,4484
+Mittelstreifen	3nocross::ignrte 4515,4760 4515,4581 4516,4483
 Hindenburgdamm -> Flotowstr.: Mittelstreifen	3::igndisp 4515,4760 4515,4581 4651,4638
-Hindenburgdamm -> Roonstr.: Mittelstreifen	3::igndisp 4521,4484 4515,4581 4265,4484
-Flotowstr. -> Hindenburgdamm: Mittelstreifen	3::igndisp 4651,4638 4515,4581 4521,4484
+Hindenburgdamm -> Roonstr.: Mittelstreifen	3::igndisp 4516,4483 4515,4581 4265,4484
+Flotowstr. -> Hindenburgdamm: Mittelstreifen	3::igndisp 4651,4638 4515,4581 4516,4483
 Flotowstr. -> Roonstr.: Mittelstreifen	3::igndisp 4651,4638 4515,4581 4265,4484
 Roonstr. -> Hindenburgdamm: Mittelstreifen	3::igndisp 4265,4484 4515,4581 4515,4760
 Roonstr. -> Flotowstr.: Mittelstreifen	3::igndisp 4265,4484 4515,4581 4651,4638

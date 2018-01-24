@@ -2223,14 +2223,7 @@ Drängelgitter	BNP:2::trailer=6 7911,8329
 Schranke, kann auf Bürgersteig umfahren werden	BNP:3::trailer=5 1778,20377
 Schranke	BNP:3::trailer=10 5296,11529
 # 
-#: next_check_id: DIESEL-2015 vvv
-#: note: mittlerweile gibt es hier auch zwei Baustellenampeln mit Anforderung, allerdings wird relativ schnell auf grün geschaltet --- jetzt (2017-12) nur noch eine vvv
-#: last_checked: 2017-12-27 vvv
-Drängelgitter	BNP:3::trailer=8 14366,8058
-Drängelgitter	BNP:5::trailer=10 14425,8052
-#: note ^^^
-#: last_checked ^^^
-#: next_check_id ^^^
+# REMOVED --- #: next_check_id: DIESEL-2015 vvv --- #: note: mittlerweile gibt es hier auch zwei Baustellenampeln mit Anforderung, allerdings wird relativ schnell auf grün geschaltet --- jetzt (2017-12) nur noch eine vvv --- #: last_checked: 2017-12-27 vvv --- Drängelgitter	BNP:3::trailer=8 14366,8058 --- Drängelgitter	BNP:5::trailer=10 14425,8052 --- #: note ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
 # 
 Drängelgitter	BNP:5::trailer=10 4626,20960
 #: note: Umfahrung auf Gehwegabschnitt
@@ -2605,6 +2598,8 @@ Schwingtor	BNP:5::trailer=10 7400,8273
 Schwingtor	BNP:5::trailer=10 7289,8259
 Schwingtor	BNP:5::trailer=10 7372,8222
 #: note: ^^^
+Schwingtor	BNP:5::trailer=10 14824,9390
+Schwingtor	BNP:5::trailer=10 14797,9396
 # 
 #: note: Fahrräder mit Anhänger könnten auf den parallelen Gehweg geführt werden
 Schranke, sehr enge Durchfahrt, nicht anhängertauglich	BNP:5::trailer=no 14658,7513
@@ -2840,10 +2835,7 @@ Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
 #: check_frequency: 14d
 (Wadzeckstr. - Mollstr.)	2::inwork 11326,13196 11409,13327
 # 
-#: next_check_id: PLANSTRASSEC-2018
-#: XXX bleibt die Straße für den öffentlichen Verkehr gesperrt?
-#: last_checked: 2018-01-12
-Planstraße C: gesperrt, Privatstraße	2 12926,11224 12848,11093
+# REMOVED (keine Absperrungen mehr + kleines Schild, das man leicht übersehen kann) --- #: next_check_id: PLANSTRASSEC-2018 --- #: XXX bleibt die Straße für den öffentlichen Verkehr gesperrt? --- #: last_checked: 2018-01-12 --- Planstraße C: gesperrt, Privatstraße	2 12926,11224 12848,11093
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6933
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_16_1713_1768_online.pdf (Benennung)
@@ -3112,23 +3104,15 @@ E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgäng
 # REMOVED (fertig) --- #: next_check_id: FISCHERINSEL-2015 vvv --- #: source_id: 2147339543 vvv --- #: last_checked: 2016-12-16 vvv --- #: next_check: 2016-12-22 vvv --- Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 --- Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10687,11853 10869,11949 --- Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10672,11870 --- Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,11853 10869,11949
 # REMOVED (fertig) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5561.html --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/gerickesteg/index.shtml (20 Monate Bauzeit) --- #: XXX laut http://www.stadtentwicklung.berlin.de/bauen/strassenbau/ bis "II. Quartal 2017" --- #: osm_watch: way id="27250334" version="7" --- #: last_checked: 2017-09-09 --- #: check_frequency: 45d --- Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,12669 6765,12680
 # 
-#: XXX Sperrungen wegen der IGA 2017 vvv
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.640770.php (Wiedereröffnung evtl. am 31. März 2018)
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.647555.php
-#: last_checked: 2017-08-09 vvv
-#: next_check: 2017-10-15 vvv
-IGA 2017-Gelände: Wege gesperrt	2 22455,14815 22417,14837 22380,14831 22331,14793 22254,14793 22199,14744 22164,14722 22108,14710 22090,14704 22071,14630 22051,14604 22026,14601 22012,14556 21985,14513 22026,14501 22061,14471 22172,14287 22414,14144 22503,14104
-IGA 2017-Gelände: Wege gesperrt	2 22414,14144 22462,14172 22639,14384 22679,14450 22670,14520
-#: osm_watch: way id="338582727" version="4"
-IGA 2017-Gelände: Wege gesperrt	2 22414,14144 22407,14111 22404,13984
+# REMOVED --- #: XXX Sperrungen wegen der IGA 2017 vvv --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.640770.php (Wiedereröffnung evtl. am 31. März 2018) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.647555.php --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.668510.php (vorzeitig offen) --- #: last_checked: 2017-08-09 vvv --- #: next_check: 2017-10-15 vvv
+# REMOVED --- IGA 2017-Gelände: Wege gesperrt	2 22455,14815 22417,14837 22380,14831 22331,14793 22254,14793 22199,14744 22164,14722 22108,14710 22090,14704 22071,14630 22051,14604 22026,14601 22012,14556 21985,14513 22026,14501 22061,14471 22172,14287 22414,14144 22503,14104
+# REMOVED --- IGA 2017-Gelände: Wege gesperrt	2 22414,14144 22462,14172 22639,14384 22679,14450 22670,14520
+# REMOVED --- #: osm_watch: way id="338582727" version="4" --- IGA 2017-Gelände: Wege gesperrt	2 22414,14144 22407,14111 22404,13984
 # REMOVED --- : next_check: 2016-11-25 --- IGA 2017-Gelände: Wege gesperrt	2 21408,14591 21450,14576 21822,14480 21925,14500 21948,14501
-IGA 2017-Gelände: Wege gesperrt	2 21948,14501 21985,14513
+# REMOVED --- IGA 2017-Gelände: Wege gesperrt	2 21948,14501 21985,14513
 # REMOVED (möglicherweise offen) --- IGA 2017-Gelände: Wege gesperrt	2 22783,14034 22987,13989
 # REMOVED (wieder offen) --- IGA 2017-Gelände: Wege gesperrt	2 22638,13902 22783,14034 22855,14114 22872,14175 22872,14233 22860,14440
-IGA 2017-Gelände: Wege gesperrt	2 22503,14104 22783,14034
-#: next_check ^^^
-#: last_checked ^^^
-#: XXX ^^^
+# REMOVED --- IGA 2017-Gelände: Wege gesperrt	2 22503,14104 22783,14034
 # 
 # REMOVED --- #: XXX Rübertragen ist zur Not möglich vvv --- #: by:  --- #: last_checked: 2016-08-20 vvv --- #: check_frequency: 120d vvv --- Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 19015,3129 18892,3256 18689,3465 --- Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 18689,3465 18892,3256 19015,3129
 # 
@@ -3172,12 +3156,12 @@ Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3
 #: next_check_id ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2018-01-12
+#: last_checked: 2018-01-24
 #: check_frequency: 120d
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2018-01-12
+#: last_checked: 2018-01-24
 #: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 

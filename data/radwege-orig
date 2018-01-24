@@ -737,7 +737,8 @@ asphaltiert	RW1; -1746,24219 -1872,24336
 #: by: mapillary
 Gehweg für Radfahrer frei	RW1; -1872,24336 -1746,24219
 	RW2;RW2 -344,15200 -343,15113 -315,14933 -284,14738 -278,14532
-	RW2;RW8 449,15654 525,15435 559,15342 613,15195 651,15091 717,14894 741,14827 838,14530 842,14518 862,14463 889,14392
+#: by: mapillary (Benutzungspflicht)
+	RW1;RW9 449,15654 525,15435 559,15342 613,15195 651,15091 717,14894 741,14827 838,14530 842,14518 862,14463 889,14392
 	RW1;RW1 2095,11440 2082,11554
 	RW;RW1 2082,11554 2058,11756
 	RW1;RW2 6651,4843 6744,4983
@@ -874,7 +875,7 @@ Verbundsteinpflasterradweg	RW1; 7757,834 7867,831
 #: by: http://www.dafmap.de/d/berlin.html?id=3875&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-11-30)
 #: source_id: 2147342177
 #: last_checked: 2017-12-26
-#: check_frequency: 60d
+#: next_check: 2017-01-23
 provisorische Radspur	RW3; 6228,13324 6229,13517 6230,13596
 #: XXX wegen Bauarbeiten aufgehoben
 #: last_checked: 2017-12-26
@@ -907,8 +908,8 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=22111
 #: source_id: IM_023718
 #: source_id: 2147339540
-#: last_checked: 2017-11-15
-#: next_check: 2017-12-31
+#: last_checked: 2018-01-23
+#: check_frequency: 60d
 	RW2;RW8 14530,7301 14369,7376 14334,7395 14174,7505
 	RW1; 14015,7631 13919,7707
 	RW2;RW1 14530,7301 14617,7243
@@ -2041,8 +2042,8 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr	RW1; 5256,2379 5229,2395 5
 Gehweg für Radfahrer frei	RW1; 5191,2350 5212,2360 5256,2379
 	RW1;RW3 4517,4853 4515,4760
 	RW1;RW 4515,4760 4515,4581
-	RW;RW 4515,4581 4521,4484
-	RW;RW1 4521,4484 4551,4042
+	RW1;RW 4515,4581 4516,4483
+	RW1;RW1 4516,4483 4517,4473 4551,4042
 	RW1;RW 4551,4042 4573,3862 4592,3762 4596,3738
 Gehweg für Radfahrer frei	RW1; 4596,3738 4603,3704 4603,3658 4585,3575
 	RW1; 4585,3575 4603,3658 4603,3704 4596,3738
