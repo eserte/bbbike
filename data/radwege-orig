@@ -297,11 +297,17 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 	RW2;RW8 454,11159 480,11204 504,11243
 	RW2;RW1 4741,5309 4677,5274 4593,5235 4512,5199
 	RW2;RW2 4512,5199 4432,5160 4343,5112
+#: XXX Radwege sollen saniert werden oder es entstehen sogar Radstreifen (Umsetzung 2018) vvv
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
+#: next_check: 2018-12-31 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160 10501,11056 10637,10996 10684,10975
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
 # REMOVED --- #: XXX wegen Bauarbeiten (Erweiterung AUFBAU) ist der Radweg hier aufgehoben (danach den alten Eintrag wieder herstellen + join machen) --- #: last_checked: 2014-11-21 --- #: check_frequency: 60d
 eine Busspur existiert hier auch (gilt Mo-Fr 7-18 Uhr), ist aber nicht für Radfahrer freigegeben	RW1; 10779,10934 10794,10927 10839,10907
 	RW1; 10839,10907 10794,10927 10779,10934 10684,10975
+#: next_check ^^^
+#: by ^^^
+#: XXX ^^^
 altes Verbundsteinpflaster, einige Wurzelhebungen	RW1;RW2 10605,10312 10633,10369
 altes Verbundsteinpflaster, einige Wurzelhebungen	RW1;RW1 10633,10369 10685,10483 10689,10491 10776,10682 10856,10856
 	RW3;RW3 10500,10081 10521,10126 10580,10256

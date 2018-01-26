@@ -13,6 +13,30 @@
 # unteren privaten bzw. öffentlichen Abschnitte unterbringen.
 # Zumindest Texte müssten dann diese Einträge bekommen.
 #
+#
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.670050.php
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
+#: XXX Kreuzberger Planungen für 2018 und später (es wurden nicht alle in den BBBike-Daten eingetragen)
+#: next_check: 2018-12-31
+Mehringdamm: Radspuren oder Sanierung	?::projected; 9224,9053 9225,9111 9248,9350 9280,9476 9334,9670 9387,9804 9444,9919 9448,10014
+# 
+#: XXX außerdem: Nordseite wird saniert
+#: last_checked: 2018-01-26
+#: next_check: 2018-12-31
+Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
+# 
+#: next_check: 2018-12-31
+Görlitzer Park: Verbesserungen geplant	?::projected 12814,9966 12833,9998 12869,10071 12901,10134 12905,10143
+# 
+#: next_check: 2018-12-31
+NKZ: Verbesserungen geplant	?::projected 11291,10438 11317,10485 11344,10507 11334,10527
+# 
+#: next_check: 2018-12-31
+Yorckstr. - Hornstr.: Verbesserung der Zufahrt geplant	?::projected 9044,9753 9002,9731 8980,9751 8988,9783
+# 
+#: next_check: 2018-12-31
+Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14868,10467
+#: by: ^^^
 # 
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden
 #: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
@@ -32,7 +56,7 @@ Danziger Str.	?::projected 12616,14315 12722,14232 12901,14093 12975,13990 13037
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2018-01-22
+#: last_checked: 2018-01-26
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -2315,7 +2339,7 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7478
 #: XXX "noch 2016"
 #: osm_watch: note 824350 3
-#: last_checked: 2018-01-19
+#: last_checked: 2018-01-26
 #: check_frequency: 14d
 #: priority: #C
 Sebastian/Luckauer: Zebrastreifen in Bau	?::inwork 11113,10943 11109,10935
@@ -2754,6 +2778,7 @@ Wanderweg entlang des Grenzstreifens: Qualität?	? 5264,24186 5304,24244 5327,243
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/artikel.317415.php
 #: by: http://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/5-87a_reinplan.pdf
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_51_5789_5888_online.pdf (Straßenbenennungen)
+#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_04_0449_0624_online.pdf (Grundstücksnummerierungen)
 #: XXX private Erschließungsstraßen
 #: last_checked: 2017-08-26 vvv
 # REMOVED --- Bebauungsplan 5-87a (ehemaliges Kraftwerk Oberhavel): hier werden Wege für Radfahrer entstehen	? -2673,18634 -2670,18775 -2413,18770
