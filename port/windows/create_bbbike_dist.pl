@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2015,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2015,2016,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -27,6 +27,7 @@ my $do_snapshot;
 my $do_continue;
 my $do_bbbike_update = 1;
 my $strawberry_ver = '5.24.0.1';
+my $strawberry_opts;
 my $bbbike_git_remote = 'origin';
 my $bbbike_git_branch = 'master';
 GetOptions(
@@ -34,6 +35,7 @@ GetOptions(
 	   "c|cont|continue" => \$do_continue,
 	   "bbbike-update!" => \$do_bbbike_update,
 	   'strawberry-version|strawberry-ver=s' => \$strawberry_ver,
+	   'strawberry-opts=s' => \$strawberry_opts,
 	   'git-remote=s' => \$bbbike_git_remote,
 	   'git-branch=s' => \$bbbike_git_branch,
 	  )
@@ -113,6 +115,9 @@ if ($do_bbbike_update) {
     #     cd C:\cygwin\home\eserte\work\bbbike && perl port\windows\create_customized_strawberry.pl -strawberrydir C:\cygwin\home\eserte\strawberry-5.14.2.1 -bbbikedistdir c:\cygwin\home\eserte\bbbikewindist "c:\Dokumente und Einstellungen\eserte\Eigene Dateien\Downloads\strawberry-perl-5.14.2.1-32bit-portable.zip
 
     my $cmd = qq{cd $bbbike_dos_path && perl port\\windows\\create_customized_strawberry.pl -strawberrydir $strawberry_dir -bbbikedistdir $bbbikewindist_dir "$strawberry_zip_path"};
+    if ($strawberry_opts) {
+	$cmd .= " " . $strawberry_opts;
+    }
     print STDERR "Running $cmd...\n";
     system $cmd;
     $? == 0 or die "Previous command failed";

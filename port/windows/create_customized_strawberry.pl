@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2011,2012,2015,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2011,2012,2015,2016,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -37,11 +37,13 @@ my $bbbikedist_dir;
 my $use_bundle; # by default, use task
 my $only_action;
 my $strip_vendor = 1;
+my $try_ppm = 0; # XXX currently not ready, see preinstall_with_ppm.pl
 GetOptions(
 	   "strawberrydir=s" => \$strawberry_dir,
 	   "strawberryver=s" => \$strawberry_ver,
 	   "bbbikedistdir=s" => \$bbbikedist_dir,
 	   "bundle!" => \$use_bundle,
+	   "try-ppm!" => \$try_ppm,
 	   'only-action=s' => \$only_action,
 	   'strip-vendor!' => \$strip_vendor,
 	  )
@@ -78,6 +80,8 @@ EOF
 	}
     }
 }
+
+my $portwindir = $FindBin::RealBin;
 
 my $patchdir = "$FindBin::RealBin/patches/strawberry-perl-$strawberry_ver";
 if (-d $patchdir) {
@@ -254,6 +258,9 @@ sub action_add_bbbike_bundle {
 		print STDERR "Add modules from Task::BBBike::windist...\n";
 		chdir "Task/BBBike/windist"
 		    or die "Can't chdir to task directory: $!";
+		if ($try_ppm) {
+		    system($perl_exe, "$portwindir/preinstall_with_ppm.pl", "-v");
+		}
 		system(@cpan_cmd, '.');
 		$assert_module_installed->('Task::BBBike::windist');
 	    }
