@@ -21,10 +21,10 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualit‰t danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-01-26
+#: last_checked: 2018-01-27
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
-#: last_checked: 2018-01-26
+#: last_checked: 2018-01-27
 Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # 
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
@@ -857,7 +857,7 @@ Elbingeroder Weg: hohe Bordsteine	q4 13178,9062 13146,9085
 Marie-Elisabeth-L¸ders-Steg: eng, Fuﬂg‰nger	q2 8415,12749 8593,12742 8596,12760
 #: XXX_prog BS Bordstein hˆchstens auf der Westseite, auf der Ostseite abgesenkt, aber Gehweg ist ziemlich kurvig
 Kleine Andreasstr.: Gehweg, Bordsteine	q3 12211,12128 12279,12113
-Fritz-Schiff-Weg: Fuﬂg‰nger	q1 13457,12505 13484,12436 13448,12340
+Fritz-Schiff-Weg: Fuﬂg‰nger	q1 13457,12505 13476,12461 13448,12340
 #: XXX_prog Bordstein zur Parochialstr., die andere Seite ist abgesenkt (ansonsten q1 oder sogar besser)
 (Molkenmarkt - Parochialstr.): Bordstein	q2 10738,12364 10831,12371
 #: note: von S¸den aus explizit f¸r Radfahrer verboten, von Norden aus fehlt so ein Schild
@@ -2660,7 +2660,7 @@ Friedrichstr. (Lichterfelde): Fuﬂ- und Radweg	q1 2890,3561 2712,3602
 (Uferweg): teilweise relativ schmal, Fuﬂg‰nger	q1 5166,13087 5144,13075 5076,13116 4940,13168 4742,13157 4751,13245
 Sparrstr. - Triftstr.: Gehweg	q1 7303,15173 7241,15293
 #: note: laut ADFC-Karte "m‰ﬂig"
-(Max-Lingner-Str. - Maximilianstr.): schmaler Fuﬂweg und Parkplatz	q2 11094,17339 10892,17330
+(Max-Lingner-Str. - Maximilianstr.): schmaler Fuﬂweg und Parkplatz	q2 11094,17339 10899,17331
 (Seecktstr. - Wilhelmstr.): breiter Gehweg	q0 -4017,13167 -3896,13124
 #: by: ^^^
 #: by: Helmut Stockinger:
@@ -3634,7 +3634,7 @@ K¸selstr.: enge Straﬂe	q1 12299,15463 12221,15514 12158,15556 12094,15598 12058,
 # REMOVED (gar nicht eng) --- #: by: anonymous --- Lutherstr. (Spandau): enge Straﬂe	q1 -3248,15543 -3234,15567 -3179,15574 -3134,15578 -3006,15534 -2908,15498
 #: by: Torsten (scholz):
 #: corrected_by: srt/policy (q1 -> q0-)
-Zillertalstr.: enge Straﬂe	q0- 10813,17193 10498,17192 10228,17191 10198,17196
+Zillertalstr.: enge Straﬂe	q0- 10807,17193 10498,17192 10228,17191 10198,17196
 # REMOVED --- #: by: Frank Soukup: vvv --- Am Heideberg: enge Straﬂe	q1 -7114,14579 -7115,14663 -7121,14711 --- Am Heideberg: enge Straﬂe	q1 -7149,14768 -7156,14813 -7169,14849 -7209,14937 -7234,15003 -7292,15114 -7326,15145 -7373,15154 ---#: by: ^^^
 #: by: Maria (ferrusac):
 Reinhardtstr. (Tempelhof): enge Straﬂe	q1 9154,6638 9131,6553 9134,6467 9143,6415

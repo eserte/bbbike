@@ -155,7 +155,7 @@ Petersburger Platz	1 13470,12990 13559,12779
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
-#: osm_watch: way id="4490214" version="9"
+#: osm_watch: way id="4490214" version="10"
 #: last_checked: 2017-07-11
 #: next_check: 2018-03-01
 Dernburgstr.	1 2493,10675 2378,10677 2333,10710 2254,11051
@@ -1595,8 +1595,8 @@ Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3nocross 21954,11269 2224
 # REMOVED (es existiert ein offizieller Radweg auf der linken Seite) --- Konrad-Wolf-Str./Große-Leege-Str.: wegen Absperrgitter nicht überquerbar	3nocross 16961,16042 16917,16001 16819,15912
 Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3nocross 2975,15813 2960,15847 2944,15880
 Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3nocross 2944,15880 2913,15944 2809,16143
-Berliner Str.: Straßenbahntrasse	3nocross 10897,17274 10892,17330 10886,17396
-Berliner Str.: Straßenbahntrasse	3nocross 10886,17396 10880,17469 10878,17490
+Berliner Str.: Straßenbahntrasse	3nocross 10904,17288 10899,17331 10892,17396
+Berliner Str.: Straßenbahntrasse	3nocross 10892,17396 10885,17469 10883,17491
 #: note: Luftbild:
 Berliner Str.: Straßenbahntrasse	3nocross 13737,15994 13826,16026 14015,16103
 Berliner Str.: Straßenbahntrasse	3nocross 12166,21208 12188,21330 12209,21448
@@ -2931,9 +2931,9 @@ Gutenbergstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5317,12242 5518,1215
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036562139600/562139600/00280921/21-Anlagen/01/DS0329_VzK_Strassenbenennung_Moeckernkiez_fina.pdf
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_30_3365_3488_online.pdf (Benennung)
 #: XXX Qualität, genaue Lage, Sackgasse?
-#: osm_watch: way id="264361563" version="1"
+#: osm_watch: way id="264361563" version="3"
 #: last_checked: 2017-12-25
-#: check_frequency: 60d
+#: next_check: 2018-01-27
 Möckernkiez: Bauarbeiten	2::inwork 8778,9759 8741,9741 8729,9670 8587,9590 8566,9643
 # 
 # REMOVED (vermutlich beendet) --- #: next_check_id: OBERERWUHLEWANDERWEG-2017 --- #: last_checked: 2017-08-09 --- #: XXX Ende der Bauarbeiten --- #: next_check: 2017-08-11 --- #: priority: #A --- oberer Wuhlewanderweg: Bauarbeiten, komplett gesperrt	2::inwork 22873,14498 22864,14556
@@ -3043,9 +3043,9 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: osm_watch: way id="441442656" version="1"
+#: osm_watch: way id="441442656" version="2"
 #: last_checked: 2018-01-14
-#: check_frequency: 14d
+#: next_check: 2018-01-27
 Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,14449 7551,14464
 # REMOVED (fertig) --- Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7551,14464 7426,14539 7396,14569 7368,14573
 # 
@@ -3435,7 +3435,7 @@ Danziger Str.: Straßenbahnschienen	3nocross 13100,13803 13166,13707 13225,13620
 Pintschstr.	1 13339,13196 13435,12973
 Landsberger Allee	3nocross 12382,13097 12585,13118 12711,13150
 Landsberger Allee: Straßenbahntrasse	3nocross 13635,13605 13702,13634 13854,13701
-Landsberger Allee: Straßenbahntrasse	3nocross 13164,13374 13246,13420 13330,13468
+Landsberger Allee: Straßenbahntrasse	3nocross 13151,13367 13246,13420 13330,13468
 # REMOVED (mitlerweile (ca. 2012) existiert für Fußgänger und Autofahrer eine Kreuzungsmöglichkeit) --- #: by: jörg (schalkau): --- #: confirmed_by: srt --- Landsberger Allee	3nocross 17254,14451 17533,14484 17848,14523
 Landsberger Allee	3nocross 21475,15705 21584,15753 21709,15808
 Landsberger Allee	3nocross 19852,15201 19987,15280 20260,15434

@@ -81,7 +81,7 @@ Neue Bahnhofstr./Boxhagener Str.: Fußgängerampel auf der linken Seite benutzen	C
 #: XXX eventuell wird es hier in Zukunft Verbesserungen geben, siehe BVV-Beschluss
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3277&options=4
 #: source_id: IM_022413
-#: last_checked: 2017-10-09
+#: last_checked: 2018-01-27
 #: check_frequency: 90d
 Rennbahnstr./Bernkasteler Str.: Fußgängerampel auf der linken Seite zum Überqueren der Berliner Allee benutzen	CP; 14528,16910 14558,16907 14673,16895
 # 
@@ -212,7 +212,7 @@ etwa in Höhe Kino Kosmos abbiegen	CP; 13448,12340 13543,12326 13556,12302
 vor dem Kino Kosmos abbiegen	CP; 13785,12292 13543,12326 13556,12302
 #: note: die Straße ist hier nicht ausgeschildert
 Ludwig-Pick-Str. beginnt an der Zufahrt zur Tiefgarage Kosmos-Kino	CP2; 13543,12326 13552,12435
-Fritz-Schiff-Str. beginnt am Ende der Parallelstraße zur Karl-Marx-Allee	CP2; 13448,12340 13484,12436
+Fritz-Schiff-Str. beginnt am Ende der Parallelstraße zur Karl-Marx-Allee	CP2; 13448,12340 13476,12461
 Siegertweg - Manfred-von-Richthofen-Str.: Überqueren der Straße am Kleineweg (rechts) oder am Thuyring (links)	CP; 9042,7462 9070,7493 8956,7598
 Manfred-von-Richthofen-Str. - Siegertweg: bereits am Kleineweg links abbiegen	PI; 9097,7469 9070,7493 9042,7462
 (Auerbachstr. - Koenigsallee): nicht den Weg direkt am Bahndamm, sondern Weg links daneben nehmen	CP2; 505,8702 445,8429
@@ -350,8 +350,8 @@ Vinetastr. - Mühlenstr.: die Fahrradampel links benutzen	CP; 11267,17027 10927,1
 Bohnsdorfer Str. (Waldweg): Die Einfahrt ist sehr zugewachsen	CP2; 22004,2149 21997,1869
 Wassersportallee - Bohnsdorfer Str.: über Zufahrt zur Tankstelle und zum Parkplatz	CP2; 22208,1103 22168,1163
 #: by: ^^^
-Berliner Str. - Masurenstr.: entweder bereits an der Samländischen Str. die Straßenseite wechseln oder die Straßenbahntrasse in Höhe Binzstr. überqueren und zurückfahren	PI; 10886,17396 10880,17469 10670,17458
-Masurenstr. - Berliner Str.: zunächst auf dem linken Gehweg bis zur Höhe Binzstr. fahren	CP; 10670,17458 10880,17469 10878,17490
+Berliner Str. - Masurenstr.: entweder bereits an der Samländischen Str. die Straßenseite wechseln oder die Straßenbahntrasse in Höhe Binzstr. überqueren und zurückfahren	PI; 10892,17396 10885,17469 10670,17458
+Masurenstr. - Berliner Str.: zunächst auf dem linken Gehweg bis zur Höhe Binzstr. fahren	CP; 10670,17458 10885,17469 10883,17491
 # REMOVED (mittlerweile existiert alternativ eine direkte Überquerungsmöglichkeit) --- Kongostr. - Müllerstr.: zunächst auf dem linken Gehweg bis zur Türkenstr. oder bis zur Fußgängerampel fahren	CP; 6349,16213 6450,16325 6444,16331
 # REMOVED (mittlerweile existiert alternativ eine direkte Überquerungsmöglichkeit) --- Müllerstr. - Kongostr.: an der Türkenstr. oder an der Fußgängerampel die Straßenseite wechseln und zurückfahren	CP; 6608,16180 6450,16325 6349,16213
 ## Rethink, retest appearance:

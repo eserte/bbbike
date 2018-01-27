@@ -126,7 +126,7 @@ Suermondtstr. -> Am Faulen See: Fußgängerfurt	DH:len=20 16476,16216 16520,16200 
 # 
 Am Juliusturm -> Zitadelle: Ampel	DH:len=100:tl -2794,14511 -2647,14532 -2652,14559
 # 
-Berliner Str. -> Masurenstr.: Mittelstreifen	DH:len=40 10886,17396 10880,17469 10670,17458
+Berliner Str. -> Masurenstr.: Mittelstreifen	DH:len=40 10892,17396 10885,17469 10670,17458
 # 
 Karl-Marx-Allee -> Krautstr.: am Strausberger Platz (Ampel) die Karl-Marx-Allee überqueren und einige Meter zurückfahren	DH:len=40:tl 12360,12505 12134,12540 12125,12490
 # 
@@ -200,3 +200,6 @@ Residenzstr. - Lettestr.: linker Gehweg	DH:h=q3,80 7602,17399 7675,17430 7707,17
 Karl-Marx-Allee - Berolinastr.: linker Gehweg	DH:h=q3,75 11226,12945 11289,12908 11367,12940
 # 
 Osdorfer Str. - Mercartorweg: Fußgängerampel	DH:len=30:tl 4948,562 4875,677 4695,556
+#
+Straße 106 - Indira-Gandhi-Str.: Umweg zur Überquerungsmöglichkeit	DH:len=90 14666,14845 14828,15050 14686,15608
+Indira-Gandhi-Str. - Straße 106: linker Gehweg	DH:h=q3,45 14843,15007 14828,15050 14666,14845

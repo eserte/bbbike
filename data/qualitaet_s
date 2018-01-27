@@ -1775,7 +1775,7 @@ Logauweg: Kopfsteinpflaster	Q2 23390,1785 23497,1812 23627,1835
 (Walter-Nicklitz-Promenade): glattes Verbundsteinpflaster	Q0 8290,15304 8329,15397
 Pankebr¸cke: Holzbohlen	Q1 8329,15397 8308,15409
 (Walter-Nicklitz-Promenade): glattes Verbundsteinpflaster	Q0 8308,15409 8312,15470 8156,15614
-Parkstr.: Asphalt mit Straﬂensch‰den	Q1 9909,18333 10075,18472 10205,18575 10359,18646 10496,18704
+Parkstr.: leicht welliger Asphalt	Q0 9909,18333 10075,18472 10205,18575 10359,18646 10496,18704
 Eintrachtstr.: Asphalt mit Straﬂensch‰den	Q2 10710,18393 10650,18544
 Hiddenseer Str.: Asphalt mit leichten Sch‰den	Q0 11651,15273 11828,15210
 Stubbenkammerstr.: Asphalt mit leichten Sch‰den	Q0 11631,15192 11801,15132
@@ -10063,7 +10063,8 @@ Nikolaus-Groﬂ-Weg: Beton	Q0 2087,14078 2038,13870
 Nikolaus-Groﬂ-Weg: guter Asphalt	Q0 2038,13870 2025,13815
 Bansiner Str.: guter Asphalt	Q0 22723,12631 22722,12710 22692,12747 22597,12751 22595,12856 22619,12885 22679,12888 22785,12840 22807,12782 22906,12766
 Bruno-Taut-Ring: Asphalt	Q0 13833,3665 13682,3718 13628,3781 13632,3875 13673,3915 13726,3928 13909,3845
-Pfeilstr.: m‰ﬂiges Kopfsteinpflaster	Q2 9897,18496 9568,18682
+Pfeilstr.: m‰ﬂiges Kopfsteinpflaster	Q2 9897,18496 9805,18548
+Pfeilstr.: m‰ﬂiges Kleinsteinpflaster	Q2 9805,18548 9568,18682
 Lauterbachstr.: guter Asphalt	Q0 11272,17930 11296,17799
 Hannaweg: Beton mit Sch‰den	Q1 20923,13953 20938,14066
 Boskoopweg: m‰ﬂiger Asphalt	Q1 20755,15450 20615,15237
@@ -10590,7 +10591,7 @@ Budsiner Str.: asphaltiert	Q0 19805,11441 19966,11394 20005,11383 20140,11343
 Schlochauer Str.: unbefestigte Straﬂe	Q2 19789,11151 19795,11256 19799,11333
 Schlochauer Str.: asphaltiert	Q0 19799,11333 19801,11360 19805,11441 19807,11572
 Arnold-Zweig-Str.: Asphalt	Q0 11872,17522 11729,17499 11604,17478 11482,17459 11243,17421 11088,17395
-Binzstr.: holprige Pflasterstraﬂe	Q2 11849,17655 11700,17629 11596,17610 11457,17585 11073,17526 10878,17490
+Binzstr.: holprige Pflasterstraﬂe	Q2 11849,17655 11700,17629 11596,17610 11457,17585 11073,17526 10883,17491
 Sponholzstr.: Asphalt	Q0 6144,7677 6166,7658 6163,7237 6163,7225 6157,7117
 Puccinistr.: Asphalt	Q0 13700,15501 13776,15546 13964,15656
 Argenauer Str.: Kopfsteinpflaster	Q2 22035,7146 21944,7122 21846,7096 21791,7126
@@ -12259,7 +12260,7 @@ Odilostr.: Asphalt	Q0 3216,24135 3311,24150 3483,24186 3632,24214
 Odilostr.: Asphalt	Q0 3632,24214 3771,24241 3902,24266
 Westfalenring: m‰ﬂiger Beton	Q1 4068,406 4079,354 4066,277 4029,144 3939,109 3922,111 3837,166 3795,221 3729,324
 T‰ubchenstr.: Asphalt	Q0 -862,4542 -947,4303
-Masurenstr.: m‰ﬂiger Asphalt	Q1 10880,17469 10670,17458
+Masurenstr.: m‰ﬂiger Asphalt	Q1 10885,17469 10670,17458
 Martin-Opitz-Str.: Kopfsteinpflaster	Q2 8236,16071 8077,16178
 Martin-Opitz-Str.: Asphalt	Q0 8077,16178 7987,16332
 Mittelheide: Asphalt	Q0 22724,6608 22858,6535 23033,6511 23135,6500 23220,6520 23299,6541 23375,6579 23482,6649 23593,6663
@@ -12475,7 +12476,7 @@ Ekkehardstr.: schlechtes Kopfsteinpflaster	Q3 16156,7061 16220,7003 16286,6946
 Achtrutenberg: Asphalt	Q0 15367,24118 15435,24032 15443,24008 15435,23980 15389,23898 15370,23865 15311,23795
 Leonhard-Frank-Str.: Kopfsteinpflaster	Q2 9229,18178 9342,18323
 Leonhard-Frank-Str.: Asphalt	Q0 9342,18323 9378,18370 9480,18539
-Leonhard-Frank-Str.: schlechtes Kopfsteinpflaster	Q3 9542,18634 9568,18682 9613,18758
+Leonhard-Frank-Str.: Kopfsteinpflaster	Q2 9542,18634 9568,18682 9613,18758
 Stechowstr.: m‰ﬂiger fester Sandweg, unebene Fahrbahn	Q2 11007,20112 11066,19986
 Straﬂe 103 (Niederschˆnhausen): m‰ﬂiger Asphalt, Schlaglˆcher	Q1 10914,20065 11051,19789
 Jˆrsstr.: schlechtes Kopfsteinpflaster	Q3 -1478,18407 -1358,18400
@@ -13171,7 +13172,7 @@ Korkedamm: guter Asphalt	Q0 19549,2331 19654,2325 19962,2277 20100,2247
 Wacholderheide: m‰ﬂiges Kopfsteinpflaster	Q2 25776,13487 25922,13657 26006,13750 26104,13861 26271,14049
 Wacholderheide: unbefestigte Straﬂe	Q2 26271,14049 26303,14084
 Ziegenorter Pfad: schlechtes Kopfsteinpflaster	Q3 -1434,24191 -1347,24096 -1297,24049 -1270,24019 -1303,23924 -1373,23844
-Zillertalstr.: Asphalt	Q0 10813,17193 10498,17192 10228,17191 10198,17196
+Zillertalstr.: Asphalt	Q0 10807,17193 10498,17192 10228,17191 10198,17196
 Neuwieder Str.: Asphalt	Q0 19206,9243 19221,9517 19236,9710 19242,9815
 Eweststr.: guter Asphalt	Q0 12298,21015 12227,20966 12189,20959 12121,20969
 Ludwigsburger Weg: guter Asphalt	Q0 7310,4308 7254,4396
@@ -13452,7 +13453,7 @@ Ringelnatzstr.: guter Beton	Q0 10971,-499 10868,-539 10955,-769
 Werfelstr.: guter Asphalt	Q0 10126,-834 9907,-812
 Simpsonweg: m‰ﬂiger Beton	Q1 10092,-669 9937,-693 9913,-705 9899,-732 9907,-812 9888,-853
 Stephanusring: Asphalt	Q0 11934,22108 11890,22123 11863,22146 11876,22212 11950,22162
-Saml‰ndische Str.: Asphalt, Straﬂenschˆden	Q1 10886,17396 10706,17391
+Saml‰ndische Str.: Asphalt, Straﬂenschˆden	Q1 10892,17396 10706,17391
 Saarower Weg: Asphalt	Q0 30910,3824 31032,3847 31210,3873
 Lindenhoekweg: guter Asphalt	Q0 12382,15802 12310,15837 12247,15868
 Hortwinkeler Weg: Asphalt	Q0 30345,4293 30407,4484 30478,4715
@@ -15067,7 +15068,7 @@ Kurt-Exner-Str.: Kopfsteinpflaster	Q2 13976,13309 13862,13262
 Agnes-Wabnitz-Str.: Kopfsteinpflaster	Q2 13934,13403 13819,13356
 Agnes-Wabnitz-Str.: Kopfsteinpflaster	Q2 13916,13443 13805,13394
 Wilhelm-Stolze-Str.: Kopfsteinpflaster	Q2 13267,13167 13368,12943
-Fritz-Schiff-Weg: Kleinpflaster	Q1 13448,12340 13484,12436 13457,12505
+Fritz-Schiff-Weg: Kleinpflaster	Q1 13448,12340 13476,12461 13457,12505
 Ludwig-Pick-Str.: Asphalt	Q0 13548,12535 13552,12435
 Ludwig-Pick-Str.: Gehwegplatten	Q0 13552,12435 13543,12326
 Alte Allee: Asphalt	Q0 890,9399 794,9472 759,9497 703,9538 678,9558 616,9602

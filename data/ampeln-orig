@@ -346,7 +346,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 11019,16465
 #: Note: Anforderungsampel für Radfahrer Richtung Norden aus der Berliner Str. links in die Mühlenstr.
 	X 10927,17022
-	X 10774,17277
+	X 10758,17288
 	X 7480,7683
 	X 7499,7880
 	X 7497,8168
@@ -1197,7 +1197,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: off: night (seen 2015-06-25)
 	X 14134,11272
 	X 11785,13625
-	X 10897,17274
+	X 10904,17288
 	X 10459,17754
 	X 9909,18333
 	X 7329,18996
@@ -1962,7 +1962,8 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 1028,11309
 #: note: nicht relevant für den (benutzungsplichtigen) Radweg
 	F0 1450,11309
-	F 13164,13374
+#: XXX_prog in Nordostrichtung nur eine Fußgängerampel
+	X 13151,13367
 #: section Parkeisenbahn Wuhlheide vvv
 #: note: Fährt nur am Wochenende tagsüber während des Sommers im 15-30-Minutentakt: vvv
 	B0 20623,6136
@@ -2869,6 +2870,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: Anforderungsampel
 	F 242,1816
 #: note: Anforderung quer zur Rennbahnstr.
+#: XXX_prog gilt nicht für Radfahrer auf dem Radweg in Richtung Nordwesten
 	X 13708,17453
 	X 17681,7589
 	X 17211,7280
