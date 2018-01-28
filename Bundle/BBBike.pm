@@ -57,7 +57,7 @@ XML::SAX	- CPAN.pm kann XML::SAX nicht über XML::Simple automatisch installieren
 
 XML::Simple	- optional für XML-Dumps der BBBike-Route
 
-XML::LibXML	- optional für das Parsen und Erzeugen von GPX-Dateien und für UAProf parsing
+XML::LibXML	- optional für das Parsen und Erzeugen von GPX- und KML-Dateien und für UAProf parsing
 
 XML::Parser	- optional für UAProf parsing (bevorzugt wird allerdings XML::LibXML::SAX oder XML::SAX::PurePerl)
 

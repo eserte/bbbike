@@ -43,6 +43,8 @@ Tk::NumEntry 2.06
 
 LWP::UserAgent	- für die WWW-Verbindungen (z.B. Wetterbericht); in der Perl/Tk-GUI empfohlen für Daten-Updates über das Internet (ansonsten wird Http.pm verwendet)
 
+XML::LibXML	- optional für das Parsen und Erzeugen von GPX- und KML-Dateien und für UAProf parsing
+
 XML::Twig	- alternativ für das Parsen und Erzeugen von GPX-Dateien, benötigt XML::Parser
 
 String::Approx 2.7	- oder man verwendet agrep (mindestens Version 3.0)

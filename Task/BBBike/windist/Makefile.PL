@@ -17,6 +17,7 @@ WriteMakefile(
 	'Tk::PNG'             => 0, # Für Icons mit besserer Alpha-Unterstützung
 	'Tk::NumEntry'        => 2.06,
 	'LWP::UserAgent'      => 0, # für die WWW-Verbindungen (z.B. Wetterbericht); in der Perl/Tk-GUI empfohlen für Daten-Updates über das Internet (ansonsten wird Http.pm verwendet)
+	'XML::LibXML'         => 0, # optional für das Parsen und Erzeugen von GPX- und KML-Dateien und für UAProf parsing
 	'XML::Twig'           => 0, # alternativ für das Parsen und Erzeugen von GPX-Dateien, benötigt XML::Parser
 	'String::Approx'      => 2.7, # oder man verwendet agrep (mindestens Version 3.0)
 	'Storable'            => 0, # für das Caching beim CGI-Programm
