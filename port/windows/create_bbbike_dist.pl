@@ -26,7 +26,7 @@ my $username = $ENV{USERNAME};
 my $do_snapshot;
 my $do_continue;
 my $do_bbbike_update = 1;
-my $strawberry_ver = '5.24.0.1';
+my $strawberry_ver = '5.26.1.1';
 my $strawberry_opts;
 my $bbbike_git_remote = 'origin';
 my $bbbike_git_branch = 'master';
@@ -64,7 +64,14 @@ if (!$downloads_path) {
 }
 my $strawberry_zip_path = $downloads_path . "\\" . $strawberry_zip_file;
 if (!-s $strawberry_zip_path) {
-    die "$strawberry_zip_path does not exist or is empty. Please download the file from www.strawberryperl.com.\n";
+    my $download_url = "http://strawberryperl.com/download/$strawberry_ver/$strawberry_zip_file";
+    warn "NOTE: $strawberry_zip_path does not exist or is empty. Trying to download it from $download_url...\n";
+    require LWP::UserAgent;
+    my $ua = LWP::UserAgent->new;
+    my $resp = $ua->mirror($download_url, $strawberry_zip_path);
+    if (!$resp->is_success) {
+	die "Downloading $download_url failed: " . $resp->status_line;
+    }
 }
 
 my $strawberry_dir = "$eserte_dos_path\\$strawberry_base";
