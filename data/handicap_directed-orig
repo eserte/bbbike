@@ -41,7 +41,7 @@ Briesestr. -> Karl-Marx-Str.: wegen Bauarbeiten zun‰chst den linken Gehweg benut
 # REMOVED --- #: next_check_id: MOELLENDORFFSTR-2017 vvv --- #: last_checked: 2017-11-09 vvv --- #: next_check: 2017-11-30 vvv --- G¸rtelstr. -> Mˆllendorffstr.: Umweg zur Ampel	DH:len=70 15294,11964 15361,12071 15420,12178 --- G¸rtelstr. -> links in die Frankfurter Allee: Umweg zur Ampel	DH:len=70 15294,11964 15361,12071 15117,12106 --- Frankfurter Allee -> links in die Mˆllendorffstr.: Umweg bis Wilhelm-Guddorf-Str., Fuﬂg‰nger	DH:len=270:h=q2-,270 15117,12106 15361,12071 15420,12178 --- Frankfurter Allee geradeaus: Umweg bis Wilhelm-Guddorf-Str., Fuﬂg‰nger	DH:len=200:h=q2-,200 15117,12106 15361,12071 15670,12022 --- Mˆllendorffstr. -> links in die Frankfurter Allee: Umweg bis Wilhelm-Guddorf-Str., Fuﬂg‰nger	DH:len=250:h=q2-,250 15420,12178 15361,12071 15670,12022 --- Frankfurter Allee -> G¸rtelstr.: kleiner Umweg zur Ampel	DH:len=30:h=q3,30 15670,12022 15361,12071 15294,11964 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
 # 
 #: next_check_id: ZEUGHAUS-2014 vvv
-#: last_checked: 2018-01-04 vvv
+#: last_checked: 2018-02-01 vvv
 #: next_check: 2018-06-28 vvv
 Schinkelplatz -> Am Zeughaus: Umweg zur Ampel	DH:len=50 9996,12401 9984,12426 9956,12523
 UdL -> Am Zeughaus: Umweg zur Ampel	DH:len=50 9934,12420 9984,12426 9956,12523
@@ -167,7 +167,7 @@ Zeppelinstr. -> Edisonstr.: Fuﬂg‰ngerampel	DH:len=20:tl 18041,6924 17919,6968 17
 # 
 #: next_check_id: HOLZMARKT-2017
 #: XXX hier wird noch eine zus‰tzliche Ampel entstehen
-#: last_checked: 2017-12-20 vvv
+#: last_checked: 2018-02-01 vvv
 #: next_check: 2018-04-01 vvv
 Schillingstr. -> Holzmarktstr.: Ampel	DH:len=90:tl 11452,12318 11388,12202 11513,12138
 Holzmarktstr. -> Schillingstr.: linker Gehweg	DH:h=q2,45 11347,12223 11388,12202 11452,12318
@@ -203,3 +203,5 @@ Osdorfer Str. - Mercartorweg: Fuﬂg‰ngerampel	DH:len=30:tl 4948,562 4875,677 4695
 #
 Straﬂe 106 - Indira-Gandhi-Str.: Umweg zur ‹berquerungsmˆglichkeit	DH:len=90 14666,14845 14828,15050 14686,15608
 Indira-Gandhi-Str. - Straﬂe 106: linker Gehweg	DH:h=q3,45 14843,15007 14828,15050 14666,14845
+# 
+Gervinusstr. - Lewishamstr.: linker Gehweg	DH:h=q3,45 3835,10915 3623,10800 3644,10759

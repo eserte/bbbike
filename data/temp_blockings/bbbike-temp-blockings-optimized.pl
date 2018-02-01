@@ -784,7 +784,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Januar von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Februar von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2020,7 +2020,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-01-04 vvv
+#: last_checked: 2018-02-01 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -2071,19 +2071,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147342176
-#: source_id: 2147341532
-# REMOVED --- 2::inwork 12254,24857 12136,24607
-# REMOVED --- 2::inwork 12108,24547 11980,24276
-	2::inwork 11980,24276 12108,24547 12136,24607 12254,24857 12395,25143 12461,25270 12543,25423 12624,25570
-',
-         'from' => 1516217169,
-         'id' => 2848,
-         'text' => 'Schönerlinder Str.: Sperrung zwischen A114 und A10, evtl. sind auch Radfahrer betroffen, bis 20.03.2018',
-         'type' => 'gesperrt',
-         'until' => 1521543600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2149,7 +2137,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-01-26
+#: last_checked: 2018-01-29
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -2385,27 +2373,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: LMS-BR_r_LMS-BR_118136_LMS-BR_72
-# REMOVED (zurzeit nur an der Kreuzung Beeinträchtigungen) --- #: XXX vor Ort prüfen
-	q2::inwork; 10596,13398 10527,13257
-',
-         'from' => 1513713476,
-         'id' => 2925,
-         'source_id' => '2147342108',
-         'text' => 'Alte Schönhauser Str.:Bauarbeiten zwischen Schendelgasse und Weinmeisterstr., voraussichtlich bis 31.01.2018',
-         'type' => 'handicap',
-         'until' => 1517439600
-       },
-       {
-         'data' => '	q4::inwork 8546,6307 8388,6322
-',
-         'from' => 1514396333,
-         'id' => 2926,
-         'text' => 'Bosestr.: Fahrbahn zwischen Wittekindstr. und Gäßnerweg wegen Bauarbeiten gesperrt, bis 31.01.2018',
-         'type' => 'handicap',
-         'until' => 1517439600
-       },
+       undef,
+       undef,
        {
          'data' => '#: note: Parkverbot ist länger, ca. 6 bis 20 Uhr
 #: tempex: (sa) T10-T16

@@ -21777,7 +21777,7 @@ EOF
 	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066 8577,11896 8571,11846
 	2::temp 8595,12066 8737,12098 8743,12099 8861,12125
 	2::temp 8354,12416 8391,12389 8546,12279
-	2::temp 8577,11896 8632,11912 8783,11959 8737,12098
+	2::temp 8577,11896 8783,11959 8737,12098
 	2::temp 8503,12895 8488,12920
 	2::temp 8348,12609 8354,12416
 EOF
@@ -25653,7 +25653,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-01-04 vvv
+#: last_checked: 2018-02-01 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -25897,7 +25897,7 @@ EOF
 EOF
      },
      { from  => 1516217169, # 1485385200, # 2017-01-26 00:00
-       until => $isodate2epoch->("2018-03-20 12:00:00"), # 1485730800, # 2017-01-30 00:00
+       until => 1517262702, # $isodate2epoch->("2018-03-20 12:00:00"), # 1485730800, # 2017-01-30 00:00
        text  => 'Schönerlinder Str.: Sperrung zwischen A114 und A10, evtl. sind auch Radfahrer betroffen, bis 20.03.2018',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -26152,7 +26152,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-01-26
+#: last_checked: 2018-01-29
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907

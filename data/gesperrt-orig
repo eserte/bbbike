@@ -2866,7 +2866,7 @@ Zufahrt Parkhaus: Abrissarbeiten, Straße komplett gesperrt	2::inwork 8367,10745 
 #: next_check: 2018-03-01
 Merlitzstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19661,3421 19524,3286
 # 
-#: last_checked: 2018-01-19
+#: last_checked: 2018-02-01
 #: check_frequency: 21d
 Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9108,11961 9138,11872
 # 
@@ -3001,11 +3001,11 @@ Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtun
 # 
 #: osm_watch: way id="466318949" version="4"
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
-#: last_checked: 2018-01-05
+#: last_checked: 2018-01-30
 Bouchéstr.: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13298,9252 13190,9139
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
-#: last_checked: 2018-01-05
+#: last_checked: 2018-01-30
 Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13176,9302 13100,9210
 # 
 # REMOVED (mittlerweile ist eine Ausweichmöglichkeit markiert) --- #: last_checked: 2017-03-01 --- Karl-Marx-Platz: Bauarbeiten, Einbahnstraße gilt nun auch für Radfahrer	1s:q3 12969,7610 13100,7626
@@ -3019,7 +3019,7 @@ Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13176,9302 13100,921
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (evtl. gibt's hier später Radstreifen)
 #: source_id: 2147340715 vvv
 #: source_id: LMS-BR_r_LMS-BR_82028
-#: osm_watch: way id="42091230" version="23"
+#: osm_watch: way id="42091230" version="24"
 #: last_checked: 2017-12-26 vvv
 # REMOVED (temporary) --- #: next_check: 2017-12-31 (vermutlich wird nur auf die neue Fahrbahnhälfte gewechselt werden) vvv
 #: next_check: 2018-04-30 vvv
@@ -3036,7 +3036,7 @@ Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q4:inwork 8654,14194 8607,142
 # REMOVED (nur der östliche Abschnitt ist geblieben, aber relativ breit und relativ wenig Verkehr) --- #: XXX Bauarbeiten der Berliner Wasserbetriebe bis Dezember 2017 --- #: last_checked: 2017-07-23 --- #: next_check: 2017-12-01 --- #: valid: -20171231 --- Türrschmidtstr.: Bauarbeiten, Einbahnstraße	1s:q3 15541,10892 15649,10922 15756,10966
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3853&mt=0&zoom=16
-#: last_checked: 2017-12-18
+#: last_checked: 2018-01-31
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8969,11814
 # 
 #: next_check_id: NORDHAFENPARKWEST-2018
@@ -3071,7 +3071,7 @@ Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,1192
 #: XXX Bauarbeiten (Erweiterung des Rütli-Campus?)
 #: XXX Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="137084083" version="7"
-#: last_checked: 2017-12-04
+#: last_checked: 2018-01-30
 #: check_frequency: 60d
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,9200 12548,9167
 # 
@@ -3087,7 +3087,7 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,
 # REMOVED --- #: XXX evtl. kann man hier als Fußgänger irgendwie vorbei --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 3d --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14448,9922 14467,9880 14500,9863 --- #: last_checked ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4160&mt=0&zoom=16
-#: last_checked: 2017-12-18
+#: last_checked: 2018-01-31
 #: osm_watch: way id="57852078" version="4"
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
 # 
@@ -3200,6 +3200,7 @@ BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 #: next_check_id: STERNDAMM-2016
 #: XXX laut Fritz bis April 2018
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170829 (ebenso: bis April 2018)
+#: by: http://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20180201 (Bauarbeiten sind am 27.08.2018 beendet)
 #: source_id: 2147341515	
 #: source_id: LMS-BR_r_LMS-BR_103259_LMS-BR_72
 #: last_checked: 2018-01-06
@@ -3225,7 +3226,7 @@ Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,689
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 09.01.2018
-#: last_checked: 2018-01-04 vvv
+#: last_checked: 2018-02-01 vvv
 #: next_check: 2018-06-28 vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
@@ -3278,8 +3279,8 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 # 
 #: osm_watch: way id="27178371" version="10"
-#: osm_watch: way id="23099023" version="9"
-#: osm_watch: way id="23099024" version="6"
+#: osm_watch: way id="23099023" version="10"
+#: osm_watch: way id="23099024" version="7"
 #: osm_watch: way id="103531998" version="3"
 #: last_checked: 2017-08-26
 #: check_frequency: 90d
@@ -3295,7 +3296,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: http://www.dafmap.de/d/berlin.html?id=3588&mt=0&zoom=16
 #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung)
 #: XXX Spielbetrieb wird im Dezember 2017 aufgenommen
-#: last_checked: 2018-01-04 vvv
+#: last_checked: 2018-02-01 vvv
 #: check_frequency: 21d vvv
 Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9876,12298
 Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9798,12267 9795,12293 9780,12401
@@ -3308,7 +3309,7 @@ Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9798,
 # 
 #: XXX Eröffnung 2019 geplant
 #: by: http://www.dafmap.de/d/berlin.html?id=3598&mt=0&zoom=16
-#: last_checked: 2018-01-04
+#: last_checked: 2018-02-01
 #: check_frequency: 120d
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
@@ -3321,7 +3322,7 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 #: next_check_id: LOEWENBRUECKE-2018
 #: by: http://www.tagesspiegel.de/berlin/haengepartie-fuer-die-loewenbruecke/4572208.html
 #: note: früher bei osm, jetzt komplett entfernt: osm_watch: way id="22792488" version="5"
-#: last_checked: 2016-10-08
+#: last_checked: 2018-01-26 (mapillary)
 #: next_check: 2018-12-31
 Löwenbrücke: gesperrt	2:inwork 6406,11784 6452,11778
 # 

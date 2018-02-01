@@ -712,8 +712,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 4478,10218
 	X 9581,12588
 	X 10946,12241
+#: off: night (seen 2018-02-01 00:20)
 	X 12295,12197
 #: off: night (seen 2015-01-29 00:45)
+#: off: night (seen 2018-02-01 00:20)
 	X 12822,12067
 	X 12180,11657
 	X 14639,11512
@@ -1055,6 +1057,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F -1286,23753
 	F -997,23492
 	X -656,23011
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5618 (Anforderung, Schaltzeiten)
+#: note: für die "Nebenrichtungen" muss grün angefordert werden
 	X 1461,21203
 	X 2015,20336
 	X 130,17187
@@ -1195,6 +1199,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # REMOVED (permanent abgeschaltet) ---	F 10720,11805
 #: off: night (seen 2014-12 Fr 23:50; 2015-01-29 00:55)
 #: off: night (seen 2015-06-25)
+#: off: night (seen 2018-02-01 00:25)
 	X 14134,11272
 	X 11785,13625
 	X 10904,17288
@@ -2139,6 +2144,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 #: note: am Wochenende nicht eingeschaltet
 	F 9034,1953
 	X 17014,16724
+#: note: Kontaktschleife (und Anforderung für Fußgänger) aus der Voltairestr.
 	X 11329,12497
 	X 18929,2454
 	F 20322,3725
@@ -2616,12 +2622,12 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_prog Anforderungsampel
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
-#: last_checked: 2018-01-04
+#: last_checked: 2018-02-01
 #: next_check: 2018-06-28
 	F::inwork 9984,12426
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2018-01-19 vvv
+#: last_checked: 2018-02-01 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="3"
 	X::inwork 9121,12514
