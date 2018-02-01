@@ -277,7 +277,7 @@ $f:	${_f_raw_${f}} inaccessible_landstrassen
 	-@${READONLY} $@
 .endfor
 
-plaetze: plaetze-orig
+plaetze: plaetze-orig .check_daily
 	-@$(WRITEABLE) $@
 	${GREPSTRASSEN_VALID} plaetze-orig |\
 	    $(CONVERT_ORIG) > plaetze~
@@ -677,7 +677,7 @@ ${PERSISTENTTMPDIR}/radwege-orig-valid:	radwege-orig .check_daily
 	mv $@~ $@
 	-@$(READONLY) $@
 
-qualitaet_s:	qualitaet_s-orig
+qualitaet_s:	qualitaet_s-orig .check_daily
 	-@$(WRITEABLE) $@
 	$(CONVERT_ORIG) -keep-directive valid -strip-tendencies qualitaet_s-orig |\
 	    ${GREPSTRASSEN_VALID} > $@~
@@ -685,7 +685,7 @@ qualitaet_s:	qualitaet_s-orig
 	mv $@~ $@
 	-@$(READONLY) $@
 
-qualitaet_l:	qualitaet_l-orig
+qualitaet_l:	qualitaet_l-orig .check_daily
 	-@$(WRITEABLE) $@
 	$(CONVERT_ORIG) -keep-directive valid -strip-tendencies qualitaet_l-orig  |\
 	    ${GREPSTRASSEN_VALID} > $@~
@@ -693,7 +693,7 @@ qualitaet_l:	qualitaet_l-orig
 	mv $@~ $@
 	-@$(READONLY) $@
 
-handicap_s:	handicap_s-orig berlin ${PERSISTENTTMPDIR}/gesperrt-with-handicaps routing_helper-orig
+handicap_s:	handicap_s-orig berlin ${PERSISTENTTMPDIR}/gesperrt-with-handicaps routing_helper-orig .check_daily
 	-@$(WRITEABLE) $@
 	$(CONVERT_ORIG) -keep-directive valid -strip-tendencies handicap_s-orig |\
 	    ${GREPSTRASSEN_VALID} > $@~
@@ -715,7 +715,7 @@ handicap_s:	handicap_s-orig berlin ${PERSISTENTTMPDIR}/gesperrt-with-handicaps r
 	mv $@~ $@
 	-@$(READONLY) $@
 
-handicap_l:	handicap_l-orig berlin ${PERSISTENTTMPDIR}/gesperrt-with-handicaps
+handicap_l:	handicap_l-orig berlin ${PERSISTENTTMPDIR}/gesperrt-with-handicaps .check_daily
 	-@$(WRITEABLE) $@
 	$(CONVERT_ORIG) -keep-directive valid -strip-tendencies handicap_l-orig |\
 	    ${GREPSTRASSEN_VALID} > $@~
