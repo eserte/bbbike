@@ -2812,6 +2812,7 @@ Anni-Frid-Weg: Baustelle, gesperrt	2::inwork 17262,15056 17317,15059 17345,15061
 # 
 #: by: osm
 #: by: https://www.potsdam.de/sites/default/files/documents/17554_amtsblatt_de2017_nr13_dsjs_korr2.pdf (Einziehung von Straßenland)
+#: by: https://www.potsdam.de/sites/default/files/documents/18016_amtsblatt1_jan2018_dsjs_final_0.pdf
 #: osm_watch: way id="534669300" version="1" brb
 #: next_check: 2018-06-01
 Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12677,-1536 -12685,-1449
@@ -2930,11 +2931,11 @@ Gutenbergstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5317,12242 5518,1215
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8103
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036562139600/562139600/00280921/21-Anlagen/01/DS0329_VzK_Strassenbenennung_Moeckernkiez_fina.pdf
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_30_3365_3488_online.pdf (Benennung)
-#: XXX Qualität, genaue Lage, Sackgasse?
+#: XXX Qualität: Rampe betoniert, sonst eine Art Steinpflaster; ggfs. noch eine weitere Zufahrt zum Park einzeichnen
 #: osm_watch: way id="264361563" version="3"
-#: last_checked: 2017-12-25
-#: next_check: 2018-01-27
-Möckernkiez: Bauarbeiten	2::inwork 8778,9759 8741,9741 8729,9670 8587,9590 8566,9643
+#: last_checked: 2018-02-02
+#: check_frequency: 21d
+Möckernkiez: Bauarbeiten	2::inwork 8778,9759 8710,9725 8729,9670 8596,9595 8565,9657
 # 
 # REMOVED (vermutlich beendet) --- #: next_check_id: OBERERWUHLEWANDERWEG-2017 --- #: last_checked: 2017-08-09 --- #: XXX Ende der Bauarbeiten --- #: next_check: 2017-08-11 --- #: priority: #A --- oberer Wuhlewanderweg: Bauarbeiten, komplett gesperrt	2::inwork 22873,14498 22864,14556
 # 

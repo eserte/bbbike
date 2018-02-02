@@ -60,7 +60,7 @@ Möckernstr.	NH 8777,9601 8778,9759 8779,9812 8779,9829 8779,9851 8780,9968 8783,
 Möckernstr.	N 8824,10366 8878,10514 8926,10626 8941,10663 9022,10857
 #: note: Privatstraße
 #: note: Benennung wurde am 2017-07-01 wirksam
-Möckernkiez	N 8778,9759 8741,9741 8729,9670 8587,9590 8566,9643
+Möckernkiez	N 8778,9759 8710,9725 8729,9670 8596,9595 8565,9657
 Großbeerenstr. (Kreuzberg)	N 8970,9323 9000,9509 9044,9753 9073,9915 9108,10101 9145,10290 9154,10348 9176,10451 9192,10528 9249,10562
 Kleinbeerenstr.	N 8878,10514 8979,10485
 (Platz vor dem Tempodrom)	NN 8941,10663 8853,10708
@@ -659,7 +659,7 @@ Steinhellenweg	N 10010,4606 10012,4826 10015,4875
 Wartburgstr.	N 6962,9035 6769,8996 6612,8966 6445,8934 6369,8926 6281,8914 6158,8896 6032,8870
 Merseburger Str. (Schöneberg)	N 6975,8944 6962,9035 6945,9142
 Belziger Str.	N 7308,9163 7101,9027 6975,8944 6860,8878 6664,8787 6644,8780 6460,8688
-(Parkweg Heinrich-Lassen-Park)	NN 6664,8787 6705,8730 6740,8682 6815,8691 6912,8617
+(Parkweg Heinrich-Lassen-Park)	NN 6664,8787 6705,8730 6740,8682 6818,8697 6912,8617
 Vorbergstr.	N 7363,9152 7308,9163 7136,9223 7012,9222
 #: carriageway_width: 22m
 Dominicusstr.	HH 6460,8688 6477,8654 6523,8567 6575,8469 6687,8385 6807,8309 6935,8208
@@ -2421,7 +2421,7 @@ Straße 56 (Heinersdorf)	N 12429,17685 12587,17603
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/29re.pdf/file?y=2014 (Benennung)
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3835 (Vorlange zur Kenntnisnahme)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2014 (Widerspruch)
-#: osm_watch: way id="45904921" version="6"
+#: osm_watch: way id="45904921" version="7"
 #: last_checked: 2018-01-27
 #: check_frequency: 120d
 Straße 16 (Heinersdorf)	N 13031,17775 13034,17895
@@ -9941,10 +9941,10 @@ Großgörschenstr.	NN 7960,9466 7882,9490
 Großgörschenstr.	N 7882,9490 7771,9479 7609,9463 7507,9458
 Hochkirchstr.	N 8081,9120 8079,9194 8098,9194 8100,9240 8102,9262 8105,9313 8076,9316 8086,9418
 Katzlerstr.	N 8035,9437 8097,9650
-Willmanndamm	N 7509,9337 7628,9365 7771,9389
-Willmanndamm	NN 7771,9389 7836,9413
+Willmanndamm	N 7509,9337 7628,9365 7770,9395
+Willmanndamm	NN 7770,9395 7836,9413
 Neue Steinmetzstr.	NN 7628,9365 7625,9376 7612,9446 7609,9463
-Neue Kulmer Str.	N 7771,9479 7771,9389 7770,9336
+Neue Kulmer Str.	N 7771,9479 7770,9395 7770,9336
 Steinmetzstr. (Schöneberg)	N 7609,9463 7612,9631
 Steinmetzstr. (Schöneberg)	NN 7612,9631 7614,9648
 Steinmetzstr. (Schöneberg)	N 7614,9648 7625,9771
@@ -10037,7 +10037,7 @@ Lindower Str.	N 7745,15160 7929,15355
 #: XXX dieser Straßenabschnitt wird für die S21 in der Mitte unterbrochen, nachdem das neue Nordufer fertiggestellt ist
 #: by: http://weddingweiser.wordpress.com/2012/10/16/die-s-21-wird-gebaut-weddinger-strasen-werden-neu-gefuhrt/ (Projektplan)
 #: osm_watch: way id="220648313" version="10"
-#: last_checked: 2017-10-08
+#: last_checked: 2017-10-17 (mapillary)
 #: check_frequency: 120d
 Tegeler Str. (Wedding)	N 7458,14643 7263,14873
 Tegeler Str. (Wedding)	N 7263,14873 7223,14914 7192,14976 7182,14998 7131,15109 7085,15226 6996,15319
@@ -18187,12 +18187,12 @@ Boninstr. (Lichterfelde)	N 3942,1032 3892,999 3840,964
 (Park am Gleisdreieck, östlicher Weg)	NN 8775,10289 8780,10248 8726,10056 8652,9870
 (Park am Gleisdreieck, mittlerer Weg)	NN 8579,10030 8521,9911 8504,9870 8477,9867 8464,9744 8446,9670 8426,9572
 (Hornstr. - Park am Gleisdreieck)	NN 8779,9829 8761,9765 8722,9743
-(Park am Gleisdreieck, südöstlicher Weg)	NN 8722,9743 8540,9644 8508,9551 8477,9562 8426,9572
+(Park am Gleisdreieck, südöstlicher Weg)	NN 8722,9743 8565,9657 8540,9644 8508,9551 8477,9562 8426,9572
 (Rampe Hornstr. - Generalszug)	NN 8722,9743 8733,9841
 (A.T.U-Einfahrt - ALDI-Parkplatz)	N 8595,9495 8561,9482 8546,9468 8514,9470 8487,9405 8499,9253
 (Park am Gleisdreieck, Eingang Schöneberger Str.)	NN 8296,10438 8322,10451 8328,10485 8361,10491 8377,10502 8384,10507
-(Park am Gleisdreieck)	NN 8278,10384 8263,10349 8258,10338 8249,10313 8253,10265 8263,10187 8211,10083
-(Park am Gleisdreieck, Weg über dem Tunnelmund)	NN 8263,10349 8315,10347
+(Park am Gleisdreieck)	NN 8278,10384 8265,10348 8261,10337 8252,10308 8256,10264 8264,10192 8211,10083
+(Park am Gleisdreieck, Weg über dem Tunnelmund)	NN 8265,10348 8315,10347
 (Park am Gleisdreieck, Eingang Schöneberger Ufer)	NN 8328,10831 8318,10738
 (Park am Gleisdreieck, Eingang Schöneberger Ufer)	NN 8358,10782 8350,10774 8341,10721
 (Park am Gleisdreieck, Eingang Schöneberger Ufer)	NN 8328,10831 8338,10765 8341,10721
@@ -18205,8 +18205,8 @@ Boninstr. (Lichterfelde)	N 3942,1032 3892,999 3840,964
 #: oldname: -20170705: <namenslos>
 Am Bülowbogen	NN 7906,10098 7928,10094 8011,10085
 (Park am Gleisdreieck, Eingang Am Bülowbogen)	NN 8011,10085 8013,10055 8027,10074 8042,10084 8145,10090 8211,10083 8276,10079
-(Park am Gleisdreieck, Eingang Kurfürstenstr.)	NN 8058,10306 8180,10282 8253,10265
-(Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.)	NN 8263,10187 8276,10079 8289,9988 8206,9867 8233,9863 8243,9766
+(Park am Gleisdreieck, Eingang Kurfürstenstr.)	NN 8058,10306 8180,10282 8256,10264
+(Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.)	NN 8264,10192 8276,10079 8289,9988 8206,9867 8233,9863 8243,9766
 (Flaschenhalspark, Weg entlang den Bahngleisen)	NN 8423,9532 8414,9366 8393,9293 8374,9291
 (Yorckstr. - Flaschenhalspark)	NN 8358,9567 8359,9537 8354,9504 8350,9461 8348,9449 8339,9448
 #: note: beleuchtet

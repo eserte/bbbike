@@ -21,19 +21,17 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualit‰t danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-01-31
+#: last_checked: 2018-02-02
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
-#: last_checked: 2018-01-31
-Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
-# 
+# REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
 #: last_checked: 2018-01-28
 #: check_frequency: 90d
 Dˆringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
-#: last_checked: 2018-02-01
+#: last_checked: 2018-02-02
 Lange Str.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 # REMOVED --- #: by: fritz --- #: last_checked: 2017-09-28 --- #: check_frequency: 10d --- # REMOVED --- #: valid: -20170927 --- Krautstr.: Fahrbahn abschnittsweise gesperrt, Ausweichen auf Gehweg notwendig	q3::inwork 11966,11832 11993,11978
@@ -903,7 +901,7 @@ Uferweg, Mentzelpark: Fuﬂg‰nger, eng	q3 21761,4979 21821,4918 21834,4889
 (Mentzelpark): Fuﬂg‰nger	q1 21761,4979 21778,4916 21834,4889 21848,4882
 (Mentzelpark): Fuﬂg‰nger	q1 21726,4896 21741,4889 21778,4916
 # REMOVED (hier hat sich nichts weiter ge‰ndert (by mrt), wahrscheinlich passiert nichts mehr) --- #: XXX Bauarbeiten; in Zukunft wird das Radfahren offiziell erlaubt sein; evtl. auch asphaltiert? --- #: XXX offiziell sollten die Bauarbeiten schon Ende 2010 (!) beendet sein ---- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20120515.0900.370132.html (teilweise fertig) --- #: last_checked: 2013-09-16 (noch immer Radfahren verboten) --- #: check_frequency: 120d
-Heinrich-Lassen-Park: Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q3 6664,8787 6705,8730 6740,8682 6815,8691 6912,8617
+Heinrich-Lassen-Park: Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q3 6664,8787 6705,8730 6740,8682 6818,8697 6912,8617
 (Uferweg am Nordhafen): Fuﬂg‰nger	q1 7753,14528 7695,14545 7653,14570 7605,14600 7527,14644 7480,14660
 An der Malche: teilweise eng und kurvig	q1 1106,20424 1032,20580 895,20523 834,20610 625,20738
 Am Friedhof: recht enger Radweg	q1 6380,17836 6376,17687 6347,17381

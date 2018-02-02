@@ -15595,7 +15595,7 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: tempex: (we, sa) T10-T15
-	q4::temp:clock 7882,9490 7836,9413 7771,9389
+	q4::temp:clock 7882,9490 7836,9413 7770,9395
 EOF
      },
      { from  => undef, #
@@ -20802,8 +20802,8 @@ EOF
 	2::inwork 8309,10368 8278,10384 8296,10438 8328,10585 8332,10637 8341,10721
 	2::inwork 8328,10585 8270,10613
 	2::inwork 8328,10831 8318,10738 8270,10613 8264,10460 8257,10440 8237,10418 8192,10354 8180,10282 8145,10090
-	2::inwork 8278,10384 8263,10349 8258,10338 8249,10313 8253,10265 8263,10187 8276,10079 8211,10083 8145,10090 8042,10084 8027,10074 8013,10055 8011,10085 8013,10055 8011,10085
-	2::inwork 8263,10349 8315,10347 8333,10167 8360,10133
+	2::inwork 8278,10384 8265,10348 8261,10337 8252,10308 8256,10264 8264,10192 8276,10079 8211,10083 8145,10090 8042,10084 8027,10074 8013,10055 8011,10085 8013,10055 8011,10085
+	2::inwork 8265,10348 8315,10347 8333,10167 8360,10133
 	2::inwork 8270,10613 8236,10623 8199,10634
 	2::inwork 8159,10430 8199,10424 8237,10418 8278,10384
 	2::inwork 8341,10721 8350,10774 8358,10782
@@ -26029,15 +26029,15 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Akazienstr.: Bauarbeiten im Kreuzungsbereich Belziger Str., Einbahnstraßenregelung',
+       text  => 'Akazienstr.: Einbahnstraßenregelung',
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="548612558" version="1"
-#: last_checked: 2017-12-30
+#: last_checked: 2018-02-02
 #: check_frequency: 14d
 # REMOVED ---	q3::inwork; 7201,8870 7101,9027
-	q3::inwork; 7101,9027 7035,9161
+	q3::inwork; 7101,9027 7035,9161 7012,9222
 EOF
      },
      { from  => 1493652218, # 2017-05-01 17:23
@@ -26142,8 +26142,8 @@ EOF
        data  => <<EOF,
 #: XXX Baumaßnahme ist Ende 2018 fertig; Vollsperrung nur für 2-3 Wochen
 #: XXX außerdem wird der Weg gerade neu gemacht --- teilweise schon gut gepflastert, der Rest wird es vermutlich auch sein
-#: last_checked: 2017-12-30 (Umgehung für Bauarbeiten im Mittelbereich existiert)
-	2::inwork 6815,8691 6912,8617
+#: last_checked: 2018-02-02 (Umgehung für Bauarbeiten im Mittelbereich existiert)
+	2::inwork 6818,8697 6912,8617
 EOF
      },
      { from  => undef, # 
@@ -26152,7 +26152,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-01-29
+#: last_checked: 2018-02-02
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -26825,6 +26825,15 @@ EOF
 	q3::inwork 10228,14564 10320,14608 10472,14632
 #: check_frequency ^^^
 #: last_checked ^^^
+EOF
+     },
+     { from  => 1517602202, # 2018-02-02 21:10
+       until => 1525125599, # 2018-04-30 23:59
+       text  => 'Ostburger Weg: Bauarbeiten zwischen Will-Meisel-Weg und Am Espenpfuhl, Fahrbahn gesperrt, bis Ende April 2018 ',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20180202',
+       data  => <<EOF,
+	2::inwork 18023,833 17928,764 17734,675
 EOF
      },
     );
