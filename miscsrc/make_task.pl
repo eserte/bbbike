@@ -39,12 +39,15 @@ $name   or die "Please specify task name (-name option)";
 
 my $prereq_pm;
 {
-    open my $fh, "-|", $^X, "$FindBin::RealBin/parse_bundle.pl", ($minimize ? '-minimize' : ()), -encoding => 'utf-8', -action => 'prereq_pm', $bundle
-	or die $!;
+    my @cmd = ($^X, "$FindBin::RealBin/parse_bundle.pl", ($minimize ? '-minimize' : ()), -encoding => 'utf-8', -action => 'prereq_pm', $bundle);
+    open my $fh, "-|", @cmd
+	or die "Error starting to run '@cmd': $!";
     binmode $fh, ':encoding(utf-8)';
     while(<$fh>) {
 	$prereq_pm .= $_;
     }
+    close $fh
+	or die "Error while running '@cmd': $!";
 }
 
 if (!-e $o) {
