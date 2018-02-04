@@ -347,7 +347,7 @@ DEB_DRAW=	libgd2-xpm libgd2-xpm-dev \
 		netpbm libgd-gd2-perl ttf-bitstream-vera ttf-dejavu \
 		libpdf-create-perl libcairo-perl libpango-perl libfont-afm-perl \
 		libtest-number-delta-perl
-DEB_DRAW_OPTIONAL= perlmagick libimager-perl imagemagick libsvg-perl
+DEB_DRAW_OPTIONAL= perlmagick libimager-perl imagemagick libsvg-perl librsvg2-bin
 DEB_MAIL=	libmime-lite-perl libmailtools-perl
 DEB_DATA=	libstring-approx-perl libdbd-xbase-perl libxml-parser-perl \
 		libxml-twig-perl libdbi-perl libtie-ixhash-perl \
