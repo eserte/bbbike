@@ -26502,7 +26502,7 @@ EOF
        text  => 'Wattstr.: Zugang kann durch Bauzäune versperrt sein, meistens aber offen',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: MINNATODENHAGENSTR-2016
+# REMOVED --- : next_check_id: MINNATODENHAGENSTR-2016
 #: XXX siehe auch handicap_s-orig-Eintrag
 #: last_checked: 2017-11-05
 	2::inwork 17681,7589 17676,7555

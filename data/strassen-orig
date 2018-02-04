@@ -5434,7 +5434,8 @@ Wattstr. (Oberschöneweide)	NN 17681,7589 17676,7555
 Wattstr. (Oberschöneweide)	N 17676,7555 17669,7515 17647,7280
 Wattstr. (Oberschöneweide)	N 17620,7259 17644,7219 17632,6930 17652,6828 17766,6616
 # REMOVED (möglicherweise dauerhaft gesperrt) --- (Wattstr./Siemensstr. - Wilhelminenhofstr.)	N 17766,6616 17801,6554 17800,6504
-Grenzweg (Oberschöneweide)	N 17295,7328 17475,7451 17566,7485 17669,7515
+Grenzweg (Oberschöneweide)	N 17295,7328 17475,7451 17566,7485
+(Heckenweg)	N 17566,7485 17669,7515
 Deulstr.	N 17860,6644 17763,6960
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/44re.pdf/file?y=2015
 #: note: Parkplatzzufahrt
@@ -5970,8 +5971,8 @@ Hauptstr. (Alt-Hohenschönhausen)	N 17418,16014 17474,15988 17495,15949 17516,158
 (Rhinstr./Marzahner Str. - Hauptstr.)	NN 17510,15789 17488,15766
 Köpenicker Chaussee	H 16374,9760 16432,9673 16791,9137 16831,9078 17067,8725 17105,8666
 Blockdammweg	H 17067,8725 17380,8858 17729,8850
-Blockdammweg	N 17754,8863 17760,8853 17904,8924 17975,8971
-Blockdammweg	NN 17975,8971 17996,8966 18070,9022
+Blockdammweg	N 17754,8863 17760,8853 17904,8924 17972,8968
+Blockdammweg	NN 17972,8968 17990,8963 18070,9022
 Hönower Wiesenweg	N 17856,8162 17793,8225 17753,8290 17704,8327 17620,8366 17554,8458 17483,8644 17416,8767 17380,8858 17335,8971 17308,9090 17271,9159
 Sangeallee	NN 18070,9022 18088,9049 18134,9080
 Sangeallee	N 18134,9080 18247,9158 18319,9218 18457,9343 18490,9387
@@ -6043,7 +6044,7 @@ Wasserstr. (Niederschöneweide)	N 17483,6024 17681,6212
 Uferstr. (Niederschöneweide)	N 17681,6212 17847,6089
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788
 #: XXX ist das die vorgeschlagene "Else-Schierhorn-Str."? vvv
-#: last_checked: 2017-11-05 vvv
+#: last_checked: 2018-02-04 vvv
 #: check_frequency: 90d vvv
 (Schnellerstr. - Uferstr.)	NN 17628,5865 17678,5916
 (Schnellerstr. - Uferstr.)	N 17678,5916 17847,6089
@@ -6147,7 +6148,8 @@ Elsterweg (Karlshorst)	N 20260,8353 20258,8413
 Am Sandberg (Karlshorst)	N 20206,8090 20190,8315 20149,8318 20144,8355
 Feldweg (Karlshorst)	N 20096,8077 20206,8090 20222,8091 20339,8102
 Am Graben (Karlshorst)	N 20429,7977 20339,8102
-Wiesenweg (Karlshorst)	N 20222,8091 20379,7848
+#: XXX_osm: hier Wiesenweg
+Wiesenstr. (Karlshorst)	N 20222,8091 20379,7848
 Kurzer Weg (Karlshorst)	N 20334,7753 20451,7744 20503,7848
 (Wiesengrund Straße 2 - Straße 4)	N 19748,8517 19737,8491 19719,8458
 (Wiesengrund Straße 2 - Straße 4)	NN 19719,8458 19707,8442 19684,8434
@@ -9450,7 +9452,6 @@ Kallbacher Str.	N 28817,1679 28727,1766 28642,1840 28561,1912 28452,2007
 Glottertaler Str.	N 29376,1738 29275,1821 29176,1897 29077,1973
 Klafterzeile	N 29275,1821 29450,2040
 Rodestr.	N 29176,1897 29357,2113
-#: XXX_osm bei osm noch nicht umbenannt:
 #: oldname: Straße 659
 Hinter der Düne	N 29414,2373 29296,2467 29196,2548
 #: by: https://de.wikipedia.org/wiki/Liste_der_Stra%C3%9Fen_und_Pl%C3%A4tze_in_Berlin-M%C3%BCggelheim ("Straße 659")
@@ -9716,7 +9717,7 @@ Scheerbartweg	N 9616,-186 9719,-187
 Sandsteinweg	N 10816,1411 10737,1397 10659,1370 10440,1283 10329,1231
 Graphitweg	N 10950,1315 10914,1413 10911,1483 10943,1661
 Glimmerweg	N 11005,1541 11091,1529 11161,1518 11349,1483 11436,1513 11538,1550 11724,1629
-#: note: osm und andere Kartenwerke (auch: LOR 7/2017) meinen "Straße 99", aber in der Realität gibt es kein derartiges Straßenschild
+#: note: osm und andere Kartenwerke (auch: LOR 7/2017 u. 1/2018) meinen "Straße 99", aber in der Realität gibt es kein derartiges Straßenschild
 Glimmerweg [Stichstraße]	N 11538,1550 11497,1650
 Straße 96 (Buckow)	N 11180,1623 11161,1518
 Basaltweg	N 11042,1352 10999,1474 11005,1541 11025,1657

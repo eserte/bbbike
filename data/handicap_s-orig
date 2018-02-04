@@ -21,13 +21,13 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-02-02
+#: last_checked: 2018-02-04
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2018-01-28
+#: last_checked: 2018-02-04
 #: check_frequency: 90d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -272,6 +272,27 @@ Rathausstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10584,12507 10601,12521
 # 
 ### Karlshorst ###
 # REMOVED --- #: XXX nach den Bauarbeiten vermutlich bessere Qualität --- #: last_checked: 2016-12-10 --- Andernacher Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 19155,8631 19249,8662
+# 
+#: next_check_id: TRESKOWALLEE-2017 vvv
+#: last_checked: 2018-02-04 vvv
+#: check_frequency: 90d vvv
+#: valid: -20201231 vvv
+#: priority: #A vvv
+Dönhoffstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q2::inwork 18733,8633 18609,8717
+Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q3::inwork 18627,8475 18704,8427
+#: priority ^^^
+#: valid ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: next_check_id ^^^
+# 
+### Oberschöneweide ###
+# 
+#: last_checked: 2018-02-04
+#: next_check: 2018-05-01
+#: valid: -20180501
+#: priority: #A
+Wilhelminenhofstr.: Bauarbeiten zwischen Siemensstr. und Edisonstr., Fahrbahn und teilweise auch Radweg gesperrt	q3::inwork 17826,6495 17991,6431
 # 
 ### Kreuzberg ###
 # 
@@ -672,7 +693,7 @@ Wuhlheide: einige Fußgänger	q1 19594,6155 19606,6182 19751,6514 19810,6634 19931
 (am Schloß Schönhausen): Fußgänger	q2 10294,19298 10339,19179 10382,19066
 (am Schloß Schönhausen): Fußgänger	q1 10339,19179 10249,19148
 # REMOVED (done) --- #: XXX mittlerweile darf die Brücke offiziell befahren werden - evtl. das "ggfs. schieben" entfernen? --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4830
-Blockdammweg (Brücke): eng, Fußgänger, Radfahren erlaubt	q2 17975,8971 17996,8966 18070,9022
+Blockdammweg (Brücke): eng, Fußgänger, Radfahren erlaubt	q2 17972,8968 17990,8963 18070,9022
 Markgrafenstr.: Gehweg	q2 9737,11546 9732,11574 9707,11596 9701,11656
 Gendarmenmarkt: Fußgängerzone, ggfs. schieben	q3 9536,11922 9666,11935
 Gendarmenmarkt: Fußgängerzone, ggfs. schieben	q3 9523,12019 9656,12031
@@ -2118,7 +2139,7 @@ Wilhelm-Stolze-Str.: Fußgänger	q1 13267,13167 13233,13242
 Regatta-Ufer: Fußgänger, Radfahren nicht erlaubt	q4 15682,9472 15632,9430 15741,9326 15778,9311 15793,9334
 Am Schwanenberg: einige Fußgänger	q1 15752,9385 15793,9334
 (Kaiser's-Parkplatz): Parkplatzverkehr, Fußgänger	q2 16058,6629 16138,6548
-(Siemensstr./Deulstr. - Wilhelminenhofstr.): einige Fußgänger	q1 17842,6639 17852,6589 17826,6495
+(Siemensstr./Deulstr. - Wilhelminenhofstr.): einige Fußgänger, Aufpflasterungen	q2+ 17852,6589 17826,6495
 #: XXX_prog BS nach Osten hin, ansonsten entfernen
 Straße 77: Bordstein	q1 15320,12375 15408,12394
 Wuhlebrücken: Fußgänger	q2 22843,14452 22839,14453 22819,14457 22788,14468 22743,14488 22670,14520

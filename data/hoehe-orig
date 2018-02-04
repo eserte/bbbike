@@ -2233,6 +2233,22 @@
 39	X -8154,3879
 ######################################################################
 # manuell aus 1:5k bw (resp. bbpl fk):
+35.0	X 17483,6024
+36.2	X 18299,8925
+39.1	X 18134,9080
+#: note: neighbor 18134,9080 + barometer
+42.2	X 18070,9022
+#: note: neighbor 18134,9080 + barometer
+36.6	X 18221,8978
+36.9	X 18247,9158
+36.5	X 18037,9195
+39.3	X 17904,8924
+#: note: neighbor 17904,8924 + barometer
+40.7	X 17972,8968
+35.5	X 17754,8863
+35.3	X 17879,8773
+#: note: probably same as neighbor 17879,8773
+35.3	X 17910,8881
 47.8	X 13826,16026
 48.6	X 13869,15912
 51.4	X 13904,15818
@@ -3223,6 +3239,8 @@
 #: note: assumed same height as reference point 20653,7289
 41.4	X 20616,7292
 37.6	X 17900,6072
+#: note: vom Punkt Schnellerweg/Wasserstr. übernommen
+35.0	X 17847,6089
 36.2	X 17939,5968
 33.9	X 17991,6431
 #: note per Barometer, Referenz ist 17991,6431 vvv

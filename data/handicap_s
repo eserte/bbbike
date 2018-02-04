@@ -23,6 +23,9 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9883,12251 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q4::inwork 10601,12521 10704,12595
 Rathausstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10584,12507 10601,12521
+Dönhoffstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q2::inwork 18733,8633 18609,8717
+Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q3::inwork 18627,8475 18704,8427
+Wilhelminenhofstr.: Bauarbeiten zwischen Siemensstr. und Edisonstr., Fahrbahn und teilweise auch Radweg gesperrt	q3::inwork 17826,6495 17991,6431
 Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q2::inwork; 9022,10857 8941,10663 8926,10626
 Englische Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,12159
 Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5894,12480 5944,12548
@@ -208,7 +211,7 @@ Wuhlheide/FEZ: einige Fußgänger	q1 20225,6631 20169,6636 20118,6617 20060,6575 1
 Wuhlheide: einige Fußgänger	q1 19594,6155 19606,6182 19751,6514 19810,6634 19931,6903
 (am Schloß Schönhausen): Fußgänger	q2 10294,19298 10339,19179 10382,19066
 (am Schloß Schönhausen): Fußgänger	q1 10339,19179 10249,19148
-Blockdammweg (Brücke): eng, Fußgänger, Radfahren erlaubt	q2 17975,8971 17996,8966 18070,9022
+Blockdammweg (Brücke): eng, Fußgänger, Radfahren erlaubt	q2 17972,8968 17990,8963 18070,9022
 Markgrafenstr.: Gehweg	q2 9737,11546 9732,11574 9707,11596 9701,11656
 Gendarmenmarkt: Fußgängerzone, ggfs. schieben	q3 9536,11922 9666,11935
 Gendarmenmarkt: Fußgängerzone, ggfs. schieben	q3 9523,12019 9656,12031
@@ -1327,7 +1330,7 @@ Wilhelm-Stolze-Str.: Fußgänger	q1 13267,13167 13233,13242
 Regatta-Ufer: Fußgänger, Radfahren nicht erlaubt	q4 15682,9472 15632,9430 15741,9326 15778,9311 15793,9334
 Am Schwanenberg: einige Fußgänger	q1 15752,9385 15793,9334
 (Kaiser's-Parkplatz): Parkplatzverkehr, Fußgänger	q2 16058,6629 16138,6548
-(Siemensstr./Deulstr. - Wilhelminenhofstr.): einige Fußgänger	q1 17842,6639 17852,6589 17826,6495
+(Siemensstr./Deulstr. - Wilhelminenhofstr.): einige Fußgänger, Aufpflasterungen	q2 17852,6589 17826,6495
 Straße 77: Bordstein	q1 15320,12375 15408,12394
 Wuhlebrücken: Fußgänger	q2 22843,14452 22839,14453 22819,14457 22788,14468 22743,14488 22670,14520
 (oberer Wuhlewanderweg - unterer Wuhlewanderweg): Rampe, einige Fußgänger	q2 22873,14498 22849,14449 22847,14488 22840,14494
