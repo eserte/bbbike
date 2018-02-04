@@ -215,8 +215,13 @@ sub action_add_bbbike_bundle {
 	      # Use srezic's CPAN distroprefs:
 	      '$CPAN::Config->{prefs_dir} = q{' . $strawberry_dir . '\\cpan\\prefs}; '
 	     ) .
-	     # Keep the BBBike distribution as small as possible:
-	     '$CPAN::Config->{build_requires_install_policy} = q{no}; ' .
+	     ## Keep the BBBike distribution as small as possible:
+	     #'$CPAN::Config->{build_requires_install_policy} = q{no}; ' .
+	     ## Unfortunately there's a CPAN.pm bug
+	     ## <https://rt.cpan.org/Ticket/Display.html?id=87474>
+	     ## so don't set build_requires_install_policy=no to get
+	     ## reliable builds
+	     '$CPAN::Config->{build_requires_install_policy} = q{yes}; ' .
 	     # Smells like a CPAN.pm bug: if build_requires_install_policy=no is set
 	     # and halt_on_failure=1, and there's a build_requires dependency, then
 	     # the build stops.
