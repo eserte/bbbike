@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2011,2012,2013,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2011,2012,2013,2016,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -22,13 +22,14 @@ use File::Copy qw(cp);
 use File::Path qw(mkpath);
 use Getopt::Long;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 my($src,$dest);
 my $doit;
 my $v;
 my $filelist;
 my $allow_shadowed;
+my $allow_basic_test_modules;
 GetOptions("src=s" => \$src,
 	   "dest=s" => \$dest,
 	   "doit!" => \$doit,
@@ -36,8 +37,9 @@ GetOptions("src=s" => \$src,
 	   "v|verbose" => \$v,
 	   "version" => sub { print basename($0) . " $VERSION\n"; exit },
 	   "allow-shadowed" => \$allow_shadowed,
+	   "allow-basic-test-modules" => \$allow_basic_test_modules,
 	  )
-    or die "usage: $0 [-src dir | -fl filelist] [-dest dir] [-doit] [-v] [-allow-shadowed]\n";
+    or die "usage: $0 [-src dir | -fl filelist] [-dest dir] [-doit] [-v] [-allow-shadowed] [-allow-basic-test-modules]\n";
 
 my $say = !$doit || $v;
 my $do  =  $doit;
@@ -104,8 +106,8 @@ $ie->exclude('perl', qr{.*\.pod$});
 $ie->exclude('perl', qr{\.packlist$});
 $ie->include(qw(perl lib)) if $need_include_hack;
 $ie->include(qw(perl lib App)) if $need_include_hack;
-$ie->exclude(qw(perl lib App Prove.pm));
-$ie->exclude(qw(perl lib App Prove));
+$ie->exclude(qw(perl lib App Prove.pm)) if !$allow_basic_test_modules;
+$ie->exclude(qw(perl lib App Prove))    if !$allow_basic_test_modules;
 $ie->exclude(qw(perl lib CORE));
 $ie->include(qw(perl lib CORE arpa inet.h)); # XXX why?
 $ie->include(qw(perl lib CORE sys socket.h)); # XXX why?
@@ -131,8 +133,8 @@ $ie->include(qw(perl lib Module)) if $need_include_hack;
 $ie->exclude(qw(perl lib Module Build.pm));
 $ie->exclude(qw(perl lib Module Build));
 $ie->exclude(qw(perl lib Module CoreList.pm));
-$ie->exclude(qw(perl lib TAP));
-$ie->exclude(qw(perl lib Test));
+$ie->exclude(qw(perl lib TAP))  if !$allow_basic_test_modules;
+$ie->exclude(qw(perl lib Test)) if !$allow_basic_test_modules;
 $ie->include(qw(perl lib Unicode)) if $need_include_hack;
 $ie->exclude(qw(perl lib Unicode Collate));
 $ie->include(qw(perl lib auto)) if $need_include_hack;

@@ -281,6 +281,7 @@ sub action_copy_to_bbbikedistdir {
 	       "-doit", "-v",
 	       "-src", $strawberry_dir,
 	       "-dest", $bbbikedist_dir,
+	       "-allow-basic-test-modules",
 	      );
     system @cmd;
     die "Failure of command: @cmd" if $? != 0; 
