@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2015,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2015,2017,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -126,16 +126,19 @@ Parse a CPAN Bundle file and output contained modules.
 -action list:       just list the modules
 -action prereq_pm:  output lines for EUMM's PREREQ_PM section
 -action dump:       a Data::Dumper dump
+-ignore module      ignore module (may be specified multiple times)
 EOF
 }
 
 my $action = 'list';
 my $encoding;
 my $minimize;
+my @ignore_modules;
 GetOptions(
 	   'action=s' => \$action,
 	   'encoding=s' => \$encoding,
 	   'minimize' => \$minimize,
+	   'ignore|ignore-modules=s@' => \@ignore_modules,
 	  )
     or usage;
 my $bundle_file = shift
@@ -148,18 +151,22 @@ $converter->parse_file($bundle_file);
 if ($minimize) {
     $converter->minimize;
 }
-my $contents = $converter->get_module_defs;
+my @contents = @{ $converter->get_module_defs || [] };
+if (@ignore_modules) {
+    my %ignore_modules = map {($_,1)} @ignore_modules;
+    @contents = grep { !$ignore_modules{$_->[0]} } @contents;
+}
 
 if ($action eq 'list') {
-    for (@$contents) {
+    for (@contents) {
 	print $_->[0], "\n";
     }
 } elsif ($action eq 'prereq_pm') {
     if ($encoding) {
 	binmode STDOUT => ":encoding($encoding)";
     }
-    my $maxlen = max map { length $_->[0] } @$contents;
-    for (@$contents) {
+    my $maxlen = max map { length $_->[0] } @contents;
+    for (@contents) {
 	my($mod, $ver, $desc) = @$_;
 	print "\t";
 	printf '%-' . ($maxlen+2) . 's', "'$mod'";
@@ -174,7 +181,7 @@ if ($action eq 'list') {
     }
 } elsif ($action eq 'dump') {
     require Data::Dumper;
-    print Data::Dumper::Dumper($contents);
+    print Data::Dumper::Dumper(\@contents);
 } else {
     die "Invalid action '$action'";
 }

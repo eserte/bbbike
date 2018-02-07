@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2015,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2015,2017,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -24,11 +24,13 @@ my $bundle;
 my $name;
 my $minimize;
 my $debug;
+my @ignore_modules;
 GetOptions(
 	   "o=s"      => \$o,
 	   "bundle=s" => \$bundle,
 	   "name=s"   => \$name,
 	   "minimize" => \$minimize,
+	   'ignore|ignore-module=s@' => \@ignore_modules,
 	   "debug!"   => \$debug,
 	  )
     or die "usage?";
@@ -39,7 +41,7 @@ $name   or die "Please specify task name (-name option)";
 
 my $prereq_pm;
 {
-    my @cmd = ($^X, "$FindBin::RealBin/parse_bundle.pl", ($minimize ? '-minimize' : ()), -encoding => 'utf-8', -action => 'prereq_pm', $bundle);
+    my @cmd = ($^X, "$FindBin::RealBin/parse_bundle.pl", ($minimize ? '-minimize' : ()), (map { ('-ignore', $_) } @ignore_modules), -encoding => 'utf-8', -action => 'prereq_pm', $bundle);
     open my $fh, "-|", @cmd
 	or die "Error starting to run '@cmd': $!";
     binmode $fh, ':encoding(utf-8)';
