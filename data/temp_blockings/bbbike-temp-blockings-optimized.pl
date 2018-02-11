@@ -2119,7 +2119,24 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: laut fritz bis 8.12.2017, laut VMZ bis Mitte Dezember 2017
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.595041.php
+#: by: http://werbegemeinschaft-friedrichshagen.de/wp-content/uploads/2017/05/2017-05_Boelschestr_Anwohnerflyer_web.pdf
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.641756.php
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.643825.php
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.645164.php
+#: source_id: LMS-BR_r_LMS-BR_97860
+#: source_id: 2147341992
+# REMOVED ---	q4::inwork; 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
+	q4::inwork; 25539,5237 25524,5011 25519,4830
+',
+         'from' => 1509836400,
+         'id' => 2867,
+         'text' => 'Bölschestr.: Bauarbeiten, zwischen Aßmannstr. und Müggelseedamm Richtung Süden gesperrt, bis Ende März 2018',
+         'type' => 'handicap',
+         'until' => 1521802800
+       },
        undef,
        undef,
        {
@@ -2137,7 +2154,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-02-02
+#: last_checked: 2018-02-11
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -2251,6 +2268,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: mapillary (Gehweg für Radfahrer frei)
 #: XXX wann sind die Bauarbeiten beendet?
 #: last_checked: 2018-01-13 (mapillary)
+#: check_frequency: 60d
 	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
 ',
@@ -2344,7 +2362,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: last_checked: 2017-12-26
+         'data' => '#: by: http://www.berliner-woche.de/wedding/bauen/doppelter-bruch-am-ploetzensee-uferweg-sackte-ein-d136422.html
+#: last_checked: 2017-12-26
 	q3::inwork 5306,15387 5134,15565
 ',
          'from' => undef,
@@ -2440,6 +2459,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Ostburger Weg: Bauarbeiten zwischen Will-Meisel-Weg und Am Espenpfuhl, Fahrbahn gesperrt, bis Ende April 2018 ',
          'type' => 'gesperrt',
          'until' => 1525125599
+       },
+       {
+         'data' => '#: by: http://www.berliner-woche.de/zehlendorf/bauen/fertigstellung-der-berlepschstrasse-verzoegert-sich-um-ein-halbes-jahr-d137942.html (sogar "bis Ende März")
+	q4::inwork -468,1919 -343,1983 -285,2015 -228,2045
+',
+         'from' => 1518290143,
+         'id' => 2932,
+         'source_id' => '2147341799',
+         'text' => 'Berlepschstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte März 2018',
+         'type' => 'handicap',
+         'until' => 1521111600
        }
      
 );

@@ -21,13 +21,13 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-02-04
+#: last_checked: 2018-02-11
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2018-02-04
+#: last_checked: 2018-02-11
 #: check_frequency: 90d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -130,7 +130,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 # REMOVED --- #: last_checked: 2017-03-14 vvv --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9990,11571 9925,11565 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q2-::inwork 9925,11565 9737,11546 --- #: last_checked ^^^
 # 
 # REMOVED --- : osm_watch: note 814191 1
-#: last_checked: 2018-02-01
+#: last_checked: 2018-02-09
 #: check_frequency: 30d
 Alexandrinenstr.: direkter Zugang zur Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q3::inwork 10818,11269 10678,11172
 # 
@@ -226,7 +226,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: next_check_id: STAATSOPER-2014 vvv
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html
-#: last_checked: 2018-01-04 vvv
+#: last_checked: 2018-02-09 vvv
 #: check_frequency: 30d vvv
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9883,12251 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
@@ -246,10 +246,11 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
 #: source_id: LMS-BR_r_LMS-BR_197
 #: osm_watch: way id="194962375" version="7"
-#: last_checked: 2018-02-01
+#: last_checked: 2018-02-09
 #: check_frequency: 14d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q4::inwork 10601,12521 10704,12595
 # 
+#: by: http://www.berliner-woche.de/mitte/bauen/rathausstrasse-wird-gesperrt-d140537.html
 #: last_checked: 2018-02-01
 #: check_frequency: 14d
 Rathausstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10584,12507 10601,12521
@@ -402,13 +403,6 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süde
 # 
 ### Lichtenberg ###
 # 
-#: XXX wird aufgehoben, sobald das einsturzgefährdete Haus abgerissen wird
-#: osm_watch: way id="488814363" version="2"
-#: last_checked: 2018-01-06
-#: check_frequency: 30d
-# REMOVED --- Wartenbergstr.	1s:q2:inwork 15423,11667 15337,11639
-Wartenbergstr.: Fahrbahn gesperrt, auf Gehweg ausweichen	q3:inwork 15337,11639 15328,11636 15300,11584
-# 
 # REMOVED --- #: next_check_id: MINNATODENHAGENSTR-2016 --- #: XXX siehe auch bbbike-temp-blockings-Eintrag --- #: XXX Bordsteinabsenkung existiert am Anfang des Wendehammers --- #: last_checked: 2017-11-05 --- Wattstr.: Bauzäune	q3::inwork 17681,7589 17676,7555
 # REMOVED --- #: next_check_id: MOELLENDORFFSTR-2017 --- #: XXX_prog abgeschätzter Zeitverlust durch 2x Ampeln, explizite "Radfahren verboten"-Schilder; vermutlich ist man nicht schneller, wenn man auf dem rechten Gehweg bleibt --- #: XXX laut fritz Vollsperrung bis 30. November 2017; Abbiegebeschränkungen bis 10.11.2017 --- #: XXX laut vmz Bauarbeiten bis Ende 2017 --- #: XXX Möllendorffstraße (Lichtenberg) in beiden Richtungen zwischen Am Containerbahnhof und Frankfurter Allee (Berlin)  Gültig ab: 04.09.2017 08:00  Vollsperrung, Fahrbahnsanierung (bis Ende 09/17)	2147341771 --- #: source_id: 2147341771 --- #: source_id: LMS-BR_r_LMS-BR_108099_LMS-BR_72 --- #: source_id: 2147341938 --- #: last_checked: 2017-11-09 vvv --- #: next_check: 2017-11-30 vvv --- Möllendorffstr.: Bauarbeiten, Radfahrer müssen auf dem Gehweg fahren	q3-::inwork; 15420,12178 15361,12071 --- Gürtelstr.: Bauarbeiten, Radweg gesperrt, Fußgänger	q2-::inwork 15361,12071 15294,11964 --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED #: next_check_id: HAUPTSTR-2015 --- #: source_id: 2147339565 --- #: source_id: LMS-BR_r_LMS-BR_65986 --- #: source_id: 2147340080 --- #: XXX laut vmz bis Ende August 2016, laut fritz bis 31.07.2016 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1604/nachricht5997.html --- #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.470764.php --- #: last_checked: 2016-08-25 --- #: next_check: 2016-08-29 --- Kynaststr./Hauptstr.: Bauarbeiten, Gehweg benutzen	q3::inwork 14882,10732 14906,10820
@@ -524,7 +518,7 @@ Alexanderplatz: langsame Straßenbahnen, Fußgängerverkehr	q2 11139,13008 11064,12
 Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q2 11134,12793 11064,12910
 #: XXX nach den Bauarbeiten den alten Eintrag wiederherstellen
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen für Radfahrer) (in der Realität aber schon)
-#: last_checked: 2017-12-09
+#: last_checked: 2018-02-09
 #: check_frequency: 60d
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Rathausstr.: Fußgänger, Bauarbeiten	q2+ 10923,12779 10704,12595
@@ -949,7 +943,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20140603.1435.397678.html (Vorlage 096/2014)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
-#: last_checked: 2017-12-03
+#: last_checked: 2018-02-10
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268
@@ -1011,6 +1005,7 @@ Am Bahndamm: teilweise enge Stellen, Fußgänger, Radfahren offiziell nicht erlaub
 Am Bahndamm: einige Fußgänger	q1 7769,4315 7795,4242 8016,3651 8106,3410
 Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 #: XXX bleibt es bei dem steilen Abschnitt?
+#: osm_watch: way id="77098244" version="6"
 #: last_checked: 2017-10-14
 #: check_frequency: 120d
 Teltowkanalpromenade: enge und kurvige Unterführung, steile Abschnitte	q4 4274,2717 4272,2704 4247,2652 4209,2641
@@ -1634,6 +1629,8 @@ Spreepromenade: Pfad	q2 23608,5196 23785,5169 23808,5177
 Liebstadter Gang: Bordsteine	q1 24434,5645 24471,5544
 (Unterführung S-Bhf. Hirschgarten): Fußgänger	q3 23948,6054 23947,6014 23930,6013 23931,5992
 (S-Bhf. Hirschgarten - KGA Erpetal): eng	q2 23948,6054 23951,6063 23941,6118
+#: note: zusätzlich gibt es ein Drängelgitter
+#: by: http://www.berliner-woche.de/biesdorf/verkehr/der-durchgang-vom-spatenweg-zum-blumberger-damm-soll-durch-eine-sperre-sicherer-werden-m83386,139092.html
 Spatenweg: Betonbarriere, eng	q3 21191,12516 21200,12512 21205,12489 21221,12484
 Alt-Karow - Strömannstr.: enger Pfad	q3 15428,22736 15574,22640
 (Straße 70 - Ingwäonenweg): enger Pfad	q3 16486,22267 16495,22350 16421,22433 16415,22467 16442,22505

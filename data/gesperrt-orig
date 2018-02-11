@@ -704,6 +704,8 @@ Hempelsteig	1 -787,13147 -525,13034 -472,12961
 Kaulsdorfer Str.	1 22075,6967 22049,7085
 (KGA Rahnsdorf Süd, Birkenweg): kein Durchfangsverkehr, abgesperrtes Tor	2 30345,3277 30389,3314 30393,3437 30378,3501
 #: by: Roland Mohrbacher and osm
+#: XXX wird die Einbahnstraßenregelung für Radfahrer aufgehoben?
+#: by: http://www.berliner-woche.de/buckow/verkehr/radfahren-in-beide-richtungen-d135488.html
 Steinträgerweg	1 12987,2220 13023,2093
 #: by: anonymous and osm
 Am Kurzen Weg	1 -7180,14351 -7172,14459 -7185,14574
@@ -2805,6 +2807,14 @@ Drängelgitter	BNP:3::trailer=10 22097,5879
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://www.berliner-zeitung.de/berlin/verkehr/express-zum-ber-fledermaeuse-stoppen-bauarbeiten-fuer-ringbahnbruecke-29488832 (Abriss im April 2018)
+#: XXX wird aufgehoben, sobald das einsturzgefährdete Haus abgerissen wird
+#: osm_watch: way id="488814363" version="2"
+#: last_checked: 2018-02-10
+#: next_check: 2018-04-01
+Wartenbergstr.	1s:q2:inwork 15423,11667 15337,11639 15328,11636 15300,11584
+# REMOVED --- Wartenbergstr.: Fahrbahn gesperrt, auf Gehweg ausweichen	q3:inwork 15337,11639 15328,11636 15300,11584
+# 
 #: osm_watch: way id="497699542" version="5"
 #: XXX außerdem: wird es einen Sackgassenabschnitt geben? Hier oder am Björnweg?
 #: last_checked: 2018-01-14
@@ -2832,7 +2842,7 @@ Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
 # 
 #: next_check_id: OTTOBRAUN-2015
 #: XXX noch Restbauarbeiten, danach vielleicht wieder eine offizielle Radwegverbindung?
-#: last_checked: 2018-01-19
+#: last_checked: 2018-02-09
 #: check_frequency: 14d
 (Wadzeckstr. - Mollstr.)	2::inwork 11326,13196 11409,13327
 # 
@@ -2841,9 +2851,10 @@ Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6933
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_16_1713_1768_online.pdf (Benennung)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_30_3365_3488_online.pdf (Grundstücksnummerierungen)
+#: by: http://www.berliner-woche.de/rummelsburg/bauen/neues-quartier-im-lichtenhain-erste-einblicke-fuer-anwohner-und-erwerber-d133845.html
 #: XXX vermutlich Sackgasse
 #: last_checked: 2018-02-04
-#: check_frequency: 120d
+#: check_frequency: 60d
 Im Lichtenhain: neue Straße, zurzeit Bauarbeiten; Qualität, genaue Lage?	2::inwork 16497,10685 16462,10571
 # 
 # REMOVED --- #: next_check_id: LICHTBURGRING-2017 vvv --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_55_6321_6504_online.pdf (Grundstücksnummerierungen) --- #: XXX wie wird die endgültige Fahrbahnbeschaffenheit sein? Asphalt? vvv --- #: osm_watch: way id="437684188" version="4" --- #: last_checked: 2017-11-17 vvv --- #: next_check: 2018-01-13 vvv --- Lichtburgring: Baustelle, Betreten verboten	2::inwork 10004,15636 9933,15815 --- Bärbel-Bohley-Ring: Baustelle, Betreten verboten	2::inwork 9933,15815 9917,15813 9744,15793
@@ -2889,6 +2900,8 @@ Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9108,11961 9138,11872
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.633456.php (Öffnung für Fußgänger)
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8329
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8383
+#: by: http://www.berliner-woche.de/friedrichshain/bauen/rigaer-strasse-soll-temporaer-wieder-passierbar-sein-d140803.html
+#: by: http://friedrichshainblog.de/rigaer-wieder-passierbar/
 #: last_checked: 2018-01-09
 #: check_frequency: 45d
 #: valid: 20170801-20190228
@@ -2966,7 +2979,7 @@ Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11485 20631,1162
 Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19140,1137
 # 
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2018-01-04
+#: last_checked: 2018-02-09
 #: check_frequency: 90d
 Schinkelplatz: Einbahnstraße	1s:q3:inwork 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
 # 
@@ -3054,7 +3067,8 @@ Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,
 # REMOVED (Baugrube) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2016 --- #: osm_watch: note 848012 1 --- #: last_checked: 2016-12-15 --- #: check_frequency: 180d --- Sülzhayner Str.: komplett gesperrt wegen Bauarbeiten, vielleicht dauerhaft	2::inwork 13420,9259 13397,9234
 # 
 #: next_check_id: ACHTERKASTELL-2016
-#: last_checked: 2017-12-03
+#: XXX man kann aber an den Absperrungen vorbei
+#: last_checked: 2018-02-10
 #: check_frequency: 60d
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 # 
@@ -3248,6 +3262,7 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 #: by: http://weddingweiser.wordpress.com/2012/10/16/die-s-21-wird-gebaut-weddinger-strasen-werden-neu-gefuhrt/ (Projektplan)
 #: XXX geplante Fertigstellung (als Autostraße) im Dezember 2013
 #: XXX wrote Mail about current status (2013-11-05), no response
+#: by: http://www.berliner-woche.de/wedding/verkehr/senat-lehnt-fussgaengerueberweg-ab-radweg-soll-unter-der-fennbruecke-gebaut-werden-d131062.html (ggfs. auch Unterführung unter der Fennbrücke)
 # REMOVED --- osm_watch: way id="183406331" version="3"
 #: last_checked: 2017-11-04
 #: check_frequency: 120d
@@ -3271,9 +3286,10 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20111122.1040.362894.html
 #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=5878
-#: XXX Sanierungstermin steht noch nicht fest
+#: XXX Sanierung bis Ende 2020
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7641
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/artikel.563115.php
+#: by: http://www.berliner-woche.de/moabit/bauen/neue-uferwand-am-wikingerufer-baustelle-wird-gesichert-d133203.html
 #: osm_watch: way id="501191631" version="1"
 #: last_checked: 2017-09-09
 #: check_frequency: 360d
@@ -3288,6 +3304,7 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603
 # 
 #: note: Baugelände
+#: by: http://www.berliner-woche.de/mitte/bauen/erdlawine-rollt-ueber-die-oranienburger-ab-juli-wird-auf-dem-tacheles-areal-die-elf-meter-tiefe-baugrube-ausgehoben-d119088.html (bis 2020)
 #: osm_watch: way id="33036326" version="6"
 #: last_checked: 2017-11-04
 #: check_frequency: 180d
@@ -3310,7 +3327,7 @@ Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9798,
 # 
 #: XXX Eröffnung 2019 geplant
 #: by: http://www.dafmap.de/d/berlin.html?id=3598&mt=0&zoom=16
-#: last_checked: 2018-02-01
+#: last_checked: 2018-02-09
 #: check_frequency: 120d
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 

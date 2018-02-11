@@ -82,6 +82,7 @@ Sinsheimer Weg: schlechtes Kopfsteinpflaster, aber Ausweichen auf Parkplatz mögl
 Sinsheimer Weg: Betonstraße	Q0 13774,8849 13837,8932
 #: XXX Asphaltierung geplant vvv
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2018-2022) vvv
+#: by: http://www.berliner-woche.de/neukoelln/verkehr/verbesserung-fuer-radler-donaustrasse-erhaelt-asphaltdecke-d117499.html
 #: check_frequency: 60d vvv
 #: last_checked: 2017-12-22
 Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729 12549,8616 12649,8535
@@ -369,6 +370,7 @@ Adalbertstr.: Kopfsteinpflaster	Q2; 11808,11482 11726,11265 11656,11106
 #: XXX Ausbau des Kopfsteinpflasters, Bau einer Asphaltfahrbahn 
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2018-2022)
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (Radweg wird Gehweg)
+#: by: http://www.berliner-woche.de/neukoelln/verkehr/zu-eng-zu-gefaehrlich-gasse-fuer-radler-an-der-oderstrasse-geplant-d130109.html (Realisierung 2020)
 #: last_checked: 2017-10-14
 #: check_frequency: 180d
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11607,7145 11617,7083 11652,6879
@@ -2043,7 +2045,7 @@ Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 14558,10819 14352,10874
 #: next_check_id: DBWERKSTRASSE-2017
 #: XXX wann wird hier die letzte Deckschicht erstellt? vvv
-#: last_checked: 2018-02-02 vvv
+#: last_checked: 2018-02-11 vvv
 #: check_frequency: 7d vvv
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Asphalt, letzte Deckschicht fehlt	Q1 14352,10874 14231,10907 14141,10931 14076,10949
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Asphalt, letzte Deckschicht fehlt	Q1 14141,10931 14107,10911 14043,10928
@@ -2091,7 +2093,7 @@ Langhoffstr.: Asphalt	Q0 19818,14064 19817,14371 19817,14459
 #: XXX wird hier auch asphaltiert werden?
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-praesentation_29-10-2015.pdf
 #: osm_watch: way id="70668204" version="8"
-#: last_checked: 2018-01-06
+#: last_checked: 2018-02-10
 #: check_frequency: 100d
 (Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Kopfsteinpflaster	Q2 17533,12222 17480,12237 17466,12241
 Gudrunstr.: Asphalt	Q0 17466,12241 17300,12173 17195,12125 17139,12100 17088,12069 16975,12000 16865,11931
@@ -7589,7 +7591,7 @@ Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 #: XXX wird hier saniert werden?
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6721
 #: osm_watch: note 1177573 1
-#: last_checked: 2017-12-03
+#: last_checked: 2018-02-10
 #: check_frequency: 120d
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1- 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 Rüdersdorfer Str. [Rückseite]: Beton	Q0- 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
@@ -9671,6 +9673,7 @@ Alfred-Scholz-Platz: gepflastert	Q1 12753,8187 12779,8188 12805,8194
 #: XXX Fahrbahn wird neu gebaut (Baubeginn ist voraussichtlich im Frühjahr 2018)
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.515712.php
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.515712.php?date=20170522
+#: by: http://www.berliner-woche.de/steglitz/bauen/bezirk-investiert-in-sanierung-von-strassen-und-radwegen-d140640.html
 #: last_checked: 2017-03-26
 #: next_check: 2018-03-01
 Feuerbachstr.: Asphalt teilweise aufgebrochen	Q1; 5823,6413 6083,6451
@@ -10217,6 +10220,7 @@ Veilchenblütenweg: unbefestigte Schotterstraße	Q2 11664,21246 11656,21309
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.487100.php ("Spatenstich")
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6077.html
 #: XXX ändert sich bei der Umgestaltung etwas an der Qualität? vvv
+#: osm_watch: way id="210943676" version="5"
 #: last_checked: 2017-12-26 vvv
 #: check_frequency: 30d vvv
 #: note: zusätzlich mit einigen "Pflasterschwellen"
@@ -10405,7 +10409,7 @@ Zauritzweg: Verbundsteinpflaster	Q1 4194,11703 4182,11831
 Im Achterkastell: Verbundsteinpflaster	Q1+ 18730,11834 18732,11885 18875,11880
 #: next_check_id: ACHTERKASTELL-2016
 #: XXX wie wird die Qualität danach sein?
-#: last_checked: 2017-12-03
+#: last_checked: 2018-02-10
 #: check_frequency: 60d
 Im Achterkastell: Baustraße, unbefestigt, Pfützen bei Regenwetter	Q3 18875,11880 18913,11909
 (Gutspark Lichtenberg): Parkwege	Q1- 15746,12967 15749,12995 15717,13001 15612,13069
@@ -10566,7 +10570,7 @@ Am Westkreuz: Kleinsteinpflaster	Q1 2157,10497 2170,10497 2203,10455
 (zum Mauerpark, temporäre Umgehung): Asphalt	Q0- 10302,14964 10279,15033 10301,15084 10319,15090
 Gotlindestr. [Wohngebietsstraße]: Verbundsteinpflaster	Q1+ 16470,12612 16471,12657 16473,12707
 #: XXX hier wird vermutlich später auch mal Verbundsteinpflaster sein
-#: last_checked: 2018-01-06
+#: last_checked: 2018-02-10
 Gotlindestr. [Wohngebietsstraße]: unbefestigte Baustraße	Q2 16473,12707 16515,12711 16517,12665 16471,12657
 (Uferstr. - Brückenstr.): Asphalt	Q0 17847,6089 17900,6072
 (Mehringbrücke - Mehringplatz): Parkweg	Q1- 9404,10250 9535,10299
@@ -10581,6 +10585,7 @@ Björnweg: Verbundsteinpflaster	Q1 17310,15186 17317,15059
 Lichtburgring: Asphalt	Q0 10004,15636 9933,15815
 Bärbel-Bohley-Ring: Asphalt	Q0 9933,15815 9917,15813 9744,15793
 Bärbel-Bohley-Ring: Betonpflaster	Q0- 9744,15793 9747,15847 9910,15876 9917,15813
+Wadzeckstr. - Mollstr.: Betonpflaster	Q1+ 11326,13196 11409,13327
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -13659,6 +13664,7 @@ Wolzogenstr.: akzeptables Kopfsteinpflaster	Q2 -870,2737 -928,2900 -987,3163
 Anhaltinerstr.: Asphaltstreifen	Q0 -155,2658 37,2562
 #: XXX hier wird auch asphaltiert? -> ja, Planungen existieren
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/beschreibung_anhaltinerstrasse.pdf
+#: by: http://www.berliner-woche.de/steglitz/bauen/bezirk-investiert-in-sanierung-von-strassen-und-radwegen-d140640.html
 #: osm_watch: way id="22724003" version="18"
 #: last_checked: 2017-10-14 vvv
 #: check_frequency: 60d vvv
@@ -13880,6 +13886,8 @@ Lübarser Str.: Asphalt	Q0 5320,21432 5552,21824
 # 
 #: by: Katrin Kroschk: vvv
 #: corrected_by: srt (Asphalt -> ) vvv
+#: XXX ist hier mittlerweile auch Kleinsteinpflaster?
+#: by: http://www.berliner-woche.de/kaulsdorf/bauen/wann-wird-endlich-die-arbeit-beendet-m83692,139422.html
 (Wuhlewanderweg - Teterower Ring): wassergebundene Decke	Q1 22196,12961 22279,12938
 (Wuhlewanderweg - Teterower Ring): Kleinsteinpflaster	Q1- 22279,12938 22308,12940
 #: corrected_by ^^^
@@ -21168,8 +21176,10 @@ Küstriner Str.: mäßiges Kopfsteinpflaster	Q2 15799,14674 15853,14734 15878,14761
 #: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...)
 Küstriner Str.: Asphalt	Q0 15941,14834 15977,14871
 #: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...)
+#: osm_watch: way id="43899012" version="6"
 Küstriner Str.: sehr unebenes Kleinsteinpflaster	Q3+ 15977,14871 16123,15025
 #: confirmed_by: srt
+#: osm_watch: way id="43899012" version="6"
 Küstriner Str.: mäßiges Kopfsteinpflaster	Q2 16314,15223 16354,15323 16406,15452
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -21873,6 +21883,8 @@ Gravensteinstr.: guter Asphalt	Q0; 12397,22429 12257,22452
 Gravensteinstr.: guter Asphalt	Q0 12397,22429 12476,22423 12489,22420 12568,22421 12592,22427 12694,22570 12738,22630 12766,22668 12777,22679 12836,22763 12848,22776 12901,22826 12917,22829 12995,22843 13006,22858 13028,22886 13070,22903 13156,22889
 # 
 #: by: Andreas R.
+#: XXX hat sich das Pflaster mittlerweile verschlechtert (auf Q3)?
+#: by: http://www.berliner-woche.de/franzoesisch-buchholz/verkehr/pflaster-muss-endlich-repariert-werden-fachmann-analysiert-strassenzustand-d127854.html
 Gravensteinstr.: Kopfsteinpflaster	Q2 12185,22465 12229,22457 12257,22452
 # 
 #: by: R.H. (berima...):

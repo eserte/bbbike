@@ -26100,7 +26100,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2017-11-05 00:00:00"), # 1495918329, # 2017-05-27 22:52
-       until => 1514305784, # zurzeit nur verengt! --- $isodate2epoch->("2018-03-23 12:00:00"),
+       until => $isodate2epoch->("2018-03-23 12:00:00"),
        text  => 'Bölschestr.: Bauarbeiten, zwischen Aßmannstr. und Müggelseedamm Richtung Süden gesperrt, bis Ende März 2018',
        type  => 'handicap',
        data  => <<EOF,
@@ -26152,7 +26152,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-02-02
+#: last_checked: 2018-02-11
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -26447,6 +26447,7 @@ EOF
 #: by: mapillary (Gehweg für Radfahrer frei)
 #: XXX wann sind die Bauarbeiten beendet?
 #: last_checked: 2018-01-13 (mapillary)
+#: check_frequency: 60d
 	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
 EOF
@@ -26687,6 +26688,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.643712.php',
        data  => <<EOF,
+#: by: http://www.berliner-woche.de/wedding/bauen/doppelter-bruch-am-ploetzensee-uferweg-sackte-ein-d136422.html
 #: last_checked: 2017-12-26
 	q3::inwork 5306,15387 5134,15565
 EOF
@@ -26834,6 +26836,16 @@ EOF
        source_id => 'https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20180202',
        data  => <<EOF,
 	2::inwork 18023,833 17928,764 17734,675
+EOF
+     },
+     { from  => 1518290143, # 2018-02-10 20:15
+       until => $isodate2epoch->("2018-03-15 12:00:00"), # 1522533599, # 2018-03-31 23:59
+       text  => 'Berlepschstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte März 2018',
+       type  => 'handicap',
+       source_id => '2147341799',
+       data  => <<EOF,
+#: by: http://www.berliner-woche.de/zehlendorf/bauen/fertigstellung-der-berlepschstrasse-verzoegert-sich-um-ein-halbes-jahr-d137942.html (sogar "bis Ende März")
+	q4::inwork -468,1919 -343,1983 -285,2015 -228,2045
 EOF
      },
     );

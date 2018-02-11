@@ -523,6 +523,8 @@ Margarete-Kühn-Str.: Poller am Salzufer	3 5194,12398 5133,12240 *
 Margarete-Kühn-Str.: Poller am Salzufer	3 * 5133,12240 5194,12398
 Eberswalder Str. (Bernau)	1 23109,30968 23103,30923 23084,30893 22917,30635
 Rutnikstr. - Möllendorffstr.: Abbiegen verboten	3 15648,12687 15546,12690 15550,12625
+Kielblockstr. - Rutnikstr.: Linksabbiegen Pflicht	3 15433,12686 15546,12690 15648,12687
+Möllendorffstr. - Rutnikstr.: Abbiegen verboten	3 15516,12838 15546,12690 15648,12687
 # REMOVED (kein Durchgangsverkehr mehr) --- Torgauer Str.: nur für Anlieger	2:Anlieger 7446,8200 7402,8208 7374,8211 7250,8223 7001,8161
 #: by: Aaron Schaar, osm:
 Hermannswerder	1 -14306,-2867 -14044,-2918 -13765,-2974 -13733,-2967
@@ -844,6 +846,11 @@ Gartenstr. (Schwedt)	1 68940,73310 68884,73376 68854,73406
 Krumme Str.	1 4032,12167 3999,12050 3976,11869
 Kirchplatz: gesperrt für Fahrzeuge aller Art	2 -7221,14692 -7196,14746 -7140,14749
 #: by: http://www.flickr.com/photos/lapidarium42/7708833948/in/pool-gwb
+#: XXX wird hier in eine "echte Einbahnstraße" umgewandelt?
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss_v_116_17.pdf
+#: osm_watch: way id="155071540" version="5"
+#: next_check: 2018-03-05
+#: priority: #C
 Eylauer Str.: Einfahrt gesperrt	3 * 8480,9080 8472,8776
 Scharnhorststr.: Poller	3 7877,14504 7804,14445 *
 Lindauer Allee: Mittelstreifen	3nocross 5635,18776 5713,18777 5791,18778
@@ -1192,3 +1199,5 @@ Osdorfer Str.: Mittelstreifen	3nocross 4867,690 4875,677 4948,562
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7491
 #: by: http://www.berliner-woche.de/biesdorf/verkehr/verkehrsberuhigung-im-getreideviertel-bezirk-kappt-zufahrt-zum-blumberger-damm-ueber-rapsweg-d140516.html
 Rapsweg	1 21168,12794 21251,12767
+Siegfriedstr. - Rüdigerstr.: Abbiegen verboten	3 16826,12408 16820,12339 16918,12325
+Frankfurter Allee - Wohngebiet: Mittelstreifen	3nocross 16127,11950 16207,11937 16317,11920

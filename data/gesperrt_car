@@ -964,6 +964,8 @@ Margarete-Kühn-Str.: Poller am Salzufer	3 5013,12323 5133,12240 5194,12398
 Margarete-Kühn-Str.: Poller am Salzufer	3 5181,12195 5133,12240 5194,12398
 Eberswalder Str. (Bernau)	1 23109,30968 23103,30923 23084,30893 22917,30635
 Rutnikstr. - Möllendorffstr.: Abbiegen verboten	3 15648,12687 15546,12690 15550,12625
+Kielblockstr. - Rutnikstr.: Linksabbiegen Pflicht	3 15433,12686 15546,12690 15648,12687
+Möllendorffstr. - Rutnikstr.: Abbiegen verboten	3 15516,12838 15546,12690 15648,12687
 Hermannswerder	1 -14306,-2867 -14044,-2918 -13765,-2974 -13733,-2967
 Neue Schönholzer Str.	1 10089,18180 10141,18030 10179,17772
 Kleine Kurstr.	1 10230,11839 10189,11773
@@ -1914,3 +1916,11 @@ Mittelstreifen	3nocross::ignrte 4867,690 4875,677 4948,562
 Osdorfer Str. -> Mercatorweg: Mittelstreifen	3::igndisp 4948,562 4875,677 4695,556
 Mercatorweg -> Osdorfer Str.: Mittelstreifen	3::igndisp 4695,556 4875,677 4867,690
 Rapsweg	1 21168,12794 21251,12767
+Siegfriedstr. - Rüdigerstr.: Abbiegen verboten	3 16826,12408 16820,12339 16918,12325
+Mittelstreifen	3nocross::ignrte 16127,11950 16207,11937 16317,11920
+Frankfurter Allee -> Alfredstr.: Mittelstreifen	3::igndisp 16127,11950 16207,11937 16246,12177
+Frankfurter Allee -> Frankfurter Allee [Wohngebiet]: Mittelstreifen	3::igndisp 16317,11920 16207,11937 16190,11872
+Alfredstr. -> Frankfurter Allee: Mittelstreifen	3::igndisp 16246,12177 16207,11937 16317,11920
+Alfredstr. -> Frankfurter Allee [Wohngebiet]: Mittelstreifen	3::igndisp 16246,12177 16207,11937 16190,11872
+Frankfurter Allee [Wohngebiet] -> Frankfurter Allee: Mittelstreifen	3::igndisp 16190,11872 16207,11937 16127,11950
+Frankfurter Allee [Wohngebiet] -> Alfredstr.: Mittelstreifen	3::igndisp 16190,11872 16207,11937 16246,12177
