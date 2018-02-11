@@ -1,6 +1,6 @@
 ;;; bbbike.el --- editing BBBike .bbd files in GNU Emacs
 
-;; Copyright (C) 1997-2014,2016,2017 Slaven Rezic
+;; Copyright (C) 1997-2014,2016,2017,2018 Slaven Rezic
 
 ;; To use this major mode, put something like:
 ;;
@@ -10,6 +10,8 @@
 ;; to your .emacs file
 
 (setq bbbike-el-file-name load-file-name)
+
+(defvar bbbike-view-url-prefer-cached nil "If set to t then prefer showing the cached version in bbbike-view-url. Use bbbike-toggle-view-url to toggle the value.")
 
 (defvar bbbike-font-lock-trailing-whitespace-face 'bbbike-font-lock-trailing-whitespace-face
   "Face name to use for highlightning trailing whitespace.")
@@ -251,6 +253,7 @@
     (bindings--define-key menu-map [search-x-selection]  '(menu-item "Search X Selection" bbbike-search-x-selection))
     (bindings--define-key menu-map [grep]                '(menu-item "Grep" bbbike-grep))
     (bindings--define-key menu-map [separator3]          menu-bar-separator)
+    (bindings--define-key menu-map [toggle-view-url]     '(menu-item "Toggle View URL behavior" bbbike-toggle-view-url))
     (bindings--define-key menu-map [view-remote-url]     '(menu-item "View Remote URL" bbbike-view-remote-url))
     (bindings--define-key menu-map [view-cached-url]     '(menu-item "View Cached URL" bbbike-view-cached-url))
     (bindings--define-key menu-map [separator2]          menu-bar-separator)
@@ -403,15 +406,25 @@
       (setq url (bbbike--get-url-under-cursor)))
   (browse-url url))
 
-;;; XXX actually the documented behavior is NYI
-;;; XXX currently bbbike-view-cached-url is almost always called
+;;; View URL either from cache or remote.
+;;; Some URLs are always viewed remote.
+;;; Otherwise the value of bbbike-view-url-prefer-cached is
+;;; used. This variable is per default set to nil which means:
+;;; prefer remote viewing. This variable may be toggled using
+;;; bbbike-toggle-view-url.
 (defun bbbike-view-url ()
   "View the URL under cursor, either the cached version (preferred), or the remote version"
   (interactive)
   (let ((url (bbbike--get-url-under-cursor)))
-    (if (string-match "^http://www.dafmap.de/" url)
-	(bbbike-view-remote-url url)
-      (bbbike-view-cached-url url))))
+    (if (and bbbike-view-url-prefer-cached
+	     (not (string-match "^http://www.dafmap.de/" url)))
+	(bbbike-view-cached-url url)
+      (bbbike-view-remote-url url))))
+
+(defun bbbike-toggle-view-url ()
+  "Toggle between remote and cache URL viewing"
+  (interactive)
+  (setq bbbike-view-url-prefer-cached (not bbbike-view-url-prefer-cached)))
 
 (defun bbbike--get-url-under-cursor ()
   (let (begin-current-line-pos end-current-line-pos current-line)
