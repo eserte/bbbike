@@ -2436,7 +2436,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2018-01-19 vvv
+         'data' => '#: last_checked: 2018-02-12 vvv
 #: check_frequency: 14d vvv
 	q3::inwork 10277,14691 10320,14608
 	q2::inwork 10320,14608 10399,14429
@@ -2470,6 +2470,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Berlepschstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte März 2018',
          'type' => 'handicap',
          'until' => 1521111600
+       },
+       {
+         'data' => '#: XXX prüfen, ob es tatsächlich Behinderungen für Radfahrer gibt vvv
+	q4::inwork 7382,9187 7444,9148
+	q4::inwork 7308,9163 7363,9152
+#: XXX ^^^
+',
+         'from' => 1518462294,
+         'id' => 2933,
+         'text' => 'Helmstr. und Vorbergstr.: an der Hauptstr. Baustelle, Fahrbahn kann gesperrt sein, bis voraussichtlich 05.03.2018',
+         'type' => 'handicap',
+         'until' => 1520290800
        }
      
 );

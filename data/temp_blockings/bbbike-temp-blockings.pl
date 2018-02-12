@@ -26820,7 +26820,7 @@ EOF
        text  => 'Wolliner Str./Granseer Str./Fürstenberger Str.: Bauarbeiten, Kreuzung muss umständlich umfahren werden, Bordsteine',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2018-01-19 vvv
+#: last_checked: 2018-02-12 vvv
 #: check_frequency: 14d vvv
 	q3::inwork 10277,14691 10320,14608
 	q2::inwork 10320,14608 10399,14429
@@ -26846,6 +26846,17 @@ EOF
        data  => <<EOF,
 #: by: http://www.berliner-woche.de/zehlendorf/bauen/fertigstellung-der-berlepschstrasse-verzoegert-sich-um-ein-halbes-jahr-d137942.html (sogar "bis Ende März")
 	q4::inwork -468,1919 -343,1983 -285,2015 -228,2045
+EOF
+     },
+     { from  => 1518462294, # 2018-02-12 20:04
+       until => 1520290800, # 2018-03-06 00:00
+       text  => 'Helmstr. und Vorbergstr.: an der Hauptstr. Baustelle, Fahrbahn kann gesperrt sein, bis voraussichtlich 05.03.2018',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX prüfen, ob es tatsächlich Behinderungen für Radfahrer gibt vvv
+	q4::inwork 7382,9187 7444,9148
+	q4::inwork 7308,9163 7363,9152
+#: XXX ^^^
 EOF
      },
     );
