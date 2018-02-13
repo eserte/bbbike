@@ -256,7 +256,6 @@
     (bindings--define-key menu-map [toggle-view-url]     '(menu-item "Toggle View URL behavior" bbbike-toggle-view-url))
     (bindings--define-key menu-map [view-remote-url]     '(menu-item "View Remote URL" bbbike-view-remote-url))
     (bindings--define-key menu-map [view-cached-url]     '(menu-item "View Cached URL" bbbike-view-cached-url))
-    (bindings--define-key menu-map [toggle-view-url]     '(menu-item "Toggle View URL behavior" bbbike-toggle-view-url))
     (bindings--define-key menu-map [separator2]          menu-bar-separator)
     (bindings--define-key menu-map [update-now]          '(menu-item "Update Now Timestamp (directive)" bbbike-update-now))
     (bindings--define-key menu-map [now]                 '(menu-item "Insert Now Timestamp (temp-blockings)" bbbike-now))
