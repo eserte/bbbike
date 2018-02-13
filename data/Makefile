@@ -957,6 +957,7 @@ ${PERSISTENTTMPDIR}/.fragezeichen-bbbike-temp-blockings-optimized:	${PERSISTENTT
 ${XXX_TARGETS:C/^/${PERSISTENTTMPDIR}\/.XXX-/:C/$/-$(i)/}:	$(i)-orig
 	${GREPSTRASSEN} \
 	    -adddirectives XXX \
+	    -removenoncoords \
 	    ${XXX_NON_OUTDOOR:C/^/-adddirectives XXX_/} \
 	    ${DATADIR}/$(i)-orig > /dev/null
 	cp -f /tmp/XXX_$(i)-orig.bbd ${PERSISTENTTMPDIR}/.XXX-outdoor-$(i)
@@ -971,7 +972,7 @@ ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd:	\
 		Makefile \
 		${SOURCE_TARGETS_SOURCES} \
 		${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
-	${PERL} ${MISCSRCDIR}/create_fragezeichen_nextcheck.pl --preamble --${doormode}-mode \
+	${PERL} ${MISCSRCDIR}/create_fragezeichen_nextcheck.pl --remove-non-coords --preamble --${doormode}-mode \
 	    --fragezeichen-mode fragezeichen-orig \
 	    --no-fragezeichen-mode \
 	    ${SOURCE_TARGETS_SOURCES:S|fragezeichen-orig||} \
@@ -985,7 +986,7 @@ ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd:	\
 		Makefile \
 		${SOURCE_TARGETS_SOURCES} \
 		${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
-	${PERL} ${MISCSRCDIR}/create_fragezeichen_nextcheck.pl --preamble \
+	${PERL} ${MISCSRCDIR}/create_fragezeichen_nextcheck.pl --remove-non-coords --preamble \
 	    --coloring '#6c0000 +1w #b05555 +1m #ec8888 +6m #f2a0a0 +1y #fcc8c8 +5y #fdd8d8 +100y #fde0e0'\
 	    --outdoor-mode \
 	    --fragezeichen-mode fragezeichen-orig \

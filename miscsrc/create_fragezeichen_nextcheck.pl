@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2012,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012,2016,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -31,6 +31,7 @@ my $do_preamble;
 my $coloring;
 my $verbose;
 my $emit_source_directives;
+my $remove_non_coords;
 
 my @actions;
 
@@ -40,6 +41,7 @@ GetOptions(
 	   "preamble" => \$do_preamble,
 	   "coloring=s" => \$coloring,
 	   "emit-source-directives" => \$emit_source_directives,
+	   "remove-non-coords" => \$remove_non_coords,
 	   "fragezeichen-mode"    => sub { push @actions, sub { $fragezeichen_mode = 1 } },
 	   "no-fragezeichen-mode" => sub { push @actions, sub { $fragezeichen_mode = 0 } },
 	   "indoor-mode"          => sub { push @actions, sub { $door_mode = 'in' } },
@@ -199,6 +201,22 @@ sub handle_file {
 	     }
 	     # XXX better!!!
 	     $add_name =~ s{[\t\r\n]}{ }g if defined $add_name;
+	     if ($remove_non_coords) {
+		 # XXX duplicated code from grepstrassen
+		 # primary use: remove the "*" pseudo coords. XXX maybe a better solution: expand before, like it's done for the non-orig files anyway
+		 my @new_c;
+		 my $do_copy;
+		 for my $c (@{ $r->[Strassen::COORDS] }) {
+		     if ($c =~ m{^[-+]?\d+,[-+]?\d+$}) {
+			 push @new_c, $c;
+		     } else {
+			 $do_copy = 1;
+		     }
+		 }
+		 if ($do_copy) {
+		     $r->[Strassen::COORDS] = \@new_c;
+		 }
+	     }
 	     print $r->[Strassen::NAME] . (defined $add_name ? (length $r->[Strassen::NAME] ? ' ' : '') . $add_name : '') . "\t$cat " . join(" ", @{ $r->[Strassen::COORDS] }) . "\n";
 	 }, passthru_without_nextcheck => 1);
 

@@ -30,6 +30,7 @@ my($minarea, $minlength);
 my $preserveglobaldirectives;
 my $ignoreglobaldirectives;
 my $ignorelocaldirectives;
+my $removenoncoords;
 my %special;
 my %special_init;
 my %special_end;
@@ -58,6 +59,7 @@ GetOptions("v" => \$v,
 	   "preserveglobaldirectives!" => \$preserveglobaldirectives,
 	   "ignoreglobaldirectives!" => \$ignoreglobaldirectives,
 	   "ignorelocaldirectives!" => \$ignorelocaldirectives,
+	   "removenoncoords!" => \$removenoncoords,
 	   "minarea=f" => \$minarea,
 	   "minlength=f" => \$minlength,
 	   'inner=s@' => \@inner,
@@ -70,7 +72,7 @@ usage: $0 [-v] [-i] [-cat category | -catrx regexp]
        [-valid today|YYYYMMDD]
        [-special name] [-minarea ...km²] [-minlength ...km]
        [-preserveglobaldirectives] [-ignoreglobaldirectives]
-       [-ignorelocaldirectives]
+       [-ignorelocaldirectives] [-removenoncoords]
        [-inner file [-inner ...]] [-outer file [-outer ...]] bbd ...
 
 section is a region marked with the "section" directive in a bbd file.
@@ -279,6 +281,20 @@ LOOP_STREETS: while(1) {
     keys %special; # reset iterator
     while(my($k,$v) = each %special) {
 	next LOOP_STREETS if !$v->($r, $dir);
+    }
+    if ($removenoncoords) { # primary use: remove the "*" pseudo coords. XXX maybe a better solution: expand before, like it's done for the non-orig files anyway
+	my @new_c;
+	my $do_copy;
+	for my $c (@{ $r->[Strassen::COORDS] }) {
+	    if ($c =~ m{^[-+]?\d+,[-+]?\d+$}) {
+		push @new_c, $c;
+	    } else {
+		$do_copy = 1;
+	    }
+	}
+	if ($do_copy) {
+	    $r->[Strassen::COORDS] = \@new_c;
+	}
     }
     if ($ignorelocaldirectives) {
 	$new_s->push_ext($r);
