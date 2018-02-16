@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -1228,7 +1228,8 @@ EOF
 	// select a random server
 	var list = ["a", "b", "c"];
 	var server = list [ parseInt( Math.random() * list.length ) ];
-	return "http://" + server + ".tile.opencyclemap.org/cycle/" + z + "/" + a.x + "/" + a.y + ".png";
+	// return "http://" + server + ".tile.opencyclemap.org/cycle/" + z + "/" + a.x + "/" + a.y + ".png";
+	return "https://" + server + ".tile.thunderforest.com/cycle/" + z + "/" + a.x + "/" + a.y + ".png?apikey=5e7adef61ab744e6ad6313c174b373c5 ";
     }
 
     function GetTileUrl_bbbike_mapnik(a, z) {
