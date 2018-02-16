@@ -858,7 +858,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2 12598,8390 12771,8439
-	2 12771,8439 12902,8470 12925,8494
+	2 12771,8439 12902,8470 12920,8487
 EOF
      },
      { from  => undef, # 
@@ -1187,7 +1187,7 @@ EOF
        text  => 'L 16; (Siedl.Schönwalde-Pausin); Bahnübergang Gleisbauarbeiten Vollsperrung; Umleitung 25.10.2004-10.12.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -10559,23255 -10737,23418
+	2 -10550,23307 -10767,23520
 EOF
      },
      { from  => 1098741600, # 2004-10-26 00:00
@@ -3520,7 +3520,7 @@ EOF
        text  => 'L 16 Bahnübergang bei Siedlung Schönwalde Gleisbauarbeiten Vollsperrung 05.12.2005-07.12.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -10559,23255 -10737,23418
+	2 -10550,23307 -10767,23520
 EOF
      },
      { from  => 1134082800, # 2005-12-09 00:00
@@ -3528,7 +3528,7 @@ EOF
        text  => 'L 16 Bahnübergang bei Siedlung Schönwalde Gleisbauarbeiten Vollsperrung 10.12.2005-11.12.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -10559,23255 -10737,23418
+	2 -10550,23307 -10767,23520
 EOF
      },
      { from  => 1130713200, # 2005-10-31 00:00
@@ -4498,7 +4498,7 @@ EOF
        data  => <<EOF,
 	2 12438,8859 12320,8927
 	2 12438,8859 12483,8834
-	2 12925,8494 12772,8612
+	2 12920,8487 12772,8612
 	2 12483,8834 12630,8722
 	2 12742,8635 12630,8722
 	2 12242,8972 12320,8927
@@ -6022,7 +6022,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003672',
        data  => <<EOF,
-	2::inwork 12844,9351 12764,9433 12563,9536
+	2::inwork 12837,9353 12764,9433 12563,9536
 EOF
      },
      { from  => 1160172484, # 2006-10-07 00:08
@@ -6799,7 +6799,7 @@ EOF
        text  => 'Bauarbeiten am Maybachufer zwischen Pannierstr. und Weichselstr., Behinderungen möglich',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 12844,9351 12764,9433 12563,9536
+	q4::inwork 12837,9353 12764,9433 12563,9536
 EOF
      },
      { from  => 1164322800, # 2006-11-24 00:00
@@ -7604,7 +7604,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005045',
        data  => <<EOF,
-	2::temp 12925,8494 12772,8612 12742,8635 12630,8722 12483,8834 12438,8859 12320,8927 12242,8972
+	2::temp 12920,8487 12772,8612 12742,8635 12630,8722 12483,8834 12438,8859 12320,8927 12242,8972
 EOF
      },
      { from  => 1174640400, # 2007-03-23 10:00
@@ -9986,7 +9986,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006665',
        data  => <<EOF,
-	2::temp 12925,8494 12772,8612 12742,8635 12630,8722 12483,8834 12438,8859 12320,8927 12242,8972
+	2::temp 12920,8487 12772,8612 12742,8635 12630,8722 12483,8834 12438,8859 12320,8927 12242,8972
 EOF
      },
      { from  => 1190067574, # 2007-09-18 00:19
@@ -21805,7 +21805,7 @@ EOF
        text  => 'Innstr./Wildenbruchplatz: Bauarbeiten, Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 13301,8606 13314,8624 13366,8694
+	q4::inwork 13301,8606 13314,8624 13368,8689
 	q4::inwork 13314,8624 13227,8692
 EOF
      },
@@ -24592,8 +24592,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (beendet) --- #: by: wosch vvv --- #: confirmed_by: srt vvv --- #: XXX 30m zu jeder Seite der Kreuzung sind gesperrt; wann sind die Bauarbeiten fertig? vvv --- #: last_checked: 2015-10-09 vvv --- #: check_frequency: 7d vvv
-	q3::inwork 12761,9190 12907,9073 13048,8956
-	q3::inwork 12907,9073 12836,8980
+	q3::inwork 12755,9188 12902,9066 13045,8951
+	q3::inwork 12902,9066 12836,8980
 EOF
      },
      { from  => undef, # 
@@ -24958,7 +24958,7 @@ EOF
        data  => <<EOF,
 # REMOVED --- : XXX Wann sind die Bauarbeiten beendet? Wie weit geht die Sperrung Richtung Süden?
 # REMOVED --- : last_checked: 2016-02-23
-	2::inwork 12620,9293 12565,9200 12548,9167
+	2::inwork 12621,9297 12565,9200 12548,9167
 EOF
      },
      { from  => 1448168400, # 2015-11-22 06:00
@@ -25653,7 +25653,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-02-01 vvv
+#: last_checked: 2018-02-15 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -25989,12 +25989,12 @@ EOF
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober; laut Pressemitteilung bis Ende 2017
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
-#: last_checked: 2018-01-08 vvv
+#: last_checked: 2018-02-15 vvv
 # REMOVED (weitgehend fertig) ---	q3::inwork 13384,8354 13217,8493
 # REMOVED	q3::inwork; 13217,8493 13262,8554
 # REMOVED	q3::inwork; 13262,8554 13301,8606 13314,8624
-# REMOVED	q4::inwork 13366,8694 13314,8624
-	q4::inwork 13301,8606 13314,8624 13366,8694
+# REMOVED	q4::inwork 13368,8689 13314,8624
+	q4::inwork 13301,8606 13314,8624 13368,8689
 #: last_checked ^^^
 EOF
      },
@@ -26152,7 +26152,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-02-13
+#: last_checked: 2018-02-15
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -26786,8 +26786,7 @@ EOF
 #: note: Parkverbot ist länger, ca. 6 bis 20 Uhr
 #: tempex: (sa) T10-T16
 	q4::temp:clock 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964
-#: XXX prüfen: findet auch auf der Nordseite ein Markt statt? Sind hier auch Halteverbotsschilder?
-	q4::temp:clock 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
+# REMOVED (hier nicht) --- #: XXX prüfen: findet auch auf der Nordseite ein Markt statt? Sind hier auch Halteverbotsschilder? --- q4::temp:clock 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
 EOF
      },
      { from  => undef, # 

@@ -2020,7 +2020,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-02-01 vvv
+#: last_checked: 2018-02-15 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -2082,12 +2082,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober; laut Pressemitteilung bis Ende 2017
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
-#: last_checked: 2018-01-08 vvv
+#: last_checked: 2018-02-15 vvv
 # REMOVED (weitgehend fertig) ---	q3::inwork 13384,8354 13217,8493
 # REMOVED	q3::inwork; 13217,8493 13262,8554
 # REMOVED	q3::inwork; 13262,8554 13301,8606 13314,8624
-# REMOVED	q4::inwork 13366,8694 13314,8624
-	q4::inwork 13301,8606 13314,8624 13366,8694
+# REMOVED	q4::inwork 13368,8689 13314,8624
+	q4::inwork 13301,8606 13314,8624 13368,8689
 #: last_checked ^^^
 ',
          'from' => 1491498639,
@@ -2154,7 +2154,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-02-13
+#: last_checked: 2018-02-15
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -2398,8 +2398,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: note: Parkverbot ist länger, ca. 6 bis 20 Uhr
 #: tempex: (sa) T10-T16
 	q4::temp:clock 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964
-#: XXX prüfen: findet auch auf der Nordseite ein Markt statt? Sind hier auch Halteverbotsschilder?
-	q4::temp:clock 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
+# REMOVED (hier nicht) --- #: XXX prüfen: findet auch auf der Nordseite ein Markt statt? Sind hier auch Halteverbotsschilder? --- q4::temp:clock 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
 ',
          'from' => undef,
          'id' => 2927,

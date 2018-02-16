@@ -182,8 +182,8 @@ Di, 27.10.1998
 14558,10264   Treptowers/Stralauer A (Auto)      N->S       08:49:58
 14196,9749    Elsenstr./Puschkinallee (Auto)     N->S   90  08:51:02  08:51:31
 13614,9333    Karl-Kunger-Str/Wildenbruchstr.    O->W       08:55:24
-13335,9019    Wildenbruchstr./Harzer Str.        NO->SW     08:56:13  08:56:43
-12925,8494    Wildenbruchstr./Sonnenallee        N->SW      08:58:58  08:59:14
+13333,9017    Wildenbruchstr./Harzer Str.        NO->SW     08:56:13  08:56:43
+12920,8487    Wildenbruchstr./Sonnenallee        N->SW      08:58:58  08:59:14
 12771,8439    Erkstr./Donaustr.                  NO->SW     08:59:43
 12598,8390    Erkstr./Karl-Marx-Str.             NO->NW     09:01:20
 12500,8504    Karl-Marx-Str./Flughafenstr.       SO->NW     09:02:00
@@ -267,9 +267,9 @@ Do, 29.10.1998
 12500,8504    Karl-Marx-Str./Flughafenstr.       NW->SO     20:04:00  20:03:18
 12598,8390    Karl-Marx-Str./Erkstr.             NW->SO 60  20:05:01  20:04:36
 12771,8439    Erkstr./Donaustr.                  W->O       20:06:25  20:05:50
-12925,8494    Erkstr./Sonnenallee                W->NO      20:06:49
-13029,8632    Wildenbruchstr./Weserstr.          SW->NO     20:06:59
-13335,9019    Wildenbruchstr./Harzer Str.        SW->NO     20:08:44
+12920,8487    Erkstr./Sonnenallee                W->NO      20:06:49
+13033,8628    Wildenbruchstr./Weserstr.          SW->NO     20:06:59
+13333,9017    Wildenbruchstr./Harzer Str.        SW->NO     20:08:44
 13614,9333    Wildenbruchstr./Karl-Kunger-Str.   SW->NO     20:09:38
 14089,9610    Elsenstr./Am Treptower Park        S->N   85  20:11:44  20:11:57
 14558,10264   Stralauer Str./Markgrafendamm      S->N       20:15:20  20:14:40
@@ -283,8 +283,8 @@ Fr, 30.10.1998
 14641,10552   Markgrafendamm/Persiusstr.         N->S       08:47:13
 14558,10264   Stralauer Str./Markgrafendamm      N->S       08:48:29
 14196,9749    Elsenstr./Puschkinallee            N->S   90  08:49:33  08:50:03
-13335,9019    Harzer Str./Wildenbruchstr.        NW->SO 70  09:00:34  08:59:38
-12925,8494    Erkstr./Sonnenallee                NO->W      09:03:49
+13333,9017    Harzer Str./Wildenbruchstr.        NW->SO 70  09:00:34  08:59:38
+12920,8487    Erkstr./Sonnenallee                NO->W      09:03:49
 12771,8439    Erkstr./Donaustr.                  O->W       09:04:34
 12195,8436    Flughafenstr./Reuterstr.           O->W   60  09:06:54  09:06:21
 11898,8362    Flughafenstr./Hermannstr.          O->W   60  09:06:36  09:06:46
@@ -677,7 +677,7 @@ Do, 08.04.1999
 14558,10264   Stralauer Allee/An den Treptowers  N->S       09:08:42
 14196,9749    Elsenstr./Puschkinallee            NO->SW 70? 09:10:48  09:09:52
 13614,9333    Wildenbruchstr./Karl-Kunger-Str    SO->NW 70  09:16:32  09:15:48
-13335,9019    Wildenbruchstr./Harzer Str.        NO->SW 70  09:17:22  09:17:52
+13333,9017    Wildenbruchstr./Harzer Str.        NO->SW 70  09:17:22  09:17:52
 
 # Punkt	      Kreuzung                           Dir    Zyk grün      rot
 # ----------------------------------------------------------------------------
@@ -750,9 +750,9 @@ Sa, 10.04.1999
 14089,9610    Elsenstr./Am Treptower Park        NO->SW     09:15:55
 13849,9310    Kiefholzstr./Elsenstr.             NO->SW     09:17:11
 13614,9333    Wildenbruchstr./Karl-Kunger-Str.   SO->NW     09:18:13
-13335,9019    Wildenbruchstr./Harzer Str.        NO->SW 70  09:19:03  09:18:23
-13029,8632    Wildenbruchstr./Weserstr.          NO->SW 70  09:20:48  09:20:13
-12925,8494    Sonnenallee/Erkstr./Wildenbruchst  NO->SW 70  09:20:38  09:20:54
+13333,9017    Wildenbruchstr./Harzer Str.        NO->SW 70  09:19:03  09:18:23
+13033,8628    Wildenbruchstr./Weserstr.          NO->SW 70  09:20:48  09:20:13
+12920,8487    Sonnenallee/Erkstr./Wildenbruchst  NO->SW 70  09:20:38  09:20:54
 12771,8439    Erkstr./Donaustr.                  O->W       09:22:33  09:22:00
 12598,8390    Karl-Marx-Str./Erkstr. (links)     O->S       09:23:08  09:22:12
 12598,8390    Karl-Marx-Str./Erkstr. (rechts)    O->N       09:23:00
@@ -787,8 +787,8 @@ So, 11.04.1999
 14089,9610    Elsenstr./Am Treptower Park        NO->SW     14:56:12  14:55:30
 13849,9310    Kiefholzstr./Elsenstr.             NO->SW               14:57:56
 13614,9333    Wildenbruchstr./Karl-Kunger-Str.   SO->NW     14:59:42  14:58:58
-13335,9019    Wildenbruchstr./Harzer Str.        NO->SW               14:59:52
-12925,8494    Sonnenallee/Erkstr./Wildenbruchst  NO->SW 70  15:02:08  15:02:23
+13333,9017    Wildenbruchstr./Harzer Str.        NO->SW               14:59:52
+12920,8487    Sonnenallee/Erkstr./Wildenbruchst  NO->SW 70  15:02:08  15:02:23
 12549,8616    Donaustr./Fuldastr.                SO->NW 70  15:04:23  15:04:43
 12500,8504    Karl-Marx-Str./Flughafenstr./Fuld  NO->W      15:05:57
 12195,8436    Flughafenstr./Reuterstr.           O->W   60  15:07:13  15:07:40
@@ -863,8 +863,8 @@ Do, 22.04.1999
 11898,8362    Hermannstr./Flughafenstr.          W->O   50  23:49:43  23:50:02
 12195,8436    Flughafenstr./Reuterstr.           W->O   40  23:51:03  23:51:21
 12771,8439    Erkstr./Donaustr.                  W->O   50  23:53:15  23:53:22
-12925,8494    Sonnenallee/Erkstr./Wildenbruchst  W->NO  50  23:54:45  23:54:05
-13335,9019    Wildenbruchstr./Harzer Str.        SW->NO 50  23:55:25  23:55:45
+12920,8487    Sonnenallee/Erkstr./Wildenbruchst  W->NO  50  23:54:45  23:54:05
+13333,9017    Wildenbruchstr./Harzer Str.        SW->NO 50  23:55:25  23:55:45
 13849,9310    Kiefholzstr./Elsenstr.                    AUS
 14089,9610    Elsenstr./Am Treptower Park        SW->NO 60  23:59:20  23:59:32
 14196,9749    Elsenstr./Puschkinallee            SW->NO 60  00:00:28  00:00:46
@@ -911,9 +911,9 @@ Mo, 26.04.1999
 14089,9610    Elsenstr./Am Treptower Park  (Rad) S->N       10:25:08
 13849,9310    Kiefholzstr./Elsenstr.             S->N       10:26:34  10:25:54
 13614,9333    Wildenbruchstr./Karl-Kunger-Str.   O->W       10:27:35
-13335,9019    Wildenbruchstr./Harzer Str.        NO->SW     10:28:25
-13029,8632    Wildenbruchstr./Weserstr.          NO->SW     10:30:10  10:29:35
-12925,8494    Sonnenallee/Erkstr./Wildenbruchst  N->SW      10:31:10  10:30:15
+13333,9017    Wildenbruchstr./Harzer Str.        NO->SW     10:28:25
+13033,8628    Wildenbruchstr./Weserstr.          NO->SW     10:30:10  10:29:35
+12920,8487    Sonnenallee/Erkstr./Wildenbruchst  N->SW      10:31:10  10:30:15
 12771,8439    Erkstr./Donaustr.                  NO->SW     10:31:55  10:31:22
 12598,8390    Karl-Marx-Str./Erkstr.             NO->SO     10:32:33
 12500,8504    Karl-Marx-Str./Flughafenstr./Fuld  SO->NW     10:33:02

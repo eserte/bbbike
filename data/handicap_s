@@ -6,9 +6,9 @@
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 Dˆringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 Lange Str.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 12409,11902 12238,11931
-Heidelberger Str.: Baustelle, Fahrbahn an der Wildenbruchstr. gesperrt	q3::inwork 13489,9199 13420,9259
+Heidelberger Str.: Baustelle, Fahrbahn an der Wildenbruchstr. gesperrt	q3::inwork 13491,9201 13421,9260
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
-Voltairestr.: Baustellenverkehr	q2 11329,12497 11209,12430
+Voltairestr.: Fahrbahn unter Umst‰nden wegen Baustelle gesperrt, Ausweichen auf Gehweg	q2 11329,12497 11209,12430
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9945,11371 9936,11469
 Sch¸tzenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
@@ -545,7 +545,7 @@ Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 (Aldi/Getr‰nke-Hoffmann-Parkplatz): Parkplatz	q1 13208,11658 13186,11692 13173,11788
 (Schmidstr. - Heinrich-Heine-Str.): Bordsteine, Fuﬂg‰nger	q3 11236,11508 11170,11558
 (Entlang des Stadtbahnviadukts): Bordsteine, Fuﬂg‰nger	q2 11966,11832 12132,11788
-(Maybachufer - Weigandufer): Fuﬂg‰nger	q3 12851,9309 12907,9073
+(Maybachufer - Weigandufer): Fuﬂg‰nger, B‰ume	q3 12845,9304 12862,9273 12909,9085 12902,9066
 (an der Notfallaufnahme CharitÈ): Notfallwagen, Fuﬂg‰nger	q2 8833,13440 8836,13396 8806,13384 8736,13369 8665,13353
 (Lasdehner Str. - Gubener Str.): Fuﬂg‰nger, Bordsteine	q3 13375,12062 13339,12029
 Perleberger - Kieler: unterhalb der Br¸cke sehr eng	q3 7636,14414 7612,14449
@@ -591,9 +591,9 @@ Dornbrunner Str.: zwei Bodenschwellen	q1 16147,6545 16043,6414
 Meierottostr.: zwei Moabiter Kissen	q0 5463,9961 5246,10168
 (Neue Gr¸nstr. - Alte Jakobstr.): Radfahren verboten	q4 10624,11548 10526,11612
 Cuvrystr.: Bodenschwellen, Aufpflasterungen	q1 13035,10076 13132,10239
-Elsensteg: Fuﬂg‰nger	q3 13366,8694 13376,8705
-Elsensteg: Fuﬂg‰nger	q4 13376,8705 13394,8730
-Elsensteg: Fuﬂg‰nger	q3 13394,8730 13402,8741
+Elsensteg: Fuﬂg‰nger	q3 13368,8689 13379,8703
+Elsensteg: Fuﬂg‰nger	q4 13379,8703 13397,8727
+Elsensteg: Fuﬂg‰nger	q3 13397,8727 13405,8737
 Elsenstr. - Bahndamm: enger Weg	q2 13923,9405 13953,9372
 (Blockpark): Fuﬂg‰nger, Bordstein	q2 16300,10753 16265,10681
 (Blockpark): Fuﬂg‰nger	q1 16265,10681 16246,10641 16193,10593
@@ -2616,8 +2616,8 @@ Gutenbergstr.: Einbahnstraﬂe wegen Bauarbeiten: gegen die Einbahnstraﬂenrichtung
 Schinkelplatz: Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
 Karower Str.: tempor‰re Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 16593,25640 16632,25512 16669,25373
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 5192,10234 5196,10398
-BouchÈstr.: Baustelle, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 13298,9252 13190,9139
-Mengerzeile: Baustelle, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 13176,9302 13100,9210
+BouchÈstr.: Baustelle, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 13298,9252 13188,9134
+Mengerzeile: Baustelle, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 13176,9302 13098,9205
 Chausseestr.: Baustelle, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 8732,14098 8654,14194
 Chausseestr.: Baustelle, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 8654,14194 8607,14253 8570,14299 8442,14456
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 9042,11839 8969,11814

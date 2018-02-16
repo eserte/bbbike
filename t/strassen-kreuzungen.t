@@ -236,6 +236,13 @@ for my $kr ($kr1, $kr2) {
 	my %situation = situation_at_point_inorder($kr, qw(13066,11854 13173,11788 13295,11792));
 	is($situation{action}, '', q{Die Parkplatzeinfahrt sollte hier kein "links" verursachen.}); # it does with HALF_ANGLE=30
     }
+
+    {
+	# Fuldastr./Weichselpark
+	my %situation = situation_at_point_inorder($kr, qw(12836,8980 12902,9066 12909,9085));
+	is($situation{action}, '');
+    }
+
 }
 
 for my $kr ($kr1, $kr2) {
@@ -264,12 +271,6 @@ for my $kr ($kr1, $kr2) {
 	# Körtestr./Südstern
 	my %situation = situation_at_point_inorder($kr, qw(10905,9472 10749,9342 10713,9260));
 	is($situation{action}, '', q{Should be "straight", because it's the main street});
-    }
-
-    {
-	# Fuldastr./Weichselpark
-	my %situation = situation_at_point_inorder($kr, qw(12836,8980 12907,9073 12851,9309));
-	is($situation{action}, 'half-left', q{Need some indication that it's not the Weigandufer to the left, but the Parkweg});
     }
 
     {

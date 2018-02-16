@@ -1703,7 +1703,7 @@ Stralauer Allee: unbequem passierbare Straße	3nocross 14222,10430 14405,10340 14
 Stralauer Str.: Mittelstreifen	3nocross 11221,12250 11300,12241 11347,12223
 Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross 12630,8722 12742,8635 12772,8612
 Sonnenallee: Mittelstreifen	3nocross 13277,8211 13459,8072 13474,8060
-Sonnenallee: Mittelstreifen	3nocross 13010,8422 13042,8395 13107,8343
+Sonnenallee: Mittelstreifen	3nocross 13011,8416 13038,8394 13102,8343
 Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10659,12259 10625,12206 10574,12131
 Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10700,12315 10723,12346 10738,12364
 Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5215,10711 5341,10756 5475,10808
@@ -2063,8 +2063,8 @@ tragen (Eisenbahnbrücke Caputh)	0:60 -18002,-7496
 tragen (Eisenbahnbrücke Caputh)	0:60 -17978,-7375
 tragen (Eisenbahnbrücke Werder)	0:60 -21048,-2029
 tragen (Eisenbahnbrücke Werder)	0:60 -21210,-2058
-tragen (Elsensteg, 6 Stufen)	0:10 13376,8705
-tragen (Elsensteg, 6 Stufen)	0:10 13394,8730
+tragen (Elsensteg, 6 Stufen)	0:10 13379,8703
+tragen (Elsensteg, 6 Stufen)	0:10 13397,8727
 tragen (Gerickesteg, ungefähr 20 Stufen)	0:30 6748,12669
 tragen (Gerickesteg, ungefähr 20 Stufen)	0:30 6702,12633
 #: note: exakt 48 oder 49 Stufen
@@ -2187,6 +2187,8 @@ tragen (Treppe, 19 Stufen)	0:25 25928,-5990
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter	BNP:3::trailer=10 12909,9085
+Drängelgitter	BNP:3::trailer=10 12862,9273
 Drängelgitter	BNP:3::trailer=10 7916,17576
 Drängelgitter	BNP:3::trailer=10 22237,6211
 weites Drängelgitter	BNP:2::trailer=7 5628,23977
@@ -2971,12 +2973,7 @@ Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg"
 Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11485 20631,11621 20633,11651
 # 
 # REMOVED --- #: last_checked: 2017-09-20 --- #: check_frequency: 14d --- Gitschiner Str./Lobeckstr.: Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3nocross::inwork 10122,10294 10363,10303 10605,10312
-# 
-#: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus? --- ja, wird es geben
-#: osm_watch: way id="461214846" version="2"
-#: last_checked: 2017-08-10
-#: check_frequency: 90d
-Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19140,1137
+# REMOVED (bei osm nicht mehr construction) --- #: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus? --- ja, wird es geben --- #: osm_watch: way id="461214846" version="3" --- #: last_checked: 2017-08-10 --- #: check_frequency: 90d --- Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19140,1137
 # 
 #: next_check_id: SCHINKELPLATZ-2014
 #: last_checked: 2018-02-09
@@ -3016,11 +3013,11 @@ Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtun
 #: osm_watch: way id="466318949" version="4"
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
 #: last_checked: 2018-01-30
-Bouchéstr.: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13298,9252 13190,9139
+Bouchéstr.: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13298,9252 13188,9134
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
 #: last_checked: 2018-01-30
-Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13176,9302 13100,9210
+Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13176,9302 13098,9205
 # 
 # REMOVED (mittlerweile ist eine Ausweichmöglichkeit markiert) --- #: last_checked: 2017-03-01 --- Karl-Marx-Platz: Bauarbeiten, Einbahnstraße gilt nun auch für Radfahrer	1s:q3 12969,7610 13100,7626
 # REMOVED --- #: source_id: 2147340790 --- #: source_id: 2147340922 --- #: last_checked: 2017-03-20 --- #: next_check: 2017-03-24 --- # REMOVED --- : valid: -20170228 --- Puschkinallee: Fahrtrichtung gesperrt	1::inwork 13795,9941 13890,9894
@@ -3088,7 +3085,7 @@ Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,1192
 #: osm_watch: way id="137084083" version="7"
 #: last_checked: 2018-01-30
 #: check_frequency: 60d
-Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,9200 12548,9167
+Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,9200 12548,9167
 # 
 # REMOVED --- #: XXX Straße wird zurückgebaut --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.256386.php --- #: osm_watch: way id="309901369" version="4" --- #: source_id: 2147339783 --- #: source_id: LMS-BR_r_LMS-BR_93449 --- #: last_checked: 2017-05-29 --- Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7733,14570
 # REMOVED --- Treptower Park: Bauarbeiten, Weg noch nicht fertiggestellt	2::inwork 14318,9688 14371,9726 14443,9731
@@ -3265,7 +3262,7 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 #: by: http://www.berliner-woche.de/wedding/verkehr/senat-lehnt-fussgaengerueberweg-ab-radweg-soll-unter-der-fennbruecke-gebaut-werden-d131062.html (ggfs. auch Unterführung unter der Fennbrücke)
 # REMOVED --- osm_watch: way id="183406331" version="3"
 #: last_checked: 2017-11-04
-#: check_frequency: 120d
+#: check_frequency: 150d
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)

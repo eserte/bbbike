@@ -1837,7 +1837,7 @@ Treptower Str. -> Sonnenallee: Mittelstreifen	3::igndisp 13457,8069 13459,8072 1
 Treptower Str. -> Treptower Str.: Mittelstreifen	3::igndisp 13457,8069 13459,8072 13478,8095
 Treptower Str. -> Sonnenallee: Mittelstreifen	3::igndisp 13478,8095 13459,8072 13474,8060
 Treptower Str. -> Treptower Str.: Mittelstreifen	3::igndisp 13478,8095 13459,8072 13457,8069
-Mittelstreifen	3nocross::ignrte 13010,8422 13042,8395 13107,8343
+Mittelstreifen	3nocross::ignrte 13011,8416 13038,8394 13102,8343
 unbequemes Passieren des Mittelstreifens	3nocross::ignrte 10675,12280 10659,12259 10625,12206 10574,12131
 Mühlendamm -> Poststr.: unbequemes Passieren des Mittelstreifens	3::igndisp 10625,12206 10659,12259 10629,12293
 Poststr. -> Mühlendamm: unbequemes Passieren des Mittelstreifens	3::igndisp 10629,12293 10659,12259 10675,12280
@@ -2391,8 +2391,8 @@ tragen (Eisenbahnbrücke Caputh)	0:60:-167 -18002,-7496
 tragen (Eisenbahnbrücke Caputh)	0:60:-168 -17978,-7375
 tragen (Eisenbahnbrücke Werder)	0:60:-61 -21048,-2029
 tragen (Eisenbahnbrücke Werder)	0:60:79 -21210,-2058
-tragen (Elsensteg, 6 Stufen)	0:10:-137 13376,8705
-tragen (Elsensteg, 6 Stufen)	0:10:-144 13394,8730
+tragen (Elsensteg, 6 Stufen)	0:10:-141 13379,8703
+tragen (Elsensteg, 6 Stufen)	0:10:-143 13397,8727
 tragen (Gerickesteg, ungefähr 20 Stufen)	0:30:-128 6748,12669
 tragen (Gerickesteg, ungefähr 20 Stufen)	0:30:-126 6702,12633
 tragen (Spreetunnel, ca. 50 Stufen)	0:60:21 25658,4619
@@ -2467,6 +2467,8 @@ Treppe	0:40:-131 1888,42795
 tragen (mehrere Treppen mit insgesamt 45 Stufen und Kinderwagenrampe)	0:90:-44 3514,24652
 tragen (Treppe, 18 Stufen)	0:25:-66 25902,-6006
 tragen (Treppe, 19 Stufen)	0:25:-194 25928,-5990
+Drängelgitter	BNP:3:-14:trailer=10 12909,9085
+Drängelgitter	BNP:3:-28:trailer=10 12862,9273
 Drängelgitter	BNP:3:4:trailer=10 7916,17576
 Drängelgitter	BNP:3:-2:trailer=10 22237,6211
 weites Drängelgitter	BNP:2:33:trailer=7 5628,23977
@@ -2930,20 +2932,19 @@ Gutenbergstr.: Einbahnstraße wegen Bauarbeiten	1s:inwork 5317,12242 5518,12159
 Möckernkiez: Bauarbeiten	2::inwork 8778,9759 8710,9725 8729,9670 8596,9595 8565,9657
 Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen hier weiterhin Kfz fahren?	2::inwork 22101,10985 22146,10995 22172,10996 22195,10993
 Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11485 20631,11621 20633,11651
-Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19140,1137
 Schinkelplatz: Einbahnstraße	1s:inwork 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
 Limburger Str.: Bauarbeiten am Rathaus Wedding, komplett gesperrt	2::inwork 7129,15717 7012,15571
 Karower Str.: temporäre Einbahnstraßenregelung	1s:inwork 16593,25640 16632,25512 16669,25373
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt	1s:inwork 5192,10234 5196,10398
 (Verlängerte Hertzallee): Bauarbeiten, komplett gesperrt	2::inwork 5352,11502 5296,11529 4950,11696 4905,11785
-Bouchéstr.: Baustelle, Einbahnstraßenregelung	1s:inwork 13298,9252 13190,9139
-Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:inwork 13176,9302 13100,9210
+Bouchéstr.: Baustelle, Einbahnstraßenregelung	1s:inwork 13298,9252 13188,9134
+Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:inwork 13176,9302 13098,9205
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:inwork 8732,14098 8654,14194
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:inwork 8654,14194 8607,14253 8570,14299 8442,14456
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:inwork 9042,11839 8969,11814
 Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,14449 7551,14464
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
-Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12620,9293 12565,9200 12548,9167
+Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,9200 12548,9167
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
 Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 18892,3256 18953,3318
 Lydia-Rabinowitsch-Str.: noch gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924

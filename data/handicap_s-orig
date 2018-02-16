@@ -21,7 +21,7 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-02-11
+#: last_checked: 2018-02-15
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
@@ -31,7 +31,7 @@ Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,1
 #: check_frequency: 90d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
-#: last_checked: 2018-02-13
+#: last_checked: 2018-02-15
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 # REMOVED --- #: by: fritz --- #: last_checked: 2017-09-28 --- #: check_frequency: 10d --- # REMOVED --- #: valid: -20170927 --- Krautstr.: Fahrbahn abschnittsweise gesperrt, Ausweichen auf Gehweg notwendig	q3::inwork 11966,11832 11993,11978
@@ -75,7 +75,7 @@ Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11
 #: next_check_id: HEIDELBERGER-2017
 #: last_checked: 2018-01-30
 #: check_frequency: 30d
-Heidelberger Str.: Baustelle, Fahrbahn an der Wildenbruchstr. gesperrt	q3::inwork 13489,9199 13420,9259
+Heidelberger Str.: Baustelle, Fahrbahn an der Wildenbruchstr. gesperrt	q3::inwork 13491,9201 13421,9260
 # 
 # REMOVED (mittlerweile wieder offen) --- #: by: http://www.dafmap.de/d/berlin.html?id=4505&mt=0&zoom=17 --- #: last_checked: 2017-03-20 --- #: check_frequency: 14d --- Kiefholzstr.: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 13821,9340 13715,9455
 # REMOVED (aber vielleicht nur am Wochenende offen?) --- #: last_checked: 2016-12-20 vvv --- #: check_frequency: 21d vvv --- Schmollerplatz: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 13203,9450 13124,9375 --- Schmollerplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 13124,9375 13111,9361 13126,9347 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -101,9 +101,9 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 # REMOVED --- #: last_checked: 2017-03-24 --- Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
-#: XXX Richtung Westen eigentlich wg. Einbahnstraße gesperrt, aber man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen; Richtung Osten manchmal (werktags?) ein Schild "Durchfahrt verboten"
-#: last_checked: 2018-02-01
-Voltairestr.: Baustellenverkehr	q2 11329,12497 11209,12430
+#: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
+#: last_checked: 2018-02-15
+Voltairestr.: Fahrbahn unter Umständen wegen Baustelle gesperrt, Ausweichen auf Gehweg	q2- 11329,12497 11209,12430
 # 
 #: next_check_id: ZIEGELSTR-2016
 #: XXX Ende der Bauarbeiten?
@@ -365,7 +365,7 @@ Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5894,12480 5944,12
 ### Neukölln ###
 # 
 # REMOVED (Bauarbeiten beendet) --- #: XXX nach den Bauarbeiten wird die Straße zur Einbahnstraße. Auch für Radfahrer? Ende der Bauarbeiten: Oktober 2017 --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.586667.php --- #: last_checked: 2017-09-19 --- #: next_check: 2017-10-01 --- Kiehlufer: Bauarbeiten, Fahrbahn gesperrt, Bordsteine beim Ausweichen auf dem Gehweg	q3::inwork 12913,9353 12901,9340 12895,9323 12950,9132
-# REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 7d vvv --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12761,9190 12851,9309 12844,9351 --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12907,9073 12761,9190 --- #: check_frequency ^^^ --- #: last_checked ^^^
+# REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 7d vvv --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12761,9190 12845,9304 12844,9351 --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12902,9066 12761,9190 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4952&mt=0&zoom=17
 #: last_checked: 2018-01-30
@@ -385,7 +385,7 @@ Dieselstr., Umfahrung: Fußgänger, eng	q3::inwork 14326,8062 14366,8058 14384,805
 #: source_id: IM_022515
 #: source_id: 2147338550
 #: source_id: LMS-BR_r_LMS-BR_19252
-#: last_checked: 2018-01-23
+#: last_checked: 2018-02-15
 #: next_check: 2018-03-31
 Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süden auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12753,8187 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785 12969,7610
 # REMOVED (fertig) --- Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung Süden auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12969,7610 12991,7549 12992,7545 13015,7471 13018,7441
@@ -1130,7 +1130,7 @@ Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 (Schmidstr. - Heinrich-Heine-Str.): Bordsteine, Fußgänger	q3 11236,11508 11170,11558
 #: XXX_prog BS am westlichen Ende, östliches ist leicht abgesenkt und eigentlich kein Problem (wenn es nicht zugeparkt ist)
 (Entlang des Stadtbahnviadukts): Bordsteine, Fußgänger	q2 11966,11832 12132,11788
-(Maybachufer - Weigandufer): Fußgänger	q3+ 12851,9309 12907,9073
+(Maybachufer - Weigandufer): Fußgänger, Bäume	q3+ 12845,9304 12862,9273 12909,9085 12902,9066
 (an der Notfallaufnahme Charité): Notfallwagen, Fußgänger	q2 8833,13440 8836,13396 8806,13384 8736,13369 8665,13353
 #: XXX_prog BS am westlichen Ende, am östlichen existiert eine Bordsteinabsenkung; ansonsten q2
 (Lasdehner Str. - Gubener Str.): Fußgänger, Bordsteine	q3 13375,12062 13339,12029
@@ -1189,10 +1189,10 @@ Meierottostr.: zwei Moabiter Kissen	q0 5463,9961 5246,10168
 # REMOVED (nein, existieren noch) --- XXX wurden die Bodenschwellen mittlerweile abgebaut? --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5624&date=20130910
 #: note: vier Bodenschwellen, die eigentlich gut zu um fahren sind, sowie zwei Aufpflasterungen
 Cuvrystr.: Bodenschwellen, Aufpflasterungen	q1 13035,10076 13132,10239
-Elsensteg: Fußgänger	q3 13366,8694 13376,8705
+Elsensteg: Fußgänger	q3 13368,8689 13379,8703
 #: note: faktisch schiebt man hier, weil die nächste Treppe recht nah ist und der Steg einen Bogen hat (leichte Steigung)
-Elsensteg: Fußgänger	q4 13376,8705 13394,8730
-Elsensteg: Fußgänger	q3 13394,8730 13402,8741
+Elsensteg: Fußgänger	q4 13379,8703 13397,8727
+Elsensteg: Fußgänger	q3 13397,8727 13405,8737
 Elsenstr. - Bahndamm: enger Weg	q2 13923,9405 13953,9372
 #: XXX_prog BS an der Lückstr. (ansonsten wäre es q1)
 (Blockpark): Fußgänger, Bordstein	q2 16300,10753 16265,10681

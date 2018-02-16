@@ -27,7 +27,7 @@
 #                   generell ist es besser, mit qX,$len zu arbeiten.
 # 
 #: next_check_id: KARLMARXSTR-2016
-#: last_checked: 2018-01-23 vvv
+#: last_checked: 2018-02-15 vvv
 #: check_frequency: 21d vvv
 Karl-Marx-Str. -> Kienitzer Str.: wegen Bauarbeiten auf linken Gehweg ausweichen	DH:h=q4,110 12865,7923 12830,8031 12692,7996
 Kienitzer Str. -> Karl-Marx-Str.: wegen Bauarbeiten zunächst den linken Gehweg benutzen	DH:h=q4,170 12692,7996 12830,8031 12794,8103 12753,8187
@@ -110,7 +110,7 @@ Schwäbische Str./Grunewaldstr.: Bordsteine beim Überqueren der Grunewaldstr.	DH:
 # 
 Kulmer Str./Goebenstr.: Ampel auf der linken Seite benutzen	DH:t=15 7771,9479 7829,9723 7848,9814
 # 
-Sonnenallee/Anzengruberstr.: an der Finowstr. überqueren	DH:len=35 13107,8343 13042,8395 12865,8346
+Sonnenallee/Anzengruberstr.: an der Finowstr. überqueren	DH:len=35 13102,8343 13038,8394 12865,8346
 # 
 Mariendorfer Damm/Göllweg: Fußgängerampel	DH:len=70:tl 10276,1383 10239,1481 10119,1435
 # 
@@ -167,7 +167,7 @@ Zeppelinstr. -> Edisonstr.: Fußgängerampel	DH:len=20:tl 18041,6924 17919,6968 17
 # 
 #: next_check_id: HOLZMARKT-2017
 #: XXX hier wird noch eine zusätzliche Ampel entstehen
-#: last_checked: 2018-02-01 vvv
+#: last_checked: 2018-02-15 vvv
 #: next_check: 2018-04-01 vvv
 Schillingstr. -> Holzmarktstr.: Ampel	DH:len=90:tl 11452,12318 11388,12202 11513,12138
 Holzmarktstr. -> Schillingstr.: linker Gehweg	DH:h=q2,45 11347,12223 11388,12202 11452,12318
