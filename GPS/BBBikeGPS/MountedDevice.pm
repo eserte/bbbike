@@ -664,6 +664,10 @@ Or for the first partition on a card:
 
     perl -w -Ilib -MGPS::BBBikeGPS::MountedDevice -e 'GPS::BBBikeGPS::MountedDevice->maybe_mount(sub { my $dir = shift; system("ls", "-al", $dir); 1 }, garmin_disk_type => "card")'
 
+Or starting a shell in the mounted directory:
+
+    perl -w -Ilib -MGPS::BBBikeGPS::MountedDevice -e 'GPS::BBBikeGPS::MountedDevice->maybe_mount(sub { my $dir = shift; chdir $dir; system($ENV{SHELL}); chdir "/"; 1 })'
+
 The mount rule is: if the device is already mounted, then don't
 unmount at the end. If the device is not mounted, then unmount after
 the callback.
