@@ -342,9 +342,9 @@ Steigung 3.9% (Havelchaussee)	St; -3567,8031 -3561,7964
 Steigung 3.9% (Havelchaussee)	St; -3561,7964 -3536,7856
 Steigung 3.9% (Friesenstr. (Kreuzberg, Tempelhof))	St; 9797,9063 9799,8962
 Steigung 3.9% (Conradstr. (Wannsee))	St; -5588,1454 -5675,1429
-Steigung 3.9% (Brauhausberg (B2) (Potsdam))	St; -12476,-2605 -12643,-2673
-Steigung 3.9% (Brauhausberg (B2) (Potsdam))	St; -12423,-2459 -12476,-2605
-Steigung 3.9% (Brauhausberg (B2) (Potsdam))	St; -12358,-2278 -12423,-2459
+Steigung 3.9% (Brauhausberg (Potsdam))	St; -12476,-2605 -12643,-2673
+Steigung 3.9% (Brauhausberg (Potsdam))	St; -12423,-2459 -12476,-2605
+Steigung 3.9% (Brauhausberg (Potsdam))	St; -12358,-2278 -12423,-2459
 Steigung 3.9% (Anklamer Str.)	St; 9800,14306 9938,14356
 Steigung 3.9% (Alter Schönefelder Weg)	St; 19653,1671 19636,1609
 Steigung 3.9% (Alter Schönefelder Weg)	St; 19636,1609 19599,1557
@@ -387,7 +387,7 @@ Steigung 3.7% (Marquardter Weg)	St; -5218,7070 -5279,7113
 Steigung 3.7% (Marquardter Weg)	St; -5202,7045 -5218,7070
 Steigung 3.7% (Mainzer Str. (Neukölln))	St; 12116,8247 12134,8172
 Steigung 3.7% (Krampenburger Weg)	St; 28083,592 28062,568
-Steigung 3.7% (Brauhausberg (B2) (Potsdam))	St; -12318,-2192 -12355,-2263
+Steigung 3.7% (Brauhausberg (Potsdam))	St; -12318,-2192 -12355,-2263
 Steigung 3.7% (Am Tempelhofer Berg)	St; 9304,9241 9298,9112
 Steigung 3.7% ((Neukladower Allee - Gutspark Neukladow))	St; -6246,5562 -6319,5606
 Steigung 3.7% ((Neukladower Allee - Gutspark Neukladow))	St; -6125,5447 -6246,5562
@@ -447,7 +447,7 @@ Steigung 3.4% (Kolpiner Weg)	St; 30821,3951 30814,3875
 Steigung 3.4% (Hallesches Ufer)	St; 8771,10381 8824,10366
 Steigung 3.4% (Frankenstr. (Altglienicke))	St; 20365,1394 20318,1281
 Steigung 3.4% (Flatowallee)	St; -605,11173 -652,11337
-Steigung 3.4% (Brauhausberg (B2) (Potsdam))	St; -12915,-2922 -12840,-2799
+Steigung 3.4% (Brauhausberg (Potsdam))	St; -12915,-2922 -12840,-2799
 Steigung 3.4% (Auf dem Mühlenberg)	St; 6834,22975 6889,23000
 Steigung 3.4% ((Teufelsseestr - Grunewaldturm))	St; -3442,7935 -3536,7856
 Steigung 3.4% ((Teufelsseestr - Grunewaldturm))	St; -3212,8024 -3442,7935
@@ -511,7 +511,7 @@ Steigung 3.2% (Feldstr. (Gesundbrunnen))	St; 9048,14681 9108,14777
 Steigung 3.2% (Drössestr.)	St; 21169,1279 21078,1168
 Steigung 3.2% (Bürgersruh)	St; 8032,23000 7930,23227
 Steigung 3.2% (Brentanostr.)	St; 4027,6088 4010,5888
-Steigung 3.2% (Brauhausberg (B2) (Potsdam))	St; -12355,-2263 -12358,-2278
+Steigung 3.2% (Brauhausberg (Potsdam))	St; -12355,-2263 -12358,-2278
 Steigung 3.2% (Bernauer Str. (Gesundbrunnen, Mitte))	St; 9472,14478 9621,14624
 Steigung 3.2% ((zur Andreas-Rabe-Siedlung))	St; 6873,23224 6908,23244
 Steigung 3.1% (Willibald-Alexis-Str.)	St; 9596,9092 9669,9080
@@ -1127,7 +1127,7 @@ Steigung 2.1% (Eisenacher Str. (Marzahn, Hellersdorf))	St; 22059,15153 21903,151
 Steigung 2.1% (Büschingstr.)	St; 12007,13290 12085,13377
 Steigung 2.1% (Brinkmannstr.)	St; 7266,5292 7216,5303
 Steigung 2.1% (Brinkmannstr.)	St; 7216,5303 7095,5317
-Steigung 2.1% (Brauhausberg (B2) (Potsdam))	St; -12840,-2799 -12643,-2673
+Steigung 2.1% (Brauhausberg (Potsdam))	St; -12840,-2799 -12643,-2673
 Steigung 2.1% (Boddinstr.)	St; 12168,8313 12104,8299
 Steigung 2.1% (Blissestr.)	St; 4789,7859 4793,8005
 Steigung 2.1% (Bismarckallee)	St; 1920,9009 2098,9173
@@ -2215,7 +2215,7 @@ Steigung 1.1% (Hohefeldstr.)	St; 3127,24253 3022,24393
 Steigung 1.1% (Herzbergstr.)	St; 15724,13544 15896,13547
 Steigung 1.1% (Heribaldstr.)	St; 25029,10462 25022,10715
 Steigung 1.1% (Herbertstr. (Schöneberg))	St; 7389,8837 7360,8918
-Steigung 1.1% (Heinrich-Mann-Allee (B2) (Potsdam))	St; -12431,-2096 -12318,-2192
+Steigung 1.1% (Heinrich-Mann-Allee (Potsdam))	St; -12431,-2096 -12318,-2192
 Steigung 1.1% (Havelchaussee)	St; -3412,9755 -3431,9665
 Steigung 1.1% (Havelchaussee)	St; -3277,8728 -3073,9061
 Steigung 1.1% (Havelchaussee)	St; -3178,9953 -3412,9755

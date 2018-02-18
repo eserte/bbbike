@@ -1212,7 +1212,7 @@ Gregor-Mendel-Str.	1 -13693,-528 -13784,-537 -13948,-564 -14023,-564
 Schillerstr.	1 -14236,-2125 -14252,-1978
 Henning-von-Tresckow-Str.	1 -13180,-1627 -12946,-1659
 Am Lustgartenwall: Ministerien	2 -13281,-1796 -12948,-1863
-Weinbergstr.	1 -13519,-625 -13733,-722 -13815,-749
+Weinbergstr.	1 -13519,-625 -13733,-722 -13800,-743
 Weinbergstr.	1 -13519,-625 -13257,-512
 Am Kanal	1 -12839,-1342 -12718,-1327
 Am Kanal	1 -12718,-1327 -12747,-1336 -12833,-1365
@@ -1222,7 +1222,7 @@ Joliot-Curie-Str.	1 -12549,-1277 -12542,-1305 -12526,-1356 -12500,-1437
 Am Kanal, Nebenstraﬂe	1 -12542,-1305 -12657,-1338
 Mauerstr.	1 -13433,-831 -13519,-625
 Benkertstr.	1 -12677,-823 -12697,-729 -12719,-630
-Hans-Thoma-Str.	1 -12227,-724 -12235,-713 -12266,-613 -12306,-496
+Hans-Thoma-Str.	1 -12227,-724 -12235,-713 -12269,-614 -12312,-498
 Behlertstr.	1 -12265,-418 -12194,-463 -12106,-699 -12045,-757
 Hebbelstr.	1 -12621,-359 -12571,-581
 Potsdamer Damm	2 -5324,-3716 -5490,-3666 -5722,-3669 -6119,-3907 -6426,-4014
@@ -2181,6 +2181,7 @@ Treppe	0:40 1888,42795
 tragen (mehrere Treppen mit insgesamt 45 Stufen und Kinderwagenrampe)	0:90 3514,24652
 tragen (Treppe, 18 Stufen)	0:25 25902,-6006
 tragen (Treppe, 19 Stufen)	0:25 25928,-5990
+tragen (Treppe)	0:120 -14199,-707
 #
 ###################################################################
 # Dr‰ngelgitter (BLOCKED_NARROWPASSAGE)
@@ -2809,6 +2810,11 @@ Dr‰ngelgitter	BNP:3::trailer=10 22097,5879
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX wie wird die Qualit‰t hier sein: Asphalt oder Verbundsteinpflaster?
+#: last_checked: 2018-02-17
+#: check_frequency: 60d
+Zum Groﬂen Herzberg (Potsdam-Golm): Straﬂe wird noch gebaut	2::inwork -18017,333 -18026,357 -18049,424
+# 
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/express-zum-ber-fledermaeuse-stoppen-bauarbeiten-fuer-ringbahnbruecke-29488832 (Abriss im April 2018)
 #: XXX wird aufgehoben, sobald das einsturzgef‰hrdete Haus abgerissen wird
 #: osm_watch: way id="488814363" version="2"
@@ -2932,10 +2938,10 @@ Parkrosenweg: Bauarbeiten	2::inwork -6530,6699 -6381,6587
 #: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01
 #: osm_watch: way id="392904879" version="1" vvv
 #: osm_watch: way id="392904880" version="3" vvv
-#: last_checked: 2017-12-26 vvv
+#: last_checked: 2018-02-17 vvv
 #: check_frequency: 360d vvv
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5579,12231 5535,12206 5518,12159
-Wegelystr.: Einbahnstraﬂe wegen Bauarbeiten	1s:q3:inwork 5518,12159 5627,12105
+Wegelystr.: Einbahnstraﬂe wegen Bauarbeiten	1s:q3:inwork 5518,12159 5627,12105 5658,12082 5712,12033 5775,11975
 Gutenbergstr.: Einbahnstraﬂe wegen Bauarbeiten	1s:q3:inwork 5317,12242 5518,12159
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3267,7 +3273,7 @@ Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 f¸r 30 Monate, also mindestens bis ca. 2015-04)
 #: source_id: 2147340791
-#: last_checked: 2017-12-25
+#: last_checked: 2018-02-17
 #: next_check: 2018-12-01
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
 # 
@@ -3330,7 +3336,7 @@ Schloﬂplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2018-01-14
+#: last_checked: 2018-02-17
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

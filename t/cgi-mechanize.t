@@ -445,6 +445,7 @@ for my $browser (@browsers) {
 			     |\QKönigsdamm (Grube)/Schlänitzseer Weg (Marquardt)\E # before adding the extra point between Schlänitzseer Weg and Feldweg
 			     |\QMarquardter Damm (Marquardt)/Schlänitzseer Weg (Marquardt)\E # before renaming Marquardter Damm -> Königsdamm
 			     |\QMarquardter Damm/Schlänitzseer Weg (Marquardt)\E
+			     |\QKönigsdamm/Feldweg (Potsdam-Grube)\E # after more data update work in Schlänitzsee
 			    )}ix,  "Correct goal resolution (Schlänitzsee ...)");
                            
     }

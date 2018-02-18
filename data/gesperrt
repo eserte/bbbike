@@ -849,7 +849,7 @@ Gregor-Mendel-Str.	1 -13693,-528 -13784,-537 -13948,-564 -14023,-564
 Schillerstr.	1 -14236,-2125 -14252,-1978
 Henning-von-Tresckow-Str.	1 -13180,-1627 -12946,-1659
 Am Lustgartenwall: Ministerien	2 -13281,-1796 -12948,-1863
-Weinbergstr.	1 -13519,-625 -13733,-722 -13815,-749
+Weinbergstr.	1 -13519,-625 -13733,-722 -13800,-743
 Weinbergstr.	1 -13519,-625 -13257,-512
 Am Kanal	1 -12839,-1342 -12718,-1327
 Am Kanal	1 -12718,-1327 -12747,-1336 -12833,-1365
@@ -859,7 +859,7 @@ Joliot-Curie-Str.	1 -12549,-1277 -12542,-1305 -12526,-1356 -12500,-1437
 Am Kanal, Nebenstraße	1 -12542,-1305 -12657,-1338
 Mauerstr.	1 -13433,-831 -13519,-625
 Benkertstr.	1 -12677,-823 -12697,-729 -12719,-630
-Hans-Thoma-Str.	1 -12227,-724 -12235,-713 -12266,-613 -12306,-496
+Hans-Thoma-Str.	1 -12227,-724 -12235,-713 -12269,-614 -12312,-498
 Behlertstr.	1 -12265,-418 -12194,-463 -12106,-699 -12045,-757
 Hebbelstr.	1 -12621,-359 -12571,-581
 Potsdamer Damm	2 -5324,-3716 -5490,-3666 -5722,-3669 -6119,-3907 -6426,-4014
@@ -871,9 +871,9 @@ Nuthestr.: Kfz-Straße	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4
 nicht passierbarer Mittelstreifen	3nocross::ignrte -12045,-757 -11869,-907 -11613,-1125 -11386,-1313
 nicht passierbarer Mittelstreifen	3nocross::ignrte -13238,-1569 -13375,-1546 -13516,-1517
 Straßenbahntrasse	3nocross::ignrte -12794,-1652 -12758,-1689 -12733,-1703 -12653,-1723 -12567,-1817
-Mercure-Hotel -> Breite Str. (B1): Straßenbahntrasse	3::igndisp -12676,-1742 -12653,-1723 -12733,-1703
+Mercure-Hotel -> Breite Str.: Straßenbahntrasse	3::igndisp -12676,-1742 -12653,-1723 -12733,-1703
 Mercure-Hotel -> Humboldtstr.: Straßenbahntrasse	3::igndisp -12676,-1742 -12653,-1723 -12646,-1702
-Breite Str. (B1) -> Humboldtstr.: Straßenbahntrasse	3::igndisp -12733,-1703 -12653,-1723 -12646,-1702
+Breite Str. -> Humboldtstr.: Straßenbahntrasse	3::igndisp -12733,-1703 -12653,-1723 -12646,-1702
 Lange Brücke -> Mercure-Hotel: Straßenbahntrasse	3::igndisp -12567,-1817 -12653,-1723 -12676,-1742
 Humboldtstr. -> Mercure-Hotel: Straßenbahntrasse	3::igndisp -12646,-1702 -12653,-1723 -12676,-1742
 Humboldtstr. -> Lange Brücke: Straßenbahntrasse	3::igndisp -12646,-1702 -12653,-1723 -12567,-1817
@@ -965,8 +965,8 @@ Zufahrt Bahnhof	1 68021,74671 68052,74741 68140,74703 68110,74631
 Brüderstr.	1 68884,73376 68810,73316
 Dorfstr. (Pieskow)	1s 56031,-14776 55983,-14721
 Mittelstreifen	3nocross::ignrte 18419,-1418 18666,-1325 18777,-1298 18892,-1273
-Am Seegraben (B96a) -> temporäre Umleitungsstrecke: Mittelstreifen	3::igndisp 18777,-1298 18666,-1325 18672,-1340
-temporäre Umleitungsstrecke -> Am Seegraben (B96a): Mittelstreifen	3::igndisp 18672,-1340 18666,-1325 18419,-1418
+Am Seegraben -> temporäre Umleitungsstrecke: Mittelstreifen	3::igndisp 18777,-1298 18666,-1325 18672,-1340
+temporäre Umleitungsstrecke -> Am Seegraben: Mittelstreifen	3::igndisp 18672,-1340 18666,-1325 18419,-1418
 Jürgen-Schumann-Allee	1 19105,-3940 19164,-3980 19282,-3928 19464,-3780 19479,-3690
 Jürgen-Schumann-Allee	1 19479,-3690 19528,-3767 19524,-3843 19454,-3956 19189,-4062 19158,-4083
 Berliner Chaussee	1 19282,-3928 19460,-3818 19539,-3810 19601,-3714
@@ -2467,6 +2467,7 @@ Treppe	0:40:-131 1888,42795
 tragen (mehrere Treppen mit insgesamt 45 Stufen und Kinderwagenrampe)	0:90:-44 3514,24652
 tragen (Treppe, 18 Stufen)	0:25:-66 25902,-6006
 tragen (Treppe, 19 Stufen)	0:25:-194 25928,-5990
+tragen (Treppe)	0:120:-184 -14199,-707
 Drängelgitter	BNP:3:-14:trailer=10 12909,9085
 Drängelgitter	BNP:3:-28:trailer=10 12862,9273
 Drängelgitter	BNP:3:4:trailer=10 7916,17576
@@ -2908,6 +2909,7 @@ Drängelgitter	BNP:3:0:trailer=10 3783,-2079
 Drängelgitter	BNP:3:50:trailer=10 21618,5699
 Drängelgitter	BNP:3:85:trailer=10 22070,5876
 Drängelgitter	BNP:3:78:trailer=10 22097,5879
+Zum Großen Herzberg (Potsdam-Golm): Straße wird noch gebaut	2::inwork -18017,333 -18026,357 -18049,424
 Wartenbergstr.	1s:inwork 15423,11667 15337,11639 15328,11636 15300,11584
 Anni-Frid-Weg: Baustelle, gesperrt	2::inwork 17262,15056 17317,15059 17345,15061
 Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12677,-1536 -12685,-1449
@@ -2927,7 +2929,7 @@ Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -
 An den Parkbäumen: Bauarbeiten, Fahrbahn gesperrt	2::inwork -6530,6699 -6556,6663
 Parkrosenweg: Bauarbeiten	2::inwork -6530,6699 -6381,6587
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5579,12231 5535,12206 5518,12159
-Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:inwork 5518,12159 5627,12105
+Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:inwork 5518,12159 5627,12105 5658,12082 5712,12033 5775,11975
 Gutenbergstr.: Einbahnstraße wegen Bauarbeiten	1s:inwork 5317,12242 5518,12159
 Möckernkiez: Bauarbeiten	2::inwork 8778,9759 8710,9725 8729,9670 8596,9595 8565,9657
 Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen hier weiterhin Kfz fahren?	2::inwork 22101,10985 22146,10995 22172,10996 22195,10993

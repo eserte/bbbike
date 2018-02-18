@@ -3219,7 +3219,7 @@ EOF
        text  => 'Stadtgebiet Potsdam: auf Grund einer Bombenentschärfung sind folgende Strassen innerhalb folgender Begrenzung gesperrt: Am Kanal -- Kurfürstenstr. -- Berliner Strasse -- Friedrich-Ebert-Str., Dauer: 22.10.2005 09:00 Uhr bis 18:00 Uhr, ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -12306,-496 -12266,-613
+	2 -12312,-498 -12269,-614
 	2 -12529,-789 -12515,-889 -12512,-911 -12575,-1031
 	2 -12529,-789 -12418,-764 -12365,-752 -12227,-724
 	2 -12529,-789 -12677,-823
@@ -3230,8 +3230,8 @@ EOF
 	2 -12285,-1174 -12248,-1107
 	2 -12285,-1174 -12359,-1096 -12488,-999
 	2 -12488,-999 -12553,-1025
-	2 -12266,-613 -12235,-713 -12227,-724
-	2 -12266,-613 -12545,-698
+	2 -12269,-614 -12235,-713 -12227,-724
+	2 -12269,-614 -12545,-698
 	2 -12575,-1031 -12774,-1065
 	2 -12575,-1031 -12553,-1025
 	2 -12553,-1025 -12552,-1096 -12552,-1233 -12549,-1277
@@ -15516,10 +15516,19 @@ EOF
        data  => <<EOF,
 #: tempex: sunset-T06 vvv
 (Am Neuen Palais, direkter Weg)	2::night -15810,-1274 -15820,-1146 -15854,-656
-(Am Grünen Gitter, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -13857,-1040 -14159,-1119 -14171,-1026
-(Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14171,-1026 -14482,-1043 -14622,-1138 -14865,-1118 -15025,-1096 -15553,-1139 -15651,-1137 -15820,-1146
-(Lennestr. - Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14614,-1342 -14856,-1223 -14865,-1118
+(Am Grünen Gitter, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -13857,-1040 -14159,-1119 -14173,-1013
+(Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14173,-1013 -14482,-1043 -14622,-1138 -14869,-1120 -15030,-1101 -15556,-1133 -15651,-1137 -15820,-1146
+(Lennestr. - Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14611,-1329 -14858,-1215 -14869,-1120
 (Affengang, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14129,-1258 -14131,-1181 -14159,-1119
+Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -13728,-807 -13995,-826
+Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14025,-829 -14021,-818 -14012,-813 -14001,-817 -13995,-826 -13998,-837 -14008,-843 -14019,-841 -14025,-829
+Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14025,-829 -14163,-840
+Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14163,-840 -14171,-824 -14191,-818 -14208,-827 -14212,-844 -14205,-860 -14186,-868 -14167,-856 -14163,-840
+Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14212,-844 -14366,-858
+Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14389,-859 -14385,-851 -14379,-848 -14369,-851 -14366,-858 -14369,-866 -14377,-870 -14386,-866 -14389,-859
+Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14389,-859 -14910,-903 -15684,-966
+(Am Grünen Gitter - Schloss): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14173,-1013 -14186,-868
+(Am Grünen Gitter - Schloss): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14191,-818 -14199,-707 -14205,-644
 #: tempex ^^^
 EOF
      },
@@ -18489,7 +18498,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.potsdam.de/cms/beitrag/10067788/966975/',
        data  => <<EOF,
-	q4::inwork -13387,2987 -13581,3075 -13840,2956 -14382,3066
+	q4::inwork -13387,2987 -13581,3075 -13840,2956 -14057,2999 -14285,3039 -14382,3066
 EOF
      },
      { from  => 1284532162, # undef
@@ -19031,7 +19040,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.potsdam.de/cms/beitrag/10078717/1191938/',
        data  => <<EOF,
-	q4::inwork; -12545,-698 -12266,-613
+	q4::inwork; -12545,-698 -12269,-614
 EOF
      },
      { from  => 1299999600, # 2011-03-13 08:00

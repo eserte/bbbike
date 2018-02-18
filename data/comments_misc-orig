@@ -116,6 +116,8 @@ Kreisverkehr	Roundabout -6646,28977
 Kreisverkehr	Roundabout -4367,30942
 Kreisverkehr	Roundabout -6646,28977
 #: by: ^^^
+Kreisverkehr	Roundabout -18820,19
+Kreisverkehr	Roundabout -19100,407
 # 
 #: by: Marita:
 (Waldweg über den Beyschlagtunnel): bei Regen Rutschgefahr	CS 355,22344 393,22408 421,22528 636,22658
@@ -568,7 +570,7 @@ Hintersee - Rieth: ehemalige Bahnstrecke	CS 66282,136950 66202,137084 66069,1373
 #: by: Christian Bräuniger:
 Tordurchfahrt	CS 9341,6163 9367,6160
 (Am Nuthetal - Wetzlarer Str.): Weg entlang der Straßenbahntrasse	CS -9544,-3913 -9531,-3917 -9461,-3879 -9440,-3872 -9391,-3864 -9328,-3871 -9276,-3891 -9240,-3912 -9217,-3897 -9186,-3853 -9157,-3842 -9134,-3851 -9114,-3846 -9064,-3866 -9047,-3889
-(Wetzlarer Str. - Stern-Center): Weg entlang der Schnellstraße	CS -8970,-3923 -8975,-3946 -8708,-4025 -8687,-4015 -8634,-4035 -8579,-4074 -8448,-4098 -8324,-4087 -8096,-4106 -8038,-4093
+(Wetzlarer Str. - Stern-Center): Weg entlang der Schnellstraße	CS -8970,-3923 -8975,-3946 -8708,-4025 -8687,-4015 -8634,-4035 -8579,-4074 -8448,-4098 -8377,-4091 -8324,-4087 -8096,-4106 -8038,-4093
 # REMOVED (-> cul-de-sac) --- An den Haselbüschen: Sackgasse, kein Durchgang zur Daumstr.	CS; -1273,15539 -1291,15580 -1402,15592
 #: XXX_indoor: sollte das nach handicap_s wandern bzw. durch die Bordstein-Implementation behandelt werden?
 Pfähle und hohe Bordsteine	CP2 2211,4280 2254,4376
@@ -1221,3 +1223,20 @@ Anni-Frid-Weg: noch nicht ausgeschildert	CS 17227,15054 17262,15056 17317,15059 
 Bennyweg: noch nicht ausgeschildert	CS	 17254,15183 17262,15056
 Björnweg: noch nicht ausgeschildert	CS	 17310,15186 17317,15059
 #: last_checked ^^^
+# 
+Am Grünen Weg (Potsdam-Eiche): nicht ausgeschildert	CP2; -16875,-1050 -16850,-793
+Ecksteinweg (Potsdam-Eiche): nicht ausgeschildert	CP2; -17390,-1092 -17387,-1064
+# 
+#: XXX hier wird vermutlich noch ausgeschildert vvv
+#: last_checked: 2018-02-17 vvv
+#: check_frequency: 60d vvv
+Zum Großen Herzberg (Potsdam-Golm): noch nicht ausgeschildert	CS -18049,424 -18051,485
+Taubenbogen (Potsdam-Golm): noch nicht ausgeschildert	CS -18222,253 -18238,364 -18251,459 -18250,543
+#: XXX wird vermutlich noch nach Norden und dann nach Westen weitergeführt
+Grasmückenring (Potsdam-Golm): noch nicht ausgeschildert	CS -18238,364 -18135,397 -18049,424 -17997,440 -17993,490
+Elsternstr. (Potsdam-Golm): noch nicht ausgeschildert	CS -18135,397 -18145,499
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+# 
+Charles-Tellier-Platz: nicht ausgeschildert	CS -14665,481 -14626,465 -14622,440 -14574,431 -14559,460 -14608,485 -14626,465

@@ -1375,7 +1375,7 @@ Rochlitzer Weg: Schranke	3 16083,1013 16117,927 15999,880
 Rochlitzer Weg: Schranke	3 16131,889 16117,927 15999,880
 Großer Stern	1 6725,12113 6754,12108 6787,12099 6828,12031 6809,11979 6744,11936 6685,11954 6642,12010 6656,12075 6690,12104 6725,12113
 Markelstr.	1 5269,6305 5020,6434
-Geschwister-Scholl-Str. (Potsdam)	1 -14909,-1818 -14733,-1812
+Geschwister-Scholl-Str. (Potsdam)	1 -14919,-1817 -14733,-1812
 Feuerbachstr. (Potsdam)	1 -14140,-1390 -13879,-1445
 Jadeweg	1 -3850,13756 -3878,13636 -4011,13656
 Fischerinsel	1 10376,11879 10435,11813 10474,11843 10604,11941
@@ -1702,8 +1702,8 @@ Betonblöcke	3 -12870,-1493 -12808,-1488 -12833,-1365
 Betonblöcke	3 -12790,-1560 -12808,-1488 -12870,-1493
 Betonblöcke	3 -12833,-1365 -12808,-1488 -12870,-1493
 Straßenbahnhaltestelle	3nocross::ignrte -11307,133 -11390,72 -11494,-4
-Berliner Str. (B1) -> Leonardo-da-Vinci-Str.: Straßenbahnhaltestelle	3::igndisp -11494,-4 -11390,72 -11609,400
-Leonardo-da-Vinci-Str. -> Berliner Str. (B1): Straßenbahnhaltestelle	3::igndisp -11609,400 -11390,72 -11307,133
+Berliner Str. -> Leonardo-da-Vinci-Str.: Straßenbahnhaltestelle	3::igndisp -11494,-4 -11390,72 -11609,400
+Leonardo-da-Vinci-Str. -> Berliner Str.: Straßenbahnhaltestelle	3::igndisp -11609,400 -11390,72 -11307,133
 Hubertusstr. - Frankfurter Allee	3 16541,12071 16512,11894 16737,11866
 Ückeritzer Ring: Betonkübel	3 17405,19252 17448,19243 17447,19197
 Ückeritzer Ring: Betonkübel	3 17405,19252 17448,19243 17450,19297
