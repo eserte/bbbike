@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2013,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -24,13 +24,19 @@ use PLZ;
 use Strassen::Core;
 
 my $incl_fragezeichen = 1;
-GetOptions("fz!" => \$incl_fragezeichen)
-    or die "usage: $0 [-[no]fz]";
+my $strassen_file = "strassen"; # includes plaetze-orig
+my $against_file = "Berlin.coords.data";
+GetOptions(
+	   "fz!" => \$incl_fragezeichen,
+	   "strassen=s" => \$strassen_file,
+	   "against=s" => \$against_file,
+	  )
+    or die "usage: $0 [-[no]fz] [-strassen ...] [-against ...]\n";
 
 my %seen_street_with_bezirk;
 my %seen_street;
 
-my $s = Strassen->new("$FindBin::RealBin/../data/strassen"); # includes plaetze-orig
+my $s = Strassen->new("$FindBin::RealBin/../data/$strassen_file");
 if ($incl_fragezeichen) {
     my $fz = Strassen->new("$FindBin::RealBin/../data/fragezeichen-orig"); # use -orig, because known unconnected streets are missing in non-orig
     $fz->init;
@@ -61,7 +67,7 @@ while(1) {
 
 my %missing_by_bezirk;
 
-my $plz = PLZ->new;
+my $plz = PLZ->new($against_file);
 $plz->load;
 foreach my $rec (@{ $plz->{Data} }) {
     my($str, $bezirk) = ($rec->[PLZ::FILE_NAME],

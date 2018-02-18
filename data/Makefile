@@ -1364,6 +1364,7 @@ do-checks:	.check_empty_lines \
 	.check_strassen1 .check_strassen2 .check_strassen3 .check_strassen_potsdam .check_strassen_cont .check_strassen_consecutive \
 	.check_plaetze1 .check_plaetze2 .check_strassen_plaetze_unique \
 	.check_missing_streets \
+	.check_missing_potsdam_streets \
 	.check_hoehe .check_hoehe2 \
 	.check_ampeln .check_ampeln2 \
 	.check_gesperrt1 .check_gesperrt2 \
@@ -1469,6 +1470,10 @@ check-disabled:
 
 .check_missing_streets: ${MISCSRCDIR}/missing_streets.pl strassen fragezeichen-orig Berlin.coords.data
 	${MISCSRCDIR}/missing_streets.pl
+	@touch $@
+
+.check_missing_potsdam_streets: ${MISCSRCDIR}/missing_streets.pl landstrassen fragezeichen-orig Potsdam.coords.data
+	${MISCSRCDIR}/missing_streets.pl -strassen landstrassen -against Potsdam.coords.data
 	@touch $@
 
 .check_hoehe:	hoehe .strassen.tmp landstrassen landstrassen2 fragezeichen
