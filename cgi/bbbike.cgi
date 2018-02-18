@@ -1520,7 +1520,7 @@ sub choose_form {
 	if ($$nameref eq '' && $$tworef ne '') {
 	    my($strasse, $bezirk, $plz) = split(/$delim/o, $$tworef);
 	    warn "W‰hle $type-Straﬂe f¸r $strasse/$bezirk (1st)\n" if $debug;
-	    if ($bezirk =~ $outer_berlin_qr) {
+	    if ($bezirk =~ $outer_berlin_qr || $bezirk =~ $outer_berlin_subplaces_qr) {
 		my $name = _outer_berlin_hack($strasse, $bezirk);
 		if ($name) {
 		    $$nameref = $name;
@@ -2130,7 +2130,7 @@ EOF
 	    $tryempty = 1;
 	} elsif ($$tworef ne '') {
 	    my($strasse, $bezirk, $plz, $xy, $index) = split(/$delim/o, $$tworef);
-	    if ($bezirk eq 'Potsdam') {
+	    if ($bezirk =~ m{^Potsdam(?:-|$)}) { # XXX or use better $outer_berlin_qr + $outer_berlin_subplaces_qr?
 		upgrade_scope("region");
 		get_streets_rebuild_dependents();
 	    }
@@ -2194,9 +2194,9 @@ EOF
 
 	    # Sort Potsdam streets to the end:
 	    @$matchref = map { $_->[1] } sort {
-		if ($a->[0] eq 'Potsdam' && $b->[0] ne 'Potsdam') {
+		if ($a->[0] =~ m{^Potsdam} && $b->[0] !~ m{^Potsdam}) {
 		    return +1;
-		} elsif ($a->[0] ne 'Potsdam' && $b->[0] eq 'Potsdam') {
+		} elsif ($a->[0] !~ m{^Potsdam} && $b->[0] =~ m{^Potsdam}) {
 		    return -1;
 		} else {
 		    return 0;
@@ -2595,7 +2595,7 @@ sub choose_ch_form {
 		my $ret = $landstr->next;
 	        last if !@{$ret->[1]};
 	        my $name = $ret->[0];
-		next if $name !~ m{\(Potsdam\)};
+		next if $name !~ m{\(Potsdam(?:-.*?)?\)};
 		if ($name =~ /$regex_char/oi) {
 		    # remove Bundesstraﬂen name here:
 		    $name =~ s{\s+\(B\d+\)}{};
@@ -2745,7 +2745,7 @@ sub get_kreuzung {
     for my $str ($start_str, $via_str, $ziel_str) {
 	next if !defined $str;
 	my($str_normed, $citypart) = Strasse::split_street_citypart($str);
-	if ($citypart && $citypart eq 'Potsdam') {
+	if ($citypart && $citypart =~ m{^Potsdam}) { # XXX or better check for outer_berlin_qr + outer_berlin_subplaces_qr?
 	    upgrade_scope("region");
 	    last;
 	}

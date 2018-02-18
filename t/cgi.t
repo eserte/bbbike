@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2000,2003,2004,2006,2010,2011,2012,2013,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2000,2003,2004,2006,2010,2011,2012,2013,2017,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -155,7 +155,7 @@ my @imagetype_defs =
 my $file_cache_tests_per_format = 3;
 my $file_cache_tests_formats = scalar grep { $_->{can_file_cache} } (@output_as_defs, @imagetype_defs);
 
-plan tests => (264 + ($test_file_cache ? $file_cache_tests_formats*$file_cache_tests_per_format : 0)) * scalar @urls;
+plan tests => (269 + ($test_file_cache ? $file_cache_tests_formats*$file_cache_tests_per_format : 0)) * scalar @urls;
 
 my $default_hdrs;
 if (defined &Compress::Zlib::memGunzip && $do_accept_gzip) {
@@ -211,6 +211,14 @@ for my $cgiurl (@urls) {
 	like_html $content, qr/Helmholtz.*Charlottenburg/, "Found Helmholtzstr in Berlin";
 	like_html $content, qr/Otto-Nagel-Str.*Potsdam/, "Found Otto-Nagel-Str. in Potsdam";
 	like_html $content, qr/Otto-Nagel-Str.*Biesdorf/, "Found Otto-Nagel-Str. in Berlin";
+    }
+
+    {
+	# Potsdam, Ortsteile
+	my($content, $resp) = std_get "$action?startname=Wildkirschenweg+%28Potsdam-Eiche%29&startplz=14469&vianame=Altes+Rad+%28Potsdam-Eiche%29&viaplz=14469&ziel2=Kaiser-Friedrich-Str.%21Potsdam-Eiche%2114469%21-18046%2C-955&scope=region", testname => "Potsdam-Eiche streets"; # both ...name and ...2 params
+	like_html $content, qr{Start.*Wildkirschenweg.*Potsdam-Eiche}, "Found Wildkirscheweg in Potsdam-Eiche";
+	like_html $content, qr{Via.*Altes Rad.*Potsdam-Eiche}, "Found Altes Rad in Potsdam-Eiche";
+	like_html $content, qr{Ziel.*Kaiser-Friedrich-Str.*Potsdam-Eiche}, "Found Kaiser-Friedrich-Str. in Potsdam-Eiche";
     }
 
     # search_coord
@@ -516,6 +524,7 @@ for my $cgiurl (@urls) {
 	# Klick on "B" in Start A..Z
 	my $content = std_get "$action?start=&startcharimg.x=44&startcharimg.y=15&startmapimg.x=&startmapimg.y=&via=&viacharimg.x=&viacharimg.y=&viamapimg.x=&viamapimg.y=&ziel=&zielcharimg.x=&zielcharimg.y=&zielmapimg.x=&zielmapimg.y=", testname => "Click on B in A..Z";
 	like_html $content, qr/\QBerliner Str. (Potsdam)/, "Stripped `B1' from street name";
+	like_html $content, qr/\QBaumhaselring (Potsdam-Eiche)/, "Found street in Potsdam-Eiche";
     }
 
  SKIP: {
