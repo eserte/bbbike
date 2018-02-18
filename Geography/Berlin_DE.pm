@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000,2006,2015,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2006,2015,2016,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -236,9 +236,6 @@ sub parse_street_type_nr {
     } elsif ($strname =~ /Route Alter Fritz/i) {
 	$type = 'AF';
 	$image = 'alter_fritz.png';
-    } elsif ($strname =~ /Route Sanssouci/i) {
-	$type = 'SS';
-	$image = 'route_sanssouci.png';
     } elsif ($strname =~ /Griebnitzsee-Route/i) {
 	$type = 'GS';
 	$image = 'route_griebnitzsee.png';
