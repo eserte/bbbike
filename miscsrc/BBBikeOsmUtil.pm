@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2012,2013,2014,2015,2016,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2012,2013,2014,2015,2016,2017,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package BBBikeOsmUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.22;
+$VERSION = 1.23;
 
 use vars qw(%osm_layer %images @cover_grids %seen_grids $last_osm_file $defer_restacking
 	  );
@@ -50,8 +50,8 @@ my $osm_download_file_qr       = qr{/download_$ltlnqr,$ltlnqr,$ltlnqr,$ltlnqr\.o
 use vars qw($OSM_API_URL $OVERPASS_API_URL);
 $OSM_API_URL = "http://www.openstreetmap.org/api/0.6";
 #$OVERPASS_API_URL = "http://overpass.osm.rambler.ru/cgi/interpreter"; # feels slower than the .de server (2013-11)
-#$OVERPASS_API_URL = "http://overpass-api.de/api/interpreter"; # quick, but compresses only sometimes
-$OVERPASS_API_URL = "http://api.openstreetmap.fr/oapi/interpreter"; # compresses always # was broken in 2015-12 for a couple of days
+$OVERPASS_API_URL = "http://overpass-api.de/api/interpreter"; # quick, but compresses only sometimes
+#$OVERPASS_API_URL = "http://api.openstreetmap.fr/oapi/interpreter"; # compresses always # was broken in 2015-12 for a couple of days; truncated downloads (2018-02)
 
 use vars qw($MERKAARTOR_MAS_BASE $MERKAARTOR_MAS $ALLICONS_QRC $USE_MERKAARTOR_ICONS %ICON_NAME_TO_PHOTO);
 
@@ -465,7 +465,8 @@ sub plot_osm_files {
 		exists $tag{'barrier'} ||
 		exists $tag{'abandoned:barrier'} ||
 		exists $tag{'mj10777:admin_levels'} ||
-		(exists $tag{'natural'} && $tag{'natural'} eq 'tree_row')
+		(exists $tag{'natural'} && ($tag{'natural'} eq 'tree_row' ||
+					   ($tag{'natural'} eq 'cliff')))
 	       ) {
 		$item_args{'-dash'} = '.  ';
 	    } elsif (exists $tag{'power'}) {
