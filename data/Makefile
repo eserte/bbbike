@@ -1421,7 +1421,7 @@ check-disabled:
 
 .check_strassen_potsdam:	landstrassen add_str_potsdam Potsdam.coords.data
 	-rm /tmp/potsdam-strassen
-	${GREPSTRASSEN} --namerx ' \(Potsdam\)' landstrassen | perl -pe 's/\s+\(B\d+\)//' > /tmp/potsdam-strassen
+	${GREPSTRASSEN} --namerx ' \(Potsdam(?:-.*)?\)' landstrassen | perl -pe 's/\s+\(B\d+\)//' > /tmp/potsdam-strassen
 	${CHECK_STR_PLZ} -addstr add_str_potsdam -ignoreplzwarnings -plzdata Potsdam.coords.data -data /tmp/potsdam-strassen
 	rm /tmp/potsdam-strassen
 	@touch $@
