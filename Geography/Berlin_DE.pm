@@ -236,9 +236,6 @@ sub parse_street_type_nr {
     } elsif ($strname =~ /Route Alter Fritz/i) {
 	$type = 'AF';
 	$image = 'alter_fritz.png';
-    } elsif ($strname =~ /Griebnitzsee-Route/i) {
-	$type = 'GS';
-	$image = 'route_griebnitzsee.png';
     } elsif ($strname =~ /Köpenick-Route/i) {
 	$type = 'Koe';
 	$image = 'koepenick.png';
