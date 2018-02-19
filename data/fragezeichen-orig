@@ -92,7 +92,7 @@ Hubertusallee/Teplitzer Str.: werden hier die fehlenden Radspuren noch markiert?
 #: osm_watch: way id="23109081" version="10"
 #: osm_watch: way id="41108858" version="9"
 #: source_id: IM_026443	
-#: last_checked: 2017-12-09
+#: last_checked: 2018-02-18
 #: check_frequency: 90d
 Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4188,2674 -4280,2539 -4290,2304 -4181,2062 -4164,1993 -4180,1941 -4256,1831 -4368,1731 -4492,1624 -4587,1542 -4644,1514 -4744,1466 -4827,1433 -4944,1298
 # 
@@ -1913,6 +1913,7 @@ Clara-Mleinek-Platz (Ziffer 3; platzähnlich): Qualität? Wird der Straßenname sti
 #: last_checked: 2018-01-14
 #: check_frequency: 60d
 Bärbel-Bohley-Ring/Lichtburgring: weitere Straßenabschnitte noch in Bau, Qualität? Einbahnstraßenregelung?	?::inwork 9910,15876 9997,15884 10059,15673 10005,15656
+#: XXX siehe auch https://www.openstreetmap.org/note/1268229 (keine Kette mehr); außerdem ist die Verbindungsmöglichkeit bei osm mittlerweile eingetragen
 #: osm_watch: node id="908746485" version="4"
 #: last_checked: 2018-01-14
 #: check_frequency: 60d
@@ -2540,10 +2541,7 @@ Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 1
 #: check_frequency: 90d
 Mehlbeerenweg: Teilstück wird eingezogen	? 11940,11982 11923,11881
 # 
-#: by: fritz
-#: XXX was bedeutet das hier? kann die Straße auf N zurückgestuft werden? bleibt die Fußgängerampel bestehen?
-#: by: http://www.potsdam.de/sites/default/files/documents/final_16503_amtsblatt_okt16_dsjs_korr3.pdf
-Humboldtring: Rückbau der Anschlussstelle	? -11386,-1313 -11392,-1326 -11461,-1424
+# REMOVED --- #: by: fritz --- #: XXX was bedeutet das hier? kann die Straße auf N zurückgestuft werden? bleibt die Fußgängerampel bestehen? --- #: by: http://www.potsdam.de/sites/default/files/documents/final_16503_amtsblatt_okt16_dsjs_korr3.pdf --- Humboldtring: Rückbau der Anschlussstelle	? -11386,-1313 -11392,-1326 -11461,-1424
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.380505.php
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.432036.php
@@ -4597,8 +4595,7 @@ Basdorf: Qualität des Radwegs entlang der Bahnstrecke?	? 12025,35002 12083,35157
 Buckow - Lichterfelde: wo genau ist der Radweg?	? 31634,53303 32692,53191 32718,53044 32856,52150 33002,51944
 # 
 Am Havelblick (Potsdam): Qualität?	? -12335,-2571 -12492,-2555 -12442,-2389 -12623,-2367
-#: by: http://www.potsdam.de/cms/beitrag/10057990/757395/
-Nuthestr.: existieren durchgängig Radwege zwischen Berliner Str. und Alt Nowawes?	? -11116,-1681 -11140,-1564 -11226,-1445 -11386,-1313
+# REMOVED (ja) --- #: by: http://www.potsdam.de/cms/beitrag/10057990/757395/ --- Nuthestr.: existieren durchgängig Radwege zwischen Berliner Str. und Alt Nowawes?	? -11116,-1681 -11140,-1564 -11226,-1445 -11386,-1313
 Jägersteig (Potsdam): Qualität?	? -8191,-2259 -8297,-2220 -8434,-2197
 Försterweg (Potsdam): Qualität?	? -8244,-2373 -8329,-2330 -8446,-2328
 Joe-May-Str. (Potsdam): Qualität? Öffentliche Straße?	? -8437,-2226 -8489,-2220 -8574,-2204 -8653,-2195
@@ -4812,7 +4809,7 @@ Mehlbeerenweg (Potsdam-Eiche): Qualität? Auch Verbundsteinpflaster wie die umlie
 #: XXX Planstraße A: An der Bahn (Weiterführung)
 #: XXX Planstraße B (Nord-, Ost-, Südverlauf): Feldlerchenwinkel, PLZ=14476
 #: XXX Planstraße B (Westverlauf): Sperlingsweg, PLZ=14476
-#: last_check: 2018-02-17
+#: last_checked: 2018-02-17
 #: check_frequency: 120d
 nördlich der Feldmark: weitere Straßen geplant	?::projected -18587,697 -18262,679 -18254,344 -18629,247 -18587,697
 # 
@@ -4996,7 +4993,7 @@ ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg rea
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/04re.pdf/file
 #: by: http://www.dafmap.de/d/berlin.html?id=3156&mt=0&zoom=15
 #: XXX Privatstraße
-Via Tilia: Qualität? Wo liegt die Straße genau (GPS-Track?)?	? -7518,-1175 -7548,-1097 -7487,-1056 -7271,-1102
+Via Tilia: Qualität? Ist die Straße abgesperrt?	? -7518,-1175 -7534,-1111 -7494,-1071 -7310,-1131
 # 
 Ahlimbsmühle - Templin: Qualität (Asphalt oder etwas anderes)? Ist die gesamte Straße eine Fahrradstraße?	? 23185,74265 22563,74247 21760,74489 21331,74676 20498,75268 19701,76270 19750,76354 19659,77157 19454,77284 19061,78220 18681,78317 18337,78286 18125,78413 17757,78643 17177,79071 16882,79108 16707,79192 16377,78982
 # 

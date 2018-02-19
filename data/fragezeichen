@@ -637,7 +637,6 @@ Qualität?	? 14709,35225 14839,34940 14961,34974 16934,35474 17208,35436 17492,35
 Basdorf: Qualität des Radwegs entlang der Bahnstrecke?	? 12025,35002 12083,35157 12681,35785 12761,35942
 Buckow - Lichterfelde: wo genau ist der Radweg?	? 31634,53303 32692,53191 32718,53044 32856,52150 33002,51944
 Am Havelblick (Potsdam): Qualität?	? -12335,-2571 -12492,-2555 -12442,-2389 -12623,-2367
-Nuthestr.: existieren durchgängig Radwege zwischen Berliner Str. und Alt Nowawes?	? -11116,-1681 -11140,-1564 -11226,-1445 -11386,-1313
 Jägersteig (Potsdam): Qualität?	? -8191,-2259 -8297,-2220 -8434,-2197
 Försterweg (Potsdam): Qualität?	? -8244,-2373 -8329,-2330 -8446,-2328
 Joe-May-Str. (Potsdam): Qualität? Öffentliche Straße?	? -8437,-2226 -8489,-2220 -8574,-2204 -8653,-2195
@@ -776,7 +775,6 @@ Am Sandberg (Potsdam-Eiche): Qualität? Auch Verbundsteinpflaster wie die umliege
 Ecksteinweg (Potsdam-Eiche): Ist hier eine Spielstraße?	? -17305,-608 -17290,-679 -17395,-725
 Baumhaselring (Potsdam-Eiche): Qualität im südlichen Abschnitt? Liegt hier auch Verbundsteinpflaster?	? -17236,-174 -17197,-152 -17189,-122 -17230,12 -17245,134
 Mehlbeerenweg (Potsdam-Eiche): Qualität? Auch Verbundsteinpflaster wie die umliegenden Straßen?	? -17374,-97 -17362,-63 -17373,5 -17327,22 -17299,35
-nördlich der Feldmark: weitere Straßen geplant	?::projected -18587,697 -18262,679 -18254,344 -18629,247 -18587,697
 Zum Bahnhof Pirschheide (Potsdam): Qualität?	? -16151,-3770 -16050,-3982 -15982,-4032
 Am Küssel (Potsdam-Grube): Qualität?	? -19243,2246 -19505,2798
 Zum Mühlenteich (Potsdam-Golm): Qualität? Bereits fertig gebaut? Ist die Straße verkehrsberuhigt?	?::inwork -19022,109 -19192,166
@@ -858,7 +856,7 @@ Theodor-Fontane-Str.: Sackgasse oder Einbahnstraßenregelung?	? -9835,6841 -9854,
 ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchgängig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	? 16377,90072 15782,90862 15728,90935 15398,92093 15661,93732 15688,93829 15748,93928 15841,94009 16435,94298 17677,94900 17796,95008 17912,95192
 ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchgängig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	? 17912,95192 18005,95449
 ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchgängig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	? 18029,95408 18507,96268 18676,96867 18954,97944 19022,98128 19442,99078 19582,99411
-Via Tilia: Qualität? Wo liegt die Straße genau (GPS-Track?)?	? -7518,-1175 -7548,-1097 -7487,-1056 -7271,-1102
+Via Tilia: Qualität? Ist die Straße abgesperrt?	? -7518,-1175 -7534,-1111 -7494,-1071 -7310,-1131
 Ahlimbsmühle - Templin: Qualität (Asphalt oder etwas anderes)? Ist die gesamte Straße eine Fahrradstraße?	? 23185,74265 22563,74247 21760,74489 21331,74676 20498,75268 19701,76270 19750,76354 19659,77157 19454,77284 19061,78220 18681,78317 18337,78286 18125,78413 17757,78643 17177,79071 16882,79108 16707,79192 16377,78982
 Am Fährgut: neue Privatstraße, schon fertiggestellt, Qualität?	? -13672,3295 -13535,3330 -13567,3403
 Carl-Dähne-Str.: Planstraße A, schon fertiggestellt, Qualität?	? -16317,-541 -16309,-435 -16168,-312
@@ -1107,6 +1105,7 @@ Glasmeisterstr. (ist der westliche Abschnitt der Glasmeisterstr. für Autos gespe
 (Heinrich-Mann-Allee - Am Nuthetal) (heißt diese Straße "Drewitzer Str."?)	? -11081,-3570 -11027,-3591 -10889,-3671
 (Telegrafenberg) (Qualität der Wege auf dem Telegrafenberg?)	? -12222,-2932 -12306,-2979 -12288,-3075 -12282,-3226 -12346,-3232 -12391,-3296
 Walter-Klausch-Str. (Ist der Mittelteil parallel zur Nuthestr. für Autos gesperrt?)	? -10133,-2903 -10046,-2974 -9963,-2980
+Am alten Mörtelwerk (Straßenname: schreibt sich "alten" groß oder klein?)	? -17127,-554 -17141,-496 -17186,-451 -17211,-356 -17257,-252
 Zaunkönigweg (Qualität der Straße?)	? -18017,333 -18084,316 -18077,267 -18034,259
 Stolper Weg (Qualität? Radwege?)	? -2747,-937 -2781,-946 -3188,-885 -3540,-834 -3993,-700 -4162,-596
 Stolper Weg (Qualität?)	? -4162,-596 -4229,-463 -4317,-521 -4331,-631 -4350,-665 -4594,-709 -4709,-728
