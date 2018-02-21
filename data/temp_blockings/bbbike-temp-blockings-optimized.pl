@@ -2029,7 +2029,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-02-15 vvv
+#: last_checked: 2018-02-19 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -2163,7 +2163,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-02-15
+#: last_checked: 2018-02-19
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -2253,14 +2253,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        {
-         'data' => '	2::inwork 14538,12371 14748,12314
+         'data' => '#: next_check_id: RIGAER-2018
+	2::inwork 14538,12371 14748,12314
 ',
-         'from' => 1501452000,
+         'from' => undef,
          'id' => 2888,
-         'source_id' => 'http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.616518.php',
-         'text' => 'Rigaer Str.: Sperrung zwischen Samariterstr. und Voigtstr., auch für Radfahrer und Fußgänger, vom 01.08.2017 - 28.02.2019',
+         'text' => 'Rigaer Str.: Baustelle, während der Arbeitszeiten (Mo bis Fr, 6 bis 17 Uhr) kein Durchgang möglich',
          'type' => 'gesperrt',
-         'until' => 1551394799
+         'until' => 1530439200
        },
        undef,
        undef,
@@ -2318,7 +2318,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-01-19
+#: last_checked: 2018-02-20
 	2::inwork 14652,10201 14569,10055
 ',
          'from' => undef,
@@ -2387,7 +2387,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-01-19 vvv
+#: last_checked: 2018-02-19 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438

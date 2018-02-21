@@ -129,7 +129,6 @@ Dorotheenstr.	1 9870,12657 9742,12609 9681,12601 9581,12588 9454,12558
 Dorotheenstr. (Straﬂenbahn)	1s 9454,12558 9330,12538
 Georgenstr.	1 9441,12670 9568,12688 9659,12704 9754,12775
 Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
-Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18002,6695 18076,6693 18125,6694 18254,6679 18339,6660 18494,6588
 Griechische Allee	1 18494,6588 18429,6582 18273,6606 18159,6642 18079,6678 18008,6672 17962,6674
 Hardenbergplatz	1 5542,11075 5565,11147 5666,11362 5698,11333 5600,11114 5542,11075
@@ -1889,9 +1888,9 @@ S¸dpark -> Heerstr.: schlecht passierbar	3::igndisp -4027,11818 -4033,11786 -382
 nicht passierbarer Mittelstreifens	3nocross::ignrte 2560,5044 2587,4965 2615,4885
 Thielallee -> Hittorfstr.: nicht passierbarer Mittelstreifens	3::igndisp 2615,4885 2587,4965 2516,4936
 Hittorfstr. -> Thielallee: nicht passierbarer Mittelstreifens	3::igndisp 2516,4936 2587,4965 2560,5044
-Straﬂenbahntrasse	3nocross::ignrte 11451,13301 11409,13327 11308,13389 11276,13408
+Straﬂenbahntrasse	3nocross::ignrte 11451,13301 11399,13333 11308,13389 11276,13408
 Mollstr. -> Mendelssohnstr.: Straﬂenbahntrasse	3::igndisp 11276,13408 11308,13389 11346,13441
-Mendelssohnstr. -> Mollstr.: Straﬂenbahntrasse	3::igndisp 11346,13441 11308,13389 11409,13327
+Mendelssohnstr. -> Mollstr.: Straﬂenbahntrasse	3::igndisp 11346,13441 11308,13389 11399,13333
 Straﬂenbahntrasse	3nocross::ignrte 11706,13635 11652,13564 11561,13451 11539,13425 11486,13350 11451,13301
 Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Straﬂenbahntrasse	3::igndisp 11561,13451 11652,13564 11598,13598
 Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Straﬂenbahntrasse	3::igndisp 11598,13598 11652,13564 11706,13635
@@ -1901,11 +1900,11 @@ Otto-Braun-Str. -> Mendelssohnstr.: Straﬂenbahntrasse	3::igndisp 11486,13350 115
 Mendelssohnstr. -> Otto-Braun-Str.: Straﬂenbahntrasse	3::igndisp 11490,13463 11539,13425 11561,13451
 Otto-Braun-Str. -> Mendelssohnstr. [Wohngebiet]: Straﬂenbahntrasse	3::igndisp 11451,13301 11486,13350 11433,13389
 Mendelssohnstr. [Wohngebiet] -> Otto-Braun-Str.: Straﬂenbahntrasse	3::igndisp 11433,13389 11486,13350 11539,13425
-Straﬂenbahntrasse	3nocross::ignrte 11451,13301 11368,13170 11320,13095
-Wadzeckstr. -> Otto-Braun-Str.: Straﬂenbahntrasse	3::igndisp 11352,13180 11368,13170 11451,13301
-Otto-Braun-Str. -> Wadzeckstr.: Straﬂenbahntrasse	3::igndisp 11320,13095 11368,13170 11352,13180
-Mittelstreifen	3nocross::ignrte 11368,13170 11320,13095 11267,13012 11226,12945
-Theanolte-B‰hnisch-Str. -> Otto-Braun-Str.: Mittelstreifen	3::igndisp 11235,13143 11320,13095 11368,13170
+Straﬂenbahntrasse	3nocross::ignrte 11451,13301 11369,13174 11320,13095
+Wadzeckstr. -> Otto-Braun-Str.: Straﬂenbahntrasse	3::igndisp 11354,13184 11369,13174 11451,13301
+Otto-Braun-Str. -> Wadzeckstr.: Straﬂenbahntrasse	3::igndisp 11320,13095 11369,13174 11354,13184
+Mittelstreifen	3nocross::ignrte 11369,13174 11320,13095 11267,13012 11226,12945
+Theanolte-B‰hnisch-Str. -> Otto-Braun-Str.: Mittelstreifen	3::igndisp 11235,13143 11320,13095 11369,13174
 Otto-Braun-Str. -> Theanolte-B‰hnisch-Str.: Mittelstreifen	3::igndisp 11267,13012 11320,13095 11235,13143
 Mittelstreifen	3nocross::ignrte 11226,12945 11289,12908 11589,12768 11635,12745
 Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 11367,12940 11289,12908 11589,12768
@@ -2917,14 +2916,13 @@ Friedenshorster Str.: Einbahnstraﬂe wegen Bauarbeiten	1s:inwork 18296,10027 1831
 Friedenshorster Str.: Einbahnstraﬂe wegen Bauarbeiten	1s:inwork 18301,9946 18266,9853
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
-(Wadzeckstr. - Mollstr.)	2::inwork 11326,13196 11409,13327
+(Wadzeckstr. - Mollstr.)	2::inwork 11315,13210 11399,13333
 Im Lichtenhain: neue Straﬂe, zurzeit Bauarbeiten; Qualit‰t, genaue Lage?	2::inwork 16497,10685 16462,10571
 Zufahrt Parkhaus: Abrissarbeiten, Straﬂe komplett gesperrt	2::inwork 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
 Merlitzstr.: Bauarbeiten, Straﬂe komplett gesperrt	2::inwork 19661,3421 19524,3286
 Mauerstr.: Bauarbeiten, Einbahnstraﬂe	1s:inwork 9108,11961 9138,11872
 (entlang der Erpe): Bauarbeiten der DB	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
 (Marseillestr. - Straﬂe 160): wegen Bauarbeiten gesperrt	2::inwork 12495,21397 12507,21391 12547,21372
-Rigaer Str.: Komplettsperrung zwischen Schreinerstr. und Voigtstr.	2::inwork 14538,12371 14748,12314
 Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -6556,6663 -6661,6743
 An den Parkb‰umen: Bauarbeiten, Fahrbahn gesperrt	2::inwork -6530,6699 -6556,6663
 Parkrosenweg: Bauarbeiten	2::inwork -6530,6699 -6381,6587
@@ -3541,7 +3539,7 @@ Altentreptower Str., linker Gehweg	1::igndisp 21401,12155 21310,12150 21294,1216
 Altentreptower Str., linker Gehweg	1::igndisp 21573,12140 21401,12155
 Wilhelmsruher Damm, linker Geh/Radweg bis zur Fuﬂg‰ngerampel	1::igndisp 5525,21022 5599,21025
 Frankfurter Allee, linker Gehweg bis zur Ampel	1::igndisp 15670,12022 15717,12010
-Otto-Braun-Str., linker Gehweg	1::igndisp 11451,13301 11352,13180
+Otto-Braun-Str., linker Gehweg	1::igndisp 11451,13301 11354,13184
 Invalidenstr., linker Gehweg	1::igndisp 8332,13548 8183,13482
 Lichtenberger Br¸cke, linker Gehweg	1::igndisp 16978,11852 16818,11878
 Alexanderstr., linker Gehweg	1::igndisp 11353,12436 11329,12497

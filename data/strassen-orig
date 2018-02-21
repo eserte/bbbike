@@ -1358,10 +1358,10 @@ Alexanderplatz [Richtung Alexa]	NN 11134,12793 11064,12910
 Alex-Wedding-Str.	N 11045,13183 11085,13239 11146,13328
 (Alex-Wedding-Str. - Karl-Liebknecht-Str.)	N 11085,13239 11012,13278
 #: street_width: 22m
-Wadzeckstr.	N 11368,13170 11352,13180 11326,13196 11291,13218 11201,13289 11146,13328 11082,13371 11081,13372
-(Wadzeckstr. - Mollstr.)	NN 11326,13196 11409,13327
+Wadzeckstr.	N 11369,13174 11354,13184 11315,13210 11295,13224 11201,13289 11146,13328 11082,13371 11081,13372
+(Wadzeckstr. - Mollstr.)	NN 11315,13210 11399,13333
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20111021.1250.361338.html
-Bernhard-Weiﬂ-Str.	N 11291,13218 11235,13143 11191,13080
+Bernhard-Weiﬂ-Str.	N 11295,13224 11235,13143 11191,13080
 Bernhard-Weiﬂ-Str.	NN 11191,13080 11139,13008
 Theanolte-B‰hnisch-Str.	N 11320,13095 11235,13143
 Weydemeyerstr.	N 12112,12861 12054,12903 11983,12949 11952,12871 11921,12810 11890,12750
@@ -1369,8 +1369,8 @@ Weydemeyerstr.	N 11721,12801 11805,12760 11933,12701 11969,12681 12039,12675 120
 (Weydemeyerstr.)	NN 11890,12750 11818,12785
 (Weydemeyerstr.)	NN 11839,12830 11818,12785 11805,12760
 Gontardstr.	N 10733,12967 10801,12901 10923,12779
-Otto-Braun-Str.	HH 11226,12945 11267,13012 11320,13095 11368,13170 11451,13301 11486,13350 11539,13425 11561,13451 11652,13564 11706,13635
-Mollstr.	HH 11160,13492 11216,13451 11270,13412 11276,13408 11308,13389 11409,13327 11451,13301 11526,13252 11560,13232 11681,13161 11723,13139
+Otto-Braun-Str.	HH 11226,12945 11267,13012 11320,13095 11369,13174 11451,13301 11486,13350 11539,13425 11561,13451 11652,13564 11706,13635
+Mollstr.	HH 11160,13492 11216,13451 11270,13412 11276,13408 11308,13389 11399,13333 11451,13301 11526,13252 11560,13232 11681,13161 11723,13139
 Mollstr.	HH 11723,13139 11739,13131 11840,13085 11896,13075
 Mollstr.	HH 11841,13087 11723,13139
 Mollstr. [Wohngebiet]	N 11739,13131 11719,13088 11659,12962
@@ -4202,6 +4202,7 @@ Wodanstr. (Franzˆsisch Buchholz)	N 12216,21945 12162,21743
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2017/16-05-2017_beleuchtungssituation-an-der-und-um-die-koenigsteinbruecke-verbessern.pdf
 #: by: http://www.berliner-woche.de/blankenburg/verkehr/senat-laesst-neue-laternen-auf-der-koenigsteinbruecke-errichten-d127411.html (Beleuchtung wird errichtet)
 #: by: https://adfc-berlin.de/radverkehr/aus-den-bezirken/pankow/524-koenigsteinbruecke-wird-fuer-radverkehr-im-nordosten-dringend-gebraucht.html (ab Sommer 2018)
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621&date=20180219 (2018 bis 2019)
 #: XXX erste Planung: Sperrung in der Zeit vom 24. November 2017 bis zum 30. Mai 2019
 #: osm_watch: way id="16307526" version="11"
 #: next_check: 2018-06-01
@@ -12581,6 +12582,8 @@ Kronprinzenbr¸cke	N 8503,12895 8424,12853
 Konrad-Adenauer-Str.	N 8424,12853 8309,12758 8306,12609
 Otto-von-Bismarck-Allee	N 8415,12749 8309,12758 8206,12757 8120,12756
 #: note: laut osm "Willy-Brandt-Str." --- aber vor Ort existieren keine Straﬂenschilder? vvv
+#: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/ii-200ib/index.shtml (dieser Abschnitt der Straﬂe bleibt erhalten)
+#: note: "Forumsquerung"
 (Umfahrung Kanzleramt)	H 8207,12606 8206,12757
 (Umfahrung an der Schweizer Botschaft)	H 8206,12757 8204,12816 8168,12848 8124,12840 8030,12824
 #: note ^^^

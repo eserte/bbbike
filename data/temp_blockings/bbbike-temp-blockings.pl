@@ -22680,8 +22680,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED (-> gesperrt-orig) --- #: XXX bleibt das dauerhaft gesperrt? --- #: XXX_indoor: evtl. Umfahrung über Otto-Braun-Str. definieren --- #: last_checked: 2014-02-13 --- #: check_frequency: 7d
-# REMOVED ---	q4::inwork; 11409,13327 11379,13279 11326,13196
-# REMOVED ---	q3::inwork; 11326,13196 11379,13279 11409,13327
+# REMOVED ---	q4::inwork; 11399,13333 11379,13279 11315,13210
+# REMOVED ---	q3::inwork; 11315,13210 11379,13279 11399,13333
 EOF
      },
      { from  => 1392120000, # 2014-02-11 13:00
@@ -24181,7 +24181,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.277824.php',
        data  => <<EOF,
 # REMOVED (nein) - ändert sich nach den Bauarbeiten etwas an der Wegführung für Radfahrer?
-	q4::inwork; 11160,13492 11216,13451 11270,13412 11276,13408 11308,13389 11409,13327 11451,13301
+	q4::inwork; 11160,13492 11216,13451 11270,13412 11276,13408 11308,13389 11399,13333 11451,13301
 EOF
      },
      { from  => 1426374000, # 2015-03-15 00:00
@@ -25662,7 +25662,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-02-15 vvv
+#: last_checked: 2018-02-19 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -26161,7 +26161,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-02-15
+#: last_checked: 2018-02-19
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -26355,12 +26355,12 @@ EOF
 	2::inwork -4098,13201 -4046,13177 -4017,13167
 EOF
      },
-     { from  => 1501452000, # 2017-07-31 00:00
-       until => 1551394799, # 2019-02-28 23:59
-       text  => 'Rigaer Str.: Sperrung zwischen Samariterstr. und Voigtstr., auch für Radfahrer und Fußgänger, vom 01.08.2017 - 28.02.2019',
+     { from  => undef,
+       until => $isodate2epoch->("2018-07-01 12:00:00"),
+       text  => 'Rigaer Str.: Baustelle, während der Arbeitszeiten (Mo bis Fr, 6 bis 17 Uhr) kein Durchgang möglich',
        type  => 'gesperrt',
-       source_id => 'http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.616518.php',
        data  => <<EOF,
+#: next_check_id: RIGAER-2018
 	2::inwork 14538,12371 14748,12314
 EOF
      },
@@ -26546,7 +26546,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-01-19
+#: last_checked: 2018-02-20
 	2::inwork 14652,10201 14569,10055
 EOF
      },
@@ -26740,7 +26740,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-01-19 vvv
+#: last_checked: 2018-02-19 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
