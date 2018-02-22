@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -86,13 +86,11 @@ EOF
 	$doit->brew_install_packages(qw(socat docker-machine));
 
 	{
+	    chomp(my $status = $doit->info_qx({quiet=>1}, 'docker-machine', 'status', $opt{'docker-machine'}));
 	    my $docker_machine_found;
-	    for my $docker_machine (split /\n/, eval { $doit->info_qx({quiet=>1}, 'docker-machine', 'active') }) {
-		if ($docker_machine eq $opt{'docker-machine'}) {
-		    info "Matching docker-machine '$docker_machine' found";
-		    $docker_machine_found = 1;
-		    last;
-		}
+	    if ($status eq 'Running') {
+		info "docker-machine '" . $opt{'docker-machine'} . "' already running";
+		$docker_machine_found = 1;
 	    }
 	    if (!$docker_machine_found) {
 		$doit->system('docker-machine', 'start', $opt{'docker-machine'});
@@ -110,7 +108,18 @@ EOF
     }
 
     my $tag = 'bbbike-gui-'.$opt{dist}.'-'.$opt{distver};
-    $doit->run([qw(docker build --tag), $tag, '-'], '<', \$dockerfile);
+    my @build_cmd = (qw(docker build --tag), $tag, '-');
+    # Avoid using $doit->run, so no IPC::Run needed...
+    info "Run @build_cmd";
+    if ($doit->is_dry_run) {
+	info " ... (dry-run)";
+    } else {
+	open my $fh , "|-", @build_cmd
+	    or error "Error running @build_cmd: $!";
+	print $fh $dockerfile;
+	close $fh
+	    or error "Error running @build_cmd: $!";
+    }
 
     my $XSOCK = '/tmp/.X11-unix';
     my $XAUTH = '/tmp/.docker.xauth';
@@ -147,14 +156,14 @@ EOF
 	$scope_cleanups->add_scope_cleanup(sub { info "Killing ssh process $ssh_port_fwd_pid"; kill KILL => $ssh_port_fwd_pid });
 
 	# Race condition! Hopefully socat & ssh are faster than the following docker command!
-	$doit->run(['docker', 'run', '-ti',
-		    @docker_run_args,
-		    '--network=host',
-		    '-p', $socat_port,
-		    ($opt{src} eq 'local' ? ('-v', "$FindBin::RealBin/..:/bbbike:ro") : ()),
-		    '-e', "DISPLAY=$display",
-		    $tag,
-		   ]);
+	$doit->system('docker', 'run', '-ti',
+		      @docker_run_args,
+		      '--network=host',
+		      '-p', $socat_port,
+		      ($opt{src} eq 'local' ? ('-v', "$FindBin::RealBin/..:/bbbike:ro") : ()),
+		      '-e', "DISPLAY=$display",
+		      $tag,
+		     );
     } else {
 	$doit->run(['xauth', 'nlist', $ENV{DISPLAY}], '|', ['sed', '-e', 's/^..../ffff/'], '|', ['xauth', '-f', $XAUTH, 'nmerge', '-']);
 	$doit->run(['docker', 'run', '-ti',
