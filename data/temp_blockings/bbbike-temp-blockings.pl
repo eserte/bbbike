@@ -26043,7 +26043,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="548612558" version="1"
-#: last_checked: 2018-02-02
+#: last_checked: 2018-02-23
 #: check_frequency: 14d
 # REMOVED ---	q3::inwork; 7201,8870 7101,9027
 	q3::inwork; 7101,9027 7035,9161 7012,9222
@@ -26161,7 +26161,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-02-19
+#: last_checked: 2018-02-22
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -26361,6 +26361,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: RIGAER-2018
+#: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
 	2::inwork 14538,12371 14748,12314
 EOF
      },
@@ -26857,7 +26858,7 @@ EOF
 EOF
      },
      { from  => 1518462294, # 2018-02-12 20:04
-       until => 1520290800, # 2018-03-06 00:00
+       until => 1519410682, # rausgenommen, eigentlich keine Beeinträchtigungen --- 1520290800, # 2018-03-06 00:00
        text  => 'Helmstr. und Vorbergstr.: an der Hauptstr. Baustelle, Fahrbahn kann gesperrt sein, bis voraussichtlich 05.03.2018',
        type  => 'handicap',
        data  => <<EOF,

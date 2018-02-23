@@ -2111,7 +2111,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="548612558" version="1"
-#: last_checked: 2018-02-02
+#: last_checked: 2018-02-23
 #: check_frequency: 14d
 # REMOVED ---	q3::inwork; 7201,8870 7101,9027
 	q3::inwork; 7101,9027 7035,9161 7012,9222
@@ -2163,7 +2163,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-02-19
+#: last_checked: 2018-02-22
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -2254,6 +2254,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: RIGAER-2018
+#: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
 	2::inwork 14538,12371 14748,12314
 ',
          'from' => undef,
@@ -2478,18 +2479,6 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Berlepschstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte März 2018',
          'type' => 'handicap',
          'until' => 1521111600
-       },
-       {
-         'data' => '#: XXX prüfen, ob es tatsächlich Behinderungen für Radfahrer gibt vvv
-	q4::inwork 7382,9187 7444,9148
-	q4::inwork 7308,9163 7363,9152
-#: XXX ^^^
-',
-         'from' => 1518462294,
-         'id' => 2933,
-         'text' => 'Helmstr. und Vorbergstr.: an der Hauptstr. Baustelle, Fahrbahn kann gesperrt sein, bis voraussichtlich 05.03.2018',
-         'type' => 'handicap',
-         'until' => 1520290800
        }
      
 );
