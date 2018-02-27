@@ -908,7 +908,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=22111
 #: source_id: IM_023718
 #: source_id: 2147339540
-#: last_checked: 2018-01-23
+#: last_checked: 2018-02-26
 #: check_frequency: 60d
 	RW2;RW8 14530,7301 14369,7376 14334,7395 14174,7505
 	RW1; 14015,7631 13919,7707
@@ -1159,7 +1159,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW3; 18225,7004 18010,713
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
-#: last_checked: 2018-01-28
+#: last_checked: 2018-02-26
 #: check_frequency: 90d
 	RW8;RW2 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
@@ -1589,9 +1589,9 @@ die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
 	RW4; 15261,10738 14904,10812 14810,10832 14717,10855 14674,10811
 # REMOVED (nur noch ein Eintrag übrig) --- : next_check_id: HAUPTSTR-2015
 #: XXX Markierungen fehlen noch
-#: osm_watch: way id="439421759" version="7"
+#: osm_watch: way id="439421759" version="9"
 #: osm_watch: way id="384136808" version="12"
-#: last_checked: 2018-02-20
+#: last_checked: 2018-02-25
 #: check_frequency: 7d
 	RW0; 14674,10811 14717,10855 14810,10832 14904,10812 15261,10738
 	RW1;RW1 14652,10201 14688,10167 14705,10149 14747,10108 14817,10031
@@ -1786,6 +1786,9 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 	RW4;RW3 12640,13814 12578,13800
 	RW3;RW3 12578,13800 12402,13762 12372,13755 12204,13719 12161,13711
 	RW3; 11907,13655 12038,13685 12161,13711
+#: XXX vermutlich werden hier Radspuren entstehen
+#: by: http://www.berliner-woche.de/prenzlauer-berg/verkehr/storkower-strasse-senat-stellt-dem-bezirk-mittel-fuer-den-bau-eines-radstreifens-in-aussicht-d142987.html
+#: next_check: 2018-09-01
 	RW1;RW1 13438,14675 13737,14204 13879,13967
 Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
 	RW2; 13971,13818 14006,13761

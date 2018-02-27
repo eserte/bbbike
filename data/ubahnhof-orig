@@ -2,6 +2,7 @@
 #: title.de: U-Bahnhöfe
 #: title.en: Underground stations
 #:
+######################################################################
 # U1
 #: attrs bg
 Warschauer Str.	UA 13482,11115
@@ -23,6 +24,8 @@ Wittenbergplatz	UA 6268,10614
 Kurfürstendamm	UA 5495,10797
 #: attrs bg
 Uhlandstr.	UA 5156,10677
+#
+######################################################################
 # U3
 Augsburger Str.	UA 5866,10492
 Spichernstr.	UA 5463,9961
@@ -34,16 +37,35 @@ Heidelberger Platz	UA 4295,8137
 Rüdesheimer Platz	UB 4399,7342
 #: attrs bg
 Breitenbachplatz	UB 3998,6655
+# 
+#: XXX Aufzug ab September 2018
+#: by: http://www.berliner-woche.de/dahlem/bauen/drei-bahnhoefe-der-u3-erhalten-aufzuege-d143302.html (Aufzug)
+#: next_check: 2018-09-01
+#: priority: #C
 Podbielskiallee	UB 3158,6358
+# 
 #: attrs bg
 Dahlem-Dorf	UB 2768,5624
+# 
+#: XXX Aufzug ab September 2018
+#: by: http://www.berliner-woche.de/dahlem/bauen/drei-bahnhoefe-der-u3-erhalten-aufzuege-d143302.html (Aufzug)
+#: next_check: 2018-09-01
+#: priority: #C
 #: oldname: -20161210: Thielplatz
 #: alias: Thielplatz
 Freie Universität	UB 2265,4892
+# 
+#: XXX Aufzug ab September 2018
+#: by: http://www.berliner-woche.de/dahlem/bauen/drei-bahnhoefe-der-u3-erhalten-aufzuege-d143302.html (Aufzug)
+#: next_check: 2018-09-01
+#: priority: #C
 Oskar-Helene-Heim	UB 1408,4785
+# 
 Onkel Toms Hütte	UB 284,4723
 #: attrs bg
 Krumme Lanke	UB -516,3967
+#
+######################################################################
 # U2
 #: attrs bg
 Pankow	UB 10843,18001
@@ -90,12 +112,16 @@ Neu-Westend	UB 656,12077
 Olympia-Stadion	UB -50,12177
 #: attrs bg
 Ruhleben	UB -649,13096
+#
+######################################################################
 # U4
 Viktoria-Luise-Platz	UA 6270,9939
 Bayerischer Platz	UA 6126,9130
 Rathaus Schöneberg	UA 6260,8516
 #: attrs bg
 Innsbrucker Platz	UA 6386,8065
+#
+######################################################################
 # U5
 Unter den Linden	UBau 9362,12331
 Schloßplatz	UBau 10056,12418
@@ -152,6 +178,8 @@ Bundestag	UA 8272,12685
 #: alias: Lehrter Bahnhof
 #: attrs bg
 Hauptbahnhof	UA 8030,13294
+#
+######################################################################
 # U6
 #: attrs bg
 Alt-Mariendorf	UB 9472,3641
@@ -204,6 +232,8 @@ Borsigwerke	UB 2586,19374
 #: attrs bg
 #: map_tube_other_link: Street:Tegel
 Alt-Tegel	UB 2067,20278
+#
+######################################################################
 # U7
 #: attrs bg
 Rudow	UB 16821,1252
@@ -257,6 +287,8 @@ Altstadt Spandau	UB -3019,14499
 #: attrs bg
 #: map_tube_other_link: Street:Spandau
 Rathaus Spandau	UB -3560,14235
+#
+######################################################################
 # U8
 #: attrs bg
 Hermannstr.	UA 12358,6895
@@ -290,6 +322,8 @@ Karl-Bonhoeffer-Nervenklinik	UB 5448,19169
 Rathaus Reinickendorf	UB 4934,20186
 #: attrs bg
 Wittenau	UB 5501,21018
+#
+######################################################################
 # U9
 Nauener Platz	UB 7824,16170
 #: attrs bg
