@@ -15,16 +15,20 @@
 #              - eingebettet in einen Zyklus mit möglicher sofortiger Grünschaltung:
 #                Zykluszeit/2
 #
-# DH:qX,$len: ein in bbbike übliche Handicap-Eintrag, gültig für die angegebene Länge
+# DH:h=qX,$len: ein in bbbike üblicher Handicap-Eintrag, gültig für die angegebene Länge
 #
 # DH:t=...: zusätzliche verlorene Zeit (z.B. an Ampeln, die im normalen Ampel-Netz
 #           erreicht werden)
+# 
+# DH:len=...: zusätzliche Strecke, z.B. wenn ein Umweg notwendig ist, der in den
+#             BBBike-Daten nicht aufgeführt ist
 # 
 # DH:len=...:t=...: wenn len+t kombiniert wird, dann sollte der Zeitverlust
 #                   durch die Streckenverlängerung nicht in den t-Wert
 #                   einfließen. Als Richtgeschwindigkeit für das Ermitteln
 #                   des Zeitverlusts sollte man 20km/h annehmen. Aber
-#                   generell ist es besser, mit qX,$len zu arbeiten.
+#                   generell ist es besser, mit qX,$len zu arbeiten, aber
+#                   das ist nicht immer möglich (Ampeln, Bordsteine).
 # 
 #: next_check_id: KARLMARXSTR-2016
 #: last_checked: 2018-02-15 vvv
@@ -205,3 +209,6 @@ Straße 106 - Indira-Gandhi-Str.: Umweg zur Überquerungsmöglichkeit	DH:len=90 146
 Indira-Gandhi-Str. - Straße 106: linker Gehweg	DH:h=q3,45 14843,15007 14828,15050 14666,14845
 # 
 Gervinusstr. - Lewishamstr.: linker Gehweg	DH:h=q3,45 3835,10915 3623,10800 3644,10759
+# 
+Unter den Linden - Universitätsstr.: Umweg beim Abbiegen	DH:len=50 9475,12365 9613,12381 9581,12588
+Universitätsstr. - Unter den Linden: zunächst linken Gehweg bis zur Überquerungsmöglichkeit nehmen, oder Bordsteine auf dem Mittelstreifen überqueren	DH:h=q3,25 9581,12588 9613,12381 9664,12387
