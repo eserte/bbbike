@@ -5,7 +5,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2018 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -775,7 +775,7 @@ $require_Karte = sub {
     undef $require_Karte;
 };
 
-$VERSION = '11.005';
+$VERSION = '11.006';
 
 use vars qw($delim);
 $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -1186,7 +1186,7 @@ if ($use_file_cache) {
 		    warn "DEBUG: Cache hit for " . $q->query_string . "\n";
 		    http_req_logging();
 		}
-		http_header(@{ $meta->{headers} || [] });
+		http_header(@{ $meta->{headers} || [] }, '-X-bbbike-file-cache' => 'HIT');
 		$cache_entry->stream_content;
 		my_exit(0);
 	    }
@@ -3949,7 +3949,7 @@ sub display_route {
 	my $gpx_output = $s_gpx->bbd2gpx(-as => "track");
 	print $gpx_output;
 	if ($cache_entry) {
-	    $cache_entry->put_content($gpx_output, {headers => \@headers});
+	    $cache_entry->put_content($gpx_output, {_additional_filecache_info($q), headers => \@headers});
 	}
 	return;
     }
@@ -3969,7 +3969,7 @@ sub display_route {
 	my $kml_output = $s_kml->bbd2kml(startgoalicons => 1);
 	print $kml_output;
 	if ($cache_entry) {
-	    $cache_entry->put_content($kml_output, {headers => \@headers});
+	    $cache_entry->put_content($kml_output, {_additional_filecache_info($q), headers => \@headers});
 	}
 	return;
     }
@@ -4579,7 +4579,7 @@ sub display_route {
 	    }
 	    print $json_output;
 	    if ($cache_entry) {
-		$cache_entry->put_content($json_output, {headers => \@headers});
+		$cache_entry->put_content($json_output, {_additional_filecache_info($q), headers => \@headers});
 	    }
 	} elsif ($output_as =~ m{^geojson(-short)?$}) {
 	    my $is_short = !!$1;
@@ -4611,7 +4611,7 @@ sub display_route {
 	    my $gpx_output = $s_gpx->bbd2gpx(-as => "route");
 	    print $gpx_output;
 	    if ($cache_entry) {
-		$cache_entry->put_content($gpx_output, {headers => \@headers});
+		$cache_entry->put_content($gpx_output, {_additional_filecache_info($q), headers => \@headers});
 	    }
 	} else { # xml
 	    require XML::Simple;
@@ -5853,7 +5853,7 @@ sub draw_route {
 		      );
 	if ($cache_entry) {
 	    $cache_file = $cache_entry->get_content_filename;
-	    $cache_entry->put_content(undef, {headers => \@headers});
+	    $cache_entry->put_content(undef, {_additional_filecache_info($q), headers => \@headers});
 	}
 	http_header(@headers);
 
@@ -7754,6 +7754,18 @@ sub _get_weekly_filecache { require BBBikeCGI::Cache; BBBikeCGI::Cache->new($Str
 sub _get_hourly_filecache { require BBBikeCGI::Cache; BBBikeCGI::Cache->new($Strassen::datadirs[0], _get_cache_prefix() . '_hourly', 'hourly') }
 sub _get_cache_prefix { $Strassen::Util::cacheprefix . ($is_beta ? '_beta' : '') . ($lang ? "_$lang" : '') }
 
+sub _additional_filecache_info {
+    my $q = shift;
+    my @info;
+    if ($q->query_string) {
+	push @info, query_string => scalar $q->query_string;
+    }
+    if ($q->user_agent) {
+	push @info, user_agent => scalar $q->user_agent;
+    }
+    @info;
+}
+
 sub http_req_logging {
     eval {
 	require JSON::XS;
@@ -8180,7 +8192,7 @@ Slaven Rezic <slaven@rezic.de>
 
 =head1 COPYRIGHT
 
-Copyright (C) 1998-2017 Slaven Rezic. All rights reserved.
+Copyright (C) 1998-2018 Slaven Rezic. All rights reserved.
 This is free software; you can redistribute it and/or modify it under the
 terms of the GNU General Public License, see the file COPYING.
 

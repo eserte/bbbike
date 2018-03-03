@@ -152,7 +152,7 @@ my @imagetype_defs =
        ["googlemaps",    0],
       );
 
-my $file_cache_tests_per_format = 3;
+my $file_cache_tests_per_format = 4;
 my $file_cache_tests_formats = scalar grep { $_->{can_file_cache} } (@output_as_defs, @imagetype_defs);
 
 plan tests => (269 + ($test_file_cache ? $file_cache_tests_formats*$file_cache_tests_per_format : 0)) * scalar @urls;
@@ -300,6 +300,7 @@ for my $cgiurl (@urls) {
 		my ($content2, $resp2) = std_get $url, testname => "2nd fetch";
 		eq_or_diff $content2, $content, "2nd fetch content equals ($output_as)";
 		is $resp2->content_type, $resp->content_type, "2nd fetch has same content-type ($output_as)";
+		is $resp2->header('x-bbbike-file-cache'), 'HIT', 'X-BBBike-File-Cache seen';
 	    }
 	}
     }
@@ -621,6 +622,7 @@ for my $cgiurl (@urls) {
 		my($content2, $resp2) = std_get $url, testname => "imagetype=$imagetype (2nd possibly cached fetch)";
 		ok $content2 eq $content, "2nd fetch content equals ($imagetype)";
 		is $resp2->content_type, $resp->content_type, "2nd fetch has same content-type ($imagetype)";
+		is $resp2->header('x-bbbike-file-cache'), 'HIT', 'X-BBBike-File-Cache seen';
 	    }
 	}
     }
