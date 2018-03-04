@@ -7763,6 +7763,9 @@ sub _additional_filecache_info {
     if ($q->user_agent) {
 	push @info, user_agent => scalar $q->user_agent;
     }
+    if ($q->remote_addr) {
+	push @info, remote_addr => scalar $q->remote_addr;
+    }
     @info;
 }
 
