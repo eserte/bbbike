@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.91;
+$VERSION = 1.92;
 
 use your qw(%MultiMap::images $BBBikeLazy::mode
 	    %main::line_width %main::p_width %main::str_draw %main::p_draw
@@ -3097,7 +3097,12 @@ sub show_diffs_since_last_deployment {
 
     my $layer = add_new_layer('str', $tmpfile);
 
-    main::choose_ort("str", $layer);
+    my $t = main::choose_ort("str", $layer, -ondestroy => sub {
+				 my $t = shift;
+				 main::delete_layer($layer);
+				 $t->destroy; # no need to withdraw
+			     });
+    $t->geometry("600x200");
 }
 
 ######################################################################
