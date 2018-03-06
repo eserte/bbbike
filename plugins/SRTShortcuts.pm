@@ -3171,7 +3171,15 @@ sub show_mapillary_tracks {
     my(undef, $tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => ($since ? "_$since" : "") . "_mapillary.bbd");
     $sg->write($tmpfile);
 
-    main::plot_additional_layer("str", $tmpfile);
+    my $layer = main::plot_additional_layer("str", $tmpfile);
+
+    my $t = main::choose_ort("str", $layer, -ondestroy => sub {
+				 my $t = shift;
+				 main::delete_layer($layer);
+				 $t->destroy; # no need to withdraw
+			     });
+    $t->geometry("310x200");
+
 }
 
 ######################################################################
