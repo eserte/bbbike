@@ -12115,6 +12115,7 @@ sub get_cache_identifier {
 }
 
 # Dialog zum Auswählen einer Straße oder eines Ortes.
+# Return toplevel widget.
 ### AutoLoad Sub
 sub choose_ort {
     my($linetype, $type, %args) = @_;
@@ -12693,6 +12694,7 @@ sub choose_ort {
 	}
     }
 
+    $lb->toplevel;
 }
 
 # Spezialisierung von choose_ort für Stadtstraßen
