@@ -2048,7 +2048,7 @@ Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 14558,10819 14352,10874
 #: next_check_id: DBWERKSTRASSE-2017
 #: XXX wann wird hier die letzte Deckschicht erstellt? vvv
-#: last_checked: 2018-03-04 vvv
+#: last_checked: 2018-03-07 vvv
 #: check_frequency: 14d vvv
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Asphalt, letzte Deckschicht fehlt	Q1 14352,10874 14231,10907 14141,10931 14076,10949
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Asphalt, letzte Deckschicht fehlt	Q1 14141,10931 14107,10911 14043,10928
@@ -3972,7 +3972,8 @@ Siedlung am Walde: unbefestigter Weg, holprig, sandig	Q3+ 31167,3563 31396,3471 
 Siedlung am Walde: unbefestigter Weg, holprig, sandig	Q3+ 31396,3471 31412,3503 31544,3617 31577,3698
 #: XXX nach den Bauarbeiten bessere Qualität?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170829
-#: next_check: 2017-11-30
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180307
+#: next_check: 2018-11-30
 Güttlander Str.: Beton mit Schäden	Q1 31695,3690 31651,3856 31608,4013
 Frankenbergstr.: Asphalt, teils wellig	Q1 31699,4090 31739,3942 31783,3851 31839,3774 31909,3703 31986,3646
 Lassallestr. (Wilhelmshagen): Asphalt	Q0- 31783,4162 31793,4072 31822,3982 31856,3903 31905,3839 31997,3753 32099,3705 32149,3688 32222,3680
@@ -4661,6 +4662,9 @@ Braunellensteig: unbefestigte Straße	Q2 18830,1497 18876,1594 18916,1626
 Mehldornpfad: Betonpflaster	Q0- 18941,1934 19016,1895 19051,1878
 Teichrohrweg: Betonpflaster	Q0- 19016,1895 18925,1681 18888,1658
 Am Alten Friedhof: Asphalt	Q0+ 19181,1996 19122,1839 19037,1630 18974,1559
+#: XXX evtl. Verbesserung der Fahrbahnqualität?
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180307
+#: next_check: 2018-05-15
 Pfarrwöhrde: Beton	Q1 19164,2001 19194,2157
 #: note: zumindest am Alten Schönefelder Weg
 Zum Alten Windmühlenberg: Asphalt	Q0 19653,1671 19279,1779

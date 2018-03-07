@@ -1889,6 +1889,8 @@ nicht passierbarer Mittelstreifens	3nocross::ignrte 2560,5044 2587,4965 2615,488
 Thielallee -> Hittorfstr.: nicht passierbarer Mittelstreifens	3::igndisp 2615,4885 2587,4965 2516,4936
 Hittorfstr. -> Thielallee: nicht passierbarer Mittelstreifens	3::igndisp 2516,4936 2587,4965 2560,5044
 Straßenbahntrasse	3nocross::ignrte 11451,13301 11399,13333 11308,13389 11276,13408
+Wadzeckstr. -> Mollstr.: Straßenbahntrasse	3::igndisp 11315,13210 11399,13333 11308,13389
+Mollstr. -> Wadzeckstr.: Straßenbahntrasse	3::igndisp 11451,13301 11399,13333 11315,13210
 Mollstr. -> Mendelssohnstr.: Straßenbahntrasse	3::igndisp 11276,13408 11308,13389 11346,13441
 Mendelssohnstr. -> Mollstr.: Straßenbahntrasse	3::igndisp 11346,13441 11308,13389 11399,13333
 Straßenbahntrasse	3nocross::ignrte 11706,13635 11652,13564 11561,13451 11539,13425 11486,13350 11451,13301
@@ -2916,7 +2918,6 @@ Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:inwork 18296,10027 1831
 Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:inwork 18301,9946 18266,9853
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
-(Wadzeckstr. - Mollstr.)	2::inwork 11315,13210 11399,13333
 Im Lichtenhain: neue Straße, zurzeit Bauarbeiten; Qualität, genaue Lage?	2::inwork 16497,10685 16462,10571
 Zufahrt Parkhaus: Abrissarbeiten, Straße komplett gesperrt	2::inwork 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
 Merlitzstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19661,3421 19524,3286
@@ -3539,7 +3540,6 @@ Altentreptower Str., linker Gehweg	1::igndisp 21401,12155 21310,12150 21294,1216
 Altentreptower Str., linker Gehweg	1::igndisp 21573,12140 21401,12155
 Wilhelmsruher Damm, linker Geh/Radweg bis zur Fußgängerampel	1::igndisp 5525,21022 5599,21025
 Frankfurter Allee, linker Gehweg bis zur Ampel	1::igndisp 15670,12022 15717,12010
-Otto-Braun-Str., linker Gehweg	1::igndisp 11451,13301 11354,13184
 Invalidenstr., linker Gehweg	1::igndisp 8332,13548 8183,13482
 Lichtenberger Brücke, linker Gehweg	1::igndisp 16978,11852 16818,11878
 Alexanderstr., linker Gehweg	1::igndisp 11353,12436 11329,12497
