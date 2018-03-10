@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2013,2014,2015,2016,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013,2014,2015,2016,2017,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ package FahrinfoQuery;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.23';
+$VERSION = '0.24';
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
@@ -68,13 +68,13 @@ my $bbbike_root = bbbike_root;
 #my $openvbb_2013_year = 2015;
 #my $openvbb_2013_bbd_file = "$bbbike_root/tmp/vbb_${openvbb_2013_year}_3.bbd";
 
-my $openvbb_2013_download_size = '58MB';
-my $openvbb_2013_data_url = 'http://www.vbb.de/de/download/GTFS_VBB_MitteNov_Dez2018.zip';
+my $openvbb_2013_download_size = '60MB';
+my $openvbb_2013_data_url = 'http://www.vbb.de/de/download/GTFS_VBB_Feb2018_MitteDez2018.zip';
 my $openvbb_2016_intermediate_zip_file = 'GTFS_VBB_Dez2016_Aug2017_mit_shapes-files.zip'; # rarely needed, probably a singular archiving problem
 my $openvbb_2013_archive_file = "$bbbike_root/tmp/" . basename($openvbb_2013_data_url);
 my $openvbb_2013_local_file = "$bbbike_root/tmp/" . basename($openvbb_2013_data_url, '.zip') . '_stops.txt';
-my $openvbb_2013_year = 2017;
-my $openvbb_2013_bbd_file = "$bbbike_root/tmp/vbb_${openvbb_2013_year}_3.bbd";
+my $openvbb_2013_year = 2018;
+my $openvbb_2013_bbd_file = "$bbbike_root/tmp/vbb_${openvbb_2013_year}_1.bbd";
 
 my $search_net;
 
