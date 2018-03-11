@@ -3856,18 +3856,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: note: verschlossen 2016-05-11 gegen 9 Uhr
-#: note: offen am 2016-06-16 gegen 9:30 Uhr
-#: note: offen am 2016-07-01 gegen 18:15 Uhr
-#: note: geschlossen am 2016-07-11 gegen 18:00 Uhr
-#: note: geschlossen am 2016-07-21 gegen 19:30 Uhr
-#: note: offen am 2016-09-21 gegen 18:15 Uhr
-#: note: offen am 2016-11-11 gegen 18:40 Uhr
-#: note: offen am 2016-11-22 gegen 18:30 Uhr
-#: note: offen am 2016-12-07 gegen 19:00 Uhr
-#: note: offen am 2016-12-12 gegen 09:45 Uhr
-#: note: verschlossen am 2018-01-14 (So) gegen 14:30 Uhr
-	2::temp 8362,13466 8369,13465 8377,13463
+         'data' => '# REMOVED --- #: note: verschlossen 2016-05-11 gegen 9 Uhr
+# REMOVED --- #: note: offen am 2016-06-16 gegen 9:30 Uhr
+# REMOVED --- #: note: offen am 2016-07-01 gegen 18:15 Uhr
+# REMOVED --- #: note: geschlossen am 2016-07-11 gegen 18:00 Uhr
+# REMOVED --- #: note: geschlossen am 2016-07-21 gegen 19:30 Uhr
+# REMOVED --- #: note: offen am 2016-09-21 gegen 18:15 Uhr
+# REMOVED --- #: note: offen am 2016-11-11 gegen 18:40 Uhr
+# REMOVED --- #: note: offen am 2016-11-22 gegen 18:30 Uhr
+# REMOVED --- #: note: offen am 2016-12-07 gegen 19:00 Uhr
+# REMOVED --- #: note: offen am 2016-12-12 gegen 09:45 Uhr
+# REMOVED --- #: note: verschlossen am 2018-01-14 (So) gegen 14:30 Uhr
+# REMOVED --- #: note: mittlerweile dauerhaft gesperrt
+# REMOVED --- 2::temp 8362,13466 8369,13465 8377,13463
 #: note: verschlossen am 2016-06-16 gegen 9:30 Uhr
 #: note: verschlossen am 2016-07-01 gegen 18:15 Uhr
 #: note: verschlossen am 2016-07-11 gegen 18:00 Uhr
@@ -3877,12 +3878,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: verschlossen am 2016-12-07 gegen 19:00 Uhr
 #: note: verschlossen am 2016-12-12 gegen 09:45 Uhr
 #: note: verschlossen am 2018-01-14 (So) gegen 14:30 Uhr
+#: XXX nochmal genauer prüfen: Mo bis Fr oder Sa? Stimmt auch 8-20 Uhr?
+#: priority: #A
 	2::temp 8371,13399 8363,13402 8356,13404
 ',
          'from' => undef,
          'id' => 2785,
          'recurring' => 1,
-         'text' => 'Alexanderufer - Charité: Tor kann verschlossen sein',
+         'text' => 'Alexanderufer - Charité: Tor ist nur montags bis freitags tagsüber (ca. 8-20 Uhr) offen',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -3942,7 +3945,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-03-05 vvv
+#: last_checked: 2018-03-10 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -4004,7 +4007,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober; laut Pressemitteilung bis Ende 2017
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
-#: last_checked: 2018-02-26 vvv
+#: last_checked: 2018-03-11 vvv
 # REMOVED (weitgehend fertig) ---	q3::inwork 13384,8354 13217,8493
 # REMOVED	q3::inwork; 13217,8493 13262,8554
 # REMOVED	q3::inwork; 13262,8554 13301,8606 13314,8624
@@ -4076,7 +4079,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-03-07
+#: last_checked: 2018-03-11
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -4177,13 +4180,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?bvgid=BVG131679 ("gültig bis: auf Weiteres")
+         'data' => '#: next_check_id: CARSTENN-2017
+#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?bvgid=BVG131679 ("gültig bis: auf Weiteres")
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=30361
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=29479
 #: by: mapillary (Gehweg für Radfahrer frei)
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2018-01-13 (mapillary)
-#: check_frequency: 60d
+#: last_checked: 2018-03-05 (mapillary)
+#: check_frequency: 30d
 	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
 ',
@@ -4197,18 +4201,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: osm_watch: way id="463642095" version="2"
-#: last_checked: 2017-08-19
-#: next_check: 2017-12-31
-	2::inwork 4117,22722 4176,22764
-',
-         'from' => undef,
-         'id' => 2902,
-         'text' => 'S-Bahn-Unterführung gesperrt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4249,13 +4242,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'id' => 2914,
          'recurring' => 1,
          'source_id' => 'http://www.zehlendorfer-wochenmarkt.de/',
-         'text' => 'Anhaltinerstr./Postplatz: Wochemarkt Samstag 9 bis 16 Uhr',
+         'text' => 'Teltower Damm/Postplatz: Wochenmarkt Samstag 9 bis 16 Uhr',
          'type' => 'handicap',
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2017-10-14
-#: check_frequency: 30d
+         'data' => '#: last_checked: 2018-03-11
+#: check_frequency: 60d
 	q3::inwork 186,2532 272,2548 638,2637
 ',
          'from' => undef,
@@ -4283,7 +4276,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-02-19 vvv
+#: last_checked: 2018-03-09 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4328,17 +4321,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: NORDHAFENPARKWEST-2018
-#: last_checked: 2018-01-14
-	2::inwork 7551,14464 7426,14539
-',
-         'from' => undef,
-         'id' => 2929,
-         'text' => 'Nordhafenpark West: Uferwege können wegen Bauarbeiten gesperrt sein',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: last_checked: 2018-02-28 vvv
 #: check_frequency: 14d vvv
@@ -4366,14 +4349,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: by: http://www.berliner-woche.de/zehlendorf/bauen/fertigstellung-der-berlepschstrasse-verzoegert-sich-um-ein-halbes-jahr-d137942.html (sogar "bis Ende März")
-	q4::inwork -468,1919 -343,1983 -285,2015 -228,2045
+	q4::inwork -468,1919 -343,1983 -285,2015 -226,2048
 ',
          'from' => 1518290143,
          'id' => 2932,
          'source_id' => '2147341799',
-         'text' => 'Berlepschstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte März 2018',
+         'text' => 'Berlepschstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende März 2018',
          'type' => 'handicap',
-         'until' => 1521111600
+         'until' => 1522317600
        }
      
 );

@@ -10,15 +10,6 @@ Neuer Garten, Radwegverbindung Gotisches Haus - Alleestr.: Fußgänger	q2 -12424,-
 Neuer Garten: Schiebestrecke	q4 -11615,853 -11510,810
 Neuer Garten: Fußgänger	q2 -11510,810 -11412,784 -11392,762
 Neuer Garten: Radfahren nicht erlaubt	q4 -12332,585 -12276,554 -12115,409
-Park Sanssouci: Radfahren nicht erlaubt	q4 -13728,-807 -13995,-826
-Park Sanssouci: Radfahren nicht erlaubt	q4 -14025,-829 -14021,-818 -14012,-813 -14001,-817 -13995,-826 -13998,-837 -14008,-843 -14019,-841 -14025,-829
-Park Sanssouci: Radfahren nicht erlaubt	q4 -14025,-829 -14163,-840
-Park Sanssouci: Radfahren nicht erlaubt	q4 -14163,-840 -14171,-824 -14191,-818 -14208,-827 -14212,-844 -14205,-860 -14186,-868 -14167,-856 -14163,-840
-Park Sanssouci: Radfahren nicht erlaubt	q4 -14212,-844 -14366,-858
-Park Sanssouci: Radfahren nicht erlaubt	q4 -14389,-859 -14385,-851 -14379,-848 -14369,-851 -14366,-858 -14369,-866 -14377,-870 -14386,-866 -14389,-859
-Park Sanssouci: Radfahren nicht erlaubt	q4 -14389,-859 -14910,-903 -15684,-966
-(Am Grünen Gitter - Schloss): Radfahren nicht erlaubt	q4 -14173,-1013 -14186,-868
-(Am Grünen Gitter - Schloss): Radfahren nicht erlaubt	q4 -14191,-818 -14199,-707 -14205,-644
 (Uferweg): Fußgänger	q1 -12200,1859 -12223,1911 -12330,1974 -12424,2034 -12462,2139 -12460,2288
 Am Waldessaum: Fußgänger, enger Weg	q2 -12825,1284 -12709,1106
 Heiliger See, Ostufer: Schiebestrecke	q4 -11650,590 -11603,721 -11615,853
@@ -119,7 +110,8 @@ Am Finowkanal: bei schönem Wetter reger Fußgänger- und Fahrradverkehr	q1 38162,4
 (Im Französischen Quartier): eng, Fußgänger	q2 -12601,-1108 -12670,-1120 -12657,-1183
 (Im Französischen Quartier): eng, Fußgänger, Bordstein	q3 -12657,-1183 -12741,-1197
 Am Alten Markt: Fußgänger	q2 -12747,-1336 -12727,-1416 -12694,-1408 -12685,-1449 -12677,-1536
-Am Alten Markt: Fußgänger	q2 -12624,-1598 -12619,-1549 -12677,-1536 -12719,-1542 -12790,-1560
+Am Alten Markt: Fußgänger	q2 -12624,-1598 -12619,-1549 -12677,-1536 -12719,-1542
+Am Alten Markt: Fußgänger, Bauarbeiten	q3 -12719,-1542 -12790,-1560
 Steubenplatz: Fußgänger	q2 -12749,-1668 -12719,-1542
 An der Wetzlarer Bahn (Potsdam): einige Fußgänger, kleine Engpässe (schmales geöffnetes Tor für Fußgänger, Brücke)	q2 -9306,-4259 -9642,-4916 -10015,-5551
 Reiherweg (Potsdam): Bordsteine	q4 -14706,301 -14737,300
@@ -166,6 +158,7 @@ Mauerweg: Fußgänger	q1 -9777,5489 -9733,5572 -9763,5555
 Osdorfer Str.: einige Fußgänger	q1 1550,-761 1589,-763
 (Patrizierweg - Steinstr.): einige Fußgänger	q1 -7178,-3027 -7115,-3034
 (Unterführung S-Bahnhof): Fußgänger	q3 25893,-6002 25902,-6006 25929,-5994 25928,-5990 25932,-5982
+(Luisenplatz - Straßenbahnhaltestelle): Fußgänger	q1 -13618,-1202 -13608,-1246
 Wollestr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -10717,-1227 -10984,-1574
 Am Böttcherberg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; -9565,62 -9541,97 -9539,147
 Lange Brücke: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -12493,-1896 -12567,-1817 -12653,-1723 -12733,-1703 -12758,-1689 -12794,-1652

@@ -700,6 +700,7 @@ Caseler Str.	1s 14732,16770 14700,16790 14608,16772
 Ottmachauer Steig	1 -519,4737 -496,4718 -435,4687 -369,4631 -354,4603 -319,4550 -283,4495 -274,4474 -277,4442
 Salemer Steig	1 -581,4662 -558,4639 -531,4599 -493,4529 -472,4476 -459,4422 -441,4354
 Radtkestr.	1 18,1928 -38,2152
+Thürstr.	1 23,2185 93,2014
 Karlstadter Str.	1 11492,18347 11579,18184 11602,18133 11655,18018
 Karlstadter Str.	1 11621,18011 11586,18126
 Gemündener Str.	1 11586,18126 11514,18101 11495,18129 11395,18274
@@ -834,6 +835,7 @@ Wilhelmstr. (Wilhelmstadt)	1::igndisp -4406,12468 -4300,12571
 (Messedamm - S-Bhf. Westkreuz)	1 2117,10495 2090,10576 2033,10613
 Halenseestr.	2::igndisp 2086,10552 1961,10646 1928,10728
 (Suermondtstr. - Konrad-Wolf-Str.)	1s 16842,15932 16799,15974 16719,16005 16753,16111
+Alexanderufer - Charité: Tor dauerhaft gesperrt	2 8362,13466 8369,13465 8377,13463
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -878,8 +880,9 @@ Humboldtstr. -> Mercure-Hotel: Straßenbahntrasse	3::igndisp -12646,-1702 -12653,
 Humboldtstr. -> Lange Brücke: Straßenbahntrasse	3::igndisp -12646,-1702 -12653,-1723 -12567,-1817
 Rudolf-Breitscheid-Str.	2 -11056,-1726 -11116,-1681
 Geschwister-Scholl-Str.	1 -14330,-1762 -14213,-1695 -14143,-1662 -14115,-1678
-Zimmerstr.	1 -13646,-1168 -13876,-1226
 Platz der Einheit	1 -12756,-1131 -12741,-1197 -12718,-1327
+Zimmerstr.	1 -14129,-1258 -13876,-1226
+Lennéstr.	1 -13876,-1263 -14149,-1264
 Puschkinallee	1 -13042,807 -12912,783 -12868,738 -12827,629 -12815,554 -12811,533
 Geschwister-Scholl-Str.	1 -14213,-1695 -14143,-1662 -14115,-1678
 Straßenbahntrasse	3nocross::ignrte -12790,-1560 -12808,-1488 -12833,-1365
@@ -908,6 +911,15 @@ Ahornallee [Privatstraße] (Mahlsdorf)	1 24637,9828 24527,9850 24513,9796
 Lange Brücke	1s -12493,-1896 -12567,-1817 -12653,-1723 -12733,-1703 -12758,-1689 -12794,-1652
 Heinrich-Mann-Allee	1s -12478,-1879 -12431,-2096
 (zur Nuthestr.): Kfz-Straße	2 -10917,-2439 -10604,-2567
+Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -13728,-807 -13995,-826
+Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14025,-829 -14021,-818 -14012,-813 -14001,-817 -13995,-826 -13998,-837 -14008,-843 -14019,-841 -14025,-829
+Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14025,-829 -14163,-840
+Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14163,-840 -14171,-824 -14191,-818 -14208,-827 -14212,-844 -14205,-860 -14186,-868 -14167,-856 -14163,-840
+Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14212,-844 -14366,-858
+Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-859 -14385,-851 -14379,-848 -14369,-851 -14366,-858 -14369,-866 -14377,-870 -14386,-866 -14389,-859
+Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-859 -14910,-903 -15684,-966
+(Am Grünen Gitter - Schloss): auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14173,-1013 -14186,-868
+(Am Grünen Gitter - Schloss): auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14191,-818 -14199,-707 -14205,-644
 Karower Weg (Lindenberg)	1s 17825,21931 17837,21917 17895,21854
 Zehlendorfer Str. (Teltow)	1 1329,-753 1388,-685
 Poststr. (Hennigsdorf)	1 -3495,25739 -3438,25572
@@ -1787,13 +1799,19 @@ Karl-Marx-Str. -> Saltykowstr.: unbequemes Überqueren wegen parkender Autos	3::i
 Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross::ignrte 11632,8302 11767,8330 11898,8362
 Flughafenstr. -> Weisestr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3::igndisp 11898,8362 11767,8330 11770,8292
 Weisestr. -> Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3::igndisp 11770,8292 11767,8330 11632,8302
-unpassierbarer Mittelstreifen	3nocross::ignrte 6183,13083 6164,12980 6157,12933 6150,12875
+unpassierbarer Mittelstreifen	3nocross::ignrte 6183,13083 6164,12980 6157,12933 6150,12875 6124,12694
 Stromstr. -> Bundesratufer: unpassierbarer Mittelstreifen	3::igndisp 6157,12933 6164,12980 6129,12976
 Stromstr. -> nördliches Spreeufer: unpassierbarer Mittelstreifen	3::igndisp 6183,13083 6164,12980 6190,12978
 Bundesratufer -> Stromstr.: unpassierbarer Mittelstreifen	3::igndisp 6129,12976 6164,12980 6183,13083
 Bundesratufer -> nördliches Spreeufer: unpassierbarer Mittelstreifen	3::igndisp 6129,12976 6164,12980 6190,12978
 nördliches Spreeufer -> Stromstr.: unpassierbarer Mittelstreifen	3::igndisp 6190,12978 6164,12980 6157,12933
 nördliches Spreeufer -> Bundesratufer: unpassierbarer Mittelstreifen	3::igndisp 6190,12978 6164,12980 6129,12976
+Lessingstr. -> südliches Spreeufer: unpassierbarer Mittelstreifen	3::igndisp 6124,12694 6150,12875 6138,12877
+Lessingstr. -> Lessingstr.: unpassierbarer Mittelstreifen	3::igndisp 6157,12933 6150,12875 6172,12878
+Lessingstr. -> Lessingstr.: unpassierbarer Mittelstreifen	3::igndisp 6172,12878 6150,12875 6124,12694
+Lessingstr. -> südliches Spreeufer: unpassierbarer Mittelstreifen	3::igndisp 6172,12878 6150,12875 6138,12877
+südliches Spreeufer -> Lessingstr.: unpassierbarer Mittelstreifen	3::igndisp 6138,12877 6150,12875 6157,12933
+südliches Spreeufer -> Lessingstr.: unpassierbarer Mittelstreifen	3::igndisp 6138,12877 6150,12875 6172,12878
 Linksabbiegen verboten	3nocross::ignrte 20120,16297 20232,16522 20323,16706
 Alfred-Döblin-Str. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20286,16494 20232,16522 20120,16297
 Märkische Allee -> Alfred-Döblin-Str.: Linksabbiegen verboten	3::igndisp 20323,16706 20232,16522 20286,16494
@@ -2236,6 +2254,7 @@ abgeschlossenes Tor	3 15313,15393 15835,15092 15867,15073
 abgeschlossenes Tor	3 15867,15073 15835,15092 15313,15393
 abgeschlossenes Tor	3 10014,1123 10000,1131 9906,1166
 abgeschlossenes Tor	3 9906,1166 10000,1131 10014,1123
+tragen (28 Stufen)	0:30:-260 6138,12877
 Tor, kann geschlossen sein	BNP:10:-180:trailer=15 20682,9834
 Tor, kann geschlossen sein	BNP:10:-180:trailer=15 20683,9558
 Tor	BNP:3:-8:trailer=10 20829,5418
@@ -2910,6 +2929,7 @@ Drängelgitter	BNP:3:0:trailer=10 3783,-2079
 Drängelgitter	BNP:3:50:trailer=10 21618,5699
 Drängelgitter	BNP:3:85:trailer=10 22070,5876
 Drängelgitter	BNP:3:78:trailer=10 22097,5879
+S-Bahn-Unterführung: zurzeit gesperrt, hier wird in Zukunft ein Steg verlaufen	2::inwork 4117,22722 4176,22764
 Zum Großen Herzberg (Potsdam-Golm): Straße wird noch gebaut	2::inwork -18017,333 -18026,357 -18049,424
 Wartenbergstr.	1s:inwork 15423,11667 15337,11639 15328,11636 15300,11584
 Anni-Frid-Weg: Baustelle, gesperrt	2::inwork 17262,15056 17317,15059 17345,15061
@@ -2943,7 +2963,8 @@ Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:inwork 13176,9302 13098,9205
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:inwork 8732,14098 8654,14194
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:inwork 8654,14194 8607,14253 8570,14299 8442,14456
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:inwork 9042,11839 8969,11814
-Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7636,14414 7612,14449 7551,14464
+Nordhafenpark West: noch Bauarbeiten, gesperrt	2::inwork 7551,14464 7426,14539
+Nordhafenpark West: unter der Brücke gesperrt	2::inwork 7636,14414 7612,14449 7551,14464
 Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,9200 12548,9167
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
@@ -3224,9 +3245,9 @@ tragen (5 Stufen)	0:20:-169 3829,13572
 Schranke	BNP:5:-180 3969,13405
 Tor (meist offen, sonst Fußgängerweg nehmen)	BNP:5:75 3822,14195
 Wiebestr.: Privatweg, verschlossenes Tor	2 4527,13244 4495,13107
-queren nur mit tragen möglich	3nocross::ignrte 3033,12509 3188,12524 3279,12533
-Spandauer Damm -> Nithackstr.: queren nur mit tragen möglich	3::igndisp 3279,12533 3188,12524 3204,12416
-Nithackstr. -> Spandauer Damm: queren nur mit tragen möglich	3::igndisp 3204,12416 3188,12524 3033,12509
+queren nur mit tragen möglich	3nocross::ignrte 3033,12509 3177,12522 3279,12533
+Spandauer Damm -> Nithackstr.: queren nur mit tragen möglich	3::igndisp 3279,12533 3177,12522 3191,12432
+Nithackstr. -> Spandauer Damm: queren nur mit tragen möglich	3::igndisp 3191,12432 3177,12522 3033,12509
 Bonhoefferufer	1 3216,12994 3154,12936 3193,12857 3327,12818
 tragen (16 Stufen)	0:40:-183 4124,12706
 tragen (16 Stufen)	0:40:-183 4128,12637

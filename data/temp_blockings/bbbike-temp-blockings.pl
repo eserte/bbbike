@@ -1643,7 +1643,7 @@ EOF
        text  => 'Ringstr. (Steglitz) Richtung Finkensteinallee zwischen Drakestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis 12.2005)',
        type  => 'handicap',
        data  => <<EOF,
-	q4; 3507,3654 3372,3557 3228,3455 3184,3427 3050,3333 3011,3303 2781,3122 2701,3064 2661,3021 2637,2973 2625,2850
+	q4; 3507,3654 3372,3557 3228,3455 3184,3427 3050,3333 3011,3303 2781,3122 2698,3068 2655,3025 2632,2969 2625,2850
 EOF
      },
      { from  => 1110917391, # 2005-03-15 21:09
@@ -2207,10 +2207,10 @@ EOF
        text  => '300 Jahre Charlottenburg, 17.06.2005 bis 19.06.2005',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 3072,12222 3060,12311 3050,12394 3033,12509
+	2 3072,12222 3060,12311 3048,12413 3033,12509
 	2 3072,12222 3091,12071
-	2 3033,12509 2785,12479 2744,12474 2715,12470 2641,12458
-	2 3033,12509 3188,12524 3279,12533
+	2 3033,12509 2795,12480 2744,12474 2715,12470 2641,12458
+	2 3033,12509 3177,12522 3279,12533
 	2 3103,11968 3091,12071
 	3 3355,12258 3217,12239 3072,12222 2899,12200 2895,12217
 	3 2895,12217 2899,12200 3072,12222 3217,12239 3355,12258
@@ -5326,7 +5326,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003129',
        data  => <<EOF,
-	1::inwork 2661,3021 2637,2973 2625,2850
+	1::inwork 2655,3025 2632,2969 2625,2850
 EOF
      },
      { from  => 1160591740, # 2006-10-11 20:35
@@ -8330,8 +8330,8 @@ EOF
        text  => 'L 040 Ragow-Dahlewitz OD Dahlewitz, Kno. Thälmannstr./ Dorfstr. Bau Kreisverkehr Vollsperrung 22.05.2007-31.08.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 13228,-9606 13576,-9738 13878,-9818
-	q4::inwork 13772,-10251 13576,-9738 13503,-9528
+	q4::inwork 13228,-9606 13560,-9733 13866,-9861
+	q4::inwork 13772,-10251 13560,-9733 13503,-9528
 EOF
      },
      { from  => 1152482400, # 2006-07-10 00:00
@@ -13129,7 +13129,7 @@ EOF
        text  => 'L 040 Thälmannstr. OD Dahlewitz, Höhe Rangsdorfer Weg Kanal- und Straßenbau Vollsperrung 05.11.2008-12.11.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 12805,-9035 13228,-9606 13576,-9738
+	q4::inwork 12805,-9035 13228,-9606 13560,-9733
 EOF
      },
      { from  => 1225666800, # 2008-11-03 00:00
@@ -21796,7 +21796,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2::temp 2411,12428 2641,12458
-	2::temp 3279,12533 3188,12524 3033,12509 2785,12479 2744,12474 2715,12470
+	2::temp 3279,12533 3177,12522 3033,12509 2795,12480 2744,12474 2715,12470
 EOF
      },
      { from  => 1371358800, # 2013-06-16 07:00
@@ -22573,7 +22573,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.potsdam.de/content/blauer-lichterglanz-der-potsdamer-innenstadt
 #: tempex: before(first_advent,mo) - YYYY1227
-	1::xmas -13556,-1182 -13643,-1220
+	1::xmas -13556,-1182 -13618,-1202 -13626,-1205
 EOF
      },
      { from  => undef, # 1385766000, # 2013-11-30 00:00
@@ -25228,23 +25228,24 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # 1484934475, # -> ein Tor ist nach gesperrt-orig gewandert, das andere scheint jetzt immer offen zu sein
-       text  => 'Alexanderufer - Charité: Tor kann verschlossen sein',
+       until => undef, # 1484934475, # -> ein Tor ist nach gesperrt-orig gewandert, das andere ist werktags offen
+       text  => 'Alexanderufer - Charité: Tor ist nur montags bis freitags tagsüber (ca. 8-20 Uhr) offen',
        recurring => 1,
        type  => 'gesperrt',
        data  => <<EOF,
-#: note: verschlossen 2016-05-11 gegen 9 Uhr
-#: note: offen am 2016-06-16 gegen 9:30 Uhr
-#: note: offen am 2016-07-01 gegen 18:15 Uhr
-#: note: geschlossen am 2016-07-11 gegen 18:00 Uhr
-#: note: geschlossen am 2016-07-21 gegen 19:30 Uhr
-#: note: offen am 2016-09-21 gegen 18:15 Uhr
-#: note: offen am 2016-11-11 gegen 18:40 Uhr
-#: note: offen am 2016-11-22 gegen 18:30 Uhr
-#: note: offen am 2016-12-07 gegen 19:00 Uhr
-#: note: offen am 2016-12-12 gegen 09:45 Uhr
-#: note: verschlossen am 2018-01-14 (So) gegen 14:30 Uhr
-	2::temp 8362,13466 8369,13465 8377,13463
+# REMOVED --- #: note: verschlossen 2016-05-11 gegen 9 Uhr
+# REMOVED --- #: note: offen am 2016-06-16 gegen 9:30 Uhr
+# REMOVED --- #: note: offen am 2016-07-01 gegen 18:15 Uhr
+# REMOVED --- #: note: geschlossen am 2016-07-11 gegen 18:00 Uhr
+# REMOVED --- #: note: geschlossen am 2016-07-21 gegen 19:30 Uhr
+# REMOVED --- #: note: offen am 2016-09-21 gegen 18:15 Uhr
+# REMOVED --- #: note: offen am 2016-11-11 gegen 18:40 Uhr
+# REMOVED --- #: note: offen am 2016-11-22 gegen 18:30 Uhr
+# REMOVED --- #: note: offen am 2016-12-07 gegen 19:00 Uhr
+# REMOVED --- #: note: offen am 2016-12-12 gegen 09:45 Uhr
+# REMOVED --- #: note: verschlossen am 2018-01-14 (So) gegen 14:30 Uhr
+# REMOVED --- #: note: mittlerweile dauerhaft gesperrt
+# REMOVED --- 2::temp 8362,13466 8369,13465 8377,13463
 #: note: verschlossen am 2016-06-16 gegen 9:30 Uhr
 #: note: verschlossen am 2016-07-01 gegen 18:15 Uhr
 #: note: verschlossen am 2016-07-11 gegen 18:00 Uhr
@@ -25254,6 +25255,8 @@ EOF
 #: note: verschlossen am 2016-12-07 gegen 19:00 Uhr
 #: note: verschlossen am 2016-12-12 gegen 09:45 Uhr
 #: note: verschlossen am 2018-01-14 (So) gegen 14:30 Uhr
+#: XXX nochmal genauer prüfen: Mo bis Fr oder Sa? Stimmt auch 8-20 Uhr?
+#: priority: #A
 	2::temp 8371,13399 8363,13402 8356,13404
 EOF
      },
@@ -25662,7 +25665,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-03-05 vvv
+#: last_checked: 2018-03-10 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -25998,7 +26001,7 @@ EOF
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober; laut Pressemitteilung bis Ende 2017
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
-#: last_checked: 2018-02-26 vvv
+#: last_checked: 2018-03-11 vvv
 # REMOVED (weitgehend fertig) ---	q3::inwork 13384,8354 13217,8493
 # REMOVED	q3::inwork; 13217,8493 13262,8554
 # REMOVED	q3::inwork; 13262,8554 13301,8606 13314,8624
@@ -26161,7 +26164,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-03-07
+#: last_checked: 2018-03-11
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -26196,7 +26199,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_27_3021_3144_online.pdf',
        data  => <<EOF,
-	2::temp 7215,12295 7031,12320 7040,12366 7051,12426 7077,12575
+	2::temp 7215,12295 7031,12320 7051,12426 7077,12575
 	2::temp 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 6787,12099 6831,12150 7001,12274 7031,12320 7383,12095
 	2::temp 6694,12627 7031,12320
 	3 7183,12372 7122,12384 7051,12426 6859,12567 6808,12604
@@ -26452,13 +26455,14 @@ EOF
        text  => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Richtung Norden ist der Gehweg für Radfahrer frei; Baseler Str. offen Richtung Norden), Ende unbekannt',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: CARSTENN-2017
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?bvgid=BVG131679 ("gültig bis: auf Weiteres")
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=30361
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=29479
 #: by: mapillary (Gehweg für Radfahrer frei)
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2018-01-13 (mapillary)
-#: check_frequency: 60d
+#: last_checked: 2018-03-05 (mapillary)
+#: check_frequency: 30d
 	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
 EOF
@@ -26499,13 +26503,10 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1520542403, # -> jetzt in gesperrt_orig --- undef, # XXX
        text  => 'S-Bahn-Unterführung gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: osm_watch: way id="463642095" version="2"
-#: last_checked: 2017-08-19
-#: next_check: 2017-12-31
 	2::inwork 4117,22722 4176,22764
 EOF
      },
@@ -26650,7 +26651,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Anhaltinerstr./Postplatz: Wochemarkt Samstag 9 bis 16 Uhr',
+       text  => 'Teltower Damm/Postplatz: Wochenmarkt Samstag 9 bis 16 Uhr',
        recurring => 1,
        type  => 'handicap',
        source_id => 'http://www.zehlendorfer-wochenmarkt.de/',
@@ -26666,8 +26667,8 @@ EOF
        text  => 'Anhaltinerstr.: mögliche Beeinträchtigungen durch Bauarbeiten',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2017-10-14
-#: check_frequency: 30d
+#: last_checked: 2018-03-11
+#: check_frequency: 60d
 	q3::inwork 186,2532 272,2548 638,2637
 EOF
      },
@@ -26742,7 +26743,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-02-19 vvv
+#: last_checked: 2018-03-09 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -26816,12 +26817,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1520622239, # -> gesperrt_orig --- undef, # XXX
        text  => 'Nordhafenpark West: Uferwege können wegen Bauarbeiten gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: NORDHAFENPARKWEST-2018
-#: last_checked: 2018-01-14
+# REMOVED --- #: next_check_id: NORDHAFENPARKWEST-2018
+# REMOVED --- #: last_checked: 2018-01-14
 	2::inwork 7551,14464 7426,14539
 EOF
      },
@@ -26849,13 +26850,13 @@ EOF
 EOF
      },
      { from  => 1518290143, # 2018-02-10 20:15
-       until => $isodate2epoch->("2018-03-15 12:00:00"), # 1522533599, # 2018-03-31 23:59
-       text  => 'Berlepschstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte März 2018',
+       until => $isodate2epoch->("2018-03-29 12:00:00"), # genaues Ende laut fritz
+       text  => 'Berlepschstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende März 2018',
        type  => 'handicap',
        source_id => '2147341799',
        data  => <<EOF,
 #: by: http://www.berliner-woche.de/zehlendorf/bauen/fertigstellung-der-berlepschstrasse-verzoegert-sich-um-ein-halbes-jahr-d137942.html (sogar "bis Ende März")
-	q4::inwork -468,1919 -343,1983 -285,2015 -228,2045
+	q4::inwork -468,1919 -343,1983 -285,2015 -226,2048
 EOF
      },
      { from  => 1518462294, # 2018-02-12 20:04

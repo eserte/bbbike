@@ -223,7 +223,7 @@ Caputh: kurzes Stück mit Kopfsteinpflaster, OK	Q1 -16562,-6825 -16812,-7010
 Ferch: gutes Kopfsteinpflaster	Q0 -20816,-10818 -21019,-10850 -21381,-11049
 Ferch: schlechtes Kopfsteinpflaster, teilweise Ränder asphaltiert	Q3 -22222,-10968 -22072,-11138 -21915,-11303 -21641,-11281 -21381,-11049
 Neue Scheune: Kopfsteinpflaster, Seitenstreifen asphaltiert	Q1 -21590,-9622 -21584,-10290 -22032,-10520
-Maulbeerallee: Kopfsteinpflaster, OK	Q1 -15264,-612 -14659,-678
+Maulbeerallee: Kopfsteinpflaster, OK	Q1 -15264,-612 -15166,-622 -14659,-678
 Im Grund: Kopfsteinpflaster	Q2 27185,12690 27432,12680 27589,12699 27684,12765
 Birkensteiner Str.: Kopfsteinpflaster	Q2 27684,12765 27849,12761 27974,12707 28193,12740 28595,12846
 Mühlenstr.: nicht befestigt	Q2 38369,15231 38300,15320
@@ -1257,8 +1257,8 @@ Fahrbahn asphaltiert, Radwege auf Gehweg	Q1 27605,-17999 27416,-17969 26832,-178
 Fahrbahn asphaltiert, Radwege auf Gehweg	Q1 26639,-17861 26439,-17829
 	Q0 26439,-17829 26204,-17794
 	Q0 22193,-17646 21886,-17280 21825,-17135 21704,-17017 21470,-16954 20804,-16471 20361,-16197 20161,-16153 19877,-16212 19835,-16307
-	Q0 19116,-11575 18330,-11054 17687,-10765 17554,-10669 17474,-10614 17053,-10621 16500,-10734 16059,-10500 15053,-10171 13878,-9818 13576,-9738
-	Q0 13902,-10591 13772,-10251 13576,-9738 13503,-9528 13151,-9139
+	Q0 19116,-11575 18330,-11054 17687,-10765 17554,-10669 17474,-10614 17053,-10621 16500,-10734 16059,-10500 15053,-10171 14132,-9883 13866,-9861 13560,-9733
+	Q0 13902,-10591 13772,-10251 13560,-9733 13503,-9528 13151,-9139
 	Q0 13151,-9139 12805,-9035 12198,-8833 11875,-8728 11791,-8700 11555,-8625 11247,-8513 11115,-8466 10115,-8276 9828,-8106 9170,-7708 7981,-7165 7558,-7093 7356,-6995 6432,-6715 5654,-6424 4546,-5868 4192,-5911
 	Q0 7356,-6995 7513,-5721 7924,-4240
 	Q0 4190,-5956 3653,-6050
@@ -1646,7 +1646,8 @@ Wendemark - Zehdenick: Waldweg unterschiedlicher Qualität, teils mit Matsch, tei
 Kleinow: Betonplatten	Q1 50781,96778 50828,96893
 Kleinow: schlechtes Kopfsteinpflaster	Q3 50828,96893 50875,97118
 Kleinow: Asphalt	Q0 50875,97118 50846,97187
-Zimmerstr. (Potsdam): Kopfsteinpflaster	Q2 -14149,-1264 -14129,-1258 -13876,-1226 -13646,-1168
+Zimmerstr. (Potsdam): Kopfsteinpflaster, teilweise mit Asphalt	Q2 -14149,-1264 -14129,-1258 -13876,-1226
+Zimmerstr. (Potsdam): Asphalt	Q0 -13876,-1226 -13637,-1164
 Köhlerplatz (Potsdam): Kopfsteinpflaster	Q2 -13876,-1226 -13876,-1263
 Kastanienallee (Potsdam): Kopfsteinpflaster, Tram auf Fahrbahn	Q2 -14919,-1817 -14903,-1970 -14886,-2098 -14868,-2244 -14859,-2384
 bei Zechow: Asphalt	Q0 -26350,70262 -24687,71412 -24162,71612
@@ -1876,7 +1877,7 @@ Lichterfeld - Finsterwalde: Asphalt	Q0 37906,-89609 37820,-89570 37574,-89532 37
 (Am Neuen Palais, direkter Weg): asphaltiert	Q0 -15810,-1274 -15820,-1146 -15854,-656
 Yorckstr.: asphaltiert	Q0 -12839,-1342 -13001,-1329 -13089,-1313 -13206,-1294
 Yorckstr.: asphaltiert	Q0 -13208,-1315 -13001,-1349 -12976,-1356 -12833,-1365
-Luisenplatz: Kopfsteinpflaster, OK	Q1 -13643,-1220 -13646,-1168 -13646,-1115 -13560,-1106
+Luisenplatz: Kopfsteinpflaster, OK	Q1 -13626,-1205 -13637,-1164 -13646,-1115 -13560,-1106
 Käthe-Kollwitz-Str.: asphaltiert	Q0 -48,-30 -345,7 -554,3 -645,-25 -749,-74
 Ernst-Thälmann-Str.: gutes Kopfsteinpflaster	Q1 -1709,653 -1831,641
 Ernst-Thälmann-Str.: mäßiger Beton	Q1 -1831,641 -2387,548
@@ -2007,6 +2008,8 @@ Schwertfegerstr.: teils schlechtes Kopfsteinpflaster	Q3 -12808,-1488 -12870,-149
 Am Neuen Markt: mäßiges bis schlechtes Kopfsteinpflaster	Q2 -12882,-1565 -12870,-1493
 Am Neuen Markt: teils schlechtes Kopfsteinpflaster	Q3 -12870,-1493 -12865,-1462 -12913,-1451
 Siefertstr.: teils schlechtes Kopfsteinpflaster	Q3 -12913,-1451 -12975,-1363 -12976,-1356
+(Maulbeerallee - Drachenhaus): Asphalt	Q1 -15166,-622 -15270,-409
+(Maulbeerallee - Drachenhaus): schlechtes Kopfsteinpflaster	Q3 -15270,-409 -15293,-404 -15330,-414
 Trautmannstr. (Köthen): schlechtes Kopfsteinpflaster	Q3 -85679,-75213 -85747,-75042
 Trautmannstr. (Köthen): Asphalt	Q0 -85747,-75042 -85798,-74927 -85847,-74803
 Brunnenstr. (Köthen): Asphalt	Q0 -85635,-75173 -85519,-75117 -85386,-75079 -85278,-75071
@@ -3685,6 +3688,15 @@ Krumme Str. (Potsdam-Eiche): Verbundsteinpflaster	Q1 -17319,-344 -17313,-310 -17
 Am Langen Berg (Potsdam-Eiche): Verbundsteinpflaster	Q1 -17410,-202 -17373,-214 -17257,-252 -17087,-302
 Thujaweg (Potsdam-Eiche): Verbundsteinpflaster	Q1 -17395,-154 -17454,-131
 Am Alten Mörtelwerk (Potsdam-Eiche): Asphalt	Q0 -17127,-554 -17141,-496 -17186,-451 -17211,-356 -17257,-252
+Park Sanssouci: wassergebundene Decke	Q1 -13728,-807 -13995,-826
+Park Sanssouci: wassergebundene Decke	Q1 -14025,-829 -14021,-818 -14012,-813 -14001,-817 -13995,-826 -13998,-837 -14008,-843 -14019,-841 -14025,-829
+Park Sanssouci: wassergebundene Decke	Q1 -14025,-829 -14163,-840
+Park Sanssouci: wassergebundene Decke	Q1 -14163,-840 -14171,-824 -14191,-818 -14208,-827 -14212,-844 -14205,-860 -14186,-868 -14167,-856 -14163,-840
+Park Sanssouci: wassergebundene Decke	Q1 -14212,-844 -14366,-858
+Park Sanssouci: wassergebundene Decke	Q1 -14389,-859 -14385,-851 -14379,-848 -14369,-851 -14366,-858 -14369,-866 -14377,-870 -14386,-866 -14389,-859
+Park Sanssouci: wassergebundene Decke	Q1 -14389,-859 -14910,-903 -15684,-966
+(Am Grünen Gitter - Schloss): wassergebundene Decke	Q1 -14173,-1013 -14186,-868
+(Am Grünen Gitter - Schloss): wassergebundene Decke	Q1 -14191,-818 -14199,-707 -14205,-644
 Am Lückefeld (Mahlow): guter Asphalt	Q0 13256,-4919 13049,-4788 12977,-4783 12841,-4989 12680,-5230 12782,-5284 12837,-5273 13194,-5021 13256,-4919
 Kopfsteinpflaster	Q2 15157,61424 14833,61726 14920,62175 14941,62754 14768,63163 14594,63506 14618,64317 14400,64920 14312,65950 14312,66412
 Kopfsteinpflaster	Q2 13386,66797 13458,67551 13676,68144

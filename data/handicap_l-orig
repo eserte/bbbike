@@ -25,15 +25,6 @@ Neuer Garten: Schiebestrecke	q4 -11615,853 -11510,810
 #: note: Seit 1. Januar 2008 keine Schiebestrecke mehr:
 Neuer Garten: Fuﬂg‰nger	q2 -11510,810 -11412,784 -11392,762
 Neuer Garten: Radfahren nicht erlaubt	q4 -12332,585 -12276,554 -12115,409
-Park Sanssouci: Radfahren nicht erlaubt	q4 -13728,-807 -13995,-826
-Park Sanssouci: Radfahren nicht erlaubt	q4 -14025,-829 -14021,-818 -14012,-813 -14001,-817 -13995,-826 -13998,-837 -14008,-843 -14019,-841 -14025,-829
-Park Sanssouci: Radfahren nicht erlaubt	q4 -14025,-829 -14163,-840
-Park Sanssouci: Radfahren nicht erlaubt	q4 -14163,-840 -14171,-824 -14191,-818 -14208,-827 -14212,-844 -14205,-860 -14186,-868 -14167,-856 -14163,-840
-Park Sanssouci: Radfahren nicht erlaubt	q4 -14212,-844 -14366,-858
-Park Sanssouci: Radfahren nicht erlaubt	q4 -14389,-859 -14385,-851 -14379,-848 -14369,-851 -14366,-858 -14369,-866 -14377,-870 -14386,-866 -14389,-859
-Park Sanssouci: Radfahren nicht erlaubt	q4 -14389,-859 -14910,-903 -15684,-966
-(Am Gr¸nen Gitter - Schloss): Radfahren nicht erlaubt	q4 -14173,-1013 -14186,-868
-(Am Gr¸nen Gitter - Schloss): Radfahren nicht erlaubt	q4 -14191,-818 -14199,-707 -14205,-644
 (Uferweg): Fuﬂg‰nger	q1 -12200,1859 -12223,1911 -12330,1974 -12424,2034 -12462,2139 -12460,2288
 Am Waldessaum: Fuﬂg‰nger, enger Weg	q2 -12825,1284 -12709,1106
 Heiliger See, Ostufer: Schiebestrecke	q4 -11650,590 -11603,721 -11615,853
@@ -159,7 +150,12 @@ Am Finowkanal: bei schˆnem Wetter reger Fuﬂg‰nger- und Fahrradverkehr	q1 38162,4
 #: XXX_prog BS (ansonsten q2-)
 (Im Franzˆsischen Quartier): eng, Fuﬂg‰nger, Bordstein	q3 -12657,-1183 -12741,-1197
 Am Alten Markt: Fuﬂg‰nger	q2 -12747,-1336 -12727,-1416 -12694,-1408 -12685,-1449 -12677,-1536
-Am Alten Markt: Fuﬂg‰nger	q2 -12624,-1598 -12619,-1549 -12677,-1536 -12719,-1542 -12790,-1560
+Am Alten Markt: Fuﬂg‰nger	q2 -12624,-1598 -12619,-1549 -12677,-1536 -12719,-1542
+#: next_check_id: AMALTENMARKT-2018
+#: XXX vor den Bauarbeiten: q2
+#: last_checked: 2018-03-10
+#: check_frequency: 180d
+Am Alten Markt: Fuﬂg‰nger, Bauarbeiten	q3 -12719,-1542 -12790,-1560
 Steubenplatz: Fuﬂg‰nger	q2 -12749,-1668 -12719,-1542
 # 
 #: by: Maren (...nowy)
@@ -223,3 +219,4 @@ Mauerweg: Fuﬂg‰nger	q1 -9777,5489 -9733,5572 -9763,5555
 Osdorfer Str.: einige Fuﬂg‰nger	q1 1550,-761 1589,-763
 (Patrizierweg - Steinstr.): einige Fuﬂg‰nger	q1 -7178,-3027 -7115,-3034
 (Unterf¸hrung S-Bahnhof): Fuﬂg‰nger	q3 25893,-6002 25902,-6006 25929,-5994 25928,-5990 25932,-5982
+(Luisenplatz - Straﬂenbahnhaltestelle): Fuﬂg‰nger	q1- -13618,-1202 -13608,-1246
