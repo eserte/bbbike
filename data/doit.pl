@@ -216,6 +216,10 @@ sub action_old_bbbike_data {
 	return 0 if $_[0] eq 'future';
 	return $_[0] < $_[1];
     };
+    my $bbbike_ver_ge_than = sub {
+	return 1 if $_[0] eq 'future';
+	return $_[0] >= $_[1];
+    };
 
     tie my %rules, 'Tie::IxHash',
 	(
@@ -239,6 +243,26 @@ sub action_old_bbbike_data {
 		  if (!$changes) {
 		      $d->touch($dest_file); # so it's not rebuilt every time
 		  }
+		  $changes;
+	      } else {
+		  0;
+	      }
+	  },
+	 },
+
+	 'with-tendencies' =>
+	 {
+	  bbbikever => sub { $bbbike_ver_ge_than->($_[0], 3.19) },
+	  files     => qr{^(handicap|qualitaet)_(s|l)$},
+	  action    => sub {
+	      my($src_file, $dest_file) = @_;
+	      action_files_with_tendencies($d);
+	      $src_file = "$persistenttmpdir/" . basename($src_file);
+	      if (_need_rebuild $dest_file, $src_file, $0) {
+		  _make_writable($d, $dest_file);
+		  my $changes = $d->copy($src_file, $dest_file);
+		  $d->touch($dest_file);
+		  _make_readonly($d, $dest_file);
 		  $changes;
 	      } else {
 		  0;
@@ -292,7 +316,7 @@ sub action_old_bbbike_data {
 				  for (@new_modified) {
 				      $ofh->print("$_\n");
 				  }
-			      });
+			      }, check_change => 1);
     }
 }
 
