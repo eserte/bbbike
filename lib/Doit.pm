@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,17 +16,23 @@ use strict;
 use warnings;
 
 {
+    package Doit;
+    our $VERSION = '0.025_53';
+
+    use constant IS_WIN => $^O eq 'MSWin32';
+}
+
+{
     package Doit::Log;
 
     sub _use_coloring {
 	no warnings 'redefine';
 	*colored_error = sub ($) { Term::ANSIColor::colored($_[0], 'red on_black')};
 	*colored_info  = sub ($) { Term::ANSIColor::colored($_[0], 'green on_black')};
-	*colored_note  = sub ($) { Term::ANSIColor::colored($_[0], 'yellow on_black')};
     }
     sub _no_coloring {
 	no warnings 'redefine';
-	*colored_error = *colored_info = *colored_note = sub ($) { $_[0] };
+	*colored_error = *colored_info = sub ($) { $_[0] };
     }
     {
 	my $can_coloring;
@@ -36,7 +42,7 @@ use warnings;
 	    # XXX Probably should also check if the terminal is ANSI-capable at all
 	    # XXX Probably should not use coloring on non-terminals (but
 	    #     there could be a --color option like in git to force it)
-	    $can_coloring = $^O ne 'MSWin32' && eval { require Term::ANSIColor; 1 } ? 1 : 0;
+	    $can_coloring = !Doit::IS_WIN && eval { require Term::ANSIColor; 1 } ? 1 : 0;
 	}
     }
 
@@ -49,14 +55,13 @@ use warnings;
     }
 
     use Exporter 'import';
-    our @EXPORT; BEGIN { @EXPORT = qw(info note warning error) }
+    our @EXPORT; BEGIN { @EXPORT = qw(info warning error) }
 
     BEGIN { $INC{'Doit/Log.pm'} = __FILE__ } # XXX hack
 
     my $current_label = '';
 
     sub info ($)    { print STDERR colored_info("INFO$current_label:"), " ", $_[0], "\n" }
-    sub note ($)    { print STDERR colored_note("NOTE$current_label:"), " ", $_[0], "\n" }
     sub warning ($) { print STDERR colored_error("WARN$current_label:"), " ", $_[0], "\n" }
     sub error ($)   { require Carp; Carp::croak(colored_error("ERROR$current_label:"), " ", $_[0]) }
 
@@ -157,7 +162,7 @@ use warnings;
 {
     package Doit::Util;
     use Exporter 'import';
-    our @EXPORT; BEGIN { @EXPORT = qw(in_directory new_scope_cleanup) }
+    our @EXPORT; BEGIN { @EXPORT = qw(in_directory new_scope_cleanup copy_stat get_sudo_cmd) }
     $INC{'Doit/Util.pm'} = __FILE__; # XXX hack
     use Doit::Log;
 
@@ -174,7 +179,7 @@ use warnings;
 	if (defined $dir) {
 	    require Cwd;
 	    my $pwd = Cwd::getcwd();
-	    if (!defined $pwd) {
+	    if (!defined $pwd || $pwd eq '') { # XS variant returns undef, PP variant returns '' --- see https://rt.perl.org/Ticket/Display.html?id=132648
 		warning "No known current working directory";
 	    } else {
 		$scope_cleanup = new_scope_cleanup
@@ -187,6 +192,47 @@ use warnings;
 	}
 	$code->();
     }
+
+    # $src may be a source file or an arrayref with stat information
+    sub copy_stat ($$;@) {
+	my($src, $dest, %preserve) = @_;
+	my @stat = ref $src eq 'ARRAY' ? @$src : stat($src);
+	error "Can't stat $src: $!" if !@stat;
+
+	my $preserve_default   = !%preserve;
+	my $preserve_ownership = exists $preserve{ownership} ? delete $preserve{ownership} : $preserve_default;
+	my $preserve_mode      = exists $preserve{mode}      ? delete $preserve{mode}      : $preserve_default;
+	my $preserve_time      = exists $preserve{time}      ? delete $preserve{time}      : $preserve_default;
+
+	error "Unhandled preserve values: " . join(" ", %preserve) if %preserve;
+
+	if ($preserve_mode) {
+	    chmod $stat[2], $dest
+		or warning "Can't chmod $dest to " . sprintf("0%o", $stat[2]) . ": $!";
+	}
+	if ($preserve_ownership) {
+	    chown $stat[4], $stat[5], $dest
+		or do {
+		    my $save_err = $!; # otherwise it's lost in the get... calls
+		    warning "Can't chown $dest to " .
+			(getpwuid($stat[4]))[0] . "/" .
+			(getgrgid($stat[5]))[0] . ": $save_err";
+		};
+	}
+	if ($preserve_time) {
+	    utime $stat[8], $stat[9], $dest
+		or warning "Can't utime $dest to " .
+		scalar(localtime $stat[8]) . "/" .
+		scalar(localtime $stat[9]) .
+		": $!";
+	}
+    }
+
+    sub get_sudo_cmd () {
+	return () if $> == 0;
+	return ('sudo');
+    }
+
 }
 
 {
@@ -275,8 +321,6 @@ use warnings;
 {
     package Doit;
 
-    our $VERSION = '0.01';
-
     sub import {
 	warnings->import;
 	strict->import;
@@ -294,20 +338,28 @@ use warnings;
     sub _new {
 	my $class = shift;
 	my $self = bless { }, $class;
-	# XXX hmmm, creating now self-refential data structures ...
-	$self->{runner}    = Doit::Runner->new($self);
-	$self->{dryrunner} = Doit::Runner->new($self, 1);
 	$self;
     }
-    sub runner    { shift->{runner} }
-    sub dryrunner { shift->{dryrunner} }
+    sub runner {
+	my($self) = @_;
+	# XXX hmmm, creating now self-refential data structures ...
+	$self->{runner} ||= Doit::Runner->new($self);
+    }
+	    
+    sub dryrunner {
+	my($self) = @_;
+	# XXX hmmm, creating now self-refential data structures ...
+	$self->{dryrunner} ||= Doit::Runner->new($self, dryrun => 1);
+    }
 
     sub init {
 	my($class) = @_;
 	require Getopt::Long;
-	Getopt::Long::Configure('pass_through');
-	Getopt::Long::GetOptions('dry-run|n' => \my $dry_run);
-	Getopt::Long::Configure('no_pass_through'); # XXX or restore old value?
+	my $getopt = Getopt::Long::Parser->new;
+	$getopt->configure(qw(pass_through noauto_abbrev));
+	$getopt->getoptions(
+			    'dry-run|n' => \my $dry_run,
+			   );
 	my $doit = $class->_new;
 	if ($dry_run) {
 	    $doit->dryrunner;
@@ -337,29 +389,12 @@ use warnings;
 	*{"cmd_$name"} = $cmd;
     }
 
-    sub _copy_stat {
-	my($src, $dest) = @_;
-	my @stat = ref $src eq 'ARRAY' ? @$src : stat($src);
-	die "Can't stat $src: $!" if !@stat;
-
-	chmod $stat[2], $dest
-	    or warn "Can't chmod $dest to " . sprintf("0%o", $stat[2]) . ": $!";
-	chown $stat[4], $stat[5], $dest
-	    or do {
-		my $save_err = $!; # otherwise it's lost in the get... calls
-		warn "Can't chown $dest to " .
-		    (getpwuid($stat[4]))[0] . "/" .
-		    (getgrgid($stat[5]))[0] . ": $save_err";
-	    };
-	utime $stat[8], $stat[9], $dest
-	    or warn "Can't utime $dest to " .
-	    scalar(localtime $stat[8]) . "/" .
-	    scalar(localtime $stat[9]) .
-	    ": $!";
-    }
-
     sub cmd_chmod {
-	my($self, $mode, @files) = @_;
+	my($self, @args) = @_;
+	my %options; if (@args && ref $args[0] eq 'HASH') { %options = %{ shift @args } }
+	my $quiet = delete $options{quiet};
+	error "Unhandled options: " . join(" ", %options) if %options;
+	my($mode, @files) = @args;
 	my @files_to_change;
 	for my $file (@files) {
 	    my @s = stat($file);
@@ -367,20 +402,39 @@ use warnings;
 		if (($s[2] & 07777) != $mode) {
 		    push @files_to_change, $file;
 		}
+	    } else {
+		push @files_to_change, $file;
 	    }
 	}
-	my @commands;
 	if (@files_to_change) {
-	    push @commands, {
-			     code => sub { chmod $mode, @files_to_change or die $! },
-			     msg  => sprintf "chmod 0%o %s", $mode, join(" ", @files_to_change), # shellquote?
+	    my @commands =  {
+			     code => sub {
+				 my $changed_files = chmod $mode, @files_to_change;
+				 if ($changed_files != @files_to_change) {
+				     if (@files_to_change == 1) {
+					 error "chmod failed: $!";
+				     } elsif ($changed_files == 0) {
+					 error "chmod failed on all files: $!";
+				     } else {
+					 error "chmod failed on some files (" . (@files_to_change-$changed_files) . "/" . scalar(@files_to_change) . "): $!";
+				     }
+				 }
+			     },
+			     ($quiet ? () : (msg => sprintf("chmod 0%o %s", $mode, join(" ", @files_to_change)))), # shellquote?
+			     rv   => scalar @files_to_change,
 			    };
+	    Doit::Commands->new(@commands);
+	} else {
+	    Doit::Commands->return_zero;
 	}
-	Doit::Commands->new(@commands);
     }
 
     sub cmd_chown {
-	my($self, $uid, $gid, @files) = @_;
+	my($self, @args) = @_;
+	my %options; if (@args && ref $args[0] eq 'HASH') { %options = %{ shift @args } }
+	my $quiet = delete $options{quiet};
+	error "Unhandled options: " . join(" ", %options) if %options;
+	my($uid, $gid, @files) = @args;
 
 	if (!defined $uid) {
 	    $uid = -1;
@@ -393,16 +447,16 @@ use warnings;
 		# * do uid/gid resolution _again_ in the command if it failed here?
 		# * maintain a virtual list of created users/groups while this run, and
 		#   use this list as a fallback?
-		die "User '$uid' does not exist";
+		error "User '$uid' does not exist";
 	    }
 	    $uid = $_uid;
 	}
 	if (!defined $gid) {
 	    $gid = -1;
 	} elsif ($gid !~ /^-?\d+$/) {
-	    my $_gid = (getpwnam $gid)[2];
+	    my $_gid = (getgrnam $gid)[2];
 	    if (!defined $_gid) {
-		die "Group '$gid' does not exist";
+		error "Group '$gid' does not exist";
 	    }
 	    $gid = $_gid;
 	}
@@ -413,23 +467,37 @@ use warnings;
 		my @s = stat($file);
 		if (@s) {
 		    if ($uid != -1 && $s[4] != $uid) {
-			push @files_to_change, @files;
+			push @files_to_change, $file;
 		    } elsif ($gid != -1 && $s[5] != $gid) {
-			push @files_to_change, @files;
+			push @files_to_change, $file;
 		    }
+		} else {
+		    push @files_to_change, $file;
 		}
 	    }
 	}
 
-	my @commands;
 	if (@files_to_change) {
-	    push @commands, {
-			     code => sub { chown $uid, $gid, @files_to_change or die $! },
-			     msg  => "chown $uid, $gid, @files_to_change", # shellquote?
+	    my @commands =  {
+			     code => sub {
+				 my $changed_files = chown $uid, $gid, @files_to_change;
+				 if ($changed_files != @files_to_change) {
+				     if (@files_to_change == 1) {
+					 error "chown failed: $!";
+				     } elsif ($changed_files == 0) {
+					 error "chown failed on all files: $!";
+				     } else {
+					 error "chown failed on some files (" . (@files_to_change-$changed_files) . "/" . scalar(@files_to_change) . "): $!";
+				     }
+				 }
+			     },
+			     ($quiet ? () : (msg => "chown $uid, $gid, @files_to_change")), # shellquote?
+			     rv   => scalar @files_to_change,
 			    };
+	    Doit::Commands->new(@commands);
+	} else {
+	    Doit::Commands->return_zero;
 	}
-	
-	Doit::Commands->new(@commands);
     }
 
     sub cmd_cond_run {
@@ -438,7 +506,14 @@ use warnings;
 	my $unless  = delete $opts{unless};
 	my $creates = delete $opts{creates};
 	my $cmd     = delete $opts{cmd};
-	die "Unhandled options: " . join(" ", %opts) if %opts;
+	error "Unhandled options: " . join(" ", %opts) if %opts;
+
+	if (!$cmd) {
+	    error "cmd is a mandatory option for cond_run";
+	}
+	if (ref $cmd ne 'ARRAY') {
+	    error "cmd must be an array reference";
+	}
 
 	my $doit = 1;
 	if ($if && !$if->()) {
@@ -452,9 +527,16 @@ use warnings;
 	}
 
 	if ($doit) {
-	    $self->cmd_run(@$cmd);
+	    my $doit_commands;
+	    if (ref $cmd->[0] eq 'ARRAY') {
+		$doit_commands = $self->cmd_run(@$cmd);
+	    } else {
+		$doit_commands = $self->cmd_system(@$cmd);
+	    }
+	    $doit_commands->set_last_rv(1);
+	    $doit_commands;
 	} else {
-	    Doit::Commands->new();
+	    Doit::Commands->return_zero;
 	}
     }
 
@@ -481,87 +563,105 @@ use warnings;
 	    # probably a file, keep $doit=1
 	}
 
-	my @commands;
 	if ($doit) {
-	    push @commands, {
+	    my @commands =  {
 			     code => sub {
 				 system 'ln', '-nsf', $oldfile, $newfile;
 				 error "ln -nsf $oldfile $newfile failed" if $? != 0;
 			     },
 			     msg => "ln -nsf $oldfile $newfile",
+			     rv  => 1,
 			    };
+	    Doit::Commands->new(@commands);
+	} else {
+	    Doit::Commands->return_zero;
 	}
-	Doit::Commands->new(@commands);
     }
 
     sub cmd_make_path {
 	my($self, @directories) = @_;
 	my $options = {}; if (ref $directories[-1] eq 'HASH') { $options = pop @directories }
 	my @directories_to_create = grep { !-d $_ } @directories;
-	my @commands;
 	if (@directories_to_create) {
-	    push @commands, {
+	    my @commands =  {
 			     code => sub {
 				 require File::Path;
 				 File::Path::make_path(@directories_to_create, $options)
-					 or die $!;
+					 or error $!;
 			     },
 			     msg => "make_path @directories",
+			     rv  => scalar @directories_to_create,
 			    };
+	    Doit::Commands->new(@commands);
+	} else {
+	    Doit::Commands->return_zero;
 	}
-	Doit::Commands->new(@commands);
     }
 
     sub cmd_mkdir {
-	my($self, $directory, $mask) = @_;
-	my @commands;
+	my($self, $directory, $mode) = @_;
 	if (!-d $directory) {
-	    if (defined $mask) {
+	    my @commands;
+	    if (defined $mode) {
 		push @commands, {
-				 code => sub { mkdir $directory, $mask or die $! },
-				 msg  => "mkdir $directory with mask $mask",
+				 code => sub { mkdir $directory, $mode or error "$!" },
+				 msg  => "mkdir $directory with mask $mode",
+				 rv   => 1,
 				};
 	    } else {
 		push @commands, {
-				 code => sub { mkdir $directory or die $! },
+				 code => sub { mkdir $directory or error "$!" },
 				 msg  => "mkdir $directory",
+				 rv   => 1,
 				};
 	    }
+	    Doit::Commands->new(@commands);
+	} else {
+	    Doit::Commands->return_zero;
 	}
-	Doit::Commands->new(@commands);
     }
 
     sub cmd_remove_tree {
 	my($self, @directories) = @_;
 	my $options = {}; if (ref $directories[-1] eq 'HASH') { $options = pop @directories }
 	my @directories_to_remove = grep { -d $_ } @directories;
-	my @commands;
 	if (@directories_to_remove) {
-	    push @commands, {
+	    my @commands =  {
 			     code => sub {
 				 require File::Path;
 				 File::Path::remove_tree(@directories_to_remove, $options)
-					 or die $!;
+					 or error "$!";
 			     },
 			     msg => "remove_tree @directories_to_remove",
+			     rv  => scalar @directories_to_remove,
 			    };
+	    Doit::Commands->new(@commands);
+	} else {
+	    Doit::Commands->return_zero;
 	}
-	Doit::Commands->new(@commands);
     }
 
     sub cmd_rename {
 	my($self, $from, $to) = @_;
 	my @commands;
 	push @commands, {
-			 code => sub { rename $from, $to or die $! },
+			 code => sub { rename $from, $to or error "$!" },
 			 msg  => "rename $from, $to",
+			 rv   => 1,
 			};
 	Doit::Commands->new(@commands);
     }
 
     sub cmd_copy {
-	my($self, $from, $to) = @_;
-	my @commands;
+	my($self, @args) = @_;
+	my %options; if (@args && ref $args[0] eq 'HASH') { %options = %{ shift @args } }
+	my $quiet = delete $options{quiet};
+	error "Unhandled options: " . join(" ", %options) if %options;
+	if (@args != 2) {
+	    error "Expecting two arguments: from and to filenames";
+	}
+	my($from, $to) = @args;
+
 	my $real_to;
 	if (-d $to) {
 	    require File::Basename;
@@ -570,33 +670,39 @@ use warnings;
 	    $real_to = $to;
 	}
 	if (!-e $real_to || do { require File::Compare; File::Compare::compare($from, $real_to) != 0 }) {
-	    push @commands, {
+	    my @commands =  {
 			     code => sub {
 				 require File::Copy;
 				 File::Copy::copy($from, $to)
-					 or die "Copy failed: $!";
+					 or error "Copy failed: $!";
 			     },
 			     msg => do {
-				 if (-e $real_to) {
-				     my $diff;
-				     if (eval { require IPC::Run; 1 }) {
-					 if (eval { IPC::Run::run(['diff', '-u', $to, $from], '>', \$diff); 1 }) {
-					     "copy $from $to\ndiff:\n$diff";
-					 } else {
-					     "copy $from $to\n(diff not available" . (!$diff_error_shown++ ? ", error: $@" : "") . ")";
-					 }
-				     } else {
-					 $diff = `diff -u '$to' '$from'`;
-					 "copy $from $to\ndiff:\n$diff";
-				     }
+				 if (!-e $real_to) {
+				     "copy $from $real_to (destination does not exist)";
 				 } else {
-				     "copy $from $to (destination does not exist)";
+				     if ($quiet) {
+					 "copy $from $real_to";
+				     } else {
+					 if (eval { require IPC::Run; 1 }) {
+					     my $diff;
+					     if (eval { IPC::Run::run(['diff', '-u', $real_to, $from], '>', \$diff); 1 }) {
+						 "copy $from $real_to\ndiff:\n$diff";
+					     } else {
+						 "copy $from $real_to\n(diff not available" . (!$diff_error_shown++ ? ", error: $@" : "") . ")";
+					     }
+					 } else {
+					     my $diffref = _qx('diff', '-u', $real_to, $from);
+					     "copy $from $real_to\ndiff:\n$$diffref";
+					 }
+				     }
 				 }
 			     },
 			     rv => 1,
 			    };
+	    Doit::Commands->new(@commands);
+	} else {
+	    Doit::Commands->return_zero;
 	}
-	Doit::Commands->new(@commands);
     }
 
     sub cmd_move {
@@ -605,15 +711,22 @@ use warnings;
 			code => sub {
 			    require File::Copy;
 			    File::Copy::move($from, $to)
-				    or die "Move failed: $!";
+				    or error "Move failed: $!";
 			},
 			msg => "move $from $to",
+			rv  => 1,
 		       };
 	Doit::Commands->new(@commands);
     }
 
     sub _analyze_dollar_questionmark () {
-	if ($? & 127) {
+	if ($? == -1) {
+	    (
+	        msg       => sprintf("Could not execute command: %s", $!),
+	        errno     => $!,
+	        exitcode  => $?,
+	    );
+	} elsif ($? & 127) {
 	    my $signalnum = $? & 127;
 	    my $coredump = ($? & 128) ? 'with' : 'without';
 	    (
@@ -655,13 +768,13 @@ use warnings;
 
     sub cmd_open2 {
 	my($self, @args) = @_;
-	my $options = {}; if (@args && ref $args[0] eq 'HASH') { $options = shift @args }
-	my $quiet = delete $options->{quiet};
-	my $info = delete $options->{info};
-	my $instr = delete $options->{instr}; $instr = '' if !defined $instr;
-	error "Unhandled options: " . join(" ", %$options) if %$options;
+	my %options; if (@args && ref $args[0] eq 'HASH') { %options = %{ shift @args } }
+	my $quiet = delete $options{quiet};
+	my $info = delete $options{info};
+	my $instr = delete $options{instr}; $instr = '' if !defined $instr;
+	error "Unhandled options: " . join(" ", %options) if %options;
 
-	@args = Doit::Win32Util::win32_quote_list(@args) if $^O eq 'MSWin32';
+	@args = Doit::Win32Util::win32_quote_list(@args) if Doit::IS_WIN;
 
 	require IPC::Open2;
 
@@ -689,23 +802,22 @@ use warnings;
 
     sub cmd_info_open2 {
 	my($self, @args) = @_;
-	my $options = {}; if (@args && ref $args[0] eq 'HASH') { $options = shift @args }
-	$options->{info} = 1;
-	$self->cmd_open2($options, @args);
+	my %options; if (@args && ref $args[0] eq 'HASH') { %options = %{ shift @args } }
+	$options{info} = 1;
+	$self->cmd_open2(\%options, @args);
     }
 
     sub cmd_open3 {
 	my($self, @args) = @_;
-	my $options = {}; if (@args && ref $args[0] eq 'HASH') { $options = shift @args }
-	my $quiet = delete $options->{quiet};
-	my $info = delete $options->{info};
-	my $timeout = delete $options->{timeout} || 86400;
-	my $instr = delete $options->{instr};
-	my $errref = delete $options->{errref};
-	my $statusref = delete $options->{statusref};
-	error "Unhandled options: " . join(" ", %$options) if %$options;
+	my %options; if (@args && ref $args[0] eq 'HASH') { %options = %{ shift @args } }
+	my $quiet = delete $options{quiet};
+	my $info = delete $options{info};
+	my $instr = delete $options{instr};
+	my $errref = delete $options{errref};
+	my $statusref = delete $options{statusref};
+	error "Unhandled options: " . join(" ", %options) if %options;
 
-	@args = Doit::Win32Util::win32_quote_list(@args) if $^O eq 'MSWin32';
+	@args = Doit::Win32Util::win32_quote_list(@args) if Doit::IS_WIN;
 
 	require IO::Select;
 	require IPC::Open3;
@@ -725,7 +837,7 @@ use warnings;
 	    $sel->add($chld_err);
 
 	    my %buf = ($chld_out => '', $chld_err => '');
-	    while(my @ready_fhs = $sel->can_read($timeout)) {
+	    while(my @ready_fhs = $sel->can_read()) {
 		for my $ready_fh (@ready_fhs) {
 		    my $buf = '';
 		    while (sysread $ready_fh, $buf, 1024, length $buf) { }
@@ -765,27 +877,33 @@ use warnings;
 
     sub cmd_info_open3 {
 	my($self, @args) = @_;
-	my $options = {}; if (@args && ref $args[0] eq 'HASH') { $options = shift @args }
-	$options->{info} = 1;
-	$self->cmd_open3($options, @args);
+	my %options; if (@args && ref $args[0] eq 'HASH') { %options = %{ shift @args } }
+	$options{info} = 1;
+	$self->cmd_open3(\%options, @args);
+    }
+
+    sub _qx {
+	my(@args) = @_;
+	@args = Doit::Win32Util::win32_quote_list(@args) if Doit::IS_WIN;
+
+	open my $fh, '-|', @args
+	    or error "Error running '@args': $!";
+	local $/;
+	my $buf = <$fh>;
+	close $fh;
+	\$buf;
     }
 
     sub cmd_qx {
 	my($self, @args) = @_;
-	my $options = {}; if (@args && ref $args[0] eq 'HASH') { $options = shift @args }
-	my $quiet = delete $options->{quiet};
-	my $info = delete $options->{info};
-	my $statusref = delete $options->{statusref};
-	error "Unhandled options: " . join(" ", %$options) if %$options;
-
-	@args = Doit::Win32Util::win32_quote_list(@args) if $^O eq 'MSWin32';
+	my %options; if (@args && ref $args[0] eq 'HASH') { %options = %{ shift @args } }
+	my $quiet = delete $options{quiet};
+	my $info = delete $options{info};
+	my $statusref = delete $options{statusref};
+	error "Unhandled options: " . join(" ", %options) if %options;
 
 	my $code = sub {
-	    open my $fh, '-|', @args
-		or error "Error running '@args': $!";
-	    local $/;
-	    my $buf = <$fh>;
-	    close $fh;
+	    my $bufref = _qx(@args);
 	    if ($statusref) {
 		%$statusref = ( _analyze_dollar_questionmark );
 	    } else {
@@ -793,7 +911,7 @@ use warnings;
 		    _handle_dollar_questionmark($quiet||$info ? (prefix_msg => "qx command '@args' failed: ") : ());
 		}
 	    }
-	    $buf;
+	    $$bufref;
 	};
 
 	my @commands;
@@ -806,21 +924,22 @@ use warnings;
 
     sub cmd_info_qx {
 	my($self, @args) = @_;
-	my $options = {}; if (@args && ref $args[0] eq 'HASH') { $options = shift @args }
-	$options->{info} = 1;
-	$self->cmd_qx($options, @args);
+	my %options; if (@args && ref $args[0] eq 'HASH') { %options = %{ shift @args } }
+	$options{info} = 1;
+	$self->cmd_qx(\%options, @args);
     }
 
     sub cmd_rmdir {
 	my($self, $directory) = @_;
-	my @commands;
 	if (-d $directory) {
-	    push @commands, {
-			     code => sub { rmdir $directory or die $! },
+	    my @commands =  {
+			     code => sub { rmdir $directory or error "$!" },
 			     msg  => "rmdir $directory",
 			    };
+	    Doit::Commands->new(@commands);
+	} else {
+	    Doit::Commands->return_zero;
 	}
-	Doit::Commands->new(@commands);
     }
 
     sub cmd_run {
@@ -845,20 +964,23 @@ use warnings;
 			     }
 			     join " ", @print_cmd;
 			 },
+			 rv  => 1,
 			};
 	Doit::Commands->new(@commands);
     }
 
     sub cmd_setenv {
 	my($self, $key, $val) = @_;
-	my @commands;
 	if (!defined $ENV{$key} || $ENV{$key} ne $val) {
-	    push @commands, {
+	    my @commands =  {
 			     code => sub { $ENV{$key} = $val },
-			     msg => qq{set \$ENV{$key} to "$val", previous value was } . (defined $ENV{$key} ? qq{"$ENV{$key}"} : qq{unset}),
+			     msg  => qq{set \$ENV{$key} to "$val", previous value was } . (defined $ENV{$key} ? qq{"$ENV{$key}"} : qq{unset}),
+			     rv   => 1,
 			    };
+	    Doit::Commands->new(@commands);
+	} else {
+	    Doit::Commands->return_zero;
 	}
-	Doit::Commands->new(@commands);
     }
 
     sub cmd_symlink {
@@ -866,42 +988,66 @@ use warnings;
 	my $doit;
 	if (-l $newfile) {
 	    my $points_to = readlink $newfile
-		or die "Unexpected: readlink $newfile failed (race condition?)";
+		or error "Unexpected: readlink $newfile failed (race condition?)";
 	    if ($points_to ne $oldfile) {
 		$doit = 1;
 	    }
 	} elsif (!-e $newfile) {
 	    $doit = 1;
 	} else {
-	    warn "$newfile exists but is not a symlink, will fail later...";
+	    warning "$newfile exists but is not a symlink, will fail later...";
 	}
-	my @commands;
 	if ($doit) {
-	    push @commands, {
-			     code => sub { symlink $oldfile, $newfile or die $! },
+	    my @commands =  {
+			     code => sub { symlink $oldfile, $newfile or error "$!" },
 			     msg  => "symlink $oldfile $newfile",
+			     rv   => 1,
 			    };
+	    Doit::Commands->new(@commands);
+	} else {
+	    Doit::Commands->return_zero;
 	}
-	Doit::Commands->new(@commands);
     }
 
     sub cmd_system {
 	my($self, @args) = @_;
-	my $options = {}; if (@args && ref $args[0] eq 'HASH') { $options = shift @args }
-	@args = Doit::Win32Util::win32_quote_list(@args) if $^O eq 'MSWin32';
-	my $show_cwd = delete $options->{show_cwd};
-	error "Unhandled options: " . join(" ", %$options) if %$options;
+	my %options; if (@args && ref $args[0] eq 'HASH') { %options = %{ shift @args } }
+	my $quiet = delete $options{quiet};
+	my $info = delete $options{info};
+	my $show_cwd = delete $options{show_cwd};
+	error "Unhandled options: " . join(" ", %options) if %options;
+
+	@args = Doit::Win32Util::win32_quote_list(@args) if Doit::IS_WIN;
+
+	my $code = sub {
+	    system @args;
+	    if ($? != 0) {
+		_handle_dollar_questionmark;
+	    }
+	};
+
 	my @commands;
 	push @commands, {
-			 code => sub {
-			     system @args;
-			     if ($? != 0) {
-				 _handle_dollar_questionmark;
-			     }
-			 },
-			 msg  => "@args" . _show_cwd($show_cwd),
+			 ($info
+			  ? (
+			     rv   => do { $code->(); 1 },
+			     code => sub {},
+			    )
+			  : (
+			     rv   => 1,
+			     code => $code,
+			    )
+			 ),
+			 ($quiet ? () : (msg  => "@args" . _show_cwd($show_cwd))),
 			};
 	Doit::Commands->new(@commands);
+    }
+
+    sub cmd_info_system {
+	my($self, @args) = @_;
+	my %options; if (@args && ref $args[0] eq 'HASH') { %options = %{ shift @args } }
+	$options{info} = 1;
+	$self->cmd_system(\%options, @args);
     }
 
     sub cmd_touch {
@@ -910,17 +1056,19 @@ use warnings;
 	for my $file (@files) {
 	    if (!-e $file) {
 		push @commands, {
-				 code => sub { open my $fh, '>>', $file or die $! },
+				 code => sub { open my $fh, '>>', $file or error "$!" },
 				 msg  => "touch non-existent file $file",
 				}
 	    } else {
 		push @commands, {
-				 code => sub { utime time, time, $file or die $! },
+				 code => sub { utime time, time, $file or error "$!" },
 				 msg  => "touch existent file $file",
 				};
 	    }
 	}
-	Doit::Commands->new(@commands);
+	my $doit_commands = Doit::Commands->new(@commands);
+	$doit_commands->set_last_rv(scalar @files);
+	$doit_commands;
     }
 
     sub cmd_create_file_if_nonexisting {
@@ -929,12 +1077,18 @@ use warnings;
 	for my $file (@files) {
 	    if (!-e $file) {
 		push @commands, {
-		    code => sub { open my $fh, '>>', $file or die $! },
+		    code => sub { open my $fh, '>>', $file or error "$!" },
 		    msg  => "create empty file $file",
 		};
 	    }
 	}
-	Doit::Commands->new(@commands);
+	if (@commands) {
+	    my $doit_commands = Doit::Commands->new(@commands);
+	    $doit_commands->set_last_rv(scalar @commands);
+	    $doit_commands;
+	} else {
+	    Doit::Commands->return_zero;
+	}
     }
 
     sub cmd_unlink {
@@ -945,30 +1099,34 @@ use warnings;
 		push @files_to_remove, $file;
 	    }
 	}
-	my @commands;
 	if (@files_to_remove) {
-	    push @commands, {
-			     code => sub { unlink @files_to_remove or die $! },
+	    my @commands =  {
+			     code => sub { unlink @files_to_remove or error "$!" },
 			     msg  => "unlink @files_to_remove", # shellquote?
 			    };
+	    Doit::Commands->new(@commands);
+	} else {
+	    Doit::Commands->return_zero;
 	}
-	Doit::Commands->new(@commands);
     }
 
     sub cmd_unsetenv {
 	my($self, $key) = @_;
-	my @commands;
 	if (defined $ENV{$key}) {
-	    push @commands, {
+	    my @commands =  {
 			     code => sub { delete $ENV{$key} },
-			     msg => qq{unset \$ENV{$key}, previous value was "$ENV{$key}"},
+			     msg  => qq{unset \$ENV{$key}, previous value was "$ENV{$key}"},
+			     rv   => 1,
 			    };
+	    Doit::Commands->new(@commands);
+	} else {
+	    Doit::Commands->return_zero;
 	}
-	Doit::Commands->new(@commands);
     }
 
     sub cmd_utime {
 	my($self, $atime, $mtime, @files) = @_;
+
 	my $now;
 	if (!defined $atime) {
 	    $atime = ($now ||= time);
@@ -976,19 +1134,51 @@ use warnings;
 	if (!defined $mtime) {
 	    $mtime = ($now ||= time);
 	}
-	my @commands;
-	push @commands, {
-			 code => sub { utime $atime, $mtime, @files or die $! },
-			 msg  => "utime $atime, $mtime, @files",
-			};
-	Doit::Commands->new(@commands);
+
+	my @files_to_change;
+	for my $file (@files) {
+	    my @s = stat $file;
+	    if (@s) {
+		if ($s[8] != $atime || $s[9] != $mtime) {
+		    push @files_to_change, $file;
+		}
+	    } else {
+		push @files_to_change, $file; # will fail later
+	    }
+	}
+
+	if (@files_to_change) {
+	    my @commands =  {
+			     code => sub {
+				 my $changed_files = utime $atime, $mtime, @files;
+				 if ($changed_files != @files_to_change) {
+				     if (@files_to_change == 1) {
+					 error "utime failed: $!";
+				     } elsif ($changed_files == 0) {
+					 error "utime failed on all files: $!";
+				     } else {
+					 error "utime failed on some files (" . (@files_to_change-$changed_files) . "/" . scalar(@files_to_change) . "): $!";
+				     }
+				 }
+			     },
+			     msg  => "utime $atime, $mtime, @files",
+			     rv   => scalar @files_to_change,
+			    };
+	    Doit::Commands->new(@commands);
+	} else {
+	    Doit::Commands->return_zero;
+	}
     }
 
     sub cmd_write_binary {
 	my($self, @args) = @_;
-	my $options = {}; if (@args && ref $args[0] eq 'HASH') { $options = shift @args }
-	my $quiet = delete $options->{quiet} || 0;
-	error "Unhandled options: " . join(" ", %$options) if %$options;
+	my %options; if (@args && ref $args[0] eq 'HASH') { %options = %{ shift @args } }
+	my $quiet  = delete $options{quiet} || 0;
+	my $atomic = exists $options{atomic} ? delete $options{atomic} : 1;
+	error "Unhandled options: " . join(" ", %options) if %options;
+	if (@args != 2) {
+	    error "Expecting two arguments: filename and contents";
+	}
 	my($filename, $content) = @args;
 
 	my $doit;
@@ -1000,7 +1190,7 @@ use warnings;
 	    $need_diff = 1;
 	} else {
 	    open my $fh, '<', $filename
-		or die "Can't open $filename: $!";
+		or error "Can't open $filename: $!";
 	    binmode $fh;
 	    local $/;
 	    my $file_content = <$fh>;
@@ -1010,18 +1200,28 @@ use warnings;
 	    }
 	}
 
-	my @commands;
 	if ($doit) {
-	    push @commands, {
+	    my @commands =  {
 			     code => sub {
-				 # XXX make atomic!
-				 open my $ofh, '>', $filename
-				     or die "Can't write to $filename: $!";
+				 # XXX consider to reuse code for atomic writes:
+				 # either from Doit::File::file_atomic_write (problematic, different component)
+				 # or share code with change_file
+				 my $outfile = $atomic ? "$filename.$$.".time.".tmp" : $filename;
+				 open my $ofh, '>', $outfile
+				     or error "Can't write to $outfile: $!";
+				 if (-e $filename) {
+				     Doit::Util::copy_stat($filename, $outfile, ownership => 1, mode => 1);
+				 }
 				 binmode $ofh;
 				 print $ofh $content;
 				 close $ofh
-				     or die "While closing $filename: $!";
+				     or error "While closing $outfile: $!";
+				 if ($atomic) {
+				     rename $outfile, $filename
+					 or error "Error while renaming $outfile to $filename: $!";
+				 }
 			     },
+			     rv => 1,
 			     ($quiet >= 2
 			      ? ()
 			      : (msg => do {
@@ -1033,8 +1233,7 @@ use warnings;
 					 }
 				     } else {
 					 if ($need_diff) {
-					     # XXX use safe backtick (info_qx) -> no IPC::Run required anymore
-					     if (eval { require IPC::Run; 1 }) {
+					     if (eval { require IPC::Run; 1 }) { # no temporary file required
 						 my $diff;
 						 if (eval { IPC::Run::run(['diff', '-u', $filename, '-'], '<', \$content, '>', \$diff); 1 }) {
 						     "Replace existing file $filename with diff:\n$diff";
@@ -1047,15 +1246,21 @@ use warnings;
 						     my($tempfh,$tempfile) = File::Temp::tempfile(UNLINK => 1);
 						     print $tempfh $content;
 						     if (close $tempfh) {
-							 $diff = `diff -u '$filename' '$tempfile'`;
+							 my $diffref = _qx('diff', '-u', $filename, $tempfile);
+							 $diff = $$diffref;
 							 unlink $tempfile;
+							 if (length $diff) {
+							     $diff = "Replace existing file $filename with diff:\n$diff";
+							 } else {
+							     $diff = "(diff not available, probably no diff utility installed)";
+							 }
 						     } else {
 							 $diff = "(diff not available, error in tempfile creation ($!))";
 						     }
 						 } else {
 						     $diff = "(diff not available, neither IPC::Run nor File::Temp available)";
 						 }
-						 "Replace existing file $filename with diff:\n$diff";
+						 $diff;
 					     }
 					 } else {
 					     "Create new file $filename with content:\n$content";
@@ -1064,16 +1269,23 @@ use warnings;
 				 }
 			     )),
 			    };
+	    Doit::Commands->new(@commands);
+	} else {
+	    Doit::Commands->return_zero;
 	}
-	Doit::Commands->new(@commands);
     }
 
     sub cmd_change_file {
 	my($self, @args) = @_;
-	my $options = {}; if (@args && ref $args[0] eq 'HASH') { $options = shift @args }
-	my $check = delete $options->{check};
+	my %options; if (@args && ref $args[0] eq 'HASH') { %options = %{ shift @args } }
+	my $check = delete $options{check};
+	my $debug = delete $options{debug};
 	if ($check && ref $check ne 'CODE') { error "check parameter should be a CODE reference" }
-	error "Unhandled options: " . join(" ", %$options) if %$options;
+	error "Unhandled options: " . join(" ", %options) if %options;
+
+	if (@args < 1) {
+	    error "Expecting at least a filename and one or more changes";
+	}
 
 	my($file, @changes) = @args;
 	if (!-e $file) {
@@ -1081,12 +1293,6 @@ use warnings;
 	}
 	if (!-f $file) {
 	    error "$file is not a file";
-	}
-
-	my $debug;
-	if (@changes && $changes[0]->{debug}) {
-	    $debug = $changes[0]->{debug};
-	    shift @changes;
 	}
 
 	my @commands;
@@ -1107,7 +1313,7 @@ use warnings;
 			(defined $_->{add_before_last} || 0)
 			;
 		    if ($defines != 1) {
-			die "Can specify only one of the following: 'add_after', 'add_after_first', 'add_before', 'add_before_last' (change for $file)\n";
+			error "Can specify only one of the following: 'add_after', 'add_after_first', 'add_before', 'add_before_last' (change for $file)\n";
 		    }
 		    my $add;
 		    my $do_after;
@@ -1129,7 +1335,7 @@ use warnings;
 			$reverse = 1;
 			$do_after = 0;
 		    } else {
-			die "Can never happen";
+			error "Can never happen";
 		    }
 		    qr{$add}; # must be a regexp
 		    $_->{action} = sub {
@@ -1150,7 +1356,7 @@ use warnings;
 			    }
 			}
 			if (!$found) {
-			    die "Cannot find '$add' in file";
+			    error "Cannot find '$add' in file";
 			}
 		    };
 		} else {
@@ -1168,28 +1374,35 @@ use warnings;
 		    $_->{unless_match} = qr{$rx};
 		}
 		if (!$_->{action}) {
-		    die "action is missing";
+		    error "action is missing";
 		}
 		if (ref $_->{action} ne 'CODE') {
-		    die "action must be a sub reference";
+		    error "action must be a sub reference";
 		}
 		push @unless_match_actions, $_;
 	    } elsif ($_->{match}) {
 		if (ref $_->{match} ne 'Regexp') {
-		    die "match must be a regexp";
+		    my $rx = '^' . quotemeta($_->{match}) . '$';
+		    $_->{match} = qr{$rx};
+		}
+		my $consequences = ($_->{action}?1:0) + (defined $_->{replace}?1:0) + (defined $_->{delete}?1:0);
+		if ($consequences != 1) {
+		    error "Exactly one of the following is missing: action, replace, or delete";
 		}
 		if ($_->{action}) {
 		    if (ref $_->{action} ne 'CODE') {
-			die "action must be a sub reference";
+			error "action must be a sub reference";
 		    }
 		} elsif (defined $_->{replace}) {
 		    # accept
+		} elsif (defined $_->{delete}) {
+		    # accept
 		} else {
-		    die "action or replace is missing";
+		    error "FATAL: should never happen";
 		}
 		push @match_actions, $_;
 	    } else {
-		die "match or unless_match is missing";
+		error "match or unless_match is missing";
 	    }
 	}
 
@@ -1198,30 +1411,37 @@ use warnings;
 	require File::Copy;
 	my($tmpfh,$tmpfile) = File::Temp::tempfile('doittemp_XXXXXXXX', UNLINK => 1, DIR => File::Basename::dirname($file));
 	File::Copy::copy($file, $tmpfile)
-		or die "failed to copy $file to temporary file $tmpfile: $!";
-	_copy_stat $file, $tmpfile;
+		or error "failed to copy $file to temporary file $tmpfile: $!";
+	Doit::Util::copy_stat($file, $tmpfile);
 
 	require Tie::File;
 	tie my @lines, 'Tie::File', $tmpfile
-	    or die "cannot tie file $file: $!";
+	    or error "cannot tie file $file: $!";
 
 	my $no_of_changes = 0;
 	for my $match_action (@match_actions) {
 	    my $match  = $match_action->{match};
-	    for my $line (@lines) {
-		if ($debug) { info "change_file check '$line' =~ '$match'" }
-		if ($line =~ $match) {
+	    for(my $line_i=0; $line_i<=$#lines; $line_i++) {
+		if ($debug) { info "change_file check '$lines[$line_i]' =~ '$match'" }
+		if ($lines[$line_i] =~ $match) {
 		    if (exists $match_action->{replace}) {
 			my $replace = $match_action->{replace};
-			if ($line ne $replace) {
-			    push @commands, { msg => "replace '$line' with '$replace' in '$file'" };
-			    $line = $replace;
+			if ($lines[$line_i] ne $replace) {
+			    push @commands, { msg => "replace '$lines[$line_i]' with '$replace' in '$file'" };
+			    $lines[$line_i] = $replace;
+			    $no_of_changes++;
+			}
+		    } elsif (exists $match_action->{delete}) {
+			if ($match_action->{delete}) {
+			    push @commands, { msg => "delete '$lines[$line_i]' in '$file'" };
+			    splice @lines, $line_i, 1;
+			    $line_i--;
 			    $no_of_changes++;
 			}
 		    } else {
-			push @commands, { msg => "matched '$match' on line '$line' in '$file' -> execute action" };
+			push @commands, { msg => "matched '$match' on line '$lines[$line_i]' in '$file' -> execute action" };
 			my $action = $match_action->{action};
-			$action->($line);
+			$action->($lines[$line_i]);
 			$no_of_changes++;
 		    }
 		}
@@ -1254,7 +1474,7 @@ use warnings;
 					 or error "Check on file $file failed";
 				 }
 				 rename $tmpfile, $file
-				     or die "Can't rename $tmpfile to $file: $!";
+				     or error "Can't rename $tmpfile to $file: $!";
 			     },
 			     msg => do {
 				 my $diff;
@@ -1269,15 +1489,13 @@ use warnings;
 			     },
 			     rv => $no_of_changes,
 			    };
-	} else {
-	    # Dummy command, just to set return value to 0 (otherwise it would be undef)
-	    push @commands, {
-			     code => sub {},
-			     rv => 0,
-			    };
 	}
 
-	Doit::Commands->new(@commands);
+	if ($no_of_changes) {
+	    Doit::Commands->new(@commands);
+	} else {
+	    Doit::Commands->return_zero;
+	}
     }
 
 }
@@ -1289,7 +1507,18 @@ use warnings;
 	my $self = bless \@commands, $class;
 	$self;
     }
+    sub return_zero {
+	my $class = shift;
+	$class->new({ code => sub {}, rv => 0 });
+    }
     sub commands { @{$_[0]} }
+    sub set_last_rv {
+	my($self, $rv) = @_;
+	my @commands = $self->commands;
+	if (@commands) {
+	    $commands[-1]->{rv} = $rv;
+	}
+    }
     sub doit {
 	my($self) = @_;
 	my $rv;
@@ -1330,8 +1559,10 @@ use warnings;
 {
     package Doit::Runner;
     sub new {
-	my($class, $X, $dryrun) = @_;
-	bless { X => $X, dryrun => $dryrun, components => [] }, $class;
+	my($class, $Doit, %options) = @_;
+	my $dryrun = delete $options{dryrun};
+	die "Unhandled options: " . join(" ", %options) if %options;
+	bless { Doit => $Doit, dryrun => $dryrun, components => [] }, $class;
     }
     sub is_dry_run { shift->{dryrun} }
 
@@ -1339,19 +1570,20 @@ use warnings;
 
     sub install_generic_cmd {
 	my($self, $name, @args) = @_;
-	$self->{X}->install_generic_cmd($name, @args);
-	install_cmd($name); # XXX hmmmm
+	$self->{Doit}->install_generic_cmd($name, @args);
+	__PACKAGE__->install_cmd($name);
     }
 
-    sub install_cmd ($) {
+    sub install_cmd {
+	shift; # $class unused
 	my $cmd = shift;
 	my $meth = 'cmd_' . $cmd;
 	my $code = sub {
 	    my($self, @args) = @_;
 	    if ($self->{dryrun}) {
-		$self->{X}->$meth(@args)->show;
+		$self->{Doit}->$meth(@args)->show;
 	    } else {
-		$self->{X}->$meth(@args)->doit;
+		$self->{Doit}->$meth(@args)->doit;
 	    }
 	};
 	no strict 'refs';
@@ -1359,17 +1591,23 @@ use warnings;
     }
 
     sub add_component {
-	my($self, $component) = @_;
-	for (@{ $self->{components} }) {
-	    return if $_->{component} eq $component;
+	my($self, $component_or_module) = @_;
+	my $module;
+	if ($component_or_module =~ /::/) {
+	    $module = $component_or_module;
+	} else {
+	    $module = 'Doit::' . ucfirst($component_or_module);
 	}
 
-	my $module = 'Doit::' . ucfirst($component);
+	for (@{ $self->{components} }) {
+	    return if $_->{module} eq $module;
+	}
+
 	if (!eval qq{ require $module; 1 }) {
-	    die "Cannot load $module: $@";
+	    Doit::Log::error("Cannot load $module: $@");
 	}
 	my $o = $module->new
-	    or die "Error while calling $module->new";
+	    or Doit::Log::error("Error while calling $module->new");
 	for my $function ($o->functions) {
 	    my $fullqual = $module.'::'.$function;
 	    my $code = sub {
@@ -1383,7 +1621,7 @@ use warnings;
 	    (my $relpath = $module) =~ s{::}{/};
 	    $relpath .= '.pm';
 	};
-	push @{ $self->{components} }, { component => $component, module => $module, path => $INC{$mod_file}, relpath => $mod_file };
+	push @{ $self->{components} }, { module => $module, path => $INC{$mod_file}, relpath => $mod_file };
 
 	if ($o->can('add_components')) {
 	    for my $sub_component ($o->add_components) {
@@ -1393,13 +1631,14 @@ use warnings;
     }
 
     for my $cmd (
-		 qw(chmod chown mkdir rename rmdir symlink system unlink utime),
+		 qw(chmod chown mkdir rename rmdir symlink unlink utime),
 		 qw(make_path remove_tree), # File::Path
 		 qw(copy move), # File::Copy
 		 qw(run), # IPC::Run
 		 qw(qx info_qx), # qx// and variant which even runs in dry-run mode, both using list syntax
 		 qw(open2 info_open2), # IPC::Open2
 		 qw(open3 info_open3), # IPC::Open3
+		 qw(system info_system), # builtin system with variant
 		 qw(cond_run), # conditional run
 		 qw(touch), # like unix touch
 		 qw(ln_nsf), # like unix ln -nsf
@@ -1408,7 +1647,7 @@ use warnings;
 		 qw(change_file), # own invention
 		 qw(setenv unsetenv), # $ENV manipulation
 		) {
-	install_cmd $cmd;
+	__PACKAGE__->install_cmd($cmd);
     }
 
     sub call_wrapped_method {
@@ -1468,6 +1707,8 @@ use warnings;
 	die "Please use either Doit::RPC::Client, Doit::RPC::Server or Doit::RPC::SimpleServer";
     }
 
+    sub runner { shift->{runner} }
+
     sub receive_data {
 	my($self) = @_;
 	my $fh = $self->{infh};
@@ -1499,7 +1740,19 @@ use warnings;
 		if ($self->{debug}) {
 		    info "Reaping process $pid...";
 		}
-		my $got_pid = waitpid $pid, &POSIX::WNOHANG;
+		my $start_time = time;
+		my $got_pid = Doit::RPC::gentle_retry(
+		    code => sub {
+			waitpid $pid, &POSIX::WNOHANG;
+		    },
+		    retry_msg_code => sub {
+			my($seconds) = @_;
+			if (time - $start_time >= 2) {
+			    info "can't reap process $pid, sleep for $seconds seconds";
+			}
+		    },
+		    fast_sleep => 0.01,
+		);
 		if (!$got_pid) {
 		    warning "Could not reap process $pid...";
 		}
@@ -1543,7 +1796,7 @@ use warnings;
 
 {
     package Doit::RPC::Client;
-    use vars '@ISA'; @ISA = ('Doit::RPC');
+    our @ISA = ('Doit::RPC');
 
     sub new {
 	my($class, $infh, $outfh, %options) = @_;
@@ -1583,7 +1836,7 @@ use warnings;
 
 {
     package Doit::RPC::Server;
-    use vars '@ISA'; @ISA = ('Doit::RPC');
+    our @ISA = ('Doit::RPC');
 
     sub new {
 	my($class, $runner, $sockpath, %options) = @_;
@@ -1651,7 +1904,7 @@ use warnings;
 		return;
 	    }
 	    $d->(" calling method $data[0]");
-	    my($rettype, @ret) = $self->{runner}->call_wrapped_method($context, @data);
+	    my($rettype, @ret) = $self->runner->call_wrapped_method($context, @data);
 	    $d->(" sending result back");
 	    $self->send_data($rettype, @ret);
 	}
@@ -1661,7 +1914,7 @@ use warnings;
 
 {
     package Doit::RPC::SimpleServer;
-    use vars '@ISA'; @ISA = ('Doit::RPC');
+    our @ISA = ('Doit::RPC');
     
     sub new {
 	my($class, $runner, $infh, $outfh, %options) = @_;
@@ -1690,12 +1943,12 @@ use warnings;
 		return;
 	    }
 	    open my $oldout, ">&STDOUT" or die $!;
-	    if ($^O eq 'MSWin32') {
+	    if (Doit::IS_WIN) {
 		open STDOUT, '>', 'CON:' or die $!; # XXX????
 	    } else {
 		open STDOUT, '>', "/dev/stderr" or die $!; # XXX????
 	    }
-	    my($rettype, @ret) = $self->{runner}->call_wrapped_method($context, @data);
+	    my($rettype, @ret) = $self->runner->call_wrapped_method($context, @data);
 	    open STDOUT, ">&", $oldout or die $!;
 	    $self->send_data($rettype, @ret);
 	}
@@ -1709,11 +1962,16 @@ use warnings;
 	$self->{rpc}->call_remote(@args);
     }
 
-    use vars '$AUTOLOAD';
+    our $AUTOLOAD;
     sub AUTOLOAD {
 	(my $method = $AUTOLOAD) =~ s{.*::}{};
 	my $self = shift;
 	$self->call_remote($method, @_); # XXX or use goto?
+    }
+
+    sub _can_LANS {
+	require POSIX;
+	$^O eq 'linux' && (POSIX::uname())[2] !~ m{^([01]\.|2\.[01]\.)} # osvers >= 2.2, earlier versions did not have LANS
     }
 
 }
@@ -1723,12 +1981,15 @@ use warnings;
 
     sub add_components {
 	my(@components) = @_;
-	q|for my $component (qw(| . join(" ", map { qq{$_->{component}} } @components) . q|)) { $d->add_component($component) } |;
+	q|for my $component_module (qw(| . join(" ", map { qq{$_->{module}} } @components) . q|)) { $d->add_component($component_module) } |;
     }
 
-    sub self_require {
-	if ($0 ne '-e') { # not a oneliner
-	    q{require "} . File::Basename::basename($0) . q{"; };
+    sub self_require (;$) {
+	my $realscript = shift;
+	if (!defined $realscript) { $realscript = $0 }
+	if ($realscript ne '-e') { # not a oneliner
+	    q{$ENV{DOIT_IN_REMOTE} = 1; } .
+	    q{require "} . File::Basename::basename($realscript) . q{"; };
 	} else {
 	    q{use Doit; };
 	}
@@ -1738,7 +1999,7 @@ use warnings;
 {
     package Doit::Sudo;
 
-    use vars '@ISA'; @ISA = ('Doit::_AnyRPCImpl');
+    our @ISA = ('Doit::_AnyRPCImpl');
 
     use Doit::Log;
 
@@ -1750,22 +2011,21 @@ use warnings;
 	my $dry_run = delete $opts{dry_run};
 	my $debug = delete $opts{debug};
 	my @components = @{ delete $opts{components} || [] };
+	my $perl = delete $opts{perl} || $^X;
 	die "Unhandled options: " . join(" ", %opts) if %opts;
 
 	my $self = bless { }, $class;
 
 	require File::Basename;
 	require IPC::Open2;
+	require POSIX;
 	require Symbol;
 
 	# Socket pathname, make it possible to find out
 	# old outdated sockets easily by including a
 	# timestamp. Also need to maintain a $socket_count,
 	# if the same script opens multiple sockets quickly.
-	my $sock_path = do {
-	    require POSIX;
-	    "/tmp/." . join(".", "doit", "sudo", POSIX::strftime("%Y%m%d_%H%M%S", gmtime), $<, $$, (++$socket_count)) . ".sock";
-	};
+	my $sock_path = "/tmp/." . join(".", "doit", "sudo", POSIX::strftime("%Y%m%d_%H%M%S", gmtime), $<, $$, (++$socket_count)) . ".sock";
 
 	# Make sure password has to be entered only once (if at all)
 	# Using 'sudo --validate' would be more correct, however,
@@ -1787,17 +2047,17 @@ use warnings;
 
 	# On linux use Linux Abstract Namespace Sockets ---
 	# invisible and automatically cleaned up. See man 7 unix.
-	my $LASN_PREFIX = $^O eq 'linux' ? '\0' : '';
+	my $LANS_PREFIX = $class->_can_LANS ? '\0' : '';
 
 	# Run the server
 	my @cmd_worker =
 	    (
-	     'sudo', @sudo_opts, $^X, "-I".File::Basename::dirname(__FILE__), "-I".File::Basename::dirname($0), "-e",
+	     'sudo', @sudo_opts, $perl, "-I".File::Basename::dirname(__FILE__), "-I".File::Basename::dirname($0), "-e",
 	     Doit::_ScriptTools::self_require() .
 	     q{my $d = Doit->init; } .
 	     Doit::_ScriptTools::add_components(@components) .
-	     q{Doit::RPC::Server->new($d, "} . $LASN_PREFIX . $sock_path . q{", excl => 1, debug => } . ($debug?1:0) . q{)->run();} .
-	     ($LASN_PREFIX ? '' : q<END { unlink "> . $sock_path . q<" }>), # cleanup socket file, except if Linux Abstract Namespace Sockets are used
+	     q{Doit::RPC::Server->new($d, "} . $LANS_PREFIX . $sock_path . q{", excl => 1, debug => } . ($debug?1:0) . q{)->run();} .
+	     ($LANS_PREFIX ? '' : q<END { unlink "> . $sock_path . q<" }>), # cleanup socket file, except if Linux Abstract Namespace Sockets are used
 	     "--", ($dry_run? "--dry-run" : ())
 	    );
 	my $worker_pid = fork;
@@ -1812,11 +2072,11 @@ use warnings;
 	# Run the client --- must also run under root for socket
 	# access.
 	my($in, $out);
-	my @cmd_comm = ('sudo', @sudo_opts, $^X, "-I".File::Basename::dirname(__FILE__), "-MDoit", "-e",
-			q{Doit::Comm->comm_to_sock("} . $LASN_PREFIX . $sock_path . q{", debug => shift)}, !!$debug);
+	my @cmd_comm = ('sudo', @sudo_opts, $perl, "-I".File::Basename::dirname(__FILE__), "-MDoit", "-e",
+			q{Doit::Comm->comm_to_sock("} . $LANS_PREFIX . $sock_path . q{", debug => shift)}, !!$debug);
 	warn "comm perl cmd: @cmd_comm\n" if $debug;
 	my $comm_pid = IPC::Open2::open2($out, $in, @cmd_comm);
-	$self->{rpc} = Doit::RPC::Client->new($out, $in, label => "sudo:");
+	$self->{rpc} = Doit::RPC::Client->new($out, $in, label => "sudo:", debug => $debug);
 
 	$self;
     }
@@ -1828,13 +2088,14 @@ use warnings;
 {
     package Doit::SSH;
 
-    use vars '@ISA'; @ISA = ('Doit::_AnyRPCImpl');
+    our @ISA = ('Doit::_AnyRPCImpl');
 
     use Doit::Log;
 
     sub do_connect {
 	require File::Basename;
 	require Net::OpenSSH;
+	require FindBin;
 	my($class, $host, %opts) = @_;
 	my $dry_run = delete $opts{dry_run};
 	my @components = @{ delete $opts{components} || [] };
@@ -1844,9 +2105,12 @@ use warnings;
 	my $tty = delete $opts{tty};
 	my $port = delete $opts{port};
 	my $master_opts = delete $opts{master_opts};
+	my $dest_os = delete $opts{dest_os};
+	$dest_os = 'unix' if !defined $dest_os;
 	my $put_to_remote = delete $opts{put_to_remote} || 'rsync_put'; # XXX ideally this should be determined automatically
 	$put_to_remote =~ m{^(rsync_put|scp_put)$}
 	    or error "Valid values for put_to_remote: rsync_put or scp_put";
+	my $perl = delete $opts{perl} || 'perl';
 	error "Unhandled options: " . join(" ", %opts) if %opts;
 
 	my $self = bless { host => $host, debug => $debug }, $class;
@@ -1863,35 +2127,61 @@ use warnings;
 	    and error "Connection error to $host: " . $ssh->error;
 	$self->{ssh} = $ssh;
 	{
-	    my $remote_cmd = "[ ! -d .doit/lib ] && mkdir -p .doit/lib";
+	    my $remote_cmd;
+	    if ($dest_os eq 'MSWin32') {
+		$remote_cmd = 'if not exist .doit\lib\ mkdir .doit\lib';
+	    } else {
+		$remote_cmd = "[ ! -d .doit/lib ] && mkdir -p .doit/lib";
+	    }
 	    if ($debug) {
 		info "Running '$remote_cmd' on remote";
 	    }
 	    $ssh->system(\%ssh_run_opts, $remote_cmd);
 	}
-	if ($0 ne '-e') {
-	    $ssh->$put_to_remote({verbose => $debug}, $0, ".doit/"); # XXX verbose?
+	if ($FindBin::RealScript ne '-e') {
+	    no warnings 'once';
+	    $ssh->$put_to_remote({verbose => $debug}, "$FindBin::RealBin/$FindBin::RealScript", ".doit/"); # XXX verbose?
 	}
 	$ssh->$put_to_remote({verbose => $debug}, __FILE__, ".doit/lib/");
 	{
 	    my %seen_dir;
-	    for my $component (@components) {
+	    for my $component (
+			       @components,
+			       ( # add additional RPC components
+				$dest_os ne 'MSWin32' ? () :
+				do {
+				    (my $srcpath = __FILE__) =~ s{\.pm}{/WinRPC.pm};
+				    {relpath => "Doit/WinRPC.pm", path => $srcpath},
+				}
+			       )
+			      ) {
 		my $from = $component->{path};
 		my $to = $component->{relpath};
 		my $full_target = ".doit/lib/$to";
 		my $target_dir = File::Basename::dirname($full_target);
 		if (!$seen_dir{$target_dir}) {
-		    $ssh->system(\%ssh_run_opts, "[ ! -d $target_dir ] && mkdir -p $target_dir");
+		    my $remote_cmd;
+		    if ($dest_os eq 'MSWin32') {
+			(my $win_target_dir = $target_dir) =~ s{/}{\\}g;
+			$remote_cmd = "if not exist $win_target_dir mkdir $win_target_dir"; # XXX is this equivalent to mkdir -p?
+		    } else {
+			$remote_cmd = "[ ! -d $target_dir ] && mkdir -p $target_dir";
+		    }
+		    $ssh->system(\%ssh_run_opts, $remote_cmd);
 		    $seen_dir{$target_dir} = 1;
 		}
 		$ssh->$put_to_remote({verbose => $debug}, $from, $full_target);
 	    }
 	}
 
-	my $sock_path = do {
-	    require POSIX;
-	    "/tmp/." . join(".", "doit", "ssh", POSIX::strftime("%Y%m%d_%H%M%S", gmtime), $<, $$, int(rand(99999999))) . ".sock";
-	};
+	my $sock_path = (
+			 $dest_os eq 'MSWin32'
+			 ? join("-", "doit", "ssh", POSIX::strftime("%Y%m%d_%H%M%S", gmtime), int(rand(99999999)))
+			 : do {
+			     require POSIX;
+			     "/tmp/." . join(".", "doit", "ssh", POSIX::strftime("%Y%m%d_%H%M%S", gmtime), $<, $$, int(rand(99999999))) . ".sock";
+			 }
+			);
 
 	my @cmd;
 	if (defined $as) {
@@ -1902,10 +2192,26 @@ use warnings;
 	    }
 	} # XXX add ssh option -t? for password input?
 
-	my @cmd_worker =
+	my @cmd_worker;
+	if ($dest_os eq 'MSWin32') {
+	    @cmd_worker =
 	    (
-	     @cmd, "perl", "-I.doit", "-I.doit/lib", "-e",
-	     Doit::_ScriptTools::self_require() .
+	     # @cmd not used here (no sudo)
+	     $perl, "-I.doit", "-I.doit\\lib", "-e",
+	     Doit::_ScriptTools::self_require($FindBin::RealScript) .
+	     q{use Doit::WinRPC; } .
+	     q{my $d = Doit->init; } .
+	     Doit::_ScriptTools::add_components(@components) .
+	     # XXX server cleanup? on signals? on END?
+	     q{Doit::WinRPC::Server->new($d, "} . $sock_path . q{", debug => } . ($debug?1:0).q{)->run();},
+	     "--", ($dry_run? "--dry-run" : ())
+	    );
+	    @cmd_worker = Doit::Win32Util::win32_quote_list(@cmd_worker);
+	} else {
+	    @cmd_worker =
+	    (
+	     @cmd, $perl, "-I.doit", "-I.doit/lib", "-e",
+	     Doit::_ScriptTools::self_require($FindBin::RealScript) .
 	     q{my $d = Doit->init; } .
 	     Doit::_ScriptTools::add_components(@components) .
 	     q<sub _server_cleanup { unlink "> . $sock_path . q<" }> .
@@ -1914,20 +2220,31 @@ use warnings;
 	     q{Doit::RPC::Server->new($d, "} . $sock_path . q{", excl => 1, debug => } . ($debug?1:0).q{)->run();},
 	     "--", ($dry_run? "--dry-run" : ())
 	    );
+	}
 	warn "remote perl cmd: @cmd_worker\n" if $debug;
 	my $worker_pid = $ssh->spawn(\%ssh_run_opts, @cmd_worker); # XXX what to do with worker pid?
 	$self->{worker_pid} = $worker_pid;
 
-	my @cmd_comm =
+	my @cmd_comm;
+	if ($dest_os eq 'MSWin32') {
+	    @cmd_comm =
+	    ($perl, "-I.doit\\lib", "-MDoit", "-MDoit::WinRPC", "-e",
+	     q{Doit::WinRPC::Comm->new("} . $sock_path . q{", debug => shift)->run},
+	     !!$debug,
+	    );
+	    @cmd_comm = Doit::Win32Util::win32_quote_list(@cmd_comm);
+	} else {
+	    @cmd_comm =
 	    (
-	     @cmd, "perl", "-I.doit/lib", "-MDoit", "-e",
+	     @cmd, $perl, "-I.doit/lib", "-MDoit", "-e",
 	     q{Doit::Comm->comm_to_sock("} . $sock_path . q{", debug => shift);},
 	     !!$debug,
 	    );
+	}
 	warn "comm perl cmd: @cmd_comm\n" if $debug;
 	my($out, $in, $comm_pid) = $ssh->open2(@cmd_comm);
 	$self->{comm_pid} = $comm_pid;
-	$self->{rpc} = Doit::RPC::Client->new($in, $out, label => "ssh:$host");
+	$self->{rpc} = Doit::RPC::Client->new($in, $out, label => "ssh:$host", debug => $debug);
 
 	$self;
     }
@@ -1936,7 +2253,9 @@ use warnings;
 
     sub DESTROY {
 	my $self = shift;
+	local $?; # XXX Net::OpenSSH::_waitpid sets $?=0
 	if ($self->{ssh}) {
+	    $self->{ssh}->disconnect if $self->{ssh}->can('disconnect');
 	    delete $self->{ssh};
 	}
 	if ($self->{rpc}) {
