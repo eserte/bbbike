@@ -212,13 +212,21 @@ sub action_old_bbbike_data {
 	}
     }
 
-    my $bbbike_ver_less_than = sub {
+    my $bbbike_ver_less_than = sub ($$) {
 	return 0 if $_[0] eq 'future';
 	return $_[0] < $_[1];
     };
-    my $bbbike_ver_ge_than = sub {
+    my $bbbike_ver_ge_than = sub ($$) {
 	return 1 if $_[0] eq 'future';
 	return $_[0] >= $_[1];
+    };
+    my $get_md5 = sub ($) {
+	my $destfile = shift;
+	my $ctx = Digest::MD5->new;
+	open my $fh, $destfile
+	    or error "Can't open $destfile: $!";
+	$ctx->addfile($fh);
+	return $ctx->hexdigest;
     };
 
     tie my %rules, 'Tie::IxHash',
@@ -300,16 +308,20 @@ sub action_old_bbbike_data {
 		copy_stat $file, $destfile;
 	    }
 	    # XXX efficiency: read old .modified and recalculate checksum only on changes
-	    my $md5 = do {
-		my $ctx = Digest::MD5->new;
-		open my $fh, $destfile
-		    or error "Can't open $destfile: $!";
-		$ctx->addfile($fh);
-		$ctx->hexdigest;
-	    };
+	    my $md5 = $get_md5->($destfile);
 	    my $mtime = $file2md5{$file} eq $md5 ? $file2mtime{$file} : (stat($destfile))[9];
 	    push @new_modified, "data/$file\t$mtime\t$md5";
 	}
+
+	if ($bbbike_ver_less_than->($bbbike_ver, 3.17)) {
+	    my $destfile = "$bbbike_ver_dir/label";
+	    $d->copy("label", $destfile);
+	    my $label_mtime = 1099869060; # this is the mtime of label in BBBike-3.16/data/.modified
+	    $d->utime($label_mtime, $label_mtime, $destfile);
+	    my $md5 = $get_md5->($destfile);
+	    push @new_modified, "data/label\t$label_mtime\t$md5";
+	}
+
 	$d->file_atomic_write("$bbbike_ver_dir/.modified",
 			      sub {
 				  my $ofh = shift;
