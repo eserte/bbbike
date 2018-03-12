@@ -4079,7 +4079,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-03-11
+#: last_checked: 2018-03-12
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -4349,14 +4349,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: by: http://www.berliner-woche.de/zehlendorf/bauen/fertigstellung-der-berlepschstrasse-verzoegert-sich-um-ein-halbes-jahr-d137942.html (sogar "bis Ende März")
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.683398.php
 	q4::inwork -468,1919 -343,1983 -285,2015 -226,2048
 ',
          'from' => 1518290143,
          'id' => 2932,
          'source_id' => '2147341799',
-         'text' => 'Berlepschstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende März 2018',
+         'text' => 'Berlepschstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte Mai 2018',
          'type' => 'handicap',
-         'until' => 1522317600
+         'until' => 1526378400
        }
      
 );

@@ -26164,7 +26164,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-03-11
+#: last_checked: 2018-03-12
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -26850,12 +26850,13 @@ EOF
 EOF
      },
      { from  => 1518290143, # 2018-02-10 20:15
-       until => $isodate2epoch->("2018-03-29 12:00:00"), # genaues Ende laut fritz
-       text  => 'Berlepschstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende März 2018',
+       until => $isodate2epoch->("2018-05-15 12:00:00"),
+       text  => 'Berlepschstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte Mai 2018',
        type  => 'handicap',
        source_id => '2147341799',
        data  => <<EOF,
 #: by: http://www.berliner-woche.de/zehlendorf/bauen/fertigstellung-der-berlepschstrasse-verzoegert-sich-um-ein-halbes-jahr-d137942.html (sogar "bis Ende März")
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.683398.php
 	q4::inwork -468,1919 -343,1983 -285,2015 -226,2048
 EOF
      },

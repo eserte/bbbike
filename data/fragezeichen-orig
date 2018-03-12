@@ -30,7 +30,7 @@ Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,107
 #: next_check: 2018-12-31
 Görlitzer Park: Verbesserungen geplant	?::projected 12814,9966 12833,9998 12869,10071 12901,10134 12905,10143
 # 
-#: last_checked: 2018-03-05
+#: last_checked: 2018-03-12
 #: next_check: 2018-12-31
 NKZ: Verbesserungen geplant	?::projected 11291,10438 11317,10485 11344,10507 11334,10527
 # 
@@ -290,6 +290,7 @@ Kladower Damm: Radpuren bis 2015 geplant	?::projected; -5097,7361 -5046,7442 -49
 #: osm_watch: way id="24033655" version="33"
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.563697.php
 #: by: http://www.berliner-woche.de/gatow/verkehr/im-sueden-wird-wieder-gebaut-drei-hauptstrassen-werden-grundsaniert-aber-nicht-vor-2020-d143349.html
+#: source_id: 2147342311
 #: last_checked: 2017-07-15
 #: next_check: 2017-08-31
 Kladower Damm: Radpuren in Arbeit	?::inwork; -4819,7833 -4578,8336
@@ -935,6 +936,7 @@ Hegemeisterweg: Asphaltierung	?::projected 17522,8220 17202,8391
 Gensinger Str.: Radstreifen	?::projected 18586,12151 18927,12135 19094,12127 19148,12073 19138,11815 19136,11739 19135,11713 19121,11681 19035,11671 19005,11705 19005,11767 19004,11780
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-praesentation_29-10-2015.pdf
+#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7435 (protective bike lanes?)
 #: osm_watch: way id="93221335" version="16"
 #: last_checked: 2018-02-10
 Siegfriedstr.: Radstreifen	?::projected 16860,12861 16859,12613 16857,12600 16826,12408 16820,12339
@@ -1395,6 +1397,7 @@ Togostr.: Ausweisung als Fahrradstraße, auch im nördlichen Abschnitt?	? 5531,167
 #: XXX Knotenpunkt Heiligenseestr. wird zum Kreisverkehr umgebaut, mit vier Zebrastreifen
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170522 (Bauende voraussichtlich Ende 2019)
 #: by: http://www.berliner-woche.de/heiligensee/bauen/neubau-der-hennigsdorfer-strasse-sorge-um-sichere-schulwege-waehrend-der-umleitung-d143200.html (ab März 2018 bis 2021, während der Bauarbeiten Einbahnstraße)
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5770 (Anordnung von Schutzstreifen ist unklar)
 #: osm_watch: way id="24720225" version="12"
 #: next_check: 2018-03-01
 Hennigsdorfer Str.: nach den Bauarbeiten durchgängig asphaltiert mit Radstreifen (Suggestivstreifen)	?::projected -2504,22626 -2540,22694 -2424,22991 -2306,23259 -2248,23409 -2185,23567 -2168,23607 -2132,23697 -2071,23850 -2051,23901 -1940,24176 -1896,24275 -1872,24336
@@ -2544,6 +2547,11 @@ Teltowkanalpromenade: geplante Sperrung wegen Neubau des Hubschrauberlandeplatzs
 # REMOVED (realisiert) --- #: osm_watch: note 851907 3 --- #: last_checked: 2018-02-09 --- #: check_frequency: 14d --- #: priority: #C --- Oranienplatz: Zebrastreifen in Bau	?::inwork 11233,10672 11258,10682 11262,10655
 # REMOVED (nein) --- #: XXX wird hier ein Zebrastreifen entstehen? --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5452 --- #: last_checked: 2017-05-21 --- #: check_frequency: 120d --- #: priority: #C --- Porzer Str./Coloniaallee	? 19948,-14 19972,-19 19998,-21
 # 
+#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5741
+#: next_check: 2018-10-01
+#: priority: #C
+Klemkestr.: wird hier ein Zebrastreifen realisiert?	?::projected 7652,18731 7615,18706 7655,18696
+# 
 #: XXX wird hier ein Zebrastreifen entstehen?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4693
 #: last_checked: 2017-10-16
@@ -2551,16 +2559,7 @@ Teltowkanalpromenade: geplante Sperrung wegen Neubau des Hubschrauberlandeplatzs
 #: priority: #C
 Neue Krugallee/Lakegrund	? 16401,7400 16406,7430 16409,7464
 # 
-#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4755 vvv
-#: source_id: 2147339938
-#: source_id: 2147341595
-#: last_checked: 2018-02-22
-#: check_frequency: 60d
-Köpenicker Landstraße: bleibt die Radwegbenutzungspflicht?	?; 15166,8489 15303,8343 15357,8286 15557,8077
-#: last_checked: 2018-01-06
-#: check_frequency: 90d
-Köpenicker Landstraße: bleibt die Radwegbenutzungspflicht?	?; 15920,7697 16195,7398 16353,7226 16428,7144
-#: by ^^^
+# REMOVED (die Pflicht bleibt) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4755 vvv --- #: source_id: 2147339938 --- #: source_id: 2147341595 --- #: last_checked: 2018-02-22 --- #: check_frequency: 60d --- Köpenicker Landstraße: bleibt die Radwegbenutzungspflicht?	?; 15166,8489 15303,8343 15357,8286 15557,8077 --- #: last_checked: 2018-01-06 --- #: check_frequency: 90d --- Köpenicker Landstraße: bleibt die Radwegbenutzungspflicht?	?; 15920,7697 16195,7398 16353,7226 16428,7144 --- #: by ^^^
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4129
 #: last_checked: 2017-08-06
@@ -2581,6 +2580,7 @@ Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen a
 #: osm_watch: way id="11663312" version="17"
 #: osm_watch: way id="4689343" version="16"
 #: source_id: 2147341322
+#: source_id: 2147342307
 #: last_checked: 2018-02-10
 #: next_check: 2018-03-12
 Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 18215,12123
