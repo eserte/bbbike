@@ -26871,4 +26871,12 @@ EOF
 #: XXX ^^^
 EOF
      },
+     { from  => 1520920800, # 2018-03-13 07:00
+       until => 1522533599, # 2018-03-31 23:59
+       text  => 'Konstanzer Str.: Bauarbeiten, Sperrung zwischen Hohenzollerndamm und Berliner Str., evtl. sind auch Radfahrer betroffen, bis Ende März 2018',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::inwork 3919,9085 3952,8980
+EOF
+     },
     );

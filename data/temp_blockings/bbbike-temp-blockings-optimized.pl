@@ -4358,6 +4358,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Berlepschstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte Mai 2018',
          'type' => 'handicap',
          'until' => 1526378400
+       },
+       undef,
+       {
+         'data' => '	q4::inwork 3919,9085 3952,8980
+',
+         'from' => 1520920800,
+         'id' => 2934,
+         'text' => 'Konstanzer Str.: Bauarbeiten, Sperrung zwischen Hohenzollerndamm und Berliner Str., evtl. sind auch Radfahrer betroffen, bis Ende März 2018',
+         'type' => 'handicap',
+         'until' => 1522533599
        }
      
 );
