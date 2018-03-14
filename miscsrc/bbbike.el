@@ -412,14 +412,15 @@
 ;;; used. This variable is per default set to nil which means:
 ;;; prefer remote viewing. This variable may be toggled using
 ;;; bbbike-toggle-view-url.
-(defun bbbike-view-url ()
+(defun bbbike-view-url (url)
   "View the URL under cursor, either the cached version (preferred), or the remote version"
   (interactive)
-  (let ((url (bbbike--get-url-under-cursor)))
-    (if (and bbbike-view-url-prefer-cached
-	     (not (string-match "^http://www.dafmap.de/" url)))
-	(bbbike-view-cached-url url)
-      (bbbike-view-remote-url url))))
+  (if (null url)
+      (setq url (bbbike--get-url-under-cursor)))
+  (if (and bbbike-view-url-prefer-cached
+	   (not (string-match "^http://www.dafmap.de/" url)))
+      (bbbike-view-cached-url url)
+    (bbbike-view-remote-url url)))
 
 (defun bbbike-toggle-view-url ()
   "Toggle between remote and cache URL viewing"
@@ -533,7 +534,9 @@
   'help-echo "Click button to grep for the same next_check_id")
 
 (defun bbbike-view-url-button (button)
-  (bbbike-view-url))
+  (let ((url (button-get button :url)))
+    (message (format "url %s" url))
+    (bbbike-view-url url)))
 
 (define-button-type 'bbbike-url-button
   'action 'bbbike-view-url-button
@@ -574,6 +577,12 @@
     (goto-char (point-min))
     (while (search-forward-regexp "^#:[ ]*by:?[ ]*\\(http[^ \n]+\\)" nil t)
       (make-button (match-beginning 1) (match-end 1) :type 'bbbike-url-button)))
+
+  (if (string-match "/bbbike-temp-blockings" buffer-file-name)
+      (save-excursion
+	(goto-char (point-min))
+	(while (search-forward-regexp "^[ ]*source_id[ ]*=>[ ]*'\\(http[^']+\\)" nil t)
+	  (make-button (match-beginning 1) (match-end 1) :type 'bbbike-url-button :url (buffer-substring (match-beginning 1) (match-end 1))))))
 
   (save-excursion
     (goto-char (point-min))
