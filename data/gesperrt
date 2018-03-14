@@ -1055,6 +1055,8 @@ Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
 Ritterstr.	1 -3369,14532 -3316,14504
 Neue Bahnhofstr.	1s 14908,11231 14918,11249
 Soorstr.	1s 1861,11284 1884,11126 1865,11082
+breiter Mittelstreifen	3nocross::ignrte 6740,10755 6685,10690 6532,10529
+Courbièrestr. -> An der Urania: breiter Mittelstreifen	3::igndisp 6725,10641 6685,10690 6532,10529
 Barrieren	3nocross::ignrte 9797,10771 9807,10788 9829,10830
 Markgrafenstr. -> Lindenstr.: Barrieren	3::igndisp 9799,10846 9807,10788 9829,10830
 Straßenbahnhaltestelle	3nocross::ignrte 9246,13235 9254,13171 9262,13111
