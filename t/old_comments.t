@@ -104,11 +104,20 @@ EOF
 EOF
 
  	     # Helmstr.
-	     ["7381,9165", "7444,9148", <<EOF, "CS (Route)"],
+	     ["7381,9165", "7444,9148", [<<EOF,
 - 'RR1': 1
   'RR12': 1
   'TR4': 1
   'gutes Kopfsteinpflaster': 1
+- {}
+EOF
+					 <<EOF], "CS (Route)"],
+# during the construction work there's another temporary handicap entry
+- RR1: 1
+  RR12: 1
+  TR4: 1
+  an der Hauptstr. Bauarbeiten, Behinderungen: 1
+  gutes Kopfsteinpflaster: 1
 - {}
 EOF
 
@@ -186,12 +195,33 @@ for my $cgiurl (@urls) {
 	} @{$got->{Route}} ];
 	local $TODO;
 	$TODO = $is_todo if ($is_todo);
-	eq_or_diff($comments, Load("--- #YAML:1.0\n$expected"), $desc) or do {
-	    if ($v) {
-		diag Dumper $got;
+	if (!ref $expected) {
+	    eq_or_diff($comments, Load("--- #YAML:1.0\n$expected"), $desc) or do {
+		if ($v) {
+		    diag Dumper $got;
+		}
+		diag Dump($comments);
+	    };
+	} else {
+	    my $got_normalized = Dump($comments);
+	CHECK_ALTERNATIVES: {
+		for my $expected_alternative (@$expected) {
+		    my $expected_alternative_normalized = Dump(Load("--- #YAML:1.0\n$expected_alternative"));
+		    if ($got_normalized eq $expected_alternative_normalized) {
+			pass $desc;
+			last CHECK_ALTERNATIVES;
+		    }
+		}
+		fail $desc
+		    or do {
+			diag "Neither of the " . scalar(@$expected) . " alternatives matched";
+			if ($v) {
+			    diag Dumper $got;
+			}
+			diag Dump($comments);
+		    };
 	    }
-	    diag Dump($comments);
-	};
+	}
     }
 }
 
