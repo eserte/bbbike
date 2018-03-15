@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2013,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ use strict;
 package BBBikeCGI::Cache;
 
 use vars qw($VERSION);
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 my %CACHEINTERVAL = (
 		     weekly => 86400*7,
@@ -80,7 +80,10 @@ sub clean_cache {
 }
 
 sub clean_expired_cache {
-    my $self = shift;
+    my($self, %opts) = @_;
+    my $only_synced = delete $opts{only_synced};
+    die "Unhandled options: " . join(" ", %opts) if %opts;
+
     require File::Basename;
     require File::Path;
     my $rootdir = $self->rootdir;
@@ -95,10 +98,27 @@ sub clean_expired_cache {
 	or die "Can't open $uprootdir: $!";
     my $count_success = 0;
     my $count_error = 0;
-    while(defined(my $file = readdir $DIR)) {
-	next if $file eq '.' || $file eq '..';
-	next if $file eq $rootbase; # keep the current one
-	next if $previous_rootbase && $file eq $previous_rootbase; # keep also the previous rootbase
+    my $count_skip_unsynced = 0;
+ OUTER_LOOP: while(defined(my $file = readdir $DIR)) {
+	next OUTER_LOOP if $file eq '.' || $file eq '..';
+	next OUTER_LOOP if $file eq $rootbase; # keep the current one
+	next OUTER_LOOP if $previous_rootbase && $file eq $previous_rootbase; # keep also the previous rootbase
+	if ($only_synced) {
+	    if (!-e "$uprootdir/$file/.synced") {
+		$count_skip_unsynced++;
+		next OUTER_LOOP;
+	    }
+	    my $age_synced = -M "$uprootdir/$file/.synced";
+	    opendir my $DIR2, "$uprootdir/$file"
+		or die "Can't open $uprootdir/$file: $!";
+	INNER_LOOP: while(defined(my $file2 = readdir $DIR2)) {
+		next INNER_LOOP if $file2 =~ m{^\.};
+		if (-M "$uprootdir/$file/$file2" < $age_synced) {
+		    $count_skip_unsynced++;
+		    next OUTER_LOOP;
+		}
+	    }
+	}
 	if (!File::Path::rmtree("$uprootdir/$file")) {
 	    $count_error++;
 	    warn "Cannot rmtree $uprootdir/$file: $!";
@@ -109,6 +129,7 @@ sub clean_expired_cache {
     return {
 	    count_success => $count_success,
 	    count_errors  => $count_error,
+	    count_skip_unsynced => $count_skip_unsynced,
 	   };
 }
 

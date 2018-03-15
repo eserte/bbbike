@@ -59,6 +59,46 @@ plan 'no_plan';
     is $content, $test_content, 'Got content';
 
     my $updir = dirname $bc->rootdir;
+    my($expireddir, $clean_res);
+
+    # First set on clean_expired_cache tests: with only_synced
+    $expireddir = _create_expired_content($updir);
+
+    $clean_res = $bc->clean_expired_cache(only_synced => 1);
+    ok -e $expireddir, "Expired directory was not removed (because of only_synced)";
+    is $clean_res->{count_skip_unsynced}, 1;
+    is $clean_res->{count_success}, 0;
+    is $clean_res->{count_errors}, 0;
+
+    { open my $fh, ">", "$expireddir/.synced" or die $! }
+    utime time-86400, time-86400, "$expireddir/.synced";
+    $clean_res = $bc->clean_expired_cache(only_synced => 1);
+    ok -e $expireddir, "Expired directory was not removed (because of .synced too old)";
+    is $clean_res->{count_skip_unsynced}, 1;
+    is $clean_res->{count_success}, 0;
+    is $clean_res->{count_errors}, 0;
+
+    utime time-2*86400, time-2*86400, "$expireddir/testcontent";
+    $clean_res = $bc->clean_expired_cache(only_synced => 1);
+    ok !-e $expireddir, "Expired directory was removed (because .synced is newer)";
+    is $clean_res->{count_skip_unsynced}, 0;
+    is $clean_res->{count_success}, 1;
+    is $clean_res->{count_errors}, 0;
+
+    # Second set on clean_expired_cache tests: without only_synced
+    $expireddir = _create_expired_content($updir);
+    
+    $clean_res = $bc->clean_expired_cache;
+    ok !-e $expireddir, "Expired directory was removed";
+    is $clean_res->{count_skip_unsynced}, 0;
+    is $clean_res->{count_success}, 1;
+    is $clean_res->{count_errors}, 0;
+
+    ok $cache_entry->exists_content, 'Non-expired content still exists';
+}
+
+sub _create_expired_content {
+    my $updir = shift;
     my $expireddir = $updir . "/expired";
     if (!-d $expireddir) {
 	mkdir $expireddir or die $!;
@@ -69,10 +109,7 @@ plan 'no_plan';
     close $ofh
 	or die $!;
 
-    $bc->clean_expired_cache;
-    ok !-e $expireddir, "Expired directory was removed";
-
-    ok $cache_entry->exists_content, 'Non-expired content still exists';
+    $expireddir;
 }
 
 __END__
