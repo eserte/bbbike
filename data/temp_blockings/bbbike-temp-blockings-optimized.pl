@@ -3268,7 +3268,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
          'from' => undef,
          'id' => 2454,
          'recurring' => 1,
-         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Winter: 18.00 bis 6.00 Uhr',
+         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Sommer: 21.00 bis 6.00 Uhr',
          'until' => undef
        },
        {

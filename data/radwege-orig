@@ -300,7 +300,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 	RW2;RW2 4512,5199 4432,5160 4343,5112
 #: XXX Radwege sollen saniert werden oder es entstehen sogar Radstreifen (Umsetzung 2018) vvv
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
-#: last_checked: 2018-03-09 vvv
+#: last_checked: 2018-03-16 vvv
 #: next_check: 2018-12-31 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160 10501,11056 10637,10996 10684,10975
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -587,8 +587,12 @@ holpriges Verbundsteinpflaster	RW1; 10425,971 10485,807 10539,662 10590,525 1061
 	RW1; 9003,3947 9021,3878
 	RW1;RW1 9021,3878 9065,3693
 	RW1;RW2 9065,3693 8964,3539
-	RW0;RW 8964,3539 8889,3363 8840,3265
-	RW1;RW1 8840,3265 8820,3188
+	RW0; 8964,3539 8889,3363 8840,3265
+	RW1; 8840,3265 8820,3188
+#: by: mapillary (Busspur, keine Benutzungspflicht)
+für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr	RW1; 8820,3188 8840,3265 8889,3363
+#: by: mapillary (Benutzungspflicht)
+	RW2; 8889,3363 8964,3539
 	RW2; 9065,3693 9106,3703 9275,3753
 für Radfahrer freigegebene Busspur gilt Mo-Fr 9-18 Uhr	RW1; 9275,3753 9106,3703 9065,3693
 	RW2;RW2 9275,3753 9426,3797
@@ -1073,7 +1077,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut rbbtext bis 31.05.2016, laut vmz bis Ende 2016, laut fritz bis 09.01.2018
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2018-02-01
+#: last_checked: 2018-03-16
 #: next_check: 2018-06-28
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
@@ -1737,7 +1741,7 @@ Berliner Gehwegplatten, ca. 1,50m breit	RW2;RW2 9272,14208 9400,14400 9410,14410
 #: note: Wobei es so aussieht, als ob das Zusatzschild einfach nur fehlt
 #: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5;
 #: by: http://www.dafmap.de/d/berlin.html?id=3134&mt=0&zoom=16 (Projektabschluss: 2017-09-01)
-#: last_checked: 2018-03-05
+#: last_checked: 2018-03-16
 #: check_frequency: 14d
 	RW4; 11451,13301 11369,13174
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 11451,13301 11486,13350
@@ -1790,6 +1794,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 	RW3; 11907,13655 12038,13685 12161,13711
 #: XXX vermutlich werden hier Radspuren entstehen
 #: by: http://www.berliner-woche.de/prenzlauer-berg/verkehr/storkower-strasse-senat-stellt-dem-bezirk-mittel-fuer-den-bau-eines-radstreifens-in-aussicht-d142987.html
+#: last_checked: 2018-03-16
 #: next_check: 2018-09-01
 	RW1;RW1 13438,14675 13737,14204 13879,13967
 Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
@@ -3818,7 +3823,7 @@ Verbundsteinpflaster, OK	RW1; 13531,4152 13595,4232 13632,4304 13666,4410 13671,
 #: note: Zweirichtungsradweg auf der linken Seite faktisch nur aus Richtung Zobtener Str. nutzbar
 asphaltiert	RW2;RW8 15639,10469 15758,10578
 	RW4;RW4 15983,10836 16049,10844
-	RW4;RW4 16049,10844 16038,10818 15982,10765 15880,10680
+	RW4;RW4 16049,10844 16038,10818 15970,10755 15880,10680
 	RW3;RW4 15758,10578 15880,10680
 	RW4;RW4 16153,10818 16085,10844 16049,10844
 	RW6;RW6 10086,12725 10054,12699 10017,12675 9948,12631 9919,12613

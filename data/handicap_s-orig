@@ -102,7 +102,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 # 
 #: next_check_id: OTTOBRAUN-2015
 #: XXX vermutlich im ausgebauten Zustand: q1 
-#: last_checked: 2018-03-05
+#: last_checked: 2018-03-16
 #: check_frequency: 14d
 Wadzeckstr. - Mollstr.: Behinderungen wegen Bauarbeiten möglich	q2::inwork 11315,13210 11399,13333
 # 
@@ -116,15 +116,15 @@ Wadzeckstr. - Mollstr.: Behinderungen wegen Bauarbeiten möglich	q2::inwork 11315
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
-#: last_checked: 2018-03-10
+#: last_checked: 2018-03-16
 Voltairestr.: Fahrbahn unter Umständen wegen Baustelle gesperrt, Ausweichen auf Gehweg	q2- 11329,12497 11209,12430
 # 
 #: next_check_id: ZIEGELSTR-2016
 #: XXX Ende der Bauarbeiten?
 #: way id="507023458" version="1"
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
-#: last_checked: 2018-02-28
-#: check_frequency: 30d
+#: last_checked: 2018-03-16
+#: check_frequency: 45d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # 
 # REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?id=3339&mt=0&zoom=16 (Projektabschluss: 2017-03-31) --- #: last_checked: 2017-10-27 --- Kommandantenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10330,11422 10136,11529
@@ -144,7 +144,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 # REMOVED --- #: last_checked: 2017-03-14 vvv --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9990,11571 9925,11565 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q2-::inwork 9925,11565 9737,11546 --- #: last_checked ^^^
 # 
 # REMOVED --- : osm_watch: note 814191 1
-#: last_checked: 2018-02-28
+#: last_checked: 2018-03-16
 #: check_frequency: 30d
 Alexandrinenstr.: direkter Zugang zur Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q3::inwork 10818,11269 10678,11172
 # 
@@ -233,14 +233,14 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # 
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
-#: last_checked: 2018-02-01
+#: last_checked: 2018-03-16
 #: next_check: 2018-06-28
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # 
 #: next_check_id: STAATSOPER-2014 vvv
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html
-#: last_checked: 2018-02-19 vvv
+#: last_checked: 2018-03-16 vvv
 #: check_frequency: 30d vvv
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9883,12251 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
@@ -2643,6 +2643,7 @@ Steinrückweg: möglicher Bordstein	q1 4257,6856 4293,6719
 #: XXX_prog BS an beiden Enden, ansonsten q2
 Gedonstr.: Bordsteine, parkende Autos, Fußgänger	q4 7915,17557 7916,17576 7917,17588
 Alexanderufer - Charité: durch das Tor schieben	q4 8371,13399 8363,13402 8356,13404
+Nöldnerplatz [Nöldnerstr. - Schlichtallee]: einige Fußgänger	q1 15932,10830 15970,10755
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

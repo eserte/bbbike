@@ -49,7 +49,7 @@ Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 
 #: source_id: 2147340987
 #: source_id: 2147341435
 #: osm_watch: way id="41954398" version="13"
-#: last_checked: 2018-01-27 vvv
+#: last_checked: 2018-03-16 vvv
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (hier nur dieser Abschnitt (Prenzlauer Allee - Bötzowstr.) erwähnt)
 #: next_check: 2018-06-01
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12616,14315
@@ -432,7 +432,7 @@ Richard-Tauber-Damm/Grimmingweg: Überquerungshilfe in Planung	? 9845,1412 9832,1
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-10-12-prot-fahrratsitzung4_final_komplett.pdf (2018/2019)
 #: osm_watch: way id="25415937" version="25"
 #: osm_watch: way id="30483116" version="6"
-#: last_checked: 2017-08-10
+#: last_checked: 2018-03-16 (mapillary)
 #: next_check: 2018-08-15
 Marienfelder Allee: Projektplanung für Schutzstreifen	?::projected 8579,2265 8555,2182 8495,2080 8404,1937 8342,1803 8246,1616 8152,1425 8077,1259 8034,1171 7899,895 7867,831
 # 
@@ -457,7 +457,7 @@ Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Rads
 #: XXX hier vermutlich später
 #: osm_watch: way id="151571084" version="10"
 #: osm_watch: way id="169753564" version="12"
-#: last_checked: 2018-01-28
+#: last_checked: 2018-03-16
 #: next_check: 2019-03-01
 Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Radspuren)	?::projected 8642,7876 8686,7726 8690,7704 8704,7603 8706,7585 8715,7384 8716,7323
 #: by: ^^^
@@ -1176,8 +1176,8 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/holzmarktstrasse/download/LP_01.pdf
 #: source_id: 2147340618
 #: source_id: LMS-BR_r_LMS-BR_81616
-#: last_checked: 2018-03-15
-#: next_check: 2018-04-01 (laut Schild bis April 2018)
+#: last_checked: 2018-03-16
+#: next_check: 2018-06-30 (laut fritz)
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 # 
 #: source_id: 166000788
@@ -1962,6 +1962,7 @@ Brunsbütteler Damm: Radweg wird asphaltiert	?; -4290,14025 -4759,13992
 # REMOVED --- #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.484353.php (Fertigstellung Juni 2016?) --- #: next_check: 2016-09-15 --- Brunsbütteler Damm: Radweg wird asphaltiert	?::projected; -3892,13960 -3937,13975 -4190,14036 -4290,14025
 # 
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/1795-2016-bav-zu-ds-1879-iv-fussgaengerueberweg_ungarnstrasse_75_sb.pdf
+#: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.685685.php (Umgestaltungsmaßnahmen in der Ungarnstr.)
 #: last_checked: 2017-09-28
 #: check_frequency: 150d
 #: priority: #C
@@ -2178,13 +2179,8 @@ Säntisstr.: Sperrung des Bahnübergangs geplant	?::projected 8971,864 9024,906 91
 Martin-Buber-Str./Kirchstr.: Bau eines Minikreisels	? 587,2935 600,2922 606,2904
 # 
 # REMOVED (falscher Abschnitt: gemeint ist ein weiter nördlich liegende Teilstrecke, die eh' nicht in BBBike erfasst ist) --- #: XXX wird der Weg gesperrt oder saniert? --- #: by: http://www.berliner-woche.de/kladow/bauen/oeffentlichkeit-bleibt-draussen-bund-will-ernst-liesegang-ufer-jetzt-doch-sperren-d140027.html --- #: by: http://www.tagesspiegel.de/berlin/berlin-spandau-zwei-behoerden-streiten-der-bloede-ist-der-buerger/20747780.html --- #: by: http://www.berliner-woche.de/kladow/bauen/ueberschwemmt-vereist-gefaehrlich-schilder-warnen-am-uferweg-vor-gefahrenstellen-d142931.html --- #: next_check: 2018-05-01 --- Ernst-Liesegang-Ufer	? -6366,5215 -6280,5176 -6037,5371 -5932,5556 -5924,5602
-# 
-#: by: fritz
-#: XXX bis Anfang März 2018
-Roelckestr.: Bauarbeiten & Sperrung auch für Radfahrer relevant?	?::inwork; 12762,15882 12721,15807
-#: XXX bis Mitte März 2018
-#: source_id: 2147342229
-Roelckestr.: Bauarbeiten & Sperrung auch für Radfahrer relevant?	?::inwork; 12943,16214 12890,16121
+# REMOVED (hier ist nichts mehr) --- #: by: fritz --- #: XXX bis Anfang März 2018 --- Roelckestr.: Bauarbeiten & Sperrung auch für Radfahrer relevant?	?::inwork; 12762,15882 12721,15807
+# REMOVED (kurzes Stück Einbahnstraße, Aufnahme in die Datenbasis lohnt nicht) --- #: XXX bis Mitte März 2018 --- #: source_id: 2147342229 --- Roelckestr.: Bauarbeiten & Sperrung auch für Radfahrer relevant?	?::inwork; 12943,16214 12890,16121
 # 
 Alt-Lichtenrade - Töpchiner Weg: Weg für Radfahrer befahrbar? Qualität? Beleuchtung?	? 10938,-405 10950,-439 11207,-412 11176,-489
 # 
@@ -2440,7 +2436,7 @@ Moorbirkenweg: Qualität? Wo wird sich die Straße befinden? Existiert die Straße 
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_929_16.pdf
 #: osm_watch: way id="295627704" version="4"
-#: last_checked: 2018-02-14
+#: last_checked: 2018-03-16
 #: check_frequency: 60d
 Liebigstr.: Einrichtung einer Spielstraße, wo genau?	? 14229,12311 14166,12323 14147,12344 14091,12355 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
 # 
@@ -2479,7 +2475,7 @@ Anforderungsampel, X	?::inwork 7652,14257
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/25re.pdf/file?y=2016
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/46re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: XXX Berlin.coords.data-Eintrag fehlt
-#: last_checked: 2018-02-28
+#: last_checked: 2018-03-16
 #: check_frequency: 60d
 Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?	? 9636,13076
 # 
@@ -2944,7 +2940,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2018-02-28
+#: last_checked: 2018-03-16
 #: check_frequency: 60d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # 
@@ -3059,7 +3055,8 @@ Ortsdurchfahrt Potsdam: Ortsschild wird versetzt	? -13113,5653 -13143,5587 -1308
 # 
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_05_0625_0772_online.pdf
 #: XXX evtl. wird es einen neuen Weg südöstlich geben
-#: next_check: 2018-04-01
+#: last_checked: 2018-03-16
+#: check_frequency: 30d
 Cotheniusstr.: Parkplatzfläche wird eingezogen	?::projected 13430,13733 13519,13785
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.676868.php
@@ -3670,7 +3667,7 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2018-03-11
+#: last_checked: 2018-03-16
 #: check_frequency: 360d
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 
