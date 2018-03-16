@@ -26872,10 +26872,11 @@ EOF
 EOF
      },
      { from  => 1520920800, # 2018-03-13 07:00
-       until => 1522533599, # 2018-03-31 23:59
+       until => $isodate2epoch->("2018-03-22 12:00:00"), # 1522533599, # 2018-03-31 23:59
        text  => 'Konstanzer Str.: Bauarbeiten, Sperrung zwischen Hohenzollerndamm und Berliner Str., evtl. sind auch Radfahrer betroffen, bis Ende März 2018',
        type  => 'handicap',
        data  => <<EOF,
+#: source_id: 2147342320
 	q4::inwork 3919,9085 3952,8980
 EOF
      },
@@ -26886,6 +26887,24 @@ EOF
        data  => <<EOF,
 # XXX_prog: eigentlich q3-
 	q3::inwork 7136,9223 7012,9222
+EOF
+     },
+     { from  => 1521060826, # 2018-03-14 21:53
+       until => 1530395999, # 2018-06-30 23:59
+       text  => 'Breitenbachstr.: Bauarbeiten zwischen Innungsstr. und Holzhauser Str., Fahrbahn Richtung Norden gesperrt, ggfs. auch Behinderungen für Radfahrer, bis Ende Juni 2018',
+       type  => 'handicap',
+       source_id => 'http://www.berliner-woche.de/wittenau/verkehr/sanierung-der-breitenbachstrasse-d143204.html',
+       data  => <<EOF,
+	q4::inwork; 3810,19133 3546,19477
+EOF
+     },
+     { from  => 1521140385, # 2018-03-15 19:59
+       until => $isodate2epoch->("2018-05-18 12:00:00"), # 1525211999, # 2018-05-01 23:59
+       text  => 'Pankgrafenstr./Bahnhofstr.: zwischen Hubertusdamm und Streckfußstr. Baustelle, ggfs. Behinderungen auch für Radfahrer, bis Anfang Mai 2018',
+       type  => 'handicap',
+       source_id => '2147342325',
+       data  => <<EOF,
+	q4::inwork 14632,23257 14597,23280 14573,23295 14539,23306 14442,23339
 EOF
      },
     );

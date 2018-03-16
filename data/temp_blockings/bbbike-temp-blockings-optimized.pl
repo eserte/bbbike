@@ -4361,13 +4361,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        {
-         'data' => '	q4::inwork 3919,9085 3952,8980
+         'data' => '#: source_id: 2147342320
+	q4::inwork 3919,9085 3952,8980
 ',
          'from' => 1520920800,
          'id' => 2934,
          'text' => 'Konstanzer Str.: Bauarbeiten, Sperrung zwischen Hohenzollerndamm und Berliner Str., evtl. sind auch Radfahrer betroffen, bis Ende März 2018',
          'type' => 'handicap',
-         'until' => 1522533599
+         'until' => 1521716400
        },
        {
          'data' => '# XXX_prog: eigentlich q3-
@@ -4378,6 +4379,26 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Vorbergstr.: Bauarbeiten zwischen Gleditschstr. und Akazienstr., Fahrbahn gesperrt, Ende unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '	q4::inwork; 3810,19133 3546,19477
+',
+         'from' => 1521060826,
+         'id' => 2936,
+         'source_id' => 'http://www.berliner-woche.de/wittenau/verkehr/sanierung-der-breitenbachstrasse-d143204.html',
+         'text' => 'Breitenbachstr.: Bauarbeiten zwischen Innungsstr. und Holzhauser Str., Fahrbahn Richtung Norden gesperrt, ggfs. auch Behinderungen für Radfahrer, bis Ende Juni 2018',
+         'type' => 'handicap',
+         'until' => 1530395999
+       },
+       {
+         'data' => '	q4::inwork 14632,23257 14597,23280 14573,23295 14539,23306 14442,23339
+',
+         'from' => 1521140385,
+         'id' => 2937,
+         'source_id' => '2147342325',
+         'text' => 'Pankgrafenstr./Bahnhofstr.: zwischen Hubertusdamm und Streckfußstr. Baustelle, ggfs. Behinderungen auch für Radfahrer, bis Anfang Mai 2018',
+         'type' => 'handicap',
+         'until' => 1526637600
        }
      
 );

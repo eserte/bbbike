@@ -312,7 +312,7 @@ Wilhelminenhofstr.: Bauarbeiten zwischen Siemensstr. und Edisonstr., Fahrbahn un
 # 
 ### Kreuzberg ###
 # 
-#: last_checked: 2018-03-08
+#: last_checked: 2018-03-15
 Mariannenstr.: Bauarbeiten zwischen Naunynstr. und Mariannenplatz, Fahrbahn Richtung Norden gesperrt	q4::inwork; 11763,10635 11781,10696
 # 
 #: source_id: 2147342287
@@ -2491,8 +2491,7 @@ Falkenberger Str.: Bordstein	q3 15819,16857 15892,16834
 (Neuhausweg - Ramin-Park): einige Fuﬂg‰nger, Bordstein	q2 -3964,14507 -3950,14519
 Fˆlderichplatz: Fuﬂg‰ngerzone	q3 -3942,12559 -3941,12376
 (Marzahner Promenade - Landsberger Allee [Wohngebiet]): Fuﬂg‰nger	q1 20759,15740 20789,15736
-#: note: an der Schlichtallee, Abbremsen notwendig; die Pollerreihe an der eigentlichen Fischerstr. ist unterbrochen und gut umfahrbar
-Fischerstr.: Pollerreihe	q2; 15982,10765 16080,10743
+# REMOVED (-> handicap_s-directed) --- #: note: an der Schlichtallee, Abbremsen notwendig; die Pollerreihe an der eigentlichen Fischerstr. ist unterbrochen und gut umfahrbar --- Fischerstr.: Pollerreihe	q2; 15982,10765 16080,10743
 #: XXX_prog BS, ansonsten q2
 (Wasserweg - Treptower Park): einige Fuﬂg‰nger, Bordstein, Zugang kann zugeparkt sein	q3 15680,8914 15617,8924
 Monumentenplatz: einige Fuﬂg‰nger, Spielplatz	q2 8385,8923 8362,9007 8358,9068
