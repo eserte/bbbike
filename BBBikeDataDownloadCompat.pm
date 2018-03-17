@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2011,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2011,2015,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package BBBikeDataDownloadCompat;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 use Apache2::Const qw(OK DECLINED);
 use Apache2::RequestRec ();
@@ -43,6 +43,8 @@ sub handler : method {
 	open my $fh, "<", $filename
 	    or die "Can't open file <$filename> (should never happen): $!";
 	$r->content_type('text/plain');
+	my($mtime) = (stat($filename))[9];
+	$r->headers_out->{'Last-Modified'} = time2str($mtime);
 	$r->headers_out->{'X-BBBike-Hacks'} = 'NH';
 	while(<$fh>) {
 	    s{\tNH }{\tN };
