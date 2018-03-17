@@ -75,9 +75,9 @@ my $app = sub {
 	return $req->new_response(304)->finalize;
     }
 
-    if ($filename eq 'label') {
+    if ($filename =~ m{^(label|multi_bez_str)$}) {
 	if ($h->header('If-modified-since')) {
-	    warn qq{Faking <data/label> for <$ua>...\n};
+	    warn qq{Faking <$filename> for <$ua>...\n};
 	    return $req->new_response(304)->finalize;
 	}
     }

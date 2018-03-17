@@ -69,12 +69,12 @@ sub get_app {
 		    $writer->close;
 		};
 	    }
-	} elsif ($filename =~ m{/data/label$} && !-e $filename) {
+	} elsif ($filename =~ m{/data/(label|multi_bez_str)$} && !-e $filename) {
 	    if ($h->header('If-modified-since')) {
-		# data/label was removed from MANIFEST some time ago, but some
+		# data/label & multi_bez_str was removed from MANIFEST some time ago, but some
 		# clients maybe still access it
 		# Debugging. Remove some day XXX
-		warn qq{Faking <data/label> for <$ua>...\n};
+		warn qq{Faking <$filename> for <$ua>...\n};
 		return $req->new_response(304)->finalize;
 	    }
 	}

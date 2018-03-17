@@ -51,13 +51,13 @@ sub handler : method {
 	    $r->print($_);
 	}
 	OK;
-    } elsif ($filename =~ m{/data/label$} &&
+    } elsif ($filename =~ m{/data/(label|multi_bez_str)$} &&
 	     !-e $filename &&
 	     $r->headers_in->{'If-modified-since'}) {
-	# data/label was removed from MANIFEST some time ago, but some
+	# data/label & multi_bez_str was removed from MANIFEST some time ago, but some
 	# clients maybe still access it
 	# Debugging. Remove some day XXX
-	warn qq{Faking <data/label> for <$ua>...\n};
+	warn qq{Faking <$filename> for <$ua>...\n};
 	$r->status(304);
 	OK;
     } else {

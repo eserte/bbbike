@@ -206,7 +206,7 @@ ServerName [% VIRTUAL_HOST %]
         </IfDefine>
         <IfDefine !BBBIKE_USE_PLACK_MODPERL>
             PerlModule BBBikeDataDownloadCompat
-            <LocationMatch "^\Q[% ROOT_URL %]/data/\E(strassen|landstrassen|landstrassen2|label)$">
+            <LocationMatch "^\Q[% ROOT_URL %]/data/\E(strassen|landstrassen|landstrassen2|label|multi_bez_str)$">
                 SetHandler perl-script
                 PerlResponseHandler BBBikeDataDownloadCompat->handler
             </LocationMatch>
