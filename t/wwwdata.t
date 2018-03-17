@@ -193,10 +193,14 @@ sub run_test_suite {
 	my $last_modified; # seconds since epoch
 	my @expect_status;
 	if ($simulate_unmodified) {
-	    my $resp = $ua_lwp->head($url);
+	    my $resp = $ua_lwp->head($url, 'User-Agent' => "bbbike/$bbbike_version BBBike-Test/1.0");
 	    $last_modified = $resp->last_modified;
 	    if (!$last_modified) {
-		diag "Cannot get last-modified for $url, expect failures...";
+		if ($url =~ m{/label$}) {
+		    # may be missing
+		} else {
+		    diag "Cannot get last-modified for $url, expect failures...";
+		}
 	    }
 	    @expect_status = (304);
 	} else {
