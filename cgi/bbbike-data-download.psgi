@@ -16,7 +16,7 @@ use warnings;
 
 use Cwd qw(realpath);
 use File::Glob qw(bsd_glob);
-use HTTP::Date qw(time2str);
+use HTTP::Date qw(time2str str2time);
 use Plack::Request ();
 use Plack::Util ();
 
@@ -24,8 +24,7 @@ sub _not_modified {
     my($h, $filename) = @_;
     if (my $if_modified_since = $h->header('If-modified-since')) {
 	my($mtime) = (stat($filename))[9];
-	# RFC 2616 14.25 allows this, see also Plack::Middleware::ConditionalGET
-	if (defined $mtime && $if_modified_since eq time2str($mtime)) {
+	if (defined $mtime && str2time($if_modified_since) >= $mtime) {
 	    return 1;
 	}
     }

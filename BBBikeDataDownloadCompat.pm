@@ -15,12 +15,12 @@ package BBBikeDataDownloadCompat;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 use Apache2::Const qw(OK DECLINED);
 use Apache2::RequestRec ();
 use Apache2::RequestIO ();
-use HTTP::Date qw(time2str);
+use HTTP::Date qw(time2str str2time);
 
 sub handler : method {
     my($class, $r) = @_;
@@ -31,8 +31,7 @@ sub handler : method {
        ) {
 	if (my $if_modified_since = $r->headers_in->{'If-modified-since'}) {
 	    my($mtime) = (stat($filename))[9];
-	    # RFC 2616 14.25 allows this, see also Plack::Middleware::ConditionalGET
-	    if ($if_modified_since eq time2str($mtime)) {
+	    if (str2time($if_modified_since) >= $mtime) {
 		$r->status(304);
 		return OK;
 	    }
