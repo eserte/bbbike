@@ -1,8 +1,22 @@
+[% IF VIRTUAL_HOST;
+       IF !VIRTUAL_PORT;
+           SET VIRTUAL_PORT = 80;
+       END;
+   END;
+-%]
+[% IF VIRTUAL_HOST -%]
+<VirtualHost *:[% VIRTUAL_PORT %]>
+ServerName [% VIRTUAL_HOST %]
+[% END -%]
 [%  IF ALLOW_UNSAFE_HTTP && APACHE_VERSION >= 2.4 -%]
     # XXX needed because of Http.pm < 4.06, which may still access the webserver
     HttpProtocolOptions Unsafe
 
 [%  END -%]
+[% IF USE_PLACK_MODPERL -%]
+    Define BBBIKE_USE_PLACK_MODPERL 1
+[% END -%]
+
 [%  IF    LOCATION_STYLE == "bbbike";
         SET CGI_ROOT_URL = ROOT_URL _ "/cgi";
     ELSIF LOCATION_STYLE == "vhost";
@@ -183,11 +197,20 @@
         #PerlSetVar ReloadDebug On
         PerlSetVar ReloadTouchFile "[% BBBIKE_ROOT_DIR %]/tmp/reload_modules"
 
-        PerlModule BBBikeDataDownloadCompat
-        <LocationMatch "^\Q[% ROOT_URL %]/data/\E(strassen|landstrassen|landstrassen2|label)$">
-            SetHandler perl-script
-            PerlResponseHandler BBBikeDataDownloadCompat->handler
-        </LocationMatch>
+        <IfDefine BBBIKE_USE_PLACK_MODPERL>
+            <Location [% ROOT_URL %]/data>
+                SetHandler perl-script
+                PerlResponseHandler Plack::Handler::Apache2
+                PerlSetVar psgi_app [% BBBIKE_ROOT_DIR %]/cgi/bbbike-data-download.psgi
+            </Location>
+        </IfDefine>
+        <IfDefine !BBBIKE_USE_PLACK_MODPERL>
+            PerlModule BBBikeDataDownloadCompat
+            <LocationMatch "^\Q[% ROOT_URL %]/data/\E(strassen|landstrassen|landstrassen2|label)$">
+                SetHandler perl-script
+                PerlResponseHandler BBBikeDataDownloadCompat->handler
+            </LocationMatch>
+        </IfDefine>
 
         PerlModule BBBikeApacheSessionCountedHandler
         <Location [% CGI_ROOT_URL %]/asch>
@@ -298,3 +321,6 @@
         </Location>
     </IfDefine>
 
+[% IF VIRTUAL_HOST -%]
+</VirtualHost>
+[% END -%]

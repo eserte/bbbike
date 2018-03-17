@@ -8,6 +8,7 @@ ROOT_URL?=		/bbbike
 # NOTE: currently everything else than "cgi" is not recommended and
 #       unlikely to run stable.
 CGI_TYPE?=		cgi
+USE_PLACK_MODPERL!=	perl -le 'print eval { require Plack::Handler::Apache2; 1 } ? 1 : 0'
 LOCATION_STYLE?=	bbbike
 REALPATH_CMD=		perl -MCwd=realpath -le 'print realpath shift'
 .ifndef ROOT_DIR
@@ -44,10 +45,12 @@ $(HTTPD_CONF): httpd.conf.tpl Makefile
 	      --define CGI_SCRIPTS="$(CGI_SCRIPTS)" \
 	      --define DEVEL_CGI_SCRIPTS="$(DEVEL_CGI_SCRIPTS)" \
 	      --define CGI_TYPE="$(CGI_TYPE)" \
+	      --define USE_PLACK_MODPERL="$(USE_PLACK_MODPERL)" \
 	      --define LOCATION_STYLE="$(LOCATION_STYLE)" \
 	      --define OS_STYLE="$(OS_STYLE)" \
 	      --define FS_STYLE="$(FS_STYLE)" \
 	      --define APACHE_VERSION="$(APACHE_VERSION)" \
+	      --define VIRTUAL_HOST="$(VIRTUAL_HOST)" \
 	      --define ALLOW_UNSAFE_HTTP=1 \
 	      httpd.conf.tpl > $(HTTPD_CONF)~
 	chmod 644 $(HTTPD_CONF)~
