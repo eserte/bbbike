@@ -1274,12 +1274,16 @@ if (defined $q->param('begin')) {
 		@no_cache,
 	       );
     for my $def (
-		 ['weekly filecache (e.g. for kml-track)', _get_weekly_filecache()],
-		 ['hourly filecache (e.g. for pdf files)', _get_hourly_filecache()],
+		 ['weekly filecache (e.g. for kml-track)', _get_weekly_filecache(), [only_synced => 1]],
+		 ['hourly filecache (e.g. for pdf files)', _get_hourly_filecache(), []],
 		) {
-	my($label, $file_cache) = @$def;
-	my $res = $file_cache->clean_expired_cache;
-	print "DONE. $res->{count_success} directory/ies deleted in $label, $res->{count_errors} error/s\n";
+	my($label, $file_cache, $extra_args) = @$def;
+	my $res = $file_cache->clean_expired_cache(@$extra_args);
+	print "DONE. $res->{count_success} directory/ies deleted in $label, $res->{count_errors} error/s";
+	if (defined $res->{count_skip_unsynced}) {
+	    print ", skipped $res->{count_skip_unsynced} unsynced directories";
+	}
+	print "\n";
     }
     my_exit(0);
 } elsif (defined $q->param('drawmap')) {
