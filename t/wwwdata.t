@@ -58,6 +58,7 @@ if (!defined &note) { *note = \&diag } # old Test::More compat
 my $htmldir   = $ENV{BBBIKE_TEST_HTMLDIR} || 'http://localhost/bbbike';
 my $long_test = $ENV{BBBIKE_LONG_TESTS};
 my $v;
+my %test_ua;
 GetOptions("htmldir=s" => \$htmldir,
 	   "live"      => sub {
 	       require BBBikeVar;
@@ -72,8 +73,11 @@ GetOptions("htmldir=s" => \$htmldir,
 	       unshift @INC, $_[1];
 	   },
 	   "v"          => \$v,
+	   'ua=s@'      => sub {
+	       $test_ua{$_[1]} = 1;
+	   },
 	  ),
-    or die "usage: $0 [-htmldir ... | -live | -pps] [-long] [-v]";
+    or die "usage: $0 [-htmldir ... | -live | -pps] [-ua ...] [-long] [-v]";
 
 # load after --add-inc processing
 require Http;
@@ -105,19 +109,36 @@ my %done_filesystem_comparison;
 my @diags;
 my $warned_on_400_with_Http_pm;
 
+if (!%test_ua) {
+    $test_ua{LWP} = 1;
+    $test_ua{Http} = 1;
+    if (eval { require HTTP::Tiny; 1 }) {
+	$test_ua{'HTTP::Tiny'} = 1;
+    }
+}
+
+{
+    my %valid_ua = map { ($_,1) } qw(LWP Http HTTP::Tiny);
+    for (keys %test_ua) {
+	die "Invalid --ua: $_" if !$valid_ua{$_};
+    }
+}
+
 for my $do_accept_gzip (0, 1) {
-    my @ua_defs = (
-		   {ua => $ua_lwp,     ua_label => 'LWP',        content_compare => 1},
-		   {ua => $ua_lwp_316, ua_label => 'LWP (3.16)', bbbike_version => 3.16},
-		  );
-    if (
+    my @ua_defs;
+    if ($test_ua{LWP}) {
+	push @ua_defs, {ua => $ua_lwp,     ua_label => 'LWP',        content_compare => 1};
+	push @ua_defs, {ua => $ua_lwp_316, ua_label => 'LWP (3.16)', bbbike_version => 3.16};
+    }
+    if ($test_ua{Http} &&
 	($Http::http_defaultheader =~ /gzip/ &&  $do_accept_gzip) ||
 	($Http::http_defaultheader !~ /gzip/ && !$do_accept_gzip)
        ) {
 	push @ua_defs, {ua => $ua_http, ua_label => 'Http',        content_compare => 1};
 	push @ua_defs, {ua => $ua_http, ua_label => 'Http (3.16)', bbbike_version => 3.16};
     }
-    if (!$do_accept_gzip && eval { require HTTP::Tiny; 1 }) {
+    if ($test_ua{'HTTP::Tiny'} && !$do_accept_gzip) {
+	require HTTP::Tiny;
 	my $ua_tiny = HTTP::Tiny->new(agent => "bbbike/3.18 (HTTP::Tiny/$HTTP::Tiny::VERSION) ($^O) BBBike-Test/1.0");
 	push @ua_defs, {ua => $ua_tiny, ua_label => 'HTTP::Tiny', content_compare => 1};
     }
