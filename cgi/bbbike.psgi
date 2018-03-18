@@ -25,6 +25,7 @@ use lib $root;
 use BBBikeDataDownloadCompatPlack ();
 
 use constant USE_FORK_NOEXEC => $ENV{USE_FORK_NOEXEC};
+use constant USE_NEW_DATA_DOWNLOAD => $ENV{BBBIKE_USE_NEW_DATA_DOWNLOAD};
 BEGIN {
     if (USE_FORK_NOEXEC) {
 	warn "Preloading...\n";
@@ -139,8 +140,13 @@ builder {
 	    )->to_app;
 	}
     }
-    
-    $app = mount "/bbbike/data" => BBBikeDataDownloadCompatPlack::get_app("$root/data");
+
+    if (USE_NEW_DATA_DOWNLOAD) {
+	my $new_data_download_app = do "$root/cgi/bbbike-data-download.psgi";
+	$app = mount "/bbbike/data" => $new_data_download_app;
+    } else {
+	$app = mount "/bbbike/data" => BBBikeDataDownloadCompatPlack::get_app("$root/data");
+    }
 
     $app = mount "/bbbike" => Plack::App::File->new(root => $root, encoding => 'iso-8859-1')->to_app;
 
