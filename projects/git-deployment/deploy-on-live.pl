@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014,2016,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2016,2017,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -514,3 +514,19 @@ __END__
 # messages will tell so otherwise)
 #
 # XXX Maybe do some changes to the online branch (html/newstreetform* changes, ignoring t/.prove)
+#
+# REGULAR RUNS:
+#
+# Currently the regular deployment looks like this:
+#
+#     reset; /root/work/bbbike-webserver-staging/BBBike/projects/git-deployment/deploy-on-live.pl --init-other --test-jobs=3 --log-dir=/var/tmp
+# 
+# PROBLEMS:
+#
+# * Test failures which would be fixed by reloading modperl handlers
+#
+# The problem is that staging + live share the same modperl handlers,
+# namely the set from the live directory. So during a normal
+# deployment the old code, test-failure causing is used, and the
+# switch never happens because of the test failures. In this situation
+# the option --skip-tests has to be used.
