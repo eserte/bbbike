@@ -417,8 +417,11 @@
   (interactive)
   (if (null url)
       (setq url (bbbike--get-url-under-cursor)))
-  (if (and bbbike-view-url-prefer-cached
-	   (not (string-match "^http://www.dafmap.de/" url)))
+  (if (or (and bbbike-view-url-prefer-cached
+	       (not (string-match "^http://www.dafmap.de/" url)) ; depends on additional non-cached javascript files, cached version is not usable
+	       )
+	  (string-match "/___tmp/tmp/" url) ; temporary berlin.de URLs, usually only valid for a few minutes
+	  )
       (bbbike-view-cached-url url)
     (bbbike-view-remote-url url)))
 
