@@ -15,10 +15,13 @@ use strict;
 use warnings;
 
 use Cwd qw(realpath);
+use File::Basename qw(dirname);
 use File::Glob qw(bsd_glob);
 use HTTP::Date qw(time2str str2time);
 use Plack::Request ();
 use Plack::Util ();
+
+my $bbbike_rootdir  = dirname(dirname(__FILE__));
 
 sub _not_modified {
     my($h, $filename) = @_;
@@ -39,7 +42,6 @@ my $app = sub {
     my $ua = $h->header('User-Agent');
     my $filename = $req->request_uri;
 
-    my $bbbike_rootdir  = "/home/eserte/src/bbbike"; # XXX config?
     my $old_data_dir    = "$bbbike_rootdir/tmp/old-bbbike-data";
     my $normal_data_dir = "$bbbike_rootdir/data";
 
