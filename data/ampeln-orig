@@ -154,7 +154,7 @@
 	X 16049,10844
 	X 15639,10469
 	X 16468,10695
-	X 18286,11275
+	X 18280,11266
 #: XXX_prog: in O-W und W-O-Richtung verliert man garantiert 1:30 min, wenn man auf dem Radweg (Benutzungsplicht!) fährt
 	X 18215,11690
 	X 18215,12123
@@ -1649,8 +1649,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 16314,14361
 	F 15562,14869
 # REMOVED (Fußgängerampel ist jetzt etwas weiter südwestlich) ---	X 16331,15486
+#: note: Anforderung für rechtsabbiegende Radfahrer in den Arendsweg
 	X 17254,14451
 	X 17488,15766
+#: note: Anforderung für Radfahrer aus beiden Richtungen zur Ferdinand-Schultze-Str.
 	X 17848,14523
 	X 18558,14680
 	X 19681,15405
@@ -1868,7 +1870,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 5618,14981
 	F 17810,5736
 #: note: Anforderung für linksabbiegende Radfahrer aus der Treskowallee in den Gregoroviusweg
-	X 18742,9903
+	X 18740,9907
 	X 10405,9795
 	X 9972,12184
 #: note: keine Anforderungsampel

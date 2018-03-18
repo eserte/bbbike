@@ -409,7 +409,7 @@ Herbert-Tsch‰pe-Str.	1 14465,14210 14510,14104
 Strausberger Platz	1 11976,12595 12005,12619 12050,12616 12099,12580 12114,12546 12083,12518 12028,12519 11988,12546 11976,12595
 Magirusstr.	1 8199,6583 7985,6598
 Cecilieng‰rten	1 6256,7428 6241,7428 6238,7645 6257,7646 6272,7645 6289,7472 6291,7429 6256,7428
-Ingelheimer Str.	1 18891,8586 18951,8574 19030,8559
+Ingelheimer Str.	1 18891,8586 18951,8574 19022,8571 19075,8590
 Gleyeweg	1 17566,8199 17532,8125 17529,8073 17613,7989 17651,7973 17683,7958 17762,7931
 Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 19599,14273 19595,14348 19593,14405 19593,14452
 Murtzaner Ring	1 19818,14064 19843,14064 19921,14064 19951,14083 20040,14179
@@ -1954,7 +1954,7 @@ Parkweg Heinrich-Lassen-Park -> Hauptstr.: Mittelstreifen	3::igndisp 6818,8697 6
 Straﬂenbahntrasse	3nocross::ignrte 18585,10278 18554,10354 18446,10620
 Otto-Schmirgal-Str. -> Am Tierpark: Straﬂenbahntrasse	3::igndisp 18512,10337 18554,10354 18446,10620
 Am Tierpark -> Otto-Schmirgal-Str.: Straﬂenbahntrasse	3::igndisp 18585,10278 18554,10354 18512,10337
-Straﬂenbahntrasse	3nocross::ignrte 18286,11275 18263,11393 18216,11656
+Straﬂenbahntrasse	3nocross::ignrte 18280,11266 18263,11393 18216,11656
 Am Tierpark -> Am Tierpark [zur Nebenfahrbahn]: Straﬂenbahntrasse	3::igndisp 18216,11656 18263,11393 18304,11407
 Mittelstreifen ohne ‹berquerungshilfe	3nocross::ignrte 12497,11459 12539,11416 12576,11375 12641,11288
 M¸hlenstr. -> Am Postbahnhof: Mittelstreifen ohne ‹berquerungshilfe	3::igndisp 12497,11459 12539,11416 12594,11467
@@ -2934,7 +2934,7 @@ Dr‰ngelgitter	BNP:3:78:trailer=10 22097,5879
 S-Bahn-Unterf¸hrung: zurzeit gesperrt, hier wird in Zukunft ein Steg verlaufen	2::inwork 4117,22722 4176,22764
 Zum Groﬂen Herzberg (Potsdam-Golm): Straﬂe wird noch gebaut	2::inwork -18017,333 -18026,357 -18049,424
 Wartenbergstr.	1s:inwork 15423,11667 15337,11639 15328,11636 15300,11584
-Anni-Frid-Weg: Baustelle, gesperrt	2::inwork 17262,15056 17317,15059 17345,15061
+Anni-Frid-Weg: Baustelle, gesperrt	2::inwork 17227,15054 17262,15056 17317,15059 17345,15061
 Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12677,-1536 -12685,-1449
 Friedenshorster Str.: Einbahnstraﬂe wegen Bauarbeiten	1s:inwork 18296,10027 18312,9985 18301,9946
 Friedenshorster Str.: Einbahnstraﬂe wegen Bauarbeiten	1s:inwork 18301,9946 18266,9853
@@ -2976,8 +2976,8 @@ Clara-von-Simson-Str.: noch gesperrt	2 7652,14257 7757,14318 7802,14250 7697,141
 Weg nach Tiefwerder: kein Zugang wegen der Ersatzbr¸cke	2::inwork -3179,11763 -3217,11570
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 Rummelsburger Platz: zur H‰lfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
-Frauenauer Str.: Straﬂe fertig, aber noch gesperrt	2::inwork 19663,9757 19858,9784
-Kirchdorfer Str.: Straﬂe fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9784 19871,9680
+Frauenauer Str.: Straﬂe fertig, aber Zufahrt von der Zwieseler Str. noch gesperrt	2::inwork 19663,9757 19858,9784
+Kirchdorfer Str.: Straﬂe fertig, aber Verbindung zur Teisnacher Str. noch gesperrt	2::inwork 19842,9895 19858,9784 19871,9680
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 Sterndamm: Eisenbahnunterf¸hrung in Richtung Groﬂ-Berliner Damm/S¸dostallee gesperrt	1::inwork 17886,5587 17736,5441
 Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,6895 14153,6795
@@ -3301,10 +3301,10 @@ Groscurthstr.	1 16369,25230 16458,25193 16428,25107
 Sonnenallee	3nocross::ignrte 14617,7243 14693,7168 14752,7108 14803,7056
 Sonnenallee -> Krebsgang: Sonnenallee	3::igndisp 14617,7243 14693,7168 14792,7192
 Krebsgang -> Sonnenallee: Sonnenallee	3::igndisp 14792,7192 14693,7168 14752,7108
-Straﬂenbahntrasse	3nocross::ignrte 18631,10167 18694,10018 18703,9997 18742,9903
+Straﬂenbahntrasse	3nocross::ignrte 18631,10167 18694,10018 18703,9997 18740,9907
 Treskowallee -> Zur Ontarioseestr.: Straﬂenbahntrasse	3::igndisp 18703,9997 18694,10018 18585,10024
 Zur Ontarioseestr. -> Am Tierpark: Straﬂenbahntrasse	3::igndisp 18585,10024 18694,10018 18631,10167
-Treskowallee -> Weg entlang der Bahnstrecke: Straﬂenbahntrasse	3::igndisp 18742,9903 18703,9997 18445,9887
+Treskowallee -> Weg entlang der Bahnstrecke: Straﬂenbahntrasse	3::igndisp 18740,9907 18703,9997 18445,9887
 Treskowallee -> Richard-Kolkwitz-Weg: Straﬂenbahntrasse	3::igndisp 18694,10018 18703,9997 18708,10000
 Weg entlang der Bahnstrecke -> Treskowallee: Straﬂenbahntrasse	3::igndisp 18445,9887 18703,9997 18694,10018
 Weg entlang der Bahnstrecke -> Richard-Kolkwitz-Weg: Straﬂenbahntrasse	3::igndisp 18445,9887 18703,9997 18708,10000
@@ -3530,7 +3530,7 @@ Am Tierpark, linker Gehweg	1::igndisp 18715,10003 18647,10172
 Treskowallee, linker Gehweg	1::igndisp 18748,9922 18715,10003
 Treskowallee, linker Gehweg	1::igndisp 18672,8238 18642,8169 18567,8041
 Treskowallee, linker Gehweg	1::igndisp 18406,7760 18650,8111
-Kreuzung Gregoroviusweg/Treskowallee	1::igndisp 18742,9903 18748,9922
+Kreuzung Gregoroviusweg/Treskowallee	1::igndisp 18740,9907 18748,9922
 Alt-Friedrichsfelde, linker Gehweg	1::igndisp 18216,11656 18520,11685 18624,11712 18778,11742 19005,11767 19735,11721
 Alt-Friedrichsfelde, linker Gehweg	1::igndisp 18624,11712 18626,11742
 Landsberger Allee, linker Gehweg	1::igndisp 15430,14272 15256,14237

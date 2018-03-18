@@ -593,7 +593,7 @@ Herbert-Tsch‰pe-Str.	1 14465,14210 14510,14104
 Strausberger Platz	1 11976,12595 12005,12619 12050,12616 12099,12580 12114,12546 12083,12518 12028,12519 11988,12546 11976,12595
 Magirusstr.	1 8199,6583 7985,6598
 Cecilieng‰rten	1 6256,7428 6241,7428 6238,7645 6257,7646 6272,7645 6289,7472 6291,7429 6256,7428
-Ingelheimer Str.	1 18891,8586 18951,8574 19030,8559
+Ingelheimer Str.	1 18891,8586 18951,8574 19022,8571 19075,8590
 Gleyeweg	1 17566,8199 17532,8125 17529,8073 17613,7989 17651,7973 17683,7958 17762,7931
 Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 19599,14273 19595,14348 19593,14405 19593,14452
 Murtzaner Ring	1 19818,14064 19843,14064 19921,14064 19951,14083 20040,14179
@@ -1758,7 +1758,7 @@ Linksabbiegen in den Wolfensteindamm gef‰hrlich/unbequem	3nocross 4772,5069 4692
 Hauptstr.: Mittelstreifen	3nocross 6687,8385 6765,8480 6912,8617 6989,8687
 #: by: Jirka Klaue:
 Am Tierpark: Straﬂenbahntrasse	3nocross 18585,10278 18554,10354 18446,10620
-Am Tierpark: Straﬂenbahntrasse	3nocross 18286,11275 18263,11393 18216,11656
+Am Tierpark: Straﬂenbahntrasse	3nocross 18280,11266 18263,11393 18216,11656
 M¸hlenstr.: Mittelstreifen ohne ‹berquerungshilfe	3nocross 12497,11459 12539,11416 12576,11375 12641,11288
 M¸hlenstr.: Mittelstreifen ohne ‹berquerungshilfe	3nocross 12990,11006 13080,10956 13144,10921
 M¸hlenstr.: Mittelstreifen	3nocross 12908,11058 12848,11093 12793,11132 12736,11186
@@ -2853,10 +2853,12 @@ Zum Groﬂen Herzberg (Potsdam-Golm): Straﬂe wird noch gebaut	2::inwork -18017,333
 Wartenbergstr.	1s:q2:inwork 15423,11667 15337,11639 15328,11636 15300,11584
 # REMOVED --- Wartenbergstr.: Fahrbahn gesperrt, auf Gehweg ausweichen	q3:inwork 15337,11639 15328,11636 15300,11584
 # 
+#: next_check_id: ABBA-2018
 #: osm_watch: way id="497699542" version="7"
 #: XXX auﬂerdem: wird es einen Sackgassenabschnitt geben? Hier oder am Bjˆrnweg?
-#: last_checked: 2018-01-14
-Anni-Frid-Weg: Baustelle, gesperrt	2::inwork 17262,15056 17317,15059 17345,15061
+#: last_checked: 2018-03-18
+#: check_frequency: 45d
+Anni-Frid-Weg: Baustelle, gesperrt	2::inwork 17227,15054 17262,15056 17317,15059 17345,15061
 # 
 #: by: osm
 #: by: https://www.potsdam.de/sites/default/files/documents/17554_amtsblatt_de2017_nr13_dsjs_korr2.pdf (Einziehung von Straﬂenland)
@@ -2865,7 +2867,7 @@ Anni-Frid-Weg: Baustelle, gesperrt	2::inwork 17262,15056 17317,15059 17345,15061
 #: next_check: 2018-06-01
 Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12677,-1536 -12685,-1449
 # 
-#: last_checked: 2018-02-04 vvv
+#: last_checked: 2018-03-18 vvv
 Friedenshorster Str.: Einbahnstraﬂe wegen Bauarbeiten	1s:q2:inwork 18296,10027 18312,9985 18301,9946
 Friedenshorster Str.: Einbahnstraﬂe wegen Bauarbeiten	1s:q3:inwork 18301,9946 18266,9853
 #: last_checked ^^^
@@ -2937,7 +2939,7 @@ Mauerstr.: Bauarbeiten, Einbahnstraﬂe	1s:q4:inwork 9108,11961 9138,11872
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/rigaer-strasse-soll-temporaer-wieder-passierbar-sein-d140803.html
 #: by: http://friedrichshainblog.de/rigaer-wieder-passierbar/
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.677127.php (÷ffnung nachts (17-6) und am Wochenende, erstmal bis Juli 2018)
-#: last_checked: 2018-02-21
+#: last_checked: 2018-03-18
 #: next_check: 2018-07-01
 #: valid: 20180701-20190228
 #: priority: #A
@@ -3218,14 +3220,14 @@ Rummelsburger Platz: zur H‰lfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 # 
 #: osm_watch: way id="193373934" version="11"
 #: osm_watch: node id="5454372526" version="1"
-#: last_checked: 2018-01-06
-Frauenauer Str.: Straﬂe fertig, aber noch gesperrt	2::inwork 19663,9757 19858,9784
+#: last_checked: 2018-03-18
+Frauenauer Str.: Straﬂe fertig, aber Zufahrt von der Zwieseler Str. noch gesperrt	2::inwork 19663,9757 19858,9784
 # 
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_44_4909_5120_online.pdf (Widmung von Straﬂenland)
 #: osm_watch: way id="290255259" version="6"
 #: osm_watch: node id="5454372525" version="1"
-#: last_checked: 2018-01-06
-Kirchdorfer Str.: Straﬂe fertig, aber noch gesperrt	2::inwork 19842,9895 19858,9784 19871,9680
+#: last_checked: 2018-03-18
+Kirchdorfer Str.: Straﬂe fertig, aber Verbindung zur Teisnacher Str. noch gesperrt	2::inwork 19842,9895 19858,9784 19871,9680
 # 
 # REMOVED --- #: osm_watch: way id="24845189" version="13" --- #: last_checked: 2016-09-11 --- #: check_frequency: 60d --- Viechtacher Str.: Straﬂe fertig, aber noch gesperrt	2::inwork 19801,9680 19871,9680 19923,9682
 # REMOVED --- #: last_checked: 2016-07-23 vvv --- #: check_frequency: 60d vvv
@@ -3614,8 +3616,8 @@ Walter-Friedrich-Str.	1 16428,25107 16333,25147 16292,25164 16261,25178 16172,25
 Groscurthstr.	1 16369,25230 16458,25193 16428,25107
 #: by: Martha Wimmer [AM]
 Sonnenallee	3nocross 14617,7243 14693,7168 14752,7108 14803,7056
-Treskowallee: Straﬂenbahntrasse	3nocross 18631,10167 18694,10018 18703,9997 18742,9903
-# REMOVED --- Treskowallee: Straﬂenbahntrasse	3nocross 18807,9746 18763,9837 18742,9903
+Treskowallee: Straﬂenbahntrasse	3nocross 18631,10167 18694,10018 18703,9997 18740,9907
+# REMOVED --- Treskowallee: Straﬂenbahntrasse	3nocross 18807,9746 18763,9837 18740,9907
 #: by: Christian Schweda [AM]
 #: confirmed_by: srt
 Treskowallee: Straﬂenbahn	3nocross 18878,9517 18875,9570 18865,9608 18823,9708

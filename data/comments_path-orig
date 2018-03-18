@@ -297,7 +297,7 @@ Ellwanger Str. - Attilastr.: Attilastr. in Hˆhe der Neckarsulmer Str. ¸berqueren
 Attilastr. - Ellwanger Str.: bereits an der Rottweiler Str. die Straﬂenseite wechseln	PI; 7368,4342 7410,4373 7450,4397 7382,4503
 # REMOVED (existiert) --- #: XXX direkte ‹berquerung scheint in Bau zu sein vvv --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036788094107/788094107/00079308/08-Anlagen/02/vzbbvv1018_IV_Radwegekonzept.pdf --- #: last_checked: 2015-06-21 vvv --- Wuhlewanderweg/Landsberger Allee: den linken B¸rgersteig bis zur Ampel benutzen	CP; 22657,16287 22631,16215 22696,16208 --- Wuhlewanderweg/Landsberger Allee: bereits an der Ringenwalder Str. die Landsberger Allee ¸berqueren	PI; 22495,16165 22631,16215 22657,16287 --- #: last_checked ^^^ --- #: XXX ^^^
 # REMOVED (-> routing_helper) --- Sewanstr. - Bahndamm: An der Kreuzung Am Tierpark/Sewanstr. auf die "Tierpark"-Straﬂenseite wechseln	PI; 18631,10167 18690,10016 18703,9997 18708,10000 18715,10003 18773,10028
-Bahndamm - Am Tierpark: auf dem linken Gehweg bis zur Ampel Gregoroviusweg fahren	CP; 18773,10028 18715,10003 18708,10000 18703,9997 18742,9903
+Bahndamm - Am Tierpark: auf dem linken Gehweg bis zur Ampel Gregoroviusweg fahren	CP; 18773,10028 18715,10003 18708,10000 18703,9997 18740,9907
 # REMOVED (lohnt sich nicht; erheblicher Umweg, und wird leider nicht im Routing gut reflektiert) --- nach links zum Bahndamm abbiegen: bis zur Kreuzung Gregoroviusweg vorfahren und dort die Straﬂe ¸berqueren	PI; 18577,10023 18690,10016 18703,9997 18708,10000 18715,10003 18773,10028
 Treskowallee - Rˆmerweg: bereits an der Ampel Rˆmerweg die Straﬂenseite wechseln	PI; 18807,9746 18823,9708 18994,9707
 #: by: Thiemo Guenther:
@@ -508,7 +508,7 @@ Streitstr. - Reuﬂstr: bereits an der Ampel Goltzstr. auf den linken Gehweg wechs
 Treskowallee - Traberweg: bereits an der Ampel Hegemeisterweg auf den linken Gehweg wechseln	PI; 18406,7760 18577,8033 18567,8041 18490,8104
 # REMOVED (weil die Routingengine mit der doppelten Sperrung nicht zurechtkommt, eine Route Traberweg - Treskowallee - Weg an der Trabrennbahn kˆnnte berechnet werden -> siehe routing_helper-orig-Eintrag) --- Traberweg - Treskowallee: den linken Gehweg bis zur Kreuzung Ehrlichstr. benutzen	CP; 18490,8104 18567,8041 18577,8033 18633,8126 18657,8163 18676,8236
 Columbiadamm - Straﬂe 645: ggfs. bereits an der Ampel Columbiadamm/Fontanestr. auf den linken Gehweg wechseln	PI; 11632,8302 11512,8278 11424,8284 11434,8194 11419,8077
-Am Tierpark [Nebenfahrbahn] - Am Tierpark: den linken Gehweg bis zur Ampel benutzen	CP; 18304,11407 18263,11393 18286,11275
+Am Tierpark [Nebenfahrbahn] - Am Tierpark: den linken Gehweg bis zur Ampel benutzen	CP; 18304,11407 18263,11393 18280,11266
 Salvador-Allende-Str. - Abzweig: bereits an der Ampel F¸rstenwalder Damm auf den linken Gehweg wechseln	PI; 23402,5483 23403,5385 23428,5382
 Abzweig - Salvador-Allende-Str.: auf den linken Gehweg bis zur Ampel Friedrichshagener Str. fahren	CP; 23428,5382 23403,5385 23404,5325
 #: XXX wird eventuell im Zuge der Maﬂnahme Nsw.3 verbessert
@@ -611,7 +611,7 @@ nicht ausgeschildert, Einfahrt zum Weg ca. 430m hinter der Kreuzung Karpfenteich
 Schulze-Boysen-Str. - Ruschstr.: Fuﬂg‰ngerampel auf der linken Seite benutzen	CP; 15836,11840 15863,11992 15879,12131
 # 
 #: next_check_id: ZUMBETRIEBSBHF-2017 vvv
-#: last_checked: 2018-03-15 vvv
+#: last_checked: 2018-03-18 vvv
 ausgeschildert "zur Salzmannstraﬂe Huronseestraﬂe"	CP2; 16900,9861 16895,9922
 ausgeschildert "zur Sewanstraﬂe"	CP2; 16900,9861 17041,9985
 #: last_checked ^^^

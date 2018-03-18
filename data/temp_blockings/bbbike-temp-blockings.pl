@@ -20164,7 +20164,7 @@ EOF
        text  => 'Alfred-Kowalke-Str.: Bauarbeiten, teilweise muss auf den Gehweg ausgewichen werden',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 18286,11275 18229,11256 18202,11253 18061,11240
+	q4::inwork 18280,11266 18229,11256 18202,11253 18061,11240
 EOF
      },
      { from  => 1320534000, # 2011-11-06 00:00
@@ -20966,7 +20966,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20120914.1355.375249.html',
        data  => <<EOF,
-	2::inwork 18286,11275 18421,11344 18477,11388 18619,11463
+	2::inwork 18280,11266 18421,11344 18477,11388 18619,11463
 EOF
      },
      { from  => 1378958400, # 2013-09-12 06:00
@@ -21014,7 +21014,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-lichtenberg/presse/archiv/20120921.1525.375622.html',
        data  => <<EOF,
-	q4::inwork 18988,8792 19073,8828 19116,8846 19163,8867 19299,8946 19500,9043 19621,9097
+	q4::inwork 18988,8792 19073,8828 19116,8845 19164,8863 19299,8946 19500,9043 19621,9097
 EOF
      },
      { from  => 1348376400, # 2012-09-23 07:00

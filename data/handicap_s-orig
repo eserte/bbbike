@@ -289,7 +289,7 @@ Rathausstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10584,12507 10601,12521
 # REMOVED --- #: XXX nach den Bauarbeiten vermutlich bessere Qualit‰t --- #: last_checked: 2016-12-10 --- Andernacher Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 19155,8631 19249,8662
 # 
 #: next_check_id: TRESKOWALLEE-2017 vvv
-#: last_checked: 2018-02-04 vvv
+#: last_checked: 2018-03-18 vvv
 #: check_frequency: 90d vvv
 #: valid: -20201231 vvv
 #: priority: #A vvv
@@ -452,7 +452,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung S¸de
 # REMOVED (anscheinend schon beendet) --- #: last_checked: 2014-05-06 --- #: next_check: 2014-05-31 (Bauarbeiten bis Mai 2014) --- #: valid: -20140531 --- Archibaldweg: Bauarbeiten zwischen Leopoldstr. und Rupprechtstr. Richtung Nordosten	q3::inwork; 15950,10987 16034,11053
 # REMOVED (wieder Einbahnstraﬂe) --- #: source_id: IM_024674 --- #: last_checked: 2015-04-26 --- #: next_check: 2015-04-30 --- #: priority: #A --- Archibaldweg: Bauarbeiten, teilweise ¸ber Gehweg ausweichen	q2::inwork 15674,10851 15870,10938
 # REMOVED (nicht mehr Einbahnstraﬂe) --- #: osm_watch: way id="31526264" version="6" --- #: last_checked: 2015-04-08 --- #: check_frequency: 30d --- Stadthausstr.: Bauarbeiten, Einbahnstraﬂe, Richtung Tuchollaplatz gesperrt	q3::inwork; 15681,10801 15674,10851
-# REMOVED (Bauarbeiten sind beendet) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120217.1445.366291.html --- #: osm_watch: way id="7543672" version="17" --- #: XXX ad osm_watch: ab version=17 wieder als befahrbar markiert, aber das stimmt nicht ganz --- #: last_checked: 2013-06-24 --- #: check_frequency: 45d --- Radweg Herzberge: wegen Bauarbeiten m¸ssen teilweise Trampelpfade benutzt werden	q4::inwork 17154,14093 17219,14133 17266,14144
+# REMOVED (Bauarbeiten sind beendet) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120217.1445.366291.html --- #: osm_watch: way id="7543672" version="17" --- #: XXX ad osm_watch: ab version=17 wieder als befahrbar markiert, aber das stimmt nicht ganz --- #: last_checked: 2013-06-24 --- #: check_frequency: 45d --- Radweg Herzberge: wegen Bauarbeiten m¸ssen teilweise Trampelpfade benutzt werden	q4::inwork 17154,14093 17219,14133 17267,14146
 # REMOVED (man kann eigentlich schon problemlos durch) --- #: last_checked: 2013-11-26 vvv --- #: next_check: 2013-12-03 vvv --- #: priority: #A vvv --- Parkaue: Bauarbeiten, ggfs. auf Gehweg ausweichen	q4::inwork 15399,12444 15457,12449 15535,12420 --- Am Stadtpark: Bauarbeiten, ggfs. auf Gehweg ausweichen	q3::inwork 15457,12449 15454,12519 --- #: priority ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (beendet) --- #: last_checked: 2013-10-29 --- #: next_check: 2013-12-15 (laut Schild bis Dezember 2013) --- #: priority: #A --- Kriemhildstr.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 17337,12428 17320,12308
 # 
@@ -2015,7 +2015,7 @@ Waltershauser Str.: gemeinsamer Rad- und Gehweg, einige Fuﬂg‰nger	q1 6534,1702 6
 (Gallwitzallee - Geraerstr./Trippsteinstr.): einige Fuﬂg‰nger	q1 6759,2137 6722,2096 6695,2037 6534,1702 6526,1688
 (Seydlitzstr., Verl‰ngerung): einige Fuﬂg‰nger	q1 6597,2157 6695,2037
 (Hospitalgrabenpark): Fuﬂg‰nger, Radfahren offiziell verboten	q4 7105,3040 7127,3077 7184,3142 7264,3122 7365,3199
-(Landschaftspark Herzberge - Arendsweg): Trampelpfad, Bordstein	q4 17266,14144 17287,14152 17323,14154 17330,14163
+# REMOVED --- (Landschaftspark Herzberge - Arendsweg): Trampelpfad, Bordstein	q4 17267,14146 17264,14178
 (Genslerstr. - Landsberger Allee): Fuﬂg‰nger	q2 16669,14438 16665,14420 16644,14401 16632,14390
 Schweriner Ring [9-19 ungerade]: enge Straﬂe	q1 17444,19115 17259,19121
 (Weg auf dem L‰rmschutzwall): Rampen, nicht sehr breit	q1 16665,19021 16699,19090 17197,18473 17275,18356 17564,18010 17585,17963

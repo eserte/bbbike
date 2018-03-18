@@ -867,10 +867,12 @@ Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22351
 #: last_checked: 2017-12-03
 Frankfurter Allee: Zweirichtungsradweg	?::projected; 15717,12010 15670,12022
 # 
-#: osm_watch: way id="31525575" version="16"
 #: osm_watch: way id="51872061" version="27"
-#: last_checked: 2018-02-04
-Wallensteinstr.: Asphaltstreifen	?::projected 17360,9629 17425,9605 17456,9594 17549,9529 18037,9195
+#: last_checked: 2018-03-18
+Wallensteinstr.: Asphaltstreifen --- auch in die andere Richtung?	?::projected; 18037,9195 17549,9529
+#: osm_watch: way id="31525575" version="16"
+#: last_checked: 2018-03-18
+Wallensteinstr.: Asphaltstreifen	?::projected 17549,9529 17456,9594 17425,9605 17360,9629
 # 
 #: XXX oder ist die andere Seite vor Pablo-Picasso-Str. gemeint?
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
@@ -1201,9 +1203,8 @@ Karlinekenweg: neue Straße, Qualität, genaue Lage?	? 11359,20297 11409,20191 114
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.635149.php (erste beiden Bauphasen)
 #: XXX Umsetzung bis 2017
 #: source_id: 2147342262
-#: last_checked: 2018-01-27 vvv
-#: next_check: 2018-03-15
-Landsberger Allee: Ausbau der Radwege	? 18057,14549 17848,14523 17533,14484 17254,14451
+#: last_checked: 2018-03-18 vvv
+# REMOVED (realisiert) --- #: next_check: 2018-03-15 --- Landsberger Allee: Ausbau der Radwege	? 18057,14549 17848,14523 17533,14484 17254,14451
 #: next_check: 2018-04-01
 Landsberger Allee: Ausbau der Radwege	? 17254,14451 17055,14432 16852,14412
 #: check_frequency: 90d
@@ -1212,9 +1213,9 @@ Landsberger Allee: Ausbau der Radwege	? 16852,14412 16632,14390 16590,14386 1631
 # 
 #: XXX evtl. im Zusammenhang des Bebauungsplans 11-123
 #: osm_watch: way id="25793149" version="15"
-#: last_checked: 2018-01-14
+#: last_checked: 2018-03-18
 #: check_frequency: 120d
-Baumarkt (?) wird gebaut: wird es eine Durchfahrmöglichkeit geben?	?::inwork 17010,14269 17060,14255 17199,14269
+Baumarkt (?) wird gebaut: wird es eine Durchfahrmöglichkeit geben?	?::inwork 17010,14269 17060,14255 17198,14269
 # 
 # REMOVED (keine Ausschilderung gesehen) --- #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.466174.php --- #: by: http://www.berlin.de/ba-spandau/_assets/ueber-den-bezirk/16-04-07-havel-radweg-schifffahrtsufer-umleitung.jpg --- #: XXX und prüfen, ob dieser Abschnitt tatsächlich asphaltiert ist --- #: last_checked: 2016-10-08 --- Schifffahrtsufer: heißt dieser Abschnitt auch Hermann-Oxfort-Promenade?	? -3529,13452 -3546,13503 -3556,13582 -3544,13692 -3504,13775
 # 
@@ -1678,8 +1679,7 @@ Kanalstr.: Bau eines Geh- und Radwegs	?::projected 18111,2135 18101,2164 17928,2
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/450810361071832706/1071832706/00108526/26-Anlagen/02/246-2013-1Anlage1XVII-50aaB-PlanBlatt1-2.pdf
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straßenname)
 #: XXX PLZ=10318 laut DPAG-Mitteilungsblatt
-#: XXX es existiert eine Baustraße, Tor ist aber gesperrt
-#: last_checked: 2018-01-06
+#: last_checked: 2018-03-18
 #: check_frequency: 180d
 Planstraße 9: evtl. Fortsetzung der Regener Str.? Qualität etc?	?::projected 19705,9039 19806,9040 19863,9073 19870,9079 19874,9151
 # 
@@ -1869,7 +1869,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: osm_watch: way id="46039447" version="14"
 #: osm_watch: way id="456120288" version="2"
 #: source_id: 2147342174
-#: last_checked: 2017-11-05
+#: last_checked: 2018-03-18
 #: next_check: 2019-03-01
 Treskowallee: Bau von Radwegen	?::projected; 18704,8427 18731,8577 18733,8633
 # 
@@ -2112,9 +2112,10 @@ Fraenkelufer: Neugestaltung des Uferwegs, Verbindung zum Böcklerpark	?::projecte
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.676190.php
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.675874.php
+#: by: http://www.berliner-woche.de/hansaviertel/verkehr/hitzige-debatte-planer-und-buerger-diskutieren-ueber-das-bauvorhaben-spreeradweg-d144598.html (Bauarbeiten beginnen 2019 und dauern 18 Monate)
 #: XXX genauer Abschnitt?
 #: last_checked: 2018-03-11
-#: check_frequency: 60d
+#: next_check: 2019-03-01
 Uferweg am Schleswiger Ufer: Verbreiterung & Asphaltierung	?::projected 6182,12900 6123,12887 6045,12830 6001,12699 5940,12564 5796,12372 5714,12290
 # 
 #: section ^^^
@@ -2163,7 +2164,8 @@ Schweizer Botschaft: Rückbau geplant	?::projected 8206,12757 8204,12816 8168,128
 # REMOVED (realisiert) --- #: by: http://www.berliner-woche.de/neukoelln/verkehr/barriere-fuer-fahrradfahrer-d140650.html (Februar 2018) --- #: next_check: 2018-02-15 --- Weichselplatz: Drängelgitter werden gebaut	? 12845,9304 12862,9273 12909,9085 12902,9066
 # 
 #: by: http://www.berliner-woche.de/karlshorst/verkehr/bauschwerpunkt-bahnhof-karlshorst-einschraenkungen-fuer-autofahrer-und-s-bahnkunden-d142323.html
-#: next_check: 2018-03-01
+#: last_checked: 2018-03-18
+#: check_frequency: 30d
 Bahnhof Karlshorst: wird die Unterführung temporär gesperrt?	? 18949,8437 18906,8394 18875,8365
 # 
 #: by: http://www.berliner-woche.de/lichtenrade/bauen/infopunkt-zur-dresdner-bahn-auf-dem-s-bahnhof-lichtenrade-eingerichtet-d134019.html
@@ -2574,8 +2576,8 @@ Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen a
 #: osm_watch: way id="4689343" version="16"
 #: source_id: 2147341322
 #: source_id: 2147342307
-#: last_checked: 2018-02-10
-#: next_check: 2018-03-12
+#: last_checked: 2018-03-18
+#: next_check: 2018-03-27
 Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 18215,12123
 # 
 # REMOVED --- #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.331148.php --- #: XXX bis voraussichtlich Ende Oktober 2015 war hier gesperrt, danach wird eventuell auch der Havelradweg über diesen Weg geführt --- #: last_checked: 2016-10-08 --- Schleuse - Lindenufer: führt der Havelradweg hier entlang?	? -2942,14666 -2928,14666 -2913,14628 -2910,14534 -2918,14496 -2964,14478
@@ -3735,7 +3737,7 @@ Im Lindenhof: Planstraße B, Qualität, genaue Lage?	?::inwork 17370,12649 17475,1
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/erste-gebaeude-sind-fertig-d143656.html (Fertigstellung)
 #: XXX fehlt in Berlin.coords.data; Benennung soll zum 2017-07-01 wirksam werden
 #: XXX zuführende Straßen/Wege müssen auch eingezeichnet werden
-#: last_checked: 2018-02-10
+#: last_checked: 2018-03-18
 #: check_frequency: 90d
 Siegfried-Hirschmann-Park: neue private Platzfläche, Qualität, genaue Lage?	?::inwork 14730,11529 14800,11441
 # 
