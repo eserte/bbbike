@@ -340,8 +340,14 @@ sub action_doit_update {
     my $doitdest = "$bbbikedir/lib";
     $d->mkdir("$doitdest/Doit");
     $d->copy("$doitsrc/Doit.pm", "$doitdest/");
-    $d->copy("$doitsrc/Doit/Brew.pm", "$doitdest/Doit/");
-    $d->copy("$doitsrc/Doit/File.pm", "$doitdest/Doit/");
+    for my $component (qw(Brew File Git)) {
+	$d->copy("$doitsrc/Doit/$component.pm", "$doitdest/Doit/");
+	$d->change_file("$bbbikedir/MANIFEST",
+			{ add_if_missing => "lib/Doit/$component.pm",
+			  add_after => qr{^lib/Doit\.pm}, # XXX better would be a sorted insert
+			}
+		       );
+    }
 }
 
 ######################################################################
