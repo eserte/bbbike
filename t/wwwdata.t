@@ -45,7 +45,6 @@ use Getopt::Long;
 use Image::Info qw(image_info);
 
 use BBBikeUtil qw(bbbike_root);
-use Http;
 use Strassen::Core;
 
 use BBBikeTest qw(check_cgi_testing checkpoint_apache_errorlogs output_apache_errorslogs);
@@ -69,9 +68,15 @@ GetOptions("htmldir=s" => \$htmldir,
 	       $htmldir = 'http://bbbike-pps-jessie/BBBike';
 	   },
 	   "long"      => \$long_test,
+	   'add-inc=s@' => sub {
+	       unshift @INC, $_[1];
+	   },
 	   "v"          => \$v,
 	  ),
     or die "usage: $0 [-htmldir ... | -live | -pps] [-long] [-v]";
+
+# load after --add-inc processing
+require Http;
 
 my $datadir = "$htmldir/data";
 
@@ -97,6 +102,8 @@ my %contents;         # url => [{md5 => ..., ua_label => ..., accept_gzip => ...
 my %compress_results; # $accept_gzip => { $content_type => { $got_gzipped => $count } }
 my @bench_results;
 my %done_filesystem_comparison;
+my @diags;
+my $warned_on_400_with_Http_pm;
 
 for my $do_accept_gzip (0, 1) {
     my @ua_defs = (
@@ -173,6 +180,10 @@ if ($long_test) {
     }
 }
 
+for my $diag (@diags) {
+    diag $diag;
+}
+
 sub run_test_suite {
     my(%args) = @_;
     my $do_accept_gzip  = delete $args{accept_gzip};
@@ -214,6 +225,7 @@ sub run_test_suite {
 	my $dt;
 	checkpoint_apache_errorlogs if $is_local_server;
 	if ($ua->isa('Http')) {
+	    no warnings 'once';
 	    local $Http::user_agent = sprintf $ua_http_agent_fmt, $bbbike_version;
 	    my $t0 = Time::HiRes::time;
 	    my %ret = Http::get(url => $url, time => $last_modified);
@@ -221,6 +233,22 @@ sub run_test_suite {
 	    $got_gzipped = ($ret{headers}->{'content-encoding'}||'') =~ m{\bgzip\b} ? 1 : 0;
 	    delete $ret{headers}->{'content-encoding'}; # fake for HTTP::Response
 	    $resp = HTTP::Response->new($ret{error}, undef, HTTP::Headers->new(%{ $ret{headers} || {} }), $ret{content});
+	    if ($resp->code == 400 && !grep { 400 == $_ } @expect_status) {
+		if (!$warned_on_400_with_Http_pm++) {
+		    push @diags, <<EOF;
+
+=== ADDITIONAL DIAGNOSTICS ===
+
+Status code 400 encountered --- maybe the webserver is in strict mode?
+For Apache for example, this problem can be workarounded by setting
+
+    HttpProtocolOptions Unsafe
+
+==============================
+
+EOF
+		}
+	    }
 	} else {
 	    if ($ua->isa('HTTP::Tiny')) {
 		my $t0 = Time::HiRes::time;
@@ -418,6 +446,7 @@ EOF
 	like($resp->header("content-type"), qr{^text/html(;\s*charset=iso-8859-1)?$}, "Content-type check")
 	    or diag($resp->as_string);
     }
+
 }
 
 __END__
