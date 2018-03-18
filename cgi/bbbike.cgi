@@ -23,7 +23,7 @@ BEGIN {
     $ENV{SERVER_NAME} ||= "";
     open(STDERR, ">/home/groups/b/bb/bbbike/bbbike.log")
 	if $ENV{SERVER_NAME} =~ /sourceforge/ && -w "/home/groups/b/bb/bbbike";
-    $^W = 1 if $ENV{SERVER_NAME} =~ /herceg\.de/i;
+    #$^W = 1 if $ENV{SERVER_NAME} =~ /herceg\.de/i;
 }
 use vars qw(@extra_libs);
 BEGIN { delete $INC{"FindBin.pm"} } # causes warnings, maybe try FindBin->again if available?
