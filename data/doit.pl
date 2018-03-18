@@ -18,6 +18,7 @@ use Doit;
 use Doit::Log;
 use Doit::Util qw(copy_stat);
 use File::Basename qw(dirname basename);
+use File::Compare ();
 use Getopt::Long;
 use Cwd 'realpath';
 
@@ -304,8 +305,13 @@ sub action_old_bbbike_data {
 		}
 	    }
 	    if (!$rule_applied) {
-		$changes += $d->copy($file, $destfile);
-		copy_stat $file, $destfile;
+		if (File::Compare::compare($file, $destfile) != 0) {
+		    if (!-w $destfile) {
+			_make_writable($d, $destfile);
+		    }
+		    $changes += $d->copy($file, $destfile);
+		    copy_stat $file, $destfile;
+		}
 	    }
 	    # XXX efficiency: read old .modified and recalculate checksum only on changes
 	    my $md5 = $get_md5->($destfile);
@@ -317,7 +323,7 @@ sub action_old_bbbike_data {
 	    my $destfile = "$bbbike_ver_dir/label";
 	    $d->copy("label", $destfile);
 	    my $label_mtime = 1099869060; # this is the mtime of label in BBBike-3.16/data/.modified
-	    $d->utime($label_mtime, $label_mtime, $destfile);
+	    $d->utime(undef, $label_mtime, $destfile);
 	    my $md5 = $get_md5->($destfile);
 	    push @new_modified, "data/label\t$label_mtime\t$md5";
 	}
