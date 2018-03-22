@@ -90,11 +90,15 @@ GetOptions(
 	  )
     or error "usage: $0 [--root-deploy-dir /path/to/dir] [--dry-run] [--test-jobs ...] [--skip-tests] [--no-switch]";
 
+my $INTEROUT;
 if ($log_dir && !$dry_run) {
     my $log_file = $log_dir . '/bbbike_deploy_' . strftime('%FT%T', localtime) . '.log';
     require File::Tee;
     File::Tee::tee(\*STDOUT, '>>', $log_file);
+    open $INTEROUT, '>&', \*STDERR or die "Can't dup STDERR: $!";
     File::Tee::tee(\*STDERR, '>>', $log_file);
+} else {
+    $INTEROUT = \*STDERR;
 }
 
 print STDERR colored("Hopefully everything's already pushed to github", "yellow on_black"), "\n";
@@ -185,7 +189,7 @@ if ($dry_run) {
     if (!$do_switch) {
 	# don't ask
     } else {
-	print STDERR "Really skip tests? (y/n) ";
+	print $INTEROUT "Really skip tests? (y/n) ";
 	while () {
 	    chomp(my $yn = <STDIN>);
 	    if ($yn eq 'y') {
@@ -194,7 +198,7 @@ if ($dry_run) {
 		warn "OK, aborting deployment...\n";
 		exit 1;
 	    } else {
-		print STDERR "Please answer y or n: ";
+		print $INTEROUT "Please answer y or n: ";
 	    }
 	}
     }
@@ -314,7 +318,7 @@ sub init {
     }
     if (!-d $root_deploy_dir) {
 	while() {
-	    print STDERR colored("Should the root directory be created? (y/n) ", 'white on_red');
+	    print $INTEROUT colored("Should the root directory be created? (y/n) ", 'white on_red');
 	    chomp(my $yn = <STDIN>);
 	    if ($yn =~ m{^n}i) {
 		error 'OK, exiting deployment';
