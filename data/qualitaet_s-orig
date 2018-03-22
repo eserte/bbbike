@@ -351,7 +351,7 @@ Am Kupfergraben: Asphalt	Q0 9654,12882 9754,12775 9815,12705 9870,12657
 Geschwister-Scholl-Str.: Kopfsteinpflaster	Q2 9533,12925 9553,12768
 Marchlewskistr.: Kopfsteinpflaster	Q2 13217,11936 13275,11830
 Pillauer Str.: Kopfsteinpflaster	Q2 13366,11651 13274,11585
-Wriezener Karree: Asphalt	Q0 12726,11851 12959,11631
+Wriezener Karree: Asphalt	Q0 12728,11850 12959,11631
 #: by: Roland Maier vvv
 Prenzlauer Promenade: Asphalt	Q0 12010,16774 12017,16734 12045,16574 12051,16535 12077,16380 12097,16263 12090,16199
 #: corrected_by: Jörg Schwarzer und Gunnar Purtz (mittlerweile asphaltiert, vorher fester Sandweg, Q2):
@@ -411,6 +411,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.683334.php
 #: by: http://www.berliner-woche.de/gesundbrunnen/bauen/kopfsteinpflaster-kommt-weg-d144903.html
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
+#: last_checked: 2018-03-19
 #: next_check: 2018-09-01
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
 Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
@@ -1496,7 +1497,7 @@ Am Bürgerpark: Kopfsteinpflaster	Q2 9343,18080 9365,18062 9410,18021
 Wilhelm-Kuhr-Str.: Kopfsteinpflaster	Q3+ 9460,18053 9410,18021
 Wilhelm-Kuhr-Str.: Asphalt	Q0- 9460,18053 9590,18082
 (Am Bürgerpark - Wilhelm-Kuhr-Str.): Kopfsteinpflaster	Q2 9365,18062 9366,17997
-Cantianstr.: mäßiges Kopfsteinpflaster	Q2 10713,15746 10733,15638 10768,15534 10804,15447 10886,15251
+Cantianstr.: mäßiges Kopfsteinpflaster	Q2 10713,15753 10733,15638 10768,15534 10804,15447 10886,15251
 Rosenthaler Str.: teilweise mäßiger Asphalt	Q1+ 12166,21208 12096,21224 11982,21392 11889,21543 11870,21574
 Lise-Meitner-Str.: Beton	Q0 3712,13275 3725,13346 3742,13416 3741,13495 3739,13563
 Lise-Meitner-Str.: Verbundsteine	Q1 3739,13563 3724,13702
@@ -1508,7 +1509,7 @@ Goslarer Ufer: Asphalt	Q0 4372,12946 4331,13103 4295,13234
 Goslarer Ufer: Kopfsteinpflaster, kann auf Gehweg umfahren werden	Q2 4295,13234 4187,13704
 Malmöer Str.: Asphalt	Q0 10225,16436 10254,16363 10281,16263 10301,16186
 Malmöer Str.: mäßiges Kopfsteinpflaster	Q2 10301,16186 10343,16015
-Sonnenburger Str.: Kopfsteinpflaster	Q2 10564,15721 10550,15610
+Sonnenburger Str.: Kopfsteinpflaster	Q2 10564,15728 10550,15610
 Charlottenstr.: mäßiger Asphalt	Q1+ 9454,12558 9462,12481 9475,12365
 Mohrenstr.: Asphalt	Q0 9220,11781 9418,11804
 Jägerstr.: Asphalt	Q0 9108,11961 9195,11972
@@ -2055,7 +2056,7 @@ Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 14558,10819 14352,10874
 #: next_check_id: DBWERKSTRASSE-2017
 #: XXX wann wird hier die letzte Deckschicht erstellt? vvv
-#: last_checked: 2018-03-12 vvv
+#: last_checked: 2018-03-22 vvv
 #: check_frequency: 14d vvv
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Asphalt, letzte Deckschicht fehlt	Q1 14352,10874 14231,10907 14141,10931 14076,10949
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Asphalt, letzte Deckschicht fehlt	Q1 14141,10931 14107,10911 14043,10928
@@ -6475,7 +6476,7 @@ Mühlenstr.: Asphalt	Q0 6914,3093 6842,2995
 #: XXX es wird ein 4m breiter Asphaltstreifen realisiert; außerdem wird es vermutlich einen neuen diagonalen Weg zur Gallwitzallee geben vvv
 #: XXX Baumaßnahme GL6.15 (Realisierung nach 2011) vvv
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/uebersicht-baubereich-muehlenstrasse-2.pdf
-#: osm_watch: way id="118635979" version="6" vvv
+#: osm_watch: way id="118635979" version="7" vvv
 #: last_checked: 2018-03-11 vvv
 #: check_frequency: 180d vvv
 Mühlenstr.: schlechtes Kopfsteinpflaster	Q3+ 6842,2995 6763,2879 6745,2848
@@ -12308,7 +12309,7 @@ Straße 462: Beton	Q0 5068,17384 4914,17399
 #: by: stefan g:
 Duisburger Str.: Asphalt	Q0 3874,10153 4183,10144
 #: by: ute s:
-Rhinower Str.: Kopfsteinpflaster	Q2 10722,15921 10713,15746
+Rhinower Str.: Kopfsteinpflaster	Q2 10722,15921 10713,15753
 # 
 #: by: Clemens Bley: vvv
 Am Springebruch: Verbundsteinpflaster	Q1 6130,23062 6258,22899

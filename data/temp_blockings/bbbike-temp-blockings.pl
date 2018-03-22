@@ -8152,7 +8152,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005412',
        data  => <<EOF,
-	1::inwork 10953,15787 10713,15746 10564,15721 10427,15699 10423,15698
+	1::inwork 10953,15787 10713,15753 10564,15728 10426,15705 10418,15704
 EOF
      },
      { from  => 1178402400, # 2007-05-06 00:00
@@ -20589,7 +20589,7 @@ EOF
        text  => 'Gleimstr.: Bauarbeiten zwischen Ystadter Str. und Schönhauser Allee, Einbahnstraße Richtung Westen',
        type  => 'handicap',
        data  => <<EOF,
-	q3::inwork; 10423,15698 10427,15699 10564,15721 10713,15746 10953,15787
+	q3::inwork; 10418,15704 10426,15705 10564,15728 10713,15753 10953,15787
 EOF
      },
      { from  => 1336057200, # 2012-05-03 17:00
@@ -21392,11 +21392,11 @@ EOF
 	2::inwork -739,6838 -927,6888
 EOF
      },
-     { from  => $isodate2epoch->("2017-04-20 14:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-04-23 23:59:59"),
+     { from  => $isodate2epoch->("2018-04-26 14:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-04-29 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 21, months => 4]],
-       text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 21.4.2017 bis 23.4.2017',
+       text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 27.4.2018 bis 29.4.2018',
        type  => 'gesperrt',
        source_id => 'http://www.winzerfest-köpenick.de/',
        data  => <<EOF,
@@ -25665,7 +25665,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-03-10 vvv
+#: last_checked: 2018-03-21 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -26164,7 +26164,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-03-14
+#: last_checked: 2018-03-22
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -26831,7 +26831,7 @@ EOF
        text  => 'Wolliner Str./Granseer Str./Fürstenberger Str.: Bauarbeiten, Kreuzung muss umständlich umfahren werden, Bordsteine',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2018-02-28 vvv
+#: last_checked: 2018-03-19 vvv
 #: check_frequency: 14d vvv
 	q3::inwork 10277,14691 10320,14608
 	q2::inwork 10320,14608 10399,14429
@@ -26850,13 +26850,14 @@ EOF
 EOF
      },
      { from  => 1518290143, # 2018-02-10 20:15
-       until => $isodate2epoch->("2018-05-15 12:00:00"),
-       text  => 'Berlepschstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte Mai 2018',
+       until => $isodate2epoch->("2018-05-31 12:00:00"),
+       text  => 'Berlepschstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Mai 2018',
        type  => 'handicap',
        source_id => '2147341799',
        data  => <<EOF,
 #: by: http://www.berliner-woche.de/zehlendorf/bauen/fertigstellung-der-berlepschstrasse-verzoegert-sich-um-ein-halbes-jahr-d137942.html (sogar "bis Ende März")
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.683398.php
+#: by: http://www.berliner-woche.de/zehlendorf/bauen/strassensanierung-in-der-berlepschstrasse-vezoegert-sich-weiter-d146418.html (Ende Mai)
 	q4::inwork -468,1919 -343,1983 -285,2015 -226,2048
 EOF
      },
@@ -26899,12 +26900,43 @@ EOF
 EOF
      },
      { from  => 1521140385, # 2018-03-15 19:59
-       until => $isodate2epoch->("2018-05-18 12:00:00"), # 1525211999, # 2018-05-01 23:59
+       until => 1521492961, # $isodate2epoch->("2018-05-18 12:00:00"), # 1525211999, # 2018-05-01 23:59
        text  => 'Pankgrafenstr./Bahnhofstr.: zwischen Hubertusdamm und Streckfußstr. Baustelle, ggfs. Behinderungen auch für Radfahrer, bis Anfang Mai 2018',
        type  => 'handicap',
        source_id => '2147342325',
        data  => <<EOF,
+#: by: http://www.berliner-woche.de/karow/verkehr/wasserleitung-wird-erneuert-d144374.html ("Radfahrer werden um die Baustelleneinrichtung geführt")
 	q4::inwork 14632,23257 14597,23280 14573,23295 14539,23306 14442,23339
+EOF
+     },
+     { from  => 1524985200, # 2018-04-29 09:00
+       until => 1525211999, # 2018-05-01 23:59
+       text  => 'Görlitzer Park: wegen einer Veranstaltung (MaiGörli) ist der Görlitzer Park für Radfahrer gesperrt, vom 30. April 2018 9 Uhr bis 1. Mai 2018 23 Uhr',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.685963.php',
+       data  => <<EOF,
+	2::temp 12690,10062 12659,10119 12670,10160 12693,10183 12728,10196 12757,10197 12774,10178 12795,10147 12802,10097 12670,10160 12543,10223 12509,10189 12504,10172 12464,10153
+	2::temp 12686,10045 12690,10062 12737,10051 12802,10097 12869,10071 12901,10134 12905,10143
+	2::temp 12767,10216 12763,10207 12757,10197
+	2::temp 12814,9966 12833,9998 12869,10071 12987,10007 13013,10047 13013,10068 13035,10076
+	2::temp 12509,10189 12502,10244 12543,10223 12580,10252 12608,10294
+	2::temp 12328,10442 12331,10409 12384,10368 12457,10309 12502,10244
+	2::temp 12504,10172 12507,10130
+	2::temp 12932,9900 12987,10007 13145,9920
+EOF
+     },
+     { from  => 1525125600, # 2018-05-01 00:00
+       until => 1530309599, # 2018-06-29 23:59
+       text  => 'Rosenthaler Weg: Sperrung wegen Bauarbeiten, voraussichtlich vom 2. Mai 2018 bis 29. Juni 2018',
+       type  => 'gesperrt',
+       source_id => 'http://www.berliner-woche.de/blankenfelde/verkehr/rosenthaler-weg-voll-gesperrt-wasserbetriebe-verlegen-rohre-d144397.html',
+       data  => <<EOF,
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.386693.php
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/uebersichtsplan-umleitung_vollsperrung.pdf
+#: XXX prüfen, ob der Starttermin eingehalten wird
+#: next_check: 2018-05-02
+#: priority: #A
+	2::inwork 10228,21940 10312,21969 10377,21991 10436,22010 10493,22029 10554,22050 10613,22070 10673,22090 10709,22102 10769,22122 10828,22142 10892,22165 10935,22174 10999,22195
 EOF
      },
     );

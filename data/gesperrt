@@ -836,6 +836,7 @@ Wilhelmstr. (Wilhelmstadt)	1::igndisp -4406,12468 -4300,12571
 Halenseestr.	2::igndisp 2086,10552 1961,10646 1928,10728
 (Suermondtstr. - Konrad-Wolf-Str.)	1s 16842,15932 16799,15974 16719,16005 16753,16111
 Alexanderufer - Charité: Tor dauerhaft gesperrt	2 8362,13466 8369,13465 8377,13463
+Falkoniergasse: durch Tore abgesperrt	2 9939,12174 9909,12261
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -2999,6 +3000,7 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 Löwenbrücke: gesperrt	2:inwork 6406,11784 6452,11778
 Dahlemer Feld: zur Zeit eine Ziegenweide, keine Durchfahrt möglich	2:temp -1643,7828 -1787,7932 -1846,8129
 (Güterbahnhof Greifswalder Str.): Brücke gesperrt	2 12602,15006 12649,14977
+(Güterbahnhof Greifswalder Str.): kann bei Veranstaltungen gesperrt sein	2:temp 12520,15057 12602,15006
 Tor	BNP:5:-106:trailer=10 10281,19364
 Schwingtor	BNP:5:-148:trailer=10 14491,26714
 Schwingtor	BNP:5:-160:trailer=10 13966,25777

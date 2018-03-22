@@ -1189,6 +1189,7 @@ Wilhelmstr. (Wilhelmstadt)	1::igndisp -4406,12468 -4300,12571
 Halenseestr.	2::igndisp 2086,10552 1961,10646 1928,10728
 (Suermondtstr. - Konrad-Wolf-Str.)	1s:q4 16842,15932 16799,15974 16719,16005 16753,16111
 Alexanderufer - Charité: Tor dauerhaft gesperrt	2 8362,13466 8369,13465 8377,13463
+Falkoniergasse: durch Tore abgesperrt	2 9939,12174 9909,12261
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -2324,7 +2325,7 @@ Drängelgitter	BNP:3::trailer=10 10062,15927
 #: osm_watch: node id="2456723872" version="2"
 #: osm_watch: node id="2456723871" version="3"
 #: XXX eventuell temporär wegen der Baustraße (vielleicht für das Wohngebiet Lichtburgring?)
-#: last_checked: 2018-01-14
+#: last_checked: 2018-03-19
 zwei Drängelgitter	BNP:6::trailer=15 10038,15418
 Schranke	BNP:3 -7969,-1659
 # REMOVED (existiert nicht mehr) --- Drängelgitter	BNP:3::trailer=10 18126,9075
@@ -2873,7 +2874,7 @@ Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 18301,9946 18
 #: last_checked ^^^
 # 
 #: by: https://www.berliner-zeitung.de/berlin/berliner-wasserbetriebe-tunnel-unterm-mauerpark-wird-zur-attraktion-25534506
-#: last_checked: 2018-01-14 (Nordseite) vvv
+#: last_checked: 2018-03-19 (Nordseite) vvv
 #: check_frequency: 360d vvv
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
@@ -3366,7 +3367,7 @@ Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9798,
 # 
 #: XXX Eröffnung 2019 geplant
 #: by: http://www.dafmap.de/d/berlin.html?id=3598&mt=0&zoom=16
-#: last_checked: 2018-02-19
+#: last_checked: 2018-03-21
 #: check_frequency: 120d
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
@@ -3387,11 +3388,15 @@ Löwenbrücke: gesperrt	2:inwork 6406,11784 6452,11778
 #: next_check: 2015-03-01
 Dahlemer Feld: zur Zeit eine Ziegenweide, keine Durchfahrt möglich	2:temp -1643,7828 -1787,7932 -1846,8129
 # 
-#: XXX temporär oder dauerhaft gesperrt?
+#: XXX temporär oder dauerhaft gesperrt? vvv
 #: osm_watch: way id="4615233" version="6"
-#: last_checked: 2017-09-23 (mapillary)
-#: check_frequency: 180d
+#: last_checked: 2018-03-19 vvv
+#: check_frequency: 180d vvv
 (Güterbahnhof Greifswalder Str.): Brücke gesperrt	2 12602,15006 12649,14977
+(Güterbahnhof Greifswalder Str.): kann bei Veranstaltungen gesperrt sein	2:temp 12520,15057 12602,15006
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
 # 
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv

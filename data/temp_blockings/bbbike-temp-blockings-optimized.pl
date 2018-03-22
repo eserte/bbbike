@@ -3224,7 +3224,29 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: tempex: 20170421T1400-20170423 vvv
+	2::temp 22138,4642 22111,4562 22093,4499
+	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
+#: tempex ^^^
+',
+         'from' => 1524744000,
+         'id' => 2419,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              21,
+                              'months',
+                              4
+                            ]
+                          ],
+         'source_id' => 'http://www.winzerfest-köpenick.de/',
+         'text' => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 27.4.2018 bis 29.4.2018',
+         'type' => 'gesperrt',
+         'until' => 1525039199
+       },
        undef,
        undef,
        undef,
@@ -3945,7 +3967,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-03-10 vvv
+#: last_checked: 2018-03-21 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -4079,7 +4101,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-03-14
+#: last_checked: 2018-03-22
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -4323,7 +4345,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        {
-         'data' => '#: last_checked: 2018-02-28 vvv
+         'data' => '#: last_checked: 2018-03-19 vvv
 #: check_frequency: 14d vvv
 	q3::inwork 10277,14691 10320,14608
 	q2::inwork 10320,14608 10399,14429
@@ -4350,26 +4372,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: http://www.berliner-woche.de/zehlendorf/bauen/fertigstellung-der-berlepschstrasse-verzoegert-sich-um-ein-halbes-jahr-d137942.html (sogar "bis Ende März")
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.683398.php
+#: by: http://www.berliner-woche.de/zehlendorf/bauen/strassensanierung-in-der-berlepschstrasse-vezoegert-sich-weiter-d146418.html (Ende Mai)
 	q4::inwork -468,1919 -343,1983 -285,2015 -226,2048
 ',
          'from' => 1518290143,
          'id' => 2932,
          'source_id' => '2147341799',
-         'text' => 'Berlepschstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte Mai 2018',
+         'text' => 'Berlepschstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Mai 2018',
          'type' => 'handicap',
-         'until' => 1526378400
+         'until' => 1527760800
        },
        undef,
-       {
-         'data' => '#: source_id: 2147342320
-	q4::inwork 3919,9085 3952,8980
-',
-         'from' => 1520920800,
-         'id' => 2934,
-         'text' => 'Konstanzer Str.: Bauarbeiten, Sperrung zwischen Hohenzollerndamm und Berliner Str., evtl. sind auch Radfahrer betroffen, bis Ende März 2018',
-         'type' => 'handicap',
-         'until' => 1521716400
-       },
+       undef,
        {
          'data' => '# XXX_prog: eigentlich q3-
 	q3::inwork 7136,9223 7012,9222
@@ -4390,15 +4404,38 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1530395999
        },
+       undef,
        {
-         'data' => '	q4::inwork 14632,23257 14597,23280 14573,23295 14539,23306 14442,23339
+         'data' => '	2::temp 12690,10062 12659,10119 12670,10160 12693,10183 12728,10196 12757,10197 12774,10178 12795,10147 12802,10097 12670,10160 12543,10223 12509,10189 12504,10172 12464,10153
+	2::temp 12686,10045 12690,10062 12737,10051 12802,10097 12869,10071 12901,10134 12905,10143
+	2::temp 12767,10216 12763,10207 12757,10197
+	2::temp 12814,9966 12833,9998 12869,10071 12987,10007 13013,10047 13013,10068 13035,10076
+	2::temp 12509,10189 12502,10244 12543,10223 12580,10252 12608,10294
+	2::temp 12328,10442 12331,10409 12384,10368 12457,10309 12502,10244
+	2::temp 12504,10172 12507,10130
+	2::temp 12932,9900 12987,10007 13145,9920
 ',
-         'from' => 1521140385,
-         'id' => 2937,
-         'source_id' => '2147342325',
-         'text' => 'Pankgrafenstr./Bahnhofstr.: zwischen Hubertusdamm und Streckfußstr. Baustelle, ggfs. Behinderungen auch für Radfahrer, bis Anfang Mai 2018',
-         'type' => 'handicap',
-         'until' => 1526637600
+         'from' => 1524985200,
+         'id' => 2938,
+         'source_id' => 'http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.685963.php',
+         'text' => 'Görlitzer Park: wegen einer Veranstaltung (MaiGörli) ist der Görlitzer Park für Radfahrer gesperrt, vom 30. April 2018 9 Uhr bis 1. Mai 2018 23 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1525211999
+       },
+       {
+         'data' => '#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.386693.php
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/uebersichtsplan-umleitung_vollsperrung.pdf
+#: XXX prüfen, ob der Starttermin eingehalten wird
+#: next_check: 2018-05-02
+#: priority: #A
+	2::inwork 10228,21940 10312,21969 10377,21991 10436,22010 10493,22029 10554,22050 10613,22070 10673,22090 10709,22102 10769,22122 10828,22142 10892,22165 10935,22174 10999,22195
+',
+         'from' => 1525125600,
+         'id' => 2939,
+         'source_id' => 'http://www.berliner-woche.de/blankenfelde/verkehr/rosenthaler-weg-voll-gesperrt-wasserbetriebe-verlegen-rohre-d144397.html',
+         'text' => 'Rosenthaler Weg: Sperrung wegen Bauarbeiten, voraussichtlich vom 2. Mai 2018 bis 29. Juni 2018',
+         'type' => 'gesperrt',
+         'until' => 1530309599
        }
      
 );

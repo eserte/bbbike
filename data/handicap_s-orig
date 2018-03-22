@@ -21,7 +21,7 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-03-14
+#: last_checked: 2018-03-22
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
@@ -31,7 +31,7 @@ Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,1
 #: check_frequency: 90d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
-#: last_checked: 2018-03-13
+#: last_checked: 2018-03-22
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 #: next_check_id: RIGAER-2018
@@ -116,8 +116,9 @@ Wadzeckstr. - Mollstr.: Behinderungen wegen Bauarbeiten möglich	q2::inwork 11315
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
-#: last_checked: 2018-03-16
-Voltairestr.: Fahrbahn unter Umständen wegen Baustelle gesperrt, Ausweichen auf Gehweg	q2- 11329,12497 11209,12430
+#: XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
+#: last_checked: 2018-03-21
+Voltairestr.: Fahrbahn unter Umständen wegen Baustelle gesperrt, Ausweichen auf Gehweg	q3 11329,12497 11209,12430
 # 
 #: next_check_id: ZIEGELSTR-2016
 #: XXX Ende der Bauarbeiten?
@@ -144,7 +145,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 # REMOVED --- #: last_checked: 2017-03-14 vvv --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9990,11571 9925,11565 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q2-::inwork 9925,11565 9737,11546 --- #: last_checked ^^^
 # 
 # REMOVED --- : osm_watch: note 814191 1
-#: last_checked: 2018-03-16
+#: last_checked: 2018-03-21
 #: check_frequency: 30d
 Alexandrinenstr.: direkter Zugang zur Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q3::inwork 10818,11269 10678,11172
 # 
@@ -260,14 +261,18 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
 #: source_id: LMS-BR_r_LMS-BR_197
 #: osm_watch: way id="194962375" version="8"
-#: last_checked: 2018-03-05
+#: last_checked: 2018-03-21
 #: check_frequency: 14d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q4::inwork 10601,12521 10704,12595
 # 
-#: by: http://www.berliner-woche.de/mitte/bauen/rathausstrasse-wird-gesperrt-d140537.html
-#: last_checked: 2018-03-05
-#: check_frequency: 14d
+#: by: http://www.berliner-woche.de/mitte/bauen/rathausstrasse-wird-gesperrt-d140537.html vvv
+#: last_checked: 2018-03-21 vvv
+#: check_frequency: 14d vvv
+Rathausstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 10476,12432 10584,12507
 Rathausstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10584,12507 10601,12521
+#: last_checked ^^^
+#: check_frequency ^^^
+#: by ^^^
 # 
 # REMOVED (wieder offen) --- #: next_check_id: SPANDAUERSTR-2014 --- #: source_id: INKO_089389 (eigentlich hier nur die Spandauer Str. erwähnt) --- #: XXX siehe auch Eintrag zur Spandauer Str. in qualitaet_s-orig --- #: last_checked: 2014-03-24 --- #: check_frequency: 7d --- #: priority: #A --- Rathausstr.: Sperrung an der Spandauer Str., Ausweichen auf Gehweg	q4 10584,12507 10601,12521
 # REMOVED --- #: last_checked: 2012-09-19 vvv--- #: next_check: 2012-10-19 vvv --- #: note: komplette Fertigstellung und Verkehrsfreigabe im Frühjahr 2013 --- Rathausstr. und Rathausbrücke: Behinderungen wegen Bauarbeiten möglich	q1::inwork 10285,12306 10362,12351 10416,12394 --- #: next_check: ^^^ --- #: last_checked: ^^^
