@@ -4080,9 +4080,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1509836400,
          'id' => 2867,
-         'text' => 'Bölschestr.: Bauarbeiten, zwischen Aßmannstr. und Müggelseedamm Richtung Süden gesperrt, bis Ende März 2018',
+         'text' => 'Bölschestr.: Bauarbeiten, zwischen Aßmannstr. und Müggelseedamm Richtung Süden gesperrt, bis Ende Mai 2018',
          'type' => 'handicap',
-         'until' => 1521802800
+         'until' => 1527242400
        },
        undef,
        undef,
@@ -4101,7 +4101,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-03-22
+#: last_checked: 2018-03-23
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -4383,7 +4383,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1527760800
        },
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 2147342320
+	q4::inwork 3919,9085 3952,8980
+',
+         'from' => 1520920800,
+         'id' => 2934,
+         'text' => 'Konstanzer Str.: Bauarbeiten, Sperrung zwischen Hohenzollerndamm und Berliner Str., evtl. sind auch Radfahrer betroffen, bis Ende März 2018',
+         'type' => 'handicap',
+         'until' => 1522144800
+       },
        {
          'data' => '# XXX_prog: eigentlich q3-
 	q3::inwork 7136,9223 7012,9222
@@ -4436,6 +4445,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Rosenthaler Weg: Sperrung wegen Bauarbeiten, voraussichtlich vom 2. Mai 2018 bis 29. Juni 2018',
          'type' => 'gesperrt',
          'until' => 1530309599
+       },
+       {
+         'data' => '#: by: http://www.berliner-woche.de/adlershof/verkehr/wasserbetriebe-und-bvg-bauen-in-der-doerpfeldstrasse-d144226.html
+	q4::inwork 20082,3578 20136,3609 20149,3617 20159,3623 20219,3661 20304,3714 20322,3725 20352,3744 20362,3750 20428,3786
+',
+         'from' => 1521928800,
+         'id' => 2940,
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.687481.php',
+         'text' => 'Dörpfeldstr.: Bauarbeiten zwischen Gellert- und Hackenbergstr., Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 26. März 2018 bis 17. April 2018',
+         'type' => 'handicap',
+         'until' => 1523970000
        }
      
 );

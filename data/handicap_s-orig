@@ -21,7 +21,7 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-03-22
+#: last_checked: 2018-03-23
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
@@ -321,7 +321,7 @@ Wilhelminenhofstr.: Bauarbeiten zwischen Siemensstr. und Edisonstr., Fahrbahn un
 Mariannenstr.: Bauarbeiten zwischen Naunynstr. und Mariannenplatz, Fahrbahn Richtung Norden gesperrt	q4::inwork; 11763,10635 11781,10696
 # 
 #: source_id: 2147342287
-#: last_checked: 2018-03-14
+#: last_checked: 2018-03-23
 #: next_check: 2018-04-10
 #: valid: -20180410
 #: priority: #A
@@ -346,9 +346,10 @@ Böckhstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 11673,9720 11640,9710
 # 
 #: source_id: 2147341145
 #: source_id: LMS-BR_r_LMS-BR_93387
+#: osm_watch: way id="563341816" version="2"
 #: XXX laut vmz bis Anfang 2019, laut fritz bis 31.12.2018
 #: http://www.dafmap.de/d/berlin.html?id=3451&mt=0&zoom=16
-#: last_checked: 2018-02-27
+#: last_checked: 2018-03-23
 #: check_frequency: 180d
 #: valid: -20181231
 Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q3+::inwork; 9022,10857 8941,10663 8926,10626
@@ -903,11 +904,15 @@ Barsekowstr.: Fußgänger	q1 5336,4676 5406,4631 5465,4606 5521,4605 5588,4629
 (Stadtpark Steglitz): Fußgänger	q1 5589,4617 5588,4629 5582,4675 5555,4743
 (Stadtpark Steglitz): Fußgänger	q1 5509,4773 5453,4665 5406,4631
 (Stadtpark Steglitz): Fußgänger	q1 5797,4846 5806,4840 5909,4798 5947,4791 6022,4746 6026,4744
+#: XXX_prog: für Anhänger q1-
+#: note: fünf Schwellen
+Dieffenbachstr.: Bodenschwellen	q1+ 11141,9732 11346,9655
 #: XXX_prog: für Anhänger q1
-#: note: nur drei Schwellen sind übrig geblieben, können mit Normalrad umfahren werden
-Dieffenbachstr.: Bodenschwellen	q0- 11141,9732 11346,9655
-#: XXX_prog: für Anhänger evtl. q1
-Dieffenbachstr.: Bodenschwellen, können gut umfahren werden	q0- 11346,9655 11541,9576
+#: note: vier Schwellen
+Dieffenbachstr.: Bodenschwellen	q0- 11346,9655 11541,9576
+#: XXX_prog: für Anhänger q1
+#: note: drei Schwellen
+Oppelner Str.: Bodenschwellen	q0- 12897,10439 12978,10581
 # REMOVED (alle Bodenschwellen wurden entfernt) --- Schönleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
 Hoffmannstr.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 Lausitzer Platz: einige Bodenschwellen	q2 12197,10494 12172,10585

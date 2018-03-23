@@ -26112,8 +26112,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2017-11-05 00:00:00"), # 1495918329, # 2017-05-27 22:52
-       until => $isodate2epoch->("2018-03-23 12:00:00"),
-       text  => 'Bölschestr.: Bauarbeiten, zwischen Aßmannstr. und Müggelseedamm Richtung Süden gesperrt, bis Ende März 2018',
+       until => $isodate2epoch->("2018-05-25 12:00:00"),
+       text  => 'Bölschestr.: Bauarbeiten, zwischen Aßmannstr. und Müggelseedamm Richtung Süden gesperrt, bis Ende Mai 2018',
        type  => 'handicap',
        data  => <<EOF,
 #: note: laut fritz bis 8.12.2017, laut VMZ bis Mitte Dezember 2017
@@ -26164,7 +26164,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-03-22
+#: last_checked: 2018-03-23
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -26873,7 +26873,7 @@ EOF
 EOF
      },
      { from  => 1520920800, # 2018-03-13 07:00
-       until => $isodate2epoch->("2018-03-22 12:00:00"), # 1522533599, # 2018-03-31 23:59
+       until => $isodate2epoch->("2018-03-27 12:00:00"), # 1522533599, # 2018-03-31 23:59
        text  => 'Konstanzer Str.: Bauarbeiten, Sperrung zwischen Hohenzollerndamm und Berliner Str., evtl. sind auch Radfahrer betroffen, bis Ende März 2018',
        type  => 'handicap',
        data  => <<EOF,
@@ -26937,6 +26937,16 @@ EOF
 #: next_check: 2018-05-02
 #: priority: #A
 	2::inwork 10228,21940 10312,21969 10377,21991 10436,22010 10493,22029 10554,22050 10613,22070 10673,22090 10709,22102 10769,22122 10828,22142 10892,22165 10935,22174 10999,22195
+EOF
+     },
+     { from  => 1521928800, # 2018-03-24 23:00
+       until => 1523970000, # 2018-04-17 15:00
+       text  => 'Dörpfeldstr.: Bauarbeiten zwischen Gellert- und Hackenbergstr., Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 26. März 2018 bis 17. April 2018',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.687481.php',
+       data  => <<EOF,
+#: by: http://www.berliner-woche.de/adlershof/verkehr/wasserbetriebe-und-bvg-bauen-in-der-doerpfeldstrasse-d144226.html
+	q4::inwork 20082,3578 20136,3609 20149,3617 20159,3623 20219,3661 20304,3714 20322,3725 20352,3744 20362,3750 20428,3786
 EOF
      },
     );
