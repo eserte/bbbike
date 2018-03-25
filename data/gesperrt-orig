@@ -1800,7 +1800,7 @@ Potsdamer Chaussee: Mittelstreifen	3nocross -870,2737 -739,2793 -726,2799 -563,2
 Potsdamer Chaussee: Mittelstreifen	3nocross -391,2914 -267,2945 -151,2975
 Potsdamer Chaussee: Mittelstreifen	3nocross -2280,2177 -2074,2258 -2023,2279
 Potsdamer Chaussee: Mittelstreifen	3nocross -2023,2279 -1959,2305 -1646,2434
-Bahnhofstr.: Straßenbahntrasse	3nocross 22123,5452 22087,5404 22043,5346 21954,5229
+Bahnhofstr.: Straßenbahntrasse	3nocross 22116,5442 22087,5404 22043,5346 21954,5229
 Dörpfeldstr.: Straßenbahngleise	3nocross 20834,4035 21053,4162 21146,4229
 #: note: theoretisch wäre das Linksabbiegen von der Fahrbahn aus möglich, aber der Radweg ist benutzungspflichtig
 Ernst-Ruska-Ufer: Lärmschutzwand	3nocross 18496,2471 18656,2465 18929,2454
@@ -2820,18 +2820,25 @@ Schranke	BNP:3::trailer=10 17215,12485
 #: note: Richtung Süden ist kaum Spielraum neben der Schranke vorhanden
 Schranke	BNP:10::trailer=20 15334,16718
 Drängelgitter	BNP:3::trailer=10 3783,-2079
-#: XXX Drängelgitter genauer anschauen vvv
 Drängelgitter	BNP:3::trailer=10 21618,5699
-#: by: osm vvv
 Drängelgitter	BNP:3::trailer=10 22070,5876
 Drängelgitter	BNP:3::trailer=10 22097,5879
-#: by ^^^
-#: XXX ^^^
 #
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bplan11120ve.pdf
+#: by: http://www.berliner-woche.de/friedrichsfelde/bauen/projekt-ohne-alternativen-bebauungsplaene-am-ex-dolgensee-center-liegen-aus-d136187.html
+#: last_checked: 2018-03-25
+#: check_frequency: 360d
+Dolgenseestr.: wegen Bauarbeiten gesperrt	2::inwork 17273,9880 17407,9799 17493,9761
+# 
+#: XXX laut Baustellenschild bis Ende November 2018
+#: last_checked: 2018-03-25
+#: next_check: 2018-11-30
+Unterführung S-Bhf. Karlshorst: wegen Bauarbeiten gesperrt	2::inwork 18949,8437 18906,8394 18875,8365
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.682908.php
 #: by: http://www.berliner-woche.de/waidmannslust/bauen/ein-steg-fuehrt-unter-der-bahn-hindurch-luecke-am-fliess-geschlossen-d144696.html
@@ -2921,8 +2928,8 @@ Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9108,11961 9138,11872
 # REMOVED --- #: last_checked: 2017-08-12 --- Charlottenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9509,12117 9496,12215
 # 
 #: XXX vielleicht wird hier nach den Bauarbeiten kein Weg mehr existieren; die S-Bahnbrücke ist sehr niedrig geworden...
-#: last_checked: 2017-08-07
-#: check_frequency: 90d
+#: last_checked: 2018-03-25
+#: check_frequency: 120d
 (entlang der Erpe): Bauarbeiten der DB	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
 # 
 #: next_check_id: NIZZASTR-2014

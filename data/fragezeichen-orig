@@ -504,16 +504,16 @@ Müggelbergdamm: Schutzstreifen	?::projected 25010,4807 25171,4757 25228,4745 252
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/protokoll-8-ag-rad-14-03-2016.pdf vvv
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf ("Markierung 2018") vvv
-#: last_checked: 2017-08-07 vvv
-#: next_check: 2017-10-28 vvv
+#: last_checked: 2018-03-25 vvv
+#: next_check: 2018-05-25 vvv
 #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/de/oepnv/bekanntmachung1.shtml (erster Abschnitt?) --- Radstreifen, außer an den Tram-Haltestellen: Radwege
 #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/boelschestr/Lageplan_Unterlage3_v15032017_gesiegelt.pdf
 #: XXX Maßnahmen Fh.4 + Fh.5
 #: osm_watch: way id="283006412" version="10"
 #: osm_watch: way id="520100576" version="2"
 #: osm_watch: way id="9628154" version="22"
-Bölschestr.: Schutzstreifen	?::projected 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398
-Bölschestr.: Schutzstreifen	?::projected 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
+Bölschestr.: Schutzstreifen und asphaltierte Straßenbahncaps	?::projected 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398
+Bölschestr.: Schutzstreifen und asphaltierte Straßenbahncaps	?::projected 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
 #: next_check ^^^
 #: last_checked ^^^
 #: by: ^^^
@@ -521,21 +521,21 @@ Bölschestr.: Schutzstreifen	?::projected 25548,5398 25553,5486 25567,5749 25571,
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf ("Entwurfsphase")
 #: XXX Maßnahme Osw.4
-#: last_checked: 2018-02-04
-#: next_check: 2018-06-01
+#: last_checked: 2018-03-25
+#: check_frequency: 90d
 Siemensstr.: Radfahr- oder Schutzstreifen	?::projected 17614,6571 17766,6616 17842,6639 17860,6644 17962,6674
 # 
 #: osm_watch: way id="86571257" version="20"
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf ("Entwurfsphase")
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3771
 #: XXX Maßnahme Osw.1 + Osw.12
-#: last_checked: 2018-02-04
+#: last_checked: 2018-03-25
 #: next_check: 2018-06-01
 Wilhelminenhofstr.: Radfahrstreifen auf nördlicher Seite	?::projected; 19024,5830 18932,5926 18861,6000 18843,6013 18766,6067 18670,6132 18574,6197 18473,6265 18464,6269 18423,6285 18341,6313 18191,6363 17991,6431
 #: osm_watch: way id="199768813" version="6"
 #: XXX haben die Bauarbeiten was mit der Maßnahme zu tun? (bis Anfang Mai 2018) (laut Bezirkswebsite Ende der Bauarbeiten bis August 2018)
 #: source_id: 2147342044
-#: last_checked: 2018-02-04
+#: last_checked: 2018-03-25
 #: next_check: 2018-05-01
 Wilhelminenhofstr.: Radfahrstreifen auf nördlicher Seite	?::projected; 17991,6431 17826,6495 17800,6504 17614,6571
 #### END AG Radverkehr Treptow-Köpenick
@@ -621,7 +621,8 @@ Köpenicker Landstraße - Chris-Gueffroy-Allee	?::projected 16747,6813 16485,6377 
 #: check_frequency: 360d
 Grünbergallee: Einrichten einer Radverkehrsanlage	?::projected 20790,-537 20675,-526 20362,-511 20288,-511 20205,-548 20272,-501
 #: XXX Fh.2
-#: next_check: 2018-06-01
+#: last_checked: 2018-03-25
+#: check_frequency: 90d
 Fürstenwalder Damm: Einrichten einer Radverkehrsanlage auf der Südseite durch den Forst	?::projected 24049,5380 24162,5424 24285,5472 24366,5504 24471,5544 24700,5633 24871,5699 25015,5751
 #: XXX Fh.9
 #: next_check: 2019-06-01
@@ -707,30 +708,30 @@ Kurpark: Verbesserung der Befahrbarkeit	?::projected 24964,6046 25260,6038 25382
 #: XXX ^^^
 #: by: ^^^
 #: XXX Osw.2
-#: last_checked: 2018-02-04
-#: next_check: 2018-06-01
+#: last_checked: 2018-03-25
+#: check_frequency: 90d
 Edisonstr.: Einrichten einer Radverkehrsanlage	?::projected 17991,6431 17962,6674 17919,6968 17919,6978 17934,7029
 #: XXX Osw.3
 #: last_checked: 2018-02-04
 #: next_check: 2018-06-01
 Edisonstr.: Einrichten einer Radverkehrsanlage	?::projected; 17900,6072 17930,6175 17952,6246 17991,6431
 #: XXX Osw.5
-#: last_checked: 2017-11-05
-#: next_check: 2018-06-01
+#: last_checked: 2018-03-25
+#: check_frequency: 90d
 Siemensstr.: Einrichten einer Radverkehrsanlage	?::projected; 17614,6571 17528,6502 17492,6462 17432,6352
 #: XXX Osw.7
-#: last_checked: 2017-09-19
-#: next_check: 2018-06-01
+#: last_checked: 2018-03-25
+#: check_frequency: 90d
 Ostendstr./Weiskopffstr.: Einrichten einer Radverkehrsanlage	?::projected 19958,5950 19681,5924 19650,5920 19403,5885 19388,5883 19273,5866 19024,5830
 # Osw.9 ist vermutlich schon erledigt
 #: XXX Osw.11
-#: last_checked: 2017-11-05
+#: last_checked: 2018-03-25
 #: next_check: 2019-06-01
-Nalepastr.: Einrichten einer Radverkehrsanlage auf der östlichen Seite	?::projected; 17614,6571 17555,6680 17514,6754 17459,6854 17352,7051 17286,7173 17219,7268
+Nalepastr.: Einrichten einer Radverkehrsanlage auf der östlichen Seite	?::projected; 17614,6571 17555,6680 17514,6754 17459,6854 17352,7051 17286,7173
 #: XXX Osw.13
-#: last_checked: 2018-02-04
-#: next_check: 2019-06-01
-Rudolf-Rühl-Allee: Einrichten einer Radverkehrsanlage (Ostseite) bzw. Radfahren auf Gehweg frei (Westseite)	?::projected 20280,7749 20307,7689 20323,7529 20340,7468 20393,7404 20510,7325 20616,7292 20653,7289
+#: last_checked: 2018-03-25
+#: check_frequency: 90d
+Rudolf-Rühl-Allee: Einrichten einer Radverkehrsanlage (Ostseite) bzw. Radfahren auf Gehweg frei (Westseite)	?::projected 20280,7749 20307,7689 20316,7637 20323,7529 20340,7468 20393,7404 20510,7325 20616,7292 20653,7289
 #: XXX Osw.14
 #: last_checked: 2018-02-04
 #: next_check: 2020-06-01
@@ -848,14 +849,10 @@ Neudecker Weg: Verbesserung -> Radspuren oder Asphaltierung des Radwegs? ("Teila
 #: check_frequency: 30d
 Fürstenwalder Allee: Verbesserung -> Verbreiterung Radweg	?::inwork; 33545,2896 33525,2901 33111,3064 32829,3105 32121,3215 31973,3237
 # 
-#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf
-#: XXX Maßnahme Kö.10
-#: osm_watch: way id="148614161" version="9"
-#: last_checked: 2017-08-17
-Bellevuestr.: Verbesserung -> vermutlich Radspuren?	?::projected; 23333,5710 23402,5483
+# REMOVED --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf --- #: XXX Maßnahme Kö.10 --- #: osm_watch: way id="148614161" version="9" --- #: last_checked: 2017-08-17 --- Bellevuestr.: Verbesserung -> vermutlich Radspuren?	?::projected; 23333,5710 23402,5483
 # 
 #: osm_watch: way id="43063529" version="14"
-#: last_checked: 2017-10-15 (mapillary)
+#: last_checked: 2018-03-25
 An der Wuhlheide: Verbesserung -> evtl. Radpuren?	?::projected; 19759,6049 19958,5950
 # 
 #: last_checked: 2017-06-11
@@ -869,11 +866,11 @@ Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22351
 Frankfurter Allee: Zweirichtungsradweg	?::projected; 15717,12010 15670,12022
 # 
 #: osm_watch: way id="51872061" version="27"
-#: last_checked: 2018-03-18
-Wallensteinstr.: Asphaltstreifen --- auch in die andere Richtung?	?::projected; 18037,9195 17549,9529
+#: last_checked: 2018-03-25
+Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected; 18037,9195 17549,9529
 #: osm_watch: way id="31525575" version="16"
-#: last_checked: 2018-03-18
-Wallensteinstr.: Asphaltstreifen	?::projected 17549,9529 17456,9594 17425,9605 17360,9629
+#: last_checked: 2018-03-25
+Wallensteinstr.: Asphaltstreifen geplant	?::projected 17549,9529 17456,9594 17425,9605 17360,9629
 # 
 #: XXX oder ist die andere Seite vor Pablo-Picasso-Str. gemeint?
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
@@ -926,8 +923,8 @@ Ernst-Reuter-Platz: Zweirichtungsradwege	?::projected 4838,11697 4885,11735 4905
 #: XXX außerdem wird für den Durchgangsverkehr (hoffentlich nur MIV) gesperrt
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="140648434" version="9"
-#: last_checked: 2018-02-04 (erste Arbeiten --- eventuell vorbereitend?)
-#: check_frequency: 45d
+#: last_checked: 2018-03-25
+#: check_frequency: 60d
 Hegemeisterweg: Asphaltierung	?::projected 17522,8220 17202,8391
 # 
 # REMOVED (realisiert) --- #: osm_watch: way id="332909265" version="2" --- #: last_checked: 2017-08-27 --- Fanningerstr.: Asphaltierung	?::projected 16456,12191 16359,12207 16255,12224
@@ -1169,7 +1166,7 @@ Olivaer Platz: bleibt der Verbindungsweg während der Umgestaltung offen?	? 4352,
 #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/9-48-planung_mellowpark_a3.pdf
 #: XXX evtl. entsteht auch eine Wuhlebrücke
 #: osm_watch: way id="413009390" version="1"
-#: last_checked: 2018-02-04
+#: last_checked: 2018-03-25
 #: check_frequency: 360d
 Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 21241,5666 21126,5612 21059,5596
 # 
@@ -1863,7 +1860,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: osm_watch: way id="46039447" version="14"
 #: osm_watch: way id="456120288" version="2"
 #: source_id: 2147342174
-#: last_checked: 2018-03-18
+#: last_checked: 2018-03-25
 #: next_check: 2019-03-01
 Treskowallee: Bau von Radwegen	?::projected; 18704,8427 18731,8577 18733,8633
 # 
@@ -2163,11 +2160,7 @@ Blumberger Damm: wird hier ein Radweg gebaut?	? 21724,15955 21782,16253 21785,16
 Schweizer Botschaft: Rückbau geplant	?::projected 8206,12757 8204,12816 8168,12848 8124,12840 8030,12824
 # 
 # REMOVED (realisiert) --- #: by: http://www.berliner-woche.de/neukoelln/verkehr/barriere-fuer-fahrradfahrer-d140650.html (Februar 2018) --- #: next_check: 2018-02-15 --- Weichselplatz: Drängelgitter werden gebaut	? 12845,9304 12862,9273 12909,9085 12902,9066
-# 
-#: by: http://www.berliner-woche.de/karlshorst/verkehr/bauschwerpunkt-bahnhof-karlshorst-einschraenkungen-fuer-autofahrer-und-s-bahnkunden-d142323.html
-#: last_checked: 2018-03-18
-#: check_frequency: 30d
-Bahnhof Karlshorst: wird die Unterführung temporär gesperrt?	? 18949,8437 18906,8394 18875,8365
+# REMOVED (gesperrt) --- #: by: http://www.berliner-woche.de/karlshorst/verkehr/bauschwerpunkt-bahnhof-karlshorst-einschraenkungen-fuer-autofahrer-und-s-bahnkunden-d142323.html --- #: last_checked: 2018-03-18 --- #: check_frequency: 30d --- Bahnhof Karlshorst: wird die Unterführung temporär gesperrt?	? 18949,8437 18906,8394 18875,8365
 # 
 #: by: http://www.berliner-woche.de/lichtenrade/bauen/infopunkt-zur-dresdner-bahn-auf-dem-s-bahnhof-lichtenrade-eingerichtet-d134019.html
 #: by: http://www.berliner-woche.de/marienfelde/bauen/provisorische-fussgaengerbruecke-an-der-saentisstrasse-fuer-behinderte-nicht-passierbar-d144292.html
@@ -2816,8 +2809,8 @@ Habersaathstr.: hier soll ein Fußgängerüberweg (Zebrastreifen?) realisiert werde
 Parchwitzer Str.: wurden die Kopfsteinpflasterabschnitte verbessert?	?::projected 22047,-1042 21945,-1031 21828,-1015 21734,-1002 21654,-992 21615,-979 21487,-912 21403,-859
 #: XXX Maßnahme Fh.6
 #: osm_watch: way id="9702843" version="16"
-#: last_checked: 2017-08-09
-#: check_frequency: 100d
+#: last_checked: 2018-03-25
+#: check_frequency: 120d
 Josef-Nawrocki-Str.: Einbahnstraße soll freigegeben werden	?::projected 25552,4829 25554,4758 25695,4714 25724,4706 25802,4681
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (Gr.4)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.630926.php
@@ -3846,13 +3839,10 @@ Zeppelinstr. [Wohngebiet]: Qualität, genaue Wegführung	? -13608,-1246 -13594,-12
 #: XXX fehlt in Potsdam.coords.data, PLZ=14480
 Ernst-Busch-Platz (Potsdam): genaue Lage? ausgeschildert?	? -7244,-4424 -7179,-4424
 # 
-#: XXX fehlt in Berlin.coords.data, PLZ=12459
-Alte Köpenicker Allee: genaue Lage? Qualität? Ausgeschildert?	? 20307,7689 20346,7685 20411,7466 20501,7463
-# 
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_12_1519_1638_online.pdf
 #: by: https://www.wbm.de/fileadmin/_processed_/csm_pepitahoefe-spandau_grundstuecksplan_221b0b26bb.jpg
 #: XXX fehlt in Berlin.coords.data
-#: osm_watch: way id="503435551" version="2"
+#: osm_watch: way id="503435551" version="2" vvv
 #: next_check: 2018-06-01 vvv
 Pepitapromenade: genaue Lage? Qualität?	?::inwork -2598,17319 -2873,17369
 Pepitapromenade: genaue Lage? Qualität?	?::inwork -2858,17472 -2873,17369 -2877,17324

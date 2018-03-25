@@ -858,7 +858,27 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	2::temp 7101,9027 7035,9161 7012,9222 7001,9291
+	2::temp 6945,9142 7035,9161
+',
+         'from' => 1525989600,
+         'id' => 728,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              24,
+                              'months',
+                              4
+                            ]
+                          ],
+         'source_id' => 'http://www.volksfeste-in-deutschland.de/primavera-fruehling-auf-der-akazienstrasse-in-berlin-schoeneberg.html',
+         'text' => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (12.5.2018 und 13.5.2018)',
+         'type' => 'gesperrt',
+         'until' => 1526248799
+       },
        undef,
        undef,
        undef,
@@ -4066,24 +4086,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: laut fritz bis 8.12.2017, laut VMZ bis Mitte Dezember 2017
-#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.595041.php
-#: by: http://werbegemeinschaft-friedrichshagen.de/wp-content/uploads/2017/05/2017-05_Boelschestr_Anwohnerflyer_web.pdf
-#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.641756.php
-#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.643825.php
-#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.645164.php
-#: source_id: LMS-BR_r_LMS-BR_97860
-#: source_id: 2147341992
-# REMOVED ---	q4::inwork; 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
-	q4::inwork; 25539,5237 25524,5011 25519,4830
-',
-         'from' => 1509836400,
-         'id' => 2867,
-         'text' => 'Bölschestr.: Bauarbeiten, zwischen Aßmannstr. und Müggelseedamm Richtung Süden gesperrt, bis Ende Mai 2018',
-         'type' => 'handicap',
-         'until' => 1527242400
-       },
+       undef,
        undef,
        undef,
        {
@@ -4456,6 +4459,31 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Dörpfeldstr.: Bauarbeiten zwischen Gellert- und Hackenbergstr., Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 26. März 2018 bis 17. April 2018',
          'type' => 'handicap',
          'until' => 1523970000
+       },
+       {
+         'data' => '#: last_checked: 2018-03-25
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet? Wird sich die Qualität der Fahrbahn nach den Bauarbeiten verbessern?
+	q4::inwork 17456,7132 17352,7051
+',
+         'from' => undef,
+         'id' => 2941,
+         'text' => 'Mentelinstr.: Bauarbeiten zwischen Nalepastr. und Otto-Krüger-Zeile, Fahrbahn gesperrt, Ende unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: last_checked: 2018-03-25 vvv
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
+	q4::inwork; 24629,5831 24798,5891
+	q3::inwork 24798,5891 24977,5880
+#: add_fragezeichen ^^^
+#: last_checked ^^^
+',
+         'from' => undef,
+         'id' => 2942,
+         'text' => 'Stillerzeile: Bauarbeiten, östlich des Löbauer Wegs einige Meter Fahrbahn gesperrt, westlich Einbahnstraßenregelung, offen Richtung Westen',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

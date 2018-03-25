@@ -542,7 +542,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 Handjerystr.: schlechtes Kopfsteinpflaster	Q3 20967,3343 20906,3433 20833,3519 20683,3693 20546,3865
 (An der Müggelspree - Salvador-Allende-Str.): Asphalt	Q0 23444,4942 23461,4948 23461,5013 23461,5054
-(An der Müggelspree): fester Waldweg	Q1 23461,5054 23620,5096 23776,5040 23852,5036 23962,5031 23982,5030 24147,4930 24378,4847 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25429,4493 25479,4540 25565,4549
+(An der Müggelspree): fester Waldweg	Q1 23461,5054 23620,5096 23776,5040 23852,5036 23962,5031 23982,5030 24147,4930 24378,4847 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25429,4493 25458,4521 25565,4549
 (Zum Spreetunnel): fester Waldweg, Stufen!	Q2 25385,4414 25403,4415 25477,4419 25515,4476 25551,4481 25565,4549
 Görlitzer Park: teils fester sandiger Weg	Q1 12671,10042 12686,10045 12690,10062
 Görlitzer Park: Kopfsteinpflaster	Q2 12757,10197 12763,10207 12767,10216
@@ -806,7 +806,7 @@ Weg am Teufelssee: Waldweg	Q1 -886,9447 -942,9251 -1047,9123
 Schwarzer Weg (Oberschöneweide): unbefestigter Weg, holprig	Q2 17299,8140 17299,8108 17301,7754
 Schwarzer Weg (Oberschöneweide): asphaltiert, mit leichten Schäden	Q0 17301,7754 17301,7645 17296,7401
 Schwarzer Weg (Oberschöneweide): asphaltiert	Q0 17296,7401 17294,7367
-Schwarzer Weg (Oberschöneweide): unbefestigter Weg, teilweise recht schmal	Q2 17295,7328 17297,7196 17286,7173
+Schwarzer Weg (Oberschöneweide): unbefestigter Weg	Q2 17295,7328 17297,7196 17286,7173
 (Wilhelmstrand, Weg 1): unbefestigter Weg	Q2 17059,8097 17299,8108
 Möllhausenufer: Kopfsteinpflaster	Q2 23295,1145 23408,1170 23520,1194 23608,1210
 Möllhausenufer: asphaltiert	Q0 23608,1210 23747,1243
@@ -1559,7 +1559,7 @@ Nalepastr.: Asphalt	Q0 17050,7687 17052,7738
 Nalepastr.: Beton, Eisenbahnschienen	Q1 17050,7687 17047,7619
 Nalepastr.: fester enger Sandweg	Q2 17043,7512 17047,7619
 Nalepastr.: Beton, Eisenbahnschienen	Q1 17043,7512 17135,7377 17190,7306
-Nalepastr.: sehr guter Asphalt	Q0 17190,7306 17211,7280 17219,7268 17286,7173 17352,7051 17459,6854 17514,6754 17555,6680 17614,6571
+Nalepastr.: sehr guter Asphalt	Q0 17190,7306 17211,7280 17286,7173 17352,7051 17459,6854 17514,6754 17555,6680 17614,6571
 Ernst-Grube-Str.: Asphalt	Q0 21364,5430 21363,5336 21362,5289 21345,5157 21343,5140 21324,4986
 Ernst-Grube-Str.: Kopfsteinpflaster	Q2 21324,4986 21306,4876 21300,4837 21264,4809 21287,4757 21332,4655
 Eiselenweg: Asphalt	Q0 21206,5420 21364,5430 21447,5414
@@ -1766,9 +1766,9 @@ Dorotheastr.: schlechtes Kopfsteinpflaster	Q3 18319,9218 18347,9145 18406,9052 1
 Tiergartenstr. (Biesdorf): Kopfsteinpflaster	Q2 21037,7751 21179,7754 21304,7783 21410,7824
 Bismarcksfelder Str.: fester Sandweg, holprig	Q2 21419,7806 21561,7867 21599,7904
 (Bellevuepark): Kleinsteinpflaster	Q1 22798,5731 22796,5640 22796,5631 22787,5582
-(Bellevuepark): mäßiger Asphalt	Q1 22787,5582 22733,5569 22701,5428 22628,5340
-(Bellevuepark): neuer Asphalt	Q0 22787,5582 22855,5554 22835,5452 22851,5321
-Am Krusenick: guter Asphalt	Q0 22735,5331 22737,5278 22751,4970
+(Bellevuepark): mäßiger Asphalt	Q1 22787,5582 22733,5569 22701,5428 22657,5328
+(Bellevuepark): neuer Asphalt	Q0 22787,5582 22855,5554 22835,5452 22851,5327
+Am Krusenick: guter Asphalt	Q0 22735,5328 22737,5278 22751,4970
 Am Krusenick: Kopfsteinpflaster	Q2 22751,4970 22754,4919
 Am Krusenick: guter Asphalt	Q0 22754,4919 22705,4874
 Am Krusenick: Asphalt	Q0 22705,4874 22667,4912 22652,4966 22751,4970
@@ -2807,7 +2807,6 @@ Scharnweberstr.: Beton	Q1 25724,4706 25720,4832
 Radweg am Müggelsee: sehr guter Asphalt	Q0 25385,4414 25373,4371 25347,4320 25373,4266 25376,4207 25286,3931 25262,3828 25251,3789 25232,3757 25241,3232 25281,3161 25259,3116 25346,2956 25474,2848 25547,2779 25600,2681 25758,2627 25785,2576 25790,2507 25836,2499
 Radweg am Müggelsee: Beton	Q0 25836,2499 25837,2485 25942,2453
 Am Müggelsee: Asphalt	Q0 25474,2848 25667,2787 25857,2654 26006,2615
-Bölschestr.: Kopfsteinpflaster	Q2 25539,5237 25544,5326
 Myliusgarten: schlechtes Kopfsteinpflaster	Q3 25548,5398 25466,5408 25272,5417
 Agnes-von-Zahn-Harnack-Str.: Kopfsteinpflaster	Q2 7795,13093 7867,13127 7938,13150
 Katharina-Paulus-Str.: Kopfsteinpflaster	Q2 7867,13106 7867,13127
@@ -3437,7 +3436,7 @@ Küsterwiesen: Asphalt	Q0 29840,3378 29807,3345
 Hechtstr.: Asphalt	Q0 29743,3546 29820,3589 29917,3697 29960,3845 30015,4047
 Brückenstr. (Rahnsdorf): Asphalt	Q0 29609,4049 29568,4098 29524,4208
 (entlang des Fließes): unbefestigter Weg	Q2 29714,4461 29695,4434 29656,4431 29613,4371 29616,4311 29571,4256 29515,4227 29446,4193 29354,4062 29232,3991
-(entlang des Tränkegrabens): Asphalt	Q0 16900,9861 17041,9985 17078,10038
+(entlang des Tränkegrabens): Asphalt	Q0 16900,9861 17005,9953 17041,9985 17078,10038
 (entlang des Tränkegrabens): Beton	Q0 17078,10038 17138,10109 17154,10158 17157,10173 17143,10186 17144,10297 17160,10376
 (entlang des Tränkegrabens): Beton/Asphalt	Q0 17160,10376 17249,10666
 (entlang des Tränkegrabens): Beton	Q0 17249,10666 17249,10702 17310,10714 17415,10694 17527,10640 17625,10615 17705,10621 17847,10629 17870,10619 17897,10607 17999,10584 18034,10567 18059,10556 18150,10543
@@ -3768,7 +3767,7 @@ Straße zum Müggelhort: Asphalt	Q0 28729,3084 28639,3005 28442,2926 28359,2722 28
 Straße zum Müggelhort: Asphalt	Q0 27761,2124 27599,1521
 (Zum Hotel Müggelsee): Beton	Q0 26713,2064 26805,2381 26836,2480 26859,2596
 Müggelschlößchenweg: Asphalt	Q0 25385,4414 25132,4385 24181,4270 24135,4264 23879,4233 23753,4218
-Müggelschlößchenweg: Beton	Q0 23753,4218 23655,4205 23435,4179
+Müggelschlößchenweg: Beton	Q0 23753,4218 23658,4208 23435,4179
 Strandschloßweg: Asphalt	Q0 23368,3894 23439,3892 23467,3891 23749,3883
 Strandschloßweg: Beton	Q0 23749,3883 23925,3886
 Strandschloßweg: Feinschotter	Q1 23925,3886 24147,3888 24321,3886
@@ -3810,7 +3809,7 @@ Weg H: unbefestigte Straße	Q2 27961,699 28083,592
 Zur Hirtenwiese: Asphalt	Q0 27273,-106 26700,-344
 Am Maria-Jankowski-Park: Kopfsteinpflaster	Q2 22087,5404 22018,5452
 (Lindenstr. - Bahnhofstr.): Kleinsteinpflaster	Q1 22017,5159 22046,5305 22043,5346
-Am Generalshof: Kopfsteinpflaster	Q2 22164,5441 22167,5416 22046,5305
+Am Generalshof: Kopfsteinpflaster	Q2 22165,5434 22167,5416 22046,5305
 Moosstr. [Wohngebiet]: Kopfsteinpflaster	Q2 19255,5164 19294,5033 19306,4969 19312,4940
 Moosstr. [Wohngebiet]: Kopfsteinpflaster	Q2 19245,4931 19241,4958 19236,5025 19233,5076 19210,5150
 Moosstr. [Wohngebiet]: Kopfsteinpflaster	Q2 19294,5033 19236,5025
@@ -4529,7 +4528,7 @@ Trimbacher Str.: Asphalt	Q0 11798,1212 11841,1291 11954,1407
 Dessenheimer Weg: Asphalt	Q0 11841,1291 11778,1338 11756,1381
 Zum kleinen Pfuhl: schlechtes Kopfsteinpflaster, Gehweg asphaltiert	Q2 12127,1564 12162,1651
 Leonberger Ring: Asphalt	Q0 12286,2065 12274,2098 12348,2265 12566,2188 12582,2122
-(Katzengrabensteg - Bellevuepark): wassergebundene Decke	Q1 22632,4958 22726,5332
+(Katzengrabensteg - Bellevuepark): wassergebundene Decke	Q1 22632,4958 22726,5328
 Katzengrabensteg: Holzbohlen	Q1 22581,4932 22484,4868
 Straße 89 (Niederschönhausen): unbefestigte sandige Straße	Q2 8606,20063 8703,19917
 Saaleckplatz: Asphalt	Q0 5204,1057 5187,1059 5162,1098 5162,1110 5178,1123 5190,1114 5212,1074 5204,1057
@@ -8317,10 +8316,10 @@ Prenzlauer Promenade: Beton	Q0 11979,19403 11990,19325
 (Dohnagestell - Rehberge): Parkweg	Q1 4879,15964 5022,15987 5066,15991
 (Rehberge - Petersallee): Parkweg	Q1 5022,15987 5057,16116 5122,16215
 (Rehberge - Petersallee): Kopfsteinpflaster, teilweise mit Banketten	Q2 5122,16215 5426,16539
-An der Filmfabrik: Verbundsteinpflaster	Q1 22872,5018 22856,5245 22851,5321
+An der Filmfabrik: Verbundsteinpflaster	Q1 22872,5018 22856,5245 22851,5327
 Am Werksgarten: Kopfsteinpflaster	Q2 22856,5245 22803,5241
 Am Werksgarten: Kopfsteinpflaster	Q2 22803,5278 22737,5278
-Am Filmlager: Kopfsteinpflaster	Q2 22802,5325 22803,5278 22803,5241 22804,5199
+Am Filmlager: Kopfsteinpflaster	Q2 22802,5327 22803,5278 22803,5241 22804,5199
 Werlseestr. - Am Goldmannpark: unbefestigte Straße	Q2 26199,5643 26239,5659 26274,5694 26282,5830
 (Am Goldmannpark - Fürstenwalder Damm): Asphalt	Q0 26282,5830 26302,5932
 Am Mühlenfließ: Verbundsteinpflaster	Q1 29982,4525 29891,4605
@@ -9626,6 +9625,10 @@ Wadzeckstr. - Mollstr.: Betonpflaster	Q1 11315,13210 11399,13333
 Ahornallee: Asphalt mit einigen Schäden	Q1 1657,11737 1673,11814 1697,11911 1725,12009 1752,12114
 Kranoldplatz: Kopfsteinpflaster	Q2 5317,2345 5417,2383
 Courbièrestr.: Verbundsteinpflaster	Q1 6725,10641 6685,10690
+Alte Köpenicker Allee: unbefestigte Straße, holprig	Q2 20316,7637 20348,7634 20459,7445 20501,7472 20540,7532
+(Weg im Grünzug): Asphalt	Q0 17391,9746 17316,9797 17257,9869
+(Weg im Grünzug): unebener Asphalt	Q1 17257,9869 17161,9921 17005,9953
+(Dolgenseestr. - Weg im Grünzug): unbefestigter Weg	Q2 17275,9892 17257,9869
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -11460,7 +11463,7 @@ Naturlehrpfad: fester Sandweg	Q2 5363,24109 5264,24186 5182,24183
 Steinhellenweg: Beton	Q0 10010,4606 10012,4826 10015,4875
 Steinhellenweg: Kolonieweg/Rasengittersteine	Q2 10015,4875 10012,5210 10012,5231
 Bruno-Wille-Str.: schlechtes Kopfsteinpflaster	Q3 26085,4865 26083,4939
-Bruno-Wille-Str.: Kopfsteinpflaster	Q2 26083,4939 26079,5057 26069,5280 26063,5424 26061,5467 26057,5553 26059,5631 26071,5778
+Bruno-Wille-Str.: Kopfsteinpflaster	Q2 26083,4939 26079,5057 26068,5273 26063,5424 26061,5467 26057,5553 26059,5631 26071,5778
 Sondershauser Str.: Beton	Q0 6398,590 6383,667 6358,795 6360,825 6363,935 6386,1051
 Sondershauser Str.: Asphalt	Q0 6386,1051 6397,1135 6409,1218 6441,1444 6470,1598
 Sondershauser Str.: Kopfsteinpflaster	Q2 6470,1598 6486,1680
@@ -14147,7 +14150,7 @@ Welsumerpfad: Verbundsteinpflaster	Q1 15832,125 15783,72 15707,-6 15615,-92
 Straße 199 (Rudow): Verbundsteinpflaster	Q1 15561,386 15667,199 15783,72
 Freudstr.: guter Beton	Q0 -7003,16188 -6990,16321 -6982,16403 -6980,16452 -7037,16469
 Röbeler Weg: schlechtes Kopfsteinpflaster	Q3 24831,10730 24820,10605 24756,10515
-Heimgartenstr.: Asphalt	Q0 23537,4238 23651,4254 23880,4280 24098,4310
+Heimgartenstr.: Asphalt	Q0 23537,4238 23653,4255 23880,4280 24098,4310
 Alsbacher Weg: guter Beton	Q0 -847,4553 -831,4636
 Westhofener Weg: Asphalt	Q0 -2353,2424 -2674,2330 -2647,2240 -2603,2162
 Kissingenplatz: guter Asphalt	Q0 11487,17984 11448,18051 11405,17985
@@ -14171,7 +14174,7 @@ Dohlenstr.: Verbundsteinpflaster	Q1 -1584,19363 -1557,19457
 Dohlenstr.: Beton	Q0 -1557,19457 -1508,19578
 Dohlenstr.: Asphalt	Q0 -1508,19578 -1419,19815
 Dohlenstr.: Verbundsteinpflaster	Q1 -1419,19815 -1364,19982
-Fliederstr. (Köpenick): guter Beton	Q0 23634,4563 23651,4467 23653,4363 23651,4268 23651,4254 23655,4205
+Fliederstr. (Köpenick): guter Beton	Q0 23634,4563 23651,4467 23653,4363 23651,4268 23653,4255 23658,4208
 Schwarzdornweg: Asphalt	Q0 2826,2390 3006,2384
 Minzeweg: guter Asphalt	Q0 16556,3258 16420,3353 16365,3396 16325,3401 16315,3430 16254,3489 16208,3527 16152,3562 16097,3595 16003,3652 15838,3754 15603,3905
 Heinrichstr. (Lichterfelde): guter Beton	Q0 4433,1800 4542,1729 4605,1633
@@ -15843,7 +15846,7 @@ Karl-Pokern-Str.: Asphalt	Q0 26079,5057 26034,5056 25984,5070 25941,5069 25860,5
 Karl-Pokern-Str.: Beton	Q1 25860,5067 25860,5159 25857,5184 26026,5179 26028,5153 26034,5056
 Karl-Pokern-Str.: Beton	Q1 25860,5159 26028,5153
 Rahnsdorfer Str. (Friedrichshagen): Beton	Q0 26611,5301 26570,5300 26488,5292
-Rahnsdorfer Str. (Friedrichshagen): sehr guter Asphalt	Q0 26488,5292 26364,5288 26224,5285 26162,5283 26069,5280 25739,5242
+Rahnsdorfer Str. (Friedrichshagen): sehr guter Asphalt	Q0 26488,5292 26364,5288 26224,5285 26162,5283 26068,5273 25739,5242
 Aßmannstr.: guter Asphalt	Q0 25738,5228 25602,5234
 Aßmannstr.: Verbundsteinpflaster	Q1 25602,5234 25539,5237 25470,5241
 Aßmannstr.: guter Asphalt	Q0 25470,5241 25264,5253 25121,5286

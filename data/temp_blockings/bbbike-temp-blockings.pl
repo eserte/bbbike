@@ -6254,13 +6254,13 @@ EOF
 	1::inwork 4356,12009 4337,11721
 EOF
      },
-     { from  => $isodate2epoch->("2017-05-12 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-05-14 23:59:59"),
+     { from  => $isodate2epoch->("2018-05-11 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-05-13 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 4]],
-       text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (13.5.2017 und 14.5.2017)',
+       text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (12.5.2018 und 13.5.2018)',
        type  => 'gesperrt',
-       source_id => 'http://www.ms-event-agentur.com/primavera%202013.html?date=20170325',
+       source_id => 'http://www.volksfeste-in-deutschland.de/primavera-fruehling-auf-der-akazienstrasse-in-berlin-schoeneberg.html',
        data  => <<EOF,
 	2::temp 7101,9027 7035,9161 7012,9222 7001,9291
 	2::temp 6945,9142 7035,9161
@@ -26112,7 +26112,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2017-11-05 00:00:00"), # 1495918329, # 2017-05-27 22:52
-       until => $isodate2epoch->("2018-05-25 12:00:00"),
+       until => 1521993580, # (keine Einschränkungen gesehen) --- $isodate2epoch->("2018-05-25 12:00:00"),
        text  => 'Bölschestr.: Bauarbeiten, zwischen Aßmannstr. und Müggelseedamm Richtung Süden gesperrt, bis Ende Mai 2018',
        type  => 'handicap',
        data  => <<EOF,
@@ -26947,6 +26947,29 @@ EOF
        data  => <<EOF,
 #: by: http://www.berliner-woche.de/adlershof/verkehr/wasserbetriebe-und-bvg-bauen-in-der-doerpfeldstrasse-d144226.html
 	q4::inwork 20082,3578 20136,3609 20149,3617 20159,3623 20219,3661 20304,3714 20322,3725 20352,3744 20362,3750 20428,3786
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Mentelinstr.: Bauarbeiten zwischen Nalepastr. und Otto-Krüger-Zeile, Fahrbahn gesperrt, Ende unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2018-03-25
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet? Wird sich die Qualität der Fahrbahn nach den Bauarbeiten verbessern?
+	q4::inwork 17456,7132 17352,7051
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Stillerzeile: Bauarbeiten, östlich des Löbauer Wegs einige Meter Fahrbahn gesperrt, westlich Einbahnstraßenregelung, offen Richtung Westen',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2018-03-25 vvv
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
+	q4::inwork; 24629,5831 24798,5891
+	q3::inwork 24798,5891 24977,5880
+#: add_fragezeichen ^^^
+#: last_checked ^^^
 EOF
      },
     );
