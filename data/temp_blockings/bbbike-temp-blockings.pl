@@ -26873,8 +26873,8 @@ EOF
 EOF
      },
      { from  => 1520920800, # 2018-03-13 07:00
-       until => $isodate2epoch->("2018-03-27 12:00:00"), # 1522533599, # 2018-03-31 23:59
-       text  => 'Konstanzer Str.: Bauarbeiten, Sperrung zwischen Hohenzollerndamm und Berliner Str., evtl. sind auch Radfahrer betroffen, bis Ende März 2018',
+       until => $isodate2epoch->("2018-04-01 12:00:00"), # 1522533599, # 2018-03-31 23:59
+       text  => 'Konstanzer Str.: Bauarbeiten, Sperrung zwischen Hohenzollerndamm und Berliner Str., evtl. sind auch Radfahrer betroffen, bis Anfang April 2018',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147342320
@@ -26946,6 +26946,8 @@ EOF
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.687481.php',
        data  => <<EOF,
 #: by: http://www.berliner-woche.de/adlershof/verkehr/wasserbetriebe-und-bvg-bauen-in-der-doerpfeldstrasse-d144226.html
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.687481.php
+#: source_id: 2147342367
 	q4::inwork 20082,3578 20136,3609 20149,3617 20159,3623 20219,3661 20304,3714 20322,3725 20352,3744 20362,3750 20428,3786
 EOF
      },
@@ -26970,6 +26972,14 @@ EOF
 	q3::inwork 24798,5891 24977,5880
 #: add_fragezeichen ^^^
 #: last_checked ^^^
+EOF
+     },
+     { from  => 1522098513, # 2018-03-26 23:08
+       until => 1523052000, # 2018-04-07 00:00
+       text  => 'Bäkestr.: Bauarbeiten, Sperrung, eventuell sind auch Radfahrer betroffen, bis 06.04.2018',
+       type  => 'gesperrt',
+       data  => <<EOF,
+	2::inwork 4832,2975 4659,3065 4587,3097 4411,3180
 EOF
      },
     );

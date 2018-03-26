@@ -124,6 +124,7 @@ Dorfplatz	1 21074,-475 20986,-529 20890,-546 20827,-537 20999,-489 21074,-475
 #: XXX Straße wird zu einer Stadttraße umgebaut; auf der südöstlichen Seite wird ein Zweirichtungsradweg+gehweg entstehen; außerdem wird es eine Rampe zur Straße "Am Falkenberg" geben
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/b96a/index.shtml
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/b96a/download/lageplan_07.pdf
+#: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: II/2018 -- II/2020)
 #: last_checked: 2018-01-01 (mapillary)
 #: check_frequency: 360d
 B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532 21819,1595 21541,1739
@@ -2881,6 +2882,7 @@ Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 18301,9946 18
 #: last_checked ^^^
 # 
 #: by: https://www.berliner-zeitung.de/berlin/berliner-wasserbetriebe-tunnel-unterm-mauerpark-wird-zur-attraktion-25534506
+#: source_id: 2147342369
 #: last_checked: 2018-03-19 (Nordseite) vvv
 #: check_frequency: 360d vvv
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
@@ -3337,9 +3339,10 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7641
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/artikel.563115.php
 #: by: http://www.berliner-woche.de/moabit/bauen/neue-uferwand-am-wikingerufer-baustelle-wird-gesichert-d133203.html
+#: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: III/2018 bis I/2021)
 #: osm_watch: way id="501191631" version="1"
 #: last_checked: 2017-09-09
-#: check_frequency: 360d
+#: next_check: 2021-01-01
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 # 
 #: osm_watch: way id="27178371" version="10"

@@ -4392,9 +4392,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1520920800,
          'id' => 2934,
-         'text' => 'Konstanzer Str.: Bauarbeiten, Sperrung zwischen Hohenzollerndamm und Berliner Str., evtl. sind auch Radfahrer betroffen, bis Ende März 2018',
+         'text' => 'Konstanzer Str.: Bauarbeiten, Sperrung zwischen Hohenzollerndamm und Berliner Str., evtl. sind auch Radfahrer betroffen, bis Anfang April 2018',
          'type' => 'handicap',
-         'until' => 1522144800
+         'until' => 1522576800
        },
        {
          'data' => '# XXX_prog: eigentlich q3-
@@ -4451,6 +4451,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: by: http://www.berliner-woche.de/adlershof/verkehr/wasserbetriebe-und-bvg-bauen-in-der-doerpfeldstrasse-d144226.html
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.687481.php
+#: source_id: 2147342367
 	q4::inwork 20082,3578 20136,3609 20149,3617 20159,3623 20219,3661 20304,3714 20322,3725 20352,3744 20362,3750 20428,3786
 ',
          'from' => 1521928800,
@@ -4484,6 +4486,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Stillerzeile: Bauarbeiten, östlich des Löbauer Wegs einige Meter Fahrbahn gesperrt, westlich Einbahnstraßenregelung, offen Richtung Westen',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '	2::inwork 4832,2975 4659,3065 4587,3097 4411,3180
+',
+         'from' => 1522098513,
+         'id' => 2943,
+         'text' => 'Bäkestr.: Bauarbeiten, Sperrung, eventuell sind auch Radfahrer betroffen, bis 06.04.2018',
+         'type' => 'gesperrt',
+         'until' => 1523052000
        }
      
 );
