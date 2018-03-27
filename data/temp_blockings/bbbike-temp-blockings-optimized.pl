@@ -4104,7 +4104,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-03-23
+#: last_checked: 2018-03-27
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -4495,6 +4495,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Bäkestr.: Bauarbeiten, Sperrung, eventuell sind auch Radfahrer betroffen, bis 06.04.2018',
          'type' => 'gesperrt',
          'until' => 1523052000
+       },
+       {
+         'data' => '	q4::inwork 11616,10288 11512,10105
+',
+         'from' => 1522090587,
+         'id' => 2944,
+         'source_id' => '2147342376',
+         'text' => 'Mariannenstr.: Bauarbeiten zwischen Reichenberger Str. und Paul-Lincke-Ufer, Fahrbahn gesperrt, ab 26.03.2018 10:00 bis Ende April 2018',
+         'type' => 'handicap',
+         'until' => 1525093200
        }
      
 );

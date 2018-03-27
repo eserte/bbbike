@@ -26164,7 +26164,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-03-23
+#: last_checked: 2018-03-27
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -26980,6 +26980,15 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2::inwork 4832,2975 4659,3065 4587,3097 4411,3180
+EOF
+     },
+     { from  => 1522090587, # 2018-03-26 20:56
+       until => 1525093200, # 2018-04-30 15:00
+       text  => 'Mariannenstr.: Bauarbeiten zwischen Reichenberger Str. und Paul-Lincke-Ufer, Fahrbahn gesperrt, ab 26.03.2018 10:00 bis Ende April 2018',
+       type  => 'handicap',
+       source_id => '2147342376',
+       data  => <<EOF,
+	q4::inwork 11616,10288 11512,10105
 EOF
      },
     );

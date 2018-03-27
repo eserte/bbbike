@@ -290,7 +290,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: source_id: 2147340291
 #: source_id: 2147342376
 #: last_checked: 2018-03-15
-#: next_check: 2018-03-26
+#: next_check: 2018-04-30
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288
 Mariannenstr: Asphalt	Q0 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9053,16029 8923,15850
@@ -798,7 +798,7 @@ Bänschstr.: Asphalt	Q0 14996,12462 14801,12517
 Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: XXX Asphaltierung soll 2018 erfolgen
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf
-#: last_checked: 2018-02-14
+#: last_checked: 2018-03-27
 #: next_check: 2018-12-31
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2057,7 +2057,7 @@ Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 14558,10819 14352,10874
 #: next_check_id: DBWERKSTRASSE-2017
 #: XXX wann wird hier die letzte Deckschicht erstellt? vvv
-#: last_checked: 2018-03-23 vvv
+#: last_checked: 2018-03-27 vvv
 #: check_frequency: 14d vvv
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Asphalt, letzte Deckschicht fehlt	Q1 14352,10874 14231,10907 14141,10931 14076,10949
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Asphalt, letzte Deckschicht fehlt	Q1 14141,10931 14107,10911 14043,10928
@@ -10516,6 +10516,8 @@ Goldlärchenweg: Verbundsteinpflaster	Q1+ -6385,6185 -6437,6221 -6495,6131
 Amberbaumallee: Asphalt	Q0 -6410,6549 -6375,6525 -6340,6500 -6221,6411
 Am Waldkiefernpfad: Asphalt	Q0 -6340,6500 -6268,6610 -6302,6690
 An den Parkbäumen: Asphalt	Q0 -6410,6549 -6381,6587 -6302,6690 -6288,6710 -6437,6824 -6530,6699 -6556,6663
+#: by: http://www.berliner-woche.de/kladow/bauen/am-parkrosenweg-mussten-alte-baeume-neuen-haeusern-weichen-m92196,147447.html
+Parkrosenweg: Asphalt	Q0 -6530,6699 -6381,6587
 (Neukladower Allee - Gutspark Neukladow): Asphalt mit einigen Schäden	Q1 -6319,5606 -6246,5562 -6125,5447 -6112,5406
 (Spektegrünzug - Ramin-Park): wassergebundene Decke	Q1 -4160,14690 -4118,14736 -4110,14762 -4084,14778 -4026,14765
 (Spektegrünzug - Hohenzollernring): wassergebundene Decke	Q1 -4084,14778 -4056,14799 -3926,14879
@@ -15232,6 +15234,7 @@ An der Schule: unbefestigte Straße	Q2 24769,11819 24759,11666
 An der Schule: schlechter holpriger Sandweg	Q3 24759,11666 24751,11631
 #: corrected_by: srt (neu gemacht)
 # nach den Bauarbeiten wieder aktivieren: An der Schule: Asphalt	Q0 24751,11631 24749,11564 24747,11524 24788,11333
+#: by: http://www.berliner-woche.de/mahlsdorf/bauen/start-fuer-bau-der-oberschule-in-mahlsdorf-haben-begonnen-d146952.html
 #: add_fragezeichen: ist die Fahrbahn wieder offen?
 #: last_checked: 2017-08-09
 #: check_frequency: 60d
