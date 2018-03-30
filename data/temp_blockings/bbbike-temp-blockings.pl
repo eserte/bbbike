@@ -21558,17 +21558,15 @@ EOF
 	q4::inwork; 7085,15226 7131,15109
 EOF
      },
-     { from  => $isodate2epoch->("2017-04-28 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-05-01 23:59:59"),
-       text  => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz, Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (29.04.2017 bis 01.05.2017)',
+     { from  => $isodate2epoch->("2018-05-03 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-05-06 23:59:59"),
+       text  => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz, Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (04.05.2018 bis 06.05.2018)',
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 4]],
        type  => 'handicap',
        data  => <<EOF,
-#: by: http://www.ag-bahnhofstrasse.de/maientanz.html?y=2016
-#: by: http://www.berlin.de/tickets/suche/detail.php?id=954647
-#: by: http://www.volksfeste-in-deutschland.de/kunst-wein-in-lichtenrade.html
-#: tempex: YYYY0429-YYYY0501
+#: by: http://www.ag-bahnhofstrasse.de/maientanz.html?y=2018
+# REMOVED (müsste korrigiert werden) --- #: tempex: YYYY0429-YYYY0501
 	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
 EOF
      },
@@ -24713,6 +24711,7 @@ EOF
 #: source_id: LMS-BR_r_LMS-BR_51041
 #: source_id: 2147342003
 #: source_id: 2147342198
+#: source_id: LMS-BR_r_LMS-BR_121392_LMS-BR_72
 #: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.639561.php (Ende 2018 oder Mitte 2019)
 #: XXX laut fritz Ende Juni 2018, laut vmz Ende 2018
@@ -25478,12 +25477,12 @@ EOF
 EOF
      },
      { from  => 1467661160, # 2016-07-04 21:39
-       until => $isodate2epoch->("2018-03-30 12:00:00"),
-       text  => 'Buckower Damm: Baustelle zwischen An den Achterhöfen und Mollnerweg, evtl. auch Einschränkungen für Radfahrer, voraussichtlich bis März 2018',
+       until => $isodate2epoch->("2018-05-30 12:00:00"),
+       text  => 'Buckower Damm: Baustelle zwischen An den Achterhöfen und Mollnerweg, evtl. auch Einschränkungen für Radfahrer, voraussichtlich bis Ende Mai 2018',
        type  => 'handicap',
        source_id => '2147341551',
        data  => <<EOF,
-#: note: laut fritz bis 2018-03-30, laut vmz bis März 2018
+#: note: laut fritz bis 2018-05-30, laut vmz bis Mai 2018
 #: by: http://www.berliner-woche.de/buckow/verkehr/der-lange-weg-zur-sanierten-strasse-bauarbeiten-am-buckower-damm-anwohner-aergern-sich-ueber-lkw-im-wohngebiet-d126968.html
 #: note: die Baustelle ist gewandert
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
@@ -26855,6 +26854,7 @@ EOF
        type  => 'handicap',
        source_id => '2147341799',
        data  => <<EOF,
+#: source_id: LMS-BR_r_LMS-BR_108511_LMS-BR_72
 #: by: http://www.berliner-woche.de/zehlendorf/bauen/fertigstellung-der-berlepschstrasse-verzoegert-sich-um-ein-halbes-jahr-d137942.html (sogar "bis Ende März")
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.683398.php
 #: by: http://www.berliner-woche.de/zehlendorf/bauen/strassensanierung-in-der-berlepschstrasse-vezoegert-sich-weiter-d146418.html (Ende Mai)
@@ -26873,8 +26873,8 @@ EOF
 EOF
      },
      { from  => 1520920800, # 2018-03-13 07:00
-       until => $isodate2epoch->("2018-04-01 12:00:00"), # 1522533599, # 2018-03-31 23:59
-       text  => 'Konstanzer Str.: Bauarbeiten, Sperrung zwischen Hohenzollerndamm und Berliner Str., evtl. sind auch Radfahrer betroffen, bis Anfang April 2018',
+       until => $isodate2epoch->("2018-04-12 12:00:00"), # 1522533599, # 2018-03-31 23:59
+       text  => 'Konstanzer Str.: Bauarbeiten, Sperrung zwischen Hohenzollerndamm und Berliner Str., evtl. sind auch Radfahrer betroffen, bis Mitte April 2018',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147342320
@@ -26948,6 +26948,7 @@ EOF
 #: by: http://www.berliner-woche.de/adlershof/verkehr/wasserbetriebe-und-bvg-bauen-in-der-doerpfeldstrasse-d144226.html
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.687481.php
 #: source_id: 2147342367
+#: source_id: LMS-BR_r_LMS-BR_127098_LMS-BR_72
 	q4::inwork 20082,3578 20136,3609 20149,3617 20159,3623 20219,3661 20304,3714 20322,3725 20352,3744 20362,3750 20428,3786
 EOF
      },
@@ -26979,6 +26980,7 @@ EOF
        text  => 'Bäkestr.: Bauarbeiten, Sperrung, eventuell sind auch Radfahrer betroffen, bis 06.04.2018',
        type  => 'gesperrt',
        data  => <<EOF,
+#: source_id: LMS-BR_r_LMS-BR_127117_LMS-BR_72
 	2::inwork 4832,2975 4659,3065 4587,3097 4411,3180
 EOF
      },
@@ -26989,6 +26991,16 @@ EOF
        source_id => '2147342376',
        data  => <<EOF,
 	q4::inwork 11616,10288 11512,10105
+EOF
+     },
+     { from  => 1522326966, # 2018-03-29 14:36
+       until => 1622541600, # 2021-06-01 12:00
+       text  => 'Säntisstr.: Bahnübergang bis 2021 gesperrt, ggfs. gibt es für Fußgänger eine Überquerungsmöglichkeit (tragen!)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: 2147342379
+#: source_id: LMS-BR_r_LMS-BR_127414_LMS-BR_72
+	2::inwork 8971,864 9024,906 9129,986
 EOF
      },
     );

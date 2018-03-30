@@ -111,6 +111,7 @@ Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4
 #: next_check: 2017-09-21
 Groß-Ziethener Str.: werden hier die bestehenden Radwege verbessert oder durch Radspuren ersetzt?	?::projected 12078,-1170 12023,-1174 11953,-1181 11858,-1189 11761,-1199 11717,-1204 11666,-1209 11578,-1220 11548,-1223 11240,-1262 11149,-1274 11003,-1303 10844,-1335
 #: by: http://www.berliner-woche.de/lichtenrade/bauen/staus-am-schichauweg-noch-bis-in-den-sommer-d139735.html
+#: source_id: LMS-BR_r_LMS-BR_124892_LMS-BR_72
 #: last_checked: 2017-05-21
 #: next_check: 2018-06-15
 Barnetstr.: werden hier die bestehenden Radwege verbessert oder durch Radspuren ersetzt?	?::projected 10844,-1335 10720,-1340 10583,-1311 10492,-1266 10379,-1194 10231,-1086 10143,-1026 10082,-986 9888,-853 9815,-805 9780,-788 9693,-815
@@ -129,6 +130,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5823
 #: source_id: 2147342178
 #: source_id: 2147342276
+#: source_id: LMS-BR_r_LMS-BR_120802_LMS-BR_72
 #: last_checked: 2018-03-23
 #: check_frequency: 60d
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
@@ -195,6 +197,8 @@ Quickborner Str.: werden hier Radspuren markiert?	?::projected 7991,21531 7966,2
 #: osm_watch: way id="4484357" version="15"
 #: source_id: 2147342176
 #: source_id: 2147341532
+#: source_id: LMS-BR_r_LMS-BR_116482_LMS-BR_72
+#: source_id: LMS-BR_r_LMS-BR_120876_LMS-BR_72
 #: last_checked: 2017-10-16 (mapillary)
 # REMOVED --- #: check_frequency: 360d
 #: next_check: 2018-05-31
@@ -222,11 +226,12 @@ Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projec
 #: XXX Baumaßnahme 11.12 (Realisierung nach 2011)
 #: XXX laut fritz Arbeiten zwischen Bornitzstraße und Kunzeweg bis zum 07.03.2018
 #: source_id: 2147342170 vvv
+#: source_id: LMS-BR_r_LMS-BR_120486_LMS-BR_72
 #: osm_watch: way id="336565341" version="7" vvv
 #: last_checked: 2018-02-10 vvv
 #: check_frequency: 60d
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626
-#: next_check: 2018-03-29
+#: next_check: 2018-04-08
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15947,12626 15928,12483 15904,12340
 #: last_checked ^^^
 #: osm_watch ^^^
@@ -276,6 +281,7 @@ Stromstr., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,1
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (nach den Bauarbeiten an der Löffelbrücke)
 #: by: http://www.berliner-woche.de/pankow/bauen/baugrund-unerwartet-schwierig-an-der-loeffelbruecke-kann-endlich-weitergebaut-werden-d142979.html
 #: osm_watch: way id="33836252" version="15"
+#: source_id: LMS-BR_r_LMS-BR_95211
 #: last_checked: 2017-08-06
 #: next_check: 2019-11-01
 Pasewalker Str.: Radspuren geplant	?::projected 11907,19749 11909,19706 11911,19667 11915,19580 11927,19308 11937,19175
@@ -514,6 +520,7 @@ Müggelbergdamm: Schutzstreifen	?::projected 25010,4807 25171,4757 25228,4745 252
 #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/de/oepnv/bekanntmachung1.shtml (erster Abschnitt?) --- Radstreifen, außer an den Tram-Haltestellen: Radwege
 #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/boelschestr/Lageplan_Unterlage3_v15032017_gesiegelt.pdf
 #: XXX Maßnahmen Fh.4 + Fh.5
+#: source_id: LMS-BR_r_LMS-BR_115354_LMS-BR_72
 #: osm_watch: way id="283006412" version="10"
 #: osm_watch: way id="520100576" version="2"
 #: osm_watch: way id="9628154" version="22"
@@ -1841,6 +1848,8 @@ Kletterrosenweg	?::projected 21382,149 21354,289
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.95087.php?date=20160124 (Beginn im Jahr 2016)
 # REMOVED (kein Platz für Radspuren) --- #: source_id: 2147339913 --- #: XXX zurzeit Bauarbeiten (laut fritz bis bis 13.01.2017), gibt es Einschränkungen für Radfahrer? --- #: last_checked: 2017-03-26 --- #: check_frequency: 90d --- Hildburghauser Str.: Ausbau der Straße, wie werden die Radwege später aussehen?	?::inwork 4795,1362 4897,1352 5059,1337
 #: source_id: 2147341614
+#: source_id: LMS-BR_r_LMS-BR_103980_LMS-BR_72
+#: source_id: LMS-BR_r_LMS-BR_104112_LMS-BR_72
 #: last_checked: 2017-08-10 vvv
 #: next_check: 2018-04-30
 Hildburghauser Str.: Ausbau der Straße, bessere Qualität des Asphalts?	? 5059,1337 5223,1318 5414,1304 5585,1275 5741,1234
@@ -2146,6 +2155,7 @@ L33: Neubau geplant	?::projected 23895,15904 23965,15894 23992,15894 25007,15650
 #: XXX kann der Radweg während der Bauarbeiten benutzt werden?
 #: XXX wie sieht es bei der Überquerung der Fahrbahn aus, insbesondere an der Tegeler Str.?
 #: source_id: 2147342364
+#: source_id: LMS-BR_r_LMS-BR_127100_LMS-BR_72
 #: next_check: 2018-03-26
 Luxemburger Str.: Bauarbeiten an der südlichen Fahrbahn, sind Radfahrer auch betroffen?	?::inwork 6626,15104 6715,15152 6833,15215 6996,15319 7138,15437
 # 
@@ -2211,6 +2221,7 @@ Linienstr.: wird Vorfahrtsstraße	?::projected 9312,13388 9609,13522 9744,13584 9
 #: XXX Ampeln geplant (Umsetzungen 2018) vvv
 #: next_check: 2018-06-01
 #: XXX wird nur die bestehende Ampel verlegt?
+#: source_id: LMS-BR_r_LMS-BR_110476_LMS-BR_72
 Brandenburgische Str./Ballenstedter Str.	?::projected 3932,9819 3949,9842 3978,9821
 #: last_checked: 2018-03-09
 #: check_frequency: 60d
@@ -2348,6 +2359,7 @@ Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::i
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.637330.php (Ende Januar 2018)
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=37053
 #: source_id: 2147341977
+#: source_id: LMS-BR_r_LMS-BR_114418_LMS-BR_72
 #: osm_watch: way id="23623840" version="21"
 #: last_checked: 2017-05-01
 #: next_check: 2018-04-27
@@ -2419,6 +2431,7 @@ Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich für den Kfz-Verkehr gesperr
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/53re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/ba-spandau/_assets/aktuelles/bebauungsplanverfahren/viii-424_begrundung_mit_anlagen.pdf
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_03_0189_0324_online.pdf (zwei weitere Straßen)
+#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_13_1639_1730_online.pdf (Grundstücksnummerierungen)
 #: note: Parkviertel Kladow vvv
 #: note: Privatstraßen vvv
 #: by: https://www.deutschepost.de/content/dam/dpag/images/D_d/DDP/Downloads/Datafactory/postleitdaten/dezember2016/mtb_strassen_neu.pdf (PLZ)
@@ -2582,6 +2595,7 @@ Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen a
 #: source_id: 2147341322
 #: source_id: 2147342307
 #: source_id: 2147342363
+#: source_id: LMS-BR_r_LMS-BR_125793_LMS-BR_72
 #: last_checked: 2018-03-18
 #: next_check: 2018-03-27
 Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 18215,12123
@@ -2641,7 +2655,7 @@ Mauerweg im Spandauer Forst: Erneuerung	?::projected -3497,20003 -3652,20100 -42
 #: XXX "Die geplante Bauzeit beträgt vier Jahre"
 #: XXX nach den Bauarbeiten werden Radspuren existieren
 #: last_checked: 2017-04-09
-#: check_frequency: 360d
+#: next_check: 2018-10-01
 Wiltbergstr.: wird es für Radfahrer Einschränkungen während der Bauarbeiten geben?	? 16669,25373 16583,25440 16475,25526 16414,25575 16294,25683 16220,25716 16166,25767
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6272

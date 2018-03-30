@@ -3278,7 +3278,27 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.ag-bahnhofstrasse.de/maientanz.html?y=2018
+# REMOVED (müsste korrigiert werden) --- #: tempex: YYYY0429-YYYY0501
+	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
+',
+         'from' => 1525298400,
+         'id' => 2431,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              29,
+                              'months',
+                              4
+                            ]
+                          ],
+         'text' => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz, Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (04.05.2018 bis 06.05.2018)',
+         'type' => 'handicap',
+         'until' => 1525643999
+       },
        undef,
        undef,
        undef,
@@ -3815,6 +3835,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: LMS-BR_r_LMS-BR_51041
 #: source_id: 2147342003
 #: source_id: 2147342198
+#: source_id: LMS-BR_r_LMS-BR_121392_LMS-BR_72
 #: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.639561.php (Ende 2018 oder Mitte 2019)
 #: XXX laut fritz Ende Juni 2018, laut vmz Ende 2018
@@ -3954,7 +3975,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: note: laut fritz bis 2018-03-30, laut vmz bis März 2018
+         'data' => '#: note: laut fritz bis 2018-05-30, laut vmz bis Mai 2018
 #: by: http://www.berliner-woche.de/buckow/verkehr/der-lange-weg-zur-sanierten-strasse-bauarbeiten-am-buckower-damm-anwohner-aergern-sich-ueber-lkw-im-wohngebiet-d126968.html
 #: note: die Baustelle ist gewandert
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
@@ -3965,9 +3986,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1467661160,
          'id' => 2808,
          'source_id' => '2147341551',
-         'text' => 'Buckower Damm: Baustelle zwischen An den Achterhöfen und Mollnerweg, evtl. auch Einschränkungen für Radfahrer, voraussichtlich bis März 2018',
+         'text' => 'Buckower Damm: Baustelle zwischen An den Achterhöfen und Mollnerweg, evtl. auch Einschränkungen für Radfahrer, voraussichtlich bis Ende Mai 2018',
          'type' => 'handicap',
-         'until' => 1522404000
+         'until' => 1527674400
        },
        undef,
        undef,
@@ -4373,7 +4394,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1525125599
        },
        {
-         'data' => '#: by: http://www.berliner-woche.de/zehlendorf/bauen/fertigstellung-der-berlepschstrasse-verzoegert-sich-um-ein-halbes-jahr-d137942.html (sogar "bis Ende März")
+         'data' => '#: source_id: LMS-BR_r_LMS-BR_108511_LMS-BR_72
+#: by: http://www.berliner-woche.de/zehlendorf/bauen/fertigstellung-der-berlepschstrasse-verzoegert-sich-um-ein-halbes-jahr-d137942.html (sogar "bis Ende März")
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.683398.php
 #: by: http://www.berliner-woche.de/zehlendorf/bauen/strassensanierung-in-der-berlepschstrasse-vezoegert-sich-weiter-d146418.html (Ende Mai)
 	q4::inwork -468,1919 -343,1983 -285,2015 -226,2048
@@ -4392,9 +4414,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1520920800,
          'id' => 2934,
-         'text' => 'Konstanzer Str.: Bauarbeiten, Sperrung zwischen Hohenzollerndamm und Berliner Str., evtl. sind auch Radfahrer betroffen, bis Anfang April 2018',
+         'text' => 'Konstanzer Str.: Bauarbeiten, Sperrung zwischen Hohenzollerndamm und Berliner Str., evtl. sind auch Radfahrer betroffen, bis Mitte April 2018',
          'type' => 'handicap',
-         'until' => 1522576800
+         'until' => 1523527200
        },
        {
          'data' => '# XXX_prog: eigentlich q3-
@@ -4453,6 +4475,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: http://www.berliner-woche.de/adlershof/verkehr/wasserbetriebe-und-bvg-bauen-in-der-doerpfeldstrasse-d144226.html
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.687481.php
 #: source_id: 2147342367
+#: source_id: LMS-BR_r_LMS-BR_127098_LMS-BR_72
 	q4::inwork 20082,3578 20136,3609 20149,3617 20159,3623 20219,3661 20304,3714 20322,3725 20352,3744 20362,3750 20428,3786
 ',
          'from' => 1521928800,
@@ -4488,7 +4511,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '	2::inwork 4832,2975 4659,3065 4587,3097 4411,3180
+         'data' => '#: source_id: LMS-BR_r_LMS-BR_127117_LMS-BR_72
+	2::inwork 4832,2975 4659,3065 4587,3097 4411,3180
 ',
          'from' => 1522098513,
          'id' => 2943,
@@ -4505,6 +4529,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Mariannenstr.: Bauarbeiten zwischen Reichenberger Str. und Paul-Lincke-Ufer, Fahrbahn gesperrt, ab 26.03.2018 10:00 bis Ende April 2018',
          'type' => 'handicap',
          'until' => 1525093200
+       },
+       {
+         'data' => '#: source_id: 2147342379
+#: source_id: LMS-BR_r_LMS-BR_127414_LMS-BR_72
+	2::inwork 8971,864 9024,906 9129,986
+',
+         'from' => 1522326966,
+         'id' => 2945,
+         'text' => 'Säntisstr.: Bahnübergang bis 2021 gesperrt, ggfs. gibt es für Fußgänger eine Überquerungsmöglichkeit (tragen!)',
+         'type' => 'gesperrt',
+         'until' => 1622541600
        }
      
 );

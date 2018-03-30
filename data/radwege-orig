@@ -917,7 +917,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: source_id: IM_023718
 #: source_id: 2147339540
 #: last_checked: 2018-02-26
-#: check_frequency: 60d
+#: next_check: 2018-05-31
 	RW2;RW8 14530,7301 14369,7376 14334,7395 14174,7505
 	RW1; 14015,7631 13919,7707
 	RW2;RW1 14530,7301 14617,7243
@@ -2183,6 +2183,7 @@ Gehweg für Radfahrer frei	RW1; 23942,5338 24070,5272 24681,4943 24798,4895 24936
 #: XXX    Verkehrsführung Bauabschnitt 2: östlicher Gehweg gesperrt, bis zum Ende der Bauarbeiten
 #: XXX Bauarbeiten voraussichtlich bis Ende März 2021
 #: osm_watch: way id="333893474" version="2"
+#: source_id: LMS-BR_r_LMS-BR_6442
 #: last_checked: 2018-03-25
 #: next_check: 2019-11-01
 #: priority: #A
@@ -4717,7 +4718,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus?
 #: osm_watch: way id="297058655" version="4"
 #: last_checked: 2018-03-11
-#: check_frequency: 60d
+#: next_check: 2018-04-12
 	RW4; 12969,7610 12914,7785
 # REMOVED (wieder entfernt) --- #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus? --- #: last_checked: 2016-03-01 ---	RW3; 12898,7832 12865,7923 12830,8031 12794,8103 12753,8187
 	RW3;RW4 13015,7471 13018,7441 13029,7353
