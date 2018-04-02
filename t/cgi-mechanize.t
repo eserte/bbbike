@@ -678,6 +678,8 @@ for my $browser (@browsers) {
 	} else {
 	    fail("Cannot get length from content");
 	}
+# XXX do not indent next line!
+#: next_check_id: STERNDAMM-2016
 	if (strftime("%Y-%m-%d %H:%M:%S", localtime) lt "2018-06-01 00:00:00") {
 	    $like_long_data->(qr{Baumschulenweg}, "Expected street in Ausweichroute (while Sterndamm is blocked)");
 	} else {

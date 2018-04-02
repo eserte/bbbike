@@ -525,7 +525,7 @@
 	(setq dirop "../")
       (setq dirop ""))
     (if search-key
-	(grep (concat "2>/dev/null grep -ins " dirop "*-orig " dirop "*.coords.data " dirop "temp_blockings/bbbike-temp-blockings.pl -e '^#:[ ]*" search-key ".*" search-val "'")))))
+	(grep (concat "2>/dev/null grep -ins " dirop "*-orig " dirop "*.coords.data " dirop "temp_blockings/bbbike-temp-blockings.pl " dirop "../t/cgi-mechanize.t " "-e '^#:[ ]*" search-key ".*" search-val "'")))))
 
 (defun bbbike-grep-button (button)
   (bbbike-grep))
