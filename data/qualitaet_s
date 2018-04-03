@@ -329,7 +329,7 @@ Appenzeller Str.: Asphalt	Q0 3432,1667 3297,1845
 Thuner Platz: Kopfsteinpflaster	Q2 3297,1845 3251,1881
 Thuner Platz: Kopfsteinpflaster	Q2 3251,1881 3263,1904 3286,1912 3307,1904 3317,1884 3312,1866 3297,1845
 Luzerner Str.: Kopfsteinpflaster	Q2 3251,1881 3148,1888 3044,1890
-Carstennstr.: Kopfsteinpflaster, teilweise mit Asphaltflicken	Q2 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
+Carstennstr.: verfugtes Kopfsteinpflaster	Q2 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 Carstennstr.: Kopfsteinpflaster, teilweise mit Asphaltflicken	Q2 2781,2493 2740,2588 2625,2850
 Ringstr.: Kopfsteinpflaster	Q2 2625,2850 2632,2969 2655,3025 2698,3068
 Alt-Reinickendorf: Kopfsteinpflaster	Q2 7209,18682 7003,18715 6879,18737 6793,18763 6716,18788 6572,18793 6528,18808 6435,18839
@@ -1811,7 +1811,10 @@ Uferweg am Tegeler Hafen: fester Sandweg	Q1 1259,20303 1349,20345
 Uferweg am Tegeler Hafen: Gehwegplatten	Q0 1349,20345 1534,20421 1572,20412 1610,20385 1655,20388 1756,20405 1858,20431 1863,20478
 (Uferweg am Tegeler Hafen - Am Tegeler Hafen): Gehwegplatten	Q0 1858,20431 1871,20399
 (Uferweg am Tegeler Hafen - Berliner Str.): Verbundsteinpflaster	Q1 1863,20478 1929,20501
-(Tegeler Hafen - An der Mühle): Parkweg/glatt gepflastert	Q1 1756,20405 1736,20441 1733,20470 1753,20511 1761,20539 1741,20566 1721,20603 1697,20623 1687,20645 1668,20670 1630,20731
+(Tegeler Hafen - An der Mühle): Parkweg/glatt gepflastert	Q1 1756,20405 1736,20441 1733,20470 1753,20511 1761,20539 1741,20566 1721,20603 1697,20623 1687,20645
+Gabrielensteg: Parkweg/glatt gepflastert	Q1 1687,20645 1668,20670
+Humboldtinsel: Asphalt	Q0 1668,20670 1630,20731
+Humboldtinsel: Asphalt	Q0 1403,20440 1587,20534 1635,20607 1687,20645
 (Karolinenstr. - Waidmannsluster Damm): Waldweg, hügelig und holprig	Q3 1712,20907 1819,21116 1851,21328 1810,21363
 (Tegeler Fließ - Hermsdorfer Damm): Waldweg	Q2 2352,21559 2253,21527 2166,21468 2074,21469 2004,21502 1942,21564
 (Weg am Tegeler Fließ): Asphalt	Q0 3134,22153 3066,22117
@@ -10699,7 +10702,7 @@ Dohnenstieg: Kleinsteinpflaster	Q1 2711,6698 2654,6706 2606,6708 2435,6690 2301,
 Gadebuscher Weg: Kopfsteinpflaster, am Rand besser	Q3 2547,6274 2499,6428
 Heinrich-Stahl-Weg: Verbundsteinpflaster, wassergebundene Decke	Q2 2367,6336 2281,6469
 Hammersteinstr.: Parkweg	Q2 2360,7107 2304,7059
-Drosselweg (Dahlem): Kopfsteinpflaster	Q2 2412,5901 2594,5923
+Drosselweg (Dahlem): Kopfsteinpflaster	Q2 2412,5901 2587,5908
 Finkenstr. (Dahlem): Asphalt	Q1 2506,6606 2435,6580 2281,6469 2173,6424 2039,6394 1970,6392 1904,6415
 Franz-Cornelsen-Weg: Asphalt	Q1 3593,7176 3597,7192 3612,7335
 Franz-Cornelsen-Weg: wassergebundene Decke	Q1 3612,7335 3634,7601
@@ -11303,7 +11306,7 @@ Bieselheider Weg: Verbundsteinpflaster	Q1 3485,26544 3487,26491 3471,26447 3419,
 Bieselheider Weg: Beton mit Schäden	Q1 3398,26369 3360,26275
 Bieselheider Weg: Asphalt	Q0 3347,26272 3328,26193 3318,26130 3324,26100 3352,26065 3477,25969 3529,25945 3587,25936
 Würtzstr.: gutes Kopfsteinpflaster	Q1 11561,19149 11622,18964
-Räuschstr.: Asphalt	Q0 3089,19869 3252,19658 3455,19389
+Räuschstr.: Asphalt	Q0 3089,19869 3252,19658 3452,19392
 Maximilianstr. (Rummelsburg): mäßiges Kopfsteinpflaster	Q2 16334,10958 16381,11080 16420,11189 16465,11313
 Unterbaumstr.: Kopfsteinpflaster	Q2 8488,12920 8502,12935 8525,12958 8553,12991
 Unterbaumstr.: Asphalt	Q0 8553,12991 8578,13020

@@ -1072,7 +1072,7 @@ EOF
        text  => 'L 78; (Potsdamer Str.); OD Saarmund, Eisenbahnbrücke Brückensanierung Vollsperrung 04.10.2004-15.10.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -9626,-6603 -9500,-6933 -9301,-7466 -8492,-9628 -8331,-9887
+	2 -9626,-6603 -9500,-6933 -9301,-7466 -9116,-7957 -8622,-9215 -8575,-9351 -8521,-9503 -8507,-9605 -8462,-9641 -8331,-9887
 EOF
      },
      { from  => 1096754400, # 2004-10-03 00:00
@@ -2229,7 +2229,7 @@ EOF
        text  => 'L 77; (Saarmund-Güterfelde); OD Philippsthal, zw. Kreisel u. OE Dreharbeiten Vollsperrung 17.06.2005-18.06.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 -6319,-7823 -6659,-8210
+	q4 -6319,-7795 -6711,-8160
 EOF
      },
      { from  => 1118993118, # 2005-06-17 09:25 # FOR RECURRING ENTRY SEE BELOW
@@ -3364,7 +3364,7 @@ EOF
        text  => 'Stahnsdorf, Lindenstraße, Baustelle bis 30.04.2006, Der Verkehr wird an der Baustelle durch eine Lichtzeichenanlage halbseitig vorbeigeführt. ',
        type  => 'gesperrt',
        data  => <<EOF,
-	1 -1664,-1720 -1715,-1767 -1921,-1931 -2049,-2165
+	1 -1664,-1720 -1715,-1767 -1921,-1931 -2040,-2177
 EOF
      },
      { from  => $isodate2epoch->("2017-11-26 00:00:00"), # 1 Tag Vorlauf
@@ -4123,7 +4123,7 @@ EOF
        text  => 'L 077 Lindenstr. OD Stahnsdorf, zw. Streuobsthang u. Ruhlsdorfer Str. Geh- und Radwegbau halbseitig gesperrt; Einbahnstraße 03.04.2006-18.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	1 -2049,-2165 -1921,-1931 -1715,-1767
+	1 -2040,-2177 -1921,-1931 -1715,-1767
 EOF
      },
      { from  => 1144706400, # 2006-04-11 00:00
@@ -5863,7 +5863,7 @@ EOF
        text  => 'B 096 a zw. OL Schildow, Hauptstr. u. Schönfließ, Dorfstr. Deckenerneuerung Vollsperrung 04.10.2006-30.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 8021,26285 7395,26862
+	2::inwork 8021,26285 7617,26640
 EOF
      },
      { from  => 1157234400, # 2006-09-03 00:00
@@ -6849,7 +6849,7 @@ EOF
        text  => 'B 166 Berliner Str., Lindenallee OD Schwedt Deckenerneuerung Vollsperrung 21.11.2006-28.11.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 69480,73471 69302,73357 69238,73315
+	q4::inwork 69472,73461 69302,73357 69238,73315
 EOF
      },
      { from  => 1164612153, # 2006-11-27 08:22
@@ -7613,7 +7613,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005044',
        data  => <<EOF,
-	2::temp 2823,5672 2771,5674 2654,5678
+	2::temp 2823,5672 2771,5674 2669,5677
 EOF
      },
      { from  => 1174773600, # 2007-03-24 23:00
@@ -9659,7 +9659,7 @@ EOF
      },
      { from  => 1189353413, # undef
        until => 1189353419, # undef
-       text  => 'Oranienburger Str. (Reinickendorf) stadtauswärts, zwischen Lübarser Str. und WIttenauer Str. Baustelle, Fahrtrichtung gesperrt',
+       text  => 'Oranienburger Str. (Reinickendorf) stadtauswärts, zwischen Lübarser Str. und Wittenauer Str. Baustelle, Fahrtrichtung gesperrt',
        type  => 'gesperrt',
        source_id => 'IM_006352',
        data  => <<EOF,
@@ -13628,7 +13628,7 @@ EOF
        text  => 'L 077 Saarmund - Güterfelde Bereich KVK Philippsthal Radwegbau Vollsperrung 23.03.2009-14.04.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -5575,-6838 -6043,-7395 -6319,-7823
+	2::inwork -5575,-6838 -6021,-7385 -6319,-7795
 EOF
      },
      { from  => 1237676400, # 2009-03-22 00:00
@@ -13893,7 +13893,7 @@ EOF
        text  => 'L 077 Saarmund - Güterfelde Bereich KVK Philippsthal Radwegbau Vollsperrung 14.04.2009-30.04.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -6043,-7395 -5575,-6838
+	2::inwork -6021,-7385 -5575,-6838
 EOF
      },
      { from  => 1240005600, # 2009-04-18 00:00
@@ -16244,7 +16244,7 @@ EOF
        text  => 'B 096 Schönfließer Str.A OL Bergfelde, zw. Lindenallee und Ahornstr. Kranarbeiten Vollsperrung 19.09.2009-19.09.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 4167,29307 4267,29149 4412,28911 4807,28338
+	q4::inwork 4167,29307 4267,29149 4408,28909 4435,28862 4807,28338
 EOF
      },
      { from  => 1252792800, # 2009-09-13 00:00
@@ -18436,7 +18436,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LS/W-SG33-P/10/410',
        data  => <<EOF,
-	2::inwork -2815,-3574 -3170,-4140 -3368,-4430
+	2::inwork -2777,-3540 -3111,-4047 -3170,-4140 -3184,-4161 -3249,-4256 -3318,-4358 -3368,-4430
 EOF
      },
      { from  => 1290975348, # 2010-11-28 21:15
@@ -22946,11 +22946,11 @@ EOF
 	2::inwork 48229,74776 48296,74641
 EOF
      },
-     { from  => $isodate2epoch->("2017-04-28 00:00:00"), # 1398636000, # 2014-04-28 00:00
-       until => $isodate2epoch->("2017-05-02 02:00:00"), # 1398988800, # 2014-05-02 02:00
+     { from  => $isodate2epoch->("2018-04-28 00:00:00"),
+       until => $isodate2epoch->("2018-05-02 02:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 30, months => 4]],
-       text  => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung und Kinderfest des DGB), am 1. Mai 2017',
+       text  => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung des DGB), am 1. Mai 2018',
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/tickets/suche/detail.php?id=1372887',
        data  => <<EOF,
@@ -23827,7 +23827,7 @@ EOF
        type  => 'gesperrt',
        source_id => '146901438',
        data  => <<EOF,
-	2::inwork -3068,-7423 -3462,-6437 -3616,-6170 -3851,-5870 -3877,-5370
+	2::inwork -3068,-7423 -3462,-6437 -3616,-6170 -3851,-5870 -3848,-5359
 EOF
      },
      { from  => 1413669600, # 2014-10-19 00:00
@@ -26460,7 +26460,7 @@ EOF
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=29479
 #: by: mapillary (Gehweg für Radfahrer frei)
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2018-03-05 (mapillary)
+#: last_checked: 2018-03-29 (mapillary)
 #: check_frequency: 30d
 	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
@@ -26548,7 +26548,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-03-04
+#: last_checked: 2018-04-03
 	2::inwork 14652,10201 14569,10055
 EOF
      },
@@ -26873,8 +26873,8 @@ EOF
 EOF
      },
      { from  => 1520920800, # 2018-03-13 07:00
-       until => $isodate2epoch->("2018-04-12 12:00:00"), # 1522533599, # 2018-03-31 23:59
-       text  => 'Konstanzer Str.: Bauarbeiten, Sperrung zwischen Hohenzollerndamm und Berliner Str., evtl. sind auch Radfahrer betroffen, bis Mitte April 2018',
+       until => $isodate2epoch->("2018-04-10 12:00:00"), # 1522533599, # 2018-03-31 23:59
+       text  => 'Konstanzer Str.: Bauarbeiten, Sperrung zwischen Hohenzollerndamm und Berliner Str., evtl. sind auch Radfahrer betroffen, bis 10. April 2018',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147342320
@@ -26976,7 +26976,7 @@ EOF
 EOF
      },
      { from  => 1522098513, # 2018-03-26 23:08
-       until => 1523052000, # 2018-04-07 00:00
+       until => 1522786111, # (nein, Radfahrer sind nicht betroffen, siehe mapillary) --- 1523052000, # 2018-04-07 00:00
        text  => 'Bäkestr.: Bauarbeiten, Sperrung, eventuell sind auch Radfahrer betroffen, bis 06.04.2018',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -27001,6 +27001,17 @@ EOF
 #: source_id: 2147342379
 #: source_id: LMS-BR_r_LMS-BR_127414_LMS-BR_72
 	2::inwork 8971,864 9024,906 9129,986
+EOF
+     },
+     { from  => 1522789491, # 2018-04-03 23:04
+       until => 1527803999, # 2018-05-31 23:59
+       text  => 'Oranienburger Str.: Bauarbeiten zwischen Wittenauer Str. und Cyclopstr. Richtung Süden; außerdem Einbahnstraßenregelung in der Cyclopstr., offen Richtung Süden; bis Ende Mai 2018',
+       type  => 'handicap',
+       source_id => '2147341699',
+       data  => <<EOF,
+#: next_check_id: ORANIENBURGER-2018
+	q4::inwork; 5136,21738 5210,21636 5311,21495 5320,21432 5333,21332 5341,21266 5343,21250 5349,21198
+	q4::inwork; 5297,21243 5099,21410 5053,21452 5000,21488 4810,21730
 EOF
      },
     );

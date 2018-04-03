@@ -1171,8 +1171,7 @@ Kraftwerk Reuter West	2 -447,14338 -495,14311 -650,14355 -792,14258 -1002,14162 
 #: by: osm
 Bechstedter Weg	1 3467,9045 3661,8815 3701,8849
 Floyd-L.-Parks-Weg	1 2352,1267 2315,1251 2370,1127
-#: note: seit mindestens Juni 2016 dauerhaft verschlossen
-Tor	2 8371,13399 8363,13402 8356,13404
+# REMOVED (mittlerweile wieder tagsüber offen) --- #: note: seit mindestens Juni 2016 dauerhaft verschlossen --- Tor	2 8371,13399 8363,13402 8356,13404
 Gravensteinstr.	1s:q3 12229,22457 12185,22465
 Hauptstr. (Französisch Buchholz)	1s:q3 12199,22367 12229,22457
 Karlplatz	1 8676,12976 8711,12986
@@ -1290,6 +1289,7 @@ Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-85
 (Am Grünen Gitter - Schloss): auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14191,-818 -14199,-707 -14205,-644
 ###################################################################### 
 # elsewhere in Brandenburg
+Damme	1s:q1 49936,99617 49905,99587 49850,99561
 Karower Weg (Lindenberg)	1s:q3 17825,21931 17837,21917 17895,21854
 #: by: rjoop
 Zehlendorfer Str. (Teltow)	1 1329,-753 1388,-685
@@ -3056,11 +3056,11 @@ Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtun
 # 
 #: osm_watch: way id="466318949" version="4"
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
-#: last_checked: 2018-03-01
+#: last_checked: 2018-04-03
 Bouchéstr.: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13298,9252 13188,9134
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
-#: last_checked: 2018-03-01
+#: last_checked: 2018-04-03
 Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13176,9302 13098,9205
 # 
 # REMOVED (mittlerweile ist eine Ausweichmöglichkeit markiert) --- #: last_checked: 2017-03-01 --- Karl-Marx-Platz: Bauarbeiten, Einbahnstraße gilt nun auch für Radfahrer	1s:q3 12969,7610 13100,7626
@@ -3350,7 +3350,8 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: osm_watch: way id="103531998" version="3"
 #: last_checked: 2017-08-26
 #: check_frequency: 90d
-Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645 1697,20623 1721,20603
+# REMOVED (hier mittlerweile offen) --- Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645
+Tegeler Hafen: Weg gesperrt	2 1687,20645 1697,20623 1721,20603
 # 
 #: note: Baugelände
 #: by: http://www.berliner-woche.de/mitte/bauen/erdlawine-rollt-ueber-die-oranienburger-ab-juli-wird-auf-dem-tacheles-areal-die-elf-meter-tiefe-baugrube-ausgehoben-d119088.html (bis 2020)

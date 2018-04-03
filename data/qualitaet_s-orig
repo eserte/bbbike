@@ -251,7 +251,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2018-02-15
+#: last_checked: 2018-04-03
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15021,11152 15102,11120
@@ -289,7 +289,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: source_id: INKO_2147340291_COPY_1
 #: source_id: 2147340291
 #: source_id: 2147342376
-#: last_checked: 2018-03-15
+#: last_checked: 2018-04-03
 #: next_check: 2018-04-30
 Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288
 Mariannenstr: Asphalt	Q0 11616,10288 11671,10402
@@ -449,11 +449,11 @@ Luzerner Str.: Kopfsteinpflaster	Q2 3251,1881 3148,1888 3044,1890
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.90747.php vvv
 #: by: http://www.berliner-woche.de/lichterfelde/bauen/strassensanierung-soll-puenktlich-starten-d83213.html
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.553651.php (Baumfällungen bis Ende Februar 2017)
-#: XXX es laufen gerade Bauarbeiten (Mitte August 2017), die Pflasterung bleibt definitiv, prüfen, ob vielleicht Q2+
+#: XXX es laufen gerade Bauarbeiten (Mitte August 2017), die Pflasterung bleibt definitiv, prüfen, ob vielleicht Q2+ (-> vermutlich ja, schon so eingetragen)
 #: osm_watch: way id="148329608" version="15" vvv
-#: last_checked: 2018-03-05 (mapillary) vvv
+#: last_checked: 2018-03-29 (mapillary) vvv
 #: check_frequency: 30d vvv
-Carstennstr.: Kopfsteinpflaster, teilweise mit Asphaltflicken	Q2 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
+Carstennstr.: verfugtes Kopfsteinpflaster	Q2+ 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 #: check_frequency ^^^
 #: last_checked ^^^
 #: osm_watch ^^^
@@ -2218,7 +2218,13 @@ Uferweg am Tegeler Hafen: Gehwegplatten	Q0 1349,20345 1534,20421 1572,20412 1610
 (Uferweg am Tegeler Hafen - Am Tegeler Hafen): Gehwegplatten	Q0 1858,20431 1871,20399
 (Uferweg am Tegeler Hafen - Berliner Str.): Verbundsteinpflaster	Q1 1863,20478 1929,20501
 # REMOVED --- Uferweg am Tegeler Hafen: fester Sandweg	Q1 1863,20478 1826,20492 1761,20539
-(Tegeler Hafen - An der Mühle): Parkweg/glatt gepflastert	Q1 1756,20405 1736,20441 1733,20470 1753,20511 1761,20539 1741,20566 1721,20603 1697,20623 1687,20645 1668,20670 1630,20731
+(Tegeler Hafen - An der Mühle): Parkweg/glatt gepflastert	Q1 1756,20405 1736,20441 1733,20470 1753,20511 1761,20539 1741,20566 1721,20603 1697,20623 1687,20645
+#: XXX ist hier mittlerweile auch asphaltiert?
+Gabrielensteg: Parkweg/glatt gepflastert	Q1 1687,20645 1668,20670
+#: by: mapillary vvv
+Humboldtinsel: Asphalt	Q0 1668,20670 1630,20731
+Humboldtinsel: Asphalt	Q0 1403,20440 1587,20534 1635,20607 1687,20645
+#: by ^^^
 (Karolinenstr. - Waidmannsluster Damm): Waldweg, hügelig und holprig	Q3 1712,20907 1819,21116 1851,21328 1810,21363
 (Tegeler Fließ - Hermsdorfer Damm): Waldweg	Q2 2352,21559 2253,21527 2166,21468 2074,21469 2004,21502 1942,21564
 (Weg am Tegeler Fließ): Asphalt	Q0- 3134,22153 3066,22117
@@ -9690,8 +9696,8 @@ Alfred-Scholz-Platz: gepflastert	Q1 12753,8187 12779,8188 12805,8194
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.515712.php
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.515712.php?date=20170522
 #: by: http://www.berliner-woche.de/steglitz/bauen/bezirk-investiert-in-sanierung-von-strassen-und-radwegen-d140640.html
-#: last_checked: 2017-03-26
-#: next_check: 2018-03-01
+#: last_checked: 2018-03-25 (mapillary)
+#: check_frequency: 60d
 Feuerbachstr.: Asphalt teilweise aufgebrochen	Q1; 5823,6413 6083,6451
 Storkower Str. [Gewerbegebiet]: Asphalt	Q0- 13737,14204 13639,14133
 Storkower Str. [Gewerbegebiet]: Asphalt	Q1 13639,14133 13715,14018 13784,13908
@@ -12931,7 +12937,7 @@ Dohnenstieg: Kleinsteinpflaster	Q1 2711,6698 2654,6706 2606,6708 2435,6690 2301,
 Gadebuscher Weg: Kopfsteinpflaster, am Rand besser	Q3 2547,6274 2499,6428
 Heinrich-Stahl-Weg: Verbundsteinpflaster, wassergebundene Decke	Q2 2367,6336 2281,6469
 Hammersteinstr.: Parkweg	Q2 2360,7107 2304,7059
-Drosselweg (Dahlem): Kopfsteinpflaster	Q2 2412,5901 2594,5923
+Drosselweg (Dahlem): Kopfsteinpflaster	Q2 2412,5901 2587,5908
 Finkenstr. (Dahlem): Asphalt	Q1 2506,6606 2435,6580 2281,6469 2173,6424 2039,6394 1970,6392 1904,6415
 Franz-Cornelsen-Weg: Asphalt	Q1 3593,7176 3597,7192 3612,7335
 Franz-Cornelsen-Weg: wassergebundene Decke	Q1 3612,7335 3634,7601
@@ -14414,7 +14420,7 @@ Würtzstr.: gutes Kopfsteinpflaster	Q1 11561,19149 11622,18964
 #: by: Stefan Warthmann:
 #: confirmed_by: srt (zumindest im nördlichen Abschnitt)
 #: confirmed_by: Stephan Kahnt
-Räuschstr.: Asphalt	Q0 3089,19869 3252,19658 3455,19389
+Räuschstr.: Asphalt	Q0 3089,19869 3252,19658 3452,19392
 # 
 #: by: Michael (patgoody):
 Maximilianstr. (Rummelsburg): mäßiges Kopfsteinpflaster	Q2 16334,10958 16381,11080 16420,11189 16465,11313
@@ -21899,6 +21905,7 @@ Klützer Str.: Beton	Q0 17881,18344 17788,18463 17885,18550 17901,18658
 Bodelschwinghstr.: Asphalt	Q0 15946,6722 15838,6816
 # 
 #: by: sabine de kok: vvv
+#: confirmed_by: mapillary
 Promenadenstr.: Asphalt	Q0 5425,2735 5230,2840
 Promenadenstr.: Asphalt	Q0 5079,2929 4871,3045
 #: by: ^^^

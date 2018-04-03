@@ -2567,7 +2567,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im März von 6.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im April von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3564,7 +3564,33 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
+	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
+	2::inwork 8573,12325 8540,12420
+	2::inwork 8303,12216 8344,12221 8538,12245 8592,12252
+	2::inwork 8089,12190 8214,12205
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+#: tempex ^^^
+',
+         'from' => 1524866400,
+         'id' => 2565,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              30,
+                              'months',
+                              4
+                            ]
+                          ],
+         'source_id' => 'http://www.berlin.de/tickets/suche/detail.php?id=1372887',
+         'text' => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung des DGB), am 1. Mai 2018',
+         'type' => 'gesperrt',
+         'until' => 1525219200
+       },
        undef,
        undef,
        undef,
@@ -4232,7 +4258,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=29479
 #: by: mapillary (Gehweg für Radfahrer frei)
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2018-03-05 (mapillary)
+#: last_checked: 2018-03-29 (mapillary)
 #: check_frequency: 30d
 	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
@@ -4253,7 +4279,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-03-04
+#: last_checked: 2018-04-03
 	2::inwork 14652,10201 14569,10055
 ',
          'from' => undef,
@@ -4263,16 +4289,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'data' => '	q4::inwork; -2959,17507 -2517,17431
-',
-         'from' => 1506204000,
-         'id' => 2908,
-         'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.629757.php',
-         'text' => 'Mertensstr.: Einbahnstraße zwischen Goltzstr. und Streitstr., offen Richtung Westen, voraussichtlich ab Ende September 2017 bis Frühjahr 2018',
-         'type' => 'handicap',
-         'until' => 1522576800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4414,9 +4431,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1520920800,
          'id' => 2934,
-         'text' => 'Konstanzer Str.: Bauarbeiten, Sperrung zwischen Hohenzollerndamm und Berliner Str., evtl. sind auch Radfahrer betroffen, bis Mitte April 2018',
+         'text' => 'Konstanzer Str.: Bauarbeiten, Sperrung zwischen Hohenzollerndamm und Berliner Str., evtl. sind auch Radfahrer betroffen, bis 10. April 2018',
          'type' => 'handicap',
-         'until' => 1523527200
+         'until' => 1523354400
        },
        {
          'data' => '# XXX_prog: eigentlich q3-
@@ -4510,16 +4527,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: LMS-BR_r_LMS-BR_127117_LMS-BR_72
-	2::inwork 4832,2975 4659,3065 4587,3097 4411,3180
-',
-         'from' => 1522098513,
-         'id' => 2943,
-         'text' => 'Bäkestr.: Bauarbeiten, Sperrung, eventuell sind auch Radfahrer betroffen, bis 06.04.2018',
-         'type' => 'gesperrt',
-         'until' => 1523052000
-       },
+       undef,
        {
          'data' => '	q4::inwork 11616,10288 11512,10105
 ',
@@ -4540,6 +4548,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Säntisstr.: Bahnübergang bis 2021 gesperrt, ggfs. gibt es für Fußgänger eine Überquerungsmöglichkeit (tragen!)',
          'type' => 'gesperrt',
          'until' => 1622541600
+       },
+       {
+         'data' => '#: next_check_id: ORANIENBURGER-2018
+	q4::inwork; 5136,21738 5210,21636 5311,21495 5320,21432 5333,21332 5341,21266 5343,21250 5349,21198
+	q4::inwork; 5297,21243 5099,21410 5053,21452 5000,21488 4810,21730
+',
+         'from' => 1522789491,
+         'id' => 2946,
+         'source_id' => '2147341699',
+         'text' => 'Oranienburger Str.: Bauarbeiten zwischen Wittenauer Str. und Cyclopstr. Richtung Süden; außerdem Einbahnstraßenregelung in der Cyclopstr., offen Richtung Süden; bis Ende Mai 2018',
+         'type' => 'handicap',
+         'until' => 1527803999
        }
      
 );

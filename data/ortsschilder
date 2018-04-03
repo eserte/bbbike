@@ -16,11 +16,11 @@ Dreesch	OS 46083,99281
 Dreesch	OS 47055,99536
 Dreesch	OS 46026,99726
 Mönchehof|(Grünow)	OHT 47929,103118
-Damme|(Uckermark)	OS 49716,100842
-Damme|(Uckermark)	OS 50751,100770
-Damme|(Uckermark)	OS 48537,98606
-Damme|(Uckermark)	OS 48244,99579
-Damme|(Uckermark)	OS 50486,101008
+Damme	OS 49716,100842
+Damme	OS 50751,100770
+Damme	OS 48537,98606
+Damme	OS 48244,99579
+Damme	OS 50486,101008
 Eickstedt	OS 52207,99132
 Eickstedt	OS 51862,100638
 Eickstedt/Ausbau	OHT 52388,101604
@@ -80,7 +80,7 @@ Wartin	OS 60118,94772
 Wartin	OS 59364,92905
 Casekow	OS 63500,89978
 Casekow	OS 63551,91426
-Casekow	OS 63109,90718
+Casekow	OS 63000,90800
 Casekow	OS 63880,90358
 Hohenselchow	OS 67576,89928
 Hohenselchow	OS 69263,89804
@@ -881,19 +881,24 @@ Kleinmachnow	OS -1656,-1702
 Kleinmachnow	OS -872,-1602
 Kleinmachnow	OS -4252,365
 Kleinmachnow	OS -2621,-1451
+Kleinmachnow	OS -601,-589
 Stahnsdorf	OS -1656,-1702
 Stahnsdorf	OS -624,-1468
 Stahnsdorf	OS -872,-1602
 Stahnsdorf	OS -3965,-2749
 Stahnsdorf	OS -2621,-1451
+Stahnsdorf	OS -2777,-3540
 Teltow	OS -624,-1468
 Teltow	OS 3721,195
 Teltow	OS 3467,560
 Teltow	OS 1464,-367
 Teltow	OS 4309,-2385
+Teltow	OS 81,-2868
 Birkenhain	OHT 4327,-2394
 Birkenhain	OHT 4721,-2612
 Güterfelde	OS -3723,-3196
+Güterfelde	OS -3821,-5159
+Güterfelde	OS -3249,-4256
 Kienwerder	OHT -3740,-3242
 Glienicke|/Nordbahn	OS 3741,24942
 Glienicke|/Nordbahn	OS 3459,25595
@@ -904,6 +909,8 @@ Hohen Neuendorf|b. Berlin	OS 2150,28127
 Hohen Neuendorf|b. Berlin	OS 1938,28171
 Ruhlsdorf	OS 20118,46214
 Ruhlsdorf	OS 21538,47215
+Ruhlsdorf	OS 1181,-3910
+Ruhlsdorf	OS 781,-3280
 Drense Ausbau	OHT 47299,100588
 Drense Ausbau	OHT 47331,100950
 Biesendahlshof	OHT 63797,89389
@@ -933,6 +940,12 @@ Potsdam	OS -16800,1991
 Potsdam	OS -6787,-4026
 Potsdam	OS -6696,-3174
 Potsdam	OS -8029,-1897
+Saarmund	OS -8622,-9215
+Saarmund	OS -7724,-9612
+Nudow-Ausbau	OS -7360,-8794
+Nudow-Ausbau	OS -7285,-8673
+Phillipsthal	OS -7285,-8673
+Phillipsthal	OS -6801,-8176
 Blumberg	OS 24196,22163
 Blumberg	OS 23579,21383
 Blumberg	OS 24863,21549
