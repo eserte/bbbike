@@ -6283,11 +6283,11 @@ EOF
 	2::inwork 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589
 EOF
      },
-     { from  => $isodate2epoch->("2017-09-29 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-10-01 23:59:59"),
+     { from  => $isodate2epoch->("2018-10-05 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-10-07 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 30, months => 9]],
-       text  => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 30.09.2017 bis 01.10.2017',
+       text  => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 06.10.2018 bis 07.10.2018',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.ms-event-agentur.com/seite22.html?date=20170325
@@ -21502,13 +21502,13 @@ EOF
 	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
-     { from  => $isodate2epoch->("2017-05-19 00:00:00"), # 1431715044, # 1367560678, # 2013-05-03 07:57
-       until => $isodate2epoch->("2017-05-20 23:59:59"), # 1367704799, # 2013-05-04 23:59
+     { from  => $isodate2epoch->("2018-05-25 00:00:00"), # 1431715044, # 1367560678, # 2013-05-03 07:57
+       until => $isodate2epoch->("2018-05-26 23:59:59"), # 1367704799, # 2013-05-04 23:59
        periodic => 1,
        recurrences => [['yearly', days => 4, months => 5]],
-       text  => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 20. Mai 2017',
+       text  => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 26. Mai 2018',
        type  => 'gesperrt',
-       source_id => 'http://www.berliner-frauenlauf.de/?year=2016',
+       source_id => 'http://www.berliner-frauenlauf.de/?year=2018',
        data  => <<EOF,
 #: tempex: 20170520 vvv
 	2::temp 8055,12186 8119,12414
@@ -21532,6 +21532,7 @@ EOF
        until => $isodate2epoch->("2017-05-28 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 4, months => 5]],
+       recurrence_prewarn_days => 21, # findet es 2018 überhaupt statt?
        text  => 'Schöneberger Mai- und Spargelfest am 27. und 28. Mai 2017 in der Freiherr-vom-Stein-Straße',
        type  => 'gesperrt',
        source_id => 'http://www.ms-event-agentur.com/seite18.html?date=20170325',
@@ -25664,7 +25665,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-03-21 vvv
+#: last_checked: 2018-04-04 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -26742,7 +26743,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-03-09 vvv
+#: last_checked: 2018-04-04 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27012,6 +27013,15 @@ EOF
 #: next_check_id: ORANIENBURGER-2018
 	q4::inwork; 5136,21738 5210,21636 5311,21495 5320,21432 5333,21332 5341,21266 5343,21250 5349,21198
 	q4::inwork; 5297,21243 5099,21410 5053,21452 5000,21488 4810,21730
+EOF
+     },
+     { from  => 1522864912, # 2018-04-04 20:01
+       until => 1525449600, # 2018-05-04 18:00
+       text  => 'Wilhelmstr. und Behrenstr.: Sperrung Richtung Norden zwischen Französische Str. und Behrenstr. sowie Richtung Osten zwischen Wilhelmstr. und Mauerstr., bis 4. Mai 2018',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: 2147342390
+	q4::inwork; 8901,12008 8861,12125 9054,12154
 EOF
      },
     );

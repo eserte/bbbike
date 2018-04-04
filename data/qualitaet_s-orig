@@ -698,11 +698,12 @@ Uferweg: asphaltiert, einige Wurzelschäden	Q0- 16673,7511 16655,7572 16624,7833 
 Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: add_fragezeichen: Ist die Tino-Schwierzina-Str. zwischen Aidastr. und Romain-Rolland-Str. mittlerweile komplett asphaltiert?
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4616
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4684 (Planung von Radverkehrsanlagen in der Tino-Schwierzina-Straße ab Sommer 2018, Umsetzung ab 2019 (vermutlich auch im südlichen Abschnitt))
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="7"
 #: last_checked: 2018-01-27
-#: check_frequency: 120d
+#: next_check: 2019-03-01
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 #: corrected_by: Hartmut Schröder (Q2 -> Q3)
 #: confirmed_by: srt
@@ -798,7 +799,7 @@ Bänschstr.: Asphalt	Q0 14996,12462 14801,12517
 Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: XXX Asphaltierung soll 2018 erfolgen
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf
-#: last_checked: 2018-03-27
+#: last_checked: 2018-04-04
 #: next_check: 2018-12-31
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1311,10 +1312,10 @@ Grumbkowstr.: Asphalt	Q0 11555,20051 11627,19907 11695,19760 11730,19684
 #: by: ^^^
 #: by: Steffen Ryll: vvv
 Platanenstr.: gut befahrbare Betonplatten	Q1 8710,19550 8467,19408
-#: note: laut ADFC-Karte "mäßig geeignet"
-Platanenstr.: miserables Kopfsteinpflaster teilweise mit Asphalt geflickt	Q3+ 9348,19786 9177,19745 8977,19694 8956,19688
-Platanenstr.: miserables Kopfsteinpflaster mit Asphalt geflickt	Q2-; 8956,19688 8776,19595 8710,19550
-Platanenstr.: miserables Kopfsteinpflaster	Q3; 8710,19550 8776,19595 8956,19688
+#: corrected_by: osm (was: miserables Kopfsteinpflaster etc.)
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4765
+#: XXX vor Ort prüfen!
+Platanenstr.: Asphalt	Q0 9348,19786 9177,19745 8977,19694 8956,19688 8776,19595 8710,19550
 Platanenstr.: passabler Asphalt	Q0- 9348,19786 9489,19826 9822,19916 10132,19993
 #: by: ^^^
 Feldstr. (Gesundbrunnen): Kopfsteinpflaster	Q2 9048,14681 9108,14777

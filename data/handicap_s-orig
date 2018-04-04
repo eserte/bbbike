@@ -21,7 +21,7 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-04-03
+#: last_checked: 2018-04-04
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
@@ -31,7 +31,7 @@ Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,1
 #: check_frequency: 90d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
-#: last_checked: 2018-03-27
+#: last_checked: 2018-04-04
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 #: next_check_id: RIGAER-2018
@@ -101,12 +101,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 # 
 ### Mitte ###
 # 
-#: next_check_id: OTTOBRAUN-2015
-#: XXX vermutlich im ausgebauten Zustand: q1 
-#: last_checked: 2018-03-16
-#: check_frequency: 14d
-Wadzeckstr. - Mollstr.: Behinderungen wegen Bauarbeiten möglich	q2::inwork 11315,13210 11399,13333
-# 
+# REMOVED (mittlerweile existiert auch eine Absenkung) --- #: next_check_id: OTTOBRAUN-2015 --- #: XXX vermutlich im ausgebauten Zustand: q1  --- #: last_checked: 2018-03-16 --- #: check_frequency: 14d --- Wadzeckstr. - Mollstr.: Behinderungen wegen Bauarbeiten möglich	q2::inwork 11315,13210 11399,13333
 # REMOVED (existiert noch immer, allerdings gibt es hier keine Außengastronomie mehr, deshalb nicht mehr so behindernd) --- #: last_checked: 2017-10-14 --- #: check_frequency: 21d --- Märkisches Ufer: Bauarbeiten, Engstelle	q3+::inwork 10687,11853 10869,11949
 # REMOVED --- #: source_id: 2147341587 --- #: last_checked: 2017-11-01 vvv --- #: check_frequency: 21d vvv --- Jägerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q2::inwork 9195,11972 9393,12000 --- Jägerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q3::inwork 9393,12000 9523,12019
 # REMOVED --- #: last_checked: 2015-06-10 --- Am Zirkus: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9167,13046 9137,13032 9090,13009
@@ -118,7 +113,7 @@ Wadzeckstr. - Mollstr.: Behinderungen wegen Bauarbeiten möglich	q2::inwork 11315
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 #: XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2018-03-21
+#: last_checked: 2018-04-04
 Voltairestr.: Fahrbahn unter Umständen wegen Baustelle gesperrt, Ausweichen auf Gehweg	q3 11329,12497 11209,12430
 # 
 #: next_check_id: ZIEGELSTR-2016
@@ -146,7 +141,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 # REMOVED --- #: last_checked: 2017-03-14 vvv --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9990,11571 9925,11565 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q2-::inwork 9925,11565 9737,11546 --- #: last_checked ^^^
 # 
 # REMOVED --- : osm_watch: note 814191 1
-#: last_checked: 2018-03-21
+#: last_checked: 2018-04-04
 #: check_frequency: 30d
 Alexandrinenstr.: direkter Zugang zur Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q3::inwork 10818,11269 10678,11172
 # 
@@ -188,7 +183,7 @@ Prinzengasse: einige Fußgänger, parkende Autos	q3::inwork 9955,12300 10002,12305
 # REMOVED (Einbahnstraßenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universitätsstr.: wegen Bauarbeiten Einbahnstraße zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2018-03-10 vvv
+#: last_checked: 2018-04-04 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="5"
@@ -235,14 +230,14 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # 
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
-#: last_checked: 2018-03-16
+#: last_checked: 2018-04-04
 #: next_check: 2018-06-28
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # 
 #: next_check_id: STAATSOPER-2014 vvv
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html
-#: last_checked: 2018-03-16 vvv
+#: last_checked: 2018-04-04 vvv
 #: check_frequency: 30d vvv
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9883,12251 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
@@ -262,12 +257,12 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
 #: source_id: LMS-BR_r_LMS-BR_197
 #: osm_watch: way id="194962375" version="8"
-#: last_checked: 2018-03-21
+#: last_checked: 2018-04-04
 #: check_frequency: 14d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q4::inwork 10601,12521 10704,12595
 # 
 #: by: http://www.berliner-woche.de/mitte/bauen/rathausstrasse-wird-gesperrt-d140537.html vvv
-#: last_checked: 2018-03-21 vvv
+#: last_checked: 2018-04-04 vvv
 #: check_frequency: 14d vvv
 Rathausstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 10476,12432 10584,12507
 Rathausstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10584,12507 10601,12521
@@ -578,8 +573,9 @@ Pestalozzistr.: Fußgängerzone	q3 3721,11230 3770,11231 3822,11231
 (Zufahrt am NKZ): Fußgänger, unübersichtlich	q3 11344,10507 11392,10520 11411,10515
 #: XXX_prog BS (1x oder 2x?)
 Dresdener Str. - NKZ: Bordsteine	q3 11344,10507 11334,10527
-Alexanderplatz: langsame Straßenbahnen, Fußgängerverkehr	q2 11139,13008 11064,12910 10970,12822 10923,12779
-Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q2 11134,12793 11064,12910
+Alexanderplatz: langsame Straßenbahnen, Fußgängerverkehr	q3 11139,13008 11064,12910 10970,12822
+Alexanderplatz: langsame Straßenbahnen, Fußgängerverkehr	q2- 10970,12822 10923,12779
+Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11134,12793 11064,12910
 #: XXX nach den Bauarbeiten den alten Eintrag wiederherstellen
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen für Radfahrer) (in der Realität aber schon)
 #: last_checked: 2018-03-10
@@ -2664,6 +2660,7 @@ Nöldnerplatz [Lückstr. - Nöldnerstr.]: einige Fußgänger	q1 15903,10906 15932,108
 Nöldnerplatz [Nöldnerstr. - Schlichtallee]: einige Fußgänger	q1 15932,10830 15970,10755
 (Weg im Grünzug): einige Fußgänger	q1- 17391,9746 17316,9797 17257,9869 17161,9921 17005,9953
 (Dolgenseestr. - Weg im Grünzug): einige Fußgänger	q1- 17275,9892 17257,9869
+Wadzeckstr. - Mollstr.: einige Fußgänger	q1 11315,13210 11399,13333
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

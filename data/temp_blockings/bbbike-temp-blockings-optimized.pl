@@ -881,7 +881,28 @@ push @temp_blocking,
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.ms-event-agentur.com/seite22.html?date=20170325
+	2::temp 7001,9291 7012,9222 7035,9161 7101,9027
+	2::temp 6945,9142 7035,9161
+	2::temp 6975,8944 7101,9027 7308,9163
+',
+         'from' => 1538730000,
+         'id' => 731,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              30,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 06.10.2018 bis 07.10.2018',
+         'type' => 'gesperrt',
+         'until' => 1538949599
+       },
        undef,
        undef,
        undef,
@@ -3274,7 +3295,41 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: tempex: 20170520 vvv
+	2::temp 8055,12186 8119,12414
+	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	2::temp 6828,12031 6884,12006
+	2::temp 6809,11979 6984,11859
+	2::temp 6778,11742 6980,11790
+	2::temp 6809,11570 6869,11567 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7649,11717 7701,11798 7706,11878 7717,11918 7658,11947 7634,11920 7559,11888 7449,11883
+	2::temp 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8034,12093 8057,12065 8052,12033 8022,12016 8020,11937 8095,11919 8132,11910 8221,11885 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
+	2::temp 8522,12239 8466,12197
+	3 7429,12070 7383,12095 7031,12320
+	3 7875,12363 7822,12201 7816,12150 7823,12120
+	3 7031,12320 7383,12095 7429,12070
+	3 7823,12120 7816,12150 7822,12201 7875,12363
+	3 8391,12389 8344,12221 8327,12174
+	3 8327,12174 8344,12221 8391,12389
+#: tempex ^^^
+',
+         'from' => 1527199200,
+         'id' => 2427,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              4,
+                              'months',
+                              5
+                            ]
+                          ],
+         'source_id' => 'http://www.berliner-frauenlauf.de/?year=2018',
+         'text' => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 26. Mai 2018',
+         'type' => 'gesperrt',
+         'until' => 1527371999
+       },
        undef,
        undef,
        undef,
@@ -4034,7 +4089,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-03-21 vvv
+#: last_checked: 2018-04-04 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -4339,7 +4394,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-03-09 vvv
+#: last_checked: 2018-04-04 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4560,6 +4615,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Oranienburger Str.: Bauarbeiten zwischen Wittenauer Str. und Cyclopstr. Richtung Süden; außerdem Einbahnstraßenregelung in der Cyclopstr., offen Richtung Süden; bis Ende Mai 2018',
          'type' => 'handicap',
          'until' => 1527803999
+       },
+       {
+         'data' => '#: source_id: 2147342390
+	q4::inwork; 8901,12008 8861,12125 9054,12154
+',
+         'from' => 1522864912,
+         'id' => 2947,
+         'text' => 'Wilhelmstr. und Behrenstr.: Sperrung Richtung Norden zwischen Französische Str. und Behrenstr. sowie Richtung Osten zwischen Wilhelmstr. und Mauerstr., bis 4. Mai 2018',
+         'type' => 'handicap',
+         'until' => 1525449600
        }
      
 );

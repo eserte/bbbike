@@ -30,7 +30,7 @@ Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,107
 #: next_check: 2018-12-31
 Görlitzer Park: Verbesserungen geplant	?::projected 12814,9966 12833,9998 12869,10071 12901,10134 12905,10143
 # 
-#: last_checked: 2018-03-27
+#: last_checked: 2018-04-04
 #: next_check: 2018-12-31
 NKZ: Verbesserungen geplant	?::projected 11291,10438 11317,10485 11344,10507 11334,10527
 # 
@@ -272,7 +272,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7421
 #: osm_watch: way id="25219757" version="12"
 #: osm_watch: way id="4600236" version="17"
-#: last_checked: 2017-12-26
+#: last_checked: 2018-03-11
 #: check_frequency: 90d
 Stromstr., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,13517 6228,13324
 # 
@@ -303,6 +303,7 @@ Kladower Damm: Radpuren bis 2015 geplant	?::projected; -5097,7361 -5046,7442 -49
 #: osm_watch: way id="24033655" version="33"
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.563697.php
 #: by: http://www.berliner-woche.de/gatow/verkehr/im-sueden-wird-wieder-gebaut-drei-hauptstrassen-werden-grundsaniert-aber-nicht-vor-2020-d143349.html
+#: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9307
 #: source_id: 2147342311
 #: last_checked: 2017-07-15
 #: next_check: 2017-08-31
@@ -821,6 +822,14 @@ Spandauer Damm: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Nordsei
 # 
 Falkenseer Chaussee: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Südseite?	?::projected -6722,16112 -6578,16063 -6313,15996 -6144,15946 -6073,15925 -5911,15877
 # 
+#: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9307
+Falkenseer Chaussee: Sanierung des Radwegs (welche Seite?) prüfen	? -5470,15750 -5370,15721 -5153,15658 -5039,15618 -4710,15530 -4591,15496
+# 
+#: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9307
+Nauener Str.: Sanierung des Radwegs prüfen	?; -4759,13992 -4748,14237
+# 
+#: XXX Südseite angeblich schon saniert, bis Boltonstr.
+#: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9307
 #: last_checked: 2017-11-04
 Am Juliusturm: Verbesserung -> evtl. Asphaltierung des Radwegs? ("Teilabschnitte")	?::projected -1484,14513 -1564,14489 -1947,14394 -2074,14366 -2233,14384 -2343,14446 -2460,14493 -2597,14532 -2647,14532 -2794,14511 -2831,14512 -2946,14533 -3014,14559 -3150,14631 -3209,14662 -3255,14685
 # 
@@ -2143,13 +2152,7 @@ L33: Neubau geplant	?::projected 23895,15904 23965,15894 23992,15894 25007,15650
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-#: by: fritz vvv
-#: XXX bis 2018-05-04 vvv
-#: source_id: 2147342390
-Behrenstr.: Sperrung auch für Radfahrer relevant?	?::inwork; 8861,12125 9054,12154 9064,12156
-Wilhelmstr.: Sperrung auch für Radfahrer relevant?	?::inwork; 8901,12008 8861,12125
-#: XXX ^^^
-#: by ^^^
+# REMOVED (-> temp blockings) --- #: by: fritz vvv --- #: XXX bis 2018-05-04 vvv --- #: source_id: 2147342390 --- Behrenstr.: Sperrung auch für Radfahrer relevant?	?::inwork; 8861,12125 9054,12154 9064,12156 --- Wilhelmstr.: Sperrung auch für Radfahrer relevant?	?::inwork; 8901,12008 8861,12125
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.686377.php (bis 29.06.2018)
 #: by: http://www.berliner-woche.de/wedding/verkehr/fahrbahn-wird-erneuert-d145878.html
@@ -2612,6 +2615,7 @@ Schulzendorfer Str.: Radverkehrsanlangen? (vermutlich asphaltiert, vermutlich nu
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.541819.php
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php
 #: by: https://www.facebook.com/baustellen.berlin/photos/a.257474068034361.1073741828.257465918035176/391963747918725/?type=3
+#: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9307
 #: osm_watch: way id="5000155" version="16"
 #: osm_watch: way id="313302635" version="6"
 #: osm_watch: way id="57401090" version="10"
@@ -2808,6 +2812,13 @@ Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 125
 #: priority: #C
 Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563 6224,9544 6242,9525
 # 
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8520 vvv
+#: next_check: 2018-10-01
+Reichenberger Str.: wird hier ein Zebrastreifen markiert?	? 12385,9966 12398,9938 12366,9929
+#: next_check: 2018-10-01
+Am Ostbahnhof/Koppenstr.: wird hier ein Zebrastreifen markiert?	? 12299,11717 12310,11682 12349,11687
+#: by ^^^
+# 
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2017/98_2017_zu_ds_0240-v-fussgaengerueberweg-auf-der-habersaathstrasse_sb.pdf
 #: last_checked: 2018-03-09
 #: check_frequency: 120d
@@ -2952,7 +2963,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2018-03-21
+#: last_checked: 2018-04-04
 #: check_frequency: 60d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # 
@@ -3450,6 +3461,7 @@ Rad- und Gehweg geplant: Qualität, genaue Lage?	?::projected 7459,13912 7562,139
 #: by: http://www.dafmap.de/d/berlin.html?id=3706&mt=0&zoom=16 (Geplanter Projektabschluss: 2018-07-31)
 #: XXX Privatstraße fehlt
 #: osm_watch: way id="423494183" version="3"
+#: osm_watch: way id="570086851" version="1"
 #: last_checked: 2017-09-25
 #: check_frequency: 180d
 Klara-Franke-Str.: geplant	?::projected 7377,14080 7464,14133 7562,13968 7662,13784 7564,13735
@@ -3702,8 +3714,9 @@ Bebauungsplan 6-24 VE: entsteht hier eine neue Privatstraße? entsteht eine Paral
 # 
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_15_1637_1712_online.pdf
 #: XXX vielleicht entsteht hier auch eine Abkürzung für den B-K-Radweg?
+#: osm_watch: way id="113631587" version="5"
 #: last_checked: 2017-08-26
-#: next_check: 2018-04-01
+#: next_check: 2018-06-01
 geplante Grünanlage	?::projected 4084,15859 4055,15795 4041,15786 4224,15779 4216,15799 4295,15852 4084,15859
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.588521.php
@@ -3862,6 +3875,11 @@ Pepitapromenade: genaue Lage? Qualität?	?::inwork -2598,17319 -2873,17369
 Pepitapromenade: genaue Lage? Qualität?	?::inwork -2858,17472 -2873,17369 -2877,17324
 #: next_check ^^^
 #: osm_watch ^^^
+# 
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6485
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036701378687/701378687/00302521/21-Anlagen/02/2017-10-18_B-Plan7-81VE_Entwurf_finalPlanreife.pdf
+#: next_check: 2019-09-01
+Bebauungsplan 7-81VE: Rad- und Gehwege geplant	?::projected 7618,7837 7619,8006 7516,8070
 # 
 #: ignore ^^^
 #: section ^^^

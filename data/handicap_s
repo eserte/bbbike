@@ -9,7 +9,6 @@ Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11
 Rigaer Str.: Baustelle, Fußgänger	q3::inwork 14538,12371 14748,12314
 Auerstr.: zwischen Richard-Sorge-Str. und Löwestr. Baustelle, Einbahnstraßenregelung	q2::inwork; 13273,12902 13202,12790
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
-Wadzeckstr. - Mollstr.: Behinderungen wegen Bauarbeiten möglich	q2::inwork 11315,13210 11399,13333
 Voltairestr.: Fahrbahn unter Umständen wegen Baustelle gesperrt, Ausweichen auf Gehweg	q3 11329,12497 11209,12430
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9945,11371 9936,11469
@@ -39,8 +38,6 @@ Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5894,12480 5944,12
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 Dieselstr., Umfahrung: Fußgänger, eng	q3::inwork 14326,8062 14366,8058 14384,8056 14425,8052 14471,8046
 Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süden auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12753,8187 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785 12969,7610
-Helmstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q3::inwork 7444,9148 7382,9187
-Vorbergstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q3::inwork 7363,9152 7308,9163
 Wiltbergstr.: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 16669,25373 16583,25440 16475,25526 16414,25575 16294,25683 16220,25716
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gefälle, Fußgänger	q4; 21970,12153 21998,12204
@@ -74,8 +71,9 @@ Pestalozzistr.: Fußgängerzone	q3 3721,11230 3770,11231 3822,11231
 (Zufahrt am NKZ): Fußgänger/Lieferverkehr	q2 11291,10438 11317,10485 11344,10507
 (Zufahrt am NKZ): Fußgänger, unübersichtlich	q3 11344,10507 11392,10520 11411,10515
 Dresdener Str. - NKZ: Bordsteine	q3 11344,10507 11334,10527
-Alexanderplatz: langsame Straßenbahnen, Fußgängerverkehr	q2 11139,13008 11064,12910 10970,12822 10923,12779
-Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q2 11134,12793 11064,12910
+Alexanderplatz: langsame Straßenbahnen, Fußgängerverkehr	q3 11139,13008 11064,12910 10970,12822
+Alexanderplatz: langsame Straßenbahnen, Fußgängerverkehr	q2 10970,12822 10923,12779
+Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11134,12793 11064,12910
 Rathausstr.: Fußgänger, Bauarbeiten	q2 10923,12779 10704,12595
 Dircksenstr.: langsame Straßenbahnen, Fußgänger	q2 10970,12822 10849,12944
 Dircksenstr.: Fußgänger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
@@ -1698,6 +1696,7 @@ Nöldnerplatz [Lückstr. - Nöldnerstr.]: einige Fußgänger	q1 15903,10906 15932,108
 Nöldnerplatz [Nöldnerstr. - Schlichtallee]: einige Fußgänger	q1 15932,10830 15970,10755
 (Weg im Grünzug): einige Fußgänger	q1 17391,9746 17316,9797 17257,9869 17161,9921 17005,9953
 (Dolgenseestr. - Weg im Grünzug): einige Fußgänger	q1 17275,9892 17257,9869
+Wadzeckstr. - Mollstr.: einige Fußgänger	q1 11315,13210 11399,13333
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schulhof, Radfahren verboten	q3 7242,8586 7288,8635
