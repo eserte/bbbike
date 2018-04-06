@@ -10,9 +10,8 @@
 # REMOVED (Bauarbeiten beendet) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5898 --- #: note: oder man f‰hrt auf dem mit zahlreichen Engstellen zugestellten Radweg, muss dann aber ggfs. warten --- #: last_checked: 2014-03-21 --- #: valid: -20140523 --- Bergmannstr.: w‰hrend der Bauarbeiten zwischen Heim- und Friesenstr. Umleitung ¸ber gepflasterte Fahrbahn	Q2 9973,9232 9880,9233 9793,9241
 # 
 #: next_check_id: DIESEL-2015 vvv
-#: last_checked: 2018-02-26 vvv
-Dieselstr.: ¸berwiegend betoniert	Q1 14326,8062 14366,8058 14384,8056 14425,8052
-Dieselstr.: unbefestigt	Q2 14425,8052 14471,8046
+#: last_checked: 2018-04-06 vvv
+Dieselstr.: Asphalt	Q0 14326,8062 14366,8058 14384,8056 14425,8052 14471,8046
 Dieselstr., Umfahrung: Asphalt	Q0 14419,8112 14429,8074
 #: XXX_osm laut osm Asphalt, hier aber nicht!
 Dieselstr., Umfahrung: unbefestigt	Q2 14429,8074 14471,8046
@@ -85,7 +84,7 @@ Sinsheimer Weg: Betonstraﬂe	Q0 13774,8849 13837,8932
 #: check_frequency: 60d vvv
 #: last_checked: 2018-02-20
 Donaustr.: schlechtes bis m‰ﬂiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729 12549,8616 12649,8535
-#: last_checked: 2018-02-15
+#: last_checked: 2018-04-06
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: check_frequency ^^^
 #: by: ^^^
@@ -289,7 +288,7 @@ Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
 #: source_id: INKO_2147340291_COPY_1
 #: source_id: 2147340291
 #: source_id: 2147342376
-#: last_checked: 2018-04-03
+#: last_checked: 2018-04-06
 #: next_check: 2018-04-30
 Mariannenstr: m‰ﬂiges bis gutes Kopfsteinpflaster, 25 km/h mˆglich	Q1- 11512,10105 11616,10288
 Mariannenstr: Asphalt	Q0 11616,10288 11671,10402
@@ -2022,8 +2021,12 @@ F‰rberstr. - Uferweg: wassergebundene Decke	Q1- 21662,4974 21665,5035 21696,5053
 F‰rberstr. - Uferweg: wassergebundene Decke	Q1 21649,4946 21662,4974 21740,5004
 Glanzstr.: Asphalt	Q0 16328,7005 16433,6892 16588,6724
 Rodelbergweg: Asphalt	Q0 16433,6892 16494,6948 16563,7012 16615,7062
-Heinrich-Lassen-Park: glatte Pflasterung	Q0 6664,8787 6705,8730
-Heinrich-Lassen-Park: wassergebundene Decke	Q1- 6705,8730 6740,8682 6818,8697 6912,8617
+Heinrich-Lassen-Park: glatte Pflasterung	Q0- 6664,8787 6705,8730
+#: XXX hier ist auch eine "glatte Pflasterung" in Entstehung
+#: last_checked: 2018-04-06
+#: check_frequency: 10d
+Heinrich-Lassen-Park: unbefestigter Weg (w‰hrend der Bauarbeiten)	Q2 6705,8730 6740,8682 6818,8697
+Heinrich-Lassen-Park: glatte Pflasterung	Q0- 6818,8697 6912,8617
 Am Berlin-Spandauer Schiffahrtskanal: Kopfsteinpflaster	Q2 8332,13548 8248,13659
 # REMOVED (siehe temp_blockings-Eintrag) ---  --- #: XXX eventuell wird hier asphaltiert werden --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/1505_2016_bav_zu_ds_1599_iv_radweg_berlin-kopenhagen.pdf --- #: last_checked: 2016-06-16 --- #: note: fr¸her "glatter Belag, Q0", mittlerweile hat die Qualit‰t deutlich nachgelassen
 Am Berlin-Spandauer Schiffahrtskanal: Asphalt	Q0 8248,13659 8101,13901 8119,13912
@@ -2056,15 +2059,9 @@ Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
 (Markgrafendamm - Modersohnstr.; ¸ber das DB-Gel‰nde): asphaltiert	Q0 14671,10751 14566,10783
 (Markgrafendamm - Modersohnstr.; ¸ber das DB-Gel‰nde): Beton	Q0 14566,10783 14558,10819
 (Markgrafendamm - Modersohnstr.; ¸ber das DB-Gel‰nde): m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3+ 14558,10819 14352,10874
-#: next_check_id: DBWERKSTRASSE-2017
-#: XXX wann wird hier die letzte Deckschicht erstellt? vvv
-#: last_checked: 2018-03-27 vvv
-#: check_frequency: 14d vvv
-(Markgrafendamm - Modersohnstr.; ¸ber das DB-Gel‰nde): Asphalt, letzte Deckschicht fehlt	Q1 14352,10874 14231,10907 14141,10931 14076,10949
-(Markgrafendamm - Modersohnstr.; ¸ber das DB-Gel‰nde): Asphalt, letzte Deckschicht fehlt	Q1 14141,10931 14107,10911 14043,10928
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
+# REMOVED --- #: next_check_id: DBWERKSTRASSE-2017 --- #: XXX wann wird hier die letzte Deckschicht erstellt? vvv --- #: last_checked: 2018-03-27 vvv --- #: check_frequency: 14d vvv
+(Markgrafendamm - Modersohnstr.; ¸ber das DB-Gel‰nde): Asphalt	Q0 14352,10874 14231,10907 14141,10931 14076,10949
+(Markgrafendamm - Modersohnstr.; ¸ber das DB-Gel‰nde): Asphalt	Q0 14141,10931 14107,10911 14043,10928
 # REMOVED --- (Markgrafendamm - Modersohnstr.; Werkstraﬂe ¸ber das DB-Gel‰nde): asphaltiert	Q0 14231,10907 14224,10878 14107,10911
 Mehringplatz: Verbundsteinpflaster	Q0 9592,10263 9547,10278 9535,10299 9517,10332 9527,10389 9587,10421 9646,10404 9675,10351 9668,10306 9646,10279 9606,10263 9592,10263
 Mehringplatz - Friedrichstr.: Verbundsteinpflaster	Q0 9587,10421 9570,10566
@@ -18972,12 +18969,17 @@ Rehagener Str.: guter Beton	Q0 10631,-2130 10629,-1931 10644,-1875 10697,-1847 1
 #: by: uli 12move
 Straﬂe am Flugplatz: asphaltiert	Q0 17522,3653 17762,3243 17799,3183 17910,3004 18014,2830 18017,2751
 # 
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180406
+#: XXX Fahrbahninstandsetzung vvv
+#: next_check: 2018-09-30 vvv
 #: by: henning (hirschgarten): vvv
 #: corrected_by: srt (Q1- -> Q0-)
 Gilgenburger Str.: Asphalt	Q0- 24387,5672 24434,5645 24549,5685
 #: corrected_by: srt (m‰ﬂiger Asphalt -> Beton)
 Gilgenburger Str.: Beton mit Hebungen	Q1+ 24549,5685 24666,5726
 #: by: ^^^
+#: next_check ^^^
+#: XXX ^^^
 # 
 #: by: Karin (schopp):
 Terrassenstr.: m‰ﬂiges Kopfsteinpflaster	Q2 -1392,3915 -1554,3889 -1734,3905 -1754,3907 -1856,3877 -1909,3854 -1900,3700

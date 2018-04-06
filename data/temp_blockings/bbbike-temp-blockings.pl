@@ -24131,13 +24131,18 @@ EOF
 	2::inwork 15891,16041 15856,15924 16080,15830
 EOF
      },
-     { from  => $isodate2epoch->("2017-07-07 04:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2017-07-17 08:00:00"),
-       text  => 'Sterndamm: Eisenbahnunterführung voll gesperrt, 08.07.2017 bis 17.07.2017, danach Einbahnstraßenregelung',
+     { from  => $isodate2epoch->("2018-04-08 04:00:00"), # ein Tag Vorlauf
+       until => $isodate2epoch->("2018-04-30 08:00:00"),
+       text  => 'Sterndamm: Eisenbahnunterführung voll gesperrt, 09.04.2018 bis 30.04.2018',
        type  => 'gesperrt',
-       source_id => '2147341514',
+       source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.690450.php',
        data  => <<EOF,
-#: by: fritz
+#: next_check_id: STERNDAMM-2016
+#: by: http://unternehmen.bvg.de/de/Unternehmen/Medien/Presse/Pressemitteilungen/Detailansicht?newsid=2442
+#: XXX laut BA Treptow-Köpenick geht die Sperrung bis zum 2018-06-16
+#: by http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180406
+#: next_check: 2018-06-16
+#: priority: #A
 	2::inwork 17886,5587 17736,5441
 EOF
      },
@@ -26046,7 +26051,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="548612558" version="1"
-#: last_checked: 2018-03-14
+#: last_checked: 2018-04-06
 #: check_frequency: 14d
 # REMOVED ---	q3::inwork; 7201,8870 7101,9027
 	q3::inwork; 7101,9027 7035,9161 7012,9222 7001,9291
@@ -26147,7 +26152,7 @@ EOF
 EOF
      },
      { from  => 1498214515, # 2017-06-23 12:41
-       until => undef, # XXX
+       until => 1523037275, # eigentlich kommt man immer vorbei... undef, # XXX
        text  => 'Heinrich-Lassen-Park: Bauarbeiten, temporäre Vollsperrung möglich',
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.604116.php',
@@ -26159,12 +26164,13 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1523037542, # undef, # XXX
        text  => 'DB-Werkstraße (Markgrafendamm): wegen Bauarbeiten kann die Straße gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2017
-#: last_checked: 2018-03-27
+#: last_checked: 2018-04-05
+#: check_frequency: 2d
 	2::inwork 14231,10907 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
@@ -26888,6 +26894,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # XXX_prog: eigentlich q3-
+#: last_checked: 2018-04-06
 	q3::inwork 7136,9223 7012,9222
 EOF
      },

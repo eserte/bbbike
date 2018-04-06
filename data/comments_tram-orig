@@ -50,9 +50,14 @@ Geschwister-Scholl-Str.: Tram auf Fahrbahn	CS; -14115,-1678 -14143,-1662 -14213,
 #: by: http://www.bahninfo.de/artikel/10451/schleife-schwartzkopffstr-wird-stillgelegt/ vvv
 #: note: seit 2013-08-26 nicht mehr befahren vvv
 #: note: an der Kreuzung Schwartzkopffstr./Pflugstr. wurden einige Meter Gleise entfernt
+#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/382_2018_zu_ds_0518_v_verkehrsberuhigung_quartierschwarzkopffstr_bav.pdf
+#: XXX Schienen werden entfernt vvv
+#: next_check: 2018-05-06 vvv
 Schwartzkopffstr.: Schienen auf Fahrbahn, Tram fährt aber nicht mehr	CS 8607,14253 8776,14364
 Pflugstr.: Schienen auf Fahrbahn, Tram fährt aber nicht mehr	CS 8776,14364 8669,14550
 Wöhlertstr.: Schienen auf Fahrbahn, Tram fährt aber nicht mehr	CS 8669,14550 8442,14456
+#: next_check ^^^
+#: XXX ^^^ 
 #: note ^^^
 #: by ^^^
 Große Präsidentenstr.: Tram auf Fahrbahn	CS 10220,13098 10105,13004
@@ -91,7 +96,7 @@ Bernkasteler Str.: Tram auf der Fahrbahn	CS 14558,16907 14673,16895 14739,16891
 #: XXX Bleiben die Straßenbahngleise in Richtung Südwesten nach den Bauarbeiten bestehen?
 #: by: http://www.berliner-woche.de/johannisthal/verkehr/lichtschimmer-am-horizont-beim-umbau-bahnhof-berlin-schoeneweide-d143446.html (ab 2021 geht der Straßenbahnverkehr durch den neuen Straßenbahntunnel nördlich des Bahnhofs)
 #: last_checked: 2018-02-04
-#: next_check: 2018-04-15
+#: next_check: 2018-04-30
 Sterndamm: inaktive Straßenbahngleise	CS; 17886,5587 17736,5441
 Invalidenstr.: Tram auf Fahrbahn	CS 9383,13986 9659,14043 9676,14046 9804,14071 9821,14073 9936,14085 10002,14092
 Veteranenstr.: Tram auf Fahrbahn	CS 10002,14092 10282,14212 10304,14254
