@@ -211,7 +211,7 @@ Heerstr.: Erneuerung des Radwegs	?::projected -3069,11487 -2851,11417 -2476,1130
 #: XXX Baumaßnahme 10.11 (Realisierung nach 2011)
 #: osm_watch: way id="387676294" version="4"
 #: osm_watch: way id="10041007" version="19"
-#: last_checked: 2017-08-05
+#: last_checked: 2018-04-07
 #: check_frequency: 180d
 Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20769,17650 20728,17670 20485,17784
 # 
@@ -966,7 +966,7 @@ Gensinger Str.: Radstreifen	?::projected 18586,12151 18927,12135 19094,12127 191
 Siegfriedstr.: Radstreifen	?::projected 16860,12861 16859,12613 16857,12600 16826,12408 16820,12339
 # 
 #: osm_watch: way id="27959240" version="26"
-#: last_checked: 2018-02-10
+#: last_checked: 2018-04-07
 Marzahner Chaussee: Radstreifen	?::projected 18586,12151 18635,12224 18654,12255 18715,12348 18748,12399 18773,12438 18882,12618 19005,12822 19069,12929 19123,13067 19180,13219 19198,13272 19181,13485
 # 
 #: XXX nicht eindeutig: "Asphaltierung Kameruner Straße Fahrradstraße Togostraße" --- könnte im Minimalfall nur die Kreuzung sein
@@ -2133,6 +2133,7 @@ Uferweg am Schleswiger Ufer: Verbreiterung & Asphaltierung	?::projected 6182,129
 # 
 #: XXX danach werden hier Radwege existieren
 #: by: http://www.berliner-woche.de/marzahn/verkehr/loesung-fuer-nadeloehr-in-sicht-anwohner-der-l33-in-hoenow-sollen-laermschutzwand-erhalten-d145983.html (Baubeginn 2021, Bauzeit 12 Monate)
+#: last_checked: 2018-04-07
 #: next_check: 2022-03-01
 L33: Neubau geplant	?::projected 23895,15904 23965,15894 23992,15894 25007,15650 25528,15587 25866,15543 25955,15531 26071,15470 26175,15461
 # 
@@ -2577,6 +2578,7 @@ Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen a
 # 
 # REMOVED (zurzeit in Bau, allerdings schon aufgenommen) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6153 --- #: next_check: 2017-06-01 --- #: priority: #C --- Seehausener Str.: vielleicht Bau eines Zebrastreifens	?::projected 18520,17525 18428,17497 18491,17560
 # 
+#: next_check_id: RHINSTRASSENBRUECKE-2018
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6391
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6616
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (auch erwähnt, ohne besondere Richtung)
@@ -2591,8 +2593,8 @@ Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen a
 #: source_id: 2147342307
 #: source_id: 2147342363
 #: source_id: LMS-BR_r_LMS-BR_125793_LMS-BR_72
-#: last_checked: 2018-03-18
-#: next_check: 2018-03-27
+#: last_checked: 2018-04-07
+#: check_frequency: 180d
 Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 18215,12123
 # 
 # REMOVED --- #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.331148.php --- #: XXX bis voraussichtlich Ende Oktober 2015 war hier gesperrt, danach wird eventuell auch der Havelradweg über diesen Weg geführt --- #: last_checked: 2016-10-08 --- Schleuse - Lindenufer: führt der Havelradweg hier entlang?	? -2942,14666 -2928,14666 -2913,14628 -2910,14534 -2918,14496 -2964,14478
@@ -3662,7 +3664,7 @@ Bebauungsplan 3-59: geplante Straßen und Wege	?::projected 12512,21482 12783,214
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.516563.php
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.620540.php (Baubeginn: 2017-09-01)
-#: next_check: 2018-03-01
+#: next_check: 2018-09-01
 S-Bahnhof Marzahn: Verlängerung der nördlichen Brücke + Bau von Rampen, auch für Radfahrer interessant?	?::projected 19762,15475 19642,15534
 # 
 #: XXX Bebauungsplan 5-91 zwischen Brunsbütteler Damm und Nennhauser Damm vvv
@@ -4036,12 +4038,13 @@ Waldsieversdorf, R1: Qualität?	? 55467,16024 56203,16301 56430,16237 56527,16199
 Münchehofe - Trebnitz: laut "Berliner Umland" geeignete Strecke	? 62416,15883 62873,15950 62934,15694 63366,15767 63561,15609 63598,15505 64140,15292 64969,15633 65335,15664 65572,15310
 Postbruch - Spitzmühle: Qualität?	? 39771,18075 39696,18175 39627,18334 39466,18441 39351,18445 39344,18821 39383,19014 39390,19261 39372,19476 39430,19619 39433,19884
 Elisabethstr. (Strausberg) etc.: Genaue Wegführung? Tatsächlich Hauptstraße?	? 42434,19150 42804,19034 42792,19590
-Altlandsberg - Wegendorf: wahrscheinlich schlechte Strecke	? 32550,18921 32600,19331 32859,19606 32882,19988 33051,20649 33574,21276 33710,21746 33822,22066 34125,22128
+Altlandsberg - Wegendorf: wahrscheinlich schlechte Strecke	? 32483,18870 32561,19092 32859,19606 32934,19984 33051,20649 33625,21374 33710,21746 33833,22055 33969,22104 34163,22156
 Garzin - Hasenholz: Qualität (auf Garziner Seite nur Waldweg)?	? 49700,16565 50037,16837 50175,17200 51475,17887 51867,18284 52288,18180 53427,17985
 Am Bötzsee: Genaue Wegführung, besonders zum Fängersee hin? Alternative Strecke näher am See? Qualität: durchgehend Waldweg?	? 38480,17478 38485,17786 38515,17931 38576,18071 38836,18622 38774,18856 38820,19366 38779,19684 38908,19853
 Badstr. am Straussee: Qualität?	? 42753,20225 42818,20290 42778,20387 42825,20490 42943,20578 43040,20818 43268,20903 43387,20971 43446,21007 43498,21028
 Alternative Strecke zum Roten Hof: Qualität?	? 43498,21028 43601,21073 43681,21175 44037,21303 44246,21496 44312,21556 44290,21668 44158,21724
-Krummensee - Wegendorf: laut "Berliner Umland" unterschiedliche Qualität (gut - schlecht)	? 29536,21843 30444,22044 31272,22232 33562,22062 33822,22066
+Krummensee - Wegendorf: laut "Berliner Umland" unterschiedliche Qualität (gut - schlecht)	? 29536,21843 30444,22044 31272,22232
+Krummensee - Wegendorf: laut "Berliner Umland" unterschiedliche Qualität (gut - schlecht)	? 33374,22059 33437,22053 33969,22104
 Hegemühlenstr. - Herrensee: genaue Wegführung? Qualität?	? 42850,17643 42806,17462 42218,17200 42175,16962 41993,16706 41900,16100 41725,16000 41675,15906 41681,15915
 Liepe - Bralitz: Qualität (vermutlich auch asphaltiert?)?	? 47975,51325 48022,51225 48133,51178
 Hohenwutzen - Bad Freienwalde: Qualität (zumindest am östlichen Ende asphaltiert)?	? 58211,48747 57884,48807 57505,48703 57396,48965 57328,48981
@@ -4227,15 +4230,16 @@ Tempelfelde: Qualität?	? 30837,34162 31057,34421
 #: XXX: laut "Berliner Umland" gut geeignet; bei osm gibt es diesen Weg nicht
 Bei Börnicke: Qualität?	? 26930,28875 27084,29356
 #: XXX: laut "Berliner Umland" gut geeignet
-Krummensee - Seefeld: Qualität?	? 30444,22044 30236,23181 29904,23151 29635,23562 29481,24246 29528,24348
+Krummensee - Seefeld: Qualität?	? 30444,22044 30237,23202 29904,23151 29635,23562 29481,24246 29505,24363
 #: XXX: laut "Berliner Umland" gut geeignet
-Krummensee - Werneuchen: Qualität?	? 30236,23181 31816,23512 32334,25152 32476,25350
-Werneuchen - Wesendahl: Qualität?	? 32826,25218 34215,24621 35610,24040 37250,23080 37588,22679
+Krummensee - Werneuchen: Qualität?	? 30237,23202 31816,23512 31869,23830
+Werneuchen - Altlandsberg: Qualität? Ist hier auch asphaltiert?	? 32722,25286 32695,25270 32435,24545
+Werneuchen - Wesendahl: Qualität?	? 32829,25198 34215,24621 35610,24040 37250,23080 37588,22679
 Gamengrund - Tiefensee: Qualität?	? 40135,28824 40165,28951 40130,29073 40186,29180 40028,29703 39750,29812
 Gamensee - Tiefensee (südl.): Qualität?	? 40206,30002 40160,30018 40043,30084 39988,30216 39662,30500
 Gamensee - Tiefensee (nördl.): Qualität?	? 40302,30617 40191,30703 39469,30977 39362,31019
 Blumberg - Trappenfelde: Qualität?	? 25315,21433 26595,20119 26717,20063
-Altlandsberg - Neuenhagen (alternative Strecke): Qualität?	? 32293,18093 32527,18001 32090,15994 32156,15827 32024,15680 31953,15259 32014,14695 32009,14476 31841,13897 31694,13989 31480,14029 31303,13933 31277,13730 31161,13562 31181,13354
+Altlandsberg - Neuenhagen (alternative Strecke): Qualität?	? 32519,18076 32527,18001 32090,15994 32156,15827 32024,15680 31953,15259 32014,14695 32009,14476 31841,13897 31694,13989 31480,14029 31303,13933 31277,13730 31161,13562 31181,13354
 Spreeradweg: Qualität? ausgeschildert?	? 35912,-1171 35978,-1196 36008,-1254 36107,-1546 36176,-1661 36387,-1760 36625,-1843 36704,-1907 37316,-2196 37326,-2262 37405,-2468 37491,-2791 37532,-3029 38042,-3415 38179,-3448 38329,-3425 38774,-3522 38855,-3570 39150,-3862 39287,-3900 39355,-3877 39518,-3910 39805,-3908 39820,-3918 40013,-3857 40008,-3834 40168,-3811 40278,-3816
 Steinfurth - Spreeradweg: Qualität?	? 35828,-2672 35879,-2595 36001,-2511 36267,-2143 36290,-2080 36247,-1963 36308,-1922 36387,-1760
 Spreeradweg - Straße nach Hangelsberg: Qualität?	? 37316,-2196 37458,-2229 37613,-2204 37644,-1788 37560,-1526 37565,-1455 37661,-1285 37532,-1145 37527,-1102
@@ -5283,9 +5287,7 @@ Am Heineberg (Potsdam): Qualität?	? -17555,2301 -17292,2539
 #: by ^^^
 #: by ^^^
 # 
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20140408.1015.396178.html
-#: next_check: 2014-04-27
-Altlandsberge - Krummensee: existiert hier ein Radweg? Wegbeschaffenheit des Radwegs? Falls es ein Zweirichtungsradweg ist: auf welcher Seite befindet er sich?	? 32325,18434 31740,18675 31546,18803 31415,19073 31267,19338 30163,20992 30031,21271 29826,21526
+# REMOVED (teilweise) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20140408.1015.396178.html --- #: next_check: 2014-04-27 --- Altlandsberge - Krummensee: existiert hier ein Radweg? Wegbeschaffenheit des Radwegs? Falls es ein Zweirichtungsradweg ist: auf welcher Seite befindet er sich?	? 32325,18434 32245,18459 31949,18552 31868,18599 31858,18605 31748,18669 31546,18803 31417,19068 31284,19328 30489,20545 30163,20992 30031,21271 29826,21526
 Luckenwalder Str. - Nottekanal: Qualität des Radwegs?	? 25098,-13447 24549,-12629 24506,-12527
 Radweg entalng der B179n: Qualität?	? 24549,-12629 24531,-12634 24483,-12540 24474,-12453 24408,-12045 24344,-11733 24367,-11520 24371,-11283 24361,-11236
 #: by: http://www.ls.brandenburg.de/cms/detail.php/bb1.c.240276.de
@@ -5309,7 +5311,6 @@ Bahnhofstr. (Stahnsdorf): Qualität des östlichen Endes?	? -2878,-3004 -2817,-296
 #: XXX fehlt in Potsdam.coords.data: OT Golm, PLZ=14476
 #: by: http://www.potsdam.de/sites/default/files/documents/endfassungab_nr._6l_pdmstadt2014.pdf
 Am Urnenfeld (Potsdam): Qualität?	? -18151,-1323 -18520,-1192 -18698,-1030 -18725,-827 -18682,-719
-ZR1: Qualität?	? 27750,19600 27953,19508 28467,19470 30460,19245 31169,18956 31415,19073
 Mies-van-der-Rohe-Str. (Potsdam): Qualität? Existiert die Straße schon? Existiert eine Verbindung zum Fußweg?	? -14216,372 -14086,337
 Peter-Behrens-Str. (Potsdam): Qualität? Existiert die Straße schon? Existiert eine Verbindung zum Fußweg?	? -14176,482 -14032,434
 #: XXX laut osm surface=asphalt

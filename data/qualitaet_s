@@ -1100,7 +1100,7 @@ Walsheimer Str.: Kopfsteinpflaster, teils mäßig, teils OK	Q2 21352,11701 21397,1
 Walsheimer Str.: Asphalt	Q0 21397,11754 21430,11794
 Walsheimer Str.: Kopfsteinpflaster, teils mäßig, teils OK	Q2 21430,11794 21456,11825 21550,11939
 Wuhlewanderweg: guter Beton	Q0 22295,13530 22359,13599 22447,13690 22457,13713 22462,13726 22562,13855 22611,13901 22825,14109 22839,14149 22827,14356 22843,14452 22840,14494 22806,14631
-Wuhlewanderweg: guter Beton	Q0 22806,14631 22741,14761 22573,15043 22441,15118
+Wuhlewanderweg: guter Beton	Q0 22806,14631 22741,14761 22573,15043 22505,15075 22446,15103 22441,15118
 Wuhlewanderweg: Beton/Verbundsteinpflaster	Q1 22359,13599 22259,13508
 Wuhlewanderweg: guter Beton	Q0 22259,13508 22191,13414 22187,13304 22211,13040 22196,12961
 Wuhlewanderweg: unbefestigter Weg/Schotterweg	Q2 22196,12961 22036,12367 21998,12204 21970,12153
@@ -5934,8 +5934,8 @@ Rudolf-Filter-Weg: Beton	Q0 21009,15539 21040,15589
 Ludwigsfelder Str. (Hellersdorf): Asphalt	Q0 22883,15740 22888,15768 22909,15877 22991,15864 23001,15898 23011,15947 22940,15964 22961,16077 22974,16139
 Michendorfer Str. (Hellersdorf): Beton	Q0 22811,15753 22787,15639 22764,15515
 Luckenwalder Str.: Beton	Q0 22573,15552 22592,15548 22764,15515 22871,15507 22899,15528 22914,15599 22976,15585 23004,15583 23060,15588
-(Luckenwalder - Kyritzer Str.): Beton	Q0 22573,15552 22579,15416
-Kyritzer Str.: Beton mit zahlreichen Kopfsteinpflasterschwellen	Q2 22579,15416 22743,15414 23067,15429
+(Luckenwalder - Kyritzer Str.): Beton	Q0 22573,15552 22579,15416 22579,15407
+Kyritzer Str.: Beton mit zahlreichen Kopfsteinpflasterschwellen	Q2 22579,15407 22743,15414 23067,15429
 Kyritzer Str.: Beton	Q0 23067,15429 23245,15442 23270,15423
 Kyritzer Str.: Beton	Q0 22570,15233 22603,15188 22599,15105
 Neuruppiner Str. (Hellersdorf): Beton	Q0 23082,15329 23265,15351 23280,15244
@@ -6151,8 +6151,8 @@ Prötzeler Ring: Asphalt	Q0 21980,15857 21930,15830 21906,15723 22055,15698
 Hennickendorfer Weg: Asphalt	Q0 21906,15723 21733,15755
 Blumberger Damm: Verbundsteinpflaster	Q1 21733,15755 21719,15666
 Blumberger Damm: Verbundsteinpflaster	Q1 21706,15626 21680,15489 21657,15352 21631,15223
-Gottfried-Funeck-Weg: Asphalt	Q0 21450,14576 21822,14480 21925,14500 21948,14501 21985,14513 22026,14501 22061,14471 22172,14287 22414,14144 22503,14104
-Gottfried-Funeck-Weg: wassergebundene Decke	Q1 22783,14034 22987,13989
+Gottfried-Funeck-Weg: Asphalt	Q0 21450,14576 21822,14480 21925,14500 21948,14501 21985,14513 22026,14501 22061,14471 22172,14287 22416,14148 22503,14104
+Gottfried-Funeck-Weg: wassergebundene Decke	Q1 22783,14034 22854,14018 22987,13989
 Wuhlesteg: Gitterbrücke	Q1 22503,14104 22783,14034
 (entlang Kienberg und Gärten der Welt): Asphalt	Q0 22455,14815 22417,14837 22380,14831 22331,14793 22254,14793 22199,14744 22164,14722 22108,14710 22090,14704 22071,14630 22051,14604 22026,14601 22012,14556 21985,14513
 Irmfriedstr.: Beton	Q0 21737,13844 21758,13934 21764,13981 21766,13995 21794,14229 21814,14407 21822,14468
@@ -8353,8 +8353,8 @@ Ortolfstr. [Wohngebiet]: Beton	Q1 19210,-85 19205,-219 19214,-313
 Oberspreestr. [Wohngebiet]: Asphalt	Q0 19632,5211 19614,5132 19629,5019 19679,5025 19667,5126 19614,5132
 Helene-Weigel-Platz: Asphalt	Q0 19628,13517 19625,13576
 (westlicher Wuhlewanderweg): teilweise Schotter	Q1 22110,13639 22140,13649 22263,13758 22347,13858
-(westlicher Wuhlewanderweg): wassergebundene Decke	Q1 22347,13858 22404,13984 22407,14111 22414,14144
-westlicher Wuhlewanderweg: überwiegend wassergebundene Decke, einige Kleinsteinpflasterabschnitte	Q1 22414,14144 22462,14172 22639,14384 22679,14450 22670,14520 22620,14673 22528,14769 22455,14815 22462,14846 22439,14873 22378,14904 22323,15119
+(westlicher Wuhlewanderweg): wassergebundene Decke	Q1 22347,13858 22404,13984 22407,14111 22416,14148
+westlicher Wuhlewanderweg: überwiegend wassergebundene Decke, einige Kleinsteinpflasterabschnitte	Q1 22416,14148 22462,14172 22639,14384 22679,14450 22670,14520 22620,14673 22528,14769 22455,14815 22462,14846 22439,14873 22378,14904 22323,15119
 (Erieseering - am Tränkegraben): Verbundsteinpflaster	Q1 18132,10183 18130,10201 18113,10208
 (Erieseering - am Tränkegraben): Parkweg	Q1 18113,10208 18085,10244 18081,10312 18039,10398 18026,10490 18034,10567
 (Zachertstr. - am Tränkegraben): Beton	Q0 17848,11204 17893,11146
@@ -8574,11 +8574,15 @@ Landsberger Str.: Beton	Q0 26717,13687 26541,13483 26436,13361
 Am Schloßhof: unbefestigter Weg	Q2 21265,12468 21273,12495
 oberer Wuhlewanderweg: Asphalt	Q0 22317,13521 22472,13698 22479,13734 22550,13821 22638,13902
 oberer Wuhlewanderweg: wassergebundene Decke	Q1 22638,13902 22783,14034 22855,14114
-oberer Wuhlewanderweg: Schotterweg	Q2 22855,14114 22872,14175 22872,14233 22860,14440 22868,14477
+oberer Wuhlewanderweg: Schotterweg	Q2 22855,14114 22872,14175
+oberer Wuhlewanderweg: Asphalt	Q0 22872,14175 22872,14224
+oberer Wuhlewanderweg: Schotterweg	Q2 22872,14224 22860,14440 22868,14477
 oberer Wuhlewanderweg: Asphalt	Q0 22868,14477 22873,14498
 oberer Wuhlewanderweg: Asphalt	Q0 22873,14498 22864,14556
-oberer Wuhlewanderweg: wassergebundene Decke	Q1 22864,14556 22851,14603 22756,14787 22599,15030 22577,15109
+oberer Wuhlewanderweg: Asphalt	Q0 22864,14556 22851,14603 22756,14787 22702,14880 22690,14915 22643,14977
+oberer Wuhlewanderweg: Verbundsteinpflaster	Q1 22643,14977 22599,15030 22588,15056 22577,15109
 (oberer Wuhlewanderweg - Kummerower Ring): Asphalt	Q0 22472,13698 22527,13708
+(oberer Wuhlewanderweg - Gottfried-Funeck-Weg): Asphalt	Q0 22872,14175 22903,14063
 (Wuhlewanderweg - Feldberger Ring): Asphalt	Q0 22638,13902 22652,13906 22658,13898
 Teupitzer Str. (Hellersdorf): Asphalt	Q0 23562,15882 23553,15937 23565,15993
 (Salzmannstr. - Zobtener Str.): Beton	Q0 16841,9997 16811,9937
@@ -8692,6 +8696,7 @@ Heimdallstr.: Feinschotter	Q1 12261,19099 12299,19143
 (Wuhlebrücken): Holzbohlen	Q1 22788,14468 22743,14488
 (Wuhlebrücken): wassergebundene Decke/Asphalt	Q1 22743,14488 22670,14520
 (oberer Wuhlewanderweg - unterer Wuhlewanderweg): Verbundsteinpflaster	Q1 22873,14498 22849,14449 22847,14488 22840,14494
+(unterer Wuhlewanderweg - oberer Wuhlewanderweg): Asphalt	Q0 22505,15075 22539,15074 22588,15056
 Berghaimer Platz: Asphalt	Q0 4791,7090 4734,7087 4737,7036 4786,7035
 Bootshausweg: Verbundsteinpflaster	Q1 -1017,16184 -960,16396 -972,16553
 Bootshausweg: fester Sandweg	Q1 -972,16553 -1016,16585 -1033,16621 -1067,16635
@@ -9530,7 +9535,8 @@ Marienlust: Waldweg	Q1 25548,941 25543,879
 (Pilgramer Str. - Gewerbegebiet): Asphalt	Q0 25168,10963 25298,10966 25337,10967
 Feldberger Ring: Verbundsteinpflaster	Q1 23021,13982 22987,13989
 Hellersdorfer Str.: Verbundsteinpflaster	Q1 22981,13966 22987,13989
-(Alte Hellersdorfer Str. - Hellersdorfer Str.): Asphalt	Q0 23084,14472 23081,14418 23021,13982
+(Alte Hellersdorfer Str. - Hellersdorfer Str.): Asphalt	Q0 23084,14472 23081,14418 23072,14353 23021,13982
+(Alte Hellersdorfer Str. - Gottfried-Funeck-Weg): Asphalt	Q0 23072,14353 23018,14251 22967,14129 22903,14063 22854,14018
 (Hellersdorfer Str. - Wuhlewanderweg): Asphalt	Q0 23081,14418 23030,14424 23001,14445 22938,14465 22868,14477
 Melanchthonstr.: Beton/Verbundsteinpflaster	Q1 25287,13464 25325,13543
 (Fehrbelliner Platz): welliges Verbundsteinpflaster	Q1 4417,9340 4427,9305 4428,9283 4414,9255 4396,9237
