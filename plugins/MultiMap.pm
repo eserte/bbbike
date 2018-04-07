@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2007,2010,2011,2012,2014,2016,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2007,2010,2011,2012,2014,2016,2017,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.30;
+$VERSION = 1.31;
 
 use vars qw(%images);
 
@@ -133,11 +133,12 @@ sub register {
 	      ($images{FIS_Broker} ? (icon => $images{FIS_Broker}) : ()),
 	    };
     }
-    $main::info_plugins{__PACKAGE__ . 'Fahrrad_Stadtplan_Eu'} =
-	{ name => 'fahrrad-stadtplan.eu',
-	  callback => sub { showmap_fahrrad_stadtplan_eu(@_) },
-	  callback_3_std => sub { showmap_url_fahrrad_stadtplan_eu(@_) },
-	};
+## "NOT FOUND"
+#    $main::info_plugins{__PACKAGE__ . 'Fahrrad_Stadtplan_Eu'} =
+#	{ name => 'fahrrad-stadtplan.eu',
+#	  callback => sub { showmap_fahrrad_stadtplan_eu(@_) },
+#	  callback_3_std => sub { showmap_url_fahrrad_stadtplan_eu(@_) },
+#	};
     $main::info_plugins{__PACKAGE__ . 'Mapillary'} =
 	{ name => 'Mapillary',
 	  callback => sub { showmap_mapillary(@_) },
@@ -810,22 +811,22 @@ sub showmap_fis_broker_1_5000 {
     start_browser($url);
 }
 
-######################################################################
-# fahrrad-stadtplan.eu
-
-sub showmap_url_fahrrad_stadtplan_eu {
-    my(%args) = @_;
-    my $px = $args{px};
-    my $py = $args{py};
-    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    sprintf "http://www.fahrrad-stadtplan.eu/?lat=%s&lon=%s&zoom=%d", $py, $px, $scale;
-}
-
-sub showmap_fahrrad_stadtplan_eu {
-    my(%args) = @_;
-    my $url = showmap_url_fahrrad_stadtplan_eu(%args);
-    start_browser($url);
-}
+#######################################################################
+## fahrrad-stadtplan.eu
+#
+#sub showmap_url_fahrrad_stadtplan_eu {
+#    my(%args) = @_;
+#    my $px = $args{px};
+#    my $py = $args{py};
+#    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+#    sprintf "http://www.fahrrad-stadtplan.eu/?lat=%s&lon=%s&zoom=%d", $py, $px, $scale;
+#}
+#
+#sub showmap_fahrrad_stadtplan_eu {
+#    my(%args) = @_;
+#    my $url = showmap_url_fahrrad_stadtplan_eu(%args);
+#    start_browser($url);
+#}
 
 ######################################################################
 # Mapillary
