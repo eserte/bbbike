@@ -343,6 +343,7 @@ Steigung 3.9% (Hochkirchstr.)	St; 8076,9316 8105,9313
 Steigung 3.9% (Havelchaussee)	St; -3567,8031 -3561,7964
 Steigung 3.9% (Havelchaussee)	St; -3561,7964 -3536,7856
 Steigung 3.9% (Friesenstr. (Kreuzberg, Tempelhof))	St; 9797,9063 9799,8962
+Steigung 3.9% (Eisenacher Str. (Marzahn, Hellersdorf))	St; 22599,15105 22726,15082
 Steigung 3.9% (Conradstr. (Wannsee))	St; -5588,1454 -5675,1429
 Steigung 3.9% (Brauhausberg (Potsdam))	St; -12476,-2605 -12643,-2673
 Steigung 3.9% (Brauhausberg (Potsdam))	St; -12423,-2459 -12476,-2605
@@ -389,6 +390,7 @@ Steigung 3.7% (Marquardter Weg)	St; -5218,7070 -5279,7113
 Steigung 3.7% (Marquardter Weg)	St; -5202,7045 -5218,7070
 Steigung 3.7% (Mainzer Str. (Neukölln))	St; 12116,8247 12134,8172
 Steigung 3.7% (Krampenburger Weg)	St; 28083,592 28062,568
+Steigung 3.7% (Fercher Str. (Hellersdorf))	St; 22603,15188 22751,15191
 Steigung 3.7% (Brauhausberg (Potsdam))	St; -12318,-2192 -12355,-2263
 Steigung 3.7% (Am Tempelhofer Berg)	St; 9304,9241 9298,9112
 Steigung 3.7% ((Neukladower Allee - Gutspark Neukladow))	St; -6246,5562 -6319,5606
@@ -606,7 +608,6 @@ Steigung 2.9% (Im Bauernbusch)	St; 17764,2032 17809,1855
 Steigung 2.9% (Hohenschönhauser Weg (Friedrichsfelde))	St; 18420,11864 18411,12100
 Steigung 2.9% (Haynauer Str.)	St; 8053,3131 8036,3253
 Steigung 2.9% (Grabensprung)	St; 20549,11659 20575,11698
-Steigung 2.9% (Fercher Str. (Hellersdorf))	St; 22603,15188 22751,15191
 Steigung 2.9% (Feldlerchenweg)	St; 7109,22919 7000,23095
 Steigung 2.9% (Eickstedt - Wallmow)	St; 53742,102795 53777,102984
 Steigung 2.9% (Düsterhauptstr.)	St; 4533,22399 4603,22334
@@ -1019,7 +1020,6 @@ Steigung 2.2% (Landsberger Allee)	St; 12711,13150 12786,13185
 Steigung 2.2% (Landsberger Allee)	St; 12585,13118 12711,13150
 Steigung 2.2% (Königstr. (Wannsee))	St; -5268,1393 -5499,1349
 Steigung 2.2% (Königstr. (Wannsee))	St; -5161,1387 -5268,1393
-Steigung 2.2% (Kyritzer Str.)	St; 22599,15105 22603,15188
 Steigung 2.2% (Kurpromenade)	St; -8732,6840 -8656,6864
 Steigung 2.2% (Kranzallee)	St; -691,10954 -760,10921
 Steigung 2.2% (Kranzallee)	St; -640,10997 -691,10954
@@ -1125,7 +1125,6 @@ Steigung 2.1% (Falkentaler Steig)	St; 3012,24107 2903,24264
 Steigung 2.1% (Engeldamm)	St; 12061,11406 12092,11475
 Steigung 2.1% (Engeldamm)	St; 12025,11346 12061,11406
 Steigung 2.1% (Elmsteiner Weg)	St; 27567,936 27393,732
-Steigung 2.1% (Eisenacher Str. (Marzahn, Hellersdorf))	St; 22059,15153 21903,15174
 Steigung 2.1% (Büschingstr.)	St; 12007,13290 12085,13377
 Steigung 2.1% (Brinkmannstr.)	St; 7266,5292 7216,5303
 Steigung 2.1% (Brinkmannstr.)	St; 7216,5303 7095,5317
@@ -1296,6 +1295,7 @@ Steigung 1.9% (Gotha-Allee)	St; 630,12567 770,12566
 Steigung 1.9% (Glasower Str.)	St; 12876,6589 12759,6563
 Steigung 1.9% (Fregestr.)	St; 5961,7229 5959,6976
 Steigung 1.9% (Feurigstr.)	St; 7467,8863 7497,8916
+Steigung 1.9% (Eisenacher Str. (Marzahn, Hellersdorf))	St; 22441,15118 22577,15109
 Steigung 1.9% (Eickstedt - Wallmow)	St; 52704,101925 52403,101676
 Steigung 1.9% (Eickstedt - Wallmow)	St; 52403,101676 52388,101604
 Steigung 1.9% (Eickstedt - Wallmow)	St; 52388,101604 52301,101177
@@ -1514,6 +1514,8 @@ Steigung 1.7% (Friedenstr. (Friedrichshain))	St; 12085,13377 11984,13473
 Steigung 1.7% (Fidicinstr.)	St; 9799,8962 9654,8991
 Steigung 1.7% (Fennstr. (Wedding))	St; 7458,14643 7438,14627
 Steigung 1.7% (Fennbrücke)	St; 7438,14627 7368,14573
+Steigung 1.7% (Eisenacher Str. (Marzahn, Hellersdorf))	St; 22577,15109 22599,15105
+Steigung 1.7% (Eisenacher Str. (Marzahn, Hellersdorf))	St; 22059,15153 21903,15174
 Steigung 1.7% (Eickstedt - Wallmow)	St; 52704,101925 53028,102187
 Steigung 1.7% (Danziger Str.)	St; 12025,14695 11990,14714
 Steigung 1.7% (Danziger Str.)	St; 11864,14781 11709,14856
@@ -1624,6 +1626,7 @@ Steigung 1.6% (Flatowallee)	St; -593,11119 -605,11173
 Steigung 1.6% (Fintelmannstr.)	St; -7630,409 -7712,407
 Steigung 1.6% (Fintelmannstr.)	St; -7554,431 -7630,409
 Steigung 1.6% (Fintelmannstr.)	St; -7505,454 -7554,431
+Steigung 1.6% (Eisenacher Str. (Marzahn, Hellersdorf))	St; 22726,15082 22899,15073
 Steigung 1.6% (Eichhorster Weg)	St; 5552,21824 5466,21910
 Steigung 1.6% (Ebertystr.)	St; 13798,13003 13747,13110
 Steigung 1.6% (Dorfstr. (Kaulsdorf))	St; 22496,11474 22469,11627
@@ -1732,7 +1735,6 @@ Steigung 1.5% (Feuerbachstr.)	St; 5390,6299 5560,6344
 Steigung 1.5% (Fehrbelliner Str. (Mitte, Prenzlauer Berg))	St; 10502,14070 10606,14005
 Steigung 1.5% (Fehrbelliner Str. (Mitte, Prenzlauer Berg))	St; 10370,14158 10282,14212
 Steigung 1.5% (Erlenbacher Steig)	St; 28065,-114 27983,-52
-Steigung 1.5% (Eisenacher Str. (Marzahn, Hellersdorf))	St; 22441,15118 22577,15109
 Steigung 1.5% (Ebertystr.)	St; 13844,12900 13798,13003
 Steigung 1.5% (Chodowieckistr.)	St; 12266,14460 11982,14614
 Steigung 1.5% (Bruno-Taut-Str.)	St; 21862,807 21790,682
@@ -2100,6 +2102,8 @@ Steigung 1.2% (Fregestr.)	St; 5957,6889 5896,6785
 Steigung 1.2% (Fregestr.)	St; 5657,6451 5777,6628
 Steigung 1.2% (Enkenbacher Weg)	St; 27325,1265 27344,1329
 Steigung 1.2% (Enkenbacher Weg)	St; 27280,1119 27325,1265
+Steigung 1.2% (Eisenacher Str. (Marzahn, Hellersdorf))	St; 22441,15118 22323,15119
+Steigung 1.2% (Eisenacher Str. (Marzahn, Hellersdorf))	St; 22323,15119 22059,15153
 Steigung 1.2% (Eisenacher Str. (Mariendorf))	St; 9275,4672 9405,4667
 Steigung 1.2% (Ebereschenallee (Westend))	St; 1697,11911 1539,11955
 Steigung 1.2% (Dottistr.)	St; 15685,12154 15879,12131
@@ -2296,6 +2300,11 @@ Steigung 1.1% (Ahornstr. (Hessenwinkel))	St; 32952,2743 32952,2786
 Steigung 1.1% (Ahornstr. (Hessenwinkel))	St; 32888,2717 32952,2743
 Steigung 1.1% (Ahornstr. (Hessenwinkel))	St; 32801,2710 32888,2717
 Steigung 1.1% (Ahornallee (Westend))	St; 1768,12174 1752,12114
+Steigung 1.1% ((unterer Wuhlewanderweg - oberer Wuhlewanderweg))	St; 22539,15074 22588,15056
+Steigung 1.1% ((unterer Wuhlewanderweg - oberer Wuhlewanderweg))	St; 22505,15075 22539,15074
+Steigung 1.1% ((oberer Wuhlewanderweg))	St; 22588,15056 22577,15109
+Steigung 1.1% ((Wuhlewanderweg))	St; 22446,15103 22505,15075
+Steigung 1.1% ((Wuhlewanderweg))	St; 22441,15118 22446,15103
 Steigung 1.1% ((Park des Gründerzeitmuseums))	St; 24726,11037 24658,11013
 Steigung 1.1% ((Park des Gründerzeitmuseums))	St; 24658,11013 24601,10992
 Steigung 1.1% ((Hasenheide, Hauptweg im Park))	St; 11182,8983 11255,8591
@@ -2403,6 +2412,7 @@ Steigung 1.0% (Landsberger Allee)	St; 21709,15808 21584,15753
 Steigung 1.0% (Küfersteig)	St; -4395,10876 -4356,10988
 Steigung 1.0% (Körnerstr. (Steglitz))	St; 5460,5966 5598,6136
 Steigung 1.0% (Käthe-Niederkirchner-Str.)	St; 11991,14060 12148,13961
+Steigung 1.0% (Kyritzer Str.)	St; 22599,15105 22603,15188
 Steigung 1.0% (Kreuzbergstr.)	St; 8499,9253 8471,9244
 Steigung 1.0% (Koenigsallee)	St; 811,8022 761,7922
 Steigung 1.0% (Keltererweg)	St; -4836,11138 -4550,11073

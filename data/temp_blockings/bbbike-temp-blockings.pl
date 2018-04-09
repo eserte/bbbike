@@ -14050,14 +14050,14 @@ EOF
 	q4::inwork 9098,42254 9043,42165 9032,42153
 EOF
      },
-     { from  => $isodate2epoch->("2017-05-12 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-05-14 23:59:59"),
+     { from  => $isodate2epoch->("2018-05-25 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-05-27 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 9, months => 5]],
-       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (13. und 14. Mai 2017)',
+       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (26. und 27. Mai 2018)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.family-and-friends-ev.de/termine.html
+#: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html
 	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
 EOF
      },
@@ -22637,6 +22637,7 @@ EOF
        until => $isodate2epoch->("2017-09-10 22:00:00"),
        periodic => 1, # erster Termin im Jahr
        recurrences => [["yearly", days => 9, months => 5]], # wechselnde Termine, kann auch erst Mitte September passieren
+       recurrence_prewarn_days => 14,
        text  => 'Prager Platz: Veranstaltung "Fest der Nationen", Durchfahrt nicht möglich, vom 8.9.2017 15 Uhr bis 10.9.2017 22 Uhr',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/ueber-den-bezirk/sonstiges/events/fest-der-nationen/?date=20170409',
@@ -24132,17 +24133,16 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2018-04-08 04:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2018-04-30 08:00:00"),
-       text  => 'Sterndamm: Eisenbahnunterführung voll gesperrt, 09.04.2018 bis 30.04.2018',
+       until => $isodate2epoch->("2018-06-16 08:00:00"),
+       text  => 'Sterndamm: Eisenbahnunterführung voll gesperrt, 09.04.2018 bis 16.06.2018',
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.690450.php',
        data  => <<EOF,
 #: next_check_id: STERNDAMM-2016
 #: by: http://unternehmen.bvg.de/de/Unternehmen/Medien/Presse/Pressemitteilungen/Detailansicht?newsid=2442
-#: XXX laut BA Treptow-Köpenick geht die Sperrung bis zum 2018-06-16
+#: note: laut BA Treptow-Köpenick geht die Sperrung bis zum 2018-06-16, laut vmz bis Mitte Juni 2018
 #: by http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180406
-#: next_check: 2018-06-16
-#: priority: #A
+#: source_id: 2147342409
 	2::inwork 17886,5587 17736,5441
 EOF
      },
@@ -26711,14 +26711,13 @@ EOF
 	q3::inwork 5306,15387 5134,15565
 EOF
      },
-     { from  => 1510034400, # 2017-11-07 07:00
-       until => 1510329600, # 2017-11-10 17:00
-       text  => 'Wiesenweg: wegen Brückenarbeiten zwischen Gürtelstr. und Kietzer Weg gesperrt, eventuell auch für Fußgänger und Radfahrer, von 08.11.2017 7:00 Uhr bis 10.11.2017 17:00 Uhr ',
+     { from  => 1523311200, # 2018-04-10 00:00
+       until => undef, # XXX
+       text  => 'Wiesenweg: wegen Brückenarbeiten zwischen Gürtelstr. und Kietzer Weg komplett gesperrt, auch für Fußgänger, voraussichtlich ab 11.04.2018, 7 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: fritz
 #: source_id: 2147342009
-	2::inwork 15055,11505 15162,11458
+	2::inwork 15162,11458 15055,11505
 EOF
      },
      { from  => 1510939800, # 2017-11-17 18:30
@@ -26837,8 +26836,8 @@ EOF
        text  => 'Wolliner Str./Granseer Str./Fürstenberger Str.: Bauarbeiten, Kreuzung muss umständlich umfahren werden, Bordsteine',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2018-03-19 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2018-04-09 vvv
+#: check_frequency: 7d vvv
 	q3::inwork 10277,14691 10320,14608
 	q2::inwork 10320,14608 10399,14429
 	q3::inwork 10228,14564 10320,14608 10472,14632

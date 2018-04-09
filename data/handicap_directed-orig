@@ -240,3 +240,9 @@ Rhinstr.: westliche Brücke gesperrt, bis zur Ampel zurückfahren und Straßenseite
 Rhinstr.: westliche Brücke gesperrt, Radweg auf der linken Seite benutzen	DH:len=50:h=q2,330 18191,12451 18220,12450 18216,12262 18216,12239 18215,12123
 #: check_frequency ^^^
 #: last_checked ^^^
+# 
+#: next_check_id: GRENZALLEE-2014
+#: valid: 20140224-20180630
+#: last_checked: 2016-08-23
+#: next_check: 2018-06-30
+Neuköllnische Allee/Grenzallee: Überquerung der Kreuzung nur über linken Gehweg möglich, Zeitverlust!	DH:t=60:len=30 14567,6810 14344,7003 14196,7086
