@@ -961,7 +961,7 @@ Mittelbuschweg: Beton	Q0 13797,7267 13693,7228
 Welserstr.: Kopfsteinpflaster	Q2 6217,10099 6256,10309 6265,10359
 Kieler Str. (Mitte): Kopfsteinpflaster	Q2- 8054,14257 7973,14195
 (Uferweg Plötzensee): Parkweg	Q1 5618,14981 5455,15245 5391,15331 5306,15387 5134,15565 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415 5075,15354 5005,15213
-Kruppstr.: Kopfsteinpflaster	Q2 7327,14130 6917,13917 6890,13900 6817,13862 6746,13826
+Kruppstr.: Kopfsteinpflaster	Q2 7331,14132 6917,13917 6890,13900 6817,13862 6746,13826
 Fritz-König-Weg: Asphalt	Q0 17050,7687 17301,7754 17527,7812
 Weg 7: unbefestigter Weg	Q2- 17050,7687 16902,7652
 Elbeweg: Asphalt	Q0 16873,7733 16902,7652 16934,7570
@@ -8549,7 +8549,7 @@ Matenzeile: Beton	Q0- 17365,17632 17474,17478 17582,17335 17714,17285
 (Voigtstr. - Pettenkoferstr.): Kopfsteinpflaster	Q2 14834,12767 14858,12775
 Lehrter Str. [6-8]: Kopfsteinpflaster	Q2 7630,13584 7735,13626
 (Lehrter Str. - Fritz-Schloß-Park): Asphalt	Q0 7630,13584 7451,13504
-(Lehrter Str. - Fritz-Schloß-Park): asphaltähnlicher Belag	Q0- 7451,13504 7402,13475
+(Lehrter Str. - Fritz-Schloß-Park): asphaltähnlicher Belag	Q0- 7451,13504 7422,13487 7402,13475
 (Lehrter Str. - Fritz-Schloß-Park): Verbundsteinpflaster	Q1 7402,13475 7306,13418
 Fritz-Schloß-Park: Asphalt	Q0 7306,13418 7241,13361 7193,13354 7136,13387 7109,13418
 Fritz-Schloß-Park: Asphalt	Q0 7178,13708 7191,13679 7165,13659 7144,13609 7132,13503 7122,13452 7109,13418 7069,13381
@@ -10246,7 +10246,7 @@ Veilchenblütenweg: unbefestigte Schotterstraße	Q2 11664,21246 11656,21309
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6077.html
 #: XXX ändert sich bei der Umgestaltung etwas an der Qualität? vvv
 #: osm_watch: way id="210943676" version="5"
-#: last_checked: 2018-03-11 vvv
+#: last_checked: 2018-04-10 vvv
 #: check_frequency: 30d vvv
 #: note: zusätzlich mit einigen "Pflasterschwellen"
 (Verlängerte Hertzallee): Kopfsteinpflaster	Q2- 5352,11502 5296,11529 4950,11696
@@ -10625,6 +10625,14 @@ Alte Köpenicker Allee: unbefestigte Straße, holprig	Q2 20316,7637 20348,7634 204
 (Weg im Grünzug): Asphalt	Q0 17391,9746 17316,9797 17257,9869
 (Weg im Grünzug): unebener Asphalt	Q1- 17257,9869 17161,9921 17005,9953
 (Dolgenseestr. - Weg im Grünzug): unbefestigter Weg	Q2+ 17275,9892 17257,9869
+(zum Poststadion): Kleinsteinpflaster	Q1- 7452,13904 7417,13880 7445,13792 7431,13740 7343,13679 7338,13649
+(entlang des Vabali Spa): glattes Kleinsteinpflaster	Q1+ 7338,13649 7422,13487
+#: note: Privatstraße
+#: next_check_id: KLARAFRANKESTR-2018
+#: XXX wie sieht die endgültige Fahrbahndecke aus?
+#: last_checked: 2018-04-10
+#: check_frequency: 60d
+Klara-Franke-Str.: provisorischer Asphalt und Pflasterung	Q1 7366,14067 7443,14107 7542,13956 7662,13784 7564,13735
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv

@@ -21,7 +21,7 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-04-06
+#: last_checked: 2018-04-10
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
@@ -93,16 +93,27 @@ Auerstr.: zwischen Richard-Sorge-Str. und Löwestr. Baustelle, Einbahnstraßenrege
 # 
 ### Wedding ###
 # 
+#: source_id: LMS-BR_r_LMS-BR_127868_LMS-BR_72
+#: last_checked: 2018-04-10
+#: next_check: 2018-11-15
+#: valid: -20181115
+Friedrich-Krause-Ufer: Engstelle wegen Bauarbeiten, voraussichtlich bis Mitte November 2018	q2::inwork 7368,14573 7314,14599 7167,14666
+# 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.641406.php
 #: valid: 20171026-
-#: last_checked: 2017-12-26
+#: last_checked: 2018-04-10
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
 # 
 ### Mitte ###
 # 
 # REMOVED (mittlerweile existiert auch eine Absenkung) --- #: next_check_id: OTTOBRAUN-2015 --- #: XXX vermutlich im ausgebauten Zustand: q1  --- #: last_checked: 2018-03-16 --- #: check_frequency: 14d --- Wadzeckstr. - Mollstr.: Behinderungen wegen Bauarbeiten möglich	q2::inwork 11315,13210 11399,13333
-# REMOVED (existiert noch immer, allerdings gibt es hier keine Außengastronomie mehr, deshalb nicht mehr so behindernd) --- #: last_checked: 2017-10-14 --- #: check_frequency: 21d --- Märkisches Ufer: Bauarbeiten, Engstelle	q3+::inwork 10687,11853 10869,11949
+# 
+#: next_check_id: ROSSSTRASSENBRUECKE-2018
+#: last_checked: 2018-04-09
+#: check_frequency: 21d
+Märkisches Ufer: Bauarbeiten, Engstelle	q3+::inwork 10687,11853 10869,11949
+# 
 # REMOVED --- #: source_id: 2147341587 --- #: last_checked: 2017-11-01 vvv --- #: check_frequency: 21d vvv --- Jägerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q2::inwork 9195,11972 9393,12000 --- Jägerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q3::inwork 9393,12000 9523,12019
 # REMOVED --- #: last_checked: 2015-06-10 --- Am Zirkus: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9167,13046 9137,13032 9090,13009
 # REMOVED --- #: last_checked: 2016-06-01 --- Kommandantenstr.: Bauarbeiten, Einbahnstraße	q2::inwork; 10437,11352 10389,11390
@@ -120,7 +131,7 @@ Voltairestr.: Fahrbahn unter Umständen wegen Baustelle gesperrt, Ausweichen auf 
 #: XXX Ende der Bauarbeiten?
 #: way id="507023458" version="1"
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
-#: last_checked: 2018-03-16
+#: last_checked: 2018-04-10
 #: check_frequency: 45d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # 
@@ -320,9 +331,9 @@ Mariannenstr.: Bauarbeiten zwischen Naunynstr. und Mariannenplatz, Fahrbahn Rich
 # 
 #: source_id: 2147342287
 #: source_id: LMS-BR_r_LMS-BR_124656_LMS-BR_72
-#: last_checked: 2018-04-08
-#: next_check: 2018-04-10
-#: valid: -20180410
+#: last_checked: 2018-04-10
+#: next_check: 2018-04-16
+#: valid: -20180416
 #: priority: #A
 Prinzenstr.: Bauarbeiten, gemeinsamer Rad- und Gehweg	q3::inwork; 10633,10369 10605,10312
 # 
@@ -937,7 +948,13 @@ Fritz-Schiff-Weg: Fußgänger	q1 13457,12505 13476,12461 13448,12340
 (Molkenmarkt - Parochialstr.): Bordstein	q2 10738,12364 10831,12371
 #: note: von Süden aus explizit für Radfahrer verboten, von Norden aus fehlt so ein Schild
 (Crellestr. - Julius-Leber-Brücke): Fußgänger	q2 7524,9093 7555,8978 7509,8929 7497,8916
-(Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870 10776,11942 10824,11992
+(Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870
+#: next_check_id: ROSSSTRASSENBRUECKE-2018
+#: last_checked: 2018-04-09
+#: check_frequency: 21d
+(Fischerinsel, Spreekanalufer): Bauarbeiten, Engstelle	q3+::inwork 10672,11870 10776,11942
+# XXX --- nach den Bauarbeiten wieder aktivieren --- (Fischerinsel, Spreekanalufer): Fußgänger	q1 10672,11870 10776,11942
+(Fischerinsel, Spreekanalufer): Fußgänger	q1 10776,11942 10824,11992
 (Baikalstr. - Rummelsburger Str.): Fußgänger	q1 17281,10598 17249,10666
 (Baikalstr. - Rummelsburger Str.): Fußgänger	q1 17249,10702 17247,10755 17261,10827 17257,10875
 (Tränkegraben - Eggersdorfer Str./Rummelsburger Str.): Fußgänger	q1 17261,10827 17226,10865
@@ -2665,6 +2682,8 @@ Nöldnerplatz [Nöldnerstr. - Schlichtallee]: einige Fußgänger	q1 15932,10830 1597
 (Weg im Grünzug): einige Fußgänger	q1- 17391,9746 17316,9797 17257,9869 17161,9921 17005,9953
 (Dolgenseestr. - Weg im Grünzug): einige Fußgänger	q1- 17275,9892 17257,9869
 Wadzeckstr. - Mollstr.: einige Fußgänger	q1 11315,13210 11399,13333
+(zum Poststadion): Parkplatzverkehr	q1 7452,13904 7417,13880 7445,13792 7431,13740 7343,13679 7338,13649
+(entlang des Vabali Spa): einige Fußgänger	q1 7338,13649 7422,13487
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

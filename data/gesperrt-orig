@@ -2830,6 +2830,12 @@ Drängelgitter	BNP:3::trailer=10 22097,5879
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: KLARAFRANKESTR-2018
+#: XXX außerdem: genaue Lage der Straße
+#: last_checked: 2018-04-10
+#: check_frequency: 60d
+Klara-Franke-Str.: Bauarbeiten, gesperrt	2::inwork 7542,13956 7662,13784 7564,13735
+# 
 #: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bplan11120ve.pdf
 #: by: http://www.berliner-woche.de/friedrichsfelde/bauen/projekt-ohne-alternativen-bebauungsplaene-am-ex-dolgensee-center-liegen-aus-d136187.html
 #: last_checked: 2018-03-25
@@ -2909,7 +2915,7 @@ Im Lichtenhain: neue Straße, zurzeit Bauarbeiten; Qualität, genaue Lage?	2::inwo
 #: osm_watch: way id="523614484" version="2"
 # REMOVED (wurde gelöscht) --- #: osm_watch: way id="523614486" version="3"
 # REMOVED (wurde gelöscht) --- #: osm_watch: way id="5134092" version="20"
-#: last_checked: 2018-03-14
+#: last_checked: 2018-04-10
 #: check_frequency: 90d
 Zufahrt Parkhaus: Abrissarbeiten, Straße komplett gesperrt	2::inwork 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
 # 
@@ -2976,13 +2982,14 @@ An den Parkbäumen: Bauarbeiten, Fahrbahn gesperrt	2::inwork -6530,6699 -6556,666
 #: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01
 #: osm_watch: way id="392904879" version="1" vvv
 #: osm_watch: way id="392904880" version="3" vvv
-#: last_checked: 2018-03-11 vvv
 #: check_frequency: 360d vvv
+#: last_checked: 2018-03-11 vvv
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5579,12231 5535,12206 5518,12159
-Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5518,12159 5627,12105 5658,12082 5712,12033 5775,11975
 Gutenbergstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5317,12242 5518,12159
-#: check_frequency ^^^
 #: last_checked ^^^
+#: last_checked: 2018-04-10
+Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5518,12159 5627,12105 5658,12082 5712,12033 5775,11975
+#: check_frequency ^^^
 #: osm_watch ^^^
 #: osm_watch ^^^
 #: by ^^^
@@ -3025,7 +3032,7 @@ Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11485 20631,1162
 Schinkelplatz: Einbahnstraße	1s:q3:inwork 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
 # 
 #: next_check_id: RATHAUSWEDDING-2017
-#: last_checked: 2017-12-26
+#: last_checked: 2018-04-10
 #: check_frequency: 30d
 Limburger Str.: Bauarbeiten am Rathaus Wedding, komplett gesperrt	2::inwork 7129,15717 7012,15571
 # 
@@ -3038,8 +3045,8 @@ Karower Str.: temporäre Einbahnstraßenregelung	1s:q3:inwork 16593,25640 16632,25
 # REMOVED (frisch asphaltiert) --- #: last_checked: 2017-10-08 vvv --- #: check_frequency: 60d vvv --- # REMOVED --- Mauerweg: Bauarbeiten, gesperrt	2::inwork 7926,14439 7940,14447 --- #: XXX laut http://www.openstreetmap.org/note/1117960 wird der Weg "nach den Leitungsarbeiten wieder hergerichtet werden" --- Mauerweg: Bauarbeiten, gesperrt	2::inwork 7940,14447 7889,14519 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3192&mt=0&zoom=16 (Geplanter Projektabschluss: 2018-03-31)
-#: last_checked: 2017-12-26
-#: check_frequency: 90d
+#: last_checked: 2018-04-10
+#: check_frequency: 60d
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt	1s:q3:inwork 5192,10234 5196,10398
 # 
 # REMOVED (siehe temp_blockings-Eintrag) --- #: source_id: 2147341003 (Bauarbeiten in der angrenzenden Modersohnstr.) --- #: last_checked: 2017-06-17 --- #: check_frequency: 7d --- DB-Werkstraße: Zufahrt zur DB-Werkstraße ist wegen Bauarbeiten gesperrt	2::inwork 14043,10928 14107,10911
@@ -3048,8 +3055,8 @@ Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtun
 #: next_check_id: VERLAENGERTEHERTZ-2017
 #: XXX zumindest an der Fasanenstr.
 #: XXX laut Schild gehen die Bauarbeiten bis Dezember 2017
-#: last_checked: 2018-03-11
-#: check_frequency: 30d
+#: last_checked: 2018-04-10
+#: check_frequency: 14d
 (Verlängerte Hertzallee): Bauarbeiten, komplett gesperrt	2::inwork 5352,11502 5296,11529 4950,11696 4905,11785
 # 
 # REMOVED (man kommt hinter dem Georg-Denkmal vorbei) --- Spreeufer Nikolaiviertel: Gehweg gesperrt	2::inwork 10417,12378 10492,12289 10583,12206
@@ -3075,7 +3082,7 @@ Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13176,9302 13098,920
 #: source_id: 2147340715 vvv
 #: source_id: LMS-BR_r_LMS-BR_82028
 #: osm_watch: way id="42091230" version="24"
-#: last_checked: 2017-12-26 vvv
+#: last_checked: 2018-04-10 vvv
 # REMOVED (temporary) --- #: next_check: 2017-12-31 (vermutlich wird nur auf die neue Fahrbahnhälfte gewechselt werden) vvv
 #: next_check: 2018-04-30 vvv
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 8732,14098 8654,14194
@@ -3100,12 +3107,12 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
 #: osm_watch: way id="441442656" version="2"
 #: source_id: 2147341188
-#: last_checked: 2018-03-09 vvv
-#: next_check: 2018-04-15 vvv
+#: last_checked: 2018-04-10 vvv
+#: check_frequency: 30d vvv
 Nordhafenpark West: noch Bauarbeiten, gesperrt	2::inwork 7551,14464 7426,14539
 Nordhafenpark West: unter der Brücke gesperrt	2::inwork 7636,14414 7612,14449 7551,14464
 # REMOVED (fertig) --- Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7426,14539 7396,14569 7368,14573
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 # REMOVED --- #: last_checked: 2017-05-08 (nur noch ein paar Meter Richtung Weigandufer gesperrt) --- #: check_frequency: 7d --- Weichselplatz: Uferweg wegen Bauarbeiten gesperrt	2::inwork 12851,9309 12907,9073
@@ -3313,7 +3320,7 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 #: by: http://www.berliner-woche.de/wedding/verkehr/senat-lehnt-fussgaengerueberweg-ab-radweg-soll-unter-der-fennbruecke-gebaut-werden-d131062.html (ggfs. auch Unterführung unter der Fennbrücke)
 # REMOVED --- osm_watch: way id="183406331" version="3"
 #: osm_watch: way id="220646748" version="5"
-#: last_checked: 2017-11-04
+#: last_checked: 2018-04-10
 #: check_frequency: 150d
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
@@ -3357,7 +3364,7 @@ Tegeler Hafen: Weg gesperrt	2 1687,20645 1697,20623 1721,20603
 #: note: Baugelände
 #: by: http://www.berliner-woche.de/mitte/bauen/erdlawine-rollt-ueber-die-oranienburger-ab-juli-wird-auf-dem-tacheles-areal-die-elf-meter-tiefe-baugrube-ausgehoben-d119088.html (bis 2020)
 #: osm_watch: way id="33036326" version="6"
-#: last_checked: 2018-03-09
+#: last_checked: 2018-04-10
 #: check_frequency: 180d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 

@@ -4515,16 +4515,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1527760800
        },
        undef,
-       {
-         'data' => '#: source_id: 2147342320
-	q4::inwork 3919,9085 3952,8980
-',
-         'from' => 1520920800,
-         'id' => 2934,
-         'text' => 'Konstanzer Str.: Bauarbeiten, Sperrung zwischen Hohenzollerndamm und Berliner Str., evtl. sind auch Radfahrer betroffen, bis 10. April 2018',
-         'type' => 'handicap',
-         'until' => 1523354400
-       },
+       undef,
        {
          'data' => '# XXX_prog: eigentlich q3-
 #: last_checked: 2018-04-06

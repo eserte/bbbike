@@ -8,7 +8,9 @@ Dˆringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261
 Lange Str.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 12409,11902 12238,11931
 Rigaer Str.: Baustelle, Fuﬂg‰nger	q3::inwork 14538,12371 14748,12314
 Auerstr.: zwischen Richard-Sorge-Str. und Lˆwestr. Baustelle, Einbahnstraﬂenregelung	q2::inwork; 13273,12902 13202,12790
+Friedrich-Krause-Ufer: Engstelle wegen Bauarbeiten, voraussichtlich bis Mitte November 2018	q2::inwork 7368,14573 7314,14599 7167,14666
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
+M‰rkisches Ufer: Bauarbeiten, Engstelle	q3::inwork 10687,11853 10869,11949
 Voltairestr.: Fahrbahn unter Umst‰nden wegen Baustelle gesperrt, Ausweichen auf Gehweg	q3 11329,12497 11209,12430
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9945,11371 9936,11469
@@ -349,7 +351,9 @@ Kleine Andreasstr.: Gehweg, Bordsteine	q3 12211,12128 12279,12113
 Fritz-Schiff-Weg: Fuﬂg‰nger	q1 13457,12505 13476,12461 13448,12340
 (Molkenmarkt - Parochialstr.): Bordstein	q2 10738,12364 10831,12371
 (Crellestr. - Julius-Leber-Br¸cke): Fuﬂg‰nger	q2 7524,9093 7555,8978 7509,8929 7497,8916
-(Fischerinsel, Spreekanalufer): Fuﬂg‰nger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870 10776,11942 10824,11992
+(Fischerinsel, Spreekanalufer): Fuﬂg‰nger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870
+(Fischerinsel, Spreekanalufer): Bauarbeiten, Engstelle	q3::inwork 10672,11870 10776,11942
+(Fischerinsel, Spreekanalufer): Fuﬂg‰nger	q1 10776,11942 10824,11992
 (Baikalstr. - Rummelsburger Str.): Fuﬂg‰nger	q1 17281,10598 17249,10666
 (Baikalstr. - Rummelsburger Str.): Fuﬂg‰nger	q1 17249,10702 17247,10755 17261,10827 17257,10875
 (Tr‰nkegraben - Eggersdorfer Str./Rummelsburger Str.): Fuﬂg‰nger	q1 17261,10827 17226,10865
@@ -1702,6 +1706,8 @@ Nˆldnerplatz [Nˆldnerstr. - Schlichtallee]: einige Fuﬂg‰nger	q1 15932,10830 1597
 (Weg im Gr¸nzug): einige Fuﬂg‰nger	q1 17391,9746 17316,9797 17257,9869 17161,9921 17005,9953
 (Dolgenseestr. - Weg im Gr¸nzug): einige Fuﬂg‰nger	q1 17275,9892 17257,9869
 Wadzeckstr. - Mollstr.: einige Fuﬂg‰nger	q1 11315,13210 11399,13333
+(zum Poststadion): Parkplatzverkehr	q1 7452,13904 7417,13880 7445,13792 7431,13740 7343,13679 7338,13649
+(entlang des Vabali Spa): einige Fuﬂg‰nger	q1 7338,13649 7422,13487
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schulhof, Radfahren verboten	q3 7242,8586 7288,8635
@@ -2629,8 +2635,8 @@ Wartenbergstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2:inwork::ignd
 Friedenshorster Str.: Einbahnstraﬂe wegen Bauarbeiten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2:inwork::igndisp; 18296,10027 18312,9985 18301,9946
 Friedenshorster Str.: Einbahnstraﬂe wegen Bauarbeiten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 18301,9946 18266,9853
 Mauerstr.: Bauarbeiten, Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 9108,11961 9138,11872
-Wegelystr.: Einbahnstraﬂe wegen Bauarbeiten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 5518,12159 5627,12105 5658,12082 5712,12033 5775,11975
 Gutenbergstr.: Einbahnstraﬂe wegen Bauarbeiten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 5317,12242 5518,12159
+Wegelystr.: Einbahnstraﬂe wegen Bauarbeiten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 5518,12159 5627,12105 5658,12082 5712,12033 5775,11975
 Schinkelplatz: Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
 Karower Str.: tempor‰re Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 16593,25640 16632,25512 16669,25373
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 5192,10234 5196,10398
