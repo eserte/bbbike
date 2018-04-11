@@ -25233,24 +25233,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # 1484934475, # -> ein Tor ist nach gesperrt-orig gewandert, das andere ist werktags offen
-       text  => 'Alexanderufer - Charité: Tor ist nur montags bis freitags tagsüber (ca. 8-20 Uhr) offen',
+       until => undef, # 1484934475, # -> ein Tor (8362,13466 8369,13465 8377,13463) ist nach gesperrt-orig gewandert, das andere ist werktags offen
+       text  => 'Alexanderufer - Charité: Tor ist täglich von 5.30 Uhr bis 20.00 Uhr geöffnet',
        recurring => 1,
        type  => 'gesperrt',
        data  => <<EOF,
-# REMOVED --- #: note: verschlossen 2016-05-11 gegen 9 Uhr
-# REMOVED --- #: note: offen am 2016-06-16 gegen 9:30 Uhr
-# REMOVED --- #: note: offen am 2016-07-01 gegen 18:15 Uhr
-# REMOVED --- #: note: geschlossen am 2016-07-11 gegen 18:00 Uhr
-# REMOVED --- #: note: geschlossen am 2016-07-21 gegen 19:30 Uhr
-# REMOVED --- #: note: offen am 2016-09-21 gegen 18:15 Uhr
-# REMOVED --- #: note: offen am 2016-11-11 gegen 18:40 Uhr
-# REMOVED --- #: note: offen am 2016-11-22 gegen 18:30 Uhr
-# REMOVED --- #: note: offen am 2016-12-07 gegen 19:00 Uhr
-# REMOVED --- #: note: offen am 2016-12-12 gegen 09:45 Uhr
-# REMOVED --- #: note: verschlossen am 2018-01-14 (So) gegen 14:30 Uhr
-# REMOVED --- #: note: mittlerweile dauerhaft gesperrt
-# REMOVED --- 2::temp 8362,13466 8369,13465 8377,13463
 #: note: verschlossen am 2016-06-16 gegen 9:30 Uhr
 #: note: verschlossen am 2016-07-01 gegen 18:15 Uhr
 #: note: verschlossen am 2016-07-11 gegen 18:00 Uhr
@@ -25260,8 +25247,6 @@ EOF
 #: note: verschlossen am 2016-12-07 gegen 19:00 Uhr
 #: note: verschlossen am 2016-12-12 gegen 09:45 Uhr
 #: note: verschlossen am 2018-01-14 (So) gegen 14:30 Uhr
-#: XXX nochmal genauer prüfen: Mo bis Fr oder Sa? Stimmt auch 8-20 Uhr?
-#: priority: #A
 	2::temp 8371,13399 8363,13402 8356,13404
 EOF
      },

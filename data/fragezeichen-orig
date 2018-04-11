@@ -30,7 +30,7 @@ Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,107
 #: next_check: 2018-12-31
 Görlitzer Park: Verbesserungen geplant	?::projected 12814,9966 12833,9998 12869,10071 12901,10134 12905,10143
 # 
-#: last_checked: 2018-04-09
+#: last_checked: 2018-04-11
 #: next_check: 2018-12-31
 NKZ: Verbesserungen geplant	?::projected 11291,10438 11317,10485 11344,10507 11334,10527
 # 
@@ -163,7 +163,7 @@ Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected; 9865,10227 994
 #: last_checked ^^^
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2018-02-19
+#: last_checked: 2018-04-11
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9701,11656
 # 
@@ -1244,12 +1244,12 @@ Baumarkt (?) wird gebaut: wird es eine Durchfahrmöglichkeit geben?	?::inwork 170
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_06_0773_0896_online.pdf (Einziehung von Straßenland)
 #: by: https://gruen-berlin.de/kulturforum
 #: XXX Bebauungsplan 1-35a (Kulturforum)
-#: last_checked: 2018-03-07
+#: last_checked: 2018-04-11
 #: next_check: 2018-05-15
 Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::projected 8083,11381 7970,11441 7954,11399 7965,11380 7934,11275
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php
 #: XXX außerdem: voraussichtlich ab April 2018 Komplettsperrung
-#: last_checked: 2018-03-07
+#: last_checked: 2018-04-11
 #: check_frequency: 14d
 Herbert-von-Karajan-Str.: gibt es Einschränkungen für Radfahrer während der Bauarbeiten?	? 8005,11627 7965,11467 7970,11441
 # 
@@ -2182,6 +2182,7 @@ Handjerystr.: neue Fahrradstraße	?::projected 5631,8011 5630,7875 5636,7734 5636
 Blumberger Damm: wird hier ein Radweg gebaut?	? 21724,15955 21782,16253 21785,16273 21824,16506 21889,16817
 # 
 #: by: http://www.berliner-woche.de/hansaviertel/verkehr/rueckbau-der-ostumfahrung-schweizer-botschaft-im-regierungsviertel-d140116.html
+#: last_checked: 2018-04-11
 #: next_check: 2018-06-01
 Schweizer Botschaft: Rückbau geplant	?::projected 8206,12757 8204,12816 8168,12848 8124,12840 8030,12824
 # 
@@ -3538,7 +3539,7 @@ Güterbahnhof Wilmersdorf: vermutlich wird die Straße während der Bauarbeiten ges
 #: by: http://www.berliner-woche.de/moabit/bauen/1a-adresse-im-herzen-der-stadt-grundsteinlegung-fuer-humboldthafen-berlin-d128365.html (bis Frühjahr 2019)
 #: XXX eventuell entstehen hier weitere Straßen/Wege
 #: XXX fehlt in Berlin.coords.data, PLZ=10557
-#: last_checked: 2018-03-09
+#: last_checked: 2018-04-11
 #: check_frequency: 90d
 Hilda-Geiringer-Weg: wo genau wird die Straße liegen? Qualität?	?::projected 8243,13469 8245,13396
 # 
@@ -3896,6 +3897,17 @@ Bebauungsplan 7-81VE: Rad- und Gehwege geplant	?::projected 7618,7837 7619,8006 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/b-plan-10-72-planzeichnung.pdf
 #: next_check: 2019-09-01
 Bebauungsplan 10-72: eine Straße sowie eine Grünanlage mit Weg geplant	?::projected 25165,10776 25165,10674 25398,10652 25402,10779 25165,10776
+# 
+#: by: http://pankower-tor.de/verkehr.html
+#: XXX geplant sind: eine Erschließungsstraße mit Anschluss an die Prenzlauer Promenade, eine Straße zur Damerowstr. (mit Brücke über die S-Bahn), eine weitere Fußgängerbrücke über die S-Bahn (auch für Radfahrer?), einen neuen Rad/Fußweg entlang der Granitzstr. und vermutlich weitere Straßen
+#: next_check: 2022-01-01
+Pankower Tor: Stadtviertel mit Straßen und Wegen entsteht	?::projected 10850,17954 10859,17872 11576,18436 11906,18532 11942,19057 10850,17954
+# 
+#: by: http://www.berliner-woche.de/biesdorf/verkehr/anwohnerversammlung-zur-tvo-d148176.html
+#: by: osm
+#: XXX wird es durch den Bau bereits Beeinträchtigungen geben?
+#: next_check: 2022-01-01
+TVO: vorgeschlagene Streckenführung	?::projected 21002,5755 20931,5969 20583,6548 20556,6879 20660,7010 20583,7154 20687,7467 20519,8844 20507,9210 20410,9583 19877,10582 19760,11083 19713,11468 19908,11637
 # 
 #: ignore ^^^
 #: section ^^^
@@ -4450,7 +4462,6 @@ B166 - Berkholz: Qualität?	? 65022,74147 64076,73706 63945,73688
 Melzow: Qualität?	? 41459,85131 41621,85290 41910,85359
 Altranft - Sonnenburg: Qualität?	? 55627,41154 55542,41087 54597,39850 53976,39070 54043,38820 53890,38424 53397,38297
 Sonnenburg - Baasee: Qualität?	? 53397,38297 52995,38583 52879,38436 52531,38339 52410,38174
-Schillerstr. (Zeuthen): Qualität?	? 25763,-4283 25839,-5179
 #: note: unklarer Eintrag von anonymous: "mäßig", "kein Radweg" existiert
 Turmstr. (Potsdam): Qualität?	? -8081,-4396 -8111,-4396 -8259,-4119
 Turmstr. (Potsdam): Qualität?	? -8294,-4022 -8404,-3824 -8451,-3728 -8510,-3616
@@ -5427,7 +5438,6 @@ Domstrengbrücke und Verbindung zum Grillendamm: Qualität?	? -46302,103 -46305,13
 # 
 Am Kiesteich - Spektewiesen: Qualität? Liegt hier Kleinsteinpflaster?	? -6256,15169 -6252,15228
 Schulzendorfer Str. (Eichwalde): ist der gesamte Gehweg frei für Radfahrer?	? 24606,-3698 24661,-3673 24731,-3644 24886,-3587 25032,-3529
-Friedenstr. (Eichwalde): Qualität?	? 25322,-4042 25678,-3957 26050,-3881
 Mozartstr. (Eichwalde): Qualität?	? 25365,-3880 25379,-3876 25509,-3842 25636,-3813
 #: XXX laut osm hier auch asphaltiert vvv
 Maxim-Gorki-Str. (Eichwalde): Qualität?	? 26954,-3322 26849,-3323
