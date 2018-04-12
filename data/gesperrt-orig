@@ -3183,7 +3183,6 @@ E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgäng
 # REMOVED (fertig) --- #: XXX Bauarbeiten im Park dauern bis 2016 --- #: last_checked: 2016-02-05 --- #: check_frequency: 60d --- Kleiner Tiergarten: wegen Bauarbeiten gesperrt	2::inwork 6573,13149 6564,13260 6535,13327
 # REMOVED (fertig) --- #: next_check_id: FISCHERINSEL-2015 vvv --- #: source_id: 2147339543 vvv --- #: last_checked: 2016-12-16 vvv --- #: next_check: 2016-12-22 vvv --- Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 --- Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10687,11853 10869,11949 --- Märkisches Ufer - Neue Roßstr.: wegen Bauarbeiten gesperrt	3 10869,11949 10687,11853 10672,11870 --- Neue Roßstr. - Märkisches Ufer: wegen Bauarbeiten gesperrt	3 10672,11870 10687,11853 10869,11949
 # REMOVED (fertig) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5561.html --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/gerickesteg/index.shtml (20 Monate Bauzeit) --- #: XXX laut http://www.stadtentwicklung.berlin.de/bauen/strassenbau/ bis "II. Quartal 2017" --- #: osm_watch: way id="27250334" version="7" --- #: last_checked: 2017-09-09 --- #: check_frequency: 45d --- Gerickesteg: wegen Bauarbeiten gesperrt	2::inwork 6694,12627 6702,12633 6748,12669 6765,12680
-# 
 # REMOVED --- #: XXX Sperrungen wegen der IGA 2017 vvv --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.640770.php (Wiedereröffnung evtl. am 31. März 2018) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.647555.php --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.668510.php (vorzeitig offen) --- #: last_checked: 2017-08-09 vvv --- #: next_check: 2017-10-15 vvv
 # REMOVED --- IGA 2017-Gelände: Wege gesperrt	2 22455,14815 22417,14837 22380,14831 22331,14793 22254,14793 22199,14744 22164,14722 22108,14710 22090,14704 22071,14630 22051,14604 22026,14601 22012,14556 21985,14513 22026,14501 22061,14471 22172,14287 22414,14144 22503,14104
 # REMOVED --- IGA 2017-Gelände: Wege gesperrt	2 22414,14144 22462,14172 22639,14384 22679,14450 22670,14520
@@ -3193,15 +3192,8 @@ E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgäng
 # REMOVED (möglicherweise offen) --- IGA 2017-Gelände: Wege gesperrt	2 22783,14034 22987,13989
 # REMOVED (wieder offen) --- IGA 2017-Gelände: Wege gesperrt	2 22638,13902 22783,14034 22855,14114 22872,14175 22872,14233 22860,14440
 # REMOVED --- IGA 2017-Gelände: Wege gesperrt	2 22503,14104 22783,14034
-# 
 # REMOVED --- #: XXX Rübertragen ist zur Not möglich vvv --- #: by:  --- #: last_checked: 2016-08-20 vvv --- #: check_frequency: 120d vvv --- Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 19015,3129 18892,3256 18689,3465 --- Alexander-von-Humboldt-Weg: Durchfahrt an der Wilhelm-Hoff-Str. durch Wasserrohr versperrt	3 18689,3465 18892,3256 19015,3129
-# 
-#: osm_watch: way id="257072322" version="8"
-#: osm_watch: way id="412992929" version="2" 
-#: last_checked: 2017-05-21
-#: check_frequency: 120d
-Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 18892,3256 18953,3318
-# 
+# REMOVED (by osm) --- #: osm_watch: way id="257072322" version="8" --- #: osm_watch: way id="412992929" version="3" --- #: last_checked: 2017-05-21 --- #: check_frequency: 120d --- Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 18892,3256 18953,3318
 # REMOVED --- #: XXX Wie wird die Qualität danach sein? Wird man zum Hiltrud-Dudek-Weg durchfahren können? Wird die Straße verkehrsberuhigt sein? --- #: osm_watch: way id="151742436" version="5" --- #: XXX ad osm_watch: id referenziert die Jeanette-Wolff-Str., nur ein "proxy" für den neu zu bauenden Weg --- #: last_checked: 2015-04-10 --- #: check_frequency: 100d --- Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17647,-386 17654,-397
 # 
 #: next_check_id: EUROPACITY-2015 vvv

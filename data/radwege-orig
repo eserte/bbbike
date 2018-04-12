@@ -1597,13 +1597,14 @@ die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
 	RW3;RW3 14608,10409 14641,10552 14675,10693 14671,10751
 	RW3;RW2 14671,10751 14674,10811
 	RW4; 15261,10738 14904,10812 14810,10832 14717,10855 14674,10811
+	RW4; 14674,10811 14717,10855 14810,10832
 # REMOVED (nur noch ein Eintrag übrig) --- : next_check_id: HAUPTSTR-2015
-#: XXX Markierungen fehlen noch
+#: XXX Markierungen fehlen noch teilweise
 #: osm_watch: way id="439421759" version="9"
 #: osm_watch: way id="384136808" version="12"
-#: last_checked: 2018-04-06
-#: check_frequency: 7d
-	RW0; 14674,10811 14717,10855 14810,10832 14904,10812 15261,10738
+#: last_checked: 2018-04-12
+#: check_frequency: 2d
+	RW0; 14810,10832 14904,10812 15261,10738
 	RW1;RW1 14652,10201 14688,10167 14705,10149 14747,10108 14817,10031
 	RW0;RW1 13795,9941 13890,9894
 	RW1;RW1 13890,9894 13999,9842
@@ -4714,9 +4715,13 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: next_check_id: KARLMARXSTR-2016
 #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus?
 #: osm_watch: way id="297058655" version="4"
-#: last_checked: 2018-04-06
-#: next_check: 2018-05-02
+#: last_checked: 2018-04-12 vvv
+#: next_check: 2018-05-02 vvv
 	RW4; 12969,7610 12914,7785
+#: XXX wie wird die Benutzungspflicht hier aussehen?
+	RW3?; 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785
+#: next_check ^^^
+#: last_checked ^^^
 # REMOVED (wieder entfernt) --- #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus? --- #: last_checked: 2016-03-01 ---	RW3; 12898,7832 12865,7923 12830,8031 12794,8103 12753,8187
 	RW3;RW4 13015,7471 13018,7441 13029,7353
 	RW4;RW4 13029,7353 13030,7346 13034,7319

@@ -4185,23 +4185,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober; laut Pressemitteilung bis Ende 2017
-#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
-#: last_checked: 2018-03-11 vvv
-# REMOVED (weitgehend fertig) ---	q3::inwork 13384,8354 13217,8493
-# REMOVED	q3::inwork; 13217,8493 13262,8554
-# REMOVED	q3::inwork; 13262,8554 13301,8606 13314,8624
-# REMOVED	q4::inwork 13368,8689 13314,8624
-	q4::inwork 13301,8606 13314,8624 13368,8689
-#: last_checked ^^^
-',
-         'from' => 1491498639,
-         'id' => 2856,
-         'text' => 'Innstr.: Bauarbeiten, Fahrbahn gesperrt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4637,6 +4621,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Wilhelmstr. und Behrenstr.: Sperrung Richtung Norden zwischen Französische Str. und Behrenstr. sowie Richtung Osten zwischen Wilhelmstr. und Mauerstr., bis 4. Mai 2018',
          'type' => 'handicap',
          'until' => 1525449600
+       },
+       {
+         'data' => '	2::inwork -19150,-11976 -19043,-11944 -18640,-11826
+',
+         'from' => 1523631600,
+         'id' => 2948,
+         'source_id' => '186900417',
+         'text' => 'Ferch-Lienewitz: Bahnübergangsarbeiten, Sperrung, evtl. auch für Radfahrer relevant, 14.04.2018 17:00 Uhr bis 15.04.2018 06:00 Uhr ',
+         'type' => 'gesperrt',
+         'until' => 1523764800
        }
      
 );

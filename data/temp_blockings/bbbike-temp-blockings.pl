@@ -25985,19 +25985,18 @@ EOF
 EOF
      },
      { from  => 1491498639, # 2017-04-06 19:10
-       until => undef, # was: 1496268000, # 2017-06-01 00:00
+       until => 1523554839, # undef, # was: 1496268000, # 2017-06-01 00:00
        text  => 'Innstr.: Bauarbeiten, Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober; laut Pressemitteilung bis Ende 2017
-#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
-#: last_checked: 2018-03-11 vvv
+# REMOVED --- #: XXX wann sind die Bauarbeiten beendet? laut Schild der Wasserbetriebe bis September oder Oktober; laut Pressemitteilung bis Ende 2017
+# REMOVED --- #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
+# REMOVED --- #: last_checked: 2018-03-11
 # REMOVED (weitgehend fertig) ---	q3::inwork 13384,8354 13217,8493
 # REMOVED	q3::inwork; 13217,8493 13262,8554
 # REMOVED	q3::inwork; 13262,8554 13301,8606 13314,8624
 # REMOVED	q4::inwork 13368,8689 13314,8624
 	q4::inwork 13301,8606 13314,8624 13368,8689
-#: last_checked ^^^
 EOF
      },
      { from  => undef, # 
@@ -27013,6 +27012,15 @@ EOF
        data  => <<EOF,
 #: source_id: 2147342390
 	q4::inwork; 8901,12008 8861,12125 9054,12154
+EOF
+     },
+     { from  => 1523631600, # 2018-04-13 17:00
+       until => 1523764800, # 2018-04-15 06:00
+       text  => 'Ferch-Lienewitz: Bahnübergangsarbeiten, Sperrung, evtl. auch für Radfahrer relevant, 14.04.2018 17:00 Uhr bis 15.04.2018 06:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => '186900417',
+       data  => <<EOF,
+	2::inwork -19150,-11976 -19043,-11944 -18640,-11826
 EOF
      },
     );
