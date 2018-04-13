@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014,2015,2016,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2015,2016,2017,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -656,17 +656,18 @@ system:
 C<maybe_mount()> may also be called outside of the Perl/Tk application
 for scripts which have to make sure that the Garmin device is mounted,
 e.g. to copy from or to the mounted gps device. Simple usage example
-for the internal flash:
+for the internal flash (current directory should be the bbbike source
+directory):
 
-    perl -w -Ilib -MGPS::BBBikeGPS::MountedDevice -e 'GPS::BBBikeGPS::MountedDevice->maybe_mount(sub { my $dir = shift; system("ls", "-al", $dir); 1 })'
+    perl -w -I. -Ilib -MGPS::BBBikeGPS::MountedDevice -e 'GPS::BBBikeGPS::MountedDevice->maybe_mount(sub { my $dir = shift; system("ls", "-al", $dir); 1 })'
 
 Or for the first partition on a card:
 
-    perl -w -Ilib -MGPS::BBBikeGPS::MountedDevice -e 'GPS::BBBikeGPS::MountedDevice->maybe_mount(sub { my $dir = shift; system("ls", "-al", $dir); 1 }, garmin_disk_type => "card")'
+    perl -w -I. -Ilib -MGPS::BBBikeGPS::MountedDevice -e 'GPS::BBBikeGPS::MountedDevice->maybe_mount(sub { my $dir = shift; system("ls", "-al", $dir); 1 }, garmin_disk_type => "card")'
 
 Or starting a shell in the mounted directory:
 
-    perl -w -Ilib -MGPS::BBBikeGPS::MountedDevice -e 'GPS::BBBikeGPS::MountedDevice->maybe_mount(sub { my $dir = shift; chdir $dir; system($ENV{SHELL}); chdir "/"; 1 })'
+    perl -w -I. -Ilib -MGPS::BBBikeGPS::MountedDevice -e 'GPS::BBBikeGPS::MountedDevice->maybe_mount(sub { my $dir = shift; chdir $dir; system($ENV{SHELL}); chdir "/"; 1 })'
 
 The mount rule is: if the device is already mounted, then don't
 unmount at the end. If the device is not mounted, then unmount after
@@ -707,8 +708,16 @@ prerequisites (e.g. L<lshal(1)> is missing).
 
 The following sample oneliner waits until the device is available:
 
-    perl -w -Ilib -MGPS::BBBikeGPS::MountedDevice -e 'while () { $status = GPS::BBBikeGPS::MountedDevice->get_gps_device_status("flash", \$info); if ($status eq "unknown") { die "We cannot detect the gps device status: $info" } exit if $status eq "attached"; sleep 1 }'
+    perl -w -I. -Ilib -MGPS::BBBikeGPS::MountedDevice -e 'while () { $status = GPS::BBBikeGPS::MountedDevice->get_gps_device_status("flash", \$info); if ($status eq "unknown") { die "We cannot detect the gps device status: $info" } exit if $status eq "attached"; sleep 1 }'
 
 =back
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<udisks(8)> (linux), L<lshal(1)> (freebsd).
 
 =cut
