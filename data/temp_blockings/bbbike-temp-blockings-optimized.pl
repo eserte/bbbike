@@ -4527,6 +4527,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.386693.php
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/uebersichtsplan-umleitung_vollsperrung.pdf
+#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.692745.php
 #: XXX prüfen, ob der Starttermin eingehalten wird
 #: next_check: 2018-05-02
 #: priority: #A

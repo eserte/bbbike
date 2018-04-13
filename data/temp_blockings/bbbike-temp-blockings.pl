@@ -21532,7 +21532,7 @@ EOF
        until => $isodate2epoch->("2017-05-28 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 4, months => 5]],
-       recurrence_prewarn_days => 21, # findet es 2018 überhaupt statt?
+       recurrence_prewarn_days => 7, # findet es 2018 überhaupt statt?
        text  => 'Schöneberger Mai- und Spargelfest am 27. und 28. Mai 2017 in der Freiherr-vom-Stein-Straße',
        type  => 'gesperrt',
        source_id => 'http://www.ms-event-agentur.com/seite18.html?date=20170325',
@@ -26924,6 +26924,7 @@ EOF
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.386693.php
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/uebersichtsplan-umleitung_vollsperrung.pdf
+#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.692745.php
 #: XXX prüfen, ob der Starttermin eingehalten wird
 #: next_check: 2018-05-02
 #: priority: #A
