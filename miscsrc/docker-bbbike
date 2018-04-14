@@ -44,7 +44,7 @@ EOF
 
 sub usage_build_deb (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
-usage: $0 [--dry-run] build-dev [--dist debian|ubuntu|...] [--distver stretch|...] [--continue]
+usage: $0 [--dry-run] build-dev [--dist debian|ubuntu|...] [--distver stretch|...] [--distfile BBBike-X.YY.tar.gz] [--continue]
 EOF
 }
 
@@ -422,27 +422,45 @@ sub build_deb {
     my($doit, %opt) = @_;
     lock_keys %opt;
 
-    require BBBikeBuildUtil;
-    my $bsdmake = BBBikeBuildUtil::get_pmake(fallback => 0);
+    my($distfile, $distvname);
+    if ($opt{distfile}) {
+	$distfile = $opt{distfile};
+	($distvname = $distfile) =~ s{.tar.gz$}{};
+    } else {
+	require BBBikeBuildUtil;
+	my $bsdmake = BBBikeBuildUtil::get_pmake(fallback => 0);
 
-    if (!$opt{continue} || !-e "Makefile") {
-	$doit->system($^X, "Makefile.PL");
-    }
-    chomp(my $distvname = $doit->info_qx($bsdmake, "-VDISTVNAME"));
-    my $distfile = "$distvname.tar.gz";
-    if (!$opt{continue} || !-s $distfile) {
-	$doit->system($bsdmake, "dist");
+	if (!$opt{continue} || !-e "Makefile") {
+	    $doit->system($^X, "Makefile.PL");
+	}
+	chomp($distvname = $doit->info_qx($bsdmake, "-VDISTVNAME"));
+	$distfile = "$distvname.tar.gz";
+	if (!$opt{continue} || !-s $distfile) {
+	    $doit->system($bsdmake, "dist");
+	}
     }
     if (!-s $distfile) {
-	error "$distfile was not created";
+	error "Expected distfile $distfile is missing";
     }
 
+    # Look into tarball for Debian version
+    my $dist_tempdir = tempdir("bbbike_deb_XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
+    $doit->system("tar", "-C", $dist_tempdir, "-xf", $distfile, "$distvname/BBBikeVar.pm");
+    require Safe;
+    my $safe = Safe->new;
+    $safe->rdo("$dist_tempdir/$distvname/BBBikeVar.pm");
+    my $stable_version = $safe->reval('$BBBike::STABLE_VERSION');
+    $stable_version or error "Can't get STABLE_VERSION";
+    my $debian_version = $safe->reval('$BBBike::DEBIAN_VERSION');
+    $debian_version or error "Can't get DEBIAN_VERSION";
+
+    # Prepare docker environment
     my $docker_context_dir = tempdir("docker_context_XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
     $doit->copy($distfile, $docker_context_dir);
-    my $origfile = "bbbike_3.18.orig.tar.gz"; # XXX why?
+    my $origfile = "bbbike_${stable_version}.orig.tar.gz";
     $doit->copy("$docker_context_dir/$distfile", "$docker_context_dir/$origfile"); # XXX why?
     $doit->system('rsync', '-a', 'port/debian/', "$docker_context_dir/debian/");
-    my $debfile = "bbbike_3.18-1_all.deb"; # XXX
+    my $debfile = "bbbike_${debian_version}_all.deb";
 
     my $dockerfile = <<EOF;
 FROM $opt{dist}:$opt{distver}
@@ -520,11 +538,13 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
     my %opt = (
 	       dist    => 'debian',
 	       distver => 'latest',
+	       distfile => undef,
 	       continue => 0,
 	      );
     GetOptions(\%opt,
 	       "dist=s",
 	       "distver|distversion=s",
+	       "distfile=s",
 	       "continue!",
 	      )
 	or usage_build_deb;
@@ -577,10 +597,7 @@ A crontab entry may look like this:
 
 =head2 DEB PACKAGE BUILD
 
-This is still work in progress; some options like using a previously
-created tarball are missing.
-
-Create a debian package:
+Create a debian package for the current source:
 
     ./miscsrc/docker-bbbike build-deb
 
@@ -594,6 +611,10 @@ This would especially skip the creation of the intermediate tarball.
 
 The options C<--dist> and C<--distver> may be used to use another
 Debian/Ubuntu/... version. The default is to use the latest Debian.
+
+Create a debian package for an existing tarball:
+
+    ./miscsrc/docker-bbbike build-deb --distfile BBBike-X.YY.tar.gz
 
 =head1 SEE ALSO
 
