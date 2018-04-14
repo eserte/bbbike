@@ -32,7 +32,7 @@ EOF
 
 sub usage_gui (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
-usage: $0 [--dry-run] gui [--dist debian|ubuntu|...] [--distver stretch|...] [--src local|github] [--env KEY=VAL ...]
+usage: $0 [--dry-run] gui [--dist debian|ubuntu|...] [--distver stretch|...] [--src local|github] [--env KEY=VAL ...] [--bbbike-args "..."]
 EOF
 }
 
@@ -82,19 +82,19 @@ EOF
     if ($opt{src} eq 'github') {
 	$dockerfile .= <<EOF;
 RUN apt-get install -qqy perl-tk git
-CMD git clone --depth=1 git://github.com/eserte/bbbike.git && bbbike/bbbike
+CMD git clone --depth=1 git://github.com/eserte/bbbike.git && bbbike/bbbike $opt{'bbbike-args'}
 EOF
     } elsif ($opt{src} eq 'local') {
 	$dockerfile .= <<EOF;
 RUN apt-get install -qqy perl-tk
-CMD /bbbike/bbbike
+CMD /bbbike/bbbike $opt{'bbbike-args'}
 EOF
     } elsif ($opt{src} =~ m{\.deb$}) {
 	require File::Basename;
 	my $base_src = File::Basename::basename($opt{src});
 	$dockerfile .= <<EOF;
 COPY $base_src /tmp
-CMD dpkg --install /tmp/$base_src; apt-get install -qqy -f && dpkg --install /tmp/$base_src && bbbike
+CMD dpkg --install /tmp/$base_src; apt-get install -qqy -f && dpkg --install /tmp/$base_src && bbbike $opt{'bbbike-args'}
 EOF
     } else {
 	usage "Invalid --src value '$opt{src}', only 'github', 'local' or a path to a .deb are possible";
@@ -508,6 +508,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       src     => 'local',
 	       debug   => 0,
 	       'docker-machine' => 'default',
+	       'bbbike-args' => undef,
 	      );
     GetOptions(\%opt,
 	       "dist=s",
@@ -515,6 +516,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       "src=s",
 	       'debug!',
 	       'docker-machine=s',
+	       'bbbike-args=s',
 	      )
 	or usage_gui;
     gui($doit, %opt);
@@ -585,6 +587,10 @@ The same, but specify OS + version (instead of default debian:latest):
 To start bbbike from an existing .deb package, use
 
     ./miscsrc/docker-bbbike gui --src /path/to/bbbike.deb
+
+Supply bbbike options:
+
+    ./miscsrc/docker-bbbike gui --bbbike-args="-lazy -advanced"
 
 =head2 TESTS (like in travis-ci)
 
