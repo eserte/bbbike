@@ -42,6 +42,35 @@ usage: $0 [--dry-run] travis-ci [--dist debian|ubuntu|...] [--distver stretch|..
 EOF
 }
 
+sub usage_build_deb (;$) {
+    die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
+usage: $0 [--dry-run] build-dev [--dist debian|ubuntu|...] [--distver stretch|...] [--continue]
+EOF
+}
+
+sub _dockerfile_frag_src ($) {
+    my $optref = shift;
+    my $dockerfile = '';
+
+    # Get the source, either from github or local src
+    my $branch_args = '';
+    if ($optref->{branch}) {
+	$branch_args = " --branch $optref->{branch}";
+    }
+    if ($optref->{src} eq 'github') {
+	$dockerfile .= <<EOF;
+RUN git clone --depth=1 https://github.com/eserte/bbbike.git$branch_args
+EOF
+    } elsif ($optref->{src} eq 'local') {
+	$dockerfile .= <<EOF;
+COPY bbbike /bbbike
+EOF
+    } else {
+	usage "Invalid --src value '$optref->{src}', only 'github' and 'local' are known";
+    }
+    $dockerfile;
+}
+
 sub gui {
     my($doit, %opt) = @_;
     lock_keys %opt;
@@ -288,24 +317,7 @@ RUN /bin/bash --login -e -c "wrapper install_perl_dependencies"
 
 EOF
 
-    # Get the source, either from github or local src
-    {
-	my $branch_args = '';
-	if ($opt{branch}) {
-	    $branch_args = " --branch $opt{branch}";
-	}
-	if ($opt{src} eq 'github') {
-	    $dockerfile .= <<EOF;
-RUN git clone --depth=1 https://github.com/eserte/bbbike.git$branch_args
-EOF
-	} elsif ($opt{src} eq 'local') {
-	    $dockerfile .= <<EOF;
-COPY bbbike /bbbike
-EOF
-	} else {
-	    usage "Invalid --src value '$opt{src}', only 'github' and 'local' are known";
-	}
-    }
+    $dockerfile .= _dockerfile_frag_src(\%opt);
 
     # Run the rest of .travis.yml (requires src)
     $dockerfile .= <<EOF;
@@ -406,6 +418,59 @@ EOF
     } $docker_context_dir;
 }
 
+sub build_deb {
+    my($doit, %opt) = @_;
+    lock_keys %opt;
+
+    require BBBikeBuildUtil;
+    my $bsdmake = BBBikeBuildUtil::get_pmake(fallback => 0);
+
+    if (!$opt{continue} || !-e "Makefile") {
+	$doit->system($^X, "Makefile.PL");
+    }
+    chomp(my $distvname = $doit->info_qx($bsdmake, "-VDISTVNAME"));
+    my $distfile = "$distvname.tar.gz";
+    if (!$opt{continue} || !-s $distfile) {
+	$doit->system($bsdmake, "dist");
+    }
+    if (!-s $distfile) {
+	error "$distfile was not created";
+    }
+
+    my $docker_context_dir = tempdir("docker_context_XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
+    $doit->copy($distfile, $docker_context_dir);
+    my $origfile = "bbbike_3.18.orig.tar.gz"; # XXX why?
+    $doit->copy("$docker_context_dir/$distfile", "$docker_context_dir/$origfile"); # XXX why?
+    $doit->system('rsync', '-a', 'port/debian/', "$docker_context_dir/debian/");
+    my $debfile = "bbbike_3.18-1_all.deb"; # XXX
+
+    my $dockerfile = <<EOF;
+FROM $opt{dist}:$opt{distver}
+RUN apt-get update
+RUN apt-get install -qqy dpkg-dev lintian rsync
+RUN mkdir /bbbike
+COPY $distfile /bbbike
+COPY $origfile /bbbike
+COPY /debian /bbbike/debian
+WORKDIR /bbbike
+# XXX move up!
+RUN apt-get install -qqy debhelper
+RUN tar xf $distfile && cd $distvname && rsync -a ../debian/ debian/ && dpkg-buildpackage -us -uc -rfakeroot -D
+RUN lintian $debfile
+CMD dpkg --install $debfile; apt-get install -qqy -f && dpkg --install $debfile && cp -f $debfile /hosttmp
+EOF
+    $doit->write_binary("$docker_context_dir/Dockerfile", $dockerfile);
+    in_directory {
+	my $tag = "bbbike-deb-$opt{dist}-$opt{distver}";
+	$doit->system("docker", "build", "--tag", $tag, ".");
+	$doit->system("docker", "run", "-v", "/tmp:/hosttmp", $tag);
+	if ($^O eq 'darwin') { # XXX actually for any system using docker-machine
+	    $doit->system("docker-machine", "scp", "default:/tmp/$debfile", "/tmp");
+	}
+	$doit->system("ls", "-al", "/tmp/$debfile");
+    } $docker_context_dir;
+}
+
 return 1 if caller;
 
 my $doit = Doit->init;
@@ -451,6 +516,19 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	      )
 	or usage_travis_ci;
     travis_ci($doit, %opt);
+} elsif ($subcmd eq 'build-deb') {
+    my %opt = (
+	       dist    => 'debian',
+	       distver => 'latest',
+	       continue => 0,
+	      );
+    GetOptions(\%opt,
+	       "dist=s",
+	       "distver|distversion=s",
+	       "continue!",
+	      )
+	or usage_build_deb;
+    build_deb($doit, %opt);
 } else {
     usage "Unknown subcmd '$subcmd'";
 }
@@ -462,6 +540,14 @@ docker-bbbike - run bbbike tasks in docker
 
 =head1 SYNOPSIS
 
+    ./miscsrc/docker-bbbike [options]
+
+=head1 DESCRIPTION
+
+C<docker-bbbike> may run different tasks in a docker environment.
+
+=head2 GUI
+
 Run GUI application in a docker image, forwarding display to the real
 X11 display:
 
@@ -470,6 +556,8 @@ X11 display:
 The same, but specify OS + version (instead of default debian:latest):
 
     ./miscsrc/docker-bbbike gui --dist ubuntu --distver 16.04
+
+=head2 TESTS (like in travis-ci)
 
 Run test suite like on travis-ci:
 
@@ -486,6 +574,26 @@ The same, but use another Ubuntu version (default is trusty):
 A crontab entry may look like this:
 
     48 0 * * *      mkdir -p $HOME/log/docker-bbbike-debian-jessie && cd $HOME/cvrsnica/src/bbbike && ./miscsrc/docker-bbbike test --dist debian --distver jessie --src local --env BBBIKE_TEST_SKIP_MAPSERVER=0 > $HOME/log/docker-bbbike-debian-jessie/$(date +\%FT\%T.log) 2>&1
+
+=head2 DEB PACKAGE BUILD
+
+This is still work in progress; some options like using a previously
+created tarball are missing.
+
+Create a debian package:
+
+    ./miscsrc/docker-bbbike build-deb
+
+The resulting .deb file will be in F</tmp>.
+
+To continue a partially completed run, use
+
+    ./miscsrc/docker-bbbike build-deb --continue
+
+This would especially skip the creation of the intermediate tarball.
+
+The options C<--dist> and C<--distver> may be used to use another
+Debian/Ubuntu/... version. The default is to use the latest Debian.
 
 =head1 SEE ALSO
 
