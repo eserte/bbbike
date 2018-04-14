@@ -94,7 +94,9 @@ EOF
 	my $base_src = File::Basename::basename($opt{src});
 	$dockerfile .= <<EOF;
 COPY $base_src /tmp
-CMD dpkg --install /tmp/$base_src; apt-get install -qqy -f && dpkg --install /tmp/$base_src && bbbike $opt{'bbbike-args'}
+RUN dpkg --install /tmp/$base_src 2>/dev/null || true
+RUN apt-get install -qqy -f && dpkg --install /tmp/$base_src
+CMD bbbike $opt{'bbbike-args'}
 EOF
     } else {
 	usage "Invalid --src value '$opt{src}', only 'github', 'local' or a path to a .deb are possible";
