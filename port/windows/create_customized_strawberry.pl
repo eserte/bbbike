@@ -38,6 +38,7 @@ my $use_bundle; # by default, use task
 my $only_action;
 my $strip_vendor = 1;
 my $try_ppm = 0; # XXX currently not ready, see preinstall_with_ppm.pl
+my $use_yaml_syck = 0; # distroprefs is now compatible with YAML::XS, no need to use YAML::Syck anymore
 GetOptions(
 	   "strawberrydir=s" => \$strawberry_dir,
 	   "strawberryver=s" => \$strawberry_ver,
@@ -230,8 +231,10 @@ sub action_add_bbbike_bundle {
 	     # I don't worry about memory currently (difference is
 	     # 160MB vs. 32MB):
 	     '$CPAN::Config->{use_sqlite} = q[0]; ' . 
-	     # distroprefs is not YAML-XS ready
-	     '$CPAN::Config->{yaml_module} = q[YAML::Syck]; ' .
+	     ($use_yaml_syck ?
+	      # distroprefs is not YAML-XS ready
+	      '$CPAN::Config->{yaml_module} = q[YAML::Syck]; '
+	      : '') .
 	     'install shift',
 	    );
 	};
@@ -244,10 +247,11 @@ sub action_add_bbbike_bundle {
 	};
 
 	if ($strip_vendor) {
-	    print STDERR "Add YAML::Syck as early as possible (for distroprefs)...\n";
+	    my $yaml_module = $use_yaml_syck ? 'YAML::Syck' : 'YAML::XS';
+	    print STDERR "Add $yaml_module as early as possible (for distroprefs)...\n";
 	    my @cpan_cmd = $get_common_cpan_cmd->(initial => 1);
-	    system(@cpan_cmd, 'YAML::Syck');
-	    $assert_module_installed->('YAML::Syck');
+	    system(@cpan_cmd, $yaml_module);
+	    $assert_module_installed->($yaml_module);
 	}
 
 	{
