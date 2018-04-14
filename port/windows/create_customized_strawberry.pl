@@ -185,6 +185,9 @@ EOF
     }
 };
 
+sub action_null {
+}
+
 action_add_bbbike_bundle();
 
 sub action_add_bbbike_bundle {
