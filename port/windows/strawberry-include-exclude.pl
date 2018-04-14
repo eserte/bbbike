@@ -77,12 +77,12 @@ $ie->include;
 $ie->exclude('c');
 $ie->include(qw(c bin libdb-6.2_.dll));   # needed by DB_File
 $ie->include(qw(c bin libexpat-1_.dll));
-#$ie->include(qw(c bin libiconv-2_.dll));
+$ie->include(qw(c bin libiconv-2_.dll));  # needed by XML::LibXML, version in 5.26.x
 $ie->include(qw(c bin libjpeg-8_.dll));   # probably needed by Tk, version in 5.14.x
 $ie->include(qw(c bin libjpeg-9_.dll));   #                        version in 5.24.x
 $ie->include(qw(c bin libpng15-15_.dll)); # probably needed by Tk, version in 5.14.x
 $ie->include(qw(c bin libpng16-16_.dll)); #                        version in 5.24.x
-#$ie->include(qw(c bin libxml2-2_.dll));
+$ie->include(qw(c bin libxml2-2_.dll));   # needed by XML::LibXML, version in 5.26.x
 $ie->include(qw(c bin libz_.dll));        #                        version in 5.14.x
 $ie->include(qw(c bin zlib1_.dll));       #                        version in 5.24.x
 $ie->exclude('cpan');
