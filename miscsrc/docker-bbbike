@@ -78,19 +78,26 @@ sub gui {
     my $dockerfile = <<EOF;
 FROM $opt{dist}:$opt{distver}
 RUN apt-get update
-RUN apt-get install -qqy perl-tk
 EOF
     if ($opt{src} eq 'github') {
 	$dockerfile .= <<EOF;
-RUN apt-get install -qqy git
+RUN apt-get install -qqy perl-tk git
 CMD git clone --depth=1 git://github.com/eserte/bbbike.git && bbbike/bbbike
 EOF
     } elsif ($opt{src} eq 'local') {
 	$dockerfile .= <<EOF;
+RUN apt-get install -qqy perl-tk
 CMD /bbbike/bbbike
 EOF
+    } elsif ($opt{src} =~ m{\.deb$}) {
+	require File::Basename;
+	my $base_src = File::Basename::basename($opt{src});
+	$dockerfile .= <<EOF;
+COPY $base_src /tmp
+CMD dpkg --install /tmp/$base_src; apt-get install -qqy -f && dpkg --install /tmp/$base_src && bbbike
+EOF
     } else {
-	usage "Invalid --src value '$opt{src}', only 'github' and 'local' are known";
+	usage "Invalid --src value '$opt{src}', only 'github', 'local' or a path to a .deb are possible";
     }
 
     # Need to start docker-machine early on MacOSX, and do also some pre-checking.
@@ -136,19 +143,17 @@ EOF
 	}
     }
 
-    my $tag = 'bbbike-gui-'.$opt{dist}.'-'.$opt{distver};
-    my @build_cmd = (qw(docker build --tag), $tag, '-');
-    # Avoid using $doit->run, so no IPC::Run needed...
-    info "Run @build_cmd";
-    if ($doit->is_dry_run) {
-	info " ... (dry-run)";
-    } else {
-	open my $fh , "|-", @build_cmd
-	    or error "Error running @build_cmd: $!";
-	print $fh $dockerfile;
-	close $fh
-	    or error "Error running @build_cmd: $!";
+    my $docker_context_dir = tempdir("docker_context_XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
+    $doit->write_binary("$docker_context_dir/Dockerfile", $dockerfile);
+
+    if ($opt{src} =~ m{\.deb$}) {
+	$doit->copy($opt{src}, $docker_context_dir);
     }
+
+    my $tag = 'bbbike-gui-'.$opt{dist}.'-'.$opt{distver};
+    in_directory {
+	$doit->system(qw(docker build --tag), $tag, '.');
+    } $docker_context_dir;
 
     my $XSOCK = '/tmp/.X11-unix';
     my $XAUTH = '/tmp/.docker.xauth';
@@ -576,6 +581,10 @@ X11 display:
 The same, but specify OS + version (instead of default debian:latest):
 
     ./miscsrc/docker-bbbike gui --dist ubuntu --distver 16.04
+
+To start bbbike from an existing .deb package, use
+
+    ./miscsrc/docker-bbbike gui --src /path/to/bbbike.deb
 
 =head2 TESTS (like in travis-ci)
 
