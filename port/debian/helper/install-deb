@@ -3,16 +3,22 @@
 set -e
 
 add_apt_args=
-case "$1" in
-    --no-install-recommends)
-	add_apt_args="$add_apt_args --no-install-recommends"
-	shift
-	;;
-    -*)
-	echo "Invalid option $1"
-	exit 1
-	;;
-esac
+while [ -n "$1" ]
+do
+    case "$1" in
+	--no-install-recommends | --install-suggests)
+	    add_apt_args="$add_apt_args $1"
+	    shift
+	    ;;
+	-*)
+	    echo "Invalid option $1"
+	    exit 1
+	    ;;
+	*)
+	    break
+	    ;;
+    esac
+done
 
 # Note: deb must be specified as ./package.deb
 deb=$1

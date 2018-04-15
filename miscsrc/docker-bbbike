@@ -32,7 +32,9 @@ EOF
 
 sub usage_gui (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
-usage: $0 [--dry-run] gui [--dist debian|ubuntu|...] [--distver stretch|...] [--src local|github] [--env KEY=VAL ...] [--bbbike-args "..."]
+usage: $0 [--dry-run] gui [--dist debian|ubuntu|...] [--distver stretch|...] [--src local|github] [--env KEY=VAL ...] [--bbbike-args "..."] [--no-install-recommends] [--install-suggests]
+
+Note that --install-suggests would install quite a lot...
 EOF
 }
 
@@ -78,6 +80,9 @@ sub gui {
     my $add_apt_args = "";
     if (!$opt{'install-recommends'}) {
 	$add_apt_args .= " --no-install-recommends";
+    }
+    if ($opt{'install-suggests'}) {
+	$add_apt_args .= " --install-suggests";
     }
 
     my $dockerfile = <<EOF;
@@ -520,6 +525,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'docker-machine' => 'default',
 	       'bbbike-args' => '',
 	       'install-recommends' => 1,
+	       'install-suggests' => 0,
 	      );
     GetOptions(\%opt,
 	       "dist=s",
@@ -529,6 +535,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'docker-machine=s',
 	       'bbbike-args=s',
 	       'install-recommends!',
+	       'install-suggests!',
 	      )
 	or usage_gui;
     gui($doit, %opt);

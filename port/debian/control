@@ -11,8 +11,8 @@ Vcs-Browser: http://github.com/eserte/bbbike
 Package: bbbike
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, ${perl:Depends}, perl-tk (>= 800)
-Suggests: netpbm | imagemagick, gv | ghostview | gs | ggv, libmailtools-perl, libtk-pod-perl, libclass-accessor-perl, libimager-perl, librsvg2-bin
-Recommends: libwww-perl, libxml-libxml-perl, libjson-xs-perl
+Suggests: netpbm | imagemagick, gv | ghostview | gs | ggv, libmailtools-perl, libtk-pod-perl, libclass-accessor-perl, libimager-perl, librsvg2-bin, libalgorithm-permute-perl
+Recommends: libwww-perl, libxml-libxml-perl, libxml-twig-perl, libjson-xs-perl, libcairo-perl, libpango-perl
 Description: A route planner for cyclists in Berlin-Brandenburg
  BBBike is an information system for cyclists in Berlin and
  Brandenburg (Germany). The application has the following
