@@ -1,3 +1,102 @@
+BBBike RELEASE 3.19
+
+bbbike (ptk)
+- GPS route upload to mass device (USB) possible (Linux, Windows,
+  FreeBSD, MacOSX)
+- GPX files optionally with unicode arrows
+- the draw above/below menu entries were removed (but still available
+  via the new -obsolete option)
+- use data tendencies in routing (currently only experimental and
+  not enabled by default)
+- penalty for unpaved streets (only available in advanced mode)
+- bundle Tk::FreeDesktop::Wm, for better icon support with alpha
+  channels
+
+Data
+- Berlin street data is complete (except for a handful of missing
+  ones) --- now the main task is to keep the data up-to-date
+- completed places outside of Berlin: Ahrensfelde, Hönow, Waldesruh,
+  Mahlow-Waldstadt, Potsdam-Nord, Babelsberg-Nord and Potsdam-Eiche
+- new data file handicap_directed: this is a powerful tool to specify
+  many kinds of penalties: additional length not reflected in
+  coordinates, additional traffic lights, penalty (time or category
+  based) only valid in one direction, kerb support, different
+  "vehicle" (cargo bike etc.) support... Currently only used in the
+  ptk application.
+- new data file for regularly happening trafficjams
+- new data file for cul-de-sacs
+- support for ropeways/aerialways: yes, there's now a Seilbahn in
+  Berlin
+- new directive "valid" (for records with a time-limited validity)
+- new "osm_watch" directive
+- experimental "tempex" directive (for recurring events, but not yet
+  used in routing or rendering) 
+- new directive "#: ignore"
+- additional to the public fragezeichen list page, there's also a page
+  with half-private questions (XXX list page)
+- additional checks on data consistency (e.g. check_double -consecutive)
+
+CGI
+- QRCode for GPX tracks and leaflet map links (beta URL only)
+- GooglePolylineEncoding support for image output (param gple)
+- mapserver: support for version 6
+- new psgi-based data download handler
+- new api endpoint: config
+- teaser for iPhone and WindowsPhone apps
+- httpd.conf support for newer Apache 2.4.x
+- bbbikeleaflet: templating, geojson(p) and initial layer support
+- support "stacked" alternative route (Ausweichroute) flows
+- bbbikegooglemap: switch to v3
+- json, gpx and pdf files are now also cached (for performance)
+- wapbbbike.cgi is now deprecated
+
+BBBike@World integration
+- bbbike_chooser with new button leading to extract.bbbike.org
+- new helper garmin-upload-map.pl: upload extract.bbbike.org extracts
+  to garmin device (only in git)
+
+Modules
+- new module Strassen::GeoJSON (and new helper script bbd2geojson, but
+  this is only in git)
+- routing is using Array::Heap by default (for better performance)
+- bundled Doit.pm for some build and system tasks
+
+Plugins
+- new plugin BBBikeHistory (remember places on the map automatically)
+- MultiMap maintenance (add/reactivate/remove a number of maps, e.g.
+  new links to Mapillary, OpenStreetCam, FIS broker, dafmap, map compare
+  gallery with distinct map data, OSM CycleMap ...)
+- GeocoderPlugin may use a local osm directory (created by osm2bbd,
+  with a sorted _addr file)
+- new plugin: WaypointUploader
+
+Install
+- Windows package is using a newer Strawberry Perl version (5.26.x)
+
+Documentation
+- documented bbd directive changes
+
+Misc
+- bbbike may be run in a docker container (with miscsrc/docker-bbbike
+  gui, only in git)
+- many updates to bbd2osm and osm2bbd converters (only in git)
+- alternative deployment script for blue-red git deployments
+- better scripts for creating OS packages & installers (Debian,
+  Windows)
+- new garmin custom symbols
+- BBBikeOsmUtil: Overpass API implementation
+- support for generating maps for CPAN modules Map::Tube and
+  Map::Metro (only in git)
+- removed code related to cgpsmapper
+
+Tests
+- regular CI tests with travis-ci and appveyor
+- docker-based tests
+- more automated GUI testing
+- and general improvements of tests
+
+----------------------------------------------------------------------
+
 BBBike RELEASE 3.18 (2013-03-16)
 
 bbbike (ptk)
