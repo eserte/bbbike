@@ -75,6 +75,11 @@ sub gui {
     my($doit, %opt) = @_;
     lock_keys %opt;
 
+    my $add_apt_args = "";
+    if (!$opt{'install-recommends'}) {
+	$add_apt_args .= " --no-install-recommends";
+    }
+
     my $dockerfile = <<EOF;
 FROM $opt{dist}:$opt{distver}
 RUN apt-get update
@@ -94,8 +99,9 @@ EOF
 	my $base_src = File::Basename::basename($opt{src});
 	$dockerfile .= <<EOF;
 COPY $base_src /tmp
-RUN dpkg --install /tmp/$base_src 2>/dev/null || true
-RUN apt-get install -qqy -f && dpkg --install /tmp/$base_src
+COPY install-deb /tmp
+WORKDIR /tmp
+RUN sh install-deb $add_apt_args ./$base_src
 CMD bbbike $opt{'bbbike-args'}
 EOF
     } else {
@@ -150,6 +156,7 @@ EOF
 
     if ($opt{src} =~ m{\.deb$}) {
 	$doit->copy($opt{src}, $docker_context_dir);
+	$doit->copy("$FindBin::RealBin/../port/debian/helper/install-deb", $docker_context_dir);
     }
 
     my $tag = 'bbbike-gui-'.$opt{dist}.'-'.$opt{distver};
@@ -429,10 +436,12 @@ sub build_deb {
     my($doit, %opt) = @_;
     lock_keys %opt;
 
+    require File::Basename;
+
     my($distfile, $distvname);
     if ($opt{distfile}) {
 	$distfile = $opt{distfile};
-	($distvname = $distfile) =~ s{.tar.gz$}{};
+	($distvname = File::Basename::basename($distfile)) =~ s{.tar.gz$}{};
     } else {
 	require BBBikeBuildUtil;
 	my $bsdmake = BBBikeBuildUtil::get_pmake(fallback => 0);
@@ -449,6 +458,7 @@ sub build_deb {
     if (!-s $distfile) {
 	error "Expected distfile $distfile is missing";
     }
+    my $distbasefile = File::Basename::basename($distfile);
 
     # Look into tarball for Debian version
     my $dist_tempdir = tempdir("bbbike_deb_XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
@@ -465,7 +475,7 @@ sub build_deb {
     my $docker_context_dir = tempdir("docker_context_XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
     $doit->copy($distfile, $docker_context_dir);
     my $origfile = "bbbike_${stable_version}.orig.tar.gz";
-    $doit->copy("$docker_context_dir/$distfile", "$docker_context_dir/$origfile"); # XXX why?
+    $doit->copy("$docker_context_dir/$distbasefile", "$docker_context_dir/$origfile"); # XXX why?
     $doit->system('rsync', '-a', 'port/debian/', "$docker_context_dir/debian/");
     my $debfile = "bbbike_${debian_version}_all.deb";
 
@@ -474,13 +484,13 @@ FROM $opt{dist}:$opt{distver}
 RUN apt-get update
 RUN apt-get install -qqy dpkg-dev lintian rsync debhelper
 RUN mkdir /bbbike
-COPY $distfile /bbbike
+COPY $distbasefile /bbbike
 COPY $origfile /bbbike
 COPY /debian/ /bbbike/debian/
 WORKDIR /bbbike
-RUN tar xf $distfile && cd $distvname && rsync -a ../debian/ debian/ && dpkg-buildpackage -us -uc -rfakeroot -D
+RUN tar xf $distbasefile && cd $distvname && rsync -a ../debian/ debian/ && dpkg-buildpackage -us -uc -rfakeroot -D
 RUN lintian $debfile
-CMD dpkg --install $debfile; apt-get install -qqy -f && dpkg --install $debfile && cp -f $debfile /hosttmp
+CMD /bbbike/debian/helper/install-deb ./$debfile && cp -f $debfile /hosttmp
 EOF
     $doit->write_binary("$docker_context_dir/Dockerfile", $dockerfile);
     in_directory {
@@ -509,6 +519,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       debug   => 0,
 	       'docker-machine' => 'default',
 	       'bbbike-args' => '',
+	       'install-recommends' => 1,
 	      );
     GetOptions(\%opt,
 	       "dist=s",
@@ -517,6 +528,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'debug!',
 	       'docker-machine=s',
 	       'bbbike-args=s',
+	       'install-recommends!',
 	      )
 	or usage_gui;
     gui($doit, %opt);

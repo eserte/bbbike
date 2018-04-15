@@ -1,0 +1,37 @@
+#!/bin/sh
+
+set -e
+
+add_apt_args=
+case "$1" in
+    --no-install-recommends)
+	add_apt_args="$add_apt_args --no-install-recommends"
+	shift
+	;;
+    -*)
+	echo "Invalid option $1"
+	exit 1
+	;;
+esac
+
+# Note: deb must be specified as ./package.deb
+deb=$1
+if which apt >/dev/null 2>&1
+then
+    ver=`apt -v 2>/dev/null | head -1 | cut -d" " -f2`
+    echo "apt version is $ver"
+    case "$ver" in
+	0.* | 1.0.*) ;;
+	*)
+	    set -x
+	    apt install $add_apt_args -qqy $deb
+	    exit 0
+	    ;;
+    esac
+fi
+
+set -x
+dpkg --install $deb 2>/dev/null || true
+apt-get install -f -qqy
+dpkg --install $deb
+
