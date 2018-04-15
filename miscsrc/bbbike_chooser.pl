@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2012,2013,2014,2015,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012,2013,2014,2015,2017,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -124,6 +124,7 @@ my $xb = $mw->Button(-text => M"Exit",
 $mw->bind('<Escape>' => sub { $xb->invoke });
 
 my %opt;
+$opt{'-lazy'} = 1;
 $mw->Menubutton(Name => 'advOpts',
 		-text => M"Options",
 		-menuitems => [[Checkbutton => M"Lazy drawing (experimental, faster startup)",
