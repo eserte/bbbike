@@ -510,7 +510,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       src     => 'local',
 	       debug   => 0,
 	       'docker-machine' => 'default',
-	       'bbbike-args' => undef,
+	       'bbbike-args' => '',
 	      );
     GetOptions(\%opt,
 	       "dist=s",
