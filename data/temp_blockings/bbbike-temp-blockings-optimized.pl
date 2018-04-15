@@ -4622,16 +4622,6 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Wilhelmstr. und Behrenstr.: Sperrung Richtung Norden zwischen Französische Str. und Behrenstr. sowie Richtung Osten zwischen Wilhelmstr. und Mauerstr., bis 4. Mai 2018',
          'type' => 'handicap',
          'until' => 1525449600
-       },
-       {
-         'data' => '	2::inwork -19150,-11976 -19043,-11944 -18640,-11826
-',
-         'from' => 1523631600,
-         'id' => 2948,
-         'source_id' => '186900417',
-         'text' => 'Ferch-Lienewitz: Bahnübergangsarbeiten, Sperrung, evtl. auch für Radfahrer relevant, 14.04.2018 17:00 Uhr bis 15.04.2018 06:00 Uhr ',
-         'type' => 'gesperrt',
-         'until' => 1523764800
        }
      
 );
