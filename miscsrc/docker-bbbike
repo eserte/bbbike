@@ -472,14 +472,12 @@ sub build_deb {
     my $dockerfile = <<EOF;
 FROM $opt{dist}:$opt{distver}
 RUN apt-get update
-RUN apt-get install -qqy dpkg-dev lintian rsync
+RUN apt-get install -qqy dpkg-dev lintian rsync debhelper
 RUN mkdir /bbbike
 COPY $distfile /bbbike
 COPY $origfile /bbbike
-COPY /debian /bbbike/debian
+COPY /debian/ /bbbike/debian/
 WORKDIR /bbbike
-# XXX move up!
-RUN apt-get install -qqy debhelper
 RUN tar xf $distfile && cd $distvname && rsync -a ../debian/ debian/ && dpkg-buildpackage -us -uc -rfakeroot -D
 RUN lintian $debfile
 CMD dpkg --install $debfile; apt-get install -qqy -f && dpkg --install $debfile && cp -f $debfile /hosttmp
