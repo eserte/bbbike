@@ -111,8 +111,8 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6293
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-10-12-prot-fahrratsitzung4_final_komplett.pdf
 #: osm_watch: way id="102486250" version="8"
-#: last_checked: 2017-05-06
-#: next_check: 2018-03-15
+#: last_checked: 2018-04-16
+#: check_frequency: 90d
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7223,5890
 Priesterweg: Asphalt	Q0 7223,5890 7171,5831
 Hans-Baluschek-Park, Zugang: Verbundsteinpflaster	Q0- 7370,6451 7222,6458
@@ -10600,7 +10600,7 @@ Am Westkreuz: Kleinsteinpflaster	Q1 2157,10497 2170,10497 2203,10455
 (zum Mauerpark, temporäre Umgehung): Asphalt	Q0- 10302,14964 10279,15033 10301,15084 10319,15090
 Gotlindestr. [Wohngebietsstraße]: Verbundsteinpflaster	Q1+ 16470,12612 16471,12657 16473,12707
 #: XXX hier wird vermutlich später auch mal Verbundsteinpflaster sein
-#: last_checked: 2018-02-10
+#: last_checked: 2018-04-15
 Gotlindestr. [Wohngebietsstraße]: unbefestigte Baustraße	Q2 16473,12707 16515,12711 16517,12665 16471,12657
 (Uferstr. - Brückenstr.): Asphalt	Q0 17847,6089 17900,6072
 (Mehringbrücke - Mehringplatz): Parkweg	Q1- 9404,10250 9535,10299
@@ -10634,6 +10634,7 @@ Alte Köpenicker Allee: unbefestigte Straße, holprig	Q2 20316,7637 20348,7634 204
 #: last_checked: 2018-04-10
 #: check_frequency: 60d
 Klara-Franke-Str.: provisorischer Asphalt und Pflasterung	Q1 7366,14067 7443,14107 7542,13956 7662,13784 7564,13735
+Schottstr. Beton mit Schäden	Q1 16409,12612 16397,12397
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -26820,8 +26821,11 @@ Stuckstr.: Asphalt	Q0 14439,8987 14525,8894 14615,8799
 #: by: Detlef Neubauer [AM] vvv
 #: confirmed_by: srt
 Gotlindestr.: Asphalt	Q0 16859,12613 16957,12599 17088,12617 17234,12607 17301,12585 17357,12566
-#: confirmed_by: srt
-Gotlindestr.: Beton mit Ausbesserungen	Q1 15947,12626 16000,12625 16071,12623 16112,12622 16132,12621 16284,12616 16409,12612 16470,12612 16576,12612 16720,12614 16859,12613
+#: corrected_by: srt (changed wording: Ausbesserungen -> Schäden, one part with Q1-) vvv
+Gotlindestr.: Beton mit Schäden	Q1 15947,12626 16000,12625 16071,12623 16112,12622 16132,12621 16284,12616
+Gotlindestr.: Beton mit Schäden	Q1- 16284,12616 16409,12612
+Gotlindestr.: Beton mit Schäden	Q1 16409,12612 16470,12612 16576,12612 16720,12614 16859,12613
+#: corrected_by ^^^
 #: confirmed_by: srt
 Dietlindestr.: Asphalt	Q0 17056,12304 17087,12501
 #: corrected_by: srt (Q0 -> )

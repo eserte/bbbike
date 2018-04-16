@@ -17980,12 +17980,12 @@ EOF
 	q4::inwork 18586,9172 18511,9185 18430,9199 18319,9218
 EOF
      },
-     { from  => $isodate2epoch->("2017-05-18 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-05-22 04:00:00"), # bis in die Nacht hinein
+     { from  => $isodate2epoch->("2018-05-31 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-06-03 04:00:00"), # bis in die Nacht hinein
        periodic => 1,
        recurrences => [['yearly', days => 15, months => 5]], # kann auch erst im September stattfinden
        source_id => 'http://www.erkner.de/271.html?date=20170415',
-       text  => 'Erkner: Heimatfest, 19.5.2017 bis 21.5.2017',
+       text  => 'Erkner: Heimatfest, 1.6.2018 bis 3.6.2018',
        type  => 'gesperrt',
        data  => <<EOF,
 	2::temp 34421,1950 34359,2165 34250,2546
@@ -25655,7 +25655,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-04-04 vvv
+#: last_checked: 2018-04-15 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375

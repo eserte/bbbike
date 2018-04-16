@@ -2638,7 +2638,26 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	2::temp 34421,1950 34359,2165 34250,2546
+',
+         'from' => 1527717600,
+         'id' => 2078,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              15,
+                              'months',
+                              5
+                            ]
+                          ],
+         'source_id' => 'http://www.erkner.de/271.html?date=20170415',
+         'text' => 'Erkner: Heimatfest, 1.6.2018 bis 3.6.2018',
+         'type' => 'gesperrt',
+         'until' => 1527991200
+       },
        undef,
        undef,
        undef,
@@ -4126,7 +4145,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-04-04 vvv
+#: last_checked: 2018-04-15 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
