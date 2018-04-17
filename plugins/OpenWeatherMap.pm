@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2015,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2015,2016,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -19,7 +19,7 @@ use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
 
 use strict;
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 use LWP::UserAgent ();
 use JSON::XS qw(decode_json);
@@ -71,9 +71,7 @@ sub refresh_owm_layer {
 	    chomp($appid = <$appid_fh>);
 	}
 	my($minx,$miny,$maxx,$maxy) = main::get_visible_map_bbox_polar();
-	my $cx = ($maxx-$minx)/2 + $minx;
-	my $cy = ($maxy-$miny)/2 + $miny;
-	my $url = "http://api.openweathermap.org/data/2.5/station/find?lat=$cy&lon=$cx&cnt=10";
+	my $url = "http://api.openweathermap.org/data/2.5/box/city?bbox=$minx,$miny,$maxx,$maxy";
 	if (defined $appid) {
 	    warn "INFO: using API key (appid): $appid\n";
 	    $url .= "&APPID=$appid";
@@ -85,31 +83,36 @@ sub refresh_owm_layer {
 	if (!$resp->is_success) {
 	    die "Fetching $url failed with " . $resp->as_string;
 	}
-	my $d = decode_json($resp->decoded_content(charset => "none"));
-	if (!@$d) {
-	    die "Empty list was returned, probably no weather stations here";
+	my $data = decode_json($resp->decoded_content(charset => "none"));
+	if (ref $data eq ref []) {
+	    # inconsistent result types :-( no result -> array, otherwise it's a hash
+	    die "Empty list was returned, probably no weather stations in the currently displayed region\n";
+	}
+	my $list = $data->{list} || [];
+	if (!@$list) {
+	    die "Empty list was returned, probably no weather stations in the currently displayed region\n";
 	}
 	delete_owm_layer();
 	main::add_to_stack('owm-data', 'topmost');
-	for my $entry (@$d) {
-	    my $station = $entry->{station};
-	    my $id = $station->{id};
+	for my $entry (@$list) {
+	    my $name = $entry->{name};
+	    my $id = $entry->{id};
 	    if ($id) {
 		$CURRENT_STATIONS{$id} = $entry;
 	    }
-	    my $last_data = $entry->{last};
 	    my $text = '';
-	    my $ago_secs = time - $last_data->{dt};
+	    my $dt = $entry->{dt};
+	    my $ago_secs = time - $dt;
 	    my $ago = ($ago_secs > 365*86400 ? '(more than one year ago)' :
 		       $ago_secs > 31*86400  ? '(more than one month ago)' :
 		       $ago_secs > 2*86400   ? '(' . int($ago_secs/86400) . ' days ago)' :
 		       $ago_secs > 2*3600    ? '(' . int($ago_secs/3600) . ' hours ago)' :
 		       $ago_secs > 2*60      ? '(' . int($ago_secs/60) . ' minutes ago)' : 'recent');
-	    $text .= 'Date/time: ' . strftime("%Y-%m-%d %H:%M:%S", localtime($last_data->{dt})) . " $ago\n";
-	    $text .= 'Name: ' . $station->{name} . "\n";
-	    $text .= 'Temperature: ' . sprintf("%.1f", $last_data->{main}->{temp} - 273.15) . "°C\n";
-	    $text .= 'Wind: ' . $last_data->{wind}->{speed} . 'm/s, ' . $last_data->{wind}->{deg} . "°\n";
-	    my($x,$y) = main::transpose($Karte::Polar::obj->map2standard($station->{coord}->{lon}, $station->{coord}->{lat})); # XXX other coord systems?
+	    $text .= 'Date/time: ' . strftime("%Y-%m-%d %H:%M:%S", localtime($dt)) . " $ago\n";
+	    $text .= 'Name: ' . $name . "\n";
+	    $text .= 'Temperature: ' . sprintf("%.1f", $entry->{main}->{temp}) . "°C\n";
+	    $text .= 'Wind: ' . $entry->{wind}->{speed} . 'm/s, ' . $entry->{wind}->{deg} . "°\n";
+	    my($x,$y) = main::transpose($Karte::Polar::obj->map2standard($entry->{coord}->{Lon}, $entry->{coord}->{Lat})); # XXX other coord systems?
 	    #$main::c->createText($x,$y, -text => $text, -tags => ['owm-data', ($id ? "owm-data-$id" : ())]);
 	    main::outline_text($main::c, $x, $y, -text => $text, -tags => ['owm-data', ($id ? "owm-data-$id" : ())]);
 	}
@@ -145,11 +148,15 @@ __END__
 
 * Msg-ize
 
-* major reasons for being experimental.
+* major reasons for being experimental:
 
   * I seldom use it
 
-  * currently the available weather data is far from usable because too old
-    (checked around Berlin, 2015-05-07)
+  * there are very few weather stations around
+
+  * an API key is mandatory -> inconvenient for users
+
+  * the API looks instable: the same version 2.5 had completely other
+    method names and result data
 
 =cut
