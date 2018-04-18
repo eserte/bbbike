@@ -3345,7 +3345,27 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'type' => 'gesperrt',
          'until' => 1525039199
        },
-       undef,
+       {
+         'data' => '# REMOVED (was) : tempex: 20160714-20160717
+	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
+',
+         'from' => 1531864800,
+         'id' => 2420,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              13,
+                              'months',
+                              7
+                            ]
+                          ],
+         'source_id' => 'https://www.gratis-in-berlin.de/festivals/item/2035333-hafenfest-tegel-2018-mit-programm-und-feuerwerk',
+         'text' => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (19.07.2018 bis 22.07.2018)',
+         'type' => 'gesperrt',
+         'until' => 1532296799
+       },
        undef,
        undef,
        undef,
@@ -4559,20 +4579,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1530309599
        },
-       {
-         'data' => '#: by: http://www.berliner-woche.de/adlershof/verkehr/wasserbetriebe-und-bvg-bauen-in-der-doerpfeldstrasse-d144226.html
-#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.687481.php
-#: source_id: 2147342367
-#: source_id: LMS-BR_r_LMS-BR_127098_LMS-BR_72
-	q4::inwork 20082,3578 20136,3609 20149,3617 20159,3623 20219,3661 20304,3714 20322,3725 20352,3744 20362,3750 20428,3786
-',
-         'from' => 1521928800,
-         'id' => 2940,
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.687481.php',
-         'text' => 'Dörpfeldstr.: Bauarbeiten zwischen Gellert- und Hackenbergstr., Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 26. März 2018 bis 17. April 2018',
-         'type' => 'handicap',
-         'until' => 1523970000
-       },
+       undef,
        {
          'data' => '#: last_checked: 2018-03-25
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? Wird sich die Qualität der Fahrbahn nach den Bauarbeiten verbessern?
@@ -4609,17 +4616,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1525093200
        },
-       {
-         'data' => '#: source_id: 2147342379
-#: source_id: LMS-BR_r_LMS-BR_127414_LMS-BR_72
-	2::inwork 8971,864 9024,906 9129,986
-',
-         'from' => 1522326966,
-         'id' => 2945,
-         'text' => 'Säntisstr.: Bahnübergang bis 2021 gesperrt, ggfs. gibt es für Fußgänger eine Überquerungsmöglichkeit (tragen!)',
-         'type' => 'gesperrt',
-         'until' => 1622541600
-       },
+       undef,
        {
          'data' => '#: next_check_id: ORANIENBURGER-2018
 	q4::inwork; 5136,21738 5210,21636 5311,21495 5320,21432 5333,21332 5341,21266 5343,21250 5349,21198
@@ -4641,6 +4638,52 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Wilhelmstr. und Behrenstr.: Sperrung Richtung Norden zwischen Französische Str. und Behrenstr. sowie Richtung Osten zwischen Wilhelmstr. und Mauerstr., bis 4. Mai 2018',
          'type' => 'handicap',
          'until' => 1525449600
+       },
+       undef,
+       {
+         'data' => '	2::temp 8478,13941 8571,13999
+	2::temp 7368,14573 7401,14526 7487,14472 7532,14446 7566,14404 7652,14257 7697,14187 7732,14131 7767,14077 7820,13994 7865,13924 7906,13855 7973,13743 7979,13733 8019,13650 8048,13578 8059,13551 8092,13467 8098,13419
+	2::temp 7180,14419 7331,14132 7366,14067 7452,13904 7630,13584 7655,13539 7660,13506 7653,13480 7647,13461 7651,13447 7759,13246
+	2::temp 7123,14367 7180,14419 7368,14573 7438,14627
+	2::temp 6917,13917 7331,14132
+	2::temp 7263,13331 7287,13342 7332,13367 7426,13420 7655,13539
+	2::temp 7426,13420 7500,13283 7573,13149
+	2::temp 7021,13560 7109,13418 7136,13387 7193,13354 7241,13361 7306,13418 7402,13475 7422,13487 7451,13504 7630,13584 7735,13626
+	2::temp 7422,13487 7338,13649 7343,13679 7431,13740 7445,13792 7417,13880 7452,13904
+	2::temp 7287,13342 7356,13213 7500,13283
+	2::temp 7563,13143 7573,13149 7714,13223 7759,13246 7816,13276 7842,13292 7880,13315 8003,13374 8098,13419 8293,13527 8332,13548 8358,13562 8453,13611 8572,13671
+	2::temp 8019,13650 7930,13578 7890,13515 7879,13438 7880,13315
+	2::temp 8098,13419 8102,13304
+	2::temp 7880,13315 7938,13302 8015,13303 8102,13304
+	2::temp 7937,13109 7937,13126 7938,13150 7938,13302 7968,13335 8003,13374
+	2::temp 7759,13246 7785,13226 7795,13168 7795,13093
+	2::temp 7795,13093 7867,13127 7938,13150
+	2::temp 7937,13126 8011,13128 8106,13130
+	2::temp 7861,13203 7795,13168
+	2::temp 8189,13468 8183,13482 8141,13580 8120,13627
+	2::temp 8332,13548 8248,13659 8101,13901 8119,13912 8096,13951 8011,14096 7994,14102 7967,14161 7973,14195 7804,14445 7787,14473 7753,14528 7695,14545 7653,14570 7605,14600 7527,14644 7480,14660
+	2::temp 7566,14404 7609,14447 7711,14548 7733,14570 7960,14794
+	2::temp 7566,14404 7617,14420 7634,14406 7661,14398 7740,14409 7780,14431 7804,14445 7877,14504 7927,14438 7938,14423
+	2::temp 7938,14423 8054,14257 8077,14227 8152,14130 8184,14052 8200,14016 8313,13839 8453,13611
+	2::temp 7938,14423 8250,14672
+	2::temp 8234,14686 8097,14573 8050,14556 7996,14487 7940,14447 7889,14519 7872,14510 7787,14473
+	2::temp 7753,14528 7733,14570 7696,14577 7635,14628 7560,14670 7533,14702
+	2::temp 7514,14686 7549,14664 7589,14627 7605,14600
+	2::temp 8077,14227 8251,14337 8442,14456
+	2::temp 8572,13671 8426,13909
+	2::temp 8478,13941 8447,13983 8380,14024 8344,14133 8307,14175 8323,14142 8282,14116 8207,14067 8184,14052
+	2::temp 8282,14116 8238,14181 8152,14130
+	2::temp 8054,14257 7973,14195
+	2::temp 8332,13548 8354,13523 8362,13466 8365,13431 8356,13404 8314,13323
+	2::temp 8503,13553 8377,13463 8371,13399 8434,13310
+	2::temp 7021,13560 7056,13584 7132,13503 7122,13452 7109,13418
+',
+         'from' => 1524002400,
+         'id' => 2949,
+         'source_id' => 'https://www.morgenpost.de/bezirke/mitte/article214045521/Sperrungen-wegen-Fliegerbombe-in-Mitte-Verkehrschaos-droht.html',
+         'text' => 'Rund um den Hauptbahnhof: Sperrungen wegen Bombenentschärfung, ab 20.04.2018 ab 9 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1524247200
        }
      
 );

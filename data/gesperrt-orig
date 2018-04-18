@@ -1896,6 +1896,8 @@ abgeschlossenes Tor	3 * 10000,1131 *
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (ca. 36 Stufen)	0:35 9005,912
+tragen (ca. 36 Stufen)	0:35 9047,948
 tragen (28 Stufen)	0:30 6138,12877
 Tor, kann geschlossen sein	BNP:10::trailer=15 20682,9834
 Tor, kann geschlossen sein	BNP:10::trailer=15 20683,9558
@@ -2843,6 +2845,17 @@ Drängelgitter	BNP:3::trailer=10 22097,5879
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: SAENTISSTR-2018
+#: by: http://www.berliner-woche.de/lichtenrade/bauen/infopunkt-zur-dresdner-bahn-auf-dem-s-bahnhof-lichtenrade-eingerichtet-d134019.html
+#: by: http://www.berliner-woche.de/marienfelde/bauen/provisorische-fussgaengerbruecke-an-der-saentisstrasse-fuer-behinderte-nicht-passierbar-d144292.html
+#: by: http://www.berliner-woche.de/marienfelde/bauen/arbeiter-werkeln-an-der-neuen-fussgaengerbruecke-die-am-28-maerz-fertig-sein-soll-m88660,144292.html
+#: by: http://www.berliner-woche.de/marienfelde/bauen/cdu-draengt-auf-barrierefreie-fussgaengerbruecke-an-der-saentisstrasse-d144719.html
+#: by: http://www.berliner-woche.de/marienfelde/verkehr/scharfe-kritik-am-bahnuebergang-d156361.html
+#: source_id: 2147342379
+#: source_id: LMS-BR_r_LMS-BR_127414_LMS-BR_72
+#: next_check: 2021-01-01
+Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,898 9024,906 9058,932
+# 
 #: next_check_id: KLARAFRANKESTR-2018
 #: XXX außerdem: genaue Lage der Straße
 #: last_checked: 2018-04-10
@@ -3076,11 +3089,11 @@ Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtun
 # 
 #: osm_watch: way id="466318949" version="4"
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
-#: last_checked: 2018-04-03
+#: last_checked: 2018-04-17
 Bouchéstr.: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13298,9252 13188,9134
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
-#: last_checked: 2018-04-03
+#: last_checked: 2018-04-17
 Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13176,9302 13098,9205
 # 
 # REMOVED (mittlerweile ist eine Ausweichmöglichkeit markiert) --- #: last_checked: 2017-03-01 --- Karl-Marx-Platz: Bauarbeiten, Einbahnstraße gilt nun auch für Radfahrer	1s:q3 12969,7610 13100,7626
@@ -3276,6 +3289,7 @@ BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170829 (ebenso: bis April 2018)
 #: by: http://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20180201 (Bauarbeiten sind am 27.08.2018 beendet)
 #: by: http://www.berliner-woche.de/johannisthal/verkehr/lichtschimmer-am-horizont-beim-umbau-bahnhof-berlin-schoeneweide-d143446.html (beide Richtungen ab Juni 2018)
+#: by: http://www.berliner-woche.de/johannisthal/bauen/letzter-brueckenschlag-ueber-dem-sterndamm-beim-bauvorhaben-bahnhof-schoeneweide-d157707.html
 #: source_id: 2147341515	
 #: source_id: LMS-BR_r_LMS-BR_103259_LMS-BR_72
 #: last_checked: 2018-03-10

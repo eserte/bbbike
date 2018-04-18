@@ -158,7 +158,7 @@ Gehweg für Radfahrer frei	RW1; 7492,11111 7419,11137
 	RW1;RW1 9388,10393 9353,10421 9249,10562 9210,10614 9131,10716 9022,10857
 Busspur gilt Mo-Fr 7-18 Uhr	RW1; 9022,10857 8947,10956
 	RW1; 8947,10956 9022,10857
-	RW1;RW1 8947,10956 8901,11011 8747,11194 8720,11226 8631,11334 8602,11369 8573,11404 8542,11502
+Verbundsteinpflaster	RW1;RW1 8947,10956 8901,11011 8747,11194 8720,11226 8631,11334 8602,11369 8573,11404 8542,11502
 	RW1;RW1 8947,10956 8889,10906 8784,10824 8772,10814 8698,10756
 	RW1;RW2 8698,10756 8682,10744 8581,10663
 	RW3;RW3 9827,10051 9837,10117 9858,10199 9865,10227
@@ -300,9 +300,11 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 	RW2;RW2 4512,5199 4432,5160 4343,5112
 #: XXX Radwege sollen saniert werden oder es entstehen sogar Radstreifen (Umsetzung 2018) vvv
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
-#: last_checked: 2018-04-13 vvv
+#: last_checked: 2018-04-17 vvv
 #: next_check: 2018-12-31 vvv
-mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160 10501,11056 10637,10996 10684,10975
+mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160 10501,11056
+mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10501,11056 10637,10996 10684,10975
+mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
 # REMOVED --- #: XXX wegen Bauarbeiten (Erweiterung AUFBAU) ist der Radweg hier aufgehoben (danach den alten Eintrag wieder herstellen + join machen) --- #: last_checked: 2014-11-21 --- #: check_frequency: 60d
 eine Busspur existiert hier auch (gilt Mo-Fr 7-18 Uhr), ist aber nicht für Radfahrer freigegeben	RW1; 10779,10934 10794,10927 10839,10907
@@ -311,8 +313,8 @@ eine Busspur existiert hier auch (gilt Mo-Fr 7-18 Uhr), ist aber nicht für Radfa
 #: last_checked ^^^
 #: by ^^^
 #: XXX ^^^
-altes Verbundsteinpflaster, einige Wurzelhebungen	RW1;RW2 10605,10312 10633,10369
-altes Verbundsteinpflaster, einige Wurzelhebungen	RW1;RW1 10633,10369 10685,10483 10689,10491 10776,10682 10856,10856
+altes Verbundsteinpflaster, Wurzelhebungen	RW1;RW2 10605,10312 10633,10369
+altes Verbundsteinpflaster, Wurzelhebungen	RW1;RW1 10633,10369 10685,10483 10689,10491 10776,10682 10856,10856
 	RW3;RW3 10500,10081 10521,10126 10580,10256
 	RW2;RW1 10580,10256 10605,10312
 altes Verbundsteinpflaster	RW1; 10500,10081 10467,10051 10424,9958 10357,9807 10361,9755
@@ -882,11 +884,11 @@ Verbundsteinpflasterradweg	RW1; 7757,834 7867,831
 #: by: http://www.dafmap.de/d/berlin.html?id=3875&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-11-30)
 #: by: http://www.berliner-woche.de/moabit/verkehr/jeweils-nur-ein-fahrstreifen-d140483.html (bis April 2019?)
 #: source_id: 2147342177
-#: last_checked: 2018-04-10
+#: last_checked: 2018-04-17
 #: check_frequency: 60d
 provisorische Radspur	RW3; 6228,13324 6229,13517 6230,13596
 #: XXX wegen Bauarbeiten aufgehoben
-#: last_checked: 2018-04-10
+#: last_checked: 2018-04-17
 #: check_frequency: 60d
 #	RW3; 6377,13321 6228,13324
 	RW0; 6377,13321 6228,13324

@@ -3141,7 +3141,14 @@ Tropfsteinweg	N 10672,2062 10763,2035 10859,2033 10932,2033 11106,1983 11182,197
 Grünsteinweg	N 10859,2033 10868,2120 10886,2167 10907,2207 10938,2296
 Bimssteinweg	N 10907,2207 10985,2173
 Mondsteinpfad	NN 11181,1884 11182,1976
-Säntisstr.	H 10067,1939 9978,1854 9821,1692 9771,1641 9695,1563 9391,1235 9241,1073 9165,1014 9129,986 9024,906 8971,864 8892,802
+(provisorische Fußgängerbrücke Säntisstr.)	NN 9014,898 9005,912 9002,919 9047,948 9058,932
+Säntisstr.	H 10067,1939 9978,1854 9821,1692 9771,1641 9695,1563
+#: next_check_id: SAENTISSTR-2018
+#: XXX nach den Bauarbeiten wieder zu H machen
+#: XXX prüfen, ob N tatsächlich stimmt (und außerdem die Fußgängerbrücke ausprobieren)
+#: XXX dann: next_check: 2021-01-01
+Säntisstr.	N 9695,1563 9391,1235 9241,1073 9165,1014 9129,986 9058,932 9024,906 9014,898 8971,864
+Säntisstr.	H 8971,864 8892,802
 Säntisstr.	N 8892,802 8743,681 8660,614 8533,512
 Straße 435	N 8790,854 8853,820
 Straße 435	NN 8853,820 8892,802
@@ -14201,11 +14208,12 @@ Wegerichstr.	NN 16538,2543 16475,2586
 Ranunkelweg	N 16905,2603 16788,2461 16666,2437
 Kerbelweg	N 16770,2550 16741,2544 16603,2641
 Kerbelweg	NN 16603,2641 16547,2680
-Georgenkirchstr.	N 11842,13576 11784,13513 11703,13426 11652,13372 11589,13305
+Georgenkirchstr.	N 11842,13576 11784,13513 11703,13426 11652,13372
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/12re.pdf/file
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20110623.1035.348938.html
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20110630.1810.349904.html
 #: by: http://www.berlin.de/imperia/md/images/bafriedrichshain-kreuzberg/aktuelles/pressemitteilungen/dsc_0625_200x132.nef.jpg
+Pauline-Staegemann-Str.	N 11652,13372 11589,13305
 Pauline-Staegemann-Str.	NN 11589,13305 11526,13252
 Anne-Frank-Str.	N 19507,556 19595,526 19677,498 19852,437
 Kunibertstr.	N 19595,526 19648,656 19660,696 19694,811
@@ -16479,6 +16487,7 @@ Bebelplatz	NN 9795,12293 9876,12298
 (Mollstr. - Barnimstr.)	NN 11723,13139 11758,13210
 (Friedenstr. - Parkplatz/Höchste Str.)	NN 12131,13333 12152,13294 12141,13256 12107,13264 12066,13237
 (Volkspark Friedrichshain)	NN 12141,13341 12131,13333
+#: XXX möglicherweise wegen Bauarbeiten gesperrt, vielleicht sogar dauerhaft
 (Erschließungstr./Parkplatz)	N 11608,13417 11546,13327 11589,13305
 (Erschließungsstr.)	N 11608,13417 11652,13478 11667,13465
 (Verbindungsweg)	NN 11667,13465 11703,13426

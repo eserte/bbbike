@@ -22,7 +22,7 @@
 Mehringdamm: Radspuren oder Sanierung	?::projected; 9224,9053 9225,9111 9248,9350 9280,9476 9334,9670 9387,9804 9444,9919 9448,10014
 # 
 #: XXX außerdem: Nordseite wird saniert
-#: last_checked: 2018-04-12
+#: last_checked: 2018-04-17
 #: next_check: 2018-12-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -63,7 +63,7 @@ Danziger Str.	?::projected 12616,14315 12722,14232 12901,14093 12975,13990 13037
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2018-04-13
+#: last_checked: 2018-04-17
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -272,7 +272,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7421
 #: osm_watch: way id="25219757" version="12"
 #: osm_watch: way id="4600236" version="17"
-#: last_checked: 2018-04-10
+#: last_checked: 2018-04-17
 #: check_frequency: 90d
 Stromstr., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,13517 6228,13324
 # 
@@ -402,6 +402,7 @@ Berliner Allee/Tassostr.: Bau einer Ampel	?::projected 13591,15969 13623,15954 1
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.515796.php
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.515796.php?date=20170522
 #: by: http://www.berliner-woche.de/steglitz/bauen/bezirk-investiert-in-sanierung-von-strassen-und-radwegen-d140640.html
+#: by: http://www.berliner-woche.de/steglitz/bauen/strassen-werden-2018-wieder-nur-provisorisch-ausgebessert-d150199.html
 #: XXX Baubeginn frühestens 2018
 #: osm_watch: way id="30190074" version="20"
 #: last_checked: 2018-04-16
@@ -491,7 +492,7 @@ Fürstenwalder Allee: Baumaßnahmen (Radspuren?)	?::projected; 31632,3297 31447,33
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (Maßnahmen Ah.3 + Nsw.6)
 #: osm_watch: way id="31091960" version="15" vvv
 #: osm_watch: way id="31091970" version="12" vvv
-#: osm_watch: way id="330922955" version="1" vvv
+#: osm_watch: way id="330922955" version="2" vvv
 #: last_checked: 2018-02-04 vvv
 #: check_frequency: 60d vvv
 Oberspreestr.: Lückenschluss (Radweg?)	?::projected; 20949,4775 20765,4839 20689,4862
@@ -1156,6 +1157,15 @@ Kniprodestr.: werden die Busspuren zu Radspuren umgewandelt?	?::projected 12640,
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#
+#: by: fritz
+#: XXX bis zum 02.05.2018
+Bornitzstr.: Einschränkungen auch für Radfahrer?	?::inwork 15747,12880 15950,12886
+# 
+#: by: fritz
+#: XXX bis zum 13.05.2018
+Gotlindestr.: Sperrung auch für Radfahrer relevant?	?::inwork 15947,12626 16000,12625
+# 
 # REMOVED (für Radfahrer offen gehalten) --- #: XXX Kastanienallee (Prenzlauer Berg) Richtung Schönhauser Allee zwischen Oderberger Straße und Schönhauser Allee (Berlin)  Gültig ab: 21.11.2017 07:00  Baustelle, Fahrtrichtung gesperrt (die Kastanienallee ist bis zur Einmünung in die Schönhauser Allee eine Sackgasse) (bis Anfang 12/17) --- #: XXX laut fritz bis voraussichtlich 09.12.2017; laut vmz mittlerweile bis Ende 12/17 --- #: source_id: 2147342043 --- Kastanienallee: Sperrung auch für Radfahrer relevant?	?::inwork; 10723,14772 10838,14962 10884,14952
 # REMOVED (aufgenommen) --- #: XXX NEW	Oranienburger Str. (Mitte) Richtung Friedrichstraße zwischen Hackescher Markt und Monbijouplatz (Berlin)  Gültig ab: 11.12.2017 07:30  Baustelle, Fahrtrichtung gesperrt (bis vsl. 21.12.17) --- #: XXX laut fritz: Zwischen Rosenthaler Straße und Große Hamburger Straße --- #: source_id: 2147342123	 --- Oranienburger Str.: Sperrung auch für Radfahrer relevant?	?::inwork; 10264,13097 10220,13098 10077,13100 9932,13109
 # 
@@ -1658,7 +1668,7 @@ Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projecte
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf
 #: XXX Ausbau des Kopfsteinpflasters, Bau einer Asphaltfahrbahn
 #: osm_watch: way id="75509950" version="12"
-#: last_checked: 2018-04-06
+#: last_checked: 2018-04-17
 #: check_frequency: 90d
 Friedelstr.: Asphaltierung	?::projected 12085,9778 12074,9689 12066,9558 12047,9429 12074,9217
 # 
@@ -1667,7 +1677,7 @@ Friedelstr.: Asphaltierung	?::projected 12085,9778 12074,9689 12066,9558 12047,9
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="14"
-#: last_checked: 2018-04-06
+#: last_checked: 2018-04-17
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -1874,8 +1884,8 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/de/oepnv/bekanntmachung.shtml (Radwege, keine Radspuren)
 #: by: http://www.berliner-woche.de/lichtenberg/verkehr/kollaps-im-osten-kreisverband-der-cdu-kritisiert-die-verkehrspolitik-des-senats-d143175.html (voraussichtlich bis 2020 "ein Nadelöhr")
 #: XXX Fußgängerampel wird zur Dönhoffstr. verschoben
-#: osm_watch: way id="46039447" version="14"
-#: osm_watch: way id="456120288" version="2"
+#: osm_watch: way id="46039447" version="16"
+#: osm_watch: way id="456120288" version="3"
 #: source_id: 2147342174
 #: last_checked: 2018-03-25
 #: next_check: 2019-03-01
@@ -1932,12 +1942,15 @@ Soldiner Str.: grundhafte Erneuerung, evtl. verschwindet das Kopfsteinpflaster d
 Kieler Brücke - Heidestraße, Rad/Gehweg	?::projected 7740,14409 7621,14341
 #: osm_watch: way id="237716440" version="3"
 geplanter Uferweg	?::projected 8292,13530 8171,13703 8128,13767 8044,13929 7989,14035 7912,14160 7843,14275 7824,14305 7740,14409
-#: XXX wird es auch eine Brücke zur Kieler Str. geben?
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Brücke: Bauzeit: III/2018 bis IV/2019)
-#: XXX vermutlich diese Brücke wird "Golda-Meir-Steg" heißen (Berlin.coords.data-Eintrag fehlt)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2016
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_14_1731_1830_online.pdf (Benennung)
+#: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.693755.php (geplante Fertigstellung Ende 2019/Anfang 2020)
+#: next_check: 2019-12-31 vvv
 Otto-Weidt-Platz: Fußgängerbereich zur Heidestraße, Qualität?	?::projected 7912,14160 7767,14077
+#: XXX vermutlich diese Brücke wird "Golda-Meir-Steg" heißen (Berlin.coords.data-Eintrag fehlt)
+geplante Fußgängerbrücke	?::projected 7912,14160 7958,14186
+#: next_check ^^^
 Planstraße 1.3 - Uferweg: Fußgängerbereich	?::projected 7802,14250 7843,14275
 #: XXX wird es auch eine Brücke zum Invalidenfriedhof geben?
 #: osm_watch: way id="237716430" version="6"
@@ -2188,14 +2201,6 @@ Schweizer Botschaft: Rückbau geplant	?::projected 8206,12757 8204,12816 8168,128
 # 
 # REMOVED (realisiert) --- #: by: http://www.berliner-woche.de/neukoelln/verkehr/barriere-fuer-fahrradfahrer-d140650.html (Februar 2018) --- #: next_check: 2018-02-15 --- Weichselplatz: Drängelgitter werden gebaut	? 12845,9304 12862,9273 12909,9085 12902,9066
 # REMOVED (gesperrt) --- #: by: http://www.berliner-woche.de/karlshorst/verkehr/bauschwerpunkt-bahnhof-karlshorst-einschraenkungen-fuer-autofahrer-und-s-bahnkunden-d142323.html --- #: last_checked: 2018-03-18 --- #: check_frequency: 30d --- Bahnhof Karlshorst: wird die Unterführung temporär gesperrt?	? 18949,8437 18906,8394 18875,8365
-# 
-#: by: http://www.berliner-woche.de/lichtenrade/bauen/infopunkt-zur-dresdner-bahn-auf-dem-s-bahnhof-lichtenrade-eingerichtet-d134019.html
-#: by: http://www.berliner-woche.de/marienfelde/bauen/provisorische-fussgaengerbruecke-an-der-saentisstrasse-fuer-behinderte-nicht-passierbar-d144292.html
-#: by: http://www.berliner-woche.de/marienfelde/bauen/arbeiter-werkeln-an-der-neuen-fussgaengerbruecke-die-am-28-maerz-fertig-sein-soll-m88660,144292.html
-#: by: http://www.berliner-woche.de/marienfelde/bauen/cdu-draengt-auf-barrierefreie-fussgaengerbruecke-an-der-saentisstrasse-d144719.html
-#: XXX es wird eine Fußgängerbrücke geben --- 2x ca. 36 Stufen, keine Rampe, keine Führungsschienen
-#: next_check: 2018-03-28
-Säntisstr.: Sperrung des Bahnübergangs geplant	?::projected 8971,864 9024,906 9129,986
 # 
 #: by: http://www.berliner-woche.de/zehlendorf/bauen/buergerinitiative-stellt-neue-fragen-zur-umgestaltung-von-zehlendorf-mitte-d138292.html
 #: last_checked: 2018-04-09 (mapillary)
@@ -2890,9 +2895,11 @@ Dörpfeldstr.: evtl. Einrichtung von Radverkehrsanlagen	?::projected 20834,4035 2
 #: by ^^^
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4353&options=4 (Prüfung der Maßnahme)
+#: source_id: 2147342368
 #: osm_watch: way id="46907545" version="7"
 #: last_checked: 2017-06-06
-#: check_frequency: 180d
+#: next_check: 2018-04-30
+# REMOVED --- #: check_frequency: 180d
 Birkbuschstr.: werden hier Radspuren oder Busspuren angelegt?	? 5541,4305 5483,4359 5416,4411 5329,4485 5271,4547 5165,4667 5132,4704 5076,4762 5070,4770 5048,4798 4985,4884 4951,4920 4879,5017
 # 
 B2: gibt es hier Radwege?	? -9972,6846 -9854,6890 -9640,6971
@@ -3323,13 +3330,13 @@ An der Neumark: weitere Abschnitte der Straße, Hausnummern hier 5-93	?::inwork 1
 #: XXX Stand Mai 2014: Fertigstellung bis Anfang 2017 (ist mittlerweile nicht realistisch)
 #: XXX mit Bahnübergang
 #: XXX evtl. wird es am Pyramidenring einen neuen Kreisverkehr geben
-#: next_check: 2018-04-01
+#: next_check: 2018-08-01
 Verbindung zwischen Beilsteiner Str. und Pyramidenring: genaue Lage, Qualität, Straßenname?	?::projected 18859,14048 18804,14239 18710,14212
 # 
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/artikel.442576.php
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/downloads/xxi-24_b-planentwurf_blatt_1.pdf
 #: osm_watch: way id="294559915" version="2"
-#: next_check: 2018-04-01
+#: next_check: 2018-08-01
 Planstraße am Pyramidenring: eine Straße existiert hier bereits, ändert sich durch den Bebauungsplan etwas?	?::projected 18889,14403 18666,14350 18710,14212
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6562 vvv
@@ -4283,7 +4290,7 @@ Bargischow - Anklam: Qualität?	? 31360,159081 31045,159186 30639,159459 30132,15
 #: note: laut anonymen Eintrag guter Asphalt und Einbahnstraße
 Wünsdorf: steht hier mittlerweile eine Eisenbahnbrücke?	? 15229,-27157 15682,-26971 15960,-26906
 Radewege - Brielow: Qualität?	? -46132,7173 -46538,6977 -46760,6249 -47618,4983 -47806,5061 -48417,5162
-Brielow - Hohenferchesar: Qualität?	? -48390,5412 -49416,7055 -49898,7487 -50089,8223 -50533,8629 -50660,8921 -50856,8901 -51205,9530 -51535,9758 -51829,10290
+Brielow - Hohenferchesar: Qualität?	? -48390,5412 -49416,7055 -49898,7487 -50089,8223 -50533,8629 -50660,8921 -50856,8901 -51205,9530 -51568,9771 -51938,10290
 Radewege - Hohenferchesar: Qualität?	? -48290,7437 -48693,7461 -49378,7626 -49809,8261 -50089,8223
 Hohenferchesar - Fohrde: Qualität?	? -50533,8629 -50622,8172 -50749,7956 -51434,7677 -51827,7258 -52233,7271 -52436,7487 -52855,7334 -53058,7005
 #: XXX leider war http://www.potsdam.de/cms/beitrag/10052198/757395/ bzgl. des Radwegs nicht genau genug...
