@@ -113,7 +113,5 @@ sub push_INC {
 		"/home/e/eserte/src/bbbike",
 		"/srv/www/bbbike-webserver/BBBike",
 		"/root/work/bbbike-webserver/BBBike",
-		"/usr/local/apache/radzeit/BBBike",
-		"/var/www/domains/radzeit.de/www/BBBike",
 	       );
 }
