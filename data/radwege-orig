@@ -300,11 +300,11 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 	RW2;RW2 4512,5199 4432,5160 4343,5112
 #: XXX Radwege sollen saniert werden oder es entstehen sogar Radstreifen (Umsetzung 2018) vvv
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
-#: last_checked: 2018-04-17 vvv
+#: last_checked: 2018-04-20 vvv
 #: next_check: 2018-12-31 vvv
-mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160 10501,11056
-mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10501,11056 10637,10996 10684,10975
-mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056
+mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
+mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
+mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
 # REMOVED --- #: XXX wegen Bauarbeiten (Erweiterung AUFBAU) ist der Radweg hier aufgehoben (danach den alten Eintrag wieder herstellen + join machen) --- #: last_checked: 2014-11-21 --- #: check_frequency: 60d
 eine Busspur existiert hier auch (gilt Mo-Fr 7-18 Uhr), ist aber nicht für Radfahrer freigegeben	RW1; 10779,10934 10794,10927 10839,10907
@@ -1752,7 +1752,7 @@ Berliner Gehwegplatten, ca. 1,50m breit	RW2;RW2 9272,14208 9400,14400 9410,14410
 #: note: Wobei es so aussieht, als ob das Zusatzschild einfach nur fehlt
 #: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5;
 #: by: http://www.dafmap.de/d/berlin.html?id=3134&mt=0&zoom=16 (Projektabschluss: 2017-09-01)
-#: last_checked: 2018-04-14
+#: last_checked: 2018-04-20
 #: check_frequency: 14d
 	RW4; 11451,13301 11369,13174
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 11451,13301 11486,13350
@@ -1805,9 +1805,9 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 	RW3; 11907,13655 12038,13685 12161,13711
 #: XXX vermutlich werden hier Radspuren entstehen
 #: by: http://www.berliner-woche.de/prenzlauer-berg/verkehr/storkower-strasse-senat-stellt-dem-bezirk-mittel-fuer-den-bau-eines-radstreifens-in-aussicht-d142987.html
-#: last_checked: 2018-03-16
+#: last_checked: 2018-04-20
 #: next_check: 2018-09-01
-	RW1;RW1 13438,14675 13737,14204 13879,13967
+	RW1;RW1 13438,14675 13731,14200 13879,13967
 Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
 	RW2; 13971,13818 14006,13761
 	RW1; 14006,13761 13971,13818 13879,13967
@@ -4218,9 +4218,9 @@ Tempo 10	RW6;RW6 18023,833 17937,958 17839,905
 #: confirmed_by: srt
 	RW3;RW3 10512,12039 10604,11941 10672,11870 10687,11853 10722,11816
 Gehweg für Radfahrer frei	RW1; 18166,14277 18055,14276 17976,14251
-	RW1; 13186,15518 13560,15318 13692,15231 13760,15187 13808,15154 13816,15137 13823,15111 13744,15018 13644,14915 13633,14904
-	RW4; 13633,14904 13438,14675
-	RW4; 13438,14675 13633,14904 13644,14915 13744,15018 13823,15111 13816,15137 13808,15154 13760,15187
+	RW1; 13186,15518 13560,15318 13692,15231 13760,15187 13808,15154 13816,15137 13823,15111 13744,15018 13647,14912 13636,14900
+	RW4; 13636,14900 13438,14675
+	RW4; 13438,14675 13636,14900 13647,14912 13744,15018 13823,15111 13816,15137 13808,15154 13760,15187
 	RW3; 13760,15187 13692,15231 13560,15318 13186,15518
 zwischen Abbiegespur und Ampel wenige Meter Busspur	RW3; 13186,15518 13072,15590
 	RW3; 13072,15590 13186,15518
@@ -5084,7 +5084,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2018-03-27
+#: last_checked: 2018-04-19
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322

@@ -26820,8 +26820,8 @@ EOF
        text  => 'Wolliner Str./Granseer Str./Fürstenberger Str.: Bauarbeiten, Kreuzung muss umständlich umfahren werden, Bordsteine',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2018-04-09 vvv
-#: check_frequency: 7d vvv
+#: last_checked: 2018-04-20 vvv
+#: check_frequency: 3d vvv
 	q3::inwork 10277,14691 10320,14608
 	q2::inwork 10320,14608 10399,14429
 	q3::inwork 10228,14564 10320,14608 10472,14632

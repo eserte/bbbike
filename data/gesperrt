@@ -1163,9 +1163,9 @@ Saganer Str. -> Hauptstr.: Straﬂenbahntrasse	3::igndisp 16206,10047 16187,10033 
 Saganer Str. -> Georg-Lˆwenstein-Str.: Straﬂenbahntrasse	3::igndisp 16206,10047 16187,10033 16155,9992
 Georg-Lˆwenstein-Str. -> Hauptstr.: Straﬂenbahntrasse	3::igndisp 16155,9992 16187,10033 16138,10105
 Georg-Lˆwenstein-Str. -> Saganer Str.: Straﬂenbahntrasse	3::igndisp 16155,9992 16187,10033 16206,10047
-Gr¸nstreifen	3nocross::ignrte 13644,14915 13744,15018 13823,15111
+Gr¸nstreifen	3nocross::ignrte 13647,14912 13744,15018 13823,15111
 Kniprodestr. -> Altenescher Weg: Gr¸nstreifen	3::igndisp 13823,15111 13744,15018 13856,14944
-Altenescher Weg -> Kniprodestr.: Gr¸nstreifen	3::igndisp 13856,14944 13744,15018 13644,14915
+Altenescher Weg -> Kniprodestr.: Gr¸nstreifen	3::igndisp 13856,14944 13744,15018 13647,14912
 Mittelstreifen	3nocross::ignrte 19578,6165 19405,6276 19276,6359
 An der Wuhlheide -> Treskowstr.: Mittelstreifen	3::igndisp 19578,6165 19405,6276 19333,6165
 Treskowstr. -> An der Wuhlheide: Mittelstreifen	3::igndisp 19333,6165 19405,6276 19276,6359
@@ -1900,8 +1900,8 @@ Weitlingstr. -> Frankfurter Allee: unbequemes Passieren des Mittelstreifens (Bor
 Mittelinsel mit Gel‰nder	3nocross::ignrte 7709,8777 7642,8815 7563,8871
 Kolonnenstr. -> Gustav-M¸ller-Str.: Mittelinsel mit Gel‰nder	3::igndisp 7709,8777 7642,8815 7643,8634
 Straﬂenbahntrasse	3nocross::ignrte 11451,13301 11526,13252 11560,13232 11681,13161
-Mollstr. -> Pauline-Staegemann-Str.: Straﬂenbahntrasse	3::igndisp 11451,13301 11526,13252 11589,13305
-Pauline-Staegemann-Str. -> Mollstr.: Straﬂenbahntrasse	3::igndisp 11589,13305 11526,13252 11560,13232
+Mollstr. -> Pauline-Staegemann-Str.: Straﬂenbahntrasse	3::igndisp 11451,13301 11526,13252 11578,13310
+Pauline-Staegemann-Str. -> Mollstr.: Straﬂenbahntrasse	3::igndisp 11578,13310 11526,13252 11560,13232
 Mollstr. -> Berolinastr.: Straﬂenbahntrasse	3::igndisp 11681,13161 11560,13232 11476,13052
 Berolinastr. -> Mollstr.: Straﬂenbahntrasse	3::igndisp 11476,13052 11560,13232 11526,13252
 schlecht passierbar	3nocross::ignrte -4078,11800 -4033,11786 -3820,11721 -3708,11686
