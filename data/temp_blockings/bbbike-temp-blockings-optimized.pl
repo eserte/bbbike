@@ -4424,7 +4424,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: source_id: 2147342009
+         'data' => '#: XXX bis wann ist die Durchfahrt gesperrt?
+#: source_id: 2147342009
+#: next_check: 2018-05-01
 	2::inwork 15162,11458 15055,11505
 ',
          'from' => 1523311200,

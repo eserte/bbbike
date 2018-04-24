@@ -1848,7 +1848,8 @@ Schulweg: Verbundsteinpflaster	Q1 28363,-19964 28398,-19911 28421,-19768
 Pätz (Groß Köriser Str.): Verbundsteinpflaster	Q1 28540,-19744 28514,-20071 28505,-20243
 Pätz (Groß Köriser Str.): Asphalt	Q0 28540,-19744 28615,-19431
 Zeesen - Königs Wusterhausen: holpriger Waldweg, teilweise sehr sandig	Q3 26889,-12953 26825,-12765 26797,-12589 26814,-12271
-Postenweg Schönefeld: guter Beton	Q0 17013,-745 16205,-969 15795,-1108 15776,-1116 15738,-1159
+Postenweg Schönefeld: guter Beton	Q0 17013,-745 16205,-969 15795,-1108 15776,-1116
+Postenweg Schönefeld: Asphalt	Q0 15776,-1116 15738,-1159
 Rudower Str.: Kleinteiliges, unebenes Kopfsteinpflaster	Q2; 16205,-969 16074,-1240 15819,-1886 15782,-1953 15289,-2873
 Rudower Str.: Kopfsteinpflaster, aber schmale asphaltierte Bankette	Q0; 15289,-2873 15782,-1953 15819,-1886 16074,-1240 16205,-969
 Rudower Str.: Asphalt	Q0 15289,-2873 14977,-3505 14878,-3602
@@ -3596,6 +3597,8 @@ Friederickenhof - Birkholz: Beton	Q0 6824,-2706 6876,-2731 7332,-2909 8041,-3322
 Lichtenrade - Birkholz/Diedersdorf: wassergebundene Decke	Q1 8310,-2037 8100,-2471
 Lichtenrade - Birkholz/Diedersdorf: Feldsteinpflaster mit Banketten	Q2 8100,-2471 8113,-3293
 Lichtenrade - Birkholz/Diedersdorf: Asphalt	Q0 8113,-3293 8114,-3357
+Innerer Mauerweg - Birkholz/Diedersdorf: unbefestigter Weg, eventuell sandig	Q2 8412,-1979 8310,-2037
+Aüßerer Mauerweg - Innerer Mauerweg: unbefestigter Weg, holprig	Q2 8376,-1523 8415,-1525 8467,-1393 8492,-1376
 Egestorffstr. - Mauerweg: Asphalt	Q0 9093,-1670 9083,-1962 9065,-1983
 Innerer Mauerweg - Äußerer Mauerweg: unbefestigt	Q2 9065,-1983 9081,-2073
 Innerer Mauerweg: Asphalt	Q0 9065,-1983 8412,-1979
@@ -3729,6 +3732,7 @@ Werneuchen - Altlandsberg: Fahrbahn asphaltiert	Q0 32069,19686 32060,19519 32304
 Krummensee - Wegendorf: Asphalt	Q0 32228,22165 33374,22059
 Krummensee - Wegendorf: unbefestigter Weg, Schlamm	Q3 31272,22232 32228,22165
 Altlandsberger Chaussee - Dorfstr.: wassergebundene Decke	Q1 26532,15526 26509,15642 26546,15740
+Innerer Mauerweg: Asphalt	Q1 8412,-1979 8492,-1376
 Am Lückefeld (Mahlow): guter Asphalt	Q0 13256,-4919 13049,-4788 12977,-4783 12841,-4989 12680,-5230 12782,-5284 12837,-5273 13194,-5021 13256,-4919
 Kopfsteinpflaster	Q2 15157,61424 14833,61726 14920,62175 14941,62754 14768,63163 14594,63506 14618,64317 14400,64920 14312,65950 14312,66412
 Kopfsteinpflaster	Q2 13386,66797 13458,67551 13676,68144
@@ -4675,7 +4679,8 @@ Lessingstr. (Potsdam): schlechtes Kopfsteinpflaster	Q3 -9837,-1612 -9529,-1599 -
 Lessingstr. (Potsdam): Asphalt mit einigen Schäden	Q1 -9355,-1586 -9319,-1587 -9227,-1589
 Kantstr. (Teltow): guter Beton	Q0 3721,195 3689,182 3485,102 3392,63 3324,34 3305,25 3263,7 3223,-10 3201,-19 3143,-53
 Kantstr. (Teltow): guter Asphalt	Q0 3143,-53 3090,-87 3042,-119 2993,-152 2943,-186 2893,-221 2846,-252 2799,-283 2751,-312 2689,-353 2640,-385 2586,-421 2532,-457
-Wolziger Zeile - B101: in die Jahre gekommener Asphalt	Q1 9608,-2642 9529,-2628 9159,-2590 8100,-2471 7090,-1651
+Wolziger Zeile - B101: Asphalt	Q0 9608,-2642 9529,-2628
+Wolziger Zeile - B101: in die Jahre gekommener Asphalt	Q1 9529,-2628 9159,-2590 8100,-2471 7090,-1651
 Wolziger Zeile - B101: holpriger Plattenweg	Q2 7090,-1651 6742,-1368
 Wolziger Zeile - B101: sehr guter, neuer Asphalt	Q0 6742,-1368 6481,-1667 6427,-1856
 Helene-Lange-Str. (Potsdam): Kopfsteinpflaster	Q2 -12861,-330 -13132,-256

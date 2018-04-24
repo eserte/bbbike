@@ -1896,8 +1896,8 @@ abgeschlossenes Tor	3 * 10000,1131 *
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
-tragen (ca. 36 Stufen)	0:35 9005,912
-tragen (ca. 36 Stufen)	0:35 9047,948
+tragen (3x12 Stufen)	0:35 9005,912
+tragen (2x13 Stufen)	0:30 9047,948
 tragen (28 Stufen)	0:30 6138,12877
 Tor, kann geschlossen sein	BNP:10::trailer=15 20682,9834
 Tor, kann geschlossen sein	BNP:10::trailer=15 20683,9558
@@ -2853,6 +2853,7 @@ Drängelgitter	BNP:3::trailer=10 22097,5879
 #: by: http://www.berliner-woche.de/marienfelde/verkehr/scharfe-kritik-am-bahnuebergang-d156361.html
 #: source_id: 2147342379
 #: source_id: LMS-BR_r_LMS-BR_127414_LMS-BR_72
+#: last_checked: 2018-04-21
 #: next_check: 2021-01-01
 Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,898 9024,906 9058,932
 # 
@@ -3241,12 +3242,12 @@ Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3
 #: next_check_id ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2018-03-27
+#: last_checked: 2018-04-23
 #: check_frequency: 120d
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2018-03-27
+#: last_checked: 2018-04-23
 #: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 

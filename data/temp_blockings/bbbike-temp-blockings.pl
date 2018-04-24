@@ -26700,7 +26700,9 @@ EOF
        text  => 'Wiesenweg: wegen Brückenarbeiten zwischen Gürtelstr. und Kietzer Weg komplett gesperrt, auch für Fußgänger, voraussichtlich ab 11.04.2018, 7 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
+#: XXX bis wann ist die Durchfahrt gesperrt?
 #: source_id: 2147342009
+#: next_check: 2018-05-01
 	2::inwork 15162,11458 15055,11505
 EOF
      },
