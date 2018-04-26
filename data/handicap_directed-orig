@@ -68,8 +68,8 @@ Dresdener Str.: Bordsteinumfahrung	DH:len=25:t=7 11039,11425 11000,11327 11021,1
 Dresdener Str.: Bordsteinumfahrung	DH:len=25:t=7 11021,11287 11000,11327 11039,11425
 # 
 #: note: Linksabbiegen verboten, Zeit künstlich verlängern vvv
-B2/B158	DH:t=120 49908,67683 49907,67684
-B2/B158	DH:t=120 49907,67684 49908,67683
+B2/B158	DH:t=120 49839,67618 49908,67683 49907,67684
+B2/B158	DH:t=120 50386,68158 49907,67684 49908,67683
 #: note ^^^
 # 
 #: note: Zykluszeit von 70s angenommen
@@ -248,3 +248,11 @@ Rhinstr.: westliche Brücke gesperrt, Radweg auf der linken Seite benutzen	DH:len
 Neuköllnische Allee/Grenzallee: Überquerung der Kreuzung nur über linken Gehweg möglich, Zeitverlust!	DH:t=60:len=30 14567,6810 14344,7003 14196,7086
 # 
 Schulze-Boysen-Str. - Ruschstr.: Fußgängerampel auf der linken Seite benutzen	DH:t=15 15836,11840 15863,11992 15879,12131
+# 
+#: next_check_id: CHAUSSEESTR-2016 vvv
+#: XXX_prog werden zurzeit ignoriert, da die gesperrt-orig-Einträge Vorrang haben
+Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	DH:h=q4,100 8570,14299 8607,14253 8776,14364
+Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	DH:h=q4,100 8654,14194 8607,14253 8776,14364
+Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	DH:h=q4,100 8776,14364 8607,14253 8654,14194
+Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	DH:h=q4,100 8776,14364 8607,14253 8570,14299
+#: next_check_id ^^^

@@ -18,8 +18,8 @@ Salvador-Allende-Brücke: Straßenseitenwechsel	DH:t=60 23403,5385 23404,5325 2342
 Salvador-Allende-Brücke: Straßenseitenwechsel	DH:t=60 23444,4942 23451,4877 23447,4679
 Dresdener Str.: Bordsteinumfahrung	DH:len=25:t=7 11039,11425 11000,11327 11021,11287
 Dresdener Str.: Bordsteinumfahrung	DH:len=25:t=7 11021,11287 11000,11327 11039,11425
-B2/B158	DH:t=120 49908,67683 49907,67684
-B2/B158	DH:t=120 49907,67684 49908,67683
+B2/B158	DH:t=120 49839,67618 49908,67683 49907,67684
+B2/B158	DH:t=120 50386,68158 49907,67684 49908,67683
 Zehlendorfer Kreuz: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:len=40:t=20 -2912,1829 -3011,1761 -3113,1692
 Zehlendorfer Kreuz: Radfahrer müssen auf die rechte Seite zurück wechseln	DH:len=30:t=20 -3890,1249 -4003,1234 -4497,1165
 Koppenstr./Karl-Marx-Allee: Fußgängerampel	DH:len=20:tl 12573,12227 12596,12472 12632,12630
@@ -110,3 +110,7 @@ Rhinstr.: westliche Brücke gesperrt, bis zur Ampel zurückfahren und Straßenseite
 Rhinstr.: westliche Brücke gesperrt, Radweg auf der linken Seite benutzen	DH:len=50:h=q2,330 18191,12451 18220,12450 18216,12262 18216,12239 18215,12123
 Neuköllnische Allee/Grenzallee: Überquerung der Kreuzung nur über linken Gehweg möglich, Zeitverlust!	DH:t=60:len=30 14567,6810 14344,7003 14196,7086
 Schulze-Boysen-Str. - Ruschstr.: Fußgängerampel auf der linken Seite benutzen	DH:t=15 15836,11840 15863,11992 15879,12131
+Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	DH:h=q4,100 8570,14299 8607,14253 8776,14364
+Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	DH:h=q4,100 8654,14194 8607,14253 8776,14364
+Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	DH:h=q4,100 8776,14364 8607,14253 8654,14194
+Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	DH:h=q4,100 8776,14364 8607,14253 8570,14299

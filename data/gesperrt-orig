@@ -296,11 +296,15 @@ Zionskirchplatz	1 10304,14254 10277,14350 10311,14391 10365,14372 10391,14280
 Ohmstr.	1 11324,11689 11378,11856
 Anton-Saefkow-Str.	1 13183,14400 13084,14472 13013,14523 12901,14594 12862,14618 12789,14670 12700,14726 12528,14845
 Spilstr.	1 3865,6758 3826,6656 3836,6550
-#: note einige Radfahrer hier in der falschen Richtung angetroffen vvv
-Wöhlertstr.	1s:q4 8442,14456 8669,14550
-Pflugstr.	1s:q4 8669,14550 8776,14364
-#: note ^^^
-Schwartzkopffstr.	1s:q4 8776,14364 8607,14253
+#: next_check_id: CHAUSSEESTR-2016 vvv
+#: XXX wieder herstellen, wenn es dann noch eine Einbahnstraße gibt
+##: note einige Radfahrer hier in der falschen Richtung angetroffen vvv
+#Wöhlertstr.	1s:q4 
+#8442,14456 8669,14550
+#Pflugstr.	1s:q4 8669,14550 8776,14364
+##: note ^^^
+#Schwartzkopffstr.	1s:q4 8776,14364 8607,14253
+#: next_check_id ^^^
 Strausberger Str.	1 12416,13045 12368,13031 12247,12848
 Große Präsidentenstr.	1 10105,13004 10220,13098
 Gritznerstr.	1 4511,6318 4555,6403
@@ -719,7 +723,7 @@ Steinträgerweg	1 12987,2220 13023,2093
 Am Kurzen Weg	1 -7180,14351 -7172,14459 -7185,14574
 Straßenbahnwendestelle Virchowstr.	1 13081,13457 12925,13373
 Am Friedrichshain	1 12065,13851 12104,13913 12147,13887 12106,13828
-Potsdamer Chausee: explizit für Radfahrer verboten	1 -8797,7638 -8405,7751
+Potsdamer Chaussee: explizit für Radfahrer verboten	1 -8797,7638 -8405,7751
 #: by: Maria Hach
 Bösensteinweg	1 9943,1543 9847,1571 9771,1641
 #: by: Manfred Brühl
@@ -3115,6 +3119,12 @@ Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13176,9302 13098,920
 #: next_check: 2018-04-30 vvv
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 8732,14098 8654,14194
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q4:inwork 8654,14194 8607,14253 8570,14299 8442,14456
+#
+#: XXX_prog eigentlich gehören diese nach handicap_directed-orig, aber erstmal sollte das CGI damit umgehen können
+Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	3 8570,14299 8607,14253 8776,14364
+Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	3 8654,14194 8607,14253 8776,14364
+Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	3 8776,14364 8607,14253 8654,14194
+Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	3 8776,14364 8607,14253 8570,14299
 #: next_check ^^^
 #: last_checked ^^^
 #: source_id ^^^

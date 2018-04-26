@@ -220,9 +220,6 @@ Zionskirchplatz	1 10304,14254 10277,14350 10311,14391 10365,14372 10391,14280
 Ohmstr.	1 11324,11689 11378,11856
 Anton-Saefkow-Str.	1 13183,14400 13084,14472 13013,14523 12901,14594 12862,14618 12789,14670 12700,14726 12528,14845
 Spilstr.	1 3865,6758 3826,6656 3836,6550
-Wöhlertstr.	1s 8442,14456 8669,14550
-Pflugstr.	1s 8669,14550 8776,14364
-Schwartzkopffstr.	1s 8776,14364 8607,14253
 Strausberger Str.	1 12416,13045 12368,13031 12247,12848
 Große Präsidentenstr.	1 10105,13004 10220,13098
 Gritznerstr.	1 4511,6318 4555,6403
@@ -493,7 +490,7 @@ Steinträgerweg	1 12987,2220 13023,2093
 Am Kurzen Weg	1 -7180,14351 -7172,14459 -7185,14574
 Straßenbahnwendestelle Virchowstr.	1 13081,13457 12925,13373
 Am Friedrichshain	1 12065,13851 12104,13913 12147,13887 12106,13828
-Potsdamer Chausee: explizit für Radfahrer verboten	1 -8797,7638 -8405,7751
+Potsdamer Chaussee: explizit für Radfahrer verboten	1 -8797,7638 -8405,7751
 Bösensteinweg	1 9943,1543 9847,1571 9771,1641
 Wesenberger Ring	1 13030,3664 13129,3809 13165,3850 13206,3854 13229,3836 13238,3794 13206,3674 13163,3582
 Anna-Mackenroth-Weg	1 3633,2210 3641,2464
@@ -2970,6 +2967,10 @@ Bouchéstr.: Baustelle, Einbahnstraßenregelung	1s:inwork 13298,9252 13188,9134
 Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:inwork 13176,9302 13098,9205
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:inwork 8732,14098 8654,14194
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:inwork 8654,14194 8607,14253 8570,14299 8442,14456
+Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	3 8570,14299 8607,14253 8776,14364
+Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	3 8654,14194 8607,14253 8776,14364
+Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	3 8776,14364 8607,14253 8654,14194
+Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	3 8776,14364 8607,14253 8570,14299
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:inwork 9042,11839 8969,11814
 Nordhafenpark West: noch Bauarbeiten, gesperrt	2::inwork 7551,14464 7426,14539
 Nordhafenpark West: unter der Brücke gesperrt	2::inwork 7636,14414 7612,14449 7551,14464
