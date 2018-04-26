@@ -69,7 +69,7 @@ use vars qw($VERSION $VERBOSE
 	    $modperl_lowmem $detailmap_module
 	    $q %persistent %c $got_cookie
 	    $g_str $orte $orte2 $multiorte
-	    $ampeln $qualitaet_net $handicap_net
+	    $ampeln $qualitaet_net $handicap_net $handicap_directed_net
 	    $strcat_net $radwege_strcat_net $radwege_net $routen_net $comments_net
 	    $green_net $unlit_streets_net
 	    $crossings $kr $culdesac_cached %cached_plz $net
@@ -3612,6 +3612,28 @@ sub search_coord {
 	     Penalty => $penalty,
 	    };
 
+    }
+
+    # handicap_directed XXX not yet enabled
+    if (0) {
+	if (!$handicap_directed_net) {
+	    if (-f "$Strassen::datadirs[0]/handicap_directed") { # XXX may be missing for osm data
+		my $special_vehicle = $q->param('pref_specialvehicle') || '';
+		$handicap_directed_net = StrassenNetz->make_net_directedhandicap(
+										 Strassen->new('handicap_directed'),
+										 speed   => $velocity_kmh,
+										 vehicle => $special_vehicle,
+										 handicap_penalty => \%handicap_speed,
+										);
+	    }
+	}
+	if ($handicap_directed_net) {
+	    $extra_args{DirectedHandicap} = $handicap_directed_net;
+	} else {
+	    if (!$osm_data) {
+		warn "WARN: No handicap_directed data file available (looked in '$Strassen::datadirs[0]').\n";
+	    }
+	}
     }
 
     # Qualitätsoptimierung
