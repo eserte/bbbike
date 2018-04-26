@@ -1297,7 +1297,27 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.openairgallery.de/?y=2017
+	q3::temp 13178,10623 13206,10651
+	q4::temp 13206,10651 13305,10789 13332,10832
+',
+         'from' => 1527926400,
+         'id' => 1107,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              31,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Open Air Gallery am 3. Juni 2018 auf der Oberbaumbrücke (10:00 - 20:00)',
+         'type' => 'gesperrt',
+         'until' => 1528056000
+       },
        undef,
        undef,
        undef,
@@ -2929,7 +2949,26 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	q3::temp 13178,10623 13206,10651
+	q4::temp 13206,10651 13305,10789 13332,10832
+',
+         'from' => 1530345600,
+         'id' => 2206,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              7
+                            ]
+                          ],
+         'text' => 'Open Air Gallery am 1. Juli 2018 auf der Oberbaumbrücke (10:00 - 20:00)',
+         'type' => 'gesperrt',
+         'until' => 1530475200
+       },
        {
          'data' => '#: tempex: 20180427-T20180521 vvv
 	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
@@ -4137,6 +4176,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: die Baustelle ist gewandert
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=20802
+#: XXX laut fritz mittlerweile in beiden Richtungen --- stimmt das?
 #: source_id: LMS-BR_r_LMS-BR_72519
 	q4::inwork; 12911,1815 12940,1547
 ',
@@ -4485,21 +4525,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: last_checked: 2018-04-20 vvv
-#: check_frequency: 3d vvv
-	q3::inwork 10277,14691 10320,14608
-	q2::inwork 10320,14608 10399,14429
-	q3::inwork 10228,14564 10320,14608 10472,14632
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => 1516308007,
-         'id' => 2930,
-         'text' => 'Wolliner Str./Granseer Str./Fürstenberger Str.: Bauarbeiten, Kreuzung muss umständlich umfahren werden, Bordsteine',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '	2::inwork 18023,833 17928,764 17734,675
 ',
@@ -4608,16 +4634,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'data' => '	q4::inwork 11616,10288 11512,10105
-',
-         'from' => 1522090587,
-         'id' => 2944,
-         'source_id' => '2147342376',
-         'text' => 'Mariannenstr.: Bauarbeiten zwischen Reichenberger Str. und Paul-Lincke-Ufer, Fahrbahn gesperrt, ab 26.03.2018 10:00 bis Ende April 2018',
-         'type' => 'handicap',
-         'until' => 1525093200
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: ORANIENBURGER-2018

@@ -250,7 +250,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2018-04-19
+#: last_checked: 2018-04-24
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15021,11152 15102,11120
@@ -279,19 +279,8 @@ Alt-Lübars: schlechtes Kopfsteinpflaster	Q3 7111,23873 7051,23924 6879,23816
 (Schildower Weg): Feldweg, teilweise gemeinsam mit Reitweg	Q2 7877,24037 7675,23968 7615,23884 7571,23885 7339,23782 7312,23775 7185,23749
 Alt-Tegel: Kopfsteinpflaster	Q2- 1907,20265 1753,20191 1668,20156 1529,20131
 Alt-Tegel: Kopfsteinpflaster	Q2- 1543,20060 1630,20097 1668,20156
-#: next_check_id: MARIANNEN-2016
-#: XXX wird hier vielleicht auch asphaltiert werden?
-#: XXX Baumaßnahme 2.22 (Realisierung nach 2011)
-#: XXX ggfs. Bauarbeiten bis Mitte September 2016 (laut rbbtext)
-#: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (hier wird auch eine Einbahnstraßenregelung erwähnt, hoffentlich nur für Autos! -> realisiert)
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf
-#: source_id: INKO_2147340291_COPY_1
-#: source_id: 2147340291
-#: source_id: 2147342376
-#: last_checked: 2018-04-17
-#: next_check: 2018-04-30
-Mariannenstr: mäßiges bis gutes Kopfsteinpflaster, 25 km/h möglich	Q1- 11512,10105 11616,10288
-Mariannenstr: Asphalt	Q0 11616,10288 11671,10402
+# REMOVED (realisiert) --- #: next_check_id: MARIANNEN-2016 --- #: XXX wird hier vielleicht auch asphaltiert werden? --- #: XXX Baumaßnahme 2.22 (Realisierung nach 2011) --- #: XXX ggfs. Bauarbeiten bis Mitte September 2016 (laut rbbtext) --- #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (hier wird auch eine Einbahnstraßenregelung erwähnt, hoffentlich nur für Autos! -> realisiert) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf --- #: source_id: INKO_2147340291_COPY_1 --- #: source_id: 2147340291 --- #: source_id: 2147342376 --- #: last_checked: 2018-04-17 --- #: next_check: 2018-04-30
+Mariannenstr: Asphalt	Q0 11512,10105 11616,10288 11671,10402
 Hochstr.: Kopfsteinpflaster	Q2 9053,16029 8923,15850
 Böttgerstr.: Asphalt	Q0 9123,15963 8923,15850
 Böttgerstr.: Kopfsteinpflaster	Q2 8923,15850 8720,15914 8655,15979 8582,16052
@@ -698,6 +687,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: add_fragezeichen: Ist die Tino-Schwierzina-Str. zwischen Aidastr. und Romain-Rolland-Str. mittlerweile komplett asphaltiert?
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4616
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4684 (Planung von Radverkehrsanlagen in der Tino-Schwierzina-Straße ab Sommer 2018, Umsetzung ab 2019 (vermutlich auch im südlichen Abschnitt))
+#: by: http://www.berliner-woche.de/heinersdorf/verkehr/radstreifen-und-neue-querungen-d155368.html
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="7"
@@ -1313,6 +1303,7 @@ Grumbkowstr.: Asphalt	Q0 11555,20051 11627,19907 11695,19760 11730,19684
 Platanenstr.: gut befahrbare Betonplatten	Q1 8710,19550 8467,19408
 #: corrected_by: osm (was: miserables Kopfsteinpflaster etc.)
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4765
+#: by: http://www.berliner-woche.de/pankow/verkehr/zu-viele-verkehrszeichen-sonderfall-regt-zum-schmunzeln-an-d156819.html
 #: XXX vor Ort prüfen!
 Platanenstr.: Asphalt	Q0 9348,19786 9177,19745 8977,19694 8956,19688 8776,19595 8710,19550
 Platanenstr.: passabler Asphalt	Q0- 9348,19786 9489,19826 9822,19916 10132,19993
@@ -1648,7 +1639,7 @@ Nansenstr.: Kopfsteinpflaster	Q2 12412,9610 12374,9542 12333,9470 12270,9362 122
 Reuterplatz: Kopfsteinpflaster	Q2 12248,9320 12146,9384
 Knorrpromenade: Kopfsteinpflaster	Q2 14369,11489 14424,11639
 (Vorfahrt Neues-Deutschland-Gebäude): Kopfsteinpflaster, OK	Q1 12788,11898 12891,12008
-Husemannstr.: mäßiger Asphalt	Q1 11271,14755 11293,14957
+Husemannstr.: mäßiger Asphalt	Q1+ 11271,14755 11293,14957
 Feilnerstr.: teilweise gutes Kopfsteinpflaster	Q1 9973,11150 10163,11070
 Hobrechtstr.: Kopfsteinpflaster	Q2 11998,8872 12011,9100
 Hobrechtstr.: gutes Kopfsteinpflaster	Q1 12011,9100 12005,9211
@@ -12295,6 +12286,7 @@ Güllweg: mäßiges Kopfsteinpflaster	Q2 10115,19105 10095,19179 10086,19209 10018,
 # 
 #: by: U. Gauger: vvv
 Buchholzer Str.: Asphalt	Q0 10917,15525 11055,15504 11176,15489
+#: confirmed_by: srt
 Gneiststr.: Kopfsteinpflaster	Q2 11112,15387 11040,15398 10902,15422
 #: by: ^^^
 # 

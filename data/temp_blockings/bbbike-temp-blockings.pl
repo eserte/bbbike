@@ -9473,11 +9473,11 @@ EOF
 	2::temp 12891,12549 12869,12425
 EOF
      },
-     { from  => $isodate2epoch->("2017-06-03 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-06-04 22:00:00"),
+     { from  => $isodate2epoch->("2018-06-02 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-06-03 22:00:00"),
        periodic => 1, # erster Termin im Sommer
        recurrences => [['yearly', days => 31, months => 5]], # kann aber auch erst im Juli stattfinden
-       text  => 'Open Air Gallery am 4. Juni 2017 auf der Oberbaumbrücke (10:00 - 20:00)',
+       text  => 'Open Air Gallery am 3. Juni 2018 auf der Oberbaumbrücke (10:00 - 20:00)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.openairgallery.de/?y=2017
@@ -19241,11 +19241,11 @@ EOF
 	1::temp 1574,11379 1625,11380 1821,11408 1960,11426 2095,11440
 EOF
      },
-     { from  => $isodate2epoch->("2017-09-02 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-09-03 22:00:00"),
+     { from  => $isodate2epoch->("2018-06-30 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-07-01 22:00:00"),
        periodic => 1, # zweiter Termin im Sommer
-       recurrences => [['yearly', days => 2, months => 7]], # kann aber auch erst im August oder September stattfinden
-       text  => 'Open Air Gallery am 3. September 2017 auf der Oberbaumbrücke (10:00 - 20:00)',
+       recurrences => [['yearly', days => 1, months => 7]], # kann aber auch erst im August oder September stattfinden
+       text  => 'Open Air Gallery am 1. Juli 2018 auf der Oberbaumbrücke (10:00 - 20:00)',
        type  => 'gesperrt',
        data  => <<EOF,
 	q3::temp 13178,10623 13206,10651
@@ -22636,8 +22636,9 @@ EOF
      { from  => $isodate2epoch->("2017-09-07 15:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2017-09-10 22:00:00"),
        periodic => 1, # erster Termin im Jahr
-       recurrences => [["yearly", days => 9, months => 5]], # wechselnde Termine, kann auch erst Mitte September passieren
-       recurrence_prewarn_days => 14,
+       #recurrences => [["yearly", days => 9, months => 5]], # wechselnde Termine, kann auch erst Mitte September passieren
+       #recurrence_prewarn_days => 14,
+       recurrences => [["yearly", days => 1, months => 9]],
        text  => 'Prager Platz: Veranstaltung "Fest der Nationen", Durchfahrt nicht möglich, vom 8.9.2017 15 Uhr bis 10.9.2017 22 Uhr',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/ueber-den-bezirk/sonstiges/events/fest-der-nationen/?date=20170409',
@@ -25478,6 +25479,7 @@ EOF
 #: note: die Baustelle ist gewandert
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=20802
+#: XXX laut fritz mittlerweile in beiden Richtungen --- stimmt das?
 #: source_id: LMS-BR_r_LMS-BR_72519
 	q4::inwork; 12911,1815 12940,1547
 EOF
@@ -26818,17 +26820,17 @@ EOF
 EOF
      },
      { from  => 1516308007, # 2018-01-18 21:40
-       until => undef,
+       until => 1524695956, # undef,
        text  => 'Wolliner Str./Granseer Str./Fürstenberger Str.: Bauarbeiten, Kreuzung muss umständlich umfahren werden, Bordsteine',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2018-04-20 vvv
-#: check_frequency: 3d vvv
+# REMOVED --- #: last_checked: 2018-04-20 vvv
+# REMOVED --- #: check_frequency: 3d vvv
 	q3::inwork 10277,14691 10320,14608
 	q2::inwork 10320,14608 10399,14429
 	q3::inwork 10228,14564 10320,14608 10472,14632
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: last_checked ^^^
 EOF
      },
      { from  => 1517602202, # 2018-02-02 21:10
@@ -26979,7 +26981,7 @@ EOF
 EOF
      },
      { from  => 1522090587, # 2018-03-26 20:56
-       until => 1525093200, # 2018-04-30 15:00
+       until => 1524765594, # 1525093200, # 2018-04-30 15:00
        text  => 'Mariannenstr.: Bauarbeiten zwischen Reichenberger Str. und Paul-Lincke-Ufer, Fahrbahn gesperrt, ab 26.03.2018 10:00 bis Ende April 2018',
        type  => 'handicap',
        source_id => '2147342376',
