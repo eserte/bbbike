@@ -391,13 +391,13 @@ EOF
 		      );
 	} $bbbike_rootdir;
     } else {
-	$doit->make_path("$docker_context_dir/port/travis-ci");
-	$doit->copy("$bbbike_rootdir/port/travis-ci/travis-functions.sh", "$docker_context_dir/port/travis-ci/");
+	$doit->make_path("$docker_context_dir/bbbike/port/travis-ci");
+	$doit->copy("$bbbike_rootdir/port/travis-ci/travis-functions.sh", "$docker_context_dir/bbbike/port/travis-ci/");
 	# mtime has to be preserved, otherwise older docker (<1.8?)
 	# will take mtime into account when calculating cache checksums
 	# see https://github.com/moby/moby/pull/12031
 	my $mtime = (stat("$bbbike_rootdir/port/travis-ci/travis-functions.sh"))[9];
-	$doit->utime($mtime, $mtime, "$docker_context_dir/port/travis-ci/travis-functions.sh");
+	$doit->utime($mtime, $mtime, "$docker_context_dir/bbbike/port/travis-ci/travis-functions.sh");
     }
 
     in_directory {
