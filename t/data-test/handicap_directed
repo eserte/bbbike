@@ -1,0 +1,14 @@
+#:# -*- mode:bbbike -*-
+#: title: Directed handicaps
+#: line_arrow: last
+#: line_color: #800000
+#: line_dash: 2,4
+#: line_do_offset: 1
+#: line_width: 2
+# 
+Koppenstr./Karl-Marx-Allee: Fußgängerampel	DH:len=20:tl 12573,12227 12596,12472 12632,12630
+Koppenstr./Karl-Marx-Allee: Fußgängerampel	DH:len=20:tl 12632,12630 12596,12472 12573,12227
+Koppenstr./Karl-Marx-Allee: Fußgängerampel	DH:len=20:tl 12573,12227 12596,12472 12360,12505
+Koppenstr./Karl-Marx-Allee: Fußgängerampel	DH:len=20:tl 12360,12505 12596,12472 12632,12630
+# 
+Prenzlauer Allee -> Wohngebiet: linken Gehweg benutzen	DH:h=q3,240 12090,16199 12075,16144 12030,15968 12128,15914
