@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (c) 1995-2017 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2018 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -19196,6 +19196,7 @@ sub make_handicap_directed_net {
 									     Strassen->new('handicap_directed'),
 									     speed   => get_current_active_speed_kmh(),
 									     vehicle => get_special_vehicle(),
+									     handicap_penalty => \%handicap_s_speed,
 									    );
 	} else {
 	    warn "NOTE: No handicap_directed data file available.\n";
