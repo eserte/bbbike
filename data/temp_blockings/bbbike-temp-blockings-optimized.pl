@@ -4657,6 +4657,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Wilhelmstr. und Behrenstr.: Sperrung Richtung Norden zwischen Französische Str. und Behrenstr. sowie Richtung Osten zwischen Wilhelmstr. und Mauerstr., bis 4. Mai 2018',
          'type' => 'handicap',
          'until' => 1525449600
+       },
+       undef,
+       undef,
+       {
+         'data' => '	q4::inwork; 3623,10800 3835,10915
+',
+         'from' => undef,
+         'id' => 2950,
+         'source_id' => 'LMS-BR_r_LMS-BR_122462_LMS-BR_72',
+         'text' => 'Gervinusstr.: Einbahnstraße, gesperrt Richtung Wilmersdorfer Str., bis 09.01.2019',
+         'type' => 'handicap',
+         'until' => 1547074800
        }
      
 );

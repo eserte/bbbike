@@ -300,7 +300,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 	RW2;RW2 4512,5199 4432,5160 4343,5112
 #: XXX Radwege sollen saniert werden oder es entstehen sogar Radstreifen (Umsetzung 2018) vvv
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
-#: last_checked: 2018-04-20 vvv
+#: last_checked: 2018-04-27 vvv
 #: next_check: 2018-12-31 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
@@ -1076,7 +1076,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2018-04-04
+#: last_checked: 2018-04-27
 #: next_check: 2018-06-28
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1088,7 +1088,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut rbbtext bis 31.05.2016, laut vmz bis Ende 2016, laut fritz bis 09.01.2018
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2018-04-04
+#: last_checked: 2018-04-27
 #: next_check: 2018-06-28
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
@@ -1098,13 +1098,13 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: IM_018997
 #: source_id: IM_023987
 #: source_id: IM_025933
-#: last_checked: 2018-04-04
+#: last_checked: 2018-04-27
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2018-04-04
+#: last_checked: 2018-04-27
 #: check_frequency: 60d
 Busspur ist immer gültig	RW5; 9475,12365 9613,12381
 # 
@@ -1504,7 +1504,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 	RW3;RW3 11159,10769 11234,10739 11275,10723
 #: XXX Bauarbeiten, Radspuren teilweise aufgehoben
 #: XXX war: RW4;RW4
-#: last_checked: 2018-03-09
+#: last_checked: 2018-04-27
 #: check_frequency: 60d
 	RW0;RW0 8804,12280 8775,12457
 	RW4;RW4 8775,12457 8766,12541
@@ -4711,7 +4711,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 	RW3;RW3 12969,7610 12991,7549 13015,7471
 #: next_check_id: KARLMARXSTR-2016
 #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus?
-#: osm_watch: way id="297058655" version="4"
+#: osm_watch: way id="297058655" version="5"
 #: last_checked: 2018-04-12 vvv
 #: next_check: 2018-05-02 vvv
 	RW4; 12969,7610 12914,7785

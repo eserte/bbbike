@@ -21531,8 +21531,8 @@ EOF
      { from  => $isodate2epoch->("2017-05-26 11:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2017-05-28 20:00:00"),
        periodic => 1,
-       recurrences => [['yearly', days => 4, months => 5]],
-       recurrence_prewarn_days => 7, # findet es 2018 überhaupt statt?
+       #recurrences => [['yearly', days => 4, months => 5]],
+       #recurrence_prewarn_days => 7, # findet es 2018 überhaupt statt? -> kein Termin
        text  => 'Schöneberger Mai- und Spargelfest am 27. und 28. Mai 2017 in der Freiherr-vom-Stein-Straße',
        type  => 'gesperrt',
        source_id => 'http://www.ms-event-agentur.com/seite18.html?date=20170325',
@@ -27070,6 +27070,15 @@ EOF
 	2::temp 8332,13548 8354,13523 8362,13466 8365,13431 8356,13404 8314,13323
 	2::temp 8503,13553 8377,13463 8371,13399 8434,13310
 	2::temp 7021,13560 7056,13584 7132,13503 7122,13452 7109,13418
+EOF
+     },
+     { from  => undef, # 
+       until => 1547074800, # 2019-01-10 00:00
+       text  => 'Gervinusstr.: Einbahnstraße, gesperrt Richtung Wilmersdorfer Str., bis 09.01.2019',
+       type  => 'handicap',
+       source_id => 'LMS-BR_r_LMS-BR_122462_LMS-BR_72',
+       data  => <<EOF,
+	q4::inwork; 3623,10800 3835,10915
 EOF
      },
     );

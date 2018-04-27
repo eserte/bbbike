@@ -31,7 +31,7 @@ Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,1
 #: check_frequency: 90d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
-#: last_checked: 2018-04-26
+#: last_checked: 2018-04-27
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 #: next_check_id: RIGAER-2018
@@ -195,7 +195,7 @@ Prinzengasse: einige Fußgänger, parkende Autos	q3::inwork 9955,12300 10002,12305
 # REMOVED (Einbahnstraßenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universitätsstr.: wegen Bauarbeiten Einbahnstraße zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2018-04-04 vvv
+#: last_checked: 2018-04-27 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="5"
@@ -242,7 +242,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # 
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
-#: last_checked: 2018-04-04
+#: last_checked: 2018-04-27
 #: next_check: 2018-06-28
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # 
@@ -303,6 +303,8 @@ Rathausstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10584,12507 10601,12521
 # REMOVED --- #: XXX nach den Bauarbeiten vermutlich bessere Qualität --- #: last_checked: 2016-12-10 --- Andernacher Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 19155,8631 19249,8662
 # 
 #: next_check_id: TRESKOWALLEE-2017 vvv
+#: osm_watch: way id="580512810" version="2"
+#: osm_watch: way id="580508096" version="2"
 #: last_checked: 2018-03-25 vvv
 #: check_frequency: 90d vvv
 #: valid: -20201231 vvv
@@ -331,7 +333,7 @@ Wilhelminenhofstr.: Bauarbeiten zwischen Siemensstr. und Edisonstr., Fahrbahn un
 # 
 #: source_id: 2147342287
 #: source_id: LMS-BR_r_LMS-BR_124656_LMS-BR_72
-#: last_checked: 2018-04-10
+#: last_checked: 2018-04-27
 #: next_check: 2018-05-09
 #: valid: -20180509
 #: priority: #A
@@ -489,7 +491,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süde
 #: source_id: 2147342260
 #: source_id: LMS-BR_r_LMS-BR_123516_LMS-BR_72
 #: source_id: LMS-BR_r_LMS-BR_123515_LMS-BR_72
-#: last_checked: 2018-04-06 vvv
+#: last_checked: 2018-04-27 vvv
 # REMOVED --- #: next_check: 2018-04-03 vvv
 # REMOVED --- #: valid: -20180403 vvv
 #: priority: #A vvv

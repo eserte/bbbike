@@ -17,7 +17,7 @@
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.670050.php
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
 #: XXX Kreuzberger Planungen für 2018 und später (es wurden nicht alle in den BBBike-Daten eingetragen)
-#: last_checked: 2018-04-08
+#: last_checked: 2018-04-27
 #: next_check: 2018-12-31
 Mehringdamm: Radspuren oder Sanierung	?::projected; 9224,9053 9225,9111 9248,9350 9280,9476 9334,9670 9387,9804 9444,9919 9448,10014
 # 
@@ -64,7 +64,7 @@ Danziger Str.	?::projected 12616,14315 12722,14232 12901,14093 12975,13990 13037
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2018-04-26
+#: last_checked: 2018-04-27
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -155,7 +155,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: source_id: 2147340970
 #: source_id: LMS-BR_r_LMS-BR_90638
 #: source_id: 2147341904
-#: last_checked: 2018-04-16 vvv
+#: last_checked: 2018-04-27 vvv
 #: check_frequency: 60d vvv
 # REMOVED (fertig) --- Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
@@ -202,7 +202,7 @@ Quickborner Str.: werden hier Radspuren markiert?	?::projected 7991,21531 7966,2
 #: source_id: LMS-BR_r_LMS-BR_120876_LMS-BR_72
 #: last_checked: 2017-10-16 (mapillary)
 # REMOVED --- #: check_frequency: 360d
-#: next_check: 2018-05-31
+#: next_check: 2018-05-22
 Schönerlinder Str.: entstehen hier bessere Radwege oder Radspuren?	?::projected 11929,23946 11959,24220 11980,24276 12108,24547 12136,24607 12254,24857 12395,25143 12461,25270 12543,25423 12624,25570 12697,25704 12944,26163 13192,26628 13256,26863 13345,27187
 #
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: II/2018 -- IV/2018)
@@ -929,14 +929,14 @@ Dovestr.: Radstreifen	?::projected 4749,12689 4648,12559 4616,12532
 #: osm_watch: way id="26071046" version="11"
 #: osm_watch: way id="26071048" version="9"
 #: osm_watch: way id="26474540" version="8"
-#: last_checked: 2017-12-26
+#: last_checked: 2018-04-27
 #: check_frequency: 90d
 Brandenburgische Str.: Radstreifen (wo genau? oder die gesamte Strecke?)	?::projected 4342,9301 4246,9406 4057,9648 3980,9761 3974,9774 3949,9842 3927,9935 3902,10043 3874,10153 3852,10236 3835,10352
 # 
 #: osm_watch: way id="188441401" version="6"
 #: osm_watch: way id="171484595" version="10"
 #: osm_watch: way id="129621748" version="9"
-#: last_checked: 2018-04-15 (mapillary)
+#: last_checked: 2018-04-27
 #: check_frequency: 60d
 Ernst-Reuter-Platz: Zweirichtungsradwege	?::projected 4838,11697 4885,11735 4905,11785 4854,11843 4763,11834 4737,11768 4781,11708 4838,11697
 # 
@@ -1204,7 +1204,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/holzmarktstrasse/download/LP_01.pdf
 #: source_id: 2147340618
 #: source_id: LMS-BR_r_LMS-BR_81616
-#: last_checked: 2018-04-20
+#: last_checked: 2018-04-27
 #: next_check: 2018-06-30 (laut fritz)
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 # 
@@ -1251,12 +1251,12 @@ Baumarkt (?) wird gebaut: wird es eine Durchfahrmöglichkeit geben?	?::inwork 170
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_06_0773_0896_online.pdf (Einziehung von Straßenland)
 #: by: https://gruen-berlin.de/kulturforum
 #: XXX Bebauungsplan 1-35a (Kulturforum)
-#: last_checked: 2018-04-11
+#: last_checked: 2018-04-27
 #: next_check: 2018-05-15
 Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::projected 8083,11381 7970,11441 7954,11399 7965,11380 7934,11275
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php
 #: XXX außerdem: voraussichtlich ab April 2018 Komplettsperrung
-#: last_checked: 2018-04-11
+#: last_checked: 2018-04-27
 #: check_frequency: 14d
 Herbert-von-Karajan-Str.: gibt es Einschränkungen für Radfahrer während der Bauarbeiten?	? 8005,11627 7965,11467 7970,11441
 # 
@@ -2250,9 +2250,7 @@ Töpchiner Weg: Bau eines Zebrastreifens?	?::projected 11168,-441 11207,-412 1122
 #: priority: #C
 Curtiusstr./Baseler Str.: Zebrastreifen geplant	?::projected 3188,3976 3185,3958 3201,3954
 # 
-#: XXX bis 09.01.2019
-#: source_id: LMS-BR_r_LMS-BR_122462_LMS-BR_72
-Gervinusstr.: Einbahnstraße (welche Richtung? gesperrt Richtung Osten?), für Radfahrer relevant?	? 3835,10915 3623,10800
+# REMOVED (-> temp_blockings) --- #: XXX bis 09.01.2019 --- #: source_id: LMS-BR_r_LMS-BR_122462_LMS-BR_72 --- Gervinusstr.: Einbahnstraße (welche Richtung? gesperrt Richtung Osten?), für Radfahrer relevant?	? 3835,10915 3623,10800
 # 
 #: by: https://www.berliner-zeitung.de/berlin/pilotprojekt-in-mitte-berlin-rollt-fahrradfahrern-den-roten-teppich-aus-29559664
 #: last_checked: 2018-02-28
@@ -2268,7 +2266,7 @@ Brandenburgische Str./Ballenstedter Str.	?::projected 3932,9819 3949,9842 3978,9
 #: last_checked: 2018-04-10
 #: check_frequency: 60d
 Blücherstr./Brachvogelstr.	?::projected 9997,9987 10006,9942 9965,9925
-#: last_checked: 2018-04-06
+#: last_checked: 2018-04-27
 #: check_frequency: 60d
 Lindenstr./E.T.A.-Hoffmann-Promenade	?::projected 9747,10741 9777,10719 9750,10687
 # 
@@ -2826,12 +2824,12 @@ Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4106
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-07-12-prot-fahrratsitzung3.pdf
 #: osm_watch: way id="338316875" version="7"
-#: last_checked: 2018-02-23
+#: last_checked: 2018-04-27
 #: check_frequency: 90d
 Kolonnenstr.: werden hier Radstreifen errichtet?	?::projected; 7709,8777 7795,8765 8008,8771 8014,8771 8078,8772
 # 
 #: osm_watch: way id="441924795" version="1"
-#: last_checked: 2018-02-23
+#: last_checked: 2018-04-27
 #: check_frequency: 60d
 Am Lokdepot: entsteht hier zumindest für Fußgänger (Treppe?) eine Verbindung?	?::inwork 8383,8862 8389,8775
 # 
@@ -3030,7 +3028,7 @@ Gewerbepark Babelsberg: drei neue Planstraßen entstehen, Namen, Qualität, Lage?	
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7661
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036680121217/680121217/00270568/68-Anlagen/01/DS2337_VzKAufstellungVI-46-1undFruehzeitigeBet.pdf
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036562139600/562139600/00280939/39-Anlagen/01/DS0332_VzK_HalleschesUfer_final.pdf
-#: last_checked: 2018-03-23
+#: last_checked: 2018-04-27
 #: next_check: 2018-06-01
 Kleinbeerenstr. - Großbeerenstr.: geplanter Weg im Zuge des Bebauungsplans VI-46-1	?::projected 8979,10485 9192,10528
 # 
@@ -3888,6 +3886,7 @@ B117: neue Anschlussstelle wird gebaut, mit Radweg	?::projected 21834,-2143 2152
 Buckower Felder: neues Wohnviertel entsteht	?::projected 12539,1049 12637,1104 12797,1277 12918,1312 12960,1025 12605,846 12539,1049
 # 
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_53_6049_6152_online.pdf
+#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_17_2083_2242_online.pdf (Grundstücksnummerierungen)
 #: XXX fehlt bei Berlin.coords.data
 #: last_checked: 2018-03-11
 #: next_check: 2018-10-01
