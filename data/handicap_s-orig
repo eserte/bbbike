@@ -521,12 +521,17 @@ Vorbergstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q3::inwork 7363,9152 73
 # REMOVED --- #: last_checked: 2017-04-09 --- #: next_check: 2017-10-01 --- #: valid: -20171001 --- Schloﬂallee: Bauarbeiten, Fahrbahn teilweise gesperrt	q2::inwork 11730,19684 11883,19739
 # REMOVED --- #: source_id: 2147340983 vvv --- #: source_id: LMS-BR_r_LMS-BR_91192 --- #: source_id: LMS-BR_r_LMS-BR_91193 --- #: last_checked: 2017-04-09 vvv --- #: next_check: 2017-07-07 vvv --- #: valid: -20170707 vvv --- Blankenburger Weg: Bauarbeiten, Einbahnstraﬂenregelung, Radweg Richtung Nordosten ist auch gesperrt	q2::inwork; 12222,20637 12442,20805 --- Pankstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 12524,20863 12442,20805
 # 
+#: next_check_id: WILTBERGSTR-2017
 #: source_id: 2147339182
 #: source_id: LMS-BR_r_LMS-BR_93376
-#: last_checked: 2017-04-09
-#: check_frequency: 360d
-#: valid: -20181231
-Wiltbergstr.: Bauarbeiten, Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3::inwork; 16669,25373 16583,25440 16475,25526 16414,25575 16294,25683 16220,25716
+#: last_checked: 2018-04-28 vvv
+#: next_check: 2018-12-31 vvv
+#: valid: -20181231 vvv
+Wiltbergstr.: Bauarbeiten, Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3-::inwork; 16669,25373 16583,25440 16475,25526 16414,25575 16294,25683 16220,25716
+Alt-Buch: Bauarbeiten, Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3-::inwork; 16414,25575 16593,25640
+#: valid: ^^^
+#: next_check ^^^
+#: last_checked ^^^
 # 
 # REMOVED --- #: last_checked: 2016-02-13 --- #: check_frequency: 60d --- Prenzlauer Promenade: Engstelle, Fuﬂg‰nger und entgegenkommende Radfahrer	q2::inwork; 11950,18529 11934,18576 11980,18900
 # REMOVED --- #: next_check_id: BLANKENBURGER-2014 vvv --- #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/blankenburger_stra__e_konzept_beschilderung_umleitung_3_ta.pdf?download.html vvv --- #: XXX laut vmz Einbahnstraﬂe bis 31. Dezember 2015 --- #: source_id: IM_022288 vvv --- #: last_checked: 2015-07-19 vvv --- #: next_check: 2015-12-31 vvv --- #: valid: 20140701-20151231 vvv --- Blankenburger Str.: Bauarbeiten, Einbahnstraﬂe, gesperrt in Richtung Westen	q4::inwork; 12008,20368 11959,20365 11799,20224 11690,20127 11632,20086 11555,20051
@@ -2703,6 +2708,8 @@ Wadzeckstr. - Mollstr.: einige Fuﬂg‰nger	q1 11315,13210 11399,13333
 (zum Poststadion): Parkplatzverkehr	q1 7452,13904 7417,13880 7445,13792 7431,13740 7343,13679 7338,13649
 (entlang des Vabali Spa): einige Fuﬂg‰nger	q1 7338,13649 7422,13487
 Liebigstr.: kurvig, recht eng durch parkende Autos	q1 13905,12374 13927,12370 14074,12343 14091,12355 14147,12344 14166,12323 14229,12311
+(Marseillestr. - Dr.-Markus-Str.): Fuﬂweg	q1 12364,21623 12402,21537
+(Parkplatz Kaufland): Parkplatzverkehr	q1 13031,17775 12981,17557
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -3420,7 +3427,7 @@ Mittelheide: enge Straﬂe	q0- 22724,6608 22858,6535 23033,6511 23135,6500 23220,6
 # 
 #: by: Steffen Ryll:
 #: corrected_by: srt/policy (q1 -> q0-)
-Platanenstr.: teilweise recht eng	q0- 9348,19786 9489,19826 9822,19916 10132,19993
+Platanenstr.: teilweise recht eng	q0- 9349,19782 9498,19817 9824,19910 10134,19981
 # 
 #: by: Michael Dinter: vvv
 Senegalstr.: enge Straﬂe	q1 5961,15562 5906,15623 5848,15685 5787,15741 5722,15795

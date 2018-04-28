@@ -4669,6 +4669,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Gervinusstr.: Einbahnstraße, gesperrt Richtung Wilmersdorfer Str., bis 09.01.2019',
          'type' => 'handicap',
          'until' => 1547074800
+       },
+       {
+         'data' => '#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=31981
+#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2018-04-28
+#: check_frequency: 60d
+	q4::inwork 11627,19907 11555,20051
+',
+         'from' => undef,
+         'id' => 2951,
+         'text' => 'Grumbkowstr.: Bauarbeiten, Fahrbahn zwischen Rolandstr. und Blankenburger Str. gesperrt, Ende unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

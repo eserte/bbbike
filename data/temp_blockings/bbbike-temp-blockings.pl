@@ -9844,7 +9844,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006462',
        data  => <<EOF,
-	2::temp 13909,20928 13562,20913 13576,20849
+	2::temp 13909,20928 13662,20917 13562,20913 13576,20849
 EOF
      },
      { from  => undef, # 
@@ -11835,7 +11835,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009192',
        data  => <<EOF,
-	1::inwork 11555,20051 11535,20092 11419,20327 11269,20667
+	1::inwork 11555,20051 11537,20087 11419,20327 11269,20667
 EOF
      },
      { from  => 1214257459, # 2008-06-23 23:44
@@ -15421,7 +15421,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013876',
        data  => <<EOF,
-	q4::inwork; 9348,19786 9404,19691 9468,19599 9562,19529 9588,19511 9688,19440 9791,19363
+	q4::inwork; 9349,19782 9404,19691 9468,19599 9562,19529 9588,19511 9688,19440 9791,19363
 EOF
      },
      { from  => 1249365600, # 2009-08-04 08:00
@@ -16213,7 +16213,7 @@ EOF
 #: XXX nach den Bauarbeiten fällt evtl. das Kopfsteinpflaster weg, es wird zumindest Richtung Norden Radwege geben
 #: last_checked: 2010-07-11
 #: next_check: 2010-10-01
-	q4::inwork; 10680,18380 10739,18262 10755,18231 10815,18074 10830,17985
+	q4::inwork; 10680,18380 10718,18304 10739,18262 10755,18231 10815,18074 10830,17985
 	q4::inwork; 10815,18074 10900,18113 10970,18164 10993,18203 11123,18343 11001,18528
 EOF
      },
@@ -18935,7 +18935,7 @@ EOF
        source_id => 'IM_018078',
        data  => <<EOF,
 #: next_check: 2012-05-15
-	q4::inwork; 10680,18380 10739,18262 10755,18231 10815,18074 10830,17985
+	q4::inwork; 10680,18380 10718,18304 10739,18262 10755,18231 10815,18074 10830,17985
 EOF
      },
      { from  => 1295721886, # 2011-01-22 19:44
@@ -21102,7 +21102,7 @@ EOF
 # REMOVED (bei VMZ abgelaufen) --- : next_check: 2013-09-01 --- #: XXX von 22.6.2013 für 10 Wochen in _beiden_ Richtungen gesperrt --- danach wieder die alte Situation herstellen --- #: XXX vmz-Eintrag dafür: Friedrich-Engels-Str. (Niederschönhausen) in beiden Richtungen zwischen Nordendstr. und Platanenstr. Geplant ab: 22.06.2013 07 Uhr, Baustelle, Straße vollständig gesperrt eine Umleitung ist eingerichtet (bis auf weiteres)	INKO_119074 --- #: priority: #A
 # REMOVED (ja) --- #: next_check: 2013-12-15 --- #: XXX danach bessere Straßenqualität? Radstreifen? --- #: osm_watch: way id="24930947" version="20"
 #: source_id: IM_020259 (zusätzlich)
-	q4::inwork; 9149,20336 9226,20124 9255,20038 9289,19947 9325,19851 9348,19786
+	q4::inwork; 9149,20336 9226,20124 9255,20038 9289,19947 9325,19851 9349,19782
 EOF
      },
      { from  => 1350252000, # 2012-10-15 00:00
@@ -23058,7 +23058,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20140528.1315.397553.html',
        data  => <<EOF,
-	q2::inwork 11555,20051 11535,20092 11419,20327
+	q2::inwork 11555,20051 11537,20087 11419,20327
 EOF
      },
      { from  => 1402304400, # 2014-06-09 11:00
@@ -23884,7 +23884,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_023339',
        data  => <<EOF,
-	1::inwork 15230,26560 15589,27116
+	1::inwork 15230,26548 15589,27116
 EOF
      },
      { from  => $isodate2epoch->("2014-11-05 00:00:00"),
@@ -24531,7 +24531,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_025047',
        data  => <<EOF,
-	q4::inwork; 10132,19993 10167,19797 10195,19703 10224,19628 10257,19542
+	q4::inwork; 10134,19981 10167,19797 10195,19703 10224,19628 10257,19542
 EOF
      },
      { from  => undef,
@@ -26532,7 +26532,7 @@ EOF
        data  => <<EOF,
 #: note: vmz meint Ende November 2017
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=35015 (bis 6.11.2017)
-	q3::inwork; 10066,20494 10064,20437 10066,20323 10068,20188 10106,20093 10117,20065 10132,19993 10167,19797
+	q3::inwork; 10066,20494 10064,20437 10066,20323 10068,20188 10106,20093 10117,20065 10134,19981 10167,19797
 EOF
      },
      { from  => undef, # 
@@ -26575,7 +26575,7 @@ EOF
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=35015 (bis 6.11.2017)
 #: source_id: LMS-BR_r_LMS-BR_108061_LMS-BR_72
 #: source_id: 2147341767
-	q3::inwork; 10167,19797 10132,19993 10117,20065 10106,20093 10068,20188 10066,20323 10064,20437 10066,20494
+	q3::inwork; 10167,19797 10134,19981 10117,20065 10106,20093 10068,20188 10066,20323 10064,20437 10066,20494
 EOF
      },
      { from  => undef, # 
@@ -27079,6 +27079,18 @@ EOF
        source_id => 'LMS-BR_r_LMS-BR_122462_LMS-BR_72',
        data  => <<EOF,
 	q4::inwork; 3623,10800 3835,10915
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Grumbkowstr.: Bauarbeiten, Fahrbahn zwischen Rolandstr. und Blankenburger Str. gesperrt, Ende unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=31981
+#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2018-04-28
+#: check_frequency: 60d
+	q4::inwork 11627,19907 11555,20051
 EOF
      },
     );

@@ -85,7 +85,7 @@ Knoten M‰rkische/Landsberger Allee	1 19452,14807 19464,14971 19408,15007
 Knoten M‰rkische/Landsberger Allee	1 19516,14993 19551,14961 19615,14960 19643,15025 19614,15061
 Knoten M‰rkische/Landsberger Allee	1 19694,15141 19707,15206 19654,15219 19577,15166
 Knoten M‰rkische/Landsberger Allee	1 19502,15089 19604,15227
-Alt-Blankenburg	1 13576,20849 13562,20913 13909,20928
+Alt-Blankenburg	1 13576,20849 13562,20913 13662,20917 13909,20928
 Alt-Blankenburg	1 13909,20928 13576,20849
 Seestr.	1 5043,14671 5246,14758 5311,14786 5440,14840
 Seestr.	1 5440,14840 5331,14735 5293,14699 5264,14671 5051,14606
@@ -297,13 +297,14 @@ Ohmstr.	1 11324,11689 11378,11856
 Anton-Saefkow-Str.	1 13183,14400 13084,14472 13013,14523 12901,14594 12862,14618 12789,14670 12700,14726 12528,14845
 Spilstr.	1 3865,6758 3826,6656 3836,6550
 #: next_check_id: CHAUSSEESTR-2016 vvv
-#: XXX wieder herstellen, wenn es dann noch eine Einbahnstraﬂe gibt
+#: XXX wieder herstellen, wenn es dann noch eine Einbahnstraﬂe gibt vvv
 ##: note einige Radfahrer hier in der falschen Richtung angetroffen vvv
 #Wˆhlertstr.	1s:q4 
 #8442,14456 8669,14550
 #Pflugstr.	1s:q4 8669,14550 8776,14364
 ##: note ^^^
 #Schwartzkopffstr.	1s:q4 8776,14364 8607,14253
+#: XXX ^^^
 #: next_check_id ^^^
 Strausberger Str.	1 12416,13045 12368,13031 12247,12848
 Groﬂe Pr‰sidentenstr.	1 10105,13004 10220,13098
@@ -2849,6 +2850,12 @@ Dr‰ngelgitter	BNP:3::trailer=10 22097,5879
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: KARLINEKENWEG-2018
+#: osm_watch: way id="499986562" version="2"
+#: last_checked: 2018-04-28
+#: check_frequency: 60d
+Karlinekenweg: Bauarbeiten, gesperrt	2::inwork 11359,20297 11405,20196
+# 
 #: last_checked: 2018-04-27
 #: check_frequency: 360d
 Neue Nationalgalerie: Bauarbeiten, Parkplatz gesperrt	2::inwork 7874,11293 7828,11133
@@ -2977,9 +2984,9 @@ Mauerstr.: Bauarbeiten, Einbahnstraﬂe	1s:q4:inwork 9108,11961 9138,11872
 (entlang der Erpe): Bauarbeiten der DB	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
 # 
 #: next_check_id: NIZZASTR-2014
-#: last_checked: 2017-08-06
+#: last_checked: 2018-04-28
 #: check_frequency: 60d
-(Marseillestr. - Straﬂe 160): wegen Bauarbeiten gesperrt	2::inwork 12495,21397 12507,21391 12547,21372
+(Marseillestr. - Straﬂe 160): nur ein provisorischer Steg	2 12495,21397 12507,21391 12547,21372
 # 
 #: next_check_id: RIGAER-2018
 #: XXX_indoor sobald aktiv: temp_blockings-Eintrag deaktivieren
@@ -3072,9 +3079,10 @@ Schinkelplatz: Einbahnstraﬂe	1s:q3:inwork 9994,12368 10002,12305 10008,12274 100
 #: check_frequency: 30d
 Limburger Str.: Bauarbeiten am Rathaus Wedding, komplett gesperrt	2::inwork 7129,15717 7012,15571
 # 
+#: next_check_id: WILTBERGSTR-2017
 #: source_id: 2147339182
-#: last_checked: 2017-04-09
-#: check_frequency: 360d
+#: last_checked: 2018-04-28
+#: next_check: 2018-12-31
 #: valid: -20181231
 Karower Str.: tempor‰re Einbahnstraﬂenregelung	1s:q3:inwork 16593,25640 16632,25512 16669,25373
 # 
