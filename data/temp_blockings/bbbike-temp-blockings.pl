@@ -9452,7 +9452,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006085',
        data  => <<EOF,
-	1::inwork 23206,206 22547,651 22351,862 22162,1067
+	1::inwork 23206,206 22916,402 22547,651 22351,862 22162,1067
 EOF
      },
      { from  => undef, # 
@@ -21403,6 +21403,7 @@ EOF
 #: tempex: 20170421T1400-20170423 vvv
 	2::temp 22138,4642 22111,4562 22093,4499
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
+	2::temp 22111,4562 22162,4546 22214,4548
 #: tempex ^^^
 EOF
      },
@@ -25479,9 +25480,9 @@ EOF
 #: note: die Baustelle ist gewandert
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=20802
-#: XXX laut fritz mittlerweile in beiden Richtungen --- stimmt das?
+# REMOVED (ja) ---  XXX laut fritz mittlerweile in beiden Richtungen --- stimmt das?
 #: source_id: LMS-BR_r_LMS-BR_72519
-	q4::inwork; 12911,1815 12940,1547
+	q3::inwork 12911,1815 12940,1547
 EOF
      },
      { from  => 1466978400, # 2016-06-27 00:00
@@ -26963,7 +26964,7 @@ EOF
        text  => 'Stillerzeile: Bauarbeiten, östlich des Löbauer Wegs einige Meter Fahrbahn gesperrt, westlich Einbahnstraßenregelung, offen Richtung Westen',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2018-03-25 vvv
+#: last_checked: 2018-04-29 vvv
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 	q4::inwork; 24629,5831 24798,5891
 	q3::inwork 24798,5891 24977,5880
@@ -27091,6 +27092,15 @@ EOF
 #: last_checked: 2018-04-28
 #: check_frequency: 60d
 	q4::inwork 11627,19907 11555,20051
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Uferweg: zwischen Mentzelpark und Eiselenweg Bauarbeiten, Weg komplett gesperrt, Ende der Sperrung unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: last_checked: 2018-04-29
+	2::inwork 21696,5053 21600,5221 21512,5404 21487,5425
 EOF
      },
     );

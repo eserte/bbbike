@@ -283,7 +283,7 @@ Schwelmer Str.	1 3676,311 3569,469 3497,583
 Schöppinger Str.	1 3691,566 3648,531 3569,469
 Arberstr.	1 19424,9502 19406,9236
 Hanne Nüte	1 13675,4855 13695,4859 13758,4926 13761,4992 13717,5175
-Parchimer Str.	1 22292,12198 22228,12274 22212,12349 22212,12422 22256,12489 22253,12570 22271,12623 22310,12637
+Parchimer Str.	1s 22212,12403 22212,12422 22257,12481 22258,12573 22272,12610
 Ringbahnstr.	1 12934,6967 13072,7013
 Stiftsweg	1s 11001,18528 11239,18832 11263,18842
 Bleicheroder Str.	1 11263,18842 11439,18890 11526,18929 11622,18964 11727,19001 11762,19014 11818,19089
@@ -486,7 +486,7 @@ Rahel-Hirsch-Weg	1 8586,13440 8600,13448 8581,13487 8554,13476 8586,13440
 Hempelsteig	1 -787,13147 -525,13034 -472,12961
 Kaulsdorfer Str.	1 22075,6967 22049,7085
 (KGA Rahnsdorf Süd, Birkenweg): kein Durchfangsverkehr, abgesperrtes Tor	2 30345,3277 30389,3314 30393,3437 30378,3501
-Steinträgerweg	1 12987,2220 13023,2093
+Steinträgerweg	1s 12987,2220 13023,2093
 Am Kurzen Weg	1 -7180,14351 -7172,14459 -7185,14574
 Straßenbahnwendestelle Virchowstr.	1 13081,13457 12925,13373
 Am Friedrichshain	1 12065,13851 12104,13913 12147,13887 12106,13828
@@ -1954,6 +1954,9 @@ Otto-Schmirgal-Str. -> Am Tierpark: Straßenbahntrasse	3::igndisp 18512,10337 185
 Am Tierpark -> Otto-Schmirgal-Str.: Straßenbahntrasse	3::igndisp 18585,10278 18554,10354 18512,10337
 Straßenbahntrasse	3nocross::ignrte 18280,11266 18263,11393 18216,11656
 Am Tierpark -> Am Tierpark [zur Nebenfahrbahn]: Straßenbahntrasse	3::igndisp 18216,11656 18263,11393 18304,11407
+Straßenbahntrasse	3nocross::ignrte 18327,11105 18343,11041 18417,10738
+Am Tierpark -> Elfriede-Tygör-Str.: Straßenbahntrasse	3::igndisp 18417,10738 18343,11041 18319,11036
+Elfriede-Tygör-Str. -> Am Tierpark: Straßenbahntrasse	3::igndisp 18319,11036 18343,11041 18327,11105
 Mittelstreifen ohne Überquerungshilfe	3nocross::ignrte 12497,11459 12539,11416 12576,11375 12641,11288
 Mühlenstr. -> Am Postbahnhof: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12497,11459 12539,11416 12594,11467
 Am Postbahnhof -> Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3::igndisp 12594,11467 12539,11416 12576,11375
@@ -2259,7 +2262,8 @@ tragen (2x13 Stufen)	0:30:-122 9047,948
 tragen (28 Stufen)	0:30:-260 6138,12877
 Tor, kann geschlossen sein	BNP:10:-180:trailer=15 20682,9834
 Tor, kann geschlossen sein	BNP:10:-180:trailer=15 20683,9558
-Tor	BNP:3:-8:trailer=10 20829,5418
+Tor, kann geschlossen sein	BNP:10:-8:trailer=15 20829,5418
+Tor, kann geschlossen sein	BNP:10:-159:trailer=15 23614,12615
 Schranke	BNP:3:-7:trailer=10 20849,5266
 tragen (20 Stufen)	0:30:-90 22624,13901
 tragen (8 weite Stufen) bzw. Naturrampe benutzen	0:15:-175 -6004,15050
@@ -2857,7 +2861,6 @@ Schranke	BNP:5:-102 12571,7899
 Drängelgitter	BNP:5:34:trailer=10 14453,9929
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2:39:trailer=4 14558,10082
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2:41:trailer=4 14597,10129
-Drängelgitter	BNP:1:-149:trailer=3 12833,9998
 Schranke (Privatstr.)	BNP:5:-180 25039,5304
 Schranke	BNP:2:85:trailer=4 9907,11752
 Schranke	BNP:3:40:trailer=10 10114,11789
@@ -2931,6 +2934,8 @@ Drängelgitter	BNP:3:0:trailer=10 3783,-2079
 Drängelgitter	BNP:3:50:trailer=10 21618,5699
 Drängelgitter	BNP:3:85:trailer=10 22070,5876
 Drängelgitter	BNP:3:78:trailer=10 22097,5879
+Charlotte-von-Mahlsdorf-Ring: Baustraße	2::inwork 24649,10710 24728,10722 24739,10645
+Hermineweg: Baustraße, gesperrt	2::inwork 24831,10966 24906,10965
 Karlinekenweg: Bauarbeiten, gesperrt	2::inwork 11359,20297 11405,20196
 Neue Nationalgalerie: Bauarbeiten, Parkplatz gesperrt	2::inwork 7874,11293 7828,11133
 Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,898 9024,906 9058,932
@@ -2959,7 +2964,7 @@ Gutenbergstr.: Einbahnstraße wegen Bauarbeiten	1s:inwork 5317,12242 5518,12159
 Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:inwork 5518,12159 5627,12105 5658,12082 5712,12033 5775,11975
 Möckernkiez: Bauarbeiten	2::inwork 8778,9759 8710,9725 8729,9670 8596,9595 8565,9657
 Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen hier weiterhin Kfz fahren?	2::inwork 22101,10985 22146,10995 22172,10996 22195,10993
-Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11485 20631,11621 20633,11651
+Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20631,11621 20633,11651
 Schinkelplatz: Einbahnstraße	1s:inwork 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
 Limburger Str.: Bauarbeiten am Rathaus Wedding, komplett gesperrt	2::inwork 7129,15717 7012,15571
 Karower Str.: temporäre Einbahnstraßenregelung	1s:inwork 16593,25640 16632,25512 16669,25373
@@ -2976,7 +2981,6 @@ Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	3 8776,14364
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:inwork 9042,11839 8969,11814
 Nordhafenpark West: noch Bauarbeiten, gesperrt	2::inwork 7551,14464 7426,14539
 Nordhafenpark West: unter der Brücke gesperrt	2::inwork 7636,14414 7612,14449 7551,14464
-Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,9200 12548,9167
 E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
 Lydia-Rabinowitsch-Str.: noch gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924

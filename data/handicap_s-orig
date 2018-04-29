@@ -21,7 +21,7 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-04-26
+#: last_checked: 2018-04-28
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
@@ -444,11 +444,9 @@ Dieselstr., Umfahrung: Fußgänger, schmal	q2::inwork 14326,8062 14366,8058 14384,
 #: source_id: IM_022515
 #: source_id: 2147338550
 #: source_id: LMS-BR_r_LMS-BR_19252
-#: last_checked: 2018-04-12 vvv
+#: last_checked: 2018-04-29 vvv
 #: next_check: 2018-05-02 vvv
-Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süden auf Gehweg ausweichen, teilweise ist die neue Fahrbahn auch befahrbar	q4::inwork; 12753,8187 12794,8103
-Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süden auf Gehweg ausweichen, teilweise ist die neue Fahrbahn auch befahrbar	q3::inwork; 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785
-Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süden auf Gehweg ausweichen, teilweise ist die neue Fahrbahn auch befahrbar	q4::inwork; 12914,7785 12969,7610
+Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süden auf Gehweg ausweichen	q4::inwork; 12753,8187 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785 12969,7610
 #: next_check ^^^
 #: last_checked ^^^
 # REMOVED (fertig) --- Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung Süden auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12969,7610 12991,7549 12992,7545 13015,7471 13018,7441
@@ -538,6 +536,11 @@ Alt-Buch: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweichen	q3-::inwork
 # REMOVED (vermutlich wieder offen, weil die südliche Fahrbahn schon fertig ist) --- Hans-Jürgen-Str.: Bauarbeiten, erschwerter Zugang zur Blankenburger Str.	q4::inwork 11839,20176 11799,20224
 # 
 ### Biesdorf ###
+# 
+#: next_check_id: MOEWENWEG-2017
+#: last_checked: 2018-04-29
+#: check_frequency: 90d
+Möwenweg: Straße wegen Bauarbeiten gesperrt, Umfahrung über sandigen Weg möglich	q3::inwork 22195,10993 22207,11069 22219,11136
 # 
 # REMOVED (laut osm für Radfahrer bereits befahrbar) --- #: next_check_id: ZIMMERMANNSTRBR-2015 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5575.html --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/zimmermannstrassenbruecke/ --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6162.html --- #: XXX Radfahrer können weiterhin passieren, zunächst über den nördlichen Gehweg, später über eine Behelfsbrücke (Breite 2,50m) --- #: XXX nach den Bauarbeiten (bis 2016-08?) wird es hier Radspuren geben --- #: XXX laut rbbtext bis 31.03.2016 --- #: XXX laut vmz bis Ende Oktober 2016, laut fritz bis 15.09.2016, laut Pressemitteilung Mitte September --- #: source_id: IM_024857 --- #: source_id: 2147339545 --- #: osm_watch: way id="25795962" version="15"  --- #: last_checked: 2016-06-19 --- #: next_check: 2016-09-15 --- Zimmermannstraßenbrücke: Bau einer neuen Brücke, Radfahrer müssen den Gehweg bzw. Behelfsbrücke benutzen	q4::inwork 21430,9026 21383,9045 21365,9059 21349,9062 21314,9083
 # 
@@ -1148,7 +1151,7 @@ Wuhlewanderweg: Fußgänger	q1 22270,11210 22236,11208
 Wuhlewanderweg: Fußgänger	q1 22238,6195 22237,6211 22236,6233 22214,6271 22146,6338 22097,6414 22030,6600 22056,6613 21976,6848 21888,6944 21590,7211 21574,7244 21567,7284 21613,7521 21620,7647 21597,7711 21570,7751 21616,7863 21629,7921 21599,7904 21593,7934 21568,8052 21351,8259 21337,8273 21276,8374 21193,8468 21173,8576 21183,8731 21192,8839 21210,8883 21252,8928 21280,8954 21334,9015 21349,9062
 Wuhlewanderweg: Fußgänger	q1 21383,9045 21467,9236 21524,9488 21587,9609 21633,9731 21678,9817 21686,9876
 Wuhlewanderweg: Fußgänger	q1 21611,9893 21619,9993 21566,10230 21585,10289 21584,10329 21586,10344 21608,10403 21646,10510 21657,10519 21791,10623 21827,10684 21869,10750 21950,10776 22059,10782 22110,10796
-Wuhlewanderweg: Fußgänger	q1 22059,10782 22103,10814 22160,10834
+Wuhlewanderweg: Fußgänger	q1 22059,10782 22103,10814 22166,10839
 Heinrich-Dathe-Platz: Fußgänger	q2 18512,10337 18478,10406 18456,10454 18442,10471
 Heinrich-Dathe-Platz: Fußgänger	q2 18478,10406 18394,10348
 Dathepromenade: Fußgänger	q1 18394,10348 18320,10318 18302,10289 18314,10260 18132,10183 18101,10169 18058,10166
@@ -2341,7 +2344,7 @@ Georg-Steger-Weg: einige Fußgänger	q1 1493,2247 1480,2199 1452,2095 1461,2073 14
 (Wutzkyallee - Zwickauer Damm): einige Fußgänger	q1 15349,1614 15437,1613 15505,1591 15606,1537 15670,1474
 #: XXX_prog BS am Zwickauer Damm, allerdings nur beim Überqueren oder wenn man sich auf der Fahrbahn befindet, ansonsten q1
 (Zwickauer Damm - Rudower Fließ): einige Fußgänger, Bordstein	q2 15688,1506 15776,1456
-(Zwickauer Damm - Rudower Fließ): einige Fußgänger	q1 15719,1557 15727,1525 15776,1456 15795,1428 15886,1382 15928,1395 16005,1350 16043,1311 16051,1293 16076,1272 16329,1128 16419,1048
+(Zwickauer Damm - Rudower Fließ): einige Fußgänger	q1 15719,1557 15727,1525 15776,1456 15795,1428 15886,1382 15928,1395 16005,1350 16040,1315 16051,1293 16076,1272 16329,1128 16419,1048
 #: XXX_prog BS an der Fleischerstr, ansonsten q1
 (Grünanlage - Fleischerstr.): einige Fußgänger, Bordstein	q2 15928,1395 15977,1422 15987,1430
 (Straße 618 - Rudower Fließ): einige Fußgänger	q1 16297,592 16271,609
@@ -2710,6 +2713,10 @@ Wadzeckstr. - Mollstr.: einige Fußgänger	q1 11315,13210 11399,13333
 Liebigstr.: kurvig, recht eng durch parkende Autos	q1 13905,12374 13927,12370 14074,12343 14091,12355 14147,12344 14166,12323 14229,12311
 (Marseillestr. - Dr.-Markus-Str.): Fußweg	q1 12364,21623 12402,21537
 (Parkplatz Kaufland): Parkplatzverkehr	q1 13031,17775 12981,17557
+Lubminer Weg: einige Fußgänger	q1 22319,12663 22391,12677
+(Parchimer Str. - Altentreptower Str.): einige Fußgänger	q1 22225,12281 22220,12243 22129,12155
+(Hamannweg - Heinrich-Grüber-Str.): einige Fußgänger	q1 23452,12663 23368,12699 23355,12732
+(Fleischerstr. - Grünanlage): enger Weg, einige Fußgänger	q2 16433,1180 16450,1135 16457,1129
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -3944,7 +3951,7 @@ Irmgardstr.: enge Straße	q1 974,4669 960,4660 881,4429 863,4363 865,4288 908,417
 #: by: anonymous
 Erna-Sack-Str.: enge Straße	q1 -7486,13321 -7496,13214
 #: by: Uwe Borgenhagen vvv
-(Buchbinderweg - Zittauer Str.): einige Fußgänger	q1 16485,1162 16435,1063 16419,1048 16387,976 16363,956 16365,935
+(Buchbinderweg - Zittauer Str.): einige Fußgänger	q1 16481,1164 16471,1157 16457,1129 16429,1065 16419,1048 16387,976 16363,956 16349,932
 #: by: ^^^
 #: by: Dietmar Schulz:
 (Hibiskusweg - Romain-Rolland-Str.): gemeinsamer Rad/Fußweg	q1 13245,17805 13229,17784 13245,17737

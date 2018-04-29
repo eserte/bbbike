@@ -400,7 +400,9 @@ Arberstr.	1 19424,9502 19406,9236
 #: by: Frank Ottens:
 #: confirmed_by: srt
 Hanne Nüte	1 13675,4855 13695,4859 13758,4926 13761,4992 13717,5175
-Parchimer Str.	1 22292,12198 22228,12274 22212,12349 22212,12422 22256,12489 22253,12570 22271,12623 22310,12637
+#: confirmed_by: srt
+#: note: wird aber von vielen Radfahrern missachtet
+Parchimer Str.	1s:q4 22212,12403 22212,12422 22257,12481 22258,12573 22272,12610
 #: by: Sascha (hurdler)
 Ringbahnstr.	1 12934,6967 13072,7013
 #: by: Robert J. vvv
@@ -719,7 +721,9 @@ Kaulsdorfer Str.	1 22075,6967 22049,7085
 #: by: Roland Mohrbacher and osm
 #: XXX wird die Einbahnstraßenregelung für Radfahrer aufgehoben?
 #: by: http://www.berliner-woche.de/buckow/verkehr/radfahren-in-beide-richtungen-d135488.html
-Steinträgerweg	1 12987,2220 13023,2093
+#: last_checked: 2018-04-29
+#: check_frequency: 60d
+Steinträgerweg	1s:q4 12987,2220 13023,2093
 #: by: anonymous and osm
 Am Kurzen Weg	1 -7180,14351 -7172,14459 -7185,14574
 Straßenbahnwendestelle Virchowstr.	1 13081,13457 12925,13373
@@ -1118,7 +1122,8 @@ DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615
 #: note implizite Fahrtrichtung
 Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
 #: XXX laut Maßnahme Gr.8 soll die Einbahnstraße hier aufgehoben werden (nur Prio=mittel, allerdings relativ einfach (?) zu realisieren)
-#: next_check: 2018-06-01
+#: last_checked: 2018-04-29
+#: check_frequency: 90d
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 #: note implizit?
 Firlstr.	1 18640,6542 18645,6511
@@ -1779,6 +1784,7 @@ Hauptstr.: Mittelstreifen	3nocross 6687,8385 6765,8480 6912,8617 6989,8687
 #: by: Jirka Klaue:
 Am Tierpark: Straßenbahntrasse	3nocross 18585,10278 18554,10354 18446,10620
 Am Tierpark: Straßenbahntrasse	3nocross 18280,11266 18263,11393 18216,11656
+Am Tierpark: Straßenbahntrasse	3nocross 18327,11105 18343,11041 18417,10738
 Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3nocross 12497,11459 12539,11416 12576,11375 12641,11288
 Mühlenstr.: Mittelstreifen ohne Überquerungshilfe	3nocross 12990,11006 13080,10956 13144,10921
 Mühlenstr.: Mittelstreifen	3nocross 12908,11058 12848,11093 12793,11132 12736,11186
@@ -1906,7 +1912,8 @@ tragen (2x13 Stufen)	0:30 9047,948
 tragen (28 Stufen)	0:30 6138,12877
 Tor, kann geschlossen sein	BNP:10::trailer=15 20682,9834
 Tor, kann geschlossen sein	BNP:10::trailer=15 20683,9558
-Tor	BNP:3::trailer=10 20829,5418
+Tor, kann geschlossen sein	BNP:10::trailer=15 20829,5418
+Tor, kann geschlossen sein	BNP:10::trailer=15 23614,12615
 Schranke	BNP:3::trailer=10 20849,5266
 tragen (20 Stufen)	0:30 22624,13901
 tragen (8 weite Stufen) bzw. Naturrampe benutzen	0:15 -6004,15050
@@ -2741,8 +2748,7 @@ Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14558,1008
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14597,10129
 # REMOVED während der Bauarbeiten entfernt (2010-10) --- wird es jemals wieder eingesetzt? --- Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14626,10162
 # REMOVED (entfernt) --- #: note: 90cm Öffnung, 90cm zum versetzten Gitter -> 63cm lichte Breite --- #: note: hmmm, heute (2012-10-16) habe ich einen Radfahrer mit Croozer da durchfahren gesehen -> trailer=no -> trailer=15 --- Drängelgitter --- mittlerweile gibt es eine Pollerreihe	BNP:3::trailer=15 12901,10134
-#: note: relativ großzügige Öffnung
-Drängelgitter	BNP:1::trailer=3 12833,9998
+# REMOVED (wurde abmontiert --- dauerhaft?) --- #: note: relativ großzügige Öffnung --- Drängelgitter	BNP:1::trailer=3 12833,9998
 Schranke (Privatstr.)	BNP:5 25039,5304
 Schranke	BNP:2::trailer=4 9907,11752
 Schranke	BNP:3::trailer=10 10114,11789
@@ -2850,6 +2856,16 @@ Drängelgitter	BNP:3::trailer=10 22097,5879
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX welche Fahrbahnbeschaffenheit wird die Straße haben?
+#: osm_watch: way id="220943758" version="2"
+#: last_checked: 2018-04-29
+#: check_frequency: 120d
+Charlotte-von-Mahlsdorf-Ring: Baustraße	2::inwork 24649,10710 24728,10722 24739,10645
+# 
+#: last_checked: 2018-04-29
+#: check_frequency: 90d
+Hermineweg: Baustraße, gesperrt	2::inwork 24831,10966 24906,10965
+# 
 #: next_check_id: KARLINEKENWEG-2018
 #: osm_watch: way id="499986562" version="2"
 #: last_checked: 2018-04-28
@@ -2880,7 +2896,7 @@ Klara-Franke-Str.: Bauarbeiten, gesperrt	2::inwork 7542,13956 7662,13784 7564,13
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bplan11120ve.pdf
 #: by: http://www.berliner-woche.de/friedrichsfelde/bauen/projekt-ohne-alternativen-bebauungsplaene-am-ex-dolgensee-center-liegen-aus-d136187.html
-#: last_checked: 2018-03-25
+#: last_checked: 2018-04-29
 #: check_frequency: 360d
 Dolgenseestr.: wegen Bauarbeiten gesperrt	2::inwork 17273,9880 17407,9799 17493,9761
 # 
@@ -2924,7 +2940,7 @@ Anni-Frid-Weg: Baustelle, gesperrt	2::inwork 17227,15054 17262,15056 17317,15059
 #: next_check: 2018-06-01
 Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12677,-1536 -12685,-1449
 # 
-#: last_checked: 2018-03-18 vvv
+#: last_checked: 2018-04-29 vvv
 Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:q2:inwork 18296,10027 18312,9985 18301,9946
 Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 18301,9946 18266,9853
 #: last_checked ^^^
@@ -3057,14 +3073,14 @@ Möckernkiez: Bauarbeiten	2::inwork 8778,9759 8710,9725 8729,9670 8596,9595 8565,
 #: XXX An den Grachten: 11123
 #: XXX Klompenweg: 11124
 #: XXX Am Groen: 11125
-#: last_checked: 2017-07-01
-#: next_check: 2018-05-01
+#: last_checked: 2018-04-29
+#: check_frequency: 180d
 Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen hier weiterhin Kfz fahren?	2::inwork 22101,10985 22146,10995 22172,10996 22195,10993
 # 
 #: next_check_id: BEBAUUNGSPLAN-XXI-34A
-#: last_checked: 2017-07-01
+#: last_checked: 2018-04-29
 #: check_frequency: 360d
-Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11485 20631,11621 20633,11651
+Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20631,11621 20633,11651
 # 
 # REMOVED --- #: last_checked: 2017-09-20 --- #: check_frequency: 14d --- Gitschiner Str./Lobeckstr.: Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3nocross::inwork 10122,10294 10363,10303 10605,10312
 # REMOVED (bei osm nicht mehr construction) --- #: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus? --- ja, wird es geben --- #: osm_watch: way id="461214846" version="3" --- #: last_checked: 2017-08-10 --- #: check_frequency: 90d --- Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19140,1137
@@ -3167,13 +3183,7 @@ Nordhafenpark West: unter der Brücke gesperrt	2::inwork 7636,14414 7612,14449 75
 # 
 # REMOVED --- #: last_checked: 2017-05-08 (nur noch ein paar Meter Richtung Weigandufer gesperrt) --- #: check_frequency: 7d --- Weichselplatz: Uferweg wegen Bauarbeiten gesperrt	2::inwork 12851,9309 12907,9073
 # REMOVED (Baugrube) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2016 --- #: osm_watch: note 848012 1 --- #: last_checked: 2016-12-15 --- #: check_frequency: 180d --- Sülzhayner Str.: komplett gesperrt wegen Bauarbeiten, vielleicht dauerhaft	2::inwork 13420,9259 13397,9234
-# 
-#: next_check_id: ACHTERKASTELL-2016
-#: XXX man kann aber an den Absperrungen vorbei
-#: last_checked: 2018-02-10
-#: check_frequency: 60d
-Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
-# 
+# REMOVED (fertig) --- #: next_check_id: ACHTERKASTELL-2016 --- #: XXX man kann aber an den Absperrungen vorbei --- #: last_checked: 2018-02-10 --- #: check_frequency: 60d --- Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
 # REMOVED (volle Fahrbahnbreite steht wieder zur Verfügung) --- #: last_checked: 2017-11-20 --- Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2:inwork 14447,10491 14270,10584
 # REMOVED (mittlerweile schon passierbar) --- #: next_check_id: MARIANNEN-2016 vvv --- #: source_id: INKO_2147340291_COPY_1 vvv --- #: source_id: 2147340291 vvv --- #: source_id: 2147340768 vvv --- # REMOVED (aufgehoben) --- #: priority: #A vvv --- #: XXX laut fritz bis 16.12.2016 --- #: last_checked: 2016-12-15 vvv --- #: next_check: 2017-01-10 vvv --- Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11512,10105 11616,10288 --- #: source_id: 2147340777 --- #: XXX laut fritz bis 10.01.2017 --- #: priority: #A --- #: last_checked: 2016-12-15 --- #: check_frequency: 7d --- Mariannenstr.: Baustelle, Fahrbahn gesperrt	2s:q3 11671,10402 11616,10288
 # REMOVED --- #: next_check_id: MINNATODENHAGENSTR-2016 --- #: note: siehe auch http://www.detlefzabel.de/spreebruecke-neubau/ --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170829 --- #: last_checked: 2017-11-05 --- #: next_check: 2017-12-21 --- Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17453,7451 17282,7337 17211,7280 17127,7209 17005,7085 16834,6910 16747,6813

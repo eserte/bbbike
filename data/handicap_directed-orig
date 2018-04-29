@@ -30,18 +30,8 @@
 #                   generell ist es besser, mit qX,$len zu arbeiten, aber
 #                   das ist nicht immer möglich (Ampeln, Bordsteine).
 # 
-#: next_check_id: KARLMARXSTR-2016
-#: last_checked: 2018-04-12 vvv
-#: check_frequency: 7d vvv
-Karl-Marx-Str. -> Kienitzer Str.: wegen Bauarbeiten auf linken Gehweg ausweichen	DH:h=q4,110 12865,7923 12830,8031 12692,7996
-Kienitzer Str. -> Karl-Marx-Str.: wegen Bauarbeiten zunächst den linken Gehweg benutzen	DH:h=q4,170 12692,7996 12830,8031 12794,8103 12753,8187
-Karl-Marx-Str. -> Briesestr.: wegen Bauarbeiten auf linken Gehweg ausweichen	DH:h=q4,190 12865,7923 12830,8031 12794,8103 12668,8077
-Briesestr. -> Karl-Marx-Str.: wegen Bauarbeiten zunächst den linken Gehweg benutzen	DH:h=q4,90 12668,8077 12794,8103 12753,8187
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
+# REMOVED --- #: next_check_id: KARLMARXSTR-2016 --- #: last_checked: 2018-04-12 vvv --- #: check_frequency: 7d vvv --- Karl-Marx-Str. -> Kienitzer Str.: wegen Bauarbeiten auf linken Gehweg ausweichen	DH:h=q4,110 12865,7923 12830,8031 12692,7996 --- Kienitzer Str. -> Karl-Marx-Str.: wegen Bauarbeiten zunächst den linken Gehweg benutzen	DH:h=q4,170 12692,7996 12830,8031 12794,8103 12753,8187 --- Karl-Marx-Str. -> Briesestr.: wegen Bauarbeiten auf linken Gehweg ausweichen	DH:h=q4,190 12865,7923 12830,8031 12794,8103 12668,8077 --- Briesestr. -> Karl-Marx-Str.: wegen Bauarbeiten zunächst den linken Gehweg benutzen	DH:h=q4,90 12668,8077 12794,8103 12753,8187 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (heute gab's eine Lücke) --- #: last_checked: 2017-10-11 vvv --- #: check_frequency: 21d vvv --- Friedenstr. -> Weidenweg: direktes Linksabbiegen nicht möglich	DH:t=10 12866,12582 12891,12549 13025,12523 --- Weidenweg -> Str. der Pariser Kommune: direktes Linksabbiegen nicht möglich	DH:t=10 13025,12523 12891,12549 12869,12425 --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
 # REMOVED --- #: next_check_id: MOELLENDORFFSTR-2017 vvv --- #: last_checked: 2017-11-09 vvv --- #: next_check: 2017-11-30 vvv --- Gürtelstr. -> Möllendorffstr.: Umweg zur Ampel	DH:len=70 15294,11964 15361,12071 15420,12178 --- Gürtelstr. -> links in die Frankfurter Allee: Umweg zur Ampel	DH:len=70 15294,11964 15361,12071 15117,12106 --- Frankfurter Allee -> links in die Möllendorffstr.: Umweg bis Wilhelm-Guddorf-Str., Fußgänger	DH:len=270:h=q2-,270 15117,12106 15361,12071 15420,12178 --- Frankfurter Allee geradeaus: Umweg bis Wilhelm-Guddorf-Str., Fußgänger	DH:len=200:h=q2-,200 15117,12106 15361,12071 15670,12022 --- Möllendorffstr. -> links in die Frankfurter Allee: Umweg bis Wilhelm-Guddorf-Str., Fußgänger	DH:len=250:h=q2-,250 15420,12178 15361,12071 15670,12022 --- Frankfurter Allee -> Gürtelstr.: kleiner Umweg zur Ampel	DH:len=30:h=q3,30 15670,12022 15361,12071 15294,11964 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
 # 
 #: next_check_id: ZEUGHAUS-2014 vvv
@@ -261,3 +251,5 @@ Pasewalker Str. - Margaretenaue: linker Gehweg	DH:h=q3,40 12008,20368 12000,2032
 # 
 Heinersdorfer Str. - Weg am Fließ: linker Gehweg	DH:h=q3,75 13590,20705 13586,20649 13584,20628 13602,20613
 Weg am Fließ - Heinersdorfer Str.: linker Gehweg	DH:h=q3,90 13602,20613 13584,20628 13566,20540
+# 
+Rügenwalder Weg - Gülzower Str.: linker Gehweg	DH:h=q2,90 22400,12171 22388,12190 22304,12157

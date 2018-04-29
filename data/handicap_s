@@ -37,13 +37,12 @@ Englische Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,1
 Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fuﬂg‰nger	q3 5894,12480 5944,12548
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 Dieselstr., Umfahrung: Fuﬂg‰nger, schmal	q2::inwork 14326,8062 14366,8058 14384,8056 14425,8052 14471,8046
-Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung S¸den auf Gehweg ausweichen, teilweise ist die neue Fahrbahn auch befahrbar	q4::inwork; 12753,8187 12794,8103
-Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung S¸den auf Gehweg ausweichen, teilweise ist die neue Fahrbahn auch befahrbar	q3::inwork; 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785
-Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung S¸den auf Gehweg ausweichen, teilweise ist die neue Fahrbahn auch befahrbar	q4::inwork; 12914,7785 12969,7610
+Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung S¸den auf Gehweg ausweichen	q4::inwork; 12753,8187 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785 12969,7610
 Helmstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q3::inwork 7444,9148 7382,9187
 Vorbergstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q3::inwork 7363,9152 7308,9163
 Wiltbergstr.: Bauarbeiten, Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3::inwork; 16669,25373 16583,25440 16475,25526 16414,25575 16294,25683 16220,25716
 Alt-Buch: Bauarbeiten, Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3::inwork; 16414,25575 16593,25640
+Mˆwenweg: Straﬂe wegen Bauarbeiten gesperrt, Umfahrung ¸ber sandigen Weg mˆglich	q3::inwork 22195,10993 22207,11069 22219,11136
 (provisorische Fuﬂg‰ngerbr¸cke S‰ntisstr.): Fuﬂg‰nger	q3 9014,898 9005,912 9002,919 9047,948 9058,932
 S‰ntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
 Wuhlewanderweg: steiler Anstieg, Fuﬂg‰nger	q4; 21998,12204 21970,12153
@@ -493,7 +492,7 @@ Wuhlewanderweg: Fuﬂg‰nger	q1 22270,11210 22236,11208
 Wuhlewanderweg: Fuﬂg‰nger	q1 22238,6195 22237,6211 22236,6233 22214,6271 22146,6338 22097,6414 22030,6600 22056,6613 21976,6848 21888,6944 21590,7211 21574,7244 21567,7284 21613,7521 21620,7647 21597,7711 21570,7751 21616,7863 21629,7921 21599,7904 21593,7934 21568,8052 21351,8259 21337,8273 21276,8374 21193,8468 21173,8576 21183,8731 21192,8839 21210,8883 21252,8928 21280,8954 21334,9015 21349,9062
 Wuhlewanderweg: Fuﬂg‰nger	q1 21383,9045 21467,9236 21524,9488 21587,9609 21633,9731 21678,9817 21686,9876
 Wuhlewanderweg: Fuﬂg‰nger	q1 21611,9893 21619,9993 21566,10230 21585,10289 21584,10329 21586,10344 21608,10403 21646,10510 21657,10519 21791,10623 21827,10684 21869,10750 21950,10776 22059,10782 22110,10796
-Wuhlewanderweg: Fuﬂg‰nger	q1 22059,10782 22103,10814 22160,10834
+Wuhlewanderweg: Fuﬂg‰nger	q1 22059,10782 22103,10814 22166,10839
 Heinrich-Dathe-Platz: Fuﬂg‰nger	q2 18512,10337 18478,10406 18456,10454 18442,10471
 Heinrich-Dathe-Platz: Fuﬂg‰nger	q2 18478,10406 18394,10348
 Dathepromenade: Fuﬂg‰nger	q1 18394,10348 18320,10318 18302,10289 18314,10260 18132,10183 18101,10169 18058,10166
@@ -1419,7 +1418,7 @@ Georg-Steger-Weg: einige Fuﬂg‰nger	q1 1493,2247 1480,2199 1452,2095 1461,2073 14
 (Schillingstr. - Neue Blumenstr.): Bordstein, einige Fuﬂg‰nger	q2 11596,12668 11709,12601
 (Wutzkyallee - Zwickauer Damm): einige Fuﬂg‰nger	q1 15349,1614 15437,1613 15505,1591 15606,1537 15670,1474
 (Zwickauer Damm - Rudower Flieﬂ): einige Fuﬂg‰nger, Bordstein	q2 15688,1506 15776,1456
-(Zwickauer Damm - Rudower Flieﬂ): einige Fuﬂg‰nger	q1 15719,1557 15727,1525 15776,1456 15795,1428 15886,1382 15928,1395 16005,1350 16043,1311 16051,1293 16076,1272 16329,1128 16419,1048
+(Zwickauer Damm - Rudower Flieﬂ): einige Fuﬂg‰nger	q1 15719,1557 15727,1525 15776,1456 15795,1428 15886,1382 15928,1395 16005,1350 16040,1315 16051,1293 16076,1272 16329,1128 16419,1048
 (Gr¸nanlage - Fleischerstr.): einige Fuﬂg‰nger, Bordstein	q2 15928,1395 15977,1422 15987,1430
 (Straﬂe 618 - Rudower Flieﬂ): einige Fuﬂg‰nger	q1 16297,592 16271,609
 Kˆnigsheideweg - S¸dostallee: Kleingartengel‰nde	q1 15784,5865 15788,5898 15793,5945 15863,5956 15934,5972 15964,5940 16091,6003 16113,6027 16125,6059
@@ -1714,6 +1713,10 @@ Wadzeckstr. - Mollstr.: einige Fuﬂg‰nger	q1 11315,13210 11399,13333
 Liebigstr.: kurvig, recht eng durch parkende Autos	q1 13905,12374 13927,12370 14074,12343 14091,12355 14147,12344 14166,12323 14229,12311
 (Marseillestr. - Dr.-Markus-Str.): Fuﬂweg	q1 12364,21623 12402,21537
 (Parkplatz Kaufland): Parkplatzverkehr	q1 13031,17775 12981,17557
+Lubminer Weg: einige Fuﬂg‰nger	q1 22319,12663 22391,12677
+(Parchimer Str. - Altentreptower Str.): einige Fuﬂg‰nger	q1 22225,12281 22220,12243 22129,12155
+(Hamannweg - Heinrich-Gr¸ber-Str.): einige Fuﬂg‰nger	q1 23452,12663 23368,12699 23355,12732
+(Fleischerstr. - Gr¸nanlage): enger Weg, einige Fuﬂg‰nger	q2 16433,1180 16450,1135 16457,1129
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schulhof, Radfahren verboten	q3 7242,8586 7288,8635
@@ -2306,7 +2309,7 @@ Taubnesselweg: enge Straﬂe	q2 20793,2247 20836,2150 20872,2112
 Theodor-Loos-Weg: enge Straﬂe	q1 15325,1720 15460,1764 15634,1765 15671,1923 15781,1928 15806,1903 15818,1834 15875,1796
 Irmgardstr.: enge Straﬂe	q1 974,4669 960,4660 881,4429 863,4363 865,4288 908,4175
 Erna-Sack-Str.: enge Straﬂe	q1 -7486,13321 -7496,13214
-(Buchbinderweg - Zittauer Str.): einige Fuﬂg‰nger	q1 16485,1162 16435,1063 16419,1048 16387,976 16363,956 16365,935
+(Buchbinderweg - Zittauer Str.): einige Fuﬂg‰nger	q1 16481,1164 16471,1157 16457,1129 16429,1065 16419,1048 16387,976 16363,956 16349,932
 (Hibiskusweg - Romain-Rolland-Str.): gemeinsamer Rad/Fuﬂweg	q1 13245,17805 13229,17784 13245,17737
 Treutelstr.: enge Straﬂe	q1 5422,19725 5345,19734 5309,19716
 Jenbacher Weg: enge Straﬂe	q1 6398,590 6411,533 6233,412 6180,376 5987,256 5800,138 5703,74 5415,-113
@@ -2533,6 +2536,7 @@ Tannenweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; -3023,1
 Tannenweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; -3038,18063 -3028,18027
 Isarstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 12349,8464 12368,8356
 Barbarastr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 6456,3038 6372,2959 6329,2916 6359,2875 6372,2856
+Parchimer Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 22212,12403 22212,12422 22257,12481 22258,12573 22272,12610
 Stiftsweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11001,18528 11239,18832 11263,18842
 Rathausstr.:: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 15651,12214 15628,12246 15576,12315 15537,12367
 Steilpfad: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 3375,21230 3280,21477
@@ -2542,6 +2546,7 @@ Bernkasteler Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp;
 (Breite Str., Verbindung): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 10463,18321 10487,18270
 Sauerbruchweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 8487,13351 8630,13172
 Virchowweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 8603,13076 8550,13150
+Steintr‰gerweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 12987,2220 13023,2093
 Harzburger Str. (Pankow), Klaustaler Str...: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 11442,18736 11419,18801 11463,18817 11469,18799 11483,18753 11462,18743 11442,18736
 Rˆmerweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 19236,9710 19450,9728 19459,9842
 Lˆtschbergstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 20161,11715 20150,11512
