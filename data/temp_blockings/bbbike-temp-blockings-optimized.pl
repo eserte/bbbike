@@ -3361,30 +3361,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: 20170421T1400-20170423 vvv
-	2::temp 22138,4642 22111,4562 22093,4499
-	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
-	2::temp 22111,4562 22162,4546 22214,4548
-#: tempex ^^^
-',
-         'from' => 1524744000,
-         'id' => 2419,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              21,
-                              'months',
-                              4
-                            ]
-                          ],
-         'source_id' => 'http://www.winzerfest-köpenick.de/',
-         'text' => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 27.4.2018 bis 29.4.2018',
-         'type' => 'gesperrt',
-         'until' => 1525039199
-       },
+       undef,
        {
          'data' => '# REMOVED (was) : tempex: 20160714-20160717
 	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
@@ -3475,7 +3452,32 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: tempex: YYYY0530-YYYY0601 vvv
+	2::temp 20755,5750 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
+	2::temp 19976,6087 20015,6069 20293,6278 20200,6321 20106,6357
+	2::temp 20200,6321 20262,6493 20225,6631
+	2::temp 20716,6029 20593,6082 20428,6157 20453,6211 20293,6278
+	2::temp 19976,6087 20064,6290 20106,6357
+#: tempex ^^^
+',
+         'from' => 1527717600,
+         'id' => 2436,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              30,
+                              'months',
+                              5
+                            ]
+                          ],
+         'source_id' => 'https://familienfez.fez-berlin.de/programm/kindertagsfest/',
+         'text' => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 1. bis 3. Juni 2018',
+         'type' => 'gesperrt',
+         'until' => 1528063199
+       },
        undef,
        undef,
        undef,
@@ -4272,10 +4274,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="548612558" version="1"
-#: last_checked: 2018-04-06
+#: last_checked: 2018-04-30
 #: check_frequency: 14d
 # REMOVED ---	q3::inwork; 7201,8870 7101,9027
-	q3::inwork; 7101,9027 7035,9161 7012,9222 7001,9291
+# RE;OVED ---	q3::inwork; 7101,9027 7035,9161
+	q4::inwork; 7035,9161 7012,9222 7001,9291
 ',
          'from' => undef,
          'id' => 2860,
@@ -4555,7 +4558,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '# XXX_prog: eigentlich q3-
-#: last_checked: 2018-04-06
+#: last_checked: 2018-04-30
 	q3::inwork 7136,9223 7012,9222
 ',
          'from' => undef,
@@ -4596,15 +4599,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.386693.php
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/uebersichtsplan-umleitung_vollsperrung.pdf
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.692745.php
-#: XXX prüfen, ob der Starttermin eingehalten wird
-#: next_check: 2018-05-02
-#: priority: #A
+#: by: http://www.berliner-woche.de/pankow/verkehr/sperrung-rosenthaler-weg-umleitung-vom-2-mai-bis-zum-25-juni-d159605.html
+# REMOVED (ja, sieht so aus) --- #: XXX prüfen, ob der Starttermin eingehalten wird --- #: next_check: 2018-05-02 --- #: priority: #A
 	2::inwork 10228,21940 10312,21969 10377,21991 10436,22010 10493,22029 10554,22050 10613,22070 10673,22090 10709,22102 10769,22122 10828,22142 10892,22165 10935,22174 10999,22195
 ',
          'from' => 1525125600,
          'id' => 2939,
          'source_id' => 'http://www.berliner-woche.de/blankenfelde/verkehr/rosenthaler-weg-voll-gesperrt-wasserbetriebe-verlegen-rohre-d144397.html',
-         'text' => 'Rosenthaler Weg: Sperrung wegen Bauarbeiten, voraussichtlich vom 2. Mai 2018 bis 29. Juni 2018',
+         'text' => 'Rosenthaler Weg: Sperrung wegen Bauarbeiten, evtl. sind auch Radfahrer betroffen, voraussichtlich vom 2. Mai 2018 bis 29. Juni 2018',
          'type' => 'gesperrt',
          'until' => 1530309599
        },

@@ -21620,9 +21620,9 @@ EOF
 	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 11162,19844 11309,19923 11423,19982 11555,20051
 EOF
      },
-     { from  => $isodate2epoch->("2017-05-30 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-06-01 23:59:59"),
-       text  => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 1. Juni 2017',
+     { from  => $isodate2epoch->("2018-05-31 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-06-03 23:59:59"),
+       text  => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 1. bis 3. Juni 2018',
        periodic => 1,
        recurrences => [["yearly", "days" => 30, "months" => 5]],
        type  => 'gesperrt',
@@ -26038,10 +26038,11 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="548612558" version="1"
-#: last_checked: 2018-04-06
+#: last_checked: 2018-04-30
 #: check_frequency: 14d
 # REMOVED ---	q3::inwork; 7201,8870 7101,9027
-	q3::inwork; 7101,9027 7035,9161 7012,9222 7001,9291
+# RE;OVED ---	q3::inwork; 7101,9027 7035,9161
+	q4::inwork; 7035,9161 7012,9222 7001,9291
 EOF
      },
      { from  => 1493652218, # 2017-05-01 17:23
@@ -26882,7 +26883,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # XXX_prog: eigentlich q3-
-#: last_checked: 2018-04-06
+#: last_checked: 2018-04-30
 	q3::inwork 7136,9223 7012,9222
 EOF
      },
@@ -26923,16 +26924,15 @@ EOF
      },
      { from  => 1525125600, # 2018-05-01 00:00
        until => 1530309599, # 2018-06-29 23:59
-       text  => 'Rosenthaler Weg: Sperrung wegen Bauarbeiten, voraussichtlich vom 2. Mai 2018 bis 29. Juni 2018',
+       text  => 'Rosenthaler Weg: Sperrung wegen Bauarbeiten, evtl. sind auch Radfahrer betroffen, voraussichtlich vom 2. Mai 2018 bis 29. Juni 2018',
        type  => 'gesperrt',
        source_id => 'http://www.berliner-woche.de/blankenfelde/verkehr/rosenthaler-weg-voll-gesperrt-wasserbetriebe-verlegen-rohre-d144397.html',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.386693.php
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/uebersichtsplan-umleitung_vollsperrung.pdf
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.692745.php
-#: XXX prüfen, ob der Starttermin eingehalten wird
-#: next_check: 2018-05-02
-#: priority: #A
+#: by: http://www.berliner-woche.de/pankow/verkehr/sperrung-rosenthaler-weg-umleitung-vom-2-mai-bis-zum-25-juni-d159605.html
+# REMOVED (ja, sieht so aus) --- #: XXX prüfen, ob der Starttermin eingehalten wird --- #: next_check: 2018-05-02 --- #: priority: #A
 	2::inwork 10228,21940 10312,21969 10377,21991 10436,22010 10493,22029 10554,22050 10613,22070 10673,22090 10709,22102 10769,22122 10828,22142 10892,22165 10935,22174 10999,22195
 EOF
      },

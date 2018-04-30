@@ -2863,7 +2863,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: by: Tsp vom 2018-01-22 (neue Ampeln --- 2019)
 #: source_id: 2147340715 vvv
 #: last_checked: 2018-04-10 vvv
-#: next_check: 2018-04-30 vvv
+#: next_check: 2018-05-15 vvv
 	X::inwork 8250,14672
 # REMOVED --- F::inwork 8732,14098
 #: next_check ^^^
@@ -2911,12 +2911,13 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX Gesamtmaﬂnahme bis Ende Mai 2018
 #: source_id: 2147342243
 #: source_id: 2147342260
-#: last_checked: 2018-04-27
+#: last_checked: 2018-04-30
 	F 7382,9187
 #: note: Anforderungsampel
 	F 1485,8845
 	F 7740,1041
 	X 22092,999
+	X -5886,10837
 # 
 ################################################################################
 #: note: Potsdam vvv

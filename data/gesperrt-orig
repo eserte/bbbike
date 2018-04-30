@@ -314,8 +314,8 @@ Gritznerstr.	1 4511,6318 4555,6403
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf (Ablehnung durch Polizei)
 #: osm_watch: way id="4437134" version="6"
-#: last_checked: 2017-12-26
-#: check_frequency: 100d
+#: last_checked: 2018-04-30
+#: check_frequency: 120d
 Duisburger Str.	1 4183,10144 3874,10153
 Straße 462	1 4914,17399 5068,17384
 Havensteinstr.	1 6293,2583 6463,2724 6593,2831
@@ -332,7 +332,7 @@ Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf
 #: XXX evtl wird die Straße für Radfahrer geöffnet
 #: osm_watch: way id="5110895" version="5"
-#: last_checked: 2018-02-23
+#: last_checked: 2018-04-30
 #: check_frequency: 60d
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7606,8598 7643,8634 7682,8598 7644,8560
@@ -2277,8 +2277,7 @@ Drängelgitter	BNP:2::trailer=6 7886,8335
 Drängelgitter	BNP:2::trailer=6 7911,8329
 #: note ^^^
 Schranke, kann auf Bürgersteig umfahren werden	BNP:3::trailer=5 1778,20377
-Schranke	BNP:3::trailer=10 5296,11529
-# 
+# REMOVED (wurde entfernt) --- Schranke	BNP:3::trailer=10 5296,11529
 # REMOVED --- #: next_check_id: DIESEL-2015 vvv --- #: note: mittlerweile gibt es hier auch zwei Baustellenampeln mit Anforderung, allerdings wird relativ schnell auf grün geschaltet --- jetzt (2017-12) nur noch eine vvv --- #: last_checked: 2017-12-27 vvv --- Drängelgitter	BNP:3::trailer=8 14366,8058 --- Drängelgitter	BNP:5::trailer=10 14425,8052 --- #: note ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
 # 
 Drängelgitter	BNP:5::trailer=10 4626,20960
@@ -2948,7 +2947,7 @@ Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 18301,9946 18
 #: by: https://www.berliner-zeitung.de/berlin/berliner-wasserbetriebe-tunnel-unterm-mauerpark-wird-zur-attraktion-25534506
 #: by: http://www.berliner-woche.de/prenzlauer-berg/bauen/baugruben-am-mauerpark-sind-jetzt-eingerichtet-d158178.html
 #: source_id: 2147342369
-#: last_checked: 2018-04-20 (Nordseite) vvv
+#: last_checked: 2018-04-30 (Südseite) vvv
 #: check_frequency: 360d vvv
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
@@ -3111,14 +3110,7 @@ Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtun
 # 
 # REMOVED (siehe temp_blockings-Eintrag) --- #: source_id: 2147341003 (Bauarbeiten in der angrenzenden Modersohnstr.) --- #: last_checked: 2017-06-17 --- #: check_frequency: 7d --- DB-Werkstraße: Zufahrt zur DB-Werkstraße ist wegen Bauarbeiten gesperrt	2::inwork 14043,10928 14107,10911
 # REMOVED (bei fritz nicht mehr gelistet) --- #: XXX laut fritz bis 30. September 2017 --- #: by: http://www.dafmap.de/d/berlin.html?id=5031&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-12-31) --- #: source_id: LMS-BR_r_LMS-BR_86189 --- #: last_checked: 2017-02-04 --- #: next_check: 2017-09-30 --- #: priority: #A --- Zillestr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen	1s:q3 3807,11859 3976,11869
-# 
-#: next_check_id: VERLAENGERTEHERTZ-2017
-#: XXX zumindest an der Fasanenstr.
-#: XXX laut Schild gehen die Bauarbeiten bis Dezember 2017
-#: last_checked: 2018-04-10
-#: check_frequency: 14d
-(Verlängerte Hertzallee): Bauarbeiten, komplett gesperrt	2::inwork 5352,11502 5296,11529 4950,11696 4905,11785
-# 
+# REMOVED (offen) --- #: next_check_id: VERLAENGERTEHERTZ-2017 --- #: XXX zumindest an der Fasanenstr. --- #: XXX laut Schild gehen die Bauarbeiten bis Dezember 2017 --- #: last_checked: 2018-04-10 --- #: check_frequency: 14d --- (Verlängerte Hertzallee): Bauarbeiten, komplett gesperrt	2::inwork 5352,11502 5296,11529 5171,11589 4950,11696 4905,11785
 # REMOVED (man kommt hinter dem Georg-Denkmal vorbei) --- Spreeufer Nikolaiviertel: Gehweg gesperrt	2::inwork 10417,12378 10492,12289 10583,12206
 # 
 #: osm_watch: way id="466318949" version="4"
@@ -3142,9 +3134,9 @@ Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13176,9302 13098,920
 #: source_id: 2147340715 vvv
 #: source_id: LMS-BR_r_LMS-BR_82028
 #: osm_watch: way id="42091230" version="24"
-#: last_checked: 2018-04-10 vvv
+#: last_checked: 2018-04-30 vvv
 # REMOVED (temporary) --- #: next_check: 2017-12-31 (vermutlich wird nur auf die neue Fahrbahnhälfte gewechselt werden) vvv
-#: next_check: 2018-04-30 vvv
+#: next_check: 2018-05-15 vvv
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 8732,14098 8654,14194
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q4:inwork 8654,14194 8607,14253 8570,14299 8442,14456
 #
@@ -3173,7 +3165,7 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
 #: osm_watch: way id="441442656" version="2"
 #: source_id: 2147341188
-#: last_checked: 2018-04-10 vvv
+#: last_checked: 2018-04-30 vvv
 #: check_frequency: 30d vvv
 Nordhafenpark West: noch Bauarbeiten, gesperrt	2::inwork 7551,14464 7426,14539
 Nordhafenpark West: unter der Brücke gesperrt	2::inwork 7636,14414 7612,14449 7551,14464
@@ -3244,7 +3236,7 @@ E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgäng
 # REMOVED --- #: XXX Wie wird die Qualität danach sein? Wird man zum Hiltrud-Dudek-Weg durchfahren können? Wird die Straße verkehrsberuhigt sein? --- #: osm_watch: way id="151742436" version="5" --- #: XXX ad osm_watch: id referenziert die Jeanette-Wolff-Str., nur ein "proxy" für den neu zu bauenden Weg --- #: last_checked: 2015-04-10 --- #: check_frequency: 100d --- Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17647,-386 17654,-397
 # 
 #: next_check_id: EUROPACITY-2015 vvv
-#: last_checked: 2018-03-09 vvv
+#: last_checked: 2018-04-30 vvv
 #: osm_watch: way id="237704729" version="8"
 #: check_frequency: 45d
 Lydia-Rabinowitsch-Str.: noch gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924
@@ -3373,13 +3365,13 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 #: by: http://www.berliner-woche.de/wedding/verkehr/senat-lehnt-fussgaengerueberweg-ab-radweg-soll-unter-der-fennbruecke-gebaut-werden-d131062.html (ggfs. auch Unterführung unter der Fennbrücke)
 # REMOVED --- osm_watch: way id="183406331" version="3"
 #: osm_watch: way id="220646748" version="5"
-#: last_checked: 2018-04-10
+#: last_checked: 2018-04-30
 #: check_frequency: 150d
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)
 #: source_id: 2147340791
-#: last_checked: 2018-02-17
+#: last_checked: 2018-04-30
 #: next_check: 2018-12-01
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
 # 
@@ -3402,7 +3394,7 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: III/2018 bis I/2021)
 #: by: http://www.berliner-woche.de/moabit/bauen/mit-schwerem-geraet-d149617.html
 #: osm_watch: way id="501191631" version="1"
-#: last_checked: 2017-09-09
+#: last_checked: 2018-04-30
 #: next_check: 2021-01-01
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 # 

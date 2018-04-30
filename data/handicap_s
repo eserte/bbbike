@@ -40,6 +40,7 @@ Dieselstr., Umfahrung: Fußgänger, schmal	q2::inwork 14326,8062 14366,8058 14384,
 Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süden auf Gehweg ausweichen	q4::inwork; 12753,8187 12794,8103 12830,8031 12865,7923 12898,7832 12914,7785 12969,7610
 Helmstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q3::inwork 7444,9148 7382,9187
 Vorbergstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q3::inwork 7363,9152 7308,9163
+Großgörschenstr.: Bauarbeiten an der Einmündung Potsdamer Str.	q3::inwork 7609,9463 7507,9458
 Wiltbergstr.: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 16669,25373 16583,25440 16475,25526 16414,25575 16294,25683 16220,25716
 Alt-Buch: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 16414,25575 16593,25640
 Möwenweg: Straße wegen Bauarbeiten gesperrt, Umfahrung über sandigen Weg möglich	q3::inwork 22195,10993 22207,11069 22219,11136
@@ -1559,7 +1560,8 @@ Birnenblütenweg: schmale Straße	q1 11437,21283 11502,21292 11656,21309 11783,213
 Veilchenblütenweg: schmale Straße	q1 11534,21229 11664,21246 11757,21253
 Veilchenblütenweg: schmale Straße	q1 11664,21246 11656,21309
 (Am Marderberg): eng	q1 14977,19129 14328,19527 13477,20064
-(Verlängerte Hertzallee): Fußgänger	q2 5352,11502 5296,11529 4950,11696 4905,11785
+(Verlängerte Hertzallee): einige Fußgänger	q1 5352,11502 5171,11589
+(Verlängerte Hertzallee): Fußgänger	q2 5171,11589 4950,11696 4905,11785
 (Welzower Steig - Senftenberger Ring): eng, kurvenreich	q2 6511,21649 6526,21682 6633,21633 6676,21647 6722,21722
 (Gertrudstr. - Wanderweg): eng	q3 4749,24020 4754,23998
 Im Brachfeldwinkel: einige Fußgänger	q1 3024,21286 3068,21150
@@ -1717,6 +1719,7 @@ Lubminer Weg: einige Fußgänger	q1 22319,12663 22391,12677
 (Parchimer Str. - Altentreptower Str.): einige Fußgänger	q1 22225,12281 22220,12243 22129,12155
 (Hamannweg - Heinrich-Grüber-Str.): einige Fußgänger	q1 23452,12663 23368,12699 23355,12732
 (Fleischerstr. - Grünanlage): enger Weg, einige Fußgänger	q2 16433,1180 16450,1135 16457,1129
+Waldstr.: Fußgänger auf dem asphaltiertern Weg	q2 5384,13555 5390,13616 5417,13817 5443,14028
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schulhof, Radfahren verboten	q3 7242,8586 7288,8635

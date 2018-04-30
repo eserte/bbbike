@@ -2353,11 +2353,8 @@ Möthlower Str.: Asphalt	Q0 -7736,15460 -7664,15601 -7588,15656
 #: confirmed_by: rjoop
 Möthlower Str.: Sand	Q2 -7588,15656 -7483,15690 -7457,15704
 #: by: rjoop photos vvv
-#: XXX Bauarbeiten gesehen --- wird die Straße danach besere Qualität haben?
-#: osm_watch: way id="23943477" version="6"
-#: last_checked: 2017-07-15
-#: check_frequency: 90d
-#: corrected_by: srt (in Bau?)
+# REMOVED (sieht nicht so aus (by mapillary)) --- #: XXX Bauarbeiten gesehen --- wird die Straße danach besere Qualität haben? --- #: osm_watch: way id="23943477" version="6" --- #: last_checked: 2017-07-15 --- #: check_frequency: 90d
+#: corrected_by: srt
 Straße 270: unbestigter Weg, Schotter	Q2- -5886,10837 -5312,10948
 #: corrected_by: srt (neu gemacht?)
 Straße 270: wassergebundene Decke	Q1- -5312,10948 -5091,10994
@@ -10240,22 +10237,11 @@ Birnenblütenweg: unbefestigte Schotterstraße	Q2 11656,21309 11783,21324
 Veilchenblütenweg: unbefestigte Schotterstraße	Q2 11534,21229 11664,21246
 Veilchenblütenweg: unbefestigte Schotterstraße und Verbundsteinpflaster	Q2 11664,21246 11757,21253
 Veilchenblütenweg: unbefestigte Schotterstraße	Q2 11664,21246 11656,21309
-#: next_check_id: VERLAENGERTEHERTZ-2017
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1502/nachricht5481.html
-#: by: http://www.pressestelle.tu-berlin.de/medieninformationen/2014/oktober_2014/hertzallee_medieninformation_6102014/fotogalerie/?showp=2&uid=622255#622255
-#: by: http://www.pressestelle.tu-berlin.de/fileadmin/a70100710/Medieninformationen/2014/WB_Hertzallee_1Preis_Lageplan_500_A4_300DPI.jpg
-#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.487100.php ("Spatenstich")
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6077.html
-#: XXX ändert sich bei der Umgestaltung etwas an der Qualität? vvv
-#: osm_watch: way id="210943676" version="5"
-#: last_checked: 2018-04-10 vvv
-#: check_frequency: 30d vvv
+# REMOVED (nur teilweise verbessert) --- #: next_check_id: VERLAENGERTEHERTZ-2017 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1502/nachricht5481.html --- #: by: http://www.pressestelle.tu-berlin.de/medieninformationen/2014/oktober_2014/hertzallee_medieninformation_6102014/fotogalerie/?showp=2&uid=622255#622255 --- #: by: http://www.pressestelle.tu-berlin.de/fileadmin/a70100710/Medieninformationen/2014/WB_Hertzallee_1Preis_Lageplan_500_A4_300DPI.jpg --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.487100.php ("Spatenstich") --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6077.html --- #: XXX ändert sich bei der Umgestaltung etwas an der Qualität? vvv --- #: osm_watch: way id="210943676" version="5" --- #: last_checked: 2018-04-10 vvv --- #: check_frequency: 30d vvv
+(Verlängerte Hertzallee): glatte Steinplatten	Q0 5352,11502 5171,11589
 #: note: zusätzlich mit einigen "Pflasterschwellen"
-(Verlängerte Hertzallee): Kopfsteinpflaster	Q2- 5352,11502 5296,11529 4950,11696
+(Verlängerte Hertzallee): Kopfsteinpflaster	Q2- 5171,11589 4950,11696
 (Verlängerte Hertzallee): Kleinsteinpflaster	Q2 4950,11696 4905,11785
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
 (Welzower Steig - Senftenberger Ring): Gehwegplatten	Q1- 6511,21649 6526,21682 6633,21633 6676,21647 6722,21722
 (Märkische Zeile - Fasaneriegraben): Gehwegplatten	Q0 6847,21509 6847,21524 6835,21530 6828,21541
 (Märkische Zeile - Fasaneriegraben): Holzbohlen	Q1 6828,21541 6818,21554
@@ -11664,8 +11650,8 @@ Enkircher Str.: Asphalt	Q0 3314,25243 3460,25132 3485,25112 3518,25086 3550,2504
 (Schildower Weg): wassergebundene Decke	Q1- 8218,24269 8191,24233 8172,24234 7946,24088 7887,24043 7877,24037
 #: confirmed_by: srt (Q1- -> Q1)
 (Schildower Weg - Schildower Str.): wassergebundene Decke	Q1 8427,24391 8513,24464 8872,24343 8885,24344
-#: note: die östliche ehemalige Fahrbahn kann als Umfahrung benutzt werden: teilweise Kleinsteinpflaster, teilweise asphaltiert; teilweise Parkplatz, teilweise Spiel- und Sportplätze, einige Schranken
-Waldstr.: Kopfsteinpflaster, "Moabiter Kissen"	Q2 5384,13555 5390,13616 5417,13817 5443,14028
+#: note: auch kann die östliche ehemalige Fahrbahn kann als Umfahrung benutzt werden: teilweise Kleinsteinpflaster, teilweise asphaltiert; teilweise Parkplatz, teilweise Spiel- und Sportplätze, einige Schranken
+Waldstr.: Fahrbahn Kopfsteinpflaster mit "Moabiter Kissen", in der Straßenmitte ein asphaltierter Weg vorhanden	Q0 5384,13555 5390,13616 5417,13817 5443,14028
 #: note: laut ADFC-Karte "gut geeignet":
 #: confirmed_by: srt
 Vesaliusstr.: Asphalt	Q0 11818,19089 11763,19191 11748,19235 11698,19489
