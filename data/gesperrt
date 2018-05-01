@@ -917,6 +917,9 @@ Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-85
 Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-859 -14910,-903 -15684,-966
 (Am Grünen Gitter - Schloss): auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14173,-1013 -14186,-868
 (Am Grünen Gitter - Schloss): auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14191,-818 -14199,-707 -14205,-644
+Rodelberg (Kleinmachnow)	1 -2387,-203 -2372,-291 -2451,-305
+(Käthe-Kollwitz-Str. - Zehlendorfer Damm)	1 -705,5 -658,-39
+Adolf-Grimme-Weg (Kleinmachnow)	1 -1768,-554 -1925,-568
 Damme	1s 49936,99617 49905,99587 49850,99561
 Karower Weg (Lindenberg)	1s 17825,21931 17837,21917 17895,21854
 Zehlendorfer Str. (Teltow)	1 1329,-753 1388,-685
@@ -2264,6 +2267,8 @@ Tor, kann geschlossen sein	BNP:10:-180:trailer=15 20682,9834
 Tor, kann geschlossen sein	BNP:10:-180:trailer=15 20683,9558
 Tor, kann geschlossen sein	BNP:10:-8:trailer=15 20829,5418
 Tor, kann geschlossen sein	BNP:10:-159:trailer=15 23614,12615
+Tor, geschlossen	BNP:10:-73:trailer=15 -7326,-1121
+Tor, geschlossen	BNP:10:-190:trailer=15 -7520,-1164
 Schranke	BNP:3:-7:trailer=10 20849,5266
 tragen (20 Stufen)	0:30:-90 22624,13901
 tragen (8 weite Stufen) bzw. Naturrampe benutzen	0:15:-175 -6004,15050
@@ -2470,7 +2475,7 @@ tragen (Treppe)	0:40:-262 3016,13615
 tragen (Treppe, 32 Stufen)	0:40:-7 3054,13638
 tragen (Treppe, 19 Stufen)	0:25:41 20939,2389
 tragen (Treppe)	0:30:-45 -633,12739
-tragen (Treppe)	0:30:-118 -7418,181
+tragen (Treppe, 4x5 Stufen)	0:30:-124 -7401,198
 tragen (Treppe, 56 Stufen)	0:50:-64 -6933,14317
 tragen (Treppe, 56 Stufen)	0:50:2 -6934,14291
 tragen (Treppe, 32 Stufen)	0:30:-232 20682,7262
@@ -2896,7 +2901,6 @@ Drängelgitter	BNP:5:3 38662,97200
 Schwingtor an der Luiseninsel	BNP:5:-135 7693,11627
 Schwingtor an der Luiseninsel	BNP:5:-130 7732,11660
 Schranke	BNP:1:13:trailer=5 25552,997
-enges Drängelgitter	BNP:5:90 100,3
 Drängelgitter	BNP:4:-101 13909,18835
 Drängelgitter	BNP:3:-24 14218,18674
 Schranke	BNP:3:69 5850,19205

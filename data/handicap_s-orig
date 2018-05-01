@@ -143,7 +143,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 # REMOVED --- Jerusalemer Str.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9925,11565 9936,11469
 # 
 #: by: http://www.dafmap.de/d/berlin.html?center=52.508653+13.397214&zoom=17# (Geplanter Projektabschluss: 2019-03-31)
-#: last_checked: 2018-04-20 vvv
+#: last_checked: 2018-05-01 vvv
 #: check_frequency: 90d vvv
 Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9945,11371 9936,11469
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
@@ -489,11 +489,11 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süde
 #: source_id: 2147342260
 #: source_id: LMS-BR_r_LMS-BR_123516_LMS-BR_72
 #: source_id: LMS-BR_r_LMS-BR_123515_LMS-BR_72
-#: last_checked: 2018-04-27 vvv
+#: last_checked: 2018-05-01 vvv
 # REMOVED --- #: next_check: 2018-04-03 vvv
 # REMOVED --- #: valid: -20180403 vvv
 #: priority: #A vvv
-Helmstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q3::inwork 7444,9148 7382,9187
+Helmstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q2::inwork 7444,9148 7382,9187
 Vorbergstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q3::inwork 7363,9152 7308,9163
 #: priority ^^^
 # REMOVED --- #: valid ^^^
@@ -502,7 +502,7 @@ Vorbergstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q3::inwork 7363,9152 73
 # 
 #: XXX: laut fritz bis Ende August, laut vmz nur bis Mitte Juni 2018
 #: source_id: 2147342169
-#: last_checked: 2018-04-27
+#: last_checked: 2018-05-01
 #: next_check: 2018-06-15
 #: valid: -20180827
 #: priority: #A
@@ -516,6 +516,17 @@ Großgörschenstr.: Bauarbeiten an der Einmündung Potsdamer Str.	q3::inwork 7609,9
 ### Steglitz ###
 # 
 # REMOVED (keine Sperrung mehr) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4193&options=4 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130613.1630.386060.html (geplanter Baubeginn 8/2013) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130808.1020.387684.html (Spatenstich, Bauende bis Ende 2014) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4193 (erster Bauabschnitt Niedstr.) --- #: last_checked: 2013-09-15 --- #: next_check: 2013-12-15 --- Breslauer Platz: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 5810,7337 5897,7337
+# 
+### Zehlendorf ###
+# 
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.618687.php
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.623391.php
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.655961.php (Sperrung doch nicht erfolgt? Dafür Einbahnstraßenregelung ab Dez. 2017)
+#: XXX wann wird die Einschränkung beendet?
+#: osm_watch: way id="13860352" version="11"
+#: last_checked: 2018-05-01
+#: check_frequency: 90d
+Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt werden	q4::inwork; 3867,4537 3905,4482
 # 
 ### Prenzlauer Berg ###
 # 
@@ -565,6 +576,14 @@ Säntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
 #: next_check ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
+# 
+#: next_check_id: HILDBURGHAUSER-2018
+#: source_id: 2147341614
+#: last_checked: 2018-05-01
+#: next_check: 2018-06-30
+#: valid: -20180630
+#: priority: #A
+Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden	q3::inwork 5223,1318 5414,1304 5585,1275 5741,1234
 # 
 #: temporary ^^^
 ######################################################################
@@ -2728,6 +2747,7 @@ Lubminer Weg: einige Fußgänger	q1 22319,12663 22391,12677
 (Hamannweg - Heinrich-Grüber-Str.): einige Fußgänger	q1 23452,12663 23368,12699 23355,12732
 (Fleischerstr. - Grünanlage): enger Weg, einige Fußgänger	q2 16433,1180 16450,1135 16457,1129
 Waldstr.: Fußgänger auf dem asphaltiertern Weg	q2 5384,13555 5390,13616 5417,13817 5443,14028
+Heinrich-Laehr-Park: Fußgänger	q1 1525,581 1655,615 1646,665 1668,791 1680,802
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

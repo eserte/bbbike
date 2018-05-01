@@ -1312,6 +1312,10 @@ Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-85
 (Am Grünen Gitter - Schloss): auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14191,-818 -14199,-707 -14205,-644
 ###################################################################### 
 # elsewhere in Brandenburg
+Rodelberg (Kleinmachnow)	1 -2387,-203 -2372,-291 -2451,-305
+(Käthe-Kollwitz-Str. - Zehlendorfer Damm)	1 -705,5 -658,-39
+#: by: osm
+Adolf-Grimme-Weg (Kleinmachnow)	1 -1768,-554 -1925,-568
 Damme	1s:q1 49936,99617 49905,99587 49850,99561
 Karower Weg (Lindenberg)	1s:q3 17825,21931 17837,21917 17895,21854
 #: by: rjoop
@@ -1914,6 +1918,8 @@ Tor, kann geschlossen sein	BNP:10::trailer=15 20682,9834
 Tor, kann geschlossen sein	BNP:10::trailer=15 20683,9558
 Tor, kann geschlossen sein	BNP:10::trailer=15 20829,5418
 Tor, kann geschlossen sein	BNP:10::trailer=15 23614,12615
+Tor, geschlossen	BNP:10::trailer=15 -7326,-1121
+Tor, geschlossen	BNP:10::trailer=15 -7520,-1164
 Schranke	BNP:3::trailer=10 20849,5266
 tragen (20 Stufen)	0:30 22624,13901
 tragen (8 weite Stufen) bzw. Naturrampe benutzen	0:15 -6004,15050
@@ -2197,7 +2203,8 @@ tragen (Treppe, 19 Stufen)	0:25 20939,2389
 #: by: Sabine Stock
 tragen (Treppe)	0:30 -633,12739
 #: by: superillu:
-tragen (Treppe)	0:30 -7418,181
+#: confirmed_by: srt
+tragen (Treppe, 4x5 Stufen)	0:30 -7401,198
 #: by: stefan ruedel:
 #: note: Alexander (mrbubi13) schätzt 50 Stufen vvv
 #: confirmed_by: srt (genaue Stufenzahl)
@@ -2804,7 +2811,7 @@ Schwingtor an der Luiseninsel	BNP:5 7732,11660
 #: confirmed_by: ^^^
 #: by: ^^^
 Schranke	BNP:1::trailer=5 25552,997
-enges Drängelgitter	BNP:5 100,3
+# REMOVED (existiert nicht mehr) --- enges Drängelgitter	BNP:5 82,6
 #: by: antje weiss dorn: vvv
 Drängelgitter	BNP:4 13909,18835
 Drängelgitter	BNP:3 14218,18674
@@ -2973,7 +2980,7 @@ Im Lichtenhain: neue Straße, zurzeit Bauarbeiten; Qualität, genaue Lage?	2::inwo
 #: osm_watch: way id="523614484" version="2"
 # REMOVED (wurde gelöscht) --- #: osm_watch: way id="523614486" version="3"
 # REMOVED (wurde gelöscht) --- #: osm_watch: way id="5134092" version="20"
-#: last_checked: 2018-04-10
+#: last_checked: 2018-05-01
 #: check_frequency: 90d
 Zufahrt Parkhaus: Abrissarbeiten, Straße komplett gesperrt	2::inwork 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
 # 

@@ -1624,8 +1624,8 @@ Ritterstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 1304,-540 1132,-498 1106
 Hoher Steinweg: mäßiges bis schlechtes Kopfsteinpflaster	Q3 990,-467 978,-521 965,-585
 Alte Potsdamer Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 965,-585 767,-542
 Jahnstr.: mäßiges Kopfsteinpflaster	Q2 757,-587 767,-542 818,-298
-Im Tal: Kopfsteinpflaster	Q2 -882,-1220 -940,-1256 -1112,-1123 -1310,-1137
-Am Weinberg: Kopfsteinpflaster, etwas kleinteiliger	Q2 -1348,-1098 -1310,-1137 -1091,-1350 -1036,-1315 -940,-1256
+Im Tal: Kopfsteinpflaster	Q2 -882,-1220 -940,-1256 -1112,-1123 -1279,-1160
+Am Weinberg: Kopfsteinpflaster, etwas kleinteiliger	Q2 -1331,-1092 -1279,-1160 -1091,-1350 -1036,-1315 -940,-1256
 Allee am Forsthaus: schlechtes Kopfsteinpflaster, teilweise mit Sandbanketten, und teilweise unebener Sandweg	Q3 -1503,-1328 -1607,-1389 -1698,-1384 -1976,-1325 -2071,-1259 -2262,-1317 -2334,-1392 -2627,-1439
 Leiblstr.: Kopfsteinpflaster	Q2 -12545,-698 -12269,-614
 Mittelstr.: Kopfsteinpflaster	Q2 -12545,-698 -12697,-729 -12884,-769
@@ -1888,7 +1888,7 @@ Lichterfeld - Finsterwalde: Asphalt	Q0 37906,-89609 37820,-89570 37574,-89532 37
 Yorckstr.: asphaltiert	Q0 -12839,-1342 -13001,-1329 -13089,-1313 -13206,-1294
 Yorckstr.: asphaltiert	Q0 -13208,-1315 -13001,-1349 -12976,-1356 -12833,-1365
 Luisenplatz: Kopfsteinpflaster, OK	Q1 -13626,-1205 -13637,-1164 -13646,-1115 -13560,-1106
-Käthe-Kollwitz-Str.: asphaltiert	Q0 -48,-30 -345,7 -554,3 -645,-25 -749,-74
+Käthe-Kollwitz-Str.: asphaltiert	Q0 -62,-37 -355,-3 -568,-18 -658,-39 -746,-74
 Ernst-Thälmann-Str.: Asphalt	Q0 -1709,653 -1831,641
 Ernst-Thälmann-Str.: Asphalt	Q0 -1831,641 -2387,548
 Rudolf-Breitscheid-Str.: Asphalt	Q0 -3003,432 -2915,456 -2387,548
@@ -2407,7 +2407,7 @@ Eisenbahnstr. (Fürstenwalde): Fahrbahn Asphalt, Radweg Richtung Süden Verbundste
 Am Bahnhof, Karl-Marx-Str. (Fürstenwalde): Asphalt	Q0 55401,-3599 55304,-3583 55131,-3906
 Leo-Hendrik-Baekeland-Str. (Erkner): Asphalt	Q0 34603,2615 34549,2640 34416,2848 34382,3109
 (Stolper Weg - Teerofendamm): Asphalt	Q0 -4229,-463 -4323,-284 -4393,-208 -4437,-122
-Teerofendamm: mäßiger Beton	Q1 -4437,-122 -4881,-343 -5005,-399 -5264,-523
+Teerofendamm: mäßiger Beton	Q1 -4437,-122 -4888,-344 -5005,-399 -5264,-523
 Karl-Marx-Str. (Waldesruh): unbefestigte Straße	Q2 24812,7999 24836,8145
 Heinestr. (Ahrensfelde): Asphalt	Q0 20971,19616 21019,19679 21117,19735 21220,19799 21344,19872
 Altwigshagen - B109: Asphalt	Q0 37114,144939 37475,145205 37801,145443
@@ -3552,7 +3552,44 @@ Britz - Chorin: sandiger Weg	Q2 39474,55669 40500,55749
 Dankwartstr. (Wismar): Kopfsteinpflaster, OK	Q1 -124758,162486 -124560,162832
 Am Markt (Wismar): Kopfsteinpflaster	Q2 -124560,162832 -124529,162833 -124447,162829 -124452,162909 -124529,162907 -124529,162833
 Wattstr.: Verbundsteinpflaster	Q1 -3226,-453 -3289,-519
-Heidefeld: Asphalt	Q0 -3193,-709 -3127,-641 -3082,-599 -3040,-554 -2975,-494
+Heidefeld (Kleinmachnow): Asphalt	Q0 -3188,-885 -3181,-841 -3186,-777 -3189,-731 -3190,-713 -3127,-641 -3082,-599 -3040,-554 -2975,-494 -2911,-442 -2832,-386 -2715,-314 -2628,-272 -2531,-233 -2480,-221
+Heidefeld (Kleinmachnow): Beton	Q0 -2480,-221 -2432,-211 -2387,-203 -2263,-187
+Eichhörnchenweg (Kleinmachnow): Verbundsteinpflaster	Q1 -3188,-885 -3193,-915
+Hufeisen (Kleinmachnow): Asphalt	Q0 -3186,-777 -3260,-782 -3328,-783 -3370,-743 -3368,-640 -3335,-634 -3267,-664 -3189,-731
+An der Koppel (Kleinmachnow): Asphalt	Q0 -3041,-889 -3153,-776 -3189,-731
+An der Koppel (Kleinmachnow): Asphalt	Q0 -3153,-776 -3186,-777
+Reiterweg (Kleinmachnow): Asphalt	Q0 -3289,-519 -3224,-583 -3160,-610 -3127,-641 -3075,-696 -3059,-742 -2897,-905
+Märkische Heide (Kleinmachnow): Kleinsteinpflaster	Q2 -3040,-554 -3125,-454
+Waldwinkel (Kleinmachnow): Kleinsteinpflaster	Q1 -2975,-494 -3030,-424
+Grasweg (Kleinmachnow): Kleinsteinpflaster	Q1 -2911,-442 -2937,-389
+Sperberfeld (Kleinmachnow): Kleinsteinpflaster	Q1 -2818,182 -2715,-314
+Sperberfeld (Kleinmachnow): Asphalt	Q0 -2715,-314 -2645,-406
+Rodelberg (Kleinmachnow): Verbundsteinpflaster	Q1 -2372,-291 -2387,-203
+Haberfeld (Kleinmachnow): Kleinsteinpflaster	Q1 -2628,-272 -2718,200
+Lupinenschlag (Kleinmachnow): Kleinsteinpflaster	Q1 -2531,-233 -2619,219
+Heidereiterweg (Kleinmachnow): Beton	Q0 -2432,-211 -2513,239
+Heidereiterweg (Kleinmachnow): Verbundsteinpflaster	Q1 -2451,-305 -2454,-290 -2421,-282 -2432,-211
+Steinweg (Kleinmachnow): Beton	Q0 -2202,-232 -2263,-187
+Steinweg (Kleinmachnow): Asphalt	Q0 -2263,-187 -2287,-35
+Adolf-Grimme-Ring (Kleinmachnow): Asphalt	Q0 -1921,-354 -1925,-568 -1926,-606 -1919,-622
+Adolf-Grimme-Ring (Kleinmachnow): Asphalt	Q0 -2034,-579 -1925,-568 -1768,-554
+Adolf-Grimme-Ring (Kleinmachnow): Asphalt	Q0 -1754,-623 -1768,-554 -1805,-339
+Arnold-Schönberg-Ring (Kleinmachnow): Asphalt	Q0 -1724,-329 -1715,-370 -1709,-404 -1694,-474 -1676,-553 -1612,-548 -1603,-489 -1590,-390 -1584,-352 -1582,-312
+Zum Wetterhäuschen (Kleinmachnow): Verbundsteinpflaster	Q1 -1724,-329 -1753,-188
+Auf der Drift (Kleinmachnow): Kleinsteinpflaster	Q1 -1376,-296 -1416,-84
+Driftkamp (Kleinmachnow): Kleinsteinpflaster	Q1 -1376,-296 -1351,-424 -1324,-469
+Driftkamp (Kleinmachnow): Beton	Q0 -1324,-469 -1278,-514 -1224,-570
+Auf der Breite (Kleinmachnow): Kleinsteinpflaster	Q1 -1268,-294 -1309,-59
+Wilhelm-Külz-Weg (Kleinmachnow): Asphalt	Q0 -753,-86 -632,-172
+(Käthe-Kollwitz-Str. - Zehlendorfer Damm): Asphalt	Q0 -658,-39 -705,5
+Am Kiebitzberg (Kleinmachnow): Kleinsteinpflaster	Q1 -356,-131 -355,-3 -311,99
+Erlenweg (Kleinmachnow): Asphalt	Q0 -144,-156 -62,-37
+Erlenweg (Kleinmachnow): Kleinsteinpflaster	Q1 -62,-37 -37,83
+Lindenbahn (Kleinmachnow): Asphalt	Q0 -4709,-731 -4888,-344
+Bäkehang (Kleinmachnow): Asphalt	Q0 -4738,-748 -4653,-909
+Förster-Funke-Allee (Kleinmachnow): Fahrbahn asphaltiert	Q0 -2218,-256 -2141,-307 -2046,-345 -1945,-354 -1921,-354 -1805,-339 -1724,-329 -1582,-312 -1494,-303 -1376,-296 -1268,-294 -1179,-298 -981,-290 -958,-309
+(Augustinum-Gelände): Verbundsteinpflaster	Q1 -62,-37 13,-39 15,-27
+(Augustinum-Gelände): Asphalt	Q0 15,-27 82,6 123,3
 Tannenweg: Asphalt	Q0 -3020,-2208 -3130,-2017
 Kastanienweg: Kopfsteinpflaster	Q2 -2946,-2130 -2981,-2065 -2989,-1916 -3000,-1811
 Kastanienweg: Asphalt	Q0 -3000,-1811 -3024,-1645
@@ -3733,6 +3770,12 @@ Krummensee - Wegendorf: Asphalt	Q0 32228,22165 33374,22059
 Krummensee - Wegendorf: unbefestigter Weg, Schlamm	Q3 31272,22232 32228,22165
 Altlandsberger Chaussee - Dorfstr.: wassergebundene Decke	Q1 26532,15526 26509,15642 26546,15740
 Innerer Mauerweg: Asphalt	Q1 8412,-1979 8492,-1376
+Am Waldrand: Asphalt	Q0 -9313,54 -9336,177 -9389,425 -9390,433
+Tannenweg: Asphalt	Q0 -9434,164 -9440,193 -9405,204 -9453,425 -9494,441 -9539,434
+(Stolper Weg - Teerofenweg): Waldweg, teils mit Schotter, einige sandige Stellen	Q2 -4738,-748 -5184,-897 -5262,-900 -5305,-942 -5380,-990 -5510,-1070 -5628,-1051 -5796,-1125 -5912,-1260 -6046,-1208 -6051,-1169 -6275,-924 -6380,-848
+(Albrechts Teerofen - Stolper Weg): unbefestigte Straße	Q2 -5364,-1204 -5380,-990
+Stolper Weg: Asphalt	Q0 -3188,-885 -3567,-833 -3731,-785 -3898,-738 -3996,-711 -4162,-596 -4229,-463 -4317,-521 -4331,-631 -4350,-665 -4594,-709 -4709,-731 -4738,-748
+Heinrich-Hertz-Str.: Fahrbahn asphaltiert, Verbundsteinpflasterradweg	Q1 -4229,-463 -4105,-383 -4077,-256
 Am Lückefeld (Mahlow): guter Asphalt	Q0 13256,-4919 13049,-4788 12977,-4783 12841,-4989 12680,-5230 12782,-5284 12837,-5273 13194,-5021 13256,-4919
 Kopfsteinpflaster	Q2 15157,61424 14833,61726 14920,62175 14941,62754 14768,63163 14594,63506 14618,64317 14400,64920 14312,65950 14312,66412
 Kopfsteinpflaster	Q2 13386,66797 13458,67551 13676,68144
@@ -3884,7 +3927,7 @@ Niederfinow - Eberswalde: wassergebundene Decke	Q1 38162,48400 38126,48386 38104
 Niederfinow - Eberswalde: Kopfsteinpflaster	Q2 37908,48342 37856,48337
 Niederfinow - Eberswalde: Asphalt	Q0 37856,48337 37784,48323 37565,48389 37452,48447 37217,48445 37141,48467 36973,48608 36813,48667 36586,48613 36539,48630 36472,48629 36364,48599
 Steinstr.: Kopfsteinpflaster	Q2 -7751,-2420 -7870,-2400 -7909,-2375
-(Steinstr. - Tschaikowskiweg): Waldweg	Q1 -7996,-2293 -8024,-2468
+(Steinstr. - Tschaikowskiweg): asphaltiert	Q0 -7996,-2293 -8024,-2468
 Tschaikowskiweg: Asphalt mit Schäden	Q1 -8024,-2468 -8018,-2585
 Tschaikowskiweg: Asphalt	Q0 -7999,-2585 -7993,-2678 -7976,-2772
 Hubertusdamm: Asphalt	Q0 -8167,-2704 -8136,-2699 -7993,-2678 -7803,-2689
@@ -4024,7 +4067,7 @@ Neuenfeld - Züsedom: schlechtes Kopfsteinpflaster	Q3 49802,113824 50143,114340 4
 Züsedom - Fahrenwalde: sehr schlechtes Kopfsteinpflaster, kaum Sandbanketten	Q3 50240,116023 50417,115935 50917,115807 51429,115904 51730,116017 52760,115828
 Goethestr. (Neu-Buch): Asphalt	Q0 17228,24640 17317,24689
 Goethestr. (Neu-Buch): fester Sandweg	Q2 17317,24689 17345,24704 17581,24815 17699,24874 17776,24912 17864,24956 17913,25005
-Dreilindenerweg: Asphalt	Q0 -3589,-150 -3746,-268 -3793,-340 -3834,-459 -3993,-700
+Dreilindener Weg: Asphalt	Q0 -3589,-150 -3808,-329 -3910,-473 -3996,-711
 Bahnhofstr (Stahnsdorf): Asphalt	Q0 -2878,-3004 -2918,-3010 -3004,-3000 -3159,-2968 -3235,-2953 -3356,-2926 -3451,-2906 -3475,-2884 -3528,-2810 -3650,-2609
 Försterei Zedlitz - Straße nach Krampnitz: wassergebundene Decke	Q1 -10955,3723 -11011,3721 -11156,3523 -11247,3503 -11299,3471 -11334,3365 -11395,3270 -11509,3084
 Straße des Friedens: Betonstraße	Q1 -19186,8685 -19127,8680 -18848,8400 -18331,7751 -18216,7682 -17812,7349
@@ -4234,14 +4277,14 @@ Bleyen - Küstrin: asphaltiert	Q0 92404,20801 92726,20487 92970,20194
 An der Havel (Mauerweg und Berlin-Kopenhagen): Asphalt	Q0 -3408,23277 -3375,23263 -3353,23188 -3159,23304 -2818,23788 -2623,24498 -2624,24597 -2795,24710 -2809,24791 -2766,24821 -2713,24750 -2637,24791 -2675,25070 -2906,25163 -2946,25212
 Hennigsdorf - Hohen Neuendorf: Feldweg	Q2 -1941,26218 -2032,26270
 Hennigsdorf - Hohen Neuendorf: Asphalt	Q0 -2032,26270 -1966,26547 -1916,26608 -1925,26785 -2346,27455 -2333,27696 -2193,27684 -2154,27781 -2102,27792 -2080,27830 -2126,27912 -2129,28126 -1959,28228 -1799,28464 -1508,28767 -1262,28964 -1250,29023 -1441,29319 -1555,29419 -1463,29514 -1427,29488 -1413,29413 -1208,29066 -1157,29064 -1107,29151 -1008,29587 -1043,29643 -959,30066 -1011,30234 -1003,30330 -904,30505 -831,30493 -714,30642 -458,30775 164,30849 336,31031
-Ring am Feld: guter Asphalt	Q0 -1945,-354 -1943,-204
+Ring am Feld: guter Asphalt	Q0 -1945,-354 -1943,-204 -2061,-177 -2141,-307
 Hobrechtsfelde - Gorinsee: fester Sandweg, teilweise kleiner Schotter	Q2 15621,29290 15159,30109
 Hobrechtsfelde - Gorinsee: loser Sandweg	Q3 15159,30109 15063,30310
 Hobrechtsfelde - Gorinsee: fester Sandweg, teilweise kleiner Schotter	Q2 15063,30310 14865,30807 14857,31087
 Buch - Gorinsee: fester Sandweg, teilweise kleiner Schotter	Q2 15777,28037 15700,28074 15697,28147 15463,28202 15508,28522 15621,29290
-Im Kamp: schlechtes Kopfsteinpflaster	Q3 -1072,28 -1160,-71 -1186,-134 -1192,-195 -1179,-298
+Im Kamp: schlechtes Kopfsteinpflaster	Q3 -1076,22 -1160,-71 -1186,-134 -1192,-195 -1179,-298
 Im Kamp: glattes Verbundsteinpflaster	Q0 -1157,-360 -1179,-298
-Im Kamp: guter Asphalt	Q0 -1072,28 -990,137 -903,314 -786,629
+Im Kamp: guter Asphalt	Q0 -1076,22 -990,137 -903,314 -786,629
 Ginsterheide: Asphalt	Q0 -786,629 -818,789 -868,1124 -877,1209
 Ginsterheide: Betonplatten, nicht die beste Qualität	Q1 -877,1209 -905,1395 -918,1435
 Rote-Kreuz-Str.: Asphalt	Q0 -8141,-1904 -8173,-2151
@@ -4703,8 +4746,9 @@ Am Nuthetal: guter Beton	Q1 -9752,-3958 -9647,-3958 -9544,-3913
 (Am Nuthetal - Wetzlarer Str.): gut verlegtes Pflaster	Q1 -9544,-3913 -9531,-3917 -9461,-3879 -9440,-3872 -9391,-3864 -9328,-3871 -9276,-3891 -9240,-3912 -9217,-3897 -9186,-3853 -9157,-3842 -9134,-3851 -9114,-3846 -9064,-3866 -9047,-3889
 (Wetzlarer Str. - Stern-Center): alter Asphalt, Sand und Kies, relativ fest	Q2 -8970,-3923 -8975,-3946 -8708,-4025 -8687,-4015 -8634,-4035 -8579,-4074 -8448,-4098 -8377,-4091 -8324,-4087 -8096,-4106 -8038,-4093
 (Im Schäferfeld - Wetzlarer Str.): gut gemachter Sand-Kies-Weg	Q1 -8563,-3805 -8562,-3849 -8661,-3971 -8982,-3860 -9002,-3896 -8970,-3923
-Tannenstr.: schlechtes Kopfsteinpflaster	Q3 -9346,176 -9389,170 -9434,164 -9539,147
-Am Böttcherberg: schlechtes Kopfsteinpflaster	Q3 -9527,485 -9544,463 -9539,434 -9526,336 -9539,147 -9541,97 -9565,62
+Tannenstr.: schlechtes Kopfsteinpflaster	Q3 -9336,177 -9389,170 -9434,164 -9539,147
+Am Böttcherberg: Asphalt	Q0 -9527,485 -9532,477 -9544,463 -9539,434
+Am Böttcherberg: schlechtes Kopfsteinpflaster	Q3 -9539,434 -9526,336 -9539,147 -9541,97 -9565,62
 Louis-Nathan-Allee: fester Sandweg	Q2 -9698,-19 -9926,114 -9968,106 -10002,157 -10097,200
 Am Böttcherberg: Beton	Q0 -9565,62 -9481,85
 Kleinziethen - Pechsteinstr. (Lichtenrade): mäßiger fester Sandweg	Q2 13506,-2809 12268,-2294
@@ -4782,7 +4826,8 @@ Diedersdorf - Falkenhagen: Kopfsteinpflaster	Q2 72893,11841 72843,11497
 Diedersdorf - Falkenhagen: Kopfsteinpflaster	Q2 72843,11497 72703,11411 72818,11282 72850,11107 72861,10766 72925,10638
 Diedersdorf - Falkenhagen: befestigt	Q0 72925,10638 73513,9620 73602,9574 73724,8797 73717,8503 73606,7952 73488,7823 72786,7361 72428,6791 71983,6308 72356,4754
 Geschwister-Scholl-Str.: Asphalt	Q0 -781,-309 -632,-172
-Geschwister-Scholl-Str.: schlechtes Kopfsteinpflaster	Q3 -632,-172 -554,3 -508,126 -399,364 -313,571 -119,800 -203,906
+Geschwister-Scholl-Str.: Asphalt	Q0 -632,-172 -568,-18 -508,126
+Geschwister-Scholl-Str.: schlechtes Kopfsteinpflaster	Q3 -508,126 -399,364 -313,571 -119,800 -203,906
 Erich-Pommer-Str: guter Beton	Q0 -7464,-4407 -7321,-4247
 Föhrenwald (Kleinmachnow): mäßiger Beton	Q2 -531,807 -606,1134 -605,1240 -616,1340 -811,1319
 Sonnenhag (Kleinmachnow): mäßiger Beton	Q2 -833,1410 -811,1319 -789,1220 -758,1098
@@ -4792,7 +4837,7 @@ Artilleriepark: guter Asphalt	Q0 -12956,13814 -12960,13760 -12988,13755 -13017,1
 Edison-Allee: Verbundsteinpflaster	Q1 -11276,-1844 -11267,-1832 -11205,-1745 -11180,-1756 -11166,-1764 -11164,-1842 -11162,-1913 -11163,-1925
 Karlstr. (Glienicke): Asphalt	Q0 5168,24614 5119,24856
 Ziolkowskistr.: guter Beton	Q0 -7971,-3373 -7935,-3384 -7856,-3397 -7830,-3400 -7511,-3384 -7412,-3419 -7285,-3464 -7150,-3513 -7015,-3563 -6951,-3590 -6796,-3645
-Schleusenweg: guter Asphalt	Q0 -2737,-719 -2771,-710 -2832,-386 -3003,432
+Schleusenweg: guter Asphalt	Q0 -2737,-719 -2771,-710 -2832,-386 -2945,159 -3003,432
 Dieselstr. (Potsdam): Asphalt	Q0 -10350,-2358 -10454,-2339 -10551,-2310 -10653,-2276
 Wilhelmstr. (Bergfelde): Kopfsteinpflaster	Q2 4267,29149 4376,29214
 Saarmunder Str. (Potsdam): guter Beton	Q0 -10748,-4065 -10662,-4280 -10577,-4552 -10517,-4686 -10453,-4819
@@ -4911,3 +4956,4 @@ Berliner Str.: Asphalt	Q0 -7977,16745 -7926,16790
 Berliner Str.: Beton	Q1 -8313,16897 -8408,16939
 Am Graben (Waldblick): Schotterstraße	Q2 9402,-3817 9354,-3949
 (zum Bahnhof Saarmund): Beton	Q1 -7526,-9435 -7114,-9496
+Melzow - Gramzow: Kopfsteinpflaster	Q3 45082,88685 46529,89125
