@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# Copyright (C) 2009,2012,2013,2016,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012,2013,2016,2017,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -38,12 +38,21 @@ my $wanted_site_code;
 my $wettermeldung_compatible;
 my $near;
 my $o;
+my $retry_def;
 GetOptions("sitecode=s" => \$wanted_site_code,
 	   "wettermeldung!" => \$wettermeldung_compatible,
 	   "near=s" => \$near,
 	   "o=s" => \$o,
+	   "retry-def=s" => \$retry_def,
 	  )
     or usage;
+
+my @retry_sleeps;
+if ($retry_def) {
+    @retry_sleeps = split /,/, $retry_def;
+    die "--retry-def should contain only comma-separated positive integers\n"
+	if grep { !/^[1-9]\d*$/ } @retry_sleeps;
+}
 
 my $ua = LWP::UserAgent->new;
 
@@ -104,12 +113,26 @@ if (!@sites) {
     die "Could not find any site.\n";
 }
 
+my $got_something = 0;
+
 for my $site_def (@sites) {
     my($site_code, $r) = @{$site_def}{qw(sitecode record)};
 
     my $url = $metar_url_cb->($site_code);
-    my $resp = $ua->get($url);
-    if (!$resp) {
+    my @use_retry_sleeps = @retry_sleeps;
+    my $resp;
+    while (1) {
+	$resp = $ua->get($url);
+	last if $resp->is_success;
+	if ($resp->code >= 500 && @use_retry_sleeps) {
+	    my $sleep = shift @use_retry_sleeps;
+	    warn "Fetching for $site_code failed with code " . $resp->code . ", but will retry in $sleep second(s)...\n";
+	    sleep $sleep;
+	} else {
+	    last;
+	}
+    }
+    if (!$resp->is_success) {
 	warn "Fetching for $site_code failed: " . $resp->status_line;
 	next;
     }
@@ -125,6 +148,8 @@ for my $site_def (@sites) {
 
     my $m = Geo::METAR->new;
     $m->metar($metar);
+
+    $got_something++;
 
     if ($wettermeldung_compatible) {
 	my $line = format_wettermeldung($m);
@@ -162,6 +187,10 @@ for my $site_def (@sites) {
     } else {
 	print "$site_code: " . $m->dump . "\n";
     }
+}
+
+if (!$got_something && @retry_sleeps) {
+    die "Did not get any data for " . join(", ", map { $_->{sitecode} } @sites) . "\n";
 }
 
 sub format_wettermeldung {
@@ -287,6 +316,25 @@ specified coordinate first.
 =item * directly by specifying an icao code
 
 For example "EDDT" for Berlin-Tegel.
+
+=back
+
+=head2 OPTIONS
+
+Further options:
+
+=over
+
+=item C<-retry-def I<secs>,....>
+
+A comma-separated list of positive integers, to force retries in case
+of failure to fetch the URL. The numbers will be used as sleep times
+between the retries. Only 5xx errors will cause a retry --- it is
+expected that 4xx errors are permanent.
+
+Additionally, if C<-retry-def> is specified and no site could be
+fetched, then the script will die. Otherwise there will be no output,
+but exit code will still be zero.
 
 =back
 
