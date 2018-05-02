@@ -121,37 +121,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: YYYY0431T1200-YYYY05020000 vvv
-#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2971249-2970764-myfest-berlin.html
-	2::temp 11763,10635 11734,10563 11721,10530 11754,10516 11949,10414
-	2::temp 11552,10863 11772,10764 11760,10732 11781,10696 11763,10635 11505,10744 11552,10863 11589,10947 11640,11067
-	2::temp 11958,11045 11897,10887 11839,10736 11824,10708 11781,10696
-	2::temp 11805,10899 11805,10858
-	2::temp 11275,10723 11301,10783 11329,10785 11365,10791 11403,10782 11505,10744 11463,10642 11690,10543 11721,10530
-	2::temp 11839,10736 11772,10764 11804,10846
-	2::temp 11463,10642 11275,10723 11234,10739 11159,10769
-	2::temp 11708,10497 11690,10543 11734,10563 11754,10516 11708,10497
-	3 11258,10682 11275,10723 11253,10778
-	3 11253,10778 11275,10723 11258,10682
-#: tempex ^^^
-',
-         'from' => 1525082400,
-         'id' => 45,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'MyFest: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2018',
-         'type' => 'gesperrt',
-         'until' => 1525211999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3738,33 +3708,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
-	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
-	2::inwork 8573,12325 8540,12420
-	2::inwork 8303,12216 8344,12221 8538,12245 8592,12252
-	2::inwork 8089,12190 8214,12205
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-#: tempex ^^^
-',
-         'from' => 1524866400,
-         'id' => 2565,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              30,
-                              'months',
-                              4
-                            ]
-                          ],
-         'source_id' => 'http://www.berlin.de/tickets/suche/detail.php?id=1372887',
-         'text' => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung des DGB), am 1. Mai 2018',
-         'type' => 'gesperrt',
-         'until' => 1525219200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4208,7 +4152,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-04-15 vvv
+#: last_checked: 2018-05-02 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -4470,12 +4414,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX bis wann ist die Durchfahrt gesperrt?
 #: source_id: 2147342009
-#: next_check: 2018-05-01
+#: last_checked: 2018-05-02
+#: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
 ',
          'from' => 1523311200,
          'id' => 2919,
-         'text' => 'Wiesenweg: wegen Brückenarbeiten zwischen Gürtelstr. und Kietzer Weg komplett gesperrt, auch für Fußgänger, voraussichtlich ab 11.04.2018, 7 Uhr',
+         'text' => 'Wiesenweg: wegen Brückenarbeiten zwischen Gürtelstr. und Kietzer Weg komplett gesperrt, auch für Fußgänger, ab 11.04.2018, 7 Uhr',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -4554,23 +4499,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1530395999
        },
        undef,
-       {
-         'data' => '	2::temp 12690,10062 12659,10119 12670,10160 12693,10183 12728,10196 12757,10197 12774,10178 12795,10147 12802,10097 12670,10160 12543,10223 12509,10189 12504,10172 12464,10153
-	2::temp 12686,10045 12690,10062 12737,10051 12802,10097 12869,10071 12901,10134 12905,10143
-	2::temp 12767,10216 12763,10207 12757,10197
-	2::temp 12814,9966 12833,9998 12869,10071 12987,10007 13013,10047 13013,10068 13035,10076
-	2::temp 12509,10189 12502,10244 12543,10223 12580,10252 12608,10294
-	2::temp 12328,10442 12331,10409 12384,10368 12457,10309 12502,10244
-	2::temp 12504,10172 12507,10130
-	2::temp 12932,9900 12987,10007 13145,9920
-',
-         'from' => 1524985200,
-         'id' => 2938,
-         'source_id' => 'http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.685963.php',
-         'text' => 'Görlitzer Park: wegen einer Veranstaltung (MaiGörli) ist der Görlitzer Park für Radfahrer gesperrt, vom 30. April 2018 9 Uhr bis 1. Mai 2018 23 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1525211999
-       },
+       undef,
        {
          'data' => '#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.386693.php
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/uebersichtsplan-umleitung_vollsperrung.pdf

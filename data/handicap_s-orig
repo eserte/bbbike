@@ -125,7 +125,7 @@ Märkisches Ufer: Bauarbeiten, Engstelle	q3+::inwork 10687,11853 10869,11949
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2018-04-20
+#: last_checked: 2018-05-02
 Voltairestr.: Fahrbahn unter Umständen wegen Baustelle gesperrt, Ausweichen auf Gehweg	q2- 11329,12497 11209,12430
 # 
 #: next_check_id: ZIEGELSTR-2016
@@ -339,19 +339,7 @@ Wilhelminenhofstr.: Bauarbeiten zwischen Siemensstr. und Edisonstr., Fahrbahn un
 #: priority: #A
 Prinzenstr.: Bauarbeiten, gemeinsamer Rad- und Gehweg	q3::inwork; 10633,10369 10605,10312
 # 
-#: source_id: 2147342048
-#: source_id: LMS-BR_r_LMS-BR_116423_LMS-BR_72
-#: last_checked: 2018-04-19 vvv
-#: next_check: 2018-04-30 vvv
-#: valid: -20180430 vvv
-#: priority: #A vvv
-Bürknerstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11673,9720 11754,9735
-Böckhstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 11673,9720 11640,9710
-#: priority ^^^
-#: valid ^^^
-#: next_check ^^^
-#: last_checked ^^^
-# 
+# REMOVED (fertig) --- #: source_id: 2147342048 --- #: source_id: LMS-BR_r_LMS-BR_116423_LMS-BR_72 --- #: last_checked: 2018-04-19 vvv --- #: next_check: 2018-04-30 vvv --- #: valid: -20180430 vvv --- #: priority: #A vvv ---  --- Bürknerstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11673,9720 11754,9735 --- Böckhstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 11673,9720 11640,9710
 # REMOVED --- #: source_id: LMS-BR_r_LMS-BR_106653_LMS-BR_72 --- #: source_id: LMS-BR_r_LMS-BR_119822_LMS-BR_72 --- #: last_checked: 2017-11-28 vvv --- Mariannenplatz: Bauarbeiten, Fahrbahn gesperrt, Bordsteine	q4::inwork 11781,10696 11824,10708
 # REMOVED --- #: source_id: 2147342161 --- #: source_id: LMS-BR_r_LMS-BR_119821_LMS-BR_72 --- #: XXX Ende-Datum laut fritz --- #: last_checked: 2018-01-09 --- #: next_check: 2018-01-31 --- Mariannenplatz: Bauarbeiten, Fahrbahn an der Waldemarstr. gesperrt	q2::inwork 11839,10736 11897,10887
 # REMOVED (bis auf ein kleines Stück am Kottbusser Damm fertig) --- #: XXX laut fritz bis 30.11.2017 --- #: XXX ändert sich an der Fahrbahnbeschaffenheit etwas? --- #: source_id: LMS-BR_r_LMS-BR_110600_LMS-BR_72 --- #: last_checked: 2017-11-30 vvv --- #: check_frequency: 7d vvv --- # REMOVED --- Böckhstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11673,9720 11640,9710 --- Böckhstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 11640,9710 11411,9810
@@ -426,8 +414,8 @@ Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5894,12480 5944,12
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 7d vvv --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12761,9190 12845,9304 12844,9351 --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12902,9066 12761,9190 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4952&mt=0&zoom=17
-#: last_checked: 2018-04-19
-#: next_check: 2018-06-01
+#: last_checked: 2018-05-02
+#: check_frequency: 90d
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 
 #: next_check_id: DIESEL-2015

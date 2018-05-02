@@ -25658,7 +25658,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-04-15 vvv
+#: last_checked: 2018-05-02 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -26701,12 +26701,13 @@ EOF
      },
      { from  => 1523311200, # 2018-04-10 00:00
        until => undef, # XXX
-       text  => 'Wiesenweg: wegen Brückenarbeiten zwischen Gürtelstr. und Kietzer Weg komplett gesperrt, auch für Fußgänger, voraussichtlich ab 11.04.2018, 7 Uhr',
+       text  => 'Wiesenweg: wegen Brückenarbeiten zwischen Gürtelstr. und Kietzer Weg komplett gesperrt, auch für Fußgänger, ab 11.04.2018, 7 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX bis wann ist die Durchfahrt gesperrt?
 #: source_id: 2147342009
-#: next_check: 2018-05-01
+#: last_checked: 2018-05-02
+#: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
 EOF
      },
