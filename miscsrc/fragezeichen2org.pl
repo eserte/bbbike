@@ -260,8 +260,8 @@ for my $file (@files) {
 	     my $prio;
 	     if ($prio = $dir->{priority}) {
 		 $prio = $prio->[0];
-		 if ($prio !~ m{^#[ABC]$}) {
-		     warn "WARN: priority should be #A..#C, not '$prio', ignoring...\n";
+		 if ($prio !~ m{^#[ABCD]$}) {
+		     warn "WARN: priority should be #A..#D, not '$prio', ignoring...\n";
 		     undef $prio;
 		 }
 	     }

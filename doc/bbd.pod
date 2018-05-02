@@ -591,7 +591,9 @@ routes).
 =item C<priority: I<string>>
 
 A priority for checks. The priority string should be something between
-C<#A> (highest) and C<#C> (lowest).
+C<#A> (highest, use for features which are important for many
+routings) and C<#D> (lowest, use for features which are not used at
+all for routings, e.g. zebras).
 
 =item C<linked: I<string>>
 
