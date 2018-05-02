@@ -502,7 +502,7 @@
 (defun bbbike-insert-source-id ()
   (interactive)
   (let ((sel (bbbike--get-x-selection)))
-    (if (string-match "\t\\([A-Za-z0-9_-]+\\)\t\\(INUSE\\)?$" sel)
+    (if (string-match "\t\\([A-Za-z0-9_/-]+\\)\t\\(INUSE\\)?$" sel)
 	(let ((source-id (substring sel (match-beginning 1) (match-end 1))))
 	  (beginning-of-line)
 	  (insert (concat "#: source_id: " source-id "\n")))
