@@ -3450,7 +3450,29 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.die-classic-days-berlin.de/programm-2/
+#: note: kann im Juni oder Juli stattfinden
+# REMOVED --- #: tempex: 20170616T0400-20170619T0400
+	q4::temp 5475,10808 5341,10756 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435
+',
+         'from' => 1528423200,
+         'id' => 2439,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              2,
+                              'months',
+                              6
+                            ]
+                          ],
+         'source_id' => 'IM_025248',
+         'text' => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, vom 09.06.2018 bis 11.06.2018 früh',
+         'type' => 'handicap',
+         'until' => 1528682400
+       },
        undef,
        undef,
        undef,
@@ -4500,21 +4522,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.386693.php
-#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/uebersichtsplan-umleitung_vollsperrung.pdf
-#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.692745.php
-#: by: http://www.berliner-woche.de/pankow/verkehr/sperrung-rosenthaler-weg-umleitung-vom-2-mai-bis-zum-25-juni-d159605.html
-# REMOVED (ja, sieht so aus) --- #: XXX prüfen, ob der Starttermin eingehalten wird --- #: next_check: 2018-05-02 --- #: priority: #A
-	2::inwork 10228,21940 10312,21969 10377,21991 10436,22010 10493,22029 10554,22050 10613,22070 10673,22090 10709,22102 10769,22122 10828,22142 10892,22165 10935,22174 10999,22195
-',
-         'from' => 1525125600,
-         'id' => 2939,
-         'source_id' => 'http://www.berliner-woche.de/blankenfelde/verkehr/rosenthaler-weg-voll-gesperrt-wasserbetriebe-verlegen-rohre-d144397.html',
-         'text' => 'Rosenthaler Weg: Sperrung wegen Bauarbeiten, evtl. sind auch Radfahrer betroffen, voraussichtlich vom 2. Mai 2018 bis 29. Juni 2018',
-         'type' => 'gesperrt',
-         'until' => 1530309599
-       },
+       undef,
        undef,
        {
          'data' => '#: last_checked: 2018-03-25
@@ -4598,6 +4606,35 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => undef,
          'id' => 2952,
          'text' => 'Uferweg: zwischen Mentzelpark und Eiselenweg Bauarbeiten, Weg komplett gesperrt, Ende der Sperrung unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: http://www.berliner-woche.de/alt-treptow/verkehr/radelverbot-im-park-bleibt-d122937.html
+#: by: http://www.berliner-woche.de/alt-treptow/bauen/der-vater-des-rosengartens-d156358.html
+	q4 15778,8990 15623,9028 15527,9096 15513,9144 15453,9259 15432,9322 15304,9464 15186,9550 15052,9584 14909,9649 14889,9660 14807,9704 14635,9786
+	q4 14635,9786 14500,9863 14467,9887
+	q4 14467,9887 14455,9892 14448,9922
+	q4 14488,9848 14500,9863
+	q4 14361,9772 14436,9784 14460,9814 14488,9848
+	q4 14404,9847 14466,9861 14488,9848
+	q4 14318,9688 14371,9726 14443,9731
+	q4 14361,9772 14443,9731 14495,9710 14577,9641 14627,9609 14695,9587 14792,9599 14867,9573 14918,9545 15025,9461 15133,9396 15184,9373 15268,9374 15325,9354 15453,9259
+	q4 15184,9373 15249,9337
+	q4 14577,9641 14604,9674 14645,9710 14697,9726 14853,9655 14909,9649
+	q4 14909,9649 14867,9573 14837,9517 14809,9466
+	q4 15623,9028 15633,9007 15630,8979 15623,8949 15617,8924 15608,8882 15591,8848
+	q4 15680,8914 15617,8924
+	q4 15630,8979 15658,9007
+	q4 14316,9542 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14719,9419 14797,9396 14824,9390 14889,9381
+	q4 14475,9199 14531,9244 14655,9311 14673,9353 14669,9389 14635,9441
+	q4 14719,9419 14774,9437 14809,9466
+	q4 14588,9473 14556,9581
+	q4 14531,9244 14485,9271 14398,9373
+',
+         'from' => undef,
+         'id' => 2953,
+         'text' => 'Treptower Park: Radfahren im Treptower Park offiziell verboten',
          'type' => 'gesperrt',
          'until' => undef
        }
