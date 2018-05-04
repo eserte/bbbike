@@ -3419,7 +3419,27 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'until' => 1525643999
        },
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: tempex: 20170630T2000-20170701T2359
+	2::temp 14161,11930 14285,12190
+',
+         'from' => 1527876000,
+         'id' => 2433,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              6
+                            ]
+                          ],
+         'source_id' => 'http://www.xhain.info/termine/fiesta-kreutziga.htm',
+         'text' => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am 02.06.2018 und 03.06.2018',
+         'type' => 'gesperrt',
+         'until' => 1527984000
+       },
        undef,
        undef,
        {
@@ -3832,6 +3852,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: am Mo, den 2017-12-04 gegen 18:45: geschlossen
 #: note: am Mi, den 2018-01-24 gegen 18:45: offen
 #: note: am Mo, den 2018-02-26 gegen 18:50: offen
+#: note: am Fr, den 2018-04-04 gegen 18:40: offen
 #: tempex: volatile vvv
 	3::night 14563,8243 14425,8116 14419,8112
 	3::night 14419,8112 14425,8116 14563,8243
@@ -4065,19 +4086,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: am Di, den 2016-04-05 gegen 08:45: geschlossen
-#: tempex: volatile vvv
-	3::night 14700,8368 14688,8355 14563,8243
-	3::night 14563,8243 14688,8355 14700,8368
-#: tempex ^^^
-',
-         'from' => undef,
-         'id' => 2775,
-         'recurring' => 1,
-         'text' => 'Mergenthalerring/Kiefholzstr.: Tor kann versperrt sein, auch tagsüber',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4378,7 +4387,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-04-03
+#: last_checked: 2018-05-04
 	2::inwork 14652,10201 14569,10055
 ',
          'from' => undef,
@@ -4570,9 +4579,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1522864912,
          'id' => 2947,
-         'text' => 'Wilhelmstr. und Behrenstr.: Sperrung Richtung Norden zwischen Französische Str. und Behrenstr. sowie Richtung Osten zwischen Wilhelmstr. und Mauerstr., bis 4. Mai 2018',
+         'text' => 'Wilhelmstr. und Behrenstr.: Sperrung Richtung Norden zwischen Französische Str. und Behrenstr. sowie Richtung Osten zwischen Wilhelmstr. und Mauerstr., bis Mitte Mai 2018',
          'type' => 'handicap',
-         'until' => 1525449600
+         'until' => 1526407200
        },
        undef,
        undef,

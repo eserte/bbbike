@@ -50,7 +50,7 @@ Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 
 #: source_id: 2147340987
 #: source_id: 2147341435
 #: osm_watch: way id="41954398" version="13"
-#: last_checked: 2018-04-30 vvv
+#: last_checked: 2018-05-04
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (hier nur dieser Abschnitt (Prenzlauer Allee - Bötzowstr.) erwähnt)
 #: next_check: 2018-06-01
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12616,14315
@@ -59,12 +59,11 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123
 #: last_checked: 2018-04-30
 #: check_frequency: 60d
 Danziger Str.	?::projected 12616,14315 12722,14232 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
-#: last_checked ^^^
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2018-05-02
+#: last_checked: 2018-05-04
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -247,13 +246,13 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15947,12626 15928,12483
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5758
 #: osm_watch: way id="138431358" version="10" vvv
 #: osm_watch: way id="330786038" version="6" vvv
-#: last_checked: 2018-04-08 vvv
-#: next_check: 2018-06-01 vvv
+#: last_checked: 2018-05-04 vvv
+#: check_frequency: 60d vvv
 #: XXX Maßnahme Bsw.6 + Pw.7
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15553,7408 15560,7400 15609,7347 15695,7254 15928,6996 15977,6942 16060,6850 16146,6755
 #: XXX Maßnahme Bsw.7
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 16146,6755 16273,6609 16280,6601 16333,6544 16425,6445
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: osm_watch ^^^
 #: osm_watch ^^^
@@ -332,7 +331,7 @@ Schöneberger Str.: Radspuren bis 2015 geplant	?::projected 8739,6701 8653,6781 8
 #: source_id: 2147339938
 #: source_id: LMS-BR_r_LMS-BR_91391
 #: XXX laut fritz bis Ende Oktober 2017
-#: last_checked: 2018-02-22
+#: last_checked: 2018-05-04
 #: check_frequency: 60d
 Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166,8489
 #: by: ^^^
@@ -1304,6 +1303,7 @@ Wuhlewanderweg: wird hier ein Weg auf der östlichen Uferseite errichtet?	?::proj
 #: XXX "Der gesamte Straßenzug von der Danziger Straße bis zur Wisbyer Straße soll bis Ende 2017 fertig gestellt werden."
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2016/pressemitteilung.544145.php
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2017/pressemitteilung.648664.php
+#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.698779.php
 #: XXX "bis voraussichtlich 2018"
 #: XXX noch keine Arbeiten hier
 #: osm_watch: way id="488431238" version="2"
@@ -1629,7 +1629,7 @@ Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projecte
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf
 #: XXX Ausbau des Kopfsteinpflasters, Bau einer Asphaltfahrbahn
 #: osm_watch: way id="75509950" version="12"
-#: last_checked: 2018-05-02
+#: last_checked: 2018-05-04
 #: check_frequency: 90d
 Friedelstr.: Asphaltierung	?::projected 12085,9778 12074,9689 12066,9558 12047,9429 12074,9217
 # 
@@ -1638,7 +1638,7 @@ Friedelstr.: Asphaltierung	?::projected 12085,9778 12074,9689 12066,9558 12047,9
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="14"
-#: last_checked: 2018-05-02
+#: last_checked: 2018-05-04
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -1742,7 +1742,7 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20180202 ("Die Straßenbauarbeiten beginnen ab April 2018.")
 #: XXX zunächst Arbeiten der Wasserbetriebe (gibt es da schon Einschränkungen?), ab Juni 2017 Straßenbauarbeiten
 #: osm_watch: way id="182693863" version="2"
-#: last_checked: 2018-05-03
+#: last_checked: 2018-05-04
 #: check_frequency: 60d
 Innstr.: hier wird ein Asphaltstreifen entstehen, vielleicht auch der Zugang zum Elsensteg erleichtert?	?::projected 13102,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13368,8689
 #: XXX ^^^
@@ -1753,7 +1753,7 @@ Innstr.: hier wird ein Asphaltstreifen entstehen, vielleicht auch der Zugang zum
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036892648488/892648488/00177969/69-Anlagen/02/0195Radwegebebauung.pdf
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.655982.php ("ab 2019")
 #: by: http://www.berliner-woche.de/neukoelln/bauen/plaene-fuer-das-weigandufer-fahrradstrasse-promenade-neue-bepflanzung-d140649.html
-#: last_checked: 2018-05-01
+#: last_checked: 2018-05-04
 #: next_check: 2019-01-01
 # REMOVED (hier nicht?) --- Weigandufer (und Pflügerstr.?): Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 13939,8228 13875,8282 13716,8410
 Weigandufer und Pflügerstr.: Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 13716,8410 13641,8470 13539,8552 13450,8625 13368,8689 13193,8832 13045,8951 12902,9066 12755,9188 12621,9297 12480,9394
@@ -2129,6 +2129,7 @@ Fraenkelufer: Neugestaltung des Uferwegs, Verbindung zum Böcklerpark	?::projecte
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.675874.php
 #: by: http://www.berliner-woche.de/hansaviertel/verkehr/hitzige-debatte-planer-und-buerger-diskutieren-ueber-das-bauvorhaben-spreeradweg-d144598.html (Bauarbeiten beginnen 2019 und dauern 18 Monate)
 #: by: http://www.berliner-woche.de/moabit/bauen/auf-die-details-kommt-es-an-diskussion-um-den-spreeradweg-d147831.html
+#: by: http://www.berliner-woche.de/moabit/bauen/kampfmittelraeumung-vor-baubeginn-des-spreeradweges-dauert-laenger-d159788.html
 #: XXX genauer Abschnitt?
 #: last_checked: 2018-03-11
 #: next_check: 2019-03-01
@@ -2166,8 +2167,8 @@ Wöhlert/Pflug/Schwartzkopffstr.: wird die Einbahnstraßenregelung wieder hergeste
 # 
 #: by: http://www.berliner-woche.de/prenzlauer-berg/bauen/baugruben-am-mauerpark-sind-jetzt-eingerichtet-d158178.html
 #: XXX bis Mitte August 2018
-#: last_checked: 2018-04-30
-#: next_check: 2018-05-02
+#: last_checked: 2018-05-04
+#: next_check: 2018-05-07
 Bernauer Str.: Radfahrer müssen auf die Südseite wechseln (+ 2 Ampeln), ab wann?	?; 10515,15045 10366,14992 10354,14987 10302,14964
 # 
 # REMOVED (-> temp blockings) --- #: by: fritz vvv --- #: XXX bis 2018-05-04 vvv --- #: source_id: 2147342390 --- Behrenstr.: Sperrung auch für Radfahrer relevant?	?::inwork; 8861,12125 9054,12154 9064,12156 --- Wilhelmstr.: Sperrung auch für Radfahrer relevant?	?::inwork; 8901,12008 8861,12125
@@ -2452,7 +2453,7 @@ Moorbirkenweg: Qualität? Wo wird sich die Straße befinden? Existiert die Straße 
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_929_16.pdf
 #: osm_watch: way id="295627704" version="4"
-#: last_checked: 2018-04-14
+#: last_checked: 2018-05-04
 #: check_frequency: 60d
 Liebigstr.: Einrichtung einer Spielstraße, wo genau?	? 14229,12311 14166,12323 14147,12344 14091,12355 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
 # 
@@ -3057,7 +3058,7 @@ Ortsdurchfahrt Potsdam: Ortsschild wird versetzt	? -13113,5653 -13143,5587 -1308
 # 
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_05_0625_0772_online.pdf
 #: XXX evtl. wird es einen neuen Weg südöstlich geben
-#: last_checked: 2018-04-28
+#: last_checked: 2018-05-04
 #: check_frequency: 60d
 Cotheniusstr.: Parkplatzfläche wird eingezogen	?::projected 13430,13733 13519,13785
 # 
@@ -3737,7 +3738,7 @@ Im Lindenhof: Planstraße B, Qualität, genaue Lage?	?::inwork 17370,12649 17475,1
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/erste-gebaeude-sind-fertig-d143656.html (Fertigstellung)
 #: XXX fehlt in Berlin.coords.data; Benennung soll zum 2017-07-01 wirksam werden
 #: XXX zuführende Straßen/Wege müssen auch eingezeichnet werden
-#: last_checked: 2018-05-02
+#: last_checked: 2018-05-04
 #: check_frequency: 90d
 Siegfried-Hirschmann-Park: neue private Platzfläche, Qualität, genaue Lage?	?::inwork 14730,11529 14800,11441
 # 

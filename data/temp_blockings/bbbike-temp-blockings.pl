@@ -21586,15 +21586,15 @@ EOF
 	2::temp 13886,10939 13856,10864
 EOF
      },
-     { from  => $isodate2epoch->("2017-06-30 20:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-07-02 02:00:00"), 
-       text  => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am 30.06.2017 bis 01.07.2017',
+     { from  => $isodate2epoch->("2018-06-01 20:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-06-03 02:00:00"), 
+       text  => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am 02.06.2018 und 03.06.2018',
        periodic => 1,
-       recurrences => [['yearly', days => 3, months => 6]], # kann Anfang Juni oder Anfang Juli oder Ende August passieren
+       recurrences => [['yearly', days => 1, months => 6]], # kann Anfang Juni oder Anfang Juli oder Ende August passieren
        type  => 'gesperrt',
-       source_id => 'https://www.facebook.com/events/1813020918951796/',
+       source_id => 'http://www.xhain.info/termine/fiesta-kreutziga.htm',
        data  => <<EOF,
-#: tempex: 20170630T2000-20170701T2359
+# REMOVED --- #: tempex: 20170630T2000-20170701T2359
 	2::temp 14161,11930 14285,12190
 EOF
      },
@@ -23755,6 +23755,7 @@ EOF
 #: note: am Mo, den 2017-12-04 gegen 18:45: geschlossen
 #: note: am Mi, den 2018-01-24 gegen 18:45: offen
 #: note: am Mo, den 2018-02-26 gegen 18:50: offen
+#: note: am Fr, den 2018-04-04 gegen 18:40: offen
 #: tempex: volatile vvv
 	3::night 14563,8243 14425,8116 14419,8112
 	3::night 14419,8112 14425,8116 14563,8243
@@ -25111,7 +25112,7 @@ EOF
 EOF
      },
      { from  => undef,
-       until => undef,
+       until => 1525455004, # -> dauerhaft nach gesperrt_orig gewandert # undef,
        text  => 'Mergenthalerring/Kiefholzstr.: Tor kann versperrt sein, auch tagsüber',
        recurring => 1,
        data  => <<EOF,
@@ -26543,7 +26544,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-04-03
+#: last_checked: 2018-05-04
 	2::inwork 14652,10201 14569,10055
 EOF
      },
@@ -27003,8 +27004,8 @@ EOF
 EOF
      },
      { from  => 1522864912, # 2018-04-04 20:01
-       until => 1525449600, # 2018-05-04 18:00
-       text  => 'Wilhelmstr. und Behrenstr.: Sperrung Richtung Norden zwischen Französische Str. und Behrenstr. sowie Richtung Osten zwischen Wilhelmstr. und Mauerstr., bis 4. Mai 2018',
+       until => $isodate2epoch->("2018-05-15 20:00:00"), # 1525449600, # 2018-05-04 18:00
+       text  => 'Wilhelmstr. und Behrenstr.: Sperrung Richtung Norden zwischen Französische Str. und Behrenstr. sowie Richtung Osten zwischen Wilhelmstr. und Mauerstr., bis Mitte Mai 2018',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147342390

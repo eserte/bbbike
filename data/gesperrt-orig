@@ -1905,6 +1905,9 @@ abgeschlossenes Tor	3 * 5083,22149 *
 abgeschlossenes Tor	3 * 15835,15092 *
 #: note: gesehen 2017-08-10 Do gegen 14:30
 abgeschlossenes Tor	3 * 10000,1131 *
+# 
+#: note: an der Südseite steht explizit, dass ein Durchfahrt nur mit Schlüssel möglich ist; Tor kann aber zufällig offen sein
+abgeschlossenes Tor	3 * 14688,8355 *
 #
 ####################################################################
 #
@@ -2245,9 +2248,8 @@ tragen (Treppe)	0:120 -14199,-707
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
-Drängelgitter	BNP:3::trailer=10 12909,9085
-#: note: eine Hälfte bereits abgetragen (gesehen: 2018-02-25)
-Drängelgitter	BNP:3::trailer=10 12862,9273
+# REMOVED (nicht mehr effektiv) --- Drängelgitter	BNP:3::trailer=10 12909,9085
+# REMOVED (nicht mehr effektiv) --- #: note: eine Hälfte bereits abgetragen (gesehen: 2018-02-25) --- Drängelgitter	BNP:3::trailer=10 12862,9273
 Drängelgitter	BNP:3::trailer=10 7916,17576
 Drängelgitter	BNP:3::trailer=10 22237,6211
 weites Drängelgitter	BNP:2::trailer=7 5628,23977
@@ -2956,7 +2958,7 @@ Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 18301,9946 18
 #: by: https://www.berliner-zeitung.de/berlin/berliner-wasserbetriebe-tunnel-unterm-mauerpark-wird-zur-attraktion-25534506
 #: by: http://www.berliner-woche.de/prenzlauer-berg/bauen/baugruben-am-mauerpark-sind-jetzt-eingerichtet-d158178.html
 #: source_id: 2147342369
-#: last_checked: 2018-04-30 (Südseite) vvv
+#: last_checked: 2018-05-04 (Südseite) vvv
 #: check_frequency: 360d vvv
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
@@ -3419,9 +3421,10 @@ Tegeler Hafen: Weg gesperrt	2 1687,20645 1697,20623 1721,20603
 # 
 #: note: Baugelände
 #: by: http://www.berliner-woche.de/mitte/bauen/erdlawine-rollt-ueber-die-oranienburger-ab-juli-wird-auf-dem-tacheles-areal-die-elf-meter-tiefe-baugrube-ausgehoben-d119088.html (bis 2020)
+#: by: http://www.berliner-woche.de/mitte/bauen/tacheles-areal-wird-ausgebaggert-d160052.html
 #: osm_watch: way id="33036326" version="6"
 #: last_checked: 2018-04-10
-#: check_frequency: 180d
+#: check_frequency: 360d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
 #: next_check_id: STAATSOPER-2014 vvv
