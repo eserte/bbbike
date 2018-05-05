@@ -1540,7 +1540,7 @@ EOF
        text  => 'K 6161; (Ernst-Thälmann-Str.); OD Schulzendorf, Kanal- und Straßenbau Vollsperrung 30.06.2005-30.11.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 25173,-3957 25150,-3949 25052,-3980 24933,-4017 24797,-4060 23408,-4513
+	q4 25173,-3957 25150,-3949 25052,-3980 24933,-4017 24797,-4060 24612,-4119 24200,-4252 23387,-4518
 EOF
      },
      { from  => 1107475200, # 2005-02-04 01:00
@@ -1627,7 +1627,7 @@ EOF
        text  => 'B 179; (Berliner Str.); OL Königs Wusterhausen, zw. Schloßplatz u. Funkerberg Kanalarbeiten halbseitig gesperrt (welche Richtung?); Einbahnstraße 01.03.2005-30.09.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4; 25859,-11559 25640,-11357
+	q4; 25859,-11559 25632,-11361
 EOF
      },
      { from  => 1109365909, # 2005-02-25 22:11
@@ -2388,7 +2388,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 	q4 25240,-29746 25412,-29762
-	q4 25412,-29762 25541,-29875
+	q4 25412,-29762 25571,-29893
 EOF
      },
      { from  => 1151745684, # 2006-07-01 11:21
@@ -2933,7 +2933,7 @@ EOF
        text  => 'L 39; (Kolberg-Friedersdorf); OD Blossin, Haupstr. Straßenbauarbeiten Vollsperrung 04.10.2005-21.10.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 37885,-16100 37888,-15635
+	q4 37885,-16100 37886,-15713
 EOF
      },
      { from  => 1129068000, # 2005-10-12 00:00
@@ -3772,7 +3772,7 @@ EOF
        text  => 'B 179 Berliner Str. OL Königs Wusterhausen, zw. Schloßplatz u. Gartenweg Havarie SW-Schacht Vollsperrung 15.02.2006-03.03.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 25859,-11559 25640,-11357
+	q4 25859,-11559 25632,-11361
 EOF
      },
      { from  => undef, # 
@@ -7369,7 +7369,7 @@ EOF
        text  => 'L 742 Klein Köris-Teupitz Bahnübergang in der OD Groß Köris Gleisumbauarbeiten Vollsperrung 09.03.2007-12.03.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 28494,-27010 27995,-27157 27824,-27205
+	2::inwork 28494,-27010 27995,-27157 27709,-27243
 EOF
      },
      { from  => 1173913200, # 2007-03-15 00:00
@@ -8753,7 +8753,7 @@ EOF
        text  => 'L 074 Am Markt OD Teupitz 700-Jahr-Feier Vollsperrung 31.08.2007-03.09.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 25190,-30385 25240,-29746 25412,-29762 25541,-29875
+	q4::inwork 25190,-30385 25240,-29746 25412,-29762 25571,-29893
 EOF
      },
      { from  => 1339797751, # 2012-06-16 00:02
@@ -9023,7 +9023,7 @@ EOF
        text  => 'L 030 Puschkinstr. OL Königs Wusterhausen Open-Air Konzert Vollsperrung 07.07.2007-08.07.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 25859,-11559 26177,-11648
+	2::temp 25859,-11559 25939,-11559 26177,-11648
 EOF
      },
      { from  => 1184450400, # 2007-07-15 00:00
@@ -11129,7 +11129,7 @@ EOF
        text  => 'K 6160 Friedensstr. Bahnübergang in der OD Eichwalde Gleisbauarbeiten Vollsperrung 27.03.2008-29.03.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 25187,-8934 25140,-9125
+	2::inwork 25192,-8936 25137,-9131
 EOF
      },
      { from  => 1207087200, # 2008-04-02 00:00
@@ -11976,7 +11976,7 @@ EOF
        text  => 'K 6160 Chausseestr. OD Wildau, zw. KVK und Am Kleingewerbegebiet Bau Kreisverkehr halbseitig gesperrt; Einbahnstraße 14.07.2008-22.08.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; 25140,-9125 24478,-9578
+	q4::inwork; 25137,-9131 25096,-9239 24663,-9498 24396,-9665
 EOF
      },
      { from  => 1216332000, # 2008-07-18 00:00
@@ -12904,7 +12904,7 @@ EOF
        text  => 'L 074 OL Halbe Bahnübergang Gleisbauarbeiten Vollsperrung 09.10.2008-15.10.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 31593,-32938 31657,-32860 31700,-32810
+	2::inwork 31572,-32912 31605,-32901 31645,-32840 31668,-32814
 EOF
      },
      { from  => 1222552800, # 2008-09-28 00:00
@@ -12986,7 +12986,7 @@ EOF
        text  => 'L 030 Mittenwalde - Königs Wusterhausen zw. Schenkendorf und Königs Wusterhausen Straßenbauarbeiten Vollsperrung 22.10.2008-23.10.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 24843,-13725 25098,-13447 25148,-13393 25203,-13334
+	2::inwork 24843,-13725 24950,-13607 25098,-13447 25148,-13393 25203,-13334
 EOF
      },
      { from  => 1224367200, # 2008-10-19 00:00
@@ -13351,7 +13351,7 @@ EOF
        text  => 'L 401 Karl-Marx-Str., Friedrich-Engels-Str. OD Wildau, zw. Freiheitsstr. und Westkorso grundhafter Straßenneubau Wintersicherung 19.12.2008-31.01.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 26609,-7136 26700,-7334 26790,-7918 26786,-7968 26775,-8117 26749,-8475
+	q4::inwork 26609,-7136 26700,-7334 26790,-7918 26786,-7968 26775,-8117 26749,-8481
 EOF
      },
      { from  => 1231196400, # 2009-01-06 00:00
@@ -13978,7 +13978,7 @@ EOF
        text  => 'L 030 Gerichtsstr. (Puschkinstr.) OL Königs Wusterhausen, zw. Brückenstr. und Kirchplatz Kanal- und Straßenbau halbseitig gesperrt; Einbahnstraße 28.04.2009-28.04.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 25859,-11559 26177,-11648
+	q4::inwork 25859,-11559 25939,-11559 26177,-11648
 EOF
      },
      { from  => 1240783200, # 2009-04-27 00:00
@@ -16056,7 +16056,7 @@ EOF
        text  => 'L 030 Gerichtsstr. OL Königs Wusterhausen, zw. Schloßplatz u. Brückenstr. Schlossfest Vollsperrung 05.09.2009-05.09.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::temp 25859,-11559 26177,-11648
+	q4::temp 25859,-11559 25939,-11559 26177,-11648
 EOF
      },
      { from  => 1252188000, # 2009-09-06 00:00
@@ -18981,7 +18981,7 @@ EOF
        type  => 'handicap',
        source_id => 'LS/S-SG33-W/11/013',
        data  => <<EOF,
-	q4::inwork 23962,-30831 24550,-30862
+	q4::inwork 23962,-30831 24102,-30864 24203,-30854 24324,-30878 24407,-30857 24550,-30862
 EOF
      },
      { from  => 1296591853, # 2011-02-01 21:24
@@ -20734,7 +20734,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LS/S-SG33-W/11/268',
        data  => <<EOF,
-	2::inwork 24843,-13725 25098,-13447 25148,-13393
+	2::inwork 24843,-13725 24950,-13607 25098,-13447 25148,-13393
 EOF
      },
      { from  => 1341730800, # 2012-07-08 09:00

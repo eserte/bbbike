@@ -1043,7 +1043,7 @@ gemeinsamer Geh- und Radweg (altertümliches Verbundsteinpflaster)	RW2;RW2 26243,
 	RW2;RW2 26466,-10409 26446,-10394 26453,-10235
 	RW2;RW8 26453,-10235 26450,-10134 26432,-10043 26391,-9997 26365,-9875 26381,-9753
 antike Radwege, teilweise Schotter	RW1;RW1 26381,-9753 26679,-8825
-gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2;RW2 26679,-8825 26727,-8668 26749,-8475 26775,-8117
+gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2;RW2 26679,-8825 26727,-8668 26749,-8481 26775,-8117
 Gehweg für Radfahrer frei	RW1;RW1 26786,-7968 26790,-7918 26700,-7334 26609,-7136 26506,-6931 26135,-6206
 #: by: ^^^
 # 
@@ -1216,3 +1216,29 @@ asphaltiert	RW2;RW8 5486,27745 4807,28338 4435,28862
 asphaltiert	RW2;RW8 31885,25476 31636,25356 30712,24794 30180,24560
 Gehweg für Radfahrer frei, asphaltiert	RW1;RW9 30180,24560 29651,24338 29505,24363 29414,24387 29334,24409
 #: by: ^^^
+# 
+Verbundsteinpflastergehweg, wird von Radfahrern benutzt	RW1;RW1 31645,-32840 31605,-32901 31572,-32912 31177,-32890 31121,-32864
+	RW2;RW2 30334,-31532 29966,-32369
+Gehweg für Radfahrer frei, asphaltiert	RW1; 29238,-26960 29255,-26994 29770,-27723 30057,-28125
+Gehweg für Radfahrer frei, asphaltiert	RW1; 28666,-26791 28722,-26800 29157,-26963 29238,-26960 29341,-26894 29573,-26648 30203,-26192
+#: note: Benutzung in Gegenrichtung vermutet
+	RW1;RW9 24228,-14209 24319,-14465 24425,-14811 24440,-14846
+asphaltiert	RW9;RW1 24843,-13725 24950,-13607 25098,-13447 25148,-13393
+Verbundsteinpflaster	RW9;RW1 25148,-13393 25203,-13334 25232,-13241
+#: by: osm
+Verbundsteinpflasterradwege	RW;RW 26133,-8639 26277,-8527 26514,-8526 26589,-8499 26749,-8481
+Verbundsteinpflaster	RW2;RW8 25137,-9131 25192,-8936 25118,-8791 25063,-8673
+Asphalt	RW2;RW8 25063,-8673 24982,-8485
+Asphalt	RW1;RW9 24982,-8485 24802,-8072 24789,-8000
+#: note: Spielstraße
+asphaltiert	RW10;RW10 24789,-8000 24731,-7532
+asphaltiert	RW10; 24731,-7532 24708,-7342
+Verbundsteinpflaster	RW1; 24708,-7342 24713,-7113
+#: by: osm
+#: confirmed_by: srt (in Höhe Rosa-Luxemburg-Str.)
+Gehweg für Radfahrer frei	RW1;RW1 24200,-4252 24612,-4119 24797,-4060 24933,-4017 25052,-3980
+Verbundsteinpflastergehweg für Radfahrer frei	RW1;RW1 24612,-4119 24256,-3568 24190,-3443
+#: by: osm
+Verbundsteinpflastergehweg für Radfahrer frei	RW1;RW1 24190,-3443 24085,-3227 23885,-2838 23831,-2603
+Verbundsteinpflastergehweg für Radfahrer frei	RW1; 25859,-11559 25632,-11361
+	RW3; 25632,-11361 25859,-11559

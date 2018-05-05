@@ -993,6 +993,8 @@ Waldstr. [Wohngebiet] (Eichwalde)	1 25461,-2744 25562,-2902 25606,-2880
 Humboldtstr. (Eichwalde)	1 25290,-3350 25186,-3196
 Paul-Merker-Str.	1 25464,-3027 25567,-3189
 Wilhelm-Busch-Str.	1 25206,-4014 25119,-4096
+Miersdorf	1 24955,-6980 25077,-6942 25186,-6969
+Miersdorf	1 25186,-6969 25092,-6993 24955,-6980
 Mittelstreifen nicht überquerbar	3nocross::ignrte -974,128015 -724,127995 6,127935 298,127911
 B104: Neubrandenburg -> Feldstr.: Mittelstreifen nicht überquerbar	3::igndisp -974,128015 -724,127995 -719,128043
 Feldstr. -> Pasewalk: Mittelstreifen nicht überquerbar	3::igndisp -719,128043 -724,127995 6,127935
@@ -2938,6 +2940,12 @@ Drängelgitter	BNP:3:0:trailer=10 3783,-2079
 Drängelgitter	BNP:3:50:trailer=10 21618,5699
 Drängelgitter	BNP:3:85:trailer=10 22070,5876
 Drängelgitter	BNP:3:78:trailer=10 22097,5879
+Drängelgitter	BNP:3:26:trailer=10 24454,-14845
+Drängelgitter	BNP:3:36:trailer=10 24602,-14550
+Drängelgitter	BNP:3:21:trailer=10 24614,-14534
+Drängelgitter	BNP:3:11:trailer=10 24829,-13762
+Drängelgitter	BNP:3:-192:trailer=10 25307,-10467
+Drängelgitter	BNP:3:-192:trailer=10 25081,-9433
 Charlotte-von-Mahlsdorf-Ring: Baustraße	2::inwork 24649,10710 24728,10722 24739,10645
 Hermineweg: Baustraße, gesperrt	2::inwork 24831,10966 24906,10965
 Karlinekenweg: Bauarbeiten, gesperrt	2::inwork 11359,20297 11405,20196

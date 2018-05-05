@@ -2510,7 +2510,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: osm_watch: node id="987195315" version="7"
-#: last_checked: 2018-03-10
+#: last_checked: 2018-05-05
 #: check_frequency: 180d
 	F::inwork 20002,3349
 	F 4000,12183
@@ -3068,7 +3068,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -12653,-1723
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
 #: next_check_id: KIEFHOLZ-2015 vvv
-#: last_checked: 2018-04-21 vvv
+#: last_checked: 2018-05-05 vvv
 #: check_frequency: 90d vvv
 	X::inwork 14151,8967
 	X::inwork 14363,8738
@@ -3202,7 +3202,7 @@ Umgehung mit Treppen existiert	Zbr 4611,63946
 	X 19529,-1061
 	B 24078,22265
 	B 21665,19490
-geschlossen jede volle Stunde	Zbr 28482,-26163
+geschlossen jede volle Stunde	Zbr 28488,-26166
 geschlossen bei Bedarf	Zbr 45321,48142
 #: note: (URL existiert nicht mehr) http://verkehrsinformation.mvnet.de/bruecken/bruecken.htm vvv
 geschlossen 5x täglich für max. 20 Minuten	Zbr 36080,162883
@@ -3235,7 +3235,7 @@ Bahn kommt ca. halbstündlich	B 47729,123756
 Bahn kommt ca. halbstündlich	B 40222,103642
 	B 45701,72652
 	B 11147,73794
-	B 26102,-23166
+	B 26096,-23160
 	B 26706,-17867
 	B 26650,-15695
 	B 43031,-50423
@@ -3483,9 +3483,9 @@ nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
 	B 27705,-26035
 	B 27995,-27157
 #: note: Luftbild
-	B 31657,-32860
+	B 31645,-32840
 #: note: Luftbild
-	B 29778,-30065
+	B 29787,-30076
 #: note: Luftbild
 	B 32829,-34732
 #: note: Luftbild
@@ -3630,6 +3630,8 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	X -3184,-4161
 	X -3111,-4047
 #: by ^^^
+	X 25137,-9131
+	X 25859,-11559
 # 
 #: note: ^^^
 ################################################################################
