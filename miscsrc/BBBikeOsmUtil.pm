@@ -15,7 +15,7 @@ package BBBikeOsmUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.23;
+$VERSION = 1.24;
 
 use vars qw(%osm_layer %images @cover_grids %seen_grids $last_osm_file $defer_restacking
 	  );
@@ -464,6 +464,7 @@ sub plot_osm_files {
 		(exists $tag{'man_made'} && $tag{'man_made'} =~ m{^(?:pipeline|embankment)$}) ||
 		exists $tag{'barrier'} ||
 		exists $tag{'abandoned:barrier'} ||
+		exists $tag{'abandoned:power'} ||
 		exists $tag{'mj10777:admin_levels'} ||
 		(exists $tag{'natural'} && ($tag{'natural'} eq 'tree_row' ||
 					   ($tag{'natural'} eq 'cliff')))
