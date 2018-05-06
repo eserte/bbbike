@@ -39,11 +39,13 @@ my $wettermeldung_compatible;
 my $near;
 my $o;
 my $retry_def;
+my $use_fallback;
 GetOptions("sitecode=s" => \$wanted_site_code,
 	   "wettermeldung!" => \$wettermeldung_compatible,
 	   "near=s" => \$near,
 	   "o=s" => \$o,
 	   "retry-def=s" => \$retry_def,
+	   "fallback!" => \$use_fallback,
 	  )
     or usage;
 
@@ -118,7 +120,7 @@ my $got_something = 0;
 for my $site_def (@sites) {
     my($site_code, $r) = @{$site_def}{qw(sitecode record)};
 
-    my $content = get_metar_standard($site_code);
+    my $content = $use_fallback ? get_metar_mesonet_fallback($site_code) : get_metar_standard($site_code);
     next if !defined $content;
 
     #$content =~ s/\n//g;
@@ -198,8 +200,39 @@ sub get_metar_standard {
 	return undef;
     }
 
-    my $content = $resp->content;
+    my $content = $resp->decoded_content;
     $content;
+}
+
+sub get_metar_mesonet_fallback {
+    my($site_code) = @_;
+    require URI;
+    require URI::QueryParam;
+    my $u = URI->new("https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py");
+    my @tomorrow  = gmtime(time+86400);
+    my @yesterday = gmtime(time-86400);
+    $u->query_param(station     => $site_code);
+    $u->query_param(data        => 'metar');
+    $u->query_param(year1       => $yesterday[5]+1900);
+    $u->query_param(month1      => $yesterday[4]+1);
+    $u->query_param(day1        => $yesterday[3]);
+    $u->query_param(year2       => $tomorrow[5]+1900);
+    $u->query_param(month2      => $tomorrow[4]+1);
+    $u->query_param(day2        => $tomorrow[3]);
+    $u->query_param(tz          => 'Etc/UTC');
+    $u->query_param(format      => 'onlycomma');
+    $u->query_param(latlon      => 'no');
+    $u->query_param(direct      => 'no');
+    $u->query_param(report_type => '2');
+    my $url = $u->as_string;
+    my $resp = $ua->get($url);
+    if (!$resp->is_success) {
+	warn "Fetching for $site_code (url $url) failed: " . $resp->status_line;
+	return undef;
+    }
+    my $content = $resp->decoded_content;
+    my($last_line) = $content =~ m{\n[^,]+,[^,]+,(.*)\Z}; # also strip two first columns of csv
+    $last_line;
 }
 
 sub format_wettermeldung {
@@ -344,6 +377,10 @@ expected that 4xx errors are permanent.
 Additionally, if C<-retry-def> is specified and no site could be
 fetched, then the script will die. Otherwise there will be no output,
 but exit code will still be zero.
+
+=item C<-fallback>
+
+Use fallback URL (L<https://mesonet.agron.iastate.edu>).
 
 =back
 
