@@ -114,7 +114,8 @@ Spreestr.	1 17900,6072 17939,5968 17877,5860 17810,5736 17807,5730 17782,5698
 Buckower Chaussee	1 8742,475 8972,498 9002,471
 # REMOVED (nein, wird nicht) --- #: XXX evtl. wird die Einbahnstraﬂenregelung aufgehoben --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6025 --- #: last_checked: 2015-05-05 --- #: check_frequency: 30d
 Archibaldweg	1s:q4 15674,10851 15870,10938
-Nˆldnerplatz	1 15870,10938 15903,10906 16049,10844
+Nˆldnerplatz	1s:q4 15870,10938 15903,10906
+Nˆldnerplatz	1 15903,10906 16049,10844
 Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
 # REMOVED (aufgeboben) Richterstr.	1s:q3 22092,999 22120,886
 # REMOVED (aufgehoben) Richterstr.	1s:q3 22062,773 22007,711
@@ -179,9 +180,10 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: next_check_id: TRESKOWALLEE-2017
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7382
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=40535
-#: next_check: 2018-05-04
+#: last_checked: 2018-05-06
+#: check_frequency: 90d
 #: priority: #A
-#: valid: 20180504-
+#: valid: 20190301-
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18002,6695 18076,6693 18125,6694 18254,6679 18339,6660 18494,6588
 Griechische Allee	1 18494,6588 18429,6582 18273,6606 18159,6642 18079,6678 18008,6672 17962,6674
@@ -213,8 +215,8 @@ Anzengruberstr.	1 12865,8346 12689,8289
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00081950/50-Anlagen/01/DRS0182VB.pdf (Pl‰ne)
 #: XXX Maﬂnahme Osw.10, auﬂerdem ein "fahrradfreundlicher Belag" im weiteren Verlauf der Nalepastraﬂe
 #: osm_watch: way id="24869862" version="12"
-#: last_checked: 2017-12-21
-#: check_frequency: 120d
+#: last_checked: 2018-05-06
+#: check_frequency: 180d
 Nalepastr. am Rundfunkgeb‰ude	2 17065,8396 17057,8235 17056,8159 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
 #: note: nur f¸r "Linienverkehr" (Straﬂenbahnen) offiziell frei
@@ -1213,6 +1215,7 @@ Halenseestr.	2::igndisp 2086,10552 1961,10646 1928,10728
 #: note: verschlossen am 2018-04-11 gegen 18:40 Uhr
 Alexanderufer - CharitÈ: Tor dauerhaft gesperrt	2 8362,13466 8369,13465 8377,13463
 Falkoniergasse: durch Tore abgesperrt	2 9939,12174 9909,12261
+Business Park BBI: dauerhaft gesperrt, Firmengel‰nde	2 20038,-1474 20394,-1397
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -2507,7 +2510,7 @@ Dr‰ngelgitter	BNP:3::trailer=10 -7598,12953
 Dr‰ngelgitter und Stufe	BNP:5::trailer=15 -2704,2431
 Dr‰ngelgitter	BNP:3::trailer=10 -2675,2336
 Dr‰ngelgitter	BNP:3::trailer=10 13604,21825
-Dr‰ngelgitter und Tor	BNP:7::trailer=15 20783,-1266
+Dr‰ngelgitter und Tor	BNP:7::trailer=15 20789,-1275
 Dr‰ngelgitter und Tor	BNP:7::trailer=15 20396,-1370
 Dr‰ngelgitter und Tor	BNP:7::trailer=15 20373,-1375
 Dr‰ngelgitter und Tor	BNP:7::trailer=15 20046,-1449
@@ -2913,7 +2916,7 @@ Klara-Franke-Str.: Bauarbeiten, gesperrt	2::inwork 7542,13956 7662,13784 7564,13
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bplan11120ve.pdf
 #: by: http://www.berliner-woche.de/friedrichsfelde/bauen/projekt-ohne-alternativen-bebauungsplaene-am-ex-dolgensee-center-liegen-aus-d136187.html
-#: last_checked: 2018-04-29
+#: last_checked: 2018-05-06
 #: check_frequency: 360d
 Dolgenseestr.: wegen Bauarbeiten gesperrt	2::inwork 17273,9880 17407,9799 17493,9761
 # 
@@ -3296,18 +3299,8 @@ Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwo
 Rummelsburger Platz: zur H‰lfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 
 # REMOVED (Aufsch¸ttung statt Br¸cke) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6003 (Forderung nach Wiederherstellung) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6003&date=20151213 (Abriss der Br¸cke) --- #: XXX: Umfahrung existiert mittlerweile --- bleibt die Sperrung permanent? --- #: XXX: sobald die Br¸cke abgerissen wurde -> aus den Daten entfernen --- #: last_checked: 2015-10-04 --- #: check_frequency: 180d --- Weg zwischen S-Wartenberg und S-Hohenschˆnhausen: Br¸cke morsch und gesperrt	2::inwork 17159,18375 17235,18352
-# 
-#: osm_watch: way id="193373934" version="11"
-#: osm_watch: node id="5454372526" version="1"
-#: last_checked: 2018-03-18
-Frauenauer Str.: Straﬂe fertig, aber Zufahrt von der Zwieseler Str. noch gesperrt	2::inwork 19663,9757 19858,9784
-# 
-#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_44_4909_5120_online.pdf (Widmung von Straﬂenland)
-#: osm_watch: way id="290255259" version="6"
-#: osm_watch: node id="5454372525" version="1"
-#: last_checked: 2018-03-18
-Kirchdorfer Str.: Straﬂe fertig, aber Verbindung zur Teisnacher Str. noch gesperrt	2::inwork 19842,9895 19858,9784 19871,9680
-# 
+# REMOVED --- #: osm_watch: way id="193373934" version="11" --- #: osm_watch: node id="5454372526" version="1" --- #: last_checked: 2018-03-18 --- Frauenauer Str.: Straﬂe fertig, aber Zufahrt von der Zwieseler Str. noch gesperrt	2::inwork 19663,9757 19858,9784
+# REMOVED --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_44_4909_5120_online.pdf (Widmung von Straﬂenland) --- #: osm_watch: way id="290255259" version="6" --- #: osm_watch: node id="5454372525" version="1" --- #: last_checked: 2018-03-18 --- Kirchdorfer Str.: Straﬂe fertig, aber Verbindung zur Teisnacher Str. noch gesperrt	2::inwork 19842,9895 19858,9784 19871,9680
 # REMOVED --- #: osm_watch: way id="24845189" version="13" --- #: last_checked: 2016-09-11 --- #: check_frequency: 60d --- Viechtacher Str.: Straﬂe fertig, aber noch gesperrt	2::inwork 19801,9680 19871,9680 19923,9682
 # REMOVED --- #: last_checked: 2016-07-23 vvv --- #: check_frequency: 60d vvv
 # REMOVED --- #: XXX man kann aber ¸ber die provisorische Baustraﬂe von S¸den aus in die gesperrten Straﬂen gelangen --- #: osm_watch: way id="287119368" version="8" --- #: XXX_osm laut osm (teilweise) nicht mehr gesperrt (stimmt aber nicht) --- #: osm_watch: way id="290220612" version="3" --- Regener Str.: fertiggestellt, aber noch gesperrt	2::inwork 19790,9478 19859,9473 19894,9470 19889,9400 19874,9151
@@ -3315,7 +3308,7 @@ Kirchdorfer Str.: Straﬂe fertig, aber Verbindung zur Teisnacher Str. noch gesper
 # REMOVED --- #: osm_watch: way id="193373957" version="5" --- Teisnacher Str.: fertiggestellt, aber noch gesperrt	2::inwork 19871,9680 19859,9473
 # 
 #: osm_watch: way id="269294892" version="1"
-#: last_checked: 2017-05-21
+#: last_checked: 2018-05-06
 #: check_frequency: 360d
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 # 

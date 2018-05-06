@@ -27,7 +27,7 @@ Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,1
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2018-05-05
+#: last_checked: 2018-05-06
 #: check_frequency: 90d
 Dˆringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -1180,6 +1180,7 @@ Wuhlewanderweg: Fuﬂg‰nger	q1 22238,6195 22237,6211 22236,6233 22214,6271 22146,6
 Wuhlewanderweg: Fuﬂg‰nger	q1 21383,9045 21467,9236 21524,9488 21587,9609 21633,9731 21678,9817 21686,9876
 Wuhlewanderweg: Fuﬂg‰nger	q1 21611,9893 21619,9993 21566,10230 21585,10289 21584,10329 21586,10344 21608,10403 21646,10510 21657,10519 21791,10623 21827,10684 21869,10750 21950,10776 22059,10782 22110,10796
 Wuhlewanderweg: Fuﬂg‰nger	q1 22059,10782 22103,10814 22166,10839
+Birnbaumer Str.: Fuﬂg‰nger	q1 22056,6613 22093,6630
 Heinrich-Dathe-Platz: Fuﬂg‰nger	q2 18512,10337 18478,10406 18456,10454 18442,10471
 Heinrich-Dathe-Platz: Fuﬂg‰nger	q2 18478,10406 18394,10348
 Dathepromenade: Fuﬂg‰nger	q1 18394,10348 18320,10318 18302,10289 18314,10260 18132,10183 18101,10169 18058,10166
@@ -1894,7 +1895,7 @@ Gormannstr.: Bordstein	q2 10350,13376 10353,13384
 Spreeufer: unter der Rohrdammbr¸cke sehr eng	q3 1123,13523 1186,13529
 (Uranusstr. - Siriusstr.): Schulgel‰nde, teilweise ist das Radfahren explizit verboten	q4 18827,-537 18906,-316
 (Widosteig - Bohnsdorfer Weg): Pfad	q2 19934,1102 19955,1158 19940,1265
-(Parkweg im Business Park Berlin): Fuﬂg‰nger	q1 20797,-1262 20783,-1266 20396,-1370 20388,-1373 20373,-1375 20046,-1449 20032,-1451 20018,-1456 19979,-1469 19864,-1480 19773,-1520 19727,-1526 19714,-1529 19706,-1528 19618,-1531
+(Parkweg im Business Park Berlin): Fuﬂg‰nger	q1 20799,-1272 20789,-1275 20624,-1310 20540,-1346 20396,-1370 20388,-1373 20373,-1375 20297,-1377 20191,-1425 20046,-1449 20032,-1451 20018,-1456 19979,-1469 19864,-1480 19773,-1520 19727,-1526 19714,-1529 19706,-1528 19618,-1531
 Vergissmeinnichtweg: Bodenschwellen	q1 21582,185 21608,85
 #: XXX_prog BS zur Thaerstr.
 (Bersarinplatz - Thaerstr.): Fuﬂg‰nger, Bordstein	q2 13747,12642 13761,12690
@@ -2392,7 +2393,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="5"
-#: last_checked: 2018-01-06
+#: last_checked: 2018-05-06
 #: check_frequency: 90d
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
@@ -2514,7 +2515,7 @@ Erich-Lodemann-Str.: einige Fuﬂg‰nger, Rampe	q2 15288,8134 15242,8182
 (Vorplatz S-Bhf. Pl‰nterwald): Fuﬂg‰nger	q3 15256,8247 15212,8203 15242,8182
 (Fuﬂg‰ngerbr¸cke): einige Fuﬂg‰nger	q2 21182,436 21199,437 21262,375
 (Unterf¸hrung Gr¸nbergallee): einige Fuﬂg‰nger	q1 19912,-496 19908,-565
-(Unterf¸hrung Gr¸nbergallee): einige Fuﬂg‰nger, Rampen	q3 19908,-565 19955,-557 19926,-566 19929,-578 19932,-594 19903,-605 19942,-596 19940,-610
+(Unterf¸hrung Gr¸nbergallee): einige Fuﬂg‰nger, Rampen	q3 19908,-565 19955,-557 19926,-566 19929,-578 19932,-594 19903,-605 19947,-593 19951,-605
 (Allee der Kosmonauten - Murtzaner Ring): einige Fuﬂg‰nger	q1+ 20096,14127 20040,14179
 #: note: und Kfz-Gegenverkehr
 Allee der Kosmonauten: enge Straﬂe	q1+; 20096,14127 20097,14039 20081,13993 20080,13941
@@ -3666,7 +3667,7 @@ Landreiterweg: enge Straﬂe	q1 14062,1846 14050,1904 13857,1975 13739,2004 13674,
 Zieselweg: enge Straﬂe	q1 2514,22595 2513,22737 2500,22867 2418,22878
 # 
 #: by: Frank- R. Hoffmann:
-Schwalbenweg: enge Straﬂe	q1 20205,-548 20172,-533 19940,-610 19724,-703 19650,-732
+Schwalbenweg: enge Straﬂe	q1 20205,-548 20172,-533 19951,-605 19940,-610 19724,-703 19650,-732
 # 
 #: by: Thomas (brachial...):
 Wetterseestr.: enge Straﬂe	q1 11499,16883 11504,16746

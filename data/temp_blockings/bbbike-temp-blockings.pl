@@ -26946,7 +26946,7 @@ EOF
        text  => 'Mentelinstr.: Bauarbeiten zwischen Nalepastr. und Otto-Krüger-Zeile, Fahrbahn gesperrt, Ende unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2018-03-25
+#: last_checked: 2018-05-06
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? Wird sich die Qualität der Fahrbahn nach den Bauarbeiten verbessern?
 	q4::inwork 17456,7132 17352,7051
 EOF
@@ -27091,7 +27091,7 @@ EOF
        text  => 'Uferweg: zwischen Mentzelpark und Eiselenweg Bauarbeiten, Weg komplett gesperrt, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2018-04-29
+#: last_checked: 2018-05-06
 	2::inwork 21696,5053 21600,5221 21512,5404 21487,5425
 EOF
      },

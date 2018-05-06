@@ -920,7 +920,7 @@ Kleine Lindenstr.: Asphalt	Q0 21528,-1134 21459,-1086 21387,-1033 21306,-975 208
 (Parchwitzer Str. - Hundsfelder Str.): enger Pfad	Q3 21403,-859 21640,-582
 Hundsfelder Str.: schlechtes Kopfsteinpflaster	Q3 21640,-582 21769,-432 21877,-307
 Hundsfelder Str.: Verbundsteinpflaster	Q1 21688,-589 21700,-537 21811,-409
-Hundsfelder Str.: Asphalt	Q1 21811,-409 21898,-303
+Hundsfelder Str.: Verbundsteinpflaster	Q1 21811,-409 21898,-303
 Parchwitzer Str.: Kopfsteinpflaster, teilweise mit Asphaltbanketten	Q2 21487,-912 21403,-859 21358,-834 21291,-767
 Parchwitzer Str.: Asphalt	Q0 21120,-444 21151,-520 21195,-633 21291,-767
 Parchwitzer Str.: Kopfsteinpflaster, teilweise mit Asphaltbanketten	Q2 21487,-912 21615,-979 21654,-992 21734,-1002 21828,-1015
@@ -934,8 +934,8 @@ Dornacher Str.: Asphalt	Q0 20947,10137 20947,9999 20948,9847
 Buchenhainer Str.: holpriger Fahrweg	Q2 21164,8243 21329,8222
 Nitzwalder Str.: holpriger Fahrweg	Q2 21329,8222 21458,8091 21529,8019 21593,7934
 Kaulsdorfer Str.: Asphalt	Q0 22049,7085 22075,6967 22186,6672 22192,6659 22305,6404 22325,6385
-Marksburgstr.: Asphalt	Q0 19050,9142 18961,9109 18900,9119 18809,9133 18697,9153 18586,9172 18511,9185 18430,9199 18319,9218
-Marksburgstr.: Asphalt mit einigen Schäden	Q1 19050,9142 19133,9193 19195,9249
+Marksburgstr.: Asphalt	Q0 19048,9146 18961,9109 18900,9119 18809,9133 18697,9153 18586,9172 18511,9185 18430,9199 18319,9218
+Marksburgstr.: Asphalt mit einigen Schäden	Q1 19048,9146 19131,9187 19195,9249
 Walkürenstr.: Asphalt	Q0 18070,9292 18006,9335
 Walkürenstr.: Kopfsteinpflaster	Q2 18006,9335 17720,9533
 Tannhäuserstr.: Kopfsteinpflaster	Q2 18125,9676 17890,9580 17720,9533 17549,9529
@@ -2566,7 +2566,7 @@ Platanenweg: Asphalt	Q0 15968,7739 15840,7876 15717,8011 15787,8073
 (Am Plänterwald - Erwin-Bennewitz-Weg): Verbundsteinpflaster	Q1 15499,8496 15488,8508 15473,8531
 Erwin-Bennewitz-Weg: Asphalt	Q0 15473,8531 15378,8668
 (Zufahrt zum Kaufland): Asphalt	Q0 16699,10611 16628,10442 16751,10403
-Rägeliner Str.: unbefestigte Straße bzw. grober Asphalt	Q2 19959,10443 20012,10336
+Rägeliner Str.: etwas welliger Asphalt	Q1 19954,10442 19965,10422 19986,10399 20012,10336
 Stader Str.: Asphalt	Q0 20352,10304 20261,10307
 Stader Str.: Asphalt	Q0 20262,10317 20012,10336
 Tieflandstr.: Asphalt	Q0 21860,9046 21847,9145 21834,9255 21806,9550 21822,9681 21842,9829
@@ -6974,12 +6974,12 @@ Bahnweg (Altglienicke): Asphalt	Q0 19659,-168 19509,-283
 (Blindschleichengang - Venusstr.): unbefestigter Pfad	Q2 19336,-59 19331,73
 Siriusstr.: Verbundsteinpflaster	Q1 18997,-351 18990,-371 18950,-490 18928,-506 18904,-573
 (Kleine Lindenstr. - Business Park Berlin): Asphalt	Q0 21306,-975 21284,-1008 21273,-1057 21165,-1161 21161,-1220 20833,-1298 20807,-1305 20770,-1315 20394,-1397 20038,-1474 19717,-1549
-(Hufenweg Verlängerung): unbefestigte Baustraße	Q2 20814,-935 20782,-1199 20797,-1262 20807,-1305
+(Hufenweg Verlängerung): unbefestigte Baustraße	Q2 20814,-935 20782,-1199 20799,-1272 20807,-1305
 Hufenweg: Asphalt	Q0 20814,-935 20829,-773 20799,-667 20790,-537
 Ludwig-Prandtl-Str.: Asphalt	Q0 19626,-1318 19880,-1184 19924,-1157 20078,-1029 20274,-845
 Melitta-Schiller-Str.: Asphalt	Q0 20050,-1715 20038,-1474 20032,-1451 19880,-1184
 Gebrüder-Hirth-Str.: Asphalt	Q0 19626,-1318 19714,-1529 19717,-1549 19725,-1704
-(Parkweg im Business Park Berlin): Asphalt	Q0 20797,-1262 20783,-1266 20396,-1370 20388,-1373 20373,-1375 20046,-1449 20032,-1451 20018,-1456 19979,-1469 19864,-1480 19773,-1520 19727,-1526 19714,-1529 19706,-1528 19618,-1531
+(Parkweg im Business Park Berlin): Asphalt	Q0 20799,-1272 20789,-1275 20624,-1310 20540,-1346 20396,-1370 20388,-1373 20373,-1375 20297,-1377 20191,-1425 20046,-1449 20032,-1451 20018,-1456 19979,-1469 19864,-1480 19773,-1520 19727,-1526 19714,-1529 19706,-1528 19618,-1531
 Schwalbenweg (Altglienicke): Beton	Q1 19773,-837 19754,-786 19724,-703
 Feldstr. (Bohnsdorf): Beton	Q2 20829,-773 21055,-723 21209,-734
 Gehwegplatten	Q0 21844,238 21963,261 21979,274 21991,273 22008,262
@@ -7242,7 +7242,7 @@ Ahornallee (Rosenthal): schlechtes Kopfsteinpflaster	Q3 9740,20719 9859,20542
 Theanolte-Bähnisch-Str.: Asphalt	Q0 11320,13095 11235,13143
 (Keibelstr. - Karl-Liebknecht-Str.): Gehwegplatten	Q0 11045,13183 10976,13229
 (Weg am Stadion): Schotterstraße	Q2 20074,4379 20017,4441 19864,4607 19759,4711 19710,4760 19642,4838
-(Waldweg): Waldweg	Q2 19762,4823 19759,4711
+(Waldweg): Waldweg	Q2 19765,4876 19774,4810 19759,4711
 (Braunlager Str. - Tempelhofer Weg): Mosaikpflaster	Q1 12062,5779 12017,5747
 Am Vierling: Kleinsteinpflaster	Q1 -472,4185 -444,4126
 (Salzachstr. - Parkplatz Einkaufszentrum): Verbundsteinpflaster	Q1 -2103,3536 -2173,3513
@@ -9268,7 +9268,7 @@ Segelfliegerdamm [Stichstraße]: Asphalt	Q0 17592,3901 17782,3880
 (Oberspree, Weg 1): unbefestigter Weg	Q2 17190,7306 17296,7401
 Am Gutspark: Verbundsteinpflaster	Q1 15747,12880 15746,12967 15826,12971
 (Unterführung Grünbergallee): Verbundsteinpflaster	Q1 19912,-496 19908,-565
-(Unterführung Grünbergallee): Beton	Q0 19908,-565 19955,-557 19926,-566 19929,-578 19932,-594 19903,-605 19942,-596 19940,-610
+(Unterführung Grünbergallee): Beton	Q0 19908,-565 19955,-557 19926,-566 19929,-578 19932,-594 19903,-605 19947,-593 19951,-605
 Schützenstr. (Altglienicke): Beton	Q1 19678,-817 19754,-786
 (Alter Radelander Weg - Schappachstr.): Waldweg, gut befahrbar	Q1 25007,-2620 25731,-1524
 Lindenstr. (Schmöckwitz): schlechtes Kopfsteinpflaster	Q3 26931,-2871 26954,-3322 26960,-3403 26913,-3613
@@ -11584,8 +11584,8 @@ Langkofelweg: Asphalt	Q0 7023,3570 6845,3403
 Hartriegelstr.: Kopfsteinpflaster	Q2 18695,5076 18724,5022
 Hartriegelstr.: Beton, einige leichte Hebungen	Q0 18724,5022 18918,4971 19184,4888 19251,4879 19402,4900 19500,4919 19579,4931 19755,4962
 Allendeweg: Asphalt	Q0 23001,4382 22963,4435 22893,4532
-Kattunsteig: Waldweg	Q2 19760,4875 19762,4823 19710,4760 19710,4682 19715,4410 19731,4329 19771,4273 19753,4241
-Bärenlauchstr.: Asphalt	Q0 19737,5176 19744,5063 19755,4962 19760,4907 19760,4875
+Kattunsteig: Waldweg	Q2 19765,4876 19710,4760 19710,4682 19715,4410 19731,4329 19761,4288 19745,4273 19759,4265 19753,4241
+Bärenlauchstr.: Asphalt	Q0 19737,5176 19744,5063 19755,4962 19760,4907 19765,4876
 Rudower Str. (Niederschöneweide): Mitte der Fahrbahn Kopfsteinpflaster, Seiten mit löchrigem Beton	Q1 18695,5076 18641,5260 18659,5330
 Rudower Str. (Niederschöneweide): Asphalt	Q0 18659,5330 18680,5413 18695,5453
 Paul-Schwenk-Str.: Beton	Q0 19613,14728 19579,14783 19588,14847 19646,14917 19856,14926 19872,14954 19902,14945
@@ -12910,7 +12910,7 @@ Zieselweg: mäßiger Beton	Q1 2514,22595 2513,22737 2500,22867 2418,22878
 Liverpooler Str.: Asphalt	Q0 5931,16777 5995,16836 6149,16958
 Gottschalkstr.: Asphalt	Q0 9399,17496 9265,17585 9160,17656
 Großenhainer Weg: glatt gepflastert	Q2 15758,1179 15831,1227 15880,1291
-Schwalbenweg: mäßiger Beton	Q1 20205,-548 20172,-533 19940,-610 19724,-703 19650,-732
+Schwalbenweg: mäßiger Beton	Q1 20205,-548 20172,-533 19951,-605 19940,-610 19724,-703 19650,-732
 Hohenzollernstr. (Wannsee): Asphalt mit Schäden	Q1 -6430,478 -6448,539 -6506,729 -6610,1081 -6619,1113
 Wetterseestr.: mäßiges Kopfsteinpflaster	Q2 11499,16883 11504,16746
 Waldhornstr.: schlechtes Kopfsteinpflaster	Q3 3674,21792 3753,21686 3818,21603

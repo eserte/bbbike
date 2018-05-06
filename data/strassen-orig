@@ -5391,7 +5391,7 @@ Köllnische Str.	N 19037,5316 18999,5237 18940,5243 18824,5280 18659,5330 18307,5
 Oberspreestr.	H 19405,5284 19445,5271 19534,5242 19632,5211 19715,5185 19737,5176 19965,5101 20142,5043 20383,4963 20689,4862 20765,4839 20949,4775 20994,4761 21108,4725 21170,4706 21332,4655 21390,4637 21494,4605 21579,4579 21726,4537 21789,4520
 Oberspreestr. [Wohngebiet]	N 19632,5211 19614,5132 19629,5019 19679,5025 19667,5126 19614,5132
 Johanna-Tesch-Str.	N 19715,5185 19743,5271 19756,5313 19928,5365 20030,5334 19998,5226 19930,5247 19919,5214 19743,5271
-Bärenlauchstr.	N 19737,5176 19744,5063 19755,4962 19760,4907 19760,4875
+Bärenlauchstr.	N 19737,5176 19744,5063 19755,4962 19760,4907 19765,4876
 Hartriegelstr.	N 18695,5076 18724,5022 18918,4971 19184,4888 19251,4879 19402,4900 19500,4919 19579,4931 19755,4962
 #: note: Beleuchtung ist vorhanden
 (Hartriegelstr. - Michael-Brückner-Str.)	NN 18695,5076 18622,5049 18514,5028 18425,5032
@@ -6061,7 +6061,7 @@ Uferstr. (Niederschöneweide)	N 17681,6212 17847,6089
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788?date=20180311 (Benennung nach Hans Otto Obrikat?)
 #: XXX ist das die vorgeschlagene "Else-Schierhorn-Str."? vvv
-#: last_checked: 2018-02-04 vvv
+#: last_checked: 2018-05-06 vvv
 #: check_frequency: 90d vvv
 (Schnellerstr. - Uferstr.)	NN 17628,5865 17678,5916
 (Schnellerstr. - Uferstr.)	N 17678,5916 17847,6089
@@ -6125,7 +6125,7 @@ Wasserstr. (Oberschöneweide)	N 19697,5835 19681,5924
 Am Rheinischen Viertel	N 19272,8606 19416,8668
 # REMOVED (Bauarbeiten sind weitgehend fertig, kein Rückbau) --- #: XXX wird dieser Abschnitt zurückgebaut? --- #: osm_watch: way id="26175292" version="6" --- #: last_checked: 2013-07-17 --- #: next_check: 2013-08-17
 Waldowallee	N 18867,9464 18916,9468
-Waldowallee	H 18878,9517 18901,9499 18916,9468 18939,9417 18977,9322 19050,9142 19083,9062 19164,8863 19245,8669 19272,8606 19321,8486 19425,8231 19468,8168
+Waldowallee	H 18878,9517 18901,9499 18916,9468 18939,9417 18977,9322 19048,9146 19083,9062 19164,8863 19245,8669 19272,8606 19321,8486 19425,8231 19468,8168
 Verlängerte Waldowallee	H 19468,8168 19558,8064 19666,7988 19843,7866 19927,7813 20031,7794 20077,7786 20139,7775 20280,7749
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/08re.pdf/file
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110323.1140.336899.html
@@ -9553,9 +9553,9 @@ Grünbergallee	NH 20790,-537 20675,-526 20362,-511 20354,-569 20252,-571 20205,-5
 Grünbergallee	NH 20161,-487 20127,-502 20048,-499 19912,-496 19787,-494 19769,-495 19704,-490
 Grünbergallee	N 20362,-511 20288,-511 20272,-501
 (Grünbergallee - Schwalbenweg)	NN 20288,-511 20205,-548
-(Unterführung Grünbergallee)	NN 19912,-496 19908,-565 19955,-557 19926,-566 19929,-578 19932,-594 19903,-605 19942,-596 19940,-610
+(Unterführung Grünbergallee)	NN 19912,-496 19908,-565 19955,-557 19926,-566 19929,-578 19932,-594 19903,-605 19947,-593 19951,-605
 (Bahnübergang Grünbergallee)	NN 20172,-533 20170,-510 20161,-487
-Schwalbenweg (Altglienicke)	N 20205,-548 20172,-533 19940,-610 19724,-703 19650,-732
+Schwalbenweg (Altglienicke)	N 20205,-548 20172,-533 19951,-605 19940,-610 19724,-703 19650,-732
 Schwalbenweg (Altglienicke)	N 19773,-837 19754,-786 19724,-703
 Schützenstr. (Altglienicke)	N 19678,-817 19754,-786
 Schützenstr. (Altglienicke)	N 19725,-857 19773,-837 19897,-783 19896,-746 19978,-712 19940,-610
@@ -9565,7 +9565,7 @@ Alexander-Meißner-Str.	N 19894,-835 20078,-1029 20388,-1373 20394,-1397 20416,-1
 Ludwig-Prandtl-Str.	N 19626,-1318 19880,-1184 19924,-1157 20078,-1029 20274,-845
 Melitta-Schiller-Str.	N 20050,-1715 20038,-1474 20032,-1451 19880,-1184
 Gebrüder-Hirth-Str.	N 19626,-1318 19714,-1529 19717,-1549 19725,-1704
-(Parkweg im Business Park Berlin)	NN 20797,-1262 20783,-1266 20396,-1370 20388,-1373 20373,-1375 20046,-1449 20032,-1451 20018,-1456 19979,-1469 19864,-1480 19773,-1520 19727,-1526 19714,-1529 19706,-1528 19618,-1531
+(Parkweg im Business Park Berlin)	NN 20799,-1272 20789,-1275 20624,-1310 20540,-1346 20396,-1370 20388,-1373 20373,-1375 20297,-1377 20191,-1425 20046,-1449 20032,-1451 20018,-1456 19979,-1469 19864,-1480 19773,-1520 19727,-1526 19714,-1529 19706,-1528 19618,-1531
 (Kleine Lindenstr. - Business Park Berlin)	NN 21306,-975 21284,-1008 21273,-1057 21165,-1161 21161,-1220 20833,-1298 20807,-1305 20770,-1315 20394,-1397 20038,-1474 19717,-1549
 Mirabellenweg	N 19633,-314 19574,-306
 Gärtnerweg	N 19607,-474 19633,-314 19643,-254 19672,-228
@@ -10219,7 +10219,7 @@ Tannhäuserstr.	N 17549,9529 17720,9533 17890,9580 18125,9676
 Walkürenstr.	N 17720,9533 18006,9335 18070,9292
 Odinstr.	N 18006,9335 17898,9564 17890,9580 17866,9639
 Rienzistr.	N 17898,9564 18121,9488
-Marksburgstr.	N 18070,9292 18172,9250 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133 18900,9119 18961,9109 19050,9142 19133,9193 19195,9249
+Marksburgstr.	N 18070,9292 18172,9250 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133 18900,9119 18961,9109 19048,9146 19131,9187 19195,9249
 Lisztstr. (Karlshorst)	N 18319,9218 18332,9356 18377,9366
 #: REMOVED (hier passiert bestimmt nichts mehr) --- XXX: keine Fahrradstraße, trotz http://andreas-geisel.de/bilanz-meiner-arbeit/ , aber vielleicht passiert hier und in der Cäsarstr. noch was? --- #: osm_watch: way id="145586616" version="3" --- #: last_checked: 2014-03-29 --- #: check_frequency: 180d --- #: priority: #C
 Hentigstr.	N 18518,8778 18548,8942 18586,9172 18626,9406
@@ -10828,9 +10828,9 @@ Feldstr. (Bohnsdorf)	N 20829,-773 21055,-723 21209,-734
 Hufenweg	N 20790,-537 20799,-667 20829,-773 20814,-935
 #: XXX wird diese Straße einen anderen Namen bekommen? Evtl. Diepenseer Str., siehe osm? Wird sie noch weiter verlängert?
 #: osm_watch: way id="27564863" version="15"
-#: last_checked: 2017-05-21
+#: last_checked: 2018-05-06
 #: check_frequency: 360d
-(Hufenweg Verlängerung)	N 20814,-935 20782,-1199 20797,-1262 20807,-1305
+(Hufenweg Verlängerung)	N 20814,-935 20782,-1199 20799,-1272 20807,-1305
 Kleine Lindenstr.	N 20814,-935 21306,-975 21387,-1033 21459,-1086 21528,-1134
 (Kleine Lindenstr. - Schirmpilzstr.)	NN 21528,-1134 21570,-1219
 Schirmpilzstr.	N 21570,-1219 21493,-1434 21484,-1459 21409,-1721
@@ -10915,10 +10915,10 @@ Hauffstr.	NN 15620,11210 15694,11125 15740,11028
 Hauffstr.	N 15740,11028 15756,10966
 #: note: zweiter Punkt ist nur ein "Hilfspunkt" "gegen" 3nocross
 Richard-Kolkwitz-Weg	N 18703,9997 18708,10000 18715,10003 18773,10028
-Richard-Kolkwitz-Weg	NN 18773,10028 19124,10175 19675,10410 19711,10426 19921,10499
-Richard-Kolkwitz-Weg	N 19921,10499 19959,10443
+Richard-Kolkwitz-Weg	NN 18773,10028 19124,10175 19675,10410 19711,10426 19925,10499
+Richard-Kolkwitz-Weg	N 19925,10499 19954,10442
 Ursula-Goetze-Str.	N 19100,9811 19112,9993 19124,10175
-Schackelsterstr.	N 19959,10443 20215,10554 20294,10585 20362,10611 20523,10686 20681,10772 20843,10878 21032,11033
+Schackelsterstr.	N 19954,10442 20215,10554 20294,10585 20362,10611 20523,10686 20681,10772 20843,10878 21032,11033
 Schackelsterstr. [48 50 52]	N 20294,10585 20319,10555 20335,10487
 Arnsberger Str.	N 20522,9852 20527,9961 20529,10056 20536,10233 20542,10439 20546,10615 20540,10652 20523,10686
 Zauchwitzer Str.	N 20546,10615 20723,10639
@@ -11029,7 +11029,7 @@ Berkenbrücker Steig	N 15647,14693 15544,14714 15383,14759
 Sandinostr.	N 15580,14880 15706,14752 15799,14674 15841,14641 15899,14598
 #: note: Der Name "Steffenstr." erscheint wenigstens auf der Übersichtstafel
 Steffenstr.	NN 15580,14880 15568,14901 15536,14956 15425,15080
-Rägeliner Str.	N 19959,10443 20012,10336
+Rägeliner Str.	N 19954,10442 19965,10422 19986,10399 20012,10336
 Stader Str.	N 20352,10304 20261,10307
 Stader Str.	N 20262,10317 20012,10336
 Rheinsteinstr.	N 18737,8686 18865,8740 18899,8754 18988,8792 19073,8828 19116,8845 19164,8863 19299,8946 19500,9043 19621,9097
@@ -13817,7 +13817,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036637679537/637679537/00220602/02-Anlagen/01/1_Version_vom_03_07_2017.pdf (zweite Karte!)
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
-#: last_checked: 2018-04-29
+#: last_checked: 2018-05-06
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Am Kraatzgraben)	NN 16835,10052 16666,10219 16544,10337 16488,10381
@@ -14180,7 +14180,7 @@ Baikalstr.	N 17210,10350 17255,10510 17281,10598
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036637679537/637679537/00220602/02-Anlagen/01/1_Version_vom_03_07_2017.pdf (zweite Karte!)
 #: XXX Benennung zu "Am Kraatz-Tränke-Graben" geplant (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
-#: last_checked: 2018-04-29
+#: last_checked: 2018-05-06
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17154,10158
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -14488,11 +14488,11 @@ Moissistr.	N 20262,3409 20405,3235 20478,3156
 Undinestr.	N 4760,4075 4681,4537 4651,4638 4568,4789 4517,4853
 Flotowstr. (Lichterfelde)	N 4515,4581 4651,4638
 Neltestr.	N 19472,3922 19596,4035 19715,4178 19753,4241
-(Kattunsteig)	NN 19760,4875 19762,4823 19710,4760 19710,4682 19715,4410 19731,4329 19771,4273 19753,4241
+(Kattunsteig)	NN 19765,4876 19710,4760 19710,4682 19715,4410 19731,4329 19761,4288 19745,4273 19759,4265 19753,4241
 #: note: möglicherweise "Birkenweg", aber vor Ort keine Schilder (früherer Eintrag in Berlin.coords.data: Birkenweg|Adlershof|12439|19864,4607)
 #: note: relativ breit
 (Weg am Stadion)	NN 20074,4379 20017,4441 19864,4607 19759,4711 19710,4760 19642,4838
-(Waldweg)	NN 19762,4823 19759,4711
+(Waldweg)	NN 19765,4876 19774,4810 19759,4711
 Vogelbeerstr.	N 19715,4178 19759,4160 19815,4148 19869,4151 19917,4168 19963,4198
 Steinbachstr.	N 19587,3801 19673,3888 19703,3979 19759,4160
 Husstr.	N 19633,3751 19736,3858 19763,3959 19815,4148
@@ -15019,7 +15019,7 @@ Hüttendorfer Weg	N 21463,-280 21409,-109
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/planungsvariante_1.pdf?start&ts=1392044607&file=planungsvariante_1.pdf
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/planungsvariante_2.pdf?start&ts=1392044611&file=planungsvariante_2.pdf
 #: osm_watch: way id="147717012" version="4"
-#: last_checked: 2017-05-21
+#: last_checked: 2018-05-06
 #: check_frequency: 360d
 (Am Gartenstadtweg - S-Bhf. Altglienicke/Paradiesstr.)	N 21527,547 21368,478 21275,389
 (Am Gartenstadtweg - S-Bhf. Altglienicke/Paradiesstr.)	NN 21275,389 21262,375

@@ -1146,7 +1146,7 @@ Kleine Lindenstr.: Asphalt	Q0 21528,-1134 21459,-1086 21387,-1033 21306,-975 208
 # REMOVED (ˆstliche Fahrbahn wurde gerade gemacht) --- #: note: es existiert eine paralleler Weg/Straﬂe, der zumindest teilweise asphaltiert ist --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4640 (Auflˆsung der Asphaltdecke) --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4640&date=20140201 (Sanierung der Straﬂe) --- #: XXX wird die Straﬂe saniert? --- #: next_check: 2014-04-01
 Hundsfelder Str.: schlechtes Kopfsteinpflaster	Q3 21640,-582 21769,-432 21877,-307
 Hundsfelder Str.: Verbundsteinpflaster	Q1+ 21688,-589 21700,-537 21811,-409
-Hundsfelder Str.: Asphalt	Q1+ 21811,-409 21898,-303
+Hundsfelder Str.: Verbundsteinpflaster	Q1+ 21811,-409 21898,-303
 Parchwitzer Str.: Kopfsteinpflaster, teilweise mit Asphaltbanketten	Q2+ 21487,-912 21403,-859 21358,-834 21291,-767
 Parchwitzer Str.: Asphalt	Q0 21120,-444 21151,-520 21195,-633 21291,-767
 Parchwitzer Str.: Kopfsteinpflaster, teilweise mit Asphaltbanketten	Q2+ 21487,-912 21615,-979 21654,-992 21734,-1002 21828,-1015
@@ -1160,8 +1160,8 @@ Dornacher Str.: Asphalt	Q0 20947,10137 20947,9999 20948,9847
 Buchenhainer Str.: holpriger Fahrweg	Q2 21164,8243 21329,8222
 Nitzwalder Str.: holpriger Fahrweg	Q2 21329,8222 21458,8091 21529,8019 21593,7934
 Kaulsdorfer Str.: Asphalt	Q0 22049,7085 22075,6967 22186,6672 22192,6659 22305,6404 22325,6385
-Marksburgstr.: Asphalt	Q0 19050,9142 18961,9109 18900,9119 18809,9133 18697,9153 18586,9172 18511,9185 18430,9199 18319,9218
-Marksburgstr.: Asphalt mit einigen Sch‰den	Q1+ 19050,9142 19133,9193 19195,9249
+Marksburgstr.: Asphalt	Q0 19048,9146 18961,9109 18900,9119 18809,9133 18697,9153 18586,9172 18511,9185 18430,9199 18319,9218
+Marksburgstr.: Asphalt mit einigen Sch‰den	Q1+ 19048,9146 19131,9187 19195,9249
 Walk¸renstr.: Asphalt	Q0- 18070,9292 18006,9335
 Walk¸renstr.: Kopfsteinpflaster	Q2 18006,9335 17720,9533
 Tannh‰userstr.: Kopfsteinpflaster	Q2 18125,9676 17890,9580 17720,9533 17549,9529
@@ -1746,7 +1746,7 @@ Tauchersteig: guter Asphalt	Q0 22058,2649 22047,2662 22011,2658 21879,2592 21770
 Am Kanal: guter Asphalt	Q0 21750,2593 21490,2535 21223,2475 21111,2451
 Am Kanal: Feldweg	Q2 21111,2451 20939,2413
 Am Teltowkanal: Feldweg	Q2 20810,2398 20510,2321 20490,2276 20234,2254
-Am Teltowkanal: Kopfsteinpflaster	Q2 20234,2254 20128,2271
+Am Teltowkanal: Kopfsteinpflaster	Q2- 20234,2254 20128,2271
 Am Teltowkanal: feiner Schotter	Q1 3375,1026 3366,1007 3370,955 3355,893 3304,832 3261,835 3232,803
 Akeleiweg: Kopfsteinpflaster	Q2 17631,3200 17603,3240
 # REMOVED (vollst‰ndig asphaltiert) --- Winckelmannstr.: Kopfsteinpflaster Richtung Norden	Q2; 17465,3768 17468,3979
@@ -3118,7 +3118,7 @@ Platanenweg: Asphalt	Q0 15968,7739 15840,7876 15717,8011 15787,8073
 (Am Pl‰nterwald - Erwin-Bennewitz-Weg): Verbundsteinpflaster	Q1 15499,8496 15488,8508 15473,8531
 Erwin-Bennewitz-Weg: Asphalt	Q0 15473,8531 15378,8668
 (Zufahrt zum Kaufland): Asphalt	Q0 16699,10611 16628,10442 16751,10403
-R‰geliner Str.: unbefestigte Straﬂe bzw. grober Asphalt	Q2+ 19959,10443 20012,10336
+R‰geliner Str.: etwas welliger Asphalt	Q1 19954,10442 19965,10422 19986,10399 20012,10336
 Stader Str.: Asphalt	Q0 20352,10304 20261,10307
 Stader Str.: Asphalt	Q0 20262,10317 20012,10336
 Tieflandstr.: Asphalt	Q0 21860,9046 21847,9145 21834,9255 21806,9550 21822,9681 21842,9829
@@ -4907,7 +4907,7 @@ Am Gartenstadtweg: Beton	Q1 21527,547 21549,533 21592,547 21657,580 21673,590 21
 (Kirchsteig - Gr¸nzug am Falkenberg): Schotterstraﬂe	Q2+ 21860,462 21774,412
 (Lindenbl¸tenstr. - Mohnbl¸tenweg): wassergebundene Decke	Q1 21681,326 21688,312
 (Sternbl¸tenweg - Gr¸nzug am Falkenberg): wassergebundene Decke	Q1 21620,372 21621,360 21592,341
-#: last_checked: 2017-08-07
+#: last_checked: 2018-05-06
 #: check_frequency: 360d
 #: XXX wird die Straﬂe asphaltiert/befestigt?
 #: XXX heiﬂt dieser Abschnitt auch "Hˆhensteig"?
@@ -4916,7 +4916,7 @@ Mohnbl¸tenweg: unbefestigte Straﬂe	Q2 21712,215 21688,312
 Zur Gartenstadt: Asphalt	Q0 21712,215 21742,115 21769,-30 21800,-109
 Zur Gartenstadt: schlechtes Kopfsteinpflaster	Q3 21800,-109 21847,-303
 Heidelbeerweg: Asphalt	Q0 21645,200 21669,99
-#: last_checked: 2017-05-21
+#: last_checked: 2018-05-06
 #: check_frequency: 360d
 #: XXX wird die Straﬂe asphaltiert/befestigt?
 #: osm_watch: way id="174182913" version="2"
@@ -7754,19 +7754,21 @@ Bahnweg (Altglienicke): Asphalt	Q0- 19659,-168 19509,-283
 (Blindschleichengang - Venusstr.): unbefestigter Pfad	Q2 19336,-59 19331,73
 Siriusstr.: Verbundsteinpflaster	Q1 18997,-351 18990,-371 18950,-490 18928,-506 18904,-573
 (Kleine Lindenstr. - Business Park Berlin): Asphalt	Q0 21306,-975 21284,-1008 21273,-1057 21165,-1161 21161,-1220 20833,-1298 20807,-1305 20770,-1315 20394,-1397 20038,-1474 19717,-1549
-(Hufenweg Verl‰ngerung): unbefestigte Baustraﬂe	Q2 20814,-935 20782,-1199 20797,-1262 20807,-1305
+(Hufenweg Verl‰ngerung): unbefestigte Baustraﬂe	Q2 20814,-935 20782,-1199 20799,-1272 20807,-1305
 Hufenweg: Asphalt	Q0 20814,-935 20829,-773 20799,-667 20790,-537
 Ludwig-Prandtl-Str.: Asphalt	Q0 19626,-1318 19880,-1184 19924,-1157 20078,-1029 20274,-845
 Melitta-Schiller-Str.: Asphalt	Q0 20050,-1715 20038,-1474 20032,-1451 19880,-1184
 Gebr¸der-Hirth-Str.: Asphalt	Q0 19626,-1318 19714,-1529 19717,-1549 19725,-1704
-(Parkweg im Business Park Berlin): Asphalt	Q0 20797,-1262 20783,-1266 20396,-1370 20388,-1373 20373,-1375 20046,-1449 20032,-1451 20018,-1456 19979,-1469 19864,-1480 19773,-1520 19727,-1526 19714,-1529 19706,-1528 19618,-1531
+(Parkweg im Business Park Berlin): Asphalt	Q0 20799,-1272 20789,-1275 20624,-1310 20540,-1346 20396,-1370 20388,-1373 20373,-1375 20297,-1377 20191,-1425 20046,-1449 20032,-1451 20018,-1456 19979,-1469 19864,-1480 19773,-1520 19727,-1526 19714,-1529 19706,-1528 19618,-1531
 Schwalbenweg (Altglienicke): Beton	Q1 19773,-837 19754,-786 19724,-703
 Feldstr. (Bohnsdorf): Beton	Q2 20829,-773 21055,-723 21209,-734
 Gehwegplatten	Q0 21844,238 21963,261 21979,274 21991,273 22008,262
 #: XXX wird hier die Qualit‰t verbessert?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5672
 #: XXX siehe auch Maﬂnahme Gr.9; auﬂerdem soll die Straﬂe "Am Kanal" asphaltiert werden
-#: next_check: 2017-09-30
+#: note: jemand hat hier Teppiche ausgelegt, um die Lage etwas zu lindern (gesehen: 2018-05-06)
+#: last_checked: 2018-05-06
+#: check_frequency: 120d
 Unterf¸hrung unter Adlergestell und Bahn: teilweise sehr sandig	Q3 20939,2413 20810,2398
 (Hartriegelstr. - Michael-Br¸ckner-Str.): Verbundsteinpflaster	Q1+ 18695,5076 18622,5049 18514,5028 18425,5032
 (Bersarinplatz - Thaerstr.): unbefestigter Weg	Q1- 13747,12642 13761,12690
@@ -8037,7 +8039,7 @@ Ahornallee (Rosenthal): schlechtes Kopfsteinpflaster	Q3 9740,20719 9859,20542
 Theanolte-B‰hnisch-Str.: Asphalt	Q0 11320,13095 11235,13143
 (Keibelstr. - Karl-Liebknecht-Str.): Gehwegplatten	Q0- 11045,13183 10976,13229
 (Weg am Stadion): Schotterstraﬂe	Q2+ 20074,4379 20017,4441 19864,4607 19759,4711 19710,4760 19642,4838
-(Waldweg): Waldweg	Q2 19762,4823 19759,4711
+(Waldweg): Waldweg	Q2 19765,4876 19774,4810 19759,4711
 (Braunlager Str. - Tempelhofer Weg): Mosaikpflaster	Q1 12062,5779 12017,5747
 Am Vierling: Kleinsteinpflaster	Q1 -472,4185 -444,4126
 (Salzachstr. - Parkplatz Einkaufszentrum): Verbundsteinpflaster	Q1+ -2103,3536 -2173,3513
@@ -10182,7 +10184,7 @@ Segelfliegerdamm [Stichstraﬂe]: Asphalt	Q0 17592,3901 17782,3880
 (Oberspree, Weg 1): unbefestigter Weg	Q2 17190,7306 17296,7401
 Am Gutspark: Verbundsteinpflaster	Q1+ 15747,12880 15746,12967 15826,12971
 (Unterf¸hrung Gr¸nbergallee): Verbundsteinpflaster	Q1 19912,-496 19908,-565
-(Unterf¸hrung Gr¸nbergallee): Beton	Q0 19908,-565 19955,-557 19926,-566 19929,-578 19932,-594 19903,-605 19942,-596 19940,-610
+(Unterf¸hrung Gr¸nbergallee): Beton	Q0 19908,-565 19955,-557 19926,-566 19929,-578 19932,-594 19903,-605 19947,-593 19951,-605
 Sch¸tzenstr. (Altglienicke): Beton	Q1 19678,-817 19754,-786
 (Alter Radelander Weg - Schappachstr.): Waldweg, gut befahrbar	Q1 25007,-2620 25731,-1524
 Lindenstr. (Schmˆckwitz): schlechtes Kopfsteinpflaster	Q3 26931,-2871 26954,-3322 26960,-3403 26913,-3613
@@ -15150,11 +15152,11 @@ Hartriegelstr.: Beton, einige leichte Hebungen	Q0- 18724,5022 18918,4971 19184,4
 Allendeweg: Asphalt	Q0 23001,4382 22963,4435 22893,4532
 #: note: laut ADFC-Karte ebenfalls schlecht geeignet
 #: corrected_by: srt (Q3 -> Q2+)
-Kattunsteig: Waldweg	Q2+ 19760,4875 19762,4823 19710,4760 19710,4682 19715,4410 19731,4329 19771,4273 19753,4241
+Kattunsteig: Waldweg	Q2+ 19765,4876 19710,4760 19710,4682 19715,4410 19731,4329 19761,4288 19745,4273 19759,4265 19753,4241
 #: note: "Note 3":
 #: note: laut ADFC-Karte gut geeignet
 #: corrected_by: srt (einige Schlaglˆcher, Q1 -> Asphalt, Q0-)
-B‰renlauchstr.: Asphalt	Q0- 19737,5176 19744,5063 19755,4962 19760,4907 19760,4875
+B‰renlauchstr.: Asphalt	Q0- 19737,5176 19744,5063 19755,4962 19760,4907 19765,4876
 #: note: "Note 3":
 #: note: laut ADFC-Karte m‰ﬂig geeignet
 #: note: unklarer Eintrag von anonymous: m‰ﬂiges Kopfsteinpflaster, Bordsteinkanten/Schrittgeschwindigkeit???
@@ -18911,7 +18913,7 @@ Groﬂenhainer Weg: glatt gepflastert	Q2+ 15758,1179 15831,1227 15880,1291
 # 
 #: by: Frank- R. Hoffmann:
 #: confirmed_by: srt
-Schwalbenweg: m‰ﬂiger Beton	Q1- 20205,-548 20172,-533 19940,-610 19724,-703 19650,-732
+Schwalbenweg: m‰ﬂiger Beton	Q1- 20205,-548 20172,-533 19951,-605 19940,-610 19724,-703 19650,-732
 # 
 #: by: Carmen Midle:
 #: confirmed_by: srt (konkretisiert: Asphalt)
