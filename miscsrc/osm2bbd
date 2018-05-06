@@ -17,7 +17,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..";
 
 use vars qw($VERSION);
-$VERSION = '0.29';
+$VERSION = '0.30';
 
 use Cwd qw(getcwd realpath);
 use Data::Dumper;
@@ -285,7 +285,8 @@ use constant PROJECTED_RX    => qr{^(?:planned|proposed)$};
 
 use constant BRIDGE_YES_RX  => qr{^(?:yes|movable)$};
 
-my $cyclists_dismount_label = ($lang eq 'en' ? 'Cyclists dismount' : 'Radfahrer absteigen');
+my $cyclists_dismount_label = $lang eq 'de' ? 'Radfahrer absteigen' : 'Cyclists dismount';
+my $incline_label           = $lang eq 'de' ? 'Steigung' : 'Incline';
 
 sub init_height_db {
     my $file = shift;
@@ -1526,6 +1527,25 @@ for my $osm_file (@osm_files) {
 			    push @or, ["radwege_exact", join(';', @cat)];
 			} else {
 			    $unhandled{'cycleway-'.($cycleway[0]||'').'-'.($cycleway[1]||'')}++;
+			}
+		    }
+		}
+
+		if (exists $tag{'incline'} && $highway_cat ne 'steps') {
+		    my $incline = $tag{'incline'};
+		    if ($incline eq 'up') {
+			push @or, ['comments_mount', 'St;', name => $incline_label];
+		    } elsif ($incline eq 'down') {
+			push @or, ['comments_mount', 'St;', name => $incline_label, reversed => 1];
+		    } elsif ($incline =~ m{^([-\+])?([\d.]+)%$}) {
+			my $reversed = ($1||'') eq '-';
+			my $amount = $2;
+			if ($amount > 0) {
+			    push @or, ['comments_mount', 'St;', name => $incline_label.' '.$amount.'%', reversed => $reversed];
+			}
+		    } else {
+			if ($debug) {
+			    warn "Cannot handle incline value '$incline'\n";
 			}
 		    }
 		}
