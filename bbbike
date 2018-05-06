@@ -19142,7 +19142,7 @@ sub make_qualitaet_net {
 	# XXX hmmm, fails fataly if any of the layers is missing
 	my @files = qw(qualitaet_s qualitaet_l);
 	local $Strassen::Util::cacheprefix = $Strassen::Util::cacheprefix;
-	if ($devel_host) {
+	if ($devel_host && !$city_obj->is_osm_source) {
 	    my $tmp_dir_for_datadir = "$datadir/../tmp";
 	    my @candidates = map { "$tmp_dir_for_datadir/$_" } @files;
 	    if (@files == grep { -f } @candidates) {
@@ -19169,7 +19169,7 @@ sub make_handicap_net {
 	# XXX hmmm, fails fataly if any of the layers is missing
 	my @files = qw(handicap_s handicap_l);
 	local $Strassen::Util::cacheprefix = $Strassen::Util::cacheprefix;
-	if ($devel_host) {
+	if ($devel_host && !$city_obj->is_osm_source) {
 	    my @candidates = map { "$FindBin::RealBin/tmp/$_" } @files;
 	    if (@files == grep { -f } @candidates) {
 		@files = @candidates;
