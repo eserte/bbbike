@@ -118,26 +118,9 @@ my $got_something = 0;
 for my $site_def (@sites) {
     my($site_code, $r) = @{$site_def}{qw(sitecode record)};
 
-    my $url = $metar_url_cb->($site_code);
-    my @use_retry_sleeps = @retry_sleeps;
-    my $resp;
-    while (1) {
-	$resp = $ua->get($url);
-	last if $resp->is_success;
-	if ($resp->code >= 500 && @use_retry_sleeps) {
-	    my $sleep = shift @use_retry_sleeps;
-	    warn "Fetching for $site_code failed with code " . $resp->code . ", but will retry in $sleep second(s)...\n";
-	    sleep $sleep;
-	} else {
-	    last;
-	}
-    }
-    if (!$resp->is_success) {
-	warn "Fetching for $site_code failed: " . $resp->status_line;
-	next;
-    }
+    my $content = get_metar_standard($site_code);
+    next if !defined $content;
 
-    my $content = $resp->content;
     #$content =~ s/\n//g;
     $content =~ m/(\Q$site_code\E\s\d+Z.*)/g;
     my $metar = $1;
@@ -191,6 +174,32 @@ for my $site_def (@sites) {
 
 if (!$got_something && @retry_sleeps) {
     die "Did not get any data for " . join(", ", map { $_->{sitecode} } @sites) . "\n";
+}
+
+sub get_metar_standard {
+    my($site_code) = @_;
+
+    my $url = $metar_url_cb->($site_code);
+    my @use_retry_sleeps = @retry_sleeps;
+    my $resp;
+    while (1) {
+	$resp = $ua->get($url);
+	last if $resp->is_success;
+	if ($resp->code >= 500 && @use_retry_sleeps) {
+	    my $sleep = shift @use_retry_sleeps;
+	    warn "Fetching for $site_code failed with code " . $resp->code . ", but will retry in $sleep second(s)...\n";
+	    sleep $sleep;
+	} else {
+	    last;
+	}
+    }
+    if (!$resp->is_success) {
+	warn "Fetching for $site_code (url $url) failed: " . $resp->status_line;
+	return undef;
+    }
+
+    my $content = $resp->content;
+    $content;
 }
 
 sub format_wettermeldung {
