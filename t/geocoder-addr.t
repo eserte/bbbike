@@ -52,7 +52,7 @@ SKIP: {
 
     # only street, titlecase and lowercase
     for my $street ('Dudenstraﬂe', 'dudenstraﬂe') {
-	check_geocoding $street, qr{^Dudenstraﬂe}, '13.370467,52.485352 13.386009,52.484715'
+	check_geocoding $street, qr{^Dudenstraﬂe}, '13.370467,52.485555 13.386009,52.484715'
     }
     {
 	my $dudenstr24_bbox = '13.381574,52.485224 13.382067,52.484818';
@@ -95,7 +95,8 @@ SKIP: {
 	check_geocoding "Bahnhofstraﬂe", "Bahnhofstraﬂe 1, 12159 Berlin", $bahnhofstrasse_schoeneberg_bbox; # first one in list
 	check_geocoding "Bahnhofstraﬂe, 12159 Berlin", "Bahnhofstraﬂe 1, 12159 Berlin", $bahnhofstrasse_schoeneberg_bbox;
 	{
-	    local $TODO = "Wrong result";
+	    local $TODO;
+	    $TODO = "Wrong result with fast lookup" if $geocoder->{GeocodeMethod} eq 'geocode_fast_lookup';
 	    check_geocoding "Bahnhofstraﬂe, 12555 Berlin", "Bahnhofstraﬂe 1, 12555 Berlin", $bahnhofstrasse_koepenick_bbox;
 	}
 	check_geocoding "Bahnhofstraﬂe 1, 12555 Berlin", "Bahnhofstraﬂe 1, 12555 Berlin", $bahnhofstrasse_koepenick_bbox;
