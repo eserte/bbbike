@@ -6325,7 +6325,7 @@ EOF
        text  => 'L 040 Chausseestraße OD Diedersdorf, zw. Bhf.- u. Mahlower Str. Grundhafter Ausbau Vollsperrung 04.10.2006-01.12.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 7558,-7093 7981,-7165 9170,-7708
+	q4::inwork 7558,-7082 7701,-7141 7901,-7146 7967,-7152 8310,-7300 8373,-7328 9170,-7708
 EOF
      },
      { from  => 1160863200, # 2006-10-15 00:00
@@ -7740,7 +7740,7 @@ EOF
        text  => 'L 040 Blankenfelde-Großbeeren OD Diedersdorf, Mahlower Str.bis Kreisverkehr grundhafter Straßenausbau Vollsperrung 26.09.2007-09.11.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	2::inwork 7981,-7165 7558,-7093
+	2::inwork 7967,-7152 7901,-7146 7701,-7141 7558,-7082
 EOF
      },
      { from  => 1176242400, # 2007-04-11 00:00
@@ -8339,7 +8339,7 @@ EOF
        text  => 'L 040 Blankenfelde-Großbeeren OD Diedersdorf grundhafter Straßenausbau Vollsperrung 11.07.2006-20.09.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 7981,-7165 7558,-7093
+	q4::inwork 7967,-7152 7901,-7146 7701,-7141 7558,-7082
 EOF
      },
      { from  => 1180130400, # 2007-05-26 00:00
@@ -11309,7 +11309,7 @@ EOF
        text  => 'L 040 Potsdamer Damm OD Blankenfelde, zw. H.-von-Hülsen-Weg und Dorfstr. Deckeneinbau Vollsperrung 04.04.2008-05.04.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 9828,-8106 10115,-8276
+	q4::inwork 9994,-8220 10115,-8276
 EOF
      },
      { from  => 1206914400, # 2008-03-31 00:00
@@ -11382,7 +11382,7 @@ EOF
        text  => 'L 040 Potsdamer Damm OD Blankenfelde, am OA Ri. Diedersdorf Deckeneinbau Vollsperrung 12.04.2008-12.04.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; 10115,-8276 9828,-8106
+	q4::inwork; 10115,-8276 9994,-8220
 EOF
      },
      { from  => 1208462457, # 2008-04-17 22:00

@@ -2612,6 +2612,7 @@ Hauptstr. (Französisch Buchholz): gegen die Einbahnstraßenrichtung, ggfs. schieb
 (Vorfahrt S-Bhf. Tegel): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 2352,20224 2371,20225 2384,20196 2398,20166 2381,20157
 (Guerickestr. - Einsteinufer): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 4658,12450 4618,12340 4593,12322
 (Suermondtstr. - Konrad-Wolf-Str.): gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 16842,15932 16799,15974 16719,16005 16753,16111
+Ferdinandstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 5398,2422 5417,2383
 Am Krusenick: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 22751,4970 22652,4966 22667,4912 22705,4874
 Josef-Nawrocki-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25802,4681 25802,4823
 Josef-Nawrocki-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25695,4714 25554,4758 25552,4829
@@ -2646,6 +2647,7 @@ Sewanstr. - Balatonstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::ig
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich): gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 18377,9366 18490,9387
 Neue Bahnhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
 Soorstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1861,11284 1884,11126 1865,11082
+Koppenstr.: Bauarbeiten, Fahrbahn Richtung Rüdersdorfer Str. gesperrt: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2:inwork::igndisp; 12573,12227 12596,12472
 Wartenbergstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2:inwork::igndisp; 15423,11667 15337,11639 15328,11636 15300,11584
 Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2:inwork::igndisp; 18296,10027 18312,9985 18301,9946
 Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 18301,9946 18266,9853

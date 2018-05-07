@@ -1171,6 +1171,7 @@ Markgrafenstr.	1 9799,10846 9834,10840
 Morgensternstr.	1 5212,2360 5229,2395
 Gotenburger Str.: Einfahrt verboten	1s:q3 9000,16803 8847,16870
 Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
+# 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-03-16-prot-fahrratsitzung.pdf
 #: XXX evtl wird die Straße für Radfahrer geöffnet
@@ -1178,10 +1179,13 @@ Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
 #: last_checked: 2017-05-06
 #: check_frequency: 180d
 Fritz-Werner-Str.	1s:q3 9102,2780 9076,2594
+# 
 Kraftwerk Reuter West	2 -447,14338 -495,14311 -650,14355 -792,14258 -1002,14162 -1020,14084
+# 
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf
 #: by: osm
 Bechstedter Weg	1 3467,9045 3661,8815 3701,8849
+# 
 Floyd-L.-Parks-Weg	1 2352,1267 2315,1251 2370,1127
 # REMOVED (mittlerweile wieder tagsüber offen) --- #: note: seit mindestens Juni 2016 dauerhaft verschlossen --- Tor	2 8371,13399 8363,13402 8356,13404
 Gravensteinstr.	1s:q3 12229,22457 12185,22465
@@ -1197,9 +1201,12 @@ Dankratweg - Am Waldberg: Betriebsgelände	2 20460,9593 20408,9604 20338,9718 203
 (Guerickestr. - Einsteinufer)	1s:q3 4658,12450 4618,12340 4593,12322
 Wilhelmstr. (Wilhelmstadt)	1::igndisp -4406,12468 -4300,12571
 (Messedamm - S-Bhf. Westkreuz)	1 2117,10495 2090,10576 2033,10613
+# 
 #: note: gesperrt Richtung Norden wegen Benutzungspflicht
 Halenseestr.	2::igndisp 2086,10552 1961,10646 1928,10728
+# 
 (Suermondtstr. - Konrad-Wolf-Str.)	1s:q4 16842,15932 16799,15974 16719,16005 16753,16111
+# 
 #: note: verschlossen 2016-05-11 gegen 9 Uhr
 #: note: offen am 2016-06-16 gegen 9:30 Uhr
 #: note: offen am 2016-07-01 gegen 18:15 Uhr
@@ -1214,8 +1221,12 @@ Halenseestr.	2::igndisp 2086,10552 1961,10646 1928,10728
 #: note: mittlerweile dauerhaft gesperrt
 #: note: verschlossen am 2018-04-11 gegen 18:40 Uhr
 Alexanderufer - Charité: Tor dauerhaft gesperrt	2 8362,13466 8369,13465 8377,13463
+# 
 Falkoniergasse: durch Tore abgesperrt	2 9939,12174 9909,12261
 Business Park BBI: dauerhaft gesperrt, Firmengelände	2 20038,-1474 20394,-1397
+# 
+#: by: mapillary
+Ferdinandstr.	1s:q4 5398,2422 5417,2383
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -2874,6 +2885,12 @@ Drängelgitter	BNP:3::trailer=10 25081,-9433
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: source_id: 2147342570
+#: next_check: 2018-06-01
+#: valid: -20180601
+#: priority: #A
+Koppenstr.: Bauarbeiten, Fahrbahn Richtung Rüdersdorfer Str. gesperrt	1s:q2:inwork 12573,12227 12596,12472
 # 
 #: XXX welche Fahrbahnbeschaffenheit wird die Straße haben?
 #: osm_watch: way id="220943758" version="2"

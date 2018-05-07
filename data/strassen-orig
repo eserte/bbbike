@@ -2425,7 +2425,7 @@ Straße 56 (Heinersdorf)	N 12429,17685 12587,17603
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/29re.pdf/file?y=2014 (Benennung)
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3835 (Vorlange zur Kenntnisnahme)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2014 (Widerspruch)
-#: osm_watch: way id="45904921" version="7"
+#: osm_watch: way id="45904921" version="8"
 #: last_checked: 2018-04-28
 #: check_frequency: 120d
 Straße 16 (Heinersdorf)	N 13031,17775 13034,17895
@@ -3364,7 +3364,7 @@ Friedrichsruher Platz	NN 5942,5775 5935,5874
 Schönhauser Str. (Steglitz)	N 5809,6383 5824,6240 5834,6142 5845,6049 5847,5961 5851,5863 5850,5765
 Jeverstr.	NN 5681,5743 5681,5768
 Jeverstr.	N 5681,5768 5679,5853 5677,5868 5674,5901 5699,5949 5748,6051 5776,6118 5834,6142
-Sachsenwaldstr.	N 5834,6142 5984,6233 6104,6258
+Sachsenwaldstr.	N 5834,6142 5984,6233 6104,6258 6198,6270 6305,6287 6323,6270
 Grazer Damm	H 6757,5858 6736,6071 6714,6293 6710,6342 6694,6512 6675,6740 6668,6810 6650,7017 6640,7138
 Grazer Platz	N 6439,6716 6517,6722 6546,6724 6675,6740 6798,6755
 Grazer Platz	N 6791,6821 6668,6810 6529,6798 6430,6787
@@ -3779,6 +3779,9 @@ Adam-von-Trott-Str.	N 3854,15670 3852,15533 3860,15485 3857,15226 4148,15220
 Thaters Privatweg	N 3956,14750 3899,14868 3893,14911 3892,14944 4103,15137 4148,15205
 Riedemannweg	N 4248,15647 4389,15336
 Buchholzweg	N 4535,15530 4466,15350 4389,15336
+#: XXX wird vermutlich umbenannt, neuer Name: "Cornelius-Frederiks-Str."
+#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/426_2018_zu_ds_-1118_v_neue_strassennamen_im_afrikanischen_viertel.pdf
+#: next_check: 2018-07-01
 Lüderitzstr.	N 6661,15921 6484,16085 6349,16213 6211,16343 6106,16433 6003,16521
 Sansibarstr.	N 6201,16538 6106,16433 6005,16313 5827,16118
 Otawistr.	N 6098,16630 6003,16521 5906,16403 5748,16235
@@ -7871,7 +7874,7 @@ Am Bahndamm	N 22365,6149 22296,6170 22263,6185 22238,6195 21984,6317
 Alte Kaulsdorfer Str.	NH 22365,6149 22325,6385
 Kaulsdorfer Str. (Köpenick, Kaulsdorf)	N 22539,6258 22325,6385
 Kaulsdorfer Str. (Köpenick, Kaulsdorf)	NH 22325,6385 22305,6404 22192,6659 22186,6672 22075,6967 22049,7085
-Kaulsdorfer Str. (Köpenick, Kaulsdorf)	H 22049,7085 22035,7146 22021,7245 22009,7327 21988,7367 21956,7428 21901,7548 21810,7749 21759,7856 21713,7952 21708,7981 21688,8115 21663,8246 21659,8311 21680,8400 21867,8752 21928,8882 21954,8941 21982,9017
+Kaulsdorfer Str. (Köpenick, Kaulsdorf)	H 22049,7085 22035,7146 22021,7245 22009,7327 21988,7367 21956,7428 21901,7548 21810,7749 21759,7856 21713,7952 21708,7981 21688,8115 21663,8246 21659,8311 21680,8400 21867,8752 21928,8882 21954,8941
 Kaulsdorfer Str. (Köpenick, Kaulsdorf)	NH 22075,6967 22107,7020
 Hoernlestr.	N 22645,6431 22509,6519 22301,6683 22265,6689 22192,6659
 Hoernlestr. [zur Gehsener Str.]	N 22301,6683 22351,6756
@@ -7946,7 +7949,7 @@ Brandorfer Weg	N 20536,11022 20524,11016 20365,11025
 (Wilhelmsbrücker Str. - Am Biesdorfer Baggersee)	NN 20369,11174 20362,11166
 Gladauer Weg	N 20354,11500 20346,11337 20342,11250 20369,11174
 Baggerseestr.	N 20281,11341 20346,11337 20413,11334
-Chemnitzer Str.	H 21982,9017 22027,9131 22031,9142 22074,9273 22090,9380 22103,9465 22116,9585 22129,9702 22147,9841 22162,9960 22169,10018 22189,10183 22212,10276 22253,10412 22257,10428 22327,10685 22393,10896 22436,11054 22483,11261
+Chemnitzer Str.	H 21954,8941 21982,9017 22027,9131 22031,9142 22074,9273 22090,9380 22103,9465 22116,9585 22129,9702 22147,9841 22162,9960 22169,10018 22189,10183 22212,10276 22253,10412 22257,10428 22327,10685 22393,10896 22436,11054 22483,11261
 Gerdastr.	N 22162,9960 22233,9948 22338,9907 22387,9873
 Wernitzer Str.	N 22253,10412 22365,10386 22469,10362 22519,10339 22574,10300 22687,10210
 #: note: laut luise-berlin und Stephan Schmauder führt die Straße tatsächlich nur bis zur Lassaner Str.
@@ -12115,7 +12118,6 @@ Begasstr. (Schöneberg)	N 6275,7004 6408,7008
 Begasstr. (Schöneberg)	NN 6408,7008 6513,7005
 (Begasstr. - Riemenschneiderweg)	NN 6513,7005 6650,7017 6770,7027
 Canovastr.	N 6343,6297 6477,6311
-Canovastr.	N 6104,6258 6198,6270 6305,6287 6323,6270
 Dürerplatz	NN 6243,7033 6275,7004
 (S-Bahnhofunterführung Friedenau)	NN 6243,7033 6160,7074 6151,7078
 Heimkehlenstr.	N 5854,1585 5741,1642 5678,1674 5592,1720
@@ -14434,8 +14436,19 @@ Togostr.	NN 6244,16096 6104,16223
 Togostr.	N 6104,16223 6005,16313 5906,16403 5700,16584 5596,16662
 Togostr.	N 5531,16734 5315,16936
 (Querweg durch die Dauerkolonie Togo)	NN 5894,16810 5700,16584
+#: XXX wird vermutlich umbenannt, neuer Name: "Bell-Platz"
+#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/426_2018_zu_ds_-1118_v_neue_strassennamen_im_afrikanischen_viertel.pdf
+#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/berlin-mitte-neue-strassennamen-fuers-afrikanische-viertel-gefunden/21163352.html
+#: next_check: 2018-07-01
 Nachtigalplatz	N 5533,16662 5568,16630 5596,16662 5666,16744 5639,16768 5593,16803 5561,16767 5531,16734 5496,16696 5533,16662
+#: XXX wird vermutlich umbenannt, neuer Name: "Maji-Maji-Allee"
+#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/426_2018_zu_ds_-1118_v_neue_strassennamen_im_afrikanischen_viertel.pdf
+#: next_check: 2018-07-01
 Petersallee	N 5426,16539 5533,16662
+#: XXX wird vermutlich umbenannt, neuer Name: "Anna-Mungunda-Allee"
+#: XXX_indoor: str_cont_ausnahme-Eintrag kann vermutlich entfernt werden
+#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/426_2018_zu_ds_-1118_v_neue_strassennamen_im_afrikanischen_viertel.pdf
+#: next_check: 2018-07-01
 Petersallee	N 5581,16708 5639,16768 5684,16815 5772,16919
 Usambarastr.	N 5526,16916 5565,16923 5684,16815
 Ghanastr.	N 5423,17076 5358,17132 5257,17046 5255,17007 5315,16936
