@@ -2506,6 +2506,8 @@ tragen (mehrere Treppen mit insgesamt 45 Stufen und Kinderwagenrampe)	0:90:-44 3
 tragen (Treppe, 18 Stufen)	0:25:-66 25902,-6006
 tragen (Treppe, 19 Stufen)	0:25:-194 25928,-5990
 tragen (Treppe)	0:120:-184 -14199,-707
+Drängelgitter	BNP:3:-175:trailer=10 16433,12626
+Drängelgitter	BNP:3:2:trailer=10 16428,12741
 Drängelgitter	BNP:3:4:trailer=10 7916,17576
 Drängelgitter	BNP:3:-2:trailer=10 22237,6211
 weites Drängelgitter	BNP:2:33:trailer=7 5628,23977
@@ -2682,7 +2684,7 @@ Tor	BNP:1:72:trailer=3 10476,14741
 Schranke, lichte Breite 120cm	BNP:1:-256:trailer=3 -7685,15092
 Poller, lichte Breite 100cm	BNP:1:-255:trailer=5 -7109,15286
 weites Drängelgitter	BNP:1:-237:trailer=5 -3437,14029
-Drängelgitter	BNP:3:-79:trailer=10 7928,10094
+Drängelgitter	BNP:2:-79:trailer=8 7928,10094
 enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark, falls Tor gesperrt ist	BNP:20:-19:trailer=no 10583,15208
 Tor zum Friedrich-Ludwig-Jahn-Sportpark, lichte Breite 85cm	BNP:5:-108:trailer=no 10781,15438
 Metallstange	BNP:3:-72:trailer=10 -5070,11199
@@ -2960,7 +2962,6 @@ Unterführung S-Bhf. Karlshorst: wegen Bauarbeiten gesperrt	2::inwork 18949,8437 
 S-Bahn-Unterführung: zurzeit gesperrt, hier wird in Zukunft ein Steg verlaufen	2::inwork 4117,22722 4176,22764
 Zum Großen Herzberg (Potsdam-Golm): Straße wird noch gebaut	2::inwork -18017,333 -18026,357 -18049,424
 Wartenbergstr.	1s:inwork 15423,11667 15337,11639 15328,11636 15300,11584
-Anni-Frid-Weg: Baustelle, gesperrt	2::inwork 17227,15054 17262,15056 17317,15059 17345,15061
 Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12677,-1536 -12685,-1449
 Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:inwork 18296,10027 18312,9985 18301,9946
 Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:inwork 18301,9946 18266,9853

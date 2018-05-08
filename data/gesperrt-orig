@@ -62,8 +62,8 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: XXX Einbahnstraßenregelung wird aufgehoben (nicht vor Ende 2017)
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5334
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/zukunft-planen/stadtumbau-west/2016-11-03_stu-suedkreuzinfoveranstalt-doku-alle-praes.pdf
-#: last_checked: 2017-07-24
-#: next_check: 2018-06-01
+#: last_checked: 2018-05-08
+#: check_frequency: 90d
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
 Alt-Mariendorf (Nord)	1 9732,3883 9831,3876 9953,3806
 Alt-Mariendorf (Süd)	1 9953,3806 9751,3769 9584,3713 9455,3671 9391,3651 9222,3602 9128,3580 8964,3539
@@ -2264,6 +2264,8 @@ tragen (Treppe)	0:120 -14199,-707
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter	BNP:3::trailer=10 16433,12626
+Drängelgitter	BNP:3::trailer=10 16428,12741
 # REMOVED (nicht mehr effektiv) --- Drängelgitter	BNP:3::trailer=10 12909,9085
 # REMOVED (nicht mehr effektiv) --- #: note: eine Hälfte bereits abgetragen (gesehen: 2018-02-25) --- Drängelgitter	BNP:3::trailer=10 12862,9273
 Drängelgitter	BNP:3::trailer=10 7916,17576
@@ -2492,7 +2494,8 @@ Schranke, lichte Breite 120cm	BNP:1::trailer=3 -7685,15092
 Poller, lichte Breite 100cm	BNP:1::trailer=5 -7109,15286
 # REMOVED (ex. nicht mehr?) --- Schranke	BNP:1::trailer=5 -3300,14039
 weites Drängelgitter	BNP:1::trailer=5 -3437,14029
-Drängelgitter	BNP:3::trailer=10 7928,10094
+#: note: etwas großzügiger geschnitten
+Drängelgitter	BNP:2::trailer=8 7928,10094
 # XXX_prog kann entfernt werden, sobald temp_blockings mit BNP umgehen kann, siehe Eintrag dort
 #: note: Tor war offen: 19. Februar 2016, abends gegen 19 Uhr
 enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark, falls Tor gesperrt ist	BNP:20::trailer=no 10583,15208
@@ -2963,13 +2966,7 @@ Zum Großen Herzberg (Potsdam-Golm): Straße wird noch gebaut	2::inwork -18017,333
 Wartenbergstr.	1s:q2:inwork 15423,11667 15337,11639 15328,11636 15300,11584
 # REMOVED --- Wartenbergstr.: Fahrbahn gesperrt, auf Gehweg ausweichen	q3:inwork 15337,11639 15328,11636 15300,11584
 # 
-#: next_check_id: ABBA-2018
-#: osm_watch: way id="497699542" version="7"
-#: XXX außerdem: wird es einen Sackgassenabschnitt geben? Hier oder am Björnweg?
-#: last_checked: 2018-03-18
-#: check_frequency: 45d
-#: priority: #C
-Anni-Frid-Weg: Baustelle, gesperrt	2::inwork 17227,15054 17262,15056 17317,15059 17345,15061
+# REMOVED --- #: next_check_id: ABBA-2018 --- #: osm_watch: way id="497699542" version="7" --- #: XXX außerdem: wird es einen Sackgassenabschnitt geben? Hier oder am Björnweg? --- #: last_checked: 2018-03-18 --- #: check_frequency: 45d --- #: priority: #C --- Anni-Frid-Weg: Baustelle, gesperrt	2::inwork 17227,15054 17262,15056 17317,15059 17345,15061
 # 
 #: by: osm
 #: by: https://www.potsdam.de/sites/default/files/documents/17554_amtsblatt_de2017_nr13_dsjs_korr2.pdf (Einziehung von Straßenland)
@@ -3096,7 +3093,7 @@ Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5518,12159 5627,12105 5
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_30_3365_3488_online.pdf (Benennung)
 #: XXX Qualität: Rampe betoniert, sonst eine Art Steinpflaster; ggfs. noch eine weitere Zufahrt zum Park einzeichnen
 #: osm_watch: way id="264361563" version="3"
-#: last_checked: 2018-04-16
+#: last_checked: 2018-05-08
 #: check_frequency: 21d
 Möckernkiez: Bauarbeiten	2::inwork 8778,9759 8710,9725 8729,9670 8596,9595 8565,9657
 # 

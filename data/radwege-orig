@@ -70,7 +70,7 @@ gemeinsamer Rad- und Gehweg	RW2; 12938,1348 12941,1256 12984,1011
 Radweg vorhanden, aber Benutzung verboten (Gehwegschäden)	RW0; 9022,10857 8941,10663 8926,10626
 	RW2;RW1 9521,10010 9448,10014
 schlechter Zustand des Radwegs, Wurzelschäden	RW1; 9827,10051 9521,10010
-	RW1; 9521,10010 9827,10051
+Verbundsteinpflaster, Wurzelschäden	RW1; 9521,10010 9827,10051
 	RW4;RW4 9416,10196 9409,10226 9404,10250
 	RW3;RW1 9229,8785 9229,8718
 Verbundsteinpflaster	RW1; 9229,8718 9233,8597 9238,8410
@@ -371,8 +371,8 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 6409,8026 6388,7999 6333,7927
 Busspur gilt Mo-Fr 7-18 Uhr	RW1; 6333,7927 6307,7893
 Busspur gilt Mo-Fr 7-18 Uhr	RW5; 6144,7677 6209,7765 6273,7849
 Busspur ist immer gültig	RW5; 6273,7849 6307,7893 6333,7927 6388,7999 6409,8026
-	RW1; 7193,7950 7147,8000 7073,8081
-für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr und 14-18 Uhr	RW1; 7073,8081 7001,8161 6935,8208 6807,8309 6687,8385 6575,8469 6523,8567 6477,8654 6460,8688
+Gehweg für Radfahrer frei	RW1; 7193,7950 7147,8000
+für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr und 14-18 Uhr	RW1; 7147,8000 7073,8081 7001,8161 6935,8208 6807,8309 6687,8385 6575,8469 6523,8567 6477,8654 6460,8688
 für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 6477,8654 6523,8567 6575,8469 6687,8385 6807,8309 6935,8208 7001,8161 7073,8081
 	RW2; 7073,8081 7147,8000
 	RW4; 7147,8000 7193,7950
@@ -1271,7 +1271,7 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4159&options=4
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4159
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/bezirksamt/beschluesse/2017/05-09/0363_xix-fahrradfuehrung-naumannstrasse-einrichten.pdf
-#: last_checked: 2018-01-21
+#: last_checked: 2018-05-08
 #: check_frequency: 120d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
 	RW2;RW4 7717,7879 7718,7820 7696,7771
@@ -1662,7 +1662,7 @@ Verbundsteinpflaster	RW1;RW1 14836,12826 14828,12989 14741,13081 14476,13181 142
 #: confirmed_by: ^^^
 #: by: ^^^
 Busspur ist immer gültig	RW5; 16246,12177 16207,11937
-	RW1;RW1 16860,12861 16376,12874 16312,12876 16242,12878 16197,12880 16146,12881 16073,12883 15950,12886
+	RW1;RW1 16860,12861 16484,12871 16384,12874 16376,12874 16312,12876 16242,12878 16197,12880 16146,12881 16073,12883 15950,12886
 	RW4;RW4 16866,13532 16863,13138
 	RW3;RW4 16863,13138 16865,13000 16860,12861
 	RW6;RW6 12668,8077 12446,8032
@@ -1741,7 +1741,7 @@ Berliner Gehwegplatten mit einigen leichten Unebenheiten, ca. 1,50m breit	RW2;RW
 #: note: Wobei es so aussieht, als ob das Zusatzschild einfach nur fehlt
 #: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5;
 #: by: http://www.dafmap.de/d/berlin.html?id=3134&mt=0&zoom=16 (Projektabschluss: 2017-09-01)
-#: last_checked: 2018-04-20
+#: last_checked: 2018-05-08
 #: check_frequency: 14d
 	RW4; 11451,13301 11369,13174
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 11451,13301 11486,13350
@@ -2134,7 +2134,7 @@ Gehwegplatten	RW2; 18057,14549 18183,14573
 Gehweg für Radfahrer frei	RW1; 19013,14905 18798,14808 18558,14680 18410,14614 18365,14607 18183,14573
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 18183,14573 18057,14549
 neu asphaltiert, mit einigen Verbundsteinpflaster-/Gehwegplattenabschnitten	RW2; 18057,14549 17848,14523 17533,14484 17254,14451
-Beton, mit einigen Verbundsteinpflaster-/Gehwegplattenabschnitten	RW2; 17254,14451 17055,14432 16852,14412
+neu asphaltiert, aber etwas wellig	RW2; 17254,14451 17055,14432 16852,14412
 	RW2; 19013,14905 19156,14953 19350,14997
 	RW1; 16512,11894 16413,11906 16368,11912
 	RW4; 16962,11833 17037,11820 17121,11806
@@ -5120,3 +5120,8 @@ Tempo 10	RW6;RW6 20348,7634 20459,7445 20501,7472 20540,7532
 	RW3;RW3 22062,773 22007,711
 Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW6;RW6 -7831,-2230 -7859,-2304
+#: note: nicht-offizielles Spielstraßenschild
+	RW6;RW6 17221,15181 17254,15183 17310,15186 17336,15187
+	RW6;RW6 17254,15183 17262,15056
+	RW6;RW6 17310,15186 17317,15059
+	RW6;RW6 17227,15054 17262,15056 17317,15059 17345,15061

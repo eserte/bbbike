@@ -4226,21 +4226,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: osm_watch: way id="548612558" version="1"
-#: last_checked: 2018-04-30
-#: check_frequency: 14d
-# REMOVED ---	q3::inwork; 7201,8870 7101,9027
-# RE;OVED ---	q3::inwork; 7101,9027 7035,9161
-	q4::inwork; 7035,9161 7012,9222 7001,9291
-',
-         'from' => undef,
-         'id' => 2860,
-         'text' => 'Akazienstr.: Einbahnstraßenregelung',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4424,14 +4410,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX bis wann ist die Durchfahrt gesperrt?
+#: note: am 2018-05-08 gegen 19:15 provisorisch offen
 #: source_id: 2147342009
-#: last_checked: 2018-05-02
+#: last_checked: 2018-05-08
 #: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
 ',
          'from' => 1523311200,
          'id' => 2919,
-         'text' => 'Wiesenweg: wegen Brückenarbeiten zwischen Gürtelstr. und Kietzer Weg komplett gesperrt, auch für Fußgänger, ab 11.04.2018, 7 Uhr',
+         'text' => 'Wiesenweg: kann insbesondere während der Arbeitszeiten wegen Brückenarbeiten zwischen Gürtelstr. und Kietzer Weg komplett gesperrt sein, auch für Fußgänger, ab 11.04.2018, 7 Uhr',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -4490,7 +4477,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '# XXX_prog: eigentlich q3-
-#: last_checked: 2018-04-30
+#: last_checked: 2018-05-08
 	q3::inwork 7136,9223 7012,9222
 ',
          'from' => undef,

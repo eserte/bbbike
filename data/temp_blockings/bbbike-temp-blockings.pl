@@ -26033,14 +26033,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1525802518, # Bauarbeiten beendet --- undef, # XXX
        text  => 'Akazienstr.: Einbahnstraßenregelung',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: osm_watch: way id="548612558" version="1"
-#: last_checked: 2018-04-30
-#: check_frequency: 14d
+# REMOVED --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: osm_watch: way id="548612558" version="1" --- #: last_checked: 2018-04-30 -- #: check_frequency: 14d
 # REMOVED ---	q3::inwork; 7201,8870 7101,9027
 # RE;OVED ---	q3::inwork; 7101,9027 7035,9161
 	q4::inwork; 7035,9161 7012,9222 7001,9291
@@ -26702,12 +26699,13 @@ EOF
      },
      { from  => 1523311200, # 2018-04-10 00:00
        until => undef, # XXX
-       text  => 'Wiesenweg: wegen Brückenarbeiten zwischen Gürtelstr. und Kietzer Weg komplett gesperrt, auch für Fußgänger, ab 11.04.2018, 7 Uhr',
+       text  => 'Wiesenweg: kann insbesondere während der Arbeitszeiten wegen Brückenarbeiten zwischen Gürtelstr. und Kietzer Weg komplett gesperrt sein, auch für Fußgänger, ab 11.04.2018, 7 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX bis wann ist die Durchfahrt gesperrt?
+#: note: am 2018-05-08 gegen 19:15 provisorisch offen
 #: source_id: 2147342009
-#: last_checked: 2018-05-02
+#: last_checked: 2018-05-08
 #: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
 EOF
@@ -26879,7 +26877,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # XXX_prog: eigentlich q3-
-#: last_checked: 2018-04-30
+#: last_checked: 2018-05-08
 	q3::inwork 7136,9223 7012,9222
 EOF
      },
