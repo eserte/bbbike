@@ -2889,6 +2889,20 @@ Drängelgitter	BNP:3::trailer=10 25081,-9433
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX hat die "Einziehung von Straßenland" hier irgendwelche Konsequenzen?
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/54re.pdf/file?y=2013
+#: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4709
+#: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036976863406/976863406/00098274/74-Anlagen/01/DRS0610VK.pdf
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4892 (Neueinleitung des Planaufstellungsverfahrens)
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036406312569/406312569/00102389/89-Anlagen/01/DRS0792VK.pdf
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/45re.pdf/file?y=2015
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.401555.php
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/buergerbeteiligung/xv-30b-ve-353886.php
+#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_56_6505_6588_online.pdf (Straßenlandeinziehung)
+#: osm_watch: way id="86812767" version="4"
+#: last_checked: 2018-05-09
+Fanny-Zobel-Str.: wegen Bauarbeiten gesperrt, vielleicht sogar dauerhaft eingezogen	2::inwork 13975,10187 14049,10164
+# 
 #: source_id: 2147342570
 #: next_check: 2018-06-01
 #: valid: -20180601
@@ -3023,9 +3037,13 @@ Zufahrt Parkhaus: Abrissarbeiten, Straße komplett gesperrt	2::inwork 8367,10745 
 #: next_check: 2018-09-01
 Merlitzstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19661,3421 19524,3286
 # 
-#: last_checked: 2018-04-20
+#: last_checked: 2018-05-09
 #: check_frequency: 21d
-Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9108,11961 9138,11872
+Mauerstr. und Jägerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9195,11972 9108,11961 9076,12054
+# 
+#: last_checked: 2018-05-09
+#: check_frequency: 21d
+Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,12156
 # 
 # REMOVED --- #: last_checked: 2017-08-12 --- Charlottenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9509,12117 9496,12215
 # 
@@ -3201,7 +3219,7 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
 #: osm_watch: way id="441442656" version="2"
 #: source_id: 2147341188
-#: last_checked: 2018-04-30 vvv
+#: last_checked: 2018-05-09 vvv
 #: check_frequency: 30d vvv
 Nordhafenpark West: noch Bauarbeiten, gesperrt	2::inwork 7551,14464 7426,14539
 Nordhafenpark West: unter der Brücke gesperrt	2::inwork 7636,14414 7612,14449 7551,14464
@@ -3272,7 +3290,7 @@ E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgäng
 # REMOVED --- #: XXX Wie wird die Qualität danach sein? Wird man zum Hiltrud-Dudek-Weg durchfahren können? Wird die Straße verkehrsberuhigt sein? --- #: osm_watch: way id="151742436" version="5" --- #: XXX ad osm_watch: id referenziert die Jeanette-Wolff-Str., nur ein "proxy" für den neu zu bauenden Weg --- #: last_checked: 2015-04-10 --- #: check_frequency: 100d --- Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17647,-386 17654,-397
 # 
 #: next_check_id: EUROPACITY-2015 vvv
-#: last_checked: 2018-04-30 vvv
+#: last_checked: 2018-05-09 vvv
 #: osm_watch: way id="237704729" version="8"
 #: check_frequency: 45d
 Lydia-Rabinowitsch-Str.: noch gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924
@@ -3391,7 +3409,7 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 #: by: http://www.berliner-woche.de/wedding/verkehr/senat-lehnt-fussgaengerueberweg-ab-radweg-soll-unter-der-fennbruecke-gebaut-werden-d131062.html (ggfs. auch Unterführung unter der Fennbrücke)
 # REMOVED --- osm_watch: way id="183406331" version="3"
 #: osm_watch: way id="220646748" version="5"
-#: last_checked: 2018-04-30
+#: last_checked: 2018-05-09
 #: check_frequency: 150d
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
@@ -3465,7 +3483,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2018-03-10
+#: last_checked: 2018-05-09
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

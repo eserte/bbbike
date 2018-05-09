@@ -4396,18 +4396,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.berliner-woche.de/wedding/bauen/doppelter-bruch-am-ploetzensee-uferweg-sackte-ein-d136422.html
-#: last_checked: 2017-12-26
-	q3::inwork 5306,15387 5134,15565
-',
-         'from' => undef,
-         'id' => 2918,
-         'source_id' => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.643712.php',
-         'text' => 'Uferweg Plötzensee: wegen Unterspülung gesperrt, Umfahrung über enge Pfade möglich',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: XXX bis wann ist die Durchfahrt gesperrt?
 #: note: am 2018-05-08 gegen 19:15 provisorisch offen
@@ -4426,7 +4415,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-04-04 vvv
+#: last_checked: 2018-05-09 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4542,11 +4531,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: source_id: 2147342390
-	q4::inwork; 8901,12008 8861,12125 9054,12154
+# REMOVED (hier nicht mehr) ---	q4::inwork; 8901,12008 8861,12125
+	q4::inwork; 8861,12125 9054,12154
 ',
          'from' => 1522864912,
          'id' => 2947,
-         'text' => 'Wilhelmstr. und Behrenstr.: Sperrung Richtung Norden zwischen Französische Str. und Behrenstr. sowie Richtung Osten zwischen Wilhelmstr. und Mauerstr., bis Mitte Mai 2018',
+         'text' => 'Behrenstr.: Sperrung Richtung Osten zwischen Wilhelmstr. und Mauerstr., bis Mitte Mai 2018',
          'type' => 'handicap',
          'until' => 1526407200
        },

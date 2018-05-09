@@ -2652,7 +2652,7 @@ Koppenstr.: Bauarbeiten, Fahrbahn Richtung R¸dersdorfer Str. gesperrt: gegen die
 Wartenbergstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2:inwork::igndisp; 15423,11667 15337,11639 15328,11636 15300,11584
 Friedenshorster Str.: Einbahnstraﬂe wegen Bauarbeiten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2:inwork::igndisp; 18296,10027 18312,9985 18301,9946
 Friedenshorster Str.: Einbahnstraﬂe wegen Bauarbeiten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 18301,9946 18266,9853
-Mauerstr.: Bauarbeiten, Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 9108,11961 9138,11872
+Mauerstr. und J‰gerstr.: Bauarbeiten, Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 9195,11972 9108,11961 9076,12054
 Gutenbergstr.: Einbahnstraﬂe wegen Bauarbeiten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 5317,12242 5518,12159
 Wegelystr.: Einbahnstraﬂe wegen Bauarbeiten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 5518,12159 5627,12105 5658,12082 5712,12033 5775,11975
 Schinkelplatz: Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
@@ -2666,6 +2666,7 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraﬂenregelung: gegen die Einbahnstraﬂen
 (Los-Angeles-Platz): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 5669,10704 5822,10609
 Seekorso: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; -8376,6579 -8354,6590
 Seekorso: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; -8339,6578 -8364,6562
+Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt: gesperrt, ggfs. schieben	q4:inwork::igndisp 9076,12054 9064,12156
 Kreuzung Sewanstr./Am Tierpark	q1::igndisp; 18631,10167 18647,10172
 Am Tierpark, linker Gehweg	q1::igndisp; 18647,10172 18715,10003
 Treskowallee, linker Gehweg	q1::igndisp; 18715,10003 18748,9922

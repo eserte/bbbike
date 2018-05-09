@@ -26687,7 +26687,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1525892281, # undef, # XXX
        text  => 'Uferweg Plötzensee: wegen Unterspülung gesperrt, Umfahrung über enge Pfade möglich',
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.643712.php',
@@ -26738,7 +26738,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-04-04 vvv
+#: last_checked: 2018-05-09 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27003,11 +27003,12 @@ EOF
      },
      { from  => 1522864912, # 2018-04-04 20:01
        until => $isodate2epoch->("2018-05-15 20:00:00"), # 1525449600, # 2018-05-04 18:00
-       text  => 'Wilhelmstr. und Behrenstr.: Sperrung Richtung Norden zwischen Französische Str. und Behrenstr. sowie Richtung Osten zwischen Wilhelmstr. und Mauerstr., bis Mitte Mai 2018',
+       text  => 'Behrenstr.: Sperrung Richtung Osten zwischen Wilhelmstr. und Mauerstr., bis Mitte Mai 2018',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147342390
-	q4::inwork; 8901,12008 8861,12125 9054,12154
+# REMOVED (hier nicht mehr) ---	q4::inwork; 8901,12008 8861,12125
+	q4::inwork; 8861,12125 9054,12154
 EOF
      },
      { from  => 1523631600, # 2018-04-13 17:00
