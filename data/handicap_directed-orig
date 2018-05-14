@@ -65,11 +65,12 @@ B2/B158	DH:t=120 50386,68158 49907,67684 49908,67683
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.698233.php
 #: note: Zykluszeit von 70s angenommen
 #: source_id: 2147340164
-#: osm_watch: way id="51780241" version="4" 
-#: next_check: 2018-05-07 vvv
+# REMOVED (Baustelle nun auf der anderen Seite) --- #: osm_watch: way id="51780241" version="5" 
+#: osm_watch: way id="27383094" version="5"
+#: next_check: 2019-01-01 vvv
 #: priority: #B vvv
-Zehlendorfer Kreuz: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:len=40:t=20 -2912,1829 -3011,1761 -3113,1692
-Zehlendorfer Kreuz: Radfahrer müssen auf die rechte Seite zurück wechseln	DH:len=30:t=20 -3890,1249 -4003,1234 -4497,1165
+Zehlendorfer Kreuz: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:len=40:t=20 -4497,1165 -4003,1234 -3890,1249
+Zehlendorfer Kreuz: Radfahrer müssen auf die rechte Seite zurück wechseln	DH:len=30:t=20 -3113,1692 -3011,1761 -2912,1829
 #: priority ^^^
 #: next_check ^^^
 # 
@@ -162,7 +163,7 @@ Zeppelinstr. -> Edisonstr.: Fußgängerampel	DH:len=20:tl 18041,6924 17919,6968 17
 # 
 #: next_check_id: HOLZMARKT-2017
 #: XXX hier wird noch eine zusätzliche Ampel entstehen
-#: last_checked: 2018-05-08 vvv
+#: last_checked: 2018-05-14 vvv
 #: next_check: 2018-06-30 vvv
 Schillingstr. -> Holzmarktstr.: Ampel	DH:len=90:tl 11452,12318 11388,12202 11513,12138
 Holzmarktstr. -> Schillingstr.: linker Gehweg	DH:h=q2,45 11347,12223 11388,12202 11452,12318

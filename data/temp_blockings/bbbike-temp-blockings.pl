@@ -25659,7 +25659,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-05-02 vvv
+#: last_checked: 2018-05-10 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -26703,9 +26703,9 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX bis wann ist die Durchfahrt gesperrt?
-#: note: am 2018-05-08 gegen 19:15 provisorisch offen
+#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30
 #: source_id: 2147342009
-#: last_checked: 2018-05-08
+#: last_checked: 2018-05-14
 #: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
 EOF
@@ -27120,6 +27120,17 @@ EOF
 	q4 14719,9419 14774,9437 14809,9466
 	q4 14588,9473 14556,9581
 	q4 14531,9244 14485,9271 14398,9373
+EOF
+     },
+     { from  => 1526323594, # 2018-05-14 20:46
+       until => $isodate2epoch->("2018-09-14 18:00:00"), # 1537048799, # 2018-09-15 23:59
+       text  => 'Scheffelstr. und Eldenaer Str.: Bauarbeiten Richtung Ebertystr. zwischen Möllendorffstr. und Liebigstr., Ausweichen auf engen Gehweg erlaubt, bis Mitte September 2018',
+       type  => 'handicap',
+       source_id => '2147342574',
+       data  => <<EOF,
+#: note: laut fritz bis 14.09.2018
+#: XXX_prog: eigentlich q3+
+	q3::inwork; 15516,12838 15367,12815 15357,12813 15233,12829 15098,12849 15074,12850 15010,12855 14940,12843 14906,12837 14836,12826 14750,12812 14661,12798 14556,12781 14435,12761 14355,12752 14096,12827
 EOF
      },
     );

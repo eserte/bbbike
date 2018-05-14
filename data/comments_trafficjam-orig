@@ -17,8 +17,10 @@
 #: tempex: rush_hour_evening
 Möckernstr.	Jam; 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8778,9759 8777,9601
 # 
-#: tempex: T06-T22
+#: tempex: T06-T22 vvv
 Leipziger Str. Richtung Westen	Jam; 9569,11631 9444,11616 9268,11590 9058,11564
+Leipziger Str. Richtun Osten	Jam; 9268,11590 9444,11616 9569,11631
+#: tempex ^^^
 # REMOVED (Radspuren existieren) --- Leipziger Str. Richtung Westen	Jam; 9058,11564 8834,11536 8740,11524
 # REMOVED (Radspuren existieren) --- Leipziger Str. Richtung Osten	Jam; 8740,11524 8834,11536 9058,11564
 # 

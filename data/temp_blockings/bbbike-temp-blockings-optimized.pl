@@ -828,27 +828,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::temp 7101,9027 7035,9161 7012,9222 7001,9291
-	2::temp 6945,9142 7035,9161
-',
-         'from' => 1525989600,
-         'id' => 728,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              24,
-                              'months',
-                              4
-                            ]
-                          ],
-         'source_id' => 'http://www.volksfeste-in-deutschland.de/primavera-fruehling-auf-der-akazienstrasse-in-berlin-schoeneberg.html',
-         'text' => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (12.5.2018 und 13.5.2018)',
-         'type' => 'gesperrt',
-         'until' => 1526248799
-       },
+       undef,
        undef,
        undef,
        {
@@ -1105,26 +1085,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::temp 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
-',
-         'from' => 1525989600,
-         'id' => 964,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              7,
-                              'months',
-                              5
-                            ]
-                          ],
-         'source_id' => 'http://www.laubinger.de/termine/26-boelschefest-friedrichshagen/',
-         'text' => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (12. und 13. Mai 2018)',
-         'type' => 'gesperrt',
-         'until' => 1526248799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4163,7 +4124,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-05-02 vvv
+#: last_checked: 2018-05-10 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -4399,9 +4360,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX bis wann ist die Durchfahrt gesperrt?
-#: note: am 2018-05-08 gegen 19:15 provisorisch offen
+#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30
 #: source_id: 2147342009
-#: last_checked: 2018-05-08
+#: last_checked: 2018-05-14
 #: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
 ',
@@ -4603,6 +4564,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Treptower Park: Radfahren im Treptower Park offiziell verboten',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: note: laut fritz bis 14.09.2018
+#: XXX_prog: eigentlich q3+
+	q3::inwork; 15516,12838 15367,12815 15357,12813 15233,12829 15098,12849 15074,12850 15010,12855 14940,12843 14906,12837 14836,12826 14750,12812 14661,12798 14556,12781 14435,12761 14355,12752 14096,12827
+',
+         'from' => 1526323594,
+         'id' => 2954,
+         'source_id' => '2147342574',
+         'text' => 'Scheffelstr. und Eldenaer Str.: Bauarbeiten Richtung Ebertystr. zwischen Möllendorffstr. und Liebigstr., Ausweichen auf engen Gehweg erlaubt, bis Mitte September 2018',
+         'type' => 'handicap',
+         'until' => 1536940800
        }
      
 );

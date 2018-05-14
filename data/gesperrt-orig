@@ -2904,6 +2904,7 @@ Drängelgitter	BNP:3::trailer=10 25081,-9433
 Fanny-Zobel-Str.: wegen Bauarbeiten gesperrt, vielleicht sogar dauerhaft eingezogen	2::inwork 13975,10187 14049,10164
 # 
 #: source_id: 2147342570
+#: last_checked: 2018-05-14
 #: next_check: 2018-06-01
 #: valid: -20180601
 #: priority: #A
@@ -2975,8 +2976,9 @@ Zum Großen Herzberg (Potsdam-Golm): Straße wird noch gebaut	2::inwork -18017,333
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/express-zum-ber-fledermaeuse-stoppen-bauarbeiten-fuer-ringbahnbruecke-29488832 (Abriss im April 2018)
 #: XXX wird aufgehoben, sobald das einsturzgefährdete Haus abgerissen wird
 #: osm_watch: way id="488814363" version="2"
-#: last_checked: 2018-04-09
+#: last_checked: 2018-05-14
 #: check_frequency: 30d
+#: priority: #C
 Wartenbergstr.	1s:q2:inwork 15423,11667 15337,11639 15328,11636 15300,11584
 # REMOVED --- Wartenbergstr.: Fahrbahn gesperrt, auf Gehweg ausweichen	q3:inwork 15337,11639 15328,11636 15300,11584
 # 
@@ -3190,7 +3192,8 @@ Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13176,9302 13098,920
 #: osm_watch: way id="42091230" version="24"
 #: last_checked: 2018-04-30 vvv
 # REMOVED (temporary) --- #: next_check: 2017-12-31 (vermutlich wird nur auf die neue Fahrbahnhälfte gewechselt werden) vvv
-#: next_check: 2018-05-15 vvv
+#: next_check: 2018-05-14 vvv
+#: priority: #A vvv
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 8732,14098 8654,14194
 Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q4:inwork 8654,14194 8607,14253 8570,14299 8442,14456
 #
@@ -3199,6 +3202,7 @@ Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	3 8570,14299
 Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	3 8654,14194 8607,14253 8776,14364
 Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	3 8776,14364 8607,14253 8654,14194
 Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	3 8776,14364 8607,14253 8570,14299
+#: priority ^^^
 #: next_check ^^^
 #: last_checked ^^^
 #: source_id ^^^
@@ -3210,14 +3214,14 @@ Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	3 8776,14364
 # REMOVED (nur der östliche Abschnitt ist geblieben, aber relativ breit und relativ wenig Verkehr) --- #: XXX Bauarbeiten der Berliner Wasserbetriebe bis Dezember 2017 --- #: last_checked: 2017-07-23 --- #: next_check: 2017-12-01 --- #: valid: -20171231 --- Türrschmidtstr.: Bauarbeiten, Einbahnstraße	1s:q3 15541,10892 15649,10922 15756,10966
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3853&mt=0&zoom=16
-#: last_checked: 2018-04-20
+#: last_checked: 2018-05-14
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8969,11814
 # 
 #: next_check_id: NORDHAFENPARKWEST-2018
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: osm_watch: way id="441442656" version="2"
+#: osm_watch: way id="441442656" version="3"
 #: source_id: 2147341188
 #: last_checked: 2018-05-09 vvv
 #: check_frequency: 30d vvv
@@ -3483,7 +3487,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2018-05-09
+#: last_checked: 2018-05-13
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

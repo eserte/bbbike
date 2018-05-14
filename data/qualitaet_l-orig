@@ -2288,8 +2288,8 @@ Am Neuen Markt: teils schlechtes Kopfsteinpflaster	Q3 -12870,-1493 -12865,-1462 
 Siefertstr.: teils schlechtes Kopfsteinpflaster	Q3 -12913,-1451 -12975,-1363 -12976,-1356
 (Maulbeerallee - Drachenhaus): Asphalt	Q1 -15166,-622 -15270,-409
 (Maulbeerallee - Drachenhaus): schlechtes Kopfsteinpflaster	Q3 -15270,-409 -15293,-404 -15330,-414
-Trautmannstr. (Köthen): schlechtes Kopfsteinpflaster	Q3 -85679,-75213 -85747,-75042
-Trautmannstr. (Köthen): Asphalt	Q0 -85747,-75042 -85798,-74927 -85847,-74803
+Trautmannstr. (Köthen): Asphalt	Q0 -85679,-75213 -85753,-75037 -85798,-74927 -85847,-74803 -85773,-74706
+Sebastian-Bach-Str. (Köthen): gutes Kopfsteinpflaster	Q1- -85753,-75037 -85669,-75008 -85592,-74984 -85471,-74927
 Brunnenstr. (Köthen): Asphalt	Q0 -85635,-75173 -85519,-75117 -85386,-75079 -85278,-75071
 Wallstr. (Köthen): Kopfsteinpflaster	Q2 -85248,-74234 -85326,-74308 -85280,-74524 -85265,-74683
 Bahnstr. (Michendorf): Asphalt	Q0 -14364,-10176 -14439,-10186 -14456,-10266 -14543,-10366 -14605,-10440 -14705,-10543 -14831,-10652 -15012,-10820 -15137,-10935 -15182,-10981
@@ -2315,7 +2315,7 @@ Graf-von-Schwerin-Str.: Asphalt	Q0 -13133,1698 -13087,1696
 Friedrich-Klausing-Str.: Kopfsteinpflaster	Q1- -13084,1679 -12960,1684
 (Friedrich-Klausing-Str. - Vogelweide): Gehwegpflasterung	Q0- -12960,1684 -12928,1686
 (Bärteichpromenade - Goethestr.): unbefestigter Weg	Q2+ -85723,-74649 -85668,-74729
-Friedhofstr. (Köthen): gutes Kopfsteinpflaster	Q1 -84798,-74803 -84931,-74887 -85210,-74925
+Friedhofstr. (Köthen): Verbundsteinpflasterradwege, Fahrbahn asphaltiert	Q1 -84798,-74803 -84931,-74887 -85210,-74925
 Ritterstr. (Aken): Asphalt	Q0 -80218,-62918 -80290,-63189
 Ritterstr. (Aken): Kopfsteinpflaster	Q2 -80290,-63189 -80339,-63468
 Ritterstr. (Aken): Asphalt	Q0 -80339,-63468 -80364,-63559
@@ -2324,7 +2324,7 @@ Aken - Micheln: Asphalt	Q0 -82075,-64262 -82165,-64698 -82260,-64809 -82987,-652
 Micheln - Köthen: mäßiges bis schlechtes Kopfsteinpflaster, Bankette auf der östlichen Seite ist vorhanden	Q3+ -85307,-68008 -85300,-68187 -85323,-68333 -85437,-69012 -85428,-69501 -85408,-69606
 Micheln - Köthen: Asphalt	Q0 -85408,-69606 -85381,-69741 -85297,-69819 -85288,-69871 -85387,-70381 -85443,-71112 -85069,-71150 -85018,-71156 -84912,-71281 -84651,-71297
 Elsdorf - Köthen: Asphalt	Q0 -84651,-71297 -84650,-71364 -84656,-72200 -84636,-72443 -84578,-72801
-Goethestr.: Asphalt	Q0 -85625,-74762 -85668,-74729 -85735,-74788 -85710,-74891 -85667,-75014
+Goethestr.: Asphalt	Q0 -85625,-74762 -85668,-74729 -85735,-74788 -85710,-74891 -85669,-75008
 Alte Brücke (Zerbst): Gehwegplatten	Q0- -78035,-50401 -77993,-50699
 Alte Brücke (Zerbst): Kopfsteinpflaster	Q2 -77993,-50699 -77986,-50770
 Zerbst - Aken: Asphalt	Q0 -77986,-50770 -77863,-51124 -77985,-51303 -77961,-51589
@@ -4284,6 +4284,12 @@ Käthe-Kollwitz-Str. (Schulzendorf): Verbundsteinpflaster	Q1+ 24139,-5351 24168,-
 Rosa-Luxemburg-Str. (Schulzendorf): Kopfsteinpflaster	Q2- 23693,-5368 23689,-5302 23744,-5244 24138,-4941 24449,-4633 24647,-4320
 Rosa-Luxemburg-Str. (Schulzendorf): Asphalt	Q0 24647,-4320 24669,-4253
 Rosa-Luxemburg-Str. (Schulzendorf): Kopfsteinpflaster	Q2- 24669,-4253 24662,-4197 24612,-4119
+zur Burg Rabenstein: Asphalt	Q0 -44728,-42867 -44636,-42824 -44398,-42750 -44313,-42672 -44297,-42577 -44330,-42457 -44361,-42395
+zur Burg Rabenstein: Verbundsteinpflaster	Q1 -44361,-42395 -44419,-42349
+zur Burg Rabenstein: Kopfsteinpflaster	Q3 -44419,-42349 -44458,-42329 -44561,-42315 -44595,-42288
+Marktplatz (Köthen): Kopfsteinpflaster	Q2 -85057,-74512 -85045,-74561 -85108,-74597 -85125,-74513 -85057,-74512
+Marktstr. (Köthen): Kopfsteinpflaster	Q2 -84970,-74490 -85057,-74512
+Schloßstr. (Köthen): Kopfsteinpflaster	Q2 -84970,-74348 -84970,-74490
 ######################### User Contributions #################################
 #: by: mopedfahrerrr:
 #: confirmed_by: anonymous:
@@ -5151,8 +5157,9 @@ Friedrich-Kunert-Weg: Verbundsteinpflaster	Q0- -13781,1772 -13760,1765 -13714,17
 Theodor-Echtermeyer-Str.: Verbundsteinpflaster	Q0- -13760,1765 -13796,1652 -13824,1561 -13879,1469
 Fintelmannstr.: Verbundsteinpflaster	Q0- -13714,1747 -13748,1636 -13779,1544 -13838,1445
 Gustav-Meyer-Str.: Verbundsteinpflaster	Q0- -13879,1577 -13824,1561 -13779,1544
-#: XXX Stand 2002; wie weit Richtung Westen reicht das Kopfsteinpflaster?
-Chörau: Kopfsteinpflaster	Q2 -75396,-67202 -75756,-67206 -75893,-67229
+Chörau: Kopfsteinpflaster	Q2; -75396,-67202 -75756,-67206 -75799,-67214
+Chörau: Kopfsteinpflaster mit Asphaltstreifen	Q1+; -75799,-67214 -75756,-67206 -75396,-67202
+Sachsenspiegel (Reppichau): Verbundsteinpflaster	Q1 -77888,-67741 -77888,-67838 -77934,-67860 -78138,-67913 -78204,-67893
 #: by: osm
 Räbel - Werben: Kopfsteinpflaster	Q2 -83756,46087 -83862,46069 -84055,46106 -84191,46305 -85233,47392 -86174,48098 -86648,48361 -86947,48807
 #: by: osm (teilweise) vvv

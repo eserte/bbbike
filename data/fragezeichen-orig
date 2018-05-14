@@ -154,7 +154,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: source_id: 2147340970
 #: source_id: LMS-BR_r_LMS-BR_90638
 #: source_id: 2147341904
-#: last_checked: 2018-05-09 vvv
+#: last_checked: 2018-05-14 vvv
 #: check_frequency: 60d vvv
 # REMOVED (fertig) --- Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322
 Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
@@ -925,7 +925,7 @@ Wallensteinstr.: Asphaltstreifen geplant	?::projected 17549,9529 17456,9594 1742
 Falkenberger Chaussee: Verbesserung -> Radspuren oder Asphaltierung des Radwegs?	?::projected; 17744,18016 17843,18078
 # 
 #: osm_watch: way id="40520565" version="28"
-#: osm_watch: way id="51317007" version="22"
+#: osm_watch: way id="51317007" version="23"
 #: last_checked: 2017-08-27
 Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 16837,17440 16578,17285 16460,17214 16352,17150 16318,17128
 # 
@@ -1185,9 +1185,8 @@ Kniprodestr.: werden die Busspuren zu Radspuren umgewandelt?	?::projected 12640,
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
-#: XXX NEW	Eldenaer Str. (Friedrichshain) Richtung Ebertystr. zwischen Scheffelstr. und Liebigstr. (Berlin)  Gültig ab: 08.05.2018 07:54  Gleisbauarbeiten, Fahrtrichtung gesperrt (bis Mitte 09/18)	2147342574	
-#: XXX laut fritz bis 14.09.2018
-Eldenaer Str.: Beeinträchtigungen für den Radverkehr?	?::inwork; 15098,12849 15074,12850 15010,12855 14940,12843 14906,12837 14836,12826 14750,12812 14661,12798 14556,12781 14435,12761 14355,12752 14096,12827
+# REMOVED (kaum Einschränkungen für Radfahrer; offizielle Radwegführung) --- #: XXX NEW	Michaelkirchstraße (Mitte / Friedrichshain) in beiden Richtungen zwischen Holzmarktstraße und Köpenicker Straße (Berlin)  Gültig ab: 08.05.2018 09:00  Baustelle, Vollsperrung (bis Ende 05/18)	2147342594	--- #: XXX laut fritz bis 31.05.2018 --- Michaelkirchstr.: Beeinträchtigungen für den Radverkehr?	?::inwork 11764,12001 11716,11914 11676,11839 11569,11587
+# REMOVED (-> temp blockings) --- #: XXX NEW	Eldenaer Str. (Friedrichshain) Richtung Ebertystr. zwischen Scheffelstr. und Liebigstr. (Berlin)  Gültig ab: 08.05.2018 07:54  Gleisbauarbeiten, Fahrtrichtung gesperrt (bis Mitte 09/18)	2147342574	--- #: XXX laut fritz bis 14.09.2018 --- Eldenaer Str.: Beeinträchtigungen für den Radverkehr?	?::inwork; 15098,12849 15074,12850 15010,12855 14940,12843 14906,12837 14836,12826 14750,12812 14661,12798 14556,12781 14435,12761 14355,12752 14096,12827
 # 
 # REMOVED (hier ist nichts) --- #: by: fritz --- #: XXX bis zum 02.05.2018 --- Bornitzstr.: Einschränkungen auch für Radfahrer?	?::inwork 15747,12880 15950,12886
 # REMOVED (hier ist nichts) --- #: by: fritz --- #: XXX bis zum 13.05.2018 --- Gotlindestr.: Sperrung auch für Radfahrer relevant?	?::inwork 15947,12626 16000,12625
@@ -1228,7 +1227,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/holzmarktstrasse/download/LP_01.pdf
 #: source_id: 2147340618
 #: source_id: LMS-BR_r_LMS-BR_81616
-#: last_checked: 2018-05-08
+#: last_checked: 2018-05-14
 #: next_check: 2018-06-30 (laut fritz)
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 # 
@@ -1265,17 +1264,18 @@ Baumarkt (?) wird gebaut: wird es eine Durchfahrmöglichkeit geben?	?::inwork 170
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_06_0773_0896_online.pdf (Einziehung von Straßenland)
 #: by: https://gruen-berlin.de/kulturforum
 #: XXX Bebauungsplan 1-35a (Kulturforum)
-#: last_checked: 2018-04-27
-#: next_check: 2018-05-15
+#: last_checked: 2018-05-14
+#: check_frequency: 60d
 Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::projected 8083,11381 7970,11441 7954,11399 7965,11380 7934,11275
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php
 #: XXX außerdem: voraussichtlich ab April 2018 Komplettsperrung
-#: last_checked: 2018-04-27
-#: check_frequency: 14d
+#: last_checked: 2018-05-14
+#: check_frequency: 7d
+#: priority: #A
 Herbert-von-Karajan-Str.: gibt es Einschränkungen für Radfahrer während der Bauarbeiten?	? 8005,11627 7965,11467 7970,11441
 # 
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_06_0773_0896_online.pdf (Teileinziehung von Straßenland)
-#: last_checked: 2018-03-10
+#: last_checked: 2018-05-10
 #: check_frequency: 60d
 Ingeborg-Drewitz-Allee: Teileinziehung, wird für öffentlichen Autoverkehr gesperrt, gibt es vielleicht auch andere Einschränkungen?	?::projected 7362,12731 7377,12729 7542,12736 7541,12754 7386,12749
 # 
@@ -1991,6 +1991,7 @@ Brunsbütteler Damm: Radweg wird asphaltiert	?; -4290,14025 -4759,13992
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/fussgaenger/bauprojekte/de/bauprojekte2017.shtml vvv
 #: check_frequency: 90d vvv
 #: priority: #D vvv
+#: last_checked: 2018-05-14
 Tiergartenstr. (vor dem Canisius-Kolleg): gibt es hier einen Zebrastreifen?	?::projected 7064,11519 7171,11510 7067,11475
 # REMOVED (ja) --- Johann-Georg-Str.: gibt es hier einen Zebrastreifen?	?::projected 3243,9917 3170,10041 3266,9936
 Auguste-Viktoria-Str./Berkaer Str.: gibt es hier einen Zebrastreifen?	?::projected 2646,7793 2608,7798 2627,7828
@@ -2339,6 +2340,7 @@ Königsweg (Tegel): Zufahrt für Autos gesperrt?	? 2168,20585 2188,20600
 Turmstr.: wird hier eine Änderung bei den Radwegen passieren?	? 5368,13406 5248,13434
 # 
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/419_2018_ds_838_freie_fahrt_fuer_den_m27er_in_der_huttenstrasse.pdf
+#: by: http://www.berliner-woche.de/moabit/verkehr/freie-fahrt-fuer-den-m27-engstelle-in-der-huttenstrasse-schwer-zu-beseitigen-d160286.html
 #: osm_watch: way id="24916010" version="7"
 #: last_checked: 2017-12-26
 #: check_frequency: 400d
@@ -2796,7 +2798,7 @@ Maulbeerallee: Planung eines Zebrastreifens	?::projected -5544,12837 -5594,12832
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2018-03-21
+#: last_checked: 2018-05-14
 #: check_frequency: 60d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
@@ -3039,7 +3041,7 @@ Egellsstr.: eventuell wird dieser Abschnitt für die Öffentlichkeit gesperrt	? 21
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/index.shtml
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/download/Bplan-1-69.pdf
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: II/2019 bis III/2020) (außerdem: Umbau des Schiffbauerdamms)
-#: last_checked: 2018-05-09
+#: last_checked: 2018-05-13
 #: next_check: 2019-09-01
 Verlängerung der Margarete-Steffin-Str.	?::projected 8732,12804 8796,12804 8930,12809 9002,12778 9025,12727
 # 
@@ -3519,9 +3521,10 @@ Güterbahnhof Wilmersdorf: vermutlich wird die Straße während der Bauarbeiten ges
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_01_0001_0152_online.pdf (Benennung, hier aber "...-Wege" (???))
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_03_0257_0448_online.pdf (Berichtigung)
 #: by: http://www.berliner-woche.de/moabit/bauen/1a-adresse-im-herzen-der-stadt-grundsteinlegung-fuer-humboldthafen-berlin-d128365.html (bis Frühjahr 2019)
+#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_19_2335_2466_online.pdf (Grundstücksnummerierungen)
 #: XXX eventuell entstehen hier weitere Straßen/Wege
 #: XXX fehlt in Berlin.coords.data, PLZ=10557
-#: last_checked: 2018-05-09
+#: last_checked: 2018-05-13
 #: check_frequency: 90d
 Hilda-Geiringer-Weg: wo genau wird die Straße liegen? Qualität?	?::projected 8243,13469 8245,13396
 # 
@@ -3688,7 +3691,7 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2018-05-08
+#: last_checked: 2018-05-10
 #: check_frequency: 360d
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 
@@ -3717,7 +3720,7 @@ geplante Grünanlage	?::projected 4084,15859 4055,15795 4041,15786 4224,15779 421
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.588521.php
 #: by: https://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_34_3753_3876_online.pdf (Bebauungsplan 4-66)
-#: last_checked: 2018-03-10
+#: last_checked: 2018-05-13
 #: check_frequency: 360d
 Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660,10521 2749,10584 3043,10680
 # 
@@ -3755,7 +3758,7 @@ Im Lindenhof: Planstraße B, Qualität, genaue Lage?	?::inwork 17370,12649 17475,1
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/erste-gebaeude-sind-fertig-d143656.html (Fertigstellung)
 #: XXX fehlt in Berlin.coords.data; Benennung soll zum 2017-07-01 wirksam werden
 #: XXX zuführende Straßen/Wege müssen auch eingezeichnet werden
-#: last_checked: 2018-05-04
+#: last_checked: 2018-05-14
 #: check_frequency: 90d
 Siegfried-Hirschmann-Park: neue private Platzfläche, Qualität, genaue Lage?	?::inwork 14730,11529 14800,11441
 # 
@@ -5535,7 +5538,7 @@ Windmühlenweg (Potsdam): Qualität? Ausgeschildert?	? -17374,1564 -17373,1513 -17
 #: XXX laut osm cobblestone
 Steinstr. (Potsdam): Qualität? Liegt hier Kopfsteinpflaster?	? -8419,-1916 -8173,-2151 -8095,-2219
 #
-Klein Marzehns - Lutherstadt Wittenberg: R1, Qualität der Wege?	? -42132,-44358 -42072,-44362 -42024,-44477 -41719,-44926 -41366,-45926 -41136,-46855 -40665,-46753 -40031,-46689 -40080,-47655 -40128,-47939 -40050,-48295 -40031,-48703 -40086,-49089 -40243,-49443 -40255,-49575 -40409,-49636 -40433,-49666 -40412,-49751 -40303,-49808 -39941,-50469 -39802,-50925 -39802,-51106 -39690,-51357 -39536,-51526 -39847,-51746 -39862,-51806 -39875,-51957 -40273,-52857 -40297,-53307 -40219,-53847 -39998,-55275 -39986,-55417 -40050,-55755 -39962,-56117 -39908,-56800 -40056,-57461 -39920,-58055 -39856,-58164 -39881,-58270 -39980,-58442 -39950,-58578 -40068,-58713 -40140,-58973 -40376,-59507 -40364,-59673 -40198,-59954 -39995,-60464 -39912,-60620 -39884,-60864 -39867,-60866 -39870,-60931
+Klein Marzehns - Lutherstadt Wittenberg: R1, Qualität der Wege?	? -42150,-44364 -42082,-44363 -42055,-44395 -42028,-44487 -41732,-44934 -41366,-45926 -41136,-46855 -40665,-46753 -40297,-46687 -40031,-46689 -40080,-47655 -40128,-47939 -40050,-48295 -40031,-48703 -40086,-49089 -40243,-49443 -40255,-49575 -40409,-49636 -40433,-49666 -40412,-49751 -40303,-49808 -39941,-50469 -39800,-50899 -39802,-51106 -39690,-51357 -39536,-51526 -39591,-51563 -39730,-51652 -39796,-51680 -39847,-51746 -39865,-51822 -39875,-51957 -40282,-52877 -40297,-53307 -40219,-53847 -40154,-54259 -39998,-55275 -39986,-55417 -40050,-55755 -39962,-56117 -39908,-56800 -39925,-56938 -40056,-57461 -39920,-58055 -39856,-58164 -39881,-58270 -39980,-58442 -39950,-58578 -40068,-58713 -40140,-58973 -40376,-59507 -40364,-59673 -40198,-59954 -39995,-60464 -39912,-60620 -39884,-60864 -39867,-60866 -39870,-60931
 Lutherstadt Wittenberg - Coswig: Elberadweg, Qualität der Wege?	? -39870,-60931 -40013,-60918 -40131,-60918 -40181,-60900 -40373,-60865
 Lutherstadt Wittenberg - Coswig: Elberadweg, Qualität der Wege?	? -40472,-60875 -40568,-60914 -40582,-60935 -40609,-60947 -40601,-60981 -40624,-61034 -40641,-61036 -40663,-61021 -40669,-61045 -40655,-61056 -40788,-61117 -40995,-61183 -41229,-61170 -41422,-61208 -41565,-61229 -41664,-61258 -41725,-61261 -41819,-61221 -41961,-61200 -41973,-61297 -42193,-61268 -42249,-61252 -42329,-61266 -42407,-61224 -42527,-61212 -42536,-61218 -42542,-61254 -42690,-61261 -42721,-61394 -42868,-61353 -42994,-61415 -43013,-61341 -43056,-61361 -43065,-61344 -43034,-61315 -43062,-61315 -43079,-61251 -43057,-61151 -43233,-61099 -43487,-61052 -43553,-61015 -43478,-60964 -43600,-60926 -43596,-60871 -43780,-60843 -43767,-60765
 Lutherstadt Wittenberg - Coswig: Elberadweg, Qualität der Wege?	? -45341,-60204 -45542,-60600 -45672,-60511 -46530,-60599 -46723,-60522 -46764,-60401 -47043,-60384 -47127,-60413 -47304,-60419 -47361,-60377 -47719,-60341 -47970,-60425 -48241,-60614 -48333,-60479 -48351,-60042 -48443,-59933 -48939,-59625 -48925,-59526 -49133,-59396 -49325,-59391 -49402,-59372 -49678,-59347 -49897,-59301
