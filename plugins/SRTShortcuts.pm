@@ -704,7 +704,10 @@ EOF
 	      [Cascade => $do_compound->("Current search in ..."), -menuitems =>
 	       [
 		[Button => $do_compound->("local bbbike.cgi"),
-		 -command => sub { current_search_in_bbbike_cgi() },
+		 -command => sub { current_search_in_bbbike_cgi(public => 0) },
+		],
+		[Button => $do_compound->("bbbike.de"),
+		 -command => sub { current_search_in_bbbike_cgi(public => 1) },
 		],
 		[Button => $do_compound->("BBBike.org (Berlin)"),
 		 -command => sub { current_search_in_bbbike_org_cgi() },
@@ -1684,6 +1687,12 @@ sub mark_most_recent_layer {
 }
 
 sub current_search_in_bbbike_cgi {
+    my(%args) = @_;
+    my $use_public = delete $args{public};
+    die "Unhandled arguments: " . join(" ", %args) if %args;
+
+    my $root_url = $use_public ? 'http://bbbike.de/cgi-bin/bbbike.cgi' : "http://localhost/bbbike/cgi/bbbike.cgi";
+
     if (@main::search_route_points < 2) {
 	main::status_message("Not enough points", "die");
     }
@@ -1700,7 +1709,7 @@ sub current_search_in_bbbike_cgi {
 
     require BBBikeUtil;
     my $url = BBBikeUtil::uri_with_query
-	("http://localhost/bbbike/cgi/bbbike.cgi",
+	($root_url,
 	 [ startc => $start,
 	   ($via ? (viac => $via) : ()),
 	   zielc => $goal,
