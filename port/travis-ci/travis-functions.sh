@@ -53,7 +53,7 @@ init_apt() {
 # - libproj-dev + proj-bin: prerequisites for Geo::Proj4
 # - libdb-dev:              prerequisite for DB_File
 # - agrep + tre-agrep:      needed as String::Approx alternative
-# - libgd2-xpm-dev:         prerequisite for GD
+# - libgd2-xpm-dev or libgd-dev: prerequisite for GD
 # - ttf-bitstream-vera + ttf-dejavu: fonts e.g. for BBBikeDraw::GD
 # - xvfb + fvwm:            some optional tests require an X server
 # - libmozjs-24-bin or rhino: javascript tests
@@ -64,13 +64,28 @@ init_apt() {
 # - pdftk:                  compression in BBBikeDraw::PDFUtil (for non-cairo)
 # - poppler-utils:          provides pdfinfo for testing
 install_non_perl_dependencies() {
-    if [ "$(lsb_release -c -s)" = "precise" ]
+    CODENAME=$(lsb_release -c -s)
+    if [ "$CODENAME" = "precise" -o "$CODENAME" = "bionic" ]
     then
 	javascript_package=rhino
     else
 	javascript_package=libmozjs-24-bin
     fi
-    sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep tre-agrep libgd2-xpm-dev ttf-bitstream-vera ttf-dejavu gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev pdftk poppler-utils
+    if [ "$CODENAME" = "stretch" -o "$CODENAME" = "bionic" ]
+    then
+	libgd_dev_package=libgd-dev
+    else
+	libgd_dev_package=libgd2-xpm-dev
+    fi
+    if [ "$CODENAME" = "bionic" ]
+    then
+	# Not available anymore, see
+	# https://askubuntu.com/q/1028522
+	pdftk_package=
+    else
+	pdftk_package=pdftk
+    fi
+    sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera ttf-dejavu gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package poppler-utils
     if [ "$BBBIKE_TEST_SKIP_MAPSERVER" != "1" ]
     then
 	sudo apt-get install -qq mapserver-bin cgi-mapserver
@@ -129,7 +144,7 @@ install_webserver_dependencies() {
 	# install mod_perl
 	CODENAME=$(lsb_release -c -s)
 	# XXX probably valid also for all newer debians (and ubuntus?)
-	if [ "$CODENAME" = "stretch" ]
+	if [ "$CODENAME" = "stretch" -o "$CODENAME" = "bionic" ]
 	then
 	    sudo apt-get install -qq apache2
 	else

@@ -258,9 +258,13 @@ EOF
 RUN echo "deb http://ftp.de.debian.org/debian/ $opt{distver} non-free" > /etc/apt/sources.list.d/$opt{distver}-non-free.list
 EOF
     } elsif ($opt{dist} eq 'ubuntu') {
-	$dockerfile .= <<EOF;
+	if ($opt{distver} eq 'bionic') {
+	    # since Ubuntu 18.04 (?) multiverse seems to be enabled by default
+	} else {
+	    $dockerfile .= <<EOF;
 RUN echo "deb http://archive.ubuntu.com/ubuntu $opt{distver} multiverse" > /etc/apt/sources.list.d/$opt{distver}-multiverse.list
 EOF
+	}
     } else {
 	die "Unsupported dist $opt{dist}";
     }
@@ -290,8 +294,8 @@ EOF
 RUN apt-get update -qq
 RUN apt-get install -qq git cpanminus libssl-dev $libmysqlclient_dev wget
 EOF
-    if ($opt{distver} eq 'precise' || $opt{dist} eq 'debian') {
-	# Lacking packages in precise (and debian/stretch, lsb-release at least)
+    if ($opt{distver} eq 'precise' || $opt{distver} eq 'bionic' || $opt{dist} eq 'debian') {
+	# Lacking packages in precise and bionic (18.04) (and debian/stretch, lsb-release at least)
 	$dockerfile .= <<EOF;
 RUN apt-get install -qq lsb-release sudo
 EOF
