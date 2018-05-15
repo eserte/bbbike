@@ -14563,14 +14563,14 @@ EOF
 	2::inwork 25997,-6245 26040,-6233 26135,-6206
 EOF
      },
-     { from  => $isodate2epoch->("2017-06-15 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-06-18 23:59:59"),
+     { from  => $isodate2epoch->("2018-06-14 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-06-17 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6]],
-       text  => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain (16.06.2017 - 18.06.2017)',
+       text  => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain (15.06.2018 - 17.06.2018)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/veranstaltungen/koepenicker-sommer-323856.php
+#: by: https://www.howoge.de/unternehmen/aktuelles/veranstaltungen/details/koepenicker-sommer-2018.html
 	2::temp 22111,4562 22093,4499 22076,4422
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
 	2::temp 22138,4642 22074,4664
@@ -27131,6 +27131,34 @@ EOF
 #: note: laut fritz bis 14.09.2018
 #: XXX_prog: eigentlich q3+
 	q3::inwork; 15516,12838 15367,12815 15357,12813 15233,12829 15098,12849 15074,12850 15010,12855 14940,12843 14906,12837 14836,12826 14750,12812 14661,12798 14556,12781 14435,12761 14355,12752 14096,12827
+EOF
+     },
+     { from  => 1526407304, # 2018-05-15 20:01
+       until => 1530395999, # 2018-06-30 23:59
+       text  => 'Lise-Meitner-Str.: Bauarbeiten zwischen Gaußstr. und Ringbahnbrücke, Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis Ende Juni 2018',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.701215.php',
+       data  => <<EOF,
+	q4::inwork; 3739,13563 3724,13702 3713,13787 3702,13865
+EOF
+     },
+     { from  => undef,
+       until => $isodate2epoch->("2018-12-31 18:00:00"),
+       text  => "Gleimtunnel: Bauarbeiten Richtung Schönhauser Allee, Fahrbahn gesperrt, möglicherweise sind auch Radfahrer von der Sperrung betroffen, bis Ende Dezember 2018",
+       source_id => "2147342588",
+       data  => <<EOF,
+#: add_fragezeichen: Ist der Gleimtunnel tatsächlich für Radfahrer gesperrt?
+	q4::inwork; 10004,15636 10130,15653
+EOF
+     },
+     { from  => undef,
+       until => $isodate2epoch->("2018-08-11 18:00:00"),
+       text  => "Karlshorster Str.: Stubenrauchbrücke in Richtung Osten gesperrt, möglicherweise sind auch Radfahrer von der Sperrung betroffen, bis Mitte August 2018",
+       source_id => "2147342600",
+       data  => <<EOF,
+#: note: genaues Endedatum by fritz
+#: add_fragezeichen: Ist die Stubenrauchbrücke tatsächlich für Radfahrer gesperrt?
+	q4::inwork; 17432,6352 17492,6462 17528,6502
 EOF
      },
     );

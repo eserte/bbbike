@@ -1871,7 +1871,29 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.howoge.de/unternehmen/aktuelles/veranstaltungen/details/koepenicker-sommer-2018.html
+	2::temp 22111,4562 22093,4499 22076,4422
+	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
+	2::temp 22138,4642 22074,4664
+# REMOVED ---	2::temp 22111,4562 22162,4546 22214,4548 22324,4586 22314,4604 22355,4660 22365,4676 22395,4678
+',
+         'from' => 1528927200,
+         'id' => 1702,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              14,
+                              'months',
+                              6
+                            ]
+                          ],
+         'text' => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain (15.06.2018 - 17.06.2018)',
+         'type' => 'gesperrt',
+         'until' => 1529272799
+       },
        undef,
        undef,
        undef,
@@ -4490,17 +4512,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1527803999
        },
-       {
-         'data' => '#: source_id: 2147342390
-# REMOVED (hier nicht mehr) ---	q4::inwork; 8901,12008 8861,12125
-	q4::inwork; 8861,12125 9054,12154
-',
-         'from' => 1522864912,
-         'id' => 2947,
-         'text' => 'Behrenstr.: Sperrung Richtung Osten zwischen Wilhelmstr. und Mauerstr., bis Mitte Mai 2018',
-         'type' => 'handicap',
-         'until' => 1526407200
-       },
+       undef,
        undef,
        undef,
        {
@@ -4576,6 +4588,37 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Scheffelstr. und Eldenaer Str.: Bauarbeiten Richtung Ebertystr. zwischen Möllendorffstr. und Liebigstr., Ausweichen auf engen Gehweg erlaubt, bis Mitte September 2018',
          'type' => 'handicap',
          'until' => 1536940800
+       },
+       {
+         'data' => '	q4::inwork; 3739,13563 3724,13702 3713,13787 3702,13865
+',
+         'from' => 1526407304,
+         'id' => 2955,
+         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.701215.php',
+         'text' => 'Lise-Meitner-Str.: Bauarbeiten zwischen Gaußstr. und Ringbahnbrücke, Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis Ende Juni 2018',
+         'type' => 'handicap',
+         'until' => 1530395999
+       },
+       {
+         'data' => '#: add_fragezeichen: Ist der Gleimtunnel tatsächlich für Radfahrer gesperrt?
+	q4::inwork; 10004,15636 10130,15653
+',
+         'from' => undef,
+         'id' => 2956,
+         'source_id' => '2147342588',
+         'text' => 'Gleimtunnel: Bauarbeiten Richtung Schönhauser Allee, Fahrbahn gesperrt, möglicherweise sind auch Radfahrer von der Sperrung betroffen, bis Ende Dezember 2018',
+         'until' => 1546275600
+       },
+       {
+         'data' => '#: note: genaues Endedatum by fritz
+#: add_fragezeichen: Ist die Stubenrauchbrücke tatsächlich für Radfahrer gesperrt?
+	q4::inwork; 17432,6352 17492,6462 17528,6502
+',
+         'from' => undef,
+         'id' => 2957,
+         'source_id' => '2147342600',
+         'text' => 'Karlshorster Str.: Stubenrauchbrücke in Richtung Osten gesperrt, möglicherweise sind auch Radfahrer von der Sperrung betroffen, bis Mitte August 2018',
+         'until' => 1534003200
        }
      
 );

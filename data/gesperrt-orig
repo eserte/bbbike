@@ -298,16 +298,11 @@ Zionskirchplatz	1 10304,14254 10277,14350 10311,14391 10365,14372 10391,14280
 Ohmstr.	1 11324,11689 11378,11856
 Anton-Saefkow-Str.	1 13183,14400 13084,14472 13013,14523 12901,14594 12862,14618 12789,14670 12700,14726 12528,14845
 Spilstr.	1 3865,6758 3826,6656 3836,6550
-#: next_check_id: CHAUSSEESTR-2016 vvv
-#: XXX wieder herstellen, wenn es dann noch eine Einbahnstraße gibt vvv
-##: note einige Radfahrer hier in der falschen Richtung angetroffen vvv
-#Wöhlertstr.	1s:q4 
-#8442,14456 8669,14550
-#Pflugstr.	1s:q4 8669,14550 8776,14364
-##: note ^^^
-#Schwartzkopffstr.	1s:q4 8776,14364 8607,14253
-#: XXX ^^^
-#: next_check_id ^^^
+#: note einige Radfahrer hier in der falschen Richtung angetroffen vvv
+Wöhlertstr.	1s:q4 8442,14456 8669,14550
+Pflugstr.	1s:q4 8669,14550 8776,14364
+#: note ^^^
+Schwartzkopffstr.	1s:q4 8776,14364 8607,14253
 Strausberger Str.	1 12416,13045 12368,13031 12247,12848
 Große Präsidentenstr.	1 10105,13004 10220,13098
 Gritznerstr.	1 4511,6318 4555,6403
@@ -1141,6 +1136,7 @@ Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8
 # REMOVED (dauerhaft) --- #: last_checked: 2014-07-23 --- #: check_frequency: 180d --- #: XXX evtl. permanent
 Vorfahrt Reichstagsgebäude: Absperrgitter, keine Durchfahrt mehr möglich	2 8400,12417 8399,12610
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5554
+#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7540 (Freigabe vorgeschlagen)
 Kriemhildstr.	1s:q3 17300,12173 17314,12265
 Sportfliegerstr.: Betriebsgelände	2 18370,4511 18423,4459
 #: by: olaf skeries
@@ -2904,7 +2900,7 @@ Drängelgitter	BNP:3::trailer=10 25081,-9433
 Fanny-Zobel-Str.: wegen Bauarbeiten gesperrt, vielleicht sogar dauerhaft eingezogen	2::inwork 13975,10187 14049,10164
 # 
 #: source_id: 2147342570
-#: last_checked: 2018-05-14
+#: last_checked: 2018-05-15
 #: next_check: 2018-06-01
 #: valid: -20180601
 #: priority: #A
@@ -2999,7 +2995,7 @@ Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 18301,9946 18
 #: by: https://www.berliner-zeitung.de/berlin/berliner-wasserbetriebe-tunnel-unterm-mauerpark-wird-zur-attraktion-25534506
 #: by: http://www.berliner-woche.de/prenzlauer-berg/bauen/baugruben-am-mauerpark-sind-jetzt-eingerichtet-d158178.html
 #: source_id: 2147342369
-#: last_checked: 2018-05-04 (Südseite) vvv
+#: last_checked: 2018-05-10 (mapillary) (Südseite) vvv
 #: check_frequency: 360d vvv
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
@@ -3182,32 +3178,7 @@ Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13176,9302 13098,920
 # REMOVED --- #: source_id: 2147340790 --- #: source_id: 2147340922 --- #: last_checked: 2017-03-20 --- #: next_check: 2017-03-24 --- # REMOVED --- : valid: -20170228 --- Puschkinallee: Fahrtrichtung gesperrt	1::inwork 13795,9941 13890,9894
 # REMOVED (offen) --- #: next_check_id: STRESEMANNPARKWEG-2016 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.530316.php --- #: XXX "3-4 Wochen" --- #: XXX danach eine "bituminöse Befestigung" --- #: XXX evtl. wird die Beleuchtung auch erneuert? --- #: last_checked: 2016-12-16 --- #: check_frequency: 14d --- #: priority: #A --- Parkweg zwischen Stresemannstr. und Wilhemstr.: wird instandgesetzt, in dieser Zeit nicht befahrbar	2::inwork 9249,10562 9375,10616
 # 
-#: next_check_id: CHAUSSEESTR-2016 vvv
-#: XXX laut fritz und rbbtext bis 30.08.2017
-#: XXX Richtung Süden teilweise nun mit Radspur
-#: XXX offizielle Umleitungsstrecke für Radfahrer via Zinnowitzer Str., danach keine weiteren offiziellen U-Schilder für Radfahrer, vermutlich geht es über Gartenstr. weiter
-#: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (evtl. gibt's hier später Radstreifen)
-#: source_id: 2147340715 vvv
-#: source_id: LMS-BR_r_LMS-BR_82028
-#: osm_watch: way id="42091230" version="24"
-#: last_checked: 2018-04-30 vvv
-# REMOVED (temporary) --- #: next_check: 2017-12-31 (vermutlich wird nur auf die neue Fahrbahnhälfte gewechselt werden) vvv
-#: next_check: 2018-05-14 vvv
-#: priority: #A vvv
-Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 8732,14098 8654,14194
-Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q4:inwork 8654,14194 8607,14253 8570,14299 8442,14456
-#
-#: XXX_prog eigentlich gehören diese nach handicap_directed-orig, aber erstmal sollte das CGI damit umgehen können
-Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	3 8570,14299 8607,14253 8776,14364
-Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	3 8654,14194 8607,14253 8776,14364
-Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	3 8776,14364 8607,14253 8654,14194
-Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	3 8776,14364 8607,14253 8570,14299
-#: priority ^^^
-#: next_check ^^^
-#: last_checked ^^^
-#: source_id ^^^
-#: next_check_id ^^^
-# 
+# REMOVED (beendet) --- #: next_check_id: CHAUSSEESTR-2016 vvv --- #: XXX laut fritz und rbbtext bis 30.08.2017 --- #: XXX Richtung Süden teilweise nun mit Radspur --- #: XXX offizielle Umleitungsstrecke für Radfahrer via Zinnowitzer Str., danach keine weiteren offiziellen U-Schilder für Radfahrer, vermutlich geht es über Gartenstr. weiter --- #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (evtl. gibt's hier später Radstreifen) --- #: source_id: 2147340715 vvv --- #: source_id: LMS-BR_r_LMS-BR_82028 --- #: osm_watch: way id="42091230" version="24" --- #: last_checked: 2018-04-30 vvv --- # REMOVED (temporary) --- #: next_check: 2017-12-31 (vermutlich wird nur auf die neue Fahrbahnhälfte gewechselt werden) vvv --- #: next_check: 2018-05-14 vvv --- #: priority: #A vvv --- Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 8732,14098 8654,14194 --- Chausseestr.: Baustelle, Einbahnstraßenregelung	1s:q4:inwork 8654,14194 8607,14253 8570,14299 8442,14456 --- # --- #: XXX_prog eigentlich gehören diese nach handicap_directed-orig, aber erstmal sollte das CGI damit umgehen können --- Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	3 8570,14299 8607,14253 8776,14364 --- Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	3 8654,14194 8607,14253 8776,14364 --- Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	3 8776,14364 8607,14253 8654,14194 --- Chausseestr. -> Schwartzkopffstr.: Abbiegen nur umständlich möglich	3 8776,14364 8607,14253 8570,14299 --- #: priority ^^^ --- #: next_check ^^^ --- #: last_checked ^^^ --- #: source_id ^^^ --- #: next_check_id ^^^
 # REMOVED --- #: by: http://www.s-bahn-berlin.de/bauinformationen/details/rummelsburg/4530 vvv --- #: last_checked: 2017-07-28 vvv
 # REMOVED (offen) --- (Unterführung S-Bhf. Rummelsburg): Bauarbeiten, komplett gesperrt	2::inwork 15433,10765 15409,10709 15372,10655
 # REMOVED (offen) --- Nöldnerstr.: Bauarbeiten, Einbahnstraße	1s:q4 15272,10790 15388,10758 15433,10765
@@ -3460,7 +3431,7 @@ Tegeler Hafen: Weg gesperrt	2 1687,20645 1697,20623 1721,20603
 #: by: http://www.berliner-woche.de/mitte/bauen/erdlawine-rollt-ueber-die-oranienburger-ab-juli-wird-auf-dem-tacheles-areal-die-elf-meter-tiefe-baugrube-ausgehoben-d119088.html (bis 2020)
 #: by: http://www.berliner-woche.de/mitte/bauen/tacheles-areal-wird-ausgebaggert-d160052.html
 #: osm_watch: way id="33036326" version="6"
-#: last_checked: 2018-04-10
+#: last_checked: 2018-05-15
 #: check_frequency: 360d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 

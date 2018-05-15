@@ -21,7 +21,7 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-05-14
+#: last_checked: 2018-05-15
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
@@ -31,7 +31,7 @@ Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,1
 #: check_frequency: 90d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
-#: last_checked: 2018-05-07
+#: last_checked: 2018-05-15
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 #: next_check_id: RIGAER-2018
@@ -195,7 +195,7 @@ Prinzengasse: einige Fußgänger, parkende Autos	q3::inwork 9955,12300 10002,12305
 # REMOVED (Einbahnstraßenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universitätsstr.: wegen Bauarbeiten Einbahnstraße zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2018-04-27 vvv
+#: last_checked: 2018-05-15 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="5"
@@ -512,6 +512,7 @@ Großgörschenstr.: Bauarbeiten an der Einmündung Potsdamer Str.	q3::inwork 7609,9
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.618687.php
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.623391.php
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.655961.php (Sperrung doch nicht erfolgt? Dafür Einbahnstraßenregelung ab Dez. 2017)
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6613
 #: XXX wann wird die Einschränkung beendet?
 #: osm_watch: way id="13860352" version="11"
 #: last_checked: 2018-05-01
@@ -1366,6 +1367,7 @@ Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 3105,15487 3140,15503 3160,156
 #: by: ^^^
 Hülsenplatz: Fußgänger, Bordsteine	q3 18512,10744 18545,10752 18542,10762 18538,10774 18506,10769
 Hülsenplatz: Fußgänger, Bordsteine	q3 18542,10762 18570,10768
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6566 (Forderung nach Aufhebung des Verbots)
 Viktoria-Luise-Platz: Fußgängerzone, Radfahren verboten	q4 6142,9934 6224,9980
 Viktoria-Luise-Platz: Fußgängerzone, Radfahrer frei	q1 6149,9897 6209,9885
 Luitpoldstr.: Schulhof	q3 6611,9879 6688,9897
