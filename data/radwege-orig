@@ -1072,7 +1072,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2018-04-27
+#: last_checked: 2018-05-17
 #: next_check: 2018-06-28
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1084,7 +1084,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut rbbtext bis 31.05.2016, laut vmz bis Ende 2016, laut fritz bis 09.01.2018
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2018-04-27
+#: last_checked: 2018-05-17
 #: next_check: 2018-06-28
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
@@ -1137,19 +1137,22 @@ Verbundsteinpflaster	RW1;RW1 9935,11067 10103,10989
 Gehweg für Radfahrer frei	RW1; 15261,10738 15307,10701 15372,10655 15404,10633
 gemeinsamer Rad- und Gehweg	RW2; 15404,10633 15639,10469
 Gehweg für Radfahrer frei	RW1; 15639,10469 15404,10633 15372,10655 15307,10701
-	RW2; 15307,10701 15261,10738
+#: note: frühere Benutzungspflicht wurde aufgehoben, aber eine Radfahrampel existiert noch immer
+Gehweg für Radfahrer frei	RW1; 15307,10701 15261,10738
 Gehweg für Radfahrer frei	RW1; 15639,10469 15831,10329
-gemeinsamer Rad- und Gehweg	RW2; 15831,10329 15639,10469
+#: note: frühere Benutzungspflicht wurde aufgehoben, aber eine Radfahrampel existiert noch immer
+Gehweg für Radfahrer frei	RW1; 15831,10329 15639,10469
 Gehweg für Radfahrer frei	RW1;RW1 15831,10329 16004,10204 16114,10123 16138,10105 16187,10033 16261,9925 16302,9865
 	RW1;RW1 16302,9865 16374,9760 16432,9673 16791,9137 16831,9078 17067,8725
-	RW1;RW2 17067,8725 17105,8666
+#: note: frühere Benutzungspflicht in Richtung Nordwesten wurde aufgehoben
+	RW1;RW1 17067,8725 17105,8666
 	RW1; 17105,8666 17143,8565 17202,8391 17299,8140 17527,7812
 neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 neu asphaltiert	RW1; 17769,7465 17681,7589 17619,7679
 #: XXX werden hier noch Radspuren oder ein neuer Radweg angelegt?
 #: source_id: 2147341340
 #: source_id: LMS-BR_r_LMS-BR_98104
-#: last_checked: 2018-05-06
+#: last_checked: 2018-05-17
 #: check_frequency: 60d
 	RW0; 17619,7679 17527,7812 17317,8115 17299,8140 17202,8391
 	RW1; 17202,8391 17143,8565 17105,8666
@@ -1278,7 +1281,7 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 	RW2;RW0 4324,8899 4325,8998 4325,9082 4325,9159 4339,9224 4377,9258
 	RW6;RW6 12767,10216 12897,10439 12978,10581
 	RW6;RW6 12731,10547 12822,10487 12897,10439 13032,10355 13151,10276 13271,10193
-	RW1;RW0 13795,9941 13865,9866 14089,9610
+asphaltiert	RW1; 13795,9941 13865,9866 14089,9610
 	RW1;RW1 15144,10905 15205,11080 15245,11162 15251,11175 15322,11335
 	RW6;RW6 3117,11852 2953,11830 2728,11805 2547,11788
 	RW6;RW6 4312,11354 4101,11347 3986,11347 3877,11347 3749,11344
@@ -1597,8 +1600,8 @@ die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
 #: XXX Markierungen fehlen noch teilweise
 #: osm_watch: way id="439421759" version="9"
 #: osm_watch: way id="384136808" version="12"
-#: last_checked: 2018-05-09
-#: check_frequency: 3d
+#: last_checked: 2018-05-17
+#: check_frequency: 5d
 	RW0; 14904,10812 15261,10738
 	RW1;RW1 14652,10201 14688,10167 14705,10149 14747,10108 14817,10031
 	RW0;RW1 13795,9941 13890,9894
@@ -4650,12 +4653,12 @@ Fußgängerzone, Radfahrer frei	RW6;RW6 7877,14504 7804,14445
 	RW1; 8570,14299 8607,14253
 #: next_check_id: CHAUSSEESTR-2016
 #: XXX ein Radwegschild steht hier, aber es gibt keine Radspuren --- vielleicht werden sie noch markiert?
-#: last_checked: 2018-05-15
+#: last_checked: 2018-05-17
 	RW0; 8607,14253 8732,14098
 	RW3; 8607,14253 8570,14299 8490,14397
 #: next_check_id: CHAUSSEESTR-2016
 #: XXX wird es hier eine Benutzungspflicht geben?
-#: last_checked: 2018-05-15
+#: last_checked: 2018-05-17
 asphaltiert	RW1; 8490,14397 8442,14456
 	RW3;RW3 8406,14507 8336,14586 8286,14635 8250,14672 8234,14686 8153,14769 8138,14786 8057,14876
 	RW4;RW4 8671,14919 8653,14899

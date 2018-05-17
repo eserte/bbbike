@@ -15,7 +15,7 @@ Voltairestr.: Fahrbahn unter Umständen wegen Baustelle gesperrt, Ausweichen auf 
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9945,11371 9936,11469
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
-Alexandrinenstr.: direkter Zugang zur Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q3::inwork 10818,11269 10678,11172
+Alexandrinenstr.: Zugang zur Sebastianstr. nur über sehr engen Trampelpfad möglich, Bordsteine	q4::inwork 10781,11243 10678,11172
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9984,12426 9996,12401 10058,12290
 Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 10008,12274 10058,12290
 Prinzengasse: einige Fußgänger, parkende Autos	q3::inwork 9955,12300 10002,12305
@@ -1725,6 +1725,7 @@ Lubminer Weg: einige Fußgänger	q1 22319,12663 22391,12677
 Waldstr.: Fußgänger auf dem asphaltiertern Weg	q2 5384,13555 5390,13616 5417,13817 5443,14028
 Heinrich-Laehr-Park: Fußgänger	q1 1525,581 1655,615 1646,665 1668,791 1680,802
 (Gotlindestr. - Bornitzstr.): Spielplatz	q3 16432,12612 16433,12626 16421,12682 16428,12741
+(Bärbel-Bohley-Ring - Ramlerstr.): einige Fußgänger	q1 9744,15793 9644,15780
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schulhof, Radfahren verboten	q3 7242,8586 7288,8635

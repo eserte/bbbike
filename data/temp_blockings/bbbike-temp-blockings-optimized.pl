@@ -4473,7 +4473,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: last_checked: 2018-05-06
+         'data' => '#: last_checked: 2018-05-17
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? Wird sich die Qualität der Fahrbahn nach den Bauarbeiten verbessern?
 	q4::inwork 17456,7132 17352,7051
 ',
@@ -4599,25 +4599,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1530395999
        },
-       {
-         'data' => '#: add_fragezeichen: Ist der Gleimtunnel tatsächlich für Radfahrer gesperrt?
-	q4::inwork; 10004,15636 10130,15653
-',
-         'from' => undef,
-         'id' => 2956,
-         'source_id' => '2147342588',
-         'text' => 'Gleimtunnel: Bauarbeiten Richtung Schönhauser Allee, Fahrbahn gesperrt, möglicherweise sind auch Radfahrer von der Sperrung betroffen, bis Ende Dezember 2018',
-         'until' => 1546275600
-       },
+       undef,
        {
          'data' => '#: note: genaues Endedatum by fritz
-#: add_fragezeichen: Ist die Stubenrauchbrücke tatsächlich für Radfahrer gesperrt?
+# REMOVED (ja) --- #: add_fragezeichen: Ist die Stubenrauchbrücke tatsächlich für Radfahrer gesperrt?
 	q4::inwork; 17432,6352 17492,6462 17528,6502
 ',
          'from' => undef,
          'id' => 2957,
          'source_id' => '2147342600',
-         'text' => 'Karlshorster Str.: Stubenrauchbrücke in Richtung Osten gesperrt, möglicherweise sind auch Radfahrer von der Sperrung betroffen, bis Mitte August 2018',
+         'text' => 'Karlshorster Str.: Stubenrauchbrücke in Richtung Osten gesperrt, Radfahrer müssen ggfs. auf den linken, sehr engen Gehweg ausweichen, bis Mitte August 2018',
          'until' => 1534003200
        }
      

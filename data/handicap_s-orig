@@ -21,7 +21,7 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-05-16
+#: last_checked: 2018-05-17
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
@@ -94,6 +94,7 @@ Auerstr.: zwischen Richard-Sorge-Str. und Löwestr. Baustelle, Einbahnstraßenrege
 ### Wedding ###
 # 
 #: by: http://www.baustellen-doku.info/berlin_neubau_s-bahn_s21/20180406/
+#: by: http://www.berliner-woche.de/moabit/verkehr/strasse-bleibt-gesperrt-d162416.html
 #: source_id: LMS-BR_r_LMS-BR_127868_LMS-BR_72
 #: last_checked: 2018-05-09
 #: next_check: 2018-11-15
@@ -132,7 +133,7 @@ Voltairestr.: Fahrbahn unter Umständen wegen Baustelle gesperrt, Ausweichen auf 
 #: XXX Ende der Bauarbeiten?
 #: way id="507023458" version="1"
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
-#: last_checked: 2018-04-10
+#: last_checked: 2018-05-17
 #: check_frequency: 45d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # 
@@ -152,10 +153,12 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 # 
 # REMOVED --- #: last_checked: 2017-03-14 vvv --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9990,11571 9925,11565 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q2-::inwork 9925,11565 9737,11546 --- #: last_checked ^^^
 # 
+#: next_check_id: ALEXANDRINENSTR-2018
 # REMOVED --- : osm_watch: note 814191 1
-#: last_checked: 2018-04-17
+#: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
+#: last_checked: 2018-05-17
 #: check_frequency: 30d
-Alexandrinenstr.: direkter Zugang zur Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q3::inwork 10818,11269 10678,11172
+Alexandrinenstr.: Zugang zur Sebastianstr. nur über sehr engen Trampelpfad möglich, Bordsteine	q4::inwork 10781,11243 10678,11172
 # 
 # REMOVED --- #: last_checked: 2016-09-30 --- Schützenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10116,11485 9949,11470 --- 
 # REMOVED (wieder offen) --- #: XXX gibt es hier noch Einschränkungen? --- #: last_checked: 2016-01-14 --- #: next_check: 2016-02-03 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9925,11565 9990,11571
@@ -242,14 +245,14 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # 
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
-#: last_checked: 2018-04-27
+#: last_checked: 2018-05-17
 #: next_check: 2018-06-28
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # 
 #: next_check_id: STAATSOPER-2014 vvv
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html
-#: last_checked: 2018-04-20 vvv
+#: last_checked: 2018-05-17 vvv
 #: check_frequency: 30d vvv
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9883,12251 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
@@ -321,7 +324,7 @@ Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q3::
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180307 (hier: Ende der Bauarbeiten August 2018, aber vielleicht ist Fahrbahn+Radweg früher schon offen?)
 #: source_id: LMS-BR_r_LMS-BR_116151_LMS-BR_72
-#: last_checked: 2018-03-25
+#: last_checked: 2018-05-17
 #: next_check: 2018-05-31
 #: valid: -20180531
 #: priority: #A
@@ -2763,6 +2766,7 @@ Lubminer Weg: einige Fußgänger	q1 22319,12663 22391,12677
 Waldstr.: Fußgänger auf dem asphaltiertern Weg	q2 5384,13555 5390,13616 5417,13817 5443,14028
 Heinrich-Laehr-Park: Fußgänger	q1 1525,581 1655,615 1646,665 1668,791 1680,802
 (Gotlindestr. - Bornitzstr.): Spielplatz	q3 16432,12612 16433,12626 16421,12682 16428,12741
+(Bärbel-Bohley-Ring - Ramlerstr.): einige Fußgänger	q1 9744,15793 9644,15780
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

@@ -3,6 +3,20 @@
 #: note: XXX_* categorization done 2008-01-26
 #:
 ################################################################################
+# Temporäre Ampeln
+# 
+#: temporary vvv
+# 
+#: source_id: 2147342588
+#: note: eigentlich zwei Ampeln, Radfahrer in Richtung Osten müssen eine Anforderung bedienen
+#: last_checked: 2018-05-17
+#: next_check: 2018-12-31
+#: valid: -20181231
+#: priority: #B
+	X::inwork 10130,15653
+#: temporary ^^^
+# 
+################################################################################
 # Ampeln und Bahnübergänge in Berlin
 	X 9229,8785
 	X 8982,8781
@@ -2643,7 +2657,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_prog Anforderungsampel
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
-#: last_checked: 2018-04-27
+#: last_checked: 2018-05-17
 #: next_check: 2018-06-28
 	F::inwork 9984,12426
 # 
@@ -2866,18 +2880,18 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: off: Sunday (gesehen 2016-10-03 gegen 15:45)
 #: on: Samstag (gesehen 2016-10-08 gegen 15:00)
 	F 3273,14738
-#: next_check_id: CHAUSSEESTR-2016 vvv
+# REMOVED --- #: next_check_id: CHAUSSEESTR-2016 vvv
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8232 (bleibt die Ampel permanent?)
 #: by: Tsp vom 2018-01-22 (neue Ampeln --- 2019)
 #: source_id: 2147340715 vvv
-#: last_checked: 2018-04-10 vvv
-#: next_check: 2018-05-15 vvv
+#: last_checked: 2018-05-17 vvv
+#: check_frequency: 60d vvv
 	X::inwork 8250,14672
 # REMOVED --- F::inwork 8732,14098
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: source_id ^^^
-#: next_check_id ^^^
+# REMOVED --- #: next_check_id ^^^
 # 
 	F 14810,10832
 # 

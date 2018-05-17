@@ -401,7 +401,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.683334.php
 #: by: http://www.berliner-woche.de/gesundbrunnen/bauen/kopfsteinpflaster-kommt-weg-d144903.html
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
-#: last_checked: 2018-03-19
+#: last_checked: 2018-05-17
 #: next_check: 2018-09-01
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
 Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
@@ -789,7 +789,7 @@ Bänschstr.: Asphalt	Q0 14996,12462 14801,12517
 Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: XXX Asphaltierung soll 2018 erfolgen
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf
-#: last_checked: 2018-04-27
+#: last_checked: 2018-05-17
 #: next_check: 2018-12-31
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1383,7 +1383,7 @@ Wuhlewanderweg: guter Beton	Q0 22259,13508 22191,13414 22187,13304 22211,13040 2
 #: next_check_id: WUHLEWANDERWEG-2014
 #: XXX: der Abschnitt nördlich des Bahnhofs Wuhletal ist noch nicht fertiggestellt:
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5923 (Antrag auf Ausbau)
-#: osm_watch: way id="26288668" version="13"
+#: osm_watch: way id="26288668" version="14"
 #: last_checked: 2017-08-09
 #: check_frequency: 300d
 Wuhlewanderweg: unbefestigter Weg/Schotterweg	Q2 22196,12961 22036,12367 21998,12204 21970,12153
@@ -8886,7 +8886,7 @@ Schneeammerweg: unbefestigte Straße	Q2 13329,20299 13420,20236
 #: note: in der Mitte kurzer Abschnitt mit wassergebundener Decke
 (Weg im Acker-Park): überwiegend asphaltiert	Q0- 9873,13872 9816,13857 9810,13866 9741,13850
 (Park am Nordbahnhof): Asphalt	Q0 8868,14442 9081,14232 9144,14169
-(Park am Nordbahnhof): wassergebundene Decke	Q1 9144,14169 9175,14193
+(Park am Nordbahnhof): wassergebundene Decke	Q1- 9144,14169 9175,14193
 (Park am Nordbahnhof - Caroline-Michaelis-Str./Mount Mitte): Beton	Q0 9119,14255 9081,14232 8992,14176
 (an der Panke - Mauerweg): Asphalt	Q0 7872,14510 7889,14519 7940,14447
 (an der Panke - Mauerweg): Asphalt	Q0 7927,14438 7940,14447 7996,14487 8050,14556 8097,14573 8234,14686
@@ -10643,6 +10643,8 @@ Gründerstr.: Asphalt	Q0 22298,494 22251,574 22120,886
 Bornitzstr. [82 A - 92 F]: Verbundsteinpflaster	Q1+ 16384,12874 16385,12825 16431,12825 16484,12825 16484,12871
 Bornitzstr. [82 A - 92 F]: Verbundsteinpflaster	Q1+ 16430,12848 16431,12825 16428,12741
 (Gotlindestr. - Bornitzstr.): Verbundsteinpflaster	Q1+ 16432,12612 16433,12626 16421,12682 16428,12741
+Ramlerstr. [entlang der Swinemünder Brücke]: Kopfsteinpflaster	Q2 9666,15739 9644,15780
+(Bärbel-Bohley-Ring - Ramlerstr.): Asphalt	Q0 9744,15793 9644,15780
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -25382,7 +25384,7 @@ Höhenweg: Kopfsteinpflaster	Q2 -4555,10488 -4550,10536 -4500,10556 -4414,10614 -
 #: corrected_by: srt (die letzten Meter vor der Brunnenstr. sind auch asphaltiert)
 Ramlerstr.: asphaltiert	Q0 9309,15700 9369,15705
 #: confirmed_by: Jonas Diestelmeier & srt
-Ramlerstr.: Kopfsteinpflaster	Q2 9369,15705 9474,15714 9646,15737 9844,15755
+Ramlerstr.: Kopfsteinpflaster	Q2 9369,15705 9474,15714 9646,15737 9666,15739 9844,15755
 #: corrected_by: srt (Kopfsteinpflaster -> neu asphaltiert)
 Graunstr.: Asphalt	Q0 9844,15755 9907,15618 9996,15400 10018,15211
 #: corrected_by: srt (Kopfsteinpflaster, Q2 -> ...)
