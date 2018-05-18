@@ -15,7 +15,7 @@ package BBBikeOsmUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.24;
+$VERSION = 1.25;
 
 use vars qw(%osm_layer %images @cover_grids %seen_grids $last_osm_file $defer_restacking
 	  );
@@ -530,7 +530,7 @@ sub plot_osm_files {
 			       $nodes[0] eq $nodes[-1] && ($tag{'junction'}||'') ne 'roundabout' && ($tag{'highway'}||'') eq '' && !exists $tag{'boundary'}
 			      );
 
-		my $tags = join(" ", map { "$_=$tag{$_}" } grep { $_ !~ $UNINTERESTING_TAGS } keys %tag);
+		my $tags = join(" ", map { "$_=$tag{$_}" } _sort_way_tags(grep { $_ !~ $UNINTERESTING_TAGS } keys %tag));
 		if (!$is_area && $tags eq '') {
 		    # So we see a tooltip for lines without meaningful tags.
 		    # Don't do this for areas, there are areas which are very, very widespread
@@ -708,6 +708,23 @@ sub _sort_cover_grids {
 	    return $h;
 	}
     } @cover_grids;
+}
+
+{
+    my @ordered_array = qw(highway oneway surface grade smoothness cycleway bicycle);
+    my %sort_order; { my $i = 0; %sort_order = map { ($_ => --$i) } reverse @ordered_array }
+    sub _sort_way_tags {
+	my(@tags) = @_;
+	no warnings 'uninitialized';
+	map { $_->[1] }
+	sort {
+	    $sort_order{$a->[0]} <=> $sort_order{$b->[0]} ||
+	    $a->[0] cmp $b->[0];
+	}
+	map {
+	    [do { $_ =~ /([^:]+)/; $1 }, $_ ]
+	} @tags;
+    }
 }
 
 sub _draw_cover_grids {
