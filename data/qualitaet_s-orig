@@ -718,6 +718,7 @@ Görlitzer Park: Kleinsteinpflaster	Q1- 12504,10172 12464,10153
 Görlitzer Park: Asphalt	Q0 12504,10172 12509,10189 12543,10223 12580,10252
 Görlitzer Park: mäßiges Kopfsteinpflaster	Q2- 12580,10252 12608,10294
 Görlitzer Park: teils fester sandiger Weg	Q2 13035,10076 13013,10068 13013,10047 12987,10007
+#: add_fragezeichen: ist hier mittlerweile asphaltiert?
 Görlitzer Park: teils fester sandiger Weg, bei Regen Pfützen	Q2- 12987,10007 12932,9900
 Görlitzer Park: fester sandiger Weg	Q1 12509,10189 12502,10244
 Zur Eisenbahnbrücke: gutes Kopfsteinpflaster	Q1 13302,9894 13229,9853
@@ -2038,10 +2039,12 @@ Soldiner Str.: Asphalt	Q0 8677,17154 8866,17075 8904,17059 9082,16982
 Soldiner Str.: mäßiges Kopfsteinpflaster	Q2 9082,16982 9299,16889 9435,16832 9579,16770 9611,16741
 Grüntaler Str. - Esplanade: Asphalt	Q0 9778,16915 9846,16981 9880,16994 9980,16973 10013,16972
 Kolonie: Gehwegplatten	Q1 10190,16930 10209,16674
-#: XXX Asphaltierung geplant
+#: XXX Asphaltierung geplant, Baumaßnahme voraussichtlich bis Ende 2019 abgeschlossen
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.602784.php
+#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.702899.php (Bauarbeiten beginnen Ende Mai 2018 --- wird es Einschränkungen für Radfahrer geben?)
+#: priority: #B
 #: last_checked: 2018-04-20
-#: check_frequency: 60d
+#: next_check: 2018-05-31
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 10997,16280 11295,16199 11404,16140 11542,16070
 Fritz-Riedel-Str.: Asphalt	Q0 13385,13992 13449,13892 13519,13785 13635,13605
 Hausburgstr.: Asphalt	Q0 13635,13605 13706,13460 13742,13376

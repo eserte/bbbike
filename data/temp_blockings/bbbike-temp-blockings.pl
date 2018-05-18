@@ -5014,7 +5014,7 @@ EOF
        text  => 'B 183 Dresdner Str. OL Bad Liebenwerda, zw. Querspange u. Hainsche Str. Untersuchung Lubwartturm Vollsperrung 03.07.2006-03.07.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 12194,-98944 12593,-99029
+	2::inwork 12194,-98944 12362,-98997 12459,-99063 12601,-99090 12749,-99054
 EOF
      },
      { from  => 1152050400, # 2006-07-05 00:00
@@ -7062,7 +7062,7 @@ EOF
        text  => 'B 183 Dresdener Str. Bahnübergang in der OL Bad Liebenwerda Gleis- u. Tiefbauarbeiten Vollsperrung 19.01.2007-22.01.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 13828,-98986 13053,-99051 12593,-99029
+	2::inwork 13828,-98986 13053,-99051 12749,-99054
 EOF
      },
      { from  => 1169506800, # 2007-01-23 00:00
@@ -8216,7 +8216,7 @@ EOF
        text  => 'B 183 Dresdener Str. OL Bad Liebenwerda, zw. Querspange u. Roßmarkt Kleines Stadtfest Vollsperrung 19.05.2007-20.05.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 12194,-98944 12593,-99029
+	2::temp 12194,-98944 12362,-98997 12459,-99063 12601,-99090 12749,-99054
 EOF
      },
      { from  => 1179266400, # 2007-05-16 00:00
@@ -17231,7 +17231,7 @@ EOF
        text  => 'B 183 Dresdner Straße Brücke über die Schwarze Elster in Bad Liebenwerda Brückenneubau Vollsperrung 30.11.2009-31.08.2010 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 12593,-99029 13053,-99051
+	2::inwork 12749,-99054 13053,-99051
 EOF
      },
      { from  => undef, # 
@@ -25659,7 +25659,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-05-10 vvv
+#: last_checked: 2018-05-18 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -27139,6 +27139,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.701215.php',
        data  => <<EOF,
+#: source_id: 2147342627
 	q4::inwork; 3739,13563 3724,13702 3713,13787 3702,13865
 EOF
      },

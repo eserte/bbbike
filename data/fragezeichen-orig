@@ -56,14 +56,14 @@ Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12616,14315
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (Baubeginn 2018)
 #: source_id: 2147342299
-#: last_checked: 2018-05-10 (mapillary)
+#: last_checked: 2018-05-18
 #: check_frequency: 60d
 Danziger Str.	?::projected 12616,14315 12722,14232 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2018-05-15
+#: last_checked: 2018-05-18
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -222,7 +222,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 #: osm_watch: way id="182782708" version="7"
 #: osm_watch: way id="168307255" version="6"
 #: osm_watch: way id="4687243" version="24"
-#: last_checked: 2018-04-09
+#: last_checked: 2018-05-18
 #: check_frequency: 60d
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14658,14328 14465,14210 14361,14145 14298,14015 14261,13932 14218,13834
 # 
@@ -231,7 +231,7 @@ Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projec
 #: source_id: 2147342170 vvv
 #: source_id: LMS-BR_r_LMS-BR_120486_LMS-BR_72
 #: osm_watch: way id="336565341" version="7" vvv
-#: last_checked: 2018-05-08 vvv
+#: last_checked: 2018-05-18 vvv
 #: check_frequency: 60d vvv
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15947,12626 15928,12483 15904,12340
@@ -989,7 +989,7 @@ Gensinger Str.: Radstreifen	?::projected 18586,12151 18927,12135 19094,12127 191
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7435 (protective bike lanes?)
 #: by: http://www.berliner-woche.de/lichtenberg/verkehr/geschuetzte-radspur-fuer-die-siegfriedstrasse-d145938.html
 #: osm_watch: way id="93221335" version="16"
-#: last_checked: 2018-05-08
+#: last_checked: 2018-05-18
 Siegfriedstr.: Radstreifen	?::projected 16860,12861 16859,12613 16857,12600 16826,12408 16820,12339
 # 
 #: osm_watch: way id="27959240" version="26"
@@ -1187,16 +1187,15 @@ Kniprodestr.: werden die Busspuren zu Radspuren umgewandelt?	?::projected 12640,
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
+#: XXX Parkverbote ab 22. Mai 2018
+#: priority: #A
+#: last_checked: 2018-05-18
+#: next_check: 2018-05-22
+Singerstr.: wird es hier Bauarbeiten geben, mit Einschränkungen für Radfahrer?	? 11497,12463 11607,12412 11635,12398
+# 
 # REMOVED (kaum Einschränkungen für Radfahrer; offizielle Radwegführung) --- #: XXX NEW	Michaelkirchstraße (Mitte / Friedrichshain) in beiden Richtungen zwischen Holzmarktstraße und Köpenicker Straße (Berlin)  Gültig ab: 08.05.2018 09:00  Baustelle, Vollsperrung (bis Ende 05/18)	2147342594	--- #: XXX laut fritz bis 31.05.2018 --- Michaelkirchstr.: Beeinträchtigungen für den Radverkehr?	?::inwork 11764,12001 11716,11914 11676,11839 11569,11587
 # REMOVED (-> temp blockings) --- #: XXX NEW	Eldenaer Str. (Friedrichshain) Richtung Ebertystr. zwischen Scheffelstr. und Liebigstr. (Berlin)  Gültig ab: 08.05.2018 07:54  Gleisbauarbeiten, Fahrtrichtung gesperrt (bis Mitte 09/18)	2147342574	--- #: XXX laut fritz bis 14.09.2018 --- Eldenaer Str.: Beeinträchtigungen für den Radverkehr?	?::inwork; 15098,12849 15074,12850 15010,12855 14940,12843 14906,12837 14836,12826 14750,12812 14661,12798 14556,12781 14435,12761 14355,12752 14096,12827
-# 
 # REMOVED (hier ist nichts) --- #: by: fritz --- #: XXX bis zum 02.05.2018 --- Bornitzstr.: Einschränkungen auch für Radfahrer?	?::inwork 15747,12880 15950,12886
-# 
-#: XXX NEW	Gotlindestr. (Lichtenberg) in beiden Richtungen zwischen Ruschestr. und Freesienweg (Berlin)  Gültig ab: 15.05.2018 06:00  Baustelle, Vollsperrung (bis Ende 06/18)	2147342596	
-#: XXX laut fritz bis 22.06.2018
-#: priority: #B
-Gotlindestr.: Sperrung auch für Radfahrer relevant?	?::inwork 15947,12626 16000,12625
-# 
 # REMOVED (für Radfahrer offen gehalten) --- #: XXX Kastanienallee (Prenzlauer Berg) Richtung Schönhauser Allee zwischen Oderberger Straße und Schönhauser Allee (Berlin)  Gültig ab: 21.11.2017 07:00  Baustelle, Fahrtrichtung gesperrt (die Kastanienallee ist bis zur Einmünung in die Schönhauser Allee eine Sackgasse) (bis Anfang 12/17) --- #: XXX laut fritz bis voraussichtlich 09.12.2017; laut vmz mittlerweile bis Ende 12/17 --- #: source_id: 2147342043 --- Kastanienallee: Sperrung auch für Radfahrer relevant?	?::inwork; 10723,14772 10838,14962 10884,14952
 # REMOVED (aufgenommen) --- #: XXX NEW	Oranienburger Str. (Mitte) Richtung Friedrichstraße zwischen Hackescher Markt und Monbijouplatz (Berlin)  Gültig ab: 11.12.2017 07:30  Baustelle, Fahrtrichtung gesperrt (bis vsl. 21.12.17) --- #: XXX laut fritz: Zwischen Rosenthaler Straße und Große Hamburger Straße --- #: source_id: 2147342123	 --- Oranienburger Str.: Sperrung auch für Radfahrer relevant?	?::inwork; 10264,13097 10220,13098 10077,13100 9932,13109
 # 
@@ -1234,7 +1233,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/holzmarktstrasse/download/LP_01.pdf
 #: source_id: 2147340618
 #: source_id: LMS-BR_r_LMS-BR_81616
-#: last_checked: 2018-05-14
+#: last_checked: 2018-05-18
 #: next_check: 2018-06-30 (laut fritz)
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 # 
@@ -1252,10 +1251,11 @@ Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 
 #: last_checked: 2018-04-09 vvv
 # REMOVED (realisiert) --- #: next_check: 2018-03-15 --- Landsberger Allee: Ausbau der Radwege	? 18057,14549 17848,14523 17533,14484 17254,14451
 # REMOVED (realisiert) --- #: next_check: 2018-04-12 --- Landsberger Allee: Ausbau der Radwege	? 17254,14451 17055,14432 16852,14412
+# REMOVED (realisiert) --- Landsberger Allee: Ausbau der Radwege	? 16852,14412 16632,14390 16590,14386
 #: source_id: 2147342456
-#: last_checked: 2018-05-08
-#: next_check: 2018-05-15
-Landsberger Allee: Ausbau der Radwege	? 16852,14412 16632,14390 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308 15430,14262 15256,14237 14964,14123 14954,14119 14871,14087 14771,14048 14218,13834
+#: last_checked: 2018-05-18
+#: next_check: 2018-08-01
+Landsberger Allee: Ausbau der Radwege	? 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308 15430,14262 15256,14237 14964,14123 14954,14119 14871,14087 14771,14048 14218,13834
 #: last_checked ^^^
 # 
 #: XXX evtl. im Zusammenhang des Bebauungsplans 11-123
@@ -2818,7 +2818,7 @@ Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 125
 Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563 6224,9544 6242,9525
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8520 vvv
-#: last_checked: 2018-04-06
+#: last_checked: 2018-05-16
 #: next_check: 2018-10-01
 #: priority: #D
 Reichenberger Str.: wird hier ein Zebrastreifen markiert?	? 12385,9966 12398,9938 12366,9929
@@ -3257,9 +3257,10 @@ Pomonaring (Potsdam-Bornim): Qualität? Genaue Lage der Straße?	? -16046,1172 -16
 #    Schloßtheater|Potsdam||-15813,-1211
 #    Sizilianischer Garten|Potsdam||-14691,-867
 #    Wurzelweg|Potsdam||-11387,-4862
-#
+# 
 #: by: http://www.potsdam.de/cms/dokumente/26838366_1771576/7b9e9382/ENDFASSUNGPdmStadt%2017_13.pdf vvv
 #: by: http://www.potsdam.de/sites/default/files/documents/abl_pdmstadt_05_2015_web.pdf vvv
+#: by: https://www.potsdam.de/sites/default/files/documents/final_18057_amtsblatt3_www.pdf
 #: XXX Straßenbenennungen in Potsdam-Fahrland
 #: XXX fehlen alle in Potsdam.coords.data, 14476 Potsdam
 #: XXX: Planstraße 4; ggfs. in str_cont_ausnahme eintragen
@@ -3735,6 +3736,7 @@ geplante Grünanlage	?::projected 4084,15859 4055,15795 4041,15786 4224,15779 421
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.588521.php
 #: by: https://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_34_3753_3876_online.pdf (Bebauungsplan 4-66)
+#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_20_2467_2610_online.pdf (FNP-Änderung)
 #: last_checked: 2018-05-13
 #: check_frequency: 360d
 Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660,10521 2749,10584 3043,10680
@@ -3773,7 +3775,7 @@ Im Lindenhof: Planstraße B, Qualität, genaue Lage?	?::inwork 17370,12649 17475,1
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/erste-gebaeude-sind-fertig-d143656.html (Fertigstellung)
 #: XXX fehlt in Berlin.coords.data; Benennung soll zum 2017-07-01 wirksam werden
 #: XXX zuführende Straßen/Wege müssen auch eingezeichnet werden
-#: last_checked: 2018-05-14
+#: last_checked: 2018-05-18
 #: check_frequency: 90d
 Siegfried-Hirschmann-Park: neue private Platzfläche, Qualität, genaue Lage?	?::inwork 14730,11529 14800,11441
 # 
@@ -3786,8 +3788,9 @@ Bebauungsplan 6-33: hier entstehen Straßen und Wege	?::projected 3356,4870 3357,
 # REMOVED (-> strassen-orig) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7190 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036898088455/898088455/00091575/75-Anlagen/02/vzb0115_V_Benenng_Privatstr_Charl_v_Mahlsd_Rin.pdf --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_56_6505_6588_online.pdf --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_06_0773_0896_online.pdf (Grundstücksnummerierungen) --- #: osm_watch: way id="220943758" version="2" --- #: XXX fehlt in Berlin.coords.data --- #: last_checked: 2017-07-01 --- #: check_frequency: 180d --- Charlotte-von-Mahlsdorf-Ring: geplante Straße	?::projected 24649,10710 24728,10722 24739,10645
 # 
 #: by: https://www.potsdam.de/sites/default/files/documents/17256_amtsblatt_juni17_final_0.pdf
+#: by: https://www.potsdam.de/sites/default/files/documents/18133_amtsblatt5_april2018_dsjs_korr3.pdf
 #: XXX Bebauungsplan Nr. 141-1
-#: next_check: 2018-06-01
+#: next_check: 2019-06-01
 Krampnitz: neue Planstraßen	?::projected -14183,5214 -13771,5077
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.628715.php
@@ -3874,6 +3877,7 @@ Ernst-Busch-Platz (Potsdam): genaue Lage? ausgeschildert?	? -7244,-4424 -7179,-4
 # 
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_12_1519_1638_online.pdf
 #: by: https://www.wbm.de/fileadmin/_processed_/csm_pepitahoefe-spandau_grundstuecksplan_221b0b26bb.jpg
+#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_20_2467_2610_online.pdf (Grundstücksnummerierungen)
 #: XXX fehlt in Berlin.coords.data
 #: osm_watch: way id="503435551" version="2" vvv
 #: next_check: 2018-06-01 vvv
@@ -3897,6 +3901,7 @@ Bebauungsplan 10-72: eine Straße sowie eine Grünanlage mit Weg geplant	?::projec
 #: by: http://pankower-tor.de/verkehr.html
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.696563.php
 #: XXX geplant sind: eine Erschließungsstraße mit Anschluss an die Prenzlauer Promenade, eine Straße zur Damerowstr. (mit Brücke über die S-Bahn), eine weitere Fußgängerbrücke über die S-Bahn (auch für Radfahrer?) bzw. einen Tunnel in Höhe Neumannstr. (laut BA-Pressemitteilung), einen neuen Rad/Fußweg entlang der Granitzstr. und vermutlich weitere Straßen
+#: by: http://www.berliner-woche.de/pankow/bauen/senat-bezirk-und-investor-unterschrieben-grundsatzvereinbarung-fuers-pankower-tor-d161084.html
 #: next_check: 2022-01-01
 Pankower Tor: Stadtviertel mit Straßen und Wegen entsteht	?::projected 10850,17954 10859,17872 11576,18436 11906,18532 11942,19057 10850,17954
 # 
@@ -4962,6 +4967,7 @@ Baumhaselring (Potsdam-Eiche): Qualität im südlichen Abschnitt? Liegt hier auch 
 Mehlbeerenweg (Potsdam-Eiche): Qualität? Auch Verbundsteinpflaster wie die umliegenden Straßen?	? -17374,-97 -17362,-63 -17373,5 -17327,22 -17299,35
 # 
 #: by: http://www.potsdam.de/sites/default/files/documents/abl_pdmstadt_05_2015_web.pdf
+#: by: https://www.potsdam.de/sites/default/files/documents/18105_amtsblatt4_maerz2018_dsjs_korr4final.pdf
 #: XXX weitere Straßenbenennungen, fehlen alle in Potsdam.coords.data
 #: XXX Planstraße A: An der Bahn (Weiterführung)
 #: XXX Planstraße B (Nord-, Ost-, Südverlauf): Feldlerchenwinkel, PLZ=14476
@@ -5219,6 +5225,7 @@ Von-Oppen-Weg: Qualität? Wo befindet sich die Straße?	? -8445,8504 -8240,8450
 #: by: http://www.potsdam.de/cms/dokumente/10098106_1471008/11eddb87/ENDFASSUNG10_12.pdf
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_nr._1_2016.pdf (zum Bebauungsplan Speicherstadt-Süd)
 #: by: https://www.potsdam.de/sites/default/files/documents/17210_amtsblatt_mai2017_dsjs_korr3_final.pdf (ebenso)
+#: by: https://www.potsdam.de/sites/default/files/documents/final_18057_amtsblatt3_www.pdf (ebenso)
 #: last_checked: 2014-05-11
 #: next_check: 2015-01-01
 Uferweg von der Neuen Fahrt zum Hermannswerder: neuer Weg wird hier entstehen, Qualität?	?::inwork -12803,-2219 -12803,-2371 -12906,-2537 -13156,-2702
@@ -5315,6 +5322,7 @@ Bahnhofstr. (Stahnsdorf): Qualität des östlichen Endes?	? -2878,-3004 -2817,-296
 #: XXX fehlt in Potsdam.coords.data: OT Golm, PLZ=14476
 #: by: http://www.potsdam.de/sites/default/files/documents/endfassungab_nr._6l_pdmstadt2014.pdf
 Am Urnenfeld (Potsdam): Qualität?	? -18151,-1323 -18520,-1192 -18698,-1030 -18725,-827 -18682,-719
+#: by: https://www.potsdam.de/sites/default/files/documents/final_18057_amtsblatt3_www.pdf
 Mies-van-der-Rohe-Str. (Potsdam): Qualität? Existiert die Straße schon? Existiert eine Verbindung zum Fußweg?	? -14216,372 -14086,337
 Peter-Behrens-Str. (Potsdam): Qualität? Existiert die Straße schon? Existiert eine Verbindung zum Fußweg?	? -14176,482 -14032,434
 #: XXX laut osm surface=asphalt
@@ -5553,7 +5561,7 @@ Windmühlenweg (Potsdam): Qualität? Ausgeschildert?	? -17374,1564 -17373,1513 -17
 #: XXX laut osm cobblestone
 Steinstr. (Potsdam): Qualität? Liegt hier Kopfsteinpflaster?	? -8419,-1916 -8173,-2151 -8095,-2219
 # 
-Klein Marzehns - Lutherstadt Wittenberg: R1, Qualität der Wege?	? -41136,-46855 -40665,-46753 -40297,-46687 -40031,-46689 -40080,-47655 -40128,-47939 -40050,-48295 -40031,-48703 -40086,-49089 -40243,-49443 -40255,-49575 -40409,-49636 -40433,-49666 -40412,-49751 -40303,-49808 -39941,-50469 -39800,-50899 -39802,-51106 -39690,-51357 -39536,-51526 -39591,-51563 -39730,-51652 -39796,-51680 -39847,-51746 -39865,-51822 -39875,-51957 -40282,-52877 -40297,-53307 -40219,-53847 -40154,-54259 -39998,-55275 -39986,-55417 -40050,-55755 -39962,-56117 -39908,-56800 -39925,-56938 -40056,-57461 -39920,-58055 -39856,-58164 -39881,-58270 -39980,-58442 -39950,-58578 -40068,-58713 -40140,-58973 -40376,-59507 -40364,-59673 -40198,-59954 -39995,-60464 -39912,-60620 -39884,-60864 -39867,-60866 -39870,-60931
+Grabo - Lutherstadt Wittenberg: Qualität der Wege und Straßen?	? -39856,-58164 -39881,-58270 -39980,-58442 -39950,-58578 -40068,-58713 -40140,-58973 -40376,-59507 -40364,-59673 -40198,-59954 -39995,-60464 -39912,-60620 -39884,-60864 -39867,-60866 -39870,-60931
 Lutherstadt Wittenberg - Coswig: Elberadweg, Qualität der Wege?	? -39870,-60931 -40013,-60918 -40131,-60918 -40181,-60900 -40373,-60865
 Lutherstadt Wittenberg - Coswig: Elberadweg, Qualität der Wege?	? -40472,-60875 -40568,-60914 -40582,-60935 -40609,-60947 -40601,-60981 -40624,-61034 -40641,-61036 -40663,-61021 -40669,-61045 -40655,-61056 -40788,-61117 -40995,-61183 -41229,-61170 -41422,-61208 -41565,-61229 -41664,-61258 -41725,-61261 -41819,-61221 -41961,-61200 -41973,-61297 -42193,-61268 -42249,-61252 -42329,-61266 -42407,-61224 -42527,-61212 -42536,-61218 -42542,-61254 -42690,-61261 -42721,-61394 -42868,-61353 -42994,-61415 -43013,-61341 -43056,-61361 -43065,-61344 -43034,-61315 -43062,-61315 -43079,-61251 -43057,-61151 -43233,-61099 -43487,-61052 -43553,-61015 -43478,-60964 -43600,-60926 -43596,-60871 -43780,-60843 -43767,-60765
 Lutherstadt Wittenberg - Coswig: Elberadweg, Qualität der Wege?	? -45341,-60204 -45542,-60600 -45672,-60511 -46530,-60599 -46723,-60522 -46764,-60401 -47043,-60384 -47127,-60413 -47304,-60419 -47361,-60377 -47719,-60341 -47970,-60425 -48241,-60614 -48333,-60479 -48351,-60042 -48443,-59933 -48939,-59625 -48925,-59526 -49133,-59396 -49325,-59391 -49402,-59372 -49678,-59347 -49897,-59301
