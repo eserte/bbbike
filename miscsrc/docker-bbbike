@@ -258,12 +258,12 @@ EOF
 RUN echo "deb http://ftp.de.debian.org/debian/ $opt{distver} non-free" > /etc/apt/sources.list.d/$opt{distver}-non-free.list
 EOF
     } elsif ($opt{dist} eq 'ubuntu') {
-	if ($opt{distver} eq 'bionic') {
-	    # since Ubuntu 18.04 (?) multiverse seems to be enabled by default
-	} else {
+	if ($opt{distver} =~ m{^(precise|trusty)$}) {
 	    $dockerfile .= <<EOF;
 RUN echo "deb http://archive.ubuntu.com/ubuntu $opt{distver} multiverse" > /etc/apt/sources.list.d/$opt{distver}-multiverse.list
 EOF
+	} else {
+	    # since Ubuntu 16.04 multiverse is enabled by default
 	}
     } else {
 	die "Unsupported dist $opt{dist}";
@@ -515,6 +515,13 @@ EOF
 
 return 1 if caller;
 
+sub _check_distver ($) {
+    my $distver = shift;
+    if ($distver =~ m{^\d+}) {
+	die "Use symbolic --distver (i.e. bionic instead of 18.04)\n";
+    }
+}
+
 my $doit = Doit->init;
 
 my $subcmd = shift
@@ -563,6 +570,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       "with-data-build!",
 	      )
 	or usage_travis_ci;
+    _check_distver $opt{distver};
     travis_ci($doit, %opt);
 } elsif ($subcmd eq 'build-deb') {
     my %opt = (
