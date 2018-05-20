@@ -462,7 +462,7 @@ sub showmap_url_openstreetmap {
     my $py = $args{py};
     my $with_marker = $args{osmmarker};
     my $layers_spec = '';
-    my $variant = $args{variant};
+    my $variant = $args{variant} || '';
     if ($variant eq 'de') {
 	$with_marker = 0; # not implemented on openstreetmap.de
     } elsif ($variant eq 'sautter') {
