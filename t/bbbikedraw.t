@@ -513,15 +513,16 @@ sub draw_map {
 		like $info->{Creator}, qr{^BBBikeDraw::PDF version \d+\.\d+}, 'expected creator';
 		like $info->{Producer}, qr{^PDF::Create version \d+\.\d+}, 'expected producer';
 	    } else {
-		require CPAN::Version;
-		my($cairo_version) = $info->{Producer} =~ m{^cairo (\d+\.\d+\.\d+)};
-		if (CPAN::Version->vge($cairo_version, "1.15.4")) {
-		    {
+	    SKIP: {
+		    skip "CPAN::Version not available", 1
+			if !eval { require CPAN::Version; 1 };
+		    my($cairo_version) = $info->{Producer} =~ m{^cairo (\d+\.\d+\.\d+)};
+		    if (CPAN::Version->vge($cairo_version, "1.15.4")) {
 			local $TODO = "cairo 1.15.4+ has pdf metadata support, but not yet supported by the perl module";
 			like $info->{Creator}, qr{^BBBikeDraw::PDFCairo version \d+\.\d+}, 'expected creator';
+		    } else {
+			like $info->{Creator}, qr{^cairo \d+\.\d+\.\d+}, 'expected creator';
 		    }
-		} else {
-		    like $info->{Creator}, qr{^cairo \d+\.\d+\.\d+}, 'expected creator';
 		}
 		like $info->{Producer}, qr{^cairo \d+\.\d+\.\d+}, 'expected producer';
 	    }

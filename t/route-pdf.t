@@ -202,15 +202,16 @@ sub pdfinfo_test {
 	    $info_like->('Author', qr{Slaven Rezic});
 	}
 	if ($Route_PDF_class eq 'Route::PDF::Cairo') {
-	    require CPAN::Version;
-	    my($cairo_version) = $info->{Producer} =~ m{^cairo (\d+\.\d+\.\d+)};
-	    if (CPAN::Version->vge($cairo_version, "1.15.4")) {
-		{
+	SKIP: {
+		skip "CPAN::Version not available", 1
+		    if !eval { require CPAN::Version; 1 };
+		my($cairo_version) = $info->{Producer} =~ m{^cairo (\d+\.\d+\.\d+)};
+		if (CPAN::Version->vge($cairo_version, "1.15.4")) {
 		    local $TODO = "cairo 1.15.4+ has pdf metadata support, but not yet supported by the perl module";
 		    $info_like->('Creator', qr{^BBBikeDraw::PDFCairo version \d+\.\d+});
+		} else {
+		    $info_like->('Creator', qr{^cairo \d+\.\d+\.\d+});
 		}
-	    } else {
-		$info_like->('Creator', qr{^cairo \d+\.\d+\.\d+});
 	    }
 	    $info_like->('Producer', qr{^cairo\s+\d+\.\d+\.\d+});
 	} else {
