@@ -21,13 +21,13 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-05-18
+#: last_checked: 2018-05-20
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2018-05-13
+#: last_checked: 2018-05-20
 #: check_frequency: 90d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -325,7 +325,7 @@ Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q3::
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180307 (hier: Ende der Bauarbeiten August 2018, aber vielleicht ist Fahrbahn+Radweg früher schon offen?)
 #: source_id: LMS-BR_r_LMS-BR_116151_LMS-BR_72
-#: last_checked: 2018-05-17
+#: last_checked: 2018-05-20
 #: next_check: 2018-05-31
 #: valid: -20180531
 #: priority: #A
@@ -703,7 +703,7 @@ Görlitzer Park: Fußgänger, eng	q2 12802,10097 12670,10160
 Görlitzer Park: eng, Kurven, Fußgänger	q2 12507,10130 12504,10172 12509,10189 12543,10223
 Görlitzer Park: eng, Kurven, Fußgänger	q2 12504,10172 12464,10153
 Görlitzer Park: Fußgänger	q2 12543,10223 12580,10252 12608,10294
-Görlitzer Park: Fußgänger	q2 13035,10076 13013,10068 13013,10047 12987,10007 12932,9900
+Görlitzer Park: Fußgänger	q2 13035,10076 13013,10068 13013,10047 12987,10007 12960,9955 12932,9900
 Görlitzer Park: Fußgänger	q2 12509,10189 12502,10244
 Gartenufer: einige Fußgänger	q1 5790,11643 5845,11615 6067,11479 6200,11417 6337,11365 6346,11326
 Tiergartenufer: Fußgänger	q1 6186,11466 6079,11524 5919,11633 5895,11692 5835,11768 5736,11835 5543,11837 5478,11860
@@ -969,7 +969,7 @@ Am Rummelsburger See: Fußgänger an schönen Tagen	q1 15931,9846 16002,9787 16049,
 #: note: hier unübersichtlich und relativ eng, besonders vor der Kletterhalle
 Am Rummelsburger See: Fußgänger an schönen Tagen	q2+ 16120,9653 16182,9591 16268,9670
 Am Rummelsburger See: Fußgänger an schönen Tagen	q1 16268,9670 16347,9594
-# REMOVED (ist jetzt breiter) --- Unterführung unter Adlergestell und S-Bahn ist sehr eng, nicht für Anhänger geeignet	q3 20939,2413 20810,2398
+# REMOVED (ist jetzt breiter) --- Unterführung unter Adlergestell und S-Bahn ist sehr eng, nicht für Anhänger geeignet	q3 20939,2413 20904,2426 20810,2398
 # REMOVED (nun komplett gesperrt) --- Vorfahrt Reichstagsgebäude: Fußgänger	q4 8400,12417 8399,12616
 Am Teltowkanal: kurverreich und recht eng	q1 3766,1389 3695,1308 3619,1207 3419,1061 3375,1026 3366,1007
 #: XXX_prog BS (es gibt an beiden Seiten Bordsteine sowie eine zusätzliche Stufe im südlichen Bereich, ansonsten wäre es wohl q2)
@@ -1146,7 +1146,7 @@ Naturlehrpfad: Fußgänger, eng	q3 5363,24109 5264,24186 5182,24183
 Altvaterstr.: Fußgänger, Bordsteine	q2 -3117,3107 -3170,3070 -3223,3034
 #: note: laut Luftbild
 Im Gestell: Fußgänger	q1 371,4453 267,4375
-Heinitzweg: Fußgänger	q2 10329,1077 10379,1097
+Heinitzweg: Fußgänger	q2 10325,1083 10379,1097
 #: XXX_prog Bordstein ist am südlichen Wendehammer, ansonsten trotzdem q1
 Haewererweg: enge Durchfahrt, niedriger Bordstein	q1 12125,1282 12097,1243
 (Weichselstr. - Sasarsteig): Spielplatz	q3 12330,8636 12303,8605 12170,8548
@@ -1479,8 +1479,10 @@ Hortensienplatz: einige Fußgänger, Bordsteine	q3 4156,4784 4121,4841 4116,4850
 (Lustgarten entlang des Spreekanals): Fußgänger	q2 10063,12438 9956,12617 9948,12631
 Blaurackenweg: enge Straße, spielende Kinder	q1 17613,7989 17647,8071 17532,8125
 # REMOVED (echte Einbahnstraße) --- Adolf-Scheidt-Platz: enge Straße, Gegenverkehr	q2; 8731,8050 8765,8050 8783,8020 8769,7994 8731,7990
+Am Britzer Garten - Straße 229: Fußgänger	q1 11130,3838 11103,3960
 Am Britzer Garten - Straße 229: steile Brücke	q3 11103,3960 11104,3981
-Am Britzer Garten - Straße 229: enger Weg; Fußgänger	q2 11104,3981 11111,4055
+Am Britzer Garten - Straße 229: enger Weg; Fußgänger	q3 11104,3981 11111,4055
+Am Britzer Garten - Straße 229: Fußgänger	q1 11111,4055 11141,4214 11153,4325
 Kaunstr.: Fußgänger	q1 -999,2726 -984,2692
 (Römerweg - Weg entlang der Bahnstrecke): enger Weg	q2 18445,9887 18436,9842 18421,9764
 Brascheweg: enge Straße	q1 18881,9865 18810,9850
@@ -2417,8 +2419,8 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="5"
-#: last_checked: 2018-05-06
-#: check_frequency: 90d
+#: last_checked: 2018-05-20
+#: check_frequency: 120d
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
 Insel-Rügen-Weg: eng	q2 10967,17671 10978,17589 11064,17599
@@ -2776,6 +2778,14 @@ Waldstr.: Fußgänger auf dem asphaltiertern Weg	q2 5384,13555 5390,13616 5417,138
 Heinrich-Laehr-Park: Fußgänger	q1 1525,581 1655,615 1646,665 1668,791 1680,802
 (Gotlindestr. - Bornitzstr.): Spielplatz	q3 16432,12612 16433,12626 16421,12682 16428,12741
 (Bärbel-Bohley-Ring - Ramlerstr.): einige Fußgänger	q1 9744,15793 9644,15780
+#: XXX_prog: BS am Buckower Damm, ansonsten keine Einschränkung
+(Christoph-Ruden-Str. - Buckower Damm): Bordstein	q1 12725,1429 12939,1469
+(Alt-Lichtenrade - Töpchiner Weg): einige Fußgänger	q1 10950,-438 11207,-413
+Am Lichtenrader Graben: einige Fußgänger	q1 10695,-1515 10615,-1772 10537,-1943 10513,-1954
+(Mellener Str. - Lichtenrader Graben): einige Fußgänger	q1 10771,-1782 10615,-1772
+(Schwedter Str. - Alt-Lichtenrade): schmal	q2 11023,-374 11010,-378 10938,-405
+#: XXX_prog: BS an der Sackgasse, ansonsten q2
+Dorotheenstr.: Bordstein, Fußgänger	q3 22926,4123 22949,4136
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -2895,7 +2905,7 @@ Propst-Süßmilch-Weg: Fußgängerzone	q2 856,3188 813,3202 797,3216 727,3231 649,32
 #: corrected_by: srt (q1 -> ...)
 Zangengasse: parkende Fahrzeuge	q0- 5959,20524 5714,20784 5641,20857 5609,20968
 #: by: Thomas Hallmann:
-Lintruper Str.: teilweise wegen parkender Autos eng	q1 10307,922 10380,757 10423,636 10506,405 10550,282 10614,105 10665,-200 10729,-386
+Lintruper Str.: teilweise wegen parkender Autos eng	q1 10324,925 10380,757 10423,636 10506,405 10550,282 10614,105 10665,-200 10729,-386
 #: by: Detlef Hüttemann:
 Spandauer Str.: enge Straße	q1 -6442,14186 -6261,14213
 #: by: Thunig, Christina:

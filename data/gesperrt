@@ -642,7 +642,7 @@ Heinrich-Gr¸ber-Platz	1 22877,11940 22858,11937 22843,11999 22856,12003 22870,12
 Boraweg	1s 6763,2879 6710,2909 6658,2907
 Viktoriaplatz	1 3500,4146 3523,4139 3528,4118 3518,4106 3489,4115 3485,4137 3500,4146
 Glaserweg	1 10187,872 10237,749
-Lintruper Str.	1 10307,922 10380,757
+Lintruper Str.	1 10324,925 10380,757
 Alt-Buckow	1s 12574,1866 12561,1931
 Alt-Buckow	1 12561,1931 12817,2031
 Alt-Schmˆckwitz	1 27396,-3101 27428,-3137 27427,-3171 27413,-3196 27388,-3199 27378,-3183 27382,-3151 27396,-3101
@@ -816,7 +816,7 @@ Markgrafenstr.	1 9799,10846 9834,10840
 Morgensternstr.	1 5212,2360 5229,2395
 Gotenburger Str.: Einfahrt verboten	1s 9000,16803 8847,16870
 Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
-Fritz-Werner-Str.	1s 9102,2780 9076,2594
+Fritz-Werner-Str.	1s 9105,2779 9081,2594
 Kraftwerk Reuter West	2 -447,14338 -495,14311 -650,14355 -792,14258 -1002,14162 -1020,14084
 Bechstedter Weg	1 3467,9045 3661,8815 3701,8849
 Floyd-L.-Parks-Weg	1 2352,1267 2315,1251 2370,1127
@@ -1371,11 +1371,12 @@ Allee der Kosmonauten -> Alt-Marzahn: Straﬂenbahntrasse	3::igndisp 21163,15289 2
 Alt-Marzahn -> Allee der Kosmonauten: Straﬂenbahntrasse	3::igndisp 21139,15376 21187,15350 21228,15449
 Straﬂenbahn auf der Fahrbahn	3nocross::ignrte 10089,18180 10054,18210 9909,18333
 Schˆnholzer Str. -> Wollankstr.: Straﬂenbahn auf der Fahrbahn	3::igndisp 10089,18180 10054,18210 10027,18165
-Straﬂenbahntrasse	3nocross::ignrte 22674,4309 22812,4227 22888,4184 22965,4124
+Straﬂenbahntrasse	3nocross::ignrte 22674,4309 22812,4227 22888,4184 22949,4136 22965,4124
 M¸ggelheimer Str. -> Pohlestr.: Straﬂenbahntrasse	3::igndisp 22888,4184 22812,4227 22831,4070
 Pohlestr. -> M¸ggelheimer Str.: Straﬂenbahntrasse	3::igndisp 22831,4070 22812,4227 22674,4309
 M¸ggelheimer Str. -> Weg im Salvador-Allende-Viertel: Straﬂenbahntrasse	3::igndisp 22812,4227 22888,4184 22957,4264
-Weg im Salvador-Allende-Viertel -> M¸ggelheimer Str.: Straﬂenbahntrasse	3::igndisp 22957,4264 22888,4184 22965,4124
+Weg im Salvador-Allende-Viertel -> M¸ggelheimer Str.: Straﬂenbahntrasse	3::igndisp 22957,4264 22888,4184 22949,4136
+Dorotheenstr. -> M¸ggelheimer Str.: Straﬂenbahntrasse	3::igndisp 22926,4123 22949,4136 22888,4184
 Straﬂenbahntrasse	3nocross::ignrte 12090,16199 12097,16263 12077,16380
 Prenzlauer Promenade -> Gustav-Adolf-Str.: Straﬂenbahntrasse	3::igndisp 12077,16380 12097,16263 12182,16322
 Prenzlauer Promenade -> Caligaripl.: Straﬂenbahntrasse	3::igndisp 12077,16380 12097,16263 12121,16317
@@ -2617,7 +2618,7 @@ Dr‰ngelgitter	BNP:3:-179:trailer=10 -4149,16929
 weites Dr‰ngelgitter	BNP:2:-264:trailer=7 -3436,16838
 Schranke	BNP:3:-20:trailer=10 5003,19833
 Schranke	BNP:0:-59:trailer=3 5388,19186
-Dr‰ngelgitter	BNP:3:-90:trailer=10 10173,1049
+Dr‰ngelgitter	BNP:3:-65:trailer=10 10173,1049
 Dr‰ngelgitter	BNP:3:-68:trailer=10 10223,1029
 Schranke	BNP:0:-180:trailer=5 7222,6436
 Dr‰ngelgitter	BNP:3:83:trailer=10 6129,12976

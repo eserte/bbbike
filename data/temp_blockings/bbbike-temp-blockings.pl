@@ -12821,7 +12821,7 @@ EOF
        text  => 'Unterführung unter Adlergestell und Bahn wegen Brückenerneuerung gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 20810,2398 20939,2413
+	2::inwork 20810,2398 20904,2426 20939,2413
 EOF
      },
      { from  => 1223320498, # 2008-10-06 21:14
@@ -26541,7 +26541,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-05-04
+#: last_checked: 2018-05-20
 	2::inwork 14652,10201 14569,10055
 EOF
      },
@@ -26913,7 +26913,7 @@ EOF
 	2::temp 12509,10189 12502,10244 12543,10223 12580,10252 12608,10294
 	2::temp 12328,10442 12331,10409 12384,10368 12457,10309 12502,10244
 	2::temp 12504,10172 12507,10130
-	2::temp 12932,9900 12987,10007 13145,9920
+	2::temp 12932,9900 12960,9955 12987,10007 13145,9920
 EOF
      },
      { from  => 1525125600, # 2018-05-01 00:00
@@ -26944,7 +26944,7 @@ EOF
        text  => 'Mentelinstr.: Bauarbeiten zwischen Nalepastr. und Otto-Krüger-Zeile, Fahrbahn gesperrt, Ende unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2018-05-17
+#: last_checked: 2018-05-20
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? Wird sich die Qualität der Fahrbahn nach den Bauarbeiten verbessern?
 	q4::inwork 17456,7132 17352,7051
 EOF
@@ -27074,14 +27074,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1526713587, # BVG: "Beendete Verkehrsstörung" --- undef, # XXX
        text  => 'Grumbkowstr.: Bauarbeiten, Fahrbahn zwischen Rolandstr. und Blankenburger Str. gesperrt, Ende unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=31981
-#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2018-04-28
-#: check_frequency: 60d
+# REMOVED --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2018-04-28 --- #: check_frequency: 60d
 	q4::inwork 11627,19907 11555,20051
 EOF
      },
@@ -27134,7 +27132,7 @@ EOF
 EOF
      },
      { from  => 1526407304, # 2018-05-15 20:01
-       until => 1530395999, # 2018-06-30 23:59
+       until => $isodate2epoch->("2018-06-29 20:00:00"), # 1530395999, # 2018-06-30 23:59
        text  => 'Lise-Meitner-Str.: Bauarbeiten zwischen Gaußstr. und Ringbahnbrücke, Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis Ende Juni 2018',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.701215.php',

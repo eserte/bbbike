@@ -949,7 +949,7 @@ Heinrich-Grüber-Platz	1 22877,11940 22858,11937 22843,11999 22856,12003 22870,12
 Boraweg	1s:q4 6763,2879 6710,2909 6658,2907
 Viktoriaplatz	1 3500,4146 3523,4139 3528,4118 3518,4106 3489,4115 3485,4137 3500,4146
 Glaserweg	1 10187,872 10237,749
-Lintruper Str.	1 10307,922 10380,757
+Lintruper Str.	1 10324,925 10380,757
 Alt-Buckow	1s:q3 12574,1866 12561,1931
 Alt-Buckow	1 12561,1931 12817,2031
 Alt-Schmöckwitz	1 27396,-3101 27428,-3137 27427,-3171 27413,-3196 27388,-3199 27378,-3183 27382,-3151 27396,-3101
@@ -1172,9 +1172,9 @@ Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-03-16-prot-fahrratsitzung.pdf
 #: XXX evtl wird die Straße für Radfahrer geöffnet
 #: osm_watch: way id="31540773" version="12"
-#: last_checked: 2017-05-06
+#: last_checked: 2018-05-19
 #: check_frequency: 180d
-Fritz-Werner-Str.	1s:q3 9102,2780 9076,2594
+Fritz-Werner-Str.	1s:q3 9105,2779 9081,2594
 # 
 Kraftwerk Reuter West	2 -447,14338 -495,14311 -650,14355 -792,14258 -1002,14162 -1020,14084
 # 
@@ -1635,7 +1635,7 @@ Blumberger Damm: Mittelstreifen	3nocross 21709,15808 21682,15673 21675,15636 216
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 21242,15529 21228,15449 21187,15350 21163,15289
 Schönholzer Str.: Straßenbahn auf der Fahrbahn	3nocross 10089,18180 10054,18210 9909,18333
 #: by: stefan: (sw-...)
-Müggelheimer Str.: Straßenbahntrasse	3nocross 22674,4309 22812,4227 22888,4184 22965,4124
+Müggelheimer Str.: Straßenbahntrasse	3nocross 22674,4309 22812,4227 22888,4184 22949,4136 22965,4124
 Prenzlauer Promenade: Straßenbahntrasse	3nocross 12090,16199 12097,16263 12077,16380
 #: note: Luftbild: vvv
 Prenzlauer Promenade: Straßenbahntrasse	3nocross 12051,16535 12077,16380 12097,16263
@@ -2370,12 +2370,11 @@ Baumstamm als Barriere	BNP:0::trailer=5 -1527,18645
 mehrere Poller	BNP:1::trailer=6 12299,19143
 Poller	BNP:1::trailer=6 8350,10662
 Drängelgitter	BNP:3::trailer=10 10062,15927
-#: next_check_id: LORTZING-2014
 #: next_check_id: LICHTBURGRING-2017
 #: osm_watch: node id="2456723872" version="2"
 #: osm_watch: node id="2456723871" version="3"
 #: XXX eventuell temporär wegen der Baustraße (vielleicht für das Wohngebiet Lichtburgring?)
-#: last_checked: 2018-04-20
+#: last_checked: 2018-05-17
 zwei Drängelgitter	BNP:6::trailer=15 10038,15418
 Schranke	BNP:3 -7969,-1659
 # REMOVED (existiert nicht mehr) --- Drängelgitter	BNP:3::trailer=10 18126,9075

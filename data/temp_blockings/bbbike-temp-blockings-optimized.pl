@@ -4336,7 +4336,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-05-04
+#: last_checked: 2018-05-20
 	2::inwork 14652,10201 14569,10055
 ',
          'from' => undef,
@@ -4473,7 +4473,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: last_checked: 2018-05-17
+         'data' => '#: last_checked: 2018-05-20
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? Wird sich die Qualität der Fahrbahn nach den Bauarbeiten verbessern?
 	q4::inwork 17456,7132 17352,7051
 ',
@@ -4525,19 +4525,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1547074800
        },
-       {
-         'data' => '#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=31981
-#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2018-04-28
-#: check_frequency: 60d
-	q4::inwork 11627,19907 11555,20051
-',
-         'from' => undef,
-         'id' => 2951,
-         'text' => 'Grumbkowstr.: Bauarbeiten, Fahrbahn zwischen Rolandstr. und Blankenburger Str. gesperrt, Ende unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: last_checked: 2018-05-06
 	2::inwork 21696,5053 21600,5221 21512,5404 21487,5425
@@ -4598,7 +4586,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.701215.php',
          'text' => 'Lise-Meitner-Str.: Bauarbeiten zwischen Gaußstr. und Ringbahnbrücke, Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis Ende Juni 2018',
          'type' => 'handicap',
-         'until' => 1530395999
+         'until' => 1530295200
        },
        undef,
        {

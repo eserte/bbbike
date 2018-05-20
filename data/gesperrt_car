@@ -324,7 +324,7 @@ Skalitzer Str. -> Admiralstr.: Skalitzer/Admiralstr.	3::igndisp 11393,10390 1133
 Admiralstr. -> Skalitzer Str.: Skalitzer/Admiralstr.	3::igndisp 11325,10317 11335,10375 11316,10372
 Gutenbergstr.	1 -12045,-757 -12227,-724
 Langhoffstr.	1 19817,14371 19818,14064
-Lintruper Str.	1 10307,922 10380,757
+Lintruper Str.	1 10324,925 10380,757
 Edison-/Siemensstr.	3 17991,6431 17962,6674 17860,6644
 Edisonstr.	1 17962,6674 17991,6431
 Brückenstr./Edisonstr.	1 17991,6431 17952,6246 17930,6175 17900,6072
@@ -667,8 +667,8 @@ Straßenbahntrasse	3nocross::ignrte 13826,16026 13737,15994 13623,15954
 Berliner Allee -> Parkstr.: Straßenbahntrasse	3::igndisp 13623,15954 13737,15994 13712,16089
 Parkstr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13712,16089 13737,15994 13826,16026
 Talsandweg: Einbahnstraße	1 3206,21179 3138,21372
-Mittelstreifen	3nocross::ignrte 10047,813 10187,872 10269,906
-Buckower Chaussee -> Glaserweg: Mittelstreifen	3::igndisp 10269,906 10187,872 10237,749
+Mittelstreifen	3nocross::ignrte 10047,813 10187,872 10276,906
+Buckower Chaussee -> Glaserweg: Mittelstreifen	3::igndisp 10276,906 10187,872 10237,749
 Glaserweg -> Buckower Chaussee: Mittelstreifen	3::igndisp 10237,749 10187,872 10047,813
 Mittelstreifen	3nocross::ignrte 10485,807 10539,662 10590,525
 Lichtenrader Damm -> Reichnerweg: Mittelstreifen	3::igndisp 10485,807 10539,662 10726,739
@@ -677,12 +677,12 @@ Feldstedter Weg -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10423,636 10539,
 Feldstedter Weg -> Reichnerweg: Mittelstreifen	3::igndisp 10423,636 10539,662 10726,739
 Reichnerweg -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10726,739 10539,662 10590,525
 Reichnerweg -> Feldstedter Weg: Mittelstreifen	3::igndisp 10726,739 10539,662 10423,636
-Mittelstreifen	3nocross::ignrte 10425,971 10485,807 10539,662
-Lichtenrader Damm -> Baldersheimer Weg: Mittelstreifen	3::igndisp 10425,971 10485,807 10674,882
+Mittelstreifen	3nocross::ignrte 10427,968 10485,807 10539,662
+Lichtenrader Damm -> Baldersheimer Weg: Mittelstreifen	3::igndisp 10427,968 10485,807 10674,882
 Baldersheimer Weg -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10674,882 10485,807 10539,662
 Mittelstreifen	3nocross::ignrte 10539,662 10590,525 10617,452 10620,445
-Lichtenrader Damm -> Dielingsgrund: Mittelstreifen	3::igndisp 10539,662 10590,525 10782,587
-Dielingsgrund -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10782,587 10590,525 10617,452
+Lichtenrader Damm -> Dielingsgrund: Mittelstreifen	3::igndisp 10539,662 10590,525 10783,587
+Dielingsgrund -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10783,587 10590,525 10617,452
 Mittelstreifen	3nocross::ignrte 10638,403 10676,299 10713,197 10737,132
 Lichtenrader Damm -> Kraatzweg: Mittelstreifen	3::igndisp 10638,403 10676,299 10866,364
 Kraatzweg -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10866,364 10676,299 10713,197
