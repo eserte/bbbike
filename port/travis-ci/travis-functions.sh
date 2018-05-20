@@ -86,7 +86,7 @@ install_non_perl_dependencies() {
     else
 	pdftk_package=pdftk
     fi
-    sudo apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera ttf-dejavu gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package poppler-utils tzdata
+    sudo -E apt-get install -qq freebsd-buildutils libproj-dev proj-bin libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera ttf-dejavu gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package poppler-utils tzdata
     if [ "$BBBIKE_TEST_SKIP_MAPSERVER" != "1" ]
     then
 	sudo apt-get install -qq mapserver-bin cgi-mapserver
