@@ -21,7 +21,7 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualit‰t danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-05-20
+#: last_checked: 2018-05-21
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
@@ -432,7 +432,7 @@ Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fuﬂg‰nger	q3 5894,12480 5944,12
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 
 #: next_check_id: DIESEL-2015
-#: last_checked: 2018-05-04
+#: last_checked: 2018-05-21
 Dieselstr., Umfahrung: Fuﬂg‰nger, Bordstein, schmal	q2::inwork 14326,8062 14366,8058 14384,8056 14425,8052 14484,8044
 # 
 # REMOVED (so gut wie fertig, Schlupflˆcher durch die Absperrungen) --- #: last_checked: 2015-07-29 --- #: check_frequency: 7d --- #: priority: #A --- Ganghoferstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12805,8194 12873,8217 12918,8232
@@ -605,8 +605,9 @@ Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.692745.php
 #: by: http://www.berliner-woche.de/pankow/verkehr/sperrung-rosenthaler-weg-umleitung-vom-2-mai-bis-zum-25-juni-d159605.html
 #: source_id: 2147342534
-#: valid: -20180629
 #: priority: #B
+#: next_check: 2018-06-29
+#: valid: -20180629
 Rosenthaler Weg: Bauarbeiten, Radfahrer kˆnnen auf dem Gehweg passieren, bis 29. Juni 2018	q1-::inwork 10228,21940 10312,21969 10377,21991 10436,22010 10493,22029 10554,22050 10613,22070 10673,22090 10709,22102 10769,22122 10828,22142 10892,22165 10935,22174 10999,22195
 # 
 #: temporary ^^^
@@ -1102,6 +1103,7 @@ Langhoffstr.: enge Straﬂe, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20140603.1435.397678.html (Vorlage 096/2014)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
+#: osm_watch: way id="223184082" version="2"
 #: last_checked: 2018-02-10
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
@@ -2786,6 +2788,7 @@ Am Lichtenrader Graben: einige Fuﬂg‰nger	q1 10695,-1515 10615,-1772 10537,-1943 
 (Schwedter Str. - Alt-Lichtenrade): schmal	q2 11023,-374 11010,-378 10938,-405
 #: XXX_prog: BS an der Sackgasse, ansonsten q2
 Dorotheenstr.: Bordstein, Fuﬂg‰nger	q3 22926,4123 22949,4136
+Elisabeth-Schiemann-Str.: einige Bodenschwellen, meist umfahrbar	q1+ 20586,18822 20553,18734 20533,18682 20512,18626 20448,18454 20458,18424
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -3466,8 +3469,7 @@ Allee der Kosmonauten - Biesdorfer Promenade: Fuﬂg‰nger	q1 19826,13444 19837,132
 #: by: Bob L¸der:
 Rathener Str.: enge Straﬂe	q1 24228,14644 24271,14576 24359,14543
 # 
-#: by: anonymous
-Tr¸tzschlerstr.: enge Straﬂe	q1 17471,4570 17612,4460 17748,4349
+# REMOVED (nicht auff‰llig) --- #: by: anonymous --- Tr¸tzschlerstr.: enge Straﬂe	q1 17471,4570 17612,4460 17748,4349
 # 
 #: by: J¸rgen Jacobi:
 #: corrected_by: Roland Mohrbacher (added "hohe Bordsteinkanten", deshalb q3 -> q4)
@@ -3854,13 +3856,16 @@ Hackenbergstr.: enge Straﬂe	q1 20428,3786 20380,3855 20329,3928 20280,3996 20253
 Breestpromenade: enge Straﬂe	q1 25761,5613 26059,5631 26199,5643
 #: by: Theo Schallon:
 Zellerfelder Str.: enge Straﬂe	q1 11526,18929 11468,19106
+# 
 #: by: Volker (retzlaff): vvv
 #: note: 3m breit
 #: corrected_by: srt/policy (q2 -> q1)
 Burghardweg: enge Straﬂe	q1 21533,14009 21561,14257 21584,14459
 #: note: 3m breit
+#: confirmed_by: srt
 Diethelmweg: enge Straﬂe	q1 21649,13995 21677,14241 21696,14430
 #: by: ^^^
+# 
 #: by: Thorsten Neumann:
 #: corrected_by: srt (nothing -> q1)
 Bat-Yam-Platz: Fuﬂg‰nger	q1 14515,2212 14545,2206 14633,2145

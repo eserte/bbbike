@@ -771,7 +771,7 @@ Am Tierpark [Wohngebiet]	1 18552,10220 18538,10189 18484,10326
 (Freiherr-vom-Stein-Str. - Dominicusstr.)	1::igndisp 6477,8654 6454,8653
 Neue Jakobstr./Schulze-Delitzsch-Platz	1 11060,11753 11073,11774
 Edith-Kiss-Str.	1 12793,11132 12866,11256
-Garzauer Str.	1 21830,13688 21722,13708
+Garzauer Str.	1 21830,13688 21722,13708 21731,13789
 Flankenschanze	1 -3507,15341 -3534,15219
 Berliner Str. (Pankow, Prenzlauer Berg) [zur Tiroler Str.]	1 10862,17087 10891,17088 10917,17088
 Alt-Moabit - Invalidenstr.	1 7415,13060 7422,13012
@@ -1278,6 +1278,7 @@ Alt-Kaulsdorf -> Alt-Kaulsdorf [Nebenfahrbahn]: Mittelstreifen	3::igndisp 23101,
 Alt-Kaulsdorf [Nebenfahrbahn] -> Alt-Kaulsdorf: Mittelstreifen	3::igndisp 23382,11279 23362,11263 23447,11264
 Alt-Kaulsdorf -> Finkenwalder Weg: Mittelstreifen	3::igndisp 23362,11263 23447,11264 23449,11281
 Finkenwalder Weg -> Alt-Kaulsdorf: Mittelstreifen	3::igndisp 23449,11281 23447,11264 23648,11265
+Mittelstreifen	3nocross::ignrte 22937,11265 22996,11264 23101,11261
 Mittelstreifen	3nocross::ignrte 24175,11265 24019,11264 23848,11264 23648,11265
 Alt-Mahlsdorf -> Gielsdorfer Str.: Mittelstreifen	3::igndisp 23848,11264 24019,11264 24019,11286
 Gielsdorfer Str. -> Alt-Mahlsdorf: Mittelstreifen	3::igndisp 24019,11286 24019,11264 24175,11265
@@ -2338,8 +2339,8 @@ tragen (4 Stufen)	0:6:-210 27361,-1551
 tragen (2 Stufen)	0:5:-180 3431,1987
 tragen	0:35:-120 3580,4309
 tragen (ca. 34 Stufen)	0:35:-138 22675,12008
-tragen (ca. 30 Stufen)	0:30:-177 22859,12059
-tragen (ca. 30 Stufen)	0:30:-174 22857,12014
+tragen (13+14 Stufen)	0:30:-177 22859,12059
+tragen (12+13 Stufen)	0:30:-174 22857,12014
 tragen (20 Stufen)	0:30:-75 -1887,16673
 tragen (ca. 10 Stufen)	0:15:-61 -2194,20135
 tragen (ca. 60 Stufen)	0:100:-55 28016,71

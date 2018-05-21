@@ -12,8 +12,12 @@ Kastanienallee: Tram auf Fahrbahn	CS 10177,13766 10193,13816 10263,13977 10370,1
 # REMOVED (mittlerweile gibt es genug Platz zwischen Parkstreifen und Schienen) --- Kastanienallee: Tram auf Fahrbahn	CS 10530,14452 10723,14772 10838,14962 10881,15047
 W¸hlisch/Kopernikusstr.: Tram auf Fahrbahn	CS 13651,11731 13895,11663 13954,11647 13996,11631 14065,11605 14211,11552 14305,11514 14369,11489 14434,11465 14575,11407
 Weichsel/Scharnweberstr.: Tram auf Fahrbahn	CS 14639,11512 14710,11626 14794,11770 14802,11784 14835,11840 14887,11929 14965,11921 15080,11905 15121,11899 15248,11880
-#: XXX_prog: allerdings existieren Radwege, sollte also bei Optimierungen ignoriert werden
-Wendenschloﬂstr.: Tram auf Fahrbahn	CS 22674,4309 22641,4095 22640,4081 22643,4058 22668,3884 22714,3558 22742,3382 22811,3037 22831,2915 22849,2856 22904,2675 22982,2418 23064,2147 23099,2031 23185,1649
+#: XXX_prog: allerdings existieren Radwege, sollte also bei Optimierungen ignoriert werden vvv
+Wendenschloﬂstr.: Tram auf Fahrbahn	CS 22674,4309 22641,4095 22640,4081 22643,4058 22666,3888
+Wendenschloﬂstr.: Tram auf Fahrbahn	CS; 23099,2031 23064,2147 22982,2418 22904,2675 22849,2856 22831,2915 22811,3037 22742,3382 22714,3558 22666,3888
+Wendenschloﬂstr.: Tram auf Fahrbahn	CS 23214,1522 23185,1649 23099,2031
+Wendenschloﬂstr.: Tram auf Fahrbahn	CS; 23243,1398 23214,1522
+#: XXX_prog ^^^
 Degnerstr.: Tram auf Fahrbahn	CS; 16448,15593 16469,15659 16537,15827
 # REMOVED (hier gibt es Radverkehrsanlagen) --- Herzbergstr.: Tram auf Fahrbahn	CS 15513,13539 15626,13541 15653,13542 15724,13544 15896,13547
 Herzbergstr.: Tram auf Fahrbahn	CS 15896,13547 16629,13532 16866,13532
