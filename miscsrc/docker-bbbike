@@ -32,7 +32,7 @@ EOF
 
 sub usage_gui (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
-usage: $0 [--dry-run] gui [--dist debian|ubuntu|...] [--distver stretch|...] [--src local|github] [--env KEY=VAL ...] [--bbbike-args "..."] [--no-install-recommends] [--install-suggests]
+usage: $0 [--dry-run] gui [--dist debian|ubuntu|...] [--distver stretch|...] [--src local|github] [--env KEY=VAL ...] [--bbbike-args "..."] [--no-install-recommends] [--install-suggests] [--no-feature-pdf]
 
 Note that --install-suggests would install quite a lot...
 EOF
@@ -89,16 +89,26 @@ sub gui {
 FROM $opt{dist}:$opt{distver}
 RUN apt-get update
 EOF
-    if ($opt{src} eq 'github') {
-	$dockerfile .= <<EOF;
-RUN apt-get install -qqy perl-tk git
+    if ($opt{src} =~ m{^(github|local)$}) {
+	my @packages = qw(perl-tk);
+	if ($opt{'feature-pdf'}) {
+	    push @packages, qw(libcairo-perl libpango-perl);
+	}
+	if ($opt{src} eq 'github') {
+	    push @packages, 'git';
+	}
+	$dockerfile .= <<"EOF";
+RUN apt-get install -qqy @packages
+EOF
+	if ($opt{src} eq 'github') {
+	    $dockerfile .= <<"EOF";
 CMD git clone --depth=1 git://github.com/eserte/bbbike.git && bbbike/bbbike $opt{'bbbike-args'}
 EOF
-    } elsif ($opt{src} eq 'local') {
-	$dockerfile .= <<EOF;
-RUN apt-get install -qqy perl-tk
+	} elsif ($opt{src} eq 'local') {
+	    $dockerfile .= <<"EOF";
 CMD /bbbike/bbbike $opt{'bbbike-args'}
 EOF
+	}
     } elsif ($opt{src} =~ m{\.deb$}) {
 	require File::Basename;
 	my $base_src = File::Basename::basename($opt{src});
@@ -537,6 +547,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'bbbike-args' => '',
 	       'install-recommends' => 1,
 	       'install-suggests' => 0,
+	       'feature-pdf' => 1,
 	      );
     GetOptions(\%opt,
 	       "dist=s",
@@ -547,6 +558,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'bbbike-args=s',
 	       'install-recommends!',
 	       'install-suggests!',
+	       'feature-pdf!',
 	      )
 	or usage_gui;
     gui($doit, %opt);
