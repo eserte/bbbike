@@ -1,111 +1,6 @@
-$#temp_blocking = 2;
+$#temp_blocking = 73;
 push @temp_blocking,
 (
-       {
-         'data' => '#: by: http://www.berlin.de/tickets/suche/detail.php?id=810735
-	2::temp 9521,10010 9827,10051
-	2::temp 9521,10010 9448,10014
-	2::temp 9599,10175 9687,10180 9825,10206
-	2::temp 9416,10196 9599,10175
-	2::temp 9579,10122 9536,10064
-	2::temp 9579,10122 9631,10142 9702,10129
-	2::temp 9837,10117 9827,10051
-	2::temp 9837,10117 9858,10199
-	2::temp 9599,10175 9579,10122
-	2::temp 9702,10129 9827,10051
-	2::temp 9702,10129 9816,10119
-	2::temp 9599,10175 9631,10142 9687,10180
-	2::temp 9825,10206 9865,10227 9948,10280
-	2::temp 9873,10285 9865,10227 9858,10199
-	2::temp 9825,10206 9858,10199
-	3 9922,10010 9827,10051 9837,9856
-	3 9837,9856 9827,10051 9922,10010
-	2::temp 9827,10051 9837,9856
-	2::temp 9837,9856 9723,9842 9588,9827 9387,9804
-',
-         'from' => 1526508000,
-         'id' => 3,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'easter',
-                              47
-                            ]
-                          ],
-         'text' => 'Straßenfest rund um den Blücherplatz, 18.05.2018 bis 21.05.2018',
-         'type' => 'gesperrt',
-         'until' => 1526939999
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'data' => '#: by: http://www.stadtfest.berlin/de/index.html
 	2::temp 6499,10086 6609,10147 6626,10155 6729,10212
@@ -4355,7 +4250,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-05-09 vvv
+#: last_checked: 2018-05-17 (mapillary) vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438

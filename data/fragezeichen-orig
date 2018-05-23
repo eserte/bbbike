@@ -22,7 +22,7 @@
 Mehringdamm: Radspuren oder Sanierung	?::projected; 9224,9053 9225,9111 9248,9350 9280,9476 9334,9670 9387,9804 9444,9919 9448,10014
 # 
 #: XXX außerdem: Nordseite wird saniert
-#: last_checked: 2018-05-16
+#: last_checked: 2018-05-22
 #: next_check: 2018-12-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -63,7 +63,7 @@ Danziger Str.	?::projected 12616,14315 12722,14232 12901,14093 12975,13990 13037
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2018-05-18
+#: last_checked: 2018-05-22
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -200,7 +200,7 @@ Quickborner Str.: werden hier Radspuren markiert?	?::projected 7991,21531 7966,2
 #: source_id: LMS-BR_r_LMS-BR_116482_LMS-BR_72
 #: source_id: LMS-BR_r_LMS-BR_120876_LMS-BR_72
 #: last_checked: 2018-04-28
-#: next_check: 2018-05-22
+#: next_check: 2018-06-22
 # REMOVED --- #: check_frequency: 360d
 Schönerlinder Str.: hier entstehen bessere Radwege	?::inwork 11929,23946 11959,24220 11980,24276 12108,24547 12136,24607 12254,24857 12395,25143 12461,25270 12543,25423 12624,25570
 #: last_checked: 2018-04-28
@@ -292,6 +292,7 @@ Pasewalker Str.: Radspuren geplant	?::projected 11907,19749 11909,19706 11911,19
 #: XXX Fahrbahninstandsetzung mit anschließenden Umbau der Radwege
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.297917.php
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.341719.php
+#: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html (hier: weiter bis Groß-Glienicker Weg)
 #: osm_watch: way id="33116304" version="16"
 #: last_checked: 2017-07-15
 #: check_frequency: 90d
@@ -307,6 +308,7 @@ Kladower Damm: Radpuren bis 2015 geplant	?::projected; -5097,7361 -5046,7442 -49
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.563697.php
 #: by: http://www.berliner-woche.de/gatow/verkehr/im-sueden-wird-wieder-gebaut-drei-hauptstrassen-werden-grundsaniert-aber-nicht-vor-2020-d143349.html
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9307
+#: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html
 #: source_id: 2147342311
 #: last_checked: 2018-04-23 (mapillary)
 Kladower Damm: Radpuren in Arbeit	?::inwork; -4819,7833 -4578,8336
@@ -838,24 +840,32 @@ Bundesallee: Verbesserung -> Einrichtung von Zweirichtungsradwegen zur Pariser u
 #: last_checked: 2018-03-11
 Messedamm: Verbesserung -> vermutlich Radspuren? in beiden Richtungen oder nur auf der ZOB-Seite?	?::projected 2102,11307 2037,11122 2011,11046
 # 
+#: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html (hier: von Rohrdamm (was noch Nonnendammallee ist) bis Nikolaus-Groß-Weg; gekürzt)
 #: last_checked: 2017-11-04
-Siemensdamm: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 1361,14384 1420,14369 1479,14343 1709,14243 1932,14146 2087,14078 2211,14074 2301,14078 2795,14161
+Siemensdamm: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 1361,14384 1420,14369 1479,14343 1709,14243 1932,14146 2087,14078
+# REMOVED (weggekürzt) --- Siemensdamm: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 2087,14078 2211,14074 2301,14078 2795,14161
 # 
 #: last_checked: 2018-03-20 (mapillary)
 Spandauer Damm: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Nordseite?	?::projected 655,12690 546,12720 533,12724 99,12849 -129,12947 -205,12985
 # 
 # REMOVED (realisiert) --- #: by: https://www.facebook.com/baustellen.berlin/posts/370595350055565 --- #: last_checked: 2017-11-04 --- #: next_check: 2017-12-28 --- Heerstr.: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Südseite?	?::inwork -4903,12055 -4639,11973 -4503,11930
 # 
+#: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html (hier: beidseitig)
+#: last_checked: 2018-05-20 (mapillary)
+#: check_frequency: 60d
 Falkenseer Chaussee: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Südseite?	?::projected -6722,16112 -6578,16063 -6313,15996 -6144,15946 -6073,15925 -5911,15877
 # 
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9307
+#: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html
 Falkenseer Chaussee: Sanierung des Radwegs (welche Seite?) prüfen	? -5470,15750 -5370,15721 -5153,15658 -5039,15618 -4710,15530 -4591,15496
 # 
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9307
+#: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html
 Nauener Str.: Sanierung des Radwegs prüfen	?; -4759,13992 -4748,14237
 # 
 #: XXX Südseite angeblich schon saniert, bis Boltonstr.
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9307
+#: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html
 #: last_checked: 2017-11-04
 Am Juliusturm: Verbesserung -> evtl. Asphaltierung des Radwegs? ("Teilabschnitte")	?::projected -1484,14513 -1564,14489 -1947,14394 -2074,14366 -2233,14384 -2343,14446 -2460,14493 -2597,14532 -2647,14532 -2794,14511 -2831,14512 -2946,14533 -3014,14559 -3150,14631 -3209,14662 -3255,14685
 # 
@@ -965,7 +975,7 @@ Brandenburgische Str.: Radstreifen (wo genau? oder die gesamte Strecke?)	?::proj
 #: osm_watch: way id="188441401" version="6"
 #: osm_watch: way id="171484595" version="10"
 #: osm_watch: way id="129621748" version="9"
-#: last_checked: 2018-04-30
+#: last_checked: 2018-05-17 (mapillary)
 #: check_frequency: 60d
 Ernst-Reuter-Platz: Zweirichtungsradwege	?::projected 4838,11697 4885,11735 4905,11785 4854,11843 4763,11834 4737,11768 4781,11708 4838,11697
 # 
@@ -1066,6 +1076,7 @@ Jörsstr.: Asphaltierung	?::projected -1478,18407 -1358,18400
 # 
 #: osm_watch: way id="23546257" version="9"
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/mobilitaetsgesetz-berlin-bekommt-60-neue-radwege-bis-2020-29512972
+#: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html
 #: last_checked: 2017-08-26
 Kisselnallee: Radweg bzw. Radstreifen	?::projected -4337,16494 -4544,15940
 # 
@@ -1080,6 +1091,7 @@ Seegefelder Weg: Radweg	?::projected -8198,15648 -8309,15691 -8339,15657 -8450,1
 #: last_checked: 2017-11-04
 Seegefelder Str.: aus dem Radweg werden Radstreifen	?::projected -3851,14174 -3624,14113 -3552,14082
 # 
+#: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html
 #: last_checked: 2017-12-30 (mapillary)
 Heerstr.: Verbesserung des Radwegs? ("neuer breiterer Gehweg")	?::projected -3692,11681 -3404,11589
 # 
@@ -1190,12 +1202,7 @@ Kniprodestr.: werden die Busspuren zu Radspuren umgewandelt?	?::projected 12640,
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
-#: XXX Parkverbote ab 22. Mai 2018
-#: priority: #A
-#: last_checked: 2018-05-18
-#: next_check: 2018-05-22
-Singerstr.: wird es hier Bauarbeiten geben, mit Einschränkungen für Radfahrer?	? 11497,12463 11607,12412 11635,12398
-# 
+# REMOVED (-> handicap_s) --- #: XXX Parkverbote ab 22. Mai 2018 --- #: priority: #A --- #: last_checked: 2018-05-18 --- #: next_check: 2018-05-22 --- Singerstr.: wird es hier Bauarbeiten geben, mit Einschränkungen für Radfahrer?	? 11497,12463 11607,12412 11635,12398
 # REMOVED (kaum Einschränkungen für Radfahrer; offizielle Radwegführung) --- #: XXX NEW	Michaelkirchstraße (Mitte / Friedrichshain) in beiden Richtungen zwischen Holzmarktstraße und Köpenicker Straße (Berlin)  Gültig ab: 08.05.2018 09:00  Baustelle, Vollsperrung (bis Ende 05/18)	2147342594	--- #: XXX laut fritz bis 31.05.2018 --- Michaelkirchstr.: Beeinträchtigungen für den Radverkehr?	?::inwork 11764,12001 11716,11914 11676,11839 11569,11587
 # REMOVED (-> temp blockings) --- #: XXX NEW	Eldenaer Str. (Friedrichshain) Richtung Ebertystr. zwischen Scheffelstr. und Liebigstr. (Berlin)  Gültig ab: 08.05.2018 07:54  Gleisbauarbeiten, Fahrtrichtung gesperrt (bis Mitte 09/18)	2147342574	--- #: XXX laut fritz bis 14.09.2018 --- Eldenaer Str.: Beeinträchtigungen für den Radverkehr?	?::inwork; 15098,12849 15074,12850 15010,12855 14940,12843 14906,12837 14836,12826 14750,12812 14661,12798 14556,12781 14435,12761 14355,12752 14096,12827
 # REMOVED (hier ist nichts) --- #: by: fritz --- #: XXX bis zum 02.05.2018 --- Bornitzstr.: Einschränkungen auch für Radfahrer?	?::inwork 15747,12880 15950,12886
@@ -1236,7 +1243,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/holzmarktstrasse/download/LP_01.pdf
 #: source_id: 2147340618
 #: source_id: LMS-BR_r_LMS-BR_81616
-#: last_checked: 2018-05-18
+#: last_checked: 2018-05-22
 #: next_check: 2018-06-30 (laut fritz)
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 # 
@@ -1274,13 +1281,13 @@ Baumarkt (?) wird gebaut: wird es eine Durchfahrmöglichkeit geben?	?::inwork 170
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_06_0773_0896_online.pdf (Einziehung von Straßenland)
 #: by: https://gruen-berlin.de/kulturforum
 #: XXX Bebauungsplan 1-35a (Kulturforum)
-#: last_checked: 2018-05-14
+#: last_checked: 2018-05-22
 #: check_frequency: 60d
 Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::projected 8083,11381 7970,11441 7954,11399 7965,11380 7934,11275
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php
 #: XXX außerdem: voraussichtlich ab April 2018 Komplettsperrung
 #: osm_watch: way id="531952542" version="4"
-#: last_checked: 2018-05-14
+#: last_checked: 2018-05-22
 #: check_frequency: 7d
 #: priority: #A
 Herbert-von-Karajan-Str.: gibt es Einschränkungen für Radfahrer während der Bauarbeiten?	? 8005,11627 7965,11467 7970,11441
@@ -2634,12 +2641,25 @@ Schulzendorfer Str.: Radverkehrsanlangen? (vermutlich asphaltiert, vermutlich nu
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php
 #: by: https://www.facebook.com/baustellen.berlin/photos/a.257474068034361.1073741828.257465918035176/391963747918725/?type=3
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9307
+#: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html
 #: XXX laut osm existiert die Radspur bereits
 #: osm_watch: way id="5000155" version="17"
 #: osm_watch: way id="313302635" version="7"
 #: osm_watch: way id="57401090" version="12"
 #: next_check: 2018-01-16
 Seegefelder Weg: Bau von Radspuren	?::inwork -6507,15007 -6861,15129
+# 
+#: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html vvv
+Wilhelm-von-Siemens-Park: Wegverbindungen wurden saniert/asphaltiert, welche genau?	? 1351,15057 1351,15081 1329,15124 1265,15192 1179,15260
+Wilhelm-von-Siemens-Park: Wegverbindungen wurden saniert/asphaltiert, welche genau?	? 1374,15314 1179,15260 1065,15229 976,15195 957,15189 851,15155 755,15123 651,15091
+#: by ^^^
+# 
+#: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html vvv
+Charlottenburger Chaussee: Radwegsanierung in Planung, wo genau?	?::projected -2419,13237 -2241,13320 -2088,13413 -2047,13434 -1972,13455 -1780,13468 -1560,13418 -1337,13354 -1284,13340 -772,13199 -442,13058
+Falkenseer Chaussee: Radwegsanierung in Planung	?::projected; -4591,15496 -4466,15460
+Anbindung an "Radweg der Sympathie": wo ist diese Anbindung genau? was wird gemacht?	?::projected -7208,15924 -7279,15964 -7314,15924 -7352,15954
+Seegefelder Str.: Radwegsanierung in Planung; wie weit Richtung Westen?	?::projected; -4724,14482 -4924,14535 -5013,14565
+#: by: ^^^
 # 
 #: XXX "Straßen in der Hahnebergsiedlung asphaltieren" vvv
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8061&options=4 (Forderung)
@@ -3950,7 +3970,7 @@ Seenpromenade (Groß Glienicke): Qualität des südlichen Abschnitts?	? -9615,5069 
 Röntgental, Buchenallee: Qualität?	? 17896,28134 18451,29241
 Gamengrund: Qualität (teilweise war es sehr sandig!)? Geht es von der B 158 aus noch weiter in Richtung Norden?	? 39337,22638 39383,22801 39165,23131 39033,23202 39114,23766 39180,23776 39266,23984 39241,24116 39089,24279 39063,24400 38997,24431 38880,24568 38824,24812 39002,25304 39221,25518 39205,25655 39124,25812 39089,26036 39241,26229 39282,26391 39378,26508 39561,27382 39602,27382 39678,27600 39535,27808 39561,27996 39657,28154 39988,28352 40231,28753 40135,28824 40267,28951 40282,29022 40236,29621 40195,29774 40206,30002 40255,30508 40302,30617 40314,30725 40562,30941 40750,31012 40982,31319 41300,31862 41235,31914 41003,31612 40819,31252 40562,31025 40350,31083 39783,31398
 Brunow - Gamengrund: Qualität?	? 41618,36515 43362,37337 43825,37262 43922,36623 43637,36362 42975,36212 42748,35962
-Martin-Luther-Str. (Falkensee) - Radelandstr.: durchgängige Verbindung vorhanden? Qualität?	? -6962,17713 -7060,17637 -7306,17291 -7396,17303
+Radelandstr. - Martin-Luther-Str. (Falkensee): durchgängige Verbindung vorhanden? Qualität?	? -6962,17713 -7039,17636
 Sacrower See - Försterei Zedlitz: Qualität (wahrscheinlich Waldweg, Q2)?	? -10783,3792 -10912,3738 -10955,3723
 Sputendorfer Str.: laut http://home.arcor.de/hoge-online/std_tlw/std_tlw00.htm sieht die Straße gut aus, wie sieht es weiter südlich Richtung Sputendorf aus?	? -2040,-2177 -1853,-2412 -1834,-3968 -1812,-4210
 Alt-Rüdersdorf - Woltersdorf: Abkürzung durch den Wald? Qualität?	? 37906,7140 36543,6386 35524,5502

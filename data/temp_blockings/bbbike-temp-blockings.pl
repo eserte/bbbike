@@ -26739,7 +26739,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-05-09 vvv
+#: last_checked: 2018-05-17 (mapillary) vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
