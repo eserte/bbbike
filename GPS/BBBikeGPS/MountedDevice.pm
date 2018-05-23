@@ -18,7 +18,7 @@
 
     use strict;
     use vars qw($VERSION);
-    $VERSION = '0.10';
+    $VERSION = '0.20';
 
     sub has_gps_settings { 1 }
 
@@ -62,14 +62,28 @@
 	    (sub {
 		 my($mount_point) = @_;
 
-		 my $subdir = 'Garmin/GPX'; # XXX configuration parameter, default for Garmin
+		 my $subdir;
+		 my @try_subdirs = (
+				    'Garmin/GPX', # e.g. Garmin etrex
+				    'GPXImport',  # e.g. Falk Lux
+				   );
+		 for my $try_subdir (@try_subdirs) {
+		     my $subdirpath = "$mount_point/$try_subdir";
+		     if (-d $subdirpath) {
+			 $subdir = $subdirpath;
+			 last;
+		     }
+		 }
+		 if (!defined $subdir) {
+		     die "Cannot find a suitable directory in $mount_point, tried: @try_subdirs";
+		 }
 
 		 (my $safe_routename = $simplified_route->{routename}) =~ s{[^A-Za-z0-9_-]}{_}g;
 		 require POSIX;
 		 $safe_routename = POSIX::strftime("%Y%m%d_%H%M%S", localtime) . '_' . $safe_routename . '.gpx';
 
 		 require File::Copy;
-		 my $dest = "$mount_point/$subdir/$safe_routename";
+		 my $dest = "$subdir/$safe_routename";
 		 File::Copy::cp($ofile, $dest)
 			 or die "Failure while copying $ofile to $dest: $!";
 
@@ -93,7 +107,7 @@
 	my($mount_point, $mount_device, @mount_opts);
 	my @mount_point_candidates;
 	my $udisksctl; # will be set if Linux' DeviceKit is available
-	if ($^O eq 'freebsd') {
+	if ($^O eq 'freebsd') { ##############################################
 	    if ($garmin_disk_type ne 'flash') {
 		die "NYI: only support for garmin_disk_type => flash available";
 		# XXX actual problem is just the hardcoded $mount_point
@@ -105,7 +119,7 @@
 		$mount_device = _guess_garmin_mount_device_freebsd_via_log($garmin_disk_type);
 	    }
 	    @mount_opts = (-t => 'msdosfs');
-	} elsif ($^O eq 'MSWin32') {
+	} elsif ($^O eq 'MSWin32') { #########################################
 	    if ($garmin_disk_type ne 'flash') {
 		die "NYI: only support for garmin_disk_type => flash available";
 		# XXX how to detect the SD card without a label?
@@ -122,42 +136,64 @@
 		_status_message("The Garmin device is not mounted --- is the device in USB mass storage mode?", 'error');
 		return;
 	    }
-	} elsif ($^O eq 'linux') {
+	} elsif ($^O eq 'linux') { ###########################################
 	    my $check_udisksctl = '/usr/bin/udisksctl';
 	    if (-x $check_udisksctl) {
 		$udisksctl = $check_udisksctl;
 		my $info_dialog_active;
 		my $max_wait = 80; # full etrex 30 device boot until mass storage is available lasts 66-70 seconds
-		my $check_mount_device;
+		my @check_mount_devices;
 		if ($garmin_disk_type eq 'flash') {
-		    $check_mount_device = '/dev/disk/by-label/GARMIN';
+		    @check_mount_devices = ('/dev/disk/by-label/GARMIN', '/dev/disk/by-label/Falk');
 		} elsif ($garmin_disk_type eq 'card') {
-		    my $disks = _parse_udisksctl_status();
-		    if (my $disk_info = $disks->{'Garmin GARMIN Card'}) {
-			$check_mount_device = _udisksctl_find_mountable('/dev/' . $disk_info->{DEVICE});
-			if (!defined $check_mount_device) {
-			    die "Cannot find a mountable filesystem on device '$disk_info->{DEVICE}'";
+		    my $disks = _parse_udisksctl_status2();
+		    my @card_names = ('Garmin GARMIN Card', 'Microsoft SDMMC');
+		    my @errors;
+		    my $seen_disks_diagnostics;
+		CHECK_FOR_CARD: for my $card_name (@card_names) {
+			if ($disks->{$card_name}) {
+			    my $disk_info = $disks->{$card_name};
+			    my $check_mount_device = _udisksctl_find_mountable('/dev/' . $disk_info->{DEVICE});
+			    if (!defined $check_mount_device) {
+				push @errors, "Cannot find a mountable filesystem on device '$disk_info->{DEVICE}'";
+			    } else {
+				push @check_mount_devices, $check_mount_device;
+			    }
+			} else {
+			    my $msg = "Cannot find '$card_name'";
+			    if (!$seen_disks_diagnostics++) {
+				$msg .= ", only disks found: " . join(", ", keys %$disks);
+			    }
+			    push @errors, $msg;
 			}
-		    } else {
-			die "Cannot find 'Garmin GARMIN Card', only disks found: " . join(", ", keys %$disks);
+		    }
+		    if (!@check_mount_devices) {
+			die "Error: " . join("\n", @errors) . "\n";
 		    }
 		} else {
 		    die "Only support for garmin_disk_type 'flash' or 'card' available, not '$garmin_disk_type'";
 		}
-		require IPC::Open3;
-		for (1..$max_wait) {
-		    my($stdinfh,$stdoutfh,$stderrfh);
-		    my $pid = IPC::Open3::open3(
-						$stdinfh, $stdoutfh, $stderrfh,
-						$udisksctl, 'info', '-b', $check_mount_device,
-					       );
-		    waitpid $pid, 0;
-		    if ($? == 0) {
-			$mount_device = $check_mount_device;
-			last;
+	    WAIT_FOR_DEVICE: for (1..$max_wait) {
+		    for my $check_mount_device (@check_mount_devices) {
+			if (-e $check_mount_device) {
+			    $mount_device = $check_mount_device;
+			    last WAIT_FOR_DEVICE;
+			}
 		    }
+		    ## old, more complicated code
+		    #require IPC::Open3;
+		    #my($stdinfh,$stdoutfh,$stderrfh);
+		    #my $pid = IPC::Open3::open3(
+		    #				$stdinfh, $stdoutfh, $stderrfh,
+		    #				$udisksctl, 'info', '-b', $check_mount_device,
+		    #			       );
+		    #waitpid $pid, 0;
+		    #if ($? == 0) {
+		    #	$mount_device = $check_mount_device;
+		    #	last;
+		    #}
 		    if (!$info_dialog_active) {
-			_status_message("Wait for Garmin device (max $max_wait seconds)...", "infoauto");
+			_status_message("Wait for GPS device (Garmin or Falk) (max $max_wait seconds)...", "infoauto");
 			$info_dialog_active = 1;
 		    }
 		    sleep 1;
@@ -166,21 +202,30 @@
 		    _info_auto_popdown();
 		}
 		if (!$mount_device) {
-		    die "No Garmin device appeared in $max_wait seconds";
+		    die "No GPS device (Garmin or Falk) appeared in $max_wait seconds";
 		}
 	    } else {
 		_status_message("udisksctl (from packages udisks2) not available, assume that device is already mounted", "info");
-		@mount_point_candidates = (
-					   '/media/' . eval { scalar getpwuid $< } . '/GARMIN',     # e.g. Ubuntu 13.10, Mint 17, Debian/jessie
-					   '/media/GARMIN',                                         # e.g. Mint 13
-					   '/run/media/' . eval { scalar getpwuid $< } . '/GARMIN', # e.g. Fedora 20
-					  );
+		my @device_names = qw(GARMIN Falk);
+		@mount_point_candidates =
+		    map {
+			my $device_name = $_;
+			map {
+			    my $mnt_prefix = $_;
+			    "$mnt_prefix/$device_name";
+			} (
+			   '/media/' . eval { scalar getpwuid $< },     # e.g. Ubuntu 13.10, Mint 17, Debian/jessie
+			   '/media',                                    # e.g. Mint 13
+			   '/run/media/' . eval { scalar getpwuid $< }, # e.g. Fedora 20
+			  );
+		    } @device_names;
 		# try mounting later
 	    }
-	} elsif ($^O eq 'darwin') {
+	} elsif ($^O eq 'darwin') { ##########################################
 	    if ($garmin_disk_type eq 'flash') {
 		@mount_point_candidates = (
 					   '/Volumes/GARMIN',
+					   '/Volumes/Falk', # XXX not tested
 					  );
 	    } elsif ($garmin_disk_type eq 'card') {
 		my $diskutil_list = _diskutil_list();
@@ -232,7 +277,7 @@
 		die "Only support for garmin_disk_type 'flash' or 'card' available, not '$garmin_disk_type'";
 	    }
 	} else {
-	    _status_message("Don't know how to handle Garmin device under operating system '$^O'", "info");
+	    _status_message("Don't know how to handle GPS device (Garmin or Falk) under operating system '$^O'", "info");
 	}
 
 	# At this point we have either
@@ -249,11 +294,11 @@
 		    }
 		}
 		if (!$mount_point) {
-		    _status_message("The Garmin device is not mounted in the expected mount points (tried @mount_point_candidates)", 'error');
+		    _status_message("The GPS device (Garmin or Falk) is not mounted in the expected mount points (tried @mount_point_candidates)", 'error');
 		    return;
 		}
 	    } else {
-		_status_message("We don't have any mount point candidates to check, so we don't know if the Garmin device is already mounted", 'error');
+		_status_message("We don't have any mount point candidates to check, so we don't know if the GPS device (Garmin or Falk) is already mounted", 'error');
 	    }
 	}
 
@@ -318,7 +363,7 @@
 		}
 		$need_umount = 1;
 	    } else {
-		_status_message("Please mount the Garmin device on $mount_point manually", 'error');
+		_status_message("Please mount the GPS device (Garmin or Falk) on $mount_point manually", 'error');
 		return;
 	    }
 	}
@@ -507,6 +552,10 @@
 	$mount_device;
     }
 
+    # Use in a one-liner:
+    #
+    #    perl -I. -MGPS::BBBikeGPS::MountedDevice -MData::Dumper -e 'warn Dumper GPS::BBBikeGPS::MountedDevice::_parse_udisksctl_status()'
+    #
     sub _parse_udisksctl_status {
 	my %disks;
 	my @cmd = ('/usr/bin/udisksctl', 'status');
@@ -532,6 +581,65 @@
 	\%disks;
     }
 
+    # Different implementation: udiskctl status assumes that SERIAL
+    # is max. 20 characters long, but this does not hold for
+    # some Microsoft devices. So do a mixed approach of fixed and
+    # non-fixed matching
+    #
+    # Use in a one-liner:
+    #
+    #    perl -I. -MGPS::BBBikeGPS::MountedDevice -MData::Dumper -e 'warn Dumper GPS::BBBikeGPS::MountedDevice::_parse_udisksctl_status2()'
+    #
+    sub _parse_udisksctl_status2 {
+	my(%opts) = @_;
+	my $infostring = delete $opts{infostring}; # used for testing
+	die "Unhandled options: " . join(" ", %opts) if %opts;
+
+	my %disks;
+
+	my $fh;
+	if (defined $infostring) {
+	    open $fh, '<', \$infostring or die $!;
+	} else {
+	    my @cmd = ('/usr/bin/udisksctl', 'status');
+	    open $fh, '-|', @cmd
+		or die "Error starting '@cmd': $!";
+	}
+
+	chomp(my $header = <$fh>);
+	my(@f) = split /(\s+)/, $header, 3; # only split MODEL and REVISION and rest
+	my @field_names = do { my $i; grep { $i++ % 2 == 0 } @f };
+	$field_names[-1] = 'rest';
+	my @lengths;
+	for(my $i=0; $i<$#f; $i+=2) {
+	    push @lengths, length($f[$i])+length($f[$i+1]);
+	}
+	my $unpack = join(" ", map { "a$_" } @lengths) . " a*";
+	scalar <$fh>; # dashed line
+	while(<$fh>) {
+	    chomp;
+	    next if /^-($|\s)/;
+	    my %f;
+	    @f{@field_names} = map { s/\s+$//; $_ } unpack $unpack, $_;
+	    my $rest = delete $f{'rest'};
+	    if ($rest =~ m{^(\S+)\s+(\S+)$}) {
+		$f{'SERIAL'} = $1;
+		$f{'DEVICE'} = $2;
+	    } else {
+		die "Cannot parse rest '$rest'";
+	    }
+	    $disks{$f{MODEL}} = \%f;
+	}
+	close $fh
+	    or die "Error while closing filehandle (probably failure of running udisksctl command): $!";
+
+	\%disks;
+    }
+
+    # Use in a one-liner:
+    #
+    #    perl -I. -MGPS::BBBikeGPS::MountedDevice -e 'warn GPS::BBBikeGPS::MountedDevice::_udisksctl_find_mountable(shift)' /dev/sdc
+    #
     sub _udisksctl_find_mountable {
 	my $dev_prefix = shift;
 	require File::Glob;
@@ -546,6 +654,43 @@
 	    }
 	}
 	undef;
+    }
+
+    # Currrently not in use.
+    sub _parse_udisksctl_dump {
+	my(%opts) = @_;
+	my $infostring = delete $opts{infostring}; # used for testing
+	die "Unhandled options: " . join(" ", %opts) if %opts;
+
+	my %disks;
+
+	my $fh;
+	if (defined $infostring) {
+	    open $fh, '<', \$infostring or die $!;
+	} else {
+	    my @cmd = ('/usr/bin/udisksctl', 'dump');
+	    open $fh, '-|', @cmd
+		or die "Error starting '@cmd': $!";
+	}
+	my $current_info = {};
+	my $flush_current_info = sub {
+	    if ($current_info->{IdLabel}) {
+		$disks{$current_info->{IdLabel}} = $current_info;
+	    }
+	    $current_info = {};
+	};
+	while(<$fh>) {
+	    if (m{^\s{2}\S}) {
+		$flush_current_info->();
+	    } elsif (m{^\s{4}(\S+?):\s+(.*)}) {
+		$current_info->{$1} = $2;
+	    }
+	}
+	$flush_current_info->();
+	close $fh
+	    or die "Error while closing filehandle (probably failure of running udisksctl command): $!";
+
+	\%disks;
     }
 
     sub _diskutil_list {
@@ -588,15 +733,16 @@ GPS::BBBikeGPS::MountedDevice - handle gps uploads via a mounted device
 =head1 DESCRIPTION
 
 Currently support is only available for newer Garmin devices (e.g.
-etrex 30).
+etrex 30) and (on Linux and Mac OS X systems only) for Falk devices.
 
 =head2 Linux desktops
 
 If the C<udisks2> package is installed, then detection and mounting of
-the Garmin flash card is done automatically.
+the Garmin and Falk flash card is done automatically.
 
 Otherwise it is assumed that the device is manually mounted in a
-directory like F</media/GARMIN> or F</run/media/$USER/GARMIN>.
+directory like F</media/GARMIN> or F</run/media/$USER/GARMIN> or
+F</media/$USER/Falk>.
 
 =head2 Windows
 
@@ -606,7 +752,7 @@ detected automatically by inspecting the drive's volume name.
 =head2 Mac OS X
 
 It is assumed that the device is mounted in the directory
-F</Volume/GARMIN>.
+F</Volume/GARMIN> or F</Volume/Falk>.
 
 =head2 FreeBSD
 
@@ -641,8 +787,9 @@ to F</etc/sysctl.conf>. Reload the settings:
 =back
 
 Currently by default route uploads happen to the internal flash, not
-to an external SD card. This is hardcoded in the source code (search
-for C<< my $garmin_disk_type = 'flash'; >>).
+to an external SD card. This may be changed by setting the
+C<garmin_disk_type> option to C<card> (use this option even for Falk
+devices).
 
 =head2 FUNCTIONS
 
@@ -654,7 +801,7 @@ system:
 =item C<maybe_mount(I<coderef>)>
 
 C<maybe_mount()> may also be called outside of the Perl/Tk application
-for scripts which have to make sure that the Garmin device is mounted,
+for scripts which have to make sure that the GPS device is mounted,
 e.g. to copy from or to the mounted gps device. Simple usage example
 for the internal flash (current directory should be the bbbike source
 directory):
