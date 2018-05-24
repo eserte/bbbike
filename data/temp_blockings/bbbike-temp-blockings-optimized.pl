@@ -2773,31 +2773,7 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
          'type' => 'gesperrt',
          'until' => 1530475200
        },
-       {
-         'data' => '#: tempex: 20180427-T20180521 vvv
-	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
-	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
-	q4::temp 11275,8387 11230,8402
-	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
-#: tempex ^^^
-',
-         'from' => 1524693600,
-         'id' => 2207,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              26,
-                              'months',
-                              4
-                            ]
-                          ],
-         'source_id' => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2983315-2970764-neukoellner-maientage.html',
-         'text' => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 27.04.2018 bis 21.05.2018',
-         'type' => 'handicap',
-         'until' => 1527026399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3194,7 +3170,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        {
-         'data' => '#: tempex: 20170520 vvv
+         'data' => '# REMOVED --- #: tempex: 20170520 vvv
 	2::temp 8055,12186 8119,12414
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 	2::temp 6828,12031 6884,12006
@@ -3209,7 +3185,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 	3 7823,12120 7816,12150 7822,12201 7875,12363
 	3 8391,12389 8344,12221 8327,12174
 	3 8327,12174 8344,12221 8391,12389
-#: tempex ^^^
+# REMOVED --- #: tempex ^^^
 ',
          'from' => 1527199200,
          'id' => 2427,
@@ -4233,10 +4209,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX bis wann ist die Durchfahrt gesperrt?
-#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30
+#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00
 #: source_id: 2147342009
 #: osm_watch: way id="154381291" version="4"
-#: last_checked: 2018-05-14
+#: last_checked: 2018-05-23
 #: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
 ',
@@ -4444,6 +4420,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: note: genaues Endedatum by fritz
 # REMOVED (ja) --- #: add_fragezeichen: Ist die Stubenrauchbrücke tatsächlich für Radfahrer gesperrt?
+#: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/spreequerung-bleibt-bis-august-voll-gesperrt_a164513
 	q4::inwork; 17432,6352 17492,6462 17528,6502
 ',
          'from' => undef,
@@ -4451,6 +4428,55 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => '2147342600',
          'text' => 'Karlshorster Str.: Stubenrauchbrücke in Richtung Osten gesperrt, Radfahrer müssen ggfs. auf den linken, sehr engen Gehweg ausweichen, bis Mitte August 2018',
          'until' => 1534003200
+       },
+       {
+         'data' => '#: XXX überprüfen
+#: priority: #C
+	q4::inwork 10908,17142 11116,17140
+',
+         'from' => 1527186631,
+         'id' => 2958,
+         'source_id' => '2147342636',
+         'text' => 'Elsa-Brändström-Str.: Bauarbeiten im Einmündungsbereich Berliner Str., evtl. sind auch Radfahrer betroffen, bis 08.06.2018',
+         'type' => 'handicap',
+         'until' => 1528495200
+       },
+       {
+         'data' => '#: XXX vielleicht wird die Fahrbahn repariert?
+#: XXX überprüfen
+#: priority: #A
+	q4::inwork 13198,12311 13243,12222
+',
+         'from' => 1527186729,
+         'id' => 2959,
+         'source_id' => '2147342639',
+         'text' => 'Gubener Str.: Bauarbeiten zwischen Graudenzer Str. und Hildegard-Jadamowitz-Str., eventuell sind auch Radfahrer betroffen, bis 21.08.2018',
+         'type' => 'handicap',
+         'until' => 1534888800
+       },
+       {
+         'data' => '#: XXX überprüfen
+#: priority: #B
+	q4::inwork 20354,11500 20521,11494
+',
+         'from' => 1527186792,
+         'id' => 2960,
+         'source_id' => '2147342638',
+         'text' => 'Weißenhöher Str. : Bauarbeiten zwischen Grabensprung und Gladauer Weg, eventuell sind auch Radfahrer betroffen, bis 04.07.2018',
+         'type' => 'handicap',
+         'until' => 1530741600
+       },
+       {
+         'data' => '#: by: fritz
+#: XXX überprüfen
+#: priority: #C
+	q4::inwork 4303,12692 4234,12710 4124,12721 4055,12713 3949,12710 3734,12715
+',
+         'from' => 1527186848,
+         'id' => 2961,
+         'text' => 'Am Spreebord: Bauarbeiten, eventuell sind auch Radfahrer betroffen, bis 17.08.2018',
+         'type' => 'handicap',
+         'until' => 1534543200
        }
      
 );

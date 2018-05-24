@@ -21511,7 +21511,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berliner-frauenlauf.de/?year=2018',
        data  => <<EOF,
-#: tempex: 20170520 vvv
+# REMOVED --- #: tempex: 20170520 vvv
 	2::temp 8055,12186 8119,12414
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 	2::temp 6828,12031 6884,12006
@@ -21526,7 +21526,7 @@ EOF
 	3 7823,12120 7816,12150 7822,12201 7875,12363
 	3 8391,12389 8344,12221 8327,12174
 	3 8327,12174 8344,12221 8391,12389
-#: tempex ^^^
+# REMOVED --- #: tempex ^^^
 EOF
      },
      { from  => $isodate2epoch->("2017-05-26 11:00:00"), # 1 Tag Vorlauf
@@ -26703,10 +26703,10 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX bis wann ist die Durchfahrt gesperrt?
-#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30
+#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00
 #: source_id: 2147342009
 #: osm_watch: way id="154381291" version="4"
-#: last_checked: 2018-05-14
+#: last_checked: 2018-05-23
 #: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
 EOF
@@ -27158,7 +27158,53 @@ EOF
        data  => <<EOF,
 #: note: genaues Endedatum by fritz
 # REMOVED (ja) --- #: add_fragezeichen: Ist die Stubenrauchbrücke tatsächlich für Radfahrer gesperrt?
+#: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/spreequerung-bleibt-bis-august-voll-gesperrt_a164513
 	q4::inwork; 17432,6352 17492,6462 17528,6502
+EOF
+     },
+     { from  => 1527186631, # 2018-05-24 20:30
+       until => 1528495200, # 2018-06-09 00:00
+       text  => 'Elsa-Brändström-Str.: Bauarbeiten im Einmündungsbereich Berliner Str., evtl. sind auch Radfahrer betroffen, bis 08.06.2018',
+       type  => 'handicap',
+       source_id => '2147342636',
+       data  => <<EOF,
+#: XXX überprüfen
+#: priority: #C
+	q4::inwork 10908,17142 11116,17140
+EOF
+     },
+     { from  => 1527186729, # 2018-05-24 20:32
+       until => 1534888800, # 2018-08-22 00:00
+       text  => 'Gubener Str.: Bauarbeiten zwischen Graudenzer Str. und Hildegard-Jadamowitz-Str., eventuell sind auch Radfahrer betroffen, bis 21.08.2018',
+       type  => 'handicap',
+       source_id => '2147342639',
+       data  => <<EOF,
+#: XXX vielleicht wird die Fahrbahn repariert?
+#: XXX überprüfen
+#: priority: #A
+	q4::inwork 13198,12311 13243,12222
+EOF
+     },
+     { from  => 1527186792, # 2018-05-24 20:33
+       until => 1530741600, # 2018-07-05 00:00
+       text  => 'Weißenhöher Str. : Bauarbeiten zwischen Grabensprung und Gladauer Weg, eventuell sind auch Radfahrer betroffen, bis 04.07.2018',
+       type  => 'handicap',
+       source_id => '2147342638',
+       data  => <<EOF,
+#: XXX überprüfen
+#: priority: #B
+	q4::inwork 20354,11500 20521,11494
+EOF
+     },
+     { from  => 1527186848, # 2018-05-24 20:34
+       until => 1534543200, # 2018-08-18 00:00
+       text  => 'Am Spreebord: Bauarbeiten, eventuell sind auch Radfahrer betroffen, bis 17.08.2018',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: fritz
+#: XXX überprüfen
+#: priority: #C
+	q4::inwork 4303,12692 4234,12710 4124,12721 4055,12713 3949,12710 3734,12715
 EOF
      },
     );
