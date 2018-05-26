@@ -924,7 +924,26 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
+	2::temp 16610,1715 16767,1831
+',
+         'from' => 1527199200,
+         'id' => 952,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              18,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Alt-Rudow: Rudower Frühlingsmeile, Straße zwischen Köpenicker Str. und Bildhauerweg, sowie Krokusstr. bis Prieroser Str. gesperrt (26. und 27. Mai 2018)',
+         'type' => 'gesperrt',
+         'until' => 1527458399
+       },
        undef,
        undef,
        undef,
@@ -4163,7 +4182,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-05-20
+#: last_checked: 2018-05-26
 	2::inwork 14652,10201 14569,10055
 ',
          'from' => undef,
@@ -4209,16 +4228,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX bis wann ist die Durchfahrt gesperrt?
-#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00
+#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15
 #: source_id: 2147342009
 #: osm_watch: way id="154381291" version="4"
-#: last_checked: 2018-05-23
+#: last_checked: 2018-05-25
 #: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
 ',
          'from' => 1523311200,
          'id' => 2919,
-         'text' => 'Wiesenweg: kann insbesondere während der Arbeitszeiten wegen Brückenarbeiten zwischen Gürtelstr. und Kietzer Weg komplett gesperrt sein, auch für Fußgänger, ab 11.04.2018, 7 Uhr',
+         'text' => 'Wiesenweg: kann während der Arbeitszeiten wegen Brückenarbeiten zwischen Gürtelstr. und Kietzer Weg komplett gesperrt sein, auch für Fußgänger, ab 11.04.2018, 7 Uhr',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -4226,7 +4245,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-05-17 (mapillary) vvv
+#: last_checked: 2018-05-25 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4444,13 +4463,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX vielleicht wird die Fahrbahn repariert?
 #: XXX überprüfen
+#: last_checked: 2018-05-25
+#: check_frequency: 14d
 #: priority: #A
-	q4::inwork 13198,12311 13243,12222
+	q3::inwork; 13198,12311 13243,12222
 ',
          'from' => 1527186729,
          'id' => 2959,
          'source_id' => '2147342639',
-         'text' => 'Gubener Str.: Bauarbeiten zwischen Graudenzer Str. und Hildegard-Jadamowitz-Str., eventuell sind auch Radfahrer betroffen, bis 21.08.2018',
+         'text' => 'Gubener Str.: Bauarbeiten zwischen Graudenzer Str. und Hildegard-Jadamowitz-Str., Einbahnstraßenregelung, bis 21.08.2018',
          'type' => 'handicap',
          'until' => 1534888800
        },

@@ -8138,12 +8138,15 @@ EOF
 	2::temp 6228,13324 6115,13328 6105,13328 6011,13330 5956,13330 5857,13342 5705,13359
 EOF
      },
-     { from  => $isodate2epoch->("2017-05-18 00:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2017-05-20 23:59:59"),
-       text  => 'Alt-Rudow: Frühlingsfest, Straße zwischen Bildhauerweg und Krokusstr. gesperrt (19. und 20. Mai 2017)',
+     { from  => $isodate2epoch->("2018-05-25 00:00:00"), # ein Tag Vorlauf
+       until => $isodate2epoch->("2018-05-27 23:59:59"),
+       periodic => 1,
+       recurrences => [['yearly', days => 18, months => 5]],
+       text  => 'Alt-Rudow: Rudower Frühlingsmeile, Straße zwischen Köpenicker Str. und Bildhauerweg, sowie Krokusstr. bis Prieroser Str. gesperrt (26. und 27. Mai 2018)',
        type  => 'gesperrt',
        data  => <<EOF,
 	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
+	2::temp 16610,1715 16767,1831
 EOF
      },
      { from  => 1178564497, # 2007-05-07 21:01
@@ -26541,7 +26544,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-05-20
+#: last_checked: 2018-05-26
 	2::inwork 14652,10201 14569,10055
 EOF
      },
@@ -26699,14 +26702,14 @@ EOF
      },
      { from  => 1523311200, # 2018-04-10 00:00
        until => undef, # XXX
-       text  => 'Wiesenweg: kann insbesondere während der Arbeitszeiten wegen Brückenarbeiten zwischen Gürtelstr. und Kietzer Weg komplett gesperrt sein, auch für Fußgänger, ab 11.04.2018, 7 Uhr',
+       text  => 'Wiesenweg: kann während der Arbeitszeiten wegen Brückenarbeiten zwischen Gürtelstr. und Kietzer Weg komplett gesperrt sein, auch für Fußgänger, ab 11.04.2018, 7 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX bis wann ist die Durchfahrt gesperrt?
-#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00
+#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15
 #: source_id: 2147342009
 #: osm_watch: way id="154381291" version="4"
-#: last_checked: 2018-05-23
+#: last_checked: 2018-05-25
 #: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
 EOF
@@ -26739,7 +26742,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-05-17 (mapillary) vvv
+#: last_checked: 2018-05-25 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27175,14 +27178,16 @@ EOF
      },
      { from  => 1527186729, # 2018-05-24 20:32
        until => 1534888800, # 2018-08-22 00:00
-       text  => 'Gubener Str.: Bauarbeiten zwischen Graudenzer Str. und Hildegard-Jadamowitz-Str., eventuell sind auch Radfahrer betroffen, bis 21.08.2018',
+       text  => 'Gubener Str.: Bauarbeiten zwischen Graudenzer Str. und Hildegard-Jadamowitz-Str., Einbahnstraßenregelung, bis 21.08.2018',
        type  => 'handicap',
        source_id => '2147342639',
        data  => <<EOF,
 #: XXX vielleicht wird die Fahrbahn repariert?
 #: XXX überprüfen
+#: last_checked: 2018-05-25
+#: check_frequency: 14d
 #: priority: #A
-	q4::inwork 13198,12311 13243,12222
+	q3::inwork; 13198,12311 13243,12222
 EOF
      },
      { from  => 1527186792, # 2018-05-24 20:33

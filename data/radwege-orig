@@ -230,7 +230,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2770,10024 2702,1000
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf
 #: note: vorhandener Radweg ist abgesperrt
 #: add_fragezeichen: bleibt die Absperrung des Radwegs permanent?
-#: last_checked: 2018-04-30
+#: last_checked: 2018-05-25
 #: check_frequency: 120d
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW5; 2532,9911 2590,9949 2694,10002 2702,10006
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2702,10006 2770,10024
@@ -752,8 +752,8 @@ Gehweg für Radfahrer frei	RW1; -1872,24336 -1746,24219
 	RW2;RW2 -344,15200 -343,15113 -315,14933 -284,14738 -278,14532
 #: by: mapillary (Benutzungspflicht)
 	RW1;RW9 449,15654 525,15435 559,15342 613,15195 651,15091 717,14894 741,14827 838,14530 842,14518 862,14463 889,14392
-	RW1;RW1 2095,11440 2082,11554
-	RW;RW1 2082,11554 2058,11756
+	RW1;RW2 2095,11440 2082,11554
+	RW1;RW1 2082,11554 2058,11756
 	RW1; 6651,4843 6744,4983
 	RW1; 6744,4983 6746,4999 6747,5010 6767,5233 6771,5273
 enger Radweg, kein Unterstreifen gegen parkende Autos	RW1; 6771,5273 6767,5233 6747,5010 6746,4999 6744,4983
@@ -977,8 +977,7 @@ Gehweg für Radfahrer frei	RW1; 2330,11762 2446,11776
 	RW2;RW1 2566,11708 2547,11788
 	RW1;RW1 2547,11788 2489,12014 2460,12163 2440,12264 2437,12283 2417,12401
 	RW;RW1 2417,12401 2411,12428
-	RW1;RW 2058,11756 2047,11873
-	RW1;RW1 2047,11873 1999,12207 1969,12375
+	RW1;RW1 2058,11756 2047,11873 1999,12207 1969,12375
 	RW1;RW2 889,14392 931,14268
 asphaltiert	RW1;RW1 931,14268 984,14086
 	RW1;RW 984,14086 1053,13790 1124,13599 1159,13541 1170,13521
@@ -1074,7 +1073,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2018-05-17
+#: last_checked: 2018-05-25
 #: next_check: 2018-06-28
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1086,7 +1085,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut rbbtext bis 31.05.2016, laut vmz bis Ende 2016, laut fritz bis 09.01.2018
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2018-05-17
+#: last_checked: 2018-05-25
 #: next_check: 2018-06-28
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
@@ -1098,13 +1097,13 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: IM_025933
 #: osm_watch: way id="342968607" version="8"
 #: osm_watch: way id="461526152" version="2"
-#: last_checked: 2018-04-27
+#: last_checked: 2018-05-25
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2018-04-27
+#: last_checked: 2018-05-25
 #: check_frequency: 60d
 Busspur ist immer gültig	RW5; 9475,12365 9613,12381
 # 
@@ -1178,7 +1177,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW3; 18225,7004 18010,713
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
-#: last_checked: 2018-05-21
+#: last_checked: 2018-05-26
 #: check_frequency: 90d
 	RW8;RW2 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
@@ -1506,7 +1505,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 	RW3;RW3 11159,10769 11234,10739 11275,10723
 #: XXX Bauarbeiten, Radspuren teilweise aufgehoben
 #: XXX war: RW4;RW4
-#: last_checked: 2018-05-09
+#: last_checked: 2018-05-25
 #: check_frequency: 60d
 	RW0;RW0 8804,12280 8775,12457
 	RW4;RW4 8775,12457 8766,12541
@@ -1749,7 +1748,7 @@ Berliner Gehwegplatten mit einigen leichten Unebenheiten, ca. 1,50m breit	RW2;RW
 #: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5;
 #: by: http://www.dafmap.de/d/berlin.html?id=3134&mt=0&zoom=16 (Projektabschluss: 2017-09-01)
 #: osm_watch: way id="187103792" version="10"
-#: last_checked: 2018-05-09
+#: last_checked: 2018-05-25
 #: check_frequency: 14d
 	RW4; 11451,13301 11369,13174
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 11451,13301 11486,13350
@@ -2514,9 +2513,10 @@ Kein abgeflachter Bordstein bei der Auffahrt!	RW1; 18922,2238 18881,2062
 Verbundsteinpflaster	RW1; 18491,2128 18396,1990 18361,1926 18198,1814 18044,1716 17855,1629 17526,1540
 Gehwegplatten	RW1; 17526,1540 17855,1629
 	RW1; 17855,1629 18044,1716 18198,1814 18361,1926 18396,1990 18491,2128
-Verbundsteinpflaster	RW1; 17526,1540 17211,1469 17120,1394
+Verbundsteinpflaster	RW1; 17526,1540 17211,1469
+neues Verbundsteinpflaster	RW1; 17211,1469 17120,1394 16975,1262
 Gehweg für Radfahrer frei	RW1; 17120,1394 17211,1469 17526,1540
-	RW1;RW1 17120,1394 16975,1262
+	RW1; 16975,1262 17120,1394
 die ersten Meter mit Radstreifen	RW0; 16315,1904 16445,1824
 die letzten Meter mit Radweg	RW0; 16445,1824 16315,1904
 	RW1;RW2 16135,2135 16056,2034
