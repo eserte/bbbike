@@ -924,26 +924,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
-	2::temp 16610,1715 16767,1831
-',
-         'from' => 1527199200,
-         'id' => 952,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              18,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Alt-Rudow: Rudower Frühlingsmeile, Straße zwischen Köpenicker Str. und Bildhauerweg, sowie Krokusstr. bis Prieroser Str. gesperrt (26. und 27. Mai 2018)',
-         'type' => 'gesperrt',
-         'until' => 1527458399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1662,26 +1643,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html
-	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
-',
-         'from' => 1527199200,
-         'id' => 1642,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              9,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (26. und 27. Mai 2018)',
-         'type' => 'gesperrt',
-         'until' => 1527458399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3188,41 +3150,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: tempex: 20170520 vvv
-	2::temp 8055,12186 8119,12414
-	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	2::temp 6828,12031 6884,12006
-	2::temp 6809,11979 6984,11859
-	2::temp 6778,11742 6980,11790
-	2::temp 6809,11570 6869,11567 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7649,11717 7701,11798 7706,11878 7717,11918 7658,11947 7634,11920 7559,11888 7449,11883
-	2::temp 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8034,12093 8057,12065 8052,12033 8022,12016 8020,11937 8095,11919 8132,11910 8221,11885 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
-	2::temp 8522,12239 8466,12197
-	3 7429,12070 7383,12095 7031,12320
-	3 7875,12363 7822,12201 7816,12150 7823,12120
-	3 7031,12320 7383,12095 7429,12070
-	3 7823,12120 7816,12150 7822,12201 7875,12363
-	3 8391,12389 8344,12221 8327,12174
-	3 8327,12174 8344,12221 8391,12389
-# REMOVED --- #: tempex ^^^
-',
-         'from' => 1527199200,
-         'id' => 2427,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              4,
-                              'months',
-                              5
-                            ]
-                          ],
-         'source_id' => 'http://www.berliner-frauenlauf.de/?year=2018',
-         'text' => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 26. Mai 2018',
-         'type' => 'gesperrt',
-         'until' => 1527371999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3662,6 +3590,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: am Mi, den 2018-01-24 gegen 18:45: offen
 #: note: am Mo, den 2018-02-26 gegen 18:50: offen
 #: note: am Fr, den 2018-04-04 gegen 18:40: offen
+#: note: am Mo, den 2018-05-28 gegen 18:40: offen
 #: tempex: volatile vvv
 	3::night 14563,8243 14425,8116 14419,8112
 	3::night 14419,8112 14425,8116 14563,8243
@@ -3805,7 +3734,36 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: tempex: (YYYY01 & tu3) - +2d, (YYYY07 & tu1) - +2d vvv
+	q4::inwork 8634,10426 8384,10507 8527,10621
+	q4::inwork 8348,10636 8335,10518 8350,10499
+#: tempex ^^^
+',
+         'from' => 1530482400,
+         'id' => 2718,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              8,
+                              'months',
+                              1
+                            ],
+                            [
+                              'yearly',
+                              'days',
+                              27,
+                              'months',
+                              6
+                            ]
+                          ],
+         'source_id' => 'https://fashion-week-berlin.com/blog/single-news/das-sind-die-termine-fuer-2018.html',
+         'text' => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 03.07.2018-07.07.2018',
+         'type' => 'handicap',
+         'until' => 1531000799
+       },
        undef,
        undef,
        undef,
@@ -3992,7 +3950,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-05-18 vvv
+#: last_checked: 2018-05-27 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -4463,7 +4421,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX vielleicht wird die Fahrbahn repariert?
 #: XXX überprüfen
-#: last_checked: 2018-05-25
+#: last_checked: 2018-05-28
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -4498,6 +4456,27 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Am Spreebord: Bauarbeiten, eventuell sind auch Radfahrer betroffen, bis 17.08.2018',
          'type' => 'handicap',
          'until' => 1534543200
+       },
+       undef,
+       {
+         'data' => '	2::inwork 9690,28645 10701,28420
+',
+         'from' => 1527199200,
+         'id' => 2963,
+         'source_id' => '181100105',
+         'text' => 'Mühlenbeck - Schönerlinde: Neubau einer Brücke, 25.05.2018 bis 31.12.2018',
+         'type' => 'gesperrt',
+         'until' => 1546297200
+       },
+       {
+         'data' => '	q4::inwork 19958,5950 19681,5924
+',
+         'from' => 1527533410,
+         'id' => 2964,
+         'source_id' => '2147342666',
+         'text' => 'Weiskopffstr.: Gleisbauarbeiten zwischen An der Wuhlheide und Parkstr., Fahrbahn gesperrt, eventuell sind auch Radfahrer von der Sperrung betroffen, bis Mitte Juli 2018',
+         'type' => 'handicap',
+         'until' => 1531691999
        }
      
 );

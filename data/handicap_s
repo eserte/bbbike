@@ -35,10 +35,11 @@ Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen ¸ber Gehweg	q3::
 Wilhelminenhofstr.: Bauarbeiten zwischen Siemensstr. und Edisonstr., Fahrbahn und teilweise auch Radweg gesperrt	q3::inwork 17826,6495 17991,6431
 Friesenstr.: Fahrbahn Richtung Zossener Str. gesperrt	q4::inwork; 9801,8683 9801,8889 9799,8962 9797,9063 9795,9162 9793,9241
 Mˆckernstr.: Bauarbeiten, Einbahnstraﬂe, ehemaliger Radweg kann benutzt werden	q3::inwork; 9022,10857 8941,10663 8926,10626
+Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7970,11441 7965,11467 8005,11627
+Ludwig-Beck-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 8301,11469 8309,11390
 Englische Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,12159
 Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fuﬂg‰nger	q3 5894,12480 5944,12548
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
-Dieselstr., Umfahrung: Fuﬂg‰nger, Bordstein, schmal	q2::inwork 14326,8062 14366,8058 14384,8056 14425,8052 14484,8044
 Karl-Marx-Str.: Bauarbeiten zwischen Rollbergstr. und Briesestr., Richtung S¸den auf engen Gehweg ausweichen	q4::inwork; 12714,8249 12753,8187 12794,8103
 Gotlindestr.: Sperrung der Fahrbahn an der Ruschestr.	q4::inwork 15947,12626 16000,12625
 Helmstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q2::inwork 7444,9148 7382,9187
@@ -1739,6 +1740,7 @@ Am Lichtenrader Graben: einige Fuﬂg‰nger	q1 10695,-1515 10615,-1772 10537,-1943 
 (Schwedter Str. - Alt-Lichtenrade): schmal	q2 11023,-374 11010,-378 10938,-405
 Dorotheenstr.: Bordstein, Fuﬂg‰nger	q3 22926,4123 22949,4136
 Elisabeth-Schiemann-Str.: einige Bodenschwellen, meist umfahrbar	q1 20586,18822 20553,18734 20533,18682 20512,18626 20448,18454 20458,18424
+(Potsdamer Platz - Linkstr.): Bordstein, einige Fuﬂg‰nger	q3 8474,11350 8481,11447
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schulhof, Radfahren verboten	q3 7242,8586 7288,8635
@@ -1906,7 +1908,7 @@ Br¸der-Grimm-Gasse: Fuﬂg‰nger	q2 8351,11163 8343,11133
 (Anhalter Steg - Anhalter Bahnhof): Fuﬂg‰nger	q1 8773,10429 8776,10548 8808,10598 8853,10708 8912,10846 8938,10872
 Fontaneplatz: Fuﬂg‰nger, Bordsteinkante	q3 8474,11350 8427,11365
 (Fontaneplatz - Alte Potsdamer Str.): Fuﬂg‰nger, schmal	q4 8427,11365 8389,11378
-Voxstr.: Fuﬂg‰nger	q3 8309,11390 8375,11368
+Voxstr.: Fuﬂg‰nger, Restaurantbetrieb	q4 8309,11390 8375,11368
 Alice-Salomon-Park: Fuﬂg‰nger, Umfahrung an der Rosenheimer Str.	q1 6851,9365 6771,9458 6727,9497
 Alice-Salomon-Park: Fuﬂg‰nger	q1 6771,9458 6728,9457
 (Geﬂlerstr. - Monumentenstr.): Fuﬂg‰nger, Kinder	q2 7973,8886 7970,9061 8009,9063

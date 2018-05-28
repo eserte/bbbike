@@ -23759,6 +23759,7 @@ EOF
 #: note: am Mi, den 2018-01-24 gegen 18:45: offen
 #: note: am Mo, den 2018-02-26 gegen 18:50: offen
 #: note: am Fr, den 2018-04-04 gegen 18:40: offen
+#: note: am Mo, den 2018-05-28 gegen 18:40: offen
 #: tempex: volatile vvv
 	3::night 14563,8243 14425,8116 14419,8112
 	3::night 14419,8112 14425,8116 14563,8243
@@ -24496,14 +24497,14 @@ EOF
 	q4; 15205,11080 15102,11120 15021,11152 14988,11130
 EOF
      },
-     { from  => $isodate2epoch->("2018-01-15 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-01-18 23:59:59"),
+     { from  => $isodate2epoch->("2018-07-02 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-07-07 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 1],
                        ['yearly', days => 27, months => 6]],
-       text  => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 16.01.2018-18.01.2018',
+       text  => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 03.07.2018-07.07.2018',
        type  => 'handicap',
-       source_id => '2147339708',
+       source_id => 'https://fashion-week-berlin.com/blog/single-news/das-sind-die-termine-fuer-2018.html',
        data  => <<EOF,
 #: tempex: (YYYY01 & tu3) - +2d, (YYYY07 & tu1) - +2d vvv
 	q4::inwork 8634,10426 8384,10507 8527,10621
@@ -25662,7 +25663,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-05-18 vvv
+#: last_checked: 2018-05-27 vvv
 #: check_frequency: 14d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
@@ -27184,7 +27185,7 @@ EOF
        data  => <<EOF,
 #: XXX vielleicht wird die Fahrbahn repariert?
 #: XXX überprüfen
-#: last_checked: 2018-05-25
+#: last_checked: 2018-05-28
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -27210,6 +27211,35 @@ EOF
 #: XXX überprüfen
 #: priority: #C
 	q4::inwork 4303,12692 4234,12710 4124,12721 4055,12713 3949,12710 3734,12715
+EOF
+     },
+     { from  => undef, # 
+       until => 1527527586, # -> handicap_s # undef, # XXX
+       text  => 'Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php',
+       data  => <<EOF,
+#: by: osm contributor
+#: osm_watch: way id="531952542" version="4"
+	2::inwork 7970,11441 7965,11467 8005,11627
+EOF
+     },
+     { from  => $isodate2epoch->("2018-05-25 00:00:00"),
+       until => 1546297200, # 2019-01-01 00:00
+       text  => 'Mühlenbeck - Schönerlinde: Neubau einer Brücke, 25.05.2018 bis 31.12.2018',
+       type  => 'gesperrt',
+       source_id => '181100105',
+       data  => <<EOF,
+	2::inwork 9690,28645 10701,28420
+EOF
+     },
+     { from  => 1527533410, # 2018-05-28 20:50
+       until => 1531691999, # 2018-07-15 23:59
+       text  => 'Weiskopffstr.: Gleisbauarbeiten zwischen An der Wuhlheide und Parkstr., Fahrbahn gesperrt, eventuell sind auch Radfahrer von der Sperrung betroffen, bis Mitte Juli 2018',
+       type  => 'handicap',
+       source_id => '2147342666',
+       data  => <<EOF,
+	q4::inwork 19958,5950 19681,5924
 EOF
      },
     );

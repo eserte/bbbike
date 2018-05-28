@@ -27,7 +27,7 @@ Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,1
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2018-05-26
+#: last_checked: 2018-05-27
 #: check_frequency: 90d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -35,7 +35,7 @@ Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 #: XXX_prog BS (östliche Seite)
-#: last_checked: 2018-05-26 vvv
+#: last_checked: 2018-05-28 vvv
 #: check_frequency: 7d vvv
 Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstein	q2::inwork 11845,12292 11635,12398
 Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstein	q4::inwork 11635,12398 11607,12412
@@ -125,7 +125,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 # REMOVED (mittlerweile existiert auch eine Absenkung) --- #: next_check_id: OTTOBRAUN-2015 --- #: XXX vermutlich im ausgebauten Zustand: q1  --- #: last_checked: 2018-03-16 --- #: check_frequency: 14d --- Wadzeckstr. - Mollstr.: Behinderungen wegen Bauarbeiten möglich	q2::inwork 11315,13210 11399,13333
 # 
 #: next_check_id: ROSSSTRASSENBRUECKE-2018
-#: last_checked: 2018-05-26
+#: last_checked: 2018-05-28
 #: check_frequency: 21d
 Märkisches Ufer: Bauarbeiten, Engstelle	q3+::inwork 10687,11853 10869,11949
 # 
@@ -157,7 +157,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 # REMOVED --- Jerusalemer Str.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9925,11565 9936,11469
 # 
 #: by: http://www.dafmap.de/d/berlin.html?center=52.508653+13.397214&zoom=17# (Geplanter Projektabschluss: 2019-03-31)
-#: last_checked: 2018-05-24 vvv
+#: last_checked: 2018-05-28 vvv
 #: check_frequency: 90d vvv
 Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9945,11371 9936,11469
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
@@ -169,7 +169,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: next_check_id: ALEXANDRINENSTR-2018
 # REMOVED --- : osm_watch: note 814191 1
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
-#: last_checked: 2018-05-17
+#: last_checked: 2018-05-28
 #: check_frequency: 30d
 Alexandrinenstr.: Zugang zur Sebastianstr. nur über sehr engen Trampelpfad möglich, Bordsteine	q4::inwork 10781,11243 10678,11172
 # 
@@ -403,6 +403,15 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 # 
 ### Tiergarten ###
 # 
+#: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php
+#: note: wenn nichts in der Philharmonie los ist, kann man auch schneller durchkommen (q3+)
+#: osm_watch: way id="531952542" version="4"
+#: last_checked: 2018-05-28
+Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4+::inwork 7970,11441 7965,11467 8005,11627
+# 
+#: last_checked: 2018-05-28
+Ludwig-Beck-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 8301,11469 8309,11390
+# 
 # REMOVED --- #: by: http://www.deutsches-architektur-forum.de/forum/showthread.php?t=3245 --- #: last_checked: 2015-09-17 --- #: check_frequency: 45d --- Köbisstr.: wegen Bauarbeiten Ausweichen auf Gehweg	q4::inwork 7103,11247 7160,11225
 # 
 ### Charlottenburg ###
@@ -432,14 +441,11 @@ Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5894,12480 5944,12
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 7d vvv --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12761,9190 12845,9304 12844,9351 --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12902,9066 12761,9190 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4952&mt=0&zoom=17
-#: last_checked: 2018-05-24
+#: last_checked: 2018-05-28
 #: check_frequency: 90d
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 
-#: next_check_id: DIESEL-2015
-#: last_checked: 2018-05-21
-Dieselstr., Umfahrung: Fußgänger, Bordstein, schmal	q2::inwork 14326,8062 14366,8058 14384,8056 14425,8052 14484,8044
-# 
+# REMOVED --- #: next_check_id: DIESEL-2015 --- #: last_checked: 2018-05-21 --- Dieselstr., Umfahrung: Fußgänger, Bordstein, schmal	q2::inwork 14326,8062 14366,8058 14384,8056 14425,8052 14484,8044
 # REMOVED (so gut wie fertig, Schlupflöcher durch die Absperrungen) --- #: last_checked: 2015-07-29 --- #: check_frequency: 7d --- #: priority: #A --- Ganghoferstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12805,8194 12873,8217 12918,8232
 # 
 #: next_check_id: KARLMARXSTR-2018
@@ -539,8 +545,9 @@ Großgörschenstr.: Bauarbeiten an der Einmündung Potsdamer Str.	q3::inwork 7609,9
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.623391.php
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.655961.php (Sperrung doch nicht erfolgt? Dafür Einbahnstraßenregelung ab Dez. 2017)
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6613
+#: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/einbahnstrasse-ueberfluessig_a164510
 #: XXX wann wird die Einschränkung beendet?
-#: osm_watch: way id="13860352" version="11"
+#: osm_watch: way id="13860352" version="12"
 #: last_checked: 2018-05-01
 #: check_frequency: 90d
 Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt werden	q4::inwork; 3867,4537 3905,4482
@@ -1033,7 +1040,7 @@ Fritz-Schiff-Weg: Fußgänger	q1 13457,12505 13476,12461 13448,12340
 (Crellestr. - Julius-Leber-Brücke): Fußgänger	q2 7524,9093 7555,8978 7509,8929 7497,8916
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870
 #: next_check_id: ROSSSTRASSENBRUECKE-2018
-#: last_checked: 2018-05-23
+#: last_checked: 2018-05-28
 #: check_frequency: 21d
 (Fischerinsel, Spreekanalufer): Bauarbeiten, Engstelle	q3+::inwork 10672,11870 10776,11942
 # XXX --- nach den Bauarbeiten wieder aktivieren --- (Fischerinsel, Spreekanalufer): Fußgänger	q1 10672,11870 10776,11942
@@ -2794,6 +2801,8 @@ Am Lichtenrader Graben: einige Fußgänger	q1 10695,-1515 10615,-1772 10537,-1943 
 #: XXX_prog: BS an der Sackgasse, ansonsten q2
 Dorotheenstr.: Bordstein, Fußgänger	q3 22926,4123 22949,4136
 Elisabeth-Schiemann-Str.: einige Bodenschwellen, meist umfahrbar	q1+ 20586,18822 20553,18734 20533,18682 20512,18626 20448,18454 20458,18424
+#: XXX_prog: BS zumindest an der Alten Potsdamer Str., ansonsten q2
+(Potsdamer Platz - Linkstr.): Bordstein, einige Fußgänger	q3 8474,11350 8481,11447
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -3140,7 +3149,7 @@ Brüder-Grimm-Gasse: Fußgänger	q2 8351,11163 8343,11133
 (Anhalter Steg - Anhalter Bahnhof): Fußgänger	q1 8773,10429 8776,10548 8808,10598 8853,10708 8912,10846 8938,10872
 Fontaneplatz: Fußgänger, Bordsteinkante	q3 8474,11350 8427,11365
 (Fontaneplatz - Alte Potsdamer Str.): Fußgänger, schmal	q4 8427,11365 8389,11378
-Voxstr.: Fußgänger	q3 8309,11390 8375,11368
+Voxstr.: Fußgänger, Restaurantbetrieb	q4 8309,11390 8375,11368
 # REMOVED (mittlerweile mit Absenkungen) --- #: XXX_prog: BS zur Rosenheimer Str., ansonsten q1
 Alice-Salomon-Park: Fußgänger, Umfahrung an der Rosenheimer Str.	q1 6851,9365 6771,9458 6727,9497
 Alice-Salomon-Park: Fußgänger	q1 6771,9458 6728,9457

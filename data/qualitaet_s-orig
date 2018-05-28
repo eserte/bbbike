@@ -10,8 +10,7 @@
 # REMOVED (Bauarbeiten beendet) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5898 --- #: note: oder man fährt auf dem mit zahlreichen Engstellen zugestellten Radweg, muss dann aber ggfs. warten --- #: last_checked: 2014-03-21 --- #: valid: -20140523 --- Bergmannstr.: während der Bauarbeiten zwischen Heim- und Friesenstr. Umleitung über gepflasterte Fahrbahn	Q2 9973,9232 9880,9233 9793,9241
 # 
 #: next_check_id: DIESEL-2015 vvv
-#: last_checked: 2018-05-21 vvv
-Dieselstr.: Asphalt	Q0 14326,8062 14366,8058 14384,8056 14425,8052 14484,8044
+#: last_checked: 2018-05-28 vvv
 Dieselstr., Umfahrung: Asphalt	Q0 14419,8112 14429,8074
 #: XXX_osm laut osm Asphalt, hier aber nicht!
 Dieselstr., Umfahrung: unbefestigt	Q2 14429,8074 14484,8044
@@ -38,7 +37,7 @@ Neue Kreisstr.: Asphaltstreifen	Q0-; -7196,-1029 -7310,-1131 -7383,-1211 -7482,-
 Markgrafendamm: Asphalt	Q0 14558,10264 14608,10409 14641,10552 14675,10693 14671,10751 14674,10811
 Markgrafendamm/Hauptstr.: asphaltiert	Q0 14674,10811 14717,10855 14810,10832 14904,10812
 # REMOVED --- #: next_check_id: HAUPTSTR-2015 vvv --- #: XXX nach den Bauarbeiten vermutlich asphaltiert mit Radwegen oder -spuren vvv --- #: source_id: 2147339565 vvv --- #: last_checked: 2016-08-25 vvv --- #: next_check: 2016-08-29 vvv
-Hauptstr.: Asphalt	Q0 14904,10812 15261,10738
+Hauptstr.: Asphalt	Q0 14904,10812 15000,10792 15261,10738
 Karlshorster Str.: Asphalt	Q0 15279,10862 15272,10790 15261,10738
 Cordesstr.: schlechtes Kopfsteinpflaster	Q3 1672,9836 1645,9862 1515,10002 1477,10073 1395,10122 1318,10031
 Werkstättenweg: mäßiges Kopfsteinpflaster	Q2- 2110,10101 1843,9867
@@ -9717,6 +9716,7 @@ Alfred-Scholz-Platz: gepflastert	Q1 12753,8187 12779,8188 12805,8194
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.515712.php?date=20170522
 #: by: http://www.berliner-woche.de/steglitz/bauen/bezirk-investiert-in-sanierung-von-strassen-und-radwegen-d140640.html
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6572
+#: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/mit-geld-aus-dem-landeshaushalt-beginnen-2018-mehrere-vorhaben_a164600 (Baubeginn Juli 2018)
 #: last_checked: 2018-03-25 (mapillary)
 #: check_frequency: 90d
 Feuerbachstr.: Asphalt teilweise aufgebrochen	Q1; 5823,6413 6083,6451
@@ -10312,8 +10312,9 @@ Mergenthalerring: schlechtes Kopfsteinpflaster	Q3+ 14121,8147 14210,8227 14219,8
 (Marseillestr. - Straße 160): unbefestigte Baustraße	Q2- 12495,21397 12507,21391 12547,21372
 #: next_check_id: NIZZASTR-2014
 #: XXX wird hier vielleicht auch asphaltiert werden?
+#: XXX laut osm offen & Verbundsteinpflaster
 #: last_checked: 2018-04-28
-#: check_frequency: 60d
+#: next_check: 2018-05-27
 (Nizzastr. - Dr.-Markus-Str.): unbefestigt	Q2+ 12434,21160 12522,21208
 #: by: mapillary
 (Nizzastr. - Dr.-Markus-Str.): asphaltiert	Q0 12522,21208 12535,21282 12507,21391 12498,21450
@@ -10660,6 +10661,7 @@ Ramlerstr. [entlang der Swinemünder Brücke]: Kopfsteinpflaster	Q2 9666,15739 964
 (Bärbel-Bohley-Ring - Ramlerstr.): Asphalt	Q0 9744,15793 9644,15780
 (Alt-Lichtenrade - Töpchiner Weg): Betonpflaster	Q0 10950,-438 11207,-413
 Furkastr.: Beton	Q0 10329,2882 10422,3091 10439,3129 10504,3198
+Dieselstr.: Asphalt	Q0 14326,8062 14366,8058 14384,8056 14425,8052 14484,8044
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -12989,8 +12991,13 @@ Drosselweg (Dahlem): Kopfsteinpflaster	Q2 2412,5901 2587,5908
 Finkenstr. (Dahlem): Asphalt	Q1 2506,6606 2435,6580 2281,6469 2173,6424 2039,6394 1970,6392 1904,6415
 Franz-Cornelsen-Weg: Asphalt	Q1 3593,7176 3597,7192 3612,7335
 Franz-Cornelsen-Weg: wassergebundene Decke	Q1 3612,7335 3634,7601
+#: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/auch-der-patschkauer-weg-steht-auf-der-liste-der-sanierungsbeduerftigen-strassen-hier-koennte-die-massnahme-in-diesem-jahr-beginnen_pic198143_a164600
+#: XXX wird sich hier die Qualität verbessern? vvv
+#: next_check: 2018-09-01 vvv
 Patschkauer Weg: Kopfsteinpflaster	Q2 2996,5005 3132,4803
 Patschkauer Weg: Kopfsteinpflaster	Q3 3132,4803 3344,4488
+#: next_check ^^^
+#: XXX ^^^
 Reichensteiner Weg: Kopfsteinpflaster	Q3 3095,4680 3243,4469
 Reichensteiner Weg: Kopfsteinpflaster	Q2 3061,4725 3095,4680
 Wichernstr. (Dahlem): Kopfsteinpflaster	Q2 2942,4638 3037,4500 3097,4409
@@ -20086,10 +20093,9 @@ Pölitzer Str.: Asphalt	Q0 23430,11576 23495,11753 23540,11943
 #: by: Volker (retzlaff): vvv
 #: confirmed_by: srt
 Diethelmweg: gutes Verbundsteinpflaster	Q1 21649,13995 21677,14241 21696,14430
-#: corrected_by: srt (guter Asphalt -> ..., evtl. neu gemacht)
-Ingeweg: sehr gutes Betonpflaster	Q0 21764,13981 21649,13995 21533,14009
-#: add_fragezeichen liegt hier noch immer Asphalt oder ist hier nun auch Betonpflaster?
-Ingeweg: guter Asphalt	Q0 21533,14009 21412,14023 21362,14028
+#: corrected_by: srt (guter Asphalt -> ..., evtl. neu gemacht), osm
+Ingeweg: sehr gutes Betonpflaster	Q0 21764,13981 21649,13995 21533,14009 21412,14023
+Ingeweg: guter Asphalt	Q0 21412,14023 21362,14028
 #: confirmed_by: srt
 Christelweg: guter Asphalt	Q0 21439,14273 21561,14257 21677,14241 21794,14229
 Alwineweg: guter Beton	Q0 21456,14491 21584,14459 21696,14430 21814,14407

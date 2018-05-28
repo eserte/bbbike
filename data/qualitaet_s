@@ -2,7 +2,6 @@
 #: title: Qualität der Straßen in Berlin
 #: note: XXX_* categorization done 2008-01-26
 #:
-Dieselstr.: Asphalt	Q0 14326,8062 14366,8058 14384,8056 14425,8052 14484,8044
 Dieselstr., Umfahrung: Asphalt	Q0 14419,8112 14429,8074
 Dieselstr., Umfahrung: unbefestigt	Q2 14429,8074 14484,8044
 Mozartstr.: Kopfsteinpflaster	Q3 10257,-2654 10392,-2980 10462,-3149
@@ -13,7 +12,7 @@ Neue Kreisstr.: Kopfsteinpflaster	Q2; -7619,-1406 -7482,-1319 -7383,-1211 -7310,
 Neue Kreisstr.: Asphaltstreifen	Q0; -7196,-1029 -7310,-1131 -7383,-1211 -7482,-1319 -7619,-1406
 Markgrafendamm: Asphalt	Q0 14558,10264 14608,10409 14641,10552 14675,10693 14671,10751 14674,10811
 Markgrafendamm/Hauptstr.: asphaltiert	Q0 14674,10811 14717,10855 14810,10832 14904,10812
-Hauptstr.: Asphalt	Q0 14904,10812 15261,10738
+Hauptstr.: Asphalt	Q0 14904,10812 15000,10792 15261,10738
 Karlshorster Str.: Asphalt	Q0 15279,10862 15272,10790 15261,10738
 Cordesstr.: schlechtes Kopfsteinpflaster	Q3 1672,9836 1645,9862 1515,10002 1477,10073 1395,10122 1318,10031
 Werkstättenweg: mäßiges Kopfsteinpflaster	Q2 2110,10101 1843,9867
@@ -9671,6 +9670,7 @@ Ramlerstr. [entlang der Swinemünder Brücke]: Kopfsteinpflaster	Q2 9666,15739 964
 (Bärbel-Bohley-Ring - Ramlerstr.): Asphalt	Q0 9744,15793 9644,15780
 (Alt-Lichtenrade - Töpchiner Weg): Betonpflaster	Q0 10950,-438 11207,-413
 Furkastr.: Beton	Q0 10329,2882 10422,3091 10439,3129 10504,3198
+Dieselstr.: Asphalt	Q0 14326,8062 14366,8058 14384,8056 14425,8052 14484,8044
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -13280,8 +13280,8 @@ Marientaler Str. (Britz): mäßiges Kopfsteinpflaster	Q2 13730,5448 13919,5547
 Homuthstr.: guter Asphalt	Q0 4979,7215 4983,7062
 Pölitzer Str.: Asphalt	Q0 23430,11576 23495,11753 23540,11943
 Diethelmweg: gutes Verbundsteinpflaster	Q1 21649,13995 21677,14241 21696,14430
-Ingeweg: sehr gutes Betonpflaster	Q0 21764,13981 21649,13995 21533,14009
-Ingeweg: guter Asphalt	Q0 21533,14009 21412,14023 21362,14028
+Ingeweg: sehr gutes Betonpflaster	Q0 21764,13981 21649,13995 21533,14009 21412,14023
+Ingeweg: guter Asphalt	Q0 21412,14023 21362,14028
 Christelweg: guter Asphalt	Q0 21439,14273 21561,14257 21677,14241 21794,14229
 Alwineweg: guter Beton	Q0 21456,14491 21584,14459 21696,14430 21814,14407
 Burghardweg: gutes Verbundsteinpflaster	Q1 21533,14009 21561,14257 21584,14459

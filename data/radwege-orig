@@ -1597,15 +1597,16 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
 	RW3;RW3 14608,10409 14641,10552 14675,10693 14671,10751
 	RW3;RW2 14671,10751 14674,10811
-	RW4; 15261,10738 14904,10812 14810,10832 14717,10855 14674,10811
+	RW4; 15261,10738 15000,10792 14904,10812 14810,10832 14717,10855 14674,10811
 	RW4; 14674,10811 14717,10855 14810,10832 14904,10812
 # REMOVED (nur noch ein Eintrag übrig) --- : next_check_id: HAUPTSTR-2015
-#: XXX Markierungen fehlen noch teilweise
+#: XXX Markierungen fehlen hier noch
 #: osm_watch: way id="439421759" version="9"
 #: osm_watch: way id="384136808" version="12"
-#: last_checked: 2018-05-23
-#: check_frequency: 5d
-	RW0; 14904,10812 15261,10738
+#: last_checked: 2018-05-28
+#: check_frequency: 14d
+	RW0; 14904,10812 15000,10792
+	RW3; 15000,10792 15261,10738
 	RW1;RW1 14652,10201 14688,10167 14705,10149 14747,10108 14817,10031
 	RW0;RW1 13795,9941 13890,9894
 	RW1;RW1 13890,9894 13999,9842
@@ -3988,7 +3989,7 @@ asphaltierter Radweg fängt etwas hinter dem Kreisverkehr an	RW1; 12705,16708 128
 #: by: osm
 	RW6;RW6 16146,12881 16148,12772 16200,12771 16197,12880
 # REMOVED (nicht mehr) --- Gehweg für Radfahrer frei
-# REMOVED ---	RW0; 15261,10738 14904,10812
+# REMOVED ---	RW0; 15261,10738 15000,10792 14904,10812
 #: by: anonymous
 asphaltierter Radweg, sehr gute Qualität	RW1;RW1 -3040,16246 -3631,16224
 	RW6;RW6 10332,11929 10364,11896

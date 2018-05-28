@@ -2881,8 +2881,13 @@ Drängelgitter	BNP:3::trailer=10 25081,-9433
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: priority: #C
+#: last_checked: 2018-05-26
+#: check_frequency: 180d
+am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 16436,8687
+# 
 #: next_check_id: ALEXANDRINENSTR-2018
-#: last_checked: 2018-05-17
+#: last_checked: 2018-05-28
 #: check_frequency: 30d
 Alexandrinenstr.: für Anhänger zu eng	BNP:0::trailer=no 10781,11243
 # 
@@ -2901,7 +2906,7 @@ Alexandrinenstr.: für Anhänger zu eng	BNP:0::trailer=no 10781,11243
 Fanny-Zobel-Str.: wegen Bauarbeiten gesperrt, vielleicht sogar dauerhaft eingezogen	2::inwork 13975,10187 14049,10164
 # 
 #: source_id: 2147342570
-#: last_checked: 2018-05-26
+#: last_checked: 2018-05-28
 #: next_check: 2018-06-01
 #: valid: -20180601
 #: priority: #A
@@ -2973,7 +2978,7 @@ Zum Großen Herzberg (Potsdam-Golm): Straße wird noch gebaut	2::inwork -18017,333
 # 
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/express-zum-ber-fledermaeuse-stoppen-bauarbeiten-fuer-ringbahnbruecke-29488832 (Abriss im April 2018)
 #: XXX wird aufgehoben, sobald das einsturzgefährdete Haus abgerissen wird
-#: osm_watch: way id="488814363" version="2"
+#: osm_watch: way id="488814363" version="3"
 #: last_checked: 2018-05-14
 #: check_frequency: 30d
 #: priority: #C
@@ -3037,7 +3042,7 @@ Zufahrt Parkhaus: Abrissarbeiten, Straße komplett gesperrt	2::inwork 8367,10745 
 #: next_check: 2018-09-01
 Merlitzstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19661,3421 19524,3286
 # 
-#: last_checked: 2018-05-22
+#: last_checked: 2018-05-28
 #: check_frequency: 21d
 Mauerstr. und Jägerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9195,11972 9108,11961 9076,12054
 # 
@@ -3187,7 +3192,7 @@ Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13176,9302 13098,920
 # REMOVED (nur der östliche Abschnitt ist geblieben, aber relativ breit und relativ wenig Verkehr) --- #: XXX Bauarbeiten der Berliner Wasserbetriebe bis Dezember 2017 --- #: last_checked: 2017-07-23 --- #: next_check: 2017-12-01 --- #: valid: -20171231 --- Türrschmidtstr.: Bauarbeiten, Einbahnstraße	1s:q3 15541,10892 15649,10922 15756,10966
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3853&mt=0&zoom=16
-#: last_checked: 2018-05-22
+#: last_checked: 2018-05-28
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8969,11814
 # 
 #: next_check_id: NORDHAFENPARKWEST-2018

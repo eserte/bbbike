@@ -1181,13 +1181,7 @@ Petriplatz -> Gertraudenstr.: Abbiegen verboten	3 10418,12016 10460,11979 10512,
 Schmohlstr.	1 13239,17269 13196,17223 13159,17196 13057,17120
 Kiehlufer	1 12913,9353 12901,9340 12895,9323
 # 
-#: osm_watch: way id="454034985" version="5"
-#: next_check_id: DIESEL-2015
-#: XXX laut osm wieder offen
-#: last_checked: 2018-05-21
-#: next_check: 2018-05-24
-Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14366,8058 14384,8056 14425,8052 14484,8044
-# 
+# REMOVED (Sperrung beendet) --- #: osm_watch: way id="454034985" version="5" --- #: next_check_id: DIESEL-2015 --- #: XXX laut osm wieder offen --- #: last_checked: 2018-05-21 --- #: next_check: 2018-05-24 --- Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14366,8058 14384,8056 14425,8052 14484,8044
 # REMOVED --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf --- #: XXX evtl wird die Straße für Radfahrer geöffnet --- #: osm_watch: way id="12307305" version="4" --- #: last_checked: 2017-08-22 --- #: check_frequency: 60d
 Naumannstr.	1 7709,8777 7707,8915
 Schulenburgring	1 9030,8431 9028,8584 9011,8605
