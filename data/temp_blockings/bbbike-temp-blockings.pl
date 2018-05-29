@@ -26456,11 +26456,14 @@ EOF
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=30361
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=29479
 #: by: mapillary (Gehweg für Radfahrer frei)
+#: source_id: 2147342671
 #: XXX wann sind die Bauarbeiten beendet?
 #: last_checked: 2018-05-01
 #: check_frequency: 30d
 	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
+#: XXX hier laut fritz nur bis 2018-07-05
+	q3::inwork; 2781,2493 2740,2588 2625,2850
 EOF
      },
      { from  => 1502483236, # 2017-08-11 22:27
@@ -27093,8 +27096,9 @@ EOF
        text  => 'Uferweg: zwischen Mentzelpark und Eiselenweg Bauarbeiten, Weg komplett gesperrt, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2018-05-06
-	2::inwork 21696,5053 21600,5221 21512,5404 21487,5425
+#: next_check_id: MENTZELPARK-2018
+#: last_checked: 2018-05-29
+	2::inwork 21696,5053 21600,5221 21512,5404 21481,5429
 EOF
      },
      { from  => undef, # 
@@ -27235,7 +27239,7 @@ EOF
      },
      { from  => 1527533410, # 2018-05-28 20:50
        until => 1531691999, # 2018-07-15 23:59
-       text  => 'Weiskopffstr.: Gleisbauarbeiten zwischen An der Wuhlheide und Parkstr., Fahrbahn gesperrt, eventuell sind auch Radfahrer von der Sperrung betroffen, bis Mitte Juli 2018',
+       text  => 'Weiskopffstr.: Gleisbauarbeiten zwischen An der Wuhlheide und Parkstr., Fahrbahn gesperrt, bis Mitte Juli 2018',
        type  => 'handicap',
        source_id => '2147342666',
        data  => <<EOF,

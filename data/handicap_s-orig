@@ -21,7 +21,7 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-05-26
+#: last_checked: 2018-05-29
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
@@ -31,7 +31,7 @@ Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,1
 #: check_frequency: 90d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
-#: last_checked: 2018-05-25
+#: last_checked: 2018-05-29
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 #: XXX_prog BS (östliche Seite)
@@ -42,9 +42,10 @@ Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstei
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
+#: XXX_prog BS (auf der östlichen Seite, ansonsten q3+)
 #: last_checked: 2018-05-25
 #: check_frequency: 90d
-Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 12450,11980 12617,11888
+Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
 # 
 #: next_check_id: RIGAER-2018
 #: last_checked: 2018-02-21
@@ -339,8 +340,8 @@ Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q3::
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180307 (hier: Ende der Bauarbeiten August 2018, aber vielleicht ist Fahrbahn+Radweg früher schon offen?)
 #: source_id: LMS-BR_r_LMS-BR_116151_LMS-BR_72
 #: last_checked: 2018-05-20
-#: next_check: 2018-05-31
-#: valid: -20180531
+#: next_check: 2018-07-15
+#: valid: -20180715
 #: priority: #A
 Wilhelminenhofstr.: Bauarbeiten zwischen Siemensstr. und Edisonstr., Fahrbahn und teilweise auch Radweg gesperrt	q3::inwork 17826,6495 17991,6431
 # 
@@ -1081,9 +1082,9 @@ Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 7908,12804 79
 Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 8257,13037 8277,13032 8317,13015 8408,12968 8464,12919 8498,12870 8529,12757 8538,12710 8574,12662 8635,12629 8754,12622
 Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 8635,12629 8709,12605 8756,12608
 Helenenhof: enge Tore, Fußgänger	q3 14506,11275 14395,11356
-Färberstr. - Uferweg: sehr eng	q2 21662,4974 21665,5035 21696,5053
+Färberstr. - Uferweg: sehr eng	q2 21662,4974 21670,4997 21665,5035 21696,5053
 #: note: an einer Stelle außerdem zwei niedrige "Stufen"
-Uferweg, Mentzelpark: Fußgänger	q1- 21487,5425 21512,5404 21600,5221 21696,5053 21740,5004 21761,4979
+Uferweg, Mentzelpark: Fußgänger	q1- 21481,5429 21512,5404 21600,5221 21696,5053 21740,5004 21761,4979
 Uferweg, Mentzelpark: Fußgänger, eng	q3 21761,4979 21821,4918 21834,4889
 (Mentzelpark): Fußgänger	q1 21761,4979 21778,4916 21834,4889 21848,4882
 (Mentzelpark): Fußgänger	q1 21726,4896 21741,4889 21778,4916

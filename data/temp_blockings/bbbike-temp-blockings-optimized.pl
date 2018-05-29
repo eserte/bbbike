@@ -4118,11 +4118,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=30361
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=29479
 #: by: mapillary (Gehweg für Radfahrer frei)
+#: source_id: 2147342671
 #: XXX wann sind die Bauarbeiten beendet?
 #: last_checked: 2018-05-01
 #: check_frequency: 30d
 	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
+#: XXX hier laut fritz nur bis 2018-07-05
+	q3::inwork; 2781,2493 2740,2588 2625,2850
 ',
          'from' => 1502386525,
          'id' => 2897,
@@ -4332,8 +4335,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        {
-         'data' => '#: last_checked: 2018-05-06
-	2::inwork 21696,5053 21600,5221 21512,5404 21487,5425
+         'data' => '#: next_check_id: MENTZELPARK-2018
+#: last_checked: 2018-05-29
+	2::inwork 21696,5053 21600,5221 21512,5404 21481,5429
 ',
          'from' => undef,
          'id' => 2952,
@@ -4474,7 +4478,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1527533410,
          'id' => 2964,
          'source_id' => '2147342666',
-         'text' => 'Weiskopffstr.: Gleisbauarbeiten zwischen An der Wuhlheide und Parkstr., Fahrbahn gesperrt, eventuell sind auch Radfahrer von der Sperrung betroffen, bis Mitte Juli 2018',
+         'text' => 'Weiskopffstr.: Gleisbauarbeiten zwischen An der Wuhlheide und Parkstr., Fahrbahn gesperrt, bis Mitte Juli 2018',
          'type' => 'handicap',
          'until' => 1531691999
        }
