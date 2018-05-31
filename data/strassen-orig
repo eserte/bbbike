@@ -60,7 +60,8 @@ Möckernstr.	NH 8777,9601 8778,9759 8779,9812 8779,9829 8779,9851 8780,9968 8783,
 Möckernstr.	N 8824,10366 8878,10514 8926,10626 8941,10663 9022,10857
 #: note: Privatstraße
 #: note: Benennung wurde am 2017-07-01 wirksam
-Möckernkiez	N 8778,9759 8710,9725 8729,9670 8596,9595 8565,9657
+Möckernkiez	N 8778,9759 8735,9737 8710,9725 8729,9670 8596,9595 8565,9657
+(Gleisdreieckpark - Möckernkiez)	NN 8729,9747 8735,9737
 Großbeerenstr. (Kreuzberg)	N 8970,9323 9000,9509 9044,9753 9073,9915 9108,10101 9145,10290 9154,10348 9176,10451 9192,10528 9249,10562
 Kleinbeerenstr.	N 8878,10514 8979,10485
 (Platz vor dem Tempodrom)	NN 8941,10663 8853,10708
@@ -882,7 +883,7 @@ Altonaer Str. (Hansaviertel, Tiergarten)	H 5905,12573 5944,12548 6025,12494 6090
 (Altonaer Str. - Händelallee)	NN 6354,12278 6280,12222
 Bachstr. (Hansaviertel)	H 5758,11895 5775,11975 5790,12026 5807,12070 5870,12179 5938,12281 5951,12353 6025,12494
 Lessingstr. (Hansaviertel)	H 6025,12494 6124,12694 6150,12875 6157,12933
-Klopstockstr. (Hansaviertel, Tiergarten)	N 5900,11913 5898,12017 5917,12079 5961,12134 6082,12273 6173,12396
+Klopstockstr. (Hansaviertel, Tiergarten)	N 5900,11913 5898,12017 5909,12073 5961,12134 6082,12273 6173,12396
 Bartningallee	N 6173,12396 6276,12506 6314,12518 6442,12545 6480,12563 6500,12605 6516,12650 6522,12662 6575,12778
 Moabiter Brücke	N 6575,12778 6608,12858
 Leibnizstr.	H 4239,10358 4245,10435 4256,10583 4267,10724 4276,10867 4289,11060 4302,11232 4312,11354 4331,11554 4337,11721 4356,12009
@@ -4221,10 +4222,11 @@ Wodanstr. (Französisch Buchholz)	N 12216,21945 12162,21743
 #: by: https://adfc-berlin.de/radverkehr/aus-den-bezirken/pankow/524-koenigsteinbruecke-wird-fuer-radverkehr-im-nordosten-dringend-gebraucht.html (ab Sommer 2018)
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621&date=20180219 (2018 bis 2019)
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4781
+#: by: https://www.berliner-woche.de/blankenburg/c-verkehr/behelfsbruecke-bitte-bauen_a164843
 #: XXX erste Planung: Sperrung in der Zeit vom 24. November 2017 bis zum 30. Mai 2019
 #: osm_watch: way id="16307526" version="11"
 #: last_checked: 2018-04-21
-#: next_check: 2018-06-01
+#: next_check: 2018-07-01
 #: priority: #A
 (Königsteinbrücke)	NN 13136,22397 13148,22396 13385,22383 13404,22384
 (Pankeweg)	NN 13365,22743 13321,22586 13295,22545 13290,22377 13354,22327
@@ -17113,17 +17115,15 @@ Schleswiger Ufer	N 5714,12266 5803,12356 5858,12425
 Schleswiger Ufer	NN 5858,12425 5894,12480 5944,12548
 (Treppe zum Spreeufer)	NN 5940,12564 5946,12553 5944,12548
 Cuxhavener Str.	NN 5894,12480 5919,12423
-Cuxhavener Str.	N 5919,12423 5951,12353 5999,12280
+Cuxhavener Str.	N 5919,12423 5951,12353 5982,12291
 (Zufahrt Parkplätze Bartningallee)	N 6500,12605 6361,12617 6304,12603 6188,12553 6179,12513
 (Zufahrt Parkplätze Bartningallee)	NN 6179,12513 6149,12454
 (Altonaer Str. - Flensburger Str.)	NN 6173,12396 6149,12454 6137,12532 6160,12681
 Händelallee	N 6082,12273 6130,12232 6280,12222 6265,12134 5998,12105 5961,12134
 Hanseatenweg	N 6442,12545 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518
-#: XXX gibt es diese Straße noch?
-#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8819
-#: priority: #B
-(Zufahrt Parkplätze Klopstockstr.)	N 5917,12079 5880,12100 5999,12280
-(Cuxhavener Str. - Altonaer Str.)	NN 5999,12280 6090,12451
+# REMOVED (ja) --- #: XXX gibt es diese Straße noch? --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8819 --- #: priority: #B
+(Zufahrt Parkplätze Klopstockstr.)	N 5909,12073 5870,12106 5982,12291
+(Cuxhavener Str. - Altonaer Str.)	NN 5982,12291 6090,12451
 (Treppe zur Uferpromenade)	NN 8277,13032 8276,13041 8274,13052
 (Treppe zum Spreeuferweg)	NN 8160,13053 8159,13042 8159,13032
 (Kapelle-Ufer - Spreeuferweg)	NN 8110,13042 8044,12989
@@ -18275,7 +18275,7 @@ Boninstr. (Lichterfelde)	N 3942,1032 3892,999 3840,964
 (Park am Gleisdreieck, Generalszug)	NN 8338,9971 8521,9911 8571,9896 8652,9870 8733,9841
 (Park am Gleisdreieck, östlicher Weg)	NN 8775,10289 8780,10248 8726,10056 8652,9870
 (Park am Gleisdreieck, mittlerer Weg)	NN 8579,10030 8521,9911 8504,9870 8477,9867 8464,9744 8446,9670 8426,9572
-(Hornstr. - Park am Gleisdreieck)	NN 8779,9829 8761,9765 8722,9743
+(Hornstr. - Park am Gleisdreieck)	NN 8779,9829 8761,9765 8729,9747 8722,9743
 (Park am Gleisdreieck, südöstlicher Weg)	NN 8722,9743 8565,9657 8540,9644 8508,9551 8477,9562 8426,9572
 (Rampe Hornstr. - Generalszug)	NN 8722,9743 8733,9841
 (A.T.U-Einfahrt - ALDI-Parkplatz)	N 8595,9495 8561,9482 8546,9468 8514,9470 8487,9405 8499,9253

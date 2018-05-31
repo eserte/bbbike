@@ -789,7 +789,7 @@ Bänschstr.: Asphalt	Q0 14996,12462 14801,12517
 Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: XXX Asphaltierung soll 2018 erfolgen
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf
-#: last_checked: 2018-05-24
+#: last_checked: 2018-05-30
 #: next_check: 2018-12-31
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1353,14 +1353,10 @@ Esplanade: asphaltiert	Q0 10975,16896 10886,16893
 Esplanade: Kleinsteinpflaster	Q2+ 10886,16893 10655,16904
 Glinkastr.: Asphalt	Q0+ 9183,12076 9195,11972 9207,11880 9218,11793 9220,11781
 Ettaler Str.: Kopfsteinpflaster	Q2 5997,10286 5948,10152
-#: XXX Sanierung des Kleinsteinpflasters ab 2018-05-28 bis voraussichtlich Herbst 2018 -> ändert sich an der Qualität etwas? Gibt es während der Bauarbeiten Einschränkungen? vvv
-#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.703939.php
-#: next_check: 2018-05-28 vvv
+# REMOVED --- #: XXX Sanierung des Kleinsteinpflasters ab 2018-05-28 bis voraussichtlich Herbst 2018 -> ändert sich an der Qualität etwas? Gibt es während der Bauarbeiten Einschränkungen? vvv --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.703939.php --- #: next_check: 2018-05-28 vvv
 Fasanenplatz, zur Schaperstr.: Kleinsteinpflaster	Q1- 5224,10253 5192,10234
 Fasanenplatz: Kleinsteinpflaster	Q1- 5192,10234 5191,10190
 Fasanenplatz, zur Meierottostr.: Kleinsteinpflaster	Q1- 5191,10190 5220,10192 5246,10168
-#: next_check ^^^
-#: XXX: ^^^
 Meierottostr.: Asphalt mit einigen Schäden	Q0- 5246,10168 5463,9961
 Virchowstr.: Kopfsteinpflaster	Q2 12925,13373 12876,13440
 Dunckerstr.: Kopfsteinpflaster	Q2 11337,14946 11450,15173 11480,15229 11595,15460
@@ -7161,7 +7157,7 @@ Bebelplatz: gepflastert	Q1 9680,12232 9664,12387
 (Park am Gleisdreieck, mittlerer Weg): Asphalt	Q0 8579,10030 8521,9911
 (Park am Gleisdreieck, mittlerer Weg): Beton	Q0 8521,9911 8504,9870 8477,9867
 (Park am Gleisdreieck, mittlerer Weg): Asphalt	Q0 8477,9867 8464,9744 8446,9670 8426,9572
-(Hornstr. - Park am Gleisdreieck): Beton	Q0 8779,9829 8761,9765 8722,9743
+(Hornstr. - Park am Gleisdreieck): Beton	Q0 8779,9829 8761,9765 8729,9747 8722,9743
 (Park am Gleisdreieck, südöstlicher Weg): Asphalt	Q0 8722,9743 8565,9657 8540,9644 8508,9551 8477,9562 8426,9572
 (Rampe Hornstr. - Generalszug): Asphalt	Q0 8733,9841 8722,9743
 (Park am Gleisdreieck): Asphalt	Q0 8278,10384 8265,10348 8261,10337 8252,10308 8256,10264 8264,10192 8211,10083
@@ -10637,7 +10633,7 @@ Wolziger Zeile: Asphalt mit leichten Schäden	Q0- 10257,-2654 10085,-2643 9969,-2
 (Marseillestr. - Dr.-Markus-Str.): wassergebundene Decke	Q1 12364,21623 12402,21537
 #: next_check_id: KARLINEKENWEG-2018
 #: XXX hier wird vermutlich auch gepflastert
-#: last_checked: 2018-04-28
+#: last_checked: 2018-05-27 (osm)
 #: check_frequency: 60d
 Karlinekenweg: unbefestigte Baustraße	Q2- 11359,20297 11405,20196
 Karlinekenweg: Verbundsteinpflaster	Q1+ 11405,20196 11422,20202 11496,20068 11537,20087
@@ -10663,6 +10659,8 @@ Ramlerstr. [entlang der Swinemünder Brücke]: Kopfsteinpflaster	Q2 9666,15739 964
 (Alt-Lichtenrade - Töpchiner Weg): Betonpflaster	Q0 10950,-438 11207,-413
 Furkastr.: Beton	Q0 10329,2882 10422,3091 10439,3129 10504,3198
 Dieselstr.: Asphalt	Q0 14326,8062 14366,8058 14384,8056 14425,8052 14484,8044
+Möckernkiez: Beton	Q0 8778,9759 8735,9737
+Möckernkiez: Steinplatten	Q0- 8735,9737 8710,9725 8729,9670 8596,9595 8565,9657
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -25523,9 +25521,10 @@ Cuxhavener Str.: Asphalt	Q1 5894,12480 5919,12423
 (Zufahrt Parkplätze Bartningallee): Kopfsteinpflaster	Q2 6500,12605 6361,12617 6304,12603 6188,12553 6179,12513
 (Zufahrt Parkplätze Bartningallee): Gehwegplatten	Q1 6179,12513 6149,12454
 (Altonaer Str. - Flensburger Str.): Gehwegplatten	Q1 6173,12396 6149,12454 6137,12532 6160,12681
-Cuxhavener Str.: Kopfsteinpflaster	Q2 5919,12423 5951,12353 5999,12280
-(Zufahrt Parkplätze Kloppstockstr.): Kopfsteinpflaster	Q2 5917,12079 5880,12100 5999,12280
-(Cuxhavener Str. - Altonaer Str.): fester Sand	Q1 5999,12280 6090,12451
+Cuxhavener Str.: Kopfsteinpflaster	Q2 5919,12423 5951,12353 5982,12291
+#: corrected_by: srt (Q2 -> Q2-)
+(Zufahrt Parkplätze Kloppstockstr.): Kopfsteinpflaster	Q2- 5909,12073 5870,12106 5982,12291
+(Cuxhavener Str. - Altonaer Str.): fester Sand	Q1 5982,12291 6090,12451
 Hanseatenweg: Kopfsteinpflaster	Q1 6442,12545 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518
 Am Waldfriedhof: Asphalt	Q0 922,4910 928,4996
 Am Waldfriedhof: Beton	Q0 928,4996 938,5088 966,5151 1004,5194 1090,5268 1114,5290 1139,5308 1212,5353

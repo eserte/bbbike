@@ -25663,8 +25663,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-05-27 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2018-05-30 vvv
+#: check_frequency: 7d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
 	q2::inwork; 11139,12243 11092,12375
@@ -26881,12 +26881,13 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Vorbergstr.: Bauarbeiten zwischen Gleditschstr. und Akazienstr., Fahrbahn gesperrt, Ende unbekannt',
+       text  => 'Vorbergstr.: Bauarbeiten zwischen Gleditschstr. und Akazienstr., Fahrbahn gesperrt, außerdem Sperrung in der Gleditschstr., Ende unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 # XXX_prog: eigentlich q3-
-#: last_checked: 2018-05-08
+#: last_checked: 2018-05-30
 	q3::inwork 7136,9223 7012,9222
+	q2::inwork 7136,9223 7130,9316
 EOF
      },
      { from  => 1521060826, # 2018-03-14 21:53
@@ -26999,7 +27000,7 @@ EOF
 EOF
      },
      { from  => 1522789491, # 2018-04-03 23:04
-       until => 1527803999, # 2018-05-31 23:59
+       until => 1527718780, # 1527803999, # 2018-05-31 23:59
        text  => 'Oranienburger Str.: Bauarbeiten zwischen Wittenauer Str. und Cyclopstr. Richtung Süden; außerdem Einbahnstraßenregelung in der Cyclopstr., offen Richtung Süden; bis Ende Mai 2018',
        type  => 'handicap',
        source_id => '2147341699',
@@ -27244,6 +27245,18 @@ EOF
        source_id => '2147342666',
        data  => <<EOF,
 	q4::inwork 19958,5950 19681,5924
+EOF
+     },
+     { from  => undef, # 
+       until => 1538258400, # 2018-09-30 00:00
+       text  => 'Fasanenplatz: Bauarbeiten, Sperrung der Fahrbahn, Bordstein',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.703939.php',
+       data  => <<EOF,
+#: XXX Sanierung des Kleinsteinpflasters ab 2018-05-28 bis voraussichtlich Herbst 2018 -> ändert sich an der Qualität etwas?
+#: last_checked: 2018-05-30
+#: check_frequency: 14d
+	q4::inwork 5224,10253 5192,10234
 EOF
      },
     );

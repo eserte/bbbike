@@ -524,7 +524,7 @@ asphaltiert	RW1; 10982,16121 10989,16197 10997,16280 11004,16360
 	RW2;RW2 10975,16896 10927,17022
 	RW1; 6661,13130 6608,12858
 #: note: früher ein Zweirichtungsradweg, heute nur noch ein breiter Radweg, teilweise mit expliziten Richtungspfeilen
-	RW1; 6608,12858 6575,12778 6522,12662 6516,12650 6500,12605 6480,12563 6442,12545 6314,12518 6276,12506 6173,12396 6082,12273 5961,12134 5917,12079 5898,12017 5900,11913
+	RW1; 6608,12858 6575,12778 6522,12662 6516,12650 6500,12605 6480,12563 6442,12545 6314,12518 6276,12506 6173,12396 6082,12273 5961,12134 5909,12073 5898,12017 5900,11913
 	RW2;RW2 -2317,11254 -2413,11283 -2476,11301 -2851,11417 -3069,11487
 # REMOVED (laut Construction Sites Berlin fertig) --- #: next_check_id: HEERSTR-2016 --- #: XXX während der Bauarbeiten Zweirichtungsradweg#: XXX laut Tsp von 2016-06-04 Eröffnung im Oktober 2016 --- #: XXX laut MoPo vom 2016-11-10 noch immer nicht fertig --- #: by: http://www.tagesspiegel.de/berlin/berlin-spandau-eroeffnungstermin-fuer-freybruecke-steht-jetzt-fest/14988922.html (Eröffnungstermin) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6281.html (Fertigstellung des nördlichen Geh- und Radwegbereiches) --- #: by: https://www.facebook.com/baustellen.berlin/posts/337499020031865 --- #: XXX auf der Brücke asphaltiert --- #: XXX zukünftiger Eintrag: asphaltiert	RW2;RW2 -3069,11487 -3173,11520 -3381,11583 -3404,11589 --- #: last_checked: 2017-11-04 --- #: check_frequency: 30d --- #: priority: #A
 asphaltiert	RW2;RW2 -3069,11487 -3173,11520 -3381,11583 -3404,11589
@@ -1073,7 +1073,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2018-05-25
+#: last_checked: 2018-05-30
 #: next_check: 2018-06-28
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1085,7 +1085,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut rbbtext bis 31.05.2016, laut vmz bis Ende 2016, laut fritz bis 09.01.2018
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2018-05-25
+#: last_checked: 2018-05-30
 #: next_check: 2018-06-28
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
@@ -1097,13 +1097,13 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: IM_025933
 #: osm_watch: way id="342968607" version="8"
 #: osm_watch: way id="461526152" version="2"
-#: last_checked: 2018-05-25
+#: last_checked: 2018-05-30
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2018-05-25
+#: last_checked: 2018-05-30
 #: check_frequency: 60d
 Busspur ist immer gültig	RW5; 9475,12365 9613,12381
 # 
@@ -1156,7 +1156,7 @@ neu asphaltiert, abgesperrt	RW0; 17681,7589 17619,7679
 #: XXX werden hier noch Radspuren oder ein neuer Radweg angelegt?
 #: source_id: 2147341340
 #: source_id: LMS-BR_r_LMS-BR_98104
-#: last_checked: 2018-05-29
+#: last_checked: 2018-05-30
 #: check_frequency: 60d
 	RW0; 17619,7679 17527,7812 17317,8115 17299,8140 17202,8391
 	RW1; 17202,8391 17143,8565 17105,8666

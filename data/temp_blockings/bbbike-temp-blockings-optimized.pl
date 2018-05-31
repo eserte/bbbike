@@ -3915,23 +3915,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: laut fritz bis 2018-05-30, laut vmz bis Mai 2018
-#: by: http://www.berliner-woche.de/buckow/verkehr/der-lange-weg-zur-sanierten-strasse-bauarbeiten-am-buckower-damm-anwohner-aergern-sich-ueber-lkw-im-wohngebiet-d126968.html
-#: note: die Baustelle ist gewandert
-#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730
-#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=20802
-# REMOVED (ja) ---  XXX laut fritz mittlerweile in beiden Richtungen --- stimmt das?
-#: source_id: LMS-BR_r_LMS-BR_72519
-	q3::inwork 12911,1815 12940,1547
-',
-         'from' => 1467661160,
-         'id' => 2808,
-         'source_id' => '2147341551',
-         'text' => 'Buckower Damm: Baustelle zwischen An den Achterhöfen und Mollnerweg, evtl. auch Einschränkungen für Radfahrer, voraussichtlich bis Ende Mai 2018',
-         'type' => 'handicap',
-         'until' => 1527674400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3950,8 +3934,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-05-27 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2018-05-30 vvv
+#: check_frequency: 7d vvv
 	q2::inwork 10954,12635 11059,12450
 	q3::inwork 11059,12450 11084,12395 11092,12375
 	q2::inwork; 11139,12243 11092,12375
@@ -4257,12 +4241,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '# XXX_prog: eigentlich q3-
-#: last_checked: 2018-05-08
+#: last_checked: 2018-05-30
 	q3::inwork 7136,9223 7012,9222
+	q2::inwork 7136,9223 7130,9316
 ',
          'from' => undef,
          'id' => 2935,
-         'text' => 'Vorbergstr.: Bauarbeiten zwischen Gleditschstr. und Akazienstr., Fahrbahn gesperrt, Ende unbekannt',
+         'text' => 'Vorbergstr.: Bauarbeiten zwischen Gleditschstr. und Akazienstr., Fahrbahn gesperrt, außerdem Sperrung in der Gleditschstr., Ende unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -4308,18 +4293,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: ORANIENBURGER-2018
-	q4::inwork; 5136,21738 5210,21636 5311,21495 5320,21432 5333,21332 5341,21266 5343,21250 5349,21198
-	q4::inwork; 5297,21243 5099,21410 5053,21452 5000,21488 4810,21730
-',
-         'from' => 1522789491,
-         'id' => 2946,
-         'source_id' => '2147341699',
-         'text' => 'Oranienburger Str.: Bauarbeiten zwischen Wittenauer Str. und Cyclopstr. Richtung Süden; außerdem Einbahnstraßenregelung in der Cyclopstr., offen Richtung Süden; bis Ende Mai 2018',
-         'type' => 'handicap',
-         'until' => 1527803999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4481,6 +4455,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Weiskopffstr.: Gleisbauarbeiten zwischen An der Wuhlheide und Parkstr., Fahrbahn gesperrt, bis Mitte Juli 2018',
          'type' => 'handicap',
          'until' => 1531691999
+       },
+       {
+         'data' => '#: XXX Sanierung des Kleinsteinpflasters ab 2018-05-28 bis voraussichtlich Herbst 2018 -> ändert sich an der Qualität etwas?
+#: last_checked: 2018-05-30
+#: check_frequency: 14d
+	q4::inwork 5224,10253 5192,10234
+',
+         'from' => undef,
+         'id' => 2965,
+         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.703939.php',
+         'text' => 'Fasanenplatz: Bauarbeiten, Sperrung der Fahrbahn, Bordstein',
+         'type' => 'handicap',
+         'until' => 1538258400
        }
      
 );
