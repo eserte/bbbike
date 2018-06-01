@@ -2286,6 +2286,7 @@ Tor, kann geschlossen sein	BNP:2::trailer=5 16196,18364
 #: note ^^^
 #: note ^^^
 Schranke	BNP:3::trailer=10 14138,21233
+Schranke	BNP:2::trailer=5 8757,9748
 #: note: Anordnung wie bei Drängelgittern vvv
 Barriere	BNP:2::trailer=8 13148,22396
 Barriere	BNP:2::trailer=8 13385,22383
@@ -2887,7 +2888,7 @@ Drängelgitter	BNP:3::trailer=10 25081,-9433
 am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 16436,8687
 # 
 #: next_check_id: ALEXANDRINENSTR-2018
-#: last_checked: 2018-05-30
+#: last_checked: 2018-05-31
 #: check_frequency: 30d
 Alexandrinenstr.: für Anhänger zu eng	BNP:0::trailer=no 10781,11243
 # 
@@ -2906,9 +2907,10 @@ Alexandrinenstr.: für Anhänger zu eng	BNP:0::trailer=no 10781,11243
 Fanny-Zobel-Str.: wegen Bauarbeiten gesperrt, vielleicht sogar dauerhaft eingezogen	2::inwork 13975,10187 14049,10164
 # 
 #: source_id: 2147342570
-#: last_checked: 2018-05-28
-#: next_check: 2018-06-01
-#: valid: -20180601
+#: last_checked: 2018-06-01
+# REMOVED ---#: check_frequency: 3d
+#: next_check: 2018-06-15
+#: valid: -20180615
 #: priority: #A
 Koppenstr.: Bauarbeiten, Fahrbahn Richtung Rüdersdorfer Str. gesperrt	1s:q2:inwork 12573,12227 12596,12472
 # 
@@ -3111,7 +3113,7 @@ Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5518,12159 5627,12105 5
 #: osm_watch ^^^
 #: by ^^^
 # 
-# REMOVED --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8103 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036562139600/562139600/00280921/21-Anlagen/01/DS0329_VzK_Strassenbenennung_Moeckernkiez_fina.pdf --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_30_3365_3488_online.pdf (Benennung) --- #: XXX Qualität: Rampe betoniert, sonst eine Art Steinpflaster; ggfs. noch eine weitere Zufahrt zum Park einzeichnen --- #: osm_watch: way id="264361563" version="3" --- #: last_checked: 2018-05-08 --- #: check_frequency: 21d --- Möckernkiez: Bauarbeiten	2::inwork 8778,9759 8735,9737 8710,9725 8729,9670 8596,9595 8565,9657
+# REMOVED --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8103 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036562139600/562139600/00280921/21-Anlagen/01/DS0329_VzK_Strassenbenennung_Moeckernkiez_fina.pdf --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_30_3365_3488_online.pdf (Benennung) --- #: XXX Qualität: Rampe betoniert, sonst eine Art Steinpflaster; ggfs. noch eine weitere Zufahrt zum Park einzeichnen --- #: osm_watch: way id="264361563" version="3" --- #: last_checked: 2018-05-08 --- #: check_frequency: 21d --- Möckernkiez: Bauarbeiten	2::inwork 8778,9759 8757,9748 8735,9737 8710,9725 8729,9670 8596,9595 8565,9657
 # REMOVED (vermutlich beendet) --- #: next_check_id: OBERERWUHLEWANDERWEG-2017 --- #: last_checked: 2017-08-09 --- #: XXX Ende der Bauarbeiten --- #: next_check: 2017-08-11 --- #: priority: #A --- oberer Wuhlewanderweg: Bauarbeiten, komplett gesperrt	2::inwork 22873,14498 22864,14556
 # 
 #: next_check_id: MOEWENWEG-2017
@@ -3218,7 +3220,7 @@ Nordhafenpark West: unter der Brücke gesperrt	2::inwork 7636,14414 7612,14449 75
 #: XXX Bauarbeiten (Erweiterung des Rütli-Campus?)
 #: XXX Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="137084083" version="8"
-#: last_checked: 2018-04-06
+#: last_checked: 2018-06-01
 #: check_frequency: 60d
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,9200 12548,9167
 # 
@@ -3334,6 +3336,7 @@ BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 #: by: http://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20180201 (Bauarbeiten sind am 27.08.2018 beendet)
 #: by: http://www.berliner-woche.de/johannisthal/verkehr/lichtschimmer-am-horizont-beim-umbau-bahnhof-berlin-schoeneweide-d143446.html (beide Richtungen ab Juni 2018)
 #: by: http://www.berliner-woche.de/johannisthal/bauen/letzter-brueckenschlag-ueber-dem-sterndamm-beim-bauvorhaben-bahnhof-schoeneweide-d157707.html
+#: by: https://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20180601 (Buslinie wird erst am 27.08.2018 verlängert)
 #: source_id: 2147341515	
 #: source_id: LMS-BR_r_LMS-BR_103259_LMS-BR_72
 #: last_checked: 2018-03-10

@@ -26847,8 +26847,8 @@ EOF
 EOF
      },
      { from  => 1518290143, # 2018-02-10 20:15
-       until => $isodate2epoch->("2018-05-31 12:00:00"),
-       text  => 'Berlepschstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Mai 2018',
+       until => $isodate2epoch->("2018-06-29 12:00:00"),
+       text  => 'Berlepschstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Juni 2018',
        type  => 'handicap',
        source_id => '2147341799',
        data  => <<EOF,
@@ -26856,6 +26856,7 @@ EOF
 #: by: http://www.berliner-woche.de/zehlendorf/bauen/fertigstellung-der-berlepschstrasse-verzoegert-sich-um-ein-halbes-jahr-d137942.html (sogar "bis Ende März")
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.683398.php
 #: by: http://www.berliner-woche.de/zehlendorf/bauen/strassensanierung-in-der-berlepschstrasse-vezoegert-sich-weiter-d146418.html (Ende Mai)
+#: source_id: 2147341799
 	q4::inwork -468,1919 -343,1983 -285,2015 -226,2048
 EOF
      },
@@ -27000,8 +27001,8 @@ EOF
 EOF
      },
      { from  => 1522789491, # 2018-04-03 23:04
-       until => 1527718780, # 1527803999, # 2018-05-31 23:59
-       text  => 'Oranienburger Str.: Bauarbeiten zwischen Wittenauer Str. und Cyclopstr. Richtung Süden; außerdem Einbahnstraßenregelung in der Cyclopstr., offen Richtung Süden; bis Ende Mai 2018',
+       until => $isodate2epoch->("2018-06-30 18:00:00"), # 1527718780, # 1527803999, # 2018-05-31 23:59
+       text  => 'Oranienburger Str.: Bauarbeiten zwischen Wittenauer Str. und Cyclopstr. Richtung Süden; außerdem Einbahnstraßenregelung in der Cyclopstr., offen Richtung Süden; bis Ende Juni 2018',
        type  => 'handicap',
        source_id => '2147341699',
        data  => <<EOF,
@@ -27105,6 +27106,7 @@ EOF
      { from  => undef, # 
        until => undef, #
        text  => 'Treptower Park: Radfahren im Treptower Park offiziell verboten',
+       permanent => 1,
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.berliner-woche.de/alt-treptow/verkehr/radelverbot-im-park-bleibt-d122937.html
@@ -27254,6 +27256,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.703939.php',
        data  => <<EOF,
 #: XXX Sanierung des Kleinsteinpflasters ab 2018-05-28 bis voraussichtlich Herbst 2018 -> ändert sich an der Qualität etwas?
+#: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/pflasterarbeiten-am-fasanenplatz_a165320
 #: last_checked: 2018-05-30
 #: check_frequency: 14d
 	q4::inwork 5224,10253 5192,10234

@@ -300,7 +300,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 	RW2;RW2 4512,5199 4432,5160 4343,5112
 #: XXX Radwege sollen saniert werden oder es entstehen sogar Radstreifen (Umsetzung 2018) vvv
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
-#: last_checked: 2018-05-14 vvv
+#: last_checked: 2018-06-01 vvv
 #: next_check: 2018-12-31 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
@@ -916,8 +916,9 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=22111
 #: source_id: IM_023718
 #: source_id: 2147339540
-#: last_checked: 2018-05-21
-#: check_frequency: 30d
+#: last_checked: 2018-06-01
+#: next_check: 2018-06-29
+# REMOVED --- #: check_frequency: 30d
 	RW2;RW8 14530,7301 14369,7376 14334,7395 14174,7505
 	RW1; 14015,7631 13919,7707
 	RW2;RW1 14530,7301 14617,7243
@@ -1097,13 +1098,13 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: IM_025933
 #: osm_watch: way id="342968607" version="8"
 #: osm_watch: way id="461526152" version="2"
-#: last_checked: 2018-05-30
+#: last_checked: 2018-05-31
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2018-05-30
+#: last_checked: 2018-05-31
 #: check_frequency: 60d
 Busspur ist immer gültig	RW5; 9475,12365 9613,12381
 # 
