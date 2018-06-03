@@ -319,7 +319,6 @@ sub plot_osm_files {
                          # this is also supposed to work for small
                          # files only
     my $c = $main::c;
-    my $c_bg = $c->cget('-background');
     my $map_conv = _get_map_conv();
 
     if (!$osm_layer{item}) {
@@ -581,15 +580,19 @@ sub plot_osm_files {
 			    ) {
 			$light_color = '#b0b2b2';
 			$dark_color = '#707272';
-		    } elsif (!%tag || (keys %tag == 1 && exists $tag{'created_by'})) { # means basically: item without meaningful tags
-			$light_color = $c_bg;
+		    } elsif (exists $tag{'seamark:type'}) { # don't render
+			undef $light_color;
+		    } elsif (!%tag || (keys %tag == 1 && exists $tag{'created_by'})) { # means basically: item without meaningful tags, don't render
+			undef $light_color;
 		    }
-		    $c->createPolygon(@coordlist,
-				      -fill => $light_color,
-				      -outline => $dark_color,
-				      %item_args,
-				      -tags => [$tag{landuse} ? $osm_layer{landuse} : $osm_layer{area}, @tags],
-				     );
+		    if (defined $light_color) {
+			$c->createPolygon(@coordlist,
+					  -fill => $light_color,
+					  -outline => $dark_color,
+					  %item_args,
+					  -tags => [$tag{landuse} ? $osm_layer{landuse} : $osm_layer{area}, @tags],
+					 );
+		    }
 		} else {
 		    my $color = '#c05000';
 		    if ((exists $tag{'natural'} && $tag{'natural'} eq 'water') ||
