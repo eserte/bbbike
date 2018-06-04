@@ -4336,7 +4336,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1534003200
        },
        {
-         'data' => '#: XXX überprüfen
+         'data' => '#: add_fragezeichen: Sind Radfahrer tatsächlich betroffen oder können sie die Baustelle umfahren?
 #: priority: #C
 	q4::inwork 10908,17142 11116,17140
 ',
@@ -4349,7 +4349,6 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX vielleicht wird die Fahrbahn repariert?
-#: XXX überprüfen
 #: last_checked: 2018-05-28
 #: check_frequency: 14d
 #: priority: #A
@@ -4363,20 +4362,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1534888800
        },
        {
-         'data' => '#: XXX überprüfen
+         'data' => '#: add_fragezeichen: Sind Radfahrer tatsächlich betroffen oder können sie die Baustelle umfahren?
 #: priority: #B
 	q4::inwork 20354,11500 20521,11494
 ',
          'from' => 1527186792,
          'id' => 2960,
          'source_id' => '2147342638',
-         'text' => 'Weißenhöher Str. : Bauarbeiten zwischen Grabensprung und Gladauer Weg, eventuell sind auch Radfahrer betroffen, bis 04.07.2018',
+         'text' => 'Weißenhöher Str. : Bauarbeiten zwischen Grabensprung und Gladauer Weg, eventuell sind auch Radfahrer betroffen, bis Ende Juni 2018',
          'type' => 'handicap',
-         'until' => 1530741600
+         'until' => 1530374400
        },
        {
          'data' => '#: by: fritz
-#: XXX überprüfen
+#: add_fragezeichen: Sind Radfahrer tatsächlich betroffen oder können sie die Baustelle umfahren?
 #: priority: #C
 	q4::inwork 4303,12692 4234,12710 4124,12721 4055,12713 3949,12710 3734,12715
 ',
@@ -4420,6 +4419,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Fasanenplatz: Bauarbeiten, Sperrung der Fahrbahn, Bordstein',
          'type' => 'handicap',
          'until' => 1538258400
+       },
+       {
+         'data' => '#: add_fragezeichen: Sind Radfahrer tatsächlich betroffen oder können sie die Baustelle umfahren?
+	2::inwork 4106,8031 3779,8105 3665,8131 3218,8233 3117,8248
+',
+         'from' => 1528137944,
+         'id' => 2966,
+         'source_id' => '2147342702',
+         'text' => 'Forckenbeckstr.: Bauarbeiten zwischen Mecklenburgische Str. und Cunostr., Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis Mitte Juli 2018',
+         'type' => 'gesperrt',
+         'until' => 1531497600
        }
      
 );

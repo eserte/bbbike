@@ -27179,7 +27179,7 @@ EOF
        type  => 'handicap',
        source_id => '2147342636',
        data  => <<EOF,
-#: XXX überprüfen
+#: add_fragezeichen: Sind Radfahrer tatsächlich betroffen oder können sie die Baustelle umfahren?
 #: priority: #C
 	q4::inwork 10908,17142 11116,17140
 EOF
@@ -27191,7 +27191,6 @@ EOF
        source_id => '2147342639',
        data  => <<EOF,
 #: XXX vielleicht wird die Fahrbahn repariert?
-#: XXX überprüfen
 #: last_checked: 2018-05-28
 #: check_frequency: 14d
 #: priority: #A
@@ -27199,12 +27198,12 @@ EOF
 EOF
      },
      { from  => 1527186792, # 2018-05-24 20:33
-       until => 1530741600, # 2018-07-05 00:00
-       text  => 'Weißenhöher Str. : Bauarbeiten zwischen Grabensprung und Gladauer Weg, eventuell sind auch Radfahrer betroffen, bis 04.07.2018',
+       until => $isodate2epoch->("2018-06-30 18:00:00"), # 1530741600, # 2018-07-05 00:00
+       text  => 'Weißenhöher Str. : Bauarbeiten zwischen Grabensprung und Gladauer Weg, eventuell sind auch Radfahrer betroffen, bis Ende Juni 2018',
        type  => 'handicap',
        source_id => '2147342638',
        data  => <<EOF,
-#: XXX überprüfen
+#: add_fragezeichen: Sind Radfahrer tatsächlich betroffen oder können sie die Baustelle umfahren?
 #: priority: #B
 	q4::inwork 20354,11500 20521,11494
 EOF
@@ -27215,7 +27214,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: fritz
-#: XXX überprüfen
+#: add_fragezeichen: Sind Radfahrer tatsächlich betroffen oder können sie die Baustelle umfahren?
 #: priority: #C
 	q4::inwork 4303,12692 4234,12710 4124,12721 4055,12713 3949,12710 3734,12715
 EOF
@@ -27260,6 +27259,16 @@ EOF
 #: last_checked: 2018-05-30
 #: check_frequency: 14d
 	q4::inwork 5224,10253 5192,10234
+EOF
+     },
+     { from  => 1528137944, # 2018-06-04 20:45
+       until => $isodate2epoch->("2018-07-13 18:00:00"), # 1531691999, # 2018-07-15 23:59
+       text  => 'Forckenbeckstr.: Bauarbeiten zwischen Mecklenburgische Str. und Cunostr., Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis Mitte Juli 2018',
+       type  => 'gesperrt',
+       source_id => '2147342702',
+       data  => <<EOF,
+#: add_fragezeichen: Sind Radfahrer tatsächlich betroffen oder können sie die Baustelle umfahren?
+	2::inwork 4106,8031 3779,8105 3665,8131 3218,8233 3117,8248
 EOF
      },
     );
