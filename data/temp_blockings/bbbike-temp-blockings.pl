@@ -9211,7 +9211,7 @@ EOF
        text  => 'B 002 Pommernstr., Stettiner Str. OD Gartz, Kno. Pommern-/Scheunenstr. u. Stettiner-/Scheu Ausbau Knotenpunkte Vollsperrung 16.07.2007-25.08.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 75502,90490 75956,90435
+	q4::inwork 75493,90486 75956,90435
 EOF
      },
      { from  => 1184450400, # 2007-07-15 00:00
@@ -14637,11 +14637,11 @@ EOF
 	2::inwork 7160,11225 7103,11247 6851,11346
 EOF
      },
-     { from  => $isodate2epoch->("2017-07-17 00:00:00"), # mindestens 1 Tag Vorlauf, besser zwei, oder sogar drei
-       until => $isodate2epoch->("2017-07-26 22:00:00"), # einen Tag für den Abbau --- es wurden aber tatsächlich mindestens zwei Tage benötigt; am 10. Juli 2013 war die Fahrbahn noch gesperrt
+     { from  => $isodate2epoch->("2018-07-02 00:00:00"), # mindestens 1 Tag Vorlauf, besser drei
+       until => $isodate2epoch->("2018-07-11 22:00:00"), # mindestens 1 Tag für den Abbau --- es wurden aber tatsächlich mindestens zwei Tage benötigt; am 10. Juli 2013 war die Fahrbahn noch gesperrt
        prewarn_days => 3,
        postwarn_days => 2,
-       text  => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (20.7.2017 - 24.7.2017; Sperrungen fangen schon früher an und dauern länger)',
+       text  => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (5.7.2018 - 9.7.2018; Sperrungen fangen schon früher an und dauern länger)',
        periodic => 1,
        recurrences => [['yearly', days => 2, months => 7]],
        # zZt status=500: source_id => 'http://www.classicopenair.de/de',
@@ -22713,7 +22713,7 @@ EOF
        type  => 'gesperrt',
        source_id => '146000827',
        data  => <<EOF,
-	2::inwork 46132,49993 46390,50091
+	2::inwork 46124,49995 46158,50065 46164,50139 46204,50183 46376,50291 46391,50323
 EOF
      },
      { from  => 1393110000, # 2014-02-23 00:00
@@ -24324,7 +24324,7 @@ EOF
        type  => 'gesperrt',
        source_id => '156000426',
        data  => <<EOF,
-	2::inwork 46132,49993 46390,50091
+	2::inwork 46124,49995 46158,50065 46164,50139 46204,50183 46376,50291 46391,50323
 EOF
      },
      { from  => undef,

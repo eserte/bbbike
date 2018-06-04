@@ -2045,6 +2045,7 @@ Kolonie: Gehwegplatten	Q1 10190,16930 10209,16674
 #: XXX Asphaltierung geplant, Baumaßnahme voraussichtlich bis Ende 2019 abgeschlossen
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.602784.php
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.702899.php (Bauarbeiten beginnen Ende Mai 2018 --- wird es Einschränkungen für Radfahrer geben?)
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/mehr-komfort-fuer-die-radfahrer_a164804
 #: priority: #B
 #: last_checked: 2018-04-20
 #: next_check: 2018-05-31
@@ -13266,7 +13267,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="7"
-#: last_checked: 2018-04-09
+#: last_checked: 2018-06-03
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -27214,8 +27215,13 @@ Haltrichweg: sandiger Waldweg	Q2+ -8403,5838 -8470,5716
 Gredinger Str.: Asphalt	Q0 -7864,5885 -7909,5840
 Gredinger Str.: mäßiger Asphalt mit Schlaglöchern	Q2 -7909,5840 -7954,5798
 Nailaer Weg: mäßiger Asphalt	Q2 -7987,5831 -8071,5736
+#: XXX wird hier die Qualität nach den Bauarbeiten besser werden? vvv
+#: by: https://www.berliner-woche.de/spandau/c-verkehr/vier-strassen-werden-saniert_a165527
+#: next_check: 2018-07-01 vvv
 Hersbrucker Weg: mäßiger Asphalt mit Schlaglöchern	Q2 -8157,5815 -8071,5736 -7982,5657
 Hersbrucker Weg: Asphalt	Q1 -7982,5657 -7907,5591
+#: next_check ^^^
+#: XXX ^^^
 Fischbrunner Weg: Asphalt	Q0 -7949,5517 -7907,5591 -7851,5692
 #: confirmed_by: srt (zumindest südlicher Abschnitt)
 Pegnitzring: Verbundsteinpflaster	Q1 -8084,5932 -8157,5815 -8190,5753 -8200,5700

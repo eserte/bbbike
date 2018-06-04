@@ -1079,27 +1079,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.openairgallery.de/?y=2017
-	q3::temp 13178,10623 13206,10651
-	q4::temp 13206,10651 13305,10789 13332,10832
-',
-         'from' => 1527926400,
-         'id' => 1107,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              31,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Open Air Gallery am 3. Juni 2018 auf der Oberbaumbrücke (10:00 - 20:00)',
-         'type' => 'gesperrt',
-         'until' => 1528056000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -1733,7 +1713,29 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	q4::temp 9679,11834 9666,11935 9656,12031 9645,12133
+	2::temp 9523,12019 9656,12031
+	2::temp 9536,11922 9666,11935
+',
+         'from' => 1530482400,
+         'id' => 1710,
+         'periodic' => 1,
+         'postwarn_days' => 2,
+         'prewarn_days' => 3,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              2,
+                              'months',
+                              7
+                            ]
+                          ],
+         'text' => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (5.7.2018 - 9.7.2018; Sperrungen fangen schon früher an und dauern länger)',
+         'type' => 'gesperrt',
+         'until' => 1531339200
+       },
        undef,
        undef,
        undef,
@@ -2443,26 +2445,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::temp 34421,1950 34359,2165 34250,2546
-',
-         'from' => 1527717600,
-         'id' => 2078,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              15,
-                              'months',
-                              5
-                            ]
-                          ],
-         'source_id' => 'http://www.erkner.de/271.html?date=20170415',
-         'text' => 'Erkner: Heimatfest, 1.6.2018 bis 3.6.2018',
-         'type' => 'gesperrt',
-         'until' => 1527991200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3156,55 +3139,10 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: tempex: 20170630T2000-20170701T2359
-	2::temp 14161,11930 14285,12190
-',
-         'from' => 1527876000,
-         'id' => 2433,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              6
-                            ]
-                          ],
-         'source_id' => 'http://www.xhain.info/termine/fiesta-kreutziga.htm',
-         'text' => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am 02.06.2018 und 03.06.2018',
-         'type' => 'gesperrt',
-         'until' => 1527984000
-       },
        undef,
        undef,
-       {
-         'data' => '#: tempex: YYYY0530-YYYY0601 vvv
-	2::temp 20755,5750 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
-	2::temp 19976,6087 20015,6069 20293,6278 20200,6321 20106,6357
-	2::temp 20200,6321 20262,6493 20225,6631
-	2::temp 20716,6029 20593,6082 20428,6157 20453,6211 20293,6278
-	2::temp 19976,6087 20064,6290 20106,6357
-#: tempex ^^^
-',
-         'from' => 1527717600,
-         'id' => 2436,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              30,
-                              'months',
-                              5
-                            ]
-                          ],
-         'source_id' => 'https://familienfez.fez-berlin.de/programm/kindertagsfest/',
-         'text' => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 1. bis 3. Juni 2018',
-         'type' => 'gesperrt',
-         'until' => 1528063199
-       },
+       undef,
+       undef,
        undef,
        undef,
        {

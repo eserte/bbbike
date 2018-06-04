@@ -56,8 +56,9 @@ Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12616,14315
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (Baubeginn 2018)
 #: source_id: 2147342299
-#: last_checked: 2018-05-23
-#: check_frequency: 60d
+#: last_checked: 2018-06-03 (Markierungsarbeiten)
+# REMOVED --- #: check_frequency: 60d
+#: check_frequency: 7d
 Danziger Str.	?::projected 12616,14315 12722,14232 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615 13330,13468
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
@@ -223,7 +224,7 @@ Wuhletalstr.: werden hier die Radspuren fortgeführt?	?::projected 20895,17594 20
 #: osm_watch: way id="182782708" version="7"
 #: osm_watch: way id="168307255" version="6"
 #: osm_watch: way id="4687243" version="24"
-#: last_checked: 2018-05-18
+#: last_checked: 2018-06-03
 #: check_frequency: 60d
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14658,14328 14465,14210 14361,14145 14298,14015 14261,13932 14218,13834
 # 
@@ -822,7 +823,7 @@ Bersarinplatz: Verbesserung "Radweganbindung Ostseite"	?::projected; 13730,12535
 Rothenbachstr.: Verbesserung -> wird der frühere Radweg wieder aktiviert?	?::projected; 12144,18436 11950,18529
 # 
 #: osm_watch: way id="111283481" version="11"
-#: last_checked: 2018-05-08
+#: last_checked: 2018-06-03
 #: check_frequency: 90d
 Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected; 15662,16656 15437,16491
 # 
@@ -938,13 +939,13 @@ Wallensteinstr.: Asphaltstreifen geplant	?::projected 17549,9529 17456,9594 1742
 #: XXX oder ist die andere Seite vor Pablo-Picasso-Str. gemeint?
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: source_id: 2147342420
-#: last_checked: 2018-05-21
+#: last_checked: 2018-06-03
 #: check_frequency: 60d
 Falkenberger Chaussee: Verbesserung -> Radspuren oder Asphaltierung des Radwegs?	?::projected; 17744,18016 17843,18078
 # 
 #: osm_watch: way id="40520565" version="28"
 #: osm_watch: way id="51317007" version="23"
-#: last_checked: 2018-05-21
+#: last_checked: 2018-06-03
 Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 16837,17440 16578,17285 16460,17214 16352,17150 16318,17128
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5485
@@ -2174,7 +2175,8 @@ Kurpromenade: wird die Fahrbahn hier erneuert?	?::projected -8862,6375 -8860,643
 #: XXX wann erfolgt die Freigabe? Gibt es eine Benutzungspflicht?
 #: source_id: LS/721-E/16/109
 #: source_id: BIBER_id_234607
-#: next_check: 2017-11-03
+#: last_checked: 2018-06-03 (noch nicht komplett fertig, ein Stück nördlich der Autobahnbrücke fehlt)
+#: check_frequency: 60d
 B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133 21326,27505 21772,28566
 # 
 #: XXX mit der Verlängerung der Tram zur Turmstr.
@@ -2233,6 +2235,10 @@ Onkel-Tom-Str.: Sanierung, evtl. auch Änderungen/Verbesserungen bei den Radwegen
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: by: https://www.berliner-woche.de/spandau/c-verkehr/vier-strassen-werden-saniert_a165527
+#: next_check: 2018-08-01
+Nonnendammallee: Sanierung des Radwegs	?; -1484,14513 -1392,14527 -1357,14533 -914,14602 -457,14536
 # 
 # REMOVED (ja) --- #: next_check_id: CHAUSSEESTR-2016 --- #: XXX siehe auskommentierte Einträge in gesperrt-orig --- #: by: J. Saidowsky --- #: next_check: 2018-05-24 --- Wöhlert/Pflug/Schwartzkopffstr.: wird die Einbahnstraßenregelung wieder hergestellt?	? 8442,14456 8669,14550 8776,14364 8607,14253
 # 
@@ -3636,7 +3642,7 @@ Am Alten Malchower Graben: Benennung?	? 15424,19861 15393,19671 15383,19610 1538
 #: XXX beim ersten Vorschlag war der Name noch offen
 Barnimer Dörferweg	? 18515,20587 18383,20623 18061,20715 18083,20782 18026,20847 17946,20889 17475,20851 17281,20834 17274,20851 17073,21329
 Grenzweg: Benennung?	? 21369,18935 21344,19008 21328,19049 21289,19147 21101,19448
-#: last_checked: 2018-05-21
+#: last_checked: 2018-06-03
 Falkenberger Fußsteig: Benennung? (siehe auch oben)	? 18922,18436 18761,18480 18507,18541 18215,18629 18185,18641
 Ahornallee: Benennung?	? 17015,19287 17015,19587 17050,20298 17061,20451 17079,20716 17281,20834
 #: XXX beim ersten Vorschlag "Florentinenweg" mit "n"
@@ -3938,6 +3944,7 @@ Ernst-Busch-Platz (Potsdam): genaue Lage? ausgeschildert?	? -7244,-4424 -7179,-4
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_12_1519_1638_online.pdf
 #: by: https://www.wbm.de/fileadmin/_processed_/csm_pepitahoefe-spandau_grundstuecksplan_221b0b26bb.jpg
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_20_2467_2610_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.berliner-woche.de/hakenfelde/c-bauen/rund-570-wohnungen-sind-schluesselfertig_a165365
 #: XXX fehlt in Berlin.coords.data
 #: osm_watch: way id="503435551" version="2" vvv
 #: next_check: 2018-06-01 vvv
@@ -4049,7 +4056,6 @@ Stern - Nudow: Durchfahrt möglich? Qualität (laut "Berliner Umland" witterungsab
 Königsdamm in Schlänitzsee: Qualität? Führt hier die F3 entlang?	? -19316,4365 -19392,4605
 F3 nach Marquardt: genaue Wegführung? Qualität?	? -19392,4605 -18701,4578
 Joachimsthal - Altkünkendorf: Qualität?	? 35512,66695 38125,66800 39287,67537 39575,67262 39875,66425
-Gartz - Mescherin: Qualität?	? 75502,90490 75544,90356 75700,90288 76023,90222
 Mescherin - B113: Qualität?	? 78641,95024 78662,95275 78787,95425 78812,95825 78921,96072
 B2 - Rosow: Qualität?	? 76863,101305 76087,101337 75912,101137 75359,101224
 Rosow - Pomellen: Qualität?	? 75335,101272 75175,101384
@@ -4132,7 +4138,6 @@ Alternative Strecke zum Roten Hof: Qualität?	? 43498,21028 43601,21073 43681,211
 Krummensee - Wegendorf: laut "Berliner Umland" unterschiedliche Qualität (gut - schlecht)	? 29536,21843 30444,22044 31272,22232
 Krummensee - Wegendorf: laut "Berliner Umland" unterschiedliche Qualität (gut - schlecht)	? 33374,22059 33437,22053 33969,22104
 Hegemühlenstr. - Herrensee: genaue Wegführung? Qualität?	? 42850,17643 42806,17462 42218,17200 42175,16962 41993,16706 41900,16100 41725,16000 41675,15906 41681,15915
-Liepe - Bralitz: Qualität (vermutlich auch asphaltiert?)?	? 47975,51325 48022,51225 48133,51178
 Hohenwutzen - Bad Freienwalde: Qualität (zumindest am östlichen Ende asphaltiert)?	? 58211,48747 57884,48807 57505,48703 57396,48965 57328,48981
 Straße der Freiheit (Lebus): Qualität? Radweg?	? 87940,3516 87722,3688 87539,3653 87443,3671 87344,3693
 #: XXX laut Aktiv Regional zwischen Schönfließ und Boosen mäßig starker Verkehr
@@ -4146,8 +4151,6 @@ Crossiw - Gellmersdorf: Qualität?	? 54909,66268 54715,64807 54474,64173 54646,63
 Gellmersdorf - Lüderitz: Qualität?	? 54723,63351 54755,63252 54571,63040 54852,61486 55328,60452 55302,59998
 #: note: Straßenbau bis 13.6.2009 (mit Vollsperrung), evtl. danach gut geeignet?
 Luckow - Petershagen: Qualität?	? 63733,93765 63880,93703 65689,93950 66328,94287
-Hohenreinkendorf - Petershagen: Qualität?	? 71794,92835 71721,92864 70825,92985 70679,92967 70499,92989 69963,93144 69622,93126 69451,93153 69003,93257 68845,93278 66541,93799
-Hohenreinkendorf - Petershagen: Qualität?	? 66310,94244 66328,94287
 Tantow - Hohenreinkendorf: Qualität?	? 72847,96864 72865,96745 72904,96638 72947,96549 73037,96464 73136,96387 73154,96344 72969,96202 72879,96107 72839,96045 72460,95382 72425,95307 72017,93861 71928,93552 71851,93385 71805,93237 71755,93139 71721,92864
 Hohenreinkendorf - Heinrichshof: Qualität (wahrscheinlich asphaltiert)?	? 71721,92864 71697,92696 71642,92416 71648,92361 71605,92245 71148,91331 71101,90883
 Hohenselchow: Qualität?	? 68345,89710 68168,89119
@@ -4262,9 +4265,8 @@ Neumeichow: Qualität?	? 46617,88457 46886,88320 47675,88141 47917,88155
 #: note: zumindest am östlichen und westlichen Ende Feldweg
 Wolletz - Kerkow (südliche Strecke): Qualität?	? 44673,70082 45614,70316 45652,70216 46917,69881 47172,70534
 Britz - Chorin: Qualität?	? 37225,54056 37527,54354
-Liepe - Chorin: Qualität?	? 46938,50961 46757,50998 46391,51303
 #: XXX laut osm track, teilweise gravel, teilweise cobblestone, teilweise nicht klassifiziert
-Liepe - Chorin: Qualität?	? 46391,51303 45805,51471 45089,51592 44952,51669 44167,52651 43047,53809 42697,54060 42231,54671
+Liepe - Chorin: Qualität?	? 46391,51303 45966,51483 45661,51494 45060,51622 44938,51659 44167,52651 43047,53809 42697,54060 42231,54671
 Herzsprung - Schmargendorf: Qualität?	? 47267,64435 47123,64587 46955,64641 47045,64773
 Schmargendorf - Angermünde: Qualität?	? 47045,64773 47328,65204 47831,65501 48433,66233 48570,66705 48783,67071 49065,67154
 # REMOVED (mittlerweile nur bis grade3, ist aber nicht attraktiv genug) --- #: XXX laut osm grade3 bis grade4 --- Albertshof, Alternative: Qualität?	? 24376,31986 24478,31918 25240,31808 25630,31782 26022,31789 27434,32400
@@ -4306,8 +4308,10 @@ Melchow - Schönholz: Qualität?	? 30993,41018 31343,41112 32006,41150 32862,41531
 Schönholz - Spechthausen: Qualität?	? 33918,41987 34200,42181 34323,42461 34218,43747
 #: XXX: laut "Berliner Umland" witterungsabhängige Strecke
 #: XXX: laut osm: track
-#: XXX: an der B2: Waldweg
-Schönholz - Spechthausen: Qualität? Ausschilderung? Ist die "Eiszeittour" ausgeschildert?	? 34323,42461 34462,42668 34868,42781 34750,43118 34843,43731 34906,43787 34975,43781 35031,43918 34856,44193 34681,44312 34706,44437 34562,44462 34556,44693 34500,44718 34512,44837 34612,44906 34706,45200 34613,45287
+Nonnenfließ: Qualität? Ist die "Eiszeittour" ausgeschildert?	? 34323,42461 34462,42668 34868,42781 34750,43118 34843,43731 34906,43787 34975,43781 35031,43918 34856,44193 34681,44312 34706,44437 34562,44462 34556,44693 34500,44718 34512,44837 34612,44906 34691,45228
+#: XXX: laut "Berliner Umland" witterungsabhängige Strecke
+#: XXX: laut osm: track
+Schönholz - Nonnenfließ: Qualität? Ausschilderung? Ist die "Eiszeittour" ausgeschildert?	? 34323,42461 34462,42668 34868,42781 34750,43118 34843,43731 34906,43787 34975,43781
 #: XXX: laut "Berliner Umland" mäßig geeignet (Autoverkehr?)
 #: XXX: laut osm: unclassified
 Grüntal - Melchow: Qualität?	? 32000,38200 32099,38418 31773,39105 31727,39438 31297,39883 31261,40051 31057,40384 30993,41018
@@ -4616,7 +4620,6 @@ Grieben - Vielitz: Qualität?	? -14966,56468 -15237,56681 -15453,56959 -15676,570
 Hobrechtsfelde - Gorinsee: Qualität des Abzweigs von der Hobrechtsfelder Dorfstraße?	? 16279,29196 15621,29290
 Demnitz - L28: nördlicher Teil asphaltiert, Rest auch?	? 34171,142029 34186,141681 34232,141608
 B109 - Gneventhin: Asphalt oder Kopfsteinpflaster?	? 38188,163465 38133,163017 38283,162634
-Gartz: Name der Straße?	? 75956,90435 75975,90313 76008,90307 76023,90222
 Blankensee - Bismarck: Qualität?	? 70132,119360 70251,118039
 Plöwen - Hohenfelde: Qualität?	? 70132,119360 70856,119606
 Hintersee: Qualität (womöglich auch schlechtes Kopfsteinpflaster?)?	? 66282,136950 66135,136956 66204,136743 66330,136564
