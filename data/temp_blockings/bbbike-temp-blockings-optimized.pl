@@ -4335,21 +4335,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Karlshorster Str.: Stubenrauchbrücke in Richtung Osten gesperrt, Radfahrer müssen ggfs. auf den linken, sehr engen Gehweg ausweichen, bis Mitte August 2018',
          'until' => 1534003200
        },
-       {
-         'data' => '#: add_fragezeichen: Sind Radfahrer tatsächlich betroffen oder können sie die Baustelle umfahren?
-#: priority: #C
-	q4::inwork 10908,17142 11116,17140
-',
-         'from' => 1527186631,
-         'id' => 2958,
-         'source_id' => '2147342636',
-         'text' => 'Elsa-Brändström-Str.: Bauarbeiten im Einmündungsbereich Berliner Str., evtl. sind auch Radfahrer betroffen, bis 08.06.2018',
-         'type' => 'handicap',
-         'until' => 1528495200
-       },
+       undef,
        {
          'data' => '#: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-05-28
+#: last_checked: 2018-06-05
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -4430,6 +4419,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Forckenbeckstr.: Bauarbeiten zwischen Mecklenburgische Str. und Cunostr., Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis Mitte Juli 2018',
          'type' => 'gesperrt',
          'until' => 1531497600
+       },
+       {
+         'data' => '#: note: laut fritz bis 10.06.2018
+	q4::inwork; 14109,13449 14052,13389
+',
+         'from' => 1527976800,
+         'id' => 2967,
+         'source_id' => '2147342695',
+         'text' => 'Thaerstraßenbrücke: Baustelle Richtung Süden, Fahrbahn gesperrt, Radfahrer müssen auf den gegenüberliegenden Gehweg wechseln, bis 10. Juni 2018 ',
+         'type' => 'handicap',
+         'until' => 1528667999
        }
      
 );

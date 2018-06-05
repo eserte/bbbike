@@ -668,7 +668,6 @@ Am Langen Weg:	1 -7033,14984 -7026,14890 -7015,14772 -7011,14693 -7013,14578
 Wehneltsteig	1 1256,14217 1305,14384
 #: by: Olaf (ziorjen), Sybille Koppermann, osm
 Bernhard-B‰stlein-Str.	1 15595,14041 15593,13768
-(Fredersdorfer Str. - Hildegard-Jadamowitz-Str.)	1 12908,12280 12883,12118 12893,12077 12923,12043
 #: XXX_prog: eigentlich 1s:q3, aber Konflikt mit handicap_s-Eintrag f¸r Washingtonplatz
 Washingtonplatz	1s 8106,13130 8011,13128 7937,13126
 (Vorfahrt HdKdW)	1 7627,12380 7654,12464 7687,12477 7778,12470 7813,12427 7821,12367
@@ -1740,6 +1739,7 @@ Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn	3nocross 12075,16144 12061,1609
 Prenzlauer Allee: Straﬂenbahntrasse	3nocross 11941,15586 11967,15700 11995,15827
 Prenzlauer Allee: Straﬂenbahntrasse	3nocross 11435,14023 11465,14122 11471,14143
 Danziger Str.: Mittelstreifen mit Straﬂenbahn	3nocross 11709,14856 11609,14881 11535,14900
+Danziger Str.: Mittelstreifen mit Straﬂenbahn	3nocross 11154,14985 11285,14958 11325,14949 11339,14946
 Danziger Str.: Mittelstreifen mit Straﬂenbahn	3nocross 12317,14535 12123,14643 12025,14695
 Torstr.: Mittelstreifen mit Straﬂenbahn	3nocross 10741,13685 10645,13711 10572,13731 10459,13760
 Yorckstr.: Linksabbiegen verboten (und unbequem)	3nocross 8192,9619 8097,9650 7938,9694
@@ -2907,7 +2907,7 @@ Alexandrinenstr.: f¸r Anh‰nger zu eng	BNP:0::trailer=no 10781,11243
 Fanny-Zobel-Str.: wegen Bauarbeiten gesperrt, vielleicht sogar dauerhaft eingezogen	2::inwork 13975,10187 14049,10164
 # 
 #: source_id: 2147342570
-#: last_checked: 2018-06-04
+#: last_checked: 2018-06-05
 # REMOVED ---#: check_frequency: 3d
 #: next_check: 2018-06-15
 #: valid: -20180615

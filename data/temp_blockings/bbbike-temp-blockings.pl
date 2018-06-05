@@ -21179,11 +21179,11 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX je 30 Meter vor und hinter der Kreuzung ist gesperrt vvv
-	q2::inwork 11436,14741 11271,14755
-	q3::inwork 11271,14755 11187,14763
+	q2::inwork 11436,14741 11265,14756
+	q3::inwork 11265,14756 11187,14763
 #: XXX ^^^
 #: XXX ebenfalls Umweg notwendig
-	q2::inwork 11293,14957 11271,14755 11247,14578
+	q2::inwork 11285,14958 11265,14756 11247,14578
 EOF
      },
      { from  => undef, #
@@ -27174,13 +27174,12 @@ EOF
 EOF
      },
      { from  => 1527186631, # 2018-05-24 20:30
-       until => 1528495200, # 2018-06-09 00:00
+       until => 1528222697, # keine großen Einschränkungen --- 1528495200, # 2018-06-09 00:00
        text  => 'Elsa-Brändström-Str.: Bauarbeiten im Einmündungsbereich Berliner Str., evtl. sind auch Radfahrer betroffen, bis 08.06.2018',
        type  => 'handicap',
        source_id => '2147342636',
        data  => <<EOF,
-#: add_fragezeichen: Sind Radfahrer tatsächlich betroffen oder können sie die Baustelle umfahren?
-#: priority: #C
+# REMOVED --- #: add_fragezeichen: Sind Radfahrer tatsächlich betroffen oder können sie die Baustelle umfahren? --- #: priority: #C
 	q4::inwork 10908,17142 11116,17140
 EOF
      },
@@ -27191,7 +27190,7 @@ EOF
        source_id => '2147342639',
        data  => <<EOF,
 #: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-05-28
+#: last_checked: 2018-06-05
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -27269,6 +27268,16 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind Radfahrer tatsächlich betroffen oder können sie die Baustelle umfahren?
 	2::inwork 4106,8031 3779,8105 3665,8131 3218,8233 3117,8248
+EOF
+     },
+     { from  => 1527976800, # 2018-06-03 00:00
+       until => 1528667999, # 2018-06-10 23:59
+       text  => 'Thaerstraßenbrücke: Baustelle Richtung Süden, Fahrbahn gesperrt, Radfahrer müssen auf den gegenüberliegenden Gehweg wechseln, bis 10. Juni 2018 ',
+       type  => 'handicap',
+       source_id => '2147342695',
+       data  => <<EOF,
+#: note: laut fritz bis 10.06.2018
+	q4::inwork; 14109,13449 14052,13389
 EOF
      },
     );

@@ -1369,7 +1369,7 @@ die letzten 50 Meter werden auf dem Gehweg geführt	RW3; 13151,14855 13438,14675
 	RW1;RW2 10881,15047 11056,15009
 	RW3; 11056,15009 11154,14985
 die letzten Meter sind benutzungspflichtig	RW3; 11154,14985 11056,15009
-	RW3;RW3 11154,14985 11293,14957 11310,14953 11337,14946 11535,14900 11609,14881
+	RW3;RW3 11154,14985 11285,14958 11325,14949 11339,14946 11535,14900 11609,14881
 	RW1;RW2 12786,13185 12878,13229 12979,13280 13073,13329
 	RW2;RW2 13073,13329 13151,13367 13246,13420 13330,13468
 	RW2;RW2 13330,13468 13543,13568
@@ -1751,7 +1751,7 @@ Berliner Gehwegplatten mit einigen leichten Unebenheiten, ca. 1,50m breit	RW2;RW
 #: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5;
 #: by: http://www.dafmap.de/d/berlin.html?id=3134&mt=0&zoom=16 (Projektabschluss: 2017-09-01)
 #: osm_watch: way id="187103792" version="10"
-#: last_checked: 2018-05-25
+#: last_checked: 2018-06-05
 #: check_frequency: 14d
 	RW4; 11451,13301 11369,13174
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 11451,13301 11486,13350
@@ -1804,6 +1804,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 	RW3; 11907,13655 12038,13685 12161,13711
 #: XXX vermutlich werden hier Radspuren entstehen
 #: by: http://www.berliner-woche.de/prenzlauer-berg/verkehr/storkower-strasse-senat-stellt-dem-bezirk-mittel-fuer-den-bau-eines-radstreifens-in-aussicht-d142987.html
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4624
 #: last_checked: 2018-04-28
 #: next_check: 2018-09-01
 	RW1;RW1 13438,14675 13731,14200 13879,13967
@@ -5152,3 +5153,6 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW6;RW6 17254,15183 17262,15056
 	RW6;RW6 17310,15186 17317,15059
 	RW6;RW6 17227,15054 17262,15056 17317,15059 17345,15061
+#: XXX wird hier noch ein Radwegschild aufgestellt?
+#: last_checked: 2018-06-05
+	RW3; 13330,13468 13228,13615

@@ -454,7 +454,6 @@ Wiedenbrücker Weg	1 4207,1113 4220,1175 4141,1282
 Am Langen Weg:	1 -7033,14984 -7026,14890 -7015,14772 -7011,14693 -7013,14578
 Wehneltsteig	1 1256,14217 1305,14384
 Bernhard-Bästlein-Str.	1 15595,14041 15593,13768
-(Fredersdorfer Str. - Hildegard-Jadamowitz-Str.)	1 12908,12280 12883,12118 12893,12077 12923,12043
 Washingtonplatz	1s 8106,13130 8011,13128 7937,13126
 (Vorfahrt HdKdW)	1 7627,12380 7654,12464 7687,12477 7778,12470 7813,12427 7821,12367
 Pfarrer-Lütkehaus-Platz	1 10228,-2136 10231,-2159
@@ -1776,6 +1775,11 @@ Raabestr. -> Prenzlauer Allee: Straßenbahntrasse	3::igndisp 11657,14018 11465,14
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 11709,14856 11609,14881 11535,14900
 Danziger Str. -> Rykestr.: Mittelstreifen mit Straßenbahn	3::igndisp 11709,14856 11609,14881 11535,14688
 Rykestr. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11535,14688 11609,14881 11535,14900
+Mittelstreifen mit Straßenbahn	3nocross::ignrte 11154,14985 11285,14958 11325,14949 11339,14946
+Danziger Str. -> Husemannstr.: Mittelstreifen mit Straßenbahn	3::igndisp 11325,14949 11285,14958 11265,14756
+Husemannstr. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11265,14756 11285,14958 11154,14985
+Danziger Str. -> Dunckerstr.: Mittelstreifen mit Straßenbahn	3::igndisp 11285,14958 11325,14949 11450,15173
+Dunckerstr. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11450,15173 11325,14949 11339,14946
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 12317,14535 12123,14643 12025,14695
 Danziger Str. -> Lilli-Henoch-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12025,14695 12123,14643 12183,14757
 Lilli-Henoch-Str. -> Danziger Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12183,14757 12123,14643 12317,14535
