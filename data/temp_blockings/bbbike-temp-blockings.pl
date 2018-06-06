@@ -26950,7 +26950,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1528308665, # undef, # XXX
        text  => 'Mentelinstr.: Bauarbeiten zwischen Nalepastr. und Otto-Krüger-Zeile, Fahrbahn gesperrt, Ende unbekannt',
        type  => 'handicap',
        data  => <<EOF,
@@ -27164,13 +27164,13 @@ EOF
      },
      { from  => undef,
        until => $isodate2epoch->("2018-08-11 18:00:00"),
-       text  => "Karlshorster Str.: Stubenrauchbrücke in Richtung Osten gesperrt, Radfahrer müssen ggfs. auf den linken, sehr engen Gehweg ausweichen, bis Mitte August 2018",
+       text  => "Karlshorster Str.: Fahrbahn der Stubenrauchbrücke in Richtung Osten gesperrt, Radfahrer müssen auf den Gehweg ausweichen, bis Mitte August 2018",
        source_id => "2147342600",
        data  => <<EOF,
 #: note: genaues Endedatum by fritz
 # REMOVED (ja) --- #: add_fragezeichen: Ist die Stubenrauchbrücke tatsächlich für Radfahrer gesperrt?
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/spreequerung-bleibt-bis-august-voll-gesperrt_a164513
-	q4::inwork; 17432,6352 17492,6462 17528,6502
+	q3::inwork; 17432,6352 17492,6462 17528,6502
 EOF
      },
      { from  => 1527186631, # 2018-05-24 20:30
@@ -27271,12 +27271,13 @@ EOF
 EOF
      },
      { from  => 1527976800, # 2018-06-03 00:00
-       until => 1528667999, # 2018-06-10 23:59
-       text  => 'Thaerstraßenbrücke: Baustelle Richtung Süden, Fahrbahn gesperrt, Radfahrer müssen auf den gegenüberliegenden Gehweg wechseln, bis 10. Juni 2018 ',
+       until => $isodate2epoch->("2018-06-08 12:00:00"), # 1528667999, # 2018-06-10 23:59
+       text  => 'Thaerstraßenbrücke: Baustelle Richtung Süden, Fahrbahn gesperrt, Radfahrer müssen auf den gegenüberliegenden Gehweg wechseln, bis 8. Juni 2018 ',
        type  => 'handicap',
        source_id => '2147342695',
        data  => <<EOF,
-#: note: laut fritz bis 10.06.2018
+#: note: laut fritz bis 10.06.2018, laut vmz nur bis Freitag
+#: source_id: 2147342707
 	q4::inwork; 14109,13449 14052,13389
 EOF
      },

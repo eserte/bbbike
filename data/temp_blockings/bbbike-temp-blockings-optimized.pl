@@ -4204,17 +4204,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: last_checked: 2018-05-20
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet? Wird sich die Qualität der Fahrbahn nach den Bauarbeiten verbessern?
-	q4::inwork 17456,7132 17352,7051
-',
-         'from' => undef,
-         'id' => 2941,
-         'text' => 'Mentelinstr.: Bauarbeiten zwischen Nalepastr. und Otto-Krüger-Zeile, Fahrbahn gesperrt, Ende unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: last_checked: 2018-04-29 vvv
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
@@ -4327,12 +4317,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: note: genaues Endedatum by fritz
 # REMOVED (ja) --- #: add_fragezeichen: Ist die Stubenrauchbrücke tatsächlich für Radfahrer gesperrt?
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/spreequerung-bleibt-bis-august-voll-gesperrt_a164513
-	q4::inwork; 17432,6352 17492,6462 17528,6502
+	q3::inwork; 17432,6352 17492,6462 17528,6502
 ',
          'from' => undef,
          'id' => 2957,
          'source_id' => '2147342600',
-         'text' => 'Karlshorster Str.: Stubenrauchbrücke in Richtung Osten gesperrt, Radfahrer müssen ggfs. auf den linken, sehr engen Gehweg ausweichen, bis Mitte August 2018',
+         'text' => 'Karlshorster Str.: Fahrbahn der Stubenrauchbrücke in Richtung Osten gesperrt, Radfahrer müssen auf den Gehweg ausweichen, bis Mitte August 2018',
          'until' => 1534003200
        },
        undef,
@@ -4421,15 +4411,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1531497600
        },
        {
-         'data' => '#: note: laut fritz bis 10.06.2018
+         'data' => '#: note: laut fritz bis 10.06.2018, laut vmz nur bis Freitag
+#: source_id: 2147342707
 	q4::inwork; 14109,13449 14052,13389
 ',
          'from' => 1527976800,
          'id' => 2967,
          'source_id' => '2147342695',
-         'text' => 'Thaerstraßenbrücke: Baustelle Richtung Süden, Fahrbahn gesperrt, Radfahrer müssen auf den gegenüberliegenden Gehweg wechseln, bis 10. Juni 2018 ',
+         'text' => 'Thaerstraßenbrücke: Baustelle Richtung Süden, Fahrbahn gesperrt, Radfahrer müssen auf den gegenüberliegenden Gehweg wechseln, bis 8. Juni 2018 ',
          'type' => 'handicap',
-         'until' => 1528667999
+         'until' => 1528452000
        }
      
 );

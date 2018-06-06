@@ -3012,7 +3012,7 @@ Fritz-Kortner-Str.: Asphalt	Q0 19258,7943 19282,7976 19303,8005 19320,8027 19334
 (Fritz-Kortner-Str. - Maria-Matray-Str.): Verbundsteinpflaster	Q1+ 19320,8027 19443,7937
 Am Birkenrevier: Verbundsteinpflaster	Q1+ 19303,8005 19176,8098
 Rohrlake: Verbundsteinpflaster	Q1+ 19168,7942 19109,7983 19061,7904
-Oskarstr.: Asphalt mit Schäden	Q1+ 17771,7880 17762,7931 17793,8012 17808,8042 17803,8079
+Oskarstr.: Asphalt mit Schäden	Q1 17771,7880 17762,7931 17793,8012 17808,8042 17803,8079
 Gleyeweg: Asphalt	Q0 17762,7931 17683,7958 17651,7973 17613,7989 17529,8073 17532,8125 17566,8199 17597,8258
 Fuchsbau (Karlshorst): Asphalt	Q0 17651,7973 17590,7828
 Blaurackenweg: Asphalt	Q0 17613,7989 17647,8071 17532,8125
@@ -20764,7 +20764,7 @@ Kampweg: mäßiges Kopfsteinpflaster	Q2 3063,21821 2953,21777
 #: by: Hasan Hosgel: vvv
 #: confirmed_by: anonymous
 Delphinstr.: guter Asphalt	Q0 14555,6936 14686,7070
-#: confirmed_by. srt
+#: confirmed_by: srt
 Zwillingestr.: guter Asphalt	Q0 14620,6876 14555,6936 14531,6959
 #: confirmed_by: srt
 Siriusstr.: guter Asphalt	Q0 14751,7007 14686,7070
@@ -23761,7 +23761,8 @@ Gerdsmeyerweg - Marienhöher Weg: Asphalt	Q0 8036,5309 7944,5237
 Tschaikowskistr.: guter Asphalt	Q0- 9501,18902 9868,19023 9958,19053 10090,19097 10115,19105 10249,19148
 # 
 #: by: sabrina (brinchen...):
-(Königsheide - Johannisthaler Chaussee): guter breiter Waldweg	Q1- 16670,5473 16569,5380 16497,5323 16320,5187 16279,5170
+#: corrected_by: srt (guter breiter Waldweg -> ...)
+(Königsheide - Johannisthaler Chaussee): Waldweg, einige sandige Stellen	Q1- 16670,5473 16569,5380 16497,5323 16320,5187 16279,5170
 # 
 #: by: Peter (borrmann-...)
 #: corrected_by: srt (guter Asphalt -> ...)
