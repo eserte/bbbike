@@ -14422,8 +14422,6 @@ sub show_info {
 	@mapext[0,1] = map { int } anti_transpose(@mapext[0,1]);
 	@mapext[2,3] = map { int } anti_transpose(@mapext[2,3]);
 
-	my @layers;
-	# XXX move mapping or this function to a config-like module
 	my @str_draw_mapping = ([w => "gewaesser"],
 				[f => "flaechen"],
 				[[qw(g gP gD gBO)] => "grenzen"],
@@ -14440,27 +14438,7 @@ sub show_info {
 				[obst => "obst"],
 				[sperre => "blocked"],
 			       );
-	for my $type (qw(str p)) {
-	    my $mapping = $type eq 'str' ? \@str_draw_mapping : \@p_draw_mapping;
-	    my $draw    = $type eq 'str' ? \%str_draw         : \%p_draw;
-	    for my $check (@$mapping) {
-		my($abk, $ms_layer) = @$check;
-		my $doit;
-		if (ref $abk eq 'ARRAY') {
-		    for (@$abk) {
-			if ($draw->{$_}) {
-			    $doit = 1;
-			    last;
-			}
-		    }
-		} elsif ($draw->{$abk}) {
-		    $doit = 1;
-		}
-		if ($doit) {
-		    push @layers, $ms_layer;
-		}
-	    }
-	}
+	my @layers = _layers_to_layers(\@str_draw_mapping, \@p_draw_mapping);
 	push @layers, "route"; # the "mark" is also in the "route" layer
 
 	# XXX maybe use Karte::trim_accuracy instead of int?
@@ -14690,11 +14668,24 @@ sub show_info {
 		$show_url->($linkcount, sub {
 				my $scale = 17 - log(($mapscale_scale)/3000)/log(2);
 				$scale = 18 if $scale > 18;
+
+				my @str_draw_mapping = ([[qw(qs ql)] => 'Q'],
+							[[qw(hs hl)] => 'H'],
+							[rw          => 'RW'],
+							[nl          => 'NL'],
+							[gr          => 'GR'],
+							[fz          => 'FZ'],
+						       );
+				my @p_draw_mapping   = ();
+				my @layers = _layers_to_layers(\@str_draw_mapping, \@p_draw_mapping);
+
 				BBBikeUtil::uri_with_query($baseurl,
 							   [mlat => $py,
 							    mlon => $px,
 							    ($Msg::lang eq 'en' ? (lang => "en") : ()),
-							    zoom => int($scale)]);
+							    zoom => int($scale),
+							    (@layers ? (l => join(",", @layers)) : ()),
+							   ]);
 			    }
 			   );
 	    };
@@ -15088,6 +15079,36 @@ EOF
 		      @internal_canvas_tags,
 		     ],
 		    );
+}
+
+# Used for mapping bbbike perl/tk layers to mapserver or leaflet layers
+sub _layers_to_layers {
+    my($str_draw_mapping_ref, $p_draw_mapping_ref) = @_;
+    my @str_draw_mapping = @$str_draw_mapping_ref;
+    my @p_draw_mapping   = @$p_draw_mapping_ref;
+    my @layers;
+    for my $type (qw(str p)) {
+	my $mapping = $type eq 'str' ? \@str_draw_mapping : \@p_draw_mapping;
+	my $draw    = $type eq 'str' ? \%str_draw         : \%p_draw;
+	for my $check (@$mapping) {
+	    my($abk, $ms_layer) = @$check;
+	    my $doit;
+	    if (ref $abk eq 'ARRAY') {
+		for (@$abk) {
+		    if ($draw->{$_}) {
+			$doit = 1;
+			last;
+		    }
+		}
+	    } elsif ($draw->{$abk}) {
+		$doit = 1;
+	    }
+	    if ($doit) {
+		push @layers, $ms_layer;
+	    }
+	}
+    }
+    @layers;
 }
 
 sub hypertext_widget {
