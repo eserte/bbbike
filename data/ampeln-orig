@@ -2885,16 +2885,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: on: Samstag (gesehen 2016-10-08 gegen 15:00)
 	F 3273,14738
 # REMOVED --- #: next_check_id: CHAUSSEESTR-2016 vvv
-#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8232 (bleibt die Ampel permanent?)
-#: by: Tsp vom 2018-01-22 (neue Ampeln --- 2019)
-#: source_id: 2147340715 vvv
-#: last_checked: 2018-05-17 vvv
-#: check_frequency: 60d vvv
-	X::inwork 8250,14672
-# REMOVED --- F::inwork 8732,14098
-#: check_frequency ^^^
-#: last_checked ^^^
-#: source_id ^^^
+# REMOVED (see https://www.openstreetmap.org/note/765740#map=18/52.53800/13.37363&layers=N ) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8232 (bleibt die Ampel permanent?) ---#: by: Tsp vom 2018-01-22 (neue Ampeln --- 2019) --- #: source_id: 2147340715 vvv --- #: last_checked: 2018-05-17 vvv --- #: check_frequency: 60d vvv ---	X::inwork 8250,14672 --- # REMOVED --- F::inwork 8732,14098 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: source_id ^^^
 # REMOVED --- #: next_check_id ^^^
 # 
 	F 14810,10832

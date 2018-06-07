@@ -25659,17 +25659,17 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Littenstr.: Bauarbeiten, Fahrbahn gesperrt bzw. Einbahnstraßenregelung',
+       text  => 'Littenstr.: Bauarbeiten, Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-05-30 vvv
-#: check_frequency: 7d vvv
-	q2::inwork 10954,12635 11059,12450
-	q3::inwork 11059,12450 11084,12395 11092,12375
-	q2::inwork; 11139,12243 11092,12375
-#	2::inwork 11032,12439 11059,12450
-#	2::inwork 11049,12386 11084,12395
+#: last_checked: 2018-06-07 vvv
+#: check_frequency: 1d vvv
+	q4::inwork 10954,12635 11059,12450
+	q4::inwork 11059,12450 11084,12395 11092,12375
+	q4::inwork 11139,12243 11092,12375
+	2::inwork 11032,12439 11059,12450
+	2::inwork 11049,12386 11084,12395
 # REMOVED (eh' nur teilweise) --- q2::inwork; 11092,12375 11209,12430
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -27170,6 +27170,7 @@ EOF
 #: note: genaues Endedatum by fritz
 # REMOVED (ja) --- #: add_fragezeichen: Ist die Stubenrauchbrücke tatsächlich für Radfahrer gesperrt?
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/spreequerung-bleibt-bis-august-voll-gesperrt_a164513
+#: osm_watch: way id="4540244" version="17"
 	q3::inwork; 17432,6352 17492,6462 17528,6502
 EOF
      },
@@ -27279,6 +27280,17 @@ EOF
 #: note: laut fritz bis 10.06.2018, laut vmz nur bis Freitag
 #: source_id: 2147342707
 	q4::inwork; 14109,13449 14052,13389
+EOF
+     },
+     { from  => undef,
+       until => $isodate2epoch->("2018-09-14 18:00:00"),
+       text  => 'Weidenweg: Bauarbeiten, Fahrbahn gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX eventuell hängen die Bauarbeiten mit den Bauarbeiten in der Eldenaer Str. zusammen
+#: XXX wird danach komplett asphaltiert sein?
+#: last_checked: 2018-06-07
+	q4::inwork 13767,12626 13786,12636 13863,12677 13911,12692
 EOF
      },
     );

@@ -3872,13 +3872,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-05-30 vvv
-#: check_frequency: 7d vvv
-	q2::inwork 10954,12635 11059,12450
-	q3::inwork 11059,12450 11084,12395 11092,12375
-	q2::inwork; 11139,12243 11092,12375
-#	2::inwork 11032,12439 11059,12450
-#	2::inwork 11049,12386 11084,12395
+#: last_checked: 2018-06-07 vvv
+#: check_frequency: 1d vvv
+	q4::inwork 10954,12635 11059,12450
+	q4::inwork 11059,12450 11084,12395 11092,12375
+	q4::inwork 11139,12243 11092,12375
+	2::inwork 11032,12439 11059,12450
+	2::inwork 11049,12386 11084,12395
 # REMOVED (eh\' nur teilweise) --- q2::inwork; 11092,12375 11209,12430
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3886,7 +3886,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => undef,
          'id' => 2825,
-         'text' => 'Littenstr.: Bauarbeiten, Fahrbahn gesperrt bzw. Einbahnstraßenregelung',
+         'text' => 'Littenstr.: Bauarbeiten, Fahrbahn gesperrt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -4317,6 +4317,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: note: genaues Endedatum by fritz
 # REMOVED (ja) --- #: add_fragezeichen: Ist die Stubenrauchbrücke tatsächlich für Radfahrer gesperrt?
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/spreequerung-bleibt-bis-august-voll-gesperrt_a164513
+#: osm_watch: way id="4540244" version="17"
 	q3::inwork; 17432,6352 17492,6462 17528,6502
 ',
          'from' => undef,
@@ -4421,6 +4422,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Thaerstraßenbrücke: Baustelle Richtung Süden, Fahrbahn gesperrt, Radfahrer müssen auf den gegenüberliegenden Gehweg wechseln, bis 8. Juni 2018 ',
          'type' => 'handicap',
          'until' => 1528452000
+       },
+       {
+         'data' => '#: XXX eventuell hängen die Bauarbeiten mit den Bauarbeiten in der Eldenaer Str. zusammen
+#: XXX wird danach komplett asphaltiert sein?
+#: last_checked: 2018-06-07
+	q4::inwork 13767,12626 13786,12636 13863,12677 13911,12692
+',
+         'from' => undef,
+         'id' => 2968,
+         'text' => 'Weidenweg: Bauarbeiten, Fahrbahn gesperrt',
+         'type' => 'handicap',
+         'until' => 1536940800
        }
      
 );
