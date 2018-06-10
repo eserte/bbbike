@@ -300,7 +300,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 	RW2;RW2 4512,5199 4432,5160 4343,5112
 #: XXX Radwege sollen saniert werden oder es entstehen sogar Radstreifen (Umsetzung 2018) vvv
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
-#: last_checked: 2018-06-01 vvv
+#: last_checked: 2018-06-08 vvv
 #: next_check: 2018-12-31 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
@@ -1157,7 +1157,7 @@ neu asphaltiert, abgesperrt	RW0; 17681,7589 17619,7679
 #: XXX werden hier noch Radspuren oder ein neuer Radweg angelegt?
 #: source_id: 2147341340
 #: source_id: LMS-BR_r_LMS-BR_98104
-#: last_checked: 2018-06-06
+#: last_checked: 2018-06-10
 #: check_frequency: 60d
 	RW0; 17619,7679 17527,7812 17317,8115 17299,8140 17202,8391
 	RW1; 17202,8391 17143,8565 17105,8666
@@ -1507,7 +1507,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 	RW3;RW3 11159,10769 11234,10739 11275,10723
 #: XXX Bauarbeiten, Radspuren teilweise aufgehoben
 #: XXX war: RW4;RW4
-#: last_checked: 2018-05-25
+#: last_checked: 2018-06-08
 #: check_frequency: 60d
 	RW0;RW0 8804,12280 8775,12457
 	RW4;RW4 8775,12457 8766,12541
@@ -1515,7 +1515,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2018-05-17 (mapillary)
+#: last_checked: 2018-06-08
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -4674,12 +4674,10 @@ Fußgängerzone, Radfahrer frei	RW6;RW6 7877,14504 7804,14445
 	RW1; 8570,14299 8607,14253
 #: next_check_id: CHAUSSEESTR-2016
 #: XXX ein Radwegschild steht hier, aber es gibt keine Radspuren --- vielleicht werden sie noch markiert?
-#: last_checked: 2018-05-17
+#: last_checked: 2018-06-08
 	RW0; 8607,14253 8732,14098
 	RW3; 8607,14253 8570,14299 8490,14397
-#: next_check_id: CHAUSSEESTR-2016
-#: XXX wird es hier eine Benutzungspflicht geben?
-#: last_checked: 2018-05-17
+# REMOVED (nein) --- #: next_check_id: CHAUSSEESTR-2016 --- #: XXX wird es hier eine Benutzungspflicht geben? --- #: last_checked: 2018-05-17
 asphaltiert	RW1; 8490,14397 8442,14456
 	RW3;RW3 8406,14507 8336,14586 8286,14635 8250,14672 8234,14686 8153,14769 8138,14786 8057,14876
 	RW4;RW4 8671,14919 8653,14899

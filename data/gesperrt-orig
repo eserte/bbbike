@@ -2943,7 +2943,7 @@ Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,
 # 
 #: next_check_id: KLARAFRANKESTR-2018
 #: XXX außerdem: genaue Lage der Straße
-#: last_checked: 2018-04-10
+#: last_checked: 2018-06-08
 #: check_frequency: 60d
 Klara-Franke-Str.: Bauarbeiten, gesperrt	2::inwork 7542,13956 7662,13784 7564,13735
 # 
@@ -3035,7 +3035,7 @@ Zufahrt Parkhaus: Abrissarbeiten, Straße komplett gesperrt	2::inwork 8367,10745 
 #: next_check: 2018-09-01
 Merlitzstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19661,3421 19524,3286
 # 
-#: last_checked: 2018-05-30
+#: last_checked: 2018-06-08
 #: check_frequency: 30d
 Mauerstr. und Jägerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9195,11972 9108,11961 9076,12054
 # 
@@ -3065,7 +3065,7 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/rigaer-strasse-soll-temporaer-wieder-passierbar-sein-d140803.html
 #: by: http://friedrichshainblog.de/rigaer-wieder-passierbar/
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.677127.php (Öffnung nachts (17-6) und am Wochenende, erstmal bis Juli 2018)
-#: last_checked: 2018-03-18
+#: last_checked: 2018-06-08
 #: next_check: 2018-07-01
 #: valid: 20180701-20190228
 #: priority: #A
@@ -3133,10 +3133,7 @@ Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20631,1162
 #: check_frequency: 90d
 Schinkelplatz: Einbahnstraße	1s:q3:inwork 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
 # 
-#: next_check_id: RATHAUSWEDDING-2017
-#: last_checked: 2018-04-10
-#: check_frequency: 30d
-Limburger Str.: Bauarbeiten am Rathaus Wedding, komplett gesperrt	2::inwork 7129,15717 7012,15571
+# REMOVED --- #: next_check_id: RATHAUSWEDDING-2017 --- #: last_checked: 2018-04-10 --- #: check_frequency: 30d --- Limburger Str.: Bauarbeiten am Rathaus Wedding, komplett gesperrt	2::inwork 7129,15717 7012,15571
 # 
 #: next_check_id: WILTBERGSTR-2017
 #: source_id: 2147339182
@@ -3177,7 +3174,7 @@ Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13176,9302 13098,920
 # REMOVED (nur der östliche Abschnitt ist geblieben, aber relativ breit und relativ wenig Verkehr) --- #: XXX Bauarbeiten der Berliner Wasserbetriebe bis Dezember 2017 --- #: last_checked: 2017-07-23 --- #: next_check: 2017-12-01 --- #: valid: -20171231 --- Türrschmidtstr.: Bauarbeiten, Einbahnstraße	1s:q3 15541,10892 15649,10922 15756,10966
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3853&mt=0&zoom=16
-#: last_checked: 2018-05-28
+#: last_checked: 2018-06-08
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8969,11814
 # 
 #: next_check_id: NORDHAFENPARKWEST-2018
@@ -3185,7 +3182,7 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
 #: source_id: 2147341188
-#: last_checked: 2018-05-09 vvv
+#: last_checked: 2018-06-09 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: way id="594591925" version="1"
 #: osm_watch: way id="594591926" version="1"
@@ -3379,7 +3376,7 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 #: by: http://www.berliner-woche.de/wedding/verkehr/senat-lehnt-fussgaengerueberweg-ab-radweg-soll-unter-der-fennbruecke-gebaut-werden-d131062.html (ggfs. auch Unterführung unter der Fennbrücke)
 # REMOVED --- osm_watch: way id="183406331" version="3"
 #: osm_watch: way id="220646748" version="5"
-#: last_checked: 2018-05-09
+#: last_checked: 2018-06-08
 #: check_frequency: 150d
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 

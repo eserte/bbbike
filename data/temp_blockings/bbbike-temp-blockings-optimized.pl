@@ -4128,7 +4128,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-05-25 vvv
+#: last_checked: 2018-06-08 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4234,7 +4234,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1530374400
        },
-       undef,
+       {
+         'data' => '#: source_id: 2147342390
+# REMOVED (hier nicht mehr) ---	q4::inwork; 8901,12008 8861,12125
+#: last_checked: 2018-06-08
+#: check_frequency: 7d
+	q4::inwork; 8861,12125 9054,12154
+',
+         'from' => 1522864912,
+         'id' => 2947,
+         'text' => 'Behrenstr.: Sperrung Richtung Osten zwischen Wilhelmstr. und Mauerstr.',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        {
@@ -4411,27 +4423,28 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1531497600
        },
-       {
-         'data' => '#: note: laut fritz bis 10.06.2018, laut vmz nur bis Freitag
-#: source_id: 2147342707
-	q4::inwork; 14109,13449 14052,13389
-',
-         'from' => 1527976800,
-         'id' => 2967,
-         'source_id' => '2147342695',
-         'text' => 'Thaerstraßenbrücke: Baustelle Richtung Süden, Fahrbahn gesperrt, Radfahrer müssen auf den gegenüberliegenden Gehweg wechseln, bis 8. Juni 2018 ',
-         'type' => 'handicap',
-         'until' => 1528452000
-       },
+       undef,
        {
          'data' => '#: XXX eventuell hängen die Bauarbeiten mit den Bauarbeiten in der Eldenaer Str. zusammen
 #: XXX wird danach komplett asphaltiert sein?
-#: last_checked: 2018-06-07
+#: last_checked: 2018-06-08
 	q4::inwork 13767,12626 13786,12636 13863,12677 13911,12692
 ',
          'from' => undef,
          'id' => 2968,
          'text' => 'Weidenweg: Bauarbeiten, Fahrbahn gesperrt',
+         'type' => 'handicap',
+         'until' => 1536940800
+       },
+       {
+         'data' => '#: XXX eventuell hängen die Bauarbeiten mit den Bauarbeiten in der Eldenaer Str. zusammen
+#: XXX wird danach komplett asphaltiert sein?
+#: last_checked: 2018-06-08
+	q4::inwork; 14096,12827 14058,12709
+',
+         'from' => undef,
+         'id' => 2969,
+         'text' => 'Liebigstr.: Bauarbeiten, Einbahnstraßenregelung',
          'type' => 'handicap',
          'until' => 1536940800
        }

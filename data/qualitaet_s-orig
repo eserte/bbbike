@@ -548,8 +548,15 @@ An der Nordbahn: unbefestigter Weg	Q2 6499,20221 6447,20305
 An der Nordbahn: Pfad	Q2 6447,20305 6349,20396
 An der Nordbahn: Verbundsteinpflaster	Q1+ 8647,18567 8597,18554 8558,18597 8562,18642
 An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q1 8562,18642 8476,18773
+# 
+#: XXX wurde hier was an der Qualität gemacht? vvv
+#: by: https://www.tagesspiegel.de/berlin/berliner-denkmal-millionen-fuer-den-mauerradweg/22666984.html
+#: osm_watch: way id="54892571" version="9"
 An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q2 8369,18769 8162,18941 7996,19049 7792,19218 7512,19480
+#: osm_watch: way id="281068350" version="5"
 An der Nordbahn: mäßiger Asphalt	Q1- 7504,19459 6694,20164 6389,20412 6375,20438 6378,20460
+#: XXX ^^^
+# 
 Pestalozzistr.: Asphalt	Q0 4434,11227 4546,11217
 Pestalozzistr.: Kopfsteinpflaster	Q2 4546,11217 4728,11195 4782,11192
 Pestalozzistr.: Kopfsteinpflaster	Q2 4176,11235 4101,11233 3981,11232
@@ -981,7 +988,7 @@ Wuhlewanderweg: guter Asphalt	Q0 22030,6600 22097,6414 22146,6338 22214,6271 222
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
-#: last_checked: 2018-05-21 vvv
+#: last_checked: 2018-06-10 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="317233618" version="4"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
@@ -2319,8 +2326,12 @@ Altvaterstr.: schlechtes Kopfsteinpflaster	Q3 -2295,3523 -2446,3462 -2503,3447 -
 Altvaterstr.: Asphalt	Q0 -2920,3246 -3032,3166 -3117,3107
 Altvaterstr.: Beton	Q0 -3223,3034 -3225,2902
 (Am Britzer Verbindungskanal): feiner Schotter, OK	Q1 15358,6022 15166,6019
-#: note: einige Wurzelhebungen, ein kurzer Abschnitt mit Schotter
-(Am Britzer Verbindungskanal): Asphalt	Q0 15143,5936 15119,5978 14342,5990 14298,6009 14234,6010 14178,5980 14164,5936
+# 
+#: by: https://www.tagesspiegel.de/berlin/berliner-denkmal-millionen-fuer-den-mauerradweg/22666984.html (Bauarbeiten, 2018 oder 2019)
+#: last_checked: 2018-05-26
+#: check_frequency: 120d
+(Am Britzer Verbindungskanal): Asphalt, einige Wurzelhebungen, ein kurzer Abschnitt mit Schotter	Q0- 15143,5936 15119,5978 14342,5990 14298,6009 14234,6010 14178,5980 14164,5936
+# 
 #: note: im Gegensatz zum ADFC-Karteneintrag: "mäßig geeignet"
 Gerosteig: Asphalt	Q0 18990,584 19086,562 19184,540 19281,518 19377,496 19477,472
 #: note: per Augenschein
@@ -9721,8 +9732,10 @@ Alfred-Scholz-Platz: gepflastert	Q1 12753,8187 12779,8188 12805,8194
 #: by: http://www.berliner-woche.de/steglitz/bauen/bezirk-investiert-in-sanierung-von-strassen-und-radwegen-d140640.html
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6572
 #: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/mit-geld-aus-dem-landeshaushalt-beginnen-2018-mehrere-vorhaben_a164600 (Baubeginn Juli 2018)
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.708083.php (während der Bauarbeiten Einbahnstraße Richtung Osten, Bauarbeiten bis Jahresende)
 #: last_checked: 2018-03-25 (mapillary)
-#: check_frequency: 90d
+#: next_check: 2018-07-15
+#: priority: #A
 Feuerbachstr.: Asphalt teilweise aufgebrochen	Q1; 5823,6413 6083,6451
 Storkower Str. [Gewerbegebiet]: Asphalt	Q0- 13731,14200 13639,14133
 Storkower Str. [Gewerbegebiet]: Asphalt	Q1 13639,14133 13715,14018 13784,13908
@@ -10633,7 +10646,7 @@ Alte Köpenicker Allee: unbefestigte Straße, holprig	Q2 20316,7637 20348,7634 204
 #: note: Privatstraße
 #: next_check_id: KLARAFRANKESTR-2018
 #: XXX wie sieht die endgültige Fahrbahndecke aus?
-#: last_checked: 2018-04-10
+#: last_checked: 2018-06-08
 #: check_frequency: 60d
 Klara-Franke-Str.: provisorischer Asphalt und Pflasterung	Q1 7366,14067 7443,14107 7542,13956 7662,13784 7564,13735
 Schottstr.: Beton mit Schäden	Q1 16409,12612 16397,12397
@@ -26846,9 +26859,19 @@ Kindelbergweg: Beton	Q0 6632,1482 6601,1471 6560,1473
 (Mauerweg Lichtenrade - Marienfelde): Asphalt mit Fugen	Q1+ 10309,-3191 10051,-3173 9600,-3160
 #: corrected_by: http://www.lichtenrade-berlin.de/news/aktuelle-news-internetzeitung/780-mauerweg-sanierung (Asphalt mit Fugen -> ...), srt
 (Mauerweg Lichtenrade - Marienfelde): Asphalt	Q0 9600,-3160 9529,-2628 9506,-2421 9471,-2138 9462,-2050 9081,-2073 8846,-2089 8310,-2037
+# 
+#: XXX wird hier die Qualität verbessert?
+#: by: https://www.tagesspiegel.de/berlin/berliner-denkmal-millionen-fuer-den-mauerradweg/22666984.html
+#: next_check: 2019-05-01
 (Mauerweg Lichtenrade - Marienfelde): Asphalt mit Fugen	Q1+ 8310,-2037 8376,-1523 7962,-1295 7593,-1034 7144,-565
+# 
 (Mauerweg Lichtenrade - Marienfelde): Asphalt	Q0 7144,-565 7169,-520 7164,-473 7146,-466 7098,-523
+# 
+#: XXX wird hier die Qualität verbessert?
+#: by: https://www.tagesspiegel.de/berlin/berliner-denkmal-millionen-fuer-den-mauerradweg/22666984.html
+#: next_check: 2019-05-01
 (Mauerweg Marienfelde - Lichterfelde): Asphalt mit Fugen	Q1+ 7098,-523 6965,-387 6668,-100 6498,71 6351,219 6256,363 6198,328 6013,211 5832,93 5435,-157 4842,-547 4596,-707 4406,-910
+# 
 (Mauerweg - Schütte-Lanz-Str.): fester Waldweg	Q1 5832,93 5800,138
 #: corrected_by: srt (Q1 -> Q2)
 (Mauerweg - Waldsassener Str.): fester, holpriger Waldweg	Q2 6668,-100 6705,-61
