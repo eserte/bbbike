@@ -22,7 +22,7 @@
 Mehringdamm: Radspuren oder Sanierung	?::projected; 9224,9053 9225,9111 9248,9350 9280,9476 9334,9670 9387,9804 9444,9919 9448,10014
 # 
 #: XXX auﬂerdem: Nordseite wird saniert
-#: last_checked: 2018-05-26
+#: last_checked: 2018-06-11
 #: next_check: 2018-12-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -114,6 +114,7 @@ Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4
 Groﬂ-Ziethener Str.: werden hier die bestehenden Radwege verbessert oder durch Radspuren ersetzt?	?::projected 12078,-1170 12023,-1174 11953,-1181 11858,-1189 11761,-1199 11717,-1204 11666,-1209 11578,-1220 11548,-1223 11240,-1262 11149,-1274 11003,-1303 10844,-1335
 #: by: http://www.berliner-woche.de/lichtenrade/bauen/staus-am-schichauweg-noch-bis-in-den-sommer-d139735.html
 #: source_id: LMS-BR_r_LMS-BR_124892_LMS-BR_72
+#: source_id: 2147342295
 #: last_checked: 2018-05-19
 #: check_frequency: 180d
 Barnetstr.: werden hier die bestehenden Radwege verbessert oder durch Radspuren ersetzt?	?::projected 10844,-1335 10720,-1340 10583,-1311 10492,-1266 10379,-1194 10231,-1086 10143,-1026 10082,-986 9888,-853 9815,-805 9780,-788 9693,-815
@@ -1667,6 +1668,7 @@ XXIII-4a (oder XXIII-4b?): hier wird eine Straﬂe entstehen, Straﬂenname, Qualit‰
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/buergerbeteiligung/xv-71-522204.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/1-entwurf_bebauungsplan_xv_71.pdf
 #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/5-verkehrsplanerische-untersuchung-xv-71.pdf
+#: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/1_xv-71_entwurf_bebauungsplan_mit_kennzeichnung_der_anderungen.pdf
 #: last_checked: 2017-08-10
 #: check_frequency: 720d
 Bebauungsplan XV-71 (Mittelweg), Ortsteil Altglienicke: hier werden vermutlich einige Straﬂen entstehen	?::projected 20324,807 20325,804 20250,659 19982,789 20101,1024 20152,1025 20324,807
@@ -3562,10 +3564,13 @@ Charles-Boutard-Straﬂe: geplante Straﬂe in Johannisthal, genaue Lage, Qualit‰t?	
 #: last_checked ^^^
 #: check_frequency ^^^
 #: XXX auch Maﬂnahme Jt.7
+#: XXX laut Planfestellungsverfahren kommt an der Kreuzung Groﬂ-Berliner Damm eine Ampel hin
+#: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/
+#: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/Unterlage%2005/Unterlage_U05-1.pdf (es gibt mehrere neue Ampeln an der Tramlinie)
 #: osm_watch: way id="206889091" version="3"
 #: last_checked: 2018-05-05
 #: check_frequency: 180d
-Benno-Kˆnig-Str.: geplante Straﬂe in Johannisthal, genaue Lage, Qualit‰t?	?::projected 18369,4337 18578,4516
+Benno-Kˆnig-Str.: geplante Straﬂe in Johannisthal, genaue Lage, Qualit‰t?	?::projected 18374,4307 18584,4510
 #: XXX ^^^
 # 
 # REMOVED (unwahrscheinlich) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2015/vzb0846_iv_aufstellg_b_plan_10_77.pdf --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2015 --- #: last_checked: 2016-10-02 --- #: check_frequency: 360d --- Bebauungsplan 10-77: werden hier neue Straﬂen entstehen?	?::projected 21483,16527 21548,16338
@@ -3597,8 +3602,8 @@ Rad- und Gehweg geplant: Qualit‰t, genaue Lage?	?::projected 7452,13904 7542,139
 #: XXX auch Maﬂnahme Jt.7
 #: last_checked: 2018-05-21 vvv
 #: check_frequency: 180d vvv
-Gustav-Hertz-Platz: geplant, verkehrsberuhigt	?::projected 18578,4516 18688,4611 18645,4664
-Wagner-RÈgeny-Str.: Verl‰ngerung geplant	?::projected 19162,3935 18578,4516 18264,4830
+Gustav-Hertz-Platz: geplant, verkehrsberuhigt	?::projected 18584,4510 18688,4611 18645,4664
+Wagner-RÈgeny-Str.: Verl‰ngerung geplant	?::projected 19162,3935 18584,4510 18264,4830
 #: by: http://www.adlershof-johannisthal.de/#sec9 ("2019-2021")
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (Ah.6)
 #: next_check: 2019-06-01

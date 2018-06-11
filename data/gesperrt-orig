@@ -122,13 +122,16 @@ Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
 # REMOVED (aufgehoben) Grünau/B179	1 22007,711 21862,807
 # REMOVED (aufgehoben) Grünau/B179	1 21862,807 21904,876 21977,988 22044,1018 22092,999
 Dorfplatz	1 21074,-475 20986,-529 20890,-546 20827,-537 20999,-489 21074,-475
+# 
 #: XXX Straße wird zu einer Stadttraße umgebaut; auf der südöstlichen Seite wird ein Zweirichtungsradweg+gehweg entstehen; außerdem wird es eine Rampe zur Straße "Am Falkenberg" geben
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/b96a/index.shtml
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/b96a/download/lageplan_07.pdf
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: II/2018 -- II/2020)
+#: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.710430.php (Richtung Schönefeld 1. Quartal 2020 fertig, Richtung Adlergestell 2. Quartal 2021)
 #: last_checked: 2018-01-01 (mapillary)
-#: check_frequency: 360d
+#: next_check: 2020-04-01
 B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532 21819,1595 21541,1739
+# 
 Zufahrt zur B96a	2 20288,-511 20272,-501
 Olivaer Platz	1 4239,10358 4172,10406 4157,10418
 Platz S (Hundekehlestr.)	1 2301,7698 2213,7637
@@ -1924,8 +1927,12 @@ abgeschlossenes Tor	3 * 14688,8355 *
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+#: next_check_id: SAENTISSTR-2018
+#: by: https://www.berliner-woche.de/marienfelde/c-verkehr/fuehrungsrinne-fuer-fahrraeder-geplant_a167051 (Führungsrinnen werden gebaut) vvv
 tragen (3x12 Stufen)	0:35 9005,912
 tragen (2x13 Stufen)	0:30 9047,948
+#: by: ^^^
+# 
 tragen (28 Stufen)	0:30 6138,12877
 Tor, kann geschlossen sein	BNP:10::trailer=15 20682,9834
 Tor, kann geschlossen sein	BNP:10::trailer=15 20683,9558
@@ -2903,7 +2910,8 @@ Alexandrinenstr.: für Anhänger zu eng	BNP:0::trailer=no 10781,11243
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/buergerbeteiligung/xv-30b-ve-353886.php
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_56_6505_6588_online.pdf (Straßenlandeinziehung)
 #: osm_watch: way id="86812767" version="5"
-#: last_checked: 2018-05-09
+#: last_checked: 2018-06-11
+#: check_frequency: 60d
 Fanny-Zobel-Str.: wegen Bauarbeiten gesperrt, vielleicht sogar dauerhaft eingezogen	2::inwork 13975,10187 14049,10164
 # 
 # REMOVED --- #: source_id: 2147342570 --- #: last_checked: 2018-06-05 --- # REMOVED ---#: check_frequency: 3d --- #: next_check: 2018-06-15 --- #: valid: -20180615 --- #: priority: #A --- Koppenstr.: Bauarbeiten, Fahrbahn Richtung Rüdersdorfer Str. gesperrt	1s:q2:inwork 12573,12227 12596,12472 --- 
@@ -2975,7 +2983,7 @@ Zum Großen Herzberg (Potsdam-Golm): Straße wird noch gebaut	2::inwork -18017,333
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/express-zum-ber-fledermaeuse-stoppen-bauarbeiten-fuer-ringbahnbruecke-29488832 (Abriss im April 2018)
 #: XXX wird aufgehoben, sobald das einsturzgefährdete Haus abgerissen wird
 #: osm_watch: way id="488814363" version="3"
-#: last_checked: 2018-05-14
+#: last_checked: 2018-06-11
 #: check_frequency: 30d
 #: priority: #C
 Wartenbergstr.	1s:q2:inwork 15423,11667 15337,11639 15328,11636 15300,11584
@@ -3010,7 +3018,7 @@ Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_30_3365_3488_online.pdf (Grundstücksnummerierungen)
 #: by: http://www.berliner-woche.de/rummelsburg/bauen/neues-quartier-im-lichtenhain-erste-einblicke-fuer-anwohner-und-erwerber-d133845.html
 #: XXX vermutlich Sackgasse
-#: last_checked: 2018-04-07
+#: last_checked: 2018-06-11
 #: check_frequency: 60d
 Im Lichtenhain: neue Straße, zurzeit Bauarbeiten; Qualität, genaue Lage?	2::inwork 16497,10685 16462,10571
 # 

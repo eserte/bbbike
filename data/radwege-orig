@@ -1605,7 +1605,7 @@ die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
 #: XXX Markierungen fehlen hier noch
 #: osm_watch: way id="439421759" version="9"
 #: osm_watch: way id="384136808" version="12"
-#: last_checked: 2018-06-04
+#: last_checked: 2018-06-11
 #: check_frequency: 14d
 	RW0; 14904,10812 15000,10792
 	RW3; 15000,10792 15261,10738
@@ -3021,17 +3021,23 @@ Verbundsteinpflaster	RW1; 18256,7520 18382,7724 18406,7760 18577,8033
 	RW1; 13265,5519 13305,5316
 	RW1;RW1 13305,5316 13327,5234
 	RW2;RW1 16887,17349 16837,17440
+# 
 #: by: Andreas Mühlhausen vvv
 #: XXX Radweg wird 2012 saniert vvv
+#: source_id: 2147342739
+#: XXX Bauarbeiten Höhe Saaler Bogen
 #: last_checked: 2018-06-03 vvv
-#: check_frequency: 120d vvv
+# REMOVED --- #: check_frequency: 120d vvv
+#: next_check: 2018-06-30 vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 mäßiger Beton	RW1;RW2 16837,17440 16785,17524
 mäßiger Beton	RW1;RW1 16785,17524 16761,17561 16677,17678 16563,17759 16487,17785 16472,17791 16277,17830 15881,17899 15783,17915 15715,17930 15567,17956 15505,17967
 #: by: ^^^
-#: check_frequency: ^^^
+#: next_check ^^^
+# REMOVED --- #: check_frequency: ^^^
 #: last_checked: ^^^
 #: XXX ^^^
+# 
 Gehwegplatten	RW1;RW1 15505,17967 15238,18015
 #: by: ^^^
 	RW1;RW1 15238,18015 15105,18040 15034,18051 15000,18056 14754,18054 14445,18010
@@ -5095,7 +5101,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2018-05-14
+#: last_checked: 2018-06-11
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
