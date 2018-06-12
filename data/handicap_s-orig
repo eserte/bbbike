@@ -35,7 +35,7 @@ Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 #: XXX_prog BS (östliche Seite)
-#: last_checked: 2018-06-07 vvv
+#: last_checked: 2018-06-12 vvv
 #: check_frequency: 7d vvv
 Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstein	q2::inwork 11845,12292 11635,12398
 Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstein	q4::inwork 11635,12398 11607,12412
@@ -140,7 +140,7 @@ Märkisches Ufer: Bauarbeiten, Engstelle	q3+::inwork 10687,11853 10869,11949
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2018-06-07
+#: last_checked: 2018-06-12
 Voltairestr.: Fahrbahn unter Umständen wegen Baustelle gesperrt, Ausweichen auf Gehweg	q2- 11329,12497 11209,12430
 # 
 #: next_check_id: ZIEGELSTR-2016
@@ -410,7 +410,7 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php
 #: note: wenn nichts in der Philharmonie los ist, kann man auch schneller durchkommen (q3+)
 #: osm_watch: way id="531952542" version="4"
-#: last_checked: 2018-05-28
+#: last_checked: 2018-06-08 (mapillary)
 Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4+::inwork 7970,11441 7965,11467 8005,11627
 # 
 #: last_checked: 2018-05-28
@@ -1069,7 +1069,10 @@ Spreeuferweg - Elisabeth-Abegg-Str.: Rampe	q3 7926,12865 7907,12817
 Heidenfeldstr.: Gehweg	q1 13433,13346 13393,13326
 (Gudrunstr. - Lichtenberger Brücke): Gehweg	q1 16837,11920 16833,11897 16818,11878
 #: XXX_prog BS an der Lichtenberger Brücke, ansonsten q1; man könnte aber auch am Monimbóplatz legal auf den Gehweg ohne Bordstein wechseln
-(Gudrunstr. - Lichtenberger Brücke): Gehweg, Bordstein	q3 16818,11878 16803,11859
+(Lichtenberger Brücke - Gudrunstr.): Gehweg, Bordstein	q3; 16803,11859 16818,11878
+#: XXX_prog BS an der Lichtenberger Brücke, hier gibt es keine Umgehungsmöglichkeit
+#: note: routing_helper beachten!
+(Gudrunstr. - Lichtenberger Brücke): Gehweg, Bordstein	q3; 16818,11878 16803,11859
 Grünstr.: Fußgängerzone, Radfahren erlaubt	q2 22111,4562 22162,4546 22214,4548 22324,4586
 Schloßplatz Köpenick: Fußgänger, Straßenbahn, Lieferverkehr	q2 22111,4562 22093,4499
 (Karlsgartenstr. - Hasenheide): Parkweg, Fußgänger	q1 11627,8485 11560,8480 11508,8491 11333,8582 11255,8591

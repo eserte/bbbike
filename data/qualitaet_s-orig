@@ -80,12 +80,20 @@ Sinsheimer Weg: Betonstraße	Q0 13774,8849 13837,8932
 #: XXX Asphaltierung geplant vvv
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2018-2022) vvv
 #: by: http://www.berliner-woche.de/neukoelln/verkehr/verbesserung-fuer-radler-donaustrasse-erhaelt-asphaltdecke-d117499.html
-#: check_frequency: 60d vvv
-#: last_checked: 2018-05-19
+#: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Beginn der Bauarbeiten Ende August 2018, Ende 2019)
+#: by: https://www.aktion-kms.de/projekte/umbau-donaustrasse/
+#: by: https://www.aktion-kms.de/assets/2017/01/Donaustra%C3%9Fe_LP_Lph3-LP_01.pdf
+#: last_checked: 2018-05-19 vvv
+#: next_check: 2018-08-31 vvv
 Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729 12549,8616 12649,8535
+#: XXX hier wird vermutlich auch die Einbahnstraßenregelung für Radfahrer aufgehoben
+Pannierstr.: Kopfsteinpflaster	Q2 12242,8972 12202,8895
+#: next_check ^^^
+#: last_checked ^^^
+#: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: last_checked: 2018-05-01
+#: next_check: 2019-03-01
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
-#: check_frequency ^^^
 #: by: ^^^
 #: XXX ^^^
 Friesenstr.: mäßiges Kopfsteinpflaster	Q2 9801,8683 9801,8889 9799,8962 9797,9063 9795,9162 9793,9241
@@ -383,7 +391,6 @@ Lenaustr.: Kopfsteinpflaster	Q2 12148,9426 12047,9429 11954,9415 11803,9390
 Pflügerstr.: mäßiges, teilweise auch schlechtes Kopfsteinpflaster	Q2- 12480,9394 12333,9470 12316,9477 12150,9545 12066,9558 11934,9538
 Pflügerstr.: Kopfsteinpflaster	Q2 11934,9538 11757,9509
 Liberdastr.: Kopfsteinpflaster	Q2 12150,9545 12207,9632 12250,9691
-Pannierstr.: Kopfsteinpflaster	Q2 12242,8972 12202,8895
 Fuldastr.: Kopfsteinpflaster	Q2 12902,9066 12836,8980 12740,8862
 Reuterstr.: Kopfsteinpflaster	Q2 12195,8436 12216,8323
 Torfstr.: Kopfsteinpflaster	Q2; 6626,15104 6652,15073
@@ -2118,7 +2125,7 @@ Langhoffstr.: Asphalt	Q0 19818,14064 19817,14371 19817,14459
 #: XXX wird hier auch asphaltiert werden?
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-praesentation_29-10-2015.pdf
 #: osm_watch: way id="70668204" version="8"
-#: last_checked: 2018-02-10
+#: last_checked: 2018-06-12
 #: check_frequency: 100d
 (Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Kopfsteinpflaster	Q2 17533,12222 17480,12237 17466,12241
 Gudrunstr.: Asphalt	Q0 17466,12241 17300,12173 17195,12125 17139,12100 17088,12069 16975,12000 16865,11931
@@ -7635,7 +7642,7 @@ Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6721
 # REMOVED (note wurde bearbeitet) --- #: osm_watch: note 1177573 1
 #: osm_watch: way id="35873435" version="7"
-#: last_checked: 2018-02-10
+#: last_checked: 2018-06-12
 #: check_frequency: 120d
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1- 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 Rüdersdorfer Str. [Rückseite]: Beton	Q0- 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955

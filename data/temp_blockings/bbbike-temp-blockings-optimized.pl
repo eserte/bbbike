@@ -3848,26 +3848,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-06-07 vvv
-#: check_frequency: 1d vvv
-	q4::inwork 10954,12635 11059,12450
-	q4::inwork 11059,12450 11084,12395 11092,12375
-	q4::inwork 11139,12243 11092,12375
-	2::inwork 11032,12439 11059,12450
-	2::inwork 11049,12386 11084,12395
-# REMOVED (eh\' nur teilweise) --- q2::inwork; 11092,12375 11209,12430
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-',
-         'from' => undef,
-         'id' => 2825,
-         'text' => 'Littenstr.: Bauarbeiten, Fahrbahn gesperrt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,

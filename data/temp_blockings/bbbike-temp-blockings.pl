@@ -4706,7 +4706,7 @@ EOF
        text  => 'B 167 Neustädter Str. OD Neuruppin, zw. Damaschkeweg u. Zufahrt Lidl Straßen-u.Kanalbau,Mittelinsel Vollsperrung 06.06.2006-14.07.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 -32062,56731 -33038,55844
+	q4 -32420,56439 -33038,55844
 EOF
      },
      { from  => 1149631200, # 2006-06-07 00:00
@@ -17149,7 +17149,7 @@ EOF
        text  => 'B 167 Neuruppin - AS Neuruppin zw. Bechlin u. AS Neuruppin Straßenbauarbeiten Vollsperrung 16.11.2009-29.11.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -35577,54824 -35059,54768 -34499,54966 -33922,55483
+	2::inwork -35577,54824 -35059,54768 -34557,54860 -33859,55398
 EOF
      },
      { from  => 1259276209, # 2009-11-26 23:56
@@ -25659,21 +25659,21 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1528827442, # weitgehend beendet --- undef, # XXX
        text  => 'Littenstr.: Bauarbeiten, Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Wann werden die Bauarbeiten aufgehoben? vvv
-#: last_checked: 2018-06-07 vvv
-#: check_frequency: 1d vvv
+# REMOVED --- #: last_checked: 2018-06-07 vvv
+# REMOVED --- #: check_frequency: 1d vvv
 	q4::inwork 10954,12635 11059,12450
 	q4::inwork 11059,12450 11084,12395 11092,12375
 	q4::inwork 11139,12243 11092,12375
 	2::inwork 11032,12439 11059,12450
 	2::inwork 11049,12386 11084,12395
 # REMOVED (eh' nur teilweise) --- q2::inwork; 11092,12375 11209,12430
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: last_checked ^^^
 #: XXX ^^^
 EOF
      },
