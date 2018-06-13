@@ -20576,16 +20576,25 @@ EOF
 	q4::inwork 4932,4152 5063,4266
 EOF
      },
-     { from  => 1338750610, # 2012-06-03 21:10
-       until => 1341352799, # 2012-07-03 23:59
-       text  => 'Fanmeile EM 2012: Sperrung der Straße des 17. Juni und umliegenden Straßen, bis 3. Juli 2012',
+     { from  => 1528915226, # 1338750610, # 2012-06-03 21:10
+       until => $isodate2epoch->("2018-07-17 18:00:00"), # 1341352799, # 2012-07-03 23:59
+       text  => 'Fanmeile WM 2018: Straße des 17. Juni und umliegende Wege im Tiergarten werden während der Spiele der deutschen Nationalmannschaft gesperrt: 17. Juni, 23. Juni, 27. Juni; sowie für die Spiele im Achtel-, Viertel-, Halbfinale und das Endspiel',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 8573,12325 8540,12420
-	2::temp 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8592,12252
-	2::temp 8354,12416 8391,12389 8546,12279 8538,12245 8600,12165 8595,12066
-	2::temp 7383,12095 7816,12150 8055,12186 8119,12414
-	2::temp 8546,12279 8570,12302
+#: by: https://www.berlin.de/fussball-wm-2018/public-viewing-berlin/3517672-2605827-strassensperrungen-wegen-der-fanmeile-am.html
+	2::temp 8055,12186 8119,12414
+	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150
+	2::temp 7823,12120 8018,12135 8049,12140 8034,12093 8057,12065 8052,12033 8022,12016 8020,11937 8095,11919 8132,11910 8221,11885 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
+	2::temp 8522,12239 8466,12197
+	2::temp 8214,12205 8215,12156 8221,11885
+	2::temp 8391,12389 8344,12221 8327,12174 8244,11878 8210,11775
+	2::temp 8501,11815 8244,11878
+	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+	2::temp 8538,12245 8592,12252 8637,12258 8722,12268 8804,12280
+	2::temp 8643,12208 8637,12258 8630,12307 8714,12319 8722,12268 8728,12220 8643,12208
+	2::temp 8546,12279 8391,12389 8354,12416
+	2::temp 8095,11919 8104,11984 8091,11992 8091,12011 8091,12023 8099,12022 8102,12043 8099,12058 8107,12068 8122,12147
+	2::temp 7832,12036 7823,12120 7816,12150 7822,12201 7875,12363
 EOF
      },
      { from  => 1348929655, # undef, # 
@@ -27013,15 +27022,16 @@ EOF
 EOF
      },
      { from  => 1522864912, # 2018-04-04 20:01
-       until => undef, # $isodate2epoch->("2018-05-15 20:00:00"), # 1525449600, # 2018-05-04 18:00
-       text  => 'Behrenstr.: Sperrung Richtung Osten zwischen Wilhelmstr. und Mauerstr.',
+       until => $isodate2epoch->("2018-07-15 20:00:00"), # 1525449600, # 2018-05-04 18:00
+       text  => 'Behrenstr.: Sperrung Richtung Osten zwischen Wilhelmstr. und Glinkastr., voraussichtlich bis Mitte Juli 2018',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147342390
+#: source_id: 2147342751
 # REMOVED (hier nicht mehr) ---	q4::inwork; 8901,12008 8861,12125
 #: last_checked: 2018-06-08
-#: check_frequency: 7d
-	q4::inwork; 8861,12125 9054,12154
+# REMOVED --- #: check_frequency: 7d
+	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
 EOF
      },
      { from  => 1523631600, # 2018-04-13 17:00
