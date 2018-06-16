@@ -516,8 +516,8 @@ Salvador-Allende-Str. - Abzweig: bereits an der Ampel Fürstenwalder Damm auf den
 Abzweig - Salvador-Allende-Str.: auf den linken Gehweg bis zur Ampel Friedrichshagener Str. fahren	CP; 23428,5382 23403,5385 23404,5325
 #: XXX wird eventuell im Zuge der Maßnahme Nsw.3 verbessert
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5826 (Verkehrsführung verbessern)
-#: last_checked: 2018-02-04
-#: next_check: 2018-06-16
+#: last_checked: 2018-06-16
+#: check_frequency: 90d
 Michael-Brückner-Str. - Sterndamm: an der Ampel Sterndamm besteht vom Radweg aus keine Möglichkeit zum Linksabbiegen, deshalb bereits an der Ampel Hasselwerderstr. auf den linken Gehweg wechseln	PI; 17960,5511 17886,5587 17736,5441
 Rixdorfer Str. - KGA An der Südostallee: wegen einer Leitplanke zwischen Radweg und Fahrbahn bereits 40 Meter vorher auf die Fahrbahn wechseln	CP; 17160,6239 17056,6133 17070,6115
 Indira-Gandhi-Str. - Orankeweg: bereits an der Fußgängerampel Gounodstr. auf den linken Gehweg wechseln	PI; 14597,15970 14609,15921 14695,15911
@@ -615,7 +615,7 @@ Schulze-Boysen-Str. - Ruschstr.: Fußgängerampel auf der linken Seite benutzen	CP
 Rathausstr. - Frankfurter Allee: Fußgängerampel auf der linken Seite benutzen	CP; 15685,12154 15670,12022 15717,12015
 # 
 #: next_check_id: ZUMBETRIEBSBHF-2017 vvv
-#: last_checked: 2018-06-06 vvv
+#: last_checked: 2018-06-16 vvv
 ausgeschildert "zur Salzmannstraße Huronseestraße"	CP2; 16900,9861 16895,9922
 ausgeschildert "zur Sewanstraße"	CP2; 16900,9861 17005,9953
 #: last_checked ^^^
@@ -631,3 +631,5 @@ Müggelheimer Str. - Dorotheenstr.: schon an der Ampel Pablo-Neruda-Str. auf die 
 # 
 Lidl-Parkplatz - Alt-Kaulsdorf: zunächst bis zur Ampel "Am Feldberg" den linken Gehweg benutzen	CP; 22982,11157 22996,11264 22937,11265
 Alt-Kaulsdorf - Lidl-Parkplatz: an der Ampel Myslowitzer Str. auf die linke Seite wechseln	PI; 23101,11261 22996,11264 22982,11157
+# 
+Fürstenwalder Damm: auf die Fahrbahn wechseln (Straßenbahngleise überqueren)	CP2; 26424,5924 26080,5946

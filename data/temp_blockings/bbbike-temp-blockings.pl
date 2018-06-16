@@ -14570,13 +14570,14 @@ EOF
        until => $isodate2epoch->("2018-06-17 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6]],
-       text  => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain (15.06.2018 - 17.06.2018)',
+       text  => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain; außerdem Sperrung im Kietz (Kietzer Sommer) (15.06.2018 - 17.06.2018)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.howoge.de/unternehmen/aktuelles/veranstaltungen/details/koepenicker-sommer-2018.html
 	2::temp 22111,4562 22093,4499 22076,4422
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
 	2::temp 22138,4642 22074,4664
+	2::temp 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
 # REMOVED ---	2::temp 22111,4562 22162,4546 22214,4548 22324,4586 22314,4604 22355,4660 22365,4676 22395,4678
 EOF
      },
@@ -20581,6 +20582,7 @@ EOF
        text  => 'Fanmeile WM 2018: Straße des 17. Juni und umliegende Wege im Tiergarten werden während der Spiele der deutschen Nationalmannschaft gesperrt: 17. Juni, 23. Juni, 27. Juni; sowie für die Spiele im Achtel-, Viertel-, Halbfinale und das Endspiel',
        type  => 'gesperrt',
        data  => <<EOF,
+#: source_id: 2147342742
 #: by: https://www.berlin.de/fussball-wm-2018/public-viewing-berlin/3517672-2605827-strassensperrungen-wegen-der-fanmeile-am.html
 	2::temp 8055,12186 8119,12414
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150
@@ -23606,7 +23608,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_022856',
        data  => <<EOF,
-	q4::inwork 26302,5932 26080,5946 25579,5958
+	q4::inwork 26424,5924 26080,5946 25579,5958
 EOF
      },
      { from  => 1411941600, # 2014-09-29 00:00
@@ -26974,9 +26976,10 @@ EOF
        text  => 'Stillerzeile: Bauarbeiten, östlich des Löbauer Wegs einige Meter Fahrbahn gesperrt, westlich Einbahnstraßenregelung, offen Richtung Westen',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2018-04-29 vvv
+#: last_checked: 2018-06-16 vvv
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-	q4::inwork; 24629,5831 24798,5891
+	q4::inwork; 24443,5765 24629,5831
+	q4::inwork 24629,5831 24798,5891
 	q3::inwork 24798,5891 24977,5880
 #: add_fragezeichen ^^^
 #: last_checked ^^^
@@ -27302,7 +27305,10 @@ EOF
        data  => <<EOF,
 #: XXX eventuell hängen die Bauarbeiten mit den Bauarbeiten in der Eldenaer Str. zusammen
 #: XXX wird danach komplett asphaltiert sein?
-#: last_checked: 2018-06-08
+#: source_id: 2147342618
+#: priority: #A
+#: last_checked: 2018-06-14
+#: next_check: 2018-07-13
 	q4::inwork 13767,12626 13786,12636 13863,12677 13911,12692
 EOF
      },
@@ -27315,6 +27321,14 @@ EOF
 #: XXX wird danach komplett asphaltiert sein?
 #: last_checked: 2018-06-08
 	q4::inwork; 14096,12827 14058,12709
+EOF
+     },
+     { from  => 1529208000, # 2018-06-17 06:00
+       until => 1529514000, # 2018-06-20 19:00
+       text  => 'Zobtener Str.: gesperrt, 18.06.2018 6.00 Uhr bis 20.06.2018 19.00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+	2::inwork 16148,10329 15758,10578
 EOF
      },
     );

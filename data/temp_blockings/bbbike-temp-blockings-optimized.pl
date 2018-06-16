@@ -1688,6 +1688,7 @@ push @temp_blocking,
 	2::temp 22111,4562 22093,4499 22076,4422
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
 	2::temp 22138,4642 22074,4664
+	2::temp 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
 # REMOVED ---	2::temp 22111,4562 22162,4546 22214,4548 22324,4586 22314,4604 22355,4660 22365,4676 22395,4678
 ',
          'from' => 1528927200,
@@ -1702,7 +1703,7 @@ push @temp_blocking,
                               6
                             ]
                           ],
-         'text' => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain (15.06.2018 - 17.06.2018)',
+         'text' => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain; außerdem Sperrung im Kietz (Kietzer Sommer) (15.06.2018 - 17.06.2018)',
          'type' => 'gesperrt',
          'until' => 1529272799
        },
@@ -2912,7 +2913,8 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        {
-         'data' => '#: by: https://www.berlin.de/fussball-wm-2018/public-viewing-berlin/3517672-2605827-strassensperrungen-wegen-der-fanmeile-am.html
+         'data' => '#: source_id: 2147342742
+#: by: https://www.berlin.de/fussball-wm-2018/public-viewing-berlin/3517672-2605827-strassensperrungen-wegen-der-fanmeile-am.html
 	2::temp 8055,12186 8119,12414
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150
 	2::temp 7823,12120 8018,12135 8049,12140 8034,12093 8057,12065 8052,12033 8022,12016 8020,11937 8095,11919 8132,11910 8221,11885 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
@@ -3591,21 +3593,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: STERNDAMM-2016
-#: by: http://unternehmen.bvg.de/de/Unternehmen/Medien/Presse/Pressemitteilungen/Detailansicht?newsid=2442
-#: note: laut BA Treptow-Köpenick geht die Sperrung bis zum 2018-06-16, laut vmz bis Mitte Juni 2018
-#: by http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180406
-#: source_id: 2147342409
-	2::inwork 17886,5587 17736,5441
-',
-         'from' => 1523152800,
-         'id' => 2684,
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.690450.php',
-         'text' => 'Sterndamm: Eisenbahnunterführung voll gesperrt, 09.04.2018 bis 16.06.2018',
-         'type' => 'gesperrt',
-         'until' => 1529128800
-       },
+       undef,
        undef,
        {
          'data' => '#: tempex: th & T10:00-T20:30
@@ -4186,9 +4174,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: last_checked: 2018-04-29 vvv
+         'data' => '#: last_checked: 2018-06-16 vvv
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-	q4::inwork; 24629,5831 24798,5891
+	q4::inwork; 24443,5765 24629,5831
+	q4::inwork 24629,5831 24798,5891
 	q3::inwork 24798,5891 24977,5880
 #: add_fragezeichen ^^^
 #: last_checked ^^^
@@ -4408,7 +4397,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX eventuell hängen die Bauarbeiten mit den Bauarbeiten in der Eldenaer Str. zusammen
 #: XXX wird danach komplett asphaltiert sein?
-#: last_checked: 2018-06-08
+#: source_id: 2147342618
+#: priority: #A
+#: last_checked: 2018-06-14
+#: next_check: 2018-07-13
 	q4::inwork 13767,12626 13786,12636 13863,12677 13911,12692
 ',
          'from' => undef,
@@ -4428,6 +4420,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Liebigstr.: Bauarbeiten, Einbahnstraßenregelung',
          'type' => 'handicap',
          'until' => 1536940800
+       },
+       {
+         'data' => '	2::inwork 16148,10329 15758,10578
+',
+         'from' => 1529208000,
+         'id' => 2970,
+         'text' => 'Zobtener Str.: gesperrt, 18.06.2018 6.00 Uhr bis 20.06.2018 19.00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1529514000
        }
      
 );

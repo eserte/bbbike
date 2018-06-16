@@ -21,7 +21,7 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-06-11
+#: last_checked: 2018-06-16
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
@@ -104,6 +104,14 @@ Auerstr.: zwischen Richard-Sorge-Str. und Löwestr. Baustelle, Einbahnstraßenrege
 # REMOVED --- #: XXX siehe auch valid-Eintrag weiter unten --- #: source_id: 2147340178 --- #: last_checked: 2016-10-05 --- #: valid: -20161115 --- Bouchéstr.: Bauarbeiten, Radfahrer müssen auf dem Gehweg fahren	q2::inwork 13642,9624 13865,9866 13890,9894 -- # REMOVED (wahrscheinlich aufgehoben) --- #: last_checked: 2013-11-22 --- #: check_frequency: 60d --- Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 13973,9465 14157,9345
 # REMOVED (Bauarbeiten beendet) --- #: XXX laut Schild gehen die Bauarbeiten bis 10.2017 --- #: XXX nach Beendigung der Bauarbeiten wieder den alten handicap-Eintrag ("Bodenschwellen") aktivieren --- #: last_checked: 2017-11-30 --- #: check_frequency: 14d --- Bouchéstr.: Bauarbeiten an der Heidelberger Str.	q3::inwork; 13489,9456 13357,9313
 # 
+### Adlershof ###
+# 
+#: XXX_prog: BS
+#: last_checked: 2018-06-16 vvv
+Wagner-Régeny-Str - Igo-Etrich-Str.: Bauarbeiten, mehrere Bordsteine, auf Gehweg ausweichen	q2::inwork; 19363,3730 19162,3935 18930,3703
+Igo-Etrich-Str. - Wagner-Régeny-Str: Bauarbeiten, auf Gehweg ausweichen	q1::inwork; 18930,3703 19162,3935 19363,3730
+#: last_checked ^^^
+# 
 ### Wedding ###
 # 
 #: by: http://www.baustellen-doku.info/berlin_neubau_s-bahn_s21/20180406/
@@ -140,7 +148,7 @@ Märkisches Ufer: Bauarbeiten, Engstelle	q3+::inwork 10687,11853 10869,11949
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2018-06-12
+#: last_checked: 2018-06-14
 Voltairestr.: Fahrbahn unter Umständen wegen Baustelle gesperrt, Ausweichen auf Gehweg	q2- 11329,12497 11209,12430
 # 
 #: next_check_id: ZIEGELSTR-2016
@@ -342,7 +350,7 @@ Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q3::
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180307 (hier: Ende der Bauarbeiten August 2018, aber vielleicht ist Fahrbahn+Radweg früher schon offen?)
 #: source_id: LMS-BR_r_LMS-BR_116151_LMS-BR_72
 #: source_id: 2147342044
-#: last_checked: 2018-05-20
+#: last_checked: 2018-06-16
 #: next_check: 2018-09-15
 #: valid: -20180915
 #: priority: #A
@@ -521,7 +529,7 @@ Gotlindestr.: Sperrung der Fahrbahn an der Ruschestr.	q4::inwork 15947,12626 160
 #: source_id: LMS-BR_r_LMS-BR_123515_LMS-BR_72
 #: source_id: 2147342688
 #: last_checked: 2018-05-30 vvv
-#: next_check: 2018-06-14 vvv
+#: next_check: 2018-06-21 vvv
 # REMOVED --- #: valid: -20180403 vvv
 #: priority: #A vvv
 Helmstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q2::inwork 7444,9148 7382,9187
@@ -531,14 +539,7 @@ Vorbergstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q3::inwork 7363,9152 73
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: XXX: laut fritz bis Ende August, laut vmz nur bis Mitte Juni 2018
-#: source_id: 2147342169
-#: last_checked: 2018-05-08
-#: next_check: 2018-06-15
-#: valid: -20180827
-#: priority: #A
-Großgörschenstr.: Bauarbeiten an der Einmündung Potsdamer Str.	q3::inwork 7609,9463 7507,9458
-# 
+# REMOVED (wurde entfernt) --- #: XXX: laut fritz bis Ende August, laut vmz nur bis Mitte Juni 2018 --- #: source_id: 2147342169 --- #: last_checked: 2018-05-08 --- #: next_check: 2018-06-15 --- #: valid: -20180827 --- #: priority: #A --- Großgörschenstr.: Bauarbeiten an der Einmündung Potsdamer Str.	q3::inwork 7609,9463 7507,9458
 # REMOVED --- #: last_checked: 2017-06-06 --- #: next_check: 2017-06-17 --- Bautzener Str.: Bauarbeiten an der Großgörschenstr., auf Gehweg ausweichen	q4::inwork 8186,9380 8185,9338
 # REMOVED --- #: source_id: LMS-BR_r_LMS-BR_76371 --- # #: source_id: 2147340485 --- # #: last_checked: 2016-09-12 --- # #: next_check: 2016-10-14 --- # #: valid: -20161014
 # REMOVED Akazienstr.: Bauarbeiten, Fahrbahn zwischen Apostel-Paulus-Str. und Hauptstr. gesperrt	q4::inwork 7201,8870 7107,9030 7044,9163
@@ -1188,7 +1189,7 @@ Am Bahndamm: einige Fußgänger	q1 7769,4315 7795,4242 8016,3651 8106,3410
 Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 #: XXX bleibt es bei dem steilen Abschnitt?
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6472
-#: osm_watch: way id="77098244" version="6"
+#: osm_watch: way id="77098244" version="7"
 #: last_checked: 2018-03-11
 #: check_frequency: 120d
 Teltowkanalpromenade: enge und kurvige Unterführung, steile Abschnitte	q4 4274,2717 4272,2704 4247,2652 4209,2641
@@ -1222,7 +1223,7 @@ Wuhlewanderweg: Fußgänger	q1 22242,11269 22244,11311 22073,11581 22009,11636 218
 Wuhlewanderweg: Fußgänger	q1 22244,11311 22268,11285
 Wuhlewanderweg: enge Unterführung	q3 22268,11285 22279,11272 22270,11210
 Wuhlewanderweg: Fußgänger	q1 22270,11210 22236,11208
-Wuhlewanderweg: Fußgänger	q1 22238,6195 22237,6211 22236,6233 22214,6271 22146,6338 22097,6414 22030,6600 22056,6613 21976,6848 21888,6944 21590,7211 21574,7244 21567,7284 21613,7521 21620,7647 21597,7711 21570,7751 21616,7863 21629,7921 21599,7904 21593,7934 21568,8052 21351,8259 21337,8273 21276,8374 21193,8468 21173,8576 21183,8731 21192,8839 21210,8883 21252,8928 21280,8954 21334,9015 21349,9062
+Wuhlewanderweg: Fußgänger	q1 22238,6195 22237,6211 22236,6233 22214,6271 22146,6338 22097,6414 22030,6600 22056,6613 21976,6848 21888,6944 21590,7211 21574,7244 21567,7284 21613,7521 21620,7647 21597,7711 21570,7751 21616,7863 21629,7921 21599,7904 21593,7934 21568,8052 21534,8107 21351,8259 21337,8273 21276,8374 21193,8468 21173,8576 21183,8731 21192,8839 21210,8883 21252,8928 21280,8954 21334,9015 21349,9062
 Wuhlewanderweg: Fußgänger	q1 21383,9045 21467,9236 21524,9488 21587,9609 21633,9731 21678,9817 21686,9876
 Wuhlewanderweg: Fußgänger	q1 21611,9893 21619,9993 21566,10230 21585,10289 21584,10329 21586,10344 21608,10403 21646,10510 21657,10519 21791,10623 21827,10684 21869,10750 21950,10776 22059,10782 22110,10796
 Wuhlewanderweg: Fußgänger	q1 22059,10782 22103,10814 22166,10839
@@ -1919,10 +1920,9 @@ Zur Kreutzigerstr.: enger Hausdurchgang	q3 14291,12220 14285,12190
 Märkischer Platz: Fußgänger	q2 11034,12038 11084,12070 11111,12027
 #: XXX_prog BS zur Grünstraßenbrücke
 (Fischerinsel - Grünstraßenbrücke): Fußgänger, niedriger Bordstein	q2+ 10474,11843 10515,11785
-#: XXX_prog BS zur Helsingforser Str.
-(Rampe Wriezener Park): Fußgänger, Bordstein	q3 13427,11431 13421,11423
-(Rampe Wriezener Park): Fußgänger, enge Rampe, kein Geländer	q3 13421,11423 13459,11388
-(Wriezener Park): Fußgänger	q2 13513,11351 13459,11388 13417,11416 13407,11416 13323,11497 13308,11515 13261,11572 13239,11567 13175,11649
+# REMOVED (mittlerweile abgeflacht) --- #: XXX_prog BS zur Helsingforser Str. --- (Rampe Wriezener Park): Fußgänger, Bordstein	q3 13427,11431 13416,11425
+(Rampe Wriezener Park): Fußgänger, enge Rampe	q3 13416,11425 13442,11400
+(Wriezener Park): Fußgänger	q2 13513,11351 13442,11400 13417,11416 13407,11416 13323,11497 13308,11515 13261,11572 13239,11567 13175,11649
 (Wriezener Park): Fußgänger	q2 13324,11529 13308,11515
 #: XXX_prog BS zur Helsingforser Str.
 Wriezener Park: Fußgänger, Bordstein	q3 13261,11572 13274,11585

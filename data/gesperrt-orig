@@ -128,6 +128,8 @@ Dorfplatz	1 21074,-475 20986,-529 20890,-546 20827,-537 20999,-489 21074,-475
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/b96a/download/lageplan_07.pdf
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: II/2018 -- II/2020)
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.710430.php (Richtung Schönefeld 1. Quartal 2020 fertig, Richtung Adlergestell 2. Quartal 2021)
+#: by: https://www.berliner-woche.de/altglienicke/c-verkehr/auf-dem-autobahnzubringer-b-96a-wird-bis-zum-sommer-2021-gebaut_a167771
+#: source_id: 2147342746
 #: last_checked: 2018-01-01 (mapillary)
 #: next_check: 2020-04-01
 B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532 21819,1595 21541,1739
@@ -183,7 +185,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: next_check_id: TRESKOWALLEE-2017
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7382
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=40535
-#: last_checked: 2018-05-06
+#: last_checked: 2018-06-16
 #: check_frequency: 90d
 #: priority: #A
 #: valid: 20190301-
@@ -2049,7 +2051,7 @@ tragen (6 Stufen)	0:10 4121,4841
 tragen (ca. 25 Stufen)	0:30 6160,7074
 tragen (10 Stufen)	0:15 22862,6547
 tragen (ca. 10 Stufen) oder sehr steile Rampe benutzen	0:15 22876,6598
-tragen (11 Stufen)	0:15 29524,4208
+tragen (11 Stufen)	0:15 29521,4213
 tragen (11 Stufen)	0:15 29516,4223
 tragen (15 Stufen)	0:20 31362,2800
 tragen (15 Stufen)	0:20 31358,2810
@@ -2910,7 +2912,7 @@ Alexandrinenstr.: für Anhänger zu eng	BNP:0::trailer=no 10781,11243
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/buergerbeteiligung/xv-30b-ve-353886.php
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_56_6505_6588_online.pdf (Straßenlandeinziehung)
 #: osm_watch: way id="86812767" version="5"
-#: last_checked: 2018-06-11
+#: last_checked: 2018-06-16
 #: check_frequency: 60d
 Fanny-Zobel-Str.: wegen Bauarbeiten gesperrt, vielleicht sogar dauerhaft eingezogen	2::inwork 13975,10187 14049,10164
 # 
@@ -3039,8 +3041,8 @@ Zufahrt Parkhaus: Abrissarbeiten, Straße komplett gesperrt	2::inwork 8367,10745 
 # 
 #: by: http://www.dafmap.de/d/berlin.html?center=52.434534+13.536709&zoom=18# (Projektabschluss: 2019-04-30)
 #: osm_watch: way id="448097237" version="1"
-#: last_checked: 2018-05-05
-#: next_check: 2018-09-01
+#: last_checked: 2018-06-16
+#: check_frequency: 90d
 Merlitzstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19661,3421 19524,3286
 # 
 #: last_checked: 2018-06-08
@@ -3053,9 +3055,9 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 # 
 # REMOVED --- #: last_checked: 2017-08-12 --- Charlottenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9509,12117 9496,12215
 # 
-#: XXX vielleicht wird hier nach den Bauarbeiten kein Weg mehr existieren; die S-Bahnbrücke ist sehr niedrig geworden...
-#: last_checked: 2018-03-25
-#: check_frequency: 120d
+#: XXX wird nach den Bauarbeiten hier noch ein Weg existieren? Wird die nördliche Anbindung mit Treppe oder Rampe realisiert?
+#: last_checked: 2018-06-16
+#: check_frequency: 90d
 (entlang der Erpe): Bauarbeiten der DB	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
 # 
 #: next_check_id: NIZZASTR-2014
@@ -3328,20 +3330,7 @@ BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 # REMOVED --- #: XXX eigentlich für Fußgänger passierbar, aber UdL nur in Richtung Osten
 # REMOVED --- Niederlagstr.: Bauarbeiten, keine Zufahrt von Unter den Linden möglich	2::inwork 9943,12364 9934,12420
 # REMOVED --- #: next_check_id: STERNDAMM-2016 --- #: by: fritz --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160124 --- #: source_id: 2147339574 --- #: source_id: IM_026665 --- #: source_id: 2147340122 --- #: source_id: LMS-BR_r_LMS-BR_68908 --- #: last_checked: 2016-06-26 --- #: check_frequency: 90d --- #: priority: #A --- #: XXX Gesamtmaßnahme bis 2018 (oder 2017?) --- 
-#: next_check_id: STERNDAMM-2016
-#: XXX laut Fritz bis April 2018
-#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170829 (ebenso: bis April 2018)
-#: by: http://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20180201 (Bauarbeiten sind am 27.08.2018 beendet)
-#: by: http://www.berliner-woche.de/johannisthal/verkehr/lichtschimmer-am-horizont-beim-umbau-bahnhof-berlin-schoeneweide-d143446.html (beide Richtungen ab Juni 2018)
-#: by: http://www.berliner-woche.de/johannisthal/bauen/letzter-brueckenschlag-ueber-dem-sterndamm-beim-bauvorhaben-bahnhof-schoeneweide-d157707.html
-#: by: https://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20180601 (Buslinie wird erst am 27.08.2018 verlängert)
-#: source_id: 2147341515	
-#: source_id: LMS-BR_r_LMS-BR_103259_LMS-BR_72
-#: last_checked: 2018-03-10
-#: next_check: 2018-06-16
-#: valid: -20180616
-#: priority: #A
-Sterndamm: Eisenbahnunterführung in Richtung Groß-Berliner Damm/Südostallee gesperrt	1::inwork 17886,5587 17736,5441
+# REMOVED (laut VMZ beendet) --- #: next_check_id: STERNDAMM-2016 --- #: XXX laut Fritz bis April 2018 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170829 (ebenso: bis April 2018) --- #: by: http://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20180201 (Bauarbeiten sind am 27.08.2018 beendet) --- #: by: http://www.berliner-woche.de/johannisthal/verkehr/lichtschimmer-am-horizont-beim-umbau-bahnhof-berlin-schoeneweide-d143446.html (beide Richtungen ab Juni 2018) --- #: by: http://www.berliner-woche.de/johannisthal/bauen/letzter-brueckenschlag-ueber-dem-sterndamm-beim-bauvorhaben-bahnhof-schoeneweide-d157707.html --- #: by: https://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20180601 (Buslinie wird erst am 27.08.2018 verlängert) --- #: source_id: 2147341515	 --- #: source_id: LMS-BR_r_LMS-BR_103259_LMS-BR_72 --- #: last_checked: 2018-03-10 --- #: next_check: 2018-06-16 --- #: valid: -20180616 --- #: priority: #A --- Sterndamm: Eisenbahnunterführung in Richtung Groß-Berliner Damm/Südostallee gesperrt	1::inwork 17886,5587 17736,5441
 # 
 #: next_check_id: GRENZALLEE-2014
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/de/bau.shtml

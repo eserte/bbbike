@@ -986,7 +986,7 @@ Schierker Str.: Kopfsteinpflaster	Q2 12259,7164 12421,7197 12613,7236 12722,7261
 Schierker Str.: Kopfsteinpflaster	Q2+ 13003,7316 13034,7319
 Hˆnower Weg: Asphalt	Q0 16900,9861 16925,9852 16984,9857 17383,9719
 Splanemannstr.: Asphalt	Q0 18408,10041 18389,9925
-Wuhlewanderweg: guter Beton	Q0 21349,9062 21334,9015 21280,8954 21252,8928 21210,8883 21192,8839 21183,8731 21173,8576 21193,8468 21276,8374 21337,8273 21351,8259 21568,8052 21593,7934 21599,7904
+Wuhlewanderweg: guter Beton	Q0 21349,9062 21334,9015 21280,8954 21252,8928 21210,8883 21192,8839 21183,8731 21173,8576 21193,8468 21276,8374 21337,8273 21351,8259 21534,8107 21568,8052 21593,7934 21599,7904
 Wuhlewanderweg: Parkweg	Q1 21599,7904 21587,7865 21542,7752 21538,7684
 Wuhlewanderweg: guter Asphalt	Q0 21629,7921 21616,7863 21570,7751 21597,7711 21620,7647 21613,7521 21567,7284 21574,7244 21590,7211 21888,6944 21976,6848 22056,6613
 Wuhlewanderweg: guter Asphalt	Q0 22030,6600 22097,6414 22146,6338 22214,6271 22236,6233 22237,6211 22238,6195
@@ -1178,8 +1178,10 @@ Parchwitzer Str.: Beton	Q0 23022,-1047 23378,-903 23499,-856
 Wulkower Str.: holpriger Fahrweg	Q2 21009,10135 21015,10284
 Wulkower Str.: Asphalt	Q0 21015,10284 21017,10423 21021,10583 21025,10815 21032,11033
 Dornacher Str.: Asphalt	Q0 20947,10137 20947,9999 20948,9847
-Buchenhainer Str.: holpriger Fahrweg	Q2 21164,8243 21329,8222
-Nitzwalder Str.: holpriger Fahrweg	Q2 21329,8222 21458,8091 21529,8019 21593,7934
+Buchenhainer Str.: Asphalt	Q0 21164,8243 21325,8217
+Nitzwalder Str.: Asphalt	Q0 21325,8217 21461,8094 21535,8026
+Nitzwalder Str.: Asphalt	Q0 21519,8006 21578,7947
+Nitzwalder Str.: unbefestigter Weg	Q2 21578,7947 21593,7934
 Kaulsdorfer Str.: Asphalt	Q0 22049,7085 22075,6967 22186,6672 22192,6659 22305,6404 22325,6385
 Marksburgstr.: Asphalt	Q0 19048,9146 18961,9109 18900,9119 18809,9133 18697,9153 18586,9172 18511,9185 18430,9199 18319,9218
 Marksburgstr.: Asphalt mit einigen Sch‰den	Q1+ 19048,9146 19131,9187 19195,9249
@@ -2664,8 +2666,8 @@ Andernacher Str.: Asphalt	Q0 19245,8669 19155,8631
 Andernacher Str.: m‰ﬂiger Asphalt	Q1- 19155,8631 19075,8590 19054,8571 19000,8509 18949,8437
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.523136.php
 #: XXX evtl. nach den Bauarbeiten besserer Asphalt
-#: last_checked: 2018-03-18
-#: check_frequency: 90d
+#: last_checked: 2018-06-16
+#: check_frequency: 120d
 Rheinsteinpark: Asphalt, etwas uneben	Q1+ 19073,8828 19145,8659
 Rolandseck: Asphalt	Q0 18834,9256 18903,9244 18977,9322
 Rolandseck: Asphalt mit Sch‰den	Q1 18977,9322 19020,9364
@@ -3241,7 +3243,7 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: XXX wird die Straﬂe hier ausgebaut und asphaltiert?
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7124
 #: osm_watch: way id="47159365" version="12"
-#: last_checked: 2018-03-25
+#: last_checked: 2018-06-16
 #: check_frequency: 180d
 Wiesengrundstr. (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
 Wiesengrundstr. (Karlshorst): Asphalt	Q0 19898,8410 19964,8447 20046,8448
@@ -4083,6 +4085,7 @@ An den B‰nken: Asphalt	Q0 29529,3880 29753,3679 29820,3589 29836,3443 29840,3378
 K¸sterwiesen: Asphalt	Q0 29840,3378 29807,3345
 Hechtstr.: Asphalt	Q0 29743,3546 29820,3589 29917,3697 29960,3845 30015,4047
 Br¸ckenstr. (Rahnsdorf): Asphalt	Q0 29609,4049 29568,4098 29524,4208
+(F¸rstenwalder Damm - Br¸ckenstraﬂenbr¸cke): unbefestigter Weg, sandige Stellen	Q3+ 29653,4490 29635,4455 29630,4419 29613,4371
 (entlang des Flieﬂes): unbefestigter Weg	Q2 29714,4461 29695,4434 29656,4431 29613,4371 29616,4311 29571,4256 29515,4227 29446,4193 29354,4062 29232,3991
 (entlang des Tr‰nkegrabens): Asphalt	Q0 16900,9861 17005,9953 17041,9985 17078,10038
 (entlang des Tr‰nkegrabens): Beton	Q0- 17078,10038 17138,10109 17154,10158 17157,10173 17143,10186 17144,10297 17160,10376
@@ -4669,8 +4672,8 @@ Wateweg: Gras	Q3 21131,8739 21124,8792
 Erwinstr.: Beton	Q0 21047,8120 21169,8112
 Anselmstr.: Asphalt	Q0 21044,7996 21142,7995 21233,8022
 Breitenfelder Str.: unbefestigte Straﬂe	Q2 21243,8010 21319,8078
-Brachliner Str.: Beton	Q0 21312,7943 21458,8091
-Bl¸tenauer Str.: unbefestigte Straﬂe	Q2 21383,7872 21529,8019
+Brachliner Str.: Beton	Q0 21312,7943 21461,8094
+Bl¸tenauer Str.: Asphalt	Q0 21383,7872 21519,8006 21535,8026
 (Melli-Beese-Str. - Landschaftspark Johannisthal): Gehwegplatten	Q1 17880,3963 17883,3976
 Hanuschkestr.: Asphalt	Q0 17827,3549 17892,3550
 Hanuschkestr.: Asphalt	Q0 17892,3537 17974,3536
@@ -5051,7 +5054,7 @@ Geraldweg: unbefestigter Weg	Q2+ 20555,8694 20553,8641
 Alberichstr.: Asphalt mit Sch‰den	Q1+ 20967,8720 21010,8379
 (Hadubrandstr. - Wuhlewanderweg): Kopfsteinpflaster	Q2+ 21257,8364 21276,8374
 (An der Wuhle, ˆstliches Ufer): wassergebundene Decke	Q1 21316,8487 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
-Straﬂe 19 (Kaulsdorf): Asphalt	Q0 21444,8412 21396,8326 21371,8289
+Straﬂe 19 (Kaulsdorf): Asphalt	Q0 21444,8412 21419,8367 21396,8326 21371,8289
 Damerauer Allee: Asphalt	Q0 21663,8246 21444,8412 21415,8435 21316,8487
 Bischofstaler Str.: unbefestigter Weg	Q2 21468,7727 21542,7752
 Bischofstaler Str.: Beton	Q0 21759,7856 21614,7773 21570,7751
@@ -7654,8 +7657,8 @@ Fischerinsel [Wohngebiet]: Beton mit einigen Sch‰den	Q1+ 10604,11941 10474,11843
 (Fischerinsel - Gr¸nstraﬂenbr¸cke): Gehwegplatten	Q0 10474,11843 10515,11785
 Neue Blumenstr.: Beton mit einigen Schden	Q1+ 11607,12412 11709,12601
 Neue Blumenstr.: Asphalt	Q0 11709,12601 12006,12464
-(Rampe Wriezener Park): Beton	Q0 13427,11431 13421,11423 13459,11388
-(Wriezener Park): Asphalt	Q0 13513,11351 13459,11388 13417,11416 13407,11416 13323,11497
+(Rampe Wriezener Park): Beton	Q0 13427,11431 13416,11425 13442,11400
+(Wriezener Park): Asphalt	Q0 13513,11351 13442,11400 13417,11416 13407,11416 13323,11497
 (Wriezener Park): Beton	Q0- 13323,11497 13308,11515 13261,11572
 (Wriezener Park): Beton	Q1 13261,11572 13239,11567
 (Wriezener Park, Eingang Pillauer Str.): Beton	Q1 13261,11572 13274,11585
@@ -8508,7 +8511,8 @@ Zu den Gosener Bergen: Asphalt	Q0 30728,-2326 30640,-2803
 (Gosener Damm - Seddinsee): Waldweg, teilweise mit Gras ¸berwachsen, Wurzeln	Q3 29120,271 29481,44 29979,-120 30421,-424
 (Waldweg zur Sandgrube): Asphalt mit einigen Wurzelsch‰den	Q1 29120,271 29208,71
 (Waldweg zur Sandgrube): Asphalt	Q0 29208,71 29503,-611 29321,-685 29260,-774 28925,-1143 28886,-1163 28851,-1075
-(Straﬂe zur Krampenburg - Uferweg am Langen See): guter Waldweg, feiner Schotter	Q1 27202,173 26681,-47
+#: note: Qualit‰t hat sich verschlechtert (2018-06), fr¸her feiner Schotter
+(Straﬂe zur Krampenburg - Uferweg am Langen See): Waldweg, sandige Stellen	Q2 27202,173 26681,-47
 (Straﬂe zur Krampenburg - Uferweg am Langen See): Waldweg, zweispurig	Q2- 26681,-47 26488,-131
 Kuglerstr.: Asphalt	Q0- 11750,16116 11680,16151 11618,16183
 Kuglerstr.: Asphalt mit leichten Sch‰den	Q1+ 12030,15968 11961,16002 11899,16037
@@ -9220,7 +9224,7 @@ Am Filmlager: Kopfsteinpflaster	Q2 22802,5327 22803,5278 22803,5241 22804,5199
 #: last_checked: 2018-03-25
 #: check_frequency: 180d
 Werlseestr. - Am Goldmannpark: unbefestigte Straﬂe	Q2 26199,5643 26239,5659 26274,5694 26282,5830
-(Am Goldmannpark - F¸rstenwalder Damm): Asphalt	Q0 26282,5830 26302,5932
+(Am Goldmannpark - F¸rstenwalder Damm): Asphalt	Q0 26282,5830 26294,5923 26424,5924
 # REMOVED (realisiert) --- #: XXX Ausbau der Straﬂe, evtl. danach nicht mehr unbefestigt? --- #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/tiefbauamt/__bersicht_stra__enbaustellen_neubau_14_06_17.xls?download.html --- #: next_check: 2014-10-31
 Am M¸hlenflieﬂ: Verbundsteinpflaster	Q1+ 29982,4525 29891,4605
 Saarower Weg: sandig	Q3+ 31210,3873 31321,3890
@@ -10689,6 +10693,11 @@ Furkastr.: Beton	Q0 10329,2882 10422,3091 10439,3129 10504,3198
 Dieselstr.: Asphalt	Q0 14326,8062 14366,8058 14384,8056 14425,8052 14484,8044
 Mˆckernkiez: Beton	Q0 8778,9759 8757,9748 8735,9737
 Mˆckernkiez: Steinplatten	Q0- 8735,9737 8710,9725 8729,9670 8596,9595 8565,9657
+#: next_check_id: AMWUHLESEE-2018
+#: XXX wie wird die Qualit‰t der fertigen Straﬂe sein?
+#: last_checked: 2018-06-16
+#: check_frequency: 90d
+Am Wuhlesee: unbefestigte Baustraﬂe	Q2 21351,8402 21419,8367
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -23212,7 +23221,7 @@ Neuhausweg: Beton	Q0 -4053,14428 -3964,14507
 # 
 #: by: schuftnuss: vvv
 #: corrected_by: srt (unbefestigter Weg -> Asphalt, neu gemacht)
-(Buchenhainer Str./Nitzwalder Str. - Wuhlewanderweg): Asphalt	Q0 21329,8222 21351,8259
+(Buchenhainer Str./Nitzwalder Str. - Wuhlewanderweg): Asphalt	Q0 21325,8217 21351,8259
 Guntramstr.: Sandstraﬂe	Q2 20977,8191 21050,8202
 Guntramstr.: Asphalt	Q0 21050,8202 21166,8195
 #: by: ^^^

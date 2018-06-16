@@ -11,6 +11,8 @@ Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstei
 M¸ncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
 Rigaer Str.: Baustelle, Fuﬂg‰nger	q3::inwork 14538,12371 14748,12314
 Auerstr.: zwischen Richard-Sorge-Str. und Lˆwestr. Baustelle, Einbahnstraﬂenregelung	q2::inwork; 13273,12902 13202,12790
+Wagner-RÈgeny-Str - Igo-Etrich-Str.: Bauarbeiten, mehrere Bordsteine, auf Gehweg ausweichen	q2::inwork; 19363,3730 19162,3935 18930,3703
+Igo-Etrich-Str. - Wagner-RÈgeny-Str: Bauarbeiten, auf Gehweg ausweichen	q1::inwork; 18930,3703 19162,3935 19363,3730
 Friedrich-Krause-Ufer: Engstelle wegen Bauarbeiten, voraussichtlich bis Mitte November 2018	q2::inwork 7368,14573 7314,14599 7167,14666
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
 M‰rkisches Ufer: Bauarbeiten, Engstelle	q3::inwork 10687,11853 10869,11949
@@ -45,7 +47,6 @@ Karl-Marx-Str.: Bauarbeiten zwischen Rollbergstr. und Briesestr., Richtung S¸den
 Gotlindestr.: Sperrung der Fahrbahn an der Ruschestr.	q4::inwork 15947,12626 16000,12625
 Helmstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q2::inwork 7444,9148 7382,9187
 Vorbergstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q3::inwork 7363,9152 7308,9163
-Groﬂgˆrschenstr.: Bauarbeiten an der Einm¸ndung Potsdamer Str.	q3::inwork 7609,9463 7507,9458
 Moltkestraﬂenbr¸cke: Einbahnstraﬂe, Richtung S¸den muss der linke Gehweg benutzt werden	q4::inwork; 3867,4537 3905,4482
 Wiltbergstr.: Bauarbeiten, Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3::inwork; 16669,25373 16583,25440 16475,25526 16414,25575 16294,25683 16220,25716
 Alt-Buch: Bauarbeiten, Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3::inwork; 16414,25575 16593,25640
@@ -499,7 +500,7 @@ Wuhlewanderweg: Fuﬂg‰nger	q1 22242,11269 22244,11311 22073,11581 22009,11636 218
 Wuhlewanderweg: Fuﬂg‰nger	q1 22244,11311 22268,11285
 Wuhlewanderweg: enge Unterf¸hrung	q3 22268,11285 22279,11272 22270,11210
 Wuhlewanderweg: Fuﬂg‰nger	q1 22270,11210 22236,11208
-Wuhlewanderweg: Fuﬂg‰nger	q1 22238,6195 22237,6211 22236,6233 22214,6271 22146,6338 22097,6414 22030,6600 22056,6613 21976,6848 21888,6944 21590,7211 21574,7244 21567,7284 21613,7521 21620,7647 21597,7711 21570,7751 21616,7863 21629,7921 21599,7904 21593,7934 21568,8052 21351,8259 21337,8273 21276,8374 21193,8468 21173,8576 21183,8731 21192,8839 21210,8883 21252,8928 21280,8954 21334,9015 21349,9062
+Wuhlewanderweg: Fuﬂg‰nger	q1 22238,6195 22237,6211 22236,6233 22214,6271 22146,6338 22097,6414 22030,6600 22056,6613 21976,6848 21888,6944 21590,7211 21574,7244 21567,7284 21613,7521 21620,7647 21597,7711 21570,7751 21616,7863 21629,7921 21599,7904 21593,7934 21568,8052 21534,8107 21351,8259 21337,8273 21276,8374 21193,8468 21173,8576 21183,8731 21192,8839 21210,8883 21252,8928 21280,8954 21334,9015 21349,9062
 Wuhlewanderweg: Fuﬂg‰nger	q1 21383,9045 21467,9236 21524,9488 21587,9609 21633,9731 21678,9817 21686,9876
 Wuhlewanderweg: Fuﬂg‰nger	q1 21611,9893 21619,9993 21566,10230 21585,10289 21584,10329 21586,10344 21608,10403 21646,10510 21657,10519 21791,10623 21827,10684 21869,10750 21950,10776 22059,10782 22110,10796
 Wuhlewanderweg: Fuﬂg‰nger	q1 22059,10782 22103,10814 22166,10839
@@ -1048,9 +1049,8 @@ Zur Kreutzigerstr.: enger Hausdurchgang	q3 14291,12220 14285,12190
 (Fischerstr. - L¸ckstr.): Fuﬂg‰nger, teilweise recht eng	q2 16404,10286 16488,10381 16516,10448 16501,10460 16572,10613 16587,10613
 M‰rkischer Platz: Fuﬂg‰nger	q2 11034,12038 11084,12070 11111,12027
 (Fischerinsel - Gr¸nstraﬂenbr¸cke): Fuﬂg‰nger, niedriger Bordstein	q2 10474,11843 10515,11785
-(Rampe Wriezener Park): Fuﬂg‰nger, Bordstein	q3 13427,11431 13421,11423
-(Rampe Wriezener Park): Fuﬂg‰nger, enge Rampe, kein Gel‰nder	q3 13421,11423 13459,11388
-(Wriezener Park): Fuﬂg‰nger	q2 13513,11351 13459,11388 13417,11416 13407,11416 13323,11497 13308,11515 13261,11572 13239,11567 13175,11649
+(Rampe Wriezener Park): Fuﬂg‰nger, enge Rampe	q3 13416,11425 13442,11400
+(Wriezener Park): Fuﬂg‰nger	q2 13513,11351 13442,11400 13417,11416 13407,11416 13323,11497 13308,11515 13261,11572 13239,11567 13175,11649
 (Wriezener Park): Fuﬂg‰nger	q2 13324,11529 13308,11515
 Wriezener Park: Fuﬂg‰nger, Bordstein	q3 13261,11572 13274,11585
 (Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): einige Fuﬂg‰nger	q1 12986,11699 13002,11705 13042,11749 13092,11712 13175,11649 13208,11658
