@@ -121,29 +121,29 @@ var defaultZoom = 13;
 
 var devel_tile_letter = 'a'; // or 'z' or 'y'
 
-var base_map_url_mapping = { 'stable':'http://{s}.tile.bbbike.org/osm/bbbike'
-                             ,'devel1':'http://' + devel_tile_letter + '.tile.bbbike.org/osm/bbbike'
-                             ,'devel2':'http://' + devel_tile_letter + '.tile.bbbike.org/osm/mapnik-german'
-                             ,'mapnik-osm':'http://{s}.tile.bbbike.org/osm/mapnik'
-                             ,'mapnik-german':'http://{s}.tile.bbbike.org/osm/mapnik-german'
+var base_map_url_mapping = { 'stable':'https://{s}.tile.bbbike.org/osm/bbbike'
+                             ,'devel1':'https://' + devel_tile_letter + '.tile.bbbike.org/osm/bbbike'
+                             ,'devel2':'https://' + devel_tile_letter + '.tile.bbbike.org/osm/mapnik-german'
+                             ,'mapnik-osm':'https://{s}.tile.bbbike.org/osm/mapnik'
+                             ,'mapnik-german':'https://{s}.tile.bbbike.org/osm/mapnik-german'
                            };
-var smoothness_map_url_mapping = { 'stable':'http://{s}.tile.bbbike.org/osm/bbbike-smoothness'
-                                   ,'devel1':'http://' + devel_tile_letter + '.tile.bbbike.org/osm/bbbike-smoothness'
+var smoothness_map_url_mapping = { 'stable':'https://{s}.tile.bbbike.org/osm/bbbike-smoothness'
+                                   ,'devel1':'https://' + devel_tile_letter + '.tile.bbbike.org/osm/bbbike-smoothness'
                                  };
-var handicap_map_url_mapping = { 'stable':'http://{s}.tile.bbbike.org/osm/bbbike-handicap'
-                                 ,'devel1':'http://' + devel_tile_letter + '.tile.bbbike.org/osm/bbbike-handicap'
+var handicap_map_url_mapping = { 'stable':'https://{s}.tile.bbbike.org/osm/bbbike-handicap'
+                                 ,'devel1':'https://' + devel_tile_letter + '.tile.bbbike.org/osm/bbbike-handicap'
                                };
-var cycleway_map_url_mapping = { 'stable':'http://{s}.tile.bbbike.org/osm/bbbike-cycleway'
-                                 ,'devel1':'http://' + devel_tile_letter + '.tile.bbbike.org/osm/bbbike-cycleway'
+var cycleway_map_url_mapping = { 'stable':'https://{s}.tile.bbbike.org/osm/bbbike-cycleway'
+                                 ,'devel1':'https://' + devel_tile_letter + '.tile.bbbike.org/osm/bbbike-cycleway'
                                };
-var unlit_map_url_mapping = { 'stable':'http://{s}.tile.bbbike.org/osm/bbbike-unlit'
-                              ,'devel1':'http://' + devel_tile_letter + '.tile.bbbike.org/osm/bbbike-unlit'
+var unlit_map_url_mapping = { 'stable':'https://{s}.tile.bbbike.org/osm/bbbike-unlit'
+                              ,'devel1':'https://' + devel_tile_letter + '.tile.bbbike.org/osm/bbbike-unlit'
                             };
-var green_map_url_mapping = { 'stable':'http://{s}.tile.bbbike.org/osm/bbbike-green'
-                              ,'devel1':'http://' + devel_tile_letter + '.tile.bbbike.org/osm/bbbike-green'
+var green_map_url_mapping = { 'stable':'https://{s}.tile.bbbike.org/osm/bbbike-green'
+                              ,'devel1':'https://' + devel_tile_letter + '.tile.bbbike.org/osm/bbbike-green'
                             };
-var unknown_map_url_mapping = { 'stable':'http://{s}.tile.bbbike.org/osm/bbbike-unknown'
-                                ,'devel1':'http://' + devel_tile_letter + '.tile.bbbike.org/osm/bbbike-unknown'
+var unknown_map_url_mapping = { 'stable':'https://{s}.tile.bbbike.org/osm/bbbike-unknown'
+                                ,'devel1':'https://' + devel_tile_letter + '.tile.bbbike.org/osm/bbbike-unknown'
                               };
 
 var mapset = q.get('mapset') || 'stable';
