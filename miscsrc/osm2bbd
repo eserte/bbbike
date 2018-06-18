@@ -353,7 +353,7 @@ my $do_amenity = sub {
 	push @or, ["sehenswuerdigkeit", $F."Shop"];
     } elsif ($amenity =~ m{^(?:arts_center|courthouse|library|police|post_office|public_building|townhall|university|embassy|prison)$}) {
 	push @or, ["sehenswuerdigkeit", $F."SW"];
-    } elsif ($amenity =~ m{^(?:biergarten|cafe|cafeteria|pub|bar)$}) {
+    } elsif ($amenity =~ m{^(?:biergarten|cafe|cafeteria|pub|bar|ice_cream)$}) {
 	push @or, ["kneipen", $F."X"];
     } elsif ($amenity =~ m{^(?:fast_food|restaurant)$}) {
 	push @or, ["restaurants", $F."X"];
@@ -431,7 +431,11 @@ my $do_addr = sub ($$$) {
 	if (!exists $addr{$name} || ($tagref->{entrance}||'') eq 'yes') { # prefer elements with entrance=yes
 	    $addr{$name} = {name => $name, $nodestype => $nodesval};
 	}
-	1; 
+	if (exists $tagref->{'amenity'}) {
+	    0;
+	} else {
+	    1;
+	}
     } else {
 	0;
     }
