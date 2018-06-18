@@ -27207,7 +27207,7 @@ EOF
        source_id => '2147342639',
        data  => <<EOF,
 #: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-06-05
+#: last_checked: 2018-06-18
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -27329,6 +27329,15 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2::inwork 16148,10329 15758,10578
+EOF
+     },
+     { from  => 1529348366, # 2018-06-18 20:59
+       until => $isodate2epoch->("2018-07-06 18:00:00"), # 1530482399, # 2018-07-01 23:59
+       text  => 'Florastr.: Bauarbeiten, Richtung Mühlenstr. zwischen Wollankstr. und Görschstr. gesperrt, bis 6. Juli 2018',
+       type  => 'handicap',
+       source_id => '2147342753',
+       data  => <<EOF,
+	q4::inwork; 9727,17804 9835,17797 10053,17777
 EOF
      },
     );

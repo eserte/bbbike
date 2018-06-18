@@ -6513,14 +6513,18 @@ Mühlenstr.: Asphalt	Q0 6914,3093 6842,2995
 #: XXX es wird ein 4m breiter Asphaltstreifen realisiert; außerdem wird es vermutlich einen neuen diagonalen Weg zur Gallwitzallee geben vvv
 #: XXX Baumaßnahme GL6.15 (Realisierung nach 2011) vvv
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/uebersicht-baubereich-muehlenstrasse-2.pdf
+#: by: https://www.berliner-woche.de/lankwitz/c-verkehr/neubau-des-fernradweges-berlin-leipzig-soll-durch-gruenflaeche-fuehren_a167909 (schon realisiert?)
+#: add_fragezeichen: wurde die Mühlenstr. bereits asphaltiert? vvv
+#: priority: #A
 #: osm_watch: way id="118635979" version="7" vvv
 #: last_checked: 2018-03-11 vvv
-#: check_frequency: 180d vvv
+#: next_check: 2018-06-18 vvv
 Mühlenstr.: schlechtes Kopfsteinpflaster	Q3+ 6842,2995 6763,2879 6745,2848
 Mühlenstr.: Kopfsteinpflaster	Q2+ 6745,2848 6665,2836
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: osm_watch ^^^
+#: add_fragezeichen ^^^
 #: XXX ^^^
 #: XXX ^^^
 Boraweg: Kleinsteinpflaster	Q2+ 6658,2907 6710,2909 6763,2879
@@ -10337,15 +10341,15 @@ Mergenthalerring: schlechtes Kopfsteinpflaster	Q3+ 14121,8147 14210,8227 14219,8
 #: XXX wie wird die Qualität nach der Fertigstellung sein? Beleuchtung?
 #: osm_watch: way id="344108079" version="3"
 #: last_checked: 2017-10-14 (mapillary)
-#: check_frequency: 60d
+#: next_check: 2018-07-01
+# REMOVED --- #: check_frequency: 60d
 (Marseillestr. - Straße 160): unbefestigte Baustraße	Q2- 12495,21397 12507,21391 12547,21372
 #: next_check_id: NIZZASTR-2014
 #: XXX wird hier vielleicht auch asphaltiert werden?
 #: XXX laut osm offen & Verbundsteinpflaster
 #: last_checked: 2018-04-28
-#: next_check: 2018-05-27
+#: next_check: 2018-07-01
 (Nizzastr. - Dr.-Markus-Str.): unbefestigt	Q2+ 12434,21160 12522,21208
-#: by: mapillary
 (Nizzastr. - Dr.-Markus-Str.): asphaltiert	Q0 12522,21208 12535,21282 12507,21391 12498,21450
 (Weinapfelweg - Pankeweg): Asphalt mit Unebenheiten	Q1- 13221,22667 13223,22558 13207,22498 13220,22387 13206,22290
 Treseburger Str. (Blankenburg) [20-24G]: Verbundsteinpflaster	Q1+ 14226,21419 14165,21226 14139,21140 14185,21126

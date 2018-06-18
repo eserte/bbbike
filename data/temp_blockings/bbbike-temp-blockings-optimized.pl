@@ -1683,30 +1683,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.howoge.de/unternehmen/aktuelles/veranstaltungen/details/koepenicker-sommer-2018.html
-	2::temp 22111,4562 22093,4499 22076,4422
-	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
-	2::temp 22138,4642 22074,4664
-	2::temp 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
-# REMOVED ---	2::temp 22111,4562 22162,4546 22214,4548 22324,4586 22314,4604 22355,4660 22365,4676 22395,4678
-',
-         'from' => 1528927200,
-         'id' => 1702,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              14,
-                              'months',
-                              6
-                            ]
-                          ],
-         'text' => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain; außerdem Sperrung im Kietz (Kietzer Sommer) (15.06.2018 - 17.06.2018)',
-         'type' => 'gesperrt',
-         'until' => 1529272799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4311,7 +4288,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-06-05
+#: last_checked: 2018-06-18
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -4429,6 +4406,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Zobtener Str.: gesperrt, 18.06.2018 6.00 Uhr bis 20.06.2018 19.00 Uhr',
          'type' => 'gesperrt',
          'until' => 1529514000
+       },
+       {
+         'data' => '	q4::inwork; 9727,17804 9835,17797 10053,17777
+',
+         'from' => 1529348366,
+         'id' => 2971,
+         'source_id' => '2147342753',
+         'text' => 'Florastr.: Bauarbeiten, Richtung Mühlenstr. zwischen Wollankstr. und Görschstr. gesperrt, bis 6. Juli 2018',
+         'type' => 'handicap',
+         'until' => 1530892800
        }
      
 );
