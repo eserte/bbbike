@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.92;
+$VERSION = 1.93;
 
 use your qw(%MultiMap::images $BBBikeLazy::mode
 	    %main::line_width %main::p_width %main::str_draw %main::p_draw
@@ -711,6 +711,9 @@ EOF
 		],
 		[Button => $do_compound->("BBBike.org (Berlin)"),
 		 -command => sub { current_search_in_bbbike_org_cgi() },
+		],
+		[Button => $do_compound->("openrouteservice"),
+		 -command => sub { current_search_in_openrouteservice_org() },
 		],
 	       ]
 	      ],
@@ -1748,6 +1751,59 @@ sub current_search_in_bbbike_org_cgi {
 	   ($via ? (viac_wgs84 => $via) : ()),
 	   zielc_wgs84 => $goal,
 	   pref_seen => 1, # gelogen
+	 ]);
+    main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
+    require WWWBrowser;
+    WWWBrowser::start_browser($url);
+}
+
+sub current_search_in_openrouteservice_org {
+    if (@main::search_route_points < 2) {
+	main::status_message("Not enough points", "die");
+    }
+
+    require Karte::Polar;
+    my $o = $Karte::Polar::obj;
+    my @coords;
+    for my $c (@main::search_route_points) {
+	my($lon,$lat) = $o->trim_accuracy($o->standard2map(split /,/, $c->[0]));
+	push @coords, "$lat,$lon";
+    }
+
+    my($n1, $n2, $n3);
+    {
+	my($lat0,$lon0) = split /,/, $coords[0];
+	my($lat1,$lon1) = split /,/, $coords[-1];
+	$n1 = ($lat1-$lat0)/2 + $lat0;
+	$n2 = ($lon1-$lon0)/2 + $lon0;
+	$n3 = 10; # XXX how to calculate zoom factor best?
+    }
+
+    # https://maps.openrouteservice.org/directions?
+    # n1=52.96666&n2=13.993752 - lat/lon of center
+    # n3=9 - zoom? (but does not matter...)
+    # a=52.509326,13.437996,52.565917,13.51902,... - coordinates for search
+    # b=1d - ?
+    # c=0 - ?
+    # g1=-1 - ?
+    # g2=0 - ? 
+    # h2=3
+    # k1=en-US
+    # k2=km
+    require BBBikeUtil;
+    my $url = BBBikeUtil::uri_with_query
+	("https://maps.openrouteservice.org/directions",
+	 [ n1 => $n1,
+	   n2 => $n2,
+	   n3 => $n3,
+	   a => join(",", @coords),
+	   b => '1d',
+	   c => 0,
+	   g1 => '-1',
+	   g2 => 0,
+	   h2 => 3,
+	   k1 => 'en-US',
+	   k2 => 'km',
 	 ]);
     main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
     require WWWBrowser;
