@@ -27186,7 +27186,7 @@ EOF
 #: note: genaues Endedatum by fritz
 # REMOVED (ja) --- #: add_fragezeichen: Ist die Stubenrauchbrücke tatsächlich für Radfahrer gesperrt?
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/spreequerung-bleibt-bis-august-voll-gesperrt_a164513
-#: osm_watch: way id="4540244" version="17"
+#: osm_watch: way id="4540244" version="18"
 	q3::inwork; 17432,6352 17492,6462 17528,6502
 EOF
      },
@@ -27307,7 +27307,7 @@ EOF
 #: XXX wird danach komplett asphaltiert sein?
 #: source_id: 2147342618
 #: priority: #A
-#: last_checked: 2018-06-14
+#: last_checked: 2018-06-19
 #: next_check: 2018-07-13
 	q4::inwork 13767,12626 13786,12636 13863,12677 13911,12692
 EOF
@@ -27338,6 +27338,15 @@ EOF
        source_id => '2147342753',
        data  => <<EOF,
 	q4::inwork; 9727,17804 9835,17797 10053,17777
+EOF
+     },
+     { from  => 1529438047, # 2018-06-19 21:54
+       until => $isodate2epoch->("2018-06-29 18:00:00"), # 1530395999, # 2018-06-30 23:59
+       text  => 'Frank-Schweitzer-Str.: Bauarbeiten zwischen Landsberger Allee und Georg-Knorr-Platz, evtl. sind auch Radfahrer betroffen, bis Ende Juni 2018',
+       type  => 'gesperrt',
+       source_id => '2147342779',
+       data  => <<EOF,
+	2::inwork 19414,15132 19424,15068 19347,14936
 EOF
      },
     );

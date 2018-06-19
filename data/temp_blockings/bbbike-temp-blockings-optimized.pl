@@ -4276,7 +4276,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: note: genaues Endedatum by fritz
 # REMOVED (ja) --- #: add_fragezeichen: Ist die Stubenrauchbrücke tatsächlich für Radfahrer gesperrt?
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/spreequerung-bleibt-bis-august-voll-gesperrt_a164513
-#: osm_watch: way id="4540244" version="17"
+#: osm_watch: way id="4540244" version="18"
 	q3::inwork; 17432,6352 17492,6462 17528,6502
 ',
          'from' => undef,
@@ -4376,7 +4376,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX wird danach komplett asphaltiert sein?
 #: source_id: 2147342618
 #: priority: #A
-#: last_checked: 2018-06-14
+#: last_checked: 2018-06-19
 #: next_check: 2018-07-13
 	q4::inwork 13767,12626 13786,12636 13863,12677 13911,12692
 ',
@@ -4416,6 +4416,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Florastr.: Bauarbeiten, Richtung Mühlenstr. zwischen Wollankstr. und Görschstr. gesperrt, bis 6. Juli 2018',
          'type' => 'handicap',
          'until' => 1530892800
+       },
+       {
+         'data' => '	2::inwork 19414,15132 19424,15068 19347,14936
+',
+         'from' => 1529438047,
+         'id' => 2972,
+         'source_id' => '2147342779',
+         'text' => 'Frank-Schweitzer-Str.: Bauarbeiten zwischen Landsberger Allee und Georg-Knorr-Platz, evtl. sind auch Radfahrer betroffen, bis Ende Juni 2018',
+         'type' => 'gesperrt',
+         'until' => 1530288000
        }
      
 );

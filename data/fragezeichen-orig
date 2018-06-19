@@ -31,7 +31,7 @@ Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,107
 #: check_frequency: 30d
 Görlitzer Park: Verbesserungen geplant	?::inwork 12814,9966 12833,9998 12869,10071 12901,10134 12905,10143
 # 
-#: last_checked: 2018-06-14
+#: last_checked: 2018-06-19
 #: next_check: 2018-12-31
 NKZ: Verbesserungen geplant	?::projected 11291,10438 11317,10485 11344,10507 11334,10527
 # 
@@ -51,21 +51,21 @@ Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 
 #: source_id: 2147341435
 #: osm_watch: way id="41954398" version="13"
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (hier nur dieser Abschnitt (Prenzlauer Allee - Bötzowstr.) erwähnt)
-#: last_checked: 2018-06-08
+#: last_checked: 2018-06-19
 #: check_frequency: 60d
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12616,14315
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (Baubeginn 2018)
 #: source_id: 2147342299
-#: last_checked: 2018-06-14 (Markierungsarbeiten)
+#: last_checked: 2018-06-19 (Markierungsarbeiten)
 # REMOVED --- #: check_frequency: 60d
-#: check_frequency: 3d
+#: check_frequency: 4d
 Danziger Str.	?::projected 12616,14315 12722,14232 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615
 # REMOVED (realisiert)Danziger Str.	?::projected 13228,13615 13330,13468
 # 
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2018-06-18
+#: last_checked: 2018-06-19
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11161,11330 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -404,7 +404,7 @@ Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4555
 #: osm_watch: node id="29420748" version="5"
-#: last_checked: 2018-05-08
+#: last_checked: 2018-06-19
 #: check_frequency: 90d
 Berliner Allee/Tassostr.: Bau einer Ampel	?::projected 13591,15969 13623,15954 13653,15938
 #: by: ^^^
@@ -954,10 +954,10 @@ Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22351
 # 
 # REMOVED (realisiert) --- #: XXX routing_helper ggfs. anpassen --- #: last_checked: 2017-12-03 --- Frankfurter Allee: Zweirichtungsradweg	?::projected; 15717,12010 15670,12022
 # 
-#: osm_watch: way id="51872061" version="28"
+#: osm_watch: way id="51872061" version="29"
 #: last_checked: 2018-06-16
 Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected; 18037,9195 17549,9529
-#: osm_watch: way id="31525575" version="16"
+#: osm_watch: way id="31525575" version="17"
 #: last_checked: 2018-06-16
 Wallensteinstr.: Asphaltstreifen geplant	?::projected 17549,9529 17456,9594 17425,9605 17360,9629
 # 
@@ -1015,7 +1015,7 @@ Ernst-Reuter-Platz: Zweirichtungsradwege	?::projected 4838,11697 4885,11735 4905
 # 
 #: XXX außerdem wird für den Durchgangsverkehr (hoffentlich nur MIV) gesperrt
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
-#: osm_watch: way id="140648434" version="9"
+#: osm_watch: way id="140648434" version="12"
 #: last_checked: 2018-06-16
 #: check_frequency: 30d
 Hegemeisterweg: Asphaltierung	?::projected 17522,8220 17202,8391
@@ -1197,7 +1197,7 @@ Straße vor Schönholz: Bau von Radspuren	?::projected; 8791,18605 8891,18545
 #: by: ^^^
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf vvv
-#: last_checked: 2018-06-14
+#: last_checked: 2018-06-19
 #: check_frequency: 90d
 Kniprodestr.: werden die Busspuren zu Radspuren umgewandelt?	?::projected 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: ^^^
@@ -1296,7 +1296,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: source_id: 2147340618
 #: source_id: LMS-BR_r_LMS-BR_81616
 #: source_id: 2147342542
-#: last_checked: 2018-06-18
+#: last_checked: 2018-06-19
 #: next_check: 2018-06-30 (laut fritz)
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 # 
@@ -1416,10 +1416,10 @@ Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11542,16070 11548,16
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php (Vollsperrung im 1. Bauabschnitt, "Die geplante Bauzeit beträgt 3 Jahre.")
 #: XXX qualitaet: -> Q0 vermutlich
 #: priority: #B
-#: last_checked: 2018-04-28
-#: next_check: 2018-06-18
+#: last_checked: 2018-06-19 (noch keine Sperrung)
+#: check_frequency: 2d
 Schönstr.: Neubau geplant, Vollsperrung während der Bauarbeiten	?::projected 13391,16436 13630,16629
-#: last_checked: 2018-04-28
+#: last_checked: 2018-06-19
 #: check_frequency: 120d
 Schönstr.: Neubau geplant	?::projected 13630,16629 13794,16773 13870,16837 13974,16924 13996,16959 14136,17170
 # 
@@ -2276,6 +2276,8 @@ Onkel-Tom-Str.: Sanierung, evtl. auch Änderungen/Verbesserungen bei den Radwegen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+U-Bhf. Mendelssohn-Bartholdy-Park: existiert hier wieder ein Durchgang?	? 8476,10884 8399,10923
+# 
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=46011
 #: XXX temp_blocking-Eintrag existiert, trotzdem nochmal prüfen
 Florastr./Görschstr.: gibt es hier Bauarbeiten/Sperrungen, die auch für Radfahrer relevant sind?	? 9727,17804 9835,17797 10053,17777 9870,17971
@@ -2950,7 +2952,7 @@ Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563
 #: next_check: 2018-10-01
 #: priority: #D
 Reichenberger Str.: wird hier ein Zebrastreifen markiert?	? 12385,9966 12398,9938 12366,9929
-#: last_checked: 2018-06-13
+#: last_checked: 2018-06-19
 #: next_check: 2018-10-01
 #: priority: #D
 Am Ostbahnhof/Koppenstr.: wird hier ein Zebrastreifen markiert?	? 12299,11717 12310,11682 12349,11687
@@ -3213,6 +3215,7 @@ Fürstenwalder Damm: wird hier eine Fußgängerampel errichtet?	? 29045,4806 29089,
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6533
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_01_0001_0152_online.pdf (Widmung Straßenland am Wendehammer Insterburgallee)
+#: XXX vermutlich unbeleuchtet
 Friedhof Heerstr.: Wege existieren, vermutlich für Radfahrer frei, Qualität? Nachts beleuchtet? Genaue Lage?	? -48,11516 -6,11501 12,11648 40,11672 169,11644 159,11612 173,11643 237,11630 157,11953 107,11996 137,12056
 # 
 #: by: https://www.potsdam.de/sites/default/files/documents/17554_amtsblatt_de2017_nr13_dsjs_korr2.pdf
@@ -3220,9 +3223,11 @@ Friedhof Heerstr.: Wege existieren, vermutlich für Radfahrer frei, Qualität? Nac
 Ortsdurchfahrt Potsdam: Ortsschild wird versetzt	? -13113,5653 -13143,5587 -13088,5505
 # 
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_05_0625_0772_online.pdf
+#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.713561.php
 #: XXX evtl. wird es einen neuen Weg südöstlich geben
 #: last_checked: 2018-05-04
-#: check_frequency: 60d
+# REMOVED --- #: check_frequency: 60d
+#: next_check: 2018-06-25
 Cotheniusstr.: Parkplatzfläche wird eingezogen	?::projected 13430,13733 13519,13785
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.676868.php
@@ -3846,7 +3851,7 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2018-06-14
+#: last_checked: 2018-06-19
 #: check_frequency: 360d
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 
