@@ -453,6 +453,7 @@ sub build_prereq {
 							Image::Magick # needs exact matching imagemagick library version
 						    |   Geo::GDAL     # dito
 						    )$}x;
+		next if $_->[REQTABLE_MODNAME] eq 'Geo::Proj4' && !-f "/usr/include/proj_api.h"; # may be missing, currently on travis/precise instances
 	    }
 	    if (($ENV{TRAVIS}||'') eq 'true' && $ENV{USE_MODPERL}) {
 		# Don't install exclusive Plack dependencies for a modperl testing environment
