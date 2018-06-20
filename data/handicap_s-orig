@@ -31,18 +31,18 @@ Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,1
 #: check_frequency: 90d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
-#: last_checked: 2018-06-19
+#: last_checked: 2018-06-20
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 # REMOVED (beendet) --- #: XXX_prog BS (östliche Seite) --- #: last_checked: 2018-06-12 vvv --- #: check_frequency: 7d vvv --- Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstein	q2::inwork 11845,12292 11635,12398 --- Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstein	q4::inwork 11635,12398 11607,12412 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: XXX_prog BS (auf der östlichen Seite, ansonsten q3+)
-#: last_checked: 2018-06-19
+#: last_checked: 2018-06-20
 #: check_frequency: 90d
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
 # 
 #: next_check_id: RIGAER-2018
-#: last_checked: 2018-02-21
+#: last_checked: 2018-06-20
 #: next_check: 2019-02-28
 #: valid: -20190228
 #: priority: #A
@@ -91,6 +91,11 @@ Auerstr.: zwischen Richard-Sorge-Str. und Löwestr. Baustelle, Einbahnstraßenrege
 # REMOVED --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.513299.php --- #: XXX laut fritz bis 10.03.2017, laut vmz bis Mitte März 2017 --- #: source_id: 2147340484 --- #: last_checked: 2016-09-14 --- #: next_check: 2017-03-10 --- #: priority: #A --- #: valid: -20170310 --- Mariendorfer Damm: Fahrbahn zwischen Prinzenstr. und Richterstr. gesperrt	q4::inwork; 9333,4229 9346,4144 9372,4012
 # 
 ### Treptow ###
+# 
+#: next_check_id: VERLWERDERSTR-2018
+#: XXX gibt es hier tatsächlich Einschränkungen?
+#: valid: 20180702-20190530
+Verlängerte Werderstr.: Bauarbeiten	q4::inwork 20245,2152 20261,2114 20222,2037 20214,1988 20187,1930 20166,1864 20120,1791 20093,1776 20064,1777
 # 
 # REMOVED --- #: next_check_id: HEIDELBERGER-2017 --- #: last_checked: 2018-02-20 --- #: check_frequency: 30d --- Heidelberger Str.: Baustelle, Fahrbahn an der Wildenbruchstr. gesperrt	q3::inwork 13491,9201 13421,9260
 # REMOVED (mittlerweile wieder offen) --- #: by: http://www.dafmap.de/d/berlin.html?id=4505&mt=0&zoom=17 --- #: last_checked: 2017-03-20 --- #: check_frequency: 14d --- Kiefholzstr.: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 13821,9340 13715,9455
@@ -291,13 +296,13 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
 #: source_id: LMS-BR_r_LMS-BR_197
 #: osm_watch: way id="194962375" version="8"
-#: last_checked: 2018-06-18
+#: last_checked: 2018-06-20 (webcam)
 #: check_frequency: 2d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q4::inwork 10601,12521 10704,12595
 # 
 #: by: http://www.berliner-woche.de/mitte/bauen/rathausstrasse-wird-gesperrt-d140537.html vvv
 #: by: http://www.projekt-u5.de/de/rotes-rathaus/
-#: last_checked: 2018-06-18 vvv
+#: last_checked: 2018-06-20 (webcam) vvv
 #: check_frequency: 2d vvv
 #: XXX_prog: hier eigentlich nicht, wird nur zur "künstlichen Verlängerung" der Wegstrecke benutzt --- kann aufgehoben werden, sobald handicap_directed überall funktioniert
 Rathausstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 10476,12432 10584,12507

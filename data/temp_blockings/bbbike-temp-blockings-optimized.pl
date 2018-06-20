@@ -4376,7 +4376,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX wird danach komplett asphaltiert sein?
 #: source_id: 2147342618
 #: priority: #A
-#: last_checked: 2018-06-19
+#: last_checked: 2018-06-20
 #: next_check: 2018-07-13
 	q4::inwork 13767,12626 13786,12636 13863,12677 13911,12692
 ',
@@ -4398,15 +4398,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1536940800
        },
-       {
-         'data' => '	2::inwork 16148,10329 15758,10578
-',
-         'from' => 1529208000,
-         'id' => 2970,
-         'text' => 'Zobtener Str.: gesperrt, 18.06.2018 6.00 Uhr bis 20.06.2018 19.00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1529514000
-       },
+       undef,
        {
          'data' => '	q4::inwork; 9727,17804 9835,17797 10053,17777
 ',
@@ -4426,6 +4418,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Frank-Schweitzer-Str.: Bauarbeiten zwischen Landsberger Allee und Georg-Knorr-Platz, evtl. sind auch Radfahrer betroffen, bis Ende Juni 2018',
          'type' => 'gesperrt',
          'until' => 1530288000
+       },
+       {
+         'data' => '#: next_check_id: VERLWERDERSTR-2018
+#: add_fragezeichen: können Radfahrer vielleicht doch passieren?
+	2::inwork 20245,2152 20261,2114 20222,2037 20214,1988 20187,1930 20166,1864 20120,1791 20093,1776 20064,1777
+',
+         'from' => 1530396000,
+         'id' => 2973,
+         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.713900.php',
+         'text' => 'Verlängerte Werderstr.: Bauarbeiten, unter Umständen ist die Durchfahrt nicht möglich, vom 2. Juli 2018 bis Ende Mai 2019',
+         'type' => 'gesperrt',
+         'until' => 1559339999
        }
      
 );
