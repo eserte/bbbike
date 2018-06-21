@@ -4105,7 +4105,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berliner-woche.de/rudow/c-bauen/ostburger-weg-erst-im-herbst-fertig_a168854
+	2::inwork 18023,833 17928,764 17734,675
+',
+         'from' => 1517602202,
+         'id' => 2931,
+         'source_id' => 'https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20180202',
+         'text' => 'Ostburger Weg: Bauarbeiten zwischen Will-Meisel-Weg und Am Espenpfuhl, Fahrbahn gesperrt, bis Mitte September 2018 ',
+         'type' => 'gesperrt',
+         'until' => 1537200000
+       },
        {
          'data' => '#: source_id: LMS-BR_r_LMS-BR_108511_LMS-BR_72
 #: by: http://www.berliner-woche.de/zehlendorf/bauen/fertigstellung-der-berlepschstrasse-verzoegert-sich-um-ein-halbes-jahr-d137942.html (sogar "bis Ende März")
@@ -4176,9 +4186,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1522789491,
          'id' => 2946,
          'source_id' => '2147341699',
-         'text' => 'Oranienburger Str.: Bauarbeiten zwischen Wittenauer Str. und Cyclopstr. Richtung Süden; außerdem Einbahnstraßenregelung in der Cyclopstr., offen Richtung Süden; bis Ende Juni 2018',
+         'text' => 'Oranienburger Str.: Bauarbeiten zwischen Wittenauer Str. und Cyclopstr. Richtung Süden; außerdem Einbahnstraßenregelung in der Cyclopstr., offen Richtung Süden; bis Mitte Juli 2018',
          'type' => 'handicap',
-         'until' => 1530374400
+         'until' => 1531670400
        },
        {
          'data' => '#: source_id: 2147342390

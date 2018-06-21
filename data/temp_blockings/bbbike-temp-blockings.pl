@@ -26850,11 +26850,12 @@ EOF
 EOF
      },
      { from  => 1517602202, # 2018-02-02 21:10
-       until => 1525125599, # 2018-04-30 23:59
-       text  => 'Ostburger Weg: Bauarbeiten zwischen Will-Meisel-Weg und Am Espenpfuhl, Fahrbahn gesperrt, bis Ende April 2018 ',
+       until => $isodate2epoch->("2018-09-17 18:00:00"), # 1525125599, # 2018-04-30 23:59
+       text  => 'Ostburger Weg: Bauarbeiten zwischen Will-Meisel-Weg und Am Espenpfuhl, Fahrbahn gesperrt, bis Mitte September 2018 ',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20180202',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/rudow/c-bauen/ostburger-weg-erst-im-herbst-fertig_a168854
 	2::inwork 18023,833 17928,764 17734,675
 EOF
      },
@@ -27014,8 +27015,8 @@ EOF
 EOF
      },
      { from  => 1522789491, # 2018-04-03 23:04
-       until => $isodate2epoch->("2018-06-30 18:00:00"), # 1527718780, # 1527803999, # 2018-05-31 23:59
-       text  => 'Oranienburger Str.: Bauarbeiten zwischen Wittenauer Str. und Cyclopstr. Richtung Süden; außerdem Einbahnstraßenregelung in der Cyclopstr., offen Richtung Süden; bis Ende Juni 2018',
+       until => $isodate2epoch->("2018-07-15 18:00:00"), # 1527718780, # 1527803999, # 2018-05-31 23:59
+       text  => 'Oranienburger Str.: Bauarbeiten zwischen Wittenauer Str. und Cyclopstr. Richtung Süden; außerdem Einbahnstraßenregelung in der Cyclopstr., offen Richtung Süden; bis Mitte Juli 2018',
        type  => 'handicap',
        source_id => '2147341699',
        data  => <<EOF,

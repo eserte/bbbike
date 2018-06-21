@@ -444,7 +444,7 @@ Bus 115, Bus 118	busroute_N -1281,2074 -1377,2077 -1463,2080 -1537,2152 -1596,23
 Bus 115	busroute_N 604,2494 421,2401 290,2328 169,2264 96,2225 23,2185 -38,2152 -134,2098 -226,2048 -285,2015 -343,1983 -468,1919 -541,1883 -649,1831 -726,1799 -775,1781 -837,1753 -908,1749 -971,1738 -1064,1696 -1134,1656 -1446,1487 -1544,1448
 Bus 101	busroute_N 85,1322 150,1251 155,1228 194,1055 214,969 230,899 247,822 254,792 284,470 286,452 264,227 255,152
 Bus 118	busroute_N 669,3119 630,2998 600,2922 758,2870
-Bus 118	busroute_N 971,3534 923,3585 891,3828 892,3907 861,3996 806,4130 754,4220 666,4339 519,4547 418,4696 374,4779 346,4833
+Bus 118	busroute_N 971,3534 923,3585 891,3828 892,3907 861,3996 806,4130 754,4220 696,4299 666,4339 519,4547 418,4696 374,4779 346,4833
 Bus 285	busroute_N 922,4910 928,4996 938,5088 966,5151 1004,5194 1090,5268 1114,5290 1139,5308 1212,5353
 Bus M19, Bus 186	busroute_N 1074,8470 1043,8550 972,8626 941,8680 930,8746 912,8895 936,8933 901,8969 884,8954 870,8939 912,8895
 Bus 349	busroute_N 676,9104 693,9129 890,9399 1019,9573 1117,9706 1238,9869 1344,10012 1457,10168
@@ -1206,6 +1206,7 @@ Grenzweg (Oberschöneweide): nicht ausgeschildert	CS 17295,7328 17475,7451 17566,
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_31_3489_3616_online.pdf ("Grundstücksnummerierungen")
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2017/81_2017_ds_163_benennungsvorschlaege_heidestrasse_europacity-kopie.pdf
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_11_1405_1518_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.berliner-woche.de/moabit/c-bauen/richtfest-fuer-ueber-300-wohnungen_a168569
 #: check_frequency: 45d
 Lydia-Rabinowitsch-Str.: nicht ausgeschildert	CS 7820,13994 7930,14060 7973,13991 7865,13924
 # 
@@ -1244,7 +1245,7 @@ Wadzeckstr. - Mollstr.: über das Gelände des Hampton-Hotels	CS 11315,13210 11399
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: XXX ist das tatsächlich die Falkoniergasse?
-#: last_checked: 2018-06-18
+#: last_checked: 2018-06-21
 Falkoniergasse: nicht ausgeschildert	CS 9939,12174 9909,12261
 # 
 #: by: Detlef Westphal

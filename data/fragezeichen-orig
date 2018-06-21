@@ -166,7 +166,7 @@ Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected; 9865,10227 994
 #: last_checked ^^^
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2018-06-08
+#: last_checked: 2018-06-21
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9701,11656
 # 
@@ -203,7 +203,7 @@ Quickborner Str.: werden hier Radspuren markiert?	?::projected 7991,21531 7966,2
 #: source_id: LMS-BR_r_LMS-BR_116482_LMS-BR_72
 #: source_id: LMS-BR_r_LMS-BR_120876_LMS-BR_72
 #: last_checked: 2018-04-28
-#: next_check: 2018-06-22
+#: next_check: 2018-09-30
 # REMOVED --- #: check_frequency: 360d
 Schönerlinder Str.: hier entstehen bessere Radwege	?::inwork 11929,23946 11959,24220 11980,24276 12108,24547 12136,24607 12254,24857 12395,25143 12461,25270 12543,25423 12624,25570
 #: last_checked: 2018-04-28
@@ -294,14 +294,15 @@ Stromstr., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,1
 #: next_check: 2019-11-01
 Pasewalker Str.: Radspuren geplant	?::projected 11907,19749 11909,19706 11911,19667 11915,19580 11927,19308 11937,19175
 # 
-#: XXX Fahrbahninstandsetzung mit anschließenden Umbau der Radwege
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.297917.php
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.341719.php
 #: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html (hier: weiter bis Groß-Glienicker Weg)
+#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2018/pressemitteilung.714531.php (zwischen Gatower Str. 300 und Dorfkirche, bis Dezember 2018, danach asphaltierter Radweg bis Groß-Glienicker Weg)
+#: by: https://www.berliner-woche.de/gatow/c-verkehr/gatower-strasse-wird-zur-einbahnstrasse_a169283
 #: osm_watch: way id="33116304" version="16"
 #: last_checked: 2017-07-15
-#: check_frequency: 90d
-Alt-Gatow: Radspuren bis 2015 geplant	?::projected; -4760,9343 -4758,9259 -4757,9140 -4755,9120 -4751,9033 -4694,8897 -4590,8666
+#: next_check: 2018-12-15
+Alt-Gatow: Radspuren und Radweg geplant	?::projected; -4760,9343 -4758,9259 -4757,9140 -4755,9120 -4751,9033 -4694,8897 -4590,8666
 # 
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20130529.1355.385410.html (Bauarbeiten in der Wilhelmstraße, existieren dann die Radspuren?)
 #: XXX vermutlich später als 2015, ggfs. bis August 2016
@@ -633,7 +634,7 @@ Grünauer Str./Am Falkenberg: Errichten von Radverkehrsanlagen	?::projected 19766
 #: check_frequency: 90d
 Am Treptower Park: Errichten einer Radverkehrsanlage	?::projected; 14185,9509 14089,9610
 #: XXX AT.3 (siehe auch Alternativführungen via Heidelberger Str. bzw. Plesser Str.)
-#: last_checked: 2018-06-04
+#: last_checked: 2018-06-21
 #: check_frequency: 90d
 Wildenbruchstr./Karl-Kunger-Str.: Errichten einer Radverkehrsanlage	?::projected 13491,9201 13614,9333 13647,9304 13766,9200
 #: XXX Bsw.1
@@ -1170,7 +1171,7 @@ Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbr
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (AT.4; hier bis Karl-Kunger-Str. und vermutlich beidseitig)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (2019)
 #: osm_watch: way id="110450333" version="9"
-#: last_checked: 2018-06-04
+#: last_checked: 2018-06-21
 #: next_check: 2019-03-01
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird hier vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13849,9310
 # 
@@ -1296,7 +1297,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: source_id: 2147340618
 #: source_id: LMS-BR_r_LMS-BR_81616
 #: source_id: 2147342542
-#: last_checked: 2018-06-19
+#: last_checked: 2018-06-21
 #: next_check: 2018-06-30 (laut fritz)
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 # 
@@ -1381,7 +1382,7 @@ Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::projected 54
 #: source_id: 2147341699
 #: source_id: LMS-BR_r_LMS-BR_106210_LMS-BR_72
 #: last_checked: 2018-05-10 (mapillary)
-#: next_check: 2018-06-30
+#: next_check: 2018-07-15
 Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::inwork 5343,21250 5341,21266 5333,21332 5320,21432 5311,21495 5210,21636 5136,21738
 #: last_checked ^^^
 # 
@@ -1749,11 +1750,11 @@ Friedelstr.: Asphaltierung	?::projected 12085,9778 12074,9689 12066,9558 12047,9
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="14"
-#: last_checked: 2018-06-06
+#: last_checked: 2018-06-21
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
-#: last_checked: 2018-06-15
+#: last_checked: 2018-06-21
 # REMOVED --- #: next_check: 2018-05-07 (Halteverbotsschilder!)
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 11831,8989 11880,8955 11998,8872 12063,8826 12156,8760 12330,8636
 # 
@@ -1765,7 +1766,7 @@ Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 11831,8989 11880,8955
 #: check_frequency: 90d
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12794,8103 12753,8187 12714,8249
 # 
-#: last_checked: 2018-06-04
+#: last_checked: 2018-06-21
 #: check_frequency: 360d
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12714,8249 12689,8289 12639,8344 12598,8390 12582,8408 12562,8432 12540,8458 12500,8504 12330,8636
 # 
@@ -1867,7 +1868,7 @@ Innstr.: hier wird ein Asphaltstreifen entstehen, vielleicht auch der Zugang zum
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.655982.php ("ab 2019")
 #: by: http://www.berliner-woche.de/neukoelln/bauen/plaene-fuer-das-weigandufer-fahrradstrasse-promenade-neue-bepflanzung-d140649.html
 #: by: https://fahrradfreundliches-neukoelln.de/blog/fahr-rat-7-maerz-2018 (schon III/2018?)
-#: last_checked: 2018-06-15
+#: last_checked: 2018-06-21
 #: next_check: 2019-01-01
 # REMOVED (hier nicht?) --- Weigandufer (und Pflügerstr.?): Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 13939,8228 13875,8282 13716,8410
 Weigandufer und Pflügerstr.: Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 13716,8410 13641,8470 13539,8552 13450,8625 13368,8689 13193,8832 13045,8951 12902,9066 12755,9188 12621,9297 12480,9394
@@ -2275,6 +2276,16 @@ Onkel-Tom-Str.: Sanierung, evtl. auch Änderungen/Verbesserungen bei den Radwegen
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714272.php
+#: by: https://www.facebook.com/dahlemroute
+#: by: https://www.facebook.com/dahlemroute/photos/a.449841095455671.1073741835.444396052666842/449159505523830/?type=3&theater
+#: XXX möglicher Kandidat für comments_route-orig. Ist in beiden Richtungen ausgeschildert?
+#: next_check: 2018-06-29 (offizielle Eröffnung)
+Dahlem-Route: Ausschilderung prüfen, evtl. wurde auch die Fahrbahn an einigen Stellen verbessert?	? 2771,5674 2717,5578 2746,5537 2785,5482 2835,5410 2627,5095 2560,5044 2587,4965 2615,4885 2577,4865 2531,4733 2442,4806 2381,4737 2290,4709 2212,4600 2125,4675 2085,4492 2069,4422 1992,4325 1964,4192 1855,4227 1761,4255 1659,4297 1608,4313 1548,4168 1524,4054 1520,4006 1523,3904 1462,3906 1389,3898 1276,3892 1139,3876 1015,3858 891,3828 892,3907 861,3996 806,4130 732,4087 639,4007 575,3965 501,3938 415,3914 458,3697 394,3694 271,3772 201,3764 16,3744 -92,3724 -141,3715 -267,3657 -329,3702 -432,3788 -580,3912 -685,3750 -833,3619 -1012,3465 -1102,3345 -1137,3294 -1145,3277 -1161,3252 -1187,3264 -1360,3314 -1536,3314 -1628,3311 -1706,3311 -1782,3311 -1888,3315 -1981,3353 -2096,3402 -2137,3408 -2245,3378 -2273,3460 -2295,3523 -2323,3598 -1986,3703 -1900,3700 -1787,3690 -1710,3676 -1568,3621 -1476,3544 -1470,3566 -1444,3655 -1422,3785 -1409,3834 -1392,3915 -1360,4014 -1323,4111 -1282,4244 -1245,4351 -1204,4328 -1096,4267 -1025,4422 -927,4638 -857,4725 -820,4772 -670,4903 -469,4995 -323,5031 -253,5049 -188,5061 -114,5077 -21,5104 88,5136 110,4950 124,4827 134,4786 151,4736 346,4833 623,4902 844,4916 922,4910 1330,4867 1479,4853 1511,4955 1573,5152 1607,5259 1640,5383 1656,5446 1714,5722 1736,5850 1746,5922 1909,5872 2030,5833 2106,5808 2137,5798 2165,5790 2314,5745 2320,5743 2477,5694 2574,5688 2669,5677 2771,5674 2823,5672 2909,5674 2970,5676 3054,5677 3160,5671 3355,5655 3489,5690 3574,5717 3707,5758 3712,5806 3641,5836 3506,6012 3309,6270 3216,6393 3147,6384 3078,6343 2946,6217 2874,6031 2771,5674
+# 
+#: XXX vermutlich ein green-Eintrag
+Fischtalpark: Qualität? Beleuchtet? Für Radfahrer legal befahrbar?	? 918,4795 876,4759 781,4548 769,4480 748,4375 696,4299 640,4228 549,4166 373,4082
 # 
 #: XXX NEW	Eisenacher Str. (Mariendorf) Richtung Rixdorfer Str. zwischen Mariendorfer Damm und Kollostr. (Berlin)  Gültig ab: 19.06.2018 11:40  Baustelle, Fahrtrichtung gesperrt, Umleitung ausgewiesen (bis Ende 12/2018)
 #: source_id: 2147342785	
@@ -3114,7 +3125,7 @@ Buschkrugallee -> Braunschweiger Ufer: Bordstein	? 13566,5792 13483,5973 13077,5
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2018-06-18
+#: last_checked: 2018-06-21
 #: check_frequency: 60d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # 

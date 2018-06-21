@@ -21,7 +21,7 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-06-17
+#: last_checked: 2018-06-21
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
@@ -165,7 +165,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 # REMOVED --- Jerusalemer Str.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9925,11565 9936,11469
 # 
 #: by: http://www.dafmap.de/d/berlin.html?center=52.508653+13.397214&zoom=17# (Geplanter Projektabschluss: 2019-03-31)
-#: last_checked: 2018-06-08 vvv
+#: last_checked: 2018-06-21 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="327756248" version="2"
 Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9945,11371 9936,11469
@@ -179,7 +179,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: next_check_id: ALEXANDRINENSTR-2018
 # REMOVED --- : osm_watch: note 814191 1
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
-#: last_checked: 2018-06-18
+#: last_checked: 2018-06-21
 #: check_frequency: 30d
 Alexandrinenstr.: Zugang zur Sebastianstr. nur über sehr engen Trampelpfad möglich, Bordsteine	q4::inwork 10781,11243 10678,11172
 # 
@@ -200,7 +200,7 @@ Alexandrinenstr.: Zugang zur Sebastianstr. nur über sehr engen Trampelpfad mögli
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
 # REMOVED --- #: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualität -> qualitaet_s-orig-Eintrag revidieren --- #: last_checked: 2013-11-21 --- Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2018-06-18 vvv
+#: last_checked: 2018-06-21 vvv
 #: check_frequency: 60d vvv
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9984,12426 9996,12401 10058,12290
 Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 10008,12274 10058,12290
@@ -276,7 +276,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: next_check_id: STAATSOPER-2014 vvv
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html
-#: last_checked: 2018-06-18 vvv
+#: last_checked: 2018-06-21 vvv
 #: check_frequency: 30d vvv
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9883,12251 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
@@ -296,13 +296,13 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
 #: source_id: LMS-BR_r_LMS-BR_197
 #: osm_watch: way id="194962375" version="8"
-#: last_checked: 2018-06-20 (webcam)
+#: last_checked: 2018-06-21 (webcam)
 #: check_frequency: 2d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q4::inwork 10601,12521 10704,12595
 # 
 #: by: http://www.berliner-woche.de/mitte/bauen/rathausstrasse-wird-gesperrt-d140537.html vvv
 #: by: http://www.projekt-u5.de/de/rotes-rathaus/
-#: last_checked: 2018-06-20 (webcam) vvv
+#: last_checked: 2018-06-21 (webcam) vvv
 #: check_frequency: 2d vvv
 #: XXX_prog: hier eigentlich nicht, wird nur zur "künstlichen Verlängerung" der Wegstrecke benutzt --- kann aufgehoben werden, sobald handicap_directed überall funktioniert
 Rathausstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 10476,12432 10584,12507
@@ -454,7 +454,7 @@ Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5894,12480 5944,12
 # 
 ### Neukölln ###
 # 
-#: last_checked: 2018-06-01
+#: last_checked: 2018-06-21
 #: check_frequency: 14d
 Donaustr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Erkstr.	q4::inwork; 12771,8439 12649,8535
 # 
