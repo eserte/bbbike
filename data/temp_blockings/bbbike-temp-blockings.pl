@@ -26898,10 +26898,11 @@ EOF
        text  => 'Vorbergstr.: Bauarbeiten zwischen Gleditschstr. und Akazienstr., Fahrbahn gesperrt, außerdem Sperrung in der Gleditschstr., Ende unbekannt',
        type  => 'handicap',
        data  => <<EOF,
+#: last_checked: 2018-06-22 vvv
 # XXX_prog: eigentlich q3-
-#: last_checked: 2018-05-30
-	q3::inwork 7136,9223 7012,9222
+	q4::inwork 7136,9223 7012,9222
 	q2::inwork 7136,9223 7130,9316
+#: last_checked ^^^
 EOF
      },
      { from  => 1521060826, # 2018-03-14 21:53
@@ -27273,7 +27274,7 @@ EOF
        data  => <<EOF,
 #: XXX Sanierung des Kleinsteinpflasters ab 2018-05-28 bis voraussichtlich Herbst 2018 -> ändert sich an der Qualität etwas?
 #: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/pflasterarbeiten-am-fasanenplatz_a165320
-#: last_checked: 2018-05-30
+#: last_checked: 2018-06-22
 #: check_frequency: 14d
 	q4::inwork 5224,10253 5192,10234
 EOF
@@ -27359,6 +27360,30 @@ EOF
 #: next_check_id: VERLWERDERSTR-2018
 #: add_fragezeichen: können Radfahrer vielleicht doch passieren?
 	2::inwork 20245,2152 20261,2114 20222,2037 20214,1988 20187,1930 20166,1864 20120,1791 20093,1776 20064,1777
+EOF
+     },
+     { from  => undef, # 
+       until => 1558022400, # 2019-05-16 18:00
+       text  => 'Friesenstr.: Fahrbahn für Radfahrer verboten',
+       type  => 'gesperrt',
+       source_id => '2147342598',
+       data  => <<EOF,
+#: next_check_id: FRIESEN-2018
+#: XXX bleibt dieser Zustand tatsächlich so?
+#: last_checked: 2018-06-22
+	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889 9801,8683
+EOF
+     },
+     { from  => 1529612425, # 2018-06-21 22:20
+       until => 1529698825, # 2018-06-22 22:20
+       text  => 'Bouchéstr. und Mengerzeile: Fahrbahn kann wegen Bauarbeiten gesperrt sein',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: BOUCHESTR-2018
+#: last_checked: 2018-06-22 vvv
+	q4::inwork 13176,9302 13098,9205
+	q4::inwork 13188,9134 13298,9252
+#: last_checked ^^^
 EOF
      },
     );

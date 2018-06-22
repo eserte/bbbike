@@ -4134,10 +4134,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '# XXX_prog: eigentlich q3-
-#: last_checked: 2018-05-30
-	q3::inwork 7136,9223 7012,9222
+         'data' => '#: last_checked: 2018-06-22 vvv
+# XXX_prog: eigentlich q3-
+	q4::inwork 7136,9223 7012,9222
 	q2::inwork 7136,9223 7130,9316
+#: last_checked ^^^
 ',
          'from' => undef,
          'id' => 2935,
@@ -4358,7 +4359,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX Sanierung des Kleinsteinpflasters ab 2018-05-28 bis voraussichtlich Herbst 2018 -> ändert sich an der Qualität etwas?
 #: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/pflasterarbeiten-am-fasanenplatz_a165320
-#: last_checked: 2018-05-30
+#: last_checked: 2018-06-22
 #: check_frequency: 14d
 	q4::inwork 5224,10253 5192,10234
 ',
@@ -4440,6 +4441,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Verlängerte Werderstr.: Bauarbeiten, unter Umständen ist die Durchfahrt nicht möglich, vom 2. Juli 2018 bis Ende Mai 2019',
          'type' => 'gesperrt',
          'until' => 1559339999
+       },
+       {
+         'data' => '#: next_check_id: FRIESEN-2018
+#: XXX bleibt dieser Zustand tatsächlich so?
+#: last_checked: 2018-06-22
+	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889 9801,8683
+',
+         'from' => undef,
+         'id' => 2974,
+         'source_id' => '2147342598',
+         'text' => 'Friesenstr.: Fahrbahn für Radfahrer verboten',
+         'type' => 'gesperrt',
+         'until' => 1558022400
        }
      
 );

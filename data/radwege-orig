@@ -1047,7 +1047,7 @@ Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW5; 7307,8945 7315,8941 7360,8918
 #: note: ein vergessenes Radwegschild?
 	RW1;RW2 5048,8012 4873,8007
 	RW1;RW1 4873,8007 4793,8005
-Busspur gilt Mo-Fr 7-18 Uhr	RW5;RW5 7471,9360 7382,9187 7363,9152 7308,9041 7268,8960
+Busspur gilt Mo-Fr 7-18 Uhr	RW5;RW5 7471,9360 7388,9199 7382,9187 7363,9152 7354,9135 7308,9041 7268,8960
 Busspur ist immer gültig	RW5;RW5 7268,8960 7201,8870
 Busspur gilt Mo-Fr 7-18 Uhr	RW5;RW5 7201,8870 7105,8788 7009,8705 6989,8687 6912,8617 6765,8480 6687,8385
 Busspur gilt Mo-Sa 7-20.30 Uhr	RW5;RW5 7813,10112 7702,10146 7698,10147 7579,10183 7413,10244 7238,10299 7131,10331
@@ -1604,9 +1604,10 @@ die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
 # REMOVED (nur noch ein Eintrag übrig) --- : next_check_id: HAUPTSTR-2015
 #: XXX Markierungen fehlen hier noch
 #: osm_watch: way id="439421759" version="9"
-#: osm_watch: way id="384136808" version="12"
+#: osm_watch: way id="384136808" version="13"
 #: last_checked: 2018-06-11
-#: check_frequency: 14d
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2018-06-22
 	RW0; 14904,10812 15000,10792
 	RW3; 15000,10792 15261,10738
 	RW1;RW1 14652,10201 14688,10167 14705,10149 14747,10108 14817,10031
@@ -5177,3 +5178,4 @@ provisorische Radspur	RW4; 17962,6674 17919,6968
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968
 #: last_checked ^^^
 #: XXX ^^^
+asphaltierter Radweg auf den letzten Metern zur Ampel	RW0; 7444,9148 7382,9187

@@ -454,7 +454,7 @@ Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5894,12480 5944,12
 # 
 ### Neukölln ###
 # 
-#: last_checked: 2018-06-21
+#: last_checked: 2018-06-22
 #: check_frequency: 14d
 Donaustr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Erkstr.	q4::inwork; 12771,8439 12649,8535
 # 
@@ -479,7 +479,7 @@ Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 #: source_id: 2147338550
 #: source_id: LMS-BR_r_LMS-BR_19252
 #: source_id: 2147342527
-#: last_checked: 2018-05-03
+#: last_checked: 2018-06-22
 #: check_frequency: 90d
 Karl-Marx-Str.: Bauarbeiten zwischen Rollbergstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12714,8249 12753,8187 12794,8103
 # 
@@ -499,14 +499,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Rollbergstr. und Briesestr., Richtung Süden
 # 
 ### Lichtenberg ###
 # 
-#: XXX laut fritz bis 22.06.2018
-#: source_id: 2147342596
-#: last_checked: 2018-05-18
-#: next_check: 2018-06-22
-#: valid: -20180622
-#: priority: #A
-Gotlindestr.: Sperrung der Fahrbahn an der Ruschestr.	q4::inwork 15947,12626 16000,12625
-# 
+# REMOVED --- #: XXX laut fritz bis 22.06.2018 --- #: source_id: 2147342596 --- #: last_checked: 2018-05-18 --- #: next_check: 2018-06-22 --- #: valid: -20180622 --- #: priority: #A --- Gotlindestr.: Sperrung der Fahrbahn an der Ruschestr.	q4::inwork 15947,12626 16000,12625
 # REMOVED --- #: next_check_id: MINNATODENHAGENSTR-2016 --- #: XXX siehe auch bbbike-temp-blockings-Eintrag --- #: XXX Bordsteinabsenkung existiert am Anfang des Wendehammers --- #: last_checked: 2017-11-05 --- Wattstr.: Bauzäune	q3::inwork 17681,7589 17676,7555
 # REMOVED --- #: next_check_id: MOELLENDORFFSTR-2017 --- #: XXX_prog abgeschätzter Zeitverlust durch 2x Ampeln, explizite "Radfahren verboten"-Schilder; vermutlich ist man nicht schneller, wenn man auf dem rechten Gehweg bleibt --- #: XXX laut fritz Vollsperrung bis 30. November 2017; Abbiegebeschränkungen bis 10.11.2017 --- #: XXX laut vmz Bauarbeiten bis Ende 2017 --- #: XXX Möllendorffstraße (Lichtenberg) in beiden Richtungen zwischen Am Containerbahnhof und Frankfurter Allee (Berlin)  Gültig ab: 04.09.2017 08:00  Vollsperrung, Fahrbahnsanierung (bis Ende 09/17)	2147341771 --- #: source_id: 2147341771 --- #: source_id: LMS-BR_r_LMS-BR_108099_LMS-BR_72 --- #: source_id: 2147341938 --- #: last_checked: 2017-11-09 vvv --- #: next_check: 2017-11-30 vvv --- Möllendorffstr.: Bauarbeiten, Radfahrer müssen auf dem Gehweg fahren	q3-::inwork; 15420,12178 15361,12071 --- Gürtelstr.: Bauarbeiten, Radweg gesperrt, Fußgänger	q2-::inwork 15361,12071 15294,11964 --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED #: next_check_id: HAUPTSTR-2015 --- #: source_id: 2147339565 --- #: source_id: LMS-BR_r_LMS-BR_65986 --- #: source_id: 2147340080 --- #: XXX laut vmz bis Ende August 2016, laut fritz bis 31.07.2016 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1604/nachricht5997.html --- #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.470764.php --- #: last_checked: 2016-08-25 --- #: next_check: 2016-08-29 --- Kynaststr./Hauptstr.: Bauarbeiten, Gehweg benutzen	q3::inwork 14882,10732 14906,10820
@@ -528,22 +521,7 @@ Gotlindestr.: Sperrung der Fahrbahn an der Ruschestr.	q4::inwork 15947,12626 160
 # 
 ### Schöneberg ###
 # 
-#: next_check_id: HAUPTSTRAMPEL-2018
-#: source_id: 2147342260
-#: source_id: LMS-BR_r_LMS-BR_123516_LMS-BR_72
-#: source_id: LMS-BR_r_LMS-BR_123515_LMS-BR_72
-#: source_id: 2147342688
-#: last_checked: 2018-05-30 vvv
-#: next_check: 2018-06-21 vvv
-# REMOVED --- #: valid: -20180403 vvv
-#: priority: #A vvv
-Helmstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q2::inwork 7444,9148 7382,9187
-Vorbergstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q3::inwork 7363,9152 7308,9163
-#: priority ^^^
-# REMOVED --- #: valid ^^^
-#: next_check ^^^
-#: last_checked ^^^
-# 
+# REMOVED (fertig) --- #: next_check_id: HAUPTSTRAMPEL-2018 --- #: source_id: 2147342260 --- #: source_id: LMS-BR_r_LMS-BR_123516_LMS-BR_72 --- #: source_id: LMS-BR_r_LMS-BR_123515_LMS-BR_72 --- #: source_id: 2147342688 --- #: last_checked: 2018-05-30 vvv --- #: next_check: 2018-06-21 vvv --- # REMOVED --- #: valid: -20180403 vvv --- #: priority: #A vvv --- Helmstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q2::inwork 7444,9148 7382,9187 --- Vorbergstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q3::inwork 7363,9152 7308,9163 --- #: priority ^^^ --- # REMOVED --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (wurde entfernt) --- #: XXX: laut fritz bis Ende August, laut vmz nur bis Mitte Juni 2018 --- #: source_id: 2147342169 --- #: last_checked: 2018-05-08 --- #: next_check: 2018-06-15 --- #: valid: -20180827 --- #: priority: #A --- Großgörschenstr.: Bauarbeiten an der Einmündung Potsdamer Str.	q3::inwork 7609,9463 7507,9458
 # REMOVED --- #: last_checked: 2017-06-06 --- #: next_check: 2017-06-17 --- Bautzener Str.: Bauarbeiten an der Großgörschenstr., auf Gehweg ausweichen	q4::inwork 8186,9380 8185,9338
 # REMOVED --- #: source_id: LMS-BR_r_LMS-BR_76371 --- # #: source_id: 2147340485 --- # #: last_checked: 2016-09-12 --- # #: next_check: 2016-10-14 --- # #: valid: -20161014
