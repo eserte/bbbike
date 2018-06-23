@@ -36,6 +36,8 @@
     ("\\([-+]?[0-9.]+,[-+]?[0-9.]+\\)" (1 font-lock-type-face)) ;; coords
     ))
 
+(defvar bbbike-date-for-last-checked)
+
 (defconst bbbike-font-lock-defaults
   '(bbbike-font-lock-keywords t nil nil nil (font-lock-multiline . nil)))
 
@@ -263,6 +265,8 @@
     (bindings--define-key menu-map [split-directions]    '(menu-item "Split Directions" bbbike-split-directions))
     (bindings--define-key menu-map [split-street]        '(menu-item "Split Street" bbbike-split-street))
     (bindings--define-key menu-map [reverse-street]      '(menu-item "Reverse Street" bbbike-reverse-street))
+    (bindings--define-key menu-map [update-last-checked] '(menu-item "Update last_checked" bbbike-update-last-checked))
+    (bindings--define-key menu-map [set-last-checked]    '(menu-item "Set last_checked date" bbbike-set-date-for-last-checked))
     (bindings--define-key menu-map [separator1]          menu-bar-separator)
     (bindings--define-key menu-map [insert-source-id]    '(menu-item "Insert source_id" bbbike-insert-source-id))
     (bindings--define-key menu-map [update-osm-watch]    '(menu-item "Update osm_watch" bbbike-update-osm-watch))
@@ -389,6 +393,32 @@
 
     (goto-char currpos) ; this works because the length of a ISO date is constant (at least for a long time ;-)
     )
+  )
+
+(defun bbbike-set-date-for-last-checked ()
+  (interactive)
+  (setq bbbike-date-for-last-checked (org-read-date)))
+
+(defun bbbike-update-last-checked ()
+  (interactive)
+  (if (not bbbike-date-for-last-checked)
+      (error "Please run bbbike-set-date-for-last-checked first"))
+  (let (begin-line-pos end-line-pos is-block)
+    (save-excursion
+      (beginning-of-line)
+      (if (not (looking-at "#: *last_checked"))
+	  (error "Current line is not a line with a last_checked directive"))
+      (setq begin-line-pos (point)))
+    (save-excursion
+      (end-of-line)
+      (setq end-line-pos (point))
+      (beginning-of-line)
+      (if (search-forward-regexp "vvv *$" end-line-pos t)
+	  (setq is-block t))
+      )
+    (save-excursion
+      (delete-region begin-line-pos end-line-pos)
+      (insert (concat "#: last_checked: " bbbike-date-for-last-checked (if is-block " vvv")))))
   )
 
 (defun bbbike-view-cached-url (&optional url)
