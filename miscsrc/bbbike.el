@@ -246,6 +246,7 @@
     (define-key map "\C-c\C-j" 'bbbike-join-street)
     (define-key map "\C-cj"    'bbbike-join-street)
     (define-key map "\C-c."    'bbbike-update-now)
+    (define-key map "\C-c\C-l" 'bbbike-update-last-checked)
     (define-key map "\C-c\C-m" 'bbbike-center-point)
     ; menu
     (bindings--define-key map [menu-bar bbbike] (cons "BBBike" menu-map))
