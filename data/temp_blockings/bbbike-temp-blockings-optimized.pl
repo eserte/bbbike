@@ -4010,7 +4010,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-05-26
+#: last_checked: 2018-06-25
 	2::inwork 14652,10201 14569,10055
 ',
          'from' => undef,
@@ -4299,7 +4299,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-06-18
+#: last_checked: 2018-06-25
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -4319,9 +4319,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1527186792,
          'id' => 2960,
          'source_id' => '2147342638',
-         'text' => 'Weißenhöher Str. : Bauarbeiten zwischen Grabensprung und Gladauer Weg, eventuell sind auch Radfahrer betroffen, bis Ende Juni 2018',
+         'text' => 'Weißenhöher Str. : Bauarbeiten zwischen Grabensprung und Gladauer Weg, eventuell sind auch Radfahrer betroffen, bis Mitte August 2018',
          'type' => 'handicap',
-         'until' => 1530374400
+         'until' => 1533916800
        },
        {
          'data' => '#: by: fritz
@@ -4361,7 +4361,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/pflasterarbeiten-am-fasanenplatz_a165320
 #: last_checked: 2018-06-22
 #: check_frequency: 14d
-	q4::inwork 5224,10253 5192,10234
+	q4::inwork 5223,10243 5192,10241
 ',
          'from' => undef,
          'id' => 2965,
@@ -4432,6 +4432,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: VERLWERDERSTR-2018
+#: by: https://www.berliner-woche.de/altglienicke/c-bauen/werderstrasse-wird-ausgebaut_a169172
 #: add_fragezeichen: können Radfahrer vielleicht doch passieren?
 	2::inwork 20245,2152 20261,2114 20222,2037 20214,1988 20187,1930 20166,1864 20120,1791 20093,1776 20064,1777
 ',

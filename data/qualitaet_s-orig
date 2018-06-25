@@ -1377,8 +1377,8 @@ Esplanade: Kleinsteinpflaster	Q2+ 10886,16893 10655,16904
 Glinkastr.: Asphalt	Q0+ 9183,12076 9195,11972 9207,11880 9218,11793 9220,11781
 Ettaler Str.: Kopfsteinpflaster	Q2 5997,10286 5948,10152
 # REMOVED --- #: XXX Sanierung des Kleinsteinpflasters ab 2018-05-28 bis voraussichtlich Herbst 2018 -> ändert sich an der Qualität etwas? Gibt es während der Bauarbeiten Einschränkungen? vvv --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.703939.php --- #: next_check: 2018-05-28 vvv
-Fasanenplatz, zur Schaperstr.: Kleinsteinpflaster	Q1- 5224,10253 5192,10234
-Fasanenplatz: Kleinsteinpflaster	Q1- 5192,10234 5191,10190
+Fasanenplatz, zur Schaperstr.: Kleinsteinpflaster	Q1- 5223,10243 5192,10241
+Fasanenplatz: Kleinsteinpflaster	Q1- 5192,10241 5191,10190
 Fasanenplatz, zur Meierottostr.: Kleinsteinpflaster	Q1- 5191,10190 5220,10192 5246,10168
 Meierottostr.: Asphalt mit einigen Schäden	Q0- 5246,10168 5463,9961
 Virchowstr.: Kopfsteinpflaster	Q2 12925,13373 12876,13440
@@ -10423,6 +10423,9 @@ Gerichtstr.: Verbundsteinpflaster	Q1 7817,15418 7765,15417
 Nettelbeckplatz: teilweise gepflastert	Q1 7891,15417 7974,15418 8024,15401
 (Götelstr. - Tharsanderweg): wassergebundene Decke	Q1 -3416,12165 -3524,11980
 (Uferweg - Bocksfeldstr.): wassergebundene Decke	Q1 -3928,11526 -3909,11596 -3872,11619
+#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2018/pressemitteilung.715459.php (Umgestaltung)
+#: XXX was wird sich nach der Umgestaltung ändern? Wird sich die Qualität verbessern?
+#: next_check: 2019-07-01
 (Uferweg): welliges Verbundsteinpflaster	Q1- -4245,11400 -4209,11424 -4181,11458 -4106,11519 -4028,11533 -3928,11526 -3828,11491 -3785,11445 -3752,11373
 Havel-Ufer Hohengatow: Asphalt	Q0 -4774,6514 -4689,6661 -4684,6755 -4667,6814 -4624,6872 -4498,7095 -4481,7142 -4488,7200 -4488,7317 -4506,7375 -4508,7456 -4494,7510 -4531,7549 -4539,7643 -4534,7695 -4540,7801 -4778,7791
 Havel-Ufer Hohengatow, unterer Weg: unbefestigter Weg	Q1- -4774,6514 -4734,6531 -4678,6625 -4664,6746 -4579,6913 -4460,7071 -4438,7169 -4488,7200
@@ -10620,7 +10623,7 @@ Bismarckplatz: Kopfsteinpflaster	Q2 -3258,15100 -3241,15118 -3216,15155
 Wolzenseeweg: Asphalt	Q0 -1798,16465 -1721,16448
 #: next_check_id: TRESKOWALLEE-2017
 #: XXX nach den Bauarbeiten vermutlich bessere Qualität
-#: last_checked: 2018-03-25
+#: last_checked: 2018-06-25
 #: next_check: 2019-03-01
 Treskowallee: Asphalt mit Schäden	Q1+; 18704,8427 18731,8577
 (Gundelfinger Str. - Römerweg): Verbundsteinpflaster	Q1+ 18735,9421 18738,9467 18754,9584 18772,9694

@@ -129,7 +129,9 @@ Dorfplatz	1 21074,-475 20986,-529 20890,-546 20827,-537 20999,-489 21074,-475
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: II/2018 -- II/2020)
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.710430.php (Richtung Schönefeld 1. Quartal 2020 fertig, Richtung Adlergestell 2. Quartal 2021)
 #: by: https://www.berliner-woche.de/altglienicke/c-verkehr/auf-dem-autobahnzubringer-b-96a-wird-bis-zum-sommer-2021-gebaut_a167771
+#: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.715210.php
 #: source_id: 2147342746
+#: source_id: 2147342800
 #: last_checked: 2018-01-01 (mapillary)
 #: next_check: 2020-04-01
 B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532 21819,1595 21541,1739
@@ -2892,6 +2894,12 @@ Drängelgitter	BNP:3::trailer=10 25081,-9433
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: KAUFHOF-2018
+#: XXX bis wann gehen die Bauarbeiten?
+#: XXX ggfs. handicap_s-orig-Eintrag wieder aktivieren
+#: last_checked: 2018-06-25
+Hermann-Stöhr-Platz: Gehweg vor dem ehemaligen Kaufhaus gesperrt	2::inwork 12522,11837 12409,11902
+# 
 #: priority: #C
 #: last_checked: 2018-06-17
 #: check_frequency: 180d
@@ -3005,6 +3013,7 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12677,-15
 # 
 #: by: https://www.berliner-zeitung.de/berlin/berliner-wasserbetriebe-tunnel-unterm-mauerpark-wird-zur-attraktion-25534506
 #: by: http://www.berliner-woche.de/prenzlauer-berg/bauen/baugruben-am-mauerpark-sind-jetzt-eingerichtet-d158178.html
+#: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.715523.php
 #: source_id: 2147342369
 #: last_checked: 2018-06-07 (Südseite) vvv
 #: check_frequency: 360d vvv
@@ -3159,7 +3168,7 @@ Karower Str.: temporäre Einbahnstraßenregelung	1s:q3:inwork 16593,25640 16632,25
 #: by: http://www.dafmap.de/d/berlin.html?id=3192&mt=0&zoom=16 (Geplanter Projektabschluss: 2018-03-31)
 #: last_checked: 2018-06-22
 #: check_frequency: 60d
-Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt	1s:q3:inwork 5192,10234 5196,10398
+Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt	1s:q3:inwork 5192,10241 5196,10398
 # 
 # REMOVED (siehe temp_blockings-Eintrag) --- #: source_id: 2147341003 (Bauarbeiten in der angrenzenden Modersohnstr.) --- #: last_checked: 2017-06-17 --- #: check_frequency: 7d --- DB-Werkstraße: Zufahrt zur DB-Werkstraße ist wegen Bauarbeiten gesperrt	2::inwork 14043,10928 14107,10911
 # REMOVED (bei fritz nicht mehr gelistet) --- #: XXX laut fritz bis 30. September 2017 --- #: by: http://www.dafmap.de/d/berlin.html?id=5031&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-12-31) --- #: source_id: LMS-BR_r_LMS-BR_86189 --- #: last_checked: 2017-02-04 --- #: next_check: 2017-09-30 --- #: priority: #A --- Zillestr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen	1s:q3 3807,11859 3976,11869

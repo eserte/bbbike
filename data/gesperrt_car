@@ -51,7 +51,7 @@ Holtei von N - Boxhagener	3 14710,11626 14639,11512 14752,11369
 Boxhagener von E - Holtei	3 14752,11369 14639,11512 14575,11407
 Bachstr. - 17. Juni (?)	3 5790,12026 5775,11975 5758,11895 5810,11902 5900,11913
 Fasanen - Hertzallee (nur für BVG frei)	3 5456,11742 5356,11512 5352,11502 5587,11397
-Fasanenstr.	1 5192,10234 5196,10398
+Fasanenstr.	1 5192,10241 5196,10398
 Naumannstr. - Kolonnenstr.	3 7713,8600 7709,8777 7642,8815
 Naumannstr. N - H	3 7707,8915 7709,8777 7713,8600
 zum Mariannenplatz	2 11950,11157 11921,11185
@@ -1191,9 +1191,9 @@ Mittelstreifen	3nocross::ignrte 2346,7684 2460,7658 2576,7634
 Hundekehlestr. -> Sulzaer Str.: Mittelstreifen	3::igndisp 2346,7684 2460,7658 2499,7930
 Sulzaer Str. -> Hundekehlestr.: Mittelstreifen	3::igndisp 2499,7930 2460,7658 2576,7634
 Lietzenburger Str.	3nocross::ignrte 5047,10381 5196,10398 5313,10420
-Lietzenburger Str. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5313,10420 5196,10398 5192,10234
+Lietzenburger Str. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5313,10420 5196,10398 5192,10241
 Fasanenstr. -> Lietzenburger Str.: Lietzenburger Str.	3::igndisp 5215,10711 5196,10398 5313,10420
-Fasanenstr. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5215,10711 5196,10398 5192,10234
+Fasanenstr. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5215,10711 5196,10398 5192,10241
 Sybelstr.	1 3981,10590 3883,10585
 Giesebrechtstr.	1 3912,10699 3997,10607 4017,10585 4030,10575 4153,10453 4157,10418
 Clausewitzstr.	1 3971,10381 4007,10559

@@ -21,23 +21,24 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-06-21
+#: last_checked: 2018-06-23
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2018-06-17
+#: last_checked: 2018-06-24
 #: check_frequency: 90d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
-#: last_checked: 2018-06-20
+#: last_checked: 2018-06-25
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 # REMOVED (beendet) --- #: XXX_prog BS (östliche Seite) --- #: last_checked: 2018-06-12 vvv --- #: check_frequency: 7d vvv --- Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstein	q2::inwork 11845,12292 11635,12398 --- Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstein	q4::inwork 11635,12398 11607,12412 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
+#: next_check_id: KAUFHOF-2018
 #: XXX_prog BS (auf der östlichen Seite, ansonsten q3+)
-#: last_checked: 2018-06-20
+#: last_checked: 2018-06-25
 #: check_frequency: 90d
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
 # 
@@ -147,7 +148,7 @@ Märkisches Ufer: Bauarbeiten, Engstelle	q3+::inwork 10687,11853 10869,11949
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2018-06-19
+#: last_checked: 2018-06-24
 Voltairestr.: Fahrbahn unter Umständen wegen Baustelle gesperrt, Ausweichen auf Gehweg	q2- 11329,12497 11209,12430
 # 
 #: next_check_id: ZIEGELSTR-2016
@@ -222,7 +223,7 @@ Niederlagstr.: Bauarbeiten, Engstelle, Fußgänger	q3::inwork  9959,12281 9972,121
 # REMOVED (Einbahnstraßenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universitätsstr.: wegen Bauarbeiten Einbahnstraße zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2018-05-31 vvv
+#: last_checked: 2018-06-24 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="5"
@@ -296,20 +297,11 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
 #: source_id: LMS-BR_r_LMS-BR_197
 #: osm_watch: way id="194962375" version="8"
-#: last_checked: 2018-06-21 (webcam)
-#: check_frequency: 2d
+#: last_checked: 2018-06-23
+#: check_frequency: 7d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q4::inwork 10601,12521 10704,12595
 # 
-#: by: http://www.berliner-woche.de/mitte/bauen/rathausstrasse-wird-gesperrt-d140537.html vvv
-#: by: http://www.projekt-u5.de/de/rotes-rathaus/
-#: last_checked: 2018-06-21 (webcam) vvv
-#: check_frequency: 2d vvv
-#: XXX_prog: hier eigentlich nicht, wird nur zur "künstlichen Verlängerung" der Wegstrecke benutzt --- kann aufgehoben werden, sobald handicap_directed überall funktioniert
-Rathausstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 10476,12432 10584,12507
-Rathausstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10584,12507 10601,12521
-#: last_checked ^^^
-#: check_frequency ^^^
-#: by ^^^
+# REMOVED (fertig) --- #: by: http://www.berliner-woche.de/mitte/bauen/rathausstrasse-wird-gesperrt-d140537.html vvv --- #: by: http://www.projekt-u5.de/de/rotes-rathaus/ --- #: last_checked: 2018-06-21 (webcam) vvv --- #: check_frequency: 2d vvv --- #: XXX_prog: hier eigentlich nicht, wird nur zur "künstlichen Verlängerung" der Wegstrecke benutzt --- kann aufgehoben werden, sobald handicap_directed überall funktioniert --- Rathausstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 10476,12432 10584,12507 --- Rathausstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10584,12507 10601,12521 --- #: last_checked ^^^ --- #: check_frequency ^^^ --- #: by ^^^
 # 
 #: next_check_id: KARLMARXALLEE-2018
 #: source_id: 2147342756
@@ -338,7 +330,7 @@ Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inw
 #: next_check_id: TRESKOWALLEE-2017 vvv
 #: osm_watch: way id="580512810" version="2"
 #: osm_watch: way id="580508096" version="2"
-#: last_checked: 2018-03-25 vvv
+#: last_checked: 2018-06-25 vvv
 #: check_frequency: 90d vvv
 #: valid: -20201231 vvv
 #: priority: #A vvv
@@ -423,10 +415,10 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php
 #: note: wenn nichts in der Philharmonie los ist, kann man auch schneller durchkommen (q3+)
 #: osm_watch: way id="531952542" version="4"
-#: last_checked: 2018-06-08 (mapillary)
+#: last_checked: 2018-06-23
 Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4+::inwork 7970,11441 7965,11467 8005,11627
 # 
-#: last_checked: 2018-05-28
+#: last_checked: 2018-06-23
 Ludwig-Beck-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 8301,11469 8309,11390
 # 
 # REMOVED --- #: by: http://www.deutsches-architektur-forum.de/forum/showthread.php?t=3245 --- #: last_checked: 2015-09-17 --- #: check_frequency: 45d --- Köbisstr.: wegen Bauarbeiten Ausweichen auf Gehweg	q4::inwork 7103,11247 7160,11225
@@ -604,16 +596,7 @@ Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden
 # 
 ### Französisch Buchholz ###
 # 
-#: by: http://www.berliner-woche.de/blankenfelde/verkehr/rosenthaler-weg-voll-gesperrt-wasserbetriebe-verlegen-rohre-d144397.html
-#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.386693.php
-#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/uebersichtsplan-umleitung_vollsperrung.pdf
-#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.692745.php
-#: by: http://www.berliner-woche.de/pankow/verkehr/sperrung-rosenthaler-weg-umleitung-vom-2-mai-bis-zum-25-juni-d159605.html
-#: source_id: 2147342534
-#: priority: #B
-#: next_check: 2018-06-29
-#: valid: -20180629
-Rosenthaler Weg: Bauarbeiten, Radfahrer können auf dem Gehweg passieren, bis 29. Juni 2018	q1-::inwork 10228,21940 10312,21969 10377,21991 10436,22010 10493,22029 10554,22050 10613,22070 10673,22090 10709,22102 10769,22122 10828,22142 10892,22165 10935,22174 10999,22195
+# REMOVED (mittlerweile gibt's eine provisorische Baustraße) --- #: by: http://www.berliner-woche.de/blankenfelde/verkehr/rosenthaler-weg-voll-gesperrt-wasserbetriebe-verlegen-rohre-d144397.html --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.386693.php --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/uebersichtsplan-umleitung_vollsperrung.pdf --- #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.692745.php --- #: by: http://www.berliner-woche.de/pankow/verkehr/sperrung-rosenthaler-weg-umleitung-vom-2-mai-bis-zum-25-juni-d159605.html --- #: source_id: 2147342534 --- #: priority: #B --- #: next_check: 2018-06-29 --- #: valid: -20180629 --- Rosenthaler Weg: Bauarbeiten, Radfahrer können auf dem Gehweg passieren, bis 29. Juni 2018	q1-::inwork 10228,21940 10312,21969 10377,21991 10436,22010 10493,22029 10554,22050 10613,22070 10673,22090 10709,22102 10769,22122 10828,22142 10892,22165 10935,22174 10999,22195
 # 
 #: temporary ^^^
 ######################################################################
@@ -673,7 +656,7 @@ Alexanderplatz: langsame Straßenbahnen, Fußgängerverkehr	q2- 10970,12822 10923,1
 Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11134,12793 11064,12910
 #: XXX nach den Bauarbeiten den alten Eintrag wiederherstellen
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen für Radfahrer) (in der Realität aber schon)
-#: last_checked: 2018-05-10
+#: last_checked: 2018-06-24
 #: check_frequency: 60d
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Rathausstr.: Fußgänger, Bauarbeiten	q2+ 10923,12779 10704,12595
@@ -848,8 +831,7 @@ Gendarmenmarkt: Fußgängerzone, ggfs. schieben	q3 9536,11922 9666,11935
 Gendarmenmarkt: Fußgängerzone, ggfs. schieben	q3 9523,12019 9656,12031
 Am Volkspark: Parkweg	q1 5730,8207 5925,8219
 Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12869,12425 12950,12340 12985,12303
-#: XXX_prog: zusätzlich noch Bordsteine an der östlichen Seite (BS) (q2 auch ohne Bordstein)
-Lange Str. [vor dem ehemaligen Kaufhof]: Fußgänger, Bauarbeiten, Bordstein	q3 12409,11902 12522,11837
+# REMOVED (nun in gesperrt-orig) --- #: XXX_prog: zusätzlich noch Bordsteine an der östlichen Seite (BS) (q2 auch ohne Bordstein) --- Lange Str. [vor dem ehemaligen Kaufhof]: Fußgänger, Bauarbeiten, Bordstein	q3 12409,11902 12522,11837
 Hermann-Stöhr-Platz: Fußgänger	q2 12453,11790 12409,11902
 Gotenstr./Cheruskerstr. - Kolonnenstr.: Fußgänger	q2 7485,8777 7531,8848 7563,8871
 Nettelbeckplatz: Fußgänger	q2 8024,15401 7974,15418 7891,15417
