@@ -26725,7 +26725,7 @@ EOF
 #: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00
 #: source_id: 2147342009
 #: osm_watch: way id="154381291" version="4"
-#: last_checked: 2018-06-11
+#: last_checked: 2018-06-26
 #: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
 EOF
@@ -26758,7 +26758,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-06-08 vvv
+#: last_checked: 2018-06-26 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27321,7 +27321,7 @@ EOF
        data  => <<EOF,
 #: XXX eventuell hängen die Bauarbeiten mit den Bauarbeiten in der Eldenaer Str. zusammen
 #: XXX wird danach komplett asphaltiert sein?
-#: last_checked: 2018-06-08
+#: last_checked: 2018-06-25
 	q4::inwork; 14096,12827 14058,12709
 EOF
      },
