@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.93;
+$VERSION = 1.94;
 
 use your qw(%MultiMap::images $BBBikeLazy::mode
 	    %main::line_width %main::p_width %main::str_draw %main::p_draw
@@ -722,6 +722,12 @@ EOF
 		[Button => $do_compound->("local bbbike.cgi as PDF"),
 		 # don't use draw=>'all' here --- strnames are not displayed very well (sometimes with ... or ???), probably due to coord inaccuracies XXX
 		 -command => sub { current_route_in_bbbike_cgi(imagetype => 'pdf-auto', (map { (draw => $_) } qw(str sbahn ubahn wasser flaechen ampel))) },
+		],
+		[Button => $do_compound->("local bbbikeleaflet.cgi"),
+		 -command => sub { current_route_in_bbbikeleaflet_cgi(live => 0) },
+		],
+		[Button => $do_compound->("live bbbikeleaflet.cgi"),
+		 -command => sub { current_route_in_bbbikeleaflet_cgi(live => 1) },
 		],
 	       ],
 	      ],
@@ -1827,6 +1833,28 @@ sub current_route_in_bbbike_cgi {
     my $url = BBBikeUtil::uri_with_query
 	("http://localhost/bbbike/cgi/bbbike.cgi",
 	 [ gple => $gple, @params ]);
+    main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
+    require WWWBrowser;
+    WWWBrowser::start_browser($url);
+}
+
+sub current_route_in_bbbikeleaflet_cgi {
+    my(%opts) = @_;
+    my $live = delete $opts{live};
+
+    if (!@main::realcoords) {
+	main::status_message("No current route", "warn");
+	return;
+    }
+
+    my $cgiurl = $live ? "http://bbbike.de/cgi-bin/bbbikeleaflet.cgi" : "http://localhost/bbbike/cgi/bbbikeleaflet.cgi";
+
+    my $coords_string = join("!", map { join(",", @$_) } @main::realcoords);
+
+    require BBBikeUtil;
+    my $url = BBBikeUtil::uri_with_query
+	($cgiurl,
+	 [ %opts, coords => $coords_string ]);
     main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
     require WWWBrowser;
     WWWBrowser::start_browser($url);
