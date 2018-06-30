@@ -20597,6 +20597,8 @@ EOF
 	2::temp 8546,12279 8391,12389 8354,12416
 	2::temp 8095,11919 8104,11984 8091,11992 8091,12011 8091,12023 8099,12022 8102,12043 8099,12058 8107,12068 8122,12147
 	2::temp 7832,12036 7823,12120 7816,12150 7822,12201 7875,12363
+	2::temp 8026,11764 8140,11850 8167,11865 8221,11876
+	2::temp 8016,11770 8020,11937
 EOF
      },
      { from  => 1348929655, # undef, # 
@@ -23628,7 +23630,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-spandau/presse/archiv/20140919.1320.399338.html',
        data  => <<EOF,
-	q4::inwork 1200,14943 1343,14972 1334,14862 1282,14710
+	q4::inwork 1200,14943 1344,14978 1334,14862 1282,14710
 EOF
      },
      { from  => undef, # 
@@ -24725,8 +24727,8 @@ EOF
 EOF
      },
      { from  => 1443650400, # 2015-10-01 00:00
-       until => $isodate2epoch->("2018-06-29 12:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
-       text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Reckeweg und Hackbuschstr., stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Ende Juni 2018',
+       until => $isodate2epoch->("2018-12-31 12:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
+       text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 603 und Finkenkruger Weg, stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Ende 2018',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php',
        data  => <<EOF,
@@ -24737,13 +24739,16 @@ EOF
 #: source_id: 2147342003
 #: source_id: 2147342198
 #: source_id: LMS-BR_r_LMS-BR_121392_LMS-BR_72
+#: osm_watch: way id="57401090" version="12"
 #: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.639561.php (Ende 2018 oder Mitte 2019)
-#: XXX laut fritz Ende Juni 2018, laut vmz Ende 2018
+#: XXX laut fritz Ende 2018, laut vmz Ende 2018
+#: last_checked: 2018-06-30
 #: next_check: 2018-12-31
 # REMOVED ---	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
 # REMOVED ---	q3::inwork; -6861,15129 -6507,15007
-	q3::inwork; -7155,15233 -6888,15139 -6861,15129
+# REMOVED ---	q3::inwork; -7155,15233 -6888,15139 -6861,15129
+	q4::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
 EOF
      },
      { from  => 1442700000, # 2015-09-20 00:00
@@ -25694,7 +25699,7 @@ EOF
        type  => 'handicap',
        source_id => '2147340513',
        data  => <<EOF,
-	q4::inwork; -2517,17431 -2606,17272 -2666,17168 -2728,17038
+	q4::inwork; -2511,17430 -2573,17314 -2599,17269 -2659,17165 -2728,17038
 EOF
      },
      { from  => 1504201168, # 1473285600, # 2016-09-08 00:00
@@ -26321,15 +26326,10 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1530379101, # -> gesperrt-orig --- undef, # XXX
        text  => 'Kaiserin-Augusta-Allee - Neues Ufer: Bauarbeiten, Weg ist komplett gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
-#: XXX Grünanlage wird eingezogen
-#: osm_watch: way id="316695242" version="2"
-#: last_checked: 2017-12-17 (osm)
-#: check_frequency: 120d
 	2::inwork 4561,13244 4547,13139 4576,13115
 EOF
      },
@@ -26581,7 +26581,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.629757.php',
        data  => <<EOF,
-	q4::inwork; -2959,17507 -2517,17431
+	q4::inwork; -2959,17507 -2856,17489 -2511,17430
 EOF
      },
      { from  => 1504896268, # 2017-09-08 20:44
@@ -26898,7 +26898,7 @@ EOF
        text  => 'Vorbergstr.: Bauarbeiten zwischen Gleditschstr. und Akazienstr., Fahrbahn gesperrt, außerdem Sperrung in der Gleditschstr., Ende unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2018-06-22 vvv
+#: last_checked: 2018-06-29 vvv
 # XXX_prog: eigentlich q3-
 	q4::inwork 7136,9223 7012,9222
 	q2::inwork 7136,9223 7130,9316
@@ -27016,7 +27016,7 @@ EOF
 EOF
      },
      { from  => 1522789491, # 2018-04-03 23:04
-       until => $isodate2epoch->("2018-07-15 18:00:00"), # 1527718780, # 1527803999, # 2018-05-31 23:59
+       until => $isodate2epoch->("2018-07-31 18:00:00"), # 1527718780, # 1527803999, # 2018-05-31 23:59
        text  => 'Oranienburger Str.: Bauarbeiten zwischen Wittenauer Str. und Cyclopstr. Richtung Süden; außerdem Einbahnstraßenregelung in der Cyclopstr., offen Richtung Süden; bis Mitte Juli 2018',
        type  => 'handicap',
        source_id => '2147341699',
@@ -27162,8 +27162,8 @@ EOF
 EOF
      },
      { from  => 1526407304, # 2018-05-15 20:01
-       until => $isodate2epoch->("2018-06-29 20:00:00"), # 1530395999, # 2018-06-30 23:59
-       text  => 'Lise-Meitner-Str.: Bauarbeiten zwischen Gaußstr. und Ringbahnbrücke, Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis Ende Juni 2018',
+       until => $isodate2epoch->("2018-07-07 20:00:00"), # 1530395999, # 2018-06-30 23:59
+       text  => 'Lise-Meitner-Str.: Bauarbeiten zwischen Gaußstr. und Ringbahnbrücke, Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis 7. Juli 2018',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.701215.php',
        data  => <<EOF,
@@ -27209,7 +27209,7 @@ EOF
        source_id => '2147342639',
        data  => <<EOF,
 #: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-06-25
+#: last_checked: 2018-06-30
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -27228,13 +27228,11 @@ EOF
      },
      { from  => 1527186848, # 2018-05-24 20:34
        until => 1534543200, # 2018-08-18 00:00
-       text  => 'Am Spreebord: Bauarbeiten, eventuell sind auch Radfahrer betroffen, bis 17.08.2018',
+       text  => 'Am Spreebord: Bauarbeiten, Passieren für Radfahrer möglich, aber sehr eng, Bordsteine, bis 17.08.2018',
        type  => 'handicap',
        data  => <<EOF,
 #: by: fritz
-#: add_fragezeichen: Sind Radfahrer tatsächlich betroffen oder können sie die Baustelle umfahren?
-#: priority: #C
-	q4::inwork 4303,12692 4234,12710 4124,12721 4055,12713 3949,12710 3734,12715
+	q4::inwork 4124,12721 4055,12713 3949,12710
 EOF
      },
      { from  => undef, # 
@@ -27281,12 +27279,11 @@ EOF
      },
      { from  => 1528137944, # 2018-06-04 20:45
        until => $isodate2epoch->("2018-07-13 18:00:00"), # 1531691999, # 2018-07-15 23:59
-       text  => 'Forckenbeckstr.: Bauarbeiten zwischen Mecklenburgische Str. und Cunostr., Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis Mitte Juli 2018',
+       text  => 'Forckenbeckstr.: Bauarbeiten zwischen Mecklenburgische Str. und Cunostr., Fahrbahn gesperrt, der schmale Bürgersteig muss benutzt werden, bis Mitte Juli 2018',
        type  => 'gesperrt',
        source_id => '2147342702',
        data  => <<EOF,
-#: add_fragezeichen: Sind Radfahrer tatsächlich betroffen oder können sie die Baustelle umfahren?
-	2::inwork 4106,8031 3779,8105 3665,8131 3218,8233 3117,8248
+	q3::inwork 3665,8131 3218,8233 3117,8248
 EOF
      },
      { from  => 1527976800, # 2018-06-03 00:00
@@ -27343,8 +27340,8 @@ EOF
 EOF
      },
      { from  => 1529438047, # 2018-06-19 21:54
-       until => $isodate2epoch->("2018-06-29 18:00:00"), # 1530395999, # 2018-06-30 23:59
-       text  => 'Frank-Schweitzer-Str.: Bauarbeiten zwischen Landsberger Allee und Georg-Knorr-Platz, evtl. sind auch Radfahrer betroffen, bis Ende Juni 2018',
+       until => $isodate2epoch->("2018-07-10 18:00:00"), # 1530395999, # 2018-06-30 23:59
+       text  => 'Frank-Schweitzer-Str.: Bauarbeiten zwischen Landsberger Allee und Georg-Knorr-Platz, evtl. sind auch Radfahrer betroffen, bis Mitte Juli 2018',
        type  => 'gesperrt',
        source_id => '2147342779',
        data  => <<EOF,
@@ -27385,6 +27382,15 @@ EOF
 	q4::inwork 13176,9302 13098,9205
 	q4::inwork 13188,9134 13298,9252
 #: last_checked ^^^
+EOF
+     },
+     { from  => 1531519200, # 2018-07-14 00:00
+       until => 1546297199, # 2018-12-31 23:59
+       text  => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. undThorwaldsenstr., Einbahnstraße offen Richtung Osten, voraussichtlich von Mitte Juli 2018 bis Ende Dezember 2018',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php',
+       data  => <<EOF,
+	q4::inwork; 6168,6467 6083,6451 5823,6413
 EOF
      },
     );

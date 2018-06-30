@@ -2905,6 +2905,8 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 	2::temp 8546,12279 8391,12389 8354,12416
 	2::temp 8095,11919 8104,11984 8091,11992 8091,12011 8091,12023 8099,12022 8102,12043 8099,12058 8107,12068 8122,12147
 	2::temp 7832,12036 7823,12120 7816,12150 7822,12201 7875,12363
+	2::temp 8026,11764 8140,11850 8167,11865 8221,11876
+	2::temp 8016,11770 8020,11937
 ',
          'from' => 1528915226,
          'id' => 2341,
@@ -3706,20 +3708,23 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147342003
 #: source_id: 2147342198
 #: source_id: LMS-BR_r_LMS-BR_121392_LMS-BR_72
+#: osm_watch: way id="57401090" version="12"
 #: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.639561.php (Ende 2018 oder Mitte 2019)
-#: XXX laut fritz Ende Juni 2018, laut vmz Ende 2018
+#: XXX laut fritz Ende 2018, laut vmz Ende 2018
+#: last_checked: 2018-06-30
 #: next_check: 2018-12-31
 # REMOVED ---	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
 # REMOVED ---	q3::inwork; -6861,15129 -6507,15007
-	q3::inwork; -7155,15233 -6888,15139 -6861,15129
+# REMOVED ---	q3::inwork; -7155,15233 -6888,15139 -6861,15129
+	q4::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
 ',
          'from' => 1443650400,
          'id' => 2740,
          'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php',
-         'text' => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Reckeweg und Hackbuschstr., stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Ende Juni 2018',
+         'text' => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 603 und Finkenkruger Weg, stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Ende 2018',
          'type' => 'handicap',
-         'until' => 1530266400
+         'until' => 1546254000
        },
        undef,
        undef,
@@ -3932,20 +3937,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1534802399
        },
-       {
-         'data' => '#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
-#: XXX Grünanlage wird eingezogen
-#: osm_watch: way id="316695242" version="2"
-#: last_checked: 2017-12-17 (osm)
-#: check_frequency: 120d
-	2::inwork 4561,13244 4547,13139 4576,13115
-',
-         'from' => undef,
-         'id' => 2884,
-         'text' => 'Kaiserin-Augusta-Allee - Neues Ufer: Bauarbeiten, Weg ist komplett gesperrt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: by: http://www.tagesspiegel.de/berlin/bezirke/spandau/berlin-spandau-ein-wochenmarkt-schliesst-ein-anderer-oeffnet/19717792.html#
@@ -4116,25 +4108,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1537200000
        },
-       {
-         'data' => '#: source_id: LMS-BR_r_LMS-BR_108511_LMS-BR_72
-#: by: http://www.berliner-woche.de/zehlendorf/bauen/fertigstellung-der-berlepschstrasse-verzoegert-sich-um-ein-halbes-jahr-d137942.html (sogar "bis Ende März")
-#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.683398.php
-#: by: http://www.berliner-woche.de/zehlendorf/bauen/strassensanierung-in-der-berlepschstrasse-vezoegert-sich-weiter-d146418.html (Ende Mai)
-#: source_id: 2147341799
-	q4::inwork -468,1919 -343,1983 -285,2015 -226,2048
-',
-         'from' => 1518290143,
-         'id' => 2932,
-         'source_id' => '2147341799',
-         'text' => 'Berlepschstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Ende Juni 2018',
-         'type' => 'handicap',
-         'until' => 1530266400
-       },
+       undef,
        undef,
        undef,
        {
-         'data' => '#: last_checked: 2018-06-22 vvv
+         'data' => '#: last_checked: 2018-06-29 vvv
 # XXX_prog: eigentlich q3-
 	q4::inwork 7136,9223 7012,9222
 	q2::inwork 7136,9223 7130,9316
@@ -4189,7 +4167,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => '2147341699',
          'text' => 'Oranienburger Str.: Bauarbeiten zwischen Wittenauer Str. und Cyclopstr. Richtung Süden; außerdem Einbahnstraßenregelung in der Cyclopstr., offen Richtung Süden; bis Mitte Juli 2018',
          'type' => 'handicap',
-         'until' => 1531670400
+         'until' => 1533052800
        },
        {
          'data' => '#: source_id: 2147342390
@@ -4278,9 +4256,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1526407304,
          'id' => 2955,
          'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.701215.php',
-         'text' => 'Lise-Meitner-Str.: Bauarbeiten zwischen Gaußstr. und Ringbahnbrücke, Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis Ende Juni 2018',
+         'text' => 'Lise-Meitner-Str.: Bauarbeiten zwischen Gaußstr. und Ringbahnbrücke, Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis 7. Juli 2018',
          'type' => 'handicap',
-         'until' => 1530295200
+         'until' => 1530986400
        },
        undef,
        {
@@ -4299,7 +4277,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-06-25
+#: last_checked: 2018-06-30
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -4325,13 +4303,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: by: fritz
-#: add_fragezeichen: Sind Radfahrer tatsächlich betroffen oder können sie die Baustelle umfahren?
-#: priority: #C
-	q4::inwork 4303,12692 4234,12710 4124,12721 4055,12713 3949,12710 3734,12715
+	q4::inwork 4124,12721 4055,12713 3949,12710
 ',
          'from' => 1527186848,
          'id' => 2961,
-         'text' => 'Am Spreebord: Bauarbeiten, eventuell sind auch Radfahrer betroffen, bis 17.08.2018',
+         'text' => 'Am Spreebord: Bauarbeiten, Passieren für Radfahrer möglich, aber sehr eng, Bordsteine, bis 17.08.2018',
          'type' => 'handicap',
          'until' => 1534543200
        },
@@ -4371,13 +4347,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1538258400
        },
        {
-         'data' => '#: add_fragezeichen: Sind Radfahrer tatsächlich betroffen oder können sie die Baustelle umfahren?
-	2::inwork 4106,8031 3779,8105 3665,8131 3218,8233 3117,8248
+         'data' => '	q3::inwork 3665,8131 3218,8233 3117,8248
 ',
          'from' => 1528137944,
          'id' => 2966,
          'source_id' => '2147342702',
-         'text' => 'Forckenbeckstr.: Bauarbeiten zwischen Mecklenburgische Str. und Cunostr., Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis Mitte Juli 2018',
+         'text' => 'Forckenbeckstr.: Bauarbeiten zwischen Mecklenburgische Str. und Cunostr., Fahrbahn gesperrt, der schmale Bürgersteig muss benutzt werden, bis Mitte Juli 2018',
          'type' => 'gesperrt',
          'until' => 1531497600
        },
@@ -4426,9 +4401,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1529438047,
          'id' => 2972,
          'source_id' => '2147342779',
-         'text' => 'Frank-Schweitzer-Str.: Bauarbeiten zwischen Landsberger Allee und Georg-Knorr-Platz, evtl. sind auch Radfahrer betroffen, bis Ende Juni 2018',
+         'text' => 'Frank-Schweitzer-Str.: Bauarbeiten zwischen Landsberger Allee und Georg-Knorr-Platz, evtl. sind auch Radfahrer betroffen, bis Mitte Juli 2018',
          'type' => 'gesperrt',
-         'until' => 1530288000
+         'until' => 1531238400
        },
        {
          'data' => '#: next_check_id: VERLWERDERSTR-2018
@@ -4455,6 +4430,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Friesenstr.: Fahrbahn für Radfahrer verboten',
          'type' => 'gesperrt',
          'until' => 1558022400
+       },
+       undef,
+       {
+         'data' => '	q4::inwork; 6168,6467 6083,6451 5823,6413
+',
+         'from' => 1531519200,
+         'id' => 2976,
+         'source_id' => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php',
+         'text' => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. undThorwaldsenstr., Einbahnstraße offen Richtung Osten, voraussichtlich von Mitte Juli 2018 bis Ende Dezember 2018',
+         'type' => 'handicap',
+         'until' => 1546297199
        }
      
 );

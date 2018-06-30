@@ -35,13 +35,13 @@
 # REMOVED --- #: next_check_id: MOELLENDORFFSTR-2017 vvv --- #: last_checked: 2017-11-09 vvv --- #: next_check: 2017-11-30 vvv --- G¸rtelstr. -> Mˆllendorffstr.: Umweg zur Ampel	DH:len=70 15294,11964 15361,12071 15420,12178 --- G¸rtelstr. -> links in die Frankfurter Allee: Umweg zur Ampel	DH:len=70 15294,11964 15361,12071 15117,12106 --- Frankfurter Allee -> links in die Mˆllendorffstr.: Umweg bis Wilhelm-Guddorf-Str., Fuﬂg‰nger	DH:len=270:h=q2-,270 15117,12106 15361,12071 15420,12178 --- Frankfurter Allee geradeaus: Umweg bis Wilhelm-Guddorf-Str., Fuﬂg‰nger	DH:len=200:h=q2-,200 15117,12106 15361,12071 15670,12022 --- Mˆllendorffstr. -> links in die Frankfurter Allee: Umweg bis Wilhelm-Guddorf-Str., Fuﬂg‰nger	DH:len=250:h=q2-,250 15420,12178 15361,12071 15670,12022 --- Frankfurter Allee -> G¸rtelstr.: kleiner Umweg zur Ampel	DH:len=30:h=q3,30 15670,12022 15361,12071 15294,11964 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
 # 
 #: next_check_id: ZEUGHAUS-2014 vvv
-#: last_checked: 2018-06-18 vvv
-#: next_check: 2018-06-28 vvv
+#: last_checked: 2018-06-28 vvv
+#: check_frequency: 60d vvv
 Schinkelplatz -> Am Zeughaus: Umweg zur Ampel	DH:len=50 9996,12401 9984,12426 9956,12523
 UdL -> Am Zeughaus: Umweg zur Ampel	DH:len=50 9934,12420 9984,12426 9956,12523
 Am Zeughaus -> Schinkelplatz: Umweg zur Ampel	DH:len=50 9956,12523 9984,12426 9996,12401
 Schinkelplatz -> UdL: Umweg zur Ampel	DH:len=50 9996,12401 9984,12426 9934,12420
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
@@ -140,6 +140,9 @@ Heerstr. -> Badenallee: Fuﬂg‰ngerampel	DH:len=200:tl 704,11273 943,11302 743,114
 # 
 Bundesallee/Spichernstr.: zus‰tzliche Ampel	DH:tl 5464,9914 5463,9961 5450,10338
 # 
+Ruhlebener Str. -> Brunsb¸tteler Damm: zus‰tzliche Ampel	DH:tl -3471,13807 -3625,13889 -3824,13947
+Ruhlebener Str. -> Klosterstr.: zus‰tzliche Ampel	DH:tl -3471,13807 -3625,13889 -3678,13801
+# 
 Gregor-Mendel-Str. -> Schorlemerallee: Umweg zur ‹berquerungsmˆglichkeit	DH:len=40 3650,6665 3664,6523 3836,6550
 # 
 Siegertweg -> Manfred-von-Richthofen-Str.: Umweg zur ‹berquerungsmˆglichkeit	DH:len=70 9042,7462 9070,7493 8956,7598
@@ -163,8 +166,8 @@ Zeppelinstr. -> Edisonstr.: Fuﬂg‰ngerampel	DH:len=20:tl 18041,6924 17919,6968 17
 # 
 #: next_check_id: HOLZMARKT-2017
 #: XXX hier wird noch eine zus‰tzliche Ampel entstehen
-#: last_checked: 2018-06-24 vvv
-#: next_check: 2018-08-30 vvv
+#: last_checked: 2018-06-30 vvv
+#: next_check: 2018-08-31 vvv
 Schillingstr. -> Holzmarktstr.: Ampel	DH:len=90:tl 11452,12318 11388,12202 11513,12138
 Holzmarktstr. -> Schillingstr.: linker Gehweg	DH:h=q2,45 11347,12223 11388,12202 11452,12318
 #: next_check ^^^
@@ -224,9 +227,9 @@ Bayreuther Str.: Tunnelsanierung am Wittenbergplatz	DH:h=q4,30 6380,10704 6353,1
 An der Urania - CourbiËrestr.: linker Gehweg	DH:h=q3,85 6740,10755 6685,10690 6725,10641
 # 
 Schlichtallee - Fischerstr.: Pollerreihe	DH:t=3 15880,10680 15970,10755 16080,10743
-#
+# 
 #: next_check_id: RHINSTRASSENBRUECKE-2018
-#: last_checked: 2018-04-07 vvv
+#: last_checked: 2018-06-29 vvv
 #: check_frequency: 180d vvv
 Rhinstr.: westliche Br¸cke gesperrt, Radweg auf der linken Seite benutzen	DH:len=50:h=q2,570:tl 18235,13236 18220,12450 18216,12262 18216,12239 18215,12123
 Rhinstr.: westliche Br¸cke gesperrt, bis zur Ampel zur¸ckfahren und Straﬂenseite wechseln	DH:len=420:h=q2,370 18180,12262 18216,12262 18216,12239 18215,12123
@@ -237,7 +240,7 @@ Rhinstr.: westliche Br¸cke gesperrt, Radweg auf der linken Seite benutzen	DH:len
 #: next_check_id: GRENZALLEE-2014
 #: valid: 20140224-20180630
 #: last_checked: 2016-08-23
-#: next_check: 2018-06-30
+#: next_check: 2019-12-31
 Neukˆllnische Allee/Grenzallee: ‹berquerung der Kreuzung nur ¸ber linken Gehweg mˆglich, Zeitverlust!	DH:t=60:len=30 14567,6810 14344,7003 14196,7086
 # 
 Schulze-Boysen-Str. - Ruschstr.: Fuﬂg‰ngerampel auf der linken Seite benutzen	DH:t=15 15836,11840 15863,11992 15879,12131
@@ -290,3 +293,6 @@ an der Spindlersfelder Straﬂe: Umweg zur Straﬂenquerung	DH:len=30 21139,4293 211
 Helmstr. -> Hauptstr.: Fuﬂg‰ngerampel	DH:tl 7444,9148 7382,9187 7363,9152
 Vorbergstr. -> Hauptstr.: Fuﬂg‰ngerampel	DH:tl 7308,9163 7363,9152 7382,9187
 # 
+Daumstr. -> Glindowseestr.: Umweg zur Fuﬂg‰ngerfurt	DH:len=30 -1675,16813 -1710,16735 -1652,16721
+Langer-See-Str. -> Daumstr.: Umweg zur Fuﬂg‰ngerfurt	DH:len=30 -1857,16766 -1710,16735 -1675,16813
+Langer-See-Str. -> Glindowseestr: Umweg zur Fuﬂg‰ngerfurt	DH:len=30 -1857,16766 -1710,16735 -1652,16721

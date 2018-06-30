@@ -1531,7 +1531,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 12821,20646
 	X 15620,19809
 	X 15642,19179
-	X -5039,15618
+	X -5036,15625
 	X -4544,15940
 	X -3997,15664
 	X -3715,16710
@@ -2662,7 +2662,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
 #: last_checked: 2018-06-18
-#: next_check: 2018-06-28
+#: check_frequency: 60d
 	F::inwork 9984,12426
 # 
 #: next_check_id: UDLU5-2014 vvv
@@ -2762,7 +2762,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 4788,8318
 	X 4788,8354
 	X 11214,16043
-	X -3892,13960
+	X -3891,13968
+#: note: Anforderungsampel für linksabbiegene Radfahrer (Tegeler Weg -> Max-Dohrn-Str.)
 	X 3005,13728
 	X 23657,5467
 #: note: Anforderungsampel
@@ -2791,8 +2792,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X 18878,9517
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
-#: valid: 20140224-20180630 vvv
-#: next_check: 2018-06-30 vvv
+#: valid: 20140224-20191231 vvv
+#: next_check: 2019-12-31 vvv
 #: note: Ampel befindet sich nordwestlich der Kreuzung
 #: last_checked: 2018-06-06
 	F::inwork 14567,6810
@@ -2940,6 +2941,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X::inwork 16279,5170
 # 
 	X 28176,5167
+	X -6861,15129
 # 
 ################################################################################
 #: note: Potsdam vvv

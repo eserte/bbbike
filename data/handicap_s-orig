@@ -21,7 +21,7 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualit‰t danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-06-26
+#: last_checked: 2018-06-29
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
@@ -31,14 +31,14 @@ Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,1
 #: check_frequency: 90d
 Dˆringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
-#: last_checked: 2018-06-25
+#: last_checked: 2018-06-29
 Lange Str.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 # REMOVED (beendet) --- #: XXX_prog BS (ˆstliche Seite) --- #: last_checked: 2018-06-12 vvv --- #: check_frequency: 7d vvv --- Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstein	q2::inwork 11845,12292 11635,12398 --- Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstein	q4::inwork 11635,12398 11607,12412 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: KAUFHOF-2018
 #: XXX_prog BS (auf der ˆstlichen Seite, ansonsten q3+)
-#: last_checked: 2018-06-25
+#: last_checked: 2018-06-29
 #: check_frequency: 90d
 M¸ncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
 # 
@@ -132,12 +132,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 ### Mitte ###
 # 
 # REMOVED (mittlerweile existiert auch eine Absenkung) --- #: next_check_id: OTTOBRAUN-2015 --- #: XXX vermutlich im ausgebauten Zustand: q1  --- #: last_checked: 2018-03-16 --- #: check_frequency: 14d --- Wadzeckstr. - Mollstr.: Behinderungen wegen Bauarbeiten mˆglich	q2::inwork 11315,13210 11399,13333
-# 
-#: next_check_id: ROSSSTRASSENBRUECKE-2018
-#: last_checked: 2018-06-07
-#: check_frequency: 21d
-M‰rkisches Ufer: Bauarbeiten, Engstelle	q3+::inwork 10687,11853 10869,11949
-# 
+# REMOVED --- #: next_check_id: ROSSSTRASSENBRUECKE-2018 --- #: last_checked: 2018-06-07 --- #: check_frequency: 21d --- M‰rkisches Ufer: Bauarbeiten, Engstelle	q3+::inwork 10687,11853 10869,11949
 # REMOVED --- #: source_id: 2147341587 --- #: last_checked: 2017-11-01 vvv --- #: check_frequency: 21d vvv --- J‰gerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q2::inwork 9195,11972 9393,12000 --- J‰gerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q3::inwork 9393,12000 9523,12019
 # REMOVED --- #: last_checked: 2015-06-10 --- Am Zirkus: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9167,13046 9137,13032 9090,13009
 # REMOVED --- #: last_checked: 2016-06-01 --- Kommandantenstr.: Bauarbeiten, Einbahnstraﬂe	q2::inwork; 10437,11352 10389,11390
@@ -145,17 +140,23 @@ M‰rkisches Ufer: Bauarbeiten, Engstelle	q3+::inwork 10687,11853 10869,11949
 # REMOVED --- #: by: wosch --- #: confirmed_by: srt --- #: source_id: 2147340953 --- #: XXX laut VMZ mittlerweile entfernt, bei rbbtext bis Ende Mai 2017 --- #: last_checked: 2017-04-28 --- #: next_check: 2017-05-19 --- Schloﬂplatz: Engstelle wegen Bauarbeiten	q3::inwork 10285,12306 10357,12356
 # REMOVED --- #: last_checked: 2017-03-24 --- Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
+#: source_id: 2147342720
+#: last_checked: 2018-06-30
+#: next_check: 2018-11-30
+#: valid: -20181130
+Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q3::inwork 11092,12375 11139,12243
+# 
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: XXX man kann auf dem s¸dlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2018-06-24
+#: last_checked: 2018-06-28
 Voltairestr.: Fahrbahn unter Umst‰nden wegen Baustelle gesperrt, Ausweichen auf Gehweg	q2- 11329,12497 11209,12430
 # 
 #: next_check_id: ZIEGELSTR-2016
 #: XXX Ende der Bauarbeiten?
 #: way id="507023458" version="1"
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
-#: last_checked: 2018-05-17
+#: last_checked: 2018-06-30
 #: check_frequency: 45d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # 
@@ -179,6 +180,7 @@ Sch¸tzenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 # 
 #: next_check_id: ALEXANDRINENSTR-2018
 # REMOVED --- : osm_watch: note 814191 1
+#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_26_3435_3558_online.pdf (Grundst¸cksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschr‰nkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: last_checked: 2018-06-26
 #: check_frequency: 30d
@@ -201,7 +203,7 @@ Alexandrinenstr.: Zugang zur Sebastianstr. nur ¸ber sehr engen Trampelpfad mˆgli
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
 # REMOVED --- #: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualit‰t -> qualitaet_s-orig-Eintrag revidieren --- #: last_checked: 2013-11-21 --- Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2018-06-21 vvv
+#: last_checked: 2018-06-30 vvv
 #: check_frequency: 60d vvv
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9984,12426 9996,12401 10058,12290
 Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 10008,12274 10058,12290
@@ -270,14 +272,14 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwo
 # 
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
-#: last_checked: 2018-06-18
-#: next_check: 2018-06-28
+#: last_checked: 2018-06-28
+#: check_frequency: 60d
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # 
 #: next_check_id: STAATSOPER-2014 vvv
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html
-#: last_checked: 2018-06-21 vvv
+#: last_checked: 2018-06-30 vvv
 #: check_frequency: 30d vvv
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9883,12251 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
@@ -297,7 +299,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
 #: source_id: LMS-BR_r_LMS-BR_197
 #: osm_watch: way id="194962375" version="8"
-#: last_checked: 2018-06-23
+#: last_checked: 2018-06-30
 #: check_frequency: 7d
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q4::inwork 10601,12521 10704,12595
 # 
@@ -305,7 +307,7 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q4::inwork 10601,12521
 # 
 #: next_check_id: KARLMARXALLEE-2018
 #: source_id: 2147342756
-#: last_checked: 2018-06-19
+#: last_checked: 2018-06-30
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 # 
 # REMOVED (wieder offen) --- #: next_check_id: SPANDAUERSTR-2014 --- #: source_id: INKO_089389 (eigentlich hier nur die Spandauer Str. erw‰hnt) --- #: XXX siehe auch Eintrag zur Spandauer Str. in qualitaet_s-orig --- #: last_checked: 2014-03-24 --- #: check_frequency: 7d --- #: priority: #A --- Rathausstr.: Sperrung an der Spandauer Str., Ausweichen auf Gehweg	q4 10584,12507 10601,12521
@@ -415,7 +417,7 @@ Mˆckernstr.: Bauarbeiten, Einbahnstraﬂe, ehemaliger Radweg kann benutzt werden	q
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php
 #: note: wenn nichts in der Philharmonie los ist, kann man auch schneller durchkommen (q3+)
 #: osm_watch: way id="531952542" version="4"
-#: last_checked: 2018-06-23
+#: last_checked: 2018-06-29
 Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4+::inwork 7970,11441 7965,11467 8005,11627
 # 
 #: last_checked: 2018-06-23
@@ -514,7 +516,15 @@ Karl-Marx-Str.: Bauarbeiten zwischen Rollbergstr. und Briesestr., Richtung S¸den
 ### Schˆneberg ###
 # 
 # REMOVED (fertig) --- #: next_check_id: HAUPTSTRAMPEL-2018 --- #: source_id: 2147342260 --- #: source_id: LMS-BR_r_LMS-BR_123516_LMS-BR_72 --- #: source_id: LMS-BR_r_LMS-BR_123515_LMS-BR_72 --- #: source_id: 2147342688 --- #: last_checked: 2018-05-30 vvv --- #: next_check: 2018-06-21 vvv --- # REMOVED --- #: valid: -20180403 vvv --- #: priority: #A vvv --- Helmstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q2::inwork 7444,9148 7382,9187 --- Vorbergstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q3::inwork 7363,9152 7308,9163 --- #: priority ^^^ --- # REMOVED --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
-# REMOVED (wurde entfernt) --- #: XXX: laut fritz bis Ende August, laut vmz nur bis Mitte Juni 2018 --- #: source_id: 2147342169 --- #: last_checked: 2018-05-08 --- #: next_check: 2018-06-15 --- #: valid: -20180827 --- #: priority: #A --- Groﬂgˆrschenstr.: Bauarbeiten an der Einm¸ndung Potsdamer Str.	q3::inwork 7609,9463 7507,9458
+# 
+#: XXX: laut fritz bis Ende August, laut vmz nur bis Mitte Juni 2018
+#: source_id: 2147342169
+#: priority: #A
+#: last_checked: 2018-06-29
+#: next_check: 2018-08-27
+#: valid: -20180827
+Groﬂgˆrschenstr.: Bauarbeiten an der Einm¸ndung Potsdamer Str.	q3::inwork 7609,9463 7507,9458
+# 
 # REMOVED --- #: last_checked: 2017-06-06 --- #: next_check: 2017-06-17 --- Bautzener Str.: Bauarbeiten an der Groﬂgˆrschenstr., auf Gehweg ausweichen	q4::inwork 8186,9380 8185,9338
 # REMOVED --- #: source_id: LMS-BR_r_LMS-BR_76371 --- # #: source_id: 2147340485 --- # #: last_checked: 2016-09-12 --- # #: next_check: 2016-10-14 --- # #: valid: -20161014
 # REMOVED Akazienstr.: Bauarbeiten, Fahrbahn zwischen Apostel-Paulus-Str. und Hauptstr. gesperrt	q4::inwork 7201,8870 7107,9030 7044,9163
@@ -1091,7 +1101,7 @@ Langhoffstr.: enge Straﬂe, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
 #: osm_watch: way id="223184082" version="2"
-#: last_checked: 2018-02-10
+#: last_checked: 2018-06-29
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der groﬂen Steigung/Gef‰lles nur Schrittgeschwindigkeit mˆglich	q4 -1663,4218 -1592,4268
@@ -1303,7 +1313,7 @@ Albert-Brodersen-Allee: Fuﬂg‰nger	q2 20862,12027 20836,11768
 (Altvaterstr. - Spanische Allee): eng	q1 -3223,3034 -3368,2942 -3378,2936
 Feuchtwangerweg: eng, Fuﬂg‰nger	q1 15835,1747 15788,1747
 Mondsteinpfad: Fuﬂg‰nger	q1 11181,1884 11182,1976
-(Falkenseer Chaussee - Spektelake): Fuﬂg‰nger	q1 -7092,16224 -7148,16119 -7178,16066 -7208,15924
+(Falkenseer Chaussee - Spektelake): Fuﬂg‰nger	q1 -7092,16224 -7114,16176 -7153,16123 -7175,16089 -7211,15920
 (Radweg parallel zur Potsdamer Chaussee): eng und kurvenreich	q1 -7414,8970 -7530,8825 -7539,8788 -7597,8735 -7729,8553 -7783,8524
 K‰tchenweg: sehr eng	q2 -6975,-1250 -6914,-1218
 Grassoweg: Gehweg f¸r Radfahrer freigegeben	q1 -6193,1097 -6216,1192
@@ -2202,13 +2212,13 @@ Jenneweg: einige Fuﬂg‰nger, eng, Bordstein	q3 -3978,14766 -4015,14744
 #: XXX_prog BS an der J¸denstr., ansonsten w‰re es q1
 (Viktoriaufer/J¸denstr. - Am Juliusturm): einige Fuﬂg‰nger, Bordstein	q2 -3239,14641 -3209,14662
 (Kirchhofstr., Verl‰ngerung): einige Fuﬂg‰nger	q1 -3295,15356 -3294,15366 -3359,15426
-(Radelandstr. - Hubertusstr.): einige Fuﬂg‰nger, eng	q2 -4155,16445 -4153,16463 -4153,16562 -4154,16572 -4152,16580 -4149,16670 -4150,16676 -4149,16682 -4151,16772 -4152,16779 -4151,16787 -4150,16849 -4151,16857 -4150,16864 -4149,16929 -4154,16947
-Am Spektesee: einige Fuﬂg‰nger	q1 -5791,15026 -5780,15127 -5758,15153 -5707,15216
+(Radelandstr. - Hubertusstr.): einige Fuﬂg‰nger, eng	q2 -4155,16445 -4153,16463 -4153,16562 -4154,16572 -4152,16580 -4149,16670 -4150,16676 -4149,16682 -4151,16772 -4152,16779 -4151,16787 -4150,16849 -4151,16857 -4150,16864 -4149,16929 -4152,16942
+Am Spektesee: einige Fuﬂg‰nger	q1 -5795,15026 -5780,15127 -5758,15153 -5707,15216
 Am Spektesee: einige Fuﬂg‰nger, Badestelle	q2 -5707,15216 -5706,15255 -5732,15319
 Am Spektesee: einige Fuﬂg‰nger	q1 -5732,15319 -5861,15342 -5936,15352 -5989,15390 -6018,15394 -6030,15396 -6054,15399
 (Spektefeld): einige Fuﬂg‰nger	q1 -5633,15686 -5674,15609 -5658,15544 -5676,15507 -5665,15472 -5673,15365 -5722,15321 -5732,15319
 (Spektefeld): einige Fuﬂg‰nger	q1 -5674,15609 -5743,15634 -5845,15653 -5882,15644 -5936,15620 -5983,15572 -6011,15481 -5989,15390
-(Spektefeld): einige Fuﬂg‰nger	q1 -6011,15481 -6018,15481 -6018,15394 -6008,15338 -6084,15276 -6120,15249 -6147,15204 -6176,15168
+(Spektefeld): einige Fuﬂg‰nger	q1 -6011,15481 -6018,15481 -6018,15394 -6008,15338 -6084,15276 -6120,15249 -6147,15204 -6184,15162
 (Wolfshorst - Spektewiesen): einige Fuﬂg‰nger, eng	q2 -6573,15254 -6584,15311
 (am Burgwallgraben): einige Fuﬂg‰nger, eng	q2 -3654,13293 -3644,13232 -3570,13116 -3457,13028 -3401,13013 -3371,13020 -3348,13055 -3337,13111
 (Ziegelhof - Burgwallgraben): Fuﬂg‰nger	q2 -3651,13476 -3654,13293
@@ -2269,7 +2279,7 @@ Wuhlestr. [Wohngebiet]: Fuﬂg‰nger	q1 21580,13583 21430,13602
 (oberer Wuhlewanderweg): Fuﬂg‰nger, Kinderspielpl‰tze	q1- 22864,14556 22851,14603 22756,14787 22702,14880 22690,14915 22643,14977 22599,15030 22588,15056 22577,15109
 #: XXX_prog BS an beiden Seiten, sonst entfernen
 Unterbaumstr.: Bordsteine	q2 8488,12920 8502,12935
-(Hofackerzeile - Kurt-Schumacher-Damm): einige Fuﬂg‰nger	q1 2769,14482 2793,14374
+(Hofackerzeile - Kurt-Schumacher-Damm): einige Fuﬂg‰nger	q2 2769,14482 2770,14420 2788,14364
 #: XXX_prog BS an der westlichen Seite, sonst entfernen
 (Charles-Corcelle-Ring - Dohnagestell/Am Schwarzen Graben): Bordstein	q2 4775,15929 4833,15916
 #: XXX_prog BS an der Charles-Corcelle-Ring-Seite, ansonsten q3
@@ -2463,6 +2473,8 @@ Iranische Str.: einige Fuﬂg‰nger	q1 7843,16524 7713,16557 7447,16613
 (Mauerweg Forst Spandau): sehr eng	q4+ -7032,19431 -7069,19436 -7397,19289
 (Glindowseestr. - Plauer-See-Str.): einige Fuﬂg‰nger	q1 -1652,16721 -1666,16652 -1685,16583 -1699,16513 -1716,16447 -1734,16375
 (Rˆddelinseeweg - Kindelseeweg): einige Fuﬂg‰nger	q1 -1705,16515 -1699,16513 -1661,16506
+(Wolzenseeweg - Wittweseeweg): einige Fuﬂg‰nger	q1 -1721,16448 -1716,16447 -1680,16441
+(Quenzseeweg - Strausseeweg): einige Fuﬂg‰nger	q1 -1671,16653 -1666,16652 -1627,16643
 (Beetzseeweg - Zeuthener-See-Weg): einige Fuﬂg‰nger	q1 -1689,16584 -1685,16583 -1647,16573
 (Mall of Berlin): Einkaufszentrum, Fuﬂg‰nger	q4 8837,11676 8834,11536
 (Hohenschˆnhauser Str. - Falkenberger Krugwiesen): einige Fuﬂg‰nger, eng	q1 19183,17444 19074,17533 19017,17609 18993,17630 18965,17675 18937,17738
@@ -2787,6 +2799,9 @@ Mˆckernkiez: Rampe	q3 8778,9759 8757,9748 8735,9737
 #: XXX_prog f¸r Anh‰nger nicht umfahrbar, f¸r Normalr‰der recht knapp
 (Fredersdorfer Str. - Hildegard-Jadamowitz-Str.): zwei Bodenschwellen	q1 12908,12280 12883,12118 12893,12077 12923,12043
 Kˆnigsheide: enge und ¸bersichtliche Stelle	q3 16279,5170 16320,5187
+Alfons-Loewe-Str.: Regenablaufrinnen	q1 -8066,15595 -7975,15904
+Pepitapromenade: einige Fuﬂg‰nger	q1 -2573,17314 -2873,17369
+Pepitapromenade: einige Fuﬂg‰nger	q1 -2856,17489 -2873,17369 -2878,17324
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -3479,7 +3494,7 @@ Rathener Str.: enge Straﬂe	q1 24228,14644 24271,14576 24359,14543
 Stanzer Zeile: enge Straﬂe	q0- 6180,376 6130,449 6112,547 6089,643 6066,821 6067,865 6080,1011 6106,1133
 # 
 #: by: rjoop (Foto):
-(Uferweg an der Havel): enge Br¸cke	q1 -2413,18770 -2434,18832 -2460,18918
+(Uferweg an der Havel): enge Br¸cke	q1 -2401,18776 -2434,18832 -2460,18918
 # 
 #: by: Jˆrg Schulze:
 #: confirmed_by: Beate (wolter) "Keine gute Straﬂe! Beidseitiges Parken, gerade Platz f¸r Autobreite, am Ende Ausfahrt Parkplatz Reichelt, sehr un¸bersichtlich"
@@ -4235,7 +4250,8 @@ Wesenberger Ring: enge Straﬂe	q1 13163,3582 13206,3674 13238,3794 13229,3836 132
 #: by: PS (peter.sch...):
 Schmale Gasse: enge Straﬂe	q1 23883,4328 24055,4348 24075,4417
 #: by: Thomas (theo...)
-Albrechtshofer Weg: enge Straﬂe	q1 -7517,15858 -7642,15840 -7747,15842 -7865,15867 -7975,15904
+#: corrected_by: srt (nicht besonders eng)
+Albrechtshofer Weg: enge Straﬂe	q0- -7517,15858 -7642,15840 -7751,15847 -7865,15867 -7975,15904 -8039,15930
 #: by: Andy (compstars):
 #: by: Tatjana Br¸hl: enge Straﬂe, q0
 Faucherweg: enge Straﬂe	q1 -1299,14797 -1251,14772 -1207,14781 -1141,14814 -896,14888
