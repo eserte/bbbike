@@ -27401,7 +27401,6 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/friedrichshagen/c-verkehr/der-mueggelseedamm-ist-dicht_a170522',
        data  => <<EOF,
-	q4::inwork; 23942,5338 24070,5272
 	q4::inwork; 25519,4830 25552,4829 25720,4832 25802,4823 25948,4823 26085,4865 26236,4926 26340,4942 26500,4936 26620,4936
 EOF
      },
