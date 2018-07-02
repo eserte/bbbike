@@ -2411,7 +2411,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juni von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juli von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3360,15 +3360,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::inwork 14257,6895 14153,6795
-',
-         'from' => 1393110000,
-         'id' => 2540,
-         'text' => 'Grenzallee: vollständige Sperrung zwischen Bergiusstr. (Autobahnausfahrt) und Neuköllnische Allee, ab 24.2.2014 bis Mitte 2018',
-         'type' => 'gesperrt',
-         'until' => 1530395999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3509,6 +3501,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: am Mo, den 2018-02-26 gegen 18:50: offen
 #: note: am Fr, den 2018-04-04 gegen 18:40: offen
 #: note: am Mo, den 2018-05-28 gegen 18:40: offen
+#: note: am So, den 2018-07-01 gegen 12:30: offen
 #: tempex: volatile vvv
 	3::night 14563,8243 14425,8116 14419,8112
 	3::night 14419,8112 14425,8116 14563,8243
@@ -3952,17 +3945,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: next_check_id: RIGAER-2018
-#: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
-	2::inwork 14538,12371 14748,12314
-',
-         'from' => undef,
-         'id' => 2888,
-         'text' => 'Rigaer Str.: Baustelle, während der Arbeitszeiten (Mo bis Fr, 6 bis 17 Uhr) kein Durchgang möglich',
-         'type' => 'gesperrt',
-         'until' => 1530439200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3979,9 +3962,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: mapillary (Gehweg für Radfahrer frei)
 #: source_id: 2147342671
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2018-05-01
+#: last_checked: 2018-07-01
 #: check_frequency: 30d
-	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
+# REMOVED (hier fertig) ---	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
 #: XXX hier laut fritz nur bis 2018-07-05
 	q3::inwork; 2781,2493 2740,2588 2625,2850
@@ -4033,9 +4016,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2018-03-11
+         'data' => '#: next_check_id: ANHALTINER-2018
+#: last_checked: 2018-07-01
 #: check_frequency: 60d
-	q3::inwork 186,2532 272,2548 638,2637
+	q3::inwork 37,2562 186,2532 272,2548 638,2637
 ',
          'from' => undef,
          'id' => 2915,
@@ -4124,16 +4108,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '	q4::inwork; 3810,19133 3546,19477
-',
-         'from' => 1521060826,
-         'id' => 2936,
-         'source_id' => 'http://www.berliner-woche.de/wittenau/verkehr/sanierung-der-breitenbachstrasse-d143204.html',
-         'text' => 'Breitenbachstr.: Bauarbeiten zwischen Innungsstr. und Holzhauser Str., Fahrbahn Richtung Norden gesperrt, ggfs. auch Behinderungen für Radfahrer, bis Ende Juni 2018',
-         'type' => 'handicap',
-         'until' => 1530395999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4234,7 +4209,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'id' => 2953,
          'permanent' => 1,
          'text' => 'Treptower Park: Radfahren im Treptower Park offiziell verboten',
-         'type' => 'gesperrt',
+         'type' => 'handicap',
          'until' => undef
        },
        {

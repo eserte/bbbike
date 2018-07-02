@@ -696,7 +696,8 @@ Jagdschloss Grunewald - westlicher Hüttenweg: Kopfsteinpflaster	Q3 340,6598 218,
 Bismarckstr.: Kopfsteinpflaster	Q2 -4892,1267 -5028,1133 -5092,1130 -5419,897 -5488,833 -5616,780 -6009,559
 Stahnsdorfer Damm: Asphalt	Q0 -4803,1240 -4999,1083
 (Forst Düppel): Waldweg	Q1 -6009,559 -6306,251 -6353,189 -6542,105 -6956,-30 -7067,-36
-Hampsteadstr.: Kopfsteinpflaster	Q2 816,2658 936,2729 1033,2788 1130,2838
+Hampsteadstr.: Kopfsteinpflaster	Q2 816,2658 936,2729
+Hampsteadstr.: Kopfsteinpflaster	Q2 936,2729 1033,2788 1130,2838
 Hampsteadstr.: Mosaikpflaster	Q1 816,2658 749,2616
 Hampsteadstr.: guter Asphalt	Q0 1130,2838 1255,2923 1287,2935 1437,2925 1532,2921 1641,2914 1718,2908 1835,2898 1847,2899 1888,2925
 Reichstagufer: Kopfsteinpflaster	Q2 9098,12687 8892,12576 8766,12541 8667,12555
@@ -5757,7 +5758,7 @@ Alsheimer Str.: Kopfsteinpflaster	Q2 6618,3817 6717,3924
 Scharzhofberger Str.: Asphalt	Q0 6739,3585 6827,3676
 Melanchthonstr. (Lankwitz): provisorischer Asphalt über Kopfsteinpflaster	Q1 6926,3337 6788,3181
 Mühlenstr.: Asphalt	Q0 6914,3093 6842,2995
-Mühlenstr.: schlechtes Kopfsteinpflaster	Q3 6842,2995 6763,2879 6745,2848
+Mühlenstr.: Asphalt	Q0 6842,2995 6763,2879 6745,2848
 Mühlenstr.: Kopfsteinpflaster	Q2 6745,2848 6665,2836
 Boraweg: Kleinsteinpflaster	Q2 6658,2907 6710,2909 6763,2879
 (Ursulastr. - Dillgesstr.): Kleinsteinpflaster	Q2 6443,2915 6455,2924 6492,2947
@@ -6506,6 +6507,7 @@ Bolchener Str.: Asphalt	Q0 1970,2974 2028,3008
 Bolchener Str.: glatt gepflastert	Q1 1970,2974 1888,2925
 Bertholdstr.: Beton	Q0 1927,2570 1932,2614 1885,2697
 Hochbaumstr.: Beton	Q0 2026,2542 1927,2570 1812,2594 1772,2602 1750,2636
+Hochbaumstr.: Asphalt	Q0 2026,2542 2056,2535
 (Georg-Steger-Weg - Hampsteadstr.): Verbundsteinpflaster	Q1 1635,2720 1652,2770 1641,2914
 Georg-Steger-Weg: wassergebundene Decke	Q1 1478,1721 1432,1904 1432,1964 1461,2073 1452,2095 1480,2199
 Georg-Steger-Weg: Kopfsteinpflaster	Q2 1480,2199 1493,2247
@@ -9597,6 +9599,8 @@ Radweg zur Detmolder Str.: Verbundsteinpflaster/Gehwegplatten	Q1; 4461,8105 4349
 (Havelchaussee - zum Havelufer): Kopfsteinpflaster	Q2 -3807,4794 -3854,4819 -3940,4800
 Cimbernstr. [Stichstraße] (Nikolassee): schlechtes Kopfsteinpflaster	Q3 -3544,2003 -3616,1877
 Heinersdorfer Str.: Asphalt mit einigen Schäden	Q0 5223,1318 5201,1227 5178,1123
+Heinersdorfer Str.: Asphalt mit Schäden	Q1 5223,1318 5273,1456 5299,1524 5335,1616
+Heinersdorfer Str.: Asphalt mit einigen Schäden	Q0 5335,1616 5396,1774 5452,1940
 (Christoph-Ruden-Str. - Buckower Damm): Asphalt	Q0 12725,1429 12939,1469
 (Olivaer Platz, Wielandstr. - Bayerische Str.): Mosaikpflaster	Q1 4360,10320 4352,10260
 (Tegeler Forst): Waldweg	Q2 2088,22798 2047,22829
@@ -10953,7 +10957,8 @@ Am Spreebord: Asphalt	Q0 3734,12715 3828,12697 3949,12710
 Am Spreebord: gutes Kopfsteinpflaster	Q1 3949,12710 4055,12713
 Am Spreebord: Asphalt	Q0 4055,12713 4124,12721 4217,12711
 Am Spreebord: schlechtes Kopfsteinpflaster	Q3 4217,12711 4234,12710 4303,12692
-Oberhofer Platz: Asphalt	Q0 5489,1981 5452,2077 5434,2122 5406,2110
+Oberhofer Platz: Asphalt	Q0 5489,1981 5452,2077 5434,2122
+Oberhofer Platz: Kopfsteinpflaster	Q2 5434,2122 5406,2110
 Oberhofer Weg: Asphalt mit einigen Schäden	Q0 5741,1234 5751,1289 5706,1393 5661,1499 5633,1566 5570,1712 5519,1831 5474,1940
 Zerbster Str. (Lichterfelde, Lankwitz): Asphalt	Q0 6276,1083 6278,1109 6132,1395
 Zerbster Str. (Lichterfelde, Lankwitz): "leichtes" Kopfsteinpflaster	Q1 6132,1395 6010,1657
@@ -11114,9 +11119,10 @@ Wolzogenstr.: akzeptables Kopfsteinpflaster	Q2 -785,2492 -839,2651
 Wolzogenstr.: geteert	Q0 -839,2651 -870,2737
 Wolzogenstr.: akzeptables Kopfsteinpflaster	Q2 -870,2737 -928,2900 -987,3163
 Anhaltinerstr.: Asphaltstreifen	Q0 -155,2658 37,2562
-Anhaltinerstr.: schlechtes Kopfsteinpflaster, schlechter Asphaltstreifen	Q2 37,2562 186,2532 272,2548
+Anhaltinerstr.: Asphalt, letzte Deckschicht fehlt noch	Q1 37,2562 186,2532 272,2548
 Anhaltinerstr.: Asphaltstreifen	Q0 272,2548 638,2637
-Anhaltinerstr.: Kopfsteinpflaster	Q2 638,2637 682,2660 720,2718
+Anhaltinerstr.: schlechtes Kopfsteinpflaster	Q3 638,2637 682,2660
+Anhaltinerstr.: Kopfsteinpflaster	Q2 682,2660 720,2718
 Urselweg: mäßiges Kopfsteinpflaster	Q2 -1132,3234 -1097,3235 -987,3163 -888,3096
 Urselweg: Beton	Q0 -888,3096 -802,2914
 Isoldestr.: mäßiges Kopfsteinpflaster	Q2 -4033,1416 -4049,1535

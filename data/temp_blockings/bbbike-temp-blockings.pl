@@ -23774,6 +23774,7 @@ EOF
 #: note: am Mo, den 2018-02-26 gegen 18:50: offen
 #: note: am Fr, den 2018-04-04 gegen 18:40: offen
 #: note: am Mo, den 2018-05-28 gegen 18:40: offen
+#: note: am So, den 2018-07-01 gegen 12:30: offen
 #: tempex: volatile vvv
 	3::night 14563,8243 14425,8116 14419,8112
 	3::night 14419,8112 14425,8116 14563,8243
@@ -26470,9 +26471,9 @@ EOF
 #: by: mapillary (Gehweg für Radfahrer frei)
 #: source_id: 2147342671
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2018-05-01
+#: last_checked: 2018-07-01
 #: check_frequency: 30d
-	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
+# REMOVED (hier fertig) ---	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
 #: XXX hier laut fritz nur bis 2018-07-05
 	q3::inwork; 2781,2493 2740,2588 2625,2850
@@ -26678,9 +26679,10 @@ EOF
        text  => 'Anhaltinerstr.: mögliche Beeinträchtigungen durch Bauarbeiten',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2018-03-11
+#: next_check_id: ANHALTINER-2018
+#: last_checked: 2018-07-01
 #: check_frequency: 60d
-	q3::inwork 186,2532 272,2548 638,2637
+	q3::inwork 37,2562 186,2532 272,2548 638,2637
 EOF
      },
      { from  => 1508005269, # 2017-10-14 20:21
@@ -27125,7 +27127,7 @@ EOF
        until => undef, #
        text  => 'Treptower Park: Radfahren im Treptower Park offiziell verboten',
        permanent => 1,
-       type  => 'gesperrt',
+       type  => 'handicap',
        data  => <<EOF,
 #: by: http://www.berliner-woche.de/alt-treptow/verkehr/radelverbot-im-park-bleibt-d122937.html
 #: by: http://www.berliner-woche.de/alt-treptow/bauen/der-vater-des-rosengartens-d156358.html

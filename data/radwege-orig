@@ -759,8 +759,7 @@ Gehweg für Radfahrer frei	RW1; -1872,24336 -1746,24219
 unebenes Verbundsteinpflaster	RW1;RW9 449,15654 525,15435 559,15342 613,15195 651,15091 717,14894 741,14827 838,14530 842,14518 862,14463 889,14392
 	RW1;RW2 2095,11440 2082,11554
 	RW1;RW1 2082,11554 2058,11756
-	RW1; 6651,4843 6744,4983
-	RW1; 6744,4983 6746,4999 6747,5010 6767,5233 6771,5273
+enger Radweg, kein Unterstreifen gegen parkende Autos	RW1; 6651,4843 6744,4983 6746,4999 6747,5010 6767,5233 6771,5273
 enger Radweg, kein Unterstreifen gegen parkende Autos	RW1; 6771,5273 6767,5233 6747,5010 6746,4999 6744,4983
 enger Radweg, kein Unterstreifen gegen parkende Autos	RW2; 6744,4983 6651,4843
 #: note: Radweg ist extra beleuchtet
@@ -996,7 +995,7 @@ asphaltiert	RW1;RW1 931,14268 984,14086
 #: XXX was passiert hier bzgl. der Radwege?
 #: XXX Baumaßnahme GL6.17 (Realisierung nach 2011)
 #: osm_watch: way id="85468589" version="11"
-#: last_checked: 2018-03-11
+#: last_checked: 2018-07-01
 #: check_frequency: 120d
 	RW2;RW8 6718,2443 6711,2496 6679,2701 6677,2718 6665,2836
 	RW2;RW8 6665,2836 6658,2907 6643,3070 6638,3138 6640,3192 6712,3237
@@ -1008,7 +1007,7 @@ Verbundsteinpflasterradweg	RW1; 6881,1743 6844,1813 6799,1922 6759,2137
 #: XXX Baumaßnahme GL6.18 (Realisierung nach 2011) vvv
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.342111.php (Bauarbeiten, passiert hier vielleicht etwas?)
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.348323.php
-#: last_checked: 2018-03-11 vvv
+#: last_checked: 2018-07-01 vvv
 #: check_frequency: 120d vvv
 Verbundsteinpflasterradweg	RW1; 6759,2137 6746,2232
 Gehweg für Radfahrer frei	RW1; 6718,2443 6739,2285 6746,2232
@@ -1184,7 +1183,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
-#: last_checked: 2018-05-26
+#: last_checked: 2018-07-01
 #: check_frequency: 90d
 	RW8;RW2 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
@@ -1610,9 +1609,8 @@ die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
 #: XXX Markierungen fehlen hier noch
 #: osm_watch: way id="439421759" version="9"
 #: osm_watch: way id="384136808" version="13"
-#: last_checked: 2018-06-11
-# REMOVED --- #: check_frequency: 14d
-#: next_check: 2018-06-26
+#: last_checked: 2018-07-01
+#: check_frequency: 14d
 	RW0; 14904,10812 15000,10792
 	RW3; 15000,10792 15261,10738
 	RW1;RW1 14652,10201 14688,10167 14705,10149 14747,10108 14817,10031
@@ -2082,8 +2080,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 3953,3022 4011,2942
 	RW2; 4170,2727 4224,2671
 	RW1;RW1 4011,2942 3863,2835 3824,2819 3738,2821 3641,2827 3456,2835 3313,2842 3171,2848
 # REMOVED (auf http://www.panoramio.com/photo/19638055 nicht zu erkennen) ---	RW;RW 3507,3654 3626,3465 3733,3317 3743,3303 3861,3134 3953,3022
-	RW1;RW1 1025,3091 1112,2880 1130,2838
-	RW1;RW 1130,2838 1238,2599
+	RW1;RW1 1025,3091 1112,2880 1130,2838 1238,2599
 Gehweg für Radfahrer frei	RW1; -4,1133 43,1233 85,1322
 	RW1; 85,1322 43,1233 -4,1133
 	RW1;RW1 85,1322 119,1442 145,1537 202,1688
@@ -2998,14 +2995,16 @@ die letzten 100 Meter werden auf dem Gehweg geführt	RW3; 7487,3089 7115,3003
 #: next_check_id: GRENZALLEE-2014 vvv
 #: last_checked: 2016-09-09 vvv
 #: next_check: 2019-12-31 vvv
-#: valid: 20140224-20191231
+#: valid: 20140224-20191231 vvv
 #: einige Meter vor und hinter der Ampel ist die Radspur aufgehoben
 	RW0; 13500,7018 13278,6967 13085,6925
 #: note: einige Meter vor der Ampel ist die Radspur aufgehoben
 	RW0; 13085,6925 13278,6967
-#: valid: !20140224-20170601
+#: valid ^^^
+#: valid: !20140224-20191231 vvv
 	RW4; 13500,7018 13278,6967 13085,6925
 	RW3; 13085,6925 13278,6967
+#: valid ^^^
 #: next_check ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
