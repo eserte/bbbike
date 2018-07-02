@@ -2520,28 +2520,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::temp 9248,9350 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
-	3 9487,9209 9505,9306 9524,9426
-	3 9524,9426 9505,9306 9487,9209
-',
-         'from' => 1530136800,
-         'id' => 2089,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              8,
-                              'months',
-                              6
-                            ]
-                          ],
-         'source_id' => 'https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html',
-         'text' => 'Bergmannstraße (Kreuzberg): Veranstaltung (Bergmannstraßenfest), Straße vollständig zwischen Mehringdamm und Zossener Str. gesperrt (29. Juni 2018 bis 01. Juli 2018)',
-         'type' => 'gesperrt',
-         'until' => 1530482399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2695,26 +2674,7 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       {
-         'data' => '	q3::temp 13178,10623 13206,10651
-	q4::temp 13206,10651 13305,10789 13332,10832
-',
-         'from' => 1530345600,
-         'id' => 2206,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              7
-                            ]
-                          ],
-         'text' => 'Open Air Gallery am 1. Juli 2018 auf der Oberbaumbrücke (10:00 - 20:00)',
-         'type' => 'gesperrt',
-         'until' => 1530475200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4416,6 +4376,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. undThorwaldsenstr., Einbahnstraße offen Richtung Osten, voraussichtlich von Mitte Juli 2018 bis Ende Dezember 2018',
          'type' => 'handicap',
          'until' => 1546297199
+       },
+       {
+         'data' => '	q4::inwork; 23942,5338 24070,5272
+	q4::inwork; 25519,4830 25552,4829 25720,4832 25802,4823 25948,4823 26085,4865 26236,4926 26340,4942 26500,4936 26620,4936
+',
+         'from' => 1530482400,
+         'id' => 2977,
+         'source_id' => 'https://www.berliner-woche.de/friedrichshagen/c-verkehr/der-mueggelseedamm-ist-dicht_a170522',
+         'text' => 'Müggelseedamm: zwischen Bölschstr. und Werlseestr. Bauarbeiten, offen Richtung Westen, 3. Juli 2018 bis 23. Juli 2018',
+         'type' => 'handicap',
+         'until' => 1532383199
        }
      
 );

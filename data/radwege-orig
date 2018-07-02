@@ -915,15 +915,8 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 	RW1; 13919,7707 14015,7631
 	RW2; 14015,7631 14095,7568 14174,7505
 	RW1; 14174,7505 14095,7568 14015,7631
-#: next_check_id: SONNENALLEE-2014
-#: XXX laut fritz & vmz bis Ende Dezember 2017
-#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=22111
-#: source_id: IM_023718
-#: source_id: 2147339540
-#: last_checked: 2018-06-06
-#: next_check: 2018-08-17
-# REMOVED --- #: check_frequency: 30d
-	RW2;RW8 14530,7301 14369,7376 14334,7395 14174,7505
+# REMOVED --- #: next_check_id: SONNENALLEE-2014 --- #: XXX laut fritz & vmz bis Ende Dezember 2017 --- #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=22111 --- #: source_id: IM_023718 --- #: source_id: 2147339540 --- #: last_checked: 2018-06-06 --- #: next_check: 2018-08-17 --- #: check_frequency: 30d
+	RW2;RW2 14530,7301 14369,7376 14334,7395 14174,7505
 	RW1; 14015,7631 13919,7707
 	RW2;RW1 14530,7301 14617,7243
 	RW1;RW2 14617,7243 14344,7003
@@ -1183,7 +1176,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
-#: last_checked: 2018-07-01
+#: last_checked: 2018-07-02
 #: check_frequency: 90d
 	RW8;RW2 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966

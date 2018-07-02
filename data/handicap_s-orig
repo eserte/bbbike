@@ -94,7 +94,7 @@ Auerstr.: zwischen Richard-Sorge-Str. und Löwestr. Baustelle, Einbahnstraßenrege
 ### Mariendorf ###
 # 
 #: source_id: 2147342785
-#: next_check: 20181231
+#: next_check: 2018-12-31
 #: valid: -20181231
 Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer dürfen auf dem Gehweg fahren	q2::inwork; 9275,4672 9405,4667 9494,4658 9695,4638
 # 
@@ -189,9 +189,9 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 # REMOVED --- : osm_watch: note 814191 1
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_26_3435_3558_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
-#: last_checked: 2018-06-26
+#: last_checked: 2018-07-02
 #: check_frequency: 30d
-Alexandrinenstr.: Zugang zur Sebastianstr. nur über sehr engen Trampelpfad möglich, Bordsteine	q4::inwork 10781,11243 10678,11172
+Alexandrinenstr.: direkter Zugang zur Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q3::inwork 10781,11243 10678,11172
 # 
 # REMOVED --- #: last_checked: 2016-09-30 --- Schützenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10116,11485 9949,11470 --- 
 # REMOVED (wieder offen) --- #: XXX gibt es hier noch Einschränkungen? --- #: last_checked: 2016-01-14 --- #: next_check: 2016-02-03 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9925,11565 9990,11571
@@ -455,6 +455,10 @@ Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5894,12480 5944,12
 # 
 ### Neukölln ###
 # 
+#: XXX nach den Bauarbeiten vermutlich asphaltiert
+#: last_checked: 2018-07-02
+Innstraße: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 13217,8493 13262,8554 13301,8606
+# 
 #: last_checked: 2018-07-01
 #: check_frequency: 14d
 Donaustr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Erkstr.	q4::inwork; 12771,8439 12649,8535
@@ -605,9 +609,9 @@ Säntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
 # 
 #: next_check_id: HILDBURGHAUSER-2018
 #: source_id: 2147341614
-#: last_checked: 2018-05-01
-#: next_check: 2018-06-30
-#: valid: -20180630
+#: last_checked: 2018-07-02
+# REMOVED --- #: next_check: 2018-06-30
+# REMOVED --- #: valid: -20180630
 #: priority: #A
 Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden	q3::inwork 5223,1318 5414,1304 5585,1275 5741,1234
 # 
@@ -618,10 +622,9 @@ Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden
 ### Lichterfelde ###
 # 
 #: source_id: 2147342640
-#: XXX laut vmz Ende Juli 2018, laut fritz 2. Juli 2018
 #: last_checked: 2018-07-01
-#: next_check: 2018-07-31
-#: valid: -20180731
+#: next_check: 2018-07-30
+#: valid: -20180730
 Dahlemer Weg: Bauarbeiten, Fahrbahn und Radweg Richtung Norden gesperrt, Gehweg darf von Radfahrern benutzt werden	q2::inwork; 2123,2803 2146,2878 2152,2912 2198,3169 2203,3213
 # 
 #: temporary ^^^

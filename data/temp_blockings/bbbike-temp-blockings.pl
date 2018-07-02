@@ -27395,4 +27395,14 @@ EOF
 	q4::inwork; 6168,6467 6083,6451 5823,6413
 EOF
      },
+     { from  => 1530482400, # 2018-07-02 00:00
+       until => 1532383199, # 2018-07-23 23:59
+       text  => 'Müggelseedamm: zwischen Bölschstr. und Werlseestr. Bauarbeiten, offen Richtung Westen, 3. Juli 2018 bis 23. Juli 2018',
+       type  => 'handicap',
+       source_id => 'https://www.berliner-woche.de/friedrichshagen/c-verkehr/der-mueggelseedamm-ist-dicht_a170522',
+       data  => <<EOF,
+	q4::inwork; 23942,5338 24070,5272
+	q4::inwork; 25519,4830 25552,4829 25720,4832 25802,4823 25948,4823 26085,4865 26236,4926 26340,4942 26500,4936 26620,4936
+EOF
+     },
     );
