@@ -21,7 +21,7 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-07-01
+#: last_checked: 2018-07-04
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
@@ -51,9 +51,12 @@ Rigaer Str.: Baustelle, Fußgänger	q3::inwork 14538,12371 14748,12314
 # 
 #: XXX laut fritz bis 2018-08-30
 #: source_id: LMS-BR_r_LMS-BR_125325_LMS-BR_72
-#: last_checked: 2018-06-03
+#: last_checked: 2018-07-03
 #: valid: -20180830
 Auerstr.: zwischen Richard-Sorge-Str. und Löwestr. Baustelle, Einbahnstraßenregelung	q2::inwork; 13273,12902 13202,12790
+# 
+#: last_checked: 2018-07-03
+Auerstr.: zwischen Zebrastreifen und Weideweg Baustelle, Einbahnstraßenregelung	q2::inwork; 13202,12790 13067,12583 13025,12523
 # 
 # REMOVED --- #: by: fritz --- #: last_checked: 2017-09-28 --- #: check_frequency: 10d --- # REMOVED --- #: valid: -20170927 --- Krautstr.: Fahrbahn abschnittsweise gesperrt, Ausweichen auf Gehweg notwendig	q3::inwork 11966,11832 11993,11978
 # REMOVED --- #: source_id: LMS-BR_r_LMS-BR_106000_LMS-BR_72 --- #: last_checked: 2017-12-10 --- #: next_check: 2017-12-18 --- #: valid: -20171218 --- Palisadenstr.: Bauarbeiten, teilweise Einbahnstraße, offen Richtung Osten	q2::inwork; 12866,12582 12843,12567 12632,12630
@@ -99,6 +102,16 @@ Auerstr.: zwischen Richard-Sorge-Str. und Löwestr. Baustelle, Einbahnstraßenrege
 Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer dürfen auf dem Gehweg fahren	q2::inwork; 9275,4672 9405,4667 9494,4658 9695,4638
 # 
 ### Treptow ###
+# 
+#: next_check_id: BOUCHESTR-2018 vvv
+#: osm_watch: way id="466318949" version="4"
+#: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
+#: last_checked: 2018-07-04
+Bouchéstr.: Baustelle, Fahrbahn gesperrt	q3::inwork 13298,9252 13188,9134
+#: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
+#: last_checked: 2018-07-04
+Mengerzeile: Baustelle, Fahrbahn gesperrt	q4::inwork 13176,9302 13098,9205
+#: next_check_id ^^^
 # 
 #: next_check_id: VERLWERDERSTR-2018
 #: XXX gibt es hier tatsächlich Einschränkungen?
@@ -383,7 +396,7 @@ Friesenstr.: Fahrbahn Richtung Zossener Str. gesperrt	q4::inwork; 9801,8683 9801
 # 
 #: source_id: 2147341145
 #: source_id: LMS-BR_r_LMS-BR_93387
-#: osm_watch: way id="563341816" version="2"
+#: osm_watch: way id="563341816" version="3"
 #: XXX laut vmz bis Anfang 2019, laut fritz bis 31.12.2018
 #: http://www.dafmap.de/d/berlin.html?id=3451&mt=0&zoom=16
 #: last_checked: 2018-05-26
@@ -435,7 +448,7 @@ Ludwig-Beck-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 8301,11469 8309
 ### Charlottenburg ###
 # 
 #: next_check_id: ENGLISCHESTR-2017
-#: osm_watch: way id="503096340" version="2"
+#: osm_watch: way id="503096340" version="3"
 #: source_id: LMS-BR_r_LMS-BR_121156_LMS-BR_72
 #: XXX laut fritz bis 2019-04-30
 #: last_checked: 2018-03-11
@@ -467,7 +480,7 @@ Donaustr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Erkstr.	q4::inwor
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 7d vvv --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12761,9190 12845,9304 12844,9351 --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12902,9066 12761,9190 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4952&mt=0&zoom=17
-#: last_checked: 2018-06-06
+#: last_checked: 2018-07-04
 #: check_frequency: 90d
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 
@@ -1359,7 +1372,7 @@ Uferweg: Fußgänger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
 #: XXX_prog: für Anhänger relevant (q1 oder so)
 Bouchéstr.: Bodenschwellen	q0 13642,9624 13865,9866
 #: XXX_prog: für Anhänger relevant (q1 oder so)
-Bouchéstr.: eine Bodenschwelle	q0 13489,9456 13357,9313
+Bouchéstr.: zwei Bodenschwellen	q0 13489,9456 13357,9313
 #: XXX_prog: für Anhänger relevant (q2 oder so)
 Radenzer Str.: zwei Bodenschwellen	q1 16220,6277 16304,6358
 #: XXX_prog: für Anhänger relevant (q2 oder so)

@@ -9,7 +9,10 @@ Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
 Rigaer Str.: Baustelle, Fußgänger	q3::inwork 14538,12371 14748,12314
 Auerstr.: zwischen Richard-Sorge-Str. und Löwestr. Baustelle, Einbahnstraßenregelung	q2::inwork; 13273,12902 13202,12790
+Auerstr.: zwischen Zebrastreifen und Weideweg Baustelle, Einbahnstraßenregelung	q2::inwork; 13202,12790 13067,12583 13025,12523
 Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer dürfen auf dem Gehweg fahren	q2::inwork; 9275,4672 9405,4667 9494,4658 9695,4638
+Bouchéstr.: Baustelle, Fahrbahn gesperrt	q3::inwork 13298,9252 13188,9134
+Mengerzeile: Baustelle, Fahrbahn gesperrt	q4::inwork 13176,9302 13098,9205
 Verlängerte Werderstr.: Bauarbeiten	q4::inwork 20245,2152 20261,2114 20222,2037 20214,1988 20187,1930 20166,1864 20120,1791 20093,1776 20064,1777
 Wagner-Régeny-Str - Igo-Etrich-Str.: Bauarbeiten, mehrere Bordsteine, auf Gehweg ausweichen	q2::inwork; 19363,3730 19162,3935 18930,3703
 Igo-Etrich-Str. - Wagner-Régeny-Str: Bauarbeiten, auf Gehweg ausweichen	q1::inwork; 18930,3703 19162,3935 19363,3730
@@ -612,7 +615,7 @@ Uferweg: Fußgänger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
 (Neues Ufer - Kaiserin-Augusta-Allee): Fußgänger	q1 4456,12918 4514,12936 4581,13066 4576,13115 4547,13139 4561,13244
 (provisorischer Zugang zum Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fußgänger	q3 14811,11067 14808,10978 14845,10954
 Bouchéstr.: Bodenschwellen	q0 13642,9624 13865,9866
-Bouchéstr.: eine Bodenschwelle	q0 13489,9456 13357,9313
+Bouchéstr.: zwei Bodenschwellen	q0 13489,9456 13357,9313
 Radenzer Str.: zwei Bodenschwellen	q1 16220,6277 16304,6358
 Dornbrunner Str.: zwei Bodenschwellen	q1 16147,6545 16043,6414
 Meierottostr.: zwei Moabiter Kissen	q0 5463,9961 5246,10168

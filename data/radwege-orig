@@ -1150,13 +1150,18 @@ Gehweg für Radfahrer frei	RW1;RW1 15831,10329 16004,10204 16114,10123 16138,1010
 	RW1; 17105,8666 17143,8565 17202,8391 17299,8140 17527,7812
 neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 neu asphaltiert	RW1; 17769,7465 17681,7589
-neu asphaltiert, abgesperrt	RW0; 17681,7589 17619,7679
+#: XXX noch immer abgesperrt oder mittlerweile schon geöffnet?
+neu asphaltiert	RW1; 17681,7589 17619,7679
 #: XXX werden hier noch Radspuren oder ein neuer Radweg angelegt?
+#: XXX laut VMZ temporäre Radspur
 #: source_id: 2147341340
 #: source_id: LMS-BR_r_LMS-BR_98104
+#: source_id: 2147342856
+#: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/markierung-auf-der-rummelsburger-landstrasse-aufgebracht_a170936
 #: last_checked: 2018-06-16
-#: check_frequency: 60d
-	RW0; 17619,7679 17527,7812 17317,8115 17299,8140 17202,8391
+# REMOVED --- #: check_frequency: 60d
+#: next_check: 2018-07-03
+	RW3; 17619,7679 17527,7812 17299,8140 17202,8391
 	RW1; 17202,8391 17143,8565 17105,8666
 Verbundsteinpflaster	RW1; 17769,7465 17847,7356 18010,7133
 	RW1; 18010,7133 17847,7356 17769,7465
@@ -3224,9 +3229,8 @@ asphaltierter Gehweg für Radfahrer frei (in der Praxis als Zweirichtungsweg genu
 Gehweg für Radfahrer frei (in der Praxis als Zweirichtungsweg genutzt)	RW1; 30839,106 31009,19 31080,-19 31127,-45 31219,-87 31320,-129 31608,-476 31624,-496 31651,-530
 	RW6;RW6 5943,14049 5907,13746 5882,13548
 	RW1;RW1 22145,208 22172,194
-	RW1;RW 22172,194 22169,14 22168,-71 22177,-137
-	RW1;RW1 22177,-137 22190,-228
-	RW1;RW1 22190,-228 22211,-324 22261,-464 22278,-570 22280,-663 22271,-717 22229,-897 22186,-1060
+	RW1;RW 22172,194 22169,14
+	RW1;RW1 22169,14 22168,-71 22177,-137 22190,-228 22211,-324 22261,-464 22278,-570 22280,-663 22271,-717 22229,-897 22186,-1060
 	RW1;RW 22186,-1060 22146,-1183
 	RW1;RW 22146,-1183 22107,-1304 22068,-1422 22027,-1548 22003,-1625
 breiter Gehweg für Radfahrer frei	RW1; 22162,1067 22208,1103 22287,1165 22367,1230 22453,1294 22493,1325 22560,1377 22655,1450

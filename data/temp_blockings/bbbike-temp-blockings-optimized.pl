@@ -3,6 +3,7 @@ push @temp_blocking,
 (
        {
          'data' => '#: by: http://www.stadtfest.berlin/de/index.html
+#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/strassen-wegen-fest-gesperrt_a170723
 	2::temp 6499,10086 6609,10147 6626,10155 6729,10212
 	2::temp 6729,10212 6971,10346
 	2::temp 6628,10318 6626,10155
@@ -4133,7 +4134,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: MENTZELPARK-2018
-#: last_checked: 2018-05-29
+#: last_checked: 2018-07-03
 	2::inwork 21696,5053 21600,5221 21512,5404 21481,5429
 ',
          'from' => undef,
@@ -4378,14 +4379,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1546297199
        },
        {
-         'data' => '	q4::inwork; 25519,4830 25552,4829 25720,4832 25802,4823 25948,4823 26085,4865 26236,4926 26340,4942 26500,4936 26620,4936
+         'data' => '#: note: laut fritz & vmz längere Sperrung
+#: source_id: 2147342845
+# REMOVED (hier nicht) --- q4::inwork; 25519,4830 25552,4829 25720,4832
+	q4::inwork; 25720,4832 25802,4823 25948,4823 26085,4865 26236,4926 26340,4942 26500,4936 26620,4936
 ',
          'from' => 1530482400,
          'id' => 2977,
          'source_id' => 'https://www.berliner-woche.de/friedrichshagen/c-verkehr/der-mueggelseedamm-ist-dicht_a170522',
-         'text' => 'Müggelseedamm: zwischen Bölschstr. und Werlseestr. Bauarbeiten, offen Richtung Westen, 3. Juli 2018 bis 23. Juli 2018',
+         'text' => 'Müggelseedamm: zwischen Scharnweberstr. und Werlseestr. Bauarbeiten, offen Richtung Westen, 3. Juli 2018 bis Anfang August 2018',
          'type' => 'handicap',
-         'until' => 1532383199
+         'until' => 1533312000
        }
      
 );

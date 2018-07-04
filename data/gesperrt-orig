@@ -334,7 +334,7 @@ Mudrackzeile	1 6985,17812 7020,17690
 Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf
 #: XXX evtl wird die Straße für Radfahrer geöffnet
-#: osm_watch: way id="5110895" version="5"
+#: osm_watch: way id="5110895" version="6"
 #: last_checked: 2018-06-22
 #: check_frequency: 60d
 Gustav-Müller-Str.	1 7643,8634 7642,8815
@@ -1935,6 +1935,7 @@ abgeschlossenes Tor	3 * 14688,8355 *
 #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/fuehrungsrinne-fuer-fahrraeder-geplant_a167051 (Führungsrinnen werden gebaut) vvv
 #: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/eine-fahrradschiene-fuer-die-saentisbruecke_a168977
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6609
+#: by: https://www.berliner-woche.de/marienfelde/c-bauen/fahrradschienen-im-dritten-quartal_a170558
 tragen (3x12 Stufen)	0:35 9005,912
 tragen (2x13 Stufen)	0:30 9047,948
 #: by: ^^^
@@ -3189,16 +3190,6 @@ Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtun
 # REMOVED (bei fritz nicht mehr gelistet) --- #: XXX laut fritz bis 30. September 2017 --- #: by: http://www.dafmap.de/d/berlin.html?id=5031&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-12-31) --- #: source_id: LMS-BR_r_LMS-BR_86189 --- #: last_checked: 2017-02-04 --- #: next_check: 2017-09-30 --- #: priority: #A --- Zillestr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen	1s:q3 3807,11859 3976,11869
 # REMOVED (offen) --- #: next_check_id: VERLAENGERTEHERTZ-2017 --- #: XXX zumindest an der Fasanenstr. --- #: XXX laut Schild gehen die Bauarbeiten bis Dezember 2017 --- #: last_checked: 2018-04-10 --- #: check_frequency: 14d --- (Verlängerte Hertzallee): Bauarbeiten, komplett gesperrt	2::inwork 5352,11502 5296,11529 5171,11589 4950,11696 4905,11785
 # REMOVED (man kommt hinter dem Georg-Denkmal vorbei) --- Spreeufer Nikolaiviertel: Gehweg gesperrt	2::inwork 10417,12378 10492,12289 10583,12206
-# 
-# REMOVED --- #: next_check_id: BOUCHESTR-2018
-# REMOVED --- #: osm_watch: way id="466318949" version="4"
-# REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
-# REMOVED --- #: last_checked: 2018-06-22
-# REMOVED --- Bouchéstr.: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13298,9252 13188,9134
-# REMOVED --- # 
-# REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
-# REMOVED --- #: last_checked: 2018-06-22
-# REMOVED --- Mengerzeile: Baustelle, Einbahnstraßenregelung	1s:q3:inwork 13176,9302 13098,9205
 # 
 # REMOVED (mittlerweile ist eine Ausweichmöglichkeit markiert) --- #: last_checked: 2017-03-01 --- Karl-Marx-Platz: Bauarbeiten, Einbahnstraße gilt nun auch für Radfahrer	1s:q3 12969,7610 13100,7626
 # REMOVED --- #: source_id: 2147340790 --- #: source_id: 2147340922 --- #: last_checked: 2017-03-20 --- #: next_check: 2017-03-24 --- # REMOVED --- : valid: -20170228 --- Puschkinallee: Fahrtrichtung gesperrt	1::inwork 13795,9941 13890,9894
