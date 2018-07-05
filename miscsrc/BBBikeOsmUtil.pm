@@ -980,6 +980,9 @@ sub cleanup_photos {
 # The osm-converted layer menu items can reside in SRTShortcuts, for
 # now.
 
+# The possible OVERPASS_API_URLs should be selectable by menu.
+# The last used one should be the default for the next time.
+
 # Download directory should be in ~/.bbbike/osm/<region> by default,
 # to avoid problems with read-only installations.
 
