@@ -3869,7 +3869,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '	2::inwork 14338,22885 14276,22914
+         'data' => '#: source_id: 2147342863
+	2::inwork 14338,22885 14276,22914
 ',
          'from' => 1499280235,
          'id' => 2881,
@@ -3922,6 +3923,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=29479
 #: by: mapillary (Gehweg für Radfahrer frei)
 #: source_id: 2147342671
+#: source_id: 2147342861
 #: XXX wann sind die Bauarbeiten beendet?
 #: last_checked: 2018-07-01
 #: check_frequency: 30d
@@ -4298,7 +4300,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX wird danach komplett asphaltiert sein?
 #: source_id: 2147342618
 #: priority: #A
-#: last_checked: 2018-06-20
+#: last_checked: 2018-07-05
 #: next_check: 2018-07-13
 	q4::inwork 13767,12626 13786,12636 13863,12677 13911,12692
 ',
@@ -4390,6 +4392,26 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Müggelseedamm: zwischen Scharnweberstr. und Werlseestr. Bauarbeiten, offen Richtung Westen, 3. Juli 2018 bis Anfang August 2018',
          'type' => 'handicap',
          'until' => 1533312000
+       },
+       {
+         'data' => '#: next_check_id: HEGEMEISTERWEG-2018
+	2::inwork 17522,8220 17202,8391
+',
+         'from' => 1530812949,
+         'id' => 2978,
+         'text' => 'Hegemeisterweg: Bauarbeiten, Straße kann unpassierbar sein, bis November 2018',
+         'type' => 'gesperrt',
+         'until' => 1542236400
+       },
+       {
+         'data' => '	q4::inwork; 4879,5017 4951,4920 4985,4884 5048,4798 5070,4770
+',
+         'from' => 1530655200,
+         'id' => 2979,
+         'source_id' => '2147342847',
+         'text' => 'Birkbuschstr.: Bauarbeiten zwischen Schützenstr. und Haydnstr., Richtung Siemensstr. gesperrt, bis Mitte August 2018',
+         'type' => 'handicap',
+         'until' => 1534521600
        }
      
 );

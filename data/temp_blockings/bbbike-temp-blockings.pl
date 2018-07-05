@@ -26304,6 +26304,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.pankow.live/2017/04/21/erneutes-chaos-zwischen-blankenburg-und-bernau-vorprogrammiert/',
        data  => <<EOF,
+#: source_id: 2147342863
 	2::inwork 14338,22885 14276,22914
 EOF
      },
@@ -26471,6 +26472,7 @@ EOF
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=29479
 #: by: mapillary (Gehweg für Radfahrer frei)
 #: source_id: 2147342671
+#: source_id: 2147342861
 #: XXX wann sind die Bauarbeiten beendet?
 #: last_checked: 2018-07-01
 #: check_frequency: 30d
@@ -27309,7 +27311,7 @@ EOF
 #: XXX wird danach komplett asphaltiert sein?
 #: source_id: 2147342618
 #: priority: #A
-#: last_checked: 2018-06-20
+#: last_checked: 2018-07-05
 #: next_check: 2018-07-13
 	q4::inwork 13767,12626 13786,12636 13863,12677 13911,12692
 EOF
@@ -27406,6 +27408,24 @@ EOF
 #: source_id: 2147342845
 # REMOVED (hier nicht) --- q4::inwork; 25519,4830 25552,4829 25720,4832
 	q4::inwork; 25720,4832 25802,4823 25948,4823 26085,4865 26236,4926 26340,4942 26500,4936 26620,4936
+EOF
+     },
+     { from  => 1530812949, # 2018-07-05 19:49
+       until => 1542236400, # 2018-11-15 00:00
+       text  => 'Hegemeisterweg: Bauarbeiten, Straße kann unpassierbar sein, bis November 2018',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: HEGEMEISTERWEG-2018
+	2::inwork 17522,8220 17202,8391
+EOF
+     },
+     { from  => 1530655200, # 2018-07-04 00:00
+       until => $isodate2epoch->("2018-08-17 18:00:00"), # 1534370399, # 2018-08-15 23:59
+       text  => 'Birkbuschstr.: Bauarbeiten zwischen Schützenstr. und Haydnstr., Richtung Siemensstr. gesperrt, bis Mitte August 2018',
+       type  => 'handicap',
+       source_id => '2147342847',
+       data  => <<EOF,
+	q4::inwork; 4879,5017 4951,4920 4985,4884 5048,4798 5070,4770
 EOF
      },
     );

@@ -1150,19 +1150,19 @@ Gehweg für Radfahrer frei	RW1;RW1 15831,10329 16004,10204 16114,10123 16138,1010
 	RW1; 17105,8666 17143,8565 17202,8391 17299,8140 17527,7812
 neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 neu asphaltiert	RW1; 17769,7465 17681,7589
-#: XXX noch immer abgesperrt oder mittlerweile schon geöffnet?
-neu asphaltiert	RW1; 17681,7589 17619,7679
 #: XXX werden hier noch Radspuren oder ein neuer Radweg angelegt?
-#: XXX laut VMZ temporäre Radspur
 #: source_id: 2147341340
 #: source_id: LMS-BR_r_LMS-BR_98104
 #: source_id: 2147342856
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/markierung-auf-der-rummelsburger-landstrasse-aufgebracht_a170936
-#: last_checked: 2018-06-16
-# REMOVED --- #: check_frequency: 60d
-#: next_check: 2018-07-03
-	RW3; 17619,7679 17527,7812 17299,8140 17202,8391
-	RW1; 17202,8391 17143,8565 17105,8666
+#: last_checked: 2018-07-05 vvv
+#: check_frequency: 60d vvv
+#: note: hier existiert auch ein neu asphaltierter Radweg, aber Radfahrer werden zum geschützten Radweg geführt
+provisorische geschützte Radspur	RW4; 17681,7589 17619,7679
+provisorische geschützte Radspur	RW4; 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
+#: check_frequency ^^^
+#: last_checked ^^^
+	RW1; 17143,8565 17105,8666
 Verbundsteinpflaster	RW1; 17769,7465 17847,7356 18010,7133
 	RW1; 18010,7133 17847,7356 17769,7465
 # REMOVED (bestätigt) --- #: XXX Benutzungspflicht wird aufgehoben --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4770 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036541309630/541309630/00099460/60-Anlagen/04/B0670SB.pdf
@@ -1748,12 +1748,10 @@ Berliner Gehwegplatten mit einigen leichten Unebenheiten, ca. 1,50m breit	RW2;RW
 	RW4; 11267,13012 11320,13095 11369,13174
 	RW3; 11369,13174 11320,13095 11267,13012
 	RW4; 11369,13174 11451,13301
-#: next_check_id: OTTOBRAUN-2015
-#: note: Wobei es so aussieht, als ob das Zusatzschild einfach nur fehlt
 #: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5;
 #: by: http://www.dafmap.de/d/berlin.html?id=3134&mt=0&zoom=16 (Projektabschluss: 2017-09-01)
 #: osm_watch: way id="187103792" version="10"
-#: last_checked: 2018-06-19
+#: last_checked: 2018-07-05
 #: check_frequency: 14d
 	RW4; 11451,13301 11369,13174
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 11451,13301 11486,13350
@@ -3609,6 +3607,9 @@ gemeinsamer Rad- und Gehweg	RW1;RW2 23435,4179 23422,4094 23368,3894
 # REMOVED (keine Benutzungspflicht) --- #: XXX Wurde die Benutzungspflicht aufgehoben? --- #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/verwaltungbzbm/mdv_vii_10_reduziert.pdf?start&ts=1342111378&file=mdv_vii_10_reduziert.pdf (Aufhebung? Seite 41-42)
 	RW1;RW1 21324,3691 21363,3699
 relativ enger Verbundsteinpflasterradweg	RW1; 21363,3699 21414,3757 21489,3841 21496,3849 21679,4059
+#: XXX haben die Bauarbeiten etwas mit dem Radweg (Verbreiterung? Radspuren) zu tun?
+#: source_id: 2147342854
+#: next_check: 2018-08-17
 relativ enger Verbundsteinpflasterradweg, die letzten 40 Meter sind benutzungspflichtig	RW1; 21679,4059 21829,4212
 	RW1; 21829,4212 21679,4059 21496,3849 21489,3841
 neu asphaltiert	RW1; 21489,3841 21414,3757 21363,3699
@@ -5106,7 +5107,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2018-06-11
+#: last_checked: 2018-07-05
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -5163,13 +5164,14 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW6;RW6 17310,15186 17317,15059
 	RW6;RW6 17227,15054 17262,15056 17317,15059 17345,15061
 #: XXX wird hier noch ein Radwegschild aufgestellt?
-#: last_checked: 2018-06-29
-	RW3; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897
+#: last_checked: 2018-07-05
+	RW3; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990
+	RW3; 12817,14159 12722,14232 12616,14315
 # 
 	RW1; 17919,6968 17919,6978 17934,7029
 # 
 #: XXX bleiben die Radspuren? vvv
-#: last_checked: 2018-06-16 vvv
+#: last_checked: 2018-07-05 vvv
 provisorische Radspur	RW4; 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072 17930,6175 17952,6246 17991,6431
 provisorische Radspur,benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
 provisorische Radspur	RW4; 17962,6674 17919,6968
