@@ -896,7 +896,7 @@ So, 25.04.1999
 11393,10390   Skalitzer Str./Kottbusser (Auto 2) S->N       09:24:19
 11463,10642   Oranienstr./Adalbertstr.           S->N       09:25:00
 11552,10863   Waldemarstr./Adalbertstr.          S->N   50  09:25:21  09:25:41
-12025,11346   Köpenicker Str./Engeldamm/An der   SW->NO     09:28:37
+12021,11349   Köpenicker Str./Engeldamm/An der   SW->NO     09:28:37
 12180,11657   Holzmarktstr./Stralauer Platz/And  SW->NO 70  09:29:24  09:29:39
 12822,12067   Rüdersdorfer Str./Straße der Pari  S->N   60  09:37:17  09:36:33
 14211,11552   Wühlischstr./Modersohnstr./Gärtne  W->O   60  09:41:55  09:42:08
@@ -2048,9 +2048,9 @@ Do, 25.02.2010
 #WPT: 28r	25-FEB-10 0:16:57	52.5182222222222	13.4276111111111	buoy_white_green
 12028,12519   Strausberger Platz/Lichtenberger   W->O       00:16:57
 #WPT: 282	25-FEB-10 0:19:58	52.5170277777778	13.4395833333333	buoy_white_red
-12869,12425   Karl-Marx-Allee/Straße der Parise  W->O                 00:19:58
+12878,12430   Karl-Marx-Allee/Straße der Parise  W->O                 00:19:58
 #WPT: 283	25-FEB-10 0:20:41	52.517	13.4402222222222	buoy_white_green
-12869,12425   Karl-Marx-Allee/Straße der Parise  W->O       00:20:41
+12878,12430   Karl-Marx-Allee/Straße der Parise  W->O       00:20:41
 #WPT: 284	25-FEB-10 0:24:15	52.5128333333333	13.4510833333333	buoy_white_red
 13696,11920   Warschauer Str./Grünberger Str.    W->O                 00:24:15
 #WPT: 285	25-FEB-10 0:25:06	52.5125	13.4521388888889	buoy_white_green
@@ -2270,11 +2270,11 @@ Di, 27.03.2012
 #WPT: 057	27-MAR-12 9:29:19	52.51025	13.4214166666667	buoy_white_red
 11569,11587   Köpenicker Str./Michaelkirchstr.   NO->SW               09:29:19
 #WPT: 058	27-MAR-12 9:29:53	52.5100833333333	13.4201111111111	buoy_white_green
-11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:29:53
+11250,11715   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:29:53
 #WPT: 059	27-MAR-12 9:30:06	52.5103333333333	13.4191111111111	buoy_white_red
-11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW               09:30:06
+11250,11715   Köpenicker Str./Brückenstr./Heinr  SO->NW               09:30:06
 #WPT: 060	27-MAR-12 9:30:53	52.5109722222222	13.4167777777778	buoy_white_green
-11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:30:53
+11250,11715   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:30:53
 #WPT: 061	27-MAR-12 19:11:25	52.5138333333333	13.4176666666667	buoy_white_red
 11347,12223   Holzmarktstr./Alexanderstr./Stral  S->N                 19:11:25
 #WPT: 062	27-MAR-12 19:12:33	52.5151944444444	13.4182222222222	buoy_white_green
@@ -2636,9 +2636,9 @@ Mi, 18.04.2012
 #WPT: 307	18-APR-12 9:02:27	52.5099166666667	13.4211944444444	buoy_white_green
 11569,11587   Köpenicker Str./Michaelkirchstr.   NO->SW     09:02:27
 #WPT: 308	18-APR-12 9:03:06	52.5105833333333	13.4183055555556	buoy_white_red
-11242,11720   Köpenicker Str./Brückenstr./Heinr  O->W                 09:03:06
+11250,11715   Köpenicker Str./Brückenstr./Heinr  O->W                 09:03:06
 #WPT: 309	18-APR-12 9:03:53	52.5109722222222	13.4168055555556	buoy_white_green
-11242,11720   Köpenicker Str./Brückenstr./Heinr  O->W       09:03:53
+11250,11715   Köpenicker Str./Brückenstr./Heinr  O->W       09:03:53
 #WPT: 310	18-APR-12 19:45:40	52.5146388888889	13.4203611111111	buoy_white_green
 11764,12001   An der Michaelbrücke/Lichtenberge  NW->SO     19:45:40
 #WPT: 311	18-APR-12 19:47:40	52.5108611111111	13.4287777777778	buoy_white_green
@@ -2675,11 +2675,11 @@ Do, 19.04.2012
 #WPT: 323	19-APR-12 9:17:29	52.5096388888889	13.4219166666667	buoy_white_green
 11569,11587   Köpenicker Str./Michaelkirchstr.   SO->NW     09:17:29
 #WPT: 324	19-APR-12 9:17:53	52.5101111111111	13.4201944444444	buoy_white_green
-11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:17:53
+11250,11715   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:17:53
 #WPT: 325	19-APR-12 9:18:06	52.5103611111111	13.4191944444444	buoy_white_red
-11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW               09:18:06
+11250,11715   Köpenicker Str./Brückenstr./Heinr  SO->NW               09:18:06
 #WPT: 326	19-APR-12 9:18:53	52.5109722222222	13.4168055555556	buoy_white_green
-11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:18:53
+11250,11715   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:18:53
 #WPT: 327	19-APR-12 18:02:03	52.5157222222222	13.42675	buoy_white_green
 12295,12197   Andreasstr./Singerstr.             W->O       18:02:03
 #WPT: 328	19-APR-12 18:02:21	52.5155555555556	13.4281111111111	buoy_white_red
@@ -2762,9 +2762,9 @@ Fr, 20.04.2012
 #WPT: 364Rad	20-APR-12 19:01:36	52.5181666666667	13.4277222222222	buoy_white_green
 12028,12519   Strausberger Platz/Lichtenberger   W->O       19:01:36
 #WPT: 364	20-APR-12 19:02:39	52.5178611111111	13.4324166666667	buoy_white_red
-12360,12505   Karl-Marx-Allee/Andreasstr./Lebus  W->O                 19:02:39
+12352,12509   Karl-Marx-Allee/Andreasstr./Lebus  W->O                 19:02:39
 #WPT: 365 Rad	20-APR-12 19:03:30	52.5178333333333	13.4326666666667	buoy_white_green
-12360,12505   Karl-Marx-Allee/Andreasstr./Lebus  W->O       19:03:30
+12352,12509   Karl-Marx-Allee/Andreasstr./Lebus  W->O       19:03:30
 #WPT: 365	20-APR-12 19:06:39	52.5158611111111	13.4428888888889	buoy_white_red
 13217,11936   Wedekindstr./Marchlewskistr.       NW->SO               19:06:39
 #WPT: 366	20-APR-12 19:07:23	52.5139166666667	13.4444444444444	buoy_white_green

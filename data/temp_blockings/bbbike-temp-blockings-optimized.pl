@@ -2735,9 +2735,9 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
          'accept_multi_feature_distance' => 1300,
          'data' => '#: by: http://www.bierfestival-berlin.de/?y=2017
 #: tempex 20170804-20170806 vvv
-	2::temp 12360,12505 12362,12540 12364,12589
-	2::temp 12891,12549 12869,12425
-	2::temp 12632,12630 12596,12472
+	2::temp 12352,12509 12355,12541 12359,12592
+	2::temp 12891,12549 12878,12430
+	2::temp 12632,12630 12592,12472
 	2::temp 13448,12340 13476,12461
 	2::temp 13552,12435 13543,12326
 #zukünftig, wenn dieser Weg eingetragen ist:	2::temp 13163,12382 13176,12500
@@ -3907,7 +3907,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: RIGAER-2018
+#: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
+	2::inwork 14538,12371 14748,12314
+',
+         'from' => undef,
+         'id' => 2888,
+         'text' => 'Rigaer Str.: Baustelle, während der Arbeitszeiten (Mo bis Fr, 6 bis 17 Uhr) kein Durchgang möglich',
+         'type' => 'gesperrt',
+         'until' => 1551351600
+       },
        undef,
        undef,
        undef,
@@ -3924,19 +3934,23 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: mapillary (Gehweg für Radfahrer frei)
 #: source_id: 2147342671
 #: source_id: 2147342861
+#: source_id: 2147342860
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2018-07-01
-#: check_frequency: 30d
+#: last_checked: 2018-07-01 vvv
+# REMOVED --- #: check_frequency: 30d
+#: next_check: 2018-08-15 vvv
 # REMOVED (hier fertig) ---	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
-#: XXX hier laut fritz nur bis 2018-07-05
+#: XXX hier laut fritz nur bis 2018-07-17
 	q3::inwork; 2781,2493 2740,2588 2625,2850
+#: next_check ^^^
+#: last_checked ^^^
 ',
          'from' => 1502386525,
          'id' => 2897,
-         'text' => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Richtung Norden ist der Gehweg für Radfahrer frei; Baseler Str. offen Richtung Norden), Ende unbekannt',
+         'text' => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Richtung Norden ist der Gehweg für Radfahrer frei; Baseler Str. offen Richtung Norden), bis Mitte August 2018',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1534327200
        },
        undef,
        undef,
@@ -3998,7 +4012,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00
 #: source_id: 2147342009
 #: osm_watch: way id="154381291" version="4"
-#: last_checked: 2018-06-26
+#: last_checked: 2018-07-06
 #: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
 ',
@@ -4107,20 +4121,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1533052800
        },
-       {
-         'data' => '#: source_id: 2147342390
-#: source_id: 2147342751
-# REMOVED (hier nicht mehr) ---	q4::inwork; 8901,12008 8861,12125
-#: last_checked: 2018-06-08
-# REMOVED --- #: check_frequency: 7d
-	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
-',
-         'from' => 1522864912,
-         'id' => 2947,
-         'text' => 'Behrenstr.: Sperrung Richtung Osten zwischen Wilhelmstr. und Glinkastr., voraussichtlich bis Mitte Juli 2018',
-         'type' => 'handicap',
-         'until' => 1531677600
-       },
+       undef,
        undef,
        undef,
        {
@@ -4323,16 +4324,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1536940800
        },
        undef,
-       {
-         'data' => '	q4::inwork; 9727,17804 9835,17797 10053,17777
-',
-         'from' => 1529348366,
-         'id' => 2971,
-         'source_id' => '2147342753',
-         'text' => 'Florastr.: Bauarbeiten, Richtung Mühlenstr. zwischen Wollankstr. und Görschstr. gesperrt, bis 6. Juli 2018',
-         'type' => 'handicap',
-         'until' => 1530892800
-       },
+       undef,
        {
          'data' => '	2::inwork 19414,15132 19424,15068 19347,14936
 ',
@@ -4412,6 +4404,40 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Birkbuschstr.: Bauarbeiten zwischen Schützenstr. und Haydnstr., Richtung Siemensstr. gesperrt, bis Mitte August 2018',
          'type' => 'handicap',
          'until' => 1534521600
+       },
+       {
+         'data' => '#: XXX nach den Bauarbeiten bessere Qualität
+#: priority: #B
+#: last_checked: 2018-07-06
+#: check_frequency: 60d
+	q4::inwork 13391,16436 13630,16629
+',
+         'from' => undef,
+         'id' => 2980,
+         'source_id' => 'https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php',
+         'text' => 'Schönstr.: Bauarbeiten zwischen Mirbachplatz und Paul-Oestreich-Str., Fahrbahn kann gesperrt sein',
+         'type' => 'handicap',
+         'until' => 1622498400
+       },
+       {
+         'data' => '	q4::inwork; 9183,12076 9195,11972
+',
+         'from' => 1530907854,
+         'id' => 2981,
+         'source_id' => '2147342871',
+         'text' => 'Glinkastr.: Bauarbeiten zwischen Französische Str. und Jägerstr., Fahrbahn Richtung Süden gesperrt, evtl.. sind auch Radfahrer betroffen, bis Ende Juli 2018',
+         'type' => 'handicap',
+         'until' => 1533074399
+       },
+       {
+         'data' => '	2::inwork 21889,16817 21824,16506 21785,16273 21782,16253
+',
+         'from' => 1531000800,
+         'id' => 2982,
+         'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.719553.php',
+         'text' => 'Blumberger Damm: Bauarbeiten zwischen Rudolf-Leonhard-Str. und Mehrower Allee, Fahrbahn gesperrt, vom 9. Juli 2018 bis voraussichtlich 20. August 2018',
+         'type' => 'gesperrt',
+         'until' => 1534780800
        }
      
 );

@@ -54,7 +54,7 @@ Fasanen - Hertzallee (nur für BVG frei)	3 5456,11742 5356,11512 5352,11502 5587,
 Fasanenstr.	1 5192,10241 5196,10398
 Naumannstr. - Kolonnenstr.	3 7713,8600 7709,8777 7642,8815
 Naumannstr. N - H	3 7707,8915 7709,8777 7713,8600
-zum Mariannenplatz	2 11950,11157 11921,11185
+zum Mariannenplatz	2 11950,11157 11917,11186
 Herbartstr.	1 2340,11056 2361,10941 2468,10780 2493,10675
 Breite Str. Pankow	1 10602,18382 10680,18380
 Gormannstr.	1 10459,13760 10445,13675 10406,13543 10390,13493
@@ -828,16 +828,16 @@ Berliner Allee -> Rossinistr.	3 13432,15843 13401,15821 13456,15760
 Straßenbahntrasse	3nocross::ignrte 12010,16774 12017,16734 12045,16574
 Prenzlauer Promenade -> Brauhausstr.: Straßenbahntrasse	3::igndisp 12010,16774 12017,16734 12211,16688
 Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3::igndisp 12211,16688 12017,16734 12045,16574
-Mittelstreifen	3nocross::ignrte 12114,12546 12134,12540 12360,12505
-Karl-Marx-Allee -> Krautstr./Blumenstr.: Mittelstreifen	3::igndisp 12360,12505 12134,12540 12125,12490
+Mittelstreifen	3nocross::ignrte 12114,12546 12134,12540 12352,12509
+Karl-Marx-Allee -> Krautstr./Blumenstr.: Mittelstreifen	3::igndisp 12352,12509 12134,12540 12125,12490
 Krautstr./Blumenstr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 12125,12490 12134,12540 12114,12546
-Mittelstreifen	3nocross::ignrte 12360,12505 12596,12472 12612,12470 12869,12425
-Karl-Marx-Allee -> Koppenstr.: Mittelstreifen	3::igndisp 12612,12470 12596,12472 12573,12227
-Karl-Marx-Allee -> Koppenstr.: Mittelstreifen	3::igndisp 12360,12505 12596,12472 12632,12630
-Koppenstr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 12632,12630 12596,12472 12612,12470
-Koppenstr. -> Koppenstr.: Mittelstreifen	3::igndisp 12632,12630 12596,12472 12573,12227
-Koppenstr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 12573,12227 12596,12472 12360,12505
-Koppenstr. -> Koppenstr.: Mittelstreifen	3::igndisp 12573,12227 12596,12472 12632,12630
+Mittelstreifen	3nocross::ignrte 12352,12509 12592,12472 12603,12470 12878,12430
+Karl-Marx-Allee -> Koppenstr.: Mittelstreifen	3::igndisp 12603,12470 12592,12472 12573,12227
+Karl-Marx-Allee -> Koppenstr.: Mittelstreifen	3::igndisp 12352,12509 12592,12472 12632,12630
+Koppenstr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 12632,12630 12592,12472 12603,12470
+Koppenstr. -> Koppenstr.: Mittelstreifen	3::igndisp 12632,12630 12592,12472 12573,12227
+Koppenstr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 12573,12227 12592,12472 12352,12509
+Koppenstr. -> Koppenstr.: Mittelstreifen	3::igndisp 12573,12227 12592,12472 12632,12630
 Friedrich-Wilhelm-Str.: In die andere Richtung nur für Anlieger	1 8385,5907 8266,5911
 Parkstr.: Durchfahrt gesperrt	3 9143,6415 9184,6413 9250,6414
 Parkstr.: Durchfahrt gesperrt	3 9250,6414 9184,6413 9143,6415
@@ -1506,7 +1506,7 @@ Im Vogtland	1 6657,23334 6684,23308 6727,23287
 Überquerungsmöglichkeit nur für BVG frei	3nocross::ignrte 11560,13232 11681,13161 11723,13139
 Mollstr. -> Berolinastr.: Überquerungsmöglichkeit nur für BVG frei	3::igndisp 11723,13139 11681,13161 11656,13100
 Berolinastr. -> Mollstr.: Überquerungsmöglichkeit nur für BVG frei	3::igndisp 11656,13100 11681,13161 11560,13232
-Weidenweg - Str. der Pariser Kommune: Linksabbiegen verboten (Wendemöglichkeit an der Palisadenstr.)	3 13025,12523 12891,12549 12869,12425
+Weidenweg - Str. der Pariser Kommune: Linksabbiegen verboten (Wendemöglichkeit an der Palisadenstr.)	3 13025,12523 12891,12549 12878,12430
 Mittelstreifen	3nocross::ignrte 6422,15708 6555,15827 6661,15921
 Seestr. -> Antwerpener Str.: Mittelstreifen	3::igndisp 6661,15921 6555,15827 6690,15671
 Seestr. -> Togostr.: Mittelstreifen	3::igndisp 6422,15708 6555,15827 6530,15849

@@ -384,7 +384,7 @@ EOF
 #: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2971249-2970764-myfest-berlin.html
 	2::temp 11763,10635 11734,10563 11721,10530 11754,10516 11949,10414
 	2::temp 11552,10863 11772,10764 11760,10732 11781,10696 11763,10635 11505,10744 11552,10863 11589,10947 11640,11067
-	2::temp 11958,11045 11897,10887 11839,10736 11824,10708 11781,10696
+	2::temp 11961,11041 11899,10886 11839,10736 11824,10708 11781,10696
 	2::temp 11805,10899 11805,10858
 	2::temp 11275,10723 11301,10783 11329,10785 11365,10791 11403,10782 11505,10744 11463,10642 11690,10543 11721,10530
 	2::temp 11839,10736 11772,10764 11804,10846
@@ -5856,7 +5856,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003436',
        data  => <<EOF,
-	1::inwork 11347,12223 11343,12182 11325,12021 11283,11876 11242,11720
+	1::inwork 11347,12223 11343,12182 11325,12021 11291,11876 11250,11715
 EOF
      },
      { from  => 1159826400, # 2006-10-03 00:00
@@ -9474,7 +9474,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006219',
        data  => <<EOF,
-	2::temp 12891,12549 12869,12425
+	2::temp 12891,12549 12878,12430
 EOF
      },
      { from  => $isodate2epoch->("2018-06-02 10:00:00"), # 1 Tag Vorlauf
@@ -12300,8 +12300,8 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009533',
        data  => <<EOF,
-	2::temp 12360,12505 12362,12540 12364,12589
-	2::temp 12891,12549 12869,12425
+	2::temp 12352,12509 12355,12541 12359,12592
+	2::temp 12891,12549 12878,12430
 EOF
      },
      { from  => 1217880521,
@@ -13040,7 +13040,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009727',
        data  => <<EOF,
-	1::inwork 11569,11587 11324,11689 11242,11720
+	1::inwork 11569,11587 11324,11689 11250,11715
 EOF
      },
      { from  => 1230474772, # 2008-12-28 15:32
@@ -13248,7 +13248,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009727',
        data  => <<EOF,
-	1::inwork 11242,11720 11324,11689 11569,11587
+	1::inwork 11250,11715 11324,11689 11569,11587
 EOF
      },
      { from  => 1233866284, # 2009-02-05 21:38
@@ -13458,7 +13458,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012479',
        data  => <<EOF,
-	q4::inwork; 11242,11720 11324,11689 11569,11587
+	q4::inwork; 11250,11715 11324,11689 11569,11587
 EOF
      },
      { from  => 1238347506, # 2009-03-29 19:25
@@ -14185,7 +14185,7 @@ EOF
        source_id => 'IM_012636',
        data  => <<EOF,
 #: last_checked: 2009-05-21
-	q4::inwork 12822,12067 12833,12154 12850,12286 12869,12425
+	q4::inwork 12822,12067 12833,12154 12854,12287 12878,12430
 EOF
      },
      { from  => 1252767974, # undef
@@ -15435,9 +15435,9 @@ EOF
        type  => 'handicap',
        source_id => 'LMS_2386386548',
        data  => <<EOF,
-	q4::temp 12632,12630 12596,12472
-	q4::temp 12360,12505 12362,12540 12364,12589
-	q4::temp 12891,12549 12869,12425
+	q4::temp 12632,12630 12592,12472
+	q4::temp 12352,12509 12355,12541 12359,12592
+	q4::temp 12891,12549 12878,12430
 EOF
      },
      { from  => 1249676503, # 2009-08-07 22:21
@@ -19808,9 +19808,9 @@ EOF
        data  => <<EOF,
 #: by: http://www.bierfestival-berlin.de/?y=2017
 #: tempex 20170804-20170806 vvv
-	2::temp 12360,12505 12362,12540 12364,12589
-	2::temp 12891,12549 12869,12425
-	2::temp 12632,12630 12596,12472
+	2::temp 12352,12509 12355,12541 12359,12592
+	2::temp 12891,12549 12878,12430
+	2::temp 12632,12630 12592,12472
 	2::temp 13448,12340 13476,12461
 	2::temp 13552,12435 13543,12326
 #zukünftig, wenn dieser Weg eingetragen ist:	2::temp 13163,12382 13176,12500
@@ -20659,7 +20659,7 @@ EOF
        text  => 'Veranstaltung auf dem Mariannenplatz "Berlin lacht", 13.-15. September 2013',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 11772,10764 11839,10736 11897,10887 11958,11045
+	2::temp 11772,10764 11839,10736 11899,10886 11961,11041
 EOF
      },
      { from  => $isodate2epoch->("2015-07-24 00:00:00"), # 1339907400, # 2012-06-17 06:30
@@ -23497,7 +23497,7 @@ EOF
        text  => 'Koppenstr.: zwischen Rüdersdorfer Str. und Karl-Marx-Allee Bauarbeiten, Fahrbahn Richtung Norden gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-	q3::inwork; 12573,12227 12596,12472
+	q3::inwork; 12573,12227 12592,12472
 EOF
      },
      { from  => 1408476026, # 2014-08-19 21:20
@@ -26371,7 +26371,7 @@ EOF
 EOF
      },
      { from  => undef,
-       until => $isodate2epoch->("2018-07-01 12:00:00"),
+       until => $isodate2epoch->("2019-02-28 12:00:00"),
        text  => 'Rigaer Str.: Baustelle, während der Arbeitszeiten (Mo bis Fr, 6 bis 17 Uhr) kein Durchgang möglich',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -26462,8 +26462,8 @@ EOF
 EOF
      },
      { from  => 1502386525, # 2017-08-10 19:35
-       until => undef, # 1512082799, # 2017-11-30 23:59
-       text  => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Richtung Norden ist der Gehweg für Radfahrer frei; Baseler Str. offen Richtung Norden), Ende unbekannt',
+       until => $isodate2epoch->("2018-08-15 12:00:00"), # undef, # 1512082799, # 2017-11-30 23:59
+       text  => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Richtung Norden ist der Gehweg für Radfahrer frei; Baseler Str. offen Richtung Norden), bis Mitte August 2018',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: CARSTENN-2017
@@ -26473,13 +26473,17 @@ EOF
 #: by: mapillary (Gehweg für Radfahrer frei)
 #: source_id: 2147342671
 #: source_id: 2147342861
+#: source_id: 2147342860
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2018-07-01
-#: check_frequency: 30d
+#: last_checked: 2018-07-01 vvv
+# REMOVED --- #: check_frequency: 30d
+#: next_check: 2018-08-15 vvv
 # REMOVED (hier fertig) ---	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
-#: XXX hier laut fritz nur bis 2018-07-05
+#: XXX hier laut fritz nur bis 2018-07-17
 	q3::inwork; 2781,2493 2740,2588 2625,2850
+#: next_check ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => 1502483236, # 2017-08-11 22:27
@@ -26730,7 +26734,7 @@ EOF
 #: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00
 #: source_id: 2147342009
 #: osm_watch: way id="154381291" version="4"
-#: last_checked: 2018-06-26
+#: last_checked: 2018-07-06
 #: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
 EOF
@@ -27032,7 +27036,7 @@ EOF
 EOF
      },
      { from  => 1522864912, # 2018-04-04 20:01
-       until => $isodate2epoch->("2018-07-15 20:00:00"), # 1525449600, # 2018-05-04 18:00
+       until => 1530907952, # $isodate2epoch->("2018-07-15 20:00:00"), # 1525449600, # 2018-05-04 18:00
        text  => 'Behrenstr.: Sperrung Richtung Osten zwischen Wilhelmstr. und Glinkastr., voraussichtlich bis Mitte Juli 2018',
        type  => 'handicap',
        data  => <<EOF,
@@ -27426,6 +27430,37 @@ EOF
        source_id => '2147342847',
        data  => <<EOF,
 	q4::inwork; 4879,5017 4951,4920 4985,4884 5048,4798 5070,4770
+EOF
+     },
+     { from  => undef, # 
+       until => 1622498400, # Ende der Bauarbeiten für die *gesamte* Schönstr. --- 2021-06-01 00:00
+       text  => 'Schönstr.: Bauarbeiten zwischen Mirbachplatz und Paul-Oestreich-Str., Fahrbahn kann gesperrt sein',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php',
+       data  => <<EOF,
+#: XXX nach den Bauarbeiten bessere Qualität
+#: priority: #B
+#: last_checked: 2018-07-06
+#: check_frequency: 60d
+	q4::inwork 13391,16436 13630,16629
+EOF
+     },
+     { from  => 1530907854, # 2018-07-06 22:10
+       until => 1533074399, # 2018-07-31 23:59
+       text  => 'Glinkastr.: Bauarbeiten zwischen Französische Str. und Jägerstr., Fahrbahn Richtung Süden gesperrt, evtl.. sind auch Radfahrer betroffen, bis Ende Juli 2018',
+       type  => 'handicap',
+       source_id => '2147342871',
+       data  => <<EOF,
+	q4::inwork; 9183,12076 9195,11972
+EOF
+     },
+     { from  => 1531000800, # 2018-07-08 00:00
+       until => 1534780800, # 2018-08-20 18:00
+       text  => 'Blumberger Damm: Bauarbeiten zwischen Rudolf-Leonhard-Str. und Mehrower Allee, Fahrbahn gesperrt, vom 9. Juli 2018 bis voraussichtlich 20. August 2018',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.719553.php',
+       data  => <<EOF,
+	2::inwork 21889,16817 21824,16506 21785,16273 21782,16253
 EOF
      },
     );

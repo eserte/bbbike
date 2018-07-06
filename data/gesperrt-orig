@@ -153,7 +153,7 @@ Steinplatz	1 5166,11343 5122,11300 5088,11322 5053,11343 5091,11406
 Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1 14089,9610 13865,9866 13795,9941
 Amtsgerichtsplatz	1 2987,11055 3049,11015 3033,10980 2981,10892 2921,10928 2987,11055
 Bethaniendamm	1 12060,11323 12012,11235 11950,11157 11845,11095 11750,11065 11640,11067 11458,11136
-Engeldamm	1 11473,11180 11656,11106 11800,11118 11921,11185 11985,11261 12025,11346
+Engeldamm	1 11473,11180 11656,11106 11798,11121 11917,11186 11981,11263 12021,11349
 Pannierstr.	1 12202,8895 12242,8972
 # REMOVED (nicht mehr Einbahnstraße) --- Dönhoffstr.	1 18726,8633 18609,8717 18514,8773 18451,8823 18375,8874 18296,8920 18221,8978 18161,9029 18136,9072
 Bersarinplatz	1 13730,12535 13698,12544 13675,12581 13681,12624 13695,12643 13747,12642 13767,12626 13761,12578 13730,12535
@@ -175,7 +175,7 @@ Oberhofer Platz	1 5491,1955 5474,1940 5452,1940 5431,1956 5393,2053 5376,2097 54
 Scheelestr.	1 5741,1234 5697,1098 5556,984 5488,943 5421,902 5342,845
 Tibertius-Brücke: Kfz-Straße	2 5681,5743 5574,5819 5377,5961 5335,5991 4937,6205
 An der Schillingbrücke	1 12061,11406 12060,11323
-An der Schillingbrücke	1 12025,11346 12061,11406
+An der Schillingbrücke	1 12021,11349 12061,11406
 Schulze-Delitzsch-Platz	1 11155,11750 11060,11753 11024,11789
 Schulze-Delitzsch-Platz	1 11024,11789 11073,11774 11155,11750
 Dorotheenstr.	1 9870,12657 9742,12609 9681,12601 9581,12588 9454,12558
@@ -2386,7 +2386,8 @@ Drängelgitter	BNP:3::trailer=10 10062,15927
 #: osm_watch: node id="2456723872" version="2"
 #: osm_watch: node id="2456723871" version="3"
 #: XXX eventuell temporär wegen der Baustraße (vielleicht für das Wohngebiet Lichtburgring?)
-#: last_checked: 2018-05-17
+#: last_checked: 2018-07-06
+#: check_frequency: 60d
 zwei Drängelgitter	BNP:6::trailer=15 10038,15418
 Schranke	BNP:3 -7969,-1659
 # REMOVED (existiert nicht mehr) --- Drängelgitter	BNP:3::trailer=10 18126,9075
@@ -2909,7 +2910,7 @@ Pepitapromenade: Bauarbeiten, teilweise noch gesperrt	2::inwork -2873,17369 -257
 # 
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/kranke-baeume-muessen-weichen-bezirksamt-laesst-anton-saefkow-park-aufwerten_a142536 (spätestens 2020 sind die Bauarbeiten beendet)
 #: by: https://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Anton-Saefkow-Park.7788.0.html
-#: last_checked: 2018-06-19
+#: last_checked: 2018-07-06
 Volkspark Anton Saefkow: Bauarbeiten, Wege sind gesperrt	2::inwork 12620,14979 12639,14913 12592,14838 12640,14800
 # 
 #: next_check_id: KAUFHOF-2018
@@ -3030,7 +3031,7 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12677,-15
 #: by: http://www.berliner-woche.de/prenzlauer-berg/bauen/baugruben-am-mauerpark-sind-jetzt-eingerichtet-d158178.html
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.715523.php
 #: source_id: 2147342369
-#: last_checked: 2018-06-26 (Südseite) vvv
+#: last_checked: 2018-07-06 (Nordseite) vvv
 #: check_frequency: 360d vvv
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
@@ -3101,9 +3102,9 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/rigaer-strasse-soll-temporaer-wieder-passierbar-sein-d140803.html
 #: by: http://friedrichshainblog.de/rigaer-wieder-passierbar/
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.677127.php (Öffnung nachts (17-6) und am Wochenende, erstmal bis Juli 2018)
-#: last_checked: 2018-06-20
-#: next_check: 2018-07-01
-#: valid: 20180701-20190228
+#: last_checked: 2018-07-06
+#: next_check: 2018-07-31
+#: valid: 20180731-20190228
 #: priority: #A
 Rigaer Str.: Komplettsperrung zwischen Schreinerstr. und Voigtstr.	2::inwork 14538,12371 14748,12314
 # 

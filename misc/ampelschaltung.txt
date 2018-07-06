@@ -896,7 +896,7 @@ So, 25.04.1999
 11393,10390   Skalitzer Str./Kottbusser (Auto 2) S->N       09:24:19
 11463,10642   Oranienstr./Adalbertstr.           S->N       09:25:00
 11552,10863   Waldemarstr./Adalbertstr.          S->N   50  09:25:21  09:25:41
-12025,11346   Köpenicker Str./Engeldamm/An der   SW->NO     09:28:37
+12021,11349   Köpenicker Str./Engeldamm/An der   SW->NO     09:28:37
 12180,11657   Holzmarktstr./Stralauer Platz/And  SW->NO 70  09:29:24  09:29:39
 12822,12067   Rüdersdorfer Str./Straße der Pari  S->N   60  09:37:17  09:36:33
 14211,11552   Wühlischstr./Modersohnstr./Gärtne  W->O   60  09:41:55  09:42:08
@@ -1771,8 +1771,8 @@ Do, 25.02.2010
 10755,13152   Münzstr./Memhardstr./Rosa-Luxembu  W->O       00:10:29
 11226,12945   Karl-Marx-Allee/Alexanderstr./Ott  W->O       00:13:02
 12028,12519   Strausberger Platz/Lichtenberger   W->O       00:16:57
-12869,12425   Karl-Marx-Allee/Straße der Parise  W->O                 00:19:58
-12869,12425   Karl-Marx-Allee/Straße der Parise  W->O       00:20:41
+12878,12430   Karl-Marx-Allee/Straße der Parise  W->O                 00:19:58
+12878,12430   Karl-Marx-Allee/Straße der Parise  W->O       00:20:41
 13696,11920   Warschauer Str./Grünberger Str.    W->O                 00:24:15
 13696,11920   Warschauer Str./Grünberger Str.    W->O       00:25:06
 14461,11738   Boxhagener Str./Grünberger Str./(  W->O                 00:25:39
@@ -1899,9 +1899,9 @@ Di, 27.03.2012
 11764,12001   An der Michaelbrücke/Lichtenberge  NO->SW     09:27:56
 11569,11587   Köpenicker Str./Michaelkirchstr.   NO->SW     09:29:03
 11569,11587   Köpenicker Str./Michaelkirchstr.   NO->SW               09:29:19
-11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:29:53
-11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW               09:30:06
-11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:30:53
+11250,11715   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:29:53
+11250,11715   Köpenicker Str./Brückenstr./Heinr  SO->NW               09:30:06
+11250,11715   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:30:53
 11347,12223   Holzmarktstr./Alexanderstr./Stral  S->N                 19:11:25
 11347,12223   Holzmarktstr./Alexanderstr./Stral  S->N       19:12:33
 12295,12197   Andreasstr./Singerstr.             W->O       19:15:34
@@ -2107,8 +2107,8 @@ Mi, 18.04.2012
 11764,12001   An der Michaelbrücke/Lichtenberge  NO->SW     09:00:41
 11569,11587   Köpenicker Str./Michaelkirchstr.   NO->SW               09:01:22
 11569,11587   Köpenicker Str./Michaelkirchstr.   NO->SW     09:02:27
-11242,11720   Köpenicker Str./Brückenstr./Heinr  O->W                 09:03:06
-11242,11720   Köpenicker Str./Brückenstr./Heinr  O->W       09:03:53
+11250,11715   Köpenicker Str./Brückenstr./Heinr  O->W                 09:03:06
+11250,11715   Köpenicker Str./Brückenstr./Heinr  O->W       09:03:53
 11764,12001   An der Michaelbrücke/Lichtenberge  NW->SO     19:45:40
 12180,11657   Holzmarktstr./Stralauer Platz/And  NW->SO     19:47:40
 12180,11657   Holzmarktstr./Stralauer Platz/And  NW->SO     19:48:55
@@ -2129,9 +2129,9 @@ Do, 19.04.2012
 12060,11323   Köpenicker Str./Bethaniendamm      SO->NW     09:15:55
 11569,11587   Köpenicker Str./Michaelkirchstr.   SO->NW               09:16:53
 11569,11587   Köpenicker Str./Michaelkirchstr.   SO->NW     09:17:29
-11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:17:53
-11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW               09:18:06
-11242,11720   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:18:53
+11250,11715   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:17:53
+11250,11715   Köpenicker Str./Brückenstr./Heinr  SO->NW               09:18:06
+11250,11715   Köpenicker Str./Brückenstr./Heinr  SO->NW     09:18:53
 12295,12197   Andreasstr./Singerstr.             W->O       18:02:03
 12295,12197   Andreasstr./Singerstr.             W->O                 18:02:21
 12295,12197   Andreasstr./Singerstr.             W->O       18:03:13
@@ -2175,8 +2175,8 @@ Fr, 20.04.2012
 11635,12745   Karl-Marx-Allee/Schillingstr.      W->O                 18:58:37
 11635,12745   Karl-Marx-Allee/Schillingstr.      W->O       18:59:10
 12028,12519   Strausberger Platz/Lichtenberger   W->O       19:01:36
-12360,12505   Karl-Marx-Allee/Andreasstr./Lebus  W->O                 19:02:39
-12360,12505   Karl-Marx-Allee/Andreasstr./Lebus  W->O       19:03:30
+12352,12509   Karl-Marx-Allee/Andreasstr./Lebus  W->O                 19:02:39
+12352,12509   Karl-Marx-Allee/Andreasstr./Lebus  W->O       19:03:30
 13217,11936   Wedekindstr./Marchlewskistr.       NW->SO               19:06:39
 13217,11936   Wedekindstr./Marchlewskistr.       NW->SO     19:07:23
 13217,11936   Wedekindstr./Marchlewskistr.       NW->SO               19:07:38

@@ -74,10 +74,10 @@ Zehlendorfer Kreuz: Radfahrer müssen auf die rechte Seite zurück wechseln	DH:len
 #: priority ^^^
 #: next_check ^^^
 # 
-Koppenstr./Karl-Marx-Allee: Fußgängerampel	DH:len=20:tl 12573,12227 12596,12472 12632,12630
-Koppenstr./Karl-Marx-Allee: Fußgängerampel	DH:len=20:tl 12632,12630 12596,12472 12573,12227
-Koppenstr./Karl-Marx-Allee: Fußgängerampel	DH:len=20:tl 12573,12227 12596,12472 12360,12505
-Koppenstr./Karl-Marx-Allee: Fußgängerampel	DH:len=20:tl 12360,12505 12596,12472 12632,12630
+Koppenstr./Karl-Marx-Allee: Fußgängerampel	DH:len=20:tl 12573,12227 12592,12472 12632,12630
+Koppenstr./Karl-Marx-Allee: Fußgängerampel	DH:len=20:tl 12632,12630 12592,12472 12573,12227
+Koppenstr./Karl-Marx-Allee: Fußgängerampel	DH:len=20:tl 12573,12227 12592,12472 12352,12509
+Koppenstr./Karl-Marx-Allee: Fußgängerampel	DH:len=20:tl 12352,12509 12592,12472 12632,12630
 # 
 Jerusalemer Str./Leipziger Str.: Fußgängerampel	DH:len=10:tl 9982,11681 9981,11689 9898,11679
 # 
@@ -124,7 +124,7 @@ Am Juliusturm -> Zitadelle: Ampel	DH:len=100:tl -2794,14511 -2647,14532 -2652,14
 # 
 Berliner Str. -> Masurenstr.: Mittelstreifen	DH:len=40 10892,17396 10885,17469 10670,17458
 # 
-Karl-Marx-Allee -> Krautstr.: am Strausberger Platz (Ampel) die Karl-Marx-Allee überqueren und einige Meter zurückfahren	DH:len=40:tl 12360,12505 12134,12540 12125,12490
+Karl-Marx-Allee -> Krautstr.: am Strausberger Platz (Ampel) die Karl-Marx-Allee überqueren und einige Meter zurückfahren	DH:len=40:tl 12352,12509 12134,12540 12125,12490
 # 
 Ilsensteinweg -> B1: Ampel	DH:tl -1724,2743 -1626,2441 -1340,2554
 # 
@@ -166,7 +166,7 @@ Zeppelinstr. -> Edisonstr.: Fußgängerampel	DH:len=20:tl 18041,6924 17919,6968 17
 # 
 #: next_check_id: HOLZMARKT-2017
 #: XXX hier wird noch eine zusätzliche Ampel entstehen
-#: last_checked: 2018-07-05 vvv
+#: last_checked: 2018-07-06 vvv
 #: next_check: 2018-08-31 vvv
 Schillingstr. -> Holzmarktstr.: Ampel	DH:len=90:tl 11452,12318 11388,12202 11513,12138
 Holzmarktstr. -> Schillingstr.: linker Gehweg	DH:h=q2,45 11347,12223 11388,12202 11452,12318

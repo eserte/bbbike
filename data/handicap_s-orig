@@ -27,7 +27,7 @@ Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,1
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2018-07-01
+#: last_checked: 2018-07-06
 #: check_frequency: 90d
 Dˆringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -43,7 +43,7 @@ Lange Str.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 12409,11902 12238,11
 M¸ncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
 # 
 #: next_check_id: RIGAER-2018
-#: last_checked: 2018-06-20
+#: last_checked: 2018-07-06
 #: next_check: 2019-02-28
 #: valid: -20190228
 #: priority: #A
@@ -169,7 +169,7 @@ Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: XXX man kann auf dem s¸dlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2018-06-28
+#: last_checked: 2018-07-06
 Voltairestr.: Fahrbahn unter Umst‰nden wegen Baustelle gesperrt, Ausweichen auf Gehweg	q2- 11329,12497 11209,12430
 # 
 #: next_check_id: ZIEGELSTR-2016
@@ -319,7 +319,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
 #: source_id: LMS-BR_r_LMS-BR_197
 #: osm_watch: way id="194962375" version="8"
-#: last_checked: 2018-06-30
+#: last_checked: 2018-07-06
 #: check_frequency: 7d
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q4::inwork 10601,12521 10704,12595
 # 
@@ -623,8 +623,8 @@ S‰ntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
 #: next_check_id: HILDBURGHAUSER-2018
 #: source_id: 2147341614
 #: last_checked: 2018-07-02
-# REMOVED --- #: next_check: 2018-06-30
-# REMOVED --- #: valid: -20180630
+#: next_check: 2018-08-31
+#: valid: -20180831
 #: priority: #A
 Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden	q3::inwork 5223,1318 5414,1304 5585,1275 5741,1234
 # 
@@ -634,11 +634,7 @@ Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden
 # 
 ### Lichterfelde ###
 # 
-#: source_id: 2147342640
-#: last_checked: 2018-07-01
-#: next_check: 2018-07-30
-#: valid: -20180730
-Dahlemer Weg: Bauarbeiten, Fahrbahn und Radweg Richtung Norden gesperrt, Gehweg darf von Radfahrern benutzt werden	q2::inwork; 2123,2803 2146,2878 2152,2912 2198,3169 2203,3213
+# REMOVED --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.719385.php (aufgehoben) --- #: source_id: 2147342640 --- #: last_checked: 2018-07-01 --- #: next_check: 2018-07-30 --- #: valid: -20180730 --- Dahlemer Weg: Bauarbeiten, Fahrbahn und Radweg Richtung Norden gesperrt, Gehweg darf von Radfahrern benutzt werden	q2::inwork; 2123,2803 2146,2878 2152,2912 2198,3169 2203,3213
 # 
 #: temporary ^^^
 ######################################################################
@@ -872,7 +868,7 @@ Markgrafenstr.: Gehweg	q2 9737,11546 9732,11574 9707,11596 9701,11656
 Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9536,11922 9666,11935
 Gendarmenmarkt: Fuﬂg‰ngerzone, ggfs. schieben	q3 9523,12019 9656,12031
 Am Volkspark: Parkweg	q1 5730,8207 5925,8219
-Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12869,12425 12950,12340 12985,12303
+Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12878,12430 12950,12340 12985,12303
 # REMOVED (nun in gesperrt-orig) --- #: XXX_prog: zus‰tzlich noch Bordsteine an der ˆstlichen Seite (BS) (q2 auch ohne Bordstein) --- Lange Str. [vor dem ehemaligen Kaufhof]: Fuﬂg‰nger, Bauarbeiten, Bordstein	q3 12409,11902 12522,11837
 Hermann-Stˆhr-Platz: Fuﬂg‰nger	q2 12453,11790 12409,11902
 Gotenstr./Cheruskerstr. - Kolonnenstr.: Fuﬂg‰nger	q2 7485,8777 7531,8848 7563,8871
@@ -1319,7 +1315,7 @@ Kiautschoustr.: Fuﬂg‰nger, Bordsteine	q3 6837,14848 6853,14854
 Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 (Aldi/Getr‰nke-Hoffmann-Parkplatz): Parkplatz	q1 13208,11658 13186,11692 13173,11788
 #: XXX_prog BS am ˆstlichen Ende, am westlichen ist abgesenkt, ansonsten q2
-(Schmidstr. - Heinrich-Heine-Str.): Bordsteine, Fuﬂg‰nger	q3 11236,11508 11170,11558
+(Schmidstr. - Heinrich-Heine-Str.): Bordsteine, Fuﬂg‰nger	q3 11236,11508 11174,11554
 #: XXX_prog BS am westlichen Ende, ˆstliches ist leicht abgesenkt und eigentlich kein Problem (wenn es nicht zugeparkt ist)
 (Entlang des Stadtbahnviadukts): Bordsteine, Fuﬂg‰nger	q2 11966,11832 12132,11788
 (Maybachufer - Weigandufer): Fuﬂg‰nger, B‰ume	q3+ 12845,9304 12862,9273 12909,9085 12902,9066
