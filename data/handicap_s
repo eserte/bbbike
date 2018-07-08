@@ -968,7 +968,7 @@ Lion-Feuchtwanger-Weg: Fuﬂg‰nger	q1 22516,12946 22493,12999
 (Unterf¸hrung U-Bhf. Cottbusser Platz): Fuﬂg‰nger	q1 23458,14439 23423,14543
 (Unterf¸hrung U-Bhf. Cottbusser Platz): Rampe	q3 23423,14543 23454,14556 23421,14549 23458,14563 23463,14552
 (Cottbusser Platz - Hellersdorfer Str.): Fuﬂg‰nger	q2 23366,14537 23399,14520
-Kastanienallee (Hellersdorf): Fuﬂg‰nger	q1 23756,14696 23769,14609 23784,14569 23808,14503 23877,14315 23897,14274 23962,14140 24056,13988 24081,13951
+Kastanienallee (Hellersdorf): Fuﬂg‰nger	q1 23756,14696 23769,14609 23784,14569 23808,14503 23877,14315 23897,14274 23962,14140 24056,13988
 (Kastanienallee - Stollberger Str.): Fuﬂg‰nger	q1 23897,14274 23983,14318
 enge Rampe	q3 23784,14569 23792,14561 23793,14573
 (Erich-Kuttner-Str. - Storkower Str.): Bordsteine	q4 14088,13627 14060,13622
@@ -1171,6 +1171,7 @@ Straupitzer Steig: Fuﬂg‰ngerzone	q4 6765,21364 6766,21341
 (am Fasaneriegraben): einige Fuﬂg‰nger	q1 6907,21751 6878,21660 6841,21615
 (am Fasaneriegraben - Senftenberger Ring Ost): einige Fuﬂg‰nger	q1 6841,21615 6856,21588 6917,21559 6925,21558
 (am Fasaneriegraben - Senftenberger Ring West): einige Fuﬂg‰nger	q1 6841,21615 6826,21587 6808,21565 6748,21565
+(Welzower Steig - Senftenberger Ring): einige Fuﬂg‰nger	q1 6525,21630 6562,21627 6753,21542
 (Senftenberger Ring West - Senftenberger Ring Ost): einige Fuﬂg‰nger	q1 6826,21587 6856,21588
 (am Fasaneriegraben): teilweise eng	q2 7331,22037 7375,22146 7439,22138 7516,22178
 (Senftenberger Ring Nord - Mittelfeldbecken): einige Fuﬂg‰nger	q1 6977,22118 6989,21975 6999,21908
@@ -1576,7 +1577,8 @@ Veilchenbl¸tenweg: schmale Straﬂe	q1 11664,21246 11656,21309
 (Am Marderberg): eng	q1 14977,19129 14328,19527 13477,20064
 (Verl‰ngerte Hertzallee): einige Fuﬂg‰nger	q1 5352,11502 5171,11589
 (Verl‰ngerte Hertzallee): Fuﬂg‰nger	q2 5171,11589 4950,11696 4905,11785
-(Welzower Steig - Senftenberger Ring): eng, kurvenreich	q2 6511,21649 6526,21682 6633,21633 6676,21647 6722,21722
+(Welzower Steig - Senftenberger Ring): einige Fuﬂg‰nger	q1 6511,21649 6526,21682 6633,21633
+(Welzower Steig - Senftenberger Ring): eng, kurvenreich	q2 6633,21633 6676,21647 6722,21722
 (Gertrudstr. - Wanderweg): eng	q3 4749,24020 4754,23998
 Im Brachfeldwinkel: einige Fuﬂg‰nger	q1 3024,21286 3068,21150
 Stelzenweg, Straﬂe 26a: zahlreiche Bodenschwellen, mit Normalrad gut umfahrbar	q0 15464,3936 15362,4023 15183,4157 15028,4272 14967,4317 14805,4440 14651,4554 14616,4581
@@ -1752,6 +1754,9 @@ Kˆnigsheide: enge und ¸bersichtliche Stelle	q3 16279,5170 16320,5187
 Alfons-Loewe-Str.: Regenablaufrinnen	q1 -8066,15595 -7975,15904
 Pepitapromenade: einige Fuﬂg‰nger	q1 -2573,17314 -2873,17369
 Pepitapromenade: einige Fuﬂg‰nger	q1 -2856,17489 -2873,17369 -2878,17324
+(Park am Klˆtzebecken): Bordstein	q1 5815,22870 5926,22738
+(am Packereigraben): einige Fuﬂg‰nger	q1 6924,21550 6958,21549 7074,21513 7161,21494 7261,21504 7447,21509
+(Gandenitzer Weg - Quickborner Str.): einige Fuﬂg‰nger	q1 7549,21524 7713,21484 7782,21508 7802,21553 7853,21557 7939,21600
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schulhof, Radfahren verboten	q3 7242,8586 7288,8635
@@ -2181,7 +2186,7 @@ Hobeckweg: enge Straﬂe	q0 27190,13327 27414,13508 27530,13627 27556,13641
 Rosenorter Steig: enge Straﬂe	q0 -1349,23497 -1451,23525 -1535,23575 -1617,23624 -1700,23671
 Straﬂe 40 (Blankenburg): enge Straﬂe	q0 14893,20583 14945,20748 15035,21026
 (Mˆrchinger Str. - Berliner Str.): Fuﬂg‰nger	q2 1393,3183 1388,3197 1338,3300
-Biesentaler Str.: Aufpflasterungen, leicht zu umfahren	q0 9024,16855 9245,16758
+Biesentaler Str.: Aufpflasterungen, leicht zu umfahren	q0 9030,16853 9245,16758
 Tassostr.: enge Straﬂe	q1 13623,15954 13614,15984 13625,16054 13642,16118 13654,16152 13645,16192 13677,16281
 An der Wildbahn: viele parkende Autos in enger Straﬂe	q1 -1581,22553 -1447,22522 -1333,22495 -1270,22480 -1221,22468 -996,22416 -926,22399 -725,22355 -489,22295 -313,22233
 Wolmirstedter Weg: enge Straﬂe	q1 -4143,15639 -4216,15635 -4283,15639
@@ -2561,6 +2566,7 @@ Eichborndamm: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 4228
 Archibaldweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 15674,10851 15870,10938
 Nˆldnerplatz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 15870,10938 15903,10906
 Dorotheenstr. (Straﬂenbahn): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 9454,12558 9330,12538
+Quickborner Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 8016,21499 8162,21302
 Kirchstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q0::igndisp; 22314,4604 22284,4653
 Kietzer Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22372,4496 22383,4470
 Triftstr. (Buchholz): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 12023,23039 12185,23021
@@ -2635,7 +2641,7 @@ Kriemhildstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 173
 Am Lehnshof: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 4291,22986 4264,22992 4202,23034
 Gartenstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 720,2718 835,2715
 Belﬂstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 7899,2391 7983,2348 7987,2337
-Gotenburger Str.: Einfahrt verboten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 9000,16803 8847,16870
+Gotenburger Str.: Einfahrt verboten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 9008,16799 8847,16870
 Fritz-Werner-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 9105,2779 9081,2594
 Gravensteinstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 12229,22457 12185,22465
 Hauptstr. (Franzˆsisch Buchholz): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 12199,22367 12229,22457

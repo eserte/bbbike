@@ -137,7 +137,7 @@ Hardenbergplatz	1 5542,11075 5565,11147 5666,11362 5698,11333 5600,11114 5542,11
 Greinerstr.	1 8340,3242 8327,2987
 Dederingstr.	1 8455,2977 8476,3367
 Weserstr. (Friedrichshain)	1 14416,11815 14475,11778
-Quickborner Str.	1 8016,21499 8162,21302
+Quickborner Str.	1s 8016,21499 8162,21302
 Berliner Str. (Blankenfelde)	1 9490,23531 9437,23680 9415,23699
 Molkenmarkt - zur Stralauer Str.	1 10804,12291 10772,12288 10736,12285 10675,12280
 Herrfurthplatz	1 11647,7940 11653,7982 11689,8006 11731,7998 11754,7964 11748,7922 11713,7899 11671,7904 11647,7940
@@ -194,7 +194,7 @@ Sybel-/Waitzstr.	1 3883,10585 3764,10580 3731,10640 3726,10757
 Aﬂmannstr.	1 25015,5729 25048,5727 25039,5304 25039,5295
 Schˆnblicker Str.	1 31670,3604 31661,3665 31695,3690 31745,3679 31756,3620 31724,3592 31670,3604
 Knorrpromenade	1 14424,11639 14369,11489
-Herbststr.	1 7997,18524 8096,18456 8222,18375 8286,18331 8465,18365 8622,18402
+Herbststr.	1 7997,18524 8096,18456 8222,18375 8286,18331 8456,18371 8622,18402
 Ruhwaldweg: Schranke gesperrt	2 773,13375 758,13334
 Alt-Reinickendorf	1 7003,18715 6869,18721 6775,18726 6734,18728 6572,18793 6716,18788 6793,18763 6879,18737 7003,18715
 Lauterstr.	1s 5817,7223 5810,7337
@@ -811,7 +811,7 @@ Rˆbeler Weg: Privatstraﬂe, Durchfahrt verboten	2 24831,10730 24831,10772 24760,1
 Markgrafenstr.	1 9807,10788 9799,10846
 Markgrafenstr.	1 9799,10846 9834,10840
 Morgensternstr.	1 5212,2360 5229,2395
-Gotenburger Str.: Einfahrt verboten	1s 9000,16803 8847,16870
+Gotenburger Str.: Einfahrt verboten	1s 9008,16799 8847,16870
 Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
 Fritz-Werner-Str.	1s 9105,2779 9081,2594
 Kraftwerk Reuter West	2 -447,14338 -495,14311 -650,14355 -792,14258 -1002,14162 -1020,14084
@@ -868,7 +868,7 @@ Rudolf-Moos-Str. - Nuthestr.	2 -10281,-2690 -10321,-2800
 Horstweg - Nuthestr.	2 -10495,-2787 -10324,-2937 -10250,-2857
 Kleine Gasse	1 -13272,-1168 -13287,-1231
 Spornstr.	1 -13220,-1416 -13350,-1403
-Nuthestr.: Kfz-Straﬂe	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10250,-2857 -10321,-2800 -10547,-2606 -10604,-2567 -10898,-2375 -11070,-2123 -11116,-1681 -11140,-1564 -11226,-1445 -11386,-1313 -11613,-1125 -11869,-907 -12045,-757
+Nuthestr.: Kfz-Straﬂe	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10250,-2857 -10321,-2800 -10547,-2606 -10604,-2567 -10900,-2386 -11007,-2259 -11070,-2123 -11116,-1681 -11140,-1564 -11226,-1445 -11386,-1313 -11613,-1125 -11869,-907 -12045,-757
 nicht passierbarer Mittelstreifen	3nocross::ignrte -12045,-757 -11869,-907 -11613,-1125 -11386,-1313
 nicht passierbarer Mittelstreifen	3nocross::ignrte -13238,-1569 -13375,-1546 -13516,-1517
 Straﬂenbahntrasse	3nocross::ignrte -12794,-1652 -12758,-1689 -12733,-1703 -12653,-1723 -12567,-1817
@@ -920,6 +920,7 @@ Park Sanssouci: auch das Mitf¸hren eines Fahrrads ist nicht erlaubt	2 -14389,-85
 Park Sanssouci: auch das Mitf¸hren eines Fahrrads ist nicht erlaubt	2 -14389,-859 -14910,-903 -15684,-966
 (Am Gr¸nen Gitter - Schloss): auch das Mitf¸hren eines Fahrrads ist nicht erlaubt	2 -14173,-1013 -14186,-868
 (Am Gr¸nen Gitter - Schloss): auch das Mitf¸hren eines Fahrrads ist nicht erlaubt	2 -14191,-818 -14199,-707 -14205,-644
+Bahnhofstr.	1s -8417,-2862 -8410,-2884
 Rodelberg (Kleinmachnow)	1 -2387,-203 -2372,-291 -2451,-305
 (K‰the-Kollwitz-Str. - Zehlendorfer Damm)	1 -705,5 -658,-39
 Adolf-Grimme-Weg (Kleinmachnow)	1 -1768,-554 -1925,-568
@@ -2222,9 +2223,9 @@ Dietzgenstr. -> Granitweg: Mittelstreifen	3::igndisp 10114,21586 10118,21510 103
 Granitweg -> Dietzgenstr.: Mittelstreifen	3::igndisp 10313,21574 10118,21510 10120,21464
 Dietzgenstr. -> Marmorweg: Mittelstreifen	3::igndisp 10111,21661 10114,21586 10284,21649
 Marmorweg -> Dietzgenstr.: Mittelstreifen	3::igndisp 10284,21649 10114,21586 10118,21510
-Straﬂenbahntrasse	3nocross::ignrte 11693,22482 11812,22523 11940,22587
-Rosenthaler Weg -> Krugpfuhlweg: Straﬂenbahntrasse	3::igndisp 11693,22482 11812,22523 11178,22999
-Krugpfuhlweg -> Rosenthaler Weg: Straﬂenbahntrasse	3::igndisp 11178,22999 11812,22523 11940,22587
+Straﬂenbahntrasse	3nocross::ignrte 11694,22479 11817,22519 11936,22570
+Rosenthaler Weg -> Krugpfuhlweg: Straﬂenbahntrasse	3::igndisp 11694,22479 11817,22519 11178,22999
+Krugpfuhlweg -> Rosenthaler Weg: Straﬂenbahntrasse	3::igndisp 11178,22999 11817,22519 11936,22570
 Mittelstreifen	3nocross::ignrte 21307,12132 21400,12135 21573,12140
 Altentreptower Str. -> Unfallkrankenhaus Berlin: Mittelstreifen	3::igndisp 21307,12132 21400,12135 21401,12155
 Unfallkrankenhaus Berlin -> Altentreptower Str.: Mittelstreifen	3::igndisp 21401,12155 21400,12135 21573,12140
@@ -2839,7 +2840,7 @@ Dr‰ngelgitter am Bahn¸bergang	BNP:3:-108 13568,2208
 Dr‰ngelgitter	BNP:5:43 7509,8929
 Dr‰ngelgitter	BNP:3:43:trailer=8 7242,8586
 Dr‰ngelgitter	BNP:3:43:trailer=8 7288,8635
-Schranke	BNP:3:61 8251,20927
+Schranke	BNP:3:62 8248,20933
 Schranke	BNP:5:-174 21297,12748
 Dr‰ngelgitter	BNP:3:7:trailer=5 22061,15168
 Dr‰ngelgitter kann ohne Absteigen passiert werden	BNP:2:-199 1388,3197
@@ -2980,7 +2981,7 @@ Merlitzstr.: Bauarbeiten, Straﬂe komplett gesperrt	2::inwork 19661,3421 19524,32
 Mauerstr. und J‰gerstr.: Bauarbeiten, Einbahnstraﬂe	1s:inwork 9195,11972 9108,11961 9076,12054
 Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:inwork 9076,12054 9064,12156
 (entlang der Erpe): Bauarbeiten der DB	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
-(Marseillestr. - Straﬂe 160): nur ein provisorischer Steg	2 12495,21397 12507,21391 12547,21372
+(Marseillestr. - Straﬂe 160): nur ein provisorischer Steg	2 12507,21391 12547,21372
 Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -6556,6663 -6661,6743
 An den Parkb‰umen: Bauarbeiten, Fahrbahn gesperrt	2::inwork -6530,6699 -6556,6663
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5579,12231 5535,12206 5518,12159
@@ -3309,7 +3310,7 @@ Hollmannstr.	2 9995,10637 9869,10672 9777,10719
 tragen	0:60:-139 -9371,-618
 tragen (ca. 60 Stufen)	0:80:-194 -8077,-1483
 tragen	0:60:-128 -8451,-1418
-Hausotterpl.	1 8319,18190 8345,18182 8355,18165 8355,18142 8333,18132 8310,18132 8296,18154 8299,18172 8319,18190
+Hausotterpl.	1 8319,18190 8345,18182 8355,18165 8352,18144 8333,18132 8310,18132 8296,18154 8299,18172 8319,18190
 Brauerstr.	1 5159,2176 5317,2345
 Gruﬂdorfstr.	1 2352,20224 2322,20220 2109,20188
 Am Buddeplatz	1 2322,20220 2336,20117

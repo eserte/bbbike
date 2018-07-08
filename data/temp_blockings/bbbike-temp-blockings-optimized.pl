@@ -3592,36 +3592,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: (YYYY01 & tu3) - +2d, (YYYY07 & tu1) - +2d vvv
-	q4::inwork 8634,10426 8384,10507 8527,10621
-	q4::inwork 8348,10636 8335,10518 8350,10499
-#: tempex ^^^
-',
-         'from' => 1530482400,
-         'id' => 2718,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              8,
-                              'months',
-                              1
-                            ],
-                            [
-                              'yearly',
-                              'days',
-                              27,
-                              'months',
-                              6
-                            ]
-                          ],
-         'source_id' => 'https://fashion-week-berlin.com/blog/single-news/das-sind-die-termine-fuer-2018.html',
-         'text' => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 03.07.2018-07.07.2018',
-         'type' => 'handicap',
-         'until' => 1531000799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4011,7 +3982,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: XXX bis wann ist die Durchfahrt gesperrt?
 #: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00
 #: source_id: 2147342009
-#: osm_watch: way id="154381291" version="4"
+#: osm_watch: way id="154381291" version="5"
 #: last_checked: 2018-07-06
 #: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
@@ -4188,17 +4159,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1536940800
        },
-       {
-         'data' => '#: source_id: 2147342627
-	q4::inwork; 3739,13563 3724,13702 3713,13787 3702,13865
-',
-         'from' => 1526407304,
-         'id' => 2955,
-         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.701215.php',
-         'text' => 'Lise-Meitner-Str.: Bauarbeiten zwischen Gaußstr. und Ringbahnbrücke, Einbahnstraßenregelung, offen Richtung Süden, voraussichtlich bis 7. Juli 2018',
-         'type' => 'handicap',
-         'until' => 1530986400
-       },
+       undef,
        undef,
        {
          'data' => '#: note: genaues Endedatum by fritz
@@ -4216,7 +4177,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-06-30
+#: last_checked: 2018-07-08
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222

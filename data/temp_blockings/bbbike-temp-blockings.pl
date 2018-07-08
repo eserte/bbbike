@@ -9035,7 +9035,7 @@ EOF
        text  => 'L 339 Neuer Hönower Weg Bahnübergang in der OD Birkenstein Erneuerung Bahnübergang halbseitig gesperrt; Einbahnstraße 16.07.2007-31.08.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 27067,12608 27094,12535 27101,12515 27117,12466
+	q4::inwork 27067,12608 27080,12573 27094,12535 27101,12515 27117,12466
 EOF
      },
      { from  => 1183412527, # 2007-07-02 23:42
@@ -9121,7 +9121,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006015',
        data  => <<EOF,
-	2::temp 6434,22244 6484,22098 6480,22053 6473,21969 6436,21897 6373,21810 6320,21777 6269,21748 6093,21648 5923,21522
+	2::temp 6434,22244 6484,22098 6480,22053 6473,21969 6436,21897 6373,21810 6320,21777 6269,21748 6093,21648 5926,21525
 EOF
      },
      { from  => 1184018400, # 2007-07-10 00:00
@@ -16590,7 +16590,7 @@ EOF
        text  => 'L 339 Neuer Hönower Weg OD Hoppegarten, zw. Industriestr. u. Wiesenstr. Deckenerneuerung Vollsperrung 26.10.2009-13.11.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 26880,11479 27272,11970
+	q4::inwork 26880,11479 26960,11597 27239,11852 27272,11970
 EOF
      },
      { from  => 1255212000, # 2009-10-11 00:00
@@ -17624,7 +17624,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_015512',
        data  => <<EOF,
-	q4::inwork; 8182,18761 8066,18754 7886,18742 7843,18705
+	q4::inwork; 8179,18756 8066,18754 7886,18742 7843,18705
 EOF
      },
      { from  => 1270987200, # 2010-04-11 14:00
@@ -18569,7 +18569,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016338',
        data  => <<EOF,
-	q4::inwork 26880,11479 27272,11970
+	q4::inwork 26880,11479 26960,11597 27239,11852 27272,11970
 EOF
      },
      { from  => 1284361200, # 2010-09-13 09:00
@@ -19777,7 +19777,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20110727.1340.352586.html',
        data  => <<EOF,
-	q4::inwork; 4718,22384 4800,22418 4898,22459 5006,22507 4917,22662
+	q4::inwork; 4724,22376 4800,22412 4898,22459 5006,22507 4917,22662
 EOF
      },
      { from  => 1313272800, # 2011-08-14 00:00
@@ -21264,7 +21264,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20121128.1200.378696.html',
        data  => <<EOF,
-	2::inwork 6378,20460 6428,20480 6494,20520 6601,20542 7073,20577 7098,20582 7289,20618
+	2::inwork 6377,20455 6431,20479 6494,20520 6601,20542 7073,20577 7098,20582 7289,20618
 EOF
      },
      { from  => undef,
@@ -22393,7 +22393,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131029.1400.390941.html',
        data  => <<EOF,
-	q4::inwork 8482,18284 8465,18365 8447,18446 8425,18542 8261,18689 8182,18761
+	q4::inwork 8475,18283 8456,18371 8438,18444 8425,18542 8257,18684 8179,18756
 EOF
      },
      { from  => 1385247600, # 2013-11-24 00:00
@@ -22402,8 +22402,8 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20131029.1400.390941.html',
        data  => <<EOF,
-	q4::inwork 8482,18284 8465,18365 8622,18402
-	q4::inwork 8465,18365 8286,18331
+	q4::inwork 8475,18283 8456,18371 8622,18402
+	q4::inwork 8456,18371 8286,18331
 EOF
      },
      { from  => 1383462000, # 2013-11-03 08:00
@@ -24487,7 +24487,7 @@ EOF
        data  => <<EOF,
 #: source_id: IM_025877	vvv
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2017/pressemitteilung.619785.php (Ende der Bauarbeiten)
-	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
+	q4::inwork; 9446,16060 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603
 	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
 #: source_id ^^^
 EOF
@@ -26733,7 +26733,7 @@ EOF
 #: XXX bis wann ist die Durchfahrt gesperrt?
 #: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00
 #: source_id: 2147342009
-#: osm_watch: way id="154381291" version="4"
+#: osm_watch: way id="154381291" version="5"
 #: last_checked: 2018-07-06
 #: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
@@ -27218,7 +27218,7 @@ EOF
        source_id => '2147342639',
        data  => <<EOF,
 #: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-06-30
+#: last_checked: 2018-07-08
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222

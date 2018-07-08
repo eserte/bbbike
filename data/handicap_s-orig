@@ -161,7 +161,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 # REMOVED --- #: last_checked: 2017-03-24 --- Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
 #: source_id: 2147342720
-#: last_checked: 2018-06-30
+#: last_checked: 2018-07-08
 #: next_check: 2018-11-30
 #: valid: -20181130
 Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q3::inwork 11092,12375 11139,12243
@@ -169,7 +169,7 @@ Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2018-07-06
+#: last_checked: 2018-07-08
 Voltairestr.: Fahrbahn unter Umständen wegen Baustelle gesperrt, Ausweichen auf Gehweg	q2- 11329,12497 11209,12430
 # 
 #: next_check_id: ZIEGELSTR-2016
@@ -245,7 +245,7 @@ Niederlagstr.: Bauarbeiten, Engstelle, Fußgänger	q3::inwork  9959,12281 9972,121
 # REMOVED (Einbahnstraßenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universitätsstr.: wegen Bauarbeiten Einbahnstraße zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2018-06-26 vvv
+#: last_checked: 2018-07-08 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="5"
@@ -573,7 +573,7 @@ Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt
 # 
 ### Prenzlauer Berg ###
 # 
-# REMOVED (-> wieder temp_blocking) --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml vvv --- #: source_id: IM_025877 vvv --- #: source_id: 2147339245 vvv --- #: source_id: 2147339553 vvv --- #: last_checked: 2017-06-28 vvv --- #: next_check: 2017-08-02 vvv --- Jülicher Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 9441,16058 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603 --- Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
+# REMOVED (-> wieder temp_blocking) --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml vvv --- #: source_id: IM_025877 vvv --- #: source_id: 2147339245 vvv --- #: source_id: 2147339553 vvv --- #: last_checked: 2017-06-28 vvv --- #: next_check: 2017-08-02 vvv --- Jülicher Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 9446,16060 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603 --- Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
 # REMOVED (nun offen, aber Bauarbeiten an der Kreuzung -> temp blockings) --- #: XXX mittlerweile bis zur Hälfte offen --- #: last_checked: 2017-12-26 --- #: check_frequency: 14d --- Fürstenberger Str.: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 10320,14608 10472,14632
 # 
 ### Pankow ###
@@ -600,7 +600,7 @@ Alt-Buch: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweichen	q3-::inwork
 ### Biesdorf ###
 # 
 #: next_check_id: MOEWENWEG-2017
-#: last_checked: 2018-04-29
+#: last_checked: 2018-07-07
 #: check_frequency: 90d
 Möwenweg: Straße wegen Bauarbeiten gesperrt, Umfahrung über sandigen Weg möglich	q3::inwork 22195,10993 22207,11069 22219,11136
 # 
@@ -641,7 +641,7 @@ Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden
 #: next_check_id: WUHLEWANDERWEG-2014 vvv
 #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird, siehe auch Eintrag in qualitaet_s-orig: vvv
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_38_4261_4376_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2017-08-09 vvv
+#: last_checked: 2018-07-07 vvv
 #: check_frequency: 300d vvv
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gefälle, Fußgänger	q4; 21970,12153 21998,12204
@@ -694,7 +694,7 @@ Alexanderplatz: langsame Straßenbahnen, Fußgängerverkehr	q2- 10970,12822 10923,1
 Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11134,12793 11064,12910
 #: XXX nach den Bauarbeiten den alten Eintrag wiederherstellen
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen für Radfahrer) (in der Realität aber schon)
-#: last_checked: 2018-06-24
+#: last_checked: 2018-07-08
 #: check_frequency: 60d
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Rathausstr.: Fußgänger, Bauarbeiten	q2+ 10923,12779 10704,12595
@@ -1811,7 +1811,7 @@ Lion-Feuchtwanger-Weg: Fußgänger	q1 22516,12946 22493,12999
 (Unterführung U-Bhf. Cottbusser Platz): Fußgänger	q1 23458,14439 23423,14543
 (Unterführung U-Bhf. Cottbusser Platz): Rampe	q3 23423,14543 23454,14556 23421,14549 23458,14563 23463,14552
 (Cottbusser Platz - Hellersdorfer Str.): Fußgänger	q2 23366,14537 23399,14520
-Kastanienallee (Hellersdorf): Fußgänger	q1 23756,14696 23769,14609 23784,14569 23808,14503 23877,14315 23897,14274 23962,14140 24056,13988 24081,13951
+Kastanienallee (Hellersdorf): Fußgänger	q1 23756,14696 23769,14609 23784,14569 23808,14503 23877,14315 23897,14274 23962,14140 24056,13988
 (Kastanienallee - Stollberger Str.): Fußgänger	q1 23897,14274 23983,14318
 enge Rampe	q3 23784,14569 23792,14561 23793,14573
 #: XXX_prog BS (2x), ansonsten q3 wegen der Fußgänger
@@ -2084,6 +2084,7 @@ Straupitzer Steig: Fußgängerzone	q4 6765,21364 6766,21341
 (am Fasaneriegraben): einige Fußgänger	q1 6907,21751 6878,21660 6841,21615
 (am Fasaneriegraben - Senftenberger Ring Ost): einige Fußgänger	q1 6841,21615 6856,21588 6917,21559 6925,21558
 (am Fasaneriegraben - Senftenberger Ring West): einige Fußgänger	q1 6841,21615 6826,21587 6808,21565 6748,21565
+(Welzower Steig - Senftenberger Ring): einige Fußgänger	q1 6525,21630 6562,21627 6753,21542
 (Senftenberger Ring West - Senftenberger Ring Ost): einige Fußgänger	q1 6826,21587 6856,21588
 (am Fasaneriegraben): teilweise eng	q2- 7331,22037 7375,22146 7439,22138 7516,22178
 (Senftenberger Ring Nord - Mittelfeldbecken): einige Fußgänger	q1 6977,22118 6989,21975 6999,21908
@@ -2610,7 +2611,9 @@ Veilchenblütenweg: schmale Straße	q1 11664,21246 11656,21309
 (Verlängerte Hertzallee): einige Fußgänger	q1 5352,11502 5171,11589
 #: note: besonders wenn man auf die Gehwege ausweicht
 (Verlängerte Hertzallee): Fußgänger	q2 5171,11589 4950,11696 4905,11785
-(Welzower Steig - Senftenberger Ring): eng, kurvenreich	q2 6511,21649 6526,21682 6633,21633 6676,21647 6722,21722
+(Welzower Steig - Senftenberger Ring): einige Fußgänger	q1 6511,21649 6526,21682 6633,21633
+#: XXX ist der Weg mittlerweile breiter geworden?
+(Welzower Steig - Senftenberger Ring): eng, kurvenreich	q2 6633,21633 6676,21647 6722,21722
 (Gertrudstr. - Wanderweg): eng	q3 4749,24020 4754,23998
 Im Brachfeldwinkel: einige Fußgänger	q1 3024,21286 3068,21150
 #: XXX_prog mit Anhänger aber ggfs. q1
@@ -2830,6 +2833,10 @@ Königsheide: enge und übersichtliche Stelle	q3 16279,5170 16320,5187
 Alfons-Loewe-Str.: Regenablaufrinnen	q1 -8066,15595 -7975,15904
 Pepitapromenade: einige Fußgänger	q1 -2573,17314 -2873,17369
 Pepitapromenade: einige Fußgänger	q1 -2856,17489 -2873,17369 -2878,17324
+#: XXX_prog: BS am Zabel-Krüger-Damm, ansonsten entfernen
+(Park am Klötzebecken): Bordstein	q1 5815,22870 5926,22738
+(am Packereigraben): einige Fußgänger	q1 6924,21550 6958,21549 7074,21513 7161,21494 7261,21504 7447,21509
+(Gandenitzer Weg - Quickborner Str.): einige Fußgänger	q1 7549,21524 7713,21484 7782,21508 7802,21553 7853,21557 7939,21600
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -3611,7 +3618,7 @@ Straße 40 (Blankenburg): enge Straße	q0- 14893,20583 14945,20748 15035,21026
 # 
 #: by: Catherina Haags:
 #: corrected_by: srt (q1 -> q0-, Bodenschwellen -> Aufpflasterungen)
-Biesentaler Str.: Aufpflasterungen, leicht zu umfahren	q0- 9024,16855 9245,16758
+Biesentaler Str.: Aufpflasterungen, leicht zu umfahren	q0- 9030,16853 9245,16758
 # 
 # REMOVED (nicht anders als andere Straßen hier) --- #: by: anonymous --- #: corrected_by: srt (q1 -> q0-) --- Chamissostr. (Französisch Buchholz): enge Straße	q0- 12513,21857 12433,21880 12332,21910 12216,21945 12063,21991
 # 

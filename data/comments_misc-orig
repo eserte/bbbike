@@ -85,7 +85,7 @@ Kreisverkehr	Roundabout 60197,12001
 Kreisverkehr	Roundabout 61156,11478
 Kreisverkehr	Roundabout 33787,7828
 Kreisverkehr	Roundabout 30290,8562
-Kreisverkehr	Roundabout -2519,-1612
+Kreisverkehr	Roundabout -2519,-1605
 Kreisverkehr	Roundabout -11793,104246
 # REMOVED (stimmt nicht (mehr?)= --- Kreisverkehr	Roundabout 18445,2642
 Kreisverkehr	Roundabout -10090,6868
@@ -411,7 +411,7 @@ Bus 122	busroute_N 5068,17384 4914,17399 4901,17341 4891,17289 4997,17241
 Bus 124	busroute_N 488,22275 455,22285 355,22344 231,22418 21,22545 -48,22595 -130,22647 -188,22682 -264,22729 -440,22841 -656,23011
 Bus 125	busroute_N 4326,17801 4377,18037 4421,18243 4291,18264 4181,18284 4102,18298 4009,18322 3909,18342 3733,18376 3738,18573 3731,18601 3713,18621 3562,18712 3680,18913 3700,18965
 Bus 322	busroute_N 4228,19024 4190,19048 4138,19015 3909,19002 3810,19133 3546,19477
-Bus 327	busroute_N 8465,18365 8286,18331 8222,18375 8096,18456 7997,18524 7861,18333
+Bus 327	busroute_N 8456,18371 8286,18331 8222,18375 8096,18456 7997,18524 7861,18333
 Bus 125	busroute_N 3546,19477 3343,19727 3252,19658 3167,19597 3021,19780 2854,19992 2835,20013 2814,20035 2803,20045 2726,20146 2684,20223 2645,20300 2615,20421
 Bus 133	busroute_N 2295,20358 2352,20224 2381,20157 2395,20126 2336,20117 2169,20095
 Bus 133	busroute_N 2109,20188 2322,20220 2352,20224
@@ -544,9 +544,9 @@ Bus 122, Bus 155	busroute_N 7672,19869 7556,19882 7333,19911 7209,19928 7205,200
 Bus 221	busroute_N 5819,21057 5840,20953 5929,20882 6027,20807 6117,20738 6279,20587 6375,20579 6408,20603 6439,20632 6445,20636 6904,20692 7080,20713 7171,20729 7255,20793 7280,20895 7251,21202
 Bus 222	busroute_N -1616,18112 -1547,18110 -1478,18107 -1478,18407 -1629,18417
 Bus M21, Bus X21	busroute_N 7251,21202 7238,21431 7261,21504 7390,21608 7520,21710 7742,21867
-Bus M21	busroute_N 7742,21867 7781,21812 7959,21573 7959,21573 7991,21531 8016,21499 7852,21262
+Bus M21	busroute_N 7742,21867 7781,21812 7939,21600 7959,21573 7959,21573 7991,21531 8016,21499 7852,21262
 Bus X21	busroute_N 7742,21867 7594,22068 7516,22178 7439,22306
-Bus 122	busroute_N 6962,21174 6917,21506 6925,21558 6928,21576 7155,21744 7244,21811 7287,21845 7347,21893 7375,21980 7331,22037 7264,22125 6977,22118 6683,22080 6629,22029 6618,21972 6473,21969
+Bus 122	busroute_N 6962,21174 6917,21506 6924,21550 6925,21558 6928,21576 7155,21744 7244,21811 7287,21845 7347,21893 7375,21980 7331,22037 7264,22125 6977,22118 6683,22080 6629,22029 6618,21972 6473,21969
 Bus 122, ...	busroute_N 5006,22507 5056,22389 5098,22326 5140,22342 5237,22345 5376,22350 5429,22359 5485,22396 5517,22432 5517,22487 5484,22564 5420,22692
 Bus 322	busroute_N 4810,21730 4655,21939 4613,21997 4598,22066 4584,22107 4556,22148 4456,22278
 Bus 324	busroute_N -1869,19974 -1681,19955 -1572,19899 -1419,19815
@@ -607,7 +607,7 @@ Klockow - Kleptow: Privatstraße	CS 49487,110056 49545,109679 49500,108991 49432,
 Campingplatz an der Straße	CS 52291,179768 52335,179650 52535,179597 53229,179049 53372,178875 54418,178046 54673,177683 54840,177668 55041,177444
 rechts vom Strand einbiegen	CP2; 28853,-19212 28805,-19189
 #: by: Tanja Vetter:
-Gotenburger Str.: zwei Schulen, also Vorsicht	CS 8847,16870 9000,16803
+Gotenburger Str.: zwei Schulen, also Vorsicht	CS 8847,16870 9008,16799
 Als Wiesenweg ausgeschildert	CS; 52215,83681 52346,83150
 Am Gutshof (Gramzow): Privatstraße, Durchfahrt verboten	CS 50364,89561 50337,90193 50346,90286 50278,90449
 #: by: Jessica (gluecksmarie):
@@ -1176,7 +1176,7 @@ ausgeschildert als Marie-Elisabeth-von-Humboldt-Str.	CP2; 20855,19299 20904,1928
 #: check_frequency: 90d
 Malevkeweg: nicht ausgeschildert	CS 24877,10863 24875,10919 24819,10924
 # 
-(Welzower Steig - Senftenberger Ring): entlang des Packereigrabens	CS 6525,21630 6625,21600 6753,21542
+(Welzower Steig - Senftenberger Ring): entlang des Packereigrabens	CS 6525,21630 6562,21627 6753,21542
 (Gundelfinger Str. - Römerweg): Treskow-Höfe	CS 18735,9421 18738,9467 18754,9584 18772,9694
 (Aristotelessteig - Treskowallee): Treskow-Höfe	CS 18715,9589 18754,9584 18835,9572 18865,9608
 entlang an Gewächshäusern	CS 17659,12823 17638,12813 17637,12785 17507,12781
@@ -1187,7 +1187,7 @@ ausgeschildert als Rüdigerstr. 65+65 A-E	CP2; 17441,12245 17444,12286
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4366
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2016 (Benennung)
 #: by: http://www.dafmap.de/d/berlin.html?id=5116&mt=0&zoom=16 (Projektabschluss: 2018-12-31)
-#: last_checked: 2018-07-06
+#: last_checked: 2018-07-07
 #: check_frequency: 120d
 Am Märchenbrunnen: nicht ausgeschildert	CS 11823,13635 11899,13750
 # 
@@ -1195,7 +1195,7 @@ Am Märchenbrunnen: nicht ausgeschildert	CS 11823,13635 11899,13750
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_50_5649_5788_online.pdf (Straßenbenennung)
 #: XXX dieser Weg wird auch in Minna-Todenhagen-Str. umbenannt --- evtl. auf einen Namen hier komplett verzichten. old_name-Eintrag?
 #: XXX wird hier noch irgendwie ausgeschildert?
-#: last_checked: 2018-07-05
+#: last_checked: 2018-07-07
 #: check_frequency: 60d
 Grenzweg (Oberschöneweide): nicht ausgeschildert	CS 17295,7328 17475,7451 17566,7485
 # REMOVED (hier: Heckenweg) --- Grenzweg (Oberschöneweide): nicht ausgeschildert	CS 17566,7485 17669,7515
@@ -1272,3 +1272,7 @@ Weg über Autobahntunnel	CS 12637,6309 12630,6326 12605,6322 12619,6310 12567,630
 Am Wuhlesee: nicht ausgeschildert	CS 21351,8402 21419,8367
 # 
 Pelzlake: ausgeschildert als Triglawstr. 16A-16B und zum Forst Müggelheim	CP2; 32245,1914 32155,1863
+# 
+ausgeschildert Märkisches Zentrum	CP2; 6431,20479 6423,20500
+# 
+ausgeschildert als "zu den Häusern Hauptstraße 85B, A"	CP2; 8107,20859 8248,20933

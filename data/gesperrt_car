@@ -339,14 +339,14 @@ Amtsstr. -> Gartenstr.: Müggelheimer Str.	3::igndisp 22495,4523 22419,4457 22382
 Gartenstr. -> Müggelheimer Str.: Müggelheimer Str.	3::igndisp 22382,4361 22419,4457 22383,4470
 Gartenstr. -> Amtsstr.: Müggelheimer Str.	3::igndisp 22382,4361 22419,4457 22495,4523
 Gropiusstr.	1 8543,16364 8534,16355 8389,16214
-Osloer Str.	3nocross::ignrte 8503,16716 8721,16689 8759,16684 8939,16668
+Osloer Str.	3nocross::ignrte 8503,16716 8721,16689 8759,16684 8952,16666
 Osloer Str. -> Pankeweg: Osloer Str.	3::igndisp 8503,16716 8721,16689 8804,16881
 Pankeweg -> Osloer Str.: Osloer Str.	3::igndisp 8804,16881 8721,16689 8759,16684
-Osloer Str. -> Travemünder Str.: Osloer Str.	3::igndisp 8939,16668 8759,16684 8688,16533
-Osloer Str. -> Travemünder Str.: Osloer Str.	3::igndisp 8939,16668 8759,16684 8759,16665
+Osloer Str. -> Travemünder Str.: Osloer Str.	3::igndisp 8952,16666 8759,16684 8688,16533
+Osloer Str. -> Travemünder Str.: Osloer Str.	3::igndisp 8952,16666 8759,16684 8759,16665
 Osloer Str. -> Stockholmer Str.: Osloer Str.	3::igndisp 8721,16689 8759,16684 8783,16710
 Osloer Str. -> Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet: Osloer Str.	3::igndisp 8721,16689 8759,16684 8776,16718
-Stockholmer Str. -> Osloer Str.: Osloer Str.	3::igndisp 8783,16710 8759,16684 8939,16668
+Stockholmer Str. -> Osloer Str.: Osloer Str.	3::igndisp 8783,16710 8759,16684 8952,16666
 Stockholmer Str. -> Travemünder Str.: Osloer Str.	3::igndisp 8783,16710 8759,16684 8688,16533
 Stockholmer Str. -> Travemünder Str.: Osloer Str.	3::igndisp 8783,16710 8759,16684 8759,16665
 Travemünder Str. -> Osloer Str.: Osloer Str.	3::igndisp 8688,16533 8759,16684 8721,16689
@@ -356,7 +356,7 @@ Travemünder Str. -> Osloer Str.: Osloer Str.	3::igndisp 8759,16665 8759,16684 87
 Travemünder Str. -> Stockholmer Str.: Osloer Str.	3::igndisp 8759,16665 8759,16684 8783,16710
 Travemünder Str. -> Travemünder Str.: Osloer Str.	3::igndisp 8759,16665 8759,16684 8688,16533
 Travemünder Str. -> Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet: Osloer Str.	3::igndisp 8759,16665 8759,16684 8776,16718
-Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Osloer Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8939,16668
+Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Osloer Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8952,16666
 Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Stockholmer Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8783,16710
 Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Travemünder Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8688,16533
 Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Travemünder Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8759,16665
@@ -546,11 +546,11 @@ Klandorfer Str. -> Märkische Allee: Mittelstreifen	3::igndisp 21377,18663 21335,
 Mittelstreifen	3nocross::ignrte 1214,3198 1338,3300 1415,3362
 Berliner Str. -> Mörchinger Str.: Mittelstreifen	3::igndisp 1415,3362 1338,3300 1388,3197
 Mörchinger Str. -> Berliner Str.: Mittelstreifen	3::igndisp 1388,3197 1338,3300 1214,3198
-Mittelstreifen	3nocross::ignrte 8939,16668 9000,16803 9024,16855 9028,16864 9082,16982
-Prinzenallee -> Gotenburger Str.: Mittelstreifen	3::igndisp 8939,16668 9000,16803 8847,16870
-Gotenburger Str. -> Prinzenallee: Mittelstreifen	3::igndisp 8847,16870 9000,16803 9024,16855
-Prinzenallee -> Biesentaler Str.: Mittelstreifen	3::igndisp 9028,16864 9024,16855 9245,16758
-Biesentaler Str. -> Prinzenallee: Mittelstreifen	3::igndisp 9245,16758 9024,16855 9000,16803
+Mittelstreifen	3nocross::ignrte 8952,16666 9008,16799 9030,16853 9033,16862 9082,16982
+Prinzenallee -> Gotenburger Str.: Mittelstreifen	3::igndisp 8952,16666 9008,16799 8847,16870
+Gotenburger Str. -> Prinzenallee: Mittelstreifen	3::igndisp 8847,16870 9008,16799 9030,16853
+Prinzenallee -> Biesentaler Str.: Mittelstreifen	3::igndisp 9033,16862 9030,16853 9245,16758
+Biesentaler Str. -> Prinzenallee: Mittelstreifen	3::igndisp 9245,16758 9030,16853 9008,16799
 Straßenbahntrasse	3nocross::ignrte 13512,15909 13623,15954 13737,15994
 Berliner Allee -> Tassostr.: Straßenbahntrasse	3::igndisp 13512,15909 13623,15954 13614,15984
 Berliner Allee -> Mahlerstr.: Straßenbahntrasse	3::igndisp 13737,15994 13623,15954 13667,15836
@@ -603,14 +603,14 @@ Alte Potsdamer Str. -> Potsdamer Str.: Mittelstreifen	3::igndisp 8481,11447 8479
 Potsdamer Pl. -> Alte Potsdamer Str.: Mittelstreifen	3::igndisp 8542,11502 8479,11493 8481,11447
 Jägerallee/Hegelallee: Durchfahrt verboten	3 -13221,-718 -13231,-763 -13236,-797
 Jägerallee/Hegelallee: Durchfahrt verboten	3 -13236,-797 -13231,-763 -13221,-718
-Straßenbahntrasse	3nocross::ignrte 9442,16610 9331,16624 9210,16638 8939,16668
+Straßenbahntrasse	3nocross::ignrte 9442,16610 9331,16624 9210,16638 8952,16666
 Osloer Str. -> Stettiner Str.: Straßenbahntrasse	3::igndisp 9442,16610 9331,16624 9107,16389
 Osloer Str. -> Freienwalder Str.: Straßenbahntrasse	3::igndisp 9210,16638 9331,16624 9435,16832
 Stettiner Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 9107,16389 9331,16624 9210,16638
 Stettiner Str. -> Freienwalder Str.: Straßenbahntrasse	3::igndisp 9107,16389 9331,16624 9435,16832
 Freienwalder Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 9435,16832 9331,16624 9442,16610
 Freienwalder Str. -> Stettiner Str.: Straßenbahntrasse	3::igndisp 9435,16832 9331,16624 9107,16389
-Osloer Str. -> Wriezener Str.: Straßenbahntrasse	3::igndisp 8939,16668 9210,16638 9245,16758
+Osloer Str. -> Wriezener Str.: Straßenbahntrasse	3::igndisp 8952,16666 9210,16638 9245,16758
 Wriezener Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 9245,16758 9210,16638 9331,16624
 Straßenbahntrasse	3nocross::ignrte 8249,16741 8161,16752 8144,16754 7852,16790 7763,16779
 Osloer Str. -> Heinz-Galinski-Str.: Straßenbahntrasse	3::igndisp 8249,16741 8161,16752 8082,16483
@@ -1422,7 +1422,7 @@ Stephaniweg: Poller	3 4836,1659 4855,1616 4942,1649
 Blaumeisenweg	1 5194,1690 5251,1543
 Töpferweg: Poller	3 13238,2521 13309,2410 13103,2271
 Töpferweg: Poller	3 13238,2521 13309,2410 13367,2322
-Hoppestr.	1 8610,18309 8482,18284
+Hoppestr.	1 8610,18309 8475,18283
 Straße 134: Poller	3 9192,20719 9276,20745 9398,20784
 Straße 134: Poller	3 9398,20784 9276,20745 9192,20719
 Straßenbahntrasse	3nocross::ignrte 10976,13229 11012,13278 11070,13357
@@ -1515,7 +1515,7 @@ Antwerpener Str. -> Togostr.: Mittelstreifen	3::igndisp 6690,15671 6555,15827 65
 Togostr. -> Seestr.: Mittelstreifen	3::igndisp 6530,15849 6555,15827 6661,15921
 Togostr. -> Antwerpener Str.: Mittelstreifen	3::igndisp 6530,15849 6555,15827 6690,15671
 Gipsstr.	1 10350,13376 10199,13446 10026,13521
-Mühlenstr.: Fahrbahn ist nur für die Straßenbahn offen	1 12040,22519 11940,22587
+Mühlenstr.: Fahrbahn ist nur für die Straßenbahn offen	1 12040,22519 12004,22526 11936,22570
 Burgwallstr.:	3 12993,21112 12952,21012 12927,20998
 Burgwallstr.:	3 12993,21112 12952,21012 12975,21006
 Wüstensperlingweg: Poller	3 12941,20855 12835,20670 12814,20648

@@ -199,7 +199,7 @@ Hardenbergplatz	1 5542,11075 5565,11147 5666,11362 5698,11333 5600,11114 5542,11
 Greinerstr.	1 8340,3242 8327,2987
 Dederingstr.	1 8455,2977 8476,3367
 Weserstr. (Friedrichshain)	1 14416,11815 14475,11778
-Quickborner Str.	1 8016,21499 8162,21302
+Quickborner Str.	1s:q4 8016,21499 8162,21302
 #: by: Jessaï Arakelian
 #: confirmed_by: srt
 Berliner Str. (Blankenfelde)	1 9490,23531 9437,23680 9415,23699
@@ -276,7 +276,7 @@ Sybel-/Waitzstr.	1 3883,10585 3764,10580 3731,10640 3726,10757
 Aßmannstr.	1 25015,5729 25048,5727 25039,5304 25039,5295
 Schönblicker Str.	1 31670,3604 31661,3665 31695,3690 31745,3679 31756,3620 31724,3592 31670,3604
 Knorrpromenade	1 14424,11639 14369,11489
-Herbststr.	1 7997,18524 8096,18456 8222,18375 8286,18331 8465,18365 8622,18402
+Herbststr.	1 7997,18524 8096,18456 8222,18375 8286,18331 8456,18371 8622,18402
 Ruhwaldweg: Schranke gesperrt	2 773,13375 758,13334
 Alt-Reinickendorf	1 7003,18715 6869,18721 6775,18726 6734,18728 6572,18793 6716,18788 6793,18763 6879,18737 7003,18715
 Lauterstr.	1s:q3 5817,7223 5810,7337
@@ -610,7 +610,7 @@ Murtzaner Ring	1 19818,14064 19770,14060 19731,14061 19692,14082 19634,14171 195
 Murtzaner Ring	1 19818,14064 19843,14064 19921,14064 19951,14083 20040,14179
 Rosenstr.	1 22284,4653 22212,4655 22144,4660
 Laurenzstr.	1 22246,4711 22175,4730
-# REMOVED --- Gotenburger Str.	1 9000,16803 8844,16863
+# REMOVED --- Gotenburger Str.	1 9008,16799 8844,16863
 Werrastr.: Firmengelände	2 13805,8193 13697,8279
 Neuendorfer Str.	1 -3295,14777 -3228,14794
 Neuendorfer Str.	1 -3228,14794 -3251,14741
@@ -1169,7 +1169,7 @@ Röbeler Weg: Privatstraße, Durchfahrt verboten	2 24831,10730 24831,10772 24760,1
 Markgrafenstr.	1 9807,10788 9799,10846
 Markgrafenstr.	1 9799,10846 9834,10840
 Morgensternstr.	1 5212,2360 5229,2395
-Gotenburger Str.: Einfahrt verboten	1s:q3 9000,16803 8847,16870
+Gotenburger Str.: Einfahrt verboten	1s:q3 9008,16799 8847,16870
 Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf
@@ -1277,7 +1277,7 @@ Rudolf-Moos-Str. - Nuthestr.	2 -10281,-2690 -10321,-2800
 Horstweg - Nuthestr.	2 -10495,-2787 -10324,-2937 -10250,-2857
 Kleine Gasse	1 -13272,-1168 -13287,-1231
 Spornstr.	1 -13220,-1416 -13350,-1403
-Nuthestr.: Kfz-Straße	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10250,-2857 -10321,-2800 -10547,-2606 -10604,-2567 -10898,-2375 -11070,-2123 -11116,-1681 -11140,-1564 -11226,-1445 -11386,-1313 -11613,-1125 -11869,-907 -12045,-757
+Nuthestr.: Kfz-Straße	2 -6426,-4014 -6787,-4026 -7187,-4049 -7426,-4035 -8128,-4073 -8407,-4066 -9021,-3865 -10250,-2857 -10321,-2800 -10547,-2606 -10604,-2567 -10900,-2386 -11007,-2259 -11070,-2123 -11116,-1681 -11140,-1564 -11226,-1445 -11386,-1313 -11613,-1125 -11869,-907 -12045,-757
 Nuthestr.: nicht passierbarer Mittelstreifen	3nocross -12045,-757 -11869,-907 -11613,-1125 -11386,-1313
 Breite Str.: nicht passierbarer Mittelstreifen	3nocross -13238,-1569 -13375,-1546 -13516,-1517
 Lange Brücke: Straßenbahntrasse	3nocross -12794,-1652 -12758,-1689 -12733,-1703 -12653,-1723 -12567,-1817
@@ -1324,6 +1324,7 @@ Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-85
 Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-859 -14910,-903 -15684,-966
 (Am Grünen Gitter - Schloss): auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14173,-1013 -14186,-868
 (Am Grünen Gitter - Schloss): auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14191,-818 -14199,-707 -14205,-644
+Bahnhofstr.	1s:q4 -8417,-2862 -8410,-2884
 ###################################################################### 
 # elsewhere in Brandenburg
 Rodelberg (Kleinmachnow)	1 -2387,-203 -2372,-291 -2451,-305
@@ -1899,7 +1900,7 @@ Südwestkorso: Mittelstreifen, parkende Autos	3nocross 4125,6763 4204,6826 4226,6
 Berliner Str.: Mittelstreifen	3nocross 1910,20548 1929,20501 1955,20435
 Dietzgenstr.: Mittelstreifen	3nocross 10083,21848 10097,21809 10106,21784
 Dietzgenstr.: Mittelstreifen	3nocross 10120,21464 10118,21510 10114,21586 10111,21661
-Rosenthaler Weg: Straßenbahntrasse	3nocross 11693,22482 11812,22523 11940,22587
+Rosenthaler Weg: Straßenbahntrasse	3nocross 11694,22479 11817,22519 11936,22570
 Altentreptower Str.: Mittelstreifen	3nocross 21307,12132 21400,12135 21573,12140
 Stülerstr.: Mittelstreifen	3nocross 6692,11365 6716,11439 6825,11486
 Saargemünder Str.: Mittelstreifen	3nocross 1884,4811 1747,4829 1479,4853
@@ -2722,7 +2723,7 @@ Drängelgitter	BNP:5 7509,8929
 Drängelgitter	BNP:3::trailer=8 7242,8586
 Drängelgitter	BNP:3::trailer=8 7288,8635
 #: by: ^^^
-Schranke	BNP:3 8251,20927
+Schranke	BNP:3 8248,20933
 #: by: Sorven (xbs9):
 Schranke	BNP:5 21297,12748
 #: by: Bernd Albinus:
@@ -3086,11 +3087,12 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 #: check_frequency: 90d
 (entlang der Erpe): Bauarbeiten der DB	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
 # 
+#: osm_watch: way id="344108079" version="3"
 #: next_check_id: NIZZASTR-2014
-#: last_checked: 2018-04-28
-#: next_check: 2018-07-01
-# REMOVED --- #: check_frequency: 60d
-(Marseillestr. - Straße 160): nur ein provisorischer Steg	2 12495,21397 12507,21391 12547,21372
+#: last_checked: 2018-07-07
+# REMOVED --- #: next_check: 2018-07-01
+#: check_frequency: 90d
+(Marseillestr. - Straße 160): nur ein provisorischer Steg	2 12507,21391 12547,21372
 # 
 #: next_check_id: RIGAER-2018
 #: XXX_indoor sobald aktiv: temp_blockings-Eintrag deaktivieren
@@ -3154,7 +3156,7 @@ Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5518,12159 5627,12105 5
 #: XXX Klompenweg: 11124
 #: XXX Am Groen: 11125
 #: last_checked: 2018-04-29
-#: check_frequency: 180d
+#: check_frequency: 120d
 Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen hier weiterhin Kfz fahren?	2::inwork 22101,10985 22146,10995 22172,10996 22195,10993
 # 
 #: next_check_id: BEBAUUNGSPLAN-XXI-34A
@@ -3466,7 +3468,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2018-06-26 (mapillary)
+#: last_checked: 2018-07-08
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
@@ -3697,7 +3699,7 @@ tragen	0:60 -9371,-618
 #: corrected_by: srt/new_policy (0:120 -> 0:80)
 tragen (ca. 60 Stufen)	0:80 -8077,-1483
 tragen	0:60 -8451,-1418
-Hausotterpl.	1 8319,18190 8345,18182 8355,18165 8355,18142 8333,18132 8310,18132 8296,18154 8299,18172 8319,18190
+Hausotterpl.	1 8319,18190 8345,18182 8355,18165 8352,18144 8333,18132 8310,18132 8296,18154 8299,18172 8319,18190
 #: by: Holger Buechner [AM]
 Brauerstr.	1 5159,2176 5317,2345
 #: by: rene carmosin [AM]

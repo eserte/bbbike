@@ -597,7 +597,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 8271,15734
 	X 8788,16264
 	X 7824,16170
-	X 8939,16668
+	X 8952,16666
 	X 7198,18575
 	X 7209,18682
 	X 5109,17507
@@ -940,7 +940,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 9346,4144
 	X 9192,5921
 	F 9720,15578
-	X 9441,16058
+	X 9446,16060
 	X 9514,16603
 	X 11445,15920
 	X 11941,15586
@@ -1374,7 +1374,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5382,21001
 	X 5136,21738
 	X 4925,22022
-	X 4718,22384
+	X 4724,22376
 	X 4337,22753
 	X 4259,23149
 	X 3957,23981
@@ -1513,7 +1513,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5476,20372
 	F 5341,21266
 	X 5819,21057
-	X 5923,21522
+	X 5926,21525
 	X 6371,21110
 	X 6279,20587
 	F 6439,20632
@@ -1926,7 +1926,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 20521,11494
 S-Bahn und Regionalbahn	B 21562,12088
 #: XXX_prog: eigentlich zwei Ampeln (die Kreuzung mit der Mühlenstr. ist etwas versetzt), aber wahrscheinlich gleich geschaltet
-	X 11940,22587
+	X 11936,22570
 	X 2394,9714
 #: XXX_prog muss beim Überqueren der Kurfürstenstr. benutzt werden
 #: note: Anforderungsampel
@@ -2264,7 +2264,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
 	F 22640,4081
 #: XXX_prog: muss auch für Radfahrer aus der Biesentaler Str. benutzt werden (Mittelstreifen)
 #: note: Anforderungsampel
-	F 9028,16864
+	F 9033,16862
 	F 8443,15901
 	F 5373,10981
 #: note: war früher (ca. 2006?) ein Zebrastreifen
@@ -2667,7 +2667,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2018-06-26 vvv
+#: last_checked: 2018-07-08 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3101,6 +3101,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	F 26787,10455
 	X -1494,-303
 	X -4162,-596
 	X -3996,-711

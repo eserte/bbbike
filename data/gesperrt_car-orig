@@ -229,7 +229,7 @@ Edisonstr.	1 17962,6674 17991,6431
 Brückenstr./Edisonstr.	1 17991,6431 17952,6246 17930,6175 17900,6072
 Müggelheimer Str.	3nocross 22674,4309 22556,4386 22451,4441 22419,4457 22383,4470
 Gropiusstr.	1 8543,16364 8534,16355 8389,16214
-Osloer Str.	3nocross 8503,16716 8721,16689 8759,16684 8939,16668
+Osloer Str.	3nocross 8503,16716 8721,16689 8759,16684 8952,16666
 Müllerstr./Lindower Str.	3nocross 7911,15008 7811,15096 7745,15160 7607,15282
 Adolfstr.	1 7796,15590 7817,15418
 Mimosenweg	2 17668,2187 17657,2213
@@ -318,7 +318,7 @@ Märkische Allee: Mittelstreifen	3nocross 21400,18817 21335,18679 21309,18626 212
 #: note: Luftbild
 Berliner Str.: Mittelstreifen	3nocross 1214,3198 1338,3300 1415,3362
 #: note: Luftbild
-Prinzenallee: Mittelstreifen	3nocross 8939,16668 9000,16803 9024,16855 9028,16864 9082,16982
+Prinzenallee: Mittelstreifen	3nocross 8952,16666 9008,16799 9030,16853 9033,16862 9082,16982
 #: note: Luftbild
 Berliner Allee: Straßenbahntrasse	3nocross 13512,15909 13623,15954 13737,15994
 #: note: Luftbild
@@ -339,7 +339,7 @@ Zweibrücker Str.	1 -4254,15813 -4283,15639 -4294,15525 -4308,15411
 Potsdamer Str.: Mittelstreifen	3nocross 8226,11458 8301,11469 8358,11477 8374,11479 8479,11493 8542,11502
 Jägerallee/Hegelallee: Durchfahrt verboten	3 -13221,-718 -13231,-763 -13236,-797
 Jägerallee/Hegelallee: Durchfahrt verboten	3 -13236,-797 -13231,-763 -13221,-718
-Osloer Str.: Straßenbahntrasse	3nocross 9442,16610 9331,16624 9210,16638 8939,16668
+Osloer Str.: Straßenbahntrasse	3nocross 9442,16610 9331,16624 9210,16638 8952,16666
 Osloer Str.: Straßenbahntrasse	3nocross 8249,16741 8161,16752 8144,16754 7852,16790 7763,16779
 Seestr.: Straßenbahntrasse	3nocross 7606,16746 7447,16613 7417,16587 7403,16575 7295,16477 7231,16418
 Bismarckstr.: Mittelstreifen	3nocross 3689,11637 3843,11659 3897,11666
@@ -810,7 +810,7 @@ Rennbahnstr. -> Berliner Allee	3 14528,16910 14558,16907 14535,17003
 Stephaniweg: Poller	3 4836,1659 4855,1616 *
 Blaumeisenweg	1 5194,1690 5251,1543
 Töpferweg: Poller	3 13238,2521 13309,2410 *
-Hoppestr.	1 8610,18309 8482,18284
+Hoppestr.	1 8610,18309 8475,18283
 Straße 134: Poller	3 * 9276,20745 *
 Straßenbahntrasse	3nocross 10976,13229 11012,13278 11070,13357
 Hasselwerderstr	1 18260,5746 18164,5701 18013,5627
@@ -877,7 +877,7 @@ Weidenweg - Str. der Pariser Kommune: Linksabbiegen verboten (Wendemöglichkeit a
 Seestr.: Mittelstreifen	3nocross 6422,15708 6555,15827 6661,15921
 #: note: Öffnung für Radfahrer im Sommer 2012
 Gipsstr.	1 10350,13376 10199,13446 10026,13521
-Mühlenstr.: Fahrbahn ist nur für die Straßenbahn offen	1 12040,22519 11940,22587
+Mühlenstr.: Fahrbahn ist nur für die Straßenbahn offen	1 12040,22519 12004,22526 11936,22570
 Burgwallstr.:	3 12993,21112 12952,21012 *
 Wüstensperlingweg: Poller	3 12941,20855 12835,20670 12814,20648
 Wüstensperlingweg: Poller	3 12814,20648 12835,20670 12941,20855
