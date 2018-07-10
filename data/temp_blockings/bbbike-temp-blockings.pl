@@ -27349,8 +27349,8 @@ EOF
 EOF
      },
      { from  => 1529438047, # 2018-06-19 21:54
-       until => $isodate2epoch->("2018-07-10 18:00:00"), # 1530395999, # 2018-06-30 23:59
-       text  => 'Frank-Schweitzer-Str.: Bauarbeiten zwischen Landsberger Allee und Georg-Knorr-Platz, evtl. sind auch Radfahrer betroffen, bis Mitte Juli 2018',
+       until => $isodate2epoch->("2018-07-20 18:00:00"), # 1530395999, # 2018-06-30 23:59
+       text  => 'Frank-Schweitzer-Str.: Bauarbeiten zwischen Landsberger Allee und Georg-Knorr-Platz, evtl. sind auch Radfahrer betroffen, bis 20. Juli 2018',
        type  => 'gesperrt',
        source_id => '2147342779',
        data  => <<EOF,

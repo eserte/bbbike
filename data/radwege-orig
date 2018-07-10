@@ -501,7 +501,15 @@ asphaltiert	RW2; 14020,12261 13885,12279 13785,12292
 	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 12352,12509 12134,12540 12114,12546
 	RW2; 11976,12595 11988,12546 12028,12519 12083,12518 12114,12546
 	RW2; 12114,12546 12099,12580 12050,12616 12005,12619 11976,12595
-	RW2;RW1 11976,12595 11683,12725
+#: next_check_id: KARLMARXALLEE-2018
+#: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.712659.php
+#: by: http://www.berlin.de/senuvk/bauen/strassenbau/karl-marx-allee/ (Fertigstellung Sommer 2020)
+#: source_id: 2147342756
+#: XXX zurzeit provisorische Radspuren Richtung Osten, werden aber im Endzustand bleiben; ebenso wird es Richtung Westen wohl auch Radspuren geben
+#: priority: #B
+#: last_checked: 2018-07-09
+#: next_check: 2020-06-01
+	RW2;RW4 11976,12595 11683,12725
 	RW3;RW3 11683,12725 11635,12745
 	RW2;RW3 15117,12106 15361,12071
 	RW1;RW2 10933,14122 10938,14159 10910,14488 10893,14705

@@ -4292,9 +4292,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1529438047,
          'id' => 2972,
          'source_id' => '2147342779',
-         'text' => 'Frank-Schweitzer-Str.: Bauarbeiten zwischen Landsberger Allee und Georg-Knorr-Platz, evtl. sind auch Radfahrer betroffen, bis Mitte Juli 2018',
+         'text' => 'Frank-Schweitzer-Str.: Bauarbeiten zwischen Landsberger Allee und Georg-Knorr-Platz, evtl. sind auch Radfahrer betroffen, bis 20. Juli 2018',
          'type' => 'gesperrt',
-         'until' => 1531238400
+         'until' => 1532102400
        },
        {
          'data' => '#: next_check_id: VERLWERDERSTR-2018
