@@ -464,7 +464,7 @@ Carstennstr.: verfugtes Kopfsteinpflaster	Q2+ 3044,1890 2992,2018 2951,2112 2896
 #: osm_watch: way id="148329608" version="15" vvv
 #: last_checked: 2018-07-01
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2018-08-15
+#: next_check: 2018-12-31
 Carstennstr.: Kopfsteinpflaster, teilweise mit Asphaltflicken	Q2 2781,2493 2740,2588 2625,2850
 #: osm_watch ^^^
 #: by ^^^
@@ -639,7 +639,13 @@ Heynstr.: Kopfsteinpflaster	Q2 10214,17401 10207,17448 10203,17478
 Maximilianstr.: Kopfsteinpflaster	Q2 10298,17299 10502,17286
 Dolomitenstr.: Kopfsteinpflaster	Q2 10298,17299 10228,17231
 Brixener Str.: Kopfsteinpflaster	Q2 10507,17400 10502,17419 10466,17464
+# 
+#: XXX wird nach den Bauarbeiten die Qualität besser sein?
+#: source_id: 2147342929
+#: priority: #B
+#: next_check: 2018-08-31
 Helmerdingstr.: Kopfsteinpflaster	Q2 14442,11101 14468,11203
+# 
 # REMOVED (Asphalt ist kaum von Vorteil hier) --- Helmerdingstr.: Asphalt/Kopfsteinpflaster	Q2+; 14468,11203 14442,11101
 Haasestr.: Kopfsteinpflaster	Q2 14328,11320 14286,11186
 Döringstr.: Verbundsteinpflaster	Q1 14400,11261 14357,11148
@@ -9740,6 +9746,7 @@ Rostocker Str.: Beton	Q0- 17343,19000 17337,18871 17443,18858 17426,18695 17430,
 (Grünanlage Egon-Erwin-Kisch-Str. - Falkenberger Chaussee): Verbundsteinpflaster	Q1 17686,18172 17721,18001
 Neustrelitzer Str.: Asphalt	Q0 16752,14745 16668,14765 16524,14749
 Alfred-Scholz-Platz: gepflastert	Q1 12753,8187 12779,8188 12805,8194
+#: next_check_id: FEUERBACH-2018
 #: XXX Fahrbahn wird neu gebaut
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.515712.php
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.515712.php?date=20170522
@@ -9750,7 +9757,7 @@ Alfred-Scholz-Platz: gepflastert	Q1 12753,8187 12779,8188 12805,8194
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/die-feuerbachstrasse-wird-endlich-saniert_a168947
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php
 #: last_checked: 2018-03-25 (mapillary)
-#: next_check: 2018-07-15
+#: next_check: 2018-09-26
 #: priority: #A
 Feuerbachstr.: Asphalt teilweise aufgebrochen	Q1; 5823,6413 6083,6451
 Storkower Str. [Gewerbegebiet]: Asphalt	Q0- 13731,14200 13639,14133
@@ -10179,9 +10186,9 @@ Mauerpark: Kleinsteinpflaster	Q1 10188,15474 10228,15488 10234,15490
 Zeppelinplatz: Kleinsteinpflaster	Q1 6794,15553 6884,15456
 Beuth-Hochschule: Verbundsteinpflaster	Q1 6884,15456 6996,15319
 Lydia-Rabinowitsch-Str.: Asphalt	Q0 7820,13994 7930,14060 7973,13991 7865,13924
-Clara-von-Simson-Str.: Asphalt	Q0 7652,14257 7757,14318
-Clara-von-Simson-Str.: Verbundsteinpflaster	Q1+ 7757,14318 7802,14250
-Clara-von-Simson-Str.: Asphalt	Q0 7802,14250 7697,14187
+Hedwig-Porschütz-Str.: Asphalt	Q0 7652,14257 7757,14318
+Hedwig-Porschütz-Str.: Verbundsteinpflaster	Q1+ 7757,14318 7802,14250
+Hedwig-Porschütz-Str.: Asphalt	Q0 7802,14250 7697,14187
 Gustav-Böß-Str.: Asphalt mit leichten Schäden	Q0- 10673,12434 10772,12515
 Siemensstr.: Kopfsteinpflaster	Q2 5322,14044 5306,14061
 (Gerhard-Sedlmayr-Str. - Landschaftspark): Asphalt	Q0 18228,4168 18178,4125 18176,4105

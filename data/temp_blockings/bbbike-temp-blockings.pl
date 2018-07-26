@@ -23439,11 +23439,11 @@ EOF
 	q4::inwork; 16514,15092 16430,15168
 EOF
      },
-     { from  => $isodate2epoch->("2017-08-17 14:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-08-20 23:59:59"),
+     { from  => $isodate2epoch->("2018-08-16 14:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-08-19 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 18, months => 8]],
-       text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 18.8.2017 bis 20.8.2017',
+       recurrences => [['yearly', days => 16, months => 8]],
+       text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 17.8.2018 bis 19.8.2018',
        type  => 'gesperrt',
        source_id => 'http://www.winzerfest-köpenick.de/',
        data  => <<EOF,
@@ -26462,8 +26462,8 @@ EOF
 EOF
      },
      { from  => 1502386525, # 2017-08-10 19:35
-       until => $isodate2epoch->("2018-08-15 12:00:00"), # undef, # 1512082799, # 2017-11-30 23:59
-       text  => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Richtung Norden ist der Gehweg für Radfahrer frei; Baseler Str. offen Richtung Norden), bis Mitte August 2018',
+       until => $isodate2epoch->("2018-12-31 12:00:00"), # undef, # 1512082799, # 2017-11-30 23:59
+       text  => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Richtung Norden ist der Gehweg für Radfahrer frei; Baseler Str. offen Richtung Norden), bis Ende Dezember 2018',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: CARSTENN-2017
@@ -26477,7 +26477,7 @@ EOF
 #: XXX wann sind die Bauarbeiten beendet?
 #: last_checked: 2018-07-01 vvv
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2018-08-15 vvv
+#: next_check: 2018-12-31 vvv
 # REMOVED (hier fertig) ---	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
 #: XXX hier laut fritz nur bis 2018-07-17
@@ -26568,7 +26568,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-06-25
+#: last_checked: 2018-07-26
+#: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
      },
@@ -26731,10 +26732,10 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX bis wann ist die Durchfahrt gesperrt?
-#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00
+#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00, 2018-07-26 gegen 19:30
 #: source_id: 2147342009
 #: osm_watch: way id="154381291" version="5"
-#: last_checked: 2018-07-06
+#: last_checked: 2018-07-26
 #: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
 EOF
@@ -27218,7 +27219,7 @@ EOF
        source_id => '2147342639',
        data  => <<EOF,
 #: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-07-08
+#: last_checked: 2018-07-26
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -27265,8 +27266,8 @@ EOF
 EOF
      },
      { from  => 1527533410, # 2018-05-28 20:50
-       until => 1531691999, # 2018-07-15 23:59
-       text  => 'Weiskopffstr.: Gleisbauarbeiten zwischen An der Wuhlheide und Parkstr., Fahrbahn gesperrt, bis Mitte Juli 2018',
+       until => $isodate2epoch->("2018-07-29 18:00:00"), # 1531691999, # 2018-07-15 23:59
+       text  => 'Weiskopffstr.: Gleisbauarbeiten zwischen An der Wuhlheide und Parkstr., Fahrbahn gesperrt, bis Ende Juli 2018',
        type  => 'handicap',
        source_id => '2147342666',
        data  => <<EOF,
@@ -27287,11 +27288,12 @@ EOF
 EOF
      },
      { from  => 1528137944, # 2018-06-04 20:45
-       until => $isodate2epoch->("2018-07-13 18:00:00"), # 1531691999, # 2018-07-15 23:59
-       text  => 'Forckenbeckstr.: Bauarbeiten zwischen Mecklenburgische Str. und Cunostr., Fahrbahn gesperrt, der schmale Bürgersteig muss benutzt werden, bis Mitte Juli 2018',
+       until => $isodate2epoch->("2018-08-15 18:00:00"), # 1531691999, # 2018-07-15 23:59
+       text  => 'Forckenbeckstr.: Bauarbeiten zwischen Mecklenburgische Str. und Cunostr., Fahrbahn gesperrt, der schmale Bürgersteig muss benutzt werden, bis Mitte August 2018',
        type  => 'gesperrt',
        source_id => '2147342702',
        data  => <<EOF,
+#: source_id: 2147342927
 	q3::inwork 3665,8131 3218,8233 3117,8248
 EOF
      },
@@ -27307,28 +27309,30 @@ EOF
 EOF
      },
      { from  => undef,
-       until => $isodate2epoch->("2018-09-14 18:00:00"),
+       until => $isodate2epoch->("2018-09-10 18:00:00"),
        text  => 'Weidenweg: Bauarbeiten, Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
 #: XXX eventuell hängen die Bauarbeiten mit den Bauarbeiten in der Eldenaer Str. zusammen
 #: XXX wird danach komplett asphaltiert sein?
+#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=42743 (sogar bis 2018-09-17)
 #: source_id: 2147342618
 #: priority: #A
-#: last_checked: 2018-07-05
-#: next_check: 2018-07-13
+#: last_checked: 2018-07-26
+# REMOVED --- #: next_check: 2018-07-13
 	q4::inwork 13767,12626 13786,12636 13863,12677 13911,12692
 EOF
      },
      { from  => undef,
        until => $isodate2epoch->("2018-09-14 18:00:00"),
-       text  => 'Liebigstr.: Bauarbeiten, Einbahnstraßenregelung',
+       text  => 'Liebigstr. und Weidenweg: Bauarbeiten, Einbahnstraßenregelung',
        type  => 'handicap',
        data  => <<EOF,
 #: XXX eventuell hängen die Bauarbeiten mit den Bauarbeiten in der Eldenaer Str. zusammen
 #: XXX wird danach komplett asphaltiert sein?
-#: last_checked: 2018-06-25
-	q4::inwork; 14096,12827 14058,12709
+#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=42743 (sogar bis 2018-09-17)
+#: last_checked: 2018-07-26
+	q4::inwork; 14096,12827 14058,12709 13911,12692
 EOF
      },
      { from  => 1529208000, # 2018-06-17 06:00
@@ -27394,11 +27398,14 @@ EOF
 EOF
      },
      { from  => 1531519200, # 2018-07-14 00:00
-       until => 1546297199, # 2018-12-31 23:59
-       text  => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. undThorwaldsenstr., Einbahnstraße offen Richtung Osten, voraussichtlich von Mitte Juli 2018 bis Ende Dezember 2018',
+       until => $isodate2epoch->("2018-09-26 18:00:00"), # 1546297199, # 2018-12-31 23:59
+       text  => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, voraussichtlich bis Ende September 2018',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php',
        data  => <<EOF,
+#: next_check_id: FEUERBACH-2018
+#: XXX laut VMZ nur bis September 2018, laut BA Steglitz bis Dezember 2018
+#: source_id: 2147342919
 	q4::inwork; 6168,6467 6083,6451 5823,6413
 EOF
      },
@@ -27461,6 +27468,63 @@ EOF
        source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.719553.php',
        data  => <<EOF,
 	2::inwork 21889,16817 21824,16506 21785,16273 21782,16253
+EOF
+     },
+     { from  => 1531605600, # 2018-07-15 00:00
+       until => $isodate2epoch->("2018-08-04 18:00:00"), # 1533160799, # 2018-08-01 23:59
+       text  => 'Ehrlichstr.: zwischen Blockdammweg und Wildensteiner Str. Gleisbauarbeiten, Richtung Treskowallee gesperrt, eventuell sind auch Radfahrer betroffen, bis Anfang August 2018 ',
+       type  => 'handicap',
+       source_id => '2147342893',
+       data  => <<EOF,
+	q4::inwork; 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331
+EOF
+     },
+     { from  => 1530741600, # 2018-07-05 00:00
+       until => 1543618799, # 2018-11-30 23:59
+       text  => 'Finckensteinallee: zwischen Carstennstr. und Schottmüllerstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende November 2018 ',
+       type  => 'handicap',
+       source_id => '2147342925',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.722387.php (nur Kreuzungsbereich betroffen)
+	q4::inwork 2625,2850 2570,2844
+# REMOVED ---	q4::inwork 2570,2844 2290,2864
+EOF
+     },
+     { from  => 1532620085, # 2018-07-26 17:48
+       until => 1534370399, # 2018-08-15 23:59
+       text  => 'Gotlindestr.: Bauarbeiten zwischen Ruschestr. und Freesienweg, Fahrbahn gesperrt, bis Mitte August 2018',
+       type  => 'handicap',
+       source_id => '2147342912',
+       data  => <<EOF,
+	q4::inwork 16000,12625 15947,12626
+EOF
+     },
+     { from  => $isodate2epoch->("2018-07-11 12:00:00"),
+       until => 1569880800, # 2019-10-01 00:00
+       text  => 'Eickstedt: Ausbau der Ortsdurchfahrt, 11.07.2018 bis 30.09.2019',
+       type  => 'handicap',
+       source_id => '187302254',
+       data  => <<EOF,
+	q4::inwork 51862,100638 51910,100091 51920,99933 51940,99551 52207,99132
+EOF
+     },
+     { from  => 1531605600, # 2018-07-15 00:00
+       until => $isodate2epoch->("2018-08-24 18:00:00"), # 1535752799, # 2018-08-31 23:59
+       text  => 'Seelenbinderstr.: Richtung Salvador-Allende-Str. zwischen Bahnhofstr. und Bellevuestr. Gleisbauarbeiten, Fahrtrichtung gesperrt, eventuell ist auch die Radspur betroffen, bis Ende August 2018 ',
+       type  => 'handicap',
+       source_id => '2147342890',
+       data  => <<EOF,
+#: XXX vor Ort prüfen
+	q4::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710
+EOF
+     },
+     { from  => $isodate2epoch->("2018-07-24 12:00:00"),
+       until => 1534629600, # 2018-08-19 00:00
+       text  => 'Zehdenick: B109: Deckenerneuerung in der Ortsdurchfahrt B109, OL Vogelsang, Sperrung der Fahrbahn, 24.07.2018 bis 18.08.2018 ',
+       type  => 'handicap',
+       source_id => 'LS/721-E/18/081',
+       data  => <<EOF,
+	q4::inwork 7979,70212 7906,70007 7983,69794 7945,69489 7871,69412
 EOF
      },
     );

@@ -1164,11 +1164,13 @@ neu asphaltiert	RW1; 17769,7465 17681,7589
 #: source_id: 2147342856
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/markierung-auf-der-rummelsburger-landstrasse-aufgebracht_a170936
 #: last_checked: 2018-07-07 vvv
-#: check_frequency: 60d vvv
+# REMOVED --- #: check_frequency: 60d vvv
+#: next_check: 2018-12-31 vvv
 #: note: hier existiert auch ein neu asphaltierter Radweg, aber Radfahrer werden zum geschützten Radweg geführt
 provisorische geschützte Radspur	RW4; 17681,7589 17619,7679
 provisorische geschützte Radspur	RW4; 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
-#: check_frequency ^^^
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 	RW1; 17143,8565 17105,8666
 Verbundsteinpflaster	RW1; 17769,7465 17847,7356 18010,7133
@@ -1612,12 +1614,8 @@ die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
 	RW4; 15261,10738 15000,10792 14904,10812 14810,10832 14717,10855 14674,10811
 	RW4; 14674,10811 14717,10855 14810,10832 14904,10812
 # REMOVED (nur noch ein Eintrag übrig) --- : next_check_id: HAUPTSTR-2015
-#: XXX Markierungen fehlen hier noch
-#: osm_watch: way id="439421759" version="9"
-#: osm_watch: way id="384136808" version="13"
-#: last_checked: 2018-07-01
-#: check_frequency: 14d
-	RW0; 14904,10812 15000,10792
+# REMOVED --- #: XXX Markierungen fehlen hier noch --- #: osm_watch: way id="439421759" version="9" --- #: osm_watch: way id="384136808" version="13" --- #: source_id: 2147342887 --- #: last_checked: 2018-07-01 --- #: check_frequency: 14d
+	RW3; 14904,10812 15000,10792
 	RW3; 15000,10792 15261,10738
 	RW1;RW1 14652,10201 14688,10167 14705,10149 14747,10108 14817,10031
 	RW0;RW1 13795,9941 13890,9894
