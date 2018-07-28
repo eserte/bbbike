@@ -892,10 +892,11 @@ Eichgestell: Asphalt	Q0 19590,6590 19407,6660 19052,6823
 Eichgestell: Parkweg, OK	Q1 19052,6823 18186,7200 18086,7243
 Eichgestell - Edisonstr./Rummelsburger Str.: Parkweg	Q1 18186,7200 18079,7144 18010,7133
 Sobernheimer Str.: Kopfsteinpflaster, teilweise mit Sandbanketten	Q2 27600,292 27667,368 27700,402 27734,437 27752,458 27783,493 27831,548 27932,665 27940,675 27961,699 28003,747 28051,803 28065,819 28188,962
-Zur Revierförsterei: Waldweg	Q1 28521,246 28521,300
+Zur Revierförsterei: Waldweg	Q1 28523,258 28521,300
 Zur Revierförsterei: Beton	Q0 28521,300 28516,415 28538,452
 Zur Revierförsterei: Verbundsteinpflaster	Q1 28538,452 28660,542
-An der Krampe: Waldweg, OK	Q1 28521,246 28450,242 28391,305 28303,309 28286,283 28282,203 28248,100 28241,17 28213,-45 28206,-258 28143,-335 28107,-336 28043,-380 27978,-473 27847,-665
+(Revierförsterei - Hegemeisterweg): Waldweg	Q1 28523,258 28566,-205
+An der Krampe: Waldweg, OK	Q1 28523,258 28450,242 28391,305 28303,309 28286,283 28282,203 28248,100 28241,17 28213,-45 28206,-258 28143,-335 28107,-336 28043,-380 27978,-473 27847,-665
 An der Krampe: schlechter Waldweg, Wurzeln	Q3 27847,-665 27811,-708 27759,-995 27727,-1078 27779,-1212 27786,-1276 27746,-1350 27759,-1372 27765,-1654 27695,-2161 27718,-2301 27932,-2444 27985,-2389 28144,-2262 28116,-2127 28163,-2013
 Am Seddinsee: sich selbst überlassener Waldweg	Q3 28163,-2013 28338,-2265 28443,-2317 28527,-2347 28568,-2346 28742,-2264 28892,-1955 28862,-1816
 Am Seddinsee: teils schlechter Waldweg	Q3 28862,-1816 28887,-1795 28935,-1819 28957,-1810 28958,-1779 28999,-1784 29149,-1742 29162,-1704 29229,-1676 29204,-1545 29334,-1343 29475,-1275 29602,-1051 30028,-891 30125,-734 30218,-529 30421,-424 30570,-351 30778,-326
@@ -1769,7 +1770,7 @@ Tiergartenstr. (Biesdorf): Kopfsteinpflaster	Q2 21037,7751 21179,7754 21304,7783
 Bismarcksfelder Str.: fester Sandweg, holprig	Q2 21419,7806 21561,7867 21599,7904
 (Bellevuepark): Kleinsteinpflaster	Q1 22798,5731 22796,5640 22796,5631 22787,5582
 (Bellevuepark): mäßiger Asphalt	Q1 22787,5582 22733,5569 22701,5428 22657,5328
-(Bellevuepark): neuer Asphalt	Q0 22787,5582 22855,5554 22835,5452 22851,5327
+(Bellevuepark): neuer Asphalt	Q0 22787,5582 22841,5571 22855,5554 22834,5481 22851,5327
 Am Krusenick: guter Asphalt	Q0 22735,5328 22737,5278 22751,4970
 Am Krusenick: Kopfsteinpflaster	Q2 22751,4970 22754,4919
 Am Krusenick: guter Asphalt	Q0 22754,4919 22705,4874
@@ -3778,7 +3779,7 @@ Straße zum Müggelhort: Asphalt	Q0 28729,3084 28639,3005 28442,2926 28359,2722 28
 Straße zum Müggelhort: Asphalt	Q0 27761,2124 27599,1521
 (Zum Hotel Müggelsee): Beton	Q0 26713,2064 26805,2381 26836,2480 26859,2596
 Müggelschlößchenweg: Asphalt	Q0 25385,4414 25132,4385 24181,4270 24135,4264 23879,4233 23753,4218
-Müggelschlößchenweg: Beton	Q0 23753,4218 23658,4208 23435,4179
+Müggelschlößchenweg: Beton	Q0 23753,4218 23658,4208 23453,4181 23435,4179
 Strandschloßweg: Asphalt	Q0 23368,3894 23439,3892 23467,3891 23749,3883
 Strandschloßweg: Beton	Q0 23749,3883 23925,3886
 Strandschloßweg: Feinschotter	Q1 23925,3886 24147,3888 24321,3886
@@ -3865,7 +3866,7 @@ Seestr. (Mahlsdorf): schlechtes Kopfsteinpflaster	Q3 23378,8416 23483,8342 23590
 Wildenbruchstr. (Mahlsdorf): schlechtes Kopfsteinpflaster, schlecht asphaltierter Parkstreifen	Q2; 23684,8194 23748,8287
 Wildenbruchstr. (Mahlsdorf): schlechtes Kopfsteinpflaster	Q3; 23748,8287 23684,8194
 Wildenbruchstr. (Mahlsdorf): schlechtes Kopfsteinpflaster	Q3 23684,8194 23621,8095 23579,8037
-Waldpromenade: Waldweg	Q1 24388,7698 24287,7699 24229,7700 24074,7695 24028,7697 23975,7713 23936,7749 23807,7842 23792,7861
+Waldpromenade: Waldweg	Q1 24388,7698 24293,7698 24229,7700 24074,7695 24028,7697 23975,7713 23936,7749 23807,7842 23792,7861
 Waldpromenade: Waldweg	Q2 23792,7861 23710,7940 23668,7967
 Waldpromenade: Kleinsteinpflaster	Q2 23668,7967 23655,7953 23613,7983 23579,8037
 Waldpromenade: Waldweg	Q2 23579,8037 23481,8119
@@ -5579,7 +5580,7 @@ Kleingartenstr.: Asphalt	Q0 24118,4404 24075,4417 24022,4442 23978,4484
 Am Spielplatz: Asphalt, teilweise wellig	Q1 23868,4411 23811,4400 23724,4388 23712,4367 23653,4363
 Am Spielplatz: Asphalt, teilweise wellig	Q1 23712,4367 23787,4370 23811,4400
 Gladiolenstr.: Asphalt	Q1 23536,4543 23541,4439 23537,4238
-Gastrower Weg: Asphalt	Q0 23657,5467 23696,5529 23867,5563
+Gastrower Weg: Asphalt	Q0 23657,5467 23696,5529 23845,5558
 Grünfließer Gang: Kleinsteinpflaster	Q1 23696,5529 23681,5579
 Grünfließer Gang: Asphalt	Q0 23681,5579 23675,5706
 Grünfließer Gang: Holzbohlen	Q1 23675,5706 23675,5729
@@ -6227,7 +6228,7 @@ Grillenweg: Beton	Q0 24236,5594 24225,5619
 Grillenweg: Asphalt, etwas Verbundsteinpflaster	Q1 24225,5619 24216,5748 24197,5791 24150,5854 24126,5874 24118,5895
 Grillenweg: Gehwegpflasterung	Q1 24118,5895 24111,5922 24122,6007
 Wiesenpromenade: Asphalt	Q0 23874,5876 23910,5884 23919,5908 23951,5923 23931,5992
-(S-Bhf. Hirschgarten - KGA Erpetal): Beton	Q1 23948,6054 23951,6063 23941,6118 23960,6153
+(S-Bhf. Hirschgarten - KGA Erpetal): Beton	Q1 23948,6054 23951,6063 23943,6131 23960,6153
 Kurzer Steig: Asphalt	Q0 24126,5521 24162,5424
 Am Stichkanal: Parkweg	Q1 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
 Am Stichkanal: Beton	Q0 22585,4634 22531,4605 22458,4565
@@ -7666,8 +7667,8 @@ Zu den Gosener Bergen: Asphalt	Q0 30728,-2326 30640,-2803
 (Gosener Damm - Seddinsee): Waldweg, teilweise mit Gras überwachsen, Wurzeln	Q3 29120,271 29481,44 29979,-120 30421,-424
 (Waldweg zur Sandgrube): Asphalt mit einigen Wurzelschäden	Q1 29120,271 29208,71
 (Waldweg zur Sandgrube): Asphalt	Q0 29208,71 29503,-611 29321,-685 29260,-774 28925,-1143 28886,-1163 28851,-1075
-(Straße zur Krampenburg - Uferweg am Langen See): Waldweg, sandige Stellen	Q2 27202,173 26681,-47
-(Straße zur Krampenburg - Uferweg am Langen See): Waldweg, zweispurig	Q2 26681,-47 26488,-131
+(Straße zur Krampenburg - Uferweg am Langen See): Schotterweg, teilweise grober Schotter	Q2 27202,173 26666,-54
+(Straße zur Krampenburg - Uferweg am Langen See): Waldweg, zweispurig	Q2 26666,-54 26488,-131
 Kuglerstr.: Asphalt	Q0 11750,16116 11680,16151 11618,16183
 Kuglerstr.: Asphalt mit leichten Schäden	Q1 12030,15968 11961,16002 11899,16037
 Kuglerstr.: Asphalt	Q0 11899,16037 11852,16061
@@ -8391,7 +8392,7 @@ Karlsruher Str. (Mahlsdorf): Asphalt	Q0 23582,9591 23584,9629 23585,9672 23528,9
 (Mittelheide): Waldweg, Schotterweg	Q1 24185,6880 24602,7169
 (Mittelheide): Waldweg, Schotterweg	Q2 24602,7169 24823,7341 24978,7527
 (Mittelheide): Waldweg, grober Schotter	Q2 24978,7527 25228,7462 25262,7433
-(Mittelheide, Nord-Süd-Weg): Waldweg	Q1 24287,7699 24185,6880
+(Mittelheide, Nord-Süd-Weg): Waldweg	Q1 24293,7698 24185,6880
 (Mittelheide, Nord-Süd-Weg): Waldweg, Schotter	Q1 24185,6880 24111,6348
 (Mittelheide, Nord-Süd-Weg): Waldweg	Q1 24111,6348 24089,6144
 Gilgenburger Pfad: Kleinsteinpflaster	Q1 24387,5672 24351,5696
@@ -11749,7 +11750,8 @@ Altonaer Str.: guter Asphalt	Q0 -4932,13887 -4776,13869 -4314,13828 -4170,13809 
 Prignitzstr.: guter Asphalt	Q0 20447,13995 20420,13757 20391,13511 20364,13255 20332,12980 20326,12921 20299,12677 20271,12458 20252,12262
 Nikolaus-Bares-Weg: Verbundsteinpflaster	Q1 7234,1045 7437,1144
 Joachimstr. (Bohnsdorf): mäßiges Kopfsteinpflaster	Q2 22029,-178 22177,-137
-Joachimstr. (Bohnsdorf): schlechtes Kopfsteinpflaster, Straßenränder teilweise unbefestigt	Q3 22177,-137 22382,-87 22543,2 22631,50 22710,98
+Joachimstr. (Bohnsdorf): schlechtes Kopfsteinpflaster, Straßenränder teilweise unbefestigt	Q3 22177,-137 22382,-87 22543,2 22631,50
+Joachimstr. (Bohnsdorf): Asphalt	Q0 22631,50 22710,98
 Illigstr.: guter Asphalt	Q0 9428,-1892 9431,-1800 9443,-1626 9445,-1460 9457,-1329 9456,-1271 9379,-935
 Sigmund-Bergmann-Str.: Asphalt	Q0 -2371,16776 -2312,16770 -2173,16741 -2157,16838 -2140,16909
 (Parkplatz Kaufland): Asphalt	Q0 13031,17775 12981,17557
@@ -12546,7 +12548,8 @@ Hauffstr.: Asphalt	Q0 15322,11335 15356,11338 15458,11306 15484,11292 15567,1124
 Hauffstr.: Asphalt	Q0 15620,11210 15694,11125 15740,11028 15756,10966
 Richard-Willstätter-Str.: Asphalt	Q0 19592,2462 19794,2629 19978,2790
 Alfred-Randt-Str.: Beton	Q0 23749,3868 23925,3869 23925,3886 23922,3973 23971,4020 24293,4017 24296,4096 24293,4227 24140,4227 24135,4264
-Grünfinkenweg: glatt gepflastert	Q1 22312,48 22451,95 22515,109 22591,105 22631,50
+Grünfinkenweg: glatt gepflastert	Q1 22312,48 22396,76
+Grünfinkenweg: Asphalt	Q0 22396,76 22451,95 22515,109 22591,105 22631,50
 Büchnerweg (Niederschönhausen): schlechter loser Sandweg	Q3 9972,20307 9910,20556
 Germersheimer Weg: guter Asphalt	Q0 -4489,15014 -4507,15068 -4499,15152 -4497,15176 -4495,15198 -4466,15460 -4442,15675 -4429,15761
 Florastr. (Steglitz): mäßiges Kopfsteinpflaster	Q2 5416,6119 5351,6109 5315,6103

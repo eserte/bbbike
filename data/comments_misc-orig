@@ -520,7 +520,7 @@ Bus 164	busroute_N 22383,4470 22372,4496 22358,4521 22324,4586 22314,4604 22284,
 Bus 164	busroute_N 22196,4847 22154,4923 22133,4986 22128,5003 22101,5064 22017,5159 21974,5208 21954,5229
 Bus X69	busroute_N 22467,6135 22365,6149 22325,6385 22305,6404 22192,6659 22186,6672 22075,6967
 Bus X69	busroute_N 22325,6385 22539,6258
-Bus 167, ...	busroute_N 23435,4179 23658,4208 23753,4218 23879,4233 24135,4264 24181,4270
+Bus 167, ...	busroute_N 23435,4179 23453,4181 23658,4208 23753,4218 23879,4233 24135,4264 24181,4270
 Bus 190	busroute_N 21025,7349 21341,7487 21475,7500
 Bus 190	busroute_N 21175,9989 20947,9999 20703,10004 20706,10047 20708,10144 20711,10230 20713,10293 20716,10434 21017,10423 21281,10428
 Bus 190	busroute_N 21025,7349 21341,7487 21475,7500
@@ -1172,7 +1172,7 @@ ausgeschildert als Marie-Elisabeth-von-Humboldt-Str.	CP2; 20855,19299 20904,1928
 # 
 #: add_fragezeichen: wann wird hier ausgeschildert?
 #: note: es existiert aber ein Hinweisschild an der Theodorstr.
-#: last_checked: 2018-04-29
+#: last_checked: 2018-07-27
 #: check_frequency: 90d
 Malevkeweg: nicht ausgeschildert	CS 24877,10863 24875,10919 24819,10924
 # 
@@ -1195,7 +1195,7 @@ Am Märchenbrunnen: nicht ausgeschildert	CS 11823,13635 11899,13750
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_50_5649_5788_online.pdf (Straßenbenennung)
 #: XXX dieser Weg wird auch in Minna-Todenhagen-Str. umbenannt --- evtl. auf einen Namen hier komplett verzichten. old_name-Eintrag?
 #: XXX wird hier noch irgendwie ausgeschildert?
-#: last_checked: 2018-07-07
+#: last_checked: 2018-07-28
 #: check_frequency: 60d
 Grenzweg (Oberschöneweide): nicht ausgeschildert	CS 17295,7328 17475,7451 17566,7485
 # REMOVED (hier: Heckenweg) --- Grenzweg (Oberschöneweide): nicht ausgeschildert	CS 17566,7485 17669,7515

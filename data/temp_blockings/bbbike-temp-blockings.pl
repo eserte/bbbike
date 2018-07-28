@@ -2155,7 +2155,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2 13048,-18384 13282,-18250
-	2 14153,-17829 13282,-18250
+	2 14174,-17813 13282,-18250
 EOF
      },
      { from  => 1118527200, # 2005-06-12 00:00
@@ -2457,7 +2457,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2 13048,-18384 13282,-18250
-	2 14153,-17829 13282,-18250
+	2 14174,-17813 13282,-18250
 EOF
      },
      { from  => 1121205600, # 2005-07-13 00:00
@@ -5905,7 +5905,7 @@ EOF
        text  => 'B 246 Nächst Neuendorfer Chaussee Bahnübergang in der OL Zossen Gleisbauarbeiten Vollsperrung 23.09.2006-26.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 13526,-20548 13412,-20513 13326,-20518
+	2::inwork 13526,-20548 13412,-20513 13271,-20531
 EOF
      },
      { from  => 1159999200, # 2006-10-05 00:00
@@ -6714,7 +6714,7 @@ EOF
        text  => 'K 7234 Dabendor-Glienick Bahnübergang in der OL Dabendorf Gleisbauarbeiten Vollsperrung 06.11.2006-10.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 14153,-17829 13282,-18250 13048,-18384
+	2::inwork 14174,-17813 13282,-18250 13048,-18384
 EOF
      },
      { from  => 1163286000, # 2006-11-12 00:00
@@ -6952,7 +6952,7 @@ EOF
        text  => 'B 246 Nächst Neuendorfer Chaussee OD Zossen, Bahnübergang Kanalarbeiten Vollsperrung 11.12.2006-22.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 13526,-20548 13412,-20513 13326,-20518
+	2::inwork 13526,-20548 13412,-20513 13271,-20531
 EOF
      },
      { from  => 1166050800, # 2006-12-14 00:00
@@ -8111,7 +8111,7 @@ EOF
        text  => 'B 246 Nächst Neuendorfer Chaussee Bahnübergang in OL Zossen Bauarbeiten am Bahnübergang Vollsperrung 07.05.2007-08.05.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 13326,-20518 13412,-20513 13526,-20548
+	2::inwork 13271,-20531 13412,-20513 13526,-20548
 EOF
      },
      { from  => 1115157600, # 2005-05-04 00:00
@@ -13560,7 +13560,7 @@ EOF
        text  => 'K 7234 Goethestraße OD Dabendorf Kanalarbeiten halbseitig gesperrt; Einbahnstraße 14.03.2009-15.05.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; 14153,-17829 13282,-18250
+	q4::inwork; 14174,-17813 13282,-18250
 EOF
      },
      { from  => 1241042400, # 2009-04-30 00:00
@@ -26732,10 +26732,10 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX bis wann ist die Durchfahrt gesperrt?
-#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00, 2018-07-26 gegen 19:30
+#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00, 2018-07-26 gegen 19:30, 2018-07-27 gegen 10:45, 2018-07-28 gegen 10:00
 #: source_id: 2147342009
 #: osm_watch: way id="154381291" version="5"
-#: last_checked: 2018-07-26
+#: last_checked: 2018-07-28
 #: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
 EOF
@@ -26985,14 +26985,13 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Stillerzeile: Bauarbeiten, östlich des Löbauer Wegs einige Meter Fahrbahn gesperrt, westlich Einbahnstraßenregelung, offen Richtung Westen',
+       text  => 'Stillerzeile: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2018-06-16 vvv
+#: last_checked: 2018-07-27 vvv
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-	q4::inwork; 24443,5765 24629,5831
-	q4::inwork 24629,5831 24798,5891
-	q3::inwork 24798,5891 24977,5880
+	q4::inwork; 24320,5621 24362,5635 24387,5672 24443,5765 24629,5831 24798,5891
+# REMOVED (vermutlich fertig) ---	q3::inwork 24798,5891 24977,5880
 #: add_fragezeichen ^^^
 #: last_checked ^^^
 EOF
@@ -27127,7 +27126,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: MENTZELPARK-2018
-#: last_checked: 2018-07-03
+#: last_checked: 2018-07-27 (Umleitungsausschilderung existiert)
 	2::inwork 21696,5053 21600,5221 21512,5404 21481,5429
 EOF
      },
@@ -27227,13 +27226,11 @@ EOF
      },
      { from  => 1527186792, # 2018-05-24 20:33
        until => $isodate2epoch->("2018-08-10 18:00:00"), # 1530741600, # 2018-07-05 00:00
-       text  => 'Weißenhöher Str. : Bauarbeiten zwischen Grabensprung und Gladauer Weg, eventuell sind auch Radfahrer betroffen, bis Mitte August 2018',
+       text  => 'Weißenhöher Str. : Bauarbeiten an der Kreuzung Grabensprung, bis Mitte August 2018',
        type  => 'handicap',
        source_id => '2147342638',
        data  => <<EOF,
-#: add_fragezeichen: Sind Radfahrer tatsächlich betroffen oder können sie die Baustelle umfahren?
-#: priority: #B
-	q4::inwork 20354,11500 20521,11494
+	q2::inwork 20354,11500 20521,11494
 EOF
      },
      { from  => 1527186848, # 2018-05-24 20:34
@@ -27472,7 +27469,7 @@ EOF
      },
      { from  => 1531605600, # 2018-07-15 00:00
        until => $isodate2epoch->("2018-08-04 18:00:00"), # 1533160799, # 2018-08-01 23:59
-       text  => 'Ehrlichstr.: zwischen Blockdammweg und Wildensteiner Str. Gleisbauarbeiten, Richtung Treskowallee gesperrt, eventuell sind auch Radfahrer betroffen, bis Anfang August 2018 ',
+       text  => 'Ehrlichstr.: zwischen Blockdammweg und Wildensteiner Str. Gleisbauarbeiten, Richtung Treskowallee gesperrt, bis Anfang August 2018 ',
        type  => 'handicap',
        source_id => '2147342893',
        data  => <<EOF,
@@ -27510,12 +27507,11 @@ EOF
      },
      { from  => 1531605600, # 2018-07-15 00:00
        until => $isodate2epoch->("2018-08-24 18:00:00"), # 1535752799, # 2018-08-31 23:59
-       text  => 'Seelenbinderstr.: Richtung Salvador-Allende-Str. zwischen Bahnhofstr. und Bellevuestr. Gleisbauarbeiten, Fahrtrichtung gesperrt, eventuell ist auch die Radspur betroffen, bis Ende August 2018 ',
+       text  => 'Seelenbinderstr.: Richtung Salvador-Allende-Str. zwischen Bahnhofstr. und Bellevuestr. Gleisbauarbeiten, Fahrtrichtung gesperrt, Radfahrer müssen auf den freigegebenen Gehweg ausweichen, bis Ende August 2018 ',
        type  => 'handicap',
        source_id => '2147342890',
        data  => <<EOF,
-#: XXX vor Ort prüfen
-	q4::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710
+	q3::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710
 EOF
      },
      { from  => $isodate2epoch->("2018-07-24 12:00:00"),

@@ -3255,10 +3255,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX bis wann ist die Durchfahrt gesperrt?
-#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00, 2018-07-26 gegen 19:30
+#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00, 2018-07-26 gegen 19:30, 2018-07-27 gegen 10:45, 2018-07-28 gegen 10:00
 #: source_id: 2147342009
 #: osm_watch: way id="154381291" version="5"
-#: last_checked: 2018-07-26
+#: last_checked: 2018-07-28
 #: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
 ',
@@ -3338,17 +3338,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: last_checked: 2018-06-16 vvv
+         'data' => '#: last_checked: 2018-07-27 vvv
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-	q4::inwork; 24443,5765 24629,5831
-	q4::inwork 24629,5831 24798,5891
-	q3::inwork 24798,5891 24977,5880
+	q4::inwork; 24320,5621 24362,5635 24387,5672 24443,5765 24629,5831 24798,5891
+# REMOVED (vermutlich fertig) ---	q3::inwork 24798,5891 24977,5880
 #: add_fragezeichen ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
          'id' => 2942,
-         'text' => 'Stillerzeile: Bauarbeiten, östlich des Löbauer Wegs einige Meter Fahrbahn gesperrt, westlich Einbahnstraßenregelung, offen Richtung Westen',
+         'text' => 'Stillerzeile: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen',
          'type' => 'handicap',
          'until' => undef
        },
@@ -3383,7 +3382,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: MENTZELPARK-2018
-#: last_checked: 2018-07-03
+#: last_checked: 2018-07-27 (Umleitungsausschilderung existiert)
 	2::inwork 21696,5053 21600,5221 21512,5404 21481,5429
 ',
          'from' => undef,
@@ -3465,14 +3464,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1534888800
        },
        {
-         'data' => '#: add_fragezeichen: Sind Radfahrer tatsächlich betroffen oder können sie die Baustelle umfahren?
-#: priority: #B
-	q4::inwork 20354,11500 20521,11494
+         'data' => '	q2::inwork 20354,11500 20521,11494
 ',
          'from' => 1527186792,
          'id' => 2960,
          'source_id' => '2147342638',
-         'text' => 'Weißenhöher Str. : Bauarbeiten zwischen Grabensprung und Gladauer Weg, eventuell sind auch Radfahrer betroffen, bis Mitte August 2018',
+         'text' => 'Weißenhöher Str. : Bauarbeiten an der Kreuzung Grabensprung, bis Mitte August 2018',
          'type' => 'handicap',
          'until' => 1533916800
        },
@@ -3678,7 +3675,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1531605600,
          'id' => 2983,
          'source_id' => '2147342893',
-         'text' => 'Ehrlichstr.: zwischen Blockdammweg und Wildensteiner Str. Gleisbauarbeiten, Richtung Treskowallee gesperrt, eventuell sind auch Radfahrer betroffen, bis Anfang August 2018 ',
+         'text' => 'Ehrlichstr.: zwischen Blockdammweg und Wildensteiner Str. Gleisbauarbeiten, Richtung Treskowallee gesperrt, bis Anfang August 2018 ',
          'type' => 'handicap',
          'until' => 1533398400
        },
@@ -3715,13 +3712,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1569880800
        },
        {
-         'data' => '#: XXX vor Ort prüfen
-	q4::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710
+         'data' => '	q3::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710
 ',
          'from' => 1531605600,
          'id' => 2987,
          'source_id' => '2147342890',
-         'text' => 'Seelenbinderstr.: Richtung Salvador-Allende-Str. zwischen Bahnhofstr. und Bellevuestr. Gleisbauarbeiten, Fahrtrichtung gesperrt, eventuell ist auch die Radspur betroffen, bis Ende August 2018 ',
+         'text' => 'Seelenbinderstr.: Richtung Salvador-Allende-Str. zwischen Bahnhofstr. und Bellevuestr. Gleisbauarbeiten, Fahrtrichtung gesperrt, Radfahrer müssen auf den freigegebenen Gehweg ausweichen, bis Ende August 2018 ',
          'type' => 'handicap',
          'until' => 1535126400
        },

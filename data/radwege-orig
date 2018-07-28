@@ -952,11 +952,10 @@ mäßige bis schlechte Verbundsteinpflasterradwege	RW2;RW2 25731,-1524 26286,-1901
 	RW1;RW2 27518,-3054 27552,-3075
 	RW2;RW2 27552,-3075 27633,-3118
 asphaltiert	RW2;RW2 27633,-3118 27721,-3164
-#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170730
-#: XXX Bauarbeiten bis Ende des Jahres, danach vermutlich Radspuren Richtung Westen
-#: last_checked: 2018-2017-08-04
-#: check_frequency: 60d
-asphaltiert	RW2;RW8 27721,-3164 27761,-3165 27898,-3171
+# REMOVED (realisiert, gesehen bei mapillary) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170730 --- #: XXX Bauarbeiten bis Ende des Jahres, danach vermutlich Radspuren Richtung Westen --- #: last_checked: 2018-2017-08-04 --- #: check_frequency: 60d
+asphaltiert	RW2; 27721,-3164 27761,-3165 27898,-3171
+	RW3; 27898,-3171 27761,-3165
+asphaltiert	RW1; 27761,-3165 27721,-3164
 	RW8;RW2 20565,2754 20868,2443 20928,2378 21041,2259 21055,2244 21242,2048 21475,1804
 	RW1;RW0 15166,8489 15378,8668
 	RW1; 15378,8668 15558,8820 15591,8848
@@ -1103,7 +1102,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: IM_025933
 #: osm_watch: way id="342968607" version="8"
 #: osm_watch: way id="461526152" version="2"
-#: last_checked: 2018-06-26
+#: last_checked: 2018-07-13 (mapillary)
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
@@ -1163,7 +1162,7 @@ neu asphaltiert	RW1; 17769,7465 17681,7589
 #: source_id: LMS-BR_r_LMS-BR_98104
 #: source_id: 2147342856
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/markierung-auf-der-rummelsburger-landstrasse-aufgebracht_a170936
-#: last_checked: 2018-07-07 vvv
+#: last_checked: 2018-07-28 vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: next_check: 2018-12-31 vvv
 #: note: hier existiert auch ein neu asphaltierter Radweg, aber Radfahrer werden zum geschützten Radweg geführt
@@ -2197,9 +2196,9 @@ Gehweg für Radfahrer frei	RW1; 23942,5338 24070,5272 24681,4943 24798,4895 24936
 #: XXX 2. Verkehrsführung Bauabschnitt 1: westlicher Gehweg gesperrt, für ca. 20 Monate
 #: XXX    Verkehrsführung Bauabschnitt 2: östlicher Gehweg gesperrt, bis zum Ende der Bauarbeiten
 #: XXX Bauarbeiten voraussichtlich bis Ende März 2021
-#: osm_watch: way id="333893474" version="2"
+#: osm_watch: way id="333893474" version="4"
 #: source_id: LMS-BR_r_LMS-BR_6442
-#: last_checked: 2018-03-25
+#: last_checked: 2018-07-27
 #: next_check: 2019-11-01
 #: priority: #A
 	RW8;RW2 23404,5325 23420,5159 23433,5037 23444,4942 23451,4877
@@ -3234,9 +3233,7 @@ Gehweg für Radfahrer frei	RW1; 28036,1136 28094,1090 28188,962 28317,891 28331,8
 asphaltierter Gehweg für Radfahrer frei (in der Praxis als Zweirichtungsweg genutzt)	RW1; 28570,649 28617,591 28644,560 28660,542 28677,524 28718,487 28809,462 29116,502 29406,540 29562,603 29632,594 30028,417 30551,276 30621,235 30839,106
 Gehweg für Radfahrer frei (in der Praxis als Zweirichtungsweg genutzt)	RW1; 30839,106 31009,19 31080,-19 31127,-45 31219,-87 31320,-129 31608,-476 31624,-496 31651,-530
 	RW6;RW6 5943,14049 5907,13746 5882,13548
-	RW1;RW1 22145,208 22172,194
-	RW1;RW 22172,194 22169,14
-	RW1;RW1 22169,14 22168,-71 22177,-137 22190,-228 22211,-324 22261,-464 22278,-570 22280,-663 22271,-717 22229,-897 22186,-1060
+	RW1;RW1 22145,208 22172,194 22169,14 22168,-71 22177,-137 22190,-228 22211,-324 22261,-464 22278,-570 22280,-663 22271,-717 22229,-897 22186,-1060
 	RW1;RW 22186,-1060 22146,-1183
 	RW1;RW 22146,-1183 22107,-1304 22068,-1422 22027,-1548 22003,-1625
 breiter Gehweg für Radfahrer frei	RW1; 22162,1067 22208,1103 22287,1165 22367,1230 22453,1294 22493,1325 22560,1377 22655,1450
@@ -5115,7 +5112,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2018-07-05
+#: last_checked: 2018-07-13 (mapillary)
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -5179,7 +5176,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW1; 17919,6968 17919,6978 17934,7029
 # 
 #: XXX bleiben die Radspuren? vvv
-#: last_checked: 2018-07-05 vvv
+#: last_checked: 2018-07-28 vvv
 provisorische Radspur	RW4; 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072 17930,6175 17952,6246 17991,6431
 provisorische Radspur,benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
 provisorische Radspur	RW4; 17962,6674 17919,6968

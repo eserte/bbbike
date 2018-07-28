@@ -378,7 +378,7 @@ Adalbertstr.: Kopfsteinpflaster	Q2; 11808,11482 11726,11265 11656,11106
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2018-2022)
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (Radweg wird Gehweg)
 #: by: http://www.berliner-woche.de/neukoelln/verkehr/zu-eng-zu-gefaehrlich-gasse-fuer-radler-an-der-oderstrasse-geplant-d130109.html (Realisierung 2020)
-#: last_checked: 2018-04-12
+#: last_checked: 2018-07-13 (mapillary)
 #: check_frequency: 180d
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11607,7145 11617,7083 11652,6879
 Friedelstr.: mäßiges, teilweise auch schlechtes Kopfsteinpflaster (max. 16 km/h)	Q2- 12066,9558 12047,9429 12074,9217 12078,9065
@@ -643,6 +643,7 @@ Brixener Str.: Kopfsteinpflaster	Q2 10507,17400 10502,17419 10466,17464
 #: XXX wird nach den Bauarbeiten die Qualität besser sein?
 #: source_id: 2147342929
 #: priority: #B
+#: last_checked: 2018-07-28
 #: next_check: 2018-08-31
 Helmerdingstr.: Kopfsteinpflaster	Q2 14442,11101 14468,11203
 # 
@@ -1010,11 +1011,11 @@ Wuhlewanderweg: guter Asphalt	Q0 22030,6600 22097,6414 22146,6338 22214,6271 222
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
-#: last_checked: 2018-06-10 vvv
+#: last_checked: 2018-07-28 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="317233618" version="4"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
-#: osm_watch: way id="25216398" version="27"
+#: osm_watch: way id="25216398" version="28"
 Wuhlewanderweg: Verbundsteine, teilweise etwas uneben	Q1- 22084,5877 22070,5876 21846,5856 21744,5804 21618,5699 21602,5685 21507,5620
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -1146,10 +1147,11 @@ Eichgestell: Asphalt	Q0 19590,6590 19407,6660 19052,6823
 Eichgestell: Parkweg, OK	Q1 19052,6823 18186,7200 18086,7243
 Eichgestell - Edisonstr./Rummelsburger Str.: Parkweg	Q1 18186,7200 18079,7144 18010,7133
 Sobernheimer Str.: Kopfsteinpflaster, teilweise mit Sandbanketten	Q2 27600,292 27667,368 27700,402 27734,437 27752,458 27783,493 27831,548 27932,665 27940,675 27961,699 28003,747 28051,803 28065,819 28188,962
-Zur Revierförsterei: Waldweg	Q1 28521,246 28521,300
+Zur Revierförsterei: Waldweg	Q1 28523,258 28521,300
 Zur Revierförsterei: Beton	Q0- 28521,300 28516,415 28538,452
 Zur Revierförsterei: Verbundsteinpflaster	Q1+ 28538,452 28660,542
-An der Krampe: Waldweg, OK	Q1 28521,246 28450,242 28391,305 28303,309 28286,283 28282,203 28248,100 28241,17 28213,-45 28206,-258 28143,-335 28107,-336 28043,-380 27978,-473 27847,-665
+(Revierförsterei - Hegemeisterweg): Waldweg	Q1- 28523,258 28566,-205
+An der Krampe: Waldweg, OK	Q1 28523,258 28450,242 28391,305 28303,309 28286,283 28282,203 28248,100 28241,17 28213,-45 28206,-258 28143,-335 28107,-336 28043,-380 27978,-473 27847,-665
 An der Krampe: schlechter Waldweg, Wurzeln	Q3 27847,-665 27811,-708 27759,-995 27727,-1078 27779,-1212 27786,-1276 27746,-1350 27759,-1372 27765,-1654 27695,-2161 27718,-2301 27932,-2444 27985,-2389 28144,-2262 28116,-2127 28163,-2013
 #: note "Referenzfläche"
 Am Seddinsee: sich selbst überlassener Waldweg	Q3 28163,-2013 28338,-2265 28443,-2317 28527,-2347 28568,-2346 28742,-2264 28892,-1955 28862,-1816
@@ -1242,10 +1244,12 @@ Dircksenstr.: Asphalt	Q0 11300,12241 11273,12301 11209,12430 11156,12581 11057,1
 Ruhwaldweg: Kopfsteinpflaster	Q2 758,13334 773,13375
 Bahnhofvorplatz S-Bhf. Priesterweg: Kopfsteinpflaster	Q2 7227,6080 7252,6080
 Liepnitzstr.: Asphalt	Q0 17803,8079 17856,8162 17920,8256 17961,8312 17988,8350 18007,8377 18072,8470 18151,8589 18272,8764
+# 
 #: next_check_id: HEGEMEISTERWEG-2018
 #: XXX Straße wird asphaltiert, laut Bauschild bis November 2018 fertig
-#: last_checked: 2018-07-07
+#: last_checked: 2018-07-28
 Hegemeisterweg: provisorische Baustraße, sandig	Q3 17202,8391 17522,8220
+# 
 Hegemeisterweg: Asphalt	Q0 17522,8220 17566,8199
 Hegemeisterweg: Asphalt	Q0- 17566,8199 17628,8169 17695,8137 17748,8109 17803,8079
 Hegemeisterweg: Asphalt	Q0 17803,8079 17987,7973 18287,7815 18325,7778 18382,7724
@@ -2056,7 +2060,7 @@ Eiselenweg - Uferweg: etwas sandig	Q2 21447,5414 21481,5429
 #: XXX "Die Herstellung des Uferweges ist zum 31.12.2016 in Planung."
 #: XXX Maßnahme Kö.13
 #: XXX mittlerweile gibt's hier Bauarbeiten
-#: last_checked: 2018-07-03
+#: last_checked: 2018-07-27 (Umleitungsausschilderung existiert)
 # REMOVED --- #: check_frequency: 90d
 (Uferweg, Mentzelpark): Schotterweg	Q1- 21481,5429 21512,5404 21600,5221 21696,5053
 (Uferweg, Mentzelpark): Asphalt	Q0 21696,5053 21740,5004 21761,4979
@@ -2207,7 +2211,7 @@ Tiergartenstr. (Biesdorf): Kopfsteinpflaster	Q2 21037,7751 21179,7754 21304,7783
 Bismarcksfelder Str.: fester Sandweg, holprig	Q2 21419,7806 21561,7867 21599,7904
 (Bellevuepark): Kleinsteinpflaster	Q1 22798,5731 22796,5640 22796,5631 22787,5582
 (Bellevuepark): mäßiger Asphalt	Q1 22787,5582 22733,5569 22701,5428 22657,5328
-(Bellevuepark): neuer Asphalt	Q0 22787,5582 22855,5554 22835,5452 22851,5327
+(Bellevuepark): neuer Asphalt	Q0 22787,5582 22841,5571 22855,5554 22834,5481 22851,5327
 Am Krusenick: guter Asphalt	Q0 22735,5328 22737,5278 22751,4970
 Am Krusenick: Kopfsteinpflaster	Q2 22751,4970 22754,4919
 Am Krusenick: guter Asphalt	Q0 22754,4919 22705,4874
@@ -4466,7 +4470,7 @@ Straße zum Müggelhort: Asphalt	Q0+ 28729,3084 28639,3005 28442,2926 28359,2722 2
 Straße zum Müggelhort: Asphalt	Q0 27761,2124 27599,1521
 (Zum Hotel Müggelsee): Beton	Q0- 26713,2064 26805,2381 26836,2480 26859,2596
 Müggelschlößchenweg: Asphalt	Q0 25385,4414 25132,4385 24181,4270 24135,4264 23879,4233 23753,4218
-Müggelschlößchenweg: Beton	Q0 23753,4218 23658,4208 23435,4179
+Müggelschlößchenweg: Beton	Q0 23753,4218 23658,4208 23453,4181 23435,4179
 Strandschloßweg: Asphalt	Q0 23368,3894 23439,3892 23467,3891 23749,3883
 Strandschloßweg: Beton	Q0 23749,3883 23925,3886
 Strandschloßweg: Feinschotter	Q1 23925,3886 24147,3888 24321,3886
@@ -4556,7 +4560,7 @@ Seestr. (Mahlsdorf): schlechtes Kopfsteinpflaster	Q3 23378,8416 23483,8342 23590
 Wildenbruchstr. (Mahlsdorf): schlechtes Kopfsteinpflaster, schlecht asphaltierter Parkstreifen	Q2-; 23684,8194 23748,8287
 Wildenbruchstr. (Mahlsdorf): schlechtes Kopfsteinpflaster	Q3; 23748,8287 23684,8194
 Wildenbruchstr. (Mahlsdorf): schlechtes Kopfsteinpflaster	Q3 23684,8194 23621,8095 23579,8037
-Waldpromenade: Waldweg	Q1- 24388,7698 24287,7699 24229,7700 24074,7695 24028,7697 23975,7713 23936,7749 23807,7842 23792,7861
+Waldpromenade: Waldweg	Q1- 24388,7698 24293,7698 24229,7700 24074,7695 24028,7697 23975,7713 23936,7749 23807,7842 23792,7861
 Waldpromenade: Waldweg	Q2+ 23792,7861 23710,7940 23668,7967
 Waldpromenade: Kleinsteinpflaster	Q2+ 23668,7967 23655,7953 23613,7983 23579,8037
 Waldpromenade: Waldweg	Q2+ 23579,8037 23481,8119
@@ -4736,7 +4740,7 @@ Teichrohrweg: Betonpflaster	Q0- 19016,1895 18925,1681 18888,1658
 Am Alten Friedhof: Asphalt	Q0+ 19181,1996 19122,1839 19037,1630 18974,1559
 #: XXX evtl. Verbesserung der Fahrbahnqualität?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180307
-#: last_checked: 2018-04-29
+#: last_checked: 2018-07-10 (mapillary)
 Pfarrwöhrde: Beton	Q1 19164,2001 19194,2157
 #: note: zumindest am Alten Schönefelder Weg
 Zum Alten Windmühlenberg: Asphalt	Q0 19653,1671 19279,1779
@@ -6070,7 +6074,7 @@ Alice-Archenhold-Weg: Beton	Q1 19696,5456 19715,5403
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19456,7956 19468,7918 19495,7874 19540,7842 19602,7753
 #: osm_watch: way id="156650954" version="6"
 #: XXX wird hier auch eine wassergebundene Decke entstehen?
-#: last_checked: 2018-01-06
+#: last_checked: 2018-07-27
 #: check_frequency: 180d
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: sandiger Weg, als Reitweg benutzt	Q3- 19602,7753 19559,7679 19529,7617 19348,7393 19321,7360
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: unbefestigter Weg	Q2- 19559,7679 19437,7517 19349,7429 19340,7400 19321,7360
@@ -6351,7 +6355,7 @@ Kleingartenstr.: Asphalt	Q0- 24118,4404 24075,4417 24022,4442 23978,4484
 Am Spielplatz: Asphalt, teilweise wellig	Q1- 23868,4411 23811,4400 23724,4388 23712,4367 23653,4363
 Am Spielplatz: Asphalt, teilweise wellig	Q1- 23712,4367 23787,4370 23811,4400
 Gladiolenstr.: Asphalt	Q1 23536,4543 23541,4439 23537,4238
-Gastrower Weg: Asphalt	Q0 23657,5467 23696,5529 23867,5563
+Gastrower Weg: Asphalt	Q0 23657,5467 23696,5529 23845,5558
 Grünfließer Gang: Kleinsteinpflaster	Q1- 23696,5529 23681,5579
 Grünfließer Gang: Asphalt	Q0 23681,5579 23675,5706
 Grünfließer Gang: Holzbohlen	Q1+ 23675,5706 23675,5729
@@ -7021,7 +7025,7 @@ Grillenweg: Beton	Q0 24236,5594 24225,5619
 Grillenweg: Asphalt, etwas Verbundsteinpflaster	Q1 24225,5619 24216,5748 24197,5791 24150,5854 24126,5874 24118,5895
 Grillenweg: Gehwegpflasterung	Q1 24118,5895 24111,5922 24122,6007
 Wiesenpromenade: Asphalt	Q0 23874,5876 23910,5884 23919,5908 23951,5923 23931,5992
-(S-Bhf. Hirschgarten - KGA Erpetal): Beton	Q1 23948,6054 23951,6063 23941,6118 23960,6153
+(S-Bhf. Hirschgarten - KGA Erpetal): Beton	Q1 23948,6054 23951,6063 23943,6131 23960,6153
 Kurzer Steig: Asphalt	Q0 24126,5521 24162,5424
 Am Stichkanal: Parkweg	Q1 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
 Am Stichkanal: Beton	Q0 22585,4634 22531,4605 22458,4565
@@ -8520,9 +8524,9 @@ Zu den Gosener Bergen: Asphalt	Q0 30728,-2326 30640,-2803
 (Gosener Damm - Seddinsee): Waldweg, teilweise mit Gras überwachsen, Wurzeln	Q3 29120,271 29481,44 29979,-120 30421,-424
 (Waldweg zur Sandgrube): Asphalt mit einigen Wurzelschäden	Q1 29120,271 29208,71
 (Waldweg zur Sandgrube): Asphalt	Q0 29208,71 29503,-611 29321,-685 29260,-774 28925,-1143 28886,-1163 28851,-1075
-#: note: Qualität hat sich verschlechtert (2018-06), früher feiner Schotter
-(Straße zur Krampenburg - Uferweg am Langen See): Waldweg, sandige Stellen	Q2 27202,173 26681,-47
-(Straße zur Krampenburg - Uferweg am Langen See): Waldweg, zweispurig	Q2- 26681,-47 26488,-131
+#: note: Qualität hat sich verschlechtert (2018-07), früher feiner Schotter
+(Straße zur Krampenburg - Uferweg am Langen See): Schotterweg, teilweise grober Schotter	Q2- 27202,173 26666,-54
+(Straße zur Krampenburg - Uferweg am Langen See): Waldweg, zweispurig	Q2- 26666,-54 26488,-131
 Kuglerstr.: Asphalt	Q0- 11750,16116 11680,16151 11618,16183
 Kuglerstr.: Asphalt mit leichten Schäden	Q1+ 12030,15968 11961,16002 11899,16037
 Kuglerstr.: Asphalt	Q0- 11899,16037 11852,16061
@@ -9289,7 +9293,7 @@ Karlsruher Str. (Mahlsdorf): Asphalt	Q0 23582,9591 23584,9629 23585,9672 23528,9
 (Mittelheide): Waldweg, Schotterweg	Q1- 24185,6880 24602,7169
 (Mittelheide): Waldweg, Schotterweg	Q2+ 24602,7169 24823,7341 24978,7527
 (Mittelheide): Waldweg, grober Schotter	Q2 24978,7527 25228,7462 25262,7433
-(Mittelheide, Nord-Süd-Weg): Waldweg	Q1- 24287,7699 24185,6880
+(Mittelheide, Nord-Süd-Weg): Waldweg	Q1- 24293,7698 24185,6880
 (Mittelheide, Nord-Süd-Weg): Waldweg, Schotter	Q1- 24185,6880 24111,6348
 (Mittelheide, Nord-Süd-Weg): Waldweg	Q1- 24111,6348 24089,6144
 Gilgenburger Pfad: Kleinsteinpflaster	Q1 24387,5672 24351,5696
@@ -15636,7 +15640,9 @@ Nikolaus-Bares-Weg: Verbundsteinpflaster	Q1 7234,1045 7437,1144
 #: confirmed_by: srt
 Joachimstr. (Bohnsdorf): mäßiges Kopfsteinpflaster	Q2 22029,-178 22177,-137
 #: confirmed_by: srt
-Joachimstr. (Bohnsdorf): schlechtes Kopfsteinpflaster, Straßenränder teilweise unbefestigt	Q3 22177,-137 22382,-87 22543,2 22631,50 22710,98
+Joachimstr. (Bohnsdorf): schlechtes Kopfsteinpflaster, Straßenränder teilweise unbefestigt	Q3 22177,-137 22382,-87 22543,2 22631,50
+#: corrected_by: mapillary (schlechtes Kopfsteinpflaster -> ...)
+Joachimstr. (Bohnsdorf): Asphalt	Q0 22631,50 22710,98
 #: by: ^^^
 # 
 #: by: Cordelia Will:
@@ -17622,7 +17628,7 @@ Theodorstr. (Mahlsdorf): sehr gute Teerdecke	Q0 24916,10539 24920,10697 24929,10
 #: corrected_by: srt (wird gerade neu gemacht)
 Theodorstr. (Mahlsdorf): Asphalt	Q0 24923,10774 24922,10785 24919,10818 24915,10858 24913,10884 24907,10955
 #: XXX wann wird die letzte Asphaltierung gemacht?
-#: last_checked: 2018-04-29
+#: last_checked: 2018-07-27
 #: check_frequency: 90d
 Theodorstr. (Mahlsdorf): Asphalt, letzte Deckschicht fehlt noch	Q1+ 24907,10955 24906,10965 24899,11044 24897,11083
 #: corrected_by: srt (neu gemacht)
@@ -18056,9 +18062,12 @@ Richard-Willstätter-Str.: Asphalt	Q0 19592,2462 19794,2629 19978,2790
 #: corrected_by: srt (Asphalt -> Beton)
 Alfred-Randt-Str.: Beton	Q0 23749,3868 23925,3869 23925,3886 23922,3973 23971,4020 24293,4017 24296,4096 24293,4227 24140,4227 24135,4264
 # 
-#: by: Hubertus Fuerther:
+#: by: Hubertus Fuerther: vvv
 #: corrected_by: srt (guter Asphalt -> glatt gepflastert) (zumindest am westl. Ende)
-Grünfinkenweg: glatt gepflastert	Q1 22312,48 22451,95 22515,109 22591,105 22631,50
+Grünfinkenweg: glatt gepflastert	Q1 22312,48 22396,76
+#: confirmed_by: mapillary
+Grünfinkenweg: Asphalt	Q0 22396,76 22451,95 22515,109 22591,105 22631,50
+#: by ^^^
 # 
 #: by: Krolop:
 Büchnerweg (Niederschönhausen): schlechter loser Sandweg	Q3 9972,20307 9910,20556
