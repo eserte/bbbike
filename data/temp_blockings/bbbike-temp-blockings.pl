@@ -26471,6 +26471,7 @@ EOF
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=30361
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=29479
 #: by: mapillary (Gehweg für Radfahrer frei)
+#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/kreuzungsumbau-bis-november_a172982
 #: source_id: 2147342671
 #: source_id: 2147342861
 #: source_id: 2147342860
@@ -27025,7 +27026,7 @@ EOF
 EOF
      },
      { from  => 1522789491, # 2018-04-03 23:04
-       until => $isodate2epoch->("2018-07-31 18:00:00"), # 1527718780, # 1527803999, # 2018-05-31 23:59
+       until => $isodate2epoch->("2018-08-17 18:00:00"), # 1527718780, # 1527803999, # 2018-05-31 23:59
        text  => 'Oranienburger Str.: Bauarbeiten zwischen Wittenauer Str. und Cyclopstr. Richtung Süden; außerdem Einbahnstraßenregelung in der Cyclopstr., offen Richtung Süden; bis Mitte Juli 2018',
        type  => 'handicap',
        source_id => '2147341699',
@@ -27218,7 +27219,7 @@ EOF
        source_id => '2147342639',
        data  => <<EOF,
 #: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-07-26
+#: last_checked: 2018-07-29
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -27450,8 +27451,8 @@ EOF
 EOF
      },
      { from  => 1530907854, # 2018-07-06 22:10
-       until => 1533074399, # 2018-07-31 23:59
-       text  => 'Glinkastr.: Bauarbeiten zwischen Französische Str. und Jägerstr., Fahrbahn Richtung Süden gesperrt, evtl.. sind auch Radfahrer betroffen, bis Ende Juli 2018',
+       until => $isodate2epoch->("2021-06-30 18:00:00"), # 1533074399, # 2018-07-31 23:59
+       text  => 'Glinkastr.: Bauarbeiten zwischen Französische Str. und Jägerstr., Fahrbahn Richtung Süden gesperrt, evtl.. sind auch Radfahrer betroffen, bis Ende Juni 2021',
        type  => 'handicap',
        source_id => '2147342871',
        data  => <<EOF,
@@ -27473,6 +27474,7 @@ EOF
        type  => 'handicap',
        source_id => '2147342893',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/bvg-erneuert-tramgleise_a172247
 	q4::inwork; 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331
 EOF
      },
@@ -27483,6 +27485,7 @@ EOF
        source_id => '2147342925',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.722387.php (nur Kreuzungsbereich betroffen)
+#: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/finckensteinallee-gesperrt_a171782
 	q4::inwork 2625,2850 2570,2844
 # REMOVED ---	q4::inwork 2570,2844 2290,2864
 EOF
@@ -27511,6 +27514,7 @@ EOF
        type  => 'handicap',
        source_id => '2147342890',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/seelenbinderstrasse-bleibt-bis-ende-august-dicht_a172757
 	q3::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710
 EOF
      },
@@ -27521,6 +27525,25 @@ EOF
        source_id => 'LS/721-E/18/081',
        data  => <<EOF,
 	q4::inwork 7979,70212 7906,70007 7983,69794 7945,69489 7871,69412
+EOF
+     },
+     { from  => 1531519200, # 2018-07-14 00:00
+       until => 1537048799, # 2018-09-15 23:59
+       text  => 'Semmelweisstr.: zwischen Korkedamm und Lehmfeldsteig komplett gesperrt (geplatzte Wasserleitung)',
+       type  => 'gesperrt',
+       source_id => 'LMS-BR_r_LMS-BR_139053_LMS-BR_72',
+       data  => <<EOF,
+#: by: https://www.berliner-woche.de/altglienicke/c-bauen/rund-1000-kubikmeter-trinkwasser-liefen-in-untergrund-und-keller_a172811
+	2::inwork 19602,1989 19244,2141
+EOF
+     },
+     { from  => 1533225600, # 2018-08-02 18:00
+       until => 1534219200, # 2018-08-14 06:00
+       text  => 'Budapester Str. am Breitscheidplatz: Sperrung der Fahrbahn (Tribünenbau für die Leichtathletik-EM), ab 3. August 2018 18 Uhr bis 14. August 2018 6 Uhr',
+       type  => 'gesperrt',
+       source_id => 'https://www.berliner-woche.de/charlottenburg/c-verkehr/umleitung-wegen-leichtathletik-em_a174266',
+       data  => <<EOF,
+	2::temp 5986,10976 5829,10964 5716,10978 5652,11004
 EOF
      },
     );

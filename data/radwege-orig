@@ -1162,7 +1162,7 @@ neu asphaltiert	RW1; 17769,7465 17681,7589
 #: source_id: LMS-BR_r_LMS-BR_98104
 #: source_id: 2147342856
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/markierung-auf-der-rummelsburger-landstrasse-aufgebracht_a170936
-#: last_checked: 2018-07-28 vvv
+#: last_checked: 2018-07-31 vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: next_check: 2018-12-31 vvv
 #: note: hier existiert auch ein neu asphaltierter Radweg, aber Radfahrer werden zum geschützten Radweg geführt
@@ -1190,8 +1190,10 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
-#: last_checked: 2018-07-02
-#: check_frequency: 90d
+#: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen?
+#: last_checked: 2018-07-29
+# REMOVED --- #: check_frequency: 90d
+#: next_check: 2018-07-31
 	RW8;RW2 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
 	RW4;RW3 15053,7966 15221,7778
@@ -2469,6 +2471,7 @@ teilweise nur mäßige Radwege	RW1;RW1 2717,5578 2746,5537 2785,5482 2835,5410 291
 alte Gehwegplatten, deutliche Schäden	RW1; 14853,7451 14775,7385 14758,7373 14708,7325 14617,7243
 Verbundsteinpflaster	RW1;RW1 14853,7451 14989,7574 15221,7778 15355,7893 15425,7953 15444,7969 15557,8077
 #: note: asphaltiert, aber einige deutliche Wurzelhebungen
+#: note: nicht explizit freigegeben, nur durch Fahrbahnmarkierung
 asphaltierter Gehweg für Radfahrer frei	RW1; 15221,7778 15553,7408 15560,7400
 asphaltierter Gehweg für Radfahrer frei	RW1; 15560,7400 15609,7347 15695,7254 15928,6996
 asphaltiert	RW1; 23402,5483 23492,5488 23519,5490 23590,5487 23657,5467 23724,5437 23818,5394 23849,5380 23942,5338
@@ -5176,7 +5179,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW1; 17919,6968 17919,6978 17934,7029
 # 
 #: XXX bleiben die Radspuren? vvv
-#: last_checked: 2018-07-28 vvv
+#: last_checked: 2018-07-31 vvv
 provisorische Radspur	RW4; 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072 17930,6175 17952,6246 17991,6431
 provisorische Radspur,benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
 provisorische Radspur	RW4; 17962,6674 17919,6968

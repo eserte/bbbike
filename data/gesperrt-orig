@@ -2785,7 +2785,7 @@ Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14558,1008
 Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14597,10129
 # REMOVED während der Bauarbeiten entfernt (2010-10) --- wird es jemals wieder eingesetzt? --- Drängelgitter mit asphaltierer Vorbeifahrmöglichkeit	BNP:2::trailer=4 14626,10162
 # REMOVED (entfernt) --- #: note: 90cm Öffnung, 90cm zum versetzten Gitter -> 63cm lichte Breite --- #: note: hmmm, heute (2012-10-16) habe ich einen Radfahrer mit Croozer da durchfahren gesehen -> trailer=no -> trailer=15 --- Drängelgitter --- mittlerweile gibt es eine Pollerreihe	BNP:3::trailer=15 12901,10134
-# REMOVED (wurde abmontiert --- dauerhaft?) --- #: note: relativ großzügige Öffnung --- Drängelgitter	BNP:1::trailer=3 12833,9998
+# REMOVED (wurde abmontiert --- dauerhaft? --- ja, jetzt gibt's hier auch eine Pollerreihe) --- #: note: relativ großzügige Öffnung --- Drängelgitter	BNP:1::trailer=3 12833,9998
 Schranke (Privatstr.)	BNP:5 25039,5304
 Schranke	BNP:2::trailer=4 9907,11752
 Schranke	BNP:3::trailer=10 10114,11789
@@ -2919,7 +2919,8 @@ Volkspark Anton Saefkow: Bauarbeiten, Wege sind gesperrt	2::inwork 12620,14979 1
 #: next_check_id: KAUFHOF-2018
 #: XXX bis wann gehen die Bauarbeiten?
 #: XXX ggfs. handicap_s-orig-Eintrag wieder aktivieren
-#: last_checked: 2018-06-29
+#: last_checked: 2018-07-30
+#: check_frequency: 90d
 Hermann-Stöhr-Platz: Gehweg vor dem ehemaligen Kaufhaus gesperrt	2::inwork 12522,11837 12409,11902
 # 
 #: priority: #C
@@ -3245,7 +3246,7 @@ Nordhafenpark West: unter der Brücke gesperrt	2::inwork 7636,14414 7612,14449 75
 #: XXX Bauarbeiten (Erweiterung des Rütli-Campus?)
 #: XXX Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="137084083" version="9"
-#: last_checked: 2018-06-01
+#: last_checked: 2018-07-30
 #: check_frequency: 60d
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,9200 12548,9167
 # 

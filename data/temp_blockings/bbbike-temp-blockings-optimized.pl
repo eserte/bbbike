@@ -1725,93 +1725,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://csd-berlin.de/event-info-en/
-	2::temp 6851,10416 6937,10363 6971,10346 7033,10328 7033,10396 7003,10513 6982,10610 6972,10665 6929,10852 6918,10858 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6685,11954 6642,12010 6656,12075 6690,12104 6725,12113 6754,12108 6787,12099 6828,12031 6809,11979 6744,11936
-	2::temp 6353,10583 6292,10627 6228,10646 6171,10657
-	2::temp 7033,10396 6851,10416 6753,10446 6636,10492 6532,10529 6468,10550 6353,10583 6268,10588 6216,10614 6171,10657 6133,10679 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5341,10756 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435 4157,10418
-	3 6380,10704 6353,10583 6302,10462
-	3 6692,11365 6851,11346 7103,11247
-	3 5488,10978 5475,10808 5471,10719
-	3 4685,10689 4676,10541 4659,10335
-	3 7115,11220 6880,11110 6841,11114
-	3 6716,11439 6825,11486 6915,11492
-	3 4239,10358 4245,10435 4256,10583
-	3 7131,10331 7033,10396 7245,10499
-	3 7131,10331 7033,10328 7060,10221
-	3 4485,10307 4503,10497 4513,10702
-	3 6869,11567 6809,11570 6512,11608
-	3 6725,10641 6743,10615 6753,10446 6719,10347
-	3 4847,10677 4847,10589 4828,10356
-	3 4381,10583 4371,10465 4360,10320
-	3 5196,10398 5215,10711 5230,10919
-	3 6681,10959 6824,10904 6740,10755
-	3 6740,10755 6824,10904 6681,10959
-	3 6818,10725 6972,10665 7110,10613
-	3 4360,10320 4371,10465 4381,10583
-	3 7060,10221 7033,10328 7131,10331
-	3 6915,11492 6825,11486 6716,11439
-	3 6742,11099 6873,11011 7002,11034
-	3 7245,10499 7033,10396 7131,10331
-	3 4828,10356 4847,10589 4847,10677
-	3 4513,10702 4503,10497 4485,10307
-	3 6719,10347 6753,10446 6743,10615 6725,10641
-	3 6841,11114 6880,11110 7115,11220
-	3 6884,12006 6828,12031 7026,12054
-	3 5829,10964 5782,10884 5669,10704
-	3 6512,11608 6809,11570 6869,11567
-	3 6540,11754 6778,11742 6980,11790
-	3 5669,10704 5782,10884 5829,10964
-	3 5047,10381 5076,10658 5079,10701
-	3 6980,11790 6778,11742 6540,11754
-	3 7002,11034 6873,11011 6742,11099
-	3 5866,10492 6025,10746 6122,10925
-	3 6192,10542 6216,10614 6228,10646
-	3 6685,10690 6532,10529 6494,10440
-	3 6122,10925 6025,10746 5866,10492
-	3 7026,12054 6828,12031 6884,12006
-	3 4256,10583 4245,10435 4239,10358
-	3 6216,10614 6228,10646 6250,10701
-	3 5900,11913 6642,12010 6550,11954
-	3 5079,10701 5076,10658 5047,10381
-	3 5471,10719 5475,10808 5488,10978
-	3 4659,10335 4676,10541 4685,10689
-	3 7110,10613 6972,10665 6818,10725
-	3 5230,10919 5215,10711 5196,10398
-	3 6302,10462 6353,10583 6380,10704
-	3 6550,11954 6642,12010 5900,11913
-	3 6494,10440 6532,10529 6685,10690
-	3 6250,10701 6228,10646 6216,10614
-	3 7103,11247 6851,11346 6692,11365
-	3 6228,10646 6216,10614 6192,10542
-	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8592,12252 8637,12258 8722,12268
-	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-	3 7031,12320 7383,12095 7429,12070
-	3 7429,12070 7383,12095 7031,12320
-	3 7875,12363 7822,12201 7816,12150 7823,12120
-	3 7823,12120 7816,12150 7822,12201 7875,12363
-	3 8119,12414 8055,12186 8049,12140
-	3 8049,12140 8055,12186 8119,12414
-	3 8391,12389 8344,12221 8327,12174
-	3 8327,12174 8344,12221 8391,12389
-',
-         'from' => 1532642400,
-         'id' => 2083,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              6
-                            ]
-                          ],
-         'source_id' => 'https://www.berlin.de/events/2096878-2229501-csd-christopher-street-day.html',
-         'text' => 'CSD am 28.7.2018',
-         'type' => 'gesperrt',
-         'until' => 1532815199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3177,6 +3091,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=30361
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=29479
 #: by: mapillary (Gehweg für Radfahrer frei)
+#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/kreuzungsumbau-bis-november_a172982
 #: source_id: 2147342671
 #: source_id: 2147342861
 #: source_id: 2147342860
@@ -3364,7 +3279,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => '2147341699',
          'text' => 'Oranienburger Str.: Bauarbeiten zwischen Wittenauer Str. und Cyclopstr. Richtung Süden; außerdem Einbahnstraßenregelung in der Cyclopstr., offen Richtung Süden; bis Mitte Juli 2018',
          'type' => 'handicap',
-         'until' => 1533052800
+         'until' => 1534521600
        },
        undef,
        undef,
@@ -3451,7 +3366,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-07-26
+#: last_checked: 2018-07-29
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -3494,16 +3409,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1546297200
        },
-       {
-         'data' => '	q4::inwork 19958,5950 19681,5924
-',
-         'from' => 1527533410,
-         'id' => 2964,
-         'source_id' => '2147342666',
-         'text' => 'Weiskopffstr.: Gleisbauarbeiten zwischen An der Wuhlheide und Parkstr., Fahrbahn gesperrt, bis Ende Juli 2018',
-         'type' => 'handicap',
-         'until' => 1532880000
-       },
+       undef,
        {
          'data' => '#: XXX Sanierung des Kleinsteinpflasters ab 2018-05-28 bis voraussichtlich Herbst 2018 -> ändert sich an der Qualität etwas?
 #: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/pflasterarbeiten-am-fasanenplatz_a165320
@@ -3655,9 +3561,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1530907854,
          'id' => 2981,
          'source_id' => '2147342871',
-         'text' => 'Glinkastr.: Bauarbeiten zwischen Französische Str. und Jägerstr., Fahrbahn Richtung Süden gesperrt, evtl.. sind auch Radfahrer betroffen, bis Ende Juli 2018',
+         'text' => 'Glinkastr.: Bauarbeiten zwischen Französische Str. und Jägerstr., Fahrbahn Richtung Süden gesperrt, evtl.. sind auch Radfahrer betroffen, bis Ende Juni 2021',
          'type' => 'handicap',
-         'until' => 1533074399
+         'until' => 1625068800
        },
        {
          'data' => '	2::inwork 21889,16817 21824,16506 21785,16273 21782,16253
@@ -3670,7 +3576,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1534780800
        },
        {
-         'data' => '	q4::inwork; 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331
+         'data' => '#: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/bvg-erneuert-tramgleise_a172247
+	q4::inwork; 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331
 ',
          'from' => 1531605600,
          'id' => 2983,
@@ -3681,6 +3588,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.722387.php (nur Kreuzungsbereich betroffen)
+#: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/finckensteinallee-gesperrt_a171782
 	q4::inwork 2625,2850 2570,2844
 # REMOVED ---	q4::inwork 2570,2844 2290,2864
 ',
@@ -3712,7 +3620,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1569880800
        },
        {
-         'data' => '	q3::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710
+         'data' => '#: by: https://www.berliner-woche.de/koepenick/c-verkehr/seelenbinderstrasse-bleibt-bis-ende-august-dicht_a172757
+	q3::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710
 ',
          'from' => 1531605600,
          'id' => 2987,
@@ -3730,6 +3639,27 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Zehdenick: B109: Deckenerneuerung in der Ortsdurchfahrt B109, OL Vogelsang, Sperrung der Fahrbahn, 24.07.2018 bis 18.08.2018 ',
          'type' => 'handicap',
          'until' => 1534629600
+       },
+       {
+         'data' => '#: by: https://www.berliner-woche.de/altglienicke/c-bauen/rund-1000-kubikmeter-trinkwasser-liefen-in-untergrund-und-keller_a172811
+	2::inwork 19602,1989 19244,2141
+',
+         'from' => 1531519200,
+         'id' => 2989,
+         'source_id' => 'LMS-BR_r_LMS-BR_139053_LMS-BR_72',
+         'text' => 'Semmelweisstr.: zwischen Korkedamm und Lehmfeldsteig komplett gesperrt (geplatzte Wasserleitung)',
+         'type' => 'gesperrt',
+         'until' => 1537048799
+       },
+       {
+         'data' => '	2::temp 5986,10976 5829,10964 5716,10978 5652,11004
+',
+         'from' => 1533225600,
+         'id' => 2990,
+         'source_id' => 'https://www.berliner-woche.de/charlottenburg/c-verkehr/umleitung-wegen-leichtathletik-em_a174266',
+         'text' => 'Budapester Str. am Breitscheidplatz: Sperrung der Fahrbahn (Tribünenbau für die Leichtathletik-EM), ab 3. August 2018 18 Uhr bis 14. August 2018 6 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1534219200
        }
      
 );
