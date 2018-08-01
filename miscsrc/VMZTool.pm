@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2013,2014,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013,2014,2016,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -588,6 +588,11 @@ minimizes diffs):
     mv newvmz.yaml newvmz.new.yaml
     mv diffnewvmz.old.bbd diffnewvmz.bbd
     mv newvmz.old.yaml newvmz.yaml
+
+Use old files as in regular, but save new files into temporary
+locations (useful for testing).
+
+    perl miscsrc/VMZTool.pm -existsid-current tmp/sourceid-current.yml -existsid-all tmp/sourceid-all.yml -oldstore ~/cache/misc/newvmz.yaml -newstore /tmp/newvmz.yaml -outbbd /tmp/diffnewvmz.bbd
 
 =head1 DESCRIPTION
 
