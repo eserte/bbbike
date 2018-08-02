@@ -235,7 +235,7 @@ Alexandrinenstr.: direkter Zugang zur Sebastianstr. nicht mehr möglich, stattdes
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
 # REMOVED --- #: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualität -> qualitaet_s-orig-Eintrag revidieren --- #: last_checked: 2013-11-21 --- Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2018-06-30 vvv
+#: last_checked: 2018-08-01 vvv
 #: check_frequency: 60d vvv
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9984,12426 9996,12401 10058,12290
 Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 10008,12274 10058,12290
@@ -257,7 +257,7 @@ Niederlagstr.: Bauarbeiten, Engstelle, Fußgänger	q3::inwork  9959,12281 9972,121
 # REMOVED (Einbahnstraßenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universitätsstr.: wegen Bauarbeiten Einbahnstraße zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2018-07-08 vvv
+#: last_checked: 2018-08-01 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="5"
@@ -311,9 +311,9 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: next_check_id: STAATSOPER-2014 vvv
 #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig
 #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html
-#: last_checked: 2018-06-30 vvv
+#: last_checked: 2018-08-01 vvv
 #: check_frequency: 30d vvv
-Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9883,12251 9876,12298
+# REMOVED (mittlerweile -> gesperrt-orig) --- Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9883,12251 9876,12298
 Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -331,9 +331,9 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
 #: source_id: LMS-BR_r_LMS-BR_197
 #: osm_watch: way id="194962375" version="9"
-#: last_checked: 2018-07-06
+#: last_checked: 2018-08-01
 #: check_frequency: 7d
-Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q4::inwork 10601,12521 10704,12595
+Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
 # REMOVED (fertig) --- #: by: http://www.berliner-woche.de/mitte/bauen/rathausstrasse-wird-gesperrt-d140537.html vvv --- #: by: http://www.projekt-u5.de/de/rotes-rathaus/ --- #: last_checked: 2018-06-21 (webcam) vvv --- #: check_frequency: 2d vvv --- #: XXX_prog: hier eigentlich nicht, wird nur zur "künstlichen Verlängerung" der Wegstrecke benutzt --- kann aufgehoben werden, sobald handicap_directed überall funktioniert --- Rathausstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 10476,12432 10584,12507 --- Rathausstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10584,12507 10601,12521 --- #: last_checked ^^^ --- #: check_frequency ^^^ --- #: by ^^^
 # 
@@ -536,7 +536,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Rollbergstr. und Briesestr., Richtung Süden
 ### Lichtenberg ###
 # 
 #: priority: #A
-#: last_checked: 2018-07-26
+#: last_checked: 2018-08-02
 #: next_check: 2018-10-15
 #: valid: -20181015
 Untere Kynaststr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen, Bordstein	q4+::inwork 14882,10732 14904,10812

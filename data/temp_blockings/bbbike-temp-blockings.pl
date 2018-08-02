@@ -901,11 +901,11 @@ EOF
 	2 2624,1704 2824,1273
 EOF
      },
-     { from  => $isodate2epoch->("2017-08-31 17:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-09-03 23:59:59"),
+     { from  => $isodate2epoch->("2018-08-31 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-09-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 31, months => 8]],
-       text  => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (01.09.2017 bis 03.09.2017)',
+       text  => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (01.09.2018 bis 02.09.2018)',
        type  => 'gesperrt',
        data  => <<EOF,
 	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
@@ -22656,7 +22656,7 @@ EOF
        until => $isodate2epoch->("2017-09-10 22:00:00"),
        periodic => 1, # erster Termin im Jahr
        #recurrences => [["yearly", days => 9, months => 5]], # wechselnde Termine, kann auch erst Mitte September passieren
-       #recurrence_prewarn_days => 14,
+       recurrence_prewarn_days => 14,
        recurrences => [["yearly", days => 1, months => 9]],
        text  => 'Prager Platz: Veranstaltung "Fest der Nationen", Durchfahrt nicht möglich, vom 8.9.2017 15 Uhr bis 10.9.2017 22 Uhr',
        type  => 'gesperrt',
@@ -26769,7 +26769,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-06-26 vvv
+#: last_checked: 2018-08-01 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27451,7 +27451,7 @@ EOF
 EOF
      },
      { from  => 1530907854, # 2018-07-06 22:10
-       until => $isodate2epoch->("2021-06-30 18:00:00"), # 1533074399, # 2018-07-31 23:59
+       until => 1533144509, # Sperrung in die andere Richtung, aber hier gibt's eh eine Radspur --- $isodate2epoch->("2021-06-30 18:00:00"), # 1533074399, # 2018-07-31 23:59
        text  => 'Glinkastr.: Bauarbeiten zwischen Französische Str. und Jägerstr., Fahrbahn Richtung Süden gesperrt, evtl.. sind auch Radfahrer betroffen, bis Ende Juni 2021',
        type  => 'handicap',
        source_id => '2147342871',
@@ -27491,8 +27491,8 @@ EOF
 EOF
      },
      { from  => 1532620085, # 2018-07-26 17:48
-       until => 1534370399, # 2018-08-15 23:59
-       text  => 'Gotlindestr.: Bauarbeiten zwischen Ruschestr. und Freesienweg, Fahrbahn gesperrt, bis Mitte August 2018',
+       until => $isodate2epoch->("2018-08-30 18:00:00"), # 1534370399, # 2018-08-15 23:59
+       text  => 'Gotlindestr.: Bauarbeiten zwischen Ruschestr. und Freesienweg, Fahrbahn gesperrt, bis Ende August 2018',
        type  => 'handicap',
        source_id => '2147342912',
        data  => <<EOF,
@@ -27544,6 +27544,7 @@ EOF
        source_id => 'https://www.berliner-woche.de/charlottenburg/c-verkehr/umleitung-wegen-leichtathletik-em_a174266',
        data  => <<EOF,
 	2::temp 5986,10976 5829,10964 5716,10978 5652,11004
+	2::temp 5829,10964 5782,10884
 EOF
      },
     );

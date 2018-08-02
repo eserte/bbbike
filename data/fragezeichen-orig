@@ -22,7 +22,7 @@
 Mehringdamm: Radspuren oder Sanierung	?::projected; 9224,9053 9225,9111 9248,9350 9280,9476 9334,9670 9387,9804 9444,9919 9448,10014
 # 
 #: XXX außerdem: Nordseite wird saniert
-#: last_checked: 2018-07-26
+#: last_checked: 2018-08-02
 #: next_check: 2018-12-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -62,7 +62,7 @@ Danziger Str.	?::projected 12616,14315 12722,14232 12817,14159 12901,14093 12975
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: last_checked: 2018-07-30
+#: last_checked: 2018-08-01
 #: check_frequency: 60d
 Annenstr./Heinrich-Heine-Platz	?::projected 11158,11324 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -784,7 +784,7 @@ Edisonstr.: Einrichten einer Radverkehrsanlage	?::projected; 17900,6072 17930,61
 Siemensstr.: Einrichten einer Radverkehrsanlage	?::projected; 17614,6571 17528,6502 17492,6462 17432,6352
 #: XXX Osw.7
 #: XXX asphaltierte Straßenbahncaps wurden gebaut, evtl. werden auch im östlichen Abschnitt auch Radspuren markiert --- comments_tram-Eintrag müsste man dann anpassen
-#: last_checked: 2018-07-31
+#: last_checked: 2018-08-02
 #: check_frequency: 14d
 Ostendstr./Weiskopffstr.: Einrichten einer Radverkehrsanlage	?::projected 19958,5950 19681,5924 19650,5920 19403,5885 19388,5883 19273,5866 19024,5830
 # Osw.9 ist vermutlich schon erledigt
@@ -950,7 +950,7 @@ Neudecker Weg: Verbesserung -> Radspuren oder Asphaltierung des Radwegs? ("Teila
 # REMOVED --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf --- #: XXX Maßnahme Kö.10 --- #: osm_watch: way id="148614161" version="9" --- #: last_checked: 2017-08-17 --- Bellevuestr.: Verbesserung -> vermutlich Radspuren?	?::projected; 23333,5710 23402,5483
 # 
 #: osm_watch: way id="43063529" version="14"
-#: last_checked: 2018-07-31
+#: last_checked: 2018-08-02
 An der Wuhlheide: Verbesserung -> evtl. Radpuren?	?::projected; 19759,6049 19958,5950
 # 
 #: last_checked: 2018-07-10 (mapillary)
@@ -1193,7 +1193,7 @@ Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird hier vielleicht ein Bürg
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (2018/2019)
 #: source_id: 2147342583
-#: last_checked: 2018-07-31
+#: last_checked: 2018-08-02
 #: check_frequency: 90d
 Rummelsburger Landstr.: Verbesserung des Radwegs oder werden Radstreifen angelegt?	?::projected 18010,7133 17847,7356 17769,7465
 # 
@@ -2289,6 +2289,12 @@ Onkel-Tom-Str.: Sanierung, evtl. auch Änderungen/Verbesserungen bei den Radwegen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.725993.php
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.726077.php
+#: XXX möglicherweise interessant: Entsiegelung, Barrierefreiheit; vielleicht gibt es während der Bauarbeiten Sperrungen
+#: next_check: 2019-04-01 ("erste Hälfte 2019")
+Grünfläche Auerdreieck: Umgestaltung geplant, ändert sich etwas an den Wegen	? 13091,12563 13232,12628
+# 
 #: https://www.berliner-woche.de/wilhelmstadt/c-verkehr/anwohner-wollen-zebrastreifen-verlegen_a171905
 #: priority: #D
 #: last_checked: 2018-07-16 (BW)
@@ -2399,7 +2405,8 @@ Handjerystr.: neue Fahrradstraße	?::projected 5631,8011 5630,7875 5636,7734 5636
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/blumberger-damm-gesperrt_a171635
 #: source_id: 2147342844
 #: last_checked: 2018-05-21
-#: next_check: 2018-08-20
+# REMOVED --- #: next_check: 2018-08-20
+#: next_check: 2018-08-01 (bei VMZ nicht mehr gelistet, schon fertig?)
 # REMOVED (realisiert) --- Blumberger Damm: wird hier ein Radweg gebaut?	? 21724,15955 21782,16253
 Blumberger Damm: hier werden Radfahrstreifen entstehen	? 21782,16253 21785,16273 21824,16506 21889,16817
 # 
@@ -2445,7 +2452,7 @@ Brandenburgische Str./Ballenstedter Str.	?::projected 3932,9819 3949,9842 3978,9
 #: last_checked: 2018-06-22
 #: check_frequency: 60d
 Blücherstr./Brachvogelstr.	?::projected 9997,9987 10006,9942 9965,9925
-#: last_checked: 2018-06-22
+#: last_checked: 2018-08-01
 #: check_frequency: 60d
 Lindenstr./E.T.A.-Hoffmann-Promenade	?::projected 9747,10741 9777,10719 9750,10687
 # 
@@ -2981,7 +2988,7 @@ Maulbeerallee: Planung eines Zebrastreifens	?::projected -5544,12837 -5594,12832
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2018-05-14
+#: last_checked: 2018-08-02
 #: check_frequency: 60d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
@@ -3785,6 +3792,7 @@ Zehnrutenweg: Benennung?	? 20347,18667 20377,18753 20454,18778 20461,18796 20503
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/bebauungsplanung/oeffentlichkeits-beteiligungen/b-plan_6-30_blatt_2.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=5377&mt=0&zoom=14
 #: by: http://christophkohl.com/portfolio/lichterfelde-sued-stadtplatz/
+#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/staedtebaulicher-vertrag-fuer-wohungsbauprojekt-unterzeichnet_a174605
 #: osm_watch: way id="318397770" version="1"
 #: osm_watch: way id="318395919" version="5"
 #: next_check: 2019-04-01
@@ -3915,6 +3923,7 @@ Lichtenrade: Sanierung von Pflasterstraßen	?::projected 10381,-2457 11914,-2137 
 Bebauungsplan XVI-81: neue Straßen werden entstehen	?::projected 33532,2877 33523,2784 33408,2778 33394,2748 33115,2798 33158,3030 33532,2877
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/bebauungsplanung/oeffentlichkeits-beteiligungen/vorhabenbezogener-b-planentwurf-6-24ve.pdf
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.726194.php
 #: last_checked: 2018-05-01
 #: check_frequency: 720d
 Bebauungsplan 6-24 VE: entsteht hier eine neue Privatstraße? entsteht eine Parallelstraße zur Plüschowstr.?	?::projected 114,3425 126,3445 132,3505 227,3519 194,3753
@@ -3931,6 +3940,7 @@ geplante Grünanlage	?::projected 4084,15859 4055,15795 4041,15786 4224,15779 421
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_20_2467_2610_online.pdf (FNP-Änderung)
 #: by: http://www.stadtentwicklung.berlin.de/planen/fnp/de/buergerbeteiligung/0416.shtml (FNP-Änderung 04/16)
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/westkreuz-plaene-liegen-aus_a164924
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.726428.php
 #: last_checked: 2018-07-08
 #: check_frequency: 360d
 Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660,10521 2749,10584 3043,10680
@@ -3992,7 +4002,7 @@ Krampnitz: neue Planstraßen	?::projected -14183,5214 -13771,5077
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/wasserpark-berlin-c-hager-partner-ag.pdf
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7152
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136248111083/248111083/00223364/64-Anlagen/07/137-2017-2Bplan-XVII-4_Bl1-2-170803-Abzeichnun.pdf
-#: last_checked: 2018-07-01
+#: last_checked: 2018-08-02
 #: next_check: 2022-01-01
 Ostkreuz-Rummelsburger Bucht: neues Wohnquartier mit Straßen und Wegen sowie Wasserpark	?::projected 14915,10785 14872,10634 14987,10601 15106,10655 15174,10641 15200,10741 14915,10785
 # 
