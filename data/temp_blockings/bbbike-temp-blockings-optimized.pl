@@ -4143,21 +4143,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php',
          'text' => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, voraussichtlich bis Ende September 2018',
          'type' => 'handicap',
-         'until' => 1537977600
+         'until' => 1534197600
        },
-       {
-         'data' => '#: note: laut fritz & vmz längere Sperrung
-#: source_id: 2147342845
-# REMOVED (hier nicht) --- q4::inwork; 25519,4830 25552,4829 25720,4832
-	q4::inwork; 25720,4832 25802,4823 25948,4823 26085,4865 26236,4926 26340,4942 26500,4936 26620,4936
-',
-         'from' => 1530482400,
-         'id' => 2977,
-         'source_id' => 'https://www.berliner-woche.de/friedrichshagen/c-verkehr/der-mueggelseedamm-ist-dicht_a170522',
-         'text' => 'Müggelseedamm: zwischen Scharnweberstr. und Werlseestr. Bauarbeiten, offen Richtung Westen, 3. Juli 2018 bis Anfang August 2018',
-         'type' => 'handicap',
-         'until' => 1533312000
-       },
+       undef,
        {
          'data' => '#: next_check_id: HEGEMEISTERWEG-2018
 	2::inwork 17522,8220 17202,8391
@@ -4203,17 +4191,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1534780800
        },
-       {
-         'data' => '#: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/bvg-erneuert-tramgleise_a172247
-	q4::inwork; 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331
-',
-         'from' => 1531605600,
-         'id' => 2983,
-         'source_id' => '2147342893',
-         'text' => 'Ehrlichstr.: zwischen Blockdammweg und Wildensteiner Str. Gleisbauarbeiten, Richtung Treskowallee gesperrt, bis Anfang August 2018 ',
-         'type' => 'handicap',
-         'until' => 1533398400
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.722387.php (nur Kreuzungsbereich betroffen)
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/finckensteinallee-gesperrt_a171782
@@ -4227,16 +4205,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1543618799
        },
-       {
-         'data' => '	q4::inwork 16000,12625 15947,12626
-',
-         'from' => 1532620085,
-         'id' => 2985,
-         'source_id' => '2147342912',
-         'text' => 'Gotlindestr.: Bauarbeiten zwischen Ruschestr. und Freesienweg, Fahrbahn gesperrt, bis Ende August 2018',
-         'type' => 'handicap',
-         'until' => 1535644800
-       },
+       undef,
        {
          'data' => '	q4::inwork 51862,100638 51910,100091 51920,99933 51940,99551 52207,99132
 ',
@@ -4289,6 +4258,22 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Budapester Str. am Breitscheidplatz: Sperrung der Fahrbahn (Tribünenbau für die Leichtathletik-EM), ab 3. August 2018 18 Uhr bis 14. August 2018 6 Uhr',
          'type' => 'gesperrt',
          'until' => 1534219200
+       },
+       {
+         'data' => '#: next_check_id: FEUERBACH-2018
+#: XXX laut VMZ nur bis September 2018, laut BA Steglitz bis Dezember 2018
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.725875.php
+#: source_id: 2147342919
+	q4::inwork; 6168,6467 6083,6451 5823,6413
+	q4::inwork 6083,6451 6095,6358
+	q4::inwork; 6248,6388 6095,6358
+',
+         'from' => 1534197600,
+         'id' => 2991,
+         'source_id' => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php',
+         'text' => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, weitere Einschränkungen in der Bismarckstr. und Poschingerstr., voraussichtlich bis Ende 2018',
+         'type' => 'handicap',
+         'until' => 1546275600
        }
      
 );

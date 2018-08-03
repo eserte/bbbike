@@ -27396,7 +27396,7 @@ EOF
 EOF
      },
      { from  => 1531519200, # 2018-07-14 00:00
-       until => $isodate2epoch->("2018-09-26 18:00:00"), # 1546297199, # 2018-12-31 23:59
+       until => $isodate2epoch->("2018-08-14 00:00:00"), # $isodate2epoch->("2018-09-26 18:00:00"), # 1546297199, # 2018-12-31 23:59
        text  => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, voraussichtlich bis Ende September 2018',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php',
@@ -27469,7 +27469,7 @@ EOF
 EOF
      },
      { from  => 1531605600, # 2018-07-15 00:00
-       until => $isodate2epoch->("2018-08-04 18:00:00"), # 1533160799, # 2018-08-01 23:59
+       until => 1533317444, # $isodate2epoch->("2018-08-04 18:00:00"), # 1533160799, # 2018-08-01 23:59
        text  => 'Ehrlichstr.: zwischen Blockdammweg und Wildensteiner Str. Gleisbauarbeiten, Richtung Treskowallee gesperrt, bis Anfang August 2018 ',
        type  => 'handicap',
        source_id => '2147342893',
@@ -27491,7 +27491,7 @@ EOF
 EOF
      },
      { from  => 1532620085, # 2018-07-26 17:48
-       until => $isodate2epoch->("2018-08-30 18:00:00"), # 1534370399, # 2018-08-15 23:59
+       until => 1533317340, # bei fritz entfernt --- $isodate2epoch->("2018-08-30 18:00:00"), # 1534370399, # 2018-08-15 23:59
        text  => 'Gotlindestr.: Bauarbeiten zwischen Ruschestr. und Freesienweg, Fahrbahn gesperrt, bis Ende August 2018',
        type  => 'handicap',
        source_id => '2147342912',
@@ -27545,6 +27545,21 @@ EOF
        data  => <<EOF,
 	2::temp 5986,10976 5829,10964 5716,10978 5652,11004
 	2::temp 5829,10964 5782,10884
+EOF
+     },
+     { from  => $isodate2epoch->("2018-08-14 00:00:00"), # 1531519200, # 2018-07-14 00:00
+       until => $isodate2epoch->("2018-12-31 18:00:00"), # 1546297199, # 2018-12-31 23:59
+       text  => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, weitere Einschränkungen in der Bismarckstr. und Poschingerstr., voraussichtlich bis Ende 2018',
+       type  => 'handicap',
+       source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php',
+       data  => <<EOF,
+#: next_check_id: FEUERBACH-2018
+#: XXX laut VMZ nur bis September 2018, laut BA Steglitz bis Dezember 2018
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.725875.php
+#: source_id: 2147342919
+	q4::inwork; 6168,6467 6083,6451 5823,6413
+	q4::inwork 6083,6451 6095,6358
+	q4::inwork; 6248,6388 6095,6358
 EOF
      },
     );
