@@ -1982,7 +1982,7 @@ EOF
        text  => 'B 179; (Cottbuser-/ Fichtestr.); OL Königs Wusterhausen, Bahnübergang Fichtestr. Umbau Bahnübergang Vollsp * 01.08.2005-14.08.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 26313,-13049 26205,-12769 26138,-12596 26028,-12312
+	2 26313,-13049 26205,-12769 26138,-12596 26031,-12300
 EOF
      },
      { from  => 1114725600, # 2005-04-29 00:00
@@ -2647,7 +2647,7 @@ EOF
        text  => 'B 179; (Spreewaldstr.); OD Zeesen, Kno. Karl-Liebknecht-Str. Straßenausbau Vollsperrung 15.08.2005-30.09.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 26583,-15677 26572,-15618 26612,-15094
+	2 26583,-15677 26572,-15618 26608,-15124
 EOF
      },
      { from  => 1122760800, # 2005-07-31 00:00
@@ -2720,7 +2720,7 @@ EOF
        text  => 'K 7237; (L 40 Klein Kienitz-Rangsdorf); zw. Südringcenter Rangsdorf u. Klein Kienitz Straßenbauarbeiten Vollsperrung 22.08.2005-04.09.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-# REMOVED (wrong?) ---	2 26583,-15677 26572,-15618 26612,-15094
+# REMOVED (wrong?) ---	2 26583,-15677 26572,-15618 26608,-15124
 	2 14327,-11767 15962,-10958
 EOF
      },
@@ -2836,7 +2836,7 @@ EOF
        text  => 'B 179; (Karl-Liebknecht-Str.); OD Zeesen, zw. Spreewaldstr. u. Weidendamm Straßenausbau Vollsperrung 19.09.2005-24.10.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 26473,-14543 26567,-14915 26612,-15094
+	2 26471,-14570 26552,-14903 26608,-15124
 EOF
      },
      { from  => 1126994400, # 2005-09-18 00:00
@@ -3273,8 +3273,8 @@ EOF
        text  => 'B 246; (Bauptstr.); Bahnübergang in OL Bestensee Gleisbauarbeiten Vollsperrung 30.10.2005-02.11.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 26639,-17861 26706,-17867
-	2 26832,-17882 26718,-17867 26706,-17867
+	2 26639,-17861 26703,-17858
+	2 27304,-17961 26716,-17857 26703,-17858
 EOF
      },
      { from  => 1130277600, # 2005-10-26 00:00
@@ -3637,7 +3637,7 @@ EOF
        text  => 'B 179 Cottbuser-/ Fichtestr. OL Königs Wusterhausen, Bahnübergang Fichtestr. Umbau Bahnübergang Vollsperrung 02.01.2006-23.01.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 26313,-13049 26205,-12769 26138,-12596 26028,-12312
+	2 26313,-13049 26205,-12769 26138,-12596 26031,-12300
 EOF
      },
      { from  => 1134860400, # 2005-12-18 00:00
@@ -4873,7 +4873,7 @@ EOF
        text  => 'B 246 OL Bestensee, Hauptstraße OL Bestensee, Hauptstraße, Bahnübergang Bauarbeiten am Gleiskörper Vollsperrung 30.06.2006-04.07.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 26639,-17861 26706,-17867 26718,-17867 26832,-17882
+	2::inwork 26639,-17861 26703,-17858 26716,-17857 27304,-17961
 EOF
      },
      { from  => 1150840800, # 2006-06-21 00:00
@@ -6583,7 +6583,7 @@ EOF
        text  => 'B 246 Bahnübergang in der OD Bestensee Umbauarbeiten Vollsperrung 06.11.2006-17.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 26639,-17861 26706,-17867 26718,-17867 26832,-17882
+	2::inwork 26639,-17861 26703,-17858 26716,-17857 27304,-17961
 EOF
      },
      { from  => 1160604000, # 2006-10-12 00:00
@@ -11223,7 +11223,7 @@ EOF
        text  => 'L 222 Gransee - Menz zw. Menz und Kreuz. Zernickow Straßeninstandsetzung Vollsperrung 07.04.2008-09.05.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -13537,75287 -13950,75662 -14862,76637
+	2::inwork -13455,75227 -13950,75662 -14666,76428 -14862,76637
 EOF
      },
      { from  => 1205708400, # 2008-03-17 00:00
@@ -11231,7 +11231,7 @@ EOF
        text  => 'L 222 Gransee - Menz zw. OA Großwoltersdorf und Kreuz. Zernickow Straßeninstandsetzung Vollsperrung 18.03.2008-30.03.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -12250,73762 -12381,74147 -12575,74512 -13537,75287
+	2::inwork -12250,73762 -12381,74147 -12575,74512 -13455,75227
 EOF
      },
      { from  => 1205966138, # 2008-03-19 23:35
@@ -26569,7 +26569,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-07-26
+#: last_checked: 2018-08-05
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF

@@ -1316,7 +1316,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: source_id: 2147340618
 #: source_id: LMS-BR_r_LMS-BR_81616
 #: source_id: 2147342542
-#: last_checked: 2018-07-26
+#: last_checked: 2018-08-04
 #: next_check: 2018-08-31
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 # 
@@ -3240,7 +3240,7 @@ Egellsstr.: eventuell wird dieser Abschnitt für die Öffentlichkeit gesperrt	? 21
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/index.shtml
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/download/Bplan-1-69.pdf
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: II/2019 bis III/2020) (außerdem: Umbau des Schiffbauerdamms)
-#: last_checked: 2018-07-08
+#: last_checked: 2018-08-04
 #: next_check: 2019-09-01
 Verlängerung der Margarete-Steffin-Str.	?::projected 8732,12804 8796,12804 8930,12809 9002,12778 9025,12727
 # 
@@ -3736,7 +3736,7 @@ Güterbahnhof Wilmersdorf: vermutlich wird die Straße während der Bauarbeiten ges
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_19_2335_2466_online.pdf (Grundstücksnummerierungen)
 #: XXX eventuell entstehen hier weitere Straßen/Wege
 #: XXX fehlt in Berlin.coords.data, PLZ=10557, Bezirk=Moabit
-#: last_checked: 2018-07-08
+#: last_checked: 2018-08-04
 #: check_frequency: 90d
 Hilda-Geiringer-Weg: wo genau wird die Straße liegen? Qualität?	?::projected 8243,13469 8245,13396
 # 
@@ -3905,7 +3905,7 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2018-07-09
+#: last_checked: 2018-08-04
 #: check_frequency: 360d
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 
@@ -3981,8 +3981,8 @@ Im Lindenhof: Planstraße B, Qualität, genaue Lage?	?::inwork 17370,12649 17475,1
 #: XXX fehlt in Berlin.coords.data; Benennung soll zum 2017-07-01 wirksam werden; PLZ=10245
 #: XXX laut LOR 7/2019 zwei PLZ: 10245 und 10247 (kann das stimmen?)
 #: XXX zuführende Straßen/Wege müssen auch eingezeichnet werden
-#: last_checked: 2018-07-28
-#: check_frequency: 60d
+#: last_checked: 2018-08-05
+#: check_frequency: 30d
 Siegfried-Hirschmann-Park: neue private Platzfläche, Qualität, genaue Lage?	?::inwork 14730,11529 14800,11441
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/bebauungsplanung/artikel.81905.php
@@ -4355,7 +4355,7 @@ Zühlen - Rheinsberg: Qualität?	? -30689,73501 -30080,73841 -27175,75718
 Zühlen - Binenwalde: Qualität?	? -30689,73501 -30901,73432 -31228,73086 -31537,72225 -31787,71700 -32112,71377
 #: by: http://www.ruppin.de/rheinsberg/freizeit/sport/radw_zechlh.html
 Beerenbusch - Zechlinerhütte: Qualität?	? -22750,81465 -23565,81944 -24975,82587 -26740,82997
-Neuglobsow - Rheinsberg: laut http://www.ruppin.de/rheinsberg/freizeit/sport/radw_neuglobsow.html teilweise Waldweg, teilweise Radweg?	? -14354,81575 -14795,81699 -14946,81614 -15229,81572 -15596,81274 -15943,81207 -16224,80970 -16961,80707 -17409,80203 -17812,79438 -17983,79492 -18209,79559 -18110,79388 -18183,79207 -18148,79032 -18304,78829 -18231,78725 -18313,78563 -18488,78449 -18523,78214 -18615,77979
+Neuglobsow - Rheinsberg: laut http://www.ruppin.de/rheinsberg/freizeit/sport/radw_neuglobsow.html teilweise Waldweg, teilweise Radweg?	? -14354,81575 -14839,81658 -14946,81614 -15229,81572 -15596,81274 -15943,81207 -16224,80970 -16961,80707 -17409,80203 -17812,79438 -17983,79492 -18209,79559 -18110,79388 -18183,79207 -18148,79032 -18304,78829 -18231,78725 -18313,78563 -18488,78449 -18523,78214 -18615,77979
 Hof Sternhagen - Lindenhagen: Qualität (Deckenerneuerung 5/2005)?	? 35466,92211 34375,92125 33537,92937 33412,93612 33342,94000
 Beenz - Kröchlendorff: Qualität (zumindest die Kröchlendorffer Seite ist asphaltiert)?	? 30850,95280 30813,95463 30179,95743 29814,96060 28388,96768
 Lindenhagen - Beenz: Qualität?	? 32388,94460 31922,94902 31069,95292 30850,95280 30510,95193 30216,94987
@@ -4372,11 +4372,11 @@ Schönermark - Rauschendorf: Qualität?	? -10063,66541 -10039,66700 -10137,66797 -
 Sonnenberg - Rauschendorf: Qualität?	? -12156,67931 -11319,68272 -10685,69040 -10648,69174 -10466,69247
 Rauschendorf - Neulögow: Qualität?	? -10466,69247 -10399,69296 -10393,69338 -10368,69424 -9265,70801 -9253,70868 -9058,71794 -9247,72391 -9125,72659
 Neulögow - Seilershof: Qualität?	? -8775,72512 -8174,72513 -8034,72635 -7937,72970 -7851,73171 -7839,73769 -7486,74341 -7455,74445
-Zabelsdorf - Dannenwalde [Berlin - Kopenhagen]: Qualität? Auch asphaltiert?	? -2768,71868 -4125,72768 -5425,73225 -6006,73781
+Zabelsdorf - Dannenwalde [Berlin - Kopenhagen]: Qualität? Auch asphaltiert?	? -2768,71868 -3404,72259 -4125,72768 -4211,72798 -5430,73214 -5966,73747 -5987,73785 -6015,73792
 Dannenwalde - Bredereiche [Berlin - Kopenhagen]: Qualität? Nur für Radfahrer?	? -5525,74800 -5525,75100 -5062,77525 -5212,77625 -4150,79437 -3712,79825 -3112,80075 -2600,80500 -2343,80985
 Himmelpfort - Fürstenberg [Berlin - Kopenhagen]: Qualität (zumindest auf der Fürstenberger Seite Kopfsteinpflaster)? Nur für Radfahrer (zumindest auf der Fürstenberger Seite für Autos offen)?	? -3134,85707 -3900,85950 -4452,86363 -5850,86775 -6426,86836 -6890,87158 -7069,87216 -7440,87207 -8096,87386 -8527,87454
-Fürstenberg - Steinförde: Qualität?	? -10475,85837 -10697,85804 -11029,85712 -11441,85757 -11755,85901 -11980,86102 -12189,86217 -12573,86500
-Neuglobsow - Großmenow [Berlin - Kopenhagen]: Qualität? Nur für Radfahrer?	? -14354,81575 -14387,81975 -14287,83137 -14362,83350 -15025,84150 -15000,84662 -15037,84887 -15062,85237 -14837,85562 -14762,87137
+Neuglobsow - Großmenow [Berlin - Kopenhagen]: Qualität? Nur für Radfahrer?	? -14354,81575 -14387,81975 -14355,82392 -14325,82798 -14316,82886 -14285,83077 -14303,83178 -14349,83219 -14350,83316 -14433,83415 -14542,83533 -14664,83609 -14711,83681
+Neuglobsow - Großmenow [Berlin - Kopenhagen]: Qualität? Nur für Radfahrer?	? -14711,83681 -15048,84141 -15000,84662 -15037,84887 -15062,85237 -14837,85562 -14762,87137
 Großmenow - Strasen [Berlin - Kopenhagen]: Qualität?	? -14762,87137 -15087,87275 -15572,87263 -15637,87287 -16250,86900 -16537,86912 -16687,87187 -16975,87387 -17212,87675 -17750,88037 -18287,88225 -18587,88437 -19075,88375
 Strasen - Wesenberg [Berlin - Kopenhagen]: Qualität? Nur für Radfahrer?	? -20312,89975 -21112,89187 -21650,89287 -21650,89125 -21962,89212 -22025,89325 -22475,89287 -22825,89075 -23012,89337 -22995,89694 -22987,90087 -22850,90312 -22825,90625 -22387,90637 -22387,90800 -22587,90875 -23175,90787 -23200,90925 -22812,91737 -22637,92025 -22625,92350 -22675,92437 -22637,92650 -22425,92650 -22050,93775 -22237,94075 -22037,94512 -21362,95487
 Entlang des Wandlitzsees: Qualität?	? 14498,38870 14400,39325 13687,39975 13100,39987 12437,39475 12075,39475 11825,39650 11675,40000
@@ -4447,7 +4447,7 @@ Wustow - B96: nur mäßiger Asphalt westlich des Bahnübergangs?	? -11974,93207 -11
 Häsen - Gutengermendorf: Qualität? Westlich/nördlich der Bahnstrecke anscheinend asphaltiert	? -3471,59514 -3683,59088 -3978,58956 -4323,58169 -4490,58124 -5280,58092 -5659,58239 -5792,58185 -5905,58188 -5948,58458 -6170,59042
 Gutengermendorf - Häsen: Qualität? am Bahnübergang anscheinend Feldweg (Q2)	? -6390,59554 -6070,59687 -5227,60124 -5044,59890 -4597,59799 -4313,59921 -3764,59657 -3537,59727
 (bei Altlüdersdorf): Qualität? westlich des Bahnübergangs anscheinend mäßiger Asphalt (Q1)	? -7200,71146 -6211,71583 -5320,71996
-Seilershof - B96: Qualität? am Bahnübergang anscheinend asphaltiert	? -7455,74445 -6794,74226 -6517,74079 -6100,73876 -6037,73865
+Seilershof - B96: Qualität? am Bahnübergang anscheinend asphaltiert	? -7455,74445 -6900,74196 -6414,74013 -6364,73983 -6076,73802 -6015,73792
 Beelitz - Schönefeld: laut "Berliner Umland" wurde die Straße etwas nach Süden verlegt	? -18265,-20481 -18031,-20502 -17867,-20681
 #: XXX: laut "Berliner Umland" bis auf ein kurzes Stück in Weesow gut geeignet , laut "Aktiv Regional" besonders gut geeignet; bei osm gibt es diesen Weg nicht
 Börnicke - Wessow: Qualität?	? 26022,28779 26419,28677 26930,28875 31165,27230 31738,27620
@@ -4727,9 +4727,6 @@ Neugrimnitz - Ziethen: Qualität?	? 38272,63836 38577,63641 38759,63647 39131,635
 Neugrimnitz - B198: Qualität?	? 39637,63244 39576,63074 39521,62861 39503,62647 39375,62148 39180,61605 39156,61459 39003,61246
 #: XXX: Laut osm unterschiedliche Qualität: unpaved, cobblestone, paved
 B2 - Chorin: Qualität?	? 41820,54563 41806,54725 41636,54890 41538,55140 41301,55146 41093,55310 41173,55516
-Prieroser Str.: Qualität?	? 28540,-19744 28842,-19704 29515,-19702
-Neubrücker Str.: Qualität?	? 28231,-19792 28336,-19948
-Neubrücker Str.: Qualität?	? 28363,-19964 28514,-20071
 Brüssow - Caselow: Qualität (wahrscheinlich schlechtes Kopfsteinpflaster, vom südlichen Ende aus gesehen)?	? 55605,112935 55723,114036 56123,116226 55986,116675 56317,117060 56355,117304 56496,117228 57586,117220
 Bahnhofstr.: Qualität in diesem Abschnitt (ostl. d. Bergstr.)?	? -2657,-2907 -2720,-2937 -2817,-2967 -2878,-3004
 #: XXX vemutet von anatol ("ziemlich sicher"):
@@ -4754,8 +4751,6 @@ Barkhausenstr.: Qualität?	? -10853,16230 -10970,16232 -11136,16247 -11296,16308 
 K 6315; (B188-Nennhausen); zw. Nennhausen u. Kotzen: Qualität (bis Ende 2005 bei der LBVS als "schlechte Straße" gekennzeichnet; evtl. ab Juni 2009 gut befahrbar)	? -50149,24689 -50048,24475 -49945,24243 -50123,23630 -50271,23531 -50389,22734 -51061,21342
 Radweg Lychen - Himmelpfort: Qualität (Am Anfang bei Lychen noch asphaltiert)?	? 234,89271 213,89085 188,88982 80,88883 -15,88653 -133,88520 -334,88568 -902,88315 -1764,87733 -2399,87248 -2422,86944 -2709,86901 -3001,86675 -3291,86302
 L15 - Neuthymen: Qualität (zumindest am südlichen Ende asphaltiert)?	? -4847,88034 -5332,88826 -5429,89137 -5457,89570 -5493,89713
-Steinförder Str. - Menz: Qualität? Teil des Radwegs Berlin - Kopenhagen?	? -10475,85837 -10453,85639 -10301,85444 -10356,85146 -9850,84800
-Steinförde - Großmenow: Qualität?	? -12573,86500 -12599,86520 -13025,86596 -13293,86590 -13519,86715 -13924,86895 -14177,87056 -14445,87123 -14762,87137
 Gartenstr. (Elstal): Qualität?	? -18164,14194 -18123,14276 -18017,14480 -17979,14574 -17937,14727 -17871,14855 -17821,14925 -17763,15004
 Spechthausener Str. (Eberswalde): Qualität?	? 34335,48744 34378,48552 34354,48308 34372,48205 34451,47693 34518,47449 34475,47425
 Zoostr. (Eberswalde): Qualität?	? 34475,47425 34603,47145 34622,46834 34939,46907 35014,47009 35182,47081

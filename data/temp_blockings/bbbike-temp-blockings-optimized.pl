@@ -2578,34 +2578,7 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       {
-         'accept_multi_feature_distance' => 1300,
-         'data' => '#: by: http://www.bierfestival-berlin.de/?y=2017
-#: tempex 20170804-20170806 vvv
-	2::temp 12352,12509 12355,12541 12359,12592
-	2::temp 12891,12549 12878,12430
-	2::temp 12632,12630 12592,12472
-	2::temp 13448,12340 13476,12461
-	2::temp 13552,12435 13543,12326
-#zukünftig, wenn dieser Weg eingetragen ist:	2::temp 13163,12382 13176,12500
-#: tempex ^^^
-',
-         'from' => 1533196800,
-         'id' => 2262,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              31,
-                              'months',
-                              7
-                            ]
-                          ],
-         'text' => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung (Internationales Berliner Bierfestival), Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (3.8.2018 bis 5.8.2018)',
-         'type' => 'gesperrt',
-         'until' => 1533427200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3759,7 +3732,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-07-26
+#: last_checked: 2018-08-05
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 ',

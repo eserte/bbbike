@@ -1418,6 +1418,7 @@ Paul-Merker-Str.	1 25464,-3027 25567,-3189
 Wilhelm-Busch-Str.	1 25206,-4014 25119,-4096
 Miersdorf	1 24955,-6980 25077,-6942 25186,-6969
 Miersdorf	1 25186,-6969 25092,-6993 24955,-6980
+ehemalige B179	1 26445,-14110 26465,-14385
 ######################################################################
 # elsewhere not in Brandenburg
 B104: Mittelstreifen nicht überquerbar	3nocross -974,128015 -724,127995 6,127935 298,127911
@@ -1494,7 +1495,8 @@ Gramzow (Dorfstr.?)	1s:q1 49779,90206 49810,90444
 Alt-Tegel	1s:q3 1668,20156 1753,20191 1907,20265
 Alt-Tegel	1s:q3 1668,20156 1529,20131 1543,20060 1630,20097 1668,20156
 May-Ayim-Ufer	1s:q1 13206,10651 13077,10747
-Jahnstr. (KW)	1s 26243,-12300 26028,-12312
+Jahnstr. (KW)	1s:q3 26243,-12300 26116,-12276 26031,-12300
+Maxim-Gorki-Str.	1s:q3 26296,-12053 26288,-12089 26274,-12153 26243,-12300
 Seestr. (Potsdam)	1s -11581,559 -11584,452
 Tizianstr. (Potsdam)	1s -11424,542 -11480,621 -11581,559
 Spitzmühlenweg	1s 41728,17918 41668,17984 41556,18146
@@ -2919,7 +2921,7 @@ Volkspark Anton Saefkow: Bauarbeiten, Wege sind gesperrt	2::inwork 12620,14979 1
 #: next_check_id: KAUFHOF-2018
 #: XXX bis wann gehen die Bauarbeiten?
 #: XXX ggfs. handicap_s-orig-Eintrag wieder aktivieren
-#: last_checked: 2018-07-30
+#: last_checked: 2018-08-04
 #: check_frequency: 90d
 Hermann-Stöhr-Platz: Gehweg vor dem ehemaligen Kaufhaus gesperrt	2::inwork 12522,11837 12409,11902
 # 
@@ -3218,7 +3220,7 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
 #: source_id: 2147341188
-#: last_checked: 2018-07-26 vvv
+#: last_checked: 2018-08-04 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: way id="594591925" version="1"
 #: osm_watch: way id="594591926" version="1"
