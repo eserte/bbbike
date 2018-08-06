@@ -300,7 +300,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 	RW2;RW2 4512,5199 4432,5160 4343,5112
 #: XXX Radwege sollen saniert werden oder es entstehen sogar Radstreifen (Umsetzung 2018) vvv
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
-#: last_checked: 2018-08-03 vvv
+#: last_checked: 2018-08-06 vvv
 #: next_check: 2018-12-31 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
@@ -437,10 +437,11 @@ Verbundsteinpflaster	RW2; -3625,13889 -3471,13807 -3398,13753 -3189,13588 -3002,
 	RW2; -3352,14676 -3301,14669 -3255,14685 -3247,14713 -3251,14741 -3295,14777 -3355,14764 -3368,14723 -3352,14676
 	RW;RW2 -3255,14685 -3209,14662 -3150,14631
 	RW1;RW1 -3150,14631 -3014,14559 -2946,14533 -2831,14512 -2794,14511 -2647,14532 -2597,14532 -2460,14493 -2343,14446 -2233,14384 -2074,14366 -1947,14394 -1564,14489 -1484,14513
-	RW2; -1484,14513 -1392,14527 -1357,14533 -914,14602 -457,14536
+Verbundsteinpflaster	RW2; -1484,14513 -1392,14527 -1357,14533
+neu asphaltiert	RW2; -1357,14533 -914,14602 -457,14536
 	RW2; -278,14532 -925,14631 -1119,14659 -1369,14644
 	RW1; -1369,14644 -1484,14513
-	RW; -457,14536 -278,14532
+Verbundsteinpflaster	RW1; -457,14536 -278,14532
 	RW1;RW2 -278,14532 -46,14505
 	RW1;RW1 -46,14505 609,14429 889,14392
 	RW1;RW2 889,14392 937,14391
@@ -1190,10 +1191,9 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
-#: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (vermutlich nicht)
-#: last_checked: 2018-07-29
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2018-07-31
+# REMOVED (keine Einschränkungen für niemand) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (vermutlich nicht)
+#: last_checked: 2018-08-06
+#: check_frequency: 90d
 	RW8;RW2 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
 	RW4;RW3 15053,7966 15221,7778
@@ -1812,7 +1812,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: XXX vermutlich werden hier Radspuren entstehen
 #: by: http://www.berliner-woche.de/prenzlauer-berg/verkehr/storkower-strasse-senat-stellt-dem-bezirk-mittel-fuer-den-bau-eines-radstreifens-in-aussicht-d142987.html
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4624
-#: last_checked: 2018-07-06
+#: last_checked: 2018-07-29 (mapillary)
 #: next_check: 2018-09-01
 	RW1;RW1 13438,14675 13731,14200 13879,13967
 Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
@@ -2020,11 +2020,12 @@ asphaltiert	RW1; 30210,4046 30037,4176 29959,4235 29931,4249
 Gehweg für Radfahrer frei	RW1; 31447,3372 31632,3297
 	RW2; 31632,3297 31447,3372
 	RW2; 31632,3297 31863,3257 31973,3237
-# REMOVED (wird neu gemacht) --- asphaltierter gemeinsamer Rad- und Gehweg, einige Wurzelschäden	RW2; 31973,3237 32121,3215 32829,3105 33111,3064 33525,2901
 #: XXX nach den Bauarbeiten kein Zweirichtungsradweg mehr
-#: last_checked: 2018-06-16
-#: next_check: 2018-09-01
-asphaltiert	RW2;RW8 33525,2901 33111,3064 32829,3105 32121,3215 31973,3237
+#: last_checked: 2018-08-04 (mapillary)
+asphaltiert	RW2;RW8 33525,2901 33111,3064
+asphaltiert	RW2;RW2 33111,3064 32829,3105 32121,3215 32041,3227
+asphaltiert	RW2; 32041,3227 31973,3237
+	RW3; 31973,3237 32041,3227
 alter Beton	RW1; 31973,3237 31863,3257 31632,3297
 betonierter gemeinsamer Rad- und Gehweg	RW2; 29192,7368 29168,7350 28586,7139 26247,6228 26139,6188 25967,6125 25776,6054 25584,6029
 	RW3; 25627,6347 25601,6158 25584,6029
@@ -2816,9 +2817,8 @@ Tempo 10	RW6;RW6 12316,9477 12150,9545
 	RW2;RW 25095,14171 25256,14110
 	RW;RW 25256,14110 25414,14036 25451,14018
 	RW;RW2 23993,14797 23960,15021
-	RW2;RW2 23960,15021 23952,15086 23933,15209 23913,15333 23895,15450
-	RW2;RW 23895,15450 23868,15633
-	RW;RW 23868,15633 23859,15763 23895,15904
+	RW2;RW2 23960,15021 23952,15086 23933,15209 23913,15333 23895,15450 23868,15633
+	RW;RW2 23868,15633 23859,15763 23895,15904
 neu asphaltiert	RW2; 22771,16194 22698,15788
 	RW2; 22698,15788 22771,16194
 	RW2;RW2 22698,15788 22811,15753 22883,15740 23080,15700 23218,15671 23411,15632 23568,15603 23617,15594
@@ -4152,11 +4152,11 @@ einige Meter Radspur an der Salvador-Allende-Str.	RW0;RW0 23363,4846 23451,4877
 #: confirmed_by: srt
 	RW6;RW6 6014,6160 6019,6087 6008,6067
 #: by: ^^^
-	RW2;RW 24968,15307 24794,15270
-	RW;RW 24794,15270 24651,15239 24451,15181 24281,15138 24226,15121
-	RW;RW 24226,15121 24232,15060
+	RW2;RW1 24968,15307 24794,15270
+	RW;RW1 24794,15270 24651,15239 24451,15181 24281,15138 24226,15121
+	RW;RW1 24226,15121 24232,15060
 #: by: Alexandra (kaffeeschluerfer): vvv
-	RW;RW 24232,15060 24215,15057
+	RW;RW1 24232,15060 24215,15057
 #: confirmed_by: srt (+ Benutzungspflicht)
 	RW2;RW2 24215,15057 24139,15046 24063,15035 23960,15021
 #: by: ^^^

@@ -39,7 +39,7 @@ Hobrechtsfelder Chaussee (bis Kurve): asphaltiert	Q0 15589,27116 15230,26548 144
 Hobrechtsfelder Chaussee (ab Kurve): Kopfsteinpflaster	Q2 15589,27116 15711,27928 15777,28037
 Wisbyer Str.: Asphalt	Q0 11019,16465 11289,16423 11397,16405 11448,16398 11470,16394 11542,16384 11632,16373 11673,16367 11727,16358 11750,16354 11808,16343 11829,16339 11889,16328 11936,16302 12012,16250 12090,16199
 Weserstr.: asphaltiert	Q0 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193 12322,9124
-Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege	Q1 12322,9124 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
+Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität	Q2 12322,9124 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
 Jessnerstr.: Asphalt mit Aufpflasterungen	Q0 15080,11905 14981,11751 14946,11697 14849,11539
 Stuttgarter Str.: mäßiger Asphalt	Q1 13663,8011 13510,8138 13331,8283
 Stuttgarter Str.: Kopfsteinpflaster	Q2 13331,8283 13166,8423
@@ -93,9 +93,8 @@ Am Landwehrkanal: Asphalt	Q0 12897,9365 12889,9426 12905,9470
 Am Landwehrkanal: Parkweg, Schotterstellen, bei Regen große Pfützen	Q1 12905,9470 13109,9743
 Am Landwehrkanal: Asphalt, einige Wurzelhebungen	Q0 13109,9743 13225,9897
 Am Landwehrkanal: Parkweg	Q1 13225,9897 13271,9927 13333,9929
-Innstr.: Asphaltstreifen auf der linken Seite	Q1; 13102,8343 13166,8423 13217,8493
-Innstr.: Asphaltstreifen auf der rechten Seite	Q0; 13217,8493 13166,8423 13102,8343
-Innstr.: Kopfsteinpflaster, provisorischer Asphaltstreifen in mäßiger Qualität	Q2 13217,8493 13262,8554 13301,8606
+Innstr.: Asphaltstreifen auf der linken Seite	Q1; 13102,8343 13166,8423 13217,8493 13262,8554 13301,8606
+Innstr.: Asphaltstreifen auf der rechten Seite	Q0; 13301,8606 13262,8554 13217,8493 13166,8423 13102,8343
 Innstr.: Kopfsteinpflaster (mäßig bis schlecht)	Q2 13301,8606 13314,8624 13368,8689
 Elsenstr.: Asphalt	Q0 13405,8737 13458,8805 13510,8872 13664,9073 13766,9200
 Herrfurthstr.: Asphalt	Q0 11979,8014 11833,7980 11754,7964
@@ -2298,7 +2297,7 @@ Am Schweizer Garten: Asphalt	Q0 11868,13646 12001,13863
 (Volkspark Friedrichshain): Parkweg	Q1 12141,13609 12129,13531 12111,13480 12060,13422
 Kadiner Str.: Asphalt	Q0 13515,11969 13592,12254
 Südtorweg: wassergebundene Decke	Q1 -503,11782 -750,11740
-Südtorweg: asphaltiert	Q0 -750,11740 -794,11732 -940,11708
+Carl-Schuhmann-Weg: asphaltiert	Q0 -750,11740 -794,11732 -940,11708
 Erkstr.: Asphalt	Q0 12598,8390 12771,8439 12902,8470 12920,8487
 Donaustr: Beton	Q0 12649,8535 12771,8439
 Straße 645: Asphalt	Q0 11424,8284 11434,8194 11419,8077 11450,7921 11472,7899

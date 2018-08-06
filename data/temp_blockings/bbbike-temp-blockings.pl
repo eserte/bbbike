@@ -27562,4 +27562,20 @@ EOF
 	q4::inwork; 6248,6388 6095,6358
 EOF
      },
+     { from => 1533579833,
+       until => $isodate2epoch->("2018-08-19 18:00:00"),
+       text => 'Grünberger Str.: Sperrung der Fahrbahn zwischen Kadiner Str. und Warschauer Str., Richtung Osten, voraussichtlich bis zum 19. August 2018',
+       type => 'handicap',
+       data => <<EOF,
+	q4::inwork; 13515,11969 13696,11920
+EOF
+     },
+     { from  => 1533580222, # 2018-08-06 20:30
+       until => 1534543200, # 2018-08-18 00:00
+       text  => 'Chemnitzer Str.: zwischen Norastr, und Eschelberger Weg Bauarbeiten, Fahrbahn gesperrt, bis voraussichtlich 17.08.2018',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::inwork; 22147,9841 22129,9702 22116,9585
+EOF
+     },
     );

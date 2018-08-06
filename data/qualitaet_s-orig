@@ -20,7 +20,8 @@ Dieselstr., Umfahrung: unbefestigt	Q2 14429,8074 14484,8044
 #: source_id: IM_023718
 #: source_id: 2147339540
 #: next_check_id: SONNENALLEE-2014
-#: last_checked: 2018-07-02
+#: last_checked: 2018-08-06
+#: check_frequency: 14d
 Sonnenallee: teilweise unfertige Radwege	Q1 14174,7505 14334,7395 14369,7376 14530,7301
 # 
 #: temporary ^^^
@@ -73,7 +74,7 @@ Hobrechtsfelder Chaussee (ab Kurve): Kopfsteinpflaster	Q2 15589,27116 15711,2792
 Wisbyer Str.: Asphalt	Q0 11019,16465 11289,16423 11397,16405 11448,16398 11470,16394 11542,16384 11632,16373 11673,16367 11727,16358 11750,16354 11808,16343 11829,16339 11889,16328 11936,16302 12012,16250 12090,16199
 #: note: die früheren schmalen Verbundsteinpflaster-Radwege werden nicht mehr genutzt (Fahrradstraße!)
 Weserstr.: asphaltiert	Q0 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193 12322,9124
-Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege	Q1- 12322,9124 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
+Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität	Q2+ 12322,9124 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
 Jessnerstr.: Asphalt mit Aufpflasterungen	Q0- 15080,11905 14981,11751 14946,11697 14849,11539
 Stuttgarter Str.: mäßiger Asphalt	Q1 13663,8011 13510,8138 13331,8283
 Stuttgarter Str.: Kopfsteinpflaster	Q2 13331,8283 13166,8423
@@ -87,7 +88,7 @@ Sinsheimer Weg: Betonstraße	Q0 13774,8849 13837,8932
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Beginn der Bauarbeiten Ende August 2018, Ende 2019)
 #: by: https://www.aktion-kms.de/projekte/umbau-donaustrasse/
 #: by: https://www.aktion-kms.de/assets/2017/01/Donaustra%C3%9Fe_LP_Lph3-LP_01.pdf
-#: last_checked: 2018-07-05 vvv
+#: last_checked: 2018-08-06 vvv
 #: next_check: 2018-08-31 vvv
 Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729 12549,8616 12649,8535
 #: XXX hier wird vermutlich auch die Einbahnstraßenregelung für Radfahrer aufgehoben
@@ -154,13 +155,9 @@ Am Landwehrkanal: Asphalt	Q0 12897,9365 12889,9426 12905,9470
 Am Landwehrkanal: Parkweg, Schotterstellen, bei Regen große Pfützen	Q1- 12905,9470 13109,9743
 Am Landwehrkanal: Asphalt, einige Wurzelhebungen	Q0- 13109,9743 13225,9897
 Am Landwehrkanal: Parkweg	Q1 13225,9897 13271,9927 13333,9929
-#: XXX wird die Parkordnung so geändert, dass man problemlos auf Asphalt fahren kann?
-#: osm_watch: way id="182693863" version="4"
-#: last_checked: 2018-07-02
-Innstr.: Asphaltstreifen auf der linken Seite	Q1; 13102,8343 13166,8423 13217,8493
-Innstr.: Asphaltstreifen auf der rechten Seite	Q0; 13217,8493 13166,8423 13102,8343
-#: XXX hier jetzt auch asphaltiert?
-Innstr.: Kopfsteinpflaster, provisorischer Asphaltstreifen in mäßiger Qualität	Q2+ 13217,8493 13262,8554 13301,8606
+#: note: zwischen gepflastertem Parkstreifen (Diagonalparken) und Asphaltstreifen ist eine deutliche Lücke, so dass man bei Gegenverkehr auf die Pflasterung fahren muss
+Innstr.: Asphaltstreifen auf der linken Seite	Q1; 13102,8343 13166,8423 13217,8493 13262,8554 13301,8606
+Innstr.: Asphaltstreifen auf der rechten Seite	Q0; 13301,8606 13262,8554 13217,8493 13166,8423 13102,8343
 Innstr.: Kopfsteinpflaster (mäßig bis schlecht)	Q2- 13301,8606 13314,8624 13368,8689
 Elsenstr.: Asphalt	Q0 13405,8737 13458,8805 13510,8872 13664,9073 13766,9200
 #: note: gepflasterter Parkstreifen
@@ -1756,7 +1753,7 @@ Landsberger Allee: Asphaltradweg nur mit mäßiger Qualität	Q1 18365,14607 18410,1
 #: XXX werden auch die restlichen Radwege demnächst instandgesetzt oder zu Radspuren umgewandelt? vvv
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20120913.1335.375172.html vvv
 #: source_id: 2147342864
-#: last_checked: 2018-05-21 vvv
+#: last_checked: 2018-07-29 (mapillary) vvv
 #: check_frequency: 180d vvv
 #: XXX Asphalt oder Beton?
 Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1; 20260,15434 20532,15564 20580,15586 20733,15657
@@ -2887,7 +2884,7 @@ Am Schweizer Garten: Asphalt	Q0 11868,13646 12001,13863
 Kadiner Str.: Asphalt	Q0 13515,11969 13592,12254
 Südtorweg: wassergebundene Decke	Q1 -503,11782 -750,11740
 #: note: Luftbild
-Südtorweg: asphaltiert	Q0 -750,11740 -794,11732 -940,11708
+Carl-Schuhmann-Weg: asphaltiert	Q0 -750,11740 -794,11732 -940,11708
 Erkstr.: Asphalt	Q0 12598,8390 12771,8439 12902,8470 12920,8487
 Donaustr: Beton	Q0 12649,8535 12771,8439
 Straße 645: Asphalt	Q0 11424,8284 11434,8194 11419,8077 11450,7921 11472,7899

@@ -34,7 +34,7 @@ Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261
 # REMOVED (-> qualitaet_s-orig; für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342929 --- #: priority: #B --- #: next_check: 2018-08-31 --- #: valid: -20180831 --- Helmerdingstr.: Bauarbeiten, Richtung Revaler Str. gesperrt	q4::inwork; 14468,11203 14442,11101
 # REMOVED (-> für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342938 --- #: priority: #B --- #: next_check: 2018-08-10 --- #: valid: -20180810 --- Scharnweberstr.: Bauarbeiten zwischen Colbestr. und Kinzigstr., Fahrbahn Richtung Gürtelstr. gesperrt	q4::inwork; 14468,11992 14589,11975
 # 
-#: last_checked: 2018-08-03
+#: last_checked: 2018-08-06
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 # REMOVED (beendet) --- #: XXX_prog BS (östliche Seite) --- #: last_checked: 2018-06-12 vvv --- #: check_frequency: 7d vvv --- Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstein	q2::inwork 11845,12292 11635,12398 --- Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstein	q4::inwork 11635,12398 11607,12412 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -42,7 +42,7 @@ Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11
 #: next_check_id: KAUFHOF-2018
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/umbau-zu-buerostandort_a173030
 #: XXX_prog BS (auf der östlichen Seite, ansonsten q3+)
-#: last_checked: 2018-07-30
+#: last_checked: 2018-08-06
 #: check_frequency: 90d
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
 # 
@@ -208,11 +208,11 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 # 
 # REMOVED --- #: last_checked: 2017-03-14 vvv --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9990,11571 9925,11565 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q2-::inwork 9925,11565 9737,11546 --- #: last_checked ^^^
 # 
-#: next_check_id: ALEXANDRINENSTR-2018
+# REMOVED --- #: next_check_id: ALEXANDRINENSTR-2018
 # REMOVED --- : osm_watch: note 814191 1
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_26_3435_3558_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
-#: last_checked: 2018-07-02
+#: last_checked: 2018-08-06
 #: check_frequency: 30d
 Alexandrinenstr.: direkter Zugang zur Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q3::inwork 10781,11243 10678,11172
 # 
@@ -472,11 +472,12 @@ Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5894,12480 5944,12
 ### Neukölln ###
 # 
 #: XXX nach den Bauarbeiten vermutlich asphaltiert
-#: last_checked: 2018-07-31
+#: last_checked: 2018-08-06
+#: check_frequency: 7d
 # REMOVED (hier nicht mehr, vermutlich) --- Innstraße: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 13217,8493 13262,8554 13301,8606
 Innstraße: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 13301,8606 13314,8624 13368,8689
 # 
-#: last_checked: 2018-07-05
+#: last_checked: 2018-08-06
 #: check_frequency: 14d
 Donaustr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Erkstr.	q4::inwork; 12771,8439 12649,8535
 # 
@@ -3307,7 +3308,7 @@ Cuxhavener Str.: Wohngebiet, Fußgänger	q2 5894,12480 5919,12423
 Gutsmuthsweg: Fußgänger (nur bei Veranstaltungen ein Problem)	q1 -505,11882 -503,11782
 #: XXX_prog BS am südlichen Ende (ansonsten q1)
 Gutsmuthsweg: Fußgänger (nur bei Veranstaltungen ein Problem), Bordstein	q2 -503,11782 -496,11720
-Südtorweg: Fußgänger (nur bei Veranstaltungen ein Problem)	q1 -503,11782 -750,11740
+Carl-Schuhmann-Weg: Fußgänger (nur bei Veranstaltungen ein Problem)	q1 -503,11782 -750,11740
 Rossitter Weg: Fußgänger (nur bei Veranstaltungen ein Problem)	q0 -107,12220 -122,12197 -212,12126 -272,12039
 (Fußgängertunnel S-Bhf Jungfernheide): Fußgänger	q3 3320,13796 3365,13695
 (Olbestr. - Lamberstr.): Fußgänger	q2 3280,13625 3304,13685 3365,13695

@@ -4247,6 +4247,24 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, weitere Einschränkungen in der Bismarckstr. und Poschingerstr., voraussichtlich bis Ende 2018',
          'type' => 'handicap',
          'until' => 1546275600
+       },
+       {
+         'data' => '	q4::inwork; 13515,11969 13696,11920
+',
+         'from' => 1533579833,
+         'id' => 2992,
+         'text' => 'Grünberger Str.: Sperrung der Fahrbahn zwischen Kadiner Str. und Warschauer Str., Richtung Osten, voraussichtlich bis zum 19. August 2018',
+         'type' => 'handicap',
+         'until' => 1534694400
+       },
+       {
+         'data' => '	q4::inwork; 22147,9841 22129,9702 22116,9585
+',
+         'from' => 1533580222,
+         'id' => 2993,
+         'text' => 'Chemnitzer Str.: zwischen Norastr, und Eschelberger Weg Bauarbeiten, Fahrbahn gesperrt, bis voraussichtlich 17.08.2018',
+         'type' => 'handicap',
+         'until' => 1534543200
        }
      
 );
