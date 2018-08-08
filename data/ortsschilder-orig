@@ -517,6 +517,9 @@ Eichwalde	OS 25626,-2633
 Eichwalde	OS 25896,-2475
 Eichwalde	OS 26201,-2845
 Eichwalde	OS 26554,-3814
+Eichwalde	OS 25186,-4238
+Eichwalde	OS 24809,-4058
+Zeuthen	OS 25186,-4238
 Zeuthen	OS 26554,-3814
 Wildau	OS 26786,-7968
 Zeuthen	OS 26786,-7968
@@ -544,16 +547,21 @@ Königs Wusterhausen	OS 26205,-12769
 Königs Wusterhausen	OS 25148,-13393
 Königs Wusterhausen	OS 25501,-11401
 Königs Wusterhausen	OS 26442,-10452
+Königs Wusterhausen	OS 26460,-13096
 Wildau	OS 26442,-10452
 Zeesen	OS 26205,-12769
 Zeesen	OS 26889,-12953
 Zeesen	OS 26572,-15618
+Zeesen	OS 26735,-15663
+Zeesen	OS 26460,-13096
 Körbiskrug	OS 28036,-16508
 Körbiskrug	OS 26863,-16171
 Senzig	OS 28174,-14838
 Senzig	OS 27770,-12838
 Bestensee	OS 26431,-16931
 Bestensee	OS 25597,-17887
+Bestensee	OS 28101,-18011
+Bestensee	OS 26729,-16199
 Pätz	OS 28779,-18156
 Krummensee|b. Bestensee	OS 24515,-16318
 Krummensee|b. Bestensee	OS 24425,-14811
@@ -573,7 +581,16 @@ Waltersdorf	OS 21178,-5058
 Waltersdorf	OS 21535,-4790
 Waltersdorf	OS 21696,-2925
 Waltersdorf	OS 20951,-4235
-Schulzendorf|b. Eichwalde	OS 21764,-4869
+Siedlung Waltersdorf	OS 23626,-2563
+Siedlung Waltersdorf	OS 23053,-2729
+Siedlung Waltersdorf	OS 23246,-2008
+#
+#: linked: Schulzendorf|b. Eichwalde vvv
+Schulzendorf	OS 21764,-4869
+Schulzendorf	OS 24809,-4058
+Schulzendorf	OS 23831,-2603
+#: linked ^^^
+# 
 # REMOVED (existiert nicht mehr) --- Kienberg|(bei Waltersdorf)	OS 20236,-3167
 # REMOVED (existiert nicht mehr) --- Kienberg|(bei Waltersdorf)	OS 20103,-2868
 # REMOVED (tatsächlich? Müsste aber, da ja etwas weiter wieder ein Schild steht) --- Siedlung Hubertus	OS 21088,-2461

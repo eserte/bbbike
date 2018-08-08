@@ -2528,7 +2528,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: osm_watch: node id="987195315" version="7"
-#: last_checked: 2018-05-21
+#: last_checked: 2018-08-08
 #: check_frequency: 180d
 	F::inwork 20002,3349
 	F 4000,12183
@@ -3101,6 +3101,10 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	B 25627,-5177
+	X 26466,-10409
+#: note: Anforderungsampel
+	F 26099,-6131
 	F 26787,10455
 	X -1494,-303
 	X -4162,-596
@@ -3468,6 +3472,7 @@ S-Bahn ca. alle 10 Minuten	B 10896,-4469
 	B 60676,170842
 	B 44287,133631
 	B 26494,-13883
+	B 26600,-14550
 	B 46004,-16440
 	B 56301,83419
 	B 59937,36197
@@ -3497,7 +3502,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
 	B 73017,97449
 #: note: Luftbild
 	B -18726,-19242
-	B 27705,-26035
+	B 27688,-26047
 	B 27995,-27157
 #: note: Luftbild
 	B 31645,-32840

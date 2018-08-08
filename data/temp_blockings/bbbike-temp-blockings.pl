@@ -1541,7 +1541,7 @@ EOF
        text  => 'K 6161; (Ernst-Thälmann-Str.); OD Schulzendorf, Kanal- und Straßenbau Vollsperrung 30.06.2005-30.11.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 25173,-3957 25150,-3949 25052,-3980 24933,-4017 24797,-4060 24612,-4119 24200,-4252 23387,-4518
+	q4 25173,-3957 25150,-3949 25052,-3980 24933,-4017 24809,-4058 24798,-4061 24714,-4087 24613,-4121 24200,-4252 23387,-4518
 EOF
      },
      { from  => 1107475200, # 2005-02-04 01:00
@@ -3274,7 +3274,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2 26639,-17861 26703,-17858
-	2 27304,-17961 26716,-17857 26703,-17858
+	2 27304,-17961 26989,-17904 26716,-17857 26703,-17858
 EOF
      },
      { from  => 1130277600, # 2005-10-26 00:00
@@ -3814,7 +3814,7 @@ EOF
        text  => 'L 401 Richard-Sorge-Str./ Bergstr. OL Wildau, Bahnübergang Bergstr. Gleisbauarbeiten Einmünd. gesp. 05.03.2006-10.03.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 26432,-10043 26285,-10054 26262,-10015 26262,-9880 26174,-9760 26093,-9701 25991,-9671 25805,-9553
+	2 26434,-10054 26285,-10054 26262,-10015 26262,-9880 26174,-9760 26093,-9701 25991,-9671 25805,-9553
 EOF
      },
      { from  => 1141254000, # 2006-03-02 00:00
@@ -4481,7 +4481,7 @@ EOF
        text  => 'L 401 R.-Sorge-/ Bergstr. Bahnübergang Bergstraße Gleisbauarbeiten Zufahrt gesperrt 07.05.2006-12.05.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 26432,-10043 26285,-10054 26262,-10015 26262,-9880 26174,-9760 26093,-9701 25991,-9671 25805,-9553
+	2 26434,-10054 26285,-10054 26262,-10015 26262,-9880 26174,-9760 26093,-9701 25991,-9671 25805,-9553
 EOF
      },
      { from  => 1146897090, # 2006-05-06 08:31
@@ -4642,7 +4642,7 @@ EOF
        text  => 'B 179 Spreewaldstr. OD Zeesen, Einmünd. zur K.-Liebknecht-Str. Umbau Knotenpunkt Vollsperrung 29.05.2006-19.06.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 26758,-15727 26650,-15695 26583,-15677
+	q4 26758,-15727 26734,-15719 26650,-15695 26583,-15677
 EOF
      },
      { from  => 1148853600, # 2006-05-29 00:00
@@ -4873,7 +4873,7 @@ EOF
        text  => 'B 246 OL Bestensee, Hauptstraße OL Bestensee, Hauptstraße, Bahnübergang Bauarbeiten am Gleiskörper Vollsperrung 30.06.2006-04.07.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 26639,-17861 26703,-17858 26716,-17857 27304,-17961
+	2::inwork 26639,-17861 26703,-17858 26716,-17857 26989,-17904 27304,-17961
 EOF
      },
      { from  => 1150840800, # 2006-06-21 00:00
@@ -5607,7 +5607,7 @@ EOF
        text  => 'L 401 Königs Wusterhausen-Wildau OL Königs Wusterhausen, Höhe Neue Ziegelei Deckeneinbau Vollsperrung 31.08.2006-01.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 26466,-10409 26442,-10452 26429,-10647 26407,-10986
+	2::inwork 26466,-10409 26442,-10452 26429,-10647 26418,-10992
 EOF
      },
      { from  => 1156024800, # 2006-08-20 00:00
@@ -5880,7 +5880,7 @@ EOF
        text  => 'L 401 R.-Sorge-Str./ Bergstr. Bahnübergang Bergstr. in OL Wildau Arbeiten am BÜ Vollsperrung; Umleitung 04.09.2006-06.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 26432,-10043 26285,-10054 26262,-10015 26262,-9880 26174,-9760 26093,-9701 25991,-9671 25805,-9553
+	2::inwork 26434,-10054 26285,-10054 26262,-10015 26262,-9880 26174,-9760 26093,-9701 25991,-9671 25805,-9553
 EOF
      },
      { from  => 1157576473, # 2006-09-06 23:01
@@ -6583,7 +6583,7 @@ EOF
        text  => 'B 246 Bahnübergang in der OD Bestensee Umbauarbeiten Vollsperrung 06.11.2006-17.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 26639,-17861 26703,-17858 26716,-17857 27304,-17961
+	2::inwork 26639,-17861 26703,-17858 26716,-17857 26989,-17904 27304,-17961
 EOF
      },
      { from  => 1160604000, # 2006-10-12 00:00
@@ -7370,7 +7370,7 @@ EOF
        text  => 'L 742 Klein Köris-Teupitz Bahnübergang in der OD Groß Köris Gleisumbauarbeiten Vollsperrung 09.03.2007-12.03.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 28494,-27010 27995,-27157 27709,-27243
+	2::inwork 28494,-27010 28207,-27094 27995,-27157 27974,-27162 27709,-27243
 EOF
      },
      { from  => 1173913200, # 2007-03-15 00:00
@@ -18695,7 +18695,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_016525',
        data  => <<EOF,
-	2::inwork 21687,-3601 21696,-2925 22003,-1625
+	2::inwork 21687,-3601 21722,-3421 21696,-2925 22003,-1625
 EOF
      },
      { from  => 1288036570, # 2010-10-25 21:56
@@ -19098,7 +19098,7 @@ EOF
        type  => 'gesperrt',
        source_id => '116100196',
        data  => <<EOF,
-	2::inwork 26758,-15727 26650,-15695
+	2::inwork 26758,-15727 26734,-15719 26650,-15695
 EOF
      },
      { from  => 1299564000, # 2011-03-08 07:00
@@ -19842,7 +19842,7 @@ EOF
        type  => 'handicap',
        source_id => 'LS/S-SG33-W/11/303',
        data  => <<EOF,
-	q3::inwork; 26679,-8825 26381,-9753
+	q3::inwork; 26679,-8825 26443,-9577 26381,-9753
 EOF
      },
      { from  => 1313270628, # 2011-08-13 23:23
@@ -26569,7 +26569,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-08-05
+#: last_checked: 2018-08-08
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
@@ -27577,6 +27577,15 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 	q4::inwork; 22147,9841 22129,9702 22116,9585
+EOF
+     },
+     { from  => 1533756141, # 2018-08-08 21:22
+       until => 1572562800, # 2019-11-01 00:00
+       text  => 'Unterführung Bahnhof Zeuthen: wegen Bauarbeiten gesperrt, voraussichtlich bis Oktober 2019',
+       type  => 'gesperrt',
+       source_id => 'https://www.zeuthen.de/Die-Deutsche-Bahn-informierte-Grunderneuerung-der-Personenunterfuehrung-am-S-Bahnhof-Zeuthen-642703.html',
+       data  => <<EOF,
+	2::inwork 25929,-5994 25902,-6006
 EOF
      },
     );

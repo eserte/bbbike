@@ -28,7 +28,7 @@ Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,107
 # 
 # REMOVED (südlicher Teil fertig, im nördlichen passiert vermutlich nichts --- handicap=q2, weiterhin, aber vorher war es in letzter Zeit eher q3 gewesen, auch vor den Bauarbeiten) --- #: XXX Bauarbeiten im südlichen Abschnitt, vielleicht hat das mit den Verbesserungen zu tun --- #: last_checked: 2018-06-15 --- #: check_frequency: 30d --- Görlitzer Park: Verbesserungen geplant	?::inwork 12814,9966 12833,9998 12869,10071 12901,10134 12905,10143
 # 
-#: last_checked: 2018-08-07
+#: last_checked: 2018-08-08
 #: next_check: 2018-12-31
 NKZ: Verbesserungen geplant	?::projected 11291,10438 11317,10485 11344,10507 11334,10527
 # 
@@ -36,8 +36,8 @@ NKZ: Verbesserungen geplant	?::projected 11291,10438 11317,10485 11344,10507 113
 #: next_check: 2018-12-31
 Yorckstr. - Hornstr.: Verbesserung der Zufahrt geplant	?::projected 9044,9753 9002,9731 8980,9751 8988,9783
 # 
-#: last_checked: 2018-07-26
-#: next_check: 2018-12-31
+#: last_checked: 2018-08-08
+#: check_frequency: 150d
 Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14868,10467
 #: by: ^^^
 # 
@@ -1497,7 +1497,7 @@ Dahlemer Weg: Radwege werden durch Radspuren ersetzt	?::projected 2152,2912 2198
 #: source_id: 2147341295
 #: source_id: 2147341681
 #: source_id: 2147341683
-#: last_checked: 2018-07-11 (mapillary) vvv
+#: last_checked: 2018-08-08 vvv
 #: check_frequency: 90d vvv
 # REMOVED (realisiert) --- #: XXX erster Bauabschnitt (vom 15. Mai 2017 bis Oktober 2017) --- Bohnsdorfer Kreisel: Bau von Radspuren in beiden Richtungen; Aufhebung der Einbahnstraßenregelung	?::projected 22007,711 22062,773
 # REMOVED (ja, ist bereits aufgehoben) --- #: XXX wird die Einbahnstraße bereits während der Bauarbeiten aufgehoben?
@@ -3678,8 +3678,8 @@ Rad- und Gehweg geplant: Qualität, genaue Lage?	?::projected 7452,13904 7542,139
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-60/index.shtml
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-60/download/Bebauungsplan_9-60_oeA.pdf
 #: XXX auch Maßnahme Jt.7
-#: last_checked: 2018-06-16 vvv
-#: check_frequency: 180d vvv
+#: last_checked: 2018-08-08 vvv
+#: check_frequency: 150d vvv
 Gustav-Hertz-Platz: geplant, verkehrsberuhigt	?::projected 18584,4510 18688,4611 18645,4664
 Wagner-Régeny-Str.: Verlängerung geplant	?::projected 19162,3935 18584,4510 18264,4830
 #: by: http://www.adlershof-johannisthal.de/#sec9 ("2019-2021")
@@ -4228,9 +4228,7 @@ Jahnstr. (Wildau): Qualität?	? 25910,-8697 25937,-8824 25805,-9553
 Kiekebusch (früher Waltersdorf) - Karlshof: laut "Berliner Umland" witterungsabhängige Strecke; Schlenker um See notwendig?	? 20075,-5417 19866,-5382 19809,-5557 19945,-5661 19915,-6315 19907,-6772 19951,-6902 19817,-7484
 Kiekebusch - Karlshof: laut "Berliner Umland" geeignete Strecke auf Straßen	? 20892,-6636 20577,-6982 20255,-7591
 Karlshof - Brusendorf: laut "Berliner Umland" geeigneter Radweg (möglicherweise asphaltiert)	? 19092,-9677 18847,-9629 18205,-10432
-#: XXX von der Bahn aus gesehen: asphaltiert (zumindest im mittleren Abschnitt):
-Eichwalde - Zeuthen: laut "Berliner Umland" witterungsabhängige Strecke	? 25212,-4025 25256,-4073 25293,-4192 25550,-5174
-Friesenstr. (Eichwalde, Zeuthen): laut "Berliner Umland" geeignete Strecke auf Straßen	? 25550,-5174 25595,-5527 25893,-6002 25911,-6033
+Eichwalde - Zeuthen: laut "Berliner Umland" witterungsabhängige Strecke	? 25212,-4025 25256,-4073 25293,-4192
 Bahnstr.: Fahrbahnbeschaffenheit? Existiert hier eine Einbahnstraße?	? 25997,-6245 26089,-6584
 Rheinstr. - Birkenstr. (Zeuthen, Wildau): laut "Berliner Umland" geeignete Strecke auf Straßen	? 26089,-6584 26048,-6587 26328,-7191 26359,-7450 26589,-8499
 Günterberg - Biesenbrow: laut "Regio-Cart" gut geeignet	? 47091,77570 47269,77634 47713,78664 48006,79147 48305,79400 49117,79726 49521,79799 49932,79760 50324,80128
@@ -5285,10 +5283,8 @@ Kleinmutz - Bergsdorf: Qualität?	? 1291,60437 38,59019 41,58699 -44,58487 -285,5
 Neuhäsen - B167: Qualität?	? -5505,57159 -5163,56099
 Neuhäsen - B167: Qualität?	? -4948,55812 -4424,54552
 Neuhäsen - Gutengermendorf: Qualität?	? -5505,57159 -5795,58115 -5792,58185
-Karl-Marx-Str. (Schulzendorf): Qualität des westlichen Abschnitts?	? 24343,-3387 24190,-3443 24080,-3471 23969,-3523 23617,-3682 23368,-3794
-Gerhart-Hauptmann-Allee (Eichwalde): Qualität des südlichen Abschnitts (auch schlechtes Kopfsteinpflaster?)?	? 25119,-4096 25197,-4236
 Heinrich-Heine-Allee (Eichwalde): Qualität des Geh/Radweg-Abschnitts?	? 25058,-3595 25119,-3735
-Wilhelm-Busch-Str. (Eichwalde): Qualität?	? 25119,-4096 25022,-4180 24896,-4294
+Wilhelm-Busch-Str. (Eichwalde): Qualität?	? 25022,-4180 24896,-4294
 Uhlandallee (Eichwalde): Qualität des südlichen Abschnitts?	? 25730,-3091 25774,-3198 25791,-3240 25819,-3310 25862,-3423 25909,-3536 25958,-3650 25985,-3716 26002,-3766 26050,-3881
 #: XXX: früher teilweise mäßiger, teilweise schlechter Belag (Q3)
 nach Garzin und Garzau: Qualität?	? 53884,16566 53683,16474 53019,16358 52848,16456 52574,16529 51697,16718 51715,16919 49700,16565
@@ -5777,5 +5773,4 @@ Lutherstadt Wittenberg - Coswig: Elberadweg, Qualität der Wege?	? -40472,-60875 
 Lutherstadt Wittenberg - Coswig: Elberadweg, Qualität der Wege?	? -45341,-60204 -45542,-60600 -45672,-60511 -46530,-60599 -46723,-60522 -46764,-60401 -47043,-60384 -47127,-60413 -47304,-60419 -47361,-60377 -47719,-60341 -47970,-60425 -48241,-60614 -48333,-60479 -48351,-60042 -48443,-59933 -48939,-59625 -48925,-59526 -49133,-59396 -49325,-59391 -49402,-59372 -49678,-59347 -49897,-59301
 Lutherstadt Wittenberg - Coswig: Elberadweg, Qualität der Wege?	? -50427,-59455 -50632,-59778 -50866,-60135 -51103,-60273 -51182,-60217 -51283,-60271 -51411,-60372 -51489,-60286 -51529,-60271 -51542,-60246 -51806,-59966 -51852,-59722 -52045,-59411 -52196,-59426 -52341,-59434
 August-Bebel-Str. (Schulzendorf): Qualität im südwestlichen Abschnitt?	? 23387,-4518 23655,-3997
-#: XXX scheint zumeist asphaltiert und Verbundsteinpflaster zu sein, teilweise mit asphaltierten Radwegen; genauer erfassen!
-Schulzendorf - Bohndorf: Qualität?	? 23831,-2603 23761,-2480 23568,-2607 23333,-2060 23278,-2080 22990,-1323
+Zeesener Str. (Bestensee): Qualität?	? 26766,-17782 26811,-17743 26920,-17598 27031,-17378 27023,-17309 27038,-17271 27054,-17248 27081,-17125 27084,-17076

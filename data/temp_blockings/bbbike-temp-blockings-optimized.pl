@@ -3832,7 +3832,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-08-05
+#: last_checked: 2018-08-08
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 ',
@@ -4366,6 +4366,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Chemnitzer Str.: zwischen Norastr, und Eschelberger Weg Bauarbeiten, Fahrbahn gesperrt, bis voraussichtlich 17.08.2018',
          'type' => 'handicap',
          'until' => 1534543200
+       },
+       {
+         'data' => '	2::inwork 25929,-5994 25902,-6006
+',
+         'from' => 1533756141,
+         'id' => 2994,
+         'source_id' => 'https://www.zeuthen.de/Die-Deutsche-Bahn-informierte-Grunderneuerung-der-Personenunterfuehrung-am-S-Bahnhof-Zeuthen-642703.html',
+         'text' => 'Unterführung Bahnhof Zeuthen: wegen Bauarbeiten gesperrt, voraussichtlich bis Oktober 2019',
+         'type' => 'gesperrt',
+         'until' => 1572562800
        }
      
 );
