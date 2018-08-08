@@ -257,11 +257,11 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Fürstenwalder Damm zwischen Bölschestraße und Hartlebenstraße Baustell stadtauswärts, Straße gesperrt, eine Umleitung ist eingerichtet, Dauer: 07.09.2003,04.00 Uhr bis 21.09.2003',
        type  => 'gesperrt',
      },
-     { from  => $isodate2epoch->("2017-09-07 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-09-10 21:00:00"),
+     { from  => $isodate2epoch->("2018-09-06 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-09-09 21:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 6, months => 9]],
-       text  => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 08.09.2017 16:00 bis 10.09.2017 20:00',
+       text  => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 07.09.2018 16:00 bis 09.09.2018 20:00',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.weinfeste-in-deutschland.de/wein-und-winzerfest-in-berlin-lichtenrade.html
@@ -27329,7 +27329,7 @@ EOF
 #: XXX eventuell hängen die Bauarbeiten mit den Bauarbeiten in der Eldenaer Str. zusammen
 #: XXX wird danach komplett asphaltiert sein?
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=42743 (sogar bis 2018-09-17)
-#: last_checked: 2018-07-26
+#: last_checked: 2018-08-07
 	q4::inwork; 14096,12827 14058,12709 13911,12692
 EOF
      },
@@ -27556,6 +27556,7 @@ EOF
 #: next_check_id: FEUERBACH-2018
 #: XXX laut VMZ nur bis September 2018, laut BA Steglitz bis Dezember 2018
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.725875.php
+#: by: https://www.berliner-woche.de/steglitz/c-verkehr/weitere-sperrungen-rund-um-die-feuerbachstrasse_a174881
 #: source_id: 2147342919
 	q4::inwork; 6168,6467 6083,6451 5823,6413
 	q4::inwork 6083,6451 6095,6358

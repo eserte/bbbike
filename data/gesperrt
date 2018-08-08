@@ -836,6 +836,10 @@ Alexanderufer - Charité: Tor dauerhaft gesperrt	2 8362,13466 8369,13465 8377,134
 Falkoniergasse: durch Tore abgesperrt	2 9939,12174 9909,12261
 Business Park BBI: dauerhaft gesperrt, Firmengelände	2 20038,-1474 20394,-1397
 Ferdinandstr.	1s 5398,2422 5417,2383
+Heinrichplatz	1 11690,10543 11734,10563
+Heinrichplatz	1 11708,10497 11690,10543
+Heinrichplatz	1 11754,10516 11708,10497
+Heinrichplatz	1 11734,10563 11754,10516
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Knoten Märkische Allee	2::igndisp 19918,11891 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
@@ -3093,9 +3097,9 @@ Rumeyplan	1 8959,7824 8907,7773 8812,7730 8690,7704
 Greifswalder Str.	3nocross::ignrte 12422,14692 12473,14763 12528,14845
 Greifswalder Str. -> Olga-Benario-Prestes-Str.: Greifswalder Str.	3::igndisp 12528,14845 12473,14763 12628,14650
 Olga-Benario-Prestes-Str. -> Greifswalder Str.: Greifswalder Str.	3::igndisp 12628,14650 12473,14763 12422,14692
-Danziger Str.	3nocross::ignrte 12616,14315 12407,14470 12317,14535
+Danziger Str.	3nocross::ignrte 12616,14315 12522,14385 12407,14470 12317,14535
 Danziger Str. -> Eugen-Schönhaar-Str.: Danziger Str.	3::igndisp 12317,14535 12407,14470 12494,14532
-Eugen-Schönhaar-Str. -> Danziger Str.: Danziger Str.	3::igndisp 12494,14532 12407,14470 12616,14315
+Eugen-Schönhaar-Str. -> Danziger Str.: Danziger Str.	3::igndisp 12494,14532 12407,14470 12522,14385
 Straßenbahntrasse	3nocross::ignrte 13072,15590 13229,15692 13316,15758
 Greifswalder Str. -> Cohnstr.: Straßenbahntrasse	3::igndisp 13072,15590 13229,15692 13197,15734
 Cohnstr. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 13197,15734 13229,15692 13316,15758
