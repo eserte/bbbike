@@ -2071,7 +2071,7 @@ EOF
        text  => 'L 15; (Fürstenberg-Rheinsberg); OD Menz Kanal-,Straßen- u. Brückenbau Vollsperrung 17.05.2005-08.07.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 -15062,76937 -14733,77409
+	q4 -15062,76937 -14840,77254 -14733,77409
 EOF
      },
      { from  => 1116194400, # 2005-05-16 00:00
@@ -19986,11 +19986,11 @@ EOF
 	2::inwork -13687,-4949 -13723,-6401
 EOF
      },
-     { from  => $isodate2epoch->("2017-09-08 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-09-10 23:59:59"),
+     { from  => $isodate2epoch->("2018-09-07 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-09-09 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 8, months => 9]],
-       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (08.09.2017-10.09.2017)',
+       recurrences => [['yearly', days => 7, months => 9]],
+       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (08.09.2018-09.09.2018)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.laubinger.de/termine/48-fest-an-der-panke/
