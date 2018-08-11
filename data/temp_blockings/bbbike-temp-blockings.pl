@@ -19842,7 +19842,7 @@ EOF
        type  => 'handicap',
        source_id => 'LS/S-SG33-W/11/303',
        data  => <<EOF,
-	q3::inwork; 26679,-8825 26443,-9577 26381,-9753
+	q3::inwork; 26679,-8825 26429,-9618 26381,-9753
 EOF
      },
      { from  => 1313270628, # 2011-08-13 23:23
@@ -27361,14 +27361,15 @@ EOF
 EOF
      },
      { from  => 1530396000, # 2018-07-01 00:00
-       until => 1559339999, # 2019-05-31 23:59
-       text  => 'Verlängerte Werderstr.: Bauarbeiten, unter Umständen ist die Durchfahrt nicht möglich, vom 2. Juli 2018 bis Ende Mai 2019',
+       until => $isodate2epoch->("2019-06-30 18:00:00"), # 1559339999, # 2019-05-31 23:59
+       text  => 'Verlängerte Werderstr.: Bauarbeiten, unter Umständen ist die Durchfahrt nicht möglich, bis Juni 2019',
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.713900.php',
        data  => <<EOF,
 #: next_check_id: VERLWERDERSTR-2018
 #: by: https://www.berliner-woche.de/altglienicke/c-bauen/werderstrasse-wird-ausgebaut_a169172
-#: add_fragezeichen: können Radfahrer vielleicht doch passieren?
+#: XXX nach den Bauarbeiten vermutlich Verbundsteinpflaster oder Betonpflaster
+#: last_checked: 2018-08-11
 	2::inwork 20245,2152 20261,2114 20222,2037 20214,1988 20187,1930 20166,1864 20120,1791 20093,1776 20064,1777
 EOF
      },

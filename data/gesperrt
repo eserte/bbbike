@@ -1006,6 +1006,7 @@ Wilhelm-Busch-Str.	1 25206,-4014 25119,-4096
 Miersdorf	1 24955,-6980 25077,-6942 25186,-6969
 Miersdorf	1 25186,-6969 25092,-6993 24955,-6980
 ehemalige B179	1 26445,-14110 26465,-14385
+Bahnstr.	1s 25997,-6245 26045,-6360
 Mittelstreifen nicht überquerbar	3nocross::ignrte -974,128015 -724,127995 6,127935 298,127911
 B104: Neubrandenburg -> Feldstr.: Mittelstreifen nicht überquerbar	3::igndisp -974,128015 -724,127995 -719,128043
 Feldstr. -> Pasewalk: Mittelstreifen nicht überquerbar	3::igndisp -719,128043 -724,127995 6,127935
@@ -2520,6 +2521,7 @@ tragen (mehrere Treppen mit insgesamt 45 Stufen und Kinderwagenrampe)	0:90:-44 3
 tragen (Treppe, 18 Stufen)	0:25:-66 25902,-6006
 tragen (Treppe, 19 Stufen)	0:25:-194 25928,-5990
 tragen (Treppe)	0:120:-184 -14199,-707
+tragen (Treppe, 22 Stufen)	0:30:87 26337,-11817
 Drängelgitter	BNP:3:-175:trailer=10 16433,12626
 Drängelgitter	BNP:3:2:trailer=10 16428,12741
 Drängelgitter	BNP:3:4:trailer=10 7916,17576

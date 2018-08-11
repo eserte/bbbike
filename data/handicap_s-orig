@@ -21,13 +21,13 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-08-10
+#: last_checked: 2018-08-11
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2018-08-08
+#: last_checked: 2018-08-11
 #: check_frequency: 90d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -123,11 +123,7 @@ Schmollerplatz: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13206,9335 13178,9
 #: check_frequency: 7d
 Schmollerplatz: Baustelle, Fahrbahn gesperrt	q4::inwork 13124,9375 13203,9450
 # 
-#: next_check_id: VERLWERDERSTR-2018
-#: XXX gibt es hier tatsächlich Einschränkungen?
-#: valid: 20180702-20190530
-Verlängerte Werderstr.: Bauarbeiten	q4::inwork 20245,2152 20261,2114 20222,2037 20214,1988 20187,1930 20166,1864 20120,1791 20093,1776 20064,1777
-# 
+# REMOVED (nein) --- #: next_check_id: VERLWERDERSTR-2018 --- #: XXX gibt es hier tatsächlich Einschränkungen? --- #: valid: 20180702-20190530 -- Verlängerte Werderstr.: Bauarbeiten	q4::inwork 20245,2152 20261,2114 20222,2037 20214,1988 20187,1930 20166,1864 20120,1791 20093,1776 20064,1777
 # REMOVED (mittlerweile wieder offen) --- #: by: http://www.dafmap.de/d/berlin.html?id=4505&mt=0&zoom=17 --- #: last_checked: 2017-03-20 --- #: check_frequency: 14d --- Kiefholzstr.: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 13821,9340 13715,9455
 # REMOVED (aber vielleicht nur am Wochenende offen?) --- #: last_checked: 2016-12-20 vvv --- #: check_frequency: 21d vvv --- Schmollerplatz: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 13203,9450 13124,9375 --- Schmollerplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 13124,9375 13111,9361 13126,9347 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: XXX siehe auch valid-Eintrag weiter unten --- #: source_id: 2147340178 --- #: last_checked: 2016-10-05 --- #: valid: -20161115 --- Bouchéstr.: Bauarbeiten, Radfahrer müssen auf dem Gehweg fahren	q2::inwork 13642,9624 13865,9866 13890,9894 -- # REMOVED (wahrscheinlich aufgehoben) --- #: last_checked: 2013-11-22 --- #: check_frequency: 60d --- Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 13973,9465 14157,9345
@@ -136,7 +132,7 @@ Verlängerte Werderstr.: Bauarbeiten	q4::inwork 20245,2152 20261,2114 20222,2037 
 ### Adlershof ###
 # 
 #: XXX_prog: BS
-#: last_checked: 2018-06-16 vvv
+#: last_checked: 2018-08-11 vvv
 Wagner-Régeny-Str - Igo-Etrich-Str.: Bauarbeiten, mehrere Bordsteine, auf Gehweg ausweichen	q2::inwork; 19363,3730 19162,3935 18930,3703
 Igo-Etrich-Str. - Wagner-Régeny-Str: Bauarbeiten, auf Gehweg ausweichen	q1::inwork; 18930,3703 19162,3935 19363,3730
 #: last_checked ^^^

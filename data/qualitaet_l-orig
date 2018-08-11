@@ -229,8 +229,8 @@ Neu-Zittau: Fahrbahn asphaltiert	Q0 33743,-1143 33742,-1197 33638,-1495
 Wernsdorf: Asphalt	Q0 31542,-3094 31492,-3156 31260,-3484 31171,-3550 30934,-3651 30893,-3670 30901,-3737 30886,-3867
 Neue Mühle: Asphalt	Q0 27661,-11738 27657,-11741 27620,-11806
 Neue Mühle: Kopfsteinpflaster	Q2 27620,-11806 27544,-11856 27543,-11912 27589,-11965 27567,-12099
-Neue Mühle: Asphalt	Q0 27567,-12099 27557,-12160 27519,-12388 27461,-12448
-# REMOVED (mittlerweile vermutlich asphaltiert) --- KW: Kopfsteinpflaster	Q2 26419,-12089 26427,-11850 26395,-11699
+Neue Mühle: Asphalt	Q0 27567,-12099 27557,-12160 27519,-12388 27454,-12435
+# REMOVED (mittlerweile vermutlich asphaltiert) --- KW: Kopfsteinpflaster	Q2 26419,-12089 26418,-11850 26406,-11815 26395,-11699
 # REMOVED (mittlerweile asphaltiert) --- KW: Kopfsteinpflaster	Q2 26177,-11648 25939,-11559 25859,-11559 25618,-11642
 Ragow: Asphalt	Q0 20843,-12781 20528,-12859 20408,-13031 20134,-13333 19800,-13610 19494,-13746
 Ragow (Köpenicker Str.): Asphalt	Q0 20127,-12521 20408,-13031
@@ -638,19 +638,26 @@ Pätz: Kopfsteinpflaster	Q2 28615,-19431 28304,-19608 28251,-19639 28164,-19771 2
 Groß-Köris - Motzen: Asphalt	Q0 27822,-24916 27768,-24799 27712,-24629 27657,-24389 27628,-24237 27375,-24125 27006,-23844 26315,-23321 26145,-23192 26096,-23160 26070,-23160 25871,-23127 23485,-22730
 #: by: René (refan): vvv
 Grünau - Zeuthen: gepflastert	Q1- 26931,-2871 26875,-2993 26748,-3285 26639,-3587 26562,-3781 26554,-3814 26319,-4776 26228,-5150 26259,-5681 26085,-5839 25996,-5921
-Zeuthen - KW: Asphalt	Q0 25996,-5921 26003,-5934 26099,-6131 26135,-6206 26506,-6931 26609,-7136 26700,-7334 26790,-7918 26786,-7968 26775,-8117 26749,-8481 26727,-8668 26679,-8825 26443,-9577 26381,-9753 26365,-9875 26376,-9924 26391,-9997 26434,-10054
+Zeuthen - KW: Asphalt	Q0 25996,-5921 26003,-5934 26099,-6131 26135,-6206 26506,-6931 26609,-7136 26700,-7334 26790,-7918 26786,-7968 26775,-8117 26749,-8481 26727,-8668 26679,-8825 26429,-9618 26381,-9753 26365,-9875 26376,-9924 26391,-9997 26420,-10035 26434,-10054
 #: by: ^^^
-Friesenstr. (Zeuthen): Asphalt	Q0 25822,-5864 25652,-5602 25600,-5426 25570,-5180 25572,-5126 25476,-4811 25448,-4785 25345,-4806 25183,-4565 25042,-4334
-#: by: osm
-Friesenstr. (Zeuthen): schlechtes Kopfsteinpflaster	Q3 25822,-5864 25893,-6002
+Friesenstr. (Zeuthen): Asphalt	Q0 25817,-5856 25782,-5801 25652,-5602 25600,-5426 25570,-5180 25572,-5126 25476,-4811 25448,-4785 25345,-4806 25183,-4565 25042,-4334
+Friesenstr. (Zeuthen): schlechtes Kopfsteinpflaster	Q3 25817,-5856 25893,-6002
 Heinrich-Heine-Str. (Zeuthen): Asphalt	Q0 25570,-5180 25627,-5177 25694,-5172 25760,-5191 25831,-5163 26305,-4773 26319,-4776
 Alte Poststr. (Zeuthen): schlechtes Kopfsteinpflaster	Q3 25996,-5921 25963,-5901 25855,-5792
 Alte Poststr. (Zeuthen): Asphalt	Q0 25855,-5792 25831,-5743
 Alte Poststr. (Zeuthen): unbefestigte Straße	Q2 25831,-5743 25757,-5533 25733,-5240 25760,-5191
 Maxim-Gorki-Str. (Eichwalde): Asphalt	Q0 26849,-3323 26748,-3285 26654,-3234
-Schillerstr. (Zeuthen): Kopfsteinpflaster	Q2- 25831,-5163 26259,-5681
+#: by: osm
+Schillerstr. (Zeuthen): Asphalt	Q0 25831,-5163 25882,-5224
+Schillerstr. (Zeuthen): Kopfsteinpflaster	Q2- 25882,-5224 26259,-5681
 Goethestr. (Zeuthen): Kleinsteinpflaster	Q1- 25932,-5982 26003,-5934
 Bahnstr. (Zeuthen): Asphalt mit einigen Schäden	Q1+ 25893,-6002 25997,-6245
+#: note: Richtung Süden existieren Gehwege, Richtung Norden teilweise Banketten, teilweise Gehwege
+Bahnstr. (Zeuthen): schlechtes Kopfsteinpflaster	Q3 25997,-6245 26045,-6360 26143,-6596
+Hankelweg (Zeuthen): schlechtes Kopfsteinpflaster	Q3 26143,-6596 26092,-6614 25993,-6654
+Rheinstr. (Zeuthen): schlechtes Kopfsteinpflaster	Q3 26092,-6614 26220,-6930
+Birkenallee (Wildau): Kopfsteinpflaster	Q2 26220,-6930 26227,-6945
+Birkenallee (Wildau): Asphalt	Q0 26227,-6945 26328,-7191 26407,-7403 26437,-7537 26465,-7727 26491,-7909 26506,-8032 26546,-8282 26561,-8380 26589,-8499
 Bestensee: Asphalt	Q0 26204,-17794 26245,-17623 26273,-17430
 Schwarzer Weg: Asphalt	Q0 26132,16385 26154,16397 26338,16536 26624,16752 26717,16823
 #: by: osm
@@ -665,10 +672,10 @@ Krummensee - Bestensee: Asphalt	Q0 24515,-16318 24496,-16383 24514,-16453 24412,
 Bestensee - Groß Köris: Asphalt	Q0 24587,-17733 24557,-18033 24536,-18239 24453,-18497 24343,-18808 24163,-19075 24059,-19525 24112,-19797 24471,-20179 24714,-20369 24837,-20468 24924,-20596 25217,-21291 25254,-21475 25290,-21580 25381,-21703 25428,-21807 25474,-22014 25623,-22084 25913,-22721
 Bestensee - Groß Köris: Beton, oft nur mäßig	Q2+ 25913,-22721 25871,-23127
 Krummensee - Groß Köris: Asphalt	Q0 25954,-22818 25913,-22721
-Prieroser Str. (Pätz): Verbundsteinpflaster	Q1 28530,-19736 28842,-19704 29515,-19702
+Prieroser Str. (Pätz): Verbundsteinpflaster	Q1 28530,-19736 28692,-19714 28775,-19701 28843,-19695 29515,-19702
 Neubrücker Str. (Pätz): Verbundsteinpflaster	Q1 28231,-19792 28354,-19948
 Neubrücker Str. (Pätz): Asphalt	Q0 28354,-19948 28370,-19964
-Neubrücker Str. (Pätz): Verbundsteinpflaster	Q1 28370,-19964 28514,-20071
+Neubrücker Str. (Pätz): Verbundsteinpflaster	Q1 28370,-19964 28500,-20078
 Weinbergstr. (Pätz): Verbundsteinpflaster	Q1 28089,-19844 28176,-20032 28249,-20226
 Waldweg Pätz - Bestensee: Verbundsteinpflaster	Q1 28853,-19212 28805,-19189 28868,-18929 28827,-18707
 Uferweg Pätz - Bestensee: Verbundsteinpflaster	Q0- 28827,-18707 28800,-18565 28667,-18389
@@ -682,7 +689,7 @@ Kuckucksweg (Zeesen): unbefestigte Straße	Q2- 26701,-15394 26782,-15392 26975,-1
 #: by: osm
 Kuckucksweg (Zeesen): Asphalt	Q0 26975,-15402 27092,-15384 27261,-15341
 Weidendamm (Zeesen): Asphalt	Q0 26471,-14570 26600,-14550 26704,-14533 26762,-14525 27088,-14471
-Wiesenweg (Zeesen): unbefestiger Weg, zweispurig	Q2- 26782,-15392 26778,-15247 26757,-15100 26763,-14970 26782,-14908 26738,-14719 26743,-14642 26762,-14525
+Wiesenweg (Zeesen): unbefestigter Weg, zweispurig	Q2- 26782,-15392 26778,-15247 26757,-15100 26763,-14970 26782,-14908 26738,-14719 26743,-14642 26762,-14525
 Eschenweg (Zeesen): Asphalt	Q0 26704,-14533 26617,-13996 26625,-13968
 Schulstr. (Zeesen): Asphalt	Q0 26419,-13884 26494,-13883 26526,-13880 26625,-13968 27071,-14299
 Am Güterbahnhof: Beton	Q0 26420,-13000 26443,-12952 26435,-12545
@@ -695,10 +702,12 @@ Schmiedeweg: Asphalt	Q0 26459,-17745 26354,-17641 26321,-17629 26297,-17628 2624
 Pätz - Bestensee: Verbundsteinpflaster	Q0- 28667,-18389 28651,-18369 28011,-18007
 Groß Köris - Pätz: Kopfsteinpflaster	Q3+ 28391,-25727 28320,-25493 28318,-25324 28232,-25101
 Groß Köris - Pätz: holpriger Fahrweg	Q2 28232,-25101 28242,-25033 28154,-24791 28146,-24681 28032,-24387
-Groß Köris - Pätz: Waldweg, teilweise wegen Sand unbefahrbar	Q3- 28032,-24387 27553,-23236 27694,-22993 27665,-22750 27989,-21218 28251,-20474 28505,-20243
+Groß Köris - Pätz: Waldweg, teilweise wegen Sand unbefahrbar	Q3- 28032,-24387 27553,-23236 27694,-22993 27665,-22750 27989,-21218 28251,-20474 28574,-20170
 südl. des Pätzer Hintersees: oft sandig	Q3 27553,-23236 27486,-23312 27378,-23341 26930,-23244 26702,-23244 26315,-23321
 Depotstr. (Pätz): Verbundsteinpflaster	Q1 28422,-19758 28304,-19608
-Senzig - Körbiskrug: holpriger, teils sandiger Fahrweg	Q3 28138,-13496 28174,-14838 28230,-15064 28163,-15489 28030,-16002 27833,-16133
+Senzig - Körbiskrug: Asphalt	Q0 28138,-13496 28168,-14397
+Senzig - Körbiskrug: unbefestigter Fahrweg	Q2+ 28168,-14397 28169,-14415 28174,-14838 28236,-15044 28183,-15331
+Senzig - Körbiskrug: Asphalt	Q0 28183,-15331 28030,-16002
 #: note: nur das südliche Ende gesehen
 Carmzow - Stramehl: Asphalt	Q0 54093,110675 53957,111261 53829,111657 53754,111740 53804,111927 53890,112260
 Stramehl - Karlsruh: schlechtes Kopfsteinpflaster	Q3 53890,112260 54130,112720 54033,113692 54121,113714
@@ -1040,10 +1049,10 @@ Asphalt	Q0  20347,-2959 20339,-2932 20255,-2910 20179,-2853 20071,-2917 20285,-3
 	Q0 21218,-1717 21212,-1763 21250,-1782 21200,-1984 21062,-2006 21071,-2228 21088,-2461
 	Q0 21084,-4728 21535,-4790 21654,-4807 21764,-4869 22040,-5075 22269,-4937 22394,-5153 22475,-5476 23307,-6230 24284,-7118 24356,-7159 24602,-7131 24713,-7113 24708,-7342 24731,-7532 24789,-8000 24802,-8072 24982,-8485 25063,-8673 25118,-8791 25192,-8936 25137,-9131 25278,-9181 25805,-9553 25991,-9671 26093,-9701 26174,-9760 26262,-9880 26262,-10015 26285,-10054 26434,-10054
 	Q0 26434,-10054 26450,-10134 26453,-10235 26446,-10394 26466,-10409 26442,-10452 26429,-10647 26418,-10992 26281,-11160 26267,-11381 26265,-11528 26177,-11648
-# REMOVED (conflict?) ---	Q0 27461,-12448 27519,-12388 27557,-12160 27567,-12099 27589,-11965 27543,-11912 27544,-11856 27620,-11806 27657,-11741 27661,-11738
+# REMOVED (conflict?) ---	Q0 27454,-12435 27519,-12388 27557,-12160 27567,-12099 27589,-11965 27543,-11912 27544,-11856 27620,-11806 27657,-11741 27661,-11738
 	Q0 27661,-11738 27636,-11644 27648,-11206 27648,-11136 27423,-10516 27469,-10314 27485,-10246 27535,-10033 27565,-9557 27646,-9357 27669,-9000 27746,-8475 27786,-8235 27872,-7725 28059,-7381 28293,-6586 28470,-6223 28628,-5900 29249,-5219 29555,-4881 30172,-4649 30334,-4590 30636,-4358 30721,-4293 30753,-4209 30886,-3867
-	Q0 27543,-11912 27293,-12043 27025,-11999 26713,-11908 26577,-11847 26427,-11850
-	Q0 26419,-12089 26453,-12128 26814,-12271 27234,-12434 27461,-12448 27671,-12643 27770,-12838 27868,-13034
+	Q0 27543,-11912 27293,-12043 27025,-11999 26713,-11908 26577,-11847 26512,-11847 26418,-11850
+	Q0 26419,-12089 26454,-12119 26528,-12146 26814,-12261 27214,-12421 27454,-12435 27690,-12732 27734,-12853 27765,-12940 27868,-13034
 	Q0 27868,-13034 27975,-13282 28057,-13408 28138,-13496
 	Q0 24453,-14859 24454,-14845 24602,-14550 24614,-14534 24625,-14506 24659,-14370 24669,-14219 24748,-13996 24829,-13762 24832,-13747 24843,-13725
 	Q0 24843,-13725 24950,-13607 25098,-13447 25148,-13393 25203,-13334 25232,-13241 25381,-12762 25543,-12403 25912,-11956
@@ -2159,9 +2168,9 @@ Nattwerder - Golm: Feldweg, teilweise holprig und matschig, teilweise relativ gl
 Prieroser Str. (Pätz): Asphalt	Q0 28164,-19771 28231,-19792 28422,-19758 28530,-19736
 Pätz (Friedenstr.): Verbundsteinpflaster	Q1 28009,-20086 28176,-20032 28354,-19948
 Schulweg: Verbundsteinpflaster	Q1 28370,-19964 28393,-19936 28425,-19803 28422,-19758
-Pätz (Groß Köriser Str.): Verbundsteinpflaster	Q1 28530,-19736 28514,-20071 28505,-20243
+Pätz (Groß Köriser Str.): Verbundsteinpflaster	Q1 28530,-19736 28500,-20078 28574,-20170
 Pätz (Groß Köriser Str.): Asphalt	Q0 28530,-19736 28615,-19431
-Zeesen - Königs Wusterhausen: holpriger Waldweg, teilweise sehr sandig	Q3 26889,-12953 26825,-12765 26797,-12589 26814,-12271
+Zeesen - Königs Wusterhausen: holpriger Waldweg, teilweise sehr sandig	Q3 26889,-12953 26825,-12765 26797,-12589 26814,-12261
 # REMOVED (by rjoop: "Grundstück wurde abgetrennt") --- Postenweg Schönefeld: guter Beton	Q0 17234,-685 17013,-745
 Postenweg Schönefeld: guter Beton	Q0 17013,-745 16205,-969 15795,-1108 15776,-1116
 Postenweg Schönefeld: Asphalt	Q0 15776,-1116 15738,-1159
@@ -2671,13 +2680,12 @@ Asphalt	Q0- -86670,-45979 -86472,-46031 -86219,-46273 -85807,-46872 -84976,-4741
 Asphalt	Q0 -84237,-48234 -84110,-48294 -83887,-48317 -82956,-49248 -82684,-49649 -82312,-49701 -82189,-49677 -82107,-49691 -80621,-49973 -79719,-50149 -79138,-50258 -79016,-50315 -78823,-50279
 Kopfsteinpflaster	Q1 59474,34284 59482,34218
 Asphalt	Q0 26070,-23160 25954,-22818
-#: note: westlich des Bahnübergangs nur von der Bahn aus gesehen
-Westkorso, Zeuthen: Kleinkopfsteinpflaster	Q1 26328,-7191 26430,-7173 26609,-7136
+Westkorso, Zeuthen: Kleinkopfsteinpflaster	Q1- 26033,-7207 26328,-7191 26430,-7173 26609,-7136
 Franz-Mehring-Str.: Asphalt	Q0 26644,-18866 26743,-18604 26782,-18462 26840,-18414 26766,-18117 26736,-17975
 Franz-Mehring-Str.: Kopfsteinpflaster	Q2 26736,-17975 26716,-17857
 #: note: Mittelteil ist interpoliert
 Paul-Gerhardt-Str.: Asphalt	Q0 27416,-17969 27411,-17995 27388,-18017 27200,-18159 27079,-18248 26840,-18414
-Asphalt	Q0 26453,-12128 26435,-12545
+Asphalt	Q0 26454,-12119 26435,-12545
 Asphalt	Q0 26435,-12545 26359,-12549
 Verbundsteinpflaster (sowohl Fahrbahn als auch Radweg)	Q0- 26359,-12549 26138,-12596
 Lerchenweg: Asphalt	Q0 26840,-18414 26867,-18455 26886,-18539
@@ -2992,9 +3000,10 @@ Heinrich-Heine-Allee (Eichwalde): wassergebundene Decke	Q1- 25119,-3735 25191,-3
 Heinrich-Heine-Allee (Eichwalde): schlechtes Kopfsteinpflaster	Q3 25191,-3903 25173,-3957
 Heinrich-Heine-Allee: Asphalt	Q0 25173,-3957 25206,-4014 25212,-4025
 #: by: Detlef Westphal
+#: confirmed_by: srt
 Friedenstr. (Eichwalde): Asphalt	Q0 25322,-4042 25678,-3957 26050,-3881
 #: by: Detlef Westphal
-#: add_fragezeichen: gibt es hier Radwege? In welchem Zustand sind die Radwege?
+#: confirmed_by: srt
 Schillerstr. (Zeuthen): Asphalt	Q0 25763,-4283 25793,-5002 25831,-5163
 Friedenstr.: Asphalt	Q0 25212,-4025 25269,-4041
 Friedenstr.: Kopfsteinpflaster	Q2 25269,-4041 25322,-4042
@@ -4218,7 +4227,7 @@ Ecksteinweg: Asphalt	Q0 -17305,-608 -17290,-679 -17395,-725
 Ecksteinweg: Verbundsteinpflaster	Q1+ -17395,-725 -17411,-722 -17465,-741 -17482,-743 -17512,-750
 Ecksteinweg: feste Sandstraße	Q1- -17395,-725 -17375,-806
 Ecksteinweg: fester Sandweg	Q1- -17375,-806 -17346,-1010 -17387,-1064 -17390,-1092
-Lindengrund: unbefestiger Weg	Q2+ -17375,-806 -17494,-838
+Lindengrund: unbefestigter Weg	Q2+ -17375,-806 -17494,-838
 Lindengrund: Asphalt	Q0 -17494,-838 -17863,-909
 Am Kirchblick (Potsdam-Eiche): Verbundsteinpflaster	Q1+ -17482,-743 -17494,-682 -17523,-688
 Birkenhügel (Potsdam-Eiche): Verbundsteinpflaster	Q1+ -17494,-838 -17512,-750
@@ -4339,7 +4348,7 @@ Schreederstr.: Asphalt	Q0 25696,-11770 25783,-11778 25862,-11752 25868,-11721 25
 Funkerberg/Goethebahn: Asphalt	Q0 25632,-11361 25487,-11195 25470,-11166 25398,-10876 25345,-10636 25307,-10467 25262,-10376 25253,-10325 25260,-10259 25081,-9433 25102,-9256 25096,-9239
 #: by: osm
 #: confirmed_by: srt (westliches Ende)
-Freiheitstr. (Wildau): Asphalt	Q0 25192,-8936 25251,-8868 25910,-8697 26133,-8639 26277,-8527 26514,-8526 26589,-8499 26749,-8481 26914,-8452
+Freiheitstr. (Wildau): Asphalt	Q0 25192,-8936 25251,-8868 25910,-8697 26133,-8639 26277,-8527 26514,-8526 26589,-8499 26652,-8493 26749,-8481 26914,-8452
 Am Friedhof (Wildau): Asphalt	Q0 25118,-8791 25106,-8797 24916,-8686
 Forstallee (Miersdorf): Asphalt mit einigen Schäden	Q1+ 24602,-7131 24672,-6698 24726,-6632 24797,-6578 24946,-6533 25619,-6350
 #: by: osm
@@ -4468,6 +4477,11 @@ Zernikow - Seilershof: Asphalt	Q0 -7486,74448 -7458,74437 -7066,74278 -6900,7419
 Seilershof - B96: Asphalt	Q0 -6900,74196 -6414,74013 -6364,73983 -6076,73802 -6015,73792
 Zabelsdorf - Dannenwalde: Asphalt	Q0 -2768,71868 -3404,72259 -3768,72497 -4161,72786 -4204,72799 -5430,73214 -5966,73747 -5987,73785 -6015,73792
 Zehdenick - Burgwall/Marienthal: Asphalt	Q0 1848,69268 2094,69757 2148,69831 2253,69908 2741,69985
+Goethestr. (Eichwalde): Kleinsteinpflaster	Q1- 25449,-3365 25771,-3191
+Johann-Sebastian-Bach-Str. (Eichwalde): Asphalt	Q0 25499,-3453 25816,-3302
+Romanusplatz (Eichwalde): Asphalt	Q0 25651,-3855 25636,-3813 25622,-3761 25635,-3723 25668,-3739 25712,-3836
+Fliederweg: Asphalt	Q0 26512,-11847 26528,-12146
+Bindower Str. (Körbiskrug): Asphalt	Q0 27833,-16133 28030,-16002 28141,-15942 28336,-15824 28389,-15790 28389,-15763
 ######################### User Contributions #################################
 #: by: mopedfahrerrr:
 #: confirmed_by: anonymous:
@@ -4880,6 +4894,7 @@ Casekow: Asphalt	Q0 63296,90222 63412,90361 63491,90572
 Casekow: Asphalt	Q0 63491,90572 63329,90655 63292,90667
 #: by: anonymous:
 #: by: Mentecapti...:
+#: confirmed_by: srt
 Wusterhausener Str. (Eichwalde): guter Asphalt	Q0 25651,-3855 25678,-3957 25752,-4178 25763,-4283
 #: by: Andre (kaeding):
 #: corrected_by: Christoph Ewert (gute Qualität -> Asphalt)
@@ -6183,7 +6198,7 @@ Am Stinthorn (Neu Fahrland): mäßiger Asphalt	Q2 -13779,4233 -13763,4232 -13735,4
 #: confirmed_by: srt
 Gosener Str. (Eichwalde): Fahrbahn grobes Kopfsteinpflaster, Gehweg besser	Q3 26192,-2847 26102,-2822 25836,-2749 25579,-2680 25570,-2679
 #: note: "Gehweg gepflastertert im schlechten Zustand, wird aber häufig von Radfaherer genutzt, da noch besser als die Fahrbahn"
-Bahnhofstr. (Eichwalde): Fahrbahn sehr grobes Kopfsteinpflaster, Gehweg besser	Q3 26102,-2822 25912,-2958 25730,-3091 25567,-3189 25400,-3285
+Bahnhofstr. (Eichwalde): Fahrbahn sehr grobes Kopfsteinpflaster, Gehweg besser	Q2- 26102,-2822 25912,-2958 25730,-3091 25567,-3189 25400,-3285
 Bahnhofstr. (Eichwalde): Asphalt	Q0 25400,-3285 25290,-3350 25179,-3418 25088,-3470
 #: by: ^^^
 # 
@@ -6212,9 +6227,9 @@ Freiligrathstr.: mäßiger Asphalt	Q1- -9130,-1676 -9131,-1465
 # 
 #: by: Roland Krause: vvv
 #: corrected_by: srt (mäßiges Kopfsteinpflaster -> schlechtes Kopfsteinpflaster; added Radwege) (zumindest im Norden)
-Grünauer Str.: Fahrbahn schlechtes Kopfsteinpflaster, Gehweg für Radfahrer freigegeben	Q2+ 25182,-2915 25223,-2974 25295,-3103 25320,-3153 25400,-3285
-#: XXX aber Eva Meurer meint: "ein Fahrradweg los, auf dem man über Zeuthen, Wildau bequem nach Königs Wusterhausen kommt"
-Grünauer Str.: Fahrbahn schlechtes Kopfsteinpflaster, schmale Verbundsteinpflastergehwege	Q2+ 25400,-3285 25456,-3375 25506,-3465 25556,-3547 25610,-3647 25635,-3723
+Grünauer Str.: Fahrbahn schlechtes Kopfsteinpflaster, Verbundsteinpflaster-Gehweg für Radfahrer freigegeben	Q1- 25182,-2915 25219,-2975 25295,-3103 25320,-3153 25400,-3285
+#: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...)
+Grünauer Str.: Asphalt	Q0 25400,-3285 25449,-3365 25499,-3453 25556,-3547 25610,-3647 25635,-3723
 #: by: ^^^
 # 
 #: by: Thomas Vieweg

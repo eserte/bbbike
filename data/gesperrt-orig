@@ -1427,6 +1427,7 @@ Wilhelm-Busch-Str.	1 25206,-4014 25119,-4096
 Miersdorf	1 24955,-6980 25077,-6942 25186,-6969
 Miersdorf	1 25186,-6969 25092,-6993 24955,-6980
 ehemalige B179	1 26445,-14110 26465,-14385
+Bahnstr.	1s:q3 25997,-6245 26045,-6360
 ######################################################################
 # elsewhere not in Brandenburg
 B104: Mittelstreifen nicht überquerbar	3nocross -974,128015 -724,127995 6,127935 298,127911
@@ -2278,6 +2279,8 @@ tragen (mehrere Treppen mit insgesamt 45 Stufen und Kinderwagenrampe)	0:90 3514,
 tragen (Treppe, 18 Stufen)	0:25 25902,-6006
 tragen (Treppe, 19 Stufen)	0:25 25928,-5990
 tragen (Treppe)	0:120 -14199,-707
+#: note: zum RE-Bahnsteig sind es noch fünf zusätzliche Stufen, Aufzüge existieren
+tragen (Treppe, 22 Stufen)	0:30 26337,-11817
 #
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)

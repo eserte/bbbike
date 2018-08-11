@@ -4102,19 +4102,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '#: note: genaues Endedatum by fritz
-# REMOVED (ja) --- #: add_fragezeichen: Ist die Stubenrauchbrücke tatsächlich für Radfahrer gesperrt?
-#: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/spreequerung-bleibt-bis-august-voll-gesperrt_a164513
-#: osm_watch: way id="4540244" version="18"
-	q3::inwork; 17432,6352 17492,6462 17528,6502
-',
-         'from' => undef,
-         'id' => 2957,
-         'source_id' => '2147342600',
-         'text' => 'Karlshorster Str.: Fahrbahn der Stubenrauchbrücke in Richtung Osten gesperrt, Radfahrer müssen auf den Gehweg ausweichen, bis Mitte August 2018',
-         'until' => 1534003200
-       },
+       undef,
        undef,
        {
          'data' => '#: XXX vielleicht wird die Fahrbahn repariert?
@@ -4204,15 +4192,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: VERLWERDERSTR-2018
 #: by: https://www.berliner-woche.de/altglienicke/c-bauen/werderstrasse-wird-ausgebaut_a169172
-#: add_fragezeichen: können Radfahrer vielleicht doch passieren?
+#: XXX nach den Bauarbeiten vermutlich Verbundsteinpflaster oder Betonpflaster
+#: last_checked: 2018-08-11
 	2::inwork 20245,2152 20261,2114 20222,2037 20214,1988 20187,1930 20166,1864 20120,1791 20093,1776 20064,1777
 ',
          'from' => 1530396000,
          'id' => 2973,
          'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.713900.php',
-         'text' => 'Verlängerte Werderstr.: Bauarbeiten, unter Umständen ist die Durchfahrt nicht möglich, vom 2. Juli 2018 bis Ende Mai 2019',
+         'text' => 'Verlängerte Werderstr.: Bauarbeiten, unter Umständen ist die Durchfahrt nicht möglich, bis Juni 2019',
          'type' => 'gesperrt',
-         'until' => 1559339999
+         'until' => 1561910400
        },
        {
          'data' => '#: next_check_id: FRIESEN-2018
