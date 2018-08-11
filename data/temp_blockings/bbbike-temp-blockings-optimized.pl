@@ -3345,7 +3345,29 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- : tempex YYYY09 & sa2 & T14-T18
+# REMOVED --- : tempex YYYY09 & sa3 & T14-T18
+#: tempex YYYY09 & sa1 & T12-T21
+	2::temp 5857,13342 5868,13441 5882,13548
+',
+         'from' => 1535666400,
+         'id' => 2625,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              31,
+                              'months',
+                              8
+                            ]
+                          ],
+         'source_id' => 'https://misch-mit.net/moabiter-kiezfest-1-september-2018/',
+         'text' => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 1. September 2018, 12 bis 21 Uhr ',
+         'type' => 'gesperrt',
+         'until' => 1535839199
+       },
        undef,
        undef,
        undef,
@@ -3964,7 +3986,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: last_checked: 2018-06-29 vvv
+         'data' => '#: last_checked: 2018-08-10 vvv
 # XXX_prog: eigentlich q3-
 	q4::inwork 7136,9223 7012,9222
 	q2::inwork 7136,9223 7130,9316
@@ -4108,16 +4130,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1534888800
        },
-       {
-         'data' => '	q2::inwork 20354,11500 20521,11494
-',
-         'from' => 1527186792,
-         'id' => 2960,
-         'source_id' => '2147342638',
-         'text' => 'Weißenhöher Str. : Bauarbeiten an der Kreuzung Grabensprung, bis Mitte August 2018',
-         'type' => 'handicap',
-         'until' => 1533916800
-       },
+       undef,
        {
          'data' => '#: by: fritz
 	q4::inwork 4124,12721 4055,12713 3949,12710
@@ -4154,17 +4167,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1538258400
        },
-       {
-         'data' => '#: source_id: 2147342927
-	q3::inwork 3665,8131 3218,8233 3117,8248
-',
-         'from' => 1528137944,
-         'id' => 2966,
-         'source_id' => '2147342702',
-         'text' => 'Forckenbeckstr.: Bauarbeiten zwischen Mecklenburgische Str. und Cunostr., Fahrbahn gesperrt, der schmale Bürgersteig muss benutzt werden, bis Mitte August 2018',
-         'type' => 'gesperrt',
-         'until' => 1534348800
-       },
+       undef,
        undef,
        {
          'data' => '#: XXX eventuell hängen die Bauarbeiten mit den Bauarbeiten in der Eldenaer Str. zusammen
@@ -4238,7 +4241,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1534197600
        },
-       undef,
+       {
+         'data' => '#: note: laut fritz & vmz längere Sperrung
+#: source_id: 2147342845
+# REMOVED (hier nicht) --- q4::inwork; 25519,4830 25552,4829 25720,4832
+	q4::inwork; 25720,4832 25802,4823 25948,4823 26085,4865 26236,4926 26340,4942 26500,4936 26620,4936
+',
+         'from' => 1530482400,
+         'id' => 2977,
+         'source_id' => 'https://www.berliner-woche.de/friedrichshagen/c-verkehr/der-mueggelseedamm-ist-dicht_a170522',
+         'text' => 'Müggelseedamm: zwischen Scharnweberstr. und Werlseestr. Bauarbeiten, offen Richtung Westen, 3. Juli 2018 bis 13. August 2018',
+         'type' => 'handicap',
+         'until' => 1534176000
+       },
        {
          'data' => '#: next_check_id: HEGEMEISTERWEG-2018
 	2::inwork 17522,8220 17202,8391
@@ -4378,15 +4393,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1534694400
        },
-       {
-         'data' => '	q4::inwork; 22147,9841 22129,9702 22116,9585
-',
-         'from' => 1533580222,
-         'id' => 2993,
-         'text' => 'Chemnitzer Str.: zwischen Norastr, und Eschelberger Weg Bauarbeiten, Fahrbahn gesperrt, bis voraussichtlich 17.08.2018',
-         'type' => 'handicap',
-         'until' => 1534543200
-       },
+       undef,
        {
          'data' => '	2::inwork 25929,-5994 25902,-6006
 ',
