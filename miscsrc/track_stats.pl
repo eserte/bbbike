@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2010,2012,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2010,2012,2015,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -55,6 +55,7 @@ my $v;
 my $tsv;
 my $coordsys;
 my $reverse;
+my $max_difftime;
 GetOptions("stage=s" => \$start_stage,
 	   "state=s" => \$state_file,
 
@@ -73,6 +74,8 @@ GetOptions("stage=s" => \$start_stage,
 	   'filterstat=s@' => \@filter_stat,
 
 	   'coordsys=s' => \$coordsys,
+
+	   "max-difftime=i" => \$max_difftime,
 
 	   "reverse!" => \$reverse,
 	   "tsv" => \$tsv,
@@ -349,6 +352,10 @@ sub stage_trackdata {
 			$result->{to} = $intersect_wpt;
 			$result->{totime} = $epoch;
 			$result->{difftime} = $result->{totime} - $result->{fromtime};
+			if ($max_difftime && $result->{difftime} > $max_difftime) {
+			    warn "difftime too large: $result->{difftime} > $max_difftime, skipping chunk from $file\n";
+			    next PARSE_TRACK;
+			}
 			$result->{length} = $length;
 			$result->{velocity} = $result->{length} / $result->{difftime};
 			$result->{file} = $file;
