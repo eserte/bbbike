@@ -641,7 +641,7 @@ Brixener Str.: Kopfsteinpflaster	Q2 10507,17400 10502,17419 10466,17464
 #: XXX wird nach den Bauarbeiten die Qualit‰t besser sein?
 #: source_id: 2147342929
 #: priority: #B
-#: last_checked: 2018-08-11
+#: last_checked: 2018-08-12
 #: next_check: 2018-08-31
 Helmerdingstr.: Kopfsteinpflaster	Q2 14442,11101 14468,11203
 # 
@@ -1248,7 +1248,7 @@ Liepnitzstr.: Asphalt	Q0 17803,8079 17856,8162 17920,8256 17961,8312 17988,8350 
 # 
 #: next_check_id: HEGEMEISTERWEG-2018
 #: XXX Straﬂe wird asphaltiert, laut Bauschild bis November 2018 fertig
-#: last_checked: 2018-08-02
+#: last_checked: 2018-08-12
 Hegemeisterweg: provisorische Baustraﬂe, sandig	Q3 17202,8391 17522,8220
 # 
 Hegemeisterweg: Asphalt	Q0 17522,8220 17566,8199
@@ -10188,7 +10188,7 @@ Uferstr. (Niederschˆneweide): Asphalt	Q0 17681,6212 17847,6089
 (Sportpromenade - Bammelecke): Waldweg	Q2+ 25537,167 25564,340 25483,446
 Waldkiefernring: Asphalt	Q0 21855,2392 21754,2329 21782,2283 21885,2343
 F‰henweg: Asphalt	Q0 21869,2367 21791,2323
-Sportpromenade: Asphalt mit einigen Sch‰den und Wurzelhebungen	Q1+ 25646,-209 25574,-38 25537,167 25461,254 25172,345 24827,354 24743,370 24666,436
+Sportpromenade: Asphalt mit einigen Sch‰den und Wurzelhebungen	Q1- 25646,-209 25574,-38 25537,167 25461,254 25172,345 24827,354 24743,370 24666,436
 Mauerpark: Kleinsteinpflaster	Q1 10188,15474 10228,15488 10234,15490
 # REMOVED (nein, by mapillary) --- #: XXX hat sich mit der Neugestaltung etwas ge‰ndert? --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.635732.php
 Zeppelinplatz: Kleinsteinpflaster	Q1 6794,15553 6884,15456
@@ -10734,6 +10734,10 @@ Pepitapromenade: Betonpflaster	Q0 -2856,17489 -2873,17369 -2878,17324
 (Gandenitzer Weg - Quickborner Str.): Asphalt	Q0 7549,21524 7713,21484 7782,21508 7802,21553 7853,21557 7939,21600
 Waldstr.: schlechtes Kopfsteinpflaster	Q3+ 22985,-1319 23042,-1297
 Waldstr.: Beton	Q0- 22003,-1625 22257,-1533 22362,-1509 22685,-1421 22985,-1319
+#: XXX wie wird die Straﬂe nach Ende der Bauarbeiten aussehen?
+#: last_checked: 2018-08-12
+#: check_frequency: 90d
+Relingstr.: provisorischer Asphalt	Q1 22195,2390 22276,2426 22358,2460
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv

@@ -1974,7 +1974,7 @@ EOF
        text  => 'L 30; (Tiergartenstr.); OT Neue Mühle, Schleuse Straßenbauarbeiten Vollsperrung 09.05.2005-13.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	2 27543,-11912 27544,-11856 27620,-11806 27657,-11741
+	2 27543,-11912 27534,-11883 27541,-11868 27620,-11806 27649,-11766
 EOF
      },
      { from  => 1122760800, # 2005-07-31 00:00
@@ -1982,7 +1982,7 @@ EOF
        text  => 'B 179; (Cottbuser-/ Fichtestr.); OL Königs Wusterhausen, Bahnübergang Fichtestr. Umbau Bahnübergang Vollsp * 01.08.2005-14.08.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 26313,-13049 26205,-12769 26138,-12596 26031,-12300
+	2 26313,-13049 26217,-12789 26138,-12596 26031,-12300
 EOF
      },
      { from  => 1114725600, # 2005-04-29 00:00
@@ -3637,7 +3637,7 @@ EOF
        text  => 'B 179 Cottbuser-/ Fichtestr. OL Königs Wusterhausen, Bahnübergang Fichtestr. Umbau Bahnübergang Vollsperrung 02.01.2006-23.01.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 26313,-13049 26205,-12769 26138,-12596 26031,-12300
+	2 26313,-13049 26217,-12789 26138,-12596 26031,-12300
 EOF
      },
      { from  => 1134860400, # 2005-12-18 00:00
@@ -4246,7 +4246,7 @@ EOF
        text  => 'L 030 Tiergartenstr. OL Königs Wusterhausen, Schleusenbrücke Brückenreparatur Vollsperrung 24.04.2006-27.04.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 27543,-11912 27544,-11856 27620,-11806 27657,-11741
+	2 27543,-11912 27534,-11883 27541,-11868 27620,-11806 27649,-11766
 EOF
      },
      { from  => 1144959197, # 2006-04-13 22:13
@@ -10008,7 +10008,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006673',
        data  => <<EOF,
-	1::inwork 19273,5866 19388,5883 19403,5885 19650,5920 19681,5924 19958,5950
+	1::inwork 19273,5866 19388,5883 19403,5885 19650,5920 19681,5924 19795,5935 19958,5950
 EOF
      },
      { from  => 1187992800, # 2007-08-25 00:00
@@ -22199,7 +22199,7 @@ EOF
        data  => <<EOF,
 #: note: der zweite Bauabschnitt dürfte für Radfahrer nicht relevant sein, siehe
 #: by: http://www.htw-berlin.de/uploads/media/Bauabschnitt-2-Umleitung-Wilhelminenhof.pdf
-	q4::inwork; 19958,5950 19681,5924 19650,5920 19403,5885 19388,5883 19273,5866 19024,5830 18932,5926
+	q4::inwork; 19958,5950 19795,5935 19681,5924 19650,5920 19403,5885 19388,5883 19273,5866 19024,5830 18932,5926
 EOF
      },
      { from  => 1378332000, # 2013-09-05 00:00
@@ -27220,7 +27220,7 @@ EOF
        source_id => '2147342639',
        data  => <<EOF,
 #: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-07-29
+#: last_checked: 2018-08-12
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -27270,7 +27270,7 @@ EOF
        type  => 'handicap',
        source_id => '2147342666',
        data  => <<EOF,
-	q4::inwork 19958,5950 19681,5924
+	q4::inwork 19958,5950 19795,5935 19681,5924
 EOF
      },
      { from  => undef, # 
@@ -27330,7 +27330,7 @@ EOF
 #: XXX eventuell hängen die Bauarbeiten mit den Bauarbeiten in der Eldenaer Str. zusammen
 #: XXX wird danach komplett asphaltiert sein?
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=42743 (sogar bis 2018-09-17)
-#: last_checked: 2018-08-07
+#: last_checked: 2018-08-12
 	q4::inwork; 14096,12827 14058,12709 13911,12692
 EOF
      },

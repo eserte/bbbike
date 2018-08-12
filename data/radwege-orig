@@ -1163,7 +1163,7 @@ neu asphaltiert	RW1; 17769,7465 17681,7589
 #: source_id: LMS-BR_r_LMS-BR_98104
 #: source_id: 2147342856
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/markierung-auf-der-rummelsburger-landstrasse-aufgebracht_a170936
-#: last_checked: 2018-08-02 vvv
+#: last_checked: 2018-08-12 vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: next_check: 2018-12-31 vvv
 #: note: hier existiert auch ein neu asphaltierter Radweg, aber Radfahrer werden zum geschützten Radweg geführt
@@ -3620,6 +3620,7 @@ relativ enger Verbundsteinpflasterradweg	RW1; 21363,3699 21414,3757 21489,3841 2
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/glienicker-strasse-bleibt-dicht_a175130 (Bauarbeiten der Wasserbetriebe)
 #: source_id: 2147342854
 #: priority: #C
+#: last_checked: 2018-08-12
 #: next_check: 2018-08-17
 relativ enger Verbundsteinpflasterradweg, die letzten 40 Meter sind benutzungspflichtig	RW1; 21679,4059 21829,4212
 	RW1; 21829,4212 21679,4059 21496,3849 21489,3841
@@ -5184,7 +5185,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW1; 17919,6968 17919,6978 17934,7029
 # 
 #: XXX bleiben die Radspuren? vvv
-#: last_checked: 2018-07-31 vvv
+#: last_checked: 2018-08-12 vvv
 provisorische Radspur	RW4; 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072 17930,6175 17952,6246 17991,6431
 provisorische Radspur,benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
 provisorische Radspur	RW4; 17962,6674 17919,6968
@@ -5196,3 +5197,4 @@ asphaltierter Radweg auf den letzten Metern zur Ampel	RW0; 7444,9148 7382,9187
 Gehweg für Radfahrer frei	RW1; -264,13009 -309,13268
 	RW6;RW6 10234,15490 10456,15561
 	RW1; 4545,22312 4604,22332 4658,22350
+teilweise Radspuren, teilweise asphaltierte Straßenbahncaps	RW1;RW1 19681,5924 19795,5935
