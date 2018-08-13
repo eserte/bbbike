@@ -3825,7 +3825,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => undef,
          'id' => 2888,
-         'text' => 'Rigaer Str.: Baustelle, während der Arbeitszeiten (Mo bis Fr, 6 bis 17 Uhr) kein Durchgang möglich',
+         'text' => 'Rigaer Str.: Baustelle, während der Arbeitszeiten (Mo bis Sa, 6 bis 17 Uhr) kein Durchgang möglich',
          'type' => 'gesperrt',
          'until' => 1551351600
        },
@@ -3939,7 +3939,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-08-01 vvv
+#: last_checked: 2018-08-13 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4230,19 +4230,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1534197600
        },
-       {
-         'data' => '#: note: laut fritz & vmz längere Sperrung
-#: source_id: 2147342845
-# REMOVED (hier nicht) --- q4::inwork; 25519,4830 25552,4829 25720,4832
-	q4::inwork; 25720,4832 25802,4823 25948,4823 26085,4865 26236,4926 26340,4942 26500,4936 26620,4936
-',
-         'from' => 1530482400,
-         'id' => 2977,
-         'source_id' => 'https://www.berliner-woche.de/friedrichshagen/c-verkehr/der-mueggelseedamm-ist-dicht_a170522',
-         'text' => 'Müggelseedamm: zwischen Scharnweberstr. und Werlseestr. Bauarbeiten, offen Richtung Westen, 3. Juli 2018 bis 13. August 2018',
-         'type' => 'handicap',
-         'until' => 1534176000
-       },
+       undef,
        {
          'data' => '#: next_check_id: HEGEMEISTERWEG-2018
 	2::inwork 17522,8220 17202,8391
