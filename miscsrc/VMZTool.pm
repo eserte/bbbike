@@ -14,7 +14,7 @@
 package VMZTool;
 
 use strict;
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 use File::Basename qw(basename);
 use HTML::FormatText 2;
@@ -22,7 +22,9 @@ use HTML::TreeBuilder;
 use HTML::Tree;
 use JSON::XS qw(decode_json);
 use LWP::UserAgent ();
+use POSIX qw(strftime);
 use URI ();
+use URI::Escape qw(uri_escape);
 use URI::QueryParam ();
 use XML::LibXML ();
 
@@ -38,8 +40,17 @@ BEGIN {
 use Karte::Polar;
 use Karte::Standard;
 
+# the following two are out-of-order
 use constant MELDUNGSLISTE_URL => 'http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungsliste.jsp?back=true';
 use constant MELDUNGSKARTE_URL => 'http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true';
+
+use constant EPOCH_NOW => time;
+use constant ISO8601_NOW => do {
+    my $s = strftime "%FT%T%z", localtime EPOCH_NOW;
+    $s =~ s{(\d\d)(\d\d)$}{$1:$2};
+    $s;
+};
+use constant BIBER_URL => "https://biberweb.vmz.services/v3/incidents/biber?bbox=10.66,51.2,15.68,53.74&detail=HIGH&lang=de&timeFrom=" . uri_escape(ISO8601_NOW) . "&_=" . (EPOCH_NOW*1000);
 
 # @TIMER@ is replaced here:
 #use constant MELDUNGSLISTE_BERLIN_URL_FMT => 'http://www.vmz-info.de/web/guest/home?p_p_id=vizmessages_WAR_vizmessagesportlet_INSTANCE_Him5&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=ajaxPoiListUrl&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_pos=1&p_p_col_count=2&_vizmessages_WAR_vizmessagesportlet_INSTANCE_Him5_locale=de_DE&_vizmessages_WAR_vizmessagesportlet_INSTANCE_Him5_url=http%3A%2F%2Fwms.viz.mobilitaetsdienste.de%2Fpoint_list%2F%3Flang%3Dde&timer=@TIMER@&category=trafficmessage&state=BB';
@@ -96,6 +107,15 @@ sub fetch_mappage {
     my $resp = $ua->mirror(MELDUNGSKARTE_URL, $file);
     if (!$resp->is_success) {
 	die "Failed while fetching " . MELDUNGSKARTE_URL . ": " . $resp->as_string;
+    }
+}
+
+sub fetch_biber {
+    my($self, $file) = @_;
+    my $ua = $self->{ua};
+    my $resp = $ua->get(BIBER_URL, ':content_file' => $file); # can't use mirror(), we get a java.text.ParseException
+    if (!$resp->is_success) {
+	die "Failed while fetching " . BIBER_URL . ": " . $resp->as_string;
     }
 }
 
@@ -319,6 +339,134 @@ sub parse_berlin_summary {
     );
 }
 
+sub parse_biber {
+    my($self, $biber_file) = @_;
+
+    my %id2rec;
+    my %place2rec;
+
+    my $iso2german = sub {
+	my($date) = @_;
+	if ($date =~ m{
+			  ^
+			  (?<y>\d{4})-(?<m>\d{2})-(?<d>\d{2})
+			  T
+			  (?<H>\d{2}):(?<M>\d{2})
+		  }x) {
+	    if ($+{y} >= 2100) { return undef } # yes, happens, often enough
+	    my $date = "$+{d}.$+{m}.$+{y}";
+	    my $time = "$+{H}:$+{M}";
+	    if ($time eq '00:00') {
+		$date;
+	    } else {
+		"$date $time";
+	    }
+	} else {
+	    undef;
+	}
+    };
+
+    my $get_all_validities = sub {
+	my($validities) = @_;
+	my %seen;
+	my @texts;
+	for my $validity (@$validities) {
+	    my($timeFromGerman, $timeToGerman);
+	    my $timeFrom = $validity->{timeFrom};
+	    if ($timeFrom) {
+		$timeFromGerman = $iso2german->($timeFrom);
+	    }
+	    my $timeTo = $validity->{timeTo};
+	    if ($timeTo) {
+		$timeToGerman = $iso2german->($timeTo);
+	    }
+	    my $text;
+	    if ($timeFromGerman && !$timeToGerman) {
+		$text = "ab $timeFromGerman";
+	    } else {
+		$timeToGerman ||= "";
+		$text = "$timeFromGerman bis $timeToGerman";
+	    }
+	    if (!$seen{$text}++) {
+		push @texts, $text;
+	    }
+	}
+	join(", ", @texts) . "\n";
+    };
+
+    my $data = do {
+	open my $fh, $biber_file
+	    or die "Error opening $biber_file: $!";
+	local $/;
+	decode_json scalar <$fh>;
+    };
+
+    for my $element (@$data) {
+
+	my $id;
+	if ($element->{messageId}) {
+	    # prefer messageId over id: for biber data it's
+	    # "LS/721-F/18/087" instead of "LS_721-F_18_087"
+	    $id = $element->{messageId};
+	} elsif ($element->{id}) {
+	    ($id = $element->{id}) =~ s{\@Concert$}{};
+	} else {
+	    warn "No id or messageId available, skipping element...";
+	    next;
+	}
+
+	my $place;
+	if ($element->{roadSections}) {
+	    $place = $element->{roadSections}->[0]->{locationInformation}->{municipalitiy}; # sic!
+	} else {
+	    $place = $element->{address}->{state};
+	}
+
+	my $points = [ { 
+			lat => $element->{location}->{coordinates}->[1],
+			lon => $element->{location}->{coordinates}->[0],
+		       }];
+	my $streets = $element->{streets};
+	my $text;
+	my $description_done;
+	my $streets_done;
+	if ($element->{details}) {
+	    $text .= "$element->{description}\n$element->{details}\n";
+	    $description_done++;
+	} else {
+	    if ($element->{streets}) {
+		$text .= "@{ $element->{streets} }\n";
+		$streets_done++;
+	    }
+	    if ($element->{section}) {
+		$text .= "$element->{section}\n\n";
+	    }
+	}
+	$text .= $get_all_validities->($element->{validities});
+	if (!$description_done && $element->{description}) {
+	    $text .= $element->{description};
+	}
+	if (!$streets_done && $element->{streets}) {
+	    $text .= "Strassen: @{ $element->{streets} }\n";
+	}
+	my $rec = 
+	    {
+	     id      => $id,
+	     place   => $place,
+	     points  => $points,
+	     streets => $streets,
+	     text    => $text,
+	    };
+	$id2rec{$id} = $rec;
+	push @{ $place2rec{$place} }, $rec;
+    }
+
+    (place2rec => \%place2rec,
+     id2rec => \%id2rec,
+     parsed_at => scalar(localtime),
+    );
+}
+
 sub as_bbd {
     my($self, $place2rec, $old_store) = @_;
     my $old_id2rec = $old_store ? $old_store->{id2rec} : undef;
@@ -452,7 +600,8 @@ my $new_store_file;
 my $out_bbd;
 my $do_fetch = 1;
 my $do_test;
-my $do_aspurls = 1;
+my $do_aspurls = 0;
+my $do_biberurl = 1;
 my $existsid_current_file; # typically bbbike/tmp/bbbike-temp-blockings-optimized-existsid.yml
 my $existsid_all_file; # typically bbbike/tmp/bbbike-temp-blockings-existsid.yml
 GetOptions("oldstore=s" => \$old_store_file,
@@ -463,6 +612,7 @@ GetOptions("oldstore=s" => \$old_store_file,
 	   "fetch!" => \$do_fetch,
 	   "test!" => \$do_test,
 	   "aspurls!" => \$do_aspurls,
+	   "biberurl!" => \$do_biberurl,
 	  )
     or die "usage?";
 
@@ -494,6 +644,7 @@ my($tmpfh, $file);
 my($tmp2fh, $mapfile);
 my($tmp3fh, $berlinsummaryfile);
 my($tmp4fh, $vmzrssfile);
+my($tmp5fh, $biberfile);
 if ($do_test) {
     my $samples_dir = "$ENV{HOME}/src/bbbike-aux/samples";
     if ($do_aspurls) {
@@ -502,11 +653,15 @@ if ($do_test) {
     }
     $berlinsummaryfile = "$samples_dir/vmz-2016.json";
     $vmzrssfile        = "$samples_dir/vmz-2015.rss";
+    if ($do_biberurl) {
+	$biberfile  = "$samples_dir/XXX"; # NYI
+    }
 } elsif ($do_fetch) {
     ($tmpfh,$file)     = tempfile(UNLINK => 1) or die $!;
     ($tmp2fh,$mapfile) = tempfile(UNLINK => 1) or die $!;
     ($tmp3fh,$berlinsummaryfile) = tempfile(UNLINK => 1) or die $!;
     ($tmp4fh,$vmzrssfile) = tempfile(UNLINK => 1) or die $!;
+    ($tmp5fh,$biberfile) = tempfile(UNLINK => 1) or die $!;
     eval {
 	if ($do_aspurls) {
 	    $vmz->fetch($file);
@@ -514,6 +669,9 @@ if ($do_test) {
 	}
 	$vmz->fetch_berlin_summary($berlinsummaryfile);
 	$vmz->fetch_vmz_rss($vmzrssfile);
+	if ($do_biberurl) {
+	    $vmz->fetch_biber($biberfile);
+	}
     };
     if ($@) {
 	$File::Temp::KEEP_ALL = 1;
@@ -528,6 +686,15 @@ if ($file && $mapfile) {
 } elsif (-r $new_store_file) {
     my $res = BBBikeYAML::LoadFile($new_store_file);
     %res = %$res;
+}
+if ($biberfile) {
+    my %biber_res = $vmz->parse_biber($biberfile);
+    while(my($id,$rec) = each %{ $biber_res{id2rec} }) {
+	if (!exists $res{id2rec}->{$id}) {
+	    $res{id2rec}->{$id} = $rec;
+	    push @{ $res{place2rec}->{$rec->{place}} }, $rec;
+	}
+    }
 }
 if ($berlinsummaryfile && $vmzrssfile) {
     my %berlin_rss_res = $vmz->parse_vmz_rss($vmzrssfile);
