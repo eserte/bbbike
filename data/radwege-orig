@@ -1808,6 +1808,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: XXX vermutlich werden hier Radspuren entstehen
 #: by: http://www.berliner-woche.de/prenzlauer-berg/verkehr/storkower-strasse-senat-stellt-dem-bezirk-mittel-fuer-den-bau-eines-radstreifens-in-aussicht-d142987.html
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4624
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat_05-12-2017.pdf
 #: last_checked: 2018-07-29 (mapillary)
 #: next_check: 2018-09-01
 	RW1;RW1 13438,14675 13731,14200 13879,13967
@@ -3695,7 +3696,8 @@ Richtung NW teilweise nur 50cm breit	RW3;RW3 8607,15426 8456,15235
 #: by: Karl Timm:
 #: confirmed_by: srt
 	RW6;RW6 -3248,15543 -3041,15434
-	RW1;RW1 6006,4127 6051,4151 6120,4214 6162,4264 6210,4325
+asphaltiert	RW1; 6051,4151 6120,4214 6162,4264 6210,4325
+	RW1; 6210,4325 6162,4264 6120,4214 6051,4151 6006,4127
 mäßiger Radweg und für Radfahrer freigegebene Busspur (Geltungszeiten Mo-Fr 14-19 Uhr)	RW1; 6120,4214 6248,4127 6295,4017 6315,3974 6324,3953 6378,3828
 neu asphaltierter Radweg und für Radfahrer freigegebene Busspur (Geltungszeiten Mo-Fr 14-19 Uhr)	RW1; 6378,3828 6412,3750 6435,3697
 neu asphaltierter Radweg und für Radfahrer freigegebene Busspur (Geltungszeiten Mo-Fr 6-19 Uhr)	RW1; 6412,3750 6378,3828

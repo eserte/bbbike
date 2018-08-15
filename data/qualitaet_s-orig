@@ -123,11 +123,13 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6293
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-10-12-prot-fahrratsitzung4_final_komplett.pdf
 #: osm_watch: way id="102486250" version="8"
-#: last_checked: 2018-07-01
+#: last_checked: 2018-08-15
 #: check_frequency: 90d
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7223,5890
 Priesterweg: Asphalt	Q0 7223,5890 7171,5831
 Hans-Baluschek-Park, Zugang: Verbundsteinpflaster	Q0- 7370,6451 7222,6458
+Hans-Baluschek-Park: Beton	Q0- 7252,6080 7278,6101 7305,6183
+Hans-Baluschek-Park: Asphalt	Q0 7305,6183 7393,6452 7605,7109 7707,7415 7747,7521 7787,7692
 Großgörschenstr.: mäßiges Kopfsteinpflaster	Q2 8186,9380 8086,9418 8035,9437 7960,9466
 Großgörschenstr.: Kopfsteinpflaster, OK	Q1 7771,9479 7882,9490
 Waldemarstr.: Kopfsteinpflaster	Q2+ 11552,10863 11328,10957
@@ -1386,7 +1388,7 @@ Riemenschneiderweg: Asphalt	Q0 6820,6522 6798,6755 6791,6821 6770,7027
 Riemenschneiderweg: Beton	Q0- 6770,7027 6762,7109
 Wuhlewanderweg (Ahrensfelder Berg): glatter Parkweg	Q1+ 22631,16215 22657,16287 22672,16341 22690,16383 22701,16451 22746,16596 22722,16906
 Wuhlewanderweg (Ahrensfelder Berg): glatter Parkweg	Q1+ 22722,16906 22611,17126 22432,17245 22349,17302
-#:by christel lehmann
+#: by christel lehmann
 Wuhlewanderweg (Ahrensfelder Berg): Feldweg	Q2 22349,17302 22240,17379 22103,17475 22002,17492
 (Feldweg nach Eiche): Kleinsteinpflaster	Q1- 22314,17916 22353,17920 22434,17863
 (Feldweg nach Eiche): Feldweg	Q2 22434,17863 22474,17858 22519,17879
@@ -9682,7 +9684,7 @@ Berliner Str. - Tiroler Str.: Asphalt	Q0 10917,17088 10891,17088 10862,17087
 Hildburghauser Str.: Asphalt	Q0 4795,1362 4897,1352 5059,1337 5223,1318
 #: note: unterschiedliche Qualität hier, reicht von Q1- bis Q1+
 Hildburghauser Str.: Asphalt mit Schäden	Q1 5223,1318 5414,1304 5585,1275 5741,1234 5795,1219 5867,1199 5909,1187 6010,1157 6106,1133 6145,1119 6199,1104 6276,1083 6294,1078 6386,1051 6467,1028 6515,1010 6631,968
-Badener Ring: Asphalt mit leichten Schäden	Q0- 8482,8364 8531,8404 8570,8427 8660,8454
+Badener Ring: Asphalt mit Schlaglöchern	Q1+ 8482,8364 8531,8404 8570,8427 8660,8454
 Stallupöner Allee: Beton	Q0 -1504,10736 -1305,10759 -976,10798 -909,10899
 Sonnenhof: Asphalt	Q0 606,9463 612,9471 600,9480 586,9463 590,9456 599,9452 606,9463
 Bläulingsweg: Asphalt	Q0 606,9463 688,9401
@@ -9762,7 +9764,7 @@ Alfred-Scholz-Platz: gepflastert	Q1 12753,8187 12779,8188 12805,8194
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.708083.php (während der Bauarbeiten Einbahnstraße Richtung Osten, Bauarbeiten bis Jahresende)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/die-feuerbachstrasse-wird-endlich-saniert_a168947
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php
-#: last_checked: 2018-03-25 (mapillary)
+#: last_checked: 2018-08-15
 #: next_check: 2018-09-26
 #: priority: #A
 Feuerbachstr.: Asphalt teilweise aufgebrochen	Q1; 5823,6413 6083,6451

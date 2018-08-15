@@ -20027,13 +20027,13 @@ EOF
 	2::inwork 872,24330 865,24114 793,24070 736,24068 601,24192 237,24374 195,24389 160,24390 132,24390 78,24364 -406,23934
 EOF
      },
-     { from  => $isodate2epoch->("2017-09-14 00:00:00"), # PERIODISCH, ca. 2. Wochenende im September
-       until => $isodate2epoch->("2017-09-17 23:59:59"),
+     { from  => $isodate2epoch->("2018-09-13 00:00:00"), # PERIODISCH, ca. 2. Wochenende im September
+       until => $isodate2epoch->("2018-09-16 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 14, months => 9]],
-       text  => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 15.09.2017 bis 17.09.2017',
+       recurrences => [['yearly', days => 13, months => 9]],
+       text  => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 14.09.2018 bis 16.09.2018',
        type  => 'handicap',
-       source_id => 'http://www.laubinger.de/termine/rosenthaler-herbst/?y=2017',
+       source_id => 'http://www.laubinger.de/termine/rosenthaler-herbst/?y=2018',
        data  => <<EOF,
 	q4::temp 8556,21918 8568,21863 8473,21633 8460,21602
 EOF
@@ -27381,7 +27381,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2018-06-22
+#: last_checked: 2018-08-15
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889 9801,8683
 EOF
      },
@@ -27406,6 +27406,8 @@ EOF
 #: next_check_id: FEUERBACH-2018
 #: XXX laut VMZ nur bis September 2018, laut BA Steglitz bis Dezember 2018
 #: source_id: 2147342919
+#: last_checked: 2018-08-15
+#: next_check: 2018-09-26
 	q4::inwork; 6168,6467 6083,6451 5823,6413
 EOF
      },
@@ -27561,6 +27563,8 @@ EOF
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/weitere-sperrungen-rund-um-die-feuerbachstrasse_a174881
 #: source_id: 2147342919
 #: source_id: 2147343007
+#: last_checked: 2018-08-15
+#: next_check: 2018-09-26
 	q4::inwork; 6168,6467 6083,6451 5823,6413
 	q4::inwork 6083,6451 6095,6358
 	q4::inwork; 6248,6388 6095,6358

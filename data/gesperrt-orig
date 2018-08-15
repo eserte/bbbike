@@ -62,7 +62,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: XXX Einbahnstraßenregelung wird aufgehoben (nicht vor Ende 2017)
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5334
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/zukunft-planen/stadtumbau-west/2016-11-03_stu-suedkreuzinfoveranstalt-doku-alle-praes.pdf
-#: last_checked: 2018-08-10
+#: last_checked: 2018-08-15
 #: check_frequency: 90d
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
 Alt-Mariendorf (Nord)	1 9732,3883 9831,3876 9953,3806
@@ -3075,7 +3075,7 @@ Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_16_1713_1768_online.pdf (Benennung)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_30_3365_3488_online.pdf (Grundstücksnummerierungen)
 #: by: http://www.berliner-woche.de/rummelsburg/bauen/neues-quartier-im-lichtenhain-erste-einblicke-fuer-anwohner-und-erwerber-d133845.html
-#: osm_watch: way id="609943358" version="1"
+#: osm_watch: way id="609943358" version="3"
 #: XXX vermutlich Sackgasse
 #: last_checked: 2018-07-27
 #: check_frequency: 60d
@@ -3366,7 +3366,7 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 # REMOVED --- #: XXX_osm laut osm nicht mehr gesperrt (stimmt aber nicht) --- #: osm_watch: way id="193373966" version="6" --- Patersdorfer Str.: fertiggestellt, aber noch gesperrt	2::inwork 19626,9171 19764,9160 19874,9151
 # REMOVED --- #: osm_watch: way id="193373957" version="5" --- Teisnacher Str.: fertiggestellt, aber noch gesperrt	2::inwork 19871,9680 19859,9473
 # 
-#: osm_watch: way id="269294892" version="1"
+# REMOVED (existiert nicht mehr, kein Ersatz) --- #: osm_watch: way id="269294892" version="2"
 #: last_checked: 2018-05-06
 #: check_frequency: 360d
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
