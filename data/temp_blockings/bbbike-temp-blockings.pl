@@ -24742,6 +24742,7 @@ EOF
 #: source_id: 2147342003
 #: source_id: 2147342198
 #: source_id: LMS-BR_r_LMS-BR_121392_LMS-BR_72
+#: source_id: 2147342842
 #: osm_watch: way id="57401090" version="12"
 #: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.639561.php (Ende 2018 oder Mitte 2019)
@@ -26770,7 +26771,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-08-13 vvv
+#: last_checked: 2018-08-14 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27192,11 +27193,10 @@ EOF
 EOF
      },
      { from  => undef,
-       until => $isodate2epoch->("2018-08-11 18:00:00"),
-       text  => "Karlshorster Str.: Fahrbahn der Stubenrauchbrücke in Richtung Osten gesperrt, Radfahrer müssen auf den Gehweg ausweichen, bis Mitte August 2018",
+       until => $isodate2epoch->("2018-08-31 18:00:00"),
+       text  => "Karlshorster Str.: Fahrbahn der Stubenrauchbrücke in Richtung Osten gesperrt, Radfahrer müssen auf den Gehweg ausweichen, bis Ende August 2018",
        source_id => "2147342600",
        data  => <<EOF,
-#: note: genaues Endedatum by fritz
 # REMOVED (ja) --- #: add_fragezeichen: Ist die Stubenrauchbrücke tatsächlich für Radfahrer gesperrt?
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/spreequerung-bleibt-bis-august-voll-gesperrt_a164513
 #: osm_watch: way id="4540244" version="18"
@@ -27397,9 +27397,9 @@ EOF
 #: last_checked ^^^
 EOF
      },
-     { from  => 1531519200, # 2018-07-14 00:00
-       until => $isodate2epoch->("2018-08-14 00:00:00"), # $isodate2epoch->("2018-09-26 18:00:00"), # 1546297199, # 2018-12-31 23:59
-       text  => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, voraussichtlich bis Ende September 2018',
+     { from  => $isodate2epoch->("2018-09-27 00:00:00"), # 1531519200, # 2018-07-14 00:00
+       until => $isodate2epoch->("2018-12-31 18:00:00"), # $isodate2epoch->("2018-08-14 00:00:00"), # $isodate2epoch->("2018-09-26 18:00:00"), # 1546297199, # 2018-12-31 23:59
+       text  => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, voraussichtlich bis Ende 2018',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php',
        data  => <<EOF,
@@ -27493,7 +27493,7 @@ EOF
 EOF
      },
      { from  => 1532620085, # 2018-07-26 17:48
-       until => 1533317340, # bei fritz entfernt --- $isodate2epoch->("2018-08-30 18:00:00"), # 1534370399, # 2018-08-15 23:59
+       until => $isodate2epoch->("2018-08-30 18:00:00"), # 1534370399, # 2018-08-15 23:59
        text  => 'Gotlindestr.: Bauarbeiten zwischen Ruschestr. und Freesienweg, Fahrbahn gesperrt, bis Ende August 2018',
        type  => 'handicap',
        source_id => '2147342912',
@@ -27550,16 +27550,17 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2018-08-14 00:00:00"), # 1531519200, # 2018-07-14 00:00
-       until => $isodate2epoch->("2018-12-31 18:00:00"), # 1546297199, # 2018-12-31 23:59
-       text  => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, weitere Einschränkungen in der Bismarckstr. und Poschingerstr., voraussichtlich bis Ende 2018',
+       until => $isodate2epoch->("2018-09-27 00:00:00"), # 1546297199, # 2018-12-31 23:59
+       text  => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, weitere Einschränkungen in der Bismarckstr. und Poschingerstr., voraussichtlich bis zum Ende 2018',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php',
        data  => <<EOF,
 #: next_check_id: FEUERBACH-2018
-#: XXX laut VMZ nur bis September 2018, laut BA Steglitz bis Dezember 2018
+#: XXX laut VMZ nur bis Ende Oktober 2018, laut BA Steglitz bis Dezember 2018
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.725875.php
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/weitere-sperrungen-rund-um-die-feuerbachstrasse_a174881
 #: source_id: 2147342919
+#: source_id: 2147343007
 	q4::inwork; 6168,6467 6083,6451 5823,6413
 	q4::inwork 6083,6451 6095,6358
 	q4::inwork; 6248,6388 6095,6358
@@ -27570,6 +27571,7 @@ EOF
        text => 'Grünberger Str.: Sperrung der Fahrbahn zwischen Kadiner Str. und Warschauer Str., Richtung Osten, voraussichtlich bis zum 19. August 2018',
        type => 'handicap',
        data => <<EOF,
+#: source_id: 2147342987
 	q4::inwork; 13515,11969 13696,11920
 EOF
      },
@@ -27588,6 +27590,24 @@ EOF
        source_id => 'https://www.zeuthen.de/Die-Deutsche-Bahn-informierte-Grunderneuerung-der-Personenunterfuehrung-am-S-Bahnhof-Zeuthen-642703.html',
        data  => <<EOF,
 	2::inwork 25929,-5994 25902,-6006
+EOF
+     },
+     { from  => 1532988000, # 2018-07-31 00:00
+       until => 1541026799, # 2018-10-31 23:59
+       text  => 'Spektegrünzug - Mauerweg: Bauarbeiten, Weg komplett gesperrt, zwischen August 2018 und Oktober 2018',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2018/pressemitteilung.729141.php',
+       data  => <<EOF,
+	2::inwork -7352,15954 -7347,15944 -7311,15931 -7280,15967 -7211,15920
+EOF
+     },
+     { from  => 1519686000, # 2018-02-27 00:00
+       until => 1544828400, # 2018-12-15 00:00
+       text  => 'Hoppegarten: Neubau der Eisenbahnbrücke, möglicherweise Vollsperrung, 27.02.2018 bis 14.12.2018',
+       type  => 'gesperrt',
+       source_id => '166401603',
+       data  => <<EOF,
+	2::inwork 28595,12846 28593,12671
 EOF
      },
     );

@@ -3573,6 +3573,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147342003
 #: source_id: 2147342198
 #: source_id: LMS-BR_r_LMS-BR_121392_LMS-BR_72
+#: source_id: 2147342842
 #: osm_watch: way id="57401090" version="12"
 #: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.639561.php (Ende 2018 oder Mitte 2019)
@@ -3939,7 +3940,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-08-13 vvv
+#: last_checked: 2018-08-14 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4102,7 +4103,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED (ja) --- #: add_fragezeichen: Ist die Stubenrauchbrücke tatsächlich für Radfahrer gesperrt?
+#: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/spreequerung-bleibt-bis-august-voll-gesperrt_a164513
+#: osm_watch: way id="4540244" version="18"
+	q3::inwork; 17432,6352 17492,6462 17528,6502
+',
+         'from' => undef,
+         'id' => 2957,
+         'source_id' => '2147342600',
+         'text' => 'Karlshorster Str.: Fahrbahn der Stubenrauchbrücke in Richtung Osten gesperrt, Radfahrer müssen auf den Gehweg ausweichen, bis Ende August 2018',
+         'until' => 1535731200
+       },
        undef,
        {
          'data' => '#: XXX vielleicht wird die Fahrbahn repariert?
@@ -4223,12 +4235,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147342919
 	q4::inwork; 6168,6467 6083,6451 5823,6413
 ',
-         'from' => 1531519200,
+         'from' => 1537999200,
          'id' => 2976,
          'source_id' => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php',
-         'text' => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, voraussichtlich bis Ende September 2018',
+         'text' => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, voraussichtlich bis Ende 2018',
          'type' => 'handicap',
-         'until' => 1534197600
+         'until' => 1546275600
        },
        undef,
        {
@@ -4290,7 +4302,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1543618799
        },
-       undef,
+       {
+         'data' => '	q4::inwork 16000,12625 15947,12626
+',
+         'from' => 1532620085,
+         'id' => 2985,
+         'source_id' => '2147342912',
+         'text' => 'Gotlindestr.: Bauarbeiten zwischen Ruschestr. und Freesienweg, Fahrbahn gesperrt, bis Ende August 2018',
+         'type' => 'handicap',
+         'until' => 1535644800
+       },
        {
          'data' => '	q4::inwork 51862,100638 51910,100091 51920,99933 51940,99551 52207,99132
 ',
@@ -4333,23 +4354,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1537048799
        },
-       {
-         'data' => '	2::temp 5986,10976 5829,10964 5716,10978 5652,11004
-	2::temp 5829,10964 5782,10884
-',
-         'from' => 1533225600,
-         'id' => 2990,
-         'source_id' => 'https://www.berliner-woche.de/charlottenburg/c-verkehr/umleitung-wegen-leichtathletik-em_a174266',
-         'text' => 'Budapester Str. am Breitscheidplatz: Sperrung der Fahrbahn (Tribünenbau für die Leichtathletik-EM), ab 3. August 2018 18 Uhr bis 14. August 2018 6 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1534219200
-       },
+       undef,
        {
          'data' => '#: next_check_id: FEUERBACH-2018
-#: XXX laut VMZ nur bis September 2018, laut BA Steglitz bis Dezember 2018
+#: XXX laut VMZ nur bis Ende Oktober 2018, laut BA Steglitz bis Dezember 2018
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.725875.php
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/weitere-sperrungen-rund-um-die-feuerbachstrasse_a174881
 #: source_id: 2147342919
+#: source_id: 2147343007
 	q4::inwork; 6168,6467 6083,6451 5823,6413
 	q4::inwork 6083,6451 6095,6358
 	q4::inwork; 6248,6388 6095,6358
@@ -4357,12 +4369,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1534197600,
          'id' => 2991,
          'source_id' => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php',
-         'text' => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, weitere Einschränkungen in der Bismarckstr. und Poschingerstr., voraussichtlich bis Ende 2018',
+         'text' => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, weitere Einschränkungen in der Bismarckstr. und Poschingerstr., voraussichtlich bis zum Ende 2018',
          'type' => 'handicap',
-         'until' => 1546275600
+         'until' => 1537999200
        },
        {
-         'data' => '	q4::inwork; 13515,11969 13696,11920
+         'data' => '#: source_id: 2147342987
+	q4::inwork; 13515,11969 13696,11920
 ',
          'from' => 1533579833,
          'id' => 2992,
@@ -4380,6 +4393,26 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Unterführung Bahnhof Zeuthen: wegen Bauarbeiten gesperrt, voraussichtlich bis Oktober 2019',
          'type' => 'gesperrt',
          'until' => 1572562800
+       },
+       {
+         'data' => '	2::inwork -7352,15954 -7347,15944 -7311,15931 -7280,15967 -7211,15920
+',
+         'from' => 1532988000,
+         'id' => 2995,
+         'source_id' => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2018/pressemitteilung.729141.php',
+         'text' => 'Spektegrünzug - Mauerweg: Bauarbeiten, Weg komplett gesperrt, zwischen August 2018 und Oktober 2018',
+         'type' => 'gesperrt',
+         'until' => 1541026799
+       },
+       {
+         'data' => '	2::inwork 28595,12846 28593,12671
+',
+         'from' => 1519686000,
+         'id' => 2996,
+         'source_id' => '166401603',
+         'text' => 'Hoppegarten: Neubau der Eisenbahnbrücke, möglicherweise Vollsperrung, 27.02.2018 bis 14.12.2018',
+         'type' => 'gesperrt',
+         'until' => 1544828400
        }
      
 );
