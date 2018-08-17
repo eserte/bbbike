@@ -13,6 +13,7 @@
 
 package VMZTool;
 
+use v5.10.0; # named captures
 use strict;
 our $VERSION = '0.07';
 
