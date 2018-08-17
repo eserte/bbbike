@@ -2208,7 +2208,26 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: by: http://www.family-and-friends-ev.de/ (update.pl bekommt hier aber einen Fehler)
+	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,11953
+',
+         'from' => 1537002000,
+         'id' => 1910,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              15,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbstzauber in Westend), Straße vollständig gesperrt (15.09.2018 bis 16.09.2018) ',
+         'type' => 'gesperrt',
+         'until' => 1537120800
+       },
        undef,
        undef,
        undef,
@@ -3942,10 +3961,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX bis wann ist die Durchfahrt gesperrt?
-#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00, 2018-07-26 gegen 19:30, 2018-07-27 gegen 10:45, 2018-07-28 gegen 10:00
+#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00, 2018-07-26 gegen 19:30, 2018-07-27 gegen 10:45, 2018-07-28 gegen 10:00, 2018-08-16 gegen 18:00
 #: source_id: 2147342009
 #: osm_watch: way id="154381291" version="5"
-#: last_checked: 2018-07-28
+#: last_checked: 2018-08-16
 #: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
 ',
@@ -4049,9 +4068,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1522789491,
          'id' => 2946,
          'source_id' => '2147341699',
-         'text' => 'Oranienburger Str.: Bauarbeiten zwischen Wittenauer Str. und Cyclopstr. Richtung Süden; außerdem Einbahnstraßenregelung in der Cyclopstr., offen Richtung Süden; bis Mitte Juli 2018',
+         'text' => 'Oranienburger Str.: Bauarbeiten zwischen Wittenauer Str. und Cyclopstr. Richtung Süden; außerdem Einbahnstraßenregelung in der Cyclopstr., offen Richtung Süden; voraussichtlich bis März 2019',
          'type' => 'handicap',
-         'until' => 1534521600
+         'until' => 1551459600
        },
        undef,
        undef,
@@ -4150,16 +4169,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1534888800
        },
        undef,
-       {
-         'data' => '#: by: fritz
-	q4::inwork 4124,12721 4055,12713 3949,12710
-',
-         'from' => 1527186848,
-         'id' => 2961,
-         'text' => 'Am Spreebord: Bauarbeiten, Passieren für Radfahrer möglich, aber sehr eng, Bordsteine, bis 17.08.2018',
-         'type' => 'handicap',
-         'until' => 1534543200
-       },
+       undef,
        undef,
        {
          'data' => '	2::inwork 9690,28645 10701,28420
@@ -4208,12 +4218,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: XXX eventuell hängen die Bauarbeiten mit den Bauarbeiten in der Eldenaer Str. zusammen
 #: XXX wird danach komplett asphaltiert sein?
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=42743 (sogar bis 2018-09-17)
-#: last_checked: 2018-08-12
-	q4::inwork; 14096,12827 14058,12709 13911,12692
+#: last_checked: 2018-08-17
+	q4::inwork 14096,12827 14058,12709 13911,12692
 ',
          'from' => undef,
          'id' => 2969,
-         'text' => 'Liebigstr. und Weidenweg: Bauarbeiten, Einbahnstraßenregelung',
+         'text' => 'Liebigstr. und Weidenweg: Bauarbeiten, Fahrbahn gesperrt',
          'type' => 'handicap',
          'until' => 1536940800
        },
@@ -4274,16 +4284,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1542236400
        },
-       {
-         'data' => '	q4::inwork; 4879,5017 4951,4920 4985,4884 5048,4798 5070,4770
-',
-         'from' => 1530655200,
-         'id' => 2979,
-         'source_id' => '2147342847',
-         'text' => 'Birkbuschstr.: Bauarbeiten zwischen Schützenstr. und Haydnstr., Richtung Siemensstr. gesperrt, bis Mitte August 2018',
-         'type' => 'handicap',
-         'until' => 1534521600
-       },
+       undef,
        {
          'data' => '#: XXX nach den Bauarbeiten bessere Qualität
 #: priority: #B
@@ -4319,17 +4320,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1530741600,
          'id' => 2984,
          'source_id' => '2147342925',
-         'text' => 'Finckensteinallee: zwischen Carstennstr. und Schottmüllerstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende November 2018 ',
+         'text' => 'Finckensteinallee: zwischen Carstennstr. und Schottmüllerstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis Anfang Oktober 2018 ',
          'type' => 'handicap',
-         'until' => 1543618799
+         'until' => 1538388000
        },
        {
-         'data' => '	q4::inwork 16000,12625 15947,12626
+         'data' => '	q4::inwork; 15947,12626 16000,12625
 ',
          'from' => 1532620085,
          'id' => 2985,
          'source_id' => '2147342912',
-         'text' => 'Gotlindestr.: Bauarbeiten zwischen Ruschestr. und Freesienweg, Fahrbahn gesperrt, bis Ende August 2018',
+         'text' => 'Gotlindestr.: Bauarbeiten zwischen Ruschestr. und Freesienweg, Fahrbahn Richtung Osten gesperrt, bis Ende August 2018',
          'type' => 'handicap',
          'until' => 1535644800
        },
@@ -4345,14 +4346,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: by: https://www.berliner-woche.de/koepenick/c-verkehr/seelenbinderstrasse-bleibt-bis-ende-august-dicht_a172757
-	q3::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710
+	q3::inwork; 23333,5710 23106,5758 22900,5740 22798,5731 22696,5728 22608,5732 22513,5747 22292,5774
 ',
          'from' => 1531605600,
          'id' => 2987,
          'source_id' => '2147342890',
-         'text' => 'Seelenbinderstr.: Richtung Salvador-Allende-Str. zwischen Bahnhofstr. und Bellevuestr. Gleisbauarbeiten, Fahrtrichtung gesperrt, Radfahrer müssen auf den freigegebenen Gehweg ausweichen, bis Ende August 2018 ',
+         'text' => 'Seelenbinderstr.: Richtung Bahnhofstr. zwischen Bellevuestr. und Bahnhofstr. Gleisbauarbeiten, Fahrtrichtung gesperrt, Radfahrer müssen auf den freigegebenen Gehweg ausweichen, bis Mitte September 2018',
          'type' => 'handicap',
-         'until' => 1535126400
+         'until' => 1536940800
        },
        {
          'data' => '	q4::inwork 7979,70212 7906,70007 7983,69794 7945,69489 7871,69412

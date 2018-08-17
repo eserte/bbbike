@@ -34,7 +34,7 @@ Dˆringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261
 # REMOVED (-> qualitaet_s-orig; f¸r Radfahrer offen) --- #: XXX vor Ort pr¸fen! --- #: source_id: 2147342929 --- #: priority: #B --- #: next_check: 2018-08-31 --- #: valid: -20180831 --- Helmerdingstr.: Bauarbeiten, Richtung Revaler Str. gesperrt	q4::inwork; 14468,11203 14442,11101
 # REMOVED (-> f¸r Radfahrer offen) --- #: XXX vor Ort pr¸fen! --- #: source_id: 2147342938 --- #: priority: #B --- #: next_check: 2018-08-10 --- #: valid: -20180810 --- Scharnweberstr.: Bauarbeiten zwischen Colbestr. und Kinzigstr., Fahrbahn Richtung G¸rtelstr. gesperrt	q4::inwork; 14468,11992 14589,11975
 # 
-#: last_checked: 2018-08-15
+#: last_checked: 2018-08-16
 Lange Str.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 # REMOVED (beendet) --- #: XXX_prog BS (ˆstliche Seite) --- #: last_checked: 2018-06-12 vvv --- #: check_frequency: 7d vvv --- Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstein	q2::inwork 11845,12292 11635,12398 --- Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstein	q4::inwork 11635,12398 11607,12412 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -42,7 +42,7 @@ Lange Str.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 12409,11902 12238,11
 #: next_check_id: KAUFHOF-2018
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/umbau-zu-buerostandort_a173030
 #: XXX_prog BS (auf der ˆstlichen Seite, ansonsten q3+)
-#: last_checked: 2018-08-15
+#: last_checked: 2018-08-16
 #: check_frequency: 90d
 M¸ncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
 # 
@@ -55,7 +55,8 @@ Rigaer Str.: Baustelle, Fuﬂg‰nger	q3::inwork 14538,12371 14748,12314
 # 
 #: XXX laut fritz bis 2018-08-30
 #: source_id: LMS-BR_r_LMS-BR_125325_LMS-BR_72
-#: last_checked: 2018-07-03
+#: last_checked: 2018-08-16
+#: next_check: 2018-08-30
 #: valid: -20180830
 Auerstr.: zwischen Richard-Sorge-Str. und Lˆwestr. Baustelle, Einbahnstraﬂenregelung	q2::inwork; 13273,12902 13202,12790
 # 
@@ -332,7 +333,7 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # 
 #: next_check_id: KARLMARXALLEE-2018
 #: source_id: 2147342756
-#: last_checked: 2018-08-14
+#: last_checked: 2018-08-17
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 # 
 # REMOVED (wieder offen) --- #: next_check_id: SPANDAUERSTR-2014 --- #: source_id: INKO_089389 (eigentlich hier nur die Spandauer Str. erw‰hnt) --- #: XXX siehe auch Eintrag zur Spandauer Str. in qualitaet_s-orig --- #: last_checked: 2014-03-24 --- #: check_frequency: 7d --- #: priority: #A --- Rathausstr.: Sperrung an der Spandauer Str., Ausweichen auf Gehweg	q4 10584,12507 10601,12521
@@ -829,9 +830,9 @@ Marx-Engels-Forum: einige Fuﬂg‰nger, Bordstein	q3 10300,12587 10355,12551
 Marx-Engels-Forum: einige Fuﬂg‰nger	q2 10355,12551 10411,12471 10416,12394
 #: note ^^^
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12325,13148 12344,13157 12369,13209 12404,13266 12405,13300 12445,13320 12420,13370 12483,13418 12450,13542 12344,13627 12372,13755
-Volkspark Friedrichshain: Fuﬂg‰nger	q1 12344,13627 12204,13609 12169,13609 12141,13609 12129,13531 12005,13481 11984,13473
+Volkspark Friedrichshain: Fuﬂg‰nger	q1 12344,13627 12204,13609 12169,13609 12141,13609 12130,13554 12002,13485 11992,13467
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12141,13609 12145,13628 12161,13711
-Volkspark Friedrichshain: Fuﬂg‰nger	q1 12129,13531 12111,13480 12060,13422
+Volkspark Friedrichshain: Fuﬂg‰nger	q1 12130,13554 12111,13480 12060,13422
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 11857,13596 11842,13576
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12141,13341 12131,13333
 Volkspark Friedrichshain: Fuﬂg‰nger	q1 12038,13685 12145,13628 12169,13609
@@ -3168,11 +3169,11 @@ Kamminer Str.: un¸bersichtliche Kreuzungen, parkende PKWs	q1 3240,12966 3283,131
 Claire-Waldoff-Weg: Fuﬂg‰nger	q2 3635,8099 3587,7560
 Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
 # REMOVED (-> Treppe + Rampe) --- #: XXX ist hier tats‰chlich eine Rampe oder nur eine Treppe? --- (Volkspark Friedrichshain, parallel zur Friedenstr.): Fuﬂg‰nger, kurze Rampe	q3 12382,13097 12380,13120
-(Volkspark Friedrichshain, parallel zur Friedenstr.): Fuﬂg‰nger	q1 12382,13097 12380,13120 12344,13157 12244,13240 12185,13298 12141,13341 12060,13422 12005,13481 11957,13528 11857,13596 11823,13610 11785,13625
+(Volkspark Friedrichshain, parallel zur Friedenstr.): Fuﬂg‰nger	q1 12382,13097 12380,13120 12344,13157 12244,13240 12185,13298 12141,13341 12060,13422 12002,13485 11957,13528 11857,13596 11823,13610 11785,13625
 (Weydemeyerstr.): Fuﬂg‰nger	q1 11890,12750 11818,12785
 (Weydemeyerstr.): Fuﬂg‰nger	q1 11839,12830 11818,12785 11805,12760
 (Weydemeyerstr.): einige Fuﬂg‰nger	q0- 11933,12701 11971,12785 11921,12810
-(Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11585,12865 11601,12858 11622,12850 11721,12801
+(Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11585,12865 11601,12858 11622,12850 11716,12803
 (Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger, kurvig	q1 11601,12858 11589,12768
 (Berolinastr.): Fuﬂg‰nger	q1 11844,12926 11885,12905 11952,12871
 (Berolinastr.): Fuﬂg‰nger	q1 11885,12905 11906,12947 11921,12990
@@ -3191,7 +3192,7 @@ Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
 (Verbindungsweg): Fuﬂg‰nger, Bordstein	q2 11667,13465 11703,13426
 #: corrected_by: srt ("Wurzeln" entfernt, "Schule" hinzugef¸gt)
 Weinstr.: Fuﬂg‰nger, Schulen	q2 11785,13241 11909,13387
-(Mollstr. - Barnimstr.): Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q2 11723,13139 11758,13210
+(Mollstr. - Barnimstr.): Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q2 11723,13139 11749,13215
 Br¸der-Grimm-Gasse: Fuﬂg‰nger	q2 8351,11163 8343,11133
 (zum Anhalter Steg): eng, Fuﬂg‰nger	q2 8677,10224 8662,10227 8711,10322
 (Anhalter Steg): Fuﬂg‰nger	q1 8711,10322 8726,10351 8760,10408 8773,10429
