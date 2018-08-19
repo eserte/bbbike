@@ -1271,7 +1271,7 @@ EOF
        text  => 'Lennéstr. zwischen Bellvuestr. und Eberstr. Baustelle, Straße gesperrt Richtung Ebertstr. (bis 15.11.2004) ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 8489,11782 8438,11753 8322,11715
+	2 8489,11782 8456,11763 8322,11715
 	2 8322,11715
 EOF
      },
@@ -22652,15 +22652,15 @@ EOF
 	2::inwork 2219,11324 2180,11318 2102,11307
 EOF
      },
-     { from  => $isodate2epoch->("2017-09-07 15:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-09-10 22:00:00"),
+     { from  => $isodate2epoch->("2018-09-06 15:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-09-09 22:00:00"),
        periodic => 1, # erster Termin im Jahr
        #recurrences => [["yearly", days => 9, months => 5]], # wechselnde Termine, kann auch erst Mitte September passieren
        recurrence_prewarn_days => 14,
        recurrences => [["yearly", days => 1, months => 9]],
-       text  => 'Prager Platz: Veranstaltung "Fest der Nationen", Durchfahrt nicht möglich, vom 8.9.2017 15 Uhr bis 10.9.2017 22 Uhr',
+       text  => 'Prager Platz: Veranstaltung "Fest der Nationen", Durchfahrt nicht möglich, vom 7.9.2018 15 Uhr bis 9.9.2018 22 Uhr',
        type  => 'gesperrt',
-       source_id => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/ueber-den-bezirk/sonstiges/events/fest-der-nationen/?date=20170409',
+       source_id => 'http://bigland.de/event/7-9-9-2018-fest-der-nationen/',
        data  => <<EOF,
 #: note: kein tempex-Ausdruck möglich
 	2::temp 5648,9642 5642,9613 5618,9607 5598,9612 5578,9629
@@ -27220,7 +27220,7 @@ EOF
        source_id => '2147342639',
        data  => <<EOF,
 #: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-08-12
+#: last_checked: 2018-08-19
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -27275,15 +27275,16 @@ EOF
      },
      { from  => undef, # 
        until => 1538258400, # 2018-09-30 00:00
-       text  => 'Fasanenplatz: Bauarbeiten, Sperrung der Fahrbahn, Bordstein',
+       text  => 'Fasanenplatz: Bauarbeiten, Sperrung der Fahrbahn',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.703939.php',
        data  => <<EOF,
 #: XXX Sanierung des Kleinsteinpflasters ab 2018-05-28 bis voraussichtlich Herbst 2018 -> ändert sich an der Qualität etwas?
 #: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/pflasterarbeiten-am-fasanenplatz_a165320
-#: last_checked: 2018-06-22
+#: last_checked: 2018-08-18
 #: check_frequency: 14d
-	q4::inwork 5223,10243 5192,10241
+	q4::inwork 5192,10241 5191,10190
+	q2::inwork 5017,10150 5191,10190
 EOF
      },
      { from  => 1528137944, # 2018-06-04 20:45
@@ -27484,13 +27485,13 @@ EOF
      },
      { from  => 1530741600, # 2018-07-05 00:00
        until => $isodate2epoch->("2018-10-01 12:00:00"), # 1543618799, # 2018-11-30 23:59
-       text  => 'Finckensteinallee: zwischen Carstennstr. und Schottmüllerstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis Anfang Oktober 2018 ',
+       text  => 'Finckensteinallee: an der Kreuzung Carstennstr., zwischen Schottmüllerstr. und Kommandantenstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis Anfang Oktober 2018 ',
        type  => 'handicap',
        source_id => '2147342925',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.722387.php (nur Kreuzungsbereich betroffen)
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/finckensteinallee-gesperrt_a171782
-	q4::inwork 2625,2850 2570,2844
+	q4::inwork 2737,2866 2625,2850 2570,2844
 # REMOVED ---	q4::inwork 2570,2844 2290,2864
 EOF
      },
@@ -27612,6 +27613,33 @@ EOF
        source_id => '166401603',
        data  => <<EOF,
 	2::inwork 28595,12846 28593,12671
+EOF
+     },
+     { from  => 1534629600, # 2018-08-19 00:00
+       until => 1535040000, # 2018-08-23 18:00
+       text  => 'Charlottenstr.: Sperrung der Straße zwischen Dorotheenstr. und Unter den Linden wegen Kranarbeiten, eventuell sind auch Radfahrer betroffen, von 20.08.2018 bis 23.08.2018',
+       type  => 'gesperrt',
+       data  => <<EOF,
+	2::inwork 9454,12558 9462,12481 9475,12365
+EOF
+     },
+     { from  => 1534654800, # 2018-08-19 07:00
+       until => 1536508800, # 2018-09-09 18:00
+       text  => 'Müllerstr.: Sperrung an der Kreuzung Seestr., nur Fußgänger können passieren, von 20. August 2018, ca. 07:00 Uhr bis voraussichtlich bis 09. September 2018',
+       type  => 'handicap',
+       source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/mullerstra%C3%9Fe-wedding-vollsperrung-in-hohe-seestra%C3%9Fe-%C2%B7-gleisbauarbeiten',
+       data  => <<EOF,
+	q4::inwork 6914,15908 6781,16026 6712,16087
+EOF
+     },
+     { from  => 1534629600, # 2018-08-19 00:00
+       until => undef, # XXX
+       text  => 'Uhlandstr.: zwischen Kurfürstendamm und Lietzenburger Str. wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, ab 20.08.2018',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX bis wann gilt die Sperrung?
+#: next_check: 2018-08-20
+	q4::inwork 5076,10658 5047,10381
 EOF
      },
     );

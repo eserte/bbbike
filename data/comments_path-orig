@@ -135,7 +135,7 @@ hinter dem "Alten Zollhaus" halbrechts abbiegen	CP; 10313,10084 10168,10085 1015
 Frankfurter Allee - Kreutzigerstr.: Einfahrt in Hausdurchgang	CP2; 14291,12220 14285,12190
 #: XXX_prog: RL:ja, GPS:nein
 #: XXX_prog: eigentlich nicht notwendig, da als RW8/RW9 bereits gekennzeichnet. Allerdings wird das im CGI noch gar nicht visualisiert. Vielleicht in der der stilisierten Straßenführung auf der *rechten* (falschen) Seite unterbringen?
-Lennéstr: Radweg Richtung Ebertstr. auf der linken Seite im Tiergarten	CS; 8203,11686 8322,11715 8438,11753 8489,11782 8571,11846
+Lennéstr: Radweg Richtung Ebertstr. auf der linken Seite im Tiergarten	CS; 8203,11686 8322,11715 8456,11763 8489,11782 8571,11846
 # REMOVED (diese Angaben sind nach temp-blockings gewandert) --- #: XXX_indoor: hmm, folgende zwei Datensätze sind mit keinen Konsequenzen verbunden. nach permanent temp_blockings verschieben? oder Penalty einplanen? Auf jeden Fall nicht bei GPS-Tracks gesondert ausgeben. --- Jüdenstr.: unbequemes Passieren der Grunerstr., ggfs. Ampel an der Spandauer Str. nehmen	CP; 10772,12515 10803,12470 10805,12468 10831,12371 --- Jüdenstr.: unbequemes Passieren der Grunerstr., ggfs. Ampel an der Spandauer Str. nehmen	CP; 10831,12371 10805,12468 10803,12470 10772,12515
 #: XXX_prog: RL:ja, GPS:jein (wegen spitzem Winkel) (evtl. ein Kandidat für comments_misc)
 #: note: und nicht der Asphaltstraße
@@ -189,7 +189,7 @@ Kietz - Müggelheimer Str.: zum Überqueren der Straße Fußgängerampel links benutz
 als "Neue Dorfstr." ausgeschildert	CS; 52483,75441 52181,75778
 als "Wiesenweg" ausgeschildert	CS; 52215,83681 52346,83150
 # REMOVED (anscheinend gibt es hier eine direkte Überquerungsmöglichkeit für Fußgänger/Radfahrer) --- #: by: Susan Richter: vvv --- Lichtenrader Damm - Griembergweg: Überquerungsmöglichkeit nördlich der Kreuzung	PI; 10737,132 10753,83 10913,96 --- Griembergweg - Lichtenrader Damm: Überquerungsmöglichkeit nördlich der Kreuzung	CP; 10913,96 10753,83 10782,-24 --- #: by: ^^^
-Richtung Bellevuestr. und Kemperplatz	CS; 8548,11571 8502,11564 8442,11555
+Richtung Bellevuestr. und Kemperplatz	CS; 8548,11571 8490,11562 8442,11555
 Ausgeschildert als Kemperplatz	CP2; 8203,11686 8209,11671
 Richtung Linkstr.	CS; 8573,11404 8554,11386 8474,11350
 Einfahrt gegenüber Waldcafe	CP2; 30038,5338 29450,5435
@@ -518,9 +518,9 @@ Am Tierpark [Nebenfahrbahn] - Am Tierpark: den linken Gehweg bis zur Ampel benut
 Salvador-Allende-Str. - Abzweig: bereits an der Ampel Fürstenwalder Damm auf den linken Gehweg wechseln	PI; 23402,5483 23403,5385 23428,5382
 Abzweig - Salvador-Allende-Str.: auf den linken Gehweg bis zur Ampel Friedrichshagener Str. fahren	CP; 23428,5382 23403,5385 23404,5325
 #: XXX wird eventuell im Zuge der Maßnahme Nsw.3 verbessert
-#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5826 (Verkehrsführung verbessern)
+#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5826 (Verkehrsführung verbessern) (wurde allerdings abgelehnt; die allgemeine Verbesserung der Situation wird aber irgendwann passieren ("Umgestaltung des Bahnhofsvorplatzes")
 #: last_checked: 2018-07-29
-#: check_frequency: 90d
+#: check_frequency: 180d
 Michael-Brückner-Str. - Sterndamm: an der Ampel Sterndamm besteht vom Radweg aus keine Möglichkeit zum Linksabbiegen, deshalb bereits an der Ampel Hasselwerderstr. auf den linken Gehweg wechseln	PI; 17960,5511 17886,5587 17736,5441
 Rixdorfer Str. - KGA An der Südostallee: wegen einer Leitplanke zwischen Radweg und Fahrbahn bereits 40 Meter vorher auf die Fahrbahn wechseln	CP; 17160,6239 17056,6133 17070,6115
 Indira-Gandhi-Str. - Orankeweg: bereits an der Fußgängerampel Gounodstr. auf den linken Gehweg wechseln	PI; 14597,15970 14609,15921 14695,15911

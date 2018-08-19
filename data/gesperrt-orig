@@ -56,7 +56,7 @@ Bayerischer Platz	1 6059,9118 6044,9223 6084,9242 6131,9241 6152,9136 6147,9100 
 orthodoxe Kirche	1 3952,8980 3831,9052
 U-Bahn Dahlem	1 3216,6393 3123,6318 3023,6246 2950,6141 2898,5947 2823,5672 2797,5624 2746,5537 2523,5114 2469,5043 2313,4901 2190,4823 2079,4769 2027,4792
 U-Bahn Dahlem	1 2027,4792 2095,4805 2169,4854 2217,4884 2288,4932 2454,5067 2499,5144 2717,5578
-Am Groﬂen Wannsee	1 -5869,1261 -5848,1379 -5867,1449 -5901,1562 -5929,1649 -5961,1767 -6025,1999 -6021,2068 -5945,2381 -5749,2701 -5722,2714 -5663,2609 -5653,2481 -5719,2323 -5836,2119 -5893,1969 -5903,1872 -5885,1791 -5815,1649 -5645,1504 -5588,1454 -5518,1396 -5499,1349
+Am Groﬂen Wannsee	1 -5869,1261 -5848,1379 -5867,1449 -5901,1562 -5929,1649 -5961,1767 -6025,1999 -6021,2068 -5945,2381 -5847,2588 -5737,2746 -5663,2609 -5653,2481 -5719,2323 -5836,2119 -5893,1969 -5903,1872 -5885,1791 -5815,1649 -5645,1504 -5588,1454 -5518,1396 -5499,1349
 Wilhelplatz	1 -7232,445 -7219,454 -7064,584
 Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: XXX Einbahnstraﬂenregelung wird aufgehoben (nicht vor Ende 2017)
@@ -3106,11 +3106,11 @@ Zufahrt Parkhaus: Abrissarbeiten, Straﬂe komplett gesperrt	2::inwork 8367,10745 
 #: check_frequency: 90d
 Merlitzstr.: Bauarbeiten, Straﬂe komplett gesperrt	2::inwork 19661,3421 19524,3286
 # 
-#: last_checked: 2018-08-14
+#: last_checked: 2018-08-18
 #: check_frequency: 30d
 Mauerstr. und J‰gerstr.: Bauarbeiten, Einbahnstraﬂe	1s:q4:inwork 9195,11972 9108,11961 9076,12054
 # 
-#: last_checked: 2018-08-14
+#: last_checked: 2018-08-18
 #: check_frequency: 30d
 Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,12156
 # 
@@ -3122,7 +3122,7 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 #: check_frequency: 90d
 (entlang der Erpe): Bauarbeiten der DB	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
 # 
-#: osm_watch: way id="344108079" version="3"
+#: osm_watch: way id="344108079" version="4"
 #: next_check_id: NIZZASTR-2014
 #: last_checked: 2018-07-07
 # REMOVED --- #: next_check: 2018-07-01
@@ -3165,13 +3165,13 @@ An den Parkb‰umen: Bauarbeiten, Fahrbahn gesperrt	2::inwork -6530,6699 -6556,666
 #: by: http://www.dafmap.de/d/berlin.html?id=5241&mt=0&zoom=17 vvv
 #: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01
 #: osm_watch: way id="392904879" version="1" vvv
-#: osm_watch: way id="392904880" version="3" vvv
+#: osm_watch: way id="392904880" version="4" vvv
 #: check_frequency: 360d vvv
 #: last_checked: 2018-03-11 vvv
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5579,12231 5535,12206 5518,12159
 Gutenbergstr.: Einbahnstraﬂe wegen Bauarbeiten	1s:q3:inwork 5317,12242 5518,12159
 #: last_checked ^^^
-#: last_checked: 2018-06-30
+#: last_checked: 2018-08-18
 Wegelystr.: Einbahnstraﬂe wegen Bauarbeiten	1s:q3:inwork 5518,12159 5627,12105 5658,12082 5712,12033 5775,11975
 #: check_frequency ^^^
 #: osm_watch ^^^
@@ -3219,7 +3219,7 @@ Karower Str.: tempor‰re Einbahnstraﬂenregelung	1s:q3:inwork 16593,25640 16632,25
 # REMOVED (frisch asphaltiert) --- #: last_checked: 2017-10-08 vvv --- #: check_frequency: 60d vvv --- # REMOVED --- Mauerweg: Bauarbeiten, gesperrt	2::inwork 7926,14439 7940,14447 --- #: XXX laut http://www.openstreetmap.org/note/1117960 wird der Weg "nach den Leitungsarbeiten wieder hergerichtet werden" --- Mauerweg: Bauarbeiten, gesperrt	2::inwork 7940,14447 7889,14519 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3192&mt=0&zoom=16 (Geplanter Projektabschluss: 2018-03-31)
-#: last_checked: 2018-06-29
+#: last_checked: 2018-08-18
 #: check_frequency: 60d
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung gesperrt	1s:q3:inwork 5192,10241 5196,10398
 # 
@@ -3238,8 +3238,9 @@ Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtun
 # REMOVED (offen) --- Nˆldnerstr.: Bauarbeiten, Einbahnstraﬂe	1s:q4 15272,10790 15388,10758 15433,10765
 # REMOVED (nur der ˆstliche Abschnitt ist geblieben, aber relativ breit und relativ wenig Verkehr) --- #: XXX Bauarbeiten der Berliner Wasserbetriebe bis Dezember 2017 --- #: last_checked: 2017-07-23 --- #: next_check: 2017-12-01 --- #: valid: -20171231 --- T¸rrschmidtstr.: Bauarbeiten, Einbahnstraﬂe	1s:q3 15541,10892 15649,10922 15756,10966
 # 
+#: next_check_id: HERBERTVONKARAJAN-2018
 #: by: http://www.dafmap.de/d/berlin.html?id=3853&mt=0&zoom=16
-#: last_checked: 2018-08-01
+#: last_checked: 2018-08-18
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraﬂenregelung	1s:q3:inwork 9042,11839 8969,11814
 # 
 #: next_check_id: NORDHAFENPARKWEST-2018
@@ -3503,7 +3504,7 @@ Schloﬂplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2018-08-13
+#: last_checked: 2018-08-18
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

@@ -374,10 +374,10 @@ Weimarer Str.: Fußgänger	q1 4101,11347 4101,11233
 Norwegerstr. - Behmstr.: Rampe	q2 10022,16237 10026,16165 10055,16104 10065,16110 10045,16157
 Marzahner Promenade - Mühlenbecker Weg: Fußgänger	q1 20222,15519 20202,15587 20202,15630 20181,15658 20150,15678
 Rosemeyerweg: Fußgänger	q1 -3758,2678 -3852,2730 -3956,2787 -4001,2858
-Moorlake - Krughorn: Fußgänger, aber breite Straße	q0 -9620,1407 -9685,1401 -9728,1431 -9757,1499 -9828,1570 -10046,1589 -10078,1551
+Moorlake - Krughorn: Fußgänger, aber breite Straße	q0 -9629,1408 -9707,1414 -9728,1431 -9757,1499 -9828,1570 -10046,1589 -10078,1551
 Krughorn - Volkspark Klein-Glienicke: Fußgänger, besonders an schönen Tagen	q1 -10078,1551 -10163,1288 -10190,1185 -10198,1173 -10273,1088 -10430,848 -10512,683 -10573,564 -10593,476
-Moorlake - Pfaueninsel: Fußgänger, besonders an schönen Tagen	q1 -9620,1407 -9619,1478 -9655,1567 -9648,1629 -9632,1672 -9584,1703 -9511,1739 -9444,1820 -9393,1831 -9108,1798 -9016,1782 -8934,1801 -8861,1855 -8747,2023 -8636,2102 -8591,2144
-am Wirtshaus zur Pfaueninsel: Fußgänger, besonders an schönen Tagen	q2 -8591,2144 -8540,2209 -8468,2152
+Moorlake - Pfaueninsel: Fußgänger, besonders an schönen Tagen	q1 -9629,1408 -9619,1478 -9654,1544 -9648,1629 -9632,1672 -9584,1703 -9511,1739 -9444,1820 -9401,1837 -9082,1813 -9002,1797 -8926,1814 -8861,1855 -8707,2062 -8636,2102 -8595,2148
+am Wirtshaus zur Pfaueninsel: Fußgänger, besonders an schönen Tagen	q2 -8595,2148 -8542,2216 -8468,2152
 Karl-Marx-Allee - Kadiner Str.: Fußgänger	q1 13543,12326 13556,12302 13555,12259
 Spreeuferweg - Elisabeth-Abegg-Str.: Rampe	q3 7926,12865 7907,12817
 (südliche Fahrbahn des Sachsendamms - Naturpark Schöneberg): Rampe	q2 7696,7562 7739,7531 7708,7539 7747,7521
@@ -417,7 +417,7 @@ Caroline-Tübbecke-Ufer: Fußgänger, Radfahren erlaubt	q1 15000,9820 15043,9790 15
 (Alt-Stralau - Spreeufer): Fußgänger, Radfahren erlaubt, kurze Rampe	q2 15020,9875 15000,9820
 (Strela-Platz): Fußgänger	q1 15400,9742 15465,9860
 Hildburghauser Str.: Bahnunterführung für Fußgänger	q1 4595,1387 4514,1402
-(zur Pfaueninselfähre): an schönen Tagen viele Fußgänger	q3 -8540,2209 -8561,2236 -8564,2276
+(zur Pfaueninselfähre): an schönen Tagen viele Fußgänger	q3 -8542,2216 -8561,2236 -8564,2276
 (Unterführung am S-Bhf. Kaulsdorf): Fußgänger	q3 22857,12014 22859,12059
 (Bürgipfad - Jenbacher Weg): Fußgänger	q2 5591,240 5671,118 5703,74
 Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
@@ -1395,8 +1395,8 @@ Magdeburger Platz: Bordsteine	q3 7393,10809 7414,10804
 (Grünanlage): Bordsteinkante	q1 17185,17384 17006,17473
 Friedlander Str.: Bodenschwelle	q1 20574,4317 20594,4342
 (Paul-Junius-Str. - Alfred-Jung-Str.): Fußgänger	q1 15370,13508 15346,13298
-Hans-Bülow-Str.: Fußgänger	q1 8553,11638 8473,11638
-Berliner Freiheit: Fußgänger	q1 8473,11638 8387,11637
+Hans-Bülow-Str.: Fußgänger	q1 8553,11638 8481,11638
+Berliner Freiheit: Fußgänger	q1 8481,11638 8387,11637
 Alfred-Kowalke-Str. [Mittelstreifen]: einige Fußgänger	q1 18200,11269 18202,11253
 (Wuhlewanderweg - Ulmenstr.): einige Fußgänger	q1 21467,9236 21511,9226
 Duftgeranienweg: Bodenschwellen, die leicht umfahren werden können	q0 24329,6089 24344,6117 24368,6159 24423,6206 24497,6243 24596,6292 24756,6364 25176,6544 25187,6549 25212,6560
@@ -1758,6 +1758,7 @@ Pepitapromenade: einige Fußgänger	q1 -2856,17489 -2873,17369 -2878,17324
 (am Packereigraben): einige Fußgänger	q1 6924,21550 6958,21549 7074,21513 7161,21494 7261,21504 7447,21509
 (Gandenitzer Weg - Quickborner Str.): einige Fußgänger	q1 7549,21524 7713,21484 7782,21508 7802,21553 7853,21557 7939,21600
 Salvador-Allende-Str. [Zufahrt zum Krankenhaus]: einige Fußgänger	q2 23448,4145 23453,4181
+Fasanenplatz, östliche Fahrbahn: einige Fußgänger, Bordsteine	q2 5220,10192 5229,10210 5223,10243
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schulhof, Radfahren verboten	q3 7242,8586 7288,8635

@@ -3248,7 +3248,28 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: kein tempex-Ausdruck möglich
+	2::temp 5648,9642 5642,9613 5618,9607 5598,9612 5578,9629
+',
+         'from' => 1536238800,
+         'id' => 2533,
+         'periodic' => 1,
+         'recurrence_prewarn_days' => 14,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              9
+                            ]
+                          ],
+         'source_id' => 'http://bigland.de/event/7-9-9-2018-fest-der-nationen/',
+         'text' => 'Prager Platz: Veranstaltung "Fest der Nationen", Durchfahrt nicht möglich, vom 7.9.2018 15 Uhr bis 9.9.2018 22 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1536523200
+       },
        undef,
        undef,
        undef,
@@ -4156,7 +4177,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-08-12
+#: last_checked: 2018-08-19
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -4185,14 +4206,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX Sanierung des Kleinsteinpflasters ab 2018-05-28 bis voraussichtlich Herbst 2018 -> ändert sich an der Qualität etwas?
 #: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/pflasterarbeiten-am-fasanenplatz_a165320
-#: last_checked: 2018-06-22
+#: last_checked: 2018-08-18
 #: check_frequency: 14d
-	q4::inwork 5223,10243 5192,10241
+	q4::inwork 5192,10241 5191,10190
+	q2::inwork 5017,10150 5191,10190
 ',
          'from' => undef,
          'id' => 2965,
          'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.703939.php',
-         'text' => 'Fasanenplatz: Bauarbeiten, Sperrung der Fahrbahn, Bordstein',
+         'text' => 'Fasanenplatz: Bauarbeiten, Sperrung der Fahrbahn',
          'type' => 'handicap',
          'until' => 1538258400
        },
@@ -4314,13 +4336,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.722387.php (nur Kreuzungsbereich betroffen)
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/finckensteinallee-gesperrt_a171782
-	q4::inwork 2625,2850 2570,2844
+	q4::inwork 2737,2866 2625,2850 2570,2844
 # REMOVED ---	q4::inwork 2570,2844 2290,2864
 ',
          'from' => 1530741600,
          'id' => 2984,
          'source_id' => '2147342925',
-         'text' => 'Finckensteinallee: zwischen Carstennstr. und Schottmüllerstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis Anfang Oktober 2018 ',
+         'text' => 'Finckensteinallee: an der Kreuzung Carstennstr., zwischen Schottmüllerstr. und Kommandantenstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis Anfang Oktober 2018 ',
          'type' => 'handicap',
          'until' => 1538388000
        },
@@ -4355,16 +4377,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1536940800
        },
-       {
-         'data' => '	q4::inwork 7979,70212 7906,70007 7983,69794 7945,69489 7871,69412
-',
-         'from' => 1532426400,
-         'id' => 2988,
-         'source_id' => 'LS/721-E/18/081',
-         'text' => 'Zehdenick: B109: Deckenerneuerung in der Ortsdurchfahrt B109, OL Vogelsang, Sperrung der Fahrbahn, 24.07.2018 bis 18.08.2018 ',
-         'type' => 'handicap',
-         'until' => 1534629600
-       },
+       undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/altglienicke/c-bauen/rund-1000-kubikmeter-trinkwasser-liefen-in-untergrund-und-keller_a172811
 	2::inwork 19602,1989 19244,2141
@@ -4397,16 +4410,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1537999200
        },
-       {
-         'data' => '#: source_id: 2147342987
-	q4::inwork; 13515,11969 13696,11920
-',
-         'from' => 1533579833,
-         'id' => 2992,
-         'text' => 'Grünberger Str.: Sperrung der Fahrbahn zwischen Kadiner Str. und Warschauer Str., Richtung Osten, voraussichtlich bis zum 19. August 2018',
-         'type' => 'handicap',
-         'until' => 1534694400
-       },
+       undef,
        undef,
        {
          'data' => '	2::inwork 25929,-5994 25902,-6006
@@ -4437,6 +4441,36 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Hoppegarten: Neubau der Eisenbahnbrücke, möglicherweise Vollsperrung, 27.02.2018 bis 14.12.2018',
          'type' => 'gesperrt',
          'until' => 1544828400
+       },
+       {
+         'data' => '	2::inwork 9454,12558 9462,12481 9475,12365
+',
+         'from' => 1534629600,
+         'id' => 2997,
+         'text' => 'Charlottenstr.: Sperrung der Straße zwischen Dorotheenstr. und Unter den Linden wegen Kranarbeiten, eventuell sind auch Radfahrer betroffen, von 20.08.2018 bis 23.08.2018',
+         'type' => 'gesperrt',
+         'until' => 1535040000
+       },
+       {
+         'data' => '	q4::inwork 6914,15908 6781,16026 6712,16087
+',
+         'from' => 1534654800,
+         'id' => 2998,
+         'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/mullerstra%C3%9Fe-wedding-vollsperrung-in-hohe-seestra%C3%9Fe-%C2%B7-gleisbauarbeiten',
+         'text' => 'Müllerstr.: Sperrung an der Kreuzung Seestr., nur Fußgänger können passieren, von 20. August 2018, ca. 07:00 Uhr bis voraussichtlich bis 09. September 2018',
+         'type' => 'handicap',
+         'until' => 1536508800
+       },
+       {
+         'data' => '#: XXX bis wann gilt die Sperrung?
+#: next_check: 2018-08-20
+	q4::inwork 5076,10658 5047,10381
+',
+         'from' => 1534629600,
+         'id' => 2999,
+         'text' => 'Uhlandstr.: zwischen Kurfürstendamm und Lietzenburger Str. wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, ab 20.08.2018',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
