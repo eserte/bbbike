@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.31;
+$VERSION = 1.32;
 
 use vars qw(%images);
 
@@ -76,6 +76,12 @@ sub register {
 	    { name => "Map Compare (profile BBBike)",
 	      callback => sub { showmap_mapcompare(@_, profile => "bbbike") },
 	      callback_3_std => sub { showmap_url_mapcompare(@_, profile => "bbbike") },
+	      ($images{Geofabrik} ? (icon => $images{Geofabrik}) : ()),
+	    };
+	$main::info_plugins{__PACKAGE__ . "_MapCompare_Berlin_Satellite"} =
+	    { name => "Map Compare (profile Berlin satellite)",
+	      callback => sub { showmap_mapcompare(@_, profile => "berlin-satellite") },
+	      callback_3_std => sub { showmap_url_mapcompare(@_, profile => "berlin-satellite") },
 	      ($images{Geofabrik} ? (icon => $images{Geofabrik}) : ()),
 	    };
     }
