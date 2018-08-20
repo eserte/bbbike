@@ -2897,8 +2897,68 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => '#: tempex: 20160920T0600-20160922T0600 vvv
+	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+#: tempex ^^^
+',
+         'from' => 1536552000,
+         'id' => 2387,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              10,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon gesperrt, voraussichtlich ab 10.09.2018',
+         'type' => 'gesperrt',
+         'until' => 1536724800
+       },
+       {
+         'data' => '# REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
+	2::temp 8573,12325 8540,12420
+	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	2::temp 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+	2::temp 8119,12414 8055,12186
+	2::temp 8538,12245 8522,12239 8466,12197
+	2::temp 8538,12245 8522,12187
+	2::temp 8546,12279 8391,12389 8354,12416
+	2::temp 8119,12414 8354,12416 8400,12417 8540,12420
+	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
+	3 7429,12070 7383,12095 7031,12320
+	3 7031,12320 7383,12095 7429,12070
+	3 7823,12120 7816,12150 7822,12201 7875,12363
+	3 7875,12363 7822,12201 7816,12150 7823,12120
+	2::temp 8119,12414 8122,12603 8207,12606 8306,12609 8348,12609 8399,12610 8485,12612
+	2::temp 8207,12606 8206,12757
+	3 7945,12592 8122,12603 8120,12756
+	3 8120,12756 8122,12603 7945,12592
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+# REMOVED --- #: tempex ^^^
+',
+         'from' => 1536724800,
+         'id' => 2388,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              12,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, voraussichtlich bis 12.09.2018',
+         'type' => 'gesperrt',
+         'until' => 1537156800
+       },
        undef,
        undef,
        undef,
@@ -3367,29 +3427,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: (YYYY08 & fr-2) - +2d vvv
-	2::temp 22138,4642 22111,4562 22093,4499
-	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
-#: tempex ^^^
-',
-         'from' => 1534420800,
-         'id' => 2610,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              16,
-                              'months',
-                              8
-                            ]
-                          ],
-         'source_id' => 'http://www.winzerfest-köpenick.de/',
-         'text' => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 17.8.2018 bis 19.8.2018',
-         'type' => 'gesperrt',
-         'until' => 1534715999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3495,7 +3533,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	q4::inwork; 9373,12197 9369,12253 9358,12351
+',
+         'from' => 1534789491,
+         'id' => 2666,
+         'text' => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn in Richtung Norden gesperrt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -3999,7 +4045,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-08-14 vvv
+#: last_checked: 2018-08-20 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4177,7 +4223,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-08-19
+#: last_checked: 2018-08-20
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -4322,29 +4368,22 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1622498400
        },
        undef,
-       {
-         'data' => '	2::inwork 21889,16817 21824,16506 21785,16273 21782,16253
-',
-         'from' => 1531000800,
-         'id' => 2982,
-         'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.719553.php',
-         'text' => 'Blumberger Damm: Bauarbeiten zwischen Rudolf-Leonhard-Str. und Mehrower Allee, Fahrbahn gesperrt, vom 9. Juli 2018 bis voraussichtlich 20. August 2018',
-         'type' => 'gesperrt',
-         'until' => 1534780800
-       },
+       undef,
        undef,
        {
-         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.722387.php (nur Kreuzungsbereich betroffen)
+         'data' => '#: source_id: 2147343043
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.722387.php (nur Kreuzungsbereich betroffen)
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/finckensteinallee-gesperrt_a171782
-	q4::inwork 2737,2866 2625,2850 2570,2844
+	q4::inwork 2737,2866 2625,2850
+# REMOVED ---	q4::inwork 2625,2850 2570,2844
 # REMOVED ---	q4::inwork 2570,2844 2290,2864
 ',
          'from' => 1530741600,
          'id' => 2984,
          'source_id' => '2147342925',
-         'text' => 'Finckensteinallee: an der Kreuzung Carstennstr., zwischen Schottmüllerstr. und Kommandantenstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis Anfang Oktober 2018 ',
+         'text' => 'Finckensteinallee: zwischen Carstennstr. und Kommandantenstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis Anfang Oktober 2018 ',
          'type' => 'handicap',
-         'until' => 1538388000
+         'until' => 1538755200
        },
        {
          'data' => '	q4::inwork; 15947,12626 16000,12625
@@ -4443,7 +4482,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1544828400
        },
        {
-         'data' => '	2::inwork 9454,12558 9462,12481 9475,12365
+         'data' => '#: source_id: 2147343046
+	2::inwork 9454,12558 9462,12481 9475,12365
 ',
          'from' => 1534629600,
          'id' => 2997,
@@ -4452,7 +4492,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1535040000
        },
        {
-         'data' => '	q4::inwork 6914,15908 6781,16026 6712,16087
+         'data' => '#: source_id: 2147343041
+	q4::inwork 6914,15908 6781,16026 6712,16087
 ',
          'from' => 1534654800,
          'id' => 2998,
@@ -4462,15 +4503,38 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1536508800
        },
        {
-         'data' => '#: XXX bis wann gilt die Sperrung?
-#: next_check: 2018-08-20
-	q4::inwork 5076,10658 5047,10381
+         'data' => '#: note: Gesamtbaumaßnahme bis 31.12.2023
+#: XXX sind tatsächlich Radfahrer betroffen?
+	q4::inwork; 5076,10658 5047,10381
 ',
          'from' => 1534629600,
          'id' => 2999,
-         'text' => 'Uhlandstr.: zwischen Kurfürstendamm und Lietzenburger Str. wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, ab 20.08.2018',
+         'source_id' => '2147342231',
+         'text' => 'Uhlandstr.: zwischen Kurfürstendamm und Lietzenburger Str. Richtung Süden wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, ab 20.08.2018 bis Ende 2019',
+         'type' => 'handicap',
+         'until' => 1546275600
+       },
+       {
+         'data' => '#: XXX wann sind die "Radfahren verboten"-Schilder wieder weg?
+#: last_checked: 2018-08-20
+#: check_frequency: 14d
+	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
+',
+         'from' => undef,
+         'id' => 3000,
+         'text' => 'Privatstraße hinter der Leipziger Str.: Bauarbeiten, für Radfahrer explizit gesperrt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '	q2::inwork; 8423,14667 8336,14586
+',
+         'from' => 1534790216,
+         'id' => 3001,
+         'source_id' => '2147343039',
+         'text' => 'Liesenstr. Richtung Chausseestraße ab Neue Hochstr.: Bauarbeiten, Fahrtrichtung gesperrt, bis 21.12.2018',
+         'type' => 'handicap',
+         'until' => 1545433200
        }
      
 );

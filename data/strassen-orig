@@ -2928,7 +2928,7 @@ Biebersdorfer Weg	N 26780,-1468 26663,-1443 26566,-1406 26495,-1366 26448,-1326 
 Pretschener Weg	N 26566,-1406 26500,-1672 26465,-1810 26429,-1876
 Godbersenstr.	H 27112,-2764 27054,-2771 27006,-2778
 Godbersenstr.	N 27006,-2778 26201,-2845
-Lindenstr. (Schmöckwitz)	H 27006,-2778 26931,-2871
+Lindenstr. (Schmöckwitz)	H 27006,-2778 26939,-2860 26931,-2871
 #: note: dieser Abschnitt gehört zur Hälfte zu Eichwalde (vermutlich die Fahrbahn, Straßenschild ist Eichwalde-typisch) und zu Berlin (vermutlich der östliche Gehweg, BAMAG-U7-ähnliche Gaslaternen hier)
 Lindenstr. (Schmöckwitz)	N 26931,-2871 26954,-3322 26960,-3403 26913,-3613
 Jostweg (Köpenick)	N 21275,3607 21256,3640 21220,3642 21164,3812 21141,3958
@@ -3792,11 +3792,12 @@ Riedemannweg	N 4248,15647 4389,15336
 Buchholzweg	N 4535,15530 4466,15350 4389,15336
 #: XXX wird vermutlich umbenannt, neuer Name: "Cornelius-Frederiks-Str."
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/426_2018_zu_ds_-1118_v_neue_strassennamen_im_afrikanischen_viertel.pdf
+#: last_checked: 2018-08-20
 #: next_check: 2018-09-19
 Lüderitzstr.	N 6661,15921 6484,16085 6349,16213 6211,16343 6106,16433 6003,16521
 Sansibarstr.	N 6201,16538 6106,16433 6005,16313 5827,16118
 Otawistr.	N 6098,16630 6003,16521 5906,16403 5748,16235
-Transvaalstr.	H 5446,15489 5722,15795 5907,16000 5988,16099 6104,16223 6211,16343 6304,16447
+Transvaalstr.	H 5446,15489 5722,15795 5907,16000 5981,16091 6104,16223 6211,16343 6304,16447
 Senegalstr.	N 5961,15562 5906,15623 5848,15685 5787,15741 5722,15795
 Dualastr.	N 6019,15841 5848,15685
 Sambesistr.	N 5968,15914 5787,15741
@@ -10092,7 +10093,7 @@ Lindower Str.	N 7745,15160 7929,15355
 #: XXX dieser Straßenabschnitt wird für die S21 in der Mitte unterbrochen, nachdem das neue Nordufer fertiggestellt ist
 #: by: http://weddingweiser.wordpress.com/2012/10/16/die-s-21-wird-gebaut-weddinger-strasen-werden-neu-gefuhrt/ (Projektplan)
 #: osm_watch: way id="220648313" version="13"
-#: last_checked: 2018-06-08
+#: last_checked: 2018-08-20
 #: check_frequency: 360d
 Tegeler Str. (Wedding)	N 7458,14643 7263,14873
 Tegeler Str. (Wedding)	N 7263,14873 7223,14914 7192,14976 7182,14998 7131,15109 7085,15226 6996,15319
@@ -13867,7 +13868,7 @@ Werrastr.	N 13805,8193 13697,8279 13648,8321 13566,8386 13469,8462 13381,8538 13
 Ulsterstr.	N 13566,8386 13641,8470
 Truseweg	N 13381,8538 13450,8625
 Schinkestr.	N 11623,9841 11734,9856 11880,9874
-Guineastr.	N 6422,15708 6267,15844 6129,15970 5988,16099
+Guineastr.	N 6422,15708 6267,15844 6119,15965 5981,16091
 Troppauer Str.	N 2289,3331 2400,3375 2510,3447 2684,3520
 James-Hobrecht-Str.	N 14661,12798 14682,12874 14690,12900 14704,12950 14741,13081
 Kraetkestr. (Kaulsdorf)	N 24026,12729 23937,12746 23942,12787 23948,12879 23950,12910 23952,12938 23955,12974 23962,13053 23989,13170 24016,13382
@@ -14348,7 +14349,9 @@ Limburger Str.	N 6562,15177 6727,15319 6749,15339 6815,15398
 Limburger Str.	NN 6815,15398 6835,15412
 Limburger Str.	N 6835,15412 6869,15441 6884,15456
 Limburger Str.	N 6884,15456 6950,15514 7012,15571
-Limburger Str.	NN 7012,15571 7129,15717
+#: oldname: -201807: Limburger Str.
+#: ignore_oldname_file: yes
+Elise-und-Otto-Hampel-Weg	NN 7012,15571 7129,15717
 Lütticher Str.	N 6422,15708 6539,15548 6640,15421 6727,15319
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule))	NN 6727,15319 6739,15307 6833,15215
 Goeckestr.	N 16128,14685 16256,14828 16361,14936 16377,14952 16514,15092 16597,15228 16651,15345
@@ -14458,7 +14461,7 @@ Hubertusstr. (Waidmannslust)	N 4050,22428 4137,22301 4241,22168
 Hosemannstr. (Kaulsdorf)	N 23653,12122 23707,12258 23725,12302 23774,12423 23816,12542
 Hannsdorfer Str.	N 23697,12580 23653,12471 23587,12301 23517,12129
 Kongostr.	N 6447,16321 6349,16213 6258,16111
-Kongostr.	NN 6258,16111 6244,16096 6202,16041 6129,15970
+Kongostr.	NN 6258,16111 6244,16096 6202,16041 6119,15965
 Togostr.	NN 6555,15827 6530,15849
 Togostr.	N 6530,15849 6383,15972 6244,16096
 Togostr.	NN 6244,16096 6104,16223

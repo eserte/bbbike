@@ -671,7 +671,12 @@ Boddinstr.: teilweise Asphalt auf der Fahrbahn	Q1- 12104,8299 12168,8313 12216,8
 Boddinstr.: Kopfsteinpflaster	Q2 12216,8323 12368,8356 12582,8408
 Boddinstr.: Kopfsteinpflaster	Q2 12116,8247 12177,8263 12168,8313
 Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
+# 
+#: next_check_id: KARLMARXSTR-2018
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
+#: next_check: 2019-06-01
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12528,8205 12714,8249
+# 
 Morusstr.: schlechtes Kopfsteinpflaster	Q3+ 12407,8177 12426,8115
 Falkstr.: Asphalt	Q0 12162,8055 12178,7985 12179,7979
 Falkstr.: Kopfsteinpflaster	Q2 12179,7979 12220,7822
@@ -5441,7 +5446,7 @@ Mohasistr.: Beton	Q0 5376,17017 5458,16946
 Damarastr.: Beton	Q1 5235,16835 5327,16774 5406,16702
 Windhuker Str.: wassergebundene Decke	Q1- 5426,16539 5712,16245 5748,16235
 Kongostr.: Kopfsteinpflaster	Q2 6447,16321 6349,16213 6258,16111
-Kongostr.: Beton	Q0 6244,16096 6202,16041 6129,15970
+Kongostr.: Beton	Q0 6244,16096 6202,16041 6119,15965
 Sambesistr.: Beton	Q0- 5968,15914 5787,15741
 Ugandastr.: Beton	Q0- 6071,15768 5906,15623
 Limburger Str.: Kopfsteinpflaster	Q2 6562,15177 6727,15319 6749,15339
@@ -10688,7 +10693,7 @@ Alte Köpenicker Allee: unbefestigte Straße, holprig	Q2 20316,7637 20348,7634 204
 #: note: Privatstraße
 #: next_check_id: KLARAFRANKESTR-2018
 #: XXX wie sieht die endgültige Fahrbahndecke aus?
-#: last_checked: 2018-06-08
+#: last_checked: 2018-08-20
 #: check_frequency: 60d
 Klara-Franke-Str.: provisorischer Asphalt und Pflasterung	Q1 7366,14067 7443,14107 7542,13956 7662,13784 7564,13735
 Schottstr.: Beton mit Schäden	Q1 16409,12612 16397,12397
@@ -10742,6 +10747,7 @@ Waldstr.: Beton	Q0- 22003,-1625 22257,-1533 22362,-1509 22685,-1421 22985,-1319
 Relingstr.: provisorischer Asphalt	Q1 22195,2390 22276,2426 22358,2460
 #: note: überwiegend
 (Volkspark Friedrichshain, von/zur Weinstr.): Asphalt	Q0 12130,13554 12002,13485 11992,13467
+Sebastianstr.: Asphalt, einige Schäden	Q0- 10640,11564 10818,11269 10824,11256
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -11887,9 +11893,12 @@ Pflugstr.: Asphalt	Q0 8776,14364 8669,14550
 Wöhlertstr.: Asphalt	Q0 8669,14550 8442,14456
 #: by: ^^^
 # 
-#: by: kalkreuth
+#: by: kalkreuth vvv
 #: confirmed_by: srt
-Kameruner Str.: Kopfsteinpflaster	Q2 6127,15688 6267,15844 6383,15972 6484,16085 6587,16199
+Kameruner Str.: Kopfsteinpflaster	Q2 6127,15688 6267,15844 6383,15972
+#: corrected_by: srt (Q2 -> Q2-)
+Kameruner Str.: Kopfsteinpflaster	Q2- 6383,15972 6484,16085 6587,16199
+#: by: ^^^
 # 
 #: by: Paul (without @):
 #: confirmed_by: srt (nordöstliches Ende)
@@ -12179,7 +12188,7 @@ Pintschstr.: Kopfsteinpflaster	Q2 13435,12973 13339,13196
 #: by: Ramiro Gomez: vvv
 Guineastr.: Kopfsteinpflaster	Q2 6422,15708 6267,15844
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
-Guineastr.: Asphalt	Q0 6267,15844 6129,15970 5988,16099
+Guineastr.: Asphalt	Q0 6267,15844 6119,15965 5981,16091
 #: by: ^^^
 # 
 #: by: Mick (christopher mack): vvv
@@ -19983,7 +19992,7 @@ Bogenstr. (Hessenwinkel): Asphalt	Q0 32334,2224 32268,2229 32203,2254 32142,2304
 # 
 #: by: René (refan):
 #: corrected_by: srt (gepflastert -> Asphalt)
-Lindenstr. (Schmöckwitz): Asphalt	Q0 27006,-2778 26931,-2871
+Lindenstr. (Schmöckwitz): Asphalt	Q0 27006,-2778 26939,-2860 26931,-2871
 # 
 #: by: Freioun:
 #: confirmed_by: srt

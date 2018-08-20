@@ -419,7 +419,11 @@ Mönchehof - Grenz: sehr guter Asphalt (Autobahnbrücke)	Q0 48062,103287 48081,103
 Mönchehof - Grenz: Feldweg, stellenweise aber 25 km/h möglich	Q2 48331,103606 49036,104083 49275,104213 49493,104255 49862,104413 50904,104379
 Grenz: sehr schlechtes Kopfsteinpflaster, teilweise mit Sandbanketten/Gehwegen	Q3 50904,104379 50931,104373 51128,104358 51728,104218 51751,104213
 Grenz - Rollberg: Feldweg, Schotter, teils sandig	Q2 51751,104213 51875,104187 52041,103988 52517,103724 52764,103713 53044,103701 53260,103778 53619,103730 53969,103571
+# 
+#: add_fragezeichen: Ist hier noch immer eine Schotterstraße?
+#: XXX immerhin ist hier für die Bauarbeiten an der L26 (Brüssow) die offizielle Umleitung
 Grenz - Cremzow: Schotterstraße	Q2 50904,104379 50877,104692 51339,106155
+# 
 Cremzow: schlechtes Kopfsteinpflaster, Ausweichen auf Betonplattenbanketten möglich	Q3 51339,106155 51318,106193 51178,106442
 Baumgarten - Schenkenberg: Asphalt	Q0 46615,105925 46568,105976 46407,106090 46310,106359 46306,106613 46263,106735 46041,106807 45822,106918 45512,107075 45440,107129 45454,107247
 Ludwigsburg - Dauerthal: Asphalt	Q0 47796,106868 47550,107125 46963,107308 46905,107326
@@ -628,14 +632,14 @@ Storkower Str.: grobe Verbundsteine	Q1 31662,-1002 32168,-981
 Seestr.: grobe Verbundsteine	Q1 31662,-1002 31671,-1387
 Eichwalder Str. (Gosen): Asphalt	Q0 30728,-2326 30721,-2146 30843,-1953 30909,-1831 31057,-1457
 Eichwalder Ausbau: Asphalt	Q0 31057,-1457 30690,-1458
-Eichwalder Ausbau: Asphalt mit Wurzelschäden	Q1- 30690,-1458 30411,-1704
+Eichwalder Ausbau: Asphalt mit Wurzelschäden	Q1- 30690,-1458 30458,-1662 30411,-1704
 Max-Liebermann-Str. (Eichwalde): Asphalt	Q0 24787,-4488 25042,-4334 25186,-4238 25193,-4232
 Max-Liebermann-Str. (Eichwalde): Asphalt	Q1 25193,-4232 25293,-4192
 Am Zwiebusch: Asphalt	Q1 30411,-1704 30361,-1756
 Pätz: Kopfsteinpflaster	Q2 28615,-19431 28304,-19608 28251,-19639 28164,-19771 28089,-19844 28071,-19862
 Groß-Köris - Motzen: Asphalt	Q0 27822,-24916 27768,-24799 27712,-24629 27657,-24389 27628,-24237 27375,-24125 27006,-23844 26315,-23321 26145,-23192 26096,-23160 26070,-23160 25871,-23127 23485,-22730
 #: by: René (refan): vvv
-Grünau - Zeuthen: gepflastert	Q1- 26931,-2871 26875,-2993 26748,-3285 26639,-3587 26562,-3781 26554,-3814 26319,-4776 26228,-5150 26259,-5681 26085,-5839 25996,-5921
+Grünau - Zeuthen: gepflastert	Q1- 26931,-2871 26875,-2993 26787,-3194 26748,-3285 26651,-3554 26636,-3596 26562,-3781 26554,-3814 26319,-4776 26228,-5150 26259,-5681 26085,-5839 25996,-5921
 Zeuthen - KW: Asphalt	Q0 25996,-5921 26003,-5934 26099,-6131 26135,-6206 26506,-6931 26609,-7136 26700,-7334 26790,-7918 26786,-7968 26775,-8117 26749,-8481 26727,-8668 26679,-8825 26429,-9618 26381,-9753 26365,-9875 26376,-9924 26391,-9997 26420,-10035 26434,-10054
 #: by: ^^^
 Friesenstr. (Zeuthen): Asphalt	Q0 25817,-5856 25782,-5801 25652,-5602 25600,-5426 25570,-5180 25572,-5126 25476,-4811 25448,-4785 25345,-4806 25183,-4565 25042,-4334
@@ -3000,16 +3004,16 @@ Heinrich-Heine-Allee (Eichwalde): schlechtes Kopfsteinpflaster	Q3 25191,-3903 25
 Heinrich-Heine-Allee: Asphalt	Q0 25173,-3957 25206,-4014 25212,-4025
 #: by: Detlef Westphal
 #: confirmed_by: srt
-Friedenstr. (Eichwalde): Asphalt	Q0 25322,-4042 25678,-3957 26050,-3881
+Friedenstr. (Eichwalde): Asphalt	Q0 25322,-4042 25409,-4020 25423,-4016 25550,-3986 25678,-3957 25774,-3936 26049,-3876
 #: by: Detlef Westphal
 #: confirmed_by: srt
 Schillerstr. (Zeuthen): Asphalt	Q0 25763,-4283 25793,-5002 25831,-5163
 Friedenstr.: Asphalt	Q0 25212,-4025 25269,-4041
 Friedenstr.: Kopfsteinpflaster	Q2 25269,-4041 25322,-4042
-Friedenstr. (Eichwalde): Asphalt	Q0 26050,-3881 26562,-3781
+Friedenstr. (Eichwalde): Asphalt	Q0 26049,-3876 26163,-3849 26248,-3829 26354,-3805 26395,-3796 26458,-3789 26562,-3781
 #: add_fragezeichen: Wie ist die Qualität des Kopfsteinpflasters (mäßig oder schlecht)?
 #: by: osm
-Friedenstr.: Kopfsteinpflaster	Q2 26562,-3781 26860,-3805 26977,-3814
+Friedenstr.: Kopfsteinpflaster	Q2 26562,-3781 26708,-3792 26860,-3805 26977,-3814
 August-Bebel-Allee (Eichwalde): schlechtes Kopfsteinpflaster	Q3 24999,-3312 25044,-3412 25088,-3470 25163,-3652 25199,-3743 25269,-3906 25322,-4042 25368,-4182
 Mozartstr. (Eichwalde): Asphalt	Q0 25269,-3906 25365,-3880
 Schmöckwitzer Str. [August-Bebel-Platz] (Eichwalde): Kopfsteinpflaster	Q2+ 25199,-3743 25220,-3725 25227,-3704 25226,-3680 25209,-3657 25185,-3649 25163,-3652
@@ -4739,7 +4743,7 @@ Damaschkeweg: guter Asphalt	Q0 -11036,-3654 -11166,-3744 -11177,-3752 -11305,-37
 #: by: Tom Melchior (gefakte E-Mail-Adresse?):
 #: note: anonymous meint: "Radfahren wegen Straßenzustand nicht möglich, aber auf unbefestigtem Bürgersteig geduldet (Sand, teilweise schwierig), Kreuzungen sind problematisch (Bordsteinkanten)"
 #: corrected_by: anonymous (holprige Straße, Q3 -> Kopfsteinpflaster, Q3)
-Grenzstr. (Eichwalde): schlechtes Kopfsteinpflaster, Radfahren auf dem unbefestigten Bürgersteig wird gedulded	Q3 26337,-3101 26192,-2847 26028,-2572 25958,-2455
+Grenzstr. (Eichwalde): schlechtes Kopfsteinpflaster, Radfahren auf dem unbefestigten Bürgersteig wird gedulded	Q3 26337,-3101 26284,-3006 26192,-2847 26028,-2572 25958,-2455
 # 
 #: by: Norman Kraehe:
 Mühlenweg (Zühlsdorf): fester Sandweg	Q2 8800,36186 8752,36262 8575,36292 8325,36399 8001,36643 7957,36668 7837,36726 7732,36864 7670,36910 7529,36946
@@ -6230,8 +6234,8 @@ Am Stinthorn (Neu Fahrland): mäßiger Asphalt	Q2 -13779,4233 -13763,4232 -13735,4
 #: confirmed_by: srt
 Gosener Str. (Eichwalde): Fahrbahn grobes Kopfsteinpflaster, Gehweg besser	Q3 26192,-2847 26102,-2822 25836,-2749 25579,-2680 25570,-2679
 #: note: "Gehweg gepflastertert im schlechten Zustand, wird aber häufig von Radfaherer genutzt, da noch besser als die Fahrbahn"
-Bahnhofstr. (Eichwalde): Fahrbahn sehr grobes Kopfsteinpflaster, Gehweg besser	Q2- 26102,-2822 25912,-2958 25730,-3091 25567,-3189 25400,-3285
-Bahnhofstr. (Eichwalde): Asphalt	Q0 25400,-3285 25290,-3350 25179,-3418 25088,-3470
+Bahnhofstr. (Eichwalde): Fahrbahn sehr grobes Kopfsteinpflaster, Gehweg besser	Q2- 26102,-2822 25912,-2958 25869,-2989 25730,-3091 25567,-3189 25400,-3285
+Bahnhofstr. (Eichwalde): Asphalt	Q0 25400,-3285 25290,-3350 25182,-3414 25173,-3420 25088,-3470
 #: by: ^^^
 # 
 #: by: papst leo...

@@ -1103,7 +1103,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: IM_025933
 #: osm_watch: way id="342968607" version="8"
 #: osm_watch: way id="461526152" version="2"
-#: last_checked: 2018-08-13
+#: last_checked: 2018-08-20
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
@@ -1754,7 +1754,7 @@ Berliner Gehwegplatten mit einigen leichten Unebenheiten, ca. 1,50m breit	RW2;RW
 #: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5;
 #: by: http://www.dafmap.de/d/berlin.html?id=3134&mt=0&zoom=16 (Projektabschluss: 2017-09-01)
 #: osm_watch: way id="187103792" version="10"
-#: last_checked: 2018-08-01
+#: last_checked: 2018-08-20
 #: check_frequency: 14d
 	RW4; 11451,13301 11369,13174
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 11451,13301 11486,13350
@@ -1846,7 +1846,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19, Sa 8-19 und So 7-15 Uhr	RW1;
 schmaler asphaltierter Radweg	RW1; 5446,15489 5722,15795
 schmaler Verbundsteinpflasterradweg	RW1; 5722,15795 5907,16000
 schmaler asphaltierter Radweg	RW1; 5907,16000 5722,15795 5446,15489
-aufgemalte Radwege	RW1;RW1 5907,16000 5988,16099 6104,16223 6211,16343 6304,16447
+aufgemalte Radwege	RW1;RW1 5907,16000 5981,16091 6104,16223 6211,16343 6304,16447
 #: by: ^^^
 	RW2;RW2 5295,17344 5250,17318 5034,17322
 	RW2;RW 5109,17507 5068,17384 5034,17322
@@ -2722,11 +2722,15 @@ Wechsel zwischen alten Gehwegplatten und schadhaftem Verbundsteinpflaster	RW1; 1
 	RW; 13999,2727 13951,2697 13915,2673 13886,2653 13709,2551
 	RW1; 13709,2551 13501,2413
 	RW; 13501,2413 13418,2357 13367,2322 13104,2143
+# 
 #: XXX Markierung von Schutzstreifen und Fahrbahnverbreiterung, Rückbau des alten Radweges vvv
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017) vvv
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.601178.php
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20180202
+#: osm_watch: way id="172243640" version="5"
+#: osm_watch: way id="30084195" version="17"
+#: osm_watch: way id="30084196" version="20"
 #: last_checked: 2018-04-29 vvv
 #: check_frequency: 60d vvv
 # REMOVED (ja, ist so) --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4688 (abgesperrt) (vorher: Radwege mit Schäden) --- #: XXX vor Ort anschauen!
@@ -2736,6 +2740,7 @@ Radwege mit Schäden	RW1; 14523,1847 14252,1945 14231,1952 14120,1991 13835,2099 
 #: last_checked ^^^
 #: by ^^^
 #: XXX ^^^
+# 
 # REMOVED ---	RW1;RW1 14523,1847 14621,1798 14676,1777
 	RW6;RW6 10612,1925 10593,1875 10578,1840
 #: note: Zweirichtungsradweg für Radfahrer in Richtung Mozartstr.

@@ -21,7 +21,7 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualit‰t danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-08-19
+#: last_checked: 2018-08-20
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
@@ -144,21 +144,26 @@ Igo-Etrich-Str. - Wagner-RÈgeny-Str: Bauarbeiten, auf Gehweg ausweichen	q1::inwo
 #: by: http://www.berliner-woche.de/moabit/verkehr/strasse-bleibt-gesperrt-d162416.html
 #: source_id: LMS-BR_r_LMS-BR_127868_LMS-BR_72
 #: source_id: 2147342637
-#: last_checked: 2018-08-04
+#: last_checked: 2018-08-20
 #: next_check: 2018-11-15
 #: valid: -20181115
 Friedrich-Krause-Ufer: Engstelle wegen Bauarbeiten, voraussichtlich bis Mitte November 2018	q2::inwork 7368,14573 7314,14599 7167,14666
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.641406.php
 #: valid: 20171026-
-#: last_checked: 2018-06-08
+#: last_checked: 2018-08-20
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
 # 
 ### Mitte ###
 # 
 # REMOVED (mittlerweile existiert auch eine Absenkung) --- #: next_check_id: OTTOBRAUN-2015 --- #: XXX vermutlich im ausgebauten Zustand: q1  --- #: last_checked: 2018-03-16 --- #: check_frequency: 14d --- Wadzeckstr. - Mollstr.: Behinderungen wegen Bauarbeiten mˆglich	q2::inwork 11315,13210 11399,13333
-# REMOVED --- #: next_check_id: ROSSSTRASSENBRUECKE-2018 --- #: last_checked: 2018-06-07 --- #: check_frequency: 21d --- M‰rkisches Ufer: Bauarbeiten, Engstelle	q3+::inwork 10687,11853 10869,11949
+# REMOVED --- #: next_check_id: ROSSSTRASSENBRUECKE-2018 --- 
+# 
+#: last_checked: 2018-08-20
+#: check_frequency: 30d
+M‰rkisches Ufer: Engstelle vor der Roﬂstraﬂenbr¸cke	q2::inwork 10687,11853 10869,11949
+# 
 # REMOVED --- #: source_id: 2147341587 --- #: last_checked: 2017-11-01 vvv --- #: check_frequency: 21d vvv --- J‰gerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q2::inwork 9195,11972 9393,12000 --- J‰gerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q3::inwork 9393,12000 9523,12019
 # REMOVED --- #: last_checked: 2015-06-10 --- Am Zirkus: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9167,13046 9137,13032 9090,13009
 # REMOVED --- #: last_checked: 2016-06-01 --- Kommandantenstr.: Bauarbeiten, Einbahnstraﬂe	q2::inwork; 10437,11352 10389,11390
@@ -175,7 +180,7 @@ Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: XXX man kann auf dem s¸dlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2018-08-18
+#: last_checked: 2018-08-20
 Voltairestr.: Fahrbahn unter Umst‰nden wegen Baustelle gesperrt, Ausweichen auf Gehweg	q2- 11329,12497 11209,12430
 # 
 #: next_check_id: ZIEGELSTR-2016
@@ -208,7 +213,7 @@ Sch¸tzenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 # REMOVED --- : osm_watch: note 814191 1
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_26_3435_3558_online.pdf (Grundst¸cksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschr‰nkungen den comments_misc-orig-Eintrag wieder aktivieren
-#: last_checked: 2018-08-14
+#: last_checked: 2018-08-20
 #: check_frequency: 30d
 Alexandrinenstr.: direkter Zugang zur Sebastianstr. nicht mehr mˆglich, stattdessen Trampelpfad benutzen, Bordsteine	q3::inwork 10781,11243 10678,11172
 # 
@@ -1621,7 +1626,7 @@ Nazarethkirchstr.: einige Bodenschwellen	q0- 7543,16016 7441,15909 7354,15817 71
 Rolandstr.: Fuﬂg‰nger	q1 11380,19783 11229,19706 11134,19655
 #: note: an der Seestraﬂe steht ein Schild "5 km/h Schritt fahren"
 (Weg am Kombibad Wedding): Fuﬂg‰nger	q1 7417,16587 7298,16725 7267,16784
-Kongostr.: Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q2 6244,16096 6202,16041 6129,15970
+Kongostr.: Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q2 6244,16096 6202,16041 6119,15965
 Sambesistr.: enge Straﬂe	q1 5968,15914 5787,15741
 Ugandastr.: enge Straﬂe	q1 6071,15768 5906,15623
 Limburger Str.: Fuﬂg‰nger	q2 7012,15571 7129,15717
