@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.32;
+$VERSION = 1.33;
 
 use vars qw(%images);
 
@@ -81,7 +81,7 @@ sub register {
 	$main::info_plugins{__PACKAGE__ . "_MapCompare_Berlin_Satellite"} =
 	    { name => "Map Compare (profile Berlin satellite)",
 	      callback => sub { showmap_mapcompare(@_, profile => "berlin-satellite") },
-	      callback_3_std => sub { showmap_url_mapcompare(@_, profile => "berlin-satellite") },
+	      callback_3 => sub { show_mapcompare_menu(@_) },
 	      ($images{Geofabrik} ? (icon => $images{Geofabrik}) : ()),
 	    };
     }
@@ -577,6 +577,7 @@ sub showmap_url_mapcompare {
     my(%args) = @_;
 
     my $profile = delete $args{profile};
+    my $maps = delete $args{maps};
 
     my $px = $args{px};
     my $py = $args{py};
@@ -588,7 +589,13 @@ sub showmap_url_mapcompare {
     my $common_qs;
     if ($profile && $profile eq '__distinct_map_data') {
 	$common_qs = 'num=10&mt0=bvg&mt1=bbbike-bbbike&mt2=mapnik&mt3=esri&mt4=falk-base&mt5=google-map&mt6=nokia-map&mt7=lgb-topo-10&mt8=pharus&mt9=tomtom-basic-main';
-    } else{
+    } elsif ($maps) {
+	$common_qs = "num=" . scalar(@$maps);
+	for my $map_i (0 .. $#$maps) {
+	    my $map = $maps->[$map_i];
+	    $common_qs .= "&mt$map_i=$map";
+	}
+    } else {
 	my $map0 = $map_compare_use_bbbike_org ? 'google-hybrid' : 'googlehybrid';
 	#my $map1 = 'tah';
 	my $map1 = 'mapnik';
@@ -611,6 +618,45 @@ sub showmap_url_mapcompare {
 }
 
 sub showmap_mapcompare { start_browser(showmap_url_mapcompare(@_)) }
+
+sub show_mapcompare_menu {
+    my(%args) = @_;
+    my $lang = $Msg::lang || 'de';
+    my $w = $args{widget};
+    my $menu_name = __PACKAGE__ . '_MapCompare_Menu';
+    if (Tk::Exists($w->{$menu_name})) {
+	$w->{$menu_name}->destroy;
+    }
+    my $link_menu = $w->Menu(-title => 'Map Compare',
+			     -tearoff => 0);
+    $link_menu->command
+	(-label => 'Newest only',
+	 -command => sub {
+	     showmap_mapcompare
+		 (maps => [qw(
+				 berlin-historical-2004
+				 berlin-historical-2007
+				 berlin-historical-2015
+				 berlin-historical-2016
+				 berlin-historical-2017
+				 berlin-historical-2018
+				 google-satellite
+				 digitalglobe-standard
+			    )],
+		  %args,
+		 )
+	     },
+	);
+    $link_menu->command
+	(-label => "Link kopieren",
+	 -command => sub { _copy_link(showmap_url_mapcompare(%args)) },
+	);
+
+    $w->{$menu_name} = $link_menu;
+    my $e = $w->XEvent;
+    $link_menu->Post($e->X, $e->Y);
+    Tk->break;
+}
 
 ######################################################################
 # BVG-Stadtplan (via mc.bbbike.org)
