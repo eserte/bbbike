@@ -20,9 +20,7 @@ Dieselstr., Umfahrung: unbefestigt	Q2 14429,8074 14484,8044
 #: source_id: IM_023718
 #: source_id: 2147339540
 #: next_check_id: SONNENALLEE-2014
-#: last_checked: 2018-08-06
-# REMOVED --- #: check_frequency: 14d
-#: next_check: 2018-08-17
+#: last_checked: 2018-08-21
 Sonnenallee: teilweise unfertige Radwege	Q1 14174,7505 14334,7395 14369,7376 14530,7301
 # 
 #: temporary ^^^
@@ -89,7 +87,7 @@ Sinsheimer Weg: Betonstraße	Q0 13774,8849 13837,8932
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Beginn der Bauarbeiten Ende August 2018, Ende 2019)
 #: by: https://www.aktion-kms.de/projekte/umbau-donaustrasse/
 #: by: https://www.aktion-kms.de/assets/2017/01/Donaustra%C3%9Fe_LP_Lph3-LP_01.pdf
-#: last_checked: 2018-08-10 vvv
+#: last_checked: 2018-08-21 vvv
 #: next_check: 2018-08-31 vvv
 Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729 12549,8616 12649,8535
 #: XXX hier wird vermutlich auch die Einbahnstraßenregelung für Radfahrer aufgehoben
@@ -97,7 +95,7 @@ Pannierstr.: Kopfsteinpflaster	Q2 12242,8972 12202,8895
 #: next_check ^^^
 #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
-#: last_checked: 2018-07-05
+#: last_checked: 2018-08-21
 #: next_check: 2019-03-01
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -161,7 +159,7 @@ Am Landwehrkanal: Parkweg	Q1 13225,9897 13271,9927 13333,9929
 #: note: zwischen gepflastertem Parkstreifen (Diagonalparken) und Asphaltstreifen ist eine deutliche Lücke, so dass man bei Gegenverkehr auf die Pflasterung fahren muss
 Innstr.: Asphaltstreifen auf der linken Seite	Q1; 13102,8343 13166,8423 13217,8493 13262,8554 13301,8606
 Innstr.: Asphaltstreifen auf der rechten Seite	Q0; 13301,8606 13262,8554 13217,8493 13166,8423 13102,8343
-Innstr.: Kopfsteinpflaster (mäßig bis schlecht)	Q2- 13301,8606 13314,8624 13368,8689
+Innstr.: Asphalt	Q0 13301,8606 13314,8624 13368,8689
 Elsenstr.: Asphalt	Q0 13405,8737 13458,8805 13510,8872 13664,9073 13766,9200
 #: note: gepflasterter Parkstreifen
 Herrfurthstr.: Asphalt	Q0 11979,8014 11833,7980 11754,7964
@@ -573,7 +571,7 @@ An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q2 8369,18769 
 An der Nordbahn: mäßiger Asphalt	Q1- 7504,19459 6690,20157 6395,20413
 # 
 Pestalozzistr.: Asphalt	Q0 4434,11227 4546,11217
-Pestalozzistr.: Kopfsteinpflaster	Q2 4546,11217 4728,11195 4782,11192
+Pestalozzistr.: Kopfsteinpflaster	Q2 4546,11217 4729,11206 4775,11203
 Pestalozzistr.: Kopfsteinpflaster	Q2 4176,11235 4101,11233 3981,11232
 Goethestr.: teilweise Kopfsteinpflaster, teilweise Verbundsteine	Q2+ 4312,11354 4101,11347 3986,11347
 Knesebeckstr.: Kopfsteinpflaster	Q2 4868,10934 4862,10881 4847,10677 4847,10589 4828,10356
@@ -770,7 +768,8 @@ Rosa-Luxemburg-Steg - Gartenufer: Parkweg	Q2 6247,11390 6200,11417
 Fasanerieallee: Parkweg	Q1 6428,11610 6450,11641 6540,11754 6685,11954
 Großer Weg: Parkweg	Q1 5900,11913 5907,11874 5933,11775 6022,11757 6154,11798 6296,11756 6358,11724 6411,11678 6450,11641 6512,11608 6809,11570 6869,11567 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629
 Großer Weg: asphaltiert	Q0 7606,11629 7623,11624 7664,11597 7711,11558 7717,11540
-Große Sternallee: Parkweg	Q1 6809,11979 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566 7504,11512
+Große Sternallee: Parkweg, Feinschotter	Q1 6809,11979 6984,11859 7058,11809 7163,11738
+Große Sternallee: Parkweg, etwas gröberer Schotter	Q1- 7163,11738 7373,11594 7418,11566 7504,11512
 (Hiroshimastr. - Große Sternallee): Parkweg	Q1 7356,11517 7362,11561 7373,11594
 Bellevueallee: Mosaikpflaster	Q1 7031,12320 7383,12095 7429,12070 7658,11947 7717,11918 7801,11875 8016,11770 8026,11764 8172,11679
 Ahornsteig: Parkweg	Q1 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753
@@ -1337,7 +1336,7 @@ Miraustr.: guter Asphalt	Q0 3820,19688 4006,19443
 Miraustr.: Asphalt	Q0 4006,19443 4170,19079 4190,19048
 #: by: ^^^
 Schaperstr.: Asphalt	Q0 5700,10226 5597,10299 5450,10338
-Bleibtreustr.: Kopfsteinpflaster	Q2 4728,11195 4722,11030 4714,10950 4701,10837 4685,10689
+Bleibtreustr.: Kopfsteinpflaster	Q2 4729,11206 4722,11030 4714,10950 4701,10837 4685,10689
 Wilhelmsaue: Kopfsteinpflaster	Q2 5164,8740 5206,8731 5228,8729 5346,8720 5510,8709
 Werderstr.: unebenes Kleinsteinpflaster	Q2- 8968,5554 8981,5692
 Werderstr.: asphaltiert	Q0 8981,5692 8996,5823
@@ -1502,9 +1501,10 @@ Treptower Park: Kleinsteinpflaster	Q1- 15453,9259 15513,9144 15527,9096
 Treptower Park: Asphalt	Q0 15527,9096 15623,9028
 Treptower Park: Kleinsteinpflaster	Q1- 15623,9028 15778,8990
 # 
-#: XXX Sanierungsarbeiten im Treptower Park geplant, wo genau?
+#: XXX Sanierungsarbeiten im Treptower Park geplant: die meisten Wege um den Karpfenteich sind betroffen
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
+#: last_checked: 2018-08-21
 #: next_check: 2018-08-31 (Beginn der Bauarbeiten)
 Treptower Park: Schotterweg, aber relativ glatt	Q2 14854,8964 14614,9052
 # 
@@ -1709,11 +1709,11 @@ Knorrpromenade: Kopfsteinpflaster	Q2 14369,11489 14424,11639
 (Vorfahrt Neues-Deutschland-Gebäude): Kopfsteinpflaster, OK	Q1 12788,11898 12891,12008
 # REMOVED (eigentlich keine großen Qualitätseinbußen) --- Husemannstr.: mäßiger Asphalt	Q1+ 11265,14756 11285,14958
 Feilnerstr.: teilweise gutes Kopfsteinpflaster	Q1 9973,11150 10163,11070
-Hobrechtstr.: Kopfsteinpflaster	Q2 11998,8872 12011,9100
-Hobrechtstr.: gutes Kopfsteinpflaster	Q1 12011,9100 12005,9211
-Hobrechtstr.: mäßiges Kopfsteinpflaster	Q2 12005,9211 11954,9415 11934,9538
+Hobrechtstr.: Kopfsteinpflaster	Q2+ 11998,8872 12011,9100
+Hobrechtstr.: mäßiges Kopfsteinpflaster	Q2 12011,9100 12005,9211
+Hobrechtstr.: mäßiges Kopfsteinpflaster	Q2- 12005,9211 11954,9415 11934,9538
 Hobrechtstr.: mäßiges Kopfsteinpflaster, kurze Verbundsteinpflasterabschnitte	Q2 11934,9538 11917,9663
-Hobrechtstr.: mäßiges Kopfsteinpflaster	Q2 11917,9663 11897,9754
+Hobrechtstr.: mäßiges Kopfsteinpflaster	Q2- 11917,9663 11897,9754
 Sanderstr.: Asphalt	Q0 11710,9628 11917,9663
 Sanderstr.: Asphalt mit einigen Schäden	Q0- 11917,9663 12074,9689
 Biebricher Str.: mäßiges Kopfsteinpflaster	Q2 11884,8492 12057,8529
@@ -3157,7 +3157,7 @@ Charlottenstr.: Gehwegplatten	Q0- -3227,14260 -3293,14304 -3338,14333 -3397,1437
 Carl-Schurz-Str.: kleinteiliges Kopfsteinpflaster	Q1 -3150,14631 -3185,14556 -3205,14512 -3228,14468 -3275,14407 -3338,14333 -3409,14241 -3457,14189 -3552,14082
 Mauerstr.: kleinteiliges Kopfsteinpflaster	Q1 -3409,14241 -3316,14169
 (Maybachufer - Weigandufer): wassergebundene Decke	Q1 12845,9304 12862,9273 12909,9085 12902,9066
-Schönstedtstr. (Neukölln): Kopfsteinpflaster	Q2 12742,8635 12649,8535
+Schönstedtstr. (Neukölln): Kopfsteinpflaster	Q2- 12742,8635 12649,8535
 Schönstedtstr. (Neukölln): Asphalt	Q0 12649,8535 12540,8458
 # REMOVED (Asphalt neu gemacht) --- #: XXX Straßenbauarbeiten (mit Vollsperrung) ab September 2013, danach vielleicht bessere Qualität? --- #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_08_02.pdf?start&ts=1375448176&file=stra__enbauliste_stand_2013_08_02.pdf --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130827.1005.388421.html --- #: last_checked: 2013-09-09 --- #: next_check: 2013-09-30
 Höhndorfstr.: Asphalt	Q0 8454,8574 8438,8676 8434,8775

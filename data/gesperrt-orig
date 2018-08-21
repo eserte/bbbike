@@ -2927,8 +2927,7 @@ Drängelgitter	BNP:3::trailer=10 1409,15177
 #: last_checked: 2018-08-16
 Boxhagener Str. - Weserstr.: Bauarbeiten, Durchfahrt nicht mehr möglich	2::inwork 14838,11410 14949,11474
 # 
-#: next_check_id: HEIDELBERGER-2017
-#: last_checked: 2018-08-10
+#: last_checked: 2018-08-21
 #: check_frequency: 30d
 Heidelberger Str.: Baustelle, Einbahnstraße	1s:q3:inwork 13491,9201 13421,9260 13357,9313
 # 
@@ -2939,6 +2938,7 @@ Heidelberger Str.: Baustelle, Einbahnstraße	1s:q3:inwork 13491,9201 13421,9260 1
 #: check_frequency: 120d
 Kaiserin-Augusta-Allee - Neues Ufer: Bauarbeiten, Weg ist komplett gesperrt	2::inwork 4561,13244 4547,13139 4576,13115
 # 
+#: osm_watch: way id="618266806" version="1"
 #: last_checked: 2018-06-30
 #: check_frequency: 90d
 Pepitapromenade: Bauarbeiten, teilweise noch gesperrt	2::inwork -2873,17369 -2573,17314
@@ -2996,7 +2996,7 @@ Hermineweg: Bauarbeiten, gesperrt	2::inwork 24831,10966 24906,10965
 #: check_frequency: 60d
 Karlinekenweg: Bauarbeiten, gesperrt	2::inwork 11359,20297 11405,20196
 # 
-#: last_checked: 2018-05-24
+#: last_checked: 2018-08-21
 #: check_frequency: 360d
 Neue Nationalgalerie: Bauarbeiten, Parkplatz gesperrt	2::inwork 7874,11293 7828,11133
 # 
@@ -3170,11 +3170,11 @@ An den Parkbäumen: Bauarbeiten, Fahrbahn gesperrt	2::inwork -6530,6699 -6556,666
 #: osm_watch: way id="392904879" version="1" vvv
 #: osm_watch: way id="392904880" version="4" vvv
 #: check_frequency: 360d vvv
-#: last_checked: 2018-03-11 vvv
+#: last_checked: 2018-08-21 vvv
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5579,12231 5535,12206 5518,12159
 Gutenbergstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5317,12242 5518,12159
 #: last_checked ^^^
-#: last_checked: 2018-08-18
+#: last_checked: 2018-08-21
 Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5518,12159 5627,12105 5658,12082 5712,12033 5775,11975
 #: check_frequency ^^^
 #: osm_watch ^^^
@@ -3241,7 +3241,6 @@ Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtun
 # REMOVED (offen) --- Nöldnerstr.: Bauarbeiten, Einbahnstraße	1s:q4 15272,10790 15388,10758 15433,10765
 # REMOVED (nur der östliche Abschnitt ist geblieben, aber relativ breit und relativ wenig Verkehr) --- #: XXX Bauarbeiten der Berliner Wasserbetriebe bis Dezember 2017 --- #: last_checked: 2017-07-23 --- #: next_check: 2017-12-01 --- #: valid: -20171231 --- Türrschmidtstr.: Bauarbeiten, Einbahnstraße	1s:q3 15541,10892 15649,10922 15756,10966
 # 
-#: next_check_id: HERBERTVONKARAJAN-2018
 #: by: http://www.dafmap.de/d/berlin.html?id=3853&mt=0&zoom=16
 #: last_checked: 2018-08-18
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8969,11814

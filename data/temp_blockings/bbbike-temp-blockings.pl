@@ -23981,11 +23981,15 @@ EOF
 	q4::inwork 20559,14847 20480,14874
 EOF
      },
-     { from  => 1534789491, # 1416813420, # 2014-11-24 08:17
-       until => undef, # $isodate2epoch->("2015-02-03 16:00:00"), # 1418655600, # 2014-12-15 16:00
-       text  => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn in Richtung Norden gesperrt',
+     { from  => 1534789491,
+       until => undef,
+       text  => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn in Richtung Norden gesperrt, Ende der Sperrung unbekannt',
        type  => 'handicap',
        data  => <<EOF,
+#: XXX bis wann geht die Sperrung?
+#: priority: #A
+#: last_checked: 2018-08-20
+#: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
      },
@@ -26910,7 +26914,7 @@ EOF
        text  => 'Vorbergstr.: Bauarbeiten zwischen Gleditschstr. und Akazienstr., Fahrbahn gesperrt, außerdem Sperrung in der Gleditschstr., Ende unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2018-08-10 vvv
+#: last_checked: 2018-08-21 vvv
 # XXX_prog: eigentlich q3-
 	q4::inwork 7136,9223 7012,9222
 	q2::inwork 7136,9223 7130,9316
@@ -27037,13 +27041,14 @@ EOF
 	q4::inwork; 5297,21243 5099,21410 5053,21452 5000,21488 4810,21730
 EOF
      },
-     { from  => 1522864912, # 2018-04-04 20:01
-       until => 1530907952, # $isodate2epoch->("2018-07-15 20:00:00"), # 1525449600, # 2018-05-04 18:00
-       text  => 'Behrenstr.: Sperrung Richtung Osten zwischen Wilhelmstr. und Glinkastr., voraussichtlich bis Mitte Juli 2018',
+     { from  => 1534878268, # 1522864912, # 2018-04-04 20:01
+       until => $isodate2epoch->("2018-09-30 18:00:00"), # 1530907952, # $isodate2epoch->("2018-07-15 20:00:00"), # 1525449600, # 2018-05-04 18:00
+       text  => 'Behrenstr.: Sperrung Richtung Osten zwischen Wilhelmstr. und Glinkastr., voraussichtlich bis Ende September 2018',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147342390
 #: source_id: 2147342751
+#: source_id: 2147343056
 # REMOVED (hier nicht mehr) ---	q4::inwork; 8901,12008 8861,12125
 #: last_checked: 2018-06-08
 # REMOVED --- #: check_frequency: 7d
@@ -27192,13 +27197,13 @@ EOF
 EOF
      },
      { from  => undef,
-       until => $isodate2epoch->("2018-08-31 18:00:00"),
+       until => $isodate2epoch->("2018-08-16 18:00:00"), # laut osm Sperrung beendet
        text  => "Karlshorster Str.: Fahrbahn der Stubenrauchbrücke in Richtung Osten gesperrt, Radfahrer müssen auf den Gehweg ausweichen, bis Ende August 2018",
        source_id => "2147342600",
        data  => <<EOF,
 # REMOVED (ja) --- #: add_fragezeichen: Ist die Stubenrauchbrücke tatsächlich für Radfahrer gesperrt?
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/spreequerung-bleibt-bis-august-voll-gesperrt_a164513
-#: osm_watch: way id="4540244" version="18"
+#: osm_watch: way id="4540244" version="19"
 	q3::inwork; 17432,6352 17492,6462 17528,6502
 EOF
      },
@@ -27235,11 +27240,13 @@ EOF
 EOF
      },
      { from  => 1527186848, # 2018-05-24 20:34
-       until => 1534536582, # 1534543200, # 2018-08-18 00:00
-       text  => 'Am Spreebord: Bauarbeiten, Passieren für Radfahrer möglich, aber sehr eng, Bordsteine, bis 17.08.2018',
+       until => undef, # 1534536582, # 1534543200, # 2018-08-18 00:00
+       text  => 'Am Spreebord: Bauarbeiten, Passieren für Radfahrer möglich, aber sehr eng, Bordsteine, Ende unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: by: fritz
+#: XXX bis wann geht die Sperrung?
+#: last_checked: 2018-08-21
 	q4::inwork 4124,12721 4055,12713 3949,12710
 EOF
      },
@@ -27573,8 +27580,8 @@ EOF
 EOF
      },
      { from => 1533579833,
-       until => $isodate2epoch->("2018-08-19 18:00:00"),
-       text => 'Grünberger Str.: Sperrung der Fahrbahn zwischen Kadiner Str. und Warschauer Str., Richtung Osten, voraussichtlich bis zum 19. August 2018',
+       until => $isodate2epoch->("2018-09-15 18:00:00"),
+       text => 'Grünberger Str.: Sperrung der Fahrbahn zwischen Kadiner Str. und Warschauer Str., Richtung Osten, voraussichtlich bis Mitte September 2018',
        type => 'handicap',
        data => <<EOF,
 #: source_id: 2147342987
@@ -27642,7 +27649,7 @@ EOF
        source_id => '2147342231',
        data  => <<EOF,
 #: note: Gesamtbaumaßnahme bis 31.12.2023
-#: XXX sind tatsächlich Radfahrer betroffen?
+# REMOVED (ja) --- #: XXX sind tatsächlich Radfahrer betroffen?
 	q4::inwork; 5076,10658 5047,10381
 EOF
      },
@@ -27664,6 +27671,17 @@ EOF
        source_id => '2147343039',
        data  => <<EOF,
 	q2::inwork; 8423,14667 8336,14586
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Am Schillertheater: Bauarbeiten, Fahrbahn Richtung Süden gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX bis wann sind hier Bauarbeiten?
+#: last_checked: 2018-08-21
+#: check_frequency: 21d
+	q4::inwork; 4502,11740 4574,11587
 EOF
      },
     );

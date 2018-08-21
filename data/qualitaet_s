@@ -97,7 +97,7 @@ Am Landwehrkanal: Asphalt, einige Wurzelhebungen	Q0 13109,9743 13225,9897
 Am Landwehrkanal: Parkweg	Q1 13225,9897 13271,9927 13333,9929
 Innstr.: Asphaltstreifen auf der linken Seite	Q1; 13102,8343 13166,8423 13217,8493 13262,8554 13301,8606
 Innstr.: Asphaltstreifen auf der rechten Seite	Q0; 13301,8606 13262,8554 13217,8493 13166,8423 13102,8343
-Innstr.: Kopfsteinpflaster (m‰ﬂig bis schlecht)	Q2 13301,8606 13314,8624 13368,8689
+Innstr.: Asphalt	Q0 13301,8606 13314,8624 13368,8689
 Elsenstr.: Asphalt	Q0 13405,8737 13458,8805 13510,8872 13664,9073 13766,9200
 Herrfurthstr.: Asphalt	Q0 11979,8014 11833,7980 11754,7964
 Herrfurthstr.: Asphalt	Q0 11647,7940 11573,7924 11472,7899
@@ -417,7 +417,7 @@ An der Nordbahn: teilweise m‰ﬂiger Asphalt (Wellen, Schlaglˆcher)	Q1 8562,18642 
 An der Nordbahn: teilweise m‰ﬂiger Asphalt (Wellen, Schlaglˆcher)	Q2 8369,18769 8162,18941 7996,19049 7792,19218 7512,19480
 An der Nordbahn: m‰ﬂiger Asphalt	Q1 7504,19459 6690,20157 6395,20413
 Pestalozzistr.: Asphalt	Q0 4434,11227 4546,11217
-Pestalozzistr.: Kopfsteinpflaster	Q2 4546,11217 4728,11195 4782,11192
+Pestalozzistr.: Kopfsteinpflaster	Q2 4546,11217 4729,11206 4775,11203
 Pestalozzistr.: Kopfsteinpflaster	Q2 4176,11235 4101,11233 3981,11232
 Goethestr.: teilweise Kopfsteinpflaster, teilweise Verbundsteine	Q2 4312,11354 4101,11347 3986,11347
 Knesebeckstr.: Kopfsteinpflaster	Q2 4868,10934 4862,10881 4847,10677 4847,10589 4828,10356
@@ -575,7 +575,8 @@ Rosa-Luxemburg-Steg - Gartenufer: Parkweg	Q2 6247,11390 6200,11417
 Fasanerieallee: Parkweg	Q1 6428,11610 6450,11641 6540,11754 6685,11954
 Groﬂer Weg: Parkweg	Q1 5900,11913 5907,11874 5933,11775 6022,11757 6154,11798 6296,11756 6358,11724 6411,11678 6450,11641 6512,11608 6809,11570 6869,11567 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629
 Groﬂer Weg: asphaltiert	Q0 7606,11629 7623,11624 7664,11597 7711,11558 7717,11540
-Groﬂe Sternallee: Parkweg	Q1 6809,11979 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566 7504,11512
+Groﬂe Sternallee: Parkweg, Feinschotter	Q1 6809,11979 6984,11859 7058,11809 7163,11738
+Groﬂe Sternallee: Parkweg, etwas grˆberer Schotter	Q1 7163,11738 7373,11594 7418,11566 7504,11512
 (Hiroshimastr. - Groﬂe Sternallee): Parkweg	Q1 7356,11517 7362,11561 7373,11594
 Bellevueallee: Mosaikpflaster	Q1 7031,12320 7383,12095 7429,12070 7658,11947 7717,11918 7801,11875 8016,11770 8026,11764 8172,11679
 Ahornsteig: Parkweg	Q1 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753
@@ -1044,7 +1045,7 @@ Miraustr.: guter Asphalt	Q0 3380,20270 3572,20020 3632,19934 3820,19688
 Miraustr.: guter Asphalt	Q0 3820,19688 4006,19443
 Miraustr.: Asphalt	Q0 4006,19443 4170,19079 4190,19048
 Schaperstr.: Asphalt	Q0 5700,10226 5597,10299 5450,10338
-Bleibtreustr.: Kopfsteinpflaster	Q2 4728,11195 4722,11030 4714,10950 4701,10837 4685,10689
+Bleibtreustr.: Kopfsteinpflaster	Q2 4729,11206 4722,11030 4714,10950 4701,10837 4685,10689
 Wilhelmsaue: Kopfsteinpflaster	Q2 5164,8740 5206,8731 5228,8729 5346,8720 5510,8709
 Werderstr.: unebenes Kleinsteinpflaster	Q2 8968,5554 8981,5692
 Werderstr.: asphaltiert	Q0 8981,5692 8996,5823
@@ -1334,7 +1335,7 @@ Knorrpromenade: Kopfsteinpflaster	Q2 14369,11489 14424,11639
 (Vorfahrt Neues-Deutschland-Geb‰ude): Kopfsteinpflaster, OK	Q1 12788,11898 12891,12008
 Feilnerstr.: teilweise gutes Kopfsteinpflaster	Q1 9973,11150 10163,11070
 Hobrechtstr.: Kopfsteinpflaster	Q2 11998,8872 12011,9100
-Hobrechtstr.: gutes Kopfsteinpflaster	Q1 12011,9100 12005,9211
+Hobrechtstr.: m‰ﬂiges Kopfsteinpflaster	Q2 12011,9100 12005,9211
 Hobrechtstr.: m‰ﬂiges Kopfsteinpflaster	Q2 12005,9211 11954,9415 11934,9538
 Hobrechtstr.: m‰ﬂiges Kopfsteinpflaster, kurze Verbundsteinpflasterabschnitte	Q2 11934,9538 11917,9663
 Hobrechtstr.: m‰ﬂiges Kopfsteinpflaster	Q2 11917,9663 11897,9754

@@ -1191,8 +1191,8 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
-# REMOVED (keine Einschränkungen für niemand) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (vermutlich nicht)
-#: last_checked: 2018-08-06
+# REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (vermutlich nicht)
+#: last_checked: 2018-08-21
 #: check_frequency: 90d
 	RW8;RW2 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
@@ -1269,7 +1269,7 @@ Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW5; 6460,8688 6449,8807 6449,8845 6445
 	RW3; 5764,10322 5808,10396 5866,10492
 	RW3;RW3 6122,10925 6025,10746
 	RW1;RW1 6065,10129 6128,10319 6147,10383 6192,10542
-	RW1;RW1 5988,9776 5995,9810
+	RW1;RW2 5988,9776 5995,9810
 	RW4; 11055,9539 11075,9576
 	RW3; 11075,9576 11110,9661 11141,9732 11186,9861 11175,9882 11164,9885 11136,9851
 	RW6;RW6 11177,9935 11199,9993 11244,10111

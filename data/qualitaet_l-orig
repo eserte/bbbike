@@ -5917,7 +5917,7 @@ Grenzstr. (Potsdam): Asphalt	Q1 -10505,-1166 -10412,-1218 -10332,-1266
 #: by: ^^^
 #: by: felix backe:
 #: confirmed_by: anonymous (Asphalt, Q0)
-Im Hagen (Kleinmachnow): gut befahrbarer glatter Belag	Q0 -625,189 -790,263 -903,314 -1163,407 -1384,380
+Im Hagen (Kleinmachnow): gut befahrbarer glatter Belag	Q0 -625,189 -790,263 -903,314 -1165,429 -1384,380
 #: by: Mechthild Schubart:
 #: confirmed_by: srt
 Flotowstr.: mäßiger Beton	Q1- -7497,-3096 -7495,-3006 -7491,-2904 -7484,-2745
@@ -6055,8 +6055,10 @@ Diedersdorf - Falkenhagen: befestigt	Q0 72925,10638 73513,9620 73602,9574 73724,
 Geschwister-Scholl-Str.: Asphalt	Q0 -781,-309 -632,-172
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> ...)
 Geschwister-Scholl-Str.: Asphalt	Q0 -632,-172 -568,-18 -508,126
-#: add_fragezeichen: liegt im nördlichen Abschnitt der Geschwister-Scholl-Str. tatsächlich Kopfsteinpflaster?
-Geschwister-Scholl-Str.: schlechtes Kopfsteinpflaster	Q3 -508,126 -399,364 -313,571 -119,800 -203,906
+#: corrected_by: mapillary (schlechtes Kopfsteinpflaster -> ...)
+Geschwister-Scholl-Str.: Asphalt	Q0 -508,126 -399,364
+#: add_fragezeichen: liegt im nördlichen Abschnitt der Geschwister-Scholl-Str. tatsächlich Kopfsteinpflaster? Wie schlecht ist das Pflaster?
+Geschwister-Scholl-Str.: schlechtes Kopfsteinpflaster	Q3 -399,364 -313,571 -119,800 -203,906
 #: by: ^^^
 # 
 #: by: anonymous:
@@ -6431,3 +6433,8 @@ Löpten - Kleinköris: Sand	Q3 30875,-28366 30805,-28162 30787,-27822 30852,-27302
 #: by: osm (unpaved, grade3, aber smoothness=very_bad?)
 #: add_fragezeichen: wie ist die Qualität der Straße zwischen Kleinköris und Neubrück?
 Kleinköris - Neubrücke: unbefestigte Straße	Q3 31154,-25834 31240,-25274 31428,-24938 31548,-24479
+# 
+#: by: mapillary vvv
+Jägerhorn: Asphalt	Q0 -1170,563 -1165,429 -1161,213 -1216,164
+Blachfeld: Asphalt	Q0 -990,137 -1161,213
+#: by: ^^^

@@ -116,14 +116,11 @@ BouchÈstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134
 Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
 #: next_check_id ^^^
 # 
-#: last_checked: 2018-08-10
+#: last_checked: 2018-08-21
 #: check_frequency: 7d
 Schmollerplatz: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13206,9335 13178,9363 13231,9422
 # 
-#: last_checked: 2018-08-10
-#: check_frequency: 7d
-Schmollerplatz: Baustelle, Fahrbahn gesperrt	q4::inwork 13124,9375 13203,9450
-# 
+# REMOVED --- #: last_checked: 2018-08-10 --- #: check_frequency: 7d --- Schmollerplatz: Baustelle, Fahrbahn gesperrt	q4::inwork 13124,9375 13203,9450
 # REMOVED (nein) --- #: next_check_id: VERLWERDERSTR-2018 --- #: XXX gibt es hier tats‰chlich Einschr‰nkungen? --- #: valid: 20180702-20190530 -- Verl‰ngerte Werderstr.: Bauarbeiten	q4::inwork 20245,2152 20261,2114 20222,2037 20214,1988 20187,1930 20166,1864 20120,1791 20093,1776 20064,1777
 # REMOVED (mittlerweile wieder offen) --- #: by: http://www.dafmap.de/d/berlin.html?id=4505&mt=0&zoom=17 --- #: last_checked: 2017-03-20 --- #: check_frequency: 14d --- Kiefholzstr.: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 13821,9340 13715,9455
 # REMOVED (aber vielleicht nur am Wochenende offen?) --- #: last_checked: 2016-12-20 vvv --- #: check_frequency: 21d vvv --- Schmollerplatz: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 13203,9450 13124,9375 --- Schmollerplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 13124,9375 13111,9361 13126,9347 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -453,10 +450,10 @@ Mˆckernstr.: Bauarbeiten, Einbahnstraﬂe, ehemaliger Radweg kann benutzt werden	q
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php
 #: note: wenn nichts in der Philharmonie los ist, kann man auch schneller durchkommen (q3+)
 #: osm_watch: way id="531952542" version="5"
-#: last_checked: 2018-08-18
+#: last_checked: 2018-08-21
 Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4+::inwork 7970,11441 7965,11467 8005,11627
 # 
-#: last_checked: 2018-06-23
+#: last_checked: 2018-08-21
 Ludwig-Beck-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 8301,11469 8309,11390
 # 
 # REMOVED --- #: by: http://www.deutsches-architektur-forum.de/forum/showthread.php?t=3245 --- #: last_checked: 2015-09-17 --- #: check_frequency: 45d --- Kˆbisstr.: wegen Bauarbeiten Ausweichen auf Gehweg	q4::inwork 7103,11247 7160,11225
@@ -467,17 +464,17 @@ Ludwig-Beck-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 8301,11469 8309
 #: osm_watch: way id="503096340" version="3"
 #: source_id: LMS-BR_r_LMS-BR_121156_LMS-BR_72
 #: XXX laut fritz bis 2019-04-30
-#: last_checked: 2018-03-11
+#: last_checked: 2018-08-21
 #: check_frequency: 120d
 Englische Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,12159
 # 
-#: XXX nach Abschluss wieder den alten Eintrag (siehe unten) aktivieren
+#: XXX nach Abschluss wieder die alten handicap-Eintr‰ge (siehe unten, 2x) aktivieren
 #: by: http://www.dafmap.de/d/berlin.html?id=3027&mt=0&zoom=17
 #: XXX geplanter Projektabschluss laut dafmap: 2018-07-31
 #: by: http://www.berliner-woche.de/hansaviertel/bauen/richtfest-fuer-oasis-berlin-d157470.html
-#: last_checked: 2017-07-31
-#: next_check: 2018-06-30
-Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fuﬂg‰nger	q3 5894,12480 5944,12548
+#: last_checked: 2018-08-21
+#: check_frequency: 45d
+Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fuﬂg‰nger	q3 5919,12423 5894,12480 5944,12548
 # 
 # REMOVED (bei vmz nicht mehr aufgef¸hrt) --- #: source_id: IM_019582 vvv --- #: last_checked: 2014-06-02 vvv --- #: next_check: 2015-01-01 vvv --- Fasanenstr.: Bauarbeiten, gemeinsamer enger Rad- und Gehweg	q3; 5258,11285 5352,11502 --- Fasanenstr.: Bauarbeiten, gemeinsamer Rad- und Gehweg	q2; 5352,11502 5356,11512 5456,11742 --- Fasanenstr.: Bauarbeiten, gemeinsamer enger Rad- und Gehweg	q3; 5456,11742 5381,11847 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: source_id ^^^
 # REMOVED (scheint in beide Richtungen befahrbar zu sein) --- #: last_checked: 2012-09-22 --- #: next_check: 2012-10-15 --- #: by: IM_008926 --- #: XXX wahrscheinlich bis Ende Oktober 2012 --- #: XXX wahrscheinlich wird es teilweise oder sogar komplett Radspuren geben --- Kantstr.: Bauarbeiten am Zoofenster, Fahrbahn Richtung Westen gesperrt	q2::inwork; 5652,11004 5613,10963 5488,10978
@@ -485,12 +482,12 @@ Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fuﬂg‰nger	q3 5894,12480 5944,12
 ### Neukˆlln ###
 # 
 #: XXX nach den Bauarbeiten vermutlich asphaltiert
-#: last_checked: 2018-08-14
-#: check_frequency: 7d
+#: last_checked: 2018-08-21
+#: check_frequency: 3d
 # REMOVED (hier nicht mehr, vermutlich) --- Innstraﬂe: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 13217,8493 13262,8554 13301,8606
 Innstraﬂe: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 13301,8606 13314,8624 13368,8689
 # 
-#: last_checked: 2018-08-06
+#: last_checked: 2018-08-21
 #: check_frequency: 14d
 Donaustr.: Bauarbeiten, Einbahnstraﬂenregelung, offen Richtung Erkstr.	q4::inwork; 12771,8439 12649,8535
 # 
@@ -503,7 +500,7 @@ Donaustr.: Bauarbeiten, Einbahnstraﬂenregelung, offen Richtung Erkstr.	q4::inwor
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 
 #: XXX Wann sind die Bauarbeiten beendet?
-#: last_checked: 2018-08-14
+#: last_checked: 2018-08-21
 #: check_frequency: 14d
 Weichselstr.: Bauarbeiten zwischen Weichselplatz und Ossastr., Fahrbahn gesperrt	q4::inwork 12755,9188 12681,9083
 # 
@@ -3302,7 +3299,7 @@ Sesenheimer Str.: Fuﬂg‰nger, Bordsteine	q2 3864,11484 3874,11380
 (Carnotstr. - s¸dliches Spreeufer): Fuﬂg‰nger	q2 4655,12953 4619,12975
 Schleswiger Ufer: schmal, Fuﬂg‰nger	q2 5858,12425 5894,12480
 # (wieder aktivieren!) --- Schleswiger Ufer: schmal, Fuﬂg‰nger	q2 5894,12480 5944,12548
-Cuxhavener Str.: Wohngebiet, Fuﬂg‰nger	q2 5894,12480 5919,12423
+# (wieder aktivieren!) --- Cuxhavener Str.: Wohngebiet, Fuﬂg‰nger	q2 5894,12480 5919,12423
 # REMOVED (lohnt nicht) --- Holsteiner Ufer: schmal, Fuﬂg‰nger	q2 6580,12775 6469,12867 6449,12865
 (Zufahrt Parkpl‰tze Bartningallee): schmal, un¸bersichtlich, Fuﬂg‰nger	q3 6179,12513 6149,12454
 (Altonaer Str. - Flensburger Str.): Einkaufszentrum, Fuﬂg‰nger	q2 6173,12396 6149,12454 6137,12532 6160,12681
