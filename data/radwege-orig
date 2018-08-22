@@ -996,7 +996,7 @@ asphaltiert	RW1;RW1 931,14268 984,14086
 #: XXX was passiert hier bzgl. der Radwege?
 #: XXX Baumaßnahme GL6.17 (Realisierung nach 2011)
 #: osm_watch: way id="85468589" version="11"
-#: last_checked: 2018-07-01
+#: last_checked: 2018-08-22
 #: check_frequency: 120d
 	RW2;RW8 6718,2443 6711,2496 6679,2701 6677,2718 6665,2836
 	RW2;RW8 6665,2836 6658,2907 6643,3070 6638,3138 6640,3192 6712,3237
@@ -1454,9 +1454,9 @@ neues Verbundsteinpflaster	RW1; 12207,1704 11865,1564 11765,1522 11476,1398 1121
 für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 10769,1111 10829,1135 11012,1210 11157,1269 11216,1293 11476,1398 11765,1522 11865,1564 12207,1704
 neues Verbundsteinpflaster	RW2; 10769,1111 10664,1068 10427,968
 für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 10427,968 10664,1068 10769,1111
-	RW3; 10427,968 10324,925
+neues Verbundsteinpflaster	RW1; 10427,968 10324,925 10276,906
 	RW2; 10324,925 10427,968
-	RW1; 10324,925 10276,906 10187,872 10047,813 9858,744
+	RW1; 10276,906 10187,872 10047,813 9858,744
 für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 9858,744 10047,813 10187,872 10276,906 10324,925
 	RW1;RW1 9858,744 9250,576
 	RW1;RW4 9250,576 9178,556
@@ -2723,23 +2723,11 @@ Wechsel zwischen alten Gehwegplatten und schadhaftem Verbundsteinpflaster	RW1; 1
 	RW1; 13709,2551 13501,2413
 	RW; 13501,2413 13418,2357 13367,2322 13104,2143
 # 
-#: XXX Markierung von Schutzstreifen und Fahrbahnverbreiterung, Rückbau des alten Radweges vvv
-#: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017) vvv
-#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php
-#: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.601178.php
-#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20180202
-#: osm_watch: way id="172243640" version="5"
-#: osm_watch: way id="30084195" version="17"
-#: osm_watch: way id="30084196" version="20"
-#: last_checked: 2018-04-29 vvv
-#: check_frequency: 60d vvv
+# REMOVED --- #: XXX Markierung von Schutzstreifen und Fahrbahnverbreiterung, Rückbau des alten Radweges vvv --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017) vvv --- #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.601178.php --- #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20180202 --- #: osm_watch: way id="172243640" version="5" --- #: osm_watch: way id="30084195" version="17" --- #: osm_watch: way id="30084196" version="20" --- #: last_checked: 2018-04-29 vvv --- #: check_frequency: 60d vvv
 # REMOVED (ja, ist so) --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4688 (abgesperrt) (vorher: Radwege mit Schäden) --- #: XXX vor Ort anschauen!
-vorhandener Radweg ist wegen Schäden abgesperrt	RW0; 13501,2413 13640,2229 13661,2207 13700,2173 13835,2099 14120,1991 14231,1952 14252,1945 14523,1847
+# REMOVED --- vorhandener Radweg ist wegen Schäden abgesperrt	RW0; 13501,2413 13640,2229 13661,2207 13700,2173 13835,2099 14120,1991 14231,1952 14252,1945 14523,1847
+	RW3; 13501,2413 13640,2229 13661,2207 13700,2173 13835,2099 14120,1991 14231,1952 14252,1945 14523,1847
 Radwege mit Schäden	RW1; 14523,1847 14252,1945 14231,1952 14120,1991 13835,2099 13700,2173 13661,2207 13640,2229 13501,2413
-#: check_frequency ^^^
-#: last_checked ^^^
-#: by ^^^
-#: XXX ^^^
 # 
 # REMOVED ---	RW1;RW1 14523,1847 14621,1798 14676,1777
 	RW6;RW6 10612,1925 10593,1875 10578,1840
@@ -3544,7 +3532,7 @@ asphaltiert	RW1;RW1 17020,11748 17169,11677
 #: by: Thomas Weiner
 #: confirmed_by: srt (außerdem RW4? -> RW4)
 	RW4;RW4 9695,1563 9782,1474 9832,1380 9847,1274 9850,1173 9828,998 9825,953 9839,814 9858,744
-	RW3;RW4? 9626,1604 9695,1563
+	RW4;RW4 9626,1604 9695,1563
 #: by: Tom Bschor
 #: confirmed_by: srt
 	RW1;RW0 5053,21452 5099,21410 5297,21243
@@ -3601,7 +3589,12 @@ gemeinsamer Rad- und Gehweg parallel zur Straße, asphaltiert	RW8;RW2 30390,-3443
 	RW3;RW3 2998,20487 2974,20483 2810,20455 2615,20421
 	RW1; 19599,1557 19579,1543 19498,1465 19460,1430 19412,1387
 	RW1;RW1 19412,1387 19379,1357 19251,1240 19221,1198 19198,1122 19107,885 18990,584 18978,552 18941,452 18892,330 18860,248 18799,91 18760,-8 18675,-231 18588,-438
-	RW1;RW1 18675,-231 18906,-316 18997,-351 19105,-376 19270,-417 19348,-434 19385,-444 19451,-452 19607,-474 19674,-484 19704,-490
+	RW1; 18675,-231 18906,-316
+#: XXX ... und es sieht so aus, als ob zukünftig kein Platz für einen Radweg sein wird. Wie wird es nach den Bauarbeiten aussehen?
+#: last_checked: 2018-08-22
+#: check_frequency: 270d
+Bauarbeiten, Radweg aufgehoben	RW0; 18906,-316 18675,-231
+	RW1;RW1 18906,-316 18997,-351 19105,-376 19270,-417 19348,-434 19385,-444 19451,-452 19607,-474 19674,-484 19704,-490
 #: by: Karin Kühl:
 	RW6;RW6 3302,2476 3293,2218
 #: by: Carsten (bamser):

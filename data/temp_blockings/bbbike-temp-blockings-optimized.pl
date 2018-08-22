@@ -3439,7 +3439,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	q4::temp 8426,13909 8572,13671
+',
+         'from' => 1534967761,
+         'id' => 2622,
+         'source_id' => 'IM_022700',
+         'text' => 'Schwarzer Weg: Veranstaltung, Straße gesperrt, 23. August 2018 16 Uhr bis 27. August 2018 12 Uhr ',
+         'type' => 'handicap',
+         'until' => 1535364000
+       },
        undef,
        undef,
        {
@@ -3537,7 +3546,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: XXX bis wann geht die Sperrung?
 #: priority: #A
 #: last_checked: 2018-08-20
-#: check_frequency: 7d
+#: check_frequency: 3d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 ',
          'from' => 1534789491,
@@ -4227,9 +4236,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1527186729,
          'id' => 2959,
          'source_id' => '2147342639',
-         'text' => 'Gubener Str.: Bauarbeiten zwischen Graudenzer Str. und Hildegard-Jadamowitz-Str., Einbahnstraßenregelung, bis 21.08.2018',
+         'text' => 'Gubener Str.: Bauarbeiten zwischen Graudenzer Str. und Hildegard-Jadamowitz-Str., Einbahnstraßenregelung, bis Ende September 2018',
          'type' => 'handicap',
-         'until' => 1534888800
+         'until' => 1538323200
        },
        undef,
        {
@@ -4468,7 +4477,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        {
-         'data' => '	2::inwork 25929,-5994 25902,-6006
+         'data' => '#: note: zuletzt am 2018-08-22 gesehen
+	2::inwork 25929,-5994 25902,-6006
 ',
          'from' => 1533756141,
          'id' => 2994,

@@ -6960,7 +6960,7 @@ EOF
        text  => 'K 6161 Friedensstr. Bahnübergang in der OD Eichwalde Gleisbauarbeiten Vollsperrung 15.12.2006-19.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 25173,-3957 25206,-4014 25212,-4025 25269,-4041 25322,-4042
+	2::inwork 25173,-3957 25206,-4014 25212,-4025 25238,-4031 25269,-4041 25322,-4042
 EOF
      },
      { from  => 1166050800, # 2006-12-14 00:00
@@ -13414,7 +13414,7 @@ EOF
        text  => 'K 6161 Friedenstr. Bahnübergang in Eichwalde Gleisbauarbeiten Vollsperrung 02.03.2009-16.03.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 25173,-3957 25206,-4014 25212,-4025 25269,-4041 25322,-4042
+	2::inwork 25173,-3957 25206,-4014 25212,-4025 25238,-4031 25269,-4041 25322,-4042
 EOF
      },
      { from  => 1234652400, # 2009-02-15 00:00
@@ -19022,7 +19022,7 @@ EOF
        type  => 'gesperrt',
        source_id => '116100155',
        data  => <<EOF,
-	2::inwork 25212,-4025 25269,-4041 25322,-4042
+	2::inwork 25212,-4025 25238,-4031 25269,-4041 25322,-4042
 EOF
      },
      { from  => 1335462672, # 
@@ -23555,9 +23555,9 @@ EOF
 	q4::temp 6686,13746 6493,13822
 EOF
      },
-     { from  => 1409202000, # 2014-08-28 07:00
-       until => $isodate2epoch->("2014-09-01 12:00:00"), #  1409569200, # 2014-09-01 13:00
-       text  => 'Schwarzer Weg: Veranstaltung, Straße gesperrt, 29. August 2014 bis 1. September 2014 12 Uhr ',
+     { from  => 1534967761, # 1409202000, # 2014-08-28 07:00
+       until => $isodate2epoch->("2018-08-27 12:00:00"), #  1409569200, # 2014-09-01 13:00
+       text  => 'Schwarzer Weg: Veranstaltung, Straße gesperrt, 23. August 2018 16 Uhr bis 27. August 2018 12 Uhr ',
        type  => 'handicap',
        source_id => 'IM_022700',
        data  => <<EOF,
@@ -23989,7 +23989,7 @@ EOF
 #: XXX bis wann geht die Sperrung?
 #: priority: #A
 #: last_checked: 2018-08-20
-#: check_frequency: 7d
+#: check_frequency: 3d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
      },
@@ -27218,8 +27218,8 @@ EOF
 EOF
      },
      { from  => 1527186729, # 2018-05-24 20:32
-       until => 1534888800, # 2018-08-22 00:00
-       text  => 'Gubener Str.: Bauarbeiten zwischen Graudenzer Str. und Hildegard-Jadamowitz-Str., Einbahnstraßenregelung, bis 21.08.2018',
+       until => $isodate2epoch->("2018-09-30 18:00:00"), # 1534888800, # 2018-08-22 00:00
+       text  => 'Gubener Str.: Bauarbeiten zwischen Graudenzer Str. und Hildegard-Jadamowitz-Str., Einbahnstraßenregelung, bis Ende September 2018',
        type  => 'handicap',
        source_id => '2147342639',
        data  => <<EOF,
@@ -27602,6 +27602,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.zeuthen.de/Die-Deutsche-Bahn-informierte-Grunderneuerung-der-Personenunterfuehrung-am-S-Bahnhof-Zeuthen-642703.html',
        data  => <<EOF,
+#: note: zuletzt am 2018-08-22 gesehen
 	2::inwork 25929,-5994 25902,-6006
 EOF
      },

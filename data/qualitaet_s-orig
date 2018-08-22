@@ -642,7 +642,7 @@ Brixener Str.: Kopfsteinpflaster	Q2 10507,17400 10502,17419 10466,17464
 #: XXX wird nach den Bauarbeiten die Qualität besser sein?
 #: source_id: 2147342929
 #: priority: #B
-#: last_checked: 2018-08-19
+#: last_checked: 2018-08-22
 #: next_check: 2018-08-31
 Helmerdingstr.: Kopfsteinpflaster	Q2 14442,11101 14468,11203
 # 
@@ -1181,7 +1181,7 @@ Müggelbergallee: Kopfsteinpflaster	Q2 23321,1678 23409,1699 23669,1759
 (Müggelbergallee - Straße zum Müggelturm): Waldweg, meist OK	Q1- 23669,1759 24265,1891 24879,1728
 (Müggelbergallee - Müggelheimer Damm): Waldweg, meist OK	Q1- 24265,1891 24528,1949 24630,2034
 Str. 790/791: holpriger Fahrweg	Q2 30546,-3072 30588,-3000
-Str. 790/791: Asphalt	Q0 30588,-3000 30599,-2827 30640,-2803
+Str. 790/791: Asphalt mit einigen Wurzelschäden	Q1+ 30588,-3000 30599,-2827 30640,-2803
 Str. 790/791: holpriger Fahrweg	Q2 30640,-2803 30703,-2841 30727,-2911 30710,-3037 30588,-3000
 Wernsdorfer Str.: Asphalt	Q0 30540,-3125 30473,-3290
 Wernsdorfer Str.: Kopfsteinpflaster	Q2- 30473,-3290 30439,-3371 30390,-3443
@@ -5051,7 +5051,7 @@ Wiesenstr. (Bohnsdorf): Beton	Q0- 22795,-1055 22973,-978 23356,-825 23502,-770
 Stromstr. (Bohnsdorf): Beton	Q0 22749,-969 22568,-940 22451,-927 22340,-911 22229,-897
 Kranichstr.: Beton	Q0 22579,-1108 22568,-940 22553,-756
 Sperberstr. (Bohnsdorf): Beton mit Schäden	Q1- 22340,-911 22364,-730
-Habichtstr. (Bohnsdorf): Beton	Q1 22657,-763 22553,-756 22458,-742 22364,-730 22271,-717
+Habichtstr. (Bohnsdorf): Beton mit Schäden	Q1 22657,-763 22553,-756 22458,-742 22364,-730 22271,-717
 Merkurstr. (Bohnsdorf): Beton	Q0 22668,-786 22804,-726
 Merkurstr. (Bohnsdorf): Asphalt	Q0- 22804,-726 22987,-655
 # REMOVED (einige Straßen wurden neu gemacht) --- #: XXX Straßen erhalten vermutlich einen Asphaltüberzug, dann alle Asphalt+Q0? vvv --- #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20130808.1245.387707.html vvv --- #: next_check: 2013-09-28 vvv
@@ -5948,7 +5948,7 @@ Kaiserallee: Beton	Q0 7710,1646 7729,1624 7899,1544 7981,1505
 Kaiserallee: Asphalt	Q0 8152,1425 8283,1354 8383,1311
 Manntzstr.: Asphalt	Q0 7980,1295 8064,1460
 Manntzstr.: Beton	Q0- 8064,1460 8147,1663
-Domagkstr.: Beton	Q0 8034,1171 8163,1110 8263,1061
+Domagkstr.: Beton	Q0 8031,1172 8163,1110 8263,1061
 (Kirchstr. - An der Dorfkirche): Verbundsteinpflaster	Q1 8263,1061 8259,1028 8202,1024 8160,932 8173,839
 Ahrensdorfer Str.: Asphalt	Q0 7602,305 7576,322 7458,283
 Ahrensdorfer Str.: Beton	Q0- 7458,283 7408,257 7344,261 7286,284
@@ -11219,7 +11219,7 @@ Tristanstr.: mäßiges Kopfsteinpflaster	Q2 -4315,1594 -4239,1512 -4049,1535 -3968
 Krähenfußzeile: Asphalt	Q0 15888,23814 16010,23734 16223,23584
 #: corrected_by: Cornelia Mohr (schlecht -> mäßig)
 #: confirmed_by: srt (zumindest an der Marienfelder Allee)
-Emilienstr.: mäßiges Kopfsteinpflaster	Q2 8110,2076 8152,2059 8191,2039 8281,1998 8404,1937 8522,1870
+Emilienstr.: mäßiges Kopfsteinpflaster	Q2 8110,2076 8152,2059 8191,2039 8281,1998 8401,1938 8522,1870
 #: confirmed_by: srt
 Schmalenbachstr.: guter Beton	Q0- 14961,6162 14958,6243 14928,6314 14639,6577
 Mönchsheimer Str.: guter Asphalt	Q0 30950,3985 30854,3947 30821,3951 30757,3974 30687,3999
@@ -15190,7 +15190,7 @@ Hermann-Piper-Str.: Beton	Q0 4766,20084 4920,19928 4997,19849
 # 
 #: by: Samer Aburous vvv
 #: confirmed_by: srt
-Hanielweg: Asphalt	Q0 8077,1259 7980,1295 7888,1321 7830,1345 7810,1349 7787,1361 7651,1615
+Hanielweg: Asphalt	Q0 8070,1261 7980,1295 7888,1321 7830,1345 7810,1349 7787,1361 7651,1615
 #: corrected_by: srt (slightly, Q0 -> Q0-)
 Hanielweg: Asphalt	Q0- 7651,1615 7610,1695 7562,1796
 #: by ^^^
@@ -17056,9 +17056,14 @@ Duchrother Str.: guter Asphalt	Q0 29344,1577 29288,1618 29166,1715 28978,1864 28
 #: confirmed_by: srt
 Neubrandenburger Str.: guter Beton	Q0 17589,18709 17680,18700 17797,18679 17823,18665 17901,18658 18010,18648 18040,18657 18185,18641
 # 
-#: by: Michael Reimann:
+#: by: Michael Reimann: vvv
 #: corrected_by: srt ("mäßiger" gestrichen)
-Schirpitzer Weg: Asphalt	Q0 18123,906 17984,1100 17944,1156 17786,1377 17763,1412 17730,1464
+Schirpitzer Weg: Asphalt	Q0 18123,906 17984,1100 17944,1156
+#: corrected_by: srt (Asphalt -> ...)
+Schirpitzer Weg: Kopfsteinpflaster	Q2- 17944,1156 17786,1377
+#: corrected_by: srt ("mäßiger" gestrichen)
+Schirpitzer Weg: Asphalt	Q0 17786,1377 17763,1412 17730,1464
+#: by ^^^
 # 
 #: by: Martina Wirth: vvv
 #: corrected_by: srt (Asphalt -> Kleinsteinpflaster)
@@ -17193,9 +17198,9 @@ Stegerwaldstr.: guter Asphalt	Q0 8799,1380 8765,1363 8668,1409 8642,1422 8569,14
 #: confirmed_by: srt (added "glattes")
 Stegerwaldstr.: glattes Kopfsteinpflaster	Q2+ 8482,1502 8381,1550
 #: corrected_by: srt (guter Asphalt -> ...)
-Stegerwaldstr.: Beton/Asphalt	Q0 8381,1550 8246,1616 8147,1663 8074,1698
+Stegerwaldstr.: Beton/Asphalt	Q0 8381,1550 8241,1617 8147,1663 8074,1698
 #: note: laut ADFC-Karte gut geeignet:
-An der Heilandsweide: asphaltiert	Q0 8077,1259 8203,1194
+An der Heilandsweide: asphaltiert	Q0 8070,1261 8203,1194
 #: corrected_by: srt (Gehwegsteine -> Verbundsteinpflaster)
 An der Heilandsweide: Verbundsteinpflaster, außen fester Sand	Q1 8203,1194 8305,1148 8492,1050 8539,1025 8687,950
 Kiepertplatz: schlechtes Kopfsteinpflaster, sehr holprig	Q3 8522,1870 8599,1896
@@ -17313,9 +17318,9 @@ Am Poloplatz: mäßig befahrbare Kleinpflastersteine	Q2 2111,26459 2181,26456 2210
 # 
 #: by: clara wronski:
 #: corrected_by: srt (Kopfsteinpflaster -> )
-Stanzer Zeile: Asphalt	Q0 6180,376 6130,449 6112,547
+Stanzer Zeile: Asphalt	Q0 6180,376 6130,449 6112,547 6089,643
 #: corrected_by: srt (Kopfsteinpflaster -> )
-Stanzer Zeile: mäßig befahrbare Kleinpflastersteine	Q2 6112,547 6089,643 6066,821 6067,865 6080,1011 6106,1133
+Stanzer Zeile: mäßig befahrbare Kleinpflastersteine	Q2 6089,643 6066,821 6067,865 6080,1011 6106,1133
 # 
 #: by: Jürgen (hilkoberlin):
 #: corrected_by: Markus Kuhn meint "schlechtes Kopfsteinpflaster/schlechte Fahrbahn", aber 18km/h, also von Q2 -> Q2-
@@ -20839,7 +20844,7 @@ Bernkasteler Str.: mäßiger Beton	Q1- 14923,16901 15015,16908 15208,16939 15341,1
 # 
 #: by: Diethelm Wohnhas:
 #: confirmed_by: Kurt Thiele, Detlef Liebe, srt
-Hranitzkystr.: guter Asphalt	Q0 8689,1670 8661,1649 8578,1692 8471,1741 8342,1803 8286,1830 8217,1866 8128,1908 8048,1945 8009,1959 7960,1977
+Hranitzkystr.: guter Asphalt	Q0 8689,1670 8661,1649 8578,1692 8471,1741 8335,1806 8286,1830 8217,1866 8128,1908 8048,1945 8009,1959 7960,1977
 # 
 #: by: Nicola Kleine:
 #: corrected_by: srt (Asphalt -> ...)
@@ -21810,7 +21815,7 @@ Kreideweg: guter Asphalt	Q0 10748,2233 10840,2196 10886,2167
 #: XXX wird das hier verbessert, im Zuge von Berlin-Leipzig?
 #: XXX Baumaßnahme GL6.24 (Realisierung nach 2011)
 #: osm_watch: way id="26714602" version="2"
-#: last_checked: 2017-05-21
+#: last_checked: 2018-08-22
 #: check_frequency: 300d
 (Jenbacher Weg - Mauerweg): unbefestigter Feldweg, recht festgetrampelt	Q2 6233,412 6256,363
 #: by: ^^^
@@ -22475,7 +22480,8 @@ Murmeltierweg: Verbundsteinpflaster	Q0- 25897,12716 25979,12647
 #: corrected_by: srt
 Derfflingerstr. (Lankwitz): schlechtes Kopfsteinpflaster	Q3 5836,2294 5889,2319
 #: confirmed_by: Susanna Wells (guter Asphalt; q1)
-Derfflingerstr. (Lankwitz): mäßiger Asphalt	Q1 5889,2319 5964,2362 6065,2443 6273,2609
+#: corrected_by: srt (mäßiger Asphalt -> ...)
+Derfflingerstr. (Lankwitz): Asphalt	Q0 5889,2319 5964,2362 6065,2443 6273,2609
 # 
 #: by: stefan (lars wolter)
 Merseburger Str. (Marzahn): Beton	Q1 20460,18030 20490,18120 20407,18273
@@ -24170,7 +24176,8 @@ Theaterplatz: gepflasterter Platz, recht bequem	Q0- 24968,15307 25086,15298
 #: by: ^^^
 # 
 #: by: Marco Pahlke:
-(Schönefelder Chaussee - Mauerweg): Gehwegplatten	Q1 18760,-8 18574,68 18568,28 18560,75 18544,86
+#: confirmed_by: srt
+(Schönefelder Chaussee - Mauerweg): Gehwegplatten	Q1+ 18760,-8 18574,68 18568,28 18560,75 18544,86
 #
 #: by: HEK (no mail): vvv
 Hochbergweg: Kopfsteinpflaster	Q2 4902,2058 4839,2195 4813,2256
