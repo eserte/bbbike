@@ -23988,7 +23988,7 @@ EOF
        data  => <<EOF,
 #: XXX bis wann geht die Sperrung?
 #: priority: #A
-#: last_checked: 2018-08-20
+#: last_checked: 2018-08-23
 #: check_frequency: 3d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -26738,10 +26738,10 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX bis wann ist die Durchfahrt gesperrt?
-#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00, 2018-07-26 gegen 19:30, 2018-07-27 gegen 10:45, 2018-07-28 gegen 10:00, 2018-08-16 gegen 18:00
+#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00, 2018-07-26 gegen 19:30, 2018-07-27 gegen 10:45, 2018-07-28 gegen 10:00, 2018-08-16 gegen 18:00, 2018-08-24 gegen 19:00
 #: source_id: 2147342009
 #: osm_watch: way id="154381291" version="5"
-#: last_checked: 2018-08-16
+#: last_checked: 2018-08-24
 #: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
 EOF
@@ -26774,7 +26774,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-08-20 vvv
+#: last_checked: 2018-08-23 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27050,7 +27050,7 @@ EOF
 #: source_id: 2147342751
 #: source_id: 2147343056
 # REMOVED (hier nicht mehr) ---	q4::inwork; 8901,12008 8861,12125
-#: last_checked: 2018-06-08
+#: last_checked: 2018-08-23
 # REMOVED --- #: check_frequency: 7d
 	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
 EOF
@@ -27504,7 +27504,7 @@ EOF
 EOF
      },
      { from  => 1532620085, # 2018-07-26 17:48
-       until => $isodate2epoch->("2018-08-30 18:00:00"), # 1534370399, # 2018-08-15 23:59
+       until => 1535133548, # $isodate2epoch->("2018-08-30 18:00:00"), # 1534370399, # 2018-08-15 23:59
        text  => 'Gotlindestr.: Bauarbeiten zwischen Ruschestr. und Freesienweg, Fahrbahn Richtung Osten gesperrt, bis Ende August 2018',
        type  => 'handicap',
        source_id => '2147342912',
@@ -27683,6 +27683,24 @@ EOF
 #: last_checked: 2018-08-21
 #: check_frequency: 21d
 	q4::inwork; 4502,11740 4574,11587
+EOF
+     },
+     { from  => 1536530400, # 2018-09-10 00:00
+       until => 1537308000, # 2018-09-19 00:00
+       text  => 'Sportpromenade: zwischen Strandbad Grünau und Richtershorn Bauarbeiten, Straße wird neu asphaltiert, voraussichtlich vom 11.09.2018 bis 18.09.2018',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.732734.php',
+       data  => <<EOF,
+	2::inwork 25646,-209 25574,-38 25537,167 25461,254 25172,345 24827,354 24743,370 24666,436 24571,514 24197,585
+EOF
+     },
+     { from  => 1535234400, # 2018-08-26 00:00
+       until => 1536357599, # 2018-09-07 23:59
+       text  => 'Emmentaler Str.: Bauarbeiten zwischen Reginhardstr. bis Klemkestr., Einbahnstraße offen Richtung Nordosten, vom 27. August 2018 bis zum 07. September 2018',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.732621.php',
+       data  => <<EOF,
+	q4::inwork; 7843,18705 7753,18542 7676,18492
 EOF
      },
     );

@@ -3545,7 +3545,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX bis wann geht die Sperrung?
 #: priority: #A
-#: last_checked: 2018-08-20
+#: last_checked: 2018-08-23
 #: check_frequency: 3d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 ',
@@ -4030,10 +4030,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX bis wann ist die Durchfahrt gesperrt?
-#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00, 2018-07-26 gegen 19:30, 2018-07-27 gegen 10:45, 2018-07-28 gegen 10:00, 2018-08-16 gegen 18:00
+#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00, 2018-07-26 gegen 19:30, 2018-07-27 gegen 10:45, 2018-07-28 gegen 10:00, 2018-08-16 gegen 18:00, 2018-08-24 gegen 19:00
 #: source_id: 2147342009
 #: osm_watch: way id="154381291" version="5"
-#: last_checked: 2018-08-16
+#: last_checked: 2018-08-24
 #: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
 ',
@@ -4047,7 +4047,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-08-20 vvv
+#: last_checked: 2018-08-23 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4146,7 +4146,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147342751
 #: source_id: 2147343056
 # REMOVED (hier nicht mehr) ---	q4::inwork; 8901,12008 8861,12125
-#: last_checked: 2018-06-08
+#: last_checked: 2018-08-23
 # REMOVED --- #: check_frequency: 7d
 	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
 ',
@@ -4401,16 +4401,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1538755200
        },
-       {
-         'data' => '	q4::inwork; 15947,12626 16000,12625
-',
-         'from' => 1532620085,
-         'id' => 2985,
-         'source_id' => '2147342912',
-         'text' => 'Gotlindestr.: Bauarbeiten zwischen Ruschestr. und Freesienweg, Fahrbahn Richtung Osten gesperrt, bis Ende August 2018',
-         'type' => 'handicap',
-         'until' => 1535644800
-       },
+       undef,
        {
          'data' => '	q4::inwork 51862,100638 51910,100091 51920,99933 51940,99551 52207,99132
 ',
@@ -4507,16 +4498,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1544828400
        },
-       {
-         'data' => '#: source_id: 2147343046
-	2::inwork 9454,12558 9462,12481 9475,12365
-',
-         'from' => 1534629600,
-         'id' => 2997,
-         'text' => 'Charlottenstr.: Sperrung der Straße zwischen Dorotheenstr. und Unter den Linden wegen Kranarbeiten, eventuell sind auch Radfahrer betroffen, von 20.08.2018 bis 23.08.2018',
-         'type' => 'gesperrt',
-         'until' => 1535040000
-       },
+       undef,
        {
          'data' => '#: source_id: 2147343041
 	q4::inwork 6914,15908 6781,16026 6712,16087
@@ -4573,6 +4555,26 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Am Schillertheater: Bauarbeiten, Fahrbahn Richtung Süden gesperrt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '	2::inwork 25646,-209 25574,-38 25537,167 25461,254 25172,345 24827,354 24743,370 24666,436 24571,514 24197,585
+',
+         'from' => 1536530400,
+         'id' => 3003,
+         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.732734.php',
+         'text' => 'Sportpromenade: zwischen Strandbad Grünau und Richtershorn Bauarbeiten, Straße wird neu asphaltiert, voraussichtlich vom 11.09.2018 bis 18.09.2018',
+         'type' => 'gesperrt',
+         'until' => 1537308000
+       },
+       {
+         'data' => '	q4::inwork; 7843,18705 7753,18542 7676,18492
+',
+         'from' => 1535234400,
+         'id' => 3004,
+         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.732621.php',
+         'text' => 'Emmentaler Str.: Bauarbeiten zwischen Reginhardstr. bis Klemkestr., Einbahnstraße offen Richtung Nordosten, vom 27. August 2018 bis zum 07. September 2018',
+         'type' => 'handicap',
+         'until' => 1536357599
        }
      
 );

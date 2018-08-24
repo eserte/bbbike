@@ -31,14 +31,14 @@ Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,1
 #: check_frequency: 90d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
-#: last_checked: 2018-08-22
+#: last_checked: 2018-08-23
 #: check_frequency: 3d
 Simplonstr.: Fahrbahn zwischen Matkowskystr. und Helmerdingstr. gesperrt, Ausweichen auf Gehweg, Bordstein	q3::inwork 14531,11142 14468,11203
 # 
 # REMOVED (-> qualitaet_s-orig; für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342929 --- #: priority: #B --- #: next_check: 2018-08-31 --- #: valid: -20180831 --- Helmerdingstr.: Bauarbeiten, Richtung Revaler Str. gesperrt	q4::inwork; 14468,11203 14442,11101
 # REMOVED (-> für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342938 --- #: priority: #B --- #: next_check: 2018-08-10 --- #: valid: -20180810 --- Scharnweberstr.: Bauarbeiten zwischen Colbestr. und Kinzigstr., Fahrbahn Richtung Gürtelstr. gesperrt	q4::inwork; 14468,11992 14589,11975
 # 
-#: last_checked: 2018-08-16
+#: last_checked: 2018-08-23
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
 # 
 # REMOVED (beendet) --- #: XXX_prog BS (östliche Seite) --- #: last_checked: 2018-06-12 vvv --- #: check_frequency: 7d vvv --- Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstein	q2::inwork 11845,12292 11635,12398 --- Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstein	q4::inwork 11635,12398 11607,12412 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -46,7 +46,7 @@ Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11
 #: next_check_id: KAUFHOF-2018
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/umbau-zu-buerostandort_a173030
 #: XXX_prog BS (auf der östlichen Seite, ansonsten q3+)
-#: last_checked: 2018-08-16
+#: last_checked: 2018-08-23
 #: check_frequency: 90d
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
 # 
@@ -173,7 +173,7 @@ Märkisches Ufer: Engstelle vor der Roßstraßenbrücke	q2::inwork 10687,11853 10869
 # REMOVED --- #: last_checked: 2017-03-24 --- Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
 #: source_id: 2147342720
-#: last_checked: 2018-08-13
+#: last_checked: 2018-08-23
 #: next_check: 2018-11-30
 #: valid: -20181130
 Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q3::inwork 11092,12375 11139,12243
@@ -181,7 +181,7 @@ Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2018-08-20
+#: last_checked: 2018-08-24
 Voltairestr.: Fahrbahn unter Umständen wegen Baustelle gesperrt, Ausweichen auf Gehweg	q2- 11329,12497 11209,12430
 # 
 #: next_check_id: ZIEGELSTR-2016
@@ -257,7 +257,7 @@ Prinzengasse: einige Fußgänger, parkende Autos	q3::inwork 9955,12300 10002,12305
 # REMOVED (Einbahnstraßenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universitätsstr.: wegen Bauarbeiten Einbahnstraße zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2018-08-18 vvv
+#: last_checked: 2018-08-23 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="5"
@@ -331,7 +331,7 @@ Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
 #: source_id: LMS-BR_r_LMS-BR_197
 #: osm_watch: way id="194962375" version="9"
-#: last_checked: 2018-08-13
+#: last_checked: 2018-08-23
 #: check_frequency: 14d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -487,7 +487,7 @@ Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5
 ### Neukölln ###
 # 
 #: XXX nach den Bauarbeiten vermutlich asphaltiert
-#: last_checked: 2018-08-21
+#: last_checked: 2018-08-24
 #: check_frequency: 3d
 # REMOVED (hier nicht mehr, vermutlich) --- Innstraße: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 13217,8493 13262,8554 13301,8606
 Innstraße: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 13301,8606 13314,8624 13368,8689
@@ -522,9 +522,14 @@ Weichselstr.: Bauarbeiten zwischen Weichselplatz und Ossastr., Fahrbahn gesperrt
 #: source_id: 2147338550
 #: source_id: LMS-BR_r_LMS-BR_19252
 #: source_id: 2147342527
-#: last_checked: 2018-06-22
-#: check_frequency: 90d
+#: last_checked: 2018-06-22 vvv
+#: check_frequency: 90d vvv
+#: osm_watch: way id="585753318" version="1"
 Karl-Marx-Str.: Bauarbeiten zwischen Rollbergstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12714,8249 12753,8187 12794,8103
+#: osm_watch: way id="563341822" version="1"
+Rollbergstr.: Einbahnstraßenregelung	q4::inwork; 12528,8205 12714,8249
+#: last_checked ^^^
+#: check_frequency ^^^
 # 
 # REMOVED (fertig) --- Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Thomasstr., Richtung Süden auf Gehweg ausweichen	q4::inwork; 12753,8187 12794,8103 12830,8031 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785 12969,7610
 # REMOVED (fertig) --- Karl-Marx-Str.: Bauarbeiten zwischen Jonasstr. und Uthmannstr., Richtung Süden auf Gehweg ausweichen, ggfs. schieben	q4::inwork; 12969,7610 12991,7549 12992,7545 13015,7471 13018,7441
@@ -862,6 +867,7 @@ Krumme Lanke - Parkplatz am Fischerhüttenweg: Fußgänger	q2 -1287,4486 -1304,4450
 Pankeweg, Bürgerpark: Fußgänger	q2 9909,18333 9882,18318 9855,18322 9716,18290 9713,18322 9424,18276 9324,18137 9310,18108
 Bürgerpark: Fußgänger	q2 9460,18053 9462,18234 9701,18256 9716,18290
 Bürgerpark: Fußgänger	q1 9419,18330 9424,18276 9462,18234
+#: by: https://www.berliner-woche.de/spandau/c-verkehr/radler-muessen-runter-vom-sattel_a177230
 #: note: Radfahren in der Altstadt ist montags bis samstags jeweils von 19.00 Uhr bis 09.00 Uhr und am Sonntag ganztägig zugelassen (http://www.berlin.de/ba-spandau/presse/archiv/20090917.1110.139163.html). vvv
 Breite Str.: Fußgängerzone	q4 -3039,14522 -3054,14498 -3089,14440 -3110,14408 -3142,14358 -3155,14340 -3227,14260
 Markt: Fußgängerzone	q4 -3155,14340 -3204,14368 -3231,14383 -3275,14407
@@ -1487,7 +1493,8 @@ Harkortstr.: Bodenschwellen	q1 7570,5508 7621,5494
 #: XXX_prog: für Anhänger q2
 Orankeweg: einige Bodenschwellen, ohne Anhänger leicht umfahrbar	q0 14967,15885 14994,15861 15313,15858 15395,15852 15453,15848
 (Gounodstr. - Otto-Brahm-Str.): abschnittsweise eng und kurvig	q1 14433,15908 14451,15873 14383,15848 14349,15825 14365,15778
-Gounodstr.: Fußgänger	q1 14239,15810 14251,15828 14366,15877
+#: XXX_prog: BS an der Lindenallee, ansonsten q1
+Gounodstr.: Fußgänger, flacher Bordstein	q2 14239,15810 14251,15828 14366,15877
 Seidenberger Str.: Bordstein, Geländer	q3 12391,16994 12382,17006
 Mulackstr.: enge Straße	q1 10633,13474 10535,13509 10406,13543 10308,13575
 Rückerstr.: enge Straße	q1 10597,13647 10535,13509

@@ -1335,6 +1335,7 @@ Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-85
 Bahnhofstr.	1s:q4 -8417,-2862 -8410,-2884
 ###################################################################### 
 # elsewhere in Brandenburg
+Am Stern	1 26002,-3362 26002,-3342 26011,-3331 26029,-3326 26048,-3334 26046,-3365 26013,-3367 26002,-3362
 Am Bergpark	1 30589,-1736 30664,-1629 30758,-1606 30968,-1681
 August-Bebel-Str. (Eichwalde)	1s:q4 25269,-3906 25322,-4042
 Grüne Trift (Schulzendorf)	1s:q3 24714,-4087 24577,-3869 24509,-3763
@@ -2926,7 +2927,8 @@ Drängelgitter	BNP:3::trailer=10 1409,15177
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: XXX vielleicht sogar dauerhaft?
-#: last_checked: 2018-08-16
+#: last_checked: 2018-08-24 (zurzeit kann man sich noch an den Bauzäunen vorbei mogeln)
+#: check_frequency: 14d
 Boxhagener Str. - Weserstr.: Bauarbeiten, Durchfahrt nicht mehr möglich	2::inwork 14838,11410 14949,11474
 # 
 #: last_checked: 2018-08-21
@@ -2983,7 +2985,7 @@ Fanny-Zobel-Str.: wegen Bauarbeiten gesperrt, vielleicht sogar dauerhaft eingezo
 # REMOVED --- #: source_id: 2147342570 --- #: last_checked: 2018-06-05 --- # REMOVED ---#: check_frequency: 3d --- #: next_check: 2018-06-15 --- #: valid: -20180615 --- #: priority: #A --- Koppenstr.: Bauarbeiten, Fahrbahn Richtung Rüdersdorfer Str. gesperrt	1s:q2:inwork 12573,12227 12596,12472 --- 
 # 
 #: XXX welche Fahrbahnbeschaffenheit wird die Straße haben?
-#: osm_watch: way id="220943758" version="2"
+#: osm_watch: way id="618924838" version="1"
 #: last_checked: 2018-04-29
 #: check_frequency: 120d
 Charlotte-von-Mahlsdorf-Ring: Baustraße	2::inwork 24649,10710 24728,10722 24739,10645
@@ -2993,7 +2995,7 @@ Charlotte-von-Mahlsdorf-Ring: Baustraße	2::inwork 24649,10710 24728,10722 24739,
 Hermineweg: Bauarbeiten, gesperrt	2::inwork 24831,10966 24906,10965
 # 
 #: next_check_id: KARLINEKENWEG-2018
-#: osm_watch: way id="499986562" version="4"
+#: osm_watch: way id="499986562" version="5"
 #: last_checked: 2018-05-27 (osm)
 #: check_frequency: 60d
 Karlinekenweg: Bauarbeiten, gesperrt	2::inwork 11359,20297 11405,20196
@@ -3049,7 +3051,7 @@ Zum Großen Herzberg (Potsdam-Golm): Straße wird noch gebaut	2::inwork -18017,333
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/express-zum-ber-fledermaeuse-stoppen-bauarbeiten-fuer-ringbahnbruecke-29488832 (Abriss im April 2018)
 #: XXX wird aufgehoben, sobald das einsturzgefährdete Haus abgerissen wird
 #: osm_watch: way id="488814363" version="3"
-#: last_checked: 2018-07-26
+#: last_checked: 2018-08-24
 #: check_frequency: 30d
 #: priority: #C
 Wartenbergstr.	1s:q2:inwork 15423,11667 15337,11639 15328,11636 15300,11584
@@ -3098,9 +3100,9 @@ Im Lichtenhain: neue Straße, zurzeit Bauarbeiten; Qualität, genaue Lage?	2::inwo
 #: osm_watch: way id="523614484" version="2"
 # REMOVED (wurde gelöscht) --- #: osm_watch: way id="523614486" version="3"
 # REMOVED (wurde gelöscht) --- #: osm_watch: way id="5134092" version="20"
-#: last_checked: 2018-05-01
+#: last_checked: 2018-08-23
 #: check_frequency: 90d
-Zufahrt Parkhaus: Abrissarbeiten, Straße komplett gesperrt	2::inwork 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
+Zufahrt zum ehemaligen Parkhaus: Bauarbeiten, Straße komplett gesperrt	2::inwork 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
 # 
 # REMOVED --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_04_0325_0472_online.pdf --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_15_1637_1712_online.pdf (Grundstücksnummerierungen) --- #: osm_watch: way id="475965723" version="3" --- #: last_checked: 2017-09-17 --- Am Herzbergteich: noch wegen Bauarbeiten gesperrt; wann ist die Straße fertig?	2::inwork 17945,13493 17941,13564 17877,13562
 # REMOVED --- #: next_check_id: RUEDERSDORFER-2017 --- #: last_checked: 2017-10-17 --- #: check_frequency: 1d --- Rüdersdorfer Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 13173,11788 13066,11854
@@ -3489,7 +3491,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: http://www.dafmap.de/d/berlin.html?id=3588&mt=0&zoom=16
 #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung)
 #: XXX Spielbetrieb wird im Dezember 2017 aufgenommen
-#: last_checked: 2018-08-14 vvv
+#: last_checked: 2018-08-23 vvv
 #: check_frequency: 14d vvv
 Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9876,12298
 Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9798,12267 9795,12293 9780,12401
@@ -3503,7 +3505,7 @@ Oberwallstr.: Bauarbeiten, vollständig gesperrt	2::inwork 9883,12251 9876,12298
 # 
 #: XXX Eröffnung 2019 geplant
 #: by: http://www.dafmap.de/d/berlin.html?id=3598&mt=0&zoom=16
-#: last_checked: 2018-08-13
+#: last_checked: 2018-08-23
 #: check_frequency: 120d
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
