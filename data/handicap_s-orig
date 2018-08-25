@@ -21,7 +21,7 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualit‰t danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-08-22
+#: last_checked: 2018-08-25
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
@@ -392,15 +392,15 @@ Wilhelminenhofstr.: Bauarbeiten zwischen Siemensstr. und Edisonstr., Fahrbahn un
 #: next_check_id: FRIESEN-2018
 #: source_id: 2147342598
 #: XXX Start 2018-05-16, Dauer vermutlich 12 Monate, aber bei VMZ geht's nur erstmal vier Monate
-#: last_checked: 2018-08-15
+#: last_checked: 2018-08-25
 #: next_check: 2018-09-21
 #: valid: -20180921
 #: priority: #A
 Friesenstr.: Fahrbahn Richtung Zossener Str. gesperrt	q4::inwork; 9801,8683 9801,8889 9799,8962 9797,9063 9795,9162 9793,9241
 # 
 #: XXX laut google bis Mitte Oktober 2018 gesperrt
-#: last_checked: 2018-08-15
-#: check_frequency: 7d
+#: last_checked: 2018-08-25
+#: check_frequency: 14d
 Mariannenstr.: Bauarbeiten an der Kreuzung Naunynstr.	q3::inwork 11734,10563 11763,10635 11781,10696
 # 
 # REMOVED --- #: last_checked: 2018-04-16 --- Mariannenstr.: Bauarbeiten zwischen Naunynstr. und Mariannenplatz, Fahrbahn Richtung Norden gesperrt	q4::inwork; 11763,10635 11781,10696
@@ -1283,7 +1283,7 @@ Teltowkanalpromenade: eng, nicht anh‰ngertauglich	q2 2079,-12 1924,-188 1593,-31
 # ----------------- Bordstein-Check bis hier ----------------------------------
 (Wohnanlage Friedastr.): Fuﬂg‰nger, Bordsteine	q3 16887,11545 16759,11582
 (Eitelstr. - Bahnhof Lichtenberg): Fuﬂg‰nger	q3 16727,11611 16766,11603
-Bennigsenstr.: enge Straﬂe	q1 5807,7771 5957,7773 6195,7775 6209,7765
+Bennigsenstr.: enge Straﬂe	q0- 5807,7771 5957,7773 6195,7775 6209,7765
 Perelsplatz: Fuﬂg‰nger, Park	q2 5809,7712 5636,7709
 #: XXX_prog: BS (Bordstein zum S¸dwestkorso, Richtung S¸den kann der Bordstein zugeparkt sein) (ansonsten -> q2)
 Gustav-Rickelt-Weg: eng, Fuﬂg‰nger, Bordsteine	q3 4224,6718 4223,6796 4204,6826
