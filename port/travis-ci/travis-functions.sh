@@ -25,6 +25,8 @@ init_env_vars() {
     # The default www.cpan.org may not be the fastest one, and may
     # even cause problems if an IPv6 address is chosen...
     export PERL_CPANM_OPT="--mirror https://cpan.metacpan.org --mirror http://cpan.cpantesters.org"
+    CODENAME=$(lsb_release -c -s)
+    export CODENAME
 }
 
 init_perl() {
@@ -39,7 +41,6 @@ init_apt() {
     then
 	if [ ! -e /etc/apt/sources.list.d/mydebs.bbbike.list ]
 	then
-	    CODENAME=$(lsb_release -c -s)
 	    wget -O- http://mydebs.bbbike.de/key/mydebs.bbbike.key | sudo apt-key add -
 	    sudo sh -c "echo deb http://mydebs.bbbike.de ${CODENAME} main > /etc/apt/sources.list.d/mydebs.bbbike.list~"
 	    sudo mv /etc/apt/sources.list.d/mydebs.bbbike.list~ /etc/apt/sources.list.d/mydebs.bbbike.list
@@ -65,7 +66,6 @@ init_apt() {
 # - poppler-utils:          provides pdfinfo for testing
 # - tzdata:                 t/geocode_images.t needs to set TZ
 install_non_perl_dependencies() {
-    CODENAME=$(lsb_release -c -s)
     if [ "$CODENAME" = "precise" -o "$CODENAME" = "bionic" ]
     then
 	javascript_package=rhino
@@ -151,7 +151,6 @@ install_webserver_dependencies() {
     if [ "$USE_MODPERL" = "1" ]
     then
 	# install mod_perl
-	CODENAME=$(lsb_release -c -s)
 	# XXX probably valid also for all newer debians (and ubuntus?)
 	if [ "$CODENAME" = "stretch" -o "$CODENAME" = "bionic" ]
 	then
@@ -181,6 +180,12 @@ install_perl_dependencies() {
     if [ "$USE_SYSTEM_PERL" = "1" ]
     then
 	sudo apt-get install -qq libapache-session-counted-perl libarchive-zip-perl libgd-gd2-perl libsvg-perl libobject-realize-later-perl libdb-file-lock-perl libpdf-create-perl libtext-csv-xs-perl libdbi-perl libdate-calc-perl libobject-iterate-perl libgeo-metar-perl libgeo-spacemanager-perl libimage-exiftool-perl libdbd-xbase-perl libxml-libxml-perl libxml2-utils libxml-twig-perl libxml-simple-perl libgeo-distance-xs-perl libimage-info-perl libinline-perl libtemplate-perl libyaml-libyaml-perl libclass-accessor-perl libdatetime-perl libstring-approx-perl libtext-unidecode-perl libipc-run-perl libjson-xs-perl libcairo-perl libpango-perl libmime-lite-perl libcdb-file-perl libmldbm-perl libpalm-palmdoc-perl libimager-qrcode-perl
+	if [ "$CODENAME" = "precise" ]
+	then
+	    # upgrade Archive::Zip (precise comes with 1.30) because
+	    # of mysterious problems with cgi-download.t
+	    cpanm --sudo --quiet --notest Archive::Zip
+	fi
     else
 	# XXX Tk::ExecuteCommand does not specify Tk as a prereq,
 	# so make sure to install Tk early. See
@@ -254,7 +259,7 @@ init_webserver_config() {
 	    sudo ln -s $TRAVIS_BUILD_DIR/cgi/httpd.conf /etc/apache2/sites-available/bbbike.conf
 	fi
 	sudo a2ensite bbbike.conf
-	if "$(lsb_release -c -s)" != "precise"
+	if "$CODENAME" != "precise"
 	then
 	    sudo a2enmod remoteip
 	fi
