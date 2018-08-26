@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004,2006,2008,2012,2013,2014,2015,2016,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2006,2008,2012,2013,2014,2015,2016,2017,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -967,6 +967,15 @@ sub zip_ok {
     if ($@) {
 	Test::More::fail("Checking $zip_name in read phase");
 	Test::More::diag($@);
+	if ($^O ne 'MSWin32') { # pipe open might be unimplemented, no ls available
+	    my $ls = do {
+		open my $fh, '-|', 'ls', '-al', $zip_name
+		    or die $!;
+		local $/;
+		<$fh>;
+	    };
+	    Test::More::diag($ls);
+	}
 	return 0;
     }
 
