@@ -3898,17 +3898,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: 2147342863
-	2::inwork 14338,22885 14276,22914
-',
-         'from' => 1499280235,
-         'id' => 2881,
-         'source_id' => 'http://www.pankow.live/2017/04/21/erneutes-chaos-zwischen-blankenburg-und-bernau-vorprogrammiert/',
-         'text' => 'Brückendurchfahrt Schräger Weg: Sperrung, Radfahrer und Fußgänger können die Brücken bis auf kurzzeitige Einschränkungen passieren, bis voraussichtlich Oktober 2018',
-         'type' => 'gesperrt',
-         'until' => 1541026800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4228,7 +4218,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-08-20
+#: last_checked: 2018-08-26
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -4288,7 +4278,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=42743 (sogar bis 2018-09-17)
 #: source_id: 2147342618
 #: priority: #A
-#: last_checked: 2018-07-26
+#: last_checked: 2018-08-26
 # REMOVED --- #: next_check: 2018-07-13
 	q4::inwork 13767,12626 13786,12636 13863,12677 13911,12692
 ',
@@ -4302,12 +4292,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: XXX eventuell hängen die Bauarbeiten mit den Bauarbeiten in der Eldenaer Str. zusammen
 #: XXX wird danach komplett asphaltiert sein?
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=42743 (sogar bis 2018-09-17)
-#: last_checked: 2018-08-17
-	q4::inwork 14096,12827 14058,12709 13911,12692
+#: last_checked: 2018-08-26
+	q4::inwork; 14096,12827 14058,12709 13911,12692
 ',
          'from' => undef,
          'id' => 2969,
-         'text' => 'Liebigstr. und Weidenweg: Bauarbeiten, Fahrbahn gesperrt',
+         'text' => 'Liebigstr. und Weidenweg: Bauarbeiten, Einbahnstraßenregelung',
          'type' => 'handicap',
          'until' => 1536940800
        },

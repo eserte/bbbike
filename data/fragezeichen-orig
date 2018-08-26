@@ -55,7 +55,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123
 # REMOVED (realisiert) --- Danziger Str.	?::projected 12522,14385 12616,14315
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (Baubeginn 2018)
 #: source_id: 2147342299
-#: last_checked: 2018-08-17 (Markierungsarbeiten) vvv
+#: last_checked: 2018-08-26 (Markierungsarbeiten) vvv
 #: check_frequency: 7d vvv
 # REMOVED (realisiert) --- Danziger Str.	?::projected 12616,14315 12722,14232
 Danziger Str.	?::projected 12722,14232 12817,14159 12901,14093 12975,13990 13037,13897 13100,13803
@@ -356,7 +356,7 @@ Köpenicker Landstraße: Radspuren bis 2015 geplant	?::projected; 15303,8343 15166
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3225
 #: XXX mittelfristig Realisierung von Radstreifen
 #: osm_watch: way id="340337649" version="2"
-#: last_checked: 2018-04-28
+#: last_checked: 2018-08-26
 #: check_frequency: 150d
 Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,19869 7711,19956 7748,20040 7790,20132 7832,20219
 # 
@@ -383,7 +383,7 @@ Nürnberger Str.: Radspuren entstehen	?::projected 5866,10492 6025,10746
 #: by: http://www.berliner-woche.de/rosenthal/verkehr/wie-wird-die-allee-umgebaut-d140673.html
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat_05-12-2017.pdf
 #: XXX wird voraussichtlich im Frühjahr 2019 beginnen, geplante Bauzeit beträgt ca. 3 Jahre
-#: last_checked: 2017-05-01
+#: last_checked: 2018-08-26
 #: next_check: 2019-05-01
 Kastanienallee: Radverkehrsanlagen sind vorgesehen (Radspuren)	?::projected 8900,20601 9025,20611 9161,20622 9174,20623 9295,20632 9460,20644 9551,20662 9622,20677 9676,20700 9740,20719 9839,20749 9895,20766 9982,20793 10138,20840
 # 
@@ -392,7 +392,7 @@ Kastanienallee: Radverkehrsanlagen sind vorgesehen (Radspuren)	?::projected 8900
 #: XXX haben die Bauarbeiten (laut vmz bis Ende Juni 2017) was damit zu tun?
 #: osm_watch: way id="9711554" version="36"
 #: osm_watch: way id="29560375" version="15"
-#: last_checked: 2018-05-11 (mapillary)
+#: last_checked: 2018-08-26
 #: check_frequency: 90d
 Pasewalker Str.: Schutzstreifen werden erstellt, außerdem eine Ampel an der Kreuzung Bahnhofstr.	?::projected 12121,20969 12158,21166 12166,21208 12188,21330 12209,21448 12172,21545 12042,21886
 # 
@@ -859,7 +859,7 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 # REMOVED (weitgehend fertig) --- #: source_id: 2147340980 --- #: last_checked: 2017-06-08 --- #: next_check: 2017-07-05 --- Stromstr.: Asphaltierung des Radwegs in Arbeit	?::inwork; 6214,13225 6183,13083 6164,12980
 # REMOVED (weitgehend fertig) --- #: last_checked: 2017-07-11 --- Möckernstr.: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 8783,10166 8802,10290 8804,10303
 # 
-#: last_checked: 2018-08-17
+#: last_checked: 2018-08-26
 Bersarinplatz: Verbesserung "Radweganbindung Ostseite"	?::projected; 13730,12535 13761,12578 13767,12626 13747,12642 13695,12643
 # 
 #: osm_watch: way id="142721308" version="14"
@@ -1075,7 +1075,7 @@ Kameruner Str.: vielleicht Asphaltierung?	?::projected 6267,15844 6383,15972 648
 #: XXX vielleicht auch ein größerer Abschnitt
 #: osm_watch: way id="352683182" version="4"
 #: osm_watch: way id="501402607" version="1"
-#: last_checked: 2018-05-09
+#: last_checked: 2018-08-26
 Residenzstr.: Radstreifen	?::projected 8127,16894 8079,16953 7970,17087
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.655722.php (Erwähnung des Vorhabens Spreeradweg am Wullenwebersteg)
@@ -1097,7 +1097,7 @@ Braunschweiger Str.: Asphaltierung	?::projected 13702,7418 13781,7524 13854,7620
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (2017 nicht realisierbar)
 #: osm_watch: way id="4764878" version="10"
-#: last_checked: 2018-04-28
+#: last_checked: 2018-08-26
 #: check_frequency: 120d
 Niederstr.: Asphaltierung	?::projected 7634,19793 7769,19736 7857,19693
 # 
@@ -1105,14 +1105,14 @@ Niederstr.: Asphaltierung	?::projected 7634,19793 7769,19736 7857,19693
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (2017 nicht realisierbar)
 #: osm_watch: way id="4764886" version="11"
 #: last_checked: 2018-04-28
-#: check_frequency: 120d
+#: check_frequency: 240d
 Tollerstr.: Asphaltierung	?::projected 7751,19696 7769,19736 7807,19811 7838,19884 7885,19975
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (2017 nicht realisierbar)
 #: osm_watch: way id="272532028" version="1"
 #: osm_watch: way id="73682384" version="2"
 #: osm_watch: way id="272532027" version="1"
-#: last_checked: 2018-04-28
+#: last_checked: 2018-08-26
 #: check_frequency: 120d
 Hielscherstr.: Asphaltierung	?::projected 7558,19886 7604,19988 7695,20175 7735,20262 7809,20420 7826,20460
 # 
@@ -1264,8 +1264,8 @@ Kniprodestr.: werden die Busspuren zu Radspuren umgewandelt?	?::projected 12640,
 #   für Radfahrer eher uninteressante Dinge (-> private)
 # 
 #: XXX Grünes Band Berlin E4 Süd
-#: last_checked: 2018-07-07
-Weg parallel zum Mauerweg: wird gerade gebaut, vermutlich asphaltiert. Genaue Wegführung? Nachts beleuchtet? Wird der Mauerweg hier entlang geführt?	?::inwork 7543,19510 7679,19421 7704,19366 7778,19308 8040,19082 8301,18898 8336,18860
+#: last_checked: 2018-08-26
+Weg parallel zum Mauerweg: wird gerade gebaut, asphaltiert. Genaue Wegführung? Nachts beleuchtet? Wird der Mauerweg hier entlang geführt?	?::inwork 7543,19510 7679,19421 7704,19366 7778,19308 8040,19082 8301,18898 8336,18860
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.703767.php vvv
 #: by: https://www.berliner-woche.de/altglienicke/c-verkehr/bauarbeiten-in-der-rudower-strasse_a164219
@@ -1745,8 +1745,8 @@ Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4432
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4432&date=20170926
 #: priority: #D
-#: last_checked: 2018-05-11 (mapillary)
-#: check_frequency: 45d
+#: last_checked: 2018-08-26
+#: check_frequency: 60d
 Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projected 12128,21562 12172,21545 12213,21525
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3039&date=20130906 (Ampel ist angeordnet (2012-09), wird aber "nicht zeitnah" umgesetzt werden) --- #: osm_watch: node id="29778885" version="7" --- #: source_id: 2147341598 --- #: XXX Ampel steht, ist noch nicht eingeschaltet. Anforderung aus Richtung Gustav-Adolf-Str. --- #: last_checked: 2017-10-09 --- #: check_frequency: 7d --- Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgänger-?) entstehen?	?::inwork 13708,17453
@@ -2065,7 +2065,7 @@ Clara-Mleinek-Platz (Ziffer 3; platzähnlich): Qualität? Wird der Straßenname sti
 # REMOVED (-> strassen&gesperrt) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/1-64a_ve_bebauungsplanentwurf_3-2-bl_1.pdf --- #: by: http://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2015/pressemitteilung.364910.php --- #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/abwaegung/1-64a_ve/index.shtml --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2016 (Straßenbenennung) --- #: XXX Grünflächen teilweise entfernen, culdesac hinzufügen --- #: XXX vorgeschlagene Straßennamen: Bärbel-Bohley-Ring (großer Straßenring, C, D, E) und Lichtburgring (A, B); teilweise Privatstraßen, PLZ=13355 (fehlt in Berlin.coords.data) --- #: XXX Baustraße ist asphaltiert, vermutlich wird der Bereich verkehrsberuhigt sein (auch laut osm) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7285 --- #: by: http://www.dafmap.de/d/berlin.html?id=3694&mt=0&zoom=16 (Geplanter Projektabschluss: 2019-03-01) --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_26_2933_3020_online.pdf (Grundstücksnummerierungen) --- # laut LOR 7/2017 PLZ=13357, siehe auch http://www.openstreetmap.org/note/1195020 --- #: osm_watch: way id="437684188" version="2" --- #: last_checked: 2017-09-21 --- #: next_check: 2017-10-08 --- Lichtburgring	?::inwork 10004,15636 9933,15815 --- Bärbel-Bohley-Ring	?::inwork 9933,15815 9917,15813 9744,15793
 #: next_check_id: LICHTBURGRING-2017
 #: osm_watch: way id="530416911" version="1"
-#: last_checked: 2018-05-17
+#: last_checked: 2018-08-26
 #: check_frequency: 60d
 Bärbel-Bohley-Ring/Lichtburgring: weitere Straßenabschnitte noch in Bau, Qualität? Einbahnstraßenregelung?	?::inwork 9910,15876 9997,15884 10059,15673 10005,15656
 # REMOVED --- #: XXX siehe auch https://www.openstreetmap.org/note/1268229 (keine Kette mehr); außerdem ist die Verbindungsmöglichkeit bei osm mittlerweile eingetragen --- #: osm_watch: node id="908746485" version="4" --- #: last_checked: 2018-03-19 --- #: check_frequency: 60d --- Bärbel-Bohley-Ring - Ramlerstr./Zufahrtstraßen zum Einkaufszentrum: mögliche Verbindungen, allerdings ist der Status noch unklar --- bleibt der asphaltierte Weg als Verlängerung zum Bärbel-Bohley-Ring, und werden die Tore abgebaut? Bleibt die Kette in der Zufahrt zur Ramlerstr.? Bleibt die Zufahrtmöglichkeit zum Einkaufszentrum, gibt's dort eine Einbahnstraßenregelung?	? 9744,15793 9644,15780 9664,15742 9629,15803 9592,15800
@@ -2097,6 +2097,7 @@ Sigismundkorso: gibt es hier einen Zebrastreifen?	?::projected 1940,24826 1893,2
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4622
 #: by: http://www.berliner-woche.de/prenzlauer-berg/verkehr/conrad-blenkle-strasse-verkehrslenkung-ordnet-bis-auf-weiteres-tempo-30-an-d158184.html
+#: last_checked: 2018-08-26
 #: next_check: 2018-12-31
 #: priority: #D
 Conrad-Blenkle-Str.: wird hier ein Zebrastreifen gebaut?	?::projected 13156,14099 13158,14117 13174,14110
@@ -2163,7 +2164,7 @@ Bautzener Brache - Großgörschenstr.: Weg in Planung	?::projected 8240,9364 8186,
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2017/pressemitteilung.558513.php (Baumfällungen)
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.548914.php (Bauzeit voraussichtlich September 2017 - September 2019)
 #: XXX gehört nun zum Planungsgebiet "Blankenburger Süden"
-#: last_checked: 2017-08-30 vvv
+#: last_checked: 2018-08-26 vvv
 #: check_frequency: 360d vvv
 #: XXX Norderschließungsstraße
 Bebauungsplan 3-48 VE: Planstraße A in Planung	?::projected 12957,18518 13178,18460 13368,18674 13389,18704 13410,18735
@@ -2312,10 +2313,7 @@ Roelckestr./An der Industriebahn: gibt's hier einen Zebrastreifen oder "nur" ein
 #: next_check: 2018-08-31
 Schragenfeldstr. - Allee der Kosmonmauten: eine Wegverbindung wird gebaut	?::inwork 21096,15009 21046,15009
 # 
-#: by: https://www.berliner-woche.de/karow/c-verkehr/erhebliche-strassenschaeden_a175685
-#: priority: #C
-Straßen 10, 36, 39, 40: hat sich hier die Qualität verschlechtert?	? 14742,21843 14625,21927 14661,21987 14597,22038 14327,22247 14278,22281 14162,22366
-# 
+# REMOVED (nicht nennenswert) --- #: by: https://www.berliner-woche.de/karow/c-verkehr/erhebliche-strassenschaeden_a175685 --- #: priority: #C --- Straßen 10, 36, 39, 40: hat sich hier die Qualität verschlechtert?	? 14742,21843 14625,21927 14661,21987 14597,22038 14327,22247 14278,22281 14162,22366
 # REMOVED (keine Einschränkungen) --- #: XXX NEW	Gartenstraße (Mitte) in beiden Richtungen zwischen Bernauer Straße und Invalidenstraße (Berlin)  Gültig ab: 09.08.2018 08:00  Neubau, Fahrbahnverschwenkung und -verengung (bis Anfang 2021)	2147343000	 --- Gartenstr.: Einschränkungen für Radfahrer?	? 9383,13986 9224,14169
 # 
 #: source_id: LS/721-F/18/080
@@ -2356,12 +2354,14 @@ Böhmische Str.: wird dieser Abschnitt für Autofahrer gesperrt?	? 13566,7649 1355
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/versuch-einer-verkehrsberuhigung_a169295
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/sperren-und-bodenschwellen-uebersicht-des-verkehrskonzepts-samariterkiez_pic204197_a169295
 #: XXX Auswirkungen auf Radfahrer? vvv
-#: next_check: 2018-09-01 vvv
+#: check_frequency: 30d vvv
 #: last_checked: 2018-07-26
 Pettenkoferstr: Sperre entsteht	?::projected 15005,12443 14996,12462
+#: last_checked: 2018-08-26
 Samariterstr.: Sperre entsteht	?::projected 14591,12555 14596,12573
+#: last_checked: 2018-08-26
 Voigtstr./Schreinerstr.: Diagonalsperre entsteht	?::projected 14747,12399 14776,12418 14811,12435
-#: next_check ^^^
+#: check_frequency ^^^
 #: XXX ^^^
 # 
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/versuch-einer-verkehrsberuhigung_a169295
@@ -2482,7 +2482,7 @@ Blücherstr./Brachvogelstr.	?::projected 9997,9987 10006,9942 9965,9925
 #: last_checked: 2018-08-21
 #: check_frequency: 60d
 Lindenstr./E.T.A.-Hoffmann-Promenade	?::projected 9747,10741 9777,10719 9750,10687
-#: last_checked: 2018-07-07
+#: last_checked: 2018-08-26
 #: check_frequency: 90d
 Pasewalker Str./Bahnhofstr.	?::projected 12122,21178 12166,21208 12212,21206
 #: last_checked: 2018-08-15
@@ -2643,7 +2643,7 @@ Im Erpelgrund: Instandsetzung geplant (beide Richtungen oder nur eine?)	?::proje
 #: XXX evtl. wird auch die Gleimstr. zur Fahrradstraße
 #: XXX unklar, ob auch die Route Dunckerstr. - Kollwitzstr. ebenso Fahrradstraße werden könnte
 #: osm_watch: way id="11114397" version="24"
-#: last_checked: 2018-08-24
+#: last_checked: 2018-08-26
 #: check_frequency: 60d
 Stargarder Str.: eventuell wird hier eine Fahrradstraße eingerichtet	? 10953,15787 11086,15772 11158,15739 11290,15669 11418,15587 11502,15527 11595,15460 11682,15397 11852,15281
 # 
@@ -2786,7 +2786,7 @@ Neue Krugallee/Lakegrund: wird hier ein Zebrastreifen entstehen?	? 16401,7400 16
 # REMOVED (die Pflicht bleibt) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4755 vvv --- #: source_id: 2147339938 --- #: source_id: 2147341595 --- #: last_checked: 2018-02-22 --- #: check_frequency: 60d --- Köpenicker Landstraße: bleibt die Radwegbenutzungspflicht?	?; 15166,8489 15303,8343 15357,8286 15557,8077 --- #: last_checked: 2018-01-06 --- #: check_frequency: 90d --- Köpenicker Landstraße: bleibt die Radwegbenutzungspflicht?	?; 15920,7697 16195,7398 16353,7226 16428,7144 --- #: by ^^^
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4129
-#: last_checked: 2018-04-28
+#: last_checked: 2018-08-26
 #: check_frequency: 90d
 #: priority: #D
 Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen ausgebaut werden	?::projected 7787,20166 7790,20132 7823,20149
@@ -3219,7 +3219,7 @@ Kleinbeerenstr. - Großbeerenstr.: geplanter Weg im Zuge des Bebauungsplans VI-46
 #: by: http://www.dafmap.de/d/berlin.html?id=4636&mt=0&zoom=15
 #: by: http://www.berliner-woche.de/wilhelmsruh/bauen/vorarbeiten-dauern-an-noch-laufen-untersuchungen-fuers-wilhelmsruher-tor-d143375.html
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4375
-#: last_checked: 2018-04-28 vvv
+#: last_checked: 2018-08-26 vvv
 #: next_check: 2020-03-01 vvv
 #: osm_watch: way id="73669134" version="5"
 Planstraße A (anstelle der jetzigen Stichstraße)	?::projected 7603,19713 7675,19677 7729,19649
@@ -4270,7 +4270,7 @@ Rosow - Pomellen: Qualität?	? 75335,101272 75175,101384
 Pomellen - polnische Grenze: Qualität?	? 75562,105308 75775,105512 76187,106212 75525,106650 75716,107215 75837,108375 75780,109058 75400,110350 74579,111943 74225,112737 74237,113462 73987,113512 74125,113863 72925,113675 72801,113578
 zur B158: Qualität?	? 56450,48250 56587,48550 57328,48981
 Neue Trasse der B167: für Radfahrer benutzbar? Alte Trasse nicht mehr Bundesstraße, sondern K6436?	? 58206,37275 58206,37675 58225,37959 58087,38231 57734,38743 57612,39937 57403,40340 56862,40818 56659,41179 56381,41675 56087,41956 55506,42350 54895,43268 54515,43803 53987,44157 53425,44300 53187,44262 52341,43207
-Str. der Freiheit, Zeuthen: Qualität?	? 25238,-6957 25308,-7050 25809,-7216 26033,-7207
+Str. der Freiheit, Zeuthen: Qualität?	? 25238,-6957 25308,-7050 25798,-7212 26033,-7207
 Jahnstr. (Wildau): Qualität?	? 25910,-8697 25937,-8824 25805,-9553
 Kiekebusch (früher Waltersdorf) - Karlshof: laut "Berliner Umland" witterungsabhängige Strecke; Schlenker um See notwendig?	? 20075,-5417 19866,-5382 19809,-5557 19945,-5661 19915,-6315 19907,-6772 19951,-6902 19817,-7484
 Kiekebusch - Karlshof: laut "Berliner Umland" geeignete Strecke auf Straßen	? 20892,-6636 20577,-6982 20255,-7591
@@ -4959,7 +4959,6 @@ Brahmsweg (Potsdam): Qualität?	? -8136,-2699 -8132,-2754 -8138,-2804
 Schubertstr. (Potsdam): Qualität?	? -8219,-2795 -8138,-2804 -8108,-2809 -7965,-2825
 Mozartstr. (Potsdam): Qualität im nördlichen Abschnitt?	? -8108,-2809 -8127,-2925
 Scharfschwerdtstr. (Hohen Neuendorf): Qualität?	? 1364,27953 1426,28065 1456,28125 1453,28175 1448,28276 1432,28356 1489,28451 1536,28550 1698,28742 1838,28808
-Richard-Wagner-Str. (Groß Glienicke): Qualität im westlichen Abschnitt?	? -10234,5804 -10347,5874 -10467,5948
 Grünz - Radewitz: Qualität?	? 59477,99336 59588,99540 59496,99728
 Grünz - Radewitz: Qualität?	? 58791,99029 58824,99187 59496,99728 59670,99855
 Hohenreinkendorf: Qualität?	? 71648,92361 71767,92617 71794,92835 71812,93044 71834,93124 71805,93237
@@ -5204,8 +5203,6 @@ Mauswieselweg: Qualität? Wo wird die Straße genau liegen?	?::projected 26576,128
 #: last_checked ^^^
 # 
 Börnicke - Staffelde: existieren Radwege zwischen Börnicke und Staffelde?	? -21772,30661 -20747,31713 -19914,32444 -19361,33130 -19129,33814 -18939,34241 -18555,34920 -18212,35362
-# 
-Verlängerung Krampnitzer Weg: Ist hier auch asphaltiert?	? -9537,5083 -9615,5069
 # 
 #: XXX wo genau?
 #: by: http://www.potsdam.de/cms/beitrag/10068669/966975/
@@ -5801,9 +5798,59 @@ Lutherstadt Wittenberg - Coswig: Elberadweg, Qualität der Wege?	? -50427,-59455 
 August-Bebel-Str. (Schulzendorf): Qualität im südwestlichen Abschnitt?	? 23387,-4518 23655,-3997
 Zeesener Str. (Bestensee): Qualität?	? 26766,-17782 26811,-17743 26920,-17598 27031,-17378 27023,-17309 27038,-17271 27054,-17248 27081,-17125 27084,-17076
 Menz - Großwoltersdorf: Qualität des Radwegs?	? -13455,75227 -13662,75159 -12578,74452 -12341,73942 -12394,73760 -12288,73702 -12250,73762
-Hankelweg: ist hier auch (schlecht?) gepflastert?	? 25993,-6654 25703,-6760
+Hankelweg: ist hier auch (schlecht?) gepflastert?	? 25993,-6654 25754,-6740 25703,-6760
 Hankelweg: Qualität im Mittelteil (unbefestigt?)	? 25703,-6760 25362,-6886
 Hankelweg: Qualität im westlichen Abschnitt?	? 25362,-6886 25248,-6919
 #: XXX bei osm "tertiary", also NH
 Steinförde - Fürstenwalde (nördliche Verbindung): Qualität? Gibt es für Radfahrer (teilweise) Radwege?	? -12573,86500 -12462,86602 -12459,86661 -12243,87189 -12163,87296 -12068,87338 -11268,87264 -10925,87110 -10681,87113 -9218,86904 -9099,86982 -8978,86969
 Spektegrünzug - An der Tränke: existiert hier eine Verbindung? Qualität? Nachts beleuchtet?	? -7211,15920 -7145,15910
+Alte Försterei (Königs Wusterhausen): Qualität?	? 26456,-13071 26503,-13037 26577,-13034 26636,-13020 26675,-12983 26711,-12989
+(Alte Försterei - Lindenstr.): gibt es hier eine Verbindung für Radfahrer? Qualität?	? 26636,-13020 26687,-13048 26681,-13100
+#: XXX laut osm asphalt
+Lindenstr. (Zeesen): Qualität?	? 26681,-13100 26693,-13233 26782,-13675 26930,-13940
+#: XXX laut osm cobblestone
+Am Erlengrund (Zeesen): Qualität?	? 26423,-13250 26482,-13243 26658,-13224 26693,-13233 26823,-13291 26918,-13272
+#: XXX laut osm asphalt
+Ulmenstr. (Zeesen): Qualität?	? 26642,-13980 26709,-13946 26930,-13940 27035,-13940
+#: XXX laut osm paved
+Lessingallee (Wildau): Qualität?	? 25215,-9573 25482,-9642 25623,-9659 25686,-9659
+Goethebahn - Lessingallee: Qualität?	? 25107,-9554 25215,-9573
+#: XXX laut osm asphalt
+Schillerallee (Wildau): Qualität?	? 25482,-9642 25507,-9342
+Schillerallee (Wildau): Qualität?	? 25498,-9334 25578,-8781
+#: XXX laut osm cobblestone
+Stolze-Schrey-Str. (Wildau): Qualität?	? 25556,-9766 25686,-9659 25805,-9553
+#: XXX laut osm asphalt
+Fliederweg (Wildau): Qualität?	? 25455,-8814 25440,-8734 25473,-8583 25496,-8560 25509,-8485 25543,-8290
+Hasenwinkel (Wildau): Qualität?	? 25543,-8290 25574,-8118 25654,-8133
+Springfeldallee (Wildau): Qualität?	? 25629,-8300 25654,-8133 25662,-8088
+Springfeldallee - Große Zeuthener Allee: Qualität? für Radfahrer befahrbar?	? 25662,-8088 25701,-7882
+#: XXX laut osm überwiegend asphalt, nur im nördlichen Abschnitt unpaved
+Große Zeuthener Allee (Zeuthen): Qualität?	? 25701,-7882 25774,-7436 25795,-7346 25798,-7212 25810,-7135 25826,-6981
+Weserstr. (Zeuthen): Qualität?	? 25826,-6981 25879,-6960 26041,-6785 25993,-6654
+Donaustr. (Zeuthen): Qualität?	? 25879,-6960 25851,-6901 25703,-6760
+Elbestr. (Zeuthen): Qualität?	? 25754,-6740 25619,-6350
+#: XXX laut osm asphalt
+Miersdorfer Chaussee (Zeuthen): Qualität?	? 25619,-6350 25807,-6110 25893,-6002
+Oldenburger Str. (Zeuthen): Qualität?	? 25807,-6110 25754,-6076 25694,-5851 25680,-5836 25570,-5686 25494,-5511 25451,-5374
+Nordstr. (Zeuthen): Qualität?	? 25540,-5872 25516,-5817 25535,-5721 25570,-5686 25671,-5632
+Bremer Str. (Zeuthen): Qualität?	? 25371,-5577 25494,-5511 25612,-5478
+Otto-Nagel-Str. (Zeuthen): Qualität? Gibt es hier einen Radweg in beide Richtungen?	? 25345,-4806 25268,-4818 25039,-4489 25004,-4430 24973,-4375
+Otto-Dix-Ring (Zeuthen): Qualität?	? 25004,-4430 24909,-4509 24863,-4515 24828,-4462 24817,-4439
+#: XXX laut osm asphalt
+Am Zeuthener Winkel (Schulzendorf): Qualität?	? 24758,-4072 24896,-4294 24892,-4313 24785,-4385 24753,-4402
+#: XXX laut osm asphalt
+Am Zeuthener Winkel (Schulzendorf): Qualität?	? 24785,-4385 24817,-4439
+#: XXX laut osm paving_stones
+An der Koppel (Siedlung Waltersdorf): Qualität? Ist das eine Spielstraße?	? 23562,-2604 23350,-2110
+#: XXX laut osm ground, teilweise smoothness=bad
+Schwarzer Weg - An der Koppel: Qualität?	? 23273,-2089 23340,-2076 23350,-2110
+#: XXX vermutlich Verbundsteinpflaster?
+Am Hochwald (Siedlung Waltersdorf): Qualität?	? 23505,-2621 23544,-2797
+#: XXX laut osm teilweise ground + smoothness=bad
+Am Hochwald - Paarmannstr.: Qualität?	? 23544,-2797 23546,-2815 23516,-2865 23543,-3073
+#: XXX laut osm überwiegend asphalt, außer im nördlichen Abschnitt sand
+Paarmannstr. (Schulzendorf): Qualität?	? 23543,-3073 23550,-3149 23613,-3677 23821,-3942 23888,-4026 24033,-4109 24295,-4221
+An der Aue (Schulzendorf): Qualität?	? 24295,-4221 24466,-4313 24518,-4254 24657,-4288
+#: XXX laut osm sand
+An der Aue - Am Zeuthener Winkel: Qualität?	? 24657,-4288 24676,-4335 24716,-4328 24753,-4402

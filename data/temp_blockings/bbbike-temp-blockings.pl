@@ -1541,7 +1541,7 @@ EOF
        text  => 'K 6161; (Ernst-Thälmann-Str.); OD Schulzendorf, Kanal- und Straßenbau Vollsperrung 30.06.2005-30.11.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 25173,-3957 25150,-3949 25052,-3980 24933,-4017 24809,-4058 24798,-4061 24714,-4087 24613,-4121 24200,-4252 23387,-4518
+	q4 25173,-3957 25150,-3949 25052,-3980 24933,-4017 24809,-4058 24798,-4061 24758,-4072 24714,-4087 24613,-4121 24295,-4221 24200,-4252 23387,-4518
 EOF
      },
      { from  => 1107475200, # 2005-02-04 01:00
@@ -26304,7 +26304,7 @@ EOF
 EOF
      },
      { from  => 1499280235, # 2017-07-05 20:43
-       until => 1541026800, # 2018-11-01 00:00
+       until => 1535296255, # (sieht mittlerweile ziemlich fertig aus) --- 1541026800, # 2018-11-01 00:00
        text  => 'Brückendurchfahrt Schräger Weg: Sperrung, Radfahrer und Fußgänger können die Brücken bis auf kurzzeitige Einschränkungen passieren, bis voraussichtlich Oktober 2018',
        type  => 'gesperrt',
        source_id => 'http://www.pankow.live/2017/04/21/erneutes-chaos-zwischen-blankenburg-und-bernau-vorprogrammiert/',
@@ -27224,7 +27224,7 @@ EOF
        source_id => '2147342639',
        data  => <<EOF,
 #: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-08-20
+#: last_checked: 2018-08-26
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -27324,21 +27324,21 @@ EOF
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=42743 (sogar bis 2018-09-17)
 #: source_id: 2147342618
 #: priority: #A
-#: last_checked: 2018-07-26
+#: last_checked: 2018-08-26
 # REMOVED --- #: next_check: 2018-07-13
 	q4::inwork 13767,12626 13786,12636 13863,12677 13911,12692
 EOF
      },
      { from  => undef,
        until => $isodate2epoch->("2018-09-14 18:00:00"),
-       text  => 'Liebigstr. und Weidenweg: Bauarbeiten, Fahrbahn gesperrt',
+       text  => 'Liebigstr. und Weidenweg: Bauarbeiten, Einbahnstraßenregelung',
        type  => 'handicap',
        data  => <<EOF,
 #: XXX eventuell hängen die Bauarbeiten mit den Bauarbeiten in der Eldenaer Str. zusammen
 #: XXX wird danach komplett asphaltiert sein?
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=42743 (sogar bis 2018-09-17)
-#: last_checked: 2018-08-17
-	q4::inwork 14096,12827 14058,12709 13911,12692
+#: last_checked: 2018-08-26
+	q4::inwork; 14096,12827 14058,12709 13911,12692
 EOF
      },
      { from  => 1529208000, # 2018-06-17 06:00
