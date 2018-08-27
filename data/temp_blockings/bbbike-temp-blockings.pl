@@ -23988,7 +23988,7 @@ EOF
        data  => <<EOF,
 #: XXX bis wann geht die Sperrung?
 #: priority: #A
-#: last_checked: 2018-08-23
+#: last_checked: 2018-08-27
 #: check_frequency: 3d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -27224,7 +27224,7 @@ EOF
        source_id => '2147342639',
        data  => <<EOF,
 #: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-08-26
+#: last_checked: 2018-08-27
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -27660,7 +27660,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die "Radfahren verboten"-Schilder wieder weg?
-#: last_checked: 2018-08-20
+#: last_checked: 2018-08-27
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 EOF
@@ -27700,7 +27700,27 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.732621.php',
        data  => <<EOF,
+#: source_id: 2147343083
 	q4::inwork; 7843,18705 7753,18542 7676,18492
+EOF
+     },
+     { from  => 1538344800, # 2018-10-01 00:00
+       until => 1577833199, # 2019-12-31 23:59
+       text  => 'Bötzow - Schönwalde: Brückenarbeiten, auch Radfahrer und Fußgänger können nicht passieren, voraussichtlich ab Oktober 2018 bis Ende 2019',
+       type  => 'gesperrt',
+       source_id => 'https://www.moz.de/landkreise/oberhavel/oranienburg/oranienburg-artikel/dg/0/1/1656828/',
+       data  => <<EOF,
+	2::inwork -7230,25622 -7243,25847 -7309,26146
+EOF
+     },
+     { from  => undef, # 
+       until => 1536271199, # 2018-09-06 23:59
+       text  => 'Hessische Str.: Richtung Torstr. gesperrt, bis 6. September 2018',
+       type  => 'handicap',
+       source_id => '2147343061',
+       data  => <<EOF,
+#: XXX_prog: eigentlich q4+::inwork;
+	q4::inwork; 8685,13728 8775,13606
 EOF
      },
     );
