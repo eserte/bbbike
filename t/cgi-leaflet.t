@@ -75,6 +75,18 @@ my $base_url = "$cgidir/bbbikeleaflet.cgi";
     like $content, qr<"type" : "FeatureCollection">, 'expected geojson type';
 }
 
+{
+    my $url = $base_url.'?gple=qjl_Io~%7CpAlH%7CGhEeRgIuHoD%7CR'; # ein Karre in SO36 als GooglePolylineEncoding
+    my $resp = $ua->get($url);
+    ok $resp->is_success, "Fetching with multiple coords is OK"
+	or diag $resp->status_line;
+    my $content = $resp->decoded_content(charset => 'none');
+    tidy_check $content, 'tidy check with multiple coords';
+    (my $content_oneline = $content) =~ s{\n}{ }g;
+    like $content_oneline, qr<initialGeojson =\s*\{\s*"geometry" : \{\s*"coordinates" : \[\s*\[\s*"13.42456",\s*"52.49721"\s*\],\s*\[\s*"13.42313",\s*"52.4957"\s*\],\s*\[\s*"13.4262",\s*"52.49469"\s*\],\s*\[\s*"13.42775",\s*"52.49633"\s*\],\s*\[\s*"13.42456",\s*"52.49721"\s*\]\s*\],>;
+}   
+
+
 SKIP: {
     my $can_apache_session = get_cgi_config()->{use_apache_session};
     skip 'No Apache::Session available, no coordssession param', 2
