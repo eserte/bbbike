@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012,2013,2015,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2013,2015,2016,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -39,7 +39,7 @@ my $route_title        = $q->param('routetitle');
 my $replay_trk         = $q->param('replaytrk');
 my $loc                = $q->param('loc');
 my $show_expired_session_msg;
-my $coords;
+my($coords, $wgs84_coords);
 if ($q->param('coordssession')) {
     require BBBikeApacheSessionCounted;
     if (my $sess = BBBikeApacheSessionCounted::tie_session(scalar $q->param('coordssession'))) {
@@ -56,6 +56,10 @@ if ($q->param('coordssession')) {
 	       BBBikeCGI::Util::my_multi_param($q, 'coords_forw'),
 	       BBBikeCGI::Util::my_multi_param($q, 'coords_rev'),
 	      ];
+} elsif ($q->param('gple')) {
+    require Algorithm::GooglePolylineEncoding;
+    my @polyline = Algorithm::GooglePolylineEncoding::decode_polyline(scalar $q->param('gple'));
+    $wgs84_coords = [ join "!", map { join ',', $_->{lon}, $_->{lat} } @polyline ];
 }
 
 my $show_feature_list;
@@ -77,6 +81,7 @@ my $tpl = BBBikeLeaflet::Template->new
      show_feature_list        => $show_feature_list,
      show_speedometer         => $show_speedometer,
      coords                   => $coords,
+     wgs84_coords             => $wgs84_coords,
      route_title              => $route_title,
      replay_trk               => $replay_trk,
      loc                      => $loc,

@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2015,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2015,2017,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package BBBikeLeaflet::Template;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 sub new {
     my($class, %args) = @_;
@@ -32,6 +32,7 @@ sub new {
     my $disable_routing          = delete $args{disable_routing};
     my $use_osm_de_map           = delete $args{use_osm_de_map};
     my $coords                   = delete $args{coords};
+    my $wgs84_coords             = delete $args{wgs84_coords};
     my $route_title              = delete $args{route_title};
     my $show_expired_session_msg = delete $args{show_expired_session_msg};
     my $geojson_file             = delete $args{geojson_file};
@@ -60,6 +61,7 @@ sub new {
 	   disable_routing          => $disable_routing,
 	   use_osm_de_map           => $use_osm_de_map,
 	   coords                   => $coords,
+	   wgs84_coords             => $wgs84_coords,
 	   route_title              => $route_title,
 	   show_expired_session_msg => $show_expired_session_msg,
 	   geojson_file             => $geojson_file,
@@ -85,6 +87,7 @@ sub process {
     my $use_osm_de_map           = $self->{use_osm_de_map};
     my $cgi_config               = $self->{cgi_config};
     my $coords                   = $self->{coords};
+    my $wgs84_coords             = $self->{wgs84_coords};
     my $route_title              = $self->{route_title};
     my $show_expired_session_msg = $self->{show_expired_session_msg};
     my $geojson_file             = $self->{geojson_file};
@@ -191,14 +194,22 @@ sub process {
 	print $ofh $_;
 
 	if (m{\Q//--- INSERT GEOJSON HERE ---}) {
-	    if ($coords) {
-		if (ref $coords eq 'ARRAY' && @$coords > 1) {
+	    if ($wgs84_coords || $coords) {
+		if ($wgs84_coords || (ref $coords eq 'ARRAY' && @$coords > 1)) {
 		    require Strassen::GeoJSON;
 		    require Strassen::Core;
 		    my $bbd = Strassen::GeoJSON->new;
 		    my $name = defined $route_title ? $route_title : '';
-		    for my $coord (@$coords) {
-			$bbd->push([$name, [split /!/, $coord], 'X']);
+		    if ($wgs84_coords) {
+			$bbd->set_global_directive(map => 'polar');
+			if (ref $wgs84_coords ne 'ARRAY') { $wgs84_coords = [ $wgs84_coords ] }
+			for my $coord (@$wgs84_coords) {
+			    $bbd->push([$name, [split /!/, $coord], 'X']);
+			}
+		    } else {
+			for my $coord (@$coords) {
+			    $bbd->push([$name, [split /!/, $coord], 'X']);
+			}
 		    }
 		    print $ofh "initialGeojson =\n";
 		    my $json_octets = $bbd->bbd2geojson;
