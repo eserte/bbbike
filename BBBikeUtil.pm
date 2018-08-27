@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2016,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -13,7 +13,7 @@
 
 package BBBikeUtil;
 
-$VERSION = 1.37;
+$VERSION = 1.38;
 
 use strict;
 use vars qw(@ISA @EXPORT @EXPORT_OK);
@@ -412,6 +412,7 @@ sub save_pwd2 { BBBikeUtil::SavePwd2->new }
 sub uri_with_query {
     my($uri, $query_array, %args) = @_;
     my $encoding = delete $args{encoding} || 'utf-8';
+    my $raw_query_array = delete $args{raw_query};
     die "Unhandled arguments: " . join(" ", %args) if %args;
 
     require Encode;
@@ -420,11 +421,13 @@ sub uri_with_query {
 	push @query_array, Encode::encode($encoding, $val);
     }
 
+    my $query_string;
     if (eval { require URI; 1 }) {
 	my $u = URI->new("", "http");
 	$u->query_form(\@query_array);
-	(my $q = $u->query) =~ s{\+}{%20}g; # friendly for javascript's decodeURIComponent
-	$uri . '?' . $q;
+	$query_string = $u->query;
+	if (!defined $query_string) { $query_string = '' }
+	$query_string =~ s{\+}{%20}g; # friendly for javascript's decodeURIComponent
     } else {
 	require CGI;
 	CGI->import('-oldstyle_urls'); # global change!
@@ -432,7 +435,21 @@ sub uri_with_query {
 	for(my $i=0; $i<$#query_array; $i+=2) {
 	    $q->param($query_array[$i], $query_array[$i+1]);
 	}
-	$uri . '?' . $q->query_string;
+	$query_string = $q->query_string;
+    }
+
+    if ($raw_query_array) {
+	my $sep = $query_string eq '' ? '' : '&';
+	for(my $i=0; $i<$#$raw_query_array; $i+=2) {
+	    $query_string .= $sep . $raw_query_array->[$i] . '=' . $raw_query_array->[$i+1];
+	    if ($i == 0) { $sep = '&' }
+	}
+    }
+
+    if ($query_string ne '') {
+	$uri . '?' . $query_string;
+    } else {
+	$uri;
     }
 }
 

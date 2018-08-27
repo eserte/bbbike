@@ -28,6 +28,9 @@ plan 'no_plan';
 
 use BBBikeUtil qw(bbbike_root);
 
+my @warnings;
+$SIG{__WARN__} = sub { push @warnings, @_ };
+
 my $bbbike_root = bbbike_root();
 ok(-d $bbbike_root, 'Got a bbbike root directory');
 is($bbbike_root, realpath(dirname(dirname(realpath($0)))), "Expected value for bbbike root (t is subdirectory)");
@@ -181,6 +184,11 @@ for my $try_mod ('URI', 'CGI') {
 	}
 
 	{
+	    my $u = BBBikeUtil::uri_with_query("http://example.com", []);
+	    is $u, 'http://example.com', "uri_with_query without param, impl $try_mod";
+	}
+
+	{
 	    my $u = BBBikeUtil::uri_with_query("http://example.com", [foo=>"bar"]);
 	    is $u, 'http://example.com?foo=bar', "uri_with_query, impl $try_mod";
 	}
@@ -215,10 +223,23 @@ for my $try_mod ('URI', 'CGI') {
 	    is $u, 'https://example.com?dangerous=%3C%26%3E', "uri_with_query, special html chars, impl $try_mod";
 	}
 
+	{
+	    my $u = BBBikeUtil::uri_with_query("http://example.com", [], raw_query => [baz=>'?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~']);
+	    is $u, 'http://example.com?baz=?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~', "uri_with_query only with raw_query, impl $try_mod";
+	}
+
+	{
+	    my $u = BBBikeUtil::uri_with_query("http://example.com", [foo=>"bar"], raw_query => [baz=>'blubber']);
+	    is $u, 'http://example.com?foo=bar&baz=blubber', "uri_with_query, with normal query and raw_query, impl $try_mod";
+	}
+
+
 	if ($try_mod eq 'CGI') {
 	    eval 'no Test::Without::Module qw(URI)'; die $@ if $@;
 	}
     }
 }
+
+is_deeply \@warnings, [], 'no warnings';
 
 __END__
