@@ -1832,7 +1832,9 @@ sub current_route_in_bbbike_cgi {
     require BBBikeUtil;
     my $url = BBBikeUtil::uri_with_query
 	("http://localhost/bbbike/cgi/bbbike.cgi",
-	 [ gple => $gple, @params ]);
+	 # [ @params ], raw_query => [ gple => $gple ], # minimal, but may cause problems in start_browser call
+	 [ gple => $gple, @params ],
+	);
     main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
     require WWWBrowser;
     WWWBrowser::start_browser($url);
