@@ -87,7 +87,7 @@ Sinsheimer Weg: Betonstraﬂe	Q0 13774,8849 13837,8932
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Beginn der Bauarbeiten Ende August 2018, Ende 2019)
 #: by: https://www.aktion-kms.de/projekte/umbau-donaustrasse/
 #: by: https://www.aktion-kms.de/assets/2017/01/Donaustra%C3%9Fe_LP_Lph3-LP_01.pdf
-#: last_checked: 2018-08-21 vvv
+#: last_checked: 2018-08-28 vvv
 #: next_check: 2018-08-31 vvv
 Donaustr.: schlechtes bis m‰ﬂiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729 12549,8616 12649,8535
 #: XXX hier wird vermutlich auch die Einbahnstraﬂenregelung f¸r Radfahrer aufgehoben
@@ -95,7 +95,7 @@ Pannierstr.: Kopfsteinpflaster	Q2 12242,8972 12202,8895
 #: next_check ^^^
 #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
-#: last_checked: 2018-08-24
+#: last_checked: 2018-08-28
 #: next_check: 2019-03-01
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -642,8 +642,8 @@ Brixener Str.: Kopfsteinpflaster	Q2 10507,17400 10502,17419 10466,17464
 #: XXX wird nach den Bauarbeiten die Qualit‰t besser sein?
 #: source_id: 2147342929
 #: priority: #B
-#: last_checked: 2018-08-26
-#: next_check: 2018-08-31
+#: last_checked: 2018-08-29
+#: check_frequency: 14d
 Helmerdingstr.: Kopfsteinpflaster	Q2 14442,11101 14468,11203
 # 
 # REMOVED (Asphalt ist kaum von Vorteil hier) --- Helmerdingstr.: Asphalt/Kopfsteinpflaster	Q2+; 14468,11203 14442,11101
@@ -2075,7 +2075,7 @@ Eiselenweg - Uferweg: etwas sandig	Q2 21447,5414 21481,5429
 #: XXX "Die Herstellung des Uferweges ist zum 31.12.2016 in Planung."
 #: XXX Maﬂnahme Kˆ.13
 #: XXX mittlerweile gibt's hier Bauarbeiten
-#: last_checked: 2018-07-31 (Umleitungsausschilderung existiert)
+#: last_checked: 2018-08-29 (Umleitungsausschilderung existiert)
 # REMOVED --- #: check_frequency: 90d
 (Uferweg, Mentzelpark): Schotterweg	Q1- 21481,5429 21512,5404 21600,5221 21696,5053
 (Uferweg, Mentzelpark): Asphalt	Q0 21696,5053 21740,5004 21761,4979
@@ -2375,9 +2375,12 @@ Altvaterstr.: Beton	Q0 -3223,3034 -3225,2902
 (Am Britzer Verbindungskanal): feiner Schotter, OK	Q1 15358,6022 15166,6019
 # 
 #: by: https://www.tagesspiegel.de/berlin/berliner-denkmal-millionen-fuer-den-mauerradweg/22666984.html (Bauarbeiten, 2018 oder 2019)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.734754.php
+#: XXX danach wird wohl die Qualit‰t wieder Q0 sein
+#: priority: #B
 #: last_checked: 2018-05-26
-#: check_frequency: 120d
-(Am Britzer Verbindungskanal): Asphalt, einige Wurzelhebungen, ein kurzer Abschnitt mit Schotter	Q0- 15143,5936 15119,5978 14342,5990 14298,6009 14234,6010 14178,5980 14164,5936
+#: next_check: 2018-09-28
+(Am Britzer Verbindungskanal): Asphalt, einige Wurzelhebungen, ein kurzer Abschnitt mit Schotter	Q1+ 15143,5936 15119,5978 14342,5990 14298,6009 14234,6010 14178,5980 14164,5936
 # 
 #: note: im Gegensatz zum ADFC-Karteneintrag: "m‰ﬂig geeignet"
 Gerosteig: Asphalt	Q0 18990,584 19086,562 19184,540 19281,518 19377,496 19477,472
@@ -5288,7 +5291,7 @@ Trimbacher Str.: Asphalt	Q0 11798,1212 11841,1291 11954,1407
 Dessenheimer Weg: Asphalt	Q0 11841,1291 11778,1338 11756,1381
 Zum kleinen Pfuhl: schlechtes Kopfsteinpflaster, Gehweg asphaltiert	Q2- 12127,1564 12162,1651
 Leonberger Ring: Asphalt	Q0 12286,2065 12274,2098 12348,2265 12384,2274 12561,2192 12582,2122
-(Katzengrabensteg - Bellevuepark): wassergebundene Decke	Q1 22632,4958 22726,5328
+(Katzengrabensteg - Bellevuepark): wassergebundene Decke	Q1- 22632,4958 22726,5328
 Katzengrabensteg: Holzbohlen	Q1 22581,4932 22484,4868
 #: note: public imagery vvv
 Straﬂe 89 (Niederschˆnhausen): unbefestigte sandige Straﬂe	Q2 8606,20063 8703,19917
@@ -10195,6 +10198,7 @@ Waldkiefernring: Asphalt	Q0 21855,2392 21754,2329 21782,2283 21885,2343
 F‰henweg: Asphalt	Q0 21869,2367 21791,2323
 # 
 #: XXX Asphaltarbeiten sind geplant
+#: by: https://www.berliner-woche.de/gruenau/c-bauen/neuer-gehweg-durch-den-wald_a178025
 #: priority: #A
 #: next_check: 2018-09-18
 Sportpromenade: Asphalt mit einigen Sch‰den und Wurzelhebungen	Q1- 25646,-209 25574,-38 25537,167 25461,254 25172,345 24827,354 24743,370 24666,436
@@ -16996,8 +17000,12 @@ Engelmannweg: guter Beton	Q0 4558,18342 4531,18217
 Engelmannweg: gut befahrbares Kopfsteinpflaster	Q1 4531,18217 4492,18013 4462,17892 4429,17763
 #: by: ^^^
 # 
-#: by: Erik Boﬂ:
-Ahornallee (Friedrichshagen): schlechtes Kopfsteinpflaster	Q3 25121,5795 25123,5767 25111,5464 25121,5286
+#: by: Erik Boﬂ: vvv
+#: corrected_by: srt
+Ahornallee (Friedrichshagen): Asphalt	Q0 25121,5795 25123,5767
+#: confirmed_by: srt
+Ahornallee (Friedrichshagen): schlechtes Kopfsteinpflaster	Q3 25123,5767 25111,5464 25121,5286
+#: by ^^^
 # 
 #: by: Hollie (freak...): vvv
 #: note: laut ADFC-Karte/neu gut geeigntet:

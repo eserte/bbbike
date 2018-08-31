@@ -158,6 +158,7 @@ Pannierstr.	1 12202,8895 12242,8972
 # REMOVED (nicht mehr Einbahnstraße) --- Dönhoffstr.	1 18726,8633 18609,8717 18514,8773 18451,8823 18375,8874 18296,8920 18221,8978 18161,9029 18136,9072
 Bersarinplatz	1 13730,12535 13698,12544 13675,12581 13681,12624 13695,12643 13747,12642 13767,12626 13761,12578 13730,12535
 Petersburger Platz	1 13470,12990 13559,12779
+# 
 #: add_fragezeichen: Ist die Einbahnstraße mittlerweile für Radfahrer geöffnet oder wird das in Zukunft passieren?
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/fahrratprotokoll_11102016.pdf
@@ -165,9 +166,10 @@ Petersburger Platz	1 13470,12990 13559,12779
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
 #: osm_watch: way id="4490214" version="10"
-#: last_checked: 2018-04-27
+#: last_checked: 2018-08-30
 #: check_frequency: 90d
 Dernburgstr.	1 2493,10675 2378,10677 2333,10710 2254,11051
+# 
 # REMOVED (aufgehoben für alle) --- #: XXX wird die Einbahnstraßenregelung für Radfahrer zumindest im östlichen Abschnitt wegen der Radroute aufgehoben? --- #: osm_watch: way id="42826410" version="5" --- Schuckertdamm	1 1344,14978 1465,14963
 Schuckertdamm	1 741,14827 1022,14898 1056,14906 1112,14918 1200,14943 1344,14978
 Am Kleinen Wannsee	1 -5499,1349 -5488,1289 -5541,1214 -5749,1146
@@ -1126,7 +1128,7 @@ DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615
 #: note implizite Fahrtrichtung
 Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
 #: XXX laut Maßnahme Gr.8 soll die Einbahnstraße hier aufgehoben werden (nur Prio=mittel, allerdings relativ einfach (?) zu realisieren)
-#: last_checked: 2018-07-21 (mapillary)
+#: last_checked: 2018-08-29
 #: check_frequency: 90d
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 #: note implizit?
@@ -1504,11 +1506,11 @@ Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: add_fragezeichen: Ist die Einbahnstraße mittlerweile für Radfahrer offen? vvv
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf vvv
 #: osm_watch: way id="183614191" version="5"
-#: last_checked: 2018-08-04 (mapillary)
+#: last_checked: 2018-08-30
 #: check_frequency: 100d
 Ahornallee	1s:q3 1589,11483 1574,11379
 #: osm_watch: way id="24852084" version="9"
-#: last_checked: 2018-04-27
+#: last_checked: 2018-08-30
 #: check_frequency: 100d
 Lindenallee	1s:q3 1429,11528 1403,11428
 #: by: ^^^
@@ -1536,10 +1538,11 @@ Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
 Ritterstr.	1 -3369,14532 -3316,14504
 Neue Bahnhofstr.	1s:q3 14908,11231 14918,11249
 #: XXX evtl. ist die Einbahnstraßenregelung temporär
+#: add_fragezeichen: gibt es die Einbahnstraßenregelung in der Soorstr. noch?
 #: osm_watch: way id="4708164" version="15"
 #: last_checked: 2018-04-27
 #: check_frequency: 90d
-Soorstr.	1s:q3 1861,11284 1884,11126 1865,11082
+Soorstr.	1s:q3 1861,11284 1884,11126
 #
 ####################################################################
 #
@@ -2978,8 +2981,8 @@ am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_56_6505_6588_online.pdf (Straßenlandeinziehung)
 #: by: https://www.fanny-zobel-strasse.de/
 #: osm_watch: way id="86812767" version="5"
-#: last_checked: 2018-06-16
-#: check_frequency: 60d
+#: last_checked: 2018-08-28
+#: check_frequency: 90d
 Fanny-Zobel-Str.: wegen Bauarbeiten gesperrt, vielleicht sogar dauerhaft eingezogen	2::inwork 13975,10187 14049,10164
 # 
 # REMOVED --- #: source_id: 2147342570 --- #: last_checked: 2018-06-05 --- # REMOVED ---#: check_frequency: 3d --- #: next_check: 2018-06-15 --- #: valid: -20180615 --- #: priority: #A --- Koppenstr.: Bauarbeiten, Fahrbahn Richtung Rüdersdorfer Str. gesperrt	1s:q2:inwork 12573,12227 12596,12472 --- 
@@ -3000,7 +3003,7 @@ Hermineweg: Bauarbeiten, gesperrt	2::inwork 24831,10966 24906,10965
 #: check_frequency: 60d
 Karlinekenweg: Bauarbeiten, gesperrt	2::inwork 11359,20297 11405,20196
 # 
-#: last_checked: 2018-08-21
+#: last_checked: 2018-08-30
 #: check_frequency: 360d
 Neue Nationalgalerie: Bauarbeiten, Parkplatz gesperrt	2::inwork 7874,11293 7828,11133
 # 
@@ -3088,9 +3091,8 @@ Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
 #: by: http://www.berliner-woche.de/rummelsburg/bauen/neues-quartier-im-lichtenhain-erste-einblicke-fuer-anwohner-und-erwerber-d133845.html
 #: osm_watch: way id="609943358" version="3"
 #: XXX vermutlich Sackgasse
-#: last_checked: 2018-07-27
-# REMOVED --- #: check_frequency: 60d
-#: next_check: 2018-08-22
+#: last_checked: 2018-08-29
+#: check_frequency: 30d
 Im Lichtenhain: neue Straße, zurzeit Bauarbeiten; Qualität, genaue Lage?	2::inwork 16497,10685 16462,10571
 # 
 # REMOVED --- #: next_check_id: LICHTBURGRING-2017 vvv --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_55_6321_6504_online.pdf (Grundstücksnummerierungen) --- #: XXX wie wird die endgültige Fahrbahnbeschaffenheit sein? Asphalt? vvv --- #: osm_watch: way id="437684188" version="4" --- #: last_checked: 2017-11-17 vvv --- #: next_check: 2018-01-13 vvv --- Lichtburgring: Baustelle, Betreten verboten	2::inwork 10004,15636 9933,15815 --- Bärbel-Bohley-Ring: Baustelle, Betreten verboten	2::inwork 9933,15815 9917,15813 9744,15793
@@ -3126,7 +3128,7 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 # 
 #: XXX wird nach den Bauarbeiten hier noch ein Weg existieren? Wird die nördliche Anbindung mit Treppe oder Rampe realisiert?
 #: XXX man kann aber passieren (z.B. mittags am 2018-07-27)
-#: last_checked: 2018-07-27
+#: last_checked: 2018-08-29
 #: check_frequency: 90d
 (entlang der Erpe): Bauarbeiten der DB	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
 # 

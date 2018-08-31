@@ -300,7 +300,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 	RW2;RW2 4512,5199 4432,5160 4343,5112
 #: XXX Radwege sollen saniert werden oder es entstehen sogar Radstreifen (Umsetzung 2018) vvv
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
-#: last_checked: 2018-08-27 vvv
+#: last_checked: 2018-08-28 vvv
 #: next_check: 2018-12-31 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
@@ -513,9 +513,11 @@ asphaltiert	RW2; 14020,12261 13885,12279 13785,12292
 	RW2;RW4 11976,12595 11678,12727
 	RW3;RW3 11678,12727 11635,12745
 	RW2;RW3 15117,12106 15361,12071
-	RW1;RW2 10933,14122 10938,14159 10910,14488 10893,14705
-	RW1;RW2 10893,14705 10885,14914 10884,14952
-	RW2;RW2 10884,14952 10881,15047
+	RW1;RW2 10933,14122 10938,14159 10910,14488
+neu asphaltiert	RW1; 10910,14488 10893,14705 10885,14914 10884,14952
+	RW2; 10884,14952 10885,14914 10893,14705 10910,14488
+neu asphaltiert	RW2; 10884,14952 10881,15047
+	RW2; 10881,15047 10884,14952
 die ersten Meter mit benutzungspflichtiger Radspur	RW1; 10881,15047 10883,15129
 	RW1; 10883,15129 10886,15251
 	RW1; 10886,15251 10883,15129
@@ -1163,7 +1165,7 @@ neu asphaltiert	RW1; 17769,7465 17681,7589
 #: source_id: LMS-BR_r_LMS-BR_98104
 #: source_id: 2147342856
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/markierung-auf-der-rummelsburger-landstrasse-aufgebracht_a170936
-#: last_checked: 2018-08-12 vvv
+#: last_checked: 2018-08-31 vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: next_check: 2018-12-31 vvv
 #: note: hier existiert auch ein neu asphaltierter Radweg, aber Radfahrer werden zum geschützten Radweg geführt
@@ -1192,7 +1194,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (vermutlich nicht)
-#: last_checked: 2018-08-21
+#: last_checked: 2018-08-31
 #: check_frequency: 90d
 	RW8;RW2 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
@@ -2091,7 +2093,9 @@ Verbundsteinpflaster	RW1;RW1 324,2034 457,2251 561,2395
 Verbundsteinpflaster	RW1; 561,2395 604,2494 629,2545 709,2592 749,2616
 	RW1; 749,2616 709,2592
 	RW1;RW1 803,2435 900,2469 960,2534 1008,2568 1121,2583 1238,2599 1324,2603 1406,2607 1426,2607 1524,2611 1603,2615 1711,2620 1750,2636 1885,2697 2000,2748 2123,2803 2290,2864
-	RW1;RW1 2308,3862 2287,3702 2266,3580 2253,3505 2203,3213 2198,3169 2152,2912 2146,2878 2123,2803
+	RW1;RW1 2308,3862 2287,3702 2266,3580 2253,3505
+	RW4?;RW1 2253,3505 2203,3213
+	RW1;RW1 2203,3213 2198,3169 2152,2912 2146,2878 2123,2803
 	RW1; 2123,2803 2076,2626
 Radweg fängt 50m vor der Ampel an	RW0; 2076,2626 2123,2803
 	RW1;RW1 2076,2626 2000,2748 1888,2925
@@ -3613,12 +3617,7 @@ gemeinsamer Rad- und Gehweg	RW1;RW2 23435,4179 23422,4094 23368,3894
 # REMOVED (keine Benutzungspflicht) --- #: XXX Wurde die Benutzungspflicht aufgehoben? --- #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/verwaltungbzbm/mdv_vii_10_reduziert.pdf?start&ts=1342111378&file=mdv_vii_10_reduziert.pdf (Aufhebung? Seite 41-42)
 	RW1;RW1 21324,3691 21363,3699
 relativ enger Verbundsteinpflasterradweg	RW1; 21363,3699 21414,3757 21489,3841 21496,3849 21679,4059
-#: XXX haben die Bauarbeiten etwas mit dem Radweg (Verbreiterung? Radspuren) zu tun?
-#: by: https://www.berliner-woche.de/koepenick/c-verkehr/glienicker-strasse-bleibt-dicht_a175130 (Bauarbeiten der Wasserbetriebe)
-#: source_id: 2147342854
-#: priority: #C
-#: last_checked: 2018-08-12
-#: next_check: 2018-08-17
+# REMOVED (nein) --- #: XXX haben die Bauarbeiten etwas mit dem Radweg (Verbreiterung? Radspuren) zu tun? --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/glienicker-strasse-bleibt-dicht_a175130 (Bauarbeiten der Wasserbetriebe) --- #: source_id: 2147342854 --- #: priority: #C --- #: last_checked: 2018-08-12 --- #: next_check: 2018-08-17
 relativ enger Verbundsteinpflasterradweg, die letzten 40 Meter sind benutzungspflichtig	RW1; 21679,4059 21829,4212
 	RW1; 21829,4212 21679,4059 21496,3849 21489,3841
 neu asphaltiert	RW1; 21489,3841 21414,3757 21363,3699
@@ -4103,7 +4102,7 @@ asphaltiert, die letzten Meter werden auf der Fahrbahn geführt	RW1; 14805,10518 
 	RW4;RW4 9468,19599 9404,19691
 	RW3;RW3 9404,19691 9349,19782
 asphaltiert	RW2; 24049,5380 23942,5338
-	RW2; 23942,5338 24049,5380
+	RW4; 23942,5338 24049,5380
 benutzungspflichtiger Radweg auf den letzten Metern	RW0; 17962,6674 17991,6431
 #: by: rj
 	RW1;RW1 5426,16539 5533,16662
@@ -5176,7 +5175,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW6;RW6 17310,15186 17317,15059
 	RW6;RW6 17227,15054 17262,15056 17317,15059 17345,15061
 #: XXX wird hier noch ein Radwegschild aufgestellt?
-#: last_checked: 2018-08-26
+#: last_checked: 2018-08-28
 	RW3; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990
 	RW3; 12817,14159 12722,14232 12616,14315 12522,14385
 	RW3; 12522,14385 12616,14315 12722,14232
@@ -5198,3 +5197,4 @@ Gehweg für Radfahrer frei	RW1; -264,13009 -309,13268
 	RW6;RW6 10234,15490 10456,15561
 	RW1; 4545,22312 4604,22332 4658,22350
 teilweise Radspuren, teilweise asphaltierte Straßenbahncaps	RW1;RW1 19681,5924 19795,5935
+	RW3;RW3 25010,4807 25171,4757 25228,4745 25248,4752 25369,4790 25434,4825 25477,4832 25519,4830

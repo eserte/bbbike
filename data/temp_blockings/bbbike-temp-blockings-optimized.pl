@@ -134,7 +134,32 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	2 8055,12186 8089,12190 8214,12205
+	2 8214,12205 8303,12216 8344,12221 8538,12245
+	2 8546,12279 8538,12245
+	2 8600,12165 8538,12245
+	2 8538,12245 8592,12252
+	2 8546,12279 8570,12302 8573,12325 8540,12420 
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+',
+         'from' => 1538258400,
+         'id' => 127,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              29,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt (01.10.2018 bis 03.10.2018)',
+         'type' => 'gesperrt',
+         'until' => 1538603999
+       },
        undef,
        undef,
        undef,
@@ -2464,7 +2489,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im August von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im September von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3933,6 +3958,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=29479
 #: by: mapillary (Gehweg für Radfahrer frei)
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/kreuzungsumbau-bis-november_a172982
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729460.php
 #: source_id: 2147342671
 #: source_id: 2147342861
 #: source_id: 2147342860
@@ -3963,7 +3989,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-08-08
+#: last_checked: 2018-08-28
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 ',
@@ -4094,16 +4120,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: last_checked: 2018-07-27 vvv
+         'data' => '#: last_checked: 2018-08-29 vvv
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-	q4::inwork; 24320,5621 24362,5635 24387,5672 24443,5765 24629,5831 24798,5891
+	q4::inwork; 24629,5831 24443,5765 24387,5672 24362,5635 24320,5621
+# REMOVED (fertig) ---	q4::inwork; 24629,5831 24798,5891
 # REMOVED (vermutlich fertig) ---	q3::inwork 24798,5891 24977,5880
 #: add_fragezeichen ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
          'id' => 2942,
-         'text' => 'Stillerzeile: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen',
+         'text' => 'Stillerzeile: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Osten',
          'type' => 'handicap',
          'until' => undef
        },
@@ -4152,7 +4179,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: MENTZELPARK-2018
-#: last_checked: 2018-07-27 (Umleitungsausschilderung existiert)
+#: last_checked: 2018-08-29 (Umleitungsausschilderung existiert)
 	2::inwork 21696,5053 21600,5221 21512,5404 21481,5429
 ',
          'from' => undef,
@@ -4193,6 +4220,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: laut fritz bis 14.09.2018
+#: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/warten-auf-die-strassenbahn_a177965 (2018-09-17, danach noch weitere Einschränkungen)
 #: XXX_prog: eigentlich q3+
 	q3::inwork; 15516,12838 15367,12815 15357,12813 15233,12829 15098,12849 15074,12850 15010,12855 14940,12843 14906,12837 14836,12826 14750,12812 14661,12798 14556,12781 14435,12761 14355,12752 14096,12827
 ',
@@ -4201,7 +4229,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => '2147342574',
          'text' => 'Scheffelstr. und Eldenaer Str.: Bauarbeiten Richtung Ebertystr. zwischen Möllendorffstr. und Liebigstr., Ausweichen auf engen Gehweg erlaubt, einige Bordsteine, bis Mitte September 2018',
          'type' => 'handicap',
-         'until' => 1536940800
+         'until' => 1537200000
        },
        undef,
        undef,
@@ -4269,7 +4297,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=42743 (sogar bis 2018-09-17)
 #: source_id: 2147342618
 #: priority: #A
-#: last_checked: 2018-08-26
+#: last_checked: 2018-08-28
 # REMOVED --- #: next_check: 2018-07-13
 	q4::inwork 13767,12626 13786,12636 13863,12677 13911,12692
 ',
@@ -4283,14 +4311,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: XXX eventuell hängen die Bauarbeiten mit den Bauarbeiten in der Eldenaer Str. zusammen
 #: XXX wird danach komplett asphaltiert sein?
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=42743 (sogar bis 2018-09-17)
-#: last_checked: 2018-08-26
+#: last_checked: 2018-08-31
 	q4::inwork; 14096,12827 14058,12709 13911,12692
 ',
          'from' => undef,
          'id' => 2969,
          'text' => 'Liebigstr. und Weidenweg: Bauarbeiten, Einbahnstraßenregelung',
          'type' => 'handicap',
-         'until' => 1536940800
+         'until' => 1537200000
        },
        undef,
        undef,
@@ -4371,16 +4399,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: source_id: 2147343043
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.722387.php (nur Kreuzungsbereich betroffen)
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/finckensteinallee-gesperrt_a171782
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729460.php
 	q4::inwork 2737,2866 2625,2850
-# REMOVED ---	q4::inwork 2625,2850 2570,2844
+	q4::inwork 2625,2850 2570,2844
 # REMOVED ---	q4::inwork 2570,2844 2290,2864
 ',
          'from' => 1530741600,
          'id' => 2984,
          'source_id' => '2147342925',
-         'text' => 'Finckensteinallee: zwischen Carstennstr. und Kommandantenstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis Anfang Oktober 2018 ',
+         'text' => 'Finckensteinallee: zwischen Carstennstr. und Kommandantenstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis November 2018',
          'type' => 'handicap',
-         'until' => 1538755200
+         'until' => 1543597200
        },
        undef,
        {
@@ -4422,6 +4451,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX laut VMZ nur bis Ende Oktober 2018, laut BA Steglitz bis Dezember 2018
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.725875.php
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/weitere-sperrungen-rund-um-die-feuerbachstrasse_a174881
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729490.php
 #: source_id: 2147342919
 #: source_id: 2147343007
 #: last_checked: 2018-08-15
@@ -4527,7 +4557,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX bis wann sind hier Bauarbeiten?
-#: last_checked: 2018-08-21
+#: last_checked: 2018-08-30
 #: check_frequency: 21d
 	q4::inwork; 4502,11740 4574,11587
 ',
@@ -4538,7 +4568,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '	2::inwork 25646,-209 25574,-38 25537,167 25461,254 25172,345 24827,354 24743,370 24666,436 24571,514 24197,585
+         'data' => '#: by: https://www.berliner-woche.de/gruenau/c-bauen/neuer-gehweg-durch-den-wald_a178025 (hier: bis Monatsende September 2018)
+	2::inwork 25646,-209 25574,-38 25537,167 25461,254 25172,345 24827,354 24743,370 24666,436 24571,514 24197,585
 ',
          'from' => 1536530400,
          'id' => 3003,
@@ -4578,6 +4609,40 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Hessische Str.: Richtung Torstr. gesperrt, bis 6. September 2018',
          'type' => 'handicap',
          'until' => 1536271199
+       },
+       {
+         'data' => '#: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
+#: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
+	q4::inwork; 18809,9133 18790,9018 18770,8898 18737,8686 18733,8650 18733,8633
+',
+         'from' => undef,
+         'id' => 3007,
+         'source_id' => '2147342174',
+         'text' => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn für Radfahrer explizit verboten',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '	2::inwork 15143,5936 15119,5978 14342,5990 14298,6009 14234,6010 14178,5980 14164,5936 14308,5627
+',
+         'from' => 1537740000,
+         'id' => 3008,
+         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.734754.php',
+         'text' => 'Weg am Britzer Verbindungskanal: Asphaltbauarbeiten, Weg für Radfahrer und Fußgänger nicht passierbar, vom 25. bis 27.09.2018',
+         'type' => 'gesperrt',
+         'until' => 1538085600
+       },
+       {
+         'accept_multi_feature_distance' => 4000,
+         'data' => '	2::temp -4001,2858 -3768,3069 -3680,3160 -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3277,8728 -3073,9061 -3140,9294 -3196,9406 -3347,9541 -3431,9665 -3412,9755 -3178,9953 -3025,10116 -2774,10345
+	2::temp -4001,2858 -4551,3201 -4586,3753 -4650,3902 -4901,4083
+	2::temp 1457,10168 1398,10201 1247,10270 1127,10403 1049,10568 998,10723 928,10948 787,11121 711,11199 704,11273
+',
+         'from' => 1535691600,
+         'id' => 3009,
+         'text' => 'BerlinMan-Triathlon: Sperrung der Havelchaussee und Kronprinzessinenweg, am Samstag auch Wannseebadweg und am Sonntag auch Jafféstr., 1.9.2018 und 2.9.2018 zwischen 7:00 und 13:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1535886000
        }
      
 );

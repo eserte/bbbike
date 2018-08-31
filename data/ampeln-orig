@@ -3087,7 +3087,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 	X -12653,-1723
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
 #: next_check_id: KIEFHOLZ-2015 vvv
-#: last_checked: 2018-08-21 vvv
+#: last_checked: 2018-08-31 vvv
 #: check_frequency: 90d vvv
 	X::inwork 14151,8967
 	X::inwork 14363,8738
@@ -3104,6 +3104,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	F 25779,-9534
 	B 25627,-5177
 	X 26466,-10409
 #: note: Anforderungsampel
@@ -3581,7 +3582,7 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	X 38008,48114
 	X 38240,47851
 	X 38504,47638
-	X 26177,-11648
+	X 26178,-11660
 	X 25912,-11956
 	F 26300,-11864
 	F 26085,-5839

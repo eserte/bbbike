@@ -1035,11 +1035,11 @@ EOF
 	q4 49039,44131 49691,43812
 EOF
      },
-     { from  => $isodate2epoch->("2017-09-26 18:00:00"), # 1 Tag Vorlauf # 1096578452, # 2004-09-30 23:07
-       until => $isodate2epoch->("2017-10-05 23:59:59"), # 1096862400, # 2004-10-04 06:00
+     { from  => $isodate2epoch->("2018-09-30 00:00:00"), # 1 Tag Vorlauf # 1096578452, # 2004-09-30 23:07
+       until => $isodate2epoch->("2018-10-03 23:59:59"), # 1096862400, # 2004-10-04 06:00
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 9]],
-       text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt (bis 05.10.2017)',
+       text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt (01.10.2018 bis 03.10.2018)',
        type  => 'gesperrt',
        data  => <<EOF,
 	2 8055,12186 8089,12190 8214,12205
@@ -9027,7 +9027,7 @@ EOF
        text  => 'L 030 Puschkinstr. OL Königs Wusterhausen Open-Air Konzert Vollsperrung 07.07.2007-08.07.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 25859,-11559 25939,-11559 26177,-11648
+	2::temp 25859,-11559 25939,-11559 26178,-11660
 EOF
      },
      { from  => 1184450400, # 2007-07-15 00:00
@@ -13982,7 +13982,7 @@ EOF
        text  => 'L 030 Gerichtsstr. (Puschkinstr.) OL Königs Wusterhausen, zw. Brückenstr. und Kirchplatz Kanal- und Straßenbau halbseitig gesperrt; Einbahnstraße 28.04.2009-28.04.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 25859,-11559 25939,-11559 26177,-11648
+	q4::inwork 25859,-11559 25939,-11559 26178,-11660
 EOF
      },
      { from  => 1240783200, # 2009-04-27 00:00
@@ -16061,7 +16061,7 @@ EOF
        text  => 'L 030 Gerichtsstr. OL Königs Wusterhausen, zw. Schloßplatz u. Brückenstr. Schlossfest Vollsperrung 05.09.2009-05.09.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::temp 25859,-11559 25939,-11559 26177,-11648
+	q4::temp 25859,-11559 25939,-11559 26178,-11660
 EOF
      },
      { from  => 1252188000, # 2009-09-06 00:00
@@ -22935,7 +22935,7 @@ EOF
        type  => 'gesperrt',
        source_id => '146100350',
        data  => <<EOF,
-	2::inwork 26395,-11699 26302,-11712
+	2::inwork 26395,-11699 26327,-11708 26300,-11727
 EOF
      },
      { from  => undef, # 
@@ -26477,6 +26477,7 @@ EOF
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=29479
 #: by: mapillary (Gehweg für Radfahrer frei)
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/kreuzungsumbau-bis-november_a172982
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729460.php
 #: source_id: 2147342671
 #: source_id: 2147342861
 #: source_id: 2147342860
@@ -26574,7 +26575,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-08-08
+#: last_checked: 2018-08-28
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
@@ -26991,12 +26992,13 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Stillerzeile: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen',
+       text  => 'Stillerzeile: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Osten',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2018-07-27 vvv
+#: last_checked: 2018-08-29 vvv
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-	q4::inwork; 24320,5621 24362,5635 24387,5672 24443,5765 24629,5831 24798,5891
+	q4::inwork; 24629,5831 24443,5765 24387,5672 24362,5635 24320,5621
+# REMOVED (fertig) ---	q4::inwork; 24629,5831 24798,5891
 # REMOVED (vermutlich fertig) ---	q3::inwork 24798,5891 24977,5880
 #: add_fragezeichen ^^^
 #: last_checked ^^^
@@ -27133,7 +27135,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: MENTZELPARK-2018
-#: last_checked: 2018-07-27 (Umleitungsausschilderung existiert)
+#: last_checked: 2018-08-29 (Umleitungsausschilderung existiert)
 	2::inwork 21696,5053 21600,5221 21512,5404 21481,5429
 EOF
      },
@@ -27167,12 +27169,13 @@ EOF
 EOF
      },
      { from  => 1526323594, # 2018-05-14 20:46
-       until => $isodate2epoch->("2018-09-14 18:00:00"), # 1537048799, # 2018-09-15 23:59
+       until => $isodate2epoch->("2018-09-17 18:00:00"), # 1537048799, # 2018-09-15 23:59
        text  => 'Scheffelstr. und Eldenaer Str.: Bauarbeiten Richtung Ebertystr. zwischen Möllendorffstr. und Liebigstr., Ausweichen auf engen Gehweg erlaubt, einige Bordsteine, bis Mitte September 2018',
        type  => 'handicap',
        source_id => '2147342574',
        data  => <<EOF,
 #: note: laut fritz bis 14.09.2018
+#: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/warten-auf-die-strassenbahn_a177965 (2018-09-17, danach noch weitere Einschränkungen)
 #: XXX_prog: eigentlich q3+
 	q3::inwork; 15516,12838 15367,12815 15357,12813 15233,12829 15098,12849 15074,12850 15010,12855 14940,12843 14906,12837 14836,12826 14750,12812 14661,12798 14556,12781 14435,12761 14355,12752 14096,12827
 EOF
@@ -27324,20 +27327,20 @@ EOF
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=42743 (sogar bis 2018-09-17)
 #: source_id: 2147342618
 #: priority: #A
-#: last_checked: 2018-08-26
+#: last_checked: 2018-08-28
 # REMOVED --- #: next_check: 2018-07-13
 	q4::inwork 13767,12626 13786,12636 13863,12677 13911,12692
 EOF
      },
      { from  => undef,
-       until => $isodate2epoch->("2018-09-14 18:00:00"),
+       until => $isodate2epoch->("2018-09-17 18:00:00"),
        text  => 'Liebigstr. und Weidenweg: Bauarbeiten, Einbahnstraßenregelung',
        type  => 'handicap',
        data  => <<EOF,
 #: XXX eventuell hängen die Bauarbeiten mit den Bauarbeiten in der Eldenaer Str. zusammen
 #: XXX wird danach komplett asphaltiert sein?
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=42743 (sogar bis 2018-09-17)
-#: last_checked: 2018-08-26
+#: last_checked: 2018-08-31
 	q4::inwork; 14096,12827 14058,12709 13911,12692
 EOF
      },
@@ -27490,16 +27493,17 @@ EOF
 EOF
      },
      { from  => 1530741600, # 2018-07-05 00:00
-       until => $isodate2epoch->("2018-10-05 18:00:00"), # 1543618799, # 2018-11-30 23:59
-       text  => 'Finckensteinallee: zwischen Carstennstr. und Kommandantenstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis Anfang Oktober 2018 ',
+       until => $isodate2epoch->("2018-11-30 18:00:00"), # 1543618799, # 2018-11-30 23:59
+       text  => 'Finckensteinallee: zwischen Carstennstr. und Kommandantenstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis November 2018',
        type  => 'handicap',
        source_id => '2147342925',
        data  => <<EOF,
 #: source_id: 2147343043
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.722387.php (nur Kreuzungsbereich betroffen)
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/finckensteinallee-gesperrt_a171782
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729460.php
 	q4::inwork 2737,2866 2625,2850
-# REMOVED ---	q4::inwork 2625,2850 2570,2844
+	q4::inwork 2625,2850 2570,2844
 # REMOVED ---	q4::inwork 2570,2844 2290,2864
 EOF
      },
@@ -27570,6 +27574,7 @@ EOF
 #: XXX laut VMZ nur bis Ende Oktober 2018, laut BA Steglitz bis Dezember 2018
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.725875.php
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/weitere-sperrungen-rund-um-die-feuerbachstrasse_a174881
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729490.php
 #: source_id: 2147342919
 #: source_id: 2147343007
 #: last_checked: 2018-08-15
@@ -27680,7 +27685,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann sind hier Bauarbeiten?
-#: last_checked: 2018-08-21
+#: last_checked: 2018-08-30
 #: check_frequency: 21d
 	q4::inwork; 4502,11740 4574,11587
 EOF
@@ -27691,6 +27696,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.732734.php',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/gruenau/c-bauen/neuer-gehweg-durch-den-wald_a178025 (hier: bis Monatsende September 2018)
 	2::inwork 25646,-209 25574,-38 25537,167 25461,254 25172,345 24827,354 24743,370 24666,436 24571,514 24197,585
 EOF
      },
@@ -27721,6 +27727,37 @@ EOF
        data  => <<EOF,
 #: XXX_prog: eigentlich q4+::inwork;
 	q4::inwork; 8685,13728 8775,13606
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn für Radfahrer explizit verboten',
+       type  => 'handicap',
+       source_id => '2147342174',
+       data  => <<EOF,
+#: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
+#: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
+	q4::inwork; 18809,9133 18790,9018 18770,8898 18737,8686 18733,8650 18733,8633
+EOF
+     },
+     { from  => 1537740000, # 2018-09-24 00:00
+       until => 1538085600, # 2018-09-28 00:00
+       text  => 'Weg am Britzer Verbindungskanal: Asphaltbauarbeiten, Weg für Radfahrer und Fußgänger nicht passierbar, vom 25. bis 27.09.2018',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.734754.php',
+       data  => <<EOF,
+	2::inwork 15143,5936 15119,5978 14342,5990 14298,6009 14234,6010 14178,5980 14164,5936 14308,5627
+EOF
+     },
+     { from  => 1535691600, # 2018-08-31 07:00
+       until => 1535886000, # 2018-09-02 13:00
+       text  => 'BerlinMan-Triathlon: Sperrung der Havelchaussee und Kronprinzessinenweg, am Samstag auch Wannseebadweg und am Sonntag auch Jafféstr., 1.9.2018 und 2.9.2018 zwischen 7:00 und 13:00 Uhr',
+       type  => 'gesperrt',
+       accept_multi_feature_distance => 4000,
+       data  => <<EOF,
+	2::temp -4001,2858 -3768,3069 -3680,3160 -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3277,8728 -3073,9061 -3140,9294 -3196,9406 -3347,9541 -3431,9665 -3412,9755 -3178,9953 -3025,10116 -2774,10345
+	2::temp -4001,2858 -4551,3201 -4586,3753 -4650,3902 -4901,4083
+	2::temp 1457,10168 1398,10201 1247,10270 1127,10403 1049,10568 998,10723 928,10948 787,11121 711,11199 704,11273
 EOF
      },
     );
