@@ -148,7 +148,7 @@ Hohensaaten - Oderberg: Asphalt	Q0 59634,51996 59677,51998 59684,51971
 Grunow - Buckow: schlechtes Kopfsteinpflaster	Q3 53036,23036 53142,22841 53633,22497 54037,22024 54552,21660 54829,21318 55194,21167
 Köthen - Märkisch Buchholz: schlechte sandige Straße	Q3 38648,-36241 38331,-36475 37737,-36318 37360,-36148 37175,-35987 36956,-35756 36631,-35087 36218,-34618 36050,-34337 35812,-34106 35600,-33743 35541,-33092 35518,-32837
 Blankenfelde - Rangsdorf: mäßiger bis guter Waldweg	Q2 11704,-9417 11748,-9995 11982,-10594 11813,-11045 11818,-11135 11822,-11197 11774,-11431 11560,-11648 11399,-11890 11227,-11976 11217,-12098 11276,-12239 11457,-12382
-Damm über den Templiner See: mäßiger Waldweg	Q2 -14795,-5169 -15540,-4550 -15537,-4535 -15652,-4441 -15664,-4450 -15853,-4327
+Damm über den Templiner See: mäßiger Waldweg	Q2 -14801,-5162 -15540,-4550 -15537,-4535 -15652,-4441 -15664,-4450 -15853,-4327
 Kemnitz - Wittbrietzen: schlechte sandige Straße	Q3 -17219,-29863 -17538,-29394 -17731,-28626 -17790,-28117
 Ortsdurchfahrt Krampnitz: sandige Straße, holprig	Q3+ -12891,5317 -12953,5373 -13224,5485 -13250,5545 -13261,5566
 Ortsdurchfahrt Sacrow: mäßiger Asphalt	Q1 -10722,2111 -10363,2151 -10123,2226 -10118,2280 -10105,2458
@@ -267,11 +267,9 @@ Schwanebeck - Birkholz: welliger Asphalt	Q1 21058,24628 21334,24728 21433,24738 
 Autobahnbrücke: schlechtes Kopfsteinpflaster	Q3 27041,18505 26504,18512
 Ahrensfelde - Altlandsberg: mäßiger Asphalt	Q1 25232,18413 26504,18512
 Ahrensfelde - Altlandsberg: mäßiger Asphalt	Q1 27041,18505 27803,18459
-Straße der Einheit (Caputh): Asphalt	Q0 -17643,-7028 -17578,-7043 -17287,-6946
-#: XXX gesehen: 2005-05-01
-Straße der Einheit (Caputh): Straße in Bau, später wahrscheinlich asphaltiert	Q2 -17287,-6946 -17034,-6950 -16868,-6959 -16812,-7010
-Caputh: Asphalt	Q0 -16280,-6747 -16553,-6765 -16562,-6825
-Caputh: kurzes Stück mit Kopfsteinpflaster, OK	Q1 -16562,-6825 -16812,-7010
+Straße der Einheit (Caputh): Asphalt	Q0 -17643,-7028 -17578,-7043 -17265,-6945 -17034,-6950 -16981,-6952 -16868,-6959 -16823,-6996
+Schmelberger Weg (Caputh): Asphalt	Q0 -16981,-6952 -16995,-7004
+Caputh: Asphalt	Q0 -16283,-6740 -16553,-6765 -16562,-6825 -16823,-6996
 Ferch: gutes Kopfsteinpflaster	Q0 -20816,-10818 -21019,-10850 -21381,-11049
 Ferch: schlechtes Kopfsteinpflaster, teilweise Ränder asphaltiert	Q3 -22222,-10968 -22072,-11138 -21915,-11303 -21641,-11281 -21381,-11049
 Neue Scheune: Kopfsteinpflaster, Seitenstreifen asphaltiert	Q1 -21590,-9622 -21584,-10290 -22032,-10520
@@ -597,9 +595,10 @@ An den Gärten: Asphalt	Q0 -13499,-85 -13432,1
 Brentanoweg: Asphalt	Q0 -13406,-396 -13452,-358 -13581,-307 -13645,-266
 Parkstr.: Asphalt	Q0 -13948,-564 -13880,-431 -13662,-324
 (?) (Werder): Kopfsteinpflaster	Q2 -22206,-1693 -21893,-1758 -21679,-1995
-Wildpark (F2.2): Waldweg	Q1 -18097,-2054 -17915,-2094 -16966,-2096 -16603,-2116 -16562,-2010 -16022,-1729
+Wildpark (F2.2): Waldweg	Q1- -18097,-2054 -17915,-2094 -16966,-2096 -16603,-2116 -16562,-2010 -16023,-1755
+Wildpark: Waldweg, Schotter	Q1- -15916,-3927 -15935,-3896 -15933,-3839 -16063,-3680 -16422,-3269 -16430,-3223 -16346,-3009 -16366,-2913 -16472,-2810 -16660,-2756 -16659,-2713 -16356,-2337 -16239,-2193 -16183,-1960 -16103,-1877 -16023,-1755
 Eisenbahnbrücke - Wildpark West (F2.2): enger Feldweg	Q2 -21063,-2021 -21062,-2042 -20700,-2020 -20677,-2058
-Caputh: Eisenbahnbrücke - Straße: etwas sandig	Q2 -18009,-7528 -17984,-7684
+Caputh: Eisenbahnbrücke - Straße: etwas sandig	Q2 -18009,-7528 -18008,-7684
 Ferch: Weg am Wasser: teils etwas sandig	Q2 -20816,-10818 -21029,-10817 -21537,-10897 -21593,-10759 -21562,-10593 -21440,-10387 -21584,-10290
 Lindstedter Chaussee: Waldweg	Q2 -15825,-166 -16006,-80 -16156,135 -16176,330 -16232,431 -16446,1006 -16694,1310
 Lindstedter Chaussee: Asphalt	Q0 -16694,1310 -16742,1387
@@ -609,7 +608,18 @@ Griebnitzstr. (Potsdam): asphaltiert	Q0 -9698,-19 -9627,-27
 Griebnitzstr. (Potsdam): Kopfsteinpflaster	Q2 -9627,-27 -9433,-64
 Griebnitzstr. (Potsdam): Waldweg	Q1 -9433,-64 -9375,-117
 Albert-Einstein-Str. (Potsdam): Kopfsteinpflaster	Q2+ -12358,-2278 -12330,-2297
-Albert-Einstein-Str. (Potsdam): asphaltiert, im Wohngebiet teils mäßige Stellen, im Wald sehr gut	Q0- -12330,-2297 -12335,-2571 -12317,-2637 -12219,-2760 -12222,-2932
+Albert-Einstein-Str. (Potsdam): asphaltiert mit mäßigen Stellen	Q1+ -12330,-2297 -12335,-2571 -12300,-2630
+Albert-Einstein-Str. (Potsdam): asphaltiert, einige wenige mäßige Stellen	Q0- -12300,-2630 -12236,-2748 -12222,-2932 -12249,-2942
+Am Havelblick (Potsdam): asphaltiert mit mäßigen Stellen	Q1+ -12335,-2571 -12492,-2555
+#: by: osm
+#: add_fragezeichen: ist das Kopfsteinpflaster mäßig oder eher schlecht?
+Am Havelblick (Potsdam): Kopfsteinpflaster	Q2 -12492,-2555 -12442,-2389 -12623,-2367
+(Telegrafenberg): Kleinsteinpflaster	Q1- -12249,-2942 -12306,-2979 -12288,-3075 -12282,-3226
+(Telegrafenberg): Asphalt	Q0 -12282,-3226 -12346,-3232 -12391,-3296
+Altstadtblick (Potsdam): Asphalt	Q0 -12697,-2235 -12731,-2218
+Altstadtblick (Potsdam): Verbundsteinpflaster	Q1+ -12731,-2218 -12768,-2207 -12821,-2187
+An der Kornmühle (Potsdam): Asphalt	Q0 -12712,-2172 -12731,-2218
+Am Speicher (Potsdam): Verbundsteinpflaster	Q1+ -12783,-2269 -12768,-2207 -12754,-2154
 Schloßstr. (Potsdam): Kopfsteinpflaster	Q2 -12923,-1558 -12882,-1565 -12815,-1575 -12790,-1560
 Johannes-Lepsius-Str.: Asphalt	Q0 -13240,32 -13232,98 -13226,157 -13225,179 -13209,260
 Johannes-Lepsius-Str.: Verbundsteinpflaster	Q0- -13209,260 -13244,281
@@ -1112,9 +1122,9 @@ Asphalt	Q0 -18981,-566 -18889,-591 -18803,-609 -18725,-673 -18682,-719 -18631,-7
 	Q0 -20281,-6915 -20293,-6728 -20157,-6373 -20290,-5475
 	Q0 -20696,-5198 -20290,-5475 -20116,-5592 -19997,-5752 -19716,-5851 -19536,-5985 -19449,-5977 -19189,-5697 -19144,-5616 -19112,-5403 -19079,-5334 -19002,-5271
 	Q0 -19449,-5977 -19420,-6014 -19420,-6060 -19534,-6344 -19760,-6450 -20051,-6631 -20281,-6915 -20472,-7292 -20740,-7375 -20778,-7496 -20684,-7570 -20725,-8059 -20893,-8318 -21318,-8660 -21561,-8963 -21590,-9622
-	Q0 -20816,-10818 -20590,-10806 -20112,-10437 -19606,-9698 -19146,-9196 -18909,-9080 -18756,-8962 -18631,-8412 -18431,-7978 -17984,-7684 -17963,-7670 -17650,-7464 -17334,-7253 -17267,-7134 -16995,-7004 -16812,-7010
-	Q0 -16280,-6747 -15811,-6533 -15472,-6233 -15275,-5928 -15228,-5678 -14947,-5405 -14795,-5169 -14710,-4977 -14712,-4614 -14267,-4206 -14119,-3845 -14095,-3670 -14031,-3554 -14038,-3356 -13771,-3023 -13718,-2991 -13481,-2956 -13381,-2943 -13155,-2913 -13062,-2901
-	Q0 -13062,-2901 -13022,-2776 -13003,-2754 -12879,-2573 -12796,-2488 -12779,-2467 -12756,-2437 -12743,-2387 -12708,-2257 -12697,-2235 -12620,-2174 -12534,-2125 -12431,-2096
+	Q0 -20816,-10818 -20590,-10806 -20112,-10437 -19606,-9698 -19146,-9196 -18909,-9080 -18756,-8962 -18631,-8412 -18431,-7978 -18008,-7684 -18002,-7679 -17650,-7464 -17334,-7253 -17267,-7134 -16995,-7004 -16823,-6996
+	Q0 -16283,-6740 -16079,-6643 -16006,-6579 -15829,-6534 -15732,-6454 -15583,-6329 -15269,-5900 -15228,-5678 -14947,-5405 -14801,-5162 -14733,-4982 -14697,-4583 -14262,-4175 -14204,-3944 -14116,-3826 -14095,-3670 -14031,-3554 -14038,-3356 -13891,-3173 -13771,-3023 -13718,-2991 -13481,-2956 -13381,-2943 -13155,-2913 -13062,-2901
+	Q0 -13062,-2901 -13022,-2776 -13003,-2754 -12879,-2573 -12796,-2488 -12779,-2467 -12756,-2437 -12743,-2387 -12713,-2279 -12708,-2257 -12697,-2235 -12620,-2174 -12534,-2125 -12431,-2096
 	Q0 -17643,-7028 -17703,-7228 -18009,-7528
 	Q0 -5662,-3583 -5463,-3467 -5156,-3192 -4963,-3121 -4885,-3087 -4456,-2968 -3965,-2749 -3933,-2734 -3908,-2723 -3650,-2609 -3484,-2531 -3252,-2368 -3105,-2267 -3020,-2208 -2989,-2177 -2946,-2130 -2842,-1976 -2789,-1919 -2662,-1841 -2498,-1741 -2267,-1612 -2184,-1575 -2115,-1551 -2056,-1544 -1973,-1560 -1781,-1676 -1664,-1720 -1457,-1722 -1291,-1770 -1196,-1771 -866,-1615 -713,-1542 -671,-1507 -624,-1468 -556,-1402 -248,-1160 -90,-1056 -68,-1041 -36,-1017 154,-876 212,-834 351,-738 465,-662 590,-618 685,-591 731,-585 757,-587 791,-598 948,-684 1067,-699 1212,-706 1235,-714 1329,-753 1390,-759 1453,-746
 	Q0 3467,560 3417,524 3263,427 3177,374 2958,229 2763,103 2560,-25 2457,-100 2338,-210 2215,-328 1974,-440 1672,-577 1492,-697 1460,-714 1453,-746
@@ -2014,14 +2024,15 @@ Am Templiner See: Asphalt	Q0 -14712,-2415 -14758,-2460
 Kastanienallee: betoniert sowie gutes Kopfsteinpflaster	Q1 -14859,-2384 -14758,-2460
 Am Templiner See: Waldweg, teilweise mit Schotter	Q2 -15307,-3388 -15265,-3260 -15256,-3106 -15204,-2950 -15174,-2919 -14898,-2886 -14905,-2690 -14758,-2460
 Am Templiner See: wassergebundene Decke	Q1 -15307,-3388 -15407,-3631 -15556,-3770 -15665,-3893 -15734,-4027 -15810,-4003
-An der Pirschheide: Beton	Q0 -15810,-4003 -15863,-4147
-An der Pirschheide: Asphalt	Q0 -15863,-4147 -15877,-4211 -15817,-4286 -15853,-4327 -15924,-4447
-Am Templiner See: Waldweg	Q2+ -16084,-5140 -15964,-5052 -15959,-4518 -15924,-4447
-An der Pirschheide: Asphalt	Q0 -16179,-5354 -16084,-5140
+An der Pirschheide: Beton	Q0- -15810,-4003 -15863,-4147
+An der Pirschheide: rauer Asphalt	Q1+ -15863,-4147 -15882,-4205 -15811,-4280
+An der Pirschheide: Asphalt	Q0 -15811,-4280 -15853,-4327 -15924,-4447
+Am Templiner See: Asphalt	Q0 -16094,-5148 -15964,-5052 -15936,-4783 -15949,-4504 -15924,-4447
+An der Pirschheide: rauer Asphalt	Q1+ -16179,-5354 -16094,-5148
 (Waldweg an der Pirschheide): Waldweg	Q2 -16435,-5680 -16350,-5511 -16245,-5370 -16179,-5354
 An der Pirschheide: Asphalt	Q0 -16435,-5680 -16809,-5662
-Am Gaisberg (Geltow): Asphalt	Q0 -17469,-5685 -17383,-5692 -17053,-5807 -16975,-5724 -16849,-5673 -16809,-5662
-Am Petzinsee (Geltow): Asphalt	Q0 -18014,-6027 -17743,-5934 -17469,-5685
+Am Gaisberg (Geltow): Asphalt	Q0 -17443,-5664 -17325,-5717 -17053,-5807 -16975,-5724 -16894,-5691 -16849,-5673 -16809,-5662
+Am Petzinsee (Geltow): Asphalt	Q0 -18023,-6032 -18009,-6027 -17743,-5934 -17614,-5837 -17443,-5664
 #: by: (URL existiert nicht mehr) http://www.brandenburg.adfc.de/Tourismus/Radfernwege/Befahrung-R1.htm vvv
 #: XXX diese Strecke auch in "Berliner Umland"
 Beelitz-Heilstätten - Petzow: hauptsächlich gut geeigneter, asphaltierter Radweg	Q0 -21140,-17328 -20868,-16881 -20922,-16818 -21037,-16320 -20898,-16051 -20708,-15894 -22338,-14792 -22734,-14638 -22773,-13259 -22734,-12969 -22694,-12229 -22770,-11843 -22731,-11608 -22610,-11378 -22658,-11094 -22655,-10768 -22398,-10629 -21773,-9616 -21590,-9622
@@ -2216,7 +2227,7 @@ Lichterfeld - Finsterwalde: Asphalt	Q0 37906,-89609 37820,-89570 37574,-89532 37
 (Lennéstr. - Ökonomieweg, Sanssouci): asphaltiert	Q0 -14611,-1329 -14858,-1215
 (Lennéstr. - Ökonomieweg, Sanssouci): Pflasterung	Q1 -14858,-1215 -14869,-1120
 (Affengang, Sanssouci): Parkweg	Q1 -14129,-1258 -14131,-1181 -14159,-1119
-(Am Neuen Palais, direkter Weg): asphaltiert	Q0- -15810,-1274 -15820,-1146 -15854,-656
+(Am Neuen Palais, direkter Weg): asphaltiert	Q0- -15799,-1352 -15820,-1146 -15854,-656
 Yorckstr.: asphaltiert	Q0 -12839,-1342 -13001,-1329 -13089,-1313 -13206,-1294
 Yorckstr.: asphaltiert	Q0 -13208,-1315 -13001,-1349 -12976,-1356 -12833,-1365
 Luisenplatz: Kopfsteinpflaster, OK	Q1 -13626,-1205 -13637,-1164 -13646,-1115 -13560,-1106
@@ -3235,8 +3246,8 @@ Uhlandstr. (Potsdam): schlechtes Kopfsteinpflaster	Q3 -9525,-1787 -9524,-1730 -9
 Theodor-Hoppe-Weg: kleinteiliges Kopfsteinpflaster, OK	Q1- -10429,-1944 -10412,-1857 -10442,-1847 -10440,-1836
 Brücke: Holzbohlen	Q1 -13001,-1329 -13001,-1349
 Friedrich-Wilhelm-Boelcke-Str.: Kopfsteinpflaster	Q2- -12796,-2488 -12831,-2439 -12815,-2419 -12779,-2467
-Zur Königlichen Hofbrauerei: Kopfsteinpflaster	Q2- -12815,-2419 -12781,-2376
-(Zur Königlichen Hofbrauerei - Leipziger Str.): unbefestigte Straße	Q2 -12781,-2376 -12743,-2387
+Friedrich-Wilhelm-Boelcke-Str.: Kopfsteinpflaster	Q2- -12815,-2419 -12781,-2376
+(Friedrich-Wilhelm-Boelcke-Str. - Leipziger Str.): unbefestigte Straße	Q2 -12781,-2376 -12743,-2387
 Uferweg auf Hermannswerder: mäßiges bis schlechtes Kopfsteinpflaster	Q2- -13003,-2754 -13177,-2722
 Uferweg auf Hermannswerder: unbefestigter Weg	Q2+ -13177,-2722 -13266,-2716 -13371,-2752 -13460,-2757 -13685,-2818 -13767,-2718 -13786,-2642 -13829,-2596
 Uferweg auf Hermannswerder: Asphalt	Q0 -13829,-2596 -13865,-2565
@@ -4232,7 +4243,7 @@ Melchow - Schönholz/Grüntal: Asphalt	Q0 30122,41503 30183,41308 30175,41193 3049
 (Eberswalder Zoo - Spechthausen): unbefestigter Weg mit Asphaltrandstreifen	Q1+ 35197,46798 35174,46756 35160,46666 35166,46582 35155,46498 35218,46368 35212,46269 35127,46125 35131,46048
 (Eberswalder Zoo - Spechthausen): Asphalt	Q0 35131,46048 35094,45846 35103,45737 35060,45551
 (Eberswalder Zoo - Spechthausen): Kopfsteinpflaster	Q3 35060,45551 35057,45527 35069,45501
-Am Grünen Weg (Potsdam-Eiche): wassergebundene Decke	Q1 -16890,-605 -16850,-793 -16875,-1050
+Am Grünen Weg (Potsdam-Eiche): wassergebundene Decke	Q1- -16886,-626 -16850,-793 -16875,-1050
 Ecksteinweg: Asphalt	Q0 -17305,-608 -17290,-679 -17395,-725
 Ecksteinweg: Verbundsteinpflaster	Q1+ -17395,-725 -17411,-722 -17465,-741 -17482,-743 -17512,-750
 Ecksteinweg: feste Sandstraße	Q1- -17395,-725 -17375,-806
@@ -4252,7 +4263,9 @@ Wildapfelweg (Potsdam-Eiche): Verbundsteinpflaster	Q1+ -17494,0 -17588,-26 -1764
 Baumhaselring (Potsdam-Eiche): Verbundsteinpflaster	Q1+ -17245,134 -17271,182
 Baumhaselring (Potsdam-Eiche): Verbundsteinpflaster	Q1+ -17250,196 -17265,216 -17306,254 -17377,280 -17416,289 -17463,281 -17504,275 -17533,284 -17582,308 -17612,313 -17623,288 -17635,230 -17651,155 -17681,82 -17698,5 -17695,-43
 Baumhaselring (Potsdam-Eiche): Verbundsteinpflaster	Q1+ -17612,313 -17617,332 -17600,398
-Roßkastanienstr. (Potsdam-Eiche): Asphalt	Q0 -17725,94 -17681,82 -17640,75 -17598,73 -17562,69 -17514,45 -17502,30 -17494,0 -17476,-50 -17442,-48 -17374,-97 -17343,-113 -17277,-136 -17236,-174 -17247,-216 -17257,-252
+Baumhaselring (Potsdam-Eiche): Verbundsteinpflaster	Q1+ -17236,-174 -17197,-152 -17189,-122 -17230,12 -17245,134
+Mehlbeerenweg (Potsdam-Eiche): Verbundsteinpflaster	Q1+ -17374,-97 -17362,-63 -17373,5 -17327,22 -17299,35
+Roßkastanienstr. (Potsdam-Eiche): Asphalt	Q0 -17725,94 -17681,82 -17640,75 -17598,73 -17562,69 -17514,45 -17502,30 -17494,0 -17476,-50 -17442,-48 -17374,-97 -17343,-113 -17277,-136 -17248,-152 -17236,-174 -17247,-216 -17257,-252
 Turmfalkenweg (Potsdam-Golm): Verbundsteinpflaster	Q1+ -17813,45 -17785,120
 Habichtweg (Potsdam-Golm): Verbundsteinpflaster	Q1+ -17785,120 -17725,293
 Spechtweg (Potsdam-Golm): Verbundsteinpflaster	Q1+ -17871,85 -17848,145
@@ -4274,7 +4287,7 @@ Elsternstr. (Potsdam-Golm): Asphalt, letzte Deckschicht fehlt	Q1+ -18135,397 -18
 #: add_fragezeichen ^^^
 In der Feldmark: Asphalt	Q0 -18429,195 -18625,129 -18631,102
 Karl-Liebknecht-Str. (Potsdam-Golm): Asphalt	Q0 -18725,-673 -18726,-501 -18754,-419 -18656,-9 -18631,102
-Am Mühlenberg (Potsdam-Golm): Asphalt	Q0 -18656,-9 -18711,-2 -18820,19 -18790,282 -18898,334 -19100,407
+Am Mühlenberg (Potsdam-Golm): Asphalt	Q0 -18656,-9 -18711,-2 -18746,5 -18820,19 -18790,282 -18898,334 -19100,407
 (Bhf. Golm - Am Mühlenberg): Asphalt	Q0 -18785,-77 -18769,-27 -18966,0 -18971,73 -18919,178 -18910,270 -18898,334
 Am Zachelsberg (Potsdam-Golm): Asphalt	Q0 -18444,77 -18631,102
 Eichenweg (Potsdam-Golm): Rasengittersteine	Q2+ -18395,72 -18414,-86
@@ -4301,7 +4314,11 @@ Baumschulenweg: Asphalt	Q0 -17449,-624 -17475,-499 -17477,-411 -17449,-313 -1741
 Krumme Str. (Potsdam-Eiche): Verbundsteinpflaster	Q1+ -17319,-344 -17313,-310 -17362,-272 -17380,-242 -17373,-214
 Am Langen Berg (Potsdam-Eiche): Verbundsteinpflaster	Q1+ -17410,-202 -17373,-214 -17257,-252 -17087,-302
 Thujaweg (Potsdam-Eiche): Verbundsteinpflaster	Q1+ -17395,-154 -17454,-131
-Am Alten Mörtelwerk (Potsdam-Eiche): Asphalt	Q0 -17127,-554 -17141,-496 -17186,-451 -17211,-356 -17257,-252
+Am Sandberg (Potsdam-Eiche): Verbundsteinpflaster	Q1+ -17211,-356 -17144,-342 -17132,-399
+Am Alten Mörtelwerk (Potsdam-Eiche): Asphalt	Q0 -17127,-554 -17141,-496 -17186,-451 -17211,-356 -17224,-310 -17257,-252
+#: note: wenige asphaltierte Stellen
+Am Grünen Weg (Potsdam-Eiche): zumeist unbefestigte Straße	Q2 -16907,-531 -16886,-626
+Am Tempelberg (Potsdam-Eiche): Asphalt	Q0 -17009,-539 -17029,-408 -17025,-378
 Park Sanssouci: wassergebundene Decke	Q1 -13728,-807 -13995,-826
 Park Sanssouci: wassergebundene Decke	Q1 -14025,-829 -14021,-818 -14012,-813 -14001,-817 -13995,-826 -13998,-837 -14008,-843 -14019,-841 -14025,-829
 Park Sanssouci: wassergebundene Decke	Q1 -14025,-829 -14163,-840
@@ -4581,6 +4598,7 @@ Havelstr. (Eichwalde): Asphalt	Q0- 26789,-3584 26708,-3792
 Tschaikowskistr. (Eichwalde): Kleinsteinpflaster	Q2+ 26651,-3554 26789,-3584 26913,-3613
 Ilsestr. (Eichwalde): Asphalt	Q0- 26669,-3030 26705,-3132 26787,-3194
 Elisabethstr. (Eichwalde): Asphalt	Q0- 26805,-2889 26831,-2990
+Campingpark Sanssouci: sehr rauer Asphalt	Q1- -16435,-5680 -16342,-5706 -16295,-5696 -16262,-5635 -16221,-5594 -16208,-5534 -16214,-5496 -16211,-5431 -16179,-5354
 ######################### User Contributions #################################
 #: by: mopedfahrerrr:
 #: confirmed_by: anonymous:
@@ -4961,7 +4979,7 @@ Johann-Strauß-Platz: Asphalt	Q0 -9410,-815 -9318,-714
 (Mauerweg am Griebnitzsee): wassergebundene Decke	Q1 -7805,-1260 -7618,-1140 -7518,-1175
 Stubenrauchstr.: Asphalt	Q0 -7518,-1175 -7895,-1464
 Rudolf-Breitscheid-Str. [Bahnhofsvorfahrt]: Asphalt	Q0 -8083,-1505 -8077,-1533 -8016,-1519 -8020,-1490
-Baumgartenbrück (Geltow): rauer Asphalt mit Löchern	Q2 -18025,-6370 -18410,-6286 -18918,-5951
+Baumgartenbrück (Geltow): rauer Asphalt mit Löchern	Q2 -18051,-6362 -18410,-6286 -18918,-5951
 Kolonieweg: unbefestigter holpriger Weg	Q2- -12603,1443 -12633,1484 -12928,1646
 Buch - Schwanebeck: sehr guter Asphalt	Q0 17895,25260 17956,25235 17967,25231 18111,25169 18127,25162 18236,25113 18562,24975 18583,24966 19395,24634 19658,24589
 Pinnow: asphaltiert	Q0 56232,75133 56232,75123 56219,75093 56164,75040 55821,74470 55703,74309 55649,74233 55594,74156 55501,73991
@@ -6477,6 +6495,7 @@ Berliner Str.: Asphalt	Q0 -8313,16897 -8220,16857 -8199,16846 -7977,16745
 Berliner Str.: Asphalt	Q0 -7977,16745 -7926,16790
 Berliner Str.: Beton	Q1 -8313,16897 -8408,16939
 Am Graben (Waldblick): Schotterstraße	Q2 9402,-3817 9354,-3949
+#: confirmed_by: srt
 (zum Bahnhof Saarmund): Beton	Q1+ -7526,-9435 -7114,-9496
 Kerzendorf - B101: Asphalt	Q0 2406,-15008 2327,-14968 2223,-14935 2188,-14926 2073,-14964 1915,-14960 1811,-14965 1704,-14954 1640,-14947 1541,-14947 1529,-15164 1566,-15226 1577,-15749 1448,-15955 1513,-16010
 #: by: ^^^

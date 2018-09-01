@@ -1327,7 +1327,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: source_id: LMS-BR_r_LMS-BR_81616
 #: source_id: 2147342542
 #: source_id: 2147343094
-#: last_checked: 2018-08-24
+#: last_checked: 2018-09-01
 #: next_check: 2018-09-14
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 # 
@@ -3291,8 +3291,8 @@ Egellsstr.: eventuell wird dieser Abschnitt für die Öffentlichkeit gesperrt	? 21
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/index.shtml
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/download/Bplan-1-69.pdf
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: II/2019 bis III/2020) (außerdem: Umbau des Schiffbauerdamms)
-#: last_checked: 2018-08-04
-#: next_check: 2019-09-01
+#: last_checked: 2018-09-01
+#: check_frequency: 360d
 Verlängerung der Margarete-Steffin-Str.	?::projected 8732,12804 8796,12804 8930,12809 9002,12778 9025,12727
 # 
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
@@ -3793,9 +3793,9 @@ Güterbahnhof Wilmersdorf: vermutlich wird die Straße während der Bauarbeiten ges
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_19_2335_2466_online.pdf (Grundstücksnummerierungen)
 #: XXX eventuell entstehen hier weitere Straßen/Wege
 #: XXX fehlt in Berlin.coords.data, PLZ=10557, Bezirk=Moabit
-#: last_checked: 2018-08-18
-#: check_frequency: 90d
-Hilda-Geiringer-Weg: wo genau wird die Straße liegen? Qualität?	?::projected 8243,13469 8245,13396
+#: last_checked: 2018-09-01
+#: check_frequency: 60d
+Hilda-Geiringer-Weg: wo genau wird die Straße liegen? Qualität?	?::inwork 8243,13469 8245,13396
 # 
 # REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2016 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/29re.pdf/file?y=2016 (Grundstücksnummerierungen) --- #: XXX fehlen in Berlin.coords.data, PLZ=12619 --- #: XXX laut osm schon teilweise fertig --- #: osm_watch: way id="387893757" version="1" --- #: osm_watch: way id="479144282" version="1" --- #: last_checked: 2016-06-04 --- #: check_frequency: 270d
 # REMOVED --- Lili-Grün-Weg: wo genau wird die Straße liegen? Qualität?	?::projected 23642,14002 23712,13990 23728,13987
@@ -3963,7 +3963,7 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2018-08-24
+#: last_checked: 2018-09-01
 #: check_frequency: 360d
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 
@@ -4000,7 +4000,7 @@ geplante Grünanlage	?::projected 4084,15859 4055,15795 4041,15786 4224,15779 421
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/westkreuz-plaene-liegen-aus_a164924
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.726428.php
 #: by: https://www.berliner-woche.de/charlottenburg-wilmersdorf/c-bauen/westkreuz-plan-liegt-oeffentlich-aus_a174776
-#: last_checked: 2018-08-18
+#: last_checked: 2018-09-01
 #: check_frequency: 360d
 Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660,10521 2749,10584 3043,10680
 # 
@@ -4196,8 +4196,9 @@ Planstraße E: entsteht hier eine neue Straße?	?::projected 8542,21381 8627,21325
 #: XXX Planstraße A: An der Bahn (Weiterführung)
 #: XXX Planstraße B (Nord-, Ost-, Südverlauf): Feldlerchenwinkel, PLZ=14476
 #: XXX Planstraße B (Westverlauf): Sperlingsweg, PLZ=14476
-#: last_checked: 2018-02-17
-#: check_frequency: 120d
+#: osm_watch: way id="412161707" version="2"
+#: last_checked: 2018-09-01
+#: check_frequency: 360d
 nördlich der Feldmark: weitere Straßen geplant	?::projected -18587,697 -18262,679 -18254,344 -18629,247 -18587,697
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bebauungsplan.715578.php
@@ -4310,6 +4311,7 @@ Oberjägerweg außerhalb Spandaus: Qualität?	? -4053,20594 -3947,21008 -3794,21804
 Mauerweg am Griebnitzsee: Qualität (vermutlich Asphalt?)?	? -9655,-298 -9562,-325 -9454,-434 -9365,-610
 #: XXX: Kommentar von Gunnar Pötzsch: "Radweg R1, Asphalt, Kopfsteinpflaster schlechter Qualität, teils Waldweg" vvv
 Wilhelm-Busch-Str. (Rehbrücke): Qualität?	? -9500,-6933 -9541,-6955 -9753,-7192 -9812,-7544
+#: XXX im Bereich Bahnbrücke asphaltiert
 Schlüterstr. (Rehbrücke): Qualität?	? -9812,-7544 -9953,-7604 -10080,-8117 -10263,-8447
 Rehbrücke - Langerwisch: Qualität? genaue Wegführung?	? -10263,-8447 -10302,-8515 -10335,-8711 -10399,-8747 -10414,-8865 -10725,-9639
 #: XXX laut osm "cobblestone"
@@ -5037,7 +5039,6 @@ Basdorf: Qualität des Radwegs entlang der Bahnstrecke?	? 12025,35002 12083,35157
 #: XXX asphaltierter Radweg auf der nördlichen/östlichen Seite, nicht ganz sicher bei der Lage
 Buckow - Lichterfelde: wo genau ist der Radweg?	? 31634,53303 32692,53191 32718,53044 32856,52150 33002,51944
 # 
-Am Havelblick (Potsdam): Qualität?	? -12335,-2571 -12492,-2555 -12442,-2389 -12623,-2367
 # REMOVED (ja) --- #: by: http://www.potsdam.de/cms/beitrag/10057990/757395/ --- Nuthestr.: existieren durchgängig Radwege zwischen Berliner Str. und Alt Nowawes?	? -11116,-1681 -11140,-1564 -11226,-1445 -11386,-1313
 Jägersteig (Potsdam): Qualität?	? -8191,-2259 -8297,-2220 -8434,-2197
 Försterweg (Potsdam): Qualität?	? -8244,-2373 -8329,-2330 -8446,-2328
@@ -5235,17 +5236,10 @@ Radweg zwischen Wublitzstr. und Laubenweg: Ist der Radweg bereits fertig? Qualit
 Alleestr./Weinmeinsterstr.: existiert hier eine Ampel?	? -12557,11
 #: by: http://www.potsdam.de/cms/beitrag/10068810/966975/
 Radweg in der Bergstraße: wo genau?	? -17909,7321 -18152,6572
-Am Tempelberg (Potsdam-Eiche): Qualität?	? -17009,-539 -17029,-408 -17025,-378
-#: XXX laut osm "pebblestone" (Mosaikpflaster? Kleinsteinpflaster?)
-Am Grünen Weg (Potsdam-Eiche): Qualität?	? -16907,-531 -16890,-605
-Am Sandberg (Potsdam-Eiche): Qualität? Auch Verbundsteinpflaster wie die umliegenden Straßen?	? -17211,-356 -17144,-342 -17132,-399
 #: XXX laut osm living_street, kann ich aber nicht bestätigen
 Ecksteinweg (Potsdam-Eiche): Ist hier eine Spielstraße?	? -17305,-608 -17290,-679 -17395,-725
-#: XXX_osm: laut osm unpaved
-Baumhaselring (Potsdam-Eiche): Qualität im südlichen Abschnitt? Liegt hier auch Verbundsteinpflaster?	? -17236,-174 -17197,-152 -17189,-122 -17230,12 -17245,134
-Mehlbeerenweg (Potsdam-Eiche): Qualität? Auch Verbundsteinpflaster wie die umliegenden Straßen?	? -17374,-97 -17362,-63 -17373,5 -17327,22 -17299,35
 # 
-Zum Bahnhof Pirschheide (Potsdam): Qualität?	? -16151,-3770 -16050,-3982 -15982,-4032
+Zum Bahnhof Pirschheide (Potsdam): Qualität?	? -16157,-3757 -16050,-3982 -15982,-4032
 #: XXX fehlt in Potsdam.coords.data
 Am Küssel (Potsdam-Grube): Qualität?	? -19243,2246 -19505,2798
 # 
@@ -5489,9 +5483,9 @@ Von-Oppen-Weg: Qualität? Wo befindet sich die Straße?	? -8445,8504 -8240,8450
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_nr._1_2016.pdf (zum Bebauungsplan Speicherstadt-Süd)
 #: by: https://www.potsdam.de/sites/default/files/documents/17210_amtsblatt_mai2017_dsjs_korr3_final.pdf (ebenso)
 #: by: https://www.potsdam.de/sites/default/files/documents/final_18057_amtsblatt3_www.pdf (ebenso)
-#: last_checked: 2014-05-11
-#: next_check: 2015-01-01
-Uferweg von der Neuen Fahrt zum Hermannswerder: neuer Weg wird hier entstehen, Qualität?	?::inwork -12803,-2219 -12803,-2371 -12906,-2537 -13156,-2702
+#: last_checked: 2018-09-01
+#: check_frequency: 360d
+Uferweg von der Neuen Fahrt zum Hermannswerder: neuer Weg wird hier entstehen, Qualität?	?::inwork -12783,-2269 -12803,-2371 -12906,-2537 -13156,-2702
 # 
 #: by: http://www.potsdam.de/cms/dokumente/10098106_1471008/11eddb87/ENDFASSUNG10_12.pdf
 #: XXX hier existiert noch nichts
@@ -5637,27 +5631,19 @@ Straßen in Döberitz: genaue Straßennamen, Qualität?	? -11635,13818 -11709,13476 
 #: check_frequency: 360d
 Heerstr. - Fichtenstr.: wird hier ein Verbindungsweg für Radfahrer und Fußgänger gebaut? Qualität? Nachts beleuchtet?	? 22366,9571 22219,9545
 # 
-#: last_checked: 2013-12-22 vvv
-#: next_check: 2014-09-16 vvv
-#: XXX neue Straßen in Potsdam: Genauer Verlauf? Laut osm bereits realisiert vvv
-#: by: http://www.dafmap.de/d/berlin.html?id=3576&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-06-30)
-#: by: http://www.potsdam.de/cms/dokumente/10090503_1471008/726adfe6/Amtsblatt_1-2012.pdf vvv
-#: osm_watch: way id="174465897" version="3" brb
-An der Kornmühle (Potsdam): Qualität der Straße?	? -12712,-2172 -12728,-2227
-#: osm_watch: way id="174465898" version="9" brb
-#: XXX laut osm living_street und surface=paved
-Am Speicher (Potsdam): Qualität der Straße?	? -12783,-2269 -12771,-2220 -12754,-2154
-#: by: ^^^
-#: by: http://www.potsdam.de/cms/dokumente/10091281_1471008/5b118cfb/2012%2002%2009Endfassung02_12.pdf
-#: osm_watch: way id="174465895" version="5" brb
-#: XXX laut osm living_street und surface=paved
-Altstadtblick (Potsdam): Qualität der Straße?	? -12697,-2235 -12728,-2227 -12771,-2220 -12803,-2219
+#: last_checked: 2018-09-01 vvv
+#: check_frequency: 360d vvv
+#: XXX neue Straßen in Potsdam: Genauer Verlauf? vvv
+# REMOVED (realisiert) --- #: by: http://www.dafmap.de/d/berlin.html?id=3576&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-06-30) --- #: by: http://www.potsdam.de/cms/dokumente/10090503_1471008/726adfe6/Amtsblatt_1-2012.pdf vvv --- #: osm_watch: way id="174465897" version="3" brb --- An der Kornmühle (Potsdam): Qualität der Straße?	? -12712,-2172 -12731,-2218
+# REMOVED (realisiert) --- #: osm_watch: way id="174465898" version="9" brb --- #: XXX laut osm living_street und surface=paved --- Am Speicher (Potsdam): Qualität der Straße?	? -12783,-2269 -12768,-2207 -12754,-2154
+# REMOVED (realisiert) --- #: by: http://www.potsdam.de/cms/dokumente/10091281_1471008/5b118cfb/2012%2002%2009Endfassung02_12.pdf --- #: osm_watch: way id="174465895" version="5" brb --- #: XXX laut osm living_street und surface=paved --- Altstadtblick (Potsdam): Qualität der Straße?	? -12697,-2235 -12731,-2218 -12768,-2207 -12821,-2187
 #: XXX weitere Straßen, die hier entstehen (http://www.potsdam.de/sites/default/files/documents/final_abl_pdmstadt_08_2015_web_0.pdf)
 #: XXX fehlen in Potsdam.coords.data
 #: XXX - An der Lokremise - PLZ=14473
 #: XXX - Am Magazin - PLZ=14473
+weitere Straßen in der Speicherstadt	?::projected -12656,-2076 -12647,-2114 -12547,-2070 -12643,-2073
 #: XXX ^^^
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: source_id: 146400332	

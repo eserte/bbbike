@@ -2106,7 +2106,7 @@ EOF
        text  => 'K 6910; (Geltower Chausse); Bahnübergang im OT Caputh Gleisbauarbeiten Vollsperrung 29.05.2005-30.05.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -17811,-6820 -17811,-6691
+	2 -17834,-6837 -17849,-6801 -17837,-6681
 EOF
      },
      { from  => 1117404000, # 2005-05-30 00:00
@@ -15520,7 +15520,7 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: tempex: sunset-T06 vvv
-(Am Neuen Palais, direkter Weg)	2::night -15810,-1274 -15820,-1146 -15854,-656
+(Am Neuen Palais, direkter Weg)	2::night -15799,-1352 -15820,-1146 -15854,-656
 (Am Grünen Gitter, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -13857,-1040 -14159,-1119 -14173,-1013
 (Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14173,-1013 -14482,-1043 -14622,-1138 -14869,-1120 -15030,-1101 -15556,-1133 -15651,-1137 -15820,-1146
 (Lennestr. - Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14611,-1329 -14858,-1215 -14869,-1120
@@ -27758,6 +27758,21 @@ EOF
 	2::temp -4001,2858 -3768,3069 -3680,3160 -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3277,8728 -3073,9061 -3140,9294 -3196,9406 -3347,9541 -3431,9665 -3412,9755 -3178,9953 -3025,10116 -2774,10345
 	2::temp -4001,2858 -4551,3201 -4586,3753 -4650,3902 -4901,4083
 	2::temp 1457,10168 1398,10201 1247,10270 1127,10403 1049,10568 998,10723 928,10948 787,11121 711,11199 704,11273
+EOF
+     },
+     { from  => undef, # 
+       until => $isodate2epoch->("2018-09-30 18:00:00"), # undef, # XXX
+       text  => 'Bahnbrücke Templiner See: gesperrt, vermutliche Öffnung im September 2018',
+       type  => 'gesperrt',
+       source_id => 'https://www.pnn.de/potsdam-mittelmark/schwielowsee-templiner-bruecke-bleibt-laenger-gesperrt/21317518.html',
+       data  => <<EOF,
+#: by: http://www.maz-online.de/Lokales/Potsdam/Potsdam-am-Montag-Das-ist-heute-wichtig113
+#: by: http://www.maz-online.de/Lokales/Potsdam/Bruecke-am-Templiner-See-oeffnet-im-September
+#: osm_watch: way id="43483713" version="10" brb
+#: XXX wann wird die Brücke wieder eröffnet?
+#: last_checked: 2018-09-01
+#: next_check: 2018-09-30
+	2::inwork -15853,-4327 -15664,-4450 -15652,-4441 -15537,-4535 -15540,-4550 -14801,-5162
 EOF
      },
     );

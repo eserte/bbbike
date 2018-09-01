@@ -1911,7 +1911,7 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'data' => '#: tempex: sunset-T06 vvv
-(Am Neuen Palais, direkter Weg)	2::night -15810,-1274 -15820,-1146 -15854,-656
+(Am Neuen Palais, direkter Weg)	2::night -15799,-1352 -15820,-1146 -15854,-656
 (Am Grünen Gitter, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -13857,-1040 -14159,-1119 -14173,-1013
 (Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14173,-1013 -14482,-1043 -14622,-1138 -14869,-1120 -15030,-1101 -15556,-1133 -15651,-1137 -15820,-1146
 (Lennestr. - Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14611,-1329 -14858,-1215 -14869,-1120
@@ -4643,6 +4643,22 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'BerlinMan-Triathlon: Sperrung der Havelchaussee und Kronprinzessinenweg, am Samstag auch Wannseebadweg und am Sonntag auch Jafféstr., 1.9.2018 und 2.9.2018 zwischen 7:00 und 13:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1535886000
+       },
+       {
+         'data' => '#: by: http://www.maz-online.de/Lokales/Potsdam/Potsdam-am-Montag-Das-ist-heute-wichtig113
+#: by: http://www.maz-online.de/Lokales/Potsdam/Bruecke-am-Templiner-See-oeffnet-im-September
+#: osm_watch: way id="43483713" version="10" brb
+#: XXX wann wird die Brücke wieder eröffnet?
+#: last_checked: 2018-09-01
+#: next_check: 2018-09-30
+	2::inwork -15853,-4327 -15664,-4450 -15652,-4441 -15537,-4535 -15540,-4550 -14801,-5162
+',
+         'from' => undef,
+         'id' => 3010,
+         'source_id' => 'https://www.pnn.de/potsdam-mittelmark/schwielowsee-templiner-bruecke-bleibt-laenger-gesperrt/21317518.html',
+         'text' => 'Bahnbrücke Templiner See: gesperrt, vermutliche Öffnung im September 2018',
+         'type' => 'gesperrt',
+         'until' => 1538323200
        }
      
 );
