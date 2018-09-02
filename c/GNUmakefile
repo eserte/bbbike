@@ -1,7 +1,10 @@
+# DO NOT EDIT --- SOURCE is Makefile
 .CURDIR?=	${CURDIR}
-#
-# $Id: Makefile,v 2.6 2003/08/14 05:17:43 eserte Exp $
-#
+# XXX
+# Note that this does not work anymore for modern systems:
+# * -fwritable-support does not exist anymore in new gcc's, it seems
+# * probably completely broken for 64bit systems
+# Anyway this is of mainly historical interest.
 
 EXE=
 ifdef PALM
@@ -69,9 +72,13 @@ ${DATASRC}:	../data/strassen
 	${MKDATA} -output c
 
 Makefile.w32:	Makefile
-	../miscsrc/b2dmake < Makefile > Makefile.w32
-	chmod ugo+r Makefile.w32
+	echo "# DO NOT EDIT --- SOURCE is Makefile" > Makefile.w32~
+	../miscsrc/b2dmake < Makefile >> Makefile.w32~
+	chmod ugo+r Makefile.w32~
+	mv Makefile.w32~ Makefile.w32
 
 GNUmakefile:	Makefile
-	../miscsrc/b2gmake < Makefile > GNUmakefile
-	chmod ugo+r GNUmakefile
+	echo "# DO NOT EDIT --- SOURCE is Makefile" > GNUmakefile~
+	../miscsrc/b2gmake < Makefile >> GNUmakefile~
+	chmod ugo+r GNUmakefile~
+	mv GNUmakefile~ GNUmakefile

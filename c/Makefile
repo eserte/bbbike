@@ -1,7 +1,3 @@
-#
-# $Id: Makefile,v 2.7 2009/02/22 14:11:23 eserte Exp $
-#
-
 # XXX
 # Note that this does not work anymore for modern systems:
 # * -fwritable-support does not exist anymore in new gcc's, it seems
@@ -74,9 +70,13 @@ ${DATASRC}:	../data/strassen
 	${MKDATA} -output c
 
 Makefile.w32:	Makefile
-	../miscsrc/b2dmake < Makefile > Makefile.w32
-	chmod ugo+r Makefile.w32
+	echo "# DO NOT EDIT --- SOURCE is Makefile" > Makefile.w32~
+	../miscsrc/b2dmake < Makefile >> Makefile.w32~
+	chmod ugo+r Makefile.w32~
+	mv Makefile.w32~ Makefile.w32
 
 GNUmakefile:	Makefile
-	../miscsrc/b2gmake < Makefile > GNUmakefile
-	chmod ugo+r GNUmakefile
+	echo "# DO NOT EDIT --- SOURCE is Makefile" > GNUmakefile~
+	../miscsrc/b2gmake < Makefile >> GNUmakefile~
+	chmod ugo+r GNUmakefile~
+	mv GNUmakefile~ GNUmakefile
