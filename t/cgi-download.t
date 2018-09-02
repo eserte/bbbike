@@ -56,6 +56,7 @@ for my $def (
 	or do {
 	    output_apache_errorslogs if $is_local_server;
 	    diag $resp->status_line;
+	    diag $resp->headers->as_string;
 	};
 	    
     zip_ok $tempfile, -memberchecks => \@member_checks;
