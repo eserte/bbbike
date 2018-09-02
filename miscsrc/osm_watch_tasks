@@ -1,0 +1,153 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use FindBin;
+my $bbbike_root;
+BEGIN { $bbbike_root = "$FindBin::RealBin/.." }
+use lib $bbbike_root, "$bbbike_root/lib";
+
+use BBBikeUtil qw(is_in_path);
+
+sub usage (;$) {
+    my $msg = shift;
+    warn $msg, "\n" if $msg;
+    die <<EOF;
+usage: $0 task
+EOF
+}
+
+{
+    my $can_xterm_title;
+    sub xterm_title ($) {
+	my $title = shift;
+	if (!defined $can_xterm_title) {
+	    $can_xterm_title = !!is_in_path 'xterm-conf';
+	}
+	return if !$can_xterm_title;
+	system('xterm-conf', '-title', $title);
+    }
+}
+
+my $task = shift
+    or usage("Task is missing");
+
+if ($task eq 'check') {
+    my $downloads_rooturl = "https://osm-internal.download.geofabrik.de/europe/germany";
+    my $downloads_dir = "$ENV{HOME}/Downloads";
+    my $osmconvert_dir = "$ENV{HOME}/work2/osmconvert.$^O";
+    if (!-d $osmconvert_dir) {
+	die "Directory $osmconvert_dir does not exist";
+    }
+    my $target_dir = "$ENV{HOME}/trash";
+    if (!-d $target_dir) {
+	die "Target directory $target_dir does not exist";
+    }
+    my $bbbike_aux_dir = "$ENV{HOME}/src/bbbike-aux";
+    if (!-d $bbbike_aux_dir) {
+	die "bbbike-aux directory $bbbike_aux_dir missing";
+    }
+    my $region = 'berlin';
+    my $do_download = 1;
+    my $do_osmconvert = 1;
+    require Getopt::Long;
+    if (!Getopt::Long::GetOptions(
+				  "region=s" => \$region,
+				  "download!" => \$do_download,
+				  "osmconvert!" => \$do_osmconvert,
+				  "downloads-dir=s" => \$downloads_dir,
+				 )) {
+	die "usage $0 $task [--region berlin|brandenburg] [--no-download] [--no-osmconvert] [--downloads-dir /path/to/Downloads]\n";
+    }
+    if ($region !~ m{^(berlin|brandenburg)$}) {
+	die "Unhandled region '$region'";
+    }
+    my $base = "$region-latest-internal.osm.pbf";
+    my $downloads_file = "$downloads_dir/$base";
+
+    my $title_root = 'osm watch - check';
+    xterm_title($title_root);
+
+    if ($do_download) {
+	unlink $downloads_file;
+	system("firefox $downloads_rooturl/$base &");
+
+	xterm_title("$title_root - waiting for start of download");
+	while(! -e $downloads_file) {
+	    warn "waiting for start of download...\n";
+	    sleep 1;
+	}
+
+	xterm_title("$title_root - waiting for completion of download");
+	while (-e "$downloads_file.part") {
+	    warn "waiting for completion of download...\n";
+	    sleep 1;
+	}
+	sleep 1;
+	warn "download completed\n";
+    }
+
+    if ($do_osmconvert) {
+	xterm_title("$title_root - run osmconvert");
+	my $cmd = "$osmconvert_dir/osmconvert $downloads_file | gzip > $target_dir/$region.osm.gz~";
+	system($cmd);
+	if ($? != 0 || !-s "$target_dir/$region.osm.gz~") {
+	    die "Possible problem running $cmd";
+	}
+	rename "$target_dir/$region.osm.gz~", "$target_dir/$region.osm.gz"
+	    or die "Error renaming $region.osm.gz~: $!";
+    }
+
+    system("$bbbike_aux_dir/misc/check-osm-watch-list.pl", "-diff", "-osm-file", "$target_dir/$region.osm.gz", ($region ne 'berlin' ? ('-osm-watch-list', "$bbbike_root/tmp/osm_watch_list_$region") : ()));
+    if ($? != 0) {
+	die "There are possible diffs.\n";
+    }
+    xterm_title("");
+} else {
+    die "Unknown task '$task'";
+}
+
+__END__
+
+=head1 NAME
+
+osm_watch_tasks - tasks around the "osm_watch" bbd directive
+
+=head1 SYNOPSIS
+
+    osm_watch_tasks [task] [task_options]
+
+=head1 DESCRIPTION
+
+Implements tasks around the "osm_watch" directive found in bbd files.
+
+=head2 TASKS
+
+=head3 check
+
+    osm_watch_tasks check [--region berlin|brandenburg] [--downloads-dir /path/to/Downloads] [--no-download] [--no-osmconvert]
+
+Download .osm.pbf files from geofabrik (using the firefox browser,
+because authentication is not implemented in this script), convert to
+plain .osm using L<osmconvert(1)> and check the versions of osm
+features referenced by C<osm_watch> directives using
+L<check-osm-watch-list.pl> and show diffs for mismatches. The user is
+then obliged to check the difference manually, maybe correct the data
+or setup new "fragezeichen" items, and increase the version,
+preferably by using the C<bbbike-update-osm-watch> emacs macro (see
+F<bbbike.el>).
+
+Example call for the region "brandenburg":
+
+    osm_watch_tasks check --region brandenburg --downloads-dir /home/eserte/Downloads
+
+Or to bypass the download and osmconvert steps, for the region
+"berlin":
+
+    osm_watch_tasks check --region berlin --downloads-dir /home/eserte/Downloads --no-download --no-osmconvert
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=cut
