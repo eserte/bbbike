@@ -4,15 +4,18 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2016,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
 # Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use strict;
+use FindBin;
+my $bbbike_rootdir; BEGIN { $bbbike_rootdir = "$FindBin::RealBin/.." }
+
 use Getopt::Long;
 use IPC::Run qw(run);
 
@@ -32,9 +35,8 @@ use IPC::Run qw(run);
     }
 }
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
-my $bbbike_rootdir = "$ENV{HOME}/src/bbbike"; # cannot use $FindBin::RealBin here, because of symlinking problems
 my $osm_watch_list = "$bbbike_rootdir/tmp/osm_watch_list";
 my $osm_file = "$bbbike_rootdir/misc/download/osm/berlin.osm.bz2";
 
