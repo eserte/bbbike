@@ -3367,8 +3367,8 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
        undef,
        {
          'data' => '#: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
-#: osm_watch: way id="43141418" version="7" brb
-#: last_checked: 2017-03-18
+#: osm_watch: way id="43141418" version="9" brb
+#: last_checked: 2018-06-19 (osm)
 	2::inwork -12583,-1552 -12485,-1482
 # REMOVED ---	2::inwork -12485,-1482 -12474,-1559 -12596,-1701
 ',
@@ -3467,29 +3467,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- : tempex YYYY09 & sa2 & T14-T18
-# REMOVED --- : tempex YYYY09 & sa3 & T14-T18
-#: tempex YYYY09 & sa1 & T12-T21
-	2::temp 5857,13342 5868,13441 5882,13548
-',
-         'from' => 1535666400,
-         'id' => 2625,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              31,
-                              'months',
-                              8
-                            ]
-                          ],
-         'source_id' => 'https://misch-mit.net/moabiter-kiezfest-1-september-2018/',
-         'text' => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 1. September 2018, 12 bis 21 Uhr ',
-         'type' => 'gesperrt',
-         'until' => 1535839199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4632,18 +4610,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1538085600
        },
-       {
-         'accept_multi_feature_distance' => 4000,
-         'data' => '	2::temp -4001,2858 -3768,3069 -3680,3160 -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3277,8728 -3073,9061 -3140,9294 -3196,9406 -3347,9541 -3431,9665 -3412,9755 -3178,9953 -3025,10116 -2774,10345
-	2::temp -4001,2858 -4551,3201 -4586,3753 -4650,3902 -4901,4083
-	2::temp 1457,10168 1398,10201 1247,10270 1127,10403 1049,10568 998,10723 928,10948 787,11121 711,11199 704,11273
-',
-         'from' => 1535691600,
-         'id' => 3009,
-         'text' => 'BerlinMan-Triathlon: Sperrung der Havelchaussee und Kronprinzessinenweg, am Samstag auch Wannseebadweg und am Sonntag auch Jafféstr., 1.9.2018 und 2.9.2018 zwischen 7:00 und 13:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1535886000
-       },
+       undef,
        {
          'data' => '#: by: http://www.maz-online.de/Lokales/Potsdam/Potsdam-am-Montag-Das-ist-heute-wichtig113
 #: by: http://www.maz-online.de/Lokales/Potsdam/Bruecke-am-Templiner-See-oeffnet-im-September

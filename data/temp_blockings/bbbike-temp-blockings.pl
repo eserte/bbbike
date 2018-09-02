@@ -1541,7 +1541,7 @@ EOF
        text  => 'K 6161; (Ernst-Thälmann-Str.); OD Schulzendorf, Kanal- und Straßenbau Vollsperrung 30.06.2005-30.11.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 25173,-3957 25150,-3949 25052,-3980 24933,-4017 24809,-4058 24798,-4061 24758,-4072 24714,-4087 24613,-4121 24295,-4221 24200,-4252 23387,-4518
+	q4 25173,-3957 25150,-3949 25052,-3980 24933,-4017 24809,-4058 24798,-4061 24758,-4072 24714,-4087 24613,-4121 24295,-4221 24200,-4252 23860,-4362 23387,-4518
 EOF
      },
      { from  => 1107475200, # 2005-02-04 01:00
@@ -22773,8 +22773,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
-#: osm_watch: way id="43141418" version="7" brb
-#: last_checked: 2017-03-18
+#: osm_watch: way id="43141418" version="9" brb
+#: last_checked: 2018-06-19 (osm)
 	2::inwork -12583,-1552 -12485,-1482
 # REMOVED ---	2::inwork -12485,-1482 -12474,-1559 -12596,-1701
 EOF
