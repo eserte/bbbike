@@ -43,10 +43,6 @@ if ($task eq 'check') {
     if (!-d $target_dir) {
 	die "Target directory $target_dir does not exist";
     }
-    my $bbbike_aux_dir = "$ENV{HOME}/src/bbbike-aux";
-    if (!-d $bbbike_aux_dir) {
-	die "bbbike-aux directory $bbbike_aux_dir missing";
-    }
     my $region = 'berlin';
     my $do_download = 1;
     my $do_osmconvert = 1;
@@ -98,7 +94,7 @@ if ($task eq 'check') {
 	    or die "Error renaming $region.osm.gz~: $!";
     }
 
-    system("$bbbike_aux_dir/misc/check-osm-watch-list.pl", "-diff", "-osm-file", "$target_dir/$region.osm.gz", ($region ne 'berlin' ? ('-osm-watch-list', "$bbbike_root/tmp/osm_watch_list_$region") : ()));
+    system("$bbbike_root/miscsrc/check-osm-watch-list.pl", "-diff", "-osm-file", "$target_dir/$region.osm.gz", ($region ne 'berlin' ? ('-osm-watch-list', "$bbbike_root/tmp/osm_watch_list_$region") : ()));
     if ($? != 0) {
 	die "There are possible diffs.\n";
     }
