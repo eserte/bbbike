@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012,2013,2016,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2013,2016,2017,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -503,8 +503,39 @@ if (%monthly_stats) {
 * monthly stats
 EOF
     print_org_visibility('folded');
+
+    my %monthly_stats_past_or_future;
+
+    my $sum_past = 0;
+    {
+	my $seen_today;
+	for my $date (reverse sort keys %monthly_stats) {
+	    if ($date =~ /AA/) {
+		$seen_today = 1;
+	    }
+	    if ($seen_today) {
+		$sum_past += $monthly_stats{$date};
+		$monthly_stats_past_or_future{$date} = $sum_past;
+	    }
+	}
+    }
+
+    my $sum_future = 0;
+    {
+	my $seen_today;
+	for my $date (sort keys %monthly_stats) {
+	    if ($date =~ /ZZ/) {
+		$seen_today = 1;
+	    }
+	    if ($seen_today) {
+		$sum_future += $monthly_stats{$date};
+		$monthly_stats_past_or_future{$date} = $sum_future;
+	    }
+	}
+    }
+
     for my $date (reverse sort keys %monthly_stats) {
-	print "** $date $monthly_stats{$date}\n";
+	printf "** %-10s %3d %4d\n", $date, $monthly_stats{$date}, $monthly_stats_past_or_future{$date};
     }
 }
 
