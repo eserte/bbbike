@@ -23777,6 +23777,7 @@ EOF
 #: note: am Fr, den 2018-04-04 gegen 18:40: offen
 #: note: am Mo, den 2018-05-28 gegen 18:40: offen
 #: note: am So, den 2018-07-01 gegen 12:30: offen
+#: note: am Mo, den 2018-09-03 gegen 18:30: offen
 #: tempex: volatile vvv
 	3::night 14563,8243 14425,8116 14419,8112
 	3::night 14419,8112 14425,8116 14563,8243
@@ -23988,7 +23989,7 @@ EOF
        data  => <<EOF,
 #: XXX bis wann geht die Sperrung?
 #: priority: #A
-#: last_checked: 2018-08-27
+#: last_checked: 2018-09-01
 #: check_frequency: 3d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -27545,8 +27546,8 @@ EOF
 EOF
      },
      { from  => 1531519200, # 2018-07-14 00:00
-       until => 1537048799, # 2018-09-15 23:59
-       text  => 'Semmelweisstr.: zwischen Korkedamm und Lehmfeldsteig komplett gesperrt (geplatzte Wasserleitung)',
+       until => $isodate2epoch->("2018-10-31 18:00:00"), # 1537048799, # 2018-09-15 23:59
+       text  => 'Semmelweisstr.: zwischen Korkedamm und Lehmfeldsteig komplett gesperrt (geplatzte Wasserleitung), voraussichtlich bis Ende Oktober 2018',
        type  => 'gesperrt',
        source_id => 'LMS-BR_r_LMS-BR_139053_LMS-BR_72',
        data  => <<EOF,
