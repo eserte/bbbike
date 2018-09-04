@@ -270,7 +270,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2018-07-30
+#: last_checked: 2018-09-04
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15021,11152 15102,11120
@@ -836,7 +836,7 @@ Bänschstr.: Asphalt	Q0 14996,12462 14801,12517
 Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: XXX Asphaltierung soll 2018 erfolgen
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf
-#: last_checked: 2018-08-26
+#: last_checked: 2018-09-04
 #: next_check: 2018-12-31
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -3475,9 +3475,7 @@ Radweg am Müggelsee: sehr guter Asphalt	Q0+ 25385,4414 25373,4371 25347,4320 253
 Radweg am Müggelsee: Beton	Q0- 25836,2499 25837,2485 25942,2453
 Am Müggelsee: Asphalt	Q0 25474,2848 25667,2787 25857,2654 26006,2615
 # REMOVED (Pflasterung mittlerweile entfernt) --- Bölschestr.: Kopfsteinpflaster	Q2 25539,5237 25544,5326
-#: XXX Bauarbeiten; wird sich die Qualität danach ändern?
-#: last_checked: 2018-07-07
-#: check_frequency: 60d
+# REMOVED (nein) --- #: XXX Bauarbeiten; wird sich die Qualität danach ändern? --- #: last_checked: 2018-07-07 --- #: check_frequency: 60d
 Myliusgarten: schlechtes Kopfsteinpflaster	Q3 25548,5398 25466,5408 25272,5417
 Agnes-von-Zahn-Harnack-Str.: Kopfsteinpflaster	Q2 7795,13093 7867,13127 7938,13150
 Katharina-Paulus-Str.: Kopfsteinpflaster	Q2 7867,13106 7867,13127

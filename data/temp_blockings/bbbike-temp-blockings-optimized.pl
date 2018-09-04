@@ -3522,7 +3522,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX bis wann geht die Sperrung?
 #: priority: #A
-#: last_checked: 2018-09-01
+#: last_checked: 2018-09-04
 #: check_frequency: 3d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 ',
@@ -4496,7 +4496,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX wann sind die "Radfahren verboten"-Schilder wieder weg?
-#: last_checked: 2018-08-27
+#: last_checked: 2018-09-04
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 ',

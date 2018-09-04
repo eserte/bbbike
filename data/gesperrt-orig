@@ -1780,7 +1780,7 @@ Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 12317,14535 12123,14643 1
 Torstr.: Mittelstreifen mit Straßenbahn	3nocross 10741,13685 10645,13711 10572,13731 10459,13760
 Yorckstr.: Linksabbiegen verboten (und unbequem)	3nocross 8192,9619 8097,9650 7938,9694
 Hauptstr./Kleistpark: unbequemes Überqueren, stark befahrene Straße	3nocross 7507,9458 7512,9572 7518,9791
-An den Treptowers: unbequemes Überqueren, stark befahrene Straße	3nocross 14501,10169 14405,10027 14289,9870
+An den Treptowers: unbequemes Überqueren, stark befahrene Straße	3nocross 14501,10169 14405,10027 14350,9953 14289,9870
 Lichtenberger Str.: Mittelstreifen	3nocross 12028,12519 12006,12464 11920,12266
 Sachsendamm: unbequem passierbarer Mittelstreifen	3nocross 7696,7562 7858,7462 7938,7406
 Karl-Marx-Str.: Mittelstreifen	3nocross 12598,8390 12582,8408 12562,8432 12540,8458
@@ -2942,7 +2942,7 @@ Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -1275
 #: check_frequency: 14d
 Boxhagener Str. - Weserstr.: Bauarbeiten, Durchfahrt nicht mehr möglich	2::inwork 14838,11410 14949,11474
 # 
-#: last_checked: 2018-08-21
+#: last_checked: 2018-09-04
 #: check_frequency: 30d
 Heidelberger Str.: Baustelle, Einbahnstraße	1s:q3:inwork 13491,9201 13421,9260 13357,9313
 # 
@@ -3307,12 +3307,7 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,
 # REMOVED (fertig) --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.476901.php --- #: next_check: 2016-05-14 --- Treptower Park: Bauarbeiten	2::inwork 14695,9587 14705,9578 14791,9537
 # REMOVED (fertig) --- Treptower Park: Bauarbeiten	2::inwork 15591,8848 15608,8882 15617,8924 15623,8949 15630,8979
 # REMOVED --- #: XXX evtl. kann man hier als Fußgänger irgendwie vorbei --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 3d --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14448,9922 14467,9880 14500,9863 --- #: last_checked ^^^
-# 
-#: by: http://www.dafmap.de/d/berlin.html?id=4160&mt=0&zoom=16
-#: last_checked: 2018-08-01
-#: osm_watch: way id="57852078" version="4"
-E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
-# 
+# REMOVED (scheint offen zu sein) --- #: by: http://www.dafmap.de/d/berlin.html?id=4160&mt=0&zoom=16 --- #: last_checked: 2018-08-01 --- #: osm_watch: way id="57852078" version="4" --- E.T.A.-Hoffmann-Promenade: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 9679,10710 9777,10719
 # REMOVED (fertig) --- #: next_check_id: STEGLITZPARK-2015 vvv --- #: last_checked: 2015-09-27 vvv --- #: check_frequency: 180d vvv --- #: by: http://www.dafmap.de/d/berlin.html?id=4144&mt=0&zoom=16 (Geplanter Projektabschluss: 2016-12-31) --- #: osm_watch: way id="306238980" version="2" --- #: XXX laut osm living_street --- SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2408,1144 2352,1267 --- #: osm_watch: way id="148434465" version="4" --- #: XXX laut osm living_street --- SteglitzPark: Bauarbeiten, Straßen gesperrt	2::inwork 2336,1111 2370,1127 2408,1144 2504,1186
 # REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?id=3217&mt=0&zoom=15 --- #: osm_watch: way id="318581438" version="4" --- #: last_checked: 2017-05-24 --- #: check_frequency: 150d --- Fünf Morgen: Bauarbeiten, gesperrt	2::inwork 1437,5015 1486,5175
 # REMOVED --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5713 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/___tmp/tmp/450810369999434/9999434/00071829/29-Anlagen/02/vzb0641_IV-B-Plan_XXI-32d-1_Auswertg_TOeB.pdf --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/artikel.434654.php --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/auslegungen/b-planentwurf_xxi-32d-1.pdf --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6762 --- #: XXX evtl. wird dieses Stück Straße komplett entfernt --- #: osm_watch: way id="24216753" version="14" --- #: last_checked: 2015-08-09 --- #: next_check: 2017-03-01 --- Gartenstr.: Baustelle	2::inwork 21193,11330 21214,11331
@@ -3501,7 +3496,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: http://www.dafmap.de/d/berlin.html?id=3588&mt=0&zoom=16
 #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung)
 #: XXX Spielbetrieb wird im Dezember 2017 aufgenommen
-#: last_checked: 2018-08-27 vvv
+#: last_checked: 2018-09-04 vvv
 #: check_frequency: 14d vvv
 Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9876,12298
 Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9798,12267 9795,12293 9780,12401
