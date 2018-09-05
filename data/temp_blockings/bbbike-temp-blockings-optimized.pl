@@ -3520,15 +3520,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: XXX bis wann geht die Sperrung?
+         'data' => '#: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
 #: priority: #A
 #: last_checked: 2018-09-04
-#: check_frequency: 3d
+#: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 ',
          'from' => 1534789491,
          'id' => 2666,
-         'text' => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn in Richtung Norden gesperrt, Ende der Sperrung unbekannt',
+         'text' => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn in Richtung Norden gesperrt, Ende der Sperrung möglicherweise Mitte November 2018',
          'type' => 'handicap',
          'until' => undef
        },
@@ -3997,7 +3997,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: XXX bis wann ist die Durchfahrt gesperrt?
+         'data' => '#: XXX bis wann ist die Durchfahrt gesperrt? (laut googlemaps bis Ende November 2018)
 #: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00, 2018-07-26 gegen 19:30, 2018-07-27 gegen 10:45, 2018-07-28 gegen 10:00, 2018-08-16 gegen 18:00, 2018-08-24 gegen 19:00
 #: source_id: 2147342009
 #: osm_watch: way id="154381291" version="5"
@@ -4062,10 +4062,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: last_checked: 2018-08-21 vvv
-# XXX_prog: eigentlich q3-
+         'data' => '#: XXX laut googlemaps bis 19. September 2018
+#: last_checked: 2018-08-21 vvv
+#: next_check: 2018-09-19 vvv
+# --- XXX_prog: eigentlich q3-
 	q4::inwork 7136,9223 7012,9222
 	q2::inwork 7136,9223 7130,9316
+#: next_check ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
@@ -4180,7 +4183,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: note: laut fritz bis 14.09.2018
+         'data' => '#: note: laut fritz bis 14.09.2018, laut googlemaps sogar bis Anfang November 2018
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/warten-auf-die-strassenbahn_a177965 (2018-09-17, danach noch weitere Einschränkungen)
 #: XXX_prog: eigentlich q3+
 	q3::inwork; 15516,12838 15367,12815 15357,12813 15233,12829 15098,12849 15074,12850 15010,12855 14940,12843 14906,12837 14836,12826 14750,12812 14661,12798 14556,12781 14435,12761 14355,12752 14096,12827
@@ -4517,7 +4520,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1545433200
        },
        {
-         'data' => '#: XXX bis wann sind hier Bauarbeiten?
+         'data' => '#: XXX bis wann sind hier Bauarbeiten? (laut googlemaps bis Mitte November 2018)
 #: last_checked: 2018-08-30
 #: check_frequency: 21d
 	q4::inwork; 4502,11740 4574,11587
@@ -4567,9 +4570,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => undef,
          'id' => 3006,
          'source_id' => '2147343061',
-         'text' => 'Hessische Str.: Richtung Torstr. gesperrt, bis 6. September 2018',
+         'text' => 'Hessische Str.: Richtung Torstr. gesperrt, bis 10. September 2018',
          'type' => 'handicap',
-         'until' => 1536271199
+         'until' => 1536595200
        },
        {
          'data' => '#: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
@@ -4609,6 +4612,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Bahnbrücke Templiner See: gesperrt, vermutliche Öffnung im September 2018',
          'type' => 'gesperrt',
          'until' => 1538323200
+       },
+       {
+         'data' => '	q4::inwork 12335,7770 12520,7694
+',
+         'from' => undef,
+         'id' => 3011,
+         'text' => 'Mittelweg: Bauarbeiten zwischen Morusstr. und Leykestr., Fahrbahn gesperrt',
+         'type' => 'handicap',
+         'until' => 1540918800
        }
      
 );
