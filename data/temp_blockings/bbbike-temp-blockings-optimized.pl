@@ -3522,7 +3522,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
 #: priority: #A
-#: last_checked: 2018-09-04
+#: last_checked: 2018-09-06
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 ',
@@ -4015,7 +4015,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-08-23 vvv
+#: last_checked: 2018-09-06 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4118,7 +4118,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147342751
 #: source_id: 2147343056
 # REMOVED (hier nicht mehr) ---	q4::inwork; 8901,12008 8861,12125
-#: last_checked: 2018-08-23
+#: last_checked: 2018-09-06
 # REMOVED --- #: check_frequency: 7d
 	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
 ',
@@ -4201,7 +4201,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-08-27
+#: last_checked: 2018-09-06
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -4344,6 +4344,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX nach den Bauarbeiten bessere Qualität
+#: by: https://www.berliner-woche.de/weissensee/c-bauen/neues-verkehrskonzept-soll-belastungen-fuer-anwohner-der-schoenstrasse-verringern_a178715 (hier wird eine Einbahnstraße eingerichtet)
 #: priority: #B
 #: last_checked: 2018-07-06
 #: check_frequency: 60d
@@ -4393,9 +4394,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1531605600,
          'id' => 2987,
          'source_id' => '2147342890',
-         'text' => 'Seelenbinderstr.: Richtung Bahnhofstr. zwischen Bellevuestr. und Bahnhofstr. Gleisbauarbeiten, Fahrtrichtung gesperrt, Radfahrer müssen auf den freigegebenen Gehweg ausweichen, bis Mitte September 2018',
+         'text' => 'Seelenbinderstr.: Richtung Bahnhofstr. zwischen Bellevuestr. und Bahnhofstr. Gleisbauarbeiten, Fahrtrichtung gesperrt, Radfahrer müssen auf den freigegebenen Gehweg ausweichen, bis Anfang Oktober 2018',
          'type' => 'handicap',
-         'until' => 1536940800
+         'until' => 1538496000
        },
        undef,
        {
@@ -4416,6 +4417,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.725875.php
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/weitere-sperrungen-rund-um-die-feuerbachstrasse_a174881
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729490.php
+#: by: https://www.berliner-woche.de/steglitz/c-bauen/bauarbeiten-gehen-weiter_a178952
 #: source_id: 2147342919
 #: source_id: 2147343007
 #: last_checked: 2018-08-15
@@ -4621,6 +4623,27 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Mittelweg: Bauarbeiten zwischen Morusstr. und Leykestr., Fahrbahn gesperrt',
          'type' => 'handicap',
          'until' => 1540918800
+       },
+       {
+         'data' => '	q4::inwork 12066,9558 12074,9689 12085,9778
+',
+         'from' => 1536172293,
+         'id' => 3012,
+         'source_id' => '2147343178',
+         'text' => 'Friedelstraße: zwischen Maybachufer und Pflügerstr. gesperrt, Asphaltierungsarbeiten, bis Ende November 2018',
+         'type' => 'handicap',
+         'until' => 1543597200
+       },
+       {
+         'data' => '#: XXX und können Radfahrer vielleicht passieren?
+	2::inwork 10526,6008 10543,6250 10454,6281 10384,6358 10377,6417
+',
+         'from' => undef,
+         'id' => 3013,
+         'source_id' => 'LMS-BR_r_LMS-BR_144848_LMS-BR_72',
+         'text' => 'Rohdestr.: Baustelle, gesperrt',
+         'type' => 'gesperrt',
+         'until' => 1536768000
        }
      
 );

@@ -89,7 +89,7 @@ Sinsheimer Weg: Betonstraße	Q0 13774,8849 13837,8932
 #: by: https://www.aktion-kms.de/projekte/umbau-donaustrasse/
 #: by: https://www.aktion-kms.de/assets/2017/01/Donaustra%C3%9Fe_LP_Lph3-LP_01.pdf
 #: osm_watch: way id="155605274" version="3"
-#: last_checked: 2018-09-03 vvv
+#: last_checked: 2018-09-06 vvv
 #: check_frequency: 7d vvv
 Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729 12549,8616 12649,8535
 #: XXX hier wird vermutlich auch die Einbahnstraßenregelung für Radfahrer aufgehoben
@@ -270,7 +270,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2018-09-04
+#: last_checked: 2018-09-06
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15021,11152 15102,11120
@@ -348,8 +348,7 @@ Alte Jakobstr.: Kopfsteinpflaster	Q2 10256,11160 10437,11352
 Ackerstr.: Kopfsteinpflaster	Q2 9439,14368 9400,14400
 Ackerstr.: Rasengittersteine	Q2 9400,14400 9375,14419
 Ackerstr.: Kopfsteinpflaster	Q2 9375,14419 9279,14495 9197,14562 9048,14681 8953,14758 8741,14928
-Ackerstr.: Kopfsteinpflaster	Q2- 9804,14071 9750,14132
-Ackerstr.: Kopfsteinpflaster	Q2 9750,14132 9627,14229
+Ackerstr.: Kopfsteinpflaster	Q2- 9804,14071 9750,14132 9627,14229
 Gartenstr.: Asphalt	Q0 8692,14923 8870,14637 8953,14528 9081,14363 9118,14306 9224,14169 9383,13986 9514,13826 9535,13801 9670,13637
 Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 8671,14919 8660,14929 8656,14947 8663,14960
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
@@ -650,7 +649,8 @@ Brixener Str.: Kopfsteinpflaster	Q2 10507,17400 10502,17419 10466,17464
 #: source_id: 2147342929
 #: priority: #B
 #: last_checked: 2018-09-01
-#: check_frequency: 14d
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2018-09-14
 Helmerdingstr.: Kopfsteinpflaster	Q2 14442,11101 14468,11203
 # 
 # REMOVED (Asphalt ist kaum von Vorteil hier) --- Helmerdingstr.: Asphalt/Kopfsteinpflaster	Q2+; 14468,11203 14442,11101
@@ -8013,6 +8013,9 @@ Hadlichstr.: teilweise Asphalt, teilweise Beton	Q0- 10815,18074 10900,18113 1097
 Hadlichstr.: Asphalt	Q0 11123,18343 11001,18528
 Straße 44 (Französisch Buchholz): Asphalt	Q0 12211,20486 12116,20559
 Ferdinand-Buisson-Str.: Asphalt	Q0 12337,20954 12459,21010 12562,21055 12629,21083
+#: XXX wird beim Ausbau hier auch asphaltiert?
+#: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/strassen-sollen-sicherer-werden_a178577 (Planung nicht vor Mitte 2019 fertig)
+#: next_check: 2019-07-01
 Ferdinand-Buisson-Str.: schlechtes Kopfsteinpflaster, teilweise mit Sandbanketten	Q3 12629,21083 12762,21140 12837,21229 12885,21282
 Ferdinand-Buisson-Str.: unbefestigte Straße	Q2 12885,21282 12939,21345 12948,21421 12953,21502 12994,21719
 Bananenapfelweg: unbefestigte Straße	Q2 12994,21719 13008,21783 13050,21994

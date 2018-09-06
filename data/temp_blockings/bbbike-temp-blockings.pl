@@ -23989,7 +23989,7 @@ EOF
        data  => <<EOF,
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
 #: priority: #A
-#: last_checked: 2018-09-04
+#: last_checked: 2018-09-06
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -26776,7 +26776,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-08-23 vvv
+#: last_checked: 2018-09-06 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27056,7 +27056,7 @@ EOF
 #: source_id: 2147342751
 #: source_id: 2147343056
 # REMOVED (hier nicht mehr) ---	q4::inwork; 8901,12008 8861,12125
-#: last_checked: 2018-08-23
+#: last_checked: 2018-09-06
 # REMOVED --- #: check_frequency: 7d
 	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
 EOF
@@ -27231,7 +27231,7 @@ EOF
        source_id => '2147342639',
        data  => <<EOF,
 #: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-08-27
+#: last_checked: 2018-09-06
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -27462,6 +27462,7 @@ EOF
        source_id => 'https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php',
        data  => <<EOF,
 #: XXX nach den Bauarbeiten bessere Qualität
+#: by: https://www.berliner-woche.de/weissensee/c-bauen/neues-verkehrskonzept-soll-belastungen-fuer-anwohner-der-schoenstrasse-verringern_a178715 (hier wird eine Einbahnstraße eingerichtet)
 #: priority: #B
 #: last_checked: 2018-07-06
 #: check_frequency: 60d
@@ -27530,8 +27531,8 @@ EOF
 EOF
      },
      { from  => 1531605600, # 2018-07-15 00:00
-       until => $isodate2epoch->("2018-09-14 18:00:00"), # 1535752799, # 2018-08-31 23:59
-       text  => 'Seelenbinderstr.: Richtung Bahnhofstr. zwischen Bellevuestr. und Bahnhofstr. Gleisbauarbeiten, Fahrtrichtung gesperrt, Radfahrer müssen auf den freigegebenen Gehweg ausweichen, bis Mitte September 2018',
+       until => $isodate2epoch->("2018-10-02 18:00:00"), # 1535752799, # 2018-08-31 23:59
+       text  => 'Seelenbinderstr.: Richtung Bahnhofstr. zwischen Bellevuestr. und Bahnhofstr. Gleisbauarbeiten, Fahrtrichtung gesperrt, Radfahrer müssen auf den freigegebenen Gehweg ausweichen, bis Anfang Oktober 2018',
        type  => 'handicap',
        source_id => '2147342890',
        data  => <<EOF,
@@ -27579,6 +27580,7 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.725875.php
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/weitere-sperrungen-rund-um-die-feuerbachstrasse_a174881
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729490.php
+#: by: https://www.berliner-woche.de/steglitz/c-bauen/bauarbeiten-gehen-weiter_a178952
 #: source_id: 2147342919
 #: source_id: 2147343007
 #: last_checked: 2018-08-15
@@ -27785,6 +27787,25 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 	q4::inwork 12335,7770 12520,7694
+EOF
+     },
+     { from  => 1536172293, # 2018-09-05 20:31
+       until => 1543597200, # 2018-11-30 18:00
+       text  => 'Friedelstraße: zwischen Maybachufer und Pflügerstr. gesperrt, Asphaltierungsarbeiten, bis Ende November 2018',
+       type  => 'handicap',
+       source_id => '2147343178',
+       data  => <<EOF,
+	q4::inwork 12066,9558 12074,9689 12085,9778
+EOF
+     },
+     { from  => undef, # 
+       until => $isodate2epoch->("2018-09-12 18:00:00"), # Ende laut fritz
+       text  => 'Rohdestr.: Baustelle, gesperrt',
+       type  => 'gesperrt',
+       source_id => 'LMS-BR_r_LMS-BR_144848_LMS-BR_72',
+       data  => <<EOF,
+#: XXX und können Radfahrer vielleicht passieren?
+	2::inwork 10526,6008 10543,6250 10454,6281 10384,6358 10377,6417
 EOF
      },
     );
