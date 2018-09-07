@@ -190,7 +190,8 @@ das Radwegschild steht etwa 50 Meter nach der Bossestr.	RW3; 14222,10430 14103,1
 	RW4;RW1 13476,11174 13493,11217
 am Anfang gibt es einen Radweg von 10 Metern Länge	RW0; 11949,10414 12169,10310
 die letzten Meter sind benutzungspflichtig	RW1; 12169,10310 11949,10414
-	RW1;RW1 12169,10310 12243,10274 12341,10218
+Radweg nur aufgemalt	RW1; 12169,10310 12243,10274 12341,10218
+	RW1; 12341,10218 12243,10274 12169,10310
 	RW1; 12341,10218 12464,10153 12507,10130 12671,10042 12814,9966 12932,9900
 Asphalt mit Wurzelschäden; unklare Ausschilderung, teilweise ist das Zeichen 241 missverständlich aufgestellt (könnten auch die Parkwege durch den Görlitzer Park gemeint sein); kurz vor dem Spreewaldplatz gibt es das Zeichen 237 ohne Auffahrmöglichkeit	RW1; 12932,9900 12814,9966 12671,10042 12507,10130 12464,10153 12341,10218
 	RW1;RW1 12932,9900 13026,9854 13086,9825
@@ -675,7 +676,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.735510.php
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2018-09-05
+#: last_checked: 2018-09-07
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
 Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 16699,10611 16725,10662 16751,10674 16892,10731 17083,10814 17141,10838 17226,10865 17257,10875 17466,10941 17560,10973 17621,10994
@@ -2261,7 +2262,7 @@ Busspur ist immer gültig	RW5; 3707,13274 3711,13210
 die letzten Meter sind benutzungspflichtig	RW3; 17380,8858 17729,8850
 die ersten 80 Meter sind nicht benutzungspflichtig	RW4; 17729,8850 17380,8858
 die letzten 50 Meter werden auf dem Gehweg geführt	RW4; 17380,8858 17067,8725
-	RW1; 18615,8269 18672,8238
+	RW2; 18615,8269 18672,8238
 Radweg endet schon nach 30 Metern	RW1; 18672,8238 18615,8269
 #: by: Butch Coolidge:
 Schild "Schritt fahren"	RW6; 9901,18522 10006,18502 10013,18545 9994,18595 9916,18610
@@ -5053,7 +5054,7 @@ Busspur gilt Mo-Sa 7-19 Uhr	RW5; 7433,13070 7563,13143 7573,13149 7714,13223
 	RW4; 7714,13223 7759,13246
 #: next_check_id: TRESKOWALLEE-2017
 #: XXX Bauarbeiten der Wasserbetriebe; die Radspur ist nicht mehr befahrbar; laut fritz Bauarbeiten bis 2020-12-31
-#: last_checked: 2018-06-25
+#: last_checked: 2018-09-07
 #: check_frequency: 90d
 # was: die letzten Meter nur Schutzstreifen	RW4; 18731,8577 18704,8427
 	RW0; 18731,8577 18704,8427

@@ -28,7 +28,7 @@ Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,107
 # 
 # REMOVED (südlicher Teil fertig, im nördlichen passiert vermutlich nichts --- handicap=q2, weiterhin, aber vorher war es in letzter Zeit eher q3 gewesen, auch vor den Bauarbeiten) --- #: XXX Bauarbeiten im südlichen Abschnitt, vielleicht hat das mit den Verbesserungen zu tun --- #: last_checked: 2018-06-15 --- #: check_frequency: 30d --- Görlitzer Park: Verbesserungen geplant	?::inwork 12814,9966 12833,9998 12869,10071 12901,10134 12905,10143
 # 
-#: last_checked: 2018-09-05
+#: last_checked: 2018-09-07
 #: next_check: 2018-12-31
 NKZ: Verbesserungen geplant	?::projected 11291,10438 11317,10485 11344,10507 11334,10527
 # 
@@ -36,7 +36,7 @@ NKZ: Verbesserungen geplant	?::projected 11291,10438 11317,10485 11344,10507 113
 #: next_check: 2018-12-31
 Yorckstr. - Hornstr.: Verbesserung der Zufahrt geplant	?::projected 9044,9753 9002,9731 8980,9751 8988,9783
 # 
-#: last_checked: 2018-08-22
+#: last_checked: 2018-09-07
 #: check_frequency: 150d
 Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14868,10467
 #: by: ^^^
@@ -706,13 +706,17 @@ Salvador-Allende-Str. - Müggelseedamm: Verbesserung der Befahrbarkeit, Bau einer
 Sterndamm: Errichten einer Radverkehrsanlage	?::projected 17648,5338 17736,5441 17886,5587
 #: XXX Jt.2
 #: XXX evtl. nur Richtung Süden, Richtung Norden gibt es bereits eine Busspur
+#: osm_watch: way id="216169539" version="3"
+#: osm_watch: way id="319539204" version="10"
 #: last_checked: 2018-08-11
 Sterndamm: Errichten einer Radverkehrsanlage	?::projected 17648,5338 17601,5090 17542,4772 17520,4649
 #: XXX Jt.3
+#: osm_watch: way id="132688411" version="6"
 #: last_checked: 2018-08-11
 Sterndamm: Errichten einer Radverkehrsanlage	?::projected 17520,4649 17471,4570 17428,4503 17387,4446 17290,4308 17261,4267 17244,4242 17110,4055 17053,3971 17219,3795 17364,3565
 # 
 #: XXX Jt.4
+#: osm_watch: way id="81535329" version="13"
 #: last_checked: 2018-08-11
 Königsheideweg: Errichten einer Radverkehrsanlage	?::projected 17520,4649 17266,4720 17115,4757
 #: XXX Jt.6
@@ -979,10 +983,10 @@ Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22351
 # REMOVED (realisiert) --- #: XXX routing_helper ggfs. anpassen --- #: last_checked: 2017-12-03 --- Frankfurter Allee: Zweirichtungsradweg	?::projected; 15717,12010 15670,12022
 # 
 #: osm_watch: way id="51872061" version="30"
-#: last_checked: 2018-07-27
+#: last_checked: 2018-09-07
 Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected; 18037,9195 17549,9529
 #: osm_watch: way id="31525575" version="17"
-#: last_checked: 2018-07-27
+#: last_checked: 2018-09-07
 Wallensteinstr.: Asphaltstreifen geplant	?::projected 17549,9529 17456,9594 17425,9605 17360,9629
 # 
 #: XXX oder ist die andere Seite vor Pablo-Picasso-Str. gemeint?
@@ -1005,6 +1009,7 @@ Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 16837,17440 16578,17285
 #: osm_watch: way id="40816680" version="9"
 #: osm_watch: way id="39965422" version="7"
 #: source_id: 2147342689 (wobei das für die andere Richtung gilt)
+#: source_id: 2147343084 (wobei das für die andere Richtung gilt)
 #: last_checked: 2017-08-19
 #: next_check: 2018-06-12
 Ollenhauerstr.: Lückenschluss (Radweg oder Radspur)?	?::projected; 5184,17855 5200,17938 5217,18030
@@ -1023,6 +1028,7 @@ Dovestr.: Radstreifen	?::projected 4749,12689 4648,12559 4616,12532
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
 #: by: http://www.berliner-woche.de/charlottenburg/verkehr/der-verbesserung-des-radwegenetzes-fallen-500-parkplaetze-zum-opfer-d143224.html (Protected Bike Lanes südl. der Ballenstedtstr.)
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.706272.php
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.736837.php (hier: zwischen Adenauerplatz und Konstanzer Str.)
 #: osm_watch: way id="26071050" version="11"
 #: osm_watch: way id="26071046" version="11"
 #: osm_watch: way id="26071048" version="9"
@@ -1603,7 +1609,8 @@ Privatstraßen in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualit
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/neuer-spielplatz-am-parkgraben_a167123 (Fertigstellung für Anfang Juli 2018 geplant)
 # REMOVED (Schilder sind da) --- #: osm_watch: way id="344108078" version="3" --- #: XXX_osm laut osm living_street, die Schilder fehlen aber in der Realität --- Rennesstr.: wird hier noch verkehrsberuhigt?	? 12422,21492 12472,21510
 # REMOVED (dieser Abschnitt existiert bereits) --- #: osm_watch: way id="344108077" version="3" --- Nizzastr. - Dr.-Markus-Str.: Gehweg, für Radfahrer frei ausgeschildert, der Weg existiert aber noch nicht. Genaue Lage? Qualität? Nachts beleuchtet?	?::inwork 12434,21160 12520,21199 12535,21282 12507,21391 12501,21468 12498,21502 12515,21581
-#: osm_watch: way id="594481128" version="1"
+# REMOVED (existiert nicht mehr) --- #: osm_watch: way id="594481128" version="2"
+#: osm_watch: way id="344108081" version="5"
 #: last_checked: 2018-07-07
 #: check_frequency: 180d
 Nizzastr. - Dr.-Markus-Str.: wann wird der restliche Weg gebaut?	?::projected 12515,21581 12495,21670
@@ -1771,7 +1778,7 @@ Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projecte
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.736281.php
 #: XXX Ausbau des Kopfsteinpflasters, Bau einer Asphaltfahrbahn
 #: osm_watch: way id="75509950" version="12"
-#: last_checked: 2018-09-04
+#: last_checked: 2018-09-07
 #: next_check: 2018-11-30
 Friedelstr.: Asphaltierung	?::inwork 12085,9778 12074,9689 12066,9558 12047,9429 12074,9217
 # 
@@ -1918,6 +1925,7 @@ Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Brücke 
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_45_5121_5232_online.pdf (Benennung von Straßen)
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_05_0625_0772_online.pdf (Grundstücksnummerierungen)
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_12_1519_1638_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_36_4931_5082_online.pdf (Grundstücksnummerierungen)
 #: last_checked: 2018-05-21 vvv
 #: check_frequency: 270d vvv
 An den Auen: Qualität?	?::projected 21194,19054 21248,19007 21285,18950 21310,18889
@@ -1966,6 +1974,7 @@ Kletterrosenweg	?::projected 21382,149 21354,289
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20131129.0640.392180.html (Straßenausbau geplant)
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.95087.php?date=20160124 (Beginn im Jahr 2016)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.732983.php
+#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/auf-der-hildburghauser-geht-es-weiter-voran_a179492
 # REMOVED (kein Platz für Radspuren) --- #: source_id: 2147339913 --- #: XXX zurzeit Bauarbeiten (laut fritz bis bis 13.01.2017), gibt es Einschränkungen für Radfahrer? --- #: last_checked: 2017-03-26 --- #: check_frequency: 90d --- Hildburghauser Str.: Ausbau der Straße, wie werden die Radwege später aussehen?	?::inwork 4795,1362 4897,1352 5059,1337
 #: source_id: 2147341614
 #: source_id: LMS-BR_r_LMS-BR_103980_LMS-BR_72
@@ -2001,7 +2010,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: osm_watch: way id="46039447" version="16"
 #: osm_watch: way id="456120288" version="3"
 #: source_id: 2147342174
-#: last_checked: 2018-06-25
+#: last_checked: 2018-09-07
 #: next_check: 2019-03-01
 Treskowallee: Bau von Radwegen	?::projected; 18704,8427 18731,8577 18733,8633
 # 
@@ -2299,6 +2308,10 @@ Rudolf-Leonhard-Str. - Blumberger Damm: Fuß- und Radweg in Planung	?::projected 
 #: XXX Bebauungsplan XXI-32d-1 in Marzahn-Hellersdorf
 #: next_check: 2019-08-01
 Gartenstr. (Biesdorf): wird eventuell noch kürzer werden	?::projected 21193,11330 21214,11331
+# 
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1809/nachricht6603.html
+#: next_check: 2019-07-01
+Friedrich-Wilhelm-Platz: Verbindung zwischen Niedstr. und Wilhelmshöher Str. geplant	?::projected 5364,7330 5310,7325
 # 
 #: section ^^^
 #: ignore ^^^
@@ -3071,8 +3084,8 @@ Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 125
 Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563 6224,9544 6242,9525
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8520 vvv
-#: last_checked: 2018-05-16
-#: next_check: 2018-10-01
+#: last_checked: 2018-09-07
+#: check_frequency: 90d
 #: priority: #D
 Reichenberger Str.: wird hier ein Zebrastreifen markiert?	? 12385,9966 12398,9938 12366,9929
 #: last_checked: 2018-09-05
@@ -3886,7 +3899,7 @@ Lichterfelde Süd: neue Straßen im Zuge des Bebauungsplans 6-30?	?::projected 406
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7336
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_10_1273_1404_online.pdf (Teilung des Bebauungsplans)
 #: osm_watch: way id="428279379" version="7"
-#: last_checked: 2018-06-25
+#: last_checked: 2018-09-07
 #: check_frequency: 720d
 Karlshorst-West/Parkstadt Karlshorst: neues Wohngebiet wird entstehen, auch neue Straßen	?::projected 17404,8844 17722,8831 17865,8766 17751,8312 17627,8379 17492,8649 17404,8844
 # 
@@ -4063,7 +4076,7 @@ Im Lindenhof: Planstraße B, Qualität, genaue Lage?	?::inwork 17370,12649 17475,1
 #: XXX fehlt in Berlin.coords.data; Benennung soll zum 2017-07-01 wirksam werden; PLZ=10245
 #: XXX laut LOR 7/2019 zwei PLZ: 10245 und 10247 (kann das stimmen?)
 #: XXX zuführende Straßen/Wege müssen auch eingezeichnet werden
-#: last_checked: 2018-08-31
+#: last_checked: 2018-09-07
 #: check_frequency: 14d
 Siegfried-Hirschmann-Park: neue private Platzfläche, Qualität, genaue Lage?	?::inwork 14730,11529 14800,11441
 # 
@@ -4085,7 +4098,7 @@ Krampnitz: neue Planstraßen	?::projected -14183,5214 -13771,5077
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/wasserpark-berlin-c-hager-partner-ag.pdf
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7152
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136248111083/248111083/00223364/64-Anlagen/07/137-2017-2Bplan-XVII-4_Bl1-2-170803-Abzeichnun.pdf
-#: last_checked: 2018-08-02
+#: last_checked: 2018-09-07
 #: next_check: 2022-01-01
 Ostkreuz-Rummelsburger Bucht: neues Wohnquartier mit Straßen und Wegen sowie Wasserpark	?::projected 14915,10785 14872,10634 14987,10601 15106,10655 15174,10641 15200,10741 14915,10785
 # 

@@ -20895,7 +20895,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, #
-       text  => 'Weserstr. - Boxhagener Str.: Tor in einer Hausdurchfahrt, nachts und selten auch sonntags gesperrt',
+       text  => 'Weserstr. - Boxhagener Str.: Tor in einer Hausdurchfahrt, nachts und selten auch sonntags gesperrt; außerdem kann der Durchgang wegen Bauarbeiten gesperrt sein',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
@@ -20914,6 +20914,10 @@ EOF
 #: note: geprüft am Sa, den 2016-09-20, vormittags: offen
 #: tempex: volatile
 	2::night 14838,11410 14792,11391
+#: XXX wird hier dauerhaft gesperrt sein? (zurzeit kann man sich noch an den Bauzäunen vorbei mogeln)
+#: last_checked: 2018-09-07
+#: check_frequency: 7d
+	2::inwork 14838,11410 14949,11474
 EOF
      },
      { from  => 1345119120, # 2012-08-16 14:12
@@ -26740,10 +26744,11 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX bis wann ist die Durchfahrt gesperrt? (laut googlemaps bis Ende November 2018)
-#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00, 2018-07-26 gegen 19:30, 2018-07-27 gegen 10:45, 2018-07-28 gegen 10:00, 2018-08-16 gegen 18:00, 2018-08-24 gegen 19:00
+#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00, 2018-07-26 gegen 19:30, 2018-07-27 gegen 10:45, 2018-07-28 gegen 10:00, 2018-08-16 gegen 18:00, 2018-08-24 gegen 19:00,
+#: note: unklar, ob man durchgekommen wäre: 2018-09-07 gegen 08:30
 #: source_id: 2147342009
 #: osm_watch: way id="154381291" version="5"
-#: last_checked: 2018-08-24
+#: last_checked: 2018-09-07
 #: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
 EOF
@@ -27645,8 +27650,8 @@ EOF
 EOF
      },
      { from  => 1534654800, # 2018-08-19 07:00
-       until => 1536508800, # 2018-09-09 18:00
-       text  => 'Müllerstr.: Sperrung an der Kreuzung Seestr., nur Fußgänger können passieren, von 20. August 2018, ca. 07:00 Uhr bis voraussichtlich bis 09. September 2018',
+       until => $isodate2epoch->("2018-09-10 18:00:00"), # 1536508800, # 2018-09-09 18:00
+       text  => 'Müllerstr.: Sperrung an der Kreuzung Seestr., nur Fußgänger können passieren, von 20. August 2018, ca. 07:00 Uhr bis voraussichtlich bis 10. September 2018',
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/mullerstra%C3%9Fe-wedding-vollsperrung-in-hohe-seestra%C3%9Fe-%C2%B7-gleisbauarbeiten',
        data  => <<EOF,
@@ -27726,8 +27731,8 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2018-09-10 18:00:00"), # 1536271199, # 2018-09-06 23:59
-       text  => 'Hessische Str.: Richtung Torstr. gesperrt, bis 10. September 2018',
+       until => $isodate2epoch->("2018-09-19 18:00:00"), # 1536271199, # 2018-09-06 23:59
+       text  => 'Hessische Str.: Richtung Torstr. gesperrt, bis 19. September 2018',
        type  => 'handicap',
        source_id => '2147343061',
        data  => <<EOF,
@@ -27741,8 +27746,8 @@ EOF
        type  => 'handicap',
        source_id => '2147342174',
        data  => <<EOF,
-#: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
-#: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
+# REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
+# REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
 	q4::inwork; 18809,9133 18790,9018 18770,8898 18737,8686 18733,8650 18733,8633
 EOF
      },
