@@ -1624,8 +1624,11 @@ die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
 	RW3; 15000,10792 15261,10738
 	RW1;RW1 14652,10201 14688,10167 14705,10149 14747,10108 14817,10031
 	RW0;RW1 13795,9941 13890,9894
-	RW1;RW1 13890,9894 13999,9842
+	RW1; 13999,9842 13890,9894
+#: note: außerdem existiert eine asphaltierte Nebenstraßen (mit einigen kleineren Schäden), vor der Elsenstr. entweder scharf auf den Radweg abbiegen oder hoffen, dass keine Taxen am Sackgassenende den Weg versperren vvv
+	RW1; 13890,9894 13999,9842
 die letzten Meter sind benutzungspflichtig	RW1; 13999,9842 14196,9749
+#: note ^^^
 	RW1; 14196,9749 13999,9842
 Busspur gilt Mo-Fr 6-20 Uhr und Sa 8-14 Uhr	RW5; 13923,9405 13973,9465
 Busspur gilt Mo-Fr 6-20 Uhr und Sa 8-14 Uhr; die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW5; 13973,9465 14089,9610

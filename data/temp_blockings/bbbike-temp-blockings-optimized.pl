@@ -4549,17 +4549,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1537308000
        },
-       {
-         'data' => '#: source_id: 2147343083
-	q4::inwork; 7843,18705 7753,18542 7676,18492
-',
-         'from' => 1535234400,
-         'id' => 3004,
-         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.732621.php',
-         'text' => 'Emmentaler Str.: Bauarbeiten zwischen Reginhardstr. bis Klemkestr., Einbahnstraße offen Richtung Nordosten, vom 27. August 2018 bis zum 07. September 2018',
-         'type' => 'handicap',
-         'until' => 1536357599
-       },
+       undef,
        {
          'data' => '	2::inwork -7230,25622 -7243,25847 -7309,26146
 ',
@@ -4649,6 +4639,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Rohdestr.: Baustelle, gesperrt',
          'type' => 'gesperrt',
          'until' => 1536768000
+       },
+       {
+         'data' => '#: XXX ist das Tor tatsächlich geschlossen? und wenn ja, wann wird es wieder geöffnet?
+#: next_check: 2018-09-12
+	2::inwork -6198,5357 -6366,5215
+',
+         'from' => undef,
+         'id' => 3014,
+         'source_id' => 'https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9493',
+         'text' => 'Gutspark Neukladow: Südtor ist möglicherweise geschlossen',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

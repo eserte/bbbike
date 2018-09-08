@@ -27813,4 +27813,15 @@ EOF
 	2::inwork 10526,6008 10543,6250 10454,6281 10384,6358 10377,6417
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Gutspark Neukladow: Südtor ist möglicherweise geschlossen',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9493',
+       data  => <<EOF,
+#: XXX ist das Tor tatsächlich geschlossen? und wenn ja, wann wird es wieder geöffnet?
+#: next_check: 2018-09-12
+	2::inwork -6198,5357 -6366,5215
+EOF
+     },
     );
