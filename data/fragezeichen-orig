@@ -1000,7 +1000,8 @@ Falkenberger Chaussee: Verbesserung -> Radspuren oder Asphaltierung des Radwegs?
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7678
 #: osm_watch: way id="40520565" version="28"
-#: osm_watch: way id="51317007" version="23"
+#: osm_watch: way id="51317007" version="24"
+#: osm_watch: way id="624116238" version="1"
 #: last_checked: 2018-07-07
 Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 16837,17440 16578,17285 16460,17214 16352,17150 16318,17128
 # 
@@ -1777,6 +1778,7 @@ Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projecte
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf
 #: by: https://fahrradfreundliches-neukoelln.de/blog/fahr-rat-7-maerz-2018 (2018 schon?)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.736281.php
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/anschluss-fuer-radfahrer_a179819
 #: XXX Ausbau des Kopfsteinpflasters, Bau einer Asphaltfahrbahn
 #: osm_watch: way id="75509950" version="12"
 #: last_checked: 2018-09-07
@@ -2744,7 +2746,7 @@ Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich für den Kfz-Verkehr gesperr
 # REMOVED --- #: XXX b) Amberbaumallee PLZ=14089 --- Amberbaumallee: Qualität? Genaue Lage? Existiert die Straße schon? Hinterer Teil nur für Fußgänger?	? -6221,6411 -6340,6500 -6375,6525 -6410,6549 -6556,6663 -6661,6743
 #: XXX c) Moorbirkenweg PLZ=14089
 #: XXX hier existiert nur eine provisorische Baustraße an ungefähr der gleichen Stelle
-#: osm_watch: way id="439502385" version="1"
+#: osm_watch: way id="623711661" version="1"
 #: last_checked: 2017-07-15
 #: check_frequency: 120d
 Moorbirkenweg: Qualität? Wo wird sich die Straße befinden? Existiert die Straße schon?	? -6251,6370 -6407,6481 -6375,6525
@@ -3996,7 +3998,8 @@ Privatstraße B: Name, genauer Verlauf, Qualität?	? -7885,13818 -7730,13857
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_30_4055_4194_online.pdf (Grundstücksnummerierungen)
 #: XXX Straßennamen sind wohl: Künzelsauer Weg, Öhringer Weg, Hohenloher Weg, Ingelfinger Weg; fehlen alle in Berlin.coords.data
 #: XXX vermutlich (teilweise?) Privatstraßen
-#: osm_watch: way id="35813429" version="5"
+#: osm_watch: way id="623949510" version="1"
+#: osm_watch: way id="623949513" version="1"
 #: last_checked: 2018-06-30 vvv
 #: check_frequency: 180d vvv
 Neue Straßen entstehen: Qualität, genaue Lage, Straßennamen?	?::inwork -8153,15852 -8223,15879 -8312,15914 -8377,15756 -8285,15718 -8274,15743 -8223,15879
@@ -4285,6 +4288,12 @@ Schönegarten: eine neue Privatstraße entsteht, genaue Lage, Qualität?	?::project
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/eisenbahn/eichborndamm/U-07_Bauwerkspl%c3%a4ne/U-07-1_BW-LAP-M200%20420x1160.pdf
 #: next_check: 2020-04-01
 S-Bhf. Eichborndamm: neue Unterführung geplant, wird diese für Radfahrer benutzbar sein?	?::projected 4475,18998 4459,18999 4459,19054 4500,19064
+# 
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan-fuer-meinberlin/bebauungsplan.733605.php
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-77ve/180909_-2-_b-plan-7-77ve_britzer-strasse-a1_ohne-beschnittzeichen.pdf
+#: osm_watch: way id="287142081" version="6"
+#: next_check: 2019-07-01
+Bebauungsplan 7-77VE: geplante verkehrsberuhigte Straßen, ggfs. noch weitere Wege	?::projected 10866,3756 10892,3890 10938,3936 11005,3928 11045,3885 11035,3834 10980,3791 10955,3795 10941,3745
 # 
 #: ignore ^^^
 #: section ^^^
@@ -5843,6 +5852,8 @@ Mittelweg (Potsdam-Fahrland): Qualität?	? -18244,9081 -17440,9614
 Ebereschenweg (Potsdam-Grube): Qualität? Ausgeschildert?	? -19249,4366 -19245,4318 -19224,4095 -19275,4104
 Paddenpuhl (Potsdam-Grube): Qualität?	? -19245,4318 -19286,4319 -19285,4170 -19275,4104
 (Zur Nuthe - Uferweg): existiert eine Verbindung für Radfahrer? Qualität?	? -9472,-4061 -9463,-4052 -9422,-4028
+#: XXX fehlt in Potsdam.coords.data (PLZ=14471)
+Am Mittelweg (Potsdam-West): Qualität? Ausgeschildert? Genauer Verlaufe der Straße?	? -14868,-2244 -14884,-2207 -14845,-2205 -14827,-2181 -14703,-2173 -14642,-2159
 Rosenweg (Potsdam): Qualität? Ausgeschildert?	? -9463,-4052 -9539,-3940
 Tulpenweg (Potsdam): Qualität? Ausgeschildert?	? -9502,-4079 -9576,-3961
 Wiesenweg (Potsdam): Qualität? Ausgeschildert?	? -9573,-4124 -9653,-3994

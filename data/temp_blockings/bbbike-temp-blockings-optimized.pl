@@ -1,121 +1,6 @@
-$#temp_blocking = 30;
+$#temp_blocking = 126;
 push @temp_blocking,
 (
-       {
-         'data' => '#: by: http://www.weinfeste-in-deutschland.de/wein-und-winzerfest-in-berlin-lichtenrade.html
-	2::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
-',
-         'from' => 1536224400,
-         'id' => 31,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              6,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 07.09.2018 16:00 bis 09.09.2018 20:00',
-         'type' => 'gesperrt',
-         'until' => 1536519600
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'data' => '	2 8055,12186 8089,12190 8214,12205
 	2 8214,12205 8303,12216 8344,12221 8538,12245
@@ -2723,27 +2608,7 @@ Albrecht-Thaer-Weg: Privatstraﬂe, evtl. nicht geˆffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.laubinger.de/termine/48-fest-an-der-panke/
-	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345
-	2::temp 10602,18382 10562,18506 10532,18601
-',
-         'from' => 1536271200,
-         'id' => 2281,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              7,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'Breite Str. (Pankow) in beiden Richtungen zwischen M¸hlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straﬂen gesperrt (08.09.2018-09.09.2018)',
-         'type' => 'gesperrt',
-         'until' => 1536530399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3319,28 +3184,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: kein tempex-Ausdruck mˆglich
-	2::temp 5648,9642 5642,9613 5618,9607 5598,9612 5578,9629
-',
-         'from' => 1536238800,
-         'id' => 2533,
-         'periodic' => 1,
-         'recurrence_prewarn_days' => 14,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              9
-                            ]
-                          ],
-         'source_id' => 'http://bigland.de/event/7-9-9-2018-fest-der-nationen/',
-         'text' => 'Prager Platz: Veranstaltung "Fest der Nationen", Durchfahrt nicht mˆglich, vom 7.9.2018 15 Uhr bis 9.9.2018 22 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1536523200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4191,6 +4035,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: note: laut fritz bis 14.09.2018, laut googlemaps sogar bis Anfang November 2018
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/warten-auf-die-strassenbahn_a177965 (2018-09-17, danach noch weitere Einschr‰nkungen)
 #: XXX_prog: eigentlich q3+
+#: XXX sind die Bauarbeiten schon beendet (bei VMZ ist der Eintrag verschwunden)?
 	q3::inwork; 15516,12838 15367,12815 15357,12813 15233,12829 15098,12849 15074,12850 15010,12855 14940,12843 14906,12837 14836,12826 14750,12812 14661,12798 14556,12781 14435,12761 14355,12752 14096,12827
 ',
          'from' => 1526323594,
@@ -4260,22 +4105,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '#: XXX eventuell h‰ngen die Bauarbeiten mit den Bauarbeiten in der Eldenaer Str. zusammen
-#: XXX wird danach komplett asphaltiert sein?
-#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=42743 (sogar bis 2018-09-17)
-#: source_id: 2147342618
-#: priority: #A
-#: last_checked: 2018-08-28
-# REMOVED --- #: next_check: 2018-07-13
-	q4::inwork 13767,12626 13786,12636 13863,12677 13911,12692
-',
-         'from' => undef,
-         'id' => 2968,
-         'text' => 'Weidenweg: Bauarbeiten, Fahrbahn gesperrt',
-         'type' => 'handicap',
-         'until' => 1536595200
-       },
+       undef,
        {
          'data' => '#: XXX eventuell h‰ngen die Bauarbeiten mit den Bauarbeiten in der Eldenaer Str. zusammen
 #: XXX wird danach komplett asphaltiert sein?
@@ -4370,6 +4200,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.722387.php (nur Kreuzungsbereich betroffen)
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/finckensteinallee-gesperrt_a171782
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729460.php
+#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/an-kreuzung-finckensteinalleecarstennstrasse-wird-bis-ende-november-gebaut_a178961
 	q4::inwork 2737,2866 2625,2850
 	q4::inwork 2625,2850 2570,2844
 # REMOVED ---	q4::inwork 2570,2844 2290,2864
@@ -4481,17 +4312,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1544828400
        },
        undef,
-       {
-         'data' => '#: source_id: 2147343041
-	q4::inwork 6914,15908 6781,16026 6712,16087
-',
-         'from' => 1534654800,
-         'id' => 2998,
-         'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/mullerstra%C3%9Fe-wedding-vollsperrung-in-hohe-seestra%C3%9Fe-%C2%B7-gleisbauarbeiten',
-         'text' => 'M¸llerstr.: Sperrung an der Kreuzung Seestr., nur Fuﬂg‰nger kˆnnen passieren, von 20. August 2018, ca. 07:00 Uhr bis voraussichtlich bis 10. September 2018',
-         'type' => 'handicap',
-         'until' => 1536595200
-       },
+       undef,
        {
          'data' => '#: note: Gesamtbaumaﬂnahme bis 31.12.2023
 # REMOVED (ja) --- #: XXX sind tats‰chlich Radfahrer betroffen?
