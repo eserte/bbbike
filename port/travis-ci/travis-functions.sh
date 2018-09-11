@@ -191,12 +191,18 @@ install_perl_dependencies() {
 	# so make sure to install Tk early. See
 	# https://rt.cpan.org/Ticket/Display.html?id=102434
 	cpanm --quiet --notest Tk
+
 	# Upgrade CGI.pm to avoid "CGI will be removed from the Perl core distribution" warnings
 	case "$PERLBREW_PERL" in
 	    5.20*)
 		cpanm --quiet --notest CGI
 		;;
 	esac
+
+	# DBD::mysql 4.047 ships with a broken META file. See
+	# https://github.com/perl5-dbi/DBD-mysql/issues/263
+	cpanm --quite --notest 'DBD::mysql~!=4.047'
+
 	if [ "$CPAN_INSTALLER" = "cpanm" ]
 	then
 	    cpanm --quiet --installdeps --notest .
