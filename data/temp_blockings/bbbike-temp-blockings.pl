@@ -26487,7 +26487,7 @@ EOF
 #: source_id: 2147342861
 #: source_id: 2147342860
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2018-07-01 vvv
+#: last_checked: 2018-09-12 vvv
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2018-12-31 vvv
 # REMOVED (hier fertig) ---	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
@@ -26695,7 +26695,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1536767462, # undef, # XXX
        text  => 'Anhaltinerstr.: mögliche Beeinträchtigungen durch Bauarbeiten',
        type  => 'handicap',
        data  => <<EOF,
@@ -27389,7 +27389,7 @@ EOF
 #: next_check_id: VERLWERDERSTR-2018
 #: by: https://www.berliner-woche.de/altglienicke/c-bauen/werderstrasse-wird-ausgebaut_a169172
 #: XXX nach den Bauarbeiten vermutlich Verbundsteinpflaster oder Betonpflaster
-#: last_checked: 2018-08-11
+#: last_checked: 2018-09-12
 	2::inwork 20245,2152 20261,2114 20222,2037 20214,1988 20187,1930 20166,1864 20120,1791 20093,1776 20064,1777
 EOF
      },
@@ -27824,6 +27824,39 @@ EOF
 #: XXX ist das Tor tatsächlich geschlossen? und wenn ja, wann wird es wieder geöffnet?
 #: next_check: 2018-09-12
 	2::inwork -6198,5357 -6366,5215
+EOF
+     },
+     { from  => undef, # 
+       until => 1542301200, # 2018-11-15 18:00
+       text  => 'Wilhelm-Hauff-Str./Wielandstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen, Bordstein',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2018-09-12
+	q3::inwork 5959,6976 6081,6977 6082,7066
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Thielallee, Corrensplatz: Bauarbeiten, Fahrbahn zwischen Boetticherstr. und Thieallee gesperrt sowie Thielallee Richtung Norden ab Corrensplatz gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2018-09-12 vvv
+#: check_frequency: 7d vvv
+	q4::inwork 2434,4299 2407,4280
+	q4::inwork; 2407,4280 2429,4385
+#: check_frequency ^^^
+#: last_checked ^^^
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'Jungfernstieg: Asphaltierungsarbeiten, Fahrbahn kann gesperrt sein',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: JUNGFERNSTIEG-2018
+#: last_checked: 2018-09-12
+#: check_frequency: 7d
+	q4::inwork 5229,2395 5332,2568 5425,2735 5510,2883
 EOF
      },
     );

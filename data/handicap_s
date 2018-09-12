@@ -539,7 +539,7 @@ Pankeweg: enger Pfad	q2 13365,22743 13321,22586 13295,22545 13290,22377 13354,22
 Oberlandgarten: Fuﬂg‰nger, Bordsteine	q2 11250,6555 11256,6502 11253,6473
 Germaniagarten: Fuﬂg‰nger, Bordsteine	q2 11209,6166 11224,6244
 (Bambachstr. - Mariendorfer Weg): Fuﬂg‰nger, enge Kurven	q2 12052,6660 12038,6633 12052,6605 12094,6585 12125,6510
-Mauerweg: Fuﬂg‰nger	q1 12984,1011 12557,799 12246,706 11922,586 11794,550 11698,390 11686,169 11746,-62 11819,-286 12078,-1170 12283,-1881 12344,-2173 12314,-2270 12268,-2294
+Mauerweg: Fuﬂg‰nger	q1 12984,1011 12557,799 12246,706 12014,620 11956,599 11922,586 11794,550 11698,390 11686,169 11746,-62 11819,-286 12078,-1170 12283,-1881 12344,-2173 12314,-2270 12268,-2294
 Mauerweg: Fuﬂg‰nger	q1 4406,-910 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3417,524
 Bayernring: enge Straﬂe	q1 8380,8545 8454,8574 8616,8605
 Bulgarische Str.: kein Radweg, Gehweg benutzen	q2; 15591,8848 15558,8820 15378,8668 15166,8489
@@ -1422,7 +1422,7 @@ Schalloppstr.: Bordsteine, einige Fuﬂg‰nger	q3 5132,4704 5190,4755
 (zum Teufelsberg): einige Fuﬂg‰nger, eng	q1 -641,9882 -720,9861 -769,9856
 Alfred-Scholz-Platz: Fuﬂg‰nger	q2 12779,8188 12753,8187
 Dahlemer Weg - entlang der S-Bahn: Rampe	q2 2266,3580 2221,3560 2250,3568 2228,3554
-Georg-Steger-Weg: einige Fuﬂg‰nger	q1 1493,2247 1480,2199 1452,2095 1461,2073 1432,1964 1432,1904 1478,1721
+Georg-Steger-Weg: einige Fuﬂg‰nger	q1 1493,2247 1480,2199 1452,2095 1461,2073 1432,1964 1432,1904 1476,1730
 (Ramsteinweg - Sachtlebenstr.): gemeinsamer Rad- und Gehweg	q1 581,670 509,684 497,710 403,764 332,819 247,822
 (Am Seegraben - Sch¸tzenstr.): einige Fuﬂg‰nger	q1 19996,-740 19978,-712
 (an der BMW-Niederlassung): Parkverkehr, Schranke	q1 2102,11307 2180,11318 2219,11324
@@ -1759,6 +1759,8 @@ Pepitapromenade: einige Fuﬂg‰nger	q1 -2856,17489 -2873,17369 -2878,17324
 (Gandenitzer Weg - Quickborner Str.): einige Fuﬂg‰nger	q1 7549,21524 7713,21484 7782,21508 7802,21553 7853,21557 7939,21600
 Salvador-Allende-Str. [Zufahrt zum Krankenhaus]: einige Fuﬂg‰nger	q2 23448,4145 23453,4181
 Fasanenplatz, ˆstliche Fahrbahn: einige Fuﬂg‰nger, Bordsteine	q2 5220,10192 5229,10210 5223,10243
+Admiralstr.: Fuﬂg‰nger, Bodenschwellen	q2 11244,10111 11274,10184
+Innsbrucker Platz - Eisackstr.: Bordstein	q1 6418,7958 6429,7876
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schulhof, Radfahren verboten	q3 7242,8586 7288,8635
@@ -1823,7 +1825,7 @@ Hempst¸cken: kurvenreich	q2 -7506,126 -7542,201 -7632,204
 Joachimstr. (Kˆpenick): Bodenschwellen	q1; 21907,5517 22009,5593
 Jeanne-Mammen-Bogen: Fuﬂg‰ngerzone	q3 4954,10876 5090,10868
 Holwedestr.: schmale Straﬂe	q1 1128,20525 1203,20553 1264,20575 1326,20600 1387,20621
-(Fuﬂg‰ngertunnel Bahnhof Lichterfelde Ost): Fuﬂg‰nger	q4 5367,2528 5413,2436
+(Fuﬂg‰ngertunnel Bahnhof Lichterfelde Ost): Fuﬂg‰nger, Radfahrer sollen schieben	q4 5367,2528 5479,2464
 Am Schloﬂpark: eng bei Autoverkehr	q1 10775,19054 10712,18975 10625,18831 10496,18704
 Poschingerstr.: enge Straﬂe	q1 5697,6276 5754,6238 5824,6240 5875,6262 5918,6301 5971,6343 6095,6358 6248,6388
 Hˆltermannsteig: gemeinsamer Rad- und Gehweg	q1 13999,2727 13951,2801 13948,2910 13954,3035 13965,3222 14023,3276
@@ -2383,8 +2385,9 @@ Lauxweg: enge Straﬂe	q1 8979,3347 8921,3208
 Martinstr.: enge Straﬂe	q1 4956,5121 5102,5031
 Straﬂe 113: enge Straﬂe	q1 9924,20951 9897,21035 9852,21151
 Schnepfenreuther Weg: enge Straﬂe	q1 -3495,16393 -3466,16455 -3444,16576 -3426,16837 -3404,17147
-Hohenzollernstr. (Zehlendorf): enge Straﬂe	q1 21,2728 53,2708 226,2752 322,2772 475,2811 492,2813 546,2850
+Hohenzollernstr. (Zehlendorf): enge Straﬂe	q1 21,2728 58,2710 226,2752 322,2772 475,2811 492,2813 546,2850
 Hohenzollernstr. (Zehlendorf): enge Straﬂe	q1 492,2813 522,2802 537,2772
+Hohenzollernstr. (Zehlendorf): enge Straﬂe	q1 58,2710 39,2669
 Rosa-Reinglass-Steig	q1 -2878,15304 -2856,15383
 Am Lupinenfeld: enge Straﬂe	q0 24159,13507 24347,13465 24539,13427 24746,13384 24817,13370 24875,13333 25031,13242 25138,13183 25181,13157
 Franzstr. (Lankwitz): enge Straﬂe	q0 5559,3058 5776,3195
@@ -2470,7 +2473,7 @@ Walliser Str.: Fuﬂweg	q1 6921,18560 6924,18599
 Nordische Str.: enge Straﬂe	q1 15126,21799 15209,21985
 Gr¸nrockweg: Fuﬂg‰ngerzone, Radfahrer frei	q1 7377,18498 7269,18460
 Kollostr.: enge Straﬂe	q1 9668,4403 9677,4518 9695,4638
-(Mauerweg - Tˆpchiner Weg): einige Fuﬂg‰nger	q1 11794,550 11691,554 11598,587
+(Mauerweg - Tˆpchiner Weg): einige Fuﬂg‰nger	q1 11794,550 11672,554 11596,583
 (Marienfelder Allee - Hildburghauser Str., Gr¸nzug): Fuﬂg‰nger	q1 7501,83 7231,236 7032,533 7023,694 7058,844
 Prisdorfer Str.: enge Straﬂe	q1 -5887,13894 -5906,14102 -5887,14147 -5882,14210 -5879,14242
 Janischweg: enge Straﬂe	q1 537,14919 481,15088 473,15169 453,15173 431,15230 429,15284
@@ -2514,7 +2517,7 @@ Augusta-Ufer: offiziell nur von S¸den nach Norden f¸r Radfahrer befahrbar	q3; -3
 Theaterplatz: Fuﬂg‰nger	q1 24968,15307 25086,15298
 Lil-Dagover-Gasse: Fuﬂg‰ngerzone	q4 23960,15021 23871,14914
 Erbsenpfad: enge Straﬂe	q1 -7872,14409 -7850,14555
-Johannesstr.: enge Straﬂe	q1 609,1915 712,1551
+Johannesstr.: enge Straﬂe	q1 609,1915 710,1558
 Birkenstr. (Kˆpenick): enge Straﬂe	q1 24166,4568 24068,4602 23980,4633 23934,4661 23947,4673 23869,4733
 S-Bahnunterf¸hrung: Kehre, einige Fuﬂg‰nger	q1 4250,763 4225,753 4311,746
 Minorkaweg: enge Straﬂe	q0 15835,489 15925,541 16008,628

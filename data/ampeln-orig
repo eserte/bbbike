@@ -1247,6 +1247,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10397,10852
 	X 6665,2836
 	X 6718,2443
+#: note: Anforderungsampel
 	F 6844,1813
 	X 6937,671
 	X 7318,759
@@ -2177,6 +2178,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 #: note: am Wochenende nicht eingeschaltet
 	X 8868,2061
 #: note: am Wochenende nicht eingeschaltet
+#: note: Anforderungsampel
 	F 9034,1953
 	X 17014,16724
 #: note: Kontaktschleife (und Anforderung für Fußgänger) aus der Voltairestr.
@@ -2425,7 +2427,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: by: http://www.panoramio.com/photo/19637927
 	F 4943,2557
 #: by: http://www.panoramio.com/photo/19637886
-	X 5479,2464
+	F 5479,2464
 	F 10736,12285
 #: XXX_prog: die genaue Position ist südlich der Einmündung, aber querende Radfahrer müssen die Ampel immer nehmen
 	F 13603,11538
@@ -2812,7 +2814,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: SONNENALLEE-2014
 #: osm_watch: node id="4006030833" version="4"
-#: last_checked: 2018-08-21
+#: last_checked: 2018-09-11
 #: check_frequency: 30d
 #: note: Radfahrer in Richtung Nordwesten müssen die Seite wechseln, hier Anforderungsampel
 	X::inwork 14174,7505

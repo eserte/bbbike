@@ -2773,29 +2773,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: 20160920T0600-20160922T0600 vvv
-	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-#: tempex ^^^
-',
-         'from' => 1536552000,
-         'id' => 2387,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              10,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon gesperrt, voraussichtlich ab 10.09.2018',
-         'type' => 'gesperrt',
-         'until' => 1536724800
-       },
+       undef,
        {
          'data' => '# REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
 	2::temp 8573,12325 8540,12420
@@ -3772,7 +3750,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147342861
 #: source_id: 2147342860
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2018-07-01 vvv
+#: last_checked: 2018-09-12 vvv
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2018-12-31 vvv
 # REMOVED (hier fertig) ---	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
@@ -3829,18 +3807,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: ANHALTINER-2018
-#: last_checked: 2018-07-01
-#: check_frequency: 60d
-	q3::inwork 37,2562 186,2532 272,2548 638,2637
-',
-         'from' => undef,
-         'id' => 2915,
-         'text' => 'Anhaltinerstr.: mögliche Beeinträchtigungen durch Bauarbeiten',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4126,7 +4093,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: VERLWERDERSTR-2018
 #: by: https://www.berliner-woche.de/altglienicke/c-bauen/werderstrasse-wird-ausgebaut_a169172
 #: XXX nach den Bauarbeiten vermutlich Verbundsteinpflaster oder Betonpflaster
-#: last_checked: 2018-08-11
+#: last_checked: 2018-09-12
 	2::inwork 20245,2152 20261,2114 20222,2037 20214,1988 20187,1930 20166,1864 20120,1791 20093,1776 20064,1777
 ',
          'from' => 1530396000,
@@ -4450,17 +4417,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1543597200
        },
-       {
-         'data' => '#: XXX und können Radfahrer vielleicht passieren?
-	2::inwork 10526,6008 10543,6250 10454,6281 10384,6358 10377,6417
-',
-         'from' => undef,
-         'id' => 3013,
-         'source_id' => 'LMS-BR_r_LMS-BR_144848_LMS-BR_72',
-         'text' => 'Rohdestr.: Baustelle, gesperrt',
-         'type' => 'gesperrt',
-         'until' => 1536768000
-       },
+       undef,
        {
          'data' => '#: XXX ist das Tor tatsächlich geschlossen? und wenn ja, wann wird es wieder geöffnet?
 #: next_check: 2018-09-12
@@ -4471,6 +4428,42 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => 'https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9493',
          'text' => 'Gutspark Neukladow: Südtor ist möglicherweise geschlossen',
          'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: last_checked: 2018-09-12
+	q3::inwork 5959,6976 6081,6977 6082,7066
+',
+         'from' => undef,
+         'id' => 3015,
+         'text' => 'Wilhelm-Hauff-Str./Wielandstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen, Bordstein',
+         'type' => 'handicap',
+         'until' => 1542301200
+       },
+       {
+         'data' => '#: last_checked: 2018-09-12 vvv
+#: check_frequency: 7d vvv
+	q4::inwork 2434,4299 2407,4280
+	q4::inwork; 2407,4280 2429,4385
+#: check_frequency ^^^
+#: last_checked ^^^
+',
+         'from' => undef,
+         'id' => 3016,
+         'text' => 'Thielallee, Corrensplatz: Bauarbeiten, Fahrbahn zwischen Boetticherstr. und Thieallee gesperrt sowie Thielallee Richtung Norden ab Corrensplatz gesperrt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: JUNGFERNSTIEG-2018
+#: last_checked: 2018-09-12
+#: check_frequency: 7d
+	q4::inwork 5229,2395 5332,2568 5425,2735 5510,2883
+',
+         'from' => undef,
+         'id' => 3017,
+         'text' => 'Jungfernstieg: Asphaltierungsarbeiten, Fahrbahn kann gesperrt sein',
+         'type' => 'handicap',
          'until' => undef
        }
      

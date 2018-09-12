@@ -21,7 +21,7 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualität danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-09-08
+#: last_checked: 2018-09-12
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
@@ -497,12 +497,12 @@ Donaustr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Erkstr.	q4::inwor
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 7d vvv --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12761,9190 12845,9304 12844,9351 --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12902,9066 12761,9190 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4952&mt=0&zoom=17
-#: last_checked: 2018-09-07
+#: last_checked: 2018-09-11
 #: check_frequency: 90d
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 
 #: XXX Wann sind die Bauarbeiten beendet? (laut googlemaps: Ende November 2018)
-#: last_checked: 2018-09-06
+#: last_checked: 2018-09-11
 #: check_frequency: 14d
 Weichselstr.: Bauarbeiten zwischen Weichselplatz und Ossastr., Fahrbahn gesperrt	q4::inwork 12755,9188 12681,9083
 # 
@@ -1219,7 +1219,7 @@ Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 #: XXX bleibt es bei dem steilen Abschnitt?
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6472
 #: osm_watch: way id="77098244" version="8"
-#: last_checked: 2018-03-11
+#: last_checked: 2018-09-12
 #: check_frequency: 180d
 Teltowkanalpromenade: enge und kurvige Unterführung, steile Abschnitte	q4 4274,2717 4272,2704 4247,2652 4209,2641
 Heinrich-Laehr-Park: Fußgänger	q1 1525,581 1372,1208 1328,1387 1249,1672
@@ -1298,7 +1298,7 @@ Pankeweg: enger Pfad	q2 13365,22743 13321,22586 13295,22545 13290,22377 13354,22
 Oberlandgarten: Fußgänger, Bordsteine	q2 11250,6555 11256,6502 11253,6473
 Germaniagarten: Fußgänger, Bordsteine	q2 11209,6166 11224,6244
 (Bambachstr. - Mariendorfer Weg): Fußgänger, enge Kurven	q2 12052,6660 12038,6633 12052,6605 12094,6585 12125,6510
-Mauerweg: Fußgänger	q1 12984,1011 12557,799 12246,706 11922,586 11794,550 11698,390 11686,169 11746,-62 11819,-286 12078,-1170 12283,-1881 12344,-2173 12314,-2270 12268,-2294
+Mauerweg: Fußgänger	q1 12984,1011 12557,799 12246,706 12014,620 11956,599 11922,586 11794,550 11698,390 11686,169 11746,-62 11819,-286 12078,-1170 12283,-1881 12344,-2173 12314,-2270 12268,-2294
 Mauerweg: Fußgänger	q1 4406,-910 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3417,524
 Bayernring: enge Straße	q1 8380,8545 8454,8574 8616,8605
 Bulgarische Str.: kein Radweg, Gehweg benutzen	q2; 15591,8848 15558,8820 15378,8668 15166,8489
@@ -1762,7 +1762,7 @@ Grottewitzwanderweg: eng, kurvig	q2 28042,-152 27852,-279 27825,-371 27703,-406 
 Papendickstr.: enge Straße	q0- 17071,16174 17073,16222 17135,16334 17171,16372
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (Zweirichtungsverkehr, 2018)
 #: XXX Bauarbeiten geplant, danach vielleicht ein breiterer Weg (evtl. kann man auch den Q0--Eintrag in qualitaet_s-orig ändern)
-#: last_checked: 2018-07-10 (mapillary)
+#: last_checked: 2018-09-12
 #: check_frequency: 60d
 Am Wiesenweg: Fußgänger	q1 21977,988 21856,996 21724,954 21685,916
 Grasmückenweg: Fußgänger, eng	q2 14877,3475 14822,3409
@@ -2444,7 +2444,7 @@ Schalloppstr.: Bordsteine, einige Fußgänger	q3 5132,4704 5190,4755
 (zum Teufelsberg): einige Fußgänger, eng	q1 -641,9882 -720,9861 -769,9856
 Alfred-Scholz-Platz: Fußgänger	q2 12779,8188 12753,8187
 Dahlemer Weg - entlang der S-Bahn: Rampe	q2 2266,3580 2221,3560 2250,3568 2228,3554
-Georg-Steger-Weg: einige Fußgänger	q1 1493,2247 1480,2199 1452,2095 1461,2073 1432,1964 1432,1904 1478,1721
+Georg-Steger-Weg: einige Fußgänger	q1 1493,2247 1480,2199 1452,2095 1461,2073 1432,1964 1432,1904 1476,1730
 (Ramsteinweg - Sachtlebenstr.): gemeinsamer Rad- und Gehweg	q1 581,670 509,684 497,710 403,764 332,819 247,822
 (Am Seegraben - Schützenstr.): einige Fußgänger	q1 19996,-740 19978,-712
 #: note: Schranke ist manchmal offen, kann umfahren werden
@@ -2867,6 +2867,10 @@ Pepitapromenade: einige Fußgänger	q1 -2856,17489 -2873,17369 -2878,17324
 Salvador-Allende-Str. [Zufahrt zum Krankenhaus]: einige Fußgänger	q2 23448,4145 23453,4181
 #: XXX_prog: BS (halbhoch) an beiden Seiten, ansonsten q1
 Fasanenplatz, östliche Fahrbahn: einige Fußgänger, Bordsteine	q2 5220,10192 5229,10210 5223,10243
+#: note: wenig Platz neben den Bodenschwellen
+Admiralstr.: Fußgänger, Bodenschwellen	q2- 11244,10111 11274,10184
+#: XXX_prog: BS an der Eisackstr., ansonsten entfernen
+Innsbrucker Platz - Eisackstr.: Bordstein	q1 6418,7958 6429,7876
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -3011,8 +3015,11 @@ Joachimstr. (Köpenick): Bodenschwellen	q1; 21907,5517 22009,5593
 Jeanne-Mammen-Bogen: Fußgängerzone	q3 4954,10876 5090,10868
 #: by: Hans-Joachim Lagermann:
 Holwedestr.: schmale Straße	q1 1128,20525 1203,20553 1264,20575 1326,20600 1387,20621
+# 
 #: by: Steini:
-(Fußgängertunnel Bahnhof Lichterfelde Ost): Fußgänger	q4 5367,2528 5413,2436
+#: confirmed_by: srt
+(Fußgängertunnel Bahnhof Lichterfelde Ost): Fußgänger, Radfahrer sollen schieben	q4 5367,2528 5479,2464
+# 
 #: by: garci
 Am Schloßpark: eng bei Autoverkehr	q1 10775,19054 10712,18975 10625,18831 10496,18704
 # REMOVED (keine Behinderungen deswegen) --- #: by: anonymous --- (Karl-Bonhoeffer-Nervenklinik zwischen Hermann-Piper-Str. und U-Bahnhof): Krankenhausgelände	q1 4997,19849 5003,19833 5060,19699 5073,19656 5110,19665 5183,19454 5208,19378 5187,19368 5219,19285 5388,19186 5429,19165
@@ -4196,8 +4203,9 @@ Straße 113: enge Straße	q1 9924,20951 9897,21035 9852,21151
 Schnepfenreuther Weg: enge Straße	q1 -3495,16393 -3466,16455 -3444,16576 -3426,16837 -3404,17147
 #: by: anne schotte: vvv
 #: corrected_by: srt/policy (q2 -> q1)
-Hohenzollernstr. (Zehlendorf): enge Straße	q1 21,2728 53,2708 226,2752 322,2772 475,2811 492,2813 546,2850
+Hohenzollernstr. (Zehlendorf): enge Straße	q1 21,2728 58,2710 226,2752 322,2772 475,2811 492,2813 546,2850
 Hohenzollernstr. (Zehlendorf): enge Straße	q1 492,2813 522,2802 537,2772
+Hohenzollernstr. (Zehlendorf): enge Straße	q1 58,2710 39,2669
 #: by: ^^^
 #: by: remus preuss:
 #: corrected_by: srt/policy (q4 -> q1)
@@ -4409,7 +4417,7 @@ Grünrockweg: Fußgängerzone, Radfahrer frei	q1 7377,18498 7269,18460
 #: by: A. Kohn:
 Kollostr.: enge Straße	q1 9668,4403 9677,4518 9695,4638
 #: by: Niels (nathelbiya):
-(Mauerweg - Töpchiner Weg): einige Fußgänger	q1 11794,550 11691,554 11598,587
+(Mauerweg - Töpchiner Weg): einige Fußgänger	q1 11794,550 11672,554 11596,583
 #: by: Bernhard Husch:
 #: note: "viele Fußgänger", aber keine Kategorisierung
 (Marienfelder Allee - Hildburghauser Str., Grünzug): Fußgänger	q1- 7501,83 7231,236 7032,533 7023,694 7058,844
@@ -4514,7 +4522,7 @@ Lil-Dagover-Gasse: Fußgängerzone	q4 23960,15021 23871,14914
 #: corrected_by: srt/policy (q3 -> q1)
 Erbsenpfad: enge Straße	q1 -7872,14409 -7850,14555
 #: by Julika (...stark...):
-Johannesstr.: enge Straße	q1 609,1915 712,1551
+Johannesstr.: enge Straße	q1 609,1915 710,1558
 #: by: Joachim Wolf
 Birkenstr. (Köpenick): enge Straße	q1 24166,4568 24068,4602 23980,4633 23934,4661 23947,4673 23869,4733
 #: by: Michael Schwarz:
