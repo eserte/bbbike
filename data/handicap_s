@@ -5,7 +5,7 @@
 #:
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
-Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 12409,11902 12238,11931
+Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 12409,11902 12238,11931
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
 Rigaer Str.: Baustelle, Fußgänger	q3::inwork 14538,12371 14748,12314
 Auerstr.: zwischen Richard-Sorge-Str. und Löwestr. Baustelle, Einbahnstraßenregelung	q2::inwork; 13273,12902 13202,12790
@@ -43,7 +43,6 @@ Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7970,11
 Ludwig-Beck-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 8301,11469 8309,11390
 Englische Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,12159
 Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5919,12423 5894,12480 5944,12548
-Donaustr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Erkstr.	q4::inwork; 12771,8439 12649,8535
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 Weichselstr.: Bauarbeiten zwischen Weichselplatz und Ossastr., Fahrbahn gesperrt	q4::inwork 12755,9188 12681,9083
 Karl-Marx-Str.: Bauarbeiten zwischen Rollbergstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12714,8249 12753,8187 12794,8103
@@ -2008,9 +2007,9 @@ Swinemünder Str.: Fußgänger	q1 10085,14863 10029,14974 9988,15057 9929,15174 985
 (Unterführung Schloßbrücke): Fußgänger, teilweise eng	q2 3396,12741 3332,12742
 (Unterführung Schloßbrücke): Fußgänger, sehr eng	q3 3332,12742 3231,12749
 Sesenheimer Str.: Fußgänger, Bordsteine	q2 3864,11484 3874,11380
-(südliches Spreeufer): Fußgänger	q2 5203,12850 5191,12917 5128,13012 4994,13092 4915,13114 4822,13109 4748,13092 4710,13069 4644,13003 4619,12975 4590,12800 4749,12689
-(südliches Spreeufer): Fußgänger	q2 5128,13012 5246,12899 5244,12864
-(Heisenbergstr. - südliches Spreeufer): Fußgänger	q2 5120,12963 5191,12917
+(südliches Spreeufer): Fußgänger	q2 5203,12850 5184,12937 5176,12968 5086,13052 4994,13092 4915,13114 4822,13109 4748,13092 4710,13069 4644,13003 4619,12975 4590,12800 4749,12689
+(südliches Spreeufer): Fußgänger	q2 5176,12968 5246,12899 5244,12864
+(Heisenbergstr. - südliches Spreeufer): Fußgänger	q2 5120,12963 5140,12967 5184,12937
 (Kucharskistr. - südliches Spreeufer): Fußgänger	q2 4829,13089 4822,13109
 (Clara-von-Simson-Str. - südliches Spreeufer): Fußgänger	q2 4732,13030 4710,13069
 (Carnotstr. - südliches Spreeufer): Fußgänger	q2 4655,12953 4619,12975

@@ -337,7 +337,7 @@ Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf
 #: XXX evtl wird die Straße für Radfahrer geöffnet
 #: osm_watch: way id="5110895" version="6"
-#: last_checked: 2018-08-25
+#: last_checked: 2018-09-14
 #: check_frequency: 60d
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7606,8598 7643,8634 7682,8598 7644,8560
@@ -2842,9 +2842,9 @@ Schranke (Krankenhaus Herzberge)	BNP:2 17780,13468
 Drängelgitter (S-Bhf. Grunewald)	BNP:10 731,9103
 Drängelgitter (vor der Straßenbahnhaltestelle)	BNP:5 29103,4765
 Schranke	BNP:5 32192,5915
-#: note: kann auf parallelen Gehweg umfahren werden
+#: note: kann auf parallelen Gehweg umfahren werden, aber dort Bordsteine
 Schranke, schwer passierbar	BNP:10 7625,9376
-#: note: kann auf parallelen Gehweg umfahren werden
+#: note: kann auf parallelen Gehweg umfahren werden, aber dort Bordsteine
 Schranke	BNP:5 7612,9446
 Barriere	BNP:0::trailer=3 3268,11847
 Drängelgitter	BNP:5 -5890,25875
@@ -2942,7 +2942,7 @@ Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -1275
 # 
 # REMOVED (-> temp blockings) --- #: XXX vielleicht sogar dauerhaft? --- #: last_checked: 2018-08-24 (zurzeit kann man sich noch an den Bauzäunen vorbei mogeln) --- #: check_frequency: 14d --- Boxhagener Str. - Weserstr.: Bauarbeiten, Durchfahrt nicht mehr möglich	2::inwork 14838,11410 14949,11474
 # 
-#: last_checked: 2018-09-04
+#: last_checked: 2018-09-14
 #: check_frequency: 30d
 Heidelberger Str.: Baustelle, Einbahnstraße	1s:q3:inwork 13491,9201 13421,9260 13357,9313
 # 
@@ -3124,12 +3124,12 @@ Zufahrt zum ehemaligen Parkhaus: Bauarbeiten, Straße komplett gesperrt	2::inwork
 #: check_frequency: 90d
 Merlitzstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19661,3421 19524,3286
 # 
-#: last_checked: 2018-08-18
+#: last_checked: 2018-09-13
 #: check_frequency: 30d
 Mauerstr. und Jägerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9195,11972 9108,11961 9076,12054
 # 
 #: XXX laut googlemaps bis 30. Oktober 2018
-#: last_checked: 2018-08-18
+#: last_checked: 2018-09-13
 #: check_frequency: 30d
 Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,12156
 # 
@@ -3473,7 +3473,7 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: III/2018 bis I/2021)
 #: by: http://www.berliner-woche.de/moabit/bauen/mit-schwerem-geraet-d149617.html
 #: osm_watch: way id="501191631" version="1"
-#: last_checked: 2018-04-30
+#: last_checked: 2018-09-13
 #: next_check: 2021-01-01
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 # 
@@ -3499,7 +3499,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: http://www.dafmap.de/d/berlin.html?id=3588&mt=0&zoom=16
 #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung)
 #: XXX Spielbetrieb wird im Dezember 2017 aufgenommen
-#: last_checked: 2018-09-04 vvv
+#: last_checked: 2018-09-13 vvv
 #: check_frequency: 14d vvv
 Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9876,12298
 Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9798,12267 9795,12293 9780,12401

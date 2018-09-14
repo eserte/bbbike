@@ -21066,7 +21066,7 @@ EOF
        until => $isodate2epoch->("2018-09-17 06:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 12, months => 9]],
-       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, voraussichtlich bis 12.09.2018',
+       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, voraussichtlich bis 17.09.2018',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
@@ -21074,8 +21074,8 @@ EOF
 	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 	2::temp 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 	2::temp 8119,12414 8055,12186
-	2::temp 8538,12245 8522,12239 8466,12197
-	2::temp 8538,12245 8522,12187
+	2::temp 8538,12245 8522,12239 8466,12197 8327,12174 8215,12156 8122,12147 8049,12140 8018,12135 7823,12120 7775,12114 7429,12070
+	2::temp 8538,12245 8522,12187 8453,12099 8262,11883 8244,11878 8221,11876 8167,11865 8140,11850 8026,11764
 	2::temp 8546,12279 8391,12389 8354,12416
 	2::temp 8119,12414 8354,12416 8400,12417 8540,12420
 	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
@@ -21089,6 +21089,13 @@ EOF
 	3 8120,12756 8122,12603 7945,12592
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
+#: note: die Wege im südöstlichen Teil des Tiergartens sind vermutlich nur am Sa & So gesperrt
+	2::temp 8214,12205 8215,12156 8221,11885 8221,11876 8210,11775 8203,11686
+	2::temp 8327,12174 8244,11878 8210,11775 8172,11679
+	2::temp 8501,11815 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
+	2::temp 8055,12186 8049,12140 8034,12093 8004,12074 7999,12040 8022,12016 8020,11937 8016,11770
+	2::temp 7823,12120 7832,12036 7822,11952 7801,11875
+	2::temp 7775,12114 7772,12040 7717,11918
 # REMOVED --- #: tempex ^^^
 EOF
      },
@@ -23993,7 +24000,7 @@ EOF
        data  => <<EOF,
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
 #: priority: #A
-#: last_checked: 2018-09-06
+#: last_checked: 2018-09-13
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -26918,14 +26925,15 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Vorbergstr.: Bauarbeiten zwischen Gleditschstr. und Akazienstr., Fahrbahn gesperrt, außerdem Sperrung in der Gleditschstr., Ende unbekannt',
+       #text  => 'Vorbergstr.: Bauarbeiten zwischen Gleditschstr. und Akazienstr., Fahrbahn gesperrt, außerdem Sperrung in der Gleditschstr., Ende unbekannt',
+       text  => 'Gleditschstr.: Bauarbeten, Fahrbahn gesperrt, Ende unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: XXX laut googlemaps bis 19. September 2018
-#: last_checked: 2018-08-21 vvv
+#: last_checked: 2018-09-14 vvv
 #: next_check: 2018-09-19 vvv
 # --- XXX_prog: eigentlich q3-
-	q4::inwork 7136,9223 7012,9222
+# REMOVED (hier beendet) ---	q4::inwork 7136,9223 7012,9222
 	q2::inwork 7136,9223 7130,9316
 #: next_check ^^^
 #: last_checked ^^^
@@ -27598,7 +27606,7 @@ EOF
 EOF
      },
      { from => 1533579833,
-       until => $isodate2epoch->("2018-09-15 18:00:00"),
+       until => $isodate2epoch->("2018-09-18 18:00:00"),
        text => 'Grünberger Str.: Sperrung der Fahrbahn zwischen Kadiner Str. und Warschauer Str., Richtung Osten, voraussichtlich bis Mitte September 2018',
        type => 'handicap',
        data => <<EOF,
