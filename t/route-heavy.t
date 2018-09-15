@@ -92,4 +92,13 @@ EOF
     is_deeply $search_route_points, [['9404,10250', 'm'], ['9250,10563', 'm']], 'implicit search_route_points';
 }
 
+{
+    my $route = <<'EOF';
+#BBBike route
+$realcoords_ref = [[9300,10300], [9404,10250], [9388,10393], [9250,10563]];
+EOF
+    my $ret = Route::load_from_string($route);
+    is_deeply [Route::get_bbox($ret->{RealCoords})], [9250,10250,9404,10563], 'get_bbox bbox';
+}
+
 __END__
