@@ -46,13 +46,14 @@ my $doit_tests = 6;
 my $strassen_orig_tests = 5;
 my $zebrastreifen_tests = 4;
 my $zebrastreifen2_tests = 2;
+my $zebrastreifen3_tests = 2;
 my $encoding_tests = 10;
 my $multistrassen_tests = 11;
 my $initless_tests = 3;
 my $global_directive_tests = 7;
 my $strict_and_syntax_tests = 12;
 
-plan tests => $basic_tests + $doit_tests + $strassen_orig_tests + $zebrastreifen_tests + $zebrastreifen2_tests + $encoding_tests + $multistrassen_tests + $initless_tests + $global_directive_tests + $strict_and_syntax_tests;
+plan tests => $basic_tests + $doit_tests + $strassen_orig_tests + $zebrastreifen_tests + $zebrastreifen2_tests + $zebrastreifen3_tests + $encoding_tests + $multistrassen_tests + $initless_tests + $global_directive_tests + $strict_and_syntax_tests;
 
 goto XXX if $do_xxx;
 
@@ -354,6 +355,29 @@ SKIP: {
     chomp(my($first_non_global_directive_line) = <$fh>);
     is $first_non_global_directive_line, '# Die Sammlung hier ist bei weiten nicht vollständig und wird',
 	"expected seek position, first line in $f after global directives";
+}
+
+SKIP: {
+    my $f = "$datadir/zebrastreifen";
+    skip("$f not available", $zebrastreifen3_tests)
+	if !-r $f;
+    skip("no gzip available", $zebrastreifen3_tests)
+	if !is_in_path('gzip');
+
+    my(undef,$outfilename) = tempfile(UNLINK => 1, SUFFIX => ".gz");
+    my $gzip_cmd = "gzip -c $datadir/zebrastreifen > $outfilename";
+    system($gzip_cmd);
+    if ($? != 0 || !-s $outfilename) {
+	skip("Running '$gzip_cmd' apparently failed", $zebrastreifen3_tests);
+    }
+
+    my $s_uncompressed = Strassen->new($f);
+    my $s_compressed   = Strassen->new($outfilename);
+    is_deeply $s_compressed->data, $s_uncompressed->data, 'compressed and uncompressed data are the same';
+
+    (my $outfilename_without_gz_suffix = $outfilename) =~ s{\.gz$}{};
+    my $s_compressed_2 = Strassen->new($outfilename_without_gz_suffix);
+    is_deeply $s_compressed->data, $s_uncompressed->data, 'loading without .gz suffix works';
 }
 
 SKIP: {
