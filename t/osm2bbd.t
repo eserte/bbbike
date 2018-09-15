@@ -71,6 +71,10 @@ GetOptions("keep" => \$keep)
   <node id="603020423" visible="true" version="1" changeset="3517189" timestamp="2010-01-02T11:04:47Z" user="Datin" uid="115815" lat="49.8392106" lon="18.2869317"/>
   <node id="603020424" visible="true" version="1" changeset="3517189" timestamp="2010-01-02T11:04:47Z" user="Datin" uid="115815" lat="49.8392232" lon="18.2869912"/>
 
+  <!-- nodes for Columbiadamm -->
+  <node id="3612453908" lat="52.4845034" lon="13.3887745" version="1" timestamp="2015-06-23T09:55:04Z" changeset="32157314" uid="120249" user="robson06"/>
+  <node id="298080689" lat="52.4843476" lon="13.3887500" version="4" timestamp="2012-11-24T10:15:15Z" changeset="14010259" uid="881429" user="atpl_pilot"/>
+
   <!-- reduced set of attributes for Berlin -->
   <node id="240109189" visible="true" version="119" changeset="48601888" timestamp="2017-05-11T19:04:44Z" user="kartonage" uid="1497225" lat="52.5170365" lon="13.3888599">
     <tag k="is_in:country_code" v="DE"/>
@@ -86,6 +90,7 @@ GetOptions("keep" => \$keep)
   <!-- nodes for Klappbruecke Tegeler Hafen -->
   <node id="1195371984" visible="true" version="1" changeset="7514472" timestamp="2011-03-10T14:10:24Z" user="Spartanischer Esel" uid="58727" lat="52.5925657" lon="13.2786880" />
   <node id="1195371985" visible="true" version="1" changeset="7514472" timestamp="2011-03-10T14:10:24Z" user="Spartanischer Esel" uid="58727" lat="52.5924815" lon="13.2789366" />
+  <node id="2029670964" lat="52.4844998" lon="13.3889022" version="1" timestamp="2012-11-24T10:14:49Z" changeset="14010259" uid="881429" user="atpl_pilot"/>
 
   <!-- way with cycleway and oneway -->
   <way id="76865761" version="4" timestamp="2013-09-26T03:46:24Z" changeset="18038475" uid="1439784" user="der-martin">
@@ -167,6 +172,24 @@ GetOptions("keep" => \$keep)
   <tag k="man_made" v="bridge"/>
   <tag k="name" v="Klappbruecke an der Humboldtmuehle"/>
  </way>
+
+ <!-- check_date & opening_date -->
+ <way id="355673416" version="1" timestamp="2015-06-23T09:55:04Z" changeset="32157314" uid="120249" user="robson06">
+  <nd ref="3612453908"/>
+  <nd ref="298080689"/>
+  <tag k="highway" v="secondary"/>
+  <tag k="name" v="Columbiadamm"/>
+  <tag k="check_date" v="2018-01-01" />
+  <tag k="opening_date" v="2999-01-01" />
+ </way>
+ <way id="318668065" version="2" timestamp="2015-06-23T09:55:12Z" changeset="32157314" uid="120249" user="robson06">
+  <nd ref="298080689"/>
+  <nd ref="2029670964"/>
+  <tag k="highway" v="secondary"/>
+  <tag k="name" v="Columbiadamm"/>
+  <tag k="opening_date" v="1970-01-01" />
+ </way>
+
 </osm>
 EOF
     close $osmfh;
@@ -191,7 +214,7 @@ EOF
     }
 
     {
-	my $strassen = Strassen->new("$destdir/strassen");
+	my $strassen = Strassen->new("$destdir/strassen", UseLocalDirectives => 1);
 	ok $strassen, 'strassen could be loaded';
 	is $strassen->data->[0], "Karl-Marx-Allee (B 1;B 5)\tHH 13.4329187,52.5178395 13.4364709,52.5174916\n";
 	is $strassen->data->[1], "Rudi-Dutschke-Straße\tH 13.3905066,52.5067076 13.3905715,52.5067128\n";
@@ -199,7 +222,10 @@ EOF
 	is $strassen->data->[3], "Wallensteinstraße\tN 13.5086756,52.4902799 13.5095316,52.4898947\n";
 	is $strassen->data->[4], "Stallschreiberstra\x{df}e\tN 13.4069476,52.5069069 13.4058616,52.5077626\n";
 	is $strassen->data->[5], "Klappbruecke an der Humboldtmuehle\tNN::Br 13.2786880,52.5925657 13.2789366,52.5924815\n";
-
+	is $strassen->data->[6], "Columbiadamm\tH 13.3887745,52.4845034 13.3887500,52.4843476\n";
+	is_deeply $strassen->get_directives(6), { last_checked => ['2018-01-01'], next_check => ['2999-01-01'] };
+	is $strassen->data->[7], "Columbiadamm\tH 13.3887500,52.4843476 13.3889022,52.4844998\n";
+	is_deeply $strassen->get_directives(7), {}, 'opening_date is the past is ignored';
     }
 
     {

@@ -17,7 +17,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..";
 
 use vars qw($VERSION);
-$VERSION = '0.30';
+$VERSION = '0.31';
 
 use Cwd qw(getcwd realpath);
 use Data::Dumper;
@@ -26,6 +26,7 @@ use File::Spec qw();
 use Getopt::Long;
 use IO::File;
 use List::Util qw(max);
+use POSIX qw(strftime);
 
 sub epoch2isodatez (;$);
 sub touch ($);
@@ -173,6 +174,8 @@ EOF
 }
 
 my $newest_mtime = max map { (stat($_))[9] } @osm_files;
+
+my $today_date = strftime "%Y-%m-%d", localtime;
 
 if ($center && $center !~ m{^[-+]?[\d\.]+,[-+]?[\d\.]+$}) {
     die "The value for the -center option has to be in the form lon,lat\n";
@@ -1784,6 +1787,14 @@ for my $osm_file (@osm_files) {
 		    if (exists $tag{$key}) {
 		    	push @{$out{$out_file}}, ["#: $key: $tag{$key}"];
 		    }
+		}
+
+		# check_date, opening_date
+		if (exists $tag{check_date}) {
+		    push @{$out{$out_file}}, ["#: last_checked: $tag{check_date}"];
+		}
+		if (exists $tag{opening_date} && $tag{opening_date} gt $today_date) {
+		    push @{$out{$out_file}}, ["#: next_check: $tag{opening_date}"];
 		}
 
 		if ((exists $tag{'width'} || exists $tag{'est_width'}) && $out_file eq 'strassen') {
