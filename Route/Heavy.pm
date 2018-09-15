@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Heavy.pm,v 1.9 2006/09/25 22:52:28 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2009,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +16,7 @@ package Route::Heavy;
 use Route;
 
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.10';
 
 package Route;
 
@@ -78,21 +77,6 @@ sub new_from_strassen {
 	push @realcoords, map { [ split /,/ ] } @c;
     }
     Route->new_from_realcoords(\@realcoords);
-}
-
-# XXX make more sophisticated
-sub get_sample_coords {
-    my($coordref, $max_samples) = @_;
-    my @res;
-    if (@$coordref < $max_samples) {
-	@res = @$coordref;
-    } else {
-	my $delta = @$coordref/$max_samples;
-	for(my $i=0; $i<@$coordref;$i+=$delta) {
-	    push @res, $coordref->[$i];
-	}
-    }
-    @res;
 }
 
 sub load_from_string {
