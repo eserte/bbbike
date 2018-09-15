@@ -1,22 +1,21 @@
 # -*- perl -*-
 
 #
-# $Id: Levenshtein.pm,v 1.2 2007/04/10 20:35:42 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
 # Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  http://bbbike.de
 #
 
 package PLZ::Levenshtein;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.03';
 
 use base qw(PLZ);
 
@@ -50,11 +49,12 @@ sub look_loop_levenshtein {
 	if ($overall_best_distance > $best_distance) {
 	    $overall_best_distance = $best_distance;
 	    %street_to_data = ();
+	    %street_to_distance = ();
 	} elsif ($best_distance > $overall_best_distance) {
 	    next;
 	}
 	for my $data (@$bests) {
-	    my $street_name = $data->[PLZ::FILE_NAME()];
+	    my $street_name = join "|", @$data;
 	    if (!exists $street_to_distance{$street_name} ||
 		$street_to_distance{$street_name} > $best_distance) {
 		$street_to_distance{$street_name} = $best_distance;
