@@ -42,15 +42,22 @@ my $lang;
 my $Route_PDF_class = 'Route::PDF';
 my $debug;
 my($start_coord, $via_coord, $goal_coord);
+my $use_pango = 1;
 if (!GetOptions("lang=s" => \$lang,
 		"class=s" => \$Route_PDF_class,
+		"pango!" => \$use_pango,
 		"debug" => \$debug,
 		"start=s" => \$start_coord,
 		"via=s" => \$via_coord,
 		"goal=s" => \$goal_coord,
 		get_std_opts(qw(display pdfprog)),
 	       )) {
-    die "usage: $0 [-lang lang] [-debug] [-pdfprog pdfviewer] [-display] [-class Route::PDF::...] [-start ... -goal ... [-via ...]]";
+    die "usage: $0 [-lang lang] [-debug] [-pdfprog pdfviewer] [-display] [-class Route::PDF::...] [-nopango] [-start ... -goal ... [-via ...]]";
+}
+
+if (!$use_pango) {
+    no warnings 'once';
+    $Route::PDF::Cairo::DONT_USE_PANGO = 1;
 }
 
 if ($start_coord || $via_coord || $goal_coord) {
