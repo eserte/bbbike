@@ -41,7 +41,7 @@ GetOptions(get_std_opts("xxx"),
 	   "doit!" => \$doit,
 	  ) or die "usage";
 
-my $basic_tests = 45;
+my $basic_tests = 46;
 my $doit_tests = 6;
 my $strassen_orig_tests = 5;
 my $zebrastreifen_tests = 4;
@@ -644,6 +644,14 @@ EOF
 
     ok !Strassen->syntax_check_on_file($badfile);
     ok !Strassen->syntax_check_on_data_string($baddata);
+}
+
+{
+    # push
+    my $s = Strassen->new;
+    $s->push(["name",  ["0,0", "1,1"],     "X"]);
+    $s->push(["name2", ["10,10", "21,21"], "X"]);
+    is_deeply $s->data, ["name\tX 0,0 1,1\n", "name2\tX 10,10 21,21\n"];
 }
 
 sub non_streaming_loop ($) {
