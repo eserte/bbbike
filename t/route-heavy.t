@@ -14,10 +14,11 @@ use lib (
 
 BEGIN {
     if (!eval q{
+	use File::Temp qw(tempfile);
 	use Test::More;
 	1;
     }) {
-	print "1..0 # skip no Test::More module\n";
+	print "1..0 # skip no Test::More and/or File::Temp modules\n";
 	exit;
     }
 }
@@ -46,6 +47,14 @@ EOF
     cmp_ok $r1->len, "<=", 31;
     is_deeply $r1->path->[0], [-11023.6731754748,336.440822258592];
     is_deeply $r2, $r1, 'Both routes are the same';
+
+    my $bbd1_2 = $r1->as_strassen;
+    is $bbd1_2->as_string, $bbd1, 'as_strassen --- roundtrip check';
+
+    my $bbd1_2_opts = $r1->as_strassen(name => "My route name", cat => "X");
+    is $bbd1_2_opts->as_string, <<EOF, 'as_strassen --- roundtrip check, with name/cat options';
+My route name	X -11023.6731754748,336.440822258592 -11003.5533843057,346.813496466726 -10997.6307243751,349.812016567215
+EOF
 }
 
 {
@@ -59,6 +68,16 @@ EOF
     is_deeply $path, [[-3011,10103],[-2761,10323],[-2766,10325],[-2761,10323],[-2571,10258]], 'load_from_string path';
     my $search_route_points = $ret->{SearchRoutePoints};
     is_deeply $search_route_points, [['-3011,10103','m'],['-2766,10325','a'],['-2571,10258','a']], 'load_from_string search_route_points';
+
+
+    my($tmpfh,$tmpfile) = tempfile(UNLINK => 1);
+    print $tmpfh $route;
+    close $tmpfh or die $!;
+
+    my $bbd1_from_file = Route::as_strassen($tmpfile);
+    is $bbd1_from_file->as_string, <<EOF, 'as_strassen - read from file and dump to bbd';
+Route	#ff0000 -3011,10103 -2761,10323 -2766,10325 -2761,10323 -2571,10258
+EOF
 }
 
 {
