@@ -4416,6 +4416,12 @@ Freiheitstr. (Wildau): Asphalt	Q0 25192,-8936 25251,-8868 25455,-8814 25578,-878
 Am Friedhof (Wildau): Asphalt	Q0 25118,-8791 25106,-8797 24916,-8686
 Schillerallee (Wildau): Asphalt	Q0 25478,-9638 25498,-9334 25518,-9218 25535,-9055 25578,-8781
 Röntgenstr. (Wildau): Asphalt	Q0 25700,-9097 25535,-9055 25423,-9022
+#: by: osm
+#: XXX smoothness=intermediate --- genauer prüfen!
+Röntgenstr. (Wildau): Asphalt	Q0 25423,-9022 25313,-8967
+#: by: osm
+#: XXX smoothness=bad --- genauer prüfen!
+Röntgenstr. (Wildau): Asphalt, möglicherweise mit Schäden	Q1 25313,-8967 25192,-8936
 Grabowskistr. (Wildau): Asphalt	Q0 25369,-9244 25389,-9180 25518,-9218 25669,-9258
 #: by: osm
 #: confirmed_by: srt (südliches Ende)
