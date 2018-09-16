@@ -2430,7 +2430,7 @@ sub build_suggest_list {
     }
     my %map;
     for my $file (@files) {
-	my $s = eval { Strassen->new($file) };
+	my $s = eval { Strassen->new($file, UseLocalDirectives => 1) };
 	if ($s) {
 	    my $base = File::Basename::basename($file);
 	    $s->init;
@@ -2440,6 +2440,12 @@ sub build_suggest_list {
 		my $name = $r->[Strassen::NAME()];
 		next if $name =~ m{^(\s*|[\d\.]+)$};
 		$map{$name . " ($base)"} = $r->[Strassen::COORDS()][0];
+		my $dir = $s->get_directives;
+		if ($dir->{alias}) {
+		    for my $alias (@{ $dir->{alias} }) {
+			$map{$alias . " ($base)"} = $r->[Strassen::COORDS()][0];
+		    }
+		}
 	    }
 	}
     }
