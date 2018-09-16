@@ -76,6 +76,8 @@ sub usage (;$) {
 my $set_dataset_title_octets;
 # XXX should be generalized, or not be necessary
 my $coastline_hack_anchor;
+my $addr_suburbs_with_berlin_data;
+my @addr_suburbs_filter_city;
 
 my $debug = 1;
 my $force;
@@ -100,6 +102,8 @@ GetOptions(
 	   "dataset-title=s" => \$set_dataset_title_octets,
 	   # XXX
 	   "coastline-hack-anchor=s" => \$coastline_hack_anchor,
+	   "addr-suburbs-with-berlin-data" => \$addr_suburbs_with_berlin_data,
+	   'addr-suburbs-filter-city=s@' => \@addr_suburbs_filter_city,
 	   "h|help" => sub { usage },
 	   "v|version" => sub {
 	       print basename($0) . " $VERSION\n";
@@ -175,6 +179,28 @@ sub target_addr_suburbs {
 	return;
     }
 
+    my %street_zip_to_citypart;
+    if ($addr_suburbs_with_berlin_data) {
+	require PLZ;
+	my $plz = PLZ->new;
+	$plz->load;
+	for my $rec (@{ $plz->{Data} }) {
+	    my $str = $rec->[PLZ::FILE_NAME()];
+	    $str =~ s{(s)tr\.}{$1traße}i; # normalize for osm
+	    $street_zip_to_citypart{$str}->{$rec->[PLZ::FILE_ZIP()]}->{$rec->[PLZ::FILE_CITYPART()]} = 1;
+	}
+	# turn cityparts into comma-separated list
+	while(my($k1,$v1) = each %street_zip_to_citypart) {
+	    while(my($k2,$v2) = each %{ $street_zip_to_citypart{$k1} }) {
+		$street_zip_to_citypart{$k1}->{$k2} = join(", ", sort keys %{ $street_zip_to_citypart{$k1}->{$k2} });
+	    }
+	}
+    }
+
+    if (@addr_suburbs_filter_city) {
+	require List::Util;
+    }
+
     # XXX the following should go to a separate module XXX
     # XXX quite slow, takes currently ~20min for Berlin's _addr
 
@@ -202,18 +228,34 @@ sub target_addr_suburbs {
 	     my($r) = @_;
 	     my @f = split /\|/, $r->[Strassen::NAME()];
 	     my $p = [ split /,/, $r->[Strassen::COORDS()]->[0] ];
-	     my($zip,$city) = @f[2,3];
+	     my($strname,$zip,$city) = @f[0,2,3];
+	     if (@addr_suburbs_filter_city && !List::Util::first(sub { $_ eq $city }, @addr_suburbs_filter_city)) {
+		 warn "ignore @f because it's not in @addr_suburbs_filter_city...\n"
+		     if $debug >= 2;
+		 next;
+	     }
+
 	     my $found_citypart;
-	 CITYPARTS: for my $citypart (keys %citypart_to_polygons) {
-		 for my $polygon (@{ $citypart_to_polygons{$citypart} }) {
-		     if (VectorUtil::point_in_polygon($p, $polygon)) {
-			 $found_citypart = $citypart;
-			 last CITYPARTS;
+	 CITYPARTS: {
+		 if ($addr_suburbs_with_berlin_data && $city eq 'Berlin') {
+		     $found_citypart = $street_zip_to_citypart{$strname}->{$zip};
+		     last CITYPARTS if defined $found_citypart;
+		     warn "Nothing found for $r->[Strassen::NAME()], need to run slow cityparts fallback...\n"
+			 if $debug >= 2;
+		 }
+
+		 for my $citypart (keys %citypart_to_polygons) {
+		     for my $polygon (@{ $citypart_to_polygons{$citypart} }) {
+			 if (VectorUtil::point_in_polygon($p, $polygon)) {
+			     $found_citypart = $citypart;
+			     last CITYPARTS;
+			 }
 		     }
 		 }
 	     }
 	     if (!$found_citypart) {
-		 warn "No citypart found for $r->[Strassen::NAME()].\n";
+		 warn "No citypart found for $r->[Strassen::NAME()].\n"
+		     if $debug;
 		 $found_citypart = '';
 	     }
 	     $r->[Strassen::NAME()] .= "|$found_citypart";
@@ -883,7 +925,23 @@ defauult.
 The C<addr-suburbs> task adds a "suburb" (citypart) column to the
 F<_addr> by matching points with the F<cityparts> file. This task is
 currently quite slow (~20 minutes for data of size of Berlin). Not run
-by default.
+by default. The following options may also be specified:
+
+=over
+
+=item -addr-suburbs-filter-city I<cityname>
+
+If specified, then filter out all records not matching any of the
+given city names. May be specified multiple times.
+
+=item -addr-suburbs-with-berlin-data
+
+Experimental. Use the file F<Berlin.coords.data> for faster matching.
+This cuts down the time to less than one minute. A notable change is
+that instead of a specific suburb name a list of suburbs may be
+generated per record.
+
+=back
 
 =head3 write-meta
 
