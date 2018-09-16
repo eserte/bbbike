@@ -2409,7 +2409,7 @@ sub build_suggest_list {
     require File::Basename;
     my $ignore_qr = qr{(?:
 			 qualitaet_s
-		       | qualitaat_l
+		       | qualitaet_l
 		       | handicap_s
 		       | handicap_l
 		       | gesperrt
