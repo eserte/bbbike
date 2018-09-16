@@ -28,6 +28,8 @@ use File::Basename qw(dirname basename);
 use File::Temp     qw(tempfile);
 use Getopt::Long;
 
+use BBBikeUtil     qw(is_in_path);
+
 my @target_defs =
     (
      ['wasserstrassen_lowres'],
@@ -297,6 +299,29 @@ sub target_zip_points {
     };
 
     require Strassen::Core;
+
+    if (1 && is_in_path('cut') && is_in_path('sort')) {
+	# First pass: get all postal codes, sort them and allocate colors.
+	# This way the likelihood is increased that adjacent postal codes
+	# get different colors.
+	#
+	# Theoretically could also use Strassen::Core, but
+	# using unix tools like cut and sort is faster
+	# (1.5s vs. 8s on a slow machine).
+	open my $fh, 'cut -d"|" -f3 _addr | sort -u |'
+	    or die $!;
+	my %zip;
+	while(<$fh>) {
+	    chomp;
+	    next if /^#/;
+	    $zip{$_} = 1;
+	}
+	close $fh
+	    or die $!;
+	for my $zip (sort keys %zip) { # sorting nummerically or alphabetically shouldn't matter in most cases
+	    $get_zip_color->($zip); # only using the side-effect of allocating a color
+	}
+    }
 
     my $s = Strassen->new_stream('_addr');
     open my $ofh, ">", "_zip_points~"
