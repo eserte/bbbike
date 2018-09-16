@@ -28,39 +28,37 @@ use File::Basename qw(dirname basename);
 use File::Temp     qw(tempfile);
 use Getopt::Long;
 
-my @targets = ('wasserstrassen_lowres',
-	       'largest_city_is_center',
-	       'title_for_dataset',
-	       'inaccessible_streets',
-	       'strassen_cooked', # dependency: inaccessible_streets
-	       'fragezeichen_cooked',
-	       #'make_long_streets',
-	       'mount',
-	       'coastline_hack',
-	       'check_crossings',
-	       'check_nearest',
-	       'icao_metar',
-	       'addr_sort',
-	       'zip_points', # dependency: addr_sort
-	       'cityparts',
-	       'addr_suburbs',
-	       'write_meta',
-	      );
-# Targets run by default (exclude obscure ones here)
-my @run_targets =
-    grep { !m{^(
-		  mount                 # lohnt sich nicht, zu wenige Höhenpunkte
-	      |   coastline_hack        # it's a hack
-	      |   check_crossings	# slow
-	      |   check_nearest		# slow
-	      |   icao_metar		# XXX needs unpublished scripts/modules/data, but this will change hopefully
-	      |   zip_points            # experimental
-	      |   cityparts             # to be decided
-	      |   addr_suburbs          # experimental and very slow
-	      |   write_meta            # only needed if just additional meta options need to be written
-	      )$}x
-	  }
-    @targets;
+my @target_defs =
+    (
+     ['wasserstrassen_lowres'],
+     ['largest_city_is_center'],
+     ['title_for_dataset'],
+     ['inaccessible_streets'],
+     ['strassen_cooked', dependency => 'inaccessible_streets' ],
+     ['fragezeichen_cooked'],
+     #['make_long_streets']
+     ['mount',           default => 0], # lohnt sich nicht, zu wenige Höhenpunkte bei osm
+     ['coastline_hack',  default => 0], # it's a hack
+     ['check_crossings', default => 0], # slow
+     ['check_nearest',   default => 0], # slow
+     ['icao_metar',      default => 0], # XXX needs unpublished scripts/modules/data, but this will change hopefully
+     ['addr_sort'],
+     ['zip_points', dependency => 'addr_sort', default => 0], # experimental
+     ['cityparts',       default => 0], # to be decided whether it should be default
+     ['addr_suburbs',    default => 0], # experimental and very slow
+     ['write_meta',      default => 0], # only needed if just additional meta options need to be written
+    );
+my(@targets, @run_targets);
+for my $target_def (@target_defs) {
+    my($target_name, %opts) = @$target_def;
+    my $dependency = delete $opts{dependency}; # currently just "documentation"
+    my $default    = exists $opts{default} ? delete $opts{default} : 1;
+    die "Unhandled target options: " . join(" ", %opts) if %opts;
+    push @targets, $target_name;
+    if ($default) {
+	push @run_targets, $target_name;
+    }
+}
 
 my %skip_target; # skip default targets
 my %only_target; # run only the listed targets
@@ -223,7 +221,9 @@ sub target_addr_suburbs {
 	 });
     $new_addr_s->set_global_directives($addr_s->get_global_directives);
     $new_addr_s->set_global_directive(columns => 'street,housenunmber,postcode,city,suburb');
-    $new_addr_s->write("/tmp/_addr.new");#XXX should write to final destination
+    my $dest_file = "/tmp/_addr.new"; #XXX should write to final destination
+    $new_addr_s->write($dest_file);
+    warn "NOTE: currently the file _addr is not overwritten, but the change was written to $dest_file\n";
 }
 
 sub target_zip_points {
@@ -791,24 +791,103 @@ osm2bbd-postprocess - do additional postprocessing of the osm2bbd result
 =head1 DESCRIPTION
 
 Do additional postprocessing of the result of a L<osm2bbd> run. If no
-further options are given, then some default postprocessing tasks will
-be run. Usually C<osm2bbd-postprocess> can determine that a
-postprocessing task was already run and won't do it again unless the
-C<-force> option is given.
+further options are given, then some default postprocessing tasks (or
+"targets") will be run. Usually C<osm2bbd-postprocess> can determine
+that a postprocessing task was already run and won't do it again
+unless the C<-force> option is given.
 
 Run C<osm2bbd-postprocess --help> to see a list of all options and all
 tasks.
 
-The C<coastline-hack> task needs the additional option
-C<-coastline-hack-anchor> with any cardinal direction (e.g. C<n>,
-C<nw> etc.) for the direction of the "open sea".
+=head2 TASKS (TARGETS)
 
-The C<title_for_dataset> task can be given an option C<--dataset-title
+All listed tasks are run by default except noted otherwise.
+
+=head3 wasserstrassen-lowres
+
+Create a lowres variant of waterway items, suitable to be shown in the
+overview window of the Perl/Tk application.
+
+=head3 largest-city-is-center
+
+Picks the largest city in the area and writes it as "center" and
+"center_name" to the meta file.
+
+=head3 title-for-dataset
+
+The C<title-for-dataset> task can be given an option C<--dataset-title
 I<title>>, which should be an utf8-encoded name for the dataset. If
 not given, then the task would choose the name of the largest city in
 the area as the dataset title.
 
-The C<write_meta> task has to be called (e.g with C<--add-write-meta>
+=head3 inaccessible-streets
+
+Find which streets are not accessible and create a new file
+F<inaccessible_strassen>. Will be used e.g. for geocoding purposes to
+exclude coordinates which cannot be reached anyway.
+
+=head3 strassen-cooked
+
+Create a new file F<strassen-cooked> which is a reduced set of
+F<strassen> not containing inaccessible streets (see
+L</inaccessible_streets>).
+
+=head3 fragezeichen-cooked
+
+Create a new file F<fragezeichen-cooked> which is a reduced set of
+F<fragezeichen> not containing points already found in F<strassen>.
+
+=head3 mount
+
+Create a new file F<mount>. Not run by default.
+
+=head3 coastline-hack
+
+The C<coastline-hack> task needs the additional option
+C<-coastline-hack-anchor> with any cardinal direction (e.g. C<n>,
+C<nw> etc.) for the direction of the "open sea". Not run by default.
+
+=head3 check-crossings
+
+Run the L<check_crossings> script. Not run by default.
+
+=head3 check-nearest
+
+Run the L<check_nearest> script. Not run by default.
+
+=head3 icao-metar
+
+Create the F<icao_metar> file. This file may be used to find locations
+in the data area which has weather data in the internet available. Not
+run by default, as it uses dependencies currently not bundled with
+bbbike.
+
+=head3 addr-sort
+
+The C<addr-sort> task sorts the F<_addr> file to be suitable for fast
+L<GeocoderAddr> lookups.
+
+=head3 zip-points
+
+Create a new file F<_zip_points> which is a colored representation of
+zip points. This is mainly used for debugging data problems. Not run
+by default.
+
+=head3 cityparts
+
+The C<cityparts> task creates a new file F<cityparts>. Not run by
+defauult.
+
+=head3 addr-suburbs
+
+The C<addr-suburbs> task adds a "suburb" (citypart) column to the
+F<_addr> by matching points with the F<cityparts> file. This task is
+currently quite slow (~20 minutes for data of size of Berlin). Not run
+by default.
+
+=head3 write-meta
+
+The C<write-meta> task has to be called (e.g with C<--add-write-meta>
 or C<--only-write-meta> switch) if any of the following options is
 set:
 
