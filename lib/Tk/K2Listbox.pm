@@ -1,10 +1,10 @@
 # -*- perl -*-
 
 #
-# $Id: K2Listbox.pm,v 1.12 2006/09/01 22:18:59 eserte Exp $
+# $Id: K2Listbox.pm,v 1.13 2018/09/16 17:15:42 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999, 2000, 2002, 2004 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999, 2000, 2002, 2004, 2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -22,7 +22,7 @@ use vars qw(@ISA $VERSION);
 @ISA = qw(Tk::Derived Tk::Frame);
 Construct Tk::Widget 'K2Listbox';
 
-$VERSION = '0.08';
+$VERSION = '0.09';
 
 sub Populate {
     my($w,$args) = @_;
@@ -76,7 +76,8 @@ sub Populate {
 		 $$textvarref = $lb->get("active");
 	     });
 
-    $w->ConfigSpecs(-regexp => ['PASSIVE', 'regexp', 'Regexp', 0],
+    $w->ConfigSpecs(-regexp   => ['PASSIVE', 'regexp', 'Regexp', 0],
+		    -updatecb => ['CALLBACK', undef, undef, undef],
 		    DEFAULT => [$lb],
 		   );
     $w->Delegates('focus'   => $e,
@@ -210,6 +211,8 @@ sub autocomplete {
 	my $item = $w->Subwidget("listbox")->get("active");
 	$e->delete("0.0" => 'end');
 	$e->insert('end',$item);
+	my $cb = $w->cget('-updatecb');
+	$cb->Call($w) if $cb;
     });
     # End of  modification - By A. Johnson
 }
