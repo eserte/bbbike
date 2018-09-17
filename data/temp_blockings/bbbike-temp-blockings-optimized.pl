@@ -2100,26 +2100,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: by: http://www.family-and-friends-ev.de/ (update.pl bekommt hier aber einen Fehler)
-	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,11953
-',
-         'from' => 1537002000,
-         'id' => 1910,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              15,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbstzauber in Westend), Straße vollständig gesperrt (15.09.2018 bis 16.09.2018) ',
-         'type' => 'gesperrt',
-         'until' => 1537120800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2612,26 +2593,7 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       {
-         'data' => '	q4::temp 8556,21918 8568,21863 8473,21633 8460,21602
-',
-         'from' => 1536789600,
-         'id' => 2285,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              13,
-                              'months',
-                              9
-                            ]
-                          ],
-         'source_id' => 'http://www.laubinger.de/termine/rosenthaler-herbst/?y=2018',
-         'text' => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 14.09.2018 bis 16.09.2018',
-         'type' => 'handicap',
-         'until' => 1537135199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2748,7 +2710,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: tempex: volatile
 	2::night 14838,11410 14792,11391
 #: XXX wird hier dauerhaft gesperrt sein? (zurzeit kann man sich noch an den Bauzäunen vorbei mogeln)
-#: last_checked: 2018-09-07
+#: last_checked: 2018-09-17
 #: check_frequency: 7d
 	2::inwork 14838,11410 14949,11474
 ',
@@ -2774,52 +2736,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
-	2::temp 8573,12325 8540,12420
-	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	2::temp 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-	2::temp 8119,12414 8055,12186
-	2::temp 8538,12245 8522,12239 8466,12197 8327,12174 8215,12156 8122,12147 8049,12140 8018,12135 7823,12120 7775,12114 7429,12070
-	2::temp 8538,12245 8522,12187 8453,12099 8262,11883 8244,11878 8221,11876 8167,11865 8140,11850 8026,11764
-	2::temp 8546,12279 8391,12389 8354,12416
-	2::temp 8119,12414 8354,12416 8400,12417 8540,12420
-	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
-	3 7429,12070 7383,12095 7031,12320
-	3 7031,12320 7383,12095 7429,12070
-	3 7823,12120 7816,12150 7822,12201 7875,12363
-	3 7875,12363 7822,12201 7816,12150 7823,12120
-	2::temp 8119,12414 8122,12603 8207,12606 8306,12609 8348,12609 8399,12610 8485,12612
-	2::temp 8207,12606 8206,12757
-	3 7945,12592 8122,12603 8120,12756
-	3 8120,12756 8122,12603 7945,12592
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-#: note: die Wege im südöstlichen Teil des Tiergartens sind vermutlich nur am Sa & So gesperrt
-	2::temp 8214,12205 8215,12156 8221,11885 8221,11876 8210,11775 8203,11686
-	2::temp 8327,12174 8244,11878 8210,11775 8172,11679
-	2::temp 8501,11815 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
-	2::temp 8055,12186 8049,12140 8034,12093 8004,12074 7999,12040 8022,12016 8020,11937 8016,11770
-	2::temp 7823,12120 7832,12036 7822,11952 7801,11875
-	2::temp 7775,12114 7772,12040 7717,11918
-# REMOVED --- #: tempex ^^^
-',
-         'from' => 1536724800,
-         'id' => 2388,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              12,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, voraussichtlich bis 17.09.2018',
-         'type' => 'gesperrt',
-         'until' => 1537156800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3820,11 +3737,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX bis wann ist die Durchfahrt gesperrt? (laut googlemaps bis Ende November 2018)
-#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00, 2018-07-26 gegen 19:30, 2018-07-27 gegen 10:45, 2018-07-28 gegen 10:00, 2018-08-16 gegen 18:00, 2018-08-24 gegen 19:00,
+#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00, 2018-07-26 gegen 19:30, 2018-07-27 gegen 10:45, 2018-07-28 gegen 10:00, 2018-08-16 gegen 18:00, 2018-08-24 gegen 19:00, 2018-09-17 gegen 18:45
 #: note: unklar, ob man durchgekommen wäre: 2018-09-07 gegen 08:30
 #: source_id: 2147342009
-#: osm_watch: way id="154381291" version="5"
-#: last_checked: 2018-09-07
+#: osm_watch: way id="154381291" version="6"
+#: last_checked: 2018-09-17
 #: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
 ',
@@ -3870,17 +3787,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/rudow/c-bauen/ostburger-weg-erst-im-herbst-fertig_a168854
-	2::inwork 18023,833 17928,764 17734,675
-',
-         'from' => 1517602202,
-         'id' => 2931,
-         'source_id' => 'https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20180202',
-         'text' => 'Ostburger Weg: Bauarbeiten zwischen Will-Meisel-Weg und Am Espenpfuhl, Fahrbahn gesperrt, bis Mitte September 2018 ',
-         'type' => 'gesperrt',
-         'until' => 1537200000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4005,27 +3912,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: note: laut fritz bis 14.09.2018, laut googlemaps sogar bis Anfang November 2018
-#: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/warten-auf-die-strassenbahn_a177965 (2018-09-17, danach noch weitere Einschränkungen)
-#: XXX_prog: eigentlich q3+
-#: XXX sind die Bauarbeiten schon beendet (bei VMZ ist der Eintrag verschwunden)?
-	q3::inwork; 15516,12838 15367,12815 15357,12813 15233,12829 15098,12849 15074,12850 15010,12855 14940,12843 14906,12837 14836,12826 14750,12812 14661,12798 14556,12781 14435,12761 14355,12752 14096,12827
-',
-         'from' => 1526323594,
-         'id' => 2954,
-         'source_id' => '2147342574',
-         'text' => 'Scheffelstr. und Eldenaer Str.: Bauarbeiten Richtung Ebertystr. zwischen Möllendorffstr. und Liebigstr., Ausweichen auf engen Gehweg erlaubt, einige Bordsteine, bis Mitte September 2018',
-         'type' => 'handicap',
-         'until' => 1537200000
-       },
+       undef,
        undef,
        undef,
        undef,
        undef,
        {
          'data' => '#: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-09-06
+#: last_checked: 2018-09-16
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -4041,7 +3935,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: fritz
 #: XXX bis wann geht die Sperrung?
-#: last_checked: 2018-08-21
+#: last_checked: 2018-09-17
 	q4::inwork 4124,12721 4055,12713 3949,12710
 ',
          'from' => 1527186848,
@@ -4065,10 +3959,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX Sanierung des Kleinsteinpflasters ab 2018-05-28 bis voraussichtlich Herbst 2018 -> ändert sich an der Qualität etwas?
 #: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/pflasterarbeiten-am-fasanenplatz_a165320
-#: last_checked: 2018-08-18
+#: last_checked: 2018-09-17
 #: check_frequency: 14d
-	q4::inwork 5192,10241 5191,10190
-	q2::inwork 5017,10150 5191,10190
+	q2::inwork 5191,10190 5194,9985
+# REMOVED (hier nicht mehr) ---	q4::inwork 5192,10241 5191,10190
+# REMOVED (hier nicht mehr) ---	q2::inwork 5017,10150 5191,10190
 ',
          'from' => undef,
          'id' => 2965,
@@ -4080,19 +3975,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX eventuell hängen die Bauarbeiten mit den Bauarbeiten in der Eldenaer Str. zusammen
-#: XXX wird danach komplett asphaltiert sein?
-#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=42743 (sogar bis 2018-09-17)
-#: last_checked: 2018-08-31
-	q4::inwork; 14096,12827 14058,12709 13911,12692
-',
-         'from' => undef,
-         'id' => 2969,
-         'text' => 'Liebigstr. und Weidenweg: Bauarbeiten, Einbahnstraßenregelung',
-         'type' => 'handicap',
-         'until' => 1537200000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4256,6 +4139,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: note: zuletzt am 2018-08-22 gesehen
+#: osm_watch: way id="36936021" version="3" brb
 	2::inwork 25929,-5994 25902,-6006
 ',
          'from' => 1533756141,
@@ -4323,7 +4207,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX bis wann sind hier Bauarbeiten? (laut googlemaps bis Mitte November 2018)
-#: last_checked: 2018-08-30
+#: last_checked: 2018-09-17
 #: check_frequency: 21d
 	q4::inwork; 4502,11740 4574,11587
 ',
@@ -4470,6 +4354,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => undef,
          'id' => 3017,
          'text' => 'Jungfernstieg: Asphaltierungsarbeiten, Fahrbahn kann gesperrt sein',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: last_checked: 2018-09-17
+	q4::inwork; 3975,11087 3942,11010 3827,10980
+',
+         'from' => undef,
+         'id' => 3018,
+         'text' => 'Krumme Str.: Bauarbeiten, Einbahnstraßenregelung, Fahrbahn gesperrt in Richtung Wilmersdorfer Str.',
          'type' => 'handicap',
          'until' => undef
        }

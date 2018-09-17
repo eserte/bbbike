@@ -17,12 +17,12 @@
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.670050.php
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
 #: XXX Kreuzberger Planungen für 2018 und später (es wurden nicht alle in den BBBike-Daten eingetragen)
-#: last_checked: 2018-09-12
+#: last_checked: 2018-09-17
 #: next_check: 2018-12-31
 Mehringdamm: Radspuren oder Sanierung	?::projected; 9224,9053 9225,9111 9248,9350 9280,9476 9334,9670 9387,9804 9444,9919 9448,10014
 # 
 #: XXX außerdem: Nordseite wird saniert
-#: last_checked: 2018-08-19
+#: last_checked: 2018-09-15
 #: next_check: 2018-12-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -289,7 +289,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7421
 #: osm_watch: way id="25219757" version="13"
 #: osm_watch: way id="4600236" version="18"
-#: last_checked: 2018-06-30
+#: last_checked: 2018-09-17
 #: check_frequency: 90d
 Stromstr., Westseite: Radspuren bis 2015 geplant	?::projected; 6230,13596 6229,13517 6228,13324
 # 
@@ -882,7 +882,7 @@ Caligariplatz: Verbesserung -> offizielle Radwegführung zur Wisbyer Str.?	?::pro
 Blankenfelder Chaussee: Verbesserung -> Radspuren oder Verbesserung des Radwegs?	?::projected 10060,21916 9973,22133 9747,22694
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6510
-#: last_checked: 2018-06-22
+#: last_checked: 2018-09-17
 Bundesallee: Verbesserung -> Einrichtung von Zweirichtungsradwegen zur Pariser und Regensburger	?::projected 5464,9914 5467,9866
 # 
 #: XXX vielleicht haben die derzeitigen Bauarbeiten was damit zu tun
@@ -1030,7 +1030,7 @@ Dovestr.: Radstreifen	?::projected 4749,12689 4648,12559 4616,12532
 #: osm_watch: way id="26071046" version="11"
 #: osm_watch: way id="26071048" version="9"
 #: osm_watch: way id="26474540" version="8"
-#: last_checked: 2018-08-18
+#: last_checked: 2018-09-17
 #: check_frequency: 90d
 Brandenburgische Str.: Radstreifen (wo genau? oder die gesamte Strecke?)	?::projected 4342,9301 4246,9406 4057,9648 3980,9761 3974,9774 3949,9842 3927,9935 3902,10043 3874,10153 3852,10236 3835,10352
 # 
@@ -1338,8 +1338,8 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: source_id: LMS-BR_r_LMS-BR_81616
 #: source_id: 2147342542
 #: source_id: 2147343094
-#: last_checked: 2018-09-13
-#: check_frequency: 3d
+#: last_checked: 2018-09-16
+#: check_frequency: 7d
 # REMOVED ---#: next_check: 2018-09-14
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 # 
@@ -1387,8 +1387,8 @@ Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::projected
 # REMOVED (-> handicap_s-orig) --- #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php --- #: XXX außerdem: voraussichtlich ab April 2018 Komplettsperrung --- #: XXX mittlerweile existiert ein temp-blockings-Eintrag; muss noch mit last/next_check versehen werden bzw. nach handicap_s oder gesperrt überführt werden --- #: osm_watch: way id="531952542" version="4" --- #: last_checked: 2018-05-22 --- #: next_check: 2018-05-28 --- #: priority: #A --- Herbert-von-Karajan-Str.: gibt es Einschränkungen für Radfahrer während der Bauarbeiten?	? 8005,11627 7965,11467 7970,11441
 # 
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_06_0773_0896_online.pdf (Teileinziehung von Straßenland)
-#: last_checked: 2018-08-18
-#: check_frequency: 60d
+#: last_checked: 2018-09-17
+#: check_frequency: 90d
 Ingeborg-Drewitz-Allee: Teileinziehung, wird für öffentlichen Autoverkehr gesperrt, gibt es vielleicht auch andere Einschränkungen?	?::projected 7362,12731 7377,12729 7542,12736 7541,12754 7386,12749
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.386693.php
@@ -2167,8 +2167,8 @@ Schwarzer Weg (Schmöckwitz): Fahrbahnerneuerung in Planung	?::projected 28000,-3
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.641819.php
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-07-12-prot-fahrratsitzung3.pdf
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5795&date=20180219
-#: osm_watch: way id="268088020" version="7"
-#: last_checked: 2018-08-10 vvv
+#: osm_watch: way id="268088020" version="8"
+#: last_checked: 2018-09-17 vvv
 #: check_frequency: 360d vvv
 Bautzener Brache: Radwegführung und Brücke in Planung	?::projected 8207,9223 8240,9276 8240,9364 8242,9571 8221,9582 8255,9698 8256,9778 8233,9863
 Bautzener Brache - Großgörschenstr.: Weg in Planung	?::projected 8240,9364 8186,9380
@@ -2302,6 +2302,8 @@ Rudolf-Leonhard-Str. - Blumberger Damm: Fuß- und Radweg in Planung	?::projected 
 Gartenstr. (Biesdorf): wird eventuell noch kürzer werden	?::projected 21193,11330 21214,11331
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1809/nachricht6603.html
+#: by: https://www.berliner-woche.de/friedenau/c-bauen/wettbewerb-zur-neugestaltung-des-friedrich-wilhelm-platzes-ist-entschieden_a180932 (auch eine Fußgängerampel geplant, und im Plan kommen nur noch Radspuren vor)
+#: by: https://media04.berliner-woche.de/article/2018/09/14/3/218633_XL.jpg?1537206510
 #: next_check: 2019-07-01
 Friedrich-Wilhelm-Platz: Verbindung zwischen Niedstr. und Wilhelmshöher Str. geplant	?::projected 5364,7330 5310,7325
 # 
@@ -2345,10 +2347,7 @@ Waldpromenade: Qualität (Waldweg?) und Ausschilderung (keine?) zwischen Attingha
 # 
 Sigismundstr.: gibt es hier eine Einbahnstraßenregelung?	?; 8031,11249 7934,11275
 # 
-#: XXX NEW	Degnerstr. (Alt-Hohenschönhausen) in beiden Richtungen zwischen Suermondtstr. und Niehofer Str. (Berlin)  Gültig ab: 27.08.2018 06:00  Baustelle, Vollsperrung (bis Mitte 09/18)	2147343065
-#: XXX laut fritz bis 17.09.2018
-Degnerstr.: Sperrung auch für Radfahrer relevant?	? 16653,16150 16692,16253
-# 
+# REMOVED (ohne Prüfung ausgelaufen) --- XXX NEW	Degnerstr. (Alt-Hohenschönhausen) in beiden Richtungen zwischen Suermondtstr. und Niehofer Str. (Berlin)  Gültig ab: 27.08.2018 06:00  Baustelle, Vollsperrung (bis Mitte 09/18)	2147343065 --- #: XXX laut fritz bis 17.09.2018 --- Degnerstr.: Sperrung auch für Radfahrer relevant?	? 16653,16150 16692,16253
 # REMOVED (nicht relevant) --- #: XXX NEW	Grünauer Str. (Köpenick) Richtung Regattastr. zwischen Rudower Str. und Schönerlinder Str. (Berlin)  Gültig ab: 27.08.2018 06:00  Gleisbauarbeiten, Fahrtrichtung gesperrt, Umleitung ausgeschildert (bis Anfang 09/18)	2147343066 --- #: XXX laut fritz bis 03.09.2018 --- Grünauer Str.: Sperrung auch für Radfahrer relevant?	?; 21781,4470 21778,4440 21799,4319
 # 
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.731657.php
@@ -2510,17 +2509,19 @@ Curtiusstr./Baseler Str.: Zebrastreifen geplant	?::projected 3188,3976 3185,3958
 # REMOVED (-> temp_blockings) --- #: XXX bis 09.01.2019 --- #: source_id: LMS-BR_r_LMS-BR_122462_LMS-BR_72 --- Gervinusstr.: Einbahnstraße (welche Richtung? gesperrt Richtung Osten?), für Radfahrer relevant?	? 3835,10915 3623,10800
 # 
 #: by: https://www.berliner-zeitung.de/berlin/pilotprojekt-in-mitte-berlin-rollt-fahrradfahrern-den-roten-teppich-aus-29559664
-#: last_checked: 2018-08-27
+#: last_checked: 2018-09-17
 #: next_check: 2018-12-31
 Linienstr.: wird Vorfahrtsstraße	?::projected 9312,13388 9609,13522 9744,13584 9900,13653 9927,13666 9947,13674 9993,13682 10082,13686 10220,13694 10301,13701 10445,13675 10597,13647 10709,13629 10740,13621 10777,13614 10872,13570 11059,13480 11104,13456
 # 
 #: by: Tsp vom 20118-01-22 vvv
 #: XXX Ampeln geplant (Umsetzungen 2018) vvv
-#: next_check: 2018-06-01
 #: XXX wird nur die bestehende Ampel verlegt?
 #: source_id: LMS-BR_r_LMS-BR_110476_LMS-BR_72
+#: source_id: 2147341856
+#: last_checked: 2018-09-17 (erste Bauarbeiten)
+#: check_frequency: 30d
 Brandenburgische Str./Ballenstedter Str.	?::projected 3932,9819 3949,9842 3978,9821
-#: last_checked: 2018-09-12
+#: last_checked: 2018-09-17
 #: check_frequency: 60d
 Blücherstr./Brachvogelstr.	?::projected 9997,9987 10006,9942 9965,9925
 #: last_checked: 2018-09-04
@@ -2594,14 +2595,14 @@ Königsweg (Tegel): Zufahrt für Autos gesperrt?	? 2168,20585 2188,20600
 # 
 #: osm_watch: way id="25199403" version="10"
 #: osm_watch: way id="4410310" version="14"
-#: last_checked: 2018-06-30
-#: check_frequency: 60d
+#: last_checked: 2018-09-17
+#: check_frequency: 30d
 Turmstr.: wird hier eine Änderung bei den Radwegen passieren?	? 5368,13406 5248,13434
 # 
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/419_2018_ds_838_freie_fahrt_fuer_den_m27er_in_der_huttenstrasse.pdf
 #: by: http://www.berliner-woche.de/moabit/verkehr/freie-fahrt-fuer-den-m27-engstelle-in-der-huttenstrasse-schwer-zu-beseitigen-d160286.html
 #: osm_watch: way id="24916010" version="9"
-#: last_checked: 2018-06-30
+#: last_checked: 2018-09-17
 #: check_frequency: 400d
 Huttenstr.: werden die Radspuren hier verlängert?	? 5116,13457 5248,13434
 # 
@@ -2633,7 +2634,7 @@ Friesenstr.: Asphaltierung geplant	?::inwork 9801,8683 9801,8889 9799,8962 9797,
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.630514.php
 #: XXX evtl. besteht hier ein Zusammenhang mit der geplanten Ampel
 #: osm_watch: way id="496239503" version="3"
-#: last_checked: 2018-09-12 (nur ein provisorisch asphaltierter Radweg)
+#: last_checked: 2018-09-17 (nur ein provisorisch asphaltierter Radweg)
 Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::inwork; 10006,9942 9950,9987
 # REMOVED (hier schon fertig) --- Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::inwork; 9950,9987 9922,10010 9827,10051
 # REMOVED (fertig) --- #: last_checked: 2017-11-07 --- #: check_frequency: 14d --- Brachvogelstr./Johanniterstr.: Zebrastreifen in Bau	?::inwork 10058,10089 10066,10071 10079,10087
@@ -2735,7 +2736,7 @@ Moorbirkenweg: Qualität? Wo wird sich die Straße befinden? Existiert die Straße 
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_929_16.pdf
 #: osm_watch: way id="295627704" version="4"
-#: last_checked: 2018-09-05
+#: last_checked: 2018-09-17
 #: check_frequency: 60d
 Liebigstr.: Einrichtung einer Spielstraße, wo genau?	? 14229,12311 14166,12323 14147,12344 14091,12355 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
 # 
@@ -2866,7 +2867,7 @@ Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 1
 #: XXX ggfs. culdesac- und str_cont_ausnahme-Einträge erstellen
 #: osm_watch: way id="25008069" version="6"
 #: priority: #C
-#: last_checked: 2018-08-21
+#: last_checked: 2018-09-15
 #: check_frequency: 90d
 Mehlbeerenweg: Teilstück wird eingezogen	? 11940,11982 11923,11881
 # 

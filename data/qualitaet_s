@@ -764,7 +764,8 @@ Jonasstr.: Asphalt	Q0 12585,7357 12703,7370
 Jonasstr.: Kopfsteinpflaster	Q2 12925,7425 13018,7441
 Mittelbuschweg: Kopfsteinpflaster	Q2 13500,7018 13484,7140 13575,7200 13693,7228
 Mittelbuschweg: Beton	Q0 13797,7267 13693,7228
-Welserstr.: Kopfsteinpflaster	Q2 6217,10099 6256,10309 6265,10359
+Welserstr.: Kopfsteinpflaster	Q2 6217,10099 6256,10309
+Welserstr.: Asphalt	Q0 6256,10309 6265,10359
 Kieler Str. (Mitte): Kopfsteinpflaster	Q2 8054,14257 7973,14195
 (Uferweg Plötzensee): Parkweg	Q1 5618,14981 5455,15245 5391,15331 5306,15387 5134,15565 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415 5075,15354 5005,15213
 Kruppstr.: Kopfsteinpflaster	Q2 7331,14132 6917,13917 6890,13900 6817,13862 6746,13826
@@ -2836,7 +2837,11 @@ Rampe: asphaltiert	Q0 4206,12691 4234,12710
 (Neues Ufer - Kaiserin-Augusta-Allee): Parkweg, feiner bis gröberer Schotter	Q2 4456,12918 4514,12936 4581,13066 4576,13115 4547,13139
 (Neues Ufer - Kaiserin-Augusta-Allee): asphaltiert	Q0 4547,13139 4561,13244
 (nördliches Spreeufer/Schiffbauerdamm): Kopfsteinpflaster	Q2 8635,12629 8709,12605 8756,12608
-Weidenweg: Kopfsteinpflaster	Q2 13767,12626 13786,12636 13863,12677
+Weidenweg: asphaltiert	Q0 13767,12626 13786,12636
+Weidenweg: Radweg asphaltiert, Fahrbahn gepflastert	Q0; 13786,12636 13828,12658
+Weidenweg: asphaltiert	Q0; 13828,12658 13786,12636
+Weidenweg: Kopfsteinpflaster	Q2; 13828,12658 13863,12677
+Weidenweg: asphaltiert	Q0; 13863,12677 13828,12658
 Weidenweg: Asphalt	Q0 13863,12677 13911,12692 14058,12709
 Roedeliusplatz: Kopfsteinpflaster	Q2 16158,12191 16246,12177
 Freiastr.: Kopfsteinpflaster	Q2 16826,12408 16694,12422

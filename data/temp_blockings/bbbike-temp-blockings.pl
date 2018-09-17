@@ -20915,7 +20915,7 @@ EOF
 #: tempex: volatile
 	2::night 14838,11410 14792,11391
 #: XXX wird hier dauerhaft gesperrt sein? (zurzeit kann man sich noch an den Bauzäunen vorbei mogeln)
-#: last_checked: 2018-09-07
+#: last_checked: 2018-09-17
 #: check_frequency: 7d
 	2::inwork 14838,11410 14949,11474
 EOF
@@ -26751,11 +26751,11 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX bis wann ist die Durchfahrt gesperrt? (laut googlemaps bis Ende November 2018)
-#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00, 2018-07-26 gegen 19:30, 2018-07-27 gegen 10:45, 2018-07-28 gegen 10:00, 2018-08-16 gegen 18:00, 2018-08-24 gegen 19:00,
+#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00, 2018-07-26 gegen 19:30, 2018-07-27 gegen 10:45, 2018-07-28 gegen 10:00, 2018-08-16 gegen 18:00, 2018-08-24 gegen 19:00, 2018-09-17 gegen 18:45
 #: note: unklar, ob man durchgekommen wäre: 2018-09-07 gegen 08:30
 #: source_id: 2147342009
-#: osm_watch: way id="154381291" version="5"
-#: last_checked: 2018-09-07
+#: osm_watch: way id="154381291" version="6"
+#: last_checked: 2018-09-17
 #: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
 EOF
@@ -27195,7 +27195,9 @@ EOF
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/warten-auf-die-strassenbahn_a177965 (2018-09-17, danach noch weitere Einschränkungen)
 #: XXX_prog: eigentlich q3+
 #: XXX sind die Bauarbeiten schon beendet (bei VMZ ist der Eintrag verschwunden)?
-	q3::inwork; 15516,12838 15367,12815 15357,12813 15233,12829 15098,12849 15074,12850 15010,12855 14940,12843 14906,12837 14836,12826 14750,12812 14661,12798 14556,12781 14435,12761 14355,12752 14096,12827
+#: priority: #A
+#: next_check: 2018-09-16
+	q3::inwork; 15516,12838 15367,12815 15357,12813 15233,12829 15098,12849 15074,12850 15010,12855 14940,12843 14906,12837 14836,12826 14731,12809 14661,12798 14556,12781 14435,12761 14355,12752 14096,12827
 EOF
      },
      { from  => 1526407304, # 2018-05-15 20:01
@@ -27245,7 +27247,7 @@ EOF
        source_id => '2147342639',
        data  => <<EOF,
 #: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-09-06
+#: last_checked: 2018-09-16
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -27267,7 +27269,7 @@ EOF
        data  => <<EOF,
 #: by: fritz
 #: XXX bis wann geht die Sperrung?
-#: last_checked: 2018-08-21
+#: last_checked: 2018-09-17
 	q4::inwork 4124,12721 4055,12713 3949,12710
 EOF
      },
@@ -27308,10 +27310,11 @@ EOF
        data  => <<EOF,
 #: XXX Sanierung des Kleinsteinpflasters ab 2018-05-28 bis voraussichtlich Herbst 2018 -> ändert sich an der Qualität etwas?
 #: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/pflasterarbeiten-am-fasanenplatz_a165320
-#: last_checked: 2018-08-18
+#: last_checked: 2018-09-17
 #: check_frequency: 14d
-	q4::inwork 5192,10241 5191,10190
-	q2::inwork 5017,10150 5191,10190
+	q2::inwork 5191,10190 5194,9985
+# REMOVED (hier nicht mehr) ---	q4::inwork 5192,10241 5191,10190
+# REMOVED (hier nicht mehr) ---	q2::inwork 5017,10150 5191,10190
 EOF
      },
      { from  => 1528137944, # 2018-06-04 20:45
@@ -27347,7 +27350,7 @@ EOF
 #: priority: #A
 #: last_checked: 2018-08-28
 # REMOVED --- #: next_check: 2018-07-13
-	q4::inwork 13767,12626 13786,12636 13863,12677 13911,12692
+	q4::inwork 13767,12626 13786,12636 13828,12658 13863,12677 13911,12692
 EOF
      },
      { from  => undef,
@@ -27629,6 +27632,7 @@ EOF
        source_id => 'https://www.zeuthen.de/Die-Deutsche-Bahn-informierte-Grunderneuerung-der-Personenunterfuehrung-am-S-Bahnhof-Zeuthen-642703.html',
        data  => <<EOF,
 #: note: zuletzt am 2018-08-22 gesehen
+#: osm_watch: way id="36936021" version="3" brb
 	2::inwork 25929,-5994 25902,-6006
 EOF
      },
@@ -27706,7 +27710,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann sind hier Bauarbeiten? (laut googlemaps bis Mitte November 2018)
-#: last_checked: 2018-08-30
+#: last_checked: 2018-09-17
 #: check_frequency: 21d
 	q4::inwork; 4502,11740 4574,11587
 EOF
@@ -27865,6 +27869,15 @@ EOF
 #: last_checked: 2018-09-12
 #: check_frequency: 7d
 	q4::inwork 5229,2395 5332,2568 5425,2735 5510,2883
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Krumme Str.: Bauarbeiten, Einbahnstraßenregelung, Fahrbahn gesperrt in Richtung Wilmersdorfer Str.',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2018-09-17
+	q4::inwork; 3975,11087 3942,11010 3827,10980
 EOF
      },
     );
