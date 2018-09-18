@@ -4126,20 +4126,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1537999200
        },
-       {
-         'data' => '#: source_id: 2147342987
-	q4::inwork; 13515,11969 13696,11920
-',
-         'from' => 1533579833,
-         'id' => 2992,
-         'text' => 'Grünberger Str.: Sperrung der Fahrbahn zwischen Kadiner Str. und Warschauer Str., Richtung Osten, voraussichtlich bis Mitte September 2018',
-         'type' => 'handicap',
-         'until' => 1537286400
-       },
+       undef,
        undef,
        {
-         'data' => '#: note: zuletzt am 2018-08-22 gesehen
-#: osm_watch: way id="36936021" version="3" brb
+         'data' => '#: osm_watch: way id="36936021" version="3" brb
+#: last_checked: 2018-09-18
+#: next_check: 2019-11-01
 	2::inwork 25929,-5994 25902,-6006
 ',
          'from' => 1533756141,
@@ -4366,6 +4358,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Krumme Str.: Bauarbeiten, Einbahnstraßenregelung, Fahrbahn gesperrt in Richtung Wilmersdorfer Str.',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '	q4::inwork; 4451,8874 4777,8870
+',
+         'from' => 1537297950,
+         'id' => 3019,
+         'source_id' => '2147343219',
+         'text' => 'Berliner Str.: Baustelle zwischen Mannheimer Str. und Brandenburgische Str./Blissestr., Fahrbahn Richtung Osten gesperrt, bis Ende November 2018',
+         'type' => 'handicap',
+         'until' => 1543618799
        }
      
 );

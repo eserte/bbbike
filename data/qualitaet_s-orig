@@ -103,7 +103,7 @@ Pannierstr.: Kopfsteinpflaster	Q2 12242,8972 12202,8895
 #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="155605273" version="4"
-#: last_checked: 2018-09-05
+#: last_checked: 2018-09-18
 #: next_check: 2019-03-01
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -272,13 +272,15 @@ Aachener Str.: Kopfsteinpflaster	Q2 4672,8031 4687,8306 4623,8457
 Lohmühlenstr.: Kopfsteinpflaster	Q2 13333,9929 13311,9905 13302,9894 13251,9829
 Harzer Str.: Kopfsteinpflaster	Q2 12977,9301 12913,9353 12897,9365
 Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
+# 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (AT.2)
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2018-09-14
+#: last_checked: 2018-09-18
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
+# 
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 14988,11130 15021,11152 15102,11120
 Krummhübler Str.: Kopfsteinpflaster	Q2+ 15060,11006 15102,11120
 Marzahner Chaussee: Kopfsteinpflaster	Q2- 18555,12101 18420,11864 18417,11854 18382,11740
@@ -615,7 +617,8 @@ Königsweg: Waldweg, mäßig bis OK	Q2+ -3161,975 -3407,834 -3511,776 -4184,400 -42
 Königsweg: Asphalt	Q0 -1082,2140 -1278,2034 -1296,2025
 # REMOVED (fertig) --- #: XXX Instandsetzung, wird neu asphaltiert --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.364590.php --- #: last_checked: 2015-09-27 --- #: check_frequency: 30d
 Königsweg: Asphalt	Q0 -1296,2025 -1309,2017 -1591,1861 -1650,1826 -1724,1785 -1805,1740 -1889,1693 -1950,1659 -2043,1608 -2602,1291
-# REMOVED --- Sonntagstr.: Kopfsteinpflaster	Q2 14434,11465 14535,11327 14598,11245 14669,11152 14752,11041 14808,10978
+Sonntagstr.: Kopfsteinpflaster	Q2 14434,11465 14535,11327 14598,11245 14669,11152 14752,11041
+# REMOVED --- Sonntagstr.: Kopfsteinpflaster	Q2 14752,11041 14808,10978
 Ostkreuz: Asphalt	Q0 14808,10978 14845,10954
 Simplonstr.: Kopfsteinpflaster	Q2 13996,11631 13992,11605 14031,11569 14049,11553 14099,11505 14181,11434 14254,11377 14328,11320 14369,11287 14400,11261 14468,11203
 Simplonstr.: Asphalt	Q0 14468,11203 14531,11142
@@ -654,7 +657,7 @@ Brixener Str.: Kopfsteinpflaster	Q2 10507,17400 10502,17419 10466,17464
 #: XXX wird nach den Bauarbeiten die Qualität besser sein?
 #: source_id: 2147342929
 #: priority: #B
-#: last_checked: 2018-09-08
+#: last_checked: 2018-09-18
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2018-10-31
 Helmerdingstr.: Kopfsteinpflaster	Q2 14442,11101 14468,11203
@@ -1914,7 +1917,7 @@ Altenbraker Str.: Kopfsteinpflaster	Q2 12367,7429 12396,7312 12421,7197 12451,71
 Selkestr.: Kopfsteinpflaster	Q2 12766,7113 12751,7166 12741,7224
 Wittmannsdorfer Str.: mäßiges bis gutes Kopfsteinpflaster	Q2+ 12908,7305 12878,7415
 Rübelandstr.: Kopfsteinpflaster	Q2 12843,7290 12865,7192
-Bornsdorfer Str.: mäßiges bis gutes Kopfsteinpflaster	Q2+ 12698,7677 12775,7725 12726,7887 12709,7940 12692,7996
+Bornsdorfer Str.: mäßiges bis gutes Kopfsteinpflaster	Q2+ 12698,7677 12699,7691 12777,7714 12726,7887 12709,7940 12692,7996
 Bornsdorfer Str.: mäßiges Kopfsteinpflaster	Q2 12692,7996 12668,8077
 Saltykowstr.: gutes kleinteiliges Kopfsteinpflaster	Q1 12726,7887 12865,7923
 Uthmannstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 12914,7785 13150,7845
@@ -3359,7 +3362,7 @@ Feuchtwangerweg: Beton	Q1 15634,1765 15653,1746 15788,1747
 Feuchtwangerweg: Kleinpflaster	Q1 15835,1747 15788,1747
 Försterweg: Asphalt	Q0 13462,2186 13485,2007
 Wildmeisterdamm: Verbundsteinpflaster	Q1 13640,2229 13568,2208 13559,2205 13552,2204 13534,2204
-Wildmeisterdamm: Asphalt	Q0 13534,2204 13462,2186 13336,2151 13176,2106 13104,2143
+Wildmeisterdamm: Asphalt	Q0 13534,2204 13462,2186 13336,2151 13176,2106 13157,2116 13104,2143
 Steinträgerweg: Beton	Q0 13023,2093 12987,2220 12963,2365
 Rohrlegerweg: Beton	Q0 12738,2162 12864,2191 12987,2220 13103,2271 13309,2410
 Mondsteinpfad: Gehwegplatten	Q1 11181,1884 11182,1976
@@ -10514,7 +10517,10 @@ Fregestr.: asphaltierter Radweg	Q0 5622,6400 5582,6360
 Am Hamburger Bahnhof: Kopfsteinpflaster	Q2 8189,13468 8183,13482 8141,13580 8120,13627
 (am 50hertz-Gebäude): gepflastert	Q2+ 8059,13551 8141,13580
 (Vorfahrt Petruskirche): Kopfsteinpflaster	Q2 5393,2053 5452,2077
-An der Neumark: Verbundsteinpflaster	Q1+ 11283,3774 11300,3709 11357,3720 11378,3626 11332,3615
+An der Neumark: Verbundsteinpflaster	Q1+ 11283,3774 11300,3709 11357,3720 11378,3626
+An der Neumark: Verbundsteinpflaster	Q1+ 11438,3637 11405,3631 11378,3626 11332,3615
+An der Neumark: Verbundsteinpflaster	Q1+ 11394,3814 11438,3637 11460,3643 11483,3554 11430,3540
+An der Neumark: Verbundsteinpflaster	Q1+ 11405,3631 11430,3540 11437,3508
 (Jan-Petersen-Str. - Einkaufszentrum): Beton	Q0- 21130,16162 21173,16238 21231,16207
 (Jan-Petersen-Str. - Einkaufszentrum): Verbundsteinpflaster	Q1 21231,16207 21272,16184
 (Jan-Petersen-Str. - Karl-Holtz-Str.): Betonplatten	Q0- 21272,16184 21361,16377
@@ -10787,6 +10793,7 @@ Sebastianstr.: Asphalt, einige Schäden	Q0- 10640,11564 10818,11269 10824,11256
 Waldowstr.: Asphalt, einige Schäden	Q0- 10309,20562 10383,20295 10435,20098 10486,19955 10508,19910
 Bahnhofstr. - S-Bhf. Lichterfelde Ost: Kopfsteinpflaster	Q2 5332,2568 5367,2528
 Steinmetzstr.: Mosaikpflaster	Q1 7698,10147 7657,9942 7625,9771
+(Johannisthaler Chaussee - Wildmeisterdamm): Asphalt	Q0- 13010,2085 13157,2116
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -10953,6 +10960,7 @@ Huntestr.: guter Beton	Q0- 1913,1000 1960,1096 2055,1198 2166,1256
 #: confirmed_by: srt
 Tollensestr. (Zehlendorf): guter Beton	Q0 1812,638 2047,914 2239,1104
 #: note: "einige Fußgänger" ignoriert
+#: confirmed_by: srt
 Zimmererweg: guter Asphalt	Q0 12687,3319 12754,3318 12805,3231 13136,2705 13173,2593 13180,2514 13196,2369
 #: confirmed_by: srt
 Darser Str.: Asphalt	Q0 2327,1009 2239,1104 2199,1179 2166,1256 2129,1336 2077,1460
@@ -14372,7 +14380,7 @@ Schwarzkogelweg: guter Beton	Q0 10121,3040 10167,3257
 Röthspitzenweg: guter Beton	Q0 9867,3092 9891,3203 9911,3310
 Lothar-Bucher-Str.: Asphalt	Q0 5598,6136 5664,6082 5748,6051 5845,6049 6008,6067
 Hoeftweg: große Betonplatten im guten Zustand	Q0 9675,3150 9683,3185 9655,3270 9701,3357
-#: confirmed_by: srt (zumindest der Nordteil)
+#: confirmed_by: srt
 Maurerweg: guter Asphalt	Q0 12864,2191 12844,2382 12835,2470 12825,2573 12810,2751 12807,2958 12805,3231
 Soldiner Str. (Lichtenrade): guter Asphalt	Q0 11086,516 11222,483 11281,454 11343,405 11407,324 11442,232 11459,225
 #: confirmed_by: anonymous
@@ -19268,8 +19276,8 @@ Zietenstr. (Lankwitz): guter Asphalt	Q0 6196,2204 6108,2326 6065,2443 5971,2691
 #: by: Viktoria hellwig: vvv
 #: corrected_by: srt (Beton -> Asphalt)
 Neumarkplan: Asphalt	Q0 12337,4160 12356,4133
-#: corrected_by: anonymous (mäßiger Beton -> guter Asphalt)
-Neumarkplan: guter Asphalt	Q0 12356,4133 12415,4053 12485,3933 12572,3764 12578,3728 12560,3697 12530,3669 12485,3658 12445,3674 12420,3707 12415,3743 12421,3767 12485,3933
+#: confirmed_by: srt
+Neumarkplan: Beton mit einigen Schäden	Q1+ 12356,4133 12415,4053 12485,3933 12572,3764 12578,3728 12560,3697 12530,3669 12485,3658 12445,3674 12420,3707 12415,3743 12421,3767 12485,3933
 #: corrected_by: srt (mäßiger Asphalt -> Kopfsteinpflaster)
 Massiner Weg: Kopfsteinpflaster	Q2 12356,4133 12318,4099 12225,3982 12064,3813
 #: confirmed_by: srt
@@ -22666,7 +22674,8 @@ Breddiner Weg: Asphalt	Q0 -8312,15151 -8229,15505
 Straße 49 (Heinersdorf): guter Asphalt	Q0 12780,17318 12609,17405 12500,17460 12392,17517
 # 
 #: by: Roland Mohrbacher vvv
-Steinträgerweg: Beton	Q0 12963,2365 12948,2484 12937,2575 12924,2617 12907,2660 12849,2751 12810,2751 12693,2746
+#: corrected_by: srt (Beton -> ...)
+Steinträgerweg: Asphalt	Q0 12963,2365 12948,2484 12937,2575 12924,2617 12907,2660 12849,2751 12810,2751 12693,2746
 #: confirmed_by: srt
 Steinmetzstr. (Lichtenrade): schlechte Fahrbahnqualität (Feldstein-Belag)	Q3 10573,-2891 10679,-2842 10770,-2796 10828,-2774 10884,-2795
 #: confirmed_by: rainer anders, srt

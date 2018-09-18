@@ -1541,7 +1541,7 @@ EOF
        text  => 'K 6161; (Ernst-Thälmann-Str.); OD Schulzendorf, Kanal- und Straßenbau Vollsperrung 30.06.2005-30.11.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 25173,-3957 25150,-3949 25052,-3980 24933,-4017 24809,-4058 24798,-4061 24758,-4072 24714,-4087 24613,-4121 24295,-4221 24200,-4252 23860,-4362 23387,-4518
+	q4 25173,-3957 25150,-3949 25052,-3980 24933,-4017 24809,-4058 24798,-4061 24758,-4072 24714,-4087 24613,-4121 24295,-4221 24200,-4252 23860,-4362 23658,-4428 23387,-4518
 EOF
      },
      { from  => 1107475200, # 2005-02-04 01:00
@@ -18560,7 +18560,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016334',
        data  => <<EOF,
-	q4::inwork; 20827,-537 20890,-546 20986,-529 21074,-475
+	q4::inwork; 20827,-537 20920,-556 20986,-529 21074,-475
 EOF
      },
      { from  => 1284274800, # 2010-09-12 09:00
@@ -27631,8 +27631,9 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.zeuthen.de/Die-Deutsche-Bahn-informierte-Grunderneuerung-der-Personenunterfuehrung-am-S-Bahnhof-Zeuthen-642703.html',
        data  => <<EOF,
-#: note: zuletzt am 2018-08-22 gesehen
 #: osm_watch: way id="36936021" version="3" brb
+#: last_checked: 2018-09-18
+#: next_check: 2019-11-01
 	2::inwork 25929,-5994 25902,-6006
 EOF
      },
@@ -27878,6 +27879,15 @@ EOF
        data  => <<EOF,
 #: last_checked: 2018-09-17
 	q4::inwork; 3975,11087 3942,11010 3827,10980
+EOF
+     },
+     { from  => 1537297950, # 2018-09-18 21:12
+       until => 1543618799, # 2018-11-30 23:59
+       text  => 'Berliner Str.: Baustelle zwischen Mannheimer Str. und Brandenburgische Str./Blissestr., Fahrbahn Richtung Osten gesperrt, bis Ende November 2018',
+       type  => 'handicap',
+       source_id => '2147343219',
+       data  => <<EOF,
+	q4::inwork; 4451,8874 4777,8870
 EOF
      },
     );

@@ -21,13 +21,13 @@
 # REMOVED (fertig) --- #: XXX zurzeit Bauarbeiten bis 2017-06-13 --- evtl. wird die Qualit‰t danach besser? -> qualitaet_s-orig --- #: last_checked: 2017-06-07 --- #: next_check: 2017-06-13 --- Kinzigstr.: Bauarbeiten, Fahrbahn ist nicht befahrbar	q3::inwork 14589,11975 14471,11782
 # 
 #: XXX wenn beendet -> Eintrag in gesperrt-orig wieder aktivieren
-#: last_checked: 2018-09-17
+#: last_checked: 2018-09-18
 Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 # 
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2018-09-08
+#: last_checked: 2018-09-18
 #: check_frequency: 90d
 Dˆringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -103,6 +103,7 @@ Auerstr.: zwischen Richard-Sorge-Str. und Lˆwestr. Baustelle, Einbahnstraﬂenrege
 #: XXX laut googlemaps nur bis 20. September 2018
 #: source_id: 2147342785
 #: priority: #A
+#: last_checked: 2018-09-18
 #: next_check: 2018-09-20
 # REMOVED --- #: next_check: 2018-12-31
 #: valid: -20181231
@@ -502,7 +503,7 @@ Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fuﬂg‰nger	q3 5
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 
 #: XXX Wann sind die Bauarbeiten beendet? (laut googlemaps: Ende November 2018)
-#: last_checked: 2018-09-11
+#: last_checked: 2018-09-18
 #: check_frequency: 14d
 Weichselstr.: Bauarbeiten zwischen Weichselplatz und Ossastr., Fahrbahn gesperrt	q4::inwork 12755,9188 12681,9083
 # 
@@ -519,7 +520,7 @@ Weichselstr.: Bauarbeiten zwischen Weichselplatz und Ossastr., Fahrbahn gesperrt
 #: source_id: 2147338550
 #: source_id: LMS-BR_r_LMS-BR_19252
 #: source_id: 2147342527
-#: last_checked: 2018-09-05 vvv
+#: last_checked: 2018-09-18 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="585753318" version="1"
 Karl-Marx-Str.: Bauarbeiten zwischen Rollbergstr. und Briesestr., Richtung S¸den auf engen Gehweg ausweichen	q4::inwork; 12714,8249 12753,8187 12794,8103
@@ -2740,7 +2741,10 @@ Am Orangeriepark: einige Fuﬂg‰nger	q1 10271,19361 10281,19364 10330,19384 10321,
 (Zur L¸barser Bahn - M‰rkisches Viertel): einige Fuﬂg‰nger, Bordstein	q2 6569,22345 6585,22324
 #: XXX_prog BS am Dalandweg, ansonsten eigentlich q1 (aber hier gibt's auch gleichzeitig eine Steigung zum Dalandweg hin)
 (Paul-Schwarz-Promenade - Dalandweg): einige Fuﬂg‰nger, Bordstein	q2 5387,4214 5385,4236
-An der Neumark: laut Schild "Schrittgeschwindigkeit"	q2 11283,3774 11300,3709 11357,3720 11378,3626 11332,3615
+An der Neumark: laut Schild "Schrittgeschwindigkeit"	q2 11283,3774 11300,3709 11357,3720 11378,3626
+An der Neumark: laut Schild "Schrittgeschwindigkeit"	q2 11438,3637 11405,3631 11378,3626 11332,3615
+An der Neumark: laut Schild "Schrittgeschwindigkeit"	q2 11394,3814 11438,3637 11460,3643 11483,3554 11430,3540
+An der Neumark: laut Schild "Schrittgeschwindigkeit"	q2 11405,3631 11430,3540 11437,3508
 (Am Krusenick - An der Filmfabrik): einige Fuﬂg‰nger	q1 22751,4970 22770,4966 22817,4971
 (Gensinger Str. - Alt-Friedrichsfelde): Rampe	q2 19136,11739 19110,11705 19092,11776
 #: note auﬂerdem zu kurz vvv
@@ -2871,6 +2875,8 @@ Fasanenplatz, ˆstliche Fahrbahn: einige Fuﬂg‰nger, Bordsteine	q2 5220,10192 5229
 Admiralstr.: Fuﬂg‰nger, Bodenschwellen	q2- 11244,10111 11274,10184
 #: XXX_prog: BS an der Eisackstr., ansonsten entfernen
 Innsbrucker Platz - Eisackstr.: Bordstein	q1 6418,7958 6429,7876
+(Buckower Damm - Neumarkplan): enger Radweg	q2 12673,3619 12624,3659 12603,3712 12578,3728
+(Johannisthaler Chaussee - Wildmeisterdamm): enge Straﬂe	q1 13010,2085 13157,2116
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -2975,7 +2981,8 @@ Hugo-Heimann-Str.: enge, leicht kurvige Straﬂe	q0- 14120,1991 14165,2106 14229,2
 #: by: Michael Meixner: vvv
 Schwarzkogelweg: enge Straﬂe	q1 10121,3040 10167,3257
 Rˆthspitzenweg: enge Straﬂe	q1 9867,3092 9891,3203 9911,3310
-Maurerweg: enge Straﬂe	q1 12864,2191 12844,2382 12835,2470 12825,2573 12810,2751 12807,2958
+#: corrected_by: srt/policy (q1 -> q0-)
+Maurerweg: enge Straﬂe	q0- 12864,2191 12844,2382 12835,2470 12825,2573 12810,2751 12807,2958
 Hoeftweg: relativ eng mit Kurve	q1 9675,3150 9683,3185 9655,3270 9701,3357
 Lothar-Bucher-Str.: enge Straﬂe	q1 5598,6136 5664,6082 5748,6051 5845,6049 6008,6067
 #: by: ^^^

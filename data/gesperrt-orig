@@ -121,7 +121,7 @@ Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
 # REMOVED (aufgehoben) Richterstr.	1s:q3 22062,773 22007,711
 # REMOVED (aufgehoben) Grünau/B179	1 22007,711 21862,807
 # REMOVED (aufgehoben) Grünau/B179	1 21862,807 21904,876 21977,988 22044,1018 22092,999
-Dorfplatz	1 21074,-475 20986,-529 20890,-546 20827,-537 20999,-489 21074,-475
+Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20999,-489 21074,-475
 # 
 #: XXX Straße wird zu einer Stadttraße umgebaut; auf der südöstlichen Seite wird ein Zweirichtungsradweg+gehweg entstehen; außerdem wird es eine Rampe zur Straße "Am Falkenberg" geben
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/b96a/index.shtml
@@ -727,8 +727,8 @@ Kaulsdorfer Str.	1 22075,6967 22049,7085
 #: XXX wird die Einbahnstraßenregelung für Radfahrer aufgehoben?
 #: by: http://www.berliner-woche.de/buckow/verkehr/radfahren-in-beide-richtungen-d135488.html
 #: osm_watch: way id="5111625" version="10"
-#: last_checked: 2018-04-29
-#: check_frequency: 60d
+#: last_checked: 2018-09-18
+#: check_frequency: 90d
 Steinträgerweg	1s:q4 12987,2220 13023,2093
 # 
 #: by: anonymous and osm
@@ -3120,7 +3120,7 @@ Zufahrt zum ehemaligen Parkhaus: Bauarbeiten, Straße komplett gesperrt	2::inwork
 # 
 #: by: http://www.dafmap.de/d/berlin.html?center=52.434534+13.536709&zoom=18# (Projektabschluss: 2019-04-30)
 #: osm_watch: way id="448097237" version="1"
-#: last_checked: 2018-08-22
+#: last_checked: 2018-09-18
 #: check_frequency: 90d
 Merlitzstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19661,3421 19524,3286
 # 

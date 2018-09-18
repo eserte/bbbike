@@ -865,7 +865,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX eventuell wird diese Einschränkung aufgehoben:
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4237&options=4
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036190429651/190429651/00081409/09-Anlagen/04/B0138SB.pdf (nach Komplettumbau)
-#: last_checked: 2018-08-22
+#: last_checked: 2018-09-18
 #: check_frequency: 180d
 	X 18080,5376
 	X 19904,3464
@@ -2530,7 +2530,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: osm_watch: node id="987195315" version="7"
-#: last_checked: 2018-08-22
+#: last_checked: 2018-09-18
 #: check_frequency: 180d
 	F::inwork 20002,3349
 	F 4000,12183
@@ -3106,6 +3106,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	F 25720,-8965
+	F 25883,-11875
 	B -17834,-6837
 	F 25779,-9534
 	B 25627,-5177
