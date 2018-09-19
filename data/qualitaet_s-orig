@@ -90,16 +90,21 @@ Sinsheimer Weg: Betonstraße	Q0 13774,8849 13837,8932
 #: by: https://www.aktion-kms.de/assets/2017/01/Donaustra%C3%9Fe_LP_Lph3-LP_01.pdf
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.738948.php
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/donaustrasse-wird-umgebaut_a180854
+#: XXX dieser Abschnitt wird noch 2018 realisiert
 #: osm_watch: way id="155605274" version="3"
-#: last_checked: 2018-09-14 vvv
-# REMOVED --- #: check_frequency: 7d vvv
-#: next_check: 2018-09-17 vvv
-Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729 12549,8616 12649,8535
+#: last_checked: 2018-09-19
+#: check_frequency: 7d
+Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12549,8616 12649,8535
+#: osm_watch: way id="155605274" version="3"
+#: last_checked: 2018-09-19 vvv
+#: check_frequency: 30d vvv
+# REMOVED --- #: next_check: 2018-09-17 vvv
+Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729 12549,8616
 #: XXX hier wird vermutlich auch die Einbahnstraßenregelung für Radfahrer aufgehoben
 #: osm_watch: way id="155605332" version="3"
 Pannierstr.: Kopfsteinpflaster	Q2 12242,8972 12202,8895
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="155605273" version="4"
@@ -10228,12 +10233,11 @@ Uferstr. (Niederschöneweide): Asphalt	Q0 17681,6212 17847,6089
 Waldkiefernring: Asphalt	Q0 21855,2392 21754,2329 21782,2283 21885,2343
 Fähenweg: Asphalt	Q0 21869,2367 21791,2323
 # 
-#: XXX Asphaltarbeiten sind geplant
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/neuer-gehweg-durch-den-wald_a178025
-#: priority: #A
+#: XXX prüfen, ob die Qualität tatsächlich besser geworden ist
 #: last_checked: 2018-09-12
 #: next_check: 2018-09-18
-Sportpromenade: Asphalt mit einigen Schäden und Wurzelhebungen	Q1- 25646,-209 25574,-38 25537,167 25461,254 25172,345 24827,354 24743,370 24666,436
+Sportpromenade: Asphalt	Q0 25646,-209 25574,-38 25537,167 25461,254 25172,345 24827,354 24743,370 24666,436
 # 
 Mauerpark: Kleinsteinpflaster	Q1 10188,15474 10228,15488 10234,15490
 # REMOVED (nein, by mapillary) --- #: XXX hat sich mit der Neugestaltung etwas geändert? --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.635732.php
@@ -10793,7 +10797,7 @@ Sebastianstr.: Asphalt, einige Schäden	Q0- 10640,11564 10818,11269 10824,11256
 Waldowstr.: Asphalt, einige Schäden	Q0- 10309,20562 10383,20295 10435,20098 10486,19955 10508,19910
 Bahnhofstr. - S-Bhf. Lichterfelde Ost: Kopfsteinpflaster	Q2 5332,2568 5367,2528
 Steinmetzstr.: Mosaikpflaster	Q1 7698,10147 7657,9942 7625,9771
-(Johannisthaler Chaussee - Wildmeisterdamm): Asphalt	Q0- 13010,2085 13157,2116
+(Johannisthaler Chaussee - Wildmeisterdamm): Asphalt	Q0- 13045,2107 13064,2090 13157,2116
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv

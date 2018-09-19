@@ -571,8 +571,8 @@ Donaustr. (Zeuthen): Kleinsteinpflaster	Q2 25874,-6954 25855,-6912 25690,-6747
 Saarstr. (Zeuthen): Kleinsteinpflaster	Q2 25874,-6954 25903,-7025
 Weserstr. (Zeuthen): Kleinsteinpflaster	Q2 25820,-6973 25874,-6954
 Straße am Höllengrund (Zeuthen): Asphalt	Q0 25302,-7043 25267,-7150
-An der Korsopromenade (Zeuthen): Asphalt	Q0 25853,-7448 25771,-7434 25681,-7413
-Am Pulverberg (Zeuthen): Asphalt	Q0 25857,-7818 25711,-7782 25425,-7719
+An der Korsopromenade (Zeuthen): Asphalt	Q0 25968,-7452 25853,-7448 25771,-7434 25681,-7413 25376,-7343 25220,-7339 24980,-7353
+Am Pulverberg (Zeuthen): Asphalt	Q0 25857,-7818 25711,-7782 25425,-7719 25117,-7592
 Weserstr. (Zeuthen): Kleinsteinpflaster	Q2 25874,-6954 26041,-6785
 Große Zeuthener Allee (Zeuthen): Kleinsteinpflaster	Q2 25696,-7873 25711,-7782 25771,-7434 25791,-7294 25798,-7212
 Große Zeuthener Allee (Zeuthen): Asphalt	Q0 25798,-7212 25810,-7135
@@ -589,6 +589,7 @@ Reiherhorst (Wildau): Asphalt	Q0 25652,-8126 25792,-8149 25780,-8225 25642,-8203
 Birkenallee (Wildau): Kopfsteinpflaster	Q2 26220,-6930 26227,-6945
 Birkenallee (Wildau): Asphalt	Q0 26227,-6945 26244,-6985 26328,-7191 26407,-7403 26437,-7537 26465,-7727 26491,-7909 26506,-8032 26546,-8282 26561,-8380 26589,-8499
 Fliederweg (Wildau): Asphalt	Q0 25455,-8814 25440,-8734 25473,-8583 25496,-8560 25509,-8485 25529,-8371 25543,-8290
+Kantstr. (Wildau): schlechtes Kopfsteinpflaster	Q3 25645,-9325 25829,-9423
 Bestensee: Asphalt	Q0 26204,-17794 26245,-17623 26273,-17430
 Schwarzer Weg: Asphalt	Q0 26132,16385 26154,16397 26338,16536 26624,16752 26717,16823
 Schenkendorf - Krummensee: Asphalt	Q0 24103,-13925 24228,-14209
@@ -620,7 +621,8 @@ Wiesenweg (Zeesen): unbefestigter Weg, zweispurig	Q2 26782,-15392 26778,-15247 2
 Eschenweg (Zeesen): Asphalt	Q0 26704,-14533 26617,-13996 26625,-13968
 Schulstr. (Zeesen): Kleinsteinpflaster	Q1 26419,-13884 26494,-13883
 Schulstr. (Zeesen): Asphalt	Q0 26494,-13883 26526,-13880 26534,-13891 26625,-13968 26642,-13980 27071,-14299
-Rotdornstr. (Zeesen): Kleinsteinpflaster	Q2 27012,-13724 26848,-13793 26650,-13828 26534,-13891
+Rotdornstr. (Zeesen): Kleinsteinpflaster	Q2 27012,-13724 26848,-13793 26650,-13828 26584,-13857 26534,-13891
+Unter den Eichen (Zeesen): unbefestigte Straße	Q2 26584,-13857 26568,-13757 26665,-13689 26777,-13662
 Ulmenstr. (Zeesen): Asphalt	Q0 26642,-13980 26709,-13946 26930,-13940 27035,-13940
 Seeblick (Zeesen): Asphalt	Q0 27042,-14000 27376,-13938 27420,-13951
 Am Güterbahnhof: Beton	Q0 26420,-13000 26443,-12952 26435,-12545
@@ -3935,7 +3937,7 @@ Röntgenstr. (Wildau): Asphalt	Q0 25700,-9097 25535,-9055 25423,-9022
 Röntgenstr. (Wildau): Asphalt	Q0 25423,-9022 25313,-8967
 Röntgenstr. (Wildau): Asphalt, möglicherweise mit Schäden	Q1 25313,-8967 25192,-8936
 Grabowskistr. (Wildau): Asphalt	Q0 25369,-9244 25389,-9180 25518,-9218 25669,-9258 25850,-9306
-Jahnstr. (Wildau): schlechtes Kopfsteinpflaster	Q3 25910,-8697 25937,-8824 25879,-9145 25850,-9306 25805,-9553
+Jahnstr. (Wildau): schlechtes Kopfsteinpflaster	Q3 25910,-8697 25937,-8824 25879,-9145 25850,-9306 25829,-9423 25805,-9553
 Stolze-Schrey-Str. (Wildau): Asphalt	Q0 25556,-9766 25677,-9654
 Stolze-Schrey-Str. (Wildau): schlechtes Kopfsteinpflaster	Q3 25677,-9654 25805,-9553
 Fichtestr. (Wildau): Asphalt	Q0 25615,-9652 25614,-9418
@@ -4202,7 +4204,7 @@ Alte Försterei (Königs Wusterhausen): Asphalt	Q0 26451,-13063 26499,-13038 26515
 Alte Försterei (Königs Wusterhausen): Verbundsteinpflaster	Q1 26631,-13020 26665,-12980 26711,-12989
 Am Krebssee: Verbundsteinpflaster	Q1 26499,-13038 26518,-13069 26646,-13063 26653,-13032
 (Alte Försterei - Lindenstr.): Verbundsteinpflaster	Q1 26631,-13020 26653,-13032 26686,-13038 26682,-13082
-Lindenstr. (Zeesen): Asphalt	Q0 26682,-13082 26688,-13233 26782,-13675 26848,-13793 26930,-13940
+Lindenstr. (Zeesen): Asphalt	Q0 26682,-13082 26688,-13233 26777,-13662 26848,-13793 26930,-13940
 Am Erlengrund (Zeesen): Kleinsteinpflaster	Q2 26423,-13250 26482,-13243 26658,-13224 26688,-13233 26786,-13278
 Am Erlengrund (Zeesen): Kopfsteinpflaster	Q2 26786,-13278 26823,-13291 26919,-13277
 Am Lückefeld (Mahlow): guter Asphalt	Q0 13256,-4919 13049,-4788 12977,-4783 12841,-4989 12680,-5230 12782,-5284 12837,-5273 13194,-5021 13256,-4919

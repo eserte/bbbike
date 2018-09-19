@@ -27555,6 +27555,7 @@ EOF
        source_id => '2147342890',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/seelenbinderstrasse-bleibt-bis-ende-august-dicht_a172757
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-verzoegern-sich_a181430 (hier: bis "Ende September" 2018)
 	q3::inwork; 23333,5710 23106,5758 22900,5740 22798,5731 22696,5728 22608,5732 22513,5747 22292,5774
 EOF
      },
@@ -27609,11 +27610,12 @@ EOF
 EOF
      },
      { from => 1533579833,
-       until => $isodate2epoch->("2018-09-18 18:00:00"),
+       until => undef, # $isodate2epoch->("2018-09-18 18:00:00"),
        text => 'Grünberger Str.: Sperrung der Fahrbahn zwischen Kadiner Str. und Warschauer Str., Richtung Osten, voraussichtlich bis Mitte September 2018',
        type => 'handicap',
        data => <<EOF,
 #: source_id: 2147342987
+#: next_check: 2018-09-19
 	q4::inwork; 13515,11969 13696,11920
 EOF
      },
@@ -27888,6 +27890,16 @@ EOF
        source_id => '2147343219',
        data  => <<EOF,
 	q4::inwork; 4451,8874 4777,8870
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: last_checked: 2018-09-19
+#: check_frequency: 7d
+	2::inwork 11021,11287 11000,11327
 EOF
      },
     );

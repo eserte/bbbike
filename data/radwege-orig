@@ -679,7 +679,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/zeitnahe-entscheidung-angekuendigt_a180857
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2018-09-14
+#: last_checked: 2018-09-19
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
 Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 16699,10611 16725,10662 16751,10674 16892,10731 17083,10814 17141,10838 17226,10865 17257,10875 17466,10941 17560,10973 17621,10994
@@ -2112,6 +2112,7 @@ Verbundsteinpflaster	RW1; 561,2395 604,2494 629,2545 709,2592 749,2616
 	RW1;RW1 803,2435 900,2469 960,2534 1008,2568 1121,2583 1238,2599 1324,2603 1406,2607 1426,2607 1524,2611 1603,2615 1711,2620 1750,2636 1885,2697 2000,2748 2123,2803 2290,2864
 	RW1;RW1 2308,3862 2287,3702
 #: XXX Radspur-Markierung noch lückenhaft, vielleicht wird hier auch noch ummarkiert; außerdem noch Gehweg für Radfahrer frei (vielleicht nur bis zur vollständigen Markierung?)
+#: by: https://www.berliner-woche.de/steglitz/c-verkehr/dahlemer-weg-behoerden-pruefen-den-bau-einer-geschuetzten-radverkehrsanlage_a180632
 #: last_checked: 2018-09-12
 #: check_frequency: 7d
 	RW3; 2287,3702 2266,3580 2253,3505 2203,3213
@@ -2743,8 +2744,8 @@ die ersten Meter noch als Bordsteinradweg geführt	RW3; 20575,11698 20435,11698
 #: by: Sigrid Kohn:
 	RW6;RW6 2345,1283 2233,1528
 	RW6;RW6 19564,1871 19602,1989
-alte Gehwegplatten	RW1; 13010,2085 13023,2093 13104,2143
-Busspur für Radfahrer freigegeben	RW1; 13104,2143 13023,2093 13010,2085
+alte Gehwegplatten	RW1; 13010,2085 13023,2093 13045,2107 13104,2143
+Busspur für Radfahrer freigegeben	RW1; 13104,2143 13045,2107 13023,2093 13010,2085
 Wechsel zwischen alten Gehwegplatten und schadhaftem Verbundsteinpflaster	RW1; 13104,2143 13367,2322 13418,2357
 Wechsel zwischen alten Gehwegplatten und schadhaftem Verbundsteinpflaster	RW2; 13418,2357 13501,2413
 Wechsel zwischen alten Gehwegplatten und schadhaftem Verbundsteinpflaster	RW1; 13501,2413 13709,2551 13886,2653 13915,2673 13951,2697 13999,2727 14203,2859 14212,2865 14392,2979

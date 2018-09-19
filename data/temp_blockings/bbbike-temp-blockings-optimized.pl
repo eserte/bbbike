@@ -4082,6 +4082,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: by: https://www.berliner-woche.de/koepenick/c-verkehr/seelenbinderstrasse-bleibt-bis-ende-august-dicht_a172757
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-verzoegern-sich_a181430 (hier: bis "Ende September" 2018)
 	q3::inwork; 23333,5710 23106,5758 22900,5740 22798,5731 22696,5728 22608,5732 22513,5747 22292,5774
 ',
          'from' => 1531605600,
@@ -4126,7 +4127,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1537999200
        },
-       undef,
+       {
+         'data' => '#: source_id: 2147342987
+#: next_check: 2018-09-19
+	q4::inwork; 13515,11969 13696,11920
+',
+         'from' => 1533579833,
+         'id' => 2992,
+         'text' => 'Grünberger Str.: Sperrung der Fahrbahn zwischen Kadiner Str. und Warschauer Str., Richtung Osten, voraussichtlich bis Mitte September 2018',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        {
          'data' => '#: osm_watch: way id="36936021" version="3" brb
@@ -4209,17 +4220,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berliner-woche.de/gruenau/c-bauen/neuer-gehweg-durch-den-wald_a178025 (hier: bis Monatsende September 2018)
-	2::inwork 25646,-209 25574,-38 25537,167 25461,254 25172,345 24827,354 24743,370 24666,436 24571,514 24197,585
-',
-         'from' => 1536530400,
-         'id' => 3003,
-         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.732734.php',
-         'text' => 'Sportpromenade: zwischen Strandbad Grünau und Richtershorn Bauarbeiten, Straße wird neu asphaltiert, voraussichtlich vom 11.09.2018 bis 18.09.2018',
-         'type' => 'gesperrt',
-         'until' => 1537308000
-       },
+       undef,
        undef,
        {
          'data' => '	2::inwork -7230,25622 -7243,25847 -7309,26146
@@ -4231,17 +4232,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1577833199
        },
-       {
-         'data' => '#: XXX_prog: eigentlich q4+::inwork;
-	q4::inwork; 8685,13728 8775,13606
-',
-         'from' => undef,
-         'id' => 3006,
-         'source_id' => '2147343061',
-         'text' => 'Hessische Str.: Richtung Torstr. gesperrt, bis 19. September 2018',
-         'type' => 'handicap',
-         'until' => 1537372800
-       },
+       undef,
        {
          'data' => '# REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
@@ -4368,6 +4359,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Berliner Str.: Baustelle zwischen Mannheimer Str. und Brandenburgische Str./Blissestr., Fahrbahn Richtung Osten gesperrt, bis Ende November 2018',
          'type' => 'handicap',
          'until' => 1543618799
+       },
+       {
+         'data' => '#: last_checked: 2018-09-19
+#: check_frequency: 7d
+	2::inwork 11021,11287 11000,11327
+',
+         'from' => undef,
+         'id' => 3020,
+         'text' => 'Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );
