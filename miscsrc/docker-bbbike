@@ -338,7 +338,8 @@ EOF
     # Emulate .travis.yml
     $dockerfile .= <<EOF;
 # "-e" -> init_travis must not be run anymore
-RUN /bin/bash --login -e -c "wrapper init_env_vars"
+# init_env_vars does not work in a Dockerbuild environment. Set some env vars manually
+ENV CODENAME $opt{distver}
 RUN /bin/bash --login -e -c "wrapper init_perl"
 RUN /bin/bash --login -e -c "wrapper init_apt"
 RUN /bin/bash --login -e -c "wrapper install_non_perl_dependencies"
