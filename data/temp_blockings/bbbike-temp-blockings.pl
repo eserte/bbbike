@@ -16687,7 +16687,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014394',
        data  => <<EOF,
-	q4::temp 7201,8870 7101,9027 7035,9161 7012,9222 7001,9291 7130,9316 7202,9329 7418,9366 7471,9360
+	q4::temp 7201,8870 7101,9027 7035,9161 7012,9222 7001,9291 7118,9315 7202,9329 7418,9366 7471,9360
 EOF
      },
      { from  => 1255644000, # 2009-10-16 00:00
@@ -24000,7 +24000,7 @@ EOF
        data  => <<EOF,
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
 #: priority: #A
-#: last_checked: 2018-09-13
+#: last_checked: 2018-09-20
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -26499,7 +26499,7 @@ EOF
 #: next_check: 2018-12-31 vvv
 # REMOVED (hier fertig) ---	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
-#: XXX hier laut fritz nur bis 2018-07-17
+#: XXX hier laut fritz bis voraussichtlich 28.12.2018
 	q3::inwork; 2781,2493 2740,2588 2625,2850
 #: next_check ^^^
 #: last_checked ^^^
@@ -26926,17 +26926,13 @@ EOF
      { from  => undef, # 
        until => undef, # XXX
        #text  => 'Vorbergstr.: Bauarbeiten zwischen Gleditschstr. und Akazienstr., Fahrbahn gesperrt, außerdem Sperrung in der Gleditschstr., Ende unbekannt',
-       text  => 'Gleditschstr.: Bauarbeten, Fahrbahn gesperrt, Ende unbekannt',
+       text  => 'Gleditschstr.: Bauarbeiten, Fahrbahn an der Kreuzung Vorbergstr. gesperrt, Ende unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: XXX laut googlemaps bis 19. September 2018
-#: last_checked: 2018-09-14 vvv
-#: next_check: 2018-09-19 vvv
-# --- XXX_prog: eigentlich q3-
-# REMOVED (hier beendet) ---	q4::inwork 7136,9223 7012,9222
-	q2::inwork 7136,9223 7130,9316
-#: next_check ^^^
-#: last_checked ^^^
+#: last_checked: 2018-09-20
+#: check_frequency: 7d
+	q2::inwork 7124,9226 7118,9315
 EOF
      },
      { from  => 1521060826, # 2018-03-14 21:53
@@ -27412,7 +27408,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2018-08-25
+#: last_checked: 2018-09-20
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889 9801,8683
 EOF
      },
@@ -27633,7 +27629,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.zeuthen.de/Die-Deutsche-Bahn-informierte-Grunderneuerung-der-Personenunterfuehrung-am-S-Bahnhof-Zeuthen-642703.html',
        data  => <<EOF,
-#: osm_watch: way id="36936021" version="3" brb
+#: osm_watch: way id="36936021" version="4" brb
 #: last_checked: 2018-09-18
 #: next_check: 2019-11-01
 	2::inwork 25929,-5994 25902,-6006
@@ -27693,7 +27689,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die "Radfahren verboten"-Schilder wieder weg?
-#: last_checked: 2018-09-04
+#: last_checked: 2018-09-20
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 EOF

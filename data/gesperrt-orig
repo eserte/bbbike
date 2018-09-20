@@ -475,7 +475,7 @@ Wollankstr.	1 10027,18165 10054,18210
 #: confirmed_by: srt
 Kreuzstr.	1 9832,17925 9902,18180 9909,18333
 #: note: war mal "1s", aber ich wurde dafür zu oft getadelt...
-Vorbergstr.	1 7012,9222 7136,9223 7308,9163
+Vorbergstr.	1 7012,9222 7124,9226 7308,9163
 Wederstr.	1 12981,6366 12813,6334 12597,6293
 DGZ-Ring	1 12989,16921 12911,17021 12877,17039 12850,17084 12795,17151 12707,17085 12789,16977 12783,16925 12813,16884 12837,16853 12858,16825
 Herbert-Bayer-Str.	1 12911,17021 12846,16971 12898,16898 12923,16873
@@ -3011,7 +3011,8 @@ Hermineweg: Bauarbeiten, gesperrt	2::inwork 24831,10966 24906,10965
 #: check_frequency: 60d
 Karlinekenweg: Bauarbeiten, gesperrt	2::inwork 11359,20297 11405,20196
 # 
-#: last_checked: 2018-08-30
+#: by: https://www.berliner-woche.de/tiergarten/c-bauen/zweite-bauphase-abgeschlossen_a181544 (Wiedereröffnung für 2020 geplant)
+#: last_checked: 2018-09-20
 #: check_frequency: 360d
 Neue Nationalgalerie: Bauarbeiten, Parkplatz gesperrt	2::inwork 7874,11293 7828,11133
 # 
@@ -3124,12 +3125,12 @@ Zufahrt zum ehemaligen Parkhaus: Bauarbeiten, Straße komplett gesperrt	2::inwork
 #: check_frequency: 90d
 Merlitzstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19661,3421 19524,3286
 # 
-#: last_checked: 2018-09-13
+#: last_checked: 2018-09-20
 #: check_frequency: 30d
 Mauerstr. und Jägerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9195,11972 9108,11961 9076,12054
 # 
 #: XXX laut googlemaps bis 30. Oktober 2018
-#: last_checked: 2018-09-13
+#: last_checked: 2018-09-20
 #: check_frequency: 30d
 Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,12156
 # 
@@ -3229,6 +3230,7 @@ Schinkelplatz: Einbahnstraße	1s:q3:inwork 9994,12368 10002,12305 10008,12274 100
 # REMOVED --- #: next_check_id: RATHAUSWEDDING-2017 --- #: last_checked: 2018-04-10 --- #: check_frequency: 30d --- Limburger Str.: Bauarbeiten am Rathaus Wedding, komplett gesperrt	2::inwork 7129,15717 7012,15571
 # 
 #: next_check_id: WILTBERGSTR-2017
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.741808.php (weiterhin Einbahnstraße)
 #: source_id: 2147339182
 #: last_checked: 2018-04-28
 #: next_check: 2018-12-31
@@ -3258,7 +3260,7 @@ Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtun
 # REMOVED (nur der östliche Abschnitt ist geblieben, aber relativ breit und relativ wenig Verkehr) --- #: XXX Bauarbeiten der Berliner Wasserbetriebe bis Dezember 2017 --- #: last_checked: 2017-07-23 --- #: next_check: 2017-12-01 --- #: valid: -20171231 --- Türrschmidtstr.: Bauarbeiten, Einbahnstraße	1s:q3 15541,10892 15649,10922 15756,10966
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3853&mt=0&zoom=16
-#: last_checked: 2018-08-18
+#: last_checked: 2018-09-20
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8969,11814
 # 
 #: next_check_id: NORDHAFENPARKWEST-2018
@@ -3499,7 +3501,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: http://www.dafmap.de/d/berlin.html?id=3588&mt=0&zoom=16
 #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung)
 #: XXX Spielbetrieb wird im Dezember 2017 aufgenommen
-#: last_checked: 2018-09-13 vvv
+#: last_checked: 2018-09-20 vvv
 #: check_frequency: 14d vvv
 Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9876,12298
 Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9798,12267 9795,12293 9780,12401

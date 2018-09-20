@@ -28,7 +28,7 @@ Mehringdamm: Radspuren oder Sanierung	?::projected; 9227,8890 9225,9038 9224,905
 Mehringdamm: Radspuren oder Sanierung	?::projected; 9224,9053 9225,9111 9248,9350 9280,9476 9334,9670 9387,9804 9444,9919 9448,10014
 # 
 #: XXX außerdem: Nordseite wird saniert
-#: last_checked: 2018-09-15
+#: last_checked: 2018-09-20
 #: next_check: 2018-12-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -147,7 +147,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 #: source_id: 2147342178
 #: source_id: 2147342276
 #: source_id: LMS-BR_r_LMS-BR_120802_LMS-BR_72
-#: last_checked: 2018-08-25
+#: last_checked: 2018-09-20
 #: check_frequency: 90d
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
@@ -1037,6 +1037,7 @@ Dovestr.: Radstreifen	?::projected 4749,12689 4648,12559 4616,12532
 #: by: http://www.berliner-woche.de/charlottenburg/verkehr/der-verbesserung-des-radwegenetzes-fallen-500-parkplaetze-zum-opfer-d143224.html (Protected Bike Lanes südl. der Ballenstedtstr.)
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.706272.php
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.736837.php (hier: zwischen Adenauerplatz und Konstanzer Str.)
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.741746.php
 #: osm_watch: way id="26071050" version="11"
 #: osm_watch: way id="26071046" version="11"
 #: osm_watch: way id="26071048" version="9"
@@ -1354,7 +1355,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: source_id: LMS-BR_r_LMS-BR_81616
 #: source_id: 2147342542
 #: source_id: 2147343094
-#: last_checked: 2018-09-19
+#: last_checked: 2018-09-20
 #: check_frequency: 7d
 # REMOVED ---#: next_check: 2018-09-14
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
@@ -1397,7 +1398,7 @@ Baumarkt (?) wird gebaut: wird es eine Durchfahrmöglichkeit geben?	?::inwork 170
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_06_0773_0896_online.pdf (Einziehung von Straßenland)
 #: by: https://gruen-berlin.de/kulturforum
 #: XXX Bebauungsplan 1-35a (Kulturforum)
-#: last_checked: 2018-08-21
+#: last_checked: 2018-09-20
 #: check_frequency: 60d
 Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::projected 8083,11381 7970,11441 7954,11399 7965,11380 7934,11275
 # REMOVED (-> handicap_s-orig) --- #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php --- #: XXX außerdem: voraussichtlich ab April 2018 Komplettsperrung --- #: XXX mittlerweile existiert ein temp-blockings-Eintrag; muss noch mit last/next_check versehen werden bzw. nach handicap_s oder gesperrt überführt werden --- #: osm_watch: way id="531952542" version="4" --- #: last_checked: 2018-05-22 --- #: next_check: 2018-05-28 --- #: priority: #A --- Herbert-von-Karajan-Str.: gibt es Einschränkungen für Radfahrer während der Bauarbeiten?	? 8005,11627 7965,11467 7970,11441
@@ -1858,7 +1859,7 @@ Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbi
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_10_18.pdf?start&ts=1350628483&file=stra__enbauliste_stand_2012_10_18.pdf
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_11_30.pdf?start&ts=1354267767&file=stra__enbauliste_stand_2012_11_30.pdf
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_11_08.pdf?start&ts=1383903600&file=stra__enbauliste_stand_2013_11_08.pdf
-#: osm_watch: way id="4663347" version="21"
+#: osm_watch: way id="4663347" version="22"
 #: last_checked: 2018-04-16 (Bauarbeiten sind schon lange beendet, aber es wurde nicht markiert?)
 #: check_frequency: 180d
 Ordensmeisterstr.: werden die Radspuren noch weiter geführt?	?::projected 10254,5921 10027,5868 9796,5790
@@ -2282,7 +2283,7 @@ Verlängerung Am Luchgraben - Am Hohen Feld: neue Straße wird gebaut, mit Radspur
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/der-umbau-des-fraenkelufers-beginnt-im-august_a175541
 #: XXX haben die Bauarbeiten Auswirkungen auf die Fahrbahn?
 #: osm_watch: way id="30148496" version="9"
-#: last_checked: 2018-09-11
+#: last_checked: 2018-09-20
 #: check_frequency: 14d
 Fraenkelufer: Neugestaltung des Uferwegs, Verbindung zum Böcklerpark	?::projected 11199,9993 11082,9992 10979,10017 10885,10045
 # 
@@ -2379,7 +2380,8 @@ Transvaalstr.: Planung von Radstreifen	? 6104,16223 6211,16343
 Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,13973 8732,14098 8607,14253
 # 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.741426.php ("Dunkelampel")
-#: last_checked: 2018-08-25
+#: last_checked: 2018-09-20
+#: check_frequency: 90d
 Bergmannstr.: entsteht hier eine weitere Fußgängerampel?	? 9404,9345 9309,9347 9398,9311
 # 
 # REMOVED --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8733 --- Admiralstr.: gibt es hier Schwellen?	? 11244,10111 11274,10184
@@ -2392,8 +2394,7 @@ Bergmannstr.: entsteht hier eine weitere Fußgängerampel?	? 9404,9345 9309,9347 9
 #: XXX und wird eventuell durch den öffentlichen Weg etwas geändert (Beleuchtung, Ausschilderung, Befestigung)?
 Waldpromenade: Qualität (Waldweg?) und Ausschilderung (keine?) zwischen Attinghausenweg und Arndtstr.; wo gibt es Zuwegungen ins Wohngebiet?	? 23481,8119 22841,8565 22865,8588
 # 
-Sigismundstr.: gibt es hier eine Einbahnstraßenregelung?	?; 8031,11249 7934,11275
-# 
+# REMOVED (keine Einschränkungen) --- Sigismundstr.: gibt es hier eine Einbahnstraßenregelung?	?; 8031,11249 7934,11275
 # REMOVED (ohne Prüfung ausgelaufen) --- XXX NEW	Degnerstr. (Alt-Hohenschönhausen) in beiden Richtungen zwischen Suermondtstr. und Niehofer Str. (Berlin)  Gültig ab: 27.08.2018 06:00  Baustelle, Vollsperrung (bis Mitte 09/18)	2147343065 --- #: XXX laut fritz bis 17.09.2018 --- Degnerstr.: Sperrung auch für Radfahrer relevant?	? 16653,16150 16692,16253
 # REMOVED (nicht relevant) --- #: XXX NEW	Grünauer Str. (Köpenick) Richtung Regattastr. zwischen Rudower Str. und Schönerlinder Str. (Berlin)  Gültig ab: 27.08.2018 06:00  Gleisbauarbeiten, Fahrtrichtung gesperrt, Umleitung ausgeschildert (bis Anfang 09/18)	2147343066 --- #: XXX laut fritz bis 03.09.2018 --- Grünauer Str.: Sperrung auch für Radfahrer relevant?	?; 21781,4470 21778,4440 21799,4319
 # 
@@ -2474,7 +2475,7 @@ Fischtalpark: Qualität? Beleuchtet? Für Radfahrer legal befahrbar?	? 918,4795 87
 #: XXX Bauarbeiten in Gang, aber Durchgang noch nicht möglich
 #: osm_watch: note 436673 6
 #: priority: #C
-#: last_checked: 2018-08-23
+#: last_checked: 2018-09-20
 #: check_frequency: 30d
 U-Bhf. Mendelssohn-Bartholdy-Park: existiert hier wieder ein Durchgang?	? 8476,10884 8399,10923
 # 
@@ -2571,7 +2572,7 @@ Brandenburgische Str./Ballenstedter Str.	?::projected 3932,9819 3949,9842 3978,9
 #: last_checked: 2018-09-17
 #: check_frequency: 60d
 Blücherstr./Brachvogelstr.	?::projected 9997,9987 10006,9942 9965,9925
-#: last_checked: 2018-09-04
+#: last_checked: 2018-09-20
 #: check_frequency: 60d
 Lindenstr./E.T.A.-Hoffmann-Promenade	?::projected 9747,10741 9777,10719 9750,10687
 #: last_checked: 2018-08-26
@@ -2667,8 +2668,7 @@ Huttenstr.: werden die Radspuren hier verlängert?	? 5116,13457 5248,13434
 #: by: http://www.stadtteilausschuss-kreuzberg.de/pdfs/Friesenstr._17-1409,%202017-11-16.pdf
 #: by: http://www.berliner-woche.de/kreuzberg/bauen/friesenstrasse-wird-saniert-d161312.html (Start 16. Mai 2018)
 #: XXX Beginn der Bauarbeiten voraussichtlich März 2018, Dauer 12 Monate, während der Bauarbeiten Einbahnstraßenregelung, offen Richtung Süden
-#: last_checked: 2018-09-14
-#: next_check: 2018-09-21
+#: last_checked: 2018-09-20
 #: priority: #A
 Friesenstr.: Asphaltierung geplant	?::inwork 9801,8683 9801,8889 9799,8962 9797,9063 9795,9162 9793,9241
 # 
@@ -2798,7 +2798,7 @@ Betriebsbahnhof Schöneweide --> Adlershof-Johannisthal	X 18682,4714
 #: XXX prüfen!
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2016
 #: osm_watch: way id="130002114" version="2"
-#: last_checked: 2018-08-25
+#: last_checked: 2018-09-20
 #: check_frequency: 120d
 Monumentenstr. 13d: wird hier ein verkehrsberuhigter Bereich ausgewiesen?	? 8014,9126 8009,9063
 # 
@@ -2962,13 +2962,14 @@ Buschower Weg: wird hier asphaltiert?	? -8110,12160 -8098,12340 -8078,12647
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2015/pressemitteilung.331578.php
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.205748.php
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2017/pressemitteilung.570782.php
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.741808.php (Umstellung)
 #: XXX Wiltbergstr. (Buch): Baustelle, Fahrtrichtung gesperrt (Gesamtmaßnahme bis 2018) Richtung Schönerlinder Chaussee zwischen Alt-Buch und Hobrechtsfelder Chaussee, 06.07.2015 06:00 Uhr bis 30.09.2015 18:00 Uhr
 #: source_id: IM_025572
 #: source_id: 2147339182
 #: XXX "Die geplante Bauzeit beträgt vier Jahre"
 #: XXX nach den Bauarbeiten werden Radspuren existieren
 #: last_checked: 2017-04-09
-#: next_check: 2018-10-01
+#: next_check: 2018-10-02
 Wiltbergstr.: wird es für Radfahrer Einschränkungen während der Bauarbeiten geben?	? 16669,25373 16583,25440 16475,25526 16414,25575 16294,25683 16220,25716 16166,25767
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6272
@@ -3307,7 +3308,7 @@ Gewerbepark Babelsberg: drei neue Planstraßen entstehen, Namen, Qualität, Lage?	
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7661
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036680121217/680121217/00270568/68-Anlagen/01/DS2337_VzKAufstellungVI-46-1undFruehzeitigeBet.pdf
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036562139600/562139600/00280939/39-Anlagen/01/DS0332_VzK_HalleschesUfer_final.pdf
-#: last_checked: 2018-08-21
+#: last_checked: 2018-09-20
 #: check_frequency: 120d
 Kleinbeerenstr. - Großbeerenstr.: geplanter Weg im Zuge des Bebauungsplans VI-46-1	?::projected 8979,10485 9192,10528
 # 
@@ -4305,6 +4306,7 @@ Wittenauer Str. - Klötzgraben: existiert hier schon ein Parkweg? Qualität? Beleu
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_34_4647_4786_online.pdf (Straßenbenennung)
 #: XXX Berlin.coords.data-Eintrag fehlt
 #: XXX Privatstraße
+#: last_checked: 2018-09-20
 #: next_check: 2020-03-01 (Fertigstellungsjahr laut osm)
 Schönegarten: eine neue Privatstraße entsteht, genaue Lage, Qualität?	?::projected 7423,10504 7347,10584
 # 
@@ -5904,7 +5906,7 @@ Steinförde - Fürstenwalde (nördliche Verbindung): Qualität? Gibt es für Radfahre
 Spektegrünzug - An der Tränke: existiert hier eine Verbindung? Qualität? Nachts beleuchtet?	? -7211,15920 -7145,15910
 # REMOVED (privat, Betreten verboten) --- #: XXX laut osm sand --- An der Aue - Am Zeuthener Winkel: Qualität?	? 24662,-4285 24676,-4335 24716,-4328 24753,-4402
 Richard-Wagner-Str. (Schulzendorf): Qualität im südöstlichen Abschnitt?	? 24424,-4656 24494,-4719 24526,-4753
-Wiesenstr. (Zeuthen): Qualität im nordwestlichen Abschnitt? Ist hier auch asphaltiert?	? 25371,-5577 25337,-5516 25025,-5155 24903,-5113
+Wiesenstr. (Zeuthen): Qualität im nordwestlichen Abschnitt? Ist hier auch unbefestigt?	? 25337,-5516 25025,-5155 24903,-5113
 Am Heideberg (Zeuthen): Qualität im westlichen Abschnitt? Liegt hier auch Kleinsteinpflaster?	? 25321,-5848 24730,-5712
 Weserstr. (Zeuthen): Qualität im nordöstlichen Abschnitt? Liegt hier auch Kleinsteinpflaster?	? 26041,-6785 25993,-6654
 Freiheitstr.: Gehwege für Radfahrer frei?	? 26133,-8639 25910,-8697 25725,-8743 25578,-8781
