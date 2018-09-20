@@ -27610,7 +27610,7 @@ EOF
 EOF
      },
      { from => 1533579833,
-       until => undef, # $isodate2epoch->("2018-09-18 18:00:00"),
+       until => $isodate2epoch->("2018-09-18 18:00:00"),
        text => 'Grünberger Str.: Sperrung der Fahrbahn zwischen Kadiner Str. und Warschauer Str., Richtung Osten, voraussichtlich bis Mitte September 2018',
        type => 'handicap',
        data => <<EOF,

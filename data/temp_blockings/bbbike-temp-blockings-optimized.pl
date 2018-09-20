@@ -4127,17 +4127,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1537999200
        },
-       {
-         'data' => '#: source_id: 2147342987
-#: next_check: 2018-09-19
-	q4::inwork; 13515,11969 13696,11920
-',
-         'from' => 1533579833,
-         'id' => 2992,
-         'text' => 'Grünberger Str.: Sperrung der Fahrbahn zwischen Kadiner Str. und Warschauer Str., Richtung Osten, voraussichtlich bis Mitte September 2018',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: osm_watch: way id="36936021" version="3" brb
