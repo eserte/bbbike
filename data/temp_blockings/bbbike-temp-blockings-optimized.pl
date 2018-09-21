@@ -11,7 +11,7 @@ push @temp_blocking,
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
 ',
-         'from' => 1538258400,
+         'from' => 1537480800,
          'id' => 127,
          'periodic' => 1,
          'recurrences' => [
@@ -23,9 +23,9 @@ push @temp_blocking,
                               9
                             ]
                           ],
-         'text' => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt (01.10.2018 bis 03.10.2018)',
+         'text' => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt (22.09.2018 bis 08.10.2018)',
          'type' => 'gesperrt',
-         'until' => 1538603999
+         'until' => 1538971200
        },
        undef,
        undef,
@@ -3787,7 +3787,21 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berliner-woche.de/rudow/c-bauen/ostburger-weg-erst-im-herbst-fertig_a168854
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=34143
+#: XXX wie lange ist hier noch gesperrt?
+#: priority: #B
+#: next_check: 2018-09-24
+	2::inwork 18023,833 17928,764 17734,675
+',
+         'from' => 1517602202,
+         'id' => 2931,
+         'source_id' => 'https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20180202',
+         'text' => 'Ostburger Weg: Bauarbeiten zwischen Will-Meisel-Weg und Am Espenpfuhl, Fahrbahn gesperrt, bis Mitte September 2018 ',
+         'type' => 'gesperrt',
+         'until' => 1538323200
+       },
        undef,
        undef,
        undef,
@@ -3915,7 +3929,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-09-16
+#: last_checked: 2018-09-21
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -4356,6 +4370,149 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '	2::inwork 14321,25216 14434,25388 14481,25461 15230,26548
+',
+         'from' => 1537653600,
+         'id' => 3021,
+         'source_id' => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.742008.php',
+         'text' => 'Hobrechtsfelder Chaussee: Bauarbeiten, Fahrbahn gesperrt, von Montag, den 24.09.2018 bis Montag, den 01.10.2018',
+         'type' => 'gesperrt',
+         'until' => 1538431199
+       },
+       {
+         'data' => '# erstellt mit dem folgenden Kommando:
+#    ./miscsrc/grepstrassen -ignoreglobaldirectives -inner /tmp/1.bbd -onlyenclosed data/strassen | perl -pe \'s/	S+/	2::temp/\' >| /tmp/1s.bbd
+# 1.bbd beschreibt die Fläche:
+#	X 7955,12830 7881,12732 7686,12631 7611,12583 7649,12533 8077,12566 8079,12384 8361,12385 8433,12311 8415,12275 8181,12252 8181,12169 8452,12210 8551,12153 8535,11863 8613,11860 8808,11925 8764,12073 8906,12094 8855,12233 9182,12278 9170,12363 8835,12334 8806,12488 8734,12479 8725,12569 8587,12615 8519,12684 8506,12725 8548,12728 8521,12826 8510,12859 8538,12871 8491,12960 8476,12921 8401,12990 8296,13036 8216,13047 8142,13043 8052,13006 8004,12972 7967,12942 7956,12974 7921,12951 7887,12893 7935,12887 7966,12852
+Reichstagufer	2::temp 8667,12555 8596,12576 8554,12593
+(Ludwig-Erhard-Ufer)	2::temp 7670,12576 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871
+(südliches Spreeufer)	2::temp 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576
+(Panoramaweg Spreebogenpark)	2::temp 8021,12832 8036,12855 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
+(Moltkebrücke - südliches Spreeufer)	2::temp 8036,12855 8025,12859 8006,12853
+(Kronprinzenbrücke - südliches Spreeufer)	2::temp 8427,12871 8428,12859 8424,12853
+(Spreeufer - Otto-von-Bismarck-Allee)	2::temp 8473,12753 8445,12755 8415,12749
+Schiffbauerdamm	2::temp 8514,12877 8503,12895
+Unterbaumstr.	2::temp 8488,12920 8502,12935
+Wilhelmstr. (Mitte, Kreuzberg)	2::temp 8861,12125 8804,12280
+Wilhelmstr. (Mitte, Kreuzberg)	2::temp 8804,12280 8775,12457
+Cora-Berliner-Str.	2::temp 8783,11959 8737,12098
+Straße des 17. Juni	2::temp 8214,12205 8303,12216 8344,12221 8538,12245
+Unter den Linden	2::temp 9141,12320 9028,12307 8804,12280
+Ebertstr.	2::temp 8577,11896 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
+Pariser Platz	2::temp 8804,12280 8722,12268
+Pariser Platz	2::temp 8722,12268 8637,12258 8592,12252
+Pariser Platz	2::temp 8637,12258 8643,12208 8728,12220 8722,12268 8714,12319 8630,12307 8637,12258
+Platz des 18. März	2::temp 8592,12252 8538,12245
+Simsonweg	2::temp 8354,12416 8391,12389 8546,12279
+Dorotheenstr. (Mitte)	2::temp 8540,12420 8775,12457
+Behrenstr.	2::temp 8595,12066 8737,12098 8743,12099 8861,12125
+Kleine Querallee	2::temp 8344,12221 8391,12389 8400,12417
+Ahornsteig	2::temp 8522,12187 8538,12245
+(Bremer Weg)	2::temp 8522,12239 8538,12245
+Scheidemannstr.	2::temp 8119,12414 8354,12416 8400,12417 8540,12420
+(Vorfahrt Reichstagsgebäude)	2::temp 8400,12417 8399,12610
+(Wiese vor dem Reichstag)	2::temp 8354,12416 8348,12609
+Moltkebrücke	2::temp 7930,12912 8021,12832
+Willy-Brandt-Str.	2::temp 8021,12832 8030,12824
+Willy-Brandt-Str.	2::temp 8030,12824 8120,12756
+(am Bundeskanzleramt)	2::temp 8120,12756 8122,12603
+Heinrich-von-Gagern-Str.	2::temp 8122,12603 8119,12414
+Friedrich-Ebert-Platz	2::temp 8540,12420 8554,12593 8485,12612
+Paul-Löbe-Allee	2::temp 8485,12612 8399,12610 8348,12609 8306,12609 8207,12606
+Paul-Löbe-Allee	2::temp 8207,12606 8122,12603
+Paul-Löbe-Allee	2::temp 8122,12603 7945,12592 7851,12590
+(Paul-Löbe-Allee - südliches Spreeufer)	2::temp 7851,12590 7741,12586 7710,12585
+Kronprinzenbrücke	2::temp 8503,12895 8424,12853
+Konrad-Adenauer-Str.	2::temp 8424,12853 8309,12758 8306,12609
+Otto-von-Bismarck-Allee	2::temp 8415,12749 8309,12758 8206,12757 8120,12756
+(Umfahrung Kanzleramt)	2::temp 8207,12606 8206,12757
+(Umfahrung an der Schweizer Botschaft)	2::temp 8206,12757 8204,12816 8168,12848 8124,12840 8030,12824
+Rahel-Hirsch-Str.	2::temp 7930,12912 7946,12932
+Kapelle-Ufer	2::temp 8488,12920 8503,12895
+Hannah-Arendt-Str.	2::temp 8577,11896 8783,11959
+(Willy-Brandt-Str. - Rahel-Hirsch-Str.)	2::temp 8120,12756 8124,12840 8116,12938
+(Parkweg Spreebogenpark)	2::temp 8309,12758 8304,12938
+(südliches Spreeufer - Gustav-Heinemann-Brücke)	2::temp 8032,12889 8053,12871 8116,12938
+(südliches Spreeufer - Panoramaweg)	2::temp 8427,12871 8385,12881 8304,12938
+(Uferpromenade am Kapelle-Ufer)	2::temp 8257,13037 8277,13032 8317,13015 8408,12968 8464,12919 8498,12870
+Promenade Schiffbauerdamm	2::temp 8498,12870 8529,12757
+(Uferpromenade - Schiffbauerdamm)	2::temp 8529,12757 8536,12758
+(Uferpromenade - Schiffbauerdamm)	2::temp 8498,12870 8507,12873 8514,12877
+(Uferpromenade - Schiffbauerdamm)	2::temp 8464,12919 8480,12909 8503,12895
+(Kapelle-Ufer - Uferpromenade)	2::temp 8399,12983 8408,12968
+(Treppe zum Spreeuferweg)	2::temp 8159,13042 8159,13032
+(Spreeuferweg)	2::temp 7945,12878 7966,12913 8044,12989 8159,13032
+',
+         'from' => 1537934400,
+         'id' => 3022,
+         'source_id' => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_38_5203_5322_online.pdf',
+         'text' => 'Straßen rund um Reichstag, Brandenburger Tor und Bundeskanzleramt: wegen eines Staatsbesuchs Sperrungen möglich, vom 27. September 2018 6.00 Uhr bis 29. September 2018 15.00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1538226000
+       },
+       {
+         'data' => '	2::temp 6787,12099 6828,12031 6809,11979 6744,11936 6685,11954 6642,12010 6656,12075 6690,12104 6725,12113 6754,12108 6787,12099 6831,12150 7001,12274 7031,12320 6694,12627
+	2::temp 7215,12295 7031,12320 7051,12426 7077,12575
+	3 5900,11913 6642,12010 6550,11954
+	3 7122,12384 7051,12426 6859,12567
+	3 6884,12006 6828,12031 7026,12054
+	3 6859,12567 7051,12426 7122,12384
+	3 7026,12054 6828,12031 6884,12006
+	3 6550,11954 6642,12010 5900,11913
+',
+         'from' => 1538024400,
+         'id' => 3023,
+         'source_id' => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_38_5203_5322_online.pdf',
+         'text' => 'Großer Stern und Bellevue: wegen eines Staatsbesuchs Sperrungen möglich, am 28. September 2018 von 7.00 Uhr bis 24.00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1538171999
+       },
+       {
+         'data' => '# erstellt mit dem folgenden Kommando:
+#    ./miscsrc/grepstrassen -ignoreglobaldirectives -inner /tmp/2.bbd -onlyenclosed data/strassen | perl -pe \'s/	S+/	2::temp/\' >| /tmp/2s.bbd
+# 2.bbd beschreibt die Fläche:
+#	X 9421,12589 9472,12189 9716,12212 9735,12120 9944,12144 10107,12219 10021,12458 9920,12648 9875,12683 9704,12631
+Werderscher Markt	2::temp 9898,12161 9939,12174 9972,12184 10029,12208 10091,12232
+Am Zeughaus	2::temp 9919,12613 9956,12523 9984,12426
+Schinkelplatz	2::temp 9984,12426 9996,12401 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
+Schinkelplatz	2::temp 10058,12290 10008,12274
+Schinkelplatz	2::temp 9996,12401 10058,12290 10091,12232
+Prinzengasse	2::temp 9955,12300 10002,12305
+An der Kommandantur	2::temp 9994,12368 9943,12364
+Niederlagstr.	2::temp 9972,12184 9959,12281 9955,12300 9943,12364 9934,12420
+Falkoniergasse	2::temp 9939,12174 9909,12261
+Werdersche Rosenstr.	2::temp 9883,12251 9909,12261 9959,12281
+Französische Str.	2::temp 9898,12161 9812,12150 9755,12144
+Unter den Linden	2::temp 10024,12431 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381 9475,12365
+Hinter der Katholischen Kirche	2::temp 9812,12150 9808,12182 9798,12267 9795,12293 9780,12401
+(entlang der Hedwigskathedrale)	2::temp 9808,12182 9775,12178 9771,12190 9747,12205
+Charlottenstr. (Kreuzberg, Mitte)	2::temp 9454,12558 9462,12481 9475,12365 9489,12263 9496,12215
+Dorotheenstr. (Mitte)	2::temp 9454,12558 9581,12588 9681,12601 9742,12609 9870,12657
+Am Kupfergraben	2::temp 9870,12657 9900,12643 9919,12613
+Hinter dem Gießhaus	2::temp 9858,12410 9845,12506 9837,12560 9892,12596 9919,12613
+Hinter dem Zeughaus	2::temp 9845,12506 9956,12523
+Behrenstr.	2::temp 9496,12215 9631,12227 9680,12232 9730,12238 9737,12238 9798,12267
+Universitätsstr.	2::temp 9581,12588 9613,12381
+Oberwallstr.	2::temp 9858,12410 9876,12298 9883,12251 9898,12161
+Am Festungsgraben	2::temp 9742,12609 9747,12584
+Am Festungsgraben	2::temp 9747,12584 9764,12492 9771,12400
+Am Festungsgraben	2::temp 9845,12506 9764,12492
+Hedwigskirchgasse	2::temp 9737,12238 9747,12205 9755,12144
+Bebelplatz	2::temp 9713,12392 9730,12238
+Bebelplatz	2::temp 9680,12232 9664,12387
+Bebelplatz	2::temp 9795,12293 9876,12298
+Mollergasse	2::temp 9892,12596 9894,12564
+Bebelplatz, diagonal über den Platz	2::temp 9737,12238 9702,12307 9664,12387
+Bebelplatz, diagonal über den Platz	2::temp 9680,12232 9702,12307 9713,12392
+',
+         'from' => 1537999200,
+         'id' => 3024,
+         'source_id' => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_38_5203_5322_online.pdf',
+         'text' => 'Unter den Linden, DHM, Bebelplatz, Schinkelplatz: wegen eines Staatsbesuchs Sperrungen möglich, am 28. September 2018 von 0.00 Uhr bis 17.00 Uhr ',
+         'type' => 'gesperrt',
+         'until' => 1538146800
        }
      
 );
