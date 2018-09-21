@@ -3,12 +3,12 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2003,2008,2009,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003,2008,2009,2013,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
 # Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte
 #
 
 package Msg;
@@ -18,11 +18,11 @@ use File::Basename;
 
 use vars qw($messages $lang $lang_messages $VERSION @EXPORT @EXPORT_OK
 	    $caller_file $frommain $noautosetup $DEBUG %missing_reported);
-use base qw(Exporter);
+use Exporter ();
 @EXPORT = qw(M Mfmt);
 @EXPORT_OK = qw(frommain noautosetup);
 
-$VERSION = '1.10';
+$VERSION = '1.12';
 
 BEGIN {
     if ($ENV{PERL_MSG_DEBUG}) {
@@ -72,9 +72,11 @@ sub import {
 
 This is called automatically on using the Msg module. The defaults
 (base directory containing the message files and the current language)
-can be overwritten. The current language is determined by either the
-LC_ALL, LC_MESSAGES, or LANG environment variables (in this order). A
-value of "C" or "POSIX" is ignored. [XXX yet unspecified for Win32?].
+can be overwritten. On POSIX systems, the current language is
+determined by either the LC_ALL, LC_MESSAGES, or LANG environment
+variables (in this order). A value of "C" or "POSIX" is ignored. On
+Windows, the function C<POSIX::setlocale> is queried and there's
+hardcoded support for some languages (en, de, fr, es, hr).
 
 =cut
 
@@ -122,6 +124,36 @@ sub get_lang {
 	    $lang = $ENV{$env};
 	    last;
 	}
+    }
+    if (!defined $lang) {
+	# Windows does not know LC_ALL et al, but POSIX::setlocale works
+	if (eval { require POSIX; defined &POSIX::setlocale }) {
+	    for my $category ('LC_MESSAGES', 'LC_ALL') {
+		if (defined &{"POSIX::$category"}) {
+		    $lang = do {
+			no strict 'refs';
+			POSIX::setlocale(&{"POSIX::$category"});
+		    };
+		    if (defined $lang && $lang ne '') {
+			if ($^O eq 'MSWin32') {
+			    # normalize
+			    if ($lang =~ m{^English_}) {
+				$lang = 'en';
+			    } elsif ($lang =~ m{^German_}) {
+				$lang = 'de';
+			    } elsif ($lang =~ m{^French_}) {
+				$lang = 'fr';
+			    } elsif ($lang =~ m{^Spanish_}) {
+				$lang = 'es';
+			    } elsif ($lang =~ m{^Croatian_}) {
+				$lang = 'hr';
+			    } # XXX more?
+			}
+			last;
+		    }
+		}
+	    }
+	}	
     }
     if (!defined $lang) {
 	$lang = "";
