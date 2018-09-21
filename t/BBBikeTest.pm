@@ -34,6 +34,8 @@ use vars qw($BBBIKE_TEST_CGIDIR
 	    $BBBIKE_TEST_WAPURL
 	  );
 
+use base 'Test::Builder::Module';
+
 use Exporter 'import';
 
 use File::Basename qw(dirname);
@@ -953,6 +955,8 @@ sub image_ok ($;$) {
 sub zip_ok {
     my($zip_name, %args) = @_;
 
+    my $tb = __PACKAGE__->builder;
+
     require Archive::Zip;
 
     # instead of stack dump:
@@ -965,8 +969,8 @@ sub zip_ok {
 	die "Status while reading $zip_name is not AZ_OK" if $status != Archive::Zip::AZ_OK();
     };
     if ($@) {
-	Test::More::fail("Checking $zip_name in read phase");
-	Test::More::diag($@);
+	$tb->ok(0, "Checking $zip_name in read phase");
+	$tb->diag($@);
 	if ($^O ne 'MSWin32') { # pipe open might be unimplemented, no ls available
 	    my $ls = do {
 		open my $fh, '-|', 'ls', '-al', $zip_name
@@ -974,7 +978,7 @@ sub zip_ok {
 		local $/;
 		<$fh>;
 	    };
-	    Test::More::diag($ls);
+	    $tb->diag($ls);
 	}
 	return 0;
     }
@@ -1006,18 +1010,18 @@ sub zip_ok {
 	}
     };
     if ($@) {
-	Test::More::fail("Test extracting members from $zip_name");
-	Test::More::diag($@);
+	$tb->ok(0, "Test extracting members from $zip_name");
+	$tb->diag($@);
 	return 0;
     }
 
     if (keys %member_checks) {
-	Test::More::fail("Member checks in $zip_name are OK");
-	Test::More::diag("The following file(s) are missing: " . join(", ", sort keys %member_checks));
+	$tb->ok(0, "Member checks in $zip_name are OK");
+	$tb->diag("The following file(s) are missing: " . join(", ", sort keys %member_checks));
 	return 0;
     }
 
-    Test::More::pass("Zip file $zip_name looks OK");
+    $tb->ok(1, "Zip file $zip_name looks OK");
     1;
 }
 
