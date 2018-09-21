@@ -34,7 +34,7 @@ use vars qw($BBBIKE_TEST_CGIDIR
 	    $BBBIKE_TEST_WAPURL
 	  );
 
-use base qw(Exporter);
+use Exporter 'import';
 
 use File::Basename qw(dirname);
 use File::Spec     qw();

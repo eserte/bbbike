@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeTkUtil.pm,v 1.3 2008/12/31 16:39:47 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2008,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,9 +14,9 @@
 package BBBikeTkUtil;
 use strict;
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.04';
 
-use base 'Exporter';
+use Exporter 'import';
 @EXPORT_OK = qw(sort_hlist pack_buttonframe);
 
 # Sort HList by index $inx. Only toplevel children are sorted, and only

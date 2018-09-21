@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2016,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,9 +14,9 @@
 package Strassen::SimpleSearch;
 
 use strict;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
-use base 'Exporter';
+use Exporter 'import';
 our @EXPORT_OK = 'simple_search';
 
 use Strassen::Util qw();

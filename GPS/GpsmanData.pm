@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2005,2007,2010,2014,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2005,2007,2010,2014,2016,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -52,7 +52,7 @@ use constant TYPE_TRACK    => 1;
 use constant TYPE_ROUTE    => 2;
 use constant TYPE_GROUP    => 3;
 
-use base qw(Exporter);
+use Exporter 'import';
 @EXPORT_OK = qw(TYPE_WAYPOINT TYPE_TRACK TYPE_ROUTE TYPE_GROUP);
 
 use GPS::Util; # for eliminate_umlauts

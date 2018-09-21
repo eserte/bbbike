@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: ETRS89.pm,v 1.4 2004/10/02 08:23:00 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,9 +15,9 @@ package Karte::ETRS89;
 
 use strict;
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.05';
 
-use base qw(Exporter);
+use Exporter 'import';
 @EXPORT_OK = qw(UTMToETRS89 ETRS89ToUTM ETRS89ToDegrees);
 
 sub UTMToETRS89 {

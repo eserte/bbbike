@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: UTM.pm,v 1.9 2007/03/19 21:55:38 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2018 Slaven Rezic. All rights reserved.
 #
 #      This program is free software; you can redistribute it and/or modify
 #      it under the terms of the GNU General Public License as published by
@@ -42,7 +41,7 @@ BEGIN {
     }
 }
 
-use base qw(Exporter);
+use Exporter 'import';
 @EXPORT_OK = qw(ConvertDatum ConvToTM ConvFromTM %GRIDZN DegreesToGKK GKKToDegrees UTMToDegrees DegreesToUTM);
 
 $UTMlat0 = 0;
