@@ -7,6 +7,7 @@
 
 use strict;
 use FindBin;
+use lib $FindBin::RealBin;
 
 use Cwd qw(realpath);
 use IO::File;
@@ -14,13 +15,16 @@ use IO::File;
 BEGIN {
     if (!eval q{
 	use IPC::Run qw(run binary);
+	use File::Temp qw(tempfile);
 	use Test::More;
 	1;
     }) {
-	print "1..0 # skip no IPC::Run and/or Test::More modules\n";
+	print "1..0 # skip no IPC::Run, File::Temp and/or Test::More modules\n";
 	exit;
     }
 }
+
+use BBBikeTest 'eq_or_diff';
 
 plan 'no_plan';
 
@@ -303,6 +307,31 @@ EOF
     unlink $generated_file;
 }
 
+######################################################################
+# -inner -onlyenclosed
+{
+    my($tmpfh,$tmpfile) = tempfile(UNLINK => 1, SUFFIX => ".bbd");
+    print $tmpfh <<'EOF';
+	X 8932,12076 8833,12064 8879,11946 8969,11958 9022,11775 8948,11760 9034,11493 9134,11513 9227,11227 9153,11221 9209,11007 9333,11027 9016,12088
+EOF
+    close $tmpfh or die $!;
+
+    my $wilhelmstr_bbd = <<'EOF';
+#: global: dir
+#:
+#: local: dir
+Wilhelmstr.	H 8861,12125 8901,12008 8965,11825 8969,11814 9000,11727 9058,11564 9155,11283 9196,11165 9234,11056 9275,10932 9323,10791 9368,10641 9375,10616 9384,10536 9388,10393 9404,10250
+EOF
+    my $segs_bbd = run_grepstrassen($wilhelmstr_bbd, ['-inner', $tmpfile, '-onlyenclosed', '-preserveglobaldirectives']);
+    eq_or_diff $segs_bbd, <<'EOF';
+#: global: dir
+#:
+#: local: dir vvv
+Wilhelmstr.	H 9000,11727 9058,11564
+Wilhelmstr.	H 9196,11165 9234,11056
+#: local: ^^^
+EOF
+}
 ######################################################################
 
 sub run_grepstrassen ($$) {

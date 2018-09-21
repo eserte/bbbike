@@ -38,6 +38,7 @@ my %special_data;
 my %type_s;
 my @inner;
 my @outer;
+my $onlyenclosed;
 GetOptions("v" => \$v,
 	   "i" => \$i,
 	   "cat=s" => \$cat,
@@ -64,6 +65,7 @@ GetOptions("v" => \$v,
 	   "minlength=f" => \$minlength,
 	   'inner=s@' => \@inner,
 	   'outer=s@' => \@outer,
+	   "onlyenclosed!" => \$onlyenclosed,
 	  ) or die <<EOF;
 usage: $0 [-v] [-i] [-cat category | -catrx regexp]
        [-name name | -namerx regexp]
@@ -73,11 +75,15 @@ usage: $0 [-v] [-i] [-cat category | -catrx regexp]
        [-special name] [-minarea ...km²] [-minlength ...km]
        [-preserveglobaldirectives] [-ignoreglobaldirectives]
        [-ignorelocaldirectives] [-removenoncoords]
-       [-inner file [-inner ...]] [-outer file [-outer ...]] bbd ...
+       [-inner file [-inner ...] [-onlyenclosed]] [-outer file [-outer ...]] bbd ...
 
 section is a region marked with the "section" directive in a bbd file.
 
 EOF
+
+if ($onlyenclosed && !@inner) {
+    die "-onlyenclosed is only valid with -inner\n";
+}
 
 if ($catrx) {
     $catrx = $i ? qr{$catrx}i : qr{$catrx};
@@ -258,6 +264,18 @@ LOOP_STREETS: while(1) {
     }
  INNER: {
 	if (@inner_s) {
+	    if ($onlyenclosed) {
+		my @r = get_enclosed_linesegments($r, \@c, \@inner_s);
+		# we have to push here, because multiple $r objects may be returned
+		for my $r (@r) {
+		    if ($ignorelocaldirectives) {
+			$new_s->push_ext($r);
+		    } else {
+			$new_s->push_ext($r, $dir);
+		    }
+		}
+		next LOOP_STREETS;
+	    }
 	    for my $inner (@inner_s) {
 		for my $c (@c) {
 		    if (VectorUtil::point_in_polygon($c,$inner)) {
@@ -527,6 +545,31 @@ sub end_fragezeichen {
     require File::Basename;
     # XXX support for MultiStrassen missing --- is it needed at all?
     $fragezeichen_s->write("/tmp/fragezeichen_" . File::Basename::basename($datafiles[0]) . ".bbd");
+}
+
+######################################################################
+sub get_enclosed_linesegments {
+    my($r, $c_ref, $inner_s_ref) = @_;
+    my @ret = ([]);
+    for my $inner (@$inner_s_ref) {
+	for my $c (@$c_ref) {
+	    if (VectorUtil::point_in_polygon($c, $inner)) {
+		push @{ $ret[-1] }, $c;
+	    } else {
+		if (@{ $ret[-1] }) {
+		    push @ret, []; # create a new segment
+		}
+	    }
+	}
+    }
+    if (!@{ $ret[-1] }) {
+	pop @ret;
+    }
+    @ret = grep { @$_ >= 2 } @ret; # one-point records are no line segments ---> remove
+    if (@ret) {
+	@ret = map { [$r->[Strassen::NAME], [map { join(",", @$_) } @$_], $r->[Strassen::CAT]] } @ret;
+    }
+    @ret;
 }
 
 __END__
