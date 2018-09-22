@@ -105,6 +105,14 @@ var xmasIcon = L.icon({
     iconAnchor: new L.Point(6,6)
 });
 
+var notrailerIcon = L.icon({
+    iconUrl: bbbikeImagesRoot + "/notrailer.png",
+    shadowUrl: bbbikeImagesRoot + "/px_1t.gif",
+    iconSize: new L.Point(16,16),
+    shadowSize: new L.Point(1,1),
+    iconAnchor: new L.Point(8,8)
+});
+
 var startMarker, goalMarker, loadingMarker;
 
 var id2marker;
@@ -601,7 +609,7 @@ function doLeaflet() {
 	}
 	var l = L.geoJson(initialGeojson, {
             style: function (feature) {
-		if (feature.properties.cat.match(/^(1|2|3|q\d)::(night|temp|inwork|xmas);?/)) {
+		if (feature.properties.cat.match(/^(1|2|3|q\d|BNP:\d+)::(night|temp|inwork|xmas|trailer=no);?/)) {
                     var attrib = RegExp.$2;
                     var latLngs = L.GeoJSON.coordsToLatLngs(feature.geometry.coordinates);
                     var centerLatLng = getLineStringCenter(latLngs);
@@ -614,13 +622,19 @@ function doLeaflet() {
 			l = L.marker(centerLatLng, { icon: inworkIcon });
                     } else if (attrib == 'xmas') {
 			l = L.marker(centerLatLng, { icon: xmasIcon });
-                    }
+                    } else if (attrib == 'trailer=no') {
+			l = L.marker(centerLatLng, { icon: notrailerIcon });
+		    }
                     l.addTo(map);
                     l.bindPopup(feature.properties.name);
                     return { //dashArray: [2,2],
 			color: "#f00", weight: 5, lineCap: "butt" }
 		}
             },
+	    // --- XXX does not work (with leaflet 0.4.4?)
+	    // pointToLayer: function (feature, latlng) {
+	    // 	return L.circleMarker(latlng, { radius: 8 });
+	    // },
             onEachFeature: function (feature, layer) {
 		layer.bindPopup(feature.properties.name);
 		id2marker[feature.properties.id] = layer;
