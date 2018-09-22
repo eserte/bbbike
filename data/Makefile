@@ -200,15 +200,15 @@ persistent-tmp:	fragezeichen-outdoor \
 		${PERSISTENTTMPDIR}/berlin-fragezeichen-poi.gpx \
 		${PERSISTENTTMPDIR}/.check_data_test_mount \
 		osm-watch-lists \
-		doit
+		doit \
+		data-bbbgeojsonp
 
 rare-persistent-tmp:	\
 		${PERSISTENTTMPDIR}/all-upload-fragezeichen.wpt \
 		${PERSISTENTTMPDIR}/my-upload-fragezeichen.wpt \
 		${PERSISTENTTMPDIR}/strassen_in_planung.bbd \
 		${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd \
-		${PERSISTENTTMPDIR}/unpaved.bbd \
-		data-bbbgeojsonp
+		${PERSISTENTTMPDIR}/unpaved.bbd
 
 update-bbbike-aux-downloads:
 	cd ${HOME}/src/bbbike-aux/downloads && ${MAKE}
