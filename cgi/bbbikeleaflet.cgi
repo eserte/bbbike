@@ -38,6 +38,7 @@ my $devel              = $q->param('devel') || 0;
 my $route_title        = $q->param('routetitle');
 my $replay_trk         = $q->param('replaytrk');
 my $loc                = $q->param('loc');
+my $geojsonp_url       = $q->param('geojsonp_url');
 my $show_expired_session_msg;
 my($coords, $wgs84_coords);
 if ($q->param('coordssession')) {
@@ -85,6 +86,7 @@ my $tpl = BBBikeLeaflet::Template->new
      route_title              => $route_title,
      replay_trk               => $replay_trk,
      loc                      => $loc,
+     geojsonp_url             => $geojsonp_url,
     );
 $tpl->process(\*STDOUT);
 
