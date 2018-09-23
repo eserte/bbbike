@@ -600,6 +600,13 @@
   'help-echo "Click button to show OSM note")
 
 (defun bbbike-create-buttons ()
+  ;; XXX For some reason, overlays accumulate if a buffer
+  ;; is visited another time, making emacs slower and slower.
+  ;; Hack is to remove them all first.
+  ;; remove-overlays does not seem to exist for older emacsen (<23.x.x?)
+  (if (fboundp 'remove-overlays)
+      (remove-overlays))
+
   (save-excursion
     (goto-char (point-min))
     (while (search-forward-regexp bbbike-next-check-id-regexp nil t)
