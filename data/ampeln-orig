@@ -2663,13 +2663,13 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_prog Anforderungsampel
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
-#: last_checked: 2018-08-13
+#: last_checked: 2018-09-22
 #: check_frequency: 60d
 	F::inwork 9984,12426
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2018-09-01 vvv
+#: last_checked: 2018-09-23 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -2945,7 +2945,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: next_check_id: HERBERTVONKARAJAN-2018
 #: note: Anforderungsampel
 #: XXX provisorisch, bleibt eventuell nur während der Bauarbeiten an der Herbert-von-Karajan-Str.
-#: last_checked: 2018-08-21
+#: osm_watch: node id="1319349510" version="5"
+#: last_checked: 2018-09-22
 	F::inwork 8005,11627
 # 
 ################################################################################

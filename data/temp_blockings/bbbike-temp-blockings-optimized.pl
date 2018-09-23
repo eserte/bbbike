@@ -3272,7 +3272,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
 #: priority: #A
-#: last_checked: 2018-09-20
+#: last_checked: 2018-09-22
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 ',
@@ -3858,7 +3858,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147342751
 #: source_id: 2147343056
 # REMOVED (hier nicht mehr) ---	q4::inwork; 8901,12008 8861,12125
-#: last_checked: 2018-09-06
+#: last_checked: 2018-09-22
+#: next_check: 2018-09-30
 # REMOVED --- #: check_frequency: 7d
 	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
 ',
@@ -3871,7 +3872,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '	q4::inwork; 3623,10800 3835,10915
+         'data' => '#: note: zuletzt geprüft: 2018-09-22
+	q4::inwork; 3623,10800 3835,10915
 ',
          'from' => undef,
          'id' => 2950,
@@ -3929,7 +3931,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-09-21
+#: last_checked: 2018-09-23
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -4177,18 +4179,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: note: Gesamtbaumaßnahme bis 31.12.2023
 # REMOVED (ja) --- #: XXX sind tatsächlich Radfahrer betroffen?
+#: note: zuletzt geprüft: 2018-09-22
 	q4::inwork; 5076,10658 5047,10381
 ',
          'from' => 1534629600,
          'id' => 2999,
          'source_id' => '2147342231',
-         'text' => 'Uhlandstr.: zwischen Kurfürstendamm und Lietzenburger Str. Richtung Süden wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, ab 20.08.2018 bis Ende 2019',
+         'text' => 'Uhlandstr.: zwischen Kurfürstendamm und Lietzenburger Str. Richtung Süden wegen Bauarbeiten gesperrt, Radfahrer sind auch betroffen, ab 20.08.2018 bis Ende 2019',
          'type' => 'handicap',
          'until' => 1546275600
        },
        {
          'data' => '#: XXX wann sind die "Radfahren verboten"-Schilder wieder weg?
-#: last_checked: 2018-09-20
+#: last_checked: 2018-09-22
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 ',
@@ -4210,13 +4213,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX bis wann sind hier Bauarbeiten? (laut googlemaps bis Mitte November 2018)
-#: last_checked: 2018-09-17
+#: last_checked: 2018-09-22
 #: check_frequency: 21d
-	q4::inwork; 4502,11740 4574,11587
+	q2::inwork; 4502,11740 4574,11587
 ',
          'from' => undef,
          'id' => 3002,
-         'text' => 'Am Schillertheater: Bauarbeiten, Fahrbahn Richtung Süden gesperrt',
+         'text' => 'Am Schillertheater: Bauarbeiten, Fahrbahn Richtung Süden gesperrt, Radfahrer dürfen den Gehweg benutzen',
          'type' => 'handicap',
          'until' => undef
        },
@@ -4361,7 +4364,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1543618799
        },
        {
-         'data' => '#: last_checked: 2018-09-19
+         'data' => '#: last_checked: 2018-09-21
 #: check_frequency: 7d
 	2::inwork 11021,11287 11000,11327
 ',
@@ -4382,11 +4385,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1538431199
        },
        {
-         'data' => '# erstellt mit dem folgenden Kommando:
-#    ./miscsrc/grepstrassen -ignoreglobaldirectives -inner /tmp/1.bbd -onlyenclosed data/strassen | perl -pe \'s/	S+/	2::temp/\' >| /tmp/1s.bbd
-# 1.bbd beschreibt die Fläche:
-#	X 7955,12830 7881,12732 7686,12631 7611,12583 7649,12533 8077,12566 8079,12384 8361,12385 8433,12311 8415,12275 8181,12252 8181,12169 8452,12210 8551,12153 8535,11863 8613,11860 8808,11925 8764,12073 8906,12094 8855,12233 9182,12278 9170,12363 8835,12334 8806,12488 8734,12479 8725,12569 8587,12615 8519,12684 8506,12725 8548,12728 8521,12826 8510,12859 8538,12871 8491,12960 8476,12921 8401,12990 8296,13036 8216,13047 8142,13043 8052,13006 8004,12972 7967,12942 7956,12974 7921,12951 7887,12893 7935,12887 7966,12852
-Reichstagufer	2::temp 8667,12555 8596,12576 8554,12593
+         'data' => 'Reichstagufer	2::temp 8667,12555 8596,12576 8554,12593
 (Ludwig-Erhard-Ufer)	2::temp 7670,12576 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871
 (südliches Spreeufer)	2::temp 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576
 (Panoramaweg Spreebogenpark)	2::temp 8021,12832 8036,12855 8046,12870 8072,12902 8116,12938 8168,12945 8235,12945 8304,12938 8370,12902 8424,12853
@@ -4470,11 +4469,7 @@ Promenade Schiffbauerdamm	2::temp 8498,12870 8529,12757
          'until' => 1538171999
        },
        {
-         'data' => '# erstellt mit dem folgenden Kommando:
-#    ./miscsrc/grepstrassen -ignoreglobaldirectives -inner /tmp/2.bbd -onlyenclosed data/strassen | perl -pe \'s/	S+/	2::temp/\' >| /tmp/2s.bbd
-# 2.bbd beschreibt die Fläche:
-#	X 9421,12589 9472,12189 9716,12212 9735,12120 9944,12144 10107,12219 10021,12458 9920,12648 9875,12683 9704,12631
-Werderscher Markt	2::temp 9898,12161 9939,12174 9972,12184 10029,12208 10091,12232
+         'data' => 'Werderscher Markt	2::temp 9898,12161 9939,12174 9972,12184 10029,12208 10091,12232
 Am Zeughaus	2::temp 9919,12613 9956,12523 9984,12426
 Schinkelplatz	2::temp 9984,12426 9996,12401 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
 Schinkelplatz	2::temp 10058,12290 10008,12274
