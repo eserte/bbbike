@@ -593,13 +593,10 @@ asphaltiert	RW9;RW1 -4001,2858 -4551,3201
 #XXX zurzeit kein Radweg	RW;RW 9426,3797 9438,3745 9455,3671
 	RW1; 9455,3671 9621,3155
 für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 9621,3155 9720,2887 9801,2663 9934,2307 9954,2252 10024,2059 10067,1939
-für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr	RW1; 10067,1939 10024,2059 9954,2252 9934,2307 9801,2663 9720,2887
+für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr	RW1; 10427,968 10379,1097 10329,1231 10276,1383 10239,1481 10226,1515 10172,1657 10127,1778 10067,1939 10024,2059 9954,2252 9934,2307 9801,2663 9720,2887
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr und 15-18 Uhr	RW1; 9720,2887 9621,3155 9455,3671
 für Radfahrer freigegebene Busspur gilt Mo-Fr 15-18 Uhr	RW1; 10067,1939 10127,1778 10172,1657 10226,1515 10239,1481 10276,1383 10329,1231
-	RW; 10127,1778 10067,1939
-	RW; 10329,1231 10276,1383 10239,1481 10226,1515 10172,1657 10127,1778
 	RW2; 10329,1231 10379,1097 10427,968
-für Radfahrer freigegebene Busspur	RW1; 10427,968 10379,1097 10329,1231
 holpriges Verbundsteinpflaster	RW1; 10427,968 10485,807 10539,662 10590,525 10617,452 10620,445 10638,403 10676,299 10713,197 10737,132 10753,83 10782,-24 10788,-172
 	RW1; 10620,445 10617,452 10590,525 10539,662 10485,807 10427,968
 	RW1; 10782,-24 10753,83 10737,132 10713,197 10676,299 10638,403 10620,445
@@ -682,7 +679,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/zeitnahe-entscheidung-angekuendigt_a180857
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2018-09-19
+#: last_checked: 2018-09-25
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
 Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 16699,10611 16725,10662 16751,10674 16892,10731 17083,10814 17141,10838 17226,10865 17257,10875 17466,10941 17560,10973 17621,10994
@@ -951,7 +948,7 @@ alte Gehwegplatten	RW1; 14541,3060 14392,2979
 	RW8;RW2 21998,1239 22162,1067
 Verbundsteinpflaster	RW8;RW2 22162,1067 22351,862
 asphaltiert mit einigen Schäden	RW8;RW2 22351,862 22547,651 22916,402
-asphaltiert, breit	RW8;RW2 22916,402 23206,206 23457,35
+asphaltiert, breit	RW8;RW2 22916,402 23225,192 23457,35
 asphaltiert	RW8;RW2 23457,35 24485,-667 25731,-1524
 mäßige bis schlechte Verbundsteinpflasterradwege	RW2;RW2 25731,-1524 26286,-1901 26698,-2322 26871,-2500 27017,-2660 27112,-2764 27139,-2793
 	RW2; 27139,-2793 27226,-2892 27270,-2941 27351,-3032
@@ -1197,7 +1194,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (vermutlich nicht)
-#: last_checked: 2018-08-31
+#: last_checked: 2018-09-25
 #: check_frequency: 90d
 	RW8;RW2 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
@@ -1769,8 +1766,10 @@ Berliner Gehwegplatten mit einigen leichten Unebenheiten, ca. 1,50m breit	RW2;RW
 #: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5;
 #: by: http://www.dafmap.de/d/berlin.html?id=3134&mt=0&zoom=16 (Projektabschluss: 2017-09-01)
 #: osm_watch: way id="187103792" version="10"
+#: source_id: 2147343199
 #: last_checked: 2018-09-17
-#: check_frequency: 14d
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2018-10-06
 	RW4; 11451,13301 11369,13174
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 11451,13301 11486,13350
 Busspur ist immer gültig	RW5; 11486,13350 11539,13425 11561,13451 11652,13564
@@ -3060,7 +3059,7 @@ Verbundsteinpflaster	RW1; 18256,7520 18382,7724 18406,7760 18577,8033
 #: by: Andreas Mühlhausen vvv
 #: XXX Radweg wird 2012 saniert vvv
 #: source_id: 2147342739
-#: last_checked: 2018-07-07 vvv
+#: last_checked: 2018-09-20 (mapillary) (teilweise) vvv
 #: check_frequency: 120d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 mäßiger Beton	RW1;RW2 16837,17440 16785,17524
@@ -4553,7 +4552,7 @@ breiter asphaltierter Gehweg für Radfahrer frei, die letzten Meter sind benutzun
 	RW;RW 9697,-997 9640,-833
 	RW1; 10788,-172 10835,-145
 	RW6;RW6 10676,299 10866,364
-	RW3;RW4? 10955,-769 10831,-808
+	RW3;RW3 10955,-769 10831,-808
 	RW1;RW1 10955,-769 11054,-740
 	RW6;RW6 10979,-1093 10993,-1256 11003,-1303
 	RW6;RW6 11015,-1357 11003,-1303
@@ -4742,7 +4741,7 @@ Tempo 10	RW6;RW6 -8391,15109 -8467,15072 -8570,15078 -8585,15081
 Tempo 10	RW6;RW6 -8584,15023 -8471,15000
 Tempo 10	RW6;RW6 -8617,14848 -8443,14826
 Tempo 10	RW6;RW6 -8637,14720 -8459,14687
-Gehweg für Radfahrer frei	RW1; 23206,206 22976,-176
+Gehweg für Radfahrer frei	RW1; 23225,192 22976,-176
 #: by: Raphael Werner
 #: confirmed_by: srt
 	RW6;RW6 6779,22804 6723,22924

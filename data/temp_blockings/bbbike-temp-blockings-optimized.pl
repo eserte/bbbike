@@ -2710,7 +2710,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: tempex: volatile
 	2::night 14838,11410 14792,11391
 #: XXX wird hier dauerhaft gesperrt sein? (zurzeit kann man sich noch an den Bauzäunen vorbei mogeln)
-#: last_checked: 2018-09-17
+#: last_checked: 2018-09-24
 #: check_frequency: 7d
 	2::inwork 14838,11410 14949,11474
 ',
@@ -3741,7 +3741,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: unklar, ob man durchgekommen wäre: 2018-09-07 gegen 08:30
 #: source_id: 2147342009
 #: osm_watch: way id="154381291" version="6"
-#: last_checked: 2018-09-17
+#: last_checked: 2018-09-24
 #: check_frequency: 14d
 	2::inwork 15162,11458 15055,11505
 ',
@@ -3792,7 +3792,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=34143
 #: XXX wie lange ist hier noch gesperrt?
 #: priority: #B
-#: next_check: 2018-09-24
+#: next_check: 2018-09-30
 	2::inwork 18023,833 17928,764 17734,675
 ',
          'from' => 1517602202,
@@ -4226,14 +4226,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '	2::inwork -7230,25622 -7243,25847 -7309,26146
+         'data' => '#: source_id: LS/721-E/18/127
+#: XXX außerdem: Radwegbau
+#: next_check: 2019-11-29
+	2::inwork -7230,25622 -7243,25847 -7309,26146
 ',
          'from' => 1538344800,
          'id' => 3005,
          'source_id' => 'https://www.moz.de/landkreise/oberhavel/oranienburg/oranienburg-artikel/dg/0/1/1656828/',
          'text' => 'Bötzow - Schönwalde: Brückenarbeiten, auch Radfahrer und Fußgänger können nicht passieren, voraussichtlich ab Oktober 2018 bis Ende 2019',
          'type' => 'gesperrt',
-         'until' => 1577833199
+         'until' => 1575046800
        },
        undef,
        {
@@ -4364,7 +4367,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1543618799
        },
        {
-         'data' => '#: last_checked: 2018-09-21
+         'data' => '#: last_checked: 2018-09-24
 #: check_frequency: 7d
 	2::inwork 11021,11287 11000,11327
 ',
@@ -4375,7 +4378,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '	2::inwork 14321,25216 14434,25388 14481,25461 15230,26548
+         'data' => '#: source_id: 2147343222
+	2::inwork 14321,25216 14434,25388 14481,25461 15230,26548
 ',
          'from' => 1537653600,
          'id' => 3021,
@@ -4508,6 +4512,16 @@ Bebelplatz, diagonal über den Platz	2::temp 9680,12232 9702,12307 9713,12392
          'text' => 'Unter den Linden, DHM, Bebelplatz, Schinkelplatz: wegen eines Staatsbesuchs Sperrungen möglich, am 28. September 2018 von 0.00 Uhr bis 17.00 Uhr ',
          'type' => 'gesperrt',
          'until' => 1538146800
+       },
+       {
+         'data' => '	2::inwork 23444,4942 23433,5037 23420,5159 23404,5325
+',
+         'from' => 1538064000,
+         'id' => 3025,
+         'source_id' => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.742824.php',
+         'text' => 'Salvador-Allende-Brücke: Sperrung wegen Bauarbeiten, auch für Fußgänger und Radfahrer, von Freitag, den 28.09.2018, ab 18:00 Uhr bis Montag, den 01.10.2018, 4:30 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1538361000
        }
      
 );

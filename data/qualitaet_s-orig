@@ -92,11 +92,11 @@ Sinsheimer Weg: Betonstraße	Q0 13774,8849 13837,8932
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/donaustrasse-wird-umgebaut_a180854
 #: XXX dieser Abschnitt wird noch 2018 realisiert
 #: osm_watch: way id="155605274" version="3"
-#: last_checked: 2018-09-19
+#: last_checked: 2018-09-25
 #: check_frequency: 7d
 Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12549,8616 12649,8535
 #: osm_watch: way id="155605274" version="3"
-#: last_checked: 2018-09-19 vvv
+#: last_checked: 2018-09-25 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2018-09-17 vvv
 Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729 12549,8616
@@ -108,7 +108,7 @@ Pannierstr.: Kopfsteinpflaster	Q2 12242,8972 12202,8895
 #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="155605273" version="4"
-#: last_checked: 2018-09-18
+#: last_checked: 2018-09-25
 #: next_check: 2019-03-01
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -852,7 +852,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: XXX laut fixmyberlin "kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist."
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2018-09-08
+#: last_checked: 2018-09-25
 #: next_check: 2020-01-01
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -10238,13 +10238,8 @@ Uferstr. (Niederschöneweide): Asphalt	Q0 17681,6212 17847,6089
 (Sportpromenade - Bammelecke): Waldweg	Q2+ 25564,340 25513,385 25473,449
 Waldkiefernring: Asphalt	Q0 21855,2392 21754,2329 21782,2283 21885,2343
 Fähenweg: Asphalt	Q0 21869,2367 21791,2323
-# 
-#: by: https://www.berliner-woche.de/gruenau/c-bauen/neuer-gehweg-durch-den-wald_a178025
-#: XXX prüfen, ob die Qualität tatsächlich besser geworden ist
-#: last_checked: 2018-09-12
-#: next_check: 2018-09-18
+# REMOVED (sieht in mapillary OK aus) --- #: by: https://www.berliner-woche.de/gruenau/c-bauen/neuer-gehweg-durch-den-wald_a178025 --- #: XXX prüfen, ob die Qualität tatsächlich besser geworden ist --- #: last_checked: 2018-09-12 --- #: next_check: 2018-09-18
 Sportpromenade: Asphalt	Q0 25646,-209 25574,-38 25537,167 25461,254 25172,345 24827,354 24743,370 24666,436
-# 
 Mauerpark: Kleinsteinpflaster	Q1 10188,15474 10228,15488 10234,15490
 # REMOVED (nein, by mapillary) --- #: XXX hat sich mit der Neugestaltung etwas geändert? --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.635732.php
 Zeppelinplatz: Kleinsteinpflaster	Q1 6794,15553 6884,15456
@@ -12771,7 +12766,7 @@ Rudolf-Schwarz-Str.: Beton	Q1 13097,14307 13079,14320
 #: by: ^^^
 # 
 #: by: Sabine Pesch:
-Kablower Weg: glatter Asphalt	Q0 22298,494 22504,425 22695,209 22815,37 22976,-176 23206,206
+Kablower Weg: glatter Asphalt	Q0 22298,494 22504,425 22695,209 22815,37 22976,-176 23225,192
 # 
 #: by: Verena:
 #: corrected_by: Skirde (Beton -> Asphalt, Q1 -> Q0, wahrscheinlicher!)
@@ -19216,6 +19211,9 @@ Terrassenstr.: mäßiges Kopfsteinpflaster	Q2 -1392,3915 -1554,3889 -1734,3905 -17
 # 
 #: by: Ehrmann (anja): vvv
 #: confirmed_by: srt (zumindest den Asphalt)
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.742683.php
+#: XXX Bauarbeiten geplant, danach ggfs. bessere Qualität
+#: next_check: 2018-12-14
 Spechtstr.: mäßiger Asphalt, teilweise schlechter Straßenbelag	Q1- -1681,19955 -1572,19899 -1419,19815
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2014/pressemitteilung.146574.php
 #: corrected_by: srt (wurde neu asphaltiert)
@@ -26122,6 +26120,9 @@ Kuhnertstr.: Beton	Q0 -3739,12052 -3732,12240
 #: confirmed_by: srt (südlicher Abschnitt)
 Földerichstr.: Asphalt	Q0 -3889,12230 -3892,12378 -3892,12486 -3892,12560 -3893,12628 -3887,12673 -3869,12758 -3849,12845
 Földerichstr.: Kopfsteinpflaster	Q2 -3849,12845 -3834,12911 -3817,13002
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2018/pressemitteilung.742632.php
+#: XXX Bauarbeiten geplant, danach vermutlich bessere Qualität
+#: next_check: 2018-10-18
 Genfenbergstr.: Asphalt mit Fugen	Q1 -3628,12176 -3416,12165
 Grimnitzseeweg: Asphalt mit Fugen	Q1 -3648,11989 -3524,11980
 Wachenheimer Weg: Beton	Q0 -3626,12252 -3437,12258
