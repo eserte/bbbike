@@ -98,7 +98,7 @@ Schulenburgstr./Weißenburger Str.: werden hier Radspuren markiert?	?::projected 
 #: by: http://www.berliner-woche.de/grunewald/bauen/bauarbeiten-gehen-weiter-franzensbader-strasse-bald-wieder-offen-d128156.html
 #: XXX Abschluss der Arbeiten: November 2017
 #: osm_watch: way id="47266663" version="5"
-#: osm_watch: way id="47267054" version="5"
+#: osm_watch: way id="47267054" version="6"
 #: last_checked: 2018-03-11
 #: check_frequency: 180d
 # REMOVED (fertig) --- Hubertusallee/Teplitzer Str.: hier werden Radspuren markiert	?::inwork 2322,8857 2320,8722 2295,8678 2273,8640 2190,8528 2126,8426 2120,8335 2112,8088 2099,7904
@@ -1056,8 +1056,8 @@ Dovestr.: Radstreifen	?::projected 4749,12689 4648,12559 4616,12532
 Brandenburgische Str.: Radstreifen (wo genau? oder die gesamte Strecke?)	?::projected 4342,9301 4246,9406 4057,9648 3980,9761 3974,9774 3949,9842 3927,9935 3902,10043 3874,10153 3852,10236 3835,10352
 # 
 #: osm_watch: way id="188441401" version="6"
-#: osm_watch: way id="171484595" version="10"
-#: osm_watch: way id="129621748" version="9"
+#: osm_watch: way id="171484595" version="11"
+#: osm_watch: way id="129621748" version="10"
 #: source_id: 2147340011
 #: last_checked: 2018-09-22
 #: check_frequency: 60d
@@ -1123,7 +1123,7 @@ Braunschweiger Str.: Asphaltierung	?::projected 13369,7307 13487,7337 13519,7345
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/mobilitaetsgesetz-berlin-bekommt-60-neue-radwege-bis-2020-29512972
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/neues-verkehrskonzept-fuer-richardkiez-stoesst-bei-anwohnern-auf-zustimmung_a171125 (besserer Belag, Einbahnstraßen für Autos)
 #: XXX laut fixmyberlin Baubeginn 2019
-#: osm_watch: way id="8153802" version="15"
+#: osm_watch: way id="8153802" version="16"
 Braunschweiger Str.: Asphaltierung	?::projected 13702,7418 13781,7524 13854,7620 13919,7707
 #: last_checked ^^^
 # 
@@ -1681,7 +1681,7 @@ Friedrich-Kunert-Weg: Verlängerung?	? -13714,1747 -13664,1729
 #: XXX PLZ 12524 (laut Mitteilungsblatt)
 #: XXX Privatstraßen
 #: source_id: 2147342903
-#: osm_watch: way id="41466638" version="6"
+#: osm_watch: way id="41466638" version="8"
 #: last_checked: 2018-05-06 vvv
 #: check_frequency: 360d vvv
 neue Straßen geplant: Privatstraßen 1 bis 3	?::inwork 19613,851 19316,951 19184,991
@@ -1797,7 +1797,7 @@ Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projecte
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.736281.php
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/anschluss-fuer-radfahrer_a179819
 #: XXX Ausbau des Kopfsteinpflasters, Bau einer Asphaltfahrbahn
-#: osm_watch: way id="75509950" version="12"
+#: osm_watch: way id="75509950" version="13"
 #: last_checked: 2018-09-12
 #: next_check: 2018-11-30
 Friedelstr.: Asphaltierung	?::inwork 12085,9778 12074,9689 12066,9558 12047,9429 12074,9217
@@ -2364,10 +2364,12 @@ Bebauungsplan 3-67 VE: neue Planstraße	?::projected 13598,21360 13709,21334
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-#: XXX Regierunsviertel: sind schon weitere Straßen wg. des Tag der Deutschen Einheit gesperrt? Laut fritz ab 24. September 2018 6 Uhr vvv
+#: XXX Regierunsviertel: sind schon weitere Straßen wg. des Tag der Deutschen Einheit gesperrt? Laut fritz ab 24. September 2018 6 Uhr, oder erst ab 1. Oktober? vvv
+#: next_check: 2018-10-01 vvv
 Sperrung?	? 8055,12186 8119,12414 8122,12603
 Sperrung?	? 8030,12824 8120,12756
 Sperrung?	? 8306,12609 8309,12758 8424,12853
+#: next_check ^^^
 #: XXX ^^^
 # 
 #: XXX laut fixmyberlin war Baubeginn Anfang September 2018
@@ -2456,7 +2458,7 @@ Wiltbergstr.: ist der Gehweg offiziell für Radfahrer freigegeben, ggfs. mit Zeic
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_30_4055_4194_online.pdf
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6149
-#: osm_watch: way id="4849535" version="29"
+#: osm_watch: way id="4849535" version="31"
 #: last_checked: 2018-09-25
 Böhmische Str.: wird dieser Abschnitt für Autofahrer gesperrt?	? 13566,7649 13553,7594
 # 
@@ -2615,7 +2617,7 @@ Prenzlauer Promenade/Elsa-Brändström-Str.	?::projected 11884,17273 11920,17245 1
 # 
 #: by: ^^^
 # 
-#: osm_watch: node id="336294368" version="5"
+#: osm_watch: node id="336294368" version="6"
 #: last_checked: 2018-08-24
 Stahlheimer Str./Erich-Weinert-Str.: wird die Fußgängerampel auf die andere Seite verlegt oder eine normale Ampel aufgestellt?	?::inwork 11526,16068 11542,16070 11547,16057
 # 

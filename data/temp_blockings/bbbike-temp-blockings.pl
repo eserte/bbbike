@@ -22784,7 +22784,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
-#: osm_watch: way id="43141418" version="9" brb
+#: osm_watch: way id="43141418" version="11" brb
 #: last_checked: 2018-06-19 (osm)
 	2::inwork -12583,-1552 -12485,-1482
 # REMOVED ---	2::inwork -12485,-1482 -12474,-1559 -12596,-1701
@@ -27153,6 +27153,8 @@ EOF
        text  => 'Uferweg: zwischen Mentzelpark und Eiselenweg Bauarbeiten, Weg komplett gesperrt, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
+#: osm_watch: way id="152046369" version="7"
+#: add_fragezeichen: Ist der Uferweg noch immer gesperrt? Falls nicht: hat sich die Qualität des Weges verbessert?
 #: next_check_id: MENTZELPARK-2018
 #: last_checked: 2018-08-29 (Umleitungsausschilderung existiert)
 	2::inwork 21696,5053 21600,5221 21512,5404 21481,5429
@@ -27591,7 +27593,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2018-08-14 00:00:00"), # 1531519200, # 2018-07-14 00:00
-       until => $isodate2epoch->("2018-09-27 00:00:00"), # 1546297199, # 2018-12-31 23:59
+       until => $isodate2epoch->("2018-09-27 23:59:59"), # 1546297199, # 2018-12-31 23:59
        text  => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, weitere Einschränkungen in der Bismarckstr. und Poschingerstr., voraussichtlich bis zum Ende 2018',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php',
@@ -27605,7 +27607,7 @@ EOF
 #: source_id: 2147342919
 #: source_id: 2147343007
 #: last_checked: 2018-08-15
-#: next_check: 2018-09-26
+#: next_check: 2018-09-27
 	q4::inwork; 6168,6467 6083,6451 5823,6413
 	q4::inwork 6083,6451 6095,6358
 	q4::inwork; 6248,6388 6095,6358
@@ -28055,6 +28057,14 @@ EOF
        source_id => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.742824.php',
        data  => <<EOF,
 	2::inwork 23444,4942 23433,5037 23420,5159 23404,5325
+EOF
+     },
+     { from  => 1537934400, # 2018-09-26 06:00
+       until => 1544914799, # 2018-12-15 23:59
+       text  => 'Wünsdorfer Str.: zwischen Abendrotweg und Prinzessinnenstr. Baustelle, Fahrbahn Richtung Süden gesperrt, bis Mitte Dezember 2018',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::inwork; 9860,-1475 9908,-1614 9970,-1787 9982,-1818 10021,-1918 10096,-2137
 EOF
      },
     );
