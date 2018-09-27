@@ -282,8 +282,8 @@ EOF
     # libmysqlclient-dev package name
     my $libmysqlclient_dev;
     if (
-	($opt{dist} eq 'debian' && $opt{distver} =~ m{^(lenny|squeeze|wheezy|jessie)$}) ||
-	($opt{dist} eq 'ubuntu' && $opt{distver} =~ m{^(precise|trusty|xenial)$})
+	($opt{dist} eq 'debian' && $opt{distver} =~ m{^(lenny|squeeze|wheezy|jessie|stretch|buster)$}) ||
+	($opt{dist} eq 'ubuntu' && $opt{distver} =~ m{^(precise|trusty|xenial|bionic)$})
        ) {
 	$libmysqlclient_dev = 'libmysqlclient-dev';
     } else { # stretch and newer
