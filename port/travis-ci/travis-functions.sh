@@ -50,6 +50,11 @@ init_apt() {
     then
 	if [ ! -e /etc/apt/sources.list.d/mydebs.bbbike.list ]
 	then
+	    if [ ! -e /usr/bin/sudo ]
+	    then
+		# may only happen in docker containers
+	        apt-get install -y sudo
+	    fi
 	    wget -O- http://mydebs.bbbike.de/key/mydebs.bbbike.key | sudo apt-key add -
 	    sudo sh -c "echo deb http://mydebs.bbbike.de ${CODENAME} main > /etc/apt/sources.list.d/mydebs.bbbike.list~"
 	    sudo mv /etc/apt/sources.list.d/mydebs.bbbike.list~ /etc/apt/sources.list.d/mydebs.bbbike.list
