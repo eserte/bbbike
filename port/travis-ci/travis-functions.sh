@@ -80,26 +80,33 @@ init_apt() {
 # - poppler-utils:          provides pdfinfo for testing
 # - tzdata:                 t/geocode_images.t needs to set TZ
 install_non_perl_dependencies() {
-    if [ "$CODENAME" = "precise" -o "$CODENAME" = "bionic" ]
+    if [ "$CODENAME" = "precise" -o "$CODENAME" = "bionic" -o "$CODENAME" = "buster" ]
     then
 	javascript_package=rhino
     else
 	javascript_package=libmozjs-24-bin
     fi
-    if [ "$CODENAME" = "stretch" -o "$CODENAME" = "bionic" ]
+    # debian/stretch and ubuntu/xenial have both rhino and libmozjs-24-bin
+
+    if [ "$CODENAME" = "stretch" -o "$CODENAME" = "buster" -o "$CODENAME" = "xenial" -o "$CODENAME" = "bionic" ]
     then
 	libgd_dev_package=libgd-dev
     else
 	libgd_dev_package=libgd2-xpm-dev
     fi
+
     if [ "$CODENAME" = "bionic" ]
     then
 	# Not available anymore, see
 	# https://askubuntu.com/q/1028522
 	pdftk_package=
+    elif [ "$CODENAME" = "buster" ]
+    then
+	pdftk_package=pdftk-java
     else
 	pdftk_package=pdftk
     fi
+
     if [ "$CODENAME" = "precise" ]
     then
 	# Since about 2018-06 not installable anymore on the
@@ -108,6 +115,7 @@ install_non_perl_dependencies() {
     else
 	libproj_packages="libproj-dev proj-bin"
     fi
+
     sudo -E apt-get install -qq freebsd-buildutils $libproj_packages libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera ttf-dejavu gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package poppler-utils tzdata
     if [ "$BBBIKE_TEST_SKIP_MAPSERVER" != "1" ]
     then
@@ -165,8 +173,8 @@ install_webserver_dependencies() {
     if [ "$USE_MODPERL" = "1" ]
     then
 	# install mod_perl
-	# XXX probably valid also for all newer debians (and ubuntus?)
-	if [ "$CODENAME" = "stretch" -o "$CODENAME" = "bionic" ]
+	# probably valid also for all newer debians and ubuntus after jessie
+	if [ "$CODENAME" = "stretch" -o "$CODENAME" = "buster" -o "$CODENAME" = "xenial" -o "$CODENAME" = "bionic" ]
 	then
 	    sudo apt-get install -qq apache2
 	else
