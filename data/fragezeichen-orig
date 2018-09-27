@@ -34,7 +34,7 @@ Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,107
 # 
 # REMOVED (südlicher Teil fertig, im nördlichen passiert vermutlich nichts --- handicap=q2, weiterhin, aber vorher war es in letzter Zeit eher q3 gewesen, auch vor den Bauarbeiten) --- #: XXX Bauarbeiten im südlichen Abschnitt, vielleicht hat das mit den Verbesserungen zu tun --- #: last_checked: 2018-06-15 --- #: check_frequency: 30d --- Görlitzer Park: Verbesserungen geplant	?::inwork 12814,9966 12833,9998 12869,10071 12901,10134 12905,10143
 # 
-#: last_checked: 2018-09-25
+#: last_checked: 2018-09-27
 #: next_check: 2018-12-31
 NKZ: Verbesserungen geplant	?::projected 11291,10438 11317,10485 11344,10507 11334,10527
 # 
@@ -77,8 +77,10 @@ Danziger Str.	?::projected 13166,13707 13225,13620 13228,13615
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
 #: XXX laut fixmyberlin nur bis Heinrich-Heine-Str., Fertigstellung 2018/2019
+#: source_id: 2147343254
 #: last_checked: 2018-09-24
-#: check_frequency: 60d
+# REMOVED --- #: check_frequency: 60d
+#: next_check: 2018-11-30
 Annenstr./Heinrich-Heine-Platz	?::projected 11158,11324 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
 #: XXX Baumaßnahme 5.11 (Realisierung nach 2011)
@@ -683,7 +685,7 @@ Baumschulenstr.: Einrichten einer Radverkehrsanlage	?::projected 15382,5687 1558
 #: XXX Bsw.5
 #: osm_watch: way id="37077532" version="19"
 #: osm_watch: way id="26236061" version="25"
-#: last_checked: 2018-05-26
+#: last_checked: 2018-09-27
 #: check_frequency: 120d
 Sonnenallee: Einrichten einer Radverkehrsanlage	?::projected 15765,6212 15724,6229 15505,6342
 #: XXX Bsw.8 (zwar nur Prio=mittel, allerdings wird hier der R1 nach Einstellung der Fähre entlanggeführt)
@@ -1798,7 +1800,7 @@ Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projecte
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/anschluss-fuer-radfahrer_a179819
 #: XXX Ausbau des Kopfsteinpflasters, Bau einer Asphaltfahrbahn
 #: osm_watch: way id="75509950" version="13"
-#: last_checked: 2018-09-12
+#: last_checked: 2018-09-27
 #: next_check: 2018-11-30
 Friedelstr.: Asphaltierung	?::inwork 12085,9778 12074,9689 12066,9558 12047,9429 12074,9217
 # 
@@ -1807,7 +1809,7 @@ Friedelstr.: Asphaltierung	?::inwork 12085,9778 12074,9689 12066,9558 12047,9429
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="14"
-#: last_checked: 2018-09-25
+#: last_checked: 2018-09-27
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -1915,7 +1917,7 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.655982.php ("ab 2019")
 #: by: http://www.berliner-woche.de/neukoelln/bauen/plaene-fuer-das-weigandufer-fahrradstrasse-promenade-neue-bepflanzung-d140649.html
 #: by: https://fahrradfreundliches-neukoelln.de/blog/fahr-rat-7-maerz-2018 (schon III/2018?)
-#: last_checked: 2018-09-19 (erste Pfosten stehen schon)
+#: last_checked: 2018-09-27 (erste Pfosten stehen schon)
 #: check_frequency: 30d
 # REMOVED (hier nicht?) --- Weigandufer (und Pflügerstr.?): Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 13939,8228 13875,8282 13716,8410
 Weigandufer und Pflügerstr.: Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 13716,8410 13641,8470 13539,8552 13450,8625 13368,8689 13193,8832 13045,8951 12902,9066 12755,9188 12621,9297 12480,9394
@@ -3094,7 +3096,7 @@ Südpankeweg, Fortsetzung zur Ida-von-Arnim-Str./Chausseestr.: wann wird sie geba
 # 
 #: next_check_id: SONNENALLEE-2014
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14709&options=8 (beschlossen durch BVV, Realisierung steht noch aus)
-#: last_checked: 2018-09-11 (zurzeit eine Baustellenampel, wird eine permanente Ampel nach den Bauarbeiten aufgestellt?)
+#: last_checked: 2018-09-27 (zurzeit eine Baustellenampel, wird eine permanente Ampel nach den Bauarbeiten aufgestellt?)
 Sonnenallee/Ziegrastr.: wird hier eine permanente Ampel entstehen?	?::projected 14174,7505
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14708&options=8 (beschlossen durch BVV)
@@ -3160,7 +3162,7 @@ Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563
 #: check_frequency: 90d
 #: priority: #D
 Reichenberger Str.: wird hier ein Zebrastreifen markiert?	? 12385,9966 12398,9938 12366,9929
-#: last_checked: 2018-09-24
+#: last_checked: 2018-09-27
 #: check_frequency: 90d
 #: priority: #D
 Am Ostbahnhof/Koppenstr.: wird hier ein Zebrastreifen markiert?	? 12299,11717 12310,11682 12349,11687
@@ -3901,6 +3903,7 @@ Güterbahnhof Wilmersdorf: vermutlich wird die Straße während der Bauarbeiten ges
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_03_0257_0448_online.pdf (Berichtigung)
 #: by: http://www.berliner-woche.de/moabit/bauen/1a-adresse-im-herzen-der-stadt-grundsteinlegung-fuer-humboldthafen-berlin-d128365.html (bis Frühjahr 2019)
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_19_2335_2466_online.pdf (Grundstücksnummerierungen)
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1809/nachricht6623.html
 #: XXX eventuell entstehen hier weitere Straßen/Wege
 #: XXX fehlt in Berlin.coords.data, PLZ=10557, Bezirk=Moabit
 #: last_checked: 2018-09-23
@@ -4253,7 +4256,7 @@ Johann-Kunkel-Weg (Potsdam-Bornim): existiert hier ein Weg mit diesem Namen? Aus
 #: next_check_id: KIEFHOLZ-2015
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_09_1157_1272_online.pdf
 #: XXX in brunnels-orig eintragen
-#: last_checked: 2018-09-25
+#: last_checked: 2018-09-27
 #: check_frequency: 360d
 Mathilde-Rathenau-Brücke: neue Brücke	?::inwork 14211,8909 14335,8771
 # 
@@ -5326,24 +5329,22 @@ Striewitzweg (Teltow): Qualität im südlichen Abschnitt der Straße: wo genau sind
 Striewitzweg (Teltow): Qualität im nördlichen Abschnitt? Ist die Straße hier verkehrsberuhigt?	? 577,-543 550,-396 525,-347
 Altdöbern - Calau: Qualität?	? 55259,-83091 55388,-83077 55768,-82862 54521,-79452 54572,-78865 54600,-77483 53827,-76082
 # 
-#: last_checked: 2018-07-07 vvv
-#: next_check: 2018-09-30 vvv
-# REMOVED --- #: check_frequency: 360d vvv
-#: osm_watch: way id="338546084" version="9" vvv
-#: osm_watch: way id="24205105" version="8" vvv
+#: last_checked: 2018-09-02 (osm?) vvv
+#: check_frequency: 30d vvv
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__21_vom_28__Mai_2010.pdf
 #: by: https://www.google.de/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0ahUKEwjn5uqLgY_NAhVHsBQKHcfIAEEQFggvMAE&url=https%3A%2F%2Fwww.berlin.de%2Fba-marzahn-hellersdorf%2Fpolitik-und-verwaltung%2Faemter%2Fstadtentwicklungsamt%2Fstadtplanung%2Fmdb-bamarzahnhellersdorf-stadtplanung-festgesetb-xxiii_15b_1_abzeichnung.pdf&usg=AFQjCNHD5t6sh5hLTtunUdcS4SG222H6xw&cad=rja
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_29_3241_3364_online.pdf (Grundstücksnummerierungen)
+#: osm_watch: way id="515337708" version="2"
 Seidenschwanzstr.: Qualität? Wo wird die Straße genau liegen?	?::projected 26651,12941 26576,12848 26527,12789 26481,12732 26434,12674 26285,12796
 #: XXX folgendes sind Privatstraßen vvv
+#: osm_watch: way id="515337706" version="2"
 Wildkatzenweg: Qualität? Wo wird die Straße genau liegen?	?::projected 26481,12732 26334,12854
+#: osm_watch: way id="515337707" version="2"
 Ringeltaubenweg: Qualität? Wo wird die Straße genau liegen?	?::projected 26527,12789 26379,12909
+#: osm_watch: way id="515337709" version="2"
 Mauswieselweg: Qualität? Wo wird die Straße genau liegen?	?::projected 26576,12848 26424,12964
 #: XXX ^^^
-#: osm_watch ^^^
-#: osm_watch ^^^
-# REMOVED --- #: check_frequency ^^^
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 Börnicke - Staffelde: existieren Radwege zwischen Börnicke und Staffelde?	? -21772,30661 -20747,31713 -19914,32444 -19361,33130 -19129,33814 -18939,34241 -18555,34920 -18212,35362

@@ -27155,6 +27155,7 @@ EOF
        data  => <<EOF,
 #: osm_watch: way id="152046369" version="7"
 #: add_fragezeichen: Ist der Uferweg noch immer gesperrt? Falls nicht: hat sich die Qualität des Weges verbessert?
+#: priority: #A
 #: next_check_id: MENTZELPARK-2018
 #: last_checked: 2018-08-29 (Umleitungsausschilderung existiert)
 	2::inwork 21696,5053 21600,5221 21512,5404 21481,5429
@@ -27432,17 +27433,17 @@ EOF
 #: last_checked ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2018-09-27 00:00:00"), # 1531519200, # 2018-07-14 00:00
-       until => $isodate2epoch->("2018-12-31 18:00:00"), # $isodate2epoch->("2018-08-14 00:00:00"), # $isodate2epoch->("2018-09-26 18:00:00"), # 1546297199, # 2018-12-31 23:59
+     { from  => 1538074511, # XXX erst einmal komplett inaktiv! --- from  => $isodate2epoch->("2018-10-31 00:00:00"), # 1531519200, # 2018-07-14 00:00
+       until => 1538074518, # until => $isodate2epoch->("2018-12-31 18:00:00"), # $isodate2epoch->("2018-08-14 00:00:00"), # $isodate2epoch->("2018-09-26 18:00:00"), # 1546297199, # 2018-12-31 23:59
        text  => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, voraussichtlich bis Ende 2018',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php',
        data  => <<EOF,
 #: next_check_id: FEUERBACH-2018
-#: XXX laut VMZ nur bis September 2018, laut BA Steglitz bis Dezember 2018
+# REMOVED --- #: XXX laut VMZ nur bis September 2018, laut BA Steglitz bis Dezember 2018
 #: source_id: 2147342919
-#: last_checked: 2018-08-15
-#: next_check: 2018-09-26
+# REMOVED --- #: last_checked: 2018-08-15
+# REMOVED --- #: next_check: 2018-12-31
 	q4::inwork; 6168,6467 6083,6451 5823,6413
 EOF
      },
@@ -27593,21 +27594,24 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2018-08-14 00:00:00"), # 1531519200, # 2018-07-14 00:00
-       until => $isodate2epoch->("2018-09-27 23:59:59"), # 1546297199, # 2018-12-31 23:59
+       until => $isodate2epoch->("2018-12-31 23:59:59"), # 1546297199, # 2018-12-31 23:59
        text  => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, weitere Einschränkungen in der Bismarckstr. und Poschingerstr., voraussichtlich bis zum Ende 2018',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php',
        data  => <<EOF,
 #: next_check_id: FEUERBACH-2018
 #: XXX laut VMZ nur bis Ende Oktober 2018, laut BA Steglitz bis Dezember 2018
+#: XXX eventuell in der Feuerbachstr. selbst nur bis Ende Oktober 2018?
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.725875.php
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/weitere-sperrungen-rund-um-die-feuerbachstrasse_a174881
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729490.php
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/bauarbeiten-gehen-weiter_a178952
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=47881
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=47885
 #: source_id: 2147342919
 #: source_id: 2147343007
 #: last_checked: 2018-08-15
-#: next_check: 2018-09-27
+#: next_check: 2018-10-26
 	q4::inwork; 6168,6467 6083,6451 5823,6413
 	q4::inwork 6083,6451 6095,6358
 	q4::inwork; 6248,6388 6095,6358
@@ -27864,10 +27868,10 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: last_checked: 2018-09-12 vvv
-#: check_frequency: 7d vvv
+#: next_check: 2018-10-01 vvv
 	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2429,4385
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 EOF
      },
@@ -28064,7 +28068,19 @@ EOF
        text  => 'Wünsdorfer Str.: zwischen Abendrotweg und Prinzessinnenstr. Baustelle, Fahrbahn Richtung Süden gesperrt, bis Mitte Dezember 2018',
        type  => 'handicap',
        data  => <<EOF,
+#: source_id: 2147343253
 	q4::inwork; 9860,-1475 9908,-1614 9970,-1787 9982,-1818 10021,-1918 10096,-2137
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Treptower Park, Weg zum/vom Karpfenteich: Bauarbeiten, Weg kann gesperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: XXX wie wird die Qualität danach aussehen?
+#: last_checked: 2018-09-27
+#: check_frequency: 7d
+	2::inwork 14854,8964 14614,9052
 EOF
      },
     );

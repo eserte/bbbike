@@ -4021,21 +4021,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1558022400
        },
        undef,
-       {
-         'data' => '#: next_check_id: FEUERBACH-2018
-#: XXX laut VMZ nur bis September 2018, laut BA Steglitz bis Dezember 2018
-#: source_id: 2147342919
-#: last_checked: 2018-08-15
-#: next_check: 2018-09-26
-	q4::inwork; 6168,6467 6083,6451 5823,6413
-',
-         'from' => 1537999200,
-         'id' => 2976,
-         'source_id' => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php',
-         'text' => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, voraussichtlich bis Ende 2018',
-         'type' => 'handicap',
-         'until' => 1546275600
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: HEGEMEISTERWEG-2018
@@ -4122,14 +4108,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: FEUERBACH-2018
 #: XXX laut VMZ nur bis Ende Oktober 2018, laut BA Steglitz bis Dezember 2018
+#: XXX eventuell in der Feuerbachstr. selbst nur bis Ende Oktober 2018?
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.725875.php
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/weitere-sperrungen-rund-um-die-feuerbachstrasse_a174881
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729490.php
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/bauarbeiten-gehen-weiter_a178952
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=47881
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=47885
 #: source_id: 2147342919
 #: source_id: 2147343007
 #: last_checked: 2018-08-15
-#: next_check: 2018-09-27
+#: next_check: 2018-10-26
 	q4::inwork; 6168,6467 6083,6451 5823,6413
 	q4::inwork 6083,6451 6095,6358
 	q4::inwork; 6248,6388 6095,6358
@@ -4139,7 +4128,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php',
          'text' => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, weitere Einschränkungen in der Bismarckstr. und Poschingerstr., voraussichtlich bis zum Ende 2018',
          'type' => 'handicap',
-         'until' => 1538085599
+         'until' => 1546297199
        },
        undef,
        undef,
@@ -4324,10 +4313,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: last_checked: 2018-09-12 vvv
-#: check_frequency: 7d vvv
+#: next_check: 2018-10-01 vvv
 	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2429,4385
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
@@ -4526,13 +4515,26 @@ Bebelplatz, diagonal über den Platz	2::temp 9680,12232 9702,12307 9713,12392
          'until' => 1538361000
        },
        {
-         'data' => '	q4::inwork; 9860,-1475 9908,-1614 9970,-1787 9982,-1818 10021,-1918 10096,-2137
+         'data' => '#: source_id: 2147343253
+	q4::inwork; 9860,-1475 9908,-1614 9970,-1787 9982,-1818 10021,-1918 10096,-2137
 ',
          'from' => 1537934400,
          'id' => 3026,
          'text' => 'Wünsdorfer Str.: zwischen Abendrotweg und Prinzessinnenstr. Baustelle, Fahrbahn Richtung Süden gesperrt, bis Mitte Dezember 2018',
          'type' => 'handicap',
          'until' => 1544914799
+       },
+       {
+         'data' => '#: XXX wie wird die Qualität danach aussehen?
+#: last_checked: 2018-09-27
+#: check_frequency: 7d
+	2::inwork 14854,8964 14614,9052
+',
+         'from' => undef,
+         'id' => 3027,
+         'text' => 'Treptower Park, Weg zum/vom Karpfenteich: Bauarbeiten, Weg kann gesperrt sein',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );
