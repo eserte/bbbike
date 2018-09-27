@@ -3886,6 +3886,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: osm_watch: way id="152046369" version="7"
 #: add_fragezeichen: Ist der Uferweg noch immer gesperrt? Falls nicht: hat sich die Qualität des Weges verbessert?
+#: priority: #A
 #: next_check_id: MENTZELPARK-2018
 #: last_checked: 2018-08-29 (Umleitungsausschilderung existiert)
 	2::inwork 21696,5053 21600,5221 21512,5404 21481,5429
