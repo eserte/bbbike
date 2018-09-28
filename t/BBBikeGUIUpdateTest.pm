@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2015,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package BBBikeGUIUpdateTest;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 0.01;
+$VERSION = 0.02;
 
 use File::Compare qw(compare);
 use File::Copy qw(cp);
@@ -55,7 +55,11 @@ sub start_guitest {
     ok compare($orig_file, 'data/ampeln') == 0, 'file content again the same';
     ok exists $main::ampeln{$sample_coord}, 'Sample coord is now there';
 
-    exit_app();
+    # Running exit_app() immediately might crash Tk on some systems ---
+    # seen in Xvfb and tightvncserver display on various Debians.
+    # Never saw it on a real X server or a Xnest --- so maybe it's some kind
+    # of timing issue. Using a delay of 1ms seems to be sufficient.
+    $top->after(1, sub{ exit_app() });
 }
 
 sub exit_app {
