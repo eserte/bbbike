@@ -3700,7 +3700,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-08-28
+#: last_checked: 2018-09-28
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 ',
@@ -3853,22 +3853,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1551459600
        },
-       {
-         'data' => '#: source_id: 2147342390
-#: source_id: 2147342751
-#: source_id: 2147343056
-# REMOVED (hier nicht mehr) ---	q4::inwork; 8901,12008 8861,12125
-#: last_checked: 2018-09-22
-#: next_check: 2018-09-30
-# REMOVED --- #: check_frequency: 7d
-	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
-',
-         'from' => 1534878268,
-         'id' => 2947,
-         'text' => 'Behrenstr.: Sperrung Richtung Osten zwischen Wilhelmstr. und Glinkastr., voraussichtlich bis Ende September 2018',
-         'type' => 'handicap',
-         'until' => 1538323200
-       },
+       undef,
        undef,
        undef,
        {
@@ -3942,9 +3927,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1527186729,
          'id' => 2959,
          'source_id' => '2147342639',
-         'text' => 'Gubener Str.: Bauarbeiten zwischen Graudenzer Str. und Hildegard-Jadamowitz-Str., Einbahnstraßenregelung, bis Ende September 2018',
+         'text' => 'Gubener Str.: Bauarbeiten zwischen Graudenzer Str. und Hildegard-Jadamowitz-Str., Einbahnstraßenregelung, bis Ende Oktober 2018',
          'type' => 'handicap',
-         'until' => 1538323200
+         'until' => 1540569600
        },
        undef,
        {
@@ -4081,18 +4066,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1569880800
        },
-       {
-         'data' => '#: by: https://www.berliner-woche.de/koepenick/c-verkehr/seelenbinderstrasse-bleibt-bis-ende-august-dicht_a172757
-#: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-verzoegern-sich_a181430 (hier: bis "Ende September" 2018)
-	q3::inwork; 23333,5710 23106,5758 22900,5740 22798,5731 22696,5728 22608,5732 22513,5747 22292,5774
-',
-         'from' => 1531605600,
-         'id' => 2987,
-         'source_id' => '2147342890',
-         'text' => 'Seelenbinderstr.: Richtung Bahnhofstr. zwischen Bellevuestr. und Bahnhofstr. Gleisbauarbeiten, Fahrtrichtung gesperrt, Radfahrer müssen auf den freigegebenen Gehweg ausweichen, bis Anfang Oktober 2018',
-         'type' => 'handicap',
-         'until' => 1538496000
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/altglienicke/c-bauen/rund-1000-kubikmeter-trinkwasser-liefen-in-untergrund-und-keller_a172811
@@ -4243,16 +4217,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '	2::inwork 15143,5936 15119,5978 14342,5990 14298,6009 14234,6010 14178,5980 14164,5936 14308,5627
-',
-         'from' => 1537740000,
-         'id' => 3008,
-         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.734754.php',
-         'text' => 'Weg am Britzer Verbindungskanal: Asphaltbauarbeiten, Weg für Radfahrer und Fußgänger nicht passierbar, vom 25. bis 27.09.2018',
-         'type' => 'gesperrt',
-         'until' => 1538085600
-       },
+       undef,
        undef,
        {
          'data' => '#: by: http://www.maz-online.de/Lokales/Potsdam/Potsdam-am-Montag-Das-ist-heute-wichtig113
@@ -4271,11 +4236,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1538323200
        },
        {
-         'data' => '	q4::inwork 12335,7770 12520,7694
+         'data' => '#: last_checked: 2018-09-28 vvv
+	q3::inwork 12335,7770 12224,7799
+	q2::inwork 12335,7770 12075,7696
+#: last_checked ^^^
 ',
          'from' => undef,
          'id' => 3011,
-         'text' => 'Mittelweg: Bauarbeiten zwischen Morusstr. und Leykestr., Fahrbahn gesperrt',
+         'text' => 'Mittelweg/Leykestr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt',
          'type' => 'handicap',
          'until' => 1540918800
        },
@@ -4464,49 +4432,10 @@ Promenade Schiffbauerdamm	2::temp 8498,12870 8529,12757
          'type' => 'gesperrt',
          'until' => 1538171999
        },
+       undef,
        {
-         'data' => 'Werderscher Markt	2::temp 9898,12161 9939,12174 9972,12184 10029,12208 10091,12232
-Am Zeughaus	2::temp 9919,12613 9956,12523 9984,12426
-Schinkelplatz	2::temp 9984,12426 9996,12401 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
-Schinkelplatz	2::temp 10058,12290 10008,12274
-Schinkelplatz	2::temp 9996,12401 10058,12290 10091,12232
-Prinzengasse	2::temp 9955,12300 10002,12305
-An der Kommandantur	2::temp 9994,12368 9943,12364
-Niederlagstr.	2::temp 9972,12184 9959,12281 9955,12300 9943,12364 9934,12420
-Falkoniergasse	2::temp 9939,12174 9909,12261
-Werdersche Rosenstr.	2::temp 9883,12251 9909,12261 9959,12281
-Französische Str.	2::temp 9898,12161 9812,12150 9755,12144
-Unter den Linden	2::temp 10024,12431 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381 9475,12365
-Hinter der Katholischen Kirche	2::temp 9812,12150 9808,12182 9798,12267 9795,12293 9780,12401
-(entlang der Hedwigskathedrale)	2::temp 9808,12182 9775,12178 9771,12190 9747,12205
-Charlottenstr. (Kreuzberg, Mitte)	2::temp 9454,12558 9462,12481 9475,12365 9489,12263 9496,12215
-Dorotheenstr. (Mitte)	2::temp 9454,12558 9581,12588 9681,12601 9742,12609 9870,12657
-Am Kupfergraben	2::temp 9870,12657 9900,12643 9919,12613
-Hinter dem Gießhaus	2::temp 9858,12410 9845,12506 9837,12560 9892,12596 9919,12613
-Hinter dem Zeughaus	2::temp 9845,12506 9956,12523
-Behrenstr.	2::temp 9496,12215 9631,12227 9680,12232 9730,12238 9737,12238 9798,12267
-Universitätsstr.	2::temp 9581,12588 9613,12381
-Oberwallstr.	2::temp 9858,12410 9876,12298 9883,12251 9898,12161
-Am Festungsgraben	2::temp 9742,12609 9747,12584
-Am Festungsgraben	2::temp 9747,12584 9764,12492 9771,12400
-Am Festungsgraben	2::temp 9845,12506 9764,12492
-Hedwigskirchgasse	2::temp 9737,12238 9747,12205 9755,12144
-Bebelplatz	2::temp 9713,12392 9730,12238
-Bebelplatz	2::temp 9680,12232 9664,12387
-Bebelplatz	2::temp 9795,12293 9876,12298
-Mollergasse	2::temp 9892,12596 9894,12564
-Bebelplatz, diagonal über den Platz	2::temp 9737,12238 9702,12307 9664,12387
-Bebelplatz, diagonal über den Platz	2::temp 9680,12232 9702,12307 9713,12392
-',
-         'from' => 1537999200,
-         'id' => 3024,
-         'source_id' => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_38_5203_5322_online.pdf',
-         'text' => 'Unter den Linden, DHM, Bebelplatz, Schinkelplatz: wegen eines Staatsbesuchs Sperrungen möglich, am 28. September 2018 von 0.00 Uhr bis 17.00 Uhr ',
-         'type' => 'gesperrt',
-         'until' => 1538146800
-       },
-       {
-         'data' => '	2::inwork 23444,4942 23433,5037 23420,5159 23404,5325
+         'data' => '#: source_id: 2147343251
+	2::inwork 23444,4942 23433,5037 23420,5159 23404,5325
 ',
          'from' => 1538064000,
          'id' => 3025,
@@ -4527,7 +4456,7 @@ Bebelplatz, diagonal über den Platz	2::temp 9680,12232 9702,12307 9713,12392
        },
        {
          'data' => '#: XXX wie wird die Qualität danach aussehen?
-#: last_checked: 2018-09-27
+#: last_checked: 2018-09-28
 #: check_frequency: 7d
 	2::inwork 14854,8964 14614,9052
 ',

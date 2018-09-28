@@ -37,7 +37,7 @@ Neue Kreisstr.: Asphaltstreifen	Q0-; -7196,-1029 -7310,-1131 -7383,-1211 -7482,-
 Markgrafendamm: Asphalt	Q0 14558,10264 14608,10409 14641,10552 14675,10693 14671,10751 14674,10811
 Markgrafendamm/Hauptstr.: asphaltiert	Q0 14674,10811 14717,10855 14810,10832 14904,10812
 # REMOVED --- #: next_check_id: HAUPTSTR-2015 vvv --- #: XXX nach den Bauarbeiten vermutlich asphaltiert mit Radwegen oder -spuren vvv --- #: source_id: 2147339565 vvv --- #: last_checked: 2016-08-25 vvv --- #: next_check: 2016-08-29 vvv
-Hauptstr.: Asphalt	Q0 14904,10812 15000,10792 15261,10738
+Hauptstr.: Asphalt	Q0 14904,10812 15004,10791 15261,10738
 Karlshorster Str.: Asphalt	Q0 15279,10862 15272,10790 15261,10738
 Cordesstr.: schlechtes Kopfsteinpflaster	Q3 1672,9836 1645,9862 1515,10002 1477,10073 1395,10122 1318,10031
 Werkstättenweg: mäßiges Kopfsteinpflaster	Q2- 2110,10101 1843,9867
@@ -280,7 +280,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2018-09-18
+#: last_checked: 2018-09-28
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
 # 
@@ -2057,7 +2057,7 @@ Rungiusstr.: sehr guter Asphalt	Q0 13027,6168 12997,6290 12981,6366 12979,6374
 Rungiusstr.: sehr guter Asphalt	Q0 12979,6374 12965,6430
 (Kolonie Blaschkotal): fester Sandweg, etwas Schotter	Q2+ 13158,5490 13173,5379 13112,5253
 (Weg durch Kolonie): fester Sandweg, etwas Schotter	Q2+ 13112,5253 13039,5122
-Braunschweiger Ufer: asphaltiert	Q0 13077,5893 13483,5973
+Braunschweiger Ufer: Verbundsteinpflaster	Q1+ 13077,5893 13483,5973
 Braunschweiger Ufer: Parkweg	Q1 13077,5893 12718,5845
 Zeppelinstr.: Asphalt	Q0 18700,6604 18417,6775 18240,6845
 #: corrected_by: srt (von Kopfsteinpflaster Q2 -> Asphalt Q0)
@@ -2204,7 +2204,7 @@ Treseburger Ufer: wassergebundene Decke	Q1 12507,5860 12636,5896 12699,5909
 (Treseburger Ufer - Rungiusstr.): Kopfsteinpflaster	Q2 12699,5909 12736,5913
 # REMOVED --- #: XXX Asphalt durch Betonpflaster ersetzt --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2016/pressemitteilung.502417.php
 (Treseburger Ufer - Rungiusstr.): Betonpflaster	Q1+ 12736,5913 13064,5953
-Delfter Ufer: überwiegend guter Asphalt, einige Stellen mit Baumwurzeln	Q0 13532,5987 13646,6019 13766,6019 14002,5936 14138,5818 14223,5658 14221,5626 14238,5596 14270,5572 14323,5455 14340,5406
+Delfter Ufer: überwiegend guter Asphalt, einige Stellen mit Baumwurzeln	Q0- 13532,5987 13646,6019 13766,6019 14002,5936 14138,5818 14223,5658 14221,5626 14238,5596 14270,5572 14323,5455 14340,5406
 (Delfter Ufer - Späthstr., Rampe): grobes Verbundsteinpflaster	Q2 14323,5395 14236,5393
 (Delfter Ufer - Späthstr., Rampe): grobes Verbundsteinpflaster	Q2 14323,5455 14236,5393
 (Späthstr. - Weg an der Teltowkanalautobahn, Rampe): gutes Verbundsteinpflaster	Q0 14392,5453 14331,5613 14308,5627
@@ -2397,15 +2397,8 @@ Altvaterstr.: schlechtes Kopfsteinpflaster	Q3 -2295,3523 -2446,3462 -2503,3447 -
 Altvaterstr.: Asphalt	Q0 -2920,3246 -3032,3166 -3117,3107
 Altvaterstr.: Beton	Q0 -3223,3034 -3225,2902
 (Am Britzer Verbindungskanal): feiner Schotter, OK	Q1 15358,6022 15166,6019
-# 
-#: by: https://www.tagesspiegel.de/berlin/berliner-denkmal-millionen-fuer-den-mauerradweg/22666984.html (Bauarbeiten, 2018 oder 2019)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.734754.php
-#: XXX danach wird wohl die Qualität wieder Q0 sein
-#: priority: #B
-#: last_checked: 2018-05-26
-#: next_check: 2018-09-28
-(Am Britzer Verbindungskanal): Asphalt, einige Wurzelhebungen, ein kurzer Abschnitt mit Schotter	Q1+ 15143,5936 15119,5978 14342,5990 14298,6009 14234,6010 14178,5980 14164,5936
-# 
+# REMOVED --- #: by: https://www.tagesspiegel.de/berlin/berliner-denkmal-millionen-fuer-den-mauerradweg/22666984.html (Bauarbeiten, 2018 oder 2019) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.734754.php --- #: XXX danach wird wohl die Qualität wieder Q0 sein --- #: priority: #B --- #: last_checked: 2018-05-26 --- #: next_check: 2018-09-28
+(Am Britzer Verbindungskanal): Asphalt	Q0 15143,5936 15119,5978 14342,5990 14298,6009 14234,6010 14178,5980 14164,5936
 #: note: im Gegensatz zum ADFC-Karteneintrag: "mäßig geeignet"
 Gerosteig: Asphalt	Q0 18990,584 19086,562 19184,540 19281,518 19377,496 19477,472
 #: note: per Augenschein
@@ -10796,6 +10789,7 @@ Waldowstr.: Asphalt, einige Schäden	Q0- 10309,20562 10383,20295 10435,20098 1048
 Bahnhofstr. - S-Bhf. Lichterfelde Ost: Kopfsteinpflaster	Q2 5332,2568 5367,2528
 Steinmetzstr.: Mosaikpflaster	Q1 7698,10147 7657,9942 7625,9771
 (Johannisthaler Chaussee - Wildmeisterdamm): Asphalt	Q0- 13045,2107 13064,2090 13157,2116
+Am Treptower Park, Nebenstraße: Kleinsteinpflaster	Q2+; 14614,9052 14558,9111
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv

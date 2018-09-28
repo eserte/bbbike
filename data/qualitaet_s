@@ -12,7 +12,7 @@ Neue Kreisstr.: Kopfsteinpflaster	Q2; -7619,-1406 -7482,-1319 -7383,-1211 -7310,
 Neue Kreisstr.: Asphaltstreifen	Q0; -7196,-1029 -7310,-1131 -7383,-1211 -7482,-1319 -7619,-1406
 Markgrafendamm: Asphalt	Q0 14558,10264 14608,10409 14641,10552 14675,10693 14671,10751 14674,10811
 Markgrafendamm/Hauptstr.: asphaltiert	Q0 14674,10811 14717,10855 14810,10832 14904,10812
-Hauptstr.: Asphalt	Q0 14904,10812 15000,10792 15261,10738
+Hauptstr.: Asphalt	Q0 14904,10812 15004,10791 15261,10738
 Karlshorster Str.: Asphalt	Q0 15279,10862 15272,10790 15261,10738
 Cordesstr.: schlechtes Kopfsteinpflaster	Q3 1672,9836 1645,9862 1515,10002 1477,10073 1395,10122 1318,10031
 Werkstättenweg: mäßiges Kopfsteinpflaster	Q2 2110,10101 1843,9867
@@ -1634,7 +1634,7 @@ Rungiusstr.: sehr guter Asphalt	Q0 13027,6168 12997,6290 12981,6366 12979,6374
 Rungiusstr.: sehr guter Asphalt	Q0 12979,6374 12965,6430
 (Kolonie Blaschkotal): fester Sandweg, etwas Schotter	Q2 13158,5490 13173,5379 13112,5253
 (Weg durch Kolonie): fester Sandweg, etwas Schotter	Q2 13112,5253 13039,5122
-Braunschweiger Ufer: asphaltiert	Q0 13077,5893 13483,5973
+Braunschweiger Ufer: Verbundsteinpflaster	Q1 13077,5893 13483,5973
 Braunschweiger Ufer: Parkweg	Q1 13077,5893 12718,5845
 Zeppelinstr.: Asphalt	Q0 18700,6604 18417,6775 18240,6845
 Zeppelinstr.: Asphalt	Q0 18240,6845 18041,6924 17919,6968
@@ -1897,7 +1897,7 @@ Altvaterstr.: schlechtes Kopfsteinpflaster	Q3 -2295,3523 -2446,3462 -2503,3447 -
 Altvaterstr.: Asphalt	Q0 -2920,3246 -3032,3166 -3117,3107
 Altvaterstr.: Beton	Q0 -3223,3034 -3225,2902
 (Am Britzer Verbindungskanal): feiner Schotter, OK	Q1 15358,6022 15166,6019
-(Am Britzer Verbindungskanal): Asphalt, einige Wurzelhebungen, ein kurzer Abschnitt mit Schotter	Q1 15143,5936 15119,5978 14342,5990 14298,6009 14234,6010 14178,5980 14164,5936
+(Am Britzer Verbindungskanal): Asphalt	Q0 15143,5936 15119,5978 14342,5990 14298,6009 14234,6010 14178,5980 14164,5936
 Gerosteig: Asphalt	Q0 18990,584 19086,562 19184,540 19281,518 19377,496 19477,472
 Pätzer Str.: schlechtes Kopfsteinpflaster	Q3 12885,5205 12963,5199 13039,5122
 Haewererweg: Verbundsteinpflaster	Q1 12156,1346 12125,1282 12097,1243
@@ -9730,6 +9730,7 @@ Waldowstr.: Asphalt, einige Schäden	Q0 10309,20562 10383,20295 10435,20098 10486
 Bahnhofstr. - S-Bhf. Lichterfelde Ost: Kopfsteinpflaster	Q2 5332,2568 5367,2528
 Steinmetzstr.: Mosaikpflaster	Q1 7698,10147 7657,9942 7625,9771
 (Johannisthaler Chaussee - Wildmeisterdamm): Asphalt	Q0 13045,2107 13064,2090 13157,2116
+Am Treptower Park, Nebenstraße: Kleinsteinpflaster	Q2; 14614,9052 14558,9111
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972

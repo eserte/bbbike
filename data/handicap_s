@@ -3,7 +3,6 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
-Niemannstr.: Bauarbeiten, einige Meter Fahrbahn sind gesperrt	q3::inwork 14254,11377 14211,11229
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 12409,11902 12238,11931
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
@@ -46,7 +45,6 @@ Weichselstr.: Bauarbeiten zwischen Weichselplatz und Ossastr., Fahrbahn gesperrt
 Karl-Marx-Str.: Bauarbeiten zwischen Rollbergstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12714,8249 12753,8187 12794,8103
 Rollbergstr.: Einbahnstraßenregelung	q4::inwork; 12528,8205 12714,8249
 Wartenbergstr.: Fahrbahn gesperrt, auf Gehweg ausweichen, Bordsteine	q4:inwork 15337,11639 15328,11636 15300,11584
-Untere Kynaststr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen, Bordstein	q4::inwork 14882,10732 14904,10812
 Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt werden	q4::inwork; 3867,4537 3905,4482
 Wiltbergstr.: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 16669,25373 16583,25440 16475,25526 16414,25575 16294,25683 16220,25716
 Alt-Buch: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweichen	q3::inwork; 16414,25575 16593,25640
@@ -2672,6 +2670,7 @@ Stallschreiberstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp
 Jahnstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 11500,9116 11509,9392
 Neue Schönhauser Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 10527,13257 10423,13215 10310,13227
 Kirchhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13188,7590 13117,7471 13029,7353
+Niemannstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14254,11377 14211,11229
 Björnsonstr: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 10209,16674 10197,16528
 Ibsenstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 10295,16667 10209,16674
 Eichhornstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 8232,11414 8253,11306 8280,11296

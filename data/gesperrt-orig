@@ -1502,7 +1502,7 @@ Waldweg	1s 25496,2429 24981,2580
 Neue Schönhauser Str.	1s:q3 10527,13257 10423,13215 10310,13227
 Kirchhofstr.	1s:q3 13188,7590 13117,7471 13029,7353
 # REMOVED --- #: next_check: 2013-10-30 --- #: XXX von 1s:q3 -> 1s:q4 degradiert, weil wegen der Umleitung hier mehr Verkehr ist - später wieder aufheben
-# REMOVED (während der Bauarbeiten) --- Niemannstr.	1s:q3 14254,11377 14211,11229
+Niemannstr.	1s:q3 14254,11377 14211,11229
 Björnsonstr	1s:q1 10209,16674 10197,16528
 Ibsenstr.	1s:q1 10295,16667 10209,16674
 Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
@@ -2943,7 +2943,7 @@ Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -1275
 # 
 # REMOVED (-> temp blockings) --- #: XXX vielleicht sogar dauerhaft? --- #: last_checked: 2018-08-24 (zurzeit kann man sich noch an den Bauzäunen vorbei mogeln) --- #: check_frequency: 14d --- Boxhagener Str. - Weserstr.: Bauarbeiten, Durchfahrt nicht mehr möglich	2::inwork 14838,11410 14949,11474
 # 
-#: last_checked: 2018-09-19
+#: last_checked: 2018-09-28
 #: check_frequency: 30d
 Heidelberger Str.: Baustelle, Einbahnstraße	1s:q3:inwork 13491,9201 13421,9260 13357,9313
 # 

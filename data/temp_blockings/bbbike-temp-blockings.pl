@@ -26587,7 +26587,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-08-28
+#: last_checked: 2018-09-28
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
@@ -27061,7 +27061,7 @@ EOF
 EOF
      },
      { from  => 1534878268, # 1522864912, # 2018-04-04 20:01
-       until => $isodate2epoch->("2018-09-30 18:00:00"), # 1530907952, # $isodate2epoch->("2018-07-15 20:00:00"), # 1525449600, # 2018-05-04 18:00
+       until => 1538159069, # $isodate2epoch->("2018-09-30 18:00:00"), # 1530907952, # $isodate2epoch->("2018-07-15 20:00:00"), # 1525449600, # 2018-05-04 18:00
        text  => 'Behrenstr.: Sperrung Richtung Osten zwischen Wilhelmstr. und Glinkastr., voraussichtlich bis Ende September 2018',
        type  => 'handicap',
        data  => <<EOF,
@@ -27246,8 +27246,8 @@ EOF
 EOF
      },
      { from  => 1527186729, # 2018-05-24 20:32
-       until => $isodate2epoch->("2018-09-30 18:00:00"), # 1534888800, # 2018-08-22 00:00
-       text  => 'Gubener Str.: Bauarbeiten zwischen Graudenzer Str. und Hildegard-Jadamowitz-Str., Einbahnstraßenregelung, bis Ende September 2018',
+       until => $isodate2epoch->("2018-10-26 18:00:00"), # 1534888800, # 2018-08-22 00:00
+       text  => 'Gubener Str.: Bauarbeiten zwischen Graudenzer Str. und Hildegard-Jadamowitz-Str., Einbahnstraßenregelung, bis Ende Oktober 2018',
        type  => 'handicap',
        source_id => '2147342639',
        data  => <<EOF,
@@ -27554,7 +27554,7 @@ EOF
 EOF
      },
      { from  => 1531605600, # 2018-07-15 00:00
-       until => $isodate2epoch->("2018-10-02 18:00:00"), # 1535752799, # 2018-08-31 23:59
+       until => 1538159119, # $isodate2epoch->("2018-10-02 18:00:00"), # 1535752799, # 2018-08-31 23:59
        text  => 'Seelenbinderstr.: Richtung Bahnhofstr. zwischen Bellevuestr. und Bahnhofstr. Gleisbauarbeiten, Fahrtrichtung gesperrt, Radfahrer müssen auf den freigegebenen Gehweg ausweichen, bis Anfang Oktober 2018',
        type  => 'handicap',
        source_id => '2147342890',
@@ -27817,10 +27817,13 @@ EOF
      },
      { from  => undef, # 
        until => 1540918800, # 2018-10-30 18:00
-       text  => 'Mittelweg: Bauarbeiten zwischen Morusstr. und Leykestr., Fahrbahn gesperrt',
+       text  => 'Mittelweg/Leykestr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 12335,7770 12520,7694
+#: last_checked: 2018-09-28 vvv
+	q3::inwork 12335,7770 12224,7799
+	q2::inwork 12335,7770 12075,7696
+#: last_checked ^^^
 EOF
      },
      { from  => 1536172293, # 2018-09-05 20:31
@@ -28060,6 +28063,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.742824.php',
        data  => <<EOF,
+#: source_id: 2147343251
 	2::inwork 23444,4942 23433,5037 23420,5159 23404,5325
 EOF
      },
@@ -28078,7 +28082,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX wie wird die Qualität danach aussehen?
-#: last_checked: 2018-09-27
+#: last_checked: 2018-09-28
 #: check_frequency: 7d
 	2::inwork 14854,8964 14614,9052
 EOF
