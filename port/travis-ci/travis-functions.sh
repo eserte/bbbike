@@ -203,6 +203,10 @@ install_perl_dependencies() {
 	    # of mysterious problems with cgi-download.t
 	    cpanm --sudo --quiet --notest Archive::Zip
 	fi
+	if [ "$BBBIKE_TEST_GUI" = "1" ]
+	then
+	    sudo apt-get install -qq perl-tk
+	fi
     else
 	# XXX Tk::ExecuteCommand does not specify Tk as a prereq,
 	# so make sure to install Tk early. See
