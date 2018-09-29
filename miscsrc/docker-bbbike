@@ -418,7 +418,7 @@ EOF
     in_directory {
 	my $scope_cleanups = Doit::ScopeCleanups->new;
 	my $tag = 'bbbike-travis-ci-' . $opt{dist} . '-' . $opt{distver};
-	$doit->system(qw(docker build --tag), $tag, qw(.));
+	$doit->system(qw(docker build --tag), $tag, ($opt{'no-cache'} ? '--no-cache' : ()), qw(.));
 
 	if (!$opt{'with-data-build'}) {
 	    $doit->system(qw(docker run), $tag);
@@ -582,6 +582,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       branch  => undef,
 	       env     => {},
 	       'with-data-build' => 0,
+	       'no-cache' => 0,
 	      );
     GetOptions(\%opt,
 	       "jobs|j=i",
@@ -591,6 +592,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'branch=s',
 	       'env=s%',
 	       "with-data-build!",
+	       'no-cache',
 	      )
 	or usage_travis_ci;
     _check_distver $opt{distver};
