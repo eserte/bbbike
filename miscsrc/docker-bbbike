@@ -246,6 +246,7 @@ sub travis_ci {
 	 # init_env_vars() is ineffective in this setup, so set it here
 	 BBBIKE_LONG_TESTS          => 1,
 	 BBBIKE_TEST_SKIP_MAPSERVER => 1,
+	 BBBIKE_TEST_GUI            => 0,
 	 PERL_CPANM_OPT             => "--mirror https://cpan.metacpan.org --mirror http://cpan.cpantesters.org",
 	 CPAN_INSTALLER             => "cpanm",
 	);
